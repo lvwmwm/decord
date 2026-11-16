@@ -1,12 +1,12 @@
 // Module ID: 14921
 // Function ID: 14922
 // Name: MessageRequestPreviewStore
-// Dependencies: [1388, 7030, 7031, 6374, 504, 572, 2]
+// Dependencies: [1388, 7030, 7031, 6364, 504, 572, 2]
 
 // Module 14921 (MessageRequestPreviewStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 6374 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 6364 */;
 import UserStore from "UserStore" /* 1388 */;
 import MessageRequestStore from "MessageRequestStore" /* 7030 */;
 import SpamMessageRequestStore from "SpamMessageRequestStore" /* 7031 */;

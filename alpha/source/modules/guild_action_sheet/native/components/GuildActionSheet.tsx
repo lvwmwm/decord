@@ -1,16 +1,16 @@
 // Module ID: 16420
 // Function ID: 16421
 // Name: GuildActionSheet
-// Dependencies: [19, 17, 21, 5306, 575, 1630, 8559, 5566, 5570, 1380, 16415, 16421, 16348, 16426, 16429, 5901, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 1630, 8559, 5556, 5560, 1380, 16415, 16421, 16348, 16426, 16429, 5891, 2]
 
 // Module 16420 (GuildActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5566 */;
-import BottomSheetModal from "BottomSheetModal" /* 5570 */;
-import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 5901 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5556 */;
+import BottomSheetModal from "BottomSheetModal" /* 5560 */;
+import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 5891 */;
 import react2 from "react" /* 8559 */;
 import GuildActionSheetActions from "GuildActionSheetActions" /* 16348 */;
 import GuildActionSheetHeaderDefault from "GuildActionSheetHeader" /* 16415 */;

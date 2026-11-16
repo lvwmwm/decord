@@ -1,26 +1,26 @@
-// Module ID: 20251
-// Function ID: 20252
+// Module ID: 20254
+// Function ID: 20255
 // Name: GameConsoleManager
-// Dependencies: [5, 502, 2133, 6071, 6073, 5981, 6072, 7471, 6075, 3, 38, 6225, 13052, 7882, 5150, 10821, 1255, 6268, 1113, 20252, 10825, 2]
+// Dependencies: [5, 502, 2133, 6061, 6063, 5971, 6062, 7471, 6065, 3, 38, 6215, 13052, 7882, 5150, 10821, 1255, 6258, 1113, 20255, 10825, 2]
 
-// Module 20251 (GameConsoleManager)
+// Module 20254 (GameConsoleManager)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import intl3 from "intl" /* 1113 */;
 import GlobalUtils from "GlobalUtils" /* 1255 */;
 import Timers from "Timers" /* 5150 */;
-import Constants from "Constants" /* 6075 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 6225 */;
+import Constants from "Constants" /* 6065 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 6215 */;
 import GameConsoleActionCreators from "GameConsoleActionCreators" /* 10821 */;
 import GameConsoleAlertUtilsDefault from "GameConsoleAlertUtils" /* 10825 */;
-import _modDef20252 from "module_20252" /* 20252 */;
+import _modDef20255 from "module_20255" /* 20255 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6071 */;
-import SessionsStore from "SessionsStore" /* 6073 */;
-import VoiceStateStore from "VoiceStateStore" /* 5981 */;
-import GameConsoleStore from "GameConsoleStore" /* 6072 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
+import SessionsStore from "SessionsStore" /* 6063 */;
+import VoiceStateStore from "VoiceStateStore" /* 5971 */;
+import GameConsoleStore from "GameConsoleStore" /* 6062 */;
 import GameConsoleConstants from "GameConsoleConstants" /* 7471 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
 import size from "module_2" /* 2 */;
@@ -270,7 +270,7 @@ class GameConsoleManager extends AutomaticLifecycleManager {
               str2 = "";
             }
             let device = getDevice(type, str2);
-            const tmp8 = _modDef20252;
+            const tmp8 = _modDef20255;
             if (device == null) {
               obj = { id: "id", platform: intl.string(intl3.t["UQMV/E"]), name: intl2.string(intl3.t["UQMV/E"]) };
               intl = intl3.intl;

@@ -1,7 +1,7 @@
 // Module ID: 15963
 // Function ID: 15964
 // Name: GuildSelector
-// Dependencies: [19, 17, 1072, 21, 5306, 575, 5552, 8009, 2121, 1113, 1084, 5929, 1187, 8106, 2]
+// Dependencies: [19, 17, 1072, 21, 5306, 575, 5542, 8009, 2121, 1113, 1084, 5919, 1187, 8106, 2]
 // Exports: default
 
 // Module 15963 (GuildSelector)
@@ -10,7 +10,7 @@ import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
@@ -75,7 +75,7 @@ export default function GuildSelector(onGuildChange) {
   let obj = { style: tmp.selectorGroup, children: items1 };
   let tmp4 = closure_8;
   const obj2 = { variant: "body-sm/medium", color: "text-default", children: intl.string(selectedGuildId(1113).t["1DXFFd"]) };
-  const Text = selectedGuildId(5929).Text;
+  const Text = selectedGuildId(5919).Text;
   intl = selectedGuildId(1113).intl;
   items1 = [closure_7(Text, obj2), , , ];
   let tmp6Result = null;

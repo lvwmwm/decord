@@ -1,7 +1,7 @@
 // Module ID: 8729
 // Function ID: 8730
 // Name: ChannelListStore
-// Dependencies: [5154, 5210, 7029, 7014, 5240, 1231, 502, 7881, 5155, 8730, 5238, 7015, 5209, 6958, 1082, 8731, 12, 1255, 5227, 11, 504, 572, 2]
+// Dependencies: [5154, 5210, 7029, 7014, 5240, 1231, 502, 7881, 5155, 8730, 5238, 7015, 5209, 6948, 1082, 8731, 12, 1255, 5227, 11, 504, 572, 2]
 
 // Module 8729 (ChannelListStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
@@ -24,7 +24,7 @@ import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 8730 */;
 import PermissionStore from "PermissionStore" /* 5238 */;
 import ReadStateStore from "ReadStateStore" /* 7015 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6958 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6948 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

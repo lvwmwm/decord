@@ -1,7 +1,7 @@
 // Module ID: 11300
 // Function ID: 11301
 // Name: StandardEmojiContent
-// Dependencies: [19, 17, 5349, 21, 5306, 575, 11301, 5256, 6020, 5929, 11302, 5252, 9547, 11303, 1113, 8106, 5936, 11305, 2]
+// Dependencies: [19, 17, 5339, 21, 5306, 575, 11301, 5256, 6010, 5919, 11302, 5252, 9547, 11303, 1113, 8106, 5926, 11305, 2]
 // Exports: default
 
 // Module 11300 (StandardEmojiContent)
@@ -12,7 +12,7 @@ import EmojiUtilsDefault from "EmojiUtils" /* 5256 */;
 import useSharedMessageEmojiStyles from "useSharedMessageEmojiStyles" /* 11301 */;
 import EmojiActionCreators from "EmojiActionCreators" /* 11305 */;
 import react from "react" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5349 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
@@ -23,8 +23,8 @@ let metroRequire;
 let obj2;
 let tmp2;
 let tmp5;
-const Text_Text = tmp2(5929);
-const FastImageDefault = tmp5(6020);
+const Text_Text = tmp2(5919);
+const FastImageDefault = tmp5(6010);
 function Emoji(surrogate) {
   let obj5;
   let obj7;

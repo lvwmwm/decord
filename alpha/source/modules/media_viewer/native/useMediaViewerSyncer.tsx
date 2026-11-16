@@ -1,7 +1,7 @@
 // Module ID: 10193
 // Function ID: 10194
 // Name: useMediaViewerSyncer
-// Dependencies: [32, 19, 10194, 1380, 8629, 1655, 10195, 1630, 1708, 10196, 8633, 5939, 5940, 10197, 2]
+// Dependencies: [32, 19, 10194, 1380, 8629, 1655, 10195, 1630, 1708, 10196, 8633, 5929, 5930, 10197, 2]
 // Exports: useMediaViewerSyncer
 
 // Module 10193 (useMediaViewerSyncer)

@@ -1,17 +1,17 @@
 // Module ID: 8817
 // Function ID: 8818
 // Name: QuestServerUtils
-// Dependencies: [32, 6788, 8818, 8813, 2]
+// Dependencies: [32, 6778, 8818, 8813, 2]
 // Exports: excludedQuestFromServer, getClaimedQuestWithUserStatusFromServer, isQuestWithKnownConfigVersion, questConfigFromServer, questUserStatusFromServer, questWithUserStatusFromServer, questsEntitlementsFromServer, questsRewardCodeFromServer
 
 // Module 8817 (QuestServerUtils)
-import merged5 from "merged5" /* 6788 */;
+import merged5 from "merged5" /* 6778 */;
 import QuestRewardTypes from "QuestRewardTypes" /* 8813 */;
 import Quest from "Quest" /* 8818 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
-const f97064 = (id) => {
+const f97077 = (id) => {
   const obj = Quest;
   return obj.questFromServerV2(id);
 };
@@ -101,7 +101,7 @@ export function isQuestWithKnownConfigVersion(config) {
 export function questConfigFromServer(body) {
   const str = merged5;
   const match = str.match(body);
-  const withResult = match.with({ config_version: 2 }, f97064);
+  const withResult = match.with({ config_version: 2 }, f97077);
   return withResult.exhaustive();
 }
 export function questUserStatusFromServer(body) {
@@ -129,7 +129,7 @@ export function questWithUserStatusFromServer(body) {
   const str = merged5;
   const match = str.match(config);
   tmp = null;
-  withResult = match.with({ config_version: 2 }, f97064);
+  withResult = match.with({ config_version: 2 }, f97077);
   if (null != body.user_status) {
     const user_status = body.user_status;
     const obj2 = { userId: null, questId: null, enrolledAt: null, completedAt: null, claimedAt: null, claimedTier: claimed_tier, orbQuantityClaimed: orb_quantity_claimed, lastStreamHeartbeatAt: null, streamProgressSeconds: null, dismissedQuestContent: null, progress: progressFromServer(user_status.progress) };

@@ -1,12 +1,12 @@
 // Module ID: 13643
 // Function ID: 13644
 // Name: ConjurePublishNoticeLine
-// Dependencies: [19, 21, 13637, 13644, 13645, 5929, 1113, 13568, 7231, 13646, 4131, 5552, 13647, 2]
+// Dependencies: [19, 21, 13637, 13644, 13645, 5919, 1113, 13568, 7231, 13646, 4131, 5542, 13647, 2]
 // Exports: default
 
 // Module 13643 (ConjurePublishNoticeLine)
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5552 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5542 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import transitionToGuild from "transitionToGuild" /* 7231 */;
 import useConjurePublishedAppNameDefault from "useConjurePublishedAppName" /* 13637 */;
 import useConjurePublishedServerNameDefault from "useConjurePublishedServerName" /* 13644 */;

@@ -1,14 +1,14 @@
 // Module ID: 13249
 // Function ID: 13250
 // Name: ConjureLinkedAppsTab
-// Dependencies: [19, 7017, 21, 7443, 5552, 13250, 6274, 1113, 4131, 6337, 575, 5929, 13251, 13252, 7746, 2]
+// Dependencies: [19, 7017, 21, 7443, 5542, 13250, 6264, 1113, 4131, 6327, 575, 5919, 13251, 13252, 7746, 2]
 // Exports: default
 
 // Module 13249 (ConjureLinkedAppsTab)
 import intl4 from "intl" /* 1113 */;
 import _modDef4131 from "module_4131" /* 4131 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5552 */;
-import AlertModal from "AlertModal" /* 6274 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5542 */;
+import AlertModal from "AlertModal" /* 6264 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 7017 */;
 import ConjureLinkedAppBuildSheetDefault from "ConjureLinkedAppBuildSheet" /* 13250 */;
 import react from "react" /* 19 */;
@@ -104,13 +104,13 @@ export default function ConjureLinkedAppsTab(linkedApps) {
   const saved = linkedApps.saved;
   let obj = { spacing: onOpenSettings(575).space.PX_24, children: items1 };
   const tmp4 = onOpenSettings;
-  let Stack = linkedApps(6337).Stack;
+  let Stack = linkedApps(6327).Stack;
   let tmpResult = null;
   if (callers.length > 0) {
     let obj2 = { spacing: tmp4(575).space.PX_16, children: items };
-    const Stack2 = tmp2(6337).Stack;
+    const Stack2 = tmp2(6327).Stack;
     let obj3 = { variant: "body-xs/semibold", color: "text-muted", accessibilityRole: "header", children: intl.formatToPlainString(tmp4(4131).uLPdNT, obj4) };
-    const Text = tmp2(5929).Text;
+    const Text = tmp2(5919).Text;
     intl = tmp2(1113).intl;
     obj4 = { name: linkedApps.name };
     items = [
@@ -218,10 +218,10 @@ export default function ConjureLinkedAppsTab(linkedApps) {
   let tmpResult2 = null;
   if (targets.length > 0) {
     let obj5 = { spacing: tmp4(575).space.PX_16, children: items2 };
-    const Stack3 = tmp2(6337).Stack;
+    const Stack3 = tmp2(6327).Stack;
     let tmp8 = c4;
     let obj6 = { variant: "body-xs/semibold", color: "text-muted", accessibilityRole: "header", children: intl2.formatToPlainString(tmp4(4131).L3Bf1s, obj7) };
-    const Text2 = tmp2(5929).Text;
+    const Text2 = tmp2(5919).Text;
     intl2 = tmp2(1113).intl;
     obj7 = { name: linkedApps.name };
     items2 = [
@@ -292,7 +292,7 @@ export default function ConjureLinkedAppsTab(linkedApps) {
   if (failed) {
     let tmp10 = c4;
     let str = "text-muted";
-    const Text3 = tmp2(5929).Text;
+    const Text3 = tmp2(5919).Text;
     if (failed) {
       str = "text-feedback-critical";
     }

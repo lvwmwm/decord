@@ -1,13 +1,13 @@
 // Module ID: 15658
 // Function ID: 15659
 // Name: ScheduledMessagesIntro
-// Dependencies: [17, 21, 5306, 575, 14860, 5929, 1113, 11048, 13549, 10941, 2]
+// Dependencies: [17, 21, 5306, 575, 14860, 5919, 1113, 11048, 13549, 10941, 2]
 // Exports: default
 
 // Module 15658 (ScheduledMessagesIntro)
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import PlusLargeIcon2 from "PlusLargeIcon" /* 10941 */;
 import AttachmentIcon from "AttachmentIcon" /* 11048 */;
 import CalendarPlusIcon from "CalendarPlusIcon" /* 13549 */;

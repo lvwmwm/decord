@@ -1,7 +1,7 @@
 // Module ID: 8665
 // Function ID: 8666
 // Name: SessionHeartbeatScheduler
-// Dependencies: [5, 6800, 502, 7041, 6071, 1072, 1089, 3, 8666, 8667, 8668, 1242, 8669, 8672, 1256, 8673, 510, 8675, 1355, 572, 504, 1269, 2]
+// Dependencies: [5, 6790, 502, 7041, 6061, 1072, 1089, 3, 8666, 8667, 8668, 1242, 8669, 8672, 1256, 8673, 510, 8675, 1355, 572, 504, 1269, 2]
 // Exports: getActiveSessionUnsafe, initSessionHeartbeatScheduler
 
 // Module 8665 (SessionHeartbeatScheduler)
@@ -15,10 +15,10 @@ import Clickstream from "Clickstream" /* 8669 */;
 import SkippedClientHeartbeatUtil from "SkippedClientHeartbeatUtil" /* 8673 */;
 import SessionUtils from "SessionUtils" /* 8675 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6800 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6790 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import IdleStore from "IdleStore" /* 7041 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6071 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
 import Constants from "Constants" /* 1072 */;
 import react_native from "react-native" /* 8666 */;
 import SessionRouteUtils from "SessionRouteUtils" /* 8667 */;
@@ -145,7 +145,7 @@ function isActive() {
   return items.length > 0;
 }
 function scheduleHeartbeatTracking() {
-  const f129581 = () => {
+  const f129596 = () => {
     trackHeartbeat();
     obj = {
       type: "interval",
@@ -181,8 +181,8 @@ function scheduleHeartbeatTracking() {
       SentryUtilsDefault;
       addBreadcrumb(obj3);
       const _setTimeout = setTimeout;
-      user = { type: "timeout", id: setTimeout(f129581, num) };
-      const obj4 = { type: "timeout", id: setTimeout(f129581, num) };
+      user = { type: "timeout", id: setTimeout(f129596, num) };
+      const obj4 = { type: "timeout", id: setTimeout(f129596, num) };
     }
   } else {
     let flag = false;

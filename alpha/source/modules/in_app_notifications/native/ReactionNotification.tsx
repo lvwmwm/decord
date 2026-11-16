@@ -1,7 +1,7 @@
 // Module ID: 11143
 // Function ID: 11144
 // Name: ReactionNotification
-// Dependencies: [19, 17, 5307, 11026, 1072, 1083, 21, 5306, 1360, 575, 5131, 11070, 5929, 1414, 11144, 7894, 1113, 5952, 11025, 11044, 11045, 11076, 10891, 1187, 7720, 12, 6749, 504, 6848, 6063, 11027, 11078, 2121, 11087, 11091, 2]
+// Dependencies: [19, 17, 5307, 11026, 1072, 1083, 21, 5306, 1360, 575, 5131, 11070, 5919, 1414, 11144, 7894, 1113, 5942, 11025, 11044, 11045, 11076, 10891, 1187, 7720, 12, 6739, 504, 6838, 6053, 11027, 11078, 2121, 11087, 11091, 2]
 // Exports: default
 
 // Module 11143 (ReactionNotification)
@@ -13,10 +13,10 @@ import intl13 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import isForwardMessageDefault from "isForwardMessage" /* 5952 */;
-import transitionToChannel from "transitionToChannel" /* 6063 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import isForwardMessageDefault from "isForwardMessage" /* 5942 */;
+import transitionToChannel from "transitionToChannel" /* 6053 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import GuildIcon from "GuildIcon" /* 7720 */;
 import EmojiDefault from "Emoji" /* 7894 */;
 import GroupDMAvatarDefault from "GroupDMAvatar" /* 10891 */;
@@ -69,7 +69,7 @@ function ReactionNotificationBody(arg0) {
   const tmp7 = unpackModuleId;
   if (null != secondaryText) {
     const obj3 = { variant: "heading-sm/medium", color: "text-link", lineClamp: metroImportDefault, children: secondaryText };
-    tmp8Result = tmp8(tmp2(5929).Text, obj3);
+    tmp8Result = tmp8(tmp2(5919).Text, obj3);
   }
   children[1] = tmp8Result;
   let tmp8Result2 = null;

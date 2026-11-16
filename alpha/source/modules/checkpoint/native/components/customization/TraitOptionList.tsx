@@ -1,14 +1,14 @@
 // Module ID: 14539
 // Function ID: 14540
 // Name: TraitOptionList
-// Dependencies: [32, 19, 17, 5307, 6377, 21, 575, 5306, 14540, 8263, 6744, 504, 14488, 14518, 5568, 5917, 1496, 5554, 2]
+// Dependencies: [32, 19, 17, 5307, 6367, 21, 575, 5306, 14540, 8263, 6734, 504, 14488, 14518, 5558, 5907, 1496, 5544, 2]
 // Exports: default
 
 // Module 14539 (TraitOptionList)
 import nativeDefault from "native" /* 575 */;
-import HapticUtils from "HapticUtils" /* 5554 */;
-import CheckpointConstants from "CheckpointConstants" /* 6377 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6744 */;
+import HapticUtils from "HapticUtils" /* 5544 */;
+import CheckpointConstants from "CheckpointConstants" /* 6367 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6734 */;
 import inlineStyles from "inlineStyles" /* 8263 */;
 import TraitOptionItem from "TraitOptionItem" /* 14540 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -101,13 +101,13 @@ export default function TraitOptionList(size) {
   let closure_6 = obj.useStateFromStores(items, () => closure_7.useReducedMotion);
   const tmp4 = options(14488);
   closure_7 = tmp4(options(14518));
-  let obj2 = size(5568);
+  let obj2 = size(5558);
   const isScreenReaderEnabled = obj2.useIsScreenReaderEnabled();
   react.useRef(null);
   const ref = react.useRef(false);
   let closure_11 = react.useRef(null);
   const bound = Math.max(options.findIndex((optionId) => optionId.optionId === dependencyMap), 0);
-  const tmp8 = options(5917)(bound);
+  const tmp8 = options(5907)(bound);
   [tmp10, c12] = disabled(react.useState(options(1496)().width), 2);
   const tmp9 = disabled(react.useState(options(1496)().width), 2);
   const width = size(14540).TRAIT_OPTION_SIZE_TO_DIMENSIONS[size].width;
@@ -221,7 +221,7 @@ export default function TraitOptionList(size) {
       return ref(tmp2, obj, traitOption.optionId);
     })
   };
-  tmp2Result = tmp2(6744);
+  tmp2Result = tmp2(6734);
   const children = [tmp16(tmp17, obj3), ];
   let tmp16Result = !isScreenReaderEnabled;
   if (tmp16Result) {

@@ -1,15 +1,15 @@
 // Module ID: 16912
 // Function ID: 16913
 // Name: RPCServerManager
-// Dependencies: [32, 8808, 5155, 5218, 5177, 2133, 6068, 6071, 5248, 5209, 1388, 5981, 6761, 1072, 7020, 12706, 6075, 1380, 572, 1256, 16913, 504, 1255, 12870, 16918, 12871, 7296, 15993, 16919, 16921, 7301, 12869, 8831, 2]
+// Dependencies: [32, 8808, 5155, 5218, 5177, 2133, 6058, 6061, 5248, 5209, 1388, 5971, 6751, 1072, 7020, 12706, 6065, 1380, 572, 1256, 16913, 504, 1255, 12870, 16918, 12871, 7296, 15993, 16919, 16921, 7301, 12869, 8831, 2]
 
 // Module 16912 (RPCServerManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import GlobalUtils from "GlobalUtils" /* 1255 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import Constants2 from "Constants" /* 6075 */;
-import Constants3 from "Constants" /* 6761 */;
+import Constants2 from "Constants" /* 6065 */;
+import Constants3 from "Constants" /* 6751 */;
 import FramesConstants from "FramesConstants" /* 7020 */;
 import transformUserDefault from "transformUser" /* 7301 */;
 import QuestTaskUtils from "QuestTaskUtils" /* 8831 */;
@@ -27,12 +27,12 @@ import ChannelStore from "ChannelStore" /* 5155 */;
 import GuildMemberStore from "GuildMemberStore" /* 5218 */;
 import GuildStore from "GuildStore" /* 5177 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import PresenceStore from "PresenceStore" /* 6068 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6071 */;
+import PresenceStore from "PresenceStore" /* 6058 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
 import RelationshipStore from "RelationshipStore" /* 5248 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
 import UserStore from "UserStore" /* 1388 */;
-import VoiceStateStore from "VoiceStateStore" /* 5981 */;
+import VoiceStateStore from "VoiceStateStore" /* 5971 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

@@ -1,15 +1,15 @@
 // Module ID: 9463
 // Function ID: 9464
 // Name: WishlistItemCardBase
-// Dependencies: [19, 17, 21, 575, 5306, 6015, 9458, 5377, 8601, 5902, 9464, 1113, 1255, 9485, 8092, 9487, 2]
+// Dependencies: [19, 17, 21, 575, 5306, 6005, 9458, 5367, 8601, 5892, 9464, 1113, 1255, 9485, 8092, 9487, 2]
 // Exports: default
 
 // Module 9463 (WishlistItemCardBase)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
-import native from "native" /* 5377 */;
-import useToken from "useToken" /* 5902 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 6015 */;
+import native from "native" /* 5367 */;
+import useToken from "useToken" /* 5892 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
 import useUserProfileColors from "useUserProfileColors" /* 8601 */;
 import IndicatorDot from "IndicatorDot" /* 9487 */;
 import react from "react" /* 19 */;

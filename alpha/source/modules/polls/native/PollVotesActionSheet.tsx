@@ -1,7 +1,7 @@
 // Module ID: 12655
 // Function ID: 12656
 // Name: PollVotesActionSheet
-// Dependencies: [32, 5, 19, 17, 5307, 6969, 5155, 6372, 1388, 21, 5306, 575, 504, 1414, 7894, 1113, 7428, 5929, 8861, 5598, 12656, 7918, 12662, 11868, 5920, 6351, 5372, 7443, 1187, 10930, 8476, 1655, 5548, 7888, 5547, 6020, 5313, 12663, 12664, 7937, 5552, 5566, 2]
+// Dependencies: [32, 5, 19, 17, 5307, 6969, 5155, 6362, 1388, 21, 5306, 575, 504, 1414, 7894, 1113, 7428, 5919, 8861, 5588, 12656, 7918, 12662, 11868, 5910, 6341, 5362, 7443, 1187, 10930, 8476, 1655, 5538, 7888, 5537, 6010, 5313, 12663, 12664, 7937, 5542, 5556, 2]
 // Exports: default
 
 // Module 12655 (PollVotesActionSheet)
@@ -9,10 +9,10 @@ import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
 import shared from "shared" /* 5313 */;
-import useThemeDefault from "useTheme" /* 5547 */;
-import timing_timing from "timing/timing" /* 5548 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import useThemeDefault from "useTheme" /* 5537 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import Pressables from "Pressables" /* 7428 */;
 import EmojiDefault from "Emoji" /* 7894 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;
@@ -25,7 +25,7 @@ import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import EmojiStore from "EmojiStore" /* 6969 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
-import MessageStore from "MessageStore" /* 6372 */;
+import MessageStore from "MessageStore" /* 6362 */;
 import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
@@ -117,11 +117,11 @@ function PollAnswerButton(answer) {
   let tmp11 = null;
   if (null != answer.poll_media.text) {
     const obj4 = { style: tmp.answerText, variant: "body-sm/semibold", color: str, lineClamp: 1, children: answer.poll_media.text };
-    tmp11 = map1(tmp3(5929).Text, obj4);
+    tmp11 = map1(tmp3(5919).Text, obj4);
   }
   items2[1] = tmp11;
   const obj5 = { variant: "body-sm/semibold", color: str, lineClamp: 1, children: items3 };
-  const Text = tmp3(5929).Text;
+  const Text = tmp3(5919).Text;
   items3 = [" ", "(", num.toLocaleString(), ")"];
   items2[2] = gesture(Text, obj5);
   return gesture(PressableHighlight, obj2);
@@ -468,11 +468,11 @@ function NoResults() {
   }
   items = [map1(tmp8, obj2), , ];
   const obj4 = { style: tmp.noResultsTitle, variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: intl.string(intl3.t.vhQK3o) };
-  const Text = tmp9(5929).Text;
+  const Text = tmp9(5919).Text;
   intl = tmp9(1113).intl;
   items[1] = map1(Text, obj4);
   const obj5 = { style: tmp.noResultsSubtitle, variant: "body-sm/semibold", color: "text-default", children: intl2.string(intl3.t.bwytdh) };
-  const Text2 = tmp9(5929).Text;
+  const Text2 = tmp9(5919).Text;
   intl2 = tmp9(1113).intl;
   items[2] = map1(Text2, obj5);
   return tmp5(tmp6, obj);

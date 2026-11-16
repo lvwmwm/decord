@@ -1,7 +1,7 @@
 // Module ID: 15208
 // Function ID: 15209
 // Name: MediaModalOverlayAltText
-// Dependencies: [19, 21, 5306, 575, 1630, 5131, 7428, 12449, 5929, 1113, 2]
+// Dependencies: [19, 21, 5306, 575, 1630, 5131, 7428, 12449, 5919, 1113, 2]
 
 // Module 15208 (MediaModalOverlayAltText)
 import Fragment from "Fragment" /* 21 */;
@@ -33,7 +33,7 @@ const memoResult = react.memo(function MediaModalOverlayAltTextButton(descriptio
     if (0 !== str.length) {
       const PressableOpacity = tmp3(7428).PressableOpacity;
       ({ variant: "body-xs/semibold", color: "text-overlay-light", children: intl.string(str(1113).t.Q5VqrN) });
-      const Text = tmp3(5929).Text;
+      const Text = tmp3(5919).Text;
       intl = tmp3(1113).intl;
       tmp4 = <PressableOpacity style={tmp2.container} onPress={function onPress() {
         const tmp = openMediaModalOverlayAltTextSheetDefault;

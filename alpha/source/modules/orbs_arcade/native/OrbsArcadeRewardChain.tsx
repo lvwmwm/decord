@@ -1,14 +1,14 @@
 // Module ID: 17660
 // Function ID: 17661
 // Name: OrbsArcadeRewardChain
-// Dependencies: [19, 17, 17647, 21, 575, 5306, 17661, 1655, 5313, 504, 17654, 17648, 17665, 671, 5893, 17666, 5929, 2]
+// Dependencies: [19, 17, 17647, 21, 575, 5306, 17661, 1655, 5313, 504, 17654, 17648, 17665, 671, 5883, 17666, 5919, 2]
 // Exports: default
 
 // Module 17660 (OrbsArcadeRewardChain)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import _modDef1655 from "module_1655" /* 1655 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import OrbsArcadeTypes from "OrbsArcadeTypes" /* 17648 */;
 import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 17654 */;
 import OrbsArcadeRewardChainCell from "OrbsArcadeRewardChainCell" /* 17661 */;
@@ -169,7 +169,7 @@ export default function OrbsArcadeRewardChain(game) {
   tmp19 = NITRO_GLOW_COLOR;
   if (!isThemeLightResult) {
     let obj7 = { style: memo.absoluteFill, start, end, colors: memo1 };
-    tmp16Result = tmp16(tmp7(5893), obj7);
+    tmp16Result = tmp16(tmp7(5883), obj7);
   }
   items6 = [
     tmp16Result,
@@ -218,7 +218,7 @@ export default function OrbsArcadeRewardChain(game) {
       const obj7 = { variant: "heading-xs/semibold", color: "text-strong", children: reward.name };
       items2[1] = metroImportDefault(Text_Text.Text, obj7);
       const obj8 = { variant: "footnote/medium", color: "text-muted", children: tmp3Result.getOrbsArcadeRewardScoreLabel(reward, hasOwnProperty[index], gameState, stateFromStores) };
-      const Text = tmp3(5929).Text;
+      const Text = tmp3(5919).Text;
       tmp3Result = OrbsArcadeRewardUtils;
       items2[2] = metroImportDefault(Text, obj8);
       items1[1] = metroImportAll(hasOwnProperty, obj5);

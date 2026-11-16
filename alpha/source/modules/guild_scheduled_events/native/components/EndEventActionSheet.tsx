@@ -1,7 +1,7 @@
 // Module ID: 15933
 // Function ID: 15934
 // Name: EndEventActionSheet
-// Dependencies: [19, 17, 5161, 1072, 21, 5306, 575, 8426, 5552, 10583, 15934, 1187, 1113, 5929, 5936, 7970, 2]
+// Dependencies: [19, 17, 5161, 1072, 21, 5306, 575, 8426, 5542, 10583, 15934, 1187, 1113, 5919, 5926, 7970, 2]
 // Exports: default
 
 // Module 15933 (EndEventActionSheet)
@@ -9,7 +9,7 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 5161 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 7970 */;
 import CallsUtils from "CallsUtils" /* 10583 */;
 import react from "react" /* 19 */;
@@ -61,12 +61,12 @@ export default function EndEventActionSheet(channel) {
     intl = tmp2(1113).intl;
     items = [closure_5(LegacyText, obj4), , , ];
     const obj5 = { style: tmp.subtitle, variant: "body-md/medium", color: "text-default", children: intl2.string(channel(1113).t["0I0B8f"]) };
-    const Text = tmp2(5929).Text;
+    const Text = tmp2(5919).Text;
     intl2 = tmp2(1113).intl;
     items[1] = closure_5(Text, obj5);
     const obj6 = { style: tmp.cancelButtonContainer, children: closure_5(Button, obj7) };
     obj7 = { text: intl3.string(channel(1113).t.P60OAX), grow: true, onPress: handleClose };
-    Button = tmp2(5936).Button;
+    Button = tmp2(5926).Button;
     intl3 = tmp2(1113).intl;
     items[2] = closure_5(View, obj6);
     const obj8 = { style: tmp.confirmButtonContainer, children: closure_5(Button2, obj9) };
@@ -85,7 +85,7 @@ export default function EndEventActionSheet(channel) {
           }
         }
     };
-    Button2 = tmp2(5936).Button;
+    Button2 = tmp2(5926).Button;
     intl4 = tmp2(1113).intl;
     items[3] = closure_5(View, obj8);
     return closure_5(tmp7, obj2);

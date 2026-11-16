@@ -1,12 +1,12 @@
 // Module ID: 9188
 // Function ID: 9189
 // Name: useAuthorWithProcessedColor
-// Dependencies: [17, 6749, 9189, 2]
+// Dependencies: [17, 6739, 9189, 2]
 // Exports: getMessageAuthorWithProcessedColor, getUserAuthorWithProcessedColor
 
 // Module 9188 (useAuthorWithProcessedColor)
 import react_native from "react-native" /* 17 */;
-import useMessageAuthor from "useMessageAuthor" /* 6749 */;
+import useMessageAuthor from "useMessageAuthor" /* 6739 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

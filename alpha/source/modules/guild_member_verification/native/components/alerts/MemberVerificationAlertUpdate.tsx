@@ -1,16 +1,16 @@
 // Module ID: 16062
 // Function ID: 16063
 // Name: MemberVerificationAlertUpdate
-// Dependencies: [19, 1072, 21, 5306, 6340, 1113, 6012, 6020, 16063, 5929, 2]
+// Dependencies: [19, 1072, 21, 5306, 6330, 1113, 6002, 6010, 16063, 5919, 2]
 // Exports: default
 
 // Module 16062 (MemberVerificationAlertUpdate)
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import LinkingDefault from "Linking" /* 6012 */;
-import FastImageDefault from "FastImage" /* 6020 */;
-import AlertDefault from "Alert" /* 6340 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import LinkingDefault from "Linking" /* 6002 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import AlertDefault from "Alert" /* 6330 */;
 import AssetRegistryDefault from "AssetRegistry" /* 16063 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

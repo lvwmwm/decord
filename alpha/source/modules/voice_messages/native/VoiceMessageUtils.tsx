@@ -1,7 +1,7 @@
 // Module ID: 14662
 // Function ID: 14663
 // Name: VoiceMessageUtils
-// Dependencies: [5, 2133, 14570, 14571, 1072, 3, 14663, 206, 12, 6096, 1256, 5554, 1380, 2]
+// Dependencies: [5, 2133, 14570, 14571, 1072, 3, 14663, 206, 12, 6086, 1256, 5544, 1380, 2]
 // Exports: emitVoiceMessageRecorded, endAudioRecording, generateBase64EncodedWaveform, startAudioRecording, triggerHaptic
 
 // Module 14662 (VoiceMessageUtils)
@@ -10,8 +10,8 @@ import byteLengthDefault from "byteLength" /* 206 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import HapticUtils from "HapticUtils" /* 5554 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 6096 */;
+import HapticUtils from "HapticUtils" /* 5544 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 6086 */;
 import downsampleWaveformDefault from "downsampleWaveform" /* 14663 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
@@ -36,7 +36,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let unpackModuleId;
-const f109762 = (item) => Math.min(item, closure_1_13);
+const f109776 = (item) => Math.min(item, closure_1_13);
 let obj = function _startAudioRecording() {
   obj = _asyncToGenerator(async (arg0, value) => {
     let obj5;
@@ -159,7 +159,7 @@ function stopAndGetAudioRecording() {
   if (mapped.length > closure_16) {
     arr3 = downsampleWaveformDefault(mapped, tmp5);
   }
-  const mapped1 = arr3.map(f109762);
+  const mapped1 = arr3.map(f109776);
   const fromByteArray = byteLengthDefault.fromByteArray;
   byteLengthDefault;
   const uint8Array = new Uint8Array(mapped1);
@@ -327,7 +327,7 @@ export function generateBase64EncodedWaveform(arg0) {
   if (arg0.length > authStore3) {
     arr = downsampleWaveformDefault(arg0, tmp);
   }
-  const mapped = arr.map(f109762);
+  const mapped = arr.map(f109776);
   const fromByteArray = byteLengthDefault.fromByteArray;
   byteLengthDefault;
   const uint8Array = new Uint8Array(mapped);

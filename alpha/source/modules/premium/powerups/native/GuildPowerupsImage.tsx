@@ -1,13 +1,13 @@
 // Module ID: 10721
 // Function ID: 10722
 // Name: GuildPowerupsImage
-// Dependencies: [5307, 21, 5306, 504, 6020, 2]
+// Dependencies: [5307, 21, 5306, 504, 6010, 2]
 // Exports: default
 
 // Module 10721 (GuildPowerupsImage)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;

@@ -1,7 +1,7 @@
 // Module ID: 11152
 // Function ID: 11153
 // Name: ForumComposerModal
-// Dependencies: [19, 17, 11041, 5155, 8725, 8872, 8867, 21, 5306, 575, 2020, 6269, 1113, 9004, 11153, 7918, 504, 11155, 11151, 1500, 1628, 11, 8866, 7499, 11156, 2]
+// Dependencies: [19, 17, 11041, 5155, 8725, 8872, 8867, 21, 5306, 575, 2020, 6259, 1113, 9004, 11153, 7918, 504, 11155, 11151, 1500, 1628, 11, 8866, 7499, 11156, 2]
 // Exports: default
 
 // Module 11152 (ForumComposerModal)
@@ -13,7 +13,7 @@ import intl5 from "intl" /* 1113 */;
 import KeyboardUIStore from "KeyboardUIStore" /* 1500 */;
 import KeyboardTypes from "KeyboardTypes" /* 1628 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 2020 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6269 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6259 */;
 import DraftStore2 from "DraftStore" /* 8725 */;
 import DraftActionCreatorsDefault from "DraftActionCreators" /* 9004 */;
 import ForumComposerModalActionCreators from "ForumComposerModalActionCreators" /* 11151 */;

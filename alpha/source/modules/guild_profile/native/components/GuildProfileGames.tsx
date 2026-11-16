@@ -1,15 +1,15 @@
 // Module ID: 10663
 // Function ID: 10664
 // Name: GuildProfileGames
-// Dependencies: [19, 17, 21, 5306, 575, 10664, 10286, 10665, 5929, 10669, 6015, 5552, 10670, 2121, 7428, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 10664, 10286, 10665, 5919, 10669, 6005, 5542, 10670, 2121, 7428, 2]
 // Exports: default
 
 // Module 10663 (GuildProfileGames)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 10286 */;
 import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 10664 */;
 import react_mod from "react" /* 19 */;

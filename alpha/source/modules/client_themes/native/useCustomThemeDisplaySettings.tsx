@@ -1,10 +1,10 @@
-// Module ID: 5546
-// Function ID: 5547
+// Module ID: 5536
+// Function ID: 5537
 // Name: useCustomThemeDisplaySettings
 // Dependencies: [32, 1238, 504, 1239, 2]
 // Exports: useCustomThemeDisplaySettings
 
-// Module 5546 (useCustomThemeDisplaySettings)
+// Module 5536 (useCustomThemeDisplaySettings)
 import get_initialized from "get initialized" /* 504 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1238 */;
@@ -19,14 +19,14 @@ export function useCustomThemeDisplaySettings(stateFromStores) {
   let tmp5;
   let tmp6;
   let tmpResult;
-  const f90945 = () => {
+  const f90958 = () => {
     const items = [CustomThemeMobileStore.getCustomTheme(), CustomThemeMobileStore.getBaseTheme(), CustomThemeMobileStore.getPreviewTheme()];
     return items;
   };
   let items = [CustomThemeMobileStore];
   const obj = get_initialized;
-  [tmp4, tmp5, tmp6] = obj.useStateFromStoresArray(items, f90945);
-  _slicedToArray(obj.useStateFromStoresArray(items, f90945), 3);
+  [tmp4, tmp5, tmp6] = obj.useStateFromStoresArray(items, f90958);
+  _slicedToArray(obj.useStateFromStoresArray(items, f90958), 3);
   if (undefined !== tmp6) {
     return tmp6;
   } else {

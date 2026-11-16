@@ -1,15 +1,15 @@
 // Module ID: 9727
 // Function ID: 9728
 // Name: NitroOrbsDeliveredModal
-// Dependencies: [32, 19, 17, 1072, 1074, 21, 5306, 575, 6338, 1264, 8484, 7937, 8604, 9728, 7415, 7952, 6020, 9761, 5929, 1113, 5936, 2]
+// Dependencies: [32, 19, 17, 1072, 1074, 21, 5306, 575, 6328, 1264, 8484, 7937, 8604, 9728, 7415, 7952, 6010, 9761, 5919, 1113, 5926, 2]
 // Exports: default
 
 // Module 9727 (NitroOrbsDeliveredModal)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
-import FastImageDefault from "FastImage" /* 6020 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 6338 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 6328 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
 import CollectiblesActionCreators from "CollectiblesActionCreators" /* 8484 */;
 import openUserSettings from "openUserSettings" /* 8604 */;
@@ -119,12 +119,12 @@ export default function NitroOrbsDeliveredModal(arg0) {
     items4 = [closure_10(tmp2Result, obj9), ];
     const obj10 = { children: items5 };
     const obj11 = { variant: "heading-lg/semibold", color: "text-overlay-light", style: tmp.title, children: intl.formatToPlainString(onClose(1113).t["O2/Bj8"], obj12) };
-    const Text = tmp5(5929).Text;
+    const Text = tmp5(5919).Text;
     intl = tmp5(1113).intl;
     obj12 = { orbAmount: orbsAmount };
     items5 = [closure_10(Text, obj11), ];
     const obj13 = { variant: "body-md/normal", color: "text-overlay-light", style: tmp.description, children: intl2.format(onClose(1113).t.qiZPb6, obj14) };
-    const Text2 = tmp5(5929).Text;
+    const Text2 = tmp5(5919).Text;
     intl2 = tmp5(1113).intl;
     obj14 = { orbAmount: orbsAmount };
     items5[1] = closure_10(Text2, obj13);
@@ -132,11 +132,11 @@ export default function NitroOrbsDeliveredModal(arg0) {
     items3[1] = closure_11(View, obj8);
     const obj15 = { style: tmp.footer, children: items6 };
     const obj16 = { text: intl3.string(onClose(1113).t.OhOWfI), variant: "primary", size: "lg", onPress: callback };
-    const Button = tmp5(5936).Button;
+    const Button = tmp5(5926).Button;
     intl3 = tmp5(1113).intl;
     items6 = [closure_10(Button, obj16), ];
     const obj17 = { text: intl4.string(onClose(1113).t.CvXwDY), variant: "secondary-overlay", size: "lg", onPress: callback1 };
-    const Button2 = tmp5(5936).Button;
+    const Button2 = tmp5(5926).Button;
     intl4 = tmp5(1113).intl;
     items6[1] = closure_10(Button2, obj17);
     items3[2] = closure_11(View, obj15);

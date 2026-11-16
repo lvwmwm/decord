@@ -1,17 +1,17 @@
-// Module ID: 18931
-// Function ID: 18932
+// Module ID: 18933
+// Function ID: 18934
 // Name: GuildMemberDashChannelRow
-// Dependencies: [19, 1072, 5162, 6060, 21, 5306, 575, 18932, 6932, 5352, 1099, 14789, 1113, 7436, 1187, 2]
+// Dependencies: [19, 1072, 5162, 6050, 21, 5306, 575, 18934, 6922, 5342, 1099, 14789, 1113, 7436, 1187, 2]
 // Exports: default
 
-// Module 18931 (GuildMemberDashChannelRow)
+// Module 18933 (GuildMemberDashChannelRow)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import router_utils from "router_utils" /* 1099 */;
 import ChannelConstants from "ChannelConstants" /* 5162 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 5352 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 6060 */;
-import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 6932 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5342 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 6050 */;
+import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 6922 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import createStyles_mod from "createStyles" /* 5306 */;
@@ -43,7 +43,7 @@ export default function GuildMemberDashChannelRow(arg0) {
   let hasItem;
   let tmp = closure_8();
   const id = guild.id;
-  let obj = id(18932);
+  let obj = id(18934);
   let num = obj.useSubmittedGuildJoinRequestTotal({ guildId: id });
   if (num == null) {
     num = 0;

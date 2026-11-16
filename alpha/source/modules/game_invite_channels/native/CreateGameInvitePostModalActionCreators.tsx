@@ -1,12 +1,12 @@
 // Module ID: 15134
 // Function ID: 15135
 // Name: CreateGameInvitePostModalActionCreators
-// Dependencies: [6848, 15135, 2121, 2]
+// Dependencies: [6838, 15135, 2121, 2]
 // Exports: closeCreateGameInvitePostModal, openCreateGameInvitePostModal
 
 // Module 15134 (CreateGameInvitePostModalActionCreators)
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import size from "module_2" /* 2 */;
 
 let c3 = "create-game-invite-post";

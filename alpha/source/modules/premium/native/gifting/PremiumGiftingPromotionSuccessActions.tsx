@@ -1,7 +1,7 @@
 // Module ID: 11841
 // Function ID: 11842
 // Name: PremiumGiftingPromotionSuccessActions
-// Dependencies: [19, 17, 21, 5306, 575, 11664, 1502, 11673, 11832, 11662, 10020, 11686, 1113, 2765, 5936, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 11664, 1502, 11673, 11832, 11662, 10020, 11686, 1113, 2765, 5926, 2]
 // Exports: default
 
 // Module 11841 (PremiumGiftingPromotionSuccessActions)

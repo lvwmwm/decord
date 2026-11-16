@@ -1,7 +1,7 @@
 // Module ID: 11919
 // Function ID: 11920
 // Name: SavedMessageUtils
-// Dependencies: [5, 19, 5159, 502, 5155, 1072, 1113, 2169, 504, 8134, 7262, 5492, 2]
+// Dependencies: [5, 19, 5159, 502, 5155, 1072, 1113, 2169, 504, 8134, 7262, 5482, 2]
 // Exports: savedMessageJumpToMessage, useDueInString, useSavedMessageChannel
 
 // Module 11919 (SavedMessageUtils)

@@ -1,7 +1,7 @@
 // Module ID: 13423
 // Function ID: 13424
 // Name: RecommendationsBanner
-// Dependencies: [19, 17, 1407, 1072, 21, 5306, 12578, 13415, 12898, 6020, 8482, 8612, 1414, 8538, 2]
+// Dependencies: [19, 17, 1407, 1072, 21, 5306, 12578, 13415, 12898, 6010, 8482, 8612, 1414, 8538, 2]
 
 // Module 13423 (RecommendationsBanner)
 import react_native from "react-native" /* 17 */;
@@ -22,7 +22,7 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 let tmp3;
-const FastImageDefault = tmp3(6020);
+const FastImageDefault = tmp3(6010);
 const UserProfileBannerDefault = tmp(8612);
 const View = react_native.View;
 ({ BANNER_HEIGHT: metroRequire, EMPTY_STRING_SNOWFLAKE_ID: metroImportDefault } = Constants);

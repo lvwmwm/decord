@@ -1,15 +1,15 @@
 // Module ID: 11024
 // Function ID: 11025
 // Name: useFormattedMessagePreview
-// Dependencies: [502, 5248, 1388, 1072, 1088, 504, 9210, 6749, 1113, 6361, 5952, 12, 9215, 9322, 2]
+// Dependencies: [502, 5248, 1388, 1072, 1088, 504, 9210, 6739, 1113, 6351, 5942, 12, 9215, 9322, 2]
 // Exports: isMessageContentPreviewable, useFormattedMessagePreview
 
 // Module 11024 (useFormattedMessagePreview)
 import Constants from "Constants" /* 1072 */;
 import MessageTypes from "MessageTypes" /* 1088 */;
 import intl31 from "intl" /* 1113 */;
-import isForwardMessageDefault from "isForwardMessage" /* 5952 */;
-import useMessageAuthorDefault from "useMessageAuthor" /* 6749 */;
+import isForwardMessageDefault from "isForwardMessage" /* 5942 */;
+import useMessageAuthorDefault from "useMessageAuthor" /* 6739 */;
 import useIsCallActiveDefault from "useIsCallActive" /* 9210 */;
 import SystemMessageUtilsDefault from "SystemMessageUtils" /* 9215 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -495,12 +495,12 @@ export function useFormattedMessagePreview(message, channel) {
     }
     return user;
   });
-  const tmpResult3 = tmp(6749);
+  const tmpResult3 = tmp(6739);
   const nick2 = tmpResult3.useNullableUserAuthor(stateFromStores1, channel).nick;
   const obj3 = { message, channel, currentUserId: stateFromStores, authorNick: stringResult, actorNick: nick1, otherUser: stateFromStores1, otherUserNick: nick2, isBlocked, isIgnored, isCallActive: tmp4 };
   nick1 = undefined;
   const tmp8 = formatMessagePreview;
-  const tmpResult4 = tmp(6749);
+  const tmpResult4 = tmp(6739);
   if (null != message.actor) {
     nick1 = tmpResult4.useNullableUserAuthor(message.actor, channel).nick;
   }

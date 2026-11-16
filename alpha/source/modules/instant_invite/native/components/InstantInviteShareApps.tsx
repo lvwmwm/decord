@@ -1,7 +1,7 @@
 // Module ID: 15892
 // Function ID: 15893
 // Name: InstantInviteShareApps
-// Dependencies: [32, 19, 17, 15893, 21, 5306, 575, 5944, 5598, 15923, 7988, 12290, 2]
+// Dependencies: [32, 19, 17, 15893, 21, 5306, 575, 5934, 5588, 15923, 7988, 12290, 2]
 
 // Module 15892 (InstantInviteShareApps)
 import Fragment from "Fragment" /* 21 */;
@@ -34,11 +34,11 @@ const memoResult = react.memo(function InstantInviteShareApps(onItemPressed) {
   dependencyMap = undefined;
   const contentContainerStyle = onItemPressed.contentContainerStyle;
   let tmp = closure_10();
-  const obj = onItemPressed(5944);
+  const obj = onItemPressed(5934);
   let closure_1 = obj.useFontScale();
   const tmp2 = _slicedToArray(react.useState(closure_8), 2);
   [arr, c2] = tmp2;
-  let obj2 = onItemPressed(5598);
+  let obj2 = onItemPressed(5588);
   gesture = obj2.useNativeGesture({ disallowInterruption: true });
   const effect = react.useEffect(() => {
     const allPromises = Promise.all(metroImportDefault.map((isAvailable) => isAvailable.isAvailable));
@@ -96,7 +96,7 @@ const memoResult = react.memo(function InstantInviteShareApps(onItemPressed) {
     }
     return <tmp2 key={type} style={obj2}>{tmpResult}</tmp2>;
   })}</closure_6>;
-  return jsx(onItemPressed(5598).GestureDetector, { gesture, children });
+  return jsx(onItemPressed(5588).GestureDetector, { gesture, children });
 });
 const result = size.fileFinishedImporting("modules/instant_invite/native/components/InstantInviteShareApps.tsx");
 

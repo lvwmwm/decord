@@ -1,7 +1,7 @@
 // Module ID: 8416
 // Function ID: 8417
 // Name: EditGuildEventPreview
-// Dependencies: [19, 17, 5155, 1072, 21, 5306, 575, 1380, 504, 5954, 7975, 8417, 5929, 1113, 8418, 1187, 8422, 7971, 7415, 7984, 5936, 7972, 6269, 8423, 2121, 2]
+// Dependencies: [19, 17, 5155, 1072, 21, 5306, 575, 1380, 504, 5944, 7975, 8417, 5919, 1113, 8418, 1187, 8422, 7971, 7415, 7984, 5926, 7972, 6259, 8423, 2121, 2]
 // Exports: default
 
 // Module 8416 (EditGuildEventPreview)
@@ -9,8 +9,8 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6269 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6259 */;
 import EditGuildEventUtils from "EditGuildEventUtils" /* 7971 */;
 import ScheduleUtils from "ScheduleUtils" /* 7972 */;
 import react from "react" /* 19 */;
@@ -54,7 +54,7 @@ function PreviewBody(event) {
   const items1 = [channel_id];
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channel_id), items1);
   const tmp5 = channel_id;
-  const tmp6 = channel_id(5954)(stateFromStores);
+  const tmp6 = channel_id(5944)(stateFromStores);
   dependencyMap = tmp6;
   let obj2 = require("EntityUtils");
   let locationFromEvent = obj2.getLocationFromEvent(event);
@@ -69,12 +69,12 @@ function PreviewBody(event) {
   let tmp9 = closure_7;
   let tmp11 = closure_6;
   const obj4 = { style: tmp.headerTitle, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(tmp2(1113).t.yBsFE3) };
-  let Text = tmp2(5929).Text;
+  let Text = tmp2(5919).Text;
   intl = tmp2(1113).intl;
   items2 = [closure_6(Text, obj4), ];
   const obj5 = { style: tmp.headerSubtitle, accessibilityLabel: formatToPlainStringResult, variant: "body-sm/medium", color: "text-default", children: formatResult };
   formatToPlainStringResult = undefined;
-  const Text2 = tmp2(5929).Text;
+  const Text2 = tmp2(5919).Text;
   const tmp10 = locationFromEvent;
   if (null != stateFromStores) {
     const intl2 = tmp2(1113).intl;

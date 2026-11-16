@@ -1,7 +1,7 @@
 // Module ID: 9172
 // Function ID: 9173
 // Name: ForumPostActions
-// Dependencies: [1072, 8655, 7739, 9173, 1242, 6030, 1113, 2188, 9174, 7863, 1414, 9175, 5250, 5256, 2]
+// Dependencies: [1072, 8655, 7739, 9173, 1242, 6020, 1113, 2188, 9174, 7863, 1414, 9175, 5250, 5256, 2]
 // Exports: createDefaultReaction, createForumPostActions
 
 // Module 9172 (ForumPostActions)
@@ -117,7 +117,7 @@ export function createForumPostActions(arg0) {
   }
   let stringResult;
   const tmp8Result = tmp8(8655);
-  const assetUriForEmbed1 = tmp8Result.getAssetUriForEmbed(tmp6(6030));
+  const assetUriForEmbed1 = tmp8Result.getAssetUriForEmbed(tmp6(6020));
   if (!hasReactions) {
     let emoji;
     if (defaultReaction != null) {

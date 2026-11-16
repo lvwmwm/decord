@@ -1,16 +1,16 @@
-// Module ID: 19776
-// Function ID: 19777
+// Module ID: 19778
+// Function ID: 19779
 // Name: SuspendedUserPage
-// Dependencies: [19, 17, 8231, 8206, 21, 5306, 575, 504, 7415, 7988, 1113, 6844, 7430, 5929, 6012, 17266, 2]
+// Dependencies: [19, 17, 8231, 8206, 21, 5306, 575, 504, 7415, 7988, 1113, 6834, 7430, 5919, 6002, 17266, 2]
 // Exports: default
 
-// Module 19776 (SuspendedUserPage)
+// Module 19778 (SuspendedUserPage)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import LinkingDefault from "Linking" /* 6012 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6844 */;
+import LinkingDefault from "Linking" /* 6002 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6834 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 7415 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7430 */;
 import SafetyHubPageDefault from "SafetyHubPage" /* 17266 */;
@@ -77,11 +77,11 @@ export default function SuspendedUserSafetyHubPage() {
       color: "control-critical-primary-text-default",
       children: items2
     };
-    const Text = tmp2(5929).Text;
+    const Text = tmp2(5919).Text;
     const intl2 = tmp2(1113).intl;
     items2 = [intl2.string(intl4.t["MG+Bzb"]), " ", ];
     const obj6 = { style: tmp.link, variant: "body-xs/medium", color: "control-critical-primary-text-default", children: intl3.string(intl4.t["9JceHN"]) };
-    const Text2 = tmp2(5929).Text;
+    const Text2 = tmp2(5919).Text;
     intl3 = tmp2(1113).intl;
     items2[2] = metroImportDefault(Text2, obj6);
     items1[1] = metroImportAll(Text, obj5);

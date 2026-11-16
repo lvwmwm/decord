@@ -1,7 +1,7 @@
 // Module ID: 10722
 // Function ID: 10723
 // Name: GuildPowerupsCardFooter
-// Dependencies: [17, 21, 5306, 7930, 575, 5929, 7623, 1113, 2733, 10723, 10698, 9981, 2]
+// Dependencies: [17, 21, 5306, 7930, 575, 5919, 7623, 1113, 2733, 10723, 10698, 9981, 2]
 // Exports: GuildPowerupsCardFooter
 
 // Module 10722 (GuildPowerupsCardFooter)
@@ -9,7 +9,7 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef2733 from "module_2733" /* 2733 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import CircleErrorIcon2 from "CircleErrorIcon" /* 7623 */;
 import CircleCheckIcon2 from "CircleCheckIcon" /* 7930 */;
 import BoostGemIcon2 from "BoostGemIcon" /* 9981 */;

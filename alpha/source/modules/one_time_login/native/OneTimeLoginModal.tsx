@@ -1,7 +1,7 @@
 // Module ID: 16296
 // Function ID: 16297
 // Name: OneTimeLoginModal
-// Dependencies: [5, 19, 17, 502, 1388, 1072, 1240, 21, 5306, 575, 1630, 1496, 1360, 1256, 6848, 5492, 1099, 6270, 6274, 7623, 1113, 6274, 6844, 10271, 5486, 6020, 16297, 5929, 7767, 2]
+// Dependencies: [5, 19, 17, 502, 1388, 1072, 1240, 21, 5306, 575, 1630, 1496, 1360, 1256, 6838, 5482, 1099, 6260, 6264, 7623, 1113, 6264, 6834, 10271, 5476, 6010, 16297, 5919, 7767, 2]
 // Exports: default
 
 // Module 16296 (OneTimeLoginModal)
@@ -12,9 +12,9 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1360 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import FastImageDefault from "FastImage" /* 6020 */;
-import useAlertStore from "useAlertStore" /* 6270 */;
-import AlertModal2 from "AlertModal" /* 6274 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import useAlertStore from "useAlertStore" /* 6260 */;
+import AlertModal2 from "AlertModal" /* 6264 */;
 import CircleErrorIcon from "CircleErrorIcon" /* 7623 */;
 import ThemedGradientDefault from "ThemedGradient" /* 10271 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -162,9 +162,9 @@ export default function OneTimeLoginModal(token) {
       str = "current user";
     }
     obj3 = { children: authStore2(AlertActionButton, obj4, "confirm") };
-    AlertActions = tmp(6274).AlertActions;
+    AlertActions = tmp(6264).AlertActions;
     obj4 = { onPress: callback1, text: intl3.string(intl4.t["3PatSz"]) };
-    AlertActionButton = tmp(6274).AlertActionButton;
+    AlertActionButton = tmp(6264).AlertActionButton;
     intl3 = tmp(1113).intl;
     openAlert("already-logged-in-alert", authStore2(AlertModal, obj));
   }, items3);
@@ -277,7 +277,7 @@ export default function OneTimeLoginModal(token) {
   }, items5);
   let obj = { style: memo, children: items6 };
   let obj2 = { absolute: true, wide: true, tall: true, gradientOverride: closure_11[5], mix: true, angleOverride: 0, mixAmount: obj3 };
-  obj3 = { dark: token(5486).OverlayOpacity.LEVEL_1 };
+  obj3 = { dark: token(5476).OverlayOpacity.LEVEL_1 };
   const tmp11 = ThemedGradientDefault;
   items6 = [closure_12(tmp11, obj2), ];
   let obj4 = { style: tmp.container, children: items9 };
@@ -288,14 +288,14 @@ export default function OneTimeLoginModal(token) {
   let obj7 = { style: tmp.loadingContainer, children: items8 };
   items8 = [closure_12(callback2, {}), ];
   let obj8 = { variant: "body-lg/semibold", children: intl.string(token(1113).t.W9uNdG) };
-  const Text = token(5929).Text;
+  const Text = token(5919).Text;
   intl = token(1113).intl;
   items8[1] = closure_12(Text, obj8);
   items7[1] = closure_13(callback1, obj7);
   items9 = [closure_13(callback1, obj5), ];
   let obj9 = { style: tmp.bottomContent, children: items10 };
   let obj10 = { variant: "body-sm/normal", children: intl2.string(token(1113).t["ZXe5/Y"]) };
-  const Text2 = token(5929).Text;
+  const Text2 = token(5919).Text;
   intl2 = token(1113).intl;
   items10 = [closure_12(Text2, obj10), ];
   let obj11 = { textColor: "text-default", text: intl3.string(token(1113).t.FIEwfG), variant: "body-sm/medium", onPress, textStyle: tmp.link };

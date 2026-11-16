@@ -1,14 +1,14 @@
-// Module ID: 6269
-// Function ID: 6270
+// Module ID: 6259
+// Function ID: 6260
 // Name: actions/AlertActionCreators
-// Dependencies: [19, 21, 5552, 572, 6270, 1113, 6274, 6340, 6340, 2121, 2]
+// Dependencies: [19, 21, 5542, 572, 6260, 1113, 6264, 6330, 6330, 2121, 2]
 
-// Module 6269 (actions/AlertActionCreators)
+// Module 6259 (actions/AlertActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl2 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import useAlertStore from "useAlertStore" /* 6270 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import useAlertStore from "useAlertStore" /* 6260 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -152,11 +152,11 @@ let obj = {
     }
     if (!tmp7) {
       if (flag) {
-        const obj4 = merged(5552);
+        const obj4 = merged(5542);
         obj4.hideActionSheet();
       }
       if (null != c6) {
-        const obj5 = confirmText(6270);
+        const obj5 = confirmText(6260);
         obj5.dismissAlert(c6);
       }
       const obj6 = merged(572);
@@ -168,10 +168,10 @@ let obj = {
       ({ cancelText, onConfirm: c3, onCancel: c4 } = merged);
       c5 = false;
       ({ title, body: body2, children, confirmColor } = merged);
-      const openAlert = confirmText(6270).openAlert;
-      const tmp30 = confirmText(6270);
+      const openAlert = confirmText(6260).openAlert;
+      const tmp30 = confirmText(6260);
       const obj3 = { title, content: body2, extraContent: children, actions: tmp32(tmp33, obj10) };
-      const AlertModal = confirmText(6274).AlertModal;
+      const AlertModal = confirmText(6264).AlertModal;
       const obj7 = {
         variant: obj9.getAlertButtonVariant(confirmColor),
         text: confirmText,
@@ -182,8 +182,8 @@ let obj = {
             }
           }
       };
-      const AlertActionButton = confirmText(6274).AlertActionButton;
-      obj9 = confirmText(6340);
+      const AlertActionButton = confirmText(6264).AlertActionButton;
+      obj9 = confirmText(6330);
       const items = [c3(AlertActionButton, obj7), ];
       let tmp31Result = null;
       const tmp29 = confirmText;
@@ -200,7 +200,7 @@ let obj = {
                 }
               }
         };
-        tmp31Result = tmp31(tmp29(6274).AlertActionButton, obj8);
+        tmp31Result = tmp31(tmp29(6264).AlertActionButton, obj8);
       }
       obj10 = { children: items };
       items[1] = tmp31Result;
@@ -218,14 +218,14 @@ let obj = {
       }, obj11);
     } else {
       if (null != c6) {
-        const obj2 = confirmText(6270);
+        const obj2 = confirmText(6260);
         obj2.dismissAlert(c6);
         c6 = null;
       }
       const self = this;
       const obj12 = {
         importer() {
-            const promise = asyncRequire(6340, dependencyMap.paths);
+            const promise = asyncRequire(6330, dependencyMap.paths);
             return promise.then((result) => {
               let closure_0 = result.default;
               return (arg0) => {

@@ -1,14 +1,14 @@
 // Module ID: 9344
 // Function ID: 9345
 // Name: MarkupParsers
-// Dependencies: [1072, 1089, 1456, 6057, 9345, 9349, 8646, 9365, 1242, 2]
+// Dependencies: [1072, 1089, 1456, 6047, 9345, 9349, 8646, 9365, 1242, 2]
 // Exports: parseEmbedDescriptionMarkup, parseEmbedTitleMarkup, parseEmbedTitleMarkupWithoutLinks, parseMessageMarkup
 
 // Module 9344 (MarkupParsers)
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 6057 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 6047 */;
 import renderMessageMarkup from "renderMessageMarkup" /* 8646 */;
 import NativeMarkdownExperiment from "NativeMarkdownExperiment" /* 9345 */;
 import parseNativeMarkupDefault from "parseNativeMarkup" /* 9365 */;

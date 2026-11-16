@@ -1,15 +1,15 @@
 // Module ID: 15265
 // Function ID: 15266
 // Name: ContentImpressionTracker
-// Dependencies: [5, 19, 8808, 10137, 1072, 21, 1269, 5345, 8804, 15242, 15243, 15247, 15245, 8835, 8834, 8815, 10133, 10138, 10135, 8816, 8825, 6771, 6776, 10168, 504, 5899, 10169, 2]
+// Dependencies: [5, 19, 8808, 10137, 1072, 21, 1269, 6961, 8804, 15242, 15243, 15247, 15245, 8835, 8834, 8815, 10133, 10138, 10135, 8816, 8825, 6761, 6766, 10168, 504, 5889, 10169, 2]
 // Exports: QuestContentImpressionTracker
 
 // Module 15265 (ContentImpressionTracker)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import AdCreativeType from "AdCreativeType" /* 5345 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 6771 */;
-import MetricEvents from "MetricEvents" /* 6776 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 6761 */;
+import MetricEvents from "MetricEvents" /* 6766 */;
+import AdCreativeType from "AdCreativeType" /* 6961 */;
 import QuestDataUtils from "QuestDataUtils" /* 8804 */;
 import getQuestLogger from "getQuestLogger" /* 8816 */;
 import AnalyticsActions from "AnalyticsActions" /* 8825 */;
@@ -388,7 +388,7 @@ class QuestContentImpression {
     obj2.isQuestEnrollmentBlocked = isQuestEnrollmentBlocked;
     obj2.onImpressionCallback = onImpression;
     obj2.sourceQuestContent = sourceQuestContent;
-    if (adCreativeType === obj2(5345).AdCreativeType.QUEST) {
+    if (adCreativeType === obj2(6961).AdCreativeType.QUEST) {
       let obj3 = { adContentIds, adCreativeType };
       obj2.entity = obj3;
     } else {

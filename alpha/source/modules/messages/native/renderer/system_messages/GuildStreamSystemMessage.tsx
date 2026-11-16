@@ -1,12 +1,12 @@
 // Module ID: 9247
 // Function ID: 9248
 // Name: GuildStreamSystemMessage
-// Dependencies: [6803, 9209, 9188, 9190, 1113, 9192, 2]
+// Dependencies: [6793, 9209, 9188, 9190, 1113, 9192, 2]
 // Exports: createGuildStreamSystemMessage
 
 // Module 9247 (GuildStreamSystemMessage)
 import intl2 from "intl" /* 1113 */;
-import Constants from "Constants" /* 6803 */;
+import Constants from "Constants" /* 6793 */;
 import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 9188 */;
 import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 9190 */;
 import getHumanizedCallDurationDefault from "getHumanizedCallDuration" /* 9209 */;

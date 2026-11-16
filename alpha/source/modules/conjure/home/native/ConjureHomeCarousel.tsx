@@ -1,14 +1,14 @@
 // Module ID: 13815
 // Function ID: 13816
 // Name: ConjureHomeCarousel
-// Dependencies: [19, 17, 5307, 2120, 1072, 21, 575, 7438, 8101, 13816, 10467, 11224, 12682, 5306, 1655, 13818, 6020, 1414, 5929, 13819, 13962, 13970, 504, 1503, 7994, 1113, 4131, 2]
+// Dependencies: [19, 17, 5307, 2120, 1072, 21, 575, 7438, 8101, 13816, 10467, 11224, 12682, 5306, 1655, 13818, 6010, 1414, 5919, 13819, 13962, 13970, 504, 1503, 7994, 1113, 4131, 2]
 
 // Module 13815 (ConjureHomeCarousel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import GameControllerIcon from "GameControllerIcon" /* 7438 */;
 import AppsIcon from "AppsIcon" /* 8101 */;
 import ScreenIcon from "ScreenIcon" /* 10467 */;
@@ -40,7 +40,7 @@ let size;
 let size1;
 let tmp3;
 const AvatarUtils = tmp3(1414);
-const Text_Text = tmp3(5929);
+const Text_Text = tmp3(5919);
 const SvgCss = tmp3(13819);
 const conjureHomeInspirationEntries = tmp3(13970);
 let View = react_native.View;

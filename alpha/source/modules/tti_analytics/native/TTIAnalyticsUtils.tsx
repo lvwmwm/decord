@@ -1,7 +1,7 @@
 // Module ID: 8678
 // Function ID: 8679
 // Name: TTIAnalyticsUtils
-// Dependencies: [32, 5, 8679, 5532, 1192, 502, 5155, 1362, 1072, 8775, 5162, 21, 5263, 6199, 1269, 1379, 3, 5493, 5492, 5499, 10, 1242, 1256, 8776, 8778, 9, 1089, 1374, 1380, 8779, 8780, 6269, 6340, 2121, 2]
+// Dependencies: [32, 5, 8679, 5522, 1192, 502, 5155, 1362, 1072, 8775, 5162, 21, 5263, 6189, 1269, 1379, 3, 5483, 5482, 5489, 10, 1242, 1256, 8776, 8778, 9, 1089, 1374, 1380, 8779, 8780, 6259, 6330, 2121, 2]
 // Exports: currentLoadId, getLastTrackedAppUiViewed2Properties, trackAppLaunchCompleted, trackAppOpened, trackAppUIViewed
 
 // Module 8678 (TTIAnalyticsUtils)
@@ -13,15 +13,15 @@ import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import ChannelConstants from "ChannelConstants" /* 5162 */;
 import DeviceUtils from "DeviceUtils" /* 5263 */;
-import RootNavigationRef from "RootNavigationRef" /* 5493 */;
-import react_nativeDefault from "react-native" /* 5499 */;
-import getMediaPerformanceClassDefault from "getMediaPerformanceClass" /* 6199 */;
+import RootNavigationRef from "RootNavigationRef" /* 5483 */;
+import react_nativeDefault from "react-native" /* 5489 */;
+import getMediaPerformanceClassDefault from "getMediaPerformanceClass" /* 6189 */;
 import AcceptInviteConstants from "AcceptInviteConstants" /* 8775 */;
 import AppStartInfo2 from "AppStartInfo" /* 8776 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import CacheStore from "CacheStore" /* 8679 */;
-import ExperimentStore from "ExperimentStore" /* 5532 */;
+import ExperimentStore from "ExperimentStore" /* 5522 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
@@ -33,7 +33,7 @@ import size from "module_2" /* 2 */;
 let c6, c7, c8;
 
 let tmp;
-const NavigationRouteUtils = tmp(5492);
+const NavigationRouteUtils = tmp(5482);
 function getDeviceMetadata() {
   let obj2;
   let obj3;

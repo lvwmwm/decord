@@ -1,9 +1,9 @@
-// Module ID: 18093
-// Function ID: 18094
+// Module ID: 18095
+// Function ID: 18096
 // Name: ShowSpoilersSetting
 // Dependencies: [19, 9202, 1072, 5131, 1113, 12406, 2]
 
-// Module 18093 (ShowSpoilersSetting)
+// Module 18095 (ShowSpoilersSetting)
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
 import UserSettings from "UserSettings" /* 5131 */;

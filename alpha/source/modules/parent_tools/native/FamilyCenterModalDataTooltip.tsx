@@ -1,7 +1,7 @@
 // Module ID: 17421
 // Function ID: 17422
 // Name: FamilyCenterModalDataTooltip
-// Dependencies: [19, 17, 8741, 21, 8069, 14228, 6018, 16013, 8071, 8252, 6042, 11817, 5306, 575, 5929, 14227, 1113, 2701, 9617, 9619, 8208, 8210, 14079, 5936, 6848, 7493, 12523, 2]
+// Dependencies: [19, 17, 8741, 21, 8069, 14228, 6008, 16013, 8071, 8252, 6032, 11817, 5306, 575, 5919, 14227, 1113, 2701, 9617, 9619, 8208, 8210, 14079, 5926, 6838, 7493, 12523, 2]
 // Exports: default
 
 // Module 17421 (FamilyCenterModalDataTooltip)
@@ -9,10 +9,10 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import _modDef2701 from "module_2701" /* 2701 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import FriendsIcon from "FriendsIcon" /* 6018 */;
-import ClockIcon from "ClockIcon" /* 6042 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import FriendsIcon from "FriendsIcon" /* 6008 */;
+import ClockIcon from "ClockIcon" /* 6032 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import ChatIcon from "ChatIcon" /* 8069 */;
 import ThreadIcon from "ThreadIcon" /* 8071 */;
 import CreditCardIcon from "CreditCardIcon" /* 8252 */;

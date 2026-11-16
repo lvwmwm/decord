@@ -1,17 +1,17 @@
 // Module ID: 8431
 // Function ID: 8432
 // Name: GuildEventCard
-// Dependencies: [19, 17, 6071, 7029, 5161, 21, 5306, 575, 7984, 6951, 504, 7971, 7445, 8432, 8433, 2]
+// Dependencies: [19, 17, 6061, 7029, 5161, 21, 5306, 575, 7984, 6941, 504, 7971, 7445, 8432, 8433, 2]
 
 // Module 8431 (GuildEventCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 5161 */;
-import ButtonGroup2 from "ButtonGroup" /* 6951 */;
+import ButtonGroup2 from "ButtonGroup" /* 6941 */;
 import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7029 */;
 import GuildEventCardComponents from "GuildEventCardComponents" /* 7984 */;
 import react from "react" /* 19 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6071 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;

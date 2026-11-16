@@ -1,7 +1,7 @@
 // Module ID: 7924
 // Function ID: 7925
 // Name: GameIcon
-// Dependencies: [19, 17, 1390, 21, 5306, 575, 7925, 7926, 7927, 7928, 6020, 2]
+// Dependencies: [19, 17, 1390, 21, 5306, 575, 7925, 7926, 7927, 7928, 6010, 2]
 
 // Module 7924 (GameIcon)
 import react_native from "react-native" /* 17 */;

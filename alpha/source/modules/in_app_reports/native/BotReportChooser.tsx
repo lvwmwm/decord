@@ -1,14 +1,14 @@
 // Module ID: 15692
 // Function ID: 15693
 // Name: BotReportChooser
-// Dependencies: [19, 2165, 21, 7951, 5929, 1113, 7953, 5552, 12063, 504, 7055, 2]
+// Dependencies: [19, 2165, 21, 7951, 5919, 1113, 7953, 5542, 12063, 504, 7055, 2]
 // Exports: default
 
 // Module 15692 (BotReportChooser)
 import get_initialized from "get initialized" /* 504 */;
 import intl3 from "intl" /* 1113 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import ApplicationActionCreators from "ApplicationActionCreators" /* 7055 */;
 import ActionSheet2 from "ActionSheet" /* 7951 */;
 import ActionSheetRow2 from "ActionSheetRow" /* 7953 */;

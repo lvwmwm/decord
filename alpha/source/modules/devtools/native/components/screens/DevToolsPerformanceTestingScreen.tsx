@@ -1,9 +1,9 @@
-// Module ID: 18378
-// Function ID: 18379
+// Module ID: 18380
+// Function ID: 18381
 // Name: DevToolsPerformanceTestingScreen
-// Dependencies: [19, 17, 21, 5306, 575, 1502, 1630, 7746, 18214, 7443, 17057, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 1502, 1630, 7746, 18216, 7443, 17057, 2]
 
-// Module 18378 (DevToolsPerformanceTestingScreen)
+// Module 18380 (DevToolsPerformanceTestingScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

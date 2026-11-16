@@ -1,7 +1,7 @@
 // Module ID: 15515
 // Function ID: 15516
 // Name: HeadlessCollectiblesPurchaseFlow
-// Dependencies: [19, 1072, 1083, 21, 9410, 9518, 11796, 1380, 2186, 11743, 9722, 5552, 9407, 15516, 2]
+// Dependencies: [19, 1072, 1083, 21, 9410, 9518, 11796, 1380, 2186, 11743, 9722, 5542, 9407, 15516, 2]
 // Exports: default
 
 // Module 15515 (HeadlessCollectiblesPurchaseFlow)
@@ -10,7 +10,7 @@ import Constants from "Constants" /* 1072 */;
 import Constants2 from "Constants" /* 1083 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import BillingPlatformUtils from "BillingPlatformUtils" /* 2186 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 9407 */;
 import ACOMExperiments from "ACOMExperiments" /* 9410 */;
 import useProductPurchaseState from "useProductPurchaseState" /* 9518 */;

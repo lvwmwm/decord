@@ -1,7 +1,7 @@
 // Module ID: 17684
 // Function ID: 17685
 // Name: ChestLogoSpotIllustration
-// Dependencies: [19, 21, 17685, 17686, 17687, 7755, 6020, 2]
+// Dependencies: [19, 21, 17685, 17686, 17687, 7755, 6010, 2]
 // Exports: ChestLogoSpotIllustration
 
 // Module 17684 (ChestLogoSpotIllustration)

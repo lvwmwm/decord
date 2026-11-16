@@ -1,13 +1,13 @@
 // Module ID: 8463
 // Function ID: 8464
 // Name: InstantInviteUtils
-// Dependencies: [5154, 5155, 5218, 7015, 5248, 1388, 7240, 1072, 6962, 7665, 8464, 1113, 2]
+// Dependencies: [5154, 5155, 5218, 7015, 5248, 1388, 7240, 1072, 6952, 7665, 8464, 1113, 2]
 // Exports: generateRowsForQuery, getMostRecentDMedUser, getUsersAlreadyJoined, groupInviteSuggestions, maxAgeString, urgentShareMessageString
 
 // Module 8463 (InstantInviteUtils)
 import Constants from "Constants" /* 1072 */;
 import intl6 from "intl" /* 1113 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6962 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6952 */;
 import InviteTargetTypes from "InviteTargetTypes" /* 7665 */;
 import utils_InstantInviteUtils from "utils/InstantInviteUtils" /* 8464 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;

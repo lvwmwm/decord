@@ -1,21 +1,21 @@
-// Module ID: 18798
-// Function ID: 18799
+// Module ID: 18800
+// Function ID: 18801
 // Name: HappeningNowCustomStatus
-// Dependencies: [5, 32, 19, 17, 6068, 17915, 1083, 21, 5306, 575, 563, 6750, 10066, 18799, 18800, 9532, 8418, 17916, 1380, 6020, 10864, 1187, 5929, 2]
+// Dependencies: [5, 32, 19, 17, 6058, 17917, 1083, 21, 5306, 575, 563, 6740, 10066, 18801, 18802, 9532, 8418, 17918, 1380, 6010, 10864, 1187, 5919, 2]
 // Exports: CustomStatusActivityCard
 
-// Module 18798 (HappeningNowCustomStatus)
+// Module 18800 (HappeningNowCustomStatus)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import ActivityEmojiDefault from "ActivityEmoji" /* 10864 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 6068 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 17915 */;
+import PresenceStore from "PresenceStore" /* 6058 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 17917 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
@@ -127,7 +127,7 @@ export function CustomStatusActivityCard(user) {
   });
   ({ status, isMobileOnline, isVROnline } = stateFromStoresObject);
   let obj2 = { userId: user.id, guildId };
-  let tmp10 = activity(6750)(obj2);
+  let tmp10 = activity(6740)(obj2);
   let obj3 = user(10066);
   const displayNameStylesFont = obj3.useDisplayNameStylesFont({ displayNameStyles: tmp10 });
   items1 = [activity.emoji];
@@ -236,7 +236,7 @@ export function CustomStatusActivityCard(user) {
   const joined = items2.join(", ");
   let obj4 = { onPress, width: str, style: tmp.cardContainer, accessibilityLabel: joined, panelVariant, children: tmp15(tmp17, obj5) };
   str = "stretchy";
-  const tmp9Result = activity(17916);
+  const tmp9Result = activity(17918);
   if (fullwidth) {
     str = "full";
   }
@@ -253,7 +253,7 @@ export function CustomStatusActivityCard(user) {
       let tmp15Result = null != source;
       if (tmp15Result) {
         let obj8 = { source, style: tmp.largeEmoji };
-        tmp15Result = tmp15(tmp9(6020), obj8);
+        tmp15Result = tmp15(tmp9(6010), obj8);
       }
       tmp15Result3 = tmp15Result;
     } else {
@@ -286,7 +286,7 @@ export function CustomStatusActivityCard(user) {
     const Avatar = tmp6(1187).Avatar;
     items6 = [tmp15(Avatar, obj11), , ];
     const obj12 = { noMargin: true, displayNameFont: displayNameStylesFont, children: userTitle };
-    items6[1] = closure_11(user(17916).HappeningNowCardHeader, obj12);
+    items6[1] = closure_11(user(17918).HappeningNowCardHeader, obj12);
     const state = activity.state;
     let num2;
     if (state != null) {
@@ -298,7 +298,7 @@ export function CustomStatusActivityCard(user) {
     let tmp15Result4 = num2 > 0;
     if (tmp15Result4) {
       const obj13 = { ellipsizeMode: "tail", variant: "body-xs/medium", color: "text-default", lineClamp: num, maxFontSizeMultiplier: 2, children: gameMentionsAsPlainText };
-      tmp15Result4 = tmp15(tmp6(5929).Text, obj13);
+      tmp15Result4 = tmp15(tmp6(5919).Text, obj13);
     }
     const obj14 = { children: items5 };
     items6[2] = tmp15Result4;
@@ -312,9 +312,9 @@ export function CustomStatusActivityCard(user) {
     items7 = [tmp15(Avatar2, obj16), ];
     const obj17 = { style: tmp.customStatusContextContainer, children: items8 };
     const obj18 = { noMargin: true, displayNameFont: displayNameStylesFont, children: userTitle };
-    items8 = [tmp15(tmp6(17916).HappeningNowCardHeader, obj18), ];
+    items8 = [tmp15(tmp6(17918).HappeningNowCardHeader, obj18), ];
     const obj19 = { ellipsizeMode: "tail", variant: "body-xs/medium", color: "text-default", lineClamp: num, maxFontSizeMultiplier: 2, children: gameMentionsAsPlainText };
-    items8[1] = closure_11(user(5929).Text, obj19);
+    items8[1] = closure_11(user(5919).Text, obj19);
     items7[1] = closure_12(View, obj17);
     tmp18Result = closure_12(closure_13, obj15);
   }

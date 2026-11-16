@@ -1,7 +1,7 @@
 // Module ID: 5305
 // Function ID: 5306
 // Name: BurstReactionFirstSendActionSheet
-// Dependencies: [19, 17, 21, 5306, 575, 5552, 5565, 1113, 5566, 5264, 5919, 5920, 1187, 5929, 5936, 5348, 5139, 5305, 2121, 572, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 5542, 5555, 1113, 5556, 5264, 5909, 5910, 1187, 5919, 5926, 5338, 5139, 5305, 2121, 572, 2]
 // Exports: default, openBurstReactionFirstSendActionSheet
 
 // Module 5305 (BurstReactionFirstSendActionSheet)
@@ -12,14 +12,14 @@ import native from "native" /* 1187 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
 import dismissible_content from "dismissible_content" /* 5139 */;
 import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 5264 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5348 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import getDeviceSpecificString from "getDeviceSpecificString" /* 5565 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5566 */;
-import BurstReactionAnimationPreviewDefault from "BurstReactionAnimationPreview" /* 5919 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 5920 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import components_Button_Button from "components/Button/Button" /* 5936 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5338 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import getDeviceSpecificString from "getDeviceSpecificString" /* 5555 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5556 */;
+import BurstReactionAnimationPreviewDefault from "BurstReactionAnimationPreview" /* 5909 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 5910 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

@@ -1,7 +1,7 @@
 // Module ID: 15850
 // Function ID: 15851
 // Name: UserProfileGameFriendsCard
-// Dependencies: [19, 21, 5306, 7259, 1113, 14950, 7961, 5929, 2]
+// Dependencies: [19, 21, 5306, 7259, 1113, 14950, 7961, 5919, 2]
 // Exports: default
 
 // Module 15850 (UserProfileGameFriendsCard)

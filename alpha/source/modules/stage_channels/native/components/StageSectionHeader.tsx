@@ -1,14 +1,14 @@
 // Module ID: 13093
 // Function ID: 13094
 // Name: StageSectionHeader
-// Dependencies: [19, 17, 21, 5306, 575, 1655, 5548, 5929, 1187, 7914, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 1655, 5538, 5919, 1187, 7914, 2]
 // Exports: default
 
 // Module 13093 (StageSectionHeader)
 import nativeDefault from "native" /* 575 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5548 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7914 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

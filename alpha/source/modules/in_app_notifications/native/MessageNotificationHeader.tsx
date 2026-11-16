@@ -1,7 +1,7 @@
 // Module ID: 11089
 // Function ID: 11090
 // Name: MessageNotificationHeader
-// Dependencies: [19, 17, 5307, 5248, 1388, 21, 5306, 575, 5929, 5954, 1093, 8069, 8071, 8033, 504, 2]
+// Dependencies: [19, 17, 5307, 5248, 1388, 21, 5306, 575, 5919, 5944, 1093, 8069, 8071, 8033, 504, 2]
 // Exports: SimpleNotificationHeader, default
 
 // Module 11089 (MessageNotificationHeader)
@@ -9,8 +9,8 @@ import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import ChannelTypes from "ChannelTypes" /* 1093 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import useChannelName from "useChannelName" /* 5954 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import useChannelName from "useChannelName" /* 5944 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 8033 */;
 import react_mod from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5307 */;
@@ -190,7 +190,7 @@ export default function MessageNotificationHeader(locationTextColor) {
   if (tmp17Result) {
     const obj5 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: items1, children: author.nick };
     items1 = [tmp.primaryText, tmp6];
-    tmp17Result = tmp17(tmp2(5929).Text, obj5);
+    tmp17Result = tmp17(tmp2(5919).Text, obj5);
   }
   items2 = [tmp17Result, ];
   let tmp17Result2 = null != tmp10;

@@ -1,10 +1,10 @@
-// Module ID: 18108
-// Function ID: 18109
+// Module ID: 18110
+// Function ID: 18111
 // Name: NotificationPermissionSettingsHeader
-// Dependencies: [19, 17, 1072, 14826, 21, 5306, 575, 14827, 1256, 7445, 10994, 5929, 1113, 5936, 2]
+// Dependencies: [19, 17, 1072, 14826, 21, 5306, 575, 14827, 1256, 7445, 10994, 5919, 1113, 5926, 2]
 // Exports: default
 
-// Module 18108 (NotificationPermissionSettingsHeader)
+// Module 18110 (NotificationPermissionSettingsHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
@@ -78,16 +78,16 @@ export default function NotificationPermissionSettingsHeader() {
     BellSlashIcon = tmp2(10994).BellSlashIcon;
     items1 = [closure_11(View, obj5), , , ];
     const obj7 = { variant: "heading-lg/semibold", color: "text-default", children: intl.string(canSeePushNotificationNudge(1113).t.MUwOvc) };
-    const Text = tmp2(5929).Text;
+    const Text = tmp2(5919).Text;
     intl = tmp2(1113).intl;
     items1[1] = closure_11(Text, obj7);
     const obj8 = { variant: "body-sm/medium", style: tmp.body, color: "text-muted", children: intl2.string(canSeePushNotificationNudge(1113).t.G4uKoe) };
-    const Text2 = tmp2(5929).Text;
+    const Text2 = tmp2(5919).Text;
     intl2 = tmp2(1113).intl;
     items1[2] = closure_11(Text2, obj8);
     const obj9 = { style: { alignSelf: "stretch" }, children: closure_11(Button, obj10) };
     obj10 = { variant: "primary", text: intl3.string(canSeePushNotificationNudge(1113).t["5xWOXv"]), onPress: tmp6 };
-    Button = tmp2(5936).Button;
+    Button = tmp2(5926).Button;
     intl3 = tmp2(1113).intl;
     items1[3] = closure_11(View, obj9);
     tmp7 = closure_11(View, obj2);

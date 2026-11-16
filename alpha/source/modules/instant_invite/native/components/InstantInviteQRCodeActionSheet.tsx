@@ -1,7 +1,7 @@
 // Module ID: 15896
 // Function ID: 15897
 // Name: InstantInviteQRCodeActionSheet
-// Dependencies: [19, 17, 5177, 1388, 1072, 21, 5306, 575, 7720, 504, 1113, 572, 6014, 7951, 7913, 15897, 5929, 2]
+// Dependencies: [19, 17, 5177, 1388, 1072, 21, 5306, 575, 7720, 504, 1113, 572, 6004, 7951, 7913, 15897, 5919, 2]
 // Exports: default
 
 // Module 15896 (InstantInviteQRCodeActionSheet)
@@ -93,7 +93,7 @@ export default function InstantInviteQRCodeActionSheet(link) {
         tmp13 = closure_9(tmp16, obj4);
       }
     }
-    presentFriendRequestAcceptedToast = tmp6(6014).presentFriendRequestAcceptedToast;
+    presentFriendRequestAcceptedToast = tmp6(6004).presentFriendRequestAcceptedToast;
     const items1 = [presentFriendRequestAcceptedToast];
     const effect = react.useEffect(() => {
       function handleRelationshipAdd(relationship) {
@@ -132,7 +132,7 @@ export default function InstantInviteQRCodeActionSheet(link) {
     let tmp19Result2 = null != tmp12;
     if (tmp19Result2) {
       const obj13 = { variant: "body-md/normal", children: tmp12.visible };
-      tmp19Result2 = tmp19(tmp6(5929).Text, obj13);
+      tmp19Result2 = tmp19(tmp6(5919).Text, obj13);
     }
     items3[1] = tmp19Result2;
     return closure_9(ActionSheet, obj5);

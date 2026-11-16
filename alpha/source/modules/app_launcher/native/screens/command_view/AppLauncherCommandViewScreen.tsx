@@ -1,7 +1,7 @@
 // Module ID: 13487
 // Function ID: 13488
 // Name: AppLauncherCommandViewScreen
-// Dependencies: [5, 32, 19, 17, 5307, 11406, 5212, 1501, 1072, 1626, 21, 1655, 5893, 5306, 575, 13488, 504, 5548, 5551, 1708, 5554, 5303, 5937, 1113, 6031, 12578, 6067, 5913, 13490, 5985, 6836, 13383, 1263, 13437, 13492, 2119, 12698, 13438, 12763, 1496, 12015, 7475, 11635, 13493, 11636, 8879, 2020, 8874, 13494, 12579, 5570, 5929, 13495, 13496, 13528, 1187, 38, 13459, 11405, 8724, 11411, 11420, 13529, 13530, 13446, 13447, 2]
+// Dependencies: [5, 32, 19, 17, 5307, 11406, 5212, 1501, 1072, 1626, 21, 1655, 5883, 5306, 575, 13488, 504, 5538, 5541, 1708, 5544, 5303, 5927, 1113, 6021, 12578, 6057, 5903, 13490, 5975, 6826, 13383, 1263, 13437, 13492, 2119, 12698, 13438, 12763, 1496, 12015, 7475, 11635, 13493, 11636, 8879, 2020, 8874, 13494, 12579, 5560, 5919, 13495, 13496, 13528, 1187, 38, 13459, 11405, 8724, 11411, 11420, 13529, 13530, 13446, 13447, 2]
 // Exports: default
 
 // Module 13487 (AppLauncherCommandViewScreen)
@@ -9,11 +9,11 @@ import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1626 */;
-import LinearGradientDefault from "LinearGradient" /* 5893 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import BaseTextButton2 from "BaseTextButton" /* 5937 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5985 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6067 */;
+import LinearGradientDefault from "LinearGradient" /* 5883 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import BaseTextButton2 from "BaseTextButton" /* 5927 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5975 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6057 */;
 import utils_UploadUtils from "utils/UploadUtils" /* 8879 */;
 import MediaKeyboardUtils from "MediaKeyboardUtils" /* 11635 */;
 import showMediaKeyboardActionSheet from "showMediaKeyboardActionSheet" /* 11636 */;
@@ -118,12 +118,12 @@ function AppLauncherCommandViewFooter(onHeightChange) {
   const useAnimatedStyle = onHeightChange(1655).useAnimatedStyle;
   const tmp9 = onHeightChange(1655);
   items1[3] = onHeightChange(1655).withDelay;
-  items1[4] = onHeightChange(5548).withTiming;
-  items1[5] = onHeightChange(5551).timingStandard;
+  items1[4] = onHeightChange(5538).withTiming;
+  items1[5] = onHeightChange(5541).timingStandard;
   items1[6] = closure_25;
   items1[7] = onHeightChange(1708).scheduleOnRN;
-  items1[8] = onHeightChange(5554).triggerHapticFeedback;
-  items1[9] = onHeightChange(5554).HapticFeedbackTypes;
+  items1[8] = onHeightChange(5544).triggerHapticFeedback;
+  items1[9] = onHeightChange(5544).HapticFeedbackTypes;
   items1[10] = isSending;
   let c0;
   let c1;
@@ -245,12 +245,12 @@ function AppLauncherCommandViewFooter(onHeightChange) {
     icon: closure_20(View2, obj5),
     iconPosition: "end"
   };
-  const BaseTextButton = tmp4(5937).BaseTextButton;
+  const BaseTextButton = tmp4(5927).BaseTextButton;
   intl = tmp4(1113).intl;
   obj5 = { style: animatedStyle1, children: closure_20(SendMessageIcon, obj6) };
   View2 = module_1655.View;
   obj6 = { style: { marginLeft: 8 }, color: nativeDefault.unsafe_rawColors.WHITE, size: "sm" };
-  SendMessageIcon = tmp4(6031).SendMessageIcon;
+  SendMessageIcon = tmp4(6021).SendMessageIcon;
   items8[1] = closure_20(BaseTextButton, obj4);
   return closure_21(View, obj2);
 }

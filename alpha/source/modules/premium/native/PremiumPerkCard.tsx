@@ -1,17 +1,17 @@
 // Module ID: 9986
 // Function ID: 9987
 // Name: PremiumPerkCard
-// Dependencies: [19, 17, 1390, 1072, 21, 5944, 9987, 2174, 9988, 9989, 8604, 7937, 1113, 9991, 9992, 9993, 9994, 9995, 9996, 9997, 9998, 9999, 10000, 10001, 10002, 10003, 10004, 10005, 10006, 10007, 5929, 2188, 5306, 575, 6020, 10008, 5936, 2]
+// Dependencies: [19, 17, 1390, 1072, 21, 5934, 9987, 2174, 9988, 9989, 8604, 7937, 1113, 9991, 9992, 9993, 9994, 9995, 9996, 9997, 9998, 9999, 10000, 10001, 10002, 10003, 10004, 10005, 10006, 10007, 5919, 2188, 5306, 575, 6010, 10008, 5926, 2]
 // Exports: default, usePerkCardHeight, usePremiumPerkCard
 
 // Module 9986 (PremiumPerkCard)
 import nativeDefault from "native" /* 575 */;
 import intl38 from "intl" /* 1113 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import components_Button_Button from "components/Button/Button" /* 5936 */;
-import useFontScale from "useFontScale" /* 5944 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
+import useFontScale from "useFontScale" /* 5934 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
 import openUserSettings from "openUserSettings" /* 8604 */;
 import AssetRegistryDefault from "AssetRegistry" /* 9991 */;
@@ -124,7 +124,7 @@ export default function PremiumPerkCard(variant) {
       items1 = [React4(FastImageDefault, obj3), ];
       const obj4 = { style: tmp4.imageOverlayTextContainer, children: React4(Text, obj5) };
       obj5 = { style: tmp4.imageOverlayText, variant: "body-md/semibold", children: imageOverlayText.toUpperCase() };
-      Text = tmp6(5929).Text;
+      Text = tmp6(5919).Text;
       items1[1] = React4(React3, obj4);
       tmp15 = authStore(React3, obj2);
     } else {
@@ -142,7 +142,7 @@ export default function PremiumPerkCard(variant) {
   }
   if (null != description) {
     const obj8 = { variant: "body-sm/normal", children: description };
-    tmp20 = React4(tmp6(5929).Text, obj8);
+    tmp20 = React4(tmp6(5919).Text, obj8);
   } else {
     tmp20 = null;
     if (null != bodyComponent) {
@@ -348,7 +348,7 @@ export function usePremiumPerkCard() {
     stringResult = intl36.string(tmp(1113).t["/VzCKE"]);
   }
   obj23 = { variant: "body-sm/normal", children: format(prop, obj24) };
-  Text = tmp(5929).Text;
+  Text = tmp(5919).Text;
   const intl37 = tmp(1113).intl;
   format = intl37.format;
   obj24 = { termsLink: tmp12Result.getArticleURL(NITRO_2_POINT_0.NITRO_2_POINT_0) };

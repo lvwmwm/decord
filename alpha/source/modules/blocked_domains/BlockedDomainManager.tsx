@@ -1,22 +1,26 @@
-// Module ID: 20185
-// Function ID: 20186
+// Module ID: 20188
+// Function ID: 20189
 // Name: BlockedDomainManager
-// Dependencies: [7882, 1366, 2]
+// Dependencies: [7882, 1255, 1366, 2]
 
-// Module 20185 (BlockedDomainManager)
+// Module 20188 (BlockedDomainManager)
+import GlobalUtils from "GlobalUtils" /* 1255 */;
 import shim from "shim" /* 1366 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
 import size from "module_2" /* 2 */;
 
 class BlockedDomainManager extends AutomaticLifecycleManager {
   _initialize() {
-    const obj = shim;
-    if (obj.isLibdiscoreInitialized()) {
-      const _window = window;
-      const _HermesInternal = HermesInternal;
-      const combined = "https:" + window.GLOBAL_ENV.WEBAPP_ENDPOINT + "/bad-hash-delta";
+    const obj = GlobalUtils;
+    if (!obj.isDiscordBackendDevelopment()) {
       const tmpResult = shim;
-      const result = tmpResult.startFetchingBlockedDomains(combined);
+      if (tmpResult.isLibdiscoreInitialized()) {
+        const _window = window;
+        const _HermesInternal = HermesInternal;
+        const combined = "https:" + window.GLOBAL_ENV.WEBAPP_ENDPOINT + "/bad-hash-delta";
+        const tmpResult2 = shim;
+        const result = tmpResult2.startFetchingBlockedDomains(combined);
+      }
     }
   }
 }

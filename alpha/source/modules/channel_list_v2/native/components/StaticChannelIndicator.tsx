@@ -1,14 +1,14 @@
 // Module ID: 14790
 // Function ID: 14791
 // Name: StaticChannelIndicator
-// Dependencies: [17, 6959, 21, 5306, 575, 5902, 2]
+// Dependencies: [17, 6949, 21, 5306, 575, 5892, 2]
 // Exports: default
 
 // Module 14790 (StaticChannelIndicator)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useToken from "useToken" /* 5902 */;
-import ReadStateConstants from "ReadStateConstants" /* 6959 */;
+import useToken from "useToken" /* 5892 */;
+import ReadStateConstants from "ReadStateConstants" /* 6949 */;
 import react_native from "react-native" /* 17 */;
 import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;

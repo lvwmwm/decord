@@ -1,7 +1,7 @@
 // Module ID: 10567
 // Function ID: 10568
 // Name: MobileShopButtonCoachmark
-// Dependencies: [19, 5152, 21, 5306, 575, 6020, 1113, 9567, 2]
+// Dependencies: [19, 5152, 21, 5306, 575, 6010, 1113, 9567, 2]
 // Exports: default
 
 // Module 10567 (MobileShopButtonCoachmark)

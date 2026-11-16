@@ -1,10 +1,10 @@
-// Module ID: 18403
-// Function ID: 18404
+// Module ID: 18405
+// Function ID: 18406
 // Name: useDesignSystemsSettingPredicate
 // Dependencies: [17372, 10572, 2]
 // Exports: useDesignSystemsSettingPredicate
 
-// Module 18403 (useDesignSystemsSettingPredicate)
+// Module 18405 (useDesignSystemsSettingPredicate)
 import PlaygroundAccessExperiment from "PlaygroundAccessExperiment" /* 10572 */;
 import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 17372 */;
 import size from "module_2" /* 2 */;

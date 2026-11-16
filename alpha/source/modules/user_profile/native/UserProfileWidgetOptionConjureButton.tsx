@@ -1,14 +1,14 @@
 // Module ID: 15826
 // Function ID: 15827
 // Name: UserProfileWidgetOptionConjureButton
-// Dependencies: [19, 17, 21, 5306, 575, 5552, 15827, 10528, 5929, 1113, 4131, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 5542, 15827, 10528, 5919, 1113, 4131, 2]
 // Exports: default
 
 // Module 15826 (UserProfileWidgetOptionConjureButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import MagicWandIcon2 from "MagicWandIcon" /* 10528 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

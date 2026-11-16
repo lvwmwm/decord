@@ -1,7 +1,7 @@
 // Module ID: 17259
 // Function ID: 17260
 // Name: SettingsAgeGroupResetAlert
-// Dependencies: [5, 21, 1502, 6837, 6270, 6014, 1113, 6274, 3321, 6274, 2]
+// Dependencies: [5, 21, 1502, 6827, 6260, 6004, 1113, 6264, 3321, 6264, 2]
 // Exports: default
 
 // Module 17259 (SettingsAgeGroupResetAlert)

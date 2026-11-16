@@ -1,7 +1,7 @@
 // Module ID: 14720
 // Function ID: 14721
 // Name: GuildDirectoryTemplates
-// Dependencies: [19, 17, 14702, 14707, 21, 5306, 14721, 1187, 14722, 1502, 1630, 14706, 5929, 1113, 7746, 7646, 2]
+// Dependencies: [19, 17, 14702, 14707, 21, 5306, 14721, 1187, 14722, 1502, 1630, 14706, 5919, 1113, 7746, 7646, 2]
 // Exports: default
 
 // Module 14720 (GuildDirectoryTemplates)

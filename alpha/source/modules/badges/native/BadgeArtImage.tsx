@@ -1,16 +1,16 @@
 // Module ID: 15277
 // Function ID: 15278
 // Name: BadgeArtImage
-// Dependencies: [32, 5, 19, 17, 21, 5436, 1089, 6079, 8263, 6020, 2]
+// Dependencies: [32, 5, 19, 17, 21, 5426, 1089, 6069, 8263, 6010, 2]
 // Exports: default
 
 // Module 15277 (BadgeArtImage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import utils_FunctionUtils from "utils/FunctionUtils" /* 5436 */;
-import FastImageDefault from "FastImage" /* 6020 */;
-import TimeUtils from "TimeUtils" /* 6079 */;
+import utils_FunctionUtils from "utils/FunctionUtils" /* 5426 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import TimeUtils from "TimeUtils" /* 6069 */;
 import inlineStyles from "inlineStyles" /* 8263 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

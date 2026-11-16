@@ -1,7 +1,7 @@
 // Module ID: 15388
 // Function ID: 15389
 // Name: BoostingUnavailablePill
-// Dependencies: [17, 2187, 21, 5306, 575, 5552, 15389, 2121, 1113, 3513, 5929, 2]
+// Dependencies: [17, 2187, 21, 5306, 575, 5542, 15389, 2121, 1113, 3513, 5919, 2]
 // Exports: default
 
 // Module 15388 (BoostingUnavailablePill)
@@ -11,8 +11,8 @@ import intl2 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
 import PremiumGroupConstants from "PremiumGroupConstants" /* 2187 */;
 import _modDef3513 from "module_3513" /* 3513 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import react_native from "react-native" /* 17 */;
 import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;

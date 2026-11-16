@@ -1,12 +1,12 @@
 // Module ID: 8711
 // Function ID: 8712
 // Name: AutomodMessageUtils
-// Dependencies: [32, 19, 5155, 5238, 5248, 1388, 1072, 8712, 8713, 8714, 1113, 8715, 8716, 8717, 5954, 8718, 8719, 8720, 504, 8721, 2]
+// Dependencies: [32, 19, 5155, 5238, 5248, 1388, 1072, 8712, 8713, 8714, 1113, 8715, 8716, 8717, 5944, 8718, 8719, 8720, 504, 8721, 2]
 // Exports: default, extractAutomodNotificationFields, getActionHeaderText, getActionHeaderTextMobile, getQuarantineReasonString, getRaidAlertResolveCTAText, getUserIdOfAutomodAction, isAutomodMessageRecord, isAutomodNotification, useAutomodAlertActions
 
 // Module 8711 (AutomodMessageUtils)
 import intl10 from "intl" /* 1113 */;
-import useChannelName from "useChannelName" /* 5954 */;
+import useChannelName from "useChannelName" /* 5944 */;
 import AutomodMessageEmbedKeys from "AutomodMessageEmbedKeys" /* 8712 */;
 import AutomodQuarantineUserActionMessageEmbedKeys from "AutomodQuarantineUserActionMessageEmbedKeys" /* 8713 */;
 import AutomodBlockProfileUpdateMessageEmbedKeys from "AutomodBlockProfileUpdateMessageEmbedKeys" /* 8714 */;

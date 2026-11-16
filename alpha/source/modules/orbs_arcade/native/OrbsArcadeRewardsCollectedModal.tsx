@@ -1,7 +1,7 @@
 // Module ID: 17670
 // Function ID: 17671
 // Name: OrbsArcadeRewardsCollectedModal
-// Dependencies: [32, 19, 17, 5307, 1072, 1390, 21, 5306, 575, 10024, 7994, 5929, 9409, 504, 11832, 9402, 9500, 17663, 1113, 10029, 5936, 8527, 10423, 17669, 8604, 5902, 5893, 1092, 7415, 7988, 10867, 17648, 6951, 2]
+// Dependencies: [32, 19, 17, 5307, 1072, 1390, 21, 5306, 575, 10024, 7994, 5919, 9409, 504, 11832, 9402, 9500, 17663, 1113, 10029, 5926, 8527, 10423, 17669, 8604, 5892, 5883, 1092, 7415, 7988, 10867, 17648, 6941, 2]
 // Exports: default
 
 // Module 17670 (OrbsArcadeRewardsCollectedModal)
@@ -10,9 +10,9 @@ import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
-import LinearGradientDefault from "LinearGradient" /* 5893 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import components_Button_Button from "components/Button/Button" /* 5936 */;
+import LinearGradientDefault from "LinearGradient" /* 5883 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
 import useMeasuredLayoutDefault from "useMeasuredLayout" /* 7994 */;
 import utils_CollectiblesUtils from "utils/CollectiblesUtils" /* 8527 */;
 import openUserSettings from "openUserSettings" /* 8604 */;
@@ -177,7 +177,7 @@ function CollectibleRewardPrimaryAction(reward) {
 
         }
     };
-    const Button = tmp(5936).Button;
+    const Button = tmp(5926).Button;
     intl = tmp(1113).intl;
     tmp4 = authStore(Button, obj3);
   }
@@ -225,7 +225,7 @@ function NitroCreditRewardPageContent(reward) {
 }
 function NitroCreditRewardPrimaryAction(consumed) {
   consumed = consumed.consumed;
-  const Button = consumed(5936).Button;
+  const Button = consumed(5926).Button;
   const intl = consumed(1113).intl;
   const string = intl.string;
   const t = consumed(1113).t;
@@ -301,11 +301,11 @@ export default function OrbsArcadeRewardsCollectedModal(arg0) {
   importDefault = tmp;
   let tmp2 = entitlements;
   let tmp3 = dependencyMap;
-  let obj = entitlements(5902);
+  let obj = entitlements(5892);
   const token = obj.useToken(nativeDefault.colors.BACKGROUND_BASE_LOW);
-  let obj2 = entitlements(5902);
+  let obj2 = entitlements(5892);
   const token1 = obj2.useToken(nativeDefault.colors.BACKGROUND_BASE_LOWER);
-  let obj3 = entitlements(5902);
+  let obj3 = entitlements(5892);
   const token2 = obj3.useToken(nativeDefault.colors.BACKGROUND_BASE_LOWEST);
   const items = [bound];
   const obj4 = entitlements(504);
@@ -411,7 +411,7 @@ export default function OrbsArcadeRewardsCollectedModal(arg0) {
       tmp27Result4 = tmp27(tmp26, obj13);
     }
     items5 = [tmp27Result4, ];
-    const ButtonGroup = tmp2(6951).ButtonGroup;
+    const ButtonGroup = tmp2(6941).ButtonGroup;
     if (rewards[bound].type === tmp2(17648).OrbsArcadeRewardType.COLLECTIBLE) {
       const obj16 = { reward: rewards[bound] };
       tmp27Result5 = tmp27(CollectibleRewardPrimaryAction, obj16, tmp14.id);
@@ -432,7 +432,7 @@ export default function OrbsArcadeRewardsCollectedModal(arg0) {
     const items6 = [tmp27Result5, ];
     let tmp27Result6 = null;
     if (1 !== rewards.length) {
-      const Button = tmp2(5936).Button;
+      const Button = tmp2(5926).Button;
       const intl2 = tmp2(1113).intl;
       const string = intl2.string;
       const t = tmp2(1113).t;

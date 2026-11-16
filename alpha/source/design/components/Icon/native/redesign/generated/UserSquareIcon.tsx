@@ -1,13 +1,13 @@
 // Module ID: 10960
 // Function ID: 10961
 // Name: UserSquareIcon
-// Dependencies: [19, 21, 575, 6019, 10961, 2]
+// Dependencies: [19, 21, 575, 6009, 10961, 2]
 // Exports: UserSquareIcon
 
 // Module 10960 (UserSquareIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6019 */;
+import BaseIconImage2 from "BaseIconImage" /* 6009 */;
 import AssetRegistry from "AssetRegistry" /* 10961 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

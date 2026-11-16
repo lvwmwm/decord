@@ -1,7 +1,7 @@
 // Module ID: 17410
 // Function ID: 17411
 // Name: useOnNewPendingRequest
-// Dependencies: [19, 8740, 9616, 504, 5899, 8742, 2]
+// Dependencies: [19, 8740, 9616, 504, 5889, 8742, 2]
 // Exports: default
 
 // Module 17410 (useOnNewPendingRequest)

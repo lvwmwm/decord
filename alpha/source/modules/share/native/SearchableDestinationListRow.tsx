@@ -1,10 +1,10 @@
-// Module ID: 18920
-// Function ID: 18921
+// Module ID: 18922
+// Function ID: 18923
 // Name: SearchableDestinationListRow
 // Dependencies: [19, 21, 10247, 10245, 10581, 8766, 10890, 10893, 1255, 2]
 // Exports: default
 
-// Module 18920 (SearchableDestinationListRow)
+// Module 18922 (SearchableDestinationListRow)
 import Fragment from "Fragment" /* 21 */;
 import GlobalUtils from "GlobalUtils" /* 1255 */;
 import UserSearchUtils from "UserSearchUtils" /* 8766 */;

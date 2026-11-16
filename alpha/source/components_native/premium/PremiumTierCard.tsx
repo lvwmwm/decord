@@ -1,7 +1,7 @@
 // Module ID: 15452
 // Function ID: 15453
 // Name: PremiumTierCard
-// Dependencies: [19, 17, 9435, 1390, 21, 5306, 575, 5893, 1092, 6020, 2174, 15453, 15454, 9319, 9607, 9608, 9694, 7445, 2]
+// Dependencies: [19, 17, 9435, 1390, 21, 5306, 575, 5883, 1092, 6010, 2174, 15453, 15454, 9319, 9607, 9608, 9694, 7445, 2]
 // Exports: default
 
 // Module 15452 (PremiumTierCard)
@@ -10,8 +10,8 @@ import nativeDefault from "native" /* 575 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
 import PremiumUtils from "PremiumUtils" /* 2174 */;
-import LinearGradientDefault from "LinearGradient" /* 5893 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import LinearGradientDefault from "LinearGradient" /* 5883 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import ColorConstants from "ColorConstants" /* 9435 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

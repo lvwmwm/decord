@@ -1,7 +1,7 @@
 // Module ID: 9528
 // Function ID: 9529
 // Name: UserProfilePreview
-// Dependencies: [32, 19, 17, 8542, 7962, 21, 5306, 575, 504, 8482, 8590, 8607, 9529, 8601, 8541, 8561, 9401, 8409, 8608, 8587, 5377, 8583, 8567, 8612, 9495, 8622, 9530, 9531, 15467, 15478, 9493, 2]
+// Dependencies: [32, 19, 17, 8542, 7962, 21, 5306, 575, 504, 8482, 8590, 8607, 9529, 8601, 8541, 8561, 9401, 8409, 8608, 8587, 5367, 8583, 8567, 8612, 9495, 8622, 9530, 9531, 15467, 15478, 9493, 2]
 // Exports: default
 
 // Module 9528 (UserProfilePreview)
@@ -263,7 +263,7 @@ export default function UserProfilePreview(compact) {
   items3 = [tmp8.profileContainer, memo, style];
   let tmp31Result = null != tmp4ResultResult;
   obj8 = { importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, style: { flexShrink: 1 }, children: items4 };
-  const ThemeContextProvider = tmp(5377).ThemeContextProvider;
+  const ThemeContextProvider = tmp(5367).ThemeContextProvider;
   if (tmp31Result) {
     const obj9 = { frame: tmp4ResultResult, filterLayer, profileThemeType: constants.PREVIEW, frameOrder: tmp(8567).ProfileFrameLayerOrder.BACK, containerWidth: null, containerHeight: null };
     ({ width: obj12.containerWidth, height: obj12.containerHeight } = first);

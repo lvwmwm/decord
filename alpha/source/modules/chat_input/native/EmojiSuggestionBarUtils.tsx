@@ -1,7 +1,7 @@
 // Module ID: 14842
 // Function ID: 14843
 // Name: EmojiSuggestionBarUtils
-// Dependencies: [32, 19, 5307, 1072, 21, 1187, 1655, 5939, 5377, 5548, 1708, 504, 7918, 7937, 14807, 14843, 13563, 11266, 11170, 2]
+// Dependencies: [32, 19, 5307, 1072, 21, 1187, 1655, 5929, 5367, 5538, 1708, 504, 7918, 7937, 14807, 14843, 13563, 11266, 11170, 2]
 // Exports: EmojiEntranceAnimation, getEmojiEntranceKey, getEmojiIdentity, sortEmojisForDisplay, useEmojiSuggestionBarState, useSuggestionBarHeight
 
 // Module 14842 (EmojiSuggestionBarUtils)
@@ -9,8 +9,8 @@ import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import native2 from "native" /* 5377 */;
-import spring_spring from "spring/spring" /* 5939 */;
+import native2 from "native" /* 5367 */;
+import spring_spring from "spring/spring" /* 5929 */;
 import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 11170 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -22,7 +22,7 @@ let _require, dependencyMap, set, set2, tmp2;
 
 let tmp;
 const _mod1708 = tmp(1708);
-const timing_timing = tmp(5548);
+const timing_timing = tmp(5538);
 const UpsellTypes = Constants.UpsellTypes;
 const jsx = Fragment.jsx;
 let closure_8 = { focused: false, text: "", selectionStart: 0, selectionEnd: 0 };

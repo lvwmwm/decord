@@ -1,10 +1,10 @@
-// Module ID: 20374
-// Function ID: 20375
+// Module ID: 20377
+// Function ID: 20378
 // Name: ParticipantFocusManager
-// Dependencies: [6071, 7016, 7882, 2]
+// Dependencies: [6061, 7016, 7882, 2]
 
-// Module 20374 (ParticipantFocusManager)
-import RTCConnectionStore from "RTCConnectionStore" /* 6071 */;
+// Module 20377 (ParticipantFocusManager)
+import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 7016 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
 import size from "module_2" /* 2 */;

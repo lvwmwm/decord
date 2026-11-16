@@ -1,11 +1,11 @@
 // Module ID: 14041
 // Function ID: 14042
 // Name: voiceChannelAppSession
-// Dependencies: [5977, 2]
+// Dependencies: [5967, 2]
 // Exports: hasVoiceChannelAppSession, voiceChannelAppSurface
 
 // Module 14041 (voiceChannelAppSession)
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5977 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5967 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/voice_channel_apps/voiceChannelAppSession.tsx");

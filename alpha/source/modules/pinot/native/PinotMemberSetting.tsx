@@ -1,17 +1,17 @@
-// Module ID: 18552
-// Function ID: 18553
+// Module ID: 18554
+// Function ID: 18555
 // Name: PinotMemberSetting
-// Dependencies: [17, 1072, 9202, 21, 5306, 575, 12406, 1113, 3385, 8169, 12336, 2188, 5929, 8159, 2]
+// Dependencies: [17, 1072, 9202, 21, 5306, 575, 12406, 1113, 3385, 8169, 12336, 2188, 5919, 8159, 2]
 // Exports: usePinotDataPrivacySections
 
-// Module 18552 (PinotMemberSetting)
+// Module 18554 (PinotMemberSetting)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
 import _modDef3385 from "module_3385" /* 3385 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import PinotExperiment from "PinotExperiment" /* 8169 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;
 import PinotMemberSettingState from "PinotMemberSettingState" /* 12336 */;

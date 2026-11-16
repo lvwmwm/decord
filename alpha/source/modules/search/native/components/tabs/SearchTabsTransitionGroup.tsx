@@ -1,12 +1,12 @@
-// Module ID: 19561
-// Function ID: 19562
+// Module ID: 19563
+// Function ID: 19564
 // Name: SearchTabsTransitionGroup
-// Dependencies: [19, 21, 5131, 13262, 1655, 5377, 5939, 5940, 1708, 14850, 2]
+// Dependencies: [19, 21, 5131, 13262, 1655, 5367, 5929, 5930, 1708, 14850, 2]
 // Exports: default
 
-// Module 19561 (SearchTabsTransitionGroup)
+// Module 19563 (SearchTabsTransitionGroup)
 import Fragment from "Fragment" /* 21 */;
-import native from "native" /* 5377 */;
+import native from "native" /* 5367 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -43,19 +43,19 @@ function AnimatedTabs(cleanUp) {
   let tmp3 = transitionState(1655);
   const useSharedValue = tmp3.useSharedValue;
   let num = 0;
-  if (transitionState === transitionState(5377).TransitionStates.MOUNTED) {
+  if (transitionState === transitionState(5367).TransitionStates.MOUNTED) {
     num = 1;
   }
   sharedValue = useSharedValue(num);
   let items = [closure_7, , , , , , , , ];
   const useAnimatedStyle = tmp(1655).useAnimatedStyle;
   tmp(1655);
-  items[1] = tmp(5939).withSpring;
+  items[1] = tmp(5929).withSpring;
   items[2] = sharedValue;
-  items[3] = tmp(5940).springStandard;
+  items[3] = tmp(5930).springStandard;
   items[4] = closure_6;
   items[5] = transitionState;
-  items[6] = tmp(5377).TransitionStates;
+  items[6] = tmp(5367).TransitionStates;
   items[7] = tmp(1708).scheduleOnRN;
   items[8] = cleanUp;
   let c0;

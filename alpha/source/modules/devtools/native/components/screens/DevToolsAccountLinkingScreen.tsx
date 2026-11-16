@@ -1,10 +1,10 @@
-// Module ID: 18377
-// Function ID: 18378
+// Module ID: 18379
+// Function ID: 18380
 // Name: DevToolsAccountLinkingScreen
-// Dependencies: [32, 19, 17, 2165, 7221, 5177, 5349, 21, 5306, 575, 504, 7410, 1630, 7259, 7919, 7746, 7443, 5929, 7619, 5936, 6020, 2]
+// Dependencies: [32, 19, 17, 2165, 7221, 5177, 5339, 21, 5306, 575, 504, 7410, 1630, 7259, 7919, 7746, 7443, 5919, 7619, 5926, 6010, 2]
 // Exports: default
 
-// Module 18377 (DevToolsAccountLinkingScreen)
+// Module 18379 (DevToolsAccountLinkingScreen)
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -13,7 +13,7 @@ import react_native from "react-native" /* 17 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
 import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7221 */;
 import GuildStore from "GuildStore" /* 5177 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5349 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
@@ -29,7 +29,7 @@ let obj4;
 let size;
 let tmp2;
 let unpackModuleId;
-const FastImageDefault = tmp2(6020);
+const FastImageDefault = tmp2(6010);
 const useGetOrFetchApplicationsDefault = tmp2(7259);
 const useStartAuthorizeDefault = tmp2(7919);
 ({ ScrollView: hasOwnProperty, View: metroRequire } = react_native);
@@ -203,7 +203,7 @@ export default function DevToolsAccountLinkingScreen() {
   const TableRowGroup3 = tmp8(7746).TableRowGroup;
   const TableRow3 = tmp8(7443).TableRow;
   let str4 = "text-feedback-critical";
-  const Text = tmp8(5929).Text;
+  const Text = tmp8(5919).Text;
   if (debug.hasConnectionEntrypointUrl) {
     str4 = "text-feedback-positive";
   }
@@ -217,7 +217,7 @@ export default function DevToolsAccountLinkingScreen() {
   items8[0] = closure_11(TableRow3, obj13);
   const TableRow4 = tmp8(7443).TableRow;
   let str6 = "text-muted";
-  const Text2 = tmp8(5929).Text;
+  const Text2 = tmp8(5919).Text;
   if (hasAlreadyLinked) {
     str6 = "text-feedback-positive";
   }
@@ -239,9 +239,9 @@ export default function DevToolsAccountLinkingScreen() {
     variant: "primary",
     text: "Start Authorization"
   };
-  items9[0] = closure_11(value(5936).Button, obj18);
+  items9[0] = closure_11(value(5926).Button, obj18);
   const obj19 = { disabled: !tmp15, onPress: callback, variant: "critical-primary", text: "Deauthorize" };
-  items9[1] = closure_11(value(5936).Button, obj19);
+  items9[1] = closure_11(value(5926).Button, obj19);
   items8[2] = closure_12(closure_6, obj17);
   items6[2] = closure_12(TableRowGroup3, obj15);
   let prop;

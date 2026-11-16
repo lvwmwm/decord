@@ -1,31 +1,31 @@
-// Module ID: 19248
-// Function ID: 19249
+// Module ID: 19250
+// Function ID: 19251
 // Name: ForYouItems
-// Dependencies: [5, 32, 19, 17, 5307, 2165, 5155, 5177, 1388, 19242, 1072, 6847, 21, 5306, 5929, 575, 6341, 19247, 1113, 1406, 9282, 8861, 11857, 11392, 13072, 504, 8646, 1187, 14950, 19249, 1502, 6048, 16285, 7033, 1256, 15543, 11318, 12593, 6015, 12616, 2121, 5552, 19250, 6040, 19244, 7948, 19251, 19252, 11, 7428, 19253, 7034, 15873, 1503, 5131, 5994, 19263, 19264, 19265, 19266, 19267, 19273, 674, 19274, 19275, 1255, 19246, 7994, 7888, 19276, 2]
+// Dependencies: [5, 32, 19, 17, 5307, 2165, 5155, 5177, 1388, 19244, 1072, 6837, 21, 5306, 5919, 575, 6331, 19249, 1113, 1406, 9282, 8861, 11857, 11392, 13072, 504, 8646, 1187, 14950, 19251, 1502, 6038, 16285, 7033, 1256, 15543, 11318, 12593, 6005, 12616, 2121, 5542, 19252, 6030, 19246, 7948, 19253, 19254, 11, 7428, 19255, 7034, 15873, 1503, 5131, 5984, 19265, 19266, 19267, 19268, 19269, 19275, 674, 19276, 19277, 1255, 19248, 7994, 7888, 19278, 2]
 
-// Module 19248 (ForYouItems)
+// Module 19250 (ForYouItems)
 import nativeDefault from "native" /* 575 */;
 import _mod674 from "module_674" /* 674 */;
 import GlobalUtils from "GlobalUtils" /* 1255 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import Link from "Link" /* 1503 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import parseURLDefault from "parseURL" /* 6048 */;
-import CustomMarkupAll from "CustomMarkup" /* 6341 */;
-import PushNotificationConstants from "PushNotificationConstants" /* 6847 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import parseURLDefault from "parseURL" /* 6038 */;
+import CustomMarkupAll from "CustomMarkup" /* 6331 */;
+import PushNotificationConstants from "PushNotificationConstants" /* 6837 */;
 import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 7033 */;
 import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 14950 */;
 import handleSupportedURLDefault from "handleSupportedURL" /* 16285 */;
-import NotificationCenterStoreActions from "NotificationCenterStoreActions" /* 19246 */;
-import ForYouMentionPlaceholder from "ForYouMentionPlaceholder" /* 19247 */;
-import ForYouReadSectionHeader from "ForYouReadSectionHeader" /* 19263 */;
-import ForYouRecentActivitySectionHeader from "ForYouRecentActivitySectionHeader" /* 19264 */;
-import ForYouHoistedItemsHeader from "ForYouHoistedItemsHeader" /* 19265 */;
-import ForYouSuggestedFriendsSectionHeaderDefault from "ForYouSuggestedFriendsSectionHeader" /* 19266 */;
-import ForYouSuggestedFriendRowDefault from "ForYouSuggestedFriendRow" /* 19267 */;
-import ForYouShowAllRow from "ForYouShowAllRow" /* 19273 */;
-import ForYouUnreadClearedState from "ForYouUnreadClearedState" /* 19274 */;
-import ForYouLoadMore from "ForYouLoadMore" /* 19275 */;
+import NotificationCenterStoreActions from "NotificationCenterStoreActions" /* 19248 */;
+import ForYouMentionPlaceholder from "ForYouMentionPlaceholder" /* 19249 */;
+import ForYouReadSectionHeader from "ForYouReadSectionHeader" /* 19265 */;
+import ForYouRecentActivitySectionHeader from "ForYouRecentActivitySectionHeader" /* 19266 */;
+import ForYouHoistedItemsHeader from "ForYouHoistedItemsHeader" /* 19267 */;
+import ForYouSuggestedFriendsSectionHeaderDefault from "ForYouSuggestedFriendsSectionHeader" /* 19268 */;
+import ForYouSuggestedFriendRowDefault from "ForYouSuggestedFriendRow" /* 19269 */;
+import ForYouShowAllRow from "ForYouShowAllRow" /* 19275 */;
+import ForYouUnreadClearedState from "ForYouUnreadClearedState" /* 19276 */;
+import ForYouLoadMore from "ForYouLoadMore" /* 19277 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -35,7 +35,7 @@ import ApplicationStore from "ApplicationStore" /* 2165 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import GuildStore from "GuildStore" /* 5177 */;
 import UserStore from "UserStore" /* 1388 */;
-import NotificationCenterStore from "NotificationCenterStore" /* 19242 */;
+import NotificationCenterStore from "NotificationCenterStore" /* 19244 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
@@ -115,7 +115,7 @@ function ForYouMessagePreviewV2(item) {
   let message_channel_id;
   ({ compactMode, roleStyle } = item);
   const tmp = closure_29();
-  const obj = message_channel_id(6341);
+  const obj = message_channel_id(6331);
   const notifCenterV2MessagePreviewParser = obj.getNotifCenterV2MessagePreviewParser(closure_27(), closure_28, roleStyle);
   const intl = item(1113).intl;
   const stringResult = intl.string(item(1113).t.BOi07B);
@@ -267,7 +267,7 @@ function ForYouMessagePreviewV2(item) {
   items3[0] = closure_21(closure_7, obj3);
   const items4 = [acked ? tmp.messagePreviewTextV2Acked : tmp.messagePreviewTextV2NotAcked, ];
   let prop;
-  const Text = tmp4(5929).Text;
+  const Text = tmp4(5919).Text;
   if (!(null != content && "" !== content)) {
     prop = tmp.messagePreviewSystemTextV2;
   }
@@ -469,8 +469,8 @@ let closure_35 = react.memo(function ForYouRowWrapped(item) {
     const tmp3 = notificationCenterItemAcked;
     let tmp = item;
     if (item.type === item(notificationCenterItemAcked[33]).NotificationCenterItems.TRENDING_CONTENT) {
-      let obj2 = {
-        label: intl2.string(tmp2(tmp3[18]).t["gSMz/x"]),
+      let obj = {
+        label: intl.string(tmp2(tmp3[18]).t["gSMz/x"]),
         icon: rowIndex(tmp3[35]),
         IconComponent: tmp2(tmp3[36]).LightbulbIcon,
         onPress() {
@@ -510,13 +510,14 @@ let closure_35 = react.memo(function ForYouRowWrapped(item) {
             }
           }
       };
-      const push2 = items.push;
-      intl2 = tmp2(tmp3[18]).intl;
-      push2(obj2);
+      const push = items.push;
+      intl = tmp2(tmp3[18]).intl;
+      const tmp4 = rowIndex;
+      push(obj);
       tmp6 = rowIndex;
     } else {
-      let obj = {
-        label: intl.string(tmp2(tmp3[18]).t["08rqg5"]),
+      let obj2 = {
+        label: intl2.string(tmp2(tmp3[18]).t["08rqg5"]),
         icon: rowIndex(tmp3[35]),
         IconComponent: tmp2(tmp3[36]).LightbulbIcon,
         onPress() {
@@ -535,10 +536,9 @@ let closure_35 = react.memo(function ForYouRowWrapped(item) {
             }
           }
       };
-      const push = items.push;
-      intl = tmp2(tmp3[18]).intl;
-      const tmp4 = rowIndex;
-      push(obj);
+      const push2 = items.push;
+      intl2 = tmp2(tmp3[18]).intl;
+      push2(obj2);
       tmp6 = rowIndex;
     }
     if (null == tmp.local_id) {

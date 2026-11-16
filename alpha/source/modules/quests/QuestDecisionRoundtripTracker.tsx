@@ -1,17 +1,17 @@
 // Module ID: 10140
 // Function ID: 10141
 // Name: QuestDecisionRoundtripTracker
-// Dependencies: [8805, 6210, 1072, 5345, 8806, 8663, 1256, 8781, 8666, 2]
+// Dependencies: [8805, 6200, 1072, 6961, 8806, 8663, 1256, 8781, 8666, 2]
 
 // Module 10140 (QuestDecisionRoundtripTracker)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import AdCreativeType from "AdCreativeType" /* 5345 */;
+import AdCreativeType from "AdCreativeType" /* 6961 */;
 import NetStats from "NetStats" /* 8663 */;
 import getDeviceMetadataDefault from "getDeviceMetadata" /* 8781 */;
 import AdDecisionUtils from "AdDecisionUtils" /* 8806 */;
 import AdDeliveryStore from "AdDeliveryStore" /* 8805 */;
-import NetworkStore from "NetworkStore" /* 6210 */;
+import NetworkStore from "NetworkStore" /* 6200 */;
 import size from "module_2" /* 2 */;
 
 function trackRoundtrip(apiResponseTimestamp, transition_case, fetched_at) {

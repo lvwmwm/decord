@@ -1,9 +1,9 @@
-// Module ID: 19164
-// Function ID: 19165
+// Module ID: 19166
+// Function ID: 19167
 // Name: YouBarName
-// Dependencies: [19, 17, 6820, 5155, 5238, 6068, 5248, 7316, 5981, 21, 5306, 575, 10064, 10654, 10560, 504, 9529, 9532, 6069, 10847, 10848, 19165, 10845, 10864, 5929, 5372, 2]
+// Dependencies: [19, 17, 6810, 5155, 5238, 6058, 5248, 7316, 5971, 21, 5306, 575, 10064, 10654, 10560, 504, 9529, 9532, 6059, 10847, 10848, 19167, 10845, 10864, 5919, 5362, 2]
 
-// Module 19164 (YouBarName)
+// Module 19166 (YouBarName)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10064 */;
@@ -11,15 +11,15 @@ import ChevronSmallDownIcon from "ChevronSmallDownIcon" /* 10560 */;
 import GuildTagDefault from "GuildTag" /* 10654 */;
 import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 10847 */;
 import useUserVoiceActivity from "useUserVoiceActivity" /* 10848 */;
-import shouldShowActivityStatusDefault from "shouldShowActivityStatus" /* 19165 */;
+import shouldShowActivityStatusDefault from "shouldShowActivityStatus" /* 19167 */;
 import react from "react" /* 19 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6820 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6810 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import PermissionStore from "PermissionStore" /* 5238 */;
-import PresenceStore from "PresenceStore" /* 6068 */;
+import PresenceStore from "PresenceStore" /* 6058 */;
 import RelationshipStore from "RelationshipStore" /* 5248 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 7316 */;
-import VoiceStateStore from "VoiceStateStore" /* 5981 */;
+import VoiceStateStore from "VoiceStateStore" /* 5971 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
@@ -101,9 +101,9 @@ const memoResult = react.memo(function YouName(userId) {
     const items3 = [tmp12Result2, ];
     const obj7 = { variant: "body-xs/medium", color: "text-muted", lineClamp: 1, ellipsizeMode: "tail", maxFontSizeMultiplier: 1.75, style: tmp.statusText, children: humanizeStatusResult };
     humanizeStatusResult = gameMentionsAsPlainText;
-    const Text = tmp2(5929).Text;
+    const Text = tmp2(5919).Text;
     if (gameMentionsAsPlainText == null) {
-      const tmp2Result2 = userId(5372);
+      const tmp2Result2 = userId(5362);
       humanizeStatusResult = tmp2Result2.humanizeStatus(stateFromStores);
     }
     const obj8 = { children: items3 };

@@ -1,18 +1,18 @@
-// Module ID: 20021
-// Function ID: 20022
+// Module ID: 20023
+// Function ID: 20024
 // Name: UserVideoFailed
-// Dependencies: [17, 1072, 21, 5306, 575, 6257, 5929, 1113, 5936, 12799, 6096, 6225, 2]
+// Dependencies: [17, 1072, 21, 5306, 575, 6247, 5919, 1113, 5926, 12799, 6086, 6215, 2]
 // Exports: default
 
-// Module 20021 (UserVideoFailed)
+// Module 20023 (UserVideoFailed)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 6096 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 6225 */;
-import AVError from "AVError" /* 6257 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 6086 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 6215 */;
+import AVError from "AVError" /* 6247 */;
 import VideoStreamReadyActionCreators from "VideoStreamReadyActionCreators" /* 12799 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;
@@ -75,7 +75,7 @@ export default function UserVideoFailed(arg0) {
           }, 1000);
         }
     };
-    const Button = tmp3(5936).Button;
+    const Button = tmp3(5926).Button;
     intl3 = tmp3(1113).intl;
     tmp8Result = tmp8(Button, obj6);
   }

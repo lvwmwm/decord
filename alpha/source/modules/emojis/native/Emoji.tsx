@@ -1,7 +1,7 @@
 // Module ID: 7894
 // Function ID: 7895
 // Name: Emoji
-// Dependencies: [19, 17, 1192, 21, 1380, 5256, 1187, 6020, 5313, 7895, 7896, 2]
+// Dependencies: [19, 17, 1192, 21, 1380, 5256, 1187, 6010, 5313, 7895, 7896, 2]
 // Exports: default
 
 // Module 7894 (Emoji)
@@ -10,7 +10,7 @@ import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import EmojiUtilsDefault from "EmojiUtils" /* 5256 */;
 import shared from "shared" /* 5313 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
 import size from "module_2" /* 2 */;

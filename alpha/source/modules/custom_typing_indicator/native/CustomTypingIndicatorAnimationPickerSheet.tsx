@@ -1,13 +1,13 @@
-// Module ID: 17983
-// Function ID: 17984
+// Module ID: 17985
+// Function ID: 17986
 // Name: CustomTypingIndicatorAnimationPickerSheet
-// Dependencies: [32, 19, 17, 21, 5306, 575, 7445, 5929, 1401, 1113, 4133, 7951, 14592, 6337, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 575, 7445, 5919, 1401, 1113, 4133, 7951, 14592, 6327, 2]
 // Exports: default
 
-// Module 17983 (CustomTypingIndicatorAnimationPickerSheet)
+// Module 17985 (CustomTypingIndicatorAnimationPickerSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Stack_Stack from "Stack/Stack" /* 6337 */;
+import Stack_Stack from "Stack/Stack" /* 6327 */;
 import Card_Card from "Card/Card" /* 7445 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -23,7 +23,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp3;
-const Text_Text = tmp3(5929);
+const Text_Text = tmp3(5919);
 function MotionOptionButton(isSelected) {
   let label;
   let onPress;
@@ -120,7 +120,7 @@ export default function CustomTypingIndicatorAnimationPickerSheet(onChange) {
       return metroRequire(Stack, obj, index);
     })
   };
-  let Stack = onChange(6337).Stack;
+  let Stack = onChange(6327).Stack;
   items2 = [items.slice(0, 2), items.slice(2, 4)];
   items1[1] = closure_6(Stack, obj9);
   return closure_7(ActionSheet, obj5);

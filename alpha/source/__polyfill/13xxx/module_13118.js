@@ -1,6 +1,6 @@
 // Module ID: 13118
 // Function ID: 13119
-// Dependencies: [109, 41, 42, 93, 95, 98, 19, 17, 21, 5360, 5357]
+// Dependencies: [109, 41, 42, 93, 95, 98, 19, 17, 21, 5350, 5347]
 
 // Module 13118
 import react_native from "react-native" /* 17 */;
@@ -12,13 +12,13 @@ import hasOwnProperty from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 import react from "react" /* 19 */;
-import module_5357_mod from "module_5357" /* 5357 */;
+import module_5347_mod from "module_5347" /* 5347 */;
 
 const require = globalThis.__r;
 let _require;
 
 let items1;
-let module_5357;
+let module_5347;
 let oneOfType;
 function _isNativeReflectConstruct() {
   try {
@@ -98,10 +98,10 @@ const entry = {
 let items = [entry];
 const importDefaultResultResult = _createClass(Link, items);
 importDefaultResultResult.defaultProps = { component: TouchableHighlight, replace: false };
-let obj = { onPress: module_5357.func, component: module_5357.elementType, replace: module_5357.bool, to: oneOfType(items1) };
-module_5357 = module_5357_mod;
-oneOfType = module_5357.oneOfType;
-items1 = [module_5357.string, module_5357.object];
+let obj = { onPress: module_5347.func, component: module_5347.elementType, replace: module_5347.bool, to: oneOfType(items1) };
+module_5347 = module_5347_mod;
+oneOfType = module_5347.oneOfType;
+items1 = [module_5347.string, module_5347.object];
 importDefaultResultResult.propTypes = obj;
 
 export default importDefaultResultResult;

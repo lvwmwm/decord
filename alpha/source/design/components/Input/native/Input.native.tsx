@@ -1,14 +1,14 @@
 // Module ID: 7620
 // Function ID: 7621
 // Name: Input
-// Dependencies: [19, 17, 21, 5306, 575, 7621, 5481, 5929, 7622, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 7621, 5471, 5919, 7622, 2]
 // Exports: Input
 
 // Module 7620 (Input)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 5481 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import native from "native" /* 5471 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import getRequiredFieldA11yName2 from "getRequiredFieldA11yName" /* 7621 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -67,10 +67,10 @@ export function Input(arg0) {
       const obj5 = { variant: "body-sm/semibold", color: "text-subtle", style: tmp.label, nativeID: labelId, accessibilityLabel: requiredFieldA11yName, children: items1 };
       items1 = [label, ];
       let tmp6Result2 = null;
-      const Text = tmp2(5929).Text;
+      const Text = tmp2(5919).Text;
       if (required) {
         const obj6 = { variant: "body-sm/semibold", color: "text-feedback-critical", "aria-hidden": true, children: [" ", "*"] };
-        tmp6Result2 = tmp6(tmp2(5929).Text, obj6);
+        tmp6Result2 = tmp6(tmp2(5919).Text, obj6);
       }
       items1[1] = tmp6Result2;
       tmp6Result = tmp6(Text, obj5);
@@ -83,7 +83,7 @@ export function Input(arg0) {
   let tmp12Result = null;
   if (null != description) {
     const obj8 = { variant: "body-xs/medium", color: "text-muted", style: tmp.description, children: description };
-    tmp12Result = tmp12(tmp2(5929).Text, obj8);
+    tmp12Result = tmp12(tmp2(5919).Text, obj8);
   }
   items2[2] = tmp12Result;
   let tmp12Result2 = null;

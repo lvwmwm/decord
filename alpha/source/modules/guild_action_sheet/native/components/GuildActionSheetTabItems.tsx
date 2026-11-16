@@ -1,13 +1,13 @@
 // Module ID: 16421
 // Function ID: 16422
 // Name: GuildActionSheetTabItems
-// Dependencies: [19, 5155, 5236, 5209, 1072, 21, 16401, 9241, 504, 8464, 8460, 6951, 7988, 1113, 9981, 575, 6067, 16422, 16423, 5552, 6952, 10982, 9173, 7883, 10570, 8404, 16424, 2]
+// Dependencies: [19, 5155, 5236, 5209, 1072, 21, 16401, 9241, 504, 8464, 8460, 6941, 7988, 1113, 9981, 575, 6057, 16422, 16423, 5542, 6942, 10982, 9173, 7883, 10570, 8404, 16424, 2]
 // Exports: default
 
 // Module 16421 (GuildActionSheetTabItems)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6067 */;
-import BoostingActionCreatorsAll from "BoostingActionCreators" /* 6952 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6057 */;
+import BoostingActionCreatorsAll from "BoostingActionCreators" /* 6942 */;
 import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7883 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8404 */;
 import utils_InstantInviteUtils from "utils/InstantInviteUtils" /* 8464 */;
@@ -69,7 +69,7 @@ export default function GuildActionSheetTabItems(guild) {
     }
   }, items1);
   let obj4 = { direction: "horizontal", style: { flexWrap: "wrap" }, children: items2 };
-  const ButtonGroup = guild(6951).ButtonGroup;
+  const ButtonGroup = guild(6941).ButtonGroup;
   const IconButton = guild(7988).IconButton;
   const tmp6 = closure_13;
   if (total > 0) {

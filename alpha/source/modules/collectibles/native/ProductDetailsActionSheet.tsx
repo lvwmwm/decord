@@ -1,7 +1,7 @@
 // Module ID: 9408
 // Function ID: 9409
 // Name: ProductDetailsActionSheet
-// Dependencies: [32, 19, 17, 8485, 1074, 1072, 1083, 21, 3, 5306, 575, 5942, 5377, 5313, 1113, 7635, 2114, 9409, 8476, 9407, 8496, 9410, 9411, 9412, 7918, 7937, 9419, 9424, 9420, 6338, 1264, 1256, 504, 9425, 9433, 9437, 8497, 9439, 9442, 9444, 9454, 5570, 9455, 9521, 9523, 15489, 15499, 1187, 15500, 15515, 5566, 10457, 11671, 10433, 9723, 8596, 5936, 15518, 9405, 2]
+// Dependencies: [32, 19, 17, 8485, 1074, 1072, 1083, 21, 3, 5306, 575, 5932, 5367, 5313, 1113, 7635, 2114, 9409, 8476, 9407, 8496, 9410, 9411, 9412, 7918, 7937, 9419, 9424, 9420, 6328, 1264, 1256, 504, 9425, 9433, 9437, 8497, 9439, 9442, 9444, 9454, 5560, 9455, 9521, 9523, 15489, 15499, 1187, 15500, 15515, 5556, 10457, 11671, 10433, 9723, 8596, 5926, 15518, 9405, 2]
 // Exports: default
 
 // Module 9408 (ProductDetailsActionSheet)
@@ -10,8 +10,8 @@ import nativeDefault from "native" /* 575 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import Constants2 from "Constants" /* 1083 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5566 */;
-import ButtonConstants from "ButtonConstants" /* 5942 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5556 */;
+import ButtonConstants from "ButtonConstants" /* 5932 */;
 import CollectiblesProductUtils from "CollectiblesProductUtils" /* 8496 */;
 import ShopStandalonePdpMobileExperiment from "ShopStandalonePdpMobileExperiment" /* 9405 */;
 import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9420 */;
@@ -24,7 +24,7 @@ import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 8485 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
-import native_mod from "native" /* 5377 */;
+import native_mod from "native" /* 5367 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, set;
@@ -56,7 +56,7 @@ function PreviewProfileTrigger(handlePreviewPress) {
   const onTrackPress = handlePreviewPress.onTrackPress;
   const tmp = closure_19();
   dependencyMap = tmp;
-  const obj = handlePreviewPress(5377);
+  const obj = handlePreviewPress(5367);
   const theme = obj.useThemeContext().theme;
   const obj2 = handlePreviewPress(5313);
   const isThemeLightResult = obj2.isThemeLight(theme);
@@ -117,7 +117,7 @@ function ProductDetailsActionSheetContent(product) {
   let tmp55;
   let tmp57;
   let type;
-  const f98119 = () => {
+  const f98132 = () => {
     let tmp;
     if (closure_6) {
       const first = require.items[0];
@@ -258,8 +258,8 @@ function ProductDetailsActionSheetContent(product) {
   }, items3);
   const tmp39 = product.type === require("CollectiblesItemType").CollectiblesItemType.BUNDLE;
   closure_6 = tmp39;
-  [type, c7] = selectedProduct(obj2.useState(f98119), 2);
-  selectedProduct(obj2.useState(f98119), 2);
+  [type, c7] = selectedProduct(obj2.useState(f98132), 2);
+  selectedProduct(obj2.useState(f98132), 2);
   const tmp41 = c5((type) => {
     _undefined(type);
     _undefined2(type.type);
@@ -520,7 +520,7 @@ function ManagedProductDetailsActionSheetInner(skuId) {
           ref,
           children: tmp11
         };
-        return tmp10(tmp(5566).BottomSheet, obj6);
+        return tmp10(tmp(5556).BottomSheet, obj6);
       }
     }
   }
@@ -529,7 +529,7 @@ function ManagedProductDetailsActionSheetInner(skuId) {
     const EmptyState = tmp(1187).EmptyState;
     intl = tmp(1113).intl;
     obj8 = { text: intl2.string(tmp(1113).t["+hivLW"]), onPress: retry };
-    Button = tmp(5936).Button;
+    Button = tmp(5926).Button;
     intl2 = tmp(1113).intl;
     tmp11 = closure_14(EmptyState, obj7);
     tmp10 = closure_14;

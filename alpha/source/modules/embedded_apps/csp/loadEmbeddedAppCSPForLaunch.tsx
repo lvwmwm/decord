@@ -1,11 +1,11 @@
 // Module ID: 7342
 // Function ID: 7343
 // Name: loadEmbeddedAppCSPForLaunch
-// Dependencies: [5, 7343, 7344, 5974, 7345, 7346, 2]
+// Dependencies: [5, 7343, 7344, 5964, 7345, 7346, 2]
 // Exports: default
 
 // Module 7342 (loadEmbeddedAppCSPForLaunch)
-import getURLForApplication from "getURLForApplication" /* 5974 */;
+import getURLForApplication from "getURLForApplication" /* 5964 */;
 import EmbeddedAppFramePolicyExperiment from "EmbeddedAppFramePolicyExperiment" /* 7344 */;
 import EmbeddedAppCSPActionCreators from "EmbeddedAppCSPActionCreators" /* 7345 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

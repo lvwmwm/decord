@@ -1,10 +1,10 @@
-// Module ID: 18765
-// Function ID: 18766
+// Module ID: 18767
+// Function ID: 18768
 // Name: useSuggestedFriends
-// Dependencies: [32, 19, 8767, 15017, 563, 12, 5372, 2]
+// Dependencies: [32, 19, 8767, 15017, 563, 12, 5362, 2]
 // Exports: default
 
-// Module 18765 (useSuggestedFriends)
+// Module 18767 (useSuggestedFriends)
 import _modDef12 from "module_12" /* 12 */;
 import FriendsScreenConstants from "FriendsScreenConstants" /* 15017 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

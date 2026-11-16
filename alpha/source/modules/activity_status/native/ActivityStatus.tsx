@@ -1,14 +1,14 @@
 // Module ID: 10845
 // Function ID: 10846
 // Name: ActivityStatus
-// Dependencies: [19, 17, 6068, 5248, 1388, 10846, 21, 5306, 504, 10847, 10848, 6069, 9532, 10849, 10854, 10855, 10862, 10864, 10853, 2]
+// Dependencies: [19, 17, 6058, 5248, 1388, 10846, 21, 5306, 504, 10847, 10848, 6059, 9532, 10849, 10854, 10855, 10862, 10864, 10853, 2]
 // Exports: default
 
 // Module 10845 (ActivityStatus)
 import react_native from "react-native" /* 17 */;
 import ActivityStatusConstants from "ActivityStatusConstants" /* 10846 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 6068 */;
+import PresenceStore from "PresenceStore" /* 6058 */;
 import RelationshipStore from "RelationshipStore" /* 5248 */;
 import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;

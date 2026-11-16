@@ -1,7 +1,7 @@
 // Module ID: 14181
 // Function ID: 14182
 // Name: ClassificationDetail
-// Dependencies: [19, 17, 2189, 8231, 8206, 1072, 21, 5306, 575, 5929, 8207, 1113, 504, 3417, 8451, 6012, 11224, 7443, 5936, 14182, 14184, 8230, 6833, 1256, 14185, 6771, 6776, 14187, 7415, 14192, 8205, 2]
+// Dependencies: [19, 17, 2189, 8231, 8206, 1072, 21, 5306, 575, 5919, 8207, 1113, 504, 3417, 8451, 6002, 11224, 7443, 5926, 14182, 14184, 8230, 6823, 1256, 14185, 6761, 6766, 14187, 7415, 14192, 8205, 2]
 // Exports: default
 
 // Module 14181 (ClassificationDetail)
@@ -10,11 +10,11 @@ import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import _modDef3417 from "module_3417" /* 3417 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import components_Button_Button from "components/Button/Button" /* 5936 */;
-import LinkingDefault from "Linking" /* 6012 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 6771 */;
-import MetricEvents from "MetricEvents" /* 6776 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
+import LinkingDefault from "Linking" /* 6002 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 6761 */;
+import MetricEvents from "MetricEvents" /* 6766 */;
 import TableRow2 from "TableRow" /* 7443 */;
 import SafetyHubModels from "SafetyHubModels" /* 8207 */;
 import TouchableHitBoxDefault from "TouchableHitBox" /* 8451 */;
@@ -60,7 +60,7 @@ function ClassificationHeader(classificationTypeText) {
   guildMetadata = classificationTypeText.guildMetadata;
   const tmp = closure_16();
   const items = [classificationTypeText, guildMetadata];
-  let obj = { style: tmp.header, children: closure_13(classificationTypeText(5929).Text, obj2) };
+  let obj = { style: tmp.header, children: closure_13(classificationTypeText(5919).Text, obj2) };
   const memo = react.useMemo(() => {
     let formatResult;
     let name;
@@ -291,7 +291,7 @@ function ClassificationPolicyCard(policyExplainerLink) {
   items = [closure_13(closure_4, obj3), ];
   const obj5 = { style: tmp.classificationPolicyCardContent, children: closure_13(Text, obj6) };
   obj6 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: intl.format(policyExplainerLink(1113).t.zxUdpj, { classificationDescription: classificationTypeText }) };
-  Text = policyExplainerLink(5929).Text;
+  Text = policyExplainerLink(5919).Text;
   intl = policyExplainerLink(1113).intl;
   items[1] = closure_13(closure_4, obj5);
   return closure_13(closure_4, obj);

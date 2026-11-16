@@ -1,15 +1,15 @@
 // Module ID: 8257
 // Function ID: 8258
 // Name: AgeVerificationOtherWindowScreen
-// Dependencies: [19, 21, 5306, 1113, 3321, 8208, 8210, 6337, 7786, 575, 5929, 2]
+// Dependencies: [19, 21, 5306, 1113, 3321, 8208, 8210, 6327, 7786, 575, 5919, 2]
 // Exports: default
 
 // Module 8257 (AgeVerificationOtherWindowScreen)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import _modDef3321 from "module_3321" /* 3321 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import Stack_Stack from "Stack/Stack" /* 6337 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import Stack_Stack from "Stack/Stack" /* 6327 */;
 import MobilePhoneIcon2 from "MobilePhoneIcon" /* 7786 */;
 import ModalScreen2 from "ModalScreen" /* 8208 */;
 import ModalContent2 from "ModalContent" /* 8210 */;

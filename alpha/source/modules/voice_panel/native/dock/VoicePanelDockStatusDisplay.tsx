@@ -1,17 +1,17 @@
-// Module ID: 19201
-// Function ID: 19202
+// Module ID: 19203
+// Function ID: 19204
 // Name: VoicePanelDockStatusDisplay
-// Dependencies: [32, 19, 17, 19202, 12009, 21, 5929, 5306, 1655, 1113, 3253, 5548, 5939, 19203, 5377, 1708, 11984, 2]
+// Dependencies: [32, 19, 17, 19204, 12009, 21, 5919, 5306, 1655, 1113, 3253, 5538, 5929, 19205, 5367, 1708, 11984, 2]
 
-// Module 19201 (VoicePanelDockStatusDisplay)
+// Module 19203 (VoicePanelDockStatusDisplay)
 import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5548 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import spring_spring from "spring/spring" /* 5939 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import spring_spring from "spring/spring" /* 5929 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import VoicePanelDockStatusStore from "VoicePanelDockStatusStore" /* 19202 */;
+import VoicePanelDockStatusStore from "VoicePanelDockStatusStore" /* 19204 */;
 import VoicePanelDockConstants from "VoicePanelDockConstants" /* 12009 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
@@ -599,7 +599,7 @@ const memoResult = react.memo(function VoicePanelDockStatusDisplay() {
   let onExited;
   let tmp11;
   let userId;
-  const f119397 = () => {
+  const f119412 = () => {
     let items;
     if ("channel" === obj2.kind) {
       items = [];
@@ -634,8 +634,8 @@ const memoResult = react.memo(function VoicePanelDockStatusDisplay() {
   }
   const tmp7 = _slicedToArray(obj.useState(() => ({ status: obj2, enter: null })), 2);
   first = tmp7[0];
-  [arr, tmp11] = obj.useState(f119397);
-  _slicedToArray(obj.useState(f119397), 2);
+  [arr, tmp11] = obj.useState(f119412);
+  _slicedToArray(obj.useState(f119412), 2);
   const tmp12 = _slicedToArray(obj.useState(() => {
     map = new Map();
     return map;

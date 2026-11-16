@@ -1,15 +1,15 @@
-// Module ID: 19235
-// Function ID: 19236
+// Module ID: 19237
+// Function ID: 19238
 // Name: ForLaterOpenActionButton
-// Dependencies: [19, 17, 11909, 21, 9503, 10526, 5306, 575, 5547, 5902, 5943, 11905, 6042, 11917, 504, 11904, 1113, 7988, 2]
+// Dependencies: [19, 17, 11909, 21, 9503, 10526, 5306, 575, 5537, 5892, 5933, 11905, 6032, 11917, 504, 11904, 1113, 7988, 2]
 // Exports: default
 
-// Module 19235 (ForLaterOpenActionButton)
+// Module 19237 (ForLaterOpenActionButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useThemeDefault from "useTheme" /* 5547 */;
-import useToken from "useToken" /* 5902 */;
-import ButtonHooks from "ButtonHooks" /* 5943 */;
+import useThemeDefault from "useTheme" /* 5537 */;
+import useToken from "useToken" /* 5892 */;
+import ButtonHooks from "ButtonHooks" /* 5933 */;
 import ClipView from "ClipView" /* 9503 */;
 import getIconSize from "getIconSize" /* 10526 */;
 import showForLaterModal from "showForLaterModal" /* 11904 */;
@@ -45,7 +45,7 @@ function BadgedIcon(arg0) {
   const obj2 = ButtonHooks;
   const iconSizeStyles = obj2.useIconSizeStyles("sm", true, 2);
   if (type === SavedMessagesTypes.SavedMessageSortTypes.REMINDER) {
-    BookmarkIcon = tmp4(6042).ClockIcon;
+    BookmarkIcon = tmp4(6032).ClockIcon;
   } else {
     BookmarkIcon = tmp4(11917).BookmarkIcon;
   }

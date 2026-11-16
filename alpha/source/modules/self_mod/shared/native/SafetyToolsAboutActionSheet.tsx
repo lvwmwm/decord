@@ -1,15 +1,15 @@
 // Module ID: 12323
 // Function ID: 12324
 // Name: SafetyToolsAboutActionSheet
-// Dependencies: [32, 19, 17, 12024, 1072, 21, 5306, 575, 12306, 5552, 12038, 12039, 12324, 1113, 6014, 12311, 5929, 2188, 5936, 2]
+// Dependencies: [32, 19, 17, 12024, 1072, 21, 5306, 575, 12306, 5542, 12038, 12039, 12324, 1113, 6004, 12311, 5919, 2188, 5926, 2]
 // Exports: default
 
 // Module 12323 (SafetyToolsAboutActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import Constants2 from "Constants" /* 12024 */;
 import SafetyWarningUtils from "SafetyWarningUtils" /* 12038 */;
 import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 12039 */;

@@ -1,7 +1,7 @@
 // Module ID: 15806
 // Function ID: 15807
 // Name: ConjureServerWidgetUpsell
-// Dependencies: [19, 17, 1388, 21, 5306, 575, 15807, 6337, 7720, 5929, 1113, 4131, 13788, 5936, 15815, 12146, 504, 2]
+// Dependencies: [19, 17, 1388, 21, 5306, 575, 15807, 6327, 7720, 5919, 1113, 4131, 13788, 5926, 15815, 12146, 504, 2]
 // Exports: default
 
 // Module 15806 (ConjureServerWidgetUpsell)
@@ -55,19 +55,19 @@ function ServerWidgetUpsellCard(cardStyle) {
     const obj2 = { style: tmp.cta, children: items2 };
     ({ application, rendererProps } = conjureServerWidgetUpsellDetails);
     const obj3 = { direction: "horizontal", spacing: onDismiss(575).space.PX_12, align: "flex-start", children: items };
-    const Stack2 = tmp2(6337).Stack;
+    const Stack2 = tmp2(6327).Stack;
     const obj4 = { guild, size: widget(7720).GuildIconSizes.SMALL_36 };
     const tmp11 = onDismiss(7720);
     items = [closure_5(tmp11, obj4), ];
     const obj5 = { spacing: onDismiss(575).space.PX_4, style: tmp.copy, children: items1 };
-    const Stack3 = tmp2(6337).Stack;
+    const Stack3 = tmp2(6327).Stack;
     const obj6 = { variant: "body-md/semibold", color: "text-strong", children: intl3.formatToPlainString(onDismiss(4131)["uIb8U+"], obj7) };
-    const Text = tmp2(5929).Text;
+    const Text = tmp2(5919).Text;
     intl3 = tmp2(1113).intl;
     obj7 = { guildName: guild.name };
     items1 = [closure_5(Text, obj6), , ];
     const obj8 = { variant: "body-sm/normal", color: "text-default", children: intl4.formatToPlainString(onDismiss(4131).ZZywee, obj9) };
-    const Text2 = tmp2(5929).Text;
+    const Text2 = tmp2(5919).Text;
     intl4 = tmp2(1113).intl;
     obj9 = { applicationName: application.name };
     items1[1] = closure_5(Text2, obj8);
@@ -80,9 +80,9 @@ function ServerWidgetUpsellCard(cardStyle) {
     items[1] = closure_6(Stack3, obj5);
     items2 = [closure_6(Stack2, obj3), ];
     const obj11 = { direction: "horizontal", spacing: onDismiss(575).space.PX_8, justify: "flex-end", children: items3 };
-    const Stack = tmp2(6337).Stack;
+    const Stack = tmp2(6327).Stack;
     const obj12 = { variant: "secondary", size: "sm", text: intl.string(widget(1113).t.WAI6xu), onPress: onDismiss };
-    const Button = tmp2(5936).Button;
+    const Button = tmp2(5926).Button;
     intl = tmp2(1113).intl;
     items3 = [closure_5(Button, obj12), ];
     const obj13 = {
@@ -93,7 +93,7 @@ function ServerWidgetUpsellCard(cardStyle) {
           return turnOnConjureServerWidgetDefault(widget.applicationId, onDismiss);
         }
     };
-    const Button2 = tmp2(5936).Button;
+    const Button2 = tmp2(5926).Button;
     intl2 = tmp2(1113).intl;
     items3[1] = closure_5(Button2, obj13);
     items2[1] = closure_6(Stack, obj11);

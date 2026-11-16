@@ -1,16 +1,16 @@
-// Module ID: 20350
-// Function ID: 20351
+// Module ID: 20353
+// Function ID: 20354
 // Name: RedesignDiscoverabilityModal
-// Dependencies: [19, 17, 14994, 1388, 1072, 21, 5306, 575, 5892, 1502, 504, 15001, 1092, 20351, 15022, 15015, 1264, 15014, 7490, 1113, 2]
+// Dependencies: [19, 17, 14994, 1388, 1072, 21, 5306, 575, 5882, 1502, 504, 15001, 1092, 20354, 15022, 15015, 1264, 15014, 7490, 1113, 2]
 
-// Module 20350 (RedesignDiscoverabilityModal)
+// Module 20353 (RedesignDiscoverabilityModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
-import NavigatorConstants from "NavigatorConstants" /* 5892 */;
+import NavigatorConstants from "NavigatorConstants" /* 5882 */;
 import ContactSyncModalStore from "ContactSyncModalStore" /* 14994 */;
 import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 15001 */;
 import NUFActionCreators from "NUFActionCreators" /* 15022 */;

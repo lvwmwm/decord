@@ -1,7 +1,7 @@
 // Module ID: 15783
 // Function ID: 15784
 // Name: GameRelationshipStoreHooks
-// Dependencies: [32, 8765, 1072, 504, 6950, 2]
+// Dependencies: [32, 8765, 1072, 504, 6940, 2]
 // Exports: useGameFriendsForUser, useGameRelationshipsByType, useHasGameRelationshipsForUser, useHasGameRelationshipsForUserByType, useIncomingGameRelationshipsForUser
 
 // Module 15783 (GameRelationshipStoreHooks)

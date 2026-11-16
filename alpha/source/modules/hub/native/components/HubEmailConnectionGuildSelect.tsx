@@ -1,7 +1,7 @@
 // Module ID: 15102
 // Function ID: 15103
 // Name: HubEmailConnectionGuildSelect
-// Dependencies: [5, 32, 19, 17, 15080, 21, 5306, 575, 8106, 7720, 5169, 5929, 1113, 1630, 5936, 1187, 1502, 7427, 7826, 15094, 6757, 15088, 7888, 2]
+// Dependencies: [5, 32, 19, 17, 15080, 21, 5306, 575, 8106, 7720, 5169, 5919, 1113, 1630, 5926, 1187, 1502, 7427, 7826, 15094, 6747, 15088, 7888, 2]
 // Exports: default
 
 // Module 15102 (HubEmailConnectionGuildSelect)
@@ -10,8 +10,8 @@ import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 5169 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import components_Button_Button from "components/Button/Button" /* 5936 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
 import GuildIconDefault from "GuildIcon" /* 7720 */;
 import _mod8106 from "module_8106" /* 8106 */;
 import HubConstants from "HubConstants" /* 15080 */;

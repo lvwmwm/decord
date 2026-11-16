@@ -1,16 +1,16 @@
-// Module ID: 19216
-// Function ID: 19217
+// Module ID: 19218
+// Function ID: 19219
 // Name: SoundboardSoundPickerList
-// Dependencies: [19, 17, 1388, 19211, 21, 5306, 575, 7227, 1113, 11313, 504, 2174, 11260, 11271, 19217, 5944, 12, 7720, 1187, 19224, 11362, 6042, 10324, 11270, 7847, 5929, 2]
+// Dependencies: [19, 17, 1388, 19213, 21, 5306, 575, 7227, 1113, 11313, 504, 2174, 11260, 11271, 19219, 5934, 12, 7720, 1187, 19226, 11362, 6032, 10324, 11270, 7847, 5919, 2]
 
-// Module 19216 (SoundboardSoundPickerList)
+// Module 19218 (SoundboardSoundPickerList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import ClockIcon from "ClockIcon" /* 6042 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import ClockIcon from "ClockIcon" /* 6032 */;
 import SoundboardTypes from "SoundboardTypes" /* 7227 */;
 import GuildIcon from "GuildIcon" /* 7720 */;
 import FastListDefault from "FastList" /* 7847 */;
@@ -20,10 +20,10 @@ import PremiumUpsellSectionDivider from "PremiumUpsellSectionDivider" /* 11270 *
 import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 11271 */;
 import chunkDefault from "chunk" /* 11313 */;
 import AssetRegistryDefault from "AssetRegistry" /* 11362 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 19224 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 19226 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;
-import SoundboardStyleConstants from "SoundboardStyleConstants" /* 19211 */;
+import SoundboardStyleConstants from "SoundboardStyleConstants" /* 19213 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
@@ -99,7 +99,7 @@ function SoundPickerButtonRow(section) {
         const sound = type.sound;
         const obj = { sound, channel, style: soundButtonNotFirst, isSectionLocked };
         soundButtonNotFirst = null;
-        const SoundButton = tmp(19217).SoundButton;
+        const SoundButton = tmp(19219).SoundButton;
         const tmp7 = metroImportDefault;
         if (index > 0) {
           soundButtonNotFirst = soundButtonNotFirst.soundButtonNotFirst;
@@ -195,7 +195,7 @@ const memoResult = react.memo(function SoundboardSoundPickerListComponent(channe
   }
   const listRef = channel.listRef;
   const currentUser = closure_10();
-  let obj = channel(5944);
+  let obj = channel(5934);
   const fontScale = obj.useFontScale();
   let tmp2 = calculateRowsPerSection(categories, closure_6);
   let tmp3 = getFastListSectionsFromCategories(categories, closure_6, fontScale);

@@ -1,14 +1,14 @@
 // Module ID: 9394
 // Function ID: 9395
 // Name: avatar_decorations/AvatarDecorationUtils
-// Dependencies: [1415, 1187, 5552, 9395, 2121, 2]
+// Dependencies: [1415, 1187, 5542, 9395, 2121, 2]
 // Exports: getDecorationCutoutForAvatarCutout, getDecorationSizeForAvatarSize, openAvatarDecorationActionSheet
 
 // Module 9394 (avatar_decorations/AvatarDecorationUtils)
 import native from "native" /* 1187 */;
 import AvatarDecorationConstants from "AvatarDecorationConstants" /* 1415 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = AvatarDecorationConstants.DECORATION_TO_AVATAR_RATIO;

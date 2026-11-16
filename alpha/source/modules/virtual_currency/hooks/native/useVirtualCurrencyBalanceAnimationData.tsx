@@ -1,7 +1,7 @@
 // Module ID: 10045
 // Function ID: 10046
 // Name: useVirtualCurrencyBalanceAnimationData
-// Dependencies: [32, 19, 5307, 504, 6836, 2]
+// Dependencies: [32, 19, 5307, 504, 6826, 2]
 // Exports: useVirtualCurrencyBalanceAnimationData
 
 // Module 10045 (useVirtualCurrencyBalanceAnimationData)

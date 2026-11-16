@@ -1,13 +1,13 @@
-// Module ID: 18443
-// Function ID: 18444
+// Module ID: 18445
+// Function ID: 18446
 // Name: UserSettingsDesignSystemStack
-// Dependencies: [19, 17, 21, 5306, 575, 6337, 7445, 5929, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 6327, 7445, 5919, 2]
 // Exports: default
 
-// Module 18443 (UserSettingsDesignSystemStack)
+// Module 18445 (UserSettingsDesignSystemStack)
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import Stack_Stack from "Stack/Stack" /* 6337 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import Stack_Stack from "Stack/Stack" /* 6327 */;
 import Card_Card from "Card/Card" /* 7445 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

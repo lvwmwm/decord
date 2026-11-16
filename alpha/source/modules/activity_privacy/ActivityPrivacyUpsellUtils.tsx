@@ -1,7 +1,7 @@
 // Module ID: 17381
 // Function ID: 17382
 // Name: ActivityPrivacyUpsellUtils
-// Dependencies: [7069, 5536, 5177, 6956, 1196, 7813, 1113, 5131, 2]
+// Dependencies: [7069, 5526, 5177, 6946, 1196, 7813, 1113, 5131, 2]
 // Exports: applyBulkGuildRestrictionChange, computeProfileToActivityUpsell, getActivityRestrictionSettingName, getPermissiveness, getProfileToActivityUpsellStrings, getUpsellStrings, profileVisibilityToActivityRestriction, sortGuildIdsByFrecency
 
 // Module 17381 (ActivityPrivacyUpsellUtils)
@@ -10,9 +10,9 @@ import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
 import UserSettings from "UserSettings" /* 5131 */;
 import UserSettingsUtils from "UserSettingsUtils" /* 7813 */;
 import FrecencyStore from "FrecencyStore" /* 7069 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5536 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5526 */;
 import GuildStore from "GuildStore" /* 5177 */;
-import SortedGuildStore from "SortedGuildStore" /* 6956 */;
+import SortedGuildStore from "SortedGuildStore" /* 6946 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, set;

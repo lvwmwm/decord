@@ -1,7 +1,7 @@
 // Module ID: 10834
 // Function ID: 10835
 // Name: transferToXbox
-// Dependencies: [5, 19, 17, 1072, 21, 10825, 10821, 10835, 6269, 10836, 2121, 10828, 6862, 2]
+// Dependencies: [5, 19, 17, 1072, 21, 10825, 10821, 10835, 6259, 10836, 2121, 10828, 6852, 2]
 // Exports: default
 
 // Module 10834 (transferToXbox)

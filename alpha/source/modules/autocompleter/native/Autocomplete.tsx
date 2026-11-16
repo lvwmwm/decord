@@ -1,7 +1,7 @@
 // Module ID: 14797
 // Function ID: 14798
 // Name: Autocomplete
-// Dependencies: [19, 17, 5177, 5248, 1388, 1072, 11234, 21, 5306, 575, 8106, 504, 5372, 1187, 10930, 7443, 7458, 1113, 11625, 8033, 5954, 5929, 6020, 14798, 11357, 7428, 11093, 12, 9374, 14799, 2152, 2153, 8375, 14800, 2]
+// Dependencies: [19, 17, 5177, 5248, 1388, 1072, 11234, 21, 5306, 575, 8106, 504, 5362, 1187, 10930, 7443, 7458, 1113, 11625, 8033, 5944, 5919, 6010, 14798, 11357, 7428, 11093, 12, 9374, 14799, 2152, 2153, 8375, 14800, 2]
 
 // Module 14797 (Autocomplete)
 import _modDef12 from "module_12" /* 12 */;
@@ -10,9 +10,9 @@ import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2152 */;
 import StringUtils from "StringUtils" /* 2153 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import useChannelName from "useChannelName" /* 5954 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import useChannelName from "useChannelName" /* 5944 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import Pressables from "Pressables" /* 7428 */;
 import TableRow2 from "TableRow" /* 7443 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 8033 */;
@@ -101,7 +101,7 @@ const obj10 = {
       nick = stateFromStores;
     }
     if (nick == null) {
-      const obj3 = guildId(5372);
+      const obj3 = guildId(5362);
       nick = obj3.getName(user);
     }
     obj4 = { status, user, size: user(1187).AvatarSizes.SMALL, guildId, autoStatusCutout: true };

@@ -1,17 +1,17 @@
-// Module ID: 19205
-// Function ID: 19206
+// Module ID: 19207
+// Function ID: 19208
 // Name: VoicePanelDockBadgedIcon
-// Dependencies: [19, 17, 12009, 21, 1187, 19106, 5306, 5377, 5548, 1708, 1655, 9503, 2]
+// Dependencies: [19, 17, 12009, 21, 1187, 19108, 5306, 5367, 5538, 1708, 1655, 9503, 2]
 // Exports: default
 
-// Module 19205 (VoicePanelDockBadgedIcon)
+// Module 19207 (VoicePanelDockBadgedIcon)
 import react_native from "react-native" /* 17 */;
 import native from "native" /* 1187 */;
-import native2 from "native" /* 5377 */;
+import native2 from "native" /* 5367 */;
 import react from "react" /* 19 */;
 import VoicePanelDockConstants from "VoicePanelDockConstants" /* 12009 */;
 import Fragment from "Fragment" /* 21 */;
-import GuildsBarActivityIndicator from "GuildsBarActivityIndicator" /* 19106 */;
+import GuildsBarActivityIndicator from "GuildsBarActivityIndicator" /* 19108 */;
 import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let obj2;
 let size;
 let tmp;
 const _mod1708 = tmp(1708);
-const timing_timing = tmp(5548);
+const timing_timing = tmp(5538);
 function StreamBadge(progress) {
   let items1;
   let tmp3Result;
@@ -226,7 +226,7 @@ export default function VoicePanelDockBadgedIcon(streaming) {
   }, items4);
   let obj = { style: tmp.clip, animatedProps, children };
   const items5 = [closure_5(tmp2(9503).ClipViewAnimated, obj), ];
-  const TransitionItem = tmp2(5377).TransitionItem;
+  const TransitionItem = tmp2(5367).TransitionItem;
   let obj2 = { children: items5 };
   items5[1] = closure_5(TransitionItem, { item: streaming, renderItem: callback });
   return closure_7(RoundedRect, obj2);

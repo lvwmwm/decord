@@ -1,14 +1,14 @@
 // Module ID: 7699
 // Function ID: 7700
 // Name: DesktopNativeUtils
-// Dependencies: [32, 5, 1072, 38, 5543, 1380, 510, 7700, 7701, 4, 7702, 7703, 1381, 1285, 6076, 2]
+// Dependencies: [32, 5, 1072, 38, 5533, 1380, 510, 7700, 7701, 4, 7702, 7703, 1381, 1285, 6066, 2]
 
 // Module 7699 (DesktopNativeUtils)
 import logger_Logger from "logger/Logger" /* 4 */;
 import Storage3 from "Storage" /* 510 */;
 import Constants from "Constants" /* 1072 */;
-import flow_Client from "flow/Client" /* 5543 */;
-import discord_common_DiscordNative from "discord_common/DiscordNative" /* 6076 */;
+import flow_Client from "flow/Client" /* 5533 */;
+import discord_common_DiscordNative from "discord_common/DiscordNative" /* 6066 */;
 import DomainMigrationUtils from "DomainMigrationUtils" /* 7700 */;
 import GameDetectionDebugLevel from "GameDetectionDebugLevel" /* 7701 */;
 import IPCEvents from "IPCEvents" /* 7702 */;

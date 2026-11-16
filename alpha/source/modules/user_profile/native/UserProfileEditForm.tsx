@@ -1,7 +1,7 @@
 // Module ID: 17064
 // Function ID: 17065
 // Name: UserProfileEditForm
-// Dependencies: [19, 17, 8547, 10035, 7962, 1072, 5331, 1082, 17065, 21, 7808, 17066, 2174, 7918, 7937, 17067, 8541, 17080, 1113, 8601, 15805, 8607, 17082, 8544, 7643, 1655, 5913, 575, 11851, 17083, 11671, 14175, 8482, 9529, 14577, 9401, 8608, 10078, 504, 8552, 15844, 5336, 17088, 8590, 7994, 8593, 17089, 17090, 5929, 17091, 9398, 17092, 17105, 17110, 17116, 9399, 17120, 17121, 17125, 17129, 17134, 17135, 17138, 17139, 17171, 5377, 8600, 17175, 9531, 15467, 17182, 17183, 17185, 17186, 2]
+// Dependencies: [19, 17, 8547, 10035, 7962, 1072, 5331, 1082, 17065, 21, 7808, 17066, 2174, 7918, 7937, 17067, 8541, 17080, 1113, 8601, 15805, 8607, 17082, 8544, 7643, 1655, 5903, 575, 11851, 17083, 11671, 14175, 8482, 9529, 14577, 9401, 8608, 10078, 504, 8552, 15844, 5336, 17088, 8590, 7994, 8593, 17089, 17090, 5919, 17091, 9398, 17092, 17105, 17110, 17116, 9399, 17120, 17121, 17125, 17129, 17134, 17135, 17138, 17139, 17171, 5367, 8600, 17175, 9531, 15467, 17182, 17183, 17185, 17186, 2]
 // Exports: default
 
 // Module 17064 (UserProfileEditForm)
@@ -9,7 +9,7 @@ import nativeDefault from "native" /* 575 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import intl4 from "intl" /* 1113 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 7808 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7918 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
@@ -243,7 +243,7 @@ function UserProfileEditFormContent(currentUser) {
   const ref2 = isTryItOut.useRef(null);
   const ref3 = isTryItOut.useRef(null);
   const ref4 = isTryItOut.useRef(null);
-  const insets = autoFocusElement(5913)({ includeKeyboardHeight: true }).insets;
+  const insets = autoFocusElement(5903)({ includeKeyboardHeight: true }).insets;
   const PX_16 = autoFocusElement(575).space.PX_16;
   let obj5 = { insets, inputs: items, scrollViewRef: ref1 };
   let obj6 = { ref: ref2, offset: { type: "toRef", ref: ref3, extraOffset: PX_16 } };
@@ -465,7 +465,7 @@ function UserProfileEditFormContent(currentUser) {
   let obj14 = { theme, primaryColor, secondaryColor, children: tmp52(formContainer, obj15) };
   tmp52 = c17;
   obj15 = { ref, style: tmp4.container, onLayout, children: items9 };
-  const ThemeContextProvider = tmp5(5377).ThemeContextProvider;
+  const ThemeContextProvider = tmp5(5367).ThemeContextProvider;
   items9 = [c15(tmp(8600), { gradientHeight: num, bannerHeight: tmp34 }), , ];
   let obj16 = { ref: ref1, onScroll: tmp55, onContentSizeChange, onLayout: onScrollViewLayout, scrollEventThrottle: num3, stickyHeaderIndices: tmp58, stickyHeaderHiddenOnScroll: null != header, keyboardShouldPersistTaps: str5, children: items10 };
   tmp55 = undefined;
@@ -760,7 +760,7 @@ let closure_13 = UserSettingsConstants.ProfileCustomizationScrollPositions;
 let closure_14 = UserProfileEditConstants.UserProfileEditAutoFocusElement;
 ({ jsx: closure_15, Fragment: closure_16, jsxs: closure_17 } = Fragment);
 let closure_18 = [1];
-let obj = { assetOrigin: ProfilePendingImageTypes.AssetOriginTypes.NEW_ASSET, imageUri: AssetRegistryDefault, staticImageUri: AssetRegistryDefault, description: "", originalAsset: "__d" };
+let obj = { assetOrigin: ProfilePendingImageTypes.AssetOriginTypes.NEW_ASSET, imageUri: AssetRegistryDefault, staticImageUri: AssetRegistryDefault, description: "", originalAsset: "alignItems" };
 let closure_23 = { code: "(function UserProfileEditFormTsx1(){let[isScrolledAboveTryItOutSection,isBoardTabOnScreen]=this.__closure;return isScrolledAboveTryItOutSection.get()&&!isBoardTabOnScreen.get();})" };
 let result = size.fileFinishedImporting("modules/user_profile/native/UserProfileEditForm.tsx");
 

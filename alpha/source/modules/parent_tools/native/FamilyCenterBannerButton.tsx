@@ -1,7 +1,7 @@
 // Module ID: 17406
 // Function ID: 17407
 // Name: FamilyCenterBannerButton
-// Dependencies: [19, 17, 1388, 8740, 8741, 1072, 6902, 21, 5306, 575, 9616, 6014, 1113, 14224, 563, 17407, 1256, 17408, 5552, 17409, 2121, 6337, 5936, 12289, 2701, 17412, 6848, 1381, 14221, 1627, 8192, 16307, 2]
+// Dependencies: [19, 17, 1388, 8740, 8741, 1072, 6892, 21, 5306, 575, 9616, 6004, 1113, 14224, 563, 17407, 1256, 17408, 5542, 17409, 2121, 6327, 5926, 12289, 2701, 17412, 6838, 1381, 14221, 1627, 8192, 16307, 2]
 // Exports: FamilyCenterParentQRCodeButton, FamilyCenterTeenQRCodeButton
 
 // Module 17406 (FamilyCenterBannerButton)
@@ -12,9 +12,9 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1627 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
 import _modDef2701 from "module_2701" /* 2701 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import components_Button_Button from "components/Button/Button" /* 5936 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 6902 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 6892 */;
 import useUserLinks from "useUserLinks" /* 9616 */;
 import shareGuardianConnectLink from "shareGuardianConnectLink" /* 17408 */;
 import QrCodeIcon from "QrCodeIcon" /* 17412 */;

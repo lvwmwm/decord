@@ -1,15 +1,15 @@
-// Module ID: 19862
-// Function ID: 19863
+// Module ID: 19864
+// Function ID: 19865
 // Name: LaunchPadWrapper
-// Dependencies: [32, 19, 17, 12402, 1072, 21, 5306, 575, 13121, 1108, 5492, 19863, 11253, 1256, 19860, 5554, 6332, 7416, 1655, 19864, 6328, 1113, 6299, 19866, 2]
+// Dependencies: [32, 19, 17, 12402, 1072, 21, 5306, 575, 13121, 1108, 5482, 19865, 11253, 1256, 19862, 5544, 6322, 7416, 1655, 19866, 6318, 1113, 6289, 19868, 2]
 // Exports: default
 
-// Module 19862 (LaunchPadWrapper)
+// Module 19864 (LaunchPadWrapper)
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import HapticUtils from "HapticUtils" /* 5554 */;
+import HapticUtils from "HapticUtils" /* 5544 */;
 import LaunchPadConstants from "LaunchPadConstants" /* 12402 */;
-import LaunchPadPullTabCache from "LaunchPadPullTabCache" /* 19860 */;
+import LaunchPadPullTabCache from "LaunchPadPullTabCache" /* 19862 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -109,7 +109,7 @@ export default function LaunchPadWrapper(launchPadType) {
         const tmp5 = closure_3;
         if (tmp5) {
           const tmp2Result = HapticUtils;
-          const result1 = tmp2Result.triggerHapticFeedback(tmp2(5554).HapticFeedbackTypes.IMPACT_LIGHT);
+          const result1 = tmp2Result.triggerHapticFeedback(tmp2(5544).HapticFeedbackTypes.IMPACT_LIGHT);
         }
       }
     }

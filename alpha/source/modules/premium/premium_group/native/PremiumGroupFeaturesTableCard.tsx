@@ -1,7 +1,7 @@
 // Module ID: 15358
 // Function ID: 15359
 // Name: PremiumGroupFeaturesTableCard
-// Dependencies: [17, 9435, 21, 5306, 575, 5929, 1113, 15359, 1187, 5893, 5303, 10962, 2]
+// Dependencies: [17, 9435, 21, 5306, 575, 5919, 1113, 15359, 1187, 5883, 5303, 10962, 2]
 // Exports: default
 
 // Module 15358 (PremiumGroupFeaturesTableCard)
@@ -10,8 +10,8 @@ import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import ColorUtils from "ColorUtils" /* 5303 */;
-import LinearGradientDefault from "LinearGradient" /* 5893 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import LinearGradientDefault from "LinearGradient" /* 5883 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import ColorConstants from "ColorConstants" /* 9435 */;
 import PremiumGroupWordmarkDefault from "PremiumGroupWordmark" /* 10962 */;
 import usePremiumGroupFeaturesTableCardTextDefault from "usePremiumGroupFeaturesTableCardText" /* 15359 */;

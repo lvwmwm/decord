@@ -1,7 +1,7 @@
 // Module ID: 17756
 // Function ID: 17757
 // Name: QuestContextMenu
-// Dependencies: [109, 19, 8808, 1072, 21, 7988, 7421, 1113, 10131, 504, 5341, 10168, 10156, 8829, 1380, 6048, 10128, 10170, 8834, 5315, 17714, 5345, 10133, 8393, 17688, 6033, 8831, 7943, 7738, 10135, 10138, 9148, 2]
+// Dependencies: [109, 19, 8808, 1072, 21, 7988, 7421, 1113, 10131, 504, 6957, 10168, 10156, 8829, 1380, 6038, 10128, 10170, 8834, 5315, 17714, 6961, 10133, 8393, 17688, 6023, 8831, 7943, 7738, 10135, 10138, 9148, 2]
 
 // Module 17756 (QuestContextMenu)
 import Fragment from "Fragment" /* 21 */;
@@ -9,10 +9,10 @@ import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5315 */;
-import QuestTypes from "QuestTypes" /* 5341 */;
-import AdCreativeType from "AdCreativeType" /* 5345 */;
-import CopyIcon from "CopyIcon" /* 6033 */;
-import parseURLDefault from "parseURL" /* 6048 */;
+import CopyIcon from "CopyIcon" /* 6023 */;
+import parseURLDefault from "parseURL" /* 6038 */;
+import QuestTypes from "QuestTypes" /* 6957 */;
+import AdCreativeType from "AdCreativeType" /* 6961 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7421 */;
 import CheckmarkLargeIcon2 from "CheckmarkLargeIcon" /* 7738 */;
 import IconButton2 from "IconButton" /* 7988 */;

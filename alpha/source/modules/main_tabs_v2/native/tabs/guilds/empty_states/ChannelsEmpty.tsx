@@ -1,18 +1,18 @@
-// Module ID: 18974
-// Function ID: 18975
+// Module ID: 18976
+// Function ID: 18977
 // Name: ChannelsEmpty
-// Dependencies: [19, 17, 5238, 1072, 21, 5306, 5929, 575, 563, 8404, 8143, 17703, 8108, 1187, 18975, 1113, 6020, 18976, 5937, 2]
+// Dependencies: [19, 17, 5238, 1072, 21, 5306, 5919, 575, 563, 8404, 8143, 17703, 8108, 1187, 18977, 1113, 6010, 18978, 5927, 2]
 
-// Module 18974 (ChannelsEmpty)
+// Module 18976 (ChannelsEmpty)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 8143 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8404 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18975 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 18976 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18977 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 18978 */;
 import react from "react" /* 19 */;
 import PermissionStore from "PermissionStore" /* 5238 */;
 import Fragment from "Fragment" /* 21 */;
@@ -92,17 +92,17 @@ const memoResult = react.memo(function ChannelsEmpty(guild) {
   const obj10 = { color: "mobile-text-heading-primary", variant: "heading-sm/semibold", style: items7, children: intl2.string(guild(1113).t.o4s29v) };
   items7 = [, ];
   ({ text: arr8[0], headerText: arr8[1] } = tmp);
-  const Text = tmp2(5929).Text;
+  const Text = tmp2(5919).Text;
   intl2 = tmp2(1113).intl;
   items6[1] = closure_7(Text, obj10);
   const obj11 = { color: "text-default", variant: "body-md/medium", style: tmp.text, children: intl3.string(guild(1113).t.iypvFu) };
-  const Text2 = tmp2(5929).Text;
+  const Text2 = tmp2(5919).Text;
   intl3 = tmp2(1113).intl;
   items6[2] = closure_7(Text2, obj11);
   if (canCreateChannel) {
     const obj12 = { style: tmp.buttonWrapper, children: closure_7(BaseTextButton, obj13) };
     obj13 = { shrink: true, size: "md", pillStyle: tmp.buttonPill, text: intl4.string(guild(1113).t["63PyJQ"]), onPress: callback1 };
-    BaseTextButton = tmp2(5937).BaseTextButton;
+    BaseTextButton = tmp2(5927).BaseTextButton;
     intl4 = tmp2(1113).intl;
     canCreateChannel = tmp11(tmp8, obj12);
   }

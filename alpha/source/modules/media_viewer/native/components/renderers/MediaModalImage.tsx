@@ -1,11 +1,11 @@
 // Module ID: 15228
 // Function ID: 15229
 // Name: MediaModalImage
-// Dependencies: [19, 21, 1380, 15225, 15226, 6020, 15227, 2]
+// Dependencies: [19, 21, 1380, 15225, 15226, 6010, 15227, 2]
 
 // Module 15228 (MediaModalImage)
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import useMediaLoadingDefault from "useMediaLoading" /* 15225 */;
 import MediaModalSpoilerOverlayDefault from "MediaModalSpoilerOverlay" /* 15227 */;
 import react from "react" /* 19 */;

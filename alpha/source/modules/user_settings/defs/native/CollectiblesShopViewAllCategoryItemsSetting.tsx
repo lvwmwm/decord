@@ -1,9 +1,9 @@
-// Module ID: 18533
-// Function ID: 18534
+// Module ID: 18535
+// Function ID: 18536
 // Name: CollectiblesShopViewAllCategoryItemsSetting
-// Dependencies: [1072, 12406, 17372, 18534, 2]
+// Dependencies: [1072, 12406, 17372, 18536, 2]
 
-// Module 18533 (CollectiblesShopViewAllCategoryItemsSetting)
+// Module 18535 (CollectiblesShopViewAllCategoryItemsSetting)
 import Constants from "Constants" /* 1072 */;
 import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 17372 */;
 import SettingBuilders from "SettingBuilders" /* 12406 */;

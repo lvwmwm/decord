@@ -1,13 +1,13 @@
 // Module ID: 11387
 // Function ID: 11388
 // Name: useStickerPickerListData
-// Dependencies: [19, 11360, 11244, 1228, 11270, 11359, 12, 1113, 6793, 11259, 2]
+// Dependencies: [19, 11360, 11244, 1228, 11270, 11359, 12, 1113, 6783, 11259, 2]
 // Exports: default
 
 // Module 11387 (useStickerPickerListData)
 import _modDef12 from "module_12" /* 12 */;
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1228 */;
-import StickersTypes from "StickersTypes" /* 6793 */;
+import StickersTypes from "StickersTypes" /* 6783 */;
 import PremiumUpsellSectionDivider from "PremiumUpsellSectionDivider" /* 11270 */;
 import StickerPickerStore from "StickerPickerStore" /* 11360 */;
 import react from "react" /* 19 */;

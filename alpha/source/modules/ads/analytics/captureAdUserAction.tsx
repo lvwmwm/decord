@@ -1,14 +1,14 @@
 // Module ID: 10135
 // Function ID: 10136
 // Name: captureAdUserAction
-// Dependencies: [5, 8808, 1072, 5345, 8825, 8804, 8834, 8840, 1256, 1269, 1380, 8781, 10136, 8835, 8816, 10138, 2]
+// Dependencies: [5, 8808, 1072, 6961, 8825, 8804, 8834, 8840, 1256, 1269, 1380, 8781, 10136, 8835, 8816, 10138, 2]
 // Exports: captureAdUserAction
 
 // Module 10135 (captureAdUserAction)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import AdCreativeType from "AdCreativeType" /* 5345 */;
+import AdCreativeType from "AdCreativeType" /* 6961 */;
 import getDeviceMetadataDefault from "getDeviceMetadata" /* 8781 */;
 import QuestDataUtils from "QuestDataUtils" /* 8804 */;
 import getQuestLogger from "getQuestLogger" /* 8816 */;

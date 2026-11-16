@@ -22,8 +22,8 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let unpackModuleId;
-const f105627 = (disabled) => !disabled.disabled;
-const f105628 = (item) => Object.assign(item, Object.assign({ disabled: 0 }));
+const f105640 = (disabled) => !disabled.disabled;
+const f105641 = (item) => Object.assign(item, Object.assign({ disabled: 0 }));
 ({ ConnectionFeedbackOption: c3, AudioFeedbackOption: closure_4, VideoFeedbackOption: hasOwnProperty, VideoBackgroundFeedbackOption: metroRequire, StreamFeedbackOption: metroImportDefault, FeedbackOptionVariant: metroImportAll, FeedbackType: c9, MAX_REPRESENTABLE_DATE: c10, PeopleFeedbackOption: unpackModuleId } = Constants);
 const AnalyticEvents = Constants2.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/feedback/FeedbackUtils.tsx");
@@ -80,8 +80,8 @@ export function getConnectionFeedbackOptions() {
   const obj6 = { value: constants.CUTTING, variant: metroImportAll.SOMEONE, label: intl6.string(_modDef2965.K5vYQA) };
   intl6 = intl20.intl;
   items[5] = obj6;
-  const found = items.filter(f105627);
-  return found.map(f105628);
+  const found = items.filter(f105640);
+  return found.map(f105641);
 }
 export function getAudioFeedbackOptions(isMobile) {
   let intl;
@@ -137,8 +137,8 @@ export function getAudioFeedbackOptions(isMobile) {
   const obj13 = { value: constants2.NO_GAME_AUDIO, variant: metroImportAll.SELF, label: intl13.string(_modDef2965["2IG95D"]) };
   intl13 = intl20.intl;
   items[12] = obj13;
-  const found = items.filter(f105627);
-  return found.map(f105628);
+  const found = items.filter(f105640);
+  return found.map(f105641);
 }
 export function getVideoFeedbackOptions() {
   let intl;
@@ -165,8 +165,8 @@ export function getVideoFeedbackOptions() {
   const obj6 = { value: hasOwnProperty.DESYNC, variant: metroImportAll.UNSPECIFIED, label: intl6.string(_modDef2965.vRDE5O) };
   intl6 = intl20.intl;
   items[5] = obj6;
-  const found = items.filter(f105627);
-  return found.map(f105628);
+  const found = items.filter(f105640);
+  return found.map(f105641);
 }
 export function getVideoBackgroundFeedbackOptions() {
   let intl;
@@ -185,8 +185,8 @@ export function getVideoBackgroundFeedbackOptions() {
   const obj4 = { value: metroRequire.LAG_ON_MOVEMENT, variant: metroImportAll.SELF, label: intl4.string(_modDef2965["Gg/Y1X"]) };
   intl4 = intl20.intl;
   items[3] = obj4;
-  const found = items.filter(f105627);
-  return found.map(f105628);
+  const found = items.filter(f105640);
+  return found.map(f105641);
 }
 export function getStreamFeedbackOptions(isStreamer) {
   let intl;
@@ -266,14 +266,14 @@ export function getStreamFeedbackOptions(isStreamer) {
   const obj19 = { value: metroImportDefault.DESYNC, variant: metroImportAll.SOMEONE, label: intl19.string(_modDef2965.JfAvQp), disabled: isStreamer };
   intl19 = intl20.intl;
   items[18] = obj19;
-  const found = items.filter(f105627);
-  return found.map(f105628);
+  const found = items.filter(f105640);
+  return found.map(f105641);
 }
 export function getPeopleFeedbackOptions() {
   let intl;
   const obj = { value: unpackModuleId.TOXIC_OR_INAPPROPRIATE, variant: metroImportAll.OTHERS, label: intl.string(_modDef2965.PLBRzF) };
   intl = intl20.intl;
   const items = [obj];
-  const found = items.filter(f105627);
-  return found.map(f105628);
+  const found = items.filter(f105640);
+  return found.map(f105641);
 }

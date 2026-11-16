@@ -14,7 +14,7 @@ let result = size.fileFinishedImporting("modules/conjure/agent_activity/ConjureT
 
 export const MAX_SHOWN_AGENTS = 3;
 export function runningTodoAgents(tasks) {
-  let obj2;
+  let obj;
   let taskId;
   const items = [];
   const iter = tasks[Symbol.iterator]();
@@ -22,14 +22,14 @@ export function runningTodoAgents(tasks) {
   while (iter !== undefined) {
     let tmp2 = nextResult;
     if ("running" === nextResult.task.status) {
-      let obj = { key: tmp2.taskId, name: taskId, task: obj2.describeNode(tmp2.task), todoId: tmp2.task.todoId };
+      let obj2 = { key: tmp2.taskId, name: taskId, task: obj.describeNode(tmp2.task), todoId: tmp2.task.todoId };
       taskId = tmp2.task.helperName;
       let push = items.push;
       if (taskId == null) {
         taskId = tmp2.taskId;
       }
-      obj2 = ConjureTimelineTree;
-      let arr = push(obj);
+      obj = ConjureTimelineTree;
+      let arr = push(obj2);
     }
     continue;
   }

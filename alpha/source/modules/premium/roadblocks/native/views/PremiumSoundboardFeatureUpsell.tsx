@@ -1,10 +1,10 @@
-// Module ID: 19225
-// Function ID: 19226
+// Module ID: 19227
+// Function ID: 19228
 // Name: PremiumSoundboardFeatureUpsell
 // Dependencies: [19, 17, 21, 5306, 575, 1630, 1092, 11294, 9037, 2]
 // Exports: default
 
-// Module 19225 (PremiumSoundboardFeatureUpsell)
+// Module 19227 (PremiumSoundboardFeatureUpsell)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

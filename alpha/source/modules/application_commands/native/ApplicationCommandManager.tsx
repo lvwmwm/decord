@@ -1,15 +1,15 @@
 // Module ID: 14822
 // Function ID: 14823
 // Name: ApplicationCommandManager
-// Dependencies: [32, 8725, 9007, 1072, 6346, 1626, 13793, 14602, 9005, 8724, 11405, 5985, 11398, 2119, 11153, 5503, 1628, 13490, 12, 13437, 14603, 5958, 13492, 13438, 5554, 6067, 11233, 2]
+// Dependencies: [32, 8725, 9007, 1072, 6336, 1626, 13793, 14602, 9005, 8724, 11405, 5975, 11398, 2119, 11153, 5493, 1628, 13490, 12, 13437, 14603, 5948, 13492, 13438, 5544, 6057, 11233, 2]
 
 // Module 14822 (ApplicationCommandManager)
 import _modDef12 from "module_12" /* 12 */;
 import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1626 */;
 import Server from "Server" /* 2119 */;
-import HapticUtils from "HapticUtils" /* 5554 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5985 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6067 */;
+import HapticUtils from "HapticUtils" /* 5544 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5975 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6057 */;
 import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8724 */;
 import DraftStore2 from "DraftStore" /* 8725 */;
 import ApplicationCommandActionCreators from "ApplicationCommandActionCreators" /* 9005 */;
@@ -24,7 +24,7 @@ import ChatInputCommandOptionParser from "ChatInputCommandOptionParser" /* 14602
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ApplicationCommandStore from "ApplicationCommandStore" /* 9007 */;
 import Constants from "Constants" /* 1072 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6346 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6336 */;
 import size from "module_2" /* 2 */;
 
 const ApplicationCommandActionCreatorsAll = ApplicationCommandActionCreators;
@@ -1193,7 +1193,7 @@ class ApplicationCommandManager {
         let focused2 = editId.focused;
         const getCurrentOption = self.getCurrentOption;
         if (!focused2) {
-          const obj5 = obj11(5503);
+          const obj5 = obj11(5493);
           const keyboardType = obj5.getKeyboardType();
           focused2 = keyboardType !== obj11(1628).KeyboardTypes.SYSTEM;
         }
@@ -1499,7 +1499,7 @@ class ApplicationCommandManager {
       }
       let tmp132 = tmp91 && null != activeOption && activeOption.type !== tmp105(2119).ApplicationCommandOptionType.ATTACHMENT;
       if (tmp132) {
-        const tmp105Result2 = obj11(5503);
+        const tmp105Result2 = obj11(5493);
         const keyboardType1 = tmp105Result2.getKeyboardType();
         tmp132 = keyboardType1 !== tmp105(1628).KeyboardTypes.SYSTEM;
       }

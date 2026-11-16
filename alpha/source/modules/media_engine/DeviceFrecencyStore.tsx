@@ -1,17 +1,17 @@
-// Module ID: 6078
-// Function ID: 6079
+// Module ID: 6068
+// Function ID: 6069
 // Name: DeviceFrecencyStore
-// Dependencies: [2133, 1388, 6075, 6079, 6087, 504, 12, 572, 2]
+// Dependencies: [2133, 1388, 6065, 6069, 6077, 504, 12, 572, 2]
 
-// Module 6078 (DeviceFrecencyStore)
+// Module 6068 (DeviceFrecencyStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import TimeUtils from "TimeUtils" /* 6079 */;
-import FrecencyDefault from "Frecency" /* 6087 */;
+import TimeUtils from "TimeUtils" /* 6069 */;
+import FrecencyDefault from "Frecency" /* 6077 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
 import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 6075 */;
+import Constants from "Constants" /* 6065 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

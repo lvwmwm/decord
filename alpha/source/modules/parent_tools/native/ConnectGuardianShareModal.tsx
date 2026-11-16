@@ -1,15 +1,15 @@
-// Module ID: 20367
-// Function ID: 20368
+// Module ID: 20370
+// Function ID: 20371
 // Name: ConnectGuardianShareModal
-// Dependencies: [19, 17, 8740, 21, 5306, 575, 1113, 2701, 6014, 6848, 14224, 563, 17410, 8208, 8210, 6337, 5929, 17411, 7418, 7493, 12523, 2]
+// Dependencies: [19, 17, 8740, 21, 5306, 575, 1113, 2701, 6004, 6838, 14224, 563, 17410, 8208, 8210, 6327, 5919, 17411, 7418, 7493, 12523, 2]
 // Exports: default
 
-// Module 20367 (ConnectGuardianShareModal)
+// Module 20370 (ConnectGuardianShareModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import _modDef2701 from "module_2701" /* 2701 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import NavigatorHeader from "NavigatorHeader" /* 7493 */;
 import Modal2 from "Modal" /* 12523 */;
 import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 17410 */;
@@ -56,22 +56,22 @@ function ConnectGuardianShareScreen() {
   const ModalScreen = getLinkCode(8208).ModalScreen;
   const ModalContent = getLinkCode(8210).ModalContent;
   const obj5 = { spacing: nativeDefault.space.PX_40, children: null };
-  const Stack = getLinkCode(6337).Stack;
+  const Stack = getLinkCode(6327).Stack;
   const obj6 = { spacing: nativeDefault.space.PX_8, children: items2 };
-  const Stack2 = getLinkCode(6337).Stack;
+  const Stack2 = getLinkCode(6327).Stack;
   const obj7 = { style: tmp.title, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: intl.string(_modDef2701.ITlV6p) };
-  const Text = getLinkCode(5929).Text;
+  const Text = getLinkCode(5919).Text;
   intl = getLinkCode(1113).intl;
   items2 = [closure_6(Text, obj7), ];
   const obj8 = { style: tmp.body, variant: "body-sm/medium", color: "text-muted", children: intl2.format(_modDef2701.F4GT2S, { link: "https://support.discord.com/hc/articles/14155060633623" }) };
-  const Text2 = getLinkCode(5929).Text;
+  const Text2 = getLinkCode(5919).Text;
   intl2 = getLinkCode(1113).intl;
   items2[1] = closure_6(Text2, obj8);
   const items3 = [closure_7(Stack2, obj6), ];
   const obj9 = { spacing: nativeDefault.space.PX_24, style: tmp.cardSection, children: null };
-  const Stack3 = getLinkCode(6337).Stack;
+  const Stack3 = getLinkCode(6327).Stack;
   const obj10 = { style: tmp.qrLabel, variant: "body-md/semibold", color: "mobile-text-heading-primary", children: intl3.string(_modDef2701.pojgfk) };
-  const Text3 = getLinkCode(5929).Text;
+  const Text3 = getLinkCode(5919).Text;
   intl3 = getLinkCode(1113).intl;
   const items4 = [closure_6(Text3, obj10), ];
   if (null != stateFromStores) {

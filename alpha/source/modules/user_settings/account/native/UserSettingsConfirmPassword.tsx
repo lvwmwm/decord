@@ -1,7 +1,7 @@
 // Module ID: 7811
 // Function ID: 7812
 // Name: UserSettingsConfirmPassword
-// Dependencies: [5, 32, 19, 17, 1388, 1072, 21, 5306, 575, 7812, 504, 7813, 6757, 1242, 1113, 7815, 5929, 7619, 7649, 5936, 2]
+// Dependencies: [5, 32, 19, 17, 1388, 1072, 21, 5306, 575, 7812, 504, 7813, 6747, 1242, 1113, 7815, 5919, 7619, 7649, 5926, 2]
 // Exports: UserSettingsConfirmPasswordWrapped
 
 // Module 7811 (UserSettingsConfirmPassword)
@@ -32,8 +32,8 @@ let obj3;
 let tmp3;
 let unpackModuleId;
 const intl5 = tmp3(1113);
-const Text_Text = tmp3(5929);
-const components_Button_Button = tmp3(5936);
+const Text_Text = tmp3(5919);
+const components_Button_Button = tmp3(5926);
 const TextInput_TextInput = tmp3(7619);
 let _slicedToArray = _slicedToArray_mod;
 ({ View: metroRequire, ScrollView: metroImportDefault } = react_native);

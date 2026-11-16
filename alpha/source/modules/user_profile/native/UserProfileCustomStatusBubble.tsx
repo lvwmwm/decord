@@ -1,7 +1,7 @@
 // Module ID: 9531
 // Function ID: 9532
 // Name: UserProfileCustomStatusBubble
-// Dependencies: [32, 19, 17, 7962, 1391, 1083, 21, 1380, 5306, 575, 8263, 5131, 6020, 1414, 5929, 7894, 5902, 8545, 9532, 6061, 5552, 9535, 7937, 1113, 7428, 13466, 2]
+// Dependencies: [32, 19, 17, 7962, 1391, 1083, 21, 1380, 5306, 575, 8263, 5131, 6010, 1414, 5919, 7894, 5892, 8545, 9532, 6051, 5542, 9535, 7937, 1113, 7428, 13466, 2]
 // Exports: default
 
 // Module 9531 (UserProfileCustomStatusBubble)
@@ -10,9 +10,9 @@ import Constants from "Constants" /* 1083 */;
 import EmojiConstants from "EmojiConstants" /* 1391 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
 import UserSettings from "UserSettings" /* 5131 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import EmojiDefault from "Emoji" /* 7894 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
 import Constants2 from "Constants" /* 7962 */;

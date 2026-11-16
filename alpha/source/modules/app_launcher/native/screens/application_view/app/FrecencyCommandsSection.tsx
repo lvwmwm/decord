@@ -1,14 +1,14 @@
 // Module ID: 13483
 // Function ID: 13484
 // Name: FrecencyCommandsSection
-// Dependencies: [19, 17, 1072, 21, 5306, 13460, 13484, 6067, 12579, 5929, 1113, 5985, 2]
+// Dependencies: [19, 17, 1072, 21, 5306, 13460, 13484, 6057, 12579, 5919, 1113, 5975, 2]
 // Exports: default
 
 // Module 13483 (FrecencyCommandsSection)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5985 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6067 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5975 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6057 */;
 import AppLauncherTypes from "AppLauncherTypes" /* 12579 */;
 import AppDetailContent from "AppDetailContent" /* 13460 */;
 import useFilterAndSortToOnlyFrecentCommandsDefault from "useFilterAndSortToOnlyFrecentCommands" /* 13484 */;
@@ -58,7 +58,7 @@ export default function FrecencyCommandsSection(context) {
     let obj = { style: tmp.container, children: items1 };
     const obj2 = { style: tmp.header, children: arr(Heading, obj3) };
     obj3 = { variant: "body-md/medium", color: "text-default", children: intl.string(context(1113).t.acSE0h) };
-    Heading = context(5929).Heading;
+    Heading = context(5919).Heading;
     intl = context(1113).intl;
     items1 = [
       arr(View, obj2),

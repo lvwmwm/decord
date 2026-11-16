@@ -1,7 +1,7 @@
 // Module ID: 10950
 // Function ID: 10951
 // Name: FavoritesSpotIllustration
-// Dependencies: [19, 21, 10951, 10952, 10953, 7755, 6020, 2]
+// Dependencies: [19, 21, 10951, 10952, 10953, 7755, 6010, 2]
 // Exports: FavoritesSpotIllustration
 
 // Module 10950 (FavoritesSpotIllustration)

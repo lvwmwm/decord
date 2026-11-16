@@ -1,14 +1,14 @@
 // Module ID: 15468
 // Function ID: 15469
 // Name: useTieredTenureBadgeClickHandler
-// Dependencies: [19, 1388, 1390, 8549, 1072, 7962, 15469, 15288, 7361, 504, 8604, 5552, 15286, 2121, 15286, 1256, 2]
+// Dependencies: [19, 1388, 1390, 8549, 1072, 7962, 15469, 15288, 7361, 504, 8604, 5542, 15286, 2121, 15286, 1256, 2]
 // Exports: useTieredTenureBadgeClickHandler
 
 // Module 15468 (useTieredTenureBadgeClickHandler)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import Constants2 from "Constants" /* 7962 */;
 import Constants3 from "Constants" /* 8549 */;
 import openUserSettings from "openUserSettings" /* 8604 */;

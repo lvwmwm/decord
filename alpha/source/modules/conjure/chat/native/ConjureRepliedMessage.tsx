@@ -1,7 +1,7 @@
 // Module ID: 13620
 // Function ID: 13621
 // Name: ConjureRepliedMessage
-// Dependencies: [19, 17, 21, 13610, 5306, 575, 12446, 5372, 13304, 13621, 1113, 4131, 13622, 1187, 5929, 13628, 2]
+// Dependencies: [19, 17, 21, 13610, 5306, 575, 12446, 5362, 13304, 13621, 1113, 4131, 13622, 1187, 5919, 13628, 2]
 // Exports: default
 
 // Module 13620 (ConjureRepliedMessage)
@@ -46,7 +46,7 @@ export default function ConjureRepliedMessage(replied) {
   const tmp = closure_8();
   let obj = replied(12446);
   const messageAuthorUser = obj.useMessageAuthorUser(replied.userId);
-  const obj2 = replied(5372);
+  const obj2 = replied(5362);
   let str = obj2.useName(messageAuthorUser);
   if (str == null) {
     str = "";
@@ -83,10 +83,10 @@ export default function ConjureRepliedMessage(replied) {
   }
   items1[1] = tmp12Result;
   const obj7 = { variant: "body-xs/semibold", color: "text-default", style: tmp.name, lineClamp: 1, children: str };
-  items1[2] = closure_6(replied(5929).Text, obj7);
+  items1[2] = closure_6(replied(5919).Text, obj7);
   let tmp12Result2 = null;
   const obj8 = { variant: "body-xs/medium", color: "interactive-text-default", style: tmp.content, lineClamp: 1, children: items2 };
-  const Text = tmp2(5929).Text;
+  const Text = tmp2(5919).Text;
   if (null != memo) {
     const obj9 = { label: memo.label, variant: "body-xs/medium" };
     tmp12Result2 = tmp12(ConjureSelectedMentionDefault, obj9);

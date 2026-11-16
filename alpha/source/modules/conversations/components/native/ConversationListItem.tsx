@@ -1,12 +1,12 @@
 // Module ID: 9154
 // Function ID: 9155
 // Name: ConversationListItem
-// Dependencies: [19, 17, 8745, 5957, 1072, 21, 5306, 575, 1502, 504, 9121, 9139, 9124, 7445, 5929, 1113, 7533, 5893, 9155, 9156, 9158, 2]
+// Dependencies: [19, 17, 8745, 5947, 1072, 21, 5306, 575, 1502, 504, 9121, 9139, 9124, 7445, 5919, 1113, 7533, 5883, 9155, 9156, 9158, 2]
 
 // Module 9154 (ConversationListItem)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import ConversationConstants from "ConversationConstants" /* 5957 */;
+import ConversationConstants from "ConversationConstants" /* 5947 */;
 import ConversationsActionCreators from "ConversationsActionCreators" /* 9121 */;
 import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9124 */;
 import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 9139 */;

@@ -1,7 +1,7 @@
 // Module ID: 14714
 // Function ID: 14715
 // Name: GuildDirectoryEditDescriptionTemplate
-// Dependencies: [5, 32, 19, 17, 14709, 14702, 21, 5306, 504, 6758, 7859, 1113, 7745, 7747, 5936, 2]
+// Dependencies: [5, 32, 19, 17, 14709, 14702, 21, 5306, 504, 6748, 7859, 1113, 7745, 7747, 5926, 2]
 // Exports: default
 
 // Module 14714 (GuildDirectoryEditDescriptionTemplate)

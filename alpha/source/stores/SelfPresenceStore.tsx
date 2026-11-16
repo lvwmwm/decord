@@ -1,15 +1,15 @@
 // Module ID: 7316
 // Function ID: 7317
 // Name: SelfPresenceStore
-// Dependencies: [5154, 7290, 1231, 5155, 2159, 7041, 2163, 7317, 6068, 6073, 1072, 6069, 8531, 5131, 15989, 10860, 1345, 12, 504, 572, 2]
+// Dependencies: [5154, 7290, 1231, 5155, 2159, 7041, 2163, 7317, 6058, 6063, 1072, 6059, 8531, 5131, 15989, 10860, 1345, 12, 504, 572, 2]
 
 // Module 7316 (SelfPresenceStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import _modDef1345 from "module_1345" /* 1345 */;
 import UserSettings from "UserSettings" /* 5131 */;
-import PresenceStore2 from "PresenceStore" /* 6068 */;
-import ActivityTypes from "ActivityTypes" /* 6069 */;
+import PresenceStore2 from "PresenceStore" /* 6058 */;
+import ActivityTypes from "ActivityTypes" /* 6059 */;
 import LibraryApplicationUtils from "LibraryApplicationUtils" /* 8531 */;
 import isGuildSpaceEmbeddedActivityDefault from "isGuildSpaceEmbeddedActivity" /* 15989 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
@@ -20,7 +20,7 @@ import DetectableGameStore from "DetectableGameStore" /* 2159 */;
 import IdleStore from "IdleStore" /* 7041 */;
 import LibraryApplicationStore from "LibraryApplicationStore" /* 2163 */;
 import LocalActivityStore from "LocalActivityStore" /* 7317 */;
-import SessionsStore from "SessionsStore" /* 6073 */;
+import SessionsStore from "SessionsStore" /* 6063 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -98,7 +98,7 @@ function shouldShowActivity(type) {
       return result;
     } else {
       if (ActivityTypes.ActivityTypes.STREAMING !== type) {
-        const WATCHING = tmp3(6069).ActivityTypes.WATCHING;
+        const WATCHING = tmp3(6059).ActivityTypes.WATCHING;
       }
       let result1 = null == type.application_id;
       if (!result1) {

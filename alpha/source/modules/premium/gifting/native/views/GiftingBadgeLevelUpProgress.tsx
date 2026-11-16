@@ -1,7 +1,7 @@
 // Module ID: 11820
 // Function ID: 11821
 // Name: GiftingBadgeLevelUpProgress
-// Dependencies: [19, 17, 8547, 21, 5306, 575, 11678, 11680, 5929, 1113, 2797, 2]
+// Dependencies: [19, 17, 8547, 21, 5306, 575, 11678, 11680, 5919, 1113, 2797, 2]
 // Exports: default
 
 // Module 11820 (GiftingBadgeLevelUpProgress)
@@ -85,7 +85,7 @@ export default function GiftingBadgeLevelUpProgress(style) {
   items3 = [metroRequire(View, obj2), ];
   const obj8 = { style: tmp.labels, children: hasOwnProperty(Text, obj9) };
   obj9 = { variant: "body-xs/normal", color: "text-muted", children: intl.format(_modDef2797.iIpfQe, { count: progress, threshold: tmp7 }) };
-  Text = tmp2(5929).Text;
+  Text = tmp2(5919).Text;
   intl = tmp2(1113).intl;
   items3[1] = hasOwnProperty(View, obj8);
   return metroRequire(View, obj);

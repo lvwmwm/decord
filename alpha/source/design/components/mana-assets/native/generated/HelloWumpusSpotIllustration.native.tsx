@@ -1,7 +1,7 @@
 // Module ID: 15069
 // Function ID: 15070
 // Name: HelloWumpusSpotIllustration
-// Dependencies: [19, 21, 15070, 15071, 15072, 7755, 6020, 2]
+// Dependencies: [19, 21, 15070, 15071, 15072, 7755, 6010, 2]
 // Exports: HelloWumpusSpotIllustration
 
 // Module 15069 (HelloWumpusSpotIllustration)

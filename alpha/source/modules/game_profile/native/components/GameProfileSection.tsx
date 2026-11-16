@@ -1,14 +1,14 @@
 // Module ID: 10383
 // Function ID: 10384
 // Name: GameProfileSection
-// Dependencies: [19, 17, 21, 5306, 575, 10384, 5929, 5936, 1113, 7963, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 10384, 5919, 5926, 1113, 7963, 2]
 // Exports: GameProfileSectionSkeleton, default
 
 // Module 10383 (GameProfileSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import ChevronSmallRightIcon from "ChevronSmallRightIcon" /* 7963 */;
 import GameProfileSkeleton from "GameProfileSkeleton" /* 10384 */;
 import react from "react" /* 19 */;
@@ -54,7 +54,7 @@ export default function GameProfileSection(onPressViewAll) {
   let tmp4Result = null != onPressViewAll;
   if (tmp4Result) {
     const obj3 = { text: intl.string(intl2.t.budhsM), variant: "tertiary", size: "sm", icon: React3(ChevronSmallRightIcon.ChevronSmallRightIcon, { size: "sm" }), iconPosition: "end", onPress: onPressViewAll };
-    const Button = tmp5(5936).Button;
+    const Button = tmp5(5926).Button;
     intl = tmp5(1113).intl;
     tmp4Result = tmp4(Button, obj3);
   }

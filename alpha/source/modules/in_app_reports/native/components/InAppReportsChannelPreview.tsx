@@ -1,7 +1,7 @@
 // Module ID: 12280
 // Function ID: 12281
 // Name: InAppReportsChannelPreview
-// Dependencies: [19, 17, 5177, 21, 5306, 575, 504, 5303, 5929, 1113, 7720, 2]
+// Dependencies: [19, 17, 5177, 21, 5306, 575, 504, 5303, 5919, 1113, 7720, 2]
 // Exports: default
 
 // Module 12280 (InAppReportsChannelPreview)
@@ -45,7 +45,7 @@ export default function ChannelPreview(stageInstance) {
       const tmp2Result = stageInstance(5303);
       const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "body-xs/semibold", children: intl.string(stageInstance(1113).t.InbJ8x) };
       const hexWithOpacityResult = tmp2Result.hexWithOpacity(tmp.borderColor.color, 0.08);
-      const Text = tmp2(5929).Text;
+      const Text = tmp2(5919).Text;
       intl = tmp2(1113).intl;
       items1 = [closure_5(Text, obj3), ];
       const obj4 = { style: items2, children: items4 };
@@ -57,10 +57,10 @@ export default function ChannelPreview(stageInstance) {
       const tmp10 = GuildIconDefault;
       items3 = [closure_5(tmp10, obj7), ];
       const obj8 = { style: tmp.guildName, variant: "body-sm/medium", color: "text-default", children: stateFromStores.name };
-      items3[1] = closure_5(stageInstance(5929).Text, obj8);
+      items3[1] = closure_5(stageInstance(5919).Text, obj8);
       items4 = [closure_6(View, obj6), ];
       const obj9 = { style: tmp.topic, variant: "body-md/semibold", color: "mobile-text-heading-primary", children: stageInstance.topic };
-      items4[1] = closure_5(stageInstance(5929).Text, obj9);
+      items4[1] = closure_5(stageInstance(5919).Text, obj9);
       items1[1] = closure_6(View, obj4);
       return closure_6(View, obj2);
     }

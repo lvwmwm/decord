@@ -1,13 +1,13 @@
 // Module ID: 15699
 // Function ID: 15700
 // Name: UserProfileMutualGuilds
-// Dependencies: [19, 17, 8479, 21, 5306, 8545, 14931, 15700, 5552, 14930, 2121, 7231, 7428, 14946, 7720, 5929, 14933, 2]
+// Dependencies: [19, 17, 8479, 21, 5306, 8545, 14931, 15700, 5542, 14930, 2121, 7231, 7428, 14946, 7720, 5919, 14933, 2]
 // Exports: default
 
 // Module 15699 (UserProfileMutualGuilds)
 import react_native from "react-native" /* 17 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import Constants from "Constants" /* 8479 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -73,7 +73,7 @@ export default function UserProfileMutualGuilds(user) {
         const GuildIconPile = tmp2(14946).GuildIconPile;
         items = [closure_5(GuildIconPile, obj4), ];
         const obj5 = { variant: "body-sm/medium", color: "text-default", children: tmp4(14933)(mutualGuilds.length) };
-        const Text = tmp2(5929).Text;
+        const Text = tmp2(5919).Text;
         items[1] = closure_5(Text, obj5);
         return closure_5(View, obj2);
       }

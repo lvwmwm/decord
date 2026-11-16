@@ -1,15 +1,15 @@
 // Module ID: 15957
 // Function ID: 15958
 // Name: IntegrationTypeSelector
-// Dependencies: [19, 17, 21, 5306, 575, 1414, 5953, 6023, 1113, 10939, 6020, 5929, 13480, 7746, 7443, 1187, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 1414, 5943, 6013, 1113, 10939, 6010, 5919, 13480, 7746, 7443, 1187, 2]
 // Exports: default
 
 // Module 15957 (IntegrationTypeSelector)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5953 */;
-import UserPlusIcon from "UserPlusIcon" /* 6023 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5943 */;
+import UserPlusIcon from "UserPlusIcon" /* 6013 */;
 import ServerIcon from "ServerIcon" /* 10939 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

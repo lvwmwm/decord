@@ -1,7 +1,7 @@
 // Module ID: 7982
 // Function ID: 7983
 // Name: LazyAPIPromise
-// Dependencies: [5, 32, 19, 6757, 2]
+// Dependencies: [5, 32, 19, 6747, 2]
 // Exports: default
 
 // Module 7982 (LazyAPIPromise)

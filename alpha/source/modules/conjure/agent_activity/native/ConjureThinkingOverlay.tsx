@@ -1,7 +1,7 @@
 // Module ID: 13759
 // Function ID: 13760
 // Name: ConjureThinkingOverlay
-// Dependencies: [19, 17, 7321, 21, 5306, 575, 13760, 13290, 504, 13292, 7445, 11318, 5929, 1113, 4131, 2]
+// Dependencies: [19, 17, 7321, 21, 5306, 575, 13760, 13290, 504, 13292, 7445, 11318, 5919, 1113, 4131, 2]
 // Exports: default
 
 // Module 13759 (ConjureThinkingOverlay)
@@ -123,7 +123,7 @@ export default function ConjureThinkingOverlay(projectId) {
   const LightbulbIcon = tmp2(11318).LightbulbIcon;
   items2 = [closure_7(LightbulbIcon, obj6), ];
   const obj7 = { variant: "body-sm/semibold", color: "text-strong", children: intl.string(_modDef4131.XXYIeI) };
-  const Text = tmp2(5929).Text;
+  const Text = tmp2(5919).Text;
   intl = tmp2(1113).intl;
   items2[1] = closure_7(Text, obj7);
   items3 = [closure_8(closure_5, obj5), ];
@@ -133,7 +133,7 @@ export default function ConjureThinkingOverlay(projectId) {
     tmp7Result = tmp7(ThinkingScroll, obj8);
   } else {
     const obj9 = { variant: "body-sm/normal", color: "text-muted", children: intl2.string(_modDef4131.LfoD6c) };
-    const Text2 = tmp2(5929).Text;
+    const Text2 = tmp2(5919).Text;
     intl2 = tmp2(1113).intl;
     tmp7Result = tmp7(Text2, obj9);
   }

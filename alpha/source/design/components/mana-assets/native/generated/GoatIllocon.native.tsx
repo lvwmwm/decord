@@ -1,12 +1,12 @@
 // Module ID: 13660
 // Function ID: 13661
 // Name: GoatIllocon
-// Dependencies: [19, 21, 13661, 13662, 13663, 7755, 6020, 2]
+// Dependencies: [19, 21, 13661, 13662, 13663, 7755, 6010, 2]
 // Exports: GoatIllocon
 
 // Module 13660 (GoatIllocon)
 import Fragment from "Fragment" /* 21 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import react_native from "react-native" /* 7755 */;
 import _modDef13661 from "module_13661" /* 13661 */;
 import _modDef13662 from "module_13662" /* 13662 */;

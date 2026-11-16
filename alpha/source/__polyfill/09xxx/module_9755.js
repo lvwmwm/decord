@@ -1,10 +1,10 @@
 // Module ID: 9755
 // Function ID: 9756
-// Dependencies: [5357]
+// Dependencies: [5347]
 
 // Module 9755
-import module_5357 from "module_5357" /* 5357 */;
+import module_5347 from "module_5347" /* 5347 */;
 
-const point = { x: module_5357.number, y: module_5357.number };
+const point = { x: module_5347.number, y: module_5347.number };
 
-export default module_5357.shape(point);
+export default module_5347.shape(point);

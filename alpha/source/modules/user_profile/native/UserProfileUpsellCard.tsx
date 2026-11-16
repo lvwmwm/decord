@@ -1,13 +1,13 @@
 // Module ID: 17114
 // Function ID: 17115
 // Name: UserProfileUpsellCard
-// Dependencies: [19, 17, 7962, 9435, 21, 5306, 575, 1187, 9436, 5929, 5893, 1092, 2]
+// Dependencies: [19, 17, 7962, 9435, 21, 5306, 575, 1187, 9436, 5919, 5883, 1092, 2]
 // Exports: default
 
 // Module 17114 (UserProfileUpsellCard)
 import nativeDefault from "native" /* 575 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
-import LinearGradientDefault from "LinearGradient" /* 5893 */;
+import LinearGradientDefault from "LinearGradient" /* 5883 */;
 import Constants from "Constants" /* 7962 */;
 import ColorConstants from "ColorConstants" /* 9435 */;
 import react from "react" /* 19 */;

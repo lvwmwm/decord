@@ -1,15 +1,15 @@
 // Module ID: 13343
 // Function ID: 13344
 // Name: ConjureNativePreview
-// Dependencies: [32, 19, 17, 7019, 502, 5155, 7015, 2120, 13303, 7017, 1072, 7020, 21, 5306, 575, 7445, 5929, 13344, 13142, 504, 7339, 13297, 7396, 7349, 12743, 5913, 13345, 13346, 13347, 13355, 13359, 13361, 1113, 4131, 5936, 7357, 12146, 7394, 8134, 7874, 11976, 1380, 13365, 2]
+// Dependencies: [32, 19, 17, 7019, 502, 5155, 7015, 2120, 13303, 7017, 1072, 7020, 21, 5306, 575, 7445, 5919, 13344, 13142, 504, 7339, 13297, 7396, 7349, 12743, 5903, 13345, 13346, 13347, 13355, 13359, 13361, 1113, 4131, 5926, 7357, 12146, 7394, 8134, 7874, 11976, 1380, 13365, 2]
 // Exports: default
 
 // Module 13343 (ConjureNativePreview)
 import nativeDefault from "native" /* 575 */;
 import intl8 from "intl" /* 1113 */;
 import _modDef4131 from "module_4131" /* 4131 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import components_Button_Button from "components/Button/Button" /* 5936 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
 import FramesConstants from "FramesConstants" /* 7020 */;
 import conjurePreviewSurface from "conjurePreviewSurface" /* 7339 */;
 import leaveFrame from "leaveFrame" /* 7349 */;
@@ -409,7 +409,7 @@ function PreviewBot(projectId) {
     intl = tmp7(1113).intl;
     intl2 = tmp7(1113).intl;
     obj4 = { variant: "secondary", size: "sm", text: intl3.string(projectId(1113).t["5911Lb"]), onPress: callback };
-    Button = tmp7(5936).Button;
+    Button = tmp7(5926).Button;
     intl3 = tmp7(1113).intl;
     tmp28Result = closure_22(StatusCard, obj3);
   } else if (null == stateFromStores) {

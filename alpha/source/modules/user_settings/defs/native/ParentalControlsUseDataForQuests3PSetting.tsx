@@ -1,9 +1,9 @@
-// Module ID: 18600
-// Function ID: 18601
+// Module ID: 18602
+// Function ID: 18603
 // Name: ParentalControlsUseDataForQuests3PSetting
 // Dependencies: [8740, 9202, 9618, 17347, 17351, 12406, 1113, 2]
 
-// Module 18600 (ParentalControlsUseDataForQuests3PSetting)
+// Module 18602 (ParentalControlsUseDataForQuests3PSetting)
 import intl2 from "intl" /* 1113 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;
 import useSelectedTeen from "useSelectedTeen" /* 9618 */;

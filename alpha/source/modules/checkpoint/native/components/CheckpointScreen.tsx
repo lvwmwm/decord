@@ -1,7 +1,7 @@
 // Module ID: 14270
 // Function ID: 14271
 // Name: CheckpointScreen
-// Dependencies: [19, 17, 6377, 21, 575, 5306, 1496, 1630, 2]
+// Dependencies: [19, 17, 6367, 21, 575, 5306, 1496, 1630, 2]
 // Exports: default, useCheckpointScreenContentHeight, useCheckpointScreenFrame
 
 // Module 14270 (CheckpointScreen)
@@ -11,7 +11,7 @@ import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CheckpointConstants from "CheckpointConstants" /* 6377 */;
+import CheckpointConstants from "CheckpointConstants" /* 6367 */;
 import createStyles from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 

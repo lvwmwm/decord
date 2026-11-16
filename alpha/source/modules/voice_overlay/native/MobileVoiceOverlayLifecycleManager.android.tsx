@@ -1,15 +1,15 @@
 // Module ID: 17005
 // Function ID: 17006
 // Name: MobileVoiceOverlayLifecycleManager
-// Dependencies: [5155, 5236, 5177, 2133, 5238, 6071, 5248, 6941, 1388, 5981, 13000, 1072, 17006, 17007, 17008, 17009, 7430, 16094, 17010, 17011, 16070, 1113, 17012, 13030, 8857, 5954, 6962, 1256, 6067, 2123, 2]
+// Dependencies: [5155, 5236, 5177, 2133, 5238, 6061, 5248, 6931, 1388, 5971, 13000, 1072, 17006, 17007, 17008, 17009, 7430, 16094, 17010, 17011, 16070, 1113, 17012, 13030, 8857, 5944, 6952, 1256, 6057, 2123, 2]
 
 // Module 17005 (MobileVoiceOverlayLifecycleManager)
 import intl12 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import GuildChannelStore from "GuildChannelStore" /* 5236 */;
-import useChannelName from "useChannelName" /* 5954 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6067 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6962 */;
+import useChannelName from "useChannelName" /* 5944 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6057 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6952 */;
 import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 8857 */;
 import MobileVoiceOverlayActionCreatorsDefault from "MobileVoiceOverlayActionCreators" /* 13030 */;
 import react_nativeDefault from "react-native" /* 17012 */;
@@ -17,11 +17,11 @@ import ChannelStore from "ChannelStore" /* 5155 */;
 import GuildStore from "GuildStore" /* 5177 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
 import PermissionStore from "PermissionStore" /* 5238 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6071 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
 import RelationshipStore from "RelationshipStore" /* 5248 */;
-import SpeakingStore from "SpeakingStore" /* 6941 */;
+import SpeakingStore from "SpeakingStore" /* 6931 */;
 import UserStore from "UserStore" /* 1388 */;
-import VoiceStateStore from "VoiceStateStore" /* 5981 */;
+import VoiceStateStore from "VoiceStateStore" /* 5971 */;
 import MobileVoiceOverlayStore from "MobileVoiceOverlayStore" /* 13000 */;
 import Constants from "Constants" /* 1072 */;
 import "AssetRegistry";

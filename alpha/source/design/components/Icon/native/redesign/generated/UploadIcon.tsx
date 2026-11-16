@@ -1,13 +1,13 @@
 // Module ID: 10733
 // Function ID: 10734
 // Name: UploadIcon
-// Dependencies: [19, 21, 575, 6019, 10734, 2]
+// Dependencies: [19, 21, 575, 6009, 10734, 2]
 // Exports: UploadIcon
 
 // Module 10733 (UploadIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6019 */;
+import BaseIconImage2 from "BaseIconImage" /* 6009 */;
 import AssetRegistry from "AssetRegistry" /* 10734 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

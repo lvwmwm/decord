@@ -1,16 +1,16 @@
-// Module ID: 19159
-// Function ID: 19160
+// Module ID: 19161
+// Function ID: 19162
 // Name: YouBarBackground
-// Dependencies: [19, 17, 17701, 21, 5306, 575, 7533, 5893, 671, 5902, 17785, 1655, 5939, 2]
+// Dependencies: [19, 17, 17701, 21, 5306, 575, 7533, 5883, 671, 5892, 17785, 1655, 5929, 2]
 
-// Module 19159 (YouBarBackground)
+// Module 19161 (YouBarBackground)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import LinearGradientDefault from "LinearGradient" /* 5893 */;
-import useToken2 from "useToken" /* 5902 */;
-import spring_spring from "spring/spring" /* 5939 */;
+import LinearGradientDefault from "LinearGradient" /* 5883 */;
+import useToken2 from "useToken" /* 5892 */;
+import spring_spring from "spring/spring" /* 5929 */;
 import _modDef7533 from "module_7533" /* 7533 */;
 import useQuestDockAnimatedBorderRadiusDefault from "useQuestDockAnimatedBorderRadius" /* 17785 */;
 import react from "react" /* 19 */;

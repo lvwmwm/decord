@@ -1,14 +1,14 @@
 // Module ID: 17068
 // Function ID: 17069
 // Name: ChangeBannerActionSheet
-// Dependencies: [5, 19, 17, 8542, 1072, 21, 5306, 575, 7918, 2174, 5552, 8879, 17069, 7808, 7951, 7913, 1113, 9436, 7746, 7443, 8106, 17070, 504, 9401, 8482, 8614, 1090, 9398, 17071, 17073, 5929, 1187, 17078, 2]
+// Dependencies: [5, 19, 17, 8542, 1072, 21, 5306, 575, 7918, 2174, 5542, 8879, 17069, 7808, 7951, 7913, 1113, 9436, 7746, 7443, 8106, 17070, 504, 9401, 8482, 8614, 1090, 9398, 17071, 17073, 5919, 1187, 17078, 2]
 // Exports: default
 
 // Module 17068 (ChangeBannerActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7913 */;
 import useAnalyticsLocations from "useAnalyticsLocations" /* 7918 */;
 import ActionSheet2 from "ActionSheet" /* 7951 */;
@@ -111,7 +111,7 @@ function ChangeBannerColorRow(user) {
   const obj7 = { style: tmp.bannerColor, color: pendingAccentColor };
   items2[0] = closure_9(pendingAccentColor(17073), obj7);
   const obj8 = { style: tmp.selectedColorHex, variant: "body-md/medium", color: "interactive-text-default", children: tmp2Result6.int2hex(pendingAccentColor) };
-  const Text = tmp2(5929).Text;
+  const Text = tmp2(5919).Text;
   tmp2Result6 = require("utils/ColorUtils");
   items2[1] = closure_9(Text, obj8);
   const obj9 = { style: tmp.rowArrow, size: require("native").Icon.Sizes.CUSTOM, source: pendingAccentColor(17078) };

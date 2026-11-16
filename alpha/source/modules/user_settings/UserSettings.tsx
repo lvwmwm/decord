@@ -1,7 +1,7 @@
 // Module ID: 5131
 // Function ID: 5132
 // Name: UserSettings
-// Dependencies: [5132, 1082, 5133, 1072, 5134, 5135, 1227, 1196, 558, 5994, 12, 504, 5995, 6003, 1236, 2]
+// Dependencies: [5132, 1082, 5133, 1072, 5134, 5135, 1227, 1196, 558, 5984, 12, 504, 5985, 5993, 1236, 2]
 // Exports: explicitContentFromProto, explicitContentToProto, goreContentFromProto, goreContentToProto
 
 // Module 5131 (UserSettings)
@@ -12,9 +12,9 @@ import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
 import wrappers from "wrappers" /* 1227 */;
 import GuildThemeSourcePreferenceUtils from "GuildThemeSourcePreferenceUtils" /* 1236 */;
 import StickersConstants from "StickersConstants" /* 5134 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 5994 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5995 */;
-import SettingsDefaultFeature from "SettingsDefaultFeature" /* 6003 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 5984 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5985 */;
+import SettingsDefaultFeature from "SettingsDefaultFeature" /* 5993 */;
 import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 5132 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import DMSafetyConstants from "DMSafetyConstants" /* 5133 */;

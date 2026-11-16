@@ -1,7 +1,7 @@
 // Module ID: 15827
 // Function ID: 15828
 // Name: ConjureCustomWidgetSheet
-// Dependencies: [5, 32, 19, 17, 7365, 21, 5306, 575, 7260, 1113, 4131, 7329, 15825, 10536, 7333, 7951, 7913, 7859, 5936, 2]
+// Dependencies: [5, 32, 19, 17, 7365, 21, 5306, 575, 7260, 1113, 4131, 7329, 15825, 10536, 7333, 7951, 7913, 7859, 5926, 2]
 // Exports: default
 
 // Module 15827 (ConjureCustomWidgetSheet)
@@ -165,12 +165,12 @@ export default function ConjureCustomWidgetSheet() {
         }
         c5 = 3;
         return { value: "HermesInternal", done: null };
-      } catch (tmp55) {
-        dependencyMap = tmp55;
+      } catch (tmp54) {
+        dependencyMap = tmp54;
         if (0 === c3) {
           c5 = 3;
-          throw tmp55;
-        } else if (1 === tmp57) {
+          throw tmp54;
+        } else if (1 === tmp56) {
           c4 = 1;
         } else {
           c4 = 2;
@@ -193,7 +193,7 @@ export default function ConjureCustomWidgetSheet() {
   tmp16 = View;
   items1 = [tmp11(TextArea, obj4), ];
   let obj5 = { variant: "primary", text: intl5.string(_modDef4131.MDZXiK), onPress: callback1, loading: tmp7, disabled: null == memo };
-  const Button = tmp12(5936).Button;
+  const Button = tmp12(5926).Button;
   intl5 = tmp12(1113).intl;
   items1[1] = closure_9(Button, obj5);
   return closure_9(ActionSheet, obj);

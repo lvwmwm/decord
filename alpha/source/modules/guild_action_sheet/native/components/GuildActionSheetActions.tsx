@@ -1,7 +1,7 @@
 // Module ID: 16348
 // Function ID: 16349
 // Name: GuildActionSheetActions
-// Dependencies: [19, 17, 16349, 8735, 1231, 5173, 7060, 5212, 7015, 6958, 1388, 1072, 7866, 8410, 6959, 21, 5306, 575, 504, 7953, 1113, 11000, 7223, 5348, 5139, 8731, 5552, 6848, 12466, 2121, 14688, 6351, 7918, 7937, 10034, 1187, 10930, 16350, 1196, 5136, 8408, 16351, 8409, 10654, 5929, 5131, 7813, 7883, 16400, 16401, 8425, 7467, 8143, 7989, 12487, 12532, 16402, 12538, 2565, 12539, 12537, 16404, 16410, 6270, 38, 16347, 11029, 11028, 7059, 12472, 16411, 12063, 9257, 14129, 5995, 7943, 6014, 1414, 2]
+// Dependencies: [19, 17, 16349, 8735, 1231, 5173, 7060, 5212, 7015, 6948, 1388, 1072, 7866, 8410, 6949, 21, 5306, 575, 504, 7953, 1113, 11000, 7223, 5338, 5139, 8731, 5542, 6838, 12466, 2121, 14688, 6341, 7918, 7937, 10034, 1187, 10930, 16350, 1196, 5136, 8408, 16351, 8409, 10654, 5919, 5131, 7813, 7883, 16400, 16401, 8425, 7467, 8143, 7989, 12487, 12532, 16402, 12538, 2565, 12539, 12537, 16404, 16410, 6260, 38, 16347, 11029, 11028, 7059, 12472, 16411, 12063, 9257, 14129, 5985, 7943, 6004, 1414, 2]
 // Exports: GuildActionSheetDirectoryActions, GuildActionSheetGameOrganizationActions, GuildActionSheetPrimaryActions, GuildActionSheetSecondaryActions, GuildDeveloperOptionAction, GuildUnreadAction, handleLeaveServer
 
 // Module 16348 (GuildActionSheetActions)
@@ -12,12 +12,12 @@ import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
 import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 5136 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import ToastUtils from "ToastUtils" /* 6014 */;
-import useAlertStore from "useAlertStore" /* 6270 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6351 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
-import ReadStateConstants from "ReadStateConstants" /* 6959 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import ToastUtils from "ToastUtils" /* 6004 */;
+import useAlertStore from "useAlertStore" /* 6260 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6341 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
+import ReadStateConstants from "ReadStateConstants" /* 6949 */;
 import useGuildOnboardingAvailableDefault from "useGuildOnboardingAvailable" /* 7223 */;
 import ConnectionsUtils from "ConnectionsUtils" /* 7467 */;
 import UserSettingsUtils from "UserSettingsUtils" /* 7813 */;
@@ -51,7 +51,7 @@ import GuildRecord from "GuildRecord" /* 5173 */;
 import GuildReadStateStore from "GuildReadStateStore" /* 7060 */;
 import GuildRoleStore from "GuildRoleStore" /* 5212 */;
 import ReadStateStore from "ReadStateStore" /* 7015 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6958 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6948 */;
 import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
@@ -98,7 +98,7 @@ function BrowseChannelsOption(guild) {
   let stringResult;
   guild = guild.guild;
   const tmp2 = useGuildOnboardingAvailableDefault(guild);
-  let obj = guild(5348);
+  let obj = guild(5338);
   const result = obj.useIsDismissibleContentDismissed_UNSAFE(guild(5139).DismissibleContent.CHANNEL_BROWSER_NEW_BADGE_NUX);
   let obj2 = guild(504);
   const items = [ReadStateStore];
@@ -235,7 +235,7 @@ function ServerTagOption(guild) {
     obj5 = { guildTag: tag, guildBadge: guildTagBadgeUrl, badgeSize: tmp10.SIZE_16 };
     items = [closure_22(View, obj4), ];
     const obj6 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: intl.string(tmp2(1113).t["2QmKZ2"]) };
-    const Text = tmp2(5929).Text;
+    const Text = tmp2(5919).Text;
     intl = tmp2(1113).intl;
     items[1] = closure_22(Text, obj6);
     return closure_22(ActionSheetRow, obj3);
@@ -711,7 +711,7 @@ export function GuildDeveloperOptionAction(guild) {
   let tmp = guild;
   const DeveloperMode = guild(5131).DeveloperMode;
   const setting = DeveloperMode.useSetting();
-  guild(5995);
+  guild(5985);
   if (setting) {
     const items = [];
     const push = items.push;

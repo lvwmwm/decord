@@ -1,15 +1,15 @@
 // Module ID: 17706
 // Function ID: 17707
 // Name: QuestDockContextMenuActionSheet
-// Dependencies: [5, 19, 5338, 1072, 21, 17705, 15255, 5345, 10156, 1113, 5341, 8834, 10135, 10138, 7953, 12300, 8106, 10170, 5552, 7951, 8829, 17707, 10128, 7549, 10133, 17709, 15256, 10131, 10324, 17710, 13269, 17712, 7635, 8604, 6033, 7943, 10059, 17714, 2]
+// Dependencies: [5, 19, 6954, 1072, 21, 17705, 15255, 6961, 10156, 1113, 6957, 8834, 10135, 10138, 7953, 12300, 8106, 10170, 5542, 7951, 8829, 17707, 10128, 7549, 10133, 17709, 15256, 10131, 10324, 17710, 13269, 17712, 7635, 8604, 6023, 7943, 10059, 17714, 2]
 // Exports: default
 
 // Module 17706 (QuestDockContextMenuActionSheet)
 import Constants from "Constants" /* 1072 */;
-import QuestConstants from "QuestConstants" /* 5338 */;
-import QuestTypes from "QuestTypes" /* 5341 */;
-import AdCreativeType from "AdCreativeType" /* 5345 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import QuestConstants from "QuestConstants" /* 6954 */;
+import QuestTypes from "QuestTypes" /* 6957 */;
+import AdCreativeType from "AdCreativeType" /* 6961 */;
 import ClipboardUtils from "ClipboardUtils" /* 7943 */;
 import openUserSettings from "openUserSettings" /* 8604 */;
 import AnalyticsTypes from "AnalyticsTypes" /* 8834 */;
@@ -200,7 +200,7 @@ function QuestDockPreviewTools(quest) {
     }
   };
   const ActionSheetRow7 = quest(7953).ActionSheetRow;
-  obj22 = { IconComponent: quest(6033).CopyIcon };
+  obj22 = { IconComponent: quest(6023).CopyIcon };
   Icon7 = quest(7953).ActionSheetRow.Icon;
   obj23 = { text: intl8.string(quest(1113).t.oisrFi) };
   FormLabel7 = quest(8106).FormLabel;
@@ -227,7 +227,7 @@ function QuestDockShareRow(quest) {
     }
   };
   const ActionSheetRow = quest(7953).ActionSheetRow;
-  obj2 = { IconComponent: quest(6033).CopyIcon };
+  obj2 = { IconComponent: quest(6023).CopyIcon };
   Icon = quest(7953).ActionSheetRow.Icon;
   obj3 = { text: intl.string(quest(1113).t.WqhZss) };
   FormLabel = quest(8106).FormLabel;

@@ -1,11 +1,11 @@
 // Module ID: 14299
 // Function ID: 14300
 // Name: CheckpointCharacterStageLayer
-// Dependencies: [32, 19, 17, 14276, 21, 6836, 14300, 14301, 2]
+// Dependencies: [32, 19, 17, 14276, 21, 6826, 14300, 14301, 2]
 // Exports: default
 
 // Module 14299 (CheckpointCharacterStageLayer)
-import usePrevious from "usePrevious" /* 6836 */;
+import usePrevious from "usePrevious" /* 6826 */;
 import CheckpointFadeLayerDefault from "CheckpointFadeLayer" /* 14300 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

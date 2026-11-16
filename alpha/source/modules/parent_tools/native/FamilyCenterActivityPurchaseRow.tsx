@@ -1,13 +1,13 @@
 // Module ID: 17431
 // Function ID: 17432
 // Name: FamilyCenterActivityPurchaseRow
-// Dependencies: [19, 17, 21, 5306, 575, 9404, 17432, 7253, 17433, 5929, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 9404, 17432, 7253, 17433, 5919, 2]
 // Exports: default
 
 // Module 17431 (FamilyCenterActivityPurchaseRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import PriceUtils from "PriceUtils" /* 7253 */;
 import useCollectiblesDataDefault from "useCollectiblesData" /* 9404 */;
 import FamilyCenterActivityPurchaseRowUtils from "FamilyCenterActivityPurchaseRowUtils" /* 17432 */;

@@ -1,11 +1,11 @@
-// Module ID: 17863
-// Function ID: 17864
+// Module ID: 17865
+// Function ID: 17866
 // Name: PremiumRestorationAlert
-// Dependencies: [19, 9302, 21, 17864, 504, 2]
+// Dependencies: [19, 9302, 21, 17866, 504, 2]
 
-// Module 17863 (PremiumRestorationAlert)
+// Module 17865 (PremiumRestorationAlert)
 import Fragment from "Fragment" /* 21 */;
-import UntouchableAlertDefault from "UntouchableAlert" /* 17864 */;
+import UntouchableAlertDefault from "UntouchableAlert" /* 17866 */;
 import react from "react" /* 19 */;
 import IAPStore from "IAPStore" /* 9302 */;
 import get_initialized from "get initialized" /* 504 */;

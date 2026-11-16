@@ -1,7 +1,7 @@
 // Module ID: 14872
 // Function ID: 14873
 // Name: useMessageRequestActions
-// Dependencies: [5, 32, 19, 7352, 14873, 1072, 14874, 10987, 6757, 11313, 8483, 1256, 14876, 5131, 12063, 2]
+// Dependencies: [5, 32, 19, 7352, 14873, 1072, 14874, 10987, 6747, 11313, 8483, 1256, 14876, 5131, 12063, 2]
 // Exports: useMessageRequestActions
 
 // Module 14872 (useMessageRequestActions)

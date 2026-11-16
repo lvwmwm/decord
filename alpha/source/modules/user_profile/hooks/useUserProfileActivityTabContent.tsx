@@ -1,7 +1,7 @@
 // Module ID: 15833
 // Function ID: 15834
 // Name: useUserProfileActivityTabContent
-// Dependencies: [19, 9476, 6068, 7316, 5981, 7352, 1072, 3, 15834, 15756, 15758, 9478, 504, 2]
+// Dependencies: [19, 9476, 6058, 7316, 5971, 7352, 1072, 3, 15834, 15756, 15758, 9478, 504, 2]
 // Exports: default
 
 // Module 15833 (useUserProfileActivityTabContent)
@@ -11,9 +11,9 @@ import ContentInventoryTypes from "ContentInventoryTypes" /* 9478 */;
 import maybeFetchContentInventoryOutboxDefault from "maybeFetchContentInventoryOutbox" /* 15834 */;
 import react from "react" /* 19 */;
 import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 9476 */;
-import PresenceStore from "PresenceStore" /* 6068 */;
+import PresenceStore from "PresenceStore" /* 6058 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 7316 */;
-import VoiceStateStore from "VoiceStateStore" /* 5981 */;
+import VoiceStateStore from "VoiceStateStore" /* 5971 */;
 import UserProfileStore from "UserProfileStore" /* 7352 */;
 import size from "module_2" /* 2 */;
 

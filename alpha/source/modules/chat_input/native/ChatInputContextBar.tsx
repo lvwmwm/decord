@@ -1,14 +1,14 @@
 // Module ID: 14837
 // Function ID: 14838
 // Name: ChatInputContextBar
-// Dependencies: [19, 17, 5307, 8725, 1388, 1072, 21, 1187, 5306, 575, 5902, 5929, 1113, 7428, 7648, 504, 5378, 6750, 10066, 9189, 14838, 5486, 1655, 5548, 1708, 12641, 1256, 12639, 1099, 6749, 14839, 9004, 9048, 9032, 2]
+// Dependencies: [19, 17, 5307, 8725, 1388, 1072, 21, 1187, 5306, 575, 5892, 5919, 1113, 7428, 7648, 504, 5368, 6740, 10066, 9189, 14838, 5476, 1655, 5538, 1708, 12641, 1256, 12639, 1099, 6739, 14839, 9004, 9048, 9032, 2]
 
 // Module 14837 (ChatInputContextBar)
 import nativeDefault from "native" /* 575 */;
 import intl9 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import useToken from "useToken" /* 5902 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import useToken from "useToken" /* 5892 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import Pressables from "Pressables" /* 7428 */;
 import DraftStore2 from "DraftStore" /* 8725 */;
 import DraftActionCreatorsDefault from "DraftActionCreators" /* 9004 */;
@@ -376,8 +376,8 @@ function ContextBarItem(arg0) {
   dependencyMap = undefined;
   ({ children, ref } = arg0);
   let tmp = dependencyMap;
-  obj = sharedValue(5486);
-  backgroundColor = closure_16(obj.useGradientValue(sharedValue(5486).GradientPercentage.END)).contextBar.backgroundColor;
+  obj = sharedValue(5476);
+  backgroundColor = closure_16(obj.useGradientValue(sharedValue(5476).GradientPercentage.END)).contextBar.backgroundColor;
   let tmp2 = closure_17();
   const obj2 = sharedValue(1655);
   sharedValue = obj2.useSharedValue(0);

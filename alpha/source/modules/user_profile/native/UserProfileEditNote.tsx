@@ -1,7 +1,7 @@
 // Module ID: 15777
 // Function ID: 15778
 // Name: UserProfileEditNote
-// Dependencies: [32, 19, 17, 1072, 21, 5306, 1502, 15773, 15778, 7493, 15462, 7427, 1113, 5929, 7859, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5306, 1502, 15773, 15778, 7493, 15462, 7427, 1113, 5919, 7859, 2]
 // Exports: default
 
 // Module 15777 (UserProfileEditNote)

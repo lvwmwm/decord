@@ -1,7 +1,7 @@
 // Module ID: 17637
 // Function ID: 17638
 // Name: DisplayNameStylesEditPreview
-// Dependencies: [19, 17, 5307, 8542, 21, 5306, 575, 8541, 2111, 504, 9401, 9528, 1113, 3125, 10063, 17636, 7027, 9396, 5128, 1187, 8613, 10064, 10065, 5929, 2]
+// Dependencies: [19, 17, 5307, 8542, 21, 5306, 575, 8541, 2111, 504, 9401, 9528, 1113, 3125, 10063, 17636, 7027, 9396, 5128, 1187, 8613, 10064, 10065, 5919, 2]
 // Exports: default
 
 // Module 17637 (DisplayNameStylesEditPreview)
@@ -10,7 +10,7 @@ import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import DateUtils from "DateUtils" /* 5128 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import useAvatarDecoration from "useAvatarDecoration" /* 7027 */;
 import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 8613 */;
 import usePendingAvatarSettingsDefault from "usePendingAvatarSettings" /* 9396 */;
@@ -88,7 +88,7 @@ function ChatPreview(chatMessage) {
   items2[1] = metroImportDefault(Text_Text.Text, obj9);
   items3 = [metroImportAll(View, obj7), ];
   const obj10 = { variant: "body-md/normal", color: "text-default", style: tmp.chatMessageText, children: chatMessage };
-  const Text = tmp2(5929).Text;
+  const Text = tmp2(5919).Text;
   if (chatMessage == null) {
     const intl = tmp2(1113).intl;
     chatMessage = intl.string(tmp5(3125).h5Cuej);

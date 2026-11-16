@@ -1,13 +1,13 @@
 // Module ID: 17716
 // Function ID: 17717
 // Name: QuestDisclosureModalInner
-// Dependencies: [17, 1072, 21, 5306, 575, 5131, 10939, 1113, 8163, 10553, 7438, 17717, 5929, 10156, 7445, 2188, 5936, 2]
+// Dependencies: [17, 1072, 21, 5306, 575, 5131, 10939, 1113, 8163, 10553, 7438, 17717, 5919, 10156, 7445, 2188, 5926, 2]
 // Exports: default
 
 // Module 17716 (QuestDisclosureModalInner)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
@@ -92,7 +92,7 @@ export default function QuestDisclosureModalInner(isTargetedDisclosure) {
   const obj5 = { style: tmp.illustration, children: tmp6(require("WumpusCouchSpotIllustration").WumpusCouchSpotIllustration, {}) };
   items2[0] = tmp6(closure_4, obj5);
   const obj6 = { variant: "body-md/normal", color: "mobile-text-heading-primary", children: tmp2Result.getDisclosureText({ adCreativeType, gamePublisher, gameTitle, isTargetedDisclosure, isContextualDisclosure: setting, cosponsorName, isVideoQuest }) };
-  const Text = tmp2(5929).Text;
+  const Text = tmp2(5919).Text;
   tmp2Result = require("QuestCopyUtils");
   items2[1] = tmp6(Text, obj6);
   const tmp7 = closure_7;
@@ -124,7 +124,7 @@ export default function QuestDisclosureModalInner(isTargetedDisclosure) {
   }
   items2[2] = isTargetedDisclosure;
   const obj8 = { variant: "body-md/medium", color: "mobile-text-heading-primary", children: format(tzq9Wa, obj9) };
-  const Text2 = tmp2(5929).Text;
+  const Text2 = tmp2(5919).Text;
   const intl5 = tmp2(1113).intl;
   format = intl5.format;
   obj9 = { privacySettingsUrl: obj11.getArticleURL(HelpdeskArticles.QUESTS_PRIVACY_CONTROLS) };
@@ -133,7 +133,7 @@ export default function QuestDisclosureModalInner(isTargetedDisclosure) {
   items2[3] = tmp6(Text2, obj8);
   const obj10 = { style: tmp.closeButton, children: tmp6(Button, obj12) };
   obj12 = { variant: "primary", grow: true, size: "lg", text: intl6.string(require("intl").t.cpT0Cq), onPress: onClose };
-  Button = tmp2(5936).Button;
+  Button = tmp2(5926).Button;
   intl6 = tmp2(1113).intl;
   items2[4] = tmp6(tmp9, obj10);
   return tmp7(tmp8, obj4);

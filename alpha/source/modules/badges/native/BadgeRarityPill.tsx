@@ -1,7 +1,7 @@
 // Module ID: 10118
 // Function ID: 10119
 // Name: BadgeRarityPill
-// Dependencies: [19, 17, 21, 575, 1392, 10119, 1113, 10121, 5303, 10123, 10125, 5306, 5313, 5547, 5929, 2]
+// Dependencies: [19, 17, 21, 575, 1392, 10119, 1113, 10121, 5303, 10123, 10125, 5306, 5313, 5537, 5919, 2]
 // Exports: default
 
 // Module 10118 (BadgeRarityPill)
@@ -11,8 +11,8 @@ import intl5 from "intl" /* 1113 */;
 import BadgeRarity from "BadgeRarity" /* 1392 */;
 import ColorUtils from "ColorUtils" /* 5303 */;
 import shared from "shared" /* 5313 */;
-import useThemeDefault from "useTheme" /* 5547 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import useThemeDefault from "useTheme" /* 5537 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import ExperimentalCommonIcon from "ExperimentalCommonIcon" /* 10119 */;
 import ExperimentalRareIcon from "ExperimentalRareIcon" /* 10121 */;
 import ExperimentalEpicIcon from "ExperimentalEpicIcon" /* 10123 */;

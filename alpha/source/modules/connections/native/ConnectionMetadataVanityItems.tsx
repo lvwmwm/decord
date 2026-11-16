@@ -1,7 +1,7 @@
 // Module ID: 12494
 // Function ID: 12495
 // Name: ConnectionMetadataVanityItems
-// Dependencies: [19, 17, 7423, 21, 5306, 575, 1113, 12495, 12496, 12, 2027, 5929, 1187, 7467, 2]
+// Dependencies: [19, 17, 7423, 21, 5306, 575, 1113, 12495, 12496, 12, 2027, 5919, 1187, 7467, 2]
 // Exports: generateBlueskyMetadataItems, generateEbayMetadataItems, generateLetterboxdMetadataItems, generatePaypalMetadataItems, generateRedditMetadataItems, generateRoleConnectionMetadataItems, generateSteamMetadataItems, generateTikTokMetadataItems, generateTwitterMetadataItems
 
 // Module 12494 (ConnectionMetadataVanityItems)
@@ -11,7 +11,7 @@ import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import NumberUtils from "NumberUtils" /* 2027 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import ConnectionsUtils from "ConnectionsUtils" /* 7467 */;
 import AssetRegistryDefault from "AssetRegistry" /* 12495 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 12496 */;

@@ -1,7 +1,7 @@
 // Module ID: 14948
 // Function ID: 14949
 // Name: PileOverflow
-// Dependencies: [19, 17, 2189, 21, 5306, 575, 563, 5929, 2027, 2]
+// Dependencies: [19, 17, 2189, 21, 5306, 575, 563, 5919, 2027, 2]
 // Exports: PileOverflow
 
 // Module 14948 (PileOverflow)
@@ -52,7 +52,7 @@ export function PileOverflow(size) {
   }
   items1[1] = obj2;
   const obj3 = { style: items1, children: tmp6(Text, obj4) };
-  Text = tmp(5929).Text;
+  Text = tmp(5919).Text;
   let str = map.get(size);
   tmp6 = React3;
   if (str == null) {

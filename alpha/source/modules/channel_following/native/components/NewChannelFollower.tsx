@@ -1,7 +1,7 @@
 // Module ID: 11960
 // Function ID: 11961
 // Name: NewChannelFollower
-// Dependencies: [32, 19, 17, 5159, 5155, 5236, 5177, 5238, 6956, 1072, 21, 5306, 575, 8559, 5547, 504, 5954, 5899, 5313, 11961, 11962, 5566, 5570, 6020, 7720, 1187, 8033, 5929, 1113, 6337, 7746, 7443, 5552, 8009, 2121, 11963, 8106, 6951, 5936, 11966, 5901, 2]
+// Dependencies: [32, 19, 17, 5159, 5155, 5236, 5177, 5238, 6946, 1072, 21, 5306, 575, 8559, 5537, 504, 5944, 5889, 5313, 11961, 11962, 5556, 5560, 6010, 7720, 1187, 8033, 5919, 1113, 6327, 7746, 7443, 5542, 8009, 2121, 11963, 8106, 6941, 5926, 11966, 5891, 2]
 // Exports: default
 
 // Module 11960 (NewChannelFollower)
@@ -10,7 +10,7 @@ import intl10 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
 import ChannelRecord from "ChannelRecord" /* 5159 */;
 import GuildChannelStore2 from "GuildChannelStore" /* 5236 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import openChannelPickerDefault from "openChannelPicker" /* 11963 */;
 import ChannelFollowerActionCreatorsDefault from "ChannelFollowerActionCreators" /* 11966 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -19,7 +19,7 @@ import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import GuildStore from "GuildStore" /* 5177 */;
 import PermissionStore from "PermissionStore" /* 5238 */;
-import SortedGuildStore from "SortedGuildStore" /* 6956 */;
+import SortedGuildStore from "SortedGuildStore" /* 6946 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;

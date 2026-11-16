@@ -1,8 +1,8 @@
-// Module ID: 18749
-// Function ID: 18750
+// Module ID: 18751
+// Function ID: 18752
 // Dependencies: [2, 16446, 16448, 16450, 16452, 16454, 12978, 16456, 16458, 16460, 16462, 16464, 16466, 16468, 16470, 16472, 16474, 10050, 10047]
 
-// Module 18749
+// Module 18751
 import SpendEarnOrbsLightThemeLottie from "SpendEarnOrbsLightThemeLottie" /* 10047 */;
 import SpendEarnOrbsLottie from "SpendEarnOrbsLottie" /* 10050 */;
 import CameraLottie from "CameraLottie" /* 12978 */;

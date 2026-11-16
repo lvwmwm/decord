@@ -1,9 +1,9 @@
-// Module ID: 5551
-// Function ID: 5552
+// Module ID: 5541
+// Function ID: 5542
 // Name: timingPresets
 // Dependencies: [2]
 
-// Module 5551 (timingPresets)
+// Module 5541 (timingPresets)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("design/animation/reanimated/timing/timingPresets.tsx");

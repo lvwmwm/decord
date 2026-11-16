@@ -1,12 +1,12 @@
 // Module ID: 10857
 // Function ID: 10858
 // Name: getActivityStatusText
-// Dependencies: [6069, 10858, 8469, 7328, 10859, 1113, 10860, 10861, 9481, 2]
+// Dependencies: [6059, 10858, 8469, 7328, 10859, 1113, 10860, 10861, 9481, 2]
 // Exports: default
 
 // Module 10857 (getActivityStatusText)
 import intl9 from "intl" /* 1113 */;
-import ActivityTypes from "ActivityTypes" /* 6069 */;
+import ActivityTypes from "ActivityTypes" /* 6059 */;
 import conjurePresenceActivity from "conjurePresenceActivity" /* 7328 */;
 import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 8469 */;
 import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 9481 */;

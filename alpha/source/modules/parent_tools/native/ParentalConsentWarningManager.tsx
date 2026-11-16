@@ -1,15 +1,15 @@
-// Module ID: 20365
-// Function ID: 20366
+// Module ID: 20368
+// Function ID: 20369
 // Name: ParentalConsentWarningManager
-// Dependencies: [5553, 8740, 17397, 8741, 1072, 17398, 5552, 20366, 2121, 7882, 20372, 2]
+// Dependencies: [5543, 8740, 17397, 8741, 1072, 17398, 5542, 20369, 2121, 7882, 20375, 2]
 
-// Module 20365 (ParentalConsentWarningManager)
+// Module 20368 (ParentalConsentWarningManager)
 import Constants from "Constants" /* 1072 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import ParentalConsentWarningTypes from "ParentalConsentWarningTypes" /* 17398 */;
-import ParentalConsentWarningActionCreators from "ParentalConsentWarningActionCreators" /* 20372 */;
-import ActionSheetStore from "ActionSheetStore" /* 5553 */;
+import ParentalConsentWarningActionCreators from "ParentalConsentWarningActionCreators" /* 20375 */;
+import ActionSheetStore from "ActionSheetStore" /* 5543 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 8740 */;
 import ParentalConsentWarningStore from "ParentalConsentWarningStore" /* 17397 */;
 import FamilyCenterConstants from "FamilyCenterConstants" /* 8741 */;
@@ -20,7 +20,7 @@ let c3;
 
 let metroImportAll;
 let metroImportDefault;
-const f122801 = (link_status) => link_status.link_status === constants.ACTIVE && link_status.link_type === constants2.PARENT;
+const f122816 = (link_status) => link_status.link_status === constants.ACTIVE && link_status.link_type === constants2.PARENT;
 function maybePresentModal(daysRemaining) {
   daysRemaining = undefined;
   if (daysRemaining != null) {
@@ -37,7 +37,7 @@ function maybePresentModal(daysRemaining) {
   if (tmp5) {
     const _Object = Object;
     const values = Object.values(FamilyCenterStore.getLinkedUsers());
-    tmp5 = !values.some(f122801);
+    tmp5 = !values.some(f122816);
   }
   if (tmp5) {
     tmp5 = !ActionSheetStore.isOpen();
@@ -45,7 +45,7 @@ function maybePresentModal(daysRemaining) {
   if (tmp5) {
     const obj = { daysRemaining };
     const obj2 = ActionSheetActionCreatorsDefault;
-    obj2.openLazy(asyncRequire(20366, dependencyMap.paths), "ParentalConsentWarningModal", obj);
+    obj2.openLazy(asyncRequire(20369, dependencyMap.paths), "ParentalConsentWarningModal", obj);
   }
 }
 ({ UserLinkStatus: metroImportDefault, UserLinkType: metroImportAll } = FamilyCenterConstants);
@@ -60,7 +60,7 @@ class ParentalConsentWarningManager extends AutomaticLifecycleManager {
       },
       POST_CONNECTION_OPEN() {
         const values = Object.values(linkedUsers.getLinkedUsers());
-        c3 = values.some(f122801);
+        c3 = values.some(f122816);
         const obj2 = ParentalConsentWarningActionCreators;
         obj2.maybeFetchWarning();
         const obj3 = ParentalConsentWarningStore;
@@ -83,7 +83,7 @@ class ParentalConsentWarningManager extends AutomaticLifecycleManager {
         user = user.user;
         if (undefined !== user.linked_users) {
           const linked_users = user.linked_users;
-          const someResult = linked_users.some(f122801);
+          const someResult = linked_users.some(f122816);
           c3 = someResult;
           const tmp = undefined !== c3 && c3 !== someResult;
           if (tmp) {

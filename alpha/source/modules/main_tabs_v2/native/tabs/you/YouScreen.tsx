@@ -1,10 +1,10 @@
-// Module ID: 19624
-// Function ID: 19625
+// Module ID: 19626
+// Function ID: 19627
 // Name: YouScreen
-// Dependencies: [32, 19, 17, 7352, 2189, 17215, 7060, 1388, 19146, 1072, 1074, 5152, 7962, 21, 1655, 8611, 5306, 1360, 575, 671, 5493, 563, 1113, 7428, 17199, 7994, 8593, 6338, 1264, 8482, 1630, 8590, 5547, 8609, 5495, 1496, 5131, 1503, 19625, 1414, 8613, 7771, 10509, 8545, 8560, 8561, 8573, 7937, 8587, 5263, 5139, 9560, 6020, 19626, 14577, 5916, 19634, 19635, 5377, 19636, 8583, 8567, 8600, 1090, 11651, 9493, 19638, 14204, 8483, 9464, 8604, 8484, 9535, 8678, 2]
+// Dependencies: [32, 19, 17, 7352, 2189, 17215, 7060, 1388, 19148, 1072, 1074, 5152, 7962, 21, 1655, 8611, 5306, 1360, 575, 671, 5483, 563, 1113, 7428, 17199, 7994, 8593, 6328, 1264, 8482, 1630, 8590, 5537, 8609, 5485, 1496, 5131, 1503, 19627, 1414, 8613, 7771, 10509, 8545, 8560, 8561, 8573, 7937, 8587, 5263, 5139, 9560, 6010, 19628, 14577, 5906, 19636, 19637, 5367, 19638, 8583, 8567, 8600, 1090, 11651, 9493, 19640, 14204, 8483, 9464, 8604, 8484, 9535, 8678, 2]
 // Exports: default
 
-// Module 19624 (YouScreen)
+// Module 19626 (YouScreen)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
@@ -13,7 +13,7 @@ import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import intl4 from "intl" /* 1113 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1360 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
-import RootNavigationRef from "RootNavigationRef" /* 5493 */;
+import RootNavigationRef from "RootNavigationRef" /* 5483 */;
 import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8483 */;
 import VisualEffectViewThemedDefault from "VisualEffectViewThemed" /* 8611 */;
 import YouBannerDecorations from "YouBannerDecorations" /* 10509 */;
@@ -26,7 +26,7 @@ import LocaleStore from "LocaleStore" /* 2189 */;
 import UserSettingSearchStore from "UserSettingSearchStore" /* 17215 */;
 import GuildReadStateStore from "GuildReadStateStore" /* 7060 */;
 import UserStore from "UserStore" /* 1388 */;
-import YouConstants from "YouConstants" /* 19146 */;
+import YouConstants from "YouConstants" /* 19148 */;
 import Constants from "Constants" /* 7962 */;
 import Fragment from "Fragment" /* 21 */;
 import module_1655_mod from "module_1655" /* 1655 */;

@@ -1,14 +1,14 @@
 // Module ID: 17044
 // Function ID: 17045
 // Name: ReanimatedNativeStackScreen
-// Dependencies: [109, 19, 17, 21, 1655, 6293, 1633, 17045, 17046]
+// Dependencies: [109, 19, 17, 21, 1655, 6283, 1633, 17045, 17046]
 
 // Module 17044 (ReanimatedNativeStackScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import _mod1633 from "module_1633" /* 1633 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import InnerScreen from "InnerScreen" /* 6293 */;
+import InnerScreen from "InnerScreen" /* 6283 */;
 import reactDefault from "react" /* 17045 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;

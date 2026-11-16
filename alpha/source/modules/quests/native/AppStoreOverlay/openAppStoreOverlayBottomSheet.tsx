@@ -1,7 +1,7 @@
 // Module ID: 10175
 // Function ID: 10176
 // Name: openAppStoreOverlayBottomSheet
-// Dependencies: [1072, 5552, 10176, 2121, 8825, 1108, 10171, 2]
+// Dependencies: [1072, 5542, 10176, 2121, 8825, 1108, 10171, 2]
 // Exports: openAppStoreOverlayBottomSheet
 
 // Module 10175 (openAppStoreOverlayBottomSheet)

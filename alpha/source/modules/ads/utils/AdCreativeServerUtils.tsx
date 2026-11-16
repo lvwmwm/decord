@@ -1,11 +1,11 @@
 // Module ID: 10143
 // Function ID: 10144
 // Name: AdCreativeServerUtils
-// Dependencies: [5345, 10144, 10160, 2]
+// Dependencies: [6961, 10144, 10160, 2]
 // Exports: adCreativeFromServer
 
 // Module 10143 (AdCreativeServerUtils)
-import AdCreativeType from "AdCreativeType" /* 5345 */;
+import AdCreativeType from "AdCreativeType" /* 6961 */;
 import BountyTypes from "BountyTypes" /* 10144 */;
 import PlayableTypes from "PlayableTypes" /* 10160 */;
 import size from "module_2" /* 2 */;

@@ -1,7 +1,7 @@
 // Module ID: 13485
 // Function ID: 13486
 // Name: CommandListSortButton
-// Dependencies: [19, 17, 13470, 1191, 21, 5306, 575, 1113, 7428, 5552, 13486, 2121, 5929, 10560, 2]
+// Dependencies: [19, 17, 13470, 1191, 21, 5306, 575, 1113, 7428, 5542, 13486, 2121, 5919, 10560, 2]
 // Exports: default
 
 // Module 13485 (CommandListSortButton)
@@ -9,7 +9,7 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import FormConstants from "FormConstants" /* 1191 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import AppLauncherConstants from "AppLauncherConstants" /* 13470 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -67,7 +67,7 @@ export default function CommandListSortButton(sortOrder) {
   };
   obj2 = { style: tmp.button, children: items };
   const PressableOpacity = sortOrder(7428).PressableOpacity;
-  items = [closure_6(sortOrder(5929).Text, { variant: "body-sm/medium", color: "text-default", children: stringResult }), ];
+  items = [closure_6(sortOrder(5919).Text, { variant: "body-sm/medium", color: "text-default", children: stringResult }), ];
   const obj3 = { size: "xs", color: onSortOptionPress(575).colors.TEXT_DEFAULT };
   const ChevronSmallDownIcon = sortOrder(10560).ChevronSmallDownIcon;
   items[1] = closure_6(ChevronSmallDownIcon, obj3);

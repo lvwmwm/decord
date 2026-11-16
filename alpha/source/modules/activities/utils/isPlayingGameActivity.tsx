@@ -1,12 +1,12 @@
 // Module ID: 10651
 // Function ID: 10652
 // Name: isPlayingGameActivity
-// Dependencies: [2145, 6069, 8469, 2]
+// Dependencies: [2145, 6059, 8469, 2]
 // Exports: default
 
 // Module 10651 (isPlayingGameActivity)
 import Constants from "Constants" /* 2145 */;
-import ActivityTypes from "ActivityTypes" /* 6069 */;
+import ActivityTypes from "ActivityTypes" /* 6059 */;
 import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 8469 */;
 import size from "module_2" /* 2 */;
 

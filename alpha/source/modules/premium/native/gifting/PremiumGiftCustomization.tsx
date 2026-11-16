@@ -1,7 +1,7 @@
 // Module ID: 11833
 // Function ID: 11834
 // Name: PremiumGiftCustomization
-// Dependencies: [32, 19, 17, 1390, 21, 5306, 575, 1502, 11664, 11834, 1113, 11750, 11835, 5929, 11777, 11779, 11836, 2]
+// Dependencies: [32, 19, 17, 1390, 21, 5306, 575, 1502, 11664, 11834, 1113, 11750, 11835, 5919, 11777, 11779, 11836, 2]
 // Exports: default
 
 // Module 11833 (PremiumGiftCustomization)

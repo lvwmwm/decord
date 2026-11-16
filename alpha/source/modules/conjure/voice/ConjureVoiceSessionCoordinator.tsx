@@ -1,13 +1,13 @@
 // Module ID: 16913
 // Function ID: 16914
 // Name: ConjureVoiceSessionCoordinator
-// Dependencies: [7019, 502, 2133, 6071, 1388, 5981, 1072, 6075, 6228, 7303, 16914, 1269, 572, 16916, 12, 6225, 16917, 16915, 7022, 2]
+// Dependencies: [7019, 502, 2133, 6061, 1388, 5971, 1072, 6065, 6218, 7303, 16914, 1269, 572, 16916, 12, 6215, 16917, 16915, 7022, 2]
 
 // Module 16913 (ConjureVoiceSessionCoordinator)
 import _modDef12 from "module_12" /* 12 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants2 from "Constants" /* 1072 */;
-import SpatialAudioForVoiceExperimentDefault from "SpatialAudioForVoiceExperiment" /* 6228 */;
+import SpatialAudioForVoiceExperimentDefault from "SpatialAudioForVoiceExperiment" /* 6218 */;
 import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 7022 */;
 import RPCErrorDefault from "RPCError" /* 7303 */;
 import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 16915 */;
@@ -16,10 +16,10 @@ import ConjureVoiceGeometry from "ConjureVoiceGeometry" /* 16917 */;
 import FramesStore from "FramesStore" /* 7019 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6071 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
 import UserStore from "UserStore" /* 1388 */;
-import VoiceStateStore from "VoiceStateStore" /* 5981 */;
-import Constants from "Constants" /* 6075 */;
+import VoiceStateStore from "VoiceStateStore" /* 5971 */;
+import Constants from "Constants" /* 6065 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault, set, user, user_id;
@@ -27,7 +27,7 @@ let dependencyMap, importDefault, set, user, user_id;
 let c10;
 let tmp7;
 let unpackModuleId;
-const AudioActionCreatorsDefault = tmp7(6225);
+const AudioActionCreatorsDefault = tmp7(6215);
 const RPCErrors = Constants2.RPCErrors;
 ({ Features: c10, MediaEngineContextTypes: unpackModuleId } = Constants);
 let closure_12 = { x: 0, y: 0, z: -1 };

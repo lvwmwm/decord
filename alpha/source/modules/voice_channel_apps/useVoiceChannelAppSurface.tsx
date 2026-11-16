@@ -1,13 +1,13 @@
-// Module ID: 20003
-// Function ID: 20004
+// Module ID: 20005
+// Function ID: 20006
 // Name: useVoiceChannelAppSurface
-// Dependencies: [7019, 16990, 19673, 504, 14041, 19440, 2]
+// Dependencies: [7019, 16990, 19675, 504, 14041, 19442, 2]
 // Exports: useCurrentVoiceChannelApplicationId, useVoiceChannelAppAvailable, useVoiceChannelAppOpen, useVoiceChannelAppVisible
 
-// Module 20003 (useVoiceChannelAppSurface)
+// Module 20005 (useVoiceChannelAppSurface)
 import voiceChannelAppSession from "voiceChannelAppSession" /* 14041 */;
-import useChannelAppFrameTeardownDefault from "useChannelAppFrameTeardown" /* 19440 */;
-import useVoiceChannelApp from "useVoiceChannelApp" /* 19673 */;
+import useChannelAppFrameTeardownDefault from "useChannelAppFrameTeardown" /* 19442 */;
+import useVoiceChannelApp from "useVoiceChannelApp" /* 19675 */;
 import FramesStore from "FramesStore" /* 7019 */;
 import VoiceChannelAppStore from "VoiceChannelAppStore" /* 16990 */;
 import size from "module_2" /* 2 */;

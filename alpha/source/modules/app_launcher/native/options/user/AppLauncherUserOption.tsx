@@ -1,7 +1,7 @@
 // Module ID: 13520
 // Function ID: 13521
 // Name: AppLauncherUserOption
-// Dependencies: [32, 19, 5307, 21, 5306, 575, 504, 13511, 2020, 5552, 13521, 2121, 13521, 1187, 13514, 10898, 13518, 5929, 2]
+// Dependencies: [32, 19, 5307, 21, 5306, 575, 504, 13511, 2020, 5542, 13521, 2121, 13521, 1187, 13514, 10898, 13518, 5919, 2]
 // Exports: default
 
 // Module 13520 (AppLauncherUserOption)
@@ -9,7 +9,7 @@ import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 2020 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import AppLauncherSelectOptionFormRowDefault from "AppLauncherSelectOptionFormRow" /* 13511 */;
 import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 13514 */;
 import AppLauncherUserListActionSheet from "AppLauncherUserListActionSheet" /* 13521 */;
@@ -116,7 +116,7 @@ export default function AppLauncherUserOption(option) {
     tmp9Result2 = null;
     if (null != tmp6) {
       const obj6 = { variant: "body-md/medium", color: "text-default", children: tmp6 };
-      tmp9Result2 = tmp9(tmp2(5929).Text, obj6);
+      tmp9Result2 = tmp9(tmp2(5919).Text, obj6);
     }
   }
   return jsx(tmp11, obj2);

@@ -1,13 +1,13 @@
 // Module ID: 13490
 // Function ID: 13491
 // Name: ApplicationCommandValidationUtils
-// Dependencies: [6345, 5985, 11398, 1113, 13491, 2]
+// Dependencies: [6335, 5975, 11398, 1113, 13491, 2]
 // Exports: getValidationResults
 
 // Module 13490 (ApplicationCommandValidationUtils)
 import intl3 from "intl" /* 1113 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5985 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6345 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5975 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6335 */;
 import ApplicationCommandOptionUtils from "ApplicationCommandOptionUtils" /* 11398 */;
 import ApplicationCommandValidatorsDefault from "ApplicationCommandValidators" /* 13491 */;
 import size from "module_2" /* 2 */;

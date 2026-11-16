@@ -1,9 +1,9 @@
-// Module ID: 18588
-// Function ID: 18589
+// Module ID: 18590
+// Function ID: 18591
 // Name: ParentalControlsDirectMessages
 // Dependencies: [8740, 9202, 17346, 17351, 17347, 12406, 1113, 2]
 
-// Module 18588 (ParentalControlsDirectMessages)
+// Module 18590 (ParentalControlsDirectMessages)
 import intl2 from "intl" /* 1113 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;
 import useParentalControlSettings from "useParentalControlSettings" /* 17346 */;

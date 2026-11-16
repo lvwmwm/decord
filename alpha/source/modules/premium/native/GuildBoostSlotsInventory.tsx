@@ -1,7 +1,7 @@
 // Module ID: 15374
 // Function ID: 15375
 // Name: GuildBoostSlotsInventory
-// Dependencies: [19, 17, 1192, 5177, 9236, 2179, 1072, 21, 5306, 575, 6826, 9440, 5929, 1113, 11, 7428, 6952, 7720, 6020, 15375, 504, 1414, 15376, 15380, 6767, 9238, 12, 2]
+// Dependencies: [19, 17, 1192, 5177, 9236, 2179, 1072, 21, 5306, 575, 6816, 9440, 5919, 1113, 11, 7428, 6942, 7720, 6010, 15375, 504, 1414, 15376, 15380, 6757, 9238, 12, 2]
 // Exports: default
 
 // Module 15374 (GuildBoostSlotsInventory)
@@ -12,10 +12,10 @@ import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import FastImageDefault from "FastImage" /* 6020 */;
-import actions_BillingActionCreatorsAll from "actions/BillingActionCreators" /* 6767 */;
-import BoostingActionCreators from "BoostingActionCreators" /* 6952 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import actions_BillingActionCreatorsAll from "actions/BillingActionCreators" /* 6757 */;
+import BoostingActionCreators from "BoostingActionCreators" /* 6942 */;
 import GuildIcon from "GuildIcon" /* 7720 */;
 import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 9238 */;
 import useCountdownDefault from "useCountdown" /* 9440 */;
@@ -27,7 +27,7 @@ import GuildBoostSlotStore from "GuildBoostSlotStore" /* 9236 */;
 import SubscriptionStore from "SubscriptionStore" /* 2179 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
-import TextStyles from "TextStyles" /* 6826 */;
+import TextStyles from "TextStyles" /* 6816 */;
 import size_mod from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;
@@ -154,7 +154,7 @@ function GuildBoostSlot(guildBoostSlot) {
       };
       const PressableOpacity = guildBoostSlot(7428).PressableOpacity;
       obj6 = { variant: "body-md/medium", color: "control-brand-foreground", children: intl2.string(guildBoostSlot(1113).t.jqqLb6) };
-      Text = guildBoostSlot(5929).Text;
+      Text = guildBoostSlot(5919).Text;
       intl2 = guildBoostSlot(1113).intl;
       tmp6Result2 = tmp6(PressableOpacity, obj5);
     }
@@ -218,7 +218,7 @@ function UnusedGuildBoostSlots(unusedSlots) {
     };
     PressableOpacity = found(7428).PressableOpacity;
     obj5 = { variant: "body-md/medium", color: "text-link", children: intl2.string(found(1113).t["7KyPor"]) };
-    Text = found(5929).Text;
+    Text = found(5919).Text;
     intl2 = found(1113).intl;
     tmp4 = closure_10(GuildBoostSlotsInventoryRow, obj2);
   }
@@ -311,7 +311,7 @@ function BoostedGuild(arg0) {
   const obj5 = { style: tmp.subscriptionBody, children: items4 };
   const obj6 = { style: tmp.subscriptionImageView, children: items3 };
   const tmp12 = guildBoostSlots;
-  const tmp13 = guildBoostSlots(6020);
+  const tmp13 = guildBoostSlots(6010);
   if (null == guildBannerSource) {
     prop = tmp.subscriptionImageFallback;
   }
@@ -407,7 +407,7 @@ export default function GuildBoostSlotsInventory() {
       if (found.length > 0) {
         const obj6 = { children: items3 };
         const obj7 = { style: tmp.header, variant: "body-sm/medium", color: "text-default", children: intl.string(intl3.t.gB9oQ7) };
-        const Text = tmp3(5929).Text;
+        const Text = tmp3(5919).Text;
         intl = tmp3(1113).intl;
         items3 = [
           closure_10(Text, obj7),

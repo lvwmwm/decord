@@ -1,12 +1,12 @@
 // Module ID: 13371
 // Function ID: 13372
 // Name: useActivityShelfItems
-// Dependencies: [19, 5976, 504, 13372, 13373, 13374, 2]
+// Dependencies: [19, 5966, 504, 13372, 13373, 13374, 2]
 // Exports: default
 
 // Module 13371 (useActivityShelfItems)
 import react from "react" /* 19 */;
-import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 5976 */;
+import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 5966 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, set;

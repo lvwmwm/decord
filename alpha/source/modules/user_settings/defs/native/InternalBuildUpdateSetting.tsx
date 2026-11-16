@@ -1,9 +1,9 @@
-// Module ID: 18396
-// Function ID: 18397
+// Module ID: 18398
+// Function ID: 18399
 // Name: InternalBuildUpdateSetting
-// Dependencies: [16844, 21, 16344, 504, 2169, 17372, 6035, 13308, 12406, 2]
+// Dependencies: [16844, 21, 16344, 504, 2169, 17372, 6025, 13308, 12406, 2]
 
-// Module 18396 (InternalBuildUpdateSetting)
+// Module 18398 (InternalBuildUpdateSetting)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import _modDef2169 from "module_2169" /* 2169 */;
@@ -25,7 +25,7 @@ let obj = {
     const obj = get_initialized;
     const tmp3 = jsx;
     if (obj.useStateFromStores(items, () => null !== MobileNativeUpdateStore.latestFetchedBuild().newBuild)) {
-      RefreshIcon = tmp(6035).DownloadIcon;
+      RefreshIcon = tmp(6025).DownloadIcon;
     } else {
       RefreshIcon = tmp(13308).RefreshIcon;
     }

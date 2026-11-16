@@ -1,7 +1,7 @@
 // Module ID: 12438
 // Function ID: 12439
 // Name: useConjureProjectLinkEmbeds
-// Dependencies: [19, 2165, 5155, 5238, 1388, 7017, 12439, 6055, 12440, 504, 1452, 12441, 12445, 12446, 2]
+// Dependencies: [19, 2165, 5155, 5238, 1388, 7017, 12439, 6045, 12440, 504, 1452, 12441, 12445, 12446, 2]
 // Exports: default
 
 // Module 12438 (useConjureProjectLinkEmbeds)

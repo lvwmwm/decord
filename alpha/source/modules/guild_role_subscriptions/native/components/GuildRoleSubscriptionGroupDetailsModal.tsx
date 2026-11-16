@@ -1,26 +1,26 @@
-// Module ID: 20726
-// Function ID: 20727
+// Module ID: 20729
+// Function ID: 20730
 // Name: GuildRoleSubscriptionGroupDetailsModal
-// Dependencies: [32, 19, 17, 20727, 17824, 1072, 21, 5306, 575, 20728, 20723, 7746, 1113, 20729, 5929, 17836, 7859, 20730, 2]
+// Dependencies: [32, 19, 17, 20730, 17826, 1072, 21, 5306, 575, 20731, 20726, 7746, 1113, 20732, 5919, 17838, 7859, 20733, 2]
 // Exports: default
 
-// Module 20726 (GuildRoleSubscriptionGroupDetailsModal)
+// Module 20729 (GuildRoleSubscriptionGroupDetailsModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import TableRowGroup from "TableRowGroup" /* 7746 */;
 import TextArea2 from "TextArea" /* 7859 */;
-import FormSeparatorDefault from "FormSeparator" /* 17836 */;
-import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 20723 */;
-import FormStylesDefault from "FormStyles" /* 20728 */;
-import FormImagePicker from "FormImagePicker" /* 20729 */;
-import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 20730 */;
+import FormSeparatorDefault from "FormSeparator" /* 17838 */;
+import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 20726 */;
+import FormStylesDefault from "FormStyles" /* 20731 */;
+import FormImagePicker from "FormImagePicker" /* 20732 */;
+import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 20733 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 20727 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17824 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 20730 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17826 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;

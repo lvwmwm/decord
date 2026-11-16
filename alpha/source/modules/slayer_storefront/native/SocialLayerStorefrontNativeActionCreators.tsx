@@ -1,7 +1,7 @@
 // Module ID: 11729
 // Function ID: 11730
 // Name: SocialLayerStorefrontNativeActionCreators
-// Dependencies: [5, 7352, 9465, 502, 7070, 21, 6269, 1113, 4031, 9472, 10018, 6848, 11730, 2121, 2186, 11734, 11745, 11792, 2]
+// Dependencies: [5, 7352, 9465, 502, 7070, 21, 6259, 1113, 4031, 9472, 10018, 6838, 11730, 2121, 2186, 11734, 11745, 11792, 2]
 // Exports: closeSocialLayerStorefrontGiftModal, closeSocialLayerStorefrontProductDetailsModal, openSocialLayerStorefrontGiftModal, openSocialLayerStorefrontProductDetailsModal, openSocialLayerStorefrontProductGiftPurchaseSuccessModal, openSocialLayerStorefrontProductSelfPurchaseSuccessModal, openSocialLayerStorefrontUnsupportedOnMobileAlert, toggleSocialLayerStorefrontWishlist
 
 // Module 11729 (SocialLayerStorefrontNativeActionCreators)
@@ -10,8 +10,8 @@ import intl3 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
 import BillingPlatformUtils from "BillingPlatformUtils" /* 2186 */;
 import _modDef4031 from "module_4031" /* 4031 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6269 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6259 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import WishlistActionCreatorsDefault from "WishlistActionCreators" /* 9472 */;
 import SocialLayerStorefrontActionCreators from "SocialLayerStorefrontActionCreators" /* 10018 */;
 import redirectToSlayerStorefrontWebDefault from "redirectToSlayerStorefrontWeb" /* 11734 */;

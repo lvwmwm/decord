@@ -1,14 +1,14 @@
 // Module ID: 15470
 // Function ID: 15471
 // Name: OrbsBadgeCoachmark
-// Dependencies: [19, 17, 21, 5306, 6020, 15471, 1113, 5493, 9567, 2]
+// Dependencies: [19, 17, 21, 5306, 6010, 15471, 1113, 5483, 9567, 2]
 // Exports: default, useOrbsBadgeCoachmark
 
 // Module 15470 (OrbsBadgeCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import useCoachmark from "useCoachmark" /* 9567 */;
 import _modDef15471 from "module_15471" /* 15471 */;
 import react from "react" /* 19 */;

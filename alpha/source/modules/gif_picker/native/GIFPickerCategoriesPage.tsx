@@ -1,7 +1,7 @@
 // Module ID: 11352
 // Function ID: 11353
 // Name: GIFPickerCategoriesPage
-// Dependencies: [19, 17, 11338, 21, 5306, 11342, 575, 11250, 504, 11339, 11353, 11288, 7837, 7830, 5914, 1113, 2]
+// Dependencies: [19, 17, 11338, 21, 5306, 11342, 575, 11250, 504, 11339, 11353, 11288, 7837, 7830, 5904, 1113, 2]
 
 // Module 11352 (GIFPickerCategoriesPage)
 import react_native from "react-native" /* 17 */;

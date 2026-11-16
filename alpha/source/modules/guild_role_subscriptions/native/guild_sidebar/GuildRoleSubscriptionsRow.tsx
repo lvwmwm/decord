@@ -1,18 +1,18 @@
-// Module ID: 18922
-// Function ID: 18923
+// Module ID: 18924
+// Function ID: 18925
 // Name: GuildRoleSubscriptionsRow
-// Dependencies: [19, 1072, 5162, 6060, 21, 5306, 575, 1099, 5552, 18923, 2121, 14789, 1113, 15144, 2]
+// Dependencies: [19, 1072, 5162, 6050, 21, 5306, 575, 1099, 5542, 18925, 2121, 14789, 1113, 15144, 2]
 // Exports: default
 
-// Module 18922 (GuildRoleSubscriptionsRow)
+// Module 18924 (GuildRoleSubscriptionsRow)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import router_utils from "router_utils" /* 1099 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
 import ChannelConstants from "ChannelConstants" /* 5162 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 6060 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 6050 */;
 import BaseChannelItemDefault from "BaseChannelItem" /* 14789 */;
 import AssetRegistryDefault from "AssetRegistry" /* 15144 */;
 import react from "react" /* 19 */;
@@ -55,7 +55,7 @@ export default function GuildRoleSubscriptionsRow(selected) {
         obj.hideActionSheet(closure_1_1);
       }
     };
-    obj.openLazy(asyncRequire(18923, dependencyMap.paths), c1, obj2);
+    obj.openLazy(asyncRequire(18925, dependencyMap.paths), c1, obj2);
   }, items1);
   const ChannelModes = id(14789).ChannelModes;
   if (selected) {

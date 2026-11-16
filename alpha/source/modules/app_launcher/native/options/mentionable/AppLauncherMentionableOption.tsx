@@ -1,7 +1,7 @@
 // Module ID: 13513
 // Function ID: 13514
 // Name: AppLauncherMentionableOption
-// Dependencies: [32, 19, 5307, 5212, 1388, 1083, 21, 5306, 575, 504, 13514, 10898, 13515, 1187, 13517, 13518, 13511, 5552, 13515, 2121, 2]
+// Dependencies: [32, 19, 5307, 5212, 1388, 1083, 21, 5306, 575, 504, 13514, 10898, 13515, 1187, 13517, 13518, 13511, 5542, 13515, 2121, 2]
 // Exports: default
 
 // Module 13513 (AppLauncherMentionableOption)
@@ -11,7 +11,7 @@ import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import native from "native" /* 1187 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 13514 */;
 import AppLauncherMentionableListActionSheet from "AppLauncherMentionableListActionSheet" /* 13515 */;
 import AppLauncherRoleListActionSheet from "AppLauncherRoleListActionSheet" /* 13517 */;

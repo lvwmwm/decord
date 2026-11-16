@@ -1,13 +1,13 @@
-// Module ID: 18702
-// Function ID: 18703
+// Module ID: 18704
+// Function ID: 18705
 // Name: AuthManager
-// Dependencies: [5, 17, 14825, 1072, 6902, 15023, 2123, 572, 5151, 8199, 18703, 1380, 14828, 8460, 15111, 18709, 15022, 7231, 8860, 2]
+// Dependencies: [5, 17, 14825, 1072, 6892, 15023, 2123, 572, 5151, 8199, 18705, 1380, 14828, 8460, 15111, 18711, 15022, 7231, 8860, 2]
 
-// Module 18702 (AuthManager)
+// Module 18704 (AuthManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 6902 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 6892 */;
 import transitionToGuild from "transitionToGuild" /* 7231 */;
 import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8460 */;
 import SentMessageIntentsHandlerDefault from "SentMessageIntentsHandler" /* 8860 */;
@@ -15,7 +15,7 @@ import PushNotificationPermissionStore from "PushNotificationPermissionStore" /*
 import NUFActionCreators from "NUFActionCreators" /* 15022 */;
 import NUFConstants from "NUFConstants" /* 15023 */;
 import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 15111 */;
-import MobileOnboardingFrictionExperimentDefault from "MobileOnboardingFrictionExperiment" /* 18709 */;
+import MobileOnboardingFrictionExperimentDefault from "MobileOnboardingFrictionExperiment" /* 18711 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_native from "react-native" /* 17 */;
 import LifecycleManager from "LifecycleManager" /* 2123 */;

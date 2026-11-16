@@ -1,7 +1,7 @@
 // Module ID: 11356
 // Function ID: 11357
 // Name: StickerPicker
-// Dependencies: [32, 19, 17, 1388, 7010, 5134, 1072, 21, 5306, 575, 1256, 11357, 11359, 504, 7918, 7937, 11250, 1263, 11364, 7225, 6792, 11365, 11170, 6015, 1113, 5995, 11374, 7825, 11384, 11385, 11391, 2]
+// Dependencies: [32, 19, 17, 1388, 7010, 5134, 1072, 21, 5306, 575, 1256, 11357, 11359, 504, 7918, 7937, 11250, 1263, 11364, 7225, 6782, 11365, 11170, 6005, 1113, 5985, 11374, 7825, 11384, 11385, 11391, 2]
 
 // Module 11356 (StickerPicker)
 import nativeDefault from "native" /* 575 */;
@@ -9,8 +9,8 @@ import intl2 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import react_native from "react-native" /* 1263 */;
 import StickersConstants from "StickersConstants" /* 5134 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 6015 */;
-import StickersUtils from "StickersUtils" /* 6792 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
+import StickersUtils from "StickersUtils" /* 6782 */;
 import StickerSendability from "StickerSendability" /* 7225 */;
 import StickersSearchUtils from "StickersSearchUtils" /* 11364 */;
 import openStickerPackDetailActionSheet from "openStickerPackDetailActionSheet" /* 11365 */;
@@ -194,7 +194,7 @@ const memoResult = react.memo(function StickerPicker(channel) {
     const obj2 = { type: constants4.STICKER_SEARCH, channel_id: channel.id, guild_id: channel.guild_id };
     obj.track(constants.CHAT_INPUT_COMPONENT_VIEWED, obj2);
   }, items4);
-  let obj4 = channel(5995);
+  let obj4 = channel(5985);
   const items5 = [channel];
   const isTidaMediaTakedownRegion = obj4.useIsTidaMediaTakedownRegion();
   let tmp20 = closure_15;

@@ -1,7 +1,7 @@
 // Module ID: 9972
 // Function ID: 9973
 // Name: PremiumSubscriptionInvoice
-// Dependencies: [109, 32, 5, 19, 2182, 1072, 2174, 1285, 572, 6757, 38, 6766, 2]
+// Dependencies: [109, 32, 5, 19, 2182, 1072, 2174, 1285, 572, 6747, 38, 6756, 2]
 // Exports: getItemUnitPriceWithDiscount, useFetchGenericInvoicePreview, useFetchSubscriptionGiftInvoicePreview, useFetchSubscriptionInvoicePreview, useGetSubscriptionInvoice
 
 // Module 9972 (PremiumSubscriptionInvoice)

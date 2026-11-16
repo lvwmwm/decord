@@ -1,9 +1,9 @@
-// Module ID: 18591
-// Function ID: 18592
+// Module ID: 18593
+// Function ID: 18594
 // Name: ParentalControlsFriendRequestsMutualFriendsSetting
 // Dependencies: [19, 8740, 9202, 1072, 9618, 17347, 7813, 17351, 1406, 12406, 1113, 2]
 
-// Module 18591 (ParentalControlsFriendRequestsMutualFriendsSetting)
+// Module 18593 (ParentalControlsFriendRequestsMutualFriendsSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import FlagUtilsAll from "FlagUtils" /* 1406 */;

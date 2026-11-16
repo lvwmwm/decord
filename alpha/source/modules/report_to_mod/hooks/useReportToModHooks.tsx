@@ -1,7 +1,7 @@
 // Module ID: 12638
 // Function ID: 12639
 // Name: useReportToModHooks
-// Dependencies: [19, 5177, 6372, 504, 7284, 8738, 11159, 8660, 7350, 2]
+// Dependencies: [19, 5177, 6362, 504, 7284, 8738, 11159, 8660, 7350, 2]
 // Exports: loadOriginalAuthorFromSnapshot, useIsModeratorReportOrPostChannel, useIsModeratorReportPostChannel, useIsReportToModEnabled, useLoadReportedMessage, useReportToModChannelId
 
 // Module 12638 (useReportToModHooks)
@@ -12,7 +12,7 @@ import MessageActionCreatorsDefault from "MessageActionCreators" /* 8660 */;
 import getGuildModeratorReportChannelIdDefault from "getGuildModeratorReportChannelId" /* 8738 */;
 import ReportToModUtils from "ReportToModUtils" /* 11159 */;
 import GuildStore from "GuildStore" /* 5177 */;
-import MessageStore from "MessageStore" /* 6372 */;
+import MessageStore from "MessageStore" /* 6362 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

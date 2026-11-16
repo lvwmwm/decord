@@ -1,16 +1,16 @@
-// Module ID: 19911
-// Function ID: 19912
+// Module ID: 19913
+// Function ID: 19914
 // Name: usePIPAvoidanceSpecs
-// Dependencies: [1655, 13129, 19912, 11333, 19783, 19913, 11989, 2]
+// Dependencies: [1655, 13129, 19914, 11333, 19785, 19915, 11989, 2]
 // Exports: default
 
-// Module 19911 (usePIPAvoidanceSpecs)
+// Module 19913 (usePIPAvoidanceSpecs)
 import _mod1655 from "module_1655" /* 1655 */;
 import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11989 */;
 import useAnimatedKeyboardHeightDefault from "useAnimatedKeyboardHeight" /* 13129 */;
-import getPIPBottomOffsetForPIPModeDefault from "getPIPBottomOffsetForPIPMode" /* 19783 */;
-import useScreenNameSharedValueDefault from "useScreenNameSharedValue" /* 19912 */;
-import getAdjustedBottomOffsetsDefault from "getAdjustedBottomOffsets" /* 19913 */;
+import getPIPBottomOffsetForPIPModeDefault from "getPIPBottomOffsetForPIPMode" /* 19785 */;
+import useScreenNameSharedValueDefault from "useScreenNameSharedValue" /* 19914 */;
+import getAdjustedBottomOffsetsDefault from "getAdjustedBottomOffsets" /* 19915 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

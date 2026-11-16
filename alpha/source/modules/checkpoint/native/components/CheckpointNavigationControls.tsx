@@ -1,7 +1,7 @@
 // Module ID: 14486
 // Function ID: 14487
 // Name: CheckpointNavigationControls
-// Dependencies: [5, 17, 14253, 6377, 1072, 21, 560, 5306, 575, 5902, 14485, 14487, 14489, 14490, 1113, 7606, 14271, 3317, 6012, 2188, 14492, 14493, 11095, 10920, 6421, 14260, 6014, 14495, 14496, 504, 6401, 12289, 14298, 6744, 6745, 1630, 2]
+// Dependencies: [5, 17, 14253, 6367, 1072, 21, 560, 5306, 575, 5892, 14485, 14487, 14489, 14490, 1113, 7606, 14271, 3317, 6002, 2188, 14492, 14493, 11095, 10920, 6411, 14260, 6004, 14495, 14496, 504, 6391, 12289, 14298, 6734, 6735, 1630, 2]
 // Exports: default, useCheckpointHomeControlsHeight
 
 // Module 14486 (CheckpointNavigationControls)
@@ -11,8 +11,8 @@ import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
 import _modDef3317 from "module_3317" /* 3317 */;
-import useToken from "useToken" /* 5902 */;
-import CheckpointCardColors from "CheckpointCardColors" /* 6401 */;
+import useToken from "useToken" /* 5892 */;
+import CheckpointCardColors from "CheckpointCardColors" /* 6391 */;
 import ArrowSmallRightIcon from "ArrowSmallRightIcon" /* 10920 */;
 import RetryIcon from "RetryIcon" /* 11095 */;
 import ShareIcon from "ShareIcon" /* 12289 */;
@@ -27,7 +27,7 @@ import showNitroLockedToastDefault from "showNitroLockedToast" /* 14496 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_native from "react-native" /* 17 */;
 import CheckpointStore from "CheckpointStore" /* 14253 */;
-import CheckpointConstants from "CheckpointConstants" /* 6377 */;
+import CheckpointConstants from "CheckpointConstants" /* 6367 */;
 import Fragment from "Fragment" /* 21 */;
 import module_560 from "module_560" /* 560 */;
 import createStyles_mod from "createStyles" /* 5306 */;
@@ -416,26 +416,26 @@ function RouteControls(arg0) {
   ({ isLastRoute, onSave, onReplay, onShare } = arg0);
   const tmp = closure_14();
   const tmp4 = checkpointRouteBlockedTrait(14298)();
-  const obj = onNext(6744);
+  const obj = onNext(6734);
   checkpointRouteBlockedTrait = obj.getCheckpointRouteBlockedTrait(activeRoute, tmp4);
   if (null != checkpointRouteBlockedTrait) {
-    const tmp5Result = onNext(6744);
+    const tmp5Result = onNext(6734);
     nitroLockedMessage = tmp5Result.getNitroLockedMessage(checkpointRouteBlockedTrait);
   }
   const items = [CheckpointStore];
   const tmp5Result2 = onNext(504);
   const stateFromStores = tmp5Result2.useStateFromStores(items, () => isSaving.isSaving);
-  if (onNext(6745).CheckpointRoute.HOME === activeRoute) {
+  if (onNext(6735).CheckpointRoute.HOME === activeRoute) {
     const obj2 = { onStart: onNext };
     return closure_9(HomeControls, obj2);
-  } else if (onNext(6745).CheckpointRoute.FINALIZE_CHARACTER === activeRoute) {
+  } else if (onNext(6735).CheckpointRoute.FINALIZE_CHARACTER === activeRoute) {
     const obj3 = { children: items1 };
     const obj4 = { onPress: onBack, disabled: stateFromStores, hitSlop: checkpointRouteBlockedTrait(575).space.PX_4, style: tmp.noBorderBackButton };
     items1 = [closure_9(BackButton, obj4), ];
     const obj5 = { onSave, isSaving: stateFromStores, blockedTrait: checkpointRouteBlockedTrait, accessibilityHint: nitroLockedMessage };
     items1[1] = closure_9(FinalizeCharacterSaveButton, obj5);
     return closure_10(closure_11, obj3);
-  } else if (onNext(6745).CheckpointRoute.SUMMARY === activeRoute) {
+  } else if (onNext(6735).CheckpointRoute.SUMMARY === activeRoute) {
     const obj6 = { onBack, onReplay, onShare };
     return closure_9(SummaryControls, obj6);
   } else {

@@ -1,7 +1,7 @@
 // Module ID: 9606
 // Function ID: 9607
 // Name: MobileTrialUtils
-// Dependencies: [1390, 9310, 5348, 5139, 2174, 1113, 2]
+// Dependencies: [1390, 9310, 5338, 5139, 2174, 1113, 2]
 // Exports: useNitroTrialCtaOverride, usePremiumTrialOfferPremiumType, useShouldShowPremiumTrialUserSettingsAvatarBadge
 
 // Module 9606 (MobileTrialUtils)
@@ -9,7 +9,7 @@ import intl2 from "intl" /* 1113 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
 import PremiumUtils from "PremiumUtils" /* 2174 */;
 import dismissible_content from "dismissible_content" /* 5139 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5348 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5338 */;
 import usePremiumTrialOffer from "usePremiumTrialOffer" /* 9310 */;
 import size from "module_2" /* 2 */;
 

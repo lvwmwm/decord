@@ -1,9 +1,9 @@
-// Module ID: 6957
-// Function ID: 6958
+// Module ID: 6947
+// Function ID: 6948
 // Name: GuildAvailabilityStore
 // Dependencies: [5177, 3, 504, 572, 2]
 
-// Module 6957 (GuildAvailabilityStore)
+// Module 6947 (GuildAvailabilityStore)
 import LoggerDefault from "Logger" /* 3 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;

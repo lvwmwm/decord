@@ -1,10 +1,10 @@
-// Module ID: 18033
-// Function ID: 18034
+// Module ID: 18035
+// Function ID: 18036
 // Name: ShowLinkDecorationsSetting
 // Dependencies: [5307, 9202, 504, 16889, 12406, 1113, 2]
 // Exports: onShowLinkDecorationsValueChange, useShowLinkDecorationsSettingValue
 
-// Module 18033 (ShowLinkDecorationsSetting)
+// Module 18035 (ShowLinkDecorationsSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;

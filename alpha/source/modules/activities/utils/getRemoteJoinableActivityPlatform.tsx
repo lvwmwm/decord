@@ -1,7 +1,7 @@
 // Module ID: 12694
 // Function ID: 12695
 // Name: getRemoteJoinableActivityPlatform
-// Dependencies: [7222, 6073, 1072, 1360, 7472, 1406, 12695, 2]
+// Dependencies: [7222, 6063, 1072, 1360, 7472, 1406, 12695, 2]
 // Exports: getRemoteJoinableActivityPlatform
 
 // Module 12694 (getRemoteJoinableActivityPlatform)
@@ -10,7 +10,7 @@ import utils_PlatformUtils from "utils/PlatformUtils" /* 1360 */;
 import FlagUtils from "FlagUtils" /* 1406 */;
 import ActivityFlagUtils from "ActivityFlagUtils" /* 12695 */;
 import ConnectedAppsStore from "ConnectedAppsStore" /* 7222 */;
-import SessionsStore from "SessionsStore" /* 6073 */;
+import SessionsStore from "SessionsStore" /* 6063 */;
 import size from "module_2" /* 2 */;
 
 const ActivityFlags = Constants.ActivityFlags;

@@ -1,7 +1,7 @@
 // Module ID: 14089
 // Function ID: 14090
 // Name: GuildFallbackAbstractUI
-// Dependencies: [19, 21, 14090, 14091, 14092, 7755, 6020, 2]
+// Dependencies: [19, 21, 14090, 14091, 14092, 7755, 6010, 2]
 // Exports: GuildFallbackAbstractUI
 
 // Module 14089 (GuildFallbackAbstractUI)

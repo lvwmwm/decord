@@ -1,13 +1,13 @@
 // Module ID: 13702
 // Function ID: 13703
 // Name: ConjureNativeStepImages
-// Dependencies: [19, 17, 21, 5306, 575, 13230, 6020, 13231, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 13230, 6010, 13231, 2]
 // Exports: default
 
 // Module 13702 (ConjureNativeStepImages)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import useConjureAttachmentImage from "useConjureAttachmentImage" /* 13230 */;
 import openConjureNativeImages2 from "openConjureNativeImages" /* 13231 */;
 import react from "react" /* 19 */;

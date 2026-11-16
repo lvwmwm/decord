@@ -1,19 +1,19 @@
 // Module ID: 8680
 // Function ID: 8681
 // Name: modules/Messages
-// Dependencies: [5, 32, 6800, 5155, 8681, 3, 6798, 5184, 8687, 8690, 5185, 11, 2]
+// Dependencies: [5, 32, 6790, 5155, 8681, 3, 6788, 5184, 8687, 8690, 5185, 11, 2]
 // Exports: isLikelyNotDelta
 
 // Module 8680 (modules/Messages)
 import LoggerDefault from "Logger" /* 3 */;
 import DatabaseDaosDefault from "DatabaseDaos" /* 5184 */;
 import _mod5185 from "module_5185" /* 5185 */;
-import requireSortedDescending from "requireSortedDescending" /* 6798 */;
+import requireSortedDescending from "requireSortedDescending" /* 6788 */;
 import isReadableChannel from "isReadableChannel" /* 8687 */;
 import KvMessage2 from "KvMessage" /* 8690 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6800 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6790 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import SaveableChannelsStore from "SaveableChannelsStore" /* 8681 */;
 import size from "module_2" /* 2 */;

@@ -1,7 +1,7 @@
 // Module ID: 11921
 // Function ID: 11922
 // Name: ForLaterCardActionButtons
-// Dependencies: [19, 17, 21, 5306, 5552, 11922, 2121, 11915, 11925, 1113, 11926, 7549, 11928, 10901, 9148, 7988, 7421, 2]
+// Dependencies: [19, 17, 21, 5306, 5542, 11922, 2121, 11915, 11925, 1113, 11926, 7549, 11928, 10901, 9148, 7988, 7421, 2]
 // Exports: default, useForLaterCardMenuItems
 
 // Module 11921 (ForLaterCardActionButtons)
@@ -9,7 +9,7 @@ import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7421 */;
 import IconButton2 from "IconButton" /* 7988 */;
 import ContextMenu from "ContextMenu" /* 9148 */;

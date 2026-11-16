@@ -1,10 +1,10 @@
-// Module ID: 19704
-// Function ID: 19705
+// Module ID: 19706
+// Function ID: 19707
 // Name: ChannelSettingsIntegrationsOverview
-// Dependencies: [19, 5159, 5155, 1072, 21, 1502, 7259, 7746, 1113, 7443, 8151, 5306, 575, 504, 8106, 6337, 19570, 19705, 2]
+// Dependencies: [19, 5159, 5155, 1072, 21, 1502, 7259, 7746, 1113, 7443, 8151, 5306, 575, 504, 8106, 6327, 19572, 19707, 2]
 // Exports: default
 
-// Module 19704 (ChannelSettingsIntegrationsOverview)
+// Module 19706 (ChannelSettingsIntegrationsOverview)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -12,8 +12,8 @@ import intl5 from "intl" /* 1113 */;
 import useNavigation from "useNavigation" /* 1502 */;
 import ChannelRecord from "ChannelRecord" /* 5159 */;
 import TableRowApplicationIconDefault from "TableRowApplicationIcon" /* 8151 */;
-import WebhookIcon from "WebhookIcon" /* 19570 */;
-import ChannelsFollowedIcon from "ChannelsFollowedIcon" /* 19705 */;
+import WebhookIcon from "WebhookIcon" /* 19572 */;
+import ChannelsFollowedIcon from "ChannelsFollowedIcon" /* 19707 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import Fragment from "Fragment" /* 21 */;
@@ -94,7 +94,7 @@ export default function ConnectedChannelSettingsIntegrationsOverview(arg0) {
     const Form = tmp(8106).Form;
     obj4 = { style: obj5, spacing: nativeDefault.space.PX_24, children: items2 };
     obj5 = { paddingHorizontal: nativeDefault.space.PX_12 };
-    Stack = tmp(6337).Stack;
+    Stack = tmp(6327).Stack;
     if (canManageWebhooks) {
       const TableRowGroup = tmp(7746).TableRowGroup;
       const obj6 = {

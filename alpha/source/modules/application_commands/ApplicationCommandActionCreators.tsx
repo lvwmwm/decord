@@ -1,7 +1,7 @@
 // Module ID: 9005
 // Function ID: 9006
 // Name: ApplicationCommandActionCreators
-// Dependencies: [502, 9006, 1072, 38, 5985, 572, 1285, 8724, 11, 6381, 2]
+// Dependencies: [502, 9006, 1072, 38, 5975, 572, 1285, 8724, 11, 6371, 2]
 // Exports: fetchCommand, fetchCommands, fetchCommandsForApplication, performAutocomplete, setActiveCommand, setAppLauncherActiveCommand, setPreferredCommandId, updateApplicationGuildCommandPermissions, updateChannelState, updateOptionStates, updateOptionValidationStates, updateRegistry
 
 // Module 9005 (ApplicationCommandActionCreators)
@@ -10,8 +10,8 @@ import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5985 */;
-import InteractionTypes from "InteractionTypes" /* 6381 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5975 */;
+import InteractionTypes from "InteractionTypes" /* 6371 */;
 import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8724 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 9006 */;

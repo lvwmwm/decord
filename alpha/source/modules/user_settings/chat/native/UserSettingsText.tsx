@@ -1,16 +1,16 @@
-// Module ID: 18085
-// Function ID: 18086
+// Module ID: 18087
+// Function ID: 18088
 // Name: UserSettingsText
-// Dependencies: [19, 17, 1388, 2179, 1193, 1194, 1072, 21, 5306, 575, 1256, 5131, 6242, 5902, 504, 2174, 1502, 7809, 1187, 11369, 5929, 1113, 8106, 6337, 7746, 7954, 7745, 7747, 2]
+// Dependencies: [19, 17, 1388, 2179, 1193, 1194, 1072, 21, 5306, 575, 1256, 5131, 6232, 5892, 504, 2174, 1502, 7809, 1187, 11369, 5919, 1113, 8106, 6327, 7746, 7954, 7745, 7747, 2]
 // Exports: default, setDataSavingMode, setImageDescriptions, setLowQualityImageMode, setStickerAutocomplete, setVideoUploadQuality
 
-// Module 18085 (UserSettingsText)
+// Module 18087 (UserSettingsText)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import UnsyncedUserSettingsStore2 from "UnsyncedUserSettingsStore" /* 1194 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import UserSettings from "UserSettings" /* 5131 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 6242 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 6232 */;
 import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7809 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;

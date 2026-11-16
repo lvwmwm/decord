@@ -1,17 +1,17 @@
 // Module ID: 14649
 // Function ID: 14650
 // Name: AppLauncherOnboardingChatInputButtonAnimation
-// Dependencies: [19, 17, 5307, 21, 5306, 5942, 575, 5548, 5551, 504, 9060, 13369, 1655, 5923, 14650, 13394, 2]
+// Dependencies: [19, 17, 5307, 21, 5306, 5932, 575, 5538, 5541, 504, 9060, 13369, 1655, 5913, 14650, 13394, 2]
 // Exports: AppLauncherOnboardingChatInputButtonAnimation
 
 // Module 14649 (AppLauncherOnboardingChatInputButtonAnimation)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5548 */;
-import timingPresets from "timingPresets" /* 5551 */;
-import LottieAnimationViewDefault from "LottieAnimationView" /* 5923 */;
-import ButtonConstants from "ButtonConstants" /* 5942 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import timingPresets from "timingPresets" /* 5541 */;
+import LottieAnimationViewDefault from "LottieAnimationView" /* 5913 */;
+import ButtonConstants from "ButtonConstants" /* 5932 */;
 import ClientThemesOverrides from "ClientThemesOverrides" /* 9060 */;
 import useAppLauncherOnboardingContentDefault from "useAppLauncherOnboardingContent" /* 13369 */;
 import _mod13394 from "module_13394" /* 13394 */;

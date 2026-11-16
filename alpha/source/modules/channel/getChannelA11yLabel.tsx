@@ -1,12 +1,12 @@
 // Module ID: 8418
 // Function ID: 8419
 // Name: getChannelA11yLabel
-// Dependencies: [5248, 1388, 1072, 1113, 5954, 7219, 5372, 8419, 2]
+// Dependencies: [5248, 1388, 1072, 1113, 5944, 7219, 5362, 8419, 2]
 // Exports: default, getChannelA11yHint, getStatusLabel
 
 // Module 8418 (getChannelA11yLabel)
-import UserUtils from "UserUtils" /* 5372 */;
-import useChannelName from "useChannelName" /* 5954 */;
+import UserUtils from "UserUtils" /* 5362 */;
+import useChannelName from "useChannelName" /* 5944 */;
 import isRoleRequiredDefault from "isRoleRequired" /* 7219 */;
 import RelationshipStore from "RelationshipStore" /* 5248 */;
 import UserStore from "UserStore" /* 1388 */;

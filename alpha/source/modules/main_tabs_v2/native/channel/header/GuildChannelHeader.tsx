@@ -1,7 +1,7 @@
 // Module ID: 15647
 // Function ID: 15648
 // Name: GuildChannelHeader
-// Dependencies: [32, 19, 17, 15648, 6800, 5159, 7315, 5155, 5536, 5177, 5248, 1388, 1072, 5152, 21, 5902, 575, 504, 12346, 7638, 11259, 1113, 5954, 15643, 12328, 5929, 9560, 5139, 2188, 8033, 9567, 11155, 7261, 7260, 15649, 15638, 2]
+// Dependencies: [32, 19, 17, 15648, 6790, 5159, 7315, 5155, 5526, 5177, 5248, 1388, 1072, 5152, 21, 5892, 575, 504, 12346, 7638, 11259, 1113, 5944, 15643, 12328, 5919, 9560, 5139, 2188, 8033, 9567, 11155, 7261, 7260, 15649, 15638, 2]
 
 // Module 15647 (GuildChannelHeader)
 import react_native from "react-native" /* 17 */;
@@ -10,17 +10,17 @@ import intl4 from "intl" /* 1113 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
 import ChannelRecord from "ChannelRecord" /* 5159 */;
-import useChannelName from "useChannelName" /* 5954 */;
+import useChannelName from "useChannelName" /* 5944 */;
 import age_gate_AgeGateUtils from "age_gate/AgeGateUtils" /* 11259 */;
 import ChannelHeader from "ChannelHeader" /* 15638 */;
 import openConjureAppChannelSheetDefault from "openConjureAppChannelSheet" /* 15649 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelMemberCountStore from "ChannelMemberCountStore" /* 15648 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6800 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6790 */;
 import ChannelMemberStore from "ChannelMemberStore" /* 7315 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5536 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5526 */;
 import GuildStore from "GuildStore" /* 5177 */;
 import RelationshipStore from "RelationshipStore" /* 5248 */;
 import UserStore from "UserStore" /* 1388 */;
@@ -48,7 +48,7 @@ function GuildChannelMemberCount(channel) {
   }
   let tmp = channel;
   let tmp2 = dependencyMap;
-  let obj = channel(5902);
+  let obj = channel(5892);
   const token = obj.useToken(nativeDefault.modules.mobile.CHANNEL_HEADER_ICON_SIZE);
   const items = [ChannelMemberStore, ChannelMemberCountStore];
   const obj2 = channel(504);

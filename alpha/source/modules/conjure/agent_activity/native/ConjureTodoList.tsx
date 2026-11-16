@@ -1,14 +1,14 @@
 // Module ID: 13704
 // Function ID: 13705
 // Name: ConjureTodoList
-// Dependencies: [19, 17, 21, 5306, 575, 1113, 4131, 13589, 13610, 5929, 7734, 13573, 13705, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 1113, 4131, 13589, 13610, 5919, 7734, 13573, 13705, 2]
 // Exports: default
 
 // Module 13704 (ConjureTodoList)
 import nativeDefault from "native" /* 575 */;
 import intl9 from "intl" /* 1113 */;
 import _modDef4131 from "module_4131" /* 4131 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import ConjureTodoState from "ConjureTodoState" /* 13573 */;
 import ConjureTodoAgents from "ConjureTodoAgents" /* 13589 */;
 import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 13610 */;
@@ -70,7 +70,7 @@ function TodoAgents(agents) {
     const tmp11 = closure_5;
     if (overflow > 0) {
       let obj3 = { variant: "body-xs/medium", color: "text-muted", accessibilityLabel: intl.formatToPlainString(items(4131).SPGdDc, obj4), children: "+" + overflow };
-      const Text = tmp2(5929).Text;
+      const Text = tmp2(5919).Text;
       intl = tmp2(1113).intl;
       const _HermesInternal = HermesInternal;
       obj4 = { count: overflow };
@@ -275,7 +275,7 @@ export default function ConjureTodoList(announceProgress) {
       let obj4 = { style: tmp.row, children: items2 };
       items2 = [tmp9(TodoMarker, { status: "pending" }), ];
       const obj5 = { variant: "body-sm/normal", color: "text-muted", style: tmp.text, children: provisional };
-      items2[1] = tmp9(agents(5929).Text, obj5);
+      items2[1] = tmp9(agents(5919).Text, obj5);
       tmp11Result = tmp11(tmp12, obj4);
     }
   }

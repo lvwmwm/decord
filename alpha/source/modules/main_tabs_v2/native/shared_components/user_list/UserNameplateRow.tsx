@@ -1,12 +1,12 @@
 // Module ID: 10889
 // Function ID: 10890
 // Name: UserNameplateRow
-// Dependencies: [32, 19, 21, 5306, 575, 7444, 5902, 7445, 9508, 7443, 7453, 2]
+// Dependencies: [32, 19, 21, 5306, 575, 7444, 5892, 7445, 9508, 7443, 7453, 2]
 // Exports: UserNameplateRow
 
 // Module 10889 (UserNameplateRow)
 import nativeDefault from "native" /* 575 */;
-import useToken from "useToken" /* 5902 */;
+import useToken from "useToken" /* 5892 */;
 import react2 from "react" /* 7444 */;
 import TableRowDivider from "TableRowDivider" /* 7453 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

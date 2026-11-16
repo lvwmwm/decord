@@ -1,25 +1,25 @@
-// Module ID: 20597
-// Function ID: 20598
+// Module ID: 20600
+// Function ID: 20601
 // Name: GuildSettingsModalTemplate
-// Dependencies: [5, 32, 19, 17, 21, 5306, 575, 20598, 8106, 5929, 1113, 7588, 1502, 6274, 14045, 6757, 7493, 7427, 6337, 7619, 7859, 5936, 5912, 7445, 7930, 7629, 20599, 7943, 6014, 7620, 7997, 6033, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5306, 575, 20601, 8106, 5919, 1113, 7588, 1502, 6264, 14045, 6747, 7493, 7427, 6327, 7619, 7859, 5926, 5902, 7445, 7930, 7629, 20602, 7943, 6004, 7620, 7997, 6023, 2]
 // Exports: default
 
-// Module 20597 (GuildSettingsModalTemplate)
+// Module 20600 (GuildSettingsModalTemplate)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl9 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import ToastUtils from "ToastUtils" /* 6014 */;
-import CopyIcon2 from "CopyIcon" /* 6033 */;
-import AlertModal from "AlertModal" /* 6274 */;
-import Stack_Stack from "Stack/Stack" /* 6337 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import ToastUtils from "ToastUtils" /* 6004 */;
+import CopyIcon2 from "CopyIcon" /* 6023 */;
+import AlertModal from "AlertModal" /* 6264 */;
+import Stack_Stack from "Stack/Stack" /* 6327 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7427 */;
 import Card_Card from "Card/Card" /* 7445 */;
 import Input2 from "Input" /* 7620 */;
 import ClipboardUtils from "ClipboardUtils" /* 7943 */;
 import native from "native" /* 7997 */;
 import guild_templates_GuildTemplateActionCreatorsDefault from "guild_templates/GuildTemplateActionCreators" /* 14045 */;
-import GuildTemplateSettingsUtils from "GuildTemplateSettingsUtils" /* 20598 */;
+import GuildTemplateSettingsUtils from "GuildTemplateSettingsUtils" /* 20601 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -478,7 +478,7 @@ function CopyRow(copies) {
   items = [, ];
   const obj2 = { size: "sm", color: ICON_FEEDBACK_CRITICAL, secondaryColor: tmp10(575).colors.WHITE };
   items[0] = metroImportDefault(CircleXIcon, obj2);
-  items[1] = metroImportDefault(tmp4(5929).Text, { variant: "body-sm/normal", children: label });
+  items[1] = metroImportDefault(tmp4(5919).Text, { variant: "body-sm/normal", children: label });
   return tmp6(tmp7, obj);
 }
 let _slicedToArray = _slicedToArray_mod;
@@ -725,7 +725,7 @@ let closure_14 = react.memo(function TemplateControls(arg0) {
   };
   [first, _slicedToArray] = react.useState(false);
   const tmp3 = dependencyMap;
-  const tmp4 = guildTemplate(20599)(guildTemplate.code);
+  const tmp4 = guildTemplate(20602)(guildTemplate.code);
   react = tmp4;
   obj = { spacing: guildTemplate(575).space.PX_12, children: items };
   const Stack = Stack_Stack.Stack;
@@ -754,7 +754,7 @@ let closure_14 = react.memo(function TemplateControls(arg0) {
   if (isDirty) {
     let obj4 = { children: items1 };
     let obj5 = { variant: "body-sm/normal", color: "text-feedback-warning", children: intl4.string(tmp6(1113).t.aWsjtD) };
-    const Text = tmp6(5929).Text;
+    const Text = tmp6(5919).Text;
     intl4 = tmp6(1113).intl;
     items1 = [tmp7(Text, obj5), ];
     const obj6 = {
@@ -765,7 +765,7 @@ let closure_14 = react.memo(function TemplateControls(arg0) {
           return obj(...arguments);
         }
     };
-    const Button = tmp6(5936).Button;
+    const Button = tmp6(5926).Button;
     intl5 = tmp6(1113).intl;
     items1[1] = handleDelete(Button, obj6);
     isDirty = tmp5(closure_9, obj4);
@@ -787,7 +787,7 @@ let closure_14 = react.memo(function TemplateControls(arg0) {
       showConfirmModal(obj);
     }
   };
-  const Button2 = tmp6(5936).Button;
+  const Button2 = tmp6(5926).Button;
   intl6 = tmp6(1113).intl;
   items[2] = handleDelete(Button2, obj7);
   const obj8 = {
@@ -798,13 +798,13 @@ let closure_14 = react.memo(function TemplateControls(arg0) {
       return obj.showModal(guildTemplate.code, false);
     }
   };
-  const Button3 = tmp6(5936).Button;
+  const Button3 = tmp6(5926).Button;
   intl7 = tmp6(1113).intl;
   items[3] = handleDelete(Button3, obj8);
   let isDirty2 = guildTemplate.isDirty;
   if (isDirty2) {
     const obj9 = { variant: "body-sm/normal", color: "text-muted", children: format(v0AVum, obj10) };
-    const Text2 = tmp6(5929).Text;
+    const Text2 = tmp6(5919).Text;
     const intl8 = tmp6(1113).intl;
     format = intl8.format;
     const _Date = Date;
@@ -862,7 +862,7 @@ export default function GuildSettingsModalTemplate(arg0) {
     items1 = [tmp.containerContent, contentContainerStyle];
     const Form = tmp2(8106).Form;
     obj6 = { variant: "body-sm/normal", color: "text-muted", children: intl.string(intl9.t.f0IPAG) };
-    Text = tmp2(5929).Text;
+    Text = tmp2(5919).Text;
     intl = tmp2(1113).intl;
     tmp11 = metroImportDefault(Form, obj5);
   }

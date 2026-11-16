@@ -1,14 +1,14 @@
-// Module ID: 17791
-// Function ID: 17792
+// Module ID: 17792
+// Function ID: 17793
 // Name: QuestDockEnrolledHeader
-// Dependencies: [32, 19, 17, 17698, 21, 575, 5306, 17727, 10131, 15261, 5341, 6061, 17737, 5929, 2]
+// Dependencies: [32, 19, 17, 17698, 21, 575, 5306, 17727, 10131, 15261, 6957, 6051, 17737, 5919, 2]
 
-// Module 17791 (QuestDockEnrolledHeader)
+// Module 17792 (QuestDockEnrolledHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import QuestTypes from "QuestTypes" /* 5341 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 6061 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 6051 */;
+import QuestTypes from "QuestTypes" /* 6957 */;
 import hooks_QuestHooks from "hooks/QuestHooks" /* 10131 */;
 import QuestCopyHooks from "QuestCopyHooks" /* 15261 */;
 import QuestDockConstants from "QuestDockConstants" /* 17698 */;

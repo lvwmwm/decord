@@ -1,14 +1,14 @@
 // Module ID: 16342
 // Function ID: 16343
 // Name: ShareEmbed
-// Dependencies: [19, 17, 21, 5306, 575, 7418, 6020, 5929, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 7418, 6010, 5919, 2]
 // Exports: default
 
 // Module 16342 (ShareEmbed)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7418 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -147,7 +147,7 @@ export default function ShareEmbed(embed) {
       const tmp13 = closure_7;
       if (tmp9Result) {
         let obj2 = { style: tmp.thumbnail, source: memo, resizeMode: "cover" };
-        tmp9Result = tmp9(isLoadingEmbed(6020), obj2);
+        tmp9Result = tmp9(isLoadingEmbed(6010), obj2);
       }
       let obj3 = { children: items6 };
       items6 = [tmp9Result, ];

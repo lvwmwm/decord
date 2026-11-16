@@ -1,7 +1,7 @@
 // Module ID: 17248
 // Function ID: 17249
 // Name: DismissiblePremiumNewBadge
-// Dependencies: [19, 9435, 21, 5306, 575, 10568, 1380, 1187, 5893, 1092, 2]
+// Dependencies: [19, 9435, 21, 5306, 575, 10568, 1380, 1187, 5883, 1092, 2]
 // Exports: default
 
 // Module 17248 (DismissiblePremiumNewBadge)
@@ -10,7 +10,7 @@ import nativeDefault from "native" /* 575 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
 import native from "native" /* 1187 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import LinearGradientDefault from "LinearGradient" /* 5893 */;
+import LinearGradientDefault from "LinearGradient" /* 5883 */;
 import ColorConstants from "ColorConstants" /* 9435 */;
 import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10568 */;
 import react from "react" /* 19 */;

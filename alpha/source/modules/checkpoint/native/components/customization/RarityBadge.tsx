@@ -1,18 +1,18 @@
 // Module ID: 14542
 // Function ID: 14543
 // Name: RarityBadge
-// Dependencies: [32, 19, 17, 6377, 21, 5306, 575, 6378, 8263, 6744, 5929, 1113, 9436, 2]
+// Dependencies: [32, 19, 17, 6367, 21, 5306, 575, 6368, 8263, 6734, 5919, 1113, 9436, 2]
 // Exports: default
 
 // Module 14542 (RarityBadge)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import CheckpointTraitRarity from "CheckpointTraitRarity" /* 6378 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6744 */;
+import CheckpointTraitRarity from "CheckpointTraitRarity" /* 6368 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6734 */;
 import inlineStylesDefault from "inlineStyles" /* 8263 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import CheckpointConstants from "CheckpointConstants" /* 6377 */;
+import CheckpointConstants from "CheckpointConstants" /* 6367 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
@@ -98,7 +98,7 @@ export default function RarityBadge(rarity) {
   items1 = [tmp7, ];
   const obj4 = { style: tmp.badgeContent, children: items2 };
   const obj5 = { variant: "mono-md/bold", style: tmp.badgeLabel, children: intl.string(metroImportDefault[rarity]) };
-  const Text = tmp3(5929).Text;
+  const Text = tmp3(5919).Text;
   intl = tmp3(1113).intl;
   items2 = [metroImportAll(Text, obj5), ];
   const tmp13 = metroImportAll;

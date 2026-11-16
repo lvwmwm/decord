@@ -1,7 +1,7 @@
 // Module ID: 8863
 // Function ID: 8864
 // Name: ReactionActionCreators
-// Dependencies: [5, 502, 5155, 6372, 1072, 1089, 6268, 1113, 1108, 572, 5920, 1285, 8864, 1256, 6067, 5313, 5262, 5256, 2]
+// Dependencies: [5, 502, 5155, 6362, 1072, 1089, 6258, 1113, 1108, 572, 5910, 1285, 8864, 1256, 6057, 5313, 5262, 5256, 2]
 // Exports: getReactors, playBurstReaction
 
 // Module 8863 (ReactionActionCreators)
@@ -10,13 +10,13 @@ import DurationsDefault from "Durations" /* 1089 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import intl4 from "intl" /* 1113 */;
 import EmojiUtils from "EmojiUtils" /* 5256 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 5920 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6268 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 5910 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6258 */;
 import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8864 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
-import MessageStore from "MessageStore" /* 6372 */;
+import MessageStore from "MessageStore" /* 6362 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

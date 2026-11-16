@@ -1,7 +1,7 @@
 // Module ID: 502
 // Function ID: 503
 // Name: AuthenticationStore
-// Dependencies: [503, 1071, 1072, 1097, 3, 1098, 510, 1099, 1256, 16639, 572, 16640, 7774, 6758, 1254, 16641, 1242, 14831, 504, 12418, 2121, 16642, 8773, 2119, 2]
+// Dependencies: [503, 1071, 1072, 1097, 3, 1098, 510, 1099, 1256, 16639, 572, 16640, 7774, 6748, 1254, 16641, 1242, 14831, 504, 12418, 2121, 16642, 8773, 2119, 2]
 
 // Module 502 (AuthenticationStore)
 import LoggerDefault from "Logger" /* 3 */;
@@ -14,7 +14,7 @@ import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import FingerprintUtils from "FingerprintUtils" /* 1254 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import Server from "Server" /* 2119 */;
-import APIErrorDefault from "APIError" /* 6758 */;
+import APIErrorDefault from "APIError" /* 6748 */;
 import getAuthenticationErrorsFromAPIError from "getAuthenticationErrorsFromAPIError" /* 7774 */;
 import AuthenticationUtils from "AuthenticationUtils" /* 8773 */;
 import isStaffFromRawUserDefault from "isStaffFromRawUser" /* 14831 */;
@@ -38,7 +38,7 @@ let c10;
 let closure_12;
 let metroImportAll;
 let unpackModuleId;
-const f82028 = (body) => {
+const f82040 = (body) => {
   let assignments;
   let guild_experiments;
   body = body.body;
@@ -64,12 +64,12 @@ const f82028 = (body) => {
   const obj6 = awaitExperiments;
   obj6.onExperimentsLoaded();
 };
-const f82029 = () => {
+const f82041 = () => {
   c33 = null;
   const obj = Dispatcher;
   obj.dispatch({ type: "EXPERIMENTS_FETCH_FAILURE" });
 };
-const f82030 = () => {
+const f82042 = () => {
   const obj = router_utils;
   obj.transitionTo(constants.REGISTER);
 };
@@ -132,7 +132,7 @@ function fetchFingerprint(arg0) {
           fetchExperiments2;
           tmpResult4 = router_utils;
           const experiments = fetchExperiments(obj3);
-          nextPromise = experiments.then(f82028, f82029);
+          nextPromise = experiments.then(f82040, f82041);
           closure_33 = nextPromise;
         }
         return nextPromise;
@@ -467,7 +467,7 @@ let obj = {
         c26 = true;
         handleLogout();
         const obj4 = Dispatcher;
-        obj4.wait(f82030);
+        obj4.wait(f82042);
       } else {
         const obj3 = { user_id: Storage2.get(user_id_cache) };
         const track = AnalyticsUtilsDefault.track;
@@ -775,7 +775,7 @@ let obj = {
     const fetchExperiments = tmp5.fetchExperiments;
     obj5 = router_utils;
     const experiments = fetchExperiments(obj3);
-    closure_33 = experiments.then(f82028, f82029);
+    closure_33 = experiments.then(f82040, f82041);
   },
   CURRENT_USER_UPDATE: function handleUserUpdate(user) {
     user = user.user;
@@ -790,7 +790,7 @@ let obj = {
     c26 = true;
     handleLogout();
     const obj = Dispatcher;
-    obj.wait(f82030);
+    obj.wait(f82042);
   },
   CLOSE_SUSPENDED_USER: function handleSuspendedUserClosed() {
     c34 = null;

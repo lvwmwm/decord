@@ -1,10 +1,10 @@
-// Module ID: 18622
-// Function ID: 18623
+// Module ID: 18624
+// Function ID: 18625
 // Name: DeclarativeSystemNotifPermissionAnalytics
 // Dependencies: [16898, 1072, 16902, 16900, 1256, 2]
 // Exports: trackSystemNotifSettingsOpened, trackSystemNotifSettingsReenabled
 
-// Module 18622 (DeclarativeSystemNotifPermissionAnalytics)
+// Module 18624 (DeclarativeSystemNotifPermissionAnalytics)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import NotificationSettingsConstants from "NotificationSettingsConstants" /* 16898 */;

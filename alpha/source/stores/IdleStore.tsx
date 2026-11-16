@@ -1,7 +1,7 @@
 // Module ID: 7041
 // Function ID: 7042
 // Name: IdleStore
-// Dependencies: [502, 1072, 6075, 1380, 5131, 1089, 572, 5116, 6935, 551, 504, 2]
+// Dependencies: [502, 1072, 6065, 1380, 5131, 1089, 572, 5116, 6925, 551, 504, 2]
 
 // Module 7041 (IdleStore)
 import _mod2 from "module_2" /* 2 */;
@@ -12,8 +12,8 @@ import DurationsDefault from "Durations" /* 1089 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import DiscordNativeDefault from "DiscordNative" /* 5116 */;
 import UserSettings from "UserSettings" /* 5131 */;
-import Constants2 from "Constants" /* 6075 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6935 */;
+import Constants2 from "Constants" /* 6065 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6925 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1072 */;
 

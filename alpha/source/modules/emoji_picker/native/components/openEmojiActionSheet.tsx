@@ -1,7 +1,7 @@
 // Module ID: 11298
 // Function ID: 11299
 // Name: openEmojiActionSheet
-// Dependencies: [1391, 1414, 2020, 5552, 11299, 2121, 2]
+// Dependencies: [1391, 1414, 2020, 5542, 11299, 2121, 2]
 // Exports: openEmojiActionSheet
 
 // Module 11298 (openEmojiActionSheet)
@@ -9,7 +9,7 @@ import EmojiConstants from "EmojiConstants" /* 1391 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 2020 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import size from "module_2" /* 2 */;
 
 const EMOJI_URL_BASE_SIZE = EmojiConstants.EMOJI_URL_BASE_SIZE;

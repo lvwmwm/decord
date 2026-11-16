@@ -1,19 +1,19 @@
 // Module ID: 16075
 // Function ID: 16076
 // Name: VoiceActionSheet
-// Dependencies: [19, 17, 6074, 21, 5306, 7918, 7937, 504, 5492, 6900, 16076, 16077, 7951, 16084, 16087, 16088, 5906, 16091, 2]
+// Dependencies: [19, 17, 6064, 21, 5306, 7918, 7937, 504, 5482, 6890, 16076, 16077, 7951, 16084, 16087, 16088, 5896, 16091, 2]
 // Exports: default
 
 // Module 16075 (VoiceActionSheet)
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5492 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6900 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5482 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6890 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7918 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
 import VoiceActionSheetManagerDefault from "VoiceActionSheetManager" /* 16076 */;
 import NUFChannelsManagerDefault from "NUFChannelsManager" /* 16077 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 6074 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 6064 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
@@ -24,7 +24,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp2;
-const VisualEffectViewDefault = tmp2(5906);
+const VisualEffectViewDefault = tmp2(5896);
 const NUFVoiceChannelsTemplateDefault = tmp2(16084);
 const GuildEventVoiceBannerDefault = tmp2(16087);
 const VoiceEmptyStateDefault = tmp2(16088);

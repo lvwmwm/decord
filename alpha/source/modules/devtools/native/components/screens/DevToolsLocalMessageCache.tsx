@@ -1,14 +1,14 @@
-// Module ID: 18218
-// Function ID: 18219
+// Module ID: 18220
+// Function ID: 18221
 // Name: DevToolsLocalMessageCache
-// Dependencies: [17, 5155, 21, 5306, 575, 7443, 6337, 7746, 8691, 5929, 2]
+// Dependencies: [17, 5155, 21, 5306, 575, 7443, 6327, 7746, 8691, 5919, 2]
 // Exports: default
 
-// Module 18218 (DevToolsLocalMessageCache)
+// Module 18220 (DevToolsLocalMessageCache)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import Stack_Stack from "Stack/Stack" /* 6337 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import Stack_Stack from "Stack/Stack" /* 6327 */;
 import TableRow5 from "TableRow" /* 7443 */;
 import TableRowGroup3 from "TableRowGroup" /* 7746 */;
 import MessageCacheStatsDefault from "MessageCacheStats" /* 8691 */;

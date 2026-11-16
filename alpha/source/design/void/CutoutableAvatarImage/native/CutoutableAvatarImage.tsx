@@ -1,7 +1,7 @@
 // Module ID: 15746
 // Function ID: 15747
 // Name: CutoutableAvatarImage
-// Dependencies: [19, 17, 15747, 21, 3, 1414, 15561, 15748, 9503, 6020, 1655, 5939, 1269, 8263, 558, 2]
+// Dependencies: [19, 17, 15747, 21, 3, 1414, 15561, 15748, 9503, 6010, 1655, 5929, 1269, 8263, 558, 2]
 
 // Module 15746 (CutoutableAvatarImage)
 import LoggerDefault from "Logger" /* 3 */;
@@ -9,8 +9,8 @@ import shallowEqualDefault from "shallowEqual" /* 558 */;
 import v1 from "v1" /* 1269 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import spring_spring from "spring/spring" /* 5939 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import spring_spring from "spring/spring" /* 5929 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import inlineStyles from "inlineStyles" /* 8263 */;
 import ClipView from "ClipView" /* 9503 */;
 import getChannelIcon from "getChannelIcon" /* 15561 */;

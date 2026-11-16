@@ -1,7 +1,7 @@
 // Module ID: 9395
 // Function ID: 9396
 // Name: EditAvatarDecorationActionSheet
-// Dependencies: [32, 19, 17, 8500, 8490, 5218, 1072, 21, 5306, 9396, 9401, 8559, 7918, 7937, 1256, 9402, 5377, 5566, 7913, 1113, 9403, 11671, 504, 15519, 15524, 8541, 15525, 15530, 15531, 9404, 8623, 1187, 15532, 2]
+// Dependencies: [32, 19, 17, 8500, 8490, 5218, 1072, 21, 5306, 9396, 9401, 8559, 7918, 7937, 1256, 9402, 5367, 5556, 7913, 1113, 9403, 11671, 504, 15519, 15524, 8541, 15525, 15530, 15531, 9404, 8623, 1187, 15532, 2]
 // Exports: default
 
 // Module 9395 (EditAvatarDecorationActionSheet)
@@ -231,11 +231,11 @@ export default function EditAvatarDecorationActionSheet(arg0) {
     }
     tmp(purchasedItem);
   }, items);
-  const ThemeContextProvider = tmp5(5377).ThemeContextProvider;
+  const ThemeContextProvider = tmp5(5367).ThemeContextProvider;
   const obj5 = { value: analyticsLocations2, children: tmp14(BottomSheet, obj6) };
   const AnalyticsLocationProvider = tmp5(7918).AnalyticsLocationProvider;
   obj6 = { scrollable: true, ref: bottomSheetRef, onExpand: callback, startExpanded: true, header: closure_10(BottomSheetTitleHeader, obj7), children: items1 };
-  BottomSheet = tmp5(5566).BottomSheet;
+  BottomSheet = tmp5(5556).BottomSheet;
   obj7 = { title: intl.string(setPendingAvatarDecoration(1113).t.HykynS) };
   BottomSheetTitleHeader = tmp5(7913).BottomSheetTitleHeader;
   intl = tmp5(1113).intl;

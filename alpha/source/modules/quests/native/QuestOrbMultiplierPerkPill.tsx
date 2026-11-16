@@ -1,7 +1,7 @@
 // Module ID: 17769
 // Function ID: 17770
 // Name: QuestOrbMultiplierPerkPill
-// Dependencies: [19, 17, 1072, 21, 5306, 575, 5547, 5328, 5902, 5303, 10131, 10154, 1113, 9436, 5929, 7428, 17770, 5893, 2]
+// Dependencies: [19, 17, 1072, 21, 5306, 575, 5537, 5328, 5892, 5303, 10131, 10154, 1113, 9436, 5919, 7428, 17770, 5883, 2]
 // Exports: QuestOrbMultiplierPerkPill
 
 // Module 17769 (QuestOrbMultiplierPerkPill)
@@ -9,9 +9,9 @@ import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import ColorUtils from "ColorUtils" /* 5303 */;
 import themes from "themes" /* 5328 */;
-import useTheme from "useTheme" /* 5547 */;
-import useToken from "useToken" /* 5902 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import useTheme from "useTheme" /* 5537 */;
+import useToken from "useToken" /* 5892 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import hooks_QuestHooks from "hooks/QuestHooks" /* 10131 */;
 import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 10154 */;
 import openQuestOrbMultiplierPerkInfoActionSheetDefault from "openQuestOrbMultiplierPerkInfoActionSheet" /* 17770 */;
@@ -130,7 +130,7 @@ export function QuestOrbMultiplierPerkPill(questId) {
     const PressableOpacity = tmp2(7428).PressableOpacity;
     if (!tmp13) {
       const obj18 = { style: tmp.fullGradient, colors: items, start, end };
-      tmp21Result = tmp21(tmp6(5893), obj18);
+      tmp21Result = tmp21(tmp6(5883), obj18);
     }
     items4 = [tmp21Result, ];
     const obj19 = { style: tmp.fullGradientContent, children: tmp16Result };

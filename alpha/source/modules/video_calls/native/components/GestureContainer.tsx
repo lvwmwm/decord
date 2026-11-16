@@ -1,7 +1,7 @@
 // Module ID: 13064
 // Function ID: 13065
 // Name: GestureContainer
-// Dependencies: [19, 17, 11003, 12714, 21, 5306, 575, 1496, 1655, 5598, 1708, 6848, 5548, 1187, 2]
+// Dependencies: [19, 17, 11003, 12714, 21, 5306, 575, 1496, 1655, 5588, 1708, 6838, 5538, 1187, 2]
 // Exports: default
 
 // Module 13064 (GestureContainer)
@@ -12,8 +12,8 @@ import native from "native" /* 1187 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
 import _mod1655 from "module_1655" /* 1655 */;
 import _mod1708 from "module_1708" /* 1708 */;
-import timing_timing from "timing/timing" /* 5548 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5598 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5588 */;
 import ChannelCallStore from "ChannelCallStore" /* 11003 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 12714 */;
@@ -24,7 +24,7 @@ let hasOwnProperty;
 let metroRequire;
 let obj2;
 let tmp3;
-const ModalActionCreatorsDefault = tmp3(6848);
+const ModalActionCreatorsDefault = tmp3(6838);
 const View = react_native.View;
 const useChannelCallStore = ChannelCallStore.useChannelCallStore;
 ({ PAN_GESTURE_FAIL_OFFSET_Y: hasOwnProperty, SWIPE_TO_CHAT_ACTIVE_OFFSET: metroRequire } = Constants);
@@ -138,6 +138,6 @@ export default function GestureContainer(children) {
   GestureContainerTsx3.__initData = tmp20;
   const animatedStyle = useAnimatedStyle(GestureContainerTsx3);
   const obj3 = { gesture: failOffsetXResult, children: null };
-  const GestureDetector = tmp5(5598).GestureDetector;
+  const GestureDetector = tmp5(5588).GestureDetector;
   return <View style={tmp.background}>{null}</View>;
 };

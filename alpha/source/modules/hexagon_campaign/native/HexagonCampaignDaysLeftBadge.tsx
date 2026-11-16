@@ -1,14 +1,14 @@
 // Module ID: 17108
 // Function ID: 17109
 // Name: HexagonCampaignDaysLeftBadge
-// Dependencies: [19, 21, 17109, 7459, 1113, 4516, 6042, 2]
+// Dependencies: [19, 21, 17109, 7459, 1113, 4516, 6032, 2]
 // Exports: default
 
 // Module 17108 (HexagonCampaignDaysLeftBadge)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef4516 from "module_4516" /* 4516 */;
-import ClockIcon from "ClockIcon" /* 6042 */;
+import ClockIcon from "ClockIcon" /* 6032 */;
 import Badge_Badge from "Badge/Badge" /* 7459 */;
 import useHexagonCampaignDaysLeft from "useHexagonCampaignDaysLeft" /* 17109 */;
 import react from "react" /* 19 */;

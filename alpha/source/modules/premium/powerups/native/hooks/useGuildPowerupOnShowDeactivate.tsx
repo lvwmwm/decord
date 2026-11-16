@@ -1,13 +1,13 @@
 // Module ID: 10746
 // Function ID: 10747
 // Name: useGuildPowerupOnShowDeactivate
-// Dependencies: [19, 21, 10747, 2121, 6270, 2]
+// Dependencies: [19, 21, 10747, 2121, 6260, 2]
 // Exports: default
 
 // Module 10746 (useGuildPowerupOnShowDeactivate)
 import Fragment from "Fragment" /* 21 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import useAlertStore from "useAlertStore" /* 6270 */;
+import useAlertStore from "useAlertStore" /* 6260 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

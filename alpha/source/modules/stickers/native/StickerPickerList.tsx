@@ -1,14 +1,14 @@
 // Module ID: 11385
 // Function ID: 11386
 // Name: StickerPickerList
-// Dependencies: [32, 19, 17, 7010, 11360, 11244, 1072, 21, 5306, 575, 1187, 11386, 5929, 1113, 11271, 6793, 1655, 11288, 11256, 504, 11387, 11270, 11388, 11372, 12, 7837, 11389, 7830, 5914, 11280, 11293, 9037, 2]
+// Dependencies: [32, 19, 17, 7010, 11360, 11244, 1072, 21, 5306, 575, 1187, 11386, 5919, 1113, 11271, 6783, 1655, 11288, 11256, 504, 11387, 11270, 11388, 11372, 12, 7837, 11389, 7830, 5904, 11280, 11293, 9037, 2]
 
 // Module 11385 (StickerPickerList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7837 */;
 import PremiumUpsellSectionDividerDefault from "PremiumUpsellSectionDivider" /* 11270 */;
 import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 11271 */;

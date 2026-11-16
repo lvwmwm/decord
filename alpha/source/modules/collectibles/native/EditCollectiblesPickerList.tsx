@@ -1,11 +1,11 @@
 // Module ID: 15531
 // Function ID: 15532
 // Name: EditCollectiblesPickerList
-// Dependencies: [32, 19, 17, 21, 5306, 15526, 5929, 12, 7888, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 15526, 5919, 12, 7888, 2]
 // Exports: EditCollectiblesPickerList
 
 // Module 15531 (EditCollectiblesPickerList)
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import useCollectibleListLayout from "useCollectibleListLayout" /* 15526 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

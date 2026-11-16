@@ -1,7 +1,7 @@
 // Module ID: 12472
 // Function ID: 12473
 // Name: OptInOnboardingUtils
-// Dependencies: [1231, 5236, 5218, 6958, 5224, 7059, 1406, 7877, 7872, 1196, 2]
+// Dependencies: [1231, 5236, 5218, 6948, 5224, 7059, 1406, 7877, 7872, 1196, 2]
 // Exports: hasClearedGuildOnboardingNotice, hasNotSetUpChannelOptIn, toggleShowAllChannels
 
 // Module 12472 (OptInOnboardingUtils)
@@ -12,7 +12,7 @@ import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7877 */
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import GuildChannelStore_mod from "GuildChannelStore" /* 5236 */;
 import GuildMemberStore from "GuildMemberStore" /* 5218 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6958 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6948 */;
 import size from "module_2" /* 2 */;
 
 let channel, set;

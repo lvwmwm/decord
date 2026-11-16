@@ -1,7 +1,7 @@
 // Module ID: 12350
 // Function ID: 12351
 // Name: PinotMemberNoticeHeaderArrow
-// Dependencies: [19, 17, 5155, 21, 5306, 5902, 575, 504, 12351, 12331, 12340, 8263, 12353, 2]
+// Dependencies: [19, 17, 5155, 21, 5306, 5892, 575, 504, 12351, 12331, 12340, 8263, 12353, 2]
 // Exports: PinotMemberNoticeHeaderArrow
 
 // Module 12350 (PinotMemberNoticeHeaderArrow)
@@ -30,11 +30,11 @@ export function PinotMemberNoticeHeaderArrow(channelId) {
   let tmp4Result;
   channelId = channelId.channelId;
   const tmp = closure_8();
-  const obj = channelId(5902);
+  const obj = channelId(5892);
   const token = obj.useToken(nativeDefault.colors.BACKGROUND_BASE_LOWER);
-  const obj2 = channelId(5902);
+  const obj2 = channelId(5892);
   const token1 = obj2.useToken(nativeDefault.colors.BACKGROUND_FEEDBACK_MOD_INFO);
-  const obj3 = channelId(5902);
+  const obj3 = channelId(5892);
   const token2 = obj3.useToken(nativeDefault.colors.BORDER_SUBTLE);
   const ref = react.useRef(null);
   const items = [ChannelStore];

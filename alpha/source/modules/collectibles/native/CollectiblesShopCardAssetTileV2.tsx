@@ -1,15 +1,15 @@
 // Module ID: 10421
 // Function ID: 10422
 // Name: CollectiblesShopCardAssetTileV2
-// Dependencies: [32, 19, 17, 1074, 21, 10416, 575, 5306, 9485, 8092, 8496, 2114, 9402, 9489, 6020, 10422, 1075, 10423, 9500, 9491, 9512, 9514, 5303, 5902, 10417, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 10416, 575, 5306, 9485, 8092, 8496, 2114, 9402, 9489, 6010, 10422, 1075, 10423, 9500, 9491, 9512, 9514, 5303, 5892, 10417, 2]
 
 // Module 10421 (CollectiblesShopCardAssetTileV2)
 import nativeDefault from "native" /* 575 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 2114 */;
 import ColorUtils from "ColorUtils" /* 5303 */;
-import useToken from "useToken" /* 5902 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import useToken from "useToken" /* 5892 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import LockIcon from "LockIcon" /* 8092 */;
 import CollectiblesProductUtils from "CollectiblesProductUtils" /* 8496 */;
 import CheckmarkLargeBoldIcon from "CheckmarkLargeBoldIcon" /* 9485 */;

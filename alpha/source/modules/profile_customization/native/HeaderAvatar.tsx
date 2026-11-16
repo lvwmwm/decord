@@ -1,7 +1,7 @@
 // Module ID: 8623
 // Function ID: 8624
 // Name: HeaderAvatar
-// Dependencies: [19, 17, 5307, 5218, 6068, 21, 5306, 575, 1187, 504, 6069, 8624, 8541, 8625, 8613, 7428, 2]
+// Dependencies: [19, 17, 5307, 5218, 6058, 21, 5306, 575, 1187, 504, 6059, 8624, 8541, 8625, 8613, 7428, 2]
 // Exports: default
 
 // Module 8623 (HeaderAvatar)
@@ -11,7 +11,7 @@ import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import GuildMemberStore from "GuildMemberStore" /* 5218 */;
-import PresenceStore from "PresenceStore" /* 6068 */;
+import PresenceStore from "PresenceStore" /* 6058 */;
 import createStyles from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 

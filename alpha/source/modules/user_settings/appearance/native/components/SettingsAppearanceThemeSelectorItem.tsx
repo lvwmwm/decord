@@ -1,10 +1,10 @@
-// Module ID: 17894
-// Function ID: 17895
+// Module ID: 17896
+// Function ID: 17897
 // Name: SettingsAppearanceThemeSelectorItem
-// Dependencies: [19, 17, 1192, 17893, 1083, 21, 5306, 575, 5304, 5328, 10271, 1187, 17895, 563, 5902, 17896, 5544, 1241, 5378, 7428, 1113, 2]
+// Dependencies: [19, 17, 1192, 17895, 1083, 21, 5306, 575, 5304, 5328, 10271, 1187, 17897, 563, 5892, 17898, 5534, 1241, 5368, 7428, 1113, 2]
 // Exports: default
 
-// Module 17894 (SettingsAppearanceThemeSelectorItem)
+// Module 17896 (SettingsAppearanceThemeSelectorItem)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
@@ -12,13 +12,13 @@ import Constants from "Constants" /* 1083 */;
 import ClientThemesTypes from "ClientThemesTypes" /* 1241 */;
 import utils_ColorDefault from "utils/Color" /* 5304 */;
 import themes from "themes" /* 5328 */;
-import react_native2 from "react-native" /* 5378 */;
-import MobileThemesUtils from "MobileThemesUtils" /* 5544 */;
-import useToken from "useToken" /* 5902 */;
+import react_native2 from "react-native" /* 5368 */;
+import MobileThemesUtils from "MobileThemesUtils" /* 5534 */;
+import useToken from "useToken" /* 5892 */;
 import ThemedGradientDefault from "ThemedGradient" /* 10271 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
-import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 17893 */;
+import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 17895 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
@@ -32,8 +32,8 @@ let tmp;
 let tmp5;
 let tmp8;
 const native = tmp(1187);
-const AssetRegistryDefault = tmp8(17895);
-const SynchronizeIconNativeDefault = tmp5(17896);
+const AssetRegistryDefault = tmp8(17897);
+const SynchronizeIconNativeDefault = tmp5(17898);
 function GradientThemeBackground(arg0) {
   let isThemeLocked;
   let item;

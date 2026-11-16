@@ -1,7 +1,7 @@
 // Module ID: 17692
 // Function ID: 17693
 // Name: QuestCard
-// Dependencies: [5, 32, 19, 17, 1388, 8808, 5338, 1083, 21, 575, 5306, 5314, 5303, 5341, 8816, 17621, 10131, 1503, 1496, 10146, 17693, 7888, 6771, 6776, 8834, 504, 10151, 8831, 8815, 8804, 10156, 5547, 11832, 5902, 17723, 10168, 10135, 10138, 5345, 10170, 5552, 17725, 2121, 15261, 8495, 10166, 1113, 10128, 15250, 17730, 10133, 10153, 10154, 5944, 6061, 10286, 1380, 9442, 5929, 17731, 7445, 17768, 6020, 5893, 1092, 17755, 7724, 17737, 15257, 17769, 6337, 5936, 17772, 7988, 11096, 17756, 2]
+// Dependencies: [5, 32, 19, 17, 1388, 8808, 6954, 1083, 21, 575, 5306, 5314, 5303, 6957, 8816, 17621, 10131, 1503, 1496, 10146, 17693, 7888, 6761, 6766, 8834, 504, 10151, 8831, 8815, 8804, 10156, 5537, 11832, 5892, 17723, 10168, 10135, 10138, 6961, 10170, 5542, 17725, 2121, 15261, 8495, 10166, 1113, 10128, 15250, 17730, 10133, 10153, 10154, 5934, 6051, 10286, 1380, 9442, 5919, 17731, 7445, 17768, 6010, 5883, 1092, 17755, 7724, 17737, 15257, 17769, 6327, 5926, 17772, 7988, 11096, 17756, 2]
 
 // Module 17692 (QuestCard)
 import nativeDefault from "native" /* 575 */;
@@ -10,11 +10,11 @@ import PlatformUtils from "PlatformUtils" /* 1380 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
 import ColorUtils from "ColorUtils" /* 5303 */;
 import design_shared from "design/shared" /* 5314 */;
-import QuestConstants from "QuestConstants" /* 5338 */;
-import AdCreativeType from "AdCreativeType" /* 5345 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 6771 */;
-import MetricEvents from "MetricEvents" /* 6776 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 6761 */;
+import MetricEvents from "MetricEvents" /* 6766 */;
+import QuestConstants from "QuestConstants" /* 6954 */;
+import AdCreativeType from "AdCreativeType" /* 6961 */;
 import AnalyticsTypes from "AnalyticsTypes" /* 8834 */;
 import OrbsIcon from "OrbsIcon" /* 9442 */;
 import QuestUtils from "QuestUtils" /* 10128 */;
@@ -749,7 +749,7 @@ const memoResult = react.memo(function QuestCard(questContent) {
         obj6 = { width: result };
         items1[1] = unpackModuleId(metroRequire, obj5);
         const obj7 = { children: format2(prop, obj8) };
-        const Text5 = tmp2(5929).Text;
+        const Text5 = tmp2(5919).Text;
         const merged = Object.assign(obj2);
         const intl4 = tmp2(1113).intl;
         format2 = intl4.format;
@@ -769,7 +769,7 @@ const memoResult = react.memo(function QuestCard(questContent) {
     }
     if (closure_16) {
       const obj9 = { children: defaultRewardName };
-      const Text4 = tmp2(5929).Text;
+      const Text4 = tmp2(5919).Text;
       const merged1 = Object.assign(obj2);
       tmp15Result = unpackModuleId(Text4, obj9);
     } else {
@@ -777,7 +777,7 @@ const memoResult = react.memo(function QuestCard(questContent) {
       if (tmp9) {
         const obj10 = { style: authStore.rewardSubtitleRow, children: items2 };
         const obj11 = { children: intl2.format(intl15.t["0IUT4Y"], obj12) };
-        const Text2 = tmp2(5929).Text;
+        const Text2 = tmp2(5919).Text;
         const merged2 = Object.assign(obj2);
         intl2 = tmp2(1113).intl;
         obj12 = {
@@ -793,7 +793,7 @@ const memoResult = react.memo(function QuestCard(questContent) {
         obj16 = { width: result };
         items3[1] = unpackModuleId(metroRequire, obj15);
         const obj17 = { children: format(prop1, obj18) };
-        const Text3 = tmp2(5929).Text;
+        const Text3 = tmp2(5919).Text;
         const merged3 = Object.assign(obj2);
         const intl3 = tmp2(1113).intl;
         format = intl3.format;
@@ -809,7 +809,7 @@ const memoResult = react.memo(function QuestCard(questContent) {
         tmp15Result = tmp15(tmp16, obj10);
       } else {
         const obj19 = { children: intl.format(intl15.t["0IUT4Y"], obj20) };
-        const Text = tmp2(5929).Text;
+        const Text = tmp2(5919).Text;
         const merged4 = Object.assign(obj2);
         intl = tmp2(1113).intl;
         obj20 = {

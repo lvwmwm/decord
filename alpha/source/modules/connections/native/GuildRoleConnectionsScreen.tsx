@@ -1,7 +1,7 @@
 // Module ID: 12489
 // Function ID: 12490
 // Name: GuildRoleConnectionsScreen
-// Dependencies: [32, 19, 17, 1407, 502, 5218, 5212, 1072, 21, 5306, 575, 1187, 5547, 504, 1256, 6067, 6917, 5552, 12490, 2121, 12479, 12487, 7087, 1414, 5313, 5929, 1113, 2188, 12485, 7957, 12491, 2]
+// Dependencies: [32, 19, 17, 1407, 502, 5218, 5212, 1072, 21, 5306, 575, 1187, 5537, 504, 1256, 6057, 6907, 5542, 12490, 2121, 12479, 12487, 7087, 1414, 5313, 5919, 1113, 2188, 12485, 7957, 12491, 2]
 // Exports: default
 
 // Module 12489 (GuildRoleConnectionsScreen)
@@ -9,9 +9,9 @@ import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6067 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6917 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6057 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6907 */;
 import GuildRoleConnectionsModalActionCreators from "GuildRoleConnectionsModalActionCreators" /* 12487 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -77,7 +77,7 @@ export default function GuildRoleConnectionsScreen(guildId) {
   dependencyMap = tmp;
   let tmp3 = dependencyMap;
   const tmp2 = onCloseModal;
-  _slicedToArray = onCloseModal(5547)();
+  _slicedToArray = onCloseModal(5537)();
   let obj = guildId(504);
   let items = [GuildRoleStore];
   const stateFromStores = obj.useStateFromStores(items, () => GuildRoleStore.getSortedRoles(guildId));
@@ -115,7 +115,7 @@ export default function GuildRoleConnectionsScreen(guildId) {
     let obj4 = { style: tmp.container, children: closure_15(closure_7, obj5) };
     obj5 = { contentContainerStyle: tmp.content, children: items5 };
     obj6 = { style: tmp.infoText, variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: format(prop, obj7) };
-    const Text = tmp4(5929).Text;
+    const Text = tmp4(5919).Text;
     const intl = tmp4(1113).intl;
     format = intl.format;
     obj7 = { helpdeskArticleUrl: tmp2Result.getArticleURL(constants2.CONNECTION_DETAILS) };

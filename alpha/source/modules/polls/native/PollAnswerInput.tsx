@@ -1,7 +1,7 @@
 // Module ID: 13553
 // Function ID: 13554
 // Name: PollAnswerInput
-// Dependencies: [32, 19, 17, 5155, 8725, 9011, 1391, 21, 5306, 575, 13554, 1113, 8861, 7428, 1187, 9543, 11153, 7639, 5552, 13555, 2121, 10410, 8106, 6041, 13558, 2]
+// Dependencies: [32, 19, 17, 5155, 8725, 9011, 1391, 21, 5306, 575, 13554, 1113, 8861, 7428, 1187, 9543, 11153, 7639, 5542, 13555, 2121, 10410, 8106, 6031, 13558, 2]
 // Exports: default
 
 // Module 13553 (PollAnswerInput)
@@ -9,7 +9,7 @@ import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import EmojiConstants from "EmojiConstants" /* 1391 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import DraftStore from "DraftStore" /* 8725 */;
 import PollsUtils from "PollsUtils" /* 8861 */;
 import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9543 */;
@@ -239,13 +239,13 @@ export default function PollAnswerInput(answer) {
     blurOnSubmit: false,
     style: tmp.pollAnswerTextInput,
     selectionColor: "channelId",
-    textContentType: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004259905181437145,
+    textContentType: "port",
     accessibilityLabel: intl2.formatToPlainString(answer(channelId[11]).t["3+V8G9"], obj6),
     accessibilityHint: formatToPlainStringResult,
     maxLength,
-    returnKeyType: -0.0000000000009458744898406199,
-    required: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003874743454431993,
-    autoCorrect: -0.0000000000000000000000000015251142552078844,
+    returnKeyType: null,
+    required: "ADD",
+    autoCorrect: null,
     "aria-invalid": error
   };
   const FormInput = tmp9(tmp10[22]).FormInput;

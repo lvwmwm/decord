@@ -1,13 +1,13 @@
 // Module ID: 17635
 // Function ID: 17636
 // Name: restoreHexagonCampaignPerks
-// Dependencies: [5, 1193, 1192, 1388, 16845, 5331, 5375, 17629, 17631, 17630, 15314, 17634, 5334, 2174, 17084, 2]
+// Dependencies: [5, 1193, 1192, 1388, 16845, 5331, 5365, 17629, 17631, 17630, 15314, 17634, 5334, 2174, 17084, 2]
 // Exports: restoreExpiredHexagonCampaignClientTheme, restoreExpiredHexagonCampaignDisplayNameStyle, restoreExpiredHexagonCampaignPerks
 
 // Module 17635 (restoreHexagonCampaignPerks)
 import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
 import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5334 */;
-import isPerModeThemingActive from "isPerModeThemingActive" /* 5375 */;
+import isPerModeThemingActive from "isPerModeThemingActive" /* 5365 */;
 import AppIconUtils from "AppIconUtils" /* 15314 */;
 import HexagonActionCreators from "HexagonActionCreators" /* 17084 */;
 import getAppliedHexagonCampaignPerks from "getAppliedHexagonCampaignPerks" /* 17629 */;

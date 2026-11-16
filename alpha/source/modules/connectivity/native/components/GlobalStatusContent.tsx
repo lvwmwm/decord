@@ -1,7 +1,7 @@
 // Module ID: 12918
 // Function ID: 12919
 // Name: GlobalStatusContent
-// Dependencies: [19, 17, 5155, 5177, 6071, 6073, 12915, 1072, 21, 5306, 575, 10818, 504, 11956, 11949, 5313, 5547, 8560, 5492, 12713, 1380, 1630, 11827, 12919, 2]
+// Dependencies: [19, 17, 5155, 5177, 6061, 6063, 12915, 1072, 21, 5306, 575, 10818, 504, 11956, 11949, 5313, 5537, 8560, 5482, 12713, 1380, 1630, 11827, 12919, 2]
 // Exports: default
 
 // Module 12918 (GlobalStatusContent)
@@ -13,8 +13,8 @@ import ConnectivityConstants from "ConnectivityConstants" /* 12915 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import GuildStore from "GuildStore" /* 5177 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6071 */;
-import SessionsStore from "SessionsStore" /* 6073 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
+import SessionsStore from "SessionsStore" /* 6063 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
@@ -28,7 +28,7 @@ let obj3;
 let tmp2;
 let unpackModuleId;
 const useSafeAreaInsetsDefault = tmp2(1630);
-const useThemeDefault = tmp2(5547);
+const useThemeDefault = tmp2(5537);
 const StatusBarDefault = tmp2(11827);
 const useIsInvitedToSpeakDefault = tmp2(11949);
 const useCanSpeakInChannelDefault = tmp2(11956);

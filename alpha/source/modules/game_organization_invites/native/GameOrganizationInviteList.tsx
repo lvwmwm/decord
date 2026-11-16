@@ -1,7 +1,7 @@
 // Module ID: 16408
 // Function ID: 16409
 // Name: GameOrganizationInviteList
-// Dependencies: [19, 21, 5306, 575, 5913, 16409, 7888, 1187, 1113, 2]
+// Dependencies: [19, 21, 5306, 575, 5903, 16409, 7888, 1187, 1113, 2]
 // Exports: default
 
 // Module 16408 (GameOrganizationInviteList)

@@ -1,7 +1,7 @@
 // Module ID: 15276
 // Function ID: 15277
 // Name: BadgeCatalogIcon
-// Dependencies: [32, 19, 17, 21, 6020, 15277, 2]
+// Dependencies: [32, 19, 17, 21, 6010, 15277, 2]
 // Exports: default
 
 // Module 15276 (BadgeCatalogIcon)

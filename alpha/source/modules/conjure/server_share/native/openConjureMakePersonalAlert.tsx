@@ -1,11 +1,11 @@
 // Module ID: 13320
 // Function ID: 13321
 // Name: openConjureMakePersonalAlert
-// Dependencies: [5, 19, 21, 13319, 6015, 6274, 1113, 4131, 6337, 13313, 5929, 6270, 2]
+// Dependencies: [5, 19, 21, 13319, 6005, 6264, 1113, 4131, 6327, 13313, 5919, 6260, 2]
 // Exports: default
 
 // Module 13320 (openConjureMakePersonalAlert)
-import useAlertStore from "useAlertStore" /* 6270 */;
+import useAlertStore from "useAlertStore" /* 6260 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -109,13 +109,13 @@ function ConjureMakePersonalAlert(project) {
   let tmp4Result = null;
   if (null != keptChannels) {
     let obj2 = { variant: "body-sm/normal", color: "text-muted", children: keptChannels };
-    tmp4Result = tmp4(tmp5(5929).Text, obj2);
+    tmp4Result = tmp4(tmp5(5919).Text, obj2);
   }
   items[1] = tmp4Result;
   let tmp4Result2 = null;
   if (null != error) {
     let obj3 = { variant: "body-sm/medium", color: "text-feedback-critical", accessibilityRole: "alert", children: error };
-    tmp4Result2 = tmp4(tmp5(5929).Text, obj3);
+    tmp4Result2 = tmp4(tmp5(5919).Text, obj3);
   }
   items[2] = tmp4Result2;
   obj4 = { children: items1 };
@@ -126,11 +126,11 @@ function ConjureMakePersonalAlert(project) {
       return obj(...arguments);
     }
   };
-  const AlertActionButton = tmp5(6274).AlertActionButton;
+  const AlertActionButton = tmp5(6264).AlertActionButton;
   intl2 = tmp5(1113).intl;
   items1 = [tmp4(AlertActionButton, obj5), ];
   let obj6 = { variant: "secondary", text: intl3.string(tmp5(1113).t["ETE/oC"]) };
-  const AlertActionButton2 = tmp5(6274).AlertActionButton;
+  const AlertActionButton2 = tmp5(6264).AlertActionButton;
   intl3 = tmp5(1113).intl;
   items1[1] = tmp4(AlertActionButton2, obj6);
   return tmp4(AlertModal, obj);

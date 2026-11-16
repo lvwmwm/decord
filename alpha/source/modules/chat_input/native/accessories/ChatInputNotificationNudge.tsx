@@ -1,7 +1,7 @@
 // Module ID: 14824
 // Function ID: 14825
 // Name: ChatInputNotificationNudge
-// Dependencies: [32, 19, 17, 5240, 6958, 14825, 1072, 5152, 14826, 21, 5306, 575, 1256, 10994, 5929, 7428, 14827, 1113, 14828, 7549, 504, 13479, 14836, 9560, 5139, 2]
+// Dependencies: [32, 19, 17, 5240, 6948, 14825, 1072, 5152, 14826, 21, 5306, 575, 1256, 10994, 5919, 7428, 14827, 1113, 14828, 7549, 504, 13479, 14836, 9560, 5139, 2]
 // Exports: default
 
 // Module 14824 (ChatInputNotificationNudge)
@@ -17,7 +17,7 @@ import PostReactionPermissionNudgeExperimentDefault from "PostReactionPermission
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 5240 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6958 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6948 */;
 import Constants from "Constants" /* 1072 */;
 import NotificationPermissionConstants from "NotificationPermissionConstants" /* 14826 */;
 import Fragment from "Fragment" /* 21 */;

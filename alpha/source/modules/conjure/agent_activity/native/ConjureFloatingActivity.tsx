@@ -1,7 +1,7 @@
 // Module ID: 13761
 // Function ID: 13762
 // Name: ConjureFloatingActivity
-// Dependencies: [32, 19, 17, 21, 5306, 575, 1655, 5548, 13704, 7428, 1113, 4131, 10528, 5929, 13762, 6930, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 575, 1655, 5538, 13704, 7428, 1113, 4131, 10528, 5919, 13762, 6920, 2]
 // Exports: default
 
 // Module 13761 (ConjureFloatingActivity)
@@ -9,8 +9,8 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef1655 from "module_1655" /* 1655 */;
 import _modDef4131 from "module_4131" /* 4131 */;
-import timing_timing from "timing/timing" /* 5548 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6930 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6920 */;
 import ConjureTodoListDefault from "ConjureTodoList" /* 13704 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -122,7 +122,7 @@ export default function ConjureFloatingActivity(agents) {
   const obj9 = { size: "xs", color: nativeDefault.colors.TEXT_BRAND };
   const MagicWandIcon = tmp2(10528).MagicWandIcon;
   items5 = [closure_6(MagicWandIcon, obj9), ];
-  const obj10 = { style: tmp.label, children: closure_6(sharedValue(5929).Text, { variant: "body-sm/medium", color: "text-default", lineClamp: 1, children: line }) };
+  const obj10 = { style: tmp.label, children: closure_6(sharedValue(5919).Text, { variant: "body-sm/medium", color: "text-default", lineClamp: 1, children: line }) };
   items5[1] = closure_6(View, obj10);
   items6 = [closure_7(PressableOpacity, obj8), ];
   let tmp18Result = null;

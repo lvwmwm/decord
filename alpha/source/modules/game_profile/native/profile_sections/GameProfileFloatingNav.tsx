@@ -1,14 +1,14 @@
 // Module ID: 10508
 // Function ID: 10509
 // Name: GameProfileFloatingNav
-// Dependencies: [32, 19, 17, 21, 575, 1655, 5306, 10509, 10527, 7997, 5929, 1630, 10571, 5902, 671, 5548, 10311, 7438, 1113, 7436, 5893, 2]
+// Dependencies: [32, 19, 17, 21, 575, 1655, 5306, 10509, 10527, 7997, 5919, 1630, 10571, 5892, 671, 5538, 10311, 7438, 1113, 7436, 5883, 2]
 // Exports: default
 
 // Module 10508 (GameProfileFloatingNav)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import native from "native" /* 7997 */;
 import YouBannerDecorations from "YouBannerDecorations" /* 10509 */;
 import YouScreenNavIconMeasurer2 from "YouScreenNavIconMeasurer" /* 10527 */;
@@ -85,7 +85,7 @@ function FloatingNav(navigation) {
   dependencyMap = tmp3;
   let obj = selectedTab(10571);
   const isGameProfileCommunitiesMobileEnabled = obj.useIsGameProfileCommunitiesMobileEnabled({ location: "GameProfileFloatingNav" });
-  let obj2 = selectedTab(5902);
+  let obj2 = selectedTab(5892);
   const token = obj2.useToken(selectTab(575).colors.BACKGROUND_BASE_LOWEST);
   let items = [token];
   const memo = react.useMemo(() => {
@@ -125,7 +125,7 @@ function FloatingNav(navigation) {
   }, []);
   const tmp10 = tmp9[selectedTab];
   selectedTab(1655);
-  const items1 = [closure_16, tmp10, selectedTab(5548).withTiming, 320, closure_13];
+  const items1 = [closure_16, tmp10, selectedTab(5538).withTiming, 320, closure_13];
   let c0;
   let c1;
   let c2;
@@ -162,7 +162,7 @@ function FloatingNav(navigation) {
     items3[1] = obj4;
     const obj5 = { style: tmp3.wrap, pointerEvents: "box-none", onLayout, children: items4 };
     const obj6 = { colors: memo, style: tmp3.scrim, pointerEvents: "none" };
-    items4 = [closure_7(tmp(5893), obj6), ];
+    items4 = [closure_7(tmp(5883), obj6), ];
     const obj7 = { style: tmp3.pill, accessibilityRole: "tablist", children: items5 };
     const obj8 = { style: tmp3.pillBlur, pointerEvents: "none", children: closure_7(selectedTab(7997).BackgroundBlurFill, {}) };
     items5 = [closure_7(closure_5, obj8), ];

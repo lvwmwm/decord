@@ -1,11 +1,11 @@
 // Module ID: 16312
 // Function ID: 16313
 // Name: ActivateDeviceModalActionCreators
-// Dependencies: [6848, 16313, 2121, 2]
+// Dependencies: [6838, 16313, 2121, 2]
 
 // Module 16312 (ActivateDeviceModalActionCreators)
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import size from "module_2" /* 2 */;
 
 const ACTIVATE_DEVICE_MODAL_KEY = "ACTIVATE_DEVICE_MODAL_KEY";

@@ -1,13 +1,13 @@
 // Module ID: 10678
 // Function ID: 10679
 // Name: openGuildTagCreateFlow
-// Dependencies: [10679, 5527, 5552, 10801, 2121, 2]
+// Dependencies: [10679, 5517, 5542, 10801, 2121, 2]
 // Exports: default
 
 // Module 10678 (openGuildTagCreateFlow)
 import asyncRequire from "asyncRequire" /* 2121 */;
-import Powerups from "Powerups" /* 5527 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import Powerups from "Powerups" /* 5517 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 10679 */;
 import size from "module_2" /* 2 */;
 

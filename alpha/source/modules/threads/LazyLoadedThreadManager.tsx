@@ -1,12 +1,12 @@
 // Module ID: 10974
 // Function ID: 10975
 // Name: LazyLoadedThreadManager
-// Dependencies: [6800, 5159, 5155, 5209, 1072, 5162, 572, 7241, 5354, 5367, 1285, 2]
+// Dependencies: [6790, 5159, 5155, 5209, 1072, 5162, 572, 7241, 5344, 5357, 1285, 2]
 
 // Module 10974 (LazyLoadedThreadManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ChannelConstants from "ChannelConstants" /* 5162 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6800 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6790 */;
 import ChannelRecord from "ChannelRecord" /* 5159 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
@@ -20,7 +20,7 @@ let c9;
 let closure_4;
 let hasOwnProperty;
 let metroImportAll;
-const f101302 = () => {
+const f101315 = () => {
   closure_11 = {};
   channelId = channelId.getChannelId();
   const tmp2 = null != channelId && null == channel.getChannel(channelId);
@@ -33,7 +33,7 @@ function initialize() {
   if (!tmp) {
     c12 = true;
     const obj = DispatcherDefault;
-    const subscription = obj.subscribe("CONNECTION_OPEN", f101302);
+    const subscription = obj.subscribe("CONNECTION_OPEN", f101315);
   }
 }
 function dispatchLoadedThread(nextResult, arg1) {
@@ -64,7 +64,7 @@ function loadThread(c1) {
       c12 = true;
       let tmp2 = importDefault;
       let obj = DispatcherDefault;
-      const subscription = obj.subscribe("CONNECTION_OPEN", f101302);
+      const subscription = obj.subscribe("CONNECTION_OPEN", f101315);
     }
     if (GatewayConnectionStore.isConnected()) {
       if (null != closure_11[c1]) {
@@ -81,9 +81,9 @@ function loadThread(c1) {
         const matchPath = require("matchPathCompat").matchPath;
         CHANNEL = constants.CHANNEL;
         require("matchPathCompat");
-        const RouteParam = tmp13(5367).RouteParam;
+        const RouteParam = tmp13(5357).RouteParam;
         guildIdResult = RouteParam.guildId();
-        RouteParam2 = tmp13(5367).RouteParam;
+        RouteParam2 = tmp13(5357).RouteParam;
         importDefault = matchPath(pathname, obj2);
         const HTTP = tmp13(1285).HTTP;
         const get = HTTP.get;

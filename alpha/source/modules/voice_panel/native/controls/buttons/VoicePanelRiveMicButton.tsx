@@ -1,13 +1,13 @@
 // Module ID: 13047
 // Function ID: 13048
 // Name: VoicePanelRiveMicButton
-// Dependencies: [19, 17, 21, 5306, 7638, 5465, 10604, 13048, 2]
+// Dependencies: [19, 17, 21, 5306, 7638, 5455, 10604, 13048, 2]
 // Exports: VoicePanelRiveMicButton
 
 // Module 13047 (VoicePanelRiveMicButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import MicrophoneRive2 from "MicrophoneRive" /* 5465 */;
+import MicrophoneRive2 from "MicrophoneRive" /* 5455 */;
 import IconSize from "IconSize" /* 7638 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5306 */;

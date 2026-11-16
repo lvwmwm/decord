@@ -1,13 +1,13 @@
 // Module ID: 15431
 // Function ID: 15432
 // Name: UserSettingsPremiumGifting
-// Dependencies: [32, 19, 17, 8547, 8530, 1072, 1390, 21, 5306, 575, 7746, 9582, 1502, 1630, 504, 12, 6755, 9585, 10510, 11673, 8480, 9987, 8533, 9587, 8552, 7809, 7813, 10954, 6020, 15432, 5929, 1113, 15433, 15439, 15452, 15455, 15457, 9718, 7815, 2797, 15458, 7418, 2]
+// Dependencies: [32, 19, 17, 8547, 8530, 1072, 1390, 21, 5306, 575, 7746, 9582, 1502, 1630, 504, 12, 6745, 9585, 10510, 11673, 8480, 9987, 8533, 9587, 8552, 7809, 7813, 10954, 6010, 15432, 5919, 1113, 15433, 15439, 15452, 15455, 15457, 9718, 7815, 2797, 15458, 7418, 2]
 // Exports: default
 
 // Module 15431 (UserSettingsPremiumGifting)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
-import GiftCodeUtils from "GiftCodeUtils" /* 6755 */;
+import GiftCodeUtils from "GiftCodeUtils" /* 6745 */;
 import TableRowGroup from "TableRowGroup" /* 7746 */;
 import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7809 */;
 import UserSettingsUtils from "UserSettingsUtils" /* 7813 */;

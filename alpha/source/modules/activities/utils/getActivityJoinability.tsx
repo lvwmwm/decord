@@ -1,12 +1,12 @@
 // Module ID: 15751
 // Function ID: 15752
 // Name: getActivityJoinability
-// Dependencies: [1072, 12696, 12692, 12697, 5977, 12844, 12734, 8470, 15595, 1380, 12689, 12690, 12691, 2]
+// Dependencies: [1072, 12696, 12692, 12697, 5967, 12844, 12734, 8470, 15595, 1380, 12689, 12690, 12691, 2]
 // Exports: default
 
 // Module 15751 (getActivityJoinability)
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5977 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5967 */;
 import hasFlagDefault from "hasFlag" /* 8470 */;
 import _slicedToArray from "_slicedToArray" /* 12689 */;
 import hasPartySize from "hasPartySize" /* 12690 */;

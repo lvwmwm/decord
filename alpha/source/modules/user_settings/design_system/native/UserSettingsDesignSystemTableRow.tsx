@@ -1,18 +1,18 @@
-// Module ID: 18420
-// Function ID: 18421
+// Module ID: 18422
+// Function ID: 18423
 // Name: UserSettingsDesignSystemTableRow
-// Dependencies: [32, 19, 17, 5349, 1388, 1072, 21, 7443, 10569, 504, 1630, 6337, 7746, 5929, 6020, 1414, 1187, 7954, 7733, 7745, 7747, 7455, 16615, 16612, 16613, 16614, 8108, 5893, 2]
+// Dependencies: [32, 19, 17, 5339, 1388, 1072, 21, 7443, 10569, 504, 1630, 6327, 7746, 5919, 6010, 1414, 1187, 7954, 7733, 7745, 7747, 7455, 16615, 16612, 16613, 16614, 8108, 5883, 2]
 // Exports: default
 
-// Module 18420 (UserSettingsDesignSystemTableRow)
+// Module 18422 (UserSettingsDesignSystemTableRow)
 import get_initialized from "get initialized" /* 504 */;
 import native from "native" /* 1187 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import LinearGradientDefault from "LinearGradient" /* 5893 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import FastImageDefault from "FastImage" /* 6020 */;
-import Stack_Stack from "Stack/Stack" /* 6337 */;
+import LinearGradientDefault from "LinearGradient" /* 5883 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import Stack_Stack from "Stack/Stack" /* 6327 */;
 import TableRow19 from "TableRow" /* 7443 */;
 import TableRowIcon5 from "TableRowIcon" /* 7455 */;
 import TableCheckboxRow4 from "TableCheckboxRow" /* 7733 */;
@@ -29,7 +29,7 @@ import AssetRegistryDefault4 from "AssetRegistry" /* 16615 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5349 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
 import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;

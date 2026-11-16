@@ -1,15 +1,15 @@
 // Module ID: 15703
 // Function ID: 15704
 // Name: AddOrOpenAppButton
-// Dependencies: [5, 32, 19, 11406, 1072, 1501, 21, 13479, 12764, 5552, 7943, 13463, 6014, 1381, 8393, 10449, 1113, 5936, 575, 7055, 8134, 5501, 1628, 1256, 2]
+// Dependencies: [5, 32, 19, 11406, 1072, 1501, 21, 13479, 12764, 5542, 7943, 13463, 6004, 1381, 8393, 10449, 1113, 5926, 575, 7055, 8134, 5491, 1628, 1256, 2]
 // Exports: default
 
 // Module 15703 (AddOrOpenAppButton)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import ToastUtils from "ToastUtils" /* 6014 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import ToastUtils from "ToastUtils" /* 6004 */;
 import ClipboardUtils from "ClipboardUtils" /* 7943 */;
 import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 11406 */;
 import ApplicationUtils from "ApplicationUtils" /* 12764 */;
@@ -63,7 +63,7 @@ function AddAppButton(application) {
         obj2.presentLinkCopied();
       }
     }, items1);
-    const Button = tmp6(5936).Button;
+    const Button = tmp6(5926).Button;
     let intl = tmp6(1113).intl;
     ({ size: "sm", color: guildId(575).colors.WHITE });
     return <Button text={intl.string(tmp6(1113).t.NgXl3C)} onPress={callback} onLongPress={tmp2} accessibilityActions={memo} onAccessibilityAction={callback1} icon={null} />;

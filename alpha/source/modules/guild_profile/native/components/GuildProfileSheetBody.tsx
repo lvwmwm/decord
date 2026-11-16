@@ -1,7 +1,7 @@
 // Module ID: 10656
 // Function ID: 10657
 // Name: GuildProfileSheetBody
-// Dependencies: [19, 17, 8156, 10549, 21, 5306, 575, 8157, 504, 7918, 7937, 8158, 10657, 10672, 5936, 1113, 10673, 10658, 2]
+// Dependencies: [19, 17, 8156, 10549, 21, 5306, 575, 8157, 504, 7918, 7937, 8158, 10657, 10672, 5926, 1113, 10673, 10658, 2]
 // Exports: default
 
 // Module 10656 (GuildProfileSheetBody)

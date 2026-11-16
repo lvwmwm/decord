@@ -1,7 +1,7 @@
 // Module ID: 7741
 // Function ID: 7742
 // Name: EmailVerificationModal
-// Dependencies: [32, 19, 1388, 7742, 1072, 21, 7740, 1264, 7493, 7743, 7750, 7756, 7762, 7765, 7798, 7811, 7816, 504, 5917, 7490, 1113, 2]
+// Dependencies: [32, 19, 1388, 7742, 1072, 21, 7740, 1264, 7493, 7743, 7750, 7756, 7762, 7765, 7798, 7811, 7816, 504, 5907, 7490, 1113, 2]
 // Exports: default
 
 // Module 7741 (EmailVerificationModal)

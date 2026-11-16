@@ -1,7 +1,7 @@
 // Module ID: 17216
 // Function ID: 17217
 // Name: SettingRenderer
-// Dependencies: [32, 109, 19, 17, 2189, 17215, 5177, 12407, 21, 5306, 575, 1187, 7443, 504, 1502, 17217, 1113, 11739, 7720, 17219, 17220, 5929, 7955, 7954, 5320, 7745, 7747, 7943, 6014, 13017, 5554, 5555, 7445, 6337, 2027, 1380, 15761, 7428, 5936, 5902, 17221, 2020, 2]
+// Dependencies: [32, 109, 19, 17, 2189, 17215, 5177, 12407, 21, 5306, 575, 1187, 7443, 504, 1502, 17217, 1113, 11739, 7720, 17219, 17220, 5919, 7955, 7954, 5320, 7745, 7747, 7943, 6004, 13017, 5544, 5545, 7445, 6327, 2027, 1380, 15761, 7428, 5926, 5892, 17221, 2020, 2]
 // Exports: renderSettingItem, renderSettingSearchResultItem, renderSettingSearchResultPlaceholderItem
 
 // Module 17216 (SettingRenderer)
@@ -11,11 +11,11 @@ import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 2020 */;
 import react2 from "react" /* 5320 */;
-import HapticUtils from "HapticUtils" /* 5554 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5555 */;
-import useToken from "useToken" /* 5902 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import ToastUtils from "ToastUtils" /* 6014 */;
+import HapticUtils from "HapticUtils" /* 5544 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5545 */;
+import useToken from "useToken" /* 5892 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import ToastUtils from "ToastUtils" /* 6004 */;
 import GuildIcon from "GuildIcon" /* 7720 */;
 import TableRadioRow from "TableRadioRow" /* 7747 */;
 import ClipboardUtils from "ClipboardUtils" /* 7943 */;

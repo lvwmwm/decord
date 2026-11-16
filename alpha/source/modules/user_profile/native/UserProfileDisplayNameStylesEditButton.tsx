@@ -1,7 +1,7 @@
 // Module ID: 17092
 // Function ID: 17093
 // Name: UserProfileDisplayNameStylesEditButton
-// Dependencies: [32, 19, 17, 1072, 5152, 21, 5306, 575, 1502, 9560, 5139, 8541, 6750, 10068, 1399, 17093, 1256, 1113, 17096, 1187, 15528, 10064, 17097, 17099, 3125, 17100, 2]
+// Dependencies: [32, 19, 17, 1072, 5152, 21, 5306, 575, 1502, 9560, 5139, 8541, 6740, 10068, 1399, 17093, 1256, 1113, 17096, 1187, 15528, 10064, 17097, 17099, 3125, 17100, 2]
 // Exports: default
 
 // Module 17092 (UserProfileDisplayNameStylesEditButton)

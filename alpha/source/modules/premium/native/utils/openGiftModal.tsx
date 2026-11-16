@@ -1,12 +1,12 @@
 // Module ID: 11661
 // Function ID: 11662
 // Name: utils/openGiftModal
-// Dependencies: [6848, 11662, 2121, 2]
+// Dependencies: [6838, 11662, 2121, 2]
 // Exports: openGiftModal
 
 // Module 11661 (utils/openGiftModal)
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/native/utils/openGiftModal.tsx");

@@ -1,7 +1,7 @@
 // Module ID: 14020
 // Function ID: 14021
 // Name: ConjureDebugAgentTab
-// Dependencies: [19, 17, 21, 5306, 575, 14017, 1113, 4131, 14015, 7368, 14021, 5936, 5929, 14014, 14022, 14019, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 14017, 1113, 4131, 14015, 7368, 14021, 5926, 5919, 14014, 14022, 14019, 2]
 // Exports: default
 
 // Module 14020 (ConjureDebugAgentTab)
@@ -23,8 +23,8 @@ let tmp2;
 let tmp9;
 const intl45 = tmp9(1113);
 const _modDef4131 = tmp2(4131);
-const Text_Text = tmp9(5929);
-const components_Button_Button = tmp9(5936);
+const Text_Text = tmp9(5919);
+const components_Button_Button = tmp9(5926);
 const ConjureUsageTypes = tmp9(7368);
 const ConjureDebugLabels = tmp9(14014);
 const ConjureDebugFormat = tmp9(14015);

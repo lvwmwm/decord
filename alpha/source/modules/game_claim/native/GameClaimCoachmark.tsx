@@ -1,18 +1,18 @@
-// Module ID: 18907
-// Function ID: 18908
+// Module ID: 18909
+// Function ID: 18910
 // Name: GameClaimCoachmark
-// Dependencies: [5, 19, 17, 1072, 5152, 21, 575, 18908, 6061, 5942, 5306, 18909, 12110, 1113, 7445, 7428, 7549, 5929, 5936, 8393, 10489, 10493, 2]
+// Dependencies: [5, 19, 17, 1072, 5152, 21, 575, 18910, 6051, 5932, 5306, 18911, 12110, 1113, 7445, 7428, 7549, 5919, 5926, 8393, 10489, 10493, 2]
 // Exports: getScaledGameClaimNoticeHeight
 
-// Module 18907 (GameClaimCoachmark)
+// Module 18909 (GameClaimCoachmark)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
-import ButtonConstants from "ButtonConstants" /* 5942 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 6061 */;
+import ButtonConstants from "ButtonConstants" /* 5932 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 6051 */;
 import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 12110 */;
-import GameClaimCardStack from "GameClaimCardStack" /* 18908 */;
-import UnclaimedGamesActionCreators from "UnclaimedGamesActionCreators" /* 18909 */;
+import GameClaimCardStack from "GameClaimCardStack" /* 18910 */;
+import UnclaimedGamesActionCreators from "UnclaimedGamesActionCreators" /* 18911 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
@@ -34,13 +34,13 @@ let size;
 let tmp2;
 let tmp5;
 const intl5 = tmp2(1113);
-const Text_Text = tmp2(5929);
-const components_Button_Button = tmp2(5936);
+const Text_Text = tmp2(5919);
+const components_Button_Button = tmp2(5926);
 const Pressables = tmp2(7428);
 const Card_Card = tmp2(7445);
 const XSmallIcon = tmp2(7549);
 const LinkExternalSmallIcon = tmp2(8393);
-const GameClaimCardStackDefault = tmp5(18908);
+const GameClaimCardStackDefault = tmp5(18910);
 const View = react_native.View;
 ({ GuildFeatures: hasOwnProperty, RelativeMarketingURLs: metroRequire } = Constants);
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;

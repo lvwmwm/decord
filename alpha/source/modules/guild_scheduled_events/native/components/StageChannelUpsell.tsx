@@ -1,7 +1,7 @@
 // Module ID: 8102
 // Function ID: 8103
 // Name: StageChannelUpsell
-// Dependencies: [32, 19, 17, 5159, 8103, 7966, 1072, 21, 5306, 575, 7428, 1187, 7430, 6020, 8104, 5929, 1113, 5936, 6848, 8105, 2121, 5552, 2]
+// Dependencies: [32, 19, 17, 5159, 8103, 7966, 1072, 21, 5306, 575, 7428, 1187, 7430, 6010, 8104, 5919, 1113, 5926, 6838, 8105, 2121, 5542, 2]
 // Exports: default
 
 // Module 8102 (StageChannelUpsell)
@@ -12,11 +12,11 @@ import intl5 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
 import ChannelRecord from "ChannelRecord" /* 5159 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import components_Button_Button from "components/Button/Button" /* 5936 */;
-import FastImageDefault from "FastImage" /* 6020 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import Pressables from "Pressables" /* 7428 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7430 */;
 import GuildEventModalConstants from "GuildEventModalConstants" /* 7966 */;

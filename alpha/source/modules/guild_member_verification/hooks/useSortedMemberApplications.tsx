@@ -1,13 +1,13 @@
-// Module ID: 19423
-// Function ID: 19424
+// Module ID: 19425
+// Function ID: 19426
 // Name: useSortedMemberApplications
-// Dependencies: [19, 6933, 504, 5352, 2]
+// Dependencies: [19, 6923, 504, 5342, 2]
 // Exports: useSortedMemberApplications
 
-// Module 19423 (useSortedMemberApplications)
-import MemberVerificationTypes from "MemberVerificationTypes" /* 5352 */;
+// Module 19425 (useSortedMemberApplications)
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5342 */;
 import react from "react" /* 19 */;
-import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6933 */;
+import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6923 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_member_verification/hooks/useSortedMemberApplications.tsx");

@@ -1,13 +1,13 @@
-// Module ID: 20772
-// Function ID: 20773
+// Module ID: 20775
+// Function ID: 20776
 // Name: GuildSettingsRoleSubscriptionsPayments
-// Dependencies: [19, 21, 19374, 1113, 2]
+// Dependencies: [19, 21, 19376, 1113, 2]
 // Exports: default
 
-// Module 20772 (GuildSettingsRoleSubscriptionsPayments)
+// Module 20775 (GuildSettingsRoleSubscriptionsPayments)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1113 */;
-import UnavailableNoticeDefault from "UnavailableNotice" /* 19374 */;
+import UnavailableNoticeDefault from "UnavailableNotice" /* 19376 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

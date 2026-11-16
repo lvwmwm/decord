@@ -1,19 +1,19 @@
-// Module ID: 18650
-// Function ID: 18651
+// Module ID: 18652
+// Function ID: 18653
 // Name: Welcome
-// Dependencies: [19, 17, 18651, 5532, 8461, 1407, 6052, 8466, 1072, 8130, 8842, 21, 5306, 575, 14982, 1113, 38, 1187, 5372, 5929, 6020, 15572, 7771, 16297, 1502, 1630, 504, 18652, 5899, 8678, 1256, 510, 6844, 5917, 18653, 18647, 1503, 6951, 5936, 5377, 5892, 14204, 2]
+// Dependencies: [19, 17, 18653, 5522, 8461, 1407, 6042, 8466, 1072, 8130, 8842, 21, 5306, 575, 14982, 1113, 38, 1187, 5362, 5919, 6010, 15572, 7771, 16297, 1502, 1630, 504, 18654, 5889, 8678, 1256, 510, 6834, 5907, 18655, 18649, 1503, 6941, 5926, 5367, 5882, 14204, 2]
 // Exports: default
 
-// Module 18650 (Welcome)
+// Module 18652 (Welcome)
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import Link from "Link" /* 1503 */;
-import UserUtilsDefault from "UserUtils" /* 5372 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import UserUtilsDefault from "UserUtils" /* 5362 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import useIsWindowLargeDefault from "useIsWindowLarge" /* 7771 */;
 import GuildTemplatesConstants from "GuildTemplatesConstants" /* 8130 */;
 import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 8678 */;
@@ -21,14 +21,14 @@ import Constants2 from "Constants" /* 8842 */;
 import GuildInviteIconDefault from "GuildInviteIcon" /* 14982 */;
 import AssetRegistryDefault from "AssetRegistry" /* 15572 */;
 import AssetRegistry from "AssetRegistry" /* 16297 */;
-import RegistrationStepsUtils from "RegistrationStepsUtils" /* 18647 */;
+import RegistrationStepsUtils from "RegistrationStepsUtils" /* 18649 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AgeGateStore from "AgeGateStore" /* 18651 */;
-import ExperimentStore from "ExperimentStore" /* 5532 */;
+import AgeGateStore from "AgeGateStore" /* 18653 */;
+import ExperimentStore from "ExperimentStore" /* 5522 */;
 import GuildTemplateStore from "GuildTemplateStore" /* 8461 */;
 import UserRecord from "UserRecord" /* 1407 */;
-import InviteStore from "InviteStore" /* 6052 */;
+import InviteStore from "InviteStore" /* 6042 */;
 import DisplayedInviteStore from "DisplayedInviteStore" /* 8466 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
@@ -114,9 +114,9 @@ function InviteCard(invite) {
     items1 = [tmp12, ];
     const obj6 = { style: tmp.text, children: items2 };
     const obj7 = { variant: "body-sm/medium", color: "text-subtle", children: stringResult };
-    items2 = [tmp16(tmp15(5929).Text, obj7), ];
+    items2 = [tmp16(tmp15(5919).Text, obj7), ];
     const obj8 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", children: name };
-    items2[1] = tmp16(tmp15(5929).Text, obj8);
+    items2[1] = tmp16(tmp15(5919).Text, obj8);
     items1[1] = closure_20(React3, obj6);
     return closure_20(React3, obj5);
   }
@@ -171,7 +171,7 @@ function Centerpiece(inlineButtons) {
   items[0] = closure_19(FastImageDefault, obj3);
   const obj4 = { style: tmp4.header, lineClamp: num, variant: "display-md", color: "text-overlay-light", maxFontSizeMultiplier: 1, children: intl.string(intl4.t["3S2xmm"]) };
   num = 2;
-  const Heading = tmp5(5929).Heading;
+  const Heading = tmp5(5919).Heading;
   tmp13 = hasOwnProperty;
   if (tmp3) {
     num = 1;
@@ -179,7 +179,7 @@ function Centerpiece(inlineButtons) {
   intl = tmp5(1113).intl;
   const items1 = [closure_19(Heading, obj4), , , ];
   const items2 = [tmp4.subHeader, ];
-  const Text = tmp5(5929).Text;
+  const Text = tmp5(5919).Text;
   if (null != invite) {
     subHeaderWithInvite = tmp4.subHeaderWithInvite;
   } else {

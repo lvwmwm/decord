@@ -1,16 +1,16 @@
-// Module ID: 19267
-// Function ID: 19268
+// Module ID: 19269
+// Function ID: 19270
 // Name: ForYouSuggestedFriendRow
-// Dependencies: [19, 17, 5307, 5248, 1072, 21, 5306, 11050, 575, 1380, 7918, 5944, 563, 8476, 2121, 5372, 18762, 1113, 1655, 19268, 7428, 19269, 1187, 5929, 19270, 19271, 1256, 2]
+// Dependencies: [19, 17, 5307, 5248, 1072, 21, 5306, 11050, 575, 1380, 7918, 5934, 563, 8476, 2121, 5362, 18764, 1113, 1655, 19270, 7428, 19271, 1187, 5919, 19272, 19273, 1256, 2]
 // Exports: default
 
-// Module 19267 (ForYouSuggestedFriendRow)
+// Module 19269 (ForYouSuggestedFriendRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import UserUtilsDefault from "UserUtils" /* 5372 */;
+import UserUtilsDefault from "UserUtils" /* 5362 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7918 */;
 import ChannelListLayout from "ChannelListLayout" /* 11050 */;
 import react from "react" /* 19 */;
@@ -78,7 +78,7 @@ export default function ForYouSuggestedFriendRow(suggestedFriend) {
   const analyticsLocations = useAnalyticsLocationsDefault().analyticsLocations;
   let obj2 = suggestedFriend(11050);
   const layoutStyles = obj2.getLayoutStyles(messagesTabLayout);
-  const obj3 = suggestedFriend(5944);
+  const obj3 = suggestedFriend(5934);
   const fontScale = obj3.useFontScale();
   const items = [stateFromStores];
   const obj4 = suggestedFriend(563);
@@ -90,7 +90,7 @@ export default function ForYouSuggestedFriendRow(suggestedFriend) {
     if (suggestedFriend.friendSuggestionName.length > 0) {
       friendSuggestionName = suggestedFriend.friendSuggestionName;
     }
-    const tmpResult = tmp(18762);
+    const tmpResult = tmp(18764);
     const suggestedContactNameForSuggestion = tmpResult.getSuggestedContactNameForSuggestion(friendSuggestionName, suggestedFriend);
     let str2 = "";
     if (null != suggestedContactNameForSuggestion) {
@@ -120,15 +120,15 @@ export default function ForYouSuggestedFriendRow(suggestedFriend) {
       items4 = [tmp4.pressable, ];
       const obj8 = { borderRadius: layoutStyles.container.borderRadius };
       items4[1] = obj8;
-      const renderChannelPressableWrapper = tmp(19268).renderChannelPressableWrapper;
+      const renderChannelPressableWrapper = tmp(19270).renderChannelPressableWrapper;
       const PressableHighlight = tmp(7428).PressableHighlight;
       const obj9 = { style: tmp4.avatar, children: closure_9(tmp(1187).Avatar, obj10) };
       obj10 = { user: suggestedFriend.user, guildId: "r", size: layoutStyles.icon.avatarSize, animate: !stateFromStoresObject };
-      renderChannelWrapper = tmp(19269).renderChannelWrapper;
+      renderChannelWrapper = tmp(19271).renderChannelWrapper;
       const items5 = [closure_9(sharedValue, obj9), , ];
       const obj11 = { style: tmp4.textContainer, children: items6 };
       const obj12 = { lineClamp: 1, variant: layoutStyles.channelName.text.variant, color: "text-default", style: tmp4.nameText, children: friendSuggestionName };
-      items6 = [closure_9(tmp(5929).Text, obj12), ];
+      items6 = [closure_9(tmp(5919).Text, obj12), ];
       let num3 = 0;
       tmp22 = closure_11;
       const tmpResult12 = tmp(1380);
@@ -137,7 +137,7 @@ export default function ForYouSuggestedFriendRow(suggestedFriend) {
       }
       const obj13 = { style: obj14, children: closure_9(ActionStatusSubLabel, obj15) };
       obj14 = { marginTop: num3 };
-      ActionStatusSubLabel = tmp(19270).ActionStatusSubLabel;
+      ActionStatusSubLabel = tmp(19272).ActionStatusSubLabel;
       const height = layoutStyles.messagePreview.height;
       let num4 = 0;
       const tmpResult13 = tmp(1380);
@@ -164,7 +164,7 @@ export default function ForYouSuggestedFriendRow(suggestedFriend) {
             },
         animate: !stateFromStoresObject
       };
-      const ContactSuggestionActions = tmp(19271).ContactSuggestionActions;
+      const ContactSuggestionActions = tmp(19273).ContactSuggestionActions;
       str4 = "sm";
       const tmpResult14 = tmp(11050);
       if (tmpResult14.isLayoutCozy(messagesTabLayout)) {

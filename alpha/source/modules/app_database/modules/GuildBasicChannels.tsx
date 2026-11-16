@@ -1,7 +1,7 @@
 // Module ID: 8755
 // Function ID: 8756
 // Name: GuildBasicChannels
-// Dependencies: [32, 5, 6800, 5159, 502, 5155, 5218, 5212, 5177, 5238, 5156, 3, 5184, 8756, 11, 5225, 5243, 1084, 5247, 2]
+// Dependencies: [32, 5, 6790, 5159, 502, 5155, 5218, 5212, 5177, 5238, 5156, 3, 5184, 8756, 11, 5225, 5243, 1084, 5247, 2]
 
 // Module 8755 (GuildBasicChannels)
 import LoggerDefault from "Logger" /* 3 */;
@@ -15,7 +15,7 @@ import PermissionUtils from "PermissionUtils" /* 5243 */;
 import BasicPermissionUtilsDefault from "BasicPermissionUtils" /* 5247 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6800 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6790 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 5218 */;
 import GuildRoleStore from "GuildRoleStore" /* 5212 */;

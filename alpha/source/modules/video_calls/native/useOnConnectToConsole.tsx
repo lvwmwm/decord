@@ -1,12 +1,12 @@
 // Module ID: 10819
 // Function ID: 10820
 // Name: useOnConnectToConsole
-// Dependencies: [19, 1072, 5348, 5139, 7424, 7591, 10820, 2]
+// Dependencies: [19, 1072, 5338, 5139, 7424, 7591, 10820, 2]
 // Exports: onConnectToConsole, useOnConnectToConsole
 
 // Module 10819 (useOnConnectToConsole)
 import dismissible_content from "dismissible_content" /* 5139 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5348 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5338 */;
 import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 7424 */;
 import PlayStationLinkModalActionCreatorsDefault from "PlayStationLinkModalActionCreators" /* 7591 */;
 import react from "react" /* 19 */;

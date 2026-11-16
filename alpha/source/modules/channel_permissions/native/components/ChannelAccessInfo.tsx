@@ -1,7 +1,7 @@
 // Module ID: 14902
 // Function ID: 14903
 // Name: ChannelAccessInfo
-// Dependencies: [19, 17, 5173, 5218, 5212, 21, 5306, 575, 1113, 504, 8131, 1255, 5929, 7428, 12558, 1187, 14901, 7436, 8176, 8173, 12973, 2]
+// Dependencies: [19, 17, 5173, 5218, 5212, 21, 5306, 575, 1113, 504, 8131, 1255, 5919, 7428, 12558, 1187, 14901, 7436, 8176, 8173, 12973, 2]
 // Exports: default
 
 // Module 14902 (ChannelAccessInfo)
@@ -73,7 +73,7 @@ export default function ChannelAccessInfo(guild) {
   }
   const tmp12 = closure_10;
   let tmp13 = closure_8;
-  const items2 = [closure_8(tmp2(5929).Text, { variant: "body-sm/medium", children: stringResult }), ];
+  const items2 = [closure_8(tmp2(5919).Text, { variant: "body-sm/medium", children: stringResult }), ];
   let obj2 = {
     accessibilityLabel: stringResult,
     accessibilityRole: "button",
@@ -94,9 +94,9 @@ export default function ChannelAccessInfo(guild) {
     items3 = [tmp13(Avatar, obj5), ];
     let obj6 = { children: items4 };
     let obj7 = { variant: "body-sm/semibold", children: first.tag };
-    items4 = [tmp13(tmp2(5929).Text, obj7), ];
+    items4 = [tmp13(tmp2(5919).Text, obj7), ];
     let obj8 = { variant: "body-xs/medium", children: intl2.string(tmp2(1113).t.rt0ERW) };
-    const Text = tmp2(5929).Text;
+    const Text = tmp2(5919).Text;
     intl2 = tmp2(1113).intl;
     items4[1] = tmp13(Text, obj8);
     items3[1] = closure_9(tmp14, obj6);
@@ -151,7 +151,7 @@ export default function ChannelAccessInfo(guild) {
         const obj7 = { size: "sm", style: closure_2.sectionIcon };
         items = [metroImportAll(GroupIcon, obj7), ];
         const obj8 = { style: closure_2.labelDetail, variant: "body-sm/medium", children: tmp5 };
-        items[1] = metroImportAll(tmp4(5929).Text, obj8);
+        items[1] = metroImportAll(tmp4(5919).Text, obj8);
         return React4(Fragment, obj6);
       }
     }

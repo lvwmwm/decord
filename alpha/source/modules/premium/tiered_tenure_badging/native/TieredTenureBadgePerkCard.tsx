@@ -1,7 +1,7 @@
 // Module ID: 10075
 // Function ID: 10076
 // Name: TieredTenureBadgePerkCard
-// Dependencies: [19, 17, 1388, 1072, 21, 5306, 10076, 10077, 10078, 10079, 10083, 504, 10085, 1256, 10110, 8480, 5552, 15286, 2121, 15286, 1113, 15289, 5929, 15287, 9986, 6020, 2]
+// Dependencies: [19, 17, 1388, 1072, 21, 5306, 10076, 10077, 10078, 10079, 10083, 504, 10085, 1256, 10110, 8480, 5542, 15286, 2121, 15286, 1113, 15289, 5919, 15287, 9986, 6010, 2]
 // Exports: TieredTenureBadgePerkCard
 
 // Module 10075 (TieredTenureBadgePerkCard)
@@ -9,7 +9,7 @@ import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import BadgeId from "BadgeId" /* 8480 */;
 import openBadgeDetailsSheet2 from "openBadgeDetailsSheet" /* 10110 */;
 import TieredTenureBadgeActionSheet from "TieredTenureBadgeActionSheet" /* 15286 */;

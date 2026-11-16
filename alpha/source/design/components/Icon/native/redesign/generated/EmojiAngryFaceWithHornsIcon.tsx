@@ -1,14 +1,14 @@
-// Module ID: 17985
-// Function ID: 17986
+// Module ID: 17987
+// Function ID: 17988
 // Name: EmojiAngryFaceWithHornsIcon
-// Dependencies: [19, 21, 575, 6019, 17986, 2]
+// Dependencies: [19, 21, 575, 6009, 17988, 2]
 // Exports: EmojiAngryFaceWithHornsIcon
 
-// Module 17985 (EmojiAngryFaceWithHornsIcon)
+// Module 17987 (EmojiAngryFaceWithHornsIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6019 */;
-import AssetRegistry from "AssetRegistry" /* 17986 */;
+import BaseIconImage2 from "BaseIconImage" /* 6009 */;
+import AssetRegistry from "AssetRegistry" /* 17988 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

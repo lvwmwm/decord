@@ -1,10 +1,10 @@
-// Module ID: 18952
-// Function ID: 18953
+// Module ID: 18954
+// Function ID: 18955
 // Name: ChannelItemEmbeddedActivities
-// Dependencies: [19, 17, 21, 5306, 575, 7924, 5929, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 7924, 5919, 2]
 // Exports: default
 
-// Module 18952 (ChannelItemEmbeddedActivities)
+// Module 18954 (ChannelItemEmbeddedActivities)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import GameIcon from "GameIcon" /* 7924 */;
@@ -70,7 +70,7 @@ export default function ChannelItemEmbeddedActivities(muted) {
       items1[1] = obj6;
       const _HermesInternal = HermesInternal;
       obj7 = { style: tmp3.overflow, variant: "body-xs/semibold", children: "+" + diff };
-      Text = tmp11(5929).Text;
+      Text = tmp11(5919).Text;
       tmp16Result = tmp16(tmp15, obj5);
     }
     items[1] = tmp16Result;

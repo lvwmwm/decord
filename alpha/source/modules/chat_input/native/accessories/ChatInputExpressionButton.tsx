@@ -1,13 +1,13 @@
 // Module ID: 13509
 // Function ID: 13510
 // Name: ChatInputExpressionButton
-// Dependencies: [19, 21, 5306, 575, 5902, 7428, 1113, 1187, 11859, 10410, 2]
+// Dependencies: [19, 21, 5306, 575, 5892, 7428, 1113, 1187, 11859, 10410, 2]
 
 // Module 13509 (ChatInputExpressionButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import useToken from "useToken" /* 5902 */;
+import useToken from "useToken" /* 5892 */;
 import Pressables from "Pressables" /* 7428 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5306 */;

@@ -1,13 +1,13 @@
 // Module ID: 14300
 // Function ID: 14301
 // Name: CheckpointFadeLayer
-// Dependencies: [32, 19, 5307, 21, 1655, 504, 6836, 7790, 14266, 5548, 2]
+// Dependencies: [32, 19, 5307, 21, 1655, 504, 6826, 7790, 14266, 5538, 2]
 // Exports: default
 
 // Module 14300 (CheckpointFadeLayer)
 import Fragment from "Fragment" /* 21 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5548 */;
+import timing_timing from "timing/timing" /* 5538 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5307 */;
@@ -92,7 +92,7 @@ export default function CheckpointFadeLayer(visible) {
   const tmp10 = keepMounted(num.useState(visible), 2);
   first1 = tmp10[0];
   closure_12 = tmp10[1];
-  const tmpResult3 = tmp(6836);
+  const tmpResult3 = tmp(6826);
   let currentWhen = tmpResult3.useCurrentWhen({ value: children, shouldUpdate: visible });
   let tmp13 = enter;
   closure_13 = enter(7790)(() => {

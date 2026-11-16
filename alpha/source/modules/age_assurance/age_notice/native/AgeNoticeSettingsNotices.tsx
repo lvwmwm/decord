@@ -1,7 +1,7 @@
 // Module ID: 17345
 // Function ID: 17346
 // Name: AgeNoticeSettingsNotices
-// Dependencies: [19, 17, 1388, 6841, 6910, 21, 5306, 575, 17212, 10812, 8159, 1113, 3353, 17252, 8190, 6833, 6842, 5995, 6830, 17346, 12029, 2]
+// Dependencies: [19, 17, 1388, 6831, 6900, 21, 5306, 575, 17212, 10812, 8159, 1113, 3353, 17252, 8190, 6823, 6832, 5985, 6820, 17346, 12029, 2]
 // Exports: ContentFiltersTeenNotice, ContentFiltersUnconfirmedNotice, MessageRequestsNotice, shouldShowTeenNotice, shouldShowUnconfirmedNotice, useIsEnabled, useMessageRequestsNoticeVariant
 
 // Module 17345 (AgeNoticeSettingsNotices)
@@ -9,10 +9,10 @@ import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef3353 from "module_3353" /* 3353 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5995 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6830 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6833 */;
-import AgeNoticeConstants from "AgeNoticeConstants" /* 6841 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5985 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6820 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6823 */;
+import AgeNoticeConstants from "AgeNoticeConstants" /* 6831 */;
 import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8190 */;
 import useAgeGroupPresentation from "useAgeGroupPresentation" /* 10812 */;
 import useUserIsTeen from "useUserIsTeen" /* 12029 */;
@@ -21,7 +21,7 @@ import handleOpenUnconfirmedAgeGroupSupportArticle from "handleOpenUnconfirmedAg
 import useParentalControlSettings from "useParentalControlSettings" /* 17346 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 6910 */;
+import Constants from "Constants" /* 6900 */;
 import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let metroImportAll;
 let metroImportDefault;
 let obj2;
 let tmp;
-const AgeNoticeExperiment = tmp(6842);
+const AgeNoticeExperiment = tmp(6832);
 function TeenNotice(noticeType) {
   let intl;
   noticeType = noticeType.noticeType;

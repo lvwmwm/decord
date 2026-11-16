@@ -1,7 +1,7 @@
 // Module ID: 16935
 // Function ID: 16936
 // Name: channels
-// Dependencies: [32, 5, 5159, 5155, 5177, 5238, 6071, 5209, 6941, 5981, 6761, 1072, 16914, 5977, 7303, 13151, 16918, 12869, 16922, 7307, 7306, 12, 7297, 7022, 6935, 6356, 1099, 7660, 2]
+// Dependencies: [32, 5, 5159, 5155, 5177, 5238, 6061, 5209, 6931, 5971, 6751, 1072, 16914, 5967, 7303, 13151, 16918, 12869, 16922, 7307, 7306, 12, 7297, 7022, 6925, 6346, 1099, 7660, 2]
 
 // Module 16935 (channels)
 import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 7022 */;
@@ -18,11 +18,11 @@ import ChannelRecord from "ChannelRecord" /* 5159 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import GuildStore from "GuildStore" /* 5177 */;
 import PermissionStore from "PermissionStore" /* 5238 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6071 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
-import SpeakingStore from "SpeakingStore" /* 6941 */;
-import VoiceStateStore from "VoiceStateStore" /* 5981 */;
-import Constants_mod from "Constants" /* 6761 */;
+import SpeakingStore from "SpeakingStore" /* 6931 */;
+import VoiceStateStore from "VoiceStateStore" /* 5971 */;
+import Constants_mod from "Constants" /* 6751 */;
 import Constants_mod2 from "Constants" /* 1072 */;
 import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 16922 */;
 import size from "module_2" /* 2 */;
@@ -393,7 +393,7 @@ let obj8 = {
   handler(args) {
     let server;
     let socket;
-    const f114294 = function(type) {
+    const f114308 = function(type) {
       if (null == type) {
         const _HermesInternal = HermesInternal;
         const self5 = this;
@@ -611,8 +611,8 @@ let obj8 = {
           const tmp = new channel_id(flag2[14])(obj, "Request to select voice channel timed out.");
           throw tmp;
         });
-        const then = catchPromise.then(f114294).then;
-        catchPromise.then(f114294);
+        const then = catchPromise.then(f114308).then;
+        catchPromise.then(f114308);
         let closure_0 = obj9(function*(arg0, value) {
           function validateUserAllowsJoiningVoice() {
             return closure_1_18(...arguments);

@@ -1,10 +1,10 @@
-// Module ID: 19401
-// Function ID: 19402
+// Module ID: 19403
+// Function ID: 19404
 // Name: GuildOnboardingNewMemberActions
-// Dependencies: [19, 17, 6969, 5155, 5218, 5177, 5238, 7080, 9001, 1072, 1391, 5224, 21, 5306, 575, 504, 5954, 1414, 14682, 6020, 5252, 5929, 1187, 14057, 7428, 1113, 14686, 19402, 1406, 19403, 2]
+// Dependencies: [19, 17, 6969, 5155, 5218, 5177, 5238, 7080, 9001, 1072, 1391, 5224, 21, 5306, 575, 504, 5944, 1414, 14682, 6010, 5252, 5919, 1187, 14057, 7428, 1113, 14686, 19404, 1406, 19405, 2]
 // Exports: default
 
-// Module 19401 (GuildOnboardingNewMemberActions)
+// Module 19403 (GuildOnboardingNewMemberActions)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;

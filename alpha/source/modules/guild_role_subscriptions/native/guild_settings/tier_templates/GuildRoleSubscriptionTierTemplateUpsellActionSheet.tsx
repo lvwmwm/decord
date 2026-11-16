@@ -1,19 +1,19 @@
-// Module ID: 18970
-// Function ID: 18971
+// Module ID: 18972
+// Function ID: 18973
 // Name: GuildRoleSubscriptionTierTemplateUpsellActionSheet
-// Dependencies: [32, 19, 17, 5307, 1072, 5152, 21, 5306, 575, 8560, 563, 5566, 1113, 9730, 5929, 6337, 5936, 8404, 5552, 2]
+// Dependencies: [32, 19, 17, 5307, 1072, 5152, 21, 5306, 575, 8560, 563, 5556, 1113, 9730, 5919, 6327, 5926, 8404, 5542, 2]
 // Exports: default
 
-// Module 18970 (GuildRoleSubscriptionTierTemplateUpsellActionSheet)
+// Module 18972 (GuildRoleSubscriptionTierTemplateUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5566 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import components_Button_Button from "components/Button/Button" /* 5936 */;
-import Stack_Stack from "Stack/Stack" /* 6337 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5556 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
+import Stack_Stack from "Stack/Stack" /* 6327 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8404 */;
 import useIsScreenLandscape from "useIsScreenLandscape" /* 8560 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;

@@ -1,11 +1,11 @@
 // Module ID: 12564
 // Function ID: 12565
 // Name: GameOrganizationInvitePickerRow
-// Dependencies: [19, 12565, 8842, 21, 5306, 575, 12566, 7443, 6020, 7928, 6337, 7436, 5929, 1113, 2565, 12567, 2]
+// Dependencies: [19, 12565, 8842, 21, 5306, 575, 12566, 7443, 6010, 7928, 6327, 7436, 5919, 1113, 2565, 12567, 2]
 
 // Module 12564 (GameOrganizationInvitePickerRow)
 import nativeDefault from "native" /* 575 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import TableRow2 from "TableRow" /* 7443 */;
 import Constants from "Constants" /* 8842 */;
 import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 12565 */;
@@ -75,12 +75,12 @@ const memoResult = react.memo(function GameOrganizationInvitePickerRow(organizat
   if (null != memberCount) {
     if (null != maxMembers) {
       const obj5 = { direction: "horizontal", spacing: nativeDefault.space.PX_4, align: "center", children: items1 };
-      const Stack = tmp5(6337).Stack;
+      const Stack = tmp5(6327).Stack;
       const obj6 = { size: "xs", color: nativeDefault.colors.ICON_MUTED };
       const GroupIcon = tmp5(7436).GroupIcon;
       items1 = [metroRequire(GroupIcon, obj6), ];
       const obj7 = { variant: "body-xs/medium", color: "text-muted", children: intl.formatToPlainString(_modDef2565.VuENGl, obj8) };
-      const Text = tmp5(5929).Text;
+      const Text = tmp5(5919).Text;
       intl = tmp5(1113).intl;
       obj8 = { count: memberCount, max: maxMembers };
       items1[1] = metroRequire(Text, obj7);

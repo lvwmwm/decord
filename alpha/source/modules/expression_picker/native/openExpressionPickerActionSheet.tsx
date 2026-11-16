@@ -1,12 +1,12 @@
 // Module ID: 11242
 // Function ID: 11243
 // Name: openExpressionPickerActionSheet
-// Dependencies: [5552, 11243, 2121, 2]
+// Dependencies: [5542, 11243, 2121, 2]
 // Exports: openExpressionPickerActionSheet
 
 // Module 11242 (openExpressionPickerActionSheet)
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import size from "module_2" /* 2 */;
 
 const ExpressionPickerActionSheet = "ExpressionPickerActionSheet";

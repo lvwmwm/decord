@@ -1,18 +1,18 @@
-// Module ID: 18617
-// Function ID: 18618
+// Module ID: 18619
+// Function ID: 18620
 // Name: RedesignSettingsNotificationScreen
-// Dependencies: [19, 18105, 9202, 21, 18618, 1113, 3029, 12406, 5899, 18619, 2]
+// Dependencies: [19, 18107, 9202, 21, 18620, 1113, 3029, 12406, 5889, 18621, 2]
 
-// Module 18617 (RedesignSettingsNotificationScreen)
+// Module 18619 (RedesignSettingsNotificationScreen)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef3029 from "module_3029" /* 3029 */;
-import useMountEffectDefault from "useMountEffect" /* 5899 */;
+import useMountEffectDefault from "useMountEffect" /* 5889 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;
 import SettingBuilders from "SettingBuilders" /* 12406 */;
-import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 18105 */;
-import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 18618 */;
-import SystemNotifPermissionLayoutDefault from "SystemNotifPermissionLayout" /* 18619 */;
+import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 18107 */;
+import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 18620 */;
+import SystemNotifPermissionLayoutDefault from "SystemNotifPermissionLayout" /* 18621 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

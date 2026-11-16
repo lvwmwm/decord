@@ -12,7 +12,7 @@ let _require, dependencyMap;
 
 let tmp;
 const normalize = tmp(729);
-const f82614 = (item) => {
+const f82626 = (item) => {
   let StringResult;
   const obj = _mod691;
   if (obj.isPrimitive(item)) {
@@ -51,7 +51,7 @@ export function formatConsoleArgs(args, normalizeDepth, normalizeMaxBreadth) {
   }
   _require = normalizeDepth;
   dependencyMap = normalizeMaxBreadth;
-  const mapped = args.map(f82614);
+  const mapped = args.map(f82626);
   applyResult = mapped.join(" ");
 }
 export function hasConsoleSubstitutions(args) {
@@ -61,6 +61,6 @@ export function hasConsoleSubstitutions(args) {
 export function safeJoinConsoleArgs(arr, arg1, arg2) {
   let closure_0 = arg1;
   let closure_1 = arg2;
-  const mapped = arr.map(f82614);
+  const mapped = arr.map(f82626);
   return mapped.join(" ");
 }

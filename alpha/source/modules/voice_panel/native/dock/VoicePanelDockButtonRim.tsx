@@ -1,12 +1,12 @@
-// Module ID: 19230
-// Function ID: 19231
+// Module ID: 19232
+// Function ID: 19233
 // Name: VoicePanelDockButtonRim
-// Dependencies: [32, 19, 17, 12009, 21, 5902, 575, 8263, 1655, 5548, 14853, 2]
+// Dependencies: [32, 19, 17, 12009, 21, 5892, 575, 8263, 1655, 5538, 14853, 2]
 
-// Module 19230 (VoicePanelDockButtonRim)
+// Module 19232 (VoicePanelDockButtonRim)
 import nativeDefault from "native" /* 575 */;
-import timing_timing from "timing/timing" /* 5548 */;
-import useToken from "useToken" /* 5902 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import useToken from "useToken" /* 5892 */;
 import inlineStyles from "inlineStyles" /* 8263 */;
 import VoicePanelDockConstants from "VoicePanelDockConstants" /* 12009 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;

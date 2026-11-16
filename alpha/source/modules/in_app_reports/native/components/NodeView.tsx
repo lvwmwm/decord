@@ -1,18 +1,18 @@
 // Module ID: 12070
 // Function ID: 12071
 // Name: NodeView
-// Dependencies: [32, 19, 17, 5932, 5155, 5238, 12071, 12069, 1072, 1083, 21, 5306, 575, 5917, 6341, 5929, 5303, 6037, 504, 12072, 12073, 1502, 5568, 6331, 12066, 12064, 6067, 12075, 12029, 9616, 7415, 12079, 12080, 12081, 12082, 12083, 12084, 12280, 12281, 12282, 12283, 12284, 12285, 12286, 12288, 12291, 12292, 12293, 12294, 12297, 12298, 12299, 12302, 2]
+// Dependencies: [32, 19, 17, 5922, 5155, 5238, 12071, 12069, 1072, 1083, 21, 5306, 575, 5907, 6331, 5919, 5303, 6027, 504, 12072, 12073, 1502, 5558, 6321, 12066, 12064, 6057, 12075, 12029, 9616, 7415, 12079, 12080, 12081, 12082, 12083, 12084, 12280, 12281, 12282, 12283, 12284, 12285, 12286, 12288, 12291, 12292, 12293, 12294, 12297, 12298, 12299, 12302, 2]
 // Exports: default
 
 // Module 12070 (NodeView)
 import nativeDefault from "native" /* 575 */;
 import Constants2 from "Constants" /* 1083 */;
 import ColorUtils from "ColorUtils" /* 5303 */;
-import reactDefault from "react" /* 5917 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 6037 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6067 */;
-import CustomMarkupAll from "CustomMarkup" /* 6341 */;
+import reactDefault from "react" /* 5907 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 6027 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6057 */;
+import CustomMarkupAll from "CustomMarkup" /* 6331 */;
 import MenuTypes from "MenuTypes" /* 12064 */;
 import InAppReportsConstants from "InAppReportsConstants" /* 12069 */;
 import MenuConstants from "MenuConstants" /* 12071 */;
@@ -21,7 +21,7 @@ import ArrowDefault from "Arrow" /* 12073 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import DevSettingsStore from "DevSettingsStore" /* 5932 */;
+import DevSettingsStore from "DevSettingsStore" /* 5922 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import PermissionStore from "PermissionStore" /* 5238 */;
 import Constants from "Constants" /* 1072 */;
@@ -137,7 +137,7 @@ function ChildItem(child) {
   }
   if (stateFromStores) {
     const obj3 = { style: tmp.debugText, variant: "body-xs/normal", color: "text-muted", children: report_type };
-    stateFromStores = tmp10(tmp6(5929).Text, obj3);
+    stateFromStores = tmp10(tmp6(5919).Text, obj3);
   }
   return closure_16(tmp11, obj2);
 }

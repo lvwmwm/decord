@@ -1,7 +1,7 @@
 // Module ID: 13111
 // Function ID: 13112
 // Name: ActiveSpeakerTooltip
-// Dependencies: [32, 19, 17, 7016, 13085, 1072, 21, 5306, 575, 504, 6950, 7428, 12491, 5929, 1113, 2]
+// Dependencies: [32, 19, 17, 7016, 13085, 1072, 21, 5306, 575, 504, 6940, 7428, 12491, 5919, 1113, 2]
 
 // Module 13111 (ActiveSpeakerTooltip)
 import react_native from "react-native" /* 17 */;
@@ -52,7 +52,7 @@ const memoResult = react.memo(function ActiveSpeakerTooltip(channel) {
     const speakingParticipants = ChannelRTCStore.getSpeakingParticipants(channel.id);
     const items = [speakingParticipants.map((user) => user.user), ChannelRTCStore.getParticipantsVersion(channel.id)];
     return items;
-  }, items1, channel(6950).isVersionEqual), 1)[0];
+  }, items1, channel(6940).isVersionEqual), 1)[0];
   const first1 = _slicedToArray(closure_7(), 1)[0];
   let tmp6 = null;
   if (0 !== first.length) {
@@ -67,7 +67,7 @@ const memoResult = react.memo(function ActiveSpeakerTooltip(channel) {
       items2 = [closure_8(View, obj4), ];
       const obj6 = { style: tmp.participantNameplateContainer, children: closure_8(Text, obj7) };
       obj7 = { style: tmp.participantNameplateSpeakingText, variant: "body-xs/medium", color: "text-default", children: intl.format(channel(1113).t["+dia6l"], obj8) };
-      Text = tmp2(5929).Text;
+      Text = tmp2(5919).Text;
       intl = tmp2(1113).intl;
       obj8 = { count: first.length };
       items2[1] = closure_8(View, obj6);

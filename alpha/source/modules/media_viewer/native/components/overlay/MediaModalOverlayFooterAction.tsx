@@ -1,14 +1,14 @@
 // Module ID: 15209
 // Function ID: 15210
 // Name: MediaModalOverlayFooterAction
-// Dependencies: [19, 17, 21, 5306, 575, 7415, 1380, 5906, 15202, 5936, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 7415, 1380, 5896, 15202, 5926, 2]
 // Exports: MediaModalOverlayFooterAction
 
 // Module 15209 (MediaModalOverlayFooterAction)
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import VisualEffectViewDefault from "VisualEffectView" /* 5906 */;
-import components_Button_Button from "components/Button/Button" /* 5936 */;
+import VisualEffectViewDefault from "VisualEffectView" /* 5896 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 7415 */;
 import MediaViewerThumbnailsDefault from "MediaViewerThumbnails" /* 15202 */;
 import react from "react" /* 19 */;

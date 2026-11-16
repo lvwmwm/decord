@@ -1,15 +1,15 @@
-// Module ID: 20448
-// Function ID: 20449
+// Module ID: 20451
+// Function ID: 20452
 // Name: GuildSettingsModalModeration
-// Dependencies: [19, 5238, 8405, 1072, 21, 5306, 575, 12029, 8404, 7746, 1113, 2188, 7954, 5377, 7493, 7427, 7745, 17367, 7747, 5929, 8106, 6337, 5912, 1502, 504, 2]
+// Dependencies: [19, 5238, 8405, 1072, 21, 5306, 575, 12029, 8404, 7746, 1113, 2188, 7954, 5367, 7493, 7427, 7745, 17367, 7747, 5919, 8106, 6327, 5902, 1502, 504, 2]
 // Exports: default
 
-// Module 20448 (GuildSettingsModalModeration)
+// Module 20451 (GuildSettingsModalModeration)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
-import native from "native" /* 5377 */;
-import Stack_Stack from "Stack/Stack" /* 6337 */;
+import native from "native" /* 5367 */;
+import Stack_Stack from "Stack/Stack" /* 6327 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7427 */;
 import TableRadioRow2 from "TableRadioRow" /* 7747 */;
 import _mod8106 from "module_8106" /* 8106 */;
@@ -35,8 +35,8 @@ let obj2;
 let tmp2;
 let tmp5;
 let unpackModuleId;
-const NavScrim = tmp5(5912);
-const Text_Text = tmp2(5929);
+const NavScrim = tmp5(5902);
+const Text_Text = tmp2(5919);
 function GuildSettingsOwnerConfiguredContentLevel(guild) {
   let TableSwitchRow;
   let format;

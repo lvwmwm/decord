@@ -1,13 +1,13 @@
 // Module ID: 13312
 // Function ID: 13313
 // Name: showConjureShareToServerSheet
-// Dependencies: [5, 19, 17, 7017, 21, 5306, 575, 504, 13189, 1113, 4131, 5552, 6015, 7951, 7913, 7745, 7747, 13313, 13316, 5929, 5936, 2]
+// Dependencies: [5, 19, 17, 7017, 21, 5306, 575, 504, 13189, 1113, 4131, 5542, 6005, 7951, 7913, 7745, 7747, 13313, 13316, 5919, 5926, 2]
 // Exports: default
 
 // Module 13312 (showConjureShareToServerSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5542 */;
 import TableRadioRow from "TableRadioRow" /* 7747 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -210,7 +210,7 @@ function ShareToServerSheet(projectId) {
   let tmp10Result3 = null;
   if (addingToAnother) {
     let obj5 = { variant: "body-sm/normal", color: "text-muted", children: intl3.string(tmp5(4131).Ewprwt) };
-    const Text = tmp2(5929).Text;
+    const Text = tmp2(5919).Text;
     intl3 = tmp2(1113).intl;
     tmp10Result3 = tmp10(Text, obj5);
   }
@@ -218,10 +218,10 @@ function ShareToServerSheet(projectId) {
   let tmp10Result4 = null;
   if (null != error) {
     let obj6 = { variant: "body-sm/medium", color: "text-feedback-critical", accessibilityRole: "alert", children: error };
-    tmp10Result4 = tmp10(tmp2(5929).Text, obj6);
+    tmp10Result4 = tmp10(tmp2(5919).Text, obj6);
   }
   items2[3] = tmp10Result4;
-  const Button = tmp2(5936).Button;
+  const Button = tmp2(5926).Button;
   const intl4 = tmp2(1113).intl;
   const string = intl4.string;
   const tmp5Result2 = str(4131);
@@ -244,7 +244,7 @@ function ShareToServerSheet(projectId) {
       return obj.hideActionSheet(ConjureShareToServerSheet);
     }
   };
-  const Button2 = tmp2(5936).Button;
+  const Button2 = tmp2(5926).Button;
   intl5 = tmp2(1113).intl;
   items2[5] = closure_7(Button2, obj8);
   return closure_7(ActionSheet, obj2);

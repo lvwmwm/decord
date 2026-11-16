@@ -1,7 +1,7 @@
 // Module ID: 12710
 // Function ID: 12711
 // Name: tryJoinAsFrame
-// Dependencies: [5, 5154, 7016, 5155, 6068, 1072, 7020, 8470, 12697, 12707, 12711, 5227, 14039, 2151, 5977, 12755, 12754, 12743, 7025, 14042, 14043, 8134, 2]
+// Dependencies: [5, 5154, 7016, 5155, 6058, 1072, 7020, 8470, 12697, 12707, 12711, 5227, 14039, 2151, 5967, 12755, 12754, 12743, 7025, 14042, 14043, 8134, 2]
 // Exports: tryJoinAsFrame, tryStartAsEmbeddedApp
 
 // Module 12710 (tryJoinAsFrame)
@@ -16,7 +16,7 @@ import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 7016 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
-import PresenceStore from "PresenceStore" /* 6068 */;
+import PresenceStore from "PresenceStore" /* 6058 */;
 import size from "module_2" /* 2 */;
 
 let application, c8, c9, channelId2, customId, embeddedActivitiesForChannel, inviterUserId, referrerId, source, user;

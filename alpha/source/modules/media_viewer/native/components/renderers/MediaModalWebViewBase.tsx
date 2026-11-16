@@ -1,10 +1,10 @@
 // Module ID: 10202
 // Function ID: 10203
 // Name: MediaModalWebViewBase
-// Dependencies: [19, 17, 21, 1380, 5306, 1655, 5548, 6012, 8216, 2]
+// Dependencies: [19, 17, 21, 1380, 5306, 1655, 5538, 6002, 8216, 2]
 
 // Module 10202 (MediaModalWebViewBase)
-import LinkingDefault from "Linking" /* 6012 */;
+import LinkingDefault from "Linking" /* 6002 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

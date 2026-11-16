@@ -1,7 +1,7 @@
 // Module ID: 12808
 // Function ID: 12809
 // Name: UserTile
-// Dependencies: [32, 19, 17, 6369, 12809, 502, 5155, 2133, 1072, 5983, 6075, 21, 5306, 575, 5303, 504, 8614, 1187, 12834, 5929, 1113, 12795, 12797, 12835, 12836, 12837, 12838, 10597, 7026, 11990, 12839, 11009, 12785, 5598, 12840, 2]
+// Dependencies: [32, 19, 17, 6359, 12809, 502, 5155, 2133, 1072, 5973, 6065, 21, 5306, 575, 5303, 504, 8614, 1187, 12834, 5919, 1113, 12795, 12797, 12835, 12836, 12837, 12838, 10597, 7026, 11990, 12839, 11009, 12785, 5588, 12840, 2]
 // Exports: default
 
 // Module 12808 (UserTile)
@@ -10,9 +10,9 @@ import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import CallConstants from "CallConstants" /* 5983 */;
-import Constants2 from "Constants" /* 6075 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import CallConstants from "CallConstants" /* 5973 */;
+import Constants2 from "Constants" /* 6065 */;
 import VoiceChannelEffectsStore2 from "VoiceChannelEffectsStore" /* 12809 */;
 import AssetRegistryDefault from "AssetRegistry" /* 12834 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 12835 */;
@@ -22,7 +22,7 @@ import AssetRegistryDefault5 from "AssetRegistry" /* 12838 */;
 import mediaEngineContextFromParticipantTypeDefault from "mediaEngineContextFromParticipantType" /* 12839 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SoundboardStore from "SoundboardStore" /* 6369 */;
+import SoundboardStore from "SoundboardStore" /* 6359 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;

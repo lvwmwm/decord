@@ -1,7 +1,7 @@
 // Module ID: 15118
 // Function ID: 15119
 // Name: GuildDirectoryEmpty
-// Dependencies: [19, 17, 5236, 1072, 21, 5306, 575, 1630, 504, 14704, 6020, 15119, 1187, 1113, 5929, 8106, 14705, 15120, 8460, 15121, 2]
+// Dependencies: [19, 17, 5236, 1072, 21, 5306, 575, 1630, 504, 14704, 6010, 15119, 1187, 1113, 5919, 8106, 14705, 15120, 8460, 15121, 2]
 // Exports: default
 
 // Module 15118 (GuildDirectoryEmpty)
@@ -58,7 +58,7 @@ export default function GuildDirectoryEmpty(guild) {
   items1[1] = obj4;
   const canCreateOrAddGuildInDirectory = obj2.useCanCreateOrAddGuildInDirectory(channel);
   const obj5 = { source: channel(15119), style: tmp.header };
-  const tmp9 = channel(6020);
+  const tmp9 = channel(6010);
   items2 = [closure_6(tmp9, obj5), , , , ];
   const obj6 = { style: tmp.title, accessibilityRole: "header", children: intl.format(guild(1113).t.vyvrpC, obj7) };
   const LegacyText = guild(1187).LegacyText;
@@ -66,7 +66,7 @@ export default function GuildDirectoryEmpty(guild) {
   obj7 = { guildName: guild.name };
   items2[1] = closure_6(LegacyText, obj6);
   const obj8 = { style: tmp.description, variant: "body-sm/medium", color: "text-default", children: intl2.string(guild(1113).t.WypE0i) };
-  const Text = guild(5929).Text;
+  const Text = guild(5919).Text;
   intl2 = guild(1113).intl;
   items2[2] = closure_6(Text, obj8);
   let tmp8Result = null;

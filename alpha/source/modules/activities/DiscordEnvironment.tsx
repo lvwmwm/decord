@@ -1,14 +1,14 @@
 // Module ID: 12850
 // Function ID: 12851
 // Name: DiscordEnvironment
-// Dependencies: [5307, 1192, 5373, 12851, 5131, 2]
+// Dependencies: [5307, 1192, 5363, 12851, 5131, 2]
 // Exports: getDiscordBaseTheme, getDiscordEnvQueryParams, getDiscordEnvironment, getDiscordFontScale, getDiscordUIDensity
 
 // Module 12850 (DiscordEnvironment)
 import UserSettings from "UserSettings" /* 5131 */;
 import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
-import StreamerModeStore from "StreamerModeStore" /* 5373 */;
+import StreamerModeStore from "StreamerModeStore" /* 5363 */;
 import UIDensityConstants from "UIDensityConstants" /* 12851 */;
 import size from "module_2" /* 2 */;
 

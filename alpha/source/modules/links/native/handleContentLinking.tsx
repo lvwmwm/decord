@@ -1,7 +1,7 @@
 // Module ID: 12505
 // Function ID: 12506
 // Name: handleContentLinking
-// Dependencies: [5, 7661, 1072, 6848, 7262, 1099, 11999, 12502, 2]
+// Dependencies: [5, 7661, 1072, 6838, 7262, 1099, 11999, 12502, 2]
 // Exports: default
 
 // Module 12505 (handleContentLinking)

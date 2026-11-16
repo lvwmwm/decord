@@ -1,18 +1,18 @@
 // Module ID: 9353
 // Function ID: 9354
 // Name: utils/ChangeLogUtils
-// Dependencies: [19, 17, 21, 5306, 575, 6961, 6341, 5929, 9354, 9355, 9356, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 6951, 6331, 5919, 9354, 9355, 9356, 2]
 
 // Module 9353 (utils/ChangeLogUtils)
 import react_native from "react-native" /* 17 */;
 import Fragment2 from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import LegacyTokens from "LegacyTokens" /* 6961 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import LegacyTokens from "LegacyTokens" /* 6951 */;
 import ChangelogInlineImageDefault from "ChangelogInlineImage" /* 9356 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 5306 */;
-import CustomMarkup from "CustomMarkup" /* 6341 */;
+import CustomMarkup from "CustomMarkup" /* 6331 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -100,7 +100,7 @@ function ChangeLogParagraph(state) {
     Paragraph = components.Paragraph;
   }
   if (Paragraph == null) {
-    Paragraph = output(5929).Text;
+    Paragraph = output(5919).Text;
   }
   let tmp6 = dependencyMap;
   const obj = output(9354);

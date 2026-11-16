@@ -1,13 +1,13 @@
 // Module ID: 7399
 // Function ID: 7400
 // Name: OAuth2AuthorizeModal
-// Dependencies: [19, 17, 21, 5306, 575, 7400, 1630, 1655, 5939, 7428, 1113, 14493, 7549, 5929, 7415, 15971, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 7400, 1630, 1655, 5929, 7428, 1113, 14493, 7549, 5919, 7415, 15971, 2]
 // Exports: default
 
 // Module 7399 (OAuth2AuthorizeModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import spring_spring from "spring/spring" /* 5939 */;
+import spring_spring from "spring/spring" /* 5929 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
@@ -123,7 +123,7 @@ export default function OAuth2AuthorizeModal(arg0) {
   items4 = [closure_5(PressableOpacity, obj6), , ];
   const obj9 = { style: tmp.title, children: closure_5(Text, obj10) };
   obj10 = { variant: "heading-md/semibold", accessibilityRole: "header", children: intl3.string(require("intl").t["y+/PE9"]) };
-  Text = tmp5(5929).Text;
+  Text = tmp5(5919).Text;
   intl3 = tmp5(1113).intl;
   items4[1] = closure_5(View, obj9);
   const obj11 = { style: items5 };

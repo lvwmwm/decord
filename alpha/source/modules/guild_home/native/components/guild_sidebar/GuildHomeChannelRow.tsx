@@ -1,16 +1,16 @@
-// Module ID: 18924
-// Function ID: 18925
+// Module ID: 18926
+// Function ID: 18927
 // Name: GuildHomeChannelRow
-// Dependencies: [19, 1072, 5162, 6060, 21, 5306, 575, 1099, 14789, 1113, 16275, 2]
+// Dependencies: [19, 1072, 5162, 6050, 21, 5306, 575, 1099, 14789, 1113, 16275, 2]
 // Exports: default
 
-// Module 18924 (GuildHomeChannelRow)
+// Module 18926 (GuildHomeChannelRow)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import router_utils from "router_utils" /* 1099 */;
 import ChannelConstants from "ChannelConstants" /* 5162 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 6060 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 6050 */;
 import BaseChannelItemDefault from "BaseChannelItem" /* 14789 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5306 */;

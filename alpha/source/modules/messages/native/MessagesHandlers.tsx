@@ -1,7 +1,7 @@
 // Module ID: 12459
 // Function ID: 12460
 // Name: MessagesHandlers
-// Dependencies: [109, 5, 32, 2165, 9122, 12368, 7056, 11013, 7029, 9329, 8808, 8744, 12000, 5240, 8553, 502, 5155, 12378, 5218, 5177, 6052, 7317, 6372, 5238, 6068, 5209, 5349, 7316, 9021, 1388, 9160, 1072, 12369, 8842, 1390, 8206, 1112, 7937, 12460, 12462, 2121, 12463, 12464, 12503, 12506, 9210, 6900, 7948, 1113, 9102, 11046, 12575, 5552, 12581, 5985, 12583, 12584, 6048, 8841, 12585, 12586, 11864, 11866, 11374, 1380, 9276, 7287, 11233, 9275, 12619, 10655, 8476, 11, 12621, 12622, 9124, 9127, 11999, 6384, 12630, 9199, 5554, 5555, 12652, 1099, 12639, 12684, 6952, 6067, 8711, 9196, 12685, 6069, 12686, 7472, 1406, 12687, 12696, 12697, 12702, 12703, 12704, 12705, 12761, 6012, 14044, 12981, 12410, 6053, 7989, 8475, 1627, 8804, 10128, 5343, 10133, 8834, 6055, 11888, 11889, 7660, 14045, 14059, 11729, 14063, 7231, 14064, 14065, 14100, 10803, 14102, 12440, 8649, 14103, 12764, 14111, 1256, 6838, 6858, 7678, 6935, 14112, 11170, 10805, 7740, 9788, 6848, 12382, 14113, 9590, 8604, 14114, 11661, 14115, 6338, 1264, 10875, 6015, 14117, 575, 10324, 14119, 6037, 14120, 8660, 6376, 2119, 6268, 11403, 14122, 14124, 14126, 9230, 14128, 6909, 9257, 9255, 14129, 14133, 14164, 14165, 6063, 7943, 6014, 14176, 14177, 5956, 7230, 13795, 14178, 8853, 8190, 6833, 14180, 12653, 8633, 8627, 14218, 11219, 14221, 8403, 9195, 10902, 12587, 14240, 14241, 14242, 10239, 14243, 14247, 14250, 14549, 14554, 14557, 2]
+// Dependencies: [109, 5, 32, 2165, 9122, 12368, 7056, 11013, 7029, 9329, 8808, 8744, 12000, 5240, 8553, 502, 5155, 12378, 5218, 5177, 6042, 7317, 6362, 5238, 6058, 5209, 5339, 7316, 9021, 1388, 9160, 1072, 12369, 8842, 1390, 8206, 1112, 7937, 12460, 12462, 2121, 12463, 12464, 12503, 12506, 9210, 6890, 7948, 1113, 9102, 11046, 12575, 5542, 12581, 5975, 12583, 12584, 6038, 8841, 12585, 12586, 11864, 11866, 11374, 1380, 9276, 7287, 11233, 9275, 12619, 10655, 8476, 11, 12621, 12622, 9124, 9127, 11999, 6374, 12630, 9199, 5544, 5545, 12652, 1099, 12639, 12684, 6942, 6057, 8711, 9196, 12685, 6059, 12686, 7472, 1406, 12687, 12696, 12697, 12702, 12703, 12704, 12705, 12761, 6002, 14044, 12981, 12410, 6043, 7989, 8475, 1627, 8804, 10128, 6959, 10133, 8834, 6045, 11888, 11889, 7660, 14045, 14059, 11729, 14063, 7231, 14064, 14065, 14100, 10803, 14102, 12440, 8649, 14103, 12764, 14111, 1256, 6828, 6848, 7678, 6925, 14112, 11170, 10805, 7740, 9788, 6838, 12382, 14113, 9590, 8604, 14114, 11661, 14115, 6328, 1264, 10875, 6005, 14117, 575, 10324, 14119, 6027, 14120, 8660, 6366, 2119, 6258, 11403, 14122, 14124, 14126, 9230, 14128, 6899, 9257, 9255, 14129, 14133, 14164, 14165, 6053, 7943, 6004, 14176, 14177, 5946, 7230, 13795, 14178, 8853, 8190, 6823, 14180, 12653, 8633, 8627, 14218, 11219, 14221, 8403, 9195, 10902, 12587, 14240, 14241, 14242, 10239, 14243, 14247, 14250, 14549, 14554, 14557, 2]
 
 // Module 12459 (MessagesHandlers)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
@@ -13,22 +13,22 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import Server from "Server" /* 2119 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5555 */;
-import LinkingDefault from "Linking" /* 6012 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 6015 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 6037 */;
-import InviteCodeUtils from "InviteCodeUtils" /* 6053 */;
-import CodedLink from "CodedLink" /* 6055 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6067 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6268 */;
-import InteractionComponentUtils from "InteractionComponentUtils" /* 6376 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 6384 */;
-import AgeGateUtils from "AgeGateUtils" /* 6838 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
-import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6858 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6900 */;
-import BoostingActionCreatorsAll from "BoostingActionCreators" /* 6952 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5545 */;
+import LinkingDefault from "Linking" /* 6002 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 6027 */;
+import InviteCodeUtils from "InviteCodeUtils" /* 6043 */;
+import CodedLink from "CodedLink" /* 6045 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6057 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6258 */;
+import InteractionComponentUtils from "InteractionComponentUtils" /* 6366 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 6374 */;
+import AgeGateUtils from "AgeGateUtils" /* 6828 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
+import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6848 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6890 */;
+import BoostingActionCreatorsAll from "BoostingActionCreators" /* 6942 */;
 import GuildScheduledEventStore2 from "GuildScheduledEventStore" /* 7029 */;
 import transitionToGuild2 from "transitionToGuild" /* 7231 */;
 import ThreadHooks from "ThreadHooks" /* 7287 */;
@@ -128,13 +128,13 @@ import ChannelStore from "ChannelStore" /* 5155 */;
 import GiftCodeStore from "GiftCodeStore" /* 12378 */;
 import GuildMemberStore from "GuildMemberStore" /* 5218 */;
 import GuildStore from "GuildStore" /* 5177 */;
-import InviteStore from "InviteStore" /* 6052 */;
+import InviteStore from "InviteStore" /* 6042 */;
 import LocalActivityStore from "LocalActivityStore" /* 7317 */;
-import MessageStore from "MessageStore" /* 6372 */;
+import MessageStore from "MessageStore" /* 6362 */;
 import PermissionStore from "PermissionStore" /* 5238 */;
-import PresenceStore from "PresenceStore" /* 6068 */;
+import PresenceStore from "PresenceStore" /* 6058 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5349 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 7316 */;
 import UploadStore from "UploadStore" /* 9021 */;
 import UserStore from "UserStore" /* 1388 */;
@@ -171,8 +171,8 @@ let closure_58;
 let closure_60;
 let closure_61;
 let tmp;
-const HapticUtils = tmp(5554);
-const StageChannelActionCreators = tmp(6909);
+const HapticUtils = tmp(5544);
+const StageChannelActionCreators = tmp(6899);
 const DoubleTapToReactUtils = tmp(9196);
 const showStickerDetailActionSheet = tmp(11374);
 const messages_MessagesUtils = tmp(11864);
@@ -1723,7 +1723,7 @@ class MessagesHandlers {
               const tmp4Result4 = StageChannelModalActionCreators;
               tmp4Result4.connectAndOpen(channel);
             } else {
-              const tmp10Result = tmp10(6935);
+              const tmp10Result = tmp10(6925);
               const voiceChannel = tmp10Result.selectVoiceChannel(channelId);
               const tmp4Result5 = PrivateChannelCallUtils;
               tmp4Result5.openChannelCallModal(channel);

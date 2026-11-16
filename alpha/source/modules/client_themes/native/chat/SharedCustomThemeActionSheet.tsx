@@ -1,7 +1,7 @@
 // Module ID: 14555
 // Function ID: 14556
 // Name: SharedCustomThemeActionSheet
-// Dependencies: [32, 19, 17, 2179, 1072, 1390, 21, 5306, 575, 1256, 14556, 5376, 5566, 7913, 1113, 2933, 5929, 6242, 5936, 504, 2174, 9590, 7937, 1187, 1239, 2]
+// Dependencies: [32, 19, 17, 2179, 1072, 1390, 21, 5306, 575, 1256, 14556, 5366, 5556, 7913, 1113, 2933, 5919, 6232, 5926, 504, 2174, 9590, 7937, 1187, 1239, 2]
 // Exports: default
 
 // Module 14555 (SharedCustomThemeActionSheet)
@@ -13,8 +13,8 @@ import ClientThemesUtils from "ClientThemesUtils" /* 1239 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
-import ThemeActionCreators from "ThemeActionCreators" /* 5376 */;
-import UserSettingsActionCreators from "UserSettingsActionCreators" /* 6242 */;
+import ThemeActionCreators from "ThemeActionCreators" /* 5366 */;
+import UserSettingsActionCreators from "UserSettingsActionCreators" /* 6232 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
 import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 9590 */;
 import CustomThemeMobileActionCreators from "CustomThemeMobileActionCreators" /* 14556 */;
@@ -71,7 +71,7 @@ function PrimaryActionButton(onPressApply) {
     tmp6 = closure_12(ShinyButton, obj3);
   } else {
     const obj4 = { text: intl.string(require("intl").t["1Qm822"]), onPress: onPressApply, variant: "primary" };
-    const Button = tmp2(5936).Button;
+    const Button = tmp2(5926).Button;
     intl = tmp2(1113).intl;
     tmp6 = closure_12(Button, obj4);
   }
@@ -99,7 +99,7 @@ export default function _default(message) {
   let items4;
   let items5;
   let obj8;
-  const f109541 = (item) => "#" + item;
+  const f109555 = (item) => "#" + item;
   const sharedClientTheme = message.message.sharedClientTheme;
   let tmp = closure_14();
   let tmp2 = closure_7(null);
@@ -108,7 +108,7 @@ export default function _default(message) {
   let tmp4;
   const useState = first1.useState;
   if (undefined !== sharedClientTheme) {
-    let obj4 = { colors: colors.map(f109541), gradientColorStops: [], gradientAngle: null, baseMix: null };
+    let obj4 = { colors: colors.map(f109555), gradientColorStops: [], gradientAngle: null, baseMix: null };
     colors = sharedClientTheme.colors;
     ({ gradient_angle: obj2.gradientAngle, base_mix: obj2.baseMix } = sharedClientTheme);
     tmp4 = obj4;
@@ -133,7 +133,7 @@ export default function _default(message) {
     let tmp4;
     const tmp = closure_3;
     if (undefined !== sharedClientTheme) {
-      const obj = { colors: colors.map(f109541), gradientColorStops: [], gradientAngle: null, baseMix: null };
+      const obj = { colors: colors.map(f109555), gradientColorStops: [], gradientAngle: null, baseMix: null };
       colors = tmp2.colors;
       ({ gradient_angle: obj.gradientAngle, base_mix: obj.baseMix } = sharedClientTheme);
       tmp4 = obj;

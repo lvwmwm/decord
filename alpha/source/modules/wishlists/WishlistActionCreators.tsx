@@ -1,7 +1,7 @@
 // Module ID: 9472
 // Function ID: 9473
 // Name: WishlistActionCreators
-// Dependencies: [5, 7352, 1388, 2175, 7245, 9466, 1072, 1360, 1255, 572, 7249, 1285, 9471, 1242, 6757, 1256, 7350, 2]
+// Dependencies: [5, 7352, 1388, 2175, 7245, 9466, 1072, 1360, 1255, 572, 7249, 1285, 9471, 1242, 6747, 1256, 7350, 2]
 
 // Module 9472 (WishlistActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -24,7 +24,7 @@ let closure_12;
 let tmp;
 let unpackModuleId;
 const StorefrontUtils = tmp(7249);
-const f98236 = (id) => id.id;
+const f98249 = (id) => id.id;
 function extraWishlistParams() {
   const obj = {};
   if (null != BillingInfoStore.ipCountryCode) {
@@ -52,7 +52,7 @@ function maybeDispatchAdditionalActions(wishlist_items) {
   const storefront_pricing = wishlist_items.storefront_pricing;
   if (null != storefront_pricing) {
     const obj2 = { type: "SKUS_PRICING_FETCH_SUCCESS", priceId: obj3, data: tmpResult.transformStorefrontPricesServer(storefront_pricing) };
-    obj3 = { type: "skus", skuIds: found.map(f98236) };
+    obj3 = { type: "skus", skuIds: found.map(f98249) };
     const dispatch = tmp3(572).dispatch;
     DispatcherDefault;
     tmpResult = StorefrontUtils;
@@ -679,7 +679,7 @@ let obj = {
         ({ storefront_pricing, skus: skus2 } = body);
         if (null != storefront_pricing) {
           const obj2 = { type: "SKUS_PRICING_FETCH_SUCCESS", priceId: obj3, data: obj4.transformStorefrontPricesServer(storefront_pricing) };
-          obj3 = { type: "skus", skuIds: skus2.map(f98236) };
+          obj3 = { type: "skus", skuIds: skus2.map(f98249) };
           const dispatch = tmp(closure_1_2[9]).dispatch;
           closure_1_1(closure_1_2[9]);
           obj4 = closure_1_0(closure_1_2[10]);

@@ -1,7 +1,7 @@
 // Module ID: 17605
 // Function ID: 17606
 // Name: BountiesPosterSpotIllustration
-// Dependencies: [19, 21, 17606, 17607, 17608, 7755, 6020, 2]
+// Dependencies: [19, 21, 17606, 17607, 17608, 7755, 6010, 2]
 // Exports: BountiesPosterSpotIllustration
 
 // Module 17605 (BountiesPosterSpotIllustration)

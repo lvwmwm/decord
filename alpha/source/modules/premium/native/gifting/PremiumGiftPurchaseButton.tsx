@@ -1,14 +1,14 @@
 // Module ID: 11836
 // Function ID: 11837
 // Name: PremiumGiftPurchaseButton
-// Dependencies: [19, 17, 8547, 9623, 1072, 21, 5306, 575, 5913, 1502, 11664, 9763, 504, 9627, 11683, 11673, 8480, 9684, 11662, 11832, 1113, 11684, 11686, 2765, 10901, 11688, 11678, 7937, 5929, 2188, 5936, 5501, 2]
+// Dependencies: [19, 17, 8547, 9623, 1072, 21, 5306, 575, 5903, 1502, 11664, 9763, 504, 9627, 11683, 11673, 8480, 9684, 11662, 11832, 1113, 11684, 11686, 2765, 10901, 11688, 11678, 7937, 5919, 2188, 5926, 5491, 2]
 // Exports: default
 
 // Module 11836 (PremiumGiftPurchaseButton)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import ChatInputUtils from "ChatInputUtils" /* 5501 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5913 */;
+import ChatInputUtils from "ChatInputUtils" /* 5491 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5903 */;
 import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 9684 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -162,7 +162,7 @@ export default function PremiumGiftPurchaseButton(defaultSelection) {
     let tmp30 = !tmp11;
     if (tmp30) {
       const obj7 = { variant: "body-sm/normal", children: format(hYoGUM, obj8) };
-      const Text = tmp4(5929).Text;
+      const Text = tmp4(5919).Text;
       const intl6 = tmp4(1113).intl;
       format = intl6.format;
       obj8 = { paidURL: tmpResult3.getArticleURL(HelpdeskArticles.PAID_TERMS) };
@@ -173,7 +173,7 @@ export default function PremiumGiftPurchaseButton(defaultSelection) {
     items3[1] = tmp30;
     const obj9 = { loading: isPurchasing, variant: str, text: stringResult, disabled: tmp34, onPress };
     tmp34 = !canPurchaseIAP;
-    const Button = tmp4(5936).Button;
+    const Button = tmp4(5926).Button;
     const tmp33 = closure_9;
     if (canPurchaseIAP) {
       tmp34 = isPurchasing;

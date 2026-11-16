@@ -1,11 +1,11 @@
 // Module ID: 13156
 // Function ID: 13157
 // Name: conjurePublishApprovalPrompt
-// Dependencies: [13155, 13146, 13147, 6012, 2]
+// Dependencies: [13155, 13146, 13147, 6002, 2]
 // Exports: promptPublishApproval
 
 // Module 13156 (conjurePublishApprovalPrompt)
-import LinkingDefault from "Linking" /* 6012 */;
+import LinkingDefault from "Linking" /* 6002 */;
 import ConjurePublishBlockedSheetDefault from "ConjurePublishBlockedSheet" /* 13146 */;
 import size from "module_2" /* 2 */;
 

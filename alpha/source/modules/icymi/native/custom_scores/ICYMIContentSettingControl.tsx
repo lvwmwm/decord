@@ -1,10 +1,10 @@
-// Module ID: 19291
-// Function ID: 19292
+// Module ID: 19293
+// Function ID: 19294
 // Name: ICYMIContentSettingControl
-// Dependencies: [32, 19, 17, 6958, 10205, 21, 5306, 575, 10216, 1113, 1187, 19292, 19293, 19294, 7983, 11251, 504, 19295, 5929, 7954, 5954, 2]
+// Dependencies: [32, 19, 17, 6948, 10205, 21, 5306, 575, 10216, 1113, 1187, 19294, 19295, 19296, 7983, 11251, 504, 19297, 5919, 7954, 5944, 2]
 // Exports: ChannelScoreSettings, GuildScoreSettings
 
-// Module 19291 (ICYMIContentSettingControl)
+// Module 19293 (ICYMIContentSettingControl)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
@@ -12,13 +12,13 @@ import native from "native" /* 1187 */;
 import SegmentedControlState from "SegmentedControlState" /* 7983 */;
 import ICYMIUtils from "ICYMIUtils" /* 10216 */;
 import SegmentedControl from "SegmentedControl" /* 11251 */;
-import AssetRegistryDefault from "AssetRegistry" /* 19292 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 19293 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 19294 */;
-import NativeICYMIActionCreatorsDefault from "NativeICYMIActionCreators" /* 19295 */;
+import AssetRegistryDefault from "AssetRegistry" /* 19294 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 19295 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 19296 */;
+import NativeICYMIActionCreatorsDefault from "NativeICYMIActionCreators" /* 19297 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6958 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6948 */;
 import ICYMIStore from "ICYMIStore" /* 10205 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
@@ -192,11 +192,11 @@ export function GuildScoreSettings(guild) {
   }, items2);
   const tmp8 = closure_10();
   const obj3 = { variant: "body-sm/semibold", color: "text-default", children: intl.string(id(1113).t.Clq6km) };
-  const Text = id(5929).Text;
+  const Text = id(5919).Text;
   intl = id(1113).intl;
   const items3 = [closure_8(Text, obj3), , , , ];
   const obj4 = { variant: "body-xs/normal", color: "text-default", children: intl2.format(id(1113).t["0DhU2P"], obj5) };
-  const Text2 = id(5929).Text;
+  const Text2 = id(5919).Text;
   intl2 = id(1113).intl;
   obj5 = { guildName: guild.name };
   items3[1] = closure_8(Text2, obj4);
@@ -215,7 +215,7 @@ export function GuildScoreSettings(guild) {
   intl3 = tmp(1113).intl;
   items3[3] = closure_8(View, obj9);
   const obj11 = { variant: "body-xs/normal", color: "text-muted", style: tmp8.warningText, children: intl4.string(tmp(1113).t.vRVs07) };
-  const Text3 = tmp(5929).Text;
+  const Text3 = tmp(5919).Text;
   intl4 = tmp(1113).intl;
   items3[4] = closure_8(Text3, obj11);
   return tmp9(View, obj8);

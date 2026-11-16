@@ -1,7 +1,7 @@
 // Module ID: 7719
 // Function ID: 7720
 // Name: MemberVerificationGuildHeader
-// Dependencies: [19, 17, 7708, 21, 5306, 575, 1630, 1655, 6020, 1414, 5893, 7720, 7723, 5929, 1113, 2]
+// Dependencies: [19, 17, 7708, 21, 5306, 575, 1630, 1655, 6010, 1414, 5883, 7720, 7723, 5919, 1113, 2]
 // Exports: MemberVerificationGuildBanner, default
 
 // Module 7719 (MemberVerificationGuildHeader)
@@ -10,8 +10,8 @@ import nativeDefault from "native" /* 575 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import LinearGradientDefault from "LinearGradient" /* 5893 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import LinearGradientDefault from "LinearGradient" /* 5883 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import GuildIcon from "GuildIcon" /* 7720 */;
 import GuildBadgeDefault from "GuildBadge" /* 7723 */;
 import react from "react" /* 19 */;
@@ -140,7 +140,7 @@ export default function MemberVerificationGuildHeader(scrollTop) {
   items5[1] = metroRequire(GuildBadgeDefault, obj6);
   items6 = [metroImportDefault(View, obj4), , ];
   const obj7 = { style: tmp.headerTitle, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: formatResult };
-  const Heading = tmp3(5929).Heading;
+  const Heading = tmp3(5919).Heading;
   const intl = tmp3(1113).intl;
   const format = intl.format;
   const t = tmp3(1113).t;
@@ -154,7 +154,7 @@ export default function MemberVerificationGuildHeader(scrollTop) {
   }
   items6[1] = metroRequire(Heading, obj7);
   const obj10 = { style: tmp.headerDescription, variant: "body-sm/medium", color: "text-default", children: stringResult };
-  const Text = tmp3(5929).Text;
+  const Text = tmp3(5919).Text;
   const intl2 = tmp3(1113).intl;
   const string = intl2.string;
   const t2 = tmp3(1113).t;

@@ -1,12 +1,12 @@
 // Module ID: 15110
 // Function ID: 15111
 // Name: ChannelPrompt
-// Dependencies: [5, 32, 19, 17, 5236, 5177, 21, 5306, 5892, 504, 1502, 7493, 1113, 8134, 6757, 7415, 7720, 1414, 5929, 7617, 5936, 7649, 2]
+// Dependencies: [5, 32, 19, 17, 5236, 5177, 21, 5306, 5882, 504, 1502, 7493, 1113, 8134, 6747, 7415, 7720, 1414, 5919, 7617, 5926, 7649, 2]
 // Exports: default
 
 // Module 15110 (ChannelPrompt)
 import intl5 from "intl" /* 1113 */;
-import NavigatorConstants from "NavigatorConstants" /* 5892 */;
+import NavigatorConstants from "NavigatorConstants" /* 5882 */;
 import NavigatorHeader from "NavigatorHeader" /* 7493 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

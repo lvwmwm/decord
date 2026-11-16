@@ -1,11 +1,11 @@
 // Module ID: 14243
 // Function ID: 14244
 // Name: openSoundmojiActionSheet
-// Dependencies: [14244, 5552, 14245, 2121, 2]
+// Dependencies: [14244, 5542, 14245, 2121, 2]
 // Exports: default
 
 // Module 14243 (openSoundmojiActionSheet)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import SoundmojiRenderingExperiment from "SoundmojiRenderingExperiment" /* 14244 */;
 import size from "module_2" /* 2 */;
 

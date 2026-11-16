@@ -1,7 +1,7 @@
 // Module ID: 15558
 // Function ID: 15559
 // Name: GuildInvite
-// Dependencies: [17, 5173, 6820, 5155, 5218, 5177, 6052, 5248, 1388, 11891, 1072, 8842, 9170, 1113, 9163, 575, 5372, 5313, 14105, 14106, 5169, 2188, 8655, 15086, 15085, 11893, 11892, 7665, 15559, 1406, 7677, 1414, 2024, 8033, 10396, 5954, 2]
+// Dependencies: [17, 5173, 6810, 5155, 5218, 5177, 6042, 5248, 1388, 11891, 1072, 8842, 9170, 1113, 9163, 575, 5362, 5313, 14105, 14106, 5169, 2188, 8655, 15086, 15085, 11893, 11892, 7665, 15559, 1406, 7677, 1414, 2024, 8033, 10396, 5944, 2]
 // Exports: createDisabledGuildInvite, createErroredGuildInvite, createExpiredGuildInvite, createGuildInvite, createResolvingGuildInvite
 
 // Module 15558 (GuildInvite)
@@ -14,8 +14,8 @@ import react_nativeDefault from "react-native" /* 2024 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 5169 */;
 import shared from "shared" /* 5313 */;
-import UserUtilsDefault from "UserUtils" /* 5372 */;
-import useChannelName from "useChannelName" /* 5954 */;
+import UserUtilsDefault from "UserUtils" /* 5362 */;
+import useChannelName from "useChannelName" /* 5944 */;
 import InviteTargetTypes from "InviteTargetTypes" /* 7665 */;
 import GuildInviteFlags from "GuildInviteFlags" /* 7677 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 8033 */;
@@ -30,11 +30,11 @@ import InviteErrorUtils from "InviteErrorUtils" /* 15085 */;
 import AssetRegistryDefault from "AssetRegistry" /* 15086 */;
 import getHeaderTextForInvite2 from "getHeaderTextForInvite" /* 15559 */;
 import GuildRecord from "GuildRecord" /* 5173 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6820 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6810 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import GuildMemberStore from "GuildMemberStore" /* 5218 */;
 import GuildStore from "GuildStore" /* 5177 */;
-import InviteStore from "InviteStore" /* 6052 */;
+import InviteStore from "InviteStore" /* 6042 */;
 import RelationshipStore from "RelationshipStore" /* 5248 */;
 import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;

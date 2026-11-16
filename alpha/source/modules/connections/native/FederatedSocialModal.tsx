@@ -1,7 +1,7 @@
 // Module ID: 7651
 // Function ID: 7652
 // Name: FederatedSocialModal
-// Dependencies: [5, 32, 19, 1072, 21, 5306, 7087, 1113, 7466, 6012, 7652, 7415, 5929, 7617, 1187, 5936, 7493, 7490, 2]
+// Dependencies: [5, 32, 19, 1072, 21, 5306, 7087, 1113, 7466, 6002, 7652, 7415, 5919, 7617, 1187, 5926, 7493, 7490, 2]
 // Exports: default
 
 // Module 7651 (FederatedSocialModal)

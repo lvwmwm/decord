@@ -1,14 +1,14 @@
-// Module ID: 17922
-// Function ID: 17923
+// Module ID: 17924
+// Function ID: 17925
 // Name: SettingsAppearanceChannelListPreviewNitroUpsell
-// Dependencies: [19, 17, 5307, 1072, 21, 1655, 5893, 5939, 5940, 5306, 575, 7918, 7937, 9579, 10954, 5936, 1113, 1187, 504, 9431, 2]
+// Dependencies: [19, 17, 5307, 1072, 21, 1655, 5883, 5929, 5930, 5306, 575, 7918, 7937, 9579, 10954, 5926, 1113, 1187, 504, 9431, 2]
 
-// Module 17922 (SettingsAppearanceChannelListPreviewNitroUpsell)
+// Module 17924 (SettingsAppearanceChannelListPreviewNitroUpsell)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import LinearGradientDefault from "LinearGradient" /* 5893 */;
-import spring_spring from "spring/spring" /* 5939 */;
-import springPresets from "springPresets" /* 5940 */;
+import LinearGradientDefault from "LinearGradient" /* 5883 */;
+import spring_spring from "spring/spring" /* 5929 */;
+import springPresets from "springPresets" /* 5930 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7918 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
 import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 9431 */;
@@ -53,8 +53,8 @@ function SettingsAppearanceChannelListPreviewNitroUpsellComponent(theme) {
   const items = [closure_17, theme, closure_9, StyleSheet, , ];
   const useAnimatedStyle = analyticsLocations(1655).useAnimatedStyle;
   analyticsLocations(1655);
-  items[4] = analyticsLocations(5939).withSpring;
-  items[5] = analyticsLocations(5940).springStandard;
+  items[4] = analyticsLocations(5929).withSpring;
+  items[5] = analyticsLocations(5930).springStandard;
   let c0;
   let c1;
   let c2;
@@ -91,7 +91,7 @@ function SettingsAppearanceChannelListPreviewNitroUpsellComponent(theme) {
   }, items2);
   items3 = [closure_10(LinearGradient, obj2), ];
   const obj3 = { text: intl.string(analyticsLocations(1113).t.pj0XBN), icon: closure_10(analyticsLocations(1187).NitroWheel, obj4), variant: "active", onPress: callback, size: "md" };
-  const Button = tmp2(5936).Button;
+  const Button = tmp2(5926).Button;
   intl = tmp2(1113).intl;
   obj4 = { style: tmp.nitroWheelIcon };
   items3[1] = closure_10(Button, obj3);

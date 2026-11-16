@@ -1,7 +1,7 @@
 // Module ID: 16033
 // Function ID: 16034
 // Name: SubscribeModalConfirmation
-// Dependencies: [5, 19, 17, 10769, 5177, 9236, 2179, 1072, 9435, 21, 5306, 5303, 575, 504, 9235, 6020, 16034, 5929, 1113, 16035, 16036, 5936, 16045, 5893, 1092, 1256, 10800, 38, 9238, 6269, 16049, 2121, 2]
+// Dependencies: [5, 19, 17, 10769, 5177, 9236, 2179, 1072, 9435, 21, 5306, 5303, 575, 504, 9235, 6010, 16034, 5919, 1113, 16035, 16036, 5926, 16045, 5883, 1092, 1256, 10800, 38, 9238, 6259, 16049, 2121, 2]
 // Exports: default
 
 // Module 16033 (SubscribeModalConfirmation)
@@ -9,9 +9,9 @@ import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import components_Button_Button from "components/Button/Button" /* 5936 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import GuildBoostingUtils from "GuildBoostingUtils" /* 9235 */;
 import ColorConstants from "ColorConstants" /* 9435 */;
 import AssetRegistryDefault from "AssetRegistry" /* 16034 */;
@@ -70,7 +70,7 @@ function PendingCancellationWarning(slots) {
       const tmp10 = FastImageDefault;
       items1 = [closure_17(tmp10, obj3), ];
       const obj4 = { style: tmp.pendingCancellationMessage, variant: "body-sm/medium", children: intl.format(intl6.t.SFpsCH, obj5) };
-      const Text = tmp2(5929).Text;
+      const Text = tmp2(5919).Text;
       intl = tmp2(1113).intl;
       obj5 = { date: stateFromStores.currentPeriodEnd, canceledCount: found.length };
       items1[1] = closure_17(Text, obj4);
@@ -172,25 +172,25 @@ function TransferConfirmation(previousGuildSubscriptionSlots) {
   } else {
     const obj4 = { children: items1 };
     const obj5 = { style: tmp.transferImage, source: guildSubscriptionRemovalSource };
-    items1 = [closure_17(onPremiumGuildSubscribe(6020), obj5), , , , , ];
+    items1 = [closure_17(onPremiumGuildSubscribe(6010), obj5), , , , , ];
     const obj6 = { style: tmp.header, variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl.string(prop(1113).t.h92jfS) };
-    const Text = tmp2(5929).Text;
+    const Text = tmp2(5919).Text;
     intl = tmp2(1113).intl;
     items1[1] = closure_17(Text, obj6);
     const obj7 = { style: tmp.blurb, variant: "body-sm/medium", children: intl2.format(prop(1113).t.SSA2lu, obj8) };
-    const Text2 = tmp2(5929).Text;
+    const Text2 = tmp2(5919).Text;
     intl2 = tmp2(1113).intl;
     obj8 = { slotCount: prop.length, guildCount: 1 };
     items1[2] = closure_17(Text2, obj7);
     const obj9 = { style: tmp.transferPreviews, children: items2 };
     const obj10 = { style: tmp.previewHeader, variant: "body-sm/medium", color: "text-default", children: intl3.format(prop(1113).t["5zQYEz"], { guildCount: 1 }) };
-    const Text3 = tmp2(5929).Text;
+    const Text3 = tmp2(5919).Text;
     intl3 = tmp2(1113).intl;
     items2 = [closure_17(Text3, obj10), , , ];
     const obj11 = { style: tmp.guildPreview, guild: stateFromStores };
     items2[1] = closure_17(onPremiumGuildSubscribe(16036), obj11);
     const obj12 = { style: tmp.previewHeader, variant: "body-sm/medium", color: "text-default", children: intl4.format(prop(1113).t.ct6oxD, obj13) };
-    const Text4 = tmp2(5929).Text;
+    const Text4 = tmp2(5919).Text;
     intl4 = tmp2(1113).intl;
     obj13 = { slotCount: prop.length };
     items2[2] = closure_17(Text4, obj12);
@@ -198,7 +198,7 @@ function TransferConfirmation(previousGuildSubscriptionSlots) {
     items3 = [, ];
     ({ guildPreview: arr5[0], activeTransferGuildCardBorder: arr5[1] } = tmp);
     obj15 = { guild };
-    const tmp14 = onPremiumGuildSubscribe(5893);
+    const tmp14 = onPremiumGuildSubscribe(5883);
     items2[3] = closure_17(tmp14, obj14);
     items1[3] = closure_18(closure_6, obj9);
     const obj16 = { slots: prop };
@@ -212,7 +212,7 @@ function TransferConfirmation(previousGuildSubscriptionSlots) {
         },
       loading: isModifyingSubscription
     };
-    Button = tmp2(5936).Button;
+    Button = tmp2(5926).Button;
     intl5 = tmp2(1113).intl;
     obj19 = { slotCount: prop.length };
     items1[5] = closure_17(closure_6, obj17);

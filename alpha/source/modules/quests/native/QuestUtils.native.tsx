@@ -1,7 +1,7 @@
 // Module ID: 10128
 // Function ID: 10129
 // Name: QuestUtils
-// Dependencies: [5, 19, 10129, 5338, 1072, 21, 5552, 10130, 2121, 15259, 10151, 15266, 15271, 8816, 10133, 5341, 6015, 1113, 7740, 10132, 8829, 12744, 5493, 8604, 1380, 6012, 575, 14023, 7438, 6270, 6274, 5492, 1503, 2]
+// Dependencies: [5, 19, 10129, 6954, 1072, 21, 5542, 10130, 2121, 15259, 10151, 15266, 15271, 8816, 10133, 6957, 6005, 1113, 7740, 10132, 8829, 12744, 5483, 8604, 1380, 6002, 575, 14023, 7438, 6260, 6264, 5482, 1503, 2]
 // Exports: dismissOverlayScreens, getPrimaryCtaIcon, handleRewardClaimThenView, isHeroVideoSupported, openDiscordQuestsFAQ, openQuestHome, openRewardDetailsBottomSheet, showQuestUnavailableAlert
 
 // Module 10128 (QuestUtils)
@@ -10,12 +10,12 @@ import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import QuestTypes from "QuestTypes" /* 5341 */;
-import RootNavigationRef from "RootNavigationRef" /* 5493 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import LinkingDefault from "Linking" /* 6012 */;
-import useAlertStore from "useAlertStore" /* 6270 */;
-import AlertModal2 from "AlertModal" /* 6274 */;
+import RootNavigationRef from "RootNavigationRef" /* 5483 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import LinkingDefault from "Linking" /* 6002 */;
+import useAlertStore from "useAlertStore" /* 6260 */;
+import AlertModal2 from "AlertModal" /* 6264 */;
+import QuestTypes from "QuestTypes" /* 6957 */;
 import getQuestLogger from "getQuestLogger" /* 8816 */;
 import utils_QuestUtils from "utils/QuestUtils" /* 8829 */;
 import QuestActionCreators from "QuestActionCreators" /* 10133 */;
@@ -25,7 +25,7 @@ import openQuestCollectibleRewardModal from "openQuestCollectibleRewardModal" /*
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import QuestHomeNavigationStore from "QuestHomeNavigationStore" /* 10129 */;
-import QuestConstants from "QuestConstants" /* 5338 */;
+import QuestConstants from "QuestConstants" /* 6954 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -40,7 +40,7 @@ let metroRequire;
 let tmp;
 let unpackModuleId;
 const Link = tmp(1503);
-const NavigationRouteUtils = tmp(5492);
+const NavigationRouteUtils = tmp(5482);
 const openUserSettings = tmp(8604);
 function openRewardClaimBottomSheet(arg0) {
   let questContent;

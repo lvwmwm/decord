@@ -1,13 +1,13 @@
 // Module ID: 12729
 // Function ID: 12730
 // Name: CallBarAction
-// Dependencies: [19, 17, 11003, 21, 5303, 575, 5306, 12730, 7428, 12731, 6020, 5929, 2]
+// Dependencies: [19, 17, 11003, 21, 5303, 575, 5306, 12730, 7428, 12731, 6010, 5919, 2]
 // Exports: NotifiedActionButton, PrimaryActionButton, ToggledActionButton
 
 // Module 12729 (CallBarAction)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import Pressables from "Pressables" /* 7428 */;
 import ChannelCallStore from "ChannelCallStore" /* 11003 */;
 import CircleWithCutoutUtils from "CircleWithCutoutUtils" /* 12731 */;
@@ -108,7 +108,7 @@ class ActionButton {
       cloneElementResult = tmp10(IconComponent, obj6);
     } else {
       const obj7 = { source, style: imageStyle };
-      cloneElementResult = tmp10(tmp2(6020), obj7);
+      cloneElementResult = tmp10(tmp2(6010), obj7);
     }
     items1[1] = closure_6(View, obj4);
     let tmp10Result = null;

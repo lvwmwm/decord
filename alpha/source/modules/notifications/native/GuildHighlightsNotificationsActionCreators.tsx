@@ -1,13 +1,13 @@
 // Module ID: 12593
 // Function ID: 12594
 // Name: GuildHighlightsNotificationsActionCreators
-// Dependencies: [12594, 1072, 5552, 12595, 2121, 1113, 1256, 2]
+// Dependencies: [12594, 1072, 5542, 12595, 2121, 1113, 1256, 2]
 // Exports: openGuildHighlightNotificationForPush
 
 // Module 12593 (GuildHighlightsNotificationsActionCreators)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import Constants2 from "Constants" /* 12594 */;
 import size from "module_2" /* 2 */;
 

@@ -1,13 +1,13 @@
-// Module ID: 17877
-// Function ID: 17878
+// Module ID: 17879
+// Function ID: 17880
 // Name: SidechainCompressionSetting
-// Dependencies: [2133, 9202, 6075, 504, 12406, 1113, 6225, 2]
+// Dependencies: [2133, 9202, 6065, 504, 12406, 1113, 6215, 2]
 
-// Module 17877 (SidechainCompressionSetting)
+// Module 17879 (SidechainCompressionSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
-import Constants from "Constants" /* 6075 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 6225 */;
+import Constants from "Constants" /* 6065 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 6215 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
 import SettingBuilders from "SettingBuilders" /* 12406 */;

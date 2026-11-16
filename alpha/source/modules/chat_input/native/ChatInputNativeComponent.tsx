@@ -1,7 +1,7 @@
 // Module ID: 13806
 // Function ID: 13807
 // Name: chat_input/ChatInputNativeComponent
-// Dependencies: [19, 5330, 21, 5306, 575, 1113, 5547, 5313, 5303, 1380, 13807, 13811, 13798, 2]
+// Dependencies: [19, 5330, 21, 5306, 575, 1113, 5537, 5313, 5303, 1380, 13807, 13811, 13798, 2]
 
 // Module 13806 (chat_input/ChatInputNativeComponent)
 import Fragment from "Fragment" /* 21 */;
@@ -10,7 +10,7 @@ import intl2 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import ColorUtils from "ColorUtils" /* 5303 */;
 import shared from "shared" /* 5313 */;
-import useTheme from "useTheme" /* 5547 */;
+import useTheme from "useTheme" /* 5537 */;
 import ChatInputNativeComponent2 from "ChatInputNativeComponent" /* 13798 */;
 import MobileMarkdownFormatMenuExperiment from "MobileMarkdownFormatMenuExperiment" /* 13811 */;
 import react from "react" /* 19 */;

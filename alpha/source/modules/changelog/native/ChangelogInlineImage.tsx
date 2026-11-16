@@ -1,7 +1,7 @@
 // Module ID: 9356
 // Function ID: 9357
 // Name: ChangelogInlineImage
-// Dependencies: [32, 19, 17, 21, 5306, 575, 1496, 5131, 9354, 6020, 1113, 8621, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 575, 1496, 5131, 9354, 6010, 1113, 8621, 2]
 // Exports: default
 
 // Module 9356 (ChangelogInlineImage)
@@ -24,7 +24,7 @@ let obj2;
 let obj3;
 let rect;
 let tmp2;
-const FastImageDefault = tmp2(6020);
+const FastImageDefault = tmp2(6010);
 const GifTagDefault = tmp2(8621);
 ({ Pressable: hasOwnProperty, View: metroRequire } = react_native);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);

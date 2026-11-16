@@ -1,10 +1,10 @@
-// Module ID: 19346
-// Function ID: 19347
+// Module ID: 19348
+// Function ID: 19349
 // Name: ICYMIGuildEventRow
-// Dependencies: [19, 17, 7029, 5155, 5177, 21, 19284, 575, 7980, 1113, 7972, 5954, 7975, 8417, 10217, 7965, 7231, 7968, 19325, 11, 5929, 8422, 7436, 1187, 504, 2]
+// Dependencies: [19, 17, 7029, 5155, 5177, 21, 19286, 575, 7980, 1113, 7972, 5944, 7975, 8417, 10217, 7965, 7231, 7968, 19327, 11, 5919, 8422, 7436, 1187, 504, 2]
 // Exports: default
 
-// Module 19346 (ICYMIGuildEventRow)
+// Module 19348 (ICYMIGuildEventRow)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import transitionToGuild from "transitionToGuild" /* 7231 */;
@@ -17,7 +17,7 @@ import GuildScheduledEventStore_mod from "GuildScheduledEventStore" /* 7029 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import GuildStore from "GuildStore" /* 5177 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 19284 */;
+import createICYMIStyles from "createICYMIStyles" /* 19286 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -75,7 +75,7 @@ function ICYMIGuildEventRow(event) {
     }
     return eventTimeData;
   }, items).startDateTimeString;
-  const tmp7 = guild(5954)(channel);
+  const tmp7 = guild(5944)(channel);
   let obj = event(7975);
   const locationFromEvent = obj.getLocationFromEvent(event);
   let obj2 = event(8417);
@@ -117,7 +117,7 @@ function ICYMIGuildEventRow(event) {
   }
   let obj5 = { actionLabel: intl.string(event(1113).t["6pFsLQ"]), id: event.id, interactionType: "guild_event", channelId: id1, guildId: guild.id, timestamp: tmp2Result4.extractTimestamp(event.id), onHeaderPress: callback1, onHeaderLongPress: callback1, children: closure_12(tmp23, obj6) };
   const tmp2ResultResult = tmp2Result(guild_id, id, nextRecurrenceIdInEvent);
-  const tmp2Result3 = guild(19325);
+  const tmp2Result3 = guild(19327);
   intl = tmp8(1113).intl;
   id1 = undefined;
   if (channel != null) {
@@ -127,13 +127,13 @@ function ICYMIGuildEventRow(event) {
   tmp2Result4 = guild(11);
   const obj7 = { style: tmp.timeAndUserPillContainer, children: closure_11(Text, { variant: "body-sm/semibold", color: str, children: startDateTimeString }) };
   str = "text-brand";
-  Text = tmp8(5929).Text;
+  Text = tmp8(5919).Text;
   tmp23 = closure_4;
   if (tmp5) {
     str = "status-positive";
   }
   items3 = [closure_11(closure_5, obj7), , , , ];
-  const Text2 = tmp8(5929).Text;
+  const Text2 = tmp8(5919).Text;
   if (title) {
     title = tmp.title;
   }
@@ -142,7 +142,7 @@ function ICYMIGuildEventRow(event) {
   let tmp19Result = null != event.description && event.description.length > 0;
   if (tmp19Result) {
     const obj9 = { variant: "body-md/normal", color: "text-subtle", lineClamp: 5, children: tmp8Result.guildEventDetailsParser(event.description, true, obj10) };
-    const Text3 = tmp8(5929).Text;
+    const Text3 = tmp8(5919).Text;
     obj10 = { guildId: guild.id };
     tmp8Result = event(8422);
     tmp19Result = tmp19(Text3, obj9);
@@ -156,7 +156,7 @@ function ICYMIGuildEventRow(event) {
   const obj14 = { size: "xs", style: tmp.eventsChannelIcon };
   items4[0] = closure_11(event(7436).GroupIcon, obj14);
   const obj15 = { lineClamp: 1, variant: "body-xs/normal", color: "text-muted", children: intl2.format(event(1113).t["+DLsD8"], { count: tmp2ResultResult }) };
-  const Text4 = tmp8(5929).Text;
+  const Text4 = tmp8(5919).Text;
   intl2 = tmp8(1113).intl;
   items4[1] = closure_11(Text4, obj15);
   items5 = [closure_12(closure_5, obj13), ];
@@ -174,7 +174,7 @@ function ICYMIGuildEventRow(event) {
   }
   items6 = [tmp19Result2, ];
   let tmp27 = tmp7;
-  const Text5 = tmp8(5929).Text;
+  const Text5 = tmp8(5919).Text;
   if (tmp7 == null) {
     let result = null;
     if (null != locationFromEvent) {

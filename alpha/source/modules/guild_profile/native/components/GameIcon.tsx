@@ -1,14 +1,14 @@
 // Module ID: 10665
 // Function ID: 10666
 // Name: GameIcon
-// Dependencies: [19, 17, 21, 5306, 575, 1414, 10666, 7428, 6020, 10667, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 1414, 10666, 7428, 6010, 10667, 2]
 // Exports: default
 
 // Module 10665 (GameIcon)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import ClanGameplayActivity from "ClanGameplayActivity" /* 10666 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

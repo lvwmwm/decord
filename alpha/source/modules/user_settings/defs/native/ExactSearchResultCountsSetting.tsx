@@ -1,9 +1,9 @@
-// Module ID: 17943
-// Function ID: 17944
+// Module ID: 17945
+// Function ID: 17946
 // Name: ExactSearchResultCountsSetting
 // Dependencies: [9202, 1113, 12406, 5131, 2]
 
-// Module 17943 (ExactSearchResultCountsSetting)
+// Module 17945 (ExactSearchResultCountsSetting)
 import intl2 from "intl" /* 1113 */;
 import UserSettings from "UserSettings" /* 5131 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;

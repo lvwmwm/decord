@@ -1,9 +1,9 @@
-// Module ID: 20189
-// Function ID: 20190
+// Module ID: 20192
+// Function ID: 20193
 // Name: ChangelogManager
-// Dependencies: [5, 32, 2189, 8135, 7882, 9351, 20190, 572, 11, 20192, 2]
+// Dependencies: [5, 32, 2189, 8135, 7882, 1255, 9351, 20193, 572, 11, 20195, 2]
 
-// Module 20189 (ChangelogManager)
+// Module 20192 (ChangelogManager)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import LocaleStore from "LocaleStore" /* 2189 */;
@@ -88,15 +88,24 @@ class ChangelogManager extends AutomaticLifecycleManager {
               closure_4 = undefined;
               closure_5 = undefined;
               c3 = 1;
-              c4 = 2;
-              c5 = 1;
-              const obj12 = { value: obj19.fetchChangelogConfig(), done: false };
-              obj19 = tmp(latestChangelogId[5]);
-              return obj12;
+              const obj27 = closure_0(latestChangelogId[5]);
+              if (obj27.isDiscordBackendDevelopment()) {
+                c3 = 0;
+                const obj21 = tmp(latestChangelogId[8]);
+                obj21.dispatch({ type: "CHANGE_LOG_RESOLVED" });
+                c5 = 3;
+                return { value: "HermesInternal", done: null };
+              } else {
+                c4 = 2;
+                c5 = 1;
+                const obj12 = { value: obj19.fetchChangelogConfig(), done: false };
+                obj19 = tmp(latestChangelogId[6]);
+                return obj12;
+              }
             }
           } else if (1 === tmp4) {
             c3 = 0;
-            const obj18 = tmp(latestChangelogId[7]);
+            const obj18 = tmp(latestChangelogId[8]);
             obj18.dispatch({ type: "CHANGE_LOG_RESOLVED" });
             throw latestChangelogId;
           } else if (2 === tmp4) {
@@ -105,7 +114,7 @@ class ChangelogManager extends AutomaticLifecycleManager {
               throw value;
             } else if (arg0 === 2) {
               c3 = 0;
-              const obj16 = tmp(latestChangelogId[7]);
+              const obj16 = tmp(latestChangelogId[8]);
               obj16.dispatch({ type: "CHANGE_LOG_RESOLVED" });
               c5 = 3;
               const obj17 = { value, done: true };
@@ -113,20 +122,20 @@ class ChangelogManager extends AutomaticLifecycleManager {
             } else {
               closure_0 = value;
               body = closure_0.body;
-              const obj23 = closure_0(latestChangelogId[6]);
-              latestChangelogId = getLatestChangelogIdForVersion(body, obj23.getClientVersionForChangelog());
+              const obj24 = closure_0(latestChangelogId[7]);
+              latestChangelogId = getLatestChangelogIdForVersion(body, obj24.getClientVersionForChangelog());
               const obj20 = { type: "CHANGE_LOG_SET_CONFIG", config: closure_0.body, latestChangelogId };
-              const obj24 = tmp(latestChangelogId[7]);
-              obj24.dispatch(obj20);
+              const obj25 = tmp(latestChangelogId[8]);
+              obj25.dispatch(obj20);
               if (null == latestChangelogId) {
                 c3 = 0;
-                const obj15 = tmp(latestChangelogId[7]);
+                const obj15 = tmp(latestChangelogId[8]);
                 obj15.dispatch({ type: "CHANGE_LOG_RESOLVED" });
                 c5 = 3;
                 return { value: "HermesInternal", done: null };
               } else if (true !== body[latestChangelogId].show_on_startup) {
                 c3 = 0;
-                const obj14 = tmp(latestChangelogId[7]);
+                const obj14 = tmp(latestChangelogId[8]);
                 obj14.dispatch({ type: "CHANGE_LOG_RESOLVED" });
                 c5 = 3;
                 return { value: "HermesInternal", done: null };
@@ -134,10 +143,10 @@ class ChangelogManager extends AutomaticLifecycleManager {
                 closure_3 = closure_1_6.lastSeenChangelogId();
                 closure_4 = closure_1_6.lastSeenChangelogDate();
                 if (null != closure_3) {
-                  const obj10 = tmp(latestChangelogId[8]);
+                  const obj10 = tmp(latestChangelogId[9]);
                   if (obj10.compare(latestChangelogId, closure_3) <= 0) {
                     c3 = 0;
-                    const obj13 = tmp(latestChangelogId[7]);
+                    const obj13 = tmp(latestChangelogId[8]);
                     obj13.dispatch({ type: "CHANGE_LOG_RESOLVED" });
                     c5 = 3;
                     return { value: "HermesInternal", done: null };
@@ -145,9 +154,9 @@ class ChangelogManager extends AutomaticLifecycleManager {
                 }
                 c4 = 3;
                 c5 = 1;
-                const obj21 = { value: obj11.fetchChangelog(latestChangelogId, c5.locale), done: false };
-                obj11 = tmp(latestChangelogId[5]);
-                return obj21;
+                const obj22 = { value: obj11.fetchChangelog(latestChangelogId, c5.locale), done: false };
+                obj11 = tmp(latestChangelogId[6]);
+                return obj22;
               }
             }
           } else if (arg0 === 1) {
@@ -155,16 +164,16 @@ class ChangelogManager extends AutomaticLifecycleManager {
             throw value;
           } else if (arg0 === 2) {
             c3 = 0;
-            const obj8 = tmp(latestChangelogId[7]);
+            const obj8 = tmp(latestChangelogId[8]);
             obj8.dispatch({ type: "CHANGE_LOG_RESOLVED" });
             c5 = 3;
-            const obj22 = { value, done: true };
-            return obj22;
+            const obj23 = { value, done: true };
+            return obj23;
           } else {
             closure_5 = value;
             if (null == closure_5) {
               c3 = 0;
-              const obj7 = tmp(latestChangelogId[7]);
+              const obj7 = tmp(latestChangelogId[8]);
               obj7.dispatch({ type: "CHANGE_LOG_RESOLVED" });
               c5 = 3;
               return { value: "HermesInternal", done: null };
@@ -173,7 +182,7 @@ class ChangelogManager extends AutomaticLifecycleManager {
                 if (null != closure_1_6.lastSeenChangelogDate()) {
                   if (closure_1_6.isLocked()) {
                     c3 = 0;
-                    const obj3 = tmp(latestChangelogId[7]);
+                    const obj3 = tmp(latestChangelogId[8]);
                     obj3.dispatch({ type: "CHANGE_LOG_RESOLVED" });
                     c5 = 3;
                     return { value: "HermesInternal", done: null };
@@ -192,32 +201,32 @@ class ChangelogManager extends AutomaticLifecycleManager {
                     let tmp10 = date1;
                     let tmp11 = date;
                     if (date > date1) {
-                      const obj = closure_0(latestChangelogId[9]);
+                      const obj = closure_0(latestChangelogId[10]);
                       obj.openChangelog();
                     }
                     c3 = 0;
-                    const obj2 = tmp(latestChangelogId[7]);
+                    const obj2 = tmp(latestChangelogId[8]);
                     obj2.dispatch({ type: "CHANGE_LOG_RESOLVED" });
                     c5 = 3;
                     return { value: "HermesInternal", done: null };
                   }
                 }
               }
-              const obj4 = tmp(latestChangelogId[5]);
+              const obj4 = tmp(latestChangelogId[6]);
               obj4.markChangelogAsSeen(latestChangelogId, closure_5.date);
               c3 = 0;
-              const obj5 = tmp(latestChangelogId[7]);
+              const obj5 = tmp(latestChangelogId[8]);
               obj5.dispatch({ type: "CHANGE_LOG_RESOLVED" });
               c5 = 3;
-              const obj25 = { value: undefined, done: true };
-              return obj25;
+              const obj26 = { value: undefined, done: true };
+              return obj26;
             }
           }
-        } catch (tmp79) {
-          latestChangelogId = tmp79;
+        } catch (tmp82) {
+          latestChangelogId = tmp82;
           if (0 === c3) {
             c5 = 3;
-            throw tmp79;
+            throw tmp82;
           } else {
             c4 = 1;
           }

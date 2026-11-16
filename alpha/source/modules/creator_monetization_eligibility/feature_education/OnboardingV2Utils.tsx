@@ -1,10 +1,10 @@
-// Module ID: 18971
-// Function ID: 18972
+// Module ID: 18973
+// Function ID: 18974
 // Name: OnboardingV2Utils
 // Dependencies: [5173, 5177, 1388, 1072, 504, 7275, 2]
 // Exports: canSeeCreatorMonetizationOnboardingV2Upsell, useCanSeeCreatorMonetizationOnboardingV2Upsell
 
-// Module 18971 (OnboardingV2Utils)
+// Module 18973 (OnboardingV2Utils)
 import Constants from "Constants" /* 1072 */;
 import GuildRecord from "GuildRecord" /* 5173 */;
 import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 7275 */;

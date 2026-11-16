@@ -1,9 +1,9 @@
-// Module ID: 20821
-// Function ID: 20822
+// Module ID: 20824
+// Function ID: 20825
 // Name: GlobalDiscoveryServersFeaturedSearchManager
-// Dependencies: [5, 16210, 8406, 1072, 7882, 20822, 572, 1285, 1490, 20823, 7230, 2]
+// Dependencies: [5, 16210, 8406, 1072, 7882, 20825, 572, 1285, 1490, 20826, 7230, 2]
 
-// Module 20821 (GlobalDiscoveryServersFeaturedSearchManager)
+// Module 20824 (GlobalDiscoveryServersFeaturedSearchManager)
 import Constants from "Constants" /* 1072 */;
 import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 8406 */;
 import GlobalDiscoveryServersSearchResultsStoreDefault from "GlobalDiscoveryServersSearchResultsStore" /* 16210 */;

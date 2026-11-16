@@ -1,7 +1,7 @@
 // Module ID: 17188
 // Function ID: 17189
 // Name: useGuildProfileEditForm
-// Dependencies: [109, 5, 19, 8542, 7352, 5218, 5177, 6956, 1388, 1072, 5331, 504, 14175, 5150, 10037, 17189, 10032, 5334, 7807, 17085, 5341, 17086, 6757, 1113, 9399, 2]
+// Dependencies: [109, 5, 19, 8542, 7352, 5218, 5177, 6946, 1388, 1072, 5331, 504, 14175, 5150, 10037, 17189, 10032, 5334, 7807, 17085, 6957, 17086, 6747, 1113, 9399, 2]
 // Exports: default
 
 // Module 17188 (useGuildProfileEditForm)
@@ -14,7 +14,7 @@ import react from "react" /* 19 */;
 import UserProfileStore from "UserProfileStore" /* 7352 */;
 import GuildMemberStore from "GuildMemberStore" /* 5218 */;
 import GuildStore from "GuildStore" /* 5177 */;
-import SortedGuildStore from "SortedGuildStore" /* 6956 */;
+import SortedGuildStore from "SortedGuildStore" /* 6946 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 

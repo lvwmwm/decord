@@ -1,7 +1,7 @@
 // Module ID: 8614
 // Function ID: 8615
 // Name: VideoBackground
-// Dependencies: [32, 19, 17, 1072, 21, 5306, 12, 8615, 8616, 5303, 575, 2025, 8617, 1187, 5893, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5306, 12, 8615, 8616, 5303, 575, 2025, 8617, 1187, 5883, 2]
 // Exports: useDominantColorFromImage
 
 // Module 8614 (VideoBackground)
@@ -26,7 +26,7 @@ let hasOwnProperty;
 let metroImportAll;
 let metroRequire;
 let tmp6;
-const LinearGradientDefault = tmp6(5893);
+const LinearGradientDefault = tmp6(5883);
 function useDominantRGBFromImage(arg0, arg1) {
   let closure_0;
   let closure_2;

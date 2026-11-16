@@ -1,13 +1,13 @@
 // Module ID: 15465
 // Function ID: 15466
 // Name: UserProfileCustomStatusActionSheet
-// Dependencies: [19, 17, 1388, 7962, 21, 5306, 575, 504, 15466, 6351, 1113, 14932, 8623, 9531, 2]
+// Dependencies: [19, 17, 1388, 7962, 21, 5306, 575, 504, 15466, 6341, 1113, 14932, 8623, 9531, 2]
 // Exports: default
 
 // Module 15465 (UserProfileCustomStatusActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6351 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6341 */;
 import HeaderAvatarDefault from "HeaderAvatar" /* 8623 */;
 import UserProfileCustomStatusBubbleDefault from "UserProfileCustomStatusBubble" /* 9531 */;
 import UserProfileStackedActionSheetDefault from "UserProfileStackedActionSheet" /* 14932 */;

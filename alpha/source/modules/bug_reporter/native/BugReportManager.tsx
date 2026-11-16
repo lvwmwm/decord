@@ -1,11 +1,11 @@
 // Module ID: 11140
 // Function ID: 11141
 // Name: BugReportManager
-// Dependencies: [5, 17, 1362, 1072, 6902, 1380, 11025, 11027, 1269, 7882, 8199, 11141, 2]
+// Dependencies: [5, 17, 1362, 1072, 6892, 1380, 11025, 11027, 1269, 7882, 8199, 11141, 2]
 
 // Module 11140 (BugReportManager)
 import Constants from "Constants" /* 1072 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 6902 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 6892 */;
 import react_nativeDefault from "react-native" /* 8199 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_native from "react-native" /* 17 */;

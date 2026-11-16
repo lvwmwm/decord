@@ -1,19 +1,19 @@
-// Module ID: 19181
-// Function ID: 19182
+// Module ID: 19183
+// Function ID: 19184
 // Name: useVoicePanelDockContextMenuItems
-// Dependencies: [19, 1072, 11984, 19182, 12971, 19183, 19184, 19185, 11956, 6939, 1108, 19187, 1113, 6023, 19188, 19190, 3253, 15767, 11046, 13174, 8069, 10569, 19192, 2]
+// Dependencies: [19, 1072, 11984, 19184, 12971, 19185, 19186, 19187, 11956, 6929, 1108, 19189, 1113, 6013, 19190, 19192, 3253, 15767, 11046, 13174, 8069, 10569, 19194, 2]
 // Exports: default
 
-// Module 19181 (useVoicePanelDockContextMenuItems)
+// Module 19183 (useVoicePanelDockContextMenuItems)
 import Constants from "Constants" /* 1072 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import intl6 from "intl" /* 1113 */;
 import _modDef3253 from "module_3253" /* 3253 */;
-import UserPlusIcon from "UserPlusIcon" /* 6023 */;
+import UserPlusIcon from "UserPlusIcon" /* 6013 */;
 import ChatIcon from "ChatIcon" /* 8069 */;
 import SettingsIcon from "SettingsIcon" /* 10569 */;
 import ActivitiesIcon from "ActivitiesIcon" /* 13174 */;
-import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 19187 */;
+import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 19189 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -89,9 +89,9 @@ export default function useVoicePanelDockContextMenuItems(id, arg1) {
       const obj2 = { label: closure_6.text, IconComponent: MobilePhoneShareIcon, action: tmp14.onPress };
       tmp14 = closure_6;
       if (closure_6.isActive) {
-        MobilePhoneShareIcon = tmp15(19188).MobilePhoneXIcon;
+        MobilePhoneShareIcon = tmp15(19190).MobilePhoneXIcon;
       } else {
-        MobilePhoneShareIcon = tmp15(19190).MobilePhoneShareIcon;
+        MobilePhoneShareIcon = tmp15(19192).MobilePhoneShareIcon;
       }
       push2(obj2);
     }

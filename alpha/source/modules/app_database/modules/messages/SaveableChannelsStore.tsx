@@ -1,7 +1,7 @@
 // Module ID: 8681
 // Function ID: 8682
 // Name: SaveableChannelsStore
-// Dependencies: [5155, 5536, 1071, 5209, 8682, 8683, 8684, 8686, 8687, 8688, 8689, 2]
+// Dependencies: [5155, 5526, 1071, 5209, 8682, 8683, 8684, 8686, 8687, 8688, 8689, 2]
 
 // Module 8681 (SaveableChannelsStore)
 import ExtendedMemoryLru from "ExtendedMemoryLru" /* 8683 */;
@@ -10,7 +10,7 @@ import isPrivateChannel from "isPrivateChannel" /* 8686 */;
 import isReadableChannel from "isReadableChannel" /* 8687 */;
 import withFallbacks from "withFallbacks" /* 8689 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5536 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5526 */;
 import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1071 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
 import FileSystemStore from "FileSystemStore" /* 8682 */;

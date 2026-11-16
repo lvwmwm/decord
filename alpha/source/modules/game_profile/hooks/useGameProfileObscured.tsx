@@ -1,12 +1,12 @@
 // Module ID: 9380
 // Function ID: 9381
 // Name: useGameProfileObscured
-// Dependencies: [1388, 5962, 504, 2]
+// Dependencies: [1388, 5952, 504, 2]
 // Exports: default, isGameProfileObscured
 
 // Module 9380 (useGameProfileObscured)
 import get_initialized from "get initialized" /* 504 */;
-import utils from "utils" /* 5962 */;
+import utils from "utils" /* 5952 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 

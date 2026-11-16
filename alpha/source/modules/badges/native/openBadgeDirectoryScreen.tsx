@@ -1,13 +1,13 @@
 // Module ID: 15273
 // Function ID: 15274
 // Name: openBadgeDirectoryScreen
-// Dependencies: [1380, 7771, 6848, 15274, 2121, 2]
+// Dependencies: [1380, 7771, 6838, 15274, 2121, 2]
 // Exports: closeBadgeDirectoryScreen, isBadgeDirectoryIOSPageSheet, openBadgeDirectoryScreen
 
 // Module 15273 (openBadgeDirectoryScreen)
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

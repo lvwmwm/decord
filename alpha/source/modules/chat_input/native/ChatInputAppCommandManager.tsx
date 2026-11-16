@@ -1,7 +1,7 @@
 // Module ID: 14821
 // Function ID: 14822
 // Name: ChatInputAppCommandManager
-// Dependencies: [32, 19, 9006, 9007, 2141, 9378, 1388, 6346, 5306, 575, 13793, 12, 9533, 504, 9380, 13438, 14602, 11405, 2119, 14822, 2]
+// Dependencies: [32, 19, 9006, 9007, 2141, 9378, 1388, 6336, 5306, 575, 13793, 12, 9533, 504, 9380, 13438, 14602, 11405, 2119, 14822, 2]
 
 // Module 14821 (ChatInputAppCommandManager)
 import nativeDefault from "native" /* 575 */;
@@ -14,7 +14,7 @@ import ApplicationCommandStore from "ApplicationCommandStore" /* 9007 */;
 import GameStore from "GameStore" /* 2141 */;
 import GameAutocompleteStore from "GameAutocompleteStore" /* 9378 */;
 import UserStore from "UserStore" /* 1388 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6346 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6336 */;
 import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 

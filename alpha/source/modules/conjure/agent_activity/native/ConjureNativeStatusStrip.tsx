@@ -1,14 +1,14 @@
 // Module ID: 13764
 // Function ID: 13765
 // Name: ConjureNativeStatusStrip
-// Dependencies: [32, 19, 17, 7377, 13350, 21, 5306, 575, 13591, 13349, 13765, 504, 1113, 5552, 13770, 13771, 7428, 4131, 13772, 5929, 6037, 2]
+// Dependencies: [32, 19, 17, 7377, 13350, 21, 5306, 575, 13591, 13349, 13765, 504, 1113, 5542, 13770, 13771, 7428, 4131, 13772, 5919, 6027, 2]
 // Exports: default
 
 // Module 13764 (ConjureNativeStatusStrip)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef4131 from "module_4131" /* 4131 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5542 */;
 import AILoaderConstants from "AILoaderConstants" /* 13350 */;
 import ConjureStatusLabels from "ConjureStatusLabels" /* 13591 */;
 import ConjureUsageSheet from "ConjureUsageSheet" /* 13770 */;
@@ -264,7 +264,7 @@ export default function ConjureNativeStatusStrip(projectId) {
       let tmp19Result4 = null;
       if (null != connLabel) {
         let str3 = "text-muted";
-        const Text = tmp2(5929).Text;
+        const Text = tmp2(5919).Text;
         if (connFailed) {
           str3 = "text-feedback-critical";
         }
@@ -277,7 +277,7 @@ export default function ConjureNativeStatusStrip(projectId) {
         const obj8 = { accessibilityRole: "button", hitSlop: 8, style: tmp.chip, onPress: tmp16, children: closure_8(Text2, obj9) };
         const PressableOpacity2 = tmp2(7428).PressableOpacity;
         obj9 = { variant: "body-xs/medium", color: "text-muted", children: intl3.formatToPlainString(_modDef4131.REnNUn, obj10) };
-        Text2 = tmp2(5929).Text;
+        Text2 = tmp2(5919).Text;
         intl3 = tmp2(1113).intl;
         obj10 = { count: queuedCount };
         tmp19Result5 = tmp19(PressableOpacity2, obj8);
@@ -288,9 +288,9 @@ export default function ConjureNativeStatusStrip(projectId) {
         const obj11 = { accessibilityRole: "button", accessibilityLabel: runesUsedLabelsResult.aria, hitSlop: 8, style: tmp.chip, onPress: callback, children: items5 };
         const PressableOpacity3 = tmp2(7428).PressableOpacity;
         const obj12 = { variant: "body-xs/medium", color: "text-muted", children: runesUsedLabelsResult.text };
-        items5 = [closure_8(projectId(5929).Text, obj12), ];
+        items5 = [closure_8(projectId(5919).Text, obj12), ];
         const obj13 = { size: "xxs", color: nativeDefault.colors.TEXT_MUTED };
-        const CircleInformationIcon = tmp2(6037).CircleInformationIcon;
+        const CircleInformationIcon = tmp2(6027).CircleInformationIcon;
         items5[1] = closure_8(CircleInformationIcon, obj13);
         tmp17Result = tmp17(PressableOpacity3, obj11);
       }

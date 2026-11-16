@@ -1,9 +1,9 @@
-// Module ID: 19170
-// Function ID: 19171
+// Module ID: 19172
+// Function ID: 19173
 // Name: YouBarNotificationsButton
-// Dependencies: [19, 17, 11909, 17701, 21, 5306, 575, 17200, 1655, 5939, 504, 5554, 11904, 11905, 1113, 10996, 19167, 7988, 1187, 5493, 2]
+// Dependencies: [19, 17, 11909, 17701, 21, 5306, 575, 17200, 1655, 5929, 504, 5544, 11904, 11905, 1113, 10996, 19169, 7988, 1187, 5483, 2]
 
-// Module 19170 (YouBarNotificationsButton)
+// Module 19172 (YouBarNotificationsButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useNotificationsTabBadgeDefault from "useNotificationsTabBadge" /* 17200 */;
@@ -47,7 +47,7 @@ const memoResult = react.memo(function YouBarNotificationsButton(hasNameplate) {
   let items = [closure_11, , , , ];
   const useAnimatedStyle = onLongPress(1655).useAnimatedStyle;
   onLongPress(1655);
-  items[1] = onLongPress(5939).withSpring;
+  items[1] = onLongPress(5929).withSpring;
   items[2] = value;
   items[3] = closure_6;
   items[4] = nativeDefault;
@@ -122,7 +122,7 @@ const memoResult = react.memo(function YouBarNotificationsButton(hasNameplate) {
     const _HermesInternal = HermesInternal;
     combined = "" + formatToPlainStringResult + ", " + intl2.formatToPlainString(tmp4(1113).t.yBmFPA, obj2);
   }
-  const YouBarButtonContainer = tmp4(19167).YouBarButtonContainer;
+  const YouBarButtonContainer = tmp4(19169).YouBarButtonContainer;
   const obj3 = {
     accessibilityLabel: combined,
     accessibilityActions: memo,
@@ -153,7 +153,7 @@ const memoResult = react.memo(function YouBarNotificationsButton(hasNameplate) {
   items4 = [, ];
   const obj4 = { children: closure_8(IconButton, obj3) };
   const obj6 = { icon: tmp17Result, hasBadge: stateFromStores > 0 && 0 === value, badgeStyle: tmp.overdueReminderDot };
-  items4[0] = closure_8(onLongPress(19167).YouBarButtonIcon, obj6);
+  items4[0] = closure_8(onLongPress(19169).YouBarButtonIcon, obj6);
   const obj7 = { style: animatedStyle, children: closure_8(onLongPress(1187).Badge, { value }) };
   View = _modDef1655.View;
   items4[1] = closure_8(View, obj7);

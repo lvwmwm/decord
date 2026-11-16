@@ -1,15 +1,15 @@
-// Module ID: 18653
-// Function ID: 18654
+// Module ID: 18655
+// Function ID: 18656
 // Name: ChooseAccount
-// Dependencies: [5, 19, 17, 14829, 14830, 1072, 21, 5306, 575, 1502, 18654, 1256, 14833, 6269, 1113, 1187, 5552, 7948, 7792, 5929, 7712, 18655, 7428, 8437, 8106, 18656, 2]
+// Dependencies: [5, 19, 17, 14829, 14830, 1072, 21, 5306, 575, 1502, 18656, 1256, 14833, 6259, 1113, 1187, 5542, 7948, 7792, 5919, 7712, 18657, 7428, 8437, 8106, 18658, 2]
 // Exports: default
 
-// Module 18653 (ChooseAccount)
+// Module 18655 (ChooseAccount)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6269 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6259 */;
 import MultiAccountStore from "MultiAccountStore" /* 14829 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -250,7 +250,7 @@ export default function ChooseAccount() {
     }
   };
   const FormRow = require("module_8106").FormRow;
-  obj7 = { themedColor: multiAccountUsers(575).colors.TEXT_LINK, size: require("native").Icon.Sizes.SMALL_20, source: multiAccountUsers(18656) };
+  obj7 = { themedColor: multiAccountUsers(575).colors.TEXT_LINK, size: require("native").Icon.Sizes.SMALL_20, source: multiAccountUsers(18658) };
   Icon = require("module_8106").FormRow.Icon;
   intl3 = require("intl").intl;
   items[1] = closure_11(FormRow, obj6);

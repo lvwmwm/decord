@@ -1,7 +1,7 @@
 // Module ID: 7889
 // Function ID: 7890
 // Name: usePromptHelpText
-// Dependencies: [5155, 5212, 5238, 5248, 1388, 1072, 1113, 504, 5954, 2]
+// Dependencies: [5155, 5212, 5238, 5248, 1388, 1072, 1113, 504, 5944, 2]
 // Exports: default, useCustomizeCommunityPromptHelpText
 
 // Module 7889 (usePromptHelpText)

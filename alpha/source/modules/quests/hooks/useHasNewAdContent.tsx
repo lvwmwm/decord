@@ -1,12 +1,12 @@
 // Module ID: 10512
 // Function ID: 10513
 // Name: useHasNewAdContent
-// Dependencies: [32, 10513, 8808, 1089, 504, 8815, 5345, 9560, 5139, 2]
+// Dependencies: [32, 10513, 8808, 1089, 504, 8815, 6961, 9560, 5139, 2]
 // Exports: default
 
 // Module 10512 (useHasNewAdContent)
 import DurationsDefault from "Durations" /* 1089 */;
-import AdCreativeType from "AdCreativeType" /* 5345 */;
+import AdCreativeType from "AdCreativeType" /* 6961 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AdContentSeenStore from "AdContentSeenStore" /* 10513 */;
 import QuestStore from "QuestStore" /* 8808 */;

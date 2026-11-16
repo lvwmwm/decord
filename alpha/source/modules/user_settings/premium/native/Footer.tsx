@@ -1,15 +1,15 @@
 // Module ID: 15366
 // Function ID: 15367
 // Name: Footer
-// Dependencies: [19, 17, 21, 5306, 15367, 7937, 5929, 1113, 5936, 6020, 15368, 2]
+// Dependencies: [19, 17, 21, 5306, 15367, 7937, 5919, 1113, 5926, 6010, 15368, 2]
 // Exports: default
 
 // Module 15366 (Footer)
 import react_native from "react-native" /* 17 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import components_Button_Button from "components/Button/Button" /* 5936 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
 import useOpenPremiumMarketingPaymentDefault from "useOpenPremiumMarketingPayment" /* 15367 */;
 import AssetRegistryDefault from "AssetRegistry" /* 15368 */;

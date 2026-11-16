@@ -1,11 +1,11 @@
 // Module ID: 7340
 // Function ID: 7341
 // Name: conjurePreviewFrameSurfaces
-// Dependencies: [5977, 7018, 2]
+// Dependencies: [5967, 7018, 2]
 // Exports: declaresPreviewFrame, previewFrameLaunchType, previewFrameSurfaceOptions, resolvePreviewFrameSurface
 
 // Module 7340 (conjurePreviewFrameSurfaces)
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5977 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5967 */;
 import ConjureProjectTypes from "ConjureProjectTypes" /* 7018 */;
 import size from "module_2" /* 2 */;
 

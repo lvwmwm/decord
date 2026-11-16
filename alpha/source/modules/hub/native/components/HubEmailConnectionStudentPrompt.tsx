@@ -1,7 +1,7 @@
 // Module ID: 15089
 // Function ID: 15090
 // Name: HubEmailConnectionStudentPrompt
-// Dependencies: [19, 17, 15080, 1072, 21, 5306, 6826, 575, 1502, 15088, 1187, 1113, 7901, 6020, 15090, 1256, 15091, 2]
+// Dependencies: [19, 17, 15080, 1072, 21, 5306, 6816, 575, 1502, 15088, 1187, 1113, 7901, 6010, 15090, 1256, 15091, 2]
 // Exports: default
 
 // Module 15089 (HubEmailConnectionStudentPrompt)
@@ -13,7 +13,7 @@ import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
-import TextStyles from "TextStyles" /* 6826 */;
+import TextStyles from "TextStyles" /* 6816 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -76,14 +76,14 @@ export default function HubEmailConnectionStudentPrompt(onClose) {
   };
   obj6 = { source: invite(15090) };
   const tmp2 = invite(7901);
-  tmp3 = invite(6020);
+  tmp3 = invite(6010);
   intl2 = onClose(1113).intl;
   intl3 = onClose(1113).intl;
   items[1] = closure_6(tmp2, obj5);
   const obj7 = { DEPRECATED_style: tmp.row, leading: closure_6(tmp5, obj8), trailing: invite(7901).Arrow, label: intl4.string(onClose(1113).t.GLG9n4), onPress: onClose };
   obj8 = { source: invite(15091) };
   const tmp4 = invite(7901);
-  tmp5 = invite(6020);
+  tmp5 = invite(6010);
   intl4 = onClose(1113).intl;
   items[2] = closure_6(tmp4, obj7);
   return closure_6(HubEmailConnectionScreen, obj2);

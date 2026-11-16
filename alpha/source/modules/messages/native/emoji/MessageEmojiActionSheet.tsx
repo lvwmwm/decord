@@ -1,7 +1,7 @@
 // Module ID: 11299
 // Function ID: 11300
 // Name: MessageEmojiActionSheet
-// Dependencies: [19, 17, 1072, 21, 5306, 1380, 1269, 5566, 1256, 11300, 11306, 11307, 2]
+// Dependencies: [19, 17, 1072, 21, 5306, 1380, 1269, 5556, 1256, 11300, 11306, 11307, 2]
 // Exports: default
 
 // Module 11299 (MessageEmojiActionSheet)
@@ -46,7 +46,7 @@ function MessageCustomEmojiActionSheet(emojiNode) {
     const tmp2Result = require("v1");
     const v4Result = tmp2Result.v4();
     _require = v4Result;
-    const BottomSheet = tmp2(5566).BottomSheet;
+    const BottomSheet = tmp2(5556).BottomSheet;
     return <BottomSheet startExpanded onDismiss={function onDismiss() {
       const obj = AnalyticsUtilsDefault;
       const obj2 = { nonce };

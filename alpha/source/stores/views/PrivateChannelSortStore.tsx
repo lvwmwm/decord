@@ -1,7 +1,7 @@
 // Module ID: 7240
 // Function ID: 7241
 // Name: PrivateChannelSortStore
-// Dependencies: [7030, 7031, 5159, 5155, 5177, 7015, 6958, 1388, 5162, 11, 5233, 2169, 7241, 504, 572, 2]
+// Dependencies: [7030, 7031, 5159, 5155, 5177, 7015, 6948, 1388, 5162, 11, 5233, 2169, 7241, 504, 572, 2]
 
 // Module 7240 (PrivateChannelSortStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
@@ -17,7 +17,7 @@ import SpamMessageRequestStore from "SpamMessageRequestStore" /* 7031 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import GuildStore from "GuildStore" /* 5177 */;
 import ReadStateStore from "ReadStateStore" /* 7015 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6958 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6948 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
@@ -84,7 +84,7 @@ const secondaryIndexMap = new SecondaryIndexMap.SecondaryIndexMap(function index
 let values = [];
 let values2 = [];
 let closure_18 = [];
-const f41899 = () => {
+const f41903 = () => {
 
 };
 const Store = get_initializedDefault.Store;
@@ -95,7 +95,7 @@ class PrivateChannelSortStore extends Store {
     this.syncWith(items, handleConnectionOpen);
   }
   getPrivateChannelIds() {
-    if (typeof f41899 === "function") {
+    if (typeof f41903 === "function") {
       values = secondaryIndexMap.values(constants.FAVORITE);
       values2 = secondaryIndexMap.values(constants.DEFAULT);
       const tmp4 = values === values && values2 === values2;

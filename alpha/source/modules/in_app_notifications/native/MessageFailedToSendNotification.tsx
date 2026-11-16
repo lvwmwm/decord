@@ -1,14 +1,14 @@
 // Module ID: 11094
 // Function ID: 11095
 // Name: MessageFailedToSendNotification
-// Dependencies: [19, 17, 21, 5306, 575, 1113, 6063, 5543, 11087, 11095, 11043, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 1113, 6053, 5533, 11087, 11095, 11043, 2]
 
 // Module 11094 (MessageFailedToSendNotification)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import flow_Client from "flow/Client" /* 5543 */;
-import transitionToChannel from "transitionToChannel" /* 6063 */;
+import flow_Client from "flow/Client" /* 5533 */;
+import transitionToChannel from "transitionToChannel" /* 6053 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;

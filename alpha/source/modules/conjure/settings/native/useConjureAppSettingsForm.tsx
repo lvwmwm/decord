@@ -1,7 +1,7 @@
 // Module ID: 13213
 // Function ID: 13214
 // Name: useConjureAppSettingsForm
-// Dependencies: [5, 32, 19, 17, 5236, 5177, 5248, 1388, 7379, 21, 5306, 575, 504, 13214, 13216, 13217, 1113, 4131, 13218, 13221, 7746, 13222, 7733, 7745, 7747, 13233, 7859, 7619, 5929, 5936, 7260, 7443, 7458, 5954, 5552, 11964, 13215, 13238, 2]
+// Dependencies: [5, 32, 19, 17, 5236, 5177, 5248, 1388, 7379, 21, 5306, 575, 504, 13214, 13216, 13217, 1113, 4131, 13218, 13221, 7746, 13222, 7733, 7745, 7747, 13233, 7859, 7619, 5919, 5926, 7260, 7443, 7458, 5944, 5542, 11964, 13215, 13238, 2]
 // Exports: default
 
 // Module 13213 (useConjureAppSettingsForm)
@@ -9,7 +9,7 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl9 from "intl" /* 1113 */;
 import _modDef4131 from "module_4131" /* 4131 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5542 */;
 import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11964 */;
 import conjureSettingValues from "conjureSettingValues" /* 13216 */;
 import ConjureGuildPickerSheetDefault from "ConjureGuildPickerSheet" /* 13238 */;
@@ -115,14 +115,14 @@ function ConjureChannelSettingRow(guildId) {
       const TableRow = tmp(7443).TableRow;
       if (null != hint) {
         let obj3 = { variant: "body-xs/medium", color: "text-subtle", children: tmpResult3.conjureLinkedNodes(hint, "body-xs/medium") };
-        const Text = tmp(5929).Text;
+        const Text = tmp(5919).Text;
         let str = "body-xs/medium";
         tmpResult3 = tmp(13222);
         tmp5Result = tmp5(Text, obj3);
       }
       TableRowTrailingText = tmp(7458).TableRowTrailingText;
       if (null != found) {
-        const tmpResult4 = tmp(5954);
+        const tmpResult4 = tmp(5944);
         channelName = tmpResult4.computeChannelName(found, UserStore, RelationshipStore, true);
       } else {
         let intl = tmp(1113).intl;
@@ -234,7 +234,7 @@ function ConjurePickerSettingRow(guildId) {
       const TableRow = tmp4(7443).TableRow;
       if (null != hint) {
         const obj4 = { variant: "body-xs/medium", color: "text-subtle", children: tmp4Result2.conjureLinkedNodes(hint, "body-xs/medium") };
-        const Text = tmp4(5929).Text;
+        const Text = tmp4(5919).Text;
         let str = "body-xs/medium";
         tmp4Result2 = tmp4(13222);
         tmp10Result = tmp10(Text, obj4);

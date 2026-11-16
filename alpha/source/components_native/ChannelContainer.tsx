@@ -1,7 +1,7 @@
 // Module ID: 11010
 // Function ID: 11011
 // Name: ChannelContainer
-// Dependencies: [19, 17, 5239, 5155, 5209, 1072, 5152, 21, 5306, 5495, 11011, 504, 11956, 6836, 5348, 5139, 11957, 11958, 11974, 2]
+// Dependencies: [19, 17, 5239, 5155, 5209, 1072, 5152, 21, 5306, 5485, 11011, 504, 11956, 6826, 5338, 5139, 11957, 11958, 11974, 2]
 // Exports: ChannelContainer
 
 // Module 11010 (ChannelContainer)
@@ -10,8 +10,8 @@ import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
 import dismissible_content from "dismissible_content" /* 5139 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5348 */;
-import useChatLayoutDefault from "useChatLayout" /* 5495 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5338 */;
+import useChatLayoutDefault from "useChatLayout" /* 5485 */;
 import react_mod from "react" /* 19 */;
 import LurkingStore from "LurkingStore" /* 5239 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
@@ -92,9 +92,9 @@ export function ChannelContainer(children) {
     isPrivateResult = channel.isPrivate();
   }
   dependencyMap = isPrivateResult;
-  const tmp8 = channelId(6836)(isPrivateResult);
+  const tmp8 = channelId(6826)(isPrivateResult);
   react = tmp8;
-  const tmp9 = channelId(6836)(channelId);
+  const tmp9 = channelId(6826)(channelId);
   closure_4 = tmp9;
   const items2 = [channelId, tmp9, isPrivateResult, tmp8];
   const effect = react.useEffect(() => {

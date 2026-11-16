@@ -1,7 +1,7 @@
 // Module ID: 13812
 // Function ID: 13813
 // Name: ConjureMentionSuggestions
-// Dependencies: [19, 21, 5306, 575, 7746, 1113, 4131, 7443, 1187, 5372, 13229, 2]
+// Dependencies: [19, 21, 5306, 575, 7746, 1113, 4131, 7443, 1187, 5362, 13229, 2]
 // Exports: default
 
 // Module 13812 (ConjureMentionSuggestions)

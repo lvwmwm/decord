@@ -1,13 +1,13 @@
-// Module ID: 20650
-// Function ID: 20651
+// Module ID: 20653
+// Function ID: 20654
 // Name: ArrowLargeDownIcon
-// Dependencies: [19, 21, 575, 6019, 14675, 2]
+// Dependencies: [19, 21, 575, 6009, 14675, 2]
 // Exports: ArrowLargeDownIcon
 
-// Module 20650 (ArrowLargeDownIcon)
+// Module 20653 (ArrowLargeDownIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6019 */;
+import BaseIconImage2 from "BaseIconImage" /* 6009 */;
 import AssetRegistry from "AssetRegistry" /* 14675 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 18652
-// Function ID: 18653
+// Module ID: 18654
+// Function ID: 18655
 // Name: useShouldShowChooseAccount
 // Dependencies: [14829, 504, 2]
 // Exports: default
 
-// Module 18652 (useShouldShowChooseAccount)
+// Module 18654 (useShouldShowChooseAccount)
 import get_initialized from "get initialized" /* 504 */;
 import MultiAccountStore from "MultiAccountStore" /* 14829 */;
 import size from "module_2" /* 2 */;

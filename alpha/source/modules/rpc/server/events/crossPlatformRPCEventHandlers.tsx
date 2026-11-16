@@ -1,7 +1,7 @@
 // Module ID: 16998
 // Function ID: 16999
 // Name: crossPlatformRPCEventHandlers
-// Dependencies: [2165, 2140, 5173, 6820, 5155, 5218, 5177, 2133, 6071, 5209, 1388, 5981, 6761, 1072, 12866, 12869, 7303, 6838, 16918, 16913, 7307, 12, 16922, 16914, 7296, 15993, 16921, 1084, 558, 7301, 16999, 2]
+// Dependencies: [2165, 2140, 5173, 6810, 5155, 5218, 5177, 2133, 6061, 5209, 1388, 5971, 6751, 1072, 12866, 12869, 7303, 6828, 16918, 16913, 7307, 12, 16922, 16914, 7296, 15993, 16921, 1084, 558, 7301, 16999, 2]
 
 // Module 16998 (crossPlatformRPCEventHandlers)
 import _modDef12 from "module_12" /* 12 */;
@@ -22,16 +22,16 @@ import activityInstanceConnectedParticipants from "activityInstanceConnectedPart
 import transformApplicationDefault from "transformApplication" /* 16999 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
 import RunningGameStore from "RunningGameStore" /* 2140 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6820 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6810 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import GuildMemberStore from "GuildMemberStore" /* 5218 */;
 import GuildStore from "GuildStore" /* 5177 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6071 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
 import UserStore from "UserStore" /* 1388 */;
-import VoiceStateStore from "VoiceStateStore" /* 5981 */;
-import Constants_mod from "Constants" /* 6761 */;
+import VoiceStateStore from "VoiceStateStore" /* 5971 */;
+import Constants_mod from "Constants" /* 6751 */;
 import Constants_mod2 from "Constants" /* 1072 */;
 import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 16922 */;
 import size from "module_2" /* 2 */;
@@ -93,7 +93,7 @@ function messageEvents(args) {
     const obj4 = RPCHelpers;
     const tmp11 = require;
     if (obj4.hasMessageReadPermission(channel, socket.application.id, socket.authorization.scopes)) {
-      const tmp11Result = tmp11(6838);
+      const tmp11Result = tmp11(6828);
       if (tmp11Result.userCannotSeeNSFWContent(channel)) {
         const _HermesInternal = HermesInternal;
         const self = this;

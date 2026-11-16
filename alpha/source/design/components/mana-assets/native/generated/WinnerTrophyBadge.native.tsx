@@ -1,7 +1,7 @@
 // Module ID: 10885
 // Function ID: 10886
 // Name: WinnerTrophyBadge
-// Dependencies: [19, 21, 10886, 10887, 10888, 7755, 6020, 2]
+// Dependencies: [19, 21, 10886, 10887, 10888, 7755, 6010, 2]
 // Exports: WinnerTrophyBadge
 
 // Module 10885 (WinnerTrophyBadge)

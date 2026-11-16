@@ -1,7 +1,7 @@
 // Module ID: 11903
 // Function ID: 11904
 // Name: ReminderNotification
-// Dependencies: [19, 17, 5155, 5177, 11026, 1072, 21, 5306, 1187, 6042, 575, 11025, 11091, 504, 1093, 11089, 11043, 11045, 5994, 38, 1113, 11077, 6848, 11904, 11905, 1256, 11087, 2]
+// Dependencies: [19, 17, 5155, 5177, 11026, 1072, 21, 5306, 1187, 6032, 575, 11025, 11091, 504, 1093, 11089, 11043, 11045, 5984, 38, 1113, 11077, 6838, 11904, 11905, 1256, 11087, 2]
 
 // Module 11903 (ReminderNotification)
 import react_native from "react-native" /* 17 */;
@@ -9,8 +9,8 @@ import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import ClockIcon2 from "ClockIcon" /* 6042 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ClockIcon2 from "ClockIcon" /* 6032 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import InAppNotificationUtils from "InAppNotificationUtils" /* 11025 */;
 import MessagePreviewTextDefault from "MessagePreviewText" /* 11043 */;
 import MessageNotificationHeaderDefault from "MessageNotificationHeader" /* 11089 */;
@@ -79,7 +79,7 @@ function NotificationBody(channel) {
   if (!hasPreviewableMedia) {
     let tmp14;
     if (null == message.poll) {
-      const obj5 = { channel, message, color: "text-default", layout: channel(5994).ChannelListLayoutTypes.COZY, variant: messagePreviewTextVariant, muted: false, lineClamp: num };
+      const obj5 = { channel, message, color: "text-default", layout: channel(5984).ChannelListLayoutTypes.COZY, variant: messagePreviewTextVariant, muted: false, lineClamp: num };
       const ChannelRowPreview = tmp(11045).ChannelRowPreview;
       tmp14 = closure_10(ChannelRowPreview, obj5);
     }

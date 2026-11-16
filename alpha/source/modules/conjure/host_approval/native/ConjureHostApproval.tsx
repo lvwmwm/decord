@@ -1,7 +1,7 @@
 // Module ID: 13210
 // Function ID: 13211
 // Name: host_approval/ConjureHostApproval
-// Dependencies: [19, 17, 21, 5306, 575, 13211, 13212, 5929, 1113, 4131, 6337, 5936, 7388, 7746, 7443, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 13211, 13212, 5919, 1113, 4131, 6327, 5926, 7388, 7746, 7443, 2]
 // Exports: ConjureAllowedHostsSetting, ConjureHostApprovalCards
 
 // Module 13210 (host_approval/ConjureHostApproval)
@@ -9,7 +9,7 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
 import _modDef4131 from "module_4131" /* 4131 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import ConjureHostApproval from "ConjureHostApproval" /* 7388 */;
 import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 13211 */;
 import ConjureAwaitingUser from "ConjureAwaitingUser" /* 13212 */;
@@ -57,14 +57,14 @@ function ConjureHostApprovalCard(arg0) {
   let tmp6Result = null;
   if ("" !== reason) {
     const obj4 = { variant: "body-sm/normal", color: "text-muted", children: intl3.format(_modDef4131["5poqiN"], obj5) };
-    const Text3 = tmp7(5929).Text;
+    const Text3 = tmp7(5919).Text;
     intl3 = tmp7(1113).intl;
     obj5 = { reason };
     tmp6Result = tmp6(Text3, obj4);
   }
   items[3] = tmp6Result;
   const obj6 = { direction: "horizontal", spacing: nativeDefault.space.PX_8, children: items1 };
-  const Stack = tmp7(6337).Stack;
+  const Stack = tmp7(6327).Stack;
   const obj7 = {
     variant: "primary",
     size: "sm",
@@ -74,7 +74,7 @@ function ConjureHostApprovalCard(arg0) {
     },
     text: intl4.string(_modDef4131.B05C3K)
   };
-  const Button = tmp7(5936).Button;
+  const Button = tmp7(5926).Button;
   intl4 = tmp7(1113).intl;
   items1 = [closure_4(Button, obj7), , ];
   const obj8 = {
@@ -86,7 +86,7 @@ function ConjureHostApprovalCard(arg0) {
     },
     text: intl5.string(_modDef4131["rGv+om"])
   };
-  const Button2 = tmp7(5936).Button;
+  const Button2 = tmp7(5926).Button;
   intl5 = tmp7(1113).intl;
   items1[1] = closure_4(Button2, obj8);
   const obj9 = {
@@ -98,7 +98,7 @@ function ConjureHostApprovalCard(arg0) {
     },
     text: intl6.string(_modDef4131.vWkaSE)
   };
-  const Button3 = tmp7(5936).Button;
+  const Button3 = tmp7(5926).Button;
   intl6 = tmp7(1113).intl;
   items1[2] = closure_4(Button3, obj9);
   items[4] = closure_5(Stack, obj6);

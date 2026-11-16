@@ -1,7 +1,7 @@
 // Module ID: 14188
 // Function ID: 14189
 // Name: AppealIngestionModal
-// Dependencies: [5, 32, 19, 17, 8231, 8206, 1072, 21, 5306, 575, 5929, 504, 14182, 1502, 8207, 14187, 14183, 8205, 7415, 1113, 5936, 7493, 14189, 1264, 14209, 14211, 14213, 14215, 5917, 7490, 2]
+// Dependencies: [5, 32, 19, 17, 8231, 8206, 1072, 21, 5306, 575, 5919, 504, 14182, 1502, 8207, 14187, 14183, 8205, 7415, 1113, 5926, 7493, 14189, 1264, 14209, 14211, 14213, 14215, 5907, 7490, 2]
 // Exports: AppealIngestionModalHeader, AppealIngestionModalScreen, default
 
 // Module 14188 (AppealIngestionModal)
@@ -9,7 +9,7 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import NavigatorHeader from "NavigatorHeader" /* 7493 */;
 import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 14187 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
@@ -49,7 +49,7 @@ export default function AppealIngestionModal(classificationId) {
   let c0;
   let classification;
   let intl;
-  const f109234 = () => {
+  const f109247 = () => {
     let obj11;
     let obj3;
     let obj5;
@@ -154,8 +154,8 @@ export default function AppealIngestionModal(classificationId) {
   if (!flag2) {
     flag2 = false;
   }
-  let obj2 = { initialRouteName: constants.SPEED_BUMP, screens: flag(5917)(f109234), headerBackTitle: intl.string(require("intl").t["13/7kX"]), headerTitleAlign: "center" };
-  flag(5917)(f109234);
+  let obj2 = { initialRouteName: constants.SPEED_BUMP, screens: flag(5907)(f109247), headerBackTitle: intl.string(require("intl").t["13/7kX"]), headerTitleAlign: "center" };
+  flag(5907)(f109247);
   const Navigator = tmp(7490).Navigator;
   intl = tmp(1113).intl;
   return closure_12(Navigator, obj2);

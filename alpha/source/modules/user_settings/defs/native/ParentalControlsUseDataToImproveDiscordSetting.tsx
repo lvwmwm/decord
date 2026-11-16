@@ -1,9 +1,9 @@
-// Module ID: 18597
-// Function ID: 18598
+// Module ID: 18599
+// Function ID: 18600
 // Name: ParentalControlsUseDataToImproveDiscordSetting
 // Dependencies: [8740, 9202, 1072, 17351, 8742, 17346, 12406, 1113, 2]
 
-// Module 18597 (ParentalControlsUseDataToImproveDiscordSetting)
+// Module 18599 (ParentalControlsUseDataToImproveDiscordSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 8742 */;

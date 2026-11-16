@@ -1,12 +1,12 @@
-// Module ID: 5912
-// Function ID: 5913
+// Module ID: 5902
+// Function ID: 5903
 // Name: NavScrim
-// Dependencies: [19, 17, 21, 5306, 575, 5913, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 5903, 2]
 
-// Module 5912 (NavScrim)
+// Module 5902 (NavScrim)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5913 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5903 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import createStyles_mod from "createStyles" /* 5306 */;

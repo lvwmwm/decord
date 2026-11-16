@@ -1,15 +1,15 @@
-// Module ID: 19936
-// Function ID: 19937
+// Module ID: 19938
+// Function ID: 19939
 // Name: ActivityInviteSheet
-// Dependencies: [32, 19, 17, 12565, 14732, 1072, 8842, 1083, 21, 5306, 575, 8474, 7918, 7937, 5552, 8476, 8463, 12410, 504, 14731, 7665, 5566, 7913, 1113, 1187, 15886, 7825, 19937, 2]
+// Dependencies: [32, 19, 17, 12565, 14732, 1072, 8842, 1083, 21, 5306, 575, 8474, 7918, 7937, 5542, 8476, 8463, 12410, 504, 14731, 7665, 5556, 7913, 1113, 1187, 15886, 7825, 19939, 2]
 // Exports: default
 
-// Module 19936 (ActivityInviteSheet)
+// Module 19938 (ActivityInviteSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import Constants2 from "Constants" /* 1083 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import InviteTargetTypes from "InviteTargetTypes" /* 7665 */;
 import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 8474 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;
@@ -198,7 +198,7 @@ export default function ActivityInviteSheet(activity) {
   let obj2 = { value: analyticsLocations, children: tmp17(BottomSheet, obj3) };
   const AnalyticsLocationProvider = tmp11(7918).AnalyticsLocationProvider;
   let tmp18 = null != tmp6;
-  BottomSheet = tmp11(5566).BottomSheet;
+  BottomSheet = tmp11(5556).BottomSheet;
   if (!tmp18) {
     tmp18 = !tmp15;
   }
@@ -232,7 +232,7 @@ export default function ActivityInviteSheet(activity) {
       tmp17Result2 = tmp17(EmptyState, obj9);
     } else {
       const obj10 = { data: stateFromStores, error: tmp6, getSendState: callback, onInviteSent: callback2, onPressAvatar: callback1 };
-      tmp17Result2 = tmp17(tmp2(19937), obj10);
+      tmp17Result2 = tmp17(tmp2(19939), obj10);
     }
     const obj11 = { children: items4 };
     items4[1] = tmp17Result2;

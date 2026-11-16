@@ -1,7 +1,7 @@
 // Module ID: 11648
 // Function ID: 11649
 // Name: MediaKeyboardItem
-// Dependencies: [19, 17, 8872, 11649, 21, 1655, 5306, 575, 5303, 1187, 11368, 5929, 504, 8877, 11650, 1113, 8897, 8879, 11651, 11652, 5548, 1496, 11653, 8085, 11048, 2]
+// Dependencies: [19, 17, 8872, 11649, 21, 1655, 5306, 575, 5303, 1187, 11368, 5919, 504, 8877, 11650, 1113, 8897, 8879, 11651, 11652, 5538, 1496, 11653, 8085, 11048, 2]
 // Exports: isAttachFilesNode, isMediaCameraNode, isSpecialMediaGridNode, isViewAllPhotosNode
 
 // Module 11648 (MediaKeyboardItem)
@@ -10,8 +10,8 @@ import intl3 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5548 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import ImageIcon from "ImageIcon" /* 8085 */;
 import AttachmentIcon from "AttachmentIcon" /* 11048 */;
 import AssetRegistryDefault from "AssetRegistry" /* 11368 */;

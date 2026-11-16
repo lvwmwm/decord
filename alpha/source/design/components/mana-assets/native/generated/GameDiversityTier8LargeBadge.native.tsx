@@ -1,7 +1,7 @@
 // Module ID: 15800
 // Function ID: 15801
 // Name: GameDiversityTier8LargeBadge
-// Dependencies: [19, 21, 15801, 15802, 15803, 7755, 6020, 2]
+// Dependencies: [19, 21, 15801, 15802, 15803, 7755, 6010, 2]
 // Exports: GameDiversityTier8LargeBadge
 
 // Module 15800 (GameDiversityTier8LargeBadge)

@@ -1,7 +1,7 @@
 // Module ID: 14792
 // Function ID: 14793
 // Name: DoubleTapToReactActionSheet
-// Dependencies: [5, 32, 19, 17, 5307, 6969, 1072, 1391, 21, 5306, 1380, 575, 1655, 5548, 5899, 504, 5939, 5131, 5252, 9196, 1414, 7894, 1256, 7937, 9555, 1708, 5552, 7951, 5929, 1113, 14688, 14793, 5936, 2]
+// Dependencies: [5, 32, 19, 17, 5307, 6969, 1072, 1391, 21, 5306, 1380, 575, 1655, 5538, 5889, 504, 5929, 5131, 5252, 9196, 1414, 7894, 1256, 7937, 9555, 1708, 5542, 7951, 5919, 1113, 14688, 14793, 5926, 2]
 // Exports: default
 
 // Module 14792 (DoubleTapToReactActionSheet)
@@ -14,7 +14,7 @@ import _mod1655 from "module_1655" /* 1655 */;
 import _mod1708 from "module_1708" /* 1708 */;
 import UserSettings from "UserSettings" /* 5131 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 5252 */;
-import timing_timing from "timing/timing" /* 5548 */;
+import timing_timing from "timing/timing" /* 5538 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -483,7 +483,7 @@ export default function DoubleTapToReactActionSheet(emoji) {
       DoubleTapToReactActionSheetTsx4.__workletHash = 601184467601;
       DoubleTapToReactActionSheetTsx4.__initData = tmp14;
       const withTiming2Result = withTiming2(1, { duration: 100 }, undefined, DoubleTapToReactActionSheetTsx4);
-      const tmp4Result = tmp4(5939);
+      const tmp4Result = tmp4(5929);
       const result1 = set(withSequence(withTimingResult, withTimingResult1, withTiming2Result, tmp4Result.withSpring(0, { stiffness: 2000, damping: 70, mass: 3 })));
     }
     if (null != ref.current) {

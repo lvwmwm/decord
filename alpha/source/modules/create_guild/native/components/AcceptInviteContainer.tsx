@@ -1,7 +1,7 @@
 // Module ID: 15075
 // Function ID: 15076
 // Name: AcceptInviteContainer
-// Dependencies: [5, 19, 5218, 5177, 6052, 1072, 5224, 21, 5306, 575, 1502, 504, 7493, 1406, 7865, 2121, 8841, 7989, 15076, 7660, 10805, 15077, 7415, 5377, 2]
+// Dependencies: [5, 19, 5218, 5177, 6042, 1072, 5224, 21, 5306, 575, 1502, 504, 7493, 1406, 7865, 2121, 8841, 7989, 15076, 7660, 10805, 15077, 7415, 5367, 2]
 // Exports: default
 
 // Module 15075 (AcceptInviteContainer)
@@ -14,7 +14,7 @@ import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 5218 */;
 import GuildStore from "GuildStore" /* 5177 */;
-import InviteStore from "InviteStore" /* 6052 */;
+import InviteStore from "InviteStore" /* 6042 */;
 import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 

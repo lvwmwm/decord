@@ -1,12 +1,12 @@
 // Module ID: 13688
 // Function ID: 13689
 // Name: SpiderIllocon
-// Dependencies: [19, 21, 13689, 13690, 13691, 7755, 6020, 2]
+// Dependencies: [19, 21, 13689, 13690, 13691, 7755, 6010, 2]
 // Exports: SpiderIllocon
 
 // Module 13688 (SpiderIllocon)
 import Fragment from "Fragment" /* 21 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import react_native from "react-native" /* 7755 */;
 import _modDef13689 from "module_13689" /* 13689 */;
 import _modDef13690 from "module_13690" /* 13690 */;

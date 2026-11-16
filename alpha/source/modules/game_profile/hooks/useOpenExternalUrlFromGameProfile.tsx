@@ -1,7 +1,7 @@
 // Module ID: 10284
 // Function ID: 10285
 // Name: useOpenExternalUrlFromGameProfile
-// Dependencies: [32, 5, 19, 7294, 10285, 6008, 2]
+// Dependencies: [32, 5, 19, 7294, 10285, 5998, 2]
 // Exports: default
 
 // Module 10284 (useOpenExternalUrlFromGameProfile)

@@ -1,7 +1,7 @@
 // Module ID: 15650
 // Function ID: 15651
 // Name: ConjureAppChannelMembersSheet
-// Dependencies: [19, 5155, 10578, 21, 5306, 504, 15649, 5566, 12525, 2]
+// Dependencies: [19, 5155, 10578, 21, 5306, 504, 15649, 5556, 12525, 2]
 
 // Module 15650 (ConjureAppChannelMembersSheet)
 import Fragment from "Fragment" /* 21 */;
@@ -40,7 +40,7 @@ const memoResult = react.memo(function ConjureAppChannelMembersSheet(channelId) 
   }, items2);
   let tmp7 = null;
   if (null != guild_id) {
-    const BottomSheet = tmp2(5566).BottomSheet;
+    const BottomSheet = tmp2(5556).BottomSheet;
     tmp7 = <BottomSheet startExpanded scrollable bodyStyles={tmp.body}>{null}</BottomSheet>;
   }
   return tmp7;

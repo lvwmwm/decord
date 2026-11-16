@@ -1,7 +1,7 @@
 // Module ID: 15340
 // Function ID: 15341
 // Name: NitroWumpusFlightLeft3dIllustration
-// Dependencies: [19, 21, 15341, 15342, 15343, 7755, 6020, 2]
+// Dependencies: [19, 21, 15341, 15342, 15343, 7755, 6010, 2]
 // Exports: NitroWumpusFlightLeft3dIllustration
 
 // Module 15340 (NitroWumpusFlightLeft3dIllustration)

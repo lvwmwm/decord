@@ -1,13 +1,13 @@
 // Module ID: 10216
 // Function ID: 10217
 // Name: ICYMIUtils
-// Dependencies: [5, 7029, 5159, 5155, 5177, 10211, 1072, 10210, 10217, 10221, 6374, 10222, 8421, 9111, 1113, 2]
+// Dependencies: [5, 7029, 5159, 5155, 5177, 10211, 1072, 10210, 10217, 10221, 6364, 10222, 8421, 9111, 1113, 2]
 // Exports: compareGravityUnreadIds, contentTypeToText, createGravityMessageFromServer, customScoreToNumber, customStatusToContentInventoryEntry, determineContentType, hydrateItems, isChannelCustomScoreEligible, isGuildItem, isItemNSFW, itemToType, numberToCustomScore
 
 // Module 10216 (ICYMIUtils)
 import intl11 from "intl" /* 1113 */;
 import ChannelRecord from "ChannelRecord" /* 5159 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 6374 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 6364 */;
 import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8421 */;
 import ForumPostMediaUtils from "ForumPostMediaUtils" /* 9111 */;
 import ICYMITypes from "ICYMITypes" /* 10210 */;

@@ -1,13 +1,13 @@
-// Module ID: 18138
-// Function ID: 18139
+// Module ID: 18140
+// Function ID: 18141
 // Name: FriendStreamNotificationsSetting
-// Dependencies: [9202, 12406, 1113, 5131, 18139, 2]
+// Dependencies: [9202, 12406, 1113, 5131, 18141, 2]
 
-// Module 18138 (FriendStreamNotificationsSetting)
+// Module 18140 (FriendStreamNotificationsSetting)
 import intl2 from "intl" /* 1113 */;
 import UserSettings from "UserSettings" /* 5131 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;
-import GoLiveNotificationUtils from "GoLiveNotificationUtils" /* 18139 */;
+import GoLiveNotificationUtils from "GoLiveNotificationUtils" /* 18141 */;
 import SettingBuilders from "SettingBuilders" /* 12406 */;
 import size from "module_2" /* 2 */;
 

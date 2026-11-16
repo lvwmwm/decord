@@ -1,7 +1,7 @@
 // Module ID: 14749
 // Function ID: 14750
 // Name: SearchRecentMessageStore
-// Dependencies: [6374, 504, 572, 2]
+// Dependencies: [6364, 504, 572, 2]
 
 // Module 14749 (SearchRecentMessageStore)
 import get_initializedDefault from "get initialized" /* 504 */;

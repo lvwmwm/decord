@@ -1,11 +1,11 @@
 // Module ID: 17763
 // Function ID: 17764
 // Name: VideoQuestModalContentCompleted
-// Dependencies: [19, 17, 21, 5306, 575, 17737, 17732, 10146, 17761, 17728, 10020, 10131, 1655, 5939, 8829, 10230, 10156, 15270, 17699, 11253, 7994, 7415, 6337, 5929, 1113, 17753, 17754, 5936, 17723, 7428, 11095, 5341, 6020, 12289, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 17737, 17732, 10146, 17761, 17728, 10020, 10131, 1655, 5929, 8829, 10230, 10156, 15270, 17699, 11253, 7994, 7415, 6327, 5919, 1113, 17753, 17754, 5926, 17723, 7428, 11095, 6957, 6010, 12289, 2]
 
 // Module 17763 (VideoQuestModalContentCompleted)
 import nativeDefault from "native" /* 575 */;
-import QuestTypes from "QuestTypes" /* 5341 */;
+import QuestTypes from "QuestTypes" /* 6957 */;
 import AssetUtils from "AssetUtils" /* 10146 */;
 import QuestCopyUtils from "QuestCopyUtils" /* 10156 */;
 import showShareActionSheet2 from "showShareActionSheet" /* 10230 */;

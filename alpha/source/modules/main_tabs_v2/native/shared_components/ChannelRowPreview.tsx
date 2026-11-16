@@ -1,14 +1,14 @@
 // Module ID: 11045
 // Function ID: 11046
 // Name: ChannelRowPreview
-// Dependencies: [19, 17, 5248, 21, 8085, 11046, 10856, 11048, 6029, 10737, 9102, 9104, 5944, 11024, 11050, 6061, 11055, 11064, 5547, 5306, 575, 5902, 5131, 9159, 11065, 11069, 9163, 504, 2]
+// Dependencies: [19, 17, 5248, 21, 8085, 11046, 10856, 11048, 6019, 10737, 9102, 9104, 5934, 11024, 11050, 6051, 11055, 11064, 5537, 5306, 575, 5892, 5131, 9159, 11065, 11069, 9163, 504, 2]
 
 // Module 11045 (ChannelRowPreview)
 import react_native from "react-native" /* 17 */;
 import UserSettings from "UserSettings" /* 5131 */;
 import createStyles from "createStyles" /* 5306 */;
-import useToken from "useToken" /* 5902 */;
-import LinkIcon2 from "LinkIcon" /* 6029 */;
+import useToken from "useToken" /* 5892 */;
+import LinkIcon2 from "LinkIcon" /* 6019 */;
 import ImageIcon2 from "ImageIcon" /* 8085 */;
 import PhoneCallIcon2 from "PhoneCallIcon" /* 9102 */;
 import PhoneHangUpIcon2 from "PhoneHangUpIcon" /* 9104 */;
@@ -195,7 +195,7 @@ class NativeChannelRowPreview {
       gifAutoPlay = false;
     }
     ({ textColor, gradientStyles, gradientColors } = arg0);
-    const tmp = gifAutoPlay(5547)();
+    const tmp = gifAutoPlay(5537)();
     let obj = createStyles;
     let obj2 = { seeMoreLabelColor: gifAutoPlay(575).colors.TEXT_DEFAULT };
     dependencyMap = obj.createNativeStyleProperties(obj2)(tmp);

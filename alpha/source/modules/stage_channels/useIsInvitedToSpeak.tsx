@@ -1,12 +1,12 @@
 // Module ID: 11949
 // Function ID: 11950
 // Name: useIsInvitedToSpeak
-// Dependencies: [502, 5209, 504, 6358, 2]
+// Dependencies: [502, 5209, 504, 6348, 2]
 // Exports: default
 
 // Module 11949 (useIsInvitedToSpeak)
 import get_initialized from "get initialized" /* 504 */;
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 6358 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 6348 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
 import size from "module_2" /* 2 */;

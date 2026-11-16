@@ -1,14 +1,14 @@
-// Module ID: 18546
-// Function ID: 18547
+// Module ID: 18548
+// Function ID: 18549
 // Name: SettingsSecureFramesVerificationsScreen
-// Dependencies: [19, 17, 1388, 21, 5306, 10627, 7443, 1113, 7428, 7549, 5929, 7812, 1502, 504, 5372, 9051, 18542, 7888, 2]
+// Dependencies: [19, 17, 1388, 21, 5306, 10627, 7443, 1113, 7428, 7549, 5919, 7812, 1502, 504, 5362, 9051, 18544, 7888, 2]
 // Exports: default
 
-// Module 18546 (SettingsSecureFramesVerificationsScreen)
+// Module 18548 (SettingsSecureFramesVerificationsScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import SecureFramesUtils from "SecureFramesUtils" /* 10627 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;
@@ -76,10 +76,10 @@ function ClearVerificationsListFooter(userId) {
   }, items);
   const TableRow = userId(7443).TableRow;
   ({ variant: "body-md/semibold", color: "text-feedback-critical", children: intl.string(userId(1113).t["2xL5lu"]) });
-  const Text = userId(5929).Text;
+  const Text = userId(5919).Text;
   intl = userId(1113).intl;
   ({ variant: "body-xs/medium", color: "text-subtle", children: intl2.string(userId(1113).t.kgAfXN) });
-  const Text2 = userId(5929).Text;
+  const Text2 = userId(5919).Text;
   intl2 = userId(1113).intl;
   return <TableRow label={null} subLabel={null} onPress={callback} start end />;
 }
@@ -101,7 +101,7 @@ export default function SettingsSecureFramesVerificationsScreen() {
   let items = [UserStore];
   const obj3 = userId(504);
   const stateFromStores = obj3.useStateFromStores(items, () => UserStore.getUser(userId));
-  const obj4 = navigation(5372);
+  const obj4 = navigation(5362);
   dependencyMap = obj4.getFormattedName(stateFromStores, false);
   const layoutEffect = secureFramesUserVerifiedKeys.useLayoutEffect(() => {
     let intl;
@@ -117,7 +117,7 @@ export default function SettingsSecureFramesVerificationsScreen() {
     intl = intl3.intl;
     setOptions(obj);
   });
-  const obj5 = userId(18542);
+  const obj5 = userId(18544);
   secureFramesUserVerifiedKeys = obj5.useSecureFramesUserVerifiedKeys(userId);
   const items1 = [userId, secureFramesUserVerifiedKeys];
   const items2 = [navigation, secureFramesUserVerifiedKeys];

@@ -1,7 +1,7 @@
 // Module ID: 10070
 // Function ID: 10071
 // Name: PerLetterEffect
-// Dependencies: [19, 17, 21, 5306, 10071, 10072, 5929, 2]
+// Dependencies: [19, 17, 21, 5306, 10071, 10072, 5919, 2]
 // Exports: default
 
 // Module 10070 (PerLetterEffect)
@@ -66,7 +66,7 @@ export default function PerLetterEffect(name) {
     });
   }, items);
   obj2 = { textBreakStrategy: "simple", accessibilityLabel, style: items2, children: memo };
-  Text = name(5929).Text;
+  Text = name(5919).Text;
   const merged = Object.assign(textProps);
   accessibilityLabel = textProps.accessibilityLabel;
   const tmp4 = closure_4;

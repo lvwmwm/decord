@@ -1,10 +1,10 @@
-// Module ID: 17953
-// Function ID: 17954
+// Module ID: 17955
+// Function ID: 17956
 // Name: OfficialMessageStyleSetting
 // Dependencies: [19, 5307, 9202, 504, 16889, 1113, 12406, 2]
 // Exports: onOfficialMessageStyleSettingValueChange, useOfficialMessageStyleSettingOptions, useOfficialMessageStyleSettingValue
 
-// Module 17953 (OfficialMessageStyleSetting)
+// Module 17955 (OfficialMessageStyleSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl5 from "intl" /* 1113 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;

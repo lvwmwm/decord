@@ -1,10 +1,10 @@
-// Module ID: 19017
-// Function ID: 19018
+// Module ID: 19019
+// Function ID: 19020
 // Name: InterestGuildJoinButton
-// Dependencies: [5, 32, 19, 17, 5157, 21, 5306, 575, 504, 14887, 5352, 8615, 19018, 1113, 2569, 5936, 2]
+// Dependencies: [5, 32, 19, 17, 5157, 21, 5306, 575, 504, 14887, 5342, 8615, 19020, 1113, 2569, 5926, 2]
 // Exports: default
 
-// Module 19017 (InterestGuildJoinButton)
+// Module 19019 (InterestGuildJoinButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -147,7 +147,7 @@ export default function InterestGuildJoinButton(guildId) {
   if (currentUserGuildJoinRequest != null) {
     applicationStatus = currentUserGuildJoinRequest.applicationStatus;
   }
-  const tmp7 = applicationStatus === guildId(5352).GuildJoinRequestApplicationStatuses.SUBMITTED;
+  const tmp7 = applicationStatus === guildId(5342).GuildJoinRequestApplicationStatuses.SUBMITTED;
   _slicedToArray = tmp7;
   [loading, closure_6] = loading.useState(false);
   closure_7 = reactDefault();
@@ -177,7 +177,7 @@ export default function InterestGuildJoinButton(guildId) {
   }
   let str = "sm";
   const obj6 = { style: button, children: obj(Button, obj7) };
-  Button = tmp2(5936).Button;
+  Button = tmp2(5926).Button;
   if (fullWidth) {
     str = "lg";
   }

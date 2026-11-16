@@ -1,11 +1,11 @@
 // Module ID: 9251
 // Function ID: 9252
 // Name: NewThreadSystemMessage
-// Dependencies: [5155, 5248, 1388, 9188, 1113, 9190, 5954, 9192, 2]
+// Dependencies: [5155, 5248, 1388, 9188, 1113, 9190, 5944, 9192, 2]
 // Exports: createNewThreadSystemMessage
 
 // Module 9251 (NewThreadSystemMessage)
-import useChannelName from "useChannelName" /* 5954 */;
+import useChannelName from "useChannelName" /* 5944 */;
 import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 9188 */;
 import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 9190 */;
 import ChannelStore from "ChannelStore" /* 5155 */;

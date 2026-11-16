@@ -1,7 +1,7 @@
 // Module ID: 12646
 // Function ID: 12647
 // Name: ChannelPinActionCreators
-// Dependencies: [5, 12647, 1072, 8864, 1285, 6757, 1113, 6268, 572, 2]
+// Dependencies: [5, 12647, 1072, 8864, 1285, 6747, 1113, 6258, 572, 2]
 
 // Module 12646 (ChannelPinActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;

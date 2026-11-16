@@ -1,7 +1,7 @@
 // Module ID: 14196
 // Function ID: 14197
 // Name: Chat
-// Dependencies: [19, 5307, 21, 5306, 14197, 5598, 14203, 14204, 504, 11883, 2]
+// Dependencies: [19, 5307, 21, 5306, 14197, 5588, 14203, 14204, 504, 11883, 2]
 // Exports: default
 
 // Module 14196 (Chat)
@@ -32,7 +32,7 @@ function DCDChatList() {
   }, []);
   const callback = react.useCallback((nativeEvent) => navigationTTIContentPainted(nativeEvent.nativeEvent), items);
   const obj2 = { gesture: memo, children: closure_5(tmp5, obj3) };
-  const GestureDetector = navigationTTIContentPainted(5598).GestureDetector;
+  const GestureDetector = navigationTTIContentPainted(5588).GestureDetector;
   obj3 = { style: tmp.chatList, floatingChatInputEnabled: true, onContentPaintStateChange: callback, children: closure_5(navigationTTIContentPainted(14204).TTIFirstContentfulPaint, { label: "chat_list_android" }) };
   tmp5 = ChatListNativeComponentDefault;
   return closure_5(GestureDetector, obj2);

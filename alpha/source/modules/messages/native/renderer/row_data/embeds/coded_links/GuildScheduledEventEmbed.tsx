@@ -1,7 +1,7 @@
 // Module ID: 15563
 // Function ID: 15564
 // Name: GuildScheduledEventEmbed
-// Dependencies: [5, 32, 17, 7029, 5173, 5155, 5177, 5248, 1388, 11891, 5161, 8842, 6057, 9170, 8655, 7985, 7980, 7972, 15564, 1113, 9173, 12626, 9163, 575, 15566, 7975, 5954, 8417, 7969, 15567, 7970, 5169, 7976, 7977, 2]
+// Dependencies: [5, 32, 17, 7029, 5173, 5155, 5177, 5248, 1388, 11891, 5161, 8842, 6047, 9170, 8655, 7985, 7980, 7972, 15564, 1113, 9173, 12626, 9163, 575, 15566, 7975, 5944, 8417, 7969, 15567, 7970, 5169, 7976, 7977, 2]
 // Exports: createGuildScheduledEventInviteEmbed, createGuildScheduledEventLinkEmbed
 
 // Module 15563 (GuildScheduledEventEmbed)
@@ -10,7 +10,7 @@ import intl5 from "intl" /* 1113 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 5161 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 5169 */;
 import GuildRecord from "GuildRecord" /* 5173 */;
-import useChannelName from "useChannelName" /* 5954 */;
+import useChannelName from "useChannelName" /* 5944 */;
 import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 7969 */;
 import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 7970 */;
 import ScheduleUtils from "ScheduleUtils" /* 7972 */;
@@ -32,7 +32,7 @@ import ChannelStore from "ChannelStore" /* 5155 */;
 import GuildStore from "GuildStore" /* 5177 */;
 import RelationshipStore from "RelationshipStore" /* 5248 */;
 import UserStore from "UserStore" /* 1388 */;
-import MarkupUtils from "MarkupUtils" /* 6057 */;
+import MarkupUtils from "MarkupUtils" /* 6047 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, closure_1, importDefault;

@@ -1,21 +1,21 @@
 // Module ID: 8634
 // Function ID: 8635
 // Name: ObscuredMediaUtils
-// Dependencies: [32, 5932, 5155, 6372, 5248, 1388, 8635, 8637, 8638, 1255, 8640, 8644, 2119, 1406, 1196, 5952, 2]
+// Dependencies: [32, 5922, 5155, 6362, 5248, 1388, 8635, 8637, 8638, 1255, 8640, 8644, 2119, 1406, 1196, 5942, 2]
 // Exports: getEnabledHarmTypesBitmaskForChannelType, getMediaObscuredReasonFromBitmask, getUnscannedMediaIds, isEligibleForScanning, isMediaObscuredForHarmTypes, messageHasObscurableMedia, shouldRedactForSettingValue
 
 // Module 8634 (ObscuredMediaUtils)
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
 import FlagUtils from "FlagUtils" /* 1406 */;
-import isForwardMessage from "isForwardMessage" /* 5952 */;
+import isForwardMessage from "isForwardMessage" /* 5942 */;
 import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 8637 */;
 import HarmTypeConfiguration from "HarmTypeConfiguration" /* 8638 */;
 import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 8640 */;
 import findComponentMediaDefault from "findComponentMedia" /* 8644 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import DevSettingsStore from "DevSettingsStore" /* 5932 */;
+import DevSettingsStore from "DevSettingsStore" /* 5922 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
-import MessageStore from "MessageStore" /* 6372 */;
+import MessageStore from "MessageStore" /* 6362 */;
 import RelationshipStore from "RelationshipStore" /* 5248 */;
 import UserStore from "UserStore" /* 1388 */;
 import ExplicitMediaStore from "ExplicitMediaStore" /* 8635 */;
@@ -25,7 +25,7 @@ const require = globalThis.__r;
 const isForwardMessageDefault = isForwardMessage;
 let _require;
 
-const f96404 = (isEligible) => {
+const f96417 = (isEligible) => {
   let tmp = null == isEligible.isEligible;
   if (!tmp) {
     isEligible = isEligible.isEligible;
@@ -37,7 +37,7 @@ const f96404 = (isEligible) => {
   }
   return tmp;
 };
-const f96405 = (harmType) => {
+const f96418 = (harmType) => {
   const tmp = harmType.getUserSettingsWithDefaults()[GUILD];
   let hasItem = null != tmp;
   if (hasItem) {
@@ -50,10 +50,10 @@ const f96405 = (harmType) => {
   }
   return harmType;
 };
-const f96409 = (item) => EXPLICIT(closure_1_2[8]).CONTENT_SCAN_TYPE_REGISTRY[item].obscureReason;
+const f96422 = (item) => EXPLICIT(closure_1_2[8]).CONTENT_SCAN_TYPE_REGISTRY[item].obscureReason;
 function getEligibleHarmTypesConfigsForContext() {
   const values = Object.values(HarmTypeConfiguration.CONTENT_SCAN_TYPE_REGISTRY);
-  return values.filter(f96404);
+  return values.filter(f96417);
 }
 function getEnabledHarmTypesForMessage(message) {
   const channelId = getChannelIdAndAuthorIdFromMessage(message).channelId;
@@ -81,11 +81,11 @@ function getEnabledHarmTypesForChannelAndAuthorId(channelId, id) {
         _require = tmp10;
         const _Object = Object;
         const values = Object.values(require("HarmTypeConfiguration").CONTENT_SCAN_TYPE_REGISTRY);
-        const found = values.filter(f96404);
+        const found = values.filter(f96417);
         if (null == tmp10) {
           NONE = tmp12(8638).ContentHarmTypeBitMask.NONE;
         } else {
-          const mapped = found.map(f96405);
+          const mapped = found.map(f96418);
           NONE = contentHarmTypesToFlags(mapped.filter(tmp12(1255).isNotNullish));
         }
       }
@@ -113,7 +113,7 @@ function messageHasObscurableMediaForBitmask(firstMessage, EXPLICIT) {
               items = [];
             } else {
               const found = arr.filter((item) => closure_2_17(item, obj));
-              items = found.map(f96409);
+              items = found.map(f96422);
             }
           }
           return items.length > 0;
@@ -137,7 +137,7 @@ function messageHasObscurableMediaForBitmask(firstMessage, EXPLICIT) {
                 items = [];
               } else {
                 const found = arr.filter((item) => closure_2_17(item, obj));
-                items = found.map(f96409);
+                items = found.map(f96422);
               }
             }
             return items.length > 0;
@@ -621,11 +621,11 @@ export function getEnabledHarmTypesBitmaskForChannelType(GUILD) {
   _require = GUILD;
   let tmp = _require;
   const values = Object.values(require("HarmTypeConfiguration").CONTENT_SCAN_TYPE_REGISTRY);
-  const found = values.filter(f96404);
+  const found = values.filter(f96417);
   if (null == GUILD) {
     NONE = tmp(8638).ContentHarmTypeBitMask.NONE;
   } else {
-    const mapped = found.map(f96405);
+    const mapped = found.map(f96418);
     NONE = contentHarmTypesToFlags(mapped.filter(tmp(1255).isNotNullish));
   }
   return NONE;
@@ -713,7 +713,7 @@ export function getMediaObscuredReasonFromBitmask(arg0, enabledContentHarmTypeFl
       items = [];
     } else {
       const found = arr.filter((item) => closure_2_17(item, obj));
-      items = found.map(f96409);
+      items = found.map(f96422);
     }
     return items;
   }

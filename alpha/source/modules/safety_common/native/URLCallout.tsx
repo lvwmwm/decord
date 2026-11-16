@@ -1,13 +1,13 @@
 // Module ID: 15951
 // Function ID: 15952
 // Name: URLCallout
-// Dependencies: [19, 17, 21, 5306, 575, 15952, 5929, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 15952, 5919, 2]
 // Exports: URLCallout
 
 // Module 15951 (URLCallout)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import SharedStateUtils from "SharedStateUtils" /* 15952 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

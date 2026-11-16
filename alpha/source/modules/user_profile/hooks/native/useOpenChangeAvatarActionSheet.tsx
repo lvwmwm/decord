@@ -1,12 +1,12 @@
 // Module ID: 17165
 // Function ID: 17166
 // Name: useOpenChangeAvatarActionSheet
-// Dependencies: [19, 2174, 9396, 17166, 5552, 17167, 2121, 17079, 17079, 9394, 8541, 2]
+// Dependencies: [19, 2174, 9396, 17166, 5542, 17167, 2121, 17079, 17079, 9394, 8541, 2]
 // Exports: default
 
 // Module 17165 (useOpenChangeAvatarActionSheet)
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

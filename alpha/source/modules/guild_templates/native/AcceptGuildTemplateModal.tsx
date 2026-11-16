@@ -1,13 +1,13 @@
 // Module ID: 14046
 // Function ID: 14047
 // Name: AcceptGuildTemplateModal
-// Dependencies: [5, 32, 19, 8461, 1072, 21, 5306, 5892, 504, 7075, 14047, 7415, 14048, 8879, 14058, 14045, 7493, 7490, 2]
+// Dependencies: [5, 32, 19, 8461, 1072, 21, 5306, 5882, 504, 7075, 14047, 7415, 14048, 8879, 14058, 14045, 7493, 7490, 2]
 // Exports: default
 
 // Module 14046 (AcceptGuildTemplateModal)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import NavigatorConstants from "NavigatorConstants" /* 5892 */;
+import NavigatorConstants from "NavigatorConstants" /* 5882 */;
 import NavigatorHeader from "NavigatorHeader" /* 7493 */;
 import AcceptGuildTemplateActionCreatorsDefault from "AcceptGuildTemplateActionCreators" /* 14058 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

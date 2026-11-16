@@ -1,7 +1,7 @@
 // Module ID: 11849
 // Function ID: 11850
 // Name: AddImageDescriptionModal
-// Dependencies: [32, 19, 17, 8725, 8872, 11850, 21, 5306, 575, 504, 1496, 1502, 5913, 11851, 9051, 1113, 11153, 11848, 7859, 10907, 2]
+// Dependencies: [32, 19, 17, 8725, 8872, 11850, 21, 5306, 575, 504, 1496, 1502, 5903, 11851, 9051, 1113, 11153, 11848, 7859, 10907, 2]
 // Exports: default
 
 // Module 11849 (AddImageDescriptionModal)

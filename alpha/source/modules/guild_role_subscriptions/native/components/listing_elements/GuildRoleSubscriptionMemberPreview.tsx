@@ -1,10 +1,10 @@
-// Module ID: 17856
-// Function ID: 17857
+// Module ID: 17858
+// Function ID: 17859
 // Name: GuildRoleSubscriptionMemberPreview
-// Dependencies: [19, 17, 1388, 21, 5306, 575, 1113, 504, 6351, 1414, 7942, 6020, 5929, 1090, 1187, 7959, 2]
+// Dependencies: [19, 17, 1388, 21, 5306, 575, 1113, 504, 6341, 1414, 7942, 6010, 5919, 1090, 1187, 7959, 2]
 // Exports: GuildRoleSubscriptionMemberPreview
 
-// Module 17856 (GuildRoleSubscriptionMemberPreview)
+// Module 17858 (GuildRoleSubscriptionMemberPreview)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -12,9 +12,9 @@ import utils_ColorUtilsAll from "utils/ColorUtils" /* 1090 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import FastImageDefault from "FastImage" /* 6020 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6351 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6341 */;
 import RoleIconUtils from "RoleIconUtils" /* 7942 */;
 import RoleIconDefault from "RoleIcon" /* 7959 */;
 import react from "react" /* 19 */;
@@ -88,7 +88,7 @@ export function GuildRoleSubscriptionMemberPreview(content) {
     const obj5 = { style: tmp3.contextRow, children: items3 };
     const obj6 = { variant: "body-md/semibold", color: "interactive-text-active", style: obj7, children: tmp8 };
     obj7 = { color: obj11.int2hex(color) };
-    const Text = tmp4(5929).Text;
+    const Text = tmp4(5919).Text;
     obj11 = utils_ColorUtilsAll;
     items3 = [metroRequire(Text, obj6), , , ];
     let tmp12Result = null;

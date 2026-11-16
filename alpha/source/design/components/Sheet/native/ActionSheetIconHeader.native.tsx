@@ -1,12 +1,12 @@
 // Module ID: 11898
 // Function ID: 11899
 // Name: ActionSheetIconHeader
-// Dependencies: [19, 17, 21, 5306, 5929, 2]
+// Dependencies: [19, 17, 21, 5306, 5919, 2]
 // Exports: ActionSheetIconHeader
 
 // Module 11898 (ActionSheetIconHeader)
 import react_native from "react-native" /* 17 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;

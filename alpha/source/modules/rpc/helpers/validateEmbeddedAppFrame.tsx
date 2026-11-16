@@ -1,13 +1,13 @@
 // Module ID: 16915
 // Function ID: 16916
 // Name: validateEmbeddedAppFrame
-// Dependencies: [15974, 1072, 7296, 5977, 7339, 12869, 2151, 7303, 7297, 2]
+// Dependencies: [15974, 1072, 7296, 5967, 7339, 12869, 2151, 7303, 7297, 2]
 // Exports: tryValidateEmbeddedAppFrame, validateEmbeddedAppFrameOnAnySurface
 
 // Module 16915 (validateEmbeddedAppFrame)
 import Constants from "Constants" /* 1072 */;
 import EmbeddedSurfaceUtils from "EmbeddedSurfaceUtils" /* 2151 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5977 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5967 */;
 import getSocketFrameDefault from "getSocketFrame" /* 7296 */;
 import isPostMessageSocketDefault from "isPostMessageSocket" /* 7297 */;
 import RPCErrorDefault from "RPCError" /* 7303 */;

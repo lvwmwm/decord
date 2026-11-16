@@ -1,7 +1,7 @@
 // Module ID: 12491
 // Function ID: 12492
 // Name: UserSummaryItem
-// Dependencies: [19, 17, 5218, 21, 5306, 575, 1187, 504, 1414, 6351, 1113, 5929, 2]
+// Dependencies: [19, 17, 5218, 21, 5306, 575, 1187, 504, 1414, 6341, 1113, 5919, 2]
 // Exports: default
 
 // Module 12491 (UserSummaryItem)

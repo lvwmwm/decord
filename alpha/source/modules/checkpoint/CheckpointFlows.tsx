@@ -1,12 +1,12 @@
 // Module ID: 14255
 // Function ID: 14256
 // Name: CheckpointFlows
-// Dependencies: [6745, 6747, 14256, 14257, 2]
+// Dependencies: [6735, 6737, 14256, 14257, 2]
 // Exports: getCheckpointFlow, getCheckpointReplayRoute, getCheckpointRoutes, hasCheckpointSummaryRoute
 
 // Module 14255 (CheckpointFlows)
-import CheckpointNavigation from "CheckpointNavigation" /* 6745 */;
-import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6747 */;
+import CheckpointNavigation from "CheckpointNavigation" /* 6735 */;
+import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6737 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -43,7 +43,7 @@ function getAdjacentCheckpointRoute(arg0) {
     } else {
       let flag2 = isCharacterCreatorEnabled;
       if (!flag2) {
-        let result = item === tmp(6745).CheckpointRoute.INTRODUCTION;
+        let result = item === tmp(6735).CheckpointRoute.INTRODUCTION;
         if (!result) {
           const tmpResult = CheckpointNavigation;
           result = tmpResult.isCheckpointCustomizationRoute(item);
@@ -165,7 +165,7 @@ export function getCheckpointRoutes(flow) {
     } else {
       let flag2 = isCharacterCreatorEnabled;
       if (!flag2) {
-        let result = item === tmp(6745).CheckpointRoute.INTRODUCTION;
+        let result = item === tmp(6735).CheckpointRoute.INTRODUCTION;
         if (!result) {
           const tmpResult = CheckpointNavigation;
           result = tmpResult.isCheckpointCustomizationRoute(item);

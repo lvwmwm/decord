@@ -1,15 +1,15 @@
 // Module ID: 11353
 // Function ID: 11354
 // Name: GIFPickerCategoryView
-// Dependencies: [19, 17, 1072, 21, 5306, 575, 1113, 8181, 6020, 11354, 10183, 5929, 2]
+// Dependencies: [19, 17, 1072, 21, 5306, 575, 1113, 8181, 6010, 11354, 10183, 5919, 2]
 // Exports: default
 
 // Module 11353 (GIFPickerCategoryView)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import reactDefault from "react" /* 8181 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

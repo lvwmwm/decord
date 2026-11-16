@@ -1,9 +1,9 @@
-// Module ID: 18599
-// Function ID: 18600
+// Module ID: 18601
+// Function ID: 18602
 // Name: ParentalControlsUseDataForQuestsSetting
 // Dependencies: [8740, 9202, 17347, 17351, 1113, 2701, 12406, 2]
 
-// Module 18599 (ParentalControlsUseDataForQuestsSetting)
+// Module 18601 (ParentalControlsUseDataForQuestsSetting)
 import intl2 from "intl" /* 1113 */;
 import _modDef2701 from "module_2701" /* 2701 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;

@@ -1,7 +1,7 @@
 // Module ID: 15493
 // Function ID: 15494
 // Name: DiscountsMegaphoneSpotIllustration
-// Dependencies: [19, 21, 15494, 15495, 15496, 7755, 6020, 2]
+// Dependencies: [19, 21, 15494, 15495, 15496, 7755, 6010, 2]
 // Exports: DiscountsMegaphoneSpotIllustration
 
 // Module 15493 (DiscountsMegaphoneSpotIllustration)

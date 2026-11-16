@@ -1,7 +1,7 @@
 // Module ID: 14796
 // Function ID: 14797
 // Name: AutocompleteWrapper
-// Dependencies: [32, 19, 17, 9007, 6969, 6800, 7010, 1072, 6345, 11234, 6346, 11396, 1391, 21, 9379, 7587, 11422, 5306, 1380, 575, 14797, 1496, 5913, 5892, 504, 5902, 6061, 14804, 14805, 5131, 7618, 11395, 14806, 11233, 7072, 9544, 14807, 8724, 14602, 2119, 8787, 1628, 11621, 6067, 10255, 10496, 10256, 14808, 14809, 11170, 9374, 14640, 1655, 14810, 5985, 14817, 5929, 1113, 7888, 8110, 14818, 14819, 2]
+// Dependencies: [32, 19, 17, 9007, 6969, 6790, 7010, 1072, 6335, 11234, 6336, 11396, 1391, 21, 9379, 7587, 11422, 5306, 1380, 575, 14797, 1496, 5903, 5882, 504, 5892, 6051, 14804, 14805, 5131, 7618, 11395, 14806, 11233, 7072, 9544, 14807, 8724, 14602, 2119, 8787, 1628, 11621, 6057, 10255, 10496, 10256, 14808, 14809, 11170, 9374, 14640, 1655, 14810, 5975, 14817, 5919, 1113, 7888, 8110, 14818, 14819, 2]
 
 // Module 14796 (AutocompleteWrapper)
 import nativeDefault from "native" /* 575 */;
@@ -9,9 +9,9 @@ import PlatformUtils from "PlatformUtils" /* 1380 */;
 import EmojiConstants from "EmojiConstants" /* 1391 */;
 import KeyboardTypes from "KeyboardTypes" /* 1628 */;
 import Server from "Server" /* 2119 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5985 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6067 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6345 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5975 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6057 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6335 */;
 import utils_AutocompleteUtilsDefault from "utils/AutocompleteUtils" /* 7072 */;
 import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7587 */;
 import GameAutocompleteUtils from "GameAutocompleteUtils" /* 9379 */;
@@ -28,11 +28,11 @@ import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ApplicationCommandStore from "ApplicationCommandStore" /* 9007 */;
 import EmojiStore from "EmojiStore" /* 6969 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6800 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6790 */;
 import StickersStore from "StickersStore" /* 7010 */;
 import Constants from "Constants" /* 1072 */;
 import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 11234 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6346 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6336 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
@@ -168,7 +168,7 @@ class ACWrapper {
     let tmp38;
     let tmp46;
     let tmp97Result4;
-    const f110112 = (arg0) => {
+    const f110126 = (arg0) => {
       closure_0 = arg0;
       if (arg0 > 0) {
         let tmp = commandsDisabled;
@@ -609,7 +609,7 @@ class ACWrapper {
       let tmp35 = tmp34[1](autocompleteType);
       tmp33(null);
     }
-    const items7 = [first2, obj5.useCallback(f110112, [])];
+    const items7 = [first2, obj5.useCallback(f110126, [])];
     [tmp38, c42] = keyboardType(items7, 2);
     keyboardType(items7, 2);
     const tmp11Result9 = keyboardType(obj5.useState(null), 2);
@@ -621,7 +621,7 @@ class ACWrapper {
       tmp11Result10[1](autocompleteType);
       tmp41(null);
     }
-    const items8 = [first3, obj5.useCallback(f110112, [])];
+    const items8 = [first3, obj5.useCallback(f110126, [])];
     [tmp46, c43] = keyboardType(items8, 2);
     keyboardType(items8, 2);
     const tmp11Result12 = keyboardType(obj5.useState(null), 2);
@@ -633,7 +633,7 @@ class ACWrapper {
       let tmp51 = tmp11Result13[1](autocompleteType);
       tmp49(null);
     }
-    const items9 = [first4, obj5.useCallback(f110112, [])];
+    const items9 = [first4, obj5.useCallback(f110126, [])];
     const tmp11Result14 = keyboardType(items9, 2);
     first5 = tmp11Result14[0];
     closure_45 = tmp11Result14[1];

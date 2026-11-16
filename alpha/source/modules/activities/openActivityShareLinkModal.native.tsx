@@ -1,12 +1,12 @@
 // Module ID: 16947
 // Function ID: 16948
 // Name: openActivityShareLinkModal
-// Dependencies: [10241, 16948, 2121, 6848, 2]
+// Dependencies: [10241, 16948, 2121, 6838, 2]
 // Exports: closeActivityShareLinkModal, openActivityShareLinkModal
 
 // Module 16947 (openActivityShareLinkModal)
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import showSearchableDestinationListModalDefault from "showSearchableDestinationListModal" /* 10241 */;
 import size from "module_2" /* 2 */;
 

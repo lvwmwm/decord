@@ -1,14 +1,14 @@
-// Module ID: 18455
-// Function ID: 18456
+// Module ID: 18457
+// Function ID: 18458
 // Name: UserSettingsDesignSystemBadge
-// Dependencies: [32, 19, 17, 21, 5306, 575, 8092, 9521, 10119, 10121, 10123, 10125, 10183, 6337, 5929, 7459, 7745, 7747, 7619, 7954, 7445, 1187, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 575, 8092, 9521, 10119, 10121, 10123, 10125, 10183, 6327, 5919, 7459, 7745, 7747, 7619, 7954, 7445, 1187, 2]
 // Exports: default
 
-// Module 18455 (UserSettingsDesignSystemBadge)
+// Module 18457 (UserSettingsDesignSystemBadge)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import Stack_Stack from "Stack/Stack" /* 6337 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import Stack_Stack from "Stack/Stack" /* 6327 */;
 import Card_Card from "Card/Card" /* 7445 */;
 import Badge_Badge from "Badge/Badge" /* 7459 */;
 import TableSwitchRow from "TableSwitchRow" /* 7954 */;

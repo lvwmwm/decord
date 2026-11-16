@@ -1,7 +1,7 @@
 // Module ID: 15679
 // Function ID: 15680
 // Name: GuildInviteRow
-// Dependencies: [19, 17, 15675, 8842, 21, 15674, 12567, 7720, 5929, 1113, 7443, 2]
+// Dependencies: [19, 17, 15675, 8842, 21, 15674, 12567, 7720, 5919, 1113, 7443, 2]
 
 // Module 15679 (GuildInviteRow)
 import react_native from "react-native" /* 17 */;

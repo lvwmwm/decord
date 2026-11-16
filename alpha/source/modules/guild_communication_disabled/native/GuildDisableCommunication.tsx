@@ -1,17 +1,17 @@
 // Module ID: 14142
 // Function ID: 14143
 // Name: GuildDisableCommunication
-// Dependencies: [5, 32, 19, 17, 5220, 1072, 21, 1113, 5306, 575, 5913, 11851, 5899, 1256, 14143, 6015, 6351, 5929, 7745, 7747, 7859, 5936, 2]
+// Dependencies: [5, 32, 19, 17, 5220, 1072, 21, 1113, 5306, 575, 5903, 11851, 5889, 1256, 14143, 6005, 6341, 5919, 7745, 7747, 7859, 5926, 2]
 
 // Module 14142 (GuildDisableCommunication)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl6 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import useMountEffectDefault from "useMountEffect" /* 5899 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5913 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import components_Button_Button from "components/Button/Button" /* 5936 */;
+import useMountEffectDefault from "useMountEffect" /* 5889 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5903 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
 import TableRadioGroup2 from "TableRadioGroup" /* 7745 */;
 import TableRadioRow2 from "TableRadioRow" /* 7747 */;
 import TextArea2 from "TextArea" /* 7859 */;

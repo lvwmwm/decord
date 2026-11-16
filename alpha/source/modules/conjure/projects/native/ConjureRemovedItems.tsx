@@ -1,16 +1,16 @@
 // Module ID: 13209
 // Function ID: 13210
 // Name: ConjureRemovedItems
-// Dependencies: [19, 17, 21, 5306, 575, 1113, 10870, 8101, 12682, 8072, 6337, 5929, 5378, 7734, 4131, 7746, 7733, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 1113, 10870, 8101, 12682, 8072, 6327, 5919, 5368, 7734, 4131, 7746, 7733, 2]
 // Exports: ConjureRemoveEverythingField, default, formatWithAppTag
 
 // Module 13209 (ConjureRemovedItems)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef4131 from "module_4131" /* 4131 */;
-import react_native from "react-native" /* 5378 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import Stack_Stack from "Stack/Stack" /* 6337 */;
+import react_native from "react-native" /* 5368 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import Stack_Stack from "Stack/Stack" /* 6327 */;
 import TableCheckboxRow2 from "TableCheckboxRow" /* 7733 */;
 import FormCheckbox from "FormCheckbox" /* 7734 */;
 import TableRowGroup2 from "TableRowGroup" /* 7746 */;
@@ -109,7 +109,7 @@ function OptionalItemRow(arg0) {
   }
   obj3 = { direction: "horizontal", spacing: 8, align: "center", children: items };
   const obj4 = { kind: item.kind };
-  Stack = tmp2(6337).Stack;
+  Stack = tmp2(6327).Stack;
   items = [metroRequire(ItemIcon, obj4), , ];
   const obj5 = { variant: "body-sm/medium", color: "text-subtle", style: tmp.optionalLabel, children: item.label };
   items[1] = metroRequire(Text_Text.Text, obj5);

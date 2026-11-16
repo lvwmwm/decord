@@ -1,7 +1,7 @@
 // Module ID: 14614
 // Function ID: 14615
 // Name: ForumPostUsername
-// Dependencies: [19, 17, 5307, 14610, 21, 5306, 9107, 5165, 12421, 14615, 504, 9189, 1187, 5929, 2]
+// Dependencies: [19, 17, 5307, 14610, 21, 5306, 9107, 5165, 12421, 14615, 504, 9189, 1187, 5919, 2]
 // Exports: ForumPostAuthor, ForumPostMessageAuthor
 
 // Module 14614 (ForumPostUsername)
@@ -73,7 +73,7 @@ function ForumPostUsername(arg0) {
       }
       items3 = [tmp24, ];
       let tmp26;
-      const Text = tmp2(5929).Text;
+      const Text = tmp2(5919).Text;
       if (tmp18) {
         tmp26 = processColorStringsArray;
       }

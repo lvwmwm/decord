@@ -1,7 +1,7 @@
 // Module ID: 9725
 // Function ID: 9726
 // Name: premiumOrbsDeliveredModal
-// Dependencies: [19, 8530, 9726, 21, 6269, 9727, 2173, 11, 9762, 2]
+// Dependencies: [19, 8530, 9726, 21, 6259, 9727, 2173, 11, 9762, 2]
 // Exports: anchorOrbsPurchaseStart, openOrbsModalIfDelivered
 
 // Module 9725 (premiumOrbsDeliveredModal)
@@ -83,7 +83,7 @@ export function openOrbsModalIfDelivered() {
                 },
           isDismissable: false
         };
-        const tmp2Result = tmp2(6269);
+        const tmp2Result = tmp2(6259);
         tmp2Result.openLazy(obj2);
       }
     }

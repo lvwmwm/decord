@@ -1,13 +1,13 @@
 // Module ID: 15758
 // Function ID: 15759
 // Name: useUserProfileVoiceActivity
-// Dependencies: [6068, 5981, 8469, 10848, 504, 2]
+// Dependencies: [6058, 5971, 8469, 10848, 504, 2]
 // Exports: default, isUserProfileVoiceActivityForChannel
 
 // Module 15758 (useUserProfileVoiceActivity)
 import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 8469 */;
-import PresenceStore from "PresenceStore" /* 6068 */;
-import VoiceStateStore from "VoiceStateStore" /* 5981 */;
+import PresenceStore from "PresenceStore" /* 6058 */;
+import VoiceStateStore from "VoiceStateStore" /* 5971 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_profile/hooks/useUserProfileVoiceActivity.tsx");

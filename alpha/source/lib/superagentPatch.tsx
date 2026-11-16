@@ -1,21 +1,21 @@
-// Module ID: 20135
-// Function ID: 20136
+// Module ID: 20137
+// Function ID: 20138
 // Name: superagentPatch
-// Dependencies: [5, 5532, 1072, 1286, 20136, 1381, 1452, 572, 1285, 502, 1362, 2189, 1388, 1256, 1380, 20137, 1114, 20138, 20139, 7, 1242, 20142, 2121, 6769, 18299, 8140, 6920, 20152, 6823, 20153, 1480, 2]
+// Dependencies: [5, 5522, 1072, 1286, 20138, 1381, 1452, 572, 1285, 502, 1362, 2189, 1388, 1256, 1380, 20139, 1114, 20140, 20141, 7, 1242, 20144, 2121, 6759, 18301, 8140, 6910, 20155, 6813, 20156, 1480, 2]
 
-// Module 20135 (superagentPatch)
+// Module 20137 (superagentPatch)
 import LogAggregatorAll from "LogAggregator" /* 7 */;
 import Constants from "Constants" /* 1072 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import RequestDefault from "Request" /* 1286 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
 import UserLimitedAccessUtils from "UserLimitedAccessUtils" /* 8140 */;
-import IdGenerator from "IdGenerator" /* 20136 */;
-import getTimeZoneDefault from "getTimeZone" /* 20138 */;
-import trackHttpRequestDefault from "trackHttpRequest" /* 20139 */;
-import GuildLimitedAccessUtils from "GuildLimitedAccessUtils" /* 20152 */;
+import IdGenerator from "IdGenerator" /* 20138 */;
+import getTimeZoneDefault from "getTimeZone" /* 20140 */;
+import trackHttpRequestDefault from "trackHttpRequest" /* 20141 */;
+import GuildLimitedAccessUtils from "GuildLimitedAccessUtils" /* 20155 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ExperimentStore from "ExperimentStore" /* 5532 */;
+import ExperimentStore from "ExperimentStore" /* 5522 */;
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import Dispatcher from "Dispatcher" /* 572 */;
 import HTTPUtils_mod from "HTTPUtils" /* 1285 */;
@@ -296,7 +296,7 @@ let obj3 = {
         captcha_key = body.captcha_key;
       }
       if (captcha_key) {
-        const items = [asyncRequire(20142, dependencyMap.paths), asyncRequire(6769, dependencyMap.paths)];
+        const items = [asyncRequire(20144, dependencyMap.paths), asyncRequire(6759, dependencyMap.paths)];
         const allResult = all(items);
         const nextPromise = allResult.then((result) => {
           const iter = result[Symbol.iterator]();
@@ -351,7 +351,7 @@ let obj3 = {
           mfa = body3.mfa;
         }
         if (mfa) {
-          const promise4 = asyncRequire(18299, dependencyMap.paths);
+          const promise4 = asyncRequire(18301, dependencyMap.paths);
           const nextPromise2 = promise4.then((openMFAModal) => {
             openMFAModal.openMFAModal(closure_0.body.mfa, closure_1, closure_2);
           });
@@ -369,7 +369,7 @@ let obj3 = {
       code1 = body4.code;
     }
     if (isLimitedAccessErrorCode(statusCode, code1)) {
-      const promise3 = asyncRequire(6920, dependencyMap.paths);
+      const promise3 = asyncRequire(6910, dependencyMap.paths);
       promise3.then((result) => {
         result.default();
       });
@@ -377,14 +377,14 @@ let obj3 = {
     } else {
       const body5 = statusCode.body;
       let code2;
-      const isLimitedAccessErrorCode2 = tmp7(20152).isLimitedAccessErrorCode;
+      const isLimitedAccessErrorCode2 = tmp7(20155).isLimitedAccessErrorCode;
       const statusCode2 = statusCode.statusCode;
       GuildLimitedAccessUtils;
       if (body5 != null) {
         code2 = body5.code;
       }
       if (isLimitedAccessErrorCode2(statusCode2, code2)) {
-        const promise2 = asyncRequire(6823, dependencyMap.paths);
+        const promise2 = asyncRequire(6813, dependencyMap.paths);
         promise2.then((result) => {
           const body = closure_0.body;
           let guild_id;
@@ -406,7 +406,7 @@ let obj3 = {
           flag = code3 === AbortCodes.RESTRICTED_HOURS_ACTIVE;
         }
         if (flag) {
-          const promise = asyncRequire(20153, dependencyMap.paths);
+          const promise = asyncRequire(20156, dependencyMap.paths);
           promise.then((openRestrictedHoursModal) => {
             const result = openRestrictedHoursModal.openRestrictedHoursModal();
           });

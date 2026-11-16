@@ -39,7 +39,7 @@ export default function useIsChannelFullyOpen() {
   let tmp8;
   let tmp9;
   let translateX;
-  const f103758 = () => {
+  const f103771 = () => {
     const obj = translateX;
     if (typeof getIsChannelFullyOpen === "function") {
       let tmp2 = !tmp;
@@ -55,7 +55,7 @@ export default function useIsChannelFullyOpen() {
   const context = react.useContext(translateX(12011));
   const isInMainTabs = context.isInMainTabs;
   translateX = context.translateX;
-  [tmp4, tmp5] = _slicedToArray(react.useState(f103758), 2);
+  [tmp4, tmp5] = _slicedToArray(react.useState(f103771), 2);
   const items = [closure_6, getIsChannelFullyOpen, isInMainTabs, translateX];
   let c2;
   [tmp8, tmp9, tmp10, tmp11] = items;
@@ -68,7 +68,7 @@ export default function useIsChannelFullyOpen() {
   useIsChannelFullyOpenTsx2.__workletHash = 2274606773816;
   useIsChannelFullyOpenTsx2.__initData = tmp8;
   const items2 = [closure_7, , ];
-  const tmp3 = _slicedToArray(react.useState(f103758), 2);
+  const tmp3 = _slicedToArray(react.useState(f103771), 2);
   const useAnimatedReaction = isInMainTabs(1655).useAnimatedReaction;
   isInMainTabs(1655);
   items2[1] = isInMainTabs(1708).scheduleOnRN;

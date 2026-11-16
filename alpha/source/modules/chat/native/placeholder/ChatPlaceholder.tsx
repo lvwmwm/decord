@@ -1,7 +1,7 @@
 // Module ID: 14961
 // Function ID: 14962
 // Name: ChatPlaceholder
-// Dependencies: [19, 17, 11865, 21, 5306, 575, 1630, 5913, 1496, 7475, 1655, 14962, 14963, 14964, 2]
+// Dependencies: [19, 17, 11865, 21, 5306, 575, 1630, 5903, 1496, 7475, 1655, 14962, 14963, 14964, 2]
 
 // Module 14961 (ChatPlaceholder)
 import react_native from "react-native" /* 17 */;
@@ -47,7 +47,7 @@ const memoResult = react.memo(function ChatPlaceholder(screenIndex) {
   const rect = height(1630)();
   let sum = rect.top + rect.bottom;
   dependencyMap = sum;
-  let diff = height(5913)({ isKeyboardAwareOnAndroid: false, includeKeyboardHeight: true }).insets.bottom - rect.bottom;
+  let diff = height(5903)({ isKeyboardAwareOnAndroid: false, includeKeyboardHeight: true }).insets.bottom - rect.bottom;
   const tmp7 = height(7475)(diff);
   let obj = require("module_1655");
   let items = [closure_7, tmp2, tmp7];

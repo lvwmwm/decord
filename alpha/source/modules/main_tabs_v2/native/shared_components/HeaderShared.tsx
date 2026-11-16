@@ -1,7 +1,7 @@
 // Module ID: 9051
 // Function ID: 9052
 // Name: HeaderShared
-// Dependencies: [19, 17, 9052, 21, 5306, 575, 5902, 7494, 5929, 7428, 1380, 9053, 9058, 1630, 1503, 9060, 558, 9063, 15638, 1187, 2]
+// Dependencies: [19, 17, 9052, 21, 5306, 575, 5892, 7494, 5919, 7428, 1380, 9053, 9058, 1630, 1503, 9060, 558, 9063, 15638, 1187, 2]
 // Exports: HeaderIconButton, getDefaultChannelStackHeaderProps, getDefaultStackHeaderProps, getRenderBackImage, getRenderHeaderTextButton, getRenderModalBackImage, getRenderModalCloseImage, renderHeader
 
 // Module 9051 (HeaderShared)
@@ -9,7 +9,7 @@ import shallowEqualDefault from "shallowEqual" /* 558 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import useToken2 from "useToken" /* 5902 */;
+import useToken2 from "useToken" /* 5892 */;
 import Pressables from "Pressables" /* 7428 */;
 import react_native from "react-native" /* 9052 */;
 import PressableNavigatorModalIconDefault from "PressableNavigatorModalIcon" /* 9058 */;
@@ -33,7 +33,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp2;
-const Text_Text = tmp2(5929);
+const Text_Text = tmp2(5919);
 class GenericHeaderTitle {
   constructor(subtitleColor) {
     let children;

@@ -1,23 +1,23 @@
-// Module ID: 19019
-// Function ID: 19020
+// Module ID: 19021
+// Function ID: 19022
 // Name: WaterwheelsDiscoverCard
-// Dependencies: [32, 19, 17, 5177, 1072, 21, 575, 5306, 5169, 504, 19020, 5944, 10225, 6020, 5929, 10390, 7963, 1113, 2569, 5936, 5893, 10323, 18739, 7438, 19009, 19008, 2]
+// Dependencies: [32, 19, 17, 5177, 1072, 21, 575, 5306, 5169, 504, 19022, 5934, 10225, 6010, 5919, 10390, 7963, 1113, 2569, 5926, 5883, 10323, 18741, 7438, 19011, 19010, 2]
 // Exports: default
 
-// Module 19019 (WaterwheelsDiscoverCard)
+// Module 19021 (WaterwheelsDiscoverCard)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
 import _modDef2569 from "module_2569" /* 2569 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 5169 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import GameControllerIcon2 from "GameControllerIcon" /* 7438 */;
 import ChevronSmallRightIcon2 from "ChevronSmallRightIcon" /* 7963 */;
 import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 10225 */;
-import useChannelListWidthDefault from "useChannelListWidth" /* 18739 */;
-import entry_data_ErrorBoundary from "entry_data/ErrorBoundary" /* 19008 */;
-import WaterwheelsPostCardDefault from "WaterwheelsPostCard" /* 19009 */;
-import selectDiscoverServerAction from "selectDiscoverServerAction" /* 19020 */;
+import useChannelListWidthDefault from "useChannelListWidth" /* 18741 */;
+import entry_data_ErrorBoundary from "entry_data/ErrorBoundary" /* 19010 */;
+import WaterwheelsPostCardDefault from "WaterwheelsPostCard" /* 19011 */;
+import selectDiscoverServerAction from "selectDiscoverServerAction" /* 19022 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -86,7 +86,7 @@ function ServerIdentity(server) {
     flag = false;
   }
   const onAction = server.onAction;
-  let obj = server(5944);
+  let obj = server(5934);
   const fontScale = obj.useFontScale();
   const tmp4 = closure_16();
   const guildId = server.guildId;
@@ -117,7 +117,7 @@ function ServerIdentity(server) {
   if (null != server.iconUrl) {
     const items2 = [tmp4.icon, ];
     let iconCompact2 = flag;
-    const tmp19 = onAction(6020);
+    const tmp19 = onAction(6010);
     if (flag) {
       iconCompact2 = tmp4.iconCompact;
     }
@@ -141,7 +141,7 @@ function ServerIdentity(server) {
   const items4 = [tmp14Result4, ];
   const obj8 = { style: tmp4.identityCopy, children: items6 };
   const obj9 = { style: tmp4.nameRow, children: items5 };
-  const tmpResult2 = server(5929);
+  const tmpResult2 = server(5919);
   if (flag) {
     const obj10 = { variant: "body-sm/semibold", color: "text-strong", lineClamp: 1, style: tmp4.name, children: server.name };
     tmp14Result = tmp14(tmpResult2.Text, obj10);
@@ -170,7 +170,7 @@ function ServerIdentity(server) {
   const obj16 = { style: tmp4.dot };
   items7[0] = tmp14(closure_7, obj16);
   const obj17 = { variant: "body-xs/medium", color: "text-subtle", style: tmp4.metaText, children: intl.format(server(1113).t["LC+S+m"], obj18) };
-  const Text = tmp(5929).Text;
+  const Text = tmp(5919).Text;
   intl = tmp(1113).intl;
   obj18 = { membersOnline: server.online };
   items7[1] = tmp14(Text, obj17);
@@ -183,7 +183,7 @@ function ServerIdentity(server) {
     ({ dot: arr10[0], mutedDot: arr10[1] } = tmp4);
     items10 = [tmp14(closure_7, obj20), ];
     const obj21 = { variant: "body-xs/medium", color: "text-subtle", style: tmp4.metaText, children: intl2.format(server(1113).t.zRl6XR, obj22) };
-    const Text2 = tmp(5929).Text;
+    const Text2 = tmp(5919).Text;
     intl2 = tmp(1113).intl;
     obj22 = { count: server.members };
     items10[1] = tmp14(Text2, obj21);
@@ -258,7 +258,7 @@ class ServerActionButton {
     let obj2 = { guild: server.name };
     let str = "sm";
     const formatToPlainStringResult = formatToPlainString(tmp4 ? tmp6.qGeMEE : tmp6.NOfX8z, obj2);
-    const Button = tmp(5936).Button;
+    const Button = tmp(5926).Button;
     const tmp8 = closure_10;
     if (flag) {
       str = "lg";
@@ -331,7 +331,7 @@ function ServerRowCard(server) {
   if (null != server.iconUrl) {
     const obj7 = { accessible: false, style: tmp.icon, source: obj8 };
     obj8 = { uri: server.iconUrl };
-    tmp16 = authStore(tmp14(6020), obj7);
+    tmp16 = authStore(tmp14(6010), obj7);
     tmp15 = authStore;
   } else {
     tmp15 = authStore;
@@ -358,7 +358,7 @@ function ServerRowCard(server) {
   ({ dot: arr5[0], serverDot: arr5[1] } = tmp);
   items5 = [tmp15(metroImportDefault, obj15), ];
   const obj16 = { variant: "body-xs/medium", color: "text-muted", children: intl2.format(intl4.t["LC+S+m"], obj17) };
-  const Text = tmp12(5929).Text;
+  const Text = tmp12(5919).Text;
   intl2 = tmp12(1113).intl;
   obj17 = { membersOnline: server.online };
   items5[1] = tmp15(Text, obj16);

@@ -1,15 +1,15 @@
 // Module ID: 15088
 // Function ID: 15089
 // Name: HubEmailConnectionModal
-// Dependencies: [19, 15080, 21, 5306, 5892, 7493, 15089, 1264, 15092, 15099, 15101, 15102, 15103, 15106, 7415, 1502, 5917, 15108, 7490, 1113, 2]
+// Dependencies: [19, 15080, 21, 5306, 5882, 7493, 15089, 1264, 15092, 15099, 15101, 15102, 15103, 15106, 7415, 1502, 5907, 15108, 7490, 1113, 2]
 // Exports: HubEmailConnectionScreen, default
 
 // Module 15088 (HubEmailConnectionModal)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
 import useNavigation from "useNavigation" /* 1502 */;
-import NavigatorConstants from "NavigatorConstants" /* 5892 */;
-import reactDefault from "react" /* 5917 */;
+import NavigatorConstants from "NavigatorConstants" /* 5882 */;
+import reactDefault from "react" /* 5907 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 7415 */;
 import Navigator2 from "Navigator" /* 7490 */;
 import NavigatorHeader from "NavigatorHeader" /* 7493 */;

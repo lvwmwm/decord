@@ -1,9 +1,9 @@
-// Module ID: 19729
-// Function ID: 19730
+// Module ID: 19731
+// Function ID: 19732
 // Name: MuteSettingsScreen
-// Dependencies: [19, 17, 5155, 5177, 5248, 1388, 9052, 1072, 21, 5306, 575, 8864, 7883, 7878, 11082, 7443, 1187, 11084, 5929, 1113, 5954, 11085, 1502, 11894, 11081, 1503, 563, 1380, 9051, 1630, 2]
+// Dependencies: [19, 17, 5155, 5177, 5248, 1388, 9052, 1072, 21, 5306, 575, 8864, 7883, 7878, 11082, 7443, 1187, 11084, 5919, 1113, 5944, 11085, 1502, 11894, 11081, 1503, 563, 1380, 9051, 1630, 2]
 
-// Module 19729 (MuteSettingsScreen)
+// Module 19731 (MuteSettingsScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -56,12 +56,12 @@ function UnmuteOptions(channel) {
   obj3 = { disableColor: true, source: navigation(11084) };
   Icon = channel(1187).Icon;
   obj4 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", children: format(prop, obj5) };
-  Text = channel(5929).Text;
+  Text = channel(5919).Text;
   const intl = channel(1113).intl;
   format = intl.format;
   obj5 = { name: obj6.computeChannelName(channel, UserStore, RelationshipStore, true) };
   prop = channel(1113).t["eC+9rj"];
-  obj6 = channel(5954);
+  obj6 = channel(5944);
   items1 = [closure_10(TableRow, obj2), ];
   const obj7 = { muteConfig, type: isPrivateResult ? MuteSettingType.DM : MuteSettingType.CHANNEL };
   const tmp7 = navigation(11085);

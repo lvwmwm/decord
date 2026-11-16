@@ -1,7 +1,7 @@
 // Module ID: 12471
 // Function ID: 12472
 // Name: useBatchUpdateSelectOption
-// Dependencies: [19, 6958, 7869, 1082, 572, 12, 1255, 12472, 504, 7872, 1406, 2]
+// Dependencies: [19, 6948, 7869, 1082, 572, 12, 1255, 12472, 504, 7872, 1406, 2]
 // Exports: default
 
 // Module 12471 (useBatchUpdateSelectOption)
@@ -12,7 +12,7 @@ import GlobalUtils from "GlobalUtils" /* 1255 */;
 import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 7872 */;
 import OptInOnboardingUtils from "OptInOnboardingUtils" /* 12472 */;
 import react from "react" /* 19 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6958 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6948 */;
 import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7869 */;
 import size from "module_2" /* 2 */;
 

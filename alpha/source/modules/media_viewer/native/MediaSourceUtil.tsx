@@ -1,7 +1,7 @@
 // Module ID: 8633
 // Function ID: 8634
 // Name: MediaSourceUtil
-// Dependencies: [19, 5155, 1072, 6361, 1406, 8634, 8640, 1495, 8645, 6858, 8646, 6790, 8655, 6376, 2119, 8656, 11069, 1255, 11253, 1092, 6014, 8629, 6269, 1113, 1444, 10198, 2]
+// Dependencies: [19, 5155, 1072, 6351, 1406, 8634, 8640, 1495, 8645, 6848, 8646, 6780, 8655, 6366, 2119, 8656, 11069, 1255, 11253, 1092, 6004, 8629, 6259, 1113, 1444, 10198, 2]
 // Exports: downloadMediaAsset, downloadMediaAssetWithContentType, extractMediaFromMessageComponents, extractMediaSourcesFromComponent, extractMediaSourcesFromEmbed, extractMediaSourcesFromMessage, extractThumbnailMediaFromEmbed, flattenSource, getAttachmentUrl, getEmbedMedia, getEmbedUrl, getSelectedMediaSource, getVideoSourceType, getYoutubeClipVideoIdFromURI, getYoutubeVideoIdFromURI, isAnimatedAvifSource, isAnimatedImageSource, isAnimatedWebpSource, isGIFSource, isThumbnailAttachment, isValidImageEmbed, isValidVideoAttachment, isValidVideoEmbed, setMediaSourcePortal, supportOverlayVideoControls, useSelectedMediaSource
 
 // Module 8633 (MediaSourceUtil)
@@ -11,12 +11,12 @@ import FlagUtils from "FlagUtils" /* 1406 */;
 import react_nativeDefault from "react-native" /* 1444 */;
 import utils_ImageUtilsDefault from "utils/ImageUtils" /* 1495 */;
 import Server from "Server" /* 2119 */;
-import ToastUtils from "ToastUtils" /* 6014 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6269 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 6361 */;
-import InteractionComponentUtils from "InteractionComponentUtils" /* 6376 */;
-import EmbedUtils from "EmbedUtils" /* 6790 */;
-import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6858 */;
+import ToastUtils from "ToastUtils" /* 6004 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6259 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 6351 */;
+import InteractionComponentUtils from "InteractionComponentUtils" /* 6366 */;
+import EmbedUtils from "EmbedUtils" /* 6780 */;
+import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6848 */;
 import ObscuredMediaUtils from "ObscuredMediaUtils" /* 8634 */;
 import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 8640 */;
 import getDisplayFilenameDefault from "getDisplayFilename" /* 8645 */;
@@ -36,7 +36,7 @@ let _require, closure_2, dependencyMap, importDefault;
 
 let hasOwnProperty;
 let metroRequire;
-const f96400 = () => {
+const f96413 = () => {
   if (ConstantsIOS.MediaType.IMAGE === VIDEO) {
     const tmp2Result = ToastUtils;
     tmp2Result.presentImageSaved();
@@ -1044,7 +1044,7 @@ export function downloadMediaAsset(mediaUrl, VIDEO) {
   let closure_0 = VIDEO;
   const obj = react_nativeDefault;
   const downloadMediaAssetResult = obj.downloadMediaAsset(mediaUrl, VIDEO);
-  return downloadMediaAssetResult.then(f96400, handleDownloadError);
+  return downloadMediaAssetResult.then(f96413, handleDownloadError);
 }
 export function downloadMediaAssetWithContentType(mediaUrl, VIDEO, contentType) {
   let result;
@@ -1056,7 +1056,7 @@ export function downloadMediaAssetWithContentType(mediaUrl, VIDEO, contentType) 
     const obj = react_nativeDefault;
     result = obj.downloadMediaAsset(mediaUrl, VIDEO);
   }
-  return result.then(f96400, handleDownloadError);
+  return result.then(f96413, handleDownloadError);
 }
 export function getYoutubeClipVideoIdFromURI(uri) {
   const match = uri.match(/^https:\/\/www\.youtube\.com\/embed\/([A-Za-z0-9_-]*)(\?clip=([A-Za-z0-9_-]+)(&clipt=([A-Za-z0-9_-]+)))?$/);

@@ -1,7 +1,7 @@
 // Module ID: 11864
 // Function ID: 11865
 // Name: messages/MessagesUtils
-// Dependencies: [32, 5, 11865, 8744, 5155, 5218, 6937, 6372, 6210, 5238, 7015, 1388, 9160, 1072, 6361, 6376, 2119, 8640, 8863, 7683, 5225, 6015, 1113, 6037, 11866, 2110, 5920, 5250, 5554, 5555, 7684, 8864, 8866, 6067, 7943, 6356, 11, 6014, 11881, 9, 12, 1380, 1628, 11885, 1256, 11882, 8660, 5341, 5543, 10133, 11886, 8724, 6381, 5226, 9178, 2]
+// Dependencies: [32, 5, 11865, 8744, 5155, 5218, 6927, 6362, 6200, 5238, 7015, 1388, 9160, 1072, 6351, 6366, 2119, 8640, 8863, 7683, 5225, 6005, 1113, 6027, 11866, 2110, 5910, 5250, 5544, 5545, 7684, 8864, 8866, 6057, 7943, 6346, 11, 6004, 11881, 9, 12, 1380, 1628, 11885, 1256, 11882, 8660, 6957, 5533, 10133, 11886, 8724, 6371, 5226, 9178, 2]
 // Exports: canAddNewReactions, clearRows, findMessageIndex, findMessageIndexInRows, getChatRef, getLongPressSelectedMedia, getMessageAuthorMemberUserIds, getVoiceChannelIdChangedAuthorIds, getVoiceStateChannelSummaryFromVoiceStates, handleAddOrRemoveReaction, handleCopyLinkForumPost, handleFirstLayout, handleLongPressSticker, handleMediaPlayFinishedAnalytics, handleMessageVisibilityChanged, handleTapNavBar, handleTapTableView, handleToggleFollowForumPost, handleVisibleMessagesChange, isLoadingAtTop, jumpToPresent, loadMoreAfter, loadMoreBefore, maybeRescrollToMessageId, recordTimings, scrollToBottom, scrollToMessageIdWithRescroll, scrollToNewMessages, scrollToRelativeOffset, scrollToTop, scrollToTopMessage, shouldJumpToOriginalPost, startOrCancelChannelLatestMessagesLoad, syncMessageDisplay, toObscuredMedia
 
 // Module 11864 (messages/MessagesUtils)
@@ -14,18 +14,18 @@ import Server from "Server" /* 2119 */;
 import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 5225 */;
 import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 5226 */;
 import ReactionUtils from "ReactionUtils" /* 5250 */;
-import QuestTypes from "QuestTypes" /* 5341 */;
-import flow_Client from "flow/Client" /* 5543 */;
-import HapticUtils from "HapticUtils" /* 5554 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5555 */;
-import ToastUtils from "ToastUtils" /* 6014 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 6015 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 6037 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6067 */;
-import ChannelUtils from "ChannelUtils" /* 6356 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 6361 */;
-import InteractionComponentUtils from "InteractionComponentUtils" /* 6376 */;
-import InteractionTypes from "InteractionTypes" /* 6381 */;
+import flow_Client from "flow/Client" /* 5533 */;
+import HapticUtils from "HapticUtils" /* 5544 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5545 */;
+import ToastUtils from "ToastUtils" /* 6004 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 6027 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6057 */;
+import ChannelUtils from "ChannelUtils" /* 6346 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 6351 */;
+import InteractionComponentUtils from "InteractionComponentUtils" /* 6366 */;
+import InteractionTypes from "InteractionTypes" /* 6371 */;
+import QuestTypes from "QuestTypes" /* 6957 */;
 import useShowMemberVerificationGate from "useShowMemberVerificationGate" /* 7683 */;
 import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 7684 */;
 import ClipboardUtils from "ClipboardUtils" /* 7943 */;
@@ -48,9 +48,9 @@ import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import ReferencedMessageStore from "ReferencedMessageStore" /* 8744 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import GuildMemberStore from "GuildMemberStore" /* 5218 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 6937 */;
-import MessageStore from "MessageStore" /* 6372 */;
-import NetworkStore from "NetworkStore" /* 6210 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 6927 */;
+import MessageStore from "MessageStore" /* 6362 */;
+import NetworkStore from "NetworkStore" /* 6200 */;
 import PermissionStore from "PermissionStore" /* 5238 */;
 import ReadStateStore from "ReadStateStore" /* 7015 */;
 import UserStore from "UserStore" /* 1388 */;
@@ -72,7 +72,7 @@ let tmp;
 let tmp9;
 const SnowflakeUtilsDefault = tmp9(11);
 const KeyboardTypes = tmp(1628);
-const f103443 = (id) => id.id;
+const f103456 = (id) => id.id;
 function getVisibleMessages(arg0) {
   let chatManager;
   let firstVisibleMessagePercentVisible;
@@ -452,7 +452,7 @@ export function handleAddOrRemoveReaction(messageId, channel, reaction, isBurst,
         }
       }
     }
-    const ReactionTypes = tmp12(5920).ReactionTypes;
+    const ReactionTypes = tmp12(5910).ReactionTypes;
     const tmp23 = flag ? ReactionTypes.BURST : ReactionTypes.NORMAL;
     const tmp12Result10 = ReactionUtils;
     if (tmp12Result10.isMeReaction(reaction.me, reaction.me_burst, tmp23)) {
@@ -581,7 +581,7 @@ export function startOrCancelChannelLatestMessagesLoad(hasJumpedToOriginalPost) 
 export function recordTimings(channelId, hasFetched) {
   const recordMessageRender = TTITrackerDefault.recordMessageRender;
   TTITrackerDefault;
-  const mapped = hasFetched.map(f103443);
+  const mapped = hasFetched.map(f103456);
   hasFetched = hasFetched.hasFetched;
   if (!hasFetched) {
     hasFetched = hasFetched.ready && !hasFetched.cached;
@@ -830,7 +830,7 @@ export function syncMessageDisplay(messages) {
   }
   const recordMessageRender = oldestUnreadMessageId(scrollToMessageId[39]).recordMessageRender;
   oldestUnreadMessageId(scrollToMessageId[39]);
-  const mapped = messages.map(f103443);
+  const mapped = messages.map(f103456);
   let hasFetched = messages.hasFetched;
   if (!hasFetched) {
     hasFetched = messages.ready && !messages.cached;

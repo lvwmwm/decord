@@ -1,27 +1,27 @@
 // Module ID: 16093
 // Function ID: 16094
 // Name: VoiceMemberUser
-// Dependencies: [19, 17, 6369, 1192, 502, 7023, 5155, 5218, 2133, 6068, 1072, 21, 5306, 575, 10597, 7026, 504, 5313, 16094, 16095, 1187, 16096, 16097, 16098, 16099, 12834, 5929, 1113, 8106, 8468, 13097, 5492, 6900, 5552, 7428, 8136, 6351, 8142, 5372, 2]
+// Dependencies: [19, 17, 6359, 1192, 502, 7023, 5155, 5218, 2133, 6058, 1072, 21, 5306, 575, 10597, 7026, 504, 5313, 16094, 16095, 1187, 16096, 16097, 16098, 16099, 12834, 5919, 1113, 8106, 8468, 13097, 5482, 6890, 5542, 7428, 8136, 6341, 8142, 5362, 2]
 
 // Module 16093 (VoiceMemberUser)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import UserUtilsDefault from "UserUtils" /* 5372 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5492 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6900 */;
+import UserUtilsDefault from "UserUtils" /* 5362 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5482 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6890 */;
 import CallActionCreatorsDefault from "CallActionCreators" /* 8136 */;
 import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 8468 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SoundboardStore from "SoundboardStore" /* 6369 */;
+import SoundboardStore from "SoundboardStore" /* 6359 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import CallStore from "CallStore" /* 7023 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import GuildMemberStore from "GuildMemberStore" /* 5218 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import PresenceStore from "PresenceStore" /* 6068 */;
+import PresenceStore from "PresenceStore" /* 6058 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
@@ -388,7 +388,7 @@ let closure_17 = react.memo(function VoiceMemberUserRow(user) {
     const obj18 = { children: items5 };
     items5 = [name, ];
     const obj19 = { variant: "body-md/semibold", lineClamp: 1, color: "status-positive", children: items6 };
-    const Text = tmp2(5929).Text;
+    const Text = tmp2(5919).Text;
     const intl = tmp2(1113).intl;
     items6 = ["\u00A0", intl.string(user(1113).t["pFO/Ph"])];
     items5[1] = closure_13(Text, obj19);
@@ -405,7 +405,7 @@ let closure_17 = react.memo(function VoiceMemberUserRow(user) {
     const Icon5 = tmp2(1187).Icon;
     items7 = [closure_12(Icon5, obj22), ];
     const obj23 = { variant: "body-xs/medium", color: "text-default", style: tmp5.autoDisabledVideoLabel, children: intl3.string(user(1113).t.m2Hyj0) };
-    const Text2 = tmp2(5929).Text;
+    const Text2 = tmp2(5919).Text;
     intl3 = tmp2(1113).intl;
     items7[1] = closure_12(Text2, obj23);
     stringResult = closure_13(id, obj21);
@@ -442,7 +442,7 @@ const memoResult = react.memo(function DisconnectedUserRow(user) {
     }
     return hasItem;
   }, items1);
-  const obj2 = channel(6351);
+  const obj2 = channel(6341);
   const name = obj2.getName(channel.guild_id, channel.id, user);
   const obj4 = {
     onPress() {

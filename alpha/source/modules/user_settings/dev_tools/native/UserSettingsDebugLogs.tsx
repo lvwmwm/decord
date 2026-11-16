@@ -1,18 +1,18 @@
-// Module ID: 18196
-// Function ID: 18197
+// Module ID: 18198
+// Function ID: 18199
 // Name: UserSettingsDebugLogs
-// Dependencies: [32, 19, 17, 1072, 21, 5306, 575, 7640, 1630, 6015, 510, 7, 5929, 7825, 13801, 1113, 18197, 5552, 18198, 7888, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5306, 575, 7640, 1630, 6005, 510, 7, 5919, 7825, 13801, 1113, 18199, 5542, 18200, 7888, 2]
 // Exports: default
 
-// Module 18196 (UserSettingsDebugLogs)
+// Module 18198 (UserSettingsDebugLogs)
 import LogAggregator from "LogAggregator" /* 7 */;
 import Storage2 from "Storage" /* 510 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 6015 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
 import InputTypes from "InputTypes" /* 7640 */;
-import UserSettingsDebugLogsActionSheet from "UserSettingsDebugLogsActionSheet" /* 18197 */;
+import UserSettingsDebugLogsActionSheet from "UserSettingsDebugLogsActionSheet" /* 18199 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -173,9 +173,9 @@ export default function UserSettingsDebugLogs() {
     items[2] = str;
     items1 = [metroImportDefault(Text, obj2), ];
     const obj3 = { style: closure_0.code, variant: "body-sm/normal", children: items2 };
-    const Text2 = tmp4(5929).Text;
+    const Text2 = tmp4(5919).Text;
     const obj4 = { style: closure_0.code, variant: "body-sm/normal", color: "text-brand", children: "[" + item.category + "]: " };
-    const Text3 = tmp4(5929).Text;
+    const Text3 = tmp4(5919).Text;
     items2 = [metroImportAll(Text3, obj4), item.message];
     items1[1] = metroImportDefault(Text2, obj3);
     return metroImportDefault(tmp2, obj, index);

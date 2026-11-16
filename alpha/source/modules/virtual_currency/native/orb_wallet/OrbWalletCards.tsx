@@ -1,7 +1,7 @@
 // Module ID: 17535
 // Function ID: 17536
 // Name: OrbWalletCards
-// Dependencies: [32, 19, 17, 16242, 5152, 1390, 21, 5306, 575, 17536, 17537, 7445, 13819, 5929, 5936, 7988, 7549, 1113, 5902, 7533, 5893, 17530, 9560, 17528, 7937, 7918, 5139, 2333, 10566, 504, 9291, 15469, 2]
+// Dependencies: [32, 19, 17, 16242, 5152, 1390, 21, 5306, 575, 17536, 17537, 7445, 13819, 5919, 5926, 7988, 7549, 1113, 5892, 7533, 5883, 17530, 9560, 17528, 7937, 7918, 5139, 2333, 10566, 504, 9291, 15469, 2]
 // Exports: OrbWalletPrimaryCard, getWalletPrimaryCardType
 
 // Module 17535 (OrbWalletCards)
@@ -9,10 +9,10 @@ import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
 import _modDef2333 from "module_2333" /* 2333 */;
-import LinearGradientDefault from "LinearGradient" /* 5893 */;
-import useToken from "useToken" /* 5902 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import components_Button_Button from "components/Button/Button" /* 5936 */;
+import LinearGradientDefault from "LinearGradient" /* 5883 */;
+import useToken from "useToken" /* 5892 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
 import Card_Card from "Card/Card" /* 7445 */;
 import _modDef7533 from "module_7533" /* 7533 */;
 import XSmallIcon2 from "XSmallIcon" /* 7549 */;

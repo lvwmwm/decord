@@ -1,7 +1,7 @@
 // Module ID: 10911
 // Function ID: 10912
 // Name: IconUploader
-// Dependencies: [5, 19, 17, 1072, 21, 5306, 8879, 7720, 1414, 6020, 10912, 7428, 1113, 2]
+// Dependencies: [5, 19, 17, 1072, 21, 5306, 8879, 7720, 1414, 6010, 10912, 7428, 1113, 2]
 // Exports: default
 
 // Module 10911 (IconUploader)
@@ -9,7 +9,7 @@ import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import AvatarUtils from "AvatarUtils" /* 1414 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import Pressables from "Pressables" /* 7428 */;
 import GuildIcon from "GuildIcon" /* 7720 */;
 import AssetRegistryDefault from "AssetRegistry" /* 10912 */;

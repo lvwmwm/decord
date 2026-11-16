@@ -1,13 +1,13 @@
-// Module ID: 20212
-// Function ID: 20213
+// Module ID: 20215
+// Function ID: 20216
 // Name: DmSettingsUpsellManager
-// Dependencies: [1072, 7882, 20213, 1285, 2]
+// Dependencies: [1072, 7882, 20216, 1285, 2]
 // Exports: acknowledgeDmSettingsUpsell
 
-// Module 20212 (DmSettingsUpsellManager)
+// Module 20215 (DmSettingsUpsellManager)
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
-import DmSettingsUpsellActionCreatorsDefault from "DmSettingsUpsellActionCreators" /* 20213 */;
+import DmSettingsUpsellActionCreatorsDefault from "DmSettingsUpsellActionCreators" /* 20216 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
 import size from "module_2" /* 2 */;
 

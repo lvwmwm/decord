@@ -1,7 +1,7 @@
 // Module ID: 13517
 // Function ID: 13518
 // Name: AppLauncherRoleListActionSheet
-// Dependencies: [32, 19, 7892, 5213, 5212, 1072, 21, 13514, 8173, 504, 7893, 7443, 5929, 7436, 7073, 5552, 13501, 13502, 2]
+// Dependencies: [32, 19, 7892, 5213, 5212, 1072, 21, 13514, 8173, 504, 7893, 7443, 5919, 7436, 7073, 5542, 13501, 13502, 2]
 // Exports: default
 
 // Module 13517 (AppLauncherRoleListActionSheet)
@@ -59,7 +59,7 @@ class RoleRow {
       const obj = GuildRoleMemberActionCreatorsAll;
       const memberCounts = obj.fetchMemberCounts(guildId);
     }, items1);
-    const obj2 = { label: closure_10(guildRole(5929).Text, obj3), icon: closure_10(RoleIcon, { role: guildRole }), trailing: tmp8 };
+    const obj2 = { label: closure_10(guildRole(5919).Text, obj3), icon: closure_10(RoleIcon, { role: guildRole }), trailing: tmp8 };
     const TableRow = guildRole(7443).TableRow;
     tmp8 = null;
     obj3 = { lineClamp: 1, variant: "body-md/semibold", color: "mobile-text-heading-primary", children: guildRole.name };
@@ -67,7 +67,7 @@ class RoleRow {
       tmp8 = null;
       if (null != stateFromStores) {
         const obj4 = { variant: "body-sm/normal", color: "text-muted", children: items2 };
-        const Text = tmp2(5929).Text;
+        const Text = tmp2(5919).Text;
         items2 = [closure_10(tmp2(7436).GroupIcon, { size: "xxs", color: "text-muted" }), " ", stateFromStores];
         tmp8 = closure_11(Text, obj4);
       }

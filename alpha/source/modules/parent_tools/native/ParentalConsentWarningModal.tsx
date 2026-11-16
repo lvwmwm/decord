@@ -1,10 +1,10 @@
-// Module ID: 20366
-// Function ID: 20367
+// Module ID: 20369
+// Function ID: 20370
 // Name: ParentalConsentWarningModal
-// Dependencies: [19, 17, 8740, 8741, 1072, 5152, 21, 5139, 8742, 5493, 8604, 6850, 5306, 575, 1630, 1113, 2701, 1256, 572, 5140, 5552, 6848, 20367, 2121, 5566, 6337, 20368, 5929, 5936, 2]
+// Dependencies: [19, 17, 8740, 8741, 1072, 5152, 21, 5139, 8742, 5483, 8604, 6840, 5306, 575, 1630, 1113, 2701, 1256, 572, 5140, 5542, 6838, 20370, 2121, 5556, 6327, 20371, 5919, 5926, 2]
 // Exports: default
 
-// Module 20366 (ParentalConsentWarningModal)
+// Module 20369 (ParentalConsentWarningModal)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
@@ -13,10 +13,10 @@ import asyncRequire from "asyncRequire" /* 2121 */;
 import dismissible_content from "dismissible_content" /* 5139 */;
 import DismissibleContentUtils from "DismissibleContentUtils" /* 5140 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
-import RootNavigationRef from "RootNavigationRef" /* 5493 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
-import ModalDispatchQueueDefault from "ModalDispatchQueue" /* 6850 */;
+import RootNavigationRef from "RootNavigationRef" /* 5483 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
+import ModalDispatchQueueDefault from "ModalDispatchQueue" /* 6840 */;
 import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 8742 */;
 import react from "react" /* 19 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 8740 */;
@@ -137,7 +137,7 @@ export default function ParentalConsentWarningModal(daysRemaining) {
       });
     } else {
       const tmp2Result4 = ModalActionCreatorsDefault;
-      tmp2Result4.pushLazy(asyncRequire(20367, tmp3.paths));
+      tmp2Result4.pushLazy(asyncRequire(20370, tmp3.paths));
     }
   }, items2);
   const intl = daysRemaining(callback[15]).intl;

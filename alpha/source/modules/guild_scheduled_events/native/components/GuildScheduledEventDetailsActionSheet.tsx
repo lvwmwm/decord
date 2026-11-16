@@ -1,7 +1,7 @@
 // Module ID: 7967
 // Function ID: 7968
 // Name: GuildScheduledEventDetailsActionSheet
-// Dependencies: [32, 19, 17, 5177, 7029, 5161, 21, 5306, 575, 1113, 7918, 7937, 504, 7968, 7981, 7982, 7969, 1630, 7983, 7984, 11251, 5566, 5570, 15929, 15930, 2]
+// Dependencies: [32, 19, 17, 5177, 7029, 5161, 21, 5306, 575, 1113, 7918, 7937, 504, 7968, 7981, 7982, 7969, 1630, 7983, 7984, 11251, 5556, 5560, 15929, 15930, 2]
 // Exports: default
 
 // Module 7967 (GuildScheduledEventDetailsActionSheet)
@@ -55,7 +55,7 @@ export default function GuildScheduledEventDetailsActionSheet(eventId) {
   let tmp23;
   let tmp36Result2;
   let tmp8;
-  const f95037 = () => {
+  const f95050 = () => {
     let id;
     const getGuildEventUsers = GuildScheduledEventManagerDefault.getGuildEventUsers;
     GuildScheduledEventManagerDefault;
@@ -140,9 +140,9 @@ export default function GuildScheduledEventDetailsActionSheet(eventId) {
     }
     return tmp5;
   }, items3);
-  [c5, tmp19] = tmp5(tmp2(tmp3[15])(f95037), 2);
+  [c5, tmp19] = tmp5(tmp2(tmp3[15])(f95050), 2);
   ({ loading, error } = tmp19);
-  tmp5(tmp2(tmp3[15])(f95037), 2);
+  tmp5(tmp2(tmp3[15])(f95050), 2);
   [tmp21, c6] = tmp5(obj.useState(0), 2);
   tmp5(obj.useState(0), 2);
   [tmp23, c7] = tmp5(obj.useState(0), 2);

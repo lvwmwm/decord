@@ -1,10 +1,10 @@
-// Module ID: 18491
-// Function ID: 18492
+// Module ID: 18493
+// Function ID: 18494
 // Name: HeroBlock
-// Dependencies: [19, 17, 8485, 1074, 21, 5306, 575, 10455, 10416, 17652, 18492, 18495, 18498, 504, 10132, 18499, 18500, 17612, 7918, 7937, 9420, 18510, 18512, 5916, 18513, 1113, 7888, 2]
+// Dependencies: [19, 17, 8485, 1074, 21, 5306, 575, 10455, 10416, 17652, 18494, 18497, 18500, 504, 10132, 18501, 18502, 17612, 7918, 7937, 9420, 18512, 18514, 5906, 18515, 1113, 7888, 2]
 // Exports: default
 
-// Module 18491 (HeroBlock)
+// Module 18493 (HeroBlock)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
@@ -23,7 +23,7 @@ let metroImportAll;
 let metroImportDefault;
 let obj2;
 let tmp2;
-const FeaturedFirstCardCoachmarkAnchorDefault = tmp2(18510);
+const FeaturedFirstCardCoachmarkAnchorDefault = tmp2(18512);
 function SkeletonLoading(accessibilityLabel) {
   let arr;
   let obj = {
@@ -48,10 +48,10 @@ function OrbsExclusiveHeroHeader(heroBlock) {
   const OrbsArcadeExperiment = OrbsArcadeExperiment2.OrbsArcadeExperiment;
   if (OrbsArcadeExperiment.useConfig({ location: "HeroBlock" }).enabled) {
     const obj2 = { productsTitle: heroBlock.mobileProductsTitle };
-    tmp2Result = tmp2(tmp3(18495), obj2);
+    tmp2Result = tmp2(tmp3(18497), obj2);
   } else {
     const obj = { heroBlock, category };
-    tmp2Result = tmp2(tmp3(18492), obj);
+    tmp2Result = tmp2(tmp3(18494), obj);
   }
   return tmp2Result;
 }

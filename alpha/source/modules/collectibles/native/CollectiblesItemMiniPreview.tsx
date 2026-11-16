@@ -1,14 +1,14 @@
 // Module ID: 9525
 // Function ID: 9526
 // Name: CollectiblesItemMiniPreview
-// Dependencies: [19, 17, 8490, 2112, 8491, 8492, 8584, 9490, 21, 575, 5306, 9500, 9512, 6020, 9513, 9493, 2111, 9508, 2]
+// Dependencies: [19, 17, 8490, 2112, 8491, 8492, 8584, 9490, 21, 575, 5306, 9500, 9512, 6010, 9513, 9493, 2111, 9508, 2]
 
 // Module 9525 (CollectiblesItemMiniPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import utils from "utils" /* 2111 */;
 import NameplateRecord from "NameplateRecord" /* 2112 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import AvatarDecorationRecord from "AvatarDecorationRecord" /* 8490 */;
 import ProfileEffectRecord from "ProfileEffectRecord" /* 8491 */;
 import ProfileFrameRecord from "ProfileFrameRecord" /* 8492 */;

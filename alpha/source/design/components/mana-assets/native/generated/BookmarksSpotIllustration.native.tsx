@@ -1,7 +1,7 @@
 // Module ID: 11939
 // Function ID: 11940
 // Name: BookmarksSpotIllustration
-// Dependencies: [19, 21, 11940, 11941, 11942, 7755, 6020, 2]
+// Dependencies: [19, 21, 11940, 11941, 11942, 7755, 6010, 2]
 // Exports: BookmarksSpotIllustration
 
 // Module 11939 (BookmarksSpotIllustration)

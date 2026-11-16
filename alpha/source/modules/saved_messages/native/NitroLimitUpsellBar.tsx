@@ -1,15 +1,15 @@
 // Module ID: 15659
 // Function ID: 15660
 // Name: NitroLimitUpsellBar
-// Dependencies: [17, 21, 5306, 575, 8160, 6020, 11296, 5929, 1113, 10074, 5936, 2]
+// Dependencies: [17, 21, 5306, 575, 8160, 6010, 11296, 5919, 1113, 10074, 5926, 2]
 // Exports: default
 
 // Module 15659 (NitroLimitUpsellBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import WarningIcon from "WarningIcon" /* 8160 */;
 import NitroUpsellButtonDefault from "NitroUpsellButton" /* 10074 */;
 import AssetRegistryDefault from "AssetRegistry" /* 11296 */;
@@ -65,7 +65,7 @@ export default function NitroLimitUpsellBar(isAtLimit) {
   if (isAtLimit) {
     Button = NitroUpsellButtonDefault;
   } else {
-    Button = tmp12(5936).Button;
+    Button = tmp12(5926).Button;
   }
   const obj6 = { size: "sm", text: intl2.string(intl3.t["8x0jKT"]), onPress, loading };
   intl2 = tmp12(1113).intl;

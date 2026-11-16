@@ -1,7 +1,7 @@
 // Module ID: 14854
 // Function ID: 14855
 // Name: useVoicePanelDockLevelProps
-// Dependencies: [19, 5155, 2133, 5209, 6941, 14855, 1072, 14573, 504, 13046, 13022, 2]
+// Dependencies: [19, 5155, 2133, 5209, 6931, 14855, 1072, 14573, 504, 13046, 13022, 2]
 // Exports: useVoicePanelDockGlowLevelProps, useVoicePanelDockSpeakerLevelProps
 
 // Module 14854 (useVoicePanelDockLevelProps)
@@ -11,7 +11,7 @@ import VoicePanelDockSlotStore from "VoicePanelDockSlotStore" /* 14855 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
-import SpeakingStore from "SpeakingStore" /* 6941 */;
+import SpeakingStore from "SpeakingStore" /* 6931 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

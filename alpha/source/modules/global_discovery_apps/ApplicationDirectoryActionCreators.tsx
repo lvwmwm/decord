@@ -1,7 +1,7 @@
 // Module ID: 13402
 // Function ID: 13403
 // Name: ApplicationDirectoryActionCreators
-// Dependencies: [5, 5932, 2189, 1362, 7056, 13403, 13404, 13399, 13405, 13406, 1072, 572, 559, 1285, 13400, 1380, 13407, 13408, 13409, 2]
+// Dependencies: [5, 5922, 2189, 1362, 7056, 13403, 13404, 13399, 13405, 13406, 1072, 572, 559, 1285, 13400, 1380, 13407, 13408, 13409, 2]
 // Exports: fetchCollections, fetchIntegrationApplicationIdsForMyGuilds, getApplication, getCategories, getEmbedApplication, getSimilarApplications, search
 
 // Module 13402 (ApplicationDirectoryActionCreators)
@@ -17,7 +17,7 @@ import MyGuildApplicationsStore2 from "MyGuildApplicationsStore" /* 13406 */;
 import ApplicationCollectionSurface from "ApplicationCollectionSurface" /* 13408 */;
 import ApplicationCollectionActiveState from "ApplicationCollectionActiveState" /* 13409 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import DevSettingsStore from "DevSettingsStore" /* 5932 */;
+import DevSettingsStore from "DevSettingsStore" /* 5922 */;
 import LocaleStore from "LocaleStore" /* 2189 */;
 import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1362 */;
 import ApplicationDirectoryCategoriesStore from "ApplicationDirectoryCategoriesStore" /* 13403 */;

@@ -1,11 +1,11 @@
 // Module ID: 8651
 // Function ID: 8652
 // Name: ExperimentDevToolsUtils
-// Dependencies: [8652, 5537, 2]
+// Dependencies: [8652, 5527, 2]
 // Exports: getExperimentVariantsForDevTools
 
 // Module 8651 (ExperimentDevToolsUtils)
-import ExperimentManager from "ExperimentManager" /* 5537 */;
+import ExperimentManager from "ExperimentManager" /* 5527 */;
 import experiment2 from "experiment" /* 8652 */;
 import size from "module_2" /* 2 */;
 

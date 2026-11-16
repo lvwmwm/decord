@@ -1,7 +1,7 @@
 // Module ID: 8387
 // Function ID: 8388
 // Name: AppStoreAgeSignalReport
-// Dependencies: [32, 5, 1388, 2120, 1072, 8383, 8240, 1242, 1380, 8379, 8380, 1256, 5995, 6079, 2]
+// Dependencies: [32, 5, 1388, 2120, 1072, 8383, 8240, 1242, 1380, 8379, 8380, 1256, 5985, 6069, 2]
 // Exports: beginAppStoreAgeSignalReport, isAppStoreAgeSignalColdLaunch, isAppStoreAgeSignalLaunchPending, queueAppStoreAgeSignalSubmit, resumeAppStoreAgeSignalReport, settleAppStoreAgeSignalReport, startPendingAppStoreAgeSignalReport
 
 // Module 8387 (AppStoreAgeSignalReport)
@@ -260,7 +260,7 @@ function startAgeSignalReport(isColdLaunch, connection) {
     let result = obj.isAppStoreAgeSignalSupported();
     const tmp2 = _require;
     if (result) {
-      const tmp2Result = tmp2(5995);
+      const tmp2Result = tmp2(5985);
       result = tmp2Result.shouldCollectAppStoreSignal();
     }
     tmp = result;
@@ -637,7 +637,7 @@ export function resumeAppStoreAgeSignalReport() {
       obj = AppStoreAgeSignalSupport;
       let result = obj.isAppStoreAgeSignalSupported();
       if (result) {
-        const tmp3Result = tmp3(5995);
+        const tmp3Result = tmp3(5985);
         result = tmp3Result.shouldCollectAppStoreSignal();
       }
       tmp6 = result;

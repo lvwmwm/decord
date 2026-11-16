@@ -1,17 +1,17 @@
-// Module ID: 20022
-// Function ID: 20023
+// Module ID: 20024
+// Function ID: 20025
 // Name: VoicePanelAnimatedActivityCard
-// Dependencies: [32, 19, 5154, 12719, 5155, 11985, 11983, 1072, 2145, 12706, 21, 5306, 575, 11984, 13129, 504, 20023, 12736, 7259, 12842, 7918, 7937, 11297, 5978, 1655, 1708, 7025, 5598, 2146, 1496, 11008, 20024, 12848, 20025, 20026, 20030, 5377, 2]
+// Dependencies: [32, 19, 5154, 12719, 5155, 11985, 11983, 1072, 2145, 12706, 21, 5306, 575, 11984, 13129, 504, 20025, 12736, 7259, 12842, 7918, 7937, 11297, 5968, 1655, 1708, 7025, 5588, 2146, 1496, 11008, 20026, 12848, 20027, 20028, 20032, 5367, 2]
 
-// Module 20022 (VoicePanelAnimatedActivityCard)
+// Module 20024 (VoicePanelAnimatedActivityCard)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import useWindowDimensions from "useWindowDimensions" /* 1496 */;
 import _mod1708 from "module_1708" /* 1708 */;
 import Constants2 from "Constants" /* 2145 */;
 import EmbeddedActivityOrientationLockState from "EmbeddedActivityOrientationLockState" /* 2146 */;
-import native from "native" /* 5377 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5598 */;
+import native from "native" /* 5367 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5588 */;
 import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11983 */;
 import Constants3 from "Constants" /* 12706 */;
 import fetchShelf from "fetchShelf" /* 12736 */;

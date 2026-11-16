@@ -1,10 +1,10 @@
-// Module ID: 18081
-// Function ID: 18082
+// Module ID: 18083
+// Function ID: 18084
 // Name: SettingsChatScreen
-// Dependencies: [19, 17, 1388, 2179, 9202, 1072, 21, 5306, 575, 1502, 563, 2174, 5929, 1113, 7445, 1187, 11369, 7809, 12406, 17213, 2]
+// Dependencies: [19, 17, 1388, 2179, 9202, 1072, 21, 5306, 575, 1502, 563, 2174, 5919, 1113, 7445, 1187, 11369, 7809, 12406, 17213, 2]
 // Exports: default
 
-// Module 18081 (SettingsChatScreen)
+// Module 18083 (SettingsChatScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -61,7 +61,7 @@ function VideoUploadQualityNitroUpsell() {
     const Icon = tmp(1187).Icon;
     items2 = [closure_9(Icon, obj7), ];
     const obj8 = { variant: "body-sm/medium", color: "text-muted", children: intl2.format(require("intl").t.uW1zul, obj9) };
-    const Text2 = tmp(5929).Text;
+    const Text2 = tmp(5919).Text;
     intl2 = tmp(1113).intl;
     obj9 = {
       onClick() {

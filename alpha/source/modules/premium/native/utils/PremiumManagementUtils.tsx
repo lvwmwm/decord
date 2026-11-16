@@ -1,7 +1,7 @@
 // Module ID: 9978
 // Function ID: 9979
 // Name: PremiumManagementUtils
-// Dependencies: [1072, 1083, 21, 3, 6269, 1113, 1380, 1627, 9716, 9979, 2]
+// Dependencies: [1072, 1083, 21, 3, 6259, 1113, 1380, 1627, 9716, 9979, 2]
 // Exports: getExternalManagementMessage, getPremiumManagementMethod
 
 // Module 9978 (PremiumManagementUtils)
@@ -10,7 +10,7 @@ import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import Constants2 from "Constants" /* 1083 */;
 import intl5 from "intl" /* 1113 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6269 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6259 */;
 import BillingStandaloneNativeUtils from "BillingStandaloneNativeUtils" /* 9716 */;
 import size from "module_2" /* 2 */;
 

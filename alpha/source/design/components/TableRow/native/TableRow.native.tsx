@@ -1,14 +1,14 @@
 // Module ID: 7443
 // Function ID: 7444
 // Name: TableRow
-// Dependencies: [19, 17, 21, 5306, 575, 7444, 5902, 7445, 7453, 7455, 7456, 7458, 5944, 1380, 7459, 7461, 5929, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 7444, 5892, 7445, 7453, 7455, 7456, 7458, 5934, 1380, 7459, 7461, 5919, 2]
 
 // Module 7443 (TableRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import useToken from "useToken" /* 5902 */;
-import useFontScale from "useFontScale" /* 5944 */;
+import useToken from "useToken" /* 5892 */;
+import useFontScale from "useFontScale" /* 5934 */;
 import react2 from "react" /* 7444 */;
 import TableRowDivider from "TableRowDivider" /* 7453 */;
 import TableRowIcon from "TableRowIcon" /* 7455 */;
@@ -156,7 +156,7 @@ class TableRowInner {
     if (!react.isValidElement(label)) {
       const obj9 = { variant: token, color: str2, lineClamp: labelLineClamp, includeFontPadding: true, children: label };
       str2 = "text-feedback-critical";
-      const Text = tmp4(5929).Text;
+      const Text = tmp4(5919).Text;
       const tmp20 = hasOwnProperty;
       if ("danger" !== variant) {
         str2 = token1;
@@ -169,7 +169,7 @@ class TableRowInner {
       let tmp23Result = subLabel;
       if (!react.isValidElement(subLabel)) {
         let str4 = "text-subtle";
-        const Text2 = tmp4(5929).Text;
+        const Text2 = tmp4(5919).Text;
         const tmp23 = hasOwnProperty;
         if ("danger" === variant) {
           str4 = "text-feedback-critical";

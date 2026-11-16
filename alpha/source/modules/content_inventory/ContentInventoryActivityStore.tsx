@@ -1,18 +1,18 @@
 // Module ID: 15709
 // Function ID: 15710
 // Name: ContentInventoryActivityStore
-// Dependencies: [6068, 10206, 8421, 8419, 10222, 6069, 9478, 9477, 12, 504, 572, 2]
+// Dependencies: [6058, 10206, 8421, 8419, 10222, 6059, 9478, 9477, 12, 504, 572, 2]
 
 // Module 15709 (ContentInventoryActivityStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ActivityTypes from "ActivityTypes" /* 6069 */;
+import ActivityTypes from "ActivityTypes" /* 6059 */;
 import utils from "utils" /* 8419 */;
 import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8421 */;
 import matchUtils from "matchUtils" /* 9477 */;
 import ContentInventoryTypes from "ContentInventoryTypes" /* 9478 */;
-import PresenceStore from "PresenceStore" /* 6068 */;
+import PresenceStore from "PresenceStore" /* 6058 */;
 import ContentInventoryStore from "ContentInventoryStore" /* 10206 */;
 import size from "module_2" /* 2 */;
 
@@ -43,7 +43,7 @@ function getMatchingActivity(author_type) {
             }
             return result;
           }
-          let tmp4 = type.type !== tmp(6069).ActivityTypes.LISTENING;
+          let tmp4 = type.type !== tmp(6059).ActivityTypes.LISTENING;
           if (!tmp4) {
             const tmpResult5 = ContentInventoryTypes;
             tmp4 = !tmpResult5.isListenedSessionEntry(author_type);

@@ -1,7 +1,7 @@
 // Module ID: 17121
 // Function ID: 17122
 // Name: UserProfileEffectEditButton
-// Dependencies: [19, 17, 7962, 9490, 1083, 21, 5306, 575, 8541, 11832, 5552, 17122, 2121, 1113, 17099, 7418, 6020, 11798, 9493, 1187, 15528, 2]
+// Dependencies: [19, 17, 7962, 9490, 1083, 21, 5306, 575, 8541, 11832, 5542, 17122, 2121, 1113, 17099, 7418, 6010, 11798, 9493, 1187, 15528, 2]
 // Exports: default
 
 // Module 17121 (UserProfileEffectEditButton)
@@ -9,7 +9,7 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import Constants2 from "Constants" /* 7962 */;
 import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9490 */;
 import react from "react" /* 19 */;

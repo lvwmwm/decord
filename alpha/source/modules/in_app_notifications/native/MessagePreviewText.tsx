@@ -1,7 +1,7 @@
 // Module ID: 11043
 // Function ID: 11044
 // Name: MessagePreviewText
-// Dependencies: [19, 17, 5155, 11026, 1083, 21, 5306, 1360, 575, 11044, 11045, 11025, 5929, 6020, 1090, 11070, 6749, 11075, 11076, 1094, 5952, 1113, 5994, 2]
+// Dependencies: [19, 17, 5155, 11026, 1083, 21, 5306, 1360, 575, 11044, 11045, 11025, 5919, 6010, 1090, 11070, 6739, 11075, 11076, 1094, 5942, 1113, 5984, 2]
 // Exports: default
 
 // Module 11043 (MessagePreviewText)
@@ -10,11 +10,11 @@ import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
 import MessageEmbedTypes from "MessageEmbedTypes" /* 1094 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import isForwardMessageDefault from "isForwardMessage" /* 5952 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 5994 */;
-import FastImageDefault from "FastImage" /* 6020 */;
-import useMessageAuthor from "useMessageAuthor" /* 6749 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import isForwardMessageDefault from "isForwardMessage" /* 5942 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 5984 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import useMessageAuthor from "useMessageAuthor" /* 6739 */;
 import InAppNotificationUtils from "InAppNotificationUtils" /* 11025 */;
 import useTruncatedGradientColorsDefault from "useTruncatedGradientColors" /* 11044 */;
 import ChannelRowPreview2 from "ChannelRowPreview" /* 11045 */;
@@ -271,7 +271,7 @@ export default function MessagePreviewText(message) {
         const tmp18 = metroImportAll;
         if (tmp18Result) {
           const obj12 = { variant: "heading-sm/medium", color: "text-link", lineClamp: metroImportDefault, children: secondaryText };
-          tmp18Result = tmp18(tmp(5929).Text, obj12);
+          tmp18Result = tmp18(tmp(5919).Text, obj12);
         }
         const obj13 = { children: items2 };
         items2[1] = tmp18Result;

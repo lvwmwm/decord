@@ -1,15 +1,15 @@
 // Module ID: 17764
 // Function ID: 17765
 // Name: QuestBottomSheetProgressCard
-// Dependencies: [19, 17, 1388, 21, 5306, 575, 10131, 10170, 504, 10151, 8829, 1113, 5929, 5346, 7445, 17737, 10146, 17729, 10128, 17723, 7428, 9730, 5893, 6020, 17765, 7606, 2]
+// Dependencies: [19, 17, 1388, 21, 5306, 575, 10131, 10170, 504, 10151, 8829, 1113, 5919, 6962, 7445, 17737, 10146, 17729, 10128, 17723, 7428, 9730, 5883, 6010, 17765, 7606, 2]
 // Exports: QuestBottomSheetProgressCardInGameTask, QuestBottomSheetProgressCardPlayStreamTask, QuestBottomSheetProgressCardWatchTask
 
 // Module 17764 (QuestBottomSheetProgressCard)
 import nativeDefault from "native" /* 575 */;
 import intl8 from "intl" /* 1113 */;
-import FirstPartyQuestTaskTypes from "FirstPartyQuestTaskTypes" /* 5346 */;
-import LinearGradientDefault from "LinearGradient" /* 5893 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import LinearGradientDefault from "LinearGradient" /* 5883 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import FirstPartyQuestTaskTypes from "FirstPartyQuestTaskTypes" /* 6962 */;
 import Card_Card from "Card/Card" /* 7445 */;
 import hooks_QuestHooks from "hooks/QuestHooks" /* 10131 */;
 import AssetUtils from "AssetUtils" /* 10146 */;
@@ -181,14 +181,14 @@ export function QuestBottomSheetProgressCardPlayStreamTask(quest) {
   let tmp18Result = null != memo;
   if (tmp18Result) {
     let obj6 = { style: tmp.instructionsText, variant: "body-sm/semibold", color: "text-subtle", children: memo };
-    tmp18Result = tmp18(tmp2(5929).Text, obj6);
+    tmp18Result = tmp18(tmp2(5919).Text, obj6);
   }
   items2[1] = tmp18Result;
   items3 = [c8(tmp17, obj4), ];
   if (isQuestProgressing) {
     const obj7 = { style: tmp.footer, children: defaultRewardName(Text, obj8) };
     obj8 = { color: "text-feedback-positive", variant: "body-sm/semibold", children: intl.format(tmp2(1113).t.lIFg6I, obj9) };
-    Text = tmp2(5929).Text;
+    Text = tmp2(5919).Text;
     intl = tmp2(1113).intl;
     obj9 = { gameName: quest.config.messages.gameTitle };
     isQuestProgressing = tmp18(tmp17, obj7);

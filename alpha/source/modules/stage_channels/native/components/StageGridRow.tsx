@@ -1,12 +1,12 @@
 // Module ID: 13094
 // Function ID: 13095
 // Name: StageGridRow
-// Dependencies: [19, 17, 21, 5306, 13087, 6943, 8560, 13095, 13086, 2]
+// Dependencies: [19, 17, 21, 5306, 13087, 6933, 8560, 13095, 13086, 2]
 
 // Module 13094 (StageGridRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import StageChannelParticipants from "StageChannelParticipants" /* 6943 */;
+import StageChannelParticipants from "StageChannelParticipants" /* 6933 */;
 import useIsScreenLandscape from "useIsScreenLandscape" /* 8560 */;
 import SpeakerTileDefault from "SpeakerTile" /* 13086 */;
 import MediaTileDefault from "MediaTile" /* 13095 */;

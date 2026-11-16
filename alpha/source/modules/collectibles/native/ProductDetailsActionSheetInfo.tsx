@@ -1,7 +1,7 @@
 // Module ID: 15489
 // Function ID: 15490
 // Name: ProductDetailsActionSheetInfo
-// Dependencies: [17, 21, 5306, 575, 15490, 5929, 8497, 9518, 1113, 15491, 2114, 2]
+// Dependencies: [17, 21, 5306, 575, 15490, 5919, 8497, 9518, 1113, 15491, 2114, 2]
 // Exports: default
 
 // Module 15489 (ProductDetailsActionSheetInfo)
@@ -9,7 +9,7 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 2114 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import CollectiblesUtils from "CollectiblesUtils" /* 8497 */;
 import useProductPurchaseState from "useProductPurchaseState" /* 9518 */;
 import useProductDescription from "useProductDescription" /* 15490 */;
@@ -47,12 +47,12 @@ function ProductPurchaseStatus(product) {
   const tmp7 = View;
   if (productPurchaseState.isPurchased) {
     const obj3 = { variant: "body-md/semibold", color: "interactive-text-active", children: intl2.string(intl3.t["6cfuDj"]) };
-    const Text2 = tmp(5929).Text;
+    const Text2 = tmp(5919).Text;
     intl2 = tmp(1113).intl;
     children = tmp6(Text2, obj3);
   } else if (tmp5) {
     const obj4 = { variant: "body-md/semibold", color: "interactive-text-active", children: intl.string(intl3.t.BEjTij) };
-    const Text = tmp(5929).Text;
+    const Text = tmp(5919).Text;
     intl = tmp(1113).intl;
     children = tmp6(Text, obj4);
   } else {

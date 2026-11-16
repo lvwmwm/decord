@@ -1,12 +1,12 @@
 // Module ID: 12788
 // Function ID: 12789
 // Name: useVideoStreamError
-// Dependencies: [502, 12789, 6075, 504, 6257, 2]
+// Dependencies: [502, 12789, 6065, 504, 6247, 2]
 // Exports: default, useVideoStreamErrorContext
 
 // Module 12788 (useVideoStreamError)
-import Constants from "Constants" /* 6075 */;
-import AVError from "AVError" /* 6257 */;
+import Constants from "Constants" /* 6065 */;
+import AVError from "AVError" /* 6247 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import AVErrorStore from "AVErrorStore" /* 12789 */;
 import size from "module_2" /* 2 */;

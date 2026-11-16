@@ -1,12 +1,12 @@
-// Module ID: 19618
-// Function ID: 19619
+// Module ID: 19620
+// Function ID: 19621
 // Name: ClearAllIncomingRequestsAlertModal
-// Dependencies: [5, 19, 21, 8137, 6274, 1113, 6274, 2]
+// Dependencies: [5, 19, 21, 8137, 6264, 1113, 6264, 2]
 // Exports: default
 
-// Module 19618 (ClearAllIncomingRequestsAlertModal)
+// Module 19620 (ClearAllIncomingRequestsAlertModal)
 import intl5 from "intl" /* 1113 */;
-import AlertModal2 from "AlertModal" /* 6274 */;
+import AlertModal2 from "AlertModal" /* 6264 */;
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 8137 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;

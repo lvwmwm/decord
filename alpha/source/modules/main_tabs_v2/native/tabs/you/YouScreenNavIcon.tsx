@@ -1,13 +1,13 @@
 // Module ID: 10525
 // Function ID: 10526
 // Name: YouScreenNavIcon
-// Dependencies: [19, 17, 21, 10526, 575, 9503, 5306, 10527, 1113, 7997, 5483, 5929, 2]
+// Dependencies: [19, 17, 21, 10526, 575, 9503, 5306, 10527, 1113, 7997, 5473, 5919, 2]
 
 // Module 10525 (YouScreenNavIcon)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import mergeProps from "mergeProps" /* 5483 */;
+import mergeProps from "mergeProps" /* 5473 */;
 import ClipView from "ClipView" /* 9503 */;
 import getIconSize from "getIconSize" /* 10526 */;
 import YouScreenNavIconMeasurer from "YouScreenNavIconMeasurer" /* 10527 */;
@@ -88,7 +88,7 @@ const memoResult = react.memo(function YouScreenNavIcon(arg0) {
   items2 = [tmp7, ];
   const obj8 = { style: tmp4.label, variant: "body-xs/semibold", color: "text-default", maxFontSizeMultiplier: 2, lineClamp: 1, children: label };
   tmpResult = mergeProps;
-  const Text = tmp(5929).Text;
+  const Text = tmp(5919).Text;
   const tmp14 = hasOwnProperty;
   const tmp15 = React3;
   if (label == null) {

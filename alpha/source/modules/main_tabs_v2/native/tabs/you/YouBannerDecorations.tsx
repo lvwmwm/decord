@@ -1,7 +1,7 @@
 // Module ID: 10509
 // Function ID: 10510
 // Name: YouBannerDecorations
-// Dependencies: [19, 17, 2190, 1388, 5152, 1390, 21, 1360, 575, 5306, 10510, 9305, 5348, 5139, 1113, 504, 8482, 8590, 8601, 5313, 671, 2174, 10511, 10512, 10132, 10514, 10517, 10128, 5341, 10518, 10525, 10562, 10564, 9436, 10569, 10527, 5893, 2]
+// Dependencies: [19, 17, 2190, 1388, 5152, 1390, 21, 1360, 575, 5306, 10510, 9305, 5338, 5139, 1113, 504, 8482, 8590, 8601, 5313, 671, 2174, 10511, 10512, 10132, 10514, 10517, 10128, 6957, 10518, 10525, 10562, 10564, 9436, 10569, 10527, 5883, 2]
 // Exports: getFloatingNavBottomMargin, useHasSettingsBadge
 
 // Module 10509 (YouBannerDecorations)
@@ -12,8 +12,8 @@ import PremiumConstants from "PremiumConstants" /* 1390 */;
 import IntlLoaderStore from "IntlLoaderStore" /* 2190 */;
 import dismissible_content from "dismissible_content" /* 5139 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
-import QuestTypes from "QuestTypes" /* 5341 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5348 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5338 */;
+import QuestTypes from "QuestTypes" /* 6957 */;
 import useTrialOffer from "useTrialOffer" /* 9305 */;
 import QuestUtils from "QuestUtils" /* 10128 */;
 import PromotionsHooks from "PromotionsHooks" /* 10510 */;

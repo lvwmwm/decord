@@ -1,16 +1,16 @@
 // Module ID: 12790
 // Function ID: 12791
 // Name: VideoEmptyState
-// Dependencies: [19, 17, 5155, 1072, 21, 5306, 575, 12791, 1187, 1113, 6257, 504, 5899, 6862, 6808, 5929, 5936, 2]
+// Dependencies: [19, 17, 5155, 1072, 21, 5306, 575, 12791, 1187, 1113, 6247, 504, 5889, 6852, 6798, 5919, 5926, 2]
 // Exports: default
 
 // Module 12790 (VideoEmptyState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import useMountEffectDefault from "useMountEffect" /* 5899 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6808 */;
-import StreamActionCreators from "StreamActionCreators" /* 6862 */;
+import useMountEffectDefault from "useMountEffect" /* 5889 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6798 */;
+import StreamActionCreators from "StreamActionCreators" /* 6852 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import Fragment from "Fragment" /* 21 */;
@@ -87,13 +87,13 @@ export default function VideoEmptyState(style) {
     tmp8Result = null;
   }
   if (null != avError) {
-    const obj6 = stream(6257);
+    const obj6 = stream(6247);
     errorCode = obj6.getErrorInfo(avError).errorCode;
   } else {
     errorCode = null;
     if (type === obj.STREAM_FAILED) {
-      const obj5 = stream(6257);
-      errorCode = obj5.getErrorInfo(stream(6257).AVError.STREAM_FAILED_TO_START).errorCode;
+      const obj5 = stream(6247);
+      errorCode = obj5.getErrorInfo(stream(6247).AVError.STREAM_FAILED_TO_START).errorCode;
     }
   }
   const items1 = [ChannelStore];
@@ -121,7 +121,7 @@ export default function VideoEmptyState(style) {
   const tmp26 = closure_7;
   if (tmp29) {
     const obj9 = { variant: "body-sm/semibold", color: "text-muted", selectable: true, children: intl3.formatToPlainString(stream(1113).t.ejOT95, obj10) };
-    const Text = tmp23(5929).Text;
+    const Text = tmp23(5919).Text;
     intl3 = tmp23(1113).intl;
     obj10 = { errorCode };
     tmp29 = closure_5(Text, obj9);
@@ -143,7 +143,7 @@ export default function VideoEmptyState(style) {
           stopStream(obj.encodeStreamKey(stream));
         }
     };
-    Button = tmp23(5936).Button;
+    Button = tmp23(5926).Button;
     intl4 = tmp23(1113).intl;
     tmp31 = closure_5(tmp27, obj11);
   }

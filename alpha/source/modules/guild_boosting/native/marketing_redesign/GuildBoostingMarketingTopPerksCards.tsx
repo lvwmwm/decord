@@ -1,16 +1,16 @@
 // Module ID: 16027
 // Function ID: 16028
 // Name: GuildBoostingMarketingTopPerksCards
-// Dependencies: [19, 17, 5307, 21, 5306, 575, 1113, 6020, 16028, 5923, 16029, 16030, 5929, 10771, 2]
+// Dependencies: [19, 17, 5307, 21, 5306, 575, 1113, 6010, 16028, 5913, 16029, 16030, 5919, 10771, 2]
 // Exports: default
 
 // Module 16027 (GuildBoostingMarketingTopPerksCards)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import LottieAnimationViewDefault from "LottieAnimationView" /* 5923 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import LottieAnimationViewDefault from "LottieAnimationView" /* 5913 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import AssetRegistryDefault from "AssetRegistry" /* 16028 */;
 import _mod16029 from "module_16029" /* 16029 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 16030 */;

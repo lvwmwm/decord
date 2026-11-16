@@ -1,15 +1,15 @@
 // Module ID: 16943
 // Function ID: 16944
 // Name: getEmbeddedActivityPopoutWindowKey
-// Dependencies: [2165, 6863, 5154, 5959, 1072, 2151, 5977, 5227, 504, 2]
+// Dependencies: [2165, 6853, 5154, 5949, 1072, 2151, 5967, 5227, 504, 2]
 // Exports: default, getEmbeddedActivityPopoutWindowKeyForApplication, getEmbeddedActivityPopoutWindowKeyForChannel, usePopoutWindowForActivity
 
 // Module 16943 (getEmbeddedActivityPopoutWindowKey)
 import Constants from "Constants" /* 1072 */;
 import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 5227 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5959 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5949 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
-import PopoutWindowStore from "PopoutWindowStore" /* 6863 */;
+import PopoutWindowStore from "PopoutWindowStore" /* 6853 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
 import size from "module_2" /* 2 */;
 

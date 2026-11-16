@@ -1,7 +1,7 @@
 // Module ID: 8705
 // Function ID: 8706
 // Name: MemberSafetySupplementalUtils
-// Dependencies: [5, 1072, 1113, 7087, 8706, 5547, 5313, 1285, 2]
+// Dependencies: [5, 1072, 1113, 7087, 8706, 5537, 5313, 1285, 2]
 // Exports: fetchMemberSupplemental, getIntegrationLabel, getJoinSourceTypeLabel, registerFetchedSupplementals, useGetIntegrationIconString
 
 // Module 8705 (MemberSafetySupplementalUtils)

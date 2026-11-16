@@ -1,13 +1,13 @@
 // Module ID: 15173
 // Function ID: 15174
 // Name: ConjureAppChannelSheetHeader
-// Dependencies: [19, 21, 5306, 6337, 575, 13784, 5929, 13788, 2]
+// Dependencies: [19, 21, 5306, 6327, 575, 13784, 5919, 13788, 2]
 // Exports: default
 
 // Module 15173 (ConjureAppChannelSheetHeader)
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import Stack_Stack from "Stack/Stack" /* 6337 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import Stack_Stack from "Stack/Stack" /* 6327 */;
 import ConjureAppSheetIconDefault from "ConjureAppSheetIcon" /* 13784 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

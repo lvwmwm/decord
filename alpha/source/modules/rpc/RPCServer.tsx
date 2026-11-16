@@ -1,12 +1,12 @@
 // Module ID: 7300
 // Function ID: 7301
 // Name: RPCServer
-// Dependencies: [5, 6761, 1072, 12, 7301, 7303, 7305, 1256, 38, 7306, 7309, 5150, 1089, 2]
+// Dependencies: [5, 6751, 1072, 12, 7301, 7303, 7305, 1256, 38, 7306, 7309, 5150, 1089, 2]
 
 // Module 7300 (RPCServer)
 import _modDef12 from "module_12" /* 12 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import Constants2 from "Constants" /* 6761 */;
+import Constants2 from "Constants" /* 6751 */;
 import transformUserDefault from "transformUser" /* 7301 */;
 import RPCErrorDefault from "RPCError" /* 7303 */;
 import validateScopeDefault from "validateScope" /* 7305 */;
@@ -87,7 +87,7 @@ class RPCServer {
     this.onDisconnect(abortController, arg1);
   }
   handleRequest(socket, arg1) {
-    const f128533 = function() {
+    const f128548 = function() {
       return closure_0(...arguments);
     };
     let closure_2 = arg1;
@@ -221,8 +221,8 @@ class RPCServer {
         }
       })();
     });
-    const then2 = then(f128533).then;
-    then(f128533);
+    const then2 = then(f128548).then;
+    then(f128548);
     let closure_0 = self((command) => {
       let closure_1;
       let c3 = 0;

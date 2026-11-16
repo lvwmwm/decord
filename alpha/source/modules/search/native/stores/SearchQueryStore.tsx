@@ -1,7 +1,7 @@
 // Module ID: 14754
 // Function ID: 14755
 // Name: SearchQueryStore
-// Dependencies: [5155, 5248, 1388, 9066, 9065, 1072, 5954, 1113, 14747, 14755, 2161, 504, 572, 2]
+// Dependencies: [5155, 5248, 1388, 9066, 9065, 1072, 5944, 1113, 14747, 14755, 2161, 504, 572, 2]
 
 // Module 14754 (SearchQueryStore)
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -193,7 +193,7 @@ class SearchQueryStateManager {
       let items1;
       let channelName;
       if (null != channel) {
-        const obj2 = obj(5954);
+        const obj2 = obj(5944);
         channelName = obj2.computeChannelName(channel, UserStore, RelationshipStore);
       }
       if (null == channelName) {

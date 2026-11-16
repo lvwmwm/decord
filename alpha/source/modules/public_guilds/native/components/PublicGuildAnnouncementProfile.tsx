@@ -1,7 +1,7 @@
 // Module ID: 12619
 // Function ID: 12620
 // Name: PublicGuildAnnouncementProfile
-// Dependencies: [19, 17, 21, 5306, 575, 5566, 6020, 9275, 1187, 12620, 5929, 1113, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 5556, 6010, 9275, 1187, 12620, 5919, 1113, 2]
 // Exports: default
 
 // Module 12619 (PublicGuildAnnouncementProfile)
@@ -9,9 +9,9 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5566 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5556 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import PublicGuildsUtils from "PublicGuildsUtils" /* 9275 */;
 import AssetRegistryDefault from "AssetRegistry" /* 12620 */;
 import react from "react" /* 19 */;

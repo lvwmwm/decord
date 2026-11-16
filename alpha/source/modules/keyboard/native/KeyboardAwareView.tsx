@@ -1,7 +1,7 @@
 // Module ID: 7474
 // Function ID: 7475
 // Name: KeyboardAwareView
-// Dependencies: [32, 19, 17, 1498, 21, 2023, 5503, 1628, 5914, 7475, 1655, 2]
+// Dependencies: [32, 19, 17, 1498, 21, 2023, 5493, 1628, 5904, 7475, 1655, 2]
 
 // Module 7474 (KeyboardAwareView)
 import react_native from "react-native" /* 17 */;
@@ -40,11 +40,11 @@ const memoResult = react.memo(function KeyboardAwareView(keyboardHeightOffset) {
   const obj2 = num(2023);
   let systemKeyboardHeight = obj2.getSystemKeyboardHeight();
   if (0 === systemKeyboardHeight) {
-    const tmpResult = tmp(5503);
+    const tmpResult = tmp(5493);
     let keyboardType = tmpResult.getKeyboardType();
     let num2 = 0;
     if (keyboardType !== tmp(1628).KeyboardTypes.SYSTEM) {
-      const tmpResult3 = tmp(5914);
+      const tmpResult3 = tmp(5904);
       num2 = tmpResult3.getCustomKeyboardHeight();
     }
     systemKeyboardHeight = num2;

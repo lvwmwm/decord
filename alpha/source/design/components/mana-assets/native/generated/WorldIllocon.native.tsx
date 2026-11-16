@@ -1,12 +1,12 @@
 // Module ID: 15062
 // Function ID: 15063
 // Name: WorldIllocon
-// Dependencies: [19, 21, 15063, 15064, 15065, 7755, 6020, 2]
+// Dependencies: [19, 21, 15063, 15064, 15065, 7755, 6010, 2]
 // Exports: WorldIllocon
 
 // Module 15062 (WorldIllocon)
 import Fragment from "Fragment" /* 21 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import react_native from "react-native" /* 7755 */;
 import _modDef15063 from "module_15063" /* 15063 */;
 import _modDef15064 from "module_15064" /* 15064 */;

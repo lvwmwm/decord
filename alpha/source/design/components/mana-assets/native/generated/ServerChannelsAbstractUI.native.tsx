@@ -1,7 +1,7 @@
 // Module ID: 16080
 // Function ID: 16081
 // Name: ServerChannelsAbstractUI
-// Dependencies: [19, 21, 16081, 16082, 16083, 7755, 6020, 2]
+// Dependencies: [19, 21, 16081, 16082, 16083, 7755, 6010, 2]
 // Exports: ServerChannelsAbstractUI
 
 // Module 16080 (ServerChannelsAbstractUI)

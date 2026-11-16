@@ -1,7 +1,7 @@
 // Module ID: 7720
 // Function ID: 7721
 // Name: GuildIcon
-// Dependencies: [32, 19, 7721, 5173, 1072, 21, 5306, 575, 2153, 7416, 2025, 6020, 7722, 299, 2]
+// Dependencies: [32, 19, 7721, 5173, 1072, 21, 5306, 575, 2153, 7416, 2025, 6010, 7722, 299, 2]
 
 // Module 7720 (GuildIcon)
 import Fragment from "Fragment" /* 21 */;

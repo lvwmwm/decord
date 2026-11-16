@@ -1,13 +1,13 @@
 // Module ID: 15380
 // Function ID: 15381
 // Name: BoostedGuildTierProgressCircle
-// Dependencies: [19, 17, 1072, 21, 5306, 575, 15381, 15385, 15386, 15387, 9241, 6020, 9235, 13341, 5929, 2]
+// Dependencies: [19, 17, 1072, 21, 5306, 575, 15381, 15385, 15386, 15387, 9241, 6010, 9235, 13341, 5919, 2]
 // Exports: default
 
 // Module 15380 (BoostedGuildTierProgressCircle)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import GuildBoostingUtils from "GuildBoostingUtils" /* 9235 */;
 import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 9241 */;
 import ProgressCircleDefault from "ProgressCircle" /* 13341 */;
@@ -85,7 +85,7 @@ export default function BoostedGuildTierProgressCircle(arg0) {
       const obj5 = { source: tmp2Result4, style: tmp.guildTierIcon, accessibilityElementsHidden: true, importantForAccessibility: "no" };
       const items = [metroRequire(tmp12, obj5), ];
       const obj6 = { style: tmp.guildTierName, variant: "body-xs/semibold", color: "interactive-text-active", children: tmp19Result.getTierName(guild.premiumTier) };
-      const Text = tmp19(5929).Text;
+      const Text = tmp19(5919).Text;
       tmp19Result = GuildBoostingUtils;
       items[1] = metroRequire(Text, obj6);
       obj4.children = items;

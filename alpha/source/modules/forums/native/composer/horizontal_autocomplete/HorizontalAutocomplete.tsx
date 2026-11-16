@@ -1,17 +1,17 @@
 // Module ID: 11624
 // Function ID: 11625
 // Name: HorizontalAutocomplete
-// Dependencies: [19, 17, 5307, 5212, 5177, 5248, 1388, 1072, 21, 5306, 6826, 575, 1655, 5899, 5548, 504, 1187, 5929, 5372, 7942, 7959, 11625, 8033, 5954, 6020, 2]
+// Dependencies: [19, 17, 5307, 5212, 5177, 5248, 1388, 1072, 21, 5306, 6816, 575, 1655, 5889, 5538, 504, 1187, 5919, 5362, 7942, 7959, 11625, 8033, 5944, 6010, 2]
 
 // Module 11624 (HorizontalAutocomplete)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import UserUtilsDefault from "UserUtils" /* 5372 */;
-import timing_timing from "timing/timing" /* 5548 */;
-import useMountEffectDefault from "useMountEffect" /* 5899 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import UserUtilsDefault from "UserUtils" /* 5362 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import useMountEffectDefault from "useMountEffect" /* 5889 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import RoleIconUtils from "RoleIconUtils" /* 7942 */;
 import RoleIconDefault from "RoleIcon" /* 7959 */;
 import AssetRegistryDefault from "AssetRegistry" /* 11625 */;
@@ -25,7 +25,7 @@ import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
-import TextStyles from "TextStyles" /* 6826 */;
+import TextStyles from "TextStyles" /* 6816 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -190,10 +190,10 @@ let obj5 = {
     const obj = { onPress, children: items };
     items = [closure_11(channel(1187).Icon, { source: channelIconWithGuild }), ];
     const tmp8 = closure_11(channel(1187).Icon, { source: channelIconWithGuild });
-    const tmp2Result2 = channel(5954);
+    const tmp2Result2 = channel(5944);
     const channelName = tmp2Result2.computeChannelName(channel, UserStore, RelationshipStore);
     const obj2 = { style: tmp.channelName, variant: "body-sm/semibold", children: channelName };
-    items[1] = closure_11(channel(5929).Text, obj2);
+    items[1] = closure_11(channel(5919).Text, obj2);
     return closure_12(HorizontalAutocompleteOption, obj);
   },
   Emoji(url) {

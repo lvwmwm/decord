@@ -1,13 +1,13 @@
 // Module ID: 13496
 // Function ID: 13497
 // Name: useOptionAnimations
-// Dependencies: [32, 19, 5548, 1655, 1708, 2]
+// Dependencies: [32, 19, 5538, 1655, 1708, 2]
 // Exports: useOptionEnteringAnimation
 
 // Module 13496 (useOptionAnimations)
 import _mod1655 from "module_1655" /* 1655 */;
 import _mod1708 from "module_1708" /* 1708 */;
-import timing_timing from "timing/timing" /* 5548 */;
+import timing_timing from "timing/timing" /* 5538 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

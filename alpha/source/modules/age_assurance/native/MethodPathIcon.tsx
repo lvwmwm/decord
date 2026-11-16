@@ -1,7 +1,7 @@
 // Module ID: 8262
 // Function ID: 8263
 // Name: MethodPathIcon
-// Dependencies: [19, 17, 21, 5306, 575, 5902, 8263, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 5892, 8263, 2]
 // Exports: default
 
 // Module 8262 (MethodPathIcon)

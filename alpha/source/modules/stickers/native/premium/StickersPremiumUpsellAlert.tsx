@@ -1,7 +1,7 @@
 // Module ID: 11379
 // Function ID: 11380
 // Name: StickersPremiumUpsellAlert
-// Dependencies: [19, 17, 9302, 1072, 1390, 21, 11380, 1113, 575, 11381, 11382, 5306, 1187, 5929, 9587, 10956, 1496, 7918, 6340, 1256, 9579, 7428, 7430, 6020, 11383, 2]
+// Dependencies: [19, 17, 9302, 1072, 1390, 21, 11380, 1113, 575, 11381, 11382, 5306, 1187, 5919, 9587, 10956, 1496, 7918, 6330, 1256, 9579, 7428, 7430, 6010, 11383, 2]
 // Exports: default
 
 // Module 11379 (StickersPremiumUpsellAlert)
@@ -9,7 +9,7 @@ import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import openPremiumModalDefault from "openPremiumModal" /* 9579 */;
 import AssetRegistryDefault from "AssetRegistry" /* 11380 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 11381 */;
@@ -147,7 +147,7 @@ export default function StickersPremiumUpsellAlert(arg0) {
     style: items,
     children: items1
   };
-  const tmp3Result = analyticsLocations(6340);
+  const tmp3Result = analyticsLocations(6330);
   intl = intl4.intl;
   intl2 = intl4.intl;
   items = [tmp.alert, ];
@@ -170,10 +170,10 @@ export default function StickersPremiumUpsellAlert(arg0) {
     children: items2
   };
   const obj6 = { source: analyticsLocations(11383), style: tmp.imageHeader };
-  const tmp3Result2 = analyticsLocations(6020);
+  const tmp3Result2 = analyticsLocations(6010);
   items2 = [closure_13(tmp3Result2, obj6), , ];
   const obj7 = { style: tmp.description, variant: "body-md/medium", children: format(TBsJfQ, { monthlyPrice: priceString }) };
-  const Text = tmp9(5929).Text;
+  const Text = tmp9(5919).Text;
   const intl3 = tmp9(1113).intl;
   format = intl3.format;
   TBsJfQ = tmp9(1113).t.TBsJfQ;

@@ -1,7 +1,7 @@
 // Module ID: 12780
 // Function ID: 12781
 // Name: selectAndWaitForVoiceChannelJoin
-// Dependencies: [5, 5209, 6935, 2]
+// Dependencies: [5, 5209, 6925, 2]
 // Exports: default
 
 // Module 12780 (selectAndWaitForVoiceChannelJoin)

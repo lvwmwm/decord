@@ -1,12 +1,12 @@
 // Module ID: 9407
 // Function ID: 9408
 // Name: openProductDetailsActionSheet
-// Dependencies: [8496, 8484, 5552, 9408, 2121, 2]
+// Dependencies: [8496, 8484, 5542, 9408, 2121, 2]
 // Exports: openProductDetailsActionSheet, openProductDetailsActionSheetForSku
 
 // Module 9407 (openProductDetailsActionSheet)
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import CollectiblesActionCreators from "CollectiblesActionCreators" /* 8484 */;
 import CollectiblesProductUtils from "CollectiblesProductUtils" /* 8496 */;
 import size from "module_2" /* 2 */;

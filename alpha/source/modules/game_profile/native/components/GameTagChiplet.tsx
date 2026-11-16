@@ -1,9 +1,9 @@
-// Module ID: 20040
-// Function ID: 20041
+// Module ID: 20042
+// Function ID: 20043
 // Name: GameTagChiplet
-// Dependencies: [19, 21, 5306, 10664, 10286, 10654, 6020, 2]
+// Dependencies: [19, 21, 5306, 10664, 10286, 10654, 6010, 2]
 
-// Module 20040 (GameTagChiplet)
+// Module 20042 (GameTagChiplet)
 import Fragment from "Fragment" /* 21 */;
 import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 10286 */;
 import GuildTag from "GuildTag" /* 10654 */;
@@ -13,7 +13,7 @@ import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let tmp3;
-const FastImageDefault = tmp3(6020);
+const FastImageDefault = tmp3(6010);
 const jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles({ container: { flexShrink: 1, minWidth: 0, overflow: "hidden" }, text: { flexShrink: 1, minWidth: 0 }, image: { width: 12, height: 12 } });
 const memoResult = react.memo(function GameTagChiplet(game) {

@@ -1,15 +1,15 @@
-// Module ID: 18119
-// Function ID: 18120
+// Module ID: 18121
+// Function ID: 18122
 // Name: EmailSettingsActionCreators
-// Dependencies: [5, 16241, 18120, 1072, 6851, 1264, 5167, 572, 18121, 2]
+// Dependencies: [5, 16241, 18122, 1072, 6841, 1264, 5167, 572, 18123, 2]
 // Exports: fetchEmailSettings, updateEmailSetting, updateMarketingEmailSettings
 
-// Module 18119 (EmailSettingsActionCreators)
+// Module 18121 (EmailSettingsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6851 */;
-import EmailSettingsConstants from "EmailSettingsConstants" /* 18120 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6841 */;
+import EmailSettingsConstants from "EmailSettingsConstants" /* 18122 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import EmailSettingsStore from "EmailSettingsStore" /* 16241 */;
 import size from "module_2" /* 2 */;

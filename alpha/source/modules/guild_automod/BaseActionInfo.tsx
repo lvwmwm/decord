@@ -1,13 +1,13 @@
-// Module ID: 20461
-// Function ID: 20462
+// Module ID: 20464
+// Function ID: 20465
 // Name: BaseActionInfo
-// Dependencies: [5155, 5248, 1388, 14166, 5220, 1113, 5954, 2]
+// Dependencies: [5155, 5248, 1388, 14166, 5220, 1113, 5944, 2]
 // Exports: getBaseActionInfo
 
-// Module 20461 (BaseActionInfo)
+// Module 20464 (BaseActionInfo)
 import intl13 from "intl" /* 1113 */;
 import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 5220 */;
-import useChannelName from "useChannelName" /* 5954 */;
+import useChannelName from "useChannelName" /* 5944 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import RelationshipStore from "RelationshipStore" /* 5248 */;
 import UserStore from "UserStore" /* 1388 */;

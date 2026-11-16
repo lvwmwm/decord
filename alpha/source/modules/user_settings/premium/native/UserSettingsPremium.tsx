@@ -1,7 +1,7 @@
 // Module ID: 9581
 // Function ID: 9582
 // Name: UserSettingsPremium
-// Dependencies: [32, 19, 17, 1388, 2178, 2179, 8530, 2120, 9302, 1072, 1390, 21, 5306, 9582, 1630, 7918, 7937, 7812, 5899, 1256, 504, 1502, 5172, 9583, 9585, 9587, 8533, 9686, 9310, 9621, 9606, 9932, 9315, 7809, 7813, 2174, 5118, 9933, 9976, 9980, 9983, 10954, 15331, 9718, 1380, 2]
+// Dependencies: [32, 19, 17, 1388, 2178, 2179, 8530, 2120, 9302, 1072, 1390, 21, 5306, 9582, 1630, 7918, 7937, 7812, 5889, 1256, 504, 1502, 5172, 9583, 9585, 9587, 8533, 9686, 9310, 9621, 9606, 9932, 9315, 7809, 7813, 2174, 5118, 9933, 9976, 9980, 9983, 10954, 15331, 9718, 1380, 2]
 // Exports: default
 
 // Module 9581 (UserSettingsPremium)
@@ -41,7 +41,7 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp2;
-const useMountEffectDefault = tmp2(5899);
+const useMountEffectDefault = tmp2(5889);
 const AnalyticsLocationDefault = tmp2(7937);
 const BlockedPaymentsCountryDisplayDefault = tmp2(9718);
 const PremiumSubscriptionDetailsDefault = tmp2(9933);
@@ -73,7 +73,7 @@ export default function UserSettingsPremium(applicationId) {
   let tmp30Result;
   let tmp30Result5;
   let tmp9;
-  const f98440 = () => {
+  const f98453 = () => {
     const items = [premiumTrialOffer.getPremiumTypeSubscription(), premiumTrialOffer.hasFetchedSubscriptions()];
     return items;
   };
@@ -134,8 +134,8 @@ export default function UserSettingsPremium(applicationId) {
   });
   let obj2 = applicationId(504);
   const items3 = [premiumTrialOffer];
-  [tmp9, tmp10] = obj2.useStateFromStoresArray(items3, f98440);
-  _slicedToArray(obj2.useStateFromStoresArray(items3, f98440), 2);
+  [tmp9, tmp10] = obj2.useStateFromStoresArray(items3, f98453);
+  _slicedToArray(obj2.useStateFromStoresArray(items3, f98453), 2);
   let obj3 = applicationId(1502);
   state = obj3.useNavigation();
   const items4 = [state2];

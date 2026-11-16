@@ -1,15 +1,15 @@
 // Module ID: 12085
 // Function ID: 12086
 // Name: UserProfilePersonalWidgetCard
-// Dependencies: [32, 19, 17, 1072, 21, 5306, 575, 12086, 12087, 5929, 1113, 5131, 12088, 5377, 6020, 5893, 8621, 12089, 9436, 12097, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5306, 575, 12086, 12087, 5919, 1113, 5131, 12088, 5367, 6010, 5883, 8621, 12089, 9436, 12097, 2]
 // Exports: default
 
 // Module 12085 (UserProfilePersonalWidgetCard)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import native from "native" /* 5377 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import native from "native" /* 5367 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import GifTagDefault from "GifTag" /* 8621 */;
 import PersonalWidgetExpandCollapseContext from "PersonalWidgetExpandCollapseContext" /* 12086 */;
 import PersonalWidgetMarkupUtils from "PersonalWidgetMarkupUtils" /* 12087 */;
@@ -77,7 +77,7 @@ function PersonalWidgetShowMoreButton() {
       children: React4(Text, obj4)
     };
     obj3 = { expanded: isExpanded };
-    Text = tmp(5929).Text;
+    Text = tmp(5919).Text;
     const intl = tmp(1113).intl;
     const string = intl.string;
     const t = tmp(1113).t;
@@ -203,7 +203,7 @@ function CoverSection(section) {
     if (null != source) {
       if ("" !== section.title) {
         const obj9 = { colors, locations, style: tmp15.absoluteFill, pointerEvents: "none" };
-        tmp24Result4 = tmp24(tmp14(5893), obj9);
+        tmp24Result4 = tmp24(tmp14(5883), obj9);
       } else {
         tmp24Result4 = null;
       }

@@ -1,15 +1,15 @@
 // Module ID: 14932
 // Function ID: 14933
 // Name: UserProfileStackedActionSheet
-// Dependencies: [19, 17, 21, 5306, 575, 1630, 7888, 8106, 1380, 5570, 5566, 7428, 1113, 7497, 5929, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 1630, 7888, 8106, 1380, 5560, 5556, 7428, 1113, 7497, 5919, 2]
 // Exports: UserProfileStackedActionSheetList, UserProfileStackedActionSheetSectionList, default
 
 // Module 14932 (UserProfileStackedActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5566 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5556 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 7497 */;
 import _mod8106 from "module_8106" /* 8106 */;
 import react from "react" /* 19 */;
@@ -129,7 +129,7 @@ export function UserProfileStackedActionSheetSectionList(renderItem) {
       return React3(_mod8106.FormDivider, obj);
     }
   };
-  const BottomSheetSectionList = renderItem(5570).BottomSheetSectionList;
+  const BottomSheetSectionList = renderItem(5560).BottomSheetSectionList;
   const merged1 = Object.assign(merged);
   return closure_4(BottomSheetSectionList, obj);
 }

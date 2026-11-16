@@ -1,7 +1,7 @@
 // Module ID: 17019
 // Function ID: 17020
 // Name: MediaPlayerManager
-// Dependencies: [17, 5154, 6901, 5155, 6372, 5238, 2120, 1072, 5959, 17020, 1083, 3, 560, 1263, 2123, 5493, 572, 1380, 558, 8660, 7048, 2]
+// Dependencies: [17, 5154, 6891, 5155, 6362, 5238, 2120, 1072, 5949, 17020, 1083, 3, 560, 1263, 2123, 5483, 572, 1380, 558, 8660, 7048, 2]
 // Exports: isPlaybackComplete
 
 // Module 17019 (MediaPlayerManager)
@@ -11,14 +11,14 @@ import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import Constants2 from "Constants" /* 1083 */;
 import react_native from "react-native" /* 1263 */;
-import RootNavigationRef from "RootNavigationRef" /* 5493 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5959 */;
+import RootNavigationRef from "RootNavigationRef" /* 5483 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5949 */;
 import MessageActionCreatorsDefault from "MessageActionCreators" /* 8660 */;
 import react_native2 from "react-native" /* 17 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
-import VoicePanelStore from "VoicePanelStore" /* 6901 */;
+import VoicePanelStore from "VoicePanelStore" /* 6891 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
-import MessageStore from "MessageStore" /* 6372 */;
+import MessageStore from "MessageStore" /* 6362 */;
 import PermissionStore from "PermissionStore" /* 5238 */;
 import AppStateStore from "AppStateStore" /* 2120 */;
 import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 17020 */;
@@ -53,13 +53,13 @@ const useMediaPlayerManagerStore = module_560.create((arg0) => {
     wasPipClosedByUser: null,
     progress: null,
     rate: "Path",
-    showPip: 3377,
+    showPip: "Maldives",
     closePip() {
       const obj = react_native;
       obj.batchUpdates(() => closure_1_0({ showPip: false }));
     },
     displayedMediaItemIdsPerChannel: {},
-    currentlyDisplayedChannelId: 3380
+    currentlyDisplayedChannelId: null
   };
   return obj;
 });

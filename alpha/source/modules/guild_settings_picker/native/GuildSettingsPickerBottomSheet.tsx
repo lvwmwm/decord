@@ -1,13 +1,13 @@
 // Module ID: 16328
 // Function ID: 16329
 // Name: GuildSettingsPickerBottomSheet
-// Dependencies: [19, 17, 21, 5306, 575, 16329, 5566, 7913, 16333, 5552, 5936, 38, 8404, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 16329, 5556, 7913, 16333, 5542, 5926, 38, 8404, 2]
 
 // Module 16328 (GuildSettingsPickerBottomSheet)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8404 */;
 import GuildPickerDefault from "GuildPicker" /* 16333 */;
 import react from "react" /* 19 */;
@@ -42,7 +42,7 @@ class GuildSettingsPickerBottomSheet {
     const guildSettingsPickerFeature = obj.useGuildSettingsPickerFeature(feature);
     ({ selectGuildCta, title, description, isGuildSupported } = guildSettingsPickerFeature);
     let obj2 = { startExpanded: true, header: closure_4(feature(7913).BottomSheetTitleHeader, { title, subtitle: description }), children: closure_5(guildId, obj3) };
-    const BottomSheet = feature(5566).BottomSheet;
+    const BottomSheet = feature(5556).BottomSheet;
     obj3 = { style: tmp.content, children: items };
     items = [, ];
     const obj4 = {
@@ -67,7 +67,7 @@ class GuildSettingsPickerBottomSheet {
         obj2.hideActionSheet();
       }
     };
-    items[1] = closure_4(feature(5936).Button, obj5);
+    items[1] = closure_4(feature(5926).Button, obj5);
     return closure_4(BottomSheet, obj2);
   }
 }

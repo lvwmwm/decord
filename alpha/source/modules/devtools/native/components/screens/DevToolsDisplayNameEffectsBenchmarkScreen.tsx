@@ -1,17 +1,17 @@
-// Module ID: 18380
-// Function ID: 18381
+// Module ID: 18382
+// Function ID: 18383
 // Name: DevToolsDisplayNameEffectsBenchmarkScreen
-// Dependencies: [32, 19, 17, 1388, 1397, 21, 1399, 10072, 1113, 10068, 3125, 5306, 575, 6337, 5929, 5936, 10064, 10065, 504, 18381, 7746, 7443, 15966, 6752, 2]
+// Dependencies: [32, 19, 17, 1388, 1397, 21, 1399, 10072, 1113, 10068, 3125, 5306, 575, 6327, 5919, 5926, 10064, 10065, 504, 18383, 7746, 7443, 15966, 6742, 2]
 // Exports: default
 
-// Module 18380 (DevToolsDisplayNameEffectsBenchmarkScreen)
+// Module 18382 (DevToolsDisplayNameEffectsBenchmarkScreen)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1397 */;
 import DisplayNameEffect from "DisplayNameEffect" /* 1399 */;
 import _modDef3125 from "module_3125" /* 3125 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import Stack_Stack from "Stack/Stack" /* 6337 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import Stack_Stack from "Stack/Stack" /* 6327 */;
 import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10064 */;
 import types from "types" /* 10065 */;
 import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 10068 */;

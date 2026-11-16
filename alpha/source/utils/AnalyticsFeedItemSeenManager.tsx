@@ -1,7 +1,7 @@
 // Module ID: 9115
 // Function ID: 9116
 // Name: AnalyticsFeedItemSeenManager
-// Dependencies: [5, 38, 572, 6079, 2]
+// Dependencies: [5, 38, 572, 6069, 2]
 
 // Module 9115 (AnalyticsFeedItemSeenManager)
 import _modDef38 from "module_38" /* 38 */;

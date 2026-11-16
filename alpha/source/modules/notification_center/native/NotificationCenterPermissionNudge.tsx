@@ -1,15 +1,15 @@
-// Module ID: 19240
-// Function ID: 19241
+// Module ID: 19242
+// Function ID: 19243
 // Name: NotificationCenterPermissionNudge
-// Dependencies: [32, 19, 17, 1072, 5152, 14826, 21, 5306, 575, 1256, 10994, 5929, 1113, 5936, 14827, 7428, 7549, 18106, 9560, 5139, 2]
+// Dependencies: [32, 19, 17, 1072, 5152, 14826, 21, 5306, 575, 1256, 10994, 5919, 1113, 5926, 14827, 7428, 7549, 18108, 9560, 5139, 2]
 // Exports: default
 
-// Module 19240 (NotificationCenterPermissionNudge)
+// Module 19242 (NotificationCenterPermissionNudge)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
-import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 18106 */;
+import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 18108 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
@@ -62,12 +62,12 @@ function NotificationCenterBannerImpl(onDismiss) {
   items = [closure_14(View, obj2), , ];
   const obj4 = { style: tmp.contentContainer, children: items1 };
   const obj5 = { variant: "body-md/semibold", color: "text-default", children: intl.string(onDismiss(1113).t.G6YBna) };
-  const Text = onDismiss(5929).Text;
+  const Text = onDismiss(5919).Text;
   intl = onDismiss(1113).intl;
   items1 = [closure_14(Text, obj5), , ];
   const obj6 = { variant: "body-md/medium", color: "text-muted", style: obj7, children: intl2.string(onDismiss(1113).t["9CoPDE"]) };
   obj7 = { marginTop: nativeDefault.space.PX_4 };
-  const Text2 = onDismiss(5929).Text;
+  const Text2 = onDismiss(5919).Text;
   intl2 = onDismiss(1113).intl;
   items1[1] = closure_14(Text2, obj6);
   const obj8 = { style: tmp.ctaButton, children: closure_14(Button, obj9) };
@@ -83,7 +83,7 @@ function NotificationCenterBannerImpl(onDismiss) {
       obj2.track(constants.CONTEXTUAL_REMINDER_ACTION, obj3);
     }
   };
-  Button = onDismiss(5936).Button;
+  Button = onDismiss(5926).Button;
   intl3 = onDismiss(1113).intl;
   items1[2] = closure_14(View, obj8);
   items[1] = closure_15(View, obj4);

@@ -1,11 +1,11 @@
 // Module ID: 10176
 // Function ID: 10177
 // Name: AppStoreOverlayBottomSheet
-// Dependencies: [32, 19, 21, 5306, 1496, 8559, 5899, 8825, 6008, 10172, 10177, 5566, 5901, 5570, 2]
+// Dependencies: [32, 19, 21, 5306, 1496, 8559, 5889, 8825, 5998, 10172, 10177, 5556, 5891, 5560, 2]
 // Exports: default
 
 // Module 10176 (AppStoreOverlayBottomSheet)
-import openURLDefault from "openURL" /* 6008 */;
+import openURLDefault from "openURL" /* 5998 */;
 import AnalyticsActions from "AnalyticsActions" /* 8825 */;
 import AppStoreOverlayContent from "AppStoreOverlayContent" /* 10172 */;
 import AppStoreOverlayBody from "AppStoreOverlayBody" /* 10177 */;

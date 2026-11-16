@@ -1,11 +1,11 @@
 // Module ID: 17107
 // Function ID: 17108
 // Name: useHexagonCampaignDisplayNameStyleToggle
-// Dependencies: [5, 32, 19, 1388, 5331, 8541, 6750, 5334, 5899, 9398, 17084, 2]
+// Dependencies: [5, 32, 19, 1388, 5331, 8541, 6740, 5334, 5889, 9398, 17084, 2]
 // Exports: useHexagonCampaignDisplayNameStyleToggle
 
 // Module 17107 (useHexagonCampaignDisplayNameStyleToggle)
-import useDisplayNameStylesDefault from "useDisplayNameStyles" /* 6750 */;
+import useDisplayNameStylesDefault from "useDisplayNameStyles" /* 6740 */;
 import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 9398 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -42,7 +42,7 @@ export function useHexagonCampaignDisplayNameStyleToggle(user, showEnrollmentErr
   [tmp6, importDefault] = tmp5;
   dependencyMap = react.useRef(false);
   _asyncToGenerator = react.useRef(true);
-  const tmpResult2 = tmp(5899);
+  const tmpResult2 = tmp(5889);
   const unmountEffect = tmpResult2.useUnmountEffect(() => {
     closure_3.current = false;
   });

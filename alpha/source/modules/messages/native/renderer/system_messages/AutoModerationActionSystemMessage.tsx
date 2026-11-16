@@ -1,7 +1,7 @@
 // Module ID: 9253
 // Function ID: 9254
 // Name: AutoModerationActionSystemMessage
-// Dependencies: [17, 5155, 5218, 5238, 5248, 1388, 1072, 12, 5313, 575, 9163, 8711, 6749, 1113, 9220, 2169, 9254, 9255, 1414, 9258, 7625, 1417, 9259, 9260, 9192, 5954, 5225, 5128, 9261, 9262, 2]
+// Dependencies: [17, 5155, 5218, 5238, 5248, 1388, 1072, 12, 5313, 575, 9163, 8711, 6739, 1113, 9220, 2169, 9254, 9255, 1414, 9258, 7625, 1417, 9259, 9260, 9192, 5944, 5225, 5128, 9261, 9262, 2]
 // Exports: createAutoModerationActionSystemMessage
 
 // Module 9253 (AutoModerationActionSystemMessage)
@@ -31,8 +31,8 @@ const AvatarUtils = tmp(1414);
 const utils_AvatarUtils = tmp(1417);
 const DateUtils = tmp(5128);
 const CommunicationDisabledUtils = tmp(5225);
-const useChannelName = tmp(5954);
-const useMessageAuthor = tmp(6749);
+const useChannelName = tmp(5944);
+const useMessageAuthor = tmp(6739);
 const AutomodNotificationEmbedTypeKeys = tmp(9220);
 const AutomodRaidAlertTypes = tmp(9254);
 const GuildAntiRaidUtils = tmp(9255);

@@ -1,7 +1,7 @@
 // Module ID: 11866
 // Function ID: 11867
 // Name: reactions/ReactionUtils
-// Dependencies: [5155, 6372, 5349, 1388, 1072, 1391, 21, 5250, 5554, 5555, 8863, 2174, 5552, 9571, 2121, 5501, 9543, 5920, 6067, 11867, 11878, 11879, 11880, 10409, 9558, 6268, 1113, 5929, 2]
+// Dependencies: [5155, 6362, 5339, 1388, 1072, 1391, 21, 5250, 5544, 5545, 8863, 2174, 5542, 9571, 2121, 5491, 9543, 5910, 6057, 11867, 11878, 11879, 11880, 10409, 9558, 6258, 1113, 5919, 2]
 // Exports: handleAddNewReactions, handleOutOfSuperReactions, handleRemoveAllReactions, handleViewPreviewReactions, handleViewReactions
 
 // Module 11866 (reactions/ReactionUtils)
@@ -10,20 +10,20 @@ import EmojiConstants from "EmojiConstants" /* 1391 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
 import PremiumUtils from "PremiumUtils" /* 2174 */;
 import ReactionUtils from "ReactionUtils" /* 5250 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import HapticUtils from "HapticUtils" /* 5554 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5555 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 5920 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6067 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6268 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import HapticUtils from "HapticUtils" /* 5544 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5545 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 5910 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6057 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6258 */;
 import ReactionActionCreators from "ReactionActionCreators" /* 8863 */;
 import SuperReactionIcon from "SuperReactionIcon" /* 9558 */;
 import ReactionIcon from "ReactionIcon" /* 10409 */;
 import AssetRegistryDefault from "AssetRegistry" /* 11879 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 11880 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
-import MessageStore from "MessageStore" /* 6372 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5349 */;
+import MessageStore from "MessageStore" /* 6362 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
 import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;

@@ -1,7 +1,7 @@
 // Module ID: 8436
 // Function ID: 8437
 // Name: GuildEventRecurrence
-// Dependencies: [19, 17, 5155, 5177, 7029, 21, 5306, 575, 504, 7979, 8030, 7980, 7972, 1113, 7428, 7984, 5929, 7989, 1187, 8437, 2]
+// Dependencies: [19, 17, 5155, 5177, 7029, 21, 5306, 575, 504, 7979, 8030, 7980, 7972, 1113, 7428, 7984, 5919, 7989, 1187, 8437, 2]
 // Exports: default
 
 // Module 8436 (GuildEventRecurrence)
@@ -156,7 +156,7 @@ export default function GuildEventRecurrence(recurrenceId) {
     const obj6 = { style: tmp.actions, children: items6 };
     if (tmp22Result) {
       const obj7 = { variant: "body-sm/semibold", color: "text-feedback-critical", children: intl2.string(tmp2(1113).t.fyBVRm) };
-      const Text = tmp2(5929).Text;
+      const Text = tmp2(5919).Text;
       intl2 = tmp2(1113).intl;
       tmp22Result = tmp22(Text, obj7);
     }

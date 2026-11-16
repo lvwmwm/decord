@@ -1,7 +1,7 @@
 // Module ID: 15661
 // Function ID: 15662
 // Name: NitroScheduleMessageSpotIllustration
-// Dependencies: [19, 21, 15662, 15663, 15664, 7755, 6020, 2]
+// Dependencies: [19, 21, 15662, 15663, 15664, 7755, 6010, 2]
 // Exports: NitroScheduleMessageSpotIllustration
 
 // Module 15661 (NitroScheduleMessageSpotIllustration)

@@ -1,13 +1,13 @@
 // Module ID: 12063
 // Function ID: 12064
 // Name: ReportModals
-// Dependencies: [5, 5160, 5249, 1407, 1072, 12064, 12065, 12067, 5169, 6067, 2]
+// Dependencies: [5, 5160, 5249, 1407, 1072, 12064, 12065, 12067, 5169, 6057, 2]
 // Exports: showReportModalForApp, showReportModalForFirstDM, showReportModalForGuild, showReportModalForGuildDirectoryEntry, showReportModalForGuildScheduledEvent, showReportModalForInappropriateConversationSafetyAlert, showReportModalForMessage, showReportModalForStageChannel, showReportModalForUser, showReportModalForWidget, showReportToModMessageModal, showStaffTestReportModalForGuild, showStaffTestReportModalForMessage, showStaffTestReportModalForUser, showUnauthenticatedReportModalForGuild, showUnauthenticatedReportModalForMessage, showUnauthenticatedReportModalForTida, showUnauthenticatedReportModalForUser, submitHamReportForFirstDM, submitReportForInappropriateConversationSafetyAlert
 
 // Module 12063 (ReportModals)
 import Constants from "Constants" /* 1072 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 5169 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6067 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6057 */;
 import MenuTypes from "MenuTypes" /* 12064 */;
 import showReportModal2 from "showReportModal" /* 12065 */;
 import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 12067 */;
@@ -372,7 +372,7 @@ export function showUnauthenticatedReportModalForMessage(emailToken, onClose) {
   const IAR_MODAL_OPEN = AnalyticEvents.IAR_MODAL_OPEN;
   obj = { report_type: MESSAGE };
   AppAnalyticsUtilsDefault;
-  const merged = Object.assign({ message_id: "disabled", channel_id: "isArray" });
+  const merged = Object.assign({ message_id: "Array", channel_id: "Path" });
   trackWithMetadata(IAR_MODAL_OPEN, obj);
   const obj2 = showReportModal2;
   const obj3 = { name: MenuTypes.UnauthenticatedReportNames.MESSAGE, record: tmp };

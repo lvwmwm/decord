@@ -1,14 +1,14 @@
 // Module ID: 13005
 // Function ID: 13006
 // Name: UserSettingsVoiceInputOptions
-// Dependencies: [19, 17, 2133, 1072, 21, 5306, 7948, 1113, 6225, 504, 12999, 7443, 5929, 7954, 13006, 2]
+// Dependencies: [19, 17, 2133, 1072, 21, 5306, 7948, 1113, 6215, 504, 12999, 7443, 5919, 7954, 13006, 2]
 // Exports: default
 
 // Module 13005 (UserSettingsVoiceInputOptions)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl7 from "intl" /* 1113 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 6225 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 6215 */;
 import showSimpleActionSheet2 from "showSimpleActionSheet" /* 7948 */;
 import VoiceSensitivityDefault from "VoiceSensitivity" /* 13006 */;
 import react from "react" /* 19 */;
@@ -87,7 +87,7 @@ export default function UserSettingsVoiceInputOptions() {
   const TableRow = inputMode(7443).TableRow;
   intl2 = inputMode(1113).intl;
   obj4 = { style: iter.value, variant: "body-md/medium", color: "text-muted", children: stringResult };
-  Text = inputMode(5929).Text;
+  Text = inputMode(5919).Text;
   const tmp6 = InputModes;
   if (inputMode === InputModes.PUSH_TO_TALK) {
     const intl4 = tmp(1113).intl;

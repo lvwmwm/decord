@@ -1,7 +1,7 @@
 // Module ID: 12122
 // Function ID: 12123
 // Name: UserProfileReorderActionSheet
-// Dependencies: [19, 17, 21, 5306, 575, 1630, 6331, 7951, 5570, 5929, 1113, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 1630, 6321, 7951, 5560, 5919, 1113, 2]
 // Exports: default
 
 // Module 12122 (UserProfileReorderActionSheet)
@@ -52,9 +52,9 @@ export default function UserProfileReorderActionSheet(returnFocusRef) {
   const ActionSheet = returnFocusRef(7951).ActionSheet;
   obj2 = { contentContainerStyle: items1, children: items2 };
   items1 = [tmp.content, { paddingBottom: bottom }];
-  BottomSheetScrollView = returnFocusRef(5570).BottomSheetScrollView;
+  BottomSheetScrollView = returnFocusRef(5560).BottomSheetScrollView;
   const obj3 = { variant: "body-sm/medium", color: "text-subtle", children: intl.string(returnFocusRef(1113).t["S7X7/T"]) };
-  const Text = returnFocusRef(5929).Text;
+  const Text = returnFocusRef(5919).Text;
   intl = returnFocusRef(1113).intl;
   items2 = [closure_5(Text, obj3), ];
   const obj4 = { accessibilityRole: "list", style: tmp.list, children };

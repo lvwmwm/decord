@@ -1,16 +1,16 @@
 // Module ID: 11934
 // Function ID: 11935
 // Name: ForLaterIntro
-// Dependencies: [17, 5567, 21, 5306, 575, 11905, 11935, 11939, 5929, 1113, 6020, 11943, 11917, 6042, 7963, 2]
+// Dependencies: [17, 5557, 21, 5306, 575, 11905, 11935, 11939, 5919, 1113, 6010, 11943, 11917, 6032, 7963, 2]
 // Exports: default
 
 // Module 11934 (ForLaterIntro)
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5567 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import FastImageDefault from "FastImage" /* 6020 */;
-import ClockIcon from "ClockIcon" /* 6042 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5557 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import ClockIcon from "ClockIcon" /* 6032 */;
 import SavedMessagesTypes from "SavedMessagesTypes" /* 11905 */;
 import BookmarkIcon from "BookmarkIcon" /* 11917 */;
 import _modDef11943 from "module_11943" /* 11943 */;
@@ -169,13 +169,13 @@ export default function ForLaterIntro(type) {
   items[0] = hasOwnProperty(React3, obj3);
   const obj4 = { style: tmp.textContainer, children: items1 };
   const obj5 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp.text, children: string(tmp4 ? t["5Iw19e"] : t["93WOd1"]) };
-  const Heading = tmp2(5929).Heading;
+  const Heading = tmp2(5919).Heading;
   const intl = tmp2(1113).intl;
   string = intl.string;
   t = tmp2(1113).t;
   items1 = [hasOwnProperty(Heading, obj5), ];
   const obj6 = { variant: "body-sm/medium", color: "text-default", style: tmp.text, includeFontPadding: true, children: format(tmp9, obj7) };
-  const Text = tmp2(5929).Text;
+  const Text = tmp2(5919).Text;
   const intl2 = tmp2(1113).intl;
   format = intl2.format;
   const t2 = tmp2(1113).t;

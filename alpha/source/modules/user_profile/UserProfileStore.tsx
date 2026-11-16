@@ -1,7 +1,7 @@
 // Module ID: 7352
 // Function ID: 7353
 // Name: UserProfileStore
-// Dependencies: [2189, 1407, 502, 5177, 1071, 6068, 6956, 1072, 7353, 12, 7354, 7357, 7358, 7360, 1255, 5150, 2114, 2107, 7361, 1113, 7362, 7087, 7363, 510, 2]
+// Dependencies: [2189, 1407, 502, 5177, 1071, 6058, 6946, 1072, 7353, 12, 7354, 7357, 7358, 7360, 1255, 5150, 2114, 2107, 7361, 1113, 7362, 7087, 7363, 510, 2]
 
 // Module 7352 (UserProfileStore)
 import _modDef12 from "module_12" /* 12 */;
@@ -19,8 +19,8 @@ import UserRecord from "UserRecord" /* 1407 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildStore from "GuildStore" /* 5177 */;
 import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1071 */;
-import PresenceStore from "PresenceStore" /* 6068 */;
-import SortedGuildStore from "SortedGuildStore" /* 6956 */;
+import PresenceStore from "PresenceStore" /* 6058 */;
+import SortedGuildStore from "SortedGuildStore" /* 6946 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -32,11 +32,11 @@ const UserProfileGameWidgetTypes = tmp(7354);
 const UserProfileApplicationWidgetTypes = tmp(7357);
 const UserProfilePersonalWidget2 = tmp(7358);
 const UserProfileClipsGalleryWidgetTypes = tmp(7360);
-const f94003 = (user) => {
+const f94016 = (user) => {
   const str = user.user.username;
   return str.toLowerCase();
 };
-const f94009 = (id) => id.id;
+const f94022 = (id) => id.id;
 function createUserWidgetFromServer(data) {
   let mapped;
   let str;
@@ -296,7 +296,7 @@ function handleMutualFriendsFetchSuccess(userId) {
     new UserRecord(obj2);
     return obj;
   });
-  const iter = mapped.sortBy(f94003);
+  const iter = mapped.sortBy(f94016);
   const result = set(userId, iter.value());
   const result1 = map4.set(userId.userId, userId.mutualFriends.length);
 }
@@ -381,7 +381,7 @@ function handleProfileFetch(arg0) {
       new UserRecord(obj2);
       return obj;
     });
-    const iter = mapped.sortBy(f94003);
+    const iter = mapped.sortBy(f94016);
     set3(id3, iter.value());
     const result3 = map4.set(userProfile.user.id, userProfile.mutual_friends.length);
   }
@@ -448,7 +448,7 @@ function handleProfileFetch(arg0) {
       const _Set = Set;
       const self7 = this;
       const self8 = this;
-      new Set(mapped1.map(f94009));
+      new Set(mapped1.map(f94022));
       let found1;
       if (c24 != null) {
         const badges1 = tmp61.badges;
@@ -612,8 +612,8 @@ function handleProfileFetchFailure(arg0) {
   let value4 = map1.get(userId);
   obj = map1;
   if (value4 == null) {
-    value4 = { connectedAccounts: [], applicationRoleConnections: [], premiumSince: null, premiumGuildSince: null, application: null, legacyUsername: null, userId, banner: null, accentColor: null, bio: "", pronouns: "", premiumType: null, fetchStartedAt: 0, fetchEndedAt: 0, fetchError: "channel_id" };
-    const obj2 = { connectedAccounts: [], applicationRoleConnections: [], premiumSince: null, premiumGuildSince: null, application: null, legacyUsername: null, userId, banner: null, accentColor: null, bio: "", pronouns: "", premiumType: null, fetchStartedAt: 0, fetchEndedAt: 0, fetchError: "channel_id" };
+    value4 = { connectedAccounts: [], applicationRoleConnections: [], premiumSince: null, premiumGuildSince: null, application: null, legacyUsername: null, userId, banner: null, accentColor: null, bio: "", pronouns: "", premiumType: null, fetchStartedAt: 0, fetchEndedAt: 0, fetchError: "channelId" };
+    const obj2 = { connectedAccounts: [], applicationRoleConnections: [], premiumSince: null, premiumGuildSince: null, application: null, legacyUsername: null, userId, banner: null, accentColor: null, bio: "", pronouns: "", premiumType: null, fetchStartedAt: 0, fetchEndedAt: 0, fetchError: "channelId" };
   }
   const timestamp = Date.now();
   value4.fetchStartedAt = fetchStartedAt;
@@ -747,7 +747,7 @@ function handlePinBadgesToProfile(badges) {
       let found;
       const self = this;
       const self2 = this;
-      const set1 = new Set(badges.map(f94009));
+      const set1 = new Set(badges.map(f94022));
       if (obj != null) {
         const badges1 = tmp3.badges;
         found = badges1.filter((id) => !set1.has(id.id));

@@ -1,12 +1,12 @@
-// Module ID: 19035
-// Function ID: 19036
+// Module ID: 19037
+// Function ID: 19038
 // Name: InterestCoverTitle
-// Dependencies: [32, 19, 17, 21, 5306, 5929, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 5919, 2]
 // Exports: default
 
-// Module 19035 (InterestCoverTitle)
+// Module 19037 (InterestCoverTitle)
 import react_native from "react-native" /* 17 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

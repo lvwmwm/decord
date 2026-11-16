@@ -1,14 +1,14 @@
 // Module ID: 10650
 // Function ID: 10651
 // Name: usePlayingGameActivities
-// Dependencies: [19, 502, 6068, 7316, 504, 10651, 2]
+// Dependencies: [19, 502, 6058, 7316, 504, 10651, 2]
 // Exports: default
 
 // Module 10650 (usePlayingGameActivities)
 import isPlayingGameActivityDefault from "isPlayingGameActivity" /* 10651 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import PresenceStore from "PresenceStore" /* 6068 */;
+import PresenceStore from "PresenceStore" /* 6058 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 7316 */;
 import size from "module_2" /* 2 */;
 

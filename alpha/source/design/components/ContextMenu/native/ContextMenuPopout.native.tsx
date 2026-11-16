@@ -1,7 +1,7 @@
 // Module ID: 16479
 // Function ID: 16480
 // Name: ContextMenuPopout
-// Dependencies: [32, 19, 17, 21, 5306, 575, 9150, 5377, 5913, 1496, 1380, 7476, 7475, 5548, 1655, 5939, 1708, 9149, 5598, 6332, 5929, 16477, 5568, 5904, 1113, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 575, 9150, 5367, 5903, 1496, 1380, 7476, 7475, 5538, 1655, 5929, 1708, 9149, 5588, 6322, 5919, 16477, 5558, 5894, 1113, 2]
 // Exports: ContextMenuPopout
 
 // Module 16479 (ContextMenuPopout)
@@ -9,8 +9,8 @@ import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import _modDef1655 from "module_1655" /* 1655 */;
 import _mod1708 from "module_1708" /* 1708 */;
-import native from "native" /* 5377 */;
-import spring_spring from "spring/spring" /* 5939 */;
+import native from "native" /* 5367 */;
+import spring_spring from "spring/spring" /* 5929 */;
 import ContextMenuState from "ContextMenuState" /* 9149 */;
 import ContextMenuConstants from "ContextMenuConstants" /* 9150 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -76,7 +76,7 @@ function ContextMenuBackdrop(hasEntered) {
   let obj = { style: StyleSheet.absoluteFill, pointerEvents: "box-none", entering: backdropEnteringAnimation, exiting: callback, children: metroImportDefault(Backdrop, obj2) };
   const View = _modDef1655.View;
   obj2 = { blur: "none", accessibleDismissStyle: tmp.accessibleDismiss, onDismiss: onPress, accessibilityLabel: stringResult };
-  Backdrop = tmp3(5904).Backdrop;
+  Backdrop = tmp3(5894).Backdrop;
   const tmp3Result = PlatformUtils;
   const isAndroidResult = tmp3Result.isAndroid();
   const intl = tmp3(1113).intl;
@@ -419,7 +419,7 @@ export function ContextMenuPopout(cleanUp) {
     update.__closure = items1;
     update.__workletHash = 13202368878205;
     update.__initData = tmp4;
-    const Gesture = tmp(5598).Gesture;
+    const Gesture = tmp(5588).Gesture;
     const PanResult = Gesture.Pan();
     const enabledResult = PanResult.enabled(!first);
     const onStartResult = enabledResult.onStart(update);

@@ -1,18 +1,18 @@
-// Module ID: 20030
-// Function ID: 20031
+// Module ID: 20032
+// Function ID: 20033
 // Name: ActivityShelfItem
-// Dependencies: [19, 1072, 1191, 21, 5306, 575, 5303, 13474, 13389, 7722, 20028, 2024, 5985, 12898, 9931, 7428, 5377, 20027, 13417, 1187, 20031, 20029, 6351, 15143, 5929, 13482, 1113, 2]
+// Dependencies: [19, 1072, 1191, 21, 5306, 575, 5303, 13474, 13389, 7722, 20030, 2024, 5975, 12898, 9931, 7428, 5367, 20029, 13417, 1187, 20033, 20031, 6341, 15143, 5919, 13482, 1113, 2]
 // Exports: default
 
-// Module 20030 (ActivityShelfItem)
+// Module 20032 (ActivityShelfItem)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
 import FormConstants from "FormConstants" /* 1191 */;
 import react_nativeDefault from "react-native" /* 2024 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5985 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6351 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5975 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6341 */;
 import NativeViewDefault from "NativeView" /* 7722 */;
 import TestModeUtils from "TestModeUtils" /* 9931 */;
 import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 12898 */;
@@ -20,10 +20,10 @@ import useActivityShelfItem from "useActivityShelfItem" /* 13389 */;
 import useLaunchingActivityButtonStateDefault from "useLaunchingActivityButtonState" /* 13474 */;
 import getItemSubtitleForMaxPlayers from "getItemSubtitleForMaxPlayers" /* 13482 */;
 import AssetRegistryDefault from "AssetRegistry" /* 15143 */;
-import ActivityShelfItemBackgroundDefault from "ActivityShelfItemBackground" /* 20027 */;
-import ActivityShelfItemSummaryDefault from "ActivityShelfItemSummary" /* 20028 */;
-import useActivityUsersDefault from "useActivityUsers" /* 20029 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 20031 */;
+import ActivityShelfItemBackgroundDefault from "ActivityShelfItemBackground" /* 20029 */;
+import ActivityShelfItemSummaryDefault from "ActivityShelfItemSummary" /* 20030 */;
+import useActivityUsersDefault from "useActivityUsers" /* 20031 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 20033 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
@@ -193,7 +193,7 @@ export default function ActivityShelfItem(arg0) {
   const PressableOpacity = tmp8(7428).PressableOpacity;
   items1 = [tmp.container, { width, height }];
   const obj4 = { theme: ThemeTypes.DARK, children: items3 };
-  const ThemeContextProvider = tmp8(5377).ThemeContextProvider;
+  const ThemeContextProvider = tmp8(5367).ThemeContextProvider;
   const obj5 = { style: tmp.imageOuterContainer, children: items2 };
   const obj6 = { accessibilityLabel: activityItem.application.name, imageBackground: tmp10, aspectRatio: width / height };
   const tmp3Result = NativeViewDefault;

@@ -1,27 +1,27 @@
-// Module ID: 19062
-// Function ID: 19063
+// Module ID: 19064
+// Function ID: 19065
 // Name: useGuildsBarGesture
-// Dependencies: [5, 19, 17, 5177, 6956, 19063, 19060, 1655, 551, 5554, 5313, 12, 1242, 1113, 7847, 18742, 5902, 575, 5221, 10576, 1263, 6917, 6242, 9149, 1380, 1630, 5568, 19064, 19065, 9149, 17702, 5598, 1708, 2]
+// Dependencies: [5, 19, 17, 5177, 6946, 19065, 19062, 1655, 551, 5544, 5313, 12, 1242, 1113, 7847, 18744, 5892, 575, 5221, 10576, 1263, 6907, 6232, 9149, 1380, 1630, 5558, 19066, 19067, 9149, 17702, 5588, 1708, 2]
 // Exports: default
 
-// Module 19062 (useGuildsBarGesture)
+// Module 19064 (useGuildsBarGesture)
 import react_native from "react-native" /* 17 */;
 import intl15 from "intl" /* 1113 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import react_native2 from "react-native" /* 1263 */;
 import _mod1708 from "module_1708" /* 1708 */;
 import shared from "shared" /* 5313 */;
-import HapticUtils from "HapticUtils" /* 5554 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5568 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5598 */;
-import SortedGuildStore2 from "SortedGuildStore" /* 6956 */;
+import HapticUtils from "HapticUtils" /* 5544 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5558 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5588 */;
+import SortedGuildStore2 from "SortedGuildStore" /* 6946 */;
 import FastList from "FastList" /* 7847 */;
 import ContextMenuState from "ContextMenuState" /* 9149 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 5177 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 19063 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 19060 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 19065 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 19062 */;
 import "module_1655";
 import module_1655_mod from "module_1655" /* 1655 */;
 import debounce from "debounce" /* 551 */;
@@ -702,7 +702,7 @@ export default function useGuildsBarGesture() {
         const close = menu.requestClose(-1 === activeIndex.get());
       }
     }
-    setStateShallow({ dragSpecs: "disabled", overSpecs: "isArray" });
+    setStateShallow({ dragSpecs: "Array", overSpecs: "Path" });
     const value = gestureState.get();
     if (null != value.mode) {
       const obj10 = { mode: null };

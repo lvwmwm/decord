@@ -1,7 +1,7 @@
 // Module ID: 8149
 // Function ID: 8150
 // Name: useAppChannelApplicationOptions
-// Dependencies: [19, 8150, 5977, 7055, 2]
+// Dependencies: [19, 8150, 5967, 7055, 2]
 // Exports: useAppChannelApplicationOptions
 
 // Module 8149 (useAppChannelApplicationOptions)

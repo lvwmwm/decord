@@ -1,7 +1,7 @@
 // Module ID: 15999
 // Function ID: 16000
 // Name: GuildBoostingMarketingPersistentCta
-// Dependencies: [19, 17, 5307, 1072, 21, 5306, 575, 563, 1655, 5939, 5893, 7720, 5929, 10799, 2]
+// Dependencies: [19, 17, 5307, 1072, 21, 5306, 575, 563, 1655, 5929, 5883, 7720, 5919, 10799, 2]
 // Exports: default
 
 // Module 15999 (GuildBoostingMarketingPersistentCta)
@@ -10,9 +10,9 @@ import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import LinearGradientDefault from "LinearGradient" /* 5893 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import spring_spring from "spring/spring" /* 5939 */;
+import LinearGradientDefault from "LinearGradient" /* 5883 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import spring_spring from "spring/spring" /* 5929 */;
 import GuildIcon from "GuildIcon" /* 7720 */;
 import GuildBoostingSubscribeButtonDefault from "GuildBoostingSubscribeButton" /* 10799 */;
 import react from "react" /* 19 */;

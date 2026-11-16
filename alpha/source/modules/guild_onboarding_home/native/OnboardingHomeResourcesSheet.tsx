@@ -1,16 +1,16 @@
-// Module ID: 19399
-// Function ID: 19400
+// Module ID: 19401
+// Function ID: 19402
 // Name: OnboardingHomeResourcesSheet
-// Dependencies: [19, 19397, 21, 5902, 575, 19398, 14682, 5552, 7951, 7953, 1414, 6020, 2]
+// Dependencies: [19, 19399, 21, 5892, 575, 19400, 14682, 5542, 7951, 7953, 1414, 6010, 2]
 // Exports: default
 
-// Module 19399 (OnboardingHomeResourcesSheet)
+// Module 19401 (OnboardingHomeResourcesSheet)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 14682 */;
-import OnboardingHomeConstants from "OnboardingHomeConstants" /* 19397 */;
-import useResourceChannelsDefault from "useResourceChannels" /* 19398 */;
+import OnboardingHomeConstants from "OnboardingHomeConstants" /* 19399 */;
+import useResourceChannelsDefault from "useResourceChannels" /* 19400 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ const result = size.fileFinishedImporting("modules/guild_onboarding_home/native/
 export default function OnboardingHomeResourcesSheet(guildId) {
   let closure_1;
   guildId = guildId.guildId;
-  let obj = guildId(5902);
+  let obj = guildId(5892);
   importDefault = obj.useToken(nativeDefault.modules.mobile.TABLE_ROW_ICON_SIZE);
   const arr = useResourceChannelsDefault(guildId);
   const ActionSheet = guildId(7951).ActionSheet;

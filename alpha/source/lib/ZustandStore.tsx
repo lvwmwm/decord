@@ -1,10 +1,10 @@
-// Module ID: 5505
-// Function ID: 5506
+// Module ID: 5495
+// Function ID: 5496
 // Name: ZustandStore
-// Dependencies: [1258, 5506, 1263, 2]
+// Dependencies: [1258, 5496, 1263, 2]
 // Exports: createZustandStore
 
-// Module 5505 (ZustandStore)
+// Module 5495 (ZustandStore)
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

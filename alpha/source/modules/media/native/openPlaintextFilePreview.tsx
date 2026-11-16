@@ -1,12 +1,12 @@
 // Module ID: 12507
 // Function ID: 12508
 // Name: openPlaintextFilePreview
-// Dependencies: [6848, 12508, 2121, 2]
+// Dependencies: [6838, 12508, 2121, 2]
 // Exports: openPlaintextFilePreview
 
 // Module 12507 (openPlaintextFilePreview)
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import size from "module_2" /* 2 */;
 
 const PlaintextFilePreview = "PlaintextFilePreview";

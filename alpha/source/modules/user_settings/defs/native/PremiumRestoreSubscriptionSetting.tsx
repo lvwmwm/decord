@@ -1,13 +1,13 @@
-// Module ID: 17862
-// Function ID: 17863
+// Module ID: 17864
+// Function ID: 17865
 // Name: PremiumRestoreSubscriptionSetting
-// Dependencies: [1388, 21, 9587, 6269, 1113, 17863, 2121, 504, 1380, 12406, 9436, 2]
+// Dependencies: [1388, 21, 9587, 6259, 1113, 17865, 2121, 504, 1380, 12406, 9436, 2]
 
-// Module 17862 (PremiumRestoreSubscriptionSetting)
+// Module 17864 (PremiumRestoreSubscriptionSetting)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import intl4 from "intl" /* 1113 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6269 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6259 */;
 import NitroWheelIcon from "NitroWheelIcon" /* 9436 */;
 import BillingActionCreatorsDefault from "BillingActionCreators" /* 9587 */;
 import UserStore from "UserStore" /* 1388 */;

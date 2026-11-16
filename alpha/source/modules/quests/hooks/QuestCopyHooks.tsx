@@ -1,7 +1,7 @@
 // Module ID: 15261
 // Function ID: 15262
 // Name: QuestCopyHooks
-// Dependencies: [5, 32, 19, 2189, 1388, 5338, 1072, 1390, 1113, 10151, 8831, 8829, 2188, 15262, 2110, 504, 10131, 15263, 10664, 10286, 5341, 10156, 2027, 12845, 15250, 10170, 8834, 8833, 2]
+// Dependencies: [5, 32, 19, 2189, 1388, 6954, 1072, 1390, 1113, 10151, 8831, 8829, 2188, 15262, 2110, 504, 10131, 15263, 10664, 10286, 6957, 10156, 2027, 12845, 15250, 10170, 8834, 8833, 2]
 // Exports: getQuestsInstructionsToWinReward, getRewardCodeRedemptionInstructions, useModalCtaConfig, usePrimaryCtaCopy, useQuestBarSubtitle, useQuestBarTitle, useQuestDescription
 
 // Module 15261 (QuestCopyHooks)
@@ -11,7 +11,7 @@ import PremiumConstants from "PremiumConstants" /* 1390 */;
 import NumberUtils from "NumberUtils" /* 2027 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 2110 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
-import QuestTypes from "QuestTypes" /* 5341 */;
+import QuestTypes from "QuestTypes" /* 6957 */;
 import QuestTaskUtils from "QuestTaskUtils" /* 8831 */;
 import QuestType from "QuestType" /* 8833 */;
 import hooks_QuestHooks from "hooks/QuestHooks" /* 10131 */;
@@ -25,7 +25,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2189 */;
 import UserStore from "UserStore" /* 1388 */;
-import QuestConstants from "QuestConstants" /* 5338 */;
+import QuestConstants from "QuestConstants" /* 6954 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2;
@@ -903,7 +903,7 @@ export function getRewardCodeRedemptionInstructions(arg0) {
     platform = rewardCode.platform;
   }
   if (platform == null) {
-    platform = tmp(5341).QuestRewardCodePlatforms.CROSS_PLATFORM;
+    platform = tmp(6957).QuestRewardCodePlatforms.CROSS_PLATFORM;
   }
   let rewardCodeQuestReward = null;
   if (result) {

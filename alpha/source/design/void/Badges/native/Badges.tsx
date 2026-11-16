@@ -1,7 +1,7 @@
 // Module ID: 16630
 // Function ID: 16631
 // Name: Badges/Badges
-// Dependencies: [19, 17, 21, 5306, 575, 5929, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 5919, 2]
 // Exports: TextBadge
 
 // Module 16630 (Badges/Badges)

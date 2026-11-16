@@ -1,7 +1,7 @@
 // Module ID: 14606
 // Function ID: 14607
 // Name: ChatInputSendUtils
-// Dependencies: [5, 8725, 8792, 8872, 1388, 1072, 5311, 1390, 11153, 9004, 1242, 14605, 14602, 8786, 8660, 12641, 11166, 11157, 2174, 11170, 6268, 1113, 1256, 11228, 9111, 5552, 14607, 2121, 8875, 7937, 12763, 11397, 13437, 5985, 2]
+// Dependencies: [5, 8725, 8792, 8872, 1388, 1072, 5311, 1390, 11153, 9004, 1242, 14605, 14602, 8786, 8660, 12641, 11166, 11157, 2174, 11170, 6258, 1113, 1256, 11228, 9111, 5542, 14607, 2121, 8875, 7937, 12763, 11397, 13437, 5975, 2]
 // Exports: chatInputCreateThread, chatInputHandleSendText, chatInputSendApplicationCommand
 
 // Module 14606 (ChatInputSendUtils)
@@ -10,7 +10,7 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
 import MessageConstants from "MessageConstants" /* 5311 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6268 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6258 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
 import DraftStore2 from "DraftStore" /* 8725 */;
 import MessageParserDefault from "MessageParser" /* 8786 */;
@@ -441,13 +441,13 @@ export function chatInputHandleSendText(text) {
         while (iter !== undefined) {
           let checkResult = iter.next().check(text, channel, null != channel.getGuildId());
           if (false !== checkResult) {
-            let tmp11 = params(6268);
+            let tmp11 = params(6258);
             let obj2 = {
               title: intl.string(intl4.t.mY3Y38),
               body: checkResult.body,
               confirmText: intl2.string(intl4.t.KJnHq3),
               onConfirm() {
-                          obj = { text: require, parsedMessage, tts: "alignItems", source: true, params };
+                          obj = { text: require, parsedMessage, tts: "alignItems", source: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013586891474478143, params };
                           chatInputSendMessage(obj);
                         },
               cancelText: intl3.string(intl4.t.fsBWmS)
@@ -470,15 +470,15 @@ export function chatInputHandleSendText(text) {
               threadId: channel.id,
               attachments: uploads,
               sendMessage() {
-                          obj = { text: require, parsedMessage, tts: "alignItems", source: 16777858, params };
+                          obj = { text: require, parsedMessage, tts: "alignItems", source: true, params };
                           chatInputSendMessage(obj);
                         }
             };
-            const obj5 = params(5552);
+            const obj5 = params(5542);
             obj5.openLazy(tmp20(2121)(14607, tmp21.paths), "add-media-to-original-forum-post", obj4);
           }
         }
-        const obj6 = { text, parsedMessage: tmp2, tts: "alignItems", source: "Array", params };
+        const obj6 = { text, parsedMessage: tmp2, tts: "alignItems", source: null, params };
         chatInputSendMessage(obj6);
       }
     }

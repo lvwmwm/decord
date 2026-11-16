@@ -1,7 +1,7 @@
 // Module ID: 16036
 // Function ID: 16037
 // Name: PremiumGuildPreview
-// Dependencies: [19, 17, 1192, 1072, 21, 5306, 575, 6961, 5313, 16037, 16038, 16039, 16040, 16041, 16042, 16043, 16044, 6020, 1187, 9235, 504, 7720, 2]
+// Dependencies: [19, 17, 1192, 1072, 21, 5306, 575, 6951, 5313, 16037, 16038, 16039, 16040, 16041, 16042, 16043, 16044, 6010, 1187, 9235, 504, 7720, 2]
 // Exports: default
 
 // Module 16036 (PremiumGuildPreview)
@@ -11,8 +11,8 @@ import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
 import shared from "shared" /* 5313 */;
-import FastImageDefault from "FastImage" /* 6020 */;
-import LegacyTokens from "LegacyTokens" /* 6961 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import LegacyTokens from "LegacyTokens" /* 6951 */;
 import GuildIcon from "GuildIcon" /* 7720 */;
 import GuildBoostingUtils from "GuildBoostingUtils" /* 9235 */;
 import AssetRegistryDefault from "AssetRegistry" /* 16037 */;

@@ -15,7 +15,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, dependencyMap, game, map, set;
 
-const f100852 = () => authenticated.isAuthenticated();
+const f100865 = () => authenticated.isAuthenticated();
 let result = size.fileFinishedImporting("modules/guild_profile/hooks/useGuildProfileGames.tsx");
 
 export default function useGuildProfileGames(gameActivity) {
@@ -33,7 +33,7 @@ export default function useGuildProfileGames(gameActivity) {
   const tmp2 = dependencyMap;
   let items = [AuthenticationStore];
   const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, f100852);
+  const stateFromStores = obj.useStateFromStores(items, f100865);
   require("useGame");
   if (null != games) {
     let items1;
@@ -125,7 +125,7 @@ export function useAllGuildProfileGames(profile) {
   const games = profile.games;
   const items = [AuthenticationStore];
   const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, f100852);
+  const stateFromStores = obj.useStateFromStores(items, f100865);
   require("useGame");
   const tmp = _require;
   if (null != games) {

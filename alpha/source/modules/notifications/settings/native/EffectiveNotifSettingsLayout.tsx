@@ -1,14 +1,14 @@
-// Module ID: 18624
-// Function ID: 18625
+// Module ID: 18626
+// Function ID: 18627
 // Name: EffectiveNotifSettingsLayout
-// Dependencies: [19, 1231, 502, 16163, 21, 5306, 575, 18625, 6337, 8159, 1113, 3029, 16177, 504, 572, 17213, 2]
+// Dependencies: [19, 1231, 502, 16163, 21, 5306, 575, 18627, 6327, 8159, 1113, 3029, 16177, 504, 572, 17213, 2]
 // Exports: default
 
-// Module 18624 (EffectiveNotifSettingsLayout)
+// Module 18626 (EffectiveNotifSettingsLayout)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef3029 from "module_3029" /* 3029 */;
-import EffectiveNotifSettingsActionCreators from "EffectiveNotifSettingsActionCreators" /* 18625 */;
+import EffectiveNotifSettingsActionCreators from "EffectiveNotifSettingsActionCreators" /* 18627 */;
 import react from "react" /* 19 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -52,7 +52,7 @@ function EffectiveSettingsHeader() {
   let tmp9Result = null;
   if (unavailable) {
     let obj = { style: tmp.notice, children: closure_7(InlineNotice, obj2) };
-    const Stack = loading(6337).Stack;
+    const Stack = loading(6327).Stack;
     let str = "warning";
     InlineNotice = loading(8159).InlineNotice;
     if (loading) {

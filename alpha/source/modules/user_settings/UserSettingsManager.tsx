@@ -1,9 +1,9 @@
-// Module ID: 20414
-// Function ID: 20415
+// Module ID: 20417
+// Function ID: 20418
 // Name: UserSettingsManager
 // Dependencies: [7882, 5131, 2]
 
-// Module 20414 (UserSettingsManager)
+// Module 20417 (UserSettingsManager)
 import UserSettings from "UserSettings" /* 5131 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
 import size from "module_2" /* 2 */;

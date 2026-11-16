@@ -1,19 +1,19 @@
 // Module ID: 11079
 // Function ID: 11080
 // Name: ChannelSettingsNotifications
-// Dependencies: [19, 5159, 5155, 5536, 5248, 6958, 1388, 1072, 6959, 1082, 21, 1113, 11080, 5306, 575, 5377, 6067, 7883, 5552, 11081, 2121, 7878, 5954, 7746, 7443, 11085, 7954, 7745, 7747, 5929, 8106, 6337, 504, 11086, 2]
+// Dependencies: [19, 5159, 5155, 5526, 5248, 6948, 1388, 1072, 6949, 1082, 21, 1113, 11080, 5306, 575, 5367, 6057, 7883, 5542, 11081, 2121, 7878, 5944, 7746, 7443, 11085, 7954, 7745, 7747, 5919, 8106, 6327, 504, 11086, 2]
 // Exports: default
 
 // Module 11079 (ChannelSettingsNotifications)
 import nativeDefault from "native" /* 575 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import intl16 from "intl" /* 1113 */;
-import native from "native" /* 5377 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import useChannelName from "useChannelName" /* 5954 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6067 */;
-import Stack_Stack from "Stack/Stack" /* 6337 */;
-import ReadStateConstants from "ReadStateConstants" /* 6959 */;
+import native from "native" /* 5367 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import useChannelName from "useChannelName" /* 5944 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6057 */;
+import Stack_Stack from "Stack/Stack" /* 6327 */;
+import ReadStateConstants from "ReadStateConstants" /* 6949 */;
 import TableRow2 from "TableRow" /* 7443 */;
 import TableRowGroup2 from "TableRowGroup" /* 7746 */;
 import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7878 */;
@@ -24,9 +24,9 @@ import MutedUntilTextDefault from "MutedUntilText" /* 11085 */;
 import react from "react" /* 19 */;
 import ChannelRecord from "ChannelRecord" /* 5159 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5536 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5526 */;
 import RelationshipStore from "RelationshipStore" /* 5248 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6958 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6948 */;
 import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;

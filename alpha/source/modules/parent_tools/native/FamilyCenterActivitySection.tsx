@@ -1,12 +1,12 @@
 // Module ID: 17429
 // Function ID: 17430
 // Name: FamilyCenterActivitySection
-// Dependencies: [32, 19, 17, 8741, 21, 5306, 575, 9617, 9619, 17424, 5929, 6014, 1113, 2701, 14224, 17430, 7428, 2]
+// Dependencies: [32, 19, 17, 8741, 21, 5306, 575, 9617, 9619, 17424, 5919, 6004, 1113, 2701, 14224, 17430, 7428, 2]
 // Exports: default
 
 // Module 17429 (FamilyCenterActivitySection)
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 9617 */;
 import FamilyCenterUtils from "FamilyCenterUtils" /* 9619 */;
 import useFamilyCenterActivities from "useFamilyCenterActivities" /* 17424 */;
@@ -70,7 +70,7 @@ function FamilyCenterActivitySectionHeader(displayType) {
     const tmp14 = React4;
     if (null !== tmp10) {
       const obj3 = { variant: "body-sm/medium", color: "text-muted", style: tmp.description, children: tmp10 };
-      tmp14Result = tmp14(tmp3(5929).Text, obj3);
+      tmp14Result = tmp14(tmp3(5919).Text, obj3);
     }
     const obj6 = { children: items };
     items[1] = tmp14Result;
@@ -148,7 +148,7 @@ export default function FamilyCenterActivitySection(displayType) {
         obj9 = { style: tmp.loadMoreButton, animating: true, color: "#fff", size: "small" };
         tmp20Result = tmp20(tmp19, obj8);
       } else {
-        const obj10 = { style: tmp.loadMore, accessibilityLabel: formatToPlainStringResult, accessibilityRole: "button", onPress: tmp9, children: closure_9(displayType(5929).Text, obj11) };
+        const obj10 = { style: tmp.loadMore, accessibilityLabel: formatToPlainStringResult, accessibilityRole: "button", onPress: tmp9, children: closure_9(displayType(5919).Text, obj11) };
         const PressableOpacity = tmp2(7428).PressableOpacity;
         obj11 = { style: tmp.loadMoreButton, variant: "body-xs/semibold", color: "text-overlay-light", children: formatToPlainStringResult };
         tmp20Result = tmp20(PressableOpacity, obj10);

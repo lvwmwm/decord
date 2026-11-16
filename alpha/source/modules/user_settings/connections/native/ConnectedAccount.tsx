@@ -1,7 +1,7 @@
 // Module ID: 17474
 // Function ID: 17475
 // Name: ConnectedAccount
-// Dependencies: [5, 32, 19, 17, 7085, 5177, 1072, 7423, 21, 5306, 1187, 575, 6826, 7466, 504, 5936, 1113, 5929, 7720, 7087, 7453, 5377, 17475, 10833, 6268, 6340, 7422, 17476, 17479, 7954, 7467, 12494, 6012, 2188, 7988, 9485, 13308, 3449, 1414, 5313, 10647, 7444, 7443, 2]
+// Dependencies: [5, 32, 19, 17, 7085, 5177, 1072, 7423, 21, 5306, 1187, 575, 6816, 7466, 504, 5926, 1113, 5919, 7720, 7087, 7453, 5367, 17475, 10833, 6258, 6330, 7422, 17476, 17479, 7954, 7467, 12494, 6002, 2188, 7988, 9485, 13308, 3449, 1414, 5313, 10647, 7444, 7443, 2]
 
 // Module 17474 (ConnectedAccount)
 import react_native from "react-native" /* 17 */;
@@ -9,10 +9,10 @@ import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
 import AvatarUtils from "AvatarUtils" /* 1414 */;
 import shared from "shared" /* 5313 */;
-import native2 from "native" /* 5377 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6268 */;
-import AlertDefault from "Alert" /* 6340 */;
+import native2 from "native" /* 5367 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6258 */;
+import AlertDefault from "Alert" /* 6330 */;
 import PlatformsDefault from "Platforms" /* 7087 */;
 import Constants2 from "Constants" /* 7423 */;
 import TableRow from "TableRow" /* 7443 */;
@@ -34,7 +34,7 @@ import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;
 import native_mod from "native" /* 1187 */;
-import TextStyles from "TextStyles" /* 6826 */;
+import TextStyles from "TextStyles" /* 6816 */;
 import size from "module_2" /* 2 */;
 
 let importDefault, integrations;
@@ -97,7 +97,7 @@ function Integration(integration) {
       disabled: stateFromStores,
       text: stringResult
     };
-    Button = tmp(5936).Button;
+    Button = tmp(5926).Button;
     const intl = tmp(1113).intl;
     const string = intl.string;
     const t = tmp(1113).t;
@@ -112,7 +112,7 @@ function Integration(integration) {
   let tmp11 = tmp5 === integration.id;
   if (tmp11) {
     const obj6 = { style: legacyClassComponentStyles.integrationErrorText, variant: "body-sm/medium", color: "text-feedback-critical", children: intl2.string(integration(1113).t.fEptJP) };
-    const Text = tmp(5929).Text;
+    const Text = tmp(5919).Text;
     intl2 = tmp(1113).intl;
     tmp11 = closure_14(Text, obj6);
   }
@@ -124,8 +124,8 @@ function Integration(integration) {
   const obj10 = { style: legacyClassComponentStyles.integrationTextRowContainer, children: items5 };
   items5 = [, ];
   const obj11 = { lineClamp: 1, variant: "body-sm/medium", children: integration.guild.name };
-  items5[0] = closure_14(integration(5929).Text, obj11);
-  const Text2 = tmp(5929).Text;
+  items5[0] = closure_14(integration(5919).Text, obj11);
+  const Text2 = tmp(5919).Text;
   const obj12 = PlatformsDefault;
   const value = obj12.get(integration.type);
   let platformUserUrl;
@@ -691,7 +691,7 @@ class ConnectedAccount extends PureComponent {
     if (null !== createdAtDate) {
       const push = redditMetadataItems.push;
       let obj = { variant: "body-xs/normal", color: "interactive-text-default", children: intl.format(account(1113).t["9rfonh"], obj3) };
-      const Text = tmp2(5929).Text;
+      const Text = tmp2(5919).Text;
       intl = tmp2(1113).intl;
       obj3 = { date: createdAtDate };
       push(closure_14(Text, obj, tmp4.CREATED_AT));
@@ -725,13 +725,13 @@ class ConnectedAccount extends PureComponent {
         intl4 = tmp2(1113).intl;
         items1 = [closure_14(TextBadge, obj5), , , , ];
         const obj6 = { variant: "body-xs/normal", children: intl5.string(account(1113).t.eH16Gn) };
-        const Text2 = tmp2(5929).Text;
+        const Text2 = tmp2(5919).Text;
         intl5 = tmp2(1113).intl;
         items1[1] = closure_14(Text2, obj6);
         const obj7 = { style: tmp.rowDivider };
         items1[2] = closure_14(View, obj7);
         const obj8 = { style: tmp.addDetailsButton, children: closure_14(Button2, obj9) };
-        Button2 = tmp2(5936).Button;
+        Button2 = tmp2(5926).Button;
         const metadataAlreadyRefreshed = self.state.metadataAlreadyRefreshed;
         const intl6 = tmp2(1113).intl;
         const string = intl6.string;
@@ -756,7 +756,7 @@ class ConnectedAccount extends PureComponent {
                 return openURL(obj.getArticleURL(constants.CONNECTION_DETAILS));
               }
         };
-        Button = tmp2(5936).Button;
+        Button = tmp2(5926).Button;
         intl3 = tmp2(1113).intl;
         items1[4] = closure_14(View, obj10);
         tmp20Result = tmp20(tmp21, obj4);

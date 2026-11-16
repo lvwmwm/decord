@@ -1,7 +1,7 @@
 // Module ID: 7289
 // Function ID: 7290
 // Name: GuildSubscriptionsStore
-// Dependencies: [32, 5532, 5239, 7290, 502, 7315, 7036, 5155, 6957, 5218, 5177, 6071, 5248, 5209, 5349, 1072, 15990, 572, 12, 5180, 504, 2]
+// Dependencies: [32, 5522, 5239, 7290, 502, 7315, 7036, 5155, 6947, 5218, 5177, 6061, 5248, 5209, 5339, 1072, 15990, 572, 12, 5180, 504, 2]
 
 // Module 7289 (GuildSubscriptionsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -10,19 +10,19 @@ import FavoritesUtils from "FavoritesUtils" /* 5180 */;
 import ChannelMemberStore from "ChannelMemberStore" /* 7315 */;
 import GuildSubscriptionsDefault from "GuildSubscriptions" /* 15990 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ExperimentStore from "ExperimentStore" /* 5532 */;
+import ExperimentStore from "ExperimentStore" /* 5522 */;
 import LurkingStore from "LurkingStore" /* 5239 */;
 import SpotifyStore from "SpotifyStore" /* 7290 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelSectionStore from "ChannelSectionStore" /* 7036 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6957 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6947 */;
 import GuildMemberStore from "GuildMemberStore" /* 5218 */;
 import GuildStore from "GuildStore" /* 5177 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6071 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
 import RelationshipStore from "RelationshipStore" /* 5248 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5349 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

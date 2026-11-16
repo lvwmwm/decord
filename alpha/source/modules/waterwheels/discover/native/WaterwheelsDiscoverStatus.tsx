@@ -1,16 +1,16 @@
-// Module ID: 19021
-// Function ID: 19022
+// Module ID: 19023
+// Function ID: 19024
 // Name: WaterwheelsDiscoverStatus
-// Dependencies: [19, 17, 21, 5306, 575, 5929, 1113, 2569, 5936, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 5919, 1113, 2569, 5926, 2]
 // Exports: WaterwheelsDiscoverRefreshError, default
 
-// Module 19021 (WaterwheelsDiscoverStatus)
+// Module 19023 (WaterwheelsDiscoverStatus)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import _modDef2569 from "module_2569" /* 2569 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import components_Button_Button from "components/Button/Button" /* 5936 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
@@ -84,14 +84,14 @@ export default function WaterwheelsDiscoverStatus(onRetry) {
     let tmp14Result = null;
     if ("empty" === status) {
       const obj = { variant: "body-sm/normal", color: "text-subtle", style: tmp.centered, children: intl.string(tmp4(2569)["9KIqrW"]) };
-      const Text = tmp15(5929).Text;
+      const Text = tmp15(5919).Text;
       intl = tmp15(1113).intl;
       tmp14Result = tmp14(Text, obj);
     }
     items1[1] = tmp14Result;
     items2 = [metroRequire(View, obj5), ];
     const obj7 = { size: "sm", variant: "secondary", text: intl2.string(tmp4(2569).DClDU4), onPress: onRetry, disabled: tmp3 };
-    const Button = tmp15(5936).Button;
+    const Button = tmp15(5926).Button;
     intl2 = tmp15(1113).intl;
     items2[1] = hasOwnProperty(Button, obj7);
     tmp12Result = tmp12(tmp13, obj4);

@@ -1,13 +1,13 @@
 // Module ID: 12999
 // Function ID: 13000
 // Name: UserSettingsVoice
-// Dependencies: [19, 17, 13000, 13001, 21, 5306, 7746, 13002, 13003, 6337, 13005, 13016, 5929, 1113, 13020, 13029, 13031, 13039, 7415, 2]
+// Dependencies: [19, 17, 13000, 13001, 21, 5306, 7746, 13002, 13003, 6327, 13005, 13016, 5919, 1113, 13020, 13029, 13031, 13039, 7415, 2]
 // Exports: UserSettingsTableRowGroup, default
 
 // Module 12999 (UserSettingsVoice)
 import react_native from "react-native" /* 17 */;
 import intl3 from "intl" /* 1113 */;
-import Stack_Stack from "Stack/Stack" /* 6337 */;
+import Stack_Stack from "Stack/Stack" /* 6327 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 7415 */;
 import TableRowGroup2 from "TableRowGroup" /* 7746 */;
 import MobileVoiceOverlayStore from "MobileVoiceOverlayStore" /* 13000 */;
@@ -54,7 +54,7 @@ export default function UserSettingsVoice() {
   }
   items[1] = nonContextualStreamOutputPresent;
   const obj3 = { style: tmp.tableRow, variant: "body-sm/medium", children: intl.format(intl3.t["V+B3FH"], obj4) };
-  const Text = tmp8(5929).Text;
+  const Text = tmp8(5919).Text;
   intl = tmp8(1113).intl;
   obj4 = { guideURL };
   items[2] = metroRequire(Text, obj3);

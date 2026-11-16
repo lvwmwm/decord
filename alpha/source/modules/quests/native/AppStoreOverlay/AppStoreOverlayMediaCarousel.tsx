@@ -1,7 +1,7 @@
 // Module ID: 10185
 // Function ID: 10186
 // Name: AppStoreOverlayMediaCarousel
-// Dependencies: [32, 19, 17, 5307, 1083, 21, 575, 5306, 10186, 10187, 1113, 6020, 504, 9730, 10328, 8825, 8834, 5598, 2]
+// Dependencies: [32, 19, 17, 5307, 1083, 21, 575, 5306, 10186, 10187, 1113, 6010, 504, 9730, 10328, 8825, 8834, 5588, 2]
 // Exports: default
 
 // Module 10185 (AppStoreOverlayMediaCarousel)

@@ -1,7 +1,7 @@
 // Module ID: 15962
 // Function ID: 15963
 // Name: AuthorizeScopes
-// Dependencies: [19, 17, 21, 5306, 1113, 7629, 575, 7930, 5929, 5917, 7403, 5953, 7307, 2]
+// Dependencies: [19, 17, 21, 5306, 1113, 7629, 575, 7930, 5919, 5907, 7403, 5943, 7307, 2]
 // Exports: default
 
 // Module 15962 (AuthorizeScopes)
@@ -56,7 +56,7 @@ function Scope(arg0) {
   items = [React3(View, obj2), ];
   let str3;
   const obj5 = { style: tmp.scope, children: items1 };
-  const Text = tmp6(5929).Text;
+  const Text = tmp6(5919).Text;
   if (isFake) {
     str3 = "text-muted";
   }
@@ -64,7 +64,7 @@ function Scope(arg0) {
   let tmp10Result2 = null;
   if (null != error) {
     const obj6 = { variant: "body-xs/normal", children: error };
-    tmp10Result2 = tmp10(tmp6(5929).Text, obj6);
+    tmp10Result2 = tmp10(tmp6(5919).Text, obj6);
   }
   items1[1] = tmp10Result2;
   items[1] = hasOwnProperty(View, obj5);
@@ -108,14 +108,14 @@ export default function AuthorizeScopes(accountScopes) {
       PZpY9c = t["1Hz+Sl"];
       tmp5 = tmp15;
     }
-    let hasItem = integrationType === tmp5(5953).ApplicationIntegrationType.USER_INSTALL;
+    let hasItem = integrationType === tmp5(5943).ApplicationIntegrationType.USER_INSTALL;
     if (hasItem) {
       hasItem = requestedScopes.includes(tmp5(7307).OAuth2Scopes.APPLICATIONS_COMMANDS);
     }
     const tmp8 = closure_5;
     let obj = { style: tmp.scopesContainer, children: items };
     const obj2 = { variant: "heading-xs/medium", color: "text-default", children: intl.format(PZpY9c, obj3) };
-    const Text = tmp5(5929).Text;
+    const Text = tmp5(5919).Text;
     intl = tmp5(1113).intl;
     obj3 = { application: application.name };
     items = [closure_4(Text, obj2), ];

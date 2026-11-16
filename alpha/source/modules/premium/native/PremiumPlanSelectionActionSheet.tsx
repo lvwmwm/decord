@@ -1,7 +1,7 @@
 // Module ID: 9591
 // Function ID: 9592
 // Name: PremiumPlanSelectionActionSheet
-// Dependencies: [109, 5, 32, 19, 17, 9592, 2189, 9302, 9589, 1390, 1072, 1191, 6050, 1083, 21, 5306, 575, 2174, 5929, 1113, 38, 9599, 2027, 504, 9610, 7253, 5936, 5568, 6331, 9612, 9585, 5547, 9310, 9313, 9711, 8559, 7918, 7937, 5917, 9684, 9713, 5899, 9714, 1256, 5552, 9716, 1627, 6269, 9614, 6767, 9611, 5313, 9700, 9701, 9702, 9703, 9704, 9705, 1380, 2188, 5566, 9718, 5901, 6020, 8113, 9721, 1187, 9410, 9622, 9722, 2]
+// Dependencies: [109, 5, 32, 19, 17, 9592, 2189, 9302, 9589, 1390, 1072, 1191, 6040, 1083, 21, 5306, 575, 2174, 5919, 1113, 38, 9599, 2027, 504, 9610, 7253, 5926, 5558, 6321, 9612, 9585, 5537, 9310, 9313, 9711, 8559, 7918, 7937, 5907, 9684, 9713, 5889, 9714, 1256, 5542, 9716, 1627, 6259, 9614, 6757, 9611, 5313, 9700, 9701, 9702, 9703, 9704, 9705, 1380, 2188, 5556, 9718, 5891, 6010, 8113, 9721, 1187, 9410, 9622, 9722, 2]
 // Exports: default, getItemsByPremiumTypePredicate
 
 // Module 9591 (PremiumPlanSelectionActionSheet)
@@ -13,10 +13,10 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import components_Button_Button from "components/Button/Button" /* 5936 */;
-import react_native from "react-native" /* 6331 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
+import react_native from "react-native" /* 6321 */;
 import ACOMExperiments from "ACOMExperiments" /* 9410 */;
 import NativeCheckoutStore from "NativeCheckoutStore" /* 9592 */;
 import PremiumPlanActionSheetHeaderDefault from "PremiumPlanActionSheetHeader" /* 9599 */;
@@ -32,7 +32,7 @@ import IAPStore from "IAPStore" /* 9302 */;
 import PremiumPlanPurchasedStore from "PremiumPlanPurchasedStore" /* 9589 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
 import Constants_mod from "Constants" /* 1072 */;
-import PaymentConstants from "PaymentConstants" /* 6050 */;
+import PaymentConstants from "PaymentConstants" /* 6040 */;
 import Constants_mod2 from "Constants" /* 1083 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
@@ -85,12 +85,12 @@ function Header(arg0) {
   let premiumType;
   let selectedPremiumType;
   let trialOffer;
-  const f98487 = (orderRequired) => ({ orderRequired: orderRequired.orderRequired, orderRecord: orderRequired.orderRecord });
+  const f98500 = (orderRequired) => ({ orderRequired: orderRequired.orderRequired, orderRecord: orderRequired.orderRecord });
   ({ premiumType, isPaymentSuccess, trialOffer } = arg0);
   ({ selectedPremiumType, discountOffer } = arg0);
   const tmp = closure_38();
-  ({ orderRequired, orderRecord } = useNativeCheckoutStore(f98487));
-  useNativeCheckoutStore(f98487);
+  ({ orderRequired, orderRecord } = useNativeCheckoutStore(f98500));
+  useNativeCheckoutStore(f98500);
   if (null == premiumType) {
     if (!isPaymentSuccess) {
       const obj = { style: tmp.headerText, variant: "body-md/semibold", color: "text-default", accessibilityRole: "header", children: intl.string(intl9.t.vLz3Zs) };
@@ -204,7 +204,7 @@ function PlanOption(premiumItem) {
   let trialOffer;
   let userIsEligibleForBogoPromotion;
   let v02Gmgm;
-  const f98489 = (orderRequired) => ({ orderRequired: orderRequired.orderRequired, orderRecord: orderRequired.orderRecord });
+  const f98502 = (orderRequired) => ({ orderRequired: orderRequired.orderRequired, orderRecord: orderRequired.orderRecord });
   premiumItem = premiumItem.premiumItem;
   ({ customBadgeComponent, trialOffer, discountOffer, userIsEligibleForBogoPromotion } = premiumItem);
   ({ selectedProductId, optionNeedsProductNameLabel, discountedPriceString } = premiumItem);
@@ -231,10 +231,10 @@ function PlanOption(premiumItem) {
     priceString = stateFromStores.priceString;
   }
   const checkoutPlanDiscountPrices = useCheckoutPlanDiscountPrices(productId, obj3);
-  ({ orderRequired, orderRecord } = useNativeCheckoutStore(f98489));
+  ({ orderRequired, orderRecord } = useNativeCheckoutStore(f98502));
   const premiumTier = premiumItem.premiumTier;
   let tmp12 = null != trialOffer && null != premiumTier;
-  useNativeCheckoutStore(f98489);
+  useNativeCheckoutStore(f98502);
   if (tmp12) {
     const subscriptionTrial = trialOffer.subscriptionTrial;
     let skuId;
@@ -344,7 +344,7 @@ function PlanOption(premiumItem) {
     planOptionPriceContainer = tmp.planOptionPriceContainer;
   }
   const obj9 = { style: tmp.planOptionContainer, children: items3 };
-  const Text = tmp4(5929).Text;
+  const Text = tmp4(5919).Text;
   if (null != discountOffer) {
     str3 = "body-lg/medium";
   } else {
@@ -391,7 +391,7 @@ function PlanOption(premiumItem) {
   items4 = [customBadgeComponent, ];
   const obj16 = { style: tmp.priceText, variant: "body-lg/medium", color: str8, children: formatToPlainStringResult };
   str8 = str4;
-  const Text2 = tmp4(5929).Text;
+  const Text2 = tmp4(5919).Text;
   if (productId2 === selectedProductId) {
     str8 = "interactive-text-active";
   }
@@ -400,7 +400,7 @@ function PlanOption(premiumItem) {
   let tmp35Result4 = null;
   if (tmp15) {
     let str9 = str4;
-    const Text3 = tmp4(5929).Text;
+    const Text3 = tmp4(5919).Text;
     if (productId2 === selectedProductId) {
       str9 = "text-default";
     }
@@ -445,7 +445,7 @@ function PlanOption(premiumItem) {
       tmp35Result5 = null;
       if (null == selectedPremiumType) {
         let str10 = str4;
-        const Text4 = tmp4(5929).Text;
+        const Text4 = tmp4(5919).Text;
         if (productId2 === selectedProductId) {
           str10 = "text-default";
         }
@@ -469,7 +469,7 @@ function PlanOption(premiumItem) {
   items6 = [tmp35Result5, ];
   let tmp35Result6 = null != checkoutPlanDiscountPrices && null != discountOffer;
   if (tmp35Result6) {
-    const Text5 = tmp4(5929).Text;
+    const Text5 = tmp4(5919).Text;
     if (productId2 === selectedProductId) {
       str4 = "text-default";
     }
@@ -566,8 +566,8 @@ function PremiumPlanSelectionActionSheet(premiumItems) {
   let tmp83;
   let userIsEligibleForBogoPromotion;
   let v9hnZoK;
-  const f98491 = (premiumTier) => premiumTier.premiumTier;
-  const f98502 = (patchOrderLineItems) => ({ patchOrderLineItems: patchOrderLineItems.patchOrderLineItems, isPatchOrderLoading: patchOrderLineItems.isPatchOrderLoading, orderRequired: patchOrderLineItems.orderRequired });
+  const f98504 = (premiumTier) => premiumTier.premiumTier;
+  const f98515 = (patchOrderLineItems) => ({ patchOrderLineItems: patchOrderLineItems.patchOrderLineItems, isPatchOrderLoading: patchOrderLineItems.isPatchOrderLoading, orderRequired: patchOrderLineItems.orderRequired });
   ({ applicationId: require, analyticsLocation, premiumType } = premiumItems);
   premiumItems = premiumItems.premiumItems;
   const onPaymentStart = premiumItems.onPaymentStart;
@@ -741,8 +741,8 @@ function PremiumPlanSelectionActionSheet(premiumItems) {
   const tmp16 = premiumType(premiumItems[31])();
   const tmp17 = ref((orderRecord) => orderRecord.orderRecord);
   let closure_13 = tmp17;
-  ({ patchOrderLineItems: c14, isPatchOrderLoading, orderRequired } = ref(f98502));
-  const tmp18 = ref(f98502);
+  ({ patchOrderLineItems: c14, isPatchOrderLoading, orderRequired } = ref(f98515));
+  const tmp18 = ref(f98515);
   if (!isPatchOrderLoading) {
     isPatchOrderLoading = ref((isCreateOrderLoading) => isCreateOrderLoading.isCreateOrderLoading);
   }
@@ -1279,8 +1279,8 @@ function PremiumPlanSelectionActionSheet(premiumItems) {
         const _Set = Set;
         const self = this;
         const self2 = this;
-        react = new Set(premiumItems.map(f98491)).size > 1;
-        set = new Set(premiumItems.map(f98491));
+        react = new Set(premiumItems.map(f98504)).size > 1;
+        set = new Set(premiumItems.map(f98504));
         items17[1] = tmp48(product_id, obj28);
         items15[1] = closure_36(tmp15Result13, obj25);
         tmp49Result2 = tmp49(tmp54, obj20);

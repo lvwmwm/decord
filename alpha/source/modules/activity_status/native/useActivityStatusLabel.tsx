@@ -1,7 +1,7 @@
 // Module ID: 15642
 // Function ID: 15643
 // Name: useActivityStatusLabel
-// Dependencies: [6820, 5155, 5238, 6068, 5248, 5981, 504, 6069, 9532, 10847, 10848, 10854, 1113, 10857, 10862, 2]
+// Dependencies: [6810, 5155, 5238, 6058, 5248, 5971, 504, 6059, 9532, 10847, 10848, 10854, 1113, 10857, 10862, 2]
 // Exports: default
 
 // Module 15642 (useActivityStatusLabel)
@@ -10,12 +10,12 @@ import useUserVoiceActivity from "useUserVoiceActivity" /* 10848 */;
 import isGameActivityDefault from "isGameActivity" /* 10854 */;
 import getActivityStatusTextDefault from "getActivityStatusText" /* 10857 */;
 import VoiceActivityStatus from "VoiceActivityStatus" /* 10862 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6820 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6810 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import PermissionStore from "PermissionStore" /* 5238 */;
-import PresenceStore from "PresenceStore" /* 6068 */;
+import PresenceStore from "PresenceStore" /* 6058 */;
 import RelationshipStore from "RelationshipStore" /* 5248 */;
-import VoiceStateStore from "VoiceStateStore" /* 5981 */;
+import VoiceStateStore from "VoiceStateStore" /* 5971 */;
 import size from "module_2" /* 2 */;
 
 let type;

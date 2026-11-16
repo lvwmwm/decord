@@ -1,7 +1,7 @@
 // Module ID: 13258
 // Function ID: 13259
 // Name: ConjureEffortPicker
-// Dependencies: [32, 19, 17, 21, 1113, 4131, 13259, 6337, 575, 7745, 13261, 7747, 7746, 7443, 13260, 7954, 7951, 7913, 2]
+// Dependencies: [32, 19, 17, 21, 1113, 4131, 13259, 6327, 575, 7745, 13261, 7747, 7746, 7443, 13260, 7954, 7951, 7913, 2]
 // Exports: ConjureEffortPickerSheet
 
 // Module 13258 (ConjureEffortPicker)
@@ -65,7 +65,7 @@ class ConjureEffortPicker {
     let obj2 = settings(13259);
     const conjureTierModelResult = obj2.conjureTierModel(settings, tiers, settings.tier);
     let obj3 = { direction: "vertical", spacing: disabled(575).space.PX_16, children: items };
-    const Stack = settings(6337).Stack;
+    const Stack = settings(6327).Stack;
     const obj4 = {
       hasIcons: false,
       value: settings.tier,

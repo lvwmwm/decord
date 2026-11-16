@@ -1,7 +1,7 @@
 // Module ID: 17493
 // Function ID: 17494
 // Name: UserSettingsSessions
-// Dependencies: [32, 19, 17, 1388, 1072, 21, 5306, 6826, 575, 17310, 504, 17494, 6337, 7746, 1113, 7443, 7415, 5929, 1255, 7428, 1187, 7430, 1502, 17495, 7809, 17496, 10467, 13103, 7786, 17497, 2]
+// Dependencies: [32, 19, 17, 1388, 1072, 21, 5306, 6816, 575, 17310, 504, 17494, 6327, 7746, 1113, 7443, 7415, 5919, 1255, 7428, 1187, 7430, 1502, 17495, 7809, 17496, 10467, 13103, 7786, 17497, 2]
 // Exports: default
 
 // Module 17493 (UserSettingsSessions)
@@ -18,7 +18,7 @@ import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
-import TextStyles from "TextStyles" /* 6826 */;
+import TextStyles from "TextStyles" /* 6816 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -83,7 +83,7 @@ function UserSettingsSessions() {
   } else {
     let tmp20Result;
     const obj4 = { spacing: 24, style: tmp.list, children: items1 };
-    const Stack = tmp2(6337).Stack;
+    const Stack = tmp2(6327).Stack;
     const obj5 = { title: intl5.string(otherSessions(1113).t.LLS19o), hasIcons: true, children: tmp21Result };
     const TableRowGroup2 = tmp2(7746).TableRowGroup;
     intl5 = tmp2(1113).intl;
@@ -138,7 +138,7 @@ function UserSettingsSessions() {
   obj10 = { bottom: true, children: items3 };
   SafeAreaPaddingView = tmp2(7415).SafeAreaPaddingView;
   const obj11 = { variant: "body-sm/medium", style: tmp.description, children: intl4.string(otherSessions(1113).t.zZp618) };
-  const Text = tmp2(5929).Text;
+  const Text = tmp2(5919).Text;
   intl4 = tmp2(1113).intl;
   items3 = [closure_10(Text, obj11), tmp20Result2];
   return closure_10(closure_7, obj9);
@@ -240,14 +240,14 @@ function SessionInfo(session) {
       const obj6 = { style: tmp.sessionInfo, accessible: true, children: closure_11(closure_6, obj7) };
       obj7 = { style: tmp.sessionInfoRow, children: items1 };
       const obj8 = { variant: "body-md/semibold", children: found[0] };
-      items1 = [closure_10(tmp9(5929).Text, obj8), ];
+      items1 = [closure_10(tmp9(5919).Text, obj8), ];
       let tmp22Result = found.length > 1;
       if (tmp22Result) {
         const obj10 = { variant: "body-md/semibold", accessibilityLabel: ",", style: tmp.sessionInfoRowSpacing, children: "\u00B7" };
         const obj9 = { children: items2 };
-        items2 = [closure_10(tmp9(5929).Text, obj10), ];
+        items2 = [closure_10(tmp9(5919).Text, obj10), ];
         const obj11 = { variant: "body-md/semibold", children: found[1] };
-        items2[1] = closure_10(tmp9(5929).Text, obj11);
+        items2[1] = closure_10(tmp9(5919).Text, obj11);
         tmp22Result = tmp22(closure_12, obj9);
       }
       items1[1] = tmp22Result;
@@ -257,14 +257,14 @@ function SessionInfo(session) {
       let tmp20Result3 = null != _location;
       obj13 = { source: iconSource, IconComponent };
       if (tmp20Result3) {
-        const obj14 = { style: tmp.sessionInfoRow, children: closure_10(tmp9(5929).Text, obj15) };
+        const obj14 = { style: tmp.sessionInfoRow, children: closure_10(tmp9(5919).Text, obj15) };
         obj15 = { variant: "body-xs/medium", color: "text-subtle", style: tmp.detailsText, children: _location };
         tmp20Result3 = tmp20(tmp21, obj14);
       }
       const items3 = [tmp20Result3, ];
       let tmp20Result4 = null != formatDateResult;
       if (tmp20Result4) {
-        const obj16 = { style: tmp.sessionInfoRow, children: closure_10(tmp9(5929).Text, obj17) };
+        const obj16 = { style: tmp.sessionInfoRow, children: closure_10(tmp9(5919).Text, obj17) };
         obj17 = { variant: "body-xs/medium", color: "text-subtle", style: tmp.detailsText, children: formatDateResult };
         tmp20Result4 = tmp20(tmp21, obj16);
       }

@@ -1,15 +1,15 @@
-// Module ID: 18449
-// Function ID: 18450
+// Module ID: 18451
+// Function ID: 18452
 // Name: UserSettingsDesignSystemNavigator
-// Dependencies: [32, 19, 17, 21, 5306, 575, 8210, 5929, 8208, 7746, 7443, 7500, 14079, 16494, 6951, 5936, 7490, 7493, 6848, 13353, 7427, 6337, 7745, 7747, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 575, 8210, 5919, 8208, 7746, 7443, 7500, 14079, 16494, 6941, 5926, 7490, 7493, 6838, 13353, 7427, 6327, 7745, 7747, 2]
 // Exports: default
 
-// Module 18449 (UserSettingsDesignSystemNavigator)
+// Module 18451 (UserSettingsDesignSystemNavigator)
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import components_Button_Button from "components/Button/Button" /* 5936 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
-import ButtonGroup2 from "ButtonGroup" /* 6951 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
+import ButtonGroup2 from "ButtonGroup" /* 6941 */;
 import TableRow from "TableRow" /* 7443 */;
 import Navigator from "Navigator" /* 7490 */;
 import NavigatorHeader2 from "NavigatorHeader" /* 7493 */;
@@ -342,7 +342,7 @@ export default function UserSettingsDesignSystemNavigator() {
   [first1, tmp7] = react.useState("center");
   let obj = { children: closure_8(Stack, obj2) };
   obj2 = { spacing: first1(575).space.PX_16, style: tmp.container, children: items };
-  Stack = value(6337).Stack;
+  Stack = value(6327).Stack;
   const obj3 = {
     title: "Gradient",
     value,
@@ -373,6 +373,6 @@ export default function UserSettingsDesignSystemNavigator() {
     },
     text: "Show Navigator"
   };
-  items[2] = closure_7(value(5936).Button, obj5);
+  items[2] = closure_7(value(5926).Button, obj5);
   return closure_7(closure_5, obj);
 };

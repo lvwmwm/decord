@@ -1,20 +1,20 @@
-// Module ID: 18561
-// Function ID: 18562
+// Module ID: 18563
+// Function ID: 18564
 // Name: ContentAndSocialScreen
-// Dependencies: [32, 19, 17, 9202, 1072, 21, 5306, 575, 1113, 2188, 18562, 17344, 14997, 18567, 8643, 12406, 17342, 17213, 18568, 5929, 2]
+// Dependencies: [32, 19, 17, 9202, 1072, 21, 5306, 575, 1113, 2188, 18564, 17344, 14997, 18569, 8643, 12406, 17342, 17213, 18570, 5919, 2]
 // Exports: ConnectedGamesPage, DiscordPermissionsPage, default
 
-// Module 18561 (ContentAndSocialScreen)
+// Module 18563 (ContentAndSocialScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl16 from "intl" /* 1113 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;
 import SettingBuilders from "SettingBuilders" /* 12406 */;
 import ContactSyncUtils from "ContactSyncUtils" /* 14997 */;
-import SafetyGuildSettingGuildSelect from "SafetyGuildSettingGuildSelect" /* 18562 */;
-import useAuthorizedSlayerApplicationsDefault from "useAuthorizedSlayerApplications" /* 18568 */;
+import SafetyGuildSettingGuildSelect from "SafetyGuildSettingGuildSelect" /* 18564 */;
+import useAuthorizedSlayerApplicationsDefault from "useAuthorizedSlayerApplications" /* 18570 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -42,7 +42,7 @@ let closure_12 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/user_settings/content_and_social/native/ContentAndSocialScreen.tsx");
 
 export default function ContentAndSocialSettings(route) {
-  const f117822 = () => {
+  const f117837 = () => {
     let tab;
     if (route != null) {
       const params = route.params;
@@ -62,9 +62,9 @@ export default function ContentAndSocialSettings(route) {
     ({ CONTENT_AND_SOCIAL_DISCORD: arr[0], CONNECTED_GAMES: arr[1] } = MobileUserSettings);
     return items;
   }, []);
-  const defaultIndex = _slicedToArray(react.useState(f117822), 2)[0];
+  const defaultIndex = _slicedToArray(react.useState(f117837), 2)[0];
   let items = [defaultIndex, memo];
-  _slicedToArray(react.useState(f117822), 2);
+  _slicedToArray(react.useState(f117837), 2);
   const node = react.useMemo(() => {
     const obj = SettingBuilders;
     const obj2 = { defaultIndex, settings: memo };

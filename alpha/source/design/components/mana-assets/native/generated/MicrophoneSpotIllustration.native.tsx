@@ -1,7 +1,7 @@
 // Module ID: 12928
 // Function ID: 12929
 // Name: MicrophoneSpotIllustration
-// Dependencies: [19, 21, 12929, 12930, 12931, 7755, 6020, 2]
+// Dependencies: [19, 21, 12929, 12930, 12931, 7755, 6010, 2]
 // Exports: MicrophoneSpotIllustration
 
 // Module 12928 (MicrophoneSpotIllustration)

@@ -1,12 +1,12 @@
-// Module ID: 18088
-// Function ID: 18089
+// Module ID: 18090
+// Function ID: 18091
 // Name: SaveCameraUploadsToDeviceSetting
-// Dependencies: [1194, 9202, 504, 6242, 12406, 1113, 2]
+// Dependencies: [1194, 9202, 504, 6232, 12406, 1113, 2]
 
-// Module 18088 (SaveCameraUploadsToDeviceSetting)
+// Module 18090 (SaveCameraUploadsToDeviceSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 6242 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 6232 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1194 */;
 import SettingBuilders from "SettingBuilders" /* 12406 */;

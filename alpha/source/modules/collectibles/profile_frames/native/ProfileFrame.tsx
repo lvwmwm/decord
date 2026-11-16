@@ -1,14 +1,14 @@
 // Module ID: 8583
 // Function ID: 8584
 // Name: ProfileFrame
-// Dependencies: [19, 17, 8563, 8584, 21, 1655, 5306, 8585, 6020, 5548, 8587, 8588, 2]
+// Dependencies: [19, 17, 8563, 8584, 21, 1655, 5306, 8585, 6010, 5538, 8587, 8588, 2]
 // Exports: default
 
 // Module 8583 (ProfileFrame)
 import Fragment from "Fragment" /* 21 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5548 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import FramePreviewOverrideStore from "FramePreviewOverrideStore" /* 8563 */;
 import FramePreviewOverrideFrameDefault from "FramePreviewOverrideFrame" /* 8588 */;
 import react from "react" /* 19 */;

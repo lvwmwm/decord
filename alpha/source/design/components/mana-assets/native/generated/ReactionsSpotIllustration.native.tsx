@@ -1,7 +1,7 @@
 // Module ID: 9038
 // Function ID: 9039
 // Name: ReactionsSpotIllustration
-// Dependencies: [19, 21, 9039, 9040, 9041, 7755, 6020, 2]
+// Dependencies: [19, 21, 9039, 9040, 9041, 7755, 6010, 2]
 // Exports: ReactionsSpotIllustration
 
 // Module 9038 (ReactionsSpotIllustration)

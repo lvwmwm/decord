@@ -1,7 +1,7 @@
 // Module ID: 9434
 // Function ID: 9435
 // Name: PremiumFeaturesBackground
-// Dependencies: [19, 9435, 1390, 21, 5306, 575, 671, 5893, 1092, 2]
+// Dependencies: [19, 9435, 1390, 21, 5306, 575, 671, 5883, 1092, 2]
 // Exports: default
 
 // Module 9434 (PremiumFeaturesBackground)
@@ -9,7 +9,7 @@ import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
-import LinearGradientDefault from "LinearGradient" /* 5893 */;
+import LinearGradientDefault from "LinearGradient" /* 5883 */;
 import ColorConstants from "ColorConstants" /* 9435 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5306 */;

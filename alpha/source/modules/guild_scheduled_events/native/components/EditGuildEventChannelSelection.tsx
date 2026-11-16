@@ -1,7 +1,7 @@
 // Module ID: 8032
 // Function ID: 8033
 // Name: EditGuildEventChannelSelection
-// Dependencies: [19, 17, 5238, 5248, 1388, 7029, 1072, 21, 5306, 8028, 8011, 5954, 504, 8033, 8013, 8014, 1113, 5929, 7443, 2020, 8102, 7989, 5552, 8009, 2121, 1187, 8010, 2]
+// Dependencies: [19, 17, 5238, 5248, 1388, 7029, 1072, 21, 5306, 8028, 8011, 5944, 504, 8033, 8013, 8014, 1113, 5919, 7443, 2020, 8102, 7989, 5542, 8009, 2121, 1187, 8010, 2]
 // Exports: default
 
 // Module 8032 (EditGuildEventChannelSelection)
@@ -9,7 +9,7 @@ import react_native from "react-native" /* 17 */;
 import intl3 from "intl" /* 1113 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 2020 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import StageChannelUpsellDefault from "StageChannelUpsell" /* 8102 */;
 import react from "react" /* 19 */;
 import PermissionStore from "PermissionStore" /* 5238 */;
@@ -62,7 +62,7 @@ export default function EditGuildEventChannelSelection(guild) {
   let closure_6 = obj.useGetEventChannelsByType(guild.id, channelType);
   let obj2 = guild(8011);
   const length = obj2.useChannelsUserCanStartStageIn(guild);
-  const tmp6 = channel(5954)(channel);
+  const tmp6 = channel(5944)(channel);
   let obj3 = guild(504);
   const items = [closure_5];
   let closure_8 = obj3.useStateFromStores(items, () => PermissionStore.can(constants.MANAGE_CHANNELS, guild));
@@ -96,7 +96,7 @@ export default function EditGuildEventChannelSelection(guild) {
   let tmp10 = View;
   items4 = [, ];
   const obj6 = { style: tmp.channelTypeText, variant: "body-sm/semibold", color: "text-subtle", children: stringResult };
-  items4[0] = closure_11(tmp3(5929).Heading, obj6);
+  items4[0] = closure_11(tmp3(5919).Heading, obj6);
   const obj7 = {
     start: true,
     end: true,
@@ -169,7 +169,7 @@ export default function EditGuildEventChannelSelection(guild) {
       openLazy(tmp10, "SelectUpdatesChannel", obj3);
     },
     icon: tmp11Result,
-    label: closure_11(tmp3(5929).Text, { variant: "body-md/medium", color: "interactive-text-active", children: tmp6 }),
+    label: closure_11(tmp3(5919).Text, { variant: "body-md/medium", color: "interactive-text-active", children: tmp6 }),
     trailing: closure_11(Icon, obj9),
     arrow: false
   };

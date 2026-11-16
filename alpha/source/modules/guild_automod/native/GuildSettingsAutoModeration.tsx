@@ -1,17 +1,17 @@
-// Module ID: 20449
-// Function ID: 20450
+// Module ID: 20452
+// Function ID: 20453
 // Name: GuildSettingsAutoModeration
-// Dependencies: [32, 19, 20450, 20452, 1072, 21, 5306, 575, 20454, 1113, 1502, 20459, 20467, 8106, 6337, 5929, 2188, 7418, 7746, 5912, 2]
+// Dependencies: [32, 19, 20453, 20455, 1072, 21, 5306, 575, 20457, 1113, 1502, 20462, 20470, 8106, 6327, 5919, 2188, 7418, 7746, 5902, 2]
 // Exports: default
 
-// Module 20449 (GuildSettingsAutoModeration)
+// Module 20452 (GuildSettingsAutoModeration)
 import nativeDefault from "native" /* 575 */;
 import TableRowGroup2 from "TableRowGroup" /* 7746 */;
-import GuildSettingsAutomodRuleStore from "GuildSettingsAutomodRuleStore" /* 20452 */;
-import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 20454 */;
+import GuildSettingsAutomodRuleStore from "GuildSettingsAutomodRuleStore" /* 20455 */;
+import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 20457 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AutomodStore from "AutomodStore" /* 20450 */;
+import AutomodStore from "AutomodStore" /* 20453 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;

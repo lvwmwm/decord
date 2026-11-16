@@ -1,7 +1,7 @@
 // Module ID: 13022
 // Function ID: 13023
 // Name: useMuteStates
-// Dependencies: [5211, 502, 2133, 5238, 5981, 1072, 504, 2]
+// Dependencies: [5211, 502, 2133, 5238, 5971, 1072, 504, 2]
 // Exports: default
 
 // Module 13022 (useMuteStates)
@@ -10,7 +10,7 @@ import ImpersonateStore from "ImpersonateStore" /* 5211 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
 import PermissionStore from "PermissionStore" /* 5238 */;
-import VoiceStateStore from "VoiceStateStore" /* 5981 */;
+import VoiceStateStore from "VoiceStateStore" /* 5971 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

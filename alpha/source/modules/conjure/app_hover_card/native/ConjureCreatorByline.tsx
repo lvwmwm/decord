@@ -1,13 +1,13 @@
 // Module ID: 13788
 // Function ID: 13789
 // Name: ConjureCreatorByline
-// Dependencies: [19, 21, 5306, 6337, 575, 1187, 5929, 13789, 2]
+// Dependencies: [19, 21, 5306, 6327, 575, 1187, 5919, 13789, 2]
 // Exports: default
 
 // Module 13788 (ConjureCreatorByline)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import Stack_Stack from "Stack/Stack" /* 6337 */;
+import Stack_Stack from "Stack/Stack" /* 6327 */;
 import conjureCreatorByline from "conjureCreatorByline" /* 13789 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -33,7 +33,7 @@ export default function ConjureCreatorByline(arg0) {
   const Avatar = native.Avatar;
   items = [_false(Avatar, obj2), ];
   const obj3 = { variant: "body-sm/normal", color: "text-muted", lineClamp: 1, style: tmp.text, children: tmp3Result.formatConjureCreatorByline(creator) };
-  const Text = tmp3(5929).Text;
+  const Text = tmp3(5919).Text;
   tmp3Result = conjureCreatorByline;
   items[1] = _false(Text, obj3);
   return React3(Stack, obj);

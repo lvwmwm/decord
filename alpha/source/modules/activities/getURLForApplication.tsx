@@ -1,14 +1,14 @@
-// Module ID: 5974
-// Function ID: 5975
+// Module ID: 5964
+// Function ID: 5965
 // Name: getURLForApplication
-// Dependencies: [32, 5975, 5976, 1381, 2]
+// Dependencies: [32, 5965, 5966, 1381, 2]
 // Exports: default, getApplicationRouterOrigin, getNonTestModeUrlForApplication, isUsingDevShelfActivityUrlOverride
 
-// Module 5974 (getURLForApplication)
+// Module 5964 (getURLForApplication)
 import URLUtilsDefault from "URLUtils" /* 1381 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import TestModeStore from "TestModeStore" /* 5975 */;
-import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 5976 */;
+import TestModeStore from "TestModeStore" /* 5965 */;
+import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 5966 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/getURLForApplication.tsx");

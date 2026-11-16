@@ -1,13 +1,13 @@
 // Module ID: 12848
 // Function ID: 12849
 // Name: EmbeddedActivityView
-// Dependencies: [109, 32, 19, 17, 5154, 2145, 1365, 12706, 21, 5306, 12846, 1496, 572, 12849, 12850, 12852, 12877, 12842, 504, 12893, 12747, 12894, 6066, 12896, 2]
+// Dependencies: [109, 32, 19, 17, 5154, 2145, 1365, 12706, 21, 5306, 12846, 1496, 572, 12849, 12850, 12852, 12877, 12842, 504, 12893, 12747, 12894, 6056, 12896, 2]
 
 // Module 12848 (EmbeddedActivityView)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ApplicationConstants from "ApplicationConstants" /* 1365 */;
 import Constants from "Constants" /* 2145 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6066 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6056 */;
 import Constants2 from "Constants" /* 12706 */;
 import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 12747 */;
 import doesOrientationMatchLockStateDefault from "doesOrientationMatchLockState" /* 12849 */;

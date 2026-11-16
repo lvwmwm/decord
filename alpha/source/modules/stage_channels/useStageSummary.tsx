@@ -1,13 +1,13 @@
 // Module ID: 12955
 // Function ID: 12956
 // Name: useStageSummary
-// Dependencies: [6949, 6943, 1113, 2]
+// Dependencies: [6939, 6933, 1113, 2]
 // Exports: default
 
 // Module 12955 (useStageSummary)
 import intl3 from "intl" /* 1113 */;
-import StageChannelParticipants from "StageChannelParticipants" /* 6943 */;
-import StageChannelParticipantStoreHooks from "StageChannelParticipantStoreHooks" /* 6949 */;
+import StageChannelParticipants from "StageChannelParticipants" /* 6933 */;
+import StageChannelParticipantStoreHooks from "StageChannelParticipantStoreHooks" /* 6939 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/stage_channels/useStageSummary.tsx");

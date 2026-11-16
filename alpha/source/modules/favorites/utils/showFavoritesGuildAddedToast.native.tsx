@@ -1,12 +1,12 @@
 // Module ID: 10972
 // Function ID: 10973
 // Name: showFavoritesGuildAddedToast
-// Dependencies: [6015, 1113, 10183, 2]
+// Dependencies: [6005, 1113, 10183, 2]
 // Exports: default
 
 // Module 10972 (showFavoritesGuildAddedToast)
 import intl2 from "intl" /* 1113 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 6015 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
 import StarIcon from "StarIcon" /* 10183 */;
 import size from "module_2" /* 2 */;
 

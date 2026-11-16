@@ -1,14 +1,14 @@
-// Module ID: 6018
-// Function ID: 6019
+// Module ID: 6008
+// Function ID: 6009
 // Name: FriendsIcon
-// Dependencies: [19, 21, 575, 6019, 6022, 2]
+// Dependencies: [19, 21, 575, 6009, 6012, 2]
 // Exports: FriendsIcon
 
-// Module 6018 (FriendsIcon)
+// Module 6008 (FriendsIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6019 */;
-import AssetRegistry from "AssetRegistry" /* 6022 */;
+import BaseIconImage2 from "BaseIconImage" /* 6009 */;
+import AssetRegistry from "AssetRegistry" /* 6012 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

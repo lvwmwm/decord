@@ -1,7 +1,7 @@
 // Module ID: 12053
 // Function ID: 12054
 // Name: StrangerDangerWarningBanner
-// Dependencies: [19, 5248, 10896, 12024, 1072, 12054, 21, 5306, 575, 504, 12038, 12039, 6848, 5552, 12055, 2121, 1264, 12040, 1113, 12043, 5929, 12057, 2]
+// Dependencies: [19, 5248, 10896, 12024, 1072, 12054, 21, 5306, 575, 504, 12038, 12039, 6838, 5542, 12055, 2121, 1264, 12040, 1113, 12043, 5919, 12057, 2]
 
 // Module 12053 (StrangerDangerWarningBanner)
 import Fragment from "Fragment" /* 21 */;
@@ -10,8 +10,8 @@ import Constants2 from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10896 */;
 import SafetyWarningUtils from "SafetyWarningUtils" /* 12038 */;
 import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 12039 */;

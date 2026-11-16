@@ -1,7 +1,7 @@
 // Module ID: 7933
 // Function ID: 7934
 // Name: ProviderConnectionCard
-// Dependencies: [5, 19, 1072, 21, 5547, 7087, 1113, 7934, 7935, 1256, 6067, 1414, 5313, 1187, 6029, 7929, 2]
+// Dependencies: [5, 19, 1072, 21, 5537, 7087, 1113, 7934, 7935, 1256, 6057, 1414, 5313, 1187, 6019, 7929, 2]
 // Exports: default
 
 // Module 7933 (ProviderConnectionCard)
@@ -10,7 +10,7 @@ import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
 import AvatarUtils from "AvatarUtils" /* 1414 */;
 import shared from "shared" /* 5313 */;
-import LinkIcon from "LinkIcon" /* 6029 */;
+import LinkIcon from "LinkIcon" /* 6019 */;
 import PlatformsDefault from "Platforms" /* 7087 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;

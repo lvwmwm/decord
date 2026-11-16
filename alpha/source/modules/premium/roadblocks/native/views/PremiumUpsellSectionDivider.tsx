@@ -1,13 +1,13 @@
 // Module ID: 11270
 // Function ID: 11271
 // Name: PremiumUpsellSectionDivider
-// Dependencies: [19, 17, 9435, 21, 5306, 575, 11271, 5893, 1092, 8092, 2]
+// Dependencies: [19, 17, 9435, 21, 5306, 575, 11271, 5883, 1092, 8092, 2]
 // Exports: default
 
 // Module 11270 (PremiumUpsellSectionDivider)
 import nativeDefault from "native" /* 575 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
-import LinearGradientDefault from "LinearGradient" /* 5893 */;
+import LinearGradientDefault from "LinearGradient" /* 5883 */;
 import ColorConstants from "ColorConstants" /* 9435 */;
 import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 11271 */;
 import react from "react" /* 19 */;

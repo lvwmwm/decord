@@ -1,7 +1,7 @@
 // Module ID: 15587
 // Function ID: 15588
 // Name: EmbeddedActivityInstanceEmbed
-// Dependencies: [5154, 2165, 502, 5155, 6068, 1388, 11891, 14550, 1113, 14551, 15569, 15588, 14552, 14553, 7055, 13463, 2]
+// Dependencies: [5154, 2165, 502, 5155, 6058, 1388, 11891, 14550, 1113, 14551, 15569, 15588, 14552, 14553, 7055, 13463, 2]
 // Exports: createActivityInstanceEmbed
 
 // Module 15587 (EmbeddedActivityInstanceEmbed)
@@ -19,7 +19,7 @@ import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
-import PresenceStore from "PresenceStore" /* 6068 */;
+import PresenceStore from "PresenceStore" /* 6058 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 

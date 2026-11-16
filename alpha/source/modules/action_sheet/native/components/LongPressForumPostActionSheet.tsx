@@ -1,13 +1,13 @@
 // Module ID: 11148
 // Function ID: 11149
 // Name: LongPressForumPostActionSheet
-// Dependencies: [19, 5239, 5240, 8871, 502, 5177, 7015, 1072, 5162, 21, 10975, 10989, 1113, 10990, 10992, 7635, 7874, 6027, 8864, 10996, 6042, 10866, 11149, 8092, 10901, 11151, 11, 7937, 10569, 10919, 11862, 5552, 11860, 2121, 6029, 11864, 10994, 11081, 10997, 11894, 10539, 6268, 6040, 8660, 1187, 11629, 7943, 6014, 504, 11896, 7287, 9107, 5131, 5954, 11897, 7720, 7951, 1627, 11898, 7953, 2]
+// Dependencies: [19, 5239, 5240, 8871, 502, 5177, 7015, 1072, 5162, 21, 10975, 10989, 1113, 10990, 10992, 7635, 7874, 6017, 8864, 10996, 6032, 10866, 11149, 8092, 10901, 11151, 11, 7937, 10569, 10919, 11862, 5542, 11860, 2121, 6019, 11864, 10994, 11081, 10997, 11894, 10539, 6258, 6030, 8660, 1187, 11629, 7943, 6004, 504, 11896, 7287, 9107, 5131, 5944, 11897, 7720, 7951, 1627, 11898, 7953, 2]
 // Exports: default
 
 // Module 11148 (LongPressForumPostActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import ChannelConstants from "ChannelConstants" /* 5162 */;
-import useChannelNameDefault from "useChannelName" /* 5954 */;
+import useChannelNameDefault from "useChannelName" /* 5944 */;
 import GuildIconDefault from "GuildIcon" /* 7720 */;
 import ActionSheetRow2 from "ActionSheetRow" /* 7953 */;
 import buildFavoritesSectionButtonsDefault from "buildFavoritesSectionButtons" /* 10975 */;
@@ -168,7 +168,7 @@ export default function ForumPostLongPressActionSheet(thread) {
         const t = tmp(1113).t;
         if (stateFromStores1) {
           obj20.label = string(t["2LsZdT"]);
-          obj20.IconComponent = tmp(6027).UserMinusIcon;
+          obj20.IconComponent = tmp(6017).UserMinusIcon;
           obj20.onPress = function onPress() {
             const obj = require("ThreadActionCreators");
             return obj.leaveThread(thread, "Context Menu");
@@ -190,7 +190,7 @@ export default function ForumPostLongPressActionSheet(thread) {
           const push5 = buttons2.push;
           const obj21 = {
             label: intl5.string(tmp(1113).t.cnRubV),
-            IconComponent: tmp(6042).ClockIcon,
+            IconComponent: tmp(6032).ClockIcon,
             onPress() {
                       const obj = require("ThreadActionCreators");
                       obj.unarchiveThread(thread, false);
@@ -297,7 +297,7 @@ export default function ForumPostLongPressActionSheet(thread) {
       const push10 = buttons8.push;
       const obj27 = {
         label: intl10.string(tmp(1113).t.WqhZss),
-        IconComponent: tmp(6029).LinkIcon,
+        IconComponent: tmp(6019).LinkIcon,
         onPress() {
               const obj = thread(isThreadModerator[35]);
               const obj2 = { section: constants3.CONTEXT_MENU };
@@ -423,7 +423,7 @@ export default function ForumPostLongPressActionSheet(thread) {
         }
         const obj33 = {
           label: string5Result,
-          IconComponent: tmp(6040).TrashIcon,
+          IconComponent: tmp(6030).TrashIcon,
           onPress() {
                   let intl6;
                   let intl7;

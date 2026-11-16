@@ -1,14 +1,14 @@
-// Module ID: 19687
-// Function ID: 19688
+// Module ID: 19689
+// Function ID: 19690
 // Name: AddModeratorsActionSheet
-// Dependencies: [5, 32, 19, 17, 5177, 6912, 21, 5306, 575, 504, 5954, 6938, 2119, 8132, 6014, 5552, 5566, 7913, 1113, 5936, 8187, 5163, 2]
+// Dependencies: [5, 32, 19, 17, 5177, 6902, 21, 5306, 575, 504, 5944, 6928, 2119, 8132, 6004, 5542, 5556, 7913, 1113, 5926, 8187, 5163, 2]
 // Exports: default
 
-// Module 19687 (AddModeratorsActionSheet)
+// Module 19689 (AddModeratorsActionSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 6912 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 6902 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

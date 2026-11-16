@@ -1,17 +1,17 @@
 // Module ID: 13173
 // Function ID: 13174
 // Name: ConjurePublishSheet
-// Dependencies: [5, 19, 17, 7017, 21, 10467, 7432, 7018, 12682, 13174, 13176, 11224, 5306, 575, 6015, 5552, 13162, 504, 13178, 6332, 5897, 8100, 8101, 1113, 4131, 7951, 13184, 10543, 7619, 7859, 5929, 7720, 10553, 5936, 7954, 5954, 2]
+// Dependencies: [5, 19, 17, 7017, 21, 10467, 7432, 7018, 12682, 13174, 13176, 11224, 5306, 575, 6005, 5542, 13162, 504, 13178, 6322, 5887, 8100, 8101, 1113, 4131, 7951, 13184, 10543, 7619, 7859, 5919, 7720, 10553, 5926, 7954, 5944, 2]
 // Exports: default
 
 // Module 13173 (ConjurePublishSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef4131 from "module_4131" /* 4131 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5552 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import useChannelNameDefault from "useChannelName" /* 5954 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 6015 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5542 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import useChannelNameDefault from "useChannelName" /* 5944 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
 import ConjureProjectTypes from "ConjureProjectTypes" /* 7018 */;
 import VoiceNormalIcon from "VoiceNormalIcon" /* 7432 */;
 import TableSwitchRow2 from "TableSwitchRow" /* 7954 */;
@@ -223,10 +223,10 @@ function PublishSheetBody(entryPoint) {
   const tmp3 = dependencyMap;
   const tmp4 = entryPoint(13178)(project, publish);
   dependencyMap = tmp4;
-  entryPoint(6332)(() => true, tmp4.saving);
+  entryPoint(6322)(() => true, tmp4.saving);
   obj = react;
   let closure_3 = react.useRef(false);
-  const context = react.useContext(entryPoint(5897));
+  const context = react.useContext(entryPoint(5887));
   let transitionState;
   if (context != null) {
     transitionState = context.transitionState;
@@ -323,11 +323,11 @@ function PublishSheetBody(entryPoint) {
   } else {
     const obj10 = { style: tmp.nameGroup, children: items4 };
     const obj12 = { variant: "heading-lg/semibold", color: "text-strong", lineClamp: 1, children: tmp4.displayName };
-    items4 = [tmp15(tmp12(5929).Text, obj12), ];
+    items4 = [tmp15(tmp12(5919).Text, obj12), ];
     let tmp15Result6 = null;
     if ("" !== tmp4.description) {
       const obj13 = { variant: "body-sm/normal", color: "text-subtle", lineClamp: 2, children: tmp4.description };
-      tmp15Result6 = tmp15(tmp12(5929).Text, obj13);
+      tmp15Result6 = tmp15(tmp12(5919).Text, obj13);
     }
     items4[1] = tmp15Result6;
     tmp16Result = tmp16(tmp17, obj10);
@@ -377,7 +377,7 @@ function PublishSheetBody(entryPoint) {
     const guild = sharing.guild;
     let name;
     const obj22 = { style: tmp.rowText, children: items7 };
-    const Text = tmp12(5929).Text;
+    const Text = tmp12(5919).Text;
     if (guild != null) {
       name = guild.name;
     }
@@ -390,7 +390,7 @@ function PublishSheetBody(entryPoint) {
     let tmp15Result9 = null;
     if (null != sharing.caption) {
       const obj24 = { variant: "body-xs/normal", color: "text-subtle", children: sharing.caption };
-      tmp15Result9 = tmp15(tmp12(5929).Text, obj24);
+      tmp15Result9 = tmp15(tmp12(5919).Text, obj24);
     }
     const obj25 = { children: items5 };
     items7[1] = tmp15Result9;
@@ -403,12 +403,12 @@ function PublishSheetBody(entryPoint) {
   const obj26 = { style: tmp.footer, children: items8 };
   if (null != tmp4.note) {
     const obj27 = { variant: "body-sm/normal", color: "text-subtle", children: tmp4.note };
-    tmp15Result10 = tmp15(tmp12(5929).Text, obj27);
+    tmp15Result10 = tmp15(tmp12(5919).Text, obj27);
   }
   items8 = [tmp15Result10, ];
   const obj28 = { style: tmp.actions, children: items9 };
   const obj55 = { variant: "secondary", size: "md", grow: true, text: intl9.string(tmp12(1113).t["ETE/oC"]), disabled: tmp4.saving, onPress: hidePublishSheet };
-  const Button = tmp12(5936).Button;
+  const Button = tmp12(5926).Button;
   intl9 = tmp12(1113).intl;
   items9 = [tmp15(Button, obj55), ];
   const obj56 = {
@@ -423,7 +423,7 @@ function PublishSheetBody(entryPoint) {
     }
   };
   disabled = publish.disabled;
-  const Button2 = tmp12(5936).Button;
+  const Button2 = tmp12(5926).Button;
   if (!disabled) {
     disabled = null != tmp4.nameError;
   }

@@ -1,7 +1,7 @@
 // Module ID: 15873
 // Function ID: 15874
 // Name: FriendRequestNote
-// Dependencies: [32, 19, 17, 5248, 1072, 21, 5306, 575, 15874, 504, 15875, 5929, 5936, 7635, 1113, 2]
+// Dependencies: [32, 19, 17, 5248, 1072, 21, 5306, 575, 15874, 504, 15875, 5919, 5926, 7635, 1113, 2]
 // Exports: default
 
 // Module 15873 (FriendRequestNote)

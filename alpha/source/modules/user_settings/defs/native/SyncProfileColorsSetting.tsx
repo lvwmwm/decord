@@ -1,9 +1,9 @@
-// Module ID: 18038
-// Function ID: 18039
+// Module ID: 18040
+// Function ID: 18041
 // Name: SyncProfileColorsSetting
 // Dependencies: [5307, 9202, 504, 12406, 1113, 16889, 2]
 
-// Module 18038 (SyncProfileColorsSetting)
+// Module 18040 (SyncProfileColorsSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;

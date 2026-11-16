@@ -1,7 +1,7 @@
 // Module ID: 11420
 // Function ID: 11421
 // Name: CommandPermissionUtils
-// Dependencies: [5159, 5177, 6345, 1072, 11421, 11411, 5985, 2119, 1084, 5953, 38, 8724, 8727, 2]
+// Dependencies: [5159, 5177, 6335, 1072, 11421, 11411, 5975, 2119, 1084, 5943, 38, 8724, 8727, 2]
 // Exports: computeAllowedForChannel, hasAccess
 
 // Module 11420 (CommandPermissionUtils)
@@ -10,9 +10,9 @@ import Constants from "Constants" /* 1072 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
 import Server from "Server" /* 2119 */;
 import ChannelRecord from "ChannelRecord" /* 5159 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5953 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5985 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6345 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5943 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5975 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6335 */;
 import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8724 */;
 import IntegrationPermissionUtils from "IntegrationPermissionUtils" /* 8727 */;
 import CommandPermissionContext from "CommandPermissionContext" /* 11411 */;

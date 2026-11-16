@@ -1,7 +1,7 @@
 // Module ID: 15092
 // Function ID: 15093
 // Name: HubEmailConnectionContent
-// Dependencies: [5, 32, 19, 17, 5155, 15080, 1072, 21, 5306, 575, 5320, 1502, 5913, 5552, 15093, 2121, 15094, 6757, 1113, 5929, 15088, 15095, 7617, 1187, 5936, 2]
+// Dependencies: [5, 32, 19, 17, 5155, 15080, 1072, 21, 5306, 575, 5320, 1502, 5903, 5542, 15093, 2121, 15094, 6747, 1113, 5919, 15088, 15095, 7617, 1187, 5926, 2]
 // Exports: default
 
 // Module 15092 (HubEmailConnectionContent)
@@ -31,8 +31,8 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 const native = tmp(1187);
-const Text_Text = tmp(5929);
-const components_Button_Button = tmp(5936);
+const Text_Text = tmp(5919);
+const components_Button_Button = tmp(5926);
 const HubEmailConnectionModal = tmp(15088);
 const InkQuillSpotIllustration = tmp(15095);
 let react = react_mod;
@@ -255,7 +255,7 @@ export default function HubEmailConnectionContent(arg0) {
   const first1 = tmp7[0];
   [obj2, c6] = value(react.useState(null), 2);
   const tmp9 = value(react.useState(null), 2);
-  const insets = invite(5913)().insets;
+  const insets = invite(5903)().insets;
   const ref = react.useRef(null);
   let intl = intl8.intl;
   const stringResult = intl.string(intl8.t.H1jCHH);

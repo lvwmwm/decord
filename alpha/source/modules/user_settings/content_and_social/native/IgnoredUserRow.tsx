@@ -1,7 +1,7 @@
 // Module ID: 17336
 // Function ID: 17337
 // Name: IgnoredUserRow
-// Dependencies: [5, 19, 1388, 21, 8137, 7918, 1113, 8476, 7443, 1187, 17333, 5936, 504, 7350, 2]
+// Dependencies: [5, 19, 1388, 21, 8137, 7918, 1113, 8476, 7443, 1187, 17333, 5926, 504, 7350, 2]
 // Exports: default
 
 // Module 17336 (IgnoredUserRow)
@@ -47,7 +47,7 @@ function IgnoredUserRow(userRecord) {
       obj.unignoreUser(id, "ignored-users-list-mobile");
     }
   });
-  const Button = tmp2(5936).Button;
+  const Button = tmp2(5926).Button;
   intl2 = tmp2(1113).intl;
   return <TableRow accessible={false} icon={null} label={null} onPress={handleOpenProfile} trailing={null} />;
 }

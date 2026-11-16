@@ -1,14 +1,14 @@
 // Module ID: 9153
 // Function ID: 9154
 // Name: ConversationListScreen
-// Dependencies: [5, 32, 19, 17, 8745, 5957, 21, 5306, 575, 9154, 5929, 1113, 1505, 1630, 9120, 504, 11, 9121, 9124, 7888, 2]
+// Dependencies: [5, 32, 19, 17, 8745, 5947, 21, 5306, 575, 9154, 5919, 1113, 1505, 1630, 9120, 504, 11, 9121, 9124, 7888, 2]
 // Exports: default
 
 // Module 9153 (ConversationListScreen)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9124 */;
 import ConversationListItemDefault from "ConversationListItem" /* 9154 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -16,7 +16,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelConversationsStore from "ChannelConversationsStore" /* 8745 */;
-import ConversationConstants from "ConversationConstants" /* 5957 */;
+import ConversationConstants from "ConversationConstants" /* 5947 */;
 import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 

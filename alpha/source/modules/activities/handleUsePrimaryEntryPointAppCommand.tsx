@@ -1,7 +1,7 @@
 // Module ID: 14043
 // Function ID: 14044
 // Name: handleUsePrimaryEntryPointAppCommand
-// Dependencies: [5, 5155, 1388, 12770, 5979, 13475, 12741, 2]
+// Dependencies: [5, 5155, 1388, 12770, 5969, 13475, 12741, 2]
 // Exports: default
 
 // Module 14043 (handleUsePrimaryEntryPointAppCommand)

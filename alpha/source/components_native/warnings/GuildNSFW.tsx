@@ -1,12 +1,12 @@
 // Module ID: 11980
 // Function ID: 11981
 // Name: GuildNSFW
-// Dependencies: [109, 19, 5177, 21, 504, 6838, 6917, 8190, 6833, 1113, 11981, 2]
+// Dependencies: [109, 19, 5177, 21, 504, 6828, 6907, 8190, 6823, 1113, 11981, 2]
 // Exports: default
 
 // Module 11980 (GuildNSFW)
 import Fragment from "Fragment" /* 21 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6917 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6907 */;
 import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8190 */;
 import GatedContentDefault from "GatedContent" /* 11981 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;

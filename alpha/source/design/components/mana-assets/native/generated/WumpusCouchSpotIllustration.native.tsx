@@ -1,7 +1,7 @@
 // Module ID: 17717
 // Function ID: 17718
 // Name: WumpusCouchSpotIllustration
-// Dependencies: [19, 21, 17718, 17719, 17720, 7755, 6020, 2]
+// Dependencies: [19, 21, 17718, 17719, 17720, 7755, 6010, 2]
 // Exports: WumpusCouchSpotIllustration
 
 // Module 17717 (WumpusCouchSpotIllustration)

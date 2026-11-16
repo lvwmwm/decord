@@ -1,7 +1,7 @@
 // Module ID: 15290
 // Function ID: 15291
 // Name: ReferralProgramPerkCard
-// Dependencies: [19, 17, 9293, 15291, 1072, 1074, 21, 5306, 575, 1187, 5929, 15292, 15293, 1113, 2188, 15294, 15295, 9294, 504, 7918, 7937, 15296, 1256, 5552, 15297, 2121, 8484, 15308, 15309, 15312, 5936, 2]
+// Dependencies: [19, 17, 9293, 15291, 1072, 1074, 21, 5306, 575, 1187, 5919, 15292, 15293, 1113, 2188, 15294, 15295, 9294, 504, 7918, 7937, 15296, 1256, 5542, 15297, 2121, 8484, 15308, 15309, 15312, 5926, 2]
 // Exports: ReferralProgramPerkCard
 
 // Module 15290 (ReferralProgramPerkCard)
@@ -12,8 +12,8 @@ import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7918 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
 import CollectiblesActionCreators from "CollectiblesActionCreators" /* 8484 */;
@@ -184,7 +184,7 @@ export function ReferralProgramPerkCard() {
   items4[2] = closure_11(ProgressIndicator, { referralSentUsers });
   const obj10 = { variant: "heading-lg/semibold", color: "text-strong", style: tmp.heading, children: stringResult };
   const obj9 = { style: tmp.contentContainer, children: items5 };
-  const Text = tmp2(5929).Text;
+  const Text = tmp2(5919).Text;
   if (tmp11 === tmp2(15293).ReferralRewardType.ORBS) {
     const intl4 = tmp2(1113).intl;
     stringResult = intl4.string(tmp2(1113).t.tAlkl4);
@@ -198,7 +198,7 @@ export function ReferralProgramPerkCard() {
   }
   items5 = [closure_11(Text, obj10), , ];
   let str = "body-md/medium";
-  const Text2 = tmp2(5929).Text;
+  const Text2 = tmp2(5919).Text;
   if (isEligibleForIncentive) {
     str = "body-sm/medium";
   }
@@ -284,7 +284,7 @@ export function ReferralProgramPerkCard() {
   items4[3] = closure_12(View, obj9);
   let tmp33 = shouldShowSpendOrbsCta;
   const obj25 = { style: tmp.buttonContainer, children: closure_11(Button, obj26) };
-  Button = tmp2(5936).Button;
+  Button = tmp2(5926).Button;
   if (!shouldShowSpendOrbsCta) {
     if (tmp23) {
       tmp23 = obj5.numSent !== tmp2(15292).MAX_REFERRALS_SENT;

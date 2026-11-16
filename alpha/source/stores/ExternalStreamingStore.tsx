@@ -1,7 +1,7 @@
 // Module ID: 15986
 // Function ID: 15987
 // Name: ExternalStreamingStore
-// Dependencies: [5, 7085, 5373, 1072, 1089, 1285, 7466, 572, 7313, 7087, 1345, 504, 2]
+// Dependencies: [5, 7085, 5363, 1072, 1089, 1285, 7466, 572, 7313, 7087, 1345, 504, 2]
 
 // Module 15986 (ExternalStreamingStore)
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -13,7 +13,7 @@ import _modDef1345 from "module_1345" /* 1345 */;
 import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 7466 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 7085 */;
-import StreamerModeStore from "StreamerModeStore" /* 5373 */;
+import StreamerModeStore from "StreamerModeStore" /* 5363 */;
 import size from "module_2" /* 2 */;
 
 let _null, c7, c8, closure_11, constants;

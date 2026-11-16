@@ -1,16 +1,16 @@
-// Module ID: 19574
-// Function ID: 19575
+// Module ID: 19576
+// Function ID: 19577
 // Name: ChannelNameHeader
-// Dependencies: [19, 17, 5155, 5177, 5238, 6068, 1388, 1072, 21, 5306, 575, 504, 1187, 5954, 1502, 6063, 7428, 5929, 1113, 6356, 4067, 10891, 8033, 10064, 7918, 8476, 2]
+// Dependencies: [19, 17, 5155, 5177, 5238, 6058, 1388, 1072, 21, 5306, 575, 504, 1187, 5944, 1502, 6053, 7428, 5919, 1113, 6346, 4067, 10891, 8033, 10064, 7918, 8476, 2]
 
-// Module 19574 (ChannelNameHeader)
+// Module 19576 (ChannelNameHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import _modDef4067 from "module_4067" /* 4067 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import transitionToChannel from "transitionToChannel" /* 6063 */;
-import ChannelUtils from "ChannelUtils" /* 6356 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import transitionToChannel from "transitionToChannel" /* 6053 */;
+import ChannelUtils from "ChannelUtils" /* 6346 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 8033 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;
 import GroupDMAvatarDefault from "GroupDMAvatar" /* 10891 */;
@@ -18,7 +18,7 @@ import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import GuildStore from "GuildStore" /* 5177 */;
 import PermissionStore from "PermissionStore" /* 5238 */;
-import PresenceStore from "PresenceStore" /* 6068 */;
+import PresenceStore from "PresenceStore" /* 6058 */;
 import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
@@ -129,7 +129,7 @@ function ChannelSubtitle(channel) {
       const intl = tmp(1113).intl;
       stringResult = intl.string(_modDef4067["D+2/QP"]);
     } else {
-      const tmpResult = tmp(6356);
+      const tmpResult = tmp(6346);
       stringResult = tmpResult.channelTypeString(channel);
     }
     stateFromStores = stringResult;
@@ -139,7 +139,7 @@ function ChannelSubtitle(channel) {
     tmp6 = null;
     if ("" !== stateFromStores) {
       const obj2 = { variant: "body-sm/medium", color: "text-muted", lineClamp: 1, children: stateFromStores };
-      tmp6 = closure_12(tmp(5929).Text, obj2);
+      tmp6 = closure_12(tmp(5919).Text, obj2);
     }
   }
   return tmp6;

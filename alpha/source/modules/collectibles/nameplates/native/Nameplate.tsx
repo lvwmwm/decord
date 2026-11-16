@@ -1,12 +1,12 @@
 // Module ID: 9508
 // Function ID: 9509
 // Name: Nameplate
-// Dependencies: [19, 5307, 21, 5306, 504, 5547, 1655, 5548, 2111, 9509, 5893, 6020, 2]
+// Dependencies: [19, 5307, 21, 5306, 504, 5537, 1655, 5538, 2111, 9509, 5883, 6010, 2]
 // Exports: default
 
 // Module 9508 (Nameplate)
 import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5548 */;
+import timing_timing from "timing/timing" /* 5538 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import Fragment from "Fragment" /* 21 */;
@@ -68,7 +68,7 @@ function NameplateInner(isFocused) {
   const tmp4 = closure_7(flag3, isPressed, flag, flag2, flag5);
   const tmp5 = sharedValue;
   let num = 1;
-  const tmp6 = sharedValue(5547)();
+  const tmp6 = sharedValue(5537)();
   const useSharedValue = flag6(1655).useSharedValue;
   flag6(1655);
   if (flag6) {
@@ -131,7 +131,7 @@ function NameplateInner(isFocused) {
     let num2 = 0;
     const obj3 = { style: tmp4.gradient, start: point, end: { x: 1, y: 0 }, colors: items5 };
     const tmp18 = closure_5;
-    const tmp5Result = tmp5(5893);
+    const tmp5Result = tmp5(5883);
     if (flag4) {
       num2 = -2;
     }
@@ -142,7 +142,7 @@ function NameplateInner(isFocused) {
   }
   items6 = [tmp18Result, ];
   const obj4 = { source: { uri: str }, style: tmp4.img, accessibilityRole: "image", enableAnimation: tmp15 };
-  items6[1] = closure_5(tmp5(6020), obj4);
+  items6[1] = closure_5(tmp5(6010), obj4);
   return tmp16(View, obj2);
 }
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);

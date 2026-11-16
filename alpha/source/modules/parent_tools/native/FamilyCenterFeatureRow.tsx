@@ -1,7 +1,7 @@
 // Module ID: 17415
 // Function ID: 17416
 // Name: FamilyCenterFeatureRow
-// Dependencies: [19, 17, 21, 5306, 575, 14227, 1113, 2701, 17416, 17417, 14786, 7635, 15894, 17412, 6337, 5929, 7746, 7443, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 14227, 1113, 2701, 17416, 17417, 14786, 7635, 15894, 17412, 6327, 5919, 7746, 7443, 2]
 // Exports: default
 
 // Module 17415 (FamilyCenterFeatureRow)
@@ -9,8 +9,8 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl11 from "intl" /* 1113 */;
 import _modDef2701 from "module_2701" /* 2701 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import Stack_Stack from "Stack/Stack" /* 6337 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import Stack_Stack from "Stack/Stack" /* 6327 */;
 import TableRow2 from "TableRow" /* 7443 */;
 import EyeIcon from "EyeIcon" /* 7635 */;
 import TableRowGroup2 from "TableRowGroup" /* 7746 */;

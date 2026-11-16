@@ -1,15 +1,15 @@
 // Module ID: 14082
 // Function ID: 14083
 // Name: GameOrganizationJoinOutcomeModal
-// Dependencies: [19, 12369, 21, 5306, 6848, 14072, 14083, 8208, 8210, 6337, 575, 14084, 5929, 14079, 5936, 7490, 7493, 12523, 2]
+// Dependencies: [19, 12369, 21, 5306, 6838, 14072, 14083, 8208, 8210, 6327, 575, 14084, 5919, 14079, 5926, 7490, 7493, 12523, 2]
 // Exports: default
 
 // Module 14082 (GameOrganizationJoinOutcomeModal)
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import components_Button_Button from "components/Button/Button" /* 5936 */;
-import Stack_Stack from "Stack/Stack" /* 6337 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
+import Stack_Stack from "Stack/Stack" /* 6327 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import NavigatorHeader from "NavigatorHeader" /* 7493 */;
 import ModalScreen2 from "ModalScreen" /* 8208 */;
 import ModalContent2 from "ModalContent" /* 8210 */;
@@ -59,7 +59,7 @@ function GameOrganizationJoinOutcomeScreen(arg0) {
     let tmp11Result = null != subtitle;
     if (tmp11Result) {
       const obj5 = { variant: "body-md/normal", color: "text-muted", style: tmp.text, children: subtitle };
-      tmp11Result = tmp11(tmp10(5929).Text, obj5);
+      tmp11Result = tmp11(tmp10(5919).Text, obj5);
     }
     const obj6 = { children: items2 };
     items1[1] = tmp11Result;

@@ -1,10 +1,10 @@
-// Module ID: 6904
-// Function ID: 6905
+// Module ID: 6894
+// Function ID: 6895
 // Name: useIsOnStartStageScreenStore
-// Dependencies: [19, 5238, 5209, 560, 1263, 504, 5163, 6905, 2]
+// Dependencies: [19, 5238, 5209, 560, 1263, 504, 5163, 6895, 2]
 // Exports: setIsOnStartStageScreen, useUpdateIsOnStartStageScreenEffect
 
-// Module 6904 (useIsOnStartStageScreenStore)
+// Module 6894 (useIsOnStartStageScreenStore)
 import react_native from "react-native" /* 1263 */;
 import StageChannelPermissions from "StageChannelPermissions" /* 5163 */;
 import react from "react" /* 19 */;
@@ -16,7 +16,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-const f92970 = () => {
+const f92983 = () => {
   obj = { isOnStartStageScreen };
   return state.setState(obj);
 };
@@ -28,7 +28,7 @@ export function setIsOnStartStageScreen(arg0) {
   let closure_0;
   _require = arg0;
   obj = require("react-native");
-  obj.batchUpdates(f92970);
+  obj.batchUpdates(f92983);
 }
 export function useUpdateIsOnStartStageScreenEffect(id) {
   let closure_2;
@@ -40,7 +40,7 @@ export function useUpdateIsOnStartStageScreenEffect(id) {
   const items1 = [PermissionStore];
   const items2 = [id];
   const stateFromStores1 = obj2.useStateFromStores(items1, () => PermissionStore.can(StageChannelPermissions.MODERATE_STAGE_CHANNEL_PERMISSIONS, id), items2);
-  const tmp3 = stateFromStores1 && !stateFromStores(6905)(id.id);
+  const tmp3 = stateFromStores1 && !stateFromStores(6895)(id.id);
   dependencyMap = tmp3;
   const items3 = [stateFromStores, tmp3];
   const effect = react.useEffect(() => {
@@ -49,12 +49,12 @@ export function useUpdateIsOnStartStageScreenEffect(id) {
       if (!closure_2) {
         let c0 = false;
         const obj2 = react_native;
-        obj2.batchUpdates(f92970);
+        obj2.batchUpdates(f92983);
       }
     } else {
       let closure_0 = tmp;
       obj = react_native;
-      obj.batchUpdates(f92970);
+      obj.batchUpdates(f92983);
     }
   }, items3);
 }

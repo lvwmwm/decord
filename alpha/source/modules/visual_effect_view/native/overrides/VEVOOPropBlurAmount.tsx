@@ -1,14 +1,14 @@
-// Module ID: 18637
-// Function ID: 18638
+// Module ID: 18639
+// Function ID: 18640
 // Name: VEVOOPropBlurAmount
-// Dependencies: [32, 19, 5907, 21, 5306, 8106, 7955, 18638, 2]
+// Dependencies: [32, 19, 5897, 21, 5306, 8106, 7955, 18640, 2]
 
-// Module 18637 (VEVOOPropBlurAmount)
+// Module 18639 (VEVOOPropBlurAmount)
 import Fragment from "Fragment" /* 21 */;
 import _mod8106 from "module_8106" /* 8106 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import VEVOOStore from "VEVOOStore" /* 5907 */;
+import VEVOOStore from "VEVOOStore" /* 5897 */;
 import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 

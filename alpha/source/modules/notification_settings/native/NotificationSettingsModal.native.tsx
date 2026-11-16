@@ -1,10 +1,10 @@
-// Module ID: 20786
-// Function ID: 20787
+// Module ID: 20789
+// Function ID: 20790
 // Name: NotificationSettingsModal
-// Dependencies: [109, 19, 17, 5159, 5155, 7875, 5536, 5177, 20419, 5248, 6958, 1388, 1072, 6959, 1082, 21, 5306, 575, 5377, 6067, 5552, 11081, 2121, 7883, 7878, 11080, 7745, 1113, 7747, 7746, 7954, 5929, 1187, 6012, 2188, 7443, 11085, 7455, 13997, 5241, 8033, 5954, 8106, 6337, 11086, 1502, 504, 7876, 5912, 7493, 20787, 11079, 7490, 2]
+// Dependencies: [109, 19, 17, 5159, 5155, 7875, 5526, 5177, 20422, 5248, 6948, 1388, 1072, 6949, 1082, 21, 5306, 575, 5367, 6057, 5542, 11081, 2121, 7883, 7878, 11080, 7745, 1113, 7747, 7746, 7954, 5919, 1187, 6002, 2188, 7443, 11085, 7455, 13997, 5241, 8033, 5944, 8106, 6327, 11086, 1502, 504, 7876, 5902, 7493, 20790, 11079, 7490, 2]
 // Exports: default
 
-// Module 20786 (NotificationSettingsModal)
+// Module 20789 (NotificationSettingsModal)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -12,11 +12,11 @@ import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import intl8 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
 import MuteTimers from "MuteTimers" /* 5241 */;
-import native from "native" /* 5377 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import useChannelName from "useChannelName" /* 5954 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6067 */;
-import ReadStateConstants from "ReadStateConstants" /* 6959 */;
+import native from "native" /* 5367 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import useChannelName from "useChannelName" /* 5944 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6057 */;
+import ReadStateConstants from "ReadStateConstants" /* 6949 */;
 import TableRow2 from "TableRow" /* 7443 */;
 import TableRowIcon2 from "TableRowIcon" /* 7455 */;
 import Navigator2 from "Navigator" /* 7490 */;
@@ -39,11 +39,11 @@ import react from "react" /* 19 */;
 import ChannelRecord from "ChannelRecord" /* 5159 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import GuildCategoryStore from "GuildCategoryStore" /* 7875 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5536 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5526 */;
 import GuildStore from "GuildStore" /* 5177 */;
-import NotificationSettingsModalStore from "NotificationSettingsModalStore" /* 20419 */;
+import NotificationSettingsModalStore from "NotificationSettingsModalStore" /* 20422 */;
 import RelationshipStore from "RelationshipStore" /* 5248 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6958 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6948 */;
 import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
@@ -129,7 +129,7 @@ function ConnectedNotificationSettings(guildId) {
     shouldUseNewNotificationSystem
   };
   const merged = Object.assign(tmp3);
-  items4 = [closure_29(NotificationSettings, obj6), closure_29(guildId(5912).NavScrim, {})];
+  items4 = [closure_29(NotificationSettings, obj6), closure_29(guildId(5902).NavScrim, {})];
   return closure_30(closure_31, obj5);
 }
 let closure_3 = ["categories"];
@@ -358,7 +358,7 @@ class NotificationSettings extends PureComponent {
     items[2] = closure_29(TableSwitchRow3, obj3);
     items1 = [tmp2(TableRowGroup, obj5), , ];
     const obj6 = { variant: "body-sm/medium", color: "text-muted", style: { marginTop: 8 }, children: intl4.string(intl8.t["Vw/Xn8"]) };
-    const Text = tmp5(5929).Text;
+    const Text = tmp5(5919).Text;
     intl4 = tmp5(1113).intl;
     items1[1] = closure_29(Text, obj6);
     const obj7 = {
@@ -573,12 +573,12 @@ class NotificationSettings extends PureComponent {
     const obj = { contentContainerStyle: { paddingTop: 16 }, children: null };
     if (hasItem) {
       const obj2 = { spacing: nativeDefault.space.PX_24, style: tmp.formStack, children: self.renderMuteSection() };
-      const Stack2 = tmp5(6337).Stack;
+      const Stack2 = tmp5(6327).Stack;
       obj.children = mostRecentSelectedTextChannelIds(Stack2, obj2);
       tmp4Result = tmp4(Form, obj);
     } else {
       const obj3 = { spacing: nativeDefault.space.PX_24, style: tmp.formStack, children: items };
-      const Stack = tmp5(6337).Stack;
+      const Stack = tmp5(6327).Stack;
       items = [self.renderMuteSection(), self.renderServerSettings(), self.renderNotificationOptions(), self.renderChannels()];
       obj.children = closure_30(Stack, obj3);
       tmp4Result = tmp4(Form, obj);

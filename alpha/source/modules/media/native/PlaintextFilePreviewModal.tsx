@@ -1,7 +1,7 @@
 // Module ID: 12508
 // Function ID: 12509
 // Name: PlaintextFilePreviewModal
-// Dependencies: [32, 19, 17, 1083, 21, 5306, 575, 6848, 12507, 12509, 12511, 6012, 12513, 5929, 1113, 7418, 12514, 12522, 7897, 7493, 9148, 7427, 7420, 12523, 2]
+// Dependencies: [32, 19, 17, 1083, 21, 5306, 575, 6838, 12507, 12509, 12511, 6002, 12513, 5919, 1113, 7418, 12514, 12522, 7897, 7493, 9148, 7427, 7420, 12523, 2]
 // Exports: default
 
 // Module 12508 (PlaintextFilePreviewModal)
@@ -9,8 +9,8 @@ import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import intl4 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7418 */;
 import NavigatorHeader from "NavigatorHeader" /* 7493 */;
 import CheckmarkSmallIcon2 from "CheckmarkSmallIcon" /* 7897 */;
@@ -45,7 +45,7 @@ function PlaintextFilePreviewContent(arg0) {
   const fileContents = downloadedFile.fileContents;
   if (downloadedFile.hadError) {
     ({ variant: "body-md/normal", color: "text-muted", children: intl.string(intl4.t.fEptJP) });
-    const Text = tmp2(5929).Text;
+    const Text = tmp2(5919).Text;
     intl = tmp2(1113).intl;
     return <metroRequire style={tmp.errorContainer}>{null}</metroRequire>;
   } else if (null == fileContents) {

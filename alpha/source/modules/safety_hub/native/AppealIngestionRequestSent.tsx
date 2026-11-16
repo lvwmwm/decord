@@ -1,12 +1,12 @@
 // Module ID: 14213
 // Function ID: 14214
 // Name: AppealIngestionRequestSent
-// Dependencies: [19, 17, 8206, 21, 5306, 14190, 1113, 14188, 6020, 14214, 5929, 14208, 2]
+// Dependencies: [19, 17, 8206, 21, 5306, 14190, 1113, 14188, 6010, 14214, 5919, 14208, 2]
 // Exports: default
 
 // Module 14213 (AppealIngestionRequestSent)
 import react_native from "react-native" /* 17 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import AppealIngestionExternalLinkDefault from "AppealIngestionExternalLink" /* 14208 */;
 import AssetRegistryDefault from "AssetRegistry" /* 14214 */;
 import react from "react" /* 19 */;

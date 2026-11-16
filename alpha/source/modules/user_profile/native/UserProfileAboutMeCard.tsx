@@ -1,7 +1,7 @@
 // Module ID: 15478
 // Function ID: 15479
 // Name: UserProfileAboutMeCard
-// Dependencies: [19, 17, 2189, 5218, 5177, 7962, 1072, 1501, 21, 5306, 5902, 575, 5929, 8545, 1113, 15479, 504, 7467, 11, 11739, 7720, 15480, 1187, 7653, 7918, 15481, 5552, 5493, 1099, 7587, 5501, 1628, 8476, 15482, 5936, 7961, 2]
+// Dependencies: [19, 17, 2189, 5218, 5177, 7962, 1072, 1501, 21, 5306, 5892, 575, 5919, 8545, 1113, 15479, 504, 7467, 11, 11739, 7720, 15480, 1187, 7653, 7918, 15481, 5542, 5483, 1099, 7587, 5491, 1628, 8476, 15482, 5926, 7961, 2]
 // Exports: default
 
 // Module 15478 (UserProfileAboutMeCard)
@@ -12,9 +12,9 @@ import Constants2 from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
-import ChatInputUtils from "ChatInputUtils" /* 5501 */;
-import useToken from "useToken" /* 5902 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import ChatInputUtils from "ChatInputUtils" /* 5491 */;
+import useToken from "useToken" /* 5892 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import MaskedLinkUtils from "MaskedLinkUtils" /* 7653 */;
 import UserProfileCardDefault from "UserProfileCard" /* 7961 */;
 import UserProfileAnalyticsContext from "UserProfileAnalyticsContext" /* 8545 */;
@@ -201,7 +201,7 @@ function MemberJoinDates(userId) {
   if (tmp15Result) {
     const obj8 = { children: items6 };
     const obj9 = { variant: textVariant, color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children };
-    items6 = [closure_11(tmp4(5929).Text, obj9), ];
+    items6 = [closure_11(tmp4(5919).Text, obj9), ];
     const obj10 = { themeType, icon: closure_11(tmp10Result, obj11), accessibilityLabel: intl3.formatToPlainString(userId(1113).t.FdLNDK, obj12), children: createdAtDate2 };
     obj11 = { guild: stateFromStores1, size: userId(7720).GuildIconSizes.XXSMALL };
     tmp10Result = GuildIconDefault;

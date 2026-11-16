@@ -1,7 +1,7 @@
 // Module ID: 17173
 // Function ID: 17174
 // Name: UserProfileTryItOutEditForm
-// Dependencies: [19, 17, 8542, 7962, 21, 7918, 7937, 17067, 17080, 1113, 8607, 17082, 17088, 17140, 1630, 17174, 504, 8482, 9529, 9401, 8608, 8590, 8601, 575, 5377, 9530, 17175, 9531, 15467, 5936, 9437, 17163, 13112, 17177, 2]
+// Dependencies: [19, 17, 8542, 7962, 21, 7918, 7937, 17067, 17080, 1113, 8607, 17082, 17088, 17140, 1630, 17174, 504, 8482, 9529, 9401, 8608, 8590, 8601, 575, 5367, 9530, 17175, 9531, 15467, 5926, 9437, 17163, 13112, 17177, 2]
 // Exports: default
 
 // Module 17173 (UserProfileTryItOutEditForm)
@@ -149,7 +149,7 @@ export default function UserProfileTryItOutEditForm(currentUser) {
   obj7 = { style: items1, children: items10 };
   items1 = [tmp4.container, { backgroundColor: gradientSecondaryBackground }];
   const obj8 = { style: tmp4.bounceOffset };
-  const ThemeContextProvider = tmp5(5377).ThemeContextProvider;
+  const ThemeContextProvider = tmp5(5367).ThemeContextProvider;
   const items2 = [metroImportDefault(React3, obj8), ];
   const obj9 = { fallbackBackground: gradientFallbackBackground, primaryColor, secondaryColor, containerStyle: { backgroundColor: gradientSecondaryBackground }, children: items3 };
   items3 = [, ];
@@ -176,7 +176,7 @@ export default function UserProfileTryItOutEditForm(currentUser) {
   const tmp22 = _false;
   if (tmp19Result) {
     const obj14 = { icon: metroImportDefault(DiceIcon, obj15), text: intl.string(intl2.t.VzqqFC), variant: "secondary", onPress: tmp6 };
-    const Button = tmp5(5936).Button;
+    const Button = tmp5(5926).Button;
     obj15 = { size: "sm", color: nativeDefault.colors.CONTROL_SECONDARY_TEXT_DEFAULT };
     DiceIcon = tmp5(9437).DiceIcon;
     intl = tmp5(1113).intl;

@@ -1,7 +1,7 @@
 // Module ID: 17510
 // Function ID: 17511
 // Name: PremiumTabBadge
-// Dependencies: [32, 19, 17, 2179, 1390, 9435, 21, 5306, 575, 5313, 5547, 5929, 6338, 1264, 1187, 17511, 9310, 9313, 2174, 5348, 5139, 504, 9560, 9307, 9306, 10010, 9627, 17512, 1113, 5893, 1092, 1380, 2]
+// Dependencies: [32, 19, 17, 2179, 1390, 9435, 21, 5306, 575, 5313, 5537, 5919, 6328, 1264, 1187, 17511, 9310, 9313, 2174, 5338, 5139, 504, 9560, 9307, 9306, 10010, 9627, 17512, 1113, 5883, 1092, 1380, 2]
 // Exports: default
 
 // Module 17510 (PremiumTabBadge)
@@ -17,11 +17,11 @@ import PremiumConstants from "PremiumConstants" /* 1390 */;
 import PremiumUtils from "PremiumUtils" /* 2174 */;
 import dismissible_content from "dismissible_content" /* 5139 */;
 import shared from "shared" /* 5313 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5348 */;
-import useThemeDefault from "useTheme" /* 5547 */;
-import LinearGradientDefault from "LinearGradient" /* 5893 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 6338 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5338 */;
+import useThemeDefault from "useTheme" /* 5537 */;
+import LinearGradientDefault from "LinearGradient" /* 5883 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 6328 */;
 import ReferralProgramUtils from "ReferralProgramUtils" /* 9306 */;
 import useIsEligibleSenderForReferralProgram from "useIsEligibleSenderForReferralProgram" /* 9307 */;
 import usePremiumTrialOffer from "usePremiumTrialOffer" /* 9310 */;
@@ -241,7 +241,7 @@ export default function PremiumTabBadge() {
         const obj7 = { style: tmp.tag, colors: Gradients.PREMIUM_TIER_2, start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, children: metroImportAll(Text4, obj8) };
         const items3 = [tmp.uppercase, ];
         const tmp54 = LinearGradientDefault;
-        Text4 = tmp2(5929).Text;
+        Text4 = tmp2(5919).Text;
         let text;
         const tmp2Result19 = PlatformUtils;
         if (tmp2Result19.isAndroid()) {
@@ -274,7 +274,7 @@ export default function PremiumTabBadge() {
           const obj12 = { variant: "body-xs/semibold", color: "interactive-text-default", style: items6, children: intl5.string(intl9.t["/DTtr6"]) };
           items6 = [, ];
           ({ uppercase: arr8[0], text: arr8[1] } = tmp);
-          const Text3 = tmp2(5929).Text;
+          const Text3 = tmp2(5919).Text;
           intl5 = tmp2(1113).intl;
           items5[1] = metroImportAll(Text3, obj12);
           tmp44 = React4(View, obj10);
@@ -284,7 +284,7 @@ export default function PremiumTabBadge() {
           obj14 = { variant: "body-xs/semibold", color: "text-overlay-light", style: items7, children: intl4.string(intl9.t["/DTtr6"]) };
           items7 = [, ];
           ({ uppercase: arr5[0], text: arr5[1] } = tmp);
-          Text2 = tmp2(5929).Text;
+          Text2 = tmp2(5919).Text;
           intl4 = tmp2(1113).intl;
           tmp44 = metroImportAll(tmp43, obj13);
         }
@@ -295,7 +295,7 @@ export default function PremiumTabBadge() {
           const obj15 = { style: tmp.tag, colors: Gradients.PREMIUM_TIER_2, start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, children: metroImportAll(Text, obj16) };
           const items8 = [tmp.uppercase, ];
           const tmp37 = LinearGradientDefault;
-          Text = tmp2(5929).Text;
+          Text = tmp2(5919).Text;
           let text1;
           const tmp2Result20 = PlatformUtils;
           if (tmp2Result20.isAndroid()) {

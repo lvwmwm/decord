@@ -1,14 +1,14 @@
 // Module ID: 9564
 // Function ID: 9565
 // Name: DismissibleContentAvailability
-// Dependencies: [5138, 11, 9563, 5370, 5140, 2]
+// Dependencies: [5138, 11, 9563, 5360, 5140, 2]
 // Exports: canShowScopedDismissibleContent
 
 // Module 9564 (DismissibleContentAvailability)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Uint8ArrayUtils from "Uint8ArrayUtils" /* 5138 */;
 import DismissibleContentUtils from "DismissibleContentUtils" /* 5140 */;
-import NewUserDismissibleContentRegistry from "NewUserDismissibleContentRegistry" /* 5370 */;
+import NewUserDismissibleContentRegistry from "NewUserDismissibleContentRegistry" /* 5360 */;
 import DismissibleContentScope from "DismissibleContentScope" /* 9563 */;
 import size from "module_2" /* 2 */;
 

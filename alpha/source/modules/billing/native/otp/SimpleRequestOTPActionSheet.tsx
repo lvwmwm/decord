@@ -1,10 +1,10 @@
-// Module ID: 18337
-// Function ID: 18338
+// Module ID: 18339
+// Function ID: 18340
 // Name: SimpleRequestOTPActionSheet
-// Dependencies: [5, 32, 19, 17, 1388, 7070, 1072, 1390, 21, 3, 1630, 11664, 504, 11832, 8484, 2110, 9686, 11801, 5552, 6269, 8497, 6337, 5929, 7445, 5936, 11750, 1269, 9684, 5566, 11743, 2]
+// Dependencies: [5, 32, 19, 17, 1388, 7070, 1072, 1390, 21, 3, 1630, 11664, 504, 11832, 8484, 2110, 9686, 11801, 5542, 6259, 8497, 6327, 5919, 7445, 5926, 11750, 1269, 9684, 5556, 11743, 2]
 // Exports: default
 
-// Module 18337 (SimpleRequestOTPActionSheet)
+// Module 18339 (SimpleRequestOTPActionSheet)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
@@ -42,7 +42,7 @@ function GiftPurchaseSKUView(selectedSkuId) {
   let obj7;
   let tmp16;
   let tmp17;
-  const f117229 = () => {
+  const f117244 = () => {
     let items;
     if (null == c5) {
       items = ["Loading...", "Loading..."];
@@ -282,8 +282,8 @@ function GiftPurchaseSKUView(selectedSkuId) {
   obj7 = { isGift: true, options: { recipient_id: giftRecipientId, custom_message: giftMessage, gift_style: giftStyle } };
   closure_8 = tmp(11801)(obj6);
   const items5 = [product];
-  [tmp16, tmp17] = tmp3(obj.useMemo(f117229, items5), 2);
-  tmp3(obj.useMemo(f117229, items5), 2);
+  [tmp16, tmp17] = tmp3(obj.useMemo(f117244, items5), 2);
+  tmp3(obj.useMemo(f117244, items5), 2);
   if (!isFetching) {
     isFetching = first;
   }
@@ -291,9 +291,9 @@ function GiftPurchaseSKUView(selectedSkuId) {
     isFetching = null == product;
   }
   const obj8 = { spacing: 24, style: { paddingTop: rect.top, paddingBottom: rect.bottom, paddingHorizontal: 12 }, children: items7 };
-  const Stack = tmp7(6337).Stack;
+  const Stack = tmp7(6327).Stack;
   let name;
-  const Text = tmp7(5929).Text;
+  const Text = tmp7(5919).Text;
   if (stateFromStores != null) {
     name = stateFromStores.name;
   }
@@ -310,7 +310,7 @@ function GiftPurchaseSKUView(selectedSkuId) {
   items7 = [tmp18(Text, { variant: "body-md/medium", color: "text-overlay-light", children: items6 }), , ];
   const Card = tmp7(7445).Card;
   let str4 = "Send Gift";
-  const Button = tmp7(5936).Button;
+  const Button = tmp7(5926).Button;
   if (isFetching) {
     str4 = "Loading...";
   }
@@ -328,7 +328,7 @@ function GiftPurchaseSKUView(selectedSkuId) {
   const Card2 = tmp7(7445).Card;
   const obj12 = { variant: "body-md/medium", color: "text-overlay-light", children: items8 };
   items8 = ["Select style: ", giftStyle];
-  items9 = [tmp18(tmp7(5929).Text, obj12), tmp21(tmp(11750), {})];
+  items9 = [tmp18(tmp7(5919).Text, obj12), tmp21(tmp(11750), {})];
   items7[2] = closure_11(Card2, obj11);
   return closure_11(Stack, obj8);
 }
@@ -373,7 +373,7 @@ function SimpleRequestOTPActionSheet(giftMessage) {
   tmp8 = closure_12;
   const items = [closure_12(require("Text/Text").Text, { variant: "body-lg/semibold", color: "text-feedback-warning", children: "Gift purchasing is the only supported feature on Android in this version." }), ];
   let str = "none";
-  const Text = tmp(5929).Text;
+  const Text = tmp(5919).Text;
   const tmp7 = View;
   if (null != requestType) {
     str = requestType;

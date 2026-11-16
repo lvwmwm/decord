@@ -1,15 +1,15 @@
-// Module ID: 18357
-// Function ID: 18358
+// Module ID: 18359
+// Function ID: 18360
 // Name: DevToolsTogglesScreen
-// Dependencies: [32, 19, 17, 7496, 5932, 21, 7073, 5306, 575, 7443, 6015, 7955, 504, 7746, 18334, 5913, 16480, 6337, 18358, 7825, 2]
+// Dependencies: [32, 19, 17, 7496, 5922, 21, 7073, 5306, 575, 7443, 6005, 7955, 504, 7746, 18336, 5903, 16480, 6327, 18360, 7825, 2]
 // Exports: default
 
-// Module 18357 (DevToolsTogglesScreen)
+// Module 18359 (DevToolsTogglesScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5913 */;
-import DevSettingsStore2 from "DevSettingsStore" /* 5932 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 6015 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5903 */;
+import DevSettingsStore2 from "DevSettingsStore" /* 5922 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
 import fuzzysearchDefault from "fuzzysearch" /* 7073 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -160,7 +160,7 @@ export default function DevToolsTogglesScreen() {
   const obj3 = { style: tmp.wrap, contentContainerStyle: items2, children: tmp10(Stack, obj9) };
   items2 = [tmp.container, { paddingBottom: nativeDefault.space.PX_16 + insets.bottom }];
   ({ paddingBottom: nativeDefault.space.PX_16 + insets.bottom });
-  Stack = query(6337).Stack;
+  Stack = query(6327).Stack;
   const obj5 = { title: "Actions", hasIcons: false, children: items3 };
   const TableRowGroup = query(7746).TableRowGroup;
   items3 = [, ];

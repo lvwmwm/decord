@@ -1,17 +1,17 @@
-// Module ID: 18899
-// Function ID: 18900
+// Module ID: 18901
+// Function ID: 18902
 // Name: ChannelsUnreadBar
-// Dependencies: [32, 19, 17, 6060, 1072, 21, 1655, 5306, 575, 1380, 9061, 5944, 6061, 6067, 17703, 1708, 5939, 5940, 8087, 14033, 14031, 5929, 1113, 2]
+// Dependencies: [32, 19, 17, 6050, 1072, 21, 1655, 5306, 575, 1380, 9061, 5934, 6051, 6057, 17703, 1708, 5929, 5930, 8087, 14033, 14031, 5919, 1113, 2]
 
-// Module 18899 (ChannelsUnreadBar)
+// Module 18901 (ChannelsUnreadBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6067 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6057 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 6060 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 6050 */;
 import Fragment from "Fragment" /* 21 */;
 import module_1655 from "module_1655" /* 1655 */;
 import createStyles from "createStyles" /* 5306 */;

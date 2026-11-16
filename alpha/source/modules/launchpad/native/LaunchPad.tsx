@@ -1,22 +1,22 @@
-// Module ID: 19866
-// Function ID: 19867
+// Module ID: 19868
+// Function ID: 19869
 // Name: LaunchPad
-// Dependencies: [32, 19, 17, 5553, 8729, 7049, 7014, 5159, 502, 5155, 8827, 7060, 5177, 16256, 7015, 6956, 6958, 5981, 1072, 21, 575, 5306, 7428, 5929, 504, 1655, 5501, 1708, 7825, 1113, 15723, 10996, 18211, 1380, 17057, 15146, 10259, 5492, 10260, 10247, 1496, 1630, 10248, 13121, 1256, 19867, 19874, 18398, 19887, 19888, 2]
+// Dependencies: [32, 19, 17, 5543, 8729, 7049, 7014, 5159, 502, 5155, 8827, 7060, 5177, 16256, 7015, 6946, 6948, 5971, 1072, 21, 575, 5306, 7428, 5919, 504, 1655, 5491, 1708, 7825, 1113, 15723, 10996, 18213, 1380, 17057, 15146, 10259, 5482, 10260, 10247, 1496, 1630, 10248, 13121, 1256, 19869, 19876, 18400, 19889, 19890, 2]
 
-// Module 19866 (LaunchPad)
+// Module 19868 (LaunchPad)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import ChatInputUtils from "ChatInputUtils" /* 5501 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import ChatInputUtils from "ChatInputUtils" /* 5491 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import Pressables from "Pressables" /* 7428 */;
 import _mod10247 from "module_10247" /* 10247 */;
 import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 10259 */;
 import hideLaunchPadDefault from "hideLaunchPad" /* 15146 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ActionSheetStore from "ActionSheetStore" /* 5553 */;
+import ActionSheetStore from "ActionSheetStore" /* 5543 */;
 import ChannelListStore from "ChannelListStore" /* 8729 */;
 import NavigationHistoryStore_mod from "NavigationHistoryStore" /* 7049 */;
 import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 7014 */;
@@ -28,9 +28,9 @@ import GuildReadStateStore from "GuildReadStateStore" /* 7060 */;
 import GuildStore from "GuildStore" /* 5177 */;
 import PrivateChannelReadStateStore from "PrivateChannelReadStateStore" /* 16256 */;
 import ReadStateStore from "ReadStateStore" /* 7015 */;
-import SortedGuildStore from "SortedGuildStore" /* 6956 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6958 */;
-import VoiceStateStore from "VoiceStateStore" /* 5981 */;
+import SortedGuildStore from "SortedGuildStore" /* 6946 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6948 */;
+import VoiceStateStore from "VoiceStateStore" /* 5971 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;

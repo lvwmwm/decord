@@ -1,16 +1,16 @@
 // Module ID: 12712
 // Function ID: 12713
 // Name: transitionToActivity
-// Dependencies: [11003, 5154, 5959, 11004, 5227, 5492, 12713, 5980, 14037, 6066, 7025, 5552, 12741, 2]
+// Dependencies: [11003, 5154, 5949, 11004, 5227, 5482, 12713, 5970, 14037, 6056, 7025, 5542, 12741, 2]
 // Exports: default
 
 // Module 12712 (transitionToActivity)
 import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 5227 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5492 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5959 */;
-import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 5980 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6066 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5482 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5949 */;
+import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 5970 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6056 */;
 import ChannelRTCParticipants from "ChannelRTCParticipants" /* 7025 */;
 import ChannelCallStore from "ChannelCallStore" /* 11003 */;
 import ChannelCallConstants from "ChannelCallConstants" /* 11004 */;

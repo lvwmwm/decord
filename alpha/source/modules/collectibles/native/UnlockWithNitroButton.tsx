@@ -1,7 +1,7 @@
 // Module ID: 15514
 // Function ID: 15515
 // Name: UnlockWithNitroButton
-// Dependencies: [19, 9302, 8500, 1074, 21, 504, 8580, 15497, 1113, 5937, 5929, 9436, 2]
+// Dependencies: [19, 9302, 8500, 1074, 21, 504, 8580, 15497, 1113, 5927, 5919, 9436, 2]
 // Exports: UnlockWithNitroButton
 
 // Module 15514 (UnlockWithNitroButton)
@@ -19,8 +19,8 @@ let importDefault;
 
 let tmp;
 const intl2 = tmp(1113);
-const Text_Text = tmp(5929);
-const BaseTextButton2 = tmp(5937);
+const Text_Text = tmp(5919);
+const BaseTextButton2 = tmp(5927);
 const NitroWheelIcon = tmp(9436);
 const ShopCtaEnum = CollectiblesShopConstants.ShopCtaEnum;
 const jsx = Fragment.jsx;

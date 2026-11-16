@@ -1,7 +1,7 @@
 // Module ID: 14664
 // Function ID: 14665
 // Name: useVoiceMessageTooltip
-// Dependencies: [19, 14570, 14665, 6836, 1113, 9426, 2]
+// Dependencies: [19, 14570, 14665, 6826, 1113, 9426, 2]
 // Exports: default
 
 // Module 14664 (useVoiceMessageTooltip)
@@ -24,7 +24,7 @@ export default function useVoiceMessageTooltip() {
   let obj = react;
   const ref = react.useRef(null);
   targetBottomInset = targetBottomInset(14665)().targetBottomInset;
-  let tmp3 = targetBottomInset(6836)(targetBottomInset);
+  let tmp3 = targetBottomInset(6826)(targetBottomInset);
   if (tmp3 == null) {
     tmp3 = targetBottomInset;
   }

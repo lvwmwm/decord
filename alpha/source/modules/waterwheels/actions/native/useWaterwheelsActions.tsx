@@ -1,20 +1,20 @@
-// Module ID: 19002
-// Function ID: 19003
+// Module ID: 19004
+// Function ID: 19005
 // Name: useWaterwheelsActions
-// Dependencies: [5, 19, 2141, 502, 5177, 14825, 1072, 6902, 6015, 10225, 7230, 1113, 2569, 7653, 19003, 572, 10461, 9534, 10281, 10286, 7422, 6922, 8200, 14834, 5352, 6917, 7683, 10219, 1285, 19004, 6923, 2]
+// Dependencies: [5, 19, 2141, 502, 5177, 14825, 1072, 6892, 6005, 10225, 7230, 1113, 2569, 7653, 19005, 572, 10461, 9534, 10281, 10286, 7422, 6912, 8200, 14834, 5342, 6907, 7683, 10219, 1285, 19006, 6913, 2]
 // Exports: useWaterwheelsActions
 
-// Module 19002 (useWaterwheelsActions)
+// Module 19004 (useWaterwheelsActions)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 5352 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 6015 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 6902 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6917 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5342 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 6892 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6907 */;
 import react_nativeDefault from "react-native" /* 8200 */;
 import GameActionCreators from "GameActionCreators" /* 9534 */;
 import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 10225 */;
 import NotificationUtilsDefault from "NotificationUtils" /* 14834 */;
-import WaterwheelsDiscoverJoinAttribution from "WaterwheelsDiscoverJoinAttribution" /* 19003 */;
+import WaterwheelsDiscoverJoinAttribution from "WaterwheelsDiscoverJoinAttribution" /* 19005 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import GameStore from "GameStore" /* 2141 */;

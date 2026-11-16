@@ -1,13 +1,13 @@
-// Module ID: 20855
-// Function ID: 20856
+// Module ID: 20858
+// Function ID: 20859
 // Name: NavigationTTIDispatcherManager
-// Dependencies: [5155, 6372, 5209, 19362, 14199, 14565, 7882, 2]
+// Dependencies: [5155, 6362, 5209, 19364, 14199, 14565, 7882, 2]
 
-// Module 20855 (NavigationTTIDispatcherManager)
+// Module 20858 (NavigationTTIDispatcherManager)
 import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 14199 */;
-import navigationTTIEnabled from "navigationTTIEnabled" /* 19362 */;
+import navigationTTIEnabled from "navigationTTIEnabled" /* 19364 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
-import MessageStore from "MessageStore" /* 6372 */;
+import MessageStore from "MessageStore" /* 6362 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
 import size from "module_2" /* 2 */;

@@ -13,7 +13,7 @@ import size_mod from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, animationFrame, dependencyMap;
 
-const f103699 = () => requested.isRequested();
+const f103712 = () => requested.isRequested();
 let closure_3 = { code: "(function VoicePanelPIPCardThawTsx1(){let[pipCardSize,pipScale,pipWidth,pipHeight,MAX_FRAMES,scheduleOnRN,finish]=this.__closure;let frames=0;const waitForCards=function(){const{width:width,height:height}=pipCardSize.get();const scale=pipScale.get();const caughtUp=Math.abs(width-pipWidth*scale)<1&&Math.abs(height-pipHeight*scale)<1;if(caughtUp&&frames>0||frames>=MAX_FRAMES){scheduleOnRN(finish);return;}frames++;requestAnimationFrame(waitForCards);};requestAnimationFrame(waitForCards);})" };
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/voice_panel/native/pip/VoicePanelPIPCardThaw.tsx");
@@ -86,7 +86,7 @@ export default VoicePanelPIPCardThaw;
 export function usePIPCardThawRequested(subscribe) {
   let closure_0 = subscribe;
   const items = [subscribe];
-  return react.useSyncExternalStore(subscribe.subscribe, react.useCallback(f103699, items));
+  return react.useSyncExternalStore(subscribe.subscribe, react.useCallback(f103712, items));
 }
 export function usePIPCardThaw(cardThaw, arg1) {
   let closure_1;
@@ -99,7 +99,7 @@ export function usePIPCardThaw(cardThaw, arg1) {
   const scale = size.scale;
   _require = cardThaw;
   let items = [cardThaw];
-  const syncExternalStore = width.useSyncExternalStore(cardThaw.subscribe, width.useCallback(f103699, items));
+  const syncExternalStore = width.useSyncExternalStore(cardThaw.subscribe, width.useCallback(f103712, items));
   const finish = cardThaw.finish;
   const pipCardSize = cardThaw.pipCardSize;
   let items1 = [cardThaw, arg1];
@@ -139,7 +139,7 @@ export function usePIPCardThaw(cardThaw, arg1) {
       class VoicePanelPIPCardThawTsx1 {
         constructor() {
           closure_0 = 0;
-          waitForCards = function waitForCards() { /* body not rendered: F145776 */ };
+          waitForCards = function waitForCards() { /* body not rendered: F145793 */ };
           animationFrame = requestAnimationFrame(waitForCards);
           return;
         }

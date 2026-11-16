@@ -1,13 +1,13 @@
 // Module ID: 17726
 // Function ID: 17727
 // Name: QuestBottomSheetHeader
-// Dependencies: [32, 19, 17, 1388, 21, 5306, 575, 10131, 8831, 17693, 504, 10151, 8829, 1113, 17725, 5341, 17727, 17695, 5568, 6331, 5929, 7428, 7420, 2]
+// Dependencies: [32, 19, 17, 1388, 21, 5306, 575, 10131, 8831, 17693, 504, 10151, 8829, 1113, 17725, 6957, 17727, 17695, 5558, 6321, 5919, 7428, 7420, 2]
 // Exports: default
 
 // Module 17726 (QuestBottomSheetHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import react_native2 from "react-native" /* 6331 */;
+import react_native2 from "react-native" /* 6321 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;
@@ -158,7 +158,7 @@ export default function QuestBottomSheetHeader(arg0) {
       }
     }
   }, items2);
-  const tmp2Result16 = tmp2(5568);
+  const tmp2Result16 = tmp2(5558);
   isScreenReaderEnabled = tmp2Result16.useIsScreenReaderEnabled();
   ref = react.useRef(null);
   const items3 = [isScreenReaderEnabled];
@@ -184,7 +184,7 @@ export default function QuestBottomSheetHeader(arg0) {
     let obj4 = { ref, variant: "heading-md/semibold", color: "mobile-text-heading-primary", accessibilityRole: "header", style: items5, children: memo1 };
     items5 = [tmp.title, ];
     let titleWithActionSheet = withActionSheet;
-    const Text = tmp2(5929).Text;
+    const Text = tmp2(5919).Text;
     const tmp24 = closure_7;
     if (withActionSheet) {
       titleWithActionSheet = tmp.titleWithActionSheet;

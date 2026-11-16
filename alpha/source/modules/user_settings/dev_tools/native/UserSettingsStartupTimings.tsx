@@ -1,15 +1,15 @@
-// Module ID: 18199
-// Function ID: 18200
+// Module ID: 18201
+// Function ID: 18202
 // Name: UserSettingsStartupTimings
-// Dependencies: [5, 32, 19, 17, 1362, 1072, 21, 5306, 575, 5929, 5499, 1630, 11108, 504, 9, 8678, 10230, 7888, 6337, 7746, 7733, 1363, 7443, 12289, 2]
+// Dependencies: [5, 32, 19, 17, 1362, 1072, 21, 5306, 575, 5919, 5489, 1630, 11108, 504, 9, 8678, 10230, 7888, 6327, 7746, 7733, 1363, 7443, 12289, 2]
 // Exports: default
 
-// Module 18199 (UserSettingsStartupTimings)
+// Module 18201 (UserSettingsStartupTimings)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import Stack_Stack from "Stack/Stack" /* 6337 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import Stack_Stack from "Stack/Stack" /* 6327 */;
 import TableRow4 from "TableRow" /* 7443 */;
 import TableCheckboxRow from "TableCheckboxRow" /* 7733 */;
 import TableRowGroup6 from "TableRowGroup" /* 7746 */;
@@ -21,7 +21,7 @@ import react_mod from "react" /* 19 */;
 import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1362 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
-import react_native2 from "react-native" /* 5499 */;
+import react_native2 from "react-native" /* 5489 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

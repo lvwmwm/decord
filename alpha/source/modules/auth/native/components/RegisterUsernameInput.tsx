@@ -1,20 +1,20 @@
-// Module ID: 18675
-// Function ID: 18676
+// Module ID: 18677
+// Function ID: 18678
 // Name: RegisterUsernameInput
-// Dependencies: [109, 32, 19, 18648, 21, 5306, 1655, 17231, 6337, 7623, 575, 5929, 1113, 16493, 7619, 1380, 2]
+// Dependencies: [109, 32, 19, 18650, 21, 5306, 1655, 17231, 6327, 7623, 575, 5919, 1113, 16493, 7619, 1380, 2]
 // Exports: RegisterUsernameInput
 
-// Module 18675 (RegisterUsernameInput)
+// Module 18677 (RegisterUsernameInput)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import useFocusRefOnNavigationDefault from "useFocusRefOnNavigation" /* 16493 */;
 import UniqueUsernamesTypes from "UniqueUsernamesTypes" /* 17231 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 18648 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 18650 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
@@ -44,12 +44,12 @@ function UsernameStatusMessage(arg0) {
   }
   if (type === UniqueUsernamesTypes.NameValidationState.ERROR) {
     obj2 = { direction: "horizontal", spacing: 4, align: "flex-start", children: items };
-    const Stack = tmp3(6337).Stack;
+    const Stack = tmp3(6327).Stack;
     const obj3 = { size: "xs", color: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL };
     const CircleErrorIcon = tmp3(7623).CircleErrorIcon;
     items = [React4(CircleErrorIcon, obj3), ];
     const obj4 = { variant: "body-xs/medium", color: "text-feedback-critical", style: tmp.status, animated: true, children: usernameStatus.message };
-    const Text3 = tmp3(5929).Text;
+    const Text3 = tmp3(5919).Text;
     const merged = Object.assign(obj);
     const merged1 = Object.assign(obj2);
     items[1] = React4(Text3, obj4);
@@ -62,7 +62,7 @@ function UsernameStatusMessage(arg0) {
       }
       if (type1 === UniqueUsernamesTypes.NameValidationState.AVAILABLE) {
         const obj5 = { style: tmp.status, variant: "body-xs/medium", animated: true, children: React4(Text_Text.Text, obj6) };
-        const Text2 = tmp3(5929).Text;
+        const Text2 = tmp3(5919).Text;
         const merged2 = Object.assign(obj);
         const merged3 = Object.assign(obj2);
         obj6 = { variant: "body-xs/medium", color: "text-feedback-positive", children: usernameStatus.message };
@@ -72,7 +72,7 @@ function UsernameStatusMessage(arg0) {
     tmp6 = null;
     if (isUsernameFocused) {
       obj = { style: tmp.inputHint, variant: "body-xs/medium", color: "text-muted", animated: true, children: intl.string(intl3.t.y7LSyU) };
-      const Text = tmp3(5929).Text;
+      const Text = tmp3(5919).Text;
       const merged4 = Object.assign(obj);
       const merged5 = Object.assign(obj2);
       intl = tmp3(1113).intl;

@@ -1,13 +1,13 @@
 // Module ID: 10119
 // Function ID: 10120
 // Name: ExperimentalCommonIcon
-// Dependencies: [19, 21, 575, 6019, 10120, 2]
+// Dependencies: [19, 21, 575, 6009, 10120, 2]
 // Exports: ExperimentalCommonIcon
 
 // Module 10119 (ExperimentalCommonIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6019 */;
+import BaseIconImage2 from "BaseIconImage" /* 6009 */;
 import AssetRegistry from "AssetRegistry" /* 10120 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

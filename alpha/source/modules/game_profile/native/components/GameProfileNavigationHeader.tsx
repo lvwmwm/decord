@@ -1,13 +1,13 @@
 // Module ID: 10507
 // Function ID: 10508
 // Name: GameProfileNavigationHeader
-// Dependencies: [19, 17, 21, 5306, 575, 5902, 1655, 5548, 1414, 7997, 6020, 5929, 10323, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 5892, 1655, 5538, 1414, 7997, 6010, 5919, 10323, 2]
 // Exports: default
 
 // Module 10507 (GameProfileNavigationHeader)
 import nativeDefault from "native" /* 575 */;
 import AvatarUtils from "AvatarUtils" /* 1414 */;
-import timing_timing from "timing/timing" /* 5548 */;
+import timing_timing from "timing/timing" /* 5538 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -59,7 +59,7 @@ export default function GameProfileNavigationHeader(game) {
   let sharedValue;
   let tmp = closure_8();
   const tmp2 = game;
-  let obj = game(5902);
+  let obj = game(5892);
   dependencyMap = tmp6;
   const token = obj.useToken(application(575).colors.LEGACY_BLUR_FALLBACK_ULTRA_THIN);
   let num = 0;
@@ -162,12 +162,12 @@ export default function GameProfileNavigationHeader(game) {
     if (tmp22Result) {
       const obj6 = { source: obj7, style: tmp.icon };
       obj7 = { uri: memo };
-      tmp22Result = tmp22(tmp4(6020), obj6);
+      tmp22Result = tmp22(tmp4(6010), obj6);
     }
     items7 = [tmp22Result, , ];
     const obj8 = { style: tmp.titleContainer, children: items8 };
     const obj9 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: name };
-    items8 = [closure_6(tmp2(5929).Heading, obj9), ];
+    items8 = [closure_6(tmp2(5919).Heading, obj9), ];
     let l30Rank;
     if (game != null) {
       l30Rank = game.l30Rank;

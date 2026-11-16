@@ -1,7 +1,7 @@
 // Module ID: 7996
 // Function ID: 7997
 // Name: GuildEventModalComponents
-// Dependencies: [19, 17, 5161, 1072, 21, 5306, 7619, 1113, 7972, 5929, 7997, 2020, 5552, 8009, 2121, 8010, 8011, 8012, 7432, 8013, 8014, 8016, 8017, 7745, 7747, 7859, 2169, 8019, 6337, 2]
+// Dependencies: [19, 17, 5161, 1072, 21, 5306, 7619, 1113, 7972, 5919, 7997, 2020, 5542, 8009, 2121, 8010, 8011, 8012, 7432, 8013, 8014, 8016, 8017, 7745, 7747, 7859, 2169, 8019, 6327, 2]
 // Exports: GuildEventDatetime, GuildEventDescription, GuildEventEntityTypeSelection, GuildEventLocation, GuildEventRecurrence, GuildEventTopic
 
 // Module 7996 (GuildEventModalComponents)
@@ -10,7 +10,7 @@ import Constants from "Constants" /* 1072 */;
 import intl7 from "intl" /* 1113 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 2020 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import VoiceNormalIcon from "VoiceNormalIcon" /* 7432 */;
 import TextInput_TextInput from "TextInput/TextInput" /* 7619 */;
 import TableRadioRow2 from "TableRadioRow" /* 7747 */;
@@ -105,7 +105,7 @@ export function GuildEventRecurrence(startDate) {
   let obj2 = { style: tmp.formGroup, children: items1 };
   const obj3 = { style: tmp.header, children: closure_11(Text, obj4) };
   obj4 = { variant: "body-sm/semibold", color: "text-subtle", children: intl.string(tmp2(1113).t["59TVxL"]) };
-  Text = tmp2(5929).Text;
+  Text = tmp2(5919).Text;
   intl = tmp2(1113).intl;
   items1 = [closure_11(View, obj3), ];
   const obj5 = {
@@ -293,10 +293,10 @@ export function GuildEventDatetime(dateLabel) {
   let obj2 = { style: tmp5.formGroup, children: closure_12(Stack, obj3) };
   obj3 = { direction: "horizontal", spacing: 16, children: items1 };
   let obj4 = { style: tmp5.dateInput, children: items };
-  Stack = dateLabel(6337).Stack;
+  Stack = dateLabel(6327).Stack;
   items = [, ];
   const obj5 = { style: tmp5.formHeader, variant: "body-sm/semibold", color: "text-subtle", children: dateLabel };
-  items[0] = closure_11(dateLabel(5929).Text, obj5);
+  items[0] = closure_11(dateLabel(5919).Text, obj5);
   const obj6 = { text: dateLabel, value: date.format("MMM Do YYYY"), onPress, disabled };
   const InputButton = dateLabel(7997).InputButton;
   date = "date";
@@ -305,7 +305,7 @@ export function GuildEventDatetime(dateLabel) {
   const obj7 = { style: tmp5.timeInput, children: items2 };
   items2 = [, ];
   const obj8 = { style: tmp5.formHeader, variant: "body-sm/semibold", color: "text-subtle", children: timeLabel };
-  items2[0] = closure_11(dateLabel(5929).Text, obj8);
+  items2[0] = closure_11(dateLabel(5919).Text, obj8);
   const obj9 = { text: timeLabel, value: date.format("LT"), onPress, disabled };
   const InputButton2 = dateLabel(7997).InputButton;
   const time = "time";

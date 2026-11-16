@@ -1,7 +1,7 @@
 // Module ID: 17137
 // Function ID: 17138
 // Name: UserPrimaryGuildListBottomSheet
-// Dependencies: [32, 19, 17, 8410, 21, 5306, 1380, 575, 8409, 5378, 7443, 5552, 1113, 7720, 10654, 7748, 10674, 12, 5315, 10678, 7937, 7951, 7913, 5936, 7825, 5566, 5929, 7888, 8106, 2]
+// Dependencies: [32, 19, 17, 8410, 21, 5306, 1380, 575, 8409, 5368, 7443, 5542, 1113, 7720, 10654, 7748, 10674, 12, 5315, 10678, 7937, 7951, 7913, 5926, 7825, 5556, 5919, 7888, 8106, 2]
 // Exports: default
 
 // Module 17137 (UserPrimaryGuildListBottomSheet)
@@ -10,7 +10,7 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl11 from "intl" /* 1113 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5315 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import GuildIconDefault from "GuildIcon" /* 7720 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
 import _mod8106 from "module_8106" /* 8106 */;
@@ -73,7 +73,7 @@ let closure_11 = react.memo(function Item(item) {
     }
     guildTagBadgeUrl = getGuildTagBadgeUrl(id, badge, GuildTagBadgeSize.SIZE_24);
   }
-  let obj = item(5378);
+  let obj = item(5368);
   const radioA11yNative = obj.useRadioA11yNative({ selected });
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
   const obj2 = {

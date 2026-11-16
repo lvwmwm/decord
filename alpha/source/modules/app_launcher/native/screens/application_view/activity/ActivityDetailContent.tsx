@@ -1,7 +1,7 @@
 // Module ID: 13473
 // Function ID: 13474
 // Name: ActivityDetailContent
-// Dependencies: [5, 32, 19, 17, 5976, 2143, 1072, 21, 575, 5306, 5929, 12578, 13474, 13389, 13383, 5985, 12698, 1113, 1256, 12579, 5936, 12705, 12762, 7918, 7937, 10576, 8560, 504, 7453, 7954, 13475, 7619, 7259, 13476, 13477, 13478, 8159, 13415, 13480, 7436, 13482, 2]
+// Dependencies: [5, 32, 19, 17, 5966, 2143, 1072, 21, 575, 5306, 5919, 12578, 13474, 13389, 13383, 5975, 12698, 1113, 1256, 12579, 5926, 12705, 12762, 7918, 7937, 10576, 8560, 504, 7453, 7954, 13475, 7619, 7259, 13476, 13477, 13478, 8159, 13415, 13480, 7436, 13482, 2]
 // Exports: default
 
 // Module 13473 (ActivityDetailContent)
@@ -9,7 +9,7 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7918 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
 import roundToNearestPixelDefault from "roundToNearestPixel" /* 10576 */;
@@ -26,7 +26,7 @@ import getItemSubtitleForMaxPlayersDefault from "getItemSubtitleForMaxPlayers" /
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 5976 */;
+import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 5966 */;
 import ApplicationRecord from "ApplicationRecord" /* 2143 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
@@ -214,7 +214,7 @@ function TryItOutButton(applicationId) {
     str = "secondary";
   }
   let obj = { size: "lg", loading: first, variant: str, text: intl.string(applicationId(1113).t.AUM8hY), onPress: callback };
-  const Button = applicationId(5936).Button;
+  const Button = applicationId(5926).Button;
   intl = applicationId(1113).intl;
   return closure_11(Button, obj);
 }
@@ -373,7 +373,7 @@ export default function ActivityDetailContent(application) {
       const tmp43 = View;
       if (tmp37Result2) {
         const obj17 = { variant: "body-sm/normal", style: tmp.primaryEntryPointButtonDisabledCTA, children: reason };
-        tmp37Result2 = tmp37(tmp2(5929).Text, obj17);
+        tmp37Result2 = tmp37(tmp2(5919).Text, obj17);
       }
       items3[1] = tmp37Result2;
       tmp35Result = closure_12(tmp43, obj16);

@@ -1,7 +1,7 @@
 // Module ID: 16288
 // Function ID: 16289
 // Name: AddFriendModal
-// Dependencies: [32, 19, 17, 1388, 1072, 14995, 21, 5306, 6826, 575, 14997, 5899, 1256, 1380, 1505, 6848, 5372, 1113, 10230, 7427, 16289, 7493, 5929, 16290, 16291, 1630, 7490, 2]
+// Dependencies: [32, 19, 17, 1388, 1072, 14995, 21, 5306, 6816, 575, 14997, 5889, 1256, 1380, 1505, 6838, 5362, 1113, 10230, 7427, 16289, 7493, 5919, 16290, 16291, 1630, 7490, 2]
 // Exports: default
 
 // Module 16288 (AddFriendModal)
@@ -9,7 +9,7 @@ import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import NavigatorHeader from "NavigatorHeader" /* 7493 */;
 import ContactSyncConstants from "ContactSyncConstants" /* 14995 */;
 import ContactSyncUtils from "ContactSyncUtils" /* 14997 */;
@@ -20,7 +20,7 @@ import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
-import TextStyles from "TextStyles" /* 6826 */;
+import TextStyles from "TextStyles" /* 6816 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

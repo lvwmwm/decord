@@ -1,7 +1,7 @@
 // Module ID: 10627
 // Function ID: 10628
 // Name: SecureFramesUtils
-// Dependencies: [32, 5, 502, 2133, 6071, 6802, 1388, 6089, 10628, 1072, 2188, 10629, 10630, 10612, 10631, 1113, 5372, 2169, 1089, 38, 206, 1285, 1242, 6268, 6351, 2]
+// Dependencies: [32, 5, 502, 2133, 6061, 6792, 1388, 6079, 10628, 1072, 2188, 10629, 10630, 10612, 10631, 1113, 5362, 2169, 1089, 38, 206, 1285, 1242, 6258, 6341, 2]
 // Exports: addVerification, deletePersistentVerification, deleteUserPersistentVerifications, deleteVerification, ensureCurrentUserPublicKey, getSecureFramesHelpdeskArticle, getSecureFramesPersistentCodesHelpdeskArticle, getSecureFramesUserVerifiedTimestamp, getSecureFramesVerifiedDevicesHelpdeskArticle, getUserVerificationDeeplink, getUserVerificationFooterText, getUserVerifyStateText, isCurrentUserPublicKeyMatch, showSecureFramesKeyInconsistentAlert, validateSecureFramesKeyConsistent
 
 // Module 10627 (SecureFramesUtils)
@@ -11,9 +11,9 @@ import DurationsDefault from "Durations" /* 1089 */;
 import intl15 from "intl" /* 1113 */;
 import _modDef2169 from "module_2169" /* 2169 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
-import UserUtilsDefault from "UserUtils" /* 5372 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6268 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6351 */;
+import UserUtilsDefault from "UserUtils" /* 5362 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6258 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6341 */;
 import _mod10612 from "module_10612" /* 10612 */;
 import SecureFramesActionCreatorsDefault from "SecureFramesActionCreators" /* 10629 */;
 import SecureFramesTracking from "SecureFramesTracking" /* 10630 */;
@@ -22,10 +22,10 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6071 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 6802 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 6792 */;
 import UserStore from "UserStore" /* 1388 */;
-import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 6089 */;
+import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 6079 */;
 import SecureFramesConstants from "SecureFramesConstants" /* 10628 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;

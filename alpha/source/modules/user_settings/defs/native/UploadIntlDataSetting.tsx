@@ -1,9 +1,9 @@
-// Module ID: 18171
-// Function ID: 18172
+// Module ID: 18173
+// Function ID: 18174
 // Name: UploadIntlDataSetting
-// Dependencies: [5, 17, 1072, 21, 560, 1263, 1379, 1117, 1151, 1113, 1380, 1285, 6015, 6037, 12406, 13317, 17372, 2]
+// Dependencies: [5, 17, 1072, 21, 560, 1263, 1379, 1117, 1151, 1113, 1380, 1285, 6005, 6027, 12406, 13317, 17372, 2]
 
-// Module 18171 (UploadIntlDataSetting)
+// Module 18173 (UploadIntlDataSetting)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import AssetJsonUtils from "AssetJsonUtils" /* 1117 */;

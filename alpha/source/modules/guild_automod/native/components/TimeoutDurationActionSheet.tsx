@@ -1,16 +1,16 @@
-// Module ID: 20481
-// Function ID: 20482
+// Module ID: 20484
+// Function ID: 20485
 // Name: TimeoutDurationActionSheet
-// Dependencies: [19, 14166, 5220, 21, 20460, 7951, 7913, 5929, 1113, 7745, 5552, 7747, 2]
+// Dependencies: [19, 14166, 5220, 21, 20463, 7951, 7913, 5919, 1113, 7745, 5542, 7747, 2]
 // Exports: default
 
-// Module 20481 (TimeoutDurationActionSheet)
+// Module 20484 (TimeoutDurationActionSheet)
 import intl3 from "intl" /* 1113 */;
 import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 5220 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import TableRadioRow2 from "TableRadioRow" /* 7747 */;
 import Constants from "Constants" /* 14166 */;
-import getActionInfo from "getActionInfo" /* 20460 */;
+import getActionInfo from "getActionInfo" /* 20463 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -51,7 +51,7 @@ export default function TimeoutDurationActionSheet(triggerType) {
   }
   const obj2 = { startExpanded: true, header: closure_5(BottomSheetTitleHeader, { title: str }), children: items };
   const obj3 = { variant: "body-md/normal", children: intl.string(intl3.t.DWGBAh) };
-  const Text = tmp(5929).Text;
+  const Text = tmp(5919).Text;
   intl = tmp(1113).intl;
   items = [tmp6(Text, obj3), ];
   let headerText;

@@ -1,7 +1,7 @@
 // Module ID: 15545
 // Function ID: 15546
 // Name: GiftCodeEmbed
-// Dependencies: [17, 502, 12378, 1388, 7070, 1072, 1390, 15546, 15547, 15548, 15440, 15443, 15441, 15442, 15444, 15445, 15446, 15447, 11809, 5372, 9170, 5313, 5486, 1113, 14105, 14106, 575, 2169, 9163, 8655, 15448, 15549, 15550, 15449, 15450, 7244, 2174, 2]
+// Dependencies: [17, 502, 12378, 1388, 7070, 1072, 1390, 15546, 15547, 15548, 15440, 15443, 15441, 15442, 15444, 15445, 15446, 15447, 11809, 5362, 9170, 5313, 5476, 1113, 14105, 14106, 575, 2169, 9163, 8655, 15448, 15549, 15550, 15449, 15450, 7244, 2174, 2]
 // Exports: createGiftCodeEmbed
 
 // Module 15545 (GiftCodeEmbed)
@@ -105,7 +105,7 @@ export function createGiftCodeEmbed(message, forcedTheme) {
       tmp4 = backgroundColor;
       const tmp3 = _require;
       if (obj2.isThemeDark(forcedTheme)) {
-        const tmp3Result = tmp3(5486);
+        const tmp3Result = tmp3(5476);
         const embedBackground = tmp3Result.getEmbedBackground();
         let tmp5Result = subtitleColor(embedBackground);
         if (tmp5Result == null) {
@@ -388,7 +388,7 @@ export function createGiftCodeEmbed(message, forcedTheme) {
                   const intl10 = tmp52(1113).intl;
                   const formatToPlainString2 = intl10.formatToPlainString;
                   const t1SOId = tmp52(1113).t.t1SOId;
-                  const tmp49Result = tmp49(5372);
+                  const tmp49Result = tmp49(5362);
                   let str4 = tmp49Result.getName(currentUser);
                   if (str4 == null) {
                     str4 = "";
@@ -411,7 +411,7 @@ export function createGiftCodeEmbed(message, forcedTheme) {
                     const intl12 = tmp52(1113).intl;
                     const formatToPlainString3 = intl12.formatToPlainString;
                     const DDO4Wz = tmp52(1113).t.DDO4Wz;
-                    const tmp49Result4 = tmp49(5372);
+                    const tmp49Result4 = tmp49(5362);
                     let str7 = tmp49Result4.getName(user);
                     if (str7 == null) {
                       str7 = "";

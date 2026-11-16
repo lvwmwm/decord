@@ -1,7 +1,7 @@
 // Module ID: 12358
 // Function ID: 12359
 // Name: UnreadSettingNotice
-// Dependencies: [19, 17, 1082, 21, 5306, 575, 12359, 5929, 1113, 7428, 12360, 2]
+// Dependencies: [19, 17, 1082, 21, 5306, 575, 12359, 5919, 1113, 7428, 12360, 2]
 // Exports: default
 
 // Module 12358 (UnreadSettingNotice)

@@ -1,10 +1,10 @@
-// Module ID: 18514
-// Function ID: 18515
+// Module ID: 18516
+// Function ID: 18517
 // Name: useCardLayout
 // Dependencies: [32, 19, 10416, 1496, 2]
 // Exports: useCardLayout
 
-// Module 18514 (useCardLayout)
+// Module 18516 (useCardLayout)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -18,7 +18,7 @@ export function useCardLayout() {
   let ref;
   let result4;
   let tmp3;
-  const f117734 = () => {
+  const f117749 = () => {
     const obj = ref(dependencyMap[3]);
     return obj.getWindowDimensions().width;
   };
@@ -34,8 +34,8 @@ export function useCardLayout() {
     }
     tmp.current = nativeScrollRef;
   }, []);
-  [tmp3, dependencyMap] = _slicedToArray(react.useState(f117734), 2);
-  const tmp2 = _slicedToArray(react.useState(f117734), 2);
+  [tmp3, dependencyMap] = _slicedToArray(react.useState(f117749), 2);
+  const tmp2 = _slicedToArray(react.useState(f117749), 2);
   const layoutEffect = react.useLayoutEffect(() => {
     const current = ref.current;
     if (current != null) {
@@ -57,7 +57,7 @@ export function useCardLayout() {
     num = 2;
   }
   if (num < 2) {
-    return { columns: num, cardWidth: "r", rowWidth: "isArray", ref: callback, onLayout: callback1 };
+    return { columns: num, cardWidth: "r", rowWidth: "alignItems", ref: callback, onLayout: callback1 };
   } else {
     let bound;
     let num2 = 2;
@@ -112,8 +112,8 @@ export function useCardLayout() {
     if (result3 + (bound + tmp15(10416).COLLECTIBLES_SHOP_CARD_GAP * diff2) > tmp3) {
       let obj;
       if (1 < tmp17) {
-        obj = { columns: 1, cardWidth: "r", rowWidth: "channelId", ref: callback, onLayout: callback1 };
-        const obj3 = { columns: 1, cardWidth: "r", rowWidth: "channelId", ref: callback, onLayout: callback1 };
+        obj = { columns: 1, cardWidth: "r", rowWidth: "alignItems", ref: callback, onLayout: callback1 };
+        const obj3 = { columns: 1, cardWidth: "r", rowWidth: "alignItems", ref: callback, onLayout: callback1 };
       }
       return obj;
     }

@@ -1,13 +1,13 @@
 // Module ID: 13349
 // Function ID: 13350
 // Name: AILoader
-// Dependencies: [19, 17, 13350, 21, 5306, 1655, 5548, 13351, 5377, 2]
+// Dependencies: [19, 17, 13350, 21, 5306, 1655, 5538, 13351, 5367, 2]
 
 // Module 13349 (AILoader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5548 */;
+import timing_timing from "timing/timing" /* 5538 */;
 import AIGlyphText from "AIGlyphText" /* 13351 */;
 import react from "react" /* 19 */;
 import AILoaderConstants from "AILoaderConstants" /* 13350 */;
@@ -129,7 +129,7 @@ const memoResult = react.memo(function AILoader(size) {
   let num2;
   const style = size.style;
   const tmp = closure_13(num);
-  const reducedMotion = num2.useContext(num(5377).AccessibilityPreferencesContext).reducedMotion;
+  const reducedMotion = num2.useContext(num(5367).AccessibilityPreferencesContext).reducedMotion;
   dependencyMap = reducedMotion.enabled ? closure_8 : closure_5;
   num2 = 0;
   if (!reducedMotion.enabled) {

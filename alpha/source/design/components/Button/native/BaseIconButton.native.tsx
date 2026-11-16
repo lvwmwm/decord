@@ -1,15 +1,15 @@
 // Module ID: 7448
 // Function ID: 7449
 // Name: BaseIconButton
-// Dependencies: [19, 21, 5306, 5942, 1655, 5938, 5943, 5945, 5947, 2]
+// Dependencies: [19, 21, 5306, 5932, 1655, 5928, 5933, 5935, 5937, 2]
 // Exports: BaseIconButton
 
 // Module 7448 (BaseIconButton)
 import Fragment from "Fragment" /* 21 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import IconDefault from "Icon" /* 5938 */;
-import ButtonConstants from "ButtonConstants" /* 5942 */;
-import ButtonHooks from "ButtonHooks" /* 5943 */;
+import IconDefault from "Icon" /* 5928 */;
+import ButtonConstants from "ButtonConstants" /* 5932 */;
+import ButtonHooks from "ButtonHooks" /* 5933 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
@@ -76,17 +76,17 @@ export function BaseIconButton(ref) {
   const iconSizeStyles = obj3.useIconSizeStyles(DEFAULT_BUTTON_SIZE, true, maxFontSizeMultiplier);
   let MEDIUM_BUTTON_HEIGHT = ButtonConstants.LARGE_BUTTON_HEIGHT;
   if ("sm" === DEFAULT_BUTTON_SIZE) {
-    MEDIUM_BUTTON_HEIGHT = tmp5(5942).SMALL_BUTTON_HEIGHT;
+    MEDIUM_BUTTON_HEIGHT = tmp5(5932).SMALL_BUTTON_HEIGHT;
   } else if ("md" === DEFAULT_BUTTON_SIZE) {
-    MEDIUM_BUTTON_HEIGHT = tmp5(5942).MEDIUM_BUTTON_HEIGHT;
+    MEDIUM_BUTTON_HEIGHT = tmp5(5932).MEDIUM_BUTTON_HEIGHT;
   }
-  const bound = Math.max((tmp5(5942).MINIMUM_HIT_AREA - MEDIUM_BUTTON_HEIGHT) / 2, 0);
-  const BaseButton = tmp5(5945).BaseButton;
+  const bound = Math.max((tmp5(5932).MINIMUM_HIT_AREA - MEDIUM_BUTTON_HEIGHT) / 2, 0);
+  const BaseButton = tmp5(5935).BaseButton;
   const merged1 = Object.assign(merged);
   const items = [tmp4.button, style];
   const items1 = [tmp4.pill, pillStyle];
   let str3 = "xs";
-  const ButtonPill = tmp5(5947).ButtonPill;
+  const ButtonPill = tmp5(5937).ButtonPill;
   if ("lg" === DEFAULT_BUTTON_SIZE) {
     str3 = "sm";
   }

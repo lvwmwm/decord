@@ -1,16 +1,16 @@
-// Module ID: 18187
-// Function ID: 18188
+// Module ID: 18189
+// Function ID: 18190
 // Name: LogoutSetting
-// Dependencies: [21, 510, 1092, 6935, 12920, 7809, 6844, 6270, 6274, 1113, 12406, 12295, 2]
+// Dependencies: [21, 510, 1092, 6925, 12920, 7809, 6834, 6260, 6264, 1113, 12406, 12295, 2]
 
-// Module 18187 (LogoutSetting)
+// Module 18189 (LogoutSetting)
 import Storage2 from "Storage" /* 510 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
 import intl5 from "intl" /* 1113 */;
-import useAlertStore from "useAlertStore" /* 6270 */;
-import AlertModal2 from "AlertModal" /* 6274 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6844 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6935 */;
+import useAlertStore from "useAlertStore" /* 6260 */;
+import AlertModal2 from "AlertModal" /* 6264 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6834 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6925 */;
 import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7809 */;
 import DoorExitIcon from "DoorExitIcon" /* 12295 */;
 import PushNotificationDefault from "PushNotification" /* 12920 */;

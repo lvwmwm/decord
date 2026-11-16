@@ -1,10 +1,10 @@
-// Module ID: 18475
-// Function ID: 18476
+// Module ID: 18477
+// Function ID: 18478
 // Name: CollectiblesShopOpenTriggerPoint
-// Dependencies: [5533, 9715, 2]
+// Dependencies: [5523, 9715, 2]
 
-// Module 18475 (CollectiblesShopOpenTriggerPoint)
-import ExperimentConstants from "ExperimentConstants" /* 5533 */;
+// Module 18477 (CollectiblesShopOpenTriggerPoint)
+import ExperimentConstants from "ExperimentConstants" /* 5523 */;
 import Helpers from "Helpers" /* 9715 */;
 import size from "module_2" /* 2 */;
 

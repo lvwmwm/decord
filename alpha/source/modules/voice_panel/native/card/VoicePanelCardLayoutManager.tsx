@@ -1,14 +1,14 @@
 // Module ID: 11987
 // Function ID: 11988
 // Name: VoicePanelCardLayoutManager
-// Dependencies: [32, 19, 17, 7016, 11985, 11988, 5983, 1655, 11989, 558, 11990, 11991, 11992, 1263, 2]
+// Dependencies: [32, 19, 17, 7016, 11985, 11988, 5973, 1655, 11989, 558, 11990, 11991, 11992, 1263, 2]
 // Exports: useCardLayoutCoordsSubscription, useManagerSubscription, useTargetDimensionsSubscription
 
 // Module 11987 (VoicePanelCardLayoutManager)
 import react_native from "react-native" /* 17 */;
 import shallowEqualDefault from "shallowEqual" /* 558 */;
 import react_native2 from "react-native" /* 1263 */;
-import CallConstants from "CallConstants" /* 5983 */;
+import CallConstants from "CallConstants" /* 5973 */;
 import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11989 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

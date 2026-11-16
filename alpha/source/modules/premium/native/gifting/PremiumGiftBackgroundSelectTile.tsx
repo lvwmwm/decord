@@ -1,7 +1,7 @@
 // Module ID: 11803
 // Function ID: 11804
 // Name: PremiumGiftBackgroundSelectTile
-// Dependencies: [19, 17, 1390, 11804, 21, 11805, 11806, 11807, 11808, 11809, 11810, 11811, 11812, 11813, 5306, 575, 1113, 2765, 6020, 2]
+// Dependencies: [19, 17, 1390, 11804, 21, 11805, 11806, 11807, 11808, 11809, 11810, 11811, 11812, 11813, 5306, 575, 1113, 2765, 6010, 2]
 // Exports: default
 
 // Module 11803 (PremiumGiftBackgroundSelectTile)
@@ -96,7 +96,7 @@ export default function GiftBackgroundSelectTile(onPress) {
     }
     items = [selected, ];
     const obj4 = { resizeMode: "contain", style: tmp.image, source: obj[giftStyle] };
-    items[1] = metroRequire(tmp8(6020), obj4);
+    items[1] = metroRequire(tmp8(6010), obj4);
     tmp4Result = tmp4(tmp5, obj);
   }
   return tmp4Result;

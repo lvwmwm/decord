@@ -1,7 +1,7 @@
 // Module ID: 11914
 // Function ID: 11915
 // Name: ForLaterMessageCard
-// Dependencies: [5, 19, 17, 5238, 1072, 21, 5306, 575, 7445, 7623, 5929, 1113, 7988, 6041, 11915, 11919, 6848, 1256, 11905, 2169, 11920, 11921, 504, 11930, 11932, 11933, 2]
+// Dependencies: [5, 19, 17, 5238, 1072, 21, 5306, 575, 7445, 7623, 5919, 1113, 7988, 6031, 11915, 11919, 6838, 1256, 11905, 2169, 11920, 11921, 504, 11930, 11932, 11933, 2]
 
 // Module 11914 (ForLaterMessageCard)
 import react_native from "react-native" /* 17 */;
@@ -24,7 +24,7 @@ let metroImportDefault;
 let obj2;
 let tmp6;
 let unpackModuleId;
-const AssetRegistryDefault = tmp6(6041);
+const AssetRegistryDefault = tmp6(6031);
 class ForLaterDeletedMessageCard {
   constructor(savedMessage) {
     let IconButton;
@@ -43,7 +43,7 @@ class ForLaterDeletedMessageCard {
     const CircleErrorIcon = savedMessage(7623).CircleErrorIcon;
     items1 = [closure_10(CircleErrorIcon, obj2), , ];
     const obj3 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", style: tmp.deletedText, children: stringResult };
-    const Text = savedMessage(5929).Text;
+    const Text = savedMessage(5919).Text;
     const tmp2 = closure_11;
     if (null != savedMessage.saveData.dueAt) {
       const intl2 = tmp3(1113).intl;

@@ -1,15 +1,15 @@
 // Module ID: 8656
 // Function ID: 8657
 // Name: transformMessageComponents
-// Dependencies: [109, 17, 6377, 8657, 8646, 1255, 2119, 6376, 1113, 8658, 14123, 13239, 14127, 10229, 11069, 6830, 8876, 12509, 12426, 1090, 9175, 6361, 1406, 6383, 9387, 9386, 1381, 1456, 1089, 6057, 6385, 6748, 6401, 9163, 6398, 2]
+// Dependencies: [109, 17, 6367, 8657, 8646, 1255, 2119, 6366, 1113, 8658, 14123, 13239, 14127, 10229, 11069, 6820, 8876, 12509, 12426, 1090, 9175, 6351, 1406, 6373, 9387, 9386, 1381, 1456, 1089, 6047, 6375, 6738, 6391, 9163, 6388, 2]
 // Exports: default, getUnfurledMediaItemType
 
 // Module 8656 (transformMessageComponents)
 import react_native from "react-native" /* 17 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import URLUtilsDefault from "URLUtils" /* 1381 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 6361 */;
-import CheckpointConstants from "CheckpointConstants" /* 6377 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 6351 */;
+import CheckpointConstants from "CheckpointConstants" /* 6367 */;
 import InteractionComponentConstants from "InteractionComponentConstants" /* 8657 */;
 import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 9387 */;
 import RowGeneratorTypes from "RowGeneratorTypes" /* 11069 */;
@@ -23,8 +23,8 @@ let _require, importDefault;
 let tmp4;
 const intl6 = tmp4(1113);
 const FlagUtils = tmp4(1406);
-const MediaTypes = tmp4(6383);
-const AgeVerificationUtils = tmp4(6830);
+const MediaTypes = tmp4(6373);
+const AgeVerificationUtils = tmp4(6820);
 const sanitizeMediaDimension = tmp4(9386);
 const ExplicitMediaUtils = tmp4(10229);
 function transformToRowGeneratedComponent(message, accessory) {
@@ -85,7 +85,7 @@ function transformToRowGeneratedComponent(message, accessory) {
   function expensive() {
     if (null != found1) {
       if (0 !== found1.length) {
-        const mapped = arr.map(f96560);
+        const mapped = arr.map(f96573);
         const intl = closure_0(message[8]).intl;
         const formatToPlainString = intl.formatToPlainString;
         const obj = { selections: mapped.join(",") };
@@ -148,7 +148,7 @@ function transformToRowGeneratedComponent(message, accessory) {
     const merged2 = Object.assign(accessory);
     tmpResult32 = tmp(tmp2[9]);
     _require = accessory;
-    const f96560 = (arg0) => found1.options[arg0].label;
+    const f96573 = (arg0) => found1.options[arg0].label;
     tmpResult33 = tmp(tmp2[7]);
     obj4 = { expensive, cheap: tmpResult35.getSelectPlaceholder(accessory) };
     getAccessibilityLabelOrCheapFallbackUnsafe2 = tmp(tmp2[20]).getAccessibilityLabelOrCheapFallbackUnsafe;
@@ -483,7 +483,7 @@ function transformToRowGeneratedComponent(message, accessory) {
     tmpResult54 = tmp(tmp2[9]);
     tmpResult55 = tmp(tmp2[12]);
     _require = accessory;
-    const f96561 = (label) => label.label;
+    const f96574 = (label) => label.label;
     tmpResult56 = tmp(tmp2[7]);
     obj23 = { expensive, cheap: tmpResult58.getSelectPlaceholder(accessory) };
     getAccessibilityLabelOrCheapFallbackUnsafe = tmp(tmp2[20]).getAccessibilityLabelOrCheapFallbackUnsafe;

@@ -1,14 +1,14 @@
 // Module ID: 17655
 // Function ID: 17656
 // Name: OrbsArcadeGameTile
-// Dependencies: [32, 19, 17, 5307, 17647, 17650, 1072, 21, 5306, 575, 5303, 504, 10146, 17620, 1503, 17656, 17657, 17658, 7445, 9730, 6020, 5893, 5929, 17683, 6951, 17671, 7988, 17688, 1113, 5936, 17689, 5377, 2]
+// Dependencies: [32, 19, 17, 5307, 17647, 17650, 1072, 21, 5306, 575, 5303, 504, 10146, 17620, 1503, 17656, 17657, 17658, 7445, 9730, 6010, 5883, 5919, 17683, 6941, 17671, 7988, 17688, 1113, 5926, 17689, 5367, 2]
 // Exports: default
 
 // Module 17655 (OrbsArcadeGameTile)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import ColorUtils from "ColorUtils" /* 5303 */;
-import native from "native" /* 5377 */;
+import native from "native" /* 5367 */;
 import AssetUtils from "AssetUtils" /* 10146 */;
 import OrbsArcadeAnalytics from "OrbsArcadeAnalytics" /* 17657 */;
 import openOrbsArcadeSheets from "openOrbsArcadeSheets" /* 17658 */;

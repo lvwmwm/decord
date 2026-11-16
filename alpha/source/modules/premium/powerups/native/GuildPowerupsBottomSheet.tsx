@@ -1,7 +1,7 @@
 // Module ID: 10716
 // Function ID: 10717
 // Name: GuildPowerupsBottomSheet
-// Dependencies: [17, 5307, 5524, 5525, 21, 5306, 575, 10700, 10696, 10717, 10718, 504, 10719, 5463, 10721, 5929, 10722, 10724, 10725, 6037, 1113, 2733, 10676, 10739, 5527, 8408, 10740, 10741, 10746, 10751, 10752, 5936, 10750, 5566, 2]
+// Dependencies: [17, 5307, 5514, 5515, 21, 5306, 575, 10700, 10696, 10717, 10718, 504, 10719, 5453, 10721, 5919, 10722, 10724, 10725, 6027, 1113, 2733, 10676, 10739, 5517, 8408, 10740, 10741, 10746, 10751, 10752, 5926, 10750, 5556, 2]
 // Exports: default
 
 // Module 10716 (GuildPowerupsBottomSheet)
@@ -10,12 +10,12 @@ import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import _modDef2733 from "module_2733" /* 2733 */;
-import GameServerHostingRive from "GameServerHostingRive" /* 5463 */;
-import GameServerConstants from "GameServerConstants" /* 5525 */;
-import Powerups from "Powerups" /* 5527 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5566 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import components_Button_Button from "components/Button/Button" /* 5936 */;
+import GameServerHostingRive from "GameServerHostingRive" /* 5453 */;
+import GameServerConstants from "GameServerConstants" /* 5515 */;
+import Powerups from "Powerups" /* 5517 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5556 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
 import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 10676 */;
 import useGuildPowerupRollbackEnabledDefault from "useGuildPowerupRollbackEnabled" /* 10696 */;
 import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 10700 */;
@@ -27,7 +27,7 @@ import GuildBoostingMarketingUtils from "GuildBoostingMarketingUtils" /* 10725 *
 import useGuildPowerupCardFooterConfigDefault from "useGuildPowerupCardFooterConfig" /* 10739 */;
 import GuildPowerupAnalytics from "GuildPowerupAnalytics" /* 10750 */;
 import AccessibilityStore from "AccessibilityStore" /* 5307 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5524 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5514 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
@@ -145,10 +145,10 @@ function GuildPowerupsBottomSheetBody(powerup) {
     if (tmp5Result) {
       const obj3 = { style: tmp.cooldownInfo, children: items1 };
       const obj4 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
-      const CircleInformationIcon = tmp8(6037).CircleInformationIcon;
+      const CircleInformationIcon = tmp8(6027).CircleInformationIcon;
       items1 = [metroImportAll(CircleInformationIcon, obj4), ];
       const obj5 = { variant: "body-sm/medium", color: "text-muted", children: intl.formatToPlainString(_modDef2733.GMhQcE, obj6) };
-      const Text = tmp8(5929).Text;
+      const Text = tmp8(5919).Text;
       intl = tmp8(1113).intl;
       obj6 = { cooldownDays: powerup.deactivationCooldownPeriodDays };
       items1[1] = metroImportAll(Text, obj5);

@@ -1,15 +1,15 @@
-// Module ID: 20177
-// Function ID: 20178
+// Module ID: 20180
+// Function ID: 20181
 // Name: AutomodRemovedContentSheet
-// Dependencies: [19, 17, 1072, 21, 9159, 5306, 575, 1113, 6374, 7951, 7913, 11065, 5929, 2]
+// Dependencies: [19, 17, 1072, 21, 9159, 5306, 575, 1113, 6364, 7951, 7913, 11065, 5919, 2]
 // Exports: default
 
-// Module 20177 (AutomodRemovedContentSheet)
+// Module 20180 (AutomodRemovedContentSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 6374 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 6364 */;
 import RowGeneratorDefault from "RowGenerator" /* 9159 */;
 import ChatItemDefault from "ChatItem" /* 11065 */;
 import react from "react" /* 19 */;
@@ -94,7 +94,7 @@ export default function AutomodRemovedContentSheet(action) {
     tmp4Result = tmp4(tmp8, obj4);
   } else {
     const obj6 = { variant: "body-md/normal", color: "text-default", children: notice };
-    tmp4Result = tmp4(tmp5(5929).Text, obj6);
+    tmp4Result = tmp4(tmp5(5919).Text, obj6);
   }
   return jsx(ActionSheet, obj2);
 };

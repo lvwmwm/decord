@@ -1,14 +1,14 @@
-// Module ID: 20253
-// Function ID: 20254
+// Module ID: 20256
+// Function ID: 20257
 // Name: GuildOnboardingHomeManager
-// Dependencies: [32, 5, 5211, 502, 5155, 5218, 5177, 5349, 7080, 9001, 5224, 7882, 1406, 6848, 20254, 2121, 7081, 1092, 14682, 7079, 7082, 2]
+// Dependencies: [32, 5, 5211, 502, 5155, 5218, 5177, 5339, 7080, 9001, 5224, 7882, 1406, 6838, 20257, 2121, 7081, 1092, 14682, 7079, 7082, 2]
 
-// Module 20253 (GuildOnboardingHomeManager)
+// Module 20256 (GuildOnboardingHomeManager)
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
 import FlagUtils from "FlagUtils" /* 1406 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
 import GuildMemberConstants from "GuildMemberConstants" /* 5224 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ImpersonateStore from "ImpersonateStore" /* 5211 */;
@@ -16,7 +16,7 @@ import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import GuildMemberStore from "GuildMemberStore" /* 5218 */;
 import GuildStore from "GuildStore" /* 5177 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5349 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
 import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7080 */;
 import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 9001 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
@@ -105,7 +105,7 @@ class GuildOnboardingHomeManager extends AutomaticLifecycleManager {
             if (0 !== num) {
               const pushLazy = ModalActionCreatorsDefault.pushLazy;
               const obj = { initialPercent: (num - 1) / num, numActions: num };
-              const tmp11 = asyncRequire(20254, tmp2.paths);
+              const tmp11 = asyncRequire(20257, tmp2.paths);
               const obj2 = { animation: ConstantsIOS.ModalAnimation.FADE };
               const NEW_MEMBER_ACTION_COMPLETE_MODAL_KEY = tmp(7081).NEW_MEMBER_ACTION_COMPLETE_MODAL_KEY;
               pushLazy(tmp11, obj, NEW_MEMBER_ACTION_COMPLETE_MODAL_KEY, obj2);

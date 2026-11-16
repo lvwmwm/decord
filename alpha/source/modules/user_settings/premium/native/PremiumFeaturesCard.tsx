@@ -1,7 +1,7 @@
 // Module ID: 10955
 // Function ID: 10956
 // Name: PremiumFeaturesCard
-// Dependencies: [32, 19, 17, 5307, 2178, 2179, 1072, 1390, 1083, 21, 5306, 575, 6826, 10956, 2174, 7253, 5929, 1113, 9289, 3513, 1401, 38, 9310, 9313, 9309, 8529, 9606, 10958, 7918, 504, 10959, 1627, 9611, 9711, 9605, 9434, 10962, 10963, 10965, 10970, 5936, 9436, 9590, 2]
+// Dependencies: [32, 19, 17, 5307, 2178, 2179, 1072, 1390, 1083, 21, 5306, 575, 6816, 10956, 2174, 7253, 5919, 1113, 9289, 3513, 1401, 38, 9310, 9313, 9309, 8529, 9606, 10958, 7918, 504, 10959, 1627, 9611, 9711, 9605, 9434, 10962, 10963, 10965, 10970, 5926, 9436, 9590, 2]
 // Exports: default
 
 // Module 10955 (PremiumFeaturesCard)
@@ -11,7 +11,7 @@ import nativeDefault from "native" /* 575 */;
 import Constants2 from "Constants" /* 1083 */;
 import intl8 from "intl" /* 1113 */;
 import PremiumUtils from "PremiumUtils" /* 2174 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import PriceUtils from "PriceUtils" /* 7253 */;
 import useFractionalPremiumInfoDefault from "useFractionalPremiumInfo" /* 8529 */;
 import PremiumGroupUtils from "PremiumGroupUtils" /* 9289 */;
@@ -30,7 +30,7 @@ import Constants from "Constants" /* 1072 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
-import TextStyles_mod from "TextStyles" /* 6826 */;
+import TextStyles_mod from "TextStyles" /* 6816 */;
 import size from "module_2" /* 2 */;
 
 const PremiumUtilsDefault = PremiumUtils;
@@ -121,7 +121,7 @@ function PriceText(fractionalPremiumInfo) {
   if (null != discountedPriceString) {
     if (null != discountOffer) {
       const obj2 = { variant: "body-md/normal", color: "text-overlay-light", style: tmp.discountPriceText, children: format6(sJTwHQ, obj3) };
-      const Text4 = tmp7(5929).Text;
+      const Text4 = tmp7(5919).Text;
       const intl7 = tmp7(1113).intl;
       format6 = intl7.format;
       const discount = discountOffer.discount;
@@ -244,7 +244,7 @@ function PriceText(fractionalPremiumInfo) {
     let tmp12Result;
     if (premiumType === gesture[subscriptionTrial.skuId]) {
       const obj9 = { variant: "body-md/normal", color: "text-overlay-light", style: tmp.discountPriceText, children: format(prop1, obj11) };
-      const Text3 = tmp7(5929).Text;
+      const Text3 = tmp7(5919).Text;
       const intl = tmp7(1113).intl;
       format = intl.format;
       prop1 = tmp7(1113).t["xOX9/9"];
@@ -274,7 +274,7 @@ function PriceText(fractionalPremiumInfo) {
   }
   let priceString3;
   const obj12 = { accessible: true, style: tmp.priceContainer, children: items };
-  const Text = tmp7(5929).Text;
+  const Text = tmp7(5919).Text;
   const tmp12 = closure_21;
   const tmp13 = View;
   if (tmp4 != null) {
@@ -285,7 +285,7 @@ function PriceText(fractionalPremiumInfo) {
   }
   items = [closure_20(Text, { variant: "body-md/semibold", color: "text-overlay-light", children: priceString3 }), ];
   const obj13 = { variant: "body-md/normal", color: "text-overlay-light", children: " / " + intervalStringAsNoun };
-  const Text2 = tmp7(5929).Text;
+  const Text2 = tmp7(5919).Text;
   items[1] = closure_20(Text2, obj13);
   tmp12Result = tmp12(tmp13, obj12);
 }
@@ -504,12 +504,12 @@ export default function PremiumFeaturesCard(premiumType) {
     if (tmp39) {
       const obj14 = { style: tmp3.currentPlanLabel, accessible: true, accessibilityRole: "text", children: closure_20(Text, obj15) };
       obj15 = { variant: "body-md/semibold", color: "text-overlay-light", children: intl5.string(premiumType(1113).t["j+wlhy"]) };
-      Text = tmp8(5929).Text;
+      Text = tmp8(5919).Text;
       intl5 = tmp8(1113).intl;
       obj16 = obj14;
     } else {
       obj16 = { style: tmp3.button, children: closure_20(Button, obj18) };
-      Button = tmp8(5936).Button;
+      Button = tmp8(5926).Button;
       if (!tmp44Result8) {
         let formatToPlainStringResult;
         if (null != premiumDiscountOffer && null != discountedPriceString) {
@@ -561,7 +561,7 @@ export default function PremiumFeaturesCard(premiumType) {
   if (tmp44Result8) {
     const obj20 = { accessible: true, style: tmp3.trialSubTextContainer, children: closure_20(Text2, obj21) };
     obj21 = { variant: "body-md/normal", style: tmp3.trialSubText, children: format(pC4tcv, obj22) };
-    Text2 = tmp8(5929).Text;
+    Text2 = tmp8(5919).Text;
     const intl6 = tmp8(1113).intl;
     format = intl6.format;
     obj22 = { trialPeriod: result, price: priceString };

@@ -1,7 +1,7 @@
 // Module ID: 2139
 // Function ID: 2140
 // Name: ClipsStore
-// Dependencies: [5, 2140, 502, 8845, 1072, 6171, 16498, 5116, 16499, 1406, 16500, 16502, 16503, 504, 572, 2]
+// Dependencies: [5, 2140, 502, 8845, 1072, 6161, 16498, 5116, 16499, 1406, 16500, 16502, 16503, 504, 572, 2]
 
 // Module 2139 (ClipsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -17,7 +17,7 @@ import RunningGameStore from "RunningGameStore" /* 2140 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ClipsConstants from "ClipsConstants" /* 8845 */;
 import Constants from "Constants" /* 1072 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 6171 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 6161 */;
 import size from "module_2" /* 2 */;
 
 let _null, c4, c5, closure_2;

@@ -1,23 +1,23 @@
-// Module ID: 20143
-// Function ID: 20144
+// Module ID: 20145
+// Function ID: 20146
 // Name: CaptchaModal
-// Dependencies: [19, 17, 18648, 18649, 21, 5306, 7770, 1503, 20144, 5566, 6337, 20145, 5929, 1113, 5936, 6769, 20149, 18657, 2]
+// Dependencies: [19, 17, 18650, 18651, 21, 5306, 7770, 1503, 20146, 5556, 6327, 20147, 5919, 1113, 5926, 6759, 20151, 18659, 2]
 // Exports: default
 
-// Module 20143 (CaptchaModal)
+// Module 20145 (CaptchaModal)
 import intl4 from "intl" /* 1113 */;
 import Link from "Link" /* 1503 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5566 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import Stack_Stack from "Stack/Stack" /* 6337 */;
-import SharedCaptchaUtils from "SharedCaptchaUtils" /* 6769 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 18648 */;
-import RegistrationUtils from "RegistrationUtils" /* 18657 */;
-import DisguiseSpotIllustration from "DisguiseSpotIllustration" /* 20145 */;
-import CaptchaUtilsDefault from "CaptchaUtils" /* 20149 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5556 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import Stack_Stack from "Stack/Stack" /* 6327 */;
+import SharedCaptchaUtils from "SharedCaptchaUtils" /* 6759 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 18650 */;
+import RegistrationUtils from "RegistrationUtils" /* 18659 */;
+import DisguiseSpotIllustration from "DisguiseSpotIllustration" /* 20147 */;
+import CaptchaUtilsDefault from "CaptchaUtils" /* 20151 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RegistrationConstants from "RegistrationConstants" /* 18649 */;
+import RegistrationConstants from "RegistrationConstants" /* 18651 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
@@ -78,7 +78,7 @@ export default function CaptchaModal(arg0) {
     }
     return str;
   }, items);
-  let closure_9 = onReject(20144)({ onReject, analyticsType: memo });
+  let closure_9 = onReject(20146)({ onReject, analyticsType: memo });
   const effect = react.useEffect(() => {
     closure_4.dismiss();
   }, []);
@@ -94,7 +94,7 @@ export default function CaptchaModal(arg0) {
   }
   const items2 = [tmp7(Text, { variant: "heading-xl/semibold", accessibilityRole: "header", children: headerText }), ];
   let obj3 = { variant: "body-md/medium", color: "text-subtle", style: tmp2.description, children: bodyText };
-  const Text2 = tmp3(5929).Text;
+  const Text2 = tmp3(5919).Text;
   if (bodyText == null) {
     const intl2 = tmp3(1113).intl;
     bodyText = intl2.string(tmp3(1113).t["/CidxO"]);
@@ -152,7 +152,7 @@ export default function CaptchaModal(arg0) {
     },
     text: intl3.string(intl4.t["cY+Oob"])
   };
-  const Button = tmp3(5936).Button;
+  const Button = tmp3(5926).Button;
   intl3 = tmp3(1113).intl;
   items1[2] = closure_9(Button, obj6);
   return closure_9(BottomSheet, obj4);

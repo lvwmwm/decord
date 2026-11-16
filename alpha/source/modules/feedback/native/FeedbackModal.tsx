@@ -1,11 +1,11 @@
 // Module ID: 12618
 // Function ID: 12619
 // Name: FeedbackModal
-// Dependencies: [32, 19, 17, 21, 5306, 8106, 1113, 5929, 2188, 5936, 6848, 7490, 7493, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 8106, 1113, 5919, 2188, 5926, 6838, 7490, 7493, 2]
 // Exports: default
 
 // Module 12618 (FeedbackModal)
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

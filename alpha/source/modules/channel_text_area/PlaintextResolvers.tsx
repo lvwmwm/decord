@@ -1,7 +1,7 @@
 // Module ID: 11401
 // Function ID: 11402
 // Name: PlaintextResolvers
-// Dependencies: [32, 6969, 7014, 5155, 5236, 5218, 5212, 5177, 5238, 5248, 1388, 1072, 1391, 8791, 5954, 11, 6962, 5252, 8789, 5256, 2]
+// Dependencies: [32, 6969, 7014, 5155, 5236, 5218, 5212, 5177, 5238, 5248, 1388, 1072, 1391, 8791, 5944, 11, 6952, 5252, 8789, 5256, 2]
 // Exports: resolveApplicationCommandOption
 
 // Module 11401 (PlaintextResolvers)
@@ -10,8 +10,8 @@ import Constants from "Constants" /* 1072 */;
 import EmojiConstants from "EmojiConstants" /* 1391 */;
 import GuildChannelStore2 from "GuildChannelStore" /* 5236 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 5252 */;
-import useChannelName from "useChannelName" /* 5954 */;
-import AutocompleteUtils from "AutocompleteUtils" /* 6962 */;
+import useChannelName from "useChannelName" /* 5944 */;
+import AutocompleteUtils from "AutocompleteUtils" /* 6952 */;
 import SlateUtils from "SlateUtils" /* 8791 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import EmojiStore from "EmojiStore" /* 6969 */;

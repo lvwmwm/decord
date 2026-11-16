@@ -1,26 +1,26 @@
-// Module ID: 18826
-// Function ID: 18827
+// Module ID: 18828
+// Function ID: 18829
 // Name: RedesignCategory
-// Dependencies: [19, 17, 8734, 7881, 6958, 6060, 21, 5306, 1380, 575, 5929, 13997, 7428, 10560, 12475, 10894, 504, 5954, 15153, 18827, 18828, 7877, 1113, 7949, 12476, 7629, 2]
+// Dependencies: [19, 17, 8734, 7881, 6948, 6050, 21, 5306, 1380, 575, 5919, 13997, 7428, 10560, 12475, 10894, 504, 5944, 15153, 18829, 18830, 7877, 1113, 7949, 12476, 7629, 2]
 // Exports: CategoryChannel, RecentlyActiveCategory, SuggestedCategory, useCategoryPressEvents
 
-// Module 18826 (RedesignCategory)
+// Module 18828 (RedesignCategory)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import useChannelNameDefault from "useChannelName" /* 5954 */;
+import useChannelNameDefault from "useChannelName" /* 5944 */;
 import CircleXIcon from "CircleXIcon" /* 7629 */;
 import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7877 */;
 import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7949 */;
 import useFavoritesGuildCategoryAddActionDefault from "useFavoritesGuildCategoryAddAction" /* 15153 */;
-import useFavoritesGuildCategoryFullNoticeDefault from "useFavoritesGuildCategoryFullNotice" /* 18827 */;
-import useFavoritesGuildCategoryLongPressDefault from "useFavoritesGuildCategoryLongPress" /* 18828 */;
+import useFavoritesGuildCategoryFullNoticeDefault from "useFavoritesGuildCategoryFullNotice" /* 18829 */;
+import useFavoritesGuildCategoryLongPressDefault from "useFavoritesGuildCategoryLongPress" /* 18830 */;
 import react from "react" /* 19 */;
 import RecentlyActiveCollapseStore from "RecentlyActiveCollapseStore" /* 8734 */;
 import CategoryCollapseStore from "CategoryCollapseStore" /* 7881 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6958 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 6060 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6948 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 6050 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
@@ -74,7 +74,7 @@ function renderCategoryItem(muted) {
   let tmp32Result = name;
   if (typeof name === "string") {
     let str = "text-subtle";
-    const Text = trailingAction(5929).Text;
+    const Text = trailingAction(5919).Text;
     const tmp32 = closure_12;
     if (flag) {
       str = "text-muted";
@@ -260,7 +260,7 @@ export function CategoryChannel(channel) {
   if (null != tmp10) {
     const obj4 = { variant: "body-xs/medium", color: "text-muted", accessibilityLabel: null, children: null };
     ({ tooltip: obj3.accessibilityLabel, label: obj3.children } = tmp10);
-    tmp13 = closure_12(tmp2(5929).Text, obj4);
+    tmp13 = closure_12(tmp2(5919).Text, obj4);
   }
   const collapsed2 = obj2.collapsed;
   const merged = Object.assign(obj2, Object.assign({ collapsed: 0 }));

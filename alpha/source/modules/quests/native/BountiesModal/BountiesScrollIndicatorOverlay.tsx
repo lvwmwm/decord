@@ -1,15 +1,15 @@
 // Module ID: 17582
 // Function ID: 17583
 // Name: BountiesScrollIndicatorOverlay
-// Dependencies: [32, 19, 17, 21, 5551, 5306, 575, 1655, 5548, 1708, 5893, 17583, 5929, 1113, 2]
+// Dependencies: [32, 19, 17, 21, 5541, 5306, 575, 1655, 5538, 1708, 5883, 17583, 5919, 1113, 2]
 // Exports: default
 
 // Module 17582 (BountiesScrollIndicatorOverlay)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef1655 from "module_1655" /* 1655 */;
-import timingPresets from "timingPresets" /* 5551 */;
-import LinearGradientDefault from "LinearGradient" /* 5893 */;
+import timingPresets from "timingPresets" /* 5541 */;
+import LinearGradientDefault from "LinearGradient" /* 5883 */;
 import BountiesScrollIndicatorAnimationDefault from "BountiesScrollIndicatorAnimation" /* 17583 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -90,7 +90,7 @@ export default function BountiesScrollIndicatorOverlay(enabled) {
   let items = [enabled];
   const effect = obj.useEffect(() => {
     let timeout;
-    const f146063 = () => {
+    const f146080 = () => {
       importDefault(closure_0);
       closure_0 = !closure_0;
       let num = 5000;
@@ -98,13 +98,13 @@ export default function BountiesScrollIndicatorOverlay(enabled) {
       if (closure_0) {
         num = closure_2_9;
       }
-      enabled = _setTimeout(f146063, num);
+      enabled = _setTimeout(f146080, num);
     };
     const tmp = timeout;
     if (tmp) {
       let c0 = false;
       let _setTimeout = setTimeout;
-      timeout = setTimeout(f146063, closure_1_9);
+      timeout = setTimeout(f146080, closure_1_9);
       return () => clearTimeout(closure_0);
     }
   }, items);
@@ -263,7 +263,7 @@ export default function BountiesScrollIndicatorOverlay(enabled) {
   const View3 = _modDef1655.View;
   items12 = [closure_6(BountiesScrollIndicatorAnimationDefault, { visible: enabled && first, isFadingInContent: first1 }), ];
   const obj6 = { variant: "body-sm/semibold", color: "text-default", style: tmp.scrollIndicatorText, children: intl.string(require("intl").t.eafsh4) };
-  const Text = tmp18(5929).Text;
+  const Text = tmp18(5919).Text;
   intl = tmp18(1113).intl;
   items12[1] = closure_6(Text, obj6);
   items9[1] = closure_7(View3, obj5);

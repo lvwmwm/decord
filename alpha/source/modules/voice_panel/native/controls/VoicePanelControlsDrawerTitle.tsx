@@ -1,7 +1,7 @@
 // Module ID: 14678
 // Function ID: 14679
 // Name: VoicePanelControlsDrawerTitle
-// Dependencies: [19, 17, 11983, 21, 5306, 575, 1655, 7722, 14679, 5929, 2]
+// Dependencies: [19, 17, 11983, 21, 5306, 575, 1655, 7722, 14679, 5919, 2]
 
 // Module 14678 (VoicePanelControlsDrawerTitle)
 import react_native from "react-native" /* 17 */;
@@ -24,7 +24,7 @@ let obj3;
 let tmp12;
 let tmp2;
 const _modDef1655 = tmp12(1655);
-const Text_Text = tmp2(5929);
+const Text_Text = tmp2(5919);
 const StyleSheet = react_native.StyleSheet;
 const CONTROLS_DRAWER_HEADER_SIZE = VoicePanelControlsConstants.CONTROLS_DRAWER_HEADER_SIZE;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);

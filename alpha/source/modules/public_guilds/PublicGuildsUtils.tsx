@@ -1,13 +1,13 @@
 // Module ID: 9275
 // Function ID: 9276
 // Name: PublicGuildsUtils
-// Dependencies: [8407, 1072, 9276, 9277, 1256, 6067, 2]
+// Dependencies: [8407, 1072, 9276, 9277, 1256, 6057, 2]
 // Exports: getPublicSystemMessageAvatar, isPublicSystemMessage, trackEnableCommunityFlow
 
 // Module 9275 (PublicGuildsUtils)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6067 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6057 */;
 import isCrosspostDefault from "isCrosspost" /* 9276 */;
 import PublicGuildsConstants from "PublicGuildsConstants" /* 8407 */;
 import size from "module_2" /* 2 */;

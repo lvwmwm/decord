@@ -1,12 +1,12 @@
 // Module ID: 7407
 // Function ID: 7408
 // Name: Utils
-// Dependencies: [1072, 7408, 1113, 5962, 2]
+// Dependencies: [1072, 7408, 1113, 5952, 2]
 // Exports: getApplicationDetailsText, isContentClassificationRestricted
 
 // Module 7407 (Utils)
 import Constants from "Constants" /* 1072 */;
-import utils from "utils" /* 5962 */;
+import utils from "utils" /* 5952 */;
 import useIsSocialLayerParentApplication from "useIsSocialLayerParentApplication" /* 7408 */;
 import size from "module_2" /* 2 */;
 

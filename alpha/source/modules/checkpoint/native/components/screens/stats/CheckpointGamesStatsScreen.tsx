@@ -1,7 +1,7 @@
 // Module ID: 14522
 // Function ID: 14523
 // Name: CheckpointGamesStatsScreen
-// Dependencies: [17, 14253, 6377, 21, 5306, 575, 6747, 1113, 3317, 7438, 14271, 14506, 14505, 14507, 14523, 14514, 14273, 14481, 14482, 14512, 504, 14270, 2]
+// Dependencies: [17, 14253, 6367, 21, 5306, 575, 6737, 1113, 3317, 7438, 14271, 14506, 14505, 14507, 14523, 14514, 14273, 14481, 14482, 14512, 504, 14270, 2]
 // Exports: default
 
 // Module 14522 (CheckpointGamesStatsScreen)
@@ -21,7 +21,7 @@ import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 14512 */;
 import CheckpointRankTagDefault from "CheckpointRankTag" /* 14514 */;
 import CheckpointGameCard2 from "CheckpointGameCard" /* 14523 */;
 import CheckpointStore from "CheckpointStore" /* 14253 */;
-import CheckpointConstants from "CheckpointConstants" /* 6377 */;
+import CheckpointConstants from "CheckpointConstants" /* 6367 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;

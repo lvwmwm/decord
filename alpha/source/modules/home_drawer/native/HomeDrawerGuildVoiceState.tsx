@@ -1,10 +1,10 @@
-// Module ID: 19095
-// Function ID: 19096
+// Module ID: 19097
+// Function ID: 19098
 // Name: HomeDrawerGuildVoiceState
-// Dependencies: [19, 17, 5236, 5248, 6958, 6074, 1072, 21, 5306, 575, 15745, 1187, 5929, 1113, 13101, 6020, 5893, 19094, 504, 12, 16214, 2]
+// Dependencies: [19, 17, 5236, 5248, 6948, 6064, 1072, 21, 5306, 575, 15745, 1187, 5919, 1113, 13101, 6010, 5883, 19096, 504, 12, 16214, 2]
 // Exports: GuildVoiceState, useVoiceUsers
 
-// Module 19095 (HomeDrawerGuildVoiceState)
+// Module 19097 (HomeDrawerGuildVoiceState)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -12,15 +12,15 @@ import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import GuildChannelStore2 from "GuildChannelStore" /* 5236 */;
-import LinearGradientDefault from "LinearGradient" /* 5893 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import LinearGradientDefault from "LinearGradient" /* 5883 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 13101 */;
 import AvatarPile2 from "AvatarPile" /* 15745 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 5248 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6958 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 6074 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6948 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 6064 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;

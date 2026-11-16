@@ -1,19 +1,19 @@
-// Module ID: 20755
-// Function ID: 20756
+// Module ID: 20758
+// Function ID: 20759
 // Name: GuildRoleSubscriptionBenefitTableRow
-// Dependencies: [19, 17, 17824, 21, 5306, 575, 17850, 5954, 5929, 1113, 17861, 7443, 17858, 2]
+// Dependencies: [19, 17, 17826, 21, 5306, 575, 17852, 5944, 5919, 1113, 17863, 7443, 17860, 2]
 // Exports: default
 
-// Module 20755 (GuildRoleSubscriptionBenefitTableRow)
+// Module 20758 (GuildRoleSubscriptionBenefitTableRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import TableRow2 from "TableRow" /* 7443 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17824 */;
-import GuildRoleSubscriptionTierTemplatesUtils from "GuildRoleSubscriptionTierTemplatesUtils" /* 17850 */;
-import EmojiIconDefault from "EmojiIcon" /* 17858 */;
-import GuildRoleSubscriptionBenefitUtils from "GuildRoleSubscriptionBenefitUtils" /* 17861 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17826 */;
+import GuildRoleSubscriptionTierTemplatesUtils from "GuildRoleSubscriptionTierTemplatesUtils" /* 17852 */;
+import EmojiIconDefault from "EmojiIcon" /* 17860 */;
+import GuildRoleSubscriptionBenefitUtils from "GuildRoleSubscriptionBenefitUtils" /* 17863 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;
@@ -32,7 +32,7 @@ function ChannelBenefitLabel(benefit) {
   const channelWithTemplateFallback = obj.useChannelWithTemplateFallback(benefit.ref_id);
   if (null == channelWithTemplateFallback) {
     const obj2 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", children: "[" + intl.string(intl2.t.bz1PZX) + "]" };
-    const Text = tmp2(5929).Text;
+    const Text = tmp2(5919).Text;
     intl = tmp2(1113).intl;
     const _HermesInternal = HermesInternal;
     tmp8 = hasOwnProperty(Text, obj2);

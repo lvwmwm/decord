@@ -1,17 +1,17 @@
-// Module ID: 18687
-// Function ID: 18688
+// Module ID: 18689
+// Function ID: 18690
 // Name: PrivacyHint
-// Dependencies: [19, 17, 6845, 18648, 1072, 21, 5306, 5929, 1113, 5378, 7734, 8106, 18688, 2]
+// Dependencies: [19, 17, 6835, 18650, 1072, 21, 5306, 5919, 1113, 5368, 7734, 8106, 18690, 2]
 // Exports: default
 
-// Module 18687 (PrivacyHint)
+// Module 18689 (PrivacyHint)
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
-import react_native from "react-native" /* 5378 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import PromoEmailConsentStore from "PromoEmailConsentStore" /* 6845 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 18648 */;
-import PromotionalEmailCheckBoxDefault from "PromotionalEmailCheckBox" /* 18688 */;
+import react_native from "react-native" /* 5368 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import PromoEmailConsentStore from "PromoEmailConsentStore" /* 6835 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 18650 */;
+import PromotionalEmailCheckBoxDefault from "PromotionalEmailCheckBox" /* 18690 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -63,7 +63,7 @@ function PrivacyPolicyCheckbox(onToggleConsent) {
   }
   items = [tmp7Result, ];
   const obj5 = { variant: "body-xs/medium", color: "text-muted", style: tmp.checkboxLabel, children: intl2.format(intl3.t.qMDAP0, obj6) };
-  const Text = tmp2(5929).Text;
+  const Text = tmp2(5919).Text;
   intl2 = tmp2(1113).intl;
   obj6 = { termsURL: MarketingURLs.TERMS, privacyURL: MarketingURLs.PRIVACY };
   items[1] = tmp9(Text, obj5);

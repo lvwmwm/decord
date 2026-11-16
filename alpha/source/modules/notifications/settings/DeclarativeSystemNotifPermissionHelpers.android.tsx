@@ -1,10 +1,10 @@
-// Module ID: 18621
-// Function ID: 18622
+// Module ID: 18623
+// Function ID: 18624
 // Name: DeclarativeSystemNotifPermissionHelpers
 // Dependencies: [17, 16898, 16899, 16905, 16902, 5263, 1379, 7769, 2]
 // Exports: openSystemNotifSettings, refreshSystemNotifPermissions
 
-// Module 18621 (DeclarativeSystemNotifPermissionHelpers)
+// Module 18623 (DeclarativeSystemNotifPermissionHelpers)
 import react_native from "react-native" /* 17 */;
 import react_nativeAll from "react-native" /* 1379 */;
 import DeviceUtils from "DeviceUtils" /* 5263 */;

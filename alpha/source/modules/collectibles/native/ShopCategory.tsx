@@ -1,17 +1,17 @@
-// Module ID: 18486
-// Function ID: 18487
+// Module ID: 18488
+// Function ID: 18489
 // Name: ShopCategory
-// Dependencies: [19, 17, 1074, 1072, 21, 10416, 5306, 575, 1655, 5548, 1113, 7918, 1502, 17612, 18483, 7888, 18487, 9420, 10446, 5552, 9407, 8484, 7937, 7428, 6020, 7963, 2]
+// Dependencies: [19, 17, 1074, 1072, 21, 10416, 5306, 575, 1655, 5538, 1113, 7918, 1502, 17612, 18485, 7888, 18489, 9420, 10446, 5542, 9407, 8484, 7937, 7428, 6010, 7963, 2]
 // Exports: ShopCategory, ShopCategorySkeleton
 
-// Module 18486 (ShopCategory)
+// Module 18488 (ShopCategory)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5548 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
 import CollectiblesActionCreators from "CollectiblesActionCreators" /* 8484 */;
 import openProductDetailsActionSheet2 from "openProductDetailsActionSheet" /* 9407 */;
@@ -147,7 +147,7 @@ export function ShopCategory(category) {
   const obj3 = { products, bypassAndroidUnsyncedFilter: category.isOrbsExclusive };
   const filteredAndSortedProducts = obj2.useFilteredAndSortedProducts(obj3);
   const mobileBannerUrl = category.mobileBannerUrl;
-  const obj4 = category(18483);
+  const obj4 = category(18485);
   const collectiblesShopDeepLinkProps = obj4.useCollectiblesShopDeepLinkProps({ products: filteredAndSortedProducts });
   ({ productIndex, initialProductSkuId } = collectiblesShopDeepLinkProps);
   const initialVariantIndex = collectiblesShopDeepLinkProps.initialVariantIndex;
@@ -161,12 +161,12 @@ export function ShopCategory(category) {
     }
   });
   let tmp10 = null != productIndex;
-  const useScrollToInitialIndexOnce = category(18487).useScrollToInitialIndexOnce;
-  const tmp9 = category(18487);
+  const useScrollToInitialIndexOnce = category(18489).useScrollToInitialIndexOnce;
+  const tmp9 = category(18489);
   if (tmp10) {
     tmp10 = productIndex > 0;
   }
-  const obj7 = { shouldScroll: tmp10, initialScrollIndex: productIndex, flashListRef: ref, afterMs: category(18487).INITIAL_SCROLL_DELAY_MS, resetKey: category.storeListingId };
+  const obj7 = { shouldScroll: tmp10, initialScrollIndex: productIndex, flashListRef: ref, afterMs: category(18489).INITIAL_SCROLL_DELAY_MS, resetKey: category.storeListingId };
   const scrollToInitialIndexOnce = useScrollToInitialIndexOnce(obj7);
   const tmp4Result = category(9420);
   collectiblesAnalyticsContext = tmp4Result.useCollectiblesAnalyticsContext();
@@ -241,7 +241,7 @@ export function ShopCategory(category) {
   if (tmp16Result) {
     const obj13 = { source: obj14, resizeMode: "cover", style: tmp3.imageBackground };
     obj14 = { uri: mobileBannerUrl };
-    tmp16Result = tmp16(tmp(6020), obj13);
+    tmp16Result = tmp16(tmp(6010), obj13);
   }
   items4 = [tmp16Result, ];
   const obj15 = { style: tmp3.viewAllIcon, children: ref(category(7963).ChevronSmallRightIcon, { size: "sm", color: "white" }) };

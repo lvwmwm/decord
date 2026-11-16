@@ -1,9 +1,9 @@
-// Module ID: 18442
-// Function ID: 18443
+// Module ID: 18444
+// Function ID: 18445
 // Name: DesignSystemStackSetting
-// Dependencies: [9202, 1072, 12406, 18443, 2]
+// Dependencies: [9202, 1072, 12406, 18445, 2]
 
-// Module 18442 (DesignSystemStackSetting)
+// Module 18444 (DesignSystemStackSetting)
 import Constants from "Constants" /* 1072 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;
 import SettingBuilders from "SettingBuilders" /* 12406 */;

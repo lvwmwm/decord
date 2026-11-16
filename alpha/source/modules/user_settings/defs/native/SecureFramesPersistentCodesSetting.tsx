@@ -1,14 +1,14 @@
-// Module ID: 18543
-// Function ID: 18544
+// Module ID: 18545
+// Function ID: 18546
 // Name: SecureFramesPersistentCodesSetting
-// Dependencies: [6089, 9202, 504, 18544, 12406, 1113, 2]
+// Dependencies: [6079, 9202, 504, 18546, 12406, 1113, 2]
 
-// Module 18543 (SecureFramesPersistentCodesSetting)
+// Module 18545 (SecureFramesPersistentCodesSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;
-import updatePersistentCodesEnabled from "updatePersistentCodesEnabled" /* 18544 */;
-import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 6089 */;
+import updatePersistentCodesEnabled from "updatePersistentCodesEnabled" /* 18546 */;
+import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 6079 */;
 import SettingBuilders from "SettingBuilders" /* 12406 */;
 import size from "module_2" /* 2 */;
 

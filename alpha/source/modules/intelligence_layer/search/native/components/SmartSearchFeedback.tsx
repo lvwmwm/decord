@@ -1,10 +1,10 @@
-// Module ID: 19525
-// Function ID: 19526
+// Module ID: 19527
+// Function ID: 19528
 // Name: SmartSearchFeedback
-// Dependencies: [32, 19, 17, 14744, 21, 5306, 575, 14777, 14762, 504, 7888, 5929, 1113, 4354, 15621, 9142, 9144, 2]
+// Dependencies: [32, 19, 17, 14744, 21, 5306, 575, 14777, 14762, 504, 7888, 5919, 1113, 4354, 15621, 9142, 9144, 2]
 // Exports: SmartSearchFeedback
 
-// Module 19525 (SmartSearchFeedback)
+// Module 19527 (SmartSearchFeedback)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef4354 from "module_4354" /* 4354 */;
@@ -46,7 +46,7 @@ export function SmartSearchFeedback(smartSearchQuery) {
   if (!_slicedToArray(obj2.useRecyclingState(null !== stateFromStores, items2), 1)[0]) {
     let stringResult;
     const obj3 = { style: tmp.feedbackContainer, children: items3 };
-    const Text = tmp2(5929).Text;
+    const Text = tmp2(5919).Text;
     const intl = tmp2(1113).intl;
     const string = intl.string;
     if (null !== stateFromStores) {

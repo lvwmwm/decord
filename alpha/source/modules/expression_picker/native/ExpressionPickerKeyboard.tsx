@@ -1,13 +1,13 @@
 // Module ID: 13562
 // Function ID: 13563
 // Name: ExpressionPickerKeyboard
-// Dependencies: [32, 19, 13368, 21, 1655, 5568, 13563, 2020, 1628, 5503, 12015, 5377, 13410, 11247, 2]
+// Dependencies: [32, 19, 13368, 21, 1655, 5558, 13563, 2020, 1628, 5493, 12015, 5367, 13410, 11247, 2]
 
 // Module 13562 (ExpressionPickerKeyboard)
 import Fragment from "Fragment" /* 21 */;
 import KeyboardTypes from "KeyboardTypes" /* 1628 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 2020 */;
-import native from "native" /* 5377 */;
+import native from "native" /* 5367 */;
 import PortalKeyboardConstants from "PortalKeyboardConstants" /* 13368 */;
 import getEmojiTextDefault from "getEmojiText" /* 13563 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

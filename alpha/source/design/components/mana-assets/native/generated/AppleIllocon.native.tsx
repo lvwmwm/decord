@@ -1,12 +1,12 @@
 // Module ID: 15041
 // Function ID: 15042
 // Name: AppleIllocon
-// Dependencies: [19, 21, 15042, 15043, 15044, 7755, 6020, 2]
+// Dependencies: [19, 21, 15042, 15043, 15044, 7755, 6010, 2]
 // Exports: AppleIllocon
 
 // Module 15041 (AppleIllocon)
 import Fragment from "Fragment" /* 21 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import react_native from "react-native" /* 7755 */;
 import _modDef15042 from "module_15042" /* 15042 */;
 import _modDef15043 from "module_15043" /* 15043 */;

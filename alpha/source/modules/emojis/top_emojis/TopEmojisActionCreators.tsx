@@ -1,7 +1,7 @@
 // Module ID: 9550
 // Function ID: 9551
 // Name: TopEmojisActionCreators
-// Dependencies: [1072, 5367, 572, 1285, 2]
+// Dependencies: [1072, 5357, 572, 1285, 2]
 // Exports: fetchTopEmojis, updateNewlyAddedEmojiSeenAcknowledged, updateNewlyAddedLastSeen
 
 // Module 9550 (TopEmojisActionCreators)

@@ -1,11 +1,11 @@
 // Module ID: 9322
 // Function ID: 9323
 // Name: VoiceSessionUtils
-// Dependencies: [19, 8553, 5155, 1388, 9323, 504, 9209, 6749, 1113, 12, 2]
+// Dependencies: [19, 8553, 5155, 1388, 9323, 504, 9209, 6739, 1113, 12, 2]
 // Exports: getSortedVoiceSessionParticipants, getVoiceSessionMessageContent, useSortedVoiceSessionParticipants
 
 // Module 9322 (VoiceSessionUtils)
-import useMessageAuthor from "useMessageAuthor" /* 6749 */;
+import useMessageAuthor from "useMessageAuthor" /* 6739 */;
 import getHumanizedCallDurationDefault from "getHumanizedCallDuration" /* 9209 */;
 import maybeSortByProbability from "maybeSortByProbability" /* 9323 */;
 import react from "react" /* 19 */;
@@ -17,7 +17,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require;
 
-const f130160 = (acc, item) => {
+const f130175 = (acc, item) => {
   user = user.getUser(item);
   let tmp3 = acc;
   if (null != user) {
@@ -38,7 +38,7 @@ export function getSortedVoiceSessionParticipants(message) {
   let reduced;
   if (call != null) {
     const participants = call.participants;
-    reduced = participants.reduce(f130160, []);
+    reduced = participants.reduce(f130175, []);
   }
   if (reduced == null) {
     reduced = [];
@@ -97,7 +97,7 @@ export function getVoiceSessionMessageContent(channel_id) {
   let reduced;
   if (call != null) {
     const participants = call.participants;
-    reduced = participants.reduce(f130160, []);
+    reduced = participants.reduce(f130175, []);
   }
   if (reduced == null) {
     reduced = [];

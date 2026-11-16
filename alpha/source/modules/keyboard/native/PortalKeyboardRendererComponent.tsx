@@ -1,11 +1,11 @@
 // Module ID: 13366
 // Function ID: 13367
 // Name: PortalKeyboardRendererComponent
-// Dependencies: [19, 5155, 21, 5377, 6332, 7241, 1628, 13367, 12579, 13532, 13562, 2]
+// Dependencies: [19, 5155, 21, 5367, 6322, 7241, 1628, 13367, 12579, 13532, 13562, 2]
 
 // Module 13366 (PortalKeyboardRendererComponent)
 import Fragment from "Fragment" /* 21 */;
-import useBackPressHandler from "useBackPressHandler" /* 6332 */;
+import useBackPressHandler from "useBackPressHandler" /* 6322 */;
 import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 7241 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
@@ -28,7 +28,7 @@ const memoResult = react.memo(function PortalKeyboardRendererComponent(item) {
   let memo;
   let tmp = channelId;
   let tmp2 = dependencyMap;
-  const tmp3 = state === channelId(5377).TransitionStates.YEETED;
+  const tmp3 = state === channelId(5367).TransitionStates.YEETED;
   dependencyMap = tmp3;
   const items = [chatInputRef, tmp3];
   const layoutEffect = channel.useLayoutEffect(() => {

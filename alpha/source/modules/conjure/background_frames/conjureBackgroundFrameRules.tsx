@@ -1,11 +1,11 @@
 // Module ID: 16989
 // Function ID: 16990
 // Name: conjureBackgroundFrameRules
-// Dependencies: [5154, 7019, 1194, 16990, 15974, 7020, 7348, 16914, 5977, 7339, 2]
+// Dependencies: [5154, 7019, 1194, 16990, 15974, 7020, 7348, 16914, 5967, 7339, 2]
 // Exports: isBuilderPreviewFrame, shouldRunInBackgroundOnRelease
 
 // Module 16989 (conjureBackgroundFrameRules)
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5977 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5967 */;
 import FramesConstants from "FramesConstants" /* 7020 */;
 import conjurePreviewSurface from "conjurePreviewSurface" /* 7339 */;
 import frameRunsInBackgroundDefault from "frameRunsInBackground" /* 7348 */;

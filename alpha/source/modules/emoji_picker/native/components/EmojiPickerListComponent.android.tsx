@@ -1,7 +1,7 @@
 // Module ID: 11289
 // Function ID: 11290
 // Name: EmojiPickerListComponent
-// Dependencies: [19, 6969, 6972, 9546, 1228, 21, 5306, 1655, 11290, 5570, 1627, 1708, 5252, 7845, 11278, 2]
+// Dependencies: [19, 6969, 6972, 9546, 1228, 21, 5306, 1655, 11290, 5560, 1627, 1708, 5252, 7845, 11278, 2]
 // Exports: default
 
 // Module 11289 (EmojiPickerListComponent)
@@ -17,7 +17,7 @@ import EmojiStore from "EmojiStore" /* 6969 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;
 import module_1655 from "module_1655" /* 1655 */;
-import BottomSheetModal from "BottomSheetModal" /* 5570 */;
+import BottomSheetModal from "BottomSheetModal" /* 5560 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1627 */;
 import size from "module_2" /* 2 */;
 

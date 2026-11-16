@@ -1,15 +1,15 @@
-// Module ID: 18464
-// Function ID: 18465
+// Module ID: 18466
+// Function ID: 18467
 // Name: UserSettingsDesignSystemDragHandle
-// Dependencies: [19, 17, 1072, 21, 5306, 575, 5929, 7447, 6337, 5893, 7746, 7443, 10569, 7445, 2]
+// Dependencies: [19, 17, 1072, 21, 5306, 575, 5919, 7447, 6327, 5883, 7746, 7443, 10569, 7445, 2]
 // Exports: default
 
-// Module 18464 (UserSettingsDesignSystemDragHandle)
+// Module 18466 (UserSettingsDesignSystemDragHandle)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import LinearGradientDefault from "LinearGradient" /* 5893 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import Stack_Stack from "Stack/Stack" /* 6337 */;
+import LinearGradientDefault from "LinearGradient" /* 5883 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import Stack_Stack from "Stack/Stack" /* 6327 */;
 import TableRow3 from "TableRow" /* 7443 */;
 import Card_Card from "Card/Card" /* 7445 */;
 import DragHandle from "DragHandle" /* 7447 */;

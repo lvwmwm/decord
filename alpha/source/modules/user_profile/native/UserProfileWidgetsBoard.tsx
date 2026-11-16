@@ -1,13 +1,13 @@
 // Module ID: 12131
 // Function ID: 12132
 // Name: UserProfileWidgetsBoard
-// Dependencies: [19, 17, 8479, 7355, 21, 5306, 575, 12104, 8545, 7988, 10449, 1113, 12132, 12103, 12090, 12139, 6331, 12097, 12141, 5929, 7353, 12142, 12109, 12144, 12111, 12089, 12145, 7357, 12146, 7358, 12085, 12279, 2]
+// Dependencies: [19, 17, 8479, 7355, 21, 5306, 575, 12104, 8545, 7988, 10449, 1113, 12132, 12103, 12090, 12139, 6321, 12097, 12141, 5919, 7353, 12142, 12109, 12144, 12111, 12089, 12145, 7357, 12146, 7358, 12085, 12279, 2]
 // Exports: default
 
 // Module 12131 (UserProfileWidgetsBoard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import react_native2 from "react-native" /* 6331 */;
+import react_native2 from "react-native" /* 6321 */;
 import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7357 */;
 import Constants from "Constants" /* 8479 */;
 import UserProfilePersonalWidgetCardDefault from "UserProfilePersonalWidgetCard" /* 12085 */;

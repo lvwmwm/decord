@@ -1,7 +1,7 @@
 // Module ID: 12450
 // Function ID: 12451
 // Name: MediaModalOverlayAltTextSheet
-// Dependencies: [19, 21, 5306, 575, 12451, 8560, 5566, 7913, 1113, 5929, 2]
+// Dependencies: [19, 21, 5306, 575, 12451, 8560, 5556, 7913, 1113, 5919, 2]
 // Exports: default
 
 // Module 12450 (MediaModalOverlayAltTextSheet)
@@ -32,7 +32,7 @@ export default function MediaViewerAltTextSheet(description) {
   if (!obj2.useIsScreenLandscape()) {
     num = messagePreviewCollapsedheight + 20 + 50;
   }
-  const BottomSheet = tmp2(5566).BottomSheet;
+  const BottomSheet = tmp2(5556).BottomSheet;
   ({ title: intl.string(intl2.t.J3IOO1) });
   const BottomSheetTitleHeader = tmp2(7913).BottomSheetTitleHeader;
   intl = tmp2(1113).intl;

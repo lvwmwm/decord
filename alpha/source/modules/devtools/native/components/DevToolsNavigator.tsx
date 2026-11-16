@@ -1,14 +1,14 @@
 // Module ID: 17057
 // Function ID: 17058
 // Name: DevToolsNavigator
-// Dependencies: [19, 17, 21, 9128, 7490, 17058, 9051, 18398, 13991, 5929, 575, 18214, 17217, 5552, 6848, 5500, 2]
+// Dependencies: [19, 17, 21, 9128, 7490, 17058, 9051, 18400, 13991, 5919, 575, 18216, 17217, 5542, 6838, 5490, 2]
 // Exports: navigateToDevTools
 
 // Module 17057 (DevToolsNavigator)
 import react_native from "react-native" /* 17 */;
-import Types from "Types" /* 5500 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import Types from "Types" /* 5490 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import HeaderShared from "HeaderShared" /* 9051 */;
 import SettingHookHarnessDefault from "SettingHookHarness" /* 17058 */;
 import react from "react" /* 19 */;
@@ -23,7 +23,7 @@ let closure_4;
 let hasOwnProperty;
 let metroRequire;
 let tmp6;
-const DevToolsContentDefault = tmp6(18398);
+const DevToolsContentDefault = tmp6(18400);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty, Fragment: metroRequire } = Fragment);
 let Navigator = NativeStackView.createNativeStackNavigator();
@@ -94,8 +94,8 @@ let closure_8 = react.memo(function DevToolsNavigator(screenKey) {
   };
   items1[0] = tmp5(tmp7.Screen, obj4);
   const obj5 = {};
-  let merged = Object.assign(tmp(18214).DevToolsScreens);
-  let merged1 = Object.assign(tmp(18214).PerformanceTestingScreens);
+  let merged = Object.assign(tmp(18216).DevToolsScreens);
+  let merged1 = Object.assign(tmp(18216).PerformanceTestingScreens);
   const entries1 = entries(obj5);
   items1[1] = entries1.map((item) => {
     let tmp;

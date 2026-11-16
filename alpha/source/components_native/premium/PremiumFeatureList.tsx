@@ -1,7 +1,7 @@
 // Module ID: 10970
 // Function ID: 10971
 // Name: PremiumFeatureList
-// Dependencies: [19, 17, 1072, 21, 5306, 6826, 575, 8106, 2]
+// Dependencies: [19, 17, 1072, 21, 5306, 6816, 575, 8106, 2]
 // Exports: default
 
 // Module 10970 (PremiumFeatureList)
@@ -12,7 +12,7 @@ import _mod8106 from "module_8106" /* 8106 */;
 import react from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
-import TextStyles from "TextStyles" /* 6826 */;
+import TextStyles from "TextStyles" /* 6816 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

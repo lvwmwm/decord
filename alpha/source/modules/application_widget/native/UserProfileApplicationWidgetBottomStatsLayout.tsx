@@ -1,7 +1,7 @@
 // Module ID: 12261
 // Function ID: 12262
 // Name: UserProfileApplicationWidgetBottomStatsLayout
-// Dependencies: [19, 17, 21, 5306, 575, 12255, 12149, 5929, 12256, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 12255, 12149, 5919, 12256, 2]
 // Exports: default
 
 // Module 12261 (UserProfileApplicationWidgetBottomStatsLayout)
@@ -55,7 +55,7 @@ export default function UserProfileApplicationWidgetBottomStatsLayout(arg0) {
         const tmp3 = View;
         if ("value" === value.label.status) {
           const obj3 = { variant: "body-xs/normal", color: "text-muted", style, children: value.label.text };
-          tmp5Result = tmp5(tmp6(5929).Text, obj3);
+          tmp5Result = tmp5(tmp6(5919).Text, obj3);
         } else {
           tmp5Result = null;
           if ("skeleton" === value.label.status) {

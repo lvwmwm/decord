@@ -1,13 +1,13 @@
 // Module ID: 15274
 // Function ID: 15275
 // Name: BadgeDirectoryScreen
-// Dependencies: [19, 1388, 21, 5306, 5892, 575, 504, 1113, 7493, 15273, 15275, 7490, 12523, 2]
+// Dependencies: [19, 1388, 21, 5306, 5882, 575, 504, 1113, 7493, 15273, 15275, 7490, 12523, 2]
 // Exports: default
 
 // Module 15274 (BadgeDirectoryScreen)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import NavigatorConstants from "NavigatorConstants" /* 5892 */;
+import NavigatorConstants from "NavigatorConstants" /* 5882 */;
 import NavigatorHeader from "NavigatorHeader" /* 7493 */;
 import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 15273 */;
 import react from "react" /* 19 */;

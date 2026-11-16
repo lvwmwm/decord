@@ -1,14 +1,14 @@
-// Module ID: 20601
-// Function ID: 20602
+// Module ID: 20604
+// Function ID: 20605
 // Name: GuildSettingsModalBans
-// Dependencies: [32, 19, 17, 5177, 5238, 1388, 8405, 1072, 21, 5306, 575, 504, 5131, 5902, 6061, 7073, 6917, 8404, 7443, 1187, 7456, 1113, 7943, 6014, 7948, 7588, 20602, 7825, 8596, 7830, 5912, 2]
+// Dependencies: [32, 19, 17, 5177, 5238, 1388, 8405, 1072, 21, 5306, 575, 504, 5131, 5892, 6051, 7073, 6907, 8404, 7443, 1187, 7456, 1113, 7943, 6004, 7948, 7588, 20605, 7825, 8596, 7830, 5902, 2]
 // Exports: default
 
-// Module 20601 (GuildSettingsModalBans)
+// Module 20604 (GuildSettingsModalBans)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6917 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6907 */;
 import fuzzysearchDefault from "fuzzysearch" /* 7073 */;
 import showSimpleActionSheet2 from "showSimpleActionSheet" /* 7948 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

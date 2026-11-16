@@ -1,7 +1,7 @@
 // Module ID: 17622
 // Function ID: 17623
 // Name: QuestHomeOrbShopCarousel
-// Dependencies: [32, 19, 17, 1192, 8807, 5338, 21, 575, 17609, 5306, 504, 5929, 1113, 10455, 7888, 17101, 17623, 10416, 8825, 8834, 9420, 5377, 2]
+// Dependencies: [32, 19, 17, 1192, 8807, 6954, 21, 575, 17609, 5306, 504, 5919, 1113, 10455, 7888, 17101, 17623, 10416, 8825, 8834, 9420, 5367, 2]
 // Exports: default, useQuestHomeOrbShopCarouselData
 
 // Module 17622 (QuestHomeOrbShopCarousel)
@@ -9,8 +9,8 @@ import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import QuestConstants from "QuestConstants" /* 5338 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import QuestConstants from "QuestConstants" /* 6954 */;
 import AnalyticsActions from "AnalyticsActions" /* 8825 */;
 import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9420 */;
 import SkeletonCardDefault from "SkeletonCard" /* 10455 */;

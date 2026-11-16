@@ -1,7 +1,7 @@
 // Module ID: 12366
 // Function ID: 12367
 // Name: Messages
-// Dependencies: [32, 19, 5307, 5154, 7314, 2165, 12367, 8679, 7016, 11890, 6969, 5532, 8635, 12368, 7056, 9183, 9165, 7029, 8461, 12372, 8659, 12374, 9168, 7221, 12375, 12376, 9293, 12377, 8784, 8744, 12000, 5240, 8871, 2189, 1192, 502, 5155, 8785, 12378, 5218, 5177, 6937, 6052, 6372, 5238, 6068, 6071, 7015, 6073, 9021, 1388, 5981, 7070, 12400, 6074, 1072, 12369, 1390, 21, 504, 12, 558, 7055, 1255, 5131, 12401, 12408, 12412, 12415, 10131, 9305, 2174, 9210, 6950, 12026, 12027, 11864, 9204, 9585, 12419, 5503, 12002, 9138, 10280, 11886, 12420, 6830, 11887, 8658, 12421, 12425, 8538, 8841, 12431, 12438, 12447, 10271, 12448, 2]
+// Dependencies: [32, 19, 5307, 5154, 7314, 2165, 12367, 8679, 7016, 11890, 6969, 5522, 8635, 12368, 7056, 9183, 9165, 7029, 8461, 12372, 8659, 12374, 9168, 7221, 12375, 12376, 9293, 12377, 8784, 8744, 12000, 5240, 8871, 2189, 1192, 502, 5155, 8785, 12378, 5218, 5177, 6927, 6042, 6362, 5238, 6058, 6061, 7015, 6063, 9021, 1388, 5971, 7070, 12400, 6064, 1072, 12369, 1390, 21, 504, 12, 558, 7055, 1255, 5131, 12401, 12408, 12412, 12415, 10131, 9305, 2174, 9210, 6940, 12026, 12027, 11864, 9204, 9585, 12419, 5493, 12002, 9138, 10280, 11886, 12420, 6820, 11887, 8658, 12421, 12425, 8538, 8841, 12431, 12438, 12447, 10271, 12448, 2]
 
 // Module 12366 (Messages)
 import GlobalUtils from "GlobalUtils" /* 1255 */;
@@ -19,7 +19,7 @@ import CacheStore from "CacheStore" /* 8679 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 7016 */;
 import VoiceChannelStartTimeStore from "VoiceChannelStartTimeStore" /* 11890 */;
 import EmojiStore from "EmojiStore" /* 6969 */;
-import ExperimentStore from "ExperimentStore" /* 5532 */;
+import ExperimentStore from "ExperimentStore" /* 5522 */;
 import ExplicitMediaStore from "ExplicitMediaStore" /* 8635 */;
 import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 12368 */;
 import ApplicationDirectoryApplicationsStore from "ApplicationDirectoryApplicationsStore" /* 7056 */;
@@ -49,20 +49,20 @@ import EditMessageStore from "EditMessageStore" /* 8785 */;
 import GiftCodeStore from "GiftCodeStore" /* 12378 */;
 import GuildMemberStore from "GuildMemberStore" /* 5218 */;
 import GuildStore from "GuildStore" /* 5177 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 6937 */;
-import InviteStore from "InviteStore" /* 6052 */;
-import MessageStore from "MessageStore" /* 6372 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 6927 */;
+import InviteStore from "InviteStore" /* 6042 */;
+import MessageStore from "MessageStore" /* 6362 */;
 import PermissionStore from "PermissionStore" /* 5238 */;
-import PresenceStore from "PresenceStore" /* 6068 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6071 */;
+import PresenceStore from "PresenceStore" /* 6058 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
 import ReadStateStore from "ReadStateStore" /* 7015 */;
-import SessionsStore from "SessionsStore" /* 6073 */;
+import SessionsStore from "SessionsStore" /* 6063 */;
 import UploadStore from "UploadStore" /* 9021 */;
 import UserStore from "UserStore" /* 1388 */;
-import VoiceStateStore from "VoiceStateStore" /* 5981 */;
+import VoiceStateStore from "VoiceStateStore" /* 5971 */;
 import SKUStore from "SKUStore" /* 7070 */;
 import ActivityLauncherStore from "ActivityLauncherStore" /* 12400 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 6074 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 6064 */;
 import Constants from "Constants" /* 1072 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
@@ -120,7 +120,7 @@ class MessagesConnected {
     let unloadedContentEntryMessageIds;
     let useReducedMotion;
     let version;
-    const f104863 = () => {
+    const f104876 = () => {
       const items = [LocalInteractionComponentStateStore.getInteractionComponentStates(), LocalInteractionComponentStateStore.getInteractionComponentStateVersion()];
       return items;
     };
@@ -484,8 +484,8 @@ class MessagesConnected {
     const stateFromStoresObject4 = tmp2Result117.useStateFromStoresObject(items54, () => messageInteractionStates.getMessageInteractionStates());
     const items55 = [LocalInteractionComponentStateStore];
     const tmp2Result118 = tmp2(tmp3[59]);
-    [tmp72, tmp73] = guildId(tmp2Result118.useStateFromStores(items55, f104863, [], tmp2(tmp3[73]).isVersionEqual), 2);
-    guildId(tmp2Result118.useStateFromStores(items55, f104863, [], tmp2(tmp3[73]).isVersionEqual), 2);
+    [tmp72, tmp73] = guildId(tmp2Result118.useStateFromStores(items55, f104876, [], tmp2(tmp3[73]).isVersionEqual), 2);
+    guildId(tmp2Result118.useStateFromStores(items55, f104876, [], tmp2(tmp3[73]).isVersionEqual), 2);
     const items56 = [ExperimentStore];
     const tmp2Result119 = tmp2(tmp3[59]);
     let stateFromStores23 = tmp2Result119.useStateFromStores(items56, () => hasLoadedExperiments.hasLoadedExperiments);

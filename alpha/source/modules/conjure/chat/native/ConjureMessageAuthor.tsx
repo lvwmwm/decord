@@ -1,7 +1,7 @@
 // Module ID: 13622
 // Function ID: 13623
 // Name: ConjureMessageAuthor
-// Dependencies: [19, 17, 21, 5306, 575, 13610, 13623, 5929, 7428, 1113, 12446, 5372, 13624, 4131, 1187, 6020, 13627, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 13610, 13623, 5919, 7428, 1113, 12446, 5362, 13624, 4131, 1187, 6010, 13627, 2]
 // Exports: ConjureAvatar, ConjureHeader, ConjureUserAvatar, ConjureUserHeader
 
 // Module 13622 (ConjureMessageAuthor)
@@ -9,8 +9,8 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef4131 from "module_4131" /* 4131 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 13610 */;
 import ConjureMessageTime from "ConjureMessageTime" /* 13623 */;
 import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 13624 */;
@@ -55,7 +55,7 @@ class ConjureMessageHeader {
     let tmp5Result2 = null;
     if (null != describeMessageTimeResult) {
       const obj6 = { variant: "body-xs/medium", color: "text-muted", style: tmp.time, children: describeMessageTimeResult };
-      tmp5Result2 = tmp5(tmp2(5929).Text, obj6);
+      tmp5Result2 = tmp5(tmp2(5919).Text, obj6);
     }
     items[1] = tmp5Result2;
     return tmp7(tmp8, obj3);
@@ -80,7 +80,7 @@ export function ConjureUserHeader(arg0) {
   ({ userId, at } = arg0);
   let obj = messageAuthorUser(12446);
   messageAuthorUser = obj.useMessageAuthorUser(userId);
-  const obj2 = messageAuthorUser(5372);
+  const obj2 = messageAuthorUser(5362);
   const name = obj2.useName(messageAuthorUser);
   [][0] = messageAuthorUser;
   let tmp4 = null;

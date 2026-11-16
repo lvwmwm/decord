@@ -1,21 +1,21 @@
-// Module ID: 18751
-// Function ID: 18752
+// Module ID: 18753
+// Function ID: 18754
 // Name: MessagesItemChannelBase
-// Dependencies: [19, 17, 6068, 7015, 5248, 5209, 6958, 1388, 21, 5306, 575, 504, 18752, 8576, 1380, 8134, 6063, 10894, 7428, 8418, 1113, 9508, 18753, 5994, 9504, 18754, 8625, 18755, 6069, 2]
+// Dependencies: [19, 17, 6058, 7015, 5248, 5209, 6948, 1388, 21, 5306, 575, 504, 18754, 8576, 1380, 8134, 6053, 10894, 7428, 8418, 1113, 9508, 18755, 5984, 9504, 18756, 8625, 18757, 6059, 2]
 
-// Module 18751 (MessagesItemChannelBase)
+// Module 18753 (MessagesItemChannelBase)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import transitionToChannel from "transitionToChannel" /* 6063 */;
+import transitionToChannel from "transitionToChannel" /* 6053 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 8134 */;
 import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10894 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 6068 */;
+import PresenceStore from "PresenceStore" /* 6058 */;
 import ReadStateStore from "ReadStateStore" /* 7015 */;
 import RelationshipStore from "RelationshipStore" /* 5248 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6958 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6948 */;
 import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;
@@ -99,7 +99,7 @@ const memoResult = react.memo(function MessagesItemChannelBase(channel) {
       obj3 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
       const obj2 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
     } else {
-      obj3 = { status: "disabled", activities: "isArray" };
+      obj3 = { status: "Array", activities: "Path" };
     }
     return obj3;
   });

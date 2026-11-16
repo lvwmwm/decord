@@ -1,12 +1,12 @@
 // Module ID: 10443
 // Function ID: 10444
 // Name: OrderSigningErrors
-// Dependencies: [6050, 5126, 2]
+// Dependencies: [6040, 5126, 2]
 // Exports: getOrderSigningError
 
 // Module 10443 (OrderSigningErrors)
 import BillingErrorDefault from "BillingError" /* 5126 */;
-import PaymentConstants from "PaymentConstants" /* 6050 */;
+import PaymentConstants from "PaymentConstants" /* 6040 */;
 import size from "module_2" /* 2 */;
 
 const OrderClientErrorCode = PaymentConstants.OrderClientErrorCode;

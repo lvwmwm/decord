@@ -1,14 +1,14 @@
 // Module ID: 12752
 // Function ID: 12753
 // Name: IntlLink
-// Dependencies: [19, 21, 5306, 575, 5320, 6012, 2070, 1187, 2]
+// Dependencies: [19, 21, 5306, 575, 5320, 6002, 2070, 1187, 2]
 // Exports: IntlLink
 
 // Module 12752 (IntlLink)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef2070 from "module_2070" /* 2070 */;
-import LinkingDefault from "Linking" /* 6012 */;
+import LinkingDefault from "Linking" /* 6002 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;

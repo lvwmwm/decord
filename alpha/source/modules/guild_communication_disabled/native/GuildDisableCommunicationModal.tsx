@@ -1,7 +1,7 @@
 // Module ID: 14141
 // Function ID: 14142
 // Name: GuildDisableCommunicationModal
-// Dependencies: [19, 21, 10905, 10907, 1113, 6351, 14142, 2]
+// Dependencies: [19, 21, 10905, 10907, 1113, 6341, 14142, 2]
 // Exports: default
 
 // Module 14141 (GuildDisableCommunicationModal)

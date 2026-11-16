@@ -1,13 +1,13 @@
 // Module ID: 10890
 // Function ID: 10891
 // Name: GroupDMRow
-// Dependencies: [19, 10244, 21, 5954, 10891, 1187, 10892, 5929, 7733, 7443, 2]
+// Dependencies: [19, 10244, 21, 5944, 10891, 1187, 10892, 5919, 7733, 7443, 2]
 // Exports: default
 
 // Module 10890 (GroupDMRow)
 import Fragment from "Fragment" /* 21 */;
 import native from "native" /* 1187 */;
-import useChannelNameDefault from "useChannelName" /* 5954 */;
+import useChannelNameDefault from "useChannelName" /* 5944 */;
 import UserRowConstants from "UserRowConstants" /* 10244 */;
 import GroupDMAvatarDefault from "GroupDMAvatar" /* 10891 */;
 import useRecipientsLabel from "useRecipientsLabel" /* 10892 */;
@@ -53,7 +53,7 @@ export default function GroupDMRow(channel) {
   tmp5Result = undefined;
   if (null != recipientsLabel) {
     const obj4 = { variant: "body-xs/medium", color: "text-muted", lineClamp: 1, children: recipientsLabel };
-    tmp5Result = tmp5(tmp7(5929).Text, obj4);
+    tmp5Result = tmp5(tmp7(5919).Text, obj4);
   }
   if (str == null) {
     str = "";

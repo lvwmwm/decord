@@ -1,15 +1,15 @@
 // Module ID: 12465
 // Function ID: 12466
 // Name: openStaticChannelRoute
-// Dependencies: [5218, 5212, 5177, 5162, 1072, 7218, 7866, 6848, 12466, 2121, 7262, 5552, 12479, 12488, 1255, 2]
+// Dependencies: [5218, 5212, 5177, 5162, 1072, 7218, 7866, 6838, 12466, 2121, 7262, 5542, 12479, 12488, 1255, 2]
 // Exports: default
 
 // Module 12465 (openStaticChannelRoute)
 import GlobalUtils from "GlobalUtils" /* 1255 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
 import ChannelConstants from "ChannelConstants" /* 5162 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7218 */;
 import safeTransitionToDefault from "safeTransitionTo" /* 7262 */;
 import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7866 */;

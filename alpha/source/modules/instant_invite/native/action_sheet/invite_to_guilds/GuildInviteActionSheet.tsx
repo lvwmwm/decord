@@ -1,7 +1,7 @@
 // Module ID: 15676
 // Function ID: 15677
 // Name: GuildInviteActionSheet
-// Dependencies: [32, 19, 17, 21, 5306, 575, 1187, 1113, 15677, 15678, 15674, 5929, 5913, 14932, 15679, 7913, 5566, 7825, 8463, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 575, 1187, 1113, 15677, 15678, 15674, 5919, 5903, 14932, 15679, 7913, 5556, 7825, 8463, 2]
 // Exports: default
 
 // Module 15676 (GuildInviteActionSheet)
@@ -9,8 +9,8 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5566 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5556 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import SearchBar2 from "SearchBar" /* 7825 */;
 import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7913 */;
 import InstantInviteUtilsDefault from "InstantInviteUtils" /* 8463 */;
@@ -63,7 +63,7 @@ function GuildList(recipientId) {
       items = [];
     }
     let tmp5 = 0 === arr.length;
-    const insets = source(5913)().insets;
+    const insets = source(5903)().insets;
     const tmp4 = source;
     if (!tmp5) {
       tmp5 = 0 === arr2.length;

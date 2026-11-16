@@ -1,14 +1,14 @@
 // Module ID: 15717
 // Function ID: 15718
 // Name: UserProfileActivityBadges
-// Dependencies: [19, 17, 21, 5306, 12277, 8469, 7328, 8101, 6069, 10851, 10856, 7438, 15718, 15719, 575, 15720, 8419, 7436, 5929, 12623, 2]
+// Dependencies: [19, 17, 21, 5306, 12277, 8469, 7328, 8101, 6059, 10851, 10856, 7438, 15718, 15719, 575, 15720, 8419, 7436, 5919, 12623, 2]
 // Exports: EpisodeBadge, PartyBadge, TimestampBadge
 
 // Module 15717 (UserProfileActivityBadges)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import ActivityTypes from "ActivityTypes" /* 6069 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import ActivityTypes from "ActivityTypes" /* 6059 */;
 import conjurePresenceActivity from "conjurePresenceActivity" /* 7328 */;
 import utils from "utils" /* 8419 */;
 import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 8469 */;

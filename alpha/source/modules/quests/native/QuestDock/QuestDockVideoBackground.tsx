@@ -1,15 +1,15 @@
-// Module ID: 17803
-// Function ID: 17804
+// Module ID: 17808
+// Function ID: 17809
 // Name: QuestDockVideoBackground
-// Dependencies: [32, 19, 17, 5307, 5338, 17698, 1072, 21, 5306, 17699, 1655, 5939, 17702, 17783, 11253, 1496, 1630, 504, 17697, 671, 17804, 1380, 10128, 2025, 9730, 6020, 5893, 2]
+// Dependencies: [32, 19, 17, 5307, 6954, 17698, 1072, 21, 5306, 17699, 1655, 5929, 17702, 17783, 11253, 1496, 1630, 504, 17697, 671, 17809, 1380, 10128, 2025, 9730, 6010, 5883, 2]
 
-// Module 17803 (QuestDockVideoBackground)
+// Module 17808 (QuestDockVideoBackground)
 import _modDef671 from "module_671" /* 671 */;
 import Constants from "Constants" /* 1072 */;
 import _mod1655 from "module_1655" /* 1655 */;
 import react_nativeDefault from "react-native" /* 2025 */;
-import QuestConstants from "QuestConstants" /* 5338 */;
-import spring_spring from "spring/spring" /* 5939 */;
+import spring_spring from "spring/spring" /* 5929 */;
+import QuestConstants from "QuestConstants" /* 6954 */;
 import QuestDockUtils from "QuestDockUtils" /* 17697 */;
 import QuestDockGestureContext from "QuestDockGestureContext" /* 17699 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;

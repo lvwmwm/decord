@@ -1,13 +1,13 @@
 // Module ID: 14287
 // Function ID: 14288
 // Name: CheckpointShareCardFooter
-// Dependencies: [19, 17, 21, 5306, 575, 14284, 5902, 8263, 5929, 14288, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 14284, 5892, 8263, 5919, 14288, 2]
 // Exports: default
 
 // Module 14287 (CheckpointShareCardFooter)
 import nativeDefault from "native" /* 575 */;
-import useToken from "useToken" /* 5902 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import useToken from "useToken" /* 5892 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import inlineStylesDefault from "inlineStyles" /* 8263 */;
 import CheckpointShareCardContext from "CheckpointShareCardContext" /* 14284 */;
 import react from "react" /* 19 */;

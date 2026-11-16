@@ -1,12 +1,12 @@
 // Module ID: 11670
 // Function ID: 11671
 // Name: GiftingPromotionUtils
-// Dependencies: [32, 19, 9623, 1390, 504, 11671, 11672, 9627, 5348, 5139, 2]
+// Dependencies: [32, 19, 9623, 1390, 504, 11671, 11672, 9627, 5338, 5139, 2]
 // Exports: combinePromotionStyles, createBackgroundStyle, createGradientStyle, getRewardAssetIdMap, shouldShowGiftPromotionReminderNotice, useFetchClaimableGiftingPromotionRewardSkuIds, useIsPlanEligibleForGiftingPromotion, useShouldAutoSelectGiftingPromotionReward, useShouldShowSelectFreeSkuStep
 
 // Module 11670 (GiftingPromotionUtils)
 import PremiumConstants from "PremiumConstants" /* 1390 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5348 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5338 */;
 import MarketingSurfaceType from "MarketingSurfaceType" /* 9627 */;
 import GiftPromotionReminderExperiment2 from "GiftPromotionReminderExperiment" /* 11672 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

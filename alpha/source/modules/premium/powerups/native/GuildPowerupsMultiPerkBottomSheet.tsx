@@ -1,7 +1,7 @@
 // Module ID: 10754
 // Function ID: 10755
 // Name: GuildPowerupsMultiPerkBottomSheet
-// Dependencies: [17, 21, 5306, 575, 671, 5328, 5547, 10676, 10700, 10696, 10717, 10755, 10718, 10740, 10741, 10746, 10721, 1187, 1113, 5929, 10722, 5936, 2733, 1630, 10756, 5566, 5570, 10759, 10752, 2]
+// Dependencies: [17, 21, 5306, 575, 671, 5328, 5537, 10676, 10700, 10696, 10717, 10755, 10718, 10740, 10741, 10746, 10721, 1187, 1113, 5919, 10722, 5926, 2733, 1630, 10756, 5556, 5560, 10759, 10752, 2]
 // Exports: default
 
 // Module 10754 (GuildPowerupsMultiPerkBottomSheet)
@@ -11,7 +11,7 @@ import _modDef671 from "module_671" /* 671 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
 import _modDef2733 from "module_2733" /* 2733 */;
 import themes from "themes" /* 5328 */;
-import useThemeDefault from "useTheme" /* 5547 */;
+import useThemeDefault from "useTheme" /* 5537 */;
 import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 10676 */;
 import useGuildPowerupRollbackEnabledDefault from "useGuildPowerupRollbackEnabled" /* 10696 */;
 import usePowerupActiveStatus from "usePowerupActiveStatus" /* 10700 */;
@@ -39,8 +39,8 @@ let obj3;
 let tmp;
 const intl3 = tmp(1113);
 const native = tmp(1187);
-const Text_Text = tmp(5929);
-const components_Button_Button = tmp(5936);
+const Text_Text = tmp(5919);
+const components_Button_Button = tmp(5926);
 const GuildPowerupsCardFooter = tmp(10722);
 function GuildPowerupsMultiPerkCard(arg0) {
   let c1;
@@ -224,10 +224,10 @@ export default function GuildPowerupsMultiPerkBottomSheet(guildId) {
   let tmp6Result2 = null;
   if (null != tmp4) {
     let obj = { scrollable: true, startExpanded: true, onDismiss, children: tmp8(BottomSheetScrollView, obj2) };
-    const BottomSheet = guildId(5566).BottomSheet;
+    const BottomSheet = guildId(5556).BottomSheet;
     obj2 = { contentContainerStyle: obj3, children: items };
     obj3 = { paddingBottom: bottom };
-    BottomSheetScrollView = guildId(5570).BottomSheetScrollView;
+    BottomSheetScrollView = guildId(5560).BottomSheetScrollView;
     const obj5 = { title: null, description: null };
     ({ title: obj4.title, description: obj4.description } = tmp4);
     items = [closure_4(GuildPowerupsSectionHeaderDefault, obj5), , ];

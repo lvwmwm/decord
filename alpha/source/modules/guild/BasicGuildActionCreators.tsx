@@ -1,10 +1,10 @@
-// Module ID: 20819
-// Function ID: 20820
+// Module ID: 20822
+// Function ID: 20823
 // Name: BasicGuildActionCreators
 // Dependencies: [5, 5177, 9183, 1072, 572, 1285, 2]
 // Exports: fetchBasicGuild
 
-// Module 20819 (BasicGuildActionCreators)
+// Module 20822 (BasicGuildActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;

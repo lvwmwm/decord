@@ -1,7 +1,7 @@
 // Module ID: 13538
 // Function ID: 13539
 // Name: PollCreation
-// Dependencies: [19, 17, 9011, 21, 5306, 575, 1380, 6274, 1113, 7619, 1187, 13539, 5929, 13540, 5552, 13541, 2121, 7443, 5501, 6338, 1264, 5913, 13537, 6015, 11638, 5315, 13542, 13547, 7499, 8861, 6270, 13548, 7427, 7550, 13549, 9048, 9032, 13551, 8106, 13553, 7733, 2]
+// Dependencies: [19, 17, 9011, 21, 5306, 575, 1380, 6264, 1113, 7619, 1187, 13539, 5919, 13540, 5542, 13541, 2121, 7443, 5491, 6328, 1264, 5903, 13537, 6005, 11638, 5315, 13542, 13547, 7499, 8861, 6260, 13548, 7427, 7550, 13549, 9048, 9032, 13551, 8106, 13553, 7733, 2]
 // Exports: default
 
 // Module 13538 (PollCreation)
@@ -10,12 +10,12 @@ import intl7 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5315 */;
-import ChatInputUtils from "ChatInputUtils" /* 5501 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 6015 */;
-import useAlertStore from "useAlertStore" /* 6270 */;
-import AlertModal2 from "AlertModal" /* 6274 */;
+import ChatInputUtils from "ChatInputUtils" /* 5491 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
+import useAlertStore from "useAlertStore" /* 6260 */;
+import AlertModal2 from "AlertModal" /* 6264 */;
 import TextInput_TextInput from "TextInput/TextInput" /* 7619 */;
 import PollsUtils from "PollsUtils" /* 8861 */;
 import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 9048 */;
@@ -138,7 +138,7 @@ function PollDurationSelectionRow(selectedDuration) {
       const obj3 = { selectedDuration, onChange };
       obj2.openLazy(asyncRequire(13541, dependencyMap.paths), metroImportAll, obj3);
     },
-    trailing: closure_9(selectedDuration(5929).Text, { variant: "body-md/normal", color: "text-muted", children: tmp }),
+    trailing: closure_9(selectedDuration(5919).Text, { variant: "body-md/normal", color: "text-muted", children: tmp }),
     arrow: true
   };
   const TableRow = selectedDuration(7443).TableRow;
@@ -240,7 +240,7 @@ export default function PollCreation(channel) {
   let tmp2 = dependencyMap;
   let obj = { type: channel(1264).ImpressionTypes.VIEW, name: channel(1264).ImpressionNames.POLL_EDITOR_VIEWED };
   let tmp4 = channel;
-  const tmp3 = onCancel(6338);
+  const tmp3 = onCancel(6328);
   tmp3(obj);
   const items = [onCancel];
   const effect = answers.useEffect(() => {
@@ -254,7 +254,7 @@ export default function PollCreation(channel) {
     };
   }, items);
   const tmp7 = c12();
-  const insets = onCancel(5913)({ includeKeyboardHeight: true }).insets;
+  const insets = onCancel(5903)({ includeKeyboardHeight: true }).insets;
   dependencyMap = answers.useRef(false);
   const callback = answers.useCallback((arg0) => {
     let intl;
@@ -357,7 +357,7 @@ export default function PollCreation(channel) {
   intl = channel(1113).intl;
   items3 = [c9(HeaderActionButton, obj8), , , ];
   const obj9 = { accessibilityRole: "header", variant: "heading-md/semibold", color: "mobile-text-heading-primary", style: tmp7.title, children: intl2.string(channel(1113).t.Flr51u) };
-  const Text = channel(5929).Text;
+  const Text = channel(5919).Text;
   intl2 = channel(1113).intl;
   items3[1] = c9(Text, obj9);
   const obj10 = {

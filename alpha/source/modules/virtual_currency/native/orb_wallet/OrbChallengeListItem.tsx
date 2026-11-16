@@ -1,7 +1,7 @@
 // Module ID: 17534
 // Function ID: 17535
 // Name: OrbChallengeListItem
-// Dependencies: [5, 32, 19, 17, 21, 5306, 575, 16243, 1113, 2333, 15258, 10158, 5936, 7963, 5929, 9442, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5306, 575, 16243, 1113, 2333, 15258, 10158, 5926, 7963, 5919, 9442, 2]
 // Exports: OrbChallengeListItem
 
 // Module 17534 (OrbChallengeListItem)
@@ -182,7 +182,7 @@ export function OrbChallengeListItem(achievementIdentifier) {
       return tmp6;
     }
     const obj2 = { variant: "primary", size: "sm", text: intl.string(_modDef2333.WmfVjs), loading, onPress: tmp2 };
-    const Button = tmp4(5936).Button;
+    const Button = tmp4(5926).Button;
     intl = tmp4(1113).intl;
     tmp6 = metroImportAll(Button, obj2);
   }, items1);

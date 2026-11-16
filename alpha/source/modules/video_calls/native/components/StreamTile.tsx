@@ -1,16 +1,16 @@
 // Module ID: 12787
 // Function ID: 12788
 // Name: StreamTile
-// Dependencies: [19, 17, 6820, 502, 1072, 6075, 21, 5306, 575, 5303, 5929, 1187, 504, 12788, 12790, 1113, 6351, 12795, 12805, 12797, 12785, 5598, 7428, 12807, 2]
+// Dependencies: [19, 17, 6810, 502, 1072, 6065, 21, 5306, 575, 5303, 5919, 1187, 504, 12788, 12790, 1113, 6341, 12795, 12805, 12797, 12785, 5588, 7428, 12807, 2]
 // Exports: default
 
 // Module 12787 (StreamTile)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5598 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import Constants2 from "Constants" /* 6075 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6351 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5588 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import Constants2 from "Constants" /* 6065 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6341 */;
 import Pressables from "Pressables" /* 7428 */;
 import useParticipantTileTapGestureDefault from "useParticipantTileTapGesture" /* 12785 */;
 import useVideoStreamErrorDefault from "useVideoStreamError" /* 12788 */;
@@ -20,7 +20,7 @@ import StreamQualityLiveIndicatorDefault from "StreamQualityLiveIndicator" /* 12
 import AssetRegistryDefault from "AssetRegistry" /* 12807 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6820 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6810 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;

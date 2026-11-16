@@ -1,11 +1,11 @@
 // Module ID: 17542
 // Function ID: 17543
 // Name: BountiesModalActionCreators
-// Dependencies: [6848, 17543, 2121, 2]
+// Dependencies: [6838, 17543, 2121, 2]
 
 // Module 17542 (BountiesModalActionCreators)
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import size from "module_2" /* 2 */;
 
 const BOUNTIES_MODAL = "BOUNTIES_MODAL";

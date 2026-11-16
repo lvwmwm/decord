@@ -1,23 +1,23 @@
-// Module ID: 18742
-// Function ID: 18743
+// Module ID: 18744
+// Function ID: 18745
 // Name: useHomeDrawerGesture
-// Dependencies: [32, 19, 18736, 18743, 1072, 12010, 12402, 5498, 1655, 1503, 1256, 5548, 1708, 5554, 1496, 1630, 5495, 12403, 18744, 5492, 5550, 18737, 5598, 7848, 2]
+// Dependencies: [32, 19, 18738, 18745, 1072, 12010, 12402, 5488, 1655, 1503, 1256, 5538, 1708, 5544, 1496, 1630, 5485, 12403, 18746, 5482, 5540, 18739, 5588, 7848, 2]
 // Exports: useDoesLandOnHomeDrawer, useHomeDrawerState, useHomeGesture, useIsHomeDrawerEnabled
 
-// Module 18742 (useHomeDrawerGesture)
+// Module 18744 (useHomeDrawerGesture)
 import Constants from "Constants" /* 1072 */;
 import _mod1655 from "module_1655" /* 1655 */;
 import _mod1708 from "module_1708" /* 1708 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5492 */;
-import timing_timing from "timing/timing" /* 5548 */;
-import HapticUtils from "HapticUtils" /* 5554 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5598 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5482 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import HapticUtils from "HapticUtils" /* 5544 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5588 */;
 import LaunchPadConstants from "LaunchPadConstants" /* 12402 */;
-import HomeDrawerStore2 from "HomeDrawerStore" /* 18736 */;
-import HomeDrawerAnimations from "HomeDrawerAnimations" /* 18737 */;
+import HomeDrawerStore2 from "HomeDrawerStore" /* 18738 */;
+import HomeDrawerAnimations from "HomeDrawerAnimations" /* 18739 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import HomeDrawerSubtitleStore from "HomeDrawerSubtitleStore" /* 18743 */;
+import HomeDrawerSubtitleStore from "HomeDrawerSubtitleStore" /* 18745 */;
 import GestureConstants from "GestureConstants" /* 12010 */;
 import "ReanimatedHelperTypes";
 import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 7848 */;
@@ -717,7 +717,7 @@ export function useHomeGesture() {
     shouldOpenFromPosition.__closure = items9;
     shouldOpenFromPosition.__workletHash = 345325928396;
     shouldOpenFromPosition.__initData = tmp47;
-    const Gesture = tmp8(5598).Gesture;
+    const Gesture = tmp8(5588).Gesture;
     const PanResult = Gesture.Pan();
     const enabledResult = PanResult.enabled(closure_24);
     const manualActivationResult = enabledResult.manualActivation(true);

@@ -1,16 +1,16 @@
-// Module ID: 20430
-// Function ID: 20431
+// Module ID: 20433
+// Function ID: 20434
 // Name: GuildSettingsModalLanding
-// Dependencies: [19, 5236, 5177, 5238, 1388, 18862, 8405, 1072, 21, 6067, 5306, 7443, 1113, 6037, 5243, 20431, 19679, 8408, 9521, 20433, 6029, 15572, 7746, 10409, 10737, 12676, 7436, 8173, 20434, 12682, 6929, 13991, 18223, 11354, 5902, 575, 1502, 504, 8404, 20436, 7275, 7285, 6014, 8106, 6337, 19717, 1414, 20437, 5912, 2]
+// Dependencies: [19, 5236, 5177, 5238, 1388, 18864, 8405, 1072, 21, 6057, 5306, 7443, 1113, 6027, 5243, 20434, 19681, 8408, 9521, 20436, 6019, 15572, 7746, 10409, 10737, 12676, 7436, 8173, 20437, 12682, 6919, 13991, 18225, 11354, 5892, 575, 1502, 504, 8404, 20439, 7275, 7285, 6004, 8106, 6327, 19719, 1414, 20440, 5902, 2]
 // Exports: default
 
-// Module 20430 (GuildSettingsModalLanding)
+// Module 20433 (GuildSettingsModalLanding)
 import intl8 from "intl" /* 1113 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
 import PermissionUtilsAll from "PermissionUtils" /* 5243 */;
-import ToastUtils from "ToastUtils" /* 6014 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6067 */;
-import ClipboardListIcon from "ClipboardListIcon" /* 6929 */;
+import ToastUtils from "ToastUtils" /* 6004 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6057 */;
+import ClipboardListIcon from "ClipboardListIcon" /* 6919 */;
 import TableRow7 from "TableRow" /* 7443 */;
 import TableRowGroup2 from "TableRowGroup" /* 7746 */;
 import ShieldUserIcon from "ShieldUserIcon" /* 8173 */;
@@ -18,13 +18,13 @@ import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 
 import RobotIcon from "RobotIcon" /* 12682 */;
 import HammerIcon from "HammerIcon" /* 13991 */;
 import AssetRegistryDefault from "AssetRegistry" /* 15572 */;
-import ModerationIcon from "ModerationIcon" /* 20434 */;
+import ModerationIcon from "ModerationIcon" /* 20437 */;
 import react from "react" /* 19 */;
 import GuildChannelStore from "GuildChannelStore" /* 5236 */;
 import GuildStore from "GuildStore" /* 5177 */;
 import PermissionStore from "PermissionStore" /* 5238 */;
 import UserStore from "UserStore" /* 1388 */;
-import GuildSettingsModalChannelsStore from "GuildSettingsModalChannelsStore" /* 18862 */;
+import GuildSettingsModalChannelsStore from "GuildSettingsModalChannelsStore" /* 18864 */;
 import GuildSettingsStore from "GuildSettingsStore" /* 8405 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
@@ -80,7 +80,7 @@ function SettingsSection(guild) {
   };
   const TableRow = guild(7443).TableRow;
   intl = guild(1113).intl;
-  obj2 = { IconComponent: guild(6037).CircleInformationIcon };
+  obj2 = { IconComponent: guild(6027).CircleInformationIcon };
   Icon = guild(7443).TableRow.Icon;
   const items = [closure_15(TableRow, obj, "overview")];
   const currentUser = UserStore.getCurrentUser();
@@ -104,7 +104,7 @@ function SettingsSection(guild) {
     };
     const TableRow2 = tmp2(7443).TableRow;
     intl2 = tmp2(1113).intl;
-    obj5 = { IconComponent: guild(20431).ChannelListIcon };
+    obj5 = { IconComponent: guild(20434).ChannelListIcon };
     Icon2 = tmp2(7443).TableRow.Icon;
     items.push(closure_15(TableRow2, obj4, "channels"));
   }
@@ -120,7 +120,7 @@ function SettingsSection(guild) {
     };
     const TableRow3 = tmp2(7443).TableRow;
     intl3 = tmp2(1113).intl;
-    obj7 = { IconComponent: guild(19679).PuzzlePieceIcon };
+    obj7 = { IconComponent: guild(19681).PuzzlePieceIcon };
     Icon3 = tmp2(7443).TableRow.Icon;
     items.push(closure_15(TableRow3, obj6, "integrations"));
   }
@@ -141,7 +141,7 @@ function SettingsSection(guild) {
     items.push(closure_15(TableRow4, obj8, "server-tag"));
   }
   if (isGuildAdmin) {
-    const tmp2Result2 = guild(20433);
+    const tmp2Result2 = guild(20436);
     isGuildAdmin = tmp2Result2.canSeeVanityUrlSettings(guild);
   }
   if (isGuildAdmin) {
@@ -155,7 +155,7 @@ function SettingsSection(guild) {
     };
     const TableRow5 = tmp2(7443).TableRow;
     intl5 = tmp2(1113).intl;
-    obj11 = { IconComponent: guild(6029).LinkIcon };
+    obj11 = { IconComponent: guild(6019).LinkIcon };
     Icon5 = tmp2(7443).TableRow.Icon;
     items.push(closure_15(TableRow5, obj10, "vanity"));
   }
@@ -303,7 +303,7 @@ function PeopleSection(pushScreen) {
     };
     const TableRow3 = tmp2(7443).TableRow;
     intl3 = tmp2(1113).intl;
-    obj6 = { IconComponent: pushScreen(6029).LinkIcon };
+    obj6 = { IconComponent: pushScreen(6019).LinkIcon };
     Icon3 = tmp2(7443).TableRow.Icon;
     items.push(closure_15(TableRow3, obj5, "invites"));
   }
@@ -440,7 +440,7 @@ function CommunitySection(pushScreen) {
     const t = pushScreen(1113).t;
     if (hasItem) {
       obj.label = string(t.nRtNqn);
-      const obj2 = { IconComponent: pushScreen(18223).TreehouseIcon };
+      const obj2 = { IconComponent: pushScreen(18225).TreehouseIcon };
       const Icon2 = tmp3(7443).TableRow.Icon;
       obj.icon = closure_15(Icon2, obj2);
       obj.onPress = function onPress() {
@@ -449,7 +449,7 @@ function CommunitySection(pushScreen) {
       tmp2Result = tmp2(TableRow, obj, "community-overview");
     } else {
       obj.label = string(t.ElKTeb);
-      const obj3 = { IconComponent: pushScreen(18223).TreehouseIcon };
+      const obj3 = { IconComponent: pushScreen(18225).TreehouseIcon };
       const Icon = tmp3(7443).TableRow.Icon;
       obj.icon = closure_15(Icon, obj3);
       obj.onPress = function onPress() {
@@ -505,7 +505,7 @@ function GuildSettingsModalLandingInner(guild) {
   const updateErrors = guild.updateErrors;
   const tmp = guild;
   const contentContainerStyle = guild.contentContainerStyle;
-  let obj = guild(5902);
+  let obj = guild(5892);
   const tmp3 = updateErrors;
   const token = obj.useToken(updateErrors(575).modules.mobile.TABLE_ROW_PADDING);
   const tmp5 = closure_18();
@@ -558,7 +558,7 @@ function GuildSettingsModalLandingInner(guild) {
     }
   }, items2);
   ({ canManageGuild, isGuildAdmin, canManageRoles, canManageBans, canManageGuildExpressions, canManageChannels, canViewAuditLog, canManageWebhooks, canViewGuildAnalytics } = stateFromStoresObject);
-  const obj6 = guild(20436);
+  const obj6 = guild(20439);
   const tmp11 = obj6.useChannelsAllowedToUnlink(guild.id).length > 0;
   const obj7 = guild(7275);
   const canManageGuildRoleSubscriptions = obj7.useCanManageGuildRoleSubscriptions(guild);
@@ -579,7 +579,7 @@ function GuildSettingsModalLandingInner(guild) {
   items4 = [tmp5.containerContent, contentContainerStyle];
   const Form = tmp(8106).Form;
   obj9 = { style: { paddingHorizontal: token }, spacing: tmp3(575).space.PX_24, children: items5 };
-  Stack = tmp(6337).Stack;
+  Stack = tmp(6327).Stack;
   items5 = [, , , , , , ];
   const obj10 = {
     iconProps: {
@@ -604,7 +604,7 @@ function GuildSettingsModalLandingInner(guild) {
     text: guild.name,
     textAccessibilityRole: "header"
   };
-  items5[0] = closure_15(tmp3(19717), obj10);
+  items5[0] = closure_15(tmp3(19719), obj10);
   items5[1] = closure_15(SettingsSection, { guild, categories: stateFromStores, isGuildAdmin, canManageGuild, canManageChannels, canUnlinkChannelLobbies: tmp11, canManageWebhooks, pushScreen: callback });
   items5[2] = closure_15(ExpressionSection, { canManageGuildExpressions, canConfigureOfficialMessages: result, pushScreen: callback });
   items5[3] = closure_15(PeopleSection, { canManageGuild, canManageRoles, pushScreen: callback });
@@ -614,11 +614,11 @@ function GuildSettingsModalLandingInner(guild) {
   const tmp16 = closure_17;
   if (tmp17Result) {
     const obj11 = { guild, pushScreen: callback };
-    tmp17Result = tmp17(tmp3(20437), obj11);
+    tmp17Result = tmp17(tmp3(20440), obj11);
   }
   const obj12 = { children: items6 };
   items5[6] = tmp17Result;
-  items6 = [tmp17(Form, obj8), tmp17(tmp(5912).NavScrim, {})];
+  items6 = [tmp17(Form, obj8), tmp17(tmp(5902).NavScrim, {})];
   return closure_16(tmp16, obj12);
 }
 ({ GuildFeatures: unpackModuleId, GuildSettingsSections: closure_12, ChannelTypes: map1, AnalyticEvents: closure_14 } = Constants);

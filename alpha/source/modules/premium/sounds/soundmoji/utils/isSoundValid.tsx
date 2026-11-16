@@ -1,13 +1,13 @@
 // Module ID: 15994
 // Function ID: 15995
 // Name: isSoundValid
-// Dependencies: [5155, 5238, 1388, 6371, 1083, 2174, 2]
+// Dependencies: [5155, 5238, 1388, 6361, 1083, 2174, 2]
 // Exports: default
 
 // Module 15994 (isSoundValid)
 import Constants from "Constants" /* 1083 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
-import SoundboardConstants from "SoundboardConstants" /* 6371 */;
+import SoundboardConstants from "SoundboardConstants" /* 6361 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import PermissionStore from "PermissionStore" /* 5238 */;
 import UserStore from "UserStore" /* 1388 */;

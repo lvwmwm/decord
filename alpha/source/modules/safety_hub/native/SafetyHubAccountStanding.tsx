@@ -1,14 +1,14 @@
 // Module ID: 17271
 // Function ID: 17272
 // Name: SafetyHubAccountStanding
-// Dependencies: [32, 19, 17, 1388, 8231, 8206, 21, 8207, 17272, 5306, 575, 1113, 17264, 7930, 7623, 12834, 7629, 7648, 504, 1414, 9501, 1187, 5929, 2]
+// Dependencies: [32, 19, 17, 1388, 8231, 8206, 21, 8207, 17272, 5306, 575, 1113, 17264, 7930, 7623, 12834, 7629, 7648, 504, 1414, 9501, 1187, 5919, 2]
 // Exports: default
 
 // Module 17271 (SafetyHubAccountStanding)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import CircleErrorIcon from "CircleErrorIcon" /* 7623 */;
 import CircleXIcon from "CircleXIcon" /* 7629 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7648 */;
@@ -197,7 +197,7 @@ export default function SafetyHubAccountStanding() {
   let obj6 = { style: tmp4.body, children: items5 };
   let obj7 = { style: tmp4.bodyText, children: items4 };
   const obj8 = { variant: "heading-lg/medium", color: "text-default", style: { textAlign: "center" }, children: intl.format(title, obj9) };
-  const Text = tmp7(5929).Text;
+  const Text = tmp7(5919).Text;
   intl = tmp7(1113).intl;
   obj9 = {
     hook(children, arg1) {
@@ -205,7 +205,7 @@ export default function SafetyHubAccountStanding() {
       return React4(Text_Text.Text, obj, arg1);
     }
   };
-  items4 = [closure_9(Text, obj8), closure_9(accountStanding(5929).Text, { variant: "body-sm/medium", color: "text-muted", style: { textAlign: "center" }, children: description })];
+  items4 = [closure_9(Text, obj8), closure_9(accountStanding(5919).Text, { variant: "body-sm/medium", color: "text-muted", style: { textAlign: "center" }, children: description })];
   items5 = [closure_10(style, obj7), ];
   const obj10 = { style: items6, children: items7 };
   items6 = [tmp4.health, { height }];

@@ -1,7 +1,7 @@
 // Module ID: 14655
 // Function ID: 14656
 // Name: PremiumAnimatedGiftButton
-// Dependencies: [19, 5307, 21, 5306, 575, 5902, 504, 1380, 1655, 7428, 5923, 2]
+// Dependencies: [19, 5307, 21, 5306, 575, 5892, 504, 1380, 1655, 7428, 5913, 2]
 // Exports: PremiumAnimatedGiftButton
 
 // Module 14655 (PremiumAnimatedGiftButton)
@@ -93,7 +93,7 @@ export function PremiumAnimatedGiftButton(arg0) {
   if (active) {
     active = activeStyle;
   }
-  ({ style: items2, hitSlop: tmp14, accessibilityRole: "button", accessibilityState: obj7, children: jsx(tmp3(5923), obj8) });
+  ({ style: items2, hitSlop: tmp14, accessibilityRole: "button", accessibilityState: obj7, children: jsx(tmp3(5913), obj8) });
   items2[2] = active;
   tmp14 = undefined;
   if (bound > 0) {

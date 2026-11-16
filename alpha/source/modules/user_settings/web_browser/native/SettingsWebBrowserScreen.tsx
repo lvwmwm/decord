@@ -1,9 +1,9 @@
-// Module ID: 18101
-// Function ID: 18102
+// Module ID: 18103
+// Function ID: 18104
 // Name: SettingsWebBrowserScreen
 // Dependencies: [19, 9202, 21, 12406, 17213, 2]
 
-// Module 18101 (SettingsWebBrowserScreen)
+// Module 18103 (SettingsWebBrowserScreen)
 import Fragment from "Fragment" /* 21 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;
 import SettingBuilders from "SettingBuilders" /* 12406 */;

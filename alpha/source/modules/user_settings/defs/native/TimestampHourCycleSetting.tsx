@@ -1,13 +1,13 @@
-// Module ID: 18096
-// Function ID: 18097
+// Module ID: 18098
+// Function ID: 18099
 // Name: TimestampHourCycleSetting
-// Dependencies: [19, 9202, 5131, 1113, 1196, 12406, 6004, 2]
+// Dependencies: [19, 9202, 5131, 1113, 1196, 12406, 5994, 2]
 
-// Module 18096 (TimestampHourCycleSetting)
+// Module 18098 (TimestampHourCycleSetting)
 import intl4 from "intl" /* 1113 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
 import UserSettings from "UserSettings" /* 5131 */;
-import SystemDateFormatter from "SystemDateFormatter" /* 6004 */;
+import SystemDateFormatter from "SystemDateFormatter" /* 5994 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;
 import react from "react" /* 19 */;
 import SettingBuilders from "SettingBuilders" /* 12406 */;

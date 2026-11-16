@@ -1,7 +1,7 @@
 // Module ID: 10653
 // Function ID: 10654
 // Name: GameActivityIcon
-// Dependencies: [19, 17, 21, 5306, 575, 5377, 8375, 5313, 6020, 1414, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 5367, 8375, 5313, 6010, 1414, 2]
 
 // Module 10653 (GameActivityIcon)
 import react_native from "react-native" /* 17 */;
@@ -9,8 +9,8 @@ import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import AvatarUtils from "AvatarUtils" /* 1414 */;
 import shared from "shared" /* 5313 */;
-import native from "native" /* 5377 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import native from "native" /* 5367 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;

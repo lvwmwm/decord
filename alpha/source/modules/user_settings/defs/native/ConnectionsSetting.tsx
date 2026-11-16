@@ -1,12 +1,12 @@
 // Module ID: 17499
 // Function ID: 17500
 // Name: ConnectionsSetting
-// Dependencies: [1072, 12406, 1113, 6029, 17472, 2]
+// Dependencies: [1072, 12406, 1113, 6019, 17472, 2]
 
 // Module 17499 (ConnectionsSetting)
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
-import LinkIcon from "LinkIcon" /* 6029 */;
+import LinkIcon from "LinkIcon" /* 6019 */;
 import SettingBuilders from "SettingBuilders" /* 12406 */;
 import size from "module_2" /* 2 */;
 

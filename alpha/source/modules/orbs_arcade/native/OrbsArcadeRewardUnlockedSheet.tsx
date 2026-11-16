@@ -1,7 +1,7 @@
 // Module ID: 17678
 // Function ID: 17679
 // Name: OrbsArcadeRewardUnlockedSheet
-// Dependencies: [19, 17, 17647, 21, 5306, 575, 504, 17654, 17648, 10713, 17679, 1113, 6337, 17660, 17667, 17657, 2]
+// Dependencies: [19, 17, 17647, 21, 5306, 575, 504, 17654, 17648, 10713, 17679, 1113, 6327, 17660, 17667, 17657, 2]
 // Exports: default
 
 // Module 17678 (OrbsArcadeRewardUnlockedSheet)

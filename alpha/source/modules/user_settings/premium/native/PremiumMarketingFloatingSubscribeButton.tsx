@@ -1,7 +1,7 @@
 // Module ID: 15369
 // Function ID: 15370
 // Name: PremiumMarketingFloatingSubscribeButton
-// Dependencies: [19, 17, 5307, 1072, 21, 5306, 575, 1630, 504, 15367, 7937, 671, 1655, 5548, 5893, 10074, 2]
+// Dependencies: [19, 17, 5307, 1072, 21, 5306, 575, 1630, 504, 15367, 7937, 671, 1655, 5538, 5883, 10074, 2]
 // Exports: default
 
 // Module 15369 (PremiumMarketingFloatingSubscribeButton)
@@ -72,7 +72,7 @@ export default function PremiumMarketingFloatingSubscribeButton(style) {
   const items2 = [closure_10, , , , , ];
   const useAnimatedStyle = backgroundColor(1655).useAnimatedStyle;
   backgroundColor(1655);
-  items2[1] = backgroundColor(5548).withTiming;
+  items2[1] = backgroundColor(5538).withTiming;
   items2[2] = isVisible;
   items2[3] = stateFromStores;
   items2[4] = 150;
@@ -143,7 +143,7 @@ export default function PremiumMarketingFloatingSubscribeButton(style) {
   items6 = [tmp.container, animatedStyle];
   View = tmp2(1655).View;
   const obj3 = { pointerEvents: "none", style: tmp.gradient, colors: memo, locations: [0, 0.75, 1], start: VerticalGradient.START, end: VerticalGradient.END };
-  items7 = [closure_7(tmp2(5893), obj3), ];
+  items7 = [closure_7(tmp2(5883), obj3), ];
   const obj4 = { style: items8, children: closure_7(NitroUpsellButtonDefault, { onPress: openPayment, text: buttonText }) };
   items8 = [tmp.buttonContainer, { paddingBottom: Math.max(bottom, tmp2(575).space.PX_16) }, style];
   ({ paddingBottom: Math.max(bottom, nativeDefault.space.PX_16) });

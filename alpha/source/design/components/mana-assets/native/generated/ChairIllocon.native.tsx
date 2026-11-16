@@ -1,12 +1,12 @@
 // Module ID: 15058
 // Function ID: 15059
 // Name: ChairIllocon
-// Dependencies: [19, 21, 15059, 15060, 15061, 7755, 6020, 2]
+// Dependencies: [19, 21, 15059, 15060, 15061, 7755, 6010, 2]
 // Exports: ChairIllocon
 
 // Module 15058 (ChairIllocon)
 import Fragment from "Fragment" /* 21 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import react_native from "react-native" /* 7755 */;
 import _modDef15059 from "module_15059" /* 15059 */;
 import _modDef15060 from "module_15060" /* 15060 */;

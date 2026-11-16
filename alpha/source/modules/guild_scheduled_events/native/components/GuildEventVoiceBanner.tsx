@@ -1,12 +1,12 @@
 // Module ID: 16087
 // Function ID: 16088
 // Name: GuildEventVoiceBanner
-// Dependencies: [19, 17, 5209, 7029, 21, 5306, 575, 8426, 504, 8030, 7972, 5552, 7989, 6900, 7965, 7428, 7984, 5936, 1113, 2]
+// Dependencies: [19, 17, 5209, 7029, 21, 5306, 575, 8426, 504, 8030, 7972, 5542, 7989, 6890, 7965, 7428, 7984, 5926, 1113, 2]
 
 // Module 16087 (GuildEventVoiceBanner)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7029 */;
 import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 7965 */;
 import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 7989 */;

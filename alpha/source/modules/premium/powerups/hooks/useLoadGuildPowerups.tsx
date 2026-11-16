@@ -1,7 +1,7 @@
 // Module ID: 10681
 // Function ID: 10682
 // Name: useLoadGuildPowerups
-// Dependencies: [19, 5542, 10682, 10688, 2]
+// Dependencies: [19, 5532, 10682, 10688, 2]
 // Exports: default
 
 // Module 10681 (useLoadGuildPowerups)

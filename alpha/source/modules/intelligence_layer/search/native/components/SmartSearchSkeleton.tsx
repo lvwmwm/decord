@@ -1,13 +1,13 @@
-// Module ID: 19515
-// Function ID: 19516
+// Module ID: 19517
+// Function ID: 19518
 // Name: SmartSearchSkeleton
-// Dependencies: [19, 17, 13350, 21, 4354, 5306, 575, 5320, 1113, 13349, 13765, 19503, 2]
+// Dependencies: [19, 17, 13350, 21, 4354, 5306, 575, 5320, 1113, 13349, 13765, 19505, 2]
 
-// Module 19515 (SmartSearchSkeleton)
+// Module 19517 (SmartSearchSkeleton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef4354 from "module_4354" /* 4354 */;
-import FormRowPlaceholderDefault from "FormRowPlaceholder" /* 19503 */;
+import FormRowPlaceholderDefault from "FormRowPlaceholder" /* 19505 */;
 import react from "react" /* 19 */;
 import AILoaderConstants from "AILoaderConstants" /* 13350 */;
 import Fragment from "Fragment" /* 21 */;

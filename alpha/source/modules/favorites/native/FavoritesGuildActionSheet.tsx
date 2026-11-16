@@ -1,16 +1,16 @@
-// Module ID: 18855
-// Function ID: 18856
+// Module ID: 18857
+// Function ID: 18858
 // Name: FavoritesGuildActionSheet
-// Dependencies: [19, 5158, 21, 18856, 18857, 504, 7951, 7913, 1113, 7953, 3679, 8071, 6848, 18858, 2121, 12100, 18860, 7633, 6040, 2]
+// Dependencies: [19, 5158, 21, 18858, 18859, 504, 7951, 7913, 1113, 7953, 3679, 8071, 6838, 18860, 2121, 12100, 18862, 7633, 6030, 2]
 // Exports: default
 
-// Module 18855 (FavoritesGuildActionSheet)
+// Module 18857 (FavoritesGuildActionSheet)
 import asyncRequire from "asyncRequire" /* 2121 */;
 import _modDef3679 from "module_3679" /* 3679 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
-import useFavoritesGuildHideActionDefault from "useFavoritesGuildHideAction" /* 18856 */;
-import useFavoritesGuildResetActionDefault from "useFavoritesGuildResetAction" /* 18857 */;
-import openFavoritesGuildChannelSortModalDefault from "openFavoritesGuildChannelSortModal" /* 18860 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
+import useFavoritesGuildHideActionDefault from "useFavoritesGuildHideAction" /* 18858 */;
+import useFavoritesGuildResetActionDefault from "useFavoritesGuildResetAction" /* 18859 */;
+import openFavoritesGuildChannelSortModalDefault from "openFavoritesGuildChannelSortModal" /* 18862 */;
 import react from "react" /* 19 */;
 import FavoriteStore from "FavoriteStore" /* 5158 */;
 import Fragment from "Fragment" /* 21 */;
@@ -65,7 +65,7 @@ export default function FavoritesGuildActionSheet(onClose) {
     onPress() {
       onClose();
       const obj = ModalActionCreatorsDefault;
-      obj.pushLazy(asyncRequire(18858, dependencyMap.paths), undefined, "FavoritesGuildCleanupModal");
+      obj.pushLazy(asyncRequire(18860, dependencyMap.paths), undefined, "FavoritesGuildCleanupModal");
     }
   };
   ActionSheetRow = onClose(7953).ActionSheetRow;
@@ -121,7 +121,7 @@ export default function FavoritesGuildActionSheet(onClose) {
         }
     };
     const ActionSheetRow4 = tmp4(7953).ActionSheetRow;
-    obj25 = { IconComponent: onClose(6040).TrashIcon };
+    obj25 = { IconComponent: onClose(6030).TrashIcon };
     Icon4 = tmp4(7953).ActionSheetRow.Icon;
     tmp7Result2 = tmp7(ActionSheetRow4, obj13);
   }

@@ -1,7 +1,7 @@
 // Module ID: 8590
 // Function ID: 8591
 // Name: useProfileTheme
-// Dependencies: [32, 5307, 8591, 1072, 5547, 504, 574, 8538, 1090, 8592, 5313, 2]
+// Dependencies: [32, 5307, 8591, 1072, 5537, 504, 574, 8538, 1090, 8592, 5313, 2]
 // Exports: default
 
 // Module 8590 (useProfileTheme)
@@ -10,7 +10,7 @@ import shims from "shims" /* 574 */;
 import Constants from "Constants" /* 1072 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
 import shared from "shared" /* 5313 */;
-import useThemeDefault from "useTheme" /* 5547 */;
+import useThemeDefault from "useTheme" /* 5537 */;
 import useAvatarColor from "useAvatarColor" /* 8538 */;
 import useProfileThemeOverrideStore from "useProfileThemeOverrideStore" /* 8591 */;
 import UserProfileGradientUtils from "UserProfileGradientUtils" /* 8592 */;

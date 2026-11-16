@@ -1,13 +1,13 @@
 // Module ID: 15376
 // Function ID: 15377
 // Name: SubscriptionPlaceholderPattern
-// Dependencies: [19, 21, 8183, 15377, 15378, 15379, 5313, 6020, 2]
+// Dependencies: [19, 21, 8183, 15377, 15378, 15379, 5313, 6010, 2]
 // Exports: SubscriptionPlaceholderPattern, getSubscriptionPlaceholderPatternSource, useSubscriptionPlaceholderPatternSource
 
 // Module 15376 (SubscriptionPlaceholderPattern)
 import Fragment from "Fragment" /* 21 */;
 import shared from "shared" /* 5313 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import _mod8183 from "module_8183" /* 8183 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

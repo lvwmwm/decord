@@ -1,7 +1,7 @@
 // Module ID: 13342
 // Function ID: 13343
 // Name: ConjureModeTabBar
-// Dependencies: [19, 17, 21, 5306, 575, 5902, 1655, 5939, 1380, 11253, 1113, 5929, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 5892, 1655, 5929, 1380, 11253, 1113, 5919, 2]
 // Exports: default
 
 // Module 13342 (ConjureModeTabBar)
@@ -26,8 +26,8 @@ let tmp2;
 const intl2 = tmp2(1113);
 const PlatformUtils = tmp2(1380);
 const _mod1655 = tmp2(1655);
-const Text_Text = tmp2(5929);
-const spring_spring = tmp2(5939);
+const Text_Text = tmp2(5919);
+const spring_spring = tmp2(5929);
 function ConjureModeTab(index) {
   let activeIndex;
   let closure_129_2;

@@ -1,26 +1,26 @@
-// Module ID: 5947
-// Function ID: 5948
+// Module ID: 5937
+// Function ID: 5938
 // Name: ButtonPill
-// Dependencies: [32, 19, 17, 21, 5942, 5306, 575, 5943, 5377, 5902, 5948, 5893, 1655, 5313, 5949, 5320, 5939, 5940, 2]
+// Dependencies: [32, 19, 17, 21, 5932, 5306, 575, 5933, 5367, 5892, 5938, 5883, 1655, 5313, 5939, 5320, 5929, 5930, 2]
 // Exports: ButtonPill
 
-// Module 5947 (ButtonPill)
+// Module 5937 (ButtonPill)
 import nativeDefault from "native" /* 575 */;
 import _mod1655 from "module_1655" /* 1655 */;
 import shared from "shared" /* 5313 */;
 import react2 from "react" /* 5320 */;
-import native from "native" /* 5377 */;
-import LinearGradientDefault from "LinearGradient" /* 5893 */;
-import useToken from "useToken" /* 5902 */;
-import spring_spring from "spring/spring" /* 5939 */;
-import springPresets from "springPresets" /* 5940 */;
-import ButtonHooks from "ButtonHooks" /* 5943 */;
-import ButtonEllipsis from "ButtonEllipsis" /* 5949 */;
+import native from "native" /* 5367 */;
+import LinearGradientDefault from "LinearGradient" /* 5883 */;
+import useToken from "useToken" /* 5892 */;
+import spring_spring from "spring/spring" /* 5929 */;
+import springPresets from "springPresets" /* 5930 */;
+import ButtonHooks from "ButtonHooks" /* 5933 */;
+import ButtonEllipsis from "ButtonEllipsis" /* 5939 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ButtonConstants_mod from "ButtonConstants" /* 5942 */;
+import ButtonConstants_mod from "ButtonConstants" /* 5932 */;
 import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
@@ -75,7 +75,7 @@ function PillWrapper(pressed) {
   let tmp7 = null;
   if (shiny) {
     const obj7 = { variant };
-    tmp7 = metroImportDefault(tmp(5948).ButtonShine, obj7);
+    tmp7 = metroImportDefault(tmp(5938).ButtonShine, obj7);
   }
   if ("experimental_premium-primary" !== variant) {
     let obj11;
@@ -85,7 +85,7 @@ function PillWrapper(pressed) {
         const obj8 = { style: items2, children: metroImportDefault(ExpressiveButtonRive, obj9) };
         items2 = [metroRequire.absoluteFill, tmp5.expressivePill];
         obj9 = { withReducedMotion: "short-loop", ref: expressiveRiveRef, fit: "layout", artboard: str, dataBinding: obj10 };
-        ExpressiveButtonRive = tmp(5377).ExpressiveButtonRive;
+        ExpressiveButtonRive = tmp(5367).ExpressiveButtonRive;
         str = "Mobile Expressive Button Dark Mode";
         const tmp12 = hasOwnProperty;
         const tmpResult = shared;

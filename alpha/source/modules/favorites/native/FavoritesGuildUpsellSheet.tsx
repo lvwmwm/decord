@@ -1,7 +1,7 @@
 // Module ID: 10948
 // Function ID: 10949
 // Name: FavoritesGuildUpsellSheet
-// Dependencies: [19, 5168, 1072, 21, 10946, 10949, 5552, 10947, 10713, 1113, 3679, 10950, 6951, 5936, 9579, 10954, 10971, 1099, 2]
+// Dependencies: [19, 5168, 1072, 21, 10946, 10949, 5542, 10947, 10713, 1113, 3679, 10950, 6941, 5926, 9579, 10954, 10971, 1099, 2]
 // Exports: default
 
 // Module 10948 (FavoritesGuildUpsellSheet)
@@ -53,7 +53,7 @@ export default function FavoritesGuildUpsellSheet(limit) {
   intl2 = analyticsLocations(1113).intl;
   obj2 = { count: FREE_FAVORITE_LIMIT, maxCount: MAX_FAVORITE_CHANNELS };
   obj3 = { children: items };
-  ButtonGroup = analyticsLocations(6951).ButtonGroup;
+  ButtonGroup = analyticsLocations(6941).ButtonGroup;
   const obj4 = {
     size: "lg",
     variant: "primary",
@@ -65,7 +65,7 @@ export default function FavoritesGuildUpsellSheet(limit) {
       tmp2(obj);
     }
   };
-  const Button = analyticsLocations(5936).Button;
+  const Button = analyticsLocations(5926).Button;
   intl3 = analyticsLocations(1113).intl;
   items = [closure_6(Button, obj4), ];
   const obj5 = {
@@ -80,7 +80,7 @@ export default function FavoritesGuildUpsellSheet(limit) {
       obj2.transitionToGuild(FAVORITES);
     }
   };
-  const Button2 = analyticsLocations(5936).Button;
+  const Button2 = analyticsLocations(5926).Button;
   intl4 = analyticsLocations(1113).intl;
   items[1] = closure_6(Button2, obj5);
   return closure_6(PromoSheet, obj);

@@ -1,14 +1,14 @@
 // Module ID: 14278
 // Function ID: 14279
 // Name: CheckpointShareCard
-// Dependencies: [19, 17, 21, 14279, 575, 14281, 5306, 6400, 6401, 14283, 14285, 14286, 14287, 14284, 2]
+// Dependencies: [19, 17, 21, 14279, 575, 14281, 5306, 6390, 6391, 14283, 14285, 14286, 14287, 14284, 2]
 // Exports: default, getCheckpointShareCardSize
 
 // Module 14278 (CheckpointShareCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import CheckpointCardTypes from "CheckpointCardTypes" /* 6400 */;
-import CheckpointCardColors from "CheckpointCardColors" /* 6401 */;
+import CheckpointCardTypes from "CheckpointCardTypes" /* 6390 */;
+import CheckpointCardColors from "CheckpointCardColors" /* 6391 */;
 import CheckpointCardFrame from "CheckpointCardFrame" /* 14279 */;
 import EmojiSlightlySmilingFaceIcon from "EmojiSlightlySmilingFaceIcon" /* 14281 */;
 import CheckpointShareCardYear from "CheckpointShareCardYear" /* 14283 */;

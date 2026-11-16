@@ -1,7 +1,7 @@
 // Module ID: 13020
 // Function ID: 13021
 // Name: UserSettingsSoundboardVolume
-// Dependencies: [19, 17, 1072, 21, 5306, 13021, 7918, 12999, 1113, 7443, 13017, 7226, 5929, 2188, 2]
+// Dependencies: [19, 17, 1072, 21, 5306, 13021, 7918, 12999, 1113, 7443, 13017, 7226, 5919, 2188, 2]
 // Exports: default
 
 // Module 13020 (UserSettingsSoundboardVolume)
@@ -65,7 +65,7 @@ export default function SoundboardVolume() {
   intl3 = analyticsLocations(1113).intl;
   items = [closure_5(View, obj5), ];
   const obj7 = { style: tmp.text, variant: "body-sm/medium", children: format(BPbGq7, obj8) };
-  const Text = analyticsLocations(5929).Text;
+  const Text = analyticsLocations(5919).Text;
   const intl4 = analyticsLocations(1113).intl;
   format = intl4.format;
   obj8 = { helpCenterArticle: obj9.getArticleURL(HelpdeskArticles.SOUNDBOARD) };

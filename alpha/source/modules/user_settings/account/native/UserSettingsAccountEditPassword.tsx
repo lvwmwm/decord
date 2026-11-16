@@ -1,7 +1,7 @@
 // Module ID: 17277
 // Function ID: 17278
 // Name: UserSettingsAccountEditPassword
-// Dependencies: [19, 17, 5148, 8605, 1388, 1072, 21, 5306, 575, 5377, 7800, 7810, 12, 1256, 7809, 7815, 6020, 17278, 5929, 1113, 6337, 7619, 5936, 7812, 504, 38, 1502, 2]
+// Dependencies: [19, 17, 5148, 8605, 1388, 1072, 21, 5306, 575, 5367, 7800, 7810, 12, 1256, 7809, 7815, 6010, 17278, 5919, 1113, 6327, 7619, 5926, 7812, 504, 38, 1502, 2]
 // Exports: default
 
 // Module 17277 (UserSettingsAccountEditPassword)
@@ -10,10 +10,10 @@ import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import native from "native" /* 5377 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import FastImageDefault from "FastImage" /* 6020 */;
-import Stack_Stack from "Stack/Stack" /* 6337 */;
+import native from "native" /* 5367 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import Stack_Stack from "Stack/Stack" /* 6327 */;
 import TextInput_TextInput from "TextInput/TextInput" /* 7619 */;
 import UserSettingsAccountActionCreatorsAll from "UserSettingsAccountActionCreators" /* 7800 */;
 import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7809 */;
@@ -222,7 +222,7 @@ class EditPassword extends Component {
     }
     items3[1] = unpackModuleId(TextInput2, obj11);
     const obj12 = { text: intl5.string(intl6.t["FRep5/"]), onPress: self.handleSubmit, loading: submitting, disabled: submitting };
-    const Button = tmp16(5936).Button;
+    const Button = tmp16(5926).Button;
     intl5 = tmp16(1113).intl;
     if (!submitting) {
       submitting = null == password;

@@ -1,7 +1,7 @@
 // Module ID: 14144
 // Function ID: 14145
 // Name: GuildEnableCommunicationAlert
-// Dependencies: [5, 32, 19, 17, 1388, 5220, 1072, 21, 5306, 9204, 5899, 1256, 14143, 6015, 1113, 6340, 5929, 6351, 10913, 2]
+// Dependencies: [5, 32, 19, 17, 1388, 5220, 1072, 21, 5306, 9204, 5889, 1256, 14143, 6005, 1113, 6330, 5919, 6341, 10913, 2]
 // Exports: default
 
 // Module 14144 (GuildEnableCommunicationAlert)
@@ -117,7 +117,7 @@ export default function GuildEnableCommunicationAlert(guildId) {
   dependencyMap = tmp2;
   const tmp3 = userId;
   let closure_3 = obj(userId(9204)(userId, guildId), 1)[0];
-  userId(5899)(() => {
+  userId(5889)(() => {
     obj = AnalyticsUtilsDefault;
     const obj2 = { type: metroImportDefault, guild_id: guildId, other_user_id: userId };
     obj.track(constants.OPEN_MODAL, obj2);
@@ -134,7 +134,7 @@ export default function GuildEnableCommunicationAlert(guildId) {
     },
     children: tmp11(tmp12, obj2)
   };
-  const tmp7 = userId(6340);
+  const tmp7 = userId(6330);
   const merged1 = Object.assign(merged);
   intl = guildId(1113).intl;
   intl2 = guildId(1113).intl;
@@ -145,12 +145,12 @@ export default function GuildEnableCommunicationAlert(guildId) {
   intl3 = tmp9(1113).intl;
   obj2 = { style: tmp2.body, children: items };
   let obj3 = { style: tmp2.description, variant: "body-sm/medium", children: format(prop, obj4) };
-  const Text = tmp9(5929).Text;
+  const Text = tmp9(5919).Text;
   const intl4 = tmp9(1113).intl;
   format = intl4.format;
   prop = tmp9(1113).t["t+abNU"];
   const user = UserStore.getUser(userId);
-  const tmp3Result = tmp3(6351);
+  const tmp3Result = tmp3(6341);
   let str = tmp3Result.getName(guildId, null, user);
   tmp11 = closure_11;
   tmp12 = View;
@@ -175,7 +175,7 @@ export default function GuildEnableCommunicationAlert(guildId) {
   let obj5 = { style: items1, variant: "body-sm/medium", children: intl5.format(tmp9(1113).t.KtENkK, obj6) };
   items1 = [, ];
   ({ cta: arr2[0], description: arr2[1] } = tmp2);
-  const Text2 = tmp9(5929).Text;
+  const Text2 = tmp9(5919).Text;
   intl5 = tmp9(1113).intl;
   obj6 = { link };
   items[1] = closure_10(Text2, obj5);

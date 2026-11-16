@@ -1,7 +1,7 @@
 // Module ID: 17760
 // Function ID: 17761
 // Name: VideoQuestTranscriptActionSheet
-// Dependencies: [19, 17, 8810, 21, 5306, 575, 1630, 10146, 10133, 7951, 7913, 1113, 5570, 6337, 5929, 2]
+// Dependencies: [19, 17, 8810, 21, 5306, 575, 1630, 10146, 10133, 7951, 7913, 1113, 5560, 6327, 5919, 2]
 // Exports: default
 
 // Module 17760 (VideoQuestTranscriptActionSheet)
@@ -42,7 +42,7 @@ export default function VideoQuestTranscriptActionSheet(quest) {
   let obj3;
   let obj4;
   let tmp8;
-  const f116276 = (children, index) => {
+  const f116290 = (children, index) => {
     const obj = { variant: "heading-sm/medium", color: "text-muted", children };
     return closure_1_7(quest(dependencyMap[14]).Text, obj, index);
   };
@@ -104,10 +104,10 @@ export default function VideoQuestTranscriptActionSheet(quest) {
   BottomSheetTitleHeader = quest(7913).BottomSheetTitleHeader;
   intl = quest(1113).intl;
   obj3 = { contentContainerStyle: { paddingBottom: bottom }, children: tmp8(Stack, obj4) };
-  BottomSheetScrollView = quest(5570).BottomSheetScrollView;
+  BottomSheetScrollView = quest(5560).BottomSheetScrollView;
   let fetchStatus;
   obj4 = { spacing: 16, style: tmp.content, children: items2 };
-  Stack = quest(6337).Stack;
+  Stack = quest(6327).Stack;
   tmp8 = closure_8;
   if (tmp2 != null) {
     fetchStatus = tmp2.fetchStatus;
@@ -117,7 +117,7 @@ export default function VideoQuestTranscriptActionSheet(quest) {
     const obj5 = { style: tmp.loadingSpinner, size: "large" };
     tmp7Result = tmp7(ActivityIndicator, obj5);
   }
-  items2 = [tmp7Result, memo.length > 0 && memo.map(f116276)];
-  memo.length > 0 && memo.map(f116276);
+  items2 = [tmp7Result, memo.length > 0 && memo.map(f116290)];
+  memo.length > 0 && memo.map(f116290);
   return closure_7(ActionSheet, obj);
 };

@@ -1,7 +1,7 @@
 // Module ID: 15819
 // Function ID: 15820
 // Name: UserProfileWidgetOptionAddButton
-// Dependencies: [19, 17, 21, 575, 5306, 12110, 6020, 15820, 15822, 13466, 5929, 2]
+// Dependencies: [19, 17, 21, 575, 5306, 12110, 6010, 15820, 15822, 13466, 5919, 2]
 // Exports: default
 
 // Module 15819 (UserProfileWidgetOptionAddButton)
@@ -26,7 +26,7 @@ let obj5;
 let obj6;
 let obj7;
 let tmp2;
-const FastImageDefault = tmp2(6020);
+const FastImageDefault = tmp2(6010);
 function PlaceholderCover(arg0) {
   let gameId;
   let items;
@@ -185,7 +185,7 @@ export default function UserProfileWidgetOptionAddButton(onPress) {
   const CirclePlusIcon = tmp4(13466).CirclePlusIcon;
   items1 = [hasOwnProperty(CirclePlusIcon, obj8), ];
   const obj9 = { variant: "body-md/medium", color: "text-strong", children: tmp4Result.getAddWidgetTitle(widget) };
-  const Text = tmp4(5929).Text;
+  const Text = tmp4(5919).Text;
   tmp4Result = AddWidgetButtonConfig;
   items1[1] = hasOwnProperty(Text, obj9);
   items[1] = metroRequire(React3, obj7);

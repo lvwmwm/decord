@@ -1,19 +1,19 @@
-// Module ID: 19990
-// Function ID: 19991
+// Module ID: 19992
+// Function ID: 19993
 // Name: useVoicePanelCardUserStateIcons
-// Dependencies: [19, 6942, 5155, 6071, 5981, 5983, 11984, 10596, 563, 13060, 6096, 13002, 18955, 11951, 19959, 6015, 1113, 7623, 575, 2]
+// Dependencies: [19, 6932, 5155, 6061, 5971, 5973, 11984, 10596, 563, 13060, 6086, 13002, 18957, 11951, 19961, 6005, 1113, 7623, 575, 2]
 // Exports: default
 
-// Module 19990 (useVoicePanelCardUserStateIcons)
-import CallConstants from "CallConstants" /* 5983 */;
+// Module 19992 (useVoicePanelCardUserStateIcons)
+import CallConstants from "CallConstants" /* 5973 */;
 import VoiceStateIconUtils from "VoiceStateIconUtils" /* 10596 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11984 */;
-import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 19959 */;
+import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 19961 */;
 import react from "react" /* 19 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 6942 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 6932 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6071 */;
-import VoiceStateStore from "VoiceStateStore" /* 5981 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
+import VoiceStateStore from "VoiceStateStore" /* 5971 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -88,7 +88,7 @@ export default function useVoicePanelCardUserStateIcons(arg0, id, guildId) {
   if (arg0 === tmp6.STREAM) {
     tmp15 = id;
   }
-  const effectiveVolume = tmp2Result(tmp15, tmp4(6096).MediaEngineContextTypes.STREAM).effectiveVolume;
+  const effectiveVolume = tmp2Result(tmp15, tmp4(6086).MediaEngineContextTypes.STREAM).effectiveVolume;
   const tmp2Result2 = MobileAudioOutputExperimentDefault;
   showTileVolumeIndicator = tmp2Result2.useConfig({ location: "useVoicePanelCardUserStateIcons" }).showTileVolumeIndicator;
   if (showTileVolumeIndicator) {
@@ -97,7 +97,7 @@ export default function useVoicePanelCardUserStateIcons(arg0, id, guildId) {
   if (showTileVolumeIndicator) {
     showTileVolumeIndicator = arg0 === tmp6.STREAM;
   }
-  const tmp4Result9 = tmp4(18955);
+  const tmp4Result9 = tmp4(18957);
   isRTCDisconnectedUIVisible = tmp4Result9.useIsRTCDisconnectedUIVisible(tmp, id);
   const items3 = [videoIconState];
   const items4 = [tmp];

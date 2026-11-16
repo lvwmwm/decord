@@ -1,10 +1,10 @@
-// Module ID: 19688
-// Function ID: 19689
+// Module ID: 19690
+// Function ID: 19691
 // Name: ChannelSettingsPermissionsOverview
-// Dependencies: [32, 5, 19, 17, 5213, 5155, 5212, 5177, 5248, 1388, 1072, 21, 5306, 575, 6268, 1113, 5954, 5243, 12560, 8133, 10919, 12, 7746, 7443, 13308, 1502, 13997, 11241, 17933, 504, 2119, 10929, 19689, 15078, 9051, 8134, 1655, 2]
+// Dependencies: [32, 5, 19, 17, 5213, 5155, 5212, 5177, 5248, 1388, 1072, 21, 5306, 575, 6258, 1113, 5944, 5243, 12560, 8133, 10919, 12, 7746, 7443, 13308, 1502, 13997, 11241, 17935, 504, 2119, 10929, 19691, 15078, 9051, 8134, 1655, 2]
 // Exports: default
 
-// Module 19688 (ChannelSettingsPermissionsOverview)
+// Module 19690 (ChannelSettingsPermissionsOverview)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -16,8 +16,8 @@ import TableRow3 from "TableRow" /* 7443 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 8134 */;
 import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 10929 */;
 import RoleLabel from "RoleLabel" /* 11241 */;
-import CircleMinusIcon2 from "CircleMinusIcon" /* 17933 */;
-import useGetOrFetchChannelOverwriteUsersDefault from "useGetOrFetchChannelOverwriteUsers" /* 19689 */;
+import CircleMinusIcon2 from "CircleMinusIcon" /* 17935 */;
+import useGetOrFetchChannelOverwriteUsersDefault from "useGetOrFetchChannelOverwriteUsers" /* 19691 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
@@ -149,7 +149,7 @@ function ChannelPermissionSyncModule(channel) {
     });
     show(obj);
   }, items);
-  let obj = channel(5954);
+  let obj = channel(5944);
   const channelName = obj.computeChannelName(category, UserStore, RelationshipStore);
   let obj2 = { style: tmp.tableRowGroupContainer, children: tmp6(TableRowGroup, obj5) };
   TableRowGroup = channel(7746).TableRowGroup;
@@ -230,7 +230,7 @@ function RoleRow(onDelete) {
     tmp2Result = null;
     if (!tmp) {
       const obj2 = { color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, accessibilityLabel: intl.string(intl5.t.N86XcP) };
-      const CircleMinusIcon = tmp3(17933).CircleMinusIcon;
+      const CircleMinusIcon = tmp3(17935).CircleMinusIcon;
       intl = tmp3(1113).intl;
       tmp2Result = tmp2(CircleMinusIcon, obj2);
     }

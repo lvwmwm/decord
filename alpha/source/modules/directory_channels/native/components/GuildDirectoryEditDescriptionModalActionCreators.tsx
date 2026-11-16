@@ -1,11 +1,11 @@
 // Module ID: 14711
 // Function ID: 14712
 // Name: GuildDirectoryEditDescriptionModalActionCreators
-// Dependencies: [6848, 14712, 2121, 2]
+// Dependencies: [6838, 14712, 2121, 2]
 
 // Module 14711 (GuildDirectoryEditDescriptionModalActionCreators)
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import size from "module_2" /* 2 */;
 
 const GUILD_DIRECTORY_EDIT_DESCRIPTION_MODAL_KEY = "GUILD_DIRECTORY_EDIT_DESCRIPTION_MODAL_KEY";

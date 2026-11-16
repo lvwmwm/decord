@@ -1,7 +1,7 @@
 // Module ID: 17131
 // Function ID: 17132
 // Name: EditNameplateActionSheet
-// Dependencies: [32, 19, 17, 8500, 2112, 5218, 1072, 21, 5306, 575, 8559, 7918, 7937, 1256, 9398, 9402, 5566, 7913, 1113, 9403, 11671, 504, 17132, 15524, 8541, 17133, 15530, 15531, 9404, 9507, 5893, 10063, 2]
+// Dependencies: [32, 19, 17, 8500, 2112, 5218, 1072, 21, 5306, 575, 8559, 7918, 7937, 1256, 9398, 9402, 5556, 7913, 1113, 9403, 11671, 504, 17132, 15524, 8541, 17133, 15530, 15531, 9404, 9507, 5883, 10063, 2]
 // Exports: default
 
 // Module 17131 (EditNameplateActionSheet)
@@ -176,7 +176,7 @@ function NameplateActionSheetPreview(arg0) {
   items1 = [closure_10(tmp10(9507).NameplateDummyUserPreview, { width: 100 }), closure_10(tmp10(9507).NameplateDummyUserPreview, { width: 140 }), ];
   const obj4 = { style: tmp.nameplatePreviewGradient, start: { x: 0, y: 0.1 }, end: { x: 0, y: 0.8 }, colors: items2 };
   items2 = [tmp.nameplatePreviewGradient.color, ];
-  const tmp2Result = purchase(5893);
+  const tmp2Result = purchase(5883);
   items2[1] = "" + tmp.nameplatePreviewGradient.color + "00";
   items1[2] = closure_10(tmp2Result, obj4);
   items3 = [closure_11(View, obj3), closure_10(tmp10(10063).NameplatePreview, { nameplate: memo, user, guildId, animate: true, "aria-hidden": true }), ];
@@ -184,7 +184,7 @@ function NameplateActionSheetPreview(arg0) {
   items4 = [closure_10(tmp10(9507).NameplateDummyUserPreview, { width: 140 }), closure_10(tmp10(9507).NameplateDummyUserPreview, { width: 100 }), ];
   const obj6 = { style: tmp.nameplatePreviewGradient, start: { x: 0, y: 0.2 }, end: { x: 0, y: 0.9 }, colors: items5 };
   items5 = [, ];
-  const tmp2Result2 = purchase(5893);
+  const tmp2Result2 = purchase(5883);
   items5[0] = "" + tmp.nameplatePreviewGradient.color + "00";
   items5[1] = tmp.nameplatePreviewGradient.color;
   items4[2] = closure_10(tmp2Result2, obj6);
@@ -254,7 +254,7 @@ export default function EditNameplateActionSheet(arg0) {
   const obj3 = { value: analyticsLocations, children: tmp13(BottomSheet, obj4) };
   const AnalyticsLocationProvider = tmp2(7918).AnalyticsLocationProvider;
   obj4 = { scrollable: true, ref: bottomSheetRef, onExpand: callback, startExpanded: true, header: closure_10(BottomSheetTitleHeader, obj5), children: items1 };
-  BottomSheet = tmp2(5566).BottomSheet;
+  BottomSheet = tmp2(5556).BottomSheet;
   obj5 = { title: intl.string(guildId(1113).t.BwdeM1) };
   BottomSheetTitleHeader = tmp2(7913).BottomSheetTitleHeader;
   intl = tmp2(1113).intl;

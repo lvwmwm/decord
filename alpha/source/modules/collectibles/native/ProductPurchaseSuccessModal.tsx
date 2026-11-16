@@ -1,14 +1,14 @@
 // Module ID: 10021
 // Function ID: 10022
 // Name: ProductPurchaseSuccessModal
-// Dependencies: [32, 717, 19, 17, 5307, 1072, 21, 5306, 575, 2114, 10020, 7500, 7549, 1113, 1655, 5939, 5548, 5554, 8495, 10022, 5902, 5893, 9409, 10024, 504, 10025, 10029, 10038, 10041, 9402, 6020, 7415, 10043, 9489, 9500, 9527, 10062, 10063, 5929, 8497, 5936, 2]
+// Dependencies: [32, 717, 19, 17, 5307, 1072, 21, 5306, 575, 2114, 10020, 7500, 7549, 1113, 1655, 5929, 5538, 5544, 8495, 10022, 5892, 5883, 9409, 10024, 504, 10025, 10029, 10038, 10041, 9402, 6010, 7415, 10043, 9489, 9500, 9527, 10062, 10063, 5919, 8497, 5926, 2]
 // Exports: default
 
 // Module 10021 (ProductPurchaseSuccessModal)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 2114 */;
-import HapticUtils from "HapticUtils" /* 5554 */;
+import HapticUtils from "HapticUtils" /* 5544 */;
 import _mod7500 from "module_7500" /* 7500 */;
 import XSmallIcon from "XSmallIcon" /* 7549 */;
 import _modDef8495 from "module_8495" /* 8495 */;
@@ -428,7 +428,7 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
     if (null != mobileBgUrl) {
       let obj3 = { source: obj5, style: tmp6.imageBackground };
       obj5 = { uri: mobileBgUrl };
-      tmp42 = closure_11(tmp4(6020), obj3);
+      tmp42 = closure_11(tmp4(6010), obj3);
       tmp43 = closure_11;
       tmp44 = closure_11;
     }
@@ -500,12 +500,12 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
       renderMessagesResult = renderMessages();
     } else {
       const obj20 = { variant: "heading-xl/semibold", color: "text-overlay-light", style: tmp6.title, children: intl3.format(require("intl").t.YNaxMp, obj21) };
-      const Text = tmp2(5929).Text;
+      const Text = tmp2(5919).Text;
       intl3 = tmp2(1113).intl;
       obj21 = { itemName: product.name };
       const items16 = [tmp44(Text, obj20), ];
       const obj22 = { variant: "body-md/medium", color: "text-overlay-light", style: tmp6.title, children: formatResult };
-      const Text2 = tmp2(5929).Text;
+      const Text2 = tmp2(5919).Text;
       const tmp2Result24 = require("CollectiblesUtils");
       let result = tmp2Result24.isPremiumCollectiblesProduct(product);
       const intl4 = tmp2(1113).intl;
@@ -527,7 +527,7 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
     items12[1] = closure_12(tmp48, obj11);
     const obj26 = { style: tmp6.footer, children: tmp44(closure_7, obj27) };
     obj27 = { style: tmp6.cta, children: tmp44(Button, obj30) };
-    Button = tmp2(5936).Button;
+    Button = tmp2(5926).Button;
     if (canUseNow) {
       const obj29 = { loading: isApplying, disabled: isApplying, onPress: handleUseNow, text: intl2.string(require("intl").t.MAS7uK), size: "lg", grow: true };
       intl2 = tmp2(1113).intl;

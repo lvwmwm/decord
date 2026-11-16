@@ -1,7 +1,7 @@
 // Module ID: 13070
 // Function ID: 13071
 // Name: StageActionHeader
-// Dependencies: [19, 17, 7016, 5155, 7060, 5177, 5160, 12935, 1072, 21, 575, 5306, 5303, 5892, 1256, 6067, 11827, 6848, 6900, 504, 12958, 13071, 1113, 6066, 1187, 6949, 6943, 4261, 13072, 5929, 13073, 1630, 5954, 5893, 8016, 13074, 6903, 8426, 10982, 10981, 8460, 12937, 12938, 12939, 12942, 13075, 13076, 2]
+// Dependencies: [19, 17, 7016, 5155, 7060, 5177, 5160, 12935, 1072, 21, 575, 5306, 5303, 5882, 1256, 6057, 11827, 6838, 6890, 504, 12958, 13071, 1113, 6056, 1187, 6939, 6933, 4261, 13072, 5919, 13073, 1630, 5944, 5883, 8016, 13074, 6893, 8426, 10982, 10981, 8460, 12937, 12938, 12939, 12942, 13075, 13076, 2]
 // Exports: closeStageModal
 
 // Module 13070 (StageActionHeader)
@@ -11,17 +11,17 @@ import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
 import _modDef4261 from "module_4261" /* 4261 */;
-import NavigatorConstants from "NavigatorConstants" /* 5892 */;
-import LinearGradientDefault from "LinearGradient" /* 5893 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import useChannelNameDefault from "useChannelName" /* 5954 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6066 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6067 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6900 */;
-import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 6903 */;
-import StageChannelParticipants from "StageChannelParticipants" /* 6943 */;
-import StageChannelParticipantStoreHooks from "StageChannelParticipantStoreHooks" /* 6949 */;
+import NavigatorConstants from "NavigatorConstants" /* 5882 */;
+import LinearGradientDefault from "LinearGradient" /* 5883 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import useChannelNameDefault from "useChannelName" /* 5944 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6056 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6057 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6890 */;
+import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 6893 */;
+import StageChannelParticipants from "StageChannelParticipants" /* 6933 */;
+import StageChannelParticipantStoreHooks from "StageChannelParticipantStoreHooks" /* 6939 */;
 import AssetRegistryDefault from "AssetRegistry" /* 8016 */;
 import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8460 */;
 import StatusBarDefault from "StatusBar" /* 11827 */;
@@ -166,7 +166,7 @@ class StageChannelCallHeader {
     items4 = [tmp13Result, , , ];
     let topic;
     const obj6 = { pointerEvents: "none", style: tmp.leftTitleContainer, children: items5 };
-    const Text = tmp8(5929).Text;
+    const Text = tmp8(5919).Text;
     if (stateFromStores != null) {
       topic = stateFromStores.topic;
     }
@@ -181,7 +181,7 @@ class StageChannelCallHeader {
       const Icon = tmp8(1187).Icon;
       items6 = [closure_13(Icon, obj8), ];
       const obj9 = { variant: "body-xs/normal", style: tmp.stageInfoTopic, lineClamp: 1, children: tmp7 };
-      items6[1] = closure_13(channel(5929).Text, obj9);
+      items6[1] = closure_13(channel(5919).Text, obj9);
       tmp11Result = tmp11(tmp12, obj7);
     }
     items5[1] = tmp11Result;

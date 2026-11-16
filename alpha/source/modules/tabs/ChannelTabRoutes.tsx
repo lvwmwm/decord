@@ -1,7 +1,7 @@
 // Module ID: 10278
 // Function ID: 10279
 // Name: ChannelTabRoutes
-// Dependencies: [1072, 5162, 5367, 1113, 5354, 4131, 2]
+// Dependencies: [1072, 5162, 5357, 1113, 5344, 4131, 2]
 // Exports: getRouteTabForLocation
 
 // Module 10278 (ChannelTabRoutes)
@@ -9,8 +9,8 @@ import Constants from "Constants" /* 1072 */;
 import intl6 from "intl" /* 1113 */;
 import _modDef4131 from "module_4131" /* 4131 */;
 import ChannelConstants from "ChannelConstants" /* 5162 */;
-import matchPathCompat from "matchPathCompat" /* 5354 */;
-import RouteUtils from "RouteUtils" /* 5367 */;
+import matchPathCompat from "matchPathCompat" /* 5344 */;
+import RouteUtils from "RouteUtils" /* 5357 */;
 import size from "module_2" /* 2 */;
 
 const Routes = Constants.Routes;

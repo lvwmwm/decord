@@ -1,16 +1,16 @@
 // Module ID: 15893
 // Function ID: 15894
 // Name: components/InstantInviteConstants
-// Dependencies: [17, 8467, 1072, 12626, 12290, 575, 1113, 8460, 10926, 6030, 15894, 1627, 15895, 5552, 15896, 2121, 8475, 1380, 15913, 15914, 6815, 8660, 6269, 15915, 15916, 15917, 15918, 15919, 15920, 15921, 15922, 2]
+// Dependencies: [17, 8467, 1072, 12626, 12290, 575, 1113, 8460, 10926, 6020, 15894, 1627, 15895, 5542, 15896, 2121, 8475, 1380, 15913, 15914, 6805, 8660, 6259, 15915, 15916, 15917, 15918, 15919, 15920, 15921, 15922, 2]
 
 // Module 15893 (components/InstantInviteConstants)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6030 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6269 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6020 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6259 */;
 import getInviteURLDefault from "getInviteURL" /* 8475 */;
 import MessageActionCreatorsDefault from "MessageActionCreators" /* 8660 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 10926 */;
@@ -32,7 +32,7 @@ import InstantInviteConstants from "InstantInviteConstants" /* 8467 */;
 import Constants from "Constants" /* 1072 */;
 import MetaQuestUtils_mod from "MetaQuestUtils" /* 1627 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1380 */;
-import DCDSendUtils_mod from "DCDSendUtils" /* 6815 */;
+import DCDSendUtils_mod from "DCDSendUtils" /* 6805 */;
 import InstantInviteUtils_mod from "instant_invite/InstantInviteUtils" /* 8460 */;
 import size from "module_2" /* 2 */;
 
@@ -136,10 +136,10 @@ const obj5 = {
     obj.trackOptionClicked(code, channel, constants.SMS, _location);
     let obj2 = channel(1380);
     if (obj2.isIOS()) {
-      let obj3 = code(5552);
+      let obj3 = code(5542);
       obj3.hideActionSheet();
     }
-    const tmpResult = tmp(6815);
+    const tmpResult = tmp(6805);
     tmpResult.sendSMS({ body: message }, (arg0, arg1, arg2) => {
       let id;
       let intl;
@@ -202,10 +202,10 @@ const obj6 = {
     obj.trackOptionClicked(code, channel, constants.EMAIL, _location);
     let obj2 = channel(1380);
     if (obj2.isIOS()) {
-      let obj3 = code(5552);
+      let obj3 = code(5542);
       obj3.hideActionSheet();
     }
-    const tmpResult = tmp(6815);
+    const tmpResult = tmp(6805);
     tmpResult.sendMail({ subject: "", body: message }, (arg0, arg1, arg2) => {
       let id;
       let intl;

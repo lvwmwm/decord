@@ -1,7 +1,7 @@
 // Module ID: 12288
 // Function ID: 12289
 // Name: InAppReportsShareWithParentElement
-// Dependencies: [32, 19, 21, 8742, 6014, 1113, 6915, 12287, 12289, 2]
+// Dependencies: [32, 19, 21, 8742, 6004, 1113, 6905, 12287, 12289, 2]
 // Exports: default
 
 // Module 12288 (InAppReportsShareWithParentElement)

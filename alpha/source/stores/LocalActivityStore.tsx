@@ -1,7 +1,7 @@
 // Module ID: 7317
 // Function ID: 7318
 // Name: LocalActivityStore
-// Dependencies: [32, 5154, 2165, 2140, 7318, 7319, 7290, 1231, 6820, 5155, 2159, 15986, 5209, 6073, 1072, 5131, 9529, 6069, 12, 15987, 15988, 6812, 1345, 7472, 12695, 1406, 504, 572, 2]
+// Dependencies: [32, 5154, 2165, 2140, 7318, 7319, 7290, 1231, 6810, 5155, 2159, 15986, 5209, 6063, 1072, 5131, 9529, 6059, 12, 15987, 15988, 6802, 1345, 7472, 12695, 1406, 504, 572, 2]
 
 // Module 7317 (LocalActivityStore)
 import _modDef12 from "module_12" /* 12 */;
@@ -10,7 +10,7 @@ import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import _modDef1345 from "module_1345" /* 1345 */;
 import FlagUtils from "FlagUtils" /* 1406 */;
-import ActivityTypes from "ActivityTypes" /* 6069 */;
+import ActivityTypes from "ActivityTypes" /* 6059 */;
 import ActivityGamePlatforms from "ActivityGamePlatforms" /* 7472 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
@@ -20,12 +20,12 @@ import SocialSdkApplicationStore from "SocialSdkApplicationStore" /* 7318 */;
 import FirstPartyRichPresenceStore from "FirstPartyRichPresenceStore" /* 7319 */;
 import SpotifyStore from "SpotifyStore" /* 7290 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6820 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6810 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import DetectableGameStore from "DetectableGameStore" /* 2159 */;
 import ExternalStreamingStore from "ExternalStreamingStore" /* 15986 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
-import SessionsStore from "SessionsStore" /* 6073 */;
+import SessionsStore from "SessionsStore" /* 6063 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

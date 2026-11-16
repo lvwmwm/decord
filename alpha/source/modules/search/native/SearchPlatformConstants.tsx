@@ -1,10 +1,10 @@
 // Module ID: 14756
 // Function ID: 14757
 // Name: SearchPlatformConstants
-// Dependencies: [6013, 14757, 14759, 9363, 9361, 10476, 2]
+// Dependencies: [6003, 14757, 14759, 9363, 9361, 10476, 2]
 
 // Module 14756 (SearchPlatformConstants)
-import LinkingWhitelist from "LinkingWhitelist" /* 6013 */;
+import LinkingWhitelist from "LinkingWhitelist" /* 6003 */;
 import FacebookNeutralIcon from "FacebookNeutralIcon" /* 9361 */;
 import InstagramNeutralIcon from "InstagramNeutralIcon" /* 9363 */;
 import YoutubeNeutralIcon from "YoutubeNeutralIcon" /* 10476 */;

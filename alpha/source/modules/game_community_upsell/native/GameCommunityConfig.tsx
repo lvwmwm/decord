@@ -1,10 +1,10 @@
-// Module ID: 18253
-// Function ID: 18254
+// Module ID: 18255
+// Function ID: 18256
 // Name: GameCommunityConfig
 // Dependencies: [16217, 1255, 2]
 // Exports: getGameIdsForDetectedGames
 
-// Module 18253 (GameCommunityConfig)
+// Module 18255 (GameCommunityConfig)
 import GlobalUtils from "GlobalUtils" /* 1255 */;
 import LocalAppDetectionTypes from "LocalAppDetectionTypes" /* 16217 */;
 import size from "module_2" /* 2 */;

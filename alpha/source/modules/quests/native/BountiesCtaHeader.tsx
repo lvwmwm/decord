@@ -1,17 +1,17 @@
 // Module ID: 17616
 // Function ID: 17617
 // Name: BountiesCtaHeader
-// Dependencies: [109, 19, 17, 5307, 10513, 5338, 21, 575, 5942, 5306, 504, 9730, 17595, 5936, 1113, 5929, 17603, 17617, 5345, 8825, 5341, 8834, 17542, 17544, 1187, 17618, 17619, 17620, 17621, 5377, 17101, 15264, 2]
+// Dependencies: [109, 19, 17, 5307, 10513, 6954, 21, 575, 5932, 5306, 504, 9730, 17595, 5926, 1113, 5919, 17603, 17617, 6961, 8825, 6957, 8834, 17542, 17544, 1187, 17618, 17619, 17620, 17621, 5367, 17101, 15264, 2]
 
 // Module 17616 (BountiesCtaHeader)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import QuestTypes from "QuestTypes" /* 5341 */;
-import AdCreativeType from "AdCreativeType" /* 5345 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import components_Button_Button from "components/Button/Button" /* 5936 */;
-import ButtonConstants from "ButtonConstants" /* 5942 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
+import ButtonConstants from "ButtonConstants" /* 5932 */;
+import QuestTypes from "QuestTypes" /* 6957 */;
+import AdCreativeType from "AdCreativeType" /* 6961 */;
 import AnalyticsActions from "AnalyticsActions" /* 8825 */;
 import AnalyticsTypes from "AnalyticsTypes" /* 8834 */;
 import common_Video from "common/Video" /* 9730 */;
@@ -26,7 +26,7 @@ import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import AdContentSeenStore from "AdContentSeenStore" /* 10513 */;
-import QuestConstants from "QuestConstants" /* 5338 */;
+import QuestConstants from "QuestConstants" /* 6954 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
@@ -193,7 +193,7 @@ function BountiesCtaHeaderInner(bounties) {
     items6 = [tmp10Result, ];
     const obj10 = { style: tmp.headerHeadingContent, children: items7 };
     const obj11 = { variant: "body-lg/semibold", color: "text-strong", children: intl2.string(bounties(1113).t["4nwvXG"]) };
-    const Heading2 = tmp3(5929).Heading;
+    const Heading2 = tmp3(5919).Heading;
     intl2 = tmp3(1113).intl;
     items7 = [closure_12(Heading2, obj11), closure_12(BountiesCtaDescription, { embedded: true })];
     items6[1] = closure_13(closure_7, obj10);
@@ -227,7 +227,7 @@ function BountiesCtaHeaderInner(bounties) {
     const tmp13 = tmp8Result2 && tmp.headerTextBoxWithFooter;
     items10[1] = tmp13;
     const obj18 = { variant: "body-lg/semibold", color: "text-strong", children: intl.string(bounties(1113).t["4nwvXG"]) };
-    const Heading = tmp3(5929).Heading;
+    const Heading = tmp3(5919).Heading;
     intl = tmp3(1113).intl;
     items11 = [closure_12(Heading, obj18), closure_12(BountiesCtaDescription, {}), ];
     let tmp10Result6 = tmp10Result4;
@@ -312,18 +312,18 @@ const memoResult = react.memo(function BountiesCtaHeader(bounties) {
   let obj = containerRef(17621);
   const bountyCarouselEmptyStateAnalytics = obj.useBountyCarouselEmptyStateAnalytics(tmp4);
   const obj2 = { theme: containerRef(17101).ThemeTypes.DARK, children: tmp9Result };
-  const ThemeContextProvider = containerRef(5377).ThemeContextProvider;
+  const ThemeContextProvider = containerRef(5367).ThemeContextProvider;
   if (tmp3) {
     const obj3 = { containerRef };
     tmp9Result = tmp9(BountiesEmptyCard, obj3);
   } else {
     const obj4 = {
       adContentId,
-      adCreativeType: containerRef(5345).AdCreativeType.BOUNTY,
-      questContent: containerRef(5341).QuestContent.QUEST_HOME_ENTRYPOINT_MOBILE,
+      adCreativeType: containerRef(6961).AdCreativeType.BOUNTY,
+      questContent: containerRef(6957).QuestContent.QUEST_HOME_ENTRYPOINT_MOBILE,
       questContentPosition: 0,
       overrideVisibility: isInView,
-      sourceQuestContent: containerRef(5341).QuestContent.QUEST_HOME_ENTRYPOINT_MOBILE,
+      sourceQuestContent: containerRef(6957).QuestContent.QUEST_HOME_ENTRYPOINT_MOBILE,
       children() {
           const obj = { bounties, containerRef };
           const merged = Object.assign(closure_2);

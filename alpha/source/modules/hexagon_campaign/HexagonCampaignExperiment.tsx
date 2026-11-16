@@ -1,19 +1,17 @@
 // Module ID: 5337
 // Function ID: 5338
 // Name: HexagonCampaignExperiment
-// Dependencies: [5338, 1452, 5334, 2]
+// Dependencies: [1452, 5334, 2]
 // Exports: getIsHexagonCampaignEnabled, getIsHexagonCampaignQuestHomeRedirectEnabled, useIsHexagonCampaignEnabled, useIsHexagonCampaignQuestHomeHeaderEnabled, useIsHexagonCampaignQuestHomeRedirectEnabled, useShouldShowHexagonCampaignIntroCard
 
 // Module 5337 (HexagonCampaignExperiment)
 import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5334 */;
-import QuestConstants from "QuestConstants" /* 5338 */;
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
-const QuestsExperimentLocations = QuestConstants.QuestsExperimentLocations;
 let obj = { kind: "user", name: "2026-09-hexagon-campaign-client", defaultConfig: { enabled: false, questHomeRedirect: false }, variations: { 0: { enabled: false, questHomeRedirect: false }, 1: { enabled: true, questHomeRedirect: true }, 2: { enabled: true, questHomeRedirect: false } } };
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
-const result = size.fileFinishedImporting("modules/hexagon_campaign/HexagonCampaignExperiment.tsx");
+let result = size.fileFinishedImporting("modules/hexagon_campaign/HexagonCampaignExperiment.tsx");
 
 export const HexagonCampaignClientExperiment = apexExperiment;
 export function useIsHexagonCampaignEnabled(location) {
@@ -55,14 +53,10 @@ export function useIsHexagonCampaignQuestHomeHeaderEnabled(HexagonCampaignQuestH
 }
 export function useShouldShowHexagonCampaignIntroCard(stateFromStores) {
   const obj = HexagonCampaignUtils;
-  let enabled = obj.isHexagonCampaignHero(stateFromStores);
-  const obj2 = { location: QuestsExperimentLocations.QUEST_HOME_HERO_SHELF_DESKTOP };
-  if (enabled) {
-    enabled = apexExperiment.useConfig(obj2, { autoTrackExposure: enabled }).enabled;
-  }
-  if (enabled) {
+  let result = obj.isHexagonCampaignHero(stateFromStores);
+  if (result) {
     const tmpResult = HexagonCampaignUtils;
-    enabled = !tmpResult.isHexagonCampaignTakeoverOver();
+    result = !tmpResult.isHexagonCampaignTakeoverOver();
   }
-  return enabled;
+  return result;
 }

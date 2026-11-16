@@ -1,10 +1,10 @@
-// Module ID: 19738
-// Function ID: 19739
+// Module ID: 19740
+// Function ID: 19741
 // Name: modal/ModalScreen
-// Dependencies: [109, 19, 17, 1072, 21, 5306, 575, 7771, 5263, 19739, 18713, 6848, 6338, 1264, 8678, 17055, 1380, 13365, 2]
+// Dependencies: [109, 19, 17, 1072, 21, 5306, 575, 7771, 5263, 19741, 18715, 6838, 6328, 1264, 8678, 17055, 1380, 13365, 2]
 // Exports: default
 
-// Module 19738 (modal/ModalScreen)
+// Module 19740 (modal/ModalScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import useIsWindowLargeDefault from "useIsWindowLarge" /* 7771 */;
@@ -22,9 +22,9 @@ let c9;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const useTrackImpressionDefault = tmp(6338);
-const ModalActionCreatorsDefault = tmp(6848);
-const useAppFrameDefault = tmp(18713);
+const useTrackImpressionDefault = tmp(6328);
+const ModalActionCreatorsDefault = tmp(6838);
+const useAppFrameDefault = tmp(18715);
 let closure_3 = ["impressionName", "impressionProperties"];
 ({ View: metroRequire, StyleSheet: metroImportDefault } = react_native);
 const NOOP = Constants.NOOP;
@@ -62,7 +62,7 @@ export default function Modal(route) {
     isIpadOSResult = "modal" === presentation;
   }
   if (!isIpadOSResult) {
-    const obj2 = modal(19739);
+    const obj2 = modal(19741);
     isIpadOSResult = obj2.shouldExcludeSafeAreaForModalKey(modal.key);
   }
   const obj3 = { enabled: !isIpadOSResult };

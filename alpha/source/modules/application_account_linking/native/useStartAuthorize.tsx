@@ -1,7 +1,7 @@
 // Module ID: 7919
 // Function ID: 7920
 // Name: useStartAuthorize
-// Dependencies: [5, 19, 7920, 1072, 7921, 7922, 6012, 1256, 7923, 2]
+// Dependencies: [5, 19, 7920, 1072, 7921, 7922, 6002, 1256, 7923, 2]
 // Exports: default
 
 // Module 7919 (useStartAuthorize)

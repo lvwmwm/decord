@@ -1,7 +1,7 @@
 // Module ID: 13647
 // Function ID: 13648
 // Name: ConjurePublishNotesSheet
-// Dependencies: [5, 32, 19, 17, 5177, 5248, 1388, 21, 5306, 575, 13648, 5552, 11964, 1113, 4131, 7951, 7913, 7859, 5929, 5954, 5936, 2]
+// Dependencies: [5, 32, 19, 17, 5177, 5248, 1388, 21, 5306, 575, 13648, 5542, 11964, 1113, 4131, 7951, 7913, 7859, 5919, 5944, 5926, 2]
 // Exports: default
 
 // Module 13647 (ConjurePublishNotesSheet)
@@ -9,7 +9,7 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1113 */;
 import _modDef4131 from "module_4131" /* 4131 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5542 */;
 import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11964 */;
 import useConjurePatchNotesComposerDefault from "useConjurePatchNotesComposer" /* 13648 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -206,13 +206,13 @@ export default function ConjurePublishNotesSheet(guildId) {
       stringResult1 = intl5.string(tmp6(4131)["6oEjjD"]);
     }
     items3 = [tmp13(TextArea, obj5), ];
-    const Text = tmp14(5929).Text;
+    const Text = tmp14(5919).Text;
     const intl6 = tmp14(1113).intl;
     const format = intl6.format;
     const prop = tmp6(4131)["1lVhj/"];
     if (null != selectedChannel) {
       const _HermesInternal = HermesInternal;
-      const tmp14Result = guildId(5954);
+      const tmp14Result = guildId(5944);
       combined = "#" + tmp14Result.computeChannelName(selectedChannel, callback2, trimmed);
     } else {
       const intl7 = tmp14(1113).intl;
@@ -232,11 +232,11 @@ export default function ConjurePublishNotesSheet(guildId) {
   items4 = [tmp15Result, ];
   const obj8 = { style: tmp.actions, children: items5 };
   const obj9 = { variant: "tertiary", grow: true, text: intl8.string(guildId(1113).t["ETE/oC"]), onPress: callback2 };
-  const Button = tmp14(5936).Button;
+  const Button = tmp14(5926).Button;
   intl8 = tmp14(1113).intl;
   items5 = [tmp13(Button, obj9), ];
   const obj10 = { variant: "primary", grow: true, text: intl9.string(_modDef4131["69aIG4"]), loading: sending, disabled: "" === trimmed || trimmed.length > maxNotesLength || null == selectedChannel || sending, onPress: callback3 };
-  const Button2 = tmp14(5936).Button;
+  const Button2 = tmp14(5926).Button;
   intl9 = tmp14(1113).intl;
   items5[1] = tmp13(Button2, obj10);
   items4[1] = closure_11(markEdited, obj8);

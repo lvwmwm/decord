@@ -1,13 +1,13 @@
 // Module ID: 17214
 // Function ID: 17215
 // Name: SettingListRenderer
-// Dependencies: [19, 17, 17215, 17059, 12407, 21, 5306, 575, 7746, 5929, 17216, 1630, 17217, 17222, 7888, 17223, 17226, 17227, 2020, 2]
+// Dependencies: [19, 17, 17215, 17059, 12407, 21, 5306, 575, 7746, 5919, 17216, 1630, 17217, 17222, 7888, 17223, 17226, 17227, 2020, 2]
 
 // Module 17214 (SettingListRenderer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import TableRowGroup from "TableRowGroup" /* 7746 */;
 import SettingRendererConstants from "SettingRendererConstants" /* 12407 */;
 import SettingRenderer from "SettingRenderer" /* 17216 */;

@@ -1,7 +1,7 @@
 // Module ID: 14241
 // Function ID: 14242
 // Name: handleForwardBreadcrumb
-// Dependencies: [5, 5155, 5177, 1072, 7230, 6917, 6922, 1256, 7262, 2]
+// Dependencies: [5, 5155, 5177, 1072, 7230, 6907, 6912, 1256, 7262, 2]
 // Exports: default
 
 // Module 14241 (handleForwardBreadcrumb)

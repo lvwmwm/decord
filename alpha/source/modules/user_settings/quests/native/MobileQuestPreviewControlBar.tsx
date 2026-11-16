@@ -1,7 +1,7 @@
 // Module ID: 17779
 // Function ID: 17780
 // Name: MobileQuestPreviewControlBar
-// Dependencies: [5, 32, 19, 17, 8808, 1083, 21, 5306, 575, 10131, 504, 10133, 7949, 1113, 7943, 17780, 17781, 7988, 13308, 15206, 5929, 2]
+// Dependencies: [5, 32, 19, 17, 8808, 1083, 21, 5306, 575, 10131, 504, 10133, 7949, 1113, 7943, 17780, 17781, 7988, 13308, 15206, 5919, 2]
 
 // Module 17779 (MobileQuestPreviewControlBar)
 import react_native from "react-native" /* 17 */;

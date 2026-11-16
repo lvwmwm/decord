@@ -1,7 +1,7 @@
 // Module ID: 7954
 // Function ID: 7955
 // Name: TableSwitchRow
-// Dependencies: [32, 19, 17, 21, 5306, 1380, 7443, 5929, 7461, 7955, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 1380, 7443, 5919, 7461, 7955, 2]
 // Exports: TableSwitchRow
 
 // Module 7954 (TableSwitchRow)
@@ -88,7 +88,7 @@ export function TableSwitchRow(value) {
     const tmp15 = View;
     if (!obj2.isValidElement(label)) {
       let str = "mobile-text-heading-primary";
-      const Text = tmp3(5929).Text;
+      const Text = tmp3(5919).Text;
       if ("danger" === variant) {
         str = "text-feedback-critical";
       }

@@ -1,11 +1,11 @@
 // Module ID: 10855
 // Function ID: 10856
 // Name: PresenceActivityStatus
-// Dependencies: [19, 21, 8469, 7328, 7438, 8101, 6069, 10856, 10851, 10857, 10850, 10853, 2]
+// Dependencies: [19, 21, 8469, 7328, 7438, 8101, 6059, 10856, 10851, 10857, 10850, 10853, 2]
 // Exports: default
 
 // Module 10855 (PresenceActivityStatus)
-import ActivityTypes from "ActivityTypes" /* 6069 */;
+import ActivityTypes from "ActivityTypes" /* 6059 */;
 import conjurePresenceActivity from "conjurePresenceActivity" /* 7328 */;
 import AppsIcon from "AppsIcon" /* 8101 */;
 import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 8469 */;

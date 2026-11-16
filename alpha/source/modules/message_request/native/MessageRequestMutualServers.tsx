@@ -1,10 +1,10 @@
-// Module ID: 19746
-// Function ID: 19747
+// Module ID: 19748
+// Function ID: 19749
 // Name: MessageRequestMutualServers
-// Dependencies: [19, 17, 21, 5306, 7720, 19747, 1113, 14946, 5929, 7428, 2]
+// Dependencies: [19, 17, 21, 5306, 7720, 19749, 1113, 14946, 5919, 7428, 2]
 // Exports: default
 
-// Module 19746 (MessageRequestMutualServers)
+// Module 19748 (MessageRequestMutualServers)
 import react_native from "react-native" /* 17 */;
 import GuildIconDefault from "GuildIcon" /* 7720 */;
 import react from "react" /* 19 */;
@@ -39,7 +39,7 @@ export default function MessageRequestMutualServers(textVariant) {
   }
   const suffix = textVariant.suffix;
   const tmp3 = closure_6();
-  let obj = iconSize(19747);
+  let obj = iconSize(19749);
   const mutualGuildsForMessageRequests = obj.useMutualGuildsForMessageRequests(userId);
   const substr = mutualGuildsForMessageRequests.slice(0, 3);
   if (mutualGuildsForMessageRequests.length > 0) {
@@ -70,7 +70,7 @@ export default function MessageRequestMutualServers(textVariant) {
   items1 = [tmp9, ];
   const obj5 = { variant: str, color: "text-muted", lineClamp: 1, style: tmp3.label, children: combined };
   combined = formatResult;
-  const Text = tmp4(5929).Text;
+  const Text = tmp4(5919).Text;
   if (null != suffix) {
     const _HermesInternal = HermesInternal;
     combined = "" + formatResult + " \u00B7 " + suffix;

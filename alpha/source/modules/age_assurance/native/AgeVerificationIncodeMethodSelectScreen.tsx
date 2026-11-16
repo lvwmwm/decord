@@ -1,11 +1,11 @@
 // Module ID: 8203
 // Function ID: 8204
 // Name: AgeVerificationIncodeMethodSelectScreen
-// Dependencies: [5, 32, 19, 1192, 6832, 8191, 21, 5306, 8204, 8208, 8210, 6337, 7418, 8211, 5929, 1113, 3321, 7746, 7443, 2]
+// Dependencies: [5, 32, 19, 1192, 6822, 8191, 21, 5306, 8204, 8208, 8210, 6327, 7418, 8211, 5919, 1113, 3321, 7746, 7443, 2]
 // Exports: default
 
 // Module 8203 (AgeVerificationIncodeMethodSelectScreen)
-import AgeVerificationConstants from "AgeVerificationConstants" /* 6832 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 6822 */;
 import AgeVerificationIncodeWebViewConstants from "AgeVerificationIncodeWebViewConstants" /* 8191 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
@@ -158,31 +158,31 @@ export default function AgeVerificationIncodeMethodSelectScreen(onMethodSelected
   const obj2 = { children: null };
   if (tmp2) {
     let obj3 = { align: "center", justify: "center", spacing: 16, style: tmp5.loadingContainer, children: tmp6(tmp7(7418).ActivityIndicator, { size: "large" }) };
-    const Stack4 = tmp7(6337).Stack;
+    const Stack4 = tmp7(6327).Stack;
     obj2.children = closure_9(Stack4, obj3);
     obj.children = closure_9(ModalContent, obj2);
     tmp11 = obj;
   } else {
     const obj4 = { align: "stretch", spacing: 24, style: tmp5.container, children: items3 };
-    const Stack = tmp7(6337).Stack;
+    const Stack = tmp7(6327).Stack;
     let obj5 = { align: "center", justify: "center", spacing: 16, children: items1 };
-    const Stack2 = tmp7(6337).Stack;
+    const Stack2 = tmp7(6327).Stack;
     items1 = [tmp6(tmp7(8211).ShieldSpotIllustration, { height: 100, width: 177 }), ];
     const obj6 = { align: "center", justify: "center", spacing: 8, children: items2 };
-    const Stack3 = tmp7(6337).Stack;
+    const Stack3 = tmp7(6327).Stack;
     let obj7 = { accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp5.header, children: intl.string(trustedOrigin(3321).eZvwAe) };
-    const Text = tmp7(5929).Text;
+    const Text = tmp7(5919).Text;
     intl = tmp7(1113).intl;
     items2 = [tmp6(Text, obj7), ];
     const obj8 = { variant: "body-md/medium", color: "text-strong", style: tmp5.header, children: intl2.string(trustedOrigin(3321)["5yWXmT"]) };
-    const Text2 = tmp7(5929).Text;
+    const Text2 = tmp7(5919).Text;
     intl2 = tmp7(1113).intl;
     items2[1] = closure_9(Text2, obj8);
     items1[1] = closure_10(Stack3, obj6);
     items3 = [closure_10(Stack2, obj5), , ];
     if (tmp6Result) {
       const obj9 = { variant: "body-sm/medium", color: "text-feedback-critical", style: tmp5.header, children: intl3.string(onMethodSelected(1113).t.c6kn6F) };
-      const Text3 = tmp7(5929).Text;
+      const Text3 = tmp7(5919).Text;
       intl3 = tmp7(1113).intl;
       tmp6Result = closure_9(Text3, obj9);
     }

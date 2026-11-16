@@ -1,7 +1,7 @@
 // Module ID: 8009
 // Function ID: 8010
 // Name: ItemSelectorActionSheet
-// Dependencies: [19, 21, 5902, 575, 1630, 5566, 7913, 7952, 5570, 7745, 7747, 2]
+// Dependencies: [19, 21, 5892, 575, 1630, 5556, 7913, 7952, 5560, 7745, 7747, 2]
 // Exports: default
 
 // Module 8009 (ItemSelectorActionSheet)
@@ -31,11 +31,11 @@ export default function ItemSelectorActionSheet(arg0) {
   ({ title, items } = arg0);
   ({ selectedItem: importDefault, onItemSelect: dependencyMap, onClose } = arg0);
   ({ body, hasIcons } = arg0);
-  let obj = items(5902);
+  let obj = items(5892);
   const token = obj.useToken(nativeDefault.modules.mobile.TABLE_ROW_PADDING);
   const bottom = useSafeAreaInsetsDefault().bottom;
   const findIndexResult = items.findIndex((value) => value.value === importDefault);
-  const BottomSheet = items(5566).BottomSheet;
+  const BottomSheet = items(5556).BottomSheet;
   const obj2 = { title, trailing: tmp6Result };
   tmp6Result = null;
   const BottomSheetTitleHeader = items(7913).BottomSheetTitleHeader;
@@ -46,7 +46,7 @@ export default function ItemSelectorActionSheet(arg0) {
   const obj4 = { scrollable: true, header: closure_3(BottomSheetTitleHeader, obj2), children: tmp8(BottomSheetScrollView, obj5) };
   obj5 = { contentContainerStyle: obj6, children: items1 };
   obj6 = { paddingHorizontal: token, paddingBottom: bottom + nativeDefault.space.PX_16 };
-  BottomSheetScrollView = tmp(5570).BottomSheetScrollView;
+  BottomSheetScrollView = tmp(5560).BottomSheetScrollView;
   items1 = [body, ];
   let num = -1;
   const TableRadioGroup = tmp(7745).TableRadioGroup;

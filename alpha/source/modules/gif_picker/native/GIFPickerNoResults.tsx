@@ -1,7 +1,7 @@
 // Module ID: 11348
 // Function ID: 11349
 // Name: GIFPickerNoResults
-// Dependencies: [19, 17, 1072, 21, 5306, 575, 11250, 11283, 1113, 11287, 5570, 1187, 2]
+// Dependencies: [19, 17, 1072, 21, 5306, 575, 11250, 11283, 1113, 11287, 5560, 1187, 2]
 
 // Module 11348 (GIFPickerNoResults)
 import react_native from "react-native" /* 17 */;
@@ -45,7 +45,7 @@ const memoResult = react.memo(function GIFPickerNoResults(inActionSheet) {
   const tmp4Result = useModalDismissGuardRefreshControl;
   const modalDismissGuardRefreshControl = tmp4Result.useModalDismissGuardRefreshControl();
   if (inActionSheet) {
-    let BottomSheetScrollView = tmp4(5570).BottomSheetScrollView;
+    let BottomSheetScrollView = tmp4(5560).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = ScrollView;
   }

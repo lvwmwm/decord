@@ -1,12 +1,12 @@
 // Module ID: 8795
 // Function ID: 8796
 // Name: ApplicationCodedLink
-// Dependencies: [6055, 1255, 8796, 8797, 2]
+// Dependencies: [6045, 1255, 8796, 8797, 2]
 // Exports: getApplicationCodedLinkData, isApplicationCodedLink, isApplicationCodedLinkMobileSupported
 
 // Module 8795 (ApplicationCodedLink)
 import GlobalUtils from "GlobalUtils" /* 1255 */;
-import CodedLink from "CodedLink" /* 6055 */;
+import CodedLink from "CodedLink" /* 6045 */;
 import _slicedToArray from "_slicedToArray" /* 8796 */;
 import activityBookmarkUtils from "activityBookmarkUtils" /* 8797 */;
 import size from "module_2" /* 2 */;

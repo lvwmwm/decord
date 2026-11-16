@@ -1,13 +1,13 @@
 // Module ID: 13121
 // Function ID: 13122
 // Name: RouteManager
-// Dependencies: [6800, 13122, 1072, 1099, 13123, 9792, 2]
+// Dependencies: [6790, 13122, 1072, 1099, 13123, 9792, 2]
 
 // Module 13121 (RouteManager)
 import Constants from "Constants" /* 1072 */;
 import router_utils from "router_utils" /* 1099 */;
 import convertRouteToNavigation from "convertRouteToNavigation" /* 13123 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6800 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6790 */;
 import KeybindRouterStore from "KeybindRouterStore" /* 13122 */;
 import size from "module_2" /* 2 */;
 

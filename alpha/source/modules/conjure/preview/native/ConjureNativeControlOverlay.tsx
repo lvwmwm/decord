@@ -1,15 +1,15 @@
 // Module ID: 13347
 // Function ID: 13348
 // Name: ConjureNativeControlOverlay
-// Dependencies: [19, 17, 5307, 21, 5306, 575, 13348, 13142, 504, 1655, 5939, 5940, 5548, 1113, 4131, 13349, 13353, 5929, 5936, 2]
+// Dependencies: [19, 17, 5307, 21, 5306, 575, 13348, 13142, 504, 1655, 5929, 5930, 5538, 1113, 4131, 13349, 13353, 5919, 5926, 2]
 // Exports: default
 
 // Module 13347 (ConjureNativeControlOverlay)
 import nativeDefault from "native" /* 575 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5548 */;
-import spring_spring from "spring/spring" /* 5939 */;
-import springPresets from "springPresets" /* 5940 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import spring_spring from "spring/spring" /* 5929 */;
+import springPresets from "springPresets" /* 5930 */;
 import useConjureControlBar from "useConjureControlBar" /* 13348 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -270,7 +270,7 @@ export default function ConjureNativeControlOverlay(arg0) {
       items11 = [tmp44Result, , ];
       const obj9 = { variant: "body-sm/semibold", color: "text-overlay-light", lineClamp: 1, style: tmp.title, accessibilityLabel: combined, children: stringResult };
       combined = stringResult;
-      const Text = tmp2(5929).Text;
+      const Text = tmp2(5919).Text;
       if (tmp8) {
         const intl2 = tmp2(1113).intl;
         const _HermesInternal = HermesInternal;
@@ -283,7 +283,7 @@ export default function ConjureNativeControlOverlay(arg0) {
         if (null != stop) {
           const obj10 = { style: tmp.actions, children: closure_6(Button, obj11) };
           obj11 = { variant: "primary-overlay", size: "sm", text: intl3.string(tmp28(4131).oU59sU), loading: stopping, onPress: stop };
-          Button = tmp2(5936).Button;
+          Button = tmp2(5926).Button;
           intl3 = tmp2(1113).intl;
           tmp44Result3 = tmp44(tmp33, obj10);
         }

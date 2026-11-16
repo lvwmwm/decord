@@ -1,15 +1,15 @@
 // Module ID: 12043
 // Function ID: 12044
 // Name: MoreTipsModal
-// Dependencies: [19, 17, 10896, 1072, 21, 5306, 575, 12044, 5929, 1113, 12049, 7427, 6848, 7430, 1187, 1630, 563, 12038, 6771, 6776, 7490, 2]
+// Dependencies: [19, 17, 10896, 1072, 21, 5306, 575, 12044, 5919, 1113, 12049, 7427, 6838, 7430, 1187, 1630, 563, 12038, 6761, 6766, 7490, 2]
 // Exports: default
 
 // Module 12043 (MoreTipsModal)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 6771 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 6761 */;
 import SafetyWarningUtils from "SafetyWarningUtils" /* 12038 */;
 import SafetyTipsSectionDefault from "SafetyTipsSection" /* 12044 */;
 import react from "react" /* 19 */;
@@ -29,7 +29,7 @@ let obj4;
 let obj5;
 let tmp;
 let tmp6;
-const MetricEvents = tmp(6776);
+const MetricEvents = tmp(6766);
 const WasThisHelpfulSectionDefault = tmp6(12049);
 function MoreTipsModalScreen(learnMore) {
   let actionItems;

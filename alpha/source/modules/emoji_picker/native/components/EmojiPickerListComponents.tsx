@@ -1,14 +1,14 @@
 // Module ID: 11273
 // Function ID: 11274
 // Name: EmojiPickerListComponents
-// Dependencies: [19, 17, 9546, 21, 5306, 575, 1187, 9393, 5929, 1113, 11271, 2]
+// Dependencies: [19, 17, 9546, 21, 5306, 575, 1187, 9393, 5919, 1113, 11271, 2]
 
 // Module 11273 (EmojiPickerListComponents)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import AssetRegistryDefault from "AssetRegistry" /* 9393 */;
 import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 11271 */;
 import react from "react" /* 19 */;

@@ -1,26 +1,26 @@
 // Module ID: 11145
 // Function ID: 11146
 // Name: useNativeForumPostHandlers
-// Dependencies: [19, 5553, 5155, 5248, 1388, 8867, 11146, 1072, 1112, 5920, 38, 5954, 8033, 1381, 9111, 9100, 8627, 1380, 5554, 5555, 8866, 6063, 5501, 11147, 11866, 11864, 2]
+// Dependencies: [19, 5543, 5155, 5248, 1388, 8867, 11146, 1072, 1112, 5910, 38, 5944, 8033, 1381, 9111, 9100, 8627, 1380, 5544, 5545, 8866, 6053, 5491, 11147, 11866, 11864, 2]
 // Exports: default
 
 // Module 11145 (useNativeForumPostHandlers)
 import _modDef38 from "module_38" /* 38 */;
 import ThreadConstants from "ThreadConstants" /* 1112 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import ChatInputUtils from "ChatInputUtils" /* 5501 */;
-import HapticUtils from "HapticUtils" /* 5554 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5555 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 5920 */;
-import useChannelName from "useChannelName" /* 5954 */;
-import transitionToChannel from "transitionToChannel" /* 6063 */;
+import ChatInputUtils from "ChatInputUtils" /* 5491 */;
+import HapticUtils from "HapticUtils" /* 5544 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5545 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 5910 */;
+import useChannelName from "useChannelName" /* 5944 */;
+import transitionToChannel from "transitionToChannel" /* 6053 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 8033 */;
 import openMediaModal from "openMediaModal" /* 8627 */;
 import Tracking from "Tracking" /* 8866 */;
 import messages_MessagesUtils from "messages/MessagesUtils" /* 11864 */;
 import reactions_ReactionUtils from "reactions/ReactionUtils" /* 11866 */;
 import react from "react" /* 19 */;
-import ActionSheetStore from "ActionSheetStore" /* 5553 */;
+import ActionSheetStore from "ActionSheetStore" /* 5543 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import RelationshipStore from "RelationshipStore" /* 5248 */;
 import UserStore from "UserStore" /* 1388 */;
@@ -48,7 +48,7 @@ export default function useNativeForumPostHandlers(threadId) {
   if (NORMAL === undefined) {
     let tmp = threadId;
     let tmp2 = dependencyMap;
-    NORMAL = threadId(5920).ReactionTypes.NORMAL;
+    NORMAL = threadId(5910).ReactionTypes.NORMAL;
   }
   const items = [threadId];
   const items1 = [threadId];

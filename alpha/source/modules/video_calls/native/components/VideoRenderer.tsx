@@ -1,7 +1,7 @@
 // Module ID: 12795
 // Function ID: 12796
 // Name: VideoRenderer
-// Dependencies: [32, 19, 17, 21, 5306, 6197, 12796, 12798, 1496, 1380, 10041, 12800, 12801, 12803, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 6187, 12796, 12798, 1496, 1380, 10041, 12800, 12801, 12803, 2]
 
 // Module 12795 (VideoRenderer)
 import PlatformUtils from "PlatformUtils" /* 1380 */;
@@ -72,7 +72,7 @@ const memoResult = react.memo(function VideoRenderer(gestureEnabled) {
   let tmp2 = onReady();
   let tmp3 = resizeMode;
   const tmp4 = dependencyMap;
-  let obj = resizeMode(6197);
+  let obj = resizeMode(6187);
   const surfaceDirectRendererExperiment = obj.useSurfaceDirectRendererExperiment(userId, { location: "VideoRenderer" });
   let tmp6 = first1(react.useState(0), 2);
   let width = tmp6[0];

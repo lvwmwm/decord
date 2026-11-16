@@ -197,7 +197,7 @@ export default function getPluralRules(arg0, arg1, arg2, arg3) {
               const typeError = new TypeError("Cannot initialize the same private elements twice on an object");
               throw typeError;
             } else {
-              const result = obj2.set(self, { writable: true, value: "Array" });
+              const result = obj2.set(self, { writable: true, value: "a" });
               const obj3 = weakMap1;
               if (weakMap1.has(self)) {
                 const _TypeError17 = TypeError;
@@ -206,7 +206,7 @@ export default function getPluralRules(arg0, arg1, arg2, arg3) {
                 const typeError1 = new TypeError("Cannot initialize the same private elements twice on an object");
                 throw typeError1;
               } else {
-                const result1 = obj3.set(self, { writable: true, value: "Array" });
+                const result1 = obj3.set(self, { writable: true, value: "a" });
                 const obj4 = weakMap2;
                 if (weakMap2.has(self)) {
                   const _TypeError16 = TypeError;
@@ -215,7 +215,7 @@ export default function getPluralRules(arg0, arg1, arg2, arg3) {
                   const typeError2 = new TypeError("Cannot initialize the same private elements twice on an object");
                   throw typeError2;
                 } else {
-                  const result2 = obj4.set(self, { writable: true, value: "Array" });
+                  const result2 = obj4.set(self, { writable: true, value: "a" });
                   const obj5 = weakMap3;
                   if (weakMap3.has(self)) {
                     const _TypeError15 = TypeError;
@@ -224,7 +224,7 @@ export default function getPluralRules(arg0, arg1, arg2, arg3) {
                     const typeError3 = new TypeError("Cannot initialize the same private elements twice on an object");
                     throw typeError3;
                   } else {
-                    const result3 = obj5.set(self, { writable: true, value: "Array" });
+                    const result3 = obj5.set(self, { writable: true, value: "a" });
                     const obj6 = weakMap4;
                     if (weakMap4.has(self)) {
                       const _TypeError14 = TypeError;
@@ -235,7 +235,7 @@ export default function getPluralRules(arg0, arg1, arg2, arg3) {
                     } else {
                       let tmp15;
                       let tmp16;
-                      const result4 = obj6.set(self, { writable: true, value: "Array" });
+                      const result4 = obj6.set(self, { writable: true, value: "a" });
                       const arr = canonicalizeLocaleList([]);
                       let num2 = 0;
                       if (0 >= arr.length) {

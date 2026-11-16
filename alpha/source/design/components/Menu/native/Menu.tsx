@@ -1,7 +1,7 @@
 // Module ID: 16437
 // Function ID: 16438
 // Name: Menu
-// Dependencies: [32, 19, 17, 1072, 21, 16438, 5306, 575, 1655, 1708, 5320, 1630, 1496, 1380, 5315, 1113, 6331, 5548, 6332, 16439, 16440, 5939, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 16438, 5306, 575, 1655, 1708, 5320, 1630, 1496, 1380, 5315, 1113, 6321, 5538, 6322, 16439, 16440, 5929, 2]
 // Exports: Menu
 
 // Module 16437 (Menu)
@@ -12,9 +12,9 @@ import intl2 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import _mod1655 from "module_1655" /* 1655 */;
 import _mod1708 from "module_1708" /* 1708 */;
-import timing_timing from "timing/timing" /* 5548 */;
-import spring_spring from "spring/spring" /* 5939 */;
-import react_native from "react-native" /* 6331 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import spring_spring from "spring/spring" /* 5929 */;
+import react_native from "react-native" /* 6321 */;
 import Easing_Easing from "Easing/Easing" /* 16438 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

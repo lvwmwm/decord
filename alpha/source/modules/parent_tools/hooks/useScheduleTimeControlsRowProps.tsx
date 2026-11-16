@@ -1,14 +1,14 @@
 // Module ID: 17441
 // Function ID: 17442
 // Name: useScheduleTimeControlsRowProps
-// Dependencies: [21, 5929, 1113, 2701, 2]
+// Dependencies: [21, 5919, 1113, 2701, 2]
 // Exports: default
 
 // Module 17441 (useScheduleTimeControlsRowProps)
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1113 */;
 import _modDef2701 from "module_2701" /* 2701 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;

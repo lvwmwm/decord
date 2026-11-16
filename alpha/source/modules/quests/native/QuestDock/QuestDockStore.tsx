@@ -1,12 +1,12 @@
 // Module ID: 17696
 // Function ID: 17697
 // Name: QuestDockStore
-// Dependencies: [5338, 504, 17697, 572, 2]
+// Dependencies: [6954, 504, 17697, 572, 2]
 
 // Module 17696 (QuestDockStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import QuestConstants from "QuestConstants" /* 5338 */;
+import QuestConstants from "QuestConstants" /* 6954 */;
 import QuestDockUtils from "QuestDockUtils" /* 17697 */;
 import size from "module_2" /* 2 */;
 

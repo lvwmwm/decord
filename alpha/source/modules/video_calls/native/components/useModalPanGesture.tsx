@@ -1,20 +1,20 @@
 // Module ID: 14036
 // Function ID: 14037
 // Name: useModalPanGesture
-// Dependencies: [1655, 5598, 1708, 5939, 6848, 2]
+// Dependencies: [1655, 5588, 1708, 5929, 6838, 2]
 // Exports: default
 
 // Module 14036 (useModalPanGesture)
 import _mod1655 from "module_1655" /* 1655 */;
 import _mod1708 from "module_1708" /* 1708 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5598 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5588 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import size from "module_2" /* 2 */;
 
 let _undefined;
 
 let tmp;
-const spring_spring = tmp(5939);
+const spring_spring = tmp(5929);
 let closure_3 = { code: "(function useModalPanGestureTsx1(){let[onStart,scheduleOnRN,start,translateY]=this.__closure;if(onStart!=null){scheduleOnRN(onStart);}start.set({y:translateY.get()});})" };
 let closure_4 = { code: "(function useModalPanGestureTsx2({translationY:translationY}){let[translateY,interpolate,start,maxTranslate,Extrapolate]=this.__closure;translateY.set(interpolate(start.get().y+translationY,[0,maxTranslate],[0,maxTranslate],Extrapolate.CLAMP));})" };
 let closure_5 = { code: "(function useModalPanGestureTsx3(){let[scheduleOnRN,ModalActionCreators]=this.__closure;scheduleOnRN(ModalActionCreators.pop);})" };

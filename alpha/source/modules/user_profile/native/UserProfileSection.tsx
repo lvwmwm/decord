@@ -1,15 +1,15 @@
 // Module ID: 12501
 // Function ID: 12502
 // Name: UserProfileSection
-// Dependencies: [19, 17, 21, 5306, 575, 5377, 7939, 5303, 8110, 5929, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 5367, 7939, 5303, 8110, 5919, 2]
 // Exports: default
 
 // Module 12501 (UserProfileSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ColorUtils from "ColorUtils" /* 5303 */;
-import native from "native" /* 5377 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import native from "native" /* 5367 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import useProfileThemeValues from "useProfileThemeValues" /* 7939 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

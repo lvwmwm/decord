@@ -1,7 +1,7 @@
 // Module ID: 11958
 // Function ID: 11959
 // Name: AnnouncementChannelLurkerBar
-// Dependencies: [19, 17, 21, 5306, 575, 5929, 1113, 5936, 11959, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 5919, 1113, 5926, 11959, 2]
 
 // Module 11958 (AnnouncementChannelLurkerBar)
 import react_native from "react-native" /* 17 */;
@@ -24,7 +24,7 @@ class AnnouncementChannelLurkerBar {
     const tmp = closure_5();
     let obj = { style: tmp.wrapper, children: items };
     const obj2 = { style: tmp.text, variant: "body-sm/medium", color: "mobile-text-heading-primary", children: intl.string(channel(1113).t.Hl0Mqh) };
-    const Text = channel(5929).Text;
+    const Text = channel(5919).Text;
     intl = channel(1113).intl;
     items = [closure_3(Text, obj2), ];
     const obj3 = {
@@ -41,7 +41,7 @@ class AnnouncementChannelLurkerBar {
       variant: "secondary",
       grow: true
     };
-    const Button = channel(5936).Button;
+    const Button = channel(5926).Button;
     intl2 = channel(1113).intl;
     items[1] = closure_3(Button, obj3);
     return closure_4(View, obj);

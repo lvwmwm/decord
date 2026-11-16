@@ -1,22 +1,22 @@
-// Module ID: 6903
-// Function ID: 6904
+// Module ID: 6893
+// Function ID: 6894
 // Name: StageChannelActionCreatorExtras
-// Dependencies: [6901, 6904, 6906, 1072, 5552, 6907, 2121, 16068, 16069, 16074, 11951, 1108, 6900, 5492, 6848, 12713, 8476, 12912, 2]
+// Dependencies: [6891, 6894, 6896, 1072, 5542, 6897, 2121, 16068, 16069, 16074, 11951, 1108, 6890, 5482, 6838, 12713, 8476, 12912, 2]
 // Exports: navigateToStage, openEndGuildEventConfirmationModal, openEndStageModal, openStageBlockedUsersSheet, openStageChannelSettings, openStageSettingsSheet, shouldShowBlockedUsers, showChannelChangeConfirmationAlert, showPlatformUserProfile
 
-// Module 6903 (StageChannelActionCreatorExtras)
+// Module 6893 (StageChannelActionCreatorExtras)
 import Constants from "Constants" /* 1072 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5492 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6900 */;
-import useIsOnStartStageScreenStore from "useIsOnStartStageScreenStore" /* 6904 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5482 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6890 */;
+import useIsOnStartStageScreenStore from "useIsOnStartStageScreenStore" /* 6894 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;
 import StageChannelUnifiedCallExperiment from "StageChannelUnifiedCallExperiment" /* 11951 */;
 import useStageBlockedUsersCount from "useStageBlockedUsersCount" /* 12912 */;
-import VoicePanelStore from "VoicePanelStore" /* 6901 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 6906 */;
+import VoicePanelStore from "VoicePanelStore" /* 6891 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 6896 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -55,7 +55,7 @@ const result = size.fileFinishedImporting("modules/stage_channels/StageChannelAc
 export function openStageChannelSettings(channel) {
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { channel };
-  obj.openLazy(asyncRequire(6907, dependencyMap.paths), hasOwnProperty, obj2);
+  obj.openLazy(asyncRequire(6897, dependencyMap.paths), hasOwnProperty, obj2);
 }
 export function openEndGuildEventConfirmationModal() {
 

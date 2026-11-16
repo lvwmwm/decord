@@ -1,13 +1,13 @@
-// Module ID: 19577
-// Function ID: 19578
+// Module ID: 19579
+// Function ID: 19580
 // Name: ChannelDetailsTopic
-// Dependencies: [32, 19, 17, 1388, 10897, 1072, 21, 5306, 1380, 19578, 1655, 5939, 6057, 11059, 7428, 5929, 1113, 5893, 504, 5372, 6356, 2]
+// Dependencies: [32, 19, 17, 1388, 10897, 1072, 21, 5306, 1380, 19580, 1655, 5929, 6047, 11059, 7428, 5919, 1113, 5883, 504, 5362, 6346, 2]
 
-// Module 19577 (ChannelDetailsTopic)
+// Module 19579 (ChannelDetailsTopic)
 import Constants from "Constants" /* 1072 */;
-import UserUtilsDefault from "UserUtils" /* 5372 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 6057 */;
-import ChannelUtils from "ChannelUtils" /* 6356 */;
+import UserUtilsDefault from "UserUtils" /* 5362 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 6047 */;
+import ChannelUtils from "ChannelUtils" /* 6346 */;
 import MentionPillOffset from "MentionPillOffset" /* 11059 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -312,7 +312,7 @@ function PrivateChannelDetailsTopic(channel) {
   if (null != stateFromStores) {
     const obj2 = { variant: "heading-xs/medium", color: "interactive-text-default", style: obj3, children: stateFromStores };
     obj3 = { textAlign };
-    tmp4 = closure_11(tmp(5929).Text, obj2);
+    tmp4 = closure_11(tmp(5919).Text, obj2);
   }
   return tmp4;
 }
@@ -331,7 +331,7 @@ function GroupDMChannelDetailsTopic(channel) {
   if (null != stateFromStores) {
     const obj2 = { variant: "heading-xs/medium", color: "interactive-text-default", style: obj3, children: stateFromStores };
     obj3 = { textAlign };
-    tmp4 = closure_11(tmp(5929).Text, obj2);
+    tmp4 = closure_11(tmp(5919).Text, obj2);
   }
   return tmp4;
 }

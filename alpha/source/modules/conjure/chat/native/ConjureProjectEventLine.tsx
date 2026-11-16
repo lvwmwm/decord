@@ -1,11 +1,11 @@
 // Module ID: 13635
 // Function ID: 13636
 // Name: ConjureProjectEventLine
-// Dependencies: [19, 21, 13628, 13624, 13636, 13602, 13638, 5929, 13640, 2]
+// Dependencies: [19, 21, 13628, 13624, 13636, 13602, 13638, 5919, 13640, 2]
 // Exports: default
 
 // Module 13635 (ConjureProjectEventLine)
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import useConjureRemixSettingsRequestDefault from "useConjureRemixSettingsRequest" /* 13602 */;
 import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 13624 */;
 import ConjureSelectedMentionDefault from "ConjureSelectedMention" /* 13628 */;

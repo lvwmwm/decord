@@ -1,13 +1,13 @@
 // Module ID: 10044
 // Function ID: 10045
 // Name: virtual_currency/BalanceWidgetPill
-// Dependencies: [19, 17, 21, 5306, 5942, 575, 1380, 10045, 1113, 10046, 10052, 10053, 2]
+// Dependencies: [19, 17, 21, 5306, 5932, 575, 1380, 10045, 1113, 10046, 10052, 10053, 2]
 
 // Module 10044 (virtual_currency/BalanceWidgetPill)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import ButtonConstants from "ButtonConstants" /* 5942 */;
+import ButtonConstants from "ButtonConstants" /* 5932 */;
 import useVirtualCurrencyBalanceAnimationData from "useVirtualCurrencyBalanceAnimationData" /* 10045 */;
 import OrbLottieAnimation from "OrbLottieAnimation" /* 10046 */;
 import AnimationUtils from "AnimationUtils" /* 10053 */;

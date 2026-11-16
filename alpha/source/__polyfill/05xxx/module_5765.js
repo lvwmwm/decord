@@ -1,106 +1,113 @@
 // Module ID: 5765
 // Function ID: 5766
-// Dependencies: [19, 17, 21, 5766, 5575, 5571]
+// Dependencies: [19, 21, 5565, 5588, 5572, 1655]
 
 // Module 5765
 import Fragment from "Fragment" /* 21 */;
-import GESTURE_SOURCE from "GESTURE_SOURCE" /* 5571 */;
-import _mod5575 from "module_5575" /* 5575 */;
-import react_native from "react-native" /* 5766 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5588 */;
 import react_mod from "react" /* 19 */;
-import react_native2 from "react-native" /* 17 */;
 
-let c2;
+let nativeGestureRef;
+
 let c3;
-let closure_4;
-let hasOwnProperty;
+let memo;
 let react = react_mod;
-({ useMemo: c2, useRef: c3 } = react);
-const memo = react.memo;
+({ useMemo: c3, memo } = react);
 react = react_mod;
-({ StatusBar: closure_4, View: hasOwnProperty } = react_native2);
 const jsx = Fragment.jsx;
-const memoResult = memo(function BottomSheetHostingContainerComponent(bottomInset) {
-  let stableCallback;
-  let topInset;
-  let value;
-  ({ containerHeight: require, containerOffset: dependencyMap, topInset } = bottomInset);
-  if (topInset === undefined) {
-    topInset = 0;
-  }
-  let num = bottomInset.bottomInset;
-  if (num === undefined) {
-    num = 0;
-  }
-  let flag = bottomInset.shouldCalculateHeight;
-  if (flag === undefined) {
-    flag = true;
-  }
-  const detached = bottomInset.detached;
-  const style = bottomInset.style;
-  const children = bottomInset.children;
-  const tmp = num(null);
-  const ref = tmp;
-  let items = [style, detached, topInset, num];
-  const obj2 = {
-    ref: tmp,
-    pointerEvents: "box-none",
-    onLayout: stableCallback,
-    style: topInset(() => {
-      let str;
-      const items = [style, react_native.styles.container, ];
-      const rect = { top: topInset, bottom: num, overflow: str };
-      str = "hidden";
-      if (detached) {
-        str = "visible";
+const memoResult = memo((nativeGestureRef) => {
+  let Provider;
+  let View;
+  let children;
+  let obj4;
+  let obj5;
+  let style;
+  nativeGestureRef = nativeGestureRef.nativeGestureRef;
+  const refreshControlGestureRef = nativeGestureRef.refreshControlGestureRef;
+  ({ style, children } = nativeGestureRef);
+  const merged = Object.assign(nativeGestureRef, Object.assign({ nativeGestureRef: 0, refreshControlGestureRef: 0, style: 0, children: 0 }));
+  let enableContentPanningGesture;
+  const obj = nativeGestureRef(enableContentPanningGesture[2]);
+  const bottomSheetInternal = obj.useBottomSheetInternal();
+  enableContentPanningGesture = bottomSheetInternal.enableContentPanningGesture;
+  const simultaneousHandlers = bottomSheetInternal.simultaneousHandlers;
+  const waitFor = bottomSheetInternal.waitFor;
+  const activeOffsetX = bottomSheetInternal.activeOffsetX;
+  const activeOffsetY = bottomSheetInternal.activeOffsetY;
+  const failOffsetX = bottomSheetInternal.failOffsetX;
+  const failOffsetY = bottomSheetInternal.failOffsetY;
+  const obj2 = nativeGestureRef(enableContentPanningGesture[2]);
+  const contentPanGestureHandler = obj2.useBottomSheetGestureHandlers().contentPanGestureHandler;
+  let items = [simultaneousHandlers, nativeGestureRef, refreshControlGestureRef];
+  const tmp3 = simultaneousHandlers(() => {
+    const items = [];
+    if (nativeGestureRef) {
+      items.push(tmp2);
+    }
+    if (refreshControlGestureRef) {
+      items.push(tmp4);
+    }
+    if (simultaneousHandlers) {
+      const _Array = Array;
+      const push = items.push;
+      if (Array.isArray(simultaneousHandlers)) {
+        const items1 = [];
+        HermesBuiltin.arraySpread(items1, simultaneousHandlers, 0);
+        HermesBuiltin.apply(push, items1, items);
+      } else {
+        push(simultaneousHandlers);
       }
-      items[2] = rect;
-      return items;
-    }, items),
-    collapsable: true,
-    children
-  };
-  stableCallback = undefined;
-  const obj = _mod5575;
-  const tmp3 = ref;
-  const tmp4 = style;
-  if (flag) {
-    stableCallback = obj.useStableCallback(function handleLayoutEvent(nativeEvent) {
-      const height = nativeEvent.nativeEvent.layout.height;
-      height.value = height;
-      const current = ref.current;
-      if (current != null) {
-        current.measure((arg0, arg1, arg2, arg3, arg4, arg5) => {
-          let WINDOW_HEIGHT;
-          let max;
-          let num3;
-          let sum;
-          if (dependencyMap.value) {
-            num = arg5;
-            let num2 = arg5;
-            if (arg5 == null) {
-              num2 = 0;
-            }
-            const rect = { top: num2, left: 0, right: 0, bottom: max(0, WINDOW_HEIGHT - (sum + num3)) };
-            const _Math = Math;
-            max = Math.max;
-            WINDOW_HEIGHT = GESTURE_SOURCE.WINDOW_HEIGHT;
-            if (num == null) {
-              num = 0;
-            }
-            num3 = currentHeight.currentHeight;
-            sum = num + height;
-            if (num3 == null) {
-              num3 = 0;
-            }
-            tmp.value = rect;
-          }
-        });
-      }
-    });
-  }
-  return tmp3(tmp4, obj2);
+    }
+    return items;
+  }, items);
+  let closure_10 = tmp3;
+  let items1 = [activeOffsetX, activeOffsetY, enableContentPanningGesture, failOffsetX, failOffsetY, tmp3, waitFor, , , , ];
+  ({ handleOnChange: arr2[7], handleOnEnd: arr2[8], handleOnFinalize: arr2[9], handleOnStart: arr2[10] } = contentPanGestureHandler);
+  const tmp4 = simultaneousHandlers(() => {
+    const Gesture = LegacyBaseButton.Gesture;
+    const PanResult = Gesture.Pan();
+    const enabledResult = PanResult.enabled(enableContentPanningGesture);
+    const result = enabledResult.shouldCancelWhenOutside(false);
+    const runOnJSResult = result.runOnJS(false);
+    const onStartResult = runOnJSResult.onStart(contentPanGestureHandler.handleOnStart);
+    const onChangeResult = onStartResult.onChange(contentPanGestureHandler.handleOnChange);
+    const onEndResult = onChangeResult.onEnd(contentPanGestureHandler.handleOnEnd);
+    const onFinalizeResult = onEndResult.onFinalize(contentPanGestureHandler.handleOnFinalize);
+    let result1 = onFinalizeResult;
+    if (waitFor) {
+      result1 = onFinalizeResult.requireExternalGestureToFail(tmp);
+    }
+    let result2 = result1;
+    if (closure_10) {
+      result2 = result1.simultaneousWithExternalGesture(tmp2);
+    }
+    let activeOffsetXResult = result2;
+    if (activeOffsetX) {
+      activeOffsetXResult = result2.activeOffsetX(tmp3);
+    }
+    let activeOffsetYResult = activeOffsetXResult;
+    if (activeOffsetY) {
+      activeOffsetYResult = activeOffsetXResult.activeOffsetY(tmp4);
+    }
+    let failOffsetXResult = activeOffsetYResult;
+    if (failOffsetX) {
+      failOffsetXResult = activeOffsetYResult.failOffsetX(tmp5);
+    }
+    let failOffsetYResult = failOffsetXResult;
+    if (failOffsetY) {
+      failOffsetYResult = failOffsetXResult.failOffsetY(tmp6);
+    }
+    return failOffsetYResult;
+  }, items1);
+  const obj3 = { gesture: tmp4, children: waitFor(Provider, obj4) };
+  const GestureDetector = nativeGestureRef(enableContentPanningGesture[3]).GestureDetector;
+  obj4 = { value: tmp4, children: waitFor(View, obj5) };
+  Provider = nativeGestureRef(enableContentPanningGesture[4]).BottomSheetDraggableContext.Provider;
+  obj5 = { style, children };
+  View = refreshControlGestureRef(enableContentPanningGesture[5]).View;
+  const merged1 = Object.assign(merged);
+  return waitFor(GestureDetector, obj3);
 });
-memoResult.displayName = "BottomSheetHostingContainer";
+memoResult.displayName = "BottomSheetDraggableView";
 
-export const BottomSheetHostingContainer = memoResult;
+export default memoResult;

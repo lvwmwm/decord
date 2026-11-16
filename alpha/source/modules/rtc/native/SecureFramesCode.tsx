@@ -1,13 +1,13 @@
 // Module ID: 10641
 // Function ID: 10642
 // Name: SecureFramesCode
-// Dependencies: [19, 17, 1083, 21, 5306, 575, 5929, 2]
+// Dependencies: [19, 17, 1083, 21, 5306, 575, 5919, 2]
 // Exports: default
 
 // Module 10641 (SecureFramesCode)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

@@ -1,9 +1,9 @@
-// Module ID: 18593
-// Function ID: 18594
+// Module ID: 18595
+// Function ID: 18596
 // Name: ParentalControlsExplicitMediaFiltersFriendsDMsSetting
 // Dependencies: [8740, 9202, 17346, 8853, 17350, 1113, 17356, 1196, 12406, 2]
 
-// Module 18593 (ParentalControlsExplicitMediaFiltersFriendsDMsSetting)
+// Module 18595 (ParentalControlsExplicitMediaFiltersFriendsDMsSetting)
 import intl3 from "intl" /* 1113 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;
 import useParentalControlSettings from "useParentalControlSettings" /* 17346 */;

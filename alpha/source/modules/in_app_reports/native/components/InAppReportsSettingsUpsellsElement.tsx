@@ -1,14 +1,14 @@
 // Module ID: 12297
 // Function ID: 12298
 // Name: InAppReportsSettingsUpsellsElement
-// Dependencies: [32, 19, 17, 5155, 1072, 21, 5306, 575, 5899, 12067, 12287, 10569, 504, 12075, 7746, 1113, 5929, 8604, 6067, 2]
+// Dependencies: [32, 19, 17, 5155, 1072, 21, 5306, 575, 5889, 12067, 12287, 10569, 504, 12075, 7746, 1113, 5919, 8604, 6057, 2]
 // Exports: default
 
 // Module 12297 (InAppReportsSettingsUpsellsElement)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useMountEffectDefault from "useMountEffect" /* 5899 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6067 */;
+import useMountEffectDefault from "useMountEffect" /* 5889 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6057 */;
 import openUserSettings from "openUserSettings" /* 8604 */;
 import SettingsIcon from "SettingsIcon" /* 10569 */;
 import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 12067 */;

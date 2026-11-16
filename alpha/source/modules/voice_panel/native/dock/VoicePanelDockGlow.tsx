@@ -1,15 +1,15 @@
-// Module ID: 19178
-// Function ID: 19179
+// Module ID: 19180
+// Function ID: 19181
 // Name: VoicePanelDockGlow
-// Dependencies: [19, 17, 12009, 21, 11984, 1655, 5548, 5902, 575, 19179, 8263, 11253, 14854, 14853, 14856, 5303, 12017, 5893, 2]
+// Dependencies: [19, 17, 12009, 21, 11984, 1655, 5538, 5892, 575, 19181, 8263, 11253, 14854, 14853, 14856, 5303, 12017, 5883, 2]
 // Exports: VoicePanelDockBottomLine, VoicePanelDockGlow
 
-// Module 19178 (VoicePanelDockGlow)
+// Module 19180 (VoicePanelDockGlow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1655 from "module_1655" /* 1655 */;
 import ColorUtils from "ColorUtils" /* 5303 */;
-import timing_timing from "timing/timing" /* 5548 */;
+import timing_timing from "timing/timing" /* 5538 */;
 import inlineStyles from "inlineStyles" /* 8263 */;
 import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 11253 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11984 */;
@@ -29,7 +29,7 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 const _modDef1655 = tmp(1655);
-const LinearGradientDefault = tmp(5893);
+const LinearGradientDefault = tmp(5883);
 const StyleSheet = react_native.StyleSheet;
 const getDockInset = VoicePanelDockConstants.getDockInset;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -349,7 +349,7 @@ export function VoicePanelDockBottomLine(micLive) {
   micLive = micLive.micLive;
   const context = react.useContext(VoicePanelStateContextDefault);
   ({ dockContentSwap, dockMinimizeProgress, dockPressProgress, isDockConnected, isDockExpanding, sheetExitProgress, wrapperDimensions, dockSheetWidth } = context);
-  let obj = token(5902);
+  let obj = token(5892);
   token = obj.useToken(nativeDefault.colors.ICON_VOICE_SPEAKING);
   items = [token];
   const memo = react.useMemo(() => {

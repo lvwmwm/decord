@@ -1,17 +1,17 @@
-// Module ID: 20559
-// Function ID: 20560
+// Module ID: 20562
+// Function ID: 20563
 // Name: GuildSettingsRoleTemplate
-// Dependencies: [32, 19, 17, 5307, 5177, 20555, 1072, 21, 5306, 575, 7771, 1496, 5568, 1655, 1256, 6067, 13007, 7428, 5929, 11689, 1187, 12481, 5936, 1113, 2]
+// Dependencies: [32, 19, 17, 5307, 5177, 20558, 1072, 21, 5306, 575, 7771, 1496, 5558, 1655, 1256, 6057, 13007, 7428, 5919, 11689, 1187, 12481, 5926, 1113, 2]
 // Exports: default
 
-// Module 20559 (GuildSettingsRoleTemplate)
+// Module 20562 (GuildSettingsRoleTemplate)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5568 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6067 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5558 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6057 */;
 import useIsWindowLargeDefault from "useIsWindowLarge" /* 7771 */;
 import AssetRegistryDefault from "AssetRegistry" /* 12481 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
@@ -19,7 +19,7 @@ import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import GuildStore from "GuildStore" /* 5177 */;
-import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 20555 */;
+import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 20558 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;

@@ -1,15 +1,15 @@
 // Module ID: 17342
 // Function ID: 17343
 // Name: SettingsScreenNotices
-// Dependencies: [19, 17, 1388, 21, 5306, 575, 9619, 17343, 17344, 5995, 6835, 6830, 17352, 17353, 2]
+// Dependencies: [19, 17, 1388, 21, 5306, 575, 9619, 17343, 17344, 5985, 6825, 6820, 17352, 17353, 2]
 // Exports: default
 
 // Module 17342 (SettingsScreenNotices)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5995 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 6835 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5985 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 6825 */;
 import FamilyCenterUtils from "FamilyCenterUtils" /* 9619 */;
 import FamilyCenterSettingsNoticeDefault from "FamilyCenterSettingsNotice" /* 17343 */;
 import AgeNoticeSettingsNoticesLazy from "AgeNoticeSettingsNoticesLazy" /* 17344 */;
@@ -24,7 +24,7 @@ let items;
 let items1;
 let items2;
 let tmp;
-const AgeVerificationUtils = tmp(6830);
+const AgeVerificationUtils = tmp(6820);
 function predicate() {
   const obj = RegionalFeatureConfigUtils;
   let isFeatureAgeGatedResult = obj.isFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.REACTIVE_CHECK);

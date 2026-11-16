@@ -1,7 +1,7 @@
 // Module ID: 17545
 // Function ID: 17546
 // Name: BountiesModalContentScroll
-// Dependencies: [32, 19, 17, 8807, 5338, 17546, 1072, 5152, 21, 1360, 575, 5306, 1655, 1496, 1630, 17547, 10131, 8804, 17542, 5548, 5551, 8825, 10171, 1108, 504, 17550, 17551, 1269, 8834, 17552, 10133, 5345, 5343, 15249, 1708, 17553, 17591, 17556, 15264, 17592, 7888, 17596, 5893, 17597, 5377, 17101, 2]
+// Dependencies: [32, 19, 17, 8807, 6954, 17546, 1072, 5152, 21, 1360, 575, 5306, 1655, 1496, 1630, 17547, 10131, 8804, 17542, 5538, 5541, 8825, 10171, 1108, 504, 17550, 17551, 1269, 8834, 17552, 10133, 6961, 6959, 15249, 1708, 17553, 17591, 17556, 15264, 17592, 7888, 17596, 5883, 17597, 5367, 17101, 2]
 // Exports: default
 
 // Module 17545 (BountiesModalContentScroll)
@@ -9,11 +9,11 @@ import nativeDefault from "native" /* 575 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import _mod1655 from "module_1655" /* 1655 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
-import QuestContent from "QuestContent" /* 5343 */;
-import AdCreativeType from "AdCreativeType" /* 5345 */;
-import native from "native" /* 5377 */;
-import timing_timing from "timing/timing" /* 5548 */;
-import timingPresets from "timingPresets" /* 5551 */;
+import native from "native" /* 5367 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import timingPresets from "timingPresets" /* 5541 */;
+import QuestContent from "QuestContent" /* 6959 */;
+import AdCreativeType from "AdCreativeType" /* 6961 */;
 import QuestDataUtils from "QuestDataUtils" /* 8804 */;
 import AnalyticsActions from "AnalyticsActions" /* 8825 */;
 import AnalyticsTypes from "AnalyticsTypes" /* 8834 */;
@@ -28,7 +28,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import BountyStore from "BountyStore" /* 8807 */;
-import QuestConstants from "QuestConstants" /* 5338 */;
+import QuestConstants from "QuestConstants" /* 6954 */;
 import BountiesModalConstants from "BountiesModalConstants" /* 17546 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
@@ -1122,8 +1122,8 @@ function BountiesModalContentScrollInner(initialBountyId) {
       }
       obj16 = {
         adContentId,
-        adCreativeType: tmp5(5345).AdCreativeType.BOUNTY,
-        questContent: tmp5(5343).QuestContent.BOUNTIES_END_INTERSTITIAL,
+        adCreativeType: tmp5(6961).AdCreativeType.BOUNTY,
+        questContent: tmp5(6959).QuestContent.BOUNTIES_END_INTERSTITIAL,
         overrideVisibility: first2,
         sourceQuestContent,
         children() {
@@ -1170,7 +1170,7 @@ function BountiesModalContentScrollInner(initialBountyId) {
     if (tmp173) {
       tmp194Result5 = null;
       if (data.length > 1) {
-        const obj21 = { pointerEvents: "none", style: items71, children: callback2(tmp2(5893), obj22) };
+        const obj21 = { pointerEvents: "none", style: items71, children: callback2(tmp2(5883), obj22) };
         items71 = [memo13, animatedStyle4];
         const View3 = tmp2(1655).View;
         obj22 = { colors: first1, style: memo.absoluteFill };

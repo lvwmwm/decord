@@ -1,7 +1,7 @@
 // Module ID: 12721
 // Function ID: 12722
 // Name: PictureInPicture
-// Dependencies: [32, 19, 17, 11003, 1072, 21, 5306, 1187, 12722, 1496, 5913, 12725, 1655, 5939, 12726, 12727, 5598, 1380, 2]
+// Dependencies: [32, 19, 17, 11003, 1072, 21, 5306, 1187, 12722, 1496, 5903, 12725, 1655, 5929, 12726, 12727, 5588, 1380, 2]
 
 // Module 12721 (PictureInPicture)
 import Fragment from "Fragment" /* 21 */;
@@ -9,8 +9,8 @@ import Constants from "Constants" /* 1072 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5913 */;
-import spring_spring from "spring/spring" /* 5939 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5903 */;
+import spring_spring from "spring/spring" /* 5929 */;
 import ChannelCallStore from "ChannelCallStore" /* 11003 */;
 import useShouldForcePipOrientation from "useShouldForcePipOrientation" /* 12722 */;
 import usePipDimensionsDefault from "usePipDimensions" /* 12725 */;
@@ -116,7 +116,7 @@ const memoResult = react.memo(function PictureInPicture(preferredPosition) {
   ref = obj3.useRef(null);
   const items2 = [tmp2.pipOuterContainer, animatedStyle, style];
   const View = tmp6(1655).View;
-  const GestureDetector = tmp3(5598).GestureDetector;
+  const GestureDetector = tmp3(5588).GestureDetector;
   const items3 = [draggableGridItemStyles, ];
   const View2 = tmp6(1655).View;
   let elevationShadow;

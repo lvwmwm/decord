@@ -1,10 +1,10 @@
 // Module ID: 11313
 // Function ID: 11314
 // Name: chunk
-// Dependencies: [7671, 6084, 11314]
+// Dependencies: [7671, 6074, 11314]
 
 // Module 11313 (chunk)
-import toInteger from "toInteger" /* 6084 */;
+import toInteger from "toInteger" /* 6074 */;
 import isIterateeCall from "isIterateeCall" /* 7671 */;
 import baseSlice from "baseSlice" /* 11314 */;
 

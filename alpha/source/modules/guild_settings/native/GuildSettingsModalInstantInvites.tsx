@@ -1,17 +1,17 @@
-// Module ID: 20594
-// Function ID: 20595
+// Module ID: 20597
+// Function ID: 20598
 // Name: GuildSettingsModalInstantInvites
-// Dependencies: [32, 19, 17, 11013, 7664, 5155, 5177, 8405, 1072, 21, 5306, 575, 1113, 2188, 7733, 5929, 7455, 16034, 14781, 504, 12, 9257, 9255, 5552, 14129, 2121, 6015, 10916, 7588, 1187, 20595, 7888, 5912, 2]
+// Dependencies: [32, 19, 17, 11013, 7664, 5155, 5177, 8405, 1072, 21, 5306, 575, 1113, 2188, 7733, 5919, 7455, 16034, 14781, 504, 12, 9257, 9255, 5542, 14129, 2121, 6005, 10916, 7588, 1187, 20598, 7888, 5902, 2]
 // Exports: default
 
-// Module 20594 (GuildSettingsModalInstantInvites)
+// Module 20597 (GuildSettingsModalInstantInvites)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import GuildAntiRaidUtils from "GuildAntiRaidUtils" /* 9255 */;
 import GuildAntiRaidTypes from "GuildAntiRaidTypes" /* 9257 */;
 import InstantInvite from "InstantInvite" /* 10916 */;
@@ -265,7 +265,7 @@ export default function ConnectedGuildSettingsModalInstantInvites(guildId) {
   if (null != stateFromStores) {
     const obj2 = { children: items1 };
     const obj3 = { guild: stateFromStores, invites: tmp5, contentContainerStyle, showChannel: true };
-    items1 = [closure_12(GuildSettingsModalInstantInvites, obj3), closure_12(tmp(5912).NavScrim, {})];
+    items1 = [closure_12(GuildSettingsModalInstantInvites, obj3), closure_12(tmp(5902).NavScrim, {})];
     tmp6 = closure_14(closure_13, obj2);
   }
   return tmp6;

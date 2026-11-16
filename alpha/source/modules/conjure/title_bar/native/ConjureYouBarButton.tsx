@@ -1,9 +1,9 @@
-// Module ID: 19166
-// Function ID: 19167
+// Module ID: 19168
+// Function ID: 19169
 // Name: ConjureYouBarButton
-// Dependencies: [19, 17701, 21, 5306, 575, 10538, 10519, 1503, 19167, 10530, 10528, 10532, 2]
+// Dependencies: [19, 17701, 21, 5306, 575, 10538, 10519, 1503, 19169, 10530, 10528, 10532, 2]
 
-// Module 19166 (ConjureYouBarButton)
+// Module 19168 (ConjureYouBarButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Link from "Link" /* 1503 */;
@@ -11,7 +11,7 @@ import useConjureWandStatusDefault from "useConjureWandStatus" /* 10519 */;
 import openConjureProjectsSheetDefault from "openConjureProjectsSheet" /* 10532 */;
 import confirmConjureYouBarPinDefault from "confirmConjureYouBarPin" /* 10538 */;
 import YouBarConstants from "YouBarConstants" /* 17701 */;
-import YouBarButtonDefault from "YouBarButton" /* 19167 */;
+import YouBarButtonDefault from "YouBarButton" /* 19169 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;

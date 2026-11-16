@@ -1,20 +1,20 @@
-// Module ID: 18434
-// Function ID: 18435
+// Module ID: 18436
+// Function ID: 18437
 // Name: UserSettingsDesignSystemToast
-// Dependencies: [19, 17, 21, 5306, 575, 7445, 6337, 5929, 5936, 6016, 6015, 6037, 6033, 5256, 16481, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 7445, 6327, 5919, 5926, 6006, 6005, 6027, 6023, 5256, 16481, 2]
 // Exports: default
 
-// Module 18434 (UserSettingsDesignSystemToast)
+// Module 18436 (UserSettingsDesignSystemToast)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import EmojiUtils from "EmojiUtils" /* 5256 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import components_Button_Button from "components/Button/Button" /* 5936 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 6015 */;
-import toastUtils from "toastUtils" /* 6016 */;
-import CopyIcon from "CopyIcon" /* 6033 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 6037 */;
-import Stack_Stack from "Stack/Stack" /* 6337 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
+import toastUtils from "toastUtils" /* 6006 */;
+import CopyIcon from "CopyIcon" /* 6023 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 6027 */;
+import Stack_Stack from "Stack/Stack" /* 6327 */;
 import Card_Card from "Card/Card" /* 7445 */;
 import Toast4 from "Toast" /* 16481 */;
 import react from "react" /* 19 */;

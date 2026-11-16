@@ -1,7 +1,7 @@
 // Module ID: 14718
 // Function ID: 14719
 // Name: directory_channels/GuildDirectoryUtils
-// Dependencies: [5, 19, 21, 14713, 6269, 14719, 2121, 2]
+// Dependencies: [5, 19, 21, 14713, 6259, 14719, 2121, 2]
 // Exports: onAddDirectoryGuildEntry
 
 // Module 14718 (directory_channels/GuildDirectoryUtils)

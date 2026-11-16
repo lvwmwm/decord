@@ -1,7 +1,7 @@
 // Module ID: 17659
 // Function ID: 17660
 // Name: OrbsArcadeRewardsSheet
-// Dependencies: [19, 17647, 21, 5306, 575, 504, 7951, 7913, 1113, 6337, 17660, 17667, 17657, 17654, 2]
+// Dependencies: [19, 17647, 21, 5306, 575, 504, 7951, 7913, 1113, 6327, 17660, 17667, 17657, 17654, 2]
 // Exports: default
 
 // Module 17659 (OrbsArcadeRewardsSheet)
@@ -67,7 +67,7 @@ export default function OrbsArcadeRewardsSheet(gameId) {
       formatToPlainStringResult = intl2.formatToPlainString(tmp2(1113).t.bzMn46, obj5);
     }
     const obj6 = { header: closure_4(BottomSheetTitleHeader, obj3), children: closure_5(Stack, obj9) };
-    Stack = tmp2(6337).Stack;
+    Stack = tmp2(6327).Stack;
     const obj7 = { game: stateFromStores, gameState: stateFromStores1 };
     const items4 = [closure_4(OrbsArcadeRewardChainDefault, obj7), ];
     const obj8 = { game: stateFromStores, sheetKey: "OrbsArcadeRewardsSheet", location: gameId(17657).OrbsArcadeCtaLocation.REWARDS_SHEET, surface, primaryAction: result ? OrbsArcadeSheetPrimaryAction.CLAIM : OrbsArcadeSheetPrimaryAction.PLAY, secondaryAction: result1 ? OrbsArcadeSheetSecondaryAction.CLOSE : OrbsArcadeSheetSecondaryAction.HOW_TO_PLAY, style: tmp.actionsContainer };

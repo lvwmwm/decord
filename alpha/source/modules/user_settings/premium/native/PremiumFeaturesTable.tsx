@@ -1,7 +1,7 @@
 // Module ID: 15349
 // Function ID: 15350
 // Name: PremiumFeaturesTable
-// Dependencies: [32, 19, 17, 1072, 1390, 21, 5306, 575, 6961, 5547, 5313, 1187, 15350, 15351, 5929, 1113, 5893, 10956, 2174, 15352, 15353, 6020, 15354, 15355, 15356, 15357, 15358, 2]
+// Dependencies: [32, 19, 17, 1072, 1390, 21, 5306, 575, 6951, 5537, 5313, 1187, 15350, 15351, 5919, 1113, 5883, 10956, 2174, 15352, 15353, 6010, 15354, 15355, 15356, 15357, 15358, 2]
 // Exports: default
 
 // Module 15349 (PremiumFeaturesTable)
@@ -11,10 +11,10 @@ import Constants from "Constants" /* 1072 */;
 import intl32 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import shared from "shared" /* 5313 */;
-import useThemeDefault from "useTheme" /* 5547 */;
-import LinearGradientDefault from "LinearGradient" /* 5893 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import LegacyTokens from "LegacyTokens" /* 6961 */;
+import useThemeDefault from "useTheme" /* 5537 */;
+import LinearGradientDefault from "LinearGradient" /* 5883 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import LegacyTokens from "LegacyTokens" /* 6951 */;
 import AssetRegistryDefault from "AssetRegistry" /* 15350 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 15351 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

@@ -1,10 +1,10 @@
-// Module ID: 20628
-// Function ID: 20629
+// Module ID: 20631
+// Function ID: 20632
 // Name: FinishingTouchesScreen
-// Dependencies: [32, 19, 17, 8405, 5212, 8407, 1072, 21, 5902, 575, 504, 5243, 8404, 1084, 20570, 20617, 20616, 20614, 1113, 5929, 6020, 6337, 7746, 20626, 7954, 2188, 2]
+// Dependencies: [32, 19, 17, 8405, 5212, 8407, 1072, 21, 5892, 575, 504, 5243, 8404, 1084, 20573, 20620, 20619, 20617, 1113, 5919, 6010, 6327, 7746, 20629, 7954, 2188, 2]
 // Exports: default
 
-// Module 20628 (FinishingTouchesScreen)
+// Module 20631 (FinishingTouchesScreen)
 import react_native from "react-native" /* 17 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
 import PermissionUtilsAll from "PermissionUtils" /* 5243 */;
@@ -67,13 +67,13 @@ export default function FinishingTouchesScreen() {
   let tmp14;
   let tmp4Result5;
   let tmp4Result6;
-  const f123622 = (item) => {
+  const f123637 = (item) => {
     const obj = PermissionUtilsAll;
     return obj.canEveryone(item, guild);
   };
   let obj = react;
   const ref = react.useRef(null);
-  let obj2 = guild(5902);
+  let obj2 = guild(5892);
   const tmp4 = defaultMessageNotifications;
   const token = obj2.useToken(defaultMessageNotifications(575).modules.mobile.TABLE_ROW_PADDING);
   let obj3 = guild(504);
@@ -87,8 +87,8 @@ export default function FinishingTouchesScreen() {
   defaultMessageNotifications = _slicedToArray(useState(prop), 1)[0];
   const ONLY_MENTIONS = constants2.ONLY_MENTIONS;
   [first1, tmp11] = obj.useState(false);
-  [tmp13, tmp14] = _slicedToArray(obj.useState(!closure_9.some(f123622)), 2);
-  const tmp12 = _slicedToArray(obj.useState(!closure_9.some(f123622)), 2);
+  [tmp13, tmp14] = _slicedToArray(obj.useState(!closure_9.some(f123637)), 2);
+  const tmp12 = _slicedToArray(obj.useState(!closure_9.some(f123637)), 2);
   const first2 = _slicedToArray(obj.useState(tmp13), 1)[0];
   let prop1;
   const tmp8 = constants2;
@@ -146,34 +146,34 @@ export default function FinishingTouchesScreen() {
       }
     }
   }, []);
-  const tmp20 = tmp4(20617)();
-  const tmp2Result = guild(20616);
+  const tmp20 = tmp4(20620)();
+  const tmp2Result = guild(20619);
   const enableCommunitySharedStyles = tmp2Result.useEnableCommunitySharedStyles();
-  let obj4 = { headerRef: ref, currentStep: tmp2(20614).EnableCommunityModalSteps.STEP_3, onSuccess: callback1, disableNextStep: !first1, buttonText: intl.string(tmp2(1113).t.XGl4ba), children: items3 };
-  const EnableCommunityModalScreen = tmp2(20614).EnableCommunityModalScreen;
+  let obj4 = { headerRef: ref, currentStep: tmp2(20617).EnableCommunityModalSteps.STEP_3, onSuccess: callback1, disableNextStep: !first1, buttonText: intl.string(tmp2(1113).t.XGl4ba), children: items3 };
+  const EnableCommunityModalScreen = tmp2(20617).EnableCommunityModalScreen;
   intl = tmp2(1113).intl;
   let obj5 = { style: enableCommunitySharedStyles.content, children: items2 };
   const obj6 = { ref, accessibilityRole: "header", variant: "body-md/semibold", color: "text-subtle", children: intl2.formatToPlainString(tmp2(1113).t.tInpJj, { number: 3, total: 3 }) };
-  const Text = tmp2(5929).Text;
+  const Text = tmp2(5919).Text;
   intl2 = tmp2(1113).intl;
   items2 = [closure_14(Text, obj6), , , ];
   const obj7 = { resizeMode: "contain", source: tmp20.finishingTouches };
-  items2[1] = closure_14(tmp4(6020), obj7);
+  items2[1] = closure_14(tmp4(6010), obj7);
   const obj8 = { style: enableCommunitySharedStyles.header, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl3.string(guild(1113).t["Pj/s/a"]) };
-  const Heading = tmp2(5929).Heading;
+  const Heading = tmp2(5919).Heading;
   intl3 = tmp2(1113).intl;
   items2[2] = closure_14(Heading, obj8);
   const obj9 = { style: enableCommunitySharedStyles.description, variant: "body-md/medium", color: "text-subtle", children: intl4.string(guild(1113).t["IL7/no"]) };
-  const Text2 = tmp2(5929).Text;
+  const Text2 = tmp2(5919).Text;
   intl4 = tmp2(1113).intl;
   items2[3] = closure_14(Text2, obj9);
   items3 = [closure_15(View, obj5), , ];
   const obj10 = { spacing: 24, style: { paddingHorizontal: token }, children: items5 };
-  const Stack = tmp2(6337).Stack;
+  const Stack = tmp2(6327).Stack;
   const TableRowGroup = tmp2(7746).TableRowGroup;
   const obj11 = { formSwitchDisabled: defaultMessageNotifications === ONLY_MENTIONS, children: closure_14(TableSwitchRow, obj12) };
   obj12 = { label: intl5.format(guild(1113).t.K8Eg4P, obj13), value: prop2 === tmp8.ONLY_MENTIONS, disabled: defaultMessageNotifications === ONLY_MENTIONS, onValueChange: callback };
-  const tmp4Result = tmp4(20626);
+  const tmp4Result = tmp4(20629);
   TableSwitchRow = tmp2(7954).TableSwitchRow;
   intl5 = tmp2(1113).intl;
   prop2 = undefined;
@@ -189,7 +189,7 @@ export default function FinishingTouchesScreen() {
   items4 = [closure_14(tmp4Result, obj11), ];
   const obj15 = { formSwitchDisabled: first2, children: closure_14(TableSwitchRow2, obj16) };
   obj16 = { label: intl6.format(guild(1113).t.v8qCoG, obj17), value: tmp13, disabled: first2, onValueChange: tmp14 };
-  const tmp4Result4 = tmp4(20626);
+  const tmp4Result4 = tmp4(20629);
   TableSwitchRow2 = tmp2(7954).TableSwitchRow;
   intl6 = tmp2(1113).intl;
   obj17 = {
@@ -208,7 +208,7 @@ export default function FinishingTouchesScreen() {
   items5[1] = closure_14(TableRowGroup2, obj18);
   items3[1] = closure_15(Stack, obj10);
   const obj20 = { style: enableCommunitySharedStyles.formHint, variant: "body-xs/medium", color: "text-subtle", children: format(prop3, obj21) };
-  const Text3 = tmp2(5929).Text;
+  const Text3 = tmp2(5919).Text;
   const intl9 = tmp2(1113).intl;
   format = intl9.format;
   obj21 = { communityGuidelines: tmp4Result5.getArticleURL(constants.PUBLIC_GUILD_GUILDLINES), typesOfGuilds: tmp4Result6.getArticleURL(constants.FRIEND_COMMUNITY_DISCOVERABLE_GUILD_TYPES) };

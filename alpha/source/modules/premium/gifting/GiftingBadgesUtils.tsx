@@ -1,7 +1,7 @@
 // Module ID: 11678
 // Function ID: 11679
 // Name: GiftingBadgesUtils
-// Dependencies: [19, 8547, 1388, 1113, 2797, 11673, 11679, 504, 5348, 5139, 8480, 8552, 2]
+// Dependencies: [19, 8547, 1388, 1113, 2797, 11673, 11679, 504, 5338, 5139, 8480, 8552, 2]
 // Exports: getGiftingBadgeAccessibilityLabel, getGiftingBadgeProgressPercent, getGiftingBadgeTierIconUrl, getIsGiftingBadgesDesktopEnabled, useGiftingBadgeCoachmarkVariant, useIsGiftingBadgesDesktopEnabled
 
 // Module 11678 (GiftingBadgesUtils)
@@ -114,7 +114,7 @@ export function useGiftingBadgeCoachmarkVariant(arg0) {
     }
     return flag;
   });
-  const tmpResult3 = tmp(5348);
+  const tmpResult3 = tmp(5338);
   const result = tmpResult3.useIsDismissibleContentDismissed_UNSAFE(tmp(5139).DismissibleContent.NEW_GIFTING_BADGES_COACHMARK);
   const items1 = [BadgeDirectoryStore];
   const tmpResult4 = tmp(504);

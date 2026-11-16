@@ -1,15 +1,15 @@
 // Module ID: 15271
 // Function ID: 15272
 // Name: openQuestCollectibleRewardModal
-// Dependencies: [1388, 5338, 21, 5306, 575, 504, 10151, 10131, 5929, 1113, 8816, 10020, 2]
+// Dependencies: [1388, 6954, 21, 5306, 575, 504, 10151, 10131, 5919, 1113, 8816, 10020, 2]
 // Exports: openQuestCollectibleRewardModal
 
 // Module 15271 (openQuestCollectibleRewardModal)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import QuestConstants from "QuestConstants" /* 5338 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import QuestConstants from "QuestConstants" /* 6954 */;
 import getQuestLogger from "getQuestLogger" /* 8816 */;
 import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 10020 */;
 import hooks_QuestHooks from "hooks/QuestHooks" /* 10131 */;

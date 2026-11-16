@@ -1,7 +1,7 @@
 // Module ID: 14211
 // Function ID: 14212
 // Name: AppealIngestionConfirmSubmission
-// Dependencies: [19, 17, 8231, 1072, 21, 5306, 504, 14182, 1113, 14188, 14212, 8205, 5929, 5552, 14210, 2121, 572, 14191, 14207, 2]
+// Dependencies: [19, 17, 8231, 1072, 21, 5306, 504, 14182, 1113, 14188, 14212, 8205, 5919, 5542, 14210, 2121, 572, 14191, 14207, 2]
 // Exports: default
 
 // Module 14211 (AppealIngestionConfirmSubmission)
@@ -99,7 +99,7 @@ export default function AppealIngestionConfirmSubmission(isDsaEligible) {
         },
       children: stringResult2
     };
-    const Text = tmp2(5929).Text;
+    const Text = tmp2(5919).Text;
     if (stateFromStores2.length > 0) {
       const intl4 = tmp2(1113).intl;
       stringResult2 = intl4.string(tmp2(1113).t.tnE3bZ);

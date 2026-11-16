@@ -1,7 +1,7 @@
 // Module ID: 12113
 // Function ID: 12114
 // Name: UserProfileWidgetRemoveGameButton
-// Dependencies: [19, 502, 8479, 21, 7988, 6040, 575, 1113, 12090, 5315, 8546, 2]
+// Dependencies: [19, 502, 8479, 21, 7988, 6030, 575, 1113, 12090, 5315, 8546, 2]
 // Exports: default
 
 // Module 12113 (UserProfileWidgetRemoveGameButton)
@@ -9,7 +9,7 @@ import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5315 */;
-import TrashIcon2 from "TrashIcon" /* 6040 */;
+import TrashIcon2 from "TrashIcon" /* 6030 */;
 import IconButton2 from "IconButton" /* 7988 */;
 import Constants from "Constants" /* 8479 */;
 import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8546 */;

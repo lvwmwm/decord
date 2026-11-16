@@ -1,11 +1,11 @@
 // Module ID: 7591
 // Function ID: 7592
 // Name: PlayStationLinkModalActionCreators
-// Dependencies: [6848, 7592, 2121, 2]
+// Dependencies: [6838, 7592, 2121, 2]
 
 // Module 7591 (PlayStationLinkModalActionCreators)
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import size from "module_2" /* 2 */;
 
 const USER_SETTINGS_CONNECTIONS_PS_LINK_MODAL_KEY = "USER_SETTINGS_CONNECTIONS_PS_LINK_MODAL_KEY";

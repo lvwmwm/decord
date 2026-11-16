@@ -1,11 +1,11 @@
 // Module ID: 7499
 // Function ID: 7500
 // Name: useNavigatorBackPressHandler
-// Dependencies: [19, 1503, 6332, 2]
+// Dependencies: [19, 1503, 6322, 2]
 // Exports: useNavigatorBackPressHandler
 
 // Module 7499 (useNavigatorBackPressHandler)
-import useBackPressHandler from "useBackPressHandler" /* 6332 */;
+import useBackPressHandler from "useBackPressHandler" /* 6322 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

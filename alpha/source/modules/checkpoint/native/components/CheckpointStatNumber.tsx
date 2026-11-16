@@ -1,14 +1,14 @@
 // Module ID: 14479
 // Function ID: 14480
 // Name: CheckpointStatNumber
-// Dependencies: [19, 17, 6377, 21, 5306, 5459, 14271, 2]
+// Dependencies: [19, 17, 6367, 21, 5306, 5449, 14271, 2]
 // Exports: default, getCheckpointStatNumberDigitHeight, getCheckpointStatNumberShrinkRatio, getCheckpointStatNumberWidth, isCheckpointStatNumberShrunk
 
 // Module 14479 (CheckpointStatNumber)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import CheckpointNumbersRive2 from "CheckpointNumbersRive" /* 5459 */;
-import CheckpointConstants from "CheckpointConstants" /* 6377 */;
+import CheckpointNumbersRive2 from "CheckpointNumbersRive" /* 5449 */;
+import CheckpointConstants from "CheckpointConstants" /* 6367 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;

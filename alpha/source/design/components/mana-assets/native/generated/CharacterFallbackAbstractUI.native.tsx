@@ -1,7 +1,7 @@
 // Module ID: 14085
 // Function ID: 14086
 // Name: CharacterFallbackAbstractUI
-// Dependencies: [19, 21, 14086, 14087, 14088, 7755, 6020, 2]
+// Dependencies: [19, 21, 14086, 14087, 14088, 7755, 6010, 2]
 // Exports: CharacterFallbackAbstractUI
 
 // Module 14085 (CharacterFallbackAbstractUI)

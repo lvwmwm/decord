@@ -1,7 +1,7 @@
 // Module ID: 11627
 // Function ID: 11628
 // Name: AppliedForumTag
-// Dependencies: [19, 17, 6969, 1391, 21, 5306, 575, 504, 11628, 1113, 7894, 1414, 5929, 2]
+// Dependencies: [19, 17, 6969, 1391, 21, 5306, 575, 504, 11628, 1113, 7894, 1414, 5919, 2]
 // Exports: AppliedForumTagPill
 
 // Module 11627 (AppliedForumTag)
@@ -24,7 +24,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp5;
-const Text_Text = tmp5(5929);
+const Text_Text = tmp5(5919);
 class AppliedForumTag {
   constructor(hasUnreads) {
     let c2;

@@ -1,7 +1,7 @@
 // Module ID: 12651
 // Function ID: 12652
 // Name: EditAttachmentActionSheet
-// Dependencies: [5, 32, 19, 6372, 5311, 1072, 11850, 21, 8559, 8645, 1406, 1113, 5315, 8660, 7951, 7913, 6337, 575, 5929, 7859, 7733, 5936, 2]
+// Dependencies: [5, 32, 19, 6362, 5311, 1072, 11850, 21, 8559, 8645, 1406, 1113, 5315, 8660, 7951, 7913, 6327, 575, 5919, 7859, 7733, 5926, 2]
 // Exports: default
 
 // Module 12651 (EditAttachmentActionSheet)
@@ -13,7 +13,7 @@ import AttachmentConstants from "AttachmentConstants" /* 11850 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import MessageStore from "MessageStore" /* 6372 */;
+import MessageStore from "MessageStore" /* 6362 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -24,9 +24,9 @@ let tmp;
 let unpackModuleId;
 const intl7 = tmp(1113);
 const FlagUtils = tmp(1406);
-const Text_Text = tmp(5929);
-const components_Button_Button = tmp(5936);
-const Stack_Stack = tmp(6337);
+const Text_Text = tmp(5919);
+const components_Button_Button = tmp(5926);
+const Stack_Stack = tmp(6327);
 const TableCheckboxRow2 = tmp(7733);
 const TextArea2 = tmp(7859);
 const BottomSheetTitleHeader = tmp(7913);

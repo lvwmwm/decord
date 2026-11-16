@@ -1,13 +1,13 @@
-// Module ID: 6899
-// Function ID: 6900
+// Module ID: 6889
+// Function ID: 6890
 // Name: transitionToStream
-// Dependencies: [5155, 5552, 6848, 6900, 2]
+// Dependencies: [5155, 5542, 6838, 6890, 2]
 // Exports: default
 
-// Module 6899 (transitionToStream)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6900 */;
+// Module 6889 (transitionToStream)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6890 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import size from "module_2" /* 2 */;
 

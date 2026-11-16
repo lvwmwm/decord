@@ -1,15 +1,15 @@
-// Module ID: 20875
-// Function ID: 20876
+// Module ID: 20878
+// Function ID: 20879
 // Name: AgeUpdateFooter
-// Dependencies: [19, 21, 5306, 5929, 1113, 2997, 8190, 6833, 2]
+// Dependencies: [19, 21, 5306, 5919, 1113, 2997, 8190, 6823, 2]
 // Exports: default
 
-// Module 20875 (AgeUpdateFooter)
+// Module 20878 (AgeUpdateFooter)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef2997 from "module_2997" /* 2997 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6833 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6823 */;
 import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8190 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5306 */;

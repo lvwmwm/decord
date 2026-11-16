@@ -1,9 +1,9 @@
-// Module ID: 17923
-// Function ID: 17924
+// Module ID: 17925
+// Function ID: 17926
 // Name: SameAsDeviceThemeSetting
 // Dependencies: [1192, 9202, 504, 17631, 12406, 1113, 2]
 
-// Module 17923 (SameAsDeviceThemeSetting)
+// Module 17925 (SameAsDeviceThemeSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;

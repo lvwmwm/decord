@@ -1,22 +1,22 @@
-// Module ID: 18635
-// Function ID: 18636
+// Module ID: 18637
+// Function ID: 18638
 // Name: DevWidget
-// Dependencies: [19, 8826, 573, 21, 5306, 575, 1655, 12012, 13809, 5598, 1708, 5939, 5940, 7428, 17057, 18211, 18636, 18210, 2]
+// Dependencies: [19, 8826, 573, 21, 5306, 575, 1655, 12012, 13809, 5588, 1708, 5929, 5930, 7428, 17057, 18213, 18638, 18212, 2]
 // Exports: default
 
-// Module 18635 (DevWidget)
+// Module 18637 (DevWidget)
 import Constants from "Constants" /* 573 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1655 from "module_1655" /* 1655 */;
 import _mod1708 from "module_1708" /* 1708 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5598 */;
-import spring_spring from "spring/spring" /* 5939 */;
-import springPresets from "springPresets" /* 5940 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5588 */;
+import spring_spring from "spring/spring" /* 5929 */;
+import springPresets from "springPresets" /* 5930 */;
 import Pressables from "Pressables" /* 7428 */;
 import useSafeAreaInsetsSharedValueDefault from "useSafeAreaInsetsSharedValue" /* 12012 */;
 import useWindowDimensionsSharedValueDefault from "useWindowDimensionsSharedValue" /* 13809 */;
-import StaffBadgeIcon from "StaffBadgeIcon" /* 18211 */;
-import VEVOODefault from "VEVOO" /* 18636 */;
+import StaffBadgeIcon from "StaffBadgeIcon" /* 18213 */;
+import VEVOODefault from "VEVOO" /* 18638 */;
 import react from "react" /* 19 */;
 import DevToolsSettingsStore from "DevToolsSettingsStore" /* 8826 */;
 import Fragment from "Fragment" /* 21 */;
@@ -205,7 +205,7 @@ function DraggableContainer(arg0) {
   DevWidgetTsx5.__initData = tmp37;
   const animatedStyle = useAnimatedStyle(DevWidgetTsx5);
   const obj4 = { gesture: panGesture, children: metroRequire(_modDef1655.View, obj5) };
-  const GestureDetector = tmp2(5598).GestureDetector;
+  const GestureDetector = tmp2(5588).GestureDetector;
   obj5 = { style: items11, children };
   items11 = [tmp.widgetContainer, animatedStyle];
   return metroRequire(GestureDetector, obj4);

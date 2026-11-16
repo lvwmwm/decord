@@ -1,7 +1,7 @@
 // Module ID: 11406
 // Function ID: 11407
 // Name: ApplicationCommandIndexStore
-// Dependencies: [32, 5, 19, 11407, 2189, 502, 5155, 5218, 5177, 1388, 11408, 6345, 1072, 3, 11409, 11410, 8724, 8727, 6917, 38, 504, 11411, 1256, 2119, 11412, 572, 11413, 11414, 5136, 11420, 5985, 7073, 2]
+// Dependencies: [32, 5, 19, 11407, 2189, 502, 5155, 5218, 5177, 1388, 11408, 6335, 1072, 3, 11409, 11410, 8724, 8727, 6907, 38, 504, 11411, 1256, 2119, 11412, 572, 11413, 11414, 5136, 11420, 5975, 7073, 2]
 // Exports: appLauncherOnlyCompareNames, getOrFetchApplicationCommandIndexForTarget, getSection, isStale, useContextIndexState, useDiscoveryState, useGuildIndexState, useUserIndexState
 
 // Module 11406 (ApplicationCommandIndexStore)
@@ -11,8 +11,8 @@ import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import Server from "Server" /* 2119 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5985 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6917 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5975 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6907 */;
 import fuzzysearchDefault from "fuzzysearch" /* 7073 */;
 import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8724 */;
 import ApplicationCommandIndexActionCreators from "ApplicationCommandIndexActionCreators" /* 11410 */;
@@ -31,7 +31,7 @@ import GuildMemberStore from "GuildMemberStore" /* 5218 */;
 import GuildStore from "GuildStore" /* 5177 */;
 import UserStore from "UserStore" /* 1388 */;
 import ApplicationCommandFrecencyStore from "ApplicationCommandFrecencyStore" /* 11408 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6345 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6335 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ let closure_15;
 let closure_16;
 let closure_17;
 let closure_18;
-const f102054 = () => {
+const f102067 = () => {
   let contextState;
   if ("channel" === closure_0.type) {
     contextState = authStore.getContextState(tmp);
@@ -51,7 +51,7 @@ const f102054 = () => {
   }
   return contextState;
 };
-const f102056 = () => authStore.getUserState();
+const f102069 = () => authStore.getUserState();
 function getIndexKey(type) {
   type = type.type;
   if ("guild" === type) {
@@ -507,7 +507,7 @@ function useQueryState(type, commandTypes, allowFetch) {
   [first, _slicedToArray] = stateFromStoresObject1.useState(true);
   let obj2 = require("get initialized");
   const items = [applicationCommandIndexStore];
-  const stateFromStoresObject = obj2.useStateFromStoresObject(items, f102054);
+  const stateFromStoresObject = obj2.useStateFromStoresObject(items, f102067);
   const items1 = [stateFromStoresObject, allowFetch, type, tmp3, first];
   const effect = stateFromStoresObject1.useEffect(() => {
     const tmp = first;
@@ -617,7 +617,7 @@ function useQueryState(type, commandTypes, allowFetch) {
   [first1, closure_3] = stateFromStoresObject1.useState(true);
   let obj3 = require("get initialized");
   const items2 = [applicationCommandIndexStore];
-  stateFromStoresObject1 = obj3.useStateFromStoresObject(items2, f102056);
+  stateFromStoresObject1 = obj3.useStateFromStoresObject(items2, f102069);
   const items3 = [stateFromStoresObject1, allowFetch2, tmp3, first1];
   const effect1 = stateFromStoresObject1.useEffect(() => {
     const tmp = first1;
@@ -2019,7 +2019,7 @@ export function useContextIndexState(arg0, arg1, arg2) {
   [first, _slicedToArray] = react.useState(true);
   const items = [applicationCommandIndexStore];
   obj = require("get initialized");
-  const stateFromStoresObject = obj.useStateFromStoresObject(items, f102054);
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, f102067);
   const items1 = [stateFromStoresObject, arg2, arg0, arg1, first];
   const effect = react.useEffect(() => {
     const tmp = first;
@@ -2193,7 +2193,7 @@ export function useUserIndexState(arg0, arg1) {
   dependencyMap = tmp[1];
   const items = [applicationCommandIndexStore];
   obj = require("get initialized");
-  stateFromStoresObject = obj.useStateFromStoresObject(items, f102056);
+  stateFromStoresObject = obj.useStateFromStoresObject(items, f102069);
   const items1 = [stateFromStoresObject, arg1, arg0, first];
   const effect = react.useEffect(() => {
     const tmp = first1;

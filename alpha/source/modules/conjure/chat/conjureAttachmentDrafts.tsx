@@ -1,13 +1,13 @@
 // Module ID: 13579
 // Function ID: 13580
 // Name: conjureAttachmentDrafts
-// Dependencies: [109, 5505, 7365, 13228, 1113, 4131, 13185, 572, 2]
+// Dependencies: [109, 5495, 7365, 13228, 1113, 4131, 13185, 572, 2]
 // Exports: addConjureAttachmentDrafts, clearConjureAttachmentDrafts, conjureAttachmentTooLargeText, removeConjureAttachmentDraft, sendConjureCardReply, uploadConjureAttachment, useConjureAttachmentDraftList
 
 // Module 13579 (conjureAttachmentDrafts)
 import intl2 from "intl" /* 1113 */;
 import _modDef4131 from "module_4131" /* 4131 */;
-import ZustandStore from "ZustandStore" /* 5505 */;
+import ZustandStore from "ZustandStore" /* 5495 */;
 import ConjureConnectionStore from "ConjureConnectionStore" /* 7365 */;
 import ConjureAttachmentTypes from "ConjureAttachmentTypes" /* 13185 */;
 import conjureAttachmentRequests from "conjureAttachmentRequests" /* 13228 */;
@@ -17,7 +17,7 @@ import size from "module_2" /* 2 */;
 
 let closure_8;
 
-const f107886 = () => {
+const f107899 = () => {
 
 };
 function _toPropertyKey(obj) {
@@ -81,7 +81,7 @@ function discardDraft(projectId, item10010) {
     const id = item10010.ref.id;
     const obj = conjureAttachmentRequests;
     const result = obj.deleteStagedAttachment(projectId, id);
-    result.catch(f107886);
+    result.catch(f107899);
   }
 }
 function discardProject(projectId, deleteFromWorker) {
@@ -263,7 +263,7 @@ export function removeConjureAttachmentDraft(projectId, chat, arg2) {
       const id = found.ref.id;
       const obj2 = conjureAttachmentRequests;
       const result = obj2.deleteStagedAttachment(projectId, id);
-      result.catch(f107886);
+      result.catch(f107899);
     }
     const found1 = tmp2.filter((localId) => localId.localId !== closure_0);
     const draftsByProject = obj.getState().draftsByProject;

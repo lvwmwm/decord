@@ -1,15 +1,15 @@
 // Module ID: 7913
 // Function ID: 7914
 // Name: BottomSheetTitleHeader
-// Dependencies: [32, 19, 17, 21, 5306, 575, 1496, 5902, 5929, 7494, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 575, 1496, 5892, 5919, 7494, 2]
 // Exports: BottomSheetTitleHeader
 
 // Module 7913 (BottomSheetTitleHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
-import useToken from "useToken" /* 5902 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import useToken from "useToken" /* 5892 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 7494 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

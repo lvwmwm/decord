@@ -1,14 +1,14 @@
 // Module ID: 13527
 // Function ID: 13528
 // Name: AppLauncherChannelListActionSheet
-// Dependencies: [32, 19, 5177, 21, 5306, 575, 8078, 8033, 13514, 6962, 5552, 13501, 13502, 5954, 7443, 5929, 2]
+// Dependencies: [32, 19, 5177, 21, 5306, 575, 8078, 8033, 13514, 6952, 5542, 13501, 13502, 5944, 7443, 5919, 2]
 // Exports: default
 
 // Module 13527 (AppLauncherChannelListActionSheet)
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import useChannelNameDefault from "useChannelName" /* 5954 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6962 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import useChannelNameDefault from "useChannelName" /* 5944 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6952 */;
 import TableRow2 from "TableRow" /* 7443 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 8033 */;
 import TextIcon3 from "TextIcon" /* 8078 */;

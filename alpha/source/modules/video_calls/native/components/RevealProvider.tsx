@@ -1,7 +1,7 @@
 // Module ID: 12715
 // Function ID: 12716
 // Name: RevealProvider
-// Dependencies: [19, 5553, 6072, 11003, 21, 504, 11005, 12716, 1380, 5547, 5313, 11827, 12717, 2]
+// Dependencies: [19, 5543, 6062, 11003, 21, 504, 11005, 12716, 1380, 5537, 5313, 11827, 12717, 2]
 // Exports: default
 
 // Module 12715 (RevealProvider)
@@ -10,8 +10,8 @@ import StatusBarDefault from "StatusBar" /* 11827 */;
 import useIsActivityFocusedDefault from "useIsActivityFocused" /* 12716 */;
 import HomeIndicatorDefault from "HomeIndicator" /* 12717 */;
 import react from "react" /* 19 */;
-import ActionSheetStore from "ActionSheetStore" /* 5553 */;
-import GameConsoleStore from "GameConsoleStore" /* 6072 */;
+import ActionSheetStore from "ActionSheetStore" /* 5543 */;
+import GameConsoleStore from "GameConsoleStore" /* 6062 */;
 import ChannelCallStore from "ChannelCallStore" /* 11003 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

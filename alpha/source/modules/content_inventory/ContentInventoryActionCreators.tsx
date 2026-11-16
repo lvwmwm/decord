@@ -1,7 +1,7 @@
 // Module ID: 14247
 // Function ID: 14248
 // Name: ContentInventoryActionCreators
-// Dependencies: [5155, 5209, 5349, 1388, 14248, 1072, 572, 1256, 14249, 7937, 2]
+// Dependencies: [5155, 5209, 5339, 1388, 14248, 1072, 572, 1256, 14249, 7937, 2]
 // Exports: clearDeleteHistoryError, onGameProfileOpen, onTapContentInventoryEntryEmbed, toggleMemberListContentFeedHidden
 
 // Module 14247 (ContentInventoryActionCreators)
@@ -12,7 +12,7 @@ import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
 import ContentInventoryPlatformActionCreatorsAll from "ContentInventoryPlatformActionCreators" /* 14249 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5349 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
 import UserStore from "UserStore" /* 1388 */;
 import ContentInventoryPersistedStore from "ContentInventoryPersistedStore" /* 14248 */;
 import size from "module_2" /* 2 */;

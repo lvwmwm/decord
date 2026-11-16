@@ -1,7 +1,7 @@
 // Module ID: 17653
 // Function ID: 17654
 // Name: OrbsArcadeActionCreators
-// Dependencies: [5, 502, 17647, 1072, 1089, 559, 572, 1285, 17648, 6758, 17654, 2]
+// Dependencies: [5, 502, 17647, 1072, 1089, 559, 572, 1285, 17648, 6748, 17654, 2]
 // Exports: claimOrbsArcadeRewards, ensureOrbsArcadeEnrollment, fetchOrbsArcadeGamesIfStale, resetOrbsArcadeGame
 
 // Module 17653 (OrbsArcadeActionCreators)

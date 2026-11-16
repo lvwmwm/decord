@@ -1,12 +1,12 @@
-// Module ID: 20513
-// Function ID: 20514
+// Module ID: 20516
+// Function ID: 20517
 // Name: EmojiOverflowActionSheet
-// Dependencies: [5, 19, 17, 21, 5306, 7951, 6020, 1414, 5929, 7746, 7443, 6040, 1113, 11305, 10901, 6757, 6014, 7549, 2]
+// Dependencies: [5, 19, 17, 21, 5306, 7951, 6010, 1414, 5919, 7746, 7443, 6030, 1113, 11305, 10901, 6747, 6004, 7549, 2]
 // Exports: default
 
-// Module 20513 (EmojiOverflowActionSheet)
+// Module 20516 (EmojiOverflowActionSheet)
 import react_native from "react-native" /* 17 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import EmojiActionCreators from "EmojiActionCreators" /* 11305 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -57,12 +57,12 @@ export default function EmojiOverflowActionSheet(emoji) {
   obj5 = { id: emoji.id, animated: emoji.animated, size: 48 };
   items = [closure_6(tmp6, obj2), ];
   let obj6 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", children: ":" + emoji.name + ":" };
-  const Text = emoji(5929).Text;
+  const Text = emoji(5919).Text;
   items[1] = closure_6(Text, obj6);
   const items1 = [closure_7(View, obj), ];
   const TableRowGroup = emoji(7746).TableRowGroup;
   let obj7 = {
-    icon: closure_6(emoji(6040).TrashIcon, { color: "text-feedback-critical" }),
+    icon: closure_6(emoji(6030).TrashIcon, { color: "text-feedback-critical" }),
     label: closure_6(Text2, obj8),
     onPress() {
       const obj = EmojiActionCreators;
@@ -72,7 +72,7 @@ export default function EmojiOverflowActionSheet(emoji) {
   };
   const TableRow = emoji(7443).TableRow;
   obj8 = { variant: "body-md/semibold", color: "text-feedback-critical", children: intl.string(emoji(1113).t.oyYWHE) };
-  Text2 = emoji(5929).Text;
+  Text2 = emoji(5919).Text;
   intl = emoji(1113).intl;
   const items2 = [closure_6(TableRow, obj7), , , ];
   const obj9 = {
@@ -85,7 +85,7 @@ export default function EmojiOverflowActionSheet(emoji) {
   };
   const TableRow2 = emoji(7443).TableRow;
   obj10 = { variant: "body-md/semibold", children: intl2.string(emoji(1113).t.bt75uw) };
-  Text3 = emoji(5929).Text;
+  Text3 = emoji(5919).Text;
   intl2 = emoji(1113).intl;
   items2[1] = closure_6(TableRow2, obj9);
   let tmp5Result = null;
@@ -193,7 +193,7 @@ export default function EmojiOverflowActionSheet(emoji) {
     };
     const TableRow3 = tmp3(7443).TableRow;
     obj12 = { variant: "body-md/semibold", children: intl3.string(tmp3(1113).t["+riKdA"]) };
-    Text4 = tmp3(5929).Text;
+    Text4 = tmp3(5919).Text;
     intl3 = tmp3(1113).intl;
     tmp5Result = tmp5(TableRow3, obj11);
   }
@@ -203,7 +203,7 @@ export default function EmojiOverflowActionSheet(emoji) {
   const obj15 = { icon: closure_6(tmp3(7549).XSmallIcon, {}), label: closure_6(Text5, obj16), onPress: onClose };
   const TableRow4 = tmp3(7443).TableRow;
   obj16 = { variant: "body-md/semibold", children: intl4.string(tmp3(1113).t["ETE/oC"]) };
-  Text5 = tmp3(5929).Text;
+  Text5 = tmp3(5919).Text;
   intl4 = tmp3(1113).intl;
   items2[3] = closure_6(TableRow4, obj15);
   items1[1] = closure_7(TableRowGroup, obj14);

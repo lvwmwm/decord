@@ -1,7 +1,7 @@
 // Module ID: 10785
 // Function ID: 10786
 // Name: GuildPowerupsGameServerCard
-// Dependencies: [19, 17, 5307, 9242, 21, 5306, 575, 504, 10786, 10787, 10778, 10782, 5463, 2]
+// Dependencies: [19, 17, 5307, 9242, 21, 5306, 575, 504, 10786, 10787, 10778, 10782, 5453, 2]
 // Exports: default
 
 // Module 10785 (GuildPowerupsGameServerCard)

@@ -1,7 +1,7 @@
 // Module ID: 10959
 // Function ID: 10960
 // Name: usePremiumFeatures
-// Dependencies: [19, 1390, 2187, 1401, 6018, 1113, 3513, 10733, 2174, 10409, 9558, 9436, 7434, 9981, 10960, 575, 2]
+// Dependencies: [19, 1390, 2187, 1401, 6008, 1113, 3513, 10733, 2174, 10409, 9558, 9436, 7434, 9981, 10960, 575, 2]
 // Exports: default
 
 // Module 10959 (usePremiumFeatures)
@@ -10,7 +10,7 @@ import user from "user" /* 1401 */;
 import PremiumUtils from "PremiumUtils" /* 2174 */;
 import PremiumGroupConstants from "PremiumGroupConstants" /* 2187 */;
 import _modDef3513 from "module_3513" /* 3513 */;
-import FriendsIcon from "FriendsIcon" /* 6018 */;
+import FriendsIcon from "FriendsIcon" /* 6008 */;
 import ScreenStreamIcon from "ScreenStreamIcon" /* 7434 */;
 import NitroWheelIcon from "NitroWheelIcon" /* 9436 */;
 import SuperReactionIcon from "SuperReactionIcon" /* 9558 */;

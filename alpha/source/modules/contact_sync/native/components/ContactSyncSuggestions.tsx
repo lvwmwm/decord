@@ -1,7 +1,7 @@
 // Module ID: 15016
 // Function ID: 15017
 // Name: ContactSyncSuggestions
-// Dependencies: [32, 19, 17, 1072, 15017, 21, 5306, 575, 5892, 5944, 5929, 5372, 1414, 7733, 1187, 1113, 5902, 5303, 11, 8106, 7888, 5893, 1092, 5936, 1256, 2]
+// Dependencies: [32, 19, 17, 1072, 15017, 21, 5306, 575, 5882, 5934, 5919, 5362, 1414, 7733, 1187, 1113, 5892, 5303, 11, 8106, 7888, 5883, 1092, 5926, 1256, 2]
 // Exports: default
 
 // Module 15016 (ContactSyncSuggestions)
@@ -12,9 +12,9 @@ import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import UserUtils from "UserUtils" /* 5372 */;
-import NavigatorConstants from "NavigatorConstants" /* 5892 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import UserUtils from "UserUtils" /* 5362 */;
+import NavigatorConstants from "NavigatorConstants" /* 5882 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import _mod8106 from "module_8106" /* 8106 */;
 import FriendsScreenConstants from "FriendsScreenConstants" /* 15017 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -89,7 +89,7 @@ function SuggestionRow(suggestion) {
   tmp9 = authStore;
   if (tmp8Result) {
     const obj5 = { variant: "body-xs/medium", color: "text-muted", children: intl.format(intl4.t.z7y34b, obj6) };
-    const Text = tmp3(5929).Text;
+    const Text = tmp3(5919).Text;
     intl = tmp3(1113).intl;
     obj6 = { count: suggestion.mutual_friends_count };
     tmp8Result = tmp8(Text, obj5);
@@ -134,7 +134,7 @@ export default function ContactSyncSuggestions(friendSuggestions) {
     acc[suggested_user.suggested_user.id] = true;
     return acc;
   }, {});
-  let obj = friendSuggestions(5902);
+  let obj = friendSuggestions(5892);
   const token = obj.useToken(onSubmit(575).colors.BACKGROUND_BASE_LOW);
   let obj2 = friendSuggestions(5303);
   let items = [obj2.hexOpacityToRgba(token, 0), ];
@@ -143,7 +143,7 @@ export default function ContactSyncSuggestions(friendSuggestions) {
   const tmp4 = first(react.useState(reduced), 2);
   first = tmp4[0];
   react = tmp4[1];
-  let obj4 = friendSuggestions(5944);
+  let obj4 = friendSuggestions(5934);
   const fontScale = obj4.useFontScale();
   const sum = onSubmit(575).space.PX_16 + onSubmit(575).space.PX_32 + 40;
   let items1 = [first];
@@ -222,7 +222,7 @@ export default function ContactSyncSuggestions(friendSuggestions) {
   const FlashList = friendSuggestions(7888).FlashList;
   items5 = [closure_8(FlashList, obj7), , ];
   const obj9 = { style: tmp.linearGradient, start: friendSuggestions(1092).VerticalGradient.START, end: friendSuggestions(1092).VerticalGradient.END, pointerEvents: "none", colors: items };
-  const tmp13 = onSubmit(5893);
+  const tmp13 = onSubmit(5883);
   items5[1] = closure_8(tmp13, obj9);
   const obj10 = { style: tmp.redesignButton, children: closure_8(Button, obj11) };
   obj11 = {
@@ -243,7 +243,7 @@ export default function ContactSyncSuggestions(friendSuggestions) {
     },
     disabled: !someResult
   };
-  Button = friendSuggestions(5936).Button;
+  Button = friendSuggestions(5926).Button;
   intl = friendSuggestions(1113).intl;
   items5[2] = closure_8(onSelect, obj10);
   return closure_10(onSelect, obj6);

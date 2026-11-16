@@ -1,12 +1,12 @@
 // Module ID: 9579
 // Function ID: 9580
 // Name: openPremiumModal
-// Dependencies: [6848, 9580, 2121, 2]
+// Dependencies: [6838, 9580, 2121, 2]
 // Exports: default
 
 // Module 9579 (openPremiumModal)
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("components_native/premium/openPremiumModal.tsx");

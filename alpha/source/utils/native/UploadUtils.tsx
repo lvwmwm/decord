@@ -1,7 +1,7 @@
 // Module ID: 8879
 // Function ID: 8880
 // Name: utils/UploadUtils
-// Dependencies: [109, 5, 17, 1194, 6210, 1388, 1072, 6902, 3, 8880, 8192, 8846, 8886, 1380, 6014, 1113, 1444, 2174, 8850, 1149, 8887, 8889, 8890, 8875, 5263, 38, 8891, 8892, 8893, 1255, 8894, 8895, 8896, 6383, 8897, 2]
+// Dependencies: [109, 5, 17, 1194, 6200, 1388, 1072, 6892, 3, 8880, 8192, 8846, 8886, 1380, 6004, 1113, 1444, 2174, 8850, 1149, 8887, 8889, 8890, 8875, 5263, 38, 8891, 8892, 8893, 1255, 8894, 8895, 8896, 6373, 8897, 2]
 // Exports: cancelGetFileInfo, getAppDir, getCaptionLabel, getFileFromUploadItem, getFileInfo, getFileSize, getImageCompressionQuality, getImageDimensionsIfMissing, getType, openImagePicker, resolveModeToVideoQualityForFreeUser, resolveModeToVideoQualityForUserWithFeature, shouldResolveToMediaFilePath
 
 // Module 8879 (utils/UploadUtils)
@@ -11,7 +11,7 @@ import react_nativeDefault from "react-native" /* 1149 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import react_nativeDefault2 from "react-native" /* 1444 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 6902 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 6892 */;
 import NativePermissionUtilsDefault from "NativePermissionUtils" /* 8192 */;
 import UploadPlatform from "UploadPlatform" /* 8850 */;
 import FileUtils from "FileUtils" /* 8875 */;
@@ -23,7 +23,7 @@ import utils_TimeUtils from "utils/TimeUtils" /* 8897 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UnsyncedUserSettingsStore_mod from "UnsyncedUserSettingsStore" /* 1194 */;
-import NetworkStore from "NetworkStore" /* 6210 */;
+import NetworkStore from "NetworkStore" /* 6200 */;
 import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import size_mod from "module_2" /* 2 */;

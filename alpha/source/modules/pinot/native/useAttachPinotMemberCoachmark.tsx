@@ -1,7 +1,7 @@
 // Module ID: 12341
 // Function ID: 12342
 // Name: useAttachPinotMemberCoachmark
-// Dependencies: [19, 1072, 5152, 21, 12342, 575, 12334, 12344, 1113, 3385, 5929, 8604, 6012, 2188, 9567, 2]
+// Dependencies: [19, 1072, 5152, 21, 12342, 575, 12334, 12344, 1113, 3385, 5919, 8604, 6002, 2188, 9567, 2]
 // Exports: useAttachPinotMemberCoachmark
 
 // Module 12341 (useAttachPinotMemberCoachmark)
@@ -9,7 +9,7 @@ import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import _modDef3385 from "module_3385" /* 3385 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import ExperimentalWebIcon2 from "ExperimentalWebIcon" /* 12342 */;
 import PinotAnalytics from "PinotAnalytics" /* 12344 */;
 import react from "react" /* 19 */;

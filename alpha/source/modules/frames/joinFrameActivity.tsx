@@ -1,7 +1,7 @@
 // Module ID: 14039
 // Function ID: 14040
 // Name: joinFrameActivity
-// Dependencies: [5, 2165, 5155, 5981, 7020, 1072, 12706, 572, 12697, 5977, 12758, 12753, 1113, 12780, 14040, 12410, 12748, 6758, 14041, 12757, 7294, 8134, 7310, 2]
+// Dependencies: [5, 2165, 5155, 5971, 7020, 1072, 12706, 572, 12697, 5967, 12758, 12753, 1113, 12780, 14040, 12410, 12748, 6748, 14041, 12757, 7294, 8134, 7310, 2]
 // Exports: default
 
 // Module 14039 (joinFrameActivity)
@@ -12,7 +12,7 @@ import Constants2 from "Constants" /* 12706 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
-import VoiceStateStore from "VoiceStateStore" /* 5981 */;
+import VoiceStateStore from "VoiceStateStore" /* 5971 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

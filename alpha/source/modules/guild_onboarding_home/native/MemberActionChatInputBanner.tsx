@@ -1,7 +1,7 @@
 // Module ID: 14684
 // Function ID: 14685
 // Name: MemberActionChatInputBanner
-// Dependencies: [32, 19, 17, 5307, 6969, 5155, 5218, 1072, 1391, 21, 5306, 575, 563, 5954, 5929, 1113, 1187, 14057, 6020, 1414, 5252, 14685, 7081, 1655, 5548, 14686, 7428, 1099, 14683, 7079, 2]
+// Dependencies: [32, 19, 17, 5307, 6969, 5155, 5218, 1072, 1391, 21, 5306, 575, 563, 5944, 5919, 1113, 1187, 14057, 6010, 1414, 5252, 14685, 7081, 1655, 5538, 14686, 7428, 1099, 14683, 7079, 2]
 
 // Module 14684 (MemberActionChatInputBanner)
 import react_native from "react-native" /* 17 */;
@@ -12,9 +12,9 @@ import native from "native" /* 1187 */;
 import EmojiConstants from "EmojiConstants" /* 1391 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 5252 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import useChannelNameDefault from "useChannelName" /* 5954 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import useChannelNameDefault from "useChannelName" /* 5944 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import Pressables from "Pressables" /* 7428 */;
 import AssetRegistryDefault from "AssetRegistry" /* 14057 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 14683 */;
@@ -55,7 +55,7 @@ function ActionChannelInfo(action) {
   const obj = action(563);
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(action.channelId));
   const tmp4 = useChannelNameDefault(stateFromStores, true);
-  const Text = action(5929).Text;
+  const Text = action(5919).Text;
   const tmp5 = closure_12;
   if (null == stateFromStores) {
     const obj2 = { variant: "footnote/normal", color: "text-default", children: format(MkzlDL, obj3) };
@@ -121,7 +121,7 @@ function ChannelActionEmoji(emoji) {
       const tmp5Result6 = UnicodeEmojisDefault;
       if (null != getByName(tmp5Result6.convertSurrogateToName(name, false))) {
         const obj6 = { style: tmp.textEmoji, variant: "heading-lg/medium", children: name };
-        tmp2Result = tmp2(tmp3(5929).Text, obj6);
+        tmp2Result = tmp2(tmp3(5919).Text, obj6);
       }
     }
   }

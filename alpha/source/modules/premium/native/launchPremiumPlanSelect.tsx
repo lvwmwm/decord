@@ -1,7 +1,7 @@
 // Module ID: 9968
 // Function ID: 9969
 // Name: launchPremiumPlanSelect
-// Dependencies: [1072, 9611, 6848, 9580, 2121, 9580, 7813, 2]
+// Dependencies: [1072, 9611, 6838, 9580, 2121, 9580, 7813, 2]
 // Exports: launchPremiumPlanSelect
 
 // Module 9968 (launchPremiumPlanSelect)
@@ -60,9 +60,9 @@ export function launchPremiumPlanSelect(isBoostPurchaseFlow) {
     let obj = { predicate: wrappedPredicate, analyticsLocation, analyticsLocations, showCurrentPlan, isBoostPurchaseFlow: flag, planId, applicationId, guildId, onPaymentSuccess, onPaymentDismiss };
     navigation.push(PREMIUM_PLAN_SELECT, obj);
   } else {
-    const pushLazy = flag2(6848).pushLazy;
+    const pushLazy = flag2(6838).pushLazy;
     const obj3 = { initialRoute: PREMIUM_PLAN_SELECT, analyticsLocation, analyticsLocations, predicate: wrappedPredicate, showCurrentPlan, isBoostPurchaseFlow: flag, planId, applicationId, guildId, onBack: tmp, onPaymentSuccess, onPaymentDismiss };
-    flag2(6848);
+    flag2(6838);
     const tmp8 = asyncRequire(9580, dependencyMap.paths);
     pushLazy(tmp8, obj3, PremiumModal.PREMIUM_KEY);
   }

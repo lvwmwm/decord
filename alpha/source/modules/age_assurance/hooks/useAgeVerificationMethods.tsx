@@ -1,19 +1,19 @@
 // Module ID: 8397
 // Function ID: 8398
 // Name: useAgeVerificationMethods
-// Dependencies: [5, 32, 19, 6831, 6832, 504, 8256, 6833, 8241, 6771, 6776, 8398, 8204, 1113, 2]
+// Dependencies: [5, 32, 19, 6821, 6822, 504, 8256, 6823, 8241, 6761, 6766, 8398, 8204, 1113, 2]
 // Exports: default
 
 // Module 8397 (useAgeVerificationMethods)
 import intl3 from "intl" /* 1113 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 6771 */;
-import MetricEvents from "MetricEvents" /* 6776 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 6761 */;
+import MetricEvents from "MetricEvents" /* 6766 */;
 import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 8204 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AgeVerificationStore from "AgeVerificationStore" /* 6831 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 6832 */;
+import AgeVerificationStore from "AgeVerificationStore" /* 6821 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 6822 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2, id;

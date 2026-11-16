@@ -1,7 +1,7 @@
 // Module ID: 11100
 // Function ID: 11101
 // Name: BugReporterModal
-// Dependencies: [5, 32, 19, 17, 1388, 11099, 21, 5306, 575, 671, 1089, 6848, 1502, 504, 1113, 7493, 8850, 8874, 6015, 11101, 559, 11102, 7427, 7747, 6020, 1414, 1380, 8880, 11112, 1644, 7860, 6337, 5929, 7445, 11124, 7428, 1187, 7430, 5936, 7619, 7746, 7443, 5552, 11139, 2121, 7745, 7859, 1363, 11140, 11093, 7490, 2]
+// Dependencies: [5, 32, 19, 17, 1388, 11099, 21, 5306, 575, 671, 1089, 6838, 1502, 504, 1113, 7493, 8850, 8874, 6005, 11101, 559, 11102, 7427, 7747, 6010, 1414, 1380, 8880, 11112, 1644, 7860, 6327, 5919, 7445, 11124, 7428, 1187, 7430, 5926, 7619, 7746, 7443, 5542, 11139, 2121, 7745, 7859, 1363, 11140, 11093, 7490, 2]
 // Exports: default
 
 // Module 11100 (BugReporterModal)
@@ -10,9 +10,9 @@ import DurationsDefault from "Durations" /* 1089 */;
 import intl13 from "intl" /* 1113 */;
 import AvatarUtils from "AvatarUtils" /* 1414 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import FastImageDefault from "FastImage" /* 6020 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7427 */;
 import NavigatorHeader from "NavigatorHeader" /* 7493 */;
 import TableRadioRow2 from "TableRadioRow" /* 7747 */;
@@ -737,11 +737,11 @@ class BugCreateScreen {
     let obj3 = { bottomOffset: screenshotUri(7860).TEXT_AREA_HEIGHT, children: tmp35(Stack, obj4) };
     const KeyboardAwareScrollView = screenshotUri(1644).KeyboardAwareScrollView;
     obj4 = { spacing: 24, style: tmp.container, children: items8 };
-    Stack = screenshotUri(6337).Stack;
+    Stack = screenshotUri(6327).Stack;
     let obj5 = { spacing: 8, children: items6 };
-    const Stack2 = screenshotUri(6337).Stack;
+    const Stack2 = screenshotUri(6327).Stack;
     let obj6 = { variant: "body-sm/semibold", color: "text-subtle", children: intl.string(screenshotUri(1113).t.tM969v) };
-    let Text = screenshotUri(5929).Text;
+    let Text = screenshotUri(5919).Text;
     intl = screenshotUri(1113).intl;
     items6 = [first4(Text, obj6), ];
     let obj7 = { children: items7 };
@@ -779,7 +779,7 @@ class BugCreateScreen {
         return obj(...arguments);
       }
     };
-    const Button = screenshotUri(5936).Button;
+    const Button = screenshotUri(5926).Button;
     intl2 = screenshotUri(1113).intl;
     items7[1] = first4(Button, obj9);
     items6[1] = closure_11(Card, obj7);
@@ -876,7 +876,7 @@ class BugCreateScreen {
         open("BUG_REPORT_HAS_BEEN_TURNED_OFF_TEXT", obj3);
       }
     };
-    Button2 = tmp25(5936).Button;
+    Button2 = tmp25(5926).Button;
     intl12 = tmp25(1113).intl;
     items8[6] = first4(first2, obj16);
     const children = [tmp37(KeyboardAwareScrollView, obj3), ];

@@ -1,7 +1,7 @@
 // Module ID: 15796
 // Function ID: 15797
 // Name: GameDiversityTier10LargeBadge
-// Dependencies: [19, 21, 15797, 15798, 15799, 7755, 6020, 2]
+// Dependencies: [19, 21, 15797, 15798, 15799, 7755, 6010, 2]
 // Exports: GameDiversityTier10LargeBadge
 
 // Module 15796 (GameDiversityTier10LargeBadge)

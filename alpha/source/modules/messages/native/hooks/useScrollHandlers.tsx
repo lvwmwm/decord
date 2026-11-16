@@ -1,13 +1,13 @@
 // Module ID: 12456
 // Function ID: 12457
 // Name: useScrollHandlers
-// Dependencies: [19, 11865, 3, 5568, 10280, 1263, 11882, 8779, 11884, 5341, 2]
+// Dependencies: [19, 11865, 3, 5558, 10280, 1263, 11882, 8779, 11884, 6957, 2]
 // Exports: default
 
 // Module 12456 (useScrollHandlers)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 1263 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5568 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5558 */;
 import IOSAnchoredChatScrollerExperiment from "IOSAnchoredChatScrollerExperiment" /* 8779 */;
 import DimensionActionCreatorsDefault from "DimensionActionCreators" /* 10280 */;
 import NativeChatUtilsDefault from "NativeChatUtils" /* 11882 */;
@@ -21,7 +21,7 @@ let hasMoreAfter, importDefault;
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const QuestTypes = tmp(5341);
+const QuestTypes = tmp(6957);
 ({ updateIsAtBottom: closure_4, updateShouldShowJumpToPresentButton: hasOwnProperty } = useChatBottomManagerUIStore);
 const tmp3 = new LoggerDefault("useScrollHandlers");
 let closure_6 = tmp3;

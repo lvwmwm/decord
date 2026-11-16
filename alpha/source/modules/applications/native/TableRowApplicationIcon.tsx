@@ -1,14 +1,14 @@
 // Module ID: 8151
 // Function ID: 8152
 // Name: TableRowApplicationIcon
-// Dependencies: [19, 21, 5306, 575, 6020, 1414, 2]
+// Dependencies: [19, 21, 5306, 575, 6010, 1414, 2]
 // Exports: default
 
 // Module 8151 (TableRowApplicationIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;

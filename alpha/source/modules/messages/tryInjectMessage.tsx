@@ -1,12 +1,12 @@
 // Module ID: 14561
 // Function ID: 14562
 // Name: tryInjectMessage
-// Dependencies: [502, 1072, 8851, 6374, 1406, 14562, 14563, 2]
+// Dependencies: [502, 1072, 8851, 6364, 1406, 14562, 14563, 2]
 // Exports: tryCreateInjectedMessage
 
 // Module 14561 (tryInjectMessage)
 import FlagUtils from "FlagUtils" /* 1406 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 6374 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 6364 */;
 import createMessageDefault from "createMessage" /* 8851 */;
 import ChannelRecipientPrivateUserDataFlags from "ChannelRecipientPrivateUserDataFlags" /* 14562 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

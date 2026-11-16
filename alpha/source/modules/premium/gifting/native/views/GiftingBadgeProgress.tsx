@@ -1,7 +1,7 @@
 // Module ID: 11818
 // Function ID: 11819
 // Name: GiftingBadgeProgress
-// Dependencies: [19, 17, 8547, 21, 5306, 575, 11678, 11680, 5929, 1113, 2797, 2]
+// Dependencies: [19, 17, 8547, 21, 5306, 575, 11678, 11680, 5919, 1113, 2797, 2]
 // Exports: default
 
 // Module 11818 (GiftingBadgeProgress)
@@ -87,14 +87,14 @@ export default function GiftingBadgeProgress(currentTier) {
   const obj5 = { style: tmp.content, children: items1 };
   if (tmp14) {
     const obj6 = { variant: "body-md/semibold", children: title };
-    tmp14 = hasOwnProperty(tmp2(5929).Text, obj6);
+    tmp14 = hasOwnProperty(tmp2(5919).Text, obj6);
   }
   items1 = [tmp14, hasOwnProperty(GiftingBadgeProgressBar, { percent: num2 }), ];
   const obj7 = { style: tmp.labels, children: tmp16Result };
   tmp16Result = null != nextTier;
   if (tmp16Result) {
     const obj8 = { variant: "body-xs/normal", color: "text-muted", children: intl.format(_modDef2797.iIpfQe, obj9) };
-    const Text = tmp2(5929).Text;
+    const Text = tmp2(5919).Text;
     intl = tmp2(1113).intl;
     obj9 = { count: progress, threshold: tmp6 };
     tmp16Result = tmp16(Text, obj8);

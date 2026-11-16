@@ -1,13 +1,13 @@
 // Module ID: 12600
 // Function ID: 12601
 // Name: RatingSelector
-// Dependencies: [19, 17, 12596, 21, 5306, 12601, 12602, 1113, 12606, 12607, 12611, 12612, 8108, 6020, 7428, 2]
+// Dependencies: [19, 17, 12596, 21, 5306, 12601, 12602, 1113, 12606, 12607, 12611, 12612, 8108, 6010, 7428, 2]
 // Exports: default
 
 // Module 12600 (RatingSelector)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import AssetRegistryDefault from "AssetRegistry" /* 12601 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 12606 */;
 import AssetRegistryDefault3 from "AssetRegistry" /* 12611 */;

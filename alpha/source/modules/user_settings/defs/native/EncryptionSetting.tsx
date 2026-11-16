@@ -1,15 +1,15 @@
-// Module ID: 18539
-// Function ID: 18540
+// Module ID: 18541
+// Function ID: 18542
 // Name: EncryptionSetting
-// Dependencies: [6089, 9202, 1072, 504, 18540, 1113, 12406, 18541, 2]
+// Dependencies: [6079, 9202, 1072, 504, 18542, 1113, 12406, 18543, 2]
 
-// Module 18539 (EncryptionSetting)
+// Module 18541 (EncryptionSetting)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;
-import useSecureFramesVerifiedUsers from "useSecureFramesVerifiedUsers" /* 18540 */;
-import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 6089 */;
+import useSecureFramesVerifiedUsers from "useSecureFramesVerifiedUsers" /* 18542 */;
+import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 6079 */;
 import SettingBuilders from "SettingBuilders" /* 12406 */;
 import size from "module_2" /* 2 */;
 

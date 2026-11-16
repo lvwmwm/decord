@@ -1,7 +1,7 @@
 // Module ID: 13632
 // Function ID: 13633
 // Name: ConjureAttachmentPills
-// Dependencies: [19, 17, 21, 5306, 575, 13228, 6012, 7445, 1113, 4131, 5929, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 13228, 6002, 7445, 1113, 4131, 5919, 2]
 // Exports: default
 
 // Module 13632 (ConjureAttachmentPills)

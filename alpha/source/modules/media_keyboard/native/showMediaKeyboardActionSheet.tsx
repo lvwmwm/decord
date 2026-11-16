@@ -1,12 +1,12 @@
 // Module ID: 11636
 // Function ID: 11637
 // Name: showMediaKeyboardActionSheet
-// Dependencies: [5552, 11637, 2121, 8199, 2]
+// Dependencies: [5542, 11637, 2121, 8199, 2]
 // Exports: hideMediaKeyboardActionSheet, presentLimitedLibraryPicker, showMediaKeyboardActionSheet
 
 // Module 11636 (showMediaKeyboardActionSheet)
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import react_nativeDefault from "react-native" /* 8199 */;
 import size from "module_2" /* 2 */;
 

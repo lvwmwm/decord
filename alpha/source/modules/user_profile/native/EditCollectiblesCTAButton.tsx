@@ -1,7 +1,7 @@
 // Module ID: 9403
 // Function ID: 9404
 // Name: EditCollectiblesCTAButton
-// Dependencies: [19, 5307, 1074, 1626, 21, 5306, 1630, 504, 9404, 1655, 5939, 2174, 8497, 9405, 1113, 5554, 9406, 9407, 8484, 5552, 5936, 2]
+// Dependencies: [19, 5307, 1074, 1626, 21, 5306, 1630, 504, 9404, 1655, 5929, 2174, 8497, 9405, 1113, 5544, 9406, 9407, 8484, 5542, 5926, 2]
 
 // Module 9403 (EditCollectiblesCTAButton)
 import Fragment from "Fragment" /* 21 */;
@@ -9,8 +9,8 @@ import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import intl4 from "intl" /* 1113 */;
 import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1626 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import HapticUtils from "HapticUtils" /* 5554 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import HapticUtils from "HapticUtils" /* 5544 */;
 import CollectiblesActionCreators from "CollectiblesActionCreators" /* 8484 */;
 import EditCollectiblesActionCreators from "EditCollectiblesActionCreators" /* 9406 */;
 import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 9407 */;

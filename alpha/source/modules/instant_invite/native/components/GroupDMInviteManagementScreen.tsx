@@ -1,7 +1,7 @@
 // Module ID: 10914
 // Function ID: 10915
 // Name: GroupDMInviteManagementScreen
-// Dependencies: [5, 32, 19, 17, 7664, 10915, 1072, 21, 5306, 575, 5899, 1285, 12, 10916, 7588, 1187, 10937, 10938, 1113, 7888, 7493, 1264, 7490, 2]
+// Dependencies: [5, 32, 19, 17, 7664, 10915, 1072, 21, 5306, 575, 5889, 1285, 12, 10916, 7588, 1187, 10937, 10938, 1113, 7888, 7493, 1264, 7490, 2]
 
 // Module 10914 (GroupDMInviteManagementScreen)
 import _modDef12 from "module_12" /* 12 */;
@@ -40,7 +40,7 @@ function GroupDMInviteManagement(channelId) {
   const tmp = closure_11();
   [first, dependencyMap] = react.useState([]);
   [first1, closure_3] = react.useState(true);
-  first(5899)(() => {
+  first(5889)(() => {
     function fetchInvites() {
       return obj(...arguments);
     }

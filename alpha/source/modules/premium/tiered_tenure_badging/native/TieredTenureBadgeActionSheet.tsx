@@ -1,15 +1,15 @@
 // Module ID: 15286
 // Function ID: 15287
 // Name: TieredTenureBadgeActionSheet
-// Dependencies: [19, 17, 1388, 1390, 1072, 21, 5306, 575, 10085, 7361, 15287, 6020, 5929, 1113, 10079, 504, 15288, 2110, 6338, 1264, 1630, 8604, 5552, 8476, 11279, 10074, 5566, 5570, 2]
+// Dependencies: [19, 17, 1388, 1390, 1072, 21, 5306, 575, 10085, 7361, 15287, 6010, 5919, 1113, 10079, 504, 15288, 2110, 6328, 1264, 1630, 8604, 5542, 8476, 11279, 10074, 5556, 5560, 2]
 // Exports: default
 
 // Module 15286 (TieredTenureBadgeActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7361 */;
 import showUserProfileActionSheet from "showUserProfileActionSheet" /* 8476 */;
 import openUserSettings from "openUserSettings" /* 8604 */;
@@ -71,7 +71,7 @@ function TieredTenureBadgeItem(arg0) {
     const obj3 = { resizeMode: "contain", source: small };
     items1 = [authStore(FastImageDefault, obj3), , , ];
     const obj4 = { style: tmp.badgeName, variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: intl.string(tieredTenureBadgeData.nameUnformatted) };
-    const Text = tmp2(5929).Text;
+    const Text = tmp2(5919).Text;
     intl = tmp2(1113).intl;
     items1[1] = authStore(Text, obj4);
     const obj5 = { style: tmp.badgeRequirement, variant: "body-xs/normal", color: "mobile-text-heading-primary", children: tmp7 };
@@ -82,7 +82,7 @@ function TieredTenureBadgeItem(arg0) {
     }
     if (isUsersBadge) {
       const obj6 = { style: tmp.badgePremiumSince, variant: "body-xs/normal", color: "text-muted", children: formatToPlainString(Hu4jfi, obj7) };
-      const Text2 = tmp2(5929).Text;
+      const Text2 = tmp2(5919).Text;
       const intl2 = tmp2(1113).intl;
       formatToPlainString = intl2.formatToPlainString;
       const _Date = Date;

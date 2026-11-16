@@ -1,15 +1,15 @@
 // Module ID: 11967
 // Function ID: 11968
 // Name: ChannelFollowSuccessAlert
-// Dependencies: [19, 21, 11968, 11969, 11970, 11971, 11972, 11973, 1113, 5306, 5547, 5313, 9679, 12, 6340, 6020, 5929, 2]
+// Dependencies: [19, 21, 11968, 11969, 11970, 11971, 11972, 11973, 1113, 5306, 5537, 5313, 9679, 12, 6330, 6010, 5919, 2]
 // Exports: default
 
 // Module 11967 (ChannelFollowSuccessAlert)
 import _modDef12 from "module_12" /* 12 */;
 import intl3 from "intl" /* 1113 */;
-import useThemeDefault from "useTheme" /* 5547 */;
-import FastImageDefault from "FastImage" /* 6020 */;
-import AlertDefault from "Alert" /* 6340 */;
+import useThemeDefault from "useTheme" /* 5537 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import AlertDefault from "Alert" /* 6330 */;
 import AssetRegistry from "AssetRegistry" /* 11968 */;
 import AssetRegistry2 from "AssetRegistry" /* 11969 */;
 import AssetRegistry3 from "AssetRegistry" /* 11970 */;
@@ -102,10 +102,10 @@ export default function ChannelFollowSuccessAlert(arg0) {
   const obj3 = { source: stableMemo, style: tmp.image };
   items1[0] = closure_3(FastImageDefault, obj3);
   const obj4 = { style: tmp.header, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: stableMemo1() };
-  const Text = tmp5(5929).Text;
+  const Text = tmp5(5919).Text;
   items1[1] = closure_3(Text, obj4);
   const obj5 = { style: tmp.text, variant: "body-md/medium", color: "text-muted", children: intl2.string(require("intl").t["2QbSea"]) };
-  const Text2 = tmp5(5929).Text;
+  const Text2 = tmp5(5919).Text;
   intl2 = tmp5(1113).intl;
   items1[2] = closure_3(Text2, obj5);
   return closure_4(tmp2Result, obj2);

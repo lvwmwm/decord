@@ -1,10 +1,10 @@
-// Module ID: 18034
-// Function ID: 18035
+// Module ID: 18036
+// Function ID: 18037
 // Name: EnableSwitchIconsSetting
 // Dependencies: [5307, 9202, 504, 12406, 1113, 16889, 2]
 // Exports: useEnableSwitchIconsSettingValue
 
-// Module 18034 (EnableSwitchIconsSetting)
+// Module 18036 (EnableSwitchIconsSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;

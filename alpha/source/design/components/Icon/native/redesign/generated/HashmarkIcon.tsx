@@ -1,14 +1,14 @@
-// Module ID: 18392
-// Function ID: 18393
+// Module ID: 18394
+// Function ID: 18395
 // Name: HashmarkIcon
-// Dependencies: [19, 21, 575, 6019, 18393, 2]
+// Dependencies: [19, 21, 575, 6009, 18395, 2]
 // Exports: HashmarkIcon
 
-// Module 18392 (HashmarkIcon)
+// Module 18394 (HashmarkIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6019 */;
-import AssetRegistry from "AssetRegistry" /* 18393 */;
+import BaseIconImage2 from "BaseIconImage" /* 6009 */;
+import AssetRegistry from "AssetRegistry" /* 18395 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

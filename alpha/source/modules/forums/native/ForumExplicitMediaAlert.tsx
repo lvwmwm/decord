@@ -1,7 +1,7 @@
 // Module ID: 11218
 // Function ID: 11219
 // Name: ForumExplicitMediaAlert
-// Dependencies: [19, 17, 21, 5306, 575, 6340, 5929, 1113, 5936, 11219, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 6330, 5919, 1113, 5926, 11219, 2]
 // Exports: default
 
 // Module 11218 (ForumExplicitMediaAlert)

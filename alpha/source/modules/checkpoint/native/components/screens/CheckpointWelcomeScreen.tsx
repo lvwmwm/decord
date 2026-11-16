@@ -1,7 +1,7 @@
 // Module ID: 14484
 // Function ID: 14485
 // Name: CheckpointWelcomeScreen
-// Dependencies: [17, 1388, 6377, 21, 575, 5306, 1496, 504, 5372, 1113, 3285, 14485, 14270, 14486, 14497, 3317, 14498, 2]
+// Dependencies: [17, 1388, 6367, 21, 575, 5306, 1496, 504, 5362, 1113, 3285, 14485, 14270, 14486, 14497, 3317, 14498, 2]
 // Exports: default
 
 // Module 14484 (CheckpointWelcomeScreen)
@@ -12,14 +12,14 @@ import intl4 from "intl" /* 1113 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
 import _modDef3285 from "module_3285" /* 3285 */;
 import _modDef3317 from "module_3317" /* 3317 */;
-import UserUtils from "UserUtils" /* 5372 */;
+import UserUtils from "UserUtils" /* 5362 */;
 import CheckpointScreen from "CheckpointScreen" /* 14270 */;
 import useIsCheckpointWideDefault from "useIsCheckpointWide" /* 14485 */;
 import CheckpointNavigationControls from "CheckpointNavigationControls" /* 14486 */;
 import TextWritingAnimation from "TextWritingAnimation" /* 14497 */;
 import CheckpointKnickKnacksDefault from "CheckpointKnickKnacks" /* 14498 */;
 import UserStore from "UserStore" /* 1388 */;
-import CheckpointConstants from "CheckpointConstants" /* 6377 */;
+import CheckpointConstants from "CheckpointConstants" /* 6367 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;

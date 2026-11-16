@@ -1,7 +1,7 @@
 // Module ID: 11249
 // Function ID: 11250
 // Name: trackOnEmojiPickerOpened
-// Dependencies: [19, 6969, 5155, 5209, 1072, 1391, 1228, 9551, 9552, 6067, 5256, 2]
+// Dependencies: [19, 6969, 5155, 5209, 1072, 1391, 1228, 9551, 9552, 6057, 5256, 2]
 // Exports: useTrackOnEmojiPickerOpenedForReactions
 
 // Module 11249 (trackOnEmojiPickerOpened)
@@ -9,7 +9,7 @@ import Constants from "Constants" /* 1072 */;
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1228 */;
 import EmojiConstants from "EmojiConstants" /* 1391 */;
 import EmojiUtilsDefault from "EmojiUtils" /* 5256 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6067 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6057 */;
 import useTopAndNewlyAddedEmojis from "useTopAndNewlyAddedEmojis" /* 9551 */;
 import react from "react" /* 19 */;
 import EmojiStore from "EmojiStore" /* 6969 */;

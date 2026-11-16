@@ -1,10 +1,10 @@
-// Module ID: 18671
-// Function ID: 18672
+// Module ID: 18673
+// Function ID: 18674
 // Name: RegisterAccountInformation
-// Dependencies: [5, 32, 19, 17, 6846, 6052, 8466, 18648, 18649, 1072, 21, 5306, 575, 1655, 7770, 18645, 504, 18672, 18674, 18657, 1113, 18666, 18647, 18665, 7792, 18675, 18676, 5936, 7649, 7474, 2]
+// Dependencies: [5, 32, 19, 17, 6836, 6042, 8466, 18650, 18651, 1072, 21, 5306, 575, 1655, 7770, 18647, 504, 18674, 18676, 18659, 1113, 18668, 18649, 18667, 7792, 18677, 18678, 5926, 7649, 7474, 2]
 // Exports: default
 
-// Module 18671 (RegisterAccountInformation)
+// Module 18673 (RegisterAccountInformation)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import _mod1655 from "module_1655" /* 1655 */;
@@ -13,11 +13,11 @@ import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ConsentStore_mod from "ConsentStore" /* 6846 */;
-import InviteStore from "InviteStore" /* 6052 */;
+import ConsentStore_mod from "ConsentStore" /* 6836 */;
+import InviteStore from "InviteStore" /* 6042 */;
 import DisplayedInviteStore from "DisplayedInviteStore" /* 8466 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 18648 */;
-import RegistrationConstants from "RegistrationConstants" /* 18649 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 18650 */;
+import RegistrationConstants from "RegistrationConstants" /* 18651 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
@@ -39,8 +39,8 @@ const _modDef1655 = tmp(1655);
 const KeyboardAwareViewDefault = tmp(7474);
 const FreeFormErrorLabelDefault = tmp(7649);
 const AuthFormViewDefault = tmp(7792);
-const useInitialRegistrationStepDefault = tmp(18665);
-const useAuthFlowBackHandlerDefault = tmp(18666);
+const useInitialRegistrationStepDefault = tmp(18667);
+const useAuthFlowBackHandlerDefault = tmp(18668);
 ({ View: metroRequire, ScrollView: metroImportDefault } = react_native);
 let ConsentStore = ConsentStore_mod;
 ({ setRegistrationErrors: unpackModuleId, updateRegistrationOptions: closure_12, useRegistrationUIStore: map1 } = RegistrationUIStore);
@@ -186,7 +186,7 @@ export default function RegisterAccountInformation() {
   const tmp3 = useWideAuthViewDefault();
   const tmp4 = closure_19(tmp3);
   obj = react;
-  context = react.useContext(context(18645).TrackRegistrationContext);
+  context = react.useContext(context(18647).TrackRegistrationContext);
   const tmp7 = closure_13((registrationOptions) => registrationOptions.registrationOptions);
   let tmp8 = closure_13((submitting) => submitting.submitting);
   [tmp10, importDefault] = _slicedToArray(react.useState(false), 2);
@@ -205,10 +205,10 @@ export default function RegisterAccountInformation() {
     return invite;
   });
   const ref = react.useRef(null);
-  let obj4 = context(18672);
+  let obj4 = context(18674);
   const passwordRegistrationStep = obj4.usePasswordRegistrationStep();
   ({ password, validatePassword: _slicedToArray, setPassword, passwordScore, preventSubmitPassword } = passwordRegistrationStep);
-  let obj5 = context(18674);
+  let obj5 = context(18676);
   const usernameRegistrationStep = obj5.useUsernameRegistrationStep(AuthStates.REGISTER_ACCOUNT_INFORMATION);
   ({ transitionToNextStepOrSubmit: react, username, preventSubmitUsername, validateUsername: closure_6 } = usernameRegistrationStep);
   let obj6 = { username, password, invite: code };
@@ -222,7 +222,7 @@ export default function RegisterAccountInformation() {
   const tmp5Result = context(504);
   const stateFromStores1 = tmp5Result.useStateFromStores(items2, () => ConsentStore.getAuthenticationConsentRequired());
   let obj7 = { isConsentRequired: true === stateFromStores1 };
-  const tmp5Result3 = context(18657);
+  const tmp5Result3 = context(18659);
   const result = tmp5Result3.hasAllRegistrationFieldsCompleted(obj6, obj7);
   ConsentStore = result;
   const intl = tmp5(1113).intl;
@@ -237,7 +237,7 @@ export default function RegisterAccountInformation() {
     return obj(...arguments);
   }
   const tmpResult = useAuthFlowBackHandlerDefault;
-  const tmp5Result4 = context(18647);
+  const tmp5Result4 = context(18649);
   tmpResult(tmp5Result4.getPreviousRegistrationTransitionStep(AuthStates.REGISTER_ACCOUNT_INFORMATION));
   useInitialRegistrationStepDefault(AuthStates.REGISTER_ACCOUNT_INFORMATION);
   const items3 = [context];
@@ -256,14 +256,14 @@ export default function RegisterAccountInformation() {
   intl2 = tmp5(1113).intl;
   obj9 = { contentContainerStyle: { flexGrow: 1 }, keyboardShouldPersistTaps: "handled", children: items4 };
   items4 = [, , ];
-  const obj10 = { style: tmp4.container, children: closure_17(context(18675).RegisterUsernameInput, { username, setUsername, onSubmitEditing: callback, usernameStatus, submitBehavior: "submit", autoFocus: true }) };
+  const obj10 = { style: tmp4.container, children: closure_17(context(18677).RegisterUsernameInput, { username, setUsername, onSubmitEditing: callback, usernameStatus, submitBehavior: "submit", autoFocus: true }) };
   items4[0] = closure_17(closure_6, obj10);
   const obj11 = { style: tmp4.password, children: closure_17(RegisterPasswordInput, obj12) };
   const View = _modDef1655.View;
   const merged1 = Object.assign(obj);
   obj12 = { ref, password, onPasswordChange: setPassword, onSubmitEditing: handleSubmit, passwordScore, returnKeyType: str };
   str = "next";
-  RegisterPasswordInput = tmp5(18676).RegisterPasswordInput;
+  RegisterPasswordInput = tmp5(18678).RegisterPasswordInput;
   tmp30 = obj6;
   const tmp31 = obj;
   if (result) {
@@ -273,7 +273,7 @@ export default function RegisterAccountInformation() {
   const obj13 = { style: tmp4.button, children: items5 };
   const View2 = _modDef1655.View;
   const merged2 = Object.assign(tmp31);
-  const Button = tmp5(5936).Button;
+  const Button = tmp5(5926).Button;
   if (!tmp8) {
     tmp8 = tmp10;
   }

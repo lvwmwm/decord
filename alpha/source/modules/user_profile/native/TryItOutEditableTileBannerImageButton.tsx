@@ -1,7 +1,7 @@
 // Module ID: 17178
 // Function ID: 17179
 // Name: TryItOutEditableTileBannerImageButton
-// Dependencies: [19, 17, 5307, 8542, 7352, 21, 1090, 575, 504, 5131, 8482, 17179, 17180, 1113, 17170, 6020, 1414, 2]
+// Dependencies: [19, 17, 5307, 8542, 7352, 21, 1090, 575, 504, 5131, 8482, 17179, 17180, 1113, 17170, 6010, 1414, 2]
 // Exports: default
 
 // Module 17178 (TryItOutEditableTileBannerImageButton)
@@ -11,7 +11,7 @@ import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import AvatarUtils from "AvatarUtils" /* 1414 */;
 import UserSettings from "UserSettings" /* 5131 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import useDisplayProfileDefault from "useDisplayProfile" /* 8482 */;
 import UserProfileEditingAccessibilityUtils from "UserProfileEditingAccessibilityUtils" /* 17170 */;
 import UserProfileEditableTileBaseDefault from "UserProfileEditableTileBase" /* 17180 */;

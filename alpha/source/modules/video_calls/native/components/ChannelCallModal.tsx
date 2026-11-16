@@ -1,13 +1,13 @@
 // Module ID: 12713
 // Function ID: 12714
 // Name: ChannelCallModal
-// Dependencies: [32, 19, 7016, 5155, 11003, 11004, 12714, 1072, 21, 11007, 12715, 5492, 12718, 12902, 11827, 12903, 1655, 1708, 5501, 13113, 504, 1496, 12716, 13114, 7918, 7937, 14036, 6900, 5598, 11009, 2]
+// Dependencies: [32, 19, 7016, 5155, 11003, 11004, 12714, 1072, 21, 11007, 12715, 5482, 12718, 12902, 11827, 12903, 1655, 1708, 5491, 13113, 504, 1496, 12716, 13114, 7918, 7937, 14036, 6890, 5588, 11009, 2]
 
 // Module 12713 (ChannelCallModal)
 import Constants2 from "Constants" /* 1072 */;
 import _mod1708 from "module_1708" /* 1708 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5492 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6900 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5482 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6890 */;
 import ChannelCallConstants from "ChannelCallConstants" /* 11004 */;
 import VoiceChatHooks from "VoiceChatHooks" /* 11007 */;
 import RevealProvider from "RevealProvider" /* 12715 */;

@@ -1,7 +1,7 @@
 // Module ID: 12769
 // Function ID: 12770
 // Name: confirmActivityLaunchChecks
-// Dependencies: [5, 5155, 5154, 1072, 12770, 12760, 572, 6757, 5227, 12773, 12747, 12774, 7057, 12776, 2]
+// Dependencies: [5, 5155, 5154, 1072, 12770, 12760, 572, 6747, 5227, 12773, 12747, 12774, 7057, 12776, 2]
 // Exports: confirmActivityLaunchChecks
 
 // Module 12769 (confirmActivityLaunchChecks)

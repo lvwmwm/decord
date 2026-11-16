@@ -1,7 +1,7 @@
 // Module ID: 10965
 // Function ID: 10966
 // Name: PremiumFeaturesWumpus
-// Dependencies: [19, 1390, 21, 5306, 7771, 9607, 10966, 10967, 10968, 10969, 9609, 6020, 2]
+// Dependencies: [19, 1390, 21, 5306, 7771, 9607, 10966, 10967, 10968, 10969, 9609, 6010, 2]
 // Exports: default
 
 // Module 10965 (PremiumFeaturesWumpus)
@@ -58,10 +58,10 @@ export default function PremiumFeaturesWumpus(premiumType) {
   ({ wumpusImageSource, cloudsImageSource } = memo);
   let tmp4 = closure_6;
   let obj = { style: tmp.clouds, resizeMode: "contain", source: cloudsImageSource };
-  const items1 = [closure_4(premiumType(6020), obj), ];
+  const items1 = [closure_4(premiumType(6010), obj), ];
   const items2 = [tmp.wumpus, ];
   let wumpusLeft = premiumType === PremiumTypes.TIER_0;
-  const tmp7 = premiumType(6020);
+  const tmp7 = premiumType(6010);
   const tmp5 = closure_5;
   const tmp6 = closure_4;
   if (wumpusLeft) {

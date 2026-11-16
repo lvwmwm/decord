@@ -1,7 +1,7 @@
 // Module ID: 14710
 // Function ID: 14711
 // Name: GuildDirectoryMoreMenu
-// Dependencies: [19, 21, 14704, 14711, 6269, 1113, 14713, 1187, 12063, 10901, 6040, 11328, 9148, 7988, 7420, 575, 2]
+// Dependencies: [19, 21, 14704, 14711, 6259, 1113, 14713, 1187, 12063, 10901, 6030, 11328, 9148, 7988, 7420, 575, 2]
 // Exports: default
 
 // Module 14710 (GuildDirectoryMoreMenu)
@@ -9,7 +9,7 @@ import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6269 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6259 */;
 import ReportModals from "ReportModals" /* 12063 */;
 import useCanManageGuildDirectoryEntryDefault from "useCanManageGuildDirectoryEntry" /* 14704 */;
 import GuildDirectoryEditDescriptionModalActionCreatorsDefault from "GuildDirectoryEditDescriptionModalActionCreators" /* 14711 */;
@@ -47,7 +47,7 @@ export default function GuildDirectoryMoreMenu(entry) {
   if (canRemove) {
     let obj2 = {
       label: intl2.string(entry(1113).t.KUxYWH),
-      IconComponent: entry(6040).TrashIcon,
+      IconComponent: entry(6030).TrashIcon,
       variant: "destructive",
       action: function handleRemove() {
           let intl;

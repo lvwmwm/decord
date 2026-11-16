@@ -1,15 +1,15 @@
-// Module ID: 19809
-// Function ID: 19810
+// Module ID: 19811
+// Function ID: 19812
 // Name: DisplayNameStylesFlywheelMobileActionSheet
-// Dependencies: [19, 17, 1388, 1072, 5152, 21, 5320, 5313, 5547, 504, 2174, 17088, 1113, 3125, 5348, 5139, 17171, 8604, 7587, 5566, 7415, 5901, 19810, 6020, 19814, 5929, 5936, 5306, 575, 2]
+// Dependencies: [19, 17, 1388, 1072, 5152, 21, 5320, 5313, 5537, 504, 2174, 17088, 1113, 3125, 5338, 5139, 17171, 8604, 7587, 5556, 7415, 5891, 19812, 6010, 19816, 5919, 5926, 5306, 575, 2]
 // Exports: default
 
-// Module 19809 (DisplayNameStylesFlywheelMobileActionSheet)
+// Module 19811 (DisplayNameStylesFlywheelMobileActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import dismissible_content from "dismissible_content" /* 5139 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5348 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5338 */;
 import openUserSettings from "openUserSettings" /* 8604 */;
 import openPremiumTryItOutModal from "openPremiumTryItOutModal" /* 17171 */;
 import react from "react" /* 19 */;
@@ -62,7 +62,7 @@ export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismiss
   let tmp2 = markAsDismissed;
   const enabled = enabled2.useContext(markAsDismissed(5320).AccessibilityPreferencesContext).reducedMotion.enabled;
   let obj2 = markAsDismissed(5313);
-  const isThemeDarkResult = obj2.isThemeDark(ref(5547)());
+  const isThemeDarkResult = obj2.isThemeDark(ref(5537)());
   const tmp6 = closure_11();
   let obj3 = markAsDismissed(504);
   const items = [UserStore];
@@ -118,7 +118,7 @@ export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismiss
     markAsDismissed(ContentDismissActionType.USER_DISMISS);
   }, items3);
   const obj6 = { ref, onDismiss: callback2, startExpanded: true, handleDisabled: true, children: closure_9(SafeAreaPaddingView, obj14) };
-  const BottomSheet = tmp2(5566).BottomSheet;
+  const BottomSheet = tmp2(5556).BottomSheet;
   let tmp15 = closure_10;
   const obj7 = { style: tmp6.content, children: items4 };
   SafeAreaPaddingView = tmp2(7415).SafeAreaPaddingView;
@@ -132,15 +132,15 @@ export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismiss
       markAsDismissed(ContentDismissActionType.USER_DISMISS);
     }
   };
-  items4[0] = closure_9(tmp2(5901).ActionSheetHeaderBar, obj8);
+  items4[0] = closure_9(tmp2(5891).ActionSheetHeaderBar, obj8);
   const obj9 = { style: tmp6.imageContainer, children: items5 };
-  items5 = [enabled && tmp14(tmp2(19810).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" }), ];
+  items5 = [enabled && tmp14(tmp2(19812).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" }), ];
   let tmp14Result = !enabled;
-  enabled && closure_9(tmp2(19810).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" });
+  enabled && closure_9(tmp2(19812).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" });
   if (tmp14Result) {
     const obj10 = { source: obj11, style: tmp6.image, resizeMode: "contain" };
-    obj11 = { uri: ref(19814) };
-    const tmp4Result = ref(6020);
+    obj11 = { uri: ref(19816) };
+    const tmp4Result = ref(6010);
     tmp14Result = tmp14(tmp4Result, obj10);
   }
   items5[1] = tmp14Result;
@@ -148,14 +148,14 @@ export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismiss
   let str = "text-overlay-dark";
   const obj12 = { variant: "display-md", style: tmp6.title, color: str2, children: intl2.string(ref(3125).Uzms61) };
   str2 = "text-overlay-dark";
-  const Text = tmp2(5929).Text;
+  const Text = tmp2(5919).Text;
   if (isThemeDarkResult) {
     str2 = "text-overlay-light";
   }
   intl2 = tmp2(1113).intl;
   items4[2] = closure_9(Text, obj12);
   const obj13 = { variant: "body-lg/medium", style: tmp6.subtitle, color: str, children: stringResult };
-  const Text2 = tmp2(5929).Text;
+  const Text2 = tmp2(5919).Text;
   if (isThemeDarkResult) {
     str = "text-overlay-light";
   }
@@ -163,11 +163,11 @@ export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismiss
   items4[3] = closure_9(Text2, obj13);
   const obj15 = { style: tmp6.actions, children: items6 };
   const obj16 = { text: intl3.string(tmp2(1113).t["4P5I8V"]), variant: "primary", size: "lg", onPress: callback };
-  const Button = tmp2(5936).Button;
+  const Button = tmp2(5926).Button;
   intl3 = tmp2(1113).intl;
   items6 = [tmp14(Button, obj16), ];
   const obj17 = { text: intl4.string(tmp2(1113).t.TulDPl), variant: "secondary", size: "lg", onPress: callback1 };
-  const Button2 = tmp2(5936).Button;
+  const Button2 = tmp2(5926).Button;
   intl4 = tmp2(1113).intl;
   items6[1] = closure_9(Button2, obj17);
   items4[4] = tmp15(View, obj15);

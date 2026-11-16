@@ -1,7 +1,7 @@
 // Module ID: 17591
 // Function ID: 17592
 // Name: BountiesScrollRecapFooter
-// Dependencies: [19, 17, 5307, 21, 5306, 575, 1380, 1113, 5929, 9442, 504, 5443, 2]
+// Dependencies: [19, 17, 5307, 21, 5306, 575, 1380, 1113, 5919, 9442, 504, 5433, 2]
 // Exports: BountiesScrollRecapFooter, BountiesScrollRecapFooterGradient
 
 // Module 17591 (BountiesScrollRecapFooter)
@@ -10,8 +10,8 @@ import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import BountiesScrollGradientRive2 from "BountiesScrollGradientRive" /* 5443 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import BountiesScrollGradientRive2 from "BountiesScrollGradientRive" /* 5433 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import OrbsIcon from "OrbsIcon" /* 9442 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5307 */;

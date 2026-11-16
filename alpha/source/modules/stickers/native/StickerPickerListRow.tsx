@@ -1,7 +1,7 @@
 // Module ID: 11372
 // Function ID: 11373
 // Name: StickerPickerListRow
-// Dependencies: [19, 17, 1388, 5134, 11244, 1228, 21, 5306, 575, 671, 8092, 1380, 5131, 5554, 5555, 6792, 7225, 6793, 11093, 11373, 1242, 7428, 2]
+// Dependencies: [19, 17, 1388, 5134, 11244, 1228, 21, 5306, 575, 671, 8092, 1380, 5131, 5544, 5545, 6782, 7225, 6783, 11093, 11373, 1242, 7428, 2]
 // Exports: default
 
 // Module 11372 (StickerPickerListRow)
@@ -10,9 +10,9 @@ import _modDef671 from "module_671" /* 671 */;
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1228 */;
 import UserSettings from "UserSettings" /* 5131 */;
 import StickersConstants from "StickersConstants" /* 5134 */;
-import HapticUtils from "HapticUtils" /* 5554 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5555 */;
-import StickersUtils from "StickersUtils" /* 6792 */;
+import HapticUtils from "HapticUtils" /* 5544 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5545 */;
+import StickersUtils from "StickersUtils" /* 6782 */;
 import LockIcon from "LockIcon" /* 8092 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -214,7 +214,7 @@ export default function StickerPickerListRow(stickers) {
           let push2Result = push2(obj2);
           tmp12 = dependencyMap;
         } else {
-          let obj3 = { stickerId: "", stickerName: "", stickerType: stickers(6793).StickerFormat.PNG, stickerUrl: "", stickerAnimated: false, stickerDisabled: true, stickerOpaque: false, stickerLocked: false };
+          let obj3 = { stickerId: "", stickerName: "", stickerType: stickers(6783).StickerFormat.PNG, stickerUrl: "", stickerAnimated: false, stickerDisabled: true, stickerOpaque: false, stickerLocked: false };
           tmp12 = dependencyMap;
           let push = items.push;
           let arr = push(obj3);

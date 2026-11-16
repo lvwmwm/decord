@@ -1,7 +1,7 @@
 // Module ID: 15504
 // Function ID: 15505
 // Name: OrbCheckoutModalComponents
-// Dependencies: [19, 17, 8485, 7070, 1072, 1074, 21, 5306, 575, 6337, 7623, 5929, 1113, 9462, 11799, 15502, 563, 15505, 11797, 7256, 5547, 15506, 5936, 5313, 9442, 2]
+// Dependencies: [19, 17, 8485, 7070, 1072, 1074, 21, 5306, 575, 6327, 7623, 5919, 1113, 9462, 11799, 15502, 563, 15505, 11797, 7256, 5537, 15506, 5926, 5313, 9442, 2]
 // Exports: OrbCheckoutErrorCard, OrbCheckoutLegalFinePrint, OrbCheckoutOrderSummary, OrbCheckoutPaymentSourceDetails, OrbCheckoutPurchaseButton
 
 // Module 15504 (OrbCheckoutModalComponents)
@@ -10,8 +10,8 @@ import Constants from "Constants" /* 1072 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import intl3 from "intl" /* 1113 */;
 import shared from "shared" /* 5313 */;
-import useThemeDefault from "useTheme" /* 5547 */;
-import Stack_Stack from "Stack/Stack" /* 6337 */;
+import useThemeDefault from "useTheme" /* 5537 */;
+import Stack_Stack from "Stack/Stack" /* 6327 */;
 import OrbCheckoutUtils from "OrbCheckoutUtils" /* 7256 */;
 import CircleErrorIcon from "CircleErrorIcon" /* 7623 */;
 import SKUPreviewDefault from "SKUPreview" /* 9462 */;
@@ -37,7 +37,7 @@ let obj5;
 let obj6;
 let tmp2;
 let unpackModuleId;
-const Text_Text = tmp2(5929);
+const Text_Text = tmp2(5919);
 function GenericOrbCheckoutPurchaseItem(arg0) {
   let items;
   let items1;
@@ -122,7 +122,7 @@ export function OrbCheckoutOrderSummary(skuId) {
   const mobileCheckoutFlow = tmp2Result4.getMobileCheckoutFlow({ sku: stateFromStores, product: stateFromStores1, usesCollectiblesDetails: tmp8 });
   const obj2 = { style: tmp.topRowWrapper, children: items4 };
   const obj3 = { variant: "heading-xs/semibold", color: "mobile-text-heading-primary", style: tmp.sectionTitle, children: intl.string(skuId(1113).t.hws7bC) };
-  const Text = tmp2(5929).Text;
+  const Text = tmp2(5919).Text;
   intl = tmp2(1113).intl;
   items4 = [closure_10(Text, obj3), ];
   const scenario = mobileCheckoutFlow.scenario;
@@ -179,7 +179,7 @@ export function OrbCheckoutLegalFinePrint() {
     return obj.getOrbCheckoutDisclaimerMessage(skuId);
   }, items);
   const obj2 = { style: tmp.disclaimer, variant: "footnote/normal", color: "interactive-text-active", children: memo };
-  return closure_10(skuId(5929).Text, obj2);
+  return closure_10(skuId(5919).Text, obj2);
 }
 export function OrbCheckoutPurchaseButton(onPress) {
   let OrbsIcon;
@@ -198,7 +198,7 @@ export function OrbCheckoutPurchaseButton(onPress) {
   if (!isRedeeming) {
     isRedeeming = isCreatingOrder;
   }
-  const Button = tmp3(5936).Button;
+  const Button = tmp3(5926).Button;
   let str = "primary";
   const tmp3Result = shared;
   if (tmp3Result.isThemeDark(tmp2)) {

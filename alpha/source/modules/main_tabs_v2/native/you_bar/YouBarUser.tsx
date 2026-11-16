@@ -1,12 +1,12 @@
-// Module ID: 19161
-// Function ID: 19162
+// Module ID: 19163
+// Function ID: 19164
 // Name: YouBarUser
-// Dependencies: [19, 17, 1388, 17701, 21, 5306, 575, 504, 1655, 5939, 5372, 19162, 19163, 19164, 2]
+// Dependencies: [19, 17, 1388, 17701, 21, 5306, 575, 504, 1655, 5929, 5362, 19164, 19165, 19166, 2]
 
-// Module 19161 (YouBarUser)
+// Module 19163 (YouBarUser)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import spring_spring from "spring/spring" /* 5939 */;
+import spring_spring from "spring/spring" /* 5929 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;
 import YouBarConstants from "YouBarConstants" /* 17701 */;
@@ -77,15 +77,15 @@ const memoResult = react.memo(function YouBarUser(isCondensed) {
   YouBarUserTsx1.__workletHash = 12382860773339;
   YouBarUserTsx1.__initData = tmp8;
   const animatedStyle = tmp2Result.useAnimatedStyle(YouBarUserTsx1);
-  const obj4 = sharedValue(5372);
+  const obj4 = sharedValue(5362);
   const name = obj4.useName(stateFromStores);
   if (null != stateFromStores) {
     let obj3;
     if (null != name) {
       obj3 = { style: tmp.youButton, children: items4 };
       const obj5 = { isLargeAvatar: !isCondensed, onPress: onAvatarPress };
-      items4 = [closure_9(sharedValue(19163), obj5), ];
-      const obj6 = { style: items5, children: closure_9(sharedValue(19164), obj7) };
+      items4 = [closure_9(sharedValue(19165), obj5), ];
+      const obj6 = { style: items5, children: closure_9(sharedValue(19166), obj7) };
       items5 = [tmp.userText, animatedStyle, { flexShrink: 1 }];
       const View2 = tmp11(1655).View;
       obj7 = { userId: stateFromStores.id, username: name };
@@ -94,7 +94,7 @@ const memoResult = react.memo(function YouBarUser(isCondensed) {
     return tmp13(View, obj3);
   }
   const obj8 = { style: tmp.youButton, children: items6 };
-  items6 = [closure_9(sharedValue(19162), { isLarge: !isCondensed }), ];
+  items6 = [closure_9(sharedValue(19164), { isLarge: !isCondensed }), ];
   const obj9 = { style: items7, children: closure_9(View, obj10) };
   items7 = [tmp.userText, animatedStyle, { flexShrink: 1 }];
   obj10 = { style: tmp.placeholder };

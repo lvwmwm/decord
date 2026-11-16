@@ -1,12 +1,12 @@
 // Module ID: 11904
 // Function ID: 11905
 // Name: showForLaterModal
-// Dependencies: [11905, 11906, 6848, 11907, 2121, 2]
+// Dependencies: [11905, 11906, 6838, 11907, 2121, 2]
 // Exports: showForLaterModal
 
 // Module 11904 (showForLaterModal)
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import SavedMessagesTypes from "SavedMessagesTypes" /* 11905 */;
 import MessageRemindersSeenStorage from "MessageRemindersSeenStorage" /* 11906 */;
 import size from "module_2" /* 2 */;

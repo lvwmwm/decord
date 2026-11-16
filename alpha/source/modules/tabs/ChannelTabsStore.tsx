@@ -1,7 +1,7 @@
 // Module ID: 10275
 // Function ID: 10276
 // Name: ChannelTabsStore
-// Dependencies: [32, 1246, 5353, 5209, 5349, 1388, 5162, 10276, 1360, 10277, 10278, 504, 572, 2]
+// Dependencies: [32, 1246, 5343, 5209, 5339, 1388, 5162, 10276, 1360, 10277, 10278, 504, 572, 2]
 
 // Module 10275 (ChannelTabsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -12,28 +12,28 @@ import TabsExperimentDefault from "TabsExperiment" /* 10276 */;
 import ChannelTabRoutes from "ChannelTabRoutes" /* 10278 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
-import DefaultRouteStore from "DefaultRouteStore" /* 5353 */;
+import DefaultRouteStore from "DefaultRouteStore" /* 5343 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5349 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 let _require, set, tabs;
 
-const f100071 = (item) => {
+const f100084 = (item) => {
   let closure_0 = item;
   return closure_10.some((id) => id.id === closure_0);
 };
-const f100077 = (pinned) => pinned.pinned;
-const f100078 = (pinned) => !pinned.pinned;
-const f100079 = (id) => id.id === activeTabId;
+const f100090 = (pinned) => pinned.pinned;
+const f100091 = (pinned) => !pinned.pinned;
+const f100092 = (id) => id.id === activeTabId;
 function activateTab(id) {
-  const f100070 = (item) => item !== closure_0;
+  const f100083 = (item) => item !== closure_0;
   const tmp2 = null != activeTabId && activeTabId !== id;
   if (tmp2) {
     let closure_0 = activeTabId;
     const items = [activeTabId];
-    HermesBuiltin.arraySpread(items, closure_12.filter(f100070), 1);
+    HermesBuiltin.arraySpread(items, closure_12.filter(f100083), 1);
     const slice = items.slice;
     const currentUser = UserStore.getCurrentUser();
     let isStaffResult;
@@ -48,7 +48,7 @@ function activateTab(id) {
   }
   activeTabId = id;
   closure_0 = id;
-  const items1 = [id, ...closure_12.filter(f100070)];
+  const items1 = [id, ...closure_12.filter(f100083)];
   const slice2 = items1.slice;
   const currentUser1 = UserStore.getCurrentUser();
   let isStaffResult1;
@@ -129,8 +129,8 @@ function landNavigationAroundPinnedTab(kind2) {
         return tmp;
       });
       const items = [];
-      const arraySpreadResult = HermesBuiltin.arraySpread(items, mapped.filter(f100077), 0);
-      HermesBuiltin.arraySpread(items, mapped.filter(f100078), arraySpreadResult);
+      const arraySpreadResult = HermesBuiltin.arraySpread(items, mapped.filter(f100090), 0);
+      HermesBuiltin.arraySpread(items, mapped.filter(f100091), arraySpreadResult);
       items1 = items;
       let closure_0 = kind2;
       if (c14 === activeTabId) {
@@ -217,7 +217,7 @@ function handleChannelDelete(channel) {
         }
         return tmp3;
       });
-      closure_12 = closure_12.filter(f100071);
+      closure_12 = closure_12.filter(f100084);
     }
   } else {
     return false;
@@ -283,7 +283,7 @@ class ChannelTabsStore extends PersistedStore {
       }
       return tmp2;
     });
-    const items = [...mapped.filter(f100077), ...mapped.filter(f100078)];
+    const items = [...mapped.filter(f100090), ...mapped.filter(f100091)];
     tabs = items;
     activeTabId = undefined;
     if (enabled != null) {
@@ -480,7 +480,7 @@ let obj = {
         c14 = null;
       }
       tabs = tabs.filter((id) => id.id !== tabId);
-      closure_12 = closure_12.filter(f100071);
+      closure_12 = closure_12.filter(f100084);
       if (id2 === tmp14) {
         const _Math = Math;
         activeTabId = null;
@@ -557,7 +557,7 @@ let obj = {
   },
   CHANNEL_TABS_BACK: function handleTabHistoryBack() {
     let closure_10;
-    const found = tabs.find(f100079);
+    const found = tabs.find(f100092);
     flag = false;
     if (null != found) {
       const sum = found.index + -1;
@@ -585,7 +585,7 @@ let obj = {
   },
   CHANNEL_TABS_FORWARD: function handleTabHistoryForward() {
     let closure_10;
-    const found = tabs.find(f100079);
+    const found = tabs.find(f100092);
     flag = false;
     if (null != found) {
       const sum = found.index + 1;
@@ -813,7 +813,7 @@ let obj = {
         const self2 = this;
         set = new Set(substr.map((id) => id.id));
         tabs = tabs.filter((id) => !set.has(id.id));
-        closure_12 = closure_12.filter(f100071);
+        closure_12 = closure_12.filter(f100084);
         flag2 = true;
       }
       if (tmp6) {
@@ -884,8 +884,8 @@ let obj = {
                 return tmp;
               });
               const items1 = [];
-              const arraySpreadResult = HermesBuiltin.arraySpread(items1, mapped.filter(f100077), 0);
-              HermesBuiltin.arraySpread(items1, mapped.filter(f100078), arraySpreadResult);
+              const arraySpreadResult = HermesBuiltin.arraySpread(items1, mapped.filter(f100090), 0);
+              HermesBuiltin.arraySpread(items1, mapped.filter(f100091), arraySpreadResult);
               tabs = items1;
             }
             flag3 = true;

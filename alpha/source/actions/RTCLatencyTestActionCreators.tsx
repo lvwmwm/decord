@@ -1,10 +1,10 @@
-// Module ID: 20385
-// Function ID: 20386
+// Module ID: 20388
+// Function ID: 20389
 // Name: RTCLatencyTestActionCreators
 // Dependencies: [1285, 572, 2]
 // Exports: completeRTCLatencyTest, fetchRTCLatencyTestRegions
 
-// Module 20385 (RTCLatencyTestActionCreators)
+// Module 20388 (RTCLatencyTestActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
 import size from "module_2" /* 2 */;

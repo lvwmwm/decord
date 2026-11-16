@@ -1,7 +1,7 @@
 // Module ID: 8227
 // Function ID: 8228
 // Name: AgeVerificationQuestUnsupportedAlertModal
-// Dependencies: [19, 21, 6274, 1113, 3321, 6274, 1264, 2]
+// Dependencies: [19, 21, 6264, 1113, 3321, 6264, 1264, 2]
 // Exports: default
 
 // Module 8227 (AgeVerificationQuestUnsupportedAlertModal)
@@ -9,7 +9,7 @@ import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1113 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
 import _modDef3321 from "module_3321" /* 3321 */;
-import AlertModal2 from "AlertModal" /* 6274 */;
+import AlertModal2 from "AlertModal" /* 6264 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

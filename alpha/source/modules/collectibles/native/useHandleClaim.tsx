@@ -1,7 +1,7 @@
 // Module ID: 15512
 // Function ID: 15513
 // Name: useHandleClaim
-// Dependencies: [5, 19, 8484, 5552, 10020, 6015, 1113, 2]
+// Dependencies: [5, 19, 8484, 5542, 10020, 6005, 1113, 2]
 // Exports: useHandleClaim
 
 // Module 15512 (useHandleClaim)

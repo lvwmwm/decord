@@ -1,13 +1,13 @@
 // Module ID: 13413
 // Function ID: 13414
 // Name: AppLauncherNavigator
-// Dependencies: [109, 19, 1501, 1072, 21, 9128, 5306, 575, 7918, 7937, 1503, 6335, 5503, 1628, 7490, 6067, 13414, 13458, 13487, 13531, 12578, 2]
+// Dependencies: [109, 19, 1501, 1072, 21, 9128, 5306, 575, 7918, 7937, 1503, 6325, 5493, 1628, 7490, 6057, 13414, 13458, 13487, 13531, 12578, 2]
 
 // Module 13413 (AppLauncherNavigator)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6067 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6057 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

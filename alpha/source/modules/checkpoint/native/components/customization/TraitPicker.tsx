@@ -1,7 +1,7 @@
 // Module ID: 14538
 // Function ID: 14539
 // Name: TraitPicker
-// Dependencies: [19, 17, 6377, 21, 5306, 14539, 575, 6744, 1113, 3317, 5929, 14271, 14541, 1496, 14537, 14543, 14260, 5496, 14544, 2]
+// Dependencies: [19, 17, 6367, 21, 5306, 14539, 575, 6734, 1113, 3317, 5919, 14271, 14541, 1496, 14537, 14543, 14260, 5486, 14544, 2]
 // Exports: default
 
 // Module 14538 (TraitPicker)
@@ -9,10 +9,10 @@ import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
 import _modDef3317 from "module_3317" /* 3317 */;
-import useWindowSizeClassifier from "useWindowSizeClassifier" /* 5496 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import CheckpointConstants from "CheckpointConstants" /* 6377 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6744 */;
+import useWindowSizeClassifier from "useWindowSizeClassifier" /* 5486 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import CheckpointConstants from "CheckpointConstants" /* 6367 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6734 */;
 import CheckpointActionCreators from "CheckpointActionCreators" /* 14260 */;
 import CheckpointTextDefault from "CheckpointText" /* 14271 */;
 import useTraitPickerOptions from "useTraitPickerOptions" /* 14537 */;

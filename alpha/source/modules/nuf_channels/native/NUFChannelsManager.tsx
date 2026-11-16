@@ -1,7 +1,7 @@
 // Module ID: 16077
 // Function ID: 16078
 // Name: NUFChannelsManager
-// Dependencies: [5218, 5177, 5349, 1388, 1072, 5224, 510, 5372, 7882, 5493, 5492, 1406, 5552, 16078, 2121, 2]
+// Dependencies: [5218, 5177, 5339, 1388, 1072, 5224, 510, 5362, 7882, 5483, 5482, 1406, 5542, 16078, 2121, 2]
 
 // Module 16077 (NUFChannelsManager)
 import Storage3 from "Storage" /* 510 */;
@@ -9,13 +9,13 @@ import Constants from "Constants" /* 1072 */;
 import FlagUtils from "FlagUtils" /* 1406 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
 import GuildMemberConstants from "GuildMemberConstants" /* 5224 */;
-import UserUtils from "UserUtils" /* 5372 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5492 */;
-import RootNavigationRef from "RootNavigationRef" /* 5493 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import UserUtils from "UserUtils" /* 5362 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5482 */;
+import RootNavigationRef from "RootNavigationRef" /* 5483 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import GuildMemberStore from "GuildMemberStore" /* 5218 */;
 import GuildStore from "GuildStore" /* 5177 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5349 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
 import UserStore from "UserStore" /* 1388 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
 import size from "module_2" /* 2 */;

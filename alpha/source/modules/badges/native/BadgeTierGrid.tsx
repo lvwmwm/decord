@@ -1,7 +1,7 @@
 // Module ID: 15285
 // Function ID: 15286
 // Name: BadgeTierGrid
-// Dependencies: [19, 17, 21, 5306, 575, 5929, 1113, 11313, 10113, 15277, 8092, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 5919, 1113, 11313, 10113, 15277, 8092, 2]
 // Exports: default
 
 // Module 15285 (BadgeTierGrid)
@@ -56,7 +56,7 @@ export default function BadgeTierGrid(badge) {
     const tmp6 = badge;
     const tmp7 = dependencyMap;
     let obj2 = { variant: "body-sm/medium", color: "text-default", style: tmp.progressLabel, children: intl.formatToPlainString(badge(1113).t.KyTwIh, obj3) };
-    let Text = badge(5929).Text;
+    let Text = badge(5919).Text;
     intl = badge(1113).intl;
     obj3 = { username: targetUsername };
     isViewingOtherUser = closure_4(Text, obj2);

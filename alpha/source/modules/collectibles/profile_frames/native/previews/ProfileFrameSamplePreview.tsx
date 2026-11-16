@@ -1,13 +1,13 @@
 // Module ID: 9512
 // Function ID: 9513
 // Name: ProfileFrameSamplePreview
-// Dependencies: [19, 17, 9490, 7962, 21, 5306, 575, 8587, 5902, 8583, 8567, 7533, 6020, 9513, 2]
+// Dependencies: [19, 17, 9490, 7962, 21, 5306, 575, 8587, 5892, 8583, 8567, 7533, 6010, 9513, 2]
 // Exports: default
 
 // Module 9512 (ProfileFrameSamplePreview)
 import nativeDefault from "native" /* 575 */;
-import useToken from "useToken" /* 5902 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import useToken from "useToken" /* 5892 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import _modDef7533 from "module_7533" /* 7533 */;
 import Constants from "Constants" /* 7962 */;
 import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 8567 */;

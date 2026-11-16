@@ -1,12 +1,12 @@
 // Module ID: 14071
 // Function ID: 14072
 // Name: GameOrganizationCantJoinActionSheet
-// Dependencies: [19, 5177, 12369, 21, 5552, 14072, 504, 7231, 12539, 2565, 10713, 7913, 1113, 5936, 2]
+// Dependencies: [19, 5177, 12369, 21, 5542, 14072, 504, 7231, 12539, 2565, 10713, 7913, 1113, 5926, 2]
 // Exports: default
 
 // Module 14071 (GameOrganizationCantJoinActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import transitionToGuild from "transitionToGuild" /* 7231 */;
 import useResolvedGameOrganizationInviteDefault from "useResolvedGameOrganizationInvite" /* 14072 */;
 import react from "react" /* 19 */;
@@ -63,7 +63,7 @@ export default function GameOrganizationCantJoinActionSheet(arg0) {
     const obj4 = { noun: tmp11 };
     const intl2 = tmp5(1113).intl;
     const obj5 = { noun: tmp11, guildName: tmp3.linkedGuild.name };
-    const Button = tmp5(5936).Button;
+    const Button = tmp5(5926).Button;
     if (stateFromStores) {
       const obj6 = { text: intl4.string(_modDef2565.H1wMHV), size: "lg", onPress: tmp7 };
       intl4 = tmp5(1113).intl;

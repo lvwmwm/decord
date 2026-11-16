@@ -1,14 +1,14 @@
 // Module ID: 7860
 // Function ID: 7861
 // Name: TextAreaField
-// Dependencies: [19, 17, 21, 5306, 575, 7639, 7627, 5481, 7861, 1113, 7642, 7645, 5929, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 7639, 7627, 5471, 7861, 1113, 7642, 7645, 5919, 2]
 // Exports: TextAreaField
 
 // Module 7860 (TextAreaField)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import native from "native" /* 5481 */;
+import native from "native" /* 5471 */;
 import useTextField from "useTextField" /* 7627 */;
 import InputFieldContainer2 from "InputFieldContainer" /* 7639 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 7645 */;
@@ -84,7 +84,7 @@ export function TextAreaField(ref) {
     let str3 = "text-muted";
     let str = "text-muted";
     const obj8 = { style: tmp5.maxLengthIndicator, children: _false(Text, obj9) };
-    Text = tmp2(5929).Text;
+    Text = tmp2(5919).Text;
     const tmp19 = View;
     if (null != maxLength) {
       str = str3;

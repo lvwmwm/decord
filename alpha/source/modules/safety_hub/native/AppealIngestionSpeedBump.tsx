@@ -1,7 +1,7 @@
 // Module ID: 14189
 // Function ID: 14190
 // Name: AppealIngestionSpeedBump
-// Dependencies: [19, 17, 8231, 8206, 1072, 21, 5306, 504, 14182, 14190, 1113, 14188, 14191, 14207, 14208, 5929, 2]
+// Dependencies: [19, 17, 8231, 8206, 1072, 21, 5306, 504, 14182, 14190, 1113, 14188, 14191, 14207, 14208, 5919, 2]
 // Exports: default
 
 // Module 14189 (AppealIngestionSpeedBump)
@@ -132,7 +132,7 @@ export default function AppealIngestionSpeedBump(arg0) {
   items2[4] = tmp10Result4;
   if (isDsaEligible) {
     const obj8 = { variant: "body-xs/normal", children: intl6.format(require("intl").t.WMUgCX, {}) };
-    const Text = tmp2(5929).Text;
+    const Text = tmp2(5919).Text;
     intl6 = tmp2(1113).intl;
     isDsaEligible = tmp10(Text, obj8);
   }

@@ -1,19 +1,19 @@
-// Module ID: 18935
-// Function ID: 18936
+// Module ID: 18937
+// Function ID: 18938
 // Name: GuildPowerupsChannelRow
-// Dependencies: [19, 17, 6060, 21, 10695, 7623, 575, 1187, 5306, 18888, 18730, 5918, 10691, 10708, 14789, 10679, 7937, 5916, 1113, 2733, 18936, 14688, 2]
+// Dependencies: [19, 17, 6050, 21, 10695, 7623, 575, 1187, 5306, 18890, 18732, 5908, 10691, 10708, 14789, 10679, 7937, 5906, 1113, 2733, 18938, 14688, 2]
 // Exports: default
 
-// Module 18935 (GuildPowerupsChannelRow)
+// Module 18937 (GuildPowerupsChannelRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 6060 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 6050 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
 import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 10679 */;
 import GuildPowerupsNotification from "GuildPowerupsNotification" /* 10695 */;
-import SidebarCoachmarkOverlay from "SidebarCoachmarkOverlay" /* 18730 */;
-import useGuildPowerupsCoachmarkDefault from "useGuildPowerupsCoachmark" /* 18888 */;
+import SidebarCoachmarkOverlay from "SidebarCoachmarkOverlay" /* 18732 */;
+import useGuildPowerupsCoachmarkDefault from "useGuildPowerupsCoachmark" /* 18890 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;
@@ -23,7 +23,7 @@ let hasOwnProperty;
 let metroRequire;
 let obj2;
 let tmp;
-const LayerContext = tmp(5918);
+const LayerContext = tmp(5908);
 function GuildPowerupsChannelRowIndicator(indicator) {
   indicator = indicator.indicator;
   if (null == indicator) {
@@ -129,7 +129,7 @@ export default function GuildPowerupsChannelRow(guildId) {
   const obj3 = { targetRef: ref, guildId, popout: popout1 };
   popout1 = undefined;
   const obj2 = { ref, collapsable: false, children: items1 };
-  const LayerScope = tmp14(5916).LayerScope;
+  const LayerScope = tmp14(5906).LayerScope;
   const tmp17 = closure_6;
   const tmp18 = View;
   const tmp19 = GuildPowerupsCoachmark;
@@ -143,7 +143,7 @@ export default function GuildPowerupsChannelRow(guildId) {
   obj5 = { name: intl2.string(dismissNewBadgeIfShown(2733).yv3DJJ), mode: DEFAULT };
   BaseChannelName = tmp14(14789).BaseChannelName;
   intl2 = tmp14(1113).intl;
-  obj6 = { mode: DEFAULT, IconComponent: tmp14(18936).BoostTier2Icon };
+  obj6 = { mode: DEFAULT, IconComponent: tmp14(18938).BoostTier2Icon };
   BaseChannelIcon = tmp14(14789).BaseChannelIcon;
   if (showNewBadgeOnRow) {
     tmp16Result = tmp16(tmp14(14688).NewBadge, {});

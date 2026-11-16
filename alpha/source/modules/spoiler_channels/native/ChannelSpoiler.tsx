@@ -1,17 +1,17 @@
 // Module ID: 11982
 // Function ID: 11983
 // Name: ChannelSpoiler
-// Dependencies: [32, 19, 17, 7016, 5155, 5177, 11983, 21, 5306, 575, 504, 5954, 11984, 6066, 6917, 5493, 8033, 5929, 1113, 6337, 6057, 7428, 11981, 6833, 2]
+// Dependencies: [32, 19, 17, 7016, 5155, 5177, 11983, 21, 5306, 575, 504, 5944, 11984, 6056, 6907, 5483, 8033, 5919, 1113, 6327, 6047, 7428, 11981, 6823, 2]
 // Exports: default
 
 // Module 11982 (ChannelSpoiler)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import RootNavigationRef from "RootNavigationRef" /* 5493 */;
-import useChannelNameDefault from "useChannelName" /* 5954 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 6057 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6066 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6917 */;
+import RootNavigationRef from "RootNavigationRef" /* 5483 */;
+import useChannelNameDefault from "useChannelName" /* 5944 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 6047 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6056 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6907 */;
 import GatedContentDefault from "GatedContent" /* 11981 */;
 import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11983 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -115,7 +115,7 @@ export default function ChannelSpoiler(channelId) {
     let obj3 = { style: { flexDirection: "row", alignItems: "center", gap: 4, flexShrink: 1 }, children: items4 };
     items4 = [closure_10(channelIconComponent, { size: "lg", color: "mobile-text-heading-primary" }), ];
     const obj5 = { variant: "heading-xxl/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: { flexShrink: 1 }, children: tmp8 };
-    items4[1] = closure_10(tmp(5929).Text, obj5);
+    items4[1] = closure_10(tmp(5919).Text, obj5);
     stringResult = closure_11(View, obj3);
   } else {
     const intl = tmp(1113).intl;
@@ -132,14 +132,14 @@ export default function ChannelSpoiler(channelId) {
     if ("" !== str.trim()) {
       const obj6 = { spacing: 4, style: tmp4.subtitleContainer, children: items5 };
       const obj7 = { style: tmp4.subtitleMeasure, pointerEvents: "none", children: closure_10(Text2, obj8) };
-      const Stack = tmp(6337).Stack;
+      const Stack = tmp(6327).Stack;
       obj8 = { variant: "body-md/medium", maxFontSizeMultiplier: 2, onTextLayout: callback1, children: tmp7Result.parseTopic(stateFromStores1.topic, true, obj9) };
-      Text2 = tmp(5929).Text;
+      Text2 = tmp(5919).Text;
       obj9 = { channelId: stateFromStores1.id };
       tmp7Result = MarkupUtilsDefault;
       items5 = [closure_10(View, obj7), , , ];
       const obj10 = { color: "text-muted", variant: "body-md/medium", style: tmp4.subtitle, maxFontSizeMultiplier: 2, lineClamp: 3, children: tmp7Result3.parseTopic(stateFromStores1.topic, true, obj11) };
-      const Text3 = tmp(5929).Text;
+      const Text3 = tmp(5919).Text;
       obj11 = { channelId: stateFromStores1.id };
       tmp7Result3 = MarkupUtilsDefault;
       items5[1] = closure_10(Text3, obj10);
@@ -150,7 +150,7 @@ export default function ChannelSpoiler(channelId) {
         const obj12 = { onPress: callback2, accessibilityRole: "button", children: closure_10(Text, obj13) };
         const PressableHighlight = tmp(7428).PressableHighlight;
         obj13 = { variant: "body-sm/medium", color: "text-brand", style: { textDecorationLine: "underline" }, children: intl2.string(tmp(1113).t["/QvRak"]) };
-        Text = tmp(5929).Text;
+        Text = tmp(5919).Text;
         intl2 = tmp(1113).intl;
         tmp25Result = tmp25(PressableHighlight, obj12);
       }
@@ -161,7 +161,7 @@ export default function ChannelSpoiler(channelId) {
     }
   }
   const obj15 = {
-    modalType: tmp(6833).NsfwSpaceWarningModalType.SPOILER_CHANNEL,
+    modalType: tmp(6823).NsfwSpaceWarningModalType.SPOILER_CHANNEL,
     onAgree: function handleAgree() {
       const obj = GuildActionCreatorsDefault;
       obj.spoilerAgree(channelId.channelId);

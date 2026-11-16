@@ -1,9 +1,9 @@
-// Module ID: 20416
-// Function ID: 20417
+// Module ID: 20419
+// Function ID: 20420
 // Name: VoiceChannelSettingsManager
 // Dependencies: [502, 16504, 5155, 5209, 16505, 1072, 572, 7882, 2]
 
-// Module 20416 (VoiceChannelSettingsManager)
+// Module 20419 (VoiceChannelSettingsManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

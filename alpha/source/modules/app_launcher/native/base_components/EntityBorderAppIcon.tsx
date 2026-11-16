@@ -1,7 +1,7 @@
 // Module ID: 13388
 // Function ID: 13389
 // Name: EntityBorderAppIcon
-// Dependencies: [17, 21, 575, 5306, 6020, 2]
+// Dependencies: [17, 21, 575, 5306, 6010, 2]
 // Exports: default
 
 // Module 13388 (EntityBorderAppIcon)

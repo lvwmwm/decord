@@ -1,9 +1,9 @@
-// Module ID: 18103
-// Function ID: 18104
+// Module ID: 18105
+// Function ID: 18106
 // Name: NotificationsSetting
-// Dependencies: [1072, 12406, 1113, 10996, 16902, 18104, 2]
+// Dependencies: [1072, 12406, 1113, 10996, 16902, 18106, 2]
 
-// Module 18103 (NotificationsSetting)
+// Module 18105 (NotificationsSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import BellIcon from "BellIcon" /* 10996 */;

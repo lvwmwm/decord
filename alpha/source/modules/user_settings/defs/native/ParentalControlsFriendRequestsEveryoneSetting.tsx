@@ -1,9 +1,9 @@
-// Module ID: 18590
-// Function ID: 18591
+// Module ID: 18592
+// Function ID: 18593
 // Name: ParentalControlsFriendRequestsEveryoneSetting
 // Dependencies: [19, 8740, 9202, 1072, 9618, 17347, 7813, 17351, 12406, 1113, 2]
 
-// Module 18590 (ParentalControlsFriendRequestsEveryoneSetting)
+// Module 18592 (ParentalControlsFriendRequestsEveryoneSetting)
 import intl2 from "intl" /* 1113 */;
 import UserSettingsUtils from "UserSettingsUtils" /* 7813 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;

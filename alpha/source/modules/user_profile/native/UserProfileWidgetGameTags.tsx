@@ -1,13 +1,13 @@
 // Module ID: 12118
 // Function ID: 12119
 // Name: UserProfileWidgetGameTags
-// Dependencies: [19, 17, 502, 8479, 21, 7638, 575, 6061, 5306, 5929, 1113, 7549, 12104, 12090, 5315, 8546, 6331, 12119, 2]
+// Dependencies: [19, 17, 502, 8479, 21, 7638, 575, 6051, 5306, 5919, 1113, 7549, 12104, 12090, 5315, 8546, 6321, 12119, 2]
 
 // Module 12118 (UserProfileWidgetGameTags)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5315 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import IconSize from "IconSize" /* 7638 */;
 import Constants from "Constants" /* 8479 */;
 import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8546 */;

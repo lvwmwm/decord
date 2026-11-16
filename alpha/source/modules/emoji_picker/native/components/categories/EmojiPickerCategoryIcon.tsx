@@ -1,11 +1,11 @@
 // Module ID: 11317
 // Function ID: 11318
 // Name: EmojiPickerCategoryIcon
-// Dependencies: [19, 6972, 21, 10324, 10183, 6042, 11318, 10409, 11320, 11322, 7438, 11324, 11326, 9458, 11328, 9436, 2]
+// Dependencies: [19, 6972, 21, 10324, 10183, 6032, 11318, 10409, 11320, 11322, 7438, 11324, 11326, 9458, 11328, 9436, 2]
 
 // Module 11317 (EmojiPickerCategoryIcon)
 import Fragment from "Fragment" /* 21 */;
-import ClockIcon from "ClockIcon" /* 6042 */;
+import ClockIcon from "ClockIcon" /* 6032 */;
 import EmojiPickerConstants from "EmojiPickerConstants" /* 6972 */;
 import GameControllerIcon from "GameControllerIcon" /* 7438 */;
 import NitroWheelIcon from "NitroWheelIcon" /* 9436 */;

@@ -1,7 +1,7 @@
 // Module ID: 16341
 // Function ID: 16342
 // Name: ShareAttachments
-// Dependencies: [19, 17, 21, 1655, 5893, 1187, 5306, 575, 5548, 5303, 1113, 11124, 8879, 2]
+// Dependencies: [19, 17, 21, 1655, 5883, 1187, 5306, 575, 5538, 5303, 1113, 11124, 8879, 2]
 // Exports: default
 
 // Module 16341 (ShareAttachments)
@@ -9,7 +9,7 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import ColorUtils from "ColorUtils" /* 5303 */;
-import LinearGradientDefault from "LinearGradient" /* 5893 */;
+import LinearGradientDefault from "LinearGradient" /* 5883 */;
 import utils_UploadUtils from "utils/UploadUtils" /* 8879 */;
 import AttachmentPreviewDefault from "AttachmentPreview" /* 11124 */;
 import react from "react" /* 19 */;

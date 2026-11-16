@@ -1,7 +1,7 @@
 // Module ID: 16627
 // Function ID: 16628
 // Name: void/Badge/Badge
-// Dependencies: [19, 17, 2189, 1189, 21, 5306, 575, 504, 5929, 2027, 2]
+// Dependencies: [19, 17, 2189, 1189, 21, 5306, 575, 504, 5919, 2027, 2]
 // Exports: MaskedBadge
 
 // Module 16627 (void/Badge/Badge)

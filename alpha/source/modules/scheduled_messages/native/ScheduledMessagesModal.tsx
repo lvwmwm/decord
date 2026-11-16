@@ -1,7 +1,7 @@
 // Module ID: 9049
 // Function ID: 9050
 // Name: ScheduledMessagesModal
-// Dependencies: [32, 19, 17, 9050, 1072, 1390, 9031, 21, 7937, 5306, 575, 1630, 1113, 1655, 5939, 5940, 7500, 9051, 1380, 7493, 6848, 9029, 504, 15656, 9030, 7418, 15658, 7888, 7918, 11170, 1092, 11279, 2174, 15659, 2]
+// Dependencies: [32, 19, 17, 9050, 1072, 1390, 9031, 21, 7937, 5306, 575, 1630, 1113, 1655, 5929, 5930, 7500, 9051, 1380, 7493, 6838, 9029, 504, 15656, 9030, 7418, 15658, 7888, 7918, 11170, 1092, 11279, 2174, 15659, 2]
 // Exports: default
 
 // Module 9049 (ScheduledMessagesModal)
@@ -13,7 +13,7 @@ import intl2 from "intl" /* 1113 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
 import _mod1655 from "module_1655" /* 1655 */;
 import PremiumUtils from "PremiumUtils" /* 2174 */;
-import spring_spring from "spring/spring" /* 5939 */;
+import spring_spring from "spring/spring" /* 5929 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7918 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
 import ScheduledMessageActionCreators from "ScheduledMessageActionCreators" /* 9029 */;
@@ -42,7 +42,7 @@ let tmp2;
 let tmp4;
 let unpackModuleId;
 const PlatformUtils = tmp4(1380);
-const springPresets = tmp2(5940);
+const springPresets = tmp2(5930);
 const NavigatorHeader = tmp4(7493);
 const _mod7500 = tmp4(7500);
 function keyExtractor(scheduledMessageId) {
@@ -230,7 +230,7 @@ export default function ScheduledMessagesModal() {
     },
     headerTitleAlign: "center",
     headerStatusBarHeight: num + tmp2(575).space.PX_8,
-    headerLeft: tmp4Result2.getHeaderCloseButton(tmp2(6848).pop),
+    headerLeft: tmp4Result2.getHeaderCloseButton(tmp2(6838).pop),
     headerLeftContainerStyle: null,
     headerRightContainerStyle: null
   };

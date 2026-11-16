@@ -1,7 +1,7 @@
 // Module ID: 15241
 // Function ID: 15242
 // Name: AppStoreOverlayAboutSection
-// Dependencies: [32, 19, 17, 21, 575, 5306, 10350, 1113, 5929, 10378, 2]
+// Dependencies: [32, 19, 17, 21, 575, 5306, 10350, 1113, 5919, 10378, 2]
 // Exports: default
 
 // Module 15241 (AppStoreOverlayAboutSection)

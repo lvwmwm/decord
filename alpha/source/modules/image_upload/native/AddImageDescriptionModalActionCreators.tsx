@@ -1,12 +1,12 @@
 // Module ID: 11848
 // Function ID: 11849
 // Name: AddImageDescriptionModalActionCreators
-// Dependencies: [5552, 6848, 11849, 2121, 2]
+// Dependencies: [5542, 6838, 11849, 2121, 2]
 
 // Module 11848 (AddImageDescriptionModalActionCreators)
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import size from "module_2" /* 2 */;
 
 const ADD_IMAGE_DESCRIPTION_MODAL_KEY = "ADD_IMAGE_DESCRIPTION_MODAL_KEY";

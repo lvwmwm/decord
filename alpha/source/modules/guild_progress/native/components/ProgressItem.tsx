@@ -1,7 +1,7 @@
 // Module ID: 14909
 // Function ID: 14910
 // Name: ProgressItem
-// Dependencies: [19, 17, 1072, 21, 5306, 575, 6067, 8106, 2]
+// Dependencies: [19, 17, 1072, 21, 5306, 575, 6057, 8106, 2]
 // Exports: default
 
 // Module 14909 (ProgressItem)
@@ -9,7 +9,7 @@ import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6067 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6057 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;

@@ -1,7 +1,7 @@
 // Module ID: 17405
 // Function ID: 17406
 // Name: FamilyCenterActivityBanner
-// Dependencies: [19, 17, 21, 5306, 9616, 9617, 17406, 575, 14227, 1113, 2701, 6020, 17413, 17414, 5929, 2]
+// Dependencies: [19, 17, 21, 5306, 9616, 9617, 17406, 575, 14227, 1113, 2701, 6010, 17413, 17414, 5919, 2]
 // Exports: default
 
 // Module 17405 (FamilyCenterActivityBanner)
@@ -9,8 +9,8 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import _modDef2701 from "module_2701" /* 2701 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import useUserLinks from "useUserLinks" /* 9616 */;
 import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 9617 */;
 import useAgeSpecificText3 from "useAgeSpecificText" /* 14227 */;

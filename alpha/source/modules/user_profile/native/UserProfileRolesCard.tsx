@@ -1,14 +1,14 @@
 // Module ID: 7940
 // Function ID: 7941
 // Name: UserProfileRolesCard
-// Dependencies: [19, 17, 5218, 5212, 1072, 21, 5306, 575, 7941, 5131, 5995, 7943, 6014, 1113, 7942, 7948, 7957, 5929, 7959, 7428, 504, 7960, 7961, 2]
+// Dependencies: [19, 17, 5218, 5212, 1072, 21, 5306, 575, 7941, 5131, 5985, 7943, 6004, 1113, 7942, 7948, 7957, 5919, 7959, 7428, 504, 7960, 7961, 2]
 // Exports: default
 
 // Module 7940 (UserProfileRolesCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import ToastUtils from "ToastUtils" /* 6014 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import ToastUtils from "ToastUtils" /* 6004 */;
 import ClipboardUtils from "ClipboardUtils" /* 7943 */;
 import VerifiedRoleIconDefault from "VerifiedRoleIcon" /* 7957 */;
 import RoleIconDefault from "RoleIcon" /* 7959 */;

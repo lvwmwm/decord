@@ -1,9 +1,9 @@
-// Module ID: 18604
-// Function ID: 18605
+// Module ID: 18606
+// Function ID: 18607
 // Name: FriendRequestsNotesSetting
 // Dependencies: [9202, 12406, 1113, 15874, 5131, 2]
 
-// Module 18604 (FriendRequestsNotesSetting)
+// Module 18606 (FriendRequestsNotesSetting)
 import intl2 from "intl" /* 1113 */;
 import UserSettings from "UserSettings" /* 5131 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;

@@ -1,7 +1,7 @@
 // Module ID: 10136
 // Function ID: 10137
 // Name: BrandSafetyContext
-// Dependencies: [10134, 5155, 5177, 5248, 5349, 1388, 10137, 8804, 1414, 5954, 2]
+// Dependencies: [10134, 5155, 5177, 5248, 5339, 1388, 10137, 8804, 1414, 5944, 2]
 // Exports: getBrandSafetyContext
 
 // Module 10136 (BrandSafetyContext)
@@ -11,7 +11,7 @@ import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore" /* 10134
 import ChannelStore from "ChannelStore" /* 5155 */;
 import GuildStore from "GuildStore" /* 5177 */;
 import RelationshipStore from "RelationshipStore" /* 5248 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5349 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 

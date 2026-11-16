@@ -1,7 +1,7 @@
 // Module ID: 14810
 // Function ID: 14811
 // Name: ApplicationCommandDiscovery
-// Dependencies: [32, 19, 17, 6345, 14811, 11234, 1072, 21, 14812, 5306, 575, 5944, 14813, 11405, 2119, 11412, 5315, 1113, 6067, 12, 14814, 5985, 14815, 14816, 1187, 11390, 2]
+// Dependencies: [32, 19, 17, 6335, 14811, 11234, 1072, 21, 14812, 5306, 575, 5934, 14813, 11405, 2119, 11412, 5315, 1113, 6057, 12, 14814, 5975, 14815, 14816, 1187, 11390, 2]
 // Exports: default
 
 // Module 14810 (ApplicationCommandDiscovery)
@@ -10,8 +10,8 @@ import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import Server from "Server" /* 2119 */;
-import useFontScale from "useFontScale" /* 5944 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6067 */;
+import useFontScale from "useFontScale" /* 5934 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6057 */;
 import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 11234 */;
 import AssetRegistryDefault from "AssetRegistry" /* 11390 */;
 import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 11412 */;
@@ -22,7 +22,7 @@ import ApplicationCommandsCategoriesDefault from "ApplicationCommandsCategories"
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6345 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6335 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;

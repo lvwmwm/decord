@@ -1,7 +1,7 @@
 // Module ID: 15884
 // Function ID: 15885
 // Name: useMobileInviteSuggestions
-// Dependencies: [32, 19, 5218, 5177, 14732, 6074, 1072, 1083, 504, 1256, 7665, 15885, 14731, 2]
+// Dependencies: [32, 19, 5218, 5177, 14732, 6064, 1072, 1083, 504, 1256, 7665, 15885, 14731, 2]
 // Exports: default
 
 // Module 15884 (useMobileInviteSuggestions)
@@ -13,7 +13,7 @@ import react from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 5218 */;
 import GuildStore from "GuildStore" /* 5177 */;
 import InviteSuggestionsStore from "InviteSuggestionsStore" /* 14732 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 6074 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 6064 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

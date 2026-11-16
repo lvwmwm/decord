@@ -1,7 +1,7 @@
 // Module ID: 17695
 // Function ID: 17696
 // Name: QuestDockHooks
-// Dependencies: [32, 19, 17696, 5338, 17698, 504, 17699, 17702, 12012, 17700, 17703, 1655, 11333, 1708, 17697, 1089, 10168, 10135, 10138, 17705, 8834, 5341, 5552, 17706, 2121, 1496, 10146, 9060, 5902, 575, 2]
+// Dependencies: [32, 19, 17696, 6954, 17698, 504, 17699, 17702, 12012, 17700, 17703, 1655, 11333, 1708, 17697, 1089, 10168, 10135, 10138, 17705, 8834, 6957, 5542, 17706, 2121, 1496, 10146, 9060, 5892, 575, 2]
 // Exports: useActionSheetPressHandler, useBountyPreviewImageUrl, useIsQuestDockExpanded, useQuestDockAppThemedBackgroundColor, useQuestDockDismissalReset, useQuestDockExpandHandler, useQuestDockExternalOffset, useQuestDockModeAnimatedReaction
 
 // Module 17695 (QuestDockHooks)
@@ -10,9 +10,9 @@ import nativeDefault from "native" /* 575 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
 import _mod1655 from "module_1655" /* 1655 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import QuestTypes from "QuestTypes" /* 5341 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import useToken from "useToken" /* 5902 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import useToken from "useToken" /* 5892 */;
+import QuestTypes from "QuestTypes" /* 6957 */;
 import AnalyticsTypes from "AnalyticsTypes" /* 8834 */;
 import ClientThemesOverrides from "ClientThemesOverrides" /* 9060 */;
 import captureAdUserAction2 from "captureAdUserAction" /* 10135 */;
@@ -27,7 +27,7 @@ import AdCreativeUtils from "AdCreativeUtils" /* 17705 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import QuestDockStore from "QuestDockStore" /* 17696 */;
-import QuestConstants from "QuestConstants" /* 5338 */;
+import QuestConstants from "QuestConstants" /* 6954 */;
 import QuestDockConstants from "QuestDockConstants" /* 17698 */;
 import size_mod from "module_2" /* 2 */;
 

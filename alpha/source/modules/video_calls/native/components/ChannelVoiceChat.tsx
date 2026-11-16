@@ -1,7 +1,7 @@
 // Module ID: 11002
 // Function ID: 11003
 // Name: ChannelVoiceChat
-// Dependencies: [19, 17, 11003, 21, 5306, 575, 9069, 1630, 11009, 12, 11007, 5547, 10271, 11010, 11827, 5313, 11976, 7428, 1113, 1187, 12498, 15139, 2]
+// Dependencies: [19, 17, 11003, 21, 5306, 575, 9069, 1630, 11009, 12, 11007, 5537, 10271, 11010, 11827, 5313, 11976, 7428, 1113, 1187, 12498, 15139, 2]
 
 // Module 11002 (ChannelVoiceChat)
 import react_native from "react-native" /* 17 */;
@@ -76,7 +76,7 @@ const memoResult = react.memo(function ChannelVoice(channel) {
   const isConnectedToVoiceChannel = tmp7Result.useIsConnectedToVoiceChannel(channel2);
   let str = "no-hide-descendants";
   const ref = obj.useRef(null);
-  guild_id(5547)();
+  guild_id(5537)();
   if (tmp2) {
     str = "yes";
   }

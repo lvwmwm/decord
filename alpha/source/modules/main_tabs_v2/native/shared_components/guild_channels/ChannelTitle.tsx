@@ -1,12 +1,12 @@
-// Module ID: 19486
-// Function ID: 19487
+// Module ID: 19488
+// Function ID: 19489
 // Name: guild_channels/ChannelTitle
-// Dependencies: [19, 6959, 21, 5306, 575, 11050, 5929, 2]
+// Dependencies: [19, 6949, 21, 5306, 575, 11050, 5919, 2]
 
-// Module 19486 (guild_channels/ChannelTitle)
+// Module 19488 (guild_channels/ChannelTitle)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ReadStateConstants from "ReadStateConstants" /* 6959 */;
+import ReadStateConstants from "ReadStateConstants" /* 6949 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;

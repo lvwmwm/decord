@@ -1,7 +1,7 @@
 // Module ID: 15544
 // Function ID: 15545
 // Name: ExecutedCommand
-// Dependencies: [17, 1407, 5155, 1388, 1072, 1417, 1414, 6749, 12589, 575, 8724, 6381, 9189, 9191, 7864, 1113, 12698, 2]
+// Dependencies: [17, 1407, 5155, 1388, 1072, 1417, 1414, 6739, 12589, 575, 8724, 6371, 9189, 9191, 7864, 1113, 12698, 2]
 // Exports: createExecutedCommand
 
 // Module 15544 (ExecutedCommand)
@@ -9,8 +9,8 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import InteractionTypes from "InteractionTypes" /* 6381 */;
-import useMessageAuthor from "useMessageAuthor" /* 6749 */;
+import InteractionTypes from "InteractionTypes" /* 6371 */;
+import useMessageAuthor from "useMessageAuthor" /* 6739 */;
 import ActivitiesInTextUtils from "ActivitiesInTextUtils" /* 7864 */;
 import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8724 */;
 import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 9189 */;

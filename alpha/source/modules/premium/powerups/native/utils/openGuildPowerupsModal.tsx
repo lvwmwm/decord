@@ -1,12 +1,12 @@
 // Module ID: 10679
 // Function ID: 10680
 // Name: openGuildPowerupsModal
-// Dependencies: [6848, 10680, 2121, 2]
+// Dependencies: [6838, 10680, 2121, 2]
 // Exports: default
 
 // Module 10679 (openGuildPowerupsModal)
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import size from "module_2" /* 2 */;
 
 let c3 = 0;

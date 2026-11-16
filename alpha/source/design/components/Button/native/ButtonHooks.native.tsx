@@ -1,20 +1,20 @@
-// Module ID: 5943
-// Function ID: 5944
+// Module ID: 5933
+// Function ID: 5934
 // Name: ButtonHooks
-// Dependencies: [19, 5306, 5377, 575, 5313, 5902, 1655, 5939, 5940, 5942, 5944, 5938, 5929, 1380, 2]
+// Dependencies: [19, 5306, 5367, 575, 5313, 5892, 1655, 5929, 5930, 5932, 5934, 5928, 5919, 1380, 2]
 // Exports: useButtonPillStyles, useButtonPressAnimationProps, useButtonTextColorStyles, useForegroundColor, useGradientPillStyles, useIconSizeStyles, useIconTintStyles, useProfileThemedButtonStyles
 
-// Module 5943 (ButtonHooks)
+// Module 5933 (ButtonHooks)
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import _mod1655 from "module_1655" /* 1655 */;
 import shared from "shared" /* 5313 */;
-import native from "native" /* 5377 */;
-import useToken from "useToken" /* 5902 */;
-import Icon from "Icon" /* 5938 */;
-import spring_spring from "spring/spring" /* 5939 */;
-import springPresets from "springPresets" /* 5940 */;
-import ButtonConstants from "ButtonConstants" /* 5942 */;
+import native from "native" /* 5367 */;
+import useToken from "useToken" /* 5892 */;
+import Icon from "Icon" /* 5928 */;
+import spring_spring from "spring/spring" /* 5929 */;
+import springPresets from "springPresets" /* 5930 */;
+import ButtonConstants from "ButtonConstants" /* 5932 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
@@ -744,19 +744,19 @@ export const useIconSizeStyles = (arg0) => {
     Icon;
     if ("sm" === closure_0) {
       const tmpResult = Icon;
-      iconSize = tmpResult.getIconSize(tmp(5942).SMALL_BUTTON_ICON_SIZE);
+      iconSize = tmpResult.getIconSize(tmp(5932).SMALL_BUTTON_ICON_SIZE);
     } else {
       iconSize = tmp4;
       if ("lg" === closure_0) {
         const tmpResult4 = Icon;
-        iconSize = tmpResult4.getIconSize(tmp(5942).LARGE_BUTTON_ICON_SIZE);
+        iconSize = tmpResult4.getIconSize(tmp(5932).LARGE_BUTTON_ICON_SIZE);
       }
     }
     let width = iconSize;
     if (flag) {
       width = iconSize;
       if (fontScale > 1) {
-        const TextStyleSheet = tmp(5929).TextStyleSheet;
+        const TextStyleSheet = tmp(5919).TextStyleSheet;
         const tmpResult5 = ButtonConstants;
         const tmp13 = TextStyleSheet[tmpResult5.getButtonDefaultTextVariant(tmpResult5, closure_0)];
         const tmpResult6 = PlatformUtils;

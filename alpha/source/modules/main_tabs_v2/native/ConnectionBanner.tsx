@@ -1,19 +1,19 @@
-// Module ID: 19172
-// Function ID: 19173
+// Module ID: 19174
+// Function ID: 19175
 // Name: ConnectionBanner
-// Dependencies: [32, 19, 17, 16190, 17701, 1072, 21, 5306, 575, 1113, 5902, 19173, 19175, 5929, 671, 1655, 7533, 5893, 504, 1256, 17700, 5939, 1708, 16191, 2]
+// Dependencies: [32, 19, 17, 16190, 17701, 1072, 21, 5306, 575, 1113, 5892, 19175, 19177, 5919, 671, 1655, 7533, 5883, 504, 1256, 17700, 5929, 1708, 16191, 2]
 // Exports: default
 
-// Module 19172 (ConnectionBanner)
+// Module 19174 (ConnectionBanner)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import _modDef1655 from "module_1655" /* 1655 */;
-import LinearGradientDefault from "LinearGradient" /* 5893 */;
-import useToken from "useToken" /* 5902 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import spring_spring from "spring/spring" /* 5939 */;
+import LinearGradientDefault from "LinearGradient" /* 5883 */;
+import useToken from "useToken" /* 5892 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import spring_spring from "spring/spring" /* 5929 */;
 import _modDef7533 from "module_7533" /* 7533 */;
 import ConnectivityIndicatorStateStore2 from "ConnectivityIndicatorStateStore" /* 16190 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
@@ -53,12 +53,12 @@ function ConnectionBannerIcon(state) {
   } else if (constants.NO_CONNECTION === state) {
     const obj4 = { style: tmp.leadingSlot, children: authStore2(ConnectionUnknownIcon, obj5) };
     obj5 = { size: "xs", color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };
-    ConnectionUnknownIcon = tmp2(19173).ConnectionUnknownIcon;
+    ConnectionUnknownIcon = tmp2(19175).ConnectionUnknownIcon;
     return authStore2(metroRequire, obj4);
   } else if (constants.BACK_ONLINE === state) {
     const obj = { style: tmp.leadingSlot, children: authStore2(ConnectionFineIcon, obj6) };
     obj6 = { size: "xs", color: nativeDefault.colors.ICON_FEEDBACK_POSITIVE };
-    ConnectionFineIcon = tmp2(19175).ConnectionFineIcon;
+    ConnectionFineIcon = tmp2(19177).ConnectionFineIcon;
     return authStore2(metroRequire, obj);
   }
 }
@@ -99,7 +99,7 @@ function BackOnlineGlow(progress) {
   let token;
   progress = progress.progress;
   const tmp = closure_21();
-  let obj = token(5902);
+  let obj = token(5892);
   token = obj.useToken(nativeDefault.colors.ICON_FEEDBACK_POSITIVE);
   let items = [token];
   const memo = react.useMemo(() => {

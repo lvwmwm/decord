@@ -1,13 +1,13 @@
 // Module ID: 17328
 // Function ID: 17329
 // Name: Blocked
-// Dependencies: [19, 21, 8183, 17329, 17330, 17331, 5313, 6020, 2]
+// Dependencies: [19, 21, 8183, 17329, 17330, 17331, 5313, 6010, 2]
 // Exports: Blocked, getBlockedSource, useBlockedSource
 
 // Module 17328 (Blocked)
 import Fragment from "Fragment" /* 21 */;
 import shared from "shared" /* 5313 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import _mod8183 from "module_8183" /* 8183 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

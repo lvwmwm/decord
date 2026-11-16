@@ -1,7 +1,7 @@
 // Module ID: 15284
 // Function ID: 15285
 // Name: BadgeProgressSection
-// Dependencies: [19, 17, 21, 5306, 575, 10117, 5929, 1113, 15277, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 10117, 5919, 1113, 15277, 2]
 // Exports: default
 
 // Module 15284 (BadgeProgressSection)
@@ -83,7 +83,7 @@ export default function BadgeProgressSection(arg0) {
   }
   const obj2 = { style: tmp.section, children: items };
   const obj3 = { variant: "body-sm/medium", color: "text-default", children: intl.string(intl3.t["2m/g2c"]) };
-  const Text = tmp2(5929).Text;
+  const Text = tmp2(5919).Text;
   intl = tmp2(1113).intl;
   items = [React3(Text, obj3), ];
   let tmp9Result = null != currentArtUrl;
@@ -97,7 +97,7 @@ export default function BadgeProgressSection(arg0) {
   const obj6 = { style: tmp.content, children: items2 };
   if (tmp9Result4) {
     const obj7 = { variant: "body-sm/medium", "aria-hidden": null != threshold, children: helperText };
-    tmp9Result4 = tmp9(tmp2(5929).Text, obj7);
+    tmp9Result4 = tmp9(tmp2(5919).Text, obj7);
   }
   items2 = [tmp9Result4, ];
   let tmp9Result5 = null != threshold;

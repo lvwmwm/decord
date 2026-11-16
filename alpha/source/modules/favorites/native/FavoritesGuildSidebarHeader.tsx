@@ -1,21 +1,21 @@
-// Module ID: 19057
-// Function ID: 19058
+// Module ID: 19059
+// Function ID: 19060
 // Name: FavoritesGuildSidebarHeader
-// Dependencies: [19, 17, 18919, 21, 5306, 575, 15154, 5929, 1113, 3679, 8078, 7432, 8069, 6337, 2]
+// Dependencies: [19, 17, 18921, 21, 5306, 575, 15154, 5919, 1113, 3679, 8078, 7432, 8069, 6327, 2]
 // Exports: default
 
-// Module 19057 (FavoritesGuildSidebarHeader)
+// Module 19059 (FavoritesGuildSidebarHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef3679 from "module_3679" /* 3679 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import Stack_Stack from "Stack/Stack" /* 6337 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import Stack_Stack from "Stack/Stack" /* 6327 */;
 import VoiceNormalIcon2 from "VoiceNormalIcon" /* 7432 */;
 import ChatIcon2 from "ChatIcon" /* 8069 */;
 import TextIcon2 from "TextIcon" /* 8078 */;
 import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 15154 */;
-import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 18919 */;
+import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 18921 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
@@ -112,9 +112,9 @@ export default function FavoritesGuildSidebarHeader() {
   }
   items = [tmp7, , ];
   const obj3 = { spacing: nativeDefault.space.PX_8, style: tmp.copy, children: items1 };
-  const Stack2 = tmp4(6337).Stack;
+  const Stack2 = tmp4(6327).Stack;
   const obj4 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: intl.string(_modDef3679["1n0TGE"]) };
-  const Heading = tmp4(5929).Heading;
+  const Heading = tmp4(5919).Heading;
   intl = tmp4(1113).intl;
   items1 = [metroRequire(Heading, obj4), metroRequire(EmptyBody, {})];
   items[1] = metroImportDefault(Stack2, obj3);

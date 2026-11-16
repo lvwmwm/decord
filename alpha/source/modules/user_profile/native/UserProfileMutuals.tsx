@@ -1,13 +1,13 @@
 // Module ID: 15870
 // Function ID: 15871
 // Name: UserProfileMutuals
-// Dependencies: [19, 17, 8479, 7962, 21, 5306, 8545, 14931, 15700, 5552, 14938, 2121, 8476, 7231, 7428, 15745, 1187, 5929, 14939, 14946, 7720, 14933, 2]
+// Dependencies: [19, 17, 8479, 7962, 21, 5306, 8545, 14931, 15700, 5542, 14938, 2121, 8476, 7231, 7428, 15745, 1187, 5919, 14939, 14946, 7720, 14933, 2]
 // Exports: default
 
 // Module 15870 (UserProfileMutuals)
 import react_native from "react-native" /* 17 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import Constants from "Constants" /* 7962 */;
 import Constants2 from "Constants" /* 8479 */;
 import react from "react" /* 19 */;
@@ -101,7 +101,7 @@ export default function UserProfileMutuals(user) {
       const AvatarPile = tmp2(15745).AvatarPile;
       items = [closure_6(AvatarPile, obj4), ];
       const obj5 = { variant, color, children: guildId(14939)(mutualFriends.length) };
-      const Text = tmp2(5929).Text;
+      const Text = tmp2(5919).Text;
       items[1] = closure_6(Text, obj5);
       tmp9Result = tmp9(PressableOpacity, obj3);
     }
@@ -109,7 +109,7 @@ export default function UserProfileMutuals(user) {
     let tmp15 = tmp7 && tmp8;
     if (tmp15) {
       const obj6 = { variant, color, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: DIVIDER_DOT };
-      tmp15 = closure_6(tmp2(5929).Text, obj6);
+      tmp15 = closure_6(tmp2(5919).Text, obj6);
     }
     items1[1] = tmp15;
     let tmp9Result2 = null;
@@ -146,7 +146,7 @@ export default function UserProfileMutuals(user) {
       }
       items2 = [tmp21, ];
       const obj9 = { variant, color, children: guildId(14933)(mutualGuilds.length) };
-      const Text2 = tmp2(5929).Text;
+      const Text2 = tmp2(5919).Text;
       items2[1] = closure_6(Text2, obj9);
       tmp9Result2 = tmp9(PressableOpacity2, obj7);
     }

@@ -1,12 +1,12 @@
 // Module ID: 12123
 // Function ID: 12124
 // Name: UserProfileAlertUtils
-// Dependencies: [19, 21, 6270, 12124, 12125, 12126, 12127, 12128, 12129, 12130, 2]
+// Dependencies: [19, 21, 6260, 12124, 12125, 12126, 12127, 12128, 12129, 12130, 2]
 // Exports: alertUserReported, confirmCancelFriendRequest, confirmRemoveFriend, confirmRemoveGameFriend, confirmRemoveWidget, confirmThreadRemove, confirmVideoUnstableConnection
 
 // Module 12123 (UserProfileAlertUtils)
 import Fragment from "Fragment" /* 21 */;
-import useAlertStore from "useAlertStore" /* 6270 */;
+import useAlertStore from "useAlertStore" /* 6260 */;
 import UserProfileConfirmCancelFriendRequestDefault from "UserProfileConfirmCancelFriendRequest" /* 12124 */;
 import UserProfileConfirmRemoveFriendDefault from "UserProfileConfirmRemoveFriend" /* 12125 */;
 import UserProfileConfirmRemoveGameFriendDefault from "UserProfileConfirmRemoveGameFriend" /* 12126 */;

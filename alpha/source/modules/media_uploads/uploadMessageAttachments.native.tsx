@@ -1,7 +1,7 @@
 // Module ID: 9020
 // Function ID: 9021
 // Name: uploadMessageAttachments
-// Dependencies: [5, 9021, 9022, 6374, 572, 2]
+// Dependencies: [5, 9021, 9022, 6364, 572, 2]
 // Exports: uploadMessageAttachments
 
 // Module 9020 (uploadMessageAttachments)

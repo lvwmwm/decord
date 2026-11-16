@@ -1,18 +1,18 @@
-// Module ID: 18853
-// Function ID: 18854
+// Module ID: 18855
+// Function ID: 18856
 // Name: ChannelListStickyHeader
-// Dependencies: [19, 17, 1072, 21, 1655, 5306, 575, 18824, 5180, 1113, 18854, 16345, 18852, 10392, 7452, 5902, 10183, 5929, 10390, 1187, 7963, 18868, 14694, 18872, 18873, 2]
+// Dependencies: [19, 17, 1072, 21, 1655, 5306, 575, 18826, 5180, 1113, 18856, 16345, 18854, 10392, 7452, 5892, 10183, 5919, 10390, 1187, 7963, 18870, 14694, 18874, 18875, 2]
 // Exports: default
 
-// Module 18853 (ChannelListStickyHeader)
+// Module 18855 (ChannelListStickyHeader)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import GuildBadgeV2Default from "GuildBadgeV2" /* 10390 */;
 import openGuildActionSheetDefault from "openGuildActionSheet" /* 16345 */;
-import useIsGameCommunityServerPreviewDefault from "useIsGameCommunityServerPreview" /* 18824 */;
-import useStickyServerHeaderSubtitleDefault from "useStickyServerHeaderSubtitle" /* 18852 */;
-import openFavoritesGuildActionSheetDefault from "openFavoritesGuildActionSheet" /* 18854 */;
-import LurkerServerPreviewJoinButtonDefault from "LurkerServerPreviewJoinButton" /* 18872 */;
+import useIsGameCommunityServerPreviewDefault from "useIsGameCommunityServerPreview" /* 18826 */;
+import useStickyServerHeaderSubtitleDefault from "useStickyServerHeaderSubtitle" /* 18854 */;
+import openFavoritesGuildActionSheetDefault from "openFavoritesGuildActionSheet" /* 18856 */;
+import LurkerServerPreviewJoinButtonDefault from "LurkerServerPreviewJoinButton" /* 18874 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -118,9 +118,9 @@ export default function ChannelListStickyHeader(guild) {
   ({ onPressIn, onPressOut, pressableStyles } = iOSPressEffects);
   const tmp6Result6 = guild(5180);
   const favoritesAwareGuildName = tmp6Result6.getFavoritesAwareGuildName(guild);
-  const tmp6Result7 = guild(5902);
+  const tmp6Result7 = guild(5892);
   const token = tmp6Result7.useToken(tmp2(575).modules.mobile.CHANNEL_LIST_TITLE_TEXT_STYLE);
-  const tmp6Result8 = guild(5902);
+  const tmp6Result8 = guild(5892);
   const token1 = tmp6Result8.useToken(tmp2(575).modules.mobile.CHANNEL_LIST_SUBTITLE_TEXT_STYLE);
   const obj3 = { style: items1, onPress: tmp18, onPressIn: tmp19, onPressOut: tmp20, accessible: true, accessibilityRole: str, accessibilityHint: stringResult, children: items3 };
   items1 = [pressableStyles, tmp.headerRowTitle];
@@ -154,7 +154,7 @@ export default function ChannelListStickyHeader(guild) {
     tmp23 = closure_6(StarIcon, obj5);
   }
   items2 = [tmp23, , , ];
-  const obj6 = { ref, collapsable: false, style: tmp.flex, children: closure_6(guild(5929).Text, { experimental_useNativeText: true, color: "mobile-text-heading-primary", variant: token, lineClamp: 1, children: favoritesAwareGuildName }) };
+  const obj6 = { ref, collapsable: false, style: tmp.flex, children: closure_6(guild(5919).Text, { experimental_useNativeText: true, color: "mobile-text-heading-primary", variant: token, lineClamp: 1, children: favoritesAwareGuildName }) };
   items2[1] = closure_6(closure_4, obj6);
   const obj7 = { guild, size: guild(1187).Icon.Sizes.REFRESH_SMALL_16, style: tmp.guildBadge };
   const tmp2Result = GuildBadgeV2Default;
@@ -173,14 +173,14 @@ export default function ChannelListStickyHeader(guild) {
     if (tmp10 > 0) {
       const obj9 = { style: tmp.subheader, children: items4 };
       const obj10 = { experimental_useNativeText: true, color: "text-muted", variant: token1, lineClamp: 1, children: intl2.format(guild(1113).t.zRl6XR, obj11) };
-      const Text = tmp6(5929).Text;
+      const Text = tmp6(5919).Text;
       intl2 = tmp6(1113).intl;
       obj11 = { count: tmp10 };
       items4 = [closure_6(Text, obj10), , ];
       const obj12 = { style: tmp.ellipse };
       items4[1] = closure_6(closure_4, obj12);
       const obj13 = { experimental_useNativeText: true, color: "text-muted", variant: token1, lineClamp: 1, children: string(isDiscoverableGuildResult ? t2["B/vjCu"] : t2["1g9A/f"]) };
-      const Text2 = tmp6(5929).Text;
+      const Text2 = tmp6(5919).Text;
       const intl3 = tmp6(1113).intl;
       string = intl3.string;
       t2 = tmp6(1113).t;
@@ -201,7 +201,7 @@ export default function ChannelListStickyHeader(guild) {
   items6 = [tmp16Result2, ];
   let tmp25Result5 = null;
   if (isFavoritesGuildIdResult) {
-    tmp25Result5 = tmp25(tmp6(18868).FavoritesGuildHeaderActionButton, {});
+    tmp25Result5 = tmp25(tmp6(18870).FavoritesGuildHeaderActionButton, {});
   }
   items6[1] = tmp25Result5;
   items7 = [closure_7(closure_4, obj15), , , , ];
@@ -222,7 +222,7 @@ export default function ChannelListStickyHeader(guild) {
   let tmp25Result8 = null;
   if (flag3) {
     const obj20 = { targetRef: ref, guild };
-    tmp25Result8 = tmp25(tmp2(18873), obj20);
+    tmp25Result8 = tmp25(tmp2(18875), obj20);
   }
   items7[4] = tmp25Result8;
   return closure_7(closure_4, obj14);

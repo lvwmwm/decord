@@ -1,7 +1,7 @@
 // Module ID: 9433
 // Function ID: 9434
 // Name: CollectiblesBadges
-// Dependencies: [19, 17, 1390, 21, 5306, 575, 5929, 1113, 9434, 8092, 9436, 2]
+// Dependencies: [19, 17, 1390, 21, 5306, 575, 5919, 1113, 9434, 8092, 9436, 2]
 // Exports: IconBadgePill, IconTextBadge, LimitedTimeBadge, LockBadge, NewBadge, PremiumBadge
 
 // Module 9433 (CollectiblesBadges)
@@ -9,7 +9,7 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import LockIcon3 from "LockIcon" /* 8092 */;
 import PremiumFeaturesBackgroundDefault from "PremiumFeaturesBackground" /* 9434 */;
 import NitroWheelIcon3 from "NitroWheelIcon" /* 9436 */;

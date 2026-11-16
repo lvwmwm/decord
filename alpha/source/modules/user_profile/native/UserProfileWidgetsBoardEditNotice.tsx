@@ -1,7 +1,7 @@
 // Module ID: 15830
 // Function ID: 15831
 // Name: UserProfileWidgetsBoardEditNotice
-// Dependencies: [19, 17, 5152, 21, 5306, 575, 8607, 10568, 5139, 6037, 5929, 1113, 7428, 7549, 2]
+// Dependencies: [19, 17, 5152, 21, 5306, 575, 8607, 10568, 5139, 6027, 5919, 1113, 7428, 7549, 2]
 // Exports: default
 
 // Module 15830 (UserProfileWidgetsBoardEditNotice)
@@ -55,10 +55,10 @@ export default function UserProfileWidgetsBoardEditNotice() {
         items = [card.card, closure_0.container];
         const obj2 = { style: closure_0.icon, children: hasOwnProperty(CircleInformationIcon, obj3) };
         obj3 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
-        CircleInformationIcon = tmp(6037).CircleInformationIcon;
+        CircleInformationIcon = tmp(6027).CircleInformationIcon;
         items1 = [hasOwnProperty(View, obj2), , ];
         const obj4 = { style: closure_0.text, variant: "body-sm/medium", color: "text-strong", children: intl.string(intl3.t.kv8ULD) };
-        const Text = tmp(5929).Text;
+        const Text = tmp(5919).Text;
         intl = tmp(1113).intl;
         items1[1] = hasOwnProperty(Text, obj4);
         const obj5 = {

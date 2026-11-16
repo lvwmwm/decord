@@ -1,7 +1,7 @@
 // Module ID: 16608
 // Function ID: 16609
 // Name: Status
-// Dependencies: [32, 19, 17, 1188, 1072, 15747, 21, 5306, 16606, 575, 16609, 16610, 16611, 16612, 16613, 16614, 16615, 16607, 6020, 16616, 1655, 5939, 16594, 2]
+// Dependencies: [32, 19, 17, 1188, 1072, 15747, 21, 5306, 16606, 575, 16609, 16610, 16611, 16612, 16613, 16614, 16615, 16607, 6010, 16616, 1655, 5929, 16594, 2]
 // Exports: StatusWithTyping, default
 
 // Module 16608 (Status)
@@ -10,8 +10,8 @@ import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import StatusConstants from "StatusConstants" /* 1188 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import spring_spring from "spring/spring" /* 5939 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import spring_spring from "spring/spring" /* 5929 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import EllipsisDefault from "Ellipsis" /* 16594 */;
 import Status_StatusUtils from "Status/StatusUtils" /* 16606 */;
 import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 16607 */;

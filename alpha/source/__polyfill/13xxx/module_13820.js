@@ -319,7 +319,7 @@ class SvgCss {
     let fallback;
     let onError;
     let override;
-    const f108429 = () => {
+    const f108442 = () => {
       let parsed = null;
       if (null !== xml) {
         obj = inlineStyles2;
@@ -335,8 +335,8 @@ class SvgCss {
     try {
       const tmp = closure_8;
       const items = [xml];
-      obj = { ast: closure_8(f108429, items), override };
-      closure_8(f108429, items);
+      obj = { ast: closure_8(f108442, items), override };
+      closure_8(f108442, items);
       const SvgAst = xml(8263).SvgAst;
       const tmp3 = jsx;
       if (!override) {
@@ -389,7 +389,7 @@ obj2 = {
     return arr;
   },
   existsOne(arg0, arr) {
-    const f108430 = (children) => {
+    const f108443 = (children) => {
       let tmp = typeof children === "object";
       if (typeof children === "object") {
         let someResult = closure_0(children);
@@ -397,14 +397,14 @@ obj2 = {
         if (!someResult) {
           children = children.children;
           closure_0 = tmp3;
-          someResult = children.some(f108430);
+          someResult = children.some(f108443);
         }
         tmp = someResult;
       }
       return tmp;
     };
     let closure_0 = arg0;
-    return arr.some(f108430);
+    return arr.some(f108443);
   },
   getSiblings(parent) {
     parent = typeof parent === "object";
@@ -515,7 +515,7 @@ let closure_24 = ["color", "fill", "floodColor", "lightingColor", "stopColor", "
 function resolveElementVariables(item10064, map) {
   let closure_1 = map;
   return closure_24.forEach((item) => {
-    const f108428 = (arg0, arg1, str) => {
+    const f108441 = (arg0, arg1, str) => {
       let str2;
       const value = closure_0.get(arg1);
       if (undefined !== value) {
@@ -527,7 +527,7 @@ function resolveElementVariables(item10064, map) {
             const obj2 = map(closure_2_2[9]);
             str5 = obj2.generate(value);
           }
-          str4 = str5.replace(/var\((--[^,)]+)(?:,\s*([^)]+))?\)/g, f108428);
+          str4 = str5.replace(/var\((--[^,)]+)(?:,\s*([^)]+))?\)/g, f108441);
         }
         str2 = str4;
       } else {
@@ -541,7 +541,7 @@ function resolveElementVariables(item10064, map) {
               obj = map(closure_2_2[9]);
               str3 = obj.generate(str);
             }
-            str = str3.replace(/var\((--[^,)]+)(?:,\s*([^)]+))?\)/g, f108428);
+            str = str3.replace(/var\((--[^,)]+)(?:,\s*([^)]+))?\)/g, f108441);
           }
           str2 = str;
         }
@@ -565,7 +565,7 @@ function resolveElementVariables(item10064, map) {
           let obj2 = _modDef13821;
           str3 = obj2.generate(obj);
         }
-        str2 = str3.replace(/var\((--[^,)]+)(?:,\s*([^)]+))?\)/g, f108428);
+        str2 = str3.replace(/var\((--[^,)]+)(?:,\s*([^)]+))?\)/g, f108441);
       }
       props[item] = str2;
     }

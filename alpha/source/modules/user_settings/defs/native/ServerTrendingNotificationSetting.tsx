@@ -1,13 +1,13 @@
-// Module ID: 18147
-// Function ID: 18148
+// Module ID: 18149
+// Function ID: 18150
 // Name: ServerTrendingNotificationSetting
-// Dependencies: [9202, 12406, 1113, 5131, 18148, 2]
+// Dependencies: [9202, 12406, 1113, 5131, 18150, 2]
 
-// Module 18147 (ServerTrendingNotificationSetting)
+// Module 18149 (ServerTrendingNotificationSetting)
 import intl2 from "intl" /* 1113 */;
 import UserSettings from "UserSettings" /* 5131 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;
-import ServerTrendingNotificationUtils from "ServerTrendingNotificationUtils" /* 18148 */;
+import ServerTrendingNotificationUtils from "ServerTrendingNotificationUtils" /* 18150 */;
 import SettingBuilders from "SettingBuilders" /* 12406 */;
 import size from "module_2" /* 2 */;
 

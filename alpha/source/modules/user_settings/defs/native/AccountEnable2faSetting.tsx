@@ -1,11 +1,11 @@
 // Module ID: 17280
 // Function ID: 17281
 // Name: AccountEnable2faSetting
-// Dependencies: [1388, 9202, 17208, 17281, 6268, 1113, 12406, 2]
+// Dependencies: [1388, 9202, 17208, 17281, 6258, 1113, 12406, 2]
 
 // Module 17280 (AccountEnable2faSetting)
 import intl3 from "intl" /* 1113 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6268 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6258 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;
 import SettingsAccountUtils from "SettingsAccountUtils" /* 17208 */;
 import TwoFASetupModalActionCreatorsDefault from "TwoFASetupModalActionCreators" /* 17281 */;

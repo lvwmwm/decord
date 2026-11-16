@@ -1,9 +1,9 @@
-// Module ID: 18555
-// Function ID: 18556
+// Module ID: 18557
+// Function ID: 18558
 // Name: ManageSponsoredContentSetting
-// Dependencies: [9202, 1072, 12406, 1113, 2236, 18556, 2]
+// Dependencies: [9202, 1072, 12406, 1113, 2236, 18558, 2]
 
-// Module 18555 (ManageSponsoredContentSetting)
+// Module 18557 (ManageSponsoredContentSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef2236 from "module_2236" /* 2236 */;

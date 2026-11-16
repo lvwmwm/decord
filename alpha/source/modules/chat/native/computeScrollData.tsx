@@ -1,11 +1,11 @@
 // Module ID: 11881
 // Function ID: 11882
 // Name: computeScrollData
-// Dependencies: [5307, 9160, 11882, 5543, 2]
+// Dependencies: [5307, 9160, 11882, 5533, 2]
 // Exports: default, findMessageRowIndex
 
 // Module 11881 (computeScrollData)
-import flow_Client from "flow/Client" /* 5543 */;
+import flow_Client from "flow/Client" /* 5533 */;
 import NativeChatUtils from "NativeChatUtils" /* 11882 */;
 import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import RowGeneratorConstants from "RowGeneratorConstants" /* 9160 */;

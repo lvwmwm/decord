@@ -1,14 +1,14 @@
 // Module ID: 7815
 // Function ID: 7816
 // Name: UserSettingsAccountUnverifiedHeader
-// Dependencies: [19, 1388, 21, 5306, 575, 7740, 1113, 504, 7428, 5929, 2]
+// Dependencies: [19, 1388, 21, 5306, 575, 7740, 1113, 504, 7428, 5919, 2]
 // Exports: default
 
 // Module 7815 (UserSettingsAccountUnverifiedHeader)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 7740 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;

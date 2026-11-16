@@ -1,7 +1,7 @@
 // Module ID: 17070
 // Function ID: 17071
 // Name: UserProfileUpsellButton
-// Dependencies: [19, 1072, 1390, 21, 5306, 7918, 9606, 1256, 5936, 11170, 1113, 9436, 2]
+// Dependencies: [19, 1072, 1390, 21, 5306, 7918, 9606, 1256, 5926, 11170, 1113, 9436, 2]
 // Exports: default
 
 // Module 17070 (UserProfileUpsellButton)
@@ -40,7 +40,7 @@ export default function UserProfileUpsellButton(analyticsObject) {
     const obj = AnalyticsUtilsDefault;
     obj.track(metroImportDefault.PREMIUM_UPSELL_VIEWED, obj2);
   }, items);
-  const Button = analyticsObject(5936).Button;
+  const Button = analyticsObject(5926).Button;
   if (nitroTrialCtaOverride == null) {
     nitroTrialCtaOverride = label;
   }

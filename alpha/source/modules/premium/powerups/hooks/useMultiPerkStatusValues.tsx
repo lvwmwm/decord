@@ -1,12 +1,12 @@
 // Module ID: 10784
 // Function ID: 10785
 // Name: useMultiPerkStatusValues
-// Dependencies: [5524, 10700, 1113, 2733, 2]
+// Dependencies: [5514, 10700, 1113, 2733, 2]
 // Exports: default
 
 // Module 10784 (useMultiPerkStatusValues)
 import _modDef2733 from "module_2733" /* 2733 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5524 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5514 */;
 import usePowerupActiveStatus from "usePowerupActiveStatus" /* 10700 */;
 import size from "module_2" /* 2 */;
 

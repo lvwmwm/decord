@@ -1,7 +1,7 @@
 // Module ID: 15179
 // Function ID: 15180
 // Name: ForwardMessageFooter
-// Dependencies: [32, 19, 8725, 21, 10240, 10262, 504, 9004, 15180, 1113, 15181, 15182, 5936, 15192, 2]
+// Dependencies: [32, 19, 8725, 21, 10240, 10262, 504, 9004, 15180, 1113, 15181, 15182, 5926, 15192, 2]
 // Exports: ForwardMessageFooter
 
 // Module 15179 (ForwardMessageFooter)

@@ -1,7 +1,7 @@
 // Module ID: 17624
 // Function ID: 17625
 // Name: QuestHomeOrbShopRewardCardAssetTile
-// Dependencies: [32, 19, 17, 1074, 21, 10416, 575, 5306, 9500, 38, 2114, 6020, 9501, 9502, 9402, 9489, 10422, 1075, 10423, 9491, 9512, 9514, 10417, 8496, 5303, 5902, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 10416, 575, 5306, 9500, 38, 2114, 6010, 9501, 9502, 9402, 9489, 10422, 1075, 10423, 9491, 9512, 9514, 10417, 8496, 5303, 5892, 2]
 
 // Module 17624 (QuestHomeOrbShopRewardCardAssetTile)
 import _modDef38 from "module_38" /* 38 */;
@@ -9,8 +9,8 @@ import nativeDefault from "native" /* 575 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 2114 */;
 import ColorUtils from "ColorUtils" /* 5303 */;
-import useToken from "useToken" /* 5902 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import useToken from "useToken" /* 5892 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import CollectiblesProductUtils from "CollectiblesProductUtils" /* 8496 */;
 import AvatarDecorationSampleV2 from "AvatarDecorationSampleV2" /* 9500 */;
 import AssetRegistryDefault from "AssetRegistry" /* 9501 */;
@@ -105,7 +105,7 @@ function ProductPreviewInner(cardHeight) {
   } else if (product.skuId === EXTERNAL_PRODUCT_SKU_IDS.ORB_PROFILE_BADGE) {
     const obj3 = { source: obj4, style: tmp.externalProductImage };
     obj4 = { uri: cardHeight(10422) };
-    const tmp33 = cardHeight(6020);
+    const tmp33 = cardHeight(6010);
     return closure_7(tmp33, obj3);
   } else {
     const ALL = tmp2(1075).FractionalPremiumSKUsSets.ALL;

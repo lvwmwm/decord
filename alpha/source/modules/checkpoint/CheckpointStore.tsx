@@ -1,14 +1,14 @@
 // Module ID: 14253
 // Function ID: 14254
 // Name: CheckpointStore
-// Dependencies: [1388, 2110, 6422, 6421, 14254, 14255, 6745, 504, 572, 2]
+// Dependencies: [1388, 2110, 6412, 6411, 14254, 14255, 6735, 504, 572, 2]
 
 // Module 14253 (CheckpointStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 2110 */;
-import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6421 */;
-import CheckpointTrait from "CheckpointTrait" /* 6422 */;
+import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6411 */;
+import CheckpointTrait from "CheckpointTrait" /* 6412 */;
 import CheckpointFlows from "CheckpointFlows" /* 14255 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
@@ -289,7 +289,7 @@ let obj4 = {
         if (progress != null) {
           stage1 = progress.stage;
         }
-        if (stage1 === tmp8(6745).CheckpointCharacterStage.SUMMARY) {
+        if (stage1 === tmp8(6735).CheckpointCharacterStage.SUMMARY) {
           return false;
         } else {
           let tmp3 = c13;

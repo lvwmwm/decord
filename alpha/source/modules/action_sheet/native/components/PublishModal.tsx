@@ -1,14 +1,14 @@
 // Module ID: 12642
 // Function ID: 12643
 // Name: PublishModal
-// Dependencies: [32, 19, 17, 21, 5306, 6961, 12643, 1187, 1113, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 6951, 12643, 1187, 1113, 2]
 // Exports: default
 
 // Module 12642 (PublishModal)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import LegacyTokens from "LegacyTokens" /* 6961 */;
+import LegacyTokens from "LegacyTokens" /* 6951 */;
 import useChannelFollowerStatsDefault from "useChannelFollowerStats" /* 12643 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

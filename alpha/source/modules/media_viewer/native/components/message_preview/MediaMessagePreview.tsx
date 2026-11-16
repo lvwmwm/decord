@@ -1,7 +1,7 @@
 // Module ID: 15212
 // Function ID: 15213
 // Name: MediaMessagePreview
-// Dependencies: [32, 19, 17, 8867, 7037, 5155, 6372, 10228, 1072, 21, 9159, 11069, 5306, 10195, 11065, 1655, 1708, 575, 15213, 504, 11899, 1113, 11, 15214, 12463, 11864, 8863, 12504, 5598, 14196, 12586, 6063, 2]
+// Dependencies: [32, 19, 17, 8867, 7037, 5155, 6362, 10228, 1072, 21, 9159, 11069, 5306, 10195, 11065, 1655, 1708, 575, 15213, 504, 11899, 1113, 11, 15214, 12463, 11864, 8863, 12504, 5588, 14196, 12586, 6053, 2]
 // Exports: default
 
 // Module 15212 (MediaMessagePreview)
@@ -10,7 +10,7 @@ import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5598 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5588 */;
 import RowGeneratorDefault from "RowGenerator" /* 9159 */;
 import RowGeneratorTypes from "RowGeneratorTypes" /* 11069 */;
 import messages_MessagesUtils from "messages/MessagesUtils" /* 11864 */;
@@ -23,7 +23,7 @@ import react_native from "react-native" /* 17 */;
 import ForumPostMessagesStore from "ForumPostMessagesStore" /* 8867 */;
 import SearchMessageStore from "SearchMessageStore" /* 7037 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
-import MessageStore from "MessageStore" /* 6372 */;
+import MessageStore from "MessageStore" /* 6362 */;
 import MessagePreviewStore from "MessagePreviewStore" /* 10228 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;

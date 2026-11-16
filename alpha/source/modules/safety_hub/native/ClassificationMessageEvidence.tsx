@@ -1,7 +1,7 @@
 // Module ID: 14193
 // Function ID: 14194
 // Name: ClassificationMessageEvidence
-// Dependencies: [32, 19, 17, 1192, 1388, 8231, 8206, 1072, 21, 9159, 5306, 504, 5313, 14194, 14195, 8205, 6361, 8627, 9731, 14196, 11065, 6374, 11, 2]
+// Dependencies: [32, 19, 17, 1192, 1388, 8231, 8206, 1072, 21, 9159, 5306, 504, 5313, 14194, 14195, 8205, 6351, 8627, 9731, 14196, 11065, 6364, 11, 2]
 // Exports: default
 
 // Module 14193 (ClassificationMessageEvidence)
@@ -278,8 +278,8 @@ export default function ClassificationEvidence(flaggedContent) {
       const tmp14Result = tmp14(11065);
       const _Date = Date;
       obj8 = { id: first2.id, timestamp: date.toUTCString(), channel_id: "1", type: MessageTypes.DEFAULT, author: tmp27, content: first2.content, attachments: memo };
-      createMessageRecord = tmp2(6374).createMessageRecord;
-      tmp2(6374);
+      createMessageRecord = tmp2(6364).createMessageRecord;
+      tmp2(6364);
       const self = this;
       const self2 = this;
       const tmp14Result2 = tmp14(11);

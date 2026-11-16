@@ -1,15 +1,15 @@
 // Module ID: 16091
 // Function ID: 16092
 // Name: VoiceMemberList
-// Dependencies: [32, 5, 19, 17, 5154, 1407, 6820, 5238, 1388, 6074, 1072, 1191, 5567, 1083, 21, 5306, 16087, 12971, 504, 8106, 15334, 1113, 10982, 12540, 8460, 5929, 11297, 7918, 2020, 6935, 12711, 6900, 16092, 16093, 1496, 16100, 5492, 12, 5552, 8476, 5377, 16101, 7847, 2]
+// Dependencies: [32, 5, 19, 17, 5154, 1407, 6810, 5238, 1388, 6064, 1072, 1191, 5557, 1083, 21, 5306, 16087, 12971, 504, 8106, 15334, 1113, 10982, 12540, 8460, 5919, 11297, 7918, 2020, 6925, 12711, 6890, 16092, 16093, 1496, 16100, 5482, 12, 5542, 8476, 5367, 16101, 7847, 2]
 // Exports: default
 
 // Module 16091 (VoiceMemberList)
 import Constants2 from "Constants" /* 1083 */;
 import FormConstants from "FormConstants" /* 1191 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5567 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5557 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import _mod8106 from "module_8106" /* 8106 */;
 import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8460 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;
@@ -23,10 +23,10 @@ import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
 import UserRecord from "UserRecord" /* 1407 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6820 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6810 */;
 import PermissionStore from "PermissionStore" /* 5238 */;
 import UserStore from "UserStore" /* 1388 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 6074 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 6064 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;
@@ -255,7 +255,7 @@ export default function VoiceMemberList(channel) {
   let obj6;
   let reduced;
   let tmp25Result2;
-  const f112766 = (user) => stateFromStoresArray.includes(user.user.id);
+  const f112780 = (user) => stateFromStoresArray.includes(user.user.id);
   channel = channel.channel;
   let flag = channel.isActionSheet;
   if (flag === undefined) {
@@ -329,8 +329,8 @@ export default function VoiceMemberList(channel) {
           str = "";
         }
         const tmp3Result = flag(tmp4[37]);
-        [arr10, arr11] = _slicedToArray(tmp3Result.partition(stateFromStores, f112766), 2);
-        const tmp15 = _slicedToArray(tmp3Result.partition(stateFromStores, f112766), 2);
+        [arr10, arr11] = _slicedToArray(tmp3Result.partition(stateFromStores, f112780), 2);
+        const tmp15 = _slicedToArray(tmp3Result.partition(stateFromStores, f112780), 2);
         if (arr10.length > 0) {
           const push = items5.push;
           const obj5 = { type: constants4.SPECTATING, title: intl.formatToPlainString(channel(tmp4[21]).t.Fb0eT9, obj6), data: arr10 };

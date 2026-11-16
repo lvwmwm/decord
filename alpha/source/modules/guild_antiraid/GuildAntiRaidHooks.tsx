@@ -1,7 +1,7 @@
 // Module ID: 11028
 // Function ID: 11029
 // Name: GuildAntiRaidHooks
-// Dependencies: [1231, 5177, 5238, 5349, 1388, 11013, 9256, 1072, 563, 11, 9255, 1084, 5243, 11029, 2]
+// Dependencies: [1231, 5177, 5238, 5339, 1388, 11013, 9256, 1072, 563, 11, 9255, 1084, 5243, 11029, 2]
 // Exports: getDisabledActions, shouldShowRaidInAppNotification, shouldShowRaidNotificationNagbar, useDisabledActions, useFirstGuildIncidentId, useGuildIncidentsState, useShowAntiRaidInGuildNotifSettings
 
 // Module 11028 (GuildAntiRaidHooks)
@@ -14,7 +14,7 @@ import GuildAntiRaidPermissionsUtils from "GuildAntiRaidPermissionsUtils" /* 110
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import GuildStore from "GuildStore" /* 5177 */;
 import PermissionStore from "PermissionStore" /* 5238 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5349 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
 import UserStore from "UserStore" /* 1388 */;
 import GuildIncidentsStore from "GuildIncidentsStore" /* 11013 */;
 import Constants from "Constants" /* 1072 */;

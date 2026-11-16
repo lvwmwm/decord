@@ -1,12 +1,12 @@
 // Module ID: 14081
 // Function ID: 14082
 // Name: openGameOrganizationJoinOutcomeModal
-// Dependencies: [12369, 6848, 14082, 2121, 2]
+// Dependencies: [12369, 6838, 14082, 2121, 2]
 // Exports: default
 
 // Module 14081 (openGameOrganizationJoinOutcomeModal)
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 12369 */;
 import size from "module_2" /* 2 */;
 

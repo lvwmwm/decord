@@ -1,14 +1,14 @@
 // Module ID: 17110
 // Function ID: 17111
 // Name: UserProfileBadgesEditButton
-// Dependencies: [32, 19, 17, 10035, 5152, 21, 5306, 575, 10078, 10076, 7918, 9560, 5139, 17111, 15273, 17115, 17099, 1113, 5929, 10113, 6020, 15276, 2]
+// Dependencies: [32, 19, 17, 10035, 5152, 21, 5306, 575, 10078, 10076, 7918, 9560, 5139, 17111, 15273, 17115, 17099, 1113, 5919, 10113, 6010, 15276, 2]
 // Exports: default
 
 // Module 17110 (UserProfileBadgesEditButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import BadgeUtils from "BadgeUtils" /* 10113 */;
 import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 15276 */;
 import openCustomizeBadgesSheet from "openCustomizeBadgesSheet" /* 17111 */;

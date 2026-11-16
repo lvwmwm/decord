@@ -1,10 +1,10 @@
-// Module ID: 6219
-// Function ID: 6220
+// Module ID: 6209
+// Function ID: 6210
 // Name: getFrontierTuningConfigIfEligible
-// Dependencies: [5177, 1072, 2110, 2174, 6220, 2]
+// Dependencies: [5177, 1072, 2110, 2174, 6210, 2]
 // Exports: default
 
-// Module 6219 (getFrontierTuningConfigIfEligible)
+// Module 6209 (getFrontierTuningConfigIfEligible)
 import Constants from "Constants" /* 1072 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 2110 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
@@ -28,7 +28,7 @@ export default function getFrontierTuningConfigIfEligible(location, currentUser,
         const tmp3 = importDefault;
         if (!obj.canStreamQuality(PremiumUtilsDefault.StreamQuality.MID, currentUser)) {
           const obj2 = { location, guildId };
-          const tmp3Result = tmp3(6220);
+          const tmp3Result = tmp3(6210);
           const config = tmp3Result.getConfig(obj2);
           let tmp6 = null;
           if (null != config.maxBitrate) {

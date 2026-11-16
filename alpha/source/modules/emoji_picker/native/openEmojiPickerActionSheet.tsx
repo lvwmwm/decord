@@ -1,13 +1,13 @@
 // Module ID: 9543
 // Function ID: 9544
 // Name: openEmojiPickerActionSheet
-// Dependencies: [1391, 9544, 5552, 9545, 2121, 2]
+// Dependencies: [1391, 9544, 5542, 9545, 2121, 2]
 // Exports: openEmojiPickerActionSheet
 
 // Module 9543 (openEmojiPickerActionSheet)
 import EmojiConstants from "EmojiConstants" /* 1391 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import emojis_EmojiActionCreators from "emojis/EmojiActionCreators" /* 9544 */;
 import size from "module_2" /* 2 */;
 

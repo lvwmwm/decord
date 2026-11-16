@@ -1,12 +1,12 @@
 // Module ID: 15154
 // Function ID: 15155
 // Name: openFavoritesGuildAddChannelModal
-// Dependencies: [10241, 15155, 2121, 6848, 2]
+// Dependencies: [10241, 15155, 2121, 6838, 2]
 // Exports: closeFavoritesGuildAddChannelModal, default
 
 // Module 15154 (openFavoritesGuildAddChannelModal)
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import showSearchableDestinationListModalDefault from "showSearchableDestinationListModal" /* 10241 */;
 import size from "module_2" /* 2 */;
 

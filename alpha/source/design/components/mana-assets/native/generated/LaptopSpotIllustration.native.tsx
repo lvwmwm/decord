@@ -1,7 +1,7 @@
 // Module ID: 15322
 // Function ID: 15323
 // Name: LaptopSpotIllustration
-// Dependencies: [19, 21, 15323, 15324, 15325, 7755, 6020, 2]
+// Dependencies: [19, 21, 15323, 15324, 15325, 7755, 6010, 2]
 // Exports: LaptopSpotIllustration
 
 // Module 15322 (LaptopSpotIllustration)

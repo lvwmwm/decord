@@ -1,7 +1,7 @@
 // Module ID: 17273
 // Function ID: 17274
 // Name: SafetyHubViolationsContainer
-// Dependencies: [32, 19, 17, 8231, 8206, 1072, 21, 5306, 575, 8451, 8160, 5929, 1113, 15459, 10560, 8205, 11, 17274, 8207, 6848, 14180, 2121, 14184, 504, 1256, 14182, 2]
+// Dependencies: [32, 19, 17, 8231, 8206, 1072, 21, 5306, 575, 8451, 8160, 5919, 1113, 15459, 10560, 8205, 11, 17274, 8207, 6838, 14180, 2121, 14184, 504, 1256, 14182, 2]
 // Exports: ConnectedSafetyHubViolationsContainer
 
 // Module 17273 (SafetyHubViolationsContainer)
@@ -10,8 +10,8 @@ import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import WarningIcon2 from "WarningIcon" /* 8160 */;
 import SafetyHubUtils from "SafetyHubUtils" /* 8205 */;
 import SafetyHubModels from "SafetyHubModels" /* 8207 */;
@@ -68,7 +68,7 @@ function SafetyHubViolationsHeader(count) {
   obj3 = { color: "active" === status ? colors.INTERACTIVE_TEXT_DEFAULT : colors.ICON_MUTED, size: "xs" };
   items = [unpackModuleId(metroRequire, obj2), , ];
   const obj4 = { style: tmp.headerTextContainer, children: items1 };
-  const Text = tmp7(5929).Text;
+  const Text = tmp7(5919).Text;
   const intl = tmp7(1113).intl;
   const formatToPlainString = intl.formatToPlainString;
   const t = tmp7(1113).t;
@@ -82,7 +82,7 @@ function SafetyHubViolationsHeader(count) {
     formatToPlainStringResult = formatToPlainString(fZAHBT, obj6);
   }
   items1 = [unpackModuleId(Text, { variant: "heading-xs/semibold", children: formatToPlainStringResult }), ];
-  const Text2 = tmp7(5929).Text;
+  const Text2 = tmp7(5919).Text;
   const intl2 = tmp7(1113).intl;
   const string = intl2.string;
   const t2 = tmp7(1113).t;
@@ -255,7 +255,7 @@ class SafetyHubViolationsContainer {
     let obj11;
     let obj9;
     let status;
-    const f115002 = (classification) => {
+    const f115016 = (classification) => {
       const obj = { classification };
       return closure_1_11(ClassificationDetail, obj, classification.id);
     };
@@ -305,9 +305,9 @@ class SafetyHubViolationsContainer {
     items3[0] = closure_11(SafetyHubViolationsHeader, obj4);
     if (opened) {
       const obj5 = { style: tmp.separator };
-      const items4 = [closure_11(stateFromStores, obj5), memo.length > 0 && memo.map(f115002), , , ];
+      const items4 = [closure_11(stateFromStores, obj5), memo.length > 0 && memo.map(f115016), , , ];
       let tmp11Result = memo.length < classifications.length;
-      memo.length > 0 && memo.map(f115002);
+      memo.length > 0 && memo.map(f115016);
       if (tmp11Result) {
         const obj6 = { children: items5 };
         const obj7 = { style: tmp.separator };
@@ -321,7 +321,7 @@ class SafetyHubViolationsContainer {
           children: closure_11(Text, obj10)
         };
         obj10 = { variant: "heading-xs/semibold", children: intl.format(classifications(1113).t["9Ml56H"], obj11) };
-        Text = tmp6(5929).Text;
+        Text = tmp6(5919).Text;
         intl = tmp6(1113).intl;
         obj11 = { nextPageSize: num };
         items5[1] = closure_11(stateFromStores, obj8);

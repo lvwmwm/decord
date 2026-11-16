@@ -1,14 +1,14 @@
-// Module ID: 6840
-// Function ID: 6841
+// Module ID: 6830
+// Function ID: 6831
 // Name: getAgeNoticeWarningDescriptions
-// Dependencies: [6841, 1113, 6842, 3353, 2]
+// Dependencies: [6831, 1113, 6832, 3353, 2]
 // Exports: getAgeNoticeServerDescriptions, getAgeNoticeWarningDescriptions
 
-// Module 6840 (getAgeNoticeWarningDescriptions)
+// Module 6830 (getAgeNoticeWarningDescriptions)
 import intl6 from "intl" /* 1113 */;
 import _modDef3353 from "module_3353" /* 3353 */;
-import AgeNoticeExperiment from "AgeNoticeExperiment" /* 6842 */;
-import AgeNoticeConstants from "AgeNoticeConstants" /* 6841 */;
+import AgeNoticeExperiment from "AgeNoticeExperiment" /* 6832 */;
+import AgeNoticeConstants from "AgeNoticeConstants" /* 6831 */;
 import size from "module_2" /* 2 */;
 
 let c3;

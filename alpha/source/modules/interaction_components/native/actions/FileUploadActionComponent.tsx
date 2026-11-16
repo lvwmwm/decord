@@ -1,15 +1,15 @@
-// Module ID: 20276
-// Function ID: 20277
+// Module ID: 20279
+// Function ID: 20280
 // Name: FileUploadActionComponent
-// Dependencies: [5, 19, 17, 5155, 8725, 1072, 21, 5306, 6762, 7443, 13317, 1113, 6376, 7930, 11124, 7988, 7549, 8658, 38, 504, 13493, 8890, 8875, 20277, 2119, 6268, 8879, 14606, 11153, 11636, 2020, 11635, 8877, 6337, 575, 7746, 2]
+// Dependencies: [5, 19, 17, 5155, 8725, 1072, 21, 5306, 6752, 7443, 13317, 1113, 6366, 7930, 11124, 7988, 7549, 8658, 38, 504, 13493, 8890, 8875, 20280, 2119, 6258, 8879, 14606, 11153, 11636, 2020, 11635, 8877, 6327, 575, 7746, 2]
 // Exports: default
 
-// Module 20276 (FileUploadActionComponent)
+// Module 20279 (FileUploadActionComponent)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
-import InteractionComponentUtils from "InteractionComponentUtils" /* 6376 */;
-import FileSizeUtils from "FileSizeUtils" /* 6762 */;
+import InteractionComponentUtils from "InteractionComponentUtils" /* 6366 */;
+import FileSizeUtils from "FileSizeUtils" /* 6752 */;
 import TableRow2 from "TableRow" /* 7443 */;
 import XSmallIcon from "XSmallIcon" /* 7549 */;
 import CircleCheckIcon from "CircleCheckIcon" /* 7930 */;

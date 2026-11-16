@@ -1,12 +1,12 @@
-// Module ID: 19004
-// Function ID: 19005
+// Module ID: 19006
+// Function ID: 19007
 // Name: WaterwheelsJoinOutcome
-// Dependencies: [1072, 6922, 2]
+// Dependencies: [1072, 6912, 2]
 // Exports: classifyWaterwheelsJoinFailure
 
-// Module 19004 (WaterwheelsJoinOutcome)
+// Module 19006 (WaterwheelsJoinOutcome)
 import Constants from "Constants" /* 1072 */;
-import JoinGuildRefusedError from "JoinGuildRefusedError" /* 6922 */;
+import JoinGuildRefusedError from "JoinGuildRefusedError" /* 6912 */;
 import size from "module_2" /* 2 */;
 
 const AbortCodes = Constants.AbortCodes;

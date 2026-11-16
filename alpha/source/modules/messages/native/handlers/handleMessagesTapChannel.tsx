@@ -1,7 +1,7 @@
 // Module ID: 12464
 // Function ID: 12465
 // Name: handleMessagesTapChannel
-// Dependencies: [5, 5159, 5173, 5155, 5177, 5238, 1072, 7230, 6922, 7657, 9355, 12465, 7262, 6048, 12502, 5956, 6900, 6935, 2]
+// Dependencies: [5, 5159, 5173, 5155, 5177, 5238, 1072, 7230, 6912, 7657, 9355, 12465, 7262, 6038, 12502, 5946, 6890, 6925, 2]
 // Exports: handleMessagesTapChannel
 
 // Module 12464 (handleMessagesTapChannel)

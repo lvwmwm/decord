@@ -1,7 +1,7 @@
 // Module ID: 10674
 // Function ID: 10675
 // Name: useGuildTagCreationUpsell
-// Dependencies: [19, 5177, 5238, 1388, 2175, 2179, 10675, 504, 12, 8409, 10676, 2110, 6767, 2]
+// Dependencies: [19, 5177, 5238, 1388, 2175, 2179, 10675, 504, 12, 8409, 10676, 2110, 6757, 2]
 // Exports: useGuildTagCreationUpsell
 
 // Module 10674 (useGuildTagCreationUpsell)

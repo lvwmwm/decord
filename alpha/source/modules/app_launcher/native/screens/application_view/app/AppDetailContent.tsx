@@ -1,7 +1,7 @@
 // Module ID: 13460
 // Function ID: 13461
 // Name: AppDetailContent
-// Dependencies: [5, 19, 17, 11406, 1501, 1072, 6345, 21, 5306, 13461, 575, 13386, 7443, 12578, 13436, 8724, 12763, 1113, 1630, 11405, 2119, 13469, 12698, 5985, 13383, 1380, 13471, 5929, 10565, 13433, 13473, 13480, 1187, 13483, 13485, 5552, 6067, 12764, 2]
+// Dependencies: [5, 19, 17, 11406, 1501, 1072, 6335, 21, 5306, 13461, 575, 13386, 7443, 12578, 13436, 8724, 12763, 1113, 1630, 11405, 2119, 13469, 12698, 5975, 13383, 1380, 13471, 5919, 10565, 13433, 13473, 13480, 1187, 13483, 13485, 5542, 6057, 12764, 2]
 // Exports: default
 
 // Module 13460 (AppDetailContent)
@@ -10,9 +10,9 @@ import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5985 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6067 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6345 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5975 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6057 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6335 */;
 import TableRow2 from "TableRow" /* 7443 */;
 import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8724 */;
 import ShopIcon from "ShopIcon" /* 10565 */;
@@ -405,7 +405,7 @@ export default function AppDetailContent(context) {
       const obj2 = { style: closure_7.monetizationDisclosureStyle, children: items };
       items = [map1(BillIcon.BillIcon, { size: "sm", color: "icon-muted" }), ];
       const obj3 = { style: closure_7.monetizationDisclosureTextStyle, variant: "body-xs/normal", color: "text-subtle", lineClamp: 1, children: intl.string(intl3.t["5khEk8"]) };
-      const Text = tmp(5929).Text;
+      const Text = tmp(5919).Text;
       intl = tmp(1113).intl;
       items[1] = map1(Text, obj3);
       tmp6 = gesture(View, obj2);
@@ -415,7 +415,7 @@ export default function AppDetailContent(context) {
       const obj4 = { style: closure_7.monetizationDisclosureStyle, children: items1 };
       items1 = [map1(ShopIcon.ShopIcon, { size: "sm", color: "icon-muted" }), ];
       const obj5 = { style: closure_7.monetizationDisclosureTextStyle, variant: "body-xs/normal", color: "text-subtle", lineClamp: 1, children: intl2.string(intl3.t["8z5B2U"]) };
-      const Text2 = tmp(5929).Text;
+      const Text2 = tmp(5919).Text;
       intl2 = tmp(1113).intl;
       items1[1] = map1(Text2, obj5);
       tmp11 = gesture(View, obj4);

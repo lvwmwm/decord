@@ -1,14 +1,14 @@
-// Module ID: 18152
-// Function ID: 18153
+// Module ID: 18154
+// Function ID: 18155
 // Name: SummaryReminderNotificationSetting
-// Dependencies: [9202, 18153, 12406, 1113, 5131, 18154, 2]
+// Dependencies: [9202, 18155, 12406, 1113, 5131, 18156, 2]
 
-// Module 18152 (SummaryReminderNotificationSetting)
+// Module 18154 (SummaryReminderNotificationSetting)
 import intl2 from "intl" /* 1113 */;
 import UserSettings from "UserSettings" /* 5131 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;
-import SummaryReminderNotificationExperiment from "SummaryReminderNotificationExperiment" /* 18153 */;
-import SummaryReminderNotificationUtils from "SummaryReminderNotificationUtils" /* 18154 */;
+import SummaryReminderNotificationExperiment from "SummaryReminderNotificationExperiment" /* 18155 */;
+import SummaryReminderNotificationUtils from "SummaryReminderNotificationUtils" /* 18156 */;
 import SettingBuilders from "SettingBuilders" /* 12406 */;
 import size from "module_2" /* 2 */;
 

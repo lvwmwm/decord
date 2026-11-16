@@ -1,13 +1,13 @@
 // Module ID: 12262
 // Function ID: 12263
 // Name: UserProfileApplicationWidgetBottomProgressLayout
-// Dependencies: [19, 17, 21, 5306, 575, 12255, 12149, 6020, 12256, 5929, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 12255, 12149, 6010, 12256, 5919, 2]
 // Exports: default
 
 // Module 12262 (UserProfileApplicationWidgetBottomProgressLayout)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import _mod12149 from "module_12149" /* 12149 */;
 import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 12255 */;
 import react from "react" /* 19 */;
@@ -125,14 +125,14 @@ export default function UserProfileApplicationWidgetBottomProgressLayout(arg0) {
   const obj12 = { style: tmp.textLeft, children: items6 };
   if ("value" === singleStringOrSkeleton.status) {
     const obj13 = { variant: "heading-xs/medium", lineClamp: 2, style: emojiOverflowStyle, children: singleStringOrSkeleton.text };
-    tmp17Result = tmp17(tmp2(5929).Text, obj13);
+    tmp17Result = tmp17(tmp2(5919).Text, obj13);
   } else {
     tmp17Result = tmp17(tmp2(12256).TextSkeleton, { variant: "heading-xs/medium" });
   }
   items6 = [tmp17Result, ];
   if ("value" === singleStringOrSkeleton1.status) {
     const obj14 = { variant: "body-xs/medium", color: "text-subtle", lineClamp: 2, style: emojiOverflowStyle1, children: singleStringOrSkeleton1.text };
-    tmp17Result3 = tmp17(tmp2(5929).Text, obj14);
+    tmp17Result3 = tmp17(tmp2(5919).Text, obj14);
   } else {
     tmp17Result3 = tmp17(tmp2(12256).TextSkeleton, { variant: "body-xs/medium" });
   }
@@ -140,7 +140,7 @@ export default function UserProfileApplicationWidgetBottomProgressLayout(arg0) {
   items7 = [hasOwnProperty(View, obj12), ];
   if (null != iter) {
     const obj15 = { variant: "body-sm/medium", lineClamp: 1, style: tmp.progressText, children: combined };
-    const Text = tmp2(5929).Text;
+    const Text = tmp2(5919).Text;
     if (null != iter2) {
       const _HermesInternal2 = HermesInternal;
       combined = "" + iter.value + "/" + iter2.value;

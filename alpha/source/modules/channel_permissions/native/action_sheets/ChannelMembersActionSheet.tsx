@@ -1,7 +1,7 @@
 // Module ID: 12559
 // Function ID: 12560
 // Name: ChannelMembersActionSheet
-// Dependencies: [19, 17, 5155, 5218, 5212, 5177, 5238, 1072, 21, 5306, 575, 1630, 504, 1502, 5954, 12560, 8131, 1113, 5566, 7913, 7428, 5552, 10919, 12561, 10569, 8108, 12558, 10981, 8159, 5570, 8172, 5929, 2]
+// Dependencies: [19, 17, 5155, 5218, 5212, 5177, 5238, 1072, 21, 5306, 575, 1630, 504, 1502, 5944, 12560, 8131, 1113, 5556, 7913, 7428, 5542, 10919, 12561, 10569, 8108, 12558, 10981, 8159, 5560, 8172, 5919, 2]
 // Exports: default
 
 // Module 12559 (ChannelMembersActionSheet)
@@ -11,9 +11,9 @@ import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
 import useNavigation from "useNavigation" /* 1502 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import useChannelNameDefault from "useChannelName" /* 5954 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import useChannelNameDefault from "useChannelName" /* 5944 */;
 import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 8131 */;
 import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 8172 */;
 import SettingsIcon from "SettingsIcon" /* 10569 */;
@@ -132,7 +132,7 @@ export default function ChannelMembersActionSheet(arg0) {
         const obj7 = { title: intl5.string(intl7.t["9Oq93m"]), data: existingMembersRows };
         intl5 = tmp5(1113).intl;
         push2(obj7);
-        const BottomSheet = tmp5(5566).BottomSheet;
+        const BottomSheet = tmp5(5556).BottomSheet;
         const obj8 = { title: intl6.string(intl7.t.ES4CC6), subtitle: "#" + tmp9, trailing: tmp32Result };
         const BottomSheetTitleHeader = tmp5(7913).BottomSheetTitleHeader;
         intl6 = tmp5(1113).intl;
@@ -205,7 +205,7 @@ export default function ChannelMembersActionSheet(arg0) {
           stickySectionHeadersEnabled: false
         };
         obj16 = { paddingBottom: tmp4.bottom + nativeDefault.space.PX_16 };
-        const BottomSheetSectionList = tmp5(5570).BottomSheetSectionList;
+        const BottomSheetSectionList = tmp5(5560).BottomSheetSectionList;
         items6[1] = closure_11(BottomSheetSectionList, obj15);
         return closure_11(BottomSheet, obj10);
       }

@@ -1,12 +1,12 @@
 // Module ID: 12334
 // Function ID: 12335
 // Name: usePinotMemberCoachmark
-// Dependencies: [32, 19, 12335, 12330, 9560, 5139, 12338, 5348, 2]
+// Dependencies: [32, 19, 12335, 12330, 9560, 5139, 12338, 5338, 2]
 // Exports: useIsPinotMemberCoachmarkPending, usePinotMemberCoachmark
 
 // Module 12334 (usePinotMemberCoachmark)
 import dismissible_content from "dismissible_content" /* 5139 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5348 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5338 */;
 import useIsPinotMemberCoachmarkEligible from "useIsPinotMemberCoachmarkEligible" /* 12335 */;
 import PinotMemberNoticeActionCreators from "PinotMemberNoticeActionCreators" /* 12338 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

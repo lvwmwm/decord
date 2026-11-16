@@ -1,7 +1,7 @@
 // Module ID: 16049
 // Function ID: 16050
 // Name: SubscribeModalSuccessAlert
-// Dependencies: [32, 19, 17, 5177, 9435, 21, 5306, 575, 16050, 16051, 504, 5547, 6340, 1113, 6269, 6952, 5893, 1092, 6020, 5313, 16052, 16053, 5929, 2]
+// Dependencies: [32, 19, 17, 5177, 9435, 21, 5306, 575, 16050, 16051, 504, 5537, 6330, 1113, 6259, 6942, 5883, 1092, 6010, 5313, 16052, 16053, 5919, 2]
 // Exports: default
 
 // Module 16049 (SubscribeModalSuccessAlert)
@@ -11,10 +11,10 @@ import nativeDefault from "native" /* 575 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
 import intl4 from "intl" /* 1113 */;
 import shared from "shared" /* 5313 */;
-import useThemeDefault from "useTheme" /* 5547 */;
-import LinearGradientDefault from "LinearGradient" /* 5893 */;
-import FastImageDefault from "FastImage" /* 6020 */;
-import AlertDefault from "Alert" /* 6340 */;
+import useThemeDefault from "useTheme" /* 5537 */;
+import LinearGradientDefault from "LinearGradient" /* 5883 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import AlertDefault from "Alert" /* 6330 */;
 import ColorConstants from "ColorConstants" /* 9435 */;
 import SequencedLottieAnimationViewDefault from "SequencedLottieAnimationView" /* 16050 */;
 import _mod16051 from "module_16051" /* 16051 */;
@@ -134,7 +134,7 @@ export default function SubscribeModalSuccessAlert(arg0) {
   const items2 = [closure_8(tmp16, obj4), ];
   const obj7 = { style: tmp.successInfo, children: items3 };
   const obj8 = { style: tmp.text, variant: "body-sm/medium", children: stringResult };
-  const Text = tmp2(5929).Text;
+  const Text = tmp2(5919).Text;
   const intl2 = tmp2(1113).intl;
   const string = intl2.string;
   const t = tmp2(1113).t;
@@ -146,7 +146,7 @@ export default function SubscribeModalSuccessAlert(arg0) {
   const obj9 = { children: items2 };
   items3 = [closure_8(Text, obj8), ];
   const obj10 = { style: tmp.text, variant: "body-sm/medium", children: intl3.format(intl4.t.r0IGsP, obj11) };
-  const Text2 = tmp2(5929).Text;
+  const Text2 = tmp2(5919).Text;
   intl3 = tmp2(1113).intl;
   obj11 = { guildName: stateFromStores.name, guildSubscriptionQuantity: num };
   items3[1] = closure_8(Text2, obj10);

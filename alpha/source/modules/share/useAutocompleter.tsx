@@ -1,7 +1,7 @@
 // Module ID: 10574
 // Function ID: 10575
 // Name: useAutocompleter
-// Dependencies: [32, 19, 5917, 10247, 2]
+// Dependencies: [32, 19, 5907, 10247, 2]
 // Exports: default
 
 // Module 10574 (useAutocompleter)
@@ -25,7 +25,7 @@ export default function useAutocompleter(searchOptions) {
   _slicedToArray = undefined;
   let tmp = _slicedToArray(react.useState({ results: [], query: "" }), 2);
   [tmp2, c1] = tmp;
-  const tmp3 = searchOptions(5917)(() => {
+  const tmp3 = searchOptions(5907)(() => {
     let obj = new _modDef10247((results, query) => {
       const obj = { results, query };
       closure_1_1(obj);
@@ -48,13 +48,13 @@ export default function useAutocompleter(searchOptions) {
     search: react.useCallback((arg0) => {
       let query;
       let resultTypes;
-      const f142216 = (item) => resultTypes2.has(item);
+      const f142233 = (item) => resultTypes2.has(item);
       ({ query, resultTypes } = arg0);
       let tmp = null != options.resultTypes;
       if (tmp) {
         const resultTypes2 = obj.resultTypes;
-        tmp = resultTypes.length === resultTypes2.size && resultTypes.every(f142216);
-        resultTypes.length === resultTypes2.size && resultTypes.every(f142216);
+        tmp = resultTypes.length === resultTypes2.size && resultTypes.every(f142233);
+        resultTypes.length === resultTypes2.size && resultTypes.every(f142233);
       }
       if (!tmp) {
         options.setResultTypes(resultTypes);

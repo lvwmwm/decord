@@ -1,12 +1,12 @@
 // Module ID: 10931
 // Function ID: 10932
 // Name: guild_instant_invites/InstantInviteUtils
-// Dependencies: [5, 5155, 1388, 1072, 1113, 10922, 10932, 10230, 8475, 7943, 6014, 8460, 7660, 6015, 2]
+// Dependencies: [5, 5155, 1388, 1072, 1113, 10922, 10932, 10230, 8475, 7943, 6004, 8460, 7660, 6005, 2]
 // Exports: useInviteActions
 
 // Module 10931 (guild_instant_invites/InstantInviteUtils)
 import Constants from "Constants" /* 1072 */;
-import ToastUtils from "ToastUtils" /* 6014 */;
+import ToastUtils from "ToastUtils" /* 6004 */;
 import ClipboardUtils from "ClipboardUtils" /* 7943 */;
 import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8460 */;
 import getInviteURLDefault from "getInviteURL" /* 8475 */;

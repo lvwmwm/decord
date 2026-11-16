@@ -1,14 +1,14 @@
 // Module ID: 15312
 // Function ID: 15313
 // Name: RewardGrantNotice
-// Dependencies: [19, 17, 15291, 21, 5306, 575, 15293, 10043, 5929, 1113, 7897, 2]
+// Dependencies: [19, 17, 15291, 21, 5306, 575, 15293, 10043, 5919, 1113, 7897, 2]
 // Exports: default
 
 // Module 15312 (RewardGrantNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import CheckmarkSmallIcon2 from "CheckmarkSmallIcon" /* 7897 */;
 import BalanceWidgetPill from "BalanceWidgetPill" /* 10043 */;
 import PremiumReferralIncentivesExperiment from "PremiumReferralIncentivesExperiment" /* 15293 */;

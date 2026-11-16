@@ -1,7 +1,7 @@
 // Module ID: 14120
 // Function ID: 14121
 // Name: ConnectionsRoleMessageBadgeActionSheet
-// Dependencies: [32, 19, 17, 1407, 502, 5218, 5212, 5177, 14121, 7423, 1072, 21, 5306, 575, 1113, 7467, 7738, 5929, 5547, 12, 5902, 7087, 12483, 10870, 1187, 1414, 5313, 38, 7918, 7937, 504, 1256, 6067, 6917, 5566, 7957, 5936, 5552, 12487, 8476, 2]
+// Dependencies: [32, 19, 17, 1407, 502, 5218, 5212, 5177, 14121, 7423, 1072, 21, 5306, 575, 1113, 7467, 7738, 5919, 5537, 12, 5892, 7087, 12483, 10870, 1187, 1414, 5313, 38, 7918, 7937, 504, 1256, 6057, 6907, 5556, 7957, 5926, 5542, 12487, 8476, 2]
 // Exports: default
 
 // Module 14120 (ConnectionsRoleMessageBadgeActionSheet)
@@ -12,11 +12,11 @@ import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import AvatarUtils from "AvatarUtils" /* 1414 */;
 import shared from "shared" /* 5313 */;
-import useThemeDefault from "useTheme" /* 5547 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6067 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6917 */;
+import useThemeDefault from "useTheme" /* 5537 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6057 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6907 */;
 import PlatformsDefault from "Platforms" /* 7087 */;
 import Constants2 from "Constants" /* 7423 */;
 import ConnectionsUtils from "ConnectionsUtils" /* 7467 */;
@@ -119,7 +119,7 @@ class PopoutChecks {
     let c3 = groupByResult;
     const keys = Object.keys(groupByResult);
     let closure_4 = keys.length - 1;
-    let obj2 = guildId(5902);
+    let obj2 = guildId(5892);
     const roleColor = obj2.useToken(nativeDefault.unsafe_rawColors.GREEN_330);
     let obj3 = {
       children: keys.map(function(item, index) {
@@ -184,13 +184,13 @@ class PopoutChecks {
         items1 = [tmp22Result, , , ];
         let tmp25 = null;
         if (null != tmp7) {
-          const obj7 = { style: closure_1.popoutCheckGroupPlatformIcon, user: tmp7, size: native.AvatarSizes.XSMALL, guildId: "Path" };
+          const obj7 = { style: closure_1.popoutCheckGroupPlatformIcon, user: tmp7, size: native.AvatarSizes.XSMALL, guildId: "Array" };
           const Avatar = tmp9(1187).Avatar;
           tmp25 = authStore3(Avatar, obj7);
         }
         items1[1] = tmp25;
         let name;
-        const Text = tmp9(5929).Text;
+        const Text = tmp9(5919).Text;
         const tmp27 = authStore3;
         if (value != null) {
           name = value.name;

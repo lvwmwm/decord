@@ -1,21 +1,21 @@
-// Module ID: 18655
-// Function ID: 18656
+// Module ID: 18657
+// Function ID: 18658
 // Name: AccountSwitcherListItem
-// Dependencies: [19, 17, 1407, 5373, 1388, 14829, 21, 5306, 504, 7930, 575, 6037, 5929, 1113, 7428, 5378, 1187, 5372, 2]
+// Dependencies: [19, 17, 1407, 5363, 1388, 14829, 21, 5306, 504, 7930, 575, 6027, 5919, 1113, 7428, 5368, 1187, 5362, 2]
 // Exports: default
 
-// Module 18655 (AccountSwitcherListItem)
+// Module 18657 (AccountSwitcherListItem)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import UserUtilsDefault from "UserUtils" /* 5372 */;
-import react_native from "react-native" /* 5378 */;
+import UserUtilsDefault from "UserUtils" /* 5362 */;
+import react_native from "react-native" /* 5368 */;
 import MultiAccountStore from "MultiAccountStore" /* 14829 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import UserRecord from "UserRecord" /* 1407 */;
-import StreamerModeStore from "StreamerModeStore" /* 5373 */;
+import StreamerModeStore from "StreamerModeStore" /* 5363 */;
 import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;
@@ -46,7 +46,7 @@ class AccountStatusIcon {
       tmp6 = null;
       if (user.tokenStatus === MultiAccountTokenStatus.INVALID) {
         const obj3 = { color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
-        const CircleInformationIcon = tmp(6037).CircleInformationIcon;
+        const CircleInformationIcon = tmp(6027).CircleInformationIcon;
         tmp6 = React4(CircleInformationIcon, obj3);
       }
     }
@@ -101,7 +101,7 @@ export default function AccountSwitcherListItem(arg0) {
     let PressableOpacity;
     if (showActiveAccountLabel) {
       const obj4 = { variant: "body-sm/semibold", color: "text-brand", children: intl.string(intl4.t.seV8yt) };
-      const Text = tmp2(5929).Text;
+      const Text = tmp2(5919).Text;
       intl = tmp2(1113).intl;
       tmp8 = React4(Text, obj4);
     }
@@ -128,7 +128,7 @@ export default function AccountSwitcherListItem(arg0) {
     const obj10 = { style: tmp.accountListTag, children: items5 };
     const obj11 = { style: tmp.tagContainer, children: items4 };
     const obj12 = { variant: "body-md/semibold", color: "text-default", style: tmp.username, lineClamp: 1, children: getUserTag(obj3, obj13) };
-    const Text2 = tmp2(5929).Text;
+    const Text2 = tmp2(5919).Text;
     let str = "always";
     getUserTag = UserUtilsDefault.getUserTag;
     UserUtilsDefault;
@@ -141,7 +141,7 @@ export default function AccountSwitcherListItem(arg0) {
     if (tmp18Result) {
       const _HermesInternal = HermesInternal;
       const obj14 = { variant: "body-md/normal", color: "text-muted", children: "#" + obj3.discriminator };
-      const Text3 = tmp2(5929).Text;
+      const Text3 = tmp2(5919).Text;
       tmp18Result = tmp18(Text3, obj14);
     }
     items4[1] = tmp18Result;
@@ -158,7 +158,7 @@ export default function AccountSwitcherListItem(arg0) {
   tmp8 = null;
   if (user.tokenStatus === MultiAccountTokenStatus.INVALID) {
     const obj16 = { variant: "body-sm/semibold", color: "text-feedback-critical", children: intl3.string(intl4.t.tYX2ps) };
-    const Text4 = tmp2(5929).Text;
+    const Text4 = tmp2(5919).Text;
     intl3 = tmp2(1113).intl;
     tmp8 = React4(Text4, obj16);
   }

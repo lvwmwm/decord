@@ -1,7 +1,7 @@
 // Module ID: 16054
 // Function ID: 16055
 // Name: HoldingGemSpotIllustration
-// Dependencies: [19, 21, 16055, 16056, 16057, 7755, 6020, 2]
+// Dependencies: [19, 21, 16055, 16056, 16057, 7755, 6010, 2]
 // Exports: HoldingGemSpotIllustration
 
 // Module 16054 (HoldingGemSpotIllustration)

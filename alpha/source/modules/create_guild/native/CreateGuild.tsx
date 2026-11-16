@@ -1,14 +1,14 @@
 // Module ID: 14733
 // Function ID: 14734
 // Name: CreateGuild
-// Dependencies: [19, 17, 1388, 1072, 21, 5306, 575, 5568, 6331, 6337, 5929, 1113, 14051, 7619, 7954, 5936, 7649, 2]
+// Dependencies: [19, 17, 1388, 1072, 21, 5306, 575, 5558, 6321, 6327, 5919, 1113, 14051, 7619, 7954, 5926, 7649, 2]
 // Exports: default
 
 // Module 14733 (CreateGuild)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import react_native2 from "react-native" /* 6331 */;
+import react_native2 from "react-native" /* 6321 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
@@ -60,7 +60,7 @@ export default function CreateGuild(arg0) {
     isStaffResult = currentUser.isStaff();
   }
   const tmp3 = !isStaffResult;
-  let obj2 = isScreenReaderEnabled(5568);
+  let obj2 = isScreenReaderEnabled(5558);
   isScreenReaderEnabled = obj2.useIsScreenReaderEnabled();
   ref = react.useRef(null);
   const items = [isScreenReaderEnabled];
@@ -73,9 +73,9 @@ export default function CreateGuild(arg0) {
     }
   }, items);
   let obj = { style: tmp.flex, contentInset: { top: 0 }, automaticallyAdjustContentInsets: false, keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, contentContainerStyle: tmp.contentContainer, children: tmp11(Stack, { children: items1 }) };
-  Stack = isScreenReaderEnabled(6337).Stack;
+  Stack = isScreenReaderEnabled(6327).Stack;
   const obj3 = { ref, style: tmp.header, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: customTitle };
-  const Text = isScreenReaderEnabled(5929).Text;
+  const Text = isScreenReaderEnabled(5919).Text;
   const tmp10 = ScrollView;
   tmp11 = closure_8;
   if (customTitle == null) {
@@ -84,7 +84,7 @@ export default function CreateGuild(arg0) {
   }
   items1 = [closure_7(Text, obj3), , , , , , , ];
   const obj4 = { style: tmp.description, variant: "body-sm/medium", color: "text-default", children: customDescription };
-  const Text2 = tmp4(5929).Text;
+  const Text2 = tmp4(5919).Text;
   if (customDescription == null) {
     const intl2 = tmp4(1113).intl;
     customDescription = intl2.string(tmp4(1113).t["/k/L/j"]);
@@ -113,12 +113,12 @@ export default function CreateGuild(arg0) {
   }
   items1[4] = tmp9Result;
   const obj8 = { style: tmp.hint, variant: "body-xs/medium", color: "text-muted", children: intl5.format(isScreenReaderEnabled(1113).t["2bprXx"], obj9) };
-  const Text3 = tmp4(5929).Text;
+  const Text3 = tmp4(5919).Text;
   intl5 = tmp4(1113).intl;
   obj9 = { guidelinesURL: MarketingURLs.GUIDELINES };
   items1[5] = closure_7(Text3, obj8);
   const obj10 = { disabled: "" === guild.name, size: "md", grow: true, text: customButtonLabel, onPress: onCreate, loading: submitting };
-  const Button = tmp4(5936).Button;
+  const Button = tmp4(5926).Button;
   if (customButtonLabel == null) {
     const intl6 = tmp4(1113).intl;
     customButtonLabel = intl6.string(tmp4(1113).t["O0p/lS"]);

@@ -1,7 +1,7 @@
 // Module ID: 9974
 // Function ID: 9975
 // Name: SubscriptionAccountHoldNotice
-// Dependencies: [19, 17, 1072, 21, 5306, 575, 1187, 9975, 5929, 1113, 2174, 5936, 2]
+// Dependencies: [19, 17, 1072, 21, 5306, 575, 1187, 9975, 5919, 1113, 2174, 5926, 2]
 // Exports: default
 
 // Module 9974 (SubscriptionAccountHoldNotice)
@@ -46,7 +46,7 @@ export default function SubscriptionAccountHoldNotice(subscription) {
     const Icon = subscription(1187).Icon;
     items = [closure_6(Icon, obj3), ];
     const obj4 = { style: tmp.text, variant: "body-sm/medium", children: format(v7I21Iz, obj5) };
-    const Text = subscription(5929).Text;
+    const Text = subscription(5919).Text;
     const intl = subscription(1113).intl;
     format = intl.format;
     obj5 = { endDate: subscription.currentPeriodEnd, planDescription: obj6.getDisplayName(subscription.planId) };
@@ -63,7 +63,7 @@ export default function SubscriptionAccountHoldNotice(subscription) {
           return c3(obj.getExternalSubscriptionMethodUrl(subscription.paymentGateway, "PAYMENT_SOURCE_MANAGEMENT"));
         }
     };
-    const Button = subscription(5936).Button;
+    const Button = subscription(5926).Button;
     intl2 = subscription(1113).intl;
     items1[1] = closure_6(Button, obj7);
     tmp2 = closure_7(closure_4, obj);

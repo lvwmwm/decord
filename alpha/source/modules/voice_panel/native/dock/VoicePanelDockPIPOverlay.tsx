@@ -1,18 +1,18 @@
-// Module ID: 20053
-// Function ID: 20054
+// Module ID: 20055
+// Function ID: 20056
 // Name: VoicePanelDockPIPOverlay
-// Dependencies: [32, 19, 17, 1388, 6075, 21, 5306, 575, 5942, 13060, 6096, 6233, 7722, 15761, 1113, 19944, 9485, 11984, 1655, 5548, 1708, 504, 1187, 9516, 7549, 20054, 7432, 3253, 17579, 2]
+// Dependencies: [32, 19, 17, 1388, 6065, 21, 5306, 575, 5932, 13060, 6086, 6223, 7722, 15761, 1113, 19946, 9485, 11984, 1655, 5538, 1708, 504, 1187, 9516, 7549, 20056, 7432, 3253, 17579, 2]
 
-// Module 20053 (VoicePanelDockPIPOverlay)
+// Module 20055 (VoicePanelDockPIPOverlay)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import timing_timing from "timing/timing" /* 5548 */;
-import ButtonConstants from "ButtonConstants" /* 5942 */;
-import Constants from "Constants" /* 6075 */;
-import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 6233 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import ButtonConstants from "ButtonConstants" /* 5932 */;
+import Constants from "Constants" /* 6065 */;
+import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 6223 */;
 import NativeViewDefault from "NativeView" /* 7722 */;
 import useMuteAwareLocalVolumeDefault from "useMuteAwareLocalVolume" /* 13060 */;
-import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 19944 */;
+import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 19946 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;
@@ -43,7 +43,7 @@ function StreamVolumeSlider(arg0) {
   ({ ownerId, onSubmit } = arg0);
   const tmp = closure_12();
   const tmp2 = useMuteAwareLocalVolumeDefault;
-  const tmp2Result = tmp2(ownerId, handleVolumeChange(6096).MediaEngineContextTypes.STREAM);
+  const tmp2Result = tmp2(ownerId, handleVolumeChange(6086).MediaEngineContextTypes.STREAM);
   handleVolumeChange = tmp2Result.handleVolumeChange;
   const items = [handleVolumeChange];
   const effectiveVolume = tmp2Result.effectiveVolume;
@@ -64,7 +64,7 @@ function StreamVolumeSlider(arg0) {
   };
   const tmp5 = NativeViewDefault;
   Slider = handleVolumeChange(15761).Slider;
-  obj4 = handleVolumeChange(6233);
+  obj4 = handleVolumeChange(6223);
   intl = handleVolumeChange(1113).intl;
   items1 = [closure_7(tmp5, obj2), ];
   const obj5 = { icon: closure_7(handleVolumeChange(9485).CheckmarkLargeBoldIcon, { size: "sm" }), onPress: onSubmit, accessibilityLabel: intl2.string(handleVolumeChange(1113).t["cY+Oob"]) };
@@ -227,11 +227,11 @@ const memoResult = react.memo(function VoicePanelDockPIPOverlay(ownerId) {
     }
     const obj7 = { pointerEvents: "none", children: tmp22Result };
     items6 = [closure_7(tmp2Result6, obj7), ];
-    const tmp2Result7 = tmp2(19944);
+    const tmp2Result7 = tmp2(19946);
     if ("video" === kind) {
       ScreenXIcon = tmp12(7549).XSmallIcon;
     } else {
-      ScreenXIcon = tmp12(20054).ScreenXIcon;
+      ScreenXIcon = tmp12(20056).ScreenXIcon;
     }
     const obj8 = { icon: closure_7(ScreenXIcon, { size: "sm" }), onPress: onStopWatching, accessibilityLabel: stringResult };
     const intl = tmp12(1113).intl;
@@ -256,7 +256,7 @@ const memoResult = react.memo(function VoicePanelDockPIPOverlay(ownerId) {
     let tmp22Result3 = null;
     if ("video" !== kind) {
       const obj10 = { icon: closure_7(ownerId(7432).VoiceNormalIcon, { size: "sm" }), onPress: onToggleVolume, accessibilityLabel: string2Result };
-      const tmp2Result9 = tmp2(19944);
+      const tmp2Result9 = tmp2(19946);
       const intl2 = tmp12(1113).intl;
       const string2 = intl2.string;
       if ("video" !== kind && null != ownerId && tmp8 === tmp4.VOLUME) {
@@ -286,7 +286,7 @@ const memoResult = react.memo(function VoicePanelDockPIPOverlay(ownerId) {
       return closure_9(View, obj4);
     }
     const obj12 = { icon: closure_7(ownerId(17579).FullscreenEnterIcon, { size: "sm" }), onPress: onOpenCall, accessibilityLabel: intl3.string(tmp2(3253).MPtef8) };
-    const tmp2Result10 = tmp2(19944);
+    const tmp2Result10 = tmp2(19946);
     intl3 = tmp12(1113).intl;
     tmp22Result4 = tmp22(tmp2Result10, obj12);
   }

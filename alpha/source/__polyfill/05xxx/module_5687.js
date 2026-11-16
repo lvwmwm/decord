@@ -1,37 +1,22 @@
 // Module ID: 5687
 // Function ID: 5688
-// Dependencies: [5669, 5688, 5642, 5690]
-// Exports: useGestureCallbacks
+// Dependencies: [5659, 5676, 5650]
+// Exports: useManualGesture
 
 // Module 5687
-import _mod5669 from "module_5669" /* 5669 */;
-import react from "react" /* 5688 */;
-import useReanimatedEventHandler from "useReanimatedEventHandler" /* 5690 */;
+import ComposedGestureName from "ComposedGestureName" /* 5650 */;
+import _mod5659 from "module_5659" /* 5659 */;
+import _mod5676 from "module_5676" /* 5676 */;
 
 let closure_2 = {};
 
-export function useGestureCallbacks(arg0, disableReanimated) {
-  const obj = _mod5669;
-  const memoizedGestureCallbacks = obj.useMemoizedGestureCallbacks(disableReanimated);
-  let reanimatedEventHandler;
-  const obj2 = react;
-  const jsEventHandler = obj2.useGestureEventHandler(arg0, memoizedGestureCallbacks, disableReanimated);
-  if (!disableReanimated.disableReanimated) {
-    let tmp6 = memoizedGestureCallbacks;
-    if (true === disableReanimated.runOnJS) {
-      tmp6 = closure_2;
-    }
-    const Reanimated = tmp(5642).Reanimated;
-    let handler;
-    if (Reanimated != null) {
-      handler = Reanimated.useHandler(tmp6);
-    }
-    const tmpResult = useReanimatedEventHandler;
-    reanimatedEventHandler = tmpResult.useReanimatedEventHandler(arg0, tmp6, handler, disableReanimated.changeEventCalculator, disableReanimated.fillInDefaultValues);
+export function useManualGesture(gestureHandlerProps) {
+  let tmp = gestureHandlerProps;
+  if (gestureHandlerProps === undefined) {
+    tmp = closure_2;
   }
-  let animatedEventHandler;
-  if (disableReanimated.dispatchesAnimatedEvents) {
-    animatedEventHandler = disableReanimated.onUpdate;
-  }
-  return { jsEventHandler, reanimatedEventHandler, animatedEventHandler };
+  const obj = _mod5659;
+  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp);
+  const obj2 = _mod5676;
+  return obj2.useGesture(ComposedGestureName.SingleGestureName.Manual, clonedAndRemappedConfig);
 }

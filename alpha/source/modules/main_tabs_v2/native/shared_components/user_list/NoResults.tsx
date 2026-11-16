@@ -1,11 +1,11 @@
 // Module ID: 11788
 // Function ID: 11789
 // Name: NoResults
-// Dependencies: [19, 17, 21, 5306, 5929, 2]
+// Dependencies: [19, 17, 21, 5306, 5919, 2]
 // Exports: default
 
 // Module 11788 (NoResults)
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

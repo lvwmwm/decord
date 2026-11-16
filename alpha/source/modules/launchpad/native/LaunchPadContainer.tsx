@@ -1,18 +1,18 @@
-// Module ID: 19858
-// Function ID: 19859
+// Module ID: 19860
+// Function ID: 19861
 // Name: LaunchPadContainer
-// Dependencies: [19, 17, 12402, 21, 5306, 12403, 19859, 11253, 19861, 13809, 1655, 5939, 5498, 18720, 5598, 19862, 2]
+// Dependencies: [19, 17, 12402, 21, 5306, 12403, 19861, 11253, 19863, 13809, 1655, 5929, 5488, 18722, 5588, 19864, 2]
 // Exports: default
 
-// Module 19858 (LaunchPadContainer)
+// Module 19860 (LaunchPadContainer)
 import _mod1655 from "module_1655" /* 1655 */;
-import spring_spring from "spring/spring" /* 5939 */;
+import spring_spring from "spring/spring" /* 5929 */;
 import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 11253 */;
 import useLaunchPadTypeDefault from "useLaunchPadType" /* 12403 */;
 import useWindowDimensionsSharedValueDefault from "useWindowDimensionsSharedValue" /* 13809 */;
-import useLaunchPadStateDefault from "useLaunchPadState" /* 19859 */;
-import useLaunchPadGestureDefault from "useLaunchPadGesture" /* 19861 */;
-import LaunchPadWrapperDefault from "LaunchPadWrapper" /* 19862 */;
+import useLaunchPadStateDefault from "useLaunchPadState" /* 19861 */;
+import useLaunchPadGestureDefault from "useLaunchPadGesture" /* 19863 */;
+import LaunchPadWrapperDefault from "LaunchPadWrapper" /* 19864 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import LaunchPadConstants from "LaunchPadConstants" /* 12402 */;
@@ -151,13 +151,13 @@ export default function LaunchPadContainer(children) {
   LaunchPadContainerTsx3.__workletHash = 13015105508497;
   LaunchPadContainerTsx3.__initData = tmp16;
   const animatedStyle = useAnimatedStyle(LaunchPadContainerTsx3);
-  const MobileHomeDrawerExperiment = tmp9(5498).MobileHomeDrawerExperiment;
+  const MobileHomeDrawerExperiment = tmp9(5488).MobileHomeDrawerExperiment;
   const enableHome = MobileHomeDrawerExperiment.useConfig({ location: "guilds" }).enableHome;
   let obj2 = { value: gestureRef, children: metroRequire(GestureDetector, obj3) };
-  const Provider = tmp2(18720).Provider;
+  const Provider = tmp2(18722).Provider;
   obj3 = { gesture, children: tmp24(tmp25, obj4) };
   obj4 = { style: tmp.wrapper, children: items7 };
-  GestureDetector = tmp9(5598).GestureDetector;
+  GestureDetector = tmp9(5588).GestureDetector;
   const obj5 = { style: items6, pointerEvents: str2, accessibilityElementsHidden: tmp6, importantForAccessibility: str, children };
   items6 = [tmp.container, animatedStyle];
   str = "auto";

@@ -1,17 +1,17 @@
 // Module ID: 13065
 // Function ID: 13066
 // Name: ChannelCallSingleController
-// Dependencies: [19, 6820, 502, 1072, 5983, 21, 1256, 6067, 504, 13066, 13068, 13069, 2]
+// Dependencies: [19, 6810, 502, 1072, 5973, 21, 1256, 6057, 504, 13066, 13068, 13069, 2]
 // Exports: ChannelCallSingleController
 
 // Module 13065 (ChannelCallSingleController)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import CallConstants from "CallConstants" /* 5983 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6067 */;
+import CallConstants from "CallConstants" /* 5973 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6057 */;
 import react from "react" /* 19 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6820 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6810 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
 

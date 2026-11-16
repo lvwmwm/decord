@@ -1,7 +1,7 @@
 // Module ID: 8533
 // Function ID: 8534
 // Name: EntitlementActionCreators
-// Dependencies: [5, 1072, 572, 1285, 6766, 2]
+// Dependencies: [5, 1072, 572, 1285, 6756, 2]
 // Exports: fetchGiftableEntitlements, fetchUserEntitlements, fetchUserEntitlementsForApplication
 
 // Module 8533 (EntitlementActionCreators)

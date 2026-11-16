@@ -1,19 +1,19 @@
-// Module ID: 5486
-// Function ID: 5487
+// Module ID: 5476
+// Function ID: 5477
 // Name: client_themes/ClientThemesUtils
-// Dependencies: [32, 19, 1192, 5330, 1238, 575, 671, 5487, 5303, 5304, 1241, 5313, 5488, 5547, 5544, 2]
+// Dependencies: [32, 19, 1192, 5330, 1238, 575, 671, 5477, 5303, 5304, 1241, 5313, 5478, 5537, 5534, 2]
 // Exports: colorToHex, getClientThemesGradientColorByPercentage, getClientThemesGradientHexColors, getEmbedBackground, getEmbedScrollGradientBackground, getGradientAngle, getGradientHexColors, getGradientThemeMetadata, getGradientValue, getPresetOverlayOpacity, isCustomThemeActive, useGradientValue
 
-// Module 5486 (client_themes/ClientThemesUtils)
+// Module 5476 (client_themes/ClientThemesUtils)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import ClientThemesTypes from "ClientThemesTypes" /* 1241 */;
 import utils_ColorDefault from "utils/Color" /* 5304 */;
 import shared from "shared" /* 5313 */;
-import OverlayOpacityMultiplier from "OverlayOpacityMultiplier" /* 5487 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5488 */;
-import MobileThemesUtils from "MobileThemesUtils" /* 5544 */;
-import useThemeDefault from "useTheme" /* 5547 */;
+import OverlayOpacityMultiplier from "OverlayOpacityMultiplier" /* 5477 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5478 */;
+import MobileThemesUtils from "MobileThemesUtils" /* 5534 */;
+import useThemeDefault from "useTheme" /* 5537 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
@@ -25,15 +25,15 @@ let dependencyMap, importDefault;
 
 let tmp;
 const ColorUtils = tmp(5303);
-const f90824 = (stop) => stop.stop;
-const f90825 = (item) => nativeDefault.unsafe_rawColors[item.token];
+const f90837 = (stop) => stop.stop;
+const f90838 = (item) => nativeDefault.unsafe_rawColors[item.token];
 function getGradientColorByPercentage(type, MID) {
   let colors;
   let colors2;
   if (type.type === ClientThemesTypes.ClientThemeType.BACKGROUND_GRADIENT_PRESET) {
     ({ colors, colors: colors2 } = type);
-    const mapped = colors.map(f90825);
-    const mapped1 = colors2.map(f90824);
+    const mapped = colors.map(f90838);
+    const mapped1 = colors2.map(f90837);
     const obj6 = _modDef671;
     const scaleResult = obj6.scale(mapped);
     const obj8 = scaleResult.domain(mapped1)(MID);
@@ -227,8 +227,8 @@ export function getClientThemesGradientColorByPercentage(arg0, arg1) {
   let colors;
   let colors2;
   ({ colors, colors: colors2 } = arg0);
-  const mapped = colors.map(f90825);
-  const mapped1 = colors2.map(f90824);
+  const mapped = colors.map(f90838);
+  const mapped1 = colors2.map(f90837);
   const obj = _modDef671;
   const scaleResult = obj.scale(mapped);
   obj3 = scaleResult.domain(mapped1)(arg1);
@@ -237,13 +237,13 @@ export function getClientThemesGradientColorByPercentage(arg0, arg1) {
 }
 export function getClientThemesGradientHexColors(colors) {
   colors = colors.colors;
-  return colors.map(f90825);
+  return colors.map(f90838);
 }
 export function getGradientHexColors(gradientPreset) {
   let colors;
   if (gradientPreset.type === ClientThemesTypes.ClientThemeType.BACKGROUND_GRADIENT_PRESET) {
     const colors1 = gradientPreset.colors;
-    colors = colors1.map(f90825);
+    colors = colors1.map(f90838);
   } else {
     colors = gradientPreset.customThemeSettings.colors;
   }
@@ -274,7 +274,7 @@ export function getGradientThemeMetadata(gradientThemeFromFlags, gradient) {
       const tmp2 = c8;
       if (gradient.type === ClientThemesTypes.ClientThemeType.BACKGROUND_GRADIENT_PRESET) {
         const colors = gradient.colors;
-        mapped = colors.map(f90825);
+        mapped = colors.map(f90838);
       } else {
         mapped = gradient.customThemeSettings.colors;
       }

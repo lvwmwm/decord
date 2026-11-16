@@ -1,13 +1,13 @@
-// Module ID: 18145
-// Function ID: 18146
+// Module ID: 18147
+// Function ID: 18148
 // Name: ProfileUpdatesNotificationSetting
-// Dependencies: [9202, 12406, 1113, 5131, 18146, 2]
+// Dependencies: [9202, 12406, 1113, 5131, 18148, 2]
 
-// Module 18145 (ProfileUpdatesNotificationSetting)
+// Module 18147 (ProfileUpdatesNotificationSetting)
 import intl2 from "intl" /* 1113 */;
 import UserSettings from "UserSettings" /* 5131 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;
-import ProfileUpdatesNotificationUtils from "ProfileUpdatesNotificationUtils" /* 18146 */;
+import ProfileUpdatesNotificationUtils from "ProfileUpdatesNotificationUtils" /* 18148 */;
 import SettingBuilders from "SettingBuilders" /* 12406 */;
 import size from "module_2" /* 2 */;
 

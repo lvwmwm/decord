@@ -74,7 +74,7 @@ class WidgetRecord extends Record {
     const size1 = { width: 0, height: 0 };
     const merged = Object.assign(id.size);
     tmp7.size = size1;
-    const size2 = { width: "disabled", height: "isArray" };
+    const size2 = { width: "Array", height: "Path" };
     const merged1 = Object.assign(id.minSize);
     tmp7.minSize = size2;
     tmp7.pinned = id.pinned;

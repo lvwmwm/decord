@@ -1,7 +1,7 @@
 // Module ID: 13256
 // Function ID: 13257
 // Name: ConjureModelSettingsSheet
-// Dependencies: [32, 19, 17, 7365, 7375, 21, 504, 7392, 13257, 6337, 575, 13258, 5929, 1113, 4131, 7951, 7913, 2]
+// Dependencies: [32, 19, 17, 7365, 7375, 21, 504, 7392, 13257, 6327, 575, 13258, 5919, 1113, 4131, 7951, 7913, 2]
 // Exports: default
 
 // Module 13256 (ConjureModelSettingsSheet)
@@ -62,11 +62,11 @@ function ModelSettingsPicker(projectId) {
   [tmp4, tmp5] = useConjureModelSettingsDraftDefault(tierSettings, callback);
   const obj2 = { direction: "vertical", spacing: nativeDefault.space.PX_16, children: items3 };
   _slicedToArray(useConjureModelSettingsDraftDefault(tierSettings, callback), 2);
-  const Stack = projectId(6337).Stack;
+  const Stack = projectId(6327).Stack;
   items3 = [, ];
   const obj3 = { settings: tmp4, tiers: modelSettings.tiers, choices: modelSettings.choices, disabled: tmp, onChange: tmp5 };
   items3[0] = closure_8(ConjureEffortPickerDefault, obj3);
-  const Text = projectId(5929).Text;
+  const Text = projectId(5919).Text;
   const intl = projectId(1113).intl;
   const string = intl.string;
   const tmp8 = _modDef4131;

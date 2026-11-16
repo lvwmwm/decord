@@ -1,7 +1,7 @@
 // Module ID: 10274
 // Function ID: 10275
 // Name: QuickSwitcherActionCreators
-// Dependencies: [5, 32, 6963, 10275, 5159, 5155, 2163, 5209, 5349, 10246, 1072, 5162, 1074, 10247, 1256, 7658, 572, 7231, 6063, 6066, 6935, 10279, 8134, 10280, 10281, 10286, 7262, 10572, 8484, 7937, 10573, 7660, 2]
+// Dependencies: [5, 32, 6953, 10275, 5159, 5155, 2163, 5209, 5339, 10246, 1072, 5162, 1074, 10247, 1256, 7658, 572, 7231, 6053, 6056, 6925, 10279, 8134, 10280, 10281, 10286, 7262, 10572, 8484, 7937, 10573, 7660, 2]
 // Exports: hide, search, selectResult, switchToResultInNewTab, toggle, trackOpen
 
 // Module 10274 (QuickSwitcherActionCreators)
@@ -10,10 +10,10 @@ import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import ChannelRecord from "ChannelRecord" /* 5159 */;
 import ChannelConstants from "ChannelConstants" /* 5162 */;
-import transitionToChannel from "transitionToChannel" /* 6063 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6066 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6935 */;
-import InAppNavigationRecord from "InAppNavigationRecord" /* 6963 */;
+import transitionToChannel from "transitionToChannel" /* 6053 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6056 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6925 */;
+import InAppNavigationRecord from "InAppNavigationRecord" /* 6953 */;
 import transitionToGuild from "transitionToGuild" /* 7231 */;
 import safeTransitionToDefault from "safeTransitionTo" /* 7262 */;
 import ValidationUtilsDefault from "ValidationUtils" /* 7658 */;
@@ -34,7 +34,7 @@ import ChannelTabsStore from "ChannelTabsStore" /* 10275 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import LibraryApplicationStore from "LibraryApplicationStore" /* 2163 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5349 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
 import QuickSwitcherStore from "QuickSwitcherStore" /* 10246 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;

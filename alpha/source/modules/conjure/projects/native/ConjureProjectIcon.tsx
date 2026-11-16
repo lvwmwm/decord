@@ -1,15 +1,15 @@
 // Module ID: 10543
 // Function ID: 10544
 // Name: ConjureProjectIcon
-// Dependencies: [19, 17, 21, 5306, 575, 10544, 6020, 1414, 10546, 5902, 671, 10528, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 10544, 6010, 1414, 10546, 5892, 671, 10528, 2]
 // Exports: ConjureNewProjectIcon, default
 
 // Module 10543 (ConjureProjectIcon)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import AvatarUtils from "AvatarUtils" /* 1414 */;
-import useToken from "useToken" /* 5902 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import useToken from "useToken" /* 5892 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import MagicWandIcon2 from "MagicWandIcon" /* 10528 */;
 import useConjureProjectIcon from "useConjureProjectIcon" /* 10544 */;
 import react from "react" /* 19 */;

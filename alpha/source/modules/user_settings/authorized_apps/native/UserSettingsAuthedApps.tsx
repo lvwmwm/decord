@@ -1,14 +1,14 @@
 // Module ID: 17483
 // Function ID: 17484
 // Name: UserSettingsAuthedApps
-// Dependencies: [19, 17, 7221, 1072, 21, 5306, 575, 7406, 8163, 15968, 6037, 504, 1503, 7410, 5929, 1113, 1502, 7443, 8151, 7809, 7813, 2]
+// Dependencies: [19, 17, 7221, 1072, 21, 5306, 575, 7406, 8163, 15968, 6027, 504, 1503, 7410, 5919, 1113, 1502, 7443, 8151, 7809, 7813, 2]
 // Exports: AuthorizedAppRow, AuthorizedAppsEmpty, AuthorizedAppsHeader, DisclosureIcon, useAuthorizedApps
 
 // Module 17483 (UserSettingsAuthedApps)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 6037 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 6027 */;
 import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7221 */;
 import applications from "applications" /* 7406 */;
 import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7809 */;

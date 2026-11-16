@@ -1,20 +1,20 @@
 // Module ID: 10204
 // Function ID: 10205
 // Name: MediaShareActions
-// Dependencies: [19, 10205, 5155, 6372, 10228, 1072, 8637, 21, 563, 8853, 10229, 5552, 8633, 6361, 10230, 8629, 7943, 6014, 7653, 6012, 10239, 6063, 5495, 12649, 2121, 12633, 10234, 6035, 1113, 10267, 12289, 6029, 15195, 11926, 8079, 7951, 7953, 2]
+// Dependencies: [19, 10205, 5155, 6362, 10228, 1072, 8637, 21, 563, 8853, 10229, 5542, 8633, 6351, 10230, 8629, 7943, 6004, 7653, 6002, 10239, 6053, 5485, 12649, 2121, 12633, 10234, 6025, 1113, 10267, 12289, 6019, 15195, 11926, 8079, 7951, 7953, 2]
 // Exports: default
 
 // Module 10204 (MediaShareActions)
 import Fragment from "Fragment" /* 21 */;
 import intl8 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import useChatLayout from "useChatLayout" /* 5495 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import ToastUtils from "ToastUtils" /* 6014 */;
-import LinkIcon from "LinkIcon" /* 6029 */;
-import DownloadIcon from "DownloadIcon" /* 6035 */;
-import transitionToChannel from "transitionToChannel" /* 6063 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 6361 */;
+import useChatLayout from "useChatLayout" /* 5485 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import ToastUtils from "ToastUtils" /* 6004 */;
+import LinkIcon from "LinkIcon" /* 6019 */;
+import DownloadIcon from "DownloadIcon" /* 6025 */;
+import transitionToChannel from "transitionToChannel" /* 6053 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 6351 */;
 import MaskedLinkUtils from "MaskedLinkUtils" /* 7653 */;
 import ClipboardUtils from "ClipboardUtils" /* 7943 */;
 import ActionSheet2 from "ActionSheet" /* 7951 */;
@@ -32,7 +32,7 @@ import WindowLaunchIcon from "WindowLaunchIcon" /* 15195 */;
 import react from "react" /* 19 */;
 import ICYMIStore from "ICYMIStore" /* 10205 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
-import MessageStore from "MessageStore" /* 6372 */;
+import MessageStore from "MessageStore" /* 6362 */;
 import MessagePreviewStore from "MessagePreviewStore" /* 10228 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;

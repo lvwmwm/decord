@@ -1,10 +1,10 @@
-// Module ID: 19273
-// Function ID: 19274
+// Module ID: 19275
+// Function ID: 19276
 // Name: ForYouShowAllRow
-// Dependencies: [19, 17, 1072, 15017, 21, 5306, 11050, 575, 1380, 1502, 1256, 1187, 5944, 19268, 7428, 19269, 16495, 5929, 1113, 7906, 2]
+// Dependencies: [19, 17, 1072, 15017, 21, 5306, 11050, 575, 1380, 1502, 1256, 1187, 5934, 19270, 7428, 19271, 16495, 5919, 1113, 7906, 2]
 // Exports: ForYouSuggestedFriendShowAllRow
 
-// Module 19273 (ForYouShowAllRow)
+// Module 19275 (ForYouShowAllRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -12,14 +12,14 @@ import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import useFontScale from "useFontScale" /* 5944 */;
+import useFontScale from "useFontScale" /* 5934 */;
 import Pressables from "Pressables" /* 7428 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7906 */;
 import ChannelListLayout from "ChannelListLayout" /* 11050 */;
 import FriendsScreenConstants from "FriendsScreenConstants" /* 15017 */;
 import AvatarDuoPile2 from "AvatarDuoPile" /* 16495 */;
-import ChannelPressableWrapper from "ChannelPressableWrapper" /* 19268 */;
-import ChannelWrapper from "ChannelWrapper" /* 19269 */;
+import ChannelPressableWrapper from "ChannelPressableWrapper" /* 19270 */;
+import ChannelWrapper from "ChannelWrapper" /* 19271 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;
@@ -70,7 +70,7 @@ function ForYouShowAllRow(panelVariant) {
   items1 = [metroImportDefault(View, obj5), , ];
   const obj9 = { style: tmp4.textContainer, children: metroImportDefault(Text, obj10) };
   obj10 = { lineClamp: 1, variant: layoutStyles.channelName.text.variant, color: "text-brand", style: tmp4.nameText, children: intl.format(intl2.t.NrzztX, { count }) };
-  Text = tmp(5929).Text;
+  Text = tmp(5919).Text;
   intl = tmp(1113).intl;
   items1[1] = metroImportDefault(View, obj9);
   const obj11 = { style: tmp4.icon, color: tmp4.iconColor.color, source: AssetRegistryDefault, size: native.IconSizes.CUSTOM };

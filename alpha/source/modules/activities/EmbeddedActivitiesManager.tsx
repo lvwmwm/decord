@@ -1,7 +1,7 @@
 // Module ID: 17015
 // Function ID: 17016
 // Name: EmbeddedActivitiesManager
-// Dependencies: [5, 2165, 7016, 5159, 502, 5155, 6071, 5209, 1388, 16932, 5154, 1072, 16931, 1285, 5227, 12771, 6264, 1256, 12743, 12742, 12755, 12759, 6066, 1269, 2153, 11411, 2123, 1108, 572, 5980, 5974, 12748, 12753, 7055, 12734, 1113, 12845, 12736, 12847, 12705, 6381, 7937, 2]
+// Dependencies: [5, 2165, 7016, 5159, 502, 5155, 6061, 5209, 1388, 16932, 5154, 1072, 16931, 1285, 5227, 12771, 6254, 1256, 12743, 12742, 12755, 12759, 6056, 1269, 2153, 11411, 2123, 1108, 572, 5970, 5964, 12748, 12753, 7055, 12734, 1113, 12845, 12736, 12847, 12705, 6371, 7937, 2]
 
 // Module 17015 (EmbeddedActivitiesManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -11,10 +11,10 @@ import v1 from "v1" /* 1269 */;
 import StringUtils from "StringUtils" /* 2153 */;
 import ChannelRecord from "ChannelRecord" /* 5159 */;
 import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 5227 */;
-import getURLForApplication from "getURLForApplication" /* 5974 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6066 */;
-import ThermalUtilsDefault from "ThermalUtils" /* 6264 */;
-import InteractionTypes from "InteractionTypes" /* 6381 */;
+import getURLForApplication from "getURLForApplication" /* 5964 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6056 */;
+import ThermalUtilsDefault from "ThermalUtils" /* 6254 */;
+import InteractionTypes from "InteractionTypes" /* 6371 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
 import CommandPermissionContext from "CommandPermissionContext" /* 11411 */;
 import canLaunchContextlessFrame from "canLaunchContextlessFrame" /* 12742 */;
@@ -28,7 +28,7 @@ import ApplicationStore from "ApplicationStore" /* 2165 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 7016 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6071 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
 import UserStore from "UserStore" /* 1388 */;
 import ActivityShelfStore from "ActivityShelfStore" /* 16932 */;

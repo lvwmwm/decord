@@ -1,21 +1,21 @@
-// Module ID: 20256
-// Function ID: 20257
+// Module ID: 20259
+// Function ID: 20260
 // Name: GuildPowerupsManager
-// Dependencies: [5177, 5238, 5349, 5523, 7882, 5180, 5542, 5529, 5541, 10676, 18883, 6262, 5528, 10688, 9238, 2]
+// Dependencies: [5177, 5238, 5339, 5513, 7882, 5180, 5532, 5519, 5531, 10676, 18885, 6252, 5518, 10688, 9238, 2]
 
-// Module 20256 (GuildPowerupsManager)
+// Module 20259 (GuildPowerupsManager)
 import FavoritesUtils from "FavoritesUtils" /* 5180 */;
-import ServerThemeUserExperiment from "ServerThemeUserExperiment" /* 5528 */;
-import ServerThemeExperiment2 from "ServerThemeExperiment" /* 5529 */;
-import shared_PlatformUtils from "shared/PlatformUtils" /* 6262 */;
+import ServerThemeUserExperiment from "ServerThemeUserExperiment" /* 5518 */;
+import ServerThemeExperiment2 from "ServerThemeExperiment" /* 5519 */;
+import shared_PlatformUtils from "shared/PlatformUtils" /* 6252 */;
 import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 9238 */;
 import useHasAllocateBoostPermission from "useHasAllocateBoostPermission" /* 10676 */;
 import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 10688 */;
-import useIsCurrentUserEligibleForPowerupUpsells from "useIsCurrentUserEligibleForPowerupUpsells" /* 18883 */;
+import useIsCurrentUserEligibleForPowerupUpsells from "useIsCurrentUserEligibleForPowerupUpsells" /* 18885 */;
 import GuildStore from "GuildStore" /* 5177 */;
 import PermissionStore from "PermissionStore" /* 5238 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5349 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 5523 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 5513 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
 import size from "module_2" /* 2 */;
 
@@ -43,20 +43,20 @@ class GuildPowerupsManager extends AutomaticLifecycleManager {
       if (!obj10.isFavoritesGuildId(guildId)) {
         const guild = GuildStore.getGuild(guildId);
         if (null != guild) {
-          const GameServerExperiment = tmp7(5542).GameServerExperiment;
+          const GameServerExperiment = tmp7(5532).GameServerExperiment;
           const obj = { guildId: guild.id, location: "GuildPowerupsManager" };
           GameServerExperiment.trackExposure(obj);
-          const ServerThemeExperiment = tmp7(5529).ServerThemeExperiment;
+          const ServerThemeExperiment = tmp7(5519).ServerThemeExperiment;
           const obj2 = { guildId: guild.id, location: "GuildPowerupsManager" };
           ServerThemeExperiment.trackExposure(obj2);
-          const ServerThemeApexShadowExperiment = tmp7(5541).ServerThemeApexShadowExperiment;
+          const ServerThemeApexShadowExperiment = tmp7(5531).ServerThemeApexShadowExperiment;
           const obj3 = { guildId: guild.id, location: "GuildPowerupsManager" };
           const config = ServerThemeApexShadowExperiment.getConfig(obj3);
           const tmp7Result = useHasAllocateBoostPermission;
           if (!tmp7Result.getHasAllocateBoostPermission(PermissionStore, guild)) {
             const tmp7Result9 = useIsCurrentUserEligibleForPowerupUpsells;
             let isCurrentUserEligibleForPowerupUpsells = tmp7Result9.getIsCurrentUserEligibleForPowerupUpsells();
-            let isMobile = tmp7(6262).isMobile;
+            let isMobile = tmp7(6252).isMobile;
             if (isMobile) {
               const tmp7Result10 = ServerThemeExperiment2;
               isMobile = tmp7Result10.getServerThemeEnabled(guildId, "GuildPowerupsManager");
@@ -73,7 +73,7 @@ class GuildPowerupsManager extends AutomaticLifecycleManager {
               const tmp7Result13 = ServerThemeUserExperiment;
               isMobile = tmp7Result13.getServerThemeUserEnabled("GuildPowerupsManager");
             }
-            let isMobile2 = tmp7(6262).isMobile;
+            let isMobile2 = tmp7(6252).isMobile;
             if (isMobile2) {
               const tmp7Result14 = useIsCurrentUserEligibleForPowerupUpsells;
               isMobile2 = tmp7Result14.getIsCurrentUserEligibleForPowerupUpsells();

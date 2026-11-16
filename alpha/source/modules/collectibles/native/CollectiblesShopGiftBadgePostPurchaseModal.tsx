@@ -1,7 +1,7 @@
 // Module ID: 11814
 // Function ID: 11815
 // Name: CollectiblesShopGiftBadgePostPurchaseModal
-// Dependencies: [19, 17, 21, 5306, 575, 1630, 6848, 8484, 7937, 8208, 1113, 7549, 5929, 2797, 11815, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 1630, 6838, 8484, 7937, 8208, 1113, 7549, 5919, 2797, 11815, 2]
 // Exports: default
 
 // Module 11814 (CollectiblesShopGiftBadgePostPurchaseModal)
@@ -9,8 +9,8 @@ import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
 import _modDef2797 from "module_2797" /* 2797 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import XSmallIcon from "XSmallIcon" /* 7549 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
 import ModalScreen2 from "ModalScreen" /* 8208 */;

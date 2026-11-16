@@ -1,21 +1,21 @@
-// Module ID: 19011
-// Function ID: 19012
+// Module ID: 19013
+// Function ID: 19014
 // Name: useWaterwheelsDiscoverAnalytics
-// Dependencies: [32, 19, 17, 502, 5349, 1072, 19010, 1503, 19012, 19013, 10225, 19003, 572, 2]
+// Dependencies: [32, 19, 17, 502, 5339, 1072, 19012, 1503, 19014, 19015, 10225, 19005, 572, 2]
 // Exports: default
 
-// Module 19011 (useWaterwheelsDiscoverAnalytics)
+// Module 19013 (useWaterwheelsDiscoverAnalytics)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 10225 */;
-import WaterwheelsDiscoverJoinAttribution from "WaterwheelsDiscoverJoinAttribution" /* 19003 */;
-import WaterwheelsDiscoverFeedState from "WaterwheelsDiscoverFeedState" /* 19010 */;
-import WaterwheelsDiscoverAnalytics from "WaterwheelsDiscoverAnalytics" /* 19013 */;
+import WaterwheelsDiscoverJoinAttribution from "WaterwheelsDiscoverJoinAttribution" /* 19005 */;
+import WaterwheelsDiscoverFeedState from "WaterwheelsDiscoverFeedState" /* 19012 */;
+import WaterwheelsDiscoverAnalytics from "WaterwheelsDiscoverAnalytics" /* 19015 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5349 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

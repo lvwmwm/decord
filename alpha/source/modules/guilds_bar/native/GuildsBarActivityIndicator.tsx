@@ -1,13 +1,13 @@
-// Module ID: 19106
-// Function ID: 19107
+// Module ID: 19108
+// Function ID: 19109
 // Name: GuildsBarActivityIndicator
-// Dependencies: [19, 21, 5306, 575, 5902, 7722, 1187, 8457, 12933, 8017, 8016, 10467, 19107, 11046, 19108, 7432, 19109, 8101, 8038, 19105, 2]
+// Dependencies: [19, 21, 5306, 575, 5892, 7722, 1187, 8457, 12933, 8017, 8016, 10467, 19109, 11046, 19110, 7432, 19111, 8101, 8038, 19107, 2]
 // Exports: useActivityIndicatorState
 
-// Module 19106 (GuildsBarActivityIndicator)
+// Module 19108 (GuildsBarActivityIndicator)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useToken from "useToken" /* 5902 */;
+import useToken from "useToken" /* 5892 */;
 import VoiceNormalIcon from "VoiceNormalIcon" /* 7432 */;
 import NativeViewDefault from "NativeView" /* 7722 */;
 import AssetRegistryDefault from "AssetRegistry" /* 8016 */;
@@ -18,10 +18,10 @@ import CalendarIcon from "CalendarIcon" /* 8457 */;
 import ScreenIcon from "ScreenIcon" /* 10467 */;
 import VideoIcon from "VideoIcon" /* 11046 */;
 import AssetRegistryDefault3 from "AssetRegistry" /* 12933 */;
-import useGuildsBarGuildMediaStateDefault from "useGuildsBarGuildMediaState" /* 19105 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 19107 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 19108 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 19109 */;
+import useGuildsBarGuildMediaStateDefault from "useGuildsBarGuildMediaState" /* 19107 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 19109 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 19110 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 19111 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;

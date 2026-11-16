@@ -1,7 +1,7 @@
 // Module ID: 14597
 // Function ID: 14598
 // Name: RefreshChatInputCoachmark
-// Dependencies: [32, 19, 5152, 9560, 5139, 5320, 1113, 14598, 5469, 9567, 2]
+// Dependencies: [32, 19, 5152, 9560, 5139, 5320, 1113, 14598, 5459, 9567, 2]
 // Exports: default, useRefreshChatInputCoachmark
 
 // Module 14597 (RefreshChatInputCoachmark)
@@ -17,7 +17,7 @@ const require = globalThis.__r;
 let _require;
 
 let tmp;
-const OmnibuttonCoachmarkRive = tmp(5469);
+const OmnibuttonCoachmarkRive = tmp(5459);
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 const result = size.fileFinishedImporting("modules/chat_input/native/RefreshChatInputCoachmark.tsx");
 

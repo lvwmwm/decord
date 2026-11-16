@@ -1,17 +1,17 @@
 // Module ID: 15429
 // Function ID: 15430
 // Name: PremiumPlanSelectYearlyUpsellModal
-// Dependencies: [32, 19, 17, 2189, 9302, 15416, 1390, 1083, 21, 5306, 6826, 6961, 9611, 504, 2027, 6340, 6020, 15430, 1187, 1113, 2174, 5936, 2]
+// Dependencies: [32, 19, 17, 2189, 9302, 15416, 1390, 1083, 21, 5306, 6816, 6951, 9611, 504, 2027, 6330, 6010, 15430, 1187, 1113, 2174, 5926, 2]
 // Exports: default
 
 // Module 15429 (PremiumPlanSelectYearlyUpsellModal)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1083 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
-import FastImageDefault from "FastImage" /* 6020 */;
-import AlertDefault from "Alert" /* 6340 */;
-import TextStylesDefault from "TextStyles" /* 6826 */;
-import LegacyTokens from "LegacyTokens" /* 6961 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import AlertDefault from "Alert" /* 6330 */;
+import TextStylesDefault from "TextStyles" /* 6816 */;
+import LegacyTokens from "LegacyTokens" /* 6951 */;
 import PremiumPlanSelectStore from "PremiumPlanSelectStore" /* 15416 */;
 import AssetRegistryDefault from "AssetRegistry" /* 15430 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
@@ -140,7 +140,7 @@ export default function PremiumPlanSelectYearlyUpsellModal(arg0) {
       disabled: tmp2 || tmp9[1],
       loading: "upsell" === tmp4 && tmp2
     };
-    Button = tmp5(5936).Button;
+    Button = tmp5(5926).Button;
     intl3 = tmp5(1113).intl;
     obj14 = { price: orderPriceString };
     items2[3] = closure_10(View, obj12);
@@ -155,12 +155,12 @@ export default function PremiumPlanSelectYearlyUpsellModal(arg0) {
       disabled: tmp2 || tmp9[1],
       loading: "default" === tmp4 && tmp2
     };
-    Button2 = tmp5(5936).Button;
+    Button2 = tmp5(5926).Button;
     intl4 = tmp5(1113).intl;
     items2[4] = closure_10(View, obj15);
     const obj17 = { style: tmp.cancelButton, children: closure_10(Button3, obj18) };
     obj18 = { variant: "tertiary", text: intl5.string(productId(1113).t.cpT0Cq), onPress: onClose };
-    Button3 = tmp5(5936).Button;
+    Button3 = tmp5(5926).Button;
     intl5 = tmp5(1113).intl;
     items2[5] = closure_10(View, obj17);
     return closure_10(tmp19, obj5);

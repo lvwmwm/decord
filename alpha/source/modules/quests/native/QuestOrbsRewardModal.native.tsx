@@ -1,7 +1,7 @@
 // Module ID: 15266
 // Function ID: 15267
 // Name: QuestOrbsRewardModal
-// Dependencies: [32, 5, 19, 17, 5307, 1388, 2120, 5338, 21, 6848, 15266, 2121, 5306, 575, 1496, 1630, 9442, 7500, 7549, 1113, 2025, 6020, 15267, 15268, 15269, 504, 10437, 1092, 10151, 15270, 10128, 5341, 9728, 7415, 5929, 5936, 2]
+// Dependencies: [32, 5, 19, 17, 5307, 1388, 2120, 6954, 21, 6838, 15266, 2121, 5306, 575, 1496, 1630, 9442, 7500, 7549, 1113, 2025, 6010, 15267, 15268, 15269, 504, 10437, 1092, 10151, 15270, 10128, 6957, 9728, 7415, 5919, 5926, 2]
 // Exports: default, openQuestOrbsRewardModal
 
 // Module 15266 (QuestOrbsRewardModal)
@@ -9,8 +9,8 @@ import nativeDefault from "native" /* 575 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
 import react_nativeDefault from "react-native" /* 2025 */;
-import FastImageDefault from "FastImage" /* 6020 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import XSmallIcon from "XSmallIcon" /* 7549 */;
 import OrbsIcon2 from "OrbsIcon" /* 9442 */;
 import _modDef15267 from "module_15267" /* 15267 */;
@@ -22,7 +22,7 @@ import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import UserStore from "UserStore" /* 1388 */;
 import AppStateStore from "AppStateStore" /* 2120 */;
-import QuestConstants from "QuestConstants" /* 5338 */;
+import QuestConstants from "QuestConstants" /* 6954 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
@@ -345,7 +345,7 @@ export default function QuestOrbsRewardModal(quest) {
     items8 = [closure_14(closure_8, obj14), ];
     const obj16 = { style: isWidthConstrained ? tmp.bodyInLockup : tmp.body, children: items9 };
     const obj17 = { variant: "heading-xl/semibold", color: "text-overlay-light", style: tmp.title, children: format(FIilK5, obj18) };
-    const Heading = tmp5(5929).Heading;
+    const Heading = tmp5(5919).Heading;
     let intl = tmp5(1113).intl;
     format = intl.format;
     FIilK5 = tmp5(1113).t.FIilK5;
@@ -355,7 +355,7 @@ export default function QuestOrbsRewardModal(quest) {
     obj18 = { count: num2 };
     items9 = [closure_14(Heading, obj17), ];
     const obj19 = { variant: "body-md/normal", color: "text-overlay-light", style: tmp.title, children: formatResult };
-    let Text = tmp5(5929).Text;
+    let Text = tmp5(5919).Text;
     if (num == null) {
       num = 0;
     }
@@ -390,7 +390,7 @@ export default function QuestOrbsRewardModal(quest) {
     items7[1] = closure_16(closure_8, obj13);
     const obj22 = { style: tmp.buttonsContainer, children: closure_14(Button, obj23) };
     obj23 = { onPress: callback1, variant: "primary-overlay", size: "lg", text: intl4.string(num(1113).t.uJAMFX) };
-    Button = tmp5(5936).Button;
+    Button = tmp5(5926).Button;
     intl4 = tmp5(1113).intl;
     items7[2] = closure_14(closure_8, obj22);
     items5[1] = closure_16(closure_8, obj11);

@@ -1,13 +1,13 @@
 // Module ID: 17239
 // Function ID: 17240
 // Name: AccountPhoneSetting
-// Dependencies: [1388, 9202, 7818, 504, 6848, 7817, 2121, 7820, 12406, 1113, 2]
+// Dependencies: [1388, 9202, 7818, 504, 6838, 7817, 2121, 7820, 12406, 1113, 2]
 
 // Module 17239 (AccountPhoneSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import PhoneConstants from "PhoneConstants" /* 7818 */;
 import PhoneActionCreators from "PhoneActionCreators" /* 7820 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;

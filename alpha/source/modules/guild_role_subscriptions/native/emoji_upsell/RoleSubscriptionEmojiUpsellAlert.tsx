@@ -1,14 +1,14 @@
 // Module ID: 11262
 // Function ID: 11263
 // Name: RoleSubscriptionEmojiUpsellAlert
-// Dependencies: [19, 5177, 5162, 21, 11171, 1113, 1496, 504, 6917, 6340, 11263, 11178, 2]
+// Dependencies: [19, 5177, 5162, 21, 11171, 1113, 1496, 504, 6907, 6330, 11263, 11178, 2]
 // Exports: default
 
 // Module 11262 (RoleSubscriptionEmojiUpsellAlert)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1113 */;
 import ChannelConstants from "ChannelConstants" /* 5162 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6917 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6907 */;
 import AssetRegistryDefault from "AssetRegistry" /* 11171 */;
 import CreatorRevenueButton2 from "CreatorRevenueButton" /* 11263 */;
 import react from "react" /* 19 */;

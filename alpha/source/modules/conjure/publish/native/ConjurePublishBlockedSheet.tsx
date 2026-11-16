@@ -1,13 +1,13 @@
 // Module ID: 13146
 // Function ID: 13147
 // Name: ConjurePublishBlockedSheet
-// Dependencies: [19, 17, 21, 5306, 575, 13147, 5552, 7951, 7913, 5929, 5936, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 13147, 5542, 7951, 7913, 5919, 5926, 2]
 // Exports: default
 
 // Module 13146 (ConjurePublishBlockedSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5542 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;
@@ -37,7 +37,7 @@ function ConjurePublishBlockedSheet(onConfirm) {
   items = [, , ];
   obj3 = { title: conjurePublishBlockedCopy.title };
   const obj5 = { variant: "body-md/normal", color: "text-muted", children: conjurePublishBlockedCopy.body };
-  items[0] = closure_4(onConfirm(5929).Text, obj5);
+  items[0] = closure_4(onConfirm(5919).Text, obj5);
   const obj6 = {
     variant: "primary",
     text: conjurePublishBlockedCopy.action,
@@ -49,7 +49,7 @@ function ConjurePublishBlockedSheet(onConfirm) {
       }
     }
   };
-  items[1] = closure_4(onConfirm(5936).Button, obj6);
+  items[1] = closure_4(onConfirm(5926).Button, obj6);
   let tmp5Result = null;
   const tmp2 = onConfirm;
   tmp6 = closure_5;
@@ -60,7 +60,7 @@ function ConjurePublishBlockedSheet(onConfirm) {
       obj.hideActionSheet(ConjurePublishBlockedSheet_str);
     }
     const obj7 = { variant: "secondary", text: conjurePublishBlockedCopy.cancel, onPress: close };
-    tmp5Result = tmp5(tmp2(5936).Button, obj7);
+    tmp5Result = tmp5(tmp2(5926).Button, obj7);
   }
   items[2] = tmp5Result;
   return closure_4(ActionSheet, obj2);

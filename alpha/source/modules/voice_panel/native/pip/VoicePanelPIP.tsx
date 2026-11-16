@@ -1,13 +1,13 @@
-// Module ID: 20061
-// Function ID: 20062
+// Module ID: 20063
+// Function ID: 20064
 // Name: VoicePanelPIP
-// Dependencies: [19, 17, 5154, 7019, 6901, 11985, 11983, 19909, 5959, 7020, 21, 5306, 11984, 11995, 11993, 19971, 1655, 19908, 11989, 5939, 5548, 1187, 5598, 1708, 19979, 6181, 504, 5227, 12743, 12741, 11253, 1113, 20062, 7722, 20066, 20067, 5377, 2]
+// Dependencies: [19, 17, 5154, 7019, 6891, 11985, 11983, 19911, 5949, 7020, 21, 5306, 11984, 11995, 11993, 19973, 1655, 19910, 11989, 5929, 5538, 1187, 5588, 1708, 19981, 6171, 504, 5227, 12743, 12741, 11253, 1113, 20064, 7722, 20068, 20069, 5367, 2]
 // Exports: usePIPTileHandoff
 
-// Module 20061 (VoicePanelPIP)
+// Module 20063 (VoicePanelPIP)
 import intl2 from "intl" /* 1113 */;
-import native from "native" /* 5377 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5959 */;
+import native from "native" /* 5367 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5949 */;
 import FramesConstants from "FramesConstants" /* 7020 */;
 import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11983 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11984 */;
@@ -19,9 +19,9 @@ import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
 import FramesStore from "FramesStore" /* 7019 */;
-import VoicePanelStore from "VoicePanelStore" /* 6901 */;
+import VoicePanelStore from "VoicePanelStore" /* 6891 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11985 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19909 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19911 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
@@ -529,7 +529,7 @@ class VoicePanelPIPTiles {
         constructor(arg0) {
           closure_0 = arg0;
           allTouches = arg0.allTouches;
-          found = allTouches.filter(function() { /* body not rendered: F146794 */ });
+          found = allTouches.filter(function() { /* body not rendered: F146811 */ });
           if (0 !== found.length) {
             tmp4 = closure_2;
             tmp5 = closure_2(found);

@@ -1,10 +1,10 @@
-// Module ID: 17820
-// Function ID: 17821
+// Module ID: 17822
+// Function ID: 17823
 // Name: useNoFillDecision
-// Dependencies: [32, 19, 8805, 8808, 17821, 504, 10132, 2]
+// Dependencies: [32, 19, 8805, 8808, 17823, 504, 10132, 2]
 // Exports: default
 
-// Module 17820 (useNoFillDecision)
+// Module 17822 (useNoFillDecision)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AdDeliveryStore from "AdDeliveryStore" /* 8805 */;
@@ -23,7 +23,7 @@ export default function useNoFillDecision(arg0, location) {
   let stateFromStores;
   _require = arg0;
   const tmp = dependencyMap;
-  const obj = stateFromStores(17821);
+  const obj = stateFromStores(17823);
   const obj2 = { location };
   const enableNoFill = obj.useConfig(obj2).enableNoFill;
   const items = [AdDeliveryStore];

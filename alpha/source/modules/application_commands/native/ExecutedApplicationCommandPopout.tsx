@@ -1,7 +1,7 @@
 // Module ID: 12591
 // Function ID: 12592
 // Name: ExecutedApplicationCommandPopout
-// Dependencies: [19, 17, 5307, 5155, 5212, 5177, 6372, 5248, 1388, 11406, 6345, 1072, 1501, 6346, 21, 5306, 575, 2119, 1187, 5552, 8476, 5372, 5929, 5954, 1113, 7918, 504, 6750, 10066, 9189, 6020, 1417, 7445, 12592, 6014, 7443, 1628, 5985, 6337, 7746, 7937, 11402, 5566, 2]
+// Dependencies: [19, 17, 5307, 5155, 5212, 5177, 6362, 5248, 1388, 11406, 6335, 1072, 1501, 6336, 21, 5306, 575, 2119, 1187, 5542, 8476, 5362, 5919, 5944, 1113, 7918, 504, 6740, 10066, 9189, 6010, 1417, 7445, 12592, 6004, 7443, 1628, 5975, 6327, 7746, 7937, 11402, 5556, 2]
 // Exports: default
 
 // Module 12591 (ExecutedApplicationCommandPopout)
@@ -11,14 +11,14 @@ import utils_AvatarUtils from "utils/AvatarUtils" /* 1417 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
 import KeyboardTypes from "KeyboardTypes" /* 1628 */;
 import Server from "Server" /* 2119 */;
-import UserUtilsDefault from "UserUtils" /* 5372 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import useChannelName from "useChannelName" /* 5954 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5985 */;
-import ToastUtils from "ToastUtils" /* 6014 */;
-import FastImageDefault from "FastImage" /* 6020 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6345 */;
+import UserUtilsDefault from "UserUtils" /* 5362 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import useChannelName from "useChannelName" /* 5944 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5975 */;
+import ToastUtils from "ToastUtils" /* 6004 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6335 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;
 import InteractionActionCreatorsAll from "InteractionActionCreators" /* 11402 */;
 import react_nativeDefault from "react-native" /* 12592 */;
@@ -28,12 +28,12 @@ import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import GuildRoleStore from "GuildRoleStore" /* 5212 */;
 import GuildStore from "GuildStore" /* 5177 */;
-import MessageStore from "MessageStore" /* 6372 */;
+import MessageStore from "MessageStore" /* 6362 */;
 import RelationshipStore from "RelationshipStore" /* 5248 */;
 import UserStore from "UserStore" /* 1388 */;
 import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 11406 */;
 import Constants from "Constants" /* 1072 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6346 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6336 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
@@ -129,7 +129,7 @@ function getCommandOptionComponents(option) {
             let obj = { style: styles.commandOptionMentionText, children: items1 };
             items1 = [closure_19, ];
             let LegacyText = tmp6(1187).LegacyText;
-            const tmp6Result = iter(5954);
+            const tmp6Result = iter(5944);
             items1[1] = tmp6Result.computeChannelName(channel1, UserStore, RelationshipStore);
             const _HermesInternal3 = HermesInternal;
             userComponent = closure_23(LegacyText, obj, "optionValue-" + iter.name);
@@ -773,7 +773,7 @@ export default function ExecutedCommandPopout(channelId) {
   const AnalyticsLocationProvider = tmp2(7918).AnalyticsLocationProvider;
   let interactionData1;
   obj3 = { startExpanded: true, bodyStyles: tmp.container, children: tmp9Result };
-  BottomSheet = tmp2(5566).BottomSheet;
+  BottomSheet = tmp2(5556).BottomSheet;
   if (stateFromStores != null) {
     interactionData1 = stateFromStores.interactionData;
   }

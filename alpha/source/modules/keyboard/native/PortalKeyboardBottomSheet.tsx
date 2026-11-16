@@ -1,15 +1,15 @@
 // Module ID: 13410
 // Function ID: 13411
 // Name: PortalKeyboardBottomSheet
-// Dependencies: [32, 19, 17, 11041, 21, 1380, 5306, 575, 7997, 5568, 1655, 13411, 5377, 5898, 13412, 504, 5570, 5554, 7048, 1708, 2020, 5899, 5902, 1630, 1496, 5508, 5488, 6328, 11246, 5912, 2]
+// Dependencies: [32, 19, 17, 11041, 21, 1380, 5306, 575, 7997, 5558, 1655, 13411, 5367, 5888, 13412, 504, 5560, 5544, 7048, 1708, 2020, 5889, 5892, 1630, 1496, 5498, 5478, 6318, 11246, 5902, 2]
 // Exports: default
 
 // Module 13410 (PortalKeyboardBottomSheet)
 import nativeDefault from "native" /* 575 */;
 import _modDef1655 from "module_1655" /* 1655 */;
-import HapticUtils from "HapticUtils" /* 5554 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5568 */;
-import BottomSheetModal from "BottomSheetModal" /* 5570 */;
+import HapticUtils from "HapticUtils" /* 5544 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5558 */;
+import BottomSheetModal from "BottomSheetModal" /* 5560 */;
 import isChannelFocused from "isChannelFocused" /* 7048 */;
 import native from "native" /* 7997 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

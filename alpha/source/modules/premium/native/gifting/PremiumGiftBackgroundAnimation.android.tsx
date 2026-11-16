@@ -1,7 +1,7 @@
 // Module ID: 11751
 // Function ID: 11752
 // Name: PremiumGiftBackgroundAnimation
-// Dependencies: [32, 19, 17, 5307, 21, 5306, 504, 9332, 11752, 5923, 2]
+// Dependencies: [32, 19, 17, 5307, 21, 5306, 504, 9332, 11752, 5913, 2]
 // Exports: default
 
 // Module 11751 (PremiumGiftBackgroundAnimation)

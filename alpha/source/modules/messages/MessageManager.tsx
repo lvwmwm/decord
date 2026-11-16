@@ -1,7 +1,7 @@
 // Module ID: 9069
 // Function ID: 9070
 // Name: MessageManager
-// Dependencies: [32, 7016, 6800, 5159, 7036, 5155, 5177, 7015, 5209, 5349, 1072, 5162, 1089, 3, 9070, 6795, 9100, 5543, 7067, 8660, 9101, 510, 5354, 1099, 7038, 6268, 1113, 572, 7882, 2]
+// Dependencies: [32, 7016, 6790, 5159, 7036, 5155, 5177, 7015, 5209, 5339, 1072, 5162, 1089, 3, 9070, 6785, 9100, 5533, 7067, 8660, 9101, 510, 5344, 1099, 7038, 6258, 1113, 572, 7882, 2]
 
 // Module 9069 (MessageManager)
 import LoggerDefault from "Logger" /* 3 */;
@@ -12,10 +12,10 @@ import router_utils from "router_utils" /* 1099 */;
 import intl3 from "intl" /* 1113 */;
 import ChannelRecord from "ChannelRecord" /* 5159 */;
 import ChannelConstants from "ChannelConstants" /* 5162 */;
-import matchPathCompat from "matchPathCompat" /* 5354 */;
-import flow_Client from "flow/Client" /* 5543 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6268 */;
-import ChannelMessagesDefault from "ChannelMessages" /* 6795 */;
+import matchPathCompat from "matchPathCompat" /* 5344 */;
+import flow_Client from "flow/Client" /* 5533 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6258 */;
+import ChannelMessagesDefault from "ChannelMessages" /* 6785 */;
 import SidebarActionTypes from "SidebarActionTypes" /* 7038 */;
 import MessageActionCreatorsDefault from "MessageActionCreators" /* 8660 */;
 import getNitroMessagePrefetchKey from "getNitroMessagePrefetchKey" /* 9070 */;
@@ -23,13 +23,13 @@ import AttachmentUrlUtilsAll from "AttachmentUrlUtils" /* 9100 */;
 import getAdaptiveMessageLimit from "getAdaptiveMessageLimit" /* 9101 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 7016 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6800 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6790 */;
 import ChannelSectionStore from "ChannelSectionStore" /* 7036 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import GuildStore from "GuildStore" /* 5177 */;
 import ReadStateStore from "ReadStateStore" /* 7015 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5349 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
 import Constants from "Constants" /* 1072 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
 import size from "module_2" /* 2 */;

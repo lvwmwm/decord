@@ -1,7 +1,7 @@
 // Module ID: 10424
 // Function ID: 10425
 // Name: NitroCoinSpotIllustration
-// Dependencies: [19, 21, 10425, 10426, 10427, 7755, 6020, 2]
+// Dependencies: [19, 21, 10425, 10426, 10427, 7755, 6010, 2]
 // Exports: NitroCoinSpotIllustration
 
 // Module 10424 (NitroCoinSpotIllustration)

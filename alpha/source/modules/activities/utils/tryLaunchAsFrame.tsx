@@ -1,11 +1,11 @@
 // Module ID: 12755
 // Function ID: 12756
 // Name: tryLaunchAsFrame
-// Dependencies: [2165, 7020, 12697, 5977, 12756, 12743, 2]
+// Dependencies: [2165, 7020, 12697, 5967, 12756, 12743, 2]
 // Exports: tryLaunchAsFrame
 
 // Module 12755 (tryLaunchAsFrame)
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5977 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5967 */;
 import FramesConstants from "FramesConstants" /* 7020 */;
 import getFrameSurfaces from "getFrameSurfaces" /* 12697 */;
 import FramesActionCreatorsDefault from "FramesActionCreators" /* 12743 */;

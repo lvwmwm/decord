@@ -1,21 +1,21 @@
-// Module ID: 20396
-// Function ID: 20397
+// Module ID: 20399
+// Function ID: 20400
 // Name: BlockedUserInGdmActionSheet
-// Dependencies: [19, 17, 5155, 1388, 16238, 1072, 21, 5306, 575, 5929, 6351, 1113, 504, 1255, 1187, 10553, 10891, 7930, 6037, 1256, 7951, 6020, 12042, 7746, 7443, 5936, 5552, 20397, 8134, 2]
+// Dependencies: [19, 17, 5155, 1388, 16238, 1072, 21, 5306, 575, 5919, 6341, 1113, 504, 1255, 1187, 10553, 10891, 7930, 6027, 1256, 7951, 6010, 12042, 7746, 7443, 5926, 5542, 20400, 8134, 2]
 // Exports: default
 
-// Module 20396 (BlockedUserInGdmActionSheet)
+// Module 20399 (BlockedUserInGdmActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl7 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6351 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6341 */;
 import TableRow2 from "TableRow" /* 7443 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 8134 */;
-import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators" /* 20397 */;
+import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators" /* 20400 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import UserStore from "UserStore" /* 1388 */;

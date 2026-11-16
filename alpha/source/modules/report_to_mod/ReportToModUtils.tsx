@@ -1,7 +1,7 @@
 // Module ID: 11159
 // Function ID: 11160
 // Name: ReportToModUtils
-// Dependencies: [8867, 5155, 5177, 6372, 1388, 11160, 11161, 7284, 8738, 7282, 1084, 5243, 8854, 8634, 8638, 11162, 2]
+// Dependencies: [8867, 5155, 5177, 6362, 1388, 11160, 11161, 7284, 8738, 7282, 1084, 5243, 8854, 8634, 8638, 11162, 2]
 // Exports: canAccessReportsChannel, canReportMessageToMods, getReportToModChannelId, isModeratorReportChannel, isModeratorReportChannelId, isModeratorReportMessage, isModeratorReportOrPostChannel, isModeratorReportOrPostChannelId, isModeratorReportPostChannel, isModeratorReportPostChannelId, isModeratorReportThreadStarterMessage, isSafeToTransitionToReportForCurrentUser, isUserAuthorOfReportedMessage, sortedModeratorReportTags
 
 // Module 11159 (ReportToModUtils)
@@ -18,7 +18,7 @@ import ForumChannelTypes from "ForumChannelTypes" /* 11162 */;
 import ForumPostMessagesStore from "ForumPostMessagesStore" /* 8867 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import GuildStore from "GuildStore" /* 5177 */;
-import MessageStore from "MessageStore" /* 6372 */;
+import MessageStore from "MessageStore" /* 6362 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 

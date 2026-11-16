@@ -1,15 +1,15 @@
 // Module ID: 12905
 // Function ID: 12906
 // Name: StageChannelCallNavigator
-// Dependencies: [32, 19, 17, 1083, 21, 12906, 1655, 5939, 575, 12907, 12974, 12909, 11007, 11006, 9069, 11990, 6066, 12975, 13056, 5377, 12715, 13064, 13065, 12913, 13070, 13079, 13081, 13110, 13111, 5306, 13112, 12934, 2]
+// Dependencies: [32, 19, 17, 1083, 21, 12906, 1655, 5929, 575, 12907, 12974, 12909, 11007, 11006, 9069, 11990, 6056, 12975, 13056, 5367, 12715, 13064, 13065, 12913, 13070, 13079, 13081, 13110, 13111, 5306, 13112, 12934, 2]
 // Exports: default
 
 // Module 12905 (StageChannelCallNavigator)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import spring_spring from "spring/spring" /* 5939 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6066 */;
+import spring_spring from "spring/spring" /* 5929 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6056 */;
 import MessageManagerDefault from "MessageManager" /* 9069 */;
 import participantHasVideoDefault from "participantHasVideo" /* 11990 */;
 import ModeratorOverlayState from "ModeratorOverlayState" /* 12906 */;

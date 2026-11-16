@@ -1,7 +1,7 @@
 // Module ID: 14591
 // Function ID: 14592
 // Name: CustomTypingIndicatorDisplay
-// Dependencies: [19, 21, 5306, 1113, 14579, 6337, 14592, 5929, 7428, 575, 2]
+// Dependencies: [19, 21, 5306, 1113, 14579, 6327, 14592, 5919, 7428, 575, 2]
 // Exports: default
 
 // Module 14591 (CustomTypingIndicatorDisplay)
@@ -17,8 +17,8 @@ import size from "module_2" /* 2 */;
 let c3;
 let closure_4;
 let tmp3;
-const Text_Text = tmp3(5929);
-const Stack_Stack = tmp3(6337);
+const Text_Text = tmp3(5919);
+const Stack_Stack = tmp3(6327);
 const Pressables = tmp3(7428);
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
 let closure_5 = createStyles.createStyles(() => ({ text: { flexShrink: 1 }, pressable: { flex: 1 } }));

@@ -1,12 +1,12 @@
 // Module ID: 8588
 // Function ID: 8589
 // Name: FramePreviewOverrideFrame
-// Dependencies: [19, 17, 8584, 7962, 21, 5306, 6020, 2]
+// Dependencies: [19, 17, 8584, 7962, 21, 5306, 6010, 2]
 // Exports: default
 
 // Module 8588 (FramePreviewOverrideFrame)
 import Fragment from "Fragment" /* 21 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import Constants from "Constants" /* 7962 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

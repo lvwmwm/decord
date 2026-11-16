@@ -1,14 +1,14 @@
 // Module ID: 16101
 // Function ID: 16102
 // Name: VoiceChannelHeader
-// Dependencies: [19, 17, 5154, 5177, 5238, 1072, 21, 5306, 575, 16102, 16103, 5929, 16104, 504, 12971, 5954, 8460, 1113, 12540, 1187, 7219, 16106, 13054, 10982, 7428, 2]
+// Dependencies: [19, 17, 5154, 5177, 5238, 1072, 21, 5306, 575, 16102, 16103, 5919, 16104, 504, 12971, 5944, 8460, 1113, 12540, 1187, 7219, 16106, 13054, 10982, 7428, 2]
 
 // Module 16101 (VoiceChannelHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import useChannelNameDefault from "useChannelName" /* 5954 */;
+import useChannelNameDefault from "useChannelName" /* 5944 */;
 import isRoleRequiredDefault from "isRoleRequired" /* 7219 */;
 import Pressables from "Pressables" /* 7428 */;
 import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8460 */;
@@ -52,7 +52,7 @@ function PrivateChannelSubtitle(channel) {
   const tmp5 = View;
   if (tmp6Result) {
     const obj3 = { style: tmp.subtitle, variant: "body-xs/medium", color: "text-overlay-light", children: " - " };
-    tmp6Result = tmp6(tmp7(5929).Text, obj3);
+    tmp6Result = tmp6(tmp7(5919).Text, obj3);
   }
   items[1] = tmp6Result;
   let tmp6Result2 = state === tmp7(16102).CallStates.CONNECTED;
@@ -128,13 +128,13 @@ class VoiceChannelHeader {
     const obj7 = { style: tmp.middle, children: items4 };
     if (typeof formatToPlainStringResult === "string") {
       const obj8 = { lineClamp: 1, lineBreakMode: "tail", variant: "body-md/semibold", color: "text-overlay-light", children: formatToPlainStringResult };
-      tmp14Result = tmp14(tmp2(5929).Text, obj8);
+      tmp14Result = tmp14(tmp2(5919).Text, obj8);
     }
     items4 = [tmp14Result, ];
     let tmp14Result3 = name;
     if (typeof name === "string") {
       const obj9 = { lineClamp: 1, lineBreakMode: "tail", variant: "body-xs/medium", color: "text-overlay-light", children: name };
-      tmp14Result3 = tmp14(tmp2(5929).Text, obj9);
+      tmp14Result3 = tmp14(tmp2(5919).Text, obj9);
     }
     items4[1] = tmp14Result3;
     items3[1] = closure_11(View, obj7);

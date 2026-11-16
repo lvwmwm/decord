@@ -1,7 +1,7 @@
 // Module ID: 16001
 // Function ID: 16002
 // Name: GuildPowerupsMarketingHeader
-// Dependencies: [19, 17, 5523, 21, 5306, 575, 671, 5929, 16002, 10688, 10676, 1113, 2733, 16003, 2]
+// Dependencies: [19, 17, 5513, 21, 5306, 575, 671, 5919, 16002, 10688, 10676, 1113, 2733, 16003, 2]
 // Exports: default
 
 // Module 16001 (GuildPowerupsMarketingHeader)
@@ -9,13 +9,13 @@ import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 10676 */;
 import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 10688 */;
 import useMarketablePowerupPerksDefault from "useMarketablePowerupPerks" /* 16002 */;
 import orderMarketablePerksForDisplayDefault from "orderMarketablePerksForDisplay" /* 16003 */;
 import react from "react" /* 19 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 5523 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 5513 */;
 import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
@@ -64,7 +64,7 @@ export default function GuildPowerupsMarketingHeader(guild) {
     }
     if (0 !== num) {
       ({ style: tmp.text, variant: "body-sm/semibold", children: format(v7lwpzR, obj7) });
-      const Text = guild(5929).Text;
+      const Text = guild(5919).Text;
       const intl = guild(1113).intl;
       format = intl.format;
       let str2 = "";

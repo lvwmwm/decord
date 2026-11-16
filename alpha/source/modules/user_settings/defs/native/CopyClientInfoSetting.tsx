@@ -1,18 +1,18 @@
-// Module ID: 18189
-// Function ID: 18190
+// Module ID: 18191
+// Function ID: 18192
 // Name: CopyClientInfoSetting
-// Dependencies: [12367, 21, 1379, 5552, 14059, 7943, 6014, 1113, 8779, 7953, 7951, 7913, 1380, 6033, 5263, 12406, 6929, 5131, 2]
+// Dependencies: [12367, 21, 1379, 5542, 14059, 7943, 6004, 1113, 8779, 7953, 7951, 7913, 1380, 6023, 5263, 12406, 6919, 5131, 2]
 // Exports: getClientInfoString
 
-// Module 18189 (CopyClientInfoSetting)
+// Module 18191 (CopyClientInfoSetting)
 import intl8 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import UserSettings from "UserSettings" /* 5131 */;
 import DeviceUtils from "DeviceUtils" /* 5263 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import ToastUtils from "ToastUtils" /* 6014 */;
-import CopyIcon from "CopyIcon" /* 6033 */;
-import ClipboardListIcon from "ClipboardListIcon" /* 6929 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import ToastUtils from "ToastUtils" /* 6004 */;
+import CopyIcon from "CopyIcon" /* 6023 */;
+import ClipboardListIcon from "ClipboardListIcon" /* 6919 */;
 import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7913 */;
 import ClipboardUtils from "ClipboardUtils" /* 7943 */;
 import ActionSheet2 from "ActionSheet" /* 7951 */;

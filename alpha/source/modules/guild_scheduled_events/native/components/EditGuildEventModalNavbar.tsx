@@ -1,7 +1,7 @@
 // Module ID: 7992
 // Function ID: 7993
 // Name: EditGuildEventModalNavbar
-// Dependencies: [32, 19, 17, 21, 5306, 7971, 1255, 7415, 5929, 1113, 7427, 7430, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 7971, 1255, 7415, 5919, 1113, 7427, 7430, 2]
 // Exports: default
 
 // Module 7992 (EditGuildEventModalNavbar)
@@ -52,7 +52,7 @@ export default function EditGuildEventModalNavbar(screen) {
   const SafeAreaPaddingView = tmp2(7415).SafeAreaPaddingView;
   items1 = [hasOwnProperty(View, obj2), , ];
   const obj3 = { style: tmp.headerTitle, variant: "body-sm/medium", color: "text-default", children: intl.format(intl3.t["42HaFY"], { step: tmp6, total: tmp7 }) };
-  const Text = tmp2(5929).Text;
+  const Text = tmp2(5919).Text;
   intl = tmp2(1113).intl;
   items1[1] = hasOwnProperty(Text, obj3);
   const obj4 = { style: tmp.buttonContainer, children: hasOwnProperty(HeaderActionButton, obj5) };

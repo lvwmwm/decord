@@ -1,7 +1,7 @@
 // Module ID: 15500
 // Function ID: 15501
 // Name: ProductDetailsActionSheetPurchaseSection
-// Dependencies: [32, 19, 17, 8500, 1074, 1072, 10030, 1390, 21, 5306, 575, 7988, 11817, 5552, 11794, 1113, 10436, 10451, 9518, 5943, 1502, 7918, 6848, 15501, 2121, 8484, 15509, 1075, 15510, 10020, 9442, 5929, 5937, 2114, 9409, 504, 15469, 2174, 8497, 8496, 10437, 9723, 9405, 10435, 10029, 15512, 15513, 1630, 9452, 5936, 15514, 1242, 1380, 6772, 6269, 2]
+// Dependencies: [32, 19, 17, 8500, 1074, 1072, 10030, 1390, 21, 5306, 575, 7988, 11817, 5542, 11794, 1113, 10436, 10451, 9518, 5933, 1502, 7918, 6838, 15501, 2121, 8484, 15509, 1075, 15510, 10020, 9442, 5919, 5927, 2114, 9409, 504, 15469, 2174, 8497, 8496, 10437, 9723, 9405, 10435, 10029, 15512, 15513, 1630, 9452, 5926, 15514, 1242, 1380, 6762, 6259, 2]
 // Exports: default
 
 // Module 15500 (ProductDetailsActionSheetPurchaseSection)
@@ -13,11 +13,11 @@ import PlatformUtils from "PlatformUtils" /* 1380 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 2114 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6269 */;
-import ReleaseChannelUtils from "ReleaseChannelUtils" /* 6772 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6259 */;
+import ReleaseChannelUtils from "ReleaseChannelUtils" /* 6762 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7918 */;
 import OrbsIcon from "OrbsIcon" /* 9442 */;
 import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 10020 */;
@@ -129,7 +129,7 @@ function VCButton(balance) {
   } else {
     str = "primary";
   }
-  const tmp2Result = tmp2(5943);
+  const tmp2Result = tmp2(5933);
   color = tmp2Result.useButtonTextColorStyles(str);
   const tmp2Result2 = tmp2(1502);
   navigation = tmp2Result2.useNavigation();
@@ -236,7 +236,7 @@ function VCButton(balance) {
     };
     intl = tmp2(1113).intl;
     obj6 = { orbPrice: price.amount };
-    const obj7 = { style: tmp.buttonContainer, children: closure_13(tmp2(5937).BaseTextButton, obj8) };
+    const obj7 = { style: tmp.buttonContainer, children: closure_13(tmp2(5927).BaseTextButton, obj8) };
     obj8 = {
       loading: false,
       textElement: closure_13(color, obj5),

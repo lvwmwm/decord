@@ -1,15 +1,15 @@
-// Module ID: 18547
-// Function ID: 18548
+// Module ID: 18549
+// Function ID: 18550
 // Name: UseDataForQuestsSetting
-// Dependencies: [9202, 18548, 17346, 5131, 12406, 1113, 18549, 2]
+// Dependencies: [9202, 18550, 17346, 5131, 12406, 1113, 18551, 2]
 
-// Module 18547 (UseDataForQuestsSetting)
+// Module 18549 (UseDataForQuestsSetting)
 import intl2 from "intl" /* 1113 */;
 import UserSettings from "UserSettings" /* 5131 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;
 import useParentalControlSettings from "useParentalControlSettings" /* 17346 */;
-import useAdPersonalizationTogglesDisabled from "useAdPersonalizationTogglesDisabled" /* 18548 */;
-import AdTopicOptOutClientExperiment from "AdTopicOptOutClientExperiment" /* 18549 */;
+import useAdPersonalizationTogglesDisabled from "useAdPersonalizationTogglesDisabled" /* 18550 */;
+import AdTopicOptOutClientExperiment from "AdTopicOptOutClientExperiment" /* 18551 */;
 import SettingBuilders_mod from "SettingBuilders" /* 12406 */;
 import size from "module_2" /* 2 */;
 

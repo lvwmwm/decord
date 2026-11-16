@@ -1,13 +1,13 @@
 // Module ID: 12515
 // Function ID: 12516
 // Name: PlaintextFileMarkdownParser
-// Dependencies: [12516, 12521, 6348, 6347, 6051, 2]
+// Dependencies: [12516, 12521, 6338, 6337, 6041, 2]
 // Exports: parseMarkdownPreview
 
 // Module 12515 (PlaintextFileMarkdownParser)
-import findCodedLinks from "findCodedLinks" /* 6051 */;
-import MarkupLinkRule from "MarkupLinkRule" /* 6347 */;
-import UnicodeSanitizationUtils from "UnicodeSanitizationUtils" /* 6348 */;
+import findCodedLinks from "findCodedLinks" /* 6041 */;
+import MarkupLinkRule from "MarkupLinkRule" /* 6337 */;
+import UnicodeSanitizationUtils from "UnicodeSanitizationUtils" /* 6338 */;
 import _modDef12516 from "module_12516" /* 12516 */;
 import dollarmathPlugin from "dollarmathPlugin" /* 12521 */;
 import size from "module_2" /* 2 */;

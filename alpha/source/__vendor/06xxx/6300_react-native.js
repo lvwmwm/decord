@@ -1,29 +1,14 @@
 // Module ID: 6300
 // Function ID: 6301
 // Name: react-native
-// Dependencies: [17]
-// Exports: executeNativeBackPress, parseBooleanToOptionalBooleanNativeProp
+// Dependencies: [17, 65]
 
 // Module 6300 (react-native)
 import react_native from "react-native" /* 17 */;
+import module_65 from "module_65" /* 65 */;
 
-let Platform;
-let _window;
-({ BackHandler: _window, Platform } = react_native);
-const items = ["ios", "android"];
+const codegenNativeComponent = react_native.codegenNativeComponent;
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSScreenContainer", validAttributes: {} };
 
-export const isSearchBarAvailableForCurrentPlatform = items.includes("android");
-export const isHeaderBarButtonsAvailableForCurrentPlatform = false;
-export function executeNativeBackPress() {
-  React.exitApp();
-  return true;
-}
-export function parseBooleanToOptionalBooleanNativeProp(fullScreenSwipeEnabled) {
-  if (undefined === fullScreenSwipeEnabled) {
-    return "undefined";
-  } else if (true === fullScreenSwipeEnabled) {
-    return "true";
-  } else if (false === fullScreenSwipeEnabled) {
-    return "false";
-  }
-}
+export default module_65.get("RNSScreenContainer", () => obj);
+export { __INTERNAL_VIEW_CONFIG };

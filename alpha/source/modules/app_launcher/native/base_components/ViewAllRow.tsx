@@ -1,7 +1,7 @@
 // Module ID: 13425
 // Function ID: 13426
 // Name: ViewAllRow
-// Dependencies: [19, 17, 21, 5306, 7443, 1113, 5929, 2]
+// Dependencies: [19, 17, 21, 5306, 7443, 1113, 5919, 2]
 // Exports: default
 
 // Module 13425 (ViewAllRow)
@@ -31,7 +31,7 @@ export default function ViewAllRow(title) {
     formatToPlainStringResult = intl.formatToPlainString(tmp3(1113).t["bj/2kV"], obj);
   }
   ({ color: "text-brand", variant: "body-md/semibold", children: intl2.format(intl3.t.gVw57p, {}) });
-  const Text = tmp3(5929).Text;
+  const Text = tmp3(5919).Text;
   intl2 = tmp3(1113).intl;
   return <TableRow accessibilityLabel={formatToPlainStringResult} label={null} onPress={onPress} end />;
 };

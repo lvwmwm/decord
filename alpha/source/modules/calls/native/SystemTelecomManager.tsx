@@ -1,7 +1,7 @@
 // Module ID: 16892
 // Function ID: 16893
 // Name: SystemTelecomManager
-// Dependencies: [5, 32, 17, 6800, 5159, 502, 5155, 2133, 6071, 5248, 5209, 1388, 5981, 6074, 1072, 6075, 3, 16893, 572, 16894, 1256, 6067, 7937, 6935, 11, 8136, 6225, 8858, 1269, 16895, 5954, 8134, 1380, 2123, 2]
+// Dependencies: [5, 32, 17, 6790, 5159, 502, 5155, 2133, 6061, 5248, 5209, 1388, 5971, 6064, 1072, 6065, 3, 16893, 572, 16894, 1256, 6057, 7937, 6925, 11, 8136, 6215, 8858, 1269, 16895, 5944, 8134, 1380, 2123, 2]
 
 // Module 16892 (SystemTelecomManager)
 import LoggerDefault from "Logger" /* 3 */;
@@ -12,10 +12,10 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import v1 from "v1" /* 1269 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import ChannelRecord from "ChannelRecord" /* 5159 */;
-import useChannelName from "useChannelName" /* 5954 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6067 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 6225 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6935 */;
+import useChannelName from "useChannelName" /* 5944 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6057 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 6215 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6925 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 8134 */;
 import CallActionCreatorsDefault from "CallActionCreators" /* 8136 */;
@@ -24,18 +24,18 @@ import SystemTelecomPlatform from "SystemTelecomPlatform" /* 16894 */;
 import SystemTelecomUtils from "SystemTelecomUtils" /* 16895 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6800 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6790 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6071 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
 import RelationshipStore from "RelationshipStore" /* 5248 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
 import UserStore from "UserStore" /* 1388 */;
-import VoiceStateStore from "VoiceStateStore" /* 5981 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 6074 */;
+import VoiceStateStore from "VoiceStateStore" /* 5971 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 6064 */;
 import Constants_mod from "Constants" /* 1072 */;
-import Constants_mod2 from "Constants" /* 6075 */;
+import Constants_mod2 from "Constants" /* 6065 */;
 import react_native2 from "react-native" /* 16893 */;
 import LifecycleManager from "LifecycleManager" /* 2123 */;
 import size from "module_2" /* 2 */;

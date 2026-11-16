@@ -1,16 +1,16 @@
-// Module ID: 18559
-// Function ID: 18560
+// Module ID: 18561
+// Function ID: 18562
 // Name: DataAndPrivacyScreen
-// Dependencies: [19, 6846, 9202, 1072, 21, 18551, 1113, 2188, 10627, 1502, 17385, 17388, 12406, 17342, 17213, 2]
+// Dependencies: [19, 6836, 9202, 1072, 21, 18553, 1113, 2188, 10627, 1502, 17385, 17388, 12406, 17342, 17213, 2]
 // Exports: default
 
-// Module 18559 (DataAndPrivacyScreen)
+// Module 18561 (DataAndPrivacyScreen)
 import intl8 from "intl" /* 1113 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;
 import SecureFramesUtils from "SecureFramesUtils" /* 10627 */;
 import SettingBuilders from "SettingBuilders" /* 12406 */;
 import react from "react" /* 19 */;
-import ConsentStore from "ConsentStore" /* 6846 */;
+import ConsentStore from "ConsentStore" /* 6836 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -62,7 +62,7 @@ export default function DataAndPrivacySettings() {
   let stackNavigation;
   let obj = stackNavigation(1502);
   stackNavigation = obj.useStackNavigation();
-  let obj2 = stackNavigation(18551);
+  let obj2 = stackNavigation(18553);
   const pinotDataPrivacySections = obj2.usePinotDataPrivacySections();
   let obj3 = { settings: items, subLabel: format(prop, obj4) };
   items = [MobileUserSettings.USE_DATA_TO_IMPROVE_DISCORD];

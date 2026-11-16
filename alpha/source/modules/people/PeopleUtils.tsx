@@ -1,12 +1,12 @@
 // Module ID: 10840
 // Function ID: 10841
 // Name: PeopleUtils
-// Dependencies: [5248, 1072, 10841, 8137, 10842, 572, 5372, 2]
+// Dependencies: [5248, 1072, 10841, 8137, 10842, 572, 5362, 2]
 
 // Module 10840 (PeopleUtils)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import UserUtilsDefault from "UserUtils" /* 5372 */;
+import UserUtilsDefault from "UserUtils" /* 5362 */;
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 8137 */;
 import GameRelationshipActionCreatorsDefault from "GameRelationshipActionCreators" /* 10841 */;
 import AcceptFriendRequestModalActionCreators from "AcceptFriendRequestModalActionCreators" /* 10842 */;

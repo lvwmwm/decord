@@ -1,7 +1,7 @@
 // Module ID: 14833
 // Function ID: 14834
 // Name: MultiAccountActionCreators
-// Dependencies: [5, 502, 5209, 14829, 1072, 3, 1098, 572, 1285, 1256, 6844, 2]
+// Dependencies: [5, 502, 5209, 14829, 1072, 3, 1098, 572, 1285, 1256, 6834, 2]
 // Exports: invalidatePushSyncTokens, moveAccount, removeAccount, reportAccountSwitchTimeout, switchAccount, updatePushSyncToken, validateMultiAccountTokens
 
 // Module 14833 (MultiAccountActionCreators)
@@ -167,7 +167,7 @@ export function switchAccount(id, switchSynchronously, CHOOSE_ACCOUNT) {
       tmp4 = null;
     }
     dispatch(obj5);
-    const tmp5Result = tmp5(6844);
+    const tmp5Result = tmp5(6834);
     resolved = tmp5Result.switchAccountToken(token, switchSynchronously);
   }
   return resolved;

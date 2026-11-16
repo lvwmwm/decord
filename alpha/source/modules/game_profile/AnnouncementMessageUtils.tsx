@@ -1,7 +1,7 @@
 // Module ID: 10404
 // Function ID: 10405
 // Name: AnnouncementMessageUtils
-// Dependencies: [5249, 2119, 6383, 6361, 1090, 10405, 6374, 10406, 1113, 1381, 2]
+// Dependencies: [5249, 2119, 6373, 6351, 1090, 10405, 6364, 10406, 1113, 1381, 2]
 // Exports: getPollExpiryLabel, getPosterUrl, toAnnouncementMessages
 
 // Module 10404 (AnnouncementMessageUtils)

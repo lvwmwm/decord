@@ -1,17 +1,17 @@
-// Module ID: 18925
-// Function ID: 18926
+// Module ID: 18927
+// Function ID: 18928
 // Name: GuildActionRows
-// Dependencies: [19, 17, 8735, 7015, 6060, 7866, 6959, 21, 5306, 575, 7223, 5348, 5139, 563, 8731, 6848, 12466, 2121, 14789, 14688, 1113, 16277, 2]
+// Dependencies: [19, 17, 8735, 7015, 6050, 7866, 6949, 21, 5306, 575, 7223, 5338, 5139, 563, 8731, 6838, 12466, 2121, 14789, 14688, 1113, 16277, 2]
 // Exports: GuildRolesAndChannelsRow
 
-// Module 18925 (GuildActionRows)
+// Module 18927 (GuildActionRows)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 6060 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
-import ReadStateConstants from "ReadStateConstants" /* 6959 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 6050 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
+import ReadStateConstants from "ReadStateConstants" /* 6949 */;
 import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7866 */;
 import ChannelListState from "ChannelListState" /* 8731 */;
 import react from "react" /* 19 */;
@@ -40,7 +40,7 @@ export function GuildRolesAndChannelsRow(guild) {
   const tmp4 = id(7223)(guild);
   const tmp2 = id;
   id = guild.id;
-  let obj = guild(5348);
+  let obj = guild(5338);
   const result = obj.useIsDismissibleContentDismissed_UNSAFE(guild(5139).DismissibleContent.CHANNEL_BROWSER_NEW_BADGE_NUX);
   let obj2 = guild(563);
   const items = [ReadStateStore];

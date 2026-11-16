@@ -1,20 +1,20 @@
-// Module ID: 18339
-// Function ID: 18340
+// Module ID: 18341
+// Function ID: 18342
 // Name: BalanceWidgetMenu
-// Dependencies: [19, 17, 1072, 1074, 5152, 5338, 21, 7443, 5929, 1113, 10568, 5139, 1256, 10128, 5341, 18340, 10437, 17526, 7937, 5552, 8484, 5348, 18341, 10054, 5949, 2]
+// Dependencies: [19, 17, 1072, 1074, 5152, 6954, 21, 7443, 5919, 1113, 10568, 5139, 1256, 10128, 6957, 18342, 10437, 17526, 7937, 5542, 8484, 5338, 18343, 10054, 5939, 2]
 // Exports: default, useIsOrbWalletEntryRowShown, useOpenOrbWalletFromYouScreen
 
-// Module 18339 (BalanceWidgetMenu)
+// Module 18341 (BalanceWidgetMenu)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import intl3 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import dismissible_content from "dismissible_content" /* 5139 */;
-import QuestConstants from "QuestConstants" /* 5338 */;
-import QuestTypes from "QuestTypes" /* 5341 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5348 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5338 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import QuestConstants from "QuestConstants" /* 6954 */;
+import QuestTypes from "QuestTypes" /* 6957 */;
 import TableRow2 from "TableRow" /* 7443 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
 import QuestUtils from "QuestUtils" /* 10128 */;

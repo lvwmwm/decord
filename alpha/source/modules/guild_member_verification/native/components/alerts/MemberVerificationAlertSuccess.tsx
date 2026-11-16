@@ -1,10 +1,10 @@
-// Module ID: 6925
-// Function ID: 6926
+// Module ID: 6915
+// Function ID: 6916
 // Name: MemberVerificationAlertSuccess
-// Dependencies: [19, 17, 5307, 5177, 21, 5306, 504, 6340, 1113, 5923, 6926, 5929, 2]
+// Dependencies: [19, 17, 5307, 5177, 21, 5306, 504, 6330, 1113, 5913, 6916, 5919, 2]
 // Exports: default
 
-// Module 6925 (MemberVerificationAlertSuccess)
+// Module 6915 (MemberVerificationAlertSuccess)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5307 */;

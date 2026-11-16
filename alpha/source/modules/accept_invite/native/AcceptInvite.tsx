@@ -1,7 +1,7 @@
 // Module ID: 15077
 // Function ID: 15078
 // Name: AcceptInvite
-// Dependencies: [19, 17, 1072, 21, 5306, 575, 1655, 7445, 1255, 5902, 15078, 15079, 15082, 1414, 1449, 15087, 1496, 6020, 2]
+// Dependencies: [19, 17, 1072, 21, 5306, 575, 1655, 7445, 1255, 5892, 15078, 15079, 15082, 1414, 1449, 15087, 1496, 6010, 2]
 // Exports: default
 
 // Module 15077 (AcceptInvite)
@@ -12,8 +12,8 @@ import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1449 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import useToken from "useToken" /* 5902 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import useToken from "useToken" /* 5892 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import Card_Card from "Card/Card" /* 7445 */;
 import useEaseInEaseOutLayoutAnimationsDefault from "useEaseInEaseOutLayoutAnimations" /* 15078 */;
 import InviteDetailsDefault from "InviteDetails" /* 15079 */;

@@ -1,7 +1,7 @@
 // Module ID: 13373
 // Function ID: 13374
 // Name: useActivityShelfItemsSorting
-// Dependencies: [19, 5136, 5984, 1380, 2119, 2]
+// Dependencies: [19, 5136, 5974, 1380, 2119, 2]
 // Exports: default
 
 // Module 13373 (useActivityShelfItemsSorting)

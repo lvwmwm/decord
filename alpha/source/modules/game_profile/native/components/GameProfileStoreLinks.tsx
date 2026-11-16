@@ -1,15 +1,15 @@
 // Module ID: 10333
 // Function ID: 10334
 // Name: GameProfileStoreLinks
-// Dependencies: [19, 17, 21, 5306, 575, 10284, 6012, 5936, 1113, 5552, 10312, 10286, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 10284, 6002, 5926, 1113, 5542, 10312, 10286, 2]
 // Exports: default
 
 // Module 10333 (GameProfileStoreLinks)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5552 */;
-import components_Button_Button from "components/Button/Button" /* 5936 */;
-import LinkingDefault from "Linking" /* 6012 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5542 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
+import LinkingDefault from "Linking" /* 6002 */;
 import useOpenExternalUrlFromGameProfileDefault from "useOpenExternalUrlFromGameProfile" /* 10284 */;
 import GameProfileStoreLinksActionSheet from "GameProfileStoreLinksActionSheet" /* 10312 */;
 import react from "react" /* 19 */;

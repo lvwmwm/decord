@@ -1,14 +1,14 @@
 // Module ID: 8825
 // Function ID: 8826
 // Name: AnalyticsActions
-// Dependencies: [5, 8826, 1362, 8808, 1072, 8665, 8828, 8804, 8829, 8831, 8834, 5345, 6067, 1256, 8835, 8781, 1380, 1269, 8840, 5341, 2]
+// Dependencies: [5, 8826, 1362, 8808, 1072, 8665, 8828, 8804, 8829, 8831, 8834, 6961, 6057, 1256, 8835, 8781, 1380, 1269, 8840, 6957, 2]
 // Exports: createAppStoreOverlayCarouselScrollTracker, getAdSessionProperties, getAppStoreOverlayStoreAppIds, trackAdContentAppStoreOverlayEvent, trackAdContentClicked, trackAdContentQuestBarOrDockModeChange, trackAdContentRenderingFailure, trackAppStoreOverlayCarouselScroll, trackAppStoreOverlayEvent, trackBountyCarouselEmptyStateViewed, trackBountyVerticalScroll, trackQuestContentClicked, trackQuestContentQuestBarOrDockModeChange, trackQuestContentRenderingFailure, trackQuestEmbedFallbackViewed, trackQuestHomeCarouselScroll, trackQuestHomeOrbShopCarouselScroll, trackQuestHomeOrbShopCarouselViewed, trackQuestHomeSearchClosed, trackQuestHomeSearchEntered, trackQuestHomeSearchQuerySubmitted
 
 // Module 8825 (AnalyticsActions)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import QuestTypes from "QuestTypes" /* 5341 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6067 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6057 */;
+import QuestTypes from "QuestTypes" /* 6957 */;
 import QuestDataUtils from "QuestDataUtils" /* 8804 */;
 import SessionAdGenerator from "SessionAdGenerator" /* 8828 */;
 import utils_QuestUtils from "utils/QuestUtils" /* 8829 */;
@@ -80,7 +80,7 @@ function trackQuestEvent(questId) {
     obj = {};
     const id = value.id;
     tmp21Result = AnalyticsTypes;
-    const merged = Object.assign(getCommonProperties(id, sourceQuestContent, tmp21(5345).AdCreativeType.QUEST, shouldExtendSession));
+    const merged = Object.assign(getCommonProperties(id, sourceQuestContent, tmp21(6961).AdCreativeType.QUEST, shouldExtendSession));
     const merged1 = Object.assign(obj2);
     const merged2 = Object.assign(properties);
     const preview = value.preview;

@@ -1,14 +1,14 @@
-// Module ID: 19721
-// Function ID: 19722
+// Module ID: 19723
+// Function ID: 19724
 // Name: ChannelSettingsEditForumTag
-// Dependencies: [32, 19, 17, 6969, 5155, 1391, 21, 5306, 575, 1502, 504, 5929, 1113, 9112, 7427, 6337, 7746, 7443, 7428, 9543, 7894, 1414, 10409, 1187, 7629, 7954, 6269, 2]
+// Dependencies: [32, 19, 17, 6969, 5155, 1391, 21, 5306, 575, 1502, 504, 5919, 1113, 9112, 7427, 6327, 7746, 7443, 7428, 9543, 7894, 1414, 10409, 1187, 7629, 7954, 6259, 2]
 // Exports: default
 
-// Module 19721 (ChannelSettingsEditForumTag)
+// Module 19723 (ChannelSettingsEditForumTag)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6269 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6259 */;
 import ForumActionCreatorsDefault from "ForumActionCreators" /* 9112 */;
 import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9543 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
@@ -274,7 +274,7 @@ export default function ChannelSettingsEditForumTag(channelId) {
   }, items5);
   const obj5 = { style: tmp.container, children: null };
   const obj6 = { spacing: 24, style: tmp.sections, children: null };
-  const Stack = tmp3(6337).Stack;
+  const Stack = tmp3(6327).Stack;
   const TableRowGroup = tmp3(7746).TableRowGroup;
   const TableRow = tmp3(7443).TableRow;
   const obj7 = {
@@ -324,7 +324,7 @@ export default function ChannelSettingsEditForumTag(channelId) {
       items6 = [closure_10(TableRowGroup, obj14), ];
       const obj15 = { style: tmp.hint, children: closure_10(Text, obj16) };
       obj16 = { variant: "body-sm/medium", color: "text-muted", children: intl2.string(channelId(1113).t["3v8kZH"]) };
-      Text = tmp3(5929).Text;
+      Text = tmp3(5919).Text;
       intl2 = tmp3(1113).intl;
       items6[1] = closure_10(emoji, obj15);
       const items7 = [channel(emoji, obj13), , ];

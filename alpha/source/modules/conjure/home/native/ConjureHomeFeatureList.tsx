@@ -1,15 +1,15 @@
 // Module ID: 13976
 // Function ID: 13977
 // Name: ConjureHomeFeatureList
-// Dependencies: [19, 17, 21, 5306, 575, 7930, 5893, 10324, 5929, 9458, 12682, 1113, 4131, 5902, 6042, 11224, 671, 13977, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 7930, 5883, 10324, 5919, 9458, 12682, 1113, 4131, 5892, 6032, 11224, 671, 13977, 2]
 
 // Module 13976 (ConjureHomeFeatureList)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import intl3 from "intl" /* 1113 */;
 import _modDef4131 from "module_4131" /* 4131 */;
-import LinearGradientDefault from "LinearGradient" /* 5893 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import LinearGradientDefault from "LinearGradient" /* 5883 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import CircleCheckIcon2 from "CircleCheckIcon" /* 7930 */;
 import ShieldIcon2 from "ShieldIcon" /* 11224 */;
 import RobotIcon2 from "RobotIcon" /* 12682 */;
@@ -197,7 +197,7 @@ let closure_14 = {
     const obj7 = { size: "xxs", color: nativeDefault.colors.ICON_FEEDBACK_WARNING };
     ({ left: nativeDefault.space.PX_6 });
     const TrophyIcon = styles(10324).TrophyIcon;
-    items4 = [closure_5(TrophyIcon, obj7), closure_5(styles(5929).Text, { variant: "footnote/semibold", color: "text-overlay-light", children: 128 })];
+    items4 = [closure_5(TrophyIcon, obj7), closure_5(styles(5919).Text, { variant: "footnote/semibold", color: "text-overlay-light", children: 128 })];
     items1[4] = closure_6(closure_4, obj5);
     const obj8 = { style: items5, children: items6 };
     items5 = [styles.pill, { right: nativeDefault.space.PX_6 }];
@@ -263,7 +263,7 @@ let closure_14 = {
     let items6;
     styles = styles.styles;
     let token;
-    let obj = styles(5902);
+    let obj = styles(5892);
     token = obj.useToken(token(575).colors.BACKGROUND_BRAND);
     items = [token];
     let obj2 = { style: items1, children: items2 };
@@ -274,7 +274,7 @@ let closure_14 = {
       return items;
     }, items);
     let obj3 = { style: styles.profileBanner, colors: memo, start: { x: 0, y: 0.5 }, end: { x: 1, y: 0.5 } };
-    items2 = [closure_5(token(5893), obj3), ];
+    items2 = [closure_5(token(5883), obj3), ];
     const obj5 = { style: items3 };
     items3 = [, ];
     const obj4 = { style: styles.profileBody, children: items4 };
@@ -349,7 +349,7 @@ let closure_14 = {
     items2 = [, ];
     ({ pill: arr3[0], overlayTimer: arr3[1] } = styles);
     const obj7 = { size: "xxs", color: nativeDefault.colors.ICON_OVERLAY_LIGHT };
-    const ClockIcon = styles(6042).ClockIcon;
+    const ClockIcon = styles(6032).ClockIcon;
     items3 = [closure_5(ClockIcon, obj7), ];
     const obj8 = { style: styles.overlayTimerValue };
     items3[1] = closure_5(Line, obj8);

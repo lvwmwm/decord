@@ -1,7 +1,7 @@
 // Module ID: 13564
 // Function ID: 13565
 // Name: ConjureNativeChat
-// Dependencies: [32, 19, 17, 2120, 7365, 7377, 7379, 7321, 21, 575, 671, 5306, 504, 13565, 13566, 13567, 13192, 13164, 1630, 7331, 13568, 13569, 13570, 13571, 13573, 13575, 13576, 13577, 13578, 13579, 1113, 4131, 13580, 13582, 6015, 13583, 7322, 13574, 1380, 13587, 7643, 5501, 13588, 10524, 13589, 13590, 13591, 13142, 13592, 13211, 7888, 13595, 13210, 5929, 13618, 13759, 13761, 13764, 13774, 13775, 8159, 13745, 13791, 7533, 5893, 2]
+// Dependencies: [32, 19, 17, 2120, 7365, 7377, 7379, 7321, 21, 575, 671, 5306, 504, 13565, 13566, 13567, 13192, 13164, 1630, 7331, 13568, 13569, 13570, 13571, 13573, 13575, 13576, 13577, 13578, 13579, 1113, 4131, 13580, 13582, 6005, 13583, 7322, 13574, 1380, 13587, 7643, 5491, 13588, 10524, 13589, 13590, 13591, 13142, 13592, 13211, 7888, 13595, 13210, 5919, 13618, 13759, 13761, 13764, 13774, 13775, 8159, 13745, 13791, 7533, 5883, 2]
 // Exports: default
 
 // Module 13564 (ConjureNativeChat)
@@ -11,8 +11,8 @@ import _modDef671 from "module_671" /* 671 */;
 import intl5 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import _modDef4131 from "module_4131" /* 4131 */;
-import LinearGradientDefault from "LinearGradient" /* 5893 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 6015 */;
+import LinearGradientDefault from "LinearGradient" /* 5883 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
 import conjureChatTurns from "conjureChatTurns" /* 7322 */;
 import _modDef7533 from "module_7533" /* 7533 */;
 import useKeyboardIsOpen from "useKeyboardIsOpen" /* 7643 */;
@@ -56,7 +56,7 @@ let obj4;
 let obj5;
 let obj6;
 let tmp;
-const ChatInputUtils = tmp(5501);
+const ChatInputUtils = tmp(5491);
 function TranscriptFade(children) {
   let obj3;
   let obj7;
@@ -171,11 +171,11 @@ export default function ConjureNativeChat(projectId) {
   let tmp81;
   let tmp82;
   let tmp95;
-  const f107785 = () => {
+  const f107798 = () => {
     map = new Map();
     return map;
   };
-  const f107788 = () => {
+  const f107801 = () => {
     map = new Map();
     return map;
   };
@@ -393,8 +393,8 @@ export default function ConjureNativeChat(projectId) {
     const obj = ConjureSecretRequestState;
     return obj.secretRequestStatuses(memo, stateFromStores11);
   }, items29);
-  [c15, c16] = stateFromStores(obj5.useState(f107785), 2);
-  stateFromStores(obj5.useState(f107785), 2);
+  [c15, c16] = stateFromStores(obj5.useState(f107798), 2);
+  stateFromStores(obj5.useState(f107798), 2);
   onToggleChecklist = obj5.useCallback((arg0, arg1) => {
     let closure_0 = arg0;
     let closure_1 = arg1;
@@ -408,8 +408,8 @@ export default function ConjureNativeChat(projectId) {
     const obj = conjurePendingPlan;
     return obj.planVersions(memo);
   }, items30);
-  [c19, c20] = stateFromStores(obj5.useState(f107788), 2);
-  stateFromStores(obj5.useState(f107788), 2);
+  [c19, c20] = stateFromStores(obj5.useState(f107801), 2);
+  stateFromStores(obj5.useState(f107801), 2);
   onTogglePlan = obj5.useCallback((arg0, arg1) => {
     let closure_0 = arg0;
     let closure_1 = arg1;
@@ -1300,7 +1300,7 @@ export default function ConjureNativeChat(projectId) {
     if ("loading" !== chatEmptyStateResult) {
       let AyiQEp;
       const obj29 = { style: tmp.placeholder, children: c15(Text, obj30) };
-      Text = tmp2(5929).Text;
+      Text = tmp2(5919).Text;
       const intl4 = tmp2(1113).intl;
       const string = intl4.string;
       if ("unavailable" === chatEmptyStateResult) {

@@ -1,11 +1,11 @@
-// Module ID: 20314
-// Function ID: 20315
+// Module ID: 20317
+// Function ID: 20318
 // Name: MultiAccountManager
-// Dependencies: [5155, 1388, 14829, 16118, 7882, 572, 16119, 6063, 2]
+// Dependencies: [5155, 1388, 14829, 16118, 7882, 572, 16119, 6053, 2]
 
-// Module 20314 (MultiAccountManager)
+// Module 20317 (MultiAccountManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import transitionToChannel from "transitionToChannel" /* 6063 */;
+import transitionToChannel from "transitionToChannel" /* 6053 */;
 import GatewaySocket from "GatewaySocket" /* 16119 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import UserStore from "UserStore" /* 1388 */;

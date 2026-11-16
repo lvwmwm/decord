@@ -1,16 +1,16 @@
-// Module ID: 20873
-// Function ID: 20874
+// Module ID: 20876
+// Function ID: 20877
 // Name: ParentalConsentConnectionScreen
-// Dependencies: [5, 32, 19, 17, 8740, 1388, 8741, 21, 5306, 575, 20864, 20863, 14224, 5899, 20372, 17410, 9616, 504, 17408, 20874, 20858, 6015, 1113, 2997, 5552, 17409, 2121, 20867, 14079, 6337, 20875, 15159, 20876, 5929, 2701, 17411, 2]
+// Dependencies: [5, 32, 19, 17, 8740, 1388, 8741, 21, 5306, 575, 20867, 20866, 14224, 5889, 20375, 17410, 9616, 504, 17408, 20877, 20861, 6005, 1113, 2997, 5542, 17409, 2121, 20870, 14079, 6327, 20878, 15159, 20879, 5919, 2701, 17411, 2]
 // Exports: default
 
-// Module 20873 (ParentalConsentConnectionScreen)
+// Module 20876 (ParentalConsentConnectionScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
 import _modDef2997 from "module_2997" /* 2997 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import FamilyCenterConstants from "FamilyCenterConstants" /* 8741 */;
 import shareGuardianConnectLink from "shareGuardianConnectLink" /* 17408 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

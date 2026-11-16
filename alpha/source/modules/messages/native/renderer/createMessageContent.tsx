@@ -1,14 +1,14 @@
 // Module ID: 9167
 // Function ID: 9168
 // Name: createMessageContent
-// Dependencies: [17, 5307, 2165, 5330, 6969, 9165, 8659, 5239, 9168, 8744, 5240, 8871, 1192, 502, 5155, 5218, 5177, 5248, 9021, 1388, 5311, 9160, 1072, 8410, 5954, 9170, 11, 9110, 6858, 1113, 8655, 9171, 9172, 6792, 1406, 8861, 9177, 5131, 9181, 6350, 9182, 9184, 9186, 7062, 9205, 9343, 9344, 9384, 8634, 8853, 9385, 8656, 9274, 9391, 6749, 1417, 1414, 9394, 1187, 10874, 10883, 10887, 10875, 10879, 9260, 15533, 1255, 15534, 5225, 7467, 15535, 15536, 5128, 12656, 15537, 8409, 7285, 575, 15538, 9189, 15540, 15541, 9335, 15544, 15545, 15551, 15587, 15589, 15604, 9193, 9194, 15605, 15608, 15611, 15612, 9195, 9191, 2]
+// Dependencies: [17, 5307, 2165, 5330, 6969, 9165, 8659, 5239, 9168, 8744, 5240, 8871, 1192, 502, 5155, 5218, 5177, 5248, 9021, 1388, 5311, 9160, 1072, 8410, 5944, 9170, 11, 9110, 6848, 1113, 8655, 9171, 9172, 6782, 1406, 8861, 9177, 5131, 9181, 6340, 9182, 9184, 9186, 7062, 9205, 9343, 9344, 9384, 8634, 8853, 9385, 8656, 9274, 9391, 6739, 1417, 1414, 9394, 1187, 10874, 10883, 10887, 10875, 10879, 9260, 15533, 1255, 15534, 5225, 7467, 15535, 15536, 5128, 12656, 15537, 8409, 7285, 575, 15538, 9189, 15540, 15541, 9335, 15544, 15545, 15551, 15587, 15589, 15604, 9193, 9194, 15605, 15608, 15611, 15612, 9195, 9191, 2]
 
 // Module 9167 (createMessageContent)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import intl20 from "intl" /* 1113 */;
-import useChannelName from "useChannelName" /* 5954 */;
-import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6858 */;
+import useChannelName from "useChannelName" /* 5944 */;
+import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6848 */;
 import GuildTagConstants from "GuildTagConstants" /* 8410 */;
 import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8655 */;
 import transformMessageComponentsDefault from "transformMessageComponents" /* 8656 */;
@@ -1253,7 +1253,7 @@ function createMessageContent(message) {
       }
       applicationIconSource = author.getAvatarSource(undefined);
     }
-    parseMessageMarkupResult = { content: "Promise", hasSpoilerEmbeds: "paddingVertical", hasBailedAst: true };
+    parseMessageMarkupResult = { content: "Promise", hasSpoilerEmbeds: "reset", hasBailedAst: null };
   }
 }
 const processColor = react_native.processColor;

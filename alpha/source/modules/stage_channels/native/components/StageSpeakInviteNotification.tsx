@@ -1,13 +1,13 @@
 // Module ID: 11948
 // Function ID: 11949
 // Name: StageSpeakInviteNotification
-// Dependencies: [19, 17, 11026, 21, 5306, 575, 5954, 1113, 11949, 11950, 11077, 11087, 11952, 6337, 7988, 7549, 6909, 7897, 11954, 5929, 6903, 2]
+// Dependencies: [19, 17, 11026, 21, 5306, 575, 5944, 1113, 11949, 11950, 11077, 11087, 11952, 6327, 7988, 7549, 6899, 7897, 11954, 5919, 6893, 2]
 
 // Module 11948 (StageSpeakInviteNotification)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 6903 */;
-import StageChannelActionCreators from "StageChannelActionCreators" /* 6909 */;
+import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 6893 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 6899 */;
 import InAppNotificationConstants from "InAppNotificationConstants" /* 11026 */;
 import speakOnStageDefault from "speakOnStage" /* 11954 */;
 import react_mod from "react" /* 19 */;
@@ -55,7 +55,7 @@ const memoResult = react.memo(function StageSpeakInviteNotification(notification
   const channel = notification.channel;
   const guild = notification.guild;
   let tmp = closure_8();
-  let stringResult = guild(5954)(channel);
+  let stringResult = guild(5944)(channel);
   if (stringResult == null) {
     const intl = channel(1113).intl;
     stringResult = intl.string(channel(1113).t["/YzI63"]);
@@ -116,7 +116,7 @@ const memoResult = react.memo(function StageSpeakInviteNotification(notification
   obj5 = { size: "md", color: guild(575).colors.WHITE };
   HandRequestSpeakIcon = channel(11952).HandRequestSpeakIcon;
   obj6 = { direction: "horizontal", spacing: guild(575).space.PX_8, style: tmp.actions, children: items4 };
-  Stack = channel(6337).Stack;
+  Stack = channel(6327).Stack;
   const obj7 = {
     size: "sm",
     variant: "secondary",
@@ -145,7 +145,7 @@ const memoResult = react.memo(function StageSpeakInviteNotification(notification
   intl3 = channel(1113).intl;
   items4[1] = ref(IconButton2, obj8);
   obj9 = { variant: "heading-sm/medium", color: "text-subtle", lineClamp: handleDismissNotification, children: intl4.string(channel(1113).t.Ul1RJQ) };
-  Text = channel(5929).Text;
+  Text = channel(5919).Text;
   intl4 = channel(1113).intl;
   return ref(NotificationPressable, obj3);
 });

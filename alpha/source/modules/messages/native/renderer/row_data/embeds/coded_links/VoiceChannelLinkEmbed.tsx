@@ -1,7 +1,7 @@
 // Module ID: 15575
 // Function ID: 15576
 // Name: VoiceChannelLinkEmbed
-// Dependencies: [32, 17, 5173, 5155, 5177, 5238, 5248, 1388, 1072, 8842, 9170, 1414, 1380, 1113, 8033, 5954, 2]
+// Dependencies: [32, 17, 5173, 5155, 5177, 5238, 5248, 1388, 1072, 8842, 9170, 1414, 1380, 1113, 8033, 5944, 2]
 // Exports: createVoiceChannelLinkEmbed
 
 // Module 15575 (VoiceChannelLinkEmbed)
@@ -11,7 +11,7 @@ import intl3 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
 import GuildRecord from "GuildRecord" /* 5173 */;
-import useChannelName from "useChannelName" /* 5954 */;
+import useChannelName from "useChannelName" /* 5944 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 8033 */;
 import Constants2 from "Constants" /* 8842 */;
 import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 9170 */;

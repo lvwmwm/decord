@@ -1,17 +1,17 @@
 // Module ID: 11375
 // Function ID: 11376
 // Name: StickerDetailActionSheet
-// Dependencies: [5, 32, 19, 17, 5177, 1388, 7010, 11244, 1072, 5567, 21, 5306, 1380, 575, 11357, 10183, 10181, 5552, 11358, 6015, 1113, 504, 1496, 1256, 5929, 11372, 5936, 11374, 11359, 11365, 2174, 5995, 5131, 6792, 11376, 2121, 6067, 6917, 6922, 11377, 8604, 11093, 7420, 10074, 11378, 8106, 11311, 5566, 2]
+// Dependencies: [5, 32, 19, 17, 5177, 1388, 7010, 11244, 1072, 5557, 21, 5306, 1380, 575, 11357, 10183, 10181, 5542, 11358, 6005, 1113, 504, 1496, 1256, 5919, 11372, 5926, 11374, 11359, 11365, 2174, 5985, 5131, 6782, 11376, 2121, 6057, 6907, 6912, 11377, 8604, 11093, 7420, 10074, 11378, 8106, 11311, 5556, 2]
 
 // Module 11375 (StickerDetailActionSheet)
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5567 */;
-import StickersUtils from "StickersUtils" /* 6792 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6917 */;
-import JoinGuildRefusedError from "JoinGuildRefusedError" /* 6922 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5557 */;
+import StickersUtils from "StickersUtils" /* 6782 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6907 */;
+import JoinGuildRefusedError from "JoinGuildRefusedError" /* 6912 */;
 import openUserSettings from "openUserSettings" /* 8604 */;
 import StickersHooks from "StickersHooks" /* 11357 */;
 import stickers_StickersUtils from "stickers/StickersUtils" /* 11359 */;
@@ -684,7 +684,7 @@ const memoResult = react.memo(function StickerDetailActionSheet(chatInputRef) {
     }
     const obj3 = { startExpanded: true, children: closure_21(metroRequire, obj4) };
     obj4 = { style: tmp.content, children: tmp7Result };
-    const BottomSheet = tmp2(5566).BottomSheet;
+    const BottomSheet = tmp2(5556).BottomSheet;
     return closure_21(BottomSheet, obj3);
   }
   tmp7Result = tmp7Result2;

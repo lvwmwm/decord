@@ -1,14 +1,14 @@
 // Module ID: 14739
 // Function ID: 14740
 // Name: SearchBarNav
-// Dependencies: [19, 17, 21, 5306, 5892, 575, 7428, 1113, 1380, 7497, 5929, 7825, 2]
+// Dependencies: [19, 17, 21, 5306, 5882, 575, 7428, 1113, 1380, 7497, 5919, 7825, 2]
 // Exports: default
 
 // Module 14739 (SearchBarNav)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import NavigatorConstants from "NavigatorConstants" /* 5892 */;
+import NavigatorConstants from "NavigatorConstants" /* 5882 */;
 import Pressables from "Pressables" /* 7428 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -56,7 +56,7 @@ export default function SearchBarNav(arg0) {
     tmp3Result = tmp3(tmp4(7497).ArrowLargeLeftIcon, obj3);
   } else {
     const obj4 = { style: tmp2.cancelText, maxFontSizeMultiplier: 2, variant: "body-md/semibold", color: "mobile-text-heading-primary", children: intl2.string(intl3.t["ETE/oC"]) };
-    const Text = tmp4(5929).Text;
+    const Text = tmp4(5919).Text;
     intl2 = tmp4(1113).intl;
     tmp3Result = tmp3(Text, obj4);
   }

@@ -1,12 +1,12 @@
 // Module ID: 15726
 // Function ID: 15727
 // Name: getActivityHeader
-// Dependencies: [1072, 15727, 15728, 6069, 1113, 15730, 15731, 10861, 2]
+// Dependencies: [1072, 15727, 15728, 6059, 1113, 15730, 15731, 10861, 2]
 // Exports: default
 
 // Module 15726 (getActivityHeader)
 import Constants from "Constants" /* 1072 */;
-import ActivityTypes from "ActivityTypes" /* 6069 */;
+import ActivityTypes from "ActivityTypes" /* 6059 */;
 import parseProviderRouteHeadlessSessionIdDefault from "parseProviderRouteHeadlessSessionId" /* 15727 */;
 import getActivityPlatformDefault from "getActivityPlatform" /* 15728 */;
 import isOnMetaHorizonDefault from "isOnMetaHorizon" /* 15730 */;

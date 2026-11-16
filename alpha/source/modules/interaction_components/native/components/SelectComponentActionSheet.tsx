@@ -1,15 +1,15 @@
 // Module ID: 13237
 // Function ID: 13238
 // Name: SelectComponentActionSheet
-// Dependencies: [19, 17, 5155, 5209, 5567, 21, 5306, 575, 7913, 1113, 5936, 8177, 5378, 7443, 7734, 10871, 5913, 5315, 1630, 1496, 5892, 504, 5552, 5566, 7888, 2]
+// Dependencies: [19, 17, 5155, 5209, 5557, 21, 5306, 575, 7913, 1113, 5926, 8177, 5368, 7443, 7734, 10871, 5903, 5315, 1630, 1496, 5882, 504, 5542, 5556, 7888, 2]
 // Exports: default
 
 // Module 13237 (SelectComponentActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import react_native2 from "react-native" /* 5378 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5567 */;
+import react_native2 from "react-native" /* 5368 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5557 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
@@ -88,7 +88,7 @@ function SelectionHeader(renderIcon) {
   tmp5Result = undefined;
   if (tmp2) {
     let str = "primary";
-    const Button = tmp6(5936).Button;
+    const Button = tmp6(5926).Button;
     if (selectButtonDisabled) {
       str = "secondary";
     }

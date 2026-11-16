@@ -1,7 +1,7 @@
 // Module ID: 15197
 // Function ID: 15198
 // Name: MediaModalOverlay
-// Dependencies: [32, 19, 17, 21, 5306, 575, 7415, 8451, 1113, 15198, 13054, 15199, 15200, 15201, 8631, 10188, 1380, 5906, 15202, 10195, 15204, 1655, 15208, 8630, 15209, 15210, 15203, 8628, 8633, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 575, 7415, 8451, 1113, 15198, 13054, 15199, 15200, 15201, 8631, 10188, 1380, 5896, 15202, 10195, 15204, 1655, 15208, 8630, 15209, 15210, 15203, 8628, 8633, 2]
 // Exports: default
 
 // Module 15197 (MediaModalOverlay)
@@ -9,7 +9,7 @@ import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import _modDef1655 from "module_1655" /* 1655 */;
-import VisualEffectViewDefault from "VisualEffectView" /* 5906 */;
+import VisualEffectViewDefault from "VisualEffectView" /* 5896 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 7415 */;
 import TouchableHitBoxDefault from "TouchableHitBox" /* 8451 */;
 import useMediaViewerSources from "useMediaViewerSources" /* 8628 */;

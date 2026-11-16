@@ -1,13 +1,13 @@
 // Module ID: 8875
 // Function ID: 8876
 // Name: FileUtils
-// Dependencies: [5177, 1388, 1072, 1390, 12, 8876, 2174, 8846, 6762, 1113, 2]
+// Dependencies: [5177, 1388, 1072, 1390, 12, 8876, 2174, 8846, 6752, 1113, 2]
 // Exports: classifyFile, classifyFileName, fileUploadLimitRoadblockDescription, makeFile, maxFileSize, sizeString, transformNativeFile, uploadSumTooLarge
 
 // Module 8875 (FileUtils)
 import _modDef12 from "module_12" /* 12 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
-import FileSizeUtils from "FileSizeUtils" /* 6762 */;
+import FileSizeUtils from "FileSizeUtils" /* 6752 */;
 import UploadUtils from "UploadUtils" /* 8846 */;
 import _modDef8876 from "module_8876" /* 8876 */;
 import GuildStore from "GuildStore" /* 5177 */;

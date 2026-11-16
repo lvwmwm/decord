@@ -1,12 +1,12 @@
-// Module ID: 19505
-// Function ID: 19506
+// Module ID: 19507
+// Function ID: 19508
 // Name: SearchResultLinkPreviewMarkup
-// Dependencies: [6343, 6344, 19506, 9216, 2]
+// Dependencies: [6333, 6334, 19508, 9216, 2]
 
-// Module 19505 (SearchResultLinkPreviewMarkup)
-import MarkupRulesDefault from "MarkupRules" /* 6344 */;
-import combineMarkupRules from "combineMarkupRules" /* 6343 */;
-import MarkupSearchResultLinkPreviewReactRules from "MarkupSearchResultLinkPreviewReactRules" /* 19506 */;
+// Module 19507 (SearchResultLinkPreviewMarkup)
+import MarkupRulesDefault from "MarkupRules" /* 6334 */;
+import combineMarkupRules from "combineMarkupRules" /* 6333 */;
+import MarkupSearchResultLinkPreviewReactRules from "MarkupSearchResultLinkPreviewReactRules" /* 19508 */;
 import MarkupParser from "MarkupParser" /* 9216 */;
 import size from "module_2" /* 2 */;
 

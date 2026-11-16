@@ -1,7 +1,7 @@
 // Module ID: 17621
 // Function ID: 17622
 // Name: AnalyticsHooks
-// Dependencies: [19, 1072, 10168, 8825, 8804, 8835, 8834, 8781, 1269, 1380, 8840, 5341, 5345, 1256, 2]
+// Dependencies: [19, 1072, 10168, 8825, 8804, 8835, 8834, 8781, 1269, 1380, 8840, 6957, 6961, 1256, 2]
 // Exports: useBountyCarouselEmptyStateAnalytics, useQuestHomeEntrypointAnalyticsEvents, useQuestsEmbedFallbackAnalytics, useTrackAdContentClickedWithImpression, useTrackAdContentEventWithImpression, useTrackQuestContentClickedWithImpression, useTrackQuestEventWithImpression
 
 // Module 17621 (AnalyticsHooks)
@@ -9,7 +9,7 @@ import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import v1 from "v1" /* 1269 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import AdCreativeType from "AdCreativeType" /* 5345 */;
+import AdCreativeType from "AdCreativeType" /* 6961 */;
 import getDeviceMetadataDefault from "getDeviceMetadata" /* 8781 */;
 import QuestDataUtils from "QuestDataUtils" /* 8804 */;
 import AnalyticsActions from "AnalyticsActions" /* 8825 */;
@@ -253,7 +253,7 @@ export function useQuestHomeEntrypointAnalyticsEvents(questHomeHero) {
   questHomeHero = questHomeHero.questHomeHero;
   const shouldShowQuestHomeHeroContent = questHomeHero.shouldShowQuestHomeHeroContent;
   let memo;
-  const QuestContent = questHomeHero(5341).QuestContent;
+  const QuestContent = questHomeHero(6957).QuestContent;
   const tmp = shouldShowQuestHomeHeroContent ? QuestContent.QUEST_HOME_ENTRYPOINT_THEMED : QuestContent.QUEST_HOME_ENTRYPOINT;
   dependencyMap = tmp;
   const items = [tmp];

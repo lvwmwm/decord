@@ -1,7 +1,7 @@
 // Module ID: 15762
 // Function ID: 15763
 // Name: UserProfileStreamVolumeScrollTarget
-// Dependencies: [19, 17, 5307, 15763, 21, 8603, 504, 5570, 1655, 1708, 1113, 9567, 2]
+// Dependencies: [19, 17, 5307, 15763, 21, 8603, 504, 5560, 1655, 1708, 1113, 9567, 2]
 // Exports: default
 
 // Module 15762 (UserProfileStreamVolumeScrollTarget)

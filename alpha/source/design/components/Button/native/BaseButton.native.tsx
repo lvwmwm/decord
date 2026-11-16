@@ -1,16 +1,16 @@
-// Module ID: 5945
-// Function ID: 5946
+// Module ID: 5935
+// Function ID: 5936
 // Name: Button/BaseButton
-// Dependencies: [109, 19, 17, 1072, 5946, 21, 5377, 5306, 5943, 1655, 1255, 1380, 2]
+// Dependencies: [109, 19, 17, 1072, 5936, 21, 5367, 5306, 5933, 1655, 1255, 1380, 2]
 // Exports: BaseButton
 
-// Module 5945 (Button/BaseButton)
+// Module 5935 (Button/BaseButton)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import native from "native" /* 5377 */;
-import ButtonHooks from "ButtonHooks" /* 5943 */;
-import react_native from "react-native" /* 5946 */;
+import native from "native" /* 5367 */;
+import ButtonHooks from "ButtonHooks" /* 5933 */;
+import react_native from "react-native" /* 5936 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
@@ -115,7 +115,7 @@ export function BaseButton(style) {
   }
   let tmp12 = children;
   if (null != DARK) {
-    tmp12 = jsx(tmp4(5377).ThemeContextProvider, { theme: DARK, children });
+    tmp12 = jsx(tmp4(5367).ThemeContextProvider, { theme: DARK, children });
   }
   const items1 = [style, , , ];
   if (flag) {

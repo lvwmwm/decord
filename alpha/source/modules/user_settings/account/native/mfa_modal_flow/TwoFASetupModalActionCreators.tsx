@@ -1,11 +1,11 @@
 // Module ID: 17281
 // Function ID: 17282
 // Name: TwoFASetupModalActionCreators
-// Dependencies: [6848, 17282, 2121, 2]
+// Dependencies: [6838, 17282, 2121, 2]
 
 // Module 17281 (TwoFASetupModalActionCreators)
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import size from "module_2" /* 2 */;
 
 const TWO_FA_SETUP_MODAL_KEY = "TWO_FA_SETUP_MODAL_KEY";

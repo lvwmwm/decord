@@ -1,7 +1,7 @@
 // Module ID: 10892
 // Function ID: 10893
 // Name: useRecipientsLabel
-// Dependencies: [19, 1388, 1113, 504, 1255, 5372, 2]
+// Dependencies: [19, 1388, 1113, 504, 1255, 5362, 2]
 // Exports: useRecipientsLabel
 
 // Module 10892 (useRecipientsLabel)

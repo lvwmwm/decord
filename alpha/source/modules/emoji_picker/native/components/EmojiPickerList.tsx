@@ -1,17 +1,17 @@
 // Module ID: 11255
 // Function ID: 11256
 // Name: EmojiPickerList
-// Dependencies: [19, 6972, 9546, 1072, 1391, 1228, 1390, 21, 7918, 7937, 11256, 9551, 9550, 11257, 11249, 11258, 11170, 11260, 9037, 5554, 5555, 5256, 5501, 11261, 6015, 1113, 11266, 9547, 11267, 5131, 11273, 11270, 11274, 11278, 11271, 11281, 11282, 11289, 11291, 11293, 2]
+// Dependencies: [19, 6972, 9546, 1072, 1391, 1228, 1390, 21, 7918, 7937, 11256, 9551, 9550, 11257, 11249, 11258, 11170, 11260, 9037, 5544, 5545, 5256, 5491, 11261, 6005, 1113, 11266, 9547, 11267, 5131, 11273, 11270, 11274, 11278, 11271, 11281, 11282, 11289, 11291, 11293, 2]
 
 // Module 11255 (EmojiPickerList)
 import intl2 from "intl" /* 1113 */;
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1228 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
 import EmojiUtilsDefault from "EmojiUtils" /* 5256 */;
-import ChatInputUtils from "ChatInputUtils" /* 5501 */;
-import HapticUtils from "HapticUtils" /* 5554 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5555 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 6015 */;
+import ChatInputUtils from "ChatInputUtils" /* 5491 */;
+import HapticUtils from "HapticUtils" /* 5544 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5545 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
 import EmojiPickerConstants from "EmojiPickerConstants" /* 6972 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
 import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9546 */;

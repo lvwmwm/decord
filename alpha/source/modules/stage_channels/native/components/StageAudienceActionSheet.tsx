@@ -1,7 +1,7 @@
 // Module ID: 12951
 // Function ID: 12952
 // Name: StageAudienceActionSheet
-// Dependencies: [32, 19, 17, 5155, 5218, 21, 5306, 575, 12952, 7954, 1113, 7918, 504, 6358, 6909, 7443, 1187, 8476, 6337, 9157, 7633, 9981, 7988, 12948, 7549, 5929, 4261, 6938, 6949, 12953, 12955, 7951, 7913, 7888, 7746, 7937, 2]
+// Dependencies: [32, 19, 17, 5155, 5218, 21, 5306, 575, 12952, 7954, 1113, 7918, 504, 6348, 6899, 7443, 1187, 8476, 6327, 9157, 7633, 9981, 7988, 12948, 7549, 5919, 4261, 6928, 6939, 12953, 12955, 7951, 7913, 7888, 7746, 7937, 2]
 // Exports: default
 
 // Module 12951 (StageAudienceActionSheet)
@@ -9,8 +9,8 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import _modDef4261 from "module_4261" /* 4261 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import StageChannelActionCreators from "StageChannelActionCreators" /* 6909 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 6899 */;
 import TableRowGroup2 from "TableRowGroup" /* 7746 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7918 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
@@ -89,12 +89,12 @@ function StageAudienceActionSheetContent(channel) {
   channel = channel.channel;
   let tmp = closure_11();
   importDefault = tmp;
-  let obj = channel(6938);
+  let obj = channel(6928);
   dependencyMap = obj.useCanModerateRequestToSpeak(channel.id);
   const tmp2 = useStageSummaryDefault(channel.id);
-  let obj2 = channel(6938);
+  let obj2 = channel(6928);
   const canToggleRequestToSpeak = obj2.useCanToggleRequestToSpeak(channel);
-  let obj3 = channel(6949);
+  let obj3 = channel(6939);
   const sortedRequestToSpeakParticipants = obj3.useSortedRequestToSpeakParticipants(channel.id);
   let obj4 = channel(12953);
   const throttledStageAudience = obj4.useThrottledStageAudience(channel.id);

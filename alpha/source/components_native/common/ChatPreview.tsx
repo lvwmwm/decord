@@ -1,7 +1,7 @@
 // Module ID: 15617
 // Function ID: 15618
 // Name: ChatPreview
-// Dependencies: [19, 17, 5307, 5553, 5155, 1388, 9160, 21, 5306, 575, 5377, 12452, 9159, 11864, 11882, 14560, 5128, 1113, 11881, 12, 9121, 6063, 12586, 12504, 12463, 6384, 2020, 12630, 9199, 11866, 8863, 12462, 12464, 12503, 12506, 11980, 11982, 14196, 1380, 7415, 7428, 5929, 5131, 504, 1496, 6858, 6838, 2]
+// Dependencies: [19, 17, 5307, 5543, 5155, 1388, 9160, 21, 5306, 575, 5367, 12452, 9159, 11864, 11882, 14560, 5128, 1113, 11881, 12, 9121, 6053, 12586, 12504, 12463, 6374, 2020, 12630, 9199, 11866, 8863, 12462, 12464, 12503, 12506, 11980, 11982, 14196, 1380, 7415, 7428, 5919, 5131, 504, 1496, 6848, 6828, 2]
 // Exports: ChatPreview
 
 // Module 15617 (ChatPreview)
@@ -10,10 +10,10 @@ import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 2020 */;
-import native from "native" /* 5377 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import transitionToChannel from "transitionToChannel" /* 6063 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 6384 */;
+import native from "native" /* 5367 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import transitionToChannel from "transitionToChannel" /* 6053 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 6374 */;
 import RowGeneratorDefault from "RowGenerator" /* 9159 */;
 import canAddNewReactionsDefault from "canAddNewReactions" /* 9199 */;
 import messages_MessagesUtils from "messages/MessagesUtils" /* 11864 */;
@@ -34,7 +34,7 @@ import ChatDefault from "Chat" /* 14196 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5307 */;
-import ActionSheetStore from "ActionSheetStore" /* 5553 */;
+import ActionSheetStore from "ActionSheetStore" /* 5543 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import UserStore from "UserStore" /* 1388 */;
 import RowGeneratorConstants from "RowGeneratorConstants" /* 9160 */;
@@ -156,7 +156,7 @@ class ChatPreviewBase extends PureComponent {
         let item1 = items.forEach((arr, index) => {
           let c1;
           let obj8;
-          const f145982 = (message) => {
+          const f145999 = (message) => {
             const content = obj3.content;
             const obj = { rowType: constants2.MESSAGE, changeType: constants.NOOP, roleStyle, message, isFirst: message === closure_0 };
             content.unshift(obj);
@@ -194,7 +194,7 @@ class ChatPreviewBase extends PureComponent {
               tmp8 = obj3;
             }
             obj3 = tmp8;
-            const item = arr.forEach(f145982);
+            const item = arr.forEach(f145999);
             tmp8.revealed = arr[arr.length - 1].id === messages.revealedMessageId;
             tmp8.context = arr[arr.length - 1].id;
             const intl2 = _undefined(changeType[17]).intl;
@@ -210,7 +210,7 @@ class ChatPreviewBase extends PureComponent {
               tmp14 = obj5;
             }
             obj5 = tmp14;
-            const item1 = arr.forEach(f145982);
+            const item1 = arr.forEach(f145999);
             tmp14.revealed = arr[arr.length - 1].id === messages.revealedMessageId;
             tmp14.context = arr[arr.length - 1].id;
             const intl = _undefined(changeType[17]).intl;
@@ -256,7 +256,7 @@ class ChatPreviewBase extends PureComponent {
         const chatManager4 = require.chatManager;
         const jumpTargetId = tmp3.jumpTargetId;
         const previousRows = chatManager4.getPreviousRows();
-        let obj3 = { rows: previousRows, scrollToMessageId: jumpTargetId, jumpTargetId, jumpType: "Promise", shouldInitialScroll: "Array", animated: "scrollAdjust", scrollPosition: "scrollAdjustUserOffset", focusTargetId: "totalSize" };
+        let obj3 = { rows: previousRows, scrollToMessageId: jumpTargetId, jumpTargetId, jumpType: "Promise", shouldInitialScroll: "Array", animated: 0, scrollPosition: 1, focusTargetId: 3 };
         require.scrollData = computeScrollDataDefault(obj3);
         if (!tmp7) {
           if (obj.didPositionInitialScroll) {
@@ -335,7 +335,7 @@ class ChatPreviewBase extends PureComponent {
         },
         message: require.getMessage(data.messageId),
         messageChannel: channel,
-        selectedChannelId: "LOGIN_RESET",
+        selectedChannelId: "asc",
         tapLinkData: nativeEvent
       };
       const handleMessagesTapLink = handleMessagesTapLink2.handleMessagesTapLink;
@@ -596,9 +596,9 @@ export function ChatPreview(channelId) {
   const obj2 = channelId(504);
   const stateFromStores1 = obj2.useStateFromStores(items1, () => ChannelStore.getChannel(channelId));
   const width = useWindowDimensionsDefault().width;
-  const obj3 = channelId(6858);
+  const obj3 = channelId(6848);
   const isChannelSpoilerGated = obj3.useIsChannelSpoilerGated(stateFromStores1);
-  const obj4 = channelId(6838);
+  const obj4 = channelId(6828);
   const isChannelContentGated = obj4.useIsChannelContentGated(stateFromStores1);
   const items2 = [ActionSheetStore];
   const obj6 = { inlineAttachmentMedia: setting, inlineEmbedMedia: setting1, renderEmbeds: setting2, roleStyle: stateFromStores, channel: stateFromStores1, width, isSpoilerHidden: isChannelSpoilerGated, isNSFWHidden: isChannelContentGated, canAccessChannel: !isChannelSpoilerGated && !isChannelContentGated, hasActionSheetOpen: stateFromStores2 };

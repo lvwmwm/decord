@@ -1,26 +1,26 @@
-// Module ID: 19045
-// Function ID: 19046
+// Module ID: 19047
+// Function ID: 19048
 // Name: CheersSpotIllustration
-// Dependencies: [19, 21, 19046, 19047, 19048, 7755, 6020, 2]
+// Dependencies: [19, 21, 19048, 19049, 19050, 7755, 6010, 2]
 // Exports: CheersSpotIllustration
 
-// Module 19045 (CheersSpotIllustration)
+// Module 19047 (CheersSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
 import react_native from "react-native" /* 7755 */;
-import _modDef19046 from "module_19046" /* 19046 */;
-import _modDef19047 from "module_19047" /* 19047 */;
 import _modDef19048 from "module_19048" /* 19048 */;
+import _modDef19049 from "module_19049" /* 19049 */;
+import _modDef19050 from "module_19050" /* 19050 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef19046 };
+let obj2 = { uri: _modDef19048 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef19047 };
+let obj3 = { uri: _modDef19049 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef19048 };
-({ uri: _modDef19048 });
+obj[3] = { uri: _modDef19050 };
+({ uri: _modDef19050 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/CheersSpotIllustration.native.tsx");
 

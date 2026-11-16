@@ -1,10 +1,10 @@
-// Module ID: 19460
-// Function ID: 19461
+// Module ID: 19462
+// Function ID: 19463
 // Name: useSuggestedSearches
 // Dependencies: [19, 14741, 14742, 14778, 504, 14764, 14762, 2]
 // Exports: useSuggestedSearches
 
-// Module 19460 (useSuggestedSearches)
+// Module 19462 (useSuggestedSearches)
 import SuggestedSearchStore2 from "SuggestedSearchStore" /* 14741 */;
 import SmartSearchConstants from "SmartSearchConstants" /* 14742 */;
 import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 14762 */;

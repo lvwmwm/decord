@@ -1,7 +1,7 @@
 // Module ID: 9117
 // Function ID: 9118
 // Name: useHandleJoinThreadVoice
-// Dependencies: [5, 5240, 7683, 7684, 2121, 8864, 6900, 2]
+// Dependencies: [5, 5240, 7683, 7684, 2121, 8864, 6890, 2]
 // Exports: default
 
 // Module 9117 (useHandleJoinThreadVoice)

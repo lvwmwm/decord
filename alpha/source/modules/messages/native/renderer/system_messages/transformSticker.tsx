@@ -1,7 +1,7 @@
 // Module ID: 9227
 // Function ID: 9228
 // Name: transformSticker
-// Dependencies: [5134, 6792, 9228, 9175, 1113, 5131, 2]
+// Dependencies: [5134, 6782, 9228, 9175, 1113, 5131, 2]
 // Exports: transformSticker
 
 // Module 9227 (transformSticker)

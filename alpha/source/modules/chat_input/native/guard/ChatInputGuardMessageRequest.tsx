@@ -1,7 +1,7 @@
 // Module ID: 14870
 // Function ID: 14871
 // Name: ChatInputGuardMessageRequest
-// Dependencies: [5, 19, 1388, 21, 1502, 14871, 504, 14872, 6015, 1113, 6063, 14878, 2]
+// Dependencies: [5, 19, 1388, 21, 1502, 14871, 504, 14872, 6005, 1113, 6053, 14878, 2]
 
 // Module 14870 (ChatInputGuardMessageRequest)
 import Fragment from "Fragment" /* 21 */;

@@ -1,16 +1,16 @@
 // Module ID: 16008
 // Function ID: 16009
 // Name: GuildBoostingMarketingProgressBarMarker
-// Dependencies: [19, 17, 1072, 21, 16009, 16010, 16011, 5306, 575, 5547, 1655, 5303, 5313, 5939, 10795, 6020, 12481, 5929, 9235, 2]
+// Dependencies: [19, 17, 1072, 21, 16009, 16010, 16011, 5306, 575, 5537, 1655, 5303, 5313, 5929, 10795, 6010, 12481, 5919, 9235, 2]
 // Exports: default
 
 // Module 16008 (GuildBoostingMarketingProgressBarMarker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import useThemeDefault from "useTheme" /* 5547 */;
-import spring_spring from "spring/spring" /* 5939 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import useThemeDefault from "useTheme" /* 5537 */;
+import spring_spring from "spring/spring" /* 5929 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import AssetRegistryDefault from "AssetRegistry" /* 12481 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 16009 */;
 import AssetRegistryDefault3 from "AssetRegistry" /* 16010 */;
@@ -56,7 +56,7 @@ function ProgressBarMarkerInnerContent(arg0) {
   isTierUnlocked = undefined;
   ({ isTierAnimated, isCurrentTier, useReducedMotion, isDisabled } = arg0);
   let tmp = closure_10();
-  const tmp4 = isTierUnlocked(5547)();
+  const tmp4 = isTierUnlocked(5537)();
   let obj = sharedValue(1655);
   let num = 1;
   sharedValue = obj.useSharedValue(1);
@@ -120,7 +120,7 @@ function ProgressBarMarkerInnerContent(arg0) {
     } else {
       obj2 = { source: obj2[tier], style: items3 };
       items3 = [isTierUnlocked ? tmp.progressBarMarkerInnerCircleIconUnlocked : tmp.progressBarMarkerInnerCircleIcon, ];
-      const tmp2Result = isTierUnlocked(6020);
+      const tmp2Result = isTierUnlocked(6010);
       const unsafe_rawColors = tmp2(575).unsafe_rawColors;
       const obj3 = { tintColor: isTierUnlocked ? unsafe_rawColors.WHITE : unsafe_rawColors.PREMIUM_PERK_PINK };
       items3[1] = obj3;
@@ -253,7 +253,7 @@ export default function ProgressBarMarker(arg0) {
     }
     items7 = [tmp25Result, ];
     const obj8 = { variant: "body-xs/medium", children: tmp5Result4.getTierName(tier, { useLevels: false }) };
-    const Text = tmp5(5929).Text;
+    const Text = tmp5(5919).Text;
     tmp5Result4 = sharedValue(9235);
     items7[1] = closure_6(Text, obj8);
     items5[2] = closure_7(View, obj6);

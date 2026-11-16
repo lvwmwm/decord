@@ -1,7 +1,7 @@
 // Module ID: 10461
 // Function ID: 10462
 // Name: useShouldOpenGameProfileModal
-// Dependencies: [19, 2141, 1072, 1256, 1406, 10462, 5962, 10463, 38, 2]
+// Dependencies: [19, 2141, 1072, 1256, 1406, 10462, 5952, 10463, 38, 2]
 // Exports: default, gameIdIsAcceptable, gameIsAcceptable, isGameDisabled, trackEntryPoint
 
 // Module 10461 (useShouldOpenGameProfileModal)
@@ -81,7 +81,7 @@ export default function useShouldOpenGameProfileModal(applicationId) {
           items1.push(obj.Disabled);
         }
         tmp14 = items1;
-        const tmp21Result = tmp21(5962);
+        const tmp21Result = tmp21(5952);
         if (tmp21Result.isAgeRestrictedContentClassification(gameRecord.contentClassification)) {
           items1.push(obj.NSFW);
           tmp14 = items1;
@@ -121,7 +121,7 @@ export function gameIsAcceptable(gameFlags) {
       items1.push(obj.Disabled);
     }
     arr = items1;
-    const tmp8Result = tmp8(5962);
+    const tmp8Result = tmp8(5952);
     if (tmp8Result.isAgeRestrictedContentClassification(gameFlags.contentClassification)) {
       items1.push(obj.NSFW);
       arr = items1;
@@ -143,7 +143,7 @@ export function gameIdIsAcceptable(arg0) {
       items1.push(obj.Disabled);
     }
     arr = items1;
-    const tmp9Result = tmp9(5962);
+    const tmp9Result = tmp9(5952);
     if (tmp9Result.isAgeRestrictedContentClassification(game.contentClassification)) {
       items1.push(obj.NSFW);
       arr = items1;

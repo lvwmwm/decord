@@ -1,7 +1,7 @@
 // Module ID: 16031
 // Function ID: 16032
 // Name: GuildBoostingMarketingFaq
-// Dependencies: [32, 19, 17, 1072, 21, 5306, 15999, 575, 1113, 2188, 5929, 7428, 1187, 16032, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5306, 15999, 575, 1113, 2188, 5919, 7428, 1187, 16032, 2]
 // Exports: default
 
 // Module 16031 (GuildBoostingMarketingFaq)

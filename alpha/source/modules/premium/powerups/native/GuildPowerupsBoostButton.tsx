@@ -1,7 +1,7 @@
 // Module ID: 10798
 // Function ID: 10799
 // Name: GuildPowerupsBoostButton
-// Dependencies: [19, 5177, 1388, 9236, 1072, 21, 504, 8529, 1401, 6952, 10799, 2]
+// Dependencies: [19, 5177, 1388, 9236, 1072, 21, 504, 8529, 1401, 6942, 10799, 2]
 // Exports: GuildPowerupsBoostButton
 
 // Module 10798 (GuildPowerupsBoostButton)

@@ -1,7 +1,7 @@
 // Module ID: 10537
 // Function ID: 10538
 // Name: ConjureProjectsSheet
-// Dependencies: [32, 19, 21, 5306, 575, 10538, 1630, 10514, 5899, 7329, 7951, 7913, 1113, 4131, 7988, 10540, 5570, 7825, 7746, 7443, 10543, 10536, 10550, 2]
+// Dependencies: [32, 19, 21, 5306, 575, 10538, 1630, 10514, 5889, 7329, 7951, 7913, 1113, 4131, 7988, 10540, 5560, 7825, 7746, 7443, 10543, 10536, 10550, 2]
 // Exports: default
 
 // Module 10537 (ConjureProjectsSheet)
@@ -9,7 +9,7 @@ import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
 import _modDef4131 from "module_4131" /* 4131 */;
-import useMountEffectDefault from "useMountEffect" /* 5899 */;
+import useMountEffectDefault from "useMountEffect" /* 5889 */;
 import ConjureActionCreators from "ConjureActionCreators" /* 7329 */;
 import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7913 */;
 import ActionSheet2 from "ActionSheet" /* 7951 */;
@@ -79,7 +79,7 @@ export default function ConjureProjectsSheet() {
   }
   const obj3 = { scrollable: true, startExpanded: true, header: hasOwnProperty(BottomSheetTitleHeader, obj), children: metroRequire(BottomSheetScrollView, obj4) };
   obj4 = { contentContainerStyle: tmp3.scrollContent, scrollIndicatorInsets: { bottom }, keyboardShouldPersistTaps: "handled", children: items };
-  BottomSheetScrollView = tmp11(5570).BottomSheetScrollView;
+  BottomSheetScrollView = tmp11(5560).BottomSheetScrollView;
   const obj5 = { size: "md", onChange: tmp6, placeholder: intl3.string(_modDef4131["2y8sUh"]), accessibilityLabel: intl4.string(_modDef4131.u0kEN9) };
   const SearchBar = tmp11(7825).SearchBar;
   intl3 = tmp11(1113).intl;

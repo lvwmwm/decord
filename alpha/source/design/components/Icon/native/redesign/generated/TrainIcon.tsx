@@ -1,14 +1,14 @@
-// Module ID: 18229
-// Function ID: 18230
+// Module ID: 18231
+// Function ID: 18232
 // Name: TrainIcon
-// Dependencies: [19, 21, 575, 6019, 18230, 2]
+// Dependencies: [19, 21, 575, 6009, 18232, 2]
 // Exports: TrainIcon
 
-// Module 18229 (TrainIcon)
+// Module 18231 (TrainIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6019 */;
-import AssetRegistry from "AssetRegistry" /* 18230 */;
+import BaseIconImage2 from "BaseIconImage" /* 6009 */;
+import AssetRegistry from "AssetRegistry" /* 18232 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

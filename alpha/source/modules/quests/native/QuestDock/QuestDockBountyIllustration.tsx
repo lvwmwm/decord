@@ -1,19 +1,19 @@
-// Module ID: 17812
-// Function ID: 17813
+// Module ID: 17794
+// Function ID: 17795
 // Name: QuestDockBountyIllustration
-// Dependencies: [19, 17, 5307, 5338, 17698, 21, 5306, 17808, 17695, 504, 6020, 17813, 5377, 10141, 2]
+// Dependencies: [19, 17, 5307, 6954, 17698, 21, 5306, 17795, 17695, 504, 6010, 17796, 5367, 10141, 2]
 
-// Module 17812 (QuestDockBountyIllustration)
+// Module 17794 (QuestDockBountyIllustration)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
-import QuestConstants from "QuestConstants" /* 5338 */;
-import native from "native" /* 5377 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import native from "native" /* 5367 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import QuestConstants from "QuestConstants" /* 6954 */;
 import BountiesMobileQuestBarExperiment2 from "BountiesMobileQuestBarExperiment" /* 10141 */;
 import QuestDockHooks from "QuestDockHooks" /* 17695 */;
-import useIsQuestDockContentVisibleDefault from "useIsQuestDockContentVisible" /* 17808 */;
-import _modDef17813 from "module_17813" /* 17813 */;
+import useIsQuestDockContentVisibleDefault from "useIsQuestDockContentVisible" /* 17795 */;
+import _modDef17796 from "module_17796" /* 17796 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import QuestDockConstants from "QuestDockConstants" /* 17698 */;
@@ -97,7 +97,7 @@ function QuestDock3DOrbsIllustration() {
   const obj2 = QuestDockHooks;
   let tmp6 = tmp5 && !obj2.useIsQuestDockExpanded();
   const obj3 = { source: obj4, style: tmp.fill, resizeMode: "contain", enableAnimation: !stateFromStores, paused: !tmp6, accessible: false };
-  obj4 = { uri: _modDef17813 };
+  obj4 = { uri: _modDef17796 };
   const tmp4Result = FastImageDefault;
   const tmp7 = jsx;
   if (tmp6) {
@@ -113,6 +113,11 @@ function QuestDockOrbHandsIllustration() {
   const ref = useRivePlaybackGateRef();
   return jsx(native.OrbsIllustration_HandsRive, { ref, stateMachine: "State Machine 1", fit: "contain" });
 }
+class QuestDockBountyOrbIllustration {
+  constructor() {
+    return <IllustrationFrame style={closure_8().orbs}><QuestDock3DOrbsIllustration /></IllustrationFrame>;
+  }
+}
 const View = react_native.View;
 const QuestsExperimentLocations = QuestConstants.QuestsExperimentLocations;
 ({ QUEST_DOCK_COLLAPSED_HEIGHT, QUEST_DOCK_COLLAPSED_HEADER_PADDING_RIGHT } = QuestDockConstants);
@@ -122,7 +127,7 @@ obj2 = { marginRight: -QUEST_DOCK_COLLAPSED_HEADER_PADDING_RIGHT + 5 };
 size = { width: 124, height: QUEST_DOCK_COLLAPSED_HEIGHT, transform: items };
 items = [{ translateY: -2 }];
 size1 = { width: 120, height: 70, marginBottom: QUEST_DOCK_COLLAPSED_HEIGHT - 70 };
-let closure_8 = createStyles.createStyles(obj);
+const metroImportAll = createStyles.createStyles(obj);
 const memoResult = react.memo(function QuestDockBountyIllustration() {
   const tmp = closure_8();
   const BountiesMobileQuestBarExperiment = BountiesMobileQuestBarExperiment2.BountiesMobileQuestBarExperiment;
@@ -133,7 +138,7 @@ const memoResult = react.memo(function QuestDockBountyIllustration() {
   } else if (BountiesMobileQuestBarExperiment2.BountiesMobileQuestBarIllustration.ILLUSTRATION_3 === illustration) {
     return <IllustrationFrame style={tmp.hands}><QuestDockOrbHandsIllustration /></IllustrationFrame>;
   } else if (BountiesMobileQuestBarExperiment2.BountiesMobileQuestBarIllustration.ILLUSTRATION_1 === illustration) {
-    return <IllustrationFrame style={tmp.orbs}><QuestDock3DOrbsIllustration /></IllustrationFrame>;
+    return <QuestDockBountyOrbIllustration />;
   }
 });
 size = size_mod;
@@ -141,3 +146,4 @@ const result = size.fileFinishedImporting("modules/quests/native/QuestDock/Quest
 
 export default memoResult;
 export const QUEST_DOCK_BOUNTY_ILLUSTRATION_RESERVED_WIDTH = 95;
+export { QuestDockBountyOrbIllustration };

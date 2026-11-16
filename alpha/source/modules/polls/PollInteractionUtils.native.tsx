@@ -1,12 +1,12 @@
 // Module ID: 12654
 // Function ID: 12655
 // Name: PollInteractionUtils
-// Dependencies: [5552, 12655, 2121, 2]
+// Dependencies: [5542, 12655, 2121, 2]
 // Exports: showVotesForAnswer
 
 // Module 12654 (PollInteractionUtils)
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/polls/PollInteractionUtils.native.tsx");

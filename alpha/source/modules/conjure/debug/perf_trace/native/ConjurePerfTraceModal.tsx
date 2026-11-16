@@ -1,13 +1,13 @@
 // Module ID: 14003
 // Function ID: 14004
 // Name: ConjurePerfTraceModal
-// Dependencies: [19, 17, 7366, 21, 5306, 575, 14004, 7963, 10560, 5929, 8160, 14005, 14007, 1630, 14008, 7387, 5936, 504, 7493, 6848, 12523, 2]
+// Dependencies: [19, 17, 7366, 21, 5306, 575, 14004, 7963, 10560, 5919, 8160, 14005, 14007, 1630, 14008, 7387, 5926, 504, 7493, 6838, 12523, 2]
 // Exports: default
 
 // Module 14003 (ConjurePerfTraceModal)
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import NavigatorHeader from "NavigatorHeader" /* 7493 */;
 import ChevronSmallRightIcon2 from "ChevronSmallRightIcon" /* 7963 */;
 import ConjurePerfTraceStatsHeaderDefault from "ConjurePerfTraceStatsHeader" /* 14004 */;
@@ -144,22 +144,22 @@ function WaterfallRow(node) {
   let tmp14Result = null;
   if (node.descendants > 0) {
     const obj9 = { variant: "body-xs/normal", color: "text-muted", children: node.descendants };
-    tmp14Result = tmp14(tmp2(5929).Text, obj9);
+    tmp14Result = tmp14(tmp2(5919).Text, obj9);
   }
   items2[1] = tmp14Result;
   const obj10 = { style: items3 };
   items3 = [tmp.swatch, perfCategoryColors[node.category]];
   items2[2] = tmp14(closure_6, obj10);
   const obj11 = { variant: "body-xs/semibold", color: "text-strong", children: node.service };
-  items2[3] = tmp14(tmp2(5929).Text, obj11);
+  items2[3] = tmp14(tmp2(5919).Text, obj11);
   const obj12 = { variant: "body-xs/normal", color: "text-default", style: tmp.operation, lineClamp: 1, children: node.operation };
-  items2[4] = tmp14(tmp2(5929).Text, obj12);
+  items2[4] = tmp14(tmp2(5919).Text, obj12);
   let tmp14Result4 = null;
   if (node.count > 1) {
     const obj13 = { style: tmp.badge, children: tmp14(Text, obj14) };
     const _HermesInternal = HermesInternal;
     obj14 = { variant: "footnote/semibold", color: "text-default", children: "\u00D7" + node.count };
-    Text = tmp2(5929).Text;
+    Text = tmp2(5919).Text;
     tmp14Result4 = tmp14(tmp10, obj13);
   }
   items2[5] = tmp14Result4;
@@ -171,7 +171,7 @@ function WaterfallRow(node) {
   }
   items2[6] = tmp14Result5;
   const obj16 = { variant: "body-xs/normal", color: "text-muted", children: tmp2Result.perfNodeDuration(node) };
-  const Text2 = tmp2(5929).Text;
+  const Text2 = tmp2(5919).Text;
   tmp2Result = tmp2(14005);
   items2[7] = tmp14(Text2, obj16);
   items4 = [tmp6(closure_6, obj4), , ];
@@ -338,14 +338,14 @@ function Waterfall(trace) {
   if (null != trace.started_by) {
     const _HermesInternal = HermesInternal;
     const obj9 = { variant: "body-sm/normal", color: "text-muted", children: "Started by " + trace.started_by.trace_name };
-    const Text3 = tmp4(5929).Text;
+    const Text3 = tmp4(5919).Text;
     tmp8Result = tmp8(Text3, obj9);
   }
   items1[2] = tmp8Result;
   let tmp8Result2 = null;
   if (0 !== trace.dropped) {
     const obj10 = { variant: "body-sm/normal", color: "text-feedback-warning", children: "" + tmp4Result.formatSpanCount(trace.dropped) + " not recorded" };
-    const Text4 = tmp4(5929).Text;
+    const Text4 = tmp4(5919).Text;
     const _HermesInternal2 = HermesInternal;
     tmp4Result = require("ConjurePerfTraceFormat");
     tmp8Result2 = tmp8(Text4, obj10);
@@ -392,7 +392,7 @@ function PerfTraceScreen(projectId) {
   const stateFromStores = obj.useStateFromStores(items, () => ConjureDebugStore.getTimingTrace(projectId, traceId), items1);
   const tmp = projectId;
   if (null == stateFromStores) {
-    tmp6 = closure_8(tmp(5929).Text, { variant: "body-sm/normal", color: "text-muted", children: "This trace is no longer available." });
+    tmp6 = closure_8(tmp(5919).Text, { variant: "body-sm/normal", color: "text-muted", children: "This trace is no longer available." });
   } else {
     const obj2 = { trace: stateFromStores };
     tmp6 = closure_8(Waterfall, obj2);

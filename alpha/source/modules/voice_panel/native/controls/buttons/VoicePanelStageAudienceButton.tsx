@@ -1,15 +1,15 @@
-// Module ID: 20101
-// Function ID: 20102
+// Module ID: 20103
+// Function ID: 20104
 // Name: VoicePanelStageAudienceButton
-// Dependencies: [19, 1189, 21, 5306, 11984, 20083, 6938, 6949, 6943, 20084, 20102, 1113, 4261, 20092, 7722, 7436, 1187, 2]
+// Dependencies: [19, 1189, 21, 5306, 11984, 20085, 6928, 6939, 6933, 20086, 20104, 1113, 4261, 20094, 7722, 7436, 1187, 2]
 // Exports: default
 
-// Module 20101 (VoicePanelStageAudienceButton)
+// Module 20103 (VoicePanelStageAudienceButton)
 import NativeViewDefault from "NativeView" /* 7722 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11984 */;
-import VoicePanelAnimatedButtonWrapperDefault from "VoicePanelAnimatedButtonWrapper" /* 20084 */;
-import CircleWithCutoutDefault from "CircleWithCutout" /* 20092 */;
-import openStageAudienceSheetDefault from "openStageAudienceSheet" /* 20102 */;
+import VoicePanelAnimatedButtonWrapperDefault from "VoicePanelAnimatedButtonWrapper" /* 20086 */;
+import CircleWithCutoutDefault from "CircleWithCutout" /* 20094 */;
+import openStageAudienceSheetDefault from "openStageAudienceSheet" /* 20104 */;
 import react from "react" /* 19 */;
 import BadgeConstants from "BadgeConstants" /* 1189 */;
 import Fragment from "Fragment" /* 21 */;
@@ -36,15 +36,15 @@ export default function StageAudienceButton(props) {
   const wrapperSpecs = props.wrapperSpecs;
   const channelId = react.useContext(VoicePanelStateContextDefault).channelId;
   const tmp3 = closure_8();
-  const obj = channelId(20083);
+  const obj = channelId(20085);
   const voicePanelButtonStyles = obj.useVoicePanelButtonStyles(wrapperSpecs);
-  const obj2 = channelId(6938);
+  const obj2 = channelId(6928);
   const canModerateRequestToSpeak = obj2.useCanModerateRequestToSpeak(channelId);
-  const useStageParticipantsCount = channelId(6949).useStageParticipantsCount;
+  const useStageParticipantsCount = channelId(6939).useStageParticipantsCount;
   let num = 0;
-  channelId(6949);
+  channelId(6939);
   if (canModerateRequestToSpeak) {
-    num = useStageParticipantsCount(channelId, channelId(6943).StageChannelParticipantNamedIndex.REQUESTED_TO_SPEAK_ONLY);
+    num = useStageParticipantsCount(channelId, channelId(6933).StageChannelParticipantNamedIndex.REQUESTED_TO_SPEAK_ONLY);
   }
   const element = {
     onPress() {

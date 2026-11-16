@@ -1,14 +1,14 @@
 // Module ID: 10455
 // Function ID: 10456
 // Name: SkeletonCard
-// Dependencies: [19, 21, 5306, 575, 10416, 1655, 5548, 2]
+// Dependencies: [19, 21, 5306, 575, 10416, 1655, 5538, 2]
 // Exports: default
 
 // Module 10455 (SkeletonCard)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5548 */;
+import timing_timing from "timing/timing" /* 5538 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;

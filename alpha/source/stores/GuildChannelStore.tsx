@@ -1,7 +1,7 @@
 // Module ID: 5236
 // Function ID: 5237
 // Name: GuildChannelStore
-// Dependencies: [5210, 5158, 5237, 5159, 502, 5155, 5218, 5177, 5238, 5248, 1388, 1072, 5180, 12, 5954, 1084, 5243, 504, 572, 2]
+// Dependencies: [5210, 5158, 5237, 5159, 502, 5155, 5218, 5177, 5238, 5248, 1388, 1072, 5180, 12, 5944, 1084, 5243, 504, 572, 2]
 
 // Module 5236 (GuildChannelStore)
 import get_initializedDefault from "get initialized" /* 504 */;

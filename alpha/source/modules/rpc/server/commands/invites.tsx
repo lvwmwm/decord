@@ -1,11 +1,11 @@
 // Module ID: 16940
 // Function ID: 16941
 // Name: invites
-// Dependencies: [5, 5154, 5155, 6761, 1072, 1083, 16922, 7307, 7304, 12760, 16941, 1093, 12741, 2]
+// Dependencies: [5, 5154, 5155, 6751, 1072, 1083, 16922, 7307, 7304, 12760, 16941, 1093, 12741, 2]
 
 // Module 16940 (invites)
 import Constants2 from "Constants" /* 1072 */;
-import Constants3 from "Constants" /* 6761 */;
+import Constants3 from "Constants" /* 6751 */;
 import OAuth2Scopes from "OAuth2Scopes" /* 7307 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;

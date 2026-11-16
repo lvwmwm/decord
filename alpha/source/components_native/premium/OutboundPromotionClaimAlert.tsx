@@ -1,12 +1,12 @@
 // Module ID: 15435
 // Function ID: 15436
 // Name: OutboundPromotionClaimAlert
-// Dependencies: [32, 19, 17, 21, 5306, 575, 15436, 7918, 7937, 10012, 6020, 15437, 5929, 1113, 5936, 7943, 15438, 6340, 6012, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 575, 15436, 7918, 7937, 10012, 6010, 15437, 5919, 1113, 5926, 7943, 15438, 6330, 6002, 2]
 // Exports: default
 
 // Module 15435 (OutboundPromotionClaimAlert)
 import nativeDefault from "native" /* 575 */;
-import LinkingDefault from "Linking" /* 6012 */;
+import LinkingDefault from "Linking" /* 6002 */;
 import ClipboardUtils from "ClipboardUtils" /* 7943 */;
 import PromotionUtils from "PromotionUtils" /* 10012 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

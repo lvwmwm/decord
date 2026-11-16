@@ -1,7 +1,7 @@
 // Module ID: 8443
 // Function ID: 8444
 // Name: StartStageChannelModal
-// Dependencies: [5, 32, 19, 17, 5160, 6906, 1072, 5161, 21, 5306, 575, 6848, 7428, 1113, 1187, 7863, 8444, 7720, 504, 8447, 8106, 5929, 8451, 8452, 8453, 5899, 1256, 2020, 6909, 8450, 6757, 8454, 8455, 8432, 5936, 7415, 7474, 2]
+// Dependencies: [5, 32, 19, 17, 5160, 6896, 1072, 5161, 21, 5306, 575, 6838, 7428, 1113, 1187, 7863, 8444, 7720, 504, 8447, 8106, 5919, 8451, 8452, 8453, 5889, 1256, 2020, 6899, 8450, 6747, 8454, 8455, 8432, 5926, 7415, 7474, 2]
 // Exports: default
 
 // Module 8443 (StartStageChannelModal)
@@ -13,7 +13,7 @@ import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 2020 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 5161 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import Pressables from "Pressables" /* 7428 */;
 import GuildIcon from "GuildIcon" /* 7720 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7863 */;
@@ -25,7 +25,7 @@ import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import StageInstanceStore from "StageInstanceStore" /* 5160 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 6906 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 6896 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
@@ -118,7 +118,7 @@ class NotificationToggle {
     if (stateFromStores) {
       const obj4 = { style: tmp.pill, children: gesture(Text, obj5) };
       obj5 = { style: tmp.pillLabel, variant: "footnote/semibold", color: "text-overlay-light", children: intl2.string(intl9.t.y2b7CA) };
-      Text = tmp2(5929).Text;
+      Text = tmp2(5919).Text;
       intl2 = tmp2(1113).intl;
       tmp6Result = tmp6(tmp8, obj4);
     }

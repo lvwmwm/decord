@@ -1,7 +1,7 @@
 // Module ID: 11711
 // Function ID: 11712
 // Name: ScrollViewGesture
-// Dependencies: [19, 21, 11699, 1655, 11693, 11709, 11712, 5598]
+// Dependencies: [19, 21, 11699, 1655, 11693, 11709, 11712, 5588]
 // Exports: ScrollViewGesture
 
 // Module 11711 (ScrollViewGesture)
@@ -14,7 +14,7 @@ let _undefined;
 
 let tmp;
 const _mod1655 = tmp(1655);
-const LegacyBaseButton = tmp(5598);
+const LegacyBaseButton = tmp(5588);
 const DATA_LENGTH = tmp(11693);
 const dealWithAnimation = tmp(11709);
 const usePanGestureProxy = tmp(11712);

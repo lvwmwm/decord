@@ -1,13 +1,13 @@
 // Module ID: 11013
 // Function ID: 11014
 // Name: GuildIncidentsStore
-// Dependencies: [5532, 1231, 5177, 5238, 9255, 504, 572, 2]
+// Dependencies: [5522, 1231, 5177, 5238, 9255, 504, 572, 2]
 
 // Module 11013 (GuildIncidentsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import GuildAntiRaidUtils from "GuildAntiRaidUtils" /* 9255 */;
-import ExperimentStore from "ExperimentStore" /* 5532 */;
+import ExperimentStore from "ExperimentStore" /* 5522 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import GuildStore from "GuildStore" /* 5177 */;
 import PermissionStore from "PermissionStore" /* 5238 */;

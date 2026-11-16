@@ -1,7 +1,7 @@
 // Module ID: 15002
 // Function ID: 15003
 // Name: RedesignContactSyncModal
-// Dependencies: [5, 32, 19, 17, 1388, 2120, 14994, 14995, 1072, 6902, 21, 5306, 575, 5892, 14993, 5929, 1113, 14997, 15003, 1630, 1502, 504, 15001, 1380, 1092, 1256, 5552, 15004, 2121, 8192, 10271, 15005, 15006, 15010, 15013, 15014, 15015, 15016, 15018, 1264, 7493, 15020, 15021, 7490, 2]
+// Dependencies: [5, 32, 19, 17, 1388, 2120, 14994, 14995, 1072, 6892, 21, 5306, 575, 5882, 14993, 5919, 1113, 14997, 15003, 1630, 1502, 504, 15001, 1380, 1092, 1256, 5542, 15004, 2121, 8192, 10271, 15005, 15006, 15010, 15013, 15014, 15015, 15016, 15018, 1264, 7493, 15020, 15021, 7490, 2]
 // Exports: ContactSyncOnboardingModal
 
 // Module 15002 (RedesignContactSyncModal)
@@ -13,10 +13,10 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import NavigatorConstants from "NavigatorConstants" /* 5892 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 6902 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import NavigatorConstants from "NavigatorConstants" /* 5882 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 6892 */;
 import NavigatorHeader from "NavigatorHeader" /* 7493 */;
 import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 14993 */;
 import ContactSyncUtils from "ContactSyncUtils" /* 14997 */;

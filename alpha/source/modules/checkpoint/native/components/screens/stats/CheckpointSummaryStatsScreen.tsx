@@ -1,7 +1,7 @@
 // Module ID: 14531
 // Function ID: 14532
 // Name: CheckpointSummaryStatsScreen
-// Dependencies: [19, 17, 5307, 14253, 6377, 21, 575, 5306, 1360, 504, 14270, 6401, 14485, 7994, 14532, 14271, 1113, 3317, 1414, 8375, 3285, 7720, 5929, 6747, 11328, 14512, 5252, 7894, 6020, 14506, 14479, 2]
+// Dependencies: [19, 17, 5307, 14253, 6367, 21, 575, 5306, 1360, 504, 14270, 6391, 14485, 7994, 14532, 14271, 1113, 3317, 1414, 8375, 3285, 7720, 5919, 6737, 11328, 14512, 5252, 7894, 6010, 14506, 14479, 2]
 // Exports: default
 
 // Module 14531 (CheckpointSummaryStatsScreen)
@@ -12,8 +12,8 @@ import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
 import _modDef3285 from "module_3285" /* 3285 */;
 import _modDef3317 from "module_3317" /* 3317 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 5252 */;
-import CheckpointCardColors from "CheckpointCardColors" /* 6401 */;
-import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6747 */;
+import CheckpointCardColors from "CheckpointCardColors" /* 6391 */;
+import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6737 */;
 import GuildIcon from "GuildIcon" /* 7720 */;
 import EmojiDefault from "Emoji" /* 7894 */;
 import useMeasuredLayoutDefault from "useMeasuredLayout" /* 7994 */;
@@ -28,7 +28,7 @@ import CheckpointRecapCardDefault from "CheckpointRecapCard" /* 14532 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import CheckpointStore from "CheckpointStore" /* 14253 */;
-import CheckpointConstants from "CheckpointConstants" /* 6377 */;
+import CheckpointConstants from "CheckpointConstants" /* 6367 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1360 */;
@@ -236,7 +236,7 @@ function UserSummaryStats(stats) {
       items2 = [, ];
       ({ itemIcon: arr9[0], guildAcronym: arr9[1] } = tmp);
       obj6 = { variant: "body-md/semibold", color: "text-overlay-light", allowFontScaling: false, children: tmp2Result8.getGuildAcronymCharacter(first.guild.name) };
-      Text = tmp2(5929).Text;
+      Text = tmp2(5919).Text;
       tmp2Result8 = CheckpointStatsUtils;
       tmp22Result = tmp22(View, obj5);
     }
@@ -370,7 +370,7 @@ function UserSummaryStats(stats) {
   if (null != applicationIconURL) {
     const obj30 = { source: obj31, style: tmp.itemIcon };
     obj31 = { uri: applicationIconURL };
-    tmp22Result6 = tmp22(tmp9(6020), obj30);
+    tmp22Result6 = tmp22(tmp9(6010), obj30);
   }
   items10[1] = metroImportAll(ItemStat, obj29);
   items7[3] = React4(View, obj27);

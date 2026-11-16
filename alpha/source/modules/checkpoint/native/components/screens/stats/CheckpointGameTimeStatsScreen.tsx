@@ -1,7 +1,7 @@
 // Module ID: 14524
 // Function ID: 14525
 // Name: CheckpointGameTimeStatsScreen
-// Dependencies: [17, 14253, 6377, 21, 5306, 575, 14485, 504, 6747, 1113, 3317, 14270, 14273, 14525, 14526, 8457, 14271, 14504, 14506, 14505, 14507, 2]
+// Dependencies: [17, 14253, 6367, 21, 5306, 575, 14485, 504, 6737, 1113, 3317, 14270, 14273, 14525, 14526, 8457, 14271, 14504, 14506, 14505, 14507, 2]
 // Exports: default
 
 // Module 14524 (CheckpointGameTimeStatsScreen)
@@ -9,8 +9,8 @@ import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef3317 from "module_3317" /* 3317 */;
-import CheckpointConstants from "CheckpointConstants" /* 6377 */;
-import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6747 */;
+import CheckpointConstants from "CheckpointConstants" /* 6367 */;
+import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6737 */;
 import CalendarIcon from "CalendarIcon" /* 8457 */;
 import CheckpointScreenDefault from "CheckpointScreen" /* 14270 */;
 import CheckpointTextDefault from "CheckpointText" /* 14271 */;

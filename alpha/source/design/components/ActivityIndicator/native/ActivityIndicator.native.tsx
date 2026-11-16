@@ -1,14 +1,14 @@
 // Module ID: 7418
 // Function ID: 7419
 // Name: ActivityIndicator/ActivityIndicator
-// Dependencies: [17, 21, 5902, 575, 2]
+// Dependencies: [17, 21, 5892, 575, 2]
 // Exports: ActivityIndicator
 
 // Module 7418 (ActivityIndicator/ActivityIndicator)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useToken2 from "useToken" /* 5902 */;
+import useToken2 from "useToken" /* 5892 */;
 import size from "module_2" /* 2 */;
 
 const ActivityIndicator = react_native.ActivityIndicator;

@@ -1,7 +1,7 @@
 // Module ID: 7236
 // Function ID: 7237
 // Name: conjureServerProject
-// Dependencies: [5177, 5349, 7017, 7237, 7238, 2]
+// Dependencies: [5177, 5339, 7017, 7237, 7238, 2]
 // Exports: conjureProjectRoute, conjureServerAppGuildId, conjureServerProjectGuildId, getConjureServerProjects, isConjureServerProjectIn
 
 // Module 7236 (conjureServerProject)
@@ -9,7 +9,7 @@ import ConjureProjectStore2 from "ConjureProjectStore" /* 7017 */;
 import ConjureActivity from "ConjureActivity" /* 7237 */;
 import conjurePageRoutes from "conjurePageRoutes" /* 7238 */;
 import GuildStore from "GuildStore" /* 5177 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5349 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
 import size from "module_2" /* 2 */;
 
 const ConjureProjectStore = ConjureProjectStore2;

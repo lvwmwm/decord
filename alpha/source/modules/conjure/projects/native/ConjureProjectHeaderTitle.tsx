@@ -1,7 +1,7 @@
 // Module ID: 13327
 // Function ID: 13328
 // Name: ConjureProjectHeaderTitle
-// Dependencies: [19, 17, 21, 5306, 575, 7428, 1113, 4131, 10543, 5929, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 7428, 1113, 4131, 10543, 5919, 2]
 // Exports: default
 
 // Module 13327 (ConjureProjectHeaderTitle)
@@ -9,7 +9,7 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef4131 from "module_4131" /* 4131 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import Pressables from "Pressables" /* 7428 */;
 import ConjureProjectIconDefault from "ConjureProjectIcon" /* 10543 */;
 import react from "react" /* 19 */;

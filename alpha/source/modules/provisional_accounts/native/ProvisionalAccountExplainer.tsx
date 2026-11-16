@@ -1,7 +1,7 @@
 // Module ID: 14949
 // Function ID: 14950
 // Name: ProvisionalAccountExplainer
-// Dependencies: [19, 17, 21, 5306, 575, 14950, 14951, 7445, 5929, 1113, 7623, 7961, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 14950, 14951, 7445, 5919, 1113, 7623, 7961, 2]
 // Exports: ChatProvisionalAccountExplainerCard, UserProfileProvisionalAccountExplainerCard
 
 // Module 14949 (ProvisionalAccountExplainer)
@@ -51,10 +51,10 @@ export function ChatProvisionalAccountExplainerCard(iconSize) {
   const obj3 = { style: tmp.header, children: items2 };
   const Card = iconSize(7445).Card;
   const obj4 = { variant: "body-sm/semibold", color: "text-default", children: intl.string(iconSize(1113).t.Iyka0U) };
-  const Text = iconSize(5929).Text;
+  const Text = iconSize(5919).Text;
   intl = iconSize(1113).intl;
   items2 = [closure_5(Text, obj4), closure_5(iconSize(7623).CircleErrorIcon, { size: "xs", color: "text-default" })];
-  items3 = [closure_6(View, obj3), closure_5(iconSize(5929).Text, { variant: "body-sm/normal", color: "text-default", children: provisionalAccountExplanationText })];
+  items3 = [closure_6(View, obj3), closure_5(iconSize(5919).Text, { variant: "body-sm/normal", color: "text-default", children: provisionalAccountExplanationText })];
   return closure_6(Card, obj2);
 }
 export function UserProfileProvisionalAccountExplainerCard(iconSize) {
@@ -72,7 +72,7 @@ export function UserProfileProvisionalAccountExplainerCard(iconSize) {
   }, items);
   let obj = iconSize(14951);
   const provisionalAccountExplanationText = obj.useProvisionalAccountExplanationText({ userId, renderApplicationName: callback });
-  const obj2 = { style, title: intl.string(iconSize(1113).t.Iyka0U), titleIcon: closure_5(iconSize(7623).CircleErrorIcon, { size: "xs", color: "text-default" }), children: closure_5(iconSize(5929).Text, { variant: "body-md/normal", color: "text-default", children: provisionalAccountExplanationText }) };
+  const obj2 = { style, title: intl.string(iconSize(1113).t.Iyka0U), titleIcon: closure_5(iconSize(7623).CircleErrorIcon, { size: "xs", color: "text-default" }), children: closure_5(iconSize(5919).Text, { variant: "body-md/normal", color: "text-default", children: provisionalAccountExplanationText }) };
   const tmp3 = UserProfileCardDefault;
   intl = iconSize(1113).intl;
   return closure_5(tmp3, obj2);

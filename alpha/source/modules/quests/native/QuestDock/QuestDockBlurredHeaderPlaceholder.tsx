@@ -1,14 +1,14 @@
-// Module ID: 17794
-// Function ID: 17795
+// Module ID: 17801
+// Function ID: 17802
 // Name: QuestDockBlurredHeaderPlaceholder
-// Dependencies: [19, 17, 5338, 17698, 21, 5306, 17699, 17795, 1655, 6020, 2]
+// Dependencies: [19, 17, 6954, 17698, 21, 5306, 17699, 17802, 1655, 6010, 2]
 
-// Module 17794 (QuestDockBlurredHeaderPlaceholder)
+// Module 17801 (QuestDockBlurredHeaderPlaceholder)
 import react_native from "react-native" /* 17 */;
 import _modDef1655 from "module_1655" /* 1655 */;
-import QuestConstants from "QuestConstants" /* 5338 */;
-import FastImageDefault from "FastImage" /* 6020 */;
-import _slicedToArray from "_slicedToArray" /* 17795 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import QuestConstants from "QuestConstants" /* 6954 */;
+import _slicedToArray from "_slicedToArray" /* 17802 */;
 import react from "react" /* 19 */;
 import QuestDockConstants from "QuestDockConstants" /* 17698 */;
 import Fragment from "Fragment" /* 21 */;

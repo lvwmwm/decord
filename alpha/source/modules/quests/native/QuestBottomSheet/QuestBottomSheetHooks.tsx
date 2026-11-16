@@ -1,13 +1,13 @@
 // Module ID: 17729
 // Function ID: 17730
 // Name: QuestBottomSheetHooks
-// Dependencies: [5, 19, 5338, 17702, 17725, 5552, 10168, 17730, 10135, 10138, 5345, 8834, 5341, 2]
+// Dependencies: [5, 19, 6954, 17702, 17725, 5542, 10168, 17730, 10135, 10138, 6961, 8834, 6957, 2]
 // Exports: useMobileActivityPressHandler, useWatchTaskPressHandler
 
 // Module 17729 (QuestBottomSheetHooks)
-import QuestConstants from "QuestConstants" /* 5338 */;
-import QuestTypes from "QuestTypes" /* 5341 */;
-import AdCreativeType from "AdCreativeType" /* 5345 */;
+import QuestConstants from "QuestConstants" /* 6954 */;
+import QuestTypes from "QuestTypes" /* 6957 */;
+import AdCreativeType from "AdCreativeType" /* 6961 */;
 import AnalyticsTypes from "AnalyticsTypes" /* 8834 */;
 import captureAdUserAction2 from "captureAdUserAction" /* 10135 */;
 import captureAdUserActionTypes from "captureAdUserActionTypes" /* 10138 */;

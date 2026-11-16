@@ -1,7 +1,7 @@
 // Module ID: 11935
 // Function ID: 11936
 // Name: ReminderWatchSpotIllustration
-// Dependencies: [19, 21, 11936, 11937, 11938, 7755, 6020, 2]
+// Dependencies: [19, 21, 11936, 11937, 11938, 7755, 6010, 2]
 // Exports: ReminderWatchSpotIllustration
 
 // Module 11935 (ReminderWatchSpotIllustration)

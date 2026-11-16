@@ -1,7 +1,7 @@
 // Module ID: 12084
 // Function ID: 12085
 // Name: InAppReportsWidgetPreviewElement
-// Dependencies: [19, 17, 21, 5306, 575, 8607, 7358, 12085, 7354, 12131, 5929, 1113, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 8607, 7358, 12085, 7354, 12131, 5919, 1113, 2]
 // Exports: default
 
 // Module 12084 (InAppReportsWidgetPreviewElement)
@@ -59,7 +59,7 @@ export default function WidgetPreview(arg0) {
   if (null !== tmp6) {
     const obj3 = { style: tmp.container, children: items2 };
     const obj4 = { style: tmp.title, accessibilityRole: "header", variant: "body-sm/medium", children: intl.string(intl2.t.SpsnDY) };
-    const Text = tmp5(5929).Text;
+    const Text = tmp5(5919).Text;
     intl = tmp5(1113).intl;
     items2 = [React3(Text, obj4), tmp6];
     tmp9 = hasOwnProperty(View, obj3);

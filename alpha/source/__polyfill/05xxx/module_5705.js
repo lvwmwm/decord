@@ -1,17 +1,19 @@
 // Module ID: 5705
 // Function ID: 5706
-// Dependencies: [19, 21, 5706, 5717]
-// Exports: default
+// Dependencies: [5704, 5650]
+// Exports: useExclusiveGestures
 
 // Module 5705
-import Fragment from "Fragment" /* 21 */;
-import react from "react" /* 19 */;
+import ComposedGestureName from "ComposedGestureName" /* 5650 */;
+import _mod5704 from "module_5704" /* 5704 */;
 
-const jsx = Fragment.jsx;
 
-export default function _default(simultaneousWith) {
-  const tmp = null != simultaneousWith.simultaneousWith || null != simultaneousWith.requireToFail || null != simultaneousWith.block;
-  importDefault(tmp ? 5706 : 5717);
-  const merged = Object.assign(simultaneousWith);
-  return <tmp4 />;
-};
+export function useExclusiveGestures() {
+  const items = [...arguments];
+  const useComposedGesture = _mod5704.useComposedGesture;
+  _mod5704;
+  const items1 = [ComposedGestureName.ComposedGestureName.Exclusive, ...items];
+  const applyResult = useComposedGesture.apply(items1);
+  applyResult.type = ComposedGestureName.ComposedGestureName.Exclusive;
+  return applyResult;
+}

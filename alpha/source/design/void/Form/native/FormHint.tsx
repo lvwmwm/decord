@@ -1,7 +1,7 @@
 // Module ID: 8111
 // Function ID: 8112
 // Name: FormHint
-// Dependencies: [19, 17, 21, 5306, 575, 7618, 5929, 1187, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 7618, 5919, 1187, 2]
 // Exports: default
 
 // Module 8111 (FormHint)
@@ -34,7 +34,7 @@ export default function FormHint(inset) {
   const tmp = closure_4();
   if (react.useContext(RedesignCompat.RedesignCompatContext)) {
     let redesignHorizontalPadding = !flag;
-    const Text = tmp2(5929).Text;
+    const Text = tmp2(5919).Text;
     if (!flag) {
       redesignHorizontalPadding = tmp.redesignHorizontalPadding;
     }

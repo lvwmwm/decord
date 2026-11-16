@@ -1,16 +1,16 @@
 // Module ID: 15439
 // Function ID: 15440
 // Name: EntitlementGiftGroupCard
-// Dependencies: [19, 17, 2165, 502, 12378, 2178, 7070, 1072, 1390, 21, 5306, 575, 5377, 12379, 5929, 1113, 5936, 7244, 9515, 1187, 7924, 10560, 7963, 15440, 15441, 15442, 15443, 15444, 15445, 15446, 15447, 11809, 15448, 15449, 15450, 15451, 504, 12385, 2]
+// Dependencies: [19, 17, 2165, 502, 12378, 2178, 7070, 1072, 1390, 21, 5306, 575, 5367, 12379, 5919, 1113, 5926, 7244, 9515, 1187, 7924, 10560, 7963, 15440, 15441, 15442, 15443, 15444, 15445, 15446, 15447, 11809, 15448, 15449, 15450, 15451, 504, 12385, 2]
 
 // Module 15439 (EntitlementGiftGroupCard)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import native2 from "native" /* 5377 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import components_Button_Button from "components/Button/Button" /* 5936 */;
+import native2 from "native" /* 5367 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
 import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7244 */;
 import GameIconDefault from "GameIcon" /* 7924 */;
 import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9515 */;
@@ -191,7 +191,7 @@ class EntitlementGiftGroupCard extends Component {
     }
     items4 = [tmp6Result2, ];
     const obj10 = { variant: "body-md/normal", color: "text-subtle", style: tmp.subtitle, children: formatResult };
-    const Text = tmp2(5929).Text;
+    const Text = tmp2(5919).Text;
     const intl = tmp2(1113).intl;
     const format = intl.format;
     const t = tmp2(1113).t;

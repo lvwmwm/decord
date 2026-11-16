@@ -1,7 +1,7 @@
 // Module ID: 17749
 // Function ID: 17750
 // Name: VideoQuestCaptions
-// Dependencies: [19, 17, 21, 5306, 575, 671, 17750, 17752, 5906, 5929, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 671, 17750, 17752, 5896, 5919, 2]
 // Exports: VideoQuestCaptions
 
 // Module 17749 (VideoQuestCaptions)

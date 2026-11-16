@@ -1,9 +1,9 @@
-// Module ID: 18039
-// Function ID: 18040
+// Module ID: 18041
+// Function ID: 18042
 // Name: EnableReducedMotionSetting
 // Dependencies: [5307, 9202, 504, 16889, 12406, 1113, 2]
 
-// Module 18039 (EnableReducedMotionSetting)
+// Module 18041 (EnableReducedMotionSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;

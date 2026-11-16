@@ -1,20 +1,20 @@
 // Module ID: 8804
 // Function ID: 8805
 // Name: QuestDataUtils
-// Dependencies: [8805, 2189, 8807, 8808, 5338, 5341, 1406, 8815, 8806, 1242, 2]
+// Dependencies: [8805, 2189, 8807, 8808, 6954, 6957, 1406, 8815, 8806, 1242, 2]
 // Exports: captureQuestsException, earnedDecisionIsValid, findQuestOrReplacement, getAdContext, getAdDecisionData, getAdMetadataSealed, getAdProvenanceMetadataSealed, getAdTrafficMetadataSealed, getBountyByPlacementAndId, getIsQuestExpiredButWithinThirtyDayLookback, getQuestFormattedDate, getQuestPlacementFromQuestContent, hasUnclaimedReward, isBillableQuestContent, isBountyQuestHomePlacement, isDismissed, isDismissible
 
 // Module 8804 (QuestDataUtils)
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import FlagUtils from "FlagUtils" /* 1406 */;
-import QuestTypes from "QuestTypes" /* 5341 */;
+import QuestTypes from "QuestTypes" /* 6957 */;
 import AdDecisionUtils from "AdDecisionUtils" /* 8806 */;
 import QuestExpirationUtils from "QuestExpirationUtils" /* 8815 */;
 import AdDeliveryStore from "AdDeliveryStore" /* 8805 */;
 import LocaleStore from "LocaleStore" /* 2189 */;
 import BountyStore from "BountyStore" /* 8807 */;
 import QuestStore from "QuestStore" /* 8808 */;
-import QuestConstants from "QuestConstants" /* 5338 */;
+import QuestConstants from "QuestConstants" /* 6954 */;
 import size from "module_2" /* 2 */;
 
 let map, map1;

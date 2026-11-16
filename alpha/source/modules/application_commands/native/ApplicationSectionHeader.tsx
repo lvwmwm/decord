@@ -1,7 +1,7 @@
 // Module ID: 14812
 // Function ID: 14813
 // Name: ApplicationSectionHeader
-// Dependencies: [19, 17, 5218, 21, 5306, 575, 504, 14640, 1113, 6020, 5929, 2]
+// Dependencies: [19, 17, 5218, 21, 5306, 575, 504, 14640, 1113, 6010, 5919, 2]
 // Exports: default
 
 // Module 14812 (ApplicationSectionHeader)
@@ -67,9 +67,9 @@ export default function ApplicationSectionHeader(section) {
   const tmp8 = View;
   if (tmp9) {
     const obj4 = { style: tmp.applicationIcon, source: applicationCommandsIconSource };
-    tmp9 = closure_5(guildId(6020), obj4);
+    tmp9 = closure_5(guildId(6010), obj4);
   }
-  items1 = [tmp9, closure_5(tmp2(5929).Text, { variant: "body-sm/medium", color: "interactive-text-default", children: name })];
+  items1 = [tmp9, closure_5(tmp2(5919).Text, { variant: "body-sm/medium", color: "interactive-text-default", children: name })];
   return tmp7(tmp8, obj3);
 };
 export const APPLICATION_SECTION_HEADER_HEIGHT = 32;

@@ -1,12 +1,12 @@
-// Module ID: 18319
-// Function ID: 18320
+// Module ID: 18321
+// Function ID: 18322
 // Name: UserSettingsJSError
-// Dependencies: [19, 21, 5929, 2]
+// Dependencies: [19, 21, 5919, 2]
 // Exports: default
 
-// Module 18319 (UserSettingsJSError)
+// Module 18321 (UserSettingsJSError)
 import Fragment from "Fragment" /* 21 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

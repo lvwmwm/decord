@@ -1,15 +1,15 @@
 // Module ID: 15958
 // Function ID: 15959
 // Name: ApplicationEducation
-// Dependencies: [19, 17, 1072, 21, 5306, 575, 7408, 7307, 1113, 6018, 15959, 7438, 10569, 5929, 15961, 2]
+// Dependencies: [19, 17, 1072, 21, 5306, 575, 7408, 7307, 1113, 6008, 15959, 7438, 10569, 5919, 15961, 2]
 // Exports: default
 
 // Module 15958 (ApplicationEducation)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import FriendsIcon from "FriendsIcon" /* 6018 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import FriendsIcon from "FriendsIcon" /* 6008 */;
 import OAuth2Scopes from "OAuth2Scopes" /* 7307 */;
 import useIsSocialLayerParentApplicationDefault from "useIsSocialLayerParentApplication" /* 7408 */;
 import GameControllerIcon from "GameControllerIcon" /* 7438 */;
@@ -171,7 +171,7 @@ export default function ApplicationEducation(arg0) {
       tmp26 = null;
       if (arr2.length > 0) {
         const obj15 = { variant: "body-sm/normal", color: "text-default", children: arr2 };
-        tmp26 = hasOwnProperty(tmp4(5929).Text, obj15);
+        tmp26 = hasOwnProperty(tmp4(5919).Text, obj15);
       }
     }
     const obj16 = { children: items2 };

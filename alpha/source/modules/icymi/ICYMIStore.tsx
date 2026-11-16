@@ -1,7 +1,7 @@
 // Module ID: 10205
 // Function ID: 10206
 // Name: ICYMIStore
-// Dependencies: [32, 10206, 5532, 1246, 7029, 502, 5155, 10207, 5177, 6372, 5238, 7015, 5248, 6958, 1388, 10209, 10211, 1072, 10213, 1089, 10214, 10215, 10216, 10210, 10223, 8421, 8419, 9478, 10226, 10227, 10212, 10221, 7230, 6374, 504, 572, 2]
+// Dependencies: [32, 10206, 5522, 1246, 7029, 502, 5155, 10207, 5177, 6362, 5238, 7015, 5248, 6948, 1388, 10209, 10211, 1072, 10213, 1089, 10214, 10215, 10216, 10210, 10223, 8421, 8419, 9478, 10226, 10227, 10212, 10221, 7230, 6364, 504, 572, 2]
 
 // Module 10205 (ICYMIStore)
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -14,18 +14,18 @@ import WaterwheelsDiscoverExperiment from "WaterwheelsDiscoverExperiment" /* 102
 import ICYMIUtils from "ICYMIUtils" /* 10216 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ContentInventoryStore from "ContentInventoryStore" /* 10206 */;
-import ExperimentStore from "ExperimentStore" /* 5532 */;
+import ExperimentStore from "ExperimentStore" /* 5522 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
 import GuildScheduledEventStore_mod from "GuildScheduledEventStore" /* 7029 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import GuildAffinitiesStore from "GuildAffinitiesStore" /* 10207 */;
 import GuildStore from "GuildStore" /* 5177 */;
-import MessageStore from "MessageStore" /* 6372 */;
+import MessageStore from "MessageStore" /* 6362 */;
 import PermissionStore from "PermissionStore" /* 5238 */;
 import ReadStateStore from "ReadStateStore" /* 7015 */;
 import RelationshipStore from "RelationshipStore" /* 5248 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6958 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6948 */;
 import UserStore from "UserStore" /* 1388 */;
 import ICYMIFiltersStore from "ICYMIFiltersStore" /* 10209 */;
 import ICYMIUnreadStateStore from "ICYMIUnreadStateStore" /* 10211 */;
@@ -41,7 +41,7 @@ let closure_24;
 let closure_25;
 let metroImportAll;
 let metroImportDefault;
-const f99832 = (id) => id.id;
+const f99845 = (id) => id.id;
 function handleDiscoverSessionReset() {
   const discoverRequestGuard = DiscoverRequestState.discoverRequestGuard;
   discoverRequestGuard.resetSession();
@@ -517,7 +517,7 @@ function getNewUnreadItems(arr10, channelId) {
 }
 function maybeFilterChannelItems(channelId, score) {
   let closure_30;
-  const f99847 = (data) => {
+  const f99860 = (data) => {
     obj = channelId(dependencyMap[22]);
     const isGuildItemResult = obj.isGuildItem(data);
     let tmp2 = !isGuildItemResult;
@@ -530,17 +530,17 @@ function maybeFilterChannelItems(channelId, score) {
   const numberToCustomScoreResult = obj.numberToCustomScore(score);
   if (numberToCustomScoreResult === require("ICYMIUtils").ICYMICustomScore.MUTED) {
     let tmp2 = channelId;
-    dehydratedItems = dehydratedItems.filter(f99847);
-    closure_48 = closure_48.filter(f99847);
-    closure_49 = closure_49.filter(f99847);
-    closure_33 = closure_33.filter(f99847);
+    dehydratedItems = dehydratedItems.filter(f99860);
+    closure_48 = closure_48.filter(f99860);
+    closure_49 = closure_49.filter(f99860);
+    closure_33 = closure_33.filter(f99860);
     _require = channelId;
-    closure_34 = closure_34.filter(f99847);
+    closure_34 = closure_34.filter(f99860);
   }
 }
 function maybeFilterGuildItems(guildId, guildScore) {
   let closure_30;
-  const f99848 = (data) => {
+  const f99861 = (data) => {
     obj = guildId(dependencyMap[22]);
     const isGuildItemResult = obj.isGuildItem(data);
     let tmp2 = !isGuildItemResult;
@@ -553,12 +553,12 @@ function maybeFilterGuildItems(guildId, guildScore) {
   const numberToCustomScoreResult = obj.numberToCustomScore(guildScore);
   if (numberToCustomScoreResult === require("ICYMIUtils").ICYMICustomScore.MUTED) {
     let tmp2 = guildId;
-    dehydratedItems = dehydratedItems.filter(f99848);
-    closure_48 = closure_48.filter(f99848);
-    closure_49 = closure_49.filter(f99848);
-    closure_33 = closure_33.filter(f99848);
+    dehydratedItems = dehydratedItems.filter(f99861);
+    closure_48 = closure_48.filter(f99861);
+    closure_49 = closure_49.filter(f99861);
+    closure_33 = closure_33.filter(f99861);
     _require = guildId;
-    closure_34 = closure_34.filter(f99848);
+    closure_34 = closure_34.filter(f99861);
   }
 }
 function handleReaction(colors) {
@@ -658,7 +658,7 @@ function handleAck(channelId) {
         const _Set = Set;
         const self = this;
         const self2 = this;
-        new Set(items1.map(f99832));
+        new Set(items1.map(f99845));
         const substr = arr9.slice(0, 20);
         flag = substr.filter((id) => set1.has(id.id)).length >= 3;
       }
@@ -1354,7 +1354,7 @@ obj = {
           const _Set = Set;
           const self2 = this;
           const self3 = this;
-          const set1 = new Set(arr10.map(f99832));
+          const set1 = new Set(arr10.map(f99845));
           const substr = arr14.slice(0, 20);
           flag2 = substr.filter((id) => set1.has(id.id)).length >= 3;
         }

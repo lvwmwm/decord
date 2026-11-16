@@ -1,12 +1,12 @@
 // Module ID: 9146
 // Function ID: 9147
 // Name: ConversationDeepLinkUtils
-// Dependencies: [5, 7661, 8748, 5957, 6356, 9121, 5956, 11, 9147, 2]
+// Dependencies: [5, 7661, 8748, 5947, 6346, 9121, 5946, 11, 9147, 2]
 // Exports: consumeConversationFocusParam, getConversationPermalink
 
 // Module 9146 (ConversationDeepLinkUtils)
-import ConversationConstants from "ConversationConstants" /* 5957 */;
-import ChannelUtils from "ChannelUtils" /* 6356 */;
+import ConversationConstants from "ConversationConstants" /* 5947 */;
+import ChannelUtils from "ChannelUtils" /* 6346 */;
 import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 7661 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import ConversationPreviewStore from "ConversationPreviewStore" /* 8748 */;

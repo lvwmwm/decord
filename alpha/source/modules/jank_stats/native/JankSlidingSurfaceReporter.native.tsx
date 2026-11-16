@@ -1,14 +1,14 @@
-// Module ID: 18727
-// Function ID: 18728
+// Module ID: 18729
+// Function ID: 18730
 // Name: JankSlidingSurfaceReporter
-// Dependencies: [19, 18725, 18728, 18729, 1655, 1708, 2]
+// Dependencies: [19, 18727, 18730, 18731, 1655, 1708, 2]
 // Exports: default
 
-// Module 18727 (JankSlidingSurfaceReporter)
-import react_nativeDefault from "react-native" /* 18728 */;
-import getJankSurfaceName from "getJankSurfaceName" /* 18729 */;
+// Module 18729 (JankSlidingSurfaceReporter)
+import react_nativeDefault from "react-native" /* 18730 */;
+import getJankSurfaceName from "getJankSurfaceName" /* 18731 */;
 import react_mod from "react" /* 19 */;
-import JankScreenConstants from "JankScreenConstants" /* 18725 */;
+import JankScreenConstants from "JankScreenConstants" /* 18727 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

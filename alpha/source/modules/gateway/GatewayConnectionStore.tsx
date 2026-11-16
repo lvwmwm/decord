@@ -1,9 +1,9 @@
-// Module ID: 6800
-// Function ID: 6801
+// Module ID: 6790
+// Function ID: 6791
 // Name: GatewayConnectionStore
-// Dependencies: [5, 6801, 1231, 502, 7023, 5155, 2133, 6071, 6170, 5209, 7316, 6802, 1072, 1082, 16117, 16160, 3, 510, 16266, 6935, 1380, 7047, 16152, 12, 6808, 16131, 504, 572, 2]
+// Dependencies: [5, 6791, 1231, 502, 7023, 5155, 2133, 6061, 6160, 5209, 7316, 6792, 1072, 1082, 16117, 16160, 3, 510, 16266, 6925, 1380, 7047, 16152, 12, 6798, 16131, 504, 572, 2]
 
-// Module 6800 (GatewayConnectionStore)
+// Module 6790 (GatewayConnectionStore)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -16,17 +16,17 @@ import ConnectionStateDefault from "ConnectionState" /* 16131 */;
 import PauseGatewaySocketAll from "PauseGatewaySocket" /* 16152 */;
 import dispatchSocketMessageDefault from "dispatchSocketMessage" /* 16160 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import PassTheControllerStore from "PassTheControllerStore" /* 6801 */;
+import PassTheControllerStore from "PassTheControllerStore" /* 6791 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import CallStore from "CallStore" /* 7023 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6071 */;
-import RTCRegionStore from "RTCRegionStore" /* 6170 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
+import RTCRegionStore from "RTCRegionStore" /* 6160 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 7316 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 6802 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 6792 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

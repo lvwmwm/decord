@@ -1,9 +1,9 @@
-// Module ID: 18558
-// Function ID: 18559
+// Module ID: 18560
+// Function ID: 18561
 // Name: DataAndPrivacySetting
-// Dependencies: [19, 1072, 17385, 17388, 12406, 1113, 10815, 18559, 2]
+// Dependencies: [19, 1072, 17385, 17388, 12406, 1113, 10815, 18561, 2]
 
-// Module 18558 (DataAndPrivacySetting)
+// Module 18560 (DataAndPrivacySetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import ShieldLockIcon from "ShieldLockIcon" /* 10815 */;

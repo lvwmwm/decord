@@ -1,7 +1,7 @@
 // Module ID: 15742
 // Function ID: 15743
 // Name: UserProfileActivityVoiceChannel
-// Dependencies: [17, 5173, 5238, 1083, 21, 5306, 1380, 7918, 8545, 5568, 15743, 5954, 504, 8017, 7432, 1113, 7720, 7428, 6015, 7963, 5929, 8418, 6900, 5552, 15744, 2121, 8476, 15745, 1187, 2]
+// Dependencies: [17, 5173, 5238, 1083, 21, 5306, 1380, 7918, 8545, 5558, 15743, 5944, 504, 8017, 7432, 1113, 7720, 7428, 6005, 7963, 5919, 8418, 6890, 5542, 15744, 2121, 8476, 15745, 1187, 2]
 // Exports: default
 
 // Module 15742 (UserProfileActivityVoiceChannel)
@@ -10,9 +10,9 @@ import Constants from "Constants" /* 1083 */;
 import native from "native" /* 1187 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
 import GuildRecord from "GuildRecord" /* 5173 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 6015 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6900 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6890 */;
 import PermissionStore from "PermissionStore" /* 5238 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;

@@ -1,7 +1,7 @@
 // Module ID: 15073
 // Function ID: 15074
 // Name: InstantInviteAgeText
-// Dependencies: [19, 17, 8462, 21, 5306, 504, 5929, 8463, 7428, 8460, 1113, 2]
+// Dependencies: [19, 17, 8462, 21, 5306, 504, 5919, 8463, 7428, 8460, 1113, 2]
 // Exports: default
 
 // Module 15073 (InstantInviteAgeText)
@@ -48,7 +48,7 @@ export default function InstantInviteAgeText(style) {
     const obj2 = { style: items1, children: items3 };
     items1 = [tmp.inviteAgeContainer, style];
     const obj3 = { variant: "body-md/normal", children: items2 };
-    const Text = tmp2(5929).Text;
+    const Text = tmp2(5919).Text;
     items2 = [, ];
     const tmp2Result = InstantInviteUtils;
     items2[0] = tmp2Result.maxAgeString(stateFromStores.maxAge, stateFromStores.maxUses);
@@ -73,7 +73,7 @@ export default function InstantInviteAgeText(style) {
       const PressableOpacity = tmp2(7428).PressableOpacity;
       intl = tmp2(1113).intl;
       obj5 = { variant: "body-md/medium", color: "text-link", children: intl2.string(intl3.t["VNe8P/"]) };
-      Text2 = tmp2(5929).Text;
+      Text2 = tmp2(5919).Text;
       intl2 = tmp2(1113).intl;
       canEditInvite = closure_5(PressableOpacity, obj4);
     }

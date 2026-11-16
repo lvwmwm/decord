@@ -1,13 +1,13 @@
 // Module ID: 15211
 // Function ID: 15212
 // Name: useMediaModalFooterBackground
-// Dependencies: [32, 671, 5902, 575, 2]
+// Dependencies: [32, 671, 5892, 575, 2]
 // Exports: default
 
 // Module 15211 (useMediaModalFooterBackground)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
-import useToken from "useToken" /* 5902 */;
+import useToken from "useToken" /* 5892 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

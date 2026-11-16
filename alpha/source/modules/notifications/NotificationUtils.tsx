@@ -1,7 +1,7 @@
 // Module ID: 11086
 // Function ID: 11087
 // Name: notifications/NotificationUtils
-// Dependencies: [6958, 1072, 1082, 1113, 11, 1406, 5241, 504, 2]
+// Dependencies: [6948, 1072, 1082, 1113, 11, 1406, 5241, 504, 2]
 // Exports: filterOverrides, getMuteTimeOptions, useShouldUseNewNotificationSystem
 
 // Module 11086 (notifications/NotificationUtils)
@@ -11,7 +11,7 @@ import Constants from "Constants" /* 1072 */;
 import intl7 from "intl" /* 1113 */;
 import FlagUtilsAll from "FlagUtils" /* 1406 */;
 import MuteTimers from "MuteTimers" /* 5241 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6958 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6948 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import size from "module_2" /* 2 */;
 

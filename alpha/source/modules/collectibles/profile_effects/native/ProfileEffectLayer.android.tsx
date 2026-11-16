@@ -1,12 +1,12 @@
 // Module ID: 9499
 // Function ID: 9500
 // Name: ProfileEffectLayer
-// Dependencies: [19, 17, 21, 6020, 9496, 2]
+// Dependencies: [19, 17, 21, 6010, 9496, 2]
 
 // Module 9499 (ProfileEffectLayer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import ProfileEffectUtils from "ProfileEffectUtils" /* 9496 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;

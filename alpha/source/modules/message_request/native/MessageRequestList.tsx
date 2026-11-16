@@ -1,15 +1,15 @@
-// Module ID: 19742
-// Function ID: 19743
+// Module ID: 19744
+// Function ID: 19745
 // Name: MessageRequestList
-// Dependencies: [19, 17, 1072, 21, 5306, 575, 1113, 6015, 6063, 6848, 14872, 1256, 7428, 19743, 1187, 15566, 17456, 8106, 1630, 19748, 19750, 14871, 19753, 7888, 1380, 5929, 2]
+// Dependencies: [19, 17, 1072, 21, 5306, 575, 1113, 6005, 6053, 6838, 14872, 1256, 7428, 19745, 1187, 15566, 17456, 8106, 1630, 19750, 19752, 14871, 19755, 7888, 1380, 5919, 2]
 // Exports: default
 
-// Module 19742 (MessageRequestList)
+// Module 19744 (MessageRequestList)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import transitionToChannel from "transitionToChannel" /* 6063 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import transitionToChannel from "transitionToChannel" /* 6053 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -217,14 +217,14 @@ export default function MessageRequestList(goToMessageRequestPreview) {
   const tmp3 = dependencyMap;
   let tmp2 = data;
   const bottom = data(1630)().bottom;
-  data = data(19748)();
-  let obj = goToMessageRequestPreview(19750);
+  data = data(19750)();
+  let obj = goToMessageRequestPreview(19752);
   dependencyMap = obj.useListHasSingleMessageRequest();
   const obj2 = goToMessageRequestPreview(14871);
   const isRestricted = obj2.useIsMessageRequestRestrictedViewer();
   if (0 === data.length) {
     const obj3 = { bodyText: intl2.string(goToMessageRequestPreview(1113).t.SXrqTf) };
-    const tmp2Result = tmp2(19753);
+    const tmp2Result = tmp2(19755);
     intl2 = tmp4(1113).intl;
     tmp9Result = closure_7(tmp2Result, obj3);
   } else {
@@ -272,7 +272,7 @@ export default function MessageRequestList(goToMessageRequestPreview) {
     obj6 = { paddingHorizontal: 16, paddingBottom: bottom, paddingTop: 12 };
     obj7 = { style: tmp.sectionContainer, children: closure_7(Text, obj8) };
     obj8 = { variant: "body-sm/medium", color: "text-default", children: intl.format(goToMessageRequestPreview(1113).t.evH4Yb, obj9) };
-    Text = tmp4(5929).Text;
+    Text = tmp4(5919).Text;
     intl = tmp4(1113).intl;
     obj9 = { pendingRequestNumber: data.length };
     tmp9Result = tmp9(FlashList, obj4);

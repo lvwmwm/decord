@@ -1,7 +1,7 @@
 // Module ID: 17187
 // Function ID: 17188
 // Name: UserSettingsEditGuildProfile
-// Dependencies: [19, 17, 8542, 1388, 21, 5306, 575, 7918, 7937, 504, 17188, 10037, 8483, 17190, 7443, 7720, 15462, 5552, 17192, 2121, 17193, 2]
+// Dependencies: [19, 17, 8542, 1388, 21, 5306, 575, 7918, 7937, 504, 17188, 10037, 8483, 17190, 7443, 7720, 15462, 5542, 17192, 2121, 17193, 2]
 // Exports: default
 
 // Module 17187 (UserSettingsEditGuildProfile)

@@ -1,13 +1,13 @@
 // Module ID: 10673
 // Function ID: 10674
 // Name: GuildProfileCreateTagUpsell
-// Dependencies: [19, 17, 21, 5306, 10674, 10677, 5552, 10678, 7937, 5929, 1113, 2]
+// Dependencies: [19, 17, 21, 5306, 10674, 10677, 5542, 10678, 7937, 5919, 1113, 2]
 // Exports: default
 
 // Module 10673 (GuildProfileCreateTagUpsell)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
 import openGuildTagCreateFlowDefault from "openGuildTagCreateFlow" /* 10678 */;
 import react from "react" /* 19 */;
@@ -31,7 +31,7 @@ export default function GuildProfileCreateTagUpsell(guildId) {
   let tmp5 = null;
   if (guildTagCreationUpsell.isUpsellVisible) {
     ({ variant: "body-md/medium", color: "text-muted", children: intl.string(tmp2(1113).t.J0YWRq) });
-    const Text = tmp2(5929).Text;
+    const Text = tmp2(5919).Text;
     intl = tmp2(1113).intl;
     tmp5 = <Pressable style={tmp.upsell} role="button" onPress={function handlePress() {
       const obj = ActionSheetActionCreatorsDefault;

@@ -1,7 +1,7 @@
 // Module ID: 9270
 // Function ID: 9271
 // Name: StageRaiseHandSystemMessage
-// Dependencies: [6940, 5155, 5238, 1072, 1113, 2188, 9188, 11, 6358, 9190, 9192, 2]
+// Dependencies: [6930, 5155, 5238, 1072, 1113, 2188, 9188, 11, 6348, 9190, 9192, 2]
 // Exports: createStageRaiseHandSystemMessage
 
 // Module 9270 (StageRaiseHandSystemMessage)
@@ -10,7 +10,7 @@ import intl5 from "intl" /* 1113 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
 import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 9188 */;
 import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 9190 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6940 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6930 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import PermissionStore from "PermissionStore" /* 5238 */;
 import Constants from "Constants" /* 1072 */;
@@ -61,7 +61,7 @@ export function createStageRaiseHandSystemMessage(message) {
     if (participant != null) {
       rtsState = participant.rtsState;
     }
-    canResult = rtsState === tmp(6358).RequestToSpeakStates.REQUESTED_TO_SPEAK;
+    canResult = rtsState === tmp(6348).RequestToSpeakStates.REQUESTED_TO_SPEAK;
   }
   if (canResult) {
     canResult = toISOStringResult === toISOStringResult1;

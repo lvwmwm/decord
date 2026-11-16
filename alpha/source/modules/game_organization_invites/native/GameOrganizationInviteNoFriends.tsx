@@ -1,18 +1,18 @@
 // Module ID: 16407
 // Function ID: 16408
 // Name: GameOrganizationInviteNoFriends
-// Dependencies: [19, 21, 5306, 575, 5552, 5493, 6337, 5929, 1113, 2565, 5936, 2]
+// Dependencies: [19, 21, 5306, 575, 5542, 5483, 6327, 5919, 1113, 2565, 5926, 2]
 // Exports: default
 
 // Module 16407 (GameOrganizationInviteNoFriends)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import _modDef2565 from "module_2565" /* 2565 */;
-import RootNavigationRef from "RootNavigationRef" /* 5493 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import components_Button_Button from "components/Button/Button" /* 5936 */;
-import Stack_Stack from "Stack/Stack" /* 6337 */;
+import RootNavigationRef from "RootNavigationRef" /* 5483 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
+import Stack_Stack from "Stack/Stack" /* 6327 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;

@@ -1,7 +1,7 @@
 // Module ID: 13414
 // Function ID: 13415
 // Name: AppLauncherHomeScreen
-// Dependencies: [32, 19, 17, 5154, 11406, 5932, 13404, 5238, 13376, 1501, 1072, 5152, 21, 2153, 11055, 5994, 11064, 575, 13408, 5306, 5929, 1113, 13388, 12698, 7443, 13383, 1414, 10576, 13415, 12898, 504, 5985, 13416, 6020, 7997, 13417, 13392, 7771, 1630, 13418, 11253, 7824, 12578, 1496, 12579, 12741, 13420, 13419, 13421, 13422, 13424, 13425, 13384, 8724, 13426, 12, 6067, 7587, 13428, 13429, 6338, 1264, 5348, 5139, 13430, 13431, 13433, 7825, 13435, 1255, 13443, 13444, 13445, 13448, 13409, 13449, 13371, 13450, 13453, 7864, 12736, 13402, 12700, 13454, 13441, 13455, 1406, 13456, 13457, 2]
+// Dependencies: [32, 19, 17, 5154, 11406, 5922, 13404, 5238, 13376, 1501, 1072, 5152, 21, 2153, 11055, 5984, 11064, 575, 13408, 5306, 5919, 1113, 13388, 12698, 7443, 13383, 1414, 10576, 13415, 12898, 504, 5975, 13416, 6010, 7997, 13417, 13392, 7771, 1630, 13418, 11253, 7824, 12578, 1496, 12579, 12741, 13420, 13419, 13421, 13422, 13424, 13425, 13384, 8724, 13426, 12, 6057, 7587, 13428, 13429, 6328, 1264, 5338, 5139, 13430, 13431, 13433, 7825, 13435, 1255, 13443, 13444, 13445, 13448, 13409, 13449, 13371, 13450, 13453, 7864, 12736, 13402, 12700, 13454, 13441, 13455, 1406, 13456, 13457, 2]
 // Exports: default
 
 // Module 13414 (AppLauncherHomeScreen)
@@ -13,11 +13,11 @@ import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
 import StringUtils from "StringUtils" /* 2153 */;
 import dismissible_content from "dismissible_content" /* 5139 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5348 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5985 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 5994 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6067 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5338 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5975 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 5984 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6057 */;
 import useIsWindowLargeDefault from "useIsWindowLarge" /* 7771 */;
 import roundToNearestPixelDefault from "roundToNearestPixel" /* 10576 */;
 import MessagePreviewMarkup from "MessagePreviewMarkup" /* 11055 */;
@@ -39,7 +39,7 @@ import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
 import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 11406 */;
-import DevSettingsStore from "DevSettingsStore" /* 5932 */;
+import DevSettingsStore from "DevSettingsStore" /* 5922 */;
 import ApplicationDirectoryCollectionsStore from "ApplicationDirectoryCollectionsStore" /* 13404 */;
 import PermissionStore from "PermissionStore" /* 5238 */;
 import AppLauncherOnboardingPersistedStore from "AppLauncherOnboardingPersistedStore" /* 13376 */;
@@ -247,7 +247,7 @@ function ActivityItemTuple(arg0) {
   const items = [containerWidth];
   size = react.useMemo(() => {
     if (null == containerWidth) {
-      return { width: "disabled", height: "isArray" };
+      return { width: "Array", height: "Path" };
     } else {
       const tmp5 = roundToNearestPixelDefault(tmp / 2 - DEFAULT_CONTENT_PADDING - 6);
       size = { width: tmp5, height: roundToNearestPixelDefault(tmp5 / c22) };
@@ -284,7 +284,7 @@ function ActivityItem(context) {
   let onActivityItemSelected;
   let tmp19;
   let width;
-  const f107325 = () => {
+  const f107338 = () => {
     const items = [EmbeddedActivitiesStore.isLaunchingActivity(), ];
     let id1;
     const getLaunchState = EmbeddedActivitiesStore.getLaunchState;
@@ -325,8 +325,8 @@ function ActivityItem(context) {
   let items = [EmbeddedActivitiesStore];
   const tmp2Result = context(flag[30]);
   let isLaunching = null != tmp14;
-  const first1 = tmp5(tmp2Result.useStateFromStoresArray(items, f107325), 2)[0];
-  const tmp5Result = tmp5(tmp2Result.useStateFromStoresArray(items, f107325), 2);
+  const first1 = tmp5(tmp2Result.useStateFromStoresArray(items, f107338), 2)[0];
+  const tmp5Result = tmp5(tmp2Result.useStateFromStoresArray(items, f107338), 2);
   if (isLaunching) {
     isLaunching = tmp14.isLaunching;
   }
@@ -411,7 +411,7 @@ function RecommendationItemTuple(isLastTuple) {
   const items1 = [containerWidth, num];
   styles = react.useMemo(() => {
     if (null == containerWidth) {
-      return { width: "disabled", height: "isArray" };
+      return { width: "Array", height: "Path" };
     } else {
       const tmp6 = roundToNearestPixelDefault((tmp - 2 * DEFAULT_CONTENT_PADDING - 12 * (2 - 1)) / 2);
       size = { width: tmp6, height: roundToNearestPixelDefault(tmp6 / c22) };
@@ -499,7 +499,7 @@ function RecommendationItem(onPress) {
         resizeMode: "cover"
       };
       obj7 = { uri: tmp9Result.url };
-      tmp14 = closure_19(tmp8(6020), obj6);
+      tmp14 = closure_19(tmp8(6010), obj6);
     }
   }
   const items1 = [tmp.activityImageContainer, ];
@@ -933,7 +933,7 @@ export default function AppLauncherHomeScreen(route) {
   }
   items13[1] = sections1;
   let memo5 = useMemo(() => {
-    const f145872 = (commands) => Object.keys(commands.commands).length > 0;
+    const f145889 = (commands) => Object.keys(commands.commands).length > 0;
     result = result.result;
     let sections;
     if (result != null) {
@@ -951,11 +951,11 @@ export default function AppLauncherHomeScreen(route) {
       sections1 = {};
     }
     const values = Object.values(sections);
-    let someResult = values.some(f145872);
+    let someResult = values.some(f145889);
     if (!someResult) {
       const _Object = Object;
       const values2 = Object.values(sections1);
-      someResult = values2.some(f145872);
+      someResult = values2.some(f145889);
     }
     return someResult;
   }, items13);

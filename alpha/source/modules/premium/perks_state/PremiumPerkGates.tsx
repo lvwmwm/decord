@@ -1,14 +1,14 @@
 // Module ID: 10081
 // Function ID: 10082
 // Name: PremiumPerkGates
-// Dependencies: [1390, 8847, 6762, 10082, 1401, 2110, 1394, 2]
+// Dependencies: [1390, 8847, 6752, 10082, 1401, 2110, 1394, 2]
 // Exports: canEditDiscriminator, canInstallPremiumApplications, canRedeemPremiumPerks, canStreamQuality, canUploadLargeFiles, canUseAnimatedAvatar, canUseAnimatedEmojis, canUseBadges, canUseClientThemes, canUseCollectibles, canUseCustomBackgrounds, canUseCustomCallSounds, canUseCustomStickersEverywhere, canUseEmojisEverywhere, canUseHighVideoUploadQuality, canUseIncreasedGuildCap, canUseIncreasedMessageLength, canUseMonthlyOrbs, canUseMoreQuestOrbs, canUsePremiumAppIcons, canUsePremiumGuildMemberProfile, canUsePremiumProfileCustomization, canUseQuestOrbMultiplier, canUseShopDiscounts, canUseSoundboardEverywhere, canUseTenureBadge, getMaxFileSizeForPremiumType, hasBoostDiscount, hasFreeBoosts
 
 // Module 10081 (PremiumPerkGates)
 import PerksStateUtils from "PerksStateUtils" /* 1394 */;
 import user2 from "user" /* 1401 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 2110 */;
-import FileSizeUtils from "FileSizeUtils" /* 6762 */;
+import FileSizeUtils from "FileSizeUtils" /* 6752 */;
 import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 8847 */;
 import ProductCatalog from "ProductCatalog" /* 10082 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;

@@ -1,7 +1,7 @@
 // Module ID: 10881
 // Function ID: 10882
 // Name: StreakTrophyBadge
-// Dependencies: [19, 21, 10882, 10883, 10884, 7755, 6020, 2]
+// Dependencies: [19, 21, 10882, 10883, 10884, 7755, 6010, 2]
 // Exports: StreakTrophyBadge
 
 // Module 10881 (StreakTrophyBadge)

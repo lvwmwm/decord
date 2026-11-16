@@ -1,16 +1,16 @@
-// Module ID: 19485
-// Function ID: 19486
+// Module ID: 19487
+// Function ID: 19488
 // Name: ChannelContent
-// Dependencies: [19, 17, 6060, 6959, 21, 5306, 1380, 11050, 7219, 19486, 8092, 8160, 18838, 5929, 2]
+// Dependencies: [19, 17, 6050, 6949, 21, 5306, 1380, 11050, 7219, 19488, 8092, 8160, 18840, 5919, 2]
 // Exports: renderChannelContent
 
-// Module 19485 (ChannelContent)
+// Module 19487 (ChannelContent)
 import react_native from "react-native" /* 17 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 6060 */;
-import ReadStateConstants from "ReadStateConstants" /* 6959 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 6050 */;
+import ReadStateConstants from "ReadStateConstants" /* 6949 */;
 import isRoleRequiredDefault from "isRoleRequired" /* 7219 */;
 import ChannelListLayout from "ChannelListLayout" /* 11050 */;
-import guild_channels_ChannelTitleDefault from "guild_channels/ChannelTitle" /* 19486 */;
+import guild_channels_ChannelTitleDefault from "guild_channels/ChannelTitle" /* 19488 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
@@ -22,7 +22,7 @@ let metroRequire;
 let num2;
 let obj2;
 let tmp13;
-const GuildRoleSubscriptionGatedChannelIconDefault = tmp13(18838);
+const GuildRoleSubscriptionGatedChannelIconDefault = tmp13(18840);
 function ChannelContentComponent(arg0) {
   let channel;
   let connected;
@@ -138,7 +138,7 @@ function ChannelContentComponent(arg0) {
   const obj15 = { style: tmp10Result6 ? tmp.rightContentAbsolute : tmp.rightBox, children: items7 };
   if (tmp10Result5) {
     const obj16 = { variant: "body-xs/medium", color: "text-muted", style: { marginLeft: "auto" }, maxFontSizeMultiplier: 1.75, children: lastMessageTimestampString };
-    tmp10Result5 = tmp10(tmp2(5929).Text, obj16);
+    tmp10Result5 = tmp10(tmp2(5919).Text, obj16);
   }
   items7 = [tmp10Result5, , ];
   const items8 = [{ alignItems: "center", paddingLeft: 4 }, ];

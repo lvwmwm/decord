@@ -1,14 +1,14 @@
 // Module ID: 15621
 // Function ID: 15622
 // Name: IconActionButton
-// Dependencies: [19, 21, 5306, 575, 1380, 1187, 5944, 7428, 5929, 9057, 2]
+// Dependencies: [19, 21, 5306, 575, 1380, 1187, 5934, 7428, 5919, 9057, 2]
 // Exports: default
 
 // Module 15621 (IconActionButton)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import useFontScale from "useFontScale" /* 5944 */;
+import useFontScale from "useFontScale" /* 5934 */;
 import shared_components_Badge from "shared_components/Badge" /* 9057 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -124,7 +124,7 @@ export default function IconActionButton(variant) {
   items1 = [React3(closure_7, { IconComponent, color, source }), , , ];
   if (tmp10Result) {
     const obj2 = { variant: "body-sm/semibold", color: buttonTextColor, style: tmp.actionText, children: buttonText };
-    tmp10Result = tmp10(tmp2(5929).Text, obj2);
+    tmp10Result = tmp10(tmp2(5919).Text, obj2);
   }
   items1[1] = tmp10Result;
   let tmp10Result2 = null;

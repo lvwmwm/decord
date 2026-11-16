@@ -1,13 +1,13 @@
 // Module ID: 14851
 // Function ID: 14852
 // Name: ChatInputCharCounter
-// Dependencies: [32, 19, 1388, 1072, 1390, 21, 5306, 575, 504, 2174, 11157, 11170, 6015, 1113, 7428, 5929, 9436, 2]
+// Dependencies: [32, 19, 1388, 1072, 1390, 21, 5306, 575, 504, 2174, 11157, 11170, 6005, 1113, 7428, 5919, 9436, 2]
 
 // Module 14851 (ChatInputCharCounter)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 6015 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
 import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 11170 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -108,7 +108,7 @@ class ChatCounter {
       const PressableOpacity3 = tmp2(7428).PressableOpacity;
       let obj3 = { color: "text-feedback-critical", lineClamp: 1, variant: "footnote/semibold", children: "-" + first };
       const _HermesInternal = HermesInternal;
-      const Text = tmp2(5929).Text;
+      const Text = tmp2(5919).Text;
       items3 = [closure_9(Text, obj3), ];
       let tmp20Result = null;
       const tmp20 = closure_9;
@@ -122,7 +122,7 @@ class ChatCounter {
       items4 = [tmp.container, style];
       const PressableOpacity2 = tmp2(7428).PressableOpacity;
       let obj5 = { color: "text-default", lineClamp: 1, variant: "footnote/semibold", children: -first };
-      items5 = [closure_9(tmp2(5929).Text, obj5), ];
+      items5 = [closure_9(tmp2(5919).Text, obj5), ];
       let tmp17Result = null;
       const tmp16 = closure_10;
       const tmp17 = closure_9;

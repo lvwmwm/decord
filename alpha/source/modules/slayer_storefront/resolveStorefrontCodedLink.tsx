@@ -1,10 +1,10 @@
-// Module ID: 20308
-// Function ID: 20309
+// Module ID: 20311
+// Function ID: 20312
 // Name: resolveStorefrontCodedLink
-// Dependencies: [32, 5, 7070, 20298, 12434, 6055, 12435, 12436, 10018, 572, 16293, 2]
+// Dependencies: [32, 5, 7070, 20301, 12434, 6045, 12435, 12436, 10018, 572, 16293, 2]
 // Exports: default
 
-// Module 20308 (resolveStorefrontCodedLink)
+// Module 20311 (resolveStorefrontCodedLink)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import SKUStore from "SKUStore" /* 7070 */;
@@ -17,7 +17,7 @@ let result = size.fileFinishedImporting("modules/slayer_storefront/resolveStoref
 
 export default function resolveStorefrontCodedLink(arg0, code) {
   let obj3;
-  const f122656 = function*(arg0, value) {
+  const f122671 = function*(arg0, value) {
     if (c4 === 2) {
       c4 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
@@ -86,7 +86,7 @@ export default function resolveStorefrontCodedLink(arg0, code) {
   const result = obj.parseStorefrontCodedLink(code);
   if (null != result) {
     let skuId;
-    if (arg0 === tmp(6055).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP) {
+    if (arg0 === tmp(6045).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP) {
       let obj2 = { type: "application", applicationId: result.scopeId };
       obj3 = obj2;
     } else {
@@ -168,8 +168,8 @@ export default function resolveStorefrontCodedLink(arg0, code) {
           const tmp13 = _asyncToGenerator;
           if (!set.has(combined)) {
             obj11.add(combined);
-            const tmpResult6 = tmp(20298);
-            const result1 = tmpResult6.queueMessageLinkFetch(tmp13(f122656));
+            const tmpResult6 = tmp(20301);
+            const result1 = tmpResult6.queueMessageLinkFetch(tmp13(f122671));
           }
         }
       }
@@ -256,8 +256,8 @@ export default function resolveStorefrontCodedLink(arg0, code) {
         let obj7 = set;
         if (!set.has(storefrontCodedLink)) {
           obj7.add(storefrontCodedLink);
-          const tmpResult8 = tmp(20298);
-          const result2 = tmpResult8.queueMessageLinkFetch(tmp8(f122656));
+          const tmpResult8 = tmp(20301);
+          const result2 = tmpResult8.queueMessageLinkFetch(tmp8(f122671));
         }
       }
     }

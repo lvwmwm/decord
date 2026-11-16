@@ -1,15 +1,15 @@
 // Module ID: 13313
 // Function ID: 13314
 // Name: ConjureChangeList
-// Dependencies: [19, 17, 21, 12682, 8101, 13314, 8246, 7438, 7436, 10553, 5306, 575, 6337, 5929, 1113, 4131, 2]
+// Dependencies: [19, 17, 21, 12682, 8101, 13314, 8246, 7438, 7436, 10553, 5306, 575, 6327, 5919, 1113, 4131, 2]
 // Exports: default
 
 // Module 13313 (ConjureChangeList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef4131 from "module_4131" /* 4131 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import Stack_Stack from "Stack/Stack" /* 6337 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import Stack_Stack from "Stack/Stack" /* 6327 */;
 import GroupIcon from "GroupIcon" /* 7436 */;
 import GameControllerIcon from "GameControllerIcon" /* 7438 */;
 import AppsIcon from "AppsIcon" /* 8101 */;

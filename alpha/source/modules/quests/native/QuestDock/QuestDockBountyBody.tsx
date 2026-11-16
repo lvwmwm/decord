@@ -1,14 +1,14 @@
-// Module ID: 17814
-// Function ID: 17815
+// Module ID: 17816
+// Function ID: 17817
 // Name: QuestDockBountyBody
-// Dependencies: [19, 5338, 21, 17783, 17727, 17695, 17702, 10168, 1113, 15250, 8831, 10135, 10138, 5345, 8834, 5341, 17542, 17544, 10170, 17801, 10158, 17815, 7988, 12301, 2]
+// Dependencies: [19, 6954, 21, 17783, 17727, 17695, 17702, 10168, 1113, 15250, 8831, 10135, 10138, 6961, 8834, 6957, 17542, 17544, 10170, 17806, 10158, 17817, 7988, 12301, 2]
 
-// Module 17814 (QuestDockBountyBody)
+// Module 17816 (QuestDockBountyBody)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import QuestConstants from "QuestConstants" /* 5338 */;
-import QuestTypes from "QuestTypes" /* 5341 */;
-import AdCreativeType from "AdCreativeType" /* 5345 */;
+import QuestConstants from "QuestConstants" /* 6954 */;
+import QuestTypes from "QuestTypes" /* 6957 */;
+import AdCreativeType from "AdCreativeType" /* 6961 */;
 import QuestTaskUtils from "QuestTaskUtils" /* 8831 */;
 import AnalyticsTypes from "AnalyticsTypes" /* 8834 */;
 import captureAdUserAction from "captureAdUserAction" /* 10135 */;

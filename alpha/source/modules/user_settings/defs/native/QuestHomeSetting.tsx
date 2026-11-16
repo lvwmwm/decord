@@ -1,12 +1,12 @@
 // Module ID: 17523
 // Function ID: 17524
 // Name: QuestHomeSetting
-// Dependencies: [1072, 12406, 1113, 10132, 10562, 17524, 8829, 5343, 2]
+// Dependencies: [1072, 12406, 1113, 10132, 10562, 17524, 8829, 6959, 2]
 
 // Module 17523 (QuestHomeSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import QuestContent from "QuestContent" /* 5343 */;
+import QuestContent from "QuestContent" /* 6959 */;
 import utils_QuestUtils from "utils/QuestUtils" /* 8829 */;
 import QuestsEligibility from "QuestsEligibility" /* 10132 */;
 import QuestsIcon from "QuestsIcon" /* 10562 */;

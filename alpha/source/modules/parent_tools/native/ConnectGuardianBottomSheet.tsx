@@ -1,7 +1,7 @@
 // Module ID: 17409
 // Function ID: 17410
 // Name: ConnectGuardianBottomSheet
-// Dependencies: [19, 17, 8740, 8741, 21, 5306, 575, 563, 5552, 17410, 5566, 5929, 1113, 2701, 17411, 5936, 2]
+// Dependencies: [19, 17, 8740, 8741, 21, 5306, 575, 563, 5542, 17410, 5556, 5919, 1113, 2701, 17411, 5926, 2]
 // Exports: default
 
 // Module 17409 (ConnectGuardianBottomSheet)
@@ -9,9 +9,9 @@ import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef2701 from "module_2701" /* 2701 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5566 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5556 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import FamilyCenterConstants from "FamilyCenterConstants" /* 8741 */;
 import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 17410 */;
 import react from "react" /* 19 */;
@@ -71,7 +71,7 @@ export default function ConnectGuardianBottomSheet(arg0) {
   }
   items2 = [metroImportDefault(Text, obj5), ];
   const obj6 = { style: tmp.centered, variant: "body-md/medium", color: "text-default", children: body };
-  const Text2 = tmp2(5929).Text;
+  const Text2 = tmp2(5919).Text;
   if (body == null) {
     const intl2 = tmp2(1113).intl;
     body = intl2.format(tmp7(2701)["2O6ltn"], { link: "https://support.discord.com/hc/articles/14155060633623" });
@@ -90,7 +90,7 @@ export default function ConnectGuardianBottomSheet(arg0) {
   const obj9 = { startExpanded: true, children: metroImportAll(View, obj3) };
   items3[1] = metroImportDefault(View, obj7);
   const obj10 = { variant: "secondary", size: "md", text: intl3.string(_modDef2701.Hsm5IF), onPress: callback };
-  const Button = tmp2(5936).Button;
+  const Button = tmp2(5926).Button;
   intl3 = tmp2(1113).intl;
   items3[2] = metroImportDefault(Button, obj10);
   return metroImportDefault(BottomSheet, obj9);

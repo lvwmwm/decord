@@ -1,14 +1,14 @@
-// Module ID: 17801
-// Function ID: 17802
+// Module ID: 17806
+// Function ID: 17807
 // Name: QuestDockInsetHeaderBody
-// Dependencies: [19, 17, 17698, 21, 575, 5306, 15258, 15257, 17695, 1630, 17768, 17765, 5929, 5936, 1187, 2]
+// Dependencies: [19, 17, 17698, 21, 575, 5306, 15258, 15257, 17695, 1630, 17768, 17765, 5919, 5926, 1187, 2]
 // Exports: QuestDockBodyQuestRewardTile, QuestDockBodyRewardTile
 
-// Module 17801 (QuestDockInsetHeaderBody)
+// Module 17806 (QuestDockInsetHeaderBody)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import QuestRewardTileDefault from "QuestRewardTile" /* 15257 */;
 import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 15258 */;
 import QuestDockHooks from "QuestDockHooks" /* 17695 */;
@@ -123,7 +123,7 @@ const memoResult = react.memo(function QuestDockInsetHeaderBody(showBonusOrbsGra
   if ("primary" === ctaButtonVariant) {
     const obj14 = { variant: "primary", grow: true, onPress: onCtaPress, loading: ctaLoading, icon: renderCtaIconResult, text: ctaText };
     renderCtaIconResult = undefined;
-    const Button = tmp2(5936).Button;
+    const Button = tmp2(5926).Button;
     if (renderCtaIcon != null) {
       renderCtaIconResult = renderCtaIcon();
     }

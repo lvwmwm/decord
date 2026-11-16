@@ -1,7 +1,7 @@
 // Module ID: 11238
 // Function ID: 11239
 // Name: ForumGuidelinesActionSheet
-// Dependencies: [32, 19, 17, 8996, 21, 5306, 575, 9107, 1630, 11239, 1380, 11240, 5552, 7415, 5937, 1113, 5355, 5956, 10919, 5566, 5570, 7428, 5929, 10901, 6057, 11238, 2121, 2]
+// Dependencies: [32, 19, 17, 8996, 21, 5306, 575, 9107, 1630, 11239, 1380, 11240, 5542, 7415, 5927, 1113, 5345, 5946, 10919, 5556, 5560, 7428, 5919, 10901, 6047, 11238, 2121, 2]
 // Exports: default, openForumGuidelinesActionSheet
 
 // Module 11238 (ForumGuidelinesActionSheet)
@@ -9,8 +9,8 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import LinkUtils from "LinkUtils" /* 5956 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import LinkUtils from "LinkUtils" /* 5946 */;
 import ForumConstants from "ForumConstants" /* 8996 */;
 import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 10919 */;
 import ForumGuidelinesManagerDefault from "ForumGuidelinesManager" /* 11240 */;

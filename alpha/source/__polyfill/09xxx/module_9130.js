@@ -1,6 +1,6 @@
 // Module ID: 9130
 // Function ID: 9131
-// Dependencies: [32, 19, 17, 21, 1503, 1633, 7500, 9131, 6276, 9132, 9134, 9135, 9136, 9137]
+// Dependencies: [32, 19, 17, 21, 1503, 1633, 7500, 9131, 6266, 9132, 9134, 9135, 9136, 9137]
 // Exports: NativeStackView
 
 // Module 9130
@@ -214,7 +214,7 @@ function SceneView(arg0) {
   const callback = useCallback(tmp8Result6.debounce(tmp18, 100), []);
   _slicedToArray = 0;
   let num8 = 0;
-  const tmp21 = "usesNewAndroidHeaderHeightImplementation" in tmp8(6276).compatibilityFlags && true === tmp8(6276).compatibilityFlags.usesNewAndroidHeaderHeightImplementation;
+  const tmp21 = "usesNewAndroidHeaderHeightImplementation" in tmp8(6266).compatibilityFlags && true === tmp8(6266).compatibilityFlags.usesNewAndroidHeaderHeightImplementation;
   if (null == header) {
     num8 = 0;
     if (!tmp21) {
@@ -296,7 +296,7 @@ function SceneView(arg0) {
   const obj9 = { route, navigation, children: closure_10(ScreenStackItem, obj10) };
   const NavigationProvider = tmp8(1503).NavigationProvider;
   obj10 = { screenId: route.key, activityState: num7, style: StyleSheet.absoluteFill, "aria-hidden": !focused, customAnimationOnSwipe: animationMatchesGesture, fullScreenSwipeEnabled: fullScreenGestureEnabled, fullScreenSwipeShadowEnabled: tmp2, freezeOnBlur, gestureEnabled: false, homeIndicatorHidden: autoHideHomeIndicator, hideKeyboardOnSwipe: keyboardHandlingEnabled, navigationBarColor, navigationBarTranslucent, navigationBarHidden, replaceAnimation: str4, stackPresentation: str3, stackAnimation: animation, screenOrientation: orientation, sheetAllowedDetents, sheetLargestUndimmedDetentIndex: num2, sheetGrabberVisible: tmp3, sheetInitialDetentIndex: num4, sheetCornerRadius: num, sheetElevation: num3, sheetExpandsWhenScrolledToEdge: tmp4, sheetShouldOverflowTopInset: tmp5, sheetDefaultResizeAnimationEnabled: tmp6, statusBarAnimation, statusBarHidden, statusBarStyle, statusBarColor: statusBarBackgroundColor, statusBarTranslucent, swipeDirection: gestureDirection, transitionDuration: animationDuration, onWillAppear, onWillDisappear, onAppear, onDisappear, onDismissed, onGestureCancel, onSheetDetentChanged, gestureResponseDistance, nativeBackButtonDismissalEnabled: false, onHeaderBackButtonClicked, preventNativeDismiss: preventRemove, scrollEdgeEffects: rect, onNativeDismissCancelled, onHeaderHeightChange: eventResult, contentStyle: items3, headerConfig: headerConfigProps, unstable_sheetFooter, shouldFreeze, children: closure_10(Provider, obj12) };
-  ScreenStackItem = tmp8(6276).ScreenStackItem;
+  ScreenStackItem = tmp8(6266).ScreenStackItem;
   if (isPreloaded) {
     num7 = 0;
   }

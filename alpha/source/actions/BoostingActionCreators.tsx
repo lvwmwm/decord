@@ -1,7 +1,7 @@
 // Module ID: 9238
 // Function ID: 9239
 // Name: actions/BoostingActionCreators
-// Dependencies: [5, 9239, 9240, 2179, 1072, 1285, 572, 6757, 2]
+// Dependencies: [5, 9239, 9240, 2179, 1072, 1285, 572, 6747, 2]
 // Exports: applyToGuild, cancelGuildBoostSlot, fetchAppliedBoostsCooldown, fetchAppliedGuildBoostsForGuild, fetchAppliedGuildBoostsForUser, unapplyFromGuild, uncancelGuildBoostSlot
 
 // Module 9238 (actions/BoostingActionCreators)

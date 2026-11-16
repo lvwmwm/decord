@@ -1,16 +1,16 @@
 // Module ID: 17584
 // Function ID: 17585
 // Name: BountiesModalAdvertiserCta
-// Dependencies: [109, 19, 17, 5307, 5338, 21, 1655, 5306, 575, 5548, 5551, 17585, 10146, 5943, 10168, 10170, 5345, 8834, 5343, 8006, 6020, 5929, 5936, 17548, 504, 17549, 9431, 2]
+// Dependencies: [109, 19, 17, 5307, 6954, 21, 1655, 5306, 575, 5538, 5541, 17585, 10146, 5933, 10168, 10170, 6961, 8834, 6959, 8006, 6010, 5919, 5926, 17548, 504, 17549, 9431, 2]
 // Exports: default
 
 // Module 17584 (BountiesModalAdvertiserCta)
 import nativeDefault from "native" /* 575 */;
-import QuestConstants from "QuestConstants" /* 5338 */;
-import QuestContent from "QuestContent" /* 5343 */;
-import AdCreativeType from "AdCreativeType" /* 5345 */;
-import timing_timing from "timing/timing" /* 5548 */;
-import timingPresets from "timingPresets" /* 5551 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import timingPresets from "timingPresets" /* 5541 */;
+import QuestConstants from "QuestConstants" /* 6954 */;
+import QuestContent from "QuestContent" /* 6959 */;
+import AdCreativeType from "AdCreativeType" /* 6961 */;
 import AnalyticsTypes from "AnalyticsTypes" /* 8834 */;
 import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 9431 */;
 import QuestPlatformUtils from "QuestPlatformUtils" /* 10170 */;
@@ -181,12 +181,12 @@ export default function BountiesModalAdvertiserCta(visible) {
   const items1 = [closure_17, , , , , , ];
   const useAnimatedStyle = animatedStyle(1655).useAnimatedStyle;
   animatedStyle(1655);
-  items1[1] = animatedStyle(5548).withTiming;
+  items1[1] = animatedStyle(5538).withTiming;
   items1[2] = animatedStyle(1655).interpolate;
   items1[3] = num;
   items1[4] = visible;
-  items1[5] = animatedStyle(5551).timingStandard;
-  items1[6] = animatedStyle(5551).timingFast;
+  items1[5] = animatedStyle(5541).timingStandard;
+  items1[6] = animatedStyle(5541).timingFast;
   let c0;
   let c1;
   let c2;
@@ -215,7 +215,7 @@ export default function BountiesModalAdvertiserCta(visible) {
     return authStore(BountiesModalAdvertiserCtaContent, obj);
   }, items3);
   const tmp2Result2 = animatedStyle(17549);
-  const obj3 = { visible, entranceTiming: animatedStyle(5551).timingStandard, exitTiming: animatedStyle(5551).timingFast };
+  const obj3 = { visible, entranceTiming: animatedStyle(5541).timingStandard, exitTiming: animatedStyle(5541).timingFast };
   const visibilityTransition = tmp2Result2.useVisibilityTransition(obj3);
   let shouldRender = visibilityTransition.shouldRender;
   if (isBountiesModalTransitionsRefactorEnabled) {

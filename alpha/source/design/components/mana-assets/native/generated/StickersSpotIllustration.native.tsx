@@ -1,7 +1,7 @@
 // Module ID: 9042
 // Function ID: 9043
 // Name: StickersSpotIllustration
-// Dependencies: [19, 21, 9043, 9044, 9045, 7755, 6020, 2]
+// Dependencies: [19, 21, 9043, 9044, 9045, 7755, 6010, 2]
 // Exports: StickersSpotIllustration
 
 // Module 9042 (StickersSpotIllustration)

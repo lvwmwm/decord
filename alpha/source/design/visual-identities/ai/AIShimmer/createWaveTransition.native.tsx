@@ -1,12 +1,12 @@
 // Module ID: 13769
 // Function ID: 13770
 // Name: createWaveTransition
-// Dependencies: [13767, 5548, 1655, 1708, 2]
+// Dependencies: [13767, 5538, 1655, 1708, 2]
 // Exports: createWaveTransition
 
 // Module 13769 (createWaveTransition)
 import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5548 */;
+import timing_timing from "timing/timing" /* 5538 */;
 import waveTransition from "waveTransition" /* 13767 */;
 import size from "module_2" /* 2 */;
 

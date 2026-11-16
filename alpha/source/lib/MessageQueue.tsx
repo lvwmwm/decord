@@ -1,20 +1,20 @@
 // Module ID: 9016
 // Function ID: 9017
 // Name: MessageQueue
-// Dependencies: [109, 5932, 502, 6210, 1072, 5311, 1089, 9017, 3, 6067, 9018, 8663, 1285, 6381, 38, 8873, 8846, 8890, 8875, 2]
+// Dependencies: [109, 5922, 502, 6200, 1072, 5311, 1089, 9017, 3, 6057, 9018, 8663, 1285, 6371, 38, 8873, 8846, 8890, 8875, 2]
 // Exports: getFailedMessageId, isMessageDataCommand, isMessageDataEdit, isMessageDataSend
 
 // Module 9016 (MessageQueue)
 import LoggerDefault from "Logger" /* 3 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import MessageConstants from "MessageConstants" /* 5311 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6067 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6057 */;
 import NetStats from "NetStats" /* 8663 */;
 import getOverlayMessageAnaylticsLocationDefault from "getOverlayMessageAnaylticsLocation" /* 9018 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import DevSettingsStore from "DevSettingsStore" /* 5932 */;
+import DevSettingsStore from "DevSettingsStore" /* 5922 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import NetworkStore from "NetworkStore" /* 6210 */;
+import NetworkStore from "NetworkStore" /* 6200 */;
 import Constants from "Constants" /* 1072 */;
 import Queue from "Queue" /* 9017 */;
 import size from "module_2" /* 2 */;

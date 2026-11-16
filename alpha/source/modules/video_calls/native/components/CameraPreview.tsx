@@ -1,13 +1,13 @@
 // Module ID: 12718
 // Function ID: 12719
 // Name: CameraPreview
-// Dependencies: [32, 19, 17, 5154, 7016, 11865, 6820, 502, 12719, 11003, 11004, 1072, 5983, 21, 5598, 1708, 1187, 504, 12720, 12715, 12728, 12716, 8560, 1630, 12726, 10041, 6836, 12721, 5892, 1655, 5548, 12738, 1113, 12739, 12781, 12782, 12723, 11006, 7025, 12900, 12901, 2]
+// Dependencies: [32, 19, 17, 5154, 7016, 11865, 6810, 502, 12719, 11003, 11004, 1072, 5973, 21, 5588, 1708, 1187, 504, 12720, 12715, 12728, 12716, 8560, 1630, 12726, 10041, 6826, 12721, 5882, 1655, 5538, 12738, 1113, 12739, 12781, 12782, 12723, 11006, 7025, 12900, 12901, 2]
 // Exports: default
 
 // Module 12718 (CameraPreview)
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
-import NavigatorConstants from "NavigatorConstants" /* 5892 */;
+import NavigatorConstants from "NavigatorConstants" /* 5882 */;
 import ChannelCallStore from "ChannelCallStore" /* 11003 */;
 import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 11865 */;
 import PictureInPicture from "PictureInPicture" /* 12721 */;
@@ -16,11 +16,11 @@ import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 7016 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6820 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6810 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 12719 */;
 import ChannelCallConstants from "ChannelCallConstants" /* 11004 */;
-import CallConstants from "CallConstants" /* 5983 */;
+import CallConstants from "CallConstants" /* 5973 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -114,7 +114,7 @@ function CameraPreview(arg0) {
   const OrientationType = participantScreenIsFocused(10041).OrientationType;
   const tmp15 = isScreenLandscape ? OrientationType.LANDSCAPE : OrientationType.PORTRAIT;
   closure_9 = tmp15;
-  const tmp16 = tmp4(6836)(tmp15);
+  const tmp16 = tmp4(6826)(tmp15);
   let tmp17 = tmp16;
   if (tmp16 == null) {
     screenOrientation = undefined;
@@ -161,7 +161,7 @@ function CameraPreview(arg0) {
   const items4 = [closure_27, , , , ];
   const useAnimatedStyle = tmp(1655).useAnimatedStyle;
   tmp(1655);
-  items4[1] = tmp(5548).withTiming;
+  items4[1] = tmp(5538).withTiming;
   items4[2] = tmp21;
   items4[3] = obj;
   items4[4] = tmp23;
@@ -208,7 +208,7 @@ function CameraPreview(arg0) {
   if (null != tmp34) {
     const obj9 = { gesture: tmp36, children: closure_21(closure_6, obj10) };
     obj10 = { style: closure_5.absoluteFill };
-    const GestureDetector = tmp(5598).GestureDetector;
+    const GestureDetector = tmp(5588).GestureDetector;
     tmp39 = closure_21(GestureDetector, obj9);
   }
   const items9 = [tmp39, ];

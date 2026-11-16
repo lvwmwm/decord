@@ -1,7 +1,7 @@
 // Module ID: 9063
 // Function ID: 9064
 // Name: ChannelActions
-// Dependencies: [19, 17, 7035, 5159, 5155, 5981, 9064, 1072, 9065, 21, 5306, 9067, 8069, 9068, 1113, 9102, 575, 9104, 7432, 9106, 9107, 9116, 504, 7287, 9117, 9118, 14632, 15618, 15620, 6900, 15630, 7826, 14697, 9112, 1380, 5501, 14696, 14761, 12404, 1108, 5493, 12629, 8071, 10999, 15631, 15621, 6838, 15632, 15633, 2]
+// Dependencies: [19, 17, 7035, 5159, 5155, 5971, 9064, 1072, 9065, 21, 5306, 9067, 8069, 9068, 1113, 9102, 575, 9104, 7432, 9106, 9107, 9116, 504, 7287, 9117, 9118, 14632, 15618, 15620, 6890, 15630, 7826, 14697, 9112, 1380, 5491, 14696, 14761, 12404, 1108, 5483, 12629, 8071, 10999, 15631, 15621, 6828, 15632, 15633, 2]
 // Exports: default
 
 // Module 9063 (ChannelActions)
@@ -9,9 +9,9 @@ import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 19 */;
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import RootNavigationRef from "RootNavigationRef" /* 5493 */;
-import ChatInputUtils from "ChatInputUtils" /* 5501 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6900 */;
+import RootNavigationRef from "RootNavigationRef" /* 5483 */;
+import ChatInputUtils from "ChatInputUtils" /* 5491 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6890 */;
 import VoiceNormalIcon2 from "VoiceNormalIcon" /* 7432 */;
 import ChannelDetailsStore from "ChannelDetailsStore" /* 9064 */;
 import TrackingConstants from "TrackingConstants" /* 9065 */;
@@ -29,7 +29,7 @@ import PrivateChannelButtonsDefault from "PrivateChannelButtons" /* 15633 */;
 import ActiveThreadsStore from "ActiveThreadsStore" /* 7035 */;
 import ChannelRecord from "ChannelRecord" /* 5159 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
-import VoiceStateStore from "VoiceStateStore" /* 5981 */;
+import VoiceStateStore from "VoiceStateStore" /* 5971 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;
@@ -370,7 +370,7 @@ function WrappedChannelNavButtons(channelId) {
   const items = [ChannelStore];
   const obj = channelId(504);
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channelId));
-  channelId(6838);
+  channelId(6828);
   let tmp4 = null;
   if (null != stateFromStores) {
     tmp4 = null;

@@ -1,7 +1,7 @@
 // Module ID: 10546
 // Function ID: 10547
 // Name: ConjureAppIconTile
-// Dependencies: [19, 17, 21, 5306, 10547, 10544, 5929, 8101, 2]
+// Dependencies: [19, 17, 21, 5306, 10547, 10544, 5919, 8101, 2]
 // Exports: default
 
 // Module 10546 (ConjureAppIconTile)
@@ -39,7 +39,7 @@ export default function ConjureAppIconTile(size) {
   const tmp4 = closure_5(size, obj.conjureProjectIconMetrics(size).glyphSize, backgroundColor, foregroundColor);
   if (null != character) {
     const obj3 = { variant: "heading-sm/semibold", color: "none", style: tmp4.character, allowFontScaling: false, children: character };
-    tmp5Result = tmp5(tmp3(5929).Text, obj3);
+    tmp5Result = tmp5(tmp3(5919).Text, obj3);
   } else {
     const obj4 = { size: "custom", style: tmp4.glyph, color: foregroundColor };
     tmp5Result = tmp5(tmp3(8101).AppsIcon, obj4);

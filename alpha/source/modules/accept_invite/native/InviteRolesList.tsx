@@ -1,7 +1,7 @@
 // Module ID: 15081
 // Function ID: 15082
 // Name: InviteRolesList
-// Dependencies: [19, 17, 21, 5306, 5216, 6337, 5929, 1113, 10935, 2]
+// Dependencies: [19, 17, 21, 5306, 5216, 6327, 5919, 1113, 10935, 2]
 // Exports: default
 
 // Module 15081 (InviteRolesList)
@@ -51,9 +51,9 @@ export default function InviteRolesList(invite) {
     tmp2 = null;
     if (0 !== memo.length) {
       let obj = { spacing: 4, style, children: items1 };
-      const Stack = guild(6337).Stack;
+      const Stack = guild(6327).Stack;
       const obj2 = { variant: "body-sm/semibold", color: "text-default", children: intl.string(guild(1113).t.stcSfI) };
-      const Text = guild(5929).Text;
+      const Text = guild(5919).Text;
       intl = guild(1113).intl;
       items1 = [closure_5(Text, obj2), ];
       const obj3 = {

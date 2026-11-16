@@ -1,7 +1,7 @@
 // Module ID: 15560
 // Function ID: 15561
 // Name: GroupDMInvite
-// Dependencies: [5155, 5248, 1388, 8842, 9170, 11892, 1113, 15561, 1417, 5954, 2]
+// Dependencies: [5155, 5248, 1388, 8842, 9170, 11892, 1113, 15561, 1417, 5944, 2]
 // Exports: createGroupDMInvite
 
 // Module 15560 (GroupDMInvite)
@@ -84,7 +84,7 @@ export function createGroupDMInvite(invite, arg1, theme) {
   if (flag) {
     channelName = null;
     if (null != channel) {
-      const tmp8Result5 = tmp8(5954);
+      const tmp8Result5 = tmp8(5944);
       channelName = tmp8Result5.computeChannelName(channel, UserStore, RelationshipStore);
     }
   }
@@ -127,7 +127,7 @@ export function createGroupDMInvite(invite, arg1, theme) {
   if (flag) {
     channelName1 = channelName;
     if (null != channel) {
-      const tmp8Result6 = tmp8(5954);
+      const tmp8Result6 = tmp8(5944);
       channelName1 = tmp8Result6.computeChannelName(channel, UserStore, RelationshipStore);
     }
   }

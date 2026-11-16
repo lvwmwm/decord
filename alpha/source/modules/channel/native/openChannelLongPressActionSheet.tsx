@@ -1,11 +1,11 @@
 // Module ID: 10894
 // Function ID: 10895
 // Name: openChannelLongPressActionSheet
-// Dependencies: [5552, 10895, 2121, 2]
+// Dependencies: [5542, 10895, 2121, 2]
 // Exports: openChannelLongPressActionSheet
 
 // Module 10894 (openChannelLongPressActionSheet)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/channel/native/openChannelLongPressActionSheet.tsx");

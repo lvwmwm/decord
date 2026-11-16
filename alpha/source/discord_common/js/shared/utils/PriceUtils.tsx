@@ -1,12 +1,12 @@
 // Module ID: 7254
 // Function ID: 7255
 // Name: utils/PriceUtils
-// Dependencies: [32, 109, 1083, 7255, 5999, 2]
+// Dependencies: [32, 109, 1083, 7255, 5989, 2]
 // Exports: convertToMinorCurrencyUnits, currencyCodeFromBCP47Locale, floorToWholeCurrencyUnits, formatPrice
 
 // Module 7254 (utils/PriceUtils)
 import Constants from "Constants" /* 1083 */;
-import CountryCodes from "CountryCodes" /* 5999 */;
+import CountryCodes from "CountryCodes" /* 5989 */;
 import _modDef7255 from "module_7255" /* 7255 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;

@@ -1,7 +1,7 @@
 // Module ID: 14715
 // Function ID: 14716
 // Name: useAvailableAndAddedGuilds
-// Dependencies: [5, 32, 19, 5177, 5238, 6956, 14709, 1072, 504, 5899, 14713, 2]
+// Dependencies: [5, 32, 19, 5177, 5238, 6946, 14709, 1072, 504, 5889, 14713, 2]
 // Exports: default
 
 // Module 14715 (useAvailableAndAddedGuilds)
@@ -11,7 +11,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 5177 */;
 import PermissionStore from "PermissionStore" /* 5238 */;
-import SortedGuildStore from "SortedGuildStore" /* 6956 */;
+import SortedGuildStore from "SortedGuildStore" /* 6946 */;
 import GuildDirectoryStore from "GuildDirectoryStore" /* 14709 */;
 import size from "module_2" /* 2 */;
 

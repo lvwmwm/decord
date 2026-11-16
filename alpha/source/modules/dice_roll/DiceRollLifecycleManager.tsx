@@ -1,9 +1,9 @@
-// Module ID: 20211
-// Function ID: 20212
+// Module ID: 20214
+// Function ID: 20215
 // Name: DiceRollLifecycleManager
 // Dependencies: [5155, 5209, 14569, 11415, 5311, 7882, 1113, 8660, 8786, 2]
 
-// Module 20211 (DiceRollLifecycleManager)
+// Module 20214 (DiceRollLifecycleManager)
 import intl3 from "intl" /* 1113 */;
 import MessageConstants from "MessageConstants" /* 5311 */;
 import MessageActionCreatorsDefault from "MessageActionCreators" /* 8660 */;

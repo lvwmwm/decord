@@ -1,7 +1,7 @@
 // Module ID: 10910
 // Function ID: 10911
 // Name: useAnnounceAsyncCompletion
-// Dependencies: [19, 17, 5313, 1380, 5568, 2]
+// Dependencies: [19, 17, 5313, 1380, 5558, 2]
 // Exports: default
 
 // Module 10910 (useAnnounceAsyncCompletion)

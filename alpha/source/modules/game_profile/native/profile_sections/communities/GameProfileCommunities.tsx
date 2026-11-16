@@ -1,7 +1,7 @@
 // Module ID: 10497
 // Function ID: 10498
 // Name: GameProfileCommunities
-// Dependencies: [32, 5, 19, 17, 5177, 5209, 10316, 1072, 5162, 21, 5306, 575, 5169, 504, 10281, 10311, 10286, 7232, 7230, 7937, 6922, 10389, 1113, 10498, 10501, 5552, 10503, 5929, 7988, 10505, 12, 10384, 2]
+// Dependencies: [32, 5, 19, 17, 5177, 5209, 10316, 1072, 5162, 21, 5306, 575, 5169, 504, 10281, 10311, 10286, 7232, 7230, 7937, 6912, 10389, 1113, 10498, 10501, 5542, 10503, 5919, 7988, 10505, 12, 10384, 2]
 // Exports: default
 
 // Module 10497 (GameProfileCommunities)
@@ -10,7 +10,7 @@ import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import ChannelConstants from "ChannelConstants" /* 5162 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 5169 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5542 */;
 import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 10281 */;
 import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 10286 */;
 import GameProfileNavTypes from "GameProfileNavTypes" /* 10311 */;
@@ -258,7 +258,7 @@ export default function GameProfileCommunities(game) {
   let obj = { style: tmp.container, children: items2 };
   let obj2 = { style: tmp.header, children: items1 };
   const obj3 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: tmp.heading, children: intl.string(game(1113).t.r6bvTh) };
-  const Heading = game(5929).Heading;
+  const Heading = game(5919).Heading;
   intl = game(1113).intl;
   items1 = [closure_11(Heading, obj3), ];
   if (showLocaleFilter) {

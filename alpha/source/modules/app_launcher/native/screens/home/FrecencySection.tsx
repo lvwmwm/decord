@@ -1,7 +1,7 @@
 // Module ID: 13384
 // Function ID: 13385
 // Name: FrecencySection
-// Dependencies: [32, 19, 17, 5154, 13385, 1072, 21, 5306, 575, 12698, 1255, 7259, 13386, 12578, 504, 12579, 6067, 1655, 5548, 1113, 10871, 13387, 13383, 2119, 7997, 13388, 5929, 9148, 10560, 7428, 13389, 5985, 6020, 13392, 2]
+// Dependencies: [32, 19, 17, 5154, 13385, 1072, 21, 5306, 575, 12698, 1255, 7259, 13386, 12578, 504, 12579, 6057, 1655, 5538, 1113, 10871, 13387, 13383, 2119, 7997, 13388, 5919, 9148, 10560, 7428, 13389, 5975, 6010, 13392, 2]
 // Exports: default
 
 // Module 13384 (FrecencySection)
@@ -9,8 +9,8 @@ import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
 import _modDef1655 from "module_1655" /* 1655 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6067 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6057 */;
 import AppLauncherTypes from "AppLauncherTypes" /* 12579 */;
 import AppLauncherUtils from "AppLauncherUtils" /* 12698 */;
 import FrecencySectionStore2 from "FrecencySectionStore" /* 13385 */;
@@ -72,7 +72,7 @@ function FrecentActivityOneClickCTA(context) {
   let onActivityItemSelected;
   let tmp6;
   let tmp7;
-  const f107230 = () => {
+  const f107243 = () => {
     const items = [EmbeddedActivitiesStore.isLaunchingActivity(), ];
     let id;
     const getLaunchState = EmbeddedActivitiesStore.getLaunchState;
@@ -92,8 +92,8 @@ function FrecentActivityOneClickCTA(context) {
   let id = react.useId();
   let items = [EmbeddedActivitiesStore];
   const obj3 = context(handleActivityItemSelected[14]);
-  [tmp6, tmp7] = obj3.useStateFromStoresArray(items, f107230);
-  _slicedToArray(obj3.useStateFromStoresArray(items, f107230), 2);
+  [tmp6, tmp7] = obj3.useStateFromStoresArray(items, f107243);
+  _slicedToArray(obj3.useStateFromStoresArray(items, f107243), 2);
   let isLaunching = null != tmp7;
   const obj4 = context(handleActivityItemSelected[30]);
   const obj5 = { context, applicationId: app.applicationId };
@@ -167,7 +167,7 @@ function FrecentApp(app) {
     let tmp3 = null != appLauncherIconSource;
     if (tmp3) {
       const obj2 = { style: tmp.appIcon, source: appLauncherIconSource };
-      tmp3 = closure_11(onAppSelected(6020), obj2);
+      tmp3 = closure_11(onAppSelected(6010), obj2);
     }
     items = [tmp3, ];
     const obj3 = { submitting, style: tmp.submittingOverlay };

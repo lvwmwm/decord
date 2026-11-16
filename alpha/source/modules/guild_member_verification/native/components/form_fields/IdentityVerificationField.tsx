@@ -1,15 +1,15 @@
 // Module ID: 7737
 // Function ID: 7738
 // Name: IdentityVerificationField
-// Dependencies: [19, 17, 21, 5306, 575, 5929, 1113, 7738, 5936, 5352, 7740, 6848, 7817, 2121, 7820, 7855, 7786, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 5919, 1113, 7738, 5926, 5342, 7740, 6838, 7817, 2121, 7820, 7855, 7786, 2]
 // Exports: default
 
 // Module 7737 (IdentityVerificationField)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 5352 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5342 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 7738 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -54,7 +54,7 @@ function BaseIdentityVerificationField(icon) {
   } else {
     obj5 = { style: tmp.ctaButton, children: React3(Button, obj6) };
     obj6 = { variant: "primary", size: "sm", grow: true, text: intl.string(intl4.t["13ofGu"]), onPress };
-    Button = tmp7(5936).Button;
+    Button = tmp7(5926).Button;
     intl = tmp7(1113).intl;
   }
   items[2] = React3(View, obj5);

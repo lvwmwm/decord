@@ -1,9 +1,9 @@
-// Module ID: 20502
-// Function ID: 20503
+// Module ID: 20505
+// Function ID: 20506
 // Name: AuditLog
-// Dependencies: [19, 17, 1192, 1407, 5248, 1388, 1072, 21, 5306, 575, 1417, 1414, 7087, 5313, 7259, 5929, 1380, 5377, 20490, 5372, 1187, 1113, 5169, 5954, 6356, 2169, 1255, 1090, 11627, 7894, 7445, 20494, 7428, 5552, 8476, 17078, 504, 2]
+// Dependencies: [19, 17, 1192, 1407, 5248, 1388, 1072, 21, 5306, 575, 1417, 1414, 7087, 5313, 7259, 5919, 1380, 5367, 20493, 5362, 1187, 1113, 5169, 5944, 6346, 2169, 1255, 1090, 11627, 7894, 7445, 20497, 7428, 5542, 8476, 17078, 504, 2]
 
-// Module 20502 (AuditLog)
+// Module 20505 (AuditLog)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
@@ -11,15 +11,15 @@ import native from "native" /* 1187 */;
 import GlobalUtils from "GlobalUtils" /* 1255 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 5169 */;
-import UserUtilsDefault from "UserUtils" /* 5372 */;
-import native2 from "native" /* 5377 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import UserUtilsDefault from "UserUtils" /* 5362 */;
+import native2 from "native" /* 5367 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import PlatformsDefault from "Platforms" /* 7087 */;
 import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7259 */;
 import EmojiDefault from "Emoji" /* 7894 */;
 import AppliedForumTag from "AppliedForumTag" /* 11627 */;
-import AuditLogUtilsAll from "AuditLogUtils" /* 20490 */;
+import AuditLogUtilsAll from "AuditLogUtils" /* 20493 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
 import UserRecord from "UserRecord" /* 1407 */;
@@ -199,7 +199,7 @@ class AuditLog extends PureComponent {
                 const tmp15 = require;
                 if (obj6.isGuildRecord(target)) {
                   const obj5 = { variant: "body-md/medium", color: "text-default", children: target.name };
-                  tmp8Result = gesture(tmp15(5929).Text, obj5, `target${tmp5.id}`);
+                  tmp8Result = gesture(tmp15(5919).Text, obj5, `target${tmp5.id}`);
                 }
               }
             }
@@ -681,7 +681,7 @@ class AuditLog extends PureComponent {
     const obj5 = { style: tmp.rowContainer, children: null };
     const items2 = [, , , ];
     const obj6 = { action: log.action };
-    items2[0] = closure_14(user(20494), obj6);
+    items2[0] = closure_14(user(20497), obj6);
     const obj7 = {
       accessibilityRole: "button",
       accessibilityLabel: intl.string(tmp10(1113).t.iXAna6),

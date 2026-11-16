@@ -1,18 +1,18 @@
-// Module ID: 20751
-// Function ID: 20752
+// Module ID: 20754
+// Function ID: 20755
 // Name: ChannelSelectorActionSheet
-// Dependencies: [32, 19, 17, 5155, 7875, 5177, 5238, 5248, 1388, 1072, 21, 5306, 575, 5954, 17861, 5552, 7747, 7443, 1630, 504, 1113, 5566, 7913, 7825, 7888, 13997, 6848, 8105, 2121, 8125, 8143, 5929, 2]
+// Dependencies: [32, 19, 17, 5155, 7875, 5177, 5238, 5248, 1388, 1072, 21, 5306, 575, 5944, 17863, 5542, 7747, 7443, 1630, 504, 1113, 5556, 7913, 7825, 7888, 13997, 6838, 8105, 2121, 8125, 8143, 5919, 2]
 // Exports: default
 
-// Module 20751 (ChannelSelectorActionSheet)
+// Module 20754 (ChannelSelectorActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import useChannelName from "useChannelName" /* 5954 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import useChannelName from "useChannelName" /* 5944 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import useCreateChannelSubmit from "useCreateChannelSubmit" /* 8125 */;
 import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 8143 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -40,8 +40,8 @@ function ChannelRow(channel) {
   channel = channel.channel;
   const onChannelSelected = channel.onChannelSelected;
   ({ selected, guild, start, end } = channel);
-  let str = onChannelSelected(5954)(channel);
-  let obj = channel(17861);
+  let str = onChannelSelected(5944)(channel);
+  let obj = channel(17863);
   const items = [onChannelSelected, channel];
   const channelIconComponentOrDefault = obj.getChannelIconComponentOrDefault(channel, guild);
   const callback = react.useCallback(() => {
@@ -149,7 +149,7 @@ export default function ChannelSelectorActionSheet(guildId) {
   const stringResult = intl2.string(tmp7(1113).t.UTYBjS);
   const obj3 = { scrollable: true, startExpanded: true, header: closure_14(stateFromStoresArray, obj4), children: closure_13(BottomSheetFlashList, obj5) };
   obj4 = { style: tmp.header, children: items4 };
-  const BottomSheet = tmp7(5566).BottomSheet;
+  const BottomSheet = tmp7(5556).BottomSheet;
   items4 = [closure_13(tmp7(7913).BottomSheetTitleHeader, { title }), closure_13(tmp7(7825).SearchBar, { size: "md", placeholder: stringResult, accessibilityLabel: stringResult, onChange: tmp6 })];
   obj5 = {
     maintainVisibleContentPosition: { disabled: true },
@@ -210,7 +210,7 @@ export default function ChannelSelectorActionSheet(guildId) {
     tmp10Result = tmp10(tmp11, obj7);
   }
   obj10 = { style: tmp.emptyState, variant: "body-md/normal", color: "text-muted", children: intl4.string(tmp7(1113).t.V6nAfF) };
-  Text = tmp7(5929).Text;
+  Text = tmp7(5919).Text;
   intl4 = tmp7(1113).intl;
   return closure_13(BottomSheet, obj3);
 };

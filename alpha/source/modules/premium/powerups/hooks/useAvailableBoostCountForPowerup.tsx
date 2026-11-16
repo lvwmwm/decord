@@ -1,14 +1,14 @@
 // Module ID: 10743
 // Function ID: 10744
 // Name: useAvailableBoostCountForPowerup
-// Dependencies: [19, 5177, 5523, 5524, 504, 9241, 1255, 2]
+// Dependencies: [19, 5177, 5513, 5514, 504, 9241, 1255, 2]
 // Exports: default
 
 // Module 10743 (useAvailableBoostCountForPowerup)
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 5177 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 5523 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5524 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 5513 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5514 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

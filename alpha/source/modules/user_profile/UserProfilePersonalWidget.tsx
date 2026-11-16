@@ -1,7 +1,7 @@
 // Module ID: 7358
 // Function ID: 7359
 // Name: UserProfilePersonalWidget
-// Dependencies: [1388, 1390, 7359, 5348, 5139, 1255, 1345, 7353, 2110, 2]
+// Dependencies: [1388, 1390, 7359, 5338, 5139, 1255, 1345, 7353, 2110, 2]
 // Exports: createDefaultCoverSection, createDefaultField, createDefaultPersonalWidget, isPersonalWidgetNew, parsePersonalWidgetSections
 
 // Module 7358 (UserProfilePersonalWidget)
@@ -10,7 +10,7 @@ import _modDef1345 from "module_1345" /* 1345 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 2110 */;
 import dismissible_content from "dismissible_content" /* 5139 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5348 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5338 */;
 import WidgetType from "WidgetType" /* 7353 */;
 import PersonalWidgetSectionType from "PersonalWidgetSectionType" /* 7359 */;
 import UserStore from "UserStore" /* 1388 */;

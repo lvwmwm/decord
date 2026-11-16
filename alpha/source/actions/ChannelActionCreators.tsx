@@ -1,7 +1,7 @@
 // Module ID: 8134
 // Function ID: 8135
 // Name: ChannelActionCreators
-// Dependencies: [32, 5, 8135, 5159, 5155, 7015, 1072, 8136, 1285, 6889, 6896, 6920, 5493, 6063, 6935, 572, 7067, 1256, 1099, 5313, 1113, 8127, 6065, 6766, 2]
+// Dependencies: [32, 5, 8135, 5159, 5155, 7015, 1072, 8136, 1285, 6879, 6886, 6910, 5483, 6053, 6925, 572, 7067, 1256, 1099, 5313, 1113, 8127, 6055, 6756, 2]
 
 // Module 8134 (ChannelActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -10,10 +10,10 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
 import ChannelRecord from "ChannelRecord" /* 5159 */;
 import shared from "shared" /* 5313 */;
-import RootNavigationRef from "RootNavigationRef" /* 5493 */;
-import preloadChannelDefault from "preloadChannel" /* 6065 */;
-import QualtricsActionCreatorsDefault from "QualtricsActionCreators" /* 6889 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6935 */;
+import RootNavigationRef from "RootNavigationRef" /* 5483 */;
+import preloadChannelDefault from "preloadChannel" /* 6055 */;
+import QualtricsActionCreatorsDefault from "QualtricsActionCreators" /* 6879 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6925 */;
 import isChangelogChannelDefault from "isChangelogChannel" /* 7067 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -32,8 +32,8 @@ let map1;
 let tmp;
 let tmp5;
 let unpackModuleId;
-const transitionToChannel = tmp5(6063);
-const SurveyActionTypes = tmp(6896);
+const transitionToChannel = tmp5(6053);
+const SurveyActionTypes = tmp(6886);
 let closure_6 = ChannelRecord.createChannelRecordFromServer;
 ({ AnalyticEvents: c9, AbortCodes: c10, Endpoints: unpackModuleId, Routes: closure_12, ChannelTypes: map1 } = Constants);
 let obj = {
@@ -316,7 +316,7 @@ let obj = {
         const tmp6 = require;
         if (null != obj2.getRootNavigationRef()) {
           const obj4 = { navigationReplace: flag2 };
-          const tmp6Result = tmp6(6063);
+          const tmp6Result = tmp6(6053);
           tmp6Result.transitionToChannel(channel.id, obj4);
           tmp3 = channel;
         } else {
@@ -492,7 +492,7 @@ let obj = {
     if (flag3 == null) {
       flag3 = false;
     }
-    const obj2 = { type: "CHANNEL_DELETE", channel: { id, guild_id: "Array", parent_id: "channel_id" }, silent: flag2 };
+    const obj2 = { type: "CHANNEL_DELETE", channel: { id, guild_id: "Array", parent_id: "alignItems" }, silent: flag2 };
     const tmpResult2 = DispatcherDefault;
     tmpResult2.dispatch(obj2);
     if (flag) {

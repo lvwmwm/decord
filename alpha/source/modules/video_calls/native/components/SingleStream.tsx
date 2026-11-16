@@ -1,12 +1,12 @@
 // Module ID: 13068
 // Function ID: 13069
 // Name: SingleStream
-// Dependencies: [19, 11003, 21, 12787, 12795, 6066, 2]
+// Dependencies: [19, 11003, 21, 12787, 12795, 6056, 2]
 // Exports: default
 
 // Module 13068 (SingleStream)
 import Fragment from "Fragment" /* 21 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6066 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6056 */;
 import StreamTileDefault from "StreamTile" /* 12787 */;
 import react from "react" /* 19 */;
 import ChannelCallStore from "ChannelCallStore" /* 11003 */;

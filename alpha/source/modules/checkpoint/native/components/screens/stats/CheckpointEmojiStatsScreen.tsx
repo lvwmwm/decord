@@ -1,7 +1,7 @@
 // Module ID: 14517
 // Function ID: 14518
 // Name: CheckpointEmojiStatsScreen
-// Dependencies: [32, 19, 17, 5307, 14253, 6377, 21, 5306, 575, 1380, 14485, 1496, 14270, 504, 6747, 14488, 14518, 1113, 3285, 3317, 14519, 14281, 14521, 14271, 14504, 14506, 14505, 14507, 1414, 1345, 14491, 7894, 2]
+// Dependencies: [32, 19, 17, 5307, 14253, 6367, 21, 5306, 575, 1380, 14485, 1496, 14270, 504, 6737, 14488, 14518, 1113, 3285, 3317, 14519, 14281, 14521, 14271, 14504, 14506, 14505, 14507, 1414, 1345, 14491, 7894, 2]
 // Exports: default
 
 // Module 14517 (CheckpointEmojiStatsScreen)
@@ -12,7 +12,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import CheckpointStore from "CheckpointStore" /* 14253 */;
-import CheckpointConstants from "CheckpointConstants" /* 6377 */;
+import CheckpointConstants from "CheckpointConstants" /* 6367 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1380 */;

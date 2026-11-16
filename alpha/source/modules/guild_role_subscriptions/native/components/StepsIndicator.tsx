@@ -1,10 +1,10 @@
-// Module ID: 20767
-// Function ID: 20768
+// Module ID: 20770
+// Function ID: 20771
 // Name: StepsIndicator
-// Dependencies: [19, 17, 5307, 21, 5306, 575, 1655, 5548, 5929, 504, 2]
+// Dependencies: [19, 17, 5307, 21, 5306, 575, 1655, 5538, 5919, 504, 2]
 // Exports: default
 
-// Module 20767 (StepsIndicator)
+// Module 20770 (StepsIndicator)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -20,8 +20,8 @@ let set;
 let obj2;
 let obj3;
 let tmp2;
-const timing_timing = tmp2(5548);
-const Text_Text = tmp2(5929);
+const timing_timing = tmp2(5538);
+const Text_Text = tmp2(5919);
 function StepNode(isCurrent) {
   let isDone;
   let label;

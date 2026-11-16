@@ -1,13 +1,13 @@
 // Module ID: 15021
 // Function ID: 15022
 // Name: AddPhoneScreens
-// Dependencies: [5, 32, 19, 17, 1388, 14994, 21, 5306, 5892, 575, 1502, 5929, 1113, 7819, 7820, 14993, 563, 7587, 38, 7852, 7811, 2]
+// Dependencies: [5, 32, 19, 17, 1388, 14994, 21, 5306, 5882, 575, 1502, 5919, 1113, 7819, 7820, 14993, 563, 7587, 38, 7852, 7811, 2]
 // Exports: AddPhoneScreen, VerifyPasswordScreen, VerifyPhoneScreen
 
 // Module 15021 (AddPhoneScreens)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import NavigatorConstants from "NavigatorConstants" /* 5892 */;
+import NavigatorConstants from "NavigatorConstants" /* 5882 */;
 import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7587 */;
 import AddPhoneDefault from "AddPhone" /* 7819 */;
 import PhoneActionCreators from "PhoneActionCreators" /* 7820 */;

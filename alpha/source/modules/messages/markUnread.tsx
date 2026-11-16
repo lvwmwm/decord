@@ -1,7 +1,7 @@
 // Module ID: 10993
 // Function ID: 10994
 // Name: markUnread
-// Dependencies: [5, 5240, 5155, 6372, 7015, 1388, 1072, 3, 11, 8864, 1285, 2]
+// Dependencies: [5, 5240, 5155, 6362, 7015, 1388, 1072, 3, 11, 8864, 1285, 2]
 // Exports: default
 
 // Module 10993 (markUnread)
@@ -13,7 +13,7 @@ import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8864 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 5240 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
-import MessageStore from "MessageStore" /* 6372 */;
+import MessageStore from "MessageStore" /* 6362 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 

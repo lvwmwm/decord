@@ -1,10 +1,10 @@
-// Module ID: 17804
-// Function ID: 17805
+// Module ID: 17809
+// Function ID: 17810
 // Name: useIsQuestDockModeActiveOrExiting
-// Dependencies: [19, 17698, 17699, 1655, 5939, 11253, 2]
+// Dependencies: [19, 17698, 17699, 1655, 5929, 11253, 2]
 // Exports: default
 
-// Module 17804 (useIsQuestDockModeActiveOrExiting)
+// Module 17809 (useIsQuestDockModeActiveOrExiting)
 import _mod1655 from "module_1655" /* 1655 */;
 import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 11253 */;
 import QuestDockConstants from "QuestDockConstants" /* 17698 */;
@@ -15,7 +15,7 @@ import size from "module_2" /* 2 */;
 let _undefined, _undefined2, _undefined3;
 
 let tmp;
-const spring_spring = tmp(5939);
+const spring_spring = tmp(5929);
 let closure_4 = QuestDockConstants.QUEST_DOCK_MODE_CHANGE_PHYSICS;
 let closure_5 = { code: "(function useIsQuestDockModeActiveOrExitingTsx1(){let[activeQuestDockMode,mode]=this.__closure;return activeQuestDockMode.get()===mode;})" };
 let closure_6 = { code: "(function useIsQuestDockModeActiveOrExitingTsx2(finished){let[activeQuestDockMode,mode,isActiveOrExiting]=this.__closure;if(finished===true&&activeQuestDockMode.get()!==mode){isActiveOrExiting.set(false);}})" };

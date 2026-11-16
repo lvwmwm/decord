@@ -1,7 +1,7 @@
 // Module ID: 8105
 // Function ID: 8106
 // Name: CreateChannelModal
-// Dependencies: [32, 19, 17, 5159, 5173, 5155, 5177, 5238, 5248, 1388, 1072, 6912, 21, 5306, 575, 8078, 8086, 7432, 8017, 8091, 8085, 8101, 8076, 8084, 8094, 8093, 8090, 8083, 8100, 1113, 5929, 2188, 5378, 7443, 7748, 8106, 1187, 5913, 504, 38, 5954, 6938, 8123, 8124, 1502, 8125, 8131, 6067, 7493, 8143, 7427, 8144, 12, 8146, 6337, 7619, 7746, 8148, 8155, 7954, 8092, 8159, 8162, 6356, 8171, 1264, 8186, 5917, 7490, 2]
+// Dependencies: [32, 19, 17, 5159, 5173, 5155, 5177, 5238, 5248, 1388, 1072, 6902, 21, 5306, 575, 8078, 8086, 7432, 8017, 8091, 8085, 8101, 8076, 8084, 8094, 8093, 8090, 8083, 8100, 1113, 5919, 2188, 5368, 7443, 7748, 8106, 1187, 5903, 504, 38, 5944, 6928, 8123, 8124, 1502, 8125, 8131, 6057, 7493, 8143, 7427, 8144, 12, 8146, 6327, 7619, 7746, 8148, 8155, 7954, 8092, 8159, 8162, 6346, 8171, 1264, 8186, 5907, 7490, 2]
 // Exports: default
 
 // Module 8105 (CreateChannelModal)
@@ -12,10 +12,10 @@ import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 126
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
 import ChannelRecord from "ChannelRecord" /* 5159 */;
 import GuildRecord from "GuildRecord" /* 5173 */;
-import react_native from "react-native" /* 5378 */;
-import reactDefault from "react" /* 5917 */;
-import ChannelUtils from "ChannelUtils" /* 6356 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 6912 */;
+import react_native from "react-native" /* 5368 */;
+import reactDefault from "react" /* 5907 */;
+import ChannelUtils from "ChannelUtils" /* 6346 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 6902 */;
 import HeaderActionButton from "HeaderActionButton" /* 7427 */;
 import VoiceNormalIcon from "VoiceNormalIcon" /* 7432 */;
 import NavigatorHeader from "NavigatorHeader" /* 7493 */;
@@ -134,11 +134,11 @@ function ChannelTypeRow(selected) {
     intl13 = tmp2(1113).intl;
     obj9 = { children: items };
     const obj10 = { variant: "body-xs/normal", color: "text-muted", children: intl14.string(intl16.t.JyCrwS) };
-    const Text = tmp2(5929).Text;
+    const Text = tmp2(5919).Text;
     intl14 = tmp2(1113).intl;
     items = [closure_20(Text, obj10), ];
     obj11 = { variant: "body-xs/normal", children: format(v2Sapx1, obj12) };
-    const Text2 = tmp2(5929).Text;
+    const Text2 = tmp2(5919).Text;
     const intl15 = tmp2(1113).intl;
     format = intl15.format;
     obj12 = { hcArticleUrl: obj15.getCreatorSupportArticleURL(constants3.MEDIA_CHANNEL) };

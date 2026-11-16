@@ -1,7 +1,7 @@
 // Module ID: 17099
 // Function ID: 17100
 // Name: UserProfileEditFormControls
-// Dependencies: [32, 19, 17, 21, 5306, 575, 5929, 9436, 1187, 1113, 7428, 7456, 7620, 1380, 7955, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 575, 5919, 9436, 1187, 1113, 7428, 7456, 7620, 1380, 7955, 2]
 // Exports: UserProfileEditFormButton, UserProfileEditFormLabelBadges, UserProfileEditFormSwitch
 
 // Module 17099 (UserProfileEditFormControls)
@@ -9,7 +9,7 @@ import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import Pressables from "Pressables" /* 7428 */;
 import NitroWheelIcon from "NitroWheelIcon" /* 9436 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

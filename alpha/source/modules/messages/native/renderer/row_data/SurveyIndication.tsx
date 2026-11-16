@@ -1,12 +1,12 @@
 // Module ID: 15541
 // Function ID: 15542
 // Name: SurveyIndication
-// Dependencies: [6847, 1113, 8655, 5313, 15542, 15543, 2]
+// Dependencies: [6837, 1113, 8655, 5313, 15542, 15543, 2]
 // Exports: createSurveyIndication
 
 // Module 15541 (SurveyIndication)
 import intl2 from "intl" /* 1113 */;
-import PushNotificationConstants from "PushNotificationConstants" /* 6847 */;
+import PushNotificationConstants from "PushNotificationConstants" /* 6837 */;
 import size from "module_2" /* 2 */;
 
 const NotificationTypes = PushNotificationConstants.NotificationTypes;

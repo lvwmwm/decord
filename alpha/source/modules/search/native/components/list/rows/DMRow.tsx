@@ -1,13 +1,13 @@
-// Module ID: 19477
-// Function ID: 19478
+// Module ID: 19479
+// Function ID: 19480
 // Name: DMRow
-// Dependencies: [5, 32, 19, 17, 5307, 6068, 5248, 1072, 21, 5306, 575, 5929, 5372, 10845, 504, 10870, 1187, 8175, 15375, 19462, 2]
+// Dependencies: [5, 32, 19, 17, 5307, 6058, 5248, 1072, 21, 5306, 575, 5919, 5362, 10845, 504, 10870, 1187, 8175, 15375, 19464, 2]
 
-// Module 19477 (DMRow)
+// Module 19479 (DMRow)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import UserUtils from "UserUtils" /* 5372 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import UserUtils from "UserUtils" /* 5362 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import AssetRegistryDefault from "AssetRegistry" /* 8175 */;
 import ActivityStatusDefault from "ActivityStatus" /* 10845 */;
 import BotTagDefault from "BotTag" /* 10870 */;
@@ -17,7 +17,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5307 */;
-import PresenceStore from "PresenceStore" /* 6068 */;
+import PresenceStore from "PresenceStore" /* 6058 */;
 import RelationshipStore from "RelationshipStore" /* 5248 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;

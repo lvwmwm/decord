@@ -1,7 +1,7 @@
 // Module ID: 15557
 // Function ID: 15558
 // Name: InviteEmbed
-// Dependencies: [6052, 1388, 1072, 8842, 15558, 8841, 15560, 15562, 15563, 15568, 15570, 11888, 11889, 2]
+// Dependencies: [6042, 1388, 1072, 8842, 15558, 8841, 15560, 15562, 15563, 15568, 15570, 11888, 11889, 2]
 // Exports: createInviteEmbed
 
 // Module 15557 (InviteEmbed)
@@ -15,7 +15,7 @@ import FriendInvite from "FriendInvite" /* 15562 */;
 import GuildScheduledEventEmbed from "GuildScheduledEventEmbed" /* 15563 */;
 import EmbeddedActivityInviteEmbed from "EmbeddedActivityInviteEmbed" /* 15568 */;
 import GuildProfileInvite from "GuildProfileInvite" /* 15570 */;
-import InviteStore from "InviteStore" /* 6052 */;
+import InviteStore from "InviteStore" /* 6042 */;
 import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;

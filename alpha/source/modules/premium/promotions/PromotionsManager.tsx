@@ -1,9 +1,9 @@
-// Module ID: 20377
-// Function ID: 20378
+// Module ID: 20380
+// Function ID: 20381
 // Name: PromotionsManager
 // Dependencies: [2189, 2179, 9623, 1083, 7882, 10011, 2173, 2]
 
-// Module 20377 (PromotionsManager)
+// Module 20380 (PromotionsManager)
 import Constants from "Constants" /* 1083 */;
 import EntitlementTypes from "EntitlementTypes" /* 2173 */;
 import PromotionsActionCreators from "PromotionsActionCreators" /* 10011 */;

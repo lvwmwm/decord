@@ -1,13 +1,13 @@
-// Module ID: 17799
-// Function ID: 17800
+// Module ID: 17804
+// Function ID: 17805
 // Name: QuestDockEnrolledBody
-// Dependencies: [5, 19, 17, 8808, 17696, 5338, 17698, 21, 5306, 575, 17702, 17699, 11253, 17693, 17730, 5341, 17726, 17725, 17728, 17727, 1630, 8831, 2]
+// Dependencies: [5, 19, 17, 8808, 17696, 6954, 17698, 21, 5306, 575, 17702, 17699, 11253, 17693, 17730, 6957, 17726, 17725, 17728, 17727, 1630, 8831, 2]
 
-// Module 17799 (QuestDockEnrolledBody)
+// Module 17804 (QuestDockEnrolledBody)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import QuestTypes from "QuestTypes" /* 5341 */;
+import QuestTypes from "QuestTypes" /* 6957 */;
 import QuestBottomSheet from "QuestBottomSheet" /* 17725 */;
 import QuestBottomSheetHeaderDefault from "QuestBottomSheetHeader" /* 17726 */;
 import QuestBottomSheetFooterDefault from "QuestBottomSheetFooter" /* 17728 */;
@@ -15,7 +15,7 @@ import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import QuestStore from "QuestStore" /* 8808 */;
 import QuestDockStore from "QuestDockStore" /* 17696 */;
-import QuestConstants from "QuestConstants" /* 5338 */;
+import QuestConstants from "QuestConstants" /* 6954 */;
 import QuestDockConstants from "QuestDockConstants" /* 17698 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;

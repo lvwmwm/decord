@@ -1,7 +1,7 @@
 // Module ID: 15536
 // Function ID: 15537
 // Name: transformMessageAttachments
-// Dependencies: [9160, 1072, 1406, 11885, 6361, 9387, 6363, 1380, 9386, 1113, 12522, 12509, 8645, 8876, 10229, 2]
+// Dependencies: [9160, 1072, 1406, 11885, 6351, 9387, 6353, 1380, 9386, 1113, 12522, 12509, 8645, 8876, 10229, 2]
 // Exports: default
 
 // Module 15536 (transformMessageAttachments)
@@ -9,8 +9,8 @@ import Constants from "Constants" /* 1072 */;
 import intl8 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import FlagUtils from "FlagUtils" /* 1406 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 6361 */;
-import MediaFormatParamUtils from "MediaFormatParamUtils" /* 6363 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 6351 */;
+import MediaFormatParamUtils from "MediaFormatParamUtils" /* 6353 */;
 import getDisplayFilenameDefault from "getDisplayFilename" /* 8645 */;
 import _modDef8876 from "module_8876" /* 8876 */;
 import RowGeneratorConstants from "RowGeneratorConstants" /* 9160 */;

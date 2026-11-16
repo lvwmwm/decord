@@ -1,7 +1,7 @@
 // Module ID: 14845
 // Function ID: 14846
 // Name: FormatMenuNuxCoachmark
-// Dependencies: [32, 19, 17, 5152, 21, 5306, 575, 1380, 13811, 7643, 9560, 5139, 14846, 1113, 5929, 9567, 2]
+// Dependencies: [32, 19, 17, 5152, 21, 5306, 575, 1380, 13811, 7643, 9560, 5139, 14846, 1113, 5919, 9567, 2]
 // Exports: default
 
 // Module 14845 (FormatMenuNuxCoachmark)

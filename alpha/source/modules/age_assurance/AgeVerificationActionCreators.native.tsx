@@ -1,23 +1,23 @@
 // Module ID: 8190
 // Function ID: 8191
 // Name: AgeVerificationActionCreators
-// Dependencies: [5, 1388, 6832, 8191, 6902, 6910, 21, 8192, 6848, 8202, 2121, 6915, 8225, 8226, 1627, 6270, 8227, 1401, 1380, 8228, 8229, 6830, 5995, 572, 8230, 8236, 8243, 8388, 8389, 6012, 6833, 8400, 8401, 8402, 2]
+// Dependencies: [5, 1388, 6822, 8191, 6892, 6900, 21, 8192, 6838, 8202, 2121, 6905, 8225, 8226, 1627, 6260, 8227, 1401, 1380, 8228, 8229, 6820, 5985, 572, 8230, 8236, 8243, 8388, 8389, 6002, 6823, 8400, 8401, 8402, 2]
 
 // Module 8190 (AgeVerificationActionCreators)
 import Fragment from "Fragment" /* 21 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import LinkingDefault from "Linking" /* 6012 */;
-import useAlertStore from "useAlertStore" /* 6270 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6833 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 6902 */;
-import Constants from "Constants" /* 6910 */;
+import LinkingDefault from "Linking" /* 6002 */;
+import useAlertStore from "useAlertStore" /* 6260 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6823 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 6892 */;
+import Constants from "Constants" /* 6900 */;
 import AgeVerificationIncodeWebViewConstants from "AgeVerificationIncodeWebViewConstants" /* 8191 */;
 import ManualReviewDecidedTeenAlertModalDefault from "ManualReviewDecidedTeenAlertModal" /* 8400 */;
 import ManualReviewPendingAlertModalDefault from "ManualReviewPendingAlertModal" /* 8401 */;
 import ManualReviewFallbackAlertModalDefault from "ManualReviewFallbackAlertModal" /* 8402 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore_mod from "UserStore" /* 1388 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 6832 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 6822 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -304,13 +304,13 @@ let obj = {
     let obj = entryPoint(1627);
     if (obj.isMetaQuest()) {
       const tmp19 = closure_7;
-      const tmpResult = tmp(6270);
+      const tmpResult = tmp(6260);
       tmpResult.openAlert(closure_7, jsx(onClose(8227), {}), onClose);
     } else {
-      const tmpResult6 = tmp(6830);
+      const tmpResult6 = tmp(6820);
       let isAgeVerifiedResult = tmpResult6.isAgeVerified();
       if (isAgeVerifiedResult) {
-        const tmpResult7 = tmp(5995);
+        const tmpResult7 = tmp(5985);
         isAgeVerifiedResult = tmpResult7.hasAgeGatedFeatures();
       }
       dependencyMap = isAgeVerifiedResult;
@@ -437,7 +437,7 @@ let obj = {
           let tmp4 = onClose;
           let tmp5 = prop;
           let tmp6 = closure_6;
-          const obj7 = onClose(6848);
+          const obj7 = onClose(6838);
           obj7.pushLazy(prop(function*() {
             let c1;
             let closure_0;

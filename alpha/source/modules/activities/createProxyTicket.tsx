@@ -1,7 +1,7 @@
 // Module ID: 7341
 // Function ID: 7342
 // Name: createProxyTicket
-// Dependencies: [5, 502, 1072, 1285, 5974, 2]
+// Dependencies: [5, 502, 1072, 1285, 5964, 2]
 // Exports: createProxyTicket, prefetchProxyTicket, rememberProxyTicket
 
 // Module 7341 (createProxyTicket)

@@ -1,7 +1,7 @@
 // Module ID: 12354
 // Function ID: 12355
 // Name: ForumPostActionBar
-// Dependencies: [19, 17, 5239, 5240, 5155, 1072, 21, 5306, 575, 504, 11896, 11864, 9060, 12355, 7428, 1113, 7738, 5929, 10996, 6029, 8660, 11, 5543, 12356, 2]
+// Dependencies: [19, 17, 5239, 5240, 5155, 1072, 21, 5306, 575, 504, 11896, 11864, 9060, 12355, 7428, 1113, 7738, 5919, 10996, 6019, 8660, 11, 5533, 12356, 2]
 // Exports: default
 
 // Module 12354 (ForumPostActionBar)
@@ -9,7 +9,7 @@ import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import flow_Client from "flow/Client" /* 5543 */;
+import flow_Client from "flow/Client" /* 5533 */;
 import MessageActionCreatorsDefault from "MessageActionCreators" /* 8660 */;
 import messages_MessagesUtils from "messages/MessagesUtils" /* 11864 */;
 import react from "react" /* 19 */;
@@ -100,7 +100,7 @@ export default function ForumPostActionBar(channel) {
       obj10.onPress = handleFollow;
       const items6 = [closure_8(channel(7738).CheckmarkLargeIcon, { size: "xs", color: "text-brand" }), ];
       const obj11 = { style: tmp.buttonText, variant: "body-sm/semibold", color: "text-brand", children: intl3.string(channel(1113).t["OtF+lC"]) };
-      const Text2 = tmp2(5929).Text;
+      const Text2 = tmp2(5919).Text;
       intl3 = tmp2(1113).intl;
       items6[1] = closure_8(Text2, obj11);
       obj10.children = items6;
@@ -111,7 +111,7 @@ export default function ForumPostActionBar(channel) {
       obj10.onPress = handleFollow;
       const items7 = [closure_8(channel(10996).BellIcon, { size: "xs" }), ];
       const obj12 = { style: tmp.buttonText, variant: "body-sm/semibold", color: "interactive-text-default", children: intl2.string(channel(1113).t["0rQinA"]) };
-      const Text = tmp2(5929).Text;
+      const Text = tmp2(5919).Text;
       intl2 = tmp2(1113).intl;
       items7[1] = closure_8(Text, obj12);
       obj10.children = items7;
@@ -133,7 +133,7 @@ export default function ForumPostActionBar(channel) {
         const result = obj.handleCopyLinkForumPost(guildId, tmp.id, obj2);
       }
     },
-    children: closure_8(channel(6029).LinkIcon, { size: "xs" })
+    children: closure_8(channel(6019).LinkIcon, { size: "xs" })
   };
   const PressableOpacity2 = tmp2(7428).PressableOpacity;
   intl4 = tmp2(1113).intl;

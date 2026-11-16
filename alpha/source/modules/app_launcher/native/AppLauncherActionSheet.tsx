@@ -1,15 +1,15 @@
 // Module ID: 13533
 // Function ID: 13534
 // Name: AppLauncherActionSheet
-// Dependencies: [32, 19, 1501, 21, 1655, 12578, 12579, 12580, 5566, 13413, 13534, 5897, 2]
+// Dependencies: [32, 19, 1501, 21, 1655, 12578, 12579, 12580, 5556, 13413, 13534, 5887, 2]
 // Exports: useAppLauncherActionSheet
 
 // Module 13533 (AppLauncherActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5566 */;
-import reactDefault from "react" /* 5897 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5556 */;
+import reactDefault from "react" /* 5887 */;
 import AppLauncherContext from "AppLauncherContext" /* 12578 */;
 import AppLauncherTypes from "AppLauncherTypes" /* 12579 */;
 import useDefaultAppLauncherWidth from "useDefaultAppLauncherWidth" /* 12580 */;

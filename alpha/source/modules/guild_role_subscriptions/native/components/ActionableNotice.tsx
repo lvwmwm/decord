@@ -1,13 +1,13 @@
-// Module ID: 20770
-// Function ID: 20771
+// Module ID: 20773
+// Function ID: 20774
 // Name: ActionableNotice
-// Dependencies: [19, 17, 21, 5306, 5929, 5936, 2]
+// Dependencies: [19, 17, 21, 5306, 5919, 5926, 2]
 // Exports: default
 
-// Module 20770 (ActionableNotice)
+// Module 20773 (ActionableNotice)
 import react_native from "react-native" /* 17 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import components_Button_Button from "components/Button/Button" /* 5936 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;

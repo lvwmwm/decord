@@ -1,10 +1,10 @@
-// Module ID: 20356
-// Function ID: 20357
+// Module ID: 20359
+// Function ID: 20360
 // Name: ConnectGuardianModal
-// Dependencies: [19, 17, 1072, 8741, 21, 5306, 575, 1630, 20357, 1256, 7418, 5929, 1113, 2701, 17411, 5936, 2]
+// Dependencies: [19, 17, 1072, 8741, 21, 5306, 575, 1630, 20360, 1256, 7418, 5919, 1113, 2701, 17411, 5926, 2]
 // Exports: default
 
-// Module 20356 (ConnectGuardianModal)
+// Module 20359 (ConnectGuardianModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -61,7 +61,7 @@ export default function ConnectGuardianModal(route) {
   const onComplete = route.route.params.onComplete;
   const tmp = closure_9();
   const bottom = connectGuardianGate(1630)().bottom;
-  let obj = onComplete(20357);
+  let obj = onComplete(20360);
   connectGuardianGate = obj.useConnectGuardianGate();
   dependencyMap = react.useRef(false);
   const items = [connectGuardianGate.state, onComplete];
@@ -86,17 +86,17 @@ export default function ConnectGuardianModal(route) {
     const obj3 = { style: tmp.container, children: items3 };
     const obj4 = { style: tmp.header, children: items2 };
     const obj5 = { style: tmp.title, variant: "heading-xl/semibold", color: "text-default", children: intl.string(connectGuardianGate(2701).ITlV6p) };
-    const Text = tmp4(5929).Text;
+    const Text = tmp4(5919).Text;
     intl = tmp4(1113).intl;
     items2 = [closure_7(Text, obj5), ];
     const obj6 = { style: tmp.description, variant: "body-sm/medium", color: "text-muted", children: intl2.format(connectGuardianGate(2701).F4GT2S, { link: "https://support.discord.com/hc/articles/14155060633623" }) };
-    const Text2 = tmp4(5929).Text;
+    const Text2 = tmp4(5919).Text;
     intl2 = tmp4(1113).intl;
     items2[1] = closure_7(Text2, obj6);
     items3 = [closure_8(View, obj4), , , ];
     const obj7 = { style: tmp.cardSection, children: items4 };
     const obj8 = { style: tmp.scanPrompt, variant: "body-md/semibold", color: "text-default", children: intl3.string(connectGuardianGate(2701).Mi60fm) };
-    const Text3 = tmp4(5929).Text;
+    const Text3 = tmp4(5919).Text;
     intl3 = tmp4(1113).intl;
     items4 = [closure_7(Text3, obj8), ];
     const obj10 = { shareActions: "compact", linkCode: null, expiresAt: null, onRefresh: null };
@@ -121,7 +121,7 @@ export default function ConnectGuardianModal(route) {
           return tmpResult;
         }
     };
-    Button = tmp4(5936).Button;
+    Button = tmp4(5926).Button;
     intl4 = tmp4(1113).intl;
     items3[3] = closure_7(View, obj12);
     tmp9 = closure_8(View, obj3);

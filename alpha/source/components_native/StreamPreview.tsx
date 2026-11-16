@@ -1,7 +1,7 @@
 // Module ID: 13098
 // Function ID: 13099
 // Name: StreamPreview
-// Dependencies: [19, 17, 1192, 21, 5306, 575, 5377, 6020, 5313, 13099, 13100, 1113, 7428, 13101, 504, 2]
+// Dependencies: [19, 17, 1192, 21, 5306, 575, 5367, 6010, 5313, 13099, 13100, 1113, 7428, 13101, 504, 2]
 // Exports: default
 
 // Module 13098 (StreamPreview)
@@ -9,8 +9,8 @@ import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import shared from "shared" /* 5313 */;
-import native from "native" /* 5377 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import native from "native" /* 5367 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import Pressables from "Pressables" /* 7428 */;
 import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 13101 */;
 import react from "react" /* 19 */;

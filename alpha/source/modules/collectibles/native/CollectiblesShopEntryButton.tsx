@@ -1,7 +1,7 @@
 // Module ID: 10564
 // Function ID: 10565
 // Name: CollectiblesShopEntryButton
-// Dependencies: [32, 19, 5986, 5152, 21, 9560, 5139, 10525, 10565, 1113, 10567, 563, 5987, 8507, 10568, 2]
+// Dependencies: [32, 19, 5976, 5152, 21, 9560, 5139, 10525, 10565, 1113, 10567, 563, 5977, 8507, 10568, 2]
 // Exports: default
 
 // Module 10564 (CollectiblesShopEntryButton)
@@ -10,7 +10,7 @@ import YouScreenNavIconDefault from "YouScreenNavIcon" /* 10525 */;
 import MobileShopButtonCoachmarkDefault from "MobileShopButtonCoachmark" /* 10567 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import CollectiblesMarketingsStore from "CollectiblesMarketingsStore" /* 5986 */;
+import CollectiblesMarketingsStore from "CollectiblesMarketingsStore" /* 5976 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 

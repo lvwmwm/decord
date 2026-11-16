@@ -1,10 +1,10 @@
-// Module ID: 18151
-// Function ID: 18152
+// Module ID: 18153
+// Function ID: 18154
 // Name: UpcomingServerEventNotificationUtils
 // Dependencies: [5251, 1072, 5131, 1256, 2]
 // Exports: onUpcomingServerEventNotificationSettingsChanged
 
-// Module 18151 (UpcomingServerEventNotificationUtils)
+// Module 18153 (UpcomingServerEventNotificationUtils)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import UserSettings from "UserSettings" /* 5131 */;

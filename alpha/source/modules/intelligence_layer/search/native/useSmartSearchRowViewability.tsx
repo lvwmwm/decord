@@ -1,11 +1,11 @@
-// Module ID: 19513
-// Function ID: 19514
+// Module ID: 19515
+// Function ID: 19516
 // Name: useSmartSearchRowViewability
-// Dependencies: [19, 2120, 5492, 14850, 1503, 5495, 14764, 14762, 504, 1092, 2]
+// Dependencies: [19, 2120, 5482, 14850, 1503, 5485, 14764, 14762, 504, 1092, 2]
 // Exports: useSmartSearchRowViewability
 
-// Module 19513 (useSmartSearchRowViewability)
-import useChatLayoutDefault from "useChatLayout" /* 5495 */;
+// Module 19515 (useSmartSearchRowViewability)
+import useChatLayoutDefault from "useChatLayout" /* 5485 */;
 import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 14762 */;
 import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 14764 */;
 import react from "react" /* 19 */;
@@ -18,18 +18,18 @@ let result = size.fileFinishedImporting("modules/intelligence_layer/search/nativ
 
 export function useSmartSearchRowViewability() {
   let stateFromStores;
-  let obj = stateFromStores(5492);
+  let obj = stateFromStores(5482);
   const currentNavigationRouteName = obj.useCurrentNavigationRouteName();
   const context = react.useContext(stateFromStores(14850).SwipeForMemberListContext);
   const obj3 = stateFromStores(1503);
   const isFocused = obj3.useIsFocused();
   let isChatLockedOpen = useChatLayoutDefault().isChatLockedOpen;
-  const obj4 = stateFromStores(5492);
+  const obj4 = stateFromStores(5482);
   let tmp6 = null != obj4.coerceChannelRoute({ name: currentNavigationRouteName });
   if (!tmp6) {
     if (isChatLockedOpen) {
       const obj5 = { name: currentNavigationRouteName };
-      const tmpResult = stateFromStores(5492);
+      const tmpResult = stateFromStores(5482);
       isChatLockedOpen = null != tmpResult.coerceGuildsRoute(obj5);
     }
     tmp6 = isChatLockedOpen;

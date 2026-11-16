@@ -1,13 +1,13 @@
 // Module ID: 10440
 // Function ID: 10441
 // Name: useOrderSigning
-// Dependencies: [5, 32, 19, 6050, 5126, 5118, 7258, 10441, 1113, 10443, 2]
+// Dependencies: [5, 32, 19, 6040, 5126, 5118, 7258, 10441, 1113, 10443, 2]
 // Exports: useOrderSigning
 
 // Module 10440 (useOrderSigning)
 import BillingUtils from "BillingUtils" /* 5118 */;
 import BillingErrorDefault from "BillingError" /* 5126 */;
-import PaymentConstants from "PaymentConstants" /* 6050 */;
+import PaymentConstants from "PaymentConstants" /* 6040 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

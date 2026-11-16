@@ -1,7 +1,7 @@
 // Module ID: 14852
 // Function ID: 14853
 // Name: VoicePanelDockRim
-// Dependencies: [19, 17, 21, 5306, 5902, 575, 5303, 1655, 14853, 5893, 2]
+// Dependencies: [19, 17, 21, 5306, 5892, 575, 5303, 1655, 14853, 5883, 2]
 
 // Module 14852 (VoicePanelDockRim)
 import react_native from "react-native" /* 17 */;
@@ -21,7 +21,7 @@ const memoResult = react.memo(function VoicePanelDockRim(style) {
   let token;
   style = style.style;
   const tmp = closure_6();
-  let obj = token(5902);
+  let obj = token(5892);
   const tmp2 = token;
   token = obj.useToken(nativeDefault.colors.ICON_VOICE_SPEAKING);
   let items = [token];

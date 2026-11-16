@@ -1,7 +1,7 @@
 // Module ID: 17472
 // Function ID: 17473
 // Name: ConnectedAppsScreen
-// Dependencies: [19, 17, 7221, 502, 7085, 2189, 1072, 21, 5306, 575, 5547, 8706, 504, 15853, 1503, 7466, 5929, 1113, 4548, 6337, 17473, 17474, 7445, 7422, 17482, 6020, 1414, 5313, 5936, 1630, 17483, 1502, 5552, 17484, 2121, 7888, 2]
+// Dependencies: [19, 17, 7221, 502, 7085, 2189, 1072, 21, 5306, 575, 5537, 8706, 504, 15853, 1503, 7466, 5919, 1113, 4548, 6327, 17473, 17474, 7445, 7422, 17482, 6010, 1414, 5313, 5926, 1630, 17483, 1502, 5542, 17484, 2121, 7888, 2]
 // Exports: default
 
 // Module 17472 (ConnectedAppsScreen)
@@ -10,8 +10,8 @@ import Constants from "Constants" /* 1072 */;
 import intl6 from "intl" /* 1113 */;
 import AvatarUtils from "AvatarUtils" /* 1414 */;
 import shared from "shared" /* 5313 */;
-import useThemeDefault from "useTheme" /* 5547 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import useThemeDefault from "useTheme" /* 5537 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import Card_Card from "Card/Card" /* 7445 */;
 import useConnectionFilteredAppIdentitiesDefault from "useConnectionFilteredAppIdentities" /* 15853 */;
 import ConnectedApplicationIdentityDefault from "ConnectedApplicationIdentity" /* 17473 */;
@@ -111,23 +111,23 @@ function ConnectionsSection(onAdd) {
   const obj7 = { children: items5 };
   const obj8 = { style: tmp.header, children: items4 };
   const obj9 = { style: tmp.title, variant: "heading-sm/semibold", color: "text-strong", children: intl.string(tmp4(1113).t["3fe7U5"]) };
-  const Heading = tmp4(5929).Heading;
+  const Heading = tmp4(5919).Heading;
   intl = tmp4(1113).intl;
   items4 = [closure_11(Heading, obj9), ];
   const obj10 = { variant: "body-sm/medium", color: "text-link", style: tmp.addAction, accessibilityRole: "button", accessibilityLabel: intl2.string(tmp4(1113).t.Zhcj9X), onPress: onAdd, children: intl3.string(tmp4(1113).t.OYkgVk) };
-  const Text = tmp4(5929).Text;
+  const Text = tmp4(5919).Text;
   intl2 = tmp4(1113).intl;
   intl3 = tmp4(1113).intl;
   items4[1] = closure_11(Text, obj10);
   items5 = [closure_12(closure_5, obj8), ];
   const obj11 = { variant: "body-sm/normal", color: "text-default", children: intl4.string(_modDef4548["0y44+Q"]) };
-  const Text2 = tmp4(5929).Text;
+  const Text2 = tmp4(5919).Text;
   intl4 = tmp4(1113).intl;
   items5[1] = closure_11(Text2, obj11);
   items6 = [closure_12(closure_5, obj7), ];
   if (tmp8) {
     const obj12 = { spacing: 16, children: items7 };
-    const Stack = tmp4(6337).Stack;
+    const Stack = tmp4(6327).Stack;
     items7 = [
       prop.map((identity) => {
           let closure_0 = identity;
@@ -179,7 +179,7 @@ function ConnectionsSection(onAdd) {
         ];
         const obj14 = { style: tmp.moreButton, children: closure_11(Button, obj15) };
         obj15 = { variant: "secondary", size: "lg", grow: true, text: intl5.string(tmp4(1113).t["UKOtz+"]), onPress: onAdd };
-        Button = tmp4(5936).Button;
+        Button = tmp4(5926).Button;
         intl5 = tmp4(1113).intl;
         items8[1] = closure_11(closure_5, obj14);
         tmp12Result = tmp10(tmp11, obj13);

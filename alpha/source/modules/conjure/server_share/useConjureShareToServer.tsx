@@ -24,7 +24,7 @@ const ConjureProjectStore = ConjureProjectStore2;
 let _require, c4, c5;
 
 function refreshUntilBotJoins(arg0, arg1) {
-  const f106671 = () => {
+  const f106684 = () => {
     const integrationStatus = ConjureProjectStore.getIntegrationStatus(closure_0);
     let prop;
     if (integrationStatus != null) {
@@ -37,13 +37,13 @@ function refreshUntilBotJoins(arg0, arg1) {
         closure_0 = tmp;
         let closure_1 = tmp7 - 1;
         const _setTimeout = setTimeout;
-        const timerId = setTimeout(f106671, 1500);
+        const timerId = setTimeout(f106684, 1500);
       }
     }
   };
   let closure_0 = arg0;
   let c1 = 6;
-  let timerId = setTimeout(f106671, 1500);
+  let timerId = setTimeout(f106684, 1500);
 }
 let obj = function _waitForPublishStatus() {
   obj = _asyncToGenerator(async function(arg0, value) {

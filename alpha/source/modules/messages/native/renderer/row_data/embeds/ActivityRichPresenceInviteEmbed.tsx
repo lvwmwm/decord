@@ -1,7 +1,7 @@
 // Module ID: 15589
 // Function ID: 15590
 // Name: ActivityRichPresenceInviteEmbed
-// Dependencies: [2165, 7290, 15590, 1407, 502, 5155, 15591, 7317, 6372, 6068, 7316, 1388, 12400, 1072, 7291, 7055, 6069, 15592, 1113, 14550, 15593, 9019, 12688, 12693, 7313, 15594, 12689, 15595, 12696, 12692, 15596, 12697, 12687, 8419, 14553, 15597, 15598, 12702, 12703, 15599, 15600, 5303, 575, 15603, 3221, 2]
+// Dependencies: [2165, 7290, 15590, 1407, 502, 5155, 15591, 7317, 6362, 6058, 7316, 1388, 12400, 1072, 7291, 7055, 6059, 15592, 1113, 14550, 15593, 9019, 12688, 12693, 7313, 15594, 12689, 15595, 12696, 12692, 15596, 12697, 12687, 8419, 14553, 15597, 15598, 12702, 12703, 15599, 15600, 5303, 575, 15603, 3221, 2]
 // Exports: createActivityRichPresenceInviteEmbed
 
 // Module 15589 (ActivityRichPresenceInviteEmbed)
@@ -22,8 +22,8 @@ import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import GamePartyStore from "GamePartyStore" /* 15591 */;
 import LocalActivityStore from "LocalActivityStore" /* 7317 */;
-import MessageStore from "MessageStore" /* 6372 */;
-import PresenceStore from "PresenceStore" /* 6068 */;
+import MessageStore from "MessageStore" /* 6362 */;
+import PresenceStore from "PresenceStore" /* 6058 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 7316 */;
 import UserStore from "UserStore" /* 1388 */;
 import ActivityLauncherStore from "ActivityLauncherStore" /* 12400 */;
@@ -643,7 +643,7 @@ export function createActivityRichPresenceInviteEmbed(message, channel, forcedTh
               return null;
             }
           }
-          obj = { displayType: obj.BLOCKED, headerText: intl.string(tmp4(1113).t.pkq6Vq), subtitle: stringResult5, ctaButtonEnabled: false, ctaButtonText: "Path", ctaButtonIsLoading: "Array", footerLabel: "Promise", gradientColors: [], iconSrc: null, isPlatformSupported: "Array", isSpotifyParty: "channelId", maxPartySize: "forEach", partyMemberAvatarURIs: "mode", partySizeText: null, platformIconKeys: [], coverImageUrl: 242.646, detailsText: null, title: null };
+          obj = { displayType: obj.BLOCKED, headerText: intl.string(tmp4(1113).t.pkq6Vq), subtitle: stringResult5, ctaButtonEnabled: false, ctaButtonText: "Path", ctaButtonIsLoading: "Array", footerLabel: "Promise", gradientColors: [], iconSrc: null, isPlatformSupported: "Array", isSpotifyParty: "__d", maxPartySize: "paddingHorizontal", partyMemberAvatarURIs: "__initData", partySizeText: "l30_rank", platformIconKeys: [], coverImageUrl: "JS_DAY_TO_DAY_OF_WEEK", detailsText: "onprocessinginstruction", title: "l30_rank" };
           intl = tmp4(1113).intl;
           if (contentClassificationVisibility === tmp4(14550).ContentClassificationVisibility.BLOCK_UNDERAGE) {
             const intl3 = tmp4(1113).intl;

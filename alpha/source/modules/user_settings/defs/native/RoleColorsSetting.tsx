@@ -1,10 +1,10 @@
-// Module ID: 17952
-// Function ID: 17953
+// Module ID: 17954
+// Function ID: 17955
 // Name: RoleColorsSetting
 // Dependencies: [19, 5307, 9202, 504, 16889, 1113, 12406, 2]
 // Exports: onRoleColorSettingValueChange, useRoleColorSettingOptions, useRoleColorSettingValue
 
-// Module 17952 (RoleColorsSetting)
+// Module 17954 (RoleColorsSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl4 from "intl" /* 1113 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;

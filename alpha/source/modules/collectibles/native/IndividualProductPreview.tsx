@@ -1,13 +1,13 @@
 // Module ID: 9526
 // Function ID: 9527
 // Name: IndividualProductPreview
-// Dependencies: [19, 17, 1074, 21, 5306, 575, 5893, 9409, 9527, 10062, 15483, 15484, 2114, 1075, 15485, 15488, 2]
+// Dependencies: [19, 17, 1074, 21, 5306, 575, 5883, 9409, 9527, 10062, 15483, 15484, 2114, 1075, 15485, 15488, 2]
 // Exports: IndividualProductPreview
 
 // Module 9526 (IndividualProductPreview)
 import nativeDefault from "native" /* 575 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 2114 */;
-import LinearGradientDefault from "LinearGradient" /* 5893 */;
+import LinearGradientDefault from "LinearGradient" /* 5883 */;
 import useCurrentUser from "useCurrentUser" /* 9409 */;
 import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 9527 */;
 import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 10062 */;

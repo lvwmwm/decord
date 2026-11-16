@@ -1,9 +1,9 @@
-// Module ID: 20249
-// Function ID: 20250
+// Module ID: 20252
+// Function ID: 20253
 // Name: ForumManager
 // Dependencies: [5155, 5162, 7882, 11896, 2]
 
-// Module 20249 (ForumManager)
+// Module 20252 (ForumManager)
 import ChannelConstants from "ChannelConstants" /* 5162 */;
 import ForumPostDataLoader from "ForumPostDataLoader" /* 11896 */;
 import ChannelStore from "ChannelStore" /* 5155 */;

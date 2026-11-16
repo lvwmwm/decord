@@ -1,7 +1,7 @@
 // Module ID: 7622
 // Function ID: 7623
 // Name: ErrorText
-// Dependencies: [19, 21, 5481, 5313, 6337, 7623, 5929, 2]
+// Dependencies: [19, 21, 5471, 5313, 6327, 7623, 5919, 2]
 // Exports: ErrorText
 
 // Module 7622 (ErrorText)
@@ -20,7 +20,7 @@ export function ErrorText(children) {
   children = children.children;
   let nodeText;
   const style = children.style;
-  const obj = nodeText(5481);
+  const obj = nodeText(5471);
   nodeText = obj.getNodeText(children);
   const items = [nodeText];
   const effect = react.useEffect(() => {
@@ -31,7 +31,7 @@ export function ErrorText(children) {
     }
   }, items);
   const obj2 = { direction: "horizontal", spacing: 4, align: "flex-start", style, children: items1 };
-  const Stack = nodeText(6337).Stack;
-  items1 = [closure_3(nodeText(7623).CircleErrorIcon, { size: "xs", color: "text-feedback-critical" }), closure_3(nodeText(5929).Text, { variant: "body-xs/medium", color: "text-feedback-critical", children })];
+  const Stack = nodeText(6327).Stack;
+  items1 = [closure_3(nodeText(7623).CircleErrorIcon, { size: "xs", color: "text-feedback-critical" }), closure_3(nodeText(5919).Text, { variant: "body-xs/medium", color: "text-feedback-critical", children })];
   return closure_4(Stack, obj2);
 }

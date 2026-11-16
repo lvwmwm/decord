@@ -1,7 +1,7 @@
 // Module ID: 15837
 // Function ID: 15838
 // Name: UserProfileRecentActivityCard
-// Dependencies: [19, 17, 21, 15720, 8419, 15725, 5306, 575, 9478, 5377, 8375, 5313, 6020, 1414, 2153, 5929, 15707, 7918, 7937, 15732, 15733, 10664, 10286, 7428, 1113, 2]
+// Dependencies: [19, 17, 21, 15720, 8419, 15725, 5306, 575, 9478, 5367, 8375, 5313, 6010, 1414, 2153, 5919, 15707, 7918, 7937, 15732, 15733, 10664, 10286, 7428, 1113, 2]
 // Exports: default
 
 // Module 15837 (UserProfileRecentActivityCard)
@@ -10,8 +10,8 @@ import nativeDefault from "native" /* 575 */;
 import AvatarUtils from "AvatarUtils" /* 1414 */;
 import StringUtils from "StringUtils" /* 2153 */;
 import shared from "shared" /* 5313 */;
-import native from "native" /* 5377 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import native from "native" /* 5367 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7918 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
 import utils from "utils" /* 8419 */;
@@ -173,7 +173,7 @@ let closure_11 = react.memo(function EntryImage(poster) {
     if (tmp5Result) {
       const obj6 = { style: tmp.smallImageBackground, children: metroRequire(tmp6Result, obj7) };
       obj7 = { source: tmp2Result4.makeSource(smallImage.src), accessibilityLabel: smallImage.alt, style: tmp.smallImage };
-      tmp6Result = tmp6(6020);
+      tmp6Result = tmp6(6010);
       tmp2Result4 = AvatarUtils;
       tmp5Result = tmp5(tmp17, obj6);
     }
@@ -206,7 +206,7 @@ let closure_12 = react.memo(function EntryCardBody(arg0) {
   obj6.isNullOrEmpty(title);
   if (tmp2Result) {
     const obj7 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: title };
-    tmp2Result = tmp2(tmp5(5929).Text, obj7);
+    tmp2Result = tmp2(tmp5(5919).Text, obj7);
   }
   items1 = [tmp2Result, , ];
   const tmp5Result = StringUtils;
@@ -214,7 +214,7 @@ let closure_12 = react.memo(function EntryCardBody(arg0) {
   tmp5Result.isNullOrEmpty(subtitle);
   if (tmp2Result2) {
     const obj8 = { variant: "body-xs/medium", lineClamp: 1, children: subtitle };
-    tmp2Result2 = tmp2(tmp5(5929).Text, obj8);
+    tmp2Result2 = tmp2(tmp5(5919).Text, obj8);
   }
   items1[1] = tmp2Result2;
   const tmp5Result2 = ContentInventoryTypes;

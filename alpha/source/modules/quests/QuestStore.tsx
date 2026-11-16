@@ -1,14 +1,14 @@
 // Module ID: 8808
 // Function ID: 8809
 // Name: QuestStore
-// Dependencies: [32, 8809, 8810, 5338, 12, 5346, 8813, 8814, 8815, 1242, 5341, 8816, 8817, 8806, 504, 572, 2]
+// Dependencies: [32, 8809, 8810, 6954, 12, 6962, 8813, 8814, 8815, 1242, 6957, 8816, 8817, 8806, 504, 572, 2]
 
 // Module 8808 (QuestStore)
 import _mod12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import QuestConstants from "QuestConstants" /* 5338 */;
+import QuestConstants from "QuestConstants" /* 6954 */;
 import AdDecisionUtils from "AdDecisionUtils" /* 8806 */;
 import QuestRewardTypes from "QuestRewardTypes" /* 8813 */;
 import QuestUserStatusUtils from "QuestUserStatusUtils" /* 8814 */;
@@ -93,7 +93,7 @@ function syncQuestProgressingOnDesktop(questId, userStatus) {
       let tmp5 = require;
       let obj2 = _mod12;
       if (!obj2.isNil(item10011)) {
-        let DESKTOP = tmp5(5346).FirstPartyQuestTaskTypesSets.DESKTOP;
+        let DESKTOP = tmp5(6962).FirstPartyQuestTaskTypesSets.DESKTOP;
         if (DESKTOP.has(tmp4.eventName)) {
           let heartbeat = tmp4.heartbeat;
           let lastBeatAt;
@@ -481,7 +481,7 @@ let obj = {
       let obj3 = mapped(8815);
       let result1 = set(id, obj3.isQuestExpired(nextResult));
       let targetedContent = nextResult.targetedContent;
-      if (targetedContent.includes(mapped(5341).QuestContent.QUEST_BAR)) {
+      if (targetedContent.includes(mapped(6957).QuestContent.QUEST_BAR)) {
         let tmp15Result = tmp15(8816);
         let obj4 = { location: QuestsExperimentLocations.QUESTS_STORE };
         let questLogger = tmp15Result.getQuestLogger(obj4);

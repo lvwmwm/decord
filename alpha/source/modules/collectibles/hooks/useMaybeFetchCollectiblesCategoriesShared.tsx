@@ -1,7 +1,7 @@
 // Module ID: 10028
 // Function ID: 10029
 // Name: useMaybeFetchCollectiblesCategoriesShared
-// Dependencies: [32, 19, 5532, 8485, 1074, 504, 8528, 8484, 2]
+// Dependencies: [32, 19, 5522, 8485, 1074, 504, 8528, 8484, 2]
 // Exports: useMaybeFetchCollectiblesCategoriesShared
 
 // Module 10028 (useMaybeFetchCollectiblesCategoriesShared)
@@ -9,7 +9,7 @@ import CollectiblesActionCreators from "CollectiblesActionCreators" /* 8484 */;
 import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 8528 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ExperimentStore from "ExperimentStore" /* 5532 */;
+import ExperimentStore from "ExperimentStore" /* 5522 */;
 import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 8485 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import size from "module_2" /* 2 */;

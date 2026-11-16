@@ -1,7 +1,7 @@
 // Module ID: 7402
 // Function ID: 7403
 // Name: Authorize
-// Dependencies: [5155, 5349, 1072, 7403, 7307, 6966, 5243, 1084, 6054, 2]
+// Dependencies: [5155, 5339, 1072, 7403, 7307, 6966, 5243, 1084, 6044, 2]
 // Exports: filterScopes, parseOAuth2AuthorizeProps
 
 // Module 7402 (Authorize)
@@ -11,7 +11,7 @@ import _mod6966 from "module_6966" /* 6966 */;
 import OAuth2Scopes from "OAuth2Scopes" /* 7307 */;
 import scopes from "scopes" /* 7403 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5349 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const QueryStringUtils = tmp(6054);
+const QueryStringUtils = tmp(6044);
 ({ EMPTY_NUX_SERVER: hasOwnProperty, FAVORITES: metroRequire, ME: metroImportDefault } = Constants);
 const result = size.fileFinishedImporting("modules/oauth2/Authorize.tsx");
 

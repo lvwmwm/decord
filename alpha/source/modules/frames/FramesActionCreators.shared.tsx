@@ -1,12 +1,12 @@
 // Module ID: 12745
 // Function ID: 12746
 // Name: launchFrame
-// Dependencies: [32, 5, 7019, 7020, 5959, 12746, 572, 7341, 7022, 7342, 12748, 12753, 7349, 2]
+// Dependencies: [32, 5, 7019, 7020, 5949, 12746, 572, 7341, 7022, 7342, 12748, 12753, 7349, 2]
 // Exports: attachFrameHostWindow, attachFrameIframe, detachFrameHostWindow, detachFrameIframe, launchFrame, refreshProxyTicket, resetFrameGuestClaims, resetFrameLayoutModes, setFramePictureInPictureInteractive, setFrameRunsInBackground, setFrameUserMuted, updateFramePanelMode
 
 // Module 12745 (launchFrame)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5959 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5949 */;
 import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 7022 */;
 import createProxyTicket from "createProxyTicket" /* 7341 */;
 import leaveFrame from "leaveFrame" /* 7349 */;

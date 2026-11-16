@@ -1,24 +1,24 @@
-// Module ID: 20848
-// Function ID: 20849
+// Module ID: 20851
+// Function ID: 20852
 // Name: go_live/ApplicationStreamingManager
-// Dependencies: [6820, 502, 5155, 5536, 6170, 5209, 6802, 1388, 6803, 1072, 12, 6862, 1089, 572, 6808, 5150, 7882, 6257, 20828, 2]
+// Dependencies: [6810, 502, 5155, 5526, 6160, 5209, 6792, 1388, 6793, 1072, 12, 6852, 1089, 572, 6798, 5150, 7882, 6247, 20831, 2]
 
-// Module 20848 (go_live/ApplicationStreamingManager)
+// Module 20851 (go_live/ApplicationStreamingManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import AVError from "AVError" /* 6257 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6808 */;
-import StreamActionCreators from "StreamActionCreators" /* 6862 */;
-import AVErrorContext from "AVErrorContext" /* 20828 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6820 */;
+import AVError from "AVError" /* 6247 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6798 */;
+import StreamActionCreators from "StreamActionCreators" /* 6852 */;
+import AVErrorContext from "AVErrorContext" /* 20831 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6810 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5536 */;
-import RTCRegionStore from "RTCRegionStore" /* 6170 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5526 */;
+import RTCRegionStore from "RTCRegionStore" /* 6160 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 6802 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 6792 */;
 import UserStore from "UserStore" /* 1388 */;
-import Constants_mod from "Constants" /* 6803 */;
+import Constants_mod from "Constants" /* 6793 */;
 import Constants_mod2 from "Constants" /* 1072 */;
 import module_12 from "module_12" /* 12 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
@@ -56,7 +56,7 @@ let c17 = null;
 const set = new Set();
 class BaseApplicationStreamingManager extends AutomaticLifecycleManager {
   constructor() {
-    const f124032 = (item) => {
+    const f124047 = (item) => {
       if (!streamMarkedFull.isStreamMarkedFull(item)) {
         set.delete(item);
       }
@@ -151,7 +151,7 @@ class BaseApplicationStreamingManager extends AutomaticLifecycleManager {
         closure_1_13[streamKey].stop();
       }
       delete tmp[streamKey];
-      const item = set.forEach(f124032);
+      const item = set.forEach(f124047);
       const obj2 = StreamKeyUtils;
       const decodeStreamKeyResult = obj2.decodeStreamKey(streamKey);
       memberCount = memberCount.getMemberCount(decodeStreamKeyResult.guildId);
@@ -165,7 +165,7 @@ class BaseApplicationStreamingManager extends AutomaticLifecycleManager {
         closure_1_13[streamKey].stop();
       }
       delete tmp[streamKey];
-      const item = set.forEach(f124032);
+      const item = set.forEach(f124047);
       if (!paused) {
         const rTCConnection = StreamRTCConnectionStore.getRTCConnection(streamKey);
         let mediaEngineConnectionId;
@@ -221,7 +221,7 @@ class BaseApplicationStreamingManager extends AutomaticLifecycleManager {
       channelId = channelId.channelId;
       if (null != channelId) {
         c17 = null;
-        const item = set.forEach(f124032);
+        const item = set.forEach(f124047);
         const allApplicationStreamsForChannel = authStore.getAllApplicationStreamsForChannel(channelId);
         const found = allApplicationStreamsForChannel.find((ownerId) => {
           let tmp = ownerId.ownerId !== id.getId();
@@ -280,7 +280,7 @@ class BaseApplicationStreamingManager extends AutomaticLifecycleManager {
             tmp3 = set.size > 0;
           }
           if (tmp3) {
-            item = set.forEach(f124032);
+            item = set.forEach(f124047);
           }
           if (null != channelId) {
             if (selfStream) {

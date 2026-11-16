@@ -1,7 +1,7 @@
 // Module ID: 17757
 // Function ID: 17758
 // Name: VideoQuestModalHeader
-// Dependencies: [19, 17, 8810, 21, 5306, 575, 17732, 10131, 8831, 5221, 15249, 5929, 1113, 17753, 2]
+// Dependencies: [19, 17, 8810, 21, 5306, 575, 17732, 10131, 8831, 5221, 15249, 5919, 1113, 17753, 2]
 // Exports: default
 
 // Module 17757 (VideoQuestModalHeader)
@@ -79,7 +79,7 @@ export default function VideoQuestModalHeader(showCurrentVideoTime) {
   items = [tmp2.videoContentHeaderWrapper, style];
   let textShadow2 = textShadow;
   const obj4 = { style: tmp2.videoContentHeading, children: items1 };
-  const Text = tmp3(5929).Text;
+  const Text = tmp3(5919).Text;
   if (textShadow) {
     textShadow2 = tmp2.textShadow;
   }
@@ -88,7 +88,7 @@ export default function VideoQuestModalHeader(showCurrentVideoTime) {
   obj6 = { questName: quest.config.messages.questName };
   items1 = [closure_5(Text, obj5), ];
   const obj7 = { variant: "heading-xs/semibold", color: "text-overlay-light", accessibilityLabel: videoQuestProgressRemainingAccessibilityLabel, style: textShadow, children: gamePublisher };
-  const Text2 = tmp3(5929).Text;
+  const Text2 = tmp3(5919).Text;
   if (textShadow) {
     textShadow = tmp2.textShadow;
   }

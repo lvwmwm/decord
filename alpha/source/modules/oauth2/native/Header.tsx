@@ -1,7 +1,7 @@
 // Module ID: 15970
 // Function ID: 15971
 // Name: Header
-// Dependencies: [19, 17, 1072, 21, 5306, 575, 1414, 1187, 5929, 10870, 1406, 1113, 2]
+// Dependencies: [19, 17, 1072, 21, 5306, 575, 1414, 1187, 5919, 10870, 1406, 1113, 2]
 // Exports: default
 
 // Module 15970 (Header)
@@ -11,7 +11,7 @@ import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
 import FlagUtils from "FlagUtils" /* 1406 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import BotTagDefault from "BotTag" /* 10870 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -90,7 +90,7 @@ export default function Header(accountScopes) {
   }
   items3[1] = tmp8Result;
   items2[1] = metroRequire(View, obj11);
-  const Text = tmp9(5929).Text;
+  const Text = tmp9(5919).Text;
   if (accountScopes.length > 0) {
     const intl2 = tmp9(1113).intl;
     stringResult = intl2.string(tmp9(1113).t.jFbDnJ);

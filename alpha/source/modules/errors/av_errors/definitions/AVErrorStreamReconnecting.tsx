@@ -1,13 +1,13 @@
-// Module ID: 20838
-// Function ID: 20839
+// Module ID: 20841
+// Function ID: 20842
 // Name: AVErrorStreamReconnecting
-// Dependencies: [1072, 6257, 20828, 6808, 2]
+// Dependencies: [1072, 6247, 20831, 6798, 2]
 
-// Module 20838 (AVErrorStreamReconnecting)
+// Module 20841 (AVErrorStreamReconnecting)
 import Constants from "Constants" /* 1072 */;
-import AVError from "AVError" /* 6257 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6808 */;
-import AVErrorContext from "AVErrorContext" /* 20828 */;
+import AVError from "AVError" /* 6247 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6798 */;
+import AVErrorContext from "AVErrorContext" /* 20831 */;
 import size from "module_2" /* 2 */;
 
 const ApplicationStreamStates = Constants.ApplicationStreamStates;

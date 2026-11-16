@@ -1,10 +1,10 @@
-// Module ID: 20841
-// Function ID: 20842
+// Module ID: 20844
+// Function ID: 20845
 // Name: AVErrorVideoStreamSenderReadyTimeout
-// Dependencies: [502, 7024, 6257, 2]
+// Dependencies: [502, 7024, 6247, 2]
 
-// Module 20841 (AVErrorVideoStreamSenderReadyTimeout)
-import AVError from "AVError" /* 6257 */;
+// Module 20844 (AVErrorVideoStreamSenderReadyTimeout)
+import AVError from "AVError" /* 6247 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import VideoStreamStore from "VideoStreamStore" /* 7024 */;
 import size from "module_2" /* 2 */;

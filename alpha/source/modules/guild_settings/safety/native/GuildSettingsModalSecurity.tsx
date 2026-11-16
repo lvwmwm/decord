@@ -1,10 +1,10 @@
-// Module ID: 20548
-// Function ID: 20549
+// Module ID: 20551
+// Function ID: 20552
 // Name: GuildSettingsModalSecurity
-// Dependencies: [19, 17, 5173, 5177, 1388, 8405, 1072, 21, 5306, 575, 504, 8404, 5929, 1113, 5936, 6020, 17293, 5912, 2]
+// Dependencies: [19, 17, 5173, 5177, 1388, 8405, 1072, 21, 5306, 575, 504, 8404, 5919, 1113, 5926, 6010, 17293, 5902, 2]
 // Exports: default
 
-// Module 20548 (GuildSettingsModalSecurity)
+// Module 20551 (GuildSettingsModalSecurity)
 import nativeDefault from "native" /* 575 */;
 import GuildRecord from "GuildRecord" /* 5173 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8404 */;
@@ -90,11 +90,11 @@ export default function GuildSettingsModalSecurity(guildId) {
     }
   }, items2);
   const obj5 = { style: tmp.label, variant: "body-md/medium", color: "mobile-text-heading-primary", children: intl.string(guildId(1113).t.Wi9LEV) };
-  const Text = tmp2(5929).Text;
+  const Text = tmp2(5919).Text;
   intl = tmp2(1113).intl;
   items4 = [closure_12(Text, obj5), , ];
   const obj6 = { style: tmp.button, children: closure_12(Button, obj7) };
-  Button = tmp2(5936).Button;
+  Button = tmp2(5926).Button;
   const intl2 = tmp2(1113).intl;
   const string = intl2.string;
   const t = tmp2(1113).t;
@@ -119,7 +119,7 @@ export default function GuildSettingsModalSecurity(guildId) {
   let tmp18Result = null;
   if (hasItem) {
     const obj8 = { variant: "body-sm/normal", color: "text-feedback-critical", children: intl3.string(guildId(1113).t["KG1V/E"]) };
-    const Text2 = tmp2(5929).Text;
+    const Text2 = tmp2(5919).Text;
     intl3 = tmp2(1113).intl;
     tmp18Result = tmp18(Text2, obj8);
   }
@@ -128,14 +128,14 @@ export default function GuildSettingsModalSecurity(guildId) {
   items5 = [closure_13(closure_4, obj4), ];
   const obj10 = { style: tmp.center, children: items6 };
   const obj11 = { source: stateFromStores(17293), style: tmp.image, resizeMode: "contain" };
-  const tmp23 = stateFromStores(6020);
+  const tmp23 = stateFromStores(6010);
   items6 = [closure_12(tmp23, obj11), ];
   const obj12 = { style: tmp.infoWrapper, children: closure_12(Text3, obj13) };
   obj13 = { variant: "body-sm/medium", color: "text-muted", children: intl4.format(guildId(1113).t["FK0+iX"], {}) };
-  Text3 = tmp2(5929).Text;
+  Text3 = tmp2(5919).Text;
   intl4 = tmp2(1113).intl;
   items6[1] = closure_12(closure_4, obj12);
   items5[1] = closure_13(closure_4, obj10);
-  items7 = [closure_13(tmp16, obj3), closure_12(tmp2(5912).NavScrim, {})];
+  items7 = [closure_13(tmp16, obj3), closure_12(tmp2(5902).NavScrim, {})];
   return closure_13(tmp15, obj9);
 };

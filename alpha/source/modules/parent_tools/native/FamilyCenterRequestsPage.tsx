@@ -1,13 +1,13 @@
 // Module ID: 17443
 // Function ID: 17444
 // Name: FamilyCenterRequestsPage
-// Dependencies: [19, 17, 8741, 12024, 21, 5306, 575, 9616, 9617, 14227, 1113, 2701, 5929, 12305, 7415, 17403, 17444, 17449, 17457, 2]
+// Dependencies: [19, 17, 8741, 12024, 21, 5306, 575, 9616, 9617, 14227, 1113, 2701, 5919, 12305, 7415, 17403, 17444, 17449, 17457, 2]
 // Exports: default
 
 // Module 17443 (FamilyCenterRequestsPage)
 import nativeDefault from "native" /* 575 */;
 import _modDef2701 from "module_2701" /* 2701 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 7415 */;
 import useUserLinks from "useUserLinks" /* 9616 */;
 import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 9617 */;
@@ -75,7 +75,7 @@ function FamilyCenterHelpLineInfo() {
   if (null != formatResult) {
     const obj3 = { style: tmp.container, children: items };
     const obj4 = { style: tmp.supportHeader, variant: "heading-xs/semibold", children: intl3.string(_modDef2701["7/tVhv"]) };
-    const Text = tmp2(5929).Text;
+    const Text = tmp2(5919).Text;
     intl3 = tmp2(1113).intl;
     items = [metroImportAll(Text, obj4), ];
     const obj5 = { variant: "body-xs/medium", color: "text-muted", children: formatResult };

@@ -1,7 +1,7 @@
 // Module ID: 17313
 // Function ID: 17314
 // Name: WebAuthnRegisterStep
-// Dependencies: [32, 19, 17, 1072, 21, 5306, 575, 7775, 1113, 1187, 1502, 1380, 17314, 7415, 17315, 5929, 6951, 5936, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5306, 575, 7775, 1113, 1187, 1502, 1380, 17314, 7415, 17315, 5919, 6941, 5926, 2]
 // Exports: default
 
 // Module 17313 (WebAuthnRegisterStep)
@@ -115,7 +115,7 @@ export default function WebAuthnRegisterStep() {
   SafeAreaPaddingView = tmp(7415).SafeAreaPaddingView;
   items3 = [closure_8(navigation(17315).KeyImage, {}), , ];
   const obj6 = { style: tmp4.margin, variant: "body-md/normal", children: stringResult };
-  const Text = tmp(5929).Text;
+  const Text = tmp(5919).Text;
   const intl = tmp(1113).intl;
   const string = intl.string;
   const t = tmp(1113).t;
@@ -130,7 +130,7 @@ export default function WebAuthnRegisterStep() {
   let tmp18Result = "" !== tmp10;
   if (tmp18Result) {
     const obj7 = { variant: "body-md/normal", color: "text-feedback-critical", children: tmp10 };
-    tmp18Result = tmp18(tmp(5929).Text, obj7);
+    tmp18Result = tmp18(tmp(5919).Text, obj7);
   }
   items3[2] = tmp18Result;
   items4 = [closure_9(tmp21, obj5), , ];
@@ -140,8 +140,8 @@ export default function WebAuthnRegisterStep() {
     shouldDisplayAndroidFidoSelector = tmp18(AndroidPasskeyRadioGroup, obj8);
   }
   items4[1] = shouldDisplayAndroidFidoSelector;
-  const ButtonGroup = tmp(6951).ButtonGroup;
-  const Button = tmp(5936).Button;
+  const ButtonGroup = tmp(6941).ButtonGroup;
+  const Button = tmp(5926).Button;
   const intl2 = tmp(1113).intl;
   const string2 = intl2.string;
   const t2 = tmp(1113).t;

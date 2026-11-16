@@ -1,7 +1,7 @@
 // Module ID: 12840
 // Function ID: 12841
 // Name: AnimatedEffectEmoji
-// Dependencies: [19, 17, 5307, 21, 1089, 5306, 575, 6020, 1187, 504, 1655, 5548, 12810, 2]
+// Dependencies: [19, 17, 5307, 21, 1089, 5306, 575, 6010, 1187, 504, 1655, 5538, 12810, 2]
 // Exports: default
 
 // Module 12840 (AnimatedEffectEmoji)
@@ -10,7 +10,7 @@ import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import native from "native" /* 1187 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import createStyles from "createStyles" /* 5306 */;
@@ -93,7 +93,7 @@ export default function AnimatedEffectEmoji(userId) {
     };
   }, items1);
   const tmp6 = onComplete(1655);
-  const items2 = [closure_11, onComplete(1655).withSequence, onComplete(5548).withTiming, -120, onComplete(1655).withDelay, stateFromStores, onComplete(1187).STANDARD_EASING];
+  const items2 = [closure_11, onComplete(1655).withSequence, onComplete(5538).withTiming, -120, onComplete(1655).withDelay, stateFromStores, onComplete(1187).STANDARD_EASING];
   let c0;
   let c1;
   let c2;

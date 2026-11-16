@@ -1,17 +1,17 @@
 // Module ID: 17481
 // Function ID: 17482
 // Name: UserSettingsAuthedApp
-// Dependencies: [19, 17, 5154, 7221, 5155, 5248, 6958, 2189, 1072, 10897, 12054, 21, 5306, 575, 6037, 5929, 1502, 1503, 1113, 7410, 12747, 7408, 504, 14925, 1414, 6270, 14923, 5552, 12055, 2121, 1264, 8137, 6915, 7809, 7813, 7653, 5493, 7883, 7878, 11, 13388, 13481, 7746, 7954, 2270, 7443, 2]
+// Dependencies: [19, 17, 5154, 7221, 5155, 5248, 6948, 2189, 1072, 10897, 12054, 21, 5306, 575, 6027, 5919, 1502, 1503, 1113, 7410, 12747, 7408, 504, 14925, 1414, 6260, 14923, 5542, 12055, 2121, 1264, 8137, 6905, 7809, 7813, 7653, 5483, 7883, 7878, 11, 13388, 13481, 7746, 7954, 2270, 7443, 2]
 // Exports: default, handleDeleteApp
 
 // Module 17481 (UserSettingsAuthedApp)
 import nativeDefault from "native" /* 575 */;
 import intl14 from "intl" /* 1113 */;
 import Link from "Link" /* 1503 */;
-import RootNavigationRef from "RootNavigationRef" /* 5493 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import CircleInformationIcon2 from "CircleInformationIcon" /* 6037 */;
-import useAlertStore from "useAlertStore" /* 6270 */;
+import RootNavigationRef from "RootNavigationRef" /* 5483 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import CircleInformationIcon2 from "CircleInformationIcon" /* 6027 */;
+import useAlertStore from "useAlertStore" /* 6260 */;
 import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7410 */;
 import MaskedLinkUtils from "MaskedLinkUtils" /* 7653 */;
 import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7809 */;
@@ -28,7 +28,7 @@ import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
 import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7221 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import RelationshipStore from "RelationshipStore" /* 5248 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6958 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6948 */;
 import LocaleStore from "LocaleStore" /* 2189 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;

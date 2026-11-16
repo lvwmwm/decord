@@ -1,12 +1,12 @@
 // Module ID: 13684
 // Function ID: 13685
 // Name: DogIllocon
-// Dependencies: [19, 21, 13685, 13686, 13687, 7755, 6020, 2]
+// Dependencies: [19, 21, 13685, 13686, 13687, 7755, 6010, 2]
 // Exports: DogIllocon
 
 // Module 13684 (DogIllocon)
 import Fragment from "Fragment" /* 21 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import react_native from "react-native" /* 7755 */;
 import _modDef13685 from "module_13685" /* 13685 */;
 import _modDef13686 from "module_13686" /* 13686 */;

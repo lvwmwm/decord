@@ -1,7 +1,7 @@
 // Module ID: 8529
 // Function ID: 8530
 // Name: useFractionalPremiumInfo
-// Dependencies: [32, 19, 1388, 2179, 8530, 1072, 1390, 2169, 38, 5118, 8532, 2174, 504, 5899, 8533, 2173, 12, 2]
+// Dependencies: [32, 19, 1388, 2179, 8530, 1072, 1390, 2169, 38, 5118, 8532, 2174, 504, 5889, 8533, 2173, 12, 2]
 // Exports: default
 
 // Module 8529 (useFractionalPremiumInfo)

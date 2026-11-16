@@ -1,7 +1,7 @@
 // Module ID: 14273
 // Function ID: 14274
 // Name: CheckpointApngPlayer
-// Dependencies: [17, 5307, 14253, 21, 5306, 504, 6020, 2]
+// Dependencies: [17, 5307, 14253, 21, 5306, 504, 6010, 2]
 // Exports: default
 
 // Module 14273 (CheckpointApngPlayer)

@@ -1,21 +1,21 @@
 // Module ID: 7048
 // Function ID: 7049
 // Name: isChannelFocused
-// Dependencies: [32, 19, 7016, 7049, 6901, 5494, 5492, 5493, 5495, 7050, 7051, 2]
+// Dependencies: [32, 19, 7016, 7049, 6891, 5484, 5482, 5483, 5485, 7050, 7051, 2]
 // Exports: isChannelFocused, isChannelFocusedForReadStateAck, useIsChannelFocused
 
 // Module 7048 (isChannelFocused)
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5492 */;
-import RootNavigationRef from "RootNavigationRef" /* 5493 */;
-import getInitialNavigationStateDefault from "getInitialNavigationState" /* 5494 */;
-import useChatLayout from "useChatLayout" /* 5495 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5482 */;
+import RootNavigationRef from "RootNavigationRef" /* 5483 */;
+import getInitialNavigationStateDefault from "getInitialNavigationState" /* 5484 */;
+import useChatLayout from "useChatLayout" /* 5485 */;
 import NavigationHistoryStore2 from "NavigationHistoryStore" /* 7049 */;
 import getChannelDetailsFromRouteDefault from "getChannelDetailsFromRoute" /* 7050 */;
 import hasSecondaryViewChatDefault from "hasSecondaryViewChat" /* 7051 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 7016 */;
-import VoicePanelStore from "VoicePanelStore" /* 6901 */;
+import VoicePanelStore from "VoicePanelStore" /* 6891 */;
 import size from "module_2" /* 2 */;
 
 const useChatLayoutDefault = useChatLayout;
@@ -193,7 +193,7 @@ export function isChannelFocusedForReadStateAck(channelId, arg1) {
       const tmp10 = require;
       if (tmp12) {
         const rootState = rootNavigationRef.getRootState();
-        const tmp10Result = tmp10(5492);
+        const tmp10Result = tmp10(5482);
         const result = tmp10Result.coerceChannelSecondaryViewChatRoute(rootState.routes[rootState.index]);
         channelId = undefined;
         if (result != null) {

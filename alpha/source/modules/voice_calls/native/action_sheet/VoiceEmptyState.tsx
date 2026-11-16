@@ -1,7 +1,7 @@
 // Module ID: 16088
 // Function ID: 16089
 // Name: VoiceEmptyState
-// Dependencies: [19, 17, 1072, 21, 5306, 6826, 575, 1630, 1187, 1113, 16089, 16090, 2]
+// Dependencies: [19, 17, 1072, 21, 5306, 6816, 575, 1630, 1187, 1113, 16089, 16090, 2]
 // Exports: default
 
 // Module 16088 (VoiceEmptyState)
@@ -16,7 +16,7 @@ import JoinVoiceChannelButtonDefault from "JoinVoiceChannelButton" /* 16090 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
-import TextStyles_mod from "TextStyles" /* 6826 */;
+import TextStyles_mod from "TextStyles" /* 6816 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

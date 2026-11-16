@@ -1,15 +1,15 @@
 // Module ID: 10318
 // Function ID: 10319
 // Name: GameProfileHeader
-// Dependencies: [19, 17, 10316, 21, 5306, 575, 1655, 10319, 10320, 6020, 5893, 10321, 10323, 5929, 10325, 2]
+// Dependencies: [19, 17, 10316, 21, 5306, 575, 1655, 10319, 10320, 6010, 5883, 10321, 10323, 5919, 10325, 2]
 // Exports: default
 
 // Module 10318 (GameProfileHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import LinearGradientDefault from "LinearGradient" /* 5893 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import LinearGradientDefault from "LinearGradient" /* 5883 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import useGameProfileHeroBackgroundURLDefault from "useGameProfileHeroBackgroundURL" /* 10320 */;
 import GameCoverArt from "GameCoverArt" /* 10321 */;
 import AssetRegistryDefault from "AssetRegistry" /* 10325 */;
@@ -114,7 +114,7 @@ export default function GameProfileHeader(arg0) {
   if (tmp14) {
     const obj4 = { source: obj5, style: tmp.artHeroImage };
     obj5 = { uri: tmp11 };
-    tmp14 = metroRequire(tmp10(6020), obj4);
+    tmp14 = metroRequire(tmp10(6010), obj4);
   }
   items4 = [tmp14, ];
   const obj6 = { colors: items5, style: tmp.artHeroGradient };
@@ -137,7 +137,7 @@ export default function GameProfileHeader(arg0) {
   items9 = [, ];
   const obj12 = { style: tmp.titleRow, children: items10 };
   ({ textShadow: arr11[0], title: arr11[1] } = tmp);
-  items10 = [metroRequire(tmp2(5929).Text, obj13), ];
+  items10 = [metroRequire(tmp2(5919).Text, obj13), ];
   let tmp16Result3 = game.id === hasOwnProperty;
   if (tmp16Result3) {
     const obj14 = { source: AssetRegistryDefault, style: tmp.wavingWumpus, accessible: false, importantForAccessibility: "no" };
@@ -151,7 +151,7 @@ export default function GameProfileHeader(arg0) {
     tmp16Result4 = null;
     if ("" !== joined) {
       const obj15 = { variant: "body-md/normal", color: "text-overlay-light", lineClamp: 2, style: tmp.textShadow, children: joined };
-      tmp16Result4 = tmp16(tmp2(5929).Text, obj15);
+      tmp16Result4 = tmp16(tmp2(5919).Text, obj15);
     }
   }
   items8[2] = tmp16Result4;

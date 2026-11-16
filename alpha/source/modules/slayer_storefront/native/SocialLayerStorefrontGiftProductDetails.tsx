@@ -1,7 +1,7 @@
 // Module ID: 11789
 // Function ID: 11790
 // Name: SocialLayerStorefrontGiftProductDetails
-// Dependencies: [19, 17, 1072, 21, 5306, 575, 7259, 11733, 1414, 9515, 6020, 5929, 2]
+// Dependencies: [19, 17, 1072, 21, 5306, 575, 7259, 11733, 1414, 9515, 6010, 5919, 2]
 // Exports: default
 
 // Module 11789 (SocialLayerStorefrontGiftProductDetails)
@@ -22,7 +22,7 @@ let obj3;
 let obj4;
 let size;
 let tmp9;
-const FastImageDefault = tmp9(6020);
+const FastImageDefault = tmp9(6010);
 const View = react_native.View;
 const constants = Constants.PriceSetAssignmentPurchaseTypes;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -74,17 +74,17 @@ export default function SocialLayerStorefrontGiftProductDetails(sku) {
     }
     items2 = [tmp8Result, ];
     const obj8 = { variant: "body-sm/medium", color: "text-muted", children: getOrFetchApplication.name };
-    items2[1] = closure_6(getOrFetchApplication(5929).Text, obj8);
+    items2[1] = closure_6(getOrFetchApplication(5919).Text, obj8);
     tmp6Result = tmp6(tmp7, obj6);
   }
   items3 = [tmp6Result, ];
   const obj9 = { variant: "body-md/semibold", children: sku.name };
-  items3[1] = closure_6(getOrFetchApplication(5929).Text, obj9);
+  items3[1] = closure_6(getOrFetchApplication(5919).Text, obj9);
   items1[1] = closure_7(View, obj5);
   let tmp8Result2 = null != userPrice;
   if (tmp8Result2) {
     const obj10 = { variant: "body-md/semibold", children: userPrice };
-    tmp8Result2 = tmp8(tmp2(5929).Text, obj10);
+    tmp8Result2 = tmp8(tmp2(5919).Text, obj10);
   }
   items1[2] = tmp8Result2;
   return closure_7(View, obj4);

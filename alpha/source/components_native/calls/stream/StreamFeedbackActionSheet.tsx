@@ -1,18 +1,18 @@
-// Module ID: 20236
-// Function ID: 20237
+// Module ID: 20239
+// Function ID: 20240
 // Name: StreamFeedbackActionSheet
-// Dependencies: [19, 502, 1072, 12596, 21, 8468, 504, 1113, 2965, 12599, 20237, 1256, 20118, 20238, 5552, 20239, 2121, 6014, 2]
+// Dependencies: [19, 502, 1072, 12596, 21, 8468, 504, 1113, 2965, 12599, 20240, 1256, 20120, 20241, 5542, 20242, 2121, 6004, 2]
 // Exports: default
 
-// Module 20236 (StreamFeedbackActionSheet)
+// Module 20239 (StreamFeedbackActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import Constants2 from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ToastUtils from "ToastUtils" /* 6014 */;
+import ToastUtils from "ToastUtils" /* 6004 */;
 import FeedbackUtils from "FeedbackUtils" /* 12599 */;
-import trackStreamProblemDefault from "trackStreamProblem" /* 20118 */;
-import shouldShowLogUploadForCategory from "shouldShowLogUploadForCategory" /* 20238 */;
+import trackStreamProblemDefault from "trackStreamProblem" /* 20120 */;
+import shouldShowLogUploadForCategory from "shouldShowLogUploadForCategory" /* 20241 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 12596 */;
@@ -139,8 +139,8 @@ export default function StreamFeedbackActionSheet(stream) {
           if (obj3.shouldShowLogUploadForCategory(rating, category, reason)) {
             const obj7 = { mediaSessionId: null, rtcConnectionId: null };
             ({ media_session_id: obj6.mediaSessionId, rtc_connection_id: obj6.rtcConnectionId } = tmp9);
-            const tmp22Result = tmp22(5552);
-            tmp22Result.openLazy(asyncRequire(20239, dependencyMap.paths), "UploadLogs", obj7);
+            const tmp22Result = tmp22(5542);
+            tmp22Result.openLazy(asyncRequire(20242, dependencyMap.paths), "UploadLogs", obj7);
           }
         }
         const obj4 = ToastUtils;
@@ -148,7 +148,7 @@ export default function StreamFeedbackActionSheet(stream) {
       }
     }
   };
-  const tmp10Result = tmp10(20237);
+  const tmp10Result = tmp10(20240);
   const tmp11 = jsx;
   if (stateFromStores) {
     stringResult2 = stringResult1;

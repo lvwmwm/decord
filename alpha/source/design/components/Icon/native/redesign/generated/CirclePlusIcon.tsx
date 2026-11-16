@@ -1,13 +1,13 @@
 // Module ID: 13466
 // Function ID: 13467
 // Name: CirclePlusIcon
-// Dependencies: [19, 17, 21, 575, 6019, 13467, 13468, 2]
+// Dependencies: [19, 17, 21, 575, 6009, 13467, 13468, 2]
 // Exports: CirclePlusIcon
 
 // Module 13466 (CirclePlusIcon)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage3 from "BaseIconImage" /* 6019 */;
+import BaseIconImage3 from "BaseIconImage" /* 6009 */;
 import AssetRegistry from "AssetRegistry" /* 13467 */;
 import AssetRegistry2 from "AssetRegistry" /* 13468 */;
 import react from "react" /* 19 */;

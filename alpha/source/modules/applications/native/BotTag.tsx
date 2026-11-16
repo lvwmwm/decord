@@ -1,7 +1,7 @@
 // Module ID: 10870
 // Function ID: 10871
 // Name: BotTag
-// Dependencies: [19, 17, 1365, 21, 5306, 575, 1113, 10871, 5929, 2]
+// Dependencies: [19, 17, 1365, 21, 5306, 575, 1113, 10871, 5919, 2]
 
 // Module 10870 (BotTag)
 import react_native from "react-native" /* 17 */;
@@ -105,7 +105,7 @@ class BotTag {
     items = [tmp2.tag, tmp11, style, prop];
     items1 = [tmp7Result, ];
     let str3 = "body-xs/semibold";
-    const Text = tmp17(5929).Text;
+    const Text = tmp17(5919).Text;
     const tmp24 = metroRequire;
     const tmp25 = View;
     const tmp26 = hasOwnProperty;

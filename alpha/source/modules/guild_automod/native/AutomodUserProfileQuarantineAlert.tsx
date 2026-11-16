@@ -1,7 +1,7 @@
 // Module ID: 14173
 // Function ID: 14174
 // Name: AutomodUserProfileQuarantineAlert
-// Dependencies: [32, 109, 19, 17, 502, 5218, 5177, 14166, 1072, 5224, 21, 5306, 575, 6340, 1113, 1187, 14174, 5929, 14175, 8604, 563, 5244, 5899, 1256, 2]
+// Dependencies: [32, 109, 19, 17, 502, 5218, 5177, 14166, 1072, 5224, 21, 5306, 575, 6330, 1113, 1187, 14174, 5919, 14175, 8604, 563, 5244, 5889, 1256, 2]
 // Exports: default
 
 // Module 14173 (AutomodUserProfileQuarantineAlert)
@@ -12,8 +12,8 @@ import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import GuildMemberConstants from "GuildMemberConstants" /* 5224 */;
 import AutomodPermissionUtils from "AutomodPermissionUtils" /* 5244 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import AlertDefault from "Alert" /* 6340 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import AlertDefault from "Alert" /* 6330 */;
 import openUserSettings from "openUserSettings" /* 8604 */;
 import Constants2 from "Constants" /* 14166 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -178,7 +178,7 @@ export default function AutomodUserProfileQuarantineAlert(guildId) {
       return obj2.getAutomodReason(automodQuarantinedGuildMemberFlags);
     }
   }, items4);
-  stateFromStores(5899)(() => {
+  stateFromStores(5889)(() => {
     const obj = AnalyticsUtilsDefault;
     const obj2 = { type: QUARANTINE_USER_ALERT_KEY, guild_id: guildId, other_user_id: stateFromStores };
     obj.track(map1.OPEN_MODAL, obj2);

@@ -1,11 +1,11 @@
 // Module ID: 13023
 // Function ID: 13024
 // Name: VoiceChannelEffectsActionCreators
-// Dependencies: [6969, 5209, 13024, 12811, 1072, 6371, 12, 12810, 1285, 13025, 7937, 7227, 2]
+// Dependencies: [6969, 5209, 13024, 12811, 1072, 6361, 12, 12810, 1285, 13025, 7937, 7227, 2]
 // Exports: sendVoiceChannelCustomCallSoundEffect, sendVoiceChannelSoundboardEcho, sendVoiceChannelSoundboardEffect
 
 // Module 13023 (VoiceChannelEffectsActionCreators)
-import SoundboardConstants from "SoundboardConstants" /* 6371 */;
+import SoundboardConstants from "SoundboardConstants" /* 6361 */;
 import VoiceChannelEffectsConstants from "VoiceChannelEffectsConstants" /* 12811 */;
 import EmojiStore from "EmojiStore" /* 6969 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;

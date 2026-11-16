@@ -1,15 +1,15 @@
 // Module ID: 14051
 // Function ID: 14052
 // Name: GuildIconUploader
-// Dependencies: [19, 17, 1192, 21, 5306, 575, 5377, 6020, 5313, 14052, 14053, 5929, 1113, 14054, 14055, 7428, 2]
+// Dependencies: [19, 17, 1192, 21, 5306, 575, 5367, 6010, 5313, 14052, 14053, 5919, 1113, 14054, 14055, 7428, 2]
 
 // Module 14051 (GuildIconUploader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import shared from "shared" /* 5313 */;
-import native from "native" /* 5377 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import native from "native" /* 5367 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import Pressables from "Pressables" /* 7428 */;
 import AssetRegistryDefault from "AssetRegistry" /* 14054 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 14055 */;
@@ -68,7 +68,7 @@ class GuildIconUploader extends PureComponent {
       const obj = { source: tmp10Result };
       items2 = [hasOwnProperty(tmp12, obj), ];
       const obj5 = { style: tmp.emptyGuildIconText, variant: "body-xs/semibold", color: "text-default", children: str.toUpperCase() };
-      const Text = tmp13(5929).Text;
+      const Text = tmp13(5919).Text;
       const intl = tmp13(1113).intl;
       str = intl.string(intl3.t["3UB9ad"]);
       items2[1] = hasOwnProperty(Text, obj5);

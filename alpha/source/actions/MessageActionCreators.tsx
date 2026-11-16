@@ -1,7 +1,7 @@
 // Module ID: 8660
 // Function ID: 8661
 // Name: MessageActionCreators
-// Dependencies: [32, 5, 8661, 6800, 6933, 8461, 8662, 8782, 8784, 8744, 7010, 6820, 502, 5155, 8785, 5177, 6052, 6372, 5238, 6068, 7015, 8792, 1388, 1072, 8794, 8130, 5311, 17, 3, 6051, 8795, 6055, 8798, 8799, 6067, 8804, 5343, 8825, 1256, 6053, 8841, 8468, 6755, 8844, 1113, 2188, 8846, 572, 8851, 6788, 8852, 8853, 1285, 6374, 7241, 9, 8691, 6795, 11, 5184, 5204, 8680, 6797, 8855, 8856, 8475, 8860, 2174, 8788, 1406, 7285, 8861, 9012, 9016, 9019, 9020, 9028, 9029, 9033, 6934, 1089, 9166, 2119, 8864, 5313, 11674, 6268, 2]
+// Dependencies: [32, 5, 8661, 6790, 6923, 8461, 8662, 8782, 8784, 8744, 7010, 6810, 502, 5155, 8785, 5177, 6042, 6362, 5238, 6058, 7015, 8792, 1388, 1072, 8794, 8130, 5311, 17, 3, 6041, 8795, 6045, 8798, 8799, 6057, 8804, 6959, 8825, 1256, 6043, 8841, 8468, 6745, 8844, 1113, 2188, 8846, 572, 8851, 6778, 8852, 8853, 1285, 6364, 7241, 9, 8691, 6785, 11, 5184, 5204, 8680, 6787, 8855, 8856, 8475, 8860, 2174, 8788, 1406, 7285, 8861, 9012, 9016, 9019, 9020, 9028, 9029, 9033, 6924, 1089, 9166, 2119, 8864, 5313, 11674, 6258, 2]
 
 // Module 8660 (MessageActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
@@ -12,9 +12,9 @@ import intl5 from "intl" /* 1113 */;
 import FlagUtils from "FlagUtils" /* 1406 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
-import InviteCodeUtils from "InviteCodeUtils" /* 6053 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6067 */;
-import merged5 from "merged5" /* 6788 */;
+import InviteCodeUtils from "InviteCodeUtils" /* 6043 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6057 */;
+import merged5 from "merged5" /* 6778 */;
 import GuildTemplatesConstants from "GuildTemplatesConstants" /* 8130 */;
 import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 8468 */;
 import getInviteURLDefault from "getInviteURL" /* 8475 */;
@@ -33,22 +33,22 @@ import SentMessageIntentsHandlerDefault from "SentMessageIntentsHandler" /* 8860
 import PremiumGiftingIntentActionCreators from "PremiumGiftingIntentActionCreators" /* 11674 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6800 */;
-import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6933 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6790 */;
+import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6923 */;
 import GuildTemplateStore from "GuildTemplateStore" /* 8461 */;
 import MessageRoundtripTrackerStore from "MessageRoundtripTrackerStore" /* 8662 */;
 import PoggermodeSettingsStore from "PoggermodeSettingsStore" /* 8782 */;
 import PendingReplyStore from "PendingReplyStore" /* 8784 */;
 import StickersStore from "StickersStore" /* 7010 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6820 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6810 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import EditMessageStore from "EditMessageStore" /* 8785 */;
 import GuildStore from "GuildStore" /* 5177 */;
-import InviteStore from "InviteStore" /* 6052 */;
-import MessageStore from "MessageStore" /* 6372 */;
+import InviteStore from "InviteStore" /* 6042 */;
+import MessageStore from "MessageStore" /* 6362 */;
 import PermissionStore from "PermissionStore" /* 5238 */;
-import PresenceStore from "PresenceStore" /* 6068 */;
+import PresenceStore from "PresenceStore" /* 6058 */;
 import ReadStateStore from "ReadStateStore" /* 7015 */;
 import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
@@ -447,7 +447,7 @@ let obj17 = {
   sendExplicitMediaClydeError(c0, attachments, EXPLICIT_MEDIA_ADD_MEDIA_TO_FORUM_POST_BLOCKED) {
     let message;
     let messageName;
-    const f96585 = () => {
+    const f96598 = () => {
       let intl;
       const obj = { message: intl.string(require("intl").t.i4AbAS), messageName: "BOT_GUILD_EXPLICIT_CONTENT" };
       intl = require("intl").intl;
@@ -471,8 +471,8 @@ let obj17 = {
         intl = require("intl").intl;
         return obj;
       });
-      ({ message, messageName } = withResult1.otherwise(f96585));
-      withResult1.otherwise(f96585);
+      ({ message, messageName } = withResult1.otherwise(f96598));
+      withResult1.otherwise(f96598);
       const obj8 = createNonce;
       const nonce = obj8.createNonce();
       obj17.sendBotMessage(c0, message, messageName, nonce);
@@ -2695,9 +2695,9 @@ let obj17 = {
         const obj = id(c3[47]);
         const obj2 = { type: "MESSAGE_DELETE", id, channelId, local };
         const dispatchResult = obj.dispatch(obj2);
-        dispatchResult.then(f145497);
+        dispatchResult.then(f145514);
       }
-      const f145497 = () => {
+      const f145514 = () => {
         const AccessibilityAnnouncer = channelId(closure_1_3[84]).AccessibilityAnnouncer;
         const announce = AccessibilityAnnouncer.announce;
         const intl = channelId(closure_1_3[44]).intl;
@@ -2758,7 +2758,7 @@ let obj17 = {
               const obj = id(c3[47]);
               const obj2 = { type: "MESSAGE_DELETE", id, channelId, local };
               const dispatchResult = obj.dispatch(obj2);
-              dispatchResult.then(f145497);
+              dispatchResult.then(f145514);
             });
           }
           c3 = 3;

@@ -1,7 +1,7 @@
 // Module ID: 11797
 // Function ID: 11798
 // Name: CollectiblesShopCheckoutDetails
-// Dependencies: [19, 17, 1074, 9490, 21, 5306, 575, 8589, 6020, 11798, 8561, 9512, 9402, 9489, 2111, 9508, 2114, 1075, 10423, 10422, 9500, 1113, 5929, 8496, 10433, 11799, 9409, 2174, 10445, 2]
+// Dependencies: [19, 17, 1074, 9490, 21, 5306, 575, 8589, 6010, 11798, 8561, 9512, 9402, 9489, 2111, 9508, 2114, 1075, 10423, 10422, 9500, 1113, 5919, 8496, 10433, 11799, 9409, 2174, 10445, 2]
 // Exports: default
 
 // Module 11797 (CollectiblesShopCheckoutDetails)
@@ -12,8 +12,8 @@ import FractionalPremiumSKUs from "FractionalPremiumSKUs" /* 1075 */;
 import intl8 from "intl" /* 1113 */;
 import utils from "utils" /* 2111 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 2114 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import CollectiblesProductUtils from "CollectiblesProductUtils" /* 8496 */;
 import useMaybeFetchProfileFrameDefault from "useMaybeFetchProfileFrame" /* 8561 */;
 import useProfileEffectDefault from "useProfileEffect" /* 8589 */;

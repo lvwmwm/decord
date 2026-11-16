@@ -1,14 +1,14 @@
 // Module ID: 12425
 // Function ID: 12426
 // Name: useLoadMessageContentEntries
-// Dependencies: [32, 5, 19, 2165, 2145, 5436, 7350, 7055, 8538, 38, 7313, 2119, 12426, 5952, 2]
+// Dependencies: [32, 5, 19, 2165, 2145, 5426, 7350, 7055, 8538, 38, 7313, 2119, 12426, 5942, 2]
 // Exports: default
 
 // Module 12425 (useLoadMessageContentEntries)
 import _modDef38 from "module_38" /* 38 */;
 import Server from "Server" /* 2119 */;
 import Constants from "Constants" /* 2145 */;
-import utils_FunctionUtils from "utils/FunctionUtils" /* 5436 */;
+import utils_FunctionUtils from "utils/FunctionUtils" /* 5426 */;
 import useAvatarColor from "useAvatarColor" /* 8538 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;

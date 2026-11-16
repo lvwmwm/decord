@@ -1,17 +1,17 @@
-// Module ID: 19497
-// Function ID: 19498
+// Module ID: 19499
+// Function ID: 19500
 // Name: SearchListCard
-// Dependencies: [19, 17, 21, 5306, 575, 1187, 5929, 5372, 5954, 10891, 8086, 1113, 8033, 7445, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 1187, 5919, 5362, 5944, 10891, 8086, 1113, 8033, 7445, 2]
 // Exports: SearchListCardContainer, SearchListCardContent, SearchListCardFooter, SearchListCardThumbnail
 
-// Module 19497 (SearchListCard)
+// Module 19499 (SearchListCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import UserUtilsDefault from "UserUtils" /* 5372 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import useChannelNameDefault from "useChannelName" /* 5954 */;
+import UserUtilsDefault from "UserUtils" /* 5362 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import useChannelNameDefault from "useChannelName" /* 5944 */;
 import Card_Card from "Card/Card" /* 7445 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 8033 */;
 import ForumIcon from "ForumIcon" /* 8086 */;

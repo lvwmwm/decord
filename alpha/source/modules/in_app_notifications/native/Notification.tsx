@@ -1,7 +1,7 @@
 // Module ID: 11087
 // Function ID: 11088
 // Name: Notification
-// Dependencies: [19, 11026, 1072, 21, 5306, 575, 11025, 11077, 1655, 5939, 5548, 1708, 6067, 7428, 11088, 11090, 2]
+// Dependencies: [19, 11026, 1072, 21, 5306, 575, 11025, 11077, 1655, 5929, 5538, 1708, 6057, 7428, 11088, 11090, 2]
 // Exports: NotificationPressable
 
 // Module 11087 (Notification)
@@ -9,8 +9,8 @@ import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import _mod1655 from "module_1655" /* 1655 */;
 import _mod1708 from "module_1708" /* 1708 */;
-import timing_timing from "timing/timing" /* 5548 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6067 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6057 */;
 import InAppNotificationUtils from "InAppNotificationUtils" /* 11025 */;
 import react from "react" /* 19 */;
 import InAppNotificationConstants from "InAppNotificationConstants" /* 11026 */;

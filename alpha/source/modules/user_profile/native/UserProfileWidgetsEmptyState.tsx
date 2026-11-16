@@ -1,13 +1,13 @@
 // Module ID: 15818
 // Function ID: 15819
 // Name: UserProfileWidgetsEmptyState
-// Dependencies: [32, 19, 17, 502, 8479, 7962, 21, 575, 5306, 15819, 504, 15810, 15823, 15824, 15825, 10516, 5929, 1113, 15826, 5936, 8546, 5552, 15828, 2121, 2]
+// Dependencies: [32, 19, 17, 502, 8479, 7962, 21, 575, 5306, 15819, 504, 15810, 15823, 15824, 15825, 10516, 5919, 1113, 15826, 5926, 8546, 5542, 15828, 2121, 2]
 // Exports: default
 
 // Module 15818 (UserProfileWidgetsEmptyState)
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import Constants from "Constants" /* 7962 */;
 import Constants2 from "Constants" /* 8479 */;
 import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8546 */;
@@ -100,11 +100,11 @@ export default function UserProfileWidgetsEmptyState() {
   let obj3 = { style: tmp.container, onLayout: callback, children: items3 };
   const obj4 = { style: tmp.textContainer, children: items2 };
   const obj5 = { variant: "heading-sm/semibold", color: "text-strong", style: tmp.centeredText, children: intl.string(require("intl").t["oqalC+"]) };
-  const Heading = tmp2(5929).Heading;
+  const Heading = tmp2(5919).Heading;
   intl = tmp2(1113).intl;
   items2 = [closure_10(Heading, obj5), ];
   const obj6 = { variant: "body-sm/normal", color: "text-default", style: tmp.centeredText, children: intl2.string(require("intl").t.O9SQ1c) };
-  const Text = tmp2(5929).Text;
+  const Text = tmp2(5919).Text;
   intl2 = tmp2(1113).intl;
   items2[1] = closure_10(Text, obj6);
   items3 = [closure_11(closure_6, obj4), , ];
@@ -152,7 +152,7 @@ export default function UserProfileWidgetsEmptyState() {
       obj3.openLazy(asyncRequire(15828, dependencyMap.paths), "UserProfileWidgetAddActionSheet");
     }
   };
-  const Button = tmp2(5936).Button;
+  const Button = tmp2(5926).Button;
   intl4 = tmp2(1113).intl;
   items3[2] = closure_10(Button, obj10);
   return closure_11(tmp16, obj3);

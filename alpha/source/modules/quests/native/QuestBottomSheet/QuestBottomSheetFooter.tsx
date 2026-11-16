@@ -1,18 +1,18 @@
 // Module ID: 17728
 // Function ID: 17729
 // Name: QuestBottomSheetFooter
-// Dependencies: [32, 19, 17, 5307, 1388, 8808, 5567, 21, 575, 5306, 5341, 10131, 10151, 10156, 11832, 504, 5902, 8495, 10128, 17729, 5936, 15250, 10170, 17693, 15261, 17723, 17725, 7988, 1113, 7497, 10168, 13308, 10135, 10138, 5345, 8834, 1630, 1496, 1655, 5548, 5942, 2]
+// Dependencies: [32, 19, 17, 5307, 1388, 8808, 5557, 21, 575, 5306, 6957, 10131, 10151, 10156, 11832, 504, 5892, 8495, 10128, 17729, 5926, 15250, 10170, 17693, 15261, 17723, 17725, 7988, 1113, 7497, 10168, 13308, 10135, 10138, 6961, 8834, 1630, 1496, 1655, 5538, 5932, 2]
 // Exports: default
 
 // Module 17728 (QuestBottomSheetFooter)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import QuestTypes from "QuestTypes" /* 5341 */;
-import AdCreativeType from "AdCreativeType" /* 5345 */;
-import timing_timing from "timing/timing" /* 5548 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5567 */;
-import components_Button_Button from "components/Button/Button" /* 5936 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5557 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
+import QuestTypes from "QuestTypes" /* 6957 */;
+import AdCreativeType from "AdCreativeType" /* 6961 */;
 import AnalyticsTypes from "AnalyticsTypes" /* 8834 */;
 import QuestUtils from "QuestUtils" /* 10128 */;
 import captureAdUserAction from "captureAdUserAction" /* 10135 */;
@@ -468,7 +468,7 @@ export default function QuestBottomSheetFooter(quest) {
           tmp41Result4 = tmp41(tmp28, obj14);
         } else if (isMobileActivityQuest) {
           const obj15 = { grow: true, size: "lg", onPress: mobileActivityPressHandler, text: primaryCtaCopy, icon: tmp2Result2.getPrimaryCtaIcon(quest) };
-          const Button = tmp2(5936).Button;
+          const Button = tmp2(5926).Button;
           let tmp24 = null;
           tmp2Result2 = quest(10128);
           if (isQuestAccessSuspended) {
@@ -477,7 +477,7 @@ export default function QuestBottomSheetFooter(quest) {
           const merged2 = Object.assign(tmp24);
           tmp41Result4 = tmp41(Button, obj15);
         } else {
-          if (first === quest(5341).TaskPlatformScreen.CONSOLE) {
+          if (first === quest(6957).TaskPlatformScreen.CONSOLE) {
             if (!isQuestProgressing) {
               let tmp18 = null;
               const obj16 = { questId: quest.id, loading: isDefibrilating, disabled: isDefibrilating, onPress: onDefib, sourceQuestContent };

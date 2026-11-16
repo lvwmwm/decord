@@ -1,13 +1,13 @@
 // Module ID: 9491
 // Function ID: 9492
 // Name: ProfileEffectSampleV2
-// Dependencies: [17, 9490, 21, 5306, 575, 6020, 9492, 9493, 2]
+// Dependencies: [17, 9490, 21, 5306, 575, 6010, 9492, 9493, 2]
 // Exports: default
 
 // Module 9491 (ProfileEffectSampleV2)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9490 */;
 import _modDef9492 from "module_9492" /* 9492 */;
 import Fragment from "Fragment" /* 21 */;

@@ -1,15 +1,15 @@
-// Module ID: 19366
-// Function ID: 19367
+// Module ID: 19368
+// Function ID: 19369
 // Name: ChannelScreenFrameContainer
-// Dependencies: [19, 17, 21, 5306, 575, 18713, 5902, 1655, 5263, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 18715, 5892, 1655, 5263, 2]
 // Exports: ChannelScreenFrameTopBorder, default
 
-// Module 19366 (ChannelScreenFrameContainer)
+// Module 19368 (ChannelScreenFrameContainer)
 import nativeDefault from "native" /* 575 */;
 import _mod1655 from "module_1655" /* 1655 */;
 import DeviceUtils from "DeviceUtils" /* 5263 */;
-import useToken from "useToken" /* 5902 */;
-import useAppFrameDefault from "useAppFrame" /* 18713 */;
+import useToken from "useToken" /* 5892 */;
+import useAppFrameDefault from "useAppFrame" /* 18715 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

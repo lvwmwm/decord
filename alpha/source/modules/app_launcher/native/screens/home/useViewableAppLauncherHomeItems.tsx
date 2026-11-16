@@ -1,7 +1,7 @@
 // Module ID: 13418
 // Function ID: 13419
 // Name: useViewableAppLauncherHomeItems
-// Dependencies: [19, 12699, 1655, 13419, 6338, 1264, 2]
+// Dependencies: [19, 12699, 1655, 13419, 6328, 1264, 2]
 // Exports: useViewableAppLauncherHomeItems
 
 // Module 13418 (useViewableAppLauncherHomeItems)

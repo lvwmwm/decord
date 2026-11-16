@@ -1,12 +1,12 @@
 // Module ID: 10826
 // Function ID: 10827
 // Name: game_console/GameConsoleAlertUtils
-// Dependencies: [19, 2133, 7471, 1072, 21, 5348, 5139, 1113, 6269, 10827, 7422, 2]
+// Dependencies: [19, 2133, 7471, 1072, 21, 5338, 5139, 1113, 6259, 10827, 7422, 2]
 
 // Module 10826 (game_console/GameConsoleAlertUtils)
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1113 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6269 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6259 */;
 import authorizeConnectionDefault from "authorizeConnection" /* 7422 */;
 import GameConsoleConstants from "GameConsoleConstants" /* 7471 */;
 import react from "react" /* 19 */;

@@ -1,12 +1,12 @@
-// Module ID: 19479
-// Function ID: 19480
+// Module ID: 19481
+// Function ID: 19482
 // Name: SearchHistoryRow
-// Dependencies: [5, 19, 17, 5155, 7015, 1388, 9066, 21, 5306, 575, 14765, 7428, 7549, 19468, 14761, 19462, 5929, 7826, 563, 19478, 7350, 8134, 19477, 19480, 19493, 1113, 2]
+// Dependencies: [5, 19, 17, 5155, 7015, 1388, 9066, 21, 5306, 575, 14765, 7428, 7549, 19470, 14761, 19464, 5919, 7826, 563, 19480, 7350, 8134, 19479, 19482, 19495, 1113, 2]
 
-// Module 19479 (SearchHistoryRow)
+// Module 19481 (SearchHistoryRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import UserActionCreators from "UserActionCreators" /* 7350 */;
 import SearchConstants from "SearchConstants" /* 9066 */;
 import TrackingDefault from "Tracking" /* 14761 */;
@@ -46,7 +46,7 @@ function SearchHistoryTextRow(searchContext) {
   const searchHistoryItem = searchContext.searchHistoryItem;
   const tmp = closure_12();
   dependencyMap = tmp;
-  let obj = searchContext(19468);
+  let obj = searchContext(19470);
   const onPressSearchHistoryText = obj.useOnPressSearchHistoryText({ searchContext });
   const items = [onPressSearchHistoryText, searchContext, , , ];
   ({ tags: arr[2], text: arr[3], type: arr[4] } = searchHistoryItem);
@@ -59,7 +59,7 @@ function SearchHistoryTextRow(searchContext) {
   let obj2 = { style: tmp.textContainer, children: items1 };
   const tags = searchHistoryItem.tags;
   let mapped;
-  const SearchListRow = searchContext(19462).SearchListRow;
+  const SearchListRow = searchContext(19464).SearchListRow;
   const tmp7 = closure_11;
   if (tags != null) {
     mapped = tags.map((children) => {
@@ -72,7 +72,7 @@ function SearchHistoryTextRow(searchContext) {
   items1 = [mapped, ];
   const obj3 = { label: tmp7(View, obj2), onPress: callback, trailing: closure_10(SearchHistoryRemoveIcon, { searchContext, searchHistoryItem }), iconContainerStyle: tmp.textIconContainer, icon: closure_10(View, obj5) };
   const obj4 = { lineClamp: 1, variant: "body-md/semibold", color: "mobile-text-heading-primary", style: tmp.text, children: searchHistoryItem.text };
-  items1[1] = closure_10(searchContext(5929).Text, obj4);
+  items1[1] = closure_10(searchContext(5919).Text, obj4);
   obj5 = { style: tmp.iconContainer, children: closure_10(searchContext(7826).MagnifyingGlassIcon, { size: "sm", color: "interactive-text-default" }) };
   return closure_10(SearchListRow, obj3);
 }

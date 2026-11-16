@@ -1,12 +1,12 @@
 // Module ID: 9341
 // Function ID: 9342
 // Name: GuildSpaceMusicSystemMessage
-// Dependencies: [5155, 6944, 1388, 5306, 575, 9178, 9179, 6351, 9188, 1113, 9190, 8655, 9342, 9192, 2]
+// Dependencies: [5155, 6934, 1388, 5306, 575, 9178, 9179, 6341, 9188, 1113, 9190, 8655, 9342, 9192, 2]
 // Exports: createGuildSpaceMusicSystemMessage
 
 // Module 9341 (GuildSpaceMusicSystemMessage)
 import nativeDefault from "native" /* 575 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6351 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6341 */;
 import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8655 */;
 import PopularMusicSystemMessageTypes from "PopularMusicSystemMessageTypes" /* 9178 */;
 import PopularMusicSystemMessageCopy from "PopularMusicSystemMessageCopy" /* 9179 */;
@@ -15,7 +15,7 @@ import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 9190 */;
 import createCommonMessageDefault from "createCommonMessage" /* 9192 */;
 import AssetRegistryDefault from "AssetRegistry" /* 9342 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
-import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 6944 */;
+import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 6934 */;
 import UserStore from "UserStore" /* 1388 */;
 import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;

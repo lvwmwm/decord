@@ -1,11 +1,11 @@
 // Module ID: 12909
 // Function ID: 12910
 // Name: useStageChannelConnectAction
-// Dependencies: [6905, 12908, 2]
+// Dependencies: [6895, 12908, 2]
 // Exports: default, useStageChannelStartEvent
 
 // Module 12909 (useStageChannelConnectAction)
-import useStateChannelIsLiveDefault from "useStateChannelIsLive" /* 6905 */;
+import useStateChannelIsLiveDefault from "useStateChannelIsLive" /* 6895 */;
 import useCurrentUserStageRolesDefault from "useCurrentUserStageRoles" /* 12908 */;
 import size from "module_2" /* 2 */;
 

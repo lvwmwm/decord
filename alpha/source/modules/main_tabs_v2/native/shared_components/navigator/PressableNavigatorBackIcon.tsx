@@ -1,7 +1,7 @@
 // Module ID: 9053
 // Function ID: 9054
 // Name: PressableNavigatorBackIcon
-// Dependencies: [19, 17, 5155, 7060, 5209, 21, 5306, 1187, 575, 504, 5902, 5486, 9054, 7428, 1113, 6020, 9055, 9056, 2]
+// Dependencies: [19, 17, 5155, 7060, 5209, 21, 5306, 1187, 575, 504, 5892, 5476, 9054, 7428, 1113, 6010, 9055, 9056, 2]
 // Exports: PressableNavigatorBackIcon
 
 // Module 9053 (PressableNavigatorBackIcon)

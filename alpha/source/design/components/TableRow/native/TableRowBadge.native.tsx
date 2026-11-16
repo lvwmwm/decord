@@ -1,11 +1,11 @@
 // Module ID: 7461
 // Function ID: 7462
 // Name: TableRowBadge
-// Dependencies: [5481, 7459, 2]
+// Dependencies: [5471, 7459, 2]
 // Exports: getTableRowAccessibilityLabel, resolveTableRowBadgeProps
 
 // Module 7461 (TableRowBadge)
-import native from "native" /* 5481 */;
+import native from "native" /* 5471 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

@@ -1,12 +1,12 @@
-// Module ID: 19372
-// Function ID: 19373
+// Module ID: 19374
+// Function ID: 19375
 // Name: NavigationTTIRegionDebugOverlay
-// Dependencies: [32, 19, 17, 21, 5306, 575, 14198, 14199, 19370, 14201, 5929, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 575, 14198, 14199, 19372, 14201, 5919, 2]
 // Exports: NavigationTTIRegionDebugOverlay
 
-// Module 19372 (NavigationTTIRegionDebugOverlay)
+// Module 19374 (NavigationTTIRegionDebugOverlay)
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 14199 */;
 import NavigationTTIDebugFreeze from "NavigationTTIDebugFreeze" /* 14201 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
@@ -110,10 +110,10 @@ function NavigationTTIMilestoneReadout(surface) {
   }
   const obj2 = { style: tmp.milestoneReadout, pointerEvents: "none", accessible: false, children: closure_7(Text, obj3) };
   obj3 = { variant: "body-xs/normal", color: "text-default", style: tmp.badgeText, lineClamp: 1, accessible: false, children: items2 };
-  Text = surface(5929).Text;
+  Text = surface(5919).Text;
   const obj4 = { variant: "body-xs/semibold", color: "none", children: items1 };
   items1 = ["FP ", str5];
-  items2 = [closure_7(surface(5929).Text, obj4), " \u00B7 FCP ", str4];
+  items2 = [closure_7(surface(5919).Text, obj4), " \u00B7 FCP ", str4];
   return closure_8(closure_6, obj2);
 }
 function NavigationTTIDebugFreezeControl(arg0) {
@@ -545,7 +545,7 @@ export function NavigationTTIRegionDebugOverlay(name) {
     }
     obj6 = { variant: "body-xs/semibold", color: str26, style: tmp.badgeText, lineClamp: num2, accessible: false, children: combined1 };
     num2 = 1;
-    Text = tmp2(5929).Text;
+    Text = tmp2(5919).Text;
     if (tmp6) {
       num2 = 3;
     }

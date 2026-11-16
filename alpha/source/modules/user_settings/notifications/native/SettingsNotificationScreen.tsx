@@ -1,9 +1,9 @@
-// Module ID: 18104
-// Function ID: 18105
+// Module ID: 18106
+// Function ID: 18107
 // Name: SettingsNotificationScreen
-// Dependencies: [19, 17, 18105, 9202, 21, 5306, 575, 14827, 18106, 18107, 5929, 1113, 7445, 7623, 12406, 18108, 18109, 17213, 2]
+// Dependencies: [19, 17, 18107, 9202, 21, 5306, 575, 14827, 18108, 18109, 5919, 1113, 7445, 7623, 12406, 18110, 18111, 17213, 2]
 
-// Module 18104 (SettingsNotificationScreen)
+// Module 18106 (SettingsNotificationScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
@@ -11,10 +11,10 @@ import SettingsConstants from "SettingsConstants" /* 9202 */;
 import SettingBuilders from "SettingBuilders" /* 12406 */;
 import NotificationPermissionUtil from "NotificationPermissionUtil" /* 14827 */;
 import SettingLayoutDefault from "SettingLayout" /* 17213 */;
-import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 18105 */;
-import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 18106 */;
-import SettingsNotificationUtils from "SettingsNotificationUtils" /* 18107 */;
-import NotificationPermissionSettingsHeaderDefault from "NotificationPermissionSettingsHeader" /* 18108 */;
+import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 18107 */;
+import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 18108 */;
+import SettingsNotificationUtils from "SettingsNotificationUtils" /* 18109 */;
+import NotificationPermissionSettingsHeaderDefault from "NotificationPermissionSettingsHeader" /* 18110 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;
@@ -43,7 +43,7 @@ function SystemNotificationsSubLabel() {
   const tmp8 = React4;
   if (result) {
     const obj4 = { variant: "body-xs/normal", color: "text-muted", children: intl.string(intl7.t["/TZX1J"]) };
-    const Text = tmp2(5929).Text;
+    const Text = tmp2(5919).Text;
     intl = tmp2(1113).intl;
     result = metroImportDefault(Text, obj4);
   }
@@ -61,7 +61,7 @@ function SystemNotificationsSubLabel() {
     items1 = [metroImportDefault(CircleErrorIcon, obj8), ];
     const obj9 = { style: tmp.text, children: metroImportDefault(Text2, obj10) };
     obj10 = { color: "text-default", variant: "body-sm/medium", children: intl2.string(intl7.t.TAuasM) };
-    Text2 = tmp2(5929).Text;
+    Text2 = tmp2(5919).Text;
     intl2 = tmp2(1113).intl;
     items1[1] = metroImportDefault(View, obj9);
     showReactivationPrompt = metroImportDefault(View, obj5);

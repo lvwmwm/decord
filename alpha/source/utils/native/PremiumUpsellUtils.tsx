@@ -1,7 +1,7 @@
 // Module ID: 11170
 // Function ID: 11171
 // Name: PremiumUpsellUtils
-// Dependencies: [19, 1388, 1072, 1390, 21, 11171, 1113, 11172, 11173, 11174, 2174, 11175, 11176, 11177, 6269, 11178, 2121, 9310, 10954, 5501, 1256, 5552, 9579, 2]
+// Dependencies: [19, 1388, 1072, 1390, 21, 11171, 1113, 11172, 11173, 11174, 2174, 11175, 11176, 11177, 6259, 11178, 2121, 9310, 10954, 5491, 1256, 5542, 9579, 2]
 // Exports: getUpsellItems, usePremiumUpsellConfig
 
 // Module 11170 (PremiumUpsellUtils)
@@ -10,8 +10,8 @@ import intl20 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
 import PremiumUtils from "PremiumUtils" /* 2174 */;
-import ChatInputUtils from "ChatInputUtils" /* 5501 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ChatInputUtils from "ChatInputUtils" /* 5491 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import openPremiumModalDefault from "openPremiumModal" /* 9579 */;
 import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10954 */;
 import AssetRegistryDefault from "AssetRegistry" /* 11171 */;

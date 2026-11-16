@@ -1,7 +1,7 @@
 // Module ID: 16404
 // Function ID: 16405
 // Name: GameOrganizationInviteActionSheet
-// Dependencies: [19, 17, 16349, 21, 5306, 575, 8474, 16405, 16406, 16402, 504, 12539, 1113, 2565, 7951, 6337, 5929, 7825, 16407, 16408, 2]
+// Dependencies: [19, 17, 16349, 21, 5306, 575, 8474, 16405, 16406, 16402, 504, 12539, 1113, 2565, 7951, 6327, 5919, 7825, 16407, 16408, 2]
 // Exports: default
 
 // Module 16404 (GameOrganizationInviteActionSheet)
@@ -83,15 +83,15 @@ export default function GameOrganizationInviteActionSheet(guildId) {
   const ActionSheet = tmp6(7951).ActionSheet;
   intl3 = tmp6(1113).intl;
   obj6 = { spacing: nativeDefault.space.PX_16, style: tmp.header, children: items3 };
-  Stack = tmp6(6337).Stack;
+  Stack = tmp6(6327).Stack;
   const obj7 = { spacing: nativeDefault.space.PX_4, children: items2 };
-  const Stack2 = tmp6(6337).Stack;
+  const Stack2 = tmp6(6327).Stack;
   const obj8 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: tmp.centeredText, children: intl4.formatToPlainString(_modDef2565.EnTIIr, { noun: tmp8 }) };
-  const Heading = tmp6(5929).Heading;
+  const Heading = tmp6(5919).Heading;
   intl4 = tmp6(1113).intl;
   items2 = [closure_5(Heading, obj8), ];
   const obj9 = { variant: "body-sm/medium", color: "text-muted", style: tmp.centeredText, children: formatToPlainStringResult };
-  items2[1] = closure_5(guildId(5929).Text, obj9);
+  items2[1] = closure_5(guildId(5919).Text, obj9);
   items3 = [closure_6(Stack2, obj7), ];
   const obj10 = { size: "md", round: true, onChange: search, placeholder: intl5.formatToPlainString(_modDef2565.cRK6SQ, { noun: tmp9 }) };
   const SearchBar = tmp6(7825).SearchBar;

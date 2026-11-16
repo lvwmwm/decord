@@ -1,13 +1,13 @@
 // Module ID: 10608
 // Function ID: 10609
 // Name: useIsSecureFramesVerified
-// Dependencies: [502, 6071, 10609, 10610, 10611, 10646, 504, 10649, 6808, 2]
+// Dependencies: [502, 6061, 10609, 10610, 10611, 10646, 504, 10649, 6798, 2]
 // Exports: useIsCallSecureFramesVerified, useIsStreamSecureFramesVerified, useIsUserSecureFramesVerified
 
 // Module 10608 (useIsSecureFramesVerified)
-import StreamKeyUtils from "StreamKeyUtils" /* 6808 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6798 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6071 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
 import SecureFramesVerifiedStore from "SecureFramesVerifiedStore" /* 10609 */;
 import TransientKeyStore from "TransientKeyStore" /* 10610 */;
 import VerifiedKeyStore from "VerifiedKeyStore" /* 10611 */;

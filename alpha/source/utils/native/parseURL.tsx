@@ -1,10 +1,10 @@
-// Module ID: 6048
-// Function ID: 6049
+// Module ID: 6038
+// Function ID: 6039
 // Name: parseURL
-// Dependencies: [32, 1072, 1074, 5957, 6049, 6050, 1490, 2070, 1383, 6051, 6055, 15948, 12440, 6755, 16283, 1381, 5956, 11, 7402, 9713, 1627, 1380, 10637, 1256, 1254, 16284, 2]
+// Dependencies: [32, 1072, 1074, 5947, 6039, 6040, 1490, 2070, 1383, 6041, 6045, 15948, 12440, 6745, 16283, 1381, 5946, 11, 7402, 9713, 1627, 1380, 10637, 1256, 1254, 16284, 2]
 // Exports: default
 
-// Module 6048 (parseURL)
+// Module 6038 (parseURL)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
@@ -13,12 +13,12 @@ import urlParseDefault from "urlParse" /* 1383 */;
 import _modDef1490 from "module_1490" /* 1490 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1627 */;
 import _modDef2070 from "module_2070" /* 2070 */;
-import LinkUtils from "LinkUtils" /* 5956 */;
-import ConversationConstants from "ConversationConstants" /* 5957 */;
-import MobileNativeUpdateConstants from "MobileNativeUpdateConstants" /* 6049 */;
-import findCodedLinks from "findCodedLinks" /* 6051 */;
-import CodedLink from "CodedLink" /* 6055 */;
-import GiftCodeUtils from "GiftCodeUtils" /* 6755 */;
+import LinkUtils from "LinkUtils" /* 5946 */;
+import ConversationConstants from "ConversationConstants" /* 5947 */;
+import MobileNativeUpdateConstants from "MobileNativeUpdateConstants" /* 6039 */;
+import findCodedLinks from "findCodedLinks" /* 6041 */;
+import CodedLink from "CodedLink" /* 6045 */;
+import GiftCodeUtils from "GiftCodeUtils" /* 6745 */;
 import Authorize from "Authorize" /* 7402 */;
 import MobileWebRedirectCheckoutUtils from "MobileWebRedirectCheckoutUtils" /* 9713 */;
 import SecureFramesDeeplinkExperiment from "SecureFramesDeeplinkExperiment" /* 10637 */;
@@ -29,7 +29,7 @@ import urlPartToSettingsEnumDefault from "urlPartToSettingsEnum" /* 16284 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import Constants from "Constants" /* 1072 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
-import PaymentConstants from "PaymentConstants" /* 6050 */;
+import PaymentConstants from "PaymentConstants" /* 6040 */;
 import size from "module_2" /* 2 */;
 
 let c9;

@@ -1,7 +1,7 @@
 // Module ID: 11825
 // Function ID: 11826
 // Name: SocialLayerStorefrontWishlistItemCard
-// Dependencies: [19, 2165, 11823, 21, 5306, 575, 504, 9515, 6020, 9463, 2]
+// Dependencies: [19, 2165, 11823, 21, 5306, 575, 504, 9515, 6010, 9463, 2]
 // Exports: default
 
 // Module 11825 (SocialLayerStorefrontWishlistItemCard)
@@ -20,7 +20,7 @@ let metroRequire;
 let obj2;
 let size;
 let tmp4;
-const FastImageDefault = tmp4(6020);
+const FastImageDefault = tmp4(6010);
 ({ jsx: metroRequire, Fragment: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { applicationIcon: size, nestedCard: obj2 };

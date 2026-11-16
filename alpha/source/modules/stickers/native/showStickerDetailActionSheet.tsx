@@ -1,12 +1,12 @@
 // Module ID: 11374
 // Function ID: 11375
 // Name: showStickerDetailActionSheet
-// Dependencies: [5552, 11375, 2121, 2]
+// Dependencies: [5542, 11375, 2121, 2]
 // Exports: hideStickerDetailActionSheet, showStickerDetailActionSheet
 
 // Module 11374 (showStickerDetailActionSheet)
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import size from "module_2" /* 2 */;
 
 const sticker_detail_action_sheet = "sticker_detail_action_sheet";

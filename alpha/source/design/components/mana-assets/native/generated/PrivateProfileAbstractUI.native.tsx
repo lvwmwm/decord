@@ -1,26 +1,26 @@
-// Module ID: 19140
-// Function ID: 19141
+// Module ID: 19142
+// Function ID: 19143
 // Name: PrivateProfileAbstractUI
-// Dependencies: [19, 21, 19141, 19142, 19143, 7755, 6020, 2]
+// Dependencies: [19, 21, 19143, 19144, 19145, 7755, 6010, 2]
 // Exports: PrivateProfileAbstractUI
 
-// Module 19140 (PrivateProfileAbstractUI)
+// Module 19142 (PrivateProfileAbstractUI)
 import Fragment from "Fragment" /* 21 */;
 import react_native from "react-native" /* 7755 */;
-import _modDef19141 from "module_19141" /* 19141 */;
-import _modDef19142 from "module_19142" /* 19142 */;
 import _modDef19143 from "module_19143" /* 19143 */;
+import _modDef19144 from "module_19144" /* 19144 */;
+import _modDef19145 from "module_19145" /* 19145 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef19141 };
+let obj2 = { uri: _modDef19143 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef19142 };
+let obj3 = { uri: _modDef19144 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef19143 };
-({ uri: _modDef19143 });
+obj[3] = { uri: _modDef19145 };
+({ uri: _modDef19145 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/PrivateProfileAbstractUI.native.tsx");
 

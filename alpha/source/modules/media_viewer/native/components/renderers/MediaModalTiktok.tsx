@@ -1,7 +1,7 @@
 // Module ID: 10201
 // Function ID: 10202
 // Name: MediaModalTiktok
-// Dependencies: [32, 19, 21, 10202, 6836, 8629, 8630, 8631, 2]
+// Dependencies: [32, 19, 21, 10202, 6826, 8629, 8630, 8631, 2]
 // Exports: createTiktokVideoControls
 
 // Module 10201 (MediaModalTiktok)

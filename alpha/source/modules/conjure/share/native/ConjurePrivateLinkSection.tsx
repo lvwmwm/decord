@@ -1,7 +1,7 @@
 // Module ID: 13335
 // Function ID: 13336
 // Name: ConjurePrivateLinkSection
-// Dependencies: [5, 32, 19, 17, 21, 5306, 575, 13336, 13337, 13338, 7329, 6015, 1113, 4131, 13308, 5552, 13339, 2121, 6270, 6274, 7943, 6014, 10230, 7746, 7443, 7455, 6042, 13324, 6029, 12289, 5929, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5306, 575, 13336, 13337, 13338, 7329, 6005, 1113, 4131, 13308, 5542, 13339, 2121, 6260, 6264, 7943, 6004, 10230, 7746, 7443, 7455, 6032, 13324, 6019, 12289, 5919, 2]
 // Exports: default
 
 // Module 13335 (ConjurePrivateLinkSection)
@@ -10,10 +10,10 @@ import nativeDefault from "native" /* 575 */;
 import intl9 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
 import _modDef4131 from "module_4131" /* 4131 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import ToastUtils from "ToastUtils" /* 6014 */;
-import useAlertStore from "useAlertStore" /* 6270 */;
-import AlertModal2 from "AlertModal" /* 6274 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import ToastUtils from "ToastUtils" /* 6004 */;
+import useAlertStore from "useAlertStore" /* 6260 */;
+import AlertModal2 from "AlertModal" /* 6264 */;
 import ClipboardUtils from "ClipboardUtils" /* 7943 */;
 import showShareActionSheet from "showShareActionSheet" /* 10230 */;
 import conjureShareLinkMaxAges from "conjureShareLinkMaxAges" /* 13336 */;
@@ -314,7 +314,7 @@ export default function ConjurePrivateLinkSection(project) {
   intl2 = project(1113).intl;
   let obj2 = { icon: callback1(TableRowIcon, obj3), label: intl3.string(value(4131).eMlOXz), trailing: callback1(TrailingText, obj4), arrow: true, disabled: tmp9, onPress: callback2 };
   const TableRow = project(7443).TableRow;
-  obj3 = { IconComponent: project(6042).ClockIcon };
+  obj3 = { IconComponent: project(6032).ClockIcon };
   TableRowIcon = project(7455).TableRowIcon;
   intl3 = project(1113).intl;
   obj4 = { text: obj5.conjureShareLinkMaxAgeLabel(value) };
@@ -332,7 +332,7 @@ export default function ConjurePrivateLinkSection(project) {
     const obj8 = { children: items7 };
     const obj9 = { icon: callback1(TableRowIcon3, obj10), label: intl5.string(tmp2(1113).t.WqhZss), subLabel: first1, subLabelLineClamp: 1, onPress: callback4 };
     const TableRow3 = tmp2(7443).TableRow;
-    obj10 = { IconComponent: tmp2(6029).LinkIcon };
+    obj10 = { IconComponent: tmp2(6019).LinkIcon };
     TableRowIcon3 = tmp2(7455).TableRowIcon;
     intl5 = tmp2(1113).intl;
     items7 = [tmp21(TableRow3, obj9), ];
@@ -360,7 +360,7 @@ export default function ConjurePrivateLinkSection(project) {
   if (first2) {
     const obj15 = { style: tmp.failed, children: callback1(Text, obj16) };
     obj16 = { variant: "body-sm/normal", color: "text-feedback-critical", children: intl8.string(value(4131).KIrnzC) };
-    Text = tmp2(5929).Text;
+    Text = tmp2(5919).Text;
     intl8 = tmp2(1113).intl;
     tmp21Result2 = tmp21(tmp19, obj15);
   }

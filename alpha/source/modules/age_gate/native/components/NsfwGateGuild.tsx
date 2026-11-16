@@ -1,7 +1,7 @@
 // Module ID: 15939
 // Function ID: 15940
 // Name: NsfwGateGuild
-// Dependencies: [19, 17, 5218, 1388, 10807, 1072, 21, 5306, 575, 1113, 2188, 1256, 10808, 7714, 6020, 15940, 5929, 5936, 2]
+// Dependencies: [19, 17, 5218, 1388, 10807, 1072, 21, 5306, 575, 1113, 2188, 1256, 10808, 7714, 6010, 15940, 5919, 5926, 2]
 // Exports: default
 
 // Module 15939 (NsfwGateGuild)
@@ -85,16 +85,16 @@ export default function NsfwGateGuild(guildId) {
   const obj3 = { style: tmp.container, children: items1 };
   items1 = [closure_10(currentUser(7714), {}), , , , , ];
   const obj4 = { source: currentUser(15940), style: tmp.image };
-  const tmp7 = currentUser(6020);
+  const tmp7 = currentUser(6010);
   items1[1] = closure_10(tmp7, obj4);
   const obj5 = { style: tmp.header, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: stringResult };
-  items1[2] = closure_10(guildId(5929).Heading, obj5);
+  items1[2] = closure_10(guildId(5919).Heading, obj5);
   const obj6 = { style: tmp.description, variant: "body-md/normal", color: "text-default", children: stringResult1 };
-  items1[3] = closure_10(guildId(5929).Text, obj6);
+  items1[3] = closure_10(guildId(5919).Text, obj6);
   const obj7 = { style: tmp.description, variant: "body-md/normal", color: "text-default", children: formatResult };
-  items1[4] = closure_10(guildId(5929).Text, obj7);
+  items1[4] = closure_10(guildId(5919).Text, obj7);
   const obj8 = { onPress: onClose, size: "md", text: intl4.string(guildId(1113).t.gRqiWV) };
-  const Button = guildId(5936).Button;
+  const Button = guildId(5926).Button;
   intl4 = guildId(1113).intl;
   items1[5] = closure_10(Button, obj8);
   return closure_11(View, obj3);

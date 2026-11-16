@@ -1,10 +1,10 @@
-// Module ID: 6962
-// Function ID: 6963
+// Module ID: 6952
+// Function ID: 6953
 // Name: AutocompleteUtils
-// Dependencies: [32, 6963, 6969, 6369, 7009, 7010, 7014, 5240, 5159, 5213, 1407, 5155, 7069, 5236, 5218, 5212, 5177, 6372, 5238, 6068, 5248, 5209, 5349, 1388, 7070, 1072, 7071, 5162, 3, 7072, 5169, 5958, 7073, 2153, 5372, 7074, 6793, 12, 2161, 1255, 7075, 5243, 5954, 1113, 11, 7076, 5131, 7079, 7223, 7224, 5136, 7225, 7226, 15994, 15995, 2]
+// Dependencies: [32, 6953, 6969, 6359, 7009, 7010, 7014, 5240, 5159, 5213, 1407, 5155, 7069, 5236, 5218, 5212, 5177, 6362, 5238, 6058, 5248, 5209, 5339, 1388, 7070, 1072, 7071, 5162, 3, 7072, 5169, 5948, 7073, 2153, 5362, 7074, 6783, 12, 2161, 1255, 7075, 5243, 5944, 1113, 11, 7076, 5131, 7079, 7223, 7224, 5136, 7225, 7226, 15994, 15995, 2]
 // Exports: getBoosterMap, getGameProfileMatchTier
 
-// Module 6962 (AutocompleteUtils)
+// Module 6952 (AutocompleteUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
@@ -15,10 +15,10 @@ import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /*
 import ChannelConstants from "ChannelConstants" /* 5162 */;
 import GuildRoleRecord from "GuildRoleRecord" /* 5213 */;
 import PermissionUtilsAll from "PermissionUtils" /* 5243 */;
-import UserUtilsDefault from "UserUtils" /* 5372 */;
-import useChannelName from "useChannelName" /* 5954 */;
-import RegexUtilsDefault from "RegexUtils" /* 5958 */;
-import StickersTypes from "StickersTypes" /* 6793 */;
+import UserUtilsDefault from "UserUtils" /* 5362 */;
+import useChannelName from "useChannelName" /* 5944 */;
+import RegexUtilsDefault from "RegexUtils" /* 5948 */;
+import StickersTypes from "StickersTypes" /* 6783 */;
 import autocompleter_AutocompleterConstants from "autocompleter/AutocompleterConstants" /* 7071 */;
 import utils_AutocompleteUtils from "utils/AutocompleteUtils" /* 7072 */;
 import fuzzysearchDefault from "fuzzysearch" /* 7073 */;
@@ -29,9 +29,9 @@ import useGuildOnboardingAvailable from "useGuildOnboardingAvailable" /* 7223 */
 import compareChannelsByScoreAndPositionDefault from "compareChannelsByScoreAndPosition" /* 7224 */;
 import isSoundValidDefault from "isSoundValid" /* 15994 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import InAppNavigationRecord from "InAppNavigationRecord" /* 6963 */;
+import InAppNavigationRecord from "InAppNavigationRecord" /* 6953 */;
 import EmojiStore from "EmojiStore" /* 6969 */;
-import SoundboardStore from "SoundboardStore" /* 6369 */;
+import SoundboardStore from "SoundboardStore" /* 6359 */;
 import StickersPersistedStore from "StickersPersistedStore" /* 7009 */;
 import StickersStore from "StickersStore" /* 7010 */;
 import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 7014 */;
@@ -44,12 +44,12 @@ import GuildChannelStore_mod from "GuildChannelStore" /* 5236 */;
 import GuildMemberStore from "GuildMemberStore" /* 5218 */;
 import GuildRoleStore from "GuildRoleStore" /* 5212 */;
 import GuildStore from "GuildStore" /* 5177 */;
-import MessageStore from "MessageStore" /* 6372 */;
+import MessageStore from "MessageStore" /* 6362 */;
 import PermissionStore from "PermissionStore" /* 5238 */;
-import PresenceStore from "PresenceStore" /* 6068 */;
+import PresenceStore from "PresenceStore" /* 6058 */;
 import RelationshipStore from "RelationshipStore" /* 5248 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5349 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
 import UserStore from "UserStore" /* 1388 */;
 import SKUStore from "SKUStore" /* 7070 */;
 import Constants from "Constants" /* 1072 */;
@@ -73,8 +73,8 @@ let closure_42;
 let hasOwnProperty;
 let map1;
 let metroRequire;
-const f93131 = (author) => author.author.id;
-const f93132 = (author) => user.getUser(author.author.id);
+const f93144 = (author) => author.author.id;
+const f93145 = (author) => user.getUser(author.author.id);
 function NOOP() {
   return true;
 }
@@ -740,8 +740,8 @@ let obj = {
                   const messages = MessageStore.getMessages(id);
                   const tmp16Result = tmp16(messages.toArray());
                   const reversed = tmp16Result.reverse();
-                  const uniqByResult = reversed.uniqBy(f93131);
-                  const mapped1 = uniqByResult.map(f93132);
+                  const uniqByResult = reversed.uniqBy(f93144);
+                  const mapped1 = uniqByResult.map(f93145);
                   const found = mapped1.filter((isNonUserBot) => {
                     if (null == isNonUserBot) {
                       return false;
@@ -852,8 +852,8 @@ let obj = {
               const messages = MessageStore.getMessages(channelId);
               const tmp14Result = tmp14(messages.toArray());
               const reversed = tmp14Result.reverse();
-              const uniqByResult = reversed.uniqBy(f93131);
-              const mapped = uniqByResult.map(f93132);
+              const uniqByResult = reversed.uniqBy(f93144);
+              const mapped = uniqByResult.map(f93145);
               const found = mapped.filter((isNonUserBot) => {
                 if (null == isNonUserBot) {
                   return false;
@@ -1591,8 +1591,8 @@ let obj = {
         const messages = MessageStore.getMessages(channelId1);
         const tmp6Result = tmp6(messages.toArray());
         const reversed = tmp6Result.reverse();
-        const uniqByResult = reversed.uniqBy(f93131);
-        const mapped = uniqByResult.map(f93132);
+        const uniqByResult = reversed.uniqBy(f93144);
+        const mapped = uniqByResult.map(f93145);
         const found = mapped.filter((isNonUserBot) => {
           if (null == isNonUserBot) {
             return false;
@@ -2053,7 +2053,7 @@ let obj = {
         return hasItem;
       },
       type,
-      allowEmptyQueries: null
+      allowEmptyQueries: "(function pnpm_useGestureHandlerTs2(event){let[gestureSource,source,state,onChange]=this.__closure;if(gestureSource.value!==source){return;}state.value=event.state;onChange(source,event);})"
     };
     queryChannelsResult = this.queryChannels(obj2);
     return obj;

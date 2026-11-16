@@ -1,21 +1,21 @@
-// Module ID: 20126
-// Function ID: 20127
+// Module ID: 20128
+// Function ID: 20129
 // Name: MediaPlaybackPip
-// Dependencies: [32, 19, 17, 5155, 6372, 5248, 1388, 1072, 19909, 21, 5306, 575, 5902, 504, 5954, 8645, 5929, 20127, 5893, 8660, 7262, 1655, 5548, 1113, 7997, 7497, 10866, 1256, 17019, 5223, 20124, 12318, 7606, 20128, 2]
+// Dependencies: [32, 19, 17, 5155, 6362, 5248, 1388, 1072, 19911, 21, 5306, 575, 5892, 504, 5944, 8645, 5919, 20129, 5883, 8660, 7262, 1655, 5538, 1113, 7997, 7497, 10866, 1256, 17019, 5223, 20126, 12318, 7606, 20130, 2]
 // Exports: default
 
-// Module 20126 (MediaPlaybackPip)
+// Module 20128 (MediaPlaybackPip)
 import nativeDefault from "native" /* 575 */;
 import _modDef1655 from "module_1655" /* 1655 */;
-import useChannelName from "useChannelName" /* 5954 */;
+import useChannelName from "useChannelName" /* 5944 */;
 import MessageActionCreatorsDefault from "MessageActionCreators" /* 8660 */;
 import MediaPlayerManagerDefault from "MediaPlayerManager" /* 17019 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19909 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19911 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
-import MessageStore from "MessageStore" /* 6372 */;
+import MessageStore from "MessageStore" /* 6362 */;
 import RelationshipStore from "RelationshipStore" /* 5248 */;
 import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
@@ -56,7 +56,7 @@ function MediaInfo(message) {
   react = undefined;
   ({ isVoiceMessage, isControlVisible } = message);
   const tmp = closure_17();
-  let obj = message(5902);
+  let obj = message(5892);
   const token = obj.useToken(first(575).colors.BACKGROUND_SURFACE_HIGH);
   const items = [ChannelStore, UserStore, RelationshipStore];
   const items1 = [message];
@@ -110,7 +110,7 @@ function MediaInfo(message) {
                 },
           children: str2
         };
-        const tmp14 = closure_15(message(5929).Text, obj3);
+        const tmp14 = closure_15(message(5919).Text, obj3);
         const obj4 = {
           accessibilityElementsHidden: isControlVisible,
           style: tmp.infoContent,
@@ -124,17 +124,17 @@ function MediaInfo(message) {
         if (memo) {
           const obj6 = { style: { flex: 1 }, children: items3 };
           const obj7 = { spacing: 20, speed: 0.2, children: tmp14 };
-          items3 = [closure_15(message(20127).Marquee, obj7), ];
+          items3 = [closure_15(message(20129).Marquee, obj7), ];
           const obj8 = { start: { x: 0, y: 0 }, end: { x: 1, y: 0 }, locations: [0, 0.1, 0.2, 0.8, 0.9, 1], colors: items4, style: tmp.infoContainerGradient };
           items4 = [token, `${tmp5}CC`, `${tmp5}00`, `${tmp5}00`, `${tmp5}CC`, token];
-          items3[1] = closure_15(first(5893), obj8);
+          items3[1] = closure_15(first(5883), obj8);
           tmp16Result = tmp16(tmp15, obj6);
         }
         items5 = [tmp16Result, ];
         let tmp13Result = null != stateFromStores;
         if (tmp13Result) {
           const obj9 = { variant: "body-xs/medium", color: "text-subtle", lineClamp: 1, children: stateFromStores };
-          tmp13Result = tmp13(tmp2(5929).Text, obj9);
+          tmp13Result = tmp13(tmp2(5919).Text, obj9);
         }
         items5[1] = tmp13Result;
         return closure_15(closure_7, obj4);
@@ -181,7 +181,7 @@ function PiPControls(message) {
   const items1 = [closure_19, , ];
   const useAnimatedStyle = message(1655).useAnimatedStyle;
   message(1655);
-  items1[1] = message(5548).withTiming;
+  items1[1] = message(5538).withTiming;
   items1[2] = visible;
   let c0;
   let c1;

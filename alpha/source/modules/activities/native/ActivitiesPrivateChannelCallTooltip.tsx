@@ -1,7 +1,7 @@
 // Module ID: 15145
 // Function ID: 15146
 // Name: ActivitiesPrivateChannelCallTooltip
-// Dependencies: [19, 17, 5307, 2145, 21, 5306, 504, 1655, 5548, 1187, 1113, 5936, 2]
+// Dependencies: [19, 17, 5307, 2145, 21, 5306, 504, 1655, 5538, 1187, 1113, 5926, 2]
 // Exports: default
 
 // Module 15145 (ActivitiesPrivateChannelCallTooltip)
@@ -21,8 +21,8 @@ let tmp2;
 const intl4 = tmp2(1113);
 const native = tmp2(1187);
 const _mod1655 = tmp2(1655);
-const timing_timing = tmp2(5548);
-const components_Button_Button = tmp2(5936);
+const timing_timing = tmp2(5538);
+const components_Button_Button = tmp2(5926);
 let View = react_native.View;
 const helpdeskUrl = Constants.EMBEDDED_ACTIVITIES_BLOG_POST_URL;
 const jsx = Fragment.jsx;

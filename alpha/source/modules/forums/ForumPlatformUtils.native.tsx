@@ -1,9 +1,9 @@
-// Module ID: 6913
-// Function ID: 6914
+// Module ID: 6903
+// Function ID: 6904
 // Name: ForumPlatformUtils
 // Dependencies: [1113, 2]
 
-// Module 6913 (ForumPlatformUtils)
+// Module 6903 (ForumPlatformUtils)
 import intl2 from "intl" /* 1113 */;
 import size from "module_2" /* 2 */;
 

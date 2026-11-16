@@ -1,7 +1,7 @@
 // Module ID: 13722
 // Function ID: 13723
 // Name: ConjurePlanExperiences
-// Dependencies: [19, 17, 21, 7438, 13723, 10898, 12682, 11224, 5306, 575, 5929, 8101, 13708, 1113, 4131, 13725, 13726, 13716, 2]
+// Dependencies: [19, 17, 21, 7438, 13723, 10898, 12682, 11224, 5306, 575, 5919, 8101, 13708, 1113, 4131, 13725, 13726, 13716, 2]
 // Exports: default
 
 // Module 13722 (ConjurePlanExperiences)
@@ -9,7 +9,7 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import _modDef4131 from "module_4131" /* 4131 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import GameControllerIcon from "GameControllerIcon" /* 7438 */;
 import AppsIcon2 from "AppsIcon" /* 8101 */;
 import UserCircleIcon from "UserCircleIcon" /* 10898 */;
@@ -261,7 +261,7 @@ function ComponentSection(arg0) {
   const obj4 = { style: tmp.iconBox, children: hasOwnProperty(AppsIcon, obj5) };
   obj5 = { size: "xs", color: nativeDefault.colors.ICON_STRONG };
   items = [hasOwnProperty(View, obj4), ];
-  const Text = tmp2(5929).Text;
+  const Text = tmp2(5919).Text;
   const intl = tmp2(1113).intl;
   const string = intl.string;
   if (result) {
@@ -281,7 +281,7 @@ function ComponentSection(arg0) {
   if ("automod" === experience.kind) {
     if (1 === bullets.length) {
       const obj8 = { variant: "body-md/normal", color: "text-default", children: hasOwnProperty(ConjurePlanCommandText.ConjurePlanCommandText, obj9) };
-      const Text2 = tmp2(5929).Text;
+      const Text2 = tmp2(5919).Text;
       obj9 = { text: bullets[0], commandNames, size: "body-md" };
       tmp8Result2 = tmp8(Text2, obj8);
     }

@@ -1,16 +1,16 @@
 // Module ID: 8658
 // Function ID: 8659
 // Name: ComponentStateContext
-// Dependencies: [32, 19, 8659, 5239, 5155, 5218, 6937, 1388, 12372, 21, 2119, 6384, 6382, 6381, 504, 9204, 7287, 15668, 11403, 572, 5899, 6376, 2]
+// Dependencies: [32, 19, 8659, 5239, 5155, 5218, 6927, 1388, 12372, 21, 2119, 6374, 6372, 6371, 504, 9204, 7287, 15668, 11403, 572, 5889, 6366, 2]
 // Exports: ComponentStateContextProvider, useComponentContainerId, useComponentError, useComponentState, useComponentStateContext
 
 // Module 8658 (ComponentStateContext)
 import Fragment from "Fragment" /* 21 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Server from "Server" /* 2119 */;
-import useMountEffectDefault from "useMountEffect" /* 5899 */;
-import InteractionTypes from "InteractionTypes" /* 6381 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 6384 */;
+import useMountEffectDefault from "useMountEffect" /* 5889 */;
+import InteractionTypes from "InteractionTypes" /* 6371 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 6374 */;
 import InteractionUtils from "InteractionUtils" /* 11403 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -18,7 +18,7 @@ import InteractionStore from "InteractionStore" /* 8659 */;
 import LurkingStore from "LurkingStore" /* 5239 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import GuildMemberStore from "GuildMemberStore" /* 5218 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 6937 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 6927 */;
 import UserStore from "UserStore" /* 1388 */;
 import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 12372 */;
 import size from "module_2" /* 2 */;
@@ -55,23 +55,23 @@ function getActionComponentState(interaction, id, shouldDisableInteractiveCompon
   }
   let DISABLED = InteractionComponentTypes.ActionComponentState.NORMAL;
   let DISABLED2 = DISABLED;
-  const tmp3 = null != interaction && interaction.state !== tmp(6382).InteractionState.FAILED;
+  const tmp3 = null != interaction && interaction.state !== tmp(6372).InteractionState.FAILED;
   if (tmp3) {
     if (interaction.data.interactionType === InteractionTypes.InteractionTypes.MESSAGE_COMPONENT) {
       if (interaction.data.componentId === id.id) {
-        DISABLED = tmp(6384).ActionComponentState.LOADING;
+        DISABLED = tmp(6374).ActionComponentState.LOADING;
       }
       DISABLED2 = DISABLED;
     }
     if (isInteractionComponent(id)) {
-      DISABLED = tmp(6384).ActionComponentState.DISABLED;
+      DISABLED = tmp(6374).ActionComponentState.DISABLED;
     }
   }
   if (flag) {
     flag = isInteractionComponent(id);
   }
   if (flag) {
-    DISABLED2 = tmp(6384).ActionComponentState.DISABLED;
+    DISABLED2 = tmp(6374).ActionComponentState.DISABLED;
   }
   return DISABLED2;
 }
@@ -365,7 +365,7 @@ function useComponentStateForModal(customId, id, arg2) {
   if (stateFromStores == null) {
     stateFromStores = null;
   }
-  const obj3 = { state: stateFromStores, executeStateUpdate: callback1, isDisabled: false, visualState: tmp(6384).ActionComponentState.NORMAL, error: tmp8 };
+  const obj3 = { state: stateFromStores, executeStateUpdate: callback1, isDisabled: false, visualState: tmp(6374).ActionComponentState.NORMAL, error: tmp8 };
   return obj3;
 }
 const jsx = Fragment.jsx;

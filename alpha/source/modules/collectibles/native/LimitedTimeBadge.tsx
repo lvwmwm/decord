@@ -1,7 +1,7 @@
 // Module ID: 9439
 // Function ID: 9440
 // Name: LimitedTimeBadge
-// Dependencies: [19, 17, 2189, 1192, 21, 5306, 575, 1113, 504, 5313, 9440, 5929, 2]
+// Dependencies: [19, 17, 2189, 1192, 21, 5306, 575, 1113, 504, 5313, 9440, 5919, 2]
 // Exports: default
 
 // Module 9439 (LimitedTimeBadge)
@@ -90,7 +90,7 @@ export default function LimitedTimeBadge(unpublishedAt) {
   items3[1] = stateFromStores ? tmp.backgroundDarkMode : tmp.backgroundLightMode;
   items3[2] = style;
   let str2 = "text-overlay-light";
-  const Text = tmp2(5929).Text;
+  const Text = tmp2(5919).Text;
   if (stateFromStores) {
     str2 = "text-overlay-dark";
   }

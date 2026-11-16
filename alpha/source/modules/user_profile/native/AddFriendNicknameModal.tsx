@@ -1,14 +1,14 @@
 // Module ID: 15690
 // Function ID: 15691
 // Name: AddFriendNicknameModal
-// Dependencies: [5, 32, 19, 17, 5248, 1388, 21, 5306, 575, 10910, 504, 1113, 6848, 8137, 7474, 6340, 5929, 7626, 5372, 2]
+// Dependencies: [5, 32, 19, 17, 5248, 1388, 21, 5306, 575, 10910, 504, 1113, 6838, 8137, 7474, 6330, 5919, 7626, 5362, 2]
 // Exports: default
 
 // Module 15690 (AddFriendNicknameModal)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -214,19 +214,19 @@ export default function AddFriendNicknameModal(arg0) {
     children: items3
   };
   tmp3Result = tmp3(7474);
-  tmp3Result3 = tmp3(6340);
+  tmp3Result3 = tmp3(6330);
   intl3 = tmp5(1113).intl;
   intl4 = tmp5(1113).intl;
   let obj6 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: stringResult };
-  items3 = [closure_9(tmp5(5929).Text, obj6), , ];
+  items3 = [closure_9(tmp5(5919).Text, obj6), , ];
   let obj7 = { style: tmp.description, variant: "body-sm/medium", color: "text-default", children: intl5.string(tmp5(1113).t["NdQ+lP"]) };
-  const Text = tmp5(5929).Text;
+  const Text = tmp5(5919).Text;
   intl5 = tmp5(1113).intl;
   items3[1] = closure_9(Text, obj7);
   let obj8 = { onChange: callback, autoFocus: true, accessibilityLabel: intl6.string(tmp5(1113).t.pqG6GS), placeholder: tmp3Result4.getName(stateFromStores1), defaultValue: stateFromStores, maxLength: 32, clearable: true };
   const TextField = tmp5(7626).TextField;
   intl6 = tmp5(1113).intl;
-  tmp3Result4 = tmp3(5372);
+  tmp3Result4 = tmp3(5362);
   items3[2] = closure_9(TextField, obj8);
   return closure_9(callback1, obj3);
 };

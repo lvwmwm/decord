@@ -1,7 +1,7 @@
 // Module ID: 15182
 // Function ID: 15183
 // Name: ForwardPreview
-// Dependencies: [19, 17, 21, 5306, 575, 5547, 11069, 9159, 11065, 15183, 6398, 12, 15184, 1113, 10735, 10328, 8085, 11048, 6020, 1495, 9503, 5929, 15185, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 5537, 11069, 9159, 11065, 15183, 6388, 12, 15184, 1113, 10735, 10328, 8085, 11048, 6010, 1495, 9503, 5919, 15185, 2]
 // Exports: ForwardPreview
 
 // Module 15182 (ForwardPreview)
@@ -10,10 +10,10 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import utils_ImageUtilsDefault from "utils/ImageUtils" /* 1495 */;
-import useThemeDefault from "useTheme" /* 5547 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import FastImageDefault from "FastImage" /* 6020 */;
-import checkpoint_CheckpointMessageComponentUtils from "checkpoint/CheckpointMessageComponentUtils" /* 6398 */;
+import useThemeDefault from "useTheme" /* 5537 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import checkpoint_CheckpointMessageComponentUtils from "checkpoint/CheckpointMessageComponentUtils" /* 6388 */;
 import ClipView from "ClipView" /* 9503 */;
 import CirclePlayIcon from "CirclePlayIcon" /* 10328 */;
 import ChatItemDefault from "ChatItem" /* 11065 */;
@@ -252,7 +252,7 @@ export function ForwardPreview(message) {
   const obj22 = { style: tmp.contentWrapper, children: items6 };
   if (tmp36Result) {
     const obj23 = { variant: "body-md/medium", children: tmp2Result2.getCheckpointLabel(checkpointDataFromMessage) };
-    const Text = tmp2(5929).Text;
+    const Text = tmp2(5919).Text;
     tmp2Result2 = checkpoint_CheckpointMessageComponentUtils;
     tmp36Result = tmp36(Text, obj23);
   }
@@ -279,7 +279,7 @@ export function ForwardPreview(message) {
     let tmp36Result7 = null != tmp8;
     if (tmp36Result7) {
       let str3 = "body-md/medium";
-      const Text2 = tmp2(5929).Text;
+      const Text2 = tmp2(5919).Text;
       if (hasContent) {
         str3 = "body-sm/medium";
       }

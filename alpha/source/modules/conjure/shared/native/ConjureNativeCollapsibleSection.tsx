@@ -1,13 +1,13 @@
 // Module ID: 13705
 // Function ID: 13706
 // Name: ConjureNativeCollapsibleSection
-// Dependencies: [19, 17, 21, 5306, 575, 5929, 10560, 7963, 7997, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 5919, 10560, 7963, 7997, 2]
 // Exports: ConjureNativeCollapsibleMeta, default
 
 // Module 13705 (ConjureNativeCollapsibleSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
@@ -72,7 +72,7 @@ export default function ConjureNativeCollapsibleSection(showHeader) {
   if (flag) {
     const obj2 = { style: tmp.header, children: items };
     const obj3 = { variant: "body-sm/medium", color: "text-subtle", children: title };
-    items = [React3(tmp4(5929).Text, obj3), ];
+    items = [React3(tmp4(5919).Text, obj3), ];
     const obj4 = { style: tmp.headerTrailing, children: items1 };
     items1 = [meta, ];
     let tmp9Result = null;

@@ -1,7 +1,7 @@
 // Module ID: 8258
 // Function ID: 8259
 // Name: AgeVerificationSpotIllustration
-// Dependencies: [19, 21, 8259, 8260, 8261, 7755, 6020, 2]
+// Dependencies: [19, 21, 8259, 8260, 8261, 7755, 6010, 2]
 // Exports: AgeVerificationSpotIllustration
 
 // Module 8258 (AgeVerificationSpotIllustration)

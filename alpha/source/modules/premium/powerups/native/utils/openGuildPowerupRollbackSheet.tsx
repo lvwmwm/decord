@@ -1,12 +1,12 @@
 // Module ID: 10711
 // Function ID: 10712
 // Name: openGuildPowerupRollbackSheet
-// Dependencies: [5552, 10712, 2121, 2]
+// Dependencies: [5542, 10712, 2121, 2]
 // Exports: default
 
 // Module 10711 (openGuildPowerupRollbackSheet)
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import size from "module_2" /* 2 */;
 
 const GUILD_POWERUP_ROLLBACK_SHEET_KEY = "GUILD_POWERUP_ROLLBACK_SHEET_KEY";

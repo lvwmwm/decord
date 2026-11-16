@@ -1,7 +1,7 @@
 // Module ID: 7984
 // Function ID: 7985
 // Name: GuildEventCardComponents
-// Dependencies: [5, 32, 19, 17, 502, 5155, 5218, 5177, 5238, 1388, 7029, 5161, 1072, 1083, 21, 5306, 575, 7985, 7987, 7988, 1113, 7989, 7943, 6014, 12290, 6030, 504, 8030, 7421, 7738, 10996, 15927, 7972, 6917, 7231, 6922, 15928, 6269, 7970, 6340, 6900, 1255, 1496, 1414, 15926, 6020, 7968, 1187, 7436, 5547, 7979, 7980, 15564, 7428, 5929, 8457, 8422, 5954, 7975, 8417, 8418, 7720, 2]
+// Dependencies: [5, 32, 19, 17, 502, 5155, 5218, 5177, 5238, 1388, 7029, 5161, 1072, 1083, 21, 5306, 575, 7985, 7987, 7988, 1113, 7989, 7943, 6004, 12290, 6020, 504, 8030, 7421, 7738, 10996, 15927, 7972, 6907, 7231, 6912, 15928, 6259, 7970, 6330, 6890, 1255, 1496, 1414, 15926, 6010, 7968, 1187, 7436, 5537, 7979, 7980, 15564, 7428, 5919, 8457, 8422, 5944, 7975, 8417, 8418, 7720, 2]
 // Exports: GuildEventCardGuildInfo, GuildEventCardHeader, GuildEventCardImageHeader, GuildEventCardMetaInfo, GuildEventCardSimpleGuildInfo, GuildEventIndicateInterestAction, GuildEventModeratorAction, GuildEventShareAction, GuildEventSimpleLocation, useEventRsvpState
 
 // Module 7984 (GuildEventCardComponents)
@@ -11,12 +11,12 @@ import native from "native" /* 1187 */;
 import AvatarUtils from "AvatarUtils" /* 1414 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 5161 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import ToastUtils from "ToastUtils" /* 6014 */;
-import FastImageDefault from "FastImage" /* 6020 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6269 */;
-import AlertDefault from "Alert" /* 6340 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6900 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import ToastUtils from "ToastUtils" /* 6004 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6259 */;
+import AlertDefault from "Alert" /* 6330 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6890 */;
 import GroupIcon from "GroupIcon" /* 7436 */;
 import GuildIconDefault from "GuildIcon" /* 7720 */;
 import ClipboardUtils from "ClipboardUtils" /* 7943 */;
@@ -575,7 +575,7 @@ export function GuildEventShareAction(event) {
         obj2.presentLinkCopied();
       }
     },
-    icon: tmp(tmp3 ? 12290 : 6030),
+    icon: tmp(tmp3 ? 12290 : 6020),
     variant: "secondary"
   };
   const IconButton = event(7988).IconButton;
@@ -907,7 +907,7 @@ export function GuildEventSimpleLocation(event) {
     }
     return isMember(guild_id, id);
   }, items3);
-  let tmp7 = stateFromStores(5954)(stateFromStores);
+  let tmp7 = stateFromStores(5944)(stateFromStores);
   const obj3 = channel_id(7975);
   const locationFromEvent = obj3.getLocationFromEvent(event);
   const tmp6 = stateFromStores;
@@ -928,7 +928,7 @@ export function GuildEventSimpleLocation(event) {
   }
   items4 = [tmp12, ];
   const obj6 = { style: tmp.channelText, accessibilityLabel: combined, variant: "body-sm/medium", color: "text-default", children: tmp7 };
-  const Text = tmp2(5929).Text;
+  const Text = tmp2(5919).Text;
   const tmp14 = closure_21;
   if (null != stateFromStores) {
     const obj7 = { channel: stateFromStores };
@@ -971,7 +971,7 @@ export function GuildEventCardSimpleGuildInfo(arg0) {
     const obj3 = { guild: stateFromStores, size: guild_id(7720).GuildIconSizes.XSMALL_20, style: tmp.guildIcon };
     const tmp10 = GuildIconDefault;
     items3 = [closure_21(tmp10, obj3), ];
-    const obj4 = { style: tmp.guildInfo, children: closure_21(guild_id(5929).Text, obj5) };
+    const obj4 = { style: tmp.guildInfo, children: closure_21(guild_id(5919).Text, obj5) };
     obj5 = { variant: "body-sm/semibold", style: textStyle, children: stateFromStores.name };
     items3[1] = closure_21(closure_6, obj4);
     tmp5 = closure_22(closure_6, obj2);

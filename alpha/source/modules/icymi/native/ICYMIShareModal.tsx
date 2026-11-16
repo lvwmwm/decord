@@ -1,18 +1,18 @@
-// Module ID: 19334
-// Function ID: 19335
+// Module ID: 19336
+// Function ID: 19337
 // Name: ICYMIShareModal
-// Dependencies: [32, 5, 19, 17, 5155, 1072, 10244, 5311, 21, 5306, 575, 7987, 1113, 19335, 6015, 5913, 15180, 15192, 5936, 6848, 10245, 1255, 8786, 8660, 1630, 1496, 1380, 10270, 10272, 2]
+// Dependencies: [32, 5, 19, 17, 5155, 1072, 10244, 5311, 21, 5306, 575, 7987, 1113, 19337, 6005, 5903, 15180, 15192, 5926, 6838, 10245, 1255, 8786, 8660, 1630, 1496, 1380, 10270, 10272, 2]
 // Exports: GameShareModal, GuildEventShareModal
 
-// Module 19334 (ICYMIShareModal)
+// Module 19336 (ICYMIShareModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import MessageConstants from "MessageConstants" /* 5311 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5913 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 6015 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5903 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
 import ShareEventUtils from "ShareEventUtils" /* 7987 */;
 import UserRowConstants from "UserRowConstants" /* 10244 */;
 import useShareChatInputActions from "useShareChatInputActions" /* 15180 */;
@@ -73,7 +73,7 @@ function GravityShareFooter(arg0) {
     items2 = [unpackModuleId(ShareChatInputDefault, obj4), ];
     const obj5 = { variant: "primary", size: "md", text: stringResult, disabled: 0 === count, onPress: tmp17, loading: isSending };
     tmp17 = undefined;
-    const Button = tmp7(5936).Button;
+    const Button = tmp7(5926).Button;
     const tmp14 = authStore2;
     const tmp15 = View;
     const tmp16 = unpackModuleId;

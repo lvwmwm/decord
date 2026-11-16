@@ -1,7 +1,7 @@
 // Module ID: 15095
 // Function ID: 15096
 // Name: InkQuillSpotIllustration
-// Dependencies: [19, 21, 15096, 15097, 15098, 7755, 6020, 2]
+// Dependencies: [19, 21, 15096, 15097, 15098, 7755, 6010, 2]
 // Exports: InkQuillSpotIllustration
 
 // Module 15095 (InkQuillSpotIllustration)

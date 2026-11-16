@@ -1,29 +1,29 @@
-// Module ID: 19874
-// Function ID: 19875
+// Module ID: 19876
+// Function ID: 19877
 // Name: LaunchPadSearchResults
-// Dependencies: [19, 17, 2189, 7060, 5177, 6959, 21, 5306, 575, 19488, 7231, 504, 5944, 19875, 7428, 19489, 19876, 7720, 19491, 19877, 10247, 19878, 19883, 19884, 19886, 18826, 5929, 1113, 1496, 19490, 7847, 2]
+// Dependencies: [19, 17, 2189, 7060, 5177, 6949, 21, 5306, 575, 19490, 7231, 504, 5934, 19877, 7428, 19491, 19878, 7720, 19493, 19879, 10247, 19880, 19885, 19886, 19888, 18828, 5919, 1113, 1496, 19492, 7847, 2]
 
-// Module 19874 (LaunchPadSearchResults)
+// Module 19876 (LaunchPadSearchResults)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import ReadStateConstants from "ReadStateConstants" /* 6959 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import ReadStateConstants from "ReadStateConstants" /* 6949 */;
 import transitionToGuild from "transitionToGuild" /* 7231 */;
 import GuildIconDefault from "GuildIcon" /* 7720 */;
 import _mod10247 from "module_10247" /* 10247 */;
-import RedesignCategory from "RedesignCategory" /* 18826 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 19488 */;
-import renderChannelWrapperDefault from "renderChannelWrapper" /* 19489 */;
-import getScaledChannelRowHeightDefault from "getScaledChannelRowHeight" /* 19490 */;
-import renderChannelContentDefault from "renderChannelContent" /* 19491 */;
-import renderChannelPressableWrapperDefault from "renderChannelPressableWrapper" /* 19875 */;
-import UnreadBadgeDefault from "UnreadBadge" /* 19876 */;
-import renderChannelBadgeDefault from "renderChannelBadge" /* 19877 */;
-import shared_TextChannelDefault from "shared/TextChannel" /* 19878 */;
-import shared_DMChannelDefault from "shared/DMChannel" /* 19883 */;
-import VoiceOrStageChannelDefault from "VoiceOrStageChannel" /* 19884 */;
-import LaunchPadSearchResultUserDefault from "LaunchPadSearchResultUser" /* 19886 */;
+import RedesignCategory from "RedesignCategory" /* 18828 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 19490 */;
+import renderChannelWrapperDefault from "renderChannelWrapper" /* 19491 */;
+import getScaledChannelRowHeightDefault from "getScaledChannelRowHeight" /* 19492 */;
+import renderChannelContentDefault from "renderChannelContent" /* 19493 */;
+import renderChannelPressableWrapperDefault from "renderChannelPressableWrapper" /* 19877 */;
+import UnreadBadgeDefault from "UnreadBadge" /* 19878 */;
+import renderChannelBadgeDefault from "renderChannelBadge" /* 19879 */;
+import shared_TextChannelDefault from "shared/TextChannel" /* 19880 */;
+import shared_DMChannelDefault from "shared/DMChannel" /* 19885 */;
+import VoiceOrStageChannelDefault from "VoiceOrStageChannel" /* 19886 */;
+import LaunchPadSearchResultUserDefault from "LaunchPadSearchResultUser" /* 19888 */;
 import react_mod from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2189 */;
 import GuildReadStateStore from "GuildReadStateStore" /* 7060 */;
@@ -113,7 +113,7 @@ let closure_14 = react.memo(function Guild(guild) {
     return obj;
   });
   ({ unread, mentionCount, isMentionLowImportance } = stateFromStoresObject);
-  const obj2 = guild(5944);
+  const obj2 = guild(5934);
   const fontScale = obj2.useFontScale();
   const items2 = [LocaleStore];
   const obj3 = guild(504);

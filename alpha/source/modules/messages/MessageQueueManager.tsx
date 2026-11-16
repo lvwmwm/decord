@@ -1,9 +1,9 @@
-// Module ID: 20310
-// Function ID: 20311
+// Module ID: 20313
+// Function ID: 20314
 // Name: MessageQueueManager
 // Dependencies: [7882, 9016, 2]
 
-// Module 20310 (MessageQueueManager)
+// Module 20313 (MessageQueueManager)
 import MessageQueueDefault from "MessageQueue" /* 9016 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
 import size from "module_2" /* 2 */;

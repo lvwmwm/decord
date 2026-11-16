@@ -1,12 +1,12 @@
 // Module ID: 15897
 // Function ID: 15898
 // Name: components_native/QRCode
-// Dependencies: [109, 19, 17, 21, 5306, 575, 5377, 15898, 5906, 6020, 15912, 8611, 2]
+// Dependencies: [109, 19, 17, 21, 5306, 575, 5367, 15898, 5896, 6010, 15912, 8611, 2]
 
 // Module 15897 (components_native/QRCode)
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 5377 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import native from "native" /* 5367 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import QRCodeDefault from "QRCode" /* 15898 */;
 import AssetRegistry from "AssetRegistry" /* 15912 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
@@ -23,7 +23,7 @@ let metroRequire;
 let obj2;
 let tmp10;
 let tmp7;
-const VisualEffectViewDefault = tmp7(5906);
+const VisualEffectViewDefault = tmp7(5896);
 const VisualEffectViewThemedDefault = tmp10(8611);
 let closure_3 = ["style", "text", "blur", "accessibilityLabel"];
 ({ View: hasOwnProperty, StyleSheet: metroRequire } = react_native);

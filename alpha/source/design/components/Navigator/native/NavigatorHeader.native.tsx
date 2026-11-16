@@ -1,7 +1,7 @@
 // Module ID: 7493
 // Function ID: 7494
 // Name: NavigatorHeader
-// Dependencies: [5, 19, 17, 1072, 21, 5306, 575, 5929, 5944, 7494, 7497, 1503, 7499, 1113, 7500, 7549, 1380, 1630, 5892, 2]
+// Dependencies: [5, 19, 17, 1072, 21, 5306, 575, 5919, 5934, 7494, 7497, 1503, 7499, 1113, 7500, 7549, 1380, 1630, 5882, 2]
 // Exports: FauxHeader, HeaderSubmittingIndicator, NavigatorHeader, getHeaderBackButton, getHeaderCloseButton, getHeaderConditionalBackButton, getHeaderNoTitle, getHeaderTextButton, renderBackImage, useNavigatorHeaderSize
 
 // Module 7493 (NavigatorHeader)
@@ -9,9 +9,9 @@ import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import NavigatorConstants from "NavigatorConstants" /* 5892 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import useFontScale from "useFontScale" /* 5944 */;
+import NavigatorConstants from "NavigatorConstants" /* 5882 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import useFontScale from "useFontScale" /* 5934 */;
 import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 7494 */;
 import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 7497 */;
 import _mod7500 from "module_7500" /* 7500 */;
@@ -190,7 +190,7 @@ export function NavigatorHeader(subtitle) {
   }
   if (tmp9Result) {
     const obj4 = { lineClamp: 1, allowFontScaling: false, style: tmp.navigatorHeaderSubtitle, variant: subtitleVariant, color: "text-subtle", children: subtitle };
-    tmp9Result = tmp9(tmp4(5929).Text, obj4);
+    tmp9Result = tmp9(tmp4(5919).Text, obj4);
   }
   items1[1] = tmp9Result;
   items1[2] = tmp3;

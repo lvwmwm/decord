@@ -1,22 +1,22 @@
 // Module ID: 12067
 // Function ID: 12068
 // Name: in_app_reports/ReportUtils
-// Dependencies: [5, 19, 5932, 1072, 6910, 1285, 12066, 6889, 6896, 6915, 572, 12064, 38, 6067, 2]
+// Dependencies: [5, 19, 5922, 1072, 6900, 1285, 12066, 6879, 6886, 6905, 572, 12064, 38, 6057, 2]
 // Exports: areRequiredElementsUnfilled, fetchUrfCapabilities, getDsaExperiment, getModeratorReportEndpointSafely, getReportMenuForModeratorReport, getUnauthenticatedReportMenu, sendUnauthenticatedReportPincode, showInAppReportsFeedbackModal, submitHeadlessReport, submitReport, submitReportSecondLook, submitUnauthenticatedReport, trackCloseReportModalAnalytics, useTrackSettingsUpsellsAction, verifyUnauthenticatedReport
 
 // Module 12067 (in_app_reports/ReportUtils)
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6067 */;
-import QualtricsActionCreatorsDefault from "QualtricsActionCreators" /* 6889 */;
-import Constants2 from "Constants" /* 6910 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 6915 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6057 */;
+import QualtricsActionCreatorsDefault from "QualtricsActionCreators" /* 6879 */;
+import Constants2 from "Constants" /* 6900 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 6905 */;
 import MenuTypes from "MenuTypes" /* 12064 */;
 import ReportMenuType from "ReportMenuType" /* 12066 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import DevSettingsStore from "DevSettingsStore" /* 5932 */;
+import DevSettingsStore from "DevSettingsStore" /* 5922 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -339,7 +339,7 @@ function genSubmitData(version, name, arr, email_token) {
   if (str == null) {
     str = "en";
   }
-  let obj2 = { channel_id: "Array", message_id: "alignItems", stage_instance_id: "to", guild_id: "kind", guild_scheduled_event_id: "r", user_id: "isArray", email_token: "r", application_id: "description", entrypoint: "a", widget_id: "isArray" };
+  let obj2 = { channel_id: "uri", message_id: "analyticsLocations", stage_instance_id: "Object", guild_id: "Icon", guild_scheduled_event_id: "Array", user_id: "isArray", email_token: "apply", application_id: "IconComponent", entrypoint: "Array", widget_id: "isArray" };
   const tmp = require;
   let tmp2 = dependencyMap;
   if (name.name !== MenuTypes.ReportNames.MESSAGE) {
@@ -494,7 +494,7 @@ export function submitReport(language, name, arr) {
       }
       let tmp14 = null;
       if (name.name === tmp4(12064).ModeratorReportNames.MESSAGE) {
-        let obj2 = { channel_id: "channel_id", message_id: "flex", guild_id: "analyticsLocations" };
+        let obj2 = { channel_id: "a", message_id: "isArray", guild_id: "isArray" };
         obj4 = { name: name.name, channel_id, message_id: id };
         ({ channel_id, id } = name.record);
         let merged = Object.assign(obj);

@@ -1,7 +1,7 @@
 // Module ID: 17316
 // Function ID: 17317
 // Name: SecurityKeySpotIllustration
-// Dependencies: [19, 21, 17317, 17318, 17319, 7755, 6020, 2]
+// Dependencies: [19, 21, 17317, 17318, 17319, 7755, 6010, 2]
 // Exports: SecurityKeySpotIllustration
 
 // Module 17316 (SecurityKeySpotIllustration)

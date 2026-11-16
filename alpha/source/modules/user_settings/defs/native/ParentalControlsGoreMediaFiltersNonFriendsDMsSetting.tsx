@@ -1,10 +1,10 @@
-// Module ID: 18596
-// Function ID: 18597
+// Module ID: 18598
+// Function ID: 18599
 // Name: ParentalControlsGoreMediaFiltersNonFriendsDMsSetting
 // Dependencies: [8740, 9202, 17346, 8853, 17350, 17356, 1113, 1196, 12406, 2]
 // Exports: onGoreContentNonFriendsDmOnPress, useGoreContentNonFriendsDmSettingValue
 
-// Module 18596 (ParentalControlsGoreMediaFiltersNonFriendsDMsSetting)
+// Module 18598 (ParentalControlsGoreMediaFiltersNonFriendsDMsSetting)
 import intl3 from "intl" /* 1113 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;
 import useParentalControlSettings from "useParentalControlSettings" /* 17346 */;

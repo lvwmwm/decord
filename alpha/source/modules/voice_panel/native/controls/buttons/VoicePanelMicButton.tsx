@@ -1,26 +1,26 @@
-// Module ID: 20082
-// Function ID: 20083
+// Module ID: 20084
+// Function ID: 20085
 // Name: VoicePanelMicButton
-// Dependencies: [32, 19, 6072, 5211, 502, 5155, 2133, 5238, 1388, 5981, 21, 3, 5306, 504, 13022, 13046, 13061, 11984, 1655, 19978, 5554, 11975, 5598, 1708, 20083, 20084, 1113, 13048, 5929, 10602, 13047, 2]
+// Dependencies: [32, 19, 6062, 5211, 502, 5155, 2133, 5238, 1388, 5971, 21, 3, 5306, 504, 13022, 13046, 13061, 11984, 1655, 19980, 5544, 11975, 5588, 1708, 20085, 20086, 1113, 13048, 5919, 10602, 13047, 2]
 // Exports: MicButton, PTTButton
 
-// Module 20082 (VoicePanelMicButton)
+// Module 20084 (VoicePanelMicButton)
 import LoggerDefault from "Logger" /* 3 */;
 import _mod1708 from "module_1708" /* 1708 */;
-import HapticUtils from "HapticUtils" /* 5554 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5598 */;
+import HapticUtils from "HapticUtils" /* 5544 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5588 */;
 import MediaEngineActionCreators from "MediaEngineActionCreators" /* 11975 */;
 import VoiceActionUtils from "VoiceActionUtils" /* 13046 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GameConsoleStore from "GameConsoleStore" /* 6072 */;
+import GameConsoleStore from "GameConsoleStore" /* 6062 */;
 import ImpersonateStore from "ImpersonateStore" /* 5211 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
 import PermissionStore from "PermissionStore" /* 5238 */;
 import UserStore from "UserStore" /* 1388 */;
-import VoiceStateStore from "VoiceStateStore" /* 5981 */;
+import VoiceStateStore from "VoiceStateStore" /* 5971 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;

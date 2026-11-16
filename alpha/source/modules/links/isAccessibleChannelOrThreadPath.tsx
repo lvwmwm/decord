@@ -1,7 +1,7 @@
 // Module ID: 7264
 // Function ID: 7265
 // Name: isAccessibleChannelOrThreadPath
-// Dependencies: [5, 7239, 5155, 5212, 5177, 1072, 5162, 7260, 7265, 7274, 7244, 7277, 7279, 7079, 7282, 7284, 5542, 7285, 7242, 1255, 10974, 8134, 5955, 2]
+// Dependencies: [5, 7239, 5155, 5212, 5177, 1072, 5162, 7260, 7265, 7274, 7244, 7277, 7279, 7079, 7282, 7284, 5532, 7285, 7242, 1255, 10974, 8134, 5945, 2]
 // Exports: default
 
 // Module 7264 (isAccessibleChannelOrThreadPath)

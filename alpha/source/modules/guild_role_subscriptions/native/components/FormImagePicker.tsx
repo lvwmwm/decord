@@ -1,10 +1,10 @@
-// Module ID: 20729
-// Function ID: 20730
+// Module ID: 20732
+// Function ID: 20733
 // Name: FormImagePicker
-// Dependencies: [5, 19, 17, 21, 5306, 575, 8879, 1449, 8451, 1113, 6020, 13186, 10901, 5929, 5936, 2]
+// Dependencies: [5, 19, 17, 21, 5306, 575, 8879, 1449, 8451, 1113, 6010, 13186, 10901, 5919, 5926, 2]
 // Exports: default
 
-// Module 20729 (FormImagePicker)
+// Module 20732 (FormImagePicker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1449 */;
@@ -26,7 +26,7 @@ let obj4;
 let obj5;
 let size;
 let tmp6;
-const FastImageDefault = tmp6(6020);
+const FastImageDefault = tmp6(6010);
 function pickImage() {
   return obj(...arguments);
 }
@@ -227,7 +227,7 @@ export default function FormImagePicker(imageUploadSize) {
   items = [, ];
   obj = { style: tmp2.imageSelectionRow, children: items1 };
   const obj3 = { style: tmp2.imageDescription, variant: "body-sm/medium", color: "text-default", children: description };
-  items[0] = closure_6(tmp6(5929).Text, obj3);
+  items[0] = closure_6(tmp6(5919).Text, obj3);
   const obj4 = {
     text: stringResult,
     variant: "secondary",
@@ -237,7 +237,7 @@ export default function FormImagePicker(imageUploadSize) {
     size: "md",
     disabled
   };
-  items[1] = closure_6(tmp6(5936).Button, obj4);
+  items[1] = closure_6(tmp6(5926).Button, obj4);
   items1 = [closure_7(View, obj2), ];
   const obj5 = { disabled, imageUploadSize, image, setImage };
   const merged1 = Object.assign(merged);

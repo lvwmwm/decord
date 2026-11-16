@@ -1,7 +1,7 @@
 // Module ID: 15161
 // Function ID: 15162
 // Name: useChannelMoveAction
-// Dependencies: [7875, 5177, 5238, 5248, 5349, 6958, 1388, 15162, 1072, 504, 5180, 15163, 15165, 15164, 5954, 1113, 2]
+// Dependencies: [7875, 5177, 5238, 5248, 5339, 6948, 1388, 15162, 1072, 504, 5180, 15163, 15165, 15164, 5944, 1113, 2]
 // Exports: default
 
 // Module 15161 (useChannelMoveAction)
@@ -11,8 +11,8 @@ import GuildCategoryStore from "GuildCategoryStore" /* 7875 */;
 import GuildStore from "GuildStore" /* 5177 */;
 import PermissionStore from "PermissionStore" /* 5238 */;
 import RelationshipStore from "RelationshipStore" /* 5248 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5349 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6958 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6948 */;
 import UserStore from "UserStore" /* 1388 */;
 import getChannelListRecord from "getChannelListRecord" /* 15162 */;
 import size from "module_2" /* 2 */;

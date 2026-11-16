@@ -1,7 +1,7 @@
 // Module ID: 7887
 // Function ID: 7888
 // Name: GuildOnboardingPrompt
-// Dependencies: [32, 19, 17, 6969, 7707, 5177, 7869, 7866, 1391, 21, 5306, 5892, 575, 1502, 504, 1630, 5902, 671, 7415, 7888, 7732, 5929, 1113, 5936, 7686, 5893, 1092, 7084, 7889, 7890, 7894, 1414, 5552, 7899, 2121, 7428, 6020, 7914, 2]
+// Dependencies: [32, 19, 17, 6969, 7707, 5177, 7869, 7866, 1391, 21, 5306, 5882, 575, 1502, 504, 1630, 5892, 671, 7415, 7888, 7732, 5919, 1113, 5926, 7686, 5883, 1092, 7084, 7889, 7890, 7894, 1414, 5542, 7899, 2121, 7428, 6010, 7914, 2]
 // Exports: DropdownPrompt, MultipleChoicePrompt, RulesPrompt
 
 // Module 7887 (GuildOnboardingPrompt)
@@ -9,9 +9,9 @@ import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import EmojiConstants from "EmojiConstants" /* 1391 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import NavigatorConstants from "NavigatorConstants" /* 5892 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import NavigatorConstants from "NavigatorConstants" /* 5882 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import GuildOnboardingUtils from "GuildOnboardingUtils" /* 7084 */;
 import MemberVerificationActionCreatorsDefault from "MemberVerificationActionCreators" /* 7686 */;
 import TermsFieldListDefault from "TermsFieldList" /* 7732 */;
@@ -72,7 +72,7 @@ function PromptHeader(currentPrompt) {
     const obj5 = { style: tmp.requiredSeparator };
     items1 = [map1(hasOwnProperty, obj5), ];
     const obj6 = { variant: "body-sm/medium", color: "text-brand", children: intl2.string(intl3.t.Ur8Vrt) };
-    const Text2 = tmp6(5929).Text;
+    const Text2 = tmp6(5919).Text;
     intl2 = tmp6(1113).intl;
     items1[1] = map1(Text2, obj6);
     tmp2Result = tmp2(tmp3, obj4);
@@ -266,7 +266,7 @@ function DropdownOption(option) {
   }
   items1 = [closure_13(closure_5, obj3), ];
   const obj7 = { variant: "body-md/semibold", children: option.title };
-  items1[1] = closure_13(tmp2(5929).Text, obj7);
+  items1[1] = closure_13(tmp2(5919).Text, obj7);
   return tmp5(closure_5, obj2);
 }
 let _slicedToArray = _slicedToArray_mod;

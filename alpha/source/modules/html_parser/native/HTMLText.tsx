@@ -1,12 +1,12 @@
 // Module ID: 10379
 // Function ID: 10380
 // Name: html_parser/HTMLText
-// Dependencies: [19, 21, 5306, 5929, 7653, 10380, 10381, 2]
+// Dependencies: [19, 21, 5306, 5919, 7653, 10380, 10381, 2]
 // Exports: HTMLText
 
 // Module 10379 (html_parser/HTMLText)
 import Fragment from "Fragment" /* 21 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import MaskedLinkUtils from "MaskedLinkUtils" /* 7653 */;
 import groupHTMLTextRuns from "groupHTMLTextRuns" /* 10381 */;
 import react_mod from "react" /* 19 */;

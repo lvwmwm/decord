@@ -1,7 +1,7 @@
 // Module ID: 15691
 // Function ID: 15692
 // Name: UserProfileOverflowMenuItems
-// Dependencies: [1072, 12054, 1113, 8137, 5552, 12056, 2121, 1264, 6915, 12055, 15692, 15692, 12063, 1380, 12123, 1256, 7943, 6014, 5372, 7949, 2]
+// Dependencies: [1072, 12054, 1113, 8137, 5542, 12056, 2121, 1264, 6905, 12055, 15692, 15692, 12063, 1380, 12123, 1256, 7943, 6004, 5362, 7949, 2]
 // Exports: getBlockMenuItem, getDeveloperCopyMenuItem, getIgnoreMenuItem, getReportMenuItem
 
 // Module 15691 (UserProfileOverflowMenuItems)
@@ -9,10 +9,10 @@ import intl6 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import UserUtilsDefault from "UserUtils" /* 5372 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import ToastUtils from "ToastUtils" /* 6014 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 6915 */;
+import UserUtilsDefault from "UserUtils" /* 5362 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import ToastUtils from "ToastUtils" /* 6004 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 6905 */;
 import ClipboardUtils from "ClipboardUtils" /* 7943 */;
 import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7949 */;
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 8137 */;

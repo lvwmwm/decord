@@ -1,7 +1,7 @@
 // Module ID: 17547
 // Function ID: 17548
 // Name: BountiesScrollPromptFooter
-// Dependencies: [19, 17, 5307, 5338, 21, 5306, 575, 5548, 5551, 504, 1630, 1655, 5443, 17548, 17549, 9431, 2]
+// Dependencies: [19, 17, 5307, 6954, 21, 5306, 575, 5538, 5541, 504, 1630, 1655, 5433, 17548, 17549, 9431, 2]
 // Exports: default
 
 // Module 17547 (BountiesScrollPromptFooter)
@@ -10,9 +10,9 @@ import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
 import _modDef1655 from "module_1655" /* 1655 */;
-import QuestConstants from "QuestConstants" /* 5338 */;
-import timing_timing from "timing/timing" /* 5548 */;
-import timingPresets from "timingPresets" /* 5551 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import timingPresets from "timingPresets" /* 5541 */;
+import QuestConstants from "QuestConstants" /* 6954 */;
 import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 9431 */;
 import BountiesModalTransitionsRefactorExperiment from "BountiesModalTransitionsRefactorExperiment" /* 17548 */;
 import useVisibilityTransition from "useVisibilityTransition" /* 17549 */;
@@ -75,7 +75,7 @@ function BountiesScrollPromptFooterContent(zIndex) {
   items4 = [tmp.gradient, opacityStyle];
   const View2 = _modDef1655.View;
   str = "play";
-  BountiesScrollGradientRive = zIndex(5443).BountiesScrollGradientRive;
+  BountiesScrollGradientRive = zIndex(5433).BountiesScrollGradientRive;
   const tmp8 = closure_8;
   if (stateFromStores) {
     str = "halt";

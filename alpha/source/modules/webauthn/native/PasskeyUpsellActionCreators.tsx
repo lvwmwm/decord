@@ -1,14 +1,14 @@
-// Module ID: 18315
-// Function ID: 18316
+// Module ID: 18317
+// Function ID: 18318
 // Name: PasskeyUpsellActionCreators
-// Dependencies: [5348, 5139, 5140, 5552, 18316, 2121, 2]
+// Dependencies: [5338, 5139, 5140, 5542, 18318, 2121, 2]
 
-// Module 18315 (PasskeyUpsellActionCreators)
+// Module 18317 (PasskeyUpsellActionCreators)
 import asyncRequire from "asyncRequire" /* 2121 */;
 import dismissible_content from "dismissible_content" /* 5139 */;
 import DismissibleContentUtils from "DismissibleContentUtils" /* 5140 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5348 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5338 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import size from "module_2" /* 2 */;
 
 const PASSKEY_UPSELL_KEY = "PASSKEY_UPSELL_KEY";
@@ -24,7 +24,7 @@ let obj = {
   },
   openPasskeyUpsellPromoSheet() {
     const obj = ActionSheetActionCreatorsDefault;
-    obj.openLazy(asyncRequire(18316, dependencyMap.paths), PASSKEY_UPSELL_KEY);
+    obj.openLazy(asyncRequire(18318, dependencyMap.paths), PASSKEY_UPSELL_KEY);
   },
   closePasskeyUpsellPromoSheet() {
     const obj = ActionSheetActionCreatorsDefault;

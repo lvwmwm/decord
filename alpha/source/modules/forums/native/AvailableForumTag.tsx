@@ -1,7 +1,7 @@
 // Module ID: 11861
 // Function ID: 11862
 // Name: AvailableForumTag
-// Dependencies: [19, 6969, 1391, 21, 5306, 575, 504, 11628, 7997, 7894, 1414, 5929, 2]
+// Dependencies: [19, 6969, 1391, 21, 5306, 575, 504, 11628, 7997, 7894, 1414, 5919, 2]
 // Exports: default
 
 // Module 11861 (AvailableForumTag)
@@ -22,7 +22,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp3;
-const Text_Text = tmp3(5929);
+const Text_Text = tmp3(5919);
 const EMOJI_URL_BASE_SIZE = EmojiConstants.EMOJI_URL_BASE_SIZE;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;

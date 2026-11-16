@@ -1,9 +1,9 @@
-// Module ID: 20206
-// Function ID: 20207
+// Module ID: 20209
+// Function ID: 20210
 // Name: ConjureTurnNotificationManager
-// Dependencies: [8740, 1231, 11014, 5209, 5349, 7316, 7327, 7017, 1072, 5162, 7882, 7396, 5131, 7332, 11033, 7260, 13621, 2]
+// Dependencies: [8740, 1231, 11014, 5209, 5339, 7316, 7327, 7017, 1072, 5162, 7882, 7396, 5131, 7332, 11033, 7260, 13621, 2]
 
-// Module 20206 (ConjureTurnNotificationManager)
+// Module 20209 (ConjureTurnNotificationManager)
 import UserSettings from "UserSettings" /* 5131 */;
 import ChannelConstants from "ChannelConstants" /* 5162 */;
 import ConjureUtils from "ConjureUtils" /* 7260 */;
@@ -15,7 +15,7 @@ import FamilyCenterStore from "FamilyCenterStore" /* 8740 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import NotificationSettingsStore from "NotificationSettingsStore" /* 11014 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5349 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 7316 */;
 import ConjurePagesStore from "ConjurePagesStore" /* 7327 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 7017 */;

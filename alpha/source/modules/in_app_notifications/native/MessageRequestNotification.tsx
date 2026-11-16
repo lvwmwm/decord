@@ -1,7 +1,7 @@
 // Module ID: 11947
 // Function ID: 11948
 // Name: MessageRequestNotification
-// Dependencies: [19, 21, 1113, 11027, 5493, 11087, 1187, 11043, 2]
+// Dependencies: [19, 21, 1113, 11027, 5483, 11087, 1187, 11043, 2]
 // Exports: default
 
 // Module 11947 (MessageRequestNotification)

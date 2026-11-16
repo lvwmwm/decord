@@ -1,20 +1,20 @@
-// Module ID: 19171
-// Function ID: 19172
+// Module ID: 19173
+// Function ID: 19174
 // Name: YouBarFloatingShade
-// Dependencies: [19, 17, 5330, 17701, 19060, 21, 5306, 504, 5902, 575, 17703, 1496, 5495, 18739, 5486, 1090, 5893, 2]
+// Dependencies: [19, 17, 5330, 17701, 19062, 21, 5306, 504, 5892, 575, 17703, 1496, 5485, 18741, 5476, 1090, 5883, 2]
 
-// Module 19171 (YouBarFloatingShade)
+// Module 19173 (YouBarFloatingShade)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
-import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 5486 */;
-import useChatLayoutDefault from "useChatLayout" /* 5495 */;
-import LinearGradientDefault from "LinearGradient" /* 5893 */;
-import useToken2 from "useToken" /* 5902 */;
+import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 5476 */;
+import useChatLayoutDefault from "useChatLayout" /* 5485 */;
+import LinearGradientDefault from "LinearGradient" /* 5883 */;
+import useToken2 from "useToken" /* 5892 */;
 import YouBarConstants from "YouBarConstants" /* 17701 */;
 import useYouBarTotalHeight from "useYouBarTotalHeight" /* 17703 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 19060 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 19062 */;
 import react from "react" /* 19 */;
 import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5330 */;
 import Fragment from "Fragment" /* 21 */;
@@ -45,7 +45,7 @@ const memoResult = react.memo(function YouBarFloatingShade() {
     width = tmp7 + GUILD_LIST_WIDTH;
   }
   const tmp2Result = client_themes_ClientThemesUtils;
-  const gradientValue = tmp2Result.useGradientValue(tmp2(5486).GradientPercentage.END);
+  const gradientValue = tmp2Result.useGradientValue(tmp2(5476).GradientPercentage.END);
   const tmp2Result6 = useToken2;
   const token = tmp2Result6.useToken(tmp6(575).colors.BACKGROUND_BASE_LOWER);
   const items = [ClientThemesBackgroundStore];

@@ -1,7 +1,7 @@
 // Module ID: 8429
 // Function ID: 8430
 // Name: GuildEventsListView
-// Dependencies: [19, 17, 21, 575, 1630, 5570, 8430, 7888, 8431, 11, 2]
+// Dependencies: [19, 17, 21, 575, 1630, 5560, 8430, 7888, 8431, 11, 2]
 // Exports: default
 
 // Module 8429 (GuildEventsListView)

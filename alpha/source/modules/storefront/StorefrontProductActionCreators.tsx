@@ -1,7 +1,7 @@
 // Module ID: 8577
 // Function ID: 8578
 // Name: StorefrontProductActionCreators
-// Dependencies: [5, 2189, 8578, 8504, 1072, 8581, 572, 6766, 6758, 8582, 2]
+// Dependencies: [5, 2189, 8578, 8504, 1072, 8581, 572, 6756, 6748, 8582, 2]
 // Exports: maybeFetchProductsBySkuIds, maybeFetchProductsWithSkus, shouldFetchProductBySku
 
 // Module 8577 (StorefrontProductActionCreators)

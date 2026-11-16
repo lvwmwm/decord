@@ -1,9 +1,9 @@
-// Module ID: 20279
-// Function ID: 20280
+// Module ID: 20282
+// Function ID: 20283
 // Name: CheckboxGroupActionComponent
 // Dependencies: [19, 21, 8658, 7746, 7733, 2]
 
-// Module 20279 (CheckboxGroupActionComponent)
+// Module 20282 (CheckboxGroupActionComponent)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

@@ -1,7 +1,7 @@
 // Module ID: 13442
 // Function ID: 13443
 // Name: EmptyState
-// Dependencies: [19, 17, 21, 5306, 13383, 12579, 1113, 5315, 5929, 2]
+// Dependencies: [19, 17, 21, 5306, 13383, 12579, 1113, 5315, 5919, 2]
 // Exports: default
 
 // Module 13442 (EmptyState)
@@ -41,7 +41,7 @@ export default function EmptyState(showsGenericMessage) {
     const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
     AccessibilityAnnouncer.announce(stringResult, "polite");
   }, items);
-  const Text = flag(5929).Text;
+  const Text = flag(5919).Text;
   let intl = flag(1113).intl;
   let string = intl.string;
   let t = flag(1113).t;

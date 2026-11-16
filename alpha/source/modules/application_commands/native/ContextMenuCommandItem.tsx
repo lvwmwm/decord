@@ -1,16 +1,16 @@
-// Module ID: 19736
-// Function ID: 19737
+// Module ID: 19738
+// Function ID: 19739
 // Name: ContextMenuCommandItem
-// Dependencies: [19, 17, 21, 5306, 575, 7443, 12, 1113, 14640, 6020, 2119, 6031, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 7443, 12, 1113, 14640, 6010, 2119, 6021, 2]
 // Exports: ContextMenuCommandAppItem, ContextMenuCommandEmptyItem, ContextMenuCommandLoadingItem, default
 
-// Module 19736 (ContextMenuCommandItem)
+// Module 19738 (ContextMenuCommandItem)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import TableRow2 from "TableRow" /* 7443 */;
 import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 14640 */;
 import react from "react" /* 19 */;
@@ -67,7 +67,7 @@ export default function ContextMenuCommandItem(item) {
   const TableRow = item(7443).TableRow;
   if (tmp8Result) {
     const obj3 = { style: tmp.commandIcon, source: applicationCommandsIconSource };
-    tmp8Result = tmp8(section(6020), obj3);
+    tmp8Result = tmp8(section(6010), obj3);
   }
   return <TableRow accessibilityLabel={memo} onPress={onPress} label={item.displayName} icon={tmp8Result} trailing={null} start={start} end={end} />;
 };

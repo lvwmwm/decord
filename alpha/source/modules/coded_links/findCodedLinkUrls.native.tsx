@@ -1,11 +1,11 @@
-// Module ID: 6056
-// Function ID: 6057
+// Module ID: 6046
+// Function ID: 6047
 // Name: findCodedLinkUrls
-// Dependencies: [6057, 9218, 6342, 16281, 16282, 2]
+// Dependencies: [6047, 9218, 6332, 16281, 16282, 2]
 // Exports: default
 
-// Module 6056 (findCodedLinkUrls)
-import MarkupTypes from "MarkupTypes" /* 6342 */;
+// Module 6046 (findCodedLinkUrls)
+import MarkupTypes from "MarkupTypes" /* 6332 */;
 import findCodedLinkUrlsUsingRegexDefault from "findCodedLinkUrlsUsingRegex" /* 16282 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ export default function findCodedLinkUrls(content) {
     items = findCodedLinkUrlsUsingRegexDefault(content);
   } else {
     items = [];
-    const _default = tmp(6057).default;
+    const _default = tmp(6047).default;
     const parseToASTResult = _default.parseToAST(content, true, { allowLinks: true });
     const tmpResult = tmp(9218);
     tmpResult.walkAst(parseToASTResult, (type) => {

@@ -1,9 +1,9 @@
-// Module ID: 18421
-// Function ID: 18422
+// Module ID: 18423
+// Function ID: 18424
 // Name: DesignSystemsAlertModalSetting
-// Dependencies: [9202, 1072, 12406, 18422, 2]
+// Dependencies: [9202, 1072, 12406, 18424, 2]
 
-// Module 18421 (DesignSystemsAlertModalSetting)
+// Module 18423 (DesignSystemsAlertModalSetting)
 import Constants from "Constants" /* 1072 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;
 import SettingBuilders from "SettingBuilders" /* 12406 */;

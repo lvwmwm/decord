@@ -1,7 +1,7 @@
 // Module ID: 9263
 // Function ID: 9264
 // Name: RoleSubscriptionPurchaseSystemMessage
-// Dependencies: [5155, 5177, 1072, 6749, 9188, 9226, 9227, 9221, 1417, 1414, 9190, 1113, 9192, 2]
+// Dependencies: [5155, 5177, 1072, 6739, 9188, 9226, 9227, 9221, 1417, 1414, 9190, 1113, 9192, 2]
 // Exports: createRoleSubscriptionPurchaseSystemMessage
 
 // Module 9263 (RoleSubscriptionPurchaseSystemMessage)
@@ -9,7 +9,7 @@ import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import AvatarUtils from "AvatarUtils" /* 1414 */;
 import utils_AvatarUtils from "utils/AvatarUtils" /* 1417 */;
-import useMessageAuthor from "useMessageAuthor" /* 6749 */;
+import useMessageAuthor from "useMessageAuthor" /* 6739 */;
 import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 9188 */;
 import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 9190 */;
 import createCommonMessageDefault from "createCommonMessage" /* 9192 */;

@@ -1,10 +1,10 @@
-// Module ID: 20876
-// Function ID: 20877
+// Module ID: 20879
+// Function ID: 20880
 // Name: PendingRequestList
-// Dependencies: [19, 17, 1388, 21, 5306, 575, 1187, 504, 20874, 20877, 1414, 5929, 1113, 2997, 7428, 2701, 9485, 17456, 17407, 6015, 6337, 20878, 12289, 17412, 2]
+// Dependencies: [19, 17, 1388, 21, 5306, 575, 1187, 504, 20877, 20880, 1414, 5919, 1113, 2997, 7428, 2701, 9485, 17456, 17407, 6005, 6327, 20881, 12289, 17412, 2]
 // Exports: default
 
-// Module 20876 (PendingRequestList)
+// Module 20879 (PendingRequestList)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
@@ -99,11 +99,11 @@ class PendingRequestRow {
     if (avatar == null) {
       avatar = request.parent_avatar;
     }
-    const tmp2Result = request(20874);
+    const tmp2Result = request(20877);
     const pendingRequestResolution = tmp2Result.usePendingRequestResolution(request.parent_id);
     ({ isConnected, isResolved } = pendingRequestResolution);
     const obj2 = { style: tmp.row, children: items1 };
-    const tmp2Result2 = request(20877);
+    const tmp2Result2 = request(20880);
     const result = tmp2Result2.formatPendingRequestSentText(request.created_at);
     const obj3 = { avatarStyle: tmp.avatar, source: obj6.getUserAvatarSource(obj4), disablePlaceholder: true };
     const Avatar = tmp2(1187).Avatar;
@@ -111,17 +111,17 @@ class PendingRequestRow {
     obj6 = AvatarUtilsDefault;
     items1 = [closure_7(Avatar, obj3), , ];
     const obj5 = { style: tmp.details, children: items2 };
-    items2 = [closure_7(request(5929).Text, { variant: "body-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: globalName }), , ];
+    items2 = [closure_7(request(5919).Text, { variant: "body-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: globalName }), , ];
     let tmp13Result = username1 !== globalName;
     if (tmp13Result) {
       const obj7 = { variant: "body-sm/medium", color: "text-default", lineClamp: 1, children: username1 };
-      tmp13Result = tmp13(tmp2(5929).Text, obj7);
+      tmp13Result = tmp13(tmp2(5919).Text, obj7);
     }
     items2[1] = tmp13Result;
-    items2[2] = closure_7(request(5929).Text, { variant: "body-xs/medium", color: "text-muted", children: result });
+    items2[2] = closure_7(request(5919).Text, { variant: "body-xs/medium", color: "text-muted", children: result });
     items1[1] = closure_8(closure_5, obj5);
     if (isResolved) {
-      const Text = tmp2(5929).Text;
+      const Text = tmp2(5919).Text;
       const intl3 = tmp2(1113).intl;
       const string = intl3.string;
       const tmp14Result = _modDef2997;
@@ -317,7 +317,7 @@ export default function PendingRequestList(arg0) {
   const obj6 = { style: tmp.dividerLine };
   items1[0] = c7(c5, obj6);
   const obj7 = { style: tmp.dividerLabel, variant: "body-sm/medium", color: "text-muted", children: intl.string(_modDef2997["/SbB94"]) };
-  const Text = tmp5(5929).Text;
+  const Text = tmp5(5919).Text;
   intl = tmp5(1113).intl;
   items1[1] = c7(Text, obj7);
   const obj8 = { style: tmp.dividerLine };
@@ -331,11 +331,11 @@ export default function PendingRequestList(arg0) {
   items3[0] = c7(c5, obj10);
   const obj11 = { style: tmp.details, children: items4 };
   const obj12 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", children: intl2.string(_modDef2997.z9gkwZ) };
-  const Text2 = tmp5(5929).Text;
+  const Text2 = tmp5(5919).Text;
   intl2 = tmp5(1113).intl;
   items4 = [c7(Text2, obj12), ];
   const obj13 = { variant: "body-xs/medium", color: "text-default", children: intl3.string(_modDef2997["9t4+vC"]) };
-  const Text3 = tmp5(5929).Text;
+  const Text3 = tmp5(5919).Text;
   intl3 = tmp5(1113).intl;
   items4[1] = c7(Text3, obj13);
   items3[1] = tmp7(c5, obj11);

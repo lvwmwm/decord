@@ -1,6 +1,6 @@
 // Module ID: 9132
 // Function ID: 9133
-// Dependencies: [32, 109, 17, 21, 7509, 1503, 9133, 7500, 6276]
+// Dependencies: [32, 109, 17, 21, 7509, 1503, 9133, 7500, 6266]
 // Exports: useHeaderConfigProps
 
 // Module 9132
@@ -152,7 +152,7 @@ export function useHeaderConfigProps(headerLargeTitle) {
   let unstable_headerInsets;
   let unstable_headerLeftItems;
   let unstable_headerRightItems;
-  const f97837 = function(type, index) {
+  const f97850 = function(type, index) {
     let badge;
     let icon;
     let items;
@@ -284,7 +284,7 @@ export function useHeaderConfigProps(headerLargeTitle) {
       }
     }
   };
-  const f97838 = (item) => null != item;
+  const f97851 = (item) => null != item;
   ({ headerBackIcon, headerBackImageSource, headerBackTitle, headerBackVisible, headerShadowVisible, headerLargeTitleEnabled } = headerLargeTitle);
   ({ headerBackButtonDisplayMode, headerBackButtonMenuEnabled, headerBackTitleStyle, headerLargeStyle } = headerLargeTitle);
   if (headerLargeTitleEnabled === undefined) {
@@ -365,7 +365,7 @@ export function useHeaderConfigProps(headerLargeTitle) {
   let tmp19 = null != headerBack;
   let headerLeftResult;
   if (headerLeft != null) {
-    let obj5 = { tintColor: text, canGoBack: tmp19, label: tmp21, href: "Path" };
+    let obj5 = { tintColor: text, canGoBack: tmp19, label: tmp21, href: "Array" };
     tmp21 = headerBackTitle;
     if (headerBackTitle == null) {
       let title1;
@@ -386,10 +386,10 @@ export function useHeaderConfigProps(headerLargeTitle) {
     let obj7 = { tintColor: text, children: headerTitle1 };
     headerTitleResult = headerTitle(obj7);
   }
-  const isSearchBarAvailableForCurrentPlatform = tmp2(6276).isSearchBarAvailableForCurrentPlatform;
+  const isSearchBarAvailableForCurrentPlatform = tmp2(6266).isSearchBarAvailableForCurrentPlatform;
   let isSearchBarAvailableForCurrentPlatform2 = typeof isSearchBarAvailableForCurrentPlatform === "boolean";
   if (typeof isSearchBarAvailableForCurrentPlatform === "boolean") {
-    isSearchBarAvailableForCurrentPlatform2 = tmp2(6276).isSearchBarAvailableForCurrentPlatform;
+    isSearchBarAvailableForCurrentPlatform2 = tmp2(6266).isSearchBarAvailableForCurrentPlatform;
   }
   if (isSearchBarAvailableForCurrentPlatform2) {
     isSearchBarAvailableForCurrentPlatform2 = null != headerSearchBarOptions;
@@ -420,7 +420,7 @@ export function useHeaderConfigProps(headerLargeTitle) {
   }
   if (null != headerLeftResult) {
     let obj10 = null;
-    const ScreenStackHeaderLeftView = tmp2(6276).ScreenStackHeaderLeftView;
+    const ScreenStackHeaderLeftView = tmp2(6266).ScreenStackHeaderLeftView;
     if ("center" !== headerTitleAlign) {
       obj10 = { flex: 1 };
     }
@@ -447,7 +447,7 @@ export function useHeaderConfigProps(headerLargeTitle) {
   const items6 = [tmp34Result, ];
   let tmp39Result = null;
   if ("center" === headerTitleAlign) {
-    const ScreenStackHeaderCenterView = tmp2(6276).ScreenStackHeaderCenterView;
+    const ScreenStackHeaderCenterView = tmp2(6266).ScreenStackHeaderCenterView;
     if (typeof headerTitle !== "function") {
       const obj15 = { tintColor: text, style: obj4, children: headerTitle1 };
       headerTitleResult = tmp39(tmp2(7500).HeaderTitle, obj15);
@@ -459,7 +459,7 @@ export function useHeaderConfigProps(headerLargeTitle) {
   const items7 = [tmp34(tmp35, { children: items6 }), , , ];
   if (undefined !== headerBackIcon) {
     let source;
-    const ScreenStackHeaderBackButtonImage = tmp2(6276).ScreenStackHeaderBackButtonImage;
+    const ScreenStackHeaderBackButtonImage = tmp2(6266).ScreenStackHeaderBackButtonImage;
     const tmp41 = closure_10;
     if (headerBackIcon != null) {
       source = headerBackIcon.source;
@@ -476,20 +476,20 @@ export function useHeaderConfigProps(headerLargeTitle) {
   let tmp43 = null;
   if (null != headerRightResult) {
     const obj18 = { hidesSharedBackground: true, children: headerRightResult };
-    tmp43 = closure_10(tmp2(6276).ScreenStackHeaderRightView, obj18);
+    tmp43 = closure_10(tmp2(6266).ScreenStackHeaderRightView, obj18);
   }
   items7[2] = tmp43;
   let tmp45 = null;
   if (isSearchBarAvailableForCurrentPlatform2) {
     const obj19 = { children: closure_10(SearchBar, obj20) };
-    const ScreenStackHeaderSearchBarView = tmp2(6276).ScreenStackHeaderSearchBarView;
+    const ScreenStackHeaderSearchBarView = tmp2(6266).ScreenStackHeaderSearchBarView;
     obj20 = {};
-    SearchBar = tmp2(6276).SearchBar;
+    SearchBar = tmp2(6266).SearchBar;
     let merged = Object.assign(headerSearchBarOptions);
     tmp45 = closure_10(ScreenStackHeaderSearchBarView, obj19);
   }
   items7[3] = tmp45;
-  const obj21 = { backButtonInCustomView: tmp25, backgroundColor, backTitle: headerBackTitle, backTitleVisible: "minimal" !== headerBackButtonDisplayMode, backButtonDisplayMode: "fileBytes", backTitleFontFamily: tmp11, backTitleFontSize: fontSize, blurEffect: headerBlurEffect, color: text, direction, disableBackButtonMenu: false === headerBackButtonMenuEnabled, hidden: false === headerShown, hideBackButton: false === headerBackVisible, hideShadow: tmp51, largeTitle: headerLargeTitleEnabled, largeTitleBackgroundColor: backgroundColor2, largeTitleColor: color, largeTitleFontFamily: tmp12, largeTitleFontSize: fontSize2, largeTitleFontWeight: fontWeight2, largeTitleHideShadow: false === headerLargeTitleShadowVisible, title: headerTitle1, titleColor: headerTintColor, titleFontFamily: tmp13, titleFontSize: fontSize1, titleFontWeight: String(fontWeight), topInsetEnabled: headerTopInsetEnabled, disableTopInsetApplication: tmp53, disableLeftInsetApplication: tmp55, disableRightInsetApplication: tmp57, disableBottomInsetApplication: tmp59, translucent: true === tmp27, children: tmp34Result2, headerLeftBarButtonItems: 302.235, headerRightBarButtonItems: "man_mountain_biking_tone5", experimental_userInterfaceStyle: "man_mountain_biking_dark_skin_tone" };
+  const obj21 = { backButtonInCustomView: tmp25, backgroundColor, backTitle: headerBackTitle, backTitleVisible: "minimal" !== headerBackButtonDisplayMode, backButtonDisplayMode: "fileBytes", backTitleFontFamily: tmp11, backTitleFontSize: fontSize, blurEffect: headerBlurEffect, color: text, direction, disableBackButtonMenu: false === headerBackButtonMenuEnabled, hidden: false === headerShown, hideBackButton: false === headerBackVisible, hideShadow: tmp51, largeTitle: headerLargeTitleEnabled, largeTitleBackgroundColor: backgroundColor2, largeTitleColor: color, largeTitleFontFamily: tmp12, largeTitleFontSize: fontSize2, largeTitleFontWeight: fontWeight2, largeTitleHideShadow: false === headerLargeTitleShadowVisible, title: headerTitle1, titleColor: headerTintColor, titleFontFamily: tmp13, titleFontSize: fontSize1, titleFontWeight: String(fontWeight), topInsetEnabled: headerTopInsetEnabled, disableTopInsetApplication: tmp53, disableLeftInsetApplication: tmp55, disableRightInsetApplication: tmp57, disableBottomInsetApplication: tmp59, translucent: true === tmp27, children: tmp34Result2, headerLeftBarButtonItems: null, headerRightBarButtonItems: null, experimental_userInterfaceStyle: null };
   tmp51 = false === headerShadowVisible;
   tmp34Result2 = closure_12(closure_11, { children: items7 });
   if (!tmp51) {
@@ -537,15 +537,15 @@ export function useHeaderConfigProps(headerLargeTitle) {
   if (typeof processBarButtonItems === "function") {
     let found;
     if (result != null) {
-      const mapped = result.map(f97837);
-      found = mapped.filter(f97838);
+      const mapped = result.map(f97850);
+      found = mapped.filter(f97851);
     }
     obj21.headerLeftBarButtonItems = found;
     if (typeof tmp60 === "function") {
       let found1;
       if (reversed != null) {
-        const mapped1 = reversed.map(f97837);
-        found1 = mapped1.filter(f97838);
+        const mapped1 = reversed.map(f97850);
+        found1 = mapped1.filter(f97851);
       }
       obj21.headerRightBarButtonItems = found1;
       let str3 = "light";

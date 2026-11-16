@@ -1,12 +1,12 @@
 // Module ID: 12104
 // Function ID: 12105
 // Name: UserProfileGameWidgetConstants
-// Dependencies: [575, 12105, 12106, 9142, 9144, 6018, 2]
+// Dependencies: [575, 12105, 12106, 9142, 9144, 6008, 2]
 // Exports: getWidgetGameTagMetadata
 
 // Module 12104 (UserProfileGameWidgetConstants)
 import nativeDefault from "native" /* 575 */;
-import FriendsIcon from "FriendsIcon" /* 6018 */;
+import FriendsIcon from "FriendsIcon" /* 6008 */;
 import ThumbsUpIcon from "ThumbsUpIcon" /* 9142 */;
 import ThumbsDownIcon from "ThumbsDownIcon" /* 9144 */;
 import RibbonIcon from "RibbonIcon" /* 12106 */;

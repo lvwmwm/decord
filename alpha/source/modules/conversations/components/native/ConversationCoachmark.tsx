@@ -1,7 +1,7 @@
 // Module ID: 15631
 // Function ID: 15632
 // Name: ConversationCoachmark
-// Dependencies: [32, 19, 17, 5152, 21, 5139, 5306, 575, 5929, 1113, 9560, 9567, 2]
+// Dependencies: [32, 19, 17, 5152, 21, 5139, 5306, 575, 5919, 1113, 9560, 9567, 2]
 // Exports: ConversationCoachmark
 
 // Module 15631 (ConversationCoachmark)
@@ -11,7 +11,7 @@ import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import dismissible_content from "dismissible_content" /* 5139 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 5306 */;

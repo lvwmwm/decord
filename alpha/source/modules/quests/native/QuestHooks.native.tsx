@@ -1,14 +1,14 @@
 // Module ID: 17693
 // Function ID: 17694
 // Name: QuestHooks
-// Dependencies: [5, 19, 5553, 2165, 8807, 8808, 17694, 5338, 6777, 1083, 17695, 17721, 5341, 7048, 5492, 504, 5345, 17705, 7771, 8804, 10131, 10132, 10146, 8831, 7918, 12742, 8829, 12845, 7055, 12705, 2]
+// Dependencies: [5, 19, 5543, 2165, 8807, 8808, 17694, 6954, 6767, 1083, 17695, 17721, 6957, 7048, 5482, 504, 6961, 17705, 7771, 8804, 10131, 10132, 10146, 8831, 7918, 12742, 8829, 12845, 7055, 12705, 2]
 // Exports: useHasWatchVideoOnMobileTasks, useIsMobileQuestDockRendered, useIsMobileQuestDockVisibleToUser, useMobileActivityQuest, useMobileQuestDock, useMobileQuestDockHeight, useQuestDockHeroAsset, useQuestGameLogotypeAssetUrl
 
 // Module 17693 (QuestHooks)
 import Constants from "Constants" /* 1083 */;
-import QuestTypes from "QuestTypes" /* 5341 */;
-import AdCreativeType from "AdCreativeType" /* 5345 */;
-import CaptchaConstants from "CaptchaConstants" /* 6777 */;
+import CaptchaConstants from "CaptchaConstants" /* 6767 */;
+import QuestTypes from "QuestTypes" /* 6957 */;
+import AdCreativeType from "AdCreativeType" /* 6961 */;
 import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 7055 */;
 import QuestTaskUtils from "QuestTaskUtils" /* 8831 */;
 import AssetUtils from "AssetUtils" /* 10146 */;
@@ -16,12 +16,12 @@ import QuestDockHooks from "QuestDockHooks" /* 17695 */;
 import useQuestForPlacement from "useQuestForPlacement" /* 17721 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
-import ActionSheetStore from "ActionSheetStore" /* 5553 */;
+import ActionSheetStore from "ActionSheetStore" /* 5543 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
 import BountyStore from "BountyStore" /* 8807 */;
 import QuestStore from "QuestStore" /* 8808 */;
 import PlayableStore from "PlayableStore" /* 17694 */;
-import QuestConstants from "QuestConstants" /* 5338 */;
+import QuestConstants from "QuestConstants" /* 6954 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -48,7 +48,7 @@ function useIsMobileQuestDockRenderedBase(mobileQuestDock) {
   let isDismissedResult = null != userStatus1;
   if (isDismissedResult) {
     const tmpResult = tmp(8804);
-    isDismissedResult = tmpResult.isDismissed(questDockQuest.userStatus, tmp(5341).QuestContent.QUEST_BAR_MOBILE);
+    isDismissedResult = tmpResult.isDismissed(questDockQuest.userStatus, tmp(6957).QuestContent.QUEST_BAR_MOBILE);
   }
   let claimedAt;
   if (questDockQuest != null) {
@@ -93,9 +93,9 @@ function useIsMobileQuestDockRenderedBase(mobileQuestDock) {
     }
     return isPlayableCompletedResult;
   }, items6);
-  if (tmp(5345).AdCreativeType.NO_FILL === type) {
+  if (tmp(6961).AdCreativeType.NO_FILL === type) {
     return false;
-  } else if (tmp(5345).AdCreativeType.BOUNTY === type) {
+  } else if (tmp(6961).AdCreativeType.BOUNTY === type) {
     if (isEligibleForQuests) {
       isEligibleForQuests = !stateFromStores1;
     }
@@ -106,9 +106,9 @@ function useIsMobileQuestDockRenderedBase(mobileQuestDock) {
       isEligibleForQuests = !tmp4;
     }
     return isEligibleForQuests;
-  } else if (tmp(5345).AdCreativeType.PLAYABLE === type) {
+  } else if (tmp(6961).AdCreativeType.PLAYABLE === type) {
     return isEligibleForQuests && !stateFromStores1 && !stateFromStores3 && !tmp4;
-  } else if (tmp(5345).AdCreativeType.QUEST === type) {
+  } else if (tmp(6961).AdCreativeType.QUEST === type) {
     if (stateFromStores) {
       let tmp17;
       if (null == claimedAt) {

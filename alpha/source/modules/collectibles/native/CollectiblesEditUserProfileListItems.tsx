@@ -1,7 +1,7 @@
 // Module ID: 15527
 // Function ID: 15528
 // Name: CollectiblesEditUserProfileListItems
-// Dependencies: [19, 17, 1388, 1074, 21, 5306, 575, 7428, 5554, 5555, 1187, 15528, 5929, 1113, 7918, 8484, 5552, 15529, 9433, 504, 2174, 9404, 8497, 2]
+// Dependencies: [19, 17, 1388, 1074, 21, 5306, 575, 7428, 5544, 5545, 1187, 15528, 5919, 1113, 7918, 8484, 5542, 15529, 9433, 504, 2174, 9404, 8497, 2]
 // Exports: EditCollectiblesListItemNone, EditCollectiblesListItemProduct, EditCollectiblesListItemShop
 
 // Module 15527 (CollectiblesEditUserProfileListItems)
@@ -12,10 +12,10 @@ import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import HapticUtils from "HapticUtils" /* 5554 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5555 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import HapticUtils from "HapticUtils" /* 5544 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5545 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import Pressables from "Pressables" /* 7428 */;
 import CollectiblesActionCreators from "CollectiblesActionCreators" /* 8484 */;
 import CollectiblesUtils from "CollectiblesUtils" /* 8497 */;
@@ -142,7 +142,7 @@ export function EditCollectiblesListItemShop(analyticsSource) {
   const Icon = analyticsSource(1187).Icon;
   items1 = [closure_7(Icon, obj2), , ];
   let obj3 = { variant: "body-sm/medium", color: "mobile-text-heading-primary", style: tmp2.optionCellText, children: intl.string(analyticsSource(1113).t.pWG4ze) };
-  const Text = analyticsSource(5929).Text;
+  const Text = analyticsSource(5919).Text;
   intl = analyticsSource(1113).intl;
   items1[1] = closure_7(Text, obj3);
   const obj4 = { style: tmp2.newIcon };

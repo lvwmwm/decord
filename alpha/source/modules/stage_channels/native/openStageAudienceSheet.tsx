@@ -1,13 +1,13 @@
-// Module ID: 20102
-// Function ID: 20103
+// Module ID: 20104
+// Function ID: 20105
 // Name: openStageAudienceSheet
-// Dependencies: [6906, 5552, 12951, 2121, 2]
+// Dependencies: [6896, 5542, 12951, 2121, 2]
 // Exports: default
 
-// Module 20102 (openStageAudienceSheet)
+// Module 20104 (openStageAudienceSheet)
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 6906 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 6896 */;
 import size from "module_2" /* 2 */;
 
 const STAGE_AUDIENCE_SHEET_KEY = StageChannelsConstants.STAGE_AUDIENCE_SHEET_KEY;

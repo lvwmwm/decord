@@ -1,13 +1,13 @@
 // Module ID: 17702
 // Function ID: 17703
 // Name: QuestDockExternalCoordinationContext
-// Dependencies: [19, 17696, 5338, 17698, 21, 1089, 7848, 1655, 17697, 10133, 1380, 1708, 2]
+// Dependencies: [19, 17696, 6954, 17698, 21, 1089, 7848, 1655, 17697, 10133, 1380, 1708, 2]
 // Exports: useExternalScrollEventHandler
 
 // Module 17702 (QuestDockExternalCoordinationContext)
 import Fragment from "Fragment" /* 21 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import QuestConstants from "QuestConstants" /* 5338 */;
+import QuestConstants from "QuestConstants" /* 6954 */;
 import QuestActionCreators from "QuestActionCreators" /* 10133 */;
 import QuestDockConstants from "QuestDockConstants" /* 17698 */;
 import react_mod from "react" /* 19 */;

@@ -1,7 +1,7 @@
 // Module ID: 15779
 // Function ID: 15780
 // Name: UserProfileContent
-// Dependencies: [32, 19, 17, 8547, 9465, 5177, 5248, 1388, 8542, 7352, 8479, 7962, 1072, 5567, 5152, 21, 15780, 8607, 504, 5552, 15465, 2121, 9538, 9531, 8545, 7918, 8137, 5372, 7988, 15781, 1113, 12123, 15782, 6025, 8608, 15784, 9560, 5139, 15787, 6351, 7943, 6014, 15467, 15788, 10034, 15702, 5936, 10901, 575, 12744, 15804, 15832, 8593, 8609, 1630, 15838, 15783, 15842, 15843, 14150, 15466, 9401, 10078, 8552, 15844, 8590, 8601, 9464, 12279, 15825, 15805, 15845, 7994, 15846, 15847, 14949, 15848, 15704, 15850, 15478, 7940, 15769, 15851, 15772, 15856, 15862, 15868, 7983, 8622, 1655, 15869, 8610, 15673, 5916, 15870, 15871, 15876, 15877, 15839, 13262, 15881, 2]
+// Dependencies: [32, 19, 17, 8547, 9465, 5177, 5248, 1388, 8542, 7352, 8479, 7962, 1072, 5557, 5152, 21, 15780, 8607, 504, 5542, 15465, 2121, 9538, 9531, 8545, 7918, 8137, 5362, 7988, 15781, 1113, 12123, 15782, 6015, 8608, 15784, 9560, 5139, 15787, 6341, 7943, 6004, 15467, 15788, 10034, 15702, 5926, 10901, 575, 12744, 15804, 15832, 8593, 8609, 1630, 15838, 15783, 15842, 15843, 14150, 15466, 9401, 10078, 8552, 15844, 8590, 8601, 9464, 12279, 15825, 15805, 15845, 7994, 15846, 15847, 14949, 15848, 15704, 15850, 15478, 7940, 15769, 15851, 15772, 15856, 15862, 15868, 7983, 8622, 1655, 15869, 8610, 15673, 5906, 15870, 15871, 15876, 15877, 15839, 13262, 15881, 2]
 
 // Module 15779 (UserProfileContent)
 import react_native from "react-native" /* 17 */;
@@ -9,9 +9,9 @@ import Constants2 from "Constants" /* 1072 */;
 import intl6 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5567 */;
-import ToastUtils from "ToastUtils" /* 6014 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5557 */;
+import ToastUtils from "ToastUtils" /* 6004 */;
 import ClipboardUtils from "ClipboardUtils" /* 7943 */;
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 8137 */;
 import Constants3 from "Constants" /* 8479 */;
@@ -197,7 +197,7 @@ class PrimaryInfo {
       showBadgeDirectoryNuxCoachmark = false;
     }
     let trackUserProfileAction;
-    let obj = trackUserProfileAction(5372);
+    let obj = trackUserProfileAction(5362);
     const userTag = obj.useUserTag(user);
     let obj2 = { userId: user.id, enabled: showBadgeDirectoryNuxCoachmark, fetchCatalog: false, location: "UserProfileContent" };
     const tmp4 = trackUserProfileAction(8608)(displayProfile);
@@ -228,7 +228,7 @@ class PrimaryInfo {
     const tmp5Result3 = userTag(15787);
     const badgeDirectoryNuxEntryPoint = tmp5Result3.useBadgeDirectoryNuxEntryPoint(tmp12, tmp11);
     ({ entryPointRef, onOpenBadgeDirectory } = badgeDirectoryNuxEntryPoint);
-    const tmpResult = trackUserProfileAction(6351);
+    const tmpResult = trackUserProfileAction(6341);
     const name = tmpResult.useName(guildId, channelId, user);
     let tmp15 = name;
     if (null != displayNameOverride) {
@@ -325,7 +325,7 @@ function EditSection(guildId) {
     grow: true
   };
   const tmp7 = trackUserProfileAction(15702);
-  Button = guildId(5936).Button;
+  Button = guildId(5926).Button;
   obj5 = { size: "sm", color: trackUserProfileAction(575).colors.WHITE };
   PencilIcon = guildId(10901).PencilIcon;
   if (null != stateFromStores) {
@@ -350,7 +350,7 @@ function EditSection(guildId) {
         },
       grow: true
     };
-    const Button2 = tmp4(5936).Button;
+    const Button2 = tmp4(5926).Button;
     obj7 = { size: "sm", color: tmp(575).colors.WHITE };
     PencilIcon2 = tmp4(10901).PencilIcon;
     intl3 = tmp4(1113).intl;

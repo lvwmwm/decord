@@ -1,12 +1,12 @@
-// Module ID: 20568
-// Function ID: 20569
+// Module ID: 20571
+// Function ID: 20572
 // Name: GuildSettingsRoleItem
-// Dependencies: [5, 19, 17, 1072, 21, 5306, 575, 5929, 6350, 7941, 6269, 1113, 12492, 6917, 6340, 7988, 6040, 7959, 7957, 5893, 1255, 1090, 8173, 7443, 7436, 1187, 11265, 8092, 2]
+// Dependencies: [5, 19, 17, 1072, 21, 5306, 575, 5919, 6340, 7941, 6259, 1113, 12492, 6907, 6330, 7988, 6030, 7959, 7957, 5883, 1255, 1090, 8173, 7443, 7436, 1187, 11265, 8092, 2]
 
-// Module 20568 (GuildSettingsRoleItem)
+// Module 20571 (GuildSettingsRoleItem)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

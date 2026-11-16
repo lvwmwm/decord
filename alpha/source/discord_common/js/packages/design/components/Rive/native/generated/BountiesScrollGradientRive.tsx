@@ -1,14 +1,14 @@
-// Module ID: 5443
-// Function ID: 5444
+// Module ID: 5433
+// Function ID: 5434
 // Name: BountiesScrollGradientRive
-// Dependencies: [109, 19, 21, 5385, 5444, 5438, 2]
+// Dependencies: [109, 19, 21, 5375, 5434, 5428, 2]
 // Exports: BountiesScrollGradientRive
 
-// Module 5443 (BountiesScrollGradientRive)
+// Module 5433 (BountiesScrollGradientRive)
 import Fragment from "Fragment" /* 21 */;
-import BaseRive2 from "BaseRive" /* 5385 */;
-import RiveErrorBoundary2 from "RiveErrorBoundary" /* 5438 */;
-import _modDef5444 from "module_5444" /* 5444 */;
+import BaseRive2 from "BaseRive" /* 5375 */;
+import RiveErrorBoundary2 from "RiveErrorBoundary" /* 5428 */;
+import _modDef5434 from "module_5434" /* 5434 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -31,7 +31,7 @@ function BountiesScrollGradientRiveInner(ref) {
   const tmp2 = _objectWithoutProperties(ref, closure_3);
   const BaseRive = BaseRive2.BaseRive;
   const merged = Object.assign(tmp2);
-  return <BaseRive ref={ref} src={_modDef5444} artboard={str} artboardProperties={artboardProperties} artboardViewModelInstances={artboardViewModelInstances} defaultViewModelInstance={tmp} stateMachine={stateMachine} />;
+  return <BaseRive ref={ref} src={_modDef5434} artboard={str} artboardProperties={artboardProperties} artboardViewModelInstances={artboardViewModelInstances} defaultViewModelInstance={tmp} stateMachine={stateMachine} />;
 }
 let closure_3 = ["ref", "fallback", "artboard", "stateMachine", "defaultViewModelInstance"];
 const jsx = Fragment.jsx;

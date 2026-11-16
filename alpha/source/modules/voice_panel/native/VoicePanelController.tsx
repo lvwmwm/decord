@@ -1,16 +1,16 @@
-// Module ID: 19956
-// Function ID: 19957
+// Module ID: 19958
+// Function ID: 19959
 // Name: VoicePanelController
-// Dependencies: [32, 19, 17, 5307, 5154, 7016, 10192, 12904, 12719, 5155, 2133, 6071, 5209, 6901, 11985, 11983, 1072, 5959, 5983, 11986, 21, 19957, 1655, 11333, 1708, 1089, 504, 6015, 1113, 10604, 15767, 19958, 6225, 12741, 19959, 1496, 1630, 19963, 11993, 19964, 11987, 11989, 12, 1269, 1108, 1263, 12013, 13810, 6772, 1256, 11951, 2146, 10041, 7025, 19922, 5377, 19966, 6066, 5501, 6067, 7587, 19967, 19968, 14573, 5227, 19969, 19970, 19975, 19976, 19924, 11995, 11984, 5518, 2]
+// Dependencies: [32, 19, 17, 5307, 5154, 7016, 10192, 12904, 12719, 5155, 2133, 6061, 5209, 6891, 11985, 11983, 1072, 5949, 5973, 11986, 21, 19959, 1655, 11333, 1708, 1089, 504, 6005, 1113, 10604, 15767, 19960, 6215, 12741, 19961, 1496, 1630, 19965, 11993, 19966, 11987, 11989, 12, 1269, 1108, 1263, 12013, 13810, 6762, 1256, 11951, 2146, 10041, 7025, 19924, 5367, 19968, 6056, 5491, 6057, 7587, 19969, 19970, 14573, 5227, 19971, 19972, 19977, 19978, 19926, 11995, 11984, 5508, 2]
 // Exports: default
 
-// Module 19956 (VoicePanelController)
+// Module 19958 (VoicePanelController)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 5227 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5959 */;
-import CallConstants from "CallConstants" /* 5983 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5949 */;
+import CallConstants from "CallConstants" /* 5973 */;
 import MorphablePanelConstants from "MorphablePanelConstants" /* 11986 */;
 import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 11995 */;
 import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 12741 */;
@@ -24,9 +24,9 @@ import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 12904 */;
 import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 12719 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6071 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
-import VoicePanelStore from "VoicePanelStore" /* 6901 */;
+import VoicePanelStore from "VoicePanelStore" /* 6891 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11985 */;
 import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11983 */;
 import Constants from "Constants" /* 1072 */;

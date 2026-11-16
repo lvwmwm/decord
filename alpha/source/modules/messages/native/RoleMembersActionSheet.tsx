@@ -1,7 +1,7 @@
 // Module ID: 12524
 // Function ID: 12525
 // Name: RoleMembersActionSheet
-// Dependencies: [19, 17, 5307, 7315, 5212, 21, 5306, 575, 11, 7893, 504, 7891, 1187, 5929, 5566, 12525, 2]
+// Dependencies: [19, 17, 5307, 7315, 5212, 21, 5306, 575, 11, 7893, 504, 7891, 1187, 5919, 5556, 12525, 2]
 // Exports: default
 
 // Module 12524 (RoleMembersActionSheet)
@@ -9,7 +9,7 @@ import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import ChannelMemberStore from "ChannelMemberStore" /* 7315 */;
 import GuildRoleMemberActionCreators from "GuildRoleMemberActionCreators" /* 7893 */;
 import react from "react" /* 19 */;
@@ -96,7 +96,7 @@ export default function RoleMembersActionSheet(guildId) {
   let tmp16Result = null;
   if (null != stateFromStores) {
     let obj4 = { scrollable: true, header: tmp14, children: closure_8(tmp9Result, obj5) };
-    const BottomSheet = tmp3(5566).BottomSheet;
+    const BottomSheet = tmp3(5556).BottomSheet;
     obj5 = { guildId, channelId, roleId, headerShown: false, inActionSheet: true, disableStickySections: true, disableThemedGradient: true };
     tmp9Result = tmp9(12525);
     if (channelId == null) {

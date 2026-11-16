@@ -1,7 +1,7 @@
 // Module ID: 8455
 // Function ID: 8456
 // Name: GuildStageChannelSelection
-// Dependencies: [19, 5248, 1388, 21, 5306, 8011, 5954, 2020, 5552, 8009, 2121, 1113, 5929, 2]
+// Dependencies: [19, 5248, 1388, 21, 5306, 8011, 5944, 2020, 5542, 8009, 2121, 1113, 5919, 2]
 // Exports: default
 
 // Module 8455 (GuildStageChannelSelection)
@@ -9,8 +9,8 @@ import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 2020 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 5248 */;
 import UserStore from "UserStore" /* 1388 */;

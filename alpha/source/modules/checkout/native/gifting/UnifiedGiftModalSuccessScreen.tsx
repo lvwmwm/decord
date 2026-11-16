@@ -1,14 +1,14 @@
 // Module ID: 11802
 // Function ID: 11803
 // Name: UnifiedGiftModalSuccessScreen
-// Dependencies: [19, 1072, 21, 5306, 575, 11803, 11673, 6848, 11814, 2121, 8604, 6340, 6020, 5929, 1113, 5937, 2]
+// Dependencies: [19, 1072, 21, 5306, 575, 11803, 11673, 6838, 11814, 2121, 8604, 6330, 6010, 5919, 1113, 5927, 2]
 // Exports: default
 
 // Module 11802 (UnifiedGiftModalSuccessScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import openUserSettings from "openUserSettings" /* 8604 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

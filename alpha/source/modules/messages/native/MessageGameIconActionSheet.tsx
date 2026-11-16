@@ -1,7 +1,7 @@
 // Module ID: 14119
 // Function ID: 14120
 // Name: MessageGameIconActionSheet
-// Dependencies: [19, 17, 2165, 1072, 21, 5306, 1380, 575, 504, 5566, 1187, 5929, 1113, 2188, 2]
+// Dependencies: [19, 17, 2165, 1072, 21, 5306, 1380, 575, 504, 5556, 1187, 5919, 1113, 2188, 2]
 // Exports: default
 
 // Module 14119 (MessageGameIconActionSheet)
@@ -51,7 +51,7 @@ export default function MessageGameIconActionSheet(applicationId) {
   if (null != stateFromStores) {
     const obj2 = { style: tmp.contentWrapper, children: closure_7(View, obj3) };
     obj3 = { style: tmp.gameDescriptionWrapperOuter, children: items1 };
-    const BottomSheet = tmp2(5566).BottomSheet;
+    const BottomSheet = tmp2(5556).BottomSheet;
     let str;
     const obj4 = { style: tmp.gameIcon, resizeMode: "contain", source: obj6, disableColor: true };
     const Icon = tmp2(1187).Icon;
@@ -66,9 +66,9 @@ export default function MessageGameIconActionSheet(applicationId) {
     items1 = [closure_6(Icon, obj4), ];
     const obj7 = { style: tmp.gameDescriptionWrapper, children: items2 };
     const obj8 = { style: tmp.timestamp, variant: "body-xs/medium", color: "text-muted", children: messageTimestamp };
-    items2 = [closure_6(applicationId(5929).Text, obj8), ];
+    items2 = [closure_6(applicationId(5919).Text, obj8), ];
     const obj9 = { variant: "body-sm/medium", children: items3 };
-    const Text = tmp2(5929).Text;
+    const Text = tmp2(5919).Text;
     const intl = tmp2(1113).intl;
     const obj10 = { applicationName: stateFromStores.name };
     items3 = [intl.format(applicationId(1113).t.J3s8JP, obj10), " ", ];

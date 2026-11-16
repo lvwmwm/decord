@@ -1,7 +1,7 @@
 // Module ID: 14180
 // Function ID: 14181
 // Name: ClassificationDetailModal
-// Dependencies: [19, 21, 5306, 575, 6848, 7493, 14181, 14216, 14217, 14183, 1503, 7490, 1113, 2]
+// Dependencies: [19, 21, 5306, 575, 6838, 7493, 14181, 14216, 14217, 14183, 1503, 7490, 1113, 2]
 // Exports: default
 
 // Module 14180 (ClassificationDetailModal)

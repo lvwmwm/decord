@@ -1,7 +1,7 @@
 // Module ID: 10246
 // Function ID: 10247
 // Name: QuickSwitcherStore
-// Dependencies: [9378, 7014, 1192, 502, 7036, 5155, 8725, 5236, 5218, 5177, 5238, 7015, 5209, 5349, 6958, 1072, 10247, 12, 10259, 6962, 1113, 10260, 1255, 7038, 510, 504, 572, 2]
+// Dependencies: [9378, 7014, 1192, 502, 7036, 5155, 8725, 5236, 5218, 5177, 5238, 7015, 5209, 5339, 6948, 1072, 10247, 12, 10259, 6952, 1113, 10260, 1255, 7038, 510, 504, 572, 2]
 
 // Module 10246 (QuickSwitcherStore)
 import _modDef12 from "module_12" /* 12 */;
@@ -26,8 +26,8 @@ import GuildStore from "GuildStore" /* 5177 */;
 import PermissionStore from "PermissionStore" /* 5238 */;
 import ReadStateStore from "ReadStateStore" /* 7015 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5349 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6958 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6948 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

@@ -1,7 +1,7 @@
 // Module ID: 10823
 // Function ID: 10824
 // Name: game_console/GameConsoleActionCreators
-// Dependencies: [5, 10824, 6268, 1113, 2]
+// Dependencies: [5, 10824, 6258, 1113, 2]
 // Exports: transferToPlaystationWithAlert
 
 // Module 10823 (game_console/GameConsoleActionCreators)

@@ -1,17 +1,17 @@
-// Module ID: 20420
-// Function ID: 20421
+// Module ID: 20423
+// Function ID: 20424
 // Name: VerificationModal
-// Dependencies: [5, 19, 17, 20421, 5149, 1388, 1072, 21, 5306, 1187, 20422, 1113, 5936, 1503, 1264, 7493, 7427, 8437, 7948, 6844, 20426, 7756, 7765, 7762, 7798, 7819, 7820, 7757, 20427, 7852, 7811, 504, 5552, 5501, 7490, 2]
+// Dependencies: [5, 19, 17, 20424, 5149, 1388, 1072, 21, 5306, 1187, 20425, 1113, 5926, 1503, 1264, 7493, 7427, 8437, 7948, 6834, 20429, 7756, 7765, 7762, 7798, 7819, 7820, 7757, 20430, 7852, 7811, 504, 5542, 5491, 7490, 2]
 // Exports: default
 
-// Module 20420 (VerificationModal)
+// Module 20423 (VerificationModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Link from "Link" /* 1503 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import PhoneVerificationStore from "PhoneVerificationStore" /* 20421 */;
+import PhoneVerificationStore from "PhoneVerificationStore" /* 20424 */;
 import UserRequiredActionStore from "UserRequiredActionStore" /* 5149 */;
 import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
@@ -48,9 +48,9 @@ function PhoneThenEmailInterstitial(navigation) {
       dispatch(StackActions.push(ENTER_EMAIL));
     }
   });
-  const Button = navigation(5936).Button;
+  const Button = navigation(5926).Button;
   intl3 = navigation(1113).intl;
-  return <EmptyState Illustration={navigation(20422).VerifyPhone} title={intl.string(navigation(1113).t.KLnLIP)} body={intl2.string(navigation(1113).t.XGbCq3)}>{null}</EmptyState>;
+  return <EmptyState Illustration={navigation(20425).VerifyPhone} title={intl.string(navigation(1113).t.KLnLIP)} body={intl2.string(navigation(1113).t.XGbCq3)}>{null}</EmptyState>;
 }
 const View = react_native.View;
 ({ UserRequiredActions: c9, VerificationModalScenes: c10 } = Constants);

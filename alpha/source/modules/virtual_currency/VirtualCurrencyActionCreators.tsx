@@ -1,7 +1,7 @@
 // Module ID: 10040
 // Function ID: 10041
 // Name: VirtualCurrencyActionCreators
-// Dependencies: [5, 7070, 1072, 3, 572, 1285, 6757, 9931, 1242, 2]
+// Dependencies: [5, 7070, 1072, 3, 572, 1285, 6747, 9931, 1242, 2]
 // Exports: fetchVirtualCurrencyTotalRedeemed, redeemVirtualCurrencyForSKU, setBalancePillOverlay
 
 // Module 10040 (VirtualCurrencyActionCreators)

@@ -1,7 +1,7 @@
 // Module ID: 14272
 // Function ID: 14273
 // Name: CheckpointHeader
-// Dependencies: [17, 14253, 6377, 21, 5306, 575, 5554, 6848, 6406, 6407, 1630, 504, 13018, 7432, 14273, 14274, 14260, 1113, 7549, 2]
+// Dependencies: [17, 14253, 6367, 21, 5306, 575, 5544, 6838, 6396, 6397, 1630, 504, 13018, 7432, 14273, 14274, 14260, 1113, 7549, 2]
 // Exports: default
 
 // Module 14272 (CheckpointHeader)
@@ -10,16 +10,16 @@ import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import HapticUtils from "HapticUtils" /* 5554 */;
-import _modDef6406 from "module_6406" /* 6406 */;
-import _modDef6407 from "module_6407" /* 6407 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import HapticUtils from "HapticUtils" /* 5544 */;
+import _modDef6396 from "module_6396" /* 6396 */;
+import _modDef6397 from "module_6397" /* 6397 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import XSmallIcon from "XSmallIcon" /* 7549 */;
 import CheckpointActionCreators from "CheckpointActionCreators" /* 14260 */;
 import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 14273 */;
 import CheckpointHeaderButtonDefault from "CheckpointHeaderButton" /* 14274 */;
 import CheckpointStore from "CheckpointStore" /* 14253 */;
-import CheckpointConstants from "CheckpointConstants" /* 6377 */;
+import CheckpointConstants from "CheckpointConstants" /* 6367 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
@@ -62,11 +62,11 @@ export default function CheckpointHeader(logoAnimatedUri) {
   let t;
   logoAnimatedUri = logoAnimatedUri.logoAnimatedUri;
   if (logoAnimatedUri === undefined) {
-    logoAnimatedUri = _modDef6406;
+    logoAnimatedUri = _modDef6396;
   }
   let logoStaticUri = logoAnimatedUri.logoStaticUri;
   if (logoStaticUri === undefined) {
-    logoStaticUri = _modDef6407;
+    logoStaticUri = _modDef6397;
   }
   let color = logoAnimatedUri.color;
   if (color === undefined) {

@@ -1,12 +1,12 @@
 // Module ID: 15030
 // Function ID: 15031
 // Name: PencilIllocon
-// Dependencies: [19, 21, 15031, 14915, 15032, 7755, 6020, 2]
+// Dependencies: [19, 21, 15031, 14915, 15032, 7755, 6010, 2]
 // Exports: PencilIllocon
 
 // Module 15030 (PencilIllocon)
 import Fragment from "Fragment" /* 21 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import react_native from "react-native" /* 7755 */;
 import _modDef14915 from "module_14915" /* 14915 */;
 import _modDef15031 from "module_15031" /* 15031 */;

@@ -1,7 +1,7 @@
 // Module ID: 15862
 // Function ID: 15863
 // Name: UserProfileWishlistSuggestionsGrid
-// Dependencies: [19, 17, 5307, 9465, 8479, 7962, 1072, 1074, 21, 575, 5306, 504, 15863, 8545, 15689, 7918, 5917, 1269, 15864, 9471, 5552, 8484, 7937, 5936, 10565, 1113, 15865, 1655, 5929, 7988, 7549, 15866, 2]
+// Dependencies: [19, 17, 5307, 9465, 8479, 7962, 1072, 1074, 21, 575, 5306, 504, 15863, 8545, 15689, 7918, 5907, 1269, 15864, 9471, 5542, 8484, 7937, 5926, 10565, 1113, 15865, 1655, 5919, 7988, 7549, 15866, 2]
 // Exports: default
 
 // Module 15862 (UserProfileWishlistSuggestionsGrid)
@@ -9,8 +9,8 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants2 from "Constants" /* 1072 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import reactDefault from "react" /* 5917 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import reactDefault from "react" /* 5907 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7918 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
 import Constants3 from "Constants" /* 8479 */;
@@ -159,7 +159,7 @@ function WishlistSuggestionsGridContents(arg0) {
   if (0 === items2.length) {
     const obj6 = { style: tmp3.shopButtonContainer, children: closure_12(Button2, obj7) };
     obj7 = { size: "md", variant: "secondary", icon: closure_12(tmp(10565).ShopIcon, { size: "sm" }), text: intl3.string(tmp(1113).t.RSyoZu), onPress: callback };
-    Button2 = tmp(5936).Button;
+    Button2 = tmp(5926).Button;
     intl3 = tmp(1113).intl;
     tmp13Result = closure_12(View, obj6);
   } else {
@@ -171,7 +171,7 @@ function WishlistSuggestionsGridContents(arg0) {
     const obj11 = { style: tmp3.headerRow, children: items4 };
     View = tmp6(1655).View;
     const obj12 = { accessibilityRole: "header", variant: "body-sm/medium", color: "text-strong", lineClamp: 1, children: intl4.string(tmp(1113).t["+GB8Kt"]) };
-    const Text = tmp(5929).Text;
+    const Text = tmp(5919).Text;
     intl4 = tmp(1113).intl;
     items4 = [closure_12(Text, obj12), ];
     const items5 = [tmp3.dismissButton, ];
@@ -197,7 +197,7 @@ function WishlistSuggestionsGridContents(arg0) {
     items6[1] = closure_12(AddToWishlistGridDefault, obj17);
     const obj18 = { style: tmp3.shopButtonContainer, children: closure_12(Button, obj33) };
     obj33 = { size: "md", variant: "secondary", icon: closure_12(tmp(10565).ShopIcon, { size: "sm" }), text: intl2.string(tmp(1113).t.RSyoZu), onPress: callback };
-    Button = tmp(5936).Button;
+    Button = tmp(5926).Button;
     intl2 = tmp(1113).intl;
     items6[2] = closure_12(View, obj18);
     tmp13Result = tmp13(WishlistAnalyticsProvider, obj8);

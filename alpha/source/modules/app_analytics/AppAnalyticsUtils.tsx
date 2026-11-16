@@ -1,10 +1,10 @@
-// Module ID: 6067
-// Function ID: 6068
+// Module ID: 6057
+// Function ID: 6058
 // Name: AppAnalyticsUtils
-// Dependencies: [5159, 502, 5155, 5236, 5536, 5218, 5212, 5177, 2133, 5238, 6068, 6071, 5248, 5209, 5349, 5981, 1072, 5162, 5243, 1084, 16274, 1256, 12, 6069, 2]
+// Dependencies: [5159, 502, 5155, 5236, 5526, 5218, 5212, 5177, 2133, 5238, 6058, 6061, 5248, 5209, 5339, 5971, 1072, 5162, 5243, 1084, 16274, 1256, 12, 6059, 2]
 // Exports: collectChannelAnalyticsMetadataFromId, collectStaticChannelRouteAnalyticsMetadata, collectVoiceAnalyticsMetadata, getCustomStatusMetadata, getRecipientFriendCounts, getVoiceStateMetadata, trackWithMetadata
 
-// Module 6067 (AppAnalyticsUtils)
+// Module 6057 (AppAnalyticsUtils)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import ChannelRecord from "ChannelRecord" /* 5159 */;
@@ -13,18 +13,18 @@ import PermissionUtilsAll from "PermissionUtils" /* 5243 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import GuildChannelStore_mod from "GuildChannelStore" /* 5236 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5536 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5526 */;
 import GuildMemberStore from "GuildMemberStore" /* 5218 */;
 import GuildRoleStore from "GuildRoleStore" /* 5212 */;
 import GuildStore from "GuildStore" /* 5177 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
 import PermissionStore from "PermissionStore" /* 5238 */;
-import PresenceStore from "PresenceStore" /* 6068 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6071 */;
+import PresenceStore from "PresenceStore" /* 6058 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
 import RelationshipStore from "RelationshipStore" /* 5248 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5349 */;
-import VoiceStateStore from "VoiceStateStore" /* 5981 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
+import VoiceStateStore from "VoiceStateStore" /* 5971 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

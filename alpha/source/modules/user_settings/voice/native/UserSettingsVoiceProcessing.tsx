@@ -1,7 +1,7 @@
 // Module ID: 13031
 // Function ID: 13032
 // Name: UserSettingsVoiceProcessing
-// Dependencies: [19, 17, 2133, 21, 5306, 575, 504, 13032, 13033, 6225, 7745, 1113, 7747, 5929, 13036, 12999, 7954, 2]
+// Dependencies: [19, 17, 2133, 21, 5306, 575, 504, 13032, 13033, 6215, 7745, 1113, 7747, 5919, 13036, 12999, 7954, 2]
 // Exports: default
 
 // Module 13031 (UserSettingsVoiceProcessing)
@@ -9,7 +9,7 @@ import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl8 from "intl" /* 1113 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 6225 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 6215 */;
 import TableSwitchRow4 from "TableSwitchRow" /* 7954 */;
 import UserSettingsVoice from "UserSettingsVoice" /* 12999 */;
 import UserSettingsVoiceUtils from "UserSettingsVoiceUtils" /* 13032 */;
@@ -80,7 +80,7 @@ class VoiceProcessingOptions {
       items1[2] = hasOwnProperty(TableRadioRow3, obj8);
       items2 = [metroRequire(TableRadioGroup, obj5), ];
       const obj9 = { style: tmp.optionsDescriptionContainer, children: items3 };
-      const Text = tmp2(5929).Text;
+      const Text = tmp2(5919).Text;
       const intl7 = tmp2(1113).intl;
       if (noiseCancellationDeferredToSystem) {
         const obj10 = {

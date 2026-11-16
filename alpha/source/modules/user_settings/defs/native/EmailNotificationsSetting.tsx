@@ -1,14 +1,14 @@
-// Module ID: 18117
-// Function ID: 18118
+// Module ID: 18119
+// Function ID: 18120
 // Name: EmailNotificationsSetting
-// Dependencies: [9202, 1072, 1113, 18118, 12406, 16902, 18111, 2]
+// Dependencies: [9202, 1072, 1113, 18120, 12406, 16902, 18113, 2]
 
-// Module 18117 (EmailNotificationsSetting)
+// Module 18119 (EmailNotificationsSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;
 import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 16902 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 18111 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 18113 */;
 import SettingBuilders_mod from "SettingBuilders" /* 12406 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 6849
-// Function ID: 6850
+// Module ID: 6839
+// Function ID: 6840
 // Name: getDeprecatedModalData
 // Dependencies: [5307, 1072, 2]
 // Exports: default
 
-// Module 6849 (getDeprecatedModalData)
+// Module 6839 (getDeprecatedModalData)
 import Constants from "Constants" /* 1072 */;
 import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import size from "module_2" /* 2 */;

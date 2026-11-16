@@ -1,10 +1,10 @@
-// Module ID: 18245
-// Function ID: 18246
+// Module ID: 18247
+// Function ID: 18248
 // Name: DevToolsDataStorageScreen
-// Dependencies: [32, 19, 17, 505, 502, 21, 5306, 575, 7443, 5184, 6015, 504, 5201, 1503, 5913, 7824, 10580, 10579, 7825, 5552, 5929, 7830, 7951, 7913, 7953, 2]
+// Dependencies: [32, 19, 17, 505, 502, 21, 5306, 575, 7443, 5184, 6005, 504, 5201, 1503, 5903, 7824, 10580, 10579, 7825, 5542, 5919, 7830, 7951, 7913, 7953, 2]
 // Exports: default
 
-// Module 18245 (DevToolsDataStorageScreen)
+// Module 18247 (DevToolsDataStorageScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
@@ -13,9 +13,9 @@ import nativeDefault from "native" /* 575 */;
 import Link from "Link" /* 1503 */;
 import DatabaseDaosDefault from "DatabaseDaos" /* 5184 */;
 import DatabaseManagerDefault from "DatabaseManager" /* 5201 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 6015 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
 import TableRow3 from "TableRow" /* 7443 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

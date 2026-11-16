@@ -1,15 +1,15 @@
-// Module ID: 19763
-// Function ID: 19764
+// Module ID: 19765
+// Function ID: 19766
 // Name: RestrictedMessagePreviewHeader
-// Dependencies: [19, 17, 14873, 21, 5306, 575, 7918, 5372, 8476, 7943, 6014, 5552, 14930, 2121, 8546, 7231, 6848, 7428, 1113, 1187, 5929, 19746, 7720, 19764, 2]
+// Dependencies: [19, 17, 14873, 21, 5306, 575, 7918, 5362, 8476, 7943, 6004, 5542, 14930, 2121, 8546, 7231, 6838, 7428, 1113, 1187, 5919, 19748, 7720, 19766, 2]
 // Exports: default
 
-// Module 19763 (RestrictedMessagePreviewHeader)
+// Module 19765 (RestrictedMessagePreviewHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import ToastUtils from "ToastUtils" /* 6014 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import ToastUtils from "ToastUtils" /* 6004 */;
 import ClipboardUtils from "ClipboardUtils" /* 7943 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;
 import MessageRequestConstants from "MessageRequestConstants" /* 14873 */;

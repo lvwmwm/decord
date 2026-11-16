@@ -1,7 +1,7 @@
 // Module ID: 15517
 // Function ID: 15518
 // Name: useHandleBuyNow
-// Dependencies: [5, 32, 19, 1072, 3, 11801, 8484, 5552, 10020, 1627, 10489, 5118, 6015, 1113, 2]
+// Dependencies: [5, 32, 19, 1072, 3, 11801, 8484, 5542, 10020, 1627, 10489, 5118, 6005, 1113, 2]
 // Exports: default, useHandleBuyNow
 
 // Module 15517 (useHandleBuyNow)

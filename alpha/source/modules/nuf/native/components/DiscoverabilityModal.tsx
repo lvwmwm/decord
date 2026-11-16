@@ -1,7 +1,7 @@
 // Module ID: 15112
 // Function ID: 15113
 // Name: DiscoverabilityModal
-// Dependencies: [19, 17, 14994, 1388, 1072, 21, 5306, 575, 5892, 1502, 504, 15001, 1092, 15022, 15113, 15015, 1264, 7490, 1113, 2]
+// Dependencies: [19, 17, 14994, 1388, 1072, 21, 5306, 575, 5882, 1502, 504, 15001, 1092, 15022, 15113, 15015, 1264, 7490, 1113, 2]
 
 // Module 15112 (DiscoverabilityModal)
 import react_native from "react-native" /* 17 */;
@@ -11,7 +11,7 @@ import Constants from "Constants" /* 1072 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
 import intl2 from "intl" /* 1113 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
-import NavigatorConstants from "NavigatorConstants" /* 5892 */;
+import NavigatorConstants from "NavigatorConstants" /* 5882 */;
 import Navigator2 from "Navigator" /* 7490 */;
 import ContactSyncModalStore from "ContactSyncModalStore" /* 14994 */;
 import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 15001 */;

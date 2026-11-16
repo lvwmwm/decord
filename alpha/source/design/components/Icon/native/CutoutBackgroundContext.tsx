@@ -1,13 +1,13 @@
 // Module ID: 9504
 // Function ID: 9505
 // Name: CutoutBackgroundContext
-// Dependencies: [19, 21, 671, 9505, 575, 5902, 2]
+// Dependencies: [19, 21, 671, 9505, 575, 5892, 2]
 // Exports: CutoutBackgroundProvider, useCutoutBackgroundColor
 
 // Module 9504 (CutoutBackgroundContext)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useToken from "useToken" /* 5902 */;
+import useToken from "useToken" /* 5892 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

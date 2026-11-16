@@ -1,14 +1,14 @@
 // Module ID: 10811
 // Function ID: 10812
 // Name: NsfwServerInviteWarningVariant
-// Dependencies: [1072, 6840, 1113, 10812, 6830, 10813, 2]
+// Dependencies: [1072, 6830, 1113, 10812, 6820, 10813, 2]
 // Exports: getNsfwServerInviteWarningAgeGroupForError, getNsfwServerInviteWarningVariant, useGatedAgeGroup
 
 // Module 10811 (NsfwServerInviteWarningVariant)
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6830 */;
-import getAgeNoticeWarningDescriptions from "getAgeNoticeWarningDescriptions" /* 6840 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6820 */;
+import getAgeNoticeWarningDescriptions from "getAgeNoticeWarningDescriptions" /* 6830 */;
 import useAgeGroupPresentation from "useAgeGroupPresentation" /* 10812 */;
 import size from "module_2" /* 2 */;
 

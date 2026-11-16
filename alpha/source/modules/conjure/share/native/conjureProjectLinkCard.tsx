@@ -1,11 +1,11 @@
 // Module ID: 12441
 // Function ID: 12442
 // Name: conjureProjectLinkCard
-// Dependencies: [2165, 1388, 7017, 12439, 5372, 10516, 12442, 2]
+// Dependencies: [2165, 1388, 7017, 12439, 5362, 10516, 12442, 2]
 // Exports: conjureProjectLinkCardKey
 
 // Module 12441 (conjureProjectLinkCard)
-import UserUtils from "UserUtils" /* 5372 */;
+import UserUtils from "UserUtils" /* 5362 */;
 import ConjureProjectStore2 from "ConjureProjectStore" /* 7017 */;
 import ConjureMobileExperiment from "ConjureMobileExperiment" /* 10516 */;
 import conjureSharedProjectCoverTargetDefault from "conjureSharedProjectCoverTarget" /* 12442 */;

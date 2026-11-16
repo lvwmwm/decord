@@ -1,7 +1,7 @@
 // Module ID: 17430
 // Function ID: 17431
 // Name: FamilyCenterActivityRow
-// Dependencies: [19, 17, 1388, 8740, 8741, 1072, 21, 5306, 575, 1187, 38, 563, 11, 5929, 5372, 9619, 7720, 7723, 1113, 2701, 17431, 17434, 17435, 2]
+// Dependencies: [19, 17, 1388, 8740, 8741, 1072, 21, 5306, 575, 1187, 38, 563, 11, 5919, 5362, 9619, 7720, 7723, 1113, 2701, 17431, 17434, 17435, 2]
 // Exports: default
 
 // Module 17430 (FamilyCenterActivityRow)
@@ -12,7 +12,7 @@ import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
 import _modDef2701 from "module_2701" /* 2701 */;
-import UserUtilsDefault from "UserUtils" /* 5372 */;
+import UserUtilsDefault from "UserUtils" /* 5362 */;
 import GuildIconDefault from "GuildIcon" /* 7720 */;
 import GuildBadgeDefault from "GuildBadge" /* 7723 */;
 import FamilyCenterConstants from "FamilyCenterConstants" /* 8741 */;
@@ -69,11 +69,11 @@ const memoResult = react.memo(function(action) {
     items1 = [closure_8(View, obj3), ];
     const obj5 = { style: tmp.textContainer, children: items2 };
     const obj6 = { style: tmp.text, variant: "body-md/semibold", color: "interactive-text-active", ellipsizeMode: "tail", lineClamp: 1, children: tmp3Result2.getName(stateFromStores) };
-    const Text = tmp6(5929).Text;
+    const Text = tmp6(5919).Text;
     tmp3Result2 = UserUtilsDefault;
     items2 = [closure_8(Text, obj6), ];
     const obj7 = { variant: "body-xs/medium", color: "channels-default", children: formatUserActivityTimestamp(date.getTime(), value.timestampFormatter) };
-    const Text2 = tmp6(5929).Text;
+    const Text2 = tmp6(5919).Text;
     const _Date = Date;
     const self = this;
     const self2 = this;
@@ -135,12 +135,12 @@ const memoResult1 = react.memo((action) => {
     }
     items2 = [tmp11Result, ];
     const obj9 = { style: tmp.header, variant: "body-md/semibold", color: "interactive-text-active", ellipsizeMode: "tail", lineClamp: 1, children: name };
-    items2[1] = closure_8(action(5929).Text, obj9);
+    items2[1] = closure_8(action(5919).Text, obj9);
     items3 = [closure_8(View, obj6), ];
     let tmp11Result2 = null;
     if (undefined !== stateFromStores.approximateMemberCount) {
       const obj10 = { variant: "body-xs/medium", color: "channels-default", children: intl.format(_modDef2701["5JmNgg"], obj19) };
-      const Text = tmp2(5929).Text;
+      const Text = tmp2(5919).Text;
       intl = tmp2(1113).intl;
       obj19 = { members: stateFromStores.approximateMemberCount };
       tmp11Result2 = tmp11(Text, obj10);

@@ -1,7 +1,7 @@
 // Module ID: 17679
 // Function ID: 17680
 // Name: GameTrophySpotIllustration
-// Dependencies: [19, 21, 17680, 17681, 17682, 7755, 6020, 2]
+// Dependencies: [19, 21, 17680, 17681, 17682, 7755, 6010, 2]
 // Exports: GameTrophySpotIllustration
 
 // Module 17679 (GameTrophySpotIllustration)

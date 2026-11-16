@@ -1,12 +1,12 @@
 // Module ID: 15045
 // Function ID: 15046
 // Name: BookIllocon
-// Dependencies: [19, 21, 15046, 15047, 15048, 7755, 6020, 2]
+// Dependencies: [19, 21, 15046, 15047, 15048, 7755, 6010, 2]
 // Exports: BookIllocon
 
 // Module 15045 (BookIllocon)
 import Fragment from "Fragment" /* 21 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import react_native from "react-native" /* 7755 */;
 import _modDef15046 from "module_15046" /* 15046 */;
 import _modDef15047 from "module_15047" /* 15047 */;

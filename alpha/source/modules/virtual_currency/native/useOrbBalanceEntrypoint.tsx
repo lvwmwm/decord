@@ -1,11 +1,11 @@
 // Module ID: 17526
 // Function ID: 17527
 // Name: useOrbBalanceEntrypoint
-// Dependencies: [5, 19, 17527, 17528, 7937, 5552, 17529, 2121, 10055, 15948, 17539, 17531, 2]
+// Dependencies: [5, 19, 17527, 17528, 7937, 5542, 17529, 2121, 10055, 15948, 17539, 17531, 2]
 // Exports: openBalanceWidgetActionSheet, useIsOrbWalletEntrypointEnabled, useOrbBalanceEntrypoint
 
 // Module 17526 (useOrbBalanceEntrypoint)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
 import useVirtualCurrencyMobileEnabled from "useVirtualCurrencyMobileEnabled" /* 15948 */;
 import OrbWalletConstants from "OrbWalletConstants" /* 17527 */;

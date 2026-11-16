@@ -1,7 +1,7 @@
 // Module ID: 8396
 // Function ID: 8397
 // Name: AgeVerificationEmbeddedIntroScreen
-// Dependencies: [19, 1072, 21, 5306, 575, 8205, 8389, 8397, 8208, 8210, 6337, 8211, 5929, 6830, 8399, 1113, 3321, 8190, 2188, 2]
+// Dependencies: [19, 1072, 21, 5306, 575, 8205, 8389, 8397, 8208, 8210, 6327, 8211, 5919, 6820, 8399, 1113, 3321, 8190, 2188, 2]
 // Exports: default
 
 // Module 8396 (AgeVerificationEmbeddedIntroScreen)
@@ -57,25 +57,25 @@ export default function AgeVerificationEmbeddedIntroScreen(arg0) {
   obj3 = { children: items4 };
   ModalContent = navigation(8210).ModalContent;
   const obj4 = { align: "center", justify: "center", spacing: 24, children: items3 };
-  const Stack = navigation(6337).Stack;
+  const Stack = navigation(6327).Stack;
   const obj5 = { align: "center", justify: "center", spacing: 16, children: items1 };
-  const Stack2 = navigation(6337).Stack;
+  const Stack2 = navigation(6327).Stack;
   items1 = [closure_5(navigation(8211).ShieldSpotIllustration, { height: 100, width: 177 }), ];
   const obj6 = { align: "center", justify: "center", spacing: 8, children: items2 };
-  const Stack3 = navigation(6337).Stack;
+  const Stack3 = navigation(6327).Stack;
   const obj7 = { accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: obj8.getAgeVerificationGetStartedTitle(entryPoint) };
-  const Text = navigation(5929).Text;
-  obj8 = navigation(6830);
+  const Text = navigation(5919).Text;
+  obj8 = navigation(6820);
   items2 = [closure_5(Text, obj7), ];
   const obj9 = { variant: "body-md/medium", color: "text-strong", style: tmp.header, children: obj10.getAgeVerificationGetStartedSubtitle(entryPoint, undefined, isSuspendedUser) };
-  const Text2 = navigation(5929).Text;
-  obj10 = navigation(6830);
+  const Text2 = navigation(5919).Text;
+  obj10 = navigation(6820);
   items2[1] = closure_5(Text2, obj9);
   items1[1] = closure_6(Stack3, obj6);
   items3 = [closure_6(Stack2, obj5), closure_5(navigation(8399).AgeVerificationMethodsContainer, { ageVerificationMethods, modalSessionId })];
   items4 = [closure_6(Stack, obj4), ];
   const obj11 = { variant: "body-xs/medium", color: "text-muted", style: tmp.helpLink, children: intl.format(_modDef3321.lG69e1, obj12) };
-  const Text3 = navigation(5929).Text;
+  const Text3 = navigation(5919).Text;
   intl = navigation(1113).intl;
   obj12 = {
     handleOnHelpUrlHook() {

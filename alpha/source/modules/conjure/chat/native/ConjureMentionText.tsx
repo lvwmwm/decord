@@ -1,11 +1,11 @@
 // Module ID: 13631
 // Function ID: 13632
 // Name: ConjureMentionText
-// Dependencies: [19, 1388, 21, 504, 5372, 13628, 13621, 13225, 2]
+// Dependencies: [19, 1388, 21, 504, 5362, 13628, 13621, 13225, 2]
 // Exports: default
 
 // Module 13631 (ConjureMentionText)
-import UserUtils from "UserUtils" /* 5372 */;
+import UserUtils from "UserUtils" /* 5362 */;
 import ConjureFileMentionDefault from "ConjureFileMention" /* 13225 */;
 import conjureMentions from "conjureMentions" /* 13621 */;
 import ConjureSelectedMentionDefault from "ConjureSelectedMention" /* 13628 */;

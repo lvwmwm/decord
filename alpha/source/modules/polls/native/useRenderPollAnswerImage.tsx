@@ -1,7 +1,7 @@
 // Module ID: 13554
 // Function ID: 13555
 // Name: useRenderPollAnswerImage
-// Dependencies: [32, 19, 17, 8725, 8872, 1391, 21, 504, 13546, 6020, 7894, 5255, 1414, 2]
+// Dependencies: [32, 19, 17, 8725, 8872, 1391, 21, 504, 13546, 6010, 7894, 5255, 1414, 2]
 // Exports: default
 
 // Module 13554 (useRenderPollAnswerImage)
@@ -10,7 +10,7 @@ import Fragment from "Fragment" /* 21 */;
 import EmojiConstants from "EmojiConstants" /* 1391 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
 import EmojiTypes from "EmojiTypes" /* 5255 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import EmojiDefault from "Emoji" /* 7894 */;
 import DraftStore from "DraftStore" /* 8725 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;

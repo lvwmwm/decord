@@ -1,13 +1,13 @@
-// Module ID: 20620
-// Function ID: 20621
+// Module ID: 20623
+// Function ID: 20624
 // Name: ChannelSetup
-// Dependencies: [19, 21, 8183, 20621, 20622, 20623, 5313, 6020, 2]
+// Dependencies: [19, 21, 8183, 20624, 20625, 20626, 5313, 6010, 2]
 // Exports: ChannelSetup, getChannelSetupSource, useChannelSetupSource
 
-// Module 20620 (ChannelSetup)
+// Module 20623 (ChannelSetup)
 import Fragment from "Fragment" /* 21 */;
 import shared from "shared" /* 5313 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import _mod8183 from "module_8183" /* 8183 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

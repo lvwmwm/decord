@@ -1,7 +1,7 @@
 // Module ID: 17056
 // Function ID: 17057
 // Name: DevToolsLazy
-// Dependencies: [19, 17, 8827, 8826, 21, 6333, 17057, 2121, 504, 1380, 18635, 2]
+// Dependencies: [19, 17, 8827, 8826, 21, 6323, 17057, 2121, 504, 1380, 18637, 2]
 // Exports: default
 
 // Module 17056 (DevToolsLazy)
@@ -9,7 +9,7 @@ import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import KeyCommands from "KeyCommands" /* 6333 */;
+import KeyCommands from "KeyCommands" /* 6323 */;
 import react from "react" /* 19 */;
 import DeveloperExperimentStore from "DeveloperExperimentStore" /* 8827 */;
 import DevToolsSettingsStore from "DevToolsSettingsStore" /* 8826 */;
@@ -57,11 +57,11 @@ export default function DevToolsLazy() {
       });
     }
   });
-  const obj3 = stateFromStores(6333);
+  const obj3 = stateFromStores(6323);
   const keyCommands = obj3.useKeyCommands(stateFromStores ? items : []);
   if (stateFromStores) {
     if (stateFromStores1) {
-      return jsx(tmp(18635).default, {});
+      return jsx(tmp(18637).default, {});
     }
   }
   return null;

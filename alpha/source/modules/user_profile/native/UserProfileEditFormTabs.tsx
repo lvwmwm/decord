@@ -1,13 +1,13 @@
 // Module ID: 17183
 // Function ID: 17184
 // Name: UserProfileEditFormTabs
-// Dependencies: [32, 19, 17, 7962, 21, 5306, 575, 17182, 8607, 7994, 12121, 7354, 12137, 5501, 1113, 17184, 12131, 15818, 15868, 7983, 1655, 13262, 2]
+// Dependencies: [32, 19, 17, 7962, 21, 5306, 575, 17182, 8607, 7994, 12121, 7354, 12137, 5491, 1113, 17184, 12131, 15818, 15868, 7983, 1655, 13262, 2]
 
 // Module 17183 (UserProfileEditFormTabs)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import ChatInputUtils from "ChatInputUtils" /* 5501 */;
+import ChatInputUtils from "ChatInputUtils" /* 5491 */;
 import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7354 */;
 import Constants from "Constants" /* 7962 */;
 import UserProfileWidgetsBoardDefault from "UserProfileWidgetsBoard" /* 12131 */;

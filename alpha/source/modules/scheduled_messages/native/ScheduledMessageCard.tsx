@@ -1,14 +1,14 @@
 // Module ID: 15656
 // Function ID: 15657
 // Name: ScheduledMessageCard
-// Dependencies: [19, 17, 5155, 1072, 21, 5306, 575, 504, 1099, 6848, 7445, 11932, 7418, 11933, 11048, 5929, 1113, 9030, 11931, 13549, 15657, 2]
+// Dependencies: [19, 17, 5155, 1072, 21, 5306, 575, 504, 1099, 6838, 7445, 11932, 7418, 11933, 11048, 5919, 1113, 9030, 11931, 13549, 15657, 2]
 
 // Module 15656 (ScheduledMessageCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import router_utils from "router_utils" /* 1099 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import ScheduledMessageUtils from "ScheduledMessageUtils" /* 9030 */;
 import ForLaterCardStatusHeader2 from "ForLaterCardStatusHeader" /* 11931 */;
 import CalendarPlusIcon from "CalendarPlusIcon" /* 13549 */;
@@ -90,7 +90,7 @@ const memoResult = react.memo(function ScheduledMessageCard(scheduledMessage) {
         const AttachmentIcon = tmp2(11048).AttachmentIcon;
         items2 = [closure_7(AttachmentIcon, obj9), ];
         const obj10 = { variant: "body-sm/normal", color: "text-muted", children: intl.format(scheduledMessage(1113).t.ZJ1tPW, obj11) };
-        const Text = tmp2(5929).Text;
+        const Text = tmp2(5919).Text;
         intl = tmp2(1113).intl;
         obj11 = { count: scheduledMessage.attachmentUploads.length };
         items2[1] = closure_7(Text, obj10);

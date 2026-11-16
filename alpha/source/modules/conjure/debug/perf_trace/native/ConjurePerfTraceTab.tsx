@@ -1,7 +1,7 @@
 // Module ID: 14002
 // Function ID: 14003
 // Name: ConjurePerfTraceTab
-// Dependencies: [32, 5, 19, 17, 7366, 21, 5306, 575, 6848, 14003, 2121, 7445, 14009, 7387, 5929, 14005, 1269, 8565, 14010, 11113, 1630, 504, 14007, 7888, 7825, 13328, 6035, 14004, 2]
+// Dependencies: [32, 5, 19, 17, 7366, 21, 5306, 575, 6838, 14003, 2121, 7445, 14009, 7387, 5919, 14005, 1269, 8565, 14010, 11113, 1630, 504, 14007, 7888, 7825, 13328, 6025, 14004, 2]
 // Exports: default, openPerfTrace
 
 // Module 14002 (ConjurePerfTraceTab)
@@ -9,8 +9,8 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import v1 from "v1" /* 1269 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import ConjurePerfTraceLayout from "ConjurePerfTraceLayout" /* 7387 */;
 import Card_Card from "Card/Card" /* 7445 */;
 import FileManagerUtils from "FileManagerUtils" /* 8565 */;

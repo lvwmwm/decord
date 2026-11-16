@@ -1,13 +1,13 @@
-// Module ID: 20602
-// Function ID: 20603
+// Module ID: 20605
+// Function ID: 20606
 // Name: BansEmpty
-// Dependencies: [19, 21, 8183, 20603, 20604, 20605, 5313, 6020, 2]
+// Dependencies: [19, 21, 8183, 20606, 20607, 20608, 5313, 6010, 2]
 // Exports: BansEmpty, getBansEmptySource, useBansEmptySource
 
-// Module 20602 (BansEmpty)
+// Module 20605 (BansEmpty)
 import Fragment from "Fragment" /* 21 */;
 import shared from "shared" /* 5313 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import _mod8183 from "module_8183" /* 8183 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

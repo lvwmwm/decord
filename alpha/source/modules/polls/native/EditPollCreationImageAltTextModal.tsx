@@ -1,7 +1,7 @@
 // Module ID: 13557
 // Function ID: 13558
 // Name: EditPollCreationImageAltTextModal
-// Dependencies: [32, 19, 17, 9011, 21, 5306, 575, 13554, 13556, 7415, 1113, 1187, 7430, 5929, 7474, 8454, 8106, 2]
+// Dependencies: [32, 19, 17, 9011, 21, 5306, 575, 13554, 13556, 7415, 1113, 1187, 7430, 5919, 7474, 8454, 8106, 2]
 // Exports: default
 
 // Module 13557 (EditPollCreationImageAltTextModal)
@@ -89,12 +89,12 @@ export default function EditPollCreationImageAltTextModal(imageSize) {
   Icon = onSave(1187).Icon;
   items1 = [closure_8(closure_5, obj4), , ];
   const obj6 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: intl2.string(onSave(1113).t.Cq44Rg) };
-  const Text = onSave(5929).Text;
+  const Text = onSave(5919).Text;
   intl2 = onSave(1113).intl;
   items1[1] = closure_8(Text, obj6);
   const obj7 = { onPress: callback, activeOpacity: 0.5, children: closure_8(Text2, obj8) };
   obj8 = { variant: "body-md/medium", color: "text-brand", children: intl3.string(onSave(1113).t["R3BPH+"]) };
-  Text2 = onSave(5929).Text;
+  Text2 = onSave(5919).Text;
   intl3 = onSave(1113).intl;
   items1[2] = closure_8(closure_5, obj7);
   items2 = [closure_9(closure_6, obj3), , ];

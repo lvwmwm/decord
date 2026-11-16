@@ -22,7 +22,7 @@ let _require, c1, c4, closure_2, importDefault;
 
 let c10;
 let c9;
-const f106653 = (item) => {
+const f106666 = (item) => {
   let intl;
   let tmp;
   let tmp2;
@@ -242,7 +242,7 @@ export default function useConjurePublishPanel(id, guildId) {
     initialChannelNames: arr4,
     channels,
     appChannelsPrivate: tmp25,
-    components: found.map(f106653),
+    components: found.map(f106666),
     devicePermissions: items4,
     note: stringResult,
     sharing: tmp27,
@@ -323,6 +323,6 @@ export function conjurePublishComponents(arg0) {
     [tmp] = item;
     return items.includes(tmp);
   });
-  return found.map(f106653);
+  return found.map(f106666);
 }
 export const CONJURE_PUBLISH_PERMISSION_LABELS = obj;

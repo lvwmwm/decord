@@ -1,15 +1,15 @@
 // Module ID: 15028
 // Function ID: 15029
 // Name: GuildTemplates
-// Dependencies: [32, 19, 17, 15025, 7797, 1072, 21, 5306, 5892, 575, 5929, 1113, 1502, 1630, 5936, 15000, 1256, 14721, 15029, 7415, 7746, 2]
+// Dependencies: [32, 19, 17, 15025, 7797, 1072, 21, 5306, 5882, 575, 5919, 1113, 1502, 1630, 5926, 15000, 1256, 14721, 15029, 7415, 7746, 2]
 // Exports: default
 
 // Module 15028 (GuildTemplates)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import NavigatorConstants from "NavigatorConstants" /* 5892 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import NavigatorConstants from "NavigatorConstants" /* 5882 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import ListSelectionItemDefault from "ListSelectionItem" /* 14721 */;
 import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 15000 */;
 import CreateGuildIcons from "CreateGuildIcons" /* 15029 */;
@@ -88,7 +88,7 @@ function GuildTemplatesJoinFooter(trigger) {
   items1 = [tmp.footerSafeAreaContainer, { paddingBottom: bottom }];
   obj3 = { style: tmp.footerContainer, children: items2 };
   let obj4 = { style: tmp.footerTitle, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl3.string(tmp2(1113).t["N+Mi/U"]) };
-  const Text = tmp2(5929).Text;
+  const Text = tmp2(5919).Text;
   intl3 = tmp2(1113).intl;
   items2 = [closure_14(Text, obj4), ];
   const obj5 = {
@@ -109,7 +109,7 @@ function GuildTemplatesJoinFooter(trigger) {
       closure_2.push(constants.JOIN_SERVER, {});
     }
   };
-  items2[1] = closure_14(tmp2(5936).Button, obj5);
+  items2[1] = closure_14(tmp2(5926).Button, obj5);
   return closure_14(closure_5, obj2);
 }
 function GuildTemplatesItem(guildTemplate) {

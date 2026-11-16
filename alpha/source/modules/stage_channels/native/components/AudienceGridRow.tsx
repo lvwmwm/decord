@@ -1,11 +1,11 @@
 // Module ID: 13106
 // Function ID: 13107
 // Name: AudienceGridRow
-// Dependencies: [19, 17, 6906, 21, 5306, 13107, 13108, 2]
+// Dependencies: [19, 17, 6896, 21, 5306, 13107, 13108, 2]
 
 // Module 13106 (AudienceGridRow)
 import react_native from "react-native" /* 17 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 6906 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 6896 */;
 import BlankAudienceTileDefault from "BlankAudienceTile" /* 13107 */;
 import AudienceTileDefault from "AudienceTile" /* 13108 */;
 import react from "react" /* 19 */;

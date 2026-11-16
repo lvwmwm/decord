@@ -1,21 +1,21 @@
-// Module ID: 19553
-// Function ID: 19554
+// Module ID: 19555
+// Function ID: 19556
 // Name: ThreadBrowserRowSubtext
-// Dependencies: [19, 17, 5307, 5218, 1388, 8871, 1072, 1083, 21, 5306, 575, 504, 9008, 6350, 6917, 5929, 1113, 5372, 14150, 6749, 11, 1187, 8646, 9189, 2]
+// Dependencies: [19, 17, 5307, 5218, 1388, 8871, 1072, 1083, 21, 5306, 575, 504, 9008, 6340, 6907, 5919, 1113, 5362, 14150, 6739, 11, 1187, 8646, 9189, 2]
 // Exports: ThreadSubtext
 
-// Module 19553 (ThreadBrowserRowSubtext)
+// Module 19555 (ThreadBrowserRowSubtext)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import Constants2 from "Constants" /* 1083 */;
 import native from "native" /* 1187 */;
-import UserUtilsDefault from "UserUtils" /* 5372 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import useHasEnhancedRoleColorsDefault from "useHasEnhancedRoleColors" /* 6350 */;
-import useMessageAuthorDefault from "useMessageAuthor" /* 6749 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6917 */;
+import UserUtilsDefault from "UserUtils" /* 5362 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import useHasEnhancedRoleColorsDefault from "useHasEnhancedRoleColors" /* 6340 */;
+import useMessageAuthorDefault from "useMessageAuthor" /* 6739 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6907 */;
 import renderMessageMarkupDefault from "renderMessageMarkup" /* 8646 */;
 import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 9189 */;
 import react_mod from "react" /* 19 */;
@@ -79,7 +79,7 @@ function MessageContent(arg0) {
   roleStyle = useHasEnhancedRoleColorsDefault(thread.guild_id, stateFromStores.id);
   const obj7 = { user: stateFromStores, timestamp: timestampString, accessibilityLabel: timestampAccessibilityLabel, children: closure_9(Text, obj8) };
   obj8 = { lineClamp: 1, ellipsizeMode: "tail", lineBreakMode: "tail", style: tmp.subtextContent, variant: "body-sm/medium", color: "text-default", children: intl.format(message(1113).t.M79KAH, obj9) };
-  Text = message(5929).Text;
+  Text = message(5919).Text;
   intl = message(1113).intl;
   obj9 = {
     usernameHook(arg0, arg1) {
@@ -175,7 +175,7 @@ function Username(usernameColor) {
   }
   const items1 = [shouldShowRoleDot, ];
   let tmp10;
-  const Text = tmp3(5929).Text;
+  const Text = tmp3(5919).Text;
   const tmp9 = React4;
   if (tmp5) {
     tmp10 = processColorStringsArray;

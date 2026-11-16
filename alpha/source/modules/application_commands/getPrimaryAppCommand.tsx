@@ -1,12 +1,12 @@
 // Module ID: 12762
 // Function ID: 12763
 // Name: getPrimaryAppCommand
-// Dependencies: [5, 19, 5155, 11406, 2119, 11412, 11410, 5953, 2]
+// Dependencies: [5, 19, 5155, 11406, 2119, 11412, 11410, 5943, 2]
 // Exports: default, isPrimaryAppCommandUsableInAppDM, useGetPrimaryAppCommand, useIsPrimaryAppCommandUsableInAppDM, useQueryForPrimaryAppCommand
 
 // Module 12762 (getPrimaryAppCommand)
 import Server from "Server" /* 2119 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5953 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5943 */;
 import ApplicationCommandIndexActionCreators from "ApplicationCommandIndexActionCreators" /* 11410 */;
 import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 11412 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

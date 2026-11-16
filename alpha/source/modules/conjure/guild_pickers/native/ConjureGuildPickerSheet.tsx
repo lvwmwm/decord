@@ -1,13 +1,13 @@
 // Module ID: 13238
 // Function ID: 13239
 // Name: ConjureGuildPickerSheet
-// Dependencies: [32, 19, 5155, 5177, 21, 6384, 13214, 13215, 7891, 13239, 5552, 13241, 8033, 7455, 13237, 8418, 2]
+// Dependencies: [32, 19, 5155, 5177, 21, 6374, 13214, 13215, 7891, 13239, 5542, 13241, 8033, 7455, 13237, 8418, 2]
 // Exports: default
 
 // Module 13238 (ConjureGuildPickerSheet)
 import Fragment from "Fragment" /* 21 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 6384 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 6374 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 8033 */;
 import MentionableSelectOptionParts from "MentionableSelectOptionParts" /* 13241 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -29,7 +29,7 @@ export default function ConjureGuildPickerSheet(guildId) {
   let channelFilter;
   let str;
   let title;
-  const f132895 = (id) => ({ id: id.value, label: id.label });
+  const f132910 = (id) => ({ id: id.value, label: id.label });
   guildId = guildId.guildId;
   const type = guildId.type;
   const maxPicks = guildId.maxPicks;
@@ -132,7 +132,7 @@ export default function ConjureGuildPickerSheet(guildId) {
         } else {
           items = [value];
         }
-        onSubmit(items.map(f132895));
+        onSubmit(items.map(f132910));
         obj = ActionSheetActionCreatorsDefault;
         obj.hideActionSheet();
       } else if (hasItem) {
@@ -144,7 +144,7 @@ export default function ConjureGuildPickerSheet(guildId) {
       }
     },
     submitSelection() {
-      onSubmit(first.map(f132895));
+      onSubmit(first.map(f132910));
       obj = ActionSheetActionCreatorsDefault;
       obj.hideActionSheet();
     },

@@ -1,7 +1,7 @@
 // Module ID: 16119
 // Function ID: 16120
 // Name: GatewaySocket
-// Dependencies: [32, 5, 1362, 1072, 3, 16120, 16122, 1089, 16123, 559, 16124, 16131, 16133, 16152, 10, 9, 5312, 16129, 1380, 1285, 1256, 38, 504, 8756, 8760, 8763, 8761, 500, 16153, 16154, 16136, 1354, 6771, 6776, 1242, 572, 2]
+// Dependencies: [32, 5, 1362, 1072, 3, 16120, 16122, 1089, 16123, 559, 16124, 16131, 16133, 16152, 10, 9, 5312, 16129, 1380, 1285, 1256, 38, 504, 8756, 8760, 8763, 8761, 500, 16153, 16154, 16136, 1354, 6761, 6766, 1242, 572, 2]
 // Exports: setAccountSwitchUserId
 
 // Module 16119 (GatewaySocket)
@@ -16,8 +16,8 @@ import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import ClientModDetectionUtils from "ClientModDetectionUtils" /* 1354 */;
 import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 5312 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 6771 */;
-import MetricEvents from "MetricEvents" /* 6776 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 6761 */;
+import MetricEvents from "MetricEvents" /* 6766 */;
 import GatewayEncodingDefault from "GatewayEncoding" /* 16120 */;
 import GatewaySocketOpCodes2 from "GatewaySocketOpCodes" /* 16123 */;
 import GatewaySocketDispatcherDefault from "GatewaySocketDispatcher" /* 16124 */;
@@ -243,7 +243,7 @@ class GatewaySocket extends GatewaySocketOpCodes {
         const str1 = str11.toString();
         ({ compressionHandler: compressionHandler2, _handleClose } = self);
         let closure_1 = _handleClose.bind(self);
-        const f112817 = (byteLength, compressed_byte_size) => {
+        const f112831 = (byteLength, compressed_byte_size) => {
           let compressionHandler;
           let d;
           let num3;
@@ -318,7 +318,7 @@ class GatewaySocket extends GatewaySocketOpCodes {
         let closure_3 = 0;
         compressionHandler2.dataReady((arg0) => {
           try {
-            f112817(arg0, closure_3);
+            f112831(arg0, closure_3);
             closure_3 = 0;
           } catch (tmp5) {
             closure_3 = 0;

@@ -1,7 +1,7 @@
 // Module ID: 9329
 // Function ID: 9330
 // Name: PremiumGiftingIntentStore
-// Dependencies: [5532, 1246, 8553, 1231, 6846, 5248, 1072, 9330, 5131, 9331, 12, 504, 572, 2]
+// Dependencies: [5522, 1246, 8553, 1231, 6836, 5248, 1072, 9330, 5131, 9331, 12, 504, 572, 2]
 
 // Module 9329 (PremiumGiftingIntentStore)
 import _modDef12 from "module_12" /* 12 */;
@@ -11,17 +11,17 @@ import Constants from "Constants" /* 1072 */;
 import UserSettings from "UserSettings" /* 5131 */;
 import FriendAnniversaryUtils from "FriendAnniversaryUtils" /* 9330 */;
 import FriendAnniversaryGate from "FriendAnniversaryGate" /* 9331 */;
-import ExperimentStore from "ExperimentStore" /* 5532 */;
+import ExperimentStore from "ExperimentStore" /* 5522 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
 import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 8553 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import ConsentStore from "ConsentStore" /* 6846 */;
+import ConsentStore from "ConsentStore" /* 6836 */;
 import RelationshipStore from "RelationshipStore" /* 5248 */;
 import size from "module_2" /* 2 */;
 
 let _null, closure_10, closure_14, set2;
 
-const f98039 = (userId) => {
+const f98052 = (userId) => {
   const userAffinity = UserAffinitiesV2Store.getUserAffinity(userId);
   let dmProbability;
   if (userAffinity != null) {
@@ -40,7 +40,7 @@ function getCurrentTime() {
 function categorizeTopAffinityFriendAnniversaries() {
   const flag = false;
   const obj = FriendAnniversaryUtils;
-  const result = obj.categorizeFriendAnniversariesByAffinity(closure_11, f98039, flag);
+  const result = obj.categorizeFriendAnniversariesByAffinity(closure_11, f98052, flag);
   ({ highestAffinity: set, highAffinity: set1 } = result);
 }
 function updateFriendAnniversaries() {
@@ -137,7 +137,7 @@ function generateFriendAnniversaries(c15) {
           });
           const sorted = obj.sort((arg0, arg1) => UserAffinitiesV2Store.compareByDmProbability(arg0, arg1));
           const tmp3Result = set2(9330);
-          const result = tmp3Result.categorizeFriendAnniversariesByAffinity(obj, f98039, true);
+          const result = tmp3Result.categorizeFriendAnniversariesByAffinity(obj, f98052, true);
           ({ highestAffinity: set, highAffinity: set1 } = result);
         }
       }

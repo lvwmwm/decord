@@ -1,17 +1,17 @@
 // Module ID: 8172
 // Function ID: 8173
 // Name: ChannelOverwritesItem
-// Dependencies: [19, 17, 1388, 6912, 21, 5306, 6274, 1113, 8134, 6014, 7428, 7629, 7443, 8173, 8131, 5929, 1187, 8175, 8176, 5378, 7734, 2]
+// Dependencies: [19, 17, 1388, 6902, 21, 5306, 6264, 1113, 8134, 6004, 7428, 7629, 7443, 8173, 8131, 5919, 1187, 8175, 8176, 5368, 7734, 2]
 // Exports: ChannelOverwritesCheckboxItem
 
 // Module 8172 (ChannelOverwritesItem)
 import react_native from "react-native" /* 17 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import react_native2 from "react-native" /* 5378 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import AlertModal from "AlertModal" /* 6274 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 6912 */;
+import react_native2 from "react-native" /* 5368 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import AlertModal from "AlertModal" /* 6264 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 6902 */;
 import TableRow2 from "TableRow" /* 7443 */;
 import FormCheckbox from "FormCheckbox" /* 7734 */;
 import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 8131 */;

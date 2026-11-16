@@ -1,15 +1,15 @@
 // Module ID: 9328
 // Function ID: 9329
 // Name: GiftIntentEmbed
-// Dependencies: [9329, 1388, 1390, 5306, 575, 1113, 9332, 5372, 8655, 6022, 9333, 9334, 2]
+// Dependencies: [9329, 1388, 1390, 5306, 575, 1113, 9332, 5362, 8655, 6012, 9333, 9334, 2]
 // Exports: createGiftIntentEmbed
 
 // Module 9328 (GiftIntentEmbed)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
-import UserUtilsDefault from "UserUtils" /* 5372 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6022 */;
+import UserUtilsDefault from "UserUtils" /* 5362 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6012 */;
 import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8655 */;
 import PremiumGiftingUtils from "PremiumGiftingUtils" /* 9332 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 9333 */;

@@ -1,14 +1,14 @@
 // Module ID: 16320
 // Function ID: 16321
 // Name: UserCodeInput
-// Dependencies: [32, 19, 17, 16321, 21, 5306, 16322, 16323, 5929, 1113, 7619, 5936, 2]
+// Dependencies: [32, 19, 17, 16321, 21, 5306, 16322, 16323, 5919, 1113, 7619, 5926, 2]
 // Exports: UserCodeInput
 
 // Module 16320 (UserCodeInput)
 import react_native from "react-native" /* 17 */;
 import intl5 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import components_Button_Button from "components/Button/Button" /* 5936 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
 import TextInput_TextInput from "TextInput/TextInput" /* 7619 */;
 import OAuthConstants2 from "OAuthConstants" /* 16321 */;
 import useUserCodeSubmit from "useUserCodeSubmit" /* 16322 */;

@@ -1,7 +1,7 @@
 // Module ID: 17288
 // Function ID: 17289
 // Name: TwoFASetupScan
-// Dependencies: [32, 19, 21, 5306, 575, 7943, 17286, 17282, 7415, 1187, 1113, 5929, 7428, 2]
+// Dependencies: [32, 19, 21, 5306, 575, 7943, 17286, 17282, 7415, 1187, 1113, 5919, 7428, 2]
 // Exports: default
 
 // Module 17288 (TwoFASetupScan)
@@ -62,7 +62,7 @@ export default function TwoFASetupScan(totpSecret) {
   const LegacyText2 = totpSecret(1187).LegacyText;
   intl2 = totpSecret(1113).intl;
   items2[1] = closure_4(LegacyText2, obj4);
-  items2[2] = closure_4(totpSecret(5929).Text, { variant: "body-md/semibold", style: { textAlign: "center" }, children: totpSecret });
+  items2[2] = closure_4(totpSecret(5919).Text, { variant: "body-md/semibold", style: { textAlign: "center" }, children: totpSecret });
   const obj5 = { accessibilityRole: "button", onPress: callback, children: closure_4(LegacyText3, obj6) };
   const PressableOpacity = totpSecret(7428).PressableOpacity;
   obj6 = { style: tmp.copy, children: stringResult };

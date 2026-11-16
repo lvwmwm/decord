@@ -1,12 +1,12 @@
 // Module ID: 11930
 // Function ID: 11931
 // Name: ForLaterCardReminderHeader
-// Dependencies: [21, 11919, 11931, 6042, 2]
+// Dependencies: [21, 11919, 11931, 6032, 2]
 // Exports: ForLaterCardReminderHeader
 
 // Module 11930 (ForLaterCardReminderHeader)
 import Fragment from "Fragment" /* 21 */;
-import ClockIcon from "ClockIcon" /* 6042 */;
+import ClockIcon from "ClockIcon" /* 6032 */;
 import SavedMessageUtils from "SavedMessageUtils" /* 11919 */;
 import size from "module_2" /* 2 */;
 

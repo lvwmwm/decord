@@ -1,7 +1,7 @@
 // Module ID: 9500
 // Function ID: 9501
 // Name: AvatarDecorationSampleV2
-// Dependencies: [19, 17, 21, 5306, 575, 38, 2114, 6020, 9501, 9502, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 38, 2114, 6010, 9501, 9502, 2]
 // Exports: default
 
 // Module 9500 (AvatarDecorationSampleV2)
@@ -9,7 +9,7 @@ import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 2114 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 9502 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

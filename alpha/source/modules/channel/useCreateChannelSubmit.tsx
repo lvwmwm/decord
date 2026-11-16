@@ -41,8 +41,8 @@ export default function useCreateChannelSubmit(arg0) {
       let c6;
       let c8;
       let c9;
-      let obj3;
-      let tmp67;
+      let obj9;
+      let tmp57;
       if (applicationId === 2) {
         applicationId = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -96,23 +96,23 @@ export default function useCreateChannelSubmit(arg0) {
             } else {
               if (c3 === constants3.PREMIUM_CHANNEL) {
                 const push = permissionOverwrites.push;
-                const obj6 = { id: tmp, type: permissionOverwrites(closure_2_3[4]).PermissionOverwriteType.ROLE, deny: constants2.VIEW_CHANNEL, allow: obj3.getFlag(0) };
-                obj3 = closure_2_2(closure_2_3[5]);
-                push(obj6);
+                const obj5 = { id: tmp, type: permissionOverwrites(closure_2_3[4]).PermissionOverwriteType.ROLE, deny: constants2.VIEW_CHANNEL, allow: obj9.getFlag(0) };
+                obj9 = closure_2_2(closure_2_3[5]);
+                push(obj5);
               }
               bitrate(true);
               type = 2;
-              const obj7 = { guildId: tmp, type, name, permissionOverwrites, bitrate, userLimit, parentId: tmp67, applicationId, flags };
-              tmp67 = null;
+              const obj6 = { guildId: tmp, type, name, permissionOverwrites, bitrate, userLimit, parentId: tmp57, applicationId, flags };
+              tmp57 = null;
               const createChannel = closure_2_1(closure_2_3[6]).createChannel;
               closure_2_1(closure_2_3[6]);
               if (type !== constants.GUILD_CATEGORY) {
-                tmp67 = c7;
+                tmp57 = c7;
               }
               c7 = 4;
               applicationId = 1;
-              const obj8 = { value: createChannel(obj7), done: false };
-              return obj8;
+              const obj7 = { value: createChannel(obj6), done: false };
+              return obj7;
             }
           } else if (2 === c7) {
             type = 0;
@@ -160,10 +160,10 @@ export default function useCreateChannelSubmit(arg0) {
                   const AccessibilityAnnouncer2 = permissionOverwrites(closure_2_3[7]).AccessibilityAnnouncer;
                   const announce2 = AccessibilityAnnouncer2.announce;
                   const intl2 = permissionOverwrites(closure_2_3[8]).intl;
-                  const obj9 = { name };
-                  announce2(intl2.formatToPlainString(permissionOverwrites(closure_2_3[8]).t.Wke70b, obj9));
+                  const obj8 = { name };
+                  announce2(intl2.formatToPlainString(permissionOverwrites(closure_2_3[8]).t.Wke70b, obj8));
                   if (permissionOverwrites != null) {
-                    tmp93(id, guild_id);
+                    tmp83(id, guild_id);
                   }
                 }
               }
@@ -174,12 +174,12 @@ export default function useCreateChannelSubmit(arg0) {
             applicationId = 3;
             return { value: "HermesInternal", done: null };
           }
-        } catch (tmp72) {
-          closure_5 = tmp72;
+        } catch (tmp62) {
+          closure_5 = tmp62;
           if (0 === type) {
             applicationId = 3;
-            throw tmp72;
-          } else if (1 === tmp74) {
+            throw tmp62;
+          } else if (1 === tmp64) {
             c7 = 2;
           } else {
             c7 = 3;

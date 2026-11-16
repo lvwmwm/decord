@@ -1,7 +1,7 @@
 // Module ID: 13435
 // Function ID: 13436
 // Name: SearchLocalAndGlobalContentView
-// Dependencies: [32, 19, 17, 11406, 13399, 1501, 21, 5306, 575, 13383, 13388, 13436, 12579, 1113, 7443, 12698, 13386, 1630, 7824, 7864, 13398, 5985, 8724, 13439, 13440, 5315, 13421, 13414, 13433, 5929, 13441, 7997, 13442, 2]
+// Dependencies: [32, 19, 17, 11406, 13399, 1501, 21, 5306, 575, 13383, 13388, 13436, 12579, 1113, 7443, 12698, 13386, 1630, 7824, 7864, 13398, 5975, 8724, 13439, 13440, 5315, 13421, 13414, 13433, 5919, 13441, 7997, 13442, 2]
 // Exports: SearchLocalAndGlobalContentView
 
 // Module 13435 (SearchLocalAndGlobalContentView)
@@ -9,7 +9,7 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5315 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5985 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5975 */;
 import TableRow2 from "TableRow" /* 7443 */;
 import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8724 */;
 import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 11406 */;

@@ -1,7 +1,7 @@
 // Module ID: 16494
 // Function ID: 16495
 // Name: ModalDisclaimer
-// Dependencies: [19, 17, 21, 5306, 5929, 2]
+// Dependencies: [19, 17, 21, 5306, 5919, 2]
 // Exports: ModalDisclaimer
 
 // Module 16494 (ModalDisclaimer)

@@ -1,20 +1,20 @@
-// Module ID: 20056
-// Function ID: 20057
+// Module ID: 20058
+// Function ID: 20059
 // Name: VoicePanelDockPIPWatchPrompt
-// Dependencies: [19, 17, 6820, 1388, 1072, 21, 5306, 575, 11984, 504, 6351, 7918, 7937, 6862, 1256, 20055, 5377, 1655, 5548, 1708, 7459, 1113, 5929, 3253, 5936, 7722, 7988, 7549, 2]
+// Dependencies: [19, 17, 6810, 1388, 1072, 21, 5306, 575, 11984, 504, 6341, 7918, 7937, 6852, 1256, 20057, 5367, 1655, 5538, 1708, 7459, 1113, 5919, 3253, 5926, 7722, 7988, 7549, 2]
 
-// Module 20056 (VoicePanelDockPIPWatchPrompt)
+// Module 20058 (VoicePanelDockPIPWatchPrompt)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import _mod1708 from "module_1708" /* 1708 */;
-import native from "native" /* 5377 */;
-import timing_timing from "timing/timing" /* 5548 */;
-import StreamActionCreators from "StreamActionCreators" /* 6862 */;
-import VoicePanelDockActionCreators from "VoicePanelDockActionCreators" /* 20055 */;
+import native from "native" /* 5367 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import StreamActionCreators from "StreamActionCreators" /* 6852 */;
+import VoicePanelDockActionCreators from "VoicePanelDockActionCreators" /* 20057 */;
 import react from "react" /* 19 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6820 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6810 */;
 import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;

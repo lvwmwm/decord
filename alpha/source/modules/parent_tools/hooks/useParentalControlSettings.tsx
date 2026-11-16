@@ -1,12 +1,12 @@
 // Module ID: 17346
 // Function ID: 17347
 // Name: useParentalControlSettings
-// Dependencies: [5, 19, 8743, 6910, 9618, 17347, 17350, 1196, 8643, 7813, 9616, 504, 8742, 6915, 2]
+// Dependencies: [5, 19, 8743, 6900, 9618, 17347, 17350, 1196, 8643, 7813, 9616, 504, 8742, 6905, 2]
 // Exports: useAllowFriendsFromMutualGuildsOnlyForTeen, useDefaultGuildsRestricted, useIsParentallyControlled, useParentalControlledConsent, useParentalControlledExplicitContentSettings, useParentalControlledGoreContentSettings
 
 // Module 17346 (useParentalControlSettings)
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
-import Constants from "Constants" /* 6910 */;
+import Constants from "Constants" /* 6900 */;
 import UserSettingsUtils from "UserSettingsUtils" /* 7813 */;
 import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 8643 */;
 import useUserLinks from "useUserLinks" /* 9616 */;

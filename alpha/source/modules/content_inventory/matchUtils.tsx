@@ -1,7 +1,7 @@
 // Module ID: 9477
 // Function ID: 9478
 // Name: matchUtils
-// Dependencies: [7610, 7291, 9478, 9480, 9481, 8419, 6069, 2]
+// Dependencies: [7610, 7291, 9478, 9480, 9481, 8419, 6059, 2]
 // Exports: findMatchingEntry, isCrunchyrollEntry, isMatchingApplicationActivity, isMatchingWatchActivity, isSpotifyEntry
 
 // Module 9477 (matchUtils)
@@ -126,10 +126,10 @@ export function findMatchingEntry(entries, activity) {
       }
       return tmp2;
     });
-  } else if (activity.type === tmp(6069).ActivityTypes.LISTENING) {
+  } else if (activity.type === tmp(6059).ActivityTypes.LISTENING) {
     const found3 = found.filter(tmp(9478).isListenedSessionEntry);
     found2 = found3.find((item) => isMatchingListeningActivity(item, activity));
-  } else if (activity.type === tmp(6069).ActivityTypes.WATCHING) {
+  } else if (activity.type === tmp(6059).ActivityTypes.WATCHING) {
     const found4 = entries.filter(tmp(9478).isWatchedMediaEntry);
     found2 = found4.find((extra) => {
       const tmp3 = isCrunchyrollActivityDefault(activity);

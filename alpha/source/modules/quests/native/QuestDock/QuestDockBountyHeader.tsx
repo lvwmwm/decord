@@ -1,12 +1,12 @@
-// Module ID: 17811
-// Function ID: 17812
+// Module ID: 17815
+// Function ID: 17816
 // Name: QuestDockBountyHeader
-// Dependencies: [19, 17, 5338, 17698, 21, 575, 5306, 17727, 17699, 1655, 5939, 11253, 17805, 17695, 17714, 5341, 8834, 17793, 17812, 1380, 6020, 5929, 7428, 1113, 2]
+// Dependencies: [19, 17, 6954, 17698, 21, 575, 5306, 17727, 17699, 1655, 5929, 11253, 17810, 17695, 17714, 6957, 8834, 17800, 17794, 1380, 6010, 17799, 7428, 5919, 1113, 2]
 
-// Module 17811 (QuestDockBountyHeader)
+// Module 17815 (QuestDockBountyHeader)
 import nativeDefault from "native" /* 575 */;
-import QuestConstants from "QuestConstants" /* 5338 */;
-import QuestTypes from "QuestTypes" /* 5341 */;
+import QuestConstants from "QuestConstants" /* 6954 */;
+import QuestTypes from "QuestTypes" /* 6957 */;
 import AnalyticsTypes from "AnalyticsTypes" /* 8834 */;
 import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 17714 */;
 import react from "react" /* 19 */;
@@ -32,7 +32,7 @@ const QuestDockMode = QuestConstants.QuestDockMode;
 const PX_32 = nativeDefault.space.PX_32;
 const PX_12 = nativeDefault.space.PX_12;
 let createStyles = createStyles_mod;
-let obj = { wrapper: obj2, productIcon: size, crossFadeWrapper: { alignSelf: "stretch", flex: 1 }, copy: { bottom: 0, justifyContent: "center", left: 0, position: "absolute", right: 0, top: 0 }, promotedLabel: { bottom: 0, justifyContent: "center", left: 0, position: "absolute", top: 0 }, smokeArt: { position: "absolute", left: -QUEST_DOCK_COLLAPSED_HEADER_PADDING_LEFT, bottom: 0 }, smokeArtFade: obj3, title: { lineHeight: 16 } };
+let obj = { wrapper: obj2, productIcon: size, crossFadeWrapper: { alignSelf: "stretch", flex: 1 }, copy: { bottom: 0, justifyContent: "center", left: 0, position: "absolute", right: 0, top: 0 }, promotedLabel: { bottom: 0, justifyContent: "center", left: 0, position: "absolute", top: 0 }, smokeArt: { position: "absolute", left: -QUEST_DOCK_COLLAPSED_HEADER_PADDING_LEFT, bottom: 0 }, smokeArtFade: obj3 };
 obj2 = { alignItems: "center", alignSelf: "stretch", display: "flex", flexDirection: "row", gap: nativeDefault.space.PX_12, justifyContent: "flex-start", flex: 1, paddingLeft: PX_12 - QUEST_DOCK_COLLAPSED_HEADER_PADDING_LEFT };
 createStyles = createStyles.createStyles;
 size = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.sm, flexGrow: 0, flexShrink: 0, height: PX_32, width: PX_32 };
@@ -56,10 +56,9 @@ const memoResult = react.memo(function QuestDockBountyHeader() {
   let items8;
   let items9;
   let obj12;
-  let obj13;
+  let obj14;
   let obj15;
   let obj16;
-  let obj17;
   let obj5;
   let obj6;
   let obj9;
@@ -187,32 +186,31 @@ const memoResult = react.memo(function QuestDockBountyHeader() {
   const obj10 = { style: tmp4.crossFadeWrapper, children: items11 };
   const obj11 = { style: items10, children: closure_7(closure_4, obj12) };
   items10 = [tmp4.copy, animatedStyle];
-  obj12 = { accessible: true, accessibilityRole: "text", accessibilityLabel: productName, accessibilityElementsHidden: tmp23, importantForAccessibility: str, children: closure_7(tmp(bountyCreative[21]).Text, obj13) };
+  obj12 = { accessible: true, accessibilityRole: "text", accessibilityLabel: productName, accessibilityElementsHidden: tmp23, importantForAccessibility: str, children: closure_7(height(bountyCreative[21]), { accessible: false, children: productName }) };
   str = "yes";
   const View2 = tmp22(tmp2[9]).View;
   if (tmp23) {
     str = "no-hide-descendants";
   }
-  obj13 = { variant: "body-sm/medium", color: "text-strong", lineClamp: 2, accessible: false, style: tmp4.title, children: productName };
   items11 = [closure_7(View2, obj11), ];
-  const obj14 = { style: items12, children: closure_7(closure_4, obj15) };
+  const obj13 = { style: items12, children: closure_7(closure_4, obj14) };
   items12 = [tmp4.promotedLabel, animatedStyle2];
   let str2 = "none";
   const View3 = tmp22(tmp2[9]).View;
   if (tmp23) {
     str2 = "auto";
   }
-  obj15 = { pointerEvents: str2, accessibilityElementsHidden: !tmp23, importantForAccessibility: str3, children: closure_7(PressableOpacity, obj16) };
+  obj14 = { pointerEvents: str2, accessibilityElementsHidden: !tmp23, importantForAccessibility: str3, children: closure_7(PressableOpacity, obj15) };
   str3 = "no-hide-descendants";
   if (tmp23) {
     str3 = "yes";
   }
-  obj16 = { onPress: callback, accessibilityRole: "button", children: closure_7(Text, obj17) };
+  obj15 = { onPress: callback, accessibilityRole: "button", children: closure_7(Text, obj16) };
   PressableOpacity = tmp(tmp2[22]).PressableOpacity;
-  obj17 = { variant: "body-sm/medium", color: "text-default", children: intl.string(tmp(bountyCreative[23]).t.o6FLcF) };
-  Text = tmp(tmp2[21]).Text;
-  intl = tmp(tmp2[23]).intl;
-  items11[1] = closure_7(View3, obj14);
+  obj16 = { variant: "body-sm/medium", color: "text-default", children: intl.string(tmp(bountyCreative[24]).t.o6FLcF) };
+  Text = tmp(tmp2[23]).Text;
+  intl = tmp(tmp2[24]).intl;
+  items11[1] = closure_7(View3, obj13);
   items9[1] = closure_8(closure_4, obj10);
   items8[1] = closure_8(closure_4, obj7);
   return closure_8(tmp29, obj3);

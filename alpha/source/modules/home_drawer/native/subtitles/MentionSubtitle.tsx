@@ -1,15 +1,15 @@
-// Module ID: 19099
-// Function ID: 19100
+// Module ID: 19101
+// Function ID: 19102
 // Name: MentionSubtitle
-// Dependencies: [19, 17, 21, 19100, 8033, 8078, 5929, 1113, 2]
+// Dependencies: [19, 17, 21, 19102, 8033, 8078, 5919, 1113, 2]
 // Exports: default
 
-// Module 19099 (MentionSubtitle)
+// Module 19101 (MentionSubtitle)
 import react_native from "react-native" /* 17 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 8033 */;
-import useSubtitleStyles from "useSubtitleStyles" /* 19100 */;
+import useSubtitleStyles from "useSubtitleStyles" /* 19102 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -44,7 +44,7 @@ export default function MentionSubtitle(channel) {
   const obj3 = { size: "xxs", color: "icon-muted", style: subtitleStyles.channelIcon };
   items[0] = _false(channelIconComponentWithGuild, obj3);
   const obj4 = { variant: "body-xs/medium", color: "text-muted", lineClamp: 1, style: subtitleStyles.subtitleText, children: intl.format(intl2.t.L9YdGH, obj5) };
-  const Text = tmp(5929).Text;
+  const Text = tmp(5919).Text;
   intl = tmp(1113).intl;
   obj5 = {
     channelName,

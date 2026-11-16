@@ -1,13 +1,13 @@
 // Module ID: 10691
 // Function ID: 10692
 // Name: useGuildPowerupsNotifications
-// Dependencies: [32, 19, 9242, 5177, 10692, 5523, 5524, 1072, 5152, 9235, 10694, 10695, 5527, 10696, 1255, 5139, 5542, 9241, 10697, 5140, 563, 10693, 10701, 5529, 5528, 10703, 10704, 10705, 10706, 10708, 10688, 2]
+// Dependencies: [32, 19, 9242, 5177, 10692, 5513, 5514, 1072, 5152, 9235, 10694, 10695, 5517, 10696, 1255, 5139, 5532, 9241, 10697, 5140, 563, 10693, 10701, 5519, 5518, 10703, 10704, 10705, 10706, 10708, 10688, 2]
 // Exports: default, maybeGetGameServerHostingGuildEligiblePopoutDCF, maybeGetLevelUnlockedPopoutDCF, useAutoDismissGuildPowerupsNotifications
 
 // Module 10691 (useGuildPowerupsNotifications)
 import dismissible_content from "dismissible_content" /* 5139 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
-import GameServerExperiment from "GameServerExperiment" /* 5542 */;
+import GameServerExperiment from "GameServerExperiment" /* 5532 */;
 import GuildBoostingUtils from "GuildBoostingUtils" /* 9235 */;
 import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 9241 */;
 import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 10688 */;
@@ -20,8 +20,8 @@ import react_mod from "react" /* 19 */;
 import GameServerStore from "GameServerStore" /* 9242 */;
 import GuildStore from "GuildStore" /* 5177 */;
 import GuildPowerupsNotificationStore from "GuildPowerupsNotificationStore" /* 10692 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 5523 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5524 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 5513 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5514 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -42,8 +42,8 @@ const useGuildPowerupNewPerkMarketingVersionDefault = tmp7(10703);
 const useBoostToUnlockFeaturedPowerupDefault = tmp7(10704);
 const useCanPurchaseBoostsDefault = tmp7(10705);
 const useFeaturedExpiringPowerupDefault = tmp7(10706);
-const f100916 = () => notificationStateForGuild.getNotificationStateForGuild(closure_0);
-const f100917 = () => stateForGuild.getStateForGuild(closure_0);
+const f100929 = () => notificationStateForGuild.getNotificationStateForGuild(closure_0);
+const f100930 = () => stateForGuild.getStateForGuild(closure_0);
 function maybeGetPerkPurchaseablePopoutDCF(c0, arg1, available, serverThemeEnabled) {
   function markAsDismissed(AUTO_DISMISS) {
     const obj = GuildDismissibleContentUtils;
@@ -347,7 +347,7 @@ function useGuildPowerupsChannelListPopout(c0, arg1) {
   const markAsDismissed4 = tmp30;
   const tmp31 = tmp3Result6[0] === tmp(5139).DismissibleContent.EXPIRING_POWERUP_COACHMARK;
   let closure_16 = tmp31;
-  const tmpResult8 = tmp(5542);
+  const tmpResult8 = tmp(5532);
   const gameServerEnabled = tmpResult8.getGameServerEnabled(c0, "useGuildPowerupsChannelListPopout");
   let tmp34 = null != arg1;
   const useNewGamesCoachmarkDC = tmp(10701).useNewGamesCoachmarkDC;
@@ -537,10 +537,10 @@ export default function useGuildPowerupsNotifications(arg0) {
   const items = [GuildPowerupsNotificationStore];
   const items1 = [arg0];
   const obj = require("useStateFromStores");
-  const stateFromStores = obj.useStateFromStores(items, f100916, items1);
+  const stateFromStores = obj.useStateFromStores(items, f100929, items1);
   const items2 = [GuildPowerupsStore];
   const obj2 = require("useStateFromStores");
-  const stateFromStores1 = obj2.useStateFromStores(items2, f100917);
+  const stateFromStores1 = obj2.useStateFromStores(items2, f100930);
   ({ indicator, showUnread } = useGuildPowerupsNotificationIndicator(arg0, stateFromStores1, stateFromStores));
   useGuildPowerupsNotificationIndicator(arg0, stateFromStores1, stateFromStores);
   const tmp6Result = useGuildPowerupsChannelListPopout(arg0, stateFromStores1);
@@ -627,10 +627,10 @@ export function useAutoDismissGuildPowerupsNotifications(guildId) {
   const items1 = [GuildPowerupsNotificationStore];
   const items2 = [guildId];
   const obj2 = require("useStateFromStores");
-  const stateFromStores1 = obj2.useStateFromStores(items1, f100916, items2);
+  const stateFromStores1 = obj2.useStateFromStores(items1, f100929, items2);
   const items3 = [GuildPowerupsStore];
   const obj3 = require("useStateFromStores");
-  const stateFromStores2 = obj3.useStateFromStores(items3, f100917);
+  const stateFromStores2 = obj3.useStateFromStores(items3, f100930);
   ({ indicator, showUnread } = useGuildPowerupsNotificationIndicator(guildId, stateFromStores2, stateFromStores1));
   useGuildPowerupsNotificationIndicator(guildId, stateFromStores2, stateFromStores1);
   let tmp12;

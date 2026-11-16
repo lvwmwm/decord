@@ -1,15 +1,15 @@
-// Module ID: 19685
-// Function ID: 19686
+// Module ID: 19687
+// Function ID: 19688
 // Name: ChannelSettingsPermissionsStore
-// Dependencies: [2165, 10915, 5155, 1072, 6912, 510, 5243, 12560, 12, 504, 572, 2]
+// Dependencies: [2165, 10915, 5155, 1072, 6902, 510, 5243, 12560, 12, 504, 572, 2]
 
-// Module 19685 (ChannelSettingsPermissionsStore)
+// Module 19687 (ChannelSettingsPermissionsStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import PermissionUtilsAll from "PermissionUtils" /* 5243 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 6912 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 6902 */;
 import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 12560 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
 import ChannelSettingsStore from "ChannelSettingsStore" /* 10915 */;

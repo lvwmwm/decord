@@ -1,12 +1,12 @@
 // Module ID: 13680
 // Function ID: 13681
 // Name: ButterflyIllocon
-// Dependencies: [19, 21, 13681, 13682, 13683, 7755, 6020, 2]
+// Dependencies: [19, 21, 13681, 13682, 13683, 7755, 6010, 2]
 // Exports: ButterflyIllocon
 
 // Module 13680 (ButterflyIllocon)
 import Fragment from "Fragment" /* 21 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import react_native from "react-native" /* 7755 */;
 import _modDef13681 from "module_13681" /* 13681 */;
 import _modDef13682 from "module_13682" /* 13682 */;

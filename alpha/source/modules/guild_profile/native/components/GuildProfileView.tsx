@@ -1,7 +1,7 @@
 // Module ID: 10658
 // Function ID: 10659
 // Name: GuildProfileView
-// Dependencies: [19, 17, 5177, 1072, 21, 5328, 5377, 5306, 575, 504, 5169, 1496, 1414, 10659, 6020, 5547, 5902, 10660, 5893, 10661, 5929, 10663, 10671, 2]
+// Dependencies: [19, 17, 5177, 1072, 21, 5328, 5367, 5306, 575, 504, 5169, 1496, 1414, 10659, 6010, 5537, 5892, 10660, 5883, 10661, 5919, 10663, 10671, 2]
 // Exports: default, getBackgroundForProfile
 
 // Module 10658 (GuildProfileView)
@@ -12,11 +12,11 @@ import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 5169 */;
 import themes from "themes" /* 5328 */;
-import native from "native" /* 5377 */;
-import useThemeDefault from "useTheme" /* 5547 */;
-import LinearGradientDefault from "LinearGradient" /* 5893 */;
-import useToken from "useToken" /* 5902 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import native from "native" /* 5367 */;
+import useThemeDefault from "useTheme" /* 5537 */;
+import LinearGradientDefault from "LinearGradient" /* 5883 */;
+import useToken from "useToken" /* 5892 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import getDevicePixelRatioDefault from "getDevicePixelRatio" /* 10659 */;
 import guild_profile_GuildProfileUtils from "guild_profile/GuildProfileUtils" /* 10660 */;
 import GuildProfileHeaderDefault from "GuildProfileHeader" /* 10661 */;
@@ -133,7 +133,7 @@ export default function GuildProfileView(guildProfile) {
   let tmp7Result = null != guildProfile.description && guildProfile.description.length > 0;
   if (tmp7Result) {
     const obj4 = { variant: "body-md/medium", color: "text-subtle", children: guildProfile.description };
-    tmp7Result = tmp7(guildProfile(5929).Text, obj4);
+    tmp7Result = tmp7(guildProfile(5919).Text, obj4);
   }
   items2 = [tmp7Result, closure_7(GuildProfileGamesDefault, { profile: guildProfile }), closure_7(GuildProfileTraitsDefault, { profile: guildProfile })];
   items1[2] = closure_8(View, obj3);

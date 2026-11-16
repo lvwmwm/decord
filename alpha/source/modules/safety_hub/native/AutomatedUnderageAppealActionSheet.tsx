@@ -1,16 +1,16 @@
 // Module ID: 14186
 // Function ID: 14187
 // Name: AutomatedUnderageAppealActionSheet
-// Dependencies: [19, 17, 8231, 8206, 21, 5306, 575, 1113, 504, 1630, 14185, 8190, 6833, 5552, 5566, 5570, 5929, 7746, 7443, 6012, 5936, 14183, 2]
+// Dependencies: [19, 17, 8231, 8206, 21, 5306, 575, 1113, 504, 1630, 14185, 8190, 6823, 5542, 5556, 5560, 5919, 7746, 7443, 6002, 5926, 14183, 2]
 // Exports: default
 
 // Module 14186 (AutomatedUnderageAppealActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl8 from "intl" /* 1113 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6833 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6823 */;
 import TableRow2 from "TableRow" /* 7443 */;
 import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8190 */;
 import SafetyHubActionCreators from "SafetyHubActionCreators" /* 14183 */;
@@ -132,21 +132,21 @@ export default function AutomatedUnderageAppealActionSheet(onClose) {
     }
   }, items4);
   let obj3 = { scrollable: true, startHeight: sum1 + classificationId(575).space.PX_32, children: closure_8(BottomSheetScrollView, obj4) };
-  const BottomSheet = onClose(5566).BottomSheet;
+  const BottomSheet = onClose(5556).BottomSheet;
   const sum = 425 + bottom;
   sum1 = sum + classificationId(575).space.PX_16;
   obj4 = { style: tmp.container, children: closure_9(callback, obj5) };
   obj5 = { style: obj6, children: items6 };
   obj6 = { paddingBottom: bottom };
-  BottomSheetScrollView = onClose(5570).BottomSheetScrollView;
+  BottomSheetScrollView = onClose(5560).BottomSheetScrollView;
   const merged = Object.assign(tmp.content);
   const obj7 = { style: tmp.header, children: items5 };
   const obj8 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(onClose(1113).t["9SDLnj"]) };
-  const Text = onClose(5929).Text;
+  const Text = onClose(5919).Text;
   intl = onClose(1113).intl;
   items5 = [closure_8(Text, obj8), ];
   const obj9 = { variant: "heading-sm/medium", color: "text-default", children: intl2.string(onClose(1113).t["yvx//1"]) };
-  const Text2 = onClose(5929).Text;
+  const Text2 = onClose(5919).Text;
   intl2 = onClose(1113).intl;
   items5[1] = closure_8(Text2, obj9);
   items6 = [closure_9(callback, obj7), , , ];
@@ -197,11 +197,11 @@ export default function AutomatedUnderageAppealActionSheet(onClose) {
     disabled: stateFromStores1,
     text: intl6.string(onClose(1113).t["54b8V0"])
   };
-  const Button = onClose(5936).Button;
+  const Button = onClose(5926).Button;
   intl6 = onClose(1113).intl;
   items7 = [closure_8(Button, obj16), ];
   const obj17 = { variant: "heading-xs/medium", color: "text-subtle", style: tmp.learnMore, children: intl7.format(onClose(1113).t.ZbWsOF, obj18) };
-  const Text3 = onClose(5929).Text;
+  const Text3 = onClose(5919).Text;
   intl7 = onClose(1113).intl;
   obj18 = { learnMoreLink: constants.LEARN_MORE_UU_APPEAL_LINK };
   items7[1] = closure_8(Text3, obj17);

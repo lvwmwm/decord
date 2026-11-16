@@ -1,7 +1,7 @@
 // Module ID: 12412
 // Function ID: 12413
 // Name: MessagesHooks
-// Dependencies: [32, 19, 17, 11890, 11865, 6957, 5177, 6068, 504, 12, 558, 7055, 1255, 8841, 12413, 11864, 12414, 2]
+// Dependencies: [32, 19, 17, 11890, 11865, 6947, 5177, 6058, 504, 12, 558, 7055, 1255, 8841, 12413, 11864, 12414, 2]
 // Exports: useChatUpdatesQueue, useFetchMessageApplications, useFetchVoiceChannelInviteStartTimes, useMessageAuthorActivities, useMessagesLifecycle, useMessagesState, useScrollState
 
 // Module 12412 (MessagesHooks)
@@ -16,9 +16,9 @@ import ChatUpdatesQueueDefault from "ChatUpdatesQueue" /* 12414 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import VoiceChannelStartTimeStore from "VoiceChannelStartTimeStore" /* 11890 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6957 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6947 */;
 import GuildStore from "GuildStore" /* 5177 */;
-import PresenceStore from "PresenceStore" /* 6068 */;
+import PresenceStore from "PresenceStore" /* 6058 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

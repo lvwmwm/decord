@@ -1,12 +1,12 @@
 // Module ID: 7907
 // Function ID: 7908
 // Name: FormRadio
-// Dependencies: [19, 21, 5306, 6020, 7908, 7909, 2]
+// Dependencies: [19, 21, 5306, 6010, 7908, 7909, 2]
 // Exports: default
 
 // Module 7907 (FormRadio)
 import Fragment from "Fragment" /* 21 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;

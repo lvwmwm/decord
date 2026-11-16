@@ -1,12 +1,12 @@
 // Module ID: 13088
 // Function ID: 13089
 // Name: getParticipantTitle
-// Dependencies: [5983, 13089, 6351, 1113, 2]
+// Dependencies: [5973, 13089, 6341, 1113, 2]
 // Exports: default
 
 // Module 13088 (getParticipantTitle)
-import CallConstants from "CallConstants" /* 5983 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6351 */;
+import CallConstants from "CallConstants" /* 5973 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6341 */;
 import useIsGuestOrLurker from "useIsGuestOrLurker" /* 13089 */;
 import size from "module_2" /* 2 */;
 

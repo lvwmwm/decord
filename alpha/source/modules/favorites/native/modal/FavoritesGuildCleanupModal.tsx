@@ -1,14 +1,14 @@
-// Module ID: 18858
-// Function ID: 18859
+// Module ID: 18860
+// Function ID: 18861
 // Name: FavoritesGuildCleanupModal
-// Dependencies: [19, 17, 5168, 21, 5306, 575, 6848, 1630, 18859, 6337, 7745, 1113, 3679, 7747, 5929, 5936, 7493, 12523, 2]
+// Dependencies: [19, 17, 5168, 21, 5306, 575, 6838, 1630, 18861, 6327, 7745, 1113, 3679, 7747, 5919, 5926, 7493, 12523, 2]
 // Exports: default
 
-// Module 18858 (FavoritesGuildCleanupModal)
+// Module 18860 (FavoritesGuildCleanupModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef3679 from "module_3679" /* 3679 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import TableRadioRow7 from "TableRadioRow" /* 7747 */;
 import Modal from "Modal" /* 12523 */;
 import react from "react" /* 19 */;
@@ -62,7 +62,7 @@ function CleanupScreen() {
   let tmp = loading;
   const tmp2 = dependencyMap;
   const tmp3 = closure_14(loading(1630)().bottom);
-  const tmp4 = loading(18859)(closeCleanup);
+  const tmp4 = loading(18861)(closeCleanup);
   _require = tmp4;
   loading = tmp4.loading;
   let obj = { style: tmp3.container, spacing: 0, children: items4 };
@@ -148,16 +148,16 @@ function CleanupScreen() {
   const tmp8 = ScrollView;
   if (tmp4.error) {
     const obj14 = { variant: "body-sm/normal", color: "text-feedback-critical", accessibilityRole: "alert", children: intl13.string(tmp(3679).toOYQw) };
-    const Text = tmp6(5929).Text;
+    const Text = tmp6(5919).Text;
     intl13 = tmp6(1113).intl;
     tmp7Result = tmp7(Text, obj14);
   }
   items1[3] = tmp7Result;
   items4 = [closure_12(tmp8, obj2), ];
   const obj15 = { style: tmp3.actions, spacing: tmp(575).space.PX_8, children: closure_12(Button, obj29) };
-  const Stack3 = tmp6(6337).Stack;
+  const Stack3 = tmp6(6327).Stack;
   obj29 = { text: intl14.string(require("intl").t["R3BPH+"]), disabled: loading || !tmp4.canSave, loading, onPress: tmp4.save };
-  Button = tmp6(5936).Button;
+  Button = tmp6(5926).Button;
   intl14 = tmp6(1113).intl;
   items4[1] = closure_12(Stack3, obj15);
   return closure_13(Stack, obj);

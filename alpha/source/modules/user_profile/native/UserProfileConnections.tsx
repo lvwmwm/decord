@@ -1,7 +1,7 @@
 // Module ID: 15851
 // Function ID: 15852
 // Name: UserProfileConnections
-// Dependencies: [19, 17, 2189, 5373, 7962, 1072, 7423, 21, 1187, 5306, 575, 12494, 5902, 5313, 12499, 12500, 8545, 7467, 7087, 1414, 7653, 6067, 6012, 5554, 7943, 6014, 1113, 5929, 7443, 6019, 8393, 5377, 504, 15852, 7961, 7746, 15855, 2]
+// Dependencies: [19, 17, 2189, 5363, 7962, 1072, 7423, 21, 1187, 5306, 575, 12494, 5892, 5313, 12499, 12500, 8545, 7467, 7087, 1414, 7653, 6057, 6002, 5544, 7943, 6004, 1113, 5919, 7443, 6009, 8393, 5367, 504, 15852, 7961, 7746, 15855, 2]
 // Exports: UserProfileAccountConnectionsCard, UserProfileApplicationRoleConnectionsCard
 
 // Module 15851 (UserProfileConnections)
@@ -11,9 +11,9 @@ import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
 import shared from "shared" /* 5313 */;
-import HapticUtils from "HapticUtils" /* 5554 */;
-import useToken from "useToken" /* 5902 */;
-import ToastUtils from "ToastUtils" /* 6014 */;
+import HapticUtils from "HapticUtils" /* 5544 */;
+import useToken from "useToken" /* 5892 */;
+import ToastUtils from "ToastUtils" /* 6004 */;
 import Constants2 from "Constants" /* 7423 */;
 import MaskedLinkUtils from "MaskedLinkUtils" /* 7653 */;
 import TableRowGroup from "TableRowGroup" /* 7746 */;
@@ -24,7 +24,7 @@ import AssetRegistryDefault2 from "AssetRegistry" /* 12500 */;
 import useUserProfileApplicationRoleConnectionsDefault from "useUserProfileApplicationRoleConnections" /* 15855 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2189 */;
-import StreamerModeStore from "StreamerModeStore" /* 5373 */;
+import StreamerModeStore from "StreamerModeStore" /* 5363 */;
 import Constants_mod from "Constants" /* 7962 */;
 import Constants_mod2 from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
@@ -409,7 +409,7 @@ const memoResult = react.memo(function UserAccountConnection(applicationRoleConn
     tmp7 = null;
     if (null != applicationRoleConnection.platform_username) {
       const obj4 = { variant: "body-xs/medium", color: "text-subtle", children: applicationRoleConnection.platform_username };
-      tmp7 = authStore2(tmp2(5929).Text, obj4);
+      tmp7 = authStore2(tmp2(5919).Text, obj4);
     }
   }
   const items = [tmp7, , ];
@@ -425,7 +425,7 @@ const memoResult = react.memo(function UserAccountConnection(applicationRoleConn
   items[1] = tmp9;
   const obj7 = { style: tmp.poweredByContainer, children: authStore2(Text, obj8) };
   obj8 = { variant: "body-xs/medium", color: "text-muted", children: intl.format(intl3.t.zIT9YA, obj9) };
-  Text = tmp2(5929).Text;
+  Text = tmp2(5919).Text;
   intl = tmp2(1113).intl;
   obj9 = {
     applicationHook() {
@@ -460,7 +460,7 @@ export function UserProfileAccountConnectionsCard(userId) {
   userId = userId.userId;
   const style = userId.style;
   const tmp2 = closure_16();
-  let obj = userId(5377);
+  let obj = userId(5367);
   const theme = obj.useThemeContext().theme;
   const items = [LocaleStore];
   const obj2 = userId(504);

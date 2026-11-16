@@ -1,7 +1,7 @@
 // Module ID: 13495
 // Function ID: 13496
 // Name: CommandOptionView
-// Dependencies: [19, 17, 5307, 21, 2119, 5306, 575, 504, 1655, 13496, 13497, 5929, 13498, 7623, 2]
+// Dependencies: [19, 17, 5307, 21, 2119, 5306, 575, 504, 1655, 13496, 13497, 5919, 13498, 7623, 2]
 // Exports: default
 
 // Module 13495 (CommandOptionView)
@@ -101,7 +101,7 @@ export default function CommandOptionView(option) {
     tmp21 = View;
     if (hasItem1) {
       const obj7 = { style: tmp.labelText, variant: "body-sm/semibold", color: "text-subtle", children: option.displayName };
-      hasItem1 = tmp18(tmp2(5929).Text, obj7);
+      hasItem1 = tmp18(tmp2(5919).Text, obj7);
     }
     items2 = [hasItem1, , , ];
     const obj8 = {
@@ -127,13 +127,13 @@ export default function CommandOptionView(option) {
     };
     items2[1] = closure_5(AppLauncherCommandOptionDefault, obj8);
     const obj9 = { style: tmp.optionDescription, variant: "body-xs/medium", color: "text-muted", children: option.displayDescription };
-    items2[2] = closure_5(option(5929).Text, obj9);
+    items2[2] = closure_5(option(5919).Text, obj9);
     if (hasItem) {
       const obj10 = { collapsable: false, entering: reduceMotionResult1, exiting: reduceMotionResult, style: tmp.optionErrorContainer, children: items3 };
       const View2 = tmp19(1655).View;
       items3 = [closure_5(option(7623).CircleErrorIcon, { size: "xs", color: "text-feedback-critical" }), ];
       const obj11 = { variant: "body-xs/medium", color: "text-feedback-critical", children: optionValidationResults[option.name].error };
-      items3[1] = closure_5(option(5929).Text, obj11);
+      items3[1] = closure_5(option(5919).Text, obj11);
       hasItem = tmp20(View2, obj10);
     }
     items2[3] = hasItem;

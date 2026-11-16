@@ -1,7 +1,7 @@
 // Module ID: 10581
 // Function ID: 10582
 // Name: UserRow
-// Dependencies: [19, 17, 5307, 2165, 8767, 5155, 6068, 5248, 10244, 1072, 21, 1360, 5306, 575, 8134, 38, 10582, 10840, 6014, 10841, 8137, 8768, 504, 1187, 5929, 5372, 10845, 7918, 7027, 1113, 10865, 10866, 7738, 5936, 2154, 9102, 8069, 8476, 2121, 8576, 10868, 9981, 6350, 9189, 6750, 10066, 10064, 10870, 10872, 10654, 10873, 7733, 10889, 7443, 2]
+// Dependencies: [19, 17, 5307, 2165, 8767, 5155, 6058, 5248, 10244, 1072, 21, 1360, 5306, 575, 8134, 38, 10582, 10840, 6004, 10841, 8137, 8768, 504, 1187, 5919, 5362, 10845, 7918, 7027, 1113, 10865, 10866, 7738, 5926, 2154, 9102, 8069, 8476, 2121, 8576, 10868, 9981, 6340, 9189, 6740, 10066, 10064, 10870, 10872, 10654, 10873, 7733, 10889, 7443, 2]
 
 // Module 10581 (UserRow)
 import react_native from "react-native" /* 17 */;
@@ -10,10 +10,10 @@ import nativeDefault from "native" /* 575 */;
 import intl14 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
 import utils_StringUtils from "utils/StringUtils" /* 2154 */;
-import UserUtils from "UserUtils" /* 5372 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import components_Button_Button from "components/Button/Button" /* 5936 */;
-import ToastUtils from "ToastUtils" /* 6014 */;
+import UserUtils from "UserUtils" /* 5362 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
+import ToastUtils from "ToastUtils" /* 6004 */;
 import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 7738 */;
 import ChatIcon from "ChatIcon" /* 8069 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 8134 */;
@@ -33,7 +33,7 @@ import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
 import FriendSuggestionStore from "FriendSuggestionStore" /* 8767 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
-import PresenceStore from "PresenceStore" /* 6068 */;
+import PresenceStore from "PresenceStore" /* 6058 */;
 import RelationshipStore from "RelationshipStore" /* 5248 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
@@ -103,7 +103,7 @@ function UserRowSubLabel(arg0) {
     tmp9 = tmp14Result;
   } else {
     const obj8 = { lineClamp: 1, variant: "body-xs/medium", color: "text-muted", children: tmp2Result.getUserTag(user) };
-    const Text = tmp2(5929).Text;
+    const Text = tmp2(5919).Text;
     tmp2Result = UserUtils;
     tmp9 = closure_14(Text, obj8);
   }

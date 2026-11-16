@@ -1,12 +1,12 @@
 // Module ID: 16208
 // Function ID: 16209
 // Name: GlobalDiscoveryServersSearchCountsStore
-// Dependencies: [6757, 504, 572, 2]
+// Dependencies: [6747, 504, 572, 2]
 
 // Module 16208 (GlobalDiscoveryServersSearchCountsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 6757 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 6747 */;
 import size from "module_2" /* 2 */;
 
 let set;

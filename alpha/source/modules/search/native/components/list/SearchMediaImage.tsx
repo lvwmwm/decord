@@ -1,10 +1,10 @@
-// Module ID: 19495
-// Function ID: 19496
+// Module ID: 19497
+// Function ID: 19498
 // Name: SearchMediaImage
-// Dependencies: [32, 19, 17, 5155, 7037, 1072, 21, 5306, 5547, 5313, 8639, 11853, 8079, 5906, 504, 12420, 1495, 14621, 1380, 6020, 1113, 10407, 11092, 1406, 6858, 8633, 10328, 11124, 2]
+// Dependencies: [32, 19, 17, 5155, 7037, 1072, 21, 5306, 5537, 5313, 8639, 11853, 8079, 5896, 504, 12420, 1495, 14621, 1380, 6010, 1113, 10407, 11092, 1406, 6848, 8633, 10328, 11124, 2]
 // Exports: SearchAttachmentMediaImage, SearchComponentMediaImage, SearchEmbedMediaImage, SearchFileMediaImage, SearchSoundMediaImage
 
-// Module 19495 (SearchMediaImage)
+// Module 19497 (SearchMediaImage)
 import Constants from "Constants" /* 1072 */;
 import ImageWarningIcon from "ImageWarningIcon" /* 8079 */;
 import MediaSourceUtil from "MediaSourceUtil" /* 8633 */;
@@ -204,7 +204,7 @@ export function SearchAttachmentMediaImage(attachment) {
   }
   let hasFlagResult = hasFlag(num, MessageAttachmentFlags.IS_SPOILER);
   if (!hasFlagResult) {
-    const tmp2Result = attachment(6858);
+    const tmp2Result = attachment(6848);
     hasFlagResult = tmp2Result.isChannelSpoilerGated(ChannelStore.getChannel(channelId));
   }
   dependencyMap = hasFlagResult;
@@ -229,7 +229,7 @@ export function SearchEmbedMediaImage(embed) {
   let tmp2 = embed;
   let obj = embed(11092);
   let closure_3 = obj.useEnabledHarmTypesBitmaskForChannelAndAuthorId(channelId, authorId);
-  const obj2 = embed(6858);
+  const obj2 = embed(6848);
   let closure_4 = obj2.useIsChannelSpoilerGated(ChannelStore.getChannel(channelId));
   const items = [SearchMessageStore];
   let video = embed.thumbnail;

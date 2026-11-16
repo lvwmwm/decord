@@ -1,7 +1,7 @@
 // Module ID: 11389
 // Function ID: 11390
 // Name: StickerPickerListEmptyState
-// Dependencies: [19, 17, 1072, 21, 5306, 575, 11287, 5570, 1187, 1113, 11390, 2]
+// Dependencies: [19, 17, 1072, 21, 5306, 575, 11287, 5560, 1187, 1113, 11390, 2]
 
 // Module 11389 (StickerPickerListEmptyState)
 import react_native from "react-native" /* 17 */;
@@ -35,7 +35,7 @@ const memoResult = react.memo(function StickerPickerListEmptyState(insetBottom) 
   const obj = insetTop(11287);
   const modalDismissGuardRefreshControl = obj.useModalDismissGuardRefreshControl();
   if (inActionSheet) {
-    let BottomSheetScrollView = tmp3(5570).BottomSheetScrollView;
+    let BottomSheetScrollView = tmp3(5560).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = ScrollView;
   }

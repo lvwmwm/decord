@@ -1,13 +1,13 @@
 // Module ID: 16110
 // Function ID: 16111
 // Name: InputConnection
-// Dependencies: [6099, 3, 16111, 16112, 6189, 2]
+// Dependencies: [6089, 3, 16111, 16112, 6179, 2]
 
 // Module 16110 (InputConnection)
 import LoggerDefault from "Logger" /* 3 */;
-import RTCConnectionEvent from "RTCConnectionEvent" /* 6189 */;
+import RTCConnectionEvent from "RTCConnectionEvent" /* 6179 */;
 import InputEvent from "InputEvent" /* 16111 */;
-import TypedEventEmitter from "TypedEventEmitter" /* 6099 */;
+import TypedEventEmitter from "TypedEventEmitter" /* 6089 */;
 import size from "module_2" /* 2 */;
 
 const _false = { Closed: 0, [0]: "Closed", Connecting: 1, [1]: "Connecting", Connected: 2, [2]: "Connected" };
@@ -47,7 +47,7 @@ class InputConnection extends TypedEventEmitter {
     const self = this;
     this.state = Connecting.Connecting;
     let rtc = this.rtc;
-    rtc.on(self(6189).RTCConnectionEvent.WebTransportAck, this.webTransportAck);
+    rtc.on(self(6179).RTCConnectionEvent.WebTransportAck, this.webTransportAck);
     const rtc2 = this.rtc;
     rtc2.startWebTransport();
     const timerId = setTimeout(() => {

@@ -1,7 +1,7 @@
 // Module ID: 15216
 // Function ID: 15217
 // Name: MediaModalYoutube
-// Dependencies: [32, 19, 2120, 1072, 21, 10202, 6836, 8629, 8633, 15217, 1380, 2]
+// Dependencies: [32, 19, 2120, 1072, 21, 10202, 6826, 8629, 8633, 15217, 1380, 2]
 
 // Module 15216 (MediaModalYoutube)
 import Fragment from "Fragment" /* 21 */;
@@ -47,9 +47,9 @@ const memoResult = react.memo(function MediaModalYoutube(visible) {
   [playerState, dependencyMap] = react.useState(visible(10202).PlayerState.UNREADY);
   [first1, _slicedToArray] = react.useState(undefined);
   let tmp7 = playerState;
-  const tmp8 = playerState(6836)(playerState);
+  const tmp8 = playerState(6826)(playerState);
   react = tmp8;
-  const tmp9 = playerState(6836)(visible);
+  const tmp9 = playerState(6826)(visible);
   let closure_5 = tmp9;
   const ref = react.useRef(null);
   const effect = react.useEffect(() => {

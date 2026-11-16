@@ -1,11 +1,11 @@
 // Module ID: 13207
 // Function ID: 13208
 // Name: openConjureRemoveAppAlert
-// Dependencies: [32, 5, 19, 21, 5306, 13208, 1113, 4131, 6015, 6274, 13209, 6337, 5929, 13206, 7329, 6270, 2]
+// Dependencies: [32, 5, 19, 21, 5306, 13208, 1113, 4131, 6005, 6264, 13209, 6327, 5919, 13206, 7329, 6260, 2]
 // Exports: default
 
 // Module 13207 (openConjureRemoveAppAlert)
-import useAlertStore from "useAlertStore" /* 6270 */;
+import useAlertStore from "useAlertStore" /* 6260 */;
 import conjureRemoveApp from "conjureRemoveApp" /* 13206 */;
 import useConjureRemoveFromServer from "useConjureRemoveFromServer" /* 13208 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -131,7 +131,7 @@ function ConjureRemoveFromServerAlert(target) {
   let tmp5Result2 = null;
   if (null != error) {
     let obj6 = { variant: "body-sm/medium", color: "text-feedback-critical", children: error };
-    tmp5Result2 = tmp5(tmp6(5929).Text, obj6);
+    tmp5Result2 = tmp5(tmp6(5919).Text, obj6);
   }
   items[2] = tmp5Result2;
   obj7 = { children: items1 };
@@ -142,11 +142,11 @@ function ConjureRemoveFromServerAlert(target) {
       return obj(...arguments);
     }
   };
-  const AlertActionButton = tmp6(6274).AlertActionButton;
+  const AlertActionButton = tmp6(6264).AlertActionButton;
   intl = tmp6(1113).intl;
   items1 = [tmp5(AlertActionButton, obj8), ];
   const obj9 = { variant: "secondary", text: intl2.string(require("intl").t["ETE/oC"]) };
-  const AlertActionButton2 = tmp6(6274).AlertActionButton;
+  const AlertActionButton2 = tmp6(6264).AlertActionButton;
   intl2 = tmp6(1113).intl;
   items1[1] = closure_6(AlertActionButton2, obj9);
   return closure_6(AlertModal, obj);

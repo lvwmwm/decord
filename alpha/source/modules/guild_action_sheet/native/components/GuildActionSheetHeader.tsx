@@ -1,7 +1,7 @@
 // Module ID: 16415
 // Function ID: 16416
 // Name: GuildActionSheetHeader
-// Dependencies: [19, 17, 16416, 5177, 7289, 1072, 21, 5306, 575, 1360, 10392, 1113, 12342, 7428, 6015, 10393, 1187, 10397, 5929, 7771, 504, 5169, 16417, 16418, 1496, 7720, 1414, 6020, 1449, 9060, 5902, 10390, 12348, 2]
+// Dependencies: [19, 17, 16416, 5177, 7289, 1072, 21, 5306, 575, 1360, 10392, 1113, 12342, 7428, 6005, 10393, 1187, 10397, 5919, 7771, 504, 5169, 16417, 16418, 1496, 7720, 1414, 6010, 1449, 9060, 5892, 10390, 12348, 2]
 // Exports: default
 
 // Module 16415 (GuildActionSheetHeader)
@@ -9,7 +9,7 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 5169 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 6015 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
 import GuildPopoutActionCreators from "GuildPopoutActionCreators" /* 16417 */;
 import react from "react" /* 19 */;
 import GuildPopoutStore from "GuildPopoutStore" /* 16416 */;
@@ -73,7 +73,7 @@ function CommunityPill(guildVisibility) {
   }
   items = [tmp7Result, ];
   const obj4 = { variant: "body-xs/medium", color: "text-default", style: tmp.communityPillText, children: string2(tmp4 ? t2.SiZQ0N : t2.K7iRig) };
-  const Text = tmp2(5929).Text;
+  const Text = tmp2(5919).Text;
   const intl2 = tmp2(1113).intl;
   string2 = intl2.string;
   t2 = tmp2(1113).t;

@@ -1,7 +1,7 @@
 // Module ID: 10063
 // Function ID: 10064
 // Name: NameplatePreview
-// Dependencies: [19, 17, 5307, 5218, 21, 5306, 575, 2111, 7027, 9396, 504, 5372, 6750, 1187, 8613, 9508, 10064, 10065, 5929, 2]
+// Dependencies: [19, 17, 5307, 5218, 21, 5306, 575, 2111, 7027, 9396, 504, 5362, 6740, 1187, 8613, 9508, 10064, 10065, 5919, 2]
 // Exports: NameplatePreview
 
 // Module 10063 (NameplatePreview)

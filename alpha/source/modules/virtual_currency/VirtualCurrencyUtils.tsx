@@ -1,7 +1,7 @@
 // Module ID: 10139
 // Function ID: 10140
 // Name: VirtualCurrencyUtils
-// Dependencies: [1072, 1074, 5152, 1390, 7247, 5348, 5139, 2]
+// Dependencies: [1072, 1074, 5152, 1390, 7247, 5338, 5139, 2]
 // Exports: dismissOrbsOnboardingExperience, get1PShopApplicationIdForSKU
 
 // Module 10139 (VirtualCurrencyUtils)
@@ -9,7 +9,7 @@ import Constants from "Constants" /* 1072 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
 import dismissible_content from "dismissible_content" /* 5139 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5348 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5338 */;
 import SocialLayerStorefrontConstants from "SocialLayerStorefrontConstants" /* 7247 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
 import size from "module_2" /* 2 */;

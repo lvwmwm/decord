@@ -1,9 +1,9 @@
-// Module ID: 18032
-// Function ID: 18033
+// Module ID: 18034
+// Function ID: 18035
 // Name: YouBarAvatarDecoAccessibilitySetting
 // Dependencies: [5307, 9202, 12406, 1113, 504, 16889, 2]
 
-// Module 18032 (YouBarAvatarDecoAccessibilitySetting)
+// Module 18034 (YouBarAvatarDecoAccessibilitySetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;

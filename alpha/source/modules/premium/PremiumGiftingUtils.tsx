@@ -1,7 +1,7 @@
 // Module ID: 9332
 // Function ID: 9333
 // Name: PremiumGiftingUtils
-// Dependencies: [5, 5155, 5311, 8134, 38, 6755, 8660, 8786, 2]
+// Dependencies: [5, 5155, 5311, 8134, 38, 6745, 8660, 8786, 2]
 // Exports: sendGiftMessage, unhandledGiftIntent
 
 // Module 9332 (PremiumGiftingUtils)

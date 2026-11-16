@@ -1,7 +1,7 @@
 // Module ID: 17080
 // Function ID: 17081
 // Name: UserProfileEditBannerButton
-// Dependencies: [19, 17, 8479, 21, 5306, 575, 7918, 8545, 8546, 8476, 7428, 1113, 5929, 10901, 7994, 8593, 8612, 17081, 2]
+// Dependencies: [19, 17, 8479, 21, 5306, 575, 7918, 8545, 8546, 8476, 7428, 1113, 5919, 10901, 7994, 8593, 8612, 17081, 2]
 // Exports: default
 
 // Module 17080 (UserProfileEditBannerButton)

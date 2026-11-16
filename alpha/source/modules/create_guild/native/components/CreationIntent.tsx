@@ -1,7 +1,7 @@
 // Module ID: 15057
 // Function ID: 15058
 // Name: CreationIntent
-// Dependencies: [19, 17, 7797, 1072, 21, 5306, 5892, 575, 1502, 5568, 6331, 15000, 1256, 7415, 5929, 1113, 7746, 14721, 15058, 15062, 2]
+// Dependencies: [19, 17, 7797, 1072, 21, 5306, 5882, 575, 1502, 5558, 6321, 15000, 1256, 7415, 5919, 1113, 7746, 14721, 15058, 15062, 2]
 // Exports: default
 
 // Module 15057 (CreationIntent)
@@ -9,10 +9,10 @@ import nativeDefault from "native" /* 575 */;
 import intl8 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import useNavigation from "useNavigation" /* 1502 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5568 */;
-import NavigatorConstants from "NavigatorConstants" /* 5892 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import react_native from "react-native" /* 6331 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5558 */;
+import NavigatorConstants from "NavigatorConstants" /* 5882 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import react_native from "react-native" /* 6321 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 7415 */;
 import TableRowGroup2 from "TableRowGroup" /* 7746 */;
 import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 15000 */;

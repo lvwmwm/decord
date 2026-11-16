@@ -1,7 +1,7 @@
 // Module ID: 12133
 // Function ID: 12134
 // Name: UserProfileAddGameActionSheet
-// Dependencies: [32, 19, 17, 502, 12091, 8479, 21, 5306, 575, 7443, 5913, 7824, 504, 12121, 7354, 12134, 10496, 12137, 12135, 12136, 12090, 5315, 1113, 6331, 8546, 7076, 5552, 12132, 5566, 7913, 7825, 7418, 5929, 7830, 2]
+// Dependencies: [32, 19, 17, 502, 12091, 8479, 21, 5306, 575, 7443, 5903, 7824, 504, 12121, 7354, 12134, 10496, 12137, 12135, 12136, 12090, 5315, 1113, 6321, 8546, 7076, 5542, 12132, 5556, 7913, 7825, 7418, 5919, 7830, 2]
 // Exports: default
 
 // Module 12133 (UserProfileAddGameActionSheet)
@@ -9,7 +9,7 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5315 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import _extends from "_extends" /* 7076 */;
 import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7354 */;
 import TableRow from "TableRow" /* 7443 */;

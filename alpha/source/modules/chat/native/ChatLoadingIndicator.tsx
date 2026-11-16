@@ -1,7 +1,7 @@
 // Module ID: 15643
 // Function ID: 15644
 // Name: ChatLoadingIndicator
-// Dependencies: [32, 19, 17, 5307, 6800, 6372, 5209, 1388, 2120, 1072, 21, 5306, 575, 6269, 6340, 2121, 504, 5929, 15644, 1655, 5548, 1113, 7428, 2]
+// Dependencies: [32, 19, 17, 5307, 6790, 6362, 5209, 1388, 2120, 1072, 21, 5306, 575, 6259, 6330, 2121, 504, 5919, 15644, 1655, 5538, 1113, 7428, 2]
 // Exports: ChannelHeaderLoadingIndicator, useShouldChannelShowLoadingIndicator
 
 // Module 15643 (ChatLoadingIndicator)
@@ -11,14 +11,14 @@ import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5548 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6269 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6259 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5307 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6800 */;
-import MessageStore from "MessageStore" /* 6372 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6790 */;
+import MessageStore from "MessageStore" /* 6362 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
 import UserStore from "UserStore" /* 1388 */;
 import AppStateStore from "AppStateStore" /* 2120 */;
@@ -117,13 +117,13 @@ let closure_18 = react.memo(function LoadingIndicatorDebugBody() {
   if (messagesCached !== false) {
     const obj3 = { variant: "body-md/normal", color: "text-muted", children: items2 };
     items2 = [" ", "(should be ", str3, " to hide loading indicator)"];
-    tmp4Result = tmp4(tmp(5929).Text, obj3);
+    tmp4Result = tmp4(tmp(5919).Text, obj3);
   }
   items1[4] = tmp4Result;
   const items3 = [gesture(closure_15, { children: items1 }), "\n", , , , , ];
   const items4 = ["messages.ready", ":", " ", , ];
   let str6 = str;
-  const Text3 = tmp(5929).Text;
+  const Text3 = tmp(5919).Text;
   if (messagesReady) {
     str6 = "text-feedback-positive";
   }
@@ -137,14 +137,14 @@ let closure_18 = react.memo(function LoadingIndicatorDebugBody() {
   if (messagesReady !== true) {
     const obj5 = { variant: "body-md/normal", color: "text-muted", children: items5 };
     items5 = [" ", "(should be ", "true", " to hide loading indicator)"];
-    tmp4Result3 = tmp4(tmp(5929).Text, obj5);
+    tmp4Result3 = tmp4(tmp(5919).Text, obj5);
   }
   items4[4] = tmp4Result3;
   items3[2] = gesture(closure_15, { children: items4 });
   items3[3] = "\n";
   const items6 = ["connected", ":", " ", , ];
   let str10 = str;
-  const Text4 = tmp(5929).Text;
+  const Text4 = tmp(5919).Text;
   if (connected) {
     str10 = "text-feedback-positive";
   }
@@ -158,7 +158,7 @@ let closure_18 = react.memo(function LoadingIndicatorDebugBody() {
   if (connected !== true) {
     const obj7 = { variant: "body-md/normal", color: "text-muted", children: items7 };
     items7 = [" ", "(should be ", "true", " to hide loading indicator)"];
-    tmp4Result4 = tmp4(tmp(5929).Text, obj7);
+    tmp4Result4 = tmp4(tmp(5919).Text, obj7);
   }
   items6[4] = tmp4Result4;
   items3[4] = gesture(closure_15, { children: items6 });
@@ -170,7 +170,7 @@ let closure_18 = react.memo(function LoadingIndicatorDebugBody() {
     messagesCached = !connected;
   }
   const items8 = ["should show chat indicator", ":", " ", , ];
-  const Text5 = tmp(5929).Text;
+  const Text5 = tmp(5919).Text;
   if (messagesCached) {
     str = "text-feedback-positive";
   }
@@ -316,7 +316,7 @@ export function ChannelHeaderLoadingIndicator() {
   items4 = [tmp.pulse, animatedStyle];
   items5 = [map1(_modDef1655.View, obj4), ];
   const obj5 = { variant: "body-xs/medium", color: "text-muted", children: intl.string(intl2.t.JwIJMV) };
-  const Text = tmp2(5929).Text;
+  const Text = tmp2(5919).Text;
   intl = tmp2(1113).intl;
   items5[1] = map1(Text, obj5);
   const tmp15 = gesture(View, obj3);

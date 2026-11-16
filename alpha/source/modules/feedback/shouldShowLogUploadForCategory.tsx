@@ -1,10 +1,10 @@
-// Module ID: 20238
-// Function ID: 20239
+// Module ID: 20241
+// Function ID: 20242
 // Name: shouldShowLogUploadForCategory
 // Dependencies: [12596, 2]
 // Exports: shouldShowLogUploadForCategory
 
-// Module 20238 (shouldShowLogUploadForCategory)
+// Module 20241 (shouldShowLogUploadForCategory)
 import Constants from "Constants" /* 12596 */;
 import size from "module_2" /* 2 */;
 

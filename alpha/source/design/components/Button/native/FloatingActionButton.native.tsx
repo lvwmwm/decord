@@ -1,15 +1,15 @@
 // Module ID: 8004
 // Function ID: 8005
 // Name: FloatingActionButton
-// Dependencies: [19, 21, 5306, 575, 5942, 1655, 5939, 7448, 2]
+// Dependencies: [19, 21, 5306, 575, 5932, 1655, 5929, 7448, 2]
 // Exports: FloatingActionButton
 
 // Module 8004 (FloatingActionButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import spring_spring from "spring/spring" /* 5939 */;
-import ButtonConstants from "ButtonConstants" /* 5942 */;
+import spring_spring from "spring/spring" /* 5929 */;
+import ButtonConstants from "ButtonConstants" /* 5932 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;

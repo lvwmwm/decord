@@ -1,13 +1,13 @@
 // Module ID: 8081
 // Function ID: 8082
 // Name: ForumSpoilerIcon
-// Dependencies: [19, 21, 575, 6019, 8053, 2]
+// Dependencies: [19, 21, 575, 6009, 8053, 2]
 // Exports: ForumSpoilerIcon
 
 // Module 8081 (ForumSpoilerIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6019 */;
+import BaseIconImage2 from "BaseIconImage" /* 6009 */;
 import AssetRegistry from "AssetRegistry" /* 8053 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

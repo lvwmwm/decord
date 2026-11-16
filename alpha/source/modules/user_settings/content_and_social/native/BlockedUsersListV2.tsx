@@ -1,7 +1,7 @@
 // Module ID: 17327
 // Function ID: 17328
 // Name: BlockedUsersListV2
-// Dependencies: [19, 17, 5248, 21, 5306, 575, 7918, 7937, 1187, 17328, 1113, 7415, 5929, 7746, 17332, 504, 2]
+// Dependencies: [19, 17, 5248, 21, 5306, 575, 7918, 7937, 1187, 17328, 1113, 7415, 5919, 7746, 17332, 504, 2]
 // Exports: default
 
 // Module 17327 (BlockedUsersListV2)
@@ -10,7 +10,7 @@ import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 7415 */;
 import TableRowGroup2 from "TableRowGroup" /* 7746 */;
 import useAnalyticsLocations from "useAnalyticsLocations" /* 7918 */;

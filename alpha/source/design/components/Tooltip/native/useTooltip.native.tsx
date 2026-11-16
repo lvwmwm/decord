@@ -1,7 +1,7 @@
 // Module ID: 9426
 // Function ID: 9427
 // Name: useTooltip
-// Dependencies: [32, 5, 19, 21, 3, 1269, 5918, 9427, 1496, 9432, 2]
+// Dependencies: [32, 5, 19, 21, 3, 1269, 5908, 9427, 1496, 9432, 2]
 // Exports: useTooltip, useTooltipHelper
 
 // Module 9426 (useTooltip)
@@ -44,7 +44,7 @@ export function useTooltip(ref, memo) {
   const tmp8 = context(1496)();
   let closure_3 = tmp8;
   let closure_4 = obj.useRef(tmp8);
-  const context1 = obj.useContext(tmp(5918).LayerContext);
+  const context1 = obj.useContext(tmp(5908).LayerContext);
   let closure_6 = obj.useRef(null);
   const items1 = [context1, ref];
   const effect = obj.useEffect(() => {

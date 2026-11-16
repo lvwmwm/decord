@@ -1,12 +1,12 @@
-// Module ID: 18308
-// Function ID: 18309
+// Module ID: 18310
+// Function ID: 18311
 // Name: button
-// Dependencies: [19, 21, 5936, 2]
+// Dependencies: [19, 21, 5926, 2]
 // Exports: default
 
-// Module 18308 (button)
+// Module 18310 (button)
 import Fragment from "Fragment" /* 21 */;
-import components_Button_Button from "components/Button/Button" /* 5936 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

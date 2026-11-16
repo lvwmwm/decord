@@ -1,11 +1,11 @@
 // Module ID: 7555
 // Function ID: 7556
-// Dependencies: [19, 21, 7556, 5598]
+// Dependencies: [19, 21, 7556, 5588]
 // Exports: PanGestureHandler
 
 // Module 7555
 import Fragment from "Fragment" /* 21 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5598 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5588 */;
 import react2 from "react" /* 7556 */;
 import react from "react" /* 19 */;
 

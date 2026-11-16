@@ -1,98 +1,195 @@
 // Module ID: 5419
 // Function ID: 5420
-// Dependencies: [32, 19, 5408]
-// Exports: useRive
+// Dependencies: [19, 5408, 5412, 5400]
+// Exports: useViewModelInstance
 
 // Module 5419
-import react2 from "react" /* 5408 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import ArtboardByIndex from "ArtboardByIndex" /* 5408 */;
 import react from "react" /* 19 */;
 
-let ref;
+const require = globalThis.__r;
+let _require;
 
+let c2;
 let c3;
-let closure_4;
-let useCallback;
-({ useRef: c3, useCallback, useState: closure_4 } = react);
+({ useMemo: c2, useRef: c3 } = react);
 
-export function useRive() {
-  let closure_129_1;
-  let first;
-  let tmp4;
-  let tmp6;
-  let tmp7;
-  const obj = react2;
-  const cResult = obj.c(4);
-  const tmp2 = _false(null);
-  let closure_0 = tmp2;
-  const tmp3 = _slicedToArray(React3(null), 2);
-  [tmp4, closure_129_1] = tmp3;
-  let closure_2 = _false(null);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function t(current) {
-      ref = current;
-      if (ref.current !== current) {
-        ref.current = current;
-        if (ref2.current) {
-          let _clearTimeout = clearTimeout;
-          clearTimeout(tmp9.current);
+export function useViewModelInstance(arg0, instanceName) {
+  let closure_0;
+  let name;
+  let obj3;
+  _require = arg0;
+  instanceName = undefined;
+  if (instanceName != null) {
+    instanceName = instanceName.instanceName;
+  }
+  if (instanceName != null) {
+    name = instanceName.name;
+  }
+  if (instanceName == null) {
+    instanceName = name;
+  }
+  let artboardName;
+  if (instanceName != null) {
+    artboardName = instanceName.artboardName;
+  }
+  let viewModelName;
+  if (instanceName != null) {
+    viewModelName = instanceName.viewModelName;
+  }
+  let flag;
+  if (instanceName != null) {
+    flag = instanceName.useNew;
+  }
+  if (flag == null) {
+    flag = false;
+  }
+  let flag2;
+  if (instanceName != null) {
+    flag2 = instanceName.required;
+  }
+  if (flag2 == null) {
+    flag2 = false;
+  }
+  let onInit;
+  if (instanceName != null) {
+    onInit = instanceName.onInit;
+  }
+  const tmp5 = viewModelName(onInit);
+  const ref = tmp5;
+  tmp5.current = onInit;
+  let obj = require("react");
+  const items = [arg0, instanceName, artboardName, viewModelName, flag];
+  const disposableMemo = obj.useDisposableMemo(() => {
+    let obj11;
+    if (closure_0) {
+      const tmp6 = null != obj && "getViewModelInstance" in obj;
+      if (tmp6) {
+        let viewModelInstance = obj.getViewModelInstance();
+        if (viewModelInstance == null) {
+          viewModelInstance = null;
         }
-        const self = this;
-        const self2 = this;
-        const promise = new Promise((arg0, arg1) => {
-          let closure_0 = arg1;
-          ref.current = setTimeout(() => {
-            const error = new Error("Rive view ready timeout");
-            closure_0(error);
-          }, 5000);
-        });
-        let awaitViewReadyResult;
-        if (current != null) {
-          awaitViewReadyResult = current.awaitViewReady();
-        }
-        const items = [awaitViewReadyResult, promise];
-        const raceResult = race(items);
-        const nextPromise = raceResult.then((result) => {
-          if (true === result) {
-            closure_2_1(current);
+        obj11 = { instance: viewModelInstance, needsDispose: false };
+        const obj2 = { instance: viewModelInstance, needsDispose: false };
+      } else {
+        const tmp7 = null != obj && "defaultArtboardViewModel" in obj;
+        if (tmp7) {
+          let viewModelByNameResult;
+          let instanceByName;
+          if (viewModelName) {
+            viewModelByNameResult = obj.viewModelByName(tmp3);
+            if (!viewModelByNameResult) {
+              const _HermesInternal3 = HermesInternal;
+              obj11 = { instance: null, needsDispose: false, error: "ViewModel '" + viewModelName + "' not found" };
+              const obj3 = { instance: null, needsDispose: false, error: "ViewModel '" + viewModelName + "' not found" };
+            }
           } else {
-            const _console = console;
-            console.warn("Rive view ready check returned false");
-            closure_2_1(null);
+            let ArtboardByNameResult;
+            const defaultArtboardViewModel = obj.defaultArtboardViewModel;
+            if (artboardName) {
+              const obj5 = ArtboardByIndex;
+              ArtboardByNameResult = obj5.ArtboardByName(tmp2);
+            }
+            viewModelByNameResult = defaultArtboardViewModel(ArtboardByNameResult);
+            if (!viewModelByNameResult) {
+              let obj6;
+              if (artboardName) {
+                const _HermesInternal2 = HermesInternal;
+                obj6 = { instance: null, needsDispose: false, error: "Artboard '" + artboardName + "' not found or has no ViewModel" };
+                const obj4 = { instance: null, needsDispose: false, error: "Artboard '" + artboardName + "' not found or has no ViewModel" };
+              } else {
+                obj6 = { instance: null, needsDispose: false };
+              }
+              obj11 = obj6;
+            }
           }
-        });
-        const catchPromise = nextPromise.catch((error) => {
-          console.warn("Failed to initialize Rive view:", error);
-          closure_1_1(null);
-        });
-        catchPromise.finally(() => {
-          if (ref.current) {
-            const _clearTimeout = clearTimeout;
-            clearTimeout(ref.current);
-            ref.current = null;
+          if (instanceName) {
+            instanceByName = viewModelByNameResult.createInstanceByName(tmp);
+          } else {
+            instanceByName = viewModelByNameResult.createDefaultInstance();
           }
-        });
+          if (!instanceByName) {
+            let obj7;
+            if (instanceName) {
+              obj7 = { instance: null, needsDispose: false, error: "ViewModel instance '" + instanceName + "' not found" };
+              const _HermesInternal4 = HermesInternal;
+            }
+            obj11 = obj7;
+          }
+          if (instanceByName == null) {
+            instanceByName = null;
+          }
+          obj7 = { instance: instanceByName, needsDispose: true };
+          const obj8 = { instance: instanceByName, needsDispose: true };
+        } else {
+          let instanceByName1;
+          if (instanceName) {
+            instanceByName1 = obj.createInstanceByName(tmp);
+            if (!instanceByName1) {
+              const _HermesInternal = HermesInternal;
+              obj11 = { instance: null, needsDispose: false, error: "ViewModel instance '" + instanceName + "' not found" };
+              const obj9 = { instance: null, needsDispose: false, error: "ViewModel instance '" + instanceName + "' not found" };
+            }
+          } else if (tmp4) {
+            instanceByName1 = obj.createInstance();
+          } else {
+            instanceByName1 = obj.createDefaultInstance();
+          }
+          if (instanceByName1 == null) {
+            instanceByName1 = null;
+          }
+          obj11 = { instance: instanceByName1, needsDispose: true };
+          const obj10 = { instance: instanceByName1, needsDispose: true };
+        }
       }
-    };
-    cResult[0] = fn;
-    first = fn;
-  } else {
-    first = cResult[0];
+    } else {
+      obj11 = { instance: "Path", needsDispose: true };
+    }
+    const current = obj11.instance && ref.current;
+    if (current) {
+      ref.current(obj11.instance);
+    }
+    return obj11;
+  }, (needsDispose) => {
+    const tmp = needsDispose.needsDispose && needsDispose.instance;
+    if (tmp) {
+      const obj = closure_0(instanceName[3]);
+      obj.callDispose(needsDispose.instance);
+    }
+  }, items);
+  const items1 = [disposableMemo.error];
+  let tmp7 = artboardName(function() {
+    let error = null;
+    if (disposableMemo.error) {
+      const _Error = Error;
+      const self = this;
+      const self2 = this;
+      error = new Error(tmp.error);
+    }
+    return error;
+  }, items1);
+  if (flag2) {
+    if (null === disposableMemo.instance) {
+      let str = "useViewModelInstance: Failed to get ViewModelInstance. Ensure the source has a valid ViewModel and instance available.";
+      let _Error = Error;
+      if (disposableMemo.error) {
+        let _HermesInternal = HermesInternal;
+        str = "useViewModelInstance: " + disposableMemo.error;
+      }
+      let self = this;
+      let self2 = this;
+      const _Error1 = new _Error(str);
+      throw _Error1;
+    }
   }
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { f: first };
-    cResult[1] = obj2;
-    tmp6 = obj2;
+  const instance = disposableMemo.instance;
+  if (instance) {
+    let obj2 = { instance, error: null };
+    obj3 = obj2;
+  } else if (undefined === instance) {
+    obj3 = { instance: "Array", error: 0 };
   } else {
-    tmp6 = cResult[1];
+    obj3 = { instance: null, error: tmp7 };
   }
-  if (cResult[2] !== tmp4) {
-    const obj3 = { riveRef: tmp2, riveViewRef: tmp4, setHybridRef: tmp6 };
-    cResult[2] = tmp4;
-    cResult[3] = obj3;
-    tmp7 = obj3;
-  } else {
-    tmp7 = cResult[3];
-  }
-  return tmp7;
+  return obj3;
 }

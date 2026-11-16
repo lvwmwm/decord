@@ -1,7 +1,7 @@
 // Module ID: 15313
 // Function ID: 15314
 // Name: PremiumPerkCarousel
-// Dependencies: [32, 19, 17, 21, 5306, 9986, 5929, 11215, 1187, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 9986, 5919, 11215, 1187, 2]
 // Exports: default
 
 // Module 15313 (PremiumPerkCarousel)

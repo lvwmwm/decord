@@ -1,7 +1,7 @@
 // Module ID: 17374
 // Function ID: 17375
 // Name: ContactSyncSettings
-// Dependencies: [5, 19, 1388, 14996, 1072, 21, 14997, 6015, 1113, 15001, 1256, 14993, 504, 5131, 1406, 8106, 6848, 17375, 2121, 2]
+// Dependencies: [5, 19, 1388, 14996, 1072, 21, 14997, 6005, 1113, 15001, 1256, 14993, 504, 5131, 1406, 8106, 6838, 17375, 2121, 2]
 // Exports: default, handleSyncContacts
 
 // Module 17374 (ContactSyncSettings)

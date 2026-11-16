@@ -1,15 +1,15 @@
 // Module ID: 15204
 // Function ID: 15205
 // Name: MediaModalOverlayHeader
-// Dependencies: [19, 17, 10233, 21, 5306, 15201, 10204, 12634, 5492, 1655, 5548, 10237, 10238, 1113, 7549, 1187, 575, 5929, 15205, 9148, 1380, 15206, 7420, 2]
+// Dependencies: [19, 17, 10233, 21, 5306, 15201, 10204, 12634, 5482, 1655, 5538, 10237, 10238, 1113, 7549, 1187, 575, 5919, 15205, 9148, 1380, 15206, 7420, 2]
 // Exports: MediaModalOverlayHeader
 
 // Module 15204 (MediaModalOverlayHeader)
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5492 */;
-import timing_timing from "timing/timing" /* 5548 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5482 */;
+import timing_timing from "timing/timing" /* 5538 */;
 import MediaShareActions from "MediaShareActions" /* 10204 */;
 import SharePreparingModalConstants from "SharePreparingModalConstants" /* 10233 */;
 import MediaViewerOverlayButtonDefault from "MediaViewerOverlayButton" /* 10238 */;
@@ -29,7 +29,7 @@ let metroRequire;
 let tmp2;
 const intl2 = tmp2(1113);
 const native = tmp2(1187);
-const Text_Text = tmp2(5929);
+const Text_Text = tmp2(5919);
 const XSmallIcon = tmp2(7549);
 const ContextMenu = tmp2(9148);
 const MediaModalOverlayHeaderWrapper2 = tmp2(10237);

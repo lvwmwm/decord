@@ -1,21 +1,21 @@
 // Module ID: 14540
 // Function ID: 14541
 // Name: TraitOptionItem
-// Dependencies: [17, 6377, 21, 575, 6744, 5306, 6378, 9436, 8263, 6423, 6020, 5378, 2]
+// Dependencies: [17, 6367, 21, 575, 6734, 5306, 6368, 9436, 8263, 6413, 6010, 5368, 2]
 // Exports: default
 
 // Module 14540 (TraitOptionItem)
 import nativeDefault from "native" /* 575 */;
-import react_native from "react-native" /* 5378 */;
-import FastImageDefault from "FastImage" /* 6020 */;
-import CheckpointTraitRarity from "CheckpointTraitRarity" /* 6378 */;
-import CheckpointCharacterAssets from "CheckpointCharacterAssets" /* 6423 */;
+import react_native from "react-native" /* 5368 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import CheckpointTraitRarity from "CheckpointTraitRarity" /* 6368 */;
+import CheckpointCharacterAssets from "CheckpointCharacterAssets" /* 6413 */;
 import inlineStyles from "inlineStyles" /* 8263 */;
 import react_native2 from "react-native" /* 17 */;
-import CheckpointConstants from "CheckpointConstants" /* 6377 */;
+import CheckpointConstants from "CheckpointConstants" /* 6367 */;
 import Fragment from "Fragment" /* 21 */;
 import "CheckpointCustomizationUtils";
-import CheckpointCustomizationUtils_mod from "CheckpointCustomizationUtils" /* 6744 */;
+import CheckpointCustomizationUtils_mod from "CheckpointCustomizationUtils" /* 6734 */;
 import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
@@ -120,7 +120,7 @@ function AssetShape(arg0) {
   num = 1;
   const Polygon = inlineStyles.Polygon;
   if (isSelected) {
-    num = tmp14(6744).TRAIT_OPTION_STROKE_WIDTH;
+    num = tmp14(6734).TRAIT_OPTION_STROKE_WIDTH;
   }
   items1[1] = metroImportAll(Polygon, obj5);
   let tmp13Result = !isNoneOption;

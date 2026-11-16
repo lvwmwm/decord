@@ -1,12 +1,12 @@
 // Module ID: 7747
 // Function ID: 7748
 // Name: TableRadioRow
-// Dependencies: [19, 21, 7745, 5378, 7443, 7461, 7748, 2]
+// Dependencies: [19, 21, 7745, 5368, 7443, 7461, 7748, 2]
 // Exports: TableRadioRow
 
 // Module 7747 (TableRadioRow)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 5378 */;
+import react_native from "react-native" /* 5368 */;
 import TableRowBadge from "TableRowBadge" /* 7461 */;
 import TableRadioGroup from "TableRadioGroup" /* 7745 */;
 import FormRadio from "FormRadio" /* 7748 */;

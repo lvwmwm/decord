@@ -1,13 +1,13 @@
 // Module ID: 10505
 // Function ID: 10506
 // Name: LanguageIcon
-// Dependencies: [19, 21, 575, 6019, 10506, 2]
+// Dependencies: [19, 21, 575, 6009, 10506, 2]
 // Exports: LanguageIcon
 
 // Module 10505 (LanguageIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6019 */;
+import BaseIconImage2 from "BaseIconImage" /* 6009 */;
 import AssetRegistry from "AssetRegistry" /* 10506 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

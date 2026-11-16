@@ -1,7 +1,7 @@
 // Module ID: 10242
 // Function ID: 10243
 // Name: ForwardModal
-// Dependencies: [5, 32, 19, 17, 8745, 8748, 10205, 5155, 6372, 10228, 10243, 10244, 21, 5306, 575, 1496, 10245, 504, 10240, 10239, 7499, 10262, 6015, 1113, 1255, 10264, 6270, 10265, 9069, 6063, 10266, 10267, 6356, 5554, 5555, 6014, 7943, 1380, 10270, 7427, 6029, 10271, 10272, 15179, 15158, 2]
+// Dependencies: [5, 32, 19, 17, 8745, 8748, 10205, 5155, 6362, 10228, 10243, 10244, 21, 5306, 575, 1496, 10245, 504, 10240, 10239, 7499, 10262, 6005, 1113, 1255, 10264, 6260, 10265, 9069, 6053, 10266, 10267, 6346, 5544, 5545, 6004, 7943, 1380, 10270, 7427, 6019, 10271, 10272, 15179, 15158, 2]
 // Exports: default
 
 // Module 10242 (ForwardModal)
@@ -9,11 +9,11 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import HapticUtils from "HapticUtils" /* 5554 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5555 */;
-import ToastUtils from "ToastUtils" /* 6014 */;
-import LinkIcon from "LinkIcon" /* 6029 */;
-import ChannelUtils from "ChannelUtils" /* 6356 */;
+import HapticUtils from "HapticUtils" /* 5544 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5545 */;
+import ToastUtils from "ToastUtils" /* 6004 */;
+import LinkIcon from "LinkIcon" /* 6019 */;
+import ChannelUtils from "ChannelUtils" /* 6346 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7427 */;
 import ClipboardUtils from "ClipboardUtils" /* 7943 */;
 import ForwardModalUtils from "ForwardModalUtils" /* 10239 */;
@@ -29,7 +29,7 @@ import ChannelConversationsStore from "ChannelConversationsStore" /* 8745 */;
 import ConversationPreviewStore from "ConversationPreviewStore" /* 8748 */;
 import ICYMIStore from "ICYMIStore" /* 10205 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
-import MessageStore from "MessageStore" /* 6372 */;
+import MessageStore from "MessageStore" /* 6362 */;
 import MessagePreviewStore from "MessagePreviewStore" /* 10228 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;

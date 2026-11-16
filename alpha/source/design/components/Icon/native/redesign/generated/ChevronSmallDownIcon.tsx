@@ -1,13 +1,13 @@
 // Module ID: 10560
 // Function ID: 10561
 // Name: ChevronSmallDownIcon
-// Dependencies: [19, 21, 575, 6019, 10561, 2]
+// Dependencies: [19, 21, 575, 6009, 10561, 2]
 // Exports: ChevronSmallDownIcon
 
 // Module 10560 (ChevronSmallDownIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6019 */;
+import BaseIconImage2 from "BaseIconImage" /* 6009 */;
 import AssetRegistry from "AssetRegistry" /* 10561 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

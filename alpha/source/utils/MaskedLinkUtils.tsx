@@ -1,17 +1,17 @@
 // Module ID: 7653
 // Function ID: 7654
 // Name: MaskedLinkUtils
-// Dependencies: [7654, 5155, 5177, 7655, 6372, 5248, 5209, 1072, 2070, 6268, 1113, 1256, 7656, 7067, 7657, 7659, 6008, 15949, 15953, 6347, 15954, 15956, 2]
+// Dependencies: [7654, 5155, 5177, 7655, 6362, 5248, 5209, 1072, 2070, 6258, 1113, 1256, 7656, 7067, 7657, 7659, 5998, 15949, 15953, 6337, 15954, 15956, 2]
 // Exports: handleClick, isLinkTrusted
 
 // Module 7653 (MaskedLinkUtils)
-import openURLDefault from "openURL" /* 6008 */;
+import openURLDefault from "openURL" /* 5998 */;
 import LinkAnalyticsUtilsDefault from "LinkAnalyticsUtils" /* 7657 */;
 import BlockedDomainStore from "BlockedDomainStore" /* 7654 */;
 import ChannelStore_mod from "ChannelStore" /* 5155 */;
 import GuildStore from "GuildStore" /* 5177 */;
 import MaskedLinkStore from "MaskedLinkStore" /* 7655 */;
-import MessageStore from "MessageStore" /* 6372 */;
+import MessageStore from "MessageStore" /* 6362 */;
 import RelationshipStore from "RelationshipStore" /* 5248 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
 import Constants from "Constants" /* 1072 */;
@@ -80,8 +80,8 @@ export function handleClick(href, preventDefault, arg2, contextKey) {
       preventDefault.preventDefault();
     }
     let obj2 = { title: intl.string(require("intl").t.x87gan), body: intl2.format(require("intl").t["9rqRwl"], obj3), isDismissable: true, contextKey };
-    const show3 = tmp(6268).show;
-    tmp(6268);
+    const show3 = tmp(6258).show;
+    tmp(6258);
     intl = require("intl").intl;
     intl2 = require("intl").intl;
     obj3 = { url: href.href };

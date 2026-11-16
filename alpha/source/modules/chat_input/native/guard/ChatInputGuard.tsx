@@ -1,14 +1,14 @@
 // Module ID: 14878
 // Function ID: 14879
 // Name: ChatInputGuard
-// Dependencies: [19, 17, 11865, 21, 5306, 575, 669, 9061, 14668, 14667, 10271, 1380, 14673, 7443, 7988, 10920, 10913, 5929, 5936, 6951, 7997, 2]
+// Dependencies: [19, 17, 11865, 21, 5306, 575, 669, 9061, 14668, 14667, 10271, 1380, 14673, 7443, 7988, 10920, 10913, 5919, 5926, 6941, 7997, 2]
 // Exports: ChatInputGuardContainer, default
 
 // Module 14878 (ChatInputGuard)
 import nativeDefault from "native" /* 575 */;
 import Radius from "Radius" /* 669 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import components_Button_Button from "components/Button/Button" /* 5936 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
 import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9061 */;
 import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 11865 */;
 import getChatInputPositionStyleDefault from "getChatInputPositionStyle" /* 14667 */;
@@ -123,13 +123,13 @@ export default function ChatInputGuard(type) {
         tmp13Result = null;
         if (subtext2.length > 0) {
           const obj = { style: tmp3.subtext, variant: "body-xs/medium", color: "text-muted", children: subtext2 };
-          tmp13Result = tmp13(tmp14(5929).Text, obj);
+          tmp13Result = tmp13(tmp14(5919).Text, obj);
         }
       }
     }
     items1[1] = tmp13Result;
     let tmp16Result = tmp15;
-    const ButtonGroup = tmp14(6951).ButtonGroup;
+    const ButtonGroup = tmp14(6941).ButtonGroup;
     if (null != buttonSecondaryText) {
       tmp16Result = tmp15;
       if (null != buttonSecondaryOnPress) {

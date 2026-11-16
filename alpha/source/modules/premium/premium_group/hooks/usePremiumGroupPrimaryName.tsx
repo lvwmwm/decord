@@ -1,11 +1,11 @@
 // Module ID: 15360
 // Function ID: 15361
 // Name: usePremiumGroupPrimaryName
-// Dependencies: [15361, 15365, 5372, 2]
+// Dependencies: [15361, 15365, 5362, 2]
 // Exports: default
 
 // Module 15360 (usePremiumGroupPrimaryName)
-import UserUtils from "UserUtils" /* 5372 */;
+import UserUtils from "UserUtils" /* 5362 */;
 import usePremiumGroupMembershipDefault from "usePremiumGroupMembership" /* 15361 */;
 import usePremiumGroupMembersDefault from "usePremiumGroupMembers" /* 15365 */;
 import size from "module_2" /* 2 */;

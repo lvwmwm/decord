@@ -1,7 +1,7 @@
 // Module ID: 12741
 // Function ID: 12742
 // Name: EmbeddedActivitiesActionCreators
-// Dependencies: [32, 5, 11406, 2165, 7016, 6863, 502, 5155, 5177, 5238, 1388, 5981, 5154, 2145, 1072, 1365, 5152, 12742, 8852, 12743, 12754, 12755, 12759, 12760, 572, 7341, 7342, 12761, 7346, 6758, 6380, 2151, 5977, 7864, 12762, 2119, 12763, 12769, 11397, 1256, 12770, 12778, 6838, 12779, 6268, 1113, 5980, 12780, 1264, 6851, 5227, 7025, 6066, 1285, 7660, 7665, 8660, 8134, 8786, 5140, 5139, 2]
+// Dependencies: [32, 5, 11406, 2165, 7016, 6853, 502, 5155, 5177, 5238, 1388, 5971, 5154, 2145, 1072, 1365, 5152, 12742, 8852, 12743, 12754, 12755, 12759, 12760, 572, 7341, 7342, 12761, 7346, 6748, 6370, 2151, 5967, 7864, 12762, 2119, 12763, 12769, 11397, 1256, 12770, 12778, 6828, 12779, 6258, 1113, 5970, 12780, 1264, 6841, 5227, 7025, 6056, 1285, 7660, 7665, 8660, 8134, 8786, 5140, 5139, 2]
 // Exports: consumeRequestToReactToSeriousThermalState, dismissNewActivityIndicator, disregardSeriousThermalState, maybeDisconnectFromCurrentActivity, refreshProxyTicket, requestRespondToSeriousThermalState, runPrimaryAppCommandOrJoinEmbeddedActivity, sendEmbeddedActivityInvite, sendEmbeddedActivityInviteUser, updateActivityPanelMode, updateActivityPopoutWindowLayout, updateFocusedActivityLayout, uploadImageAttachment, validateTestMode
 
 // Module 12741 (EmbeddedActivitiesActionCreators)
@@ -20,13 +20,13 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 7016 */;
-import PopoutWindowStore from "PopoutWindowStore" /* 6863 */;
+import PopoutWindowStore from "PopoutWindowStore" /* 6853 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import GuildStore from "GuildStore" /* 5177 */;
 import PermissionStore from "PermissionStore" /* 5238 */;
 import UserStore from "UserStore" /* 1388 */;
-import VoiceStateStore from "VoiceStateStore" /* 5981 */;
+import VoiceStateStore from "VoiceStateStore" /* 5971 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -39,7 +39,7 @@ let closure_19;
 let closure_20;
 let closure_21;
 let tmp2;
-const ChannelRTCActionCreatorsDefault = tmp2(6066);
+const ChannelRTCActionCreatorsDefault = tmp2(6056);
 let obj = function _runPrimaryAppCommandOrJoinEmbeddedActivity() {
   obj = _asyncToGenerator(async (channelId) => {
     let closure_8;

@@ -1,22 +1,22 @@
-// Module ID: 18741
-// Function ID: 18742
+// Module ID: 18743
+// Function ID: 18744
 // Name: messages/Messages
-// Dependencies: [19, 6800, 21, 7918, 7937, 1655, 17703, 18742, 18746, 18764, 1380, 18766, 18767, 18768, 15316, 18769, 8678, 9, 17702, 1113, 18770, 9504, 575, 18747, 18772, 18777, 18821, 18822, 14204, 2]
+// Dependencies: [19, 6790, 21, 7918, 7937, 1655, 17703, 18744, 18748, 18766, 1380, 18768, 18769, 18770, 15316, 18771, 8678, 9, 17702, 1113, 18772, 9504, 575, 18749, 18774, 18779, 18823, 18824, 14204, 2]
 
-// Module 18741 (messages/Messages)
+// Module 18743 (messages/Messages)
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import nativeDefault from "native" /* 575 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7918 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
 import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 8678 */;
-import useMessagesSpecsDefault from "useMessagesSpecs" /* 18746 */;
-import MessagesHeaderDefault from "MessagesHeader" /* 18747 */;
-import useMessagesDataDefault from "useMessagesData" /* 18764 */;
-import useMessagesScrollToTopDefault from "useMessagesScrollToTop" /* 18767 */;
-import useMessagesReconnectToCallsEffectDefault from "useMessagesReconnectToCallsEffect" /* 18768 */;
-import ChannelListPanelBackdropDefault from "ChannelListPanelBackdrop" /* 18770 */;
+import useMessagesSpecsDefault from "useMessagesSpecs" /* 18748 */;
+import MessagesHeaderDefault from "MessagesHeader" /* 18749 */;
+import useMessagesDataDefault from "useMessagesData" /* 18766 */;
+import useMessagesScrollToTopDefault from "useMessagesScrollToTop" /* 18769 */;
+import useMessagesReconnectToCallsEffectDefault from "useMessagesReconnectToCallsEffect" /* 18770 */;
+import ChannelListPanelBackdropDefault from "ChannelListPanelBackdrop" /* 18772 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6800 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6790 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -56,7 +56,7 @@ const memoResult = react.memo(function Messages(style) {
   const youBarTotalHeight = obj2.useYouBarTotalHeight();
   const obj3 = sections(17703);
   const youBarTotalHeight1 = obj3.useYouBarTotalHeight(-16);
-  const obj4 = sections(18742);
+  const obj4 = sections(18744);
   const doesLandOnHomeDrawer = obj4.useDoesLandOnHomeDrawer();
   ({ headerSize, listItemHeight, listItemSizes, listItemSuggestedFriendHeight, listLeft, listTop } = useMessagesSpecsDefault());
   useMessagesSpecsDefault();
@@ -77,7 +77,7 @@ const memoResult = react.memo(function Messages(style) {
   useMessagesScrollToTopDefault({ listRef: ref, listRefHappeningNow: ref1 });
   useMessagesReconnectToCallsEffectDefault();
   const tmp4Result = sections(15316);
-  const commonTriggerPoint = tmp4Result.useCommonTriggerPoint(tmp4(18769).DmGdmListRenderTriggerPoint);
+  const commonTriggerPoint = tmp4Result.useCommonTriggerPoint(tmp4(18771).DmGdmListRenderTriggerPoint);
   const layoutEffect = obj5.useLayoutEffect(() => {
     const obj = TTIAnalyticsUtils;
     obj.trackAppUIViewed();
@@ -115,13 +115,13 @@ const memoResult = react.memo(function Messages(style) {
   items2 = [closure_5(MessagesHeaderDefault, { height: headerSize, scrollPosition: sharedValue }), , ];
   tmp26 = closure_6;
   if (showFullscreenEmptyState) {
-    tmp24Result = tmp24(tmp(18772), {});
+    tmp24Result = tmp24(tmp(18774), {});
   } else {
     let tmp27;
     if ("legend" === list) {
-      tmp27 = 18777;
+      tmp27 = 18779;
     } else {
-      tmp27 = "flash" === list ? 18821 : 18822;
+      tmp27 = "flash" === list ? 18823 : 18824;
     }
     const obj11 = { ref };
     const tmpResult2 = importDefault(tmp27);

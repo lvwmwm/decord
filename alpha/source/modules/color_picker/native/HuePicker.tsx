@@ -1,7 +1,7 @@
 // Module ID: 17077
 // Function ID: 17078
 // Name: HuePicker
-// Dependencies: [32, 19, 17, 21, 5306, 575, 5598, 17074, 1708, 1655, 5893, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 575, 5588, 17074, 1708, 1655, 5883, 2]
 // Exports: default
 
 // Module 17077 (HuePicker)

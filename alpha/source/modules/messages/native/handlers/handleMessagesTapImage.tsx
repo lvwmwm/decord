@@ -1,12 +1,12 @@
 // Module ID: 12462
 // Function ID: 12463
 // Name: handleMessagesTapImage
-// Dependencies: [8744, 5248, 1388, 1072, 10198, 12460, 1095, 8633, 6012, 6384, 8627, 5954, 8033, 2]
+// Dependencies: [8744, 5248, 1388, 1072, 10198, 12460, 1095, 8633, 6002, 6374, 8627, 5944, 8033, 2]
 // Exports: handleMessagesTapImage
 
 // Module 12462 (handleMessagesTapImage)
 import Constants from "Constants" /* 1072 */;
-import LinkingDefault from "Linking" /* 6012 */;
+import LinkingDefault from "Linking" /* 6002 */;
 import MediaSourceUtil from "MediaSourceUtil" /* 8633 */;
 import ReferencedMessageStore from "ReferencedMessageStore" /* 8744 */;
 import RelationshipStore from "RelationshipStore" /* 5248 */;
@@ -125,7 +125,7 @@ export function handleMessagesTapImage(tapImageData) {
           const openMediaModal = tmp25(8627).openMediaModal;
           tmp25(8627);
           if (showContextName) {
-            const tmp25Result3 = tmp25(5954);
+            const tmp25Result3 = tmp25(5944);
             channelName = tmp25Result3.computeChannelName(messageChannel, UserStore, RelationshipStore, false);
           }
           channelIcon = undefined;
@@ -168,7 +168,7 @@ export function handleMessagesTapImage(tapImageData) {
                 const extractMediaSourcesFromComponent = embedId(8633).extractMediaSourcesFromComponent;
                 const guild_id = messageChannel.guild_id;
                 const tmp10Result13 = embedId(8633);
-                const tmp10Result14 = embedId(6384);
+                const tmp10Result14 = embedId(6374);
                 const result2 = extractMediaSourcesFromComponent(tmp7, components, guild_id, tmp10Result14.asComponentId(componentId), componentMediaIndex);
                 if (null != result2) {
                   ({ sources, initialIndex: closure_1 } = result2);

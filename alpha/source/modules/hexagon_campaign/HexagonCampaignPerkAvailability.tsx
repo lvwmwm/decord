@@ -2,7 +2,7 @@
 // Function ID: 5337
 // Name: HexagonCampaignPerkAvailability
 // Dependencies: [1388, 5337, 504, 5334, 2]
-// Exports: getHexagonCampaignPerkAvailabilityForCurrentUser, isHexagonCampaignPerkExpiredForCurrentUser, useHexagonCampaignPerkAvailability
+// Exports: getHexagonCampaignPerkAvailabilityForCurrentUser, isHexagonCampaignPerkExpiredForCurrentUser, useHexagonCampaignPerkAvailability, useHexagonCampaignPerkAvailabilityIgnoringExperiment
 
 // Module 5336 (HexagonCampaignPerkAvailability)
 import get_initialized from "get initialized" /* 504 */;
@@ -29,6 +29,21 @@ export function useHexagonCampaignPerkAvailability(DISPLAY_NAME_STYLE, HexagonCa
   const obj3 = HexagonCampaignUtils;
   const obj4 = { perk: DISPLAY_NAME_STYLE, premiumType: stateFromStores, isCampaignEnabled: isHexagonCampaignEnabled };
   return obj3.getHexagonCampaignPerkAvailability(obj4);
+}
+export function useHexagonCampaignPerkAvailabilityIgnoringExperiment(perk) {
+  const items = [UserStore];
+  const obj = get_initialized;
+  const stateFromStores = obj.useStateFromStores(items, () => {
+    currentUser = currentUser.getCurrentUser();
+    let premiumType;
+    if (currentUser != null) {
+      premiumType = currentUser.premiumType;
+    }
+    return premiumType;
+  });
+  const obj2 = HexagonCampaignUtils;
+  const obj3 = { perk, premiumType: stateFromStores, isCampaignEnabled: true };
+  return obj2.getHexagonCampaignPerkAvailability(obj3);
 }
 export function getHexagonCampaignPerkAvailabilityForCurrentUser(CLIENT_THEME, MobileThemesUtils) {
   let premiumType;

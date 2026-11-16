@@ -1,15 +1,15 @@
-// Module ID: 18928
-// Function ID: 18929
+// Module ID: 18930
+// Function ID: 18931
 // Name: HubSidebar
-// Dependencies: [19, 17, 5236, 5209, 1072, 6060, 21, 5306, 575, 14789, 1187, 504, 18929, 18930, 18225, 1113, 6063, 13997, 14705, 6023, 8460, 2]
+// Dependencies: [19, 17, 5236, 5209, 1072, 6050, 21, 5306, 575, 14789, 1187, 504, 18931, 18932, 18227, 1113, 6053, 13997, 14705, 6013, 8460, 2]
 // Exports: default
 
-// Module 18928 (HubSidebar)
+// Module 18930 (HubSidebar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 6060 */;
-import transitionToChannel from "transitionToChannel" /* 6063 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 6050 */;
+import transitionToChannel from "transitionToChannel" /* 6053 */;
 import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8460 */;
 import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 14705 */;
 import BaseChannelItem from "BaseChannelItem" /* 14789 */;
@@ -89,7 +89,7 @@ export default function HubSidebar(guild) {
     const tmp2 = null != stateFromStores && SelectedChannelStore.getChannelId() === tmp.id;
     return tmp2;
   });
-  guild(18929);
+  guild(18931);
   let tmp9Result = null;
   if (null != stateFromStores) {
     let row = null;
@@ -100,10 +100,10 @@ export default function HubSidebar(guild) {
     }
     const obj4 = { style: row, children: items4 };
     const obj5 = { guild };
-    items4 = [closure_7(stateFromStores(18930), obj5), , , ];
+    items4 = [closure_7(stateFromStores(18932), obj5), , , ];
     const obj6 = {
       active: stateFromStores1,
-      IconComponent: tmp(18225).CompassIcon,
+      IconComponent: tmp(18227).CompassIcon,
       label: intl.string(tmp(1113).t.K50GHd),
       handleItemClick() {
           const obj = transitionToChannel;
@@ -125,7 +125,7 @@ export default function HubSidebar(guild) {
     intl2 = tmp(1113).intl;
     items4[2] = closure_7(HubItem, obj7);
     const obj8 = {
-      IconComponent: tmp(6023).UserPlusIcon,
+      IconComponent: tmp(6013).UserPlusIcon,
       label: intl3.string(tmp(1113).t.MJQOuJ),
       handleItemClick() {
           const obj = instant_invite_InstantInviteUtils;

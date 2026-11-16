@@ -1,7 +1,7 @@
 // Module ID: 11700
 // Function ID: 11701
 // Name: CarouselLayout
-// Dependencies: [19, 17, 21, 11699, 11694, 11701, 1655, 11706, 11707, 11692, 11710, 5598, 11711, 11714]
+// Dependencies: [19, 17, 21, 11699, 11694, 11701, 1655, 11706, 11707, 11692, 11710, 5588, 11711, 11714]
 
 // Module 11700 (CarouselLayout)
 import react_native from "react-native" /* 17 */;

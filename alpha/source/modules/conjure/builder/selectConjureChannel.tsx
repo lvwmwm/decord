@@ -1,12 +1,12 @@
 // Module ID: 13813
 // Function ID: 13814
 // Name: selectConjureChannel
-// Dependencies: [5209, 5162, 6935, 2]
+// Dependencies: [5209, 5162, 6925, 2]
 // Exports: default
 
 // Module 13813 (selectConjureChannel)
 import ChannelConstants from "ChannelConstants" /* 5162 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6935 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6925 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
 import size from "module_2" /* 2 */;
 

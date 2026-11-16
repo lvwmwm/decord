@@ -1,15 +1,15 @@
 // Module ID: 11830
 // Function ID: 11831
 // Name: GiftingSKUSelectScreen
-// Dependencies: [32, 19, 17, 21, 5306, 575, 1630, 5929, 1113, 11831, 5936, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 575, 1630, 5919, 1113, 11831, 5926, 2]
 // Exports: default
 
 // Module 11830 (GiftingSKUSelectScreen)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import components_Button_Button from "components/Button/Button" /* 5936 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
 import GiftingSKUCardsGridDefault from "GiftingSKUCardsGrid" /* 11831 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

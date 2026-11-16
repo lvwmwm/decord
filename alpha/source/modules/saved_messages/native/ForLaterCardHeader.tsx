@@ -1,13 +1,13 @@
 // Module ID: 11932
 // Function ID: 11933
 // Name: ForLaterCardHeader
-// Dependencies: [17, 5177, 21, 5306, 575, 7963, 504, 7720, 10891, 1187, 8069, 5954, 8033, 1113, 5929, 2]
+// Dependencies: [17, 5177, 21, 5306, 575, 7963, 504, 7720, 10891, 1187, 8069, 5944, 8033, 1113, 5919, 2]
 // Exports: ForLaterCardHeader
 
 // Module 11932 (ForLaterCardHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useChannelNameDefault from "useChannelName" /* 5954 */;
+import useChannelNameDefault from "useChannelName" /* 5944 */;
 import GuildIconDefault from "GuildIcon" /* 7720 */;
 import ChevronSmallRightIcon from "ChevronSmallRightIcon" /* 7963 */;
 import GroupDMAvatarDefault from "GroupDMAvatar" /* 10891 */;
@@ -73,7 +73,7 @@ function ChannelName(channel) {
   }
   items1 = [tmp12, ];
   const obj6 = { style: tmp.channelName, variant: "body-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: formatToPlainStringResult };
-  items1[1] = closure_5(channel(5929).Text, obj6);
+  items1[1] = closure_5(channel(5919).Text, obj6);
   return tmp10(tmp11, obj4);
 }
 const View = react_native.View;

@@ -1,17 +1,17 @@
-// Module ID: 6241
-// Function ID: 6242
+// Module ID: 6231
+// Function ID: 6232
 // Name: VideoBackgroundUtils
-// Dependencies: [5155, 6071, 6237, 1072, 1414, 6067, 1256, 2]
+// Dependencies: [5155, 6061, 6227, 1072, 1414, 6057, 1256, 2]
 // Exports: getEffectAnalyticsType, getVideoBackgroundOptionFromProto, getVideoBackgroundProtoFromOption, isCustomBackgroundOption, isDefaultBackgroundOption, trackBackgroundOptionAdded, trackBackgroundOptionDeleted, trackBackgroundOptionUpdated
 
-// Module 6241 (VideoBackgroundUtils)
+// Module 6231 (VideoBackgroundUtils)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import AvatarUtils from "AvatarUtils" /* 1414 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6067 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6057 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6071 */;
-import VideoBackgroundConstants from "VideoBackgroundConstants" /* 6237 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
+import VideoBackgroundConstants from "VideoBackgroundConstants" /* 6227 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

@@ -1,14 +1,14 @@
 // Module ID: 13745
 // Function ID: 13746
 // Name: ConjureAppBuildRequestCard
-// Dependencies: [19, 17, 21, 5306, 575, 13583, 1113, 4131, 13211, 5929, 7988, 7549, 7746, 7443, 5552, 13746, 7859, 5936, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 13583, 1113, 4131, 13211, 5919, 7988, 7549, 7746, 7443, 5542, 13746, 7859, 5926, 2]
 // Exports: default
 
 // Module 13745 (ConjureAppBuildRequestCard)
 import nativeDefault from "native" /* 575 */;
 import intl8 from "intl" /* 1113 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5552 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5542 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import XSmallIcon from "XSmallIcon" /* 7549 */;
 import IconButton2 from "IconButton" /* 7988 */;
 import ConjureAppBuildRequest from "ConjureAppBuildRequest" /* 13583 */;
@@ -28,7 +28,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp2;
-const components_Button_Button = tmp2(5936);
+const components_Button_Button = tmp2(5926);
 const TableRow2 = tmp2(7443);
 const TableRowGroup2 = tmp2(7746);
 const TextArea2 = tmp2(7859);

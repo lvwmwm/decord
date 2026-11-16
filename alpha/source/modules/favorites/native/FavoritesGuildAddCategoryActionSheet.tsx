@@ -1,13 +1,13 @@
-// Module ID: 18870
-// Function ID: 18871
+// Module ID: 18872
+// Function ID: 18873
 // Name: FavoritesGuildAddCategoryActionSheet
-// Dependencies: [32, 19, 5168, 21, 5306, 575, 5180, 10944, 5552, 5566, 7913, 1113, 7619, 5936, 2]
+// Dependencies: [32, 19, 5168, 21, 5306, 575, 5180, 10944, 5542, 5556, 7913, 1113, 7619, 5926, 2]
 // Exports: openFavoritesGuildAddCategoryActionSheet
 
-// Module 18870 (FavoritesGuildAddCategoryActionSheet)
+// Module 18872 (FavoritesGuildAddCategoryActionSheet)
 import nativeDefault from "native" /* 575 */;
 import FavoritesConstants from "FavoritesConstants" /* 5168 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5542 */;
 import FavoritesActionCreators from "FavoritesActionCreators" /* 10944 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -48,7 +48,7 @@ function FavoritesGuildAddCategoryActionSheet() {
     }
   }, items);
   let obj2 = { contentStyles: tmp.content, bodyStyles: tmp.body, keyboardShouldPersistTaps: "always", header: closure_6(BottomSheetTitleHeader, obj3), children: items1 };
-  const BottomSheet = value(5566).BottomSheet;
+  const BottomSheet = value(5556).BottomSheet;
   obj3 = { title: intl.string(value(1113).t["ISN+NM"]) };
   BottomSheetTitleHeader = value(7913).BottomSheetTitleHeader;
   intl = value(1113).intl;
@@ -58,7 +58,7 @@ function FavoritesGuildAddCategoryActionSheet() {
   intl3 = value(1113).intl;
   items1 = [closure_6(TextInput, obj4), ];
   const obj5 = { text: intl4.string(value(1113).t.CumH4u), onPress: callback, disabled: !result };
-  const Button = value(5936).Button;
+  const Button = value(5926).Button;
   intl4 = value(1113).intl;
   items1[1] = closure_6(Button, obj5);
   return closure_7(BottomSheet, obj2);

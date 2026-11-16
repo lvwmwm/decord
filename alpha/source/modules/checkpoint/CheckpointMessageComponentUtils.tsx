@@ -1,23 +1,23 @@
-// Module ID: 6398
-// Function ID: 6399
+// Module ID: 6388
+// Function ID: 6389
 // Name: checkpoint/CheckpointMessageComponentUtils
-// Dependencies: [6377, 6079, 11, 6399, 6400, 6401, 6421, 6743, 1113, 3317, 6386, 5252, 6747, 6748, 3285, 2024, 2119, 2]
+// Dependencies: [6367, 6069, 11, 6389, 6390, 6391, 6411, 6733, 1113, 3317, 6376, 5252, 6737, 6738, 3285, 2024, 2119, 2]
 // Exports: formatCheckpoint2026PowerLevel, getCharacterLayerUrls, getCheckpoint2026PowerBarUnits, getCheckpointDataFromMessage, getCheckpointLabel, toCheckpointMessageComponentData, transformCheckpoint2026CardComponent, transformCheckpoint2026CardToRowGeneratedComponent
 
-// Module 6398 (checkpoint/CheckpointMessageComponentUtils)
+// Module 6388 (checkpoint/CheckpointMessageComponentUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl18 from "intl" /* 1113 */;
 import Server from "Server" /* 2119 */;
 import _modDef3285 from "module_3285" /* 3285 */;
 import _modDef3317 from "module_3317" /* 3317 */;
-import TimeUtils from "TimeUtils" /* 6079 */;
-import CheckpointUtils from "CheckpointUtils" /* 6386 */;
-import CheckpointCardColorPalette from "CheckpointCardColorPalette" /* 6399 */;
-import CheckpointCardTypes from "CheckpointCardTypes" /* 6400 */;
-import CheckpointCardColors from "CheckpointCardColors" /* 6401 */;
-import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6421 */;
-import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6747 */;
-import CheckpointConstants from "CheckpointConstants" /* 6377 */;
+import TimeUtils from "TimeUtils" /* 6069 */;
+import CheckpointUtils from "CheckpointUtils" /* 6376 */;
+import CheckpointCardColorPalette from "CheckpointCardColorPalette" /* 6389 */;
+import CheckpointCardTypes from "CheckpointCardTypes" /* 6390 */;
+import CheckpointCardColors from "CheckpointCardColors" /* 6391 */;
+import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6411 */;
+import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6737 */;
+import CheckpointConstants from "CheckpointConstants" /* 6367 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

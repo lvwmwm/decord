@@ -1,7 +1,7 @@
 // Module ID: 16335
 // Function ID: 16336
 // Name: FormDropdown
-// Dependencies: [19, 21, 7443, 5929, 8092, 2]
+// Dependencies: [19, 21, 7443, 5919, 8092, 2]
 // Exports: default
 
 // Module 16335 (FormDropdown)
@@ -25,7 +25,7 @@ export default function FormDropdown(arg0) {
   const TableRow = TableRow2.TableRow;
   if (label == null) {
     const obj2 = { variant: "body-md/medium", color: "text-muted", children: placeholder };
-    label = tmp(tmp2(5929).Text, obj2);
+    label = tmp(tmp2(5919).Text, obj2);
   }
   let tmpResult;
   if (disabled) {

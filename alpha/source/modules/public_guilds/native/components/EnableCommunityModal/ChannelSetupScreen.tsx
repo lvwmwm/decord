@@ -1,16 +1,16 @@
-// Module ID: 20627
-// Function ID: 20628
+// Module ID: 20630
+// Function ID: 20631
 // Name: ChannelSetupScreen
-// Dependencies: [19, 17, 8405, 5155, 5236, 5248, 1388, 8407, 1072, 21, 5902, 575, 20616, 504, 5954, 1113, 20617, 5552, 8009, 2121, 8404, 20614, 5929, 6020, 6337, 7746, 7443, 2]
+// Dependencies: [19, 17, 8405, 5155, 5236, 5248, 1388, 8407, 1072, 21, 5892, 575, 20619, 504, 5944, 1113, 20620, 5542, 8009, 2121, 8404, 20617, 5919, 6010, 6327, 7746, 7443, 2]
 // Exports: default
 
-// Module 20627 (ChannelSetupScreen)
+// Module 20630 (ChannelSetupScreen)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl13 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
 import GuildChannelStore2 from "GuildChannelStore" /* 5236 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import PublicGuildsConstants from "PublicGuildsConstants" /* 8407 */;
 import react from "react" /* 19 */;
 import GuildSettingsStore from "GuildSettingsStore" /* 8405 */;
@@ -56,9 +56,9 @@ export default function ChannelSetupScreen() {
   let rulesChannel;
   let tmp = react;
   const ref = react.useRef(null);
-  let obj = guild(5902);
+  let obj = guild(5892);
   const token = obj.useToken(callback(575).modules.mobile.TABLE_ROW_PADDING);
-  let obj2 = guild(20616);
+  let obj2 = guild(20619);
   const enableCommunitySharedStyles = obj2.useEnableCommunitySharedStyles();
   let obj3 = guild(504);
   let items = [GuildSettingsStore];
@@ -83,7 +83,7 @@ export default function ChannelSetupScreen() {
     return obj;
   });
   ({ rulesChannel, publicUpdatesChannel } = stateFromStoresObject);
-  let stringResult = callback(5954)(rulesChannel, true);
+  let stringResult = callback(5944)(rulesChannel, true);
   if (stringResult == null) {
     let PoWNfe;
     let intl = tmp3(1113).intl;
@@ -99,7 +99,7 @@ export default function ChannelSetupScreen() {
     }
     stringResult = string(PoWNfe);
   }
-  let tmp12 = tmp5(5954)(publicUpdatesChannel, true);
+  let tmp12 = tmp5(5944)(publicUpdatesChannel, true);
   if (tmp12 == null) {
     let stringResult1;
     let prop;
@@ -116,7 +116,7 @@ export default function ChannelSetupScreen() {
     tmp12 = stringResult1;
   }
   let id;
-  const tmp16 = callback(20617)();
+  const tmp16 = callback(20620)();
   const useCallback = tmp.useCallback;
   if (guild != null) {
     id = guild.id;
@@ -229,26 +229,26 @@ export default function ChannelSetupScreen() {
     }
     openLazy(tmp2, "SelectUpdatesChannel", obj);
   }, items4);
-  const obj5 = { headerRef: ref, disableNextStep: false, currentStep: guild(20614).EnableCommunityModalSteps.STEP_2, children: items6 };
-  const EnableCommunityModalScreen = tmp3(20614).EnableCommunityModalScreen;
+  const obj5 = { headerRef: ref, disableNextStep: false, currentStep: guild(20617).EnableCommunityModalSteps.STEP_2, children: items6 };
+  const EnableCommunityModalScreen = tmp3(20617).EnableCommunityModalScreen;
   const obj6 = { style: enableCommunitySharedStyles.content, children: items5 };
   const obj7 = { ref, accessibilityRole: "header", variant: "body-md/semibold", color: "text-subtle", children: intl4.formatToPlainString(guild(1113).t.tInpJj, { number: 2, total: 3 }) };
-  const Text = tmp3(5929).Text;
+  const Text = tmp3(5919).Text;
   intl4 = tmp3(1113).intl;
   items5 = [closure_13(Text, obj7), , , ];
   const obj8 = { resizeMode: "contain", source: tmp16.channelSetup };
-  items5[1] = closure_13(callback(6020), obj8);
+  items5[1] = closure_13(callback(6010), obj8);
   const obj9 = { style: enableCommunitySharedStyles.header, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl5.string(guild(1113).t.YtXpEh) };
-  const Heading = tmp3(5929).Heading;
+  const Heading = tmp3(5919).Heading;
   intl5 = tmp3(1113).intl;
   items5[2] = closure_13(Heading, obj9);
   const obj10 = { style: enableCommunitySharedStyles.description, variant: "body-md/medium", color: "text-subtle", children: intl6.string(guild(1113).t["J/fYR8"]) };
-  const Text2 = tmp3(5929).Text;
+  const Text2 = tmp3(5919).Text;
   intl6 = tmp3(1113).intl;
   items5[3] = closure_13(Text2, obj10);
   items6 = [closure_14(View, obj6), ];
   const obj11 = { spacing: 24, style: { paddingHorizontal: token }, children: items7 };
-  const Stack = tmp3(6337).Stack;
+  const Stack = tmp3(6327).Stack;
   const obj12 = { helperText: intl7.string(guild(1113).t["+Af+Vw"]), hasIcons: false, children: closure_13(TableRow, obj13) };
   const TableRowGroup = tmp3(7746).TableRowGroup;
   intl7 = tmp3(1113).intl;

@@ -1,7 +1,7 @@
 // Module ID: 9587
 // Function ID: 9588
 // Name: BillingActionCreators
-// Dependencies: [109, 5, 19, 9588, 9589, 1388, 2179, 9302, 1072, 1083, 21, 3, 1251, 510, 1256, 1285, 5118, 9763, 8580, 9765, 9410, 572, 6767, 1380, 7272, 12, 9585, 9788, 1113, 9684, 6269, 9688, 2121, 6848, 9580, 9611, 2185, 9615, 6757, 9790, 9926, 5126, 6851, 1264, 9927, 9928, 5167, 9929, 9714, 9930, 1269, 2]
+// Dependencies: [109, 5, 19, 9588, 9589, 1388, 2179, 9302, 1072, 1083, 21, 3, 1251, 510, 1256, 1285, 5118, 9763, 8580, 9765, 9410, 572, 6757, 1380, 7272, 12, 9585, 9788, 1113, 9684, 6259, 9688, 2121, 6838, 9580, 9611, 2185, 9615, 6747, 9790, 9926, 5126, 6841, 1264, 9927, 9928, 5167, 9929, 9714, 9930, 1269, 2]
 // Exports: applyTransactionFromListener, cancelGenericSubscription, createGenericSubscription, migrateToACOM, mobilePurchaseSKU, modifyGenericSubscription, resubscribeGenericSubscription
 
 // Module 9587 (BillingActionCreators)
@@ -14,10 +14,10 @@ import intl9 from "intl" /* 1113 */;
 import _modDef1251 from "module_1251" /* 1251 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
 import BillingUtils from "BillingUtils" /* 5118 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6269 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 6757 */;
-import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6767 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6851 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6259 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 6747 */;
+import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6757 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6841 */;
 import ProductIds from "ProductIds" /* 8580 */;
 import ACOMExperiments from "ACOMExperiments" /* 9410 */;
 import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 9585 */;
@@ -393,7 +393,7 @@ function handlePurchaseException(code, purchase_type, arg2, orderId) {
     if (!(code instanceof V6OrEarlierAPIError.BillingError)) {
       const self = this;
       const self2 = this;
-      billingError = new tmp(6757).BillingError(code);
+      billingError = new tmp(6747).BillingError(code);
     }
     if (isSpendingLimitError(billingError)) {
       const tmpResult = showSpendingLimitReachedAlert;
@@ -492,7 +492,7 @@ function handlePurchaseException(code, purchase_type, arg2, orderId) {
         if (!(code instanceof V6OrEarlierAPIError.BillingError)) {
           const self3 = this;
           const self4 = this;
-          billingError1 = new tmp(6757).BillingError(code);
+          billingError1 = new tmp(6747).BillingError(code);
         }
         const tmp34 = message4 === stringResult && flag && billingError1.code !== tmp(5126).ErrorCodes.UNKNOWN && -1 !== billingError1.code && null != billingError1.message;
         if (tmp34) {

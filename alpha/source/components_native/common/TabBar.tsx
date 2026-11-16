@@ -1,13 +1,13 @@
 // Module ID: 11873
 // Function ID: 11874
 // Name: TabBar
-// Dependencies: [32, 19, 17, 21, 5306, 575, 7888, 5598, 1113, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 575, 7888, 5588, 1113, 2]
 // Exports: default
 
 // Module 11873 (TabBar)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5598 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5588 */;
 import defaultMVCPConfig from "defaultMVCPConfig" /* 7888 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

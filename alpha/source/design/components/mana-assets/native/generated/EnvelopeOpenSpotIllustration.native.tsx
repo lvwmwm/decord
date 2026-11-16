@@ -1,7 +1,7 @@
 // Module ID: 7758
 // Function ID: 7759
 // Name: EnvelopeOpenSpotIllustration
-// Dependencies: [19, 21, 7759, 7760, 7761, 7755, 6020, 2]
+// Dependencies: [19, 21, 7759, 7760, 7761, 7755, 6010, 2]
 // Exports: EnvelopeOpenSpotIllustration
 
 // Module 7758 (EnvelopeOpenSpotIllustration)

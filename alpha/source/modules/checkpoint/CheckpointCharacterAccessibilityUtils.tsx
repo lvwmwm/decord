@@ -1,14 +1,14 @@
-// Module ID: 6743
-// Function ID: 6744
+// Module ID: 6733
+// Function ID: 6734
 // Name: CheckpointCharacterAccessibilityUtils
-// Dependencies: [6744, 6421, 6746, 1113, 3317, 2]
+// Dependencies: [6734, 6411, 6736, 1113, 3317, 2]
 // Exports: getCheckpointCharacterAccessibilityLabel
 
-// Module 6743 (CheckpointCharacterAccessibilityUtils)
+// Module 6733 (CheckpointCharacterAccessibilityUtils)
 import _modDef3317 from "module_3317" /* 3317 */;
-import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6421 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6744 */;
-import CheckpointTraitOptionNames from "CheckpointTraitOptionNames" /* 6746 */;
+import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6411 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6734 */;
+import CheckpointTraitOptionNames from "CheckpointTraitOptionNames" /* 6736 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -43,7 +43,7 @@ export function getCheckpointCharacterAccessibilityLabel(character) {
         } else if (CheckpointCustomizationUtils.CheckpointCustomizationOption.OUTFIT_COLOR === item) {
           const tmpResult5 = CheckpointCharacterTraits;
           if (tmpResult5.getOutfitDefaultOptionId(tmp3) !== tmp3) {
-            tmp6 = tmp(6746).CHECKPOINT_OUTFIT_TO_COLOR_NAME[tmp3];
+            tmp6 = tmp(6736).CHECKPOINT_OUTFIT_TO_COLOR_NAME[tmp3];
           }
         } else {
           tmp6 = tmp7[tmp3];

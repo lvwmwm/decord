@@ -1,13 +1,13 @@
 // Module ID: 13280
 // Function ID: 13281
 // Name: Tag
-// Dependencies: [19, 17, 21, 5306, 13278, 575, 13281, 5929, 2]
+// Dependencies: [19, 17, 21, 5306, 13278, 575, 13281, 5919, 2]
 // Exports: Tag
 
 // Module 13280 (Tag)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import TagGroupTypes from "TagGroupTypes" /* 13278 */;
 import TagGraphic from "TagGraphic" /* 13281 */;
 import react from "react" /* 19 */;

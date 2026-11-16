@@ -1,7 +1,7 @@
 // Module ID: 12040
 // Function ID: 12041
 // Name: SafetyWarningBanner
-// Dependencies: [19, 17, 21, 5306, 575, 6771, 6776, 12038, 1113, 1187, 12041, 6020, 12042, 5929, 5936, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 6761, 6766, 12038, 1113, 1187, 12041, 6010, 12042, 5919, 5926, 2]
 
 // Module 12040 (SafetyWarningBanner)
 import nativeDefault from "native" /* 575 */;

@@ -1,9 +1,9 @@
-// Module ID: 19081
-// Function ID: 19082
+// Module ID: 19083
+// Function ID: 19084
 // Name: InvitesDisabledBadge
 // Dependencies: [19, 17, 21, 5306, 575, 1187, 15086, 2]
 
-// Module 19081 (InvitesDisabledBadge)
+// Module 19083 (InvitesDisabledBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

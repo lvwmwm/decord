@@ -1,12 +1,12 @@
 // Module ID: 15520
 // Function ID: 15521
 // Name: useRecommendedCollectiblesSections
-// Dependencies: [19, 15521, 15522, 5917, 15523, 2]
+// Dependencies: [19, 15521, 15522, 5907, 15523, 2]
 // Exports: default
 
 // Module 15520 (useRecommendedCollectiblesSections)
 import react from "react" /* 19 */;
-import reactDefault from "react" /* 5917 */;
+import reactDefault from "react" /* 5907 */;
 import CollectiblesRecommendationStore from "CollectiblesRecommendationStore" /* 15521 */;
 import size from "module_2" /* 2 */;
 

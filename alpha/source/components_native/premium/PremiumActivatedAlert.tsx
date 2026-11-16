@@ -1,7 +1,7 @@
 // Module ID: 9688
 // Function ID: 9689
 // Name: PremiumActivatedAlert
-// Dependencies: [19, 17, 1072, 21, 5306, 6961, 2174, 9689, 9690, 9691, 9692, 9693, 9607, 9608, 9694, 9695, 9696, 9697, 9698, 9319, 9699, 5313, 9700, 9701, 9702, 9703, 9704, 9705, 9706, 9707, 9708, 1113, 5547, 6340, 6020, 9709, 9710, 1187, 2]
+// Dependencies: [19, 17, 1072, 21, 5306, 6951, 2174, 9689, 9690, 9691, 9692, 9693, 9607, 9608, 9694, 9695, 9696, 9697, 9698, 9319, 9699, 5313, 9700, 9701, 9702, 9703, 9704, 9705, 9706, 9707, 9708, 1113, 5537, 6330, 6010, 9709, 9710, 1187, 2]
 // Exports: default
 
 // Module 9688 (PremiumActivatedAlert)
@@ -9,10 +9,10 @@ import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
 import PremiumUtils from "PremiumUtils" /* 2174 */;
 import shared from "shared" /* 5313 */;
-import useThemeDefault from "useTheme" /* 5547 */;
-import FastImageDefault from "FastImage" /* 6020 */;
-import AlertDefault from "Alert" /* 6340 */;
-import LegacyTokens from "LegacyTokens" /* 6961 */;
+import useThemeDefault from "useTheme" /* 5537 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import AlertDefault from "Alert" /* 6330 */;
+import LegacyTokens from "LegacyTokens" /* 6951 */;
 import AssetRegistryDefault from "AssetRegistry" /* 9709 */;
 import ShineAnimationDefault from "ShineAnimation" /* 9710 */;
 import react from "react" /* 19 */;

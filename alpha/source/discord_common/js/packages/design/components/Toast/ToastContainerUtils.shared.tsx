@@ -1,7 +1,7 @@
 // Module ID: 16486
 // Function ID: 16487
 // Name: DEFAULT_TOAST_POSITION
-// Dependencies: [32, 19, 5317, 6017, 5320, 5315, 2]
+// Dependencies: [32, 19, 5317, 6007, 5320, 5315, 2]
 // Exports: useToastContainer
 
 // Module 16486 (DEFAULT_TOAST_POSITION)
@@ -69,7 +69,7 @@ export function useToastContainer(app) {
     const value = containerIdsBySurface.get(closure_0);
     return null != value && value[value.length - 1] === id;
   });
-  const obj2 = require("module_6017");
+  const obj2 = require("module_6007");
   const tmp5 = entry;
   entry = undefined;
   const tmp4 = _require;

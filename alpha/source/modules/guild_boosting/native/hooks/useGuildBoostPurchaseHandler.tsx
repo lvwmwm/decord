@@ -1,7 +1,7 @@
 // Module ID: 10744
 // Function ID: 10745
 // Name: useGuildBoostPurchaseHandler
-// Dependencies: [5, 19, 1072, 3, 9713, 9684, 9716, 1256, 6269, 1113, 6952, 2]
+// Dependencies: [5, 19, 1072, 3, 9713, 9684, 9716, 1256, 6259, 1113, 6942, 2]
 // Exports: default
 
 // Module 10744 (useGuildBoostPurchaseHandler)

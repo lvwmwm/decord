@@ -1,7 +1,7 @@
 // Module ID: 15389
 // Function ID: 15390
 // Name: PremiumGroupEducationActionSheet
-// Dependencies: [17, 2187, 21, 5306, 575, 5566, 7623, 5929, 1113, 3513, 2]
+// Dependencies: [17, 2187, 21, 5306, 575, 5556, 7623, 5919, 1113, 3513, 2]
 // Exports: default
 
 // Module 15389 (PremiumGroupEducationActionSheet)
@@ -10,8 +10,8 @@ import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import PremiumGroupConstants from "PremiumGroupConstants" /* 2187 */;
 import _modDef3513 from "module_3513" /* 3513 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5566 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5556 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import CircleErrorIcon from "CircleErrorIcon" /* 7623 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;

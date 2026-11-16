@@ -1,11 +1,11 @@
 // Module ID: 17699
 // Function ID: 17700
 // Name: QuestDockGestureContext
-// Dependencies: [19, 17696, 5338, 17698, 21, 7848, 1496, 1655, 17700, 1630, 17697, 13810, 2]
+// Dependencies: [19, 17696, 6954, 17698, 21, 7848, 1496, 1655, 17700, 1630, 17697, 13810, 2]
 
 // Module 17699 (QuestDockGestureContext)
 import Fragment from "Fragment" /* 21 */;
-import QuestConstants from "QuestConstants" /* 5338 */;
+import QuestConstants from "QuestConstants" /* 6954 */;
 import subscribeToWindowDimensionsDefault from "subscribeToWindowDimensions" /* 13810 */;
 import QuestDockConstants from "QuestDockConstants" /* 17698 */;
 import react from "react" /* 19 */;

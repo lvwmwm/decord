@@ -1,29 +1,29 @@
-// Module ID: 19071
-// Function ID: 19072
+// Module ID: 19073
+// Function ID: 19074
 // Name: GuildsBarGuildFolder
-// Dependencies: [19, 5307, 7060, 5177, 5349, 6956, 19063, 19068, 19060, 21, 5306, 575, 5902, 504, 7720, 5939, 5303, 1090, 1655, 5377, 1708, 6020, 8036, 19072, 19075, 13787, 19082, 1113, 5554, 6917, 7722, 19065, 19083, 2]
+// Dependencies: [19, 5307, 7060, 5177, 5339, 6946, 19065, 19070, 19062, 21, 5306, 575, 5892, 504, 7720, 5929, 5303, 1090, 1655, 5367, 1708, 6010, 8036, 19074, 19077, 13787, 19084, 1113, 5544, 6907, 7722, 19067, 19085, 2]
 
-// Module 19071 (GuildsBarGuildFolder)
+// Module 19073 (GuildsBarGuildFolder)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
 import intl3 from "intl" /* 1113 */;
-import native from "native" /* 5377 */;
-import useToken from "useToken" /* 5902 */;
-import FastImageDefault from "FastImage" /* 6020 */;
-import SortedGuildStore2 from "SortedGuildStore" /* 6956 */;
+import native from "native" /* 5367 */;
+import useToken from "useToken" /* 5892 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import SortedGuildStore2 from "SortedGuildStore" /* 6946 */;
 import NativeViewDefault from "NativeView" /* 7722 */;
 import AssetRegistryDefault from "AssetRegistry" /* 8036 */;
 import ListUtils from "ListUtils" /* 13787 */;
-import GuildsBarFolderMenuItems from "GuildsBarFolderMenuItems" /* 19065 */;
+import GuildsBarFolderMenuItems from "GuildsBarFolderMenuItems" /* 19067 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import GuildReadStateStore from "GuildReadStateStore" /* 7060 */;
 import GuildStore from "GuildStore" /* 5177 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5349 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 19063 */;
-import GuildsBarConstants_mod from "guilds_bar/GuildsBarConstants" /* 19068 */;
-import GuildsBarConstants_mod2 from "GuildsBarConstants" /* 19060 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 19065 */;
+import GuildsBarConstants_mod from "guilds_bar/GuildsBarConstants" /* 19070 */;
+import GuildsBarConstants_mod2 from "GuildsBarConstants" /* 19062 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;

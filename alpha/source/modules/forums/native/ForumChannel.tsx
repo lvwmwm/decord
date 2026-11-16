@@ -1,7 +1,7 @@
 // Module ID: 15125
 // Function ID: 15126
 // Name: ForumChannel
-// Dependencies: [19, 17, 5239, 7035, 5155, 8725, 6937, 14610, 1072, 12009, 1083, 21, 5306, 575, 6826, 9060, 5929, 1113, 9107, 11896, 504, 15126, 14632, 9, 10461, 10286, 7428, 10281, 7924, 5552, 15128, 2121, 5936, 12100, 15129, 9521, 9114, 15130, 5954, 14637, 14609, 15131, 7888, 8866, 10271, 6015, 6037, 7287, 7918, 7937, 7683, 12363, 12328, 12351, 9112, 15134, 9004, 11151, 11240, 5554, 5555, 11238, 7684, 5913, 12008, 12361, 5942, 15122, 8004, 15138, 14684, 2]
+// Dependencies: [19, 17, 5239, 7035, 5155, 8725, 6927, 14610, 1072, 12009, 1083, 21, 5306, 575, 6816, 9060, 5919, 1113, 9107, 11896, 504, 15126, 14632, 9, 10461, 10286, 7428, 10281, 7924, 5542, 15128, 2121, 5926, 12100, 15129, 9521, 9114, 15130, 5944, 14637, 14609, 15131, 7888, 8866, 10271, 6005, 6027, 7287, 7918, 7937, 7683, 12363, 12328, 12351, 9112, 15134, 9004, 11151, 11240, 5544, 5545, 11238, 7684, 5903, 12008, 12361, 5932, 15122, 8004, 15138, 14684, 2]
 // Exports: default
 
 // Module 15125 (ForumChannel)
@@ -10,10 +10,10 @@ import nativeDefault from "native" /* 575 */;
 import Constants2 from "Constants" /* 1083 */;
 import intl3 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 6015 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 6037 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 6027 */;
 import Tracking from "Tracking" /* 8866 */;
 import DraftActionCreatorsDefault from "DraftActionCreators" /* 9004 */;
 import ClientThemesOverrides from "ClientThemesOverrides" /* 9060 */;
@@ -30,11 +30,11 @@ import LurkingStore from "LurkingStore" /* 5239 */;
 import ActiveThreadsStore from "ActiveThreadsStore" /* 7035 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import DraftStore from "DraftStore" /* 8725 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 6937 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 6927 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
-import TextStyles_mod from "TextStyles" /* 6826 */;
+import TextStyles_mod from "TextStyles" /* 6816 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -190,7 +190,7 @@ function SortAndViewOptions(channel) {
     obj.openLazy(asyncRequire(15128, dependencyMap.paths), combined, obj2);
   }, items);
   const isMediaChannelResult = channel.isMediaChannel();
-  const Button = id(5936).Button;
+  const Button = id(5926).Button;
   const intl = id(1113).intl;
   const string = intl.string;
   const t = id(1113).t;
@@ -217,7 +217,7 @@ function TagFilter(channel) {
     size: "sm",
     icon: closure_15(channel(9521).TagIcon, { size: "xxs" })
   };
-  const Button = channel(5936).Button;
+  const Button = channel(5926).Button;
   intl = channel(1113).intl;
   return closure_15(Button, obj);
 }

@@ -1,7 +1,7 @@
 // Module ID: 14209
 // Function ID: 14210
 // Name: AppealIngestionCollectSignal
-// Dependencies: [19, 17, 8206, 21, 5306, 575, 5378, 8106, 8205, 14182, 572, 5552, 14210, 2121, 1113, 14188, 5929, 2]
+// Dependencies: [19, 17, 8206, 21, 5306, 575, 5368, 8106, 8205, 14182, 572, 5542, 14210, 2121, 1113, 14188, 5919, 2]
 // Exports: default
 
 // Module 14209 (AppealIngestionCollectSignal)
@@ -9,7 +9,7 @@ import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import react_native2 from "react-native" /* 5378 */;
+import react_native2 from "react-native" /* 5368 */;
 import _mod8106 from "module_8106" /* 8106 */;
 import SafetyHubUtils from "SafetyHubUtils" /* 8205 */;
 import react from "react" /* 19 */;
@@ -27,7 +27,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp;
-const ActionSheetActionCreatorsDefault = tmp(5552);
+const ActionSheetActionCreatorsDefault = tmp(5542);
 function AppealSignalRadioRow(signal) {
   let Label;
   let accessibilityRole;
@@ -132,7 +132,7 @@ export default function AppealIngestionCollectSignal(isDsaEligible) {
   items1 = [closure_6(FormSection, obj5), ];
   const obj6 = { style: tmp.disclaimer, children: closure_6(Text, obj7) };
   obj7 = { variant: "body-sm/normal", children: intl3.format(isDsaEligible(1113).t["8k9GCW"], {}) };
-  Text = isDsaEligible(5929).Text;
+  Text = isDsaEligible(5919).Text;
   intl3 = isDsaEligible(1113).intl;
   items1[1] = closure_6(handleAppealSignalSelect, obj6);
   items[1] = closure_6(handleAppealSignalSelect, obj3);

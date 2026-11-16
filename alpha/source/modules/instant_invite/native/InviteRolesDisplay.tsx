@@ -1,7 +1,7 @@
 // Module ID: 10934
 // Function ID: 10935
 // Name: InviteRolesDisplay
-// Dependencies: [19, 17, 5212, 21, 5306, 504, 5929, 1113, 10935, 2]
+// Dependencies: [19, 17, 5212, 21, 5306, 504, 5919, 1113, 10935, 2]
 // Exports: default
 
 // Module 10934 (InviteRolesDisplay)
@@ -38,7 +38,7 @@ export default function InviteRolesDisplay(roleIds) {
   if (0 !== stateFromStoresArray.length) {
     const obj2 = { style: tmp.container, children: items2 };
     const obj3 = { variant: "body-xs/semibold", color: "text-muted", style: tmp.label, children: intl.string(roleIds(1113).t.stcSfI) };
-    const Text = tmp2(5929).Text;
+    const Text = tmp2(5919).Text;
     intl = tmp2(1113).intl;
     items2 = [closure_5(Text, obj3), ];
     const obj4 = {

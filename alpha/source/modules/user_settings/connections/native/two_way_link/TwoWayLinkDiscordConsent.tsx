@@ -1,7 +1,7 @@
 // Module ID: 7473
 // Function ID: 7474
 // Name: TwoWayLinkDiscordConsent
-// Dependencies: [5, 32, 19, 17, 21, 3, 5306, 7442, 7466, 7400, 38, 7474, 7415, 5936, 1113, 2]
+// Dependencies: [5, 32, 19, 17, 21, 3, 5306, 7442, 7466, 7400, 38, 7474, 7415, 5926, 1113, 2]
 // Exports: TwoWayLinkDiscordConsent
 
 // Module 7473 (TwoWayLinkDiscordConsent)

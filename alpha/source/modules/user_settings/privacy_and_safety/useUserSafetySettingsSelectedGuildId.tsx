@@ -1,13 +1,13 @@
-// Module ID: 18567
-// Function ID: 18568
+// Module ID: 18569
+// Function ID: 18570
 // Name: useUserSafetySettingsSelectedGuildId
-// Dependencies: [5177, 18563, 1072, 504, 2]
+// Dependencies: [5177, 18565, 1072, 504, 2]
 // Exports: useAllServersOptionSelected, useIsSelectedGuildAHub, useUserSafetySettingsSelectedGuildId
 
-// Module 18567 (useUserSafetySettingsSelectedGuildId)
+// Module 18569 (useUserSafetySettingsSelectedGuildId)
 import Constants from "Constants" /* 1072 */;
 import GuildStore from "GuildStore" /* 5177 */;
-import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 18563 */;
+import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 18565 */;
 import size from "module_2" /* 2 */;
 
 let c3;

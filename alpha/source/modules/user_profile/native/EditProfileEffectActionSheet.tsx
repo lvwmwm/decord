@@ -1,7 +1,7 @@
 // Module ID: 17122
 // Function ID: 17123
 // Name: EditProfileEffectActionSheet
-// Dependencies: [32, 19, 17, 8500, 8491, 1072, 21, 5306, 575, 8482, 8559, 7918, 7937, 1256, 9402, 9399, 9398, 5566, 7913, 1113, 9403, 11671, 504, 17123, 15524, 8541, 8483, 17124, 15530, 15531, 9404, 9527, 5893, 2]
+// Dependencies: [32, 19, 17, 8500, 8491, 1072, 21, 5306, 575, 8482, 8559, 7918, 7937, 1256, 9402, 9399, 9398, 5556, 7913, 1113, 9403, 11671, 504, 17123, 15524, 8541, 8483, 17124, 15530, 15531, 9404, 9527, 5883, 2]
 // Exports: default
 
 // Module 17122 (EditProfileEffectActionSheet)
@@ -166,7 +166,7 @@ function ProfileEffectSectionPreview(arg0) {
   items1 = [closure_9(purchase(9527), { user, guildId, profileEffect: memo, maxWidth: 250 }), ];
   const obj2 = { style: tmp.previewGradient, start: { x: 0, y: 0.6 }, end: { x: 0, y: 1 }, colors: items2 };
   items2 = [, ];
-  const tmp4 = purchase(5893);
+  const tmp4 = purchase(5883);
   items2[0] = "" + tmp.previewGradient.color + "00";
   items2[1] = tmp.previewGradient.color;
   items1[1] = closure_9(tmp4, obj2);
@@ -264,7 +264,7 @@ export default function EditProfileEffectActionSheet(isTryItOut) {
   let obj2 = { value: analyticsLocations, children: tmp14(BottomSheet, obj3) };
   const AnalyticsLocationProvider = guildId(7918).AnalyticsLocationProvider;
   obj3 = { scrollable: true, ref: bottomSheetRef, onExpand: callback, startExpanded: true, header: closure_9(BottomSheetTitleHeader, obj4), children: items3 };
-  BottomSheet = guildId(5566).BottomSheet;
+  BottomSheet = guildId(5556).BottomSheet;
   obj4 = { title: intl.string(guildId(1113).t["/6nv6N"]) };
   BottomSheetTitleHeader = guildId(7913).BottomSheetTitleHeader;
   intl = guildId(1113).intl;

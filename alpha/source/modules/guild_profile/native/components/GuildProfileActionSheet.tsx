@@ -1,7 +1,7 @@
 // Module ID: 10655
 // Function ID: 10656
 // Name: GuildProfileActionSheet
-// Dependencies: [19, 17, 1072, 21, 5306, 575, 5547, 5902, 8559, 671, 10656, 10802, 10673, 5566, 5893, 5570, 5901, 2]
+// Dependencies: [19, 17, 1072, 21, 5306, 575, 5537, 5892, 8559, 671, 10656, 10802, 10673, 5556, 5883, 5560, 5891, 2]
 // Exports: default
 
 // Module 10655 (GuildProfileActionSheet)
@@ -9,11 +9,11 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import Constants from "Constants" /* 1072 */;
-import useThemeDefault from "useTheme" /* 5547 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5566 */;
-import BottomSheetModal from "BottomSheetModal" /* 5570 */;
-import LinearGradientDefault from "LinearGradient" /* 5893 */;
-import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 5901 */;
+import useThemeDefault from "useTheme" /* 5537 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5556 */;
+import BottomSheetModal from "BottomSheetModal" /* 5560 */;
+import LinearGradientDefault from "LinearGradient" /* 5883 */;
+import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 5891 */;
 import GuildProfileSheetBodyDefault from "GuildProfileSheetBody" /* 10656 */;
 import GuildProfileCTADefault from "GuildProfileCTA" /* 10802 */;
 import react_mod from "react" /* 19 */;
@@ -49,12 +49,12 @@ export default function GuildProfileActionSheet(guildId) {
   let colors;
   react = colors();
   let tmp = useThemeDefault();
-  let obj = guildId(5902);
+  let obj = guildId(5892);
   const backgroundColor = obj.useToken(nativeDefault.colors.INTERACTIVE_TEXT_HOVER, tmp);
   let obj2 = guildId(8559);
   const bottomSheetRef = obj2.useBottomSheetRef();
   ({ bottomSheetRef: c5, bottomSheetClose } = bottomSheetRef);
-  let obj3 = guildId(5902);
+  let obj3 = guildId(5892);
   const token = obj3.useToken(nativeDefault.colors.BACKGROUND_BASE_LOW);
   let items = [token];
   colors = react.useMemo(() => {

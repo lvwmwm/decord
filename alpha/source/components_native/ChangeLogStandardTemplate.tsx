@@ -1,7 +1,7 @@
 // Module ID: 9349
 // Function ID: 9350
 // Name: ChangeLogStandardTemplate
-// Dependencies: [19, 17, 2189, 1072, 21, 5306, 575, 1187, 563, 9350, 1256, 6012, 2070, 9352, 6057, 7415, 7988, 9359, 1113, 5117, 9361, 9363, 2]
+// Dependencies: [19, 17, 2189, 1072, 21, 5306, 575, 1187, 563, 9350, 1256, 6002, 2070, 9352, 6047, 7415, 7988, 9359, 1113, 5117, 9361, 9363, 2]
 // Exports: changelogRules, getRenderChangelog
 
 // Module 9349 (ChangeLogStandardTemplate)
@@ -10,8 +10,8 @@ import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import _mod2070 from "module_2070" /* 2070 */;
 import getLocalizedLinkDefault from "getLocalizedLink" /* 5117 */;
-import LinkingDefault from "Linking" /* 6012 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 6057 */;
+import LinkingDefault from "Linking" /* 6002 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 6047 */;
 import ChangeLogUtilsDefault from "ChangeLogUtils" /* 9352 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -43,7 +43,7 @@ const Link = (arg0) => {
 };
 function LHeading(className) {
   let items;
-  const f130165 = (item) => {
+  const f130180 = (item) => {
     let obj;
     if ("marginTop" === item) {
       obj = { marginTop: 10 };
@@ -68,7 +68,7 @@ function LHeading(className) {
   const tmp2 = unpackModuleId;
   if (null != className.className) {
     const parts = str.split(" ");
-    const mapped = parts.map(f130165);
+    const mapped = parts.map(f130180);
     combined = mapped.concat(tmp5);
   }
   items = [authStore(LegacyText, { accessibilityRole: "header", style: combined, children }), ];
@@ -76,7 +76,7 @@ function LHeading(className) {
   let combined1;
   if (null != className.className) {
     const parts1 = str.split(" ");
-    const mapped1 = parts1.map(f130165);
+    const mapped1 = parts1.map(f130180);
     combined1 = mapped1.concat(tmp7);
   }
   items[1] = authStore(React3, { style: combined1 });
@@ -121,7 +121,7 @@ function LinkInner(target) {
       }
       const obj = { change_log_id: "" + date + ":" + num, cta_type: "inline_link", target };
       track(CHANGE_LOG_CTA_CLICKED, obj);
-      const openURL = tmp(6012).openURL;
+      const openURL = tmp(6002).openURL;
       LinkingDefault;
       const obj2 = _mod2070;
       openURL(obj2.sanitizeUrl(target));

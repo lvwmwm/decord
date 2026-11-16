@@ -1,10 +1,10 @@
-// Module ID: 5938
-// Function ID: 5939
+// Module ID: 5928
+// Function ID: 5929
 // Name: Icon
 // Dependencies: [19, 17, 21, 5306, 575, 2]
 // Exports: getIconSize, getIconStyle
 
-// Module 5938 (Icon)
+// Module 5928 (Icon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

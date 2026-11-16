@@ -1,16 +1,16 @@
-// Module ID: 18316
-// Function ID: 18317
+// Module ID: 18318
+// Function ID: 18319
 // Name: PasskeyUpsellPromoSheet
-// Dependencies: [19, 1072, 5152, 21, 6020, 18317, 10713, 1113, 1380, 18318, 6951, 5936, 18315, 7775, 8604, 2]
+// Dependencies: [19, 1072, 5152, 21, 6010, 18319, 10713, 1113, 1380, 18320, 6941, 5926, 18317, 7775, 8604, 2]
 // Exports: default
 
-// Module 18316 (PasskeyUpsellPromoSheet)
+// Module 18318 (PasskeyUpsellPromoSheet)
 import Constants from "Constants" /* 1072 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import NativeCeremoniesDefault from "NativeCeremonies" /* 7775 */;
-import PasskeyUpsellActionCreatorsDefault from "PasskeyUpsellActionCreators" /* 18315 */;
-import PasskeyUpsellManagerDefault from "PasskeyUpsellManager" /* 18318 */;
+import PasskeyUpsellActionCreatorsDefault from "PasskeyUpsellActionCreators" /* 18317 */;
+import PasskeyUpsellManagerDefault from "PasskeyUpsellManager" /* 18320 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -62,7 +62,7 @@ export default function PasswordlessUpsellPromoSheet() {
     stringResult = string(t.d6uxJy);
   }
   obj4 = { children: items };
-  ButtonGroup = tmp4(6951).ButtonGroup;
+  ButtonGroup = tmp4(6941).ButtonGroup;
   const obj5 = {
     size: "lg",
     onPress: function registerPasskey() {
@@ -99,7 +99,7 @@ export default function PasswordlessUpsellPromoSheet() {
     },
     text: intl3.string(require("intl").t.NIFmCJ)
   };
-  const Button = tmp4(5936).Button;
+  const Button = tmp4(5926).Button;
   intl3 = tmp4(1113).intl;
   items = [tmp(Button, obj5), ];
   const obj6 = {
@@ -113,7 +113,7 @@ export default function PasswordlessUpsellPromoSheet() {
     },
     text: intl4.string(require("intl").t["7J6/nG"])
   };
-  const Button2 = tmp4(5936).Button;
+  const Button2 = tmp4(5926).Button;
   intl4 = tmp4(1113).intl;
   items[1] = tmp(Button2, obj6);
   return tmp(PromoSheet, obj2);

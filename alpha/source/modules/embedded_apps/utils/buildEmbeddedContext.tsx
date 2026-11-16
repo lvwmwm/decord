@@ -1,12 +1,12 @@
 // Module ID: 12864
 // Function ID: 12865
 // Name: buildEmbeddedContext
-// Dependencies: [5154, 7019, 8659, 5155, 7020, 12865, 7021, 5977, 5227, 2]
+// Dependencies: [5154, 7019, 8659, 5155, 7020, 12865, 7021, 5967, 5227, 2]
 // Exports: default
 
 // Module 12864 (buildEmbeddedContext)
 import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 5227 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5977 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5967 */;
 import FramesConstants from "FramesConstants" /* 7020 */;
 import EmbeddedAppTypes from "EmbeddedAppTypes" /* 7021 */;
 import ActivityPlatform from "ActivityPlatform" /* 12865 */;

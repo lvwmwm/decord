@@ -1,7 +1,7 @@
 // Module ID: 13056
 // Function ID: 13057
 // Name: StageChannelExpandedControls
-// Dependencies: [19, 17, 6820, 502, 5177, 21, 5306, 5303, 575, 11956, 11007, 504, 6939, 10586, 13057, 2]
+// Dependencies: [19, 17, 6810, 502, 5177, 21, 5306, 5303, 575, 11956, 11007, 504, 6929, 10586, 13057, 2]
 
 // Module 13056 (StageChannelExpandedControls)
 import react_native from "react-native" /* 17 */;
@@ -9,7 +9,7 @@ import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import useCanSpeakInChannelDefault from "useCanSpeakInChannel" /* 11956 */;
 import react from "react" /* 19 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6820 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6810 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildStore from "GuildStore" /* 5177 */;
 import createStyles_mod from "createStyles" /* 5306 */;
@@ -57,7 +57,7 @@ const memoResult = react.memo(function StageChannelExpandedControls(channel) {
   if (num == null) {
     num = 0;
   }
-  const tmp5Result = channel(6939);
+  const tmp5Result = channel(6929);
   const stageHasMedia = tmp5Result.useStageHasMedia(channel.id);
   const items5 = [];
   const reachedLimit = useChannelVideoLimitDefault(channel).reachedLimit;

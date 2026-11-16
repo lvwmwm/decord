@@ -1,21 +1,21 @@
-// Module ID: 19692
-// Function ID: 19693
+// Module ID: 19694
+// Function ID: 19695
 // Name: ChannelSettingsPermissionsOverrides
-// Dependencies: [32, 5, 19, 17, 19693, 5173, 5155, 5212, 5177, 5238, 5248, 1388, 1072, 21, 5306, 575, 504, 19695, 1502, 1630, 7261, 12560, 19694, 19698, 5243, 8133, 1084, 2119, 5372, 6268, 1113, 6012, 2188, 5163, 19699, 9051, 5929, 5954, 10929, 7443, 8159, 7746, 19703, 1380, 2]
+// Dependencies: [32, 5, 19, 17, 19695, 5173, 5155, 5212, 5177, 5238, 5248, 1388, 1072, 21, 5306, 575, 504, 19697, 1502, 1630, 7261, 12560, 19696, 19700, 5243, 8133, 1084, 2119, 5362, 6258, 1113, 6002, 2188, 5163, 19701, 9051, 5919, 5944, 10929, 7443, 8159, 7746, 19705, 1380, 2]
 // Exports: default
 
-// Module 19692 (ChannelSettingsPermissionsOverrides)
+// Module 19694 (ChannelSettingsPermissionsOverrides)
 import nativeDefault from "native" /* 575 */;
 import StageChannelPermissions from "StageChannelPermissions" /* 5163 */;
 import GuildRecord from "GuildRecord" /* 5173 */;
 import TableRowGroup2 from "TableRowGroup" /* 7746 */;
 import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 12560 */;
-import PermissionSpecUtilsDefault from "PermissionSpecUtils" /* 19699 */;
+import PermissionSpecUtilsDefault from "PermissionSpecUtils" /* 19701 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelPermissionOverwriteEditStore from "ChannelPermissionOverwriteEditStore" /* 19693 */;
+import ChannelPermissionOverwriteEditStore from "ChannelPermissionOverwriteEditStore" /* 19695 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import GuildRoleStore from "GuildRoleStore" /* 5212 */;
 import GuildStore from "GuildStore" /* 5177 */;
@@ -335,8 +335,8 @@ export default function ChannelSettingsPermissionsOverrides(channelId) {
   }, items3);
   const tmp11 = closure_20;
   let obj5 = { variant: "body-md/medium", color: "text-muted", children: tmp2Result.computeChannelName(stateFromStores, UserStore, RelationshipStore, true) };
-  let Text = tmp2(5929).Text;
-  tmp2Result = tmp2(5954);
+  let Text = tmp2(5919).Text;
+  tmp2Result = tmp2(5944);
   const tmp12 = closure_20(Text, obj5);
   if (type === constants.MEMBER) {
     let obj6 = { userId: id, guildId: stateFromStores.guild_id, start: true, end: true, trailing: tmp12 };

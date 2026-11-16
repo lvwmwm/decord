@@ -1,7 +1,7 @@
 // Module ID: 14740
 // Function ID: 14741
 // Name: SearchPlatformUtils
-// Dependencies: [14741, 7037, 14754, 9066, 14756, 1072, 14742, 14747, 8633, 1406, 7643, 1380, 2020, 6029, 1381, 11739, 575, 5131, 14761, 14765, 14772, 14762, 14777, 12, 14743, 14779, 558, 2]
+// Dependencies: [14741, 7037, 14754, 9066, 14756, 1072, 14742, 14747, 8633, 1406, 7643, 1380, 2020, 6019, 1381, 11739, 575, 5131, 14761, 14765, 14772, 14762, 14777, 12, 14743, 14779, 558, 2]
 // Exports: delayUntilNavigationComplete, getFiles, getGridItemSpacingStyles, getLinks, getMedia, getMediaGridItemStyles, getUrlIcon, performKeyboardAwareNavigation, toSearchBarTag
 
 // Module 14740 (SearchPlatformUtils)
@@ -10,7 +10,7 @@ import PlatformUtils from "PlatformUtils" /* 1380 */;
 import URLUtilsDefault from "URLUtils" /* 1381 */;
 import FlagUtils from "FlagUtils" /* 1406 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 2020 */;
-import LinkIcon from "LinkIcon" /* 6029 */;
+import LinkIcon from "LinkIcon" /* 6019 */;
 import useKeyboardIsOpen from "useKeyboardIsOpen" /* 7643 */;
 import MediaSourceUtil from "MediaSourceUtil" /* 8633 */;
 import ClydeIcon from "ClydeIcon" /* 11739 */;
@@ -367,10 +367,10 @@ let obj = {
     let closure_2 = fn2;
     let tmp = arg3;
     function callback() {
-      const tmp = f109938(SearchQueryStore.getManager(searchContext));
+      const tmp = f109952(SearchQueryStore.getManager(searchContext));
       if (null == closure_3) {
         closure_3 = tmp;
-        f109939(tmp, closure_3);
+        f109953(tmp, closure_3);
       }
     }
     const tmp2 = fn(SearchQueryStore.getManager(searchContext));
@@ -388,11 +388,11 @@ let obj = {
   subscribeTextInputValue(searchContext, debounceResult, arg2) {
     let flag = arg2;
     let closure_0 = searchContext;
-    const f109938 = (getTextInputValue) => {
+    const f109952 = (getTextInputValue) => {
       const obj = { textInputValue: getTextInputValue.getTextInputValue(), textInputChangedFromInput: getTextInputValue.getTextValueChangedFromInput() };
       return obj;
     };
-    const f109939 = (textInputValue, textInputValue2) => {
+    const f109953 = (textInputValue, textInputValue2) => {
       let textInputValue1;
       textInputValue = textInputValue.textInputValue;
       const tmp = closure_0;
@@ -402,10 +402,10 @@ let obj = {
       tmp(textInputValue, textInputValue1, textInputValue.textInputChangedFromInput);
     };
     function callback() {
-      const tmp = f109938(SearchQueryStore.getManager(searchContext));
+      const tmp = f109952(SearchQueryStore.getManager(searchContext));
       if (null == closure_3) {
         closure_3 = tmp;
-        f109939(tmp, closure_3);
+        f109953(tmp, closure_3);
       }
     }
     let obj = SearchQueryStore;

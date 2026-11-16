@@ -1,9 +1,9 @@
-// Module ID: 6806
-// Function ID: 6807
+// Module ID: 6796
+// Function ID: 6797
 // Name: HookErrorStore
 // Dependencies: [1072, 504, 572, 2]
 
-// Module 6806 (HookErrorStore)
+// Module 6796 (HookErrorStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;

@@ -1,19 +1,19 @@
 // Module ID: 12647
 // Function ID: 12648
 // Name: ChannelPinsStore
-// Dependencies: [2189, 5155, 5218, 5177, 6372, 5248, 1388, 6374, 12, 8749, 504, 572, 2]
+// Dependencies: [2189, 5155, 5218, 5177, 6362, 5248, 1388, 6364, 12, 8749, 504, 572, 2]
 
 // Module 12647 (ChannelPinsStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 6374 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 6364 */;
 import handleExplicitMediaScanTimeoutForMessage from "handleExplicitMediaScanTimeoutForMessage" /* 8749 */;
 import LocaleStore from "LocaleStore" /* 2189 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import GuildMemberStore from "GuildMemberStore" /* 5218 */;
 import GuildStore from "GuildStore" /* 5177 */;
-import MessageStore from "MessageStore" /* 6372 */;
+import MessageStore from "MessageStore" /* 6362 */;
 import RelationshipStore from "RelationshipStore" /* 5248 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;

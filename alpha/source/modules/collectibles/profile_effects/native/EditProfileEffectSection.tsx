@@ -1,11 +1,11 @@
 // Module ID: 17124
 // Function ID: 17125
 // Name: EditProfileEffectSection
-// Dependencies: [19, 17, 8491, 9490, 21, 5306, 15526, 17123, 15527, 7937, 8589, 6020, 9513, 9493, 2]
+// Dependencies: [19, 17, 8491, 9490, 21, 5306, 15526, 17123, 15527, 7937, 8589, 6010, 9513, 9493, 2]
 
 // Module 17124 (EditProfileEffectSection)
 import react_native from "react-native" /* 17 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
 import ProfileEffectRecord from "ProfileEffectRecord" /* 8491 */;
 import useProfileEffectDefault from "useProfileEffect" /* 8589 */;

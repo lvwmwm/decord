@@ -1,7 +1,7 @@
 // Module ID: 15633
 // Function ID: 15634
 // Name: PrivateChannelButtons
-// Dependencies: [19, 17, 7016, 5155, 2133, 5248, 1388, 5981, 9064, 1072, 5983, 5208, 9065, 6075, 21, 1187, 5306, 575, 504, 12307, 15634, 9210, 15635, 7052, 9067, 10582, 15636, 6270, 15637, 1113, 15638, 14696, 14761, 6067, 5552, 15652, 2121, 7428, 7826, 15653, 7067, 6012, 1256, 15195, 9068, 8069, 15621, 10569, 6900, 7432, 9104, 9102, 5929, 15654, 11046, 2]
+// Dependencies: [19, 17, 7016, 5155, 2133, 5248, 1388, 5971, 9064, 1072, 5973, 5208, 9065, 6065, 21, 1187, 5306, 575, 504, 12307, 15634, 9210, 15635, 7052, 9067, 10582, 15636, 6260, 15637, 1113, 15638, 14696, 14761, 6057, 5542, 15652, 2121, 7428, 7826, 15653, 7067, 6002, 1256, 15195, 9068, 8069, 15621, 10569, 6890, 7432, 9104, 9102, 5919, 15654, 11046, 2]
 
 // Module 15633 (PrivateChannelButtons)
 import react_native from "react-native" /* 17 */;
@@ -10,12 +10,12 @@ import intl7 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
 import ChangelogConstants from "ChangelogConstants" /* 5208 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import CallConstants from "CallConstants" /* 5983 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6067 */;
-import Constants2 from "Constants" /* 6075 */;
-import useAlertStore from "useAlertStore" /* 6270 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6900 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import CallConstants from "CallConstants" /* 5973 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6057 */;
+import Constants2 from "Constants" /* 6065 */;
+import useAlertStore from "useAlertStore" /* 6260 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6890 */;
 import ChannelRTCStore2 from "ChannelRTCStore" /* 7016 */;
 import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 7826 */;
 import ChannelDetailsStore from "ChannelDetailsStore" /* 9064 */;
@@ -31,7 +31,7 @@ import ChannelStore from "ChannelStore" /* 5155 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
 import RelationshipStore from "RelationshipStore" /* 5248 */;
 import UserStore from "UserStore" /* 1388 */;
-import VoiceStateStore from "VoiceStateStore" /* 5981 */;
+import VoiceStateStore from "VoiceStateStore" /* 5971 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;
@@ -468,7 +468,7 @@ const memoResult = react.memo(function PrivateChannelButtons(channelId) {
     ];
     let tmp38Result = totalParticipantCount > 5;
     if (tmp38Result) {
-      const obj15 = { style: tmp.overflowBadge, children: closure_22(tmp2(5929).Text, obj16) };
+      const obj15 = { style: tmp.overflowBadge, children: closure_22(tmp2(5919).Text, obj16) };
       obj16 = { variant: "footnote/semibold", color: "button-outline-primary-text", children: items17 };
       items17 = ["+", totalParticipantCount - 5];
       tmp38Result = tmp38(tmp31, obj15);

@@ -1,7 +1,7 @@
 // Module ID: 10412
 // Function ID: 10413
 // Name: GameProfileHttpUtils
-// Dependencies: [5, 8504, 2189, 10283, 1072, 10413, 572, 6766, 1285, 504, 559, 1089, 10404, 2]
+// Dependencies: [5, 8504, 2189, 10283, 1072, 10413, 572, 6756, 1285, 504, 559, 1089, 10404, 2]
 // Exports: getGameAnnouncements, getShopCollection
 
 // Module 10412 (GameProfileHttpUtils)
@@ -10,7 +10,7 @@ import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
-import StoreUtils from "StoreUtils" /* 6766 */;
+import StoreUtils from "StoreUtils" /* 6756 */;
 import SimilarGamesConstants from "SimilarGamesConstants" /* 10413 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import StorefrontProductRecord from "StorefrontProductRecord" /* 8504 */;

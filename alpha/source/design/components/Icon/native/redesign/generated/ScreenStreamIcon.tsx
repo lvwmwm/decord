@@ -1,13 +1,13 @@
 // Module ID: 7434
 // Function ID: 7435
 // Name: ScreenStreamIcon
-// Dependencies: [19, 21, 575, 6019, 7435, 2]
+// Dependencies: [19, 21, 575, 6009, 7435, 2]
 // Exports: ScreenStreamIcon
 
 // Module 7434 (ScreenStreamIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6019 */;
+import BaseIconImage2 from "BaseIconImage" /* 6009 */;
 import AssetRegistry from "AssetRegistry" /* 7435 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

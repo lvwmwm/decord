@@ -1,12 +1,12 @@
 // Module ID: 13664
 // Function ID: 13665
 // Name: FrogIllocon
-// Dependencies: [19, 21, 13665, 13666, 13667, 7755, 6020, 2]
+// Dependencies: [19, 21, 13665, 13666, 13667, 7755, 6010, 2]
 // Exports: FrogIllocon
 
 // Module 13664 (FrogIllocon)
 import Fragment from "Fragment" /* 21 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import react_native from "react-native" /* 7755 */;
 import _modDef13665 from "module_13665" /* 13665 */;
 import _modDef13666 from "module_13666" /* 13666 */;

@@ -1,14 +1,14 @@
 // Module ID: 8459
 // Function ID: 8460
 // Name: GuildEventRsvpPickerActionSheet
-// Dependencies: [32, 19, 17, 5161, 21, 5306, 575, 7978, 1113, 5566, 7913, 7415, 7745, 7747, 5936, 7989, 5552, 2]
+// Dependencies: [32, 19, 17, 5161, 21, 5306, 575, 7978, 1113, 5556, 7913, 7415, 7745, 7747, 5926, 7989, 5542, 2]
 // Exports: default
 
 // Module 8459 (GuildEventRsvpPickerActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 5161 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import GuildEventRsvpUtils from "GuildEventRsvpUtils" /* 7978 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -67,7 +67,7 @@ export default function GuildEventRsvpPickerActionSheet(event) {
     stringResult = intl.string(tmp2(1113).t["8MPCVr"]);
   }
   let obj2 = { header: closure_7(tmp2(7913).BottomSheetTitleHeader, { title: stringResult }), children: closure_8(SafeAreaPaddingView, obj3) };
-  const BottomSheet = tmp2(5566).BottomSheet;
+  const BottomSheet = tmp2(5556).BottomSheet;
   obj3 = { bottom: true, style: tmp.container, children: items };
   SafeAreaPaddingView = tmp2(7415).SafeAreaPaddingView;
   const obj4 = {
@@ -100,7 +100,7 @@ export default function GuildEventRsvpPickerActionSheet(event) {
     },
     text: intl3.string(event(1113).t.TyCVIq)
   };
-  Button = tmp2(5936).Button;
+  Button = tmp2(5926).Button;
   intl3 = tmp2(1113).intl;
   items[1] = closure_7(closure_5, obj5);
   return closure_7(BottomSheet, obj2);

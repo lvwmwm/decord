@@ -1,7 +1,7 @@
 // Module ID: 13265
 // Function ID: 13266
 // Name: ConjureConnectToolSheet
-// Dependencies: [19, 17, 21, 5306, 575, 13266, 7943, 6014, 6274, 1113, 4131, 7951, 7913, 5929, 7445, 5936, 13267, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 13266, 7943, 6004, 6264, 1113, 4131, 7951, 7913, 5919, 7445, 5926, 13267, 2]
 // Exports: default
 
 // Module 13265 (ConjureConnectToolSheet)
@@ -9,8 +9,8 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1113 */;
 import _modDef4131 from "module_4131" /* 4131 */;
-import ToastUtils from "ToastUtils" /* 6014 */;
-import AlertModal from "AlertModal" /* 6274 */;
+import ToastUtils from "ToastUtils" /* 6004 */;
+import AlertModal from "AlertModal" /* 6264 */;
 import ClipboardUtils from "ClipboardUtils" /* 7943 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -111,33 +111,33 @@ export default function ConjureConnectToolSheet(projectId) {
   intl = connection(1113).intl;
   obj4 = { style: tmp.content, children: items2 };
   const obj5 = { variant: "body-sm/normal", color: "text-muted", children: intl2.string(mint(4131).WltAg2) };
-  const Text = connection(5929).Text;
+  const Text = connection(5919).Text;
   intl2 = connection(1113).intl;
   items2 = [closure_5(Text, obj5), , ];
   if (null != connection) {
     const obj6 = { style: tmp.section, children: items3 };
     const obj7 = { variant: "body-xs/semibold", color: "text-muted", children: intl4.string(mint(4131).UCwV3L) };
-    const Text3 = tmp2(5929).Text;
+    const Text3 = tmp2(5919).Text;
     intl4 = tmp2(1113).intl;
     items3 = [closure_5(Text3, obj7), , , ];
-    const obj8 = { variant: "primary", children: closure_5(connection(5929).Text, obj9) };
+    const obj8 = { variant: "primary", children: closure_5(connection(5919).Text, obj9) };
     const Card = tmp2(7445).Card;
     obj9 = { variant: "body-sm/normal", color: "text-default", selectable: true, children: connection.url };
     items3[1] = closure_5(Card, obj8);
     const obj10 = { style: tmp.actions, children: items4 };
     const obj11 = { style: tmp.action, children: closure_5(Button, obj12) };
     obj12 = { variant: "primary", size: "md", text: intl5.string(connection(1113).t.OpuAlK), onPress: callback };
-    Button = tmp2(5936).Button;
+    Button = tmp2(5926).Button;
     intl5 = tmp2(1113).intl;
     items4 = [closure_5(View, obj11), ];
     const obj13 = { style: tmp.action, children: closure_5(Button2, obj14) };
     obj14 = { variant: "secondary", size: "md", text: intl6.string(mint(4131).FBKOBq), loading, onPress: callback1 };
-    Button2 = tmp2(5936).Button;
+    Button2 = tmp2(5926).Button;
     intl6 = tmp2(1113).intl;
     items4[1] = closure_5(View, obj13);
     items3[2] = closure_6(View, obj10);
     const obj15 = { variant: "body-xs/normal", color: "text-muted", children: format(EQ8k1i, obj16) };
-    const Text4 = tmp2(5929).Text;
+    const Text4 = tmp2(5919).Text;
     const intl7 = tmp2(1113).intl;
     format = intl7.format;
     obj16 = { time: tmp2Result.formatMcpConnectionExpiry(connection) };
@@ -149,7 +149,7 @@ export default function ConjureConnectToolSheet(projectId) {
     tmp7Result = null;
     if (loading) {
       const obj17 = { variant: "body-sm/normal", color: "text-muted", children: intl3.string(mint(4131).Q6xQTM) };
-      const Text2 = tmp2(5929).Text;
+      const Text2 = tmp2(5919).Text;
       intl3 = tmp2(1113).intl;
       tmp7Result = tmp7(Text2, obj17);
     }
@@ -160,7 +160,7 @@ export default function ConjureConnectToolSheet(projectId) {
     const obj18 = { style: tmp.failedRow, accessibilityRole: "alert", children: items5 };
     const obj19 = { style: tmp.failedText, children: closure_5(Text5, obj20) };
     obj20 = { variant: "body-xs/normal", color: "text-feedback-critical", children: intl8.string(mint(4131).IAF2eN) };
-    Text5 = tmp2(5929).Text;
+    Text5 = tmp2(5919).Text;
     intl8 = tmp2(1113).intl;
     items5 = [closure_5(View, obj19), ];
     const obj21 = {
@@ -172,7 +172,7 @@ export default function ConjureConnectToolSheet(projectId) {
           mint(false);
         }
     };
-    const Button3 = tmp2(5936).Button;
+    const Button3 = tmp2(5926).Button;
     intl9 = tmp2(1113).intl;
     items5[1] = closure_5(Button3, obj21);
     tmp9Result2 = tmp9(tmp10, obj18);

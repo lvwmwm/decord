@@ -1,10 +1,10 @@
-// Module ID: 19488
-// Function ID: 19489
+// Module ID: 19490
+// Function ID: 19491
 // Name: getLayoutStyles
 // Dependencies: [575, 1187, 7720, 7924, 2]
 // Exports: default
 
-// Module 19488 (getLayoutStyles)
+// Module 19490 (getLayoutStyles)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import GuildIcon from "GuildIcon" /* 7720 */;

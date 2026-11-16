@@ -1,13 +1,13 @@
 // Module ID: 12363
 // Function ID: 12364
 // Name: useShowChannelOptInNotice
-// Dependencies: [6958, 1072, 5162, 7059, 504, 7079, 2]
+// Dependencies: [6948, 1072, 5162, 7059, 504, 7079, 2]
 // Exports: default
 
 // Module 12363 (useShowChannelOptInNotice)
 import Constants from "Constants" /* 1072 */;
 import ChannelConstants from "ChannelConstants" /* 5162 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6958 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6948 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

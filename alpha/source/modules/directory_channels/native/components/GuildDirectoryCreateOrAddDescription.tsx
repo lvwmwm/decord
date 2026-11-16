@@ -1,7 +1,7 @@
 // Module ID: 14716
 // Function ID: 14717
 // Name: GuildDirectoryCreateOrAddDescription
-// Dependencies: [5, 19, 17, 21, 5306, 14717, 5169, 14718, 14705, 14706, 5929, 1113, 14714, 2]
+// Dependencies: [5, 19, 17, 21, 5306, 14717, 5169, 14718, 14705, 14706, 5919, 1113, 14714, 2]
 // Exports: default
 
 // Module 14716 (GuildDirectoryCreateOrAddDescription)
@@ -122,11 +122,11 @@ export default function GuildDirectoryCreateOrAddDescription(directoryChannelId)
   const obj3 = { style: tmp.header, children: items };
   const GuildDirectoryAddModalScreen = directoryChannelId(14706).GuildDirectoryAddModalScreen;
   const obj4 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(directoryChannelId(1113).t["5bQcoa"]) };
-  const Text = directoryChannelId(5929).Text;
+  const Text = directoryChannelId(5919).Text;
   intl = directoryChannelId(1113).intl;
   items = [closure_6(Text, obj4), ];
   let obj5 = { style: tmp.description, variant: "body-sm/medium", color: "text-default", children: intl2.string(directoryChannelId(1113).t.Ie60Wc) };
-  const Text2 = directoryChannelId(5929).Text;
+  const Text2 = directoryChannelId(5919).Text;
   intl2 = directoryChannelId(1113).intl;
   items[1] = closure_6(Text2, obj5);
   items1 = [closure_7(obj, obj3), ];

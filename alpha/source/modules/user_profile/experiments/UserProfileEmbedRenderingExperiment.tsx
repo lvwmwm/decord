@@ -1,10 +1,10 @@
-// Module ID: 20306
-// Function ID: 20307
+// Module ID: 20309
+// Function ID: 20310
 // Name: UserProfileEmbedRenderingExperiment
 // Dependencies: [1452, 2]
 // Exports: getIsUserProfileEmbedRenderingEnabled, useIsUserProfileEmbedRenderingEnabled
 
-// Module 20306 (UserProfileEmbedRenderingExperiment)
+// Module 20309 (UserProfileEmbedRenderingExperiment)
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 

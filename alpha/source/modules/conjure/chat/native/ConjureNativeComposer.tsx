@@ -1,7 +1,7 @@
 // Module ID: 13791
 // Function ID: 13792
 // Name: ConjureNativeComposer
-// Dependencies: [5, 32, 19, 17, 5307, 7375, 13581, 11632, 21, 575, 5306, 1113, 4131, 5902, 11631, 8160, 13792, 13794, 13796, 1380, 13797, 13793, 13579, 13226, 13621, 13799, 13185, 13228, 504, 13739, 11112, 10735, 10856, 11113, 13317, 11926, 5552, 13256, 13800, 13650, 13801, 6031, 13803, 9148, 10941, 13806, 5377, 13812, 5929, 2]
+// Dependencies: [5, 32, 19, 17, 5307, 7375, 13581, 11632, 21, 575, 5306, 1113, 4131, 5892, 11631, 8160, 13792, 13794, 13796, 1380, 13797, 13793, 13579, 13226, 13621, 13799, 13185, 13228, 504, 13739, 11112, 10735, 10856, 11113, 13317, 11926, 5542, 13256, 13800, 13650, 13801, 6021, 13803, 9148, 10941, 13806, 5367, 13812, 5919, 2]
 // Exports: default
 
 // Module 13791 (ConjureNativeComposer)
@@ -9,9 +9,9 @@ import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import _modDef4131 from "module_4131" /* 4131 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5552 */;
-import useToken from "useToken" /* 5902 */;
-import SendMessageIcon from "SendMessageIcon" /* 6031 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5542 */;
+import useToken from "useToken" /* 5892 */;
+import SendMessageIcon from "SendMessageIcon" /* 6021 */;
 import ImagesIcon from "ImagesIcon" /* 10735 */;
 import MusicIcon from "MusicIcon" /* 10856 */;
 import PlusLargeIcon from "PlusLargeIcon" /* 10941 */;

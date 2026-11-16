@@ -1,14 +1,14 @@
 // Module ID: 7310
 // Function ID: 7311
 // Name: UserActivityActionCreators
-// Dependencies: [5, 6068, 1072, 572, 7311, 2121, 1285, 2]
+// Dependencies: [5, 6058, 1072, 572, 7311, 2121, 1285, 2]
 // Exports: getMetadata, play, sync
 
 // Module 7310 (UserActivityActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import PresenceStore from "PresenceStore" /* 6068 */;
+import PresenceStore from "PresenceStore" /* 6058 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

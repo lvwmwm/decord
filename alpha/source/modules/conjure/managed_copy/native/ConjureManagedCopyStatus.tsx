@@ -1,7 +1,7 @@
 // Module ID: 13202
 // Function ID: 13203
 // Name: ConjureManagedCopyStatus
-// Dependencies: [19, 21, 13192, 6337, 575, 5929, 1113, 4131, 13203, 2]
+// Dependencies: [19, 21, 13192, 6327, 575, 5919, 1113, 4131, 13203, 2]
 // Exports: default
 
 // Module 13202 (ConjureManagedCopyStatus)
@@ -35,16 +35,16 @@ export default function ConjureManagedCopyStatus(projectId) {
     let str;
     const updatesPaused = tmp3.updatesPaused;
     const obj2 = { spacing: nativeDefault.space.PX_4, children: items };
-    const Stack = tmp4(6337).Stack;
+    const Stack = tmp4(6327).Stack;
     const obj3 = { variant: "body-md/medium", color: "text-default", children: intl.string(_modDef4131["+QBNDE"]) };
-    const Text = tmp4(5929).Text;
+    const Text = tmp4(5919).Text;
     intl = tmp4(1113).intl;
     items = [_false(Text, obj3), , ];
     const obj4 = { variant: "body-sm/normal", color: "text-subtle", children: tmp4Result.conjureCopySourceLine(tmp3, updatesPaused) };
-    const Text2 = tmp4(5929).Text;
+    const Text2 = tmp4(5919).Text;
     tmp4Result = conjureManagedCopyStatusText;
     items[1] = _false(Text2, obj4);
-    const Text3 = tmp4(5929).Text;
+    const Text3 = tmp4(5919).Text;
     const tmp7 = React3;
     const tmp8 = _false;
     if (updatesPaused) {

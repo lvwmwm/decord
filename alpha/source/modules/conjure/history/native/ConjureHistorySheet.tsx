@@ -1,7 +1,7 @@
 // Module ID: 13276
 // Function ID: 13277
 // Name: ConjureHistorySheet
-// Dependencies: [5, 32, 19, 17, 21, 5306, 575, 6337, 5929, 5936, 1113, 4131, 7418, 13273, 7746, 7443, 13277, 13282, 7445, 9148, 7988, 7421, 7994, 7983, 13262, 5552, 8019, 2121, 2169, 1630, 13283, 13275, 13284, 6274, 13274, 6015, 6014, 13271, 13286, 13286, 7951, 7913, 5570, 13287, 13285, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5306, 575, 6327, 5919, 5926, 1113, 4131, 7418, 13273, 7746, 7443, 13277, 13282, 7445, 9148, 7988, 7421, 7994, 7983, 13262, 5542, 8019, 2121, 2169, 1630, 13283, 13275, 13284, 6264, 13274, 6005, 6004, 13271, 13286, 13286, 7951, 7913, 5560, 13287, 13285, 2]
 // Exports: default
 
 // Module 13276 (ConjureHistorySheet)
@@ -10,9 +10,9 @@ import nativeDefault from "native" /* 575 */;
 import intl8 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
 import _modDef4131 from "module_4131" /* 4131 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import Stack_Stack from "Stack/Stack" /* 6337 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import Stack_Stack from "Stack/Stack" /* 6327 */;
 import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7418 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7421 */;
 import IconButton2 from "IconButton" /* 7988 */;
@@ -34,7 +34,7 @@ let c9;
 let metroImportAll;
 let metroImportDefault;
 let tmp4;
-const components_Button_Button = tmp4(5936);
+const components_Button_Button = tmp4(5926);
 const TableRow2 = tmp4(7443);
 const Card_Card = tmp4(7445);
 const TableRowGroup3 = tmp4(7746);
@@ -68,7 +68,7 @@ function HistoryMessage(onRetry) {
   if (null != onRetry) {
     const obj4 = { style: tmp.centeredRow, children: metroImportDefault(Button, obj5) };
     obj5 = { variant: "secondary", size: "sm", text: intl.string(_modDef4131.HOuQ9H), onPress: onRetry };
-    Button = tmp5(5936).Button;
+    Button = tmp5(5926).Button;
     intl = tmp5(1113).intl;
     tmp2Result = tmp2(tmp3, obj4);
   }
@@ -101,7 +101,7 @@ function HistoryDayGroups(renderItem) {
       return metroImportDefault(TableRowGroup, obj, label.key);
     })
   };
-  const Stack = renderItem(6337).Stack;
+  const Stack = renderItem(6327).Stack;
   const obj2 = renderItem(13273);
   groupHistoryByDayResult = obj2.groupHistoryByDay(items, getMs, nowMs);
   return closure_7(Stack, obj);
@@ -801,7 +801,7 @@ export default function ConjureHistorySheet(projectId) {
   intl = projectId(1113).intl;
   items5 = [refresh(BottomSheetTitleHeader, obj4), refresh(HistoryTabs, { tab: tmp5, onChange: tmp6 })];
   obj5 = { contentContainerStyle: tmp3.content, children: tmp16Result };
-  BottomSheetScrollView = projectId(5570).BottomSheetScrollView;
+  BottomSheetScrollView = projectId(5560).BottomSheetScrollView;
   const tmp16 = callback1;
   const tmp17 = onRestoreBackup;
   if ("versions" === tmp5) {
@@ -826,7 +826,7 @@ export default function ConjureHistorySheet(projectId) {
     } else {
       const obj8 = { children: items6 };
       const obj9 = { variant: "body-sm/normal", color: "text-muted", children: formatToPlainString(ptsHZu, obj10) };
-      const Text = tmp8(5929).Text;
+      const Text = tmp8(5919).Text;
       let intl2 = tmp8(1113).intl;
       formatToPlainString = intl2.formatToPlainString;
       obj10 = { days: projectId(13285).RESTORE_WINDOW_DAYS };

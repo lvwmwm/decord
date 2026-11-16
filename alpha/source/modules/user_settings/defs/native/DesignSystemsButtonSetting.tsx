@@ -1,9 +1,9 @@
-// Module ID: 18406
-// Function ID: 18407
+// Module ID: 18408
+// Function ID: 18409
 // Name: DesignSystemsButtonSetting
-// Dependencies: [9202, 1072, 12406, 18407, 2]
+// Dependencies: [9202, 1072, 12406, 18409, 2]
 
-// Module 18406 (DesignSystemsButtonSetting)
+// Module 18408 (DesignSystemsButtonSetting)
 import Constants from "Constants" /* 1072 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;
 import SettingBuilders from "SettingBuilders" /* 12406 */;

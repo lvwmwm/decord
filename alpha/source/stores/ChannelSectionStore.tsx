@@ -1,7 +1,7 @@
 // Module ID: 7036
 // Function ID: 7037
 // Name: ChannelSectionStore
-// Dependencies: [2165, 5532, 7037, 5155, 5177, 5238, 5209, 5349, 1388, 1072, 5162, 1083, 7038, 7039, 7040, 1108, 11, 6262, 504, 1452, 572, 2]
+// Dependencies: [2165, 5522, 7037, 5155, 5177, 5238, 5209, 5339, 1388, 1072, 5162, 1083, 7038, 7039, 7040, 1108, 11, 6252, 504, 1452, 572, 2]
 // Exports: isViewChannelSidebar
 
 // Module 7036 (ChannelSectionStore)
@@ -11,18 +11,18 @@ import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants2 from "Constants" /* 1083 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import ApexExperiment from "ApexExperiment" /* 1452 */;
-import shared_PlatformUtils from "shared/PlatformUtils" /* 6262 */;
+import shared_PlatformUtils from "shared/PlatformUtils" /* 6252 */;
 import SidebarActionTypes from "SidebarActionTypes" /* 7038 */;
 import FriendsSidebarExperimentDefault from "FriendsSidebarExperiment" /* 7039 */;
 import FriendsSidebarTracking from "FriendsSidebarTracking" /* 7040 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
-import ExperimentStore from "ExperimentStore" /* 5532 */;
+import ExperimentStore from "ExperimentStore" /* 5522 */;
 import SearchMessageStore from "SearchMessageStore" /* 7037 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import GuildStore from "GuildStore" /* 5177 */;
 import PermissionStore from "PermissionStore" /* 5238 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5349 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
 import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import ChannelConstants from "ChannelConstants" /* 5162 */;

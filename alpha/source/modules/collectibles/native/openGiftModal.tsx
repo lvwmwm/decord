@@ -1,12 +1,12 @@
 // Module ID: 11794
 // Function ID: 11795
 // Name: openGiftModal
-// Dependencies: [6848, 11795, 2121, 2]
+// Dependencies: [6838, 11795, 2121, 2]
 // Exports: closeShopGiftModal, openShopGiftModal
 
 // Module 11794 (openGiftModal)
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import size from "module_2" /* 2 */;
 
 let c3 = "Shop Gift Modal";

@@ -1,7 +1,7 @@
 // Module ID: 7957
 // Function ID: 7958
 // Name: VerifiedRoleIcon
-// Dependencies: [19, 17, 1072, 21, 575, 5306, 7958, 7941, 7959, 6029, 2]
+// Dependencies: [19, 17, 1072, 21, 575, 5306, 7958, 7941, 7959, 6019, 2]
 // Exports: default
 
 // Module 7957 (VerifiedRoleIcon)
@@ -20,7 +20,7 @@ let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp3;
-const LinkIcon = tmp3(6029);
+const LinkIcon = tmp3(6019);
 const View = react_native.View;
 ({ DEFAULT_ROLE_COLOR_HEX: closure_4, EMPTY_STRING_SNOWFLAKE_ID: hasOwnProperty } = Constants);
 const jsx = Fragment.jsx;

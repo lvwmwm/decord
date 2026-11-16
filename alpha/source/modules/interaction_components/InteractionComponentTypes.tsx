@@ -1,10 +1,10 @@
-// Module ID: 6384
-// Function ID: 6385
+// Module ID: 6374
+// Function ID: 6375
 // Name: InteractionComponentTypes
 // Dependencies: [2]
 // Exports: asComponentId
 
-// Module 6384 (InteractionComponentTypes)
+// Module 6374 (InteractionComponentTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/interaction_components/InteractionComponentTypes.tsx");

@@ -1,7 +1,7 @@
 // Module ID: 11734
 // Function ID: 11735
 // Name: redirectToSlayerStorefrontWeb
-// Dependencies: [5, 1072, 3, 6015, 1113, 10489, 5118, 2]
+// Dependencies: [5, 1072, 3, 6005, 1113, 10489, 5118, 2]
 // Exports: default
 
 // Module 11734 (redirectToSlayerStorefrontWeb)

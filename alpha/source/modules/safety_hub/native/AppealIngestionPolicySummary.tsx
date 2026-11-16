@@ -1,7 +1,7 @@
 // Module ID: 14207
 // Function ID: 14208
 // Name: AppealIngestionPolicySummary
-// Dependencies: [19, 17, 21, 5306, 575, 8205, 5303, 5929, 1113, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 8205, 5303, 5919, 1113, 2]
 // Exports: default
 
 // Module 14207 (AppealIngestionPolicySummary)
@@ -9,7 +9,7 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import ColorUtils from "ColorUtils" /* 5303 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import SafetyHubUtils from "SafetyHubUtils" /* 8205 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -47,7 +47,7 @@ export default function AppealIngestionPolicySummary(classification) {
   const tmp2Result = ColorUtils;
   const obj2 = { style: tmp.sectionTitle, variant: "body-sm/semibold", children: intl.string(intl2.t.xsdcxh) };
   const hexWithOpacityResult = tmp2Result.hexWithOpacity(tmp.borderColor.color, 0.08);
-  const Text = tmp2(5929).Text;
+  const Text = tmp2(5919).Text;
   intl = tmp2(1113).intl;
   items = [_false(Text, obj2), ];
   const obj3 = { style: items1, children: _false(Text_Text.Text, { variant: "body-md/semibold", children: capitalizeTextResult }) };

@@ -1,7 +1,7 @@
 // Module ID: 14138
 // Function ID: 14139
 // Name: RoleName
-// Dependencies: [19, 17, 5307, 21, 5306, 575, 504, 9189, 1187, 5929, 2]
+// Dependencies: [19, 17, 5307, 21, 5306, 575, 504, 9189, 1187, 5919, 2]
 // Exports: default
 
 // Module 14138 (RoleName)
@@ -68,7 +68,7 @@ export default function RoleName(children) {
   const obj6 = { variant: textVariant, style: items2, lineClamp: 1, gradientColors: tmp15, children };
   items2 = [tmp.name, ];
   let tmp13;
-  const Text = tmp2(5929).Text;
+  const Text = tmp2(5919).Text;
   const tmp12 = React3;
   if ("username" === stateFromStores) {
     if (null != colorString) {

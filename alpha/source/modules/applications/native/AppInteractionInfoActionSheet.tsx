@@ -1,7 +1,7 @@
 // Module ID: 12666
 // Function ID: 12667
 // Name: AppInteractionInfoActionSheet
-// Dependencies: [19, 1407, 5177, 1388, 21, 5306, 575, 7913, 1113, 7428, 7497, 5953, 504, 7350, 7443, 7720, 1187, 8476, 5566, 7746, 2]
+// Dependencies: [19, 1407, 5177, 1388, 21, 5306, 575, 7913, 1113, 7428, 7497, 5943, 504, 7350, 7443, 7720, 1187, 8476, 5556, 7746, 2]
 // Exports: default
 
 // Module 12666 (AppInteractionInfoActionSheet)
@@ -80,13 +80,13 @@ export default function AppInteractionInfoActionSheet(message) {
   }, items);
   if (interactionMetadata != null) {
     const tmp4 = message;
-    tmp3 = interactionMetadata.authorizing_integration_owners[message(undefined, 5953).ApplicationIntegrationType.USER_INSTALL];
+    tmp3 = interactionMetadata.authorizing_integration_owners[message(undefined, 5943).ApplicationIntegrationType.USER_INSTALL];
   }
   dependencyMap = tmp3;
   const interactionMetadata2 = message.interactionMetadata;
   let tmp6;
   if (interactionMetadata2 != null) {
-    tmp6 = interactionMetadata2.authorizing_integration_owners[message(undefined, 5953).ApplicationIntegrationType.GUILD_INSTALL];
+    tmp6 = interactionMetadata2.authorizing_integration_owners[message(undefined, 5943).ApplicationIntegrationType.GUILD_INSTALL];
   }
   react = tmp6;
   const interactionMetadata3 = message.interactionMetadata;
@@ -156,7 +156,7 @@ export default function AppInteractionInfoActionSheet(message) {
     }
   }
   const obj11 = { header: memo, bodyStyles: tmp.body, children: tmp28(TableRowGroup, { hasIcons: true, children: items5 }) };
-  const BottomSheet = tmp10(5566).BottomSheet;
+  const BottomSheet = tmp10(5556).BottomSheet;
   items5 = [tmp23, ];
   let tmp27Result = null;
   TableRowGroup = tmp10(7746).TableRowGroup;

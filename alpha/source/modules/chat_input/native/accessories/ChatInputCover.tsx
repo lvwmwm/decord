@@ -1,7 +1,7 @@
 // Module ID: 14659
 // Function ID: 14660
 // Name: ChatInputCover
-// Dependencies: [19, 17, 21, 5568, 1628, 2]
+// Dependencies: [19, 17, 21, 5558, 1628, 2]
 
 // Module 14659 (ChatInputCover)
 import Fragment from "Fragment" /* 21 */;

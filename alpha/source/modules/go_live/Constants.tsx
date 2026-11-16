@@ -1,10 +1,10 @@
-// Module ID: 6803
-// Function ID: 6804
+// Module ID: 6793
+// Function ID: 6794
 // Name: Constants
-// Dependencies: [6804, 2]
+// Dependencies: [6794, 2]
 
-// Module 6803 (Constants)
-import Notifications from "Notifications" /* 6804 */;
+// Module 6793 (Constants)
+import Notifications from "Notifications" /* 6794 */;
 import size from "module_2" /* 2 */;
 
 const StreamNotificationsGuildMaxSize = Notifications.Notifications.StreamNotificationsGuildMaxSize;

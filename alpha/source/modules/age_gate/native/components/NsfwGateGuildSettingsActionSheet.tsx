@@ -1,11 +1,11 @@
 // Module ID: 16346
 // Function ID: 16347
 // Name: NsfwGateGuildSettingsActionSheet
-// Dependencies: [19, 21, 16347, 7951, 7913, 7953, 1113, 5552, 7883, 16348, 2]
+// Dependencies: [19, 21, 16347, 7951, 7913, 7953, 1113, 5542, 7883, 16348, 2]
 // Exports: default
 
 // Module 16346 (NsfwGateGuildSettingsActionSheet)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7883 */;
 import GuildActionSheetActions from "GuildActionSheetActions" /* 16348 */;
 import react from "react" /* 19 */;

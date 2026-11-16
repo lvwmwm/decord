@@ -1,7 +1,7 @@
 // Module ID: 7865
 // Function ID: 7866
 // Name: doGuildOnboarding
-// Dependencies: [32, 5, 17, 5349, 7239, 7866, 1072, 7867, 5552, 6848, 6917, 7868, 1414, 2024, 2025, 7870, 7871, 7872, 7885, 2121, 1099, 2]
+// Dependencies: [32, 5, 17, 5339, 7239, 7866, 1072, 7867, 5542, 6838, 6907, 7868, 1414, 2024, 2025, 7870, 7871, 7872, 7885, 2121, 1099, 2]
 // Exports: default, discardOnboardingPromise, isOnboardingActiveForGuild
 
 // Module 7865 (doGuildOnboarding)
@@ -10,13 +10,13 @@ import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
 import react_nativeDefault from "react-native" /* 2024 */;
 import react_nativeDefault2 from "react-native" /* 2025 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7866 */;
 import _mod7867 from "module_7867" /* 7867 */;
 import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 7872 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5349 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
 import GuildOnboardingStore from "GuildOnboardingStore" /* 7239 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;

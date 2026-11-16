@@ -1,14 +1,14 @@
 // Module ID: 11142
 // Function ID: 11143
 // Name: AlertNotification
-// Dependencies: [19, 17, 21, 7720, 9503, 575, 5306, 11028, 1113, 6063, 11087, 8160, 11043, 2]
+// Dependencies: [19, 17, 21, 7720, 9503, 575, 5306, 11028, 1113, 6053, 11087, 8160, 11043, 2]
 // Exports: default
 
 // Module 11142 (AlertNotification)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import transitionToChannel from "transitionToChannel" /* 6063 */;
+import transitionToChannel from "transitionToChannel" /* 6053 */;
 import GuildIcon from "GuildIcon" /* 7720 */;
 import ClipView from "ClipView" /* 9503 */;
 import react from "react" /* 19 */;

@@ -1,12 +1,12 @@
 // Module ID: 9249
 // Function ID: 9250
 // Name: ApplicationCommandSourceSystemMessage
-// Dependencies: [1072, 6346, 9250, 9188, 1113, 9190, 9192, 2]
+// Dependencies: [1072, 6336, 9250, 9188, 1113, 9190, 9192, 2]
 // Exports: createApplicationCommandSourceSystemMessage
 
 // Module 9249 (ApplicationCommandSourceSystemMessage)
 import Constants from "Constants" /* 1072 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6346 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6336 */;
 import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 9188 */;
 import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 9190 */;
 import _slicedToArray from "_slicedToArray" /* 9250 */;

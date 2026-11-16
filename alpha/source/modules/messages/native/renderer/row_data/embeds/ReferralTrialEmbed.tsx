@@ -1,7 +1,7 @@
 // Module ID: 9318
 // Function ID: 9319
 // Name: ReferralTrialEmbed
-// Dependencies: [5155, 1388, 2179, 9298, 9302, 1072, 1390, 5306, 575, 8580, 8655, 9319, 1113, 9320, 5372, 2174, 9305, 9306, 2188, 1627, 9291, 2]
+// Dependencies: [5155, 1388, 2179, 9298, 9302, 1072, 1390, 5306, 575, 8580, 8655, 9319, 1113, 9320, 5362, 2174, 9305, 9306, 2188, 1627, 9291, 2]
 // Exports: createReferralTrialEmbedRedeemable
 
 // Module 9318 (ReferralTrialEmbed)
@@ -13,7 +13,7 @@ import MetaQuestUtils from "MetaQuestUtils" /* 1627 */;
 import PremiumUtils from "PremiumUtils" /* 2174 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
 import createStyles from "createStyles" /* 5306 */;
-import UserUtilsDefault from "UserUtils" /* 5372 */;
+import UserUtilsDefault from "UserUtils" /* 5362 */;
 import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8655 */;
 import AssetRegistryDefault from "AssetRegistry" /* 9291 */;
 import useTrialOffer from "useTrialOffer" /* 9305 */;

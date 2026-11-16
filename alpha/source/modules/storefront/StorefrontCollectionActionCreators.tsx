@@ -1,13 +1,13 @@
 // Module ID: 10459
 // Function ID: 10460
 // Name: StorefrontCollectionActionCreators
-// Dependencies: [5, 2189, 9451, 8502, 1072, 8582, 8581, 572, 6766, 6758, 2]
+// Dependencies: [5, 2189, 9451, 8502, 1072, 8582, 8581, 572, 6756, 6748, 2]
 // Exports: maybeFetchCollectionsAfter, maybeFetchCollectionsForApplication, maybeFetchCollectionsForApplicationPage, maybeFetchCollectionsWithProducts
 
 // Module 10459 (StorefrontCollectionActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import StoreUtils from "StoreUtils" /* 6766 */;
+import StoreUtils from "StoreUtils" /* 6756 */;
 import StorefrontCacheUtils from "StorefrontCacheUtils" /* 8581 */;
 import getStorefrontNativeStoreQuery from "getStorefrontNativeStoreQuery" /* 8582 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

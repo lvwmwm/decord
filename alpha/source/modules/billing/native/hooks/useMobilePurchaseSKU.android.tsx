@@ -1,7 +1,7 @@
 // Module ID: 11737
 // Function ID: 11738
 // Name: useMobilePurchaseSKU
-// Dependencies: [5, 19, 9592, 1388, 1072, 9303, 3, 9612, 5917, 1256, 572, 9597, 5118, 2153, 9930, 1269, 2]
+// Dependencies: [5, 19, 9592, 1388, 1072, 9303, 3, 9612, 5907, 1256, 572, 9597, 5118, 2153, 9930, 1269, 2]
 // Exports: default
 
 // Module 11737 (useMobilePurchaseSKU)

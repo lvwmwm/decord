@@ -1,13 +1,13 @@
-// Module ID: 17931
-// Function ID: 17932
+// Module ID: 17933
+// Function ID: 17934
 // Name: DefaultGuildThemePreferenceSetting
-// Dependencies: [19, 9202, 5131, 1113, 1196, 12406, 5528, 2]
+// Dependencies: [19, 9202, 5131, 1113, 1196, 12406, 5518, 2]
 
-// Module 17931 (DefaultGuildThemePreferenceSetting)
+// Module 17933 (DefaultGuildThemePreferenceSetting)
 import intl3 from "intl" /* 1113 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
 import UserSettings from "UserSettings" /* 5131 */;
-import ServerThemeUserExperiment from "ServerThemeUserExperiment" /* 5528 */;
+import ServerThemeUserExperiment from "ServerThemeUserExperiment" /* 5518 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;
 import react from "react" /* 19 */;
 import SettingBuilders from "SettingBuilders" /* 12406 */;

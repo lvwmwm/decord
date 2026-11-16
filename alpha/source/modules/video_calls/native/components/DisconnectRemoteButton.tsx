@@ -1,7 +1,7 @@
 // Module ID: 13055
 // Function ID: 13056
 // Name: DisconnectRemoteButton
-// Dependencies: [19, 6072, 21, 504, 12729, 7430, 12995, 1113, 10821, 10583, 2]
+// Dependencies: [19, 6062, 21, 504, 12729, 7430, 12995, 1113, 10821, 10583, 2]
 // Exports: DisconnectRemoteButton
 
 // Module 13055 (DisconnectRemoteButton)
@@ -10,7 +10,7 @@ import CallsUtils from "CallsUtils" /* 10583 */;
 import GameConsoleActionCreators from "GameConsoleActionCreators" /* 10821 */;
 import CallBarActionAll from "CallBarAction" /* 12729 */;
 import react from "react" /* 19 */;
-import GameConsoleStore from "GameConsoleStore" /* 6072 */;
+import GameConsoleStore from "GameConsoleStore" /* 6062 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;

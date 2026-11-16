@@ -1,13 +1,13 @@
 // Module ID: 13154
 // Function ID: 13155
 // Name: openConjureDevicePermissionPrompt
-// Dependencies: [6274, 13153, 1113, 4131, 2]
+// Dependencies: [6264, 13153, 1113, 4131, 2]
 // Exports: default
 
 // Module 13154 (openConjureDevicePermissionPrompt)
 import intl3 from "intl" /* 1113 */;
 import _modDef4131 from "module_4131" /* 4131 */;
-import AlertModal from "AlertModal" /* 6274 */;
+import AlertModal from "AlertModal" /* 6264 */;
 import conjureDevicePermissions from "conjureDevicePermissions" /* 13153 */;
 import size from "module_2" /* 2 */;
 

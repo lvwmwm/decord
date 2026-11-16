@@ -1,12 +1,12 @@
 // Module ID: 14581
 // Function ID: 14582
 // Name: openCustomTypingIndicatorAnnounceActionSheet
-// Dependencies: [5552, 14582, 2121, 2]
+// Dependencies: [5542, 14582, 2121, 2]
 // Exports: openCustomTypingIndicatorAnnounceActionSheet
 
 // Module 14581 (openCustomTypingIndicatorAnnounceActionSheet)
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import size from "module_2" /* 2 */;
 
 const CustomTypingIndicatorAnnounceActionSheet = "CustomTypingIndicatorAnnounceActionSheet";

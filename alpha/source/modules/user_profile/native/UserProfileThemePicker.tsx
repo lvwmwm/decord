@@ -1,7 +1,7 @@
 // Module ID: 17119
 // Function ID: 17120
 // Name: UserProfileThemePicker
-// Dependencies: [19, 17, 21, 575, 5306, 1090, 7958, 7428, 1113, 10901, 5929, 2]
+// Dependencies: [19, 17, 21, 575, 5306, 1090, 7958, 7428, 1113, 10901, 5919, 2]
 // Exports: default
 
 // Module 17119 (UserProfileThemePicker)
@@ -9,7 +9,7 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
 import intl5 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import Pressables from "Pressables" /* 7428 */;
 import getHigherContrastColor from "getHigherContrastColor" /* 7958 */;
 import PencilIcon from "PencilIcon" /* 10901 */;

@@ -1,11 +1,11 @@
 // Module ID: 14292
 // Function ID: 14293
 // Name: CheckpointSounds
-// Dependencies: [14293, 14294, 14295, 14296, 14297, 6745, 2]
+// Dependencies: [14293, 14294, 14295, 14296, 14297, 6735, 2]
 // Exports: getCheckpointRouteSounds, scheduleCheckpointRouteSounds
 
 // Module 14292 (CheckpointSounds)
-import CheckpointNavigation from "CheckpointNavigation" /* 6745 */;
+import CheckpointNavigation from "CheckpointNavigation" /* 6735 */;
 import _modDef14293 from "module_14293" /* 14293 */;
 import _modDef14294 from "module_14294" /* 14294 */;
 import _modDef14295 from "module_14295" /* 14295 */;
@@ -42,7 +42,7 @@ export function getCheckpointRouteSounds(arg0) {
     const obj2 = { source: _modDef14294, delayMs: 2800 };
     push4(obj2);
   } else {
-    let tmp4 = previousRoute !== tmp(6745).CheckpointRoute.HOME;
+    let tmp4 = previousRoute !== tmp(6735).CheckpointRoute.HOME;
     if (tmp4) {
       const tmpResult = CheckpointNavigation;
       tmp4 = null == tmpResult.getCheckpointRoutePresentation(previousRoute).statsScreen;
@@ -58,7 +58,7 @@ export function getCheckpointRouteSounds(arg0) {
     const tmpResult5 = CheckpointNavigation;
     let tmp7 = null != tmpResult5.getCheckpointRoutePresentation(previousRoute).statsScreen;
     if (tmp7) {
-      let tmp8 = route !== tmp(6745).CheckpointRoute.HOME;
+      let tmp8 = route !== tmp(6735).CheckpointRoute.HOME;
       if (tmp8) {
         const tmpResult6 = CheckpointNavigation;
         tmp8 = null == tmpResult6.getCheckpointRoutePresentation(route).statsScreen;

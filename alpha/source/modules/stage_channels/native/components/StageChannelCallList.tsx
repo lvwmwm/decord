@@ -1,15 +1,15 @@
 // Module ID: 13084
 // Function ID: 13085
 // Name: StageChannelCallList
-// Dependencies: [32, 19, 13085, 6906, 21, 1187, 13086, 6943, 5899, 6949, 38, 13093, 1113, 12491, 13094, 13106, 7847, 12953, 1496, 8560, 2]
+// Dependencies: [32, 19, 13085, 6896, 21, 1187, 13086, 6933, 5889, 6939, 38, 13093, 1113, 12491, 13094, 13106, 7847, 12953, 1496, 8560, 2]
 // Exports: default
 
 // Module 13084 (StageChannelCallList)
 import _modDef38 from "module_38" /* 38 */;
 import intl3 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 6906 */;
-import StageChannelParticipants from "StageChannelParticipants" /* 6943 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 6896 */;
+import StageChannelParticipants from "StageChannelParticipants" /* 6933 */;
 import SpeakerTile from "SpeakerTile" /* 13086 */;
 import StageSectionHeaderDefault from "StageSectionHeader" /* 13093 */;
 import StageGridRowDefault from "StageGridRow" /* 13094 */;

@@ -1,7 +1,7 @@
 // Module ID: 10248
 // Function ID: 10249
 // Name: Autocompleter
-// Dependencies: [7288, 10249, 5236, 5248, 1388, 7071, 6962, 10250, 5136, 7075, 10252, 10256, 2153, 6051, 6055, 2070, 1381, 12, 7074, 2]
+// Dependencies: [7288, 10249, 5236, 5248, 1388, 7071, 6952, 10250, 5136, 7075, 10252, 10256, 2153, 6041, 6045, 2070, 1381, 12, 7074, 2]
 
 // Module 10248 (Autocompleter)
 import _modDef12 from "module_12" /* 12 */;
@@ -9,9 +9,9 @@ import URLUtilsDefault from "URLUtils" /* 1381 */;
 import _modDef2070 from "module_2070" /* 2070 */;
 import StringUtils from "StringUtils" /* 2153 */;
 import GuildChannelStore from "GuildChannelStore" /* 5236 */;
-import findCodedLinks from "findCodedLinks" /* 6051 */;
-import CodedLink from "CodedLink" /* 6055 */;
-import AutocompleteUtils from "AutocompleteUtils" /* 6962 */;
+import findCodedLinks from "findCodedLinks" /* 6041 */;
+import CodedLink from "CodedLink" /* 6045 */;
+import AutocompleteUtils from "AutocompleteUtils" /* 6952 */;
 import autocompleter_AutocompleterConstants from "autocompleter/AutocompleterConstants" /* 7071 */;
 import sortByMatchScoreDefault from "sortByMatchScore" /* 7074 */;
 import GuildUtilsDefault from "GuildUtils" /* 7075 */;

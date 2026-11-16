@@ -1,7 +1,7 @@
 // Module ID: 12056
 // Function ID: 12057
 // Name: IgnoreConfirmationActionSheet
-// Dependencies: [32, 19, 17, 5155, 1388, 8138, 12054, 1072, 21, 5306, 575, 8481, 1113, 6039, 7746, 7443, 1187, 1630, 7918, 7937, 504, 1256, 7350, 5566, 5570, 7634, 5929, 6351, 8557, 5552, 12055, 2121, 1264, 5936, 8137, 2188, 6012, 2]
+// Dependencies: [32, 19, 17, 5155, 1388, 8138, 12054, 1072, 21, 5306, 575, 8481, 1113, 6029, 7746, 7443, 1187, 1630, 7918, 7937, 504, 1256, 7350, 5556, 5560, 7634, 5919, 6341, 8557, 5542, 12055, 2121, 1264, 5926, 8137, 2188, 6002, 2]
 
 // Module 12056 (IgnoreConfirmationActionSheet)
 import react_native from "react-native" /* 17 */;
@@ -11,8 +11,8 @@ import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6039 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6029 */;
 import UserActionCreators from "UserActionCreators" /* 7350 */;
 import TableRow2 from "TableRow" /* 7443 */;
 import TableRowGroup2 from "TableRowGroup" /* 7746 */;
@@ -212,14 +212,14 @@ const memoResult = react.memo(function IgnoreConfirmationActionSheet(userId) {
     let obj3 = { value: analyticsLocations, children: closure_13(BottomSheet, obj4) };
     const AnalyticsLocationProvider = tmp7(7918).AnalyticsLocationProvider;
     obj4 = { onDismiss: handleClose, scrollable: true, startHeight: sum1 + channelId(575).space.PX_24, bodyStyles: obj5, children: closure_14(BottomSheetScrollView, obj8) };
-    BottomSheet = tmp7(5566).BottomSheet;
+    BottomSheet = tmp7(5556).BottomSheet;
     const sum = closure_10 + bottom;
     sum1 = sum + tmp4(575).space.PX_24;
     obj5 = { paddingBottom: channelId(575).space.PX_16 + bottom };
     const merged = Object.assign(tmp.container);
     const obj6 = { style: tmp.header, children: items7 };
     const obj7 = { style: tmp.avatarContainer, children: items6 };
-    BottomSheetScrollView = tmp7(5570).BottomSheetScrollView;
+    BottomSheetScrollView = tmp7(5560).BottomSheetScrollView;
     const Avatar = tmp7(1187).Avatar;
     obj8 = { children: items8 };
     const obj9 = { guildId: stateFromStores1, user: stateFromStores, animate: false, size: userId(1187).AvatarSizes.XLARGE, style: tmp.avatar };
@@ -230,15 +230,15 @@ const memoResult = react.memo(function IgnoreConfirmationActionSheet(userId) {
     items6[1] = closure_13(c5, obj10);
     items7 = [closure_14(c5, obj7), , ];
     const obj12 = { style: tmp.title, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: format(prop, obj13) };
-    const Text = tmp7(5929).Text;
+    const Text = tmp7(5919).Text;
     const intl = tmp7(1113).intl;
     format = intl.format;
     obj13 = { username: tmp4Result.getName(stateFromStores1, channelId, stateFromStores) };
     prop = tmp7(1113).t["WrQD/Y"];
-    tmp4Result = channelId(6351);
+    tmp4Result = channelId(6341);
     items7[1] = closure_13(Text, obj12);
     const obj14 = { style: tmp.subTitle, variant: "heading-sm/medium", color: "text-default", accessibilityRole: "header", children: intl2.string(userId(1113).t.JKL1u1) };
-    const Text2 = tmp7(5929).Text;
+    const Text2 = tmp7(5919).Text;
     intl2 = tmp7(1113).intl;
     items7[2] = closure_13(Text2, obj14);
     items8 = [closure_14(c5, obj6), , , ];
@@ -271,7 +271,7 @@ const memoResult = react.memo(function IgnoreConfirmationActionSheet(userId) {
     Icon2 = tmp7(1187).Icon;
     intl4 = tmp7(1113).intl;
     obj20 = { variant: "body-xs/medium", color: "text-feedback-critical", children: intl5.string(userId(1113).t.NTnf1T) };
-    Text3 = tmp7(5929).Text;
+    Text3 = tmp7(5919).Text;
     intl5 = tmp7(1113).intl;
     intl6 = tmp7(1113).intl;
     items8[2] = closure_13(c5, obj16);
@@ -299,12 +299,12 @@ const memoResult = react.memo(function IgnoreConfirmationActionSheet(userId) {
       disabled: tmp3,
       loading: tmp3
     };
-    const Button = tmp7(5936).Button;
+    const Button = tmp7(5926).Button;
     intl7 = tmp7(1113).intl;
     items9 = [closure_13(Button, obj22), ];
     const obj23 = { onPress: handleClose, style: obj24, variant: "body-sm/normal", color: "text-default", children: intl8.format(userId(1113).t.iX9qtL, obj25) };
     obj24 = { textAlign: "center", marginTop: channelId(575).space.PX_12, paddingBottom: channelId(575).space.PX_4 };
-    const Text4 = tmp7(5929).Text;
+    const Text4 = tmp7(5919).Text;
     intl8 = tmp7(1113).intl;
     obj25 = {
       articleLink: function handleHelpCenter() {

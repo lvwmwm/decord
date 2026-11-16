@@ -1,7 +1,7 @@
 // Module ID: 13090
 // Function ID: 13091
 // Name: SpeakerTileStatuses
-// Dependencies: [19, 17, 2133, 5981, 6942, 21, 5306, 575, 504, 10597, 13050, 12836, 12837, 1187, 13091, 13092, 7634, 2]
+// Dependencies: [19, 17, 2133, 5971, 6932, 21, 5306, 575, 504, 10597, 13050, 12836, 12837, 1187, 13091, 13092, 7634, 2]
 // Exports: BlockedStatus, IgnoredStatus
 
 // Module 13090 (SpeakerTileStatuses)
@@ -13,8 +13,8 @@ import AssetRegistryDefault from "AssetRegistry" /* 7634 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 13092 */;
 import react from "react" /* 19 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import VoiceStateStore from "VoiceStateStore" /* 5981 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 6942 */;
+import VoiceStateStore from "VoiceStateStore" /* 5971 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 6932 */;
 import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 

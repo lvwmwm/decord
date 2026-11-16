@@ -1,7 +1,7 @@
 // Module ID: 16427
 // Function ID: 16428
 // Name: GuildProgressOverview
-// Dependencies: [19, 17, 1072, 21, 5306, 575, 14905, 14908, 7948, 1113, 7428, 1187, 5929, 12973, 16428, 2]
+// Dependencies: [19, 17, 1072, 21, 5306, 575, 14905, 14908, 7948, 1113, 7428, 1187, 5919, 12973, 16428, 2]
 // Exports: default
 
 // Module 16427 (GuildProgressOverview)
@@ -10,7 +10,7 @@ import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import Pressables from "Pressables" /* 7428 */;
 import showSimpleActionSheet2 from "showSimpleActionSheet" /* 7948 */;
 import AssetRegistryDefault from "AssetRegistry" /* 12973 */;

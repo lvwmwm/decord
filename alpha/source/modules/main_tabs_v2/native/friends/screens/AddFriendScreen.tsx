@@ -1,10 +1,10 @@
-// Module ID: 19601
-// Function ID: 19602
+// Module ID: 19603
+// Function ID: 19604
 // Name: AddFriendScreen
-// Dependencies: [32, 19, 17, 1388, 1072, 14995, 21, 5306, 575, 14997, 5372, 1256, 1113, 10230, 9051, 1380, 10271, 5929, 16290, 16291, 2]
+// Dependencies: [32, 19, 17, 1388, 1072, 14995, 21, 5306, 575, 14997, 5362, 1256, 1113, 10230, 9051, 1380, 10271, 5919, 16290, 16291, 2]
 // Exports: default
 
-// Module 19601 (AddFriendScreen)
+// Module 19603 (AddFriendScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import ContactSyncConstants from "ContactSyncConstants" /* 14995 */;
@@ -110,18 +110,18 @@ export default function AddFriendScreen(navigation) {
   const items1 = [closure_10(contactSyncAccount(10271), { absolute: true }), ];
   let obj3 = { keyboardShouldPersistTaps: "handled", style: tmp.background, children: items2 };
   let obj4 = { style: tmp.headerText, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(navigation(1113).t.GWMTSE) };
-  const Text = navigation(5929).Text;
+  const Text = navigation(5919).Text;
   intl = navigation(1113).intl;
   items2 = [closure_10(Text, obj4), , , ];
   const obj5 = { style: tmp.subheaderText, variant: "body-sm/medium", color: "text-default", children: intl2.string(navigation(1113).t["Rn/sLl"]) };
-  const Text2 = navigation(5929).Text;
+  const Text2 = navigation(5919).Text;
   intl2 = navigation(1113).intl;
   items2[1] = closure_10(Text2, obj5);
   const obj6 = { style: tmp.input, autoFocusInput: false, sourcePage };
   items2[2] = closure_10(contactSyncAccount(16290), obj6);
   const obj7 = { style: tmp.otherOptionsContainer, children: items3 };
   const obj8 = { accessibilityRole: "header", variant: "body-sm/medium", color: "text-default", children: intl3.string(navigation(1113).t.dukg0Z) };
-  const Text3 = navigation(5929).Text;
+  const Text3 = navigation(5919).Text;
   intl3 = navigation(1113).intl;
   items3 = [closure_10(Text3, obj8), ];
   let tmp10Result = null;

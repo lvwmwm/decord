@@ -1,15 +1,15 @@
-// Module ID: 17970
-// Function ID: 17971
+// Module ID: 17972
+// Function ID: 17973
 // Name: DisplayNameStylesCustomColorButton
-// Dependencies: [19, 17, 21, 5306, 575, 1090, 17971, 1113, 17098, 17972, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 1090, 17973, 1113, 17098, 17974, 2]
 // Exports: default
 
-// Module 17970 (DisplayNameStylesCustomColorButton)
+// Module 17972 (DisplayNameStylesCustomColorButton)
 import nativeDefault from "native" /* 575 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
 import intl2 from "intl" /* 1113 */;
-import useCustomSwatchA11yDefault from "useCustomSwatchA11y" /* 17971 */;
-import EyeDropperIcon2 from "EyeDropperIcon" /* 17972 */;
+import useCustomSwatchA11yDefault from "useCustomSwatchA11y" /* 17973 */;
+import EyeDropperIcon2 from "EyeDropperIcon" /* 17974 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

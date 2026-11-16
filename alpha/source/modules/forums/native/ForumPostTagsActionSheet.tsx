@@ -1,12 +1,12 @@
 // Module ID: 11860
 // Function ID: 11861
 // Name: ForumPostTagsActionSheet
-// Dependencies: [32, 19, 17, 8996, 21, 5306, 1113, 11158, 7951, 7913, 11861, 5936, 9112, 5552, 2]
+// Dependencies: [32, 19, 17, 8996, 21, 5306, 1113, 11158, 7951, 7913, 11861, 5926, 9112, 5542, 2]
 // Exports: default
 
 // Module 11860 (ForumPostTagsActionSheet)
 import react_native from "react-native" /* 17 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import ForumConstants from "ForumConstants" /* 8996 */;
 import ForumActionCreatorsDefault from "ForumActionCreators" /* 9112 */;
 import AvailableForumTagDefault from "AvailableForumTag" /* 11861 */;
@@ -136,7 +136,7 @@ export default function ForumPostTagsActionSheet(thread) {
       obj2.hideActionSheet();
     }
   };
-  Button = tmp4(5936).Button;
+  Button = tmp4(5926).Button;
   intl3 = tmp4(1113).intl;
   items[1] = toggleTag(closure_5, obj5);
   return closure_8(ActionSheet, obj2);

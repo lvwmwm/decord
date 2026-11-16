@@ -1,11 +1,11 @@
 // Module ID: 7424
 // Function ID: 7425
 // Name: XboxLinkModalActionCreators
-// Dependencies: [6848, 7425, 2121, 2]
+// Dependencies: [6838, 7425, 2121, 2]
 
 // Module 7424 (XboxLinkModalActionCreators)
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import size from "module_2" /* 2 */;
 
 const USER_SETTINGS_CONNECTIONS_XBOX_LINK_MODAL_KEY = "USER_SETTINGS_CONNECTIONS_XBOX_LINK_MODAL_KEY";

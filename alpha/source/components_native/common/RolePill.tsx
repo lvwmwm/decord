@@ -1,13 +1,13 @@
 // Module ID: 10935
 // Function ID: 10936
 // Name: RolePill
-// Dependencies: [19, 17, 1072, 21, 5306, 575, 5131, 7941, 7943, 6014, 7428, 7957, 7959, 5929, 2]
+// Dependencies: [19, 17, 1072, 21, 5306, 575, 5131, 7941, 7943, 6004, 7428, 7957, 7959, 5919, 2]
 // Exports: default
 
 // Module 10935 (RolePill)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ToastUtils from "ToastUtils" /* 6014 */;
+import ToastUtils from "ToastUtils" /* 6004 */;
 import ClipboardUtils from "ClipboardUtils" /* 7943 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
@@ -120,6 +120,6 @@ export default function RolePill(role) {
     tmp10Result2 = tmp10(tmp13, obj9);
   }
   items1[1] = tmp10Result2;
-  items1[2] = closure_6(role(5929).Text, { variant: "body-xs/semibold", color: "interactive-text-active", children: name });
+  items1[2] = closure_6(role(5919).Text, { variant: "body-xs/semibold", color: "interactive-text-active", children: name });
   return closure_6(PressableHighlight, obj3);
 };

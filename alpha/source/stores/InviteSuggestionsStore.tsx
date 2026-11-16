@@ -1,7 +1,7 @@
 // Module ID: 14732
 // Function ID: 14733
 // Name: InviteSuggestionsStore
-// Dependencies: [10246, 8553, 5155, 6944, 5218, 5238, 5248, 1072, 8463, 7074, 7665, 1255, 504, 572, 2]
+// Dependencies: [10246, 8553, 5155, 6934, 5218, 5238, 5248, 1072, 8463, 7074, 7665, 1255, 504, 572, 2]
 
 // Module 14732 (InviteSuggestionsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -12,7 +12,7 @@ import InstantInviteUtils from "InstantInviteUtils" /* 8463 */;
 import QuickSwitcherStore from "QuickSwitcherStore" /* 10246 */;
 import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 8553 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
-import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 6944 */;
+import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 6934 */;
 import GuildMemberStore from "GuildMemberStore" /* 5218 */;
 import PermissionStore from "PermissionStore" /* 5238 */;
 import RelationshipStore from "RelationshipStore" /* 5248 */;

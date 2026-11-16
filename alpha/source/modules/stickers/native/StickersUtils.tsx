@@ -1,7 +1,7 @@
 // Module ID: 11359
 // Function ID: 11360
 // Name: stickers/StickersUtils
-// Dependencies: [19, 17, 5177, 1388, 11360, 1072, 1228, 11357, 504, 6793, 11361, 11362, 11363, 1628, 2]
+// Dependencies: [19, 17, 5177, 1388, 11360, 1072, 1228, 11357, 504, 6783, 11361, 11362, 11363, 1628, 2]
 // Exports: dropPreloadedSticker, openStickerPickerToPackId, preloadSticker, useStickerCategories
 
 // Module 11359 (stickers/StickersUtils)

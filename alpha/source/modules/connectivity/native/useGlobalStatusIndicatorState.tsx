@@ -1,7 +1,7 @@
 // Module ID: 12914
 // Function ID: 12915
 // Name: useGlobalStatusIndicatorState
-// Dependencies: [5155, 6071, 12915, 1072, 12723, 10818, 504, 11949, 12911, 5492, 6900, 11950, 12916, 2]
+// Dependencies: [5155, 6061, 12915, 1072, 12723, 10818, 504, 11949, 12911, 5482, 6890, 11950, 12916, 2]
 // Exports: useGlobalStatusIndicatorState
 
 // Module 12914 (useGlobalStatusIndicatorState)
@@ -10,7 +10,7 @@ import useVoiceStateForRemoteSessionDefault from "useVoiceStateForRemoteSession"
 import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 11949 */;
 import ConnectivityConstants from "ConnectivityConstants" /* 12915 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6071 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -52,12 +52,12 @@ export function useGlobalStatusIndicatorState(flag) {
   }, items2);
   const obj4 = stateFromStores(12911);
   let num = obj4.useGetStageRTCPanelHeight(stateFromStores);
-  stateFromStores(5492);
+  stateFromStores(5482);
   let tmp12 = null != tmp5;
   if (tmp12) {
     let channelId = tmp5.channelId;
-    const getVoiceChannelKey = stateFromStores(6900).getVoiceChannelKey;
-    stateFromStores(6900);
+    const getVoiceChannelKey = stateFromStores(6890).getVoiceChannelKey;
+    stateFromStores(6890);
     if (channelId == null) {
       channelId = EMPTY_STRING_SNOWFLAKE_ID;
     }

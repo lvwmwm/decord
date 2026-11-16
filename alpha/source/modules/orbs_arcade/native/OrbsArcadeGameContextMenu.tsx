@@ -1,7 +1,7 @@
 // Module ID: 17689
 // Function ID: 17690
 // Name: OrbsArcadeGameContextMenu
-// Dependencies: [5, 19, 1388, 21, 17653, 6015, 1113, 504, 10059, 17657, 17658, 13308, 9148, 7988, 7421, 2]
+// Dependencies: [5, 19, 1388, 21, 17653, 6005, 1113, 504, 10059, 17657, 17658, 13308, 9148, 7988, 7421, 2]
 // Exports: default
 
 // Module 17689 (OrbsArcadeGameContextMenu)

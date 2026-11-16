@@ -1,7 +1,7 @@
 // Module ID: 13036
 // Function ID: 13037
 // Name: KrispLogo
-// Dependencies: [19, 17, 1192, 1072, 21, 2188, 1256, 1113, 6012, 504, 5313, 13037, 13038, 6020, 5929, 2]
+// Dependencies: [19, 17, 1192, 1072, 21, 2188, 1256, 1113, 6002, 504, 5313, 13037, 13038, 6010, 5919, 2]
 // Exports: default
 
 // Module 13036 (KrispLogo)
@@ -10,7 +10,7 @@ import intl4 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
 import shared from "shared" /* 5313 */;
-import LinkingDefault from "Linking" /* 6012 */;
+import LinkingDefault from "Linking" /* 6002 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
@@ -70,13 +70,13 @@ export default function KrispLogo() {
   }
   const obj3 = { style: closure_12.detailsView, children: items1 };
   const obj4 = { style: closure_12.logo, source: tmp4Result, accessibilityLabel: intl.string(intl4.t.vFiCSx) };
-  const tmp6Result = tmp6(6020);
+  const tmp6Result = tmp6(6010);
   intl = tmp(1113).intl;
   items1 = [authStore(tmp6Result, obj4), ];
   const obj5 = { accessibilityRole: "link", accessibilityLabel: intl2.string(intl4.t.hvVgAZ), onPress: handleKrispLinkPressed, children: authStore(Text, obj6) };
   intl2 = tmp(1113).intl;
   obj6 = { variant: "body-sm/medium", color: "text-link", children: intl3.string(intl4.t.hvVgAZ) };
-  Text = tmp(5929).Text;
+  Text = tmp(5919).Text;
   intl3 = tmp(1113).intl;
   items1[1] = authStore(React3, obj5);
   return unpackModuleId(_false, obj3);

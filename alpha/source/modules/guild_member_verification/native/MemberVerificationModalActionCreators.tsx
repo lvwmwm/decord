@@ -1,13 +1,13 @@
 // Module ID: 7685
 // Function ID: 7686
 // Name: guild_member_verification/MemberVerificationModalActionCreators
-// Dependencies: [7281, 1072, 1256, 7686, 6848, 7706, 2121, 2]
+// Dependencies: [7281, 1072, 1256, 7686, 6838, 7706, 2121, 2]
 
 // Module 7685 (guild_member_verification/MemberVerificationModalActionCreators)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import MemberVerificationActionCreatorsDefault from "MemberVerificationActionCreators" /* 7686 */;
 import MemberVerificationConstants from "MemberVerificationConstants" /* 7281 */;
 import size from "module_2" /* 2 */;

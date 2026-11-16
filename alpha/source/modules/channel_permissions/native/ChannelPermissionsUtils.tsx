@@ -1,14 +1,14 @@
 // Module ID: 12558
 // Function ID: 12559
 // Name: channel_permissions/ChannelPermissionsUtils
-// Dependencies: [1072, 1256, 5552, 8171, 2121, 12559, 2]
+// Dependencies: [1072, 1256, 5542, 8171, 2121, 12559, 2]
 // Exports: openAddMembersActionSheet, openChannelMembersActionSheet
 
 // Module 12558 (channel_permissions/ChannelPermissionsUtils)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

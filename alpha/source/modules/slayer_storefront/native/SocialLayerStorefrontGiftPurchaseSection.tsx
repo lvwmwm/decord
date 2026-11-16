@@ -1,7 +1,7 @@
 // Module ID: 11790
 // Function ID: 11791
 // Name: SocialLayerStorefrontGiftPurchaseSection
-// Dependencies: [5, 32, 19, 17, 9592, 1388, 1072, 1390, 21, 5306, 575, 5913, 7259, 504, 1256, 11791, 11736, 1380, 572, 11729, 1113, 11741, 5929, 5936, 2]
+// Dependencies: [5, 32, 19, 17, 9592, 1388, 1072, 1390, 21, 5306, 575, 5903, 7259, 504, 1256, 11791, 11736, 1380, 572, 11729, 1113, 11741, 5919, 5926, 2]
 // Exports: default
 
 // Module 11790 (SocialLayerStorefrontGiftPurchaseSection)

@@ -1,27 +1,27 @@
-// Module ID: 18193
-// Function ID: 18194
+// Module ID: 18195
+// Function ID: 18196
 // Name: ViewDebugLogsSetting
-// Dependencies: [19, 17, 21, 5552, 7953, 6848, 10907, 7951, 7913, 1113, 18194, 18196, 6042, 18199, 1380, 10997, 18200, 12406, 16277, 5131, 2]
+// Dependencies: [19, 17, 21, 5542, 7953, 6838, 10907, 7951, 7913, 1113, 18196, 18198, 6032, 18201, 1380, 10997, 18202, 12406, 16277, 5131, 2]
 
-// Module 18193 (ViewDebugLogsSetting)
+// Module 18195 (ViewDebugLogsSetting)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 19 */;
 import intl5 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import UserSettings from "UserSettings" /* 5131 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import ClockIcon from "ClockIcon" /* 6042 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import ClockIcon from "ClockIcon" /* 6032 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7913 */;
 import ActionSheet2 from "ActionSheet" /* 7951 */;
 import ActionSheetRow from "ActionSheetRow" /* 7953 */;
 import ModalStackNavigatorDefault from "ModalStackNavigator" /* 10907 */;
 import ChannelNotificationIcon from "ChannelNotificationIcon" /* 10997 */;
 import ChannelListMagnifyingGlassIcon from "ChannelListMagnifyingGlassIcon" /* 16277 */;
-import WrenchIcon from "WrenchIcon" /* 18194 */;
-import UserSettingsDebugLogsDefault from "UserSettingsDebugLogs" /* 18196 */;
-import UserSettingsStartupTimingsDefault from "UserSettingsStartupTimings" /* 18199 */;
-import UserSettingsPushNotificationLogsDefault from "UserSettingsPushNotificationLogs" /* 18200 */;
+import WrenchIcon from "WrenchIcon" /* 18196 */;
+import UserSettingsDebugLogsDefault from "UserSettingsDebugLogs" /* 18198 */;
+import UserSettingsStartupTimingsDefault from "UserSettingsStartupTimings" /* 18201 */;
+import UserSettingsPushNotificationLogsDefault from "UserSettingsPushNotificationLogs" /* 18202 */;
 import Fragment from "Fragment" /* 21 */;
 import SettingBuilders from "SettingBuilders" /* 12406 */;
 import size from "module_2" /* 2 */;

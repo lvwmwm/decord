@@ -1,9 +1,9 @@
-// Module ID: 20802
-// Function ID: 20803
+// Module ID: 20805
+// Function ID: 20806
 // Name: NativeNotificationsManager
 // Dependencies: [5, 7060, 1072, 3, 7882, 1380, 12920, 12922, 8565, 1256, 2]
 
-// Module 20802 (NativeNotificationsManager)
+// Module 20805 (NativeNotificationsManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1072 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;

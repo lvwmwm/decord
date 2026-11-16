@@ -1,7 +1,7 @@
 // Module ID: 10762
 // Function ID: 10763
 // Name: GuildPowerupsNotificationContainer
-// Dependencies: [17, 21, 5306, 575, 5929, 10763, 10764, 1113, 2733, 10767, 2]
+// Dependencies: [17, 21, 5306, 575, 5919, 10763, 10764, 1113, 2733, 10767, 2]
 // Exports: default
 
 // Module 10762 (GuildPowerupsNotificationContainer)
@@ -9,7 +9,7 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef2733 from "module_2733" /* 2733 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import useGuildPowerupTier3OverrideConfigDefault from "useGuildPowerupTier3OverrideConfig" /* 10763 */;
 import useGuildPowerupExpiringNotificationsConfigDefault from "useGuildPowerupExpiringNotificationsConfig" /* 10764 */;
 import Fragment from "Fragment" /* 21 */;

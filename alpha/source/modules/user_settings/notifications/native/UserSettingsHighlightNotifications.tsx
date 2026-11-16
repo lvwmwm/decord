@@ -1,10 +1,10 @@
-// Module ID: 18132
-// Function ID: 18133
+// Module ID: 18134
+// Function ID: 18135
 // Name: UserSettingsHighlightNotifications
-// Dependencies: [19, 5177, 6956, 6958, 1072, 21, 7883, 7878, 504, 7720, 7954, 8106, 2]
+// Dependencies: [19, 5177, 6946, 6948, 1072, 21, 7883, 7878, 504, 7720, 7954, 8106, 2]
 // Exports: default
 
-// Module 18132 (UserSettingsHighlightNotifications)
+// Module 18134 (UserSettingsHighlightNotifications)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import GuildIconDefault from "GuildIcon" /* 7720 */;
@@ -12,8 +12,8 @@ import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7878 */;
 import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7883 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 5177 */;
-import SortedGuildStore from "SortedGuildStore" /* 6956 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6958 */;
+import SortedGuildStore from "SortedGuildStore" /* 6946 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6948 */;
 import size from "module_2" /* 2 */;
 
 function Row(guildId) {

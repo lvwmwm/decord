@@ -1,7 +1,7 @@
 // Module ID: 17037
 // Function ID: 17038
 // Name: DiscordGestureHandlerRootView
-// Dependencies: [19, 17, 21, 17038, 5598, 2]
+// Dependencies: [19, 17, 21, 17038, 5588, 2]
 // Exports: default
 
 // Module 17037 (DiscordGestureHandlerRootView)

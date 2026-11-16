@@ -1,12 +1,12 @@
 // Module ID: 10235
 // Function ID: 10236
 // Name: showSharePreparingModal
-// Dependencies: [10233, 6848, 10236, 2121, 2]
+// Dependencies: [10233, 6838, 10236, 2121, 2]
 // Exports: showSharePreparingModal
 
 // Module 10235 (showSharePreparingModal)
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import SharePreparingModalConstants from "SharePreparingModalConstants" /* 10233 */;
 import size from "module_2" /* 2 */;
 

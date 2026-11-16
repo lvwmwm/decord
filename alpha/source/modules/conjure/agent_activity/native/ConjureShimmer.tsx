@@ -1,13 +1,13 @@
 // Module ID: 13611
 // Function ID: 13612
 // Name: ConjureShimmer
-// Dependencies: [32, 19, 17, 5307, 21, 5306, 504, 1655, 5548, 671, 7533, 5893, 2]
+// Dependencies: [32, 19, 17, 5307, 21, 5306, 504, 1655, 5538, 671, 7533, 5883, 2]
 // Exports: default
 
 // Module 13611 (ConjureShimmer)
 import _modDef671 from "module_671" /* 671 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5548 */;
+import timing_timing from "timing/timing" /* 5538 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

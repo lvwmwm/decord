@@ -1,7 +1,7 @@
 // Module ID: 11350
 // Function ID: 11351
 // Name: GIFPickerItemView
-// Dependencies: [19, 17, 21, 5306, 11342, 575, 2020, 5552, 11351, 2121, 1113, 7428, 6020, 2]
+// Dependencies: [19, 17, 21, 5306, 11342, 575, 2020, 5542, 11351, 2121, 1113, 7428, 6010, 2]
 // Exports: default
 
 // Module 11350 (GIFPickerItemView)
@@ -11,7 +11,7 @@ import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 2020 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import gif_picker_GIFPickerUtils from "gif_picker/GIFPickerUtils" /* 11342 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5306 */;

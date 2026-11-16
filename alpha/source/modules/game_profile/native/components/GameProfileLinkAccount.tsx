@@ -1,7 +1,7 @@
 // Module ID: 10382
 // Function ID: 10383
 // Name: GameProfileLinkAccount
-// Dependencies: [19, 17, 2165, 1388, 21, 5306, 575, 7771, 10383, 10384, 7919, 504, 10286, 1113, 6020, 1187, 5929, 5936, 10386, 2]
+// Dependencies: [19, 17, 2165, 1388, 21, 5306, 575, 7771, 10383, 10384, 7919, 504, 10286, 1113, 6010, 1187, 5919, 5926, 10386, 2]
 // Exports: default
 
 // Module 10382 (GameProfileLinkAccount)

@@ -1,10 +1,10 @@
-// Module ID: 17981
-// Function ID: 17982
+// Module ID: 17983
+// Function ID: 17984
 // Name: CustomTypingIndicatorEditScreen
-// Dependencies: [5, 32, 19, 17, 1388, 1072, 5152, 21, 5306, 575, 5139, 1401, 1113, 4133, 1503, 7918, 1502, 504, 2174, 7937, 17978, 9560, 5136, 1256, 14579, 1410, 6161, 5552, 17982, 2121, 17983, 9399, 9398, 7800, 6757, 17086, 14580, 9579, 14591, 6351, 5929, 17984, 7746, 7443, 2188, 6337, 5936, 9437, 9157, 18029, 10074, 2]
+// Dependencies: [5, 32, 19, 17, 1388, 1072, 5152, 21, 5306, 575, 5139, 1401, 1113, 4133, 1503, 7918, 1502, 504, 2174, 7937, 17980, 9560, 5136, 1256, 14579, 1410, 6151, 5542, 17984, 2121, 17985, 9399, 9398, 7800, 6747, 17086, 14580, 9579, 14591, 6341, 5919, 17986, 7746, 7443, 2188, 6327, 5926, 9437, 9157, 18031, 10074, 2]
 // Exports: default
 
-// Module 17981 (CustomTypingIndicatorEditScreen)
+// Module 17983 (CustomTypingIndicatorEditScreen)
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import user from "user" /* 1401 */;
@@ -14,7 +14,7 @@ import asyncRequire from "asyncRequire" /* 2121 */;
 import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 5136 */;
 import dismissible_content from "dismissible_content" /* 5139 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import useAnalyticsLocations from "useAnalyticsLocations" /* 7918 */;
 import openPremiumModalDefault from "openPremiumModal" /* 9579 */;
 import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 14579 */;
@@ -175,7 +175,7 @@ function CustomTypingIndicatorEditScreenContent(mode) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     const obj = { initialValue: first2, presets: obj2.getCustomTypingIndicatorSuggestionPresets(enabled), onChange, highlightedPresets: prop, onDismiss: tmp7 };
     ActionSheetActionCreatorsDefault;
-    const tmp4 = asyncRequire(17982, dependencyMap.paths);
+    const tmp4 = asyncRequire(17984, dependencyMap.paths);
     prop = undefined;
     obj2 = CustomTypingIndicatorUtils;
     if (closure_5) {
@@ -190,7 +190,7 @@ function CustomTypingIndicatorEditScreenContent(mode) {
   const callback3 = react.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { emojis: memo, initialAnimation: first3, onChange: onChange2 };
-    obj.openLazy(asyncRequire(17983, dependencyMap.paths), "CustomTypingIndicatorAnimationPickerSheet", obj2);
+    obj.openLazy(asyncRequire(17985, dependencyMap.paths), "CustomTypingIndicatorAnimationPickerSheet", obj2);
   }, items6);
   const ref = react.useRef(null);
   const items7 = [analyticsLocations, enabled];

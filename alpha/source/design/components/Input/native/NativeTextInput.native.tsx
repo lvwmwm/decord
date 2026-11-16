@@ -1,7 +1,7 @@
 // Module ID: 7642
 // Function ID: 7643
 // Name: NativeTextInput
-// Dependencies: [19, 17, 1498, 1072, 21, 7643, 5899, 5568, 7644, 5377, 5481, 2]
+// Dependencies: [19, 17, 1498, 1072, 21, 7643, 5889, 5558, 7644, 5367, 5471, 2]
 // Exports: NativeTextInput, useKeyboardBlurring
 
 // Module 7642 (NativeTextInput)
@@ -81,7 +81,7 @@ export const NativeTextInput = function TextInput(ref) {
       setNativeProps(obj);
     }
   }, items1);
-  let obj = ref1(5899);
+  let obj = ref1(5889);
   const mountLayoutEffect = obj.useMountLayoutEffect(() => {
     const current = ref1.current;
     if (current != null) {
@@ -89,7 +89,7 @@ export const NativeTextInput = function TextInput(ref) {
       current.setNativeProps(obj);
     }
   });
-  const obj2 = ref1(5568);
+  const obj2 = ref1(5558);
   const isScreenReaderEnabled = obj2.useIsScreenReaderEnabled();
   const items2 = [ref1];
   const items3 = [isScreenReaderEnabled];
@@ -111,15 +111,15 @@ export const NativeTextInput = function TextInput(ref) {
     }
     return obj;
   }, items3);
-  ref1(5377);
+  ref1(5367);
   if (null == iter.keyboardAppearance) {
-    const tmp6Result = ref1(5481);
+    const tmp6Result = ref1(5471);
     iter.keyboardAppearance = tmp6Result.isThemeDark(tmp12) ? KeyboardThemes.DARK : KeyboardThemes.LIGHT;
   }
   const obj3 = { ref: tmp6Result4.mergeRefs(ref1, ref) };
-  const tmp6Result3 = ref1(5481);
-  let merged = Object.assign(tmp6Result3.mergeProps(iter, tmp4, { value: "disabled", defaultValue: "isArray" }));
-  tmp6Result4 = ref1(5481);
+  const tmp6Result3 = ref1(5471);
+  let merged = Object.assign(tmp6Result3.mergeProps(iter, tmp4, { value: "Array", defaultValue: "Path" }));
+  tmp6Result4 = ref1(5471);
   const tmp16 = closure_10(closure_5, obj3);
   let tmp18Result = tmp16;
   const tmp14 = closure_10;

@@ -1,7 +1,7 @@
 // Module ID: 14658
 // Function ID: 14659
 // Name: PortalKeyboardPlaceholder
-// Dependencies: [19, 17, 21, 5306, 1380, 575, 1628, 1630, 7771, 1496, 5914, 9060, 5503, 2023, 2]
+// Dependencies: [19, 17, 21, 5306, 1380, 575, 1628, 1630, 7771, 1496, 5904, 9060, 5493, 2023, 2]
 
 // Module 14658 (PortalKeyboardPlaceholder)
 import Fragment from "Fragment" /* 21 */;
@@ -11,8 +11,8 @@ import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
 import KeyboardTypes from "KeyboardTypes" /* 1628 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
 import useSystemKeyboardHeightDefault from "useSystemKeyboardHeight" /* 2023 */;
-import useKeyboardTypeDefault from "useKeyboardType" /* 5503 */;
-import useCustomKeyboardHeightDefault from "useCustomKeyboardHeight" /* 5914 */;
+import useKeyboardTypeDefault from "useKeyboardType" /* 5493 */;
+import useCustomKeyboardHeightDefault from "useCustomKeyboardHeight" /* 5904 */;
 import useIsWindowLargeDefault from "useIsWindowLarge" /* 7771 */;
 import ClientThemesOverrides from "ClientThemesOverrides" /* 9060 */;
 import react from "react" /* 19 */;

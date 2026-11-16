@@ -1,13 +1,13 @@
 // Module ID: 10962
 // Function ID: 10963
 // Name: PremiumGroupWordmark
-// Dependencies: [19, 21, 5902, 575, 8263, 2]
+// Dependencies: [19, 21, 5892, 575, 8263, 2]
 // Exports: default
 
 // Module 10962 (PremiumGroupWordmark)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useToken2 from "useToken" /* 5902 */;
+import useToken2 from "useToken" /* 5892 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

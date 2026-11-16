@@ -1,7 +1,7 @@
 // Module ID: 13558
 // Function ID: 13559
 // Name: PollCreationInputError
-// Dependencies: [19, 17, 21, 5306, 575, 5315, 1187, 5929, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 5315, 1187, 5919, 2]
 // Exports: default
 
 // Module 13558 (PollCreationInputError)
@@ -37,6 +37,6 @@ export default function PollCreationInputError(message) {
   }, items);
   size = { width: 16, height: 16, style: tmp.icon };
   const obj = { style: tmp.container, children: items1 };
-  items1 = [closure_4(message(1187).WarningCircle, size), closure_4(message(5929).Text, { variant: "body-xs/medium", color: "text-feedback-critical", children: message })];
+  items1 = [closure_4(message(1187).WarningCircle, size), closure_4(message(5919).Text, { variant: "body-xs/medium", color: "text-feedback-critical", children: message })];
   return closure_5(View, obj);
 };

@@ -1,11 +1,11 @@
 // Module ID: 16938
 // Function ID: 16939
 // Name: guilds
-// Dependencies: [5173, 5218, 5212, 5177, 6761, 1072, 16922, 7307, 7306, 7303, 12869, 2]
+// Dependencies: [5173, 5218, 5212, 5177, 6751, 1072, 16922, 7307, 7306, 7303, 12869, 2]
 
 // Module 16938 (guilds)
 import GuildRecord from "GuildRecord" /* 5173 */;
-import Constants2 from "Constants" /* 6761 */;
+import Constants2 from "Constants" /* 6751 */;
 import RPCErrorDefault from "RPCError" /* 7303 */;
 import botScopedAccess from "botScopedAccess" /* 7306 */;
 import OAuth2Scopes from "OAuth2Scopes" /* 7307 */;

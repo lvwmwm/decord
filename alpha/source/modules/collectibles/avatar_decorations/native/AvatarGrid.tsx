@@ -1,7 +1,7 @@
 // Module ID: 15532
 // Function ID: 15533
 // Name: AvatarGrid
-// Dependencies: [19, 17, 5307, 6068, 21, 5306, 575, 504, 1187, 8613, 2]
+// Dependencies: [19, 17, 5307, 6058, 21, 5306, 575, 504, 1187, 8613, 2]
 // Exports: default
 
 // Module 15532 (AvatarGrid)
@@ -10,7 +10,7 @@ import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5307 */;
-import PresenceStore from "PresenceStore" /* 6068 */;
+import PresenceStore from "PresenceStore" /* 6058 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;

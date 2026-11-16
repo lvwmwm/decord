@@ -1,7 +1,7 @@
 // Module ID: 12748
 // Function ID: 12749
 // Name: activityLaunchErrorUtils
-// Dependencies: [5, 19, 12749, 5976, 1072, 21, 1113, 7346, 5131, 12750, 6380, 11403, 6844, 2188, 12751, 2]
+// Dependencies: [5, 19, 12749, 5966, 1072, 21, 1113, 7346, 5131, 12750, 6370, 11403, 6834, 2188, 12751, 2]
 // Exports: getActivityLaunchErrorInfo
 
 // Module 12748 (activityLaunchErrorUtils)
@@ -9,8 +9,8 @@ import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import intl12 from "intl" /* 1113 */;
 import UserSettings from "UserSettings" /* 5131 */;
-import DeveloperActivityShelfStore2 from "DeveloperActivityShelfStore" /* 5976 */;
-import InteractionCallbackErrorDefault from "InteractionCallbackError" /* 6380 */;
+import DeveloperActivityShelfStore2 from "DeveloperActivityShelfStore" /* 5966 */;
+import InteractionCallbackErrorDefault from "InteractionCallbackError" /* 6370 */;
 import EmbeddedActivityClientErrorDefault from "EmbeddedActivityClientError" /* 7346 */;
 import InteractionUtils from "InteractionUtils" /* 11403 */;
 import fetchDeveloperApplications from "fetchDeveloperApplications" /* 12750 */;

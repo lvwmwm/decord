@@ -1,7 +1,7 @@
 // Module ID: 10945
 // Function ID: 10946
 // Name: FavoritesHooks
-// Dependencies: [5349, 1388, 5158, 5168, 1390, 10946, 504, 2110, 11, 1196, 5180, 2]
+// Dependencies: [5339, 1388, 5158, 5168, 1390, 10946, 504, 2110, 11, 1196, 5180, 2]
 // Exports: getFavoritesCategories, getFavoritesLimits, useFavorite, useFavoritedChannelIds, useFavorites, useFavoritesAwareChannel, useFavoritesLimitUpsell, useIsFavoritesGuildSelected
 
 // Module 10945 (FavoritesHooks)
@@ -13,7 +13,7 @@ import PremiumTypeUtilsDefault from "PremiumTypeUtils" /* 2110 */;
 import FavoritesConstants from "FavoritesConstants" /* 5168 */;
 import FavoritesUtils from "FavoritesUtils" /* 5180 */;
 import FavoritesLimits from "FavoritesLimits" /* 10946 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5349 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
 import UserStore from "UserStore" /* 1388 */;
 import FavoriteStore from "FavoriteStore" /* 5158 */;
 import size from "module_2" /* 2 */;
@@ -21,8 +21,8 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require;
 
-const f101270 = () => favoriteChannels.getFavoriteChannels();
-const f101271 = () => guildId.getGuildId();
+const f101283 = () => favoriteChannels.getFavoriteChannels();
+const f101284 = () => guildId.getGuildId();
 const MAX_FAVORITE_CHANNELS = FavoritesConstants.MAX_FAVORITE_CHANNELS;
 const PremiumTypes = PremiumConstants.PremiumTypes;
 let result = size.fileFinishedImporting("modules/favorites/FavoritesHooks.tsx");
@@ -64,7 +64,7 @@ export function useFavoritesLimitUpsell() {
 export function useFavorites() {
   const items = [FavoriteStore];
   const obj = get_initialized;
-  return obj.useStateFromStoresObject(items, f101270);
+  return obj.useStateFromStoresObject(items, f101283);
 }
 export function useFavorite(arg0) {
   let closure_0;
@@ -77,7 +77,7 @@ export function useFavoritedChannelIds() {
   let favoriteChannels;
   const items = [FavoriteStore];
   const obj = get_initialized;
-  const stateFromStoresObject = obj.useStateFromStoresObject(items, f101270);
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, f101283);
   const obj2 = SnowflakeUtilsDefault;
   return obj2.keys(stateFromStoresObject);
 }
@@ -127,7 +127,7 @@ export function getFavoritesCategories(favoriteChannels) {
 export function useIsFavoritesGuildSelected() {
   const items = [SelectedGuildStore];
   const obj = get_initialized;
-  const stateFromStores = obj.useStateFromStores(items, f101271);
+  const stateFromStores = obj.useStateFromStores(items, f101284);
   const obj2 = FavoritesUtils;
   return obj2.isFavoritesGuildId(stateFromStores);
 }
@@ -139,7 +139,7 @@ export function useFavoritesAwareChannel(arg0) {
   _require = arg0;
   const items = [SelectedGuildStore];
   const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, f101271);
+  const stateFromStores = obj.useStateFromStores(items, f101284);
   const obj2 = require("FavoritesUtils");
   const isFavoritesGuildIdResult = obj2.isFavoritesGuildId(stateFromStores);
   require("get initialized");

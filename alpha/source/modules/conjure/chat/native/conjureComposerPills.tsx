@@ -1,14 +1,14 @@
 // Module ID: 13792
 // Function ID: 13793
 // Name: conjureComposerPills
-// Dependencies: [32, 17, 1388, 13227, 11074, 5372, 13621, 1113, 4131, 13793, 2]
+// Dependencies: [32, 17, 1388, 13227, 11074, 5362, 13621, 1113, 4131, 13793, 2]
 // Exports: conjureFilePillIcon, conjurePillNodes, conjurePillText, conjureUserPillLabel, decodeConjurePills, encodeConjurePills
 
 // Module 13792 (conjureComposerPills)
 import react_native from "react-native" /* 17 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef4131 from "module_4131" /* 4131 */;
-import UserUtils from "UserUtils" /* 5372 */;
+import UserUtils from "UserUtils" /* 5362 */;
 import AssetRegistryDefault from "AssetRegistry" /* 11074 */;
 import ChatInputParser from "ChatInputParser" /* 13793 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

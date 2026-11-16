@@ -1,13 +1,13 @@
 // Module ID: 17778
 // Function ID: 17779
 // Name: QuestEmbedPreview
-// Dependencies: [19, 5249, 1388, 1072, 21, 9159, 504, 6055, 10156, 17777, 1113, 11065, 2]
+// Dependencies: [19, 5249, 1388, 1072, 21, 9159, 504, 6045, 10156, 17777, 1113, 11065, 2]
 // Exports: QuestEmbedPreview
 
 // Module 17778 (QuestEmbedPreview)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import CodedLink from "CodedLink" /* 6055 */;
+import CodedLink from "CodedLink" /* 6045 */;
 import QuestCopyUtils from "QuestCopyUtils" /* 10156 */;
 import react from "react" /* 19 */;
 import MessageRecord from "MessageRecord" /* 5249 */;

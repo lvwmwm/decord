@@ -1,13 +1,13 @@
-// Module ID: 19421
-// Function ID: 19422
+// Module ID: 19423
+// Function ID: 19424
 // Name: JoinRequestOtherApplications
-// Dependencies: [19, 17, 21, 5306, 575, 5352, 7930, 7629, 19422, 5929, 1113, 19418, 5128, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 5342, 7930, 7629, 19424, 5919, 1113, 19420, 5128, 2]
 
-// Module 19421 (JoinRequestOtherApplications)
+// Module 19423 (JoinRequestOtherApplications)
 import nativeDefault from "native" /* 575 */;
 import DateUtils from "DateUtils" /* 5128 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 5352 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5342 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment_mod from "Fragment" /* 21 */;
@@ -63,7 +63,7 @@ const memoResult = react.memo(function JoinRequestOtherApplications(arg0) {
   if (0 !== otherGuildJoinRequestsForUser.length) {
     let obj2 = { children: items };
     let obj3 = { variant: "body-sm/semibold", color: "text-subtle", style: tmp.label, children: intl.string(tmp2(1113).t["hxa+G3"]) };
-    let Text = tmp2(5929).Text;
+    let Text = tmp2(5919).Text;
     intl = tmp2(1113).intl;
     items = [closure_6(Text, obj3), ];
     let obj4 = {

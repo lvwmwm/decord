@@ -1,7 +1,7 @@
 // Module ID: 16303
 // Function ID: 16304
 // Name: QrSuccessSpotIllustration
-// Dependencies: [19, 21, 16304, 16305, 16306, 7755, 6020, 2]
+// Dependencies: [19, 21, 16304, 16305, 16306, 7755, 6010, 2]
 // Exports: QrSuccessSpotIllustration
 
 // Module 16303 (QrSuccessSpotIllustration)

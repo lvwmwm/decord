@@ -1,7 +1,7 @@
 // Module ID: 15411
 // Function ID: 15412
 // Name: GuildBoostingGuildList
-// Dependencies: [19, 17, 5177, 6956, 1072, 21, 5306, 575, 5547, 504, 9241, 8451, 7231, 7809, 7720, 5929, 6020, 11381, 1113, 15380, 2]
+// Dependencies: [19, 17, 5177, 6946, 1072, 21, 5306, 575, 5537, 504, 9241, 8451, 7231, 7809, 7720, 5919, 6010, 11381, 1113, 15380, 2]
 // Exports: default
 
 // Module 15411 (GuildBoostingGuildList)
@@ -9,8 +9,8 @@ import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import useThemeDefault from "useTheme" /* 5547 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import useThemeDefault from "useTheme" /* 5537 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import transitionToGuild from "transitionToGuild" /* 7231 */;
 import GuildIconDefault from "GuildIcon" /* 7720 */;
 import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7809 */;
@@ -20,7 +20,7 @@ import AssetRegistryDefault from "AssetRegistry" /* 11381 */;
 import BoostedGuildTierProgressCircleDefault from "BoostedGuildTierProgressCircle" /* 15380 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 5177 */;
-import SortedGuildStore from "SortedGuildStore" /* 6956 */;
+import SortedGuildStore from "SortedGuildStore" /* 6946 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
@@ -64,13 +64,13 @@ function GuildBoostingGuildListItem(guildId) {
     items1 = [closure_7(tmp2Result3, obj3), , ];
     const obj4 = { style: tmp.guildCardDescription, children: items2 };
     const obj5 = { variant: "body-md/semibold", children: stateFromStores.name };
-    items2 = [closure_7(guildId(5929).Text, obj5), ];
+    items2 = [closure_7(guildId(5919).Text, obj5), ];
     const obj6 = { style: tmp.subscriptionInfo, children: items3 };
     const obj7 = { source: AssetRegistryDefault, style: tmp.premiumGuildImage, resizeMode: "contain", resizeMethod: "resize" };
     const tmp2Result4 = FastImageDefault;
     items3 = [closure_7(tmp2Result4, obj7), ];
     const obj8 = { variant: "body-xs/medium", children: intl.format(guildId(1113).t.If4iTS, obj9) };
-    const Text = tmp5(5929).Text;
+    const Text = tmp5(5919).Text;
     intl = tmp5(1113).intl;
     obj9 = { subscriberCount: tmp8 };
     items3[1] = closure_7(Text, obj8);

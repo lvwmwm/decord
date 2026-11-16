@@ -1,12 +1,12 @@
 // Module ID: 13676
 // Function ID: 13677
 // Name: CaterpillarIllocon
-// Dependencies: [19, 21, 13677, 13678, 13679, 7755, 6020, 2]
+// Dependencies: [19, 21, 13677, 13678, 13679, 7755, 6010, 2]
 // Exports: CaterpillarIllocon
 
 // Module 13676 (CaterpillarIllocon)
 import Fragment from "Fragment" /* 21 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import react_native from "react-native" /* 7755 */;
 import _modDef13677 from "module_13677" /* 13677 */;
 import _modDef13678 from "module_13678" /* 13678 */;

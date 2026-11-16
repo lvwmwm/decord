@@ -1,7 +1,7 @@
 // Module ID: 14170
 // Function ID: 14171
 // Name: AutomodSubmitFeedbackModal
-// Dependencies: [32, 19, 17, 1072, 21, 5306, 575, 7415, 7427, 1113, 7430, 8721, 1630, 5929, 8106, 1187, 5936, 6067, 14171, 8720, 6014, 7490, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5306, 575, 7415, 7427, 1113, 7430, 8721, 1630, 5919, 8106, 1187, 5926, 6057, 14171, 8720, 6004, 7490, 2]
 // Exports: default
 
 // Module 14170 (AutomodSubmitFeedbackModal)
@@ -10,8 +10,8 @@ import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import components_Button_Button from "components/Button/Button" /* 5936 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 7415 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7427 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7430 */;

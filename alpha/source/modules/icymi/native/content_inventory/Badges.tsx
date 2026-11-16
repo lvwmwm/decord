@@ -1,7 +1,7 @@
 // Module ID: 15720
 // Function ID: 15721
 // Name: Badges
-// Dependencies: [19, 17, 2189, 21, 575, 5306, 15718, 8419, 5929, 504, 7438, 12555, 15721, 1113, 15723, 15725, 10667, 11095, 10324, 1089, 2]
+// Dependencies: [19, 17, 2189, 21, 575, 5306, 15718, 8419, 5919, 504, 7438, 12555, 15721, 1113, 15723, 15725, 10667, 11095, 10324, 1089, 2]
 // Exports: BadgesContainer, CustomStatusTimestampBadge, GameTimestampBadge, MarathonBadge, NewGameBadge, ResurrectedBadge, StreakBadge, TopGameBadge, TrendingBadge
 
 // Module 15720 (Badges)
@@ -10,7 +10,7 @@ import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import utils from "utils" /* 8419 */;
 import TrophyIcon from "TrophyIcon" /* 10324 */;
 import FireIcon from "FireIcon" /* 10667 */;
@@ -43,7 +43,7 @@ class ActiveTimestamp {
       obj = utils;
       return obj.formatActiveTimestamp(entry, now);
     }, items);
-    return closure_6(entry(5929).Text, { style, variant: "body-sm/medium", tabularNumbers: true, color: "text-feedback-positive", children });
+    return closure_6(entry(5919).Text, { style, variant: "body-sm/medium", tabularNumbers: true, color: "text-feedback-positive", children });
   }
 }
 function ContentTimestamp(entry) {
@@ -61,7 +61,7 @@ function ContentTimestamp(entry) {
     tmp7Result = tmp7(ActiveTimestamp, obj2);
   } else {
     const obj3 = { variant: "body-sm/medium", color: tmp.text, children: tmp2Result.formatEndedTimestamp(entry, tmp6) };
-    const Text = tmp2(5929).Text;
+    const Text = tmp2(5919).Text;
     tmp2Result = utils;
     tmp7Result = tmp7(Text, obj3);
   }

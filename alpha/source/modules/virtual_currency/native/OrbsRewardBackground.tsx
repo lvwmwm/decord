@@ -1,11 +1,11 @@
 // Module ID: 9728
 // Function ID: 9729
 // Name: OrbsRewardBackground
-// Dependencies: [32, 19, 5307, 2120, 21, 504, 1092, 6020, 9729, 9730, 9760, 2]
+// Dependencies: [32, 19, 5307, 2120, 21, 504, 1092, 6010, 9729, 9730, 9760, 2]
 // Exports: OrbsRewardBackground
 
 // Module 9728 (OrbsRewardBackground)
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import _modDef9729 from "module_9729" /* 9729 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;

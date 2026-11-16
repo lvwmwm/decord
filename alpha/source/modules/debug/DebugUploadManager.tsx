@@ -1,7 +1,7 @@
 // Module ID: 11103
 // Function ID: 11104
 // Name: DebugUploadManager
-// Dependencies: [5, 5155, 3, 17, 6757, 6257, 11104, 7, 11105, 11107, 1366, 5499, 11108, 11109, 11110, 11111, 2]
+// Dependencies: [5, 5155, 3, 17, 6747, 6247, 11104, 7, 11105, 11107, 1366, 5489, 11108, 11109, 11110, 11111, 2]
 // Exports: uploadDebugLogFiles
 
 // Module 11103 (DebugUploadManager)

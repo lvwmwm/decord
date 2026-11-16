@@ -1,13 +1,13 @@
 // Module ID: 11959
 // Function ID: 11960
 // Name: showChannelFollowingActionSheet
-// Dependencies: [19, 21, 5552, 11960, 2121, 6269, 11967, 2]
+// Dependencies: [19, 21, 5542, 11960, 2121, 6259, 11967, 2]
 // Exports: showChannelFollowingActionSheet
 
 // Module 11959 (showChannelFollowingActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

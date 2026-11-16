@@ -1,13 +1,13 @@
 // Module ID: 12260
 // Function ID: 12261
 // Name: UserProfileApplicationWidgetTopContainedLayout
-// Dependencies: [19, 17, 21, 5306, 575, 12149, 12255, 6020, 12256, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 12149, 12255, 6010, 12256, 2]
 // Exports: default
 
 // Module 12260 (UserProfileApplicationWidgetTopContainedLayout)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import _mod12149 from "module_12149" /* 12149 */;
 import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 12255 */;
 import react from "react" /* 19 */;

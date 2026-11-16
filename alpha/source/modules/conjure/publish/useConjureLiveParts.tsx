@@ -1,13 +1,13 @@
 // Module ID: 13179
 // Function ID: 13180
 // Name: useConjureLiveParts
-// Dependencies: [2165, 5236, 5536, 5177, 7017, 504, 7260, 2]
+// Dependencies: [2165, 5236, 5526, 5177, 7017, 504, 7260, 2]
 // Exports: default
 
 // Module 13179 (useConjureLiveParts)
 import GuildChannelStore2 from "GuildChannelStore" /* 5236 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5536 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5526 */;
 import GuildStore from "GuildStore" /* 5177 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 7017 */;
 import size from "module_2" /* 2 */;

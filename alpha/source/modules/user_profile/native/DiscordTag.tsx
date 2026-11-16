@@ -1,13 +1,13 @@
 // Module ID: 10930
 // Function ID: 10931
 // Name: DiscordTag
-// Dependencies: [19, 17, 21, 5306, 575, 5929, 10870, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 5919, 10870, 2]
 // Exports: default
 
 // Module 10930 (DiscordTag)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import BotTagDefault from "BotTag" /* 10870 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -58,7 +58,7 @@ export default function DiscordTag(arg0) {
       if (tmp2Result) {
         const obj4 = { variant: "body-md/semibold", color: "text-muted", style: discriminatorStyle, children: items1 };
         items1 = ["#", user.discriminator];
-        tmp2Result = tmp2(tmp4(5929).Text, obj4);
+        tmp2Result = tmp2(tmp4(5919).Text, obj4);
       }
       items[1] = tmp2Result;
       tmp2Result2 = tmp2(Text, obj3);

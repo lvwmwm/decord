@@ -1,9 +1,9 @@
-// Module ID: 18425
-// Function ID: 18426
+// Module ID: 18427
+// Function ID: 18428
 // Name: DesignSystemSegmentedControlSetting
-// Dependencies: [9202, 1072, 12406, 18426, 2]
+// Dependencies: [9202, 1072, 12406, 18428, 2]
 
-// Module 18425 (DesignSystemSegmentedControlSetting)
+// Module 18427 (DesignSystemSegmentedControlSetting)
 import Constants from "Constants" /* 1072 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;
 import SettingBuilders from "SettingBuilders" /* 12406 */;

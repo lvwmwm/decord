@@ -1,12 +1,12 @@
 // Module ID: 13750
 // Function ID: 13751
 // Name: ConjurePublishCtaCard
-// Dependencies: [19, 21, 13171, 6337, 5936, 13162, 13164, 13568, 13751, 5929, 13752, 2]
+// Dependencies: [19, 21, 13171, 6327, 5926, 13162, 13164, 13568, 13751, 5919, 13752, 2]
 // Exports: default
 
 // Module 13750 (ConjurePublishCtaCard)
-import components_Button_Button from "components/Button/Button" /* 5936 */;
-import Stack_Stack from "Stack/Stack" /* 6337 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
+import Stack_Stack from "Stack/Stack" /* 6327 */;
 import useConjurePublishActionDefault from "useConjurePublishAction" /* 13162 */;
 import conjurePublishEval from "conjurePublishEval" /* 13164 */;
 import useConjureStartPublishDefault from "useConjureStartPublish" /* 13171 */;
@@ -58,13 +58,13 @@ export default function ConjurePublishCtaCard(arg0) {
     if (tmp4Result.isConjurePublishCtaVisible(tmp3, cta)) {
       const obj = { projectId, publish: tmp3 };
       const tmpResult = ConjureTipInlineCalloutDefault;
-      const Stack = tmp4(6337).Stack;
+      const Stack = tmp4(6327).Stack;
       const items = [_false(PublishCta, obj), , ];
       let tmp8Result = null;
       const tmp10 = React3;
       if (null != tmp3.failure) {
         const obj2 = { variant: "body-sm/normal", color: "text-feedback-critical", accessibilityRole: "alert", children: tmp3.failure };
-        tmp8Result = tmp8(tmp4(5929).Text, obj2);
+        tmp8Result = tmp8(tmp4(5919).Text, obj2);
       }
       items[1] = tmp8Result;
       let tmp8Result3 = null;

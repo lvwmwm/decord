@@ -1,7 +1,7 @@
 // Module ID: 16190
 // Function ID: 16191
 // Name: ConnectivityIndicatorStateStore
-// Dependencies: [8679, 502, 6372, 5209, 2120, 1072, 3, 16191, 504, 1480, 572, 2]
+// Dependencies: [8679, 502, 6362, 5209, 2120, 1072, 3, 16191, 504, 1480, 572, 2]
 
 // Module 16190 (ConnectivityIndicatorStateStore)
 import LoggerDefault from "Logger" /* 3 */;
@@ -11,7 +11,7 @@ import Constants from "Constants" /* 1072 */;
 import NetworkUtilsDefault from "NetworkUtils" /* 1480 */;
 import CacheStore from "CacheStore" /* 8679 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MessageStore from "MessageStore" /* 6372 */;
+import MessageStore from "MessageStore" /* 6362 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
 import AppStateStore from "AppStateStore" /* 2120 */;
 import size from "module_2" /* 2 */;

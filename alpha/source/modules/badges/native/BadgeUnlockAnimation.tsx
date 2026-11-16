@@ -1,7 +1,7 @@
 // Module ID: 15279
 // Function ID: 15280
 // Name: BadgeUnlockAnimation
-// Dependencies: [32, 19, 17, 5307, 21, 1655, 5306, 15280, 1380, 5303, 15282, 5548, 15277, 7533, 504, 10113, 15283, 8480, 1708, 5313, 15272, 5439, 2]
+// Dependencies: [32, 19, 17, 5307, 21, 1655, 5306, 15280, 1380, 5303, 15282, 5538, 15277, 7533, 504, 10113, 15283, 8480, 1708, 5313, 15272, 5429, 2]
 // Exports: default
 
 // Module 15279 (BadgeUnlockAnimation)
@@ -10,7 +10,7 @@ import PlatformUtils from "PlatformUtils" /* 1380 */;
 import _mod1655 from "module_1655" /* 1655 */;
 import _mod1708 from "module_1708" /* 1708 */;
 import shared from "shared" /* 5313 */;
-import timing_timing from "timing/timing" /* 5548 */;
+import timing_timing from "timing/timing" /* 5538 */;
 import BadgeUtils from "BadgeUtils" /* 10113 */;
 import trackBadgeDirectoryActionDefault from "trackBadgeDirectoryAction" /* 15272 */;
 import reactDefault from "react" /* 15282 */;
@@ -671,7 +671,7 @@ export default function BadgeUnlockAnimation(badge) {
   if (!stateFromStores) {
     const items14 = [tmp.pulse, ];
     const tmp60 = !tmp44 && tmp.pulseHidden;
-    let obj6 = { style: items14, children: tmp59(tmp2(5439).BadgeUnlockPulseRive, obj7) };
+    let obj6 = { style: items14, children: tmp59(tmp2(5429).BadgeUnlockPulseRive, obj7) };
     items14[1] = tmp60;
     obj7 = { ref, artboard: "Mobile", dataBinding: memo };
     tmp59Result = tmp59(tmp57, obj6);

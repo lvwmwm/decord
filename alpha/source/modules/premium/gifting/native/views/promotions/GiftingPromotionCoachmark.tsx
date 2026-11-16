@@ -1,15 +1,15 @@
-// Module ID: 19803
-// Function ID: 19804
+// Module ID: 19805
+// Function ID: 19806
 // Name: GiftingPromotionCoachmark
-// Dependencies: [19, 17, 5307, 9623, 1072, 5152, 21, 5306, 575, 504, 11684, 11672, 11685, 6836, 5552, 7918, 7937, 11661, 5566, 6020, 11687, 5929, 5936, 11817, 1113, 2]
+// Dependencies: [19, 17, 5307, 9623, 1072, 5152, 21, 5306, 575, 504, 11684, 11672, 11685, 6826, 5542, 7918, 7937, 11661, 5556, 6010, 11687, 5919, 5926, 11817, 1113, 2]
 // Exports: default
 
-// Module 19803 (GiftingPromotionCoachmark)
+// Module 19805 (GiftingPromotionCoachmark)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import usePreviousDefault from "usePrevious" /* 6836 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import usePreviousDefault from "usePrevious" /* 6826 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7918 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
 import utils_openGiftModal from "utils/openGiftModal" /* 11661 */;
@@ -129,11 +129,11 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
     };
     obj3 = { style: tmp.container, children: items4 };
     let tmp21Result = null != themeAndReducedMotionAwareAssetUrl;
-    const BottomSheet = tmp2(5566).BottomSheet;
+    const BottomSheet = tmp2(5556).BottomSheet;
     if (tmp21Result) {
       let obj4 = { source: obj5, style: tmp.imageShared, enableAnimation: !stateFromStores };
       obj5 = { uri: themeAndReducedMotionAwareAssetUrl };
-      tmp21Result = tmp21(tmp13(6020), obj4);
+      tmp21Result = tmp21(tmp13(6010), obj4);
     }
     items4 = [tmp21Result, , , ];
     if (enabled) {
@@ -146,12 +146,12 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
     items4[1] = enabled;
     const obj7 = { style: tmp.textContainer, children: items5 };
     const obj8 = { style: tmp.text, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: coachmarkComponent.header };
-    items5 = [closure_11(tmp2(5929).Heading, obj8), ];
+    items5 = [closure_11(tmp2(5919).Heading, obj8), ];
     const obj9 = { style: tmp.text, variant: "body-md/normal", color: "text-default", children: coachmarkComponent.body };
-    items5[1] = closure_11(tmp2(5929).Text, obj9);
+    items5[1] = closure_11(tmp2(5919).Text, obj9);
     items4[2] = closure_12(closure_4, obj7);
     const obj10 = { grow: true, icon: closure_11(GiftIcon, obj11), text: intl.string(tmp2(1113).t.Ve9Ge6), onPress: tmp19 };
-    const Button = tmp2(5936).Button;
+    const Button = tmp2(5926).Button;
     obj11 = { size: "sm", color: nativeDefault.colors.WHITE };
     GiftIcon = tmp2(11817).GiftIcon;
     intl = tmp2(1113).intl;

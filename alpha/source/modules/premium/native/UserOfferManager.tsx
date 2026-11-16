@@ -1,9 +1,9 @@
-// Module ID: 20415
-// Function ID: 20416
+// Module ID: 20418
+// Function ID: 20419
 // Name: UserOfferManager
 // Dependencies: [1388, 9298, 1083, 7882, 9410, 2110, 9315, 2]
 
-// Module 20415 (UserOfferManager)
+// Module 20418 (UserOfferManager)
 import Constants from "Constants" /* 1083 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 2110 */;
 import UserOfferActionCreators from "UserOfferActionCreators" /* 9315 */;

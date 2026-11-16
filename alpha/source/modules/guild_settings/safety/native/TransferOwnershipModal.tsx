@@ -1,7 +1,7 @@
 // Module ID: 14146
 // Function ID: 14147
 // Name: TransferOwnershipModal
-// Dependencies: [5, 19, 14147, 21, 14145, 1264, 1113, 7493, 14148, 7766, 8404, 6014, 7490, 2]
+// Dependencies: [5, 19, 14147, 21, 14145, 1264, 1113, 7493, 14148, 7766, 8404, 6004, 7490, 2]
 // Exports: default
 
 // Module 14146 (TransferOwnershipModal)

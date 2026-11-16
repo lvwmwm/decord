@@ -1,13 +1,13 @@
 // Module ID: 9485
 // Function ID: 9486
 // Name: CheckmarkLargeBoldIcon
-// Dependencies: [19, 21, 575, 6019, 9486, 2]
+// Dependencies: [19, 21, 575, 6009, 9486, 2]
 // Exports: CheckmarkLargeBoldIcon
 
 // Module 9485 (CheckmarkLargeBoldIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6019 */;
+import BaseIconImage2 from "BaseIconImage" /* 6009 */;
 import AssetRegistry from "AssetRegistry" /* 9486 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

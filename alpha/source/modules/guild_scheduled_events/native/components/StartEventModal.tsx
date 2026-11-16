@@ -1,7 +1,7 @@
 // Module ID: 8438
 // Function ID: 8439
 // Name: StartEventModal
-// Dependencies: [5, 32, 19, 17, 5155, 5177, 5161, 7966, 21, 5306, 575, 6848, 7428, 1113, 1187, 7863, 5929, 8431, 504, 8030, 8439, 7415, 8432, 8443, 5936, 2]
+// Dependencies: [5, 32, 19, 17, 5155, 5177, 5161, 7966, 21, 5306, 575, 6838, 7428, 1113, 1187, 7863, 5919, 8431, 504, 8030, 8439, 7415, 8432, 8443, 5926, 2]
 // Exports: default
 
 // Module 8438 (StartEventModal)
@@ -9,8 +9,8 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import Pressables from "Pressables" /* 7428 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7863 */;
 import GuildEventModalConstants from "GuildEventModalConstants" /* 7966 */;

@@ -1,7 +1,7 @@
 // Module ID: 10642
 // Function ID: 10643
 // Name: SecureFramesStreamVerificationBottomSheet
-// Dependencies: [19, 6802, 1072, 21, 504, 10630, 10230, 10643, 1113, 10627, 2]
+// Dependencies: [19, 6792, 1072, 21, 504, 10630, 10230, 10643, 1113, 10627, 2]
 // Exports: default
 
 // Module 10642 (SecureFramesStreamVerificationBottomSheet)
@@ -10,7 +10,7 @@ import Constants from "Constants" /* 1072 */;
 import showShareActionSheet from "showShareActionSheet" /* 10230 */;
 import SecureFramesTracking from "SecureFramesTracking" /* 10630 */;
 import react from "react" /* 19 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 6802 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 6792 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticsSections = Constants.AnalyticsSections;

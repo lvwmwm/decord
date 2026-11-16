@@ -1,10 +1,10 @@
-// Module ID: 19347
-// Function ID: 19348
+// Module ID: 19349
+// Function ID: 19350
 // Name: ICYMIServerRecommendationRow
-// Dependencies: [32, 5, 19, 17, 5307, 5177, 10205, 1072, 21, 19284, 575, 504, 1414, 5169, 9503, 6020, 7720, 10217, 6015, 1113, 6917, 5929, 5936, 19323, 7830, 2]
+// Dependencies: [32, 5, 19, 17, 5307, 5177, 10205, 1072, 21, 19286, 575, 504, 1414, 5169, 9503, 6010, 7720, 10217, 6005, 1113, 6907, 5919, 5926, 19325, 7830, 2]
 // Exports: ICYMIServerRecommendationRow
 
-// Module 19347 (ICYMIServerRecommendationRow)
+// Module 19349 (ICYMIServerRecommendationRow)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -14,7 +14,7 @@ import GuildRecordUtils from "GuildRecordUtils" /* 5169 */;
 import GuildIconDefault from "GuildIcon" /* 7720 */;
 import FastestListDefault from "FastestList" /* 7830 */;
 import ClipViewDefault from "ClipView" /* 9503 */;
-import ICYMIShared from "ICYMIShared" /* 19323 */;
+import ICYMIShared from "ICYMIShared" /* 19325 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -23,7 +23,7 @@ import GuildStore from "GuildStore" /* 5177 */;
 import ICYMIStore from "ICYMIStore" /* 10205 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 19284 */;
+import createICYMIStyles from "createICYMIStyles" /* 19286 */;
 import size_mod from "module_2" /* 2 */;
 
 let c1, c2, c3, closure_0;
@@ -73,7 +73,7 @@ function CutoutGuildBanner(guild) {
   const tmp14 = ClipViewDefault;
   if (null != guild.banner) {
     const obj5 = { style: tmp.bannerImage, source: animatableSourceWithFallback, resizeMode: "cover" };
-    tmp12Result = tmp12(tmp13(6020), obj5);
+    tmp12Result = tmp12(tmp13(6010), obj5);
   } else {
     const obj6 = { style: items3 };
     items3 = [, ];
@@ -275,13 +275,13 @@ function FeaturedServer(guild) {
   items2 = [closure_14(CutoutGuildBanner, { guild }), , ];
   let obj3 = { style: tmp.featuredServerInnerContainer, children: items3 };
   let obj4 = { maxFontSizeMultiplier: 1, lineClamp: 1, style: tmp.featuredServerTitle, variant: "body-md/semibold", color: "mobile-text-heading-primary", children: guild.name };
-  items3 = [closure_14(guild(5929).Text, obj4), ];
+  items3 = [closure_14(guild(5919).Text, obj4), ];
   let obj5 = { maxFontSizeMultiplier: 1, lineClamp: 3, variant: "body-xs/normal", color: "text-default", children: guild.description };
-  items3[1] = closure_14(guild(5929).Text, obj5);
+  items3[1] = closure_14(guild(5919).Text, obj5);
   items2[1] = closure_15(View, obj3);
   let obj6 = { style: tmp.buttonContainer, children: tmp8(Button, obj7) };
   obj7 = { disabled: stateFromStores, loading: first, text: stringResult, size: "sm", onPress: callback, grow: true };
-  Button = guild(5936).Button;
+  Button = guild(5926).Button;
   let intl = guild(1113).intl;
   const string = intl.string;
   const t = guild(1113).t;
@@ -340,11 +340,11 @@ export function ICYMIServerRecommendationRow() {
     const obj2 = { children: items2 };
     const obj3 = { style: tmp3.container, children: items1 };
     const obj4 = { style: tmp3.title, variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl.string(intl3.t.lv1tce) };
-    const Text = tmp(5929).Text;
+    const Text = tmp(5919).Text;
     intl = tmp(1113).intl;
     items1 = [gesture(Text, obj4), , ];
     const obj5 = { style: tmp3.subtitle, variant: "heading-xs/medium", color: "text-muted", children: intl2.string(intl3.t.x4OezN) };
-    const Text2 = tmp(5929).Text;
+    const Text2 = tmp(5919).Text;
     intl2 = tmp(1113).intl;
     items1[1] = gesture(Text2, obj5);
     const obj6 = { discoverableGuilds: stateFromStoresArray };

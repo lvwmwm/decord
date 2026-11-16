@@ -1,7 +1,7 @@
 // Module ID: 17292
 // Function ID: 17293
 // Name: TwoFASetupSuccess
-// Dependencies: [5, 32, 19, 17, 21, 5306, 575, 6852, 1113, 17281, 7775, 17282, 6020, 17293, 5929, 1187, 5936, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5306, 575, 6842, 1113, 17281, 7775, 17282, 6010, 17293, 5919, 1187, 5926, 2]
 // Exports: default
 
 // Module 17292 (TwoFASetupSuccess)
@@ -9,9 +9,9 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import components_Button_Button from "components/Button/Button" /* 5936 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import NativeCeremoniesDefault from "NativeCeremonies" /* 7775 */;
 import TwoFASetupModal from "TwoFASetupModal" /* 17282 */;
 import AssetRegistry from "AssetRegistry" /* 17293 */;

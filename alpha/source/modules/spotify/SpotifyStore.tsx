@@ -1,7 +1,7 @@
 // Module ID: 7290
 // Function ID: 7291
 // Name: SpotifyStore
-// Dependencies: [5, 2140, 502, 7085, 7041, 6068, 6941, 5981, 7291, 1072, 7087, 1089, 3, 5150, 572, 559, 7292, 12, 7310, 1256, 558, 7312, 7026, 1255, 504, 7313, 2]
+// Dependencies: [5, 2140, 502, 7085, 7041, 6058, 6931, 5971, 7291, 1072, 7087, 1089, 3, 5150, 572, 559, 7292, 12, 7310, 1256, 558, 7312, 7026, 1255, 504, 7313, 2]
 
 // Module 7290 (SpotifyStore)
 import LoggerDefault from "Logger" /* 3 */;
@@ -21,9 +21,9 @@ import RunningGameStore from "RunningGameStore" /* 2140 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 7085 */;
 import IdleStore from "IdleStore" /* 7041 */;
-import PresenceStore from "PresenceStore" /* 6068 */;
-import SpeakingStore from "SpeakingStore" /* 6941 */;
-import VoiceStateStore from "VoiceStateStore" /* 5981 */;
+import PresenceStore from "PresenceStore" /* 6058 */;
+import SpeakingStore from "SpeakingStore" /* 6931 */;
+import VoiceStateStore from "VoiceStateStore" /* 5971 */;
 import SpotifyConstants from "SpotifyConstants" /* 7291 */;
 import Constants from "Constants" /* 1072 */;
 import Platforms from "Platforms" /* 7087 */;
@@ -39,13 +39,13 @@ let closure_17;
 let closure_18;
 let closure_20;
 let closure_21;
-const f93746 = (is_active) => is_active.is_active;
-const f93747 = (party) => {
+const f93759 = (is_active) => is_active.is_active;
+const f93760 = (party) => {
   const tmp = null != party.party && null != party.party.id && closure_1_15(party.party.id);
   return tmp;
 };
-const f93751 = () => closure_1_36.stop();
-const f93758 = () => {
+const f93764 = () => closure_1_36.stop();
+const f93771 = () => {
   let accessToken;
   let accountId;
   let obj2;
@@ -86,7 +86,7 @@ function upsertAccount(accountId, accessToken) {
       obj._requestedDisconnect = false;
       obj._requestedConnect = false;
       const obj2 = _modDef12;
-      obj.handleDeviceStateChange = obj2.throttle(f93758, closure_30);
+      obj.handleDeviceStateChange = obj2.throttle(f93771, closure_30);
       obj.accountId = accountId;
       obj.accessToken = accessToken;
       const self2 = this;
@@ -155,7 +155,7 @@ function activitySync(userId, activity, arg2) {
           continue;
         } else {
           let arr = tmp5[tmp4];
-          let found = arr.find(f93746);
+          let found = arr.find(f93759);
           if (null == found) {
             continue;
           } else {
@@ -412,7 +412,7 @@ function handleUserActivitySyncStop() {
           continue;
         } else {
           let arr = tmp15[tmp14];
-          let found = arr.find(f93746);
+          let found = arr.find(f93759);
           if (null == found) {
             continue;
           } else {
@@ -561,7 +561,7 @@ function autoPause() {
             continue;
           } else {
             let arr = tmp4[tmp3];
-            let found = arr.find(f93746);
+            let found = arr.find(f93759);
             if (null == found) {
               continue;
             } else {
@@ -798,7 +798,7 @@ class SpotifySocket {
     obj._requestedDisconnect = false;
     obj._requestedConnect = false;
     let obj2 = _modDef12;
-    obj.handleDeviceStateChange = obj2.throttle(f93758, closure_30);
+    obj.handleDeviceStateChange = obj2.throttle(f93771, closure_30);
     obj.accountId = accountId;
     obj.accessToken = accessToken;
     const interval = new obj(5150).Interval();
@@ -1004,7 +1004,7 @@ class SpotifyStore extends Store {
                 continue;
               } else {
                 let arr = tmp6[tmp5];
-                let found = arr.find(f93746);
+                let found = arr.find(f93759);
                 if (null == found) {
                   continue;
                 } else {
@@ -1022,7 +1022,7 @@ class SpotifyStore extends Store {
         flag = false;
         if (null != tmp3) {
           const userId = closure_4.userId;
-          const findActivityResult = closure_11.findActivity(userId, f93747);
+          const findActivityResult = closure_11.findActivity(userId, f93760);
           if (null == findActivityResult) {
             closure_38.start(closure_26, () => {
               const tmp = null != _null2 && _null2.userId === userId;
@@ -1072,7 +1072,7 @@ class SpotifyStore extends Store {
             continue;
           } else {
             let arr = tmp5[tmp4];
-            let found = arr.find(f93746);
+            let found = arr.find(f93759);
             if (null == found) {
               continue;
             } else {
@@ -1131,7 +1131,7 @@ class SpotifyStore extends Store {
             continue;
           } else {
             let arr = tmp5[tmp4];
-            let found = arr.find(f93746);
+            let found = arr.find(f93759);
             if (null == found) {
               continue;
             } else {
@@ -1186,7 +1186,7 @@ class SpotifyStore extends Store {
     if (null == _null) {
       let findActivityResult = null;
       if (null != _null2) {
-        findActivityResult = PresenceStore.findActivity(_null2.userId, f93747);
+        findActivityResult = PresenceStore.findActivity(_null2.userId, f93760);
       }
       return findActivityResult;
     } else {
@@ -1463,7 +1463,7 @@ obj = {
             }
           }
         }
-        timeout1.start(100, f93751, false);
+        timeout1.start(100, f93764, false);
       }
       if (null != tmp10) {
         if (!tmp43) {
@@ -1547,7 +1547,7 @@ obj = {
             continue;
           } else {
             let arr = tmp5[tmp4];
-            let found = arr.find(f93746);
+            let found = arr.find(f93759);
             if (null == found) {
               continue;
             } else {
@@ -1622,7 +1622,7 @@ obj = {
           }
         }
       }
-      timeout1.start(100, f93751, false);
+      timeout1.start(100, f93764, false);
     }
     return false;
   },
@@ -1643,7 +1643,7 @@ obj = {
             }
           }
         }
-        timeout1.start(100, f93751, false);
+        timeout1.start(100, f93764, false);
       }
       return acc;
     }, false);

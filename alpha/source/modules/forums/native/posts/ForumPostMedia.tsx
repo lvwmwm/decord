@@ -1,7 +1,7 @@
 // Module ID: 14618
 // Function ID: 14619
 // Name: ForumPostMedia
-// Dependencies: [32, 19, 17, 1192, 1191, 21, 5306, 575, 6020, 5906, 14619, 8853, 14620, 1380, 8639, 7428, 8190, 6833, 14621, 5313, 5131, 11145, 1495, 2]
+// Dependencies: [32, 19, 17, 1192, 1191, 21, 5306, 575, 6010, 5896, 14619, 8853, 14620, 1380, 8639, 7428, 8190, 6823, 14621, 5313, 5131, 11145, 1495, 2]
 // Exports: ForumPostGridMedia, ForumPostMediaThumbnail, useSharedMediaProps
 
 // Module 14618 (ForumPostMedia)
@@ -9,8 +9,8 @@ import nativeDefault from "native" /* 575 */;
 import FormConstants from "FormConstants" /* 1191 */;
 import utils_ImageUtils from "utils/ImageUtils" /* 1495 */;
 import shared from "shared" /* 5313 */;
-import VisualEffectViewDefault from "VisualEffectView" /* 5906 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import VisualEffectViewDefault from "VisualEffectView" /* 5896 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import SpoilerIconDefault from "SpoilerIcon" /* 14619 */;
 import MessageAttachmentUtils from "MessageAttachmentUtils" /* 14621 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;

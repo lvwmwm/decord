@@ -1,13 +1,13 @@
 // Module ID: 10262
 // Function ID: 10263
 // Name: ForwardDestinationUtils
-// Dependencies: [19, 7010, 5159, 5155, 5238, 5248, 1388, 1072, 10245, 1255, 504, 1093, 6792, 2119, 6838, 6830, 5995, 6835, 10263, 1113, 6790, 8793, 5372, 5954, 2]
+// Dependencies: [19, 7010, 5159, 5155, 5238, 5248, 1388, 1072, 10245, 1255, 504, 1093, 6782, 2119, 6828, 6820, 5985, 6825, 10263, 1113, 6780, 8793, 5362, 5944, 2]
 // Exports: getDestinationIsUnavailable, isRatelimitedInChannel, useDestinationNamesWithSlowmode, useSelectedDestinationChannel, useSelectedDestinationNames
 
 // Module 10262 (ForwardDestinationUtils)
 import ChannelTypes from "ChannelTypes" /* 1093 */;
 import GlobalUtils from "GlobalUtils" /* 1255 */;
-import StickersUtils from "StickersUtils" /* 6792 */;
+import StickersUtils from "StickersUtils" /* 6782 */;
 import SlowmodeUtils from "SlowmodeUtils" /* 8793 */;
 import ForwardAgeRestrictedDestinationsExperimentDefault from "ForwardAgeRestrictedDestinationsExperiment" /* 10263 */;
 import react from "react" /* 19 */;
@@ -101,7 +101,7 @@ export function getDestinationIsUnavailable(components, channel, type, fn) {
           let needsAgeVerificationResult = tmp13Result9.needsAgeVerification();
           if (needsAgeVerificationResult) {
             const tmp13Result10 = require("RegionalFeatureConfigUtils");
-            needsAgeVerificationResult = tmp13Result10.isFeatureAgeGated(tmp13(6835).AgeGatedFeature.AGE_GATED_SPACES);
+            needsAgeVerificationResult = tmp13Result10.isFeatureAgeGated(tmp13(6825).AgeGatedFeature.AGE_GATED_SPACES);
           }
           let disableAgeRestrictedDestinations = !(false !== nsfwAllowed && !needsAgeVerificationResult);
           if (disableAgeRestrictedDestinations) {

@@ -1,7 +1,7 @@
 // Module ID: 17126
 // Function ID: 17127
 // Name: EditProfileFrameActionSheet
-// Dependencies: [32, 19, 17, 8500, 8492, 1072, 21, 5306, 575, 8482, 8559, 7918, 7937, 1256, 9398, 9402, 5566, 7913, 1113, 9403, 11671, 504, 17127, 15524, 8541, 8483, 17128, 15530, 15531, 9404, 10062, 5893, 2]
+// Dependencies: [32, 19, 17, 8500, 8492, 1072, 21, 5306, 575, 8482, 8559, 7918, 7937, 1256, 9398, 9402, 5556, 7913, 1113, 9403, 11671, 504, 17127, 15524, 8541, 8483, 17128, 15530, 15531, 9404, 10062, 5883, 2]
 // Exports: default
 
 // Module 17126 (EditProfileFrameActionSheet)
@@ -162,7 +162,7 @@ function ProfileFrameSectionPreview(arg0) {
   items1 = [closure_9(purchase(10062), { user, guildId, profileFrame: memo, maxWidth: 280 }), ];
   const obj2 = { style: tmp.previewGradient, start: { x: 0, y: 0.6 }, end: { x: 0, y: 1 }, colors: items2 };
   items2 = [, ];
-  const tmp4 = purchase(5893);
+  const tmp4 = purchase(5883);
   items2[0] = "" + tmp.previewGradient.color + "00";
   items2[1] = tmp.previewGradient.color;
   items1[1] = closure_9(tmp4, obj2);

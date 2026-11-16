@@ -1,7 +1,7 @@
 // Module ID: 11124
 // Function ID: 11125
 // Name: AttachmentPreview
-// Dependencies: [19, 17, 21, 5306, 575, 11125, 11126, 11127, 11128, 11129, 11130, 11131, 11132, 11133, 11134, 11135, 11136, 11137, 11138, 8875, 6020, 5929, 1380, 1187, 10328, 9730, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 11125, 11126, 11127, 11128, 11129, 11130, 11131, 11132, 11133, 11134, 11135, 11136, 11137, 11138, 8875, 6010, 5919, 1380, 1187, 10328, 9730, 2]
 // Exports: default
 
 // Module 11124 (AttachmentPreview)
@@ -9,8 +9,8 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import FileUtils from "FileUtils" /* 8875 */;
 import common_Video from "common/Video" /* 9730 */;
 import AssetRegistryDefault from "AssetRegistry" /* 11125 */;

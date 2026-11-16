@@ -1,13 +1,13 @@
 // Module ID: 14204
 // Function ID: 14205
 // Name: TTIFirstContentfulPaint
-// Dependencies: [19, 21, 5493, 9, 8772, 14205, 2]
+// Dependencies: [19, 21, 5483, 9, 8772, 14205, 2]
 // Exports: TTIFirstContentfulPaint
 
 // Module 14204 (TTIFirstContentfulPaint)
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import Fragment from "Fragment" /* 21 */;
-import RootNavigationRef from "RootNavigationRef" /* 5493 */;
+import RootNavigationRef from "RootNavigationRef" /* 5483 */;
 import PostTTIScheduler from "PostTTIScheduler" /* 8772 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

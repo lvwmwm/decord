@@ -1,7 +1,7 @@
 // Module ID: 15491
 // Function ID: 15492
 // Name: InlinePriceTag
-// Dependencies: [19, 17, 9302, 1074, 1072, 21, 5306, 575, 5929, 2114, 8496, 8497, 9442, 1113, 671, 5902, 5552, 15492, 2121, 7937, 5893, 1380, 9436, 7963, 9409, 2174, 15497, 10451, 15498, 10433, 10436, 504, 10444, 9521, 2]
+// Dependencies: [19, 17, 9302, 1074, 1072, 21, 5306, 575, 5919, 2114, 8496, 8497, 9442, 1113, 671, 5892, 5542, 15492, 2121, 7937, 5883, 1380, 9436, 7963, 9409, 2174, 15497, 10451, 15498, 10433, 10436, 504, 10444, 9521, 2]
 // Exports: default
 
 // Module 15491 (InlinePriceTag)
@@ -14,10 +14,10 @@ import PlatformUtils from "PlatformUtils" /* 1380 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 2114 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import LinearGradientDefault from "LinearGradient" /* 5893 */;
-import useToken from "useToken" /* 5902 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import LinearGradientDefault from "LinearGradient" /* 5883 */;
+import useToken from "useToken" /* 5892 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
 import CollectiblesProductUtils from "CollectiblesProductUtils" /* 8496 */;
 import CollectiblesUtils from "CollectiblesUtils" /* 8497 */;
@@ -249,7 +249,7 @@ function ExpressiveNitroUpsell(arg0) {
   const obj8 = { color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE, size: "sm", style: tmp.nitroUpsellIcon };
   const NitroWheelIcon = tmp5(9436).NitroWheelIcon;
   items3 = [tmp11(NitroWheelIcon, obj8), , ];
-  const Text2 = tmp5(5929).Text;
+  const Text2 = tmp5(5919).Text;
   let androidTextPadding1;
   const tmp13 = closure_4;
   const tmp5Result = PlatformUtils;

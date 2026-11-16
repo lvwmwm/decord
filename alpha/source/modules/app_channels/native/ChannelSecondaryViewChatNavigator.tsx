@@ -1,10 +1,10 @@
-// Module ID: 19730
-// Function ID: 19731
+// Module ID: 19732
+// Function ID: 19733
 // Name: ChannelSecondaryViewChatNavigator
-// Dependencies: [19, 21, 9128, 5306, 575, 9051, 1380, 11010, 11976, 13365, 5488, 7490, 15638, 9063, 5377, 2]
+// Dependencies: [19, 21, 9128, 5306, 575, 9051, 1380, 11010, 11976, 13365, 5478, 7490, 15638, 9063, 5367, 2]
 // Exports: default
 
-// Module 19730 (ChannelSecondaryViewChatNavigator)
+// Module 19732 (ChannelSecondaryViewChatNavigator)
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import HeaderShared from "HeaderShared" /* 9051 */;
@@ -61,7 +61,7 @@ export default function ChannelSecondaryViewChatNavigator(navigation) {
   const params = navigation.route.params;
   const tmp = closure_7();
   dependencyMap = tmp;
-  const tmp2 = params(5488)();
+  const tmp2 = params(5478)();
   let obj = navigation(7490);
   const accessibilityNativeStackOptions = obj.useAccessibilityNativeStackOptions();
   const channelId = params.channelId;
@@ -94,7 +94,7 @@ export default function ChannelSecondaryViewChatNavigator(navigation) {
       return React3(ChannelSecondaryViewChatScreen, obj);
     }
   };
-  const ThemeContextProvider = navigation(5377).ThemeContextProvider;
+  const ThemeContextProvider = navigation(5367).ThemeContextProvider;
   Navigator = closure_6.Navigator;
   return channelId(ThemeContextProvider, obj2);
 };

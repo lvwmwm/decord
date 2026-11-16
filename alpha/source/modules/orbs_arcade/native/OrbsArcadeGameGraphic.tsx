@@ -1,14 +1,14 @@
 // Module ID: 17677
 // Function ID: 17678
 // Name: OrbsArcadeGameGraphic
-// Dependencies: [32, 19, 17, 5307, 21, 5306, 575, 504, 10146, 9730, 6020, 2]
+// Dependencies: [32, 19, 17, 5307, 21, 5306, 575, 504, 10146, 9730, 6010, 2]
 // Exports: default, hasOrbsArcadeGameGraphic
 
 // Module 17677 (OrbsArcadeGameGraphic)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import AssetUtils from "AssetUtils" /* 10146 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

@@ -1,14 +1,14 @@
 // Module ID: 14841
 // Function ID: 14842
 // Name: EmojiSuggestionBarLarge
-// Dependencies: [19, 17, 9546, 21, 5306, 575, 7994, 14842, 1655, 11274, 11298, 5377, 2]
+// Dependencies: [19, 17, 9546, 21, 5306, 575, 7994, 14842, 1655, 11274, 11298, 5367, 2]
 // Exports: EmojiSuggestionBarLarge
 
 // Module 14841 (EmojiSuggestionBarLarge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 5377 */;
+import native from "native" /* 5367 */;
 import useMeasuredLayoutDefault from "useMeasuredLayout" /* 7994 */;
 import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9546 */;
 import EmojiPickerListRow from "EmojiPickerListRow" /* 11274 */;

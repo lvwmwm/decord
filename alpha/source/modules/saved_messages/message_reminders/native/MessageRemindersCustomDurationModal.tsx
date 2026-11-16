@@ -1,7 +1,7 @@
 // Module ID: 11924
 // Function ID: 11925
 // Name: MessageRemindersCustomDurationModal
-// Dependencies: [32, 19, 17, 21, 5306, 575, 1630, 5315, 2020, 5552, 8019, 2121, 1113, 7500, 9051, 1380, 7493, 7427, 7746, 7443, 5929, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 575, 1630, 5315, 2020, 5542, 8019, 2121, 1113, 7500, 9051, 1380, 7493, 7427, 7746, 7443, 5919, 2]
 
 // Module 11924 (MessageRemindersCustomDurationModal)
 import react_native from "react-native" /* 17 */;
@@ -10,7 +10,7 @@ import intl5 from "intl" /* 1113 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 2020 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5315 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7427 */;
 import HeaderShared from "HeaderShared" /* 9051 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -180,7 +180,7 @@ const memoResult = react.memo(function MessageRemindersCustomDurationScreen(onCl
   let tmp10Result = null != error;
   if (tmp10Result) {
     const obj11 = { style: tmp.error, variant: "body-sm/medium", color: "text-feedback-critical", accessibilityRole: "alert", children: error };
-    tmp10Result = tmp10(tmp11(5929).Text, obj11);
+    tmp10Result = tmp10(tmp11(5919).Text, obj11);
   }
   items3[1] = tmp10Result;
   items2[1] = error(first, { children: items3 });

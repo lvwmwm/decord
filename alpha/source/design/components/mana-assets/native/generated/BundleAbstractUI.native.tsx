@@ -1,7 +1,7 @@
 // Module ID: 17642
 // Function ID: 17643
 // Name: BundleAbstractUI
-// Dependencies: [19, 21, 17643, 17644, 17645, 7755, 6020, 2]
+// Dependencies: [19, 21, 17643, 17644, 17645, 7755, 6010, 2]
 // Exports: BundleAbstractUI
 
 // Module 17642 (BundleAbstractUI)

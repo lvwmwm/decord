@@ -1,22 +1,22 @@
-// Module ID: 19180
-// Function ID: 19181
+// Module ID: 19182
+// Function ID: 19183
 // Name: VoicePanelDock
-// Dependencies: [19, 17, 5155, 11985, 12009, 12010, 21, 5306, 575, 19181, 1655, 9148, 1113, 9150, 5554, 11984, 504, 1644, 1380, 13809, 1630, 12017, 1708, 6181, 11989, 5598, 5548, 19179, 19201, 19206, 2]
+// Dependencies: [19, 17, 5155, 11985, 12009, 12010, 21, 5306, 575, 19183, 1655, 9148, 1113, 9150, 5544, 11984, 504, 1644, 1380, 13809, 1630, 12017, 1708, 6171, 11989, 5588, 5538, 19181, 19203, 19208, 2]
 
-// Module 19180 (VoicePanelDock)
+// Module 19182 (VoicePanelDock)
 import nativeDefault from "native" /* 575 */;
 import _mod1655 from "module_1655" /* 1655 */;
 import _mod1708 from "module_1708" /* 1708 */;
-import timing_timing from "timing/timing" /* 5548 */;
-import HapticUtils from "HapticUtils" /* 5554 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5598 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import HapticUtils from "HapticUtils" /* 5544 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5588 */;
 import ContextMenu from "ContextMenu" /* 9148 */;
 import ContextMenuConstants from "ContextMenuConstants" /* 9150 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11984 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11985 */;
 import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11989 */;
 import VoicePanelSheetMorph from "VoicePanelSheetMorph" /* 12017 */;
-import useVoicePanelDockContextMenuItemsDefault from "useVoicePanelDockContextMenuItems" /* 19181 */;
+import useVoicePanelDockContextMenuItemsDefault from "useVoicePanelDockContextMenuItems" /* 19183 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 5155 */;

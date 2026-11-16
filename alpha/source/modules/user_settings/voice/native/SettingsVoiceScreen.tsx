@@ -1,16 +1,16 @@
-// Module ID: 17866
-// Function ID: 17867
+// Module ID: 17868
+// Function ID: 17869
 // Name: SettingsVoiceScreen
-// Dependencies: [19, 17, 2133, 9202, 1072, 21, 2188, 5306, 5547, 5313, 13037, 13038, 6020, 1113, 5598, 13036, 5929, 13033, 12406, 17213, 2]
+// Dependencies: [19, 17, 2133, 9202, 1072, 21, 2188, 5306, 5537, 5313, 13037, 13038, 6010, 1113, 5588, 13036, 5919, 13033, 12406, 17213, 2]
 // Exports: default
 
-// Module 17866 (SettingsVoiceScreen)
+// Module 17868 (SettingsVoiceScreen)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl10 from "intl" /* 1113 */;
 import shared from "shared" /* 5313 */;
-import useThemeDefault from "useTheme" /* 5547 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import useThemeDefault from "useTheme" /* 5537 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;
 import SettingBuilders from "SettingBuilders" /* 12406 */;
 import NoiseCancellationUtils from "NoiseCancellationUtils" /* 13033 */;
@@ -50,10 +50,10 @@ function KrispLogo() {
   intl = tmp5(1113).intl;
   items = [metroImportAll(tmp2Result2, obj3), ];
   const obj4 = { accessibilityRole: "link", accessibilityLabel: intl2.string(intl10.t.hvVgAZ), onPress: KrispLogo2.handleKrispLinkPressed, children: metroImportAll(Text, obj5) };
-  const LegacyPressable = tmp5(5598).LegacyPressable;
+  const LegacyPressable = tmp5(5588).LegacyPressable;
   intl2 = tmp5(1113).intl;
   obj5 = { variant: "body-sm/medium", color: "text-link", children: intl3.string(intl10.t.hvVgAZ) };
-  Text = tmp5(5929).Text;
+  Text = tmp5(5919).Text;
   intl3 = tmp5(1113).intl;
   items[1] = metroImportAll(LegacyPressable, obj4);
   return React4(View, obj2);
@@ -65,7 +65,7 @@ function SystemProcessingSubLabel() {
   const obj = NoiseCancellationUtils;
   if (obj.useNoiseCancellationDeferredToSystem()) {
     const obj2 = { variant: "body-sm/medium", children: intl.format(intl10.t.EUNgko, obj3) };
-    const Text = tmp(5929).Text;
+    const Text = tmp(5919).Text;
     intl = tmp(1113).intl;
     obj3 = {
       onSettingsClick() {

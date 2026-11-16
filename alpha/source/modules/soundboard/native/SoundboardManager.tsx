@@ -1,7 +1,7 @@
 // Module ID: 17021
 // Function ID: 17022
 // Name: SoundboardManager
-// Dependencies: [5, 2133, 5209, 6369, 3, 17022, 17023, 17024, 11033, 7226, 2]
+// Dependencies: [5, 2133, 5209, 6359, 3, 17022, 17023, 17024, 11033, 7226, 2]
 
 // Module 17021 (SoundboardManager)
 import LoggerDefault from "Logger" /* 3 */;
@@ -11,7 +11,7 @@ import getVolumeForSoundDefault from "getVolumeForSound" /* 17023 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
-import SoundboardStore from "SoundboardStore" /* 6369 */;
+import SoundboardStore from "SoundboardStore" /* 6359 */;
 import BaseSoundboardManager from "BaseSoundboardManager" /* 17022 */;
 import size from "module_2" /* 2 */;
 

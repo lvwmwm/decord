@@ -1,14 +1,14 @@
 // Module ID: 15568
 // Function ID: 15569
 // Name: EmbeddedActivityInviteEmbed
-// Dependencies: [32, 17, 5154, 7314, 2165, 502, 5155, 6052, 5248, 1388, 11891, 7665, 572, 7313, 9170, 8033, 1113, 5954, 15569, 2]
+// Dependencies: [32, 17, 5154, 7314, 2165, 502, 5155, 6042, 5248, 1388, 11891, 7665, 572, 7313, 9170, 8033, 1113, 5944, 15569, 2]
 // Exports: createEmbeddedActivityInviteEmbed
 
 // Module 15568 (EmbeddedActivityInviteEmbed)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl6 from "intl" /* 1113 */;
-import useChannelName from "useChannelName" /* 5954 */;
+import useChannelName from "useChannelName" /* 5944 */;
 import ApplicationAssetUtils from "ApplicationAssetUtils" /* 7313 */;
 import ApplicationAssetsStore2 from "ApplicationAssetsStore" /* 7314 */;
 import InviteTargetTypes from "InviteTargetTypes" /* 7665 */;
@@ -21,7 +21,7 @@ import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
-import InviteStore from "InviteStore" /* 6052 */;
+import InviteStore from "InviteStore" /* 6042 */;
 import RelationshipStore from "RelationshipStore" /* 5248 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;

@@ -1,7 +1,7 @@
 // Module ID: 15822
 // Function ID: 15823
 // Name: UserProfileApplicationWidgetPreview
-// Dependencies: [19, 17, 502, 21, 575, 5306, 504, 12264, 12251, 12147, 12149, 12256, 12259, 6020, 2]
+// Dependencies: [19, 17, 502, 21, 575, 5306, 504, 12264, 12251, 12147, 12149, 12256, 12259, 6010, 2]
 // Exports: default
 
 // Module 15822 (UserProfileApplicationWidgetPreview)
@@ -137,7 +137,7 @@ export default function UserProfileApplicationWidgetPreview(applicationId) {
     if (null != resultResult) {
       const obj20 = { source: obj21, style: tmp.containedImage, resizeMode: "contain" };
       obj21 = { uri: resultResult.media.url };
-      tmp17Result3 = tmp17(tmp5(6020), obj20);
+      tmp17Result3 = tmp17(tmp5(6010), obj20);
     } else {
       const obj22 = { style: tmp.containedImageSkeleton };
       tmp17Result3 = tmp17(tmp2(12256).ImageSkeleton, obj22);

@@ -1,12 +1,12 @@
-// Module ID: 6749
-// Function ID: 6750
+// Module ID: 6739
+// Function ID: 6740
 // Name: useMessageAuthor
-// Dependencies: [5155, 5218, 5212, 5177, 5248, 1388, 38, 504, 5372, 6750, 2]
+// Dependencies: [5155, 5218, 5212, 5177, 5248, 1388, 38, 504, 5362, 6740, 2]
 // Exports: default, getMessageAuthor, useUserNickAndColor
 
-// Module 6749 (useMessageAuthor)
+// Module 6739 (useMessageAuthor)
 import _modDef38 from "module_38" /* 38 */;
-import UserUtilsDefault from "UserUtils" /* 5372 */;
+import UserUtilsDefault from "UserUtils" /* 5362 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import GuildMemberStore from "GuildMemberStore" /* 5218 */;
 import GuildRoleStore from "GuildRoleStore" /* 5212 */;

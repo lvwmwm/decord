@@ -1,14 +1,14 @@
 // Module ID: 10282
 // Function ID: 10283
 // Name: GameProfileScreen
-// Dependencies: [32, 19, 17, 10283, 21, 5306, 575, 5936, 1113, 8559, 10284, 6012, 10286, 9533, 9380, 1655, 10281, 10287, 5548, 1708, 10288, 10293, 10310, 5552, 10312, 5566, 5570, 10313, 10311, 10315, 10497, 10507, 10508, 5901, 2]
+// Dependencies: [32, 19, 17, 10283, 21, 5306, 575, 5926, 1113, 8559, 10284, 6002, 10286, 9533, 9380, 1655, 10281, 10287, 5538, 1708, 10288, 10293, 10310, 5542, 10312, 5556, 5560, 10313, 10311, 10315, 10497, 10507, 10508, 5891, 2]
 // Exports: default
 
 // Module 10282 (GameProfileScreen)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5552 */;
-import components_Button_Button from "components/Button/Button" /* 5936 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5542 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
 import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 10281 */;
 import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 10286 */;
 import getGameProfileStoreWebsiteDataDefault from "getGameProfileStoreWebsiteData" /* 10293 */;

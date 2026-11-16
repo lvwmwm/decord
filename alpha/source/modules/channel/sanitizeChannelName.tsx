@@ -1,12 +1,12 @@
 // Module ID: 8146
 // Function ID: 8147
 // Name: sanitizeChannelName
-// Dependencies: [1093, 8147, 6364, 2]
+// Dependencies: [1093, 8147, 6354, 2]
 // Exports: default
 
 // Module 8146 (sanitizeChannelName)
 import ChannelTypes from "ChannelTypes" /* 1093 */;
-import sanitizeGuildTextChannelNameDefault from "sanitizeGuildTextChannelName" /* 6364 */;
+import sanitizeGuildTextChannelNameDefault from "sanitizeGuildTextChannelName" /* 6354 */;
 import sanitizeThreadNameDefault from "sanitizeThreadName" /* 8147 */;
 import size from "module_2" /* 2 */;
 

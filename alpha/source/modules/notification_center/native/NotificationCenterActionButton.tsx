@@ -1,10 +1,10 @@
-// Module ID: 19236
-// Function ID: 19237
+// Module ID: 19238
+// Function ID: 19239
 // Name: NotificationCenterActionButton
-// Dependencies: [19, 21, 7988, 7421, 5552, 19237, 2121, 1113, 2]
+// Dependencies: [19, 21, 7988, 7421, 5542, 19239, 2121, 1113, 2]
 // Exports: default
 
-// Module 19236 (NotificationCenterActionButton)
+// Module 19238 (NotificationCenterActionButton)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7421 */;

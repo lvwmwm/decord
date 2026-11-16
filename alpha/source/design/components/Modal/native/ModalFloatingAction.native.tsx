@@ -1,11 +1,11 @@
 // Module ID: 15158
 // Function ID: 15159
 // Name: ModalFloatingAction
-// Dependencies: [19, 17, 21, 5306, 1655, 5320, 1630, 5939, 5940, 5893, 671, 15159, 2]
+// Dependencies: [19, 17, 21, 5306, 1655, 5320, 1630, 5929, 5930, 5883, 671, 15159, 2]
 // Exports: ModalFloatingAction, ModalFloatingActionSpacer
 
 // Module 15158 (ModalFloatingAction)
-import spring_spring from "spring/spring" /* 5939 */;
+import spring_spring from "spring/spring" /* 5929 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -19,7 +19,7 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp2;
-const springPresets = tmp2(5940);
+const springPresets = tmp2(5930);
 ({ StyleSheet: closure_4, View: hasOwnProperty } = react_native);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles({ floating: { position: "absolute", bottom: 0, width: "100%", paddingHorizontal: 16 }, spacer: { height: 96 } });
@@ -104,7 +104,7 @@ export function ModalFloatingAction(isVisible) {
     str = "auto";
   }
   let obj2 = { colors: items4, locations: [0, 0.5], style: absoluteFill.absoluteFill };
-  const tmp7Result = sharedValue(5893);
+  const tmp7Result = sharedValue(5883);
   items4 = [, ];
   const obj3 = sharedValue(671)(floatingBackgroundColor);
   const alphaResult = obj3.alpha(0);

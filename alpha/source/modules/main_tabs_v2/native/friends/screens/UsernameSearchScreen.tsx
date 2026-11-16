@@ -1,10 +1,10 @@
-// Module ID: 19613
-// Function ID: 19614
+// Module ID: 19615
+// Function ID: 19616
 // Name: UsernameSearchScreen
-// Dependencies: [19, 17, 1072, 21, 5306, 575, 1256, 5913, 5568, 9060, 1380, 7474, 10271, 16290, 1113, 2]
+// Dependencies: [19, 17, 1072, 21, 5306, 575, 1256, 5903, 5558, 9060, 1380, 7474, 10271, 16290, 1113, 2]
 // Exports: default
 
-// Module 19613 (UsernameSearchScreen)
+// Module 19615 (UsernameSearchScreen)
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -56,7 +56,7 @@ export default function UsernameSearchScreen(navigation) {
     const obj2 = { friend_add_type: constants2.FRIENDS_ADD_BY_USERNAME_MODAL };
     obj.track(constants.FRIEND_ADD_VIEWED, obj2);
   }, []);
-  const insets = ref(5913)().insets;
+  const insets = ref(5903)().insets;
   ref = react.useRef(null);
   const items = [navigation];
   const effect1 = react.useEffect(() => navigation.addListener("transitionEnd", (data) => {

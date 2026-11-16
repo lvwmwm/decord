@@ -1,9 +1,9 @@
-// Module ID: 20026
-// Function ID: 20027
+// Module ID: 20028
+// Function ID: 20029
 // Name: ActivityItemMissingCard
-// Dependencies: [5, 19, 17, 21, 5306, 575, 11984, 7918, 12847, 12898, 7428, 20027, 20028, 7722, 2]
+// Dependencies: [5, 19, 17, 21, 5306, 575, 11984, 7918, 12847, 12898, 7428, 20029, 20030, 7722, 2]
 
-// Module 20026 (ActivityItemMissingCard)
+// Module 20028 (ActivityItemMissingCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import NativeViewDefault from "NativeView" /* 7722 */;

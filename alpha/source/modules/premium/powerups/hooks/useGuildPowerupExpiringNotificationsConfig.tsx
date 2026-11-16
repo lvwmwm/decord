@@ -1,14 +1,14 @@
 // Module ID: 10764
 // Function ID: 10765
 // Name: useGuildPowerupExpiringNotificationsConfig
-// Dependencies: [10765, 10766, 1113, 3189, 5527, 2733, 2]
+// Dependencies: [10765, 10766, 1113, 3189, 5517, 2733, 2]
 // Exports: default
 
 // Module 10764 (useGuildPowerupExpiringNotificationsConfig)
 import intl4 from "intl" /* 1113 */;
 import _modDef2733 from "module_2733" /* 2733 */;
 import _modDef3189 from "module_3189" /* 3189 */;
-import Powerups from "Powerups" /* 5527 */;
+import Powerups from "Powerups" /* 5517 */;
 import useGetExpiringGuildPowerupsDefault from "useGetExpiringGuildPowerups" /* 10765 */;
 import useGameServerGetExpiringEntitlementsDefault from "useGameServerGetExpiringEntitlements" /* 10766 */;
 import size from "module_2" /* 2 */;

@@ -1,13 +1,13 @@
 // Module ID: 11944
 // Function ID: 11945
 // Name: RestrictedHoursWarningNotification
-// Dependencies: [19, 17, 11026, 1072, 21, 5306, 575, 11945, 6848, 11027, 8604, 11087, 5929, 2]
+// Dependencies: [19, 17, 11026, 1072, 21, 5306, 575, 11945, 6838, 11027, 8604, 11087, 5919, 2]
 
 // Module 11944 (RestrictedHoursWarningNotification)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import openUserSettings from "openUserSettings" /* 8604 */;
 import InAppNotificationConstants from "InAppNotificationConstants" /* 11026 */;
 import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 11027 */;

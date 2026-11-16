@@ -1,9 +1,9 @@
-// Module ID: 18040
-// Function ID: 18041
+// Module ID: 18042
+// Function ID: 18043
 // Name: SyncReducedMotionWithDeviceSetting
 // Dependencies: [5307, 9202, 504, 16889, 12406, 1113, 2]
 
-// Module 18040 (SyncReducedMotionWithDeviceSetting)
+// Module 18042 (SyncReducedMotionWithDeviceSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;

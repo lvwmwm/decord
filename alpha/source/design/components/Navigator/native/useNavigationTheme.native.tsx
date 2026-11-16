@@ -1,7 +1,7 @@
 // Module ID: 7590
 // Function ID: 7591
 // Name: useNavigationTheme
-// Dependencies: [19, 5902, 575, 5313, 1503, 2]
+// Dependencies: [19, 5892, 575, 5313, 1503, 2]
 // Exports: useNavigationTheme
 
 // Module 7590 (useNavigationTheme)

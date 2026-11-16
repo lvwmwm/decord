@@ -1,14 +1,14 @@
 // Module ID: 15832
 // Function ID: 15833
 // Name: UserProfileActivityTab
-// Dependencies: [19, 17, 1072, 21, 5306, 575, 5929, 1113, 7653, 2188, 15833, 15836, 15704, 15837, 2]
+// Dependencies: [19, 17, 1072, 21, 5306, 575, 5919, 1113, 7653, 2188, 15833, 15836, 15704, 15837, 2]
 // Exports: default
 
 // Module 15832 (UserProfileActivityTab)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import UserProfileRecentActivityCardDefault from "UserProfileRecentActivityCard" /* 15837 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

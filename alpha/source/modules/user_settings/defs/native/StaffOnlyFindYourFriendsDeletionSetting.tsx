@@ -1,7 +1,7 @@
 // Module ID: 17371
 // Function ID: 17372
 // Name: StaffOnlyFindYourFriendsDeletionSetting
-// Dependencies: [5, 17, 9202, 21, 1258, 1263, 5221, 14997, 1339, 6015, 12406, 17372, 2]
+// Dependencies: [5, 17, 9202, 21, 1258, 1263, 5221, 14997, 1339, 6005, 12406, 17372, 2]
 
 // Module 17371 (StaffOnlyFindYourFriendsDeletionSetting)
 import react_native from "react-native" /* 17 */;
@@ -17,7 +17,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, c4, c5, closure_2;
 
-const f115144 = (isLoading) => isLoading.isLoading;
+const f115158 = (isLoading) => isLoading.isLoading;
 function setFindYourFriendsDeletionIsLoading(isLoading) {
   let state;
   _require = isLoading;
@@ -131,7 +131,7 @@ obj = {
   },
   parent: MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   useIsDisabled: function useIsFindYourFriendsDeletionDisabled() {
-    return closure_6(f115144, _slicedToArray.shallow);
+    return closure_6(f115158, _slicedToArray.shallow);
   },
   onPress: function onFindYourFriendsDeletionPress() {
     return obj(...arguments);
@@ -139,7 +139,7 @@ obj = {
   usePredicate: useIsStaffOrDeveloperSettingPredicate.useStaffOrDeveloperSettingPredicate,
   useTrailing: function useIsFindYourFriendsDeletionTrailing() {
     let tmp = null;
-    if (closure_6(f115144, _slicedToArray.shallow)) {
+    if (closure_6(f115158, _slicedToArray.shallow)) {
       tmp = <ActivityIndicator />;
     }
     return tmp;

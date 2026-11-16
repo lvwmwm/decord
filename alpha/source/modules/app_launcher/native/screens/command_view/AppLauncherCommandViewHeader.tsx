@@ -1,7 +1,7 @@
 // Module ID: 13488
 // Function ID: 13489
 // Name: AppLauncherCommandViewHeader
-// Dependencies: [19, 17, 1501, 21, 13462, 5306, 575, 13383, 1655, 5902, 8538, 6020, 5929, 13489, 2]
+// Dependencies: [19, 17, 1501, 21, 13462, 5306, 575, 13383, 1655, 5892, 8538, 6010, 5919, 13489, 2]
 // Exports: AppLauncherCommandViewHeader
 
 // Module 13488 (AppLauncherCommandViewHeader)
@@ -189,7 +189,7 @@ export function AppLauncherCommandViewHeader(onPressBack) {
   AppLauncherCommandViewHeaderTsx3.__workletHash = 3726184428877;
   AppLauncherCommandViewHeaderTsx3.__initData = tmp22;
   const animatedStyle3 = useAnimatedStyle3(AppLauncherCommandViewHeaderTsx3);
-  const tmp3Result4 = section(5902);
+  const tmp3Result4 = section(5892);
   let str = tmp3Result4.useToken(nativeDefault.colors.BACKGROUND_BASE_LOW);
   let tmp29 = memo;
   const tmp28 = useAvatarColorDefault;
@@ -206,7 +206,7 @@ export function AppLauncherCommandViewHeader(onPressBack) {
   const tmp28Result = tmp28(tmp29, str);
   if (null != memo) {
     let obj = { style: tmp.appIcon, source: memo };
-    tmp34 = closure_6(tmp27(6020), obj);
+    tmp34 = closure_6(tmp27(6010), obj);
     tmp35 = closure_6;
   } else {
     let obj2 = { style: items7 };
@@ -230,7 +230,7 @@ export function AppLauncherCommandViewHeader(onPressBack) {
   const obj5 = { lineClamp: 1, animated: true, style: items11, variant: "heading-lg/semibold", color: "text-overlay-light", children: displayName };
   items11 = [tmp.appSmallName, animatedStyle];
   displayName = undefined;
-  const Text = tmp3(5929).Text;
+  const Text = tmp3(5919).Text;
   if (command != null) {
     displayName = command.displayName;
   }

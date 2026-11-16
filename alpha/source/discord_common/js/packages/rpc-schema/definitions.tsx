@@ -1,15 +1,15 @@
 // Module ID: 16923
 // Function ID: 16924
 // Name: definitions
-// Dependencies: [1083, 12706, 7472, 12865, 1093, 5977, 2173, 7307, 2146, 16924, 16920, 16925, 7665, 6069, 10858, 16926, 2]
+// Dependencies: [1083, 12706, 7472, 12865, 1093, 5967, 2173, 7307, 2146, 16924, 16920, 16925, 7665, 6059, 10858, 16926, 2]
 
 // Module 16923 (definitions)
 import Constants2 from "Constants" /* 1083 */;
 import ChannelTypes from "ChannelTypes" /* 1093 */;
 import EmbeddedActivityOrientationLockState2 from "EmbeddedActivityOrientationLockState" /* 2146 */;
 import EntitlementTypes from "EntitlementTypes" /* 2173 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5977 */;
-import ActivityTypes from "ActivityTypes" /* 6069 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5967 */;
+import ActivityTypes from "ActivityTypes" /* 6059 */;
 import OAuth2Scopes from "OAuth2Scopes" /* 7307 */;
 import ActivityGamePlatforms from "ActivityGamePlatforms" /* 7472 */;
 import InviteTargetTypes from "InviteTargetTypes" /* 7665 */;

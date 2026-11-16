@@ -1,7 +1,7 @@
 // Module ID: 9605
 // Function ID: 9606
 // Name: PremiumPill
-// Dependencies: [19, 17, 21, 5306, 575, 5547, 9440, 9606, 1113, 5929, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 5537, 9440, 9606, 1113, 5919, 2]
 // Exports: PremiumPill
 
 // Module 9605 (PremiumPill)

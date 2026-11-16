@@ -1,11 +1,11 @@
 // Module ID: 12059
 // Function ID: 12060
 // Name: InappropriateConversationWarningBanner
-// Dependencies: [19, 5248, 10896, 21, 12038, 504, 12039, 6269, 12060, 2121, 12303, 12040, 1113, 2]
+// Dependencies: [19, 5248, 10896, 21, 12038, 504, 12039, 6259, 12060, 2121, 12303, 12040, 1113, 2]
 
 // Module 12059 (InappropriateConversationWarningBanner)
 import Fragment from "Fragment" /* 21 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6269 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6259 */;
 import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10896 */;
 import SafetyWarningUtils from "SafetyWarningUtils" /* 12038 */;
 import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 12039 */;

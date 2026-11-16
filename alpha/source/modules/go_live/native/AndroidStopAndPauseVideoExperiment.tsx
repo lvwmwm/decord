@@ -1,9 +1,9 @@
-// Module ID: 6861
-// Function ID: 6862
+// Module ID: 6851
+// Function ID: 6852
 // Name: AndroidStopAndPauseVideoExperiment
 // Dependencies: [1452, 2]
 
-// Module 6861 (AndroidStopAndPauseVideoExperiment)
+// Module 6851 (AndroidStopAndPauseVideoExperiment)
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 

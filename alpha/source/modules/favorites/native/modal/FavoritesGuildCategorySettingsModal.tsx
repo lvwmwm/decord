@@ -1,16 +1,16 @@
-// Module ID: 18832
-// Function ID: 18833
+// Module ID: 18834
+// Function ID: 18835
 // Name: FavoritesGuildCategorySettingsModal
-// Dependencies: [32, 19, 17, 5158, 5168, 21, 5306, 575, 1502, 504, 5180, 10944, 9051, 1113, 6268, 1187, 6337, 7619, 7746, 7443, 6040, 10905, 10907, 2]
+// Dependencies: [32, 19, 17, 5158, 5168, 21, 5306, 575, 1502, 504, 5180, 10944, 9051, 1113, 6258, 1187, 6327, 7619, 7746, 7443, 6030, 10905, 10907, 2]
 // Exports: default
 
-// Module 18832 (FavoritesGuildCategorySettingsModal)
+// Module 18834 (FavoritesGuildCategorySettingsModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import FavoritesConstants from "FavoritesConstants" /* 5168 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6268 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6258 */;
 import FavoritesActionCreators from "FavoritesActionCreators" /* 10944 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

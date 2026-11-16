@@ -1,7 +1,7 @@
 // Module ID: 8211
 // Function ID: 8212
 // Name: ShieldSpotIllustration
-// Dependencies: [19, 21, 8212, 8213, 8214, 7755, 6020, 2]
+// Dependencies: [19, 21, 8212, 8213, 8214, 7755, 6010, 2]
 // Exports: ShieldSpotIllustration
 
 // Module 8211 (ShieldSpotIllustration)

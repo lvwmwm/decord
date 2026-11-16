@@ -1,15 +1,15 @@
-// Module ID: 18841
-// Function ID: 18842
+// Module ID: 18843
+// Function ID: 18844
 // Name: VoiceUsers
-// Dependencies: [19, 17, 5218, 21, 5306, 575, 11050, 9061, 10597, 504, 18842, 6061, 1113, 10729, 5929, 18846, 14150, 18847, 2]
+// Dependencies: [19, 17, 5218, 21, 5306, 575, 11050, 9061, 10597, 504, 18844, 6051, 1113, 10729, 5919, 18848, 14150, 18849, 2]
 // Exports: default, getAudienceItemHeight
 
-// Module 18841 (VoiceUsers)
+// Module 18843 (VoiceUsers)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 6061 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 6051 */;
 import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9061 */;
 import HeadphonesIcon from "HeadphonesIcon" /* 10729 */;
 import ChannelListLayout from "ChannelListLayout" /* 11050 */;
@@ -106,7 +106,7 @@ let closure_12 = react.memo(function VoiceStateUserItem(voiceState) {
   }
   const obj3 = { style: userCollapsedOverlap, children: closure_6(tmpResult, obj6, user.id) };
   obj6 = { user, member, mute: null, deaf: null, selfVideo: null, selfMute: null, selfDeaf: null, suppress: null, collapsed, sessionId: result.sessionId, channel, isGuest };
-  tmpResult = tmp(18842);
+  tmpResult = tmp(18844);
   if (member == null) {
     member = storeMember;
   }

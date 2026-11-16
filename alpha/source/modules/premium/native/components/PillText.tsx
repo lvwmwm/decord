@@ -1,14 +1,14 @@
 // Module ID: 10008
 // Function ID: 10009
 // Name: PillText
-// Dependencies: [1072, 21, 5306, 575, 10009, 5893, 5929, 2]
+// Dependencies: [1072, 21, 5306, 575, 10009, 5883, 5919, 2]
 // Exports: default
 
 // Module 10008 (PillText)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import LinearGradientDefault from "LinearGradient" /* 5893 */;
+import LinearGradientDefault from "LinearGradient" /* 5883 */;
 import usePremiumPrimaryGradientColorsDefault from "usePremiumPrimaryGradientColors" /* 10009 */;
 import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;

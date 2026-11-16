@@ -1,15 +1,15 @@
 // Module ID: 11042
 // Function ID: 11043
 // Name: MessageNotification
-// Dependencies: [19, 5307, 11026, 21, 5306, 11043, 504, 1187, 1113, 6749, 11077, 8786, 5315, 6848, 6063, 11078, 2121, 11087, 11091, 2]
+// Dependencies: [19, 5307, 11026, 21, 5306, 11043, 504, 1187, 1113, 6739, 11077, 8786, 5315, 6838, 6053, 11078, 2121, 11087, 11091, 2]
 
 // Module 11042 (MessageNotification)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5315 */;
-import transitionToChannel from "transitionToChannel" /* 6063 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import transitionToChannel from "transitionToChannel" /* 6053 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import MessageParserDefault from "MessageParser" /* 8786 */;
 import MessagePreviewTextDefault from "MessagePreviewText" /* 11043 */;
 import react from "react" /* 19 */;

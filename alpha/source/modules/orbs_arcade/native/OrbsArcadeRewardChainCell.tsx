@@ -1,7 +1,7 @@
 // Module ID: 17661
 // Function ID: 17662
 // Name: OrbsArcadeRewardChainCell
-// Dependencies: [32, 19, 17, 5307, 21, 5306, 575, 1655, 504, 5548, 5313, 5902, 17648, 1708, 671, 5893, 17662, 10424, 17663, 7930, 5923, 17664, 2]
+// Dependencies: [32, 19, 17, 5307, 21, 5306, 575, 1655, 504, 5538, 5313, 5892, 17648, 1708, 671, 5883, 17662, 10424, 17663, 7930, 5913, 17664, 2]
 // Exports: default, useOrbsArcadeRewardChainRowStyle, useOrbsArcadeRewardChainTimeline
 
 // Module 17661 (OrbsArcadeRewardChainCell)
@@ -133,9 +133,9 @@ export default function OrbsArcadeRewardChainCell(arg0) {
   let tmp2 = token1;
   let obj = token1(5313);
   const theme = obj.useThemeContext().theme;
-  let obj2 = token1(5902);
+  let obj2 = token1(5892);
   const token = obj2.useToken(ref(575).colors.ICON_STRONG);
-  let obj3 = token1(5902);
+  let obj3 = token1(5892);
   token1 = obj3.useToken(ref(575).colors.STATUS_POSITIVE);
   const LOCKED = token1(17648).OrbsArcadeRewardStatus.LOCKED;
   ref = react.useRef(null);
@@ -354,7 +354,7 @@ export default function OrbsArcadeRewardChainCell(arg0) {
     tmp61Result = null;
     if (!isStemTargetGranted) {
       const obj7 = { style: StyleSheet.absoluteFill, start, end, colors: memo1 };
-      tmp61Result = tmp61(tmp4(5893), obj7);
+      tmp61Result = tmp61(tmp4(5883), obj7);
     }
     tmp61Result2 = tmp61(View, obj6);
   }
@@ -410,7 +410,7 @@ export default function OrbsArcadeRewardChainCell(arg0) {
     if (null != grantAtMs) {
       const obj16 = { pointerEvents: "none", style: tmp.confetti, children: closure_8(tmp4Result, obj17) };
       obj17 = { ref, source: tmp2(17664), autoPlay: false, loop: false };
-      tmp4Result = ref(5923);
+      tmp4Result = ref(5913);
       tmp68Result8 = tmp68(tmp59, obj16);
     }
   }

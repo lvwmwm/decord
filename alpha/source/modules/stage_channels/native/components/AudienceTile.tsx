@@ -1,13 +1,13 @@
 // Module ID: 13108
 // Function ID: 13109
 // Name: AudienceTile
-// Dependencies: [19, 17, 5218, 21, 5306, 575, 6358, 1187, 12968, 1496, 504, 6943, 6351, 5598, 1113, 7678, 13090, 5313, 13109, 2]
+// Dependencies: [19, 17, 5218, 21, 5306, 575, 6348, 1187, 12968, 1496, 504, 6933, 6341, 5588, 1113, 7678, 13090, 5313, 13109, 2]
 // Exports: getTileWidthStyle
 
 // Module 13108 (AudienceTile)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 6358 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 6348 */;
 import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7678 */;
 import react from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 5218 */;

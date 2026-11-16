@@ -1,19 +1,19 @@
-// Module ID: 18418
-// Function ID: 18419
+// Module ID: 18420
+// Function ID: 18421
 // Name: UserSettingsDesignSystemExperimentalButtons
-// Dependencies: [19, 17, 1072, 21, 5902, 575, 7997, 6337, 7746, 7457, 7827, 6034, 5936, 5929, 5377, 5893, 8108, 10570, 2]
+// Dependencies: [19, 17, 1072, 21, 5892, 575, 7997, 6327, 7746, 7457, 7827, 6024, 5926, 5919, 5367, 5883, 8108, 10570, 2]
 // Exports: default
 
-// Module 18418 (UserSettingsDesignSystemExperimentalButtons)
+// Module 18420 (UserSettingsDesignSystemExperimentalButtons)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import native from "native" /* 5377 */;
-import LinearGradientDefault from "LinearGradient" /* 5893 */;
-import useToken from "useToken" /* 5902 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import components_Button_Button from "components/Button/Button" /* 5936 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6034 */;
-import Stack_Stack from "Stack/Stack" /* 6337 */;
+import native from "native" /* 5367 */;
+import LinearGradientDefault from "LinearGradient" /* 5883 */;
+import useToken from "useToken" /* 5892 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6024 */;
+import Stack_Stack from "Stack/Stack" /* 6327 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 7457 */;
 import TableRowGroup7 from "TableRowGroup" /* 7746 */;
 import AssetRegistryDefault3 from "AssetRegistry" /* 7827 */;

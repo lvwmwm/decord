@@ -1,7 +1,7 @@
 // Module ID: 11831
 // Function ID: 11832
 // Name: GiftingSKUCardsGrid
-// Dependencies: [19, 17, 8490, 2112, 8491, 8492, 1072, 9490, 21, 575, 5306, 9409, 9514, 9500, 6020, 9513, 9493, 9512, 5902, 5303, 5893, 9485, 5378, 11832, 7428, 5929, 1113, 1496, 12, 2]
+// Dependencies: [19, 17, 8490, 2112, 8491, 8492, 1072, 9490, 21, 575, 5306, 9409, 9514, 9500, 6010, 9513, 9493, 9512, 5892, 5303, 5883, 9485, 5368, 11832, 7428, 5919, 1113, 1496, 12, 2]
 // Exports: default
 
 // Module 11831 (GiftingSKUCardsGrid)
@@ -11,10 +11,10 @@ import Constants from "Constants" /* 1072 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
 import NameplateRecord from "NameplateRecord" /* 2112 */;
 import ColorUtils from "ColorUtils" /* 5303 */;
-import react_native from "react-native" /* 5378 */;
-import LinearGradientDefault from "LinearGradient" /* 5893 */;
-import useToken from "useToken" /* 5902 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import react_native from "react-native" /* 5368 */;
+import LinearGradientDefault from "LinearGradient" /* 5883 */;
+import useToken from "useToken" /* 5892 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import AvatarDecorationRecord from "AvatarDecorationRecord" /* 8490 */;
 import ProfileEffectRecord from "ProfileEffectRecord" /* 8491 */;
 import ProfileFrameRecord from "ProfileFrameRecord" /* 8492 */;
@@ -68,7 +68,7 @@ function GiftingSKUCardItemPreview(arg0) {
     const obj4 = { style: tmp.profileEffect, children: items1 };
     const obj5 = { source: obj6, style: tmp.sampleProfile, resizeMode: "cover" };
     obj6 = { uri: currentUser(9513) };
-    const tmp19 = currentUser(6020);
+    const tmp19 = currentUser(6010);
     items1 = [closure_10(tmp19, obj5), ];
     const obj7 = { skuId: item.skuId, useThumbnail: !isSelected };
     items1[1] = closure_10(currentUser(9493), obj7);
@@ -215,7 +215,7 @@ let closure_22 = react.memo(function GiftingSKUCard(rewardSkuId) {
     const obj5 = { style: tmp.textContainer, children: items2 };
     const obj6 = { variant: "heading-xs/semibold", color: "mobile-text-heading-primary", lineClamp: 1, accessibilityRole: "header", children: product.name };
     items2 = [authStore(Text_Text.Text, obj6), ];
-    const Text = tmp2(5929).Text;
+    const Text = tmp2(5919).Text;
     const intl = tmp2(1113).intl;
     const string = intl.string;
     const t = tmp2(1113).t;

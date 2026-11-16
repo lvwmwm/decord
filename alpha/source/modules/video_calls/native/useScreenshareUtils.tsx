@@ -1,7 +1,7 @@
 // Module ID: 12981
 // Function ID: 12982
 // Name: useScreenshareUtils
-// Dependencies: [19, 17, 6820, 2133, 1072, 6075, 5263, 8857, 2135, 10583, 6862, 6808, 6225, 6257, 12982, 12977, 1627, 12992, 10732, 12993, 12994, 504, 12987, 7918, 1113, 2]
+// Dependencies: [19, 17, 6810, 2133, 1072, 6065, 5263, 8857, 2135, 10583, 6852, 6798, 6215, 6247, 12982, 12977, 1627, 12992, 10732, 12993, 12994, 504, 12987, 7918, 1113, 2]
 // Exports: default, getOSRequirement, getStreamPressHandler, handleCloseScreenshare, tryStartScreenShare
 
 // Module 12981 (useScreenshareUtils)
@@ -10,17 +10,17 @@ import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1627 */;
 import inject from "inject" /* 2135 */;
-import Constants2 from "Constants" /* 6075 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 6225 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6808 */;
-import StreamActionCreators from "StreamActionCreators" /* 6862 */;
+import Constants2 from "Constants" /* 6065 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 6215 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6798 */;
+import StreamActionCreators from "StreamActionCreators" /* 6852 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7918 */;
 import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 8857 */;
 import CallsUtils from "CallsUtils" /* 10583 */;
 import useHasVideoPermission from "useHasVideoPermission" /* 12977 */;
 import MobileGoLiveUpsellExperimentDefault from "MobileGoLiveUpsellExperiment" /* 12987 */;
 import react from "react" /* 19 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6820 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6810 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
 import DeviceUtils from "DeviceUtils" /* 5263 */;
 import size from "module_2" /* 2 */;
@@ -36,7 +36,7 @@ function l() {
   const obj3 = closure_2_0(closure_2_2[9]);
   const result = obj3.showMinOSScreenshareRequirementAlert();
 }
-const f132688 = (arg0) => {
+const f132703 = (arg0) => {
   const tmp3 = arg0;
   if (tmp3) {
     const tmpResult = require("inject");
@@ -65,7 +65,7 @@ function startStream() {
   const obj = inject;
   if ("android" === obj.getVoiceEngine().platform) {
     const obj2 = ForegroundServiceManagerDefault;
-    const result = obj2.isForegroundServiceRunning(f132688);
+    const result = obj2.isForegroundServiceRunning(f132703);
   } else {
     BroadcastUploadManager.showPicker();
   }
@@ -214,7 +214,7 @@ export function tryStartScreenShare(channel) {
     const obj2 = inject;
     if ("android" === obj2.getVoiceEngine().platform) {
       const obj3 = ForegroundServiceManagerDefault;
-      let result = obj3.isForegroundServiceRunning(f132688);
+      let result = obj3.isForegroundServiceRunning(f132703);
     } else {
       BroadcastUploadManager.showPicker();
     }

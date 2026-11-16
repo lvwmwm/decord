@@ -1,7 +1,7 @@
 // Module ID: 12878
 // Function ID: 12879
 // Name: useEmbeddedAppCSP
-// Dependencies: [5, 7343, 504, 7345, 7344, 5974, 2]
+// Dependencies: [5, 7343, 504, 7345, 7344, 5964, 2]
 // Exports: default
 
 // Module 12878 (useEmbeddedAppCSP)
@@ -15,7 +15,7 @@ import size from "module_2" /* 2 */;
 let c1, c2;
 
 let tmp;
-const getURLForApplication = tmp(5974);
+const getURLForApplication = tmp(5964);
 let obj = {
   getQueryId(arg0) {
     let combined = null;

@@ -1,36 +1,36 @@
-// Module ID: 6805
-// Function ID: 6806
+// Module ID: 6795
+// Function ID: 6796
 // Name: StreamRTCConnection
-// Dependencies: [2139, 6090, 6253, 502, 5155, 6806, 2133, 6210, 6071, 6170, 1072, 6075, 1089, 6077, 6807, 5150, 6808, 6809, 12, 572, 6810, 6189, 6096, 6811, 1256, 5312, 6817, 6079, 6254, 6818, 6819, 16108, 6199, 2]
+// Dependencies: [2139, 6080, 6243, 502, 5155, 6796, 2133, 6200, 6061, 6160, 1072, 6065, 1089, 6067, 6797, 5150, 6798, 6799, 12, 572, 6800, 6179, 6086, 6801, 1256, 5312, 6807, 6069, 6244, 6808, 6809, 16108, 6189, 2]
 
-// Module 6805 (StreamRTCConnection)
+// Module 6795 (StreamRTCConnection)
 import _modDef12 from "module_12" /* 12 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 5312 */;
-import Constants2 from "Constants" /* 6075 */;
-import SystemAnalyticsStore from "SystemAnalyticsStore" /* 6090 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 6096 */;
-import getReportedStreamResolutionDefault from "getReportedStreamResolution" /* 6254 */;
-import SoundshareStatsAggregatorDefault from "SoundshareStatsAggregator" /* 6807 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6808 */;
-import VideoStreamStatsDefault from "VideoStreamStats" /* 6809 */;
-import _slicedToArrayDefault from "_slicedToArray" /* 6810 */;
-import GameAnalyticsUtils from "GameAnalyticsUtils" /* 6811 */;
-import getSoundshareAnalyticsContextDefault from "getSoundshareAnalyticsContext" /* 6817 */;
-import getStreamSourceMetadataDefault from "getStreamSourceMetadata" /* 6818 */;
+import Constants2 from "Constants" /* 6065 */;
+import SystemAnalyticsStore from "SystemAnalyticsStore" /* 6080 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 6086 */;
+import getReportedStreamResolutionDefault from "getReportedStreamResolution" /* 6244 */;
+import SoundshareStatsAggregatorDefault from "SoundshareStatsAggregator" /* 6797 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6798 */;
+import VideoStreamStatsDefault from "VideoStreamStats" /* 6799 */;
+import _slicedToArrayDefault from "_slicedToArray" /* 6800 */;
+import GameAnalyticsUtils from "GameAnalyticsUtils" /* 6801 */;
+import getSoundshareAnalyticsContextDefault from "getSoundshareAnalyticsContext" /* 6807 */;
+import getStreamSourceMetadataDefault from "getStreamSourceMetadata" /* 6808 */;
 import ClipsStore from "ClipsStore" /* 2139 */;
-import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 6253 */;
+import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 6243 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
-import HookErrorStore from "HookErrorStore" /* 6806 */;
+import HookErrorStore from "HookErrorStore" /* 6796 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import NetworkStore from "NetworkStore" /* 6210 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6071 */;
-import RTCRegionStore from "RTCRegionStore" /* 6170 */;
+import NetworkStore from "NetworkStore" /* 6200 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
+import RTCRegionStore from "RTCRegionStore" /* 6160 */;
 import Constants from "Constants" /* 1072 */;
-import RTCConnection from "RTCConnection" /* 6077 */;
+import RTCConnection from "RTCConnection" /* 6067 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -797,7 +797,7 @@ class StreamRTCConnection extends RTCConnection {
         tmp = null;
         obj3 = CrossPlatformNativeUtilsDefault;
         if (self.isOwner) {
-          tmp = tmp30(6199)();
+          tmp = tmp30(6189)();
         }
         tmp30Result = CrossPlatformNativeUtilsDefault;
         push(obj);
@@ -833,7 +833,7 @@ class StreamRTCConnection extends RTCConnection {
         tmp2 = null;
         const tmp30 = importDefault;
         if (self.isOwner) {
-          tmp2 = tmp30(6199)();
+          tmp2 = tmp30(6189)();
         }
         const result = set(item, obj);
       }

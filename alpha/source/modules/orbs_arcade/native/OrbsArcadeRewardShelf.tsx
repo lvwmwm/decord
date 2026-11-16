@@ -1,15 +1,15 @@
 // Module ID: 17683
 // Function ID: 17684
 // Name: OrbsArcadeRewardShelf
-// Dependencies: [19, 17, 2189, 17647, 21, 575, 5306, 5942, 504, 14947, 9503, 5929, 1113, 17654, 17663, 17666, 17648, 10424, 9440, 17684, 17675, 17665, 671, 17657, 17658, 5893, 10774, 2]
+// Dependencies: [19, 17, 2189, 17647, 21, 575, 5306, 5932, 504, 14947, 9503, 5919, 1113, 17654, 17663, 17666, 17648, 10424, 9440, 17684, 17675, 17665, 671, 17657, 17658, 5883, 10774, 2]
 // Exports: default
 
 // Module 17683 (OrbsArcadeRewardShelf)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import intl4 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import ButtonConstants from "ButtonConstants" /* 5942 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import ButtonConstants from "ButtonConstants" /* 5932 */;
 import useCountdownDefault from "useCountdown" /* 9440 */;
 import OrbsArcadeTypes from "OrbsArcadeTypes" /* 17648 */;
 import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 17654 */;
@@ -72,9 +72,9 @@ function OrbsArcadeClaimableRewardsShelfContent(rewards) {
   items2 = [closure_9(Pile, obj3), ];
   const obj4 = { style: tmp.rewardShelfCopy, children: items3 };
   const obj5 = { variant: "heading-xs/semibold", color: "text-default", children: intl.string(rewards(1113).t.DCCcdz) };
-  const Text = rewards(5929).Text;
+  const Text = rewards(5919).Text;
   intl = rewards(1113).intl;
-  items3 = [closure_9(Text, obj5), closure_9(rewards(5929).Text, { variant: "heading-xs/semibold", color: "text-subtle", lineClamp: 2, children: memo })];
+  items3 = [closure_9(Text, obj5), closure_9(rewards(5919).Text, { variant: "heading-xs/semibold", color: "text-subtle", lineClamp: 2, children: memo })];
   items2[1] = closure_10(closure_6, obj4);
   return closure_10(closure_11, obj2);
 }
@@ -154,7 +154,7 @@ function OrbsArcadeAllRewardsClaimedShelfContent(windowEndsAt) {
   const tmp9 = React4;
   if (null != windowEndsAt) {
     const obj6 = { variant: "body-xs/medium", color: "text-muted", children: formatToPlainString(fkzORZ, obj7) };
-    const Text2 = tmp11(5929).Text;
+    const Text2 = tmp11(5919).Text;
     const intl2 = tmp11(1113).intl;
     formatToPlainString = intl2.formatToPlainString;
     obj7 = { duration: tmp11Result.formatOrbsArcadeTimeUntil(tmp3Result) };

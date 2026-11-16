@@ -1,7 +1,7 @@
 // Module ID: 14301
 // Function ID: 14302
 // Name: CheckpointCharacterStage
-// Dependencies: [32, 19, 17, 14253, 21, 5306, 14266, 1496, 504, 5917, 14302, 14468, 14470, 14472, 14473, 14474, 14475, 6743, 5383, 2]
+// Dependencies: [32, 19, 17, 14253, 21, 5306, 14266, 1496, 504, 5907, 14302, 14468, 14470, 14472, 14473, 14474, 14475, 6733, 5373, 2]
 // Exports: default
 
 // Module 14301 (CheckpointCharacterStage)

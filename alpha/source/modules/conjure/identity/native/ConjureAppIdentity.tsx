@@ -1,7 +1,7 @@
 // Module ID: 13184
 // Function ID: 13185
 // Name: ConjureAppIdentity
-// Dependencies: [32, 5, 19, 17, 21, 575, 5306, 8846, 8880, 13185, 1113, 4131, 1493, 13181, 7445, 13186, 6020, 13188, 6337, 7619, 7018, 5929, 7859, 2]
+// Dependencies: [32, 5, 19, 17, 21, 575, 5306, 8846, 8880, 13185, 1113, 4131, 1493, 13181, 7445, 13186, 6010, 13188, 6327, 7619, 7018, 5919, 7859, 2]
 // Exports: ConjureAppIdentitySection
 
 // Module 13184 (ConjureAppIdentity)
@@ -283,7 +283,7 @@ class ConjureAppIconTile {
       tmp9 = onError;
       let obj4 = { source: obj5, style: tmp.tileImage, resizeMode: "cover" };
       obj5 = { uri: iconURL };
-      tmp6Result = tmp6(onError(6020), obj4);
+      tmp6Result = tmp6(onError(6010), obj4);
     }
     items2 = [tmp6(Card, obj2), ];
     let tmp6Result2 = null;
@@ -348,7 +348,7 @@ export function ConjureAppIdentitySection(nameError) {
     }
   }, items);
   const obj = { spacing: nativeDefault.space.PX_8, children: items2 };
-  const Stack = nameError(6337).Stack;
+  const Stack = nameError(6327).Stack;
   const obj2 = { style: tmp.nameRow, children: items1 };
   items1 = [closure_7(ConjureAppIconTile, { iconURL, size: first1, disabled: flag, onChange: onIconChange, onError: tmp4 }), ];
   const obj3 = { style: tmp.nameField, onLayout: callback, children: closure_7(TextInput, obj4) };
@@ -360,7 +360,7 @@ export function ConjureAppIdentitySection(nameError) {
   let tmp14Result = null;
   const tmp9 = closure_9;
   if (null != first) {
-    const obj5 = { accessibilityLiveRegion: "polite", children: closure_7(nameError(5929).Text, obj6) };
+    const obj5 = { accessibilityLiveRegion: "polite", children: closure_7(nameError(5919).Text, obj6) };
     obj6 = { variant: "body-xs/normal", color: "text-feedback-critical", children: first };
     tmp14Result = tmp14(tmp13, obj5);
   }

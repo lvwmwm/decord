@@ -1,7 +1,7 @@
 // Module ID: 8159
 // Function ID: 8160
 // Name: InlineNotice
-// Dependencies: [19, 17, 21, 7623, 575, 2202, 8160, 6037, 7930, 5930, 5306, 5929, 5944, 1113, 5380, 1360, 5315, 5936, 7988, 7549, 2]
+// Dependencies: [19, 17, 21, 7623, 575, 2202, 8160, 6027, 7930, 5920, 5306, 5919, 5934, 1113, 5370, 1360, 5315, 5926, 7988, 7549, 2]
 // Exports: InlineNotice
 
 // Module 8159 (InlineNotice)
@@ -9,9 +9,9 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1360 */;
 import _modDef2202 from "module_2202" /* 2202 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import TextVariants from "TextVariants" /* 5930 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 6037 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import TextVariants from "TextVariants" /* 5920 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 6027 */;
 import CircleErrorIcon from "CircleErrorIcon" /* 7623 */;
 import CircleCheckIcon from "CircleCheckIcon" /* 7930 */;
 import WarningIcon from "WarningIcon" /* 8160 */;
@@ -43,7 +43,7 @@ function NoticeMessageList(color) {
   const tmp = closure_10();
   dependencyMap = tmp;
   obj = { style: tmp.stack, children: items1 };
-  items1 = [closure_5(variant(5929).Text, { variant, color, children: intro }), ];
+  items1 = [closure_5(variant(5919).Text, { variant, color, children: intro }), ];
   let obj2 = {
     accessibilityRole: "list",
     style: tmp.stack,

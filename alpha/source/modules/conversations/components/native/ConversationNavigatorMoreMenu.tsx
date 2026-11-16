@@ -1,7 +1,7 @@
 // Module ID: 9141
 // Function ID: 9142
 // Name: ConversationNavigatorMoreMenu
-// Dependencies: [19, 17, 9122, 21, 5306, 575, 504, 1113, 9142, 9121, 9124, 6014, 9144, 6029, 7943, 9146, 9148, 7988, 7420, 2]
+// Dependencies: [19, 17, 9122, 21, 5306, 575, 504, 1113, 9142, 9121, 9124, 6004, 9144, 6019, 7943, 9146, 9148, 7988, 7420, 2]
 // Exports: default
 
 // Module 9141 (ConversationNavigatorMoreMenu)
@@ -9,7 +9,7 @@ import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import LinkIcon from "LinkIcon" /* 6029 */;
+import LinkIcon from "LinkIcon" /* 6019 */;
 import MoreHorizontalIcon from "MoreHorizontalIcon" /* 7420 */;
 import IconButton2 from "IconButton" /* 7988 */;
 import ThumbsUpIcon from "ThumbsUpIcon" /* 9142 */;

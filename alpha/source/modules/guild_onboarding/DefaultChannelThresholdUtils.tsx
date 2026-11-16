@@ -1,7 +1,7 @@
 // Module ID: 8133
 // Function ID: 8134
 // Name: DefaultChannelThresholdUtils
-// Dependencies: [5, 5177, 7869, 7218, 1072, 7868, 7084, 1084, 6268, 1113, 2]
+// Dependencies: [5, 5177, 7869, 7218, 1072, 7868, 7084, 1084, 6258, 1113, 2]
 // Exports: checkChattableChannelThresholdMetAfterChannelPermissionDeny, isDefaultChannelThresholdMetAfterDelete
 
 // Module 8133 (DefaultChannelThresholdUtils)

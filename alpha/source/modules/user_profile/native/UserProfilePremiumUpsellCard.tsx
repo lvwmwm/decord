@@ -1,7 +1,7 @@
 // Module ID: 17186
 // Function ID: 17187
 // Name: UserProfilePremiumUpsellCard
-// Dependencies: [19, 1072, 21, 7937, 5306, 17114, 5929, 1502, 7809, 1113, 9606, 7918, 9579, 10954, 1630, 2]
+// Dependencies: [19, 1072, 21, 7937, 5306, 17114, 5919, 1502, 7809, 1113, 9606, 7918, 9579, 10954, 1630, 2]
 // Exports: UserProfilePremiumUpsellCard
 
 // Module 17186 (UserProfilePremiumUpsellCard)

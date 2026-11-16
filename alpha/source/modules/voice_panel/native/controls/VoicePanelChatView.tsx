@@ -1,13 +1,13 @@
 // Module ID: 14676
 // Function ID: 14677
 // Name: VoicePanelChatView
-// Dependencies: [19, 17, 11983, 1072, 21, 5306, 6066, 1108, 14674, 1113, 10867, 11984, 1655, 10271, 9060, 1496, 1630, 14677, 8134, 5488, 12422, 5377, 6328, 14678, 11976, 2]
+// Dependencies: [19, 17, 11983, 1072, 21, 5306, 6056, 1108, 14674, 1113, 10867, 11984, 1655, 10271, 9060, 1496, 1630, 14677, 8134, 5478, 12422, 5367, 6318, 14678, 11976, 2]
 
 // Module 14676 (VoicePanelChatView)
 import react_native from "react-native" /* 17 */;
 import intl2 from "intl" /* 1113 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6066 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6056 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 8134 */;
 import ThemedGradientDefault from "ThemedGradient" /* 10271 */;
 import AssetRegistryDefault from "AssetRegistry" /* 10867 */;

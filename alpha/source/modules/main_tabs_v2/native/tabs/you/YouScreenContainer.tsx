@@ -1,9 +1,9 @@
-// Module ID: 19623
-// Function ID: 19624
+// Module ID: 19625
+// Function ID: 19626
 // Name: YouScreenContainer
-// Dependencies: [19, 17, 10030, 21, 5306, 575, 1630, 18733, 1496, 5495, 5263, 19622, 19624, 1360, 2]
+// Dependencies: [19, 17, 10030, 21, 5306, 575, 1630, 18735, 1496, 5485, 5263, 19624, 19626, 1360, 2]
 
-// Module 19623 (YouScreenContainer)
+// Module 19625 (YouScreenContainer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -11,8 +11,8 @@ import utils_PlatformUtils from "utils/PlatformUtils" /* 1360 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
 import DeviceUtils from "DeviceUtils" /* 5263 */;
 import MainTabsConstants from "MainTabsConstants" /* 10030 */;
-import TabsPerformanceTracker from "TabsPerformanceTracker" /* 18733 */;
-import AppFrameContainerDefault from "AppFrameContainer" /* 19622 */;
+import TabsPerformanceTracker from "TabsPerformanceTracker" /* 18735 */;
+import AppFrameContainerDefault from "AppFrameContainer" /* 19624 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
@@ -45,7 +45,7 @@ const memoResult = react.memo(function YouScreenContainer(route) {
     }
   }
   const width = tmp2(1496)().width;
-  const isChatBesideChannelList = tmp2(5495)().isChatBesideChannelList;
+  const isChatBesideChannelList = tmp2(5485)().isChatBesideChannelList;
   const tmp4Result = DeviceUtils;
   if (tmp4Result.isDuo()) {
     const obj2 = { children: null };
@@ -71,12 +71,12 @@ const memoResult = react.memo(function YouScreenContainer(route) {
       tmp6Result2 = tmp6(tmp8, obj6);
     } else {
       const obj9 = { initialTab };
-      tmp6Result2 = tmp6(tmp2(19624), obj9);
+      tmp6Result2 = tmp6(tmp2(19626), obj9);
     }
     tmp6Result = tmp6(tmp8, obj5);
   } else {
     const obj10 = { initialTab };
-    tmp6Result = tmp6(tmp2(19624), obj10);
+    tmp6Result = tmp6(tmp2(19626), obj10);
   }
   return tmp6Result;
 });

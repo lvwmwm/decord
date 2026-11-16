@@ -1,16 +1,16 @@
 // Module ID: 14770
 // Function ID: 14771
 // Name: NewMessageUserList
-// Dependencies: [32, 19, 17, 5155, 5248, 1388, 10244, 21, 5306, 575, 7073, 5372, 5954, 12, 11782, 1113, 5929, 11786, 10577, 11788, 14771, 2]
+// Dependencies: [32, 19, 17, 5155, 5248, 1388, 10244, 21, 5306, 575, 7073, 5362, 5944, 12, 11782, 1113, 5919, 11786, 10577, 11788, 14771, 2]
 // Exports: default, useSearchGDMNames
 
 // Module 14770 (NewMessageUserList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import UserUtilsDefault from "UserUtils" /* 5372 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import useChannelName from "useChannelName" /* 5954 */;
+import UserUtilsDefault from "UserUtils" /* 5362 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import useChannelName from "useChannelName" /* 5944 */;
 import fuzzysearchDefault from "fuzzysearch" /* 7073 */;
 import UserRowConstants from "UserRowConstants" /* 10244 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -42,7 +42,7 @@ function matchGroupDMRecipients(trimmed1, recipients) {
         obj.return();
         return 1;
       } else {
-        let tmp19Result = tmp19(5372);
+        let tmp19Result = tmp19(5362);
         let globalName = tmp19Result.getGlobalName(tmp4);
         let toLocaleLowerCaseResult1;
         if (globalName != null) {

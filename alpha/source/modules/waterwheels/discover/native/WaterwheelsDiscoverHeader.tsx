@@ -1,19 +1,19 @@
-// Module ID: 19024
-// Function ID: 19025
+// Module ID: 19026
+// Function ID: 19027
 // Name: WaterwheelsDiscoverHeader
-// Dependencies: [19, 17, 10218, 19025, 21, 575, 5306, 19026, 504, 12135, 18225, 5929, 1113, 2569, 5936, 7438, 19033, 2]
+// Dependencies: [19, 17, 10218, 19027, 21, 575, 5306, 19028, 504, 12135, 18227, 5919, 1113, 2569, 5926, 7438, 19035, 2]
 // Exports: default
 
-// Module 19024 (WaterwheelsDiscoverHeader)
+// Module 19026 (WaterwheelsDiscoverHeader)
 import nativeDefault from "native" /* 575 */;
 import _modDef2569 from "module_2569" /* 2569 */;
 import useGameRecordsDefault from "useGameRecords" /* 12135 */;
-import openWaterwheelsInterestPickerDefault from "openWaterwheelsInterestPicker" /* 19026 */;
-import InterestGameCoverDefault from "InterestGameCover" /* 19033 */;
+import openWaterwheelsInterestPickerDefault from "openWaterwheelsInterestPicker" /* 19028 */;
+import InterestGameCoverDefault from "InterestGameCover" /* 19035 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import InterestPickerSessionStore from "InterestPickerSessionStore" /* 10218 */;
-import InterestGamePickerConstants from "InterestGamePickerConstants" /* 19025 */;
+import InterestGamePickerConstants from "InterestGamePickerConstants" /* 19027 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
@@ -88,7 +88,7 @@ export default function WaterwheelsDiscoverHeader() {
   items2 = [closure_8(closure_4, obj3), ];
   if (0 === stateFromStoresArray.length) {
     const obj6 = { variant: "secondary", size: "sm", text: intl3.string(_modDef2569.SCFT8N), icon: closure_7(require("GameControllerIcon").GameControllerIcon, { size: "sm" }), onPress: openPicker };
-    const Button = tmp3(5936).Button;
+    const Button = tmp3(5926).Button;
     intl3 = tmp3(1113).intl;
     tmp9Result = tmp9(Button, obj6);
   } else {
@@ -120,7 +120,7 @@ export default function WaterwheelsDiscoverHeader() {
     const tmp13 = closure_3;
     if (tmp9Result2) {
       const obj11 = { variant: "body-sm/semibold", color: "text-strong", style: tmp2.overflow, children: intl2.formatToPlainString(_modDef2569["OxfP+s"], obj12) };
-      const Text = tmp3(5929).Text;
+      const Text = tmp3(5919).Text;
       intl2 = tmp3(1113).intl;
       obj12 = { count: diff };
       tmp9Result2 = tmp9(Text, obj11);

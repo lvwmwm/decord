@@ -1,22 +1,22 @@
-// Module ID: 20160
-// Function ID: 20161
+// Module ID: 20163
+// Function ID: 20164
 // Name: AcceptInviteManager
-// Dependencies: [502, 5155, 5218, 5177, 6052, 5238, 8775, 1072, 8841, 1099, 5552, 6848, 20161, 2121, 7882, 20162, 10401, 2]
+// Dependencies: [502, 5155, 5218, 5177, 6042, 5238, 8775, 1072, 8841, 1099, 5542, 6838, 20164, 2121, 7882, 20165, 10401, 2]
 
-// Module 20160 (AcceptInviteManager)
+// Module 20163 (AcceptInviteManager)
 import router_utils from "router_utils" /* 1099 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import AcceptInviteConstants from "AcceptInviteConstants" /* 8775 */;
 import InviteTypeUtils from "InviteTypeUtils" /* 8841 */;
 import DisplayedInviteActionCreators from "DisplayedInviteActionCreators" /* 10401 */;
-import FriendInviteUtils from "FriendInviteUtils" /* 20162 */;
+import FriendInviteUtils from "FriendInviteUtils" /* 20165 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import GuildMemberStore from "GuildMemberStore" /* 5218 */;
 import GuildStore from "GuildStore" /* 5177 */;
-import InviteStore from "InviteStore" /* 6052 */;
+import InviteStore from "InviteStore" /* 6042 */;
 import PermissionStore from "PermissionStore" /* 5238 */;
 import Constants from "Constants" /* 1072 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
@@ -158,7 +158,7 @@ class AcceptInviteManager extends AutomaticLifecycleManager {
             obj.hideActionSheet();
             const obj5 = { code: tmp, isRegistration: _isRegistration, deeplinkAttemptId, inviteInstanceId };
             const obj2 = ModalActionCreatorsDefault;
-            obj2.pushLazy(asyncRequire(20161, dependencyMap.paths), obj5, ACCEPT_INVITE_MODAL_KEY);
+            obj2.pushLazy(asyncRequire(20164, dependencyMap.paths), obj5, ACCEPT_INVITE_MODAL_KEY);
             flag = false;
           }
         }

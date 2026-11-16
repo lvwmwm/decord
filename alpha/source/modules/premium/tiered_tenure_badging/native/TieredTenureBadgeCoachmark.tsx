@@ -1,7 +1,7 @@
 // Module ID: 15472
 // Function ID: 15473
 // Name: TieredTenureBadgeCoachmark
-// Dependencies: [32, 19, 17, 1072, 5152, 21, 5306, 10085, 6020, 7361, 5139, 9560, 1113, 8604, 9567, 2]
+// Dependencies: [32, 19, 17, 1072, 5152, 21, 5306, 10085, 6010, 7361, 5139, 9560, 1113, 8604, 9567, 2]
 // Exports: default
 
 // Module 15472 (TieredTenureBadgeCoachmark)

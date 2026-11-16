@@ -1,7 +1,7 @@
 // Module ID: 10803
 // Function ID: 10804
 // Name: useGuildProfileCTA
-// Dependencies: [19, 502, 5218, 5177, 6052, 1388, 1072, 504, 1406, 7677, 10804, 8409, 7689, 2]
+// Dependencies: [19, 502, 5218, 5177, 6042, 1388, 1072, 504, 1406, 7677, 10804, 8409, 7689, 2]
 // Exports: default, getGuildProfileCTAType
 
 // Module 10803 (useGuildProfileCTA)
@@ -12,7 +12,7 @@ import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 5218 */;
 import GuildStore from "GuildStore" /* 5177 */;
-import InviteStore from "InviteStore" /* 6052 */;
+import InviteStore from "InviteStore" /* 6042 */;
 import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;

@@ -1,16 +1,16 @@
 // Module ID: 15482
 // Function ID: 15483
 // Name: UserProfileAboutMeCardCommand
-// Dependencies: [19, 1072, 21, 5306, 575, 5929, 5501, 12575, 1256, 6067, 5552, 12581, 8724, 5985, 2]
+// Dependencies: [19, 1072, 21, 5306, 575, 5919, 5491, 12575, 1256, 6057, 5542, 12581, 8724, 5975, 2]
 
 // Module 15482 (UserProfileAboutMeCardCommand)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5985 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6067 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5975 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6057 */;
 import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8724 */;
 import MarkupReactCommandRule from "MarkupReactCommandRule" /* 12575 */;
 import navigateToLastChannelDefault from "navigateToLastChannel" /* 12581 */;

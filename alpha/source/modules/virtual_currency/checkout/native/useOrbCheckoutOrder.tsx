@@ -1,12 +1,12 @@
 // Module ID: 15507
 // Function ID: 15508
 // Name: useOrbCheckoutOrder
-// Dependencies: [5, 32, 19, 6050, 1083, 15508, 9597, 9724, 5118, 5126, 2]
+// Dependencies: [5, 32, 19, 6040, 1083, 15508, 9597, 9724, 5118, 5126, 2]
 // Exports: useOrbCheckoutOrder
 
 // Module 15507 (useOrbCheckoutOrder)
 import Constants from "Constants" /* 1083 */;
-import PaymentConstants from "PaymentConstants" /* 6050 */;
+import PaymentConstants from "PaymentConstants" /* 6040 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;

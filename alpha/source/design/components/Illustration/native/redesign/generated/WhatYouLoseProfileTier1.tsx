@@ -1,13 +1,13 @@
 // Module ID: 9959
 // Function ID: 9960
 // Name: WhatYouLoseProfileTier1
-// Dependencies: [19, 21, 8183, 9960, 9961, 9962, 5313, 6020, 2]
+// Dependencies: [19, 21, 8183, 9960, 9961, 9962, 5313, 6010, 2]
 // Exports: WhatYouLoseProfileTier1, getWhatYouLoseProfileTier1Source, useWhatYouLoseProfileTier1Source
 
 // Module 9959 (WhatYouLoseProfileTier1)
 import Fragment from "Fragment" /* 21 */;
 import shared from "shared" /* 5313 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import _mod8183 from "module_8183" /* 8183 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

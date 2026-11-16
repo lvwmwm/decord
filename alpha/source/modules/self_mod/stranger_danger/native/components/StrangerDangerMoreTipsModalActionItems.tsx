@@ -1,13 +1,13 @@
 // Module ID: 12057
 // Function ID: 12058
 // Name: StrangerDangerMoreTipsModalActionItems
-// Dependencies: [32, 19, 5248, 1388, 10896, 21, 504, 5372, 12038, 8137, 1113, 7635, 7633, 9157, 7746, 12058, 2]
+// Dependencies: [32, 19, 5248, 1388, 10896, 21, 504, 5362, 12038, 8137, 1113, 7635, 7633, 9157, 7746, 12058, 2]
 // Exports: default
 
 // Module 12057 (StrangerDangerMoreTipsModalActionItems)
 import Fragment2 from "Fragment" /* 21 */;
 import intl5 from "intl" /* 1113 */;
-import UserUtilsDefault from "UserUtils" /* 5372 */;
+import UserUtilsDefault from "UserUtils" /* 5362 */;
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 8137 */;
 import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10896 */;
 import SafetyWarningUtils from "SafetyWarningUtils" /* 12038 */;

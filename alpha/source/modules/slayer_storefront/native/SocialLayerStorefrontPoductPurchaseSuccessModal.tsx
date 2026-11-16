@@ -1,7 +1,7 @@
 // Module ID: 11792
 // Function ID: 11793
 // Name: SocialLayerStorefrontPoductPurchaseSuccessModal
-// Dependencies: [32, 717, 19, 17, 5307, 7070, 7247, 1072, 21, 5306, 575, 1655, 5939, 5548, 5554, 1496, 504, 8560, 7244, 5929, 5936, 1113, 6020, 5893, 7415, 7500, 7549, 9515, 7259, 7919, 11793, 7937, 1256, 5899, 11729, 4031, 10386, 5372, 2]
+// Dependencies: [32, 717, 19, 17, 5307, 7070, 7247, 1072, 21, 5306, 575, 1655, 5929, 5538, 5544, 1496, 504, 8560, 7244, 5919, 5926, 1113, 6010, 5883, 7415, 7500, 7549, 9515, 7259, 7919, 11793, 7937, 1256, 5889, 11729, 4031, 10386, 5362, 2]
 // Exports: SocialLayerStorefrontProductGiftPurchaseSuccessModal, SocialLayerStorefrontProductSelfPurchaseSuccessModal
 
 // Module 11792 (SocialLayerStorefrontPoductPurchaseSuccessModal)
@@ -9,8 +9,8 @@ import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import _modDef4031 from "module_4031" /* 4031 */;
-import UserUtilsDefault from "UserUtils" /* 5372 */;
-import HapticUtils from "HapticUtils" /* 5554 */;
+import UserUtilsDefault from "UserUtils" /* 5362 */;
+import HapticUtils from "HapticUtils" /* 5544 */;
 import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7244 */;
 import SocialLayerStorefrontConstants from "SocialLayerStorefrontConstants" /* 7247 */;
 import XSmallIcon from "XSmallIcon" /* 7549 */;

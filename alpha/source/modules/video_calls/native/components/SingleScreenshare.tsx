@@ -1,13 +1,13 @@
 // Module ID: 13066
 // Function ID: 13067
 // Name: SingleScreenshare
-// Dependencies: [19, 11003, 21, 5306, 575, 5899, 13067, 6066, 2]
+// Dependencies: [19, 11003, 21, 5306, 575, 5889, 13067, 6056, 2]
 // Exports: default
 
 // Module 13066 (SingleScreenshare)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6066 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6056 */;
 import react from "react" /* 19 */;
 import ChannelCallStore from "ChannelCallStore" /* 11003 */;
 import createStyles from "createStyles" /* 5306 */;
@@ -27,7 +27,7 @@ export default function SingleScreenshare(channel) {
   channel = channel.channel;
   let participant = channel.participant;
   const tmp = closure_5();
-  channel(5899)(() => {
+  channel(5889)(() => {
     closure_1_2();
   });
   let obj = {

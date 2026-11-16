@@ -1,7 +1,7 @@
 // Module ID: 12722
 // Function ID: 12723
 // Name: useShouldForcePipOrientation
-// Dependencies: [5154, 7016, 502, 5983, 12723, 504, 7025, 2146, 10041, 2]
+// Dependencies: [5154, 7016, 502, 5973, 12723, 504, 7025, 2146, 10041, 2]
 // Exports: useShouldForcePipOrientation
 
 // Module 12722 (useShouldForcePipOrientation)
@@ -10,7 +10,7 @@ import usePipVideoOrStreamDefault from "usePipVideoOrStream" /* 12723 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 7016 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CallConstants from "CallConstants" /* 5983 */;
+import CallConstants from "CallConstants" /* 5973 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;

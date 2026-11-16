@@ -1,15 +1,15 @@
-// Module ID: 19785
-// Function ID: 19786
+// Module ID: 19787
+// Function ID: 19788
 // Name: BurstReactionAnimationContainer
-// Dependencies: [32, 19, 17, 5152, 21, 5306, 575, 5264, 5554, 5555, 572, 1655, 5548, 1708, 10568, 5139, 1187, 5921, 5929, 1113, 5377, 2]
+// Dependencies: [32, 19, 17, 5152, 21, 5306, 575, 5264, 5544, 5545, 572, 1655, 5538, 1708, 10568, 5139, 1187, 5911, 5919, 1113, 5367, 2]
 // Exports: default
 
-// Module 19785 (BurstReactionAnimationContainer)
+// Module 19787 (BurstReactionAnimationContainer)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
 import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 5264 */;
-import native from "native" /* 5377 */;
+import native from "native" /* 5367 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

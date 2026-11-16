@@ -1,12 +1,12 @@
 // Module ID: 11397
 // Function ID: 11398
 // Name: executeCommand
-// Dependencies: [5, 6969, 2189, 5177, 8872, 1388, 9007, 1072, 5311, 5985, 572, 8864, 8724, 2119, 11398, 11400, 38, 11401, 6067, 9005, 11153, 5252, 1255, 8852, 11402, 6381, 9016, 11403, 11405, 7350, 8851, 8660, 8890, 8875, 8846, 1113, 9027, 2]
+// Dependencies: [5, 6969, 2189, 5177, 8872, 1388, 9007, 1072, 5311, 5975, 572, 8864, 8724, 2119, 11398, 11400, 38, 11401, 6057, 9005, 11153, 5252, 1255, 8852, 11402, 6371, 9016, 11403, 11405, 7350, 8851, 8660, 8890, 8875, 8846, 1113, 9027, 2]
 // Exports: default, retryCommandMessage
 
 // Module 11397 (executeCommand)
 import MessageConstants from "MessageConstants" /* 5311 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5985 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5975 */;
 import UploadUtils from "UploadUtils" /* 8846 */;
 import FileUtils from "FileUtils" /* 8875 */;
 import UploadLimits from "UploadLimits" /* 8890 */;
@@ -758,7 +758,7 @@ function enqueueCommandInteraction(interactionLifecycleOptions) {
     }
     const obj4 = { messageId: null, onCreate: null, onSuccess: null, onFailure: null, data: obj5 };
     ({ messageId: obj3.messageId, onCreate: obj3.onCreate, onSuccess: obj3.onSuccess, onFailure: obj3.onFailure } = interactionLifecycleOptions);
-    obj5 = { interactionType: onMessageSuccess(6381).InteractionTypes.APPLICATION_COMMAND, applicationId, channelId: id };
+    obj5 = { interactionType: onMessageSuccess(6371).InteractionTypes.APPLICATION_COMMAND, applicationId, channelId: id };
     const addQueued = InteractionActionCreatorsAll.addQueued;
     const nonce2 = message.nonce;
     InteractionActionCreatorsAll;

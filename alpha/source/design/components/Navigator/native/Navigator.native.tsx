@@ -1,7 +1,7 @@
 // Module ID: 7490
 // Function ID: 7491
 // Name: Navigator
-// Dependencies: [32, 19, 17, 21, 5306, 575, 7491, 7492, 7493, 5902, 7551, 1630, 5929, 1113, 12, 7584, 1503, 6335, 5547, 7590, 7500, 1243, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 575, 7491, 7492, 7493, 5892, 7551, 1630, 5919, 1113, 12, 7584, 1503, 6325, 5537, 7590, 7500, 1243, 2]
 // Exports: Navigator, useAccessibilityNativeStackOptions, useNavigatorScreens
 
 // Module 7490 (Navigator)
@@ -9,8 +9,8 @@ import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import SentryInitUtils from "SentryInitUtils" /* 1243 */;
 import Link from "Link" /* 1503 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import BackPressTracking from "BackPressTracking" /* 6335 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import BackPressTracking from "BackPressTracking" /* 6325 */;
 import useNavigatorShouldCrossfade from "useNavigatorShouldCrossfade" /* 7491 */;
 import react2 from "react" /* 7492 */;
 import NavigatorHeader from "NavigatorHeader" /* 7493 */;
@@ -281,7 +281,7 @@ function WrappedNavigationStack(arg0) {
     }
     return tmp2;
   }), 1)[0];
-  const tmp5 = navigationContainerRef(5547)();
+  const tmp5 = navigationContainerRef(5537)();
   const obj3 = useNavigationTheme;
   let navigationTheme1 = obj3.useNavigationTheme(tmp5);
   const NavigationIndependentTree = Link.NavigationIndependentTree;

@@ -1,7 +1,7 @@
 // Module ID: 15302
 // Function ID: 15303
 // Name: FistBumpSpotIllustration
-// Dependencies: [19, 21, 15303, 15304, 15305, 7755, 6020, 2]
+// Dependencies: [19, 21, 15303, 15304, 15305, 7755, 6010, 2]
 // Exports: FistBumpSpotIllustration
 
 // Module 15302 (FistBumpSpotIllustration)

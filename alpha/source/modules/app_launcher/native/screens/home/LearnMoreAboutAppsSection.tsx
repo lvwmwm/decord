@@ -1,7 +1,7 @@
 // Module ID: 13426
 // Function ID: 13427
 // Name: LearnMoreAboutAppsSection
-// Dependencies: [19, 17, 1072, 21, 5306, 575, 6012, 2188, 1113, 13427, 12579, 5929, 7428, 2]
+// Dependencies: [19, 17, 1072, 21, 5306, 575, 6002, 2188, 1113, 13427, 12579, 5919, 7428, 2]
 // Exports: default
 
 // Module 13426 (LearnMoreAboutAppsSection)
@@ -10,8 +10,8 @@ import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import LinkingDefault from "Linking" /* 6012 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import LinkingDefault from "Linking" /* 6002 */;
 import Pressables from "Pressables" /* 7428 */;
 import AppLauncherTypes from "AppLauncherTypes" /* 12579 */;
 import TrackSectionHeaderDefault from "TrackSectionHeader" /* 13427 */;

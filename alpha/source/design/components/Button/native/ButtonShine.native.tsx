@@ -1,16 +1,16 @@
-// Module ID: 5948
-// Function ID: 5949
+// Module ID: 5938
+// Function ID: 5939
 // Name: ButtonShine
-// Dependencies: [32, 19, 21, 5943, 671, 5313, 1655, 5548, 5306, 2]
+// Dependencies: [32, 19, 21, 5933, 671, 5313, 1655, 5538, 5306, 2]
 // Exports: ButtonShine
 
-// Module 5948 (ButtonShine)
+// Module 5938 (ButtonShine)
 import Fragment from "Fragment" /* 21 */;
 import _modDef671 from "module_671" /* 671 */;
 import _mod1655 from "module_1655" /* 1655 */;
 import shared from "shared" /* 5313 */;
-import timing_timing from "timing/timing" /* 5548 */;
-import ButtonHooks from "ButtonHooks" /* 5943 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import ButtonHooks from "ButtonHooks" /* 5933 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;

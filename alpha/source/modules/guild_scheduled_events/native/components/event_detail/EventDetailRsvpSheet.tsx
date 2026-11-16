@@ -1,7 +1,7 @@
 // Module ID: 15930
 // Function ID: 15931
 // Name: EventDetailRsvpSheet
-// Dependencies: [19, 17, 6068, 1388, 1083, 21, 5306, 575, 6826, 8444, 15931, 5929, 1113, 8106, 6020, 7918, 504, 1187, 10930, 5372, 8476, 15932, 5570, 7418, 7888, 2]
+// Dependencies: [19, 17, 6058, 1388, 1083, 21, 5306, 575, 6816, 8444, 15931, 5919, 1113, 8106, 6010, 7918, 504, 1187, 10930, 5362, 8476, 15932, 5560, 7418, 7888, 2]
 // Exports: default
 
 // Module 15930 (EventDetailRsvpSheet)
@@ -9,20 +9,20 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import intl2 from "intl" /* 1113 */;
-import BottomSheetModal from "BottomSheetModal" /* 5570 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import BottomSheetModal from "BottomSheetModal" /* 5560 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import _mod8106 from "module_8106" /* 8106 */;
 import StageSparkleDefault from "StageSparkle" /* 8444 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;
 import AssetRegistryDefault from "AssetRegistry" /* 15931 */;
 import EventDetailTypes from "EventDetailTypes" /* 15932 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 6068 */;
+import PresenceStore from "PresenceStore" /* 6058 */;
 import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
-import TextStyles from "TextStyles" /* 6826 */;
+import TextStyles from "TextStyles" /* 6816 */;
 import size_mod from "module_2" /* 2 */;
 
 let item;
@@ -155,7 +155,7 @@ const memoResult = react.memo(function UserRow(eventUser) {
     nick = member.nick;
   }
   if (nick == null) {
-    const tmp2Result2 = analyticsLocations(5372);
+    const tmp2Result2 = analyticsLocations(5362);
     nick = tmp2Result2.getName(eventUser.user);
   }
   ({ userName: obj5.usernameStyle, userName: obj5.nicknameStyle } = tmp);

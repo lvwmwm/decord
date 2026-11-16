@@ -1,7 +1,7 @@
 // Module ID: 9502
 // Function ID: 9503
 // Name: CutoutableAvatarDecoration
-// Dependencies: [19, 5307, 21, 563, 1414, 9503, 6020, 2]
+// Dependencies: [19, 5307, 21, 563, 1414, 9503, 6010, 2]
 // Exports: default
 
 // Module 9502 (CutoutableAvatarDecoration)

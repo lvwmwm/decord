@@ -1,13 +1,13 @@
 // Module ID: 9615
 // Function ID: 9616
 // Name: showSpendingLimitReachedAlert
-// Dependencies: [6757, 5126, 9616, 6269, 1113, 9620, 8526, 6014, 2701, 2]
+// Dependencies: [6747, 5126, 9616, 6259, 1113, 9620, 8526, 6004, 2701, 2]
 // Exports: isSpendingLimitError, showSpendingLimitReachedAlert
 
 // Module 9615 (showSpendingLimitReachedAlert)
 import _modDef2701 from "module_2701" /* 2701 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6269 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 6757 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6259 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 6747 */;
 import LayerActionCreators from "LayerActionCreators" /* 8526 */;
 import openLinkedUsersChannelDefault from "openLinkedUsersChannel" /* 9620 */;
 import size from "module_2" /* 2 */;

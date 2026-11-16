@@ -1,14 +1,14 @@
 // Module ID: 11274
 // Function ID: 11275
 // Name: EmojiPickerListRow
-// Dependencies: [19, 17, 1192, 9546, 1228, 21, 5306, 575, 1380, 671, 8092, 11275, 7428, 6020, 5313, 7895, 7896, 1187, 11276, 2]
+// Dependencies: [19, 17, 1192, 9546, 1228, 21, 5306, 575, 1380, 671, 8092, 11275, 7428, 6010, 5313, 7895, 7896, 1187, 11276, 2]
 
 // Module 11274 (EmojiPickerListRow)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1228 */;
 import shared from "shared" /* 5313 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import Pressables from "Pressables" /* 7428 */;
 import LockIcon from "LockIcon" /* 8092 */;
 import getEmojiItemUrlDefault from "getEmojiItemUrl" /* 11275 */;

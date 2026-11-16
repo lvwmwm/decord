@@ -1,7 +1,7 @@
 // Module ID: 14136
 // Function ID: 14137
 // Name: GuildSettingsModalMemberEdit
-// Dependencies: [19, 17, 5173, 5213, 5218, 5212, 5177, 5238, 1388, 14137, 1072, 21, 5306, 575, 5243, 12, 7733, 14138, 7443, 1113, 7746, 5377, 7427, 7493, 5372, 5929, 10870, 5225, 8106, 6337, 1187, 7619, 14139, 14140, 6014, 14145, 1502, 504, 38, 11418, 14150, 5912, 14151, 14155, 5917, 7490, 2]
+// Dependencies: [19, 17, 5173, 5213, 5218, 5212, 5177, 5238, 1388, 14137, 1072, 21, 5306, 575, 5243, 12, 7733, 14138, 7443, 1113, 7746, 5367, 7427, 7493, 5362, 5919, 10870, 5225, 8106, 6327, 1187, 7619, 14139, 14140, 6004, 14145, 1502, 504, 38, 11418, 14150, 5902, 14151, 14155, 5907, 7490, 2]
 // Exports: default
 
 // Module 14136 (GuildSettingsModalMemberEdit)
@@ -13,10 +13,10 @@ import native from "native" /* 1187 */;
 import GuildRoleRecord from "GuildRoleRecord" /* 5213 */;
 import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 5225 */;
 import PermissionUtilsAll from "PermissionUtils" /* 5243 */;
-import UserUtilsDefault from "UserUtils" /* 5372 */;
-import native2 from "native" /* 5377 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import ToastUtils from "ToastUtils" /* 6014 */;
+import UserUtilsDefault from "UserUtils" /* 5362 */;
+import native2 from "native" /* 5367 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import ToastUtils from "ToastUtils" /* 6004 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7427 */;
 import NavigatorHeader2 from "NavigatorHeader" /* 7493 */;
 import BotTagDefault from "BotTag" /* 10870 */;
@@ -484,7 +484,7 @@ class GuildSettingsModalMemberEdit extends PureComponent2 {
       items1 = [tmp.formContent, self.props.contentContainerStyle];
       const Form = tmp17(8106).Form;
       obj11 = { style: tmp.stackPadding, spacing: nativeDefault.space.PX_24, children: items2 };
-      Stack = tmp17(6337).Stack;
+      Stack = tmp17(6327).Stack;
       const obj12 = { hasIcons: true, children: authStore4(TableRow3, obj13) };
       const TableRowGroup3 = tmp17(7746).TableRowGroup;
       obj13 = { icon: authStore4(native.Avatar, obj14), label: tmp14Result };
@@ -565,7 +565,7 @@ export default function MemberModalEdit(onClose) {
   onClose = onClose.onClose;
   const onRemove = onClose.onRemove;
   ({ guildId, userId } = onClose);
-  let tmp = onRemove(5917)(guildId);
+  let tmp = onRemove(5907)(guildId);
   let closure_2 = tmp;
   const items = [onClose, onRemove, tmp];
   const memo = react.useMemo(() => {

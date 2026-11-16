@@ -1,7 +1,7 @@
 // Module ID: 14968
 // Function ID: 14969
 // Name: VoiceMessageOverlay
-// Dependencies: [32, 19, 17, 5307, 5155, 14570, 14571, 1072, 13804, 21, 1655, 1187, 5929, 12, 8263, 5306, 575, 6961, 504, 5902, 7416, 1113, 5548, 1708, 8066, 11150, 14969, 14665, 14573, 11071, 13048, 14823, 5568, 6331, 1108, 14176, 12894, 14668, 14970, 7988, 6041, 14662, 13800, 6031, 2]
+// Dependencies: [32, 19, 17, 5307, 5155, 14570, 14571, 1072, 13804, 21, 1655, 1187, 5919, 12, 8263, 5306, 575, 6951, 504, 5892, 7416, 1113, 5538, 1708, 8066, 11150, 14969, 14665, 14573, 11071, 13048, 14823, 5558, 6321, 1108, 14176, 12894, 14668, 14970, 7988, 6031, 14662, 13800, 6021, 2]
 
 // Module 14968 (VoiceMessageOverlay)
 import get_initialized from "get initialized" /* 504 */;
@@ -11,10 +11,10 @@ import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import intl7 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5568 */;
-import useToken from "useToken" /* 5902 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import LegacyTokens from "LegacyTokens" /* 6961 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5558 */;
+import useToken from "useToken" /* 5892 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import LegacyTokens from "LegacyTokens" /* 6951 */;
 import useRefValueDefault from "useRefValue" /* 7416 */;
 import inlineStyles from "inlineStyles" /* 8263 */;
 import ChatInputConstants from "ChatInputConstants" /* 13804 */;
@@ -41,7 +41,7 @@ let hasOwnProperty;
 let map1;
 let metroRequire;
 let tmp;
-const react_native = tmp(6331);
+const react_native = tmp(6321);
 function useDerivedColors(voiceMessageAnimationState, token, RED_400, token2, token3) {
   let _undefined;
   let _undefined2;
@@ -502,17 +502,17 @@ const memoResult = react.memo(function VoiceMessageEllipse(arg0) {
   let tmp7;
   let useReducedMotion;
   let voiceMessageAnimationState;
-  const f110546 = (currWaveHeight) => currWaveHeight.currWaveHeight;
+  const f110560 = (currWaveHeight) => currWaveHeight.currWaveHeight;
   ({ radius, voiceMessageAnimationState } = arg0);
   ({ opacity, height, offsetThreshold } = arg0);
   let obj = get_initialized;
   items = [AccessibilityStore];
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion, []);
-  const items1 = [closure_21, stateFromStores, useVoiceMessagesUIStore(f110546)];
+  const items1 = [closure_21, stateFromStores, useVoiceMessagesUIStore(f110560)];
   let c0;
   let c1;
   [tmp5, tmp6, tmp7] = items1;
-  const tmp4 = useVoiceMessagesUIStore(f110546);
+  const tmp4 = useVoiceMessagesUIStore(f110560);
   const obj2 = _mod1655;
   class VoiceMessageOverlayTsx1 {
     constructor() {
@@ -741,7 +741,7 @@ let closure_43 = react.memo(function VoiceMessageOverlay(channelId) {
   ({ voiceMessageAnimationState, exiting } = channelId);
   let ref;
   let tmp = channelId;
-  let obj = channelId(5902);
+  let obj = channelId(5892);
   const token = obj.useToken(ref(575).modules.mobile.CHAT_INPUT_FLOATING_INLINE_FULL_GRADIENT_HEIGHT);
   const tmp5 = closure_19();
   const bottomInset = ref(14665)().bottomInset;
@@ -887,7 +887,7 @@ let closure_43 = react.memo(function VoiceMessageOverlay(channelId) {
   obj7 = { isRecording: tmp7, initialAnimation: sharedValue, leftAccessory: closure_13(IconButton, obj8), rightAccessory: closure_13(tmp3Result2, obj9) };
   tmp3Result = tmp3(14970);
   obj8 = {
-    icon: ref(6041),
+    icon: ref(6031),
     variant: str,
     size: "sm",
     maxFontSizeMultiplier: 2,
@@ -928,7 +928,7 @@ let closure_43 = react.memo(function VoiceMessageOverlay(channelId) {
   }
   ({ floatingSendButton: obj14.style, floatingSendButtonActive: obj14.activeStyle, floatingSendButtonIconActive: obj14.activeIconStyle } = tmp5);
   if (tmp7) {
-    SendMessageIcon = tmp(6031).SendMessageIcon;
+    SendMessageIcon = tmp(6021).SendMessageIcon;
   }
   const obj10 = { children: items13 };
   intl2 = tmp(1113).intl;

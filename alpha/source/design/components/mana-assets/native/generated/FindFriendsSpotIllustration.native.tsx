@@ -1,7 +1,7 @@
 // Module ID: 15006
 // Function ID: 15007
 // Name: FindFriendsSpotIllustration
-// Dependencies: [19, 21, 15007, 15008, 15009, 7755, 6020, 2]
+// Dependencies: [19, 21, 15007, 15008, 15009, 7755, 6010, 2]
 // Exports: FindFriendsSpotIllustration
 
 // Module 15006 (FindFriendsSpotIllustration)

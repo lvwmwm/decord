@@ -1,7 +1,7 @@
 // Module ID: 10348
 // Function ID: 10349
 // Name: GameProfileSummary
-// Dependencies: [19, 17, 21, 5306, 10349, 10350, 10286, 1113, 5929, 10378, 2]
+// Dependencies: [19, 17, 21, 5306, 10349, 10350, 10286, 1113, 5919, 10378, 2]
 // Exports: default
 
 // Module 10348 (GameProfileSummary)

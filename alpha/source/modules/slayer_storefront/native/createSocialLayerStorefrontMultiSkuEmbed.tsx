@@ -1,7 +1,7 @@
 // Module ID: 15576
 // Function ID: 15577
 // Name: createSocialLayerStorefrontMultiSkuEmbed
-// Dependencies: [2165, 7070, 7246, 1072, 8842, 11891, 12435, 12436, 14924, 12434, 15577, 9170, 15578, 6766, 7244, 2]
+// Dependencies: [2165, 7070, 7246, 1072, 8842, 11891, 12435, 12436, 14924, 12434, 15577, 9170, 15578, 6756, 7244, 2]
 // Exports: createSocialLayerStorefrontMultiSkuEmbed
 
 // Module 15576 (createSocialLayerStorefrontMultiSkuEmbed)
@@ -74,7 +74,7 @@ export function createSocialLayerStorefrontMultiSkuEmbed(arg0) {
               assetURL = undefined;
               tmpResult4 = application(15578);
               if (null != lightThemeLogoAssetId) {
-                const tmpResult5 = application(6766);
+                const tmpResult5 = application(6756);
                 assetURL = tmpResult5.getAssetURL(application.id, lightThemeLogoAssetId, 128);
               }
               const tmpResult6 = application(7244);

@@ -1,7 +1,7 @@
 // Module ID: 15890
 // Function ID: 15891
 // Name: InstantInviteEmptyState
-// Dependencies: [19, 17, 8462, 21, 5306, 575, 504, 1187, 15891, 1113, 7647, 7428, 10569, 5929, 8463, 5936, 2]
+// Dependencies: [19, 17, 8462, 21, 5306, 575, 504, 1187, 15891, 1113, 7647, 7428, 10569, 5919, 8463, 5926, 2]
 // Exports: default
 
 // Module 15890 (InstantInviteEmptyState)
@@ -66,7 +66,7 @@ export default function InstantInviteEmptyState(link) {
   items1[1] = closure_6(View, obj4);
   const obj7 = { style: tmp.expireCaption, variant: "body-xs/medium", color: "text-muted", children: formatResult };
   formatResult = null;
-  const Text = tmp2(5929).Text;
+  const Text = tmp2(5919).Text;
   if (null != stateFromStores) {
     let dqPWMN;
     const tmp8Result = InstantInviteUtilsDefault;
@@ -100,7 +100,7 @@ export default function InstantInviteEmptyState(link) {
   }
   items1[2] = closure_5(Text, obj7);
   const obj9 = { text: intl5.string(stateFromStores(1113).t.Ej3B3Y), onPress: onShare };
-  const Button = tmp2(5936).Button;
+  const Button = tmp2(5926).Button;
   intl5 = tmp2(1113).intl;
   items1[3] = closure_5(Button, obj9);
   return closure_6(View, obj2);

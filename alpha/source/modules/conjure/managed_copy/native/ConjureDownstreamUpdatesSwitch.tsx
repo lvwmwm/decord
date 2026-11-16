@@ -1,7 +1,7 @@
 // Module ID: 13204
 // Function ID: 13205
 // Name: ConjureDownstreamUpdatesSwitch
-// Dependencies: [32, 19, 17, 21, 5306, 575, 13192, 7391, 7746, 7954, 1113, 4131, 5929, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 575, 13192, 7391, 7746, 7954, 1113, 4131, 5919, 2]
 // Exports: default
 
 // Module 13204 (ConjureDownstreamUpdatesSwitch)
@@ -62,7 +62,7 @@ export default function ConjureDownstreamUpdatesSwitch(projectId) {
     if (first) {
       const obj6 = { accessibilityRole: "alert", children: closure_6(Text, obj11) };
       obj11 = { variant: "body-sm/normal", color: "text-feedback-critical", children: intl3.string(tmp12(4131)["UU+oef"]) };
-      Text = tmp2(5929).Text;
+      Text = tmp2(5919).Text;
       intl3 = tmp2(1113).intl;
       tmp11Result = tmp11(tmp10, obj6);
     } else {

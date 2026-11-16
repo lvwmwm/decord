@@ -1,15 +1,15 @@
-// Module ID: 18372
-// Function ID: 18373
+// Module ID: 18374
+// Function ID: 18375
 // Name: TakeActionScreen
-// Dependencies: [5, 32, 19, 17, 5248, 1388, 12024, 21, 5306, 575, 504, 12062, 12305, 1502, 8137, 6915, 12038, 12063, 6015, 1113, 6014, 5936, 12313, 11329, 8050, 8394, 6012, 5929, 2]
+// Dependencies: [5, 32, 19, 17, 5248, 1388, 12024, 21, 5306, 575, 504, 12062, 12305, 1502, 8137, 6905, 12038, 12063, 6005, 1113, 6004, 5926, 12313, 11329, 8050, 8394, 6002, 5919, 2]
 // Exports: default
 
-// Module 18372 (TakeActionScreen)
+// Module 18374 (TakeActionScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 19 */;
 import nativeDefault from "native" /* 575 */;
-import LinkingDefault from "Linking" /* 6012 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 6915 */;
+import LinkingDefault from "Linking" /* 6002 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 6905 */;
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 8137 */;
 import SafetyWarningUtils from "SafetyWarningUtils" /* 12038 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

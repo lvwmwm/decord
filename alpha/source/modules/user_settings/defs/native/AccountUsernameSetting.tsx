@@ -1,14 +1,14 @@
 // Module ID: 17229
 // Function ID: 17230
 // Name: AccountUsernameSetting
-// Dependencies: [19, 1388, 9202, 1072, 21, 504, 5372, 14175, 5929, 12406, 1113, 17230, 2]
+// Dependencies: [19, 1388, 9202, 1072, 21, 504, 5362, 14175, 5919, 12406, 1113, 17230, 2]
 
 // Module 17229 (AccountUsernameSetting)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import UserUtilsDefault from "UserUtils" /* 5372 */;
+import UserUtilsDefault from "UserUtils" /* 5362 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;
 import AutomodQuarantineUtils from "AutomodQuarantineUtils" /* 14175 */;
 import react from "react" /* 19 */;
@@ -19,7 +19,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 
 let tmp;
-const Text_Text = tmp(5929);
+const Text_Text = tmp(5919);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const UserSettingsSections = Constants.UserSettingsSections;
 const jsx = Fragment.jsx;

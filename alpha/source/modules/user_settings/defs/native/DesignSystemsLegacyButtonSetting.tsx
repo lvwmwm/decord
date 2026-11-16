@@ -1,9 +1,9 @@
-// Module ID: 18411
-// Function ID: 18412
+// Module ID: 18413
+// Function ID: 18414
 // Name: DesignSystemsLegacyButtonSetting
-// Dependencies: [9202, 1072, 12406, 18412, 2]
+// Dependencies: [9202, 1072, 12406, 18414, 2]
 
-// Module 18411 (DesignSystemsLegacyButtonSetting)
+// Module 18413 (DesignSystemsLegacyButtonSetting)
 import Constants from "Constants" /* 1072 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;
 import SettingBuilders from "SettingBuilders" /* 12406 */;

@@ -1,16 +1,16 @@
-// Module ID: 20748
-// Function ID: 20749
+// Module ID: 20751
+// Function ID: 20752
 // Name: GuildRoleSubscriptionBenefitEditorModalStateStore
 // Dependencies: [1258, 1263, 5221, 2]
 // Exports: initializeImperatively, resetImperatively, useDescriptionState, useEmojiIdState, useEmojiNameState, useNameState, useRefIdState
 
-// Module 20748 (GuildRoleSubscriptionBenefitEditorModalStateStore)
+// Module 20751 (GuildRoleSubscriptionBenefitEditorModalStateStore)
 import react_native from "react-native" /* 1263 */;
 import _slicedToArray from "_slicedToArray" /* 5221 */;
 import module_1258 from "module_1258" /* 1258 */;
 import size from "module_2" /* 2 */;
 
-let closure_2 = Object.freeze({ name: "", emojiId: "channel_id", emojiName: "padding", description: "t", refId: "padding" });
+let closure_2 = Object.freeze({ name: "", emojiId: "channelId", emojiName: "space", description: "flexDirection", refId: "channel_id" });
 let closure_3 = module_1258.createWithEqualityFn((arg0) => {
   let closure_0 = arg0;
   let obj = {

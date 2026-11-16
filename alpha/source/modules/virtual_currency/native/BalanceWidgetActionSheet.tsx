@@ -1,7 +1,7 @@
 // Module ID: 10055
 // Function ID: 10056
 // Name: BalanceWidgetActionSheet
-// Dependencies: [19, 17, 1072, 5152, 21, 10056, 10057, 10058, 1113, 6008, 2188, 5320, 5902, 575, 1256, 5348, 5139, 5377, 5566, 6020, 9730, 5901, 10059, 9442, 5929, 5936, 5306, 1380, 2]
+// Dependencies: [19, 17, 1072, 5152, 21, 10056, 10057, 10058, 1113, 5998, 2188, 5320, 5892, 575, 1256, 5338, 5139, 5367, 5556, 6010, 9730, 5891, 10059, 9442, 5919, 5926, 5306, 1380, 2]
 // Exports: default
 
 // Module 10055 (BalanceWidgetActionSheet)
@@ -11,7 +11,7 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import dismissible_content from "dismissible_content" /* 5139 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5348 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5338 */;
 import _mod10056 from "module_10056" /* 10056 */;
 import _mod10057 from "module_10057" /* 10057 */;
 import _mod10058 from "module_10058" /* 10058 */;

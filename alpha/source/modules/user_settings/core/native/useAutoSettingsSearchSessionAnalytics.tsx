@@ -1,12 +1,12 @@
-// Module ID: 19773
-// Function ID: 19774
+// Module ID: 19775
+// Function ID: 19776
 // Name: useAutoSettingsSearchSessionAnalytics
-// Dependencies: [19, 2120, 17215, 504, 1092, 6836, 5899, 7814, 2]
+// Dependencies: [19, 2120, 17215, 504, 1092, 6826, 5889, 7814, 2]
 // Exports: useAutoSettingsSearchSessionAnalytics
 
-// Module 19773 (useAutoSettingsSearchSessionAnalytics)
-import useMountEffectDefault from "useMountEffect" /* 5899 */;
-import usePreviousDefault from "usePrevious" /* 6836 */;
+// Module 19775 (useAutoSettingsSearchSessionAnalytics)
+import useMountEffectDefault from "useMountEffect" /* 5889 */;
+import usePreviousDefault from "usePrevious" /* 6826 */;
 import SettingSearchSessionAnalyticsManagerDefault from "SettingSearchSessionAnalyticsManager" /* 7814 */;
 import react from "react" /* 19 */;
 import AppStateStore from "AppStateStore" /* 2120 */;

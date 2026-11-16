@@ -1,7 +1,7 @@
 // Module ID: 12622
 // Function ID: 12623
 // Name: SummaryActionSheet
-// Dependencies: [19, 17, 5155, 6372, 12000, 1072, 21, 5552, 12622, 2121, 5306, 575, 7287, 12595, 6014, 1113, 6356, 10230, 8864, 9004, 5492, 11, 1099, 5566, 7415, 12623, 5929, 12625, 12626, 12629, 9173, 2]
+// Dependencies: [19, 17, 5155, 6362, 12000, 1072, 21, 5542, 12622, 2121, 5306, 575, 7287, 12595, 6004, 1113, 6346, 10230, 8864, 9004, 5482, 11, 1099, 5556, 7415, 12623, 5919, 12625, 12626, 12629, 9173, 2]
 // Exports: default, openSummaryDividerActionSheet
 
 // Module 12622 (SummaryActionSheet)
@@ -11,16 +11,16 @@ import nativeDefault from "native" /* 575 */;
 import router_utils from "router_utils" /* 1099 */;
 import intl5 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5492 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import ToastUtils from "ToastUtils" /* 6014 */;
-import ChannelUtils from "ChannelUtils" /* 6356 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5482 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import ToastUtils from "ToastUtils" /* 6004 */;
+import ChannelUtils from "ChannelUtils" /* 6346 */;
 import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8864 */;
 import DraftActionCreatorsDefault from "DraftActionCreators" /* 9004 */;
 import showShareActionSheet from "showShareActionSheet" /* 10230 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
-import MessageStore from "MessageStore" /* 6372 */;
+import MessageStore from "MessageStore" /* 6362 */;
 import SummaryStore from "SummaryStore" /* 12000 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
@@ -94,7 +94,7 @@ export default function SummaryActionSheet(summary) {
       guild_id = tmp4.guild_id;
     }
     if (null != guild_id) {
-      const openLazy = tmp(5552).openLazy;
+      const openLazy = tmp(5542).openLazy;
       let guild_id1;
       ActionSheetActionCreatorsDefault;
       const tmp8 = asyncRequire(12595, tmp2.paths);

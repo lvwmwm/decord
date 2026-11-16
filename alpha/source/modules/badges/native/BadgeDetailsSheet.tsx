@@ -1,18 +1,18 @@
 // Module ID: 10111
 // Function ID: 10112
 // Name: BadgeDetailsSheet
-// Dependencies: [5, 32, 19, 17, 5307, 1388, 10112, 8547, 1072, 5567, 21, 5306, 575, 6037, 5929, 1655, 10113, 504, 10114, 10115, 10116, 1708, 10117, 2153, 1392, 10118, 10127, 15272, 5552, 10110, 15273, 8604, 1113, 7459, 15279, 15277, 15284, 5936, 15285, 8552, 5548, 1630, 10076, 15278, 11819, 8559, 5897, 5566, 5570, 5901, 2]
+// Dependencies: [5, 32, 19, 17, 5307, 1388, 10112, 8547, 1072, 5557, 21, 5306, 575, 6027, 5919, 1655, 10113, 504, 10114, 10115, 10116, 1708, 10117, 2153, 1392, 10118, 10127, 15272, 5542, 10110, 15273, 8604, 1113, 7459, 15279, 15277, 15284, 5926, 15285, 8552, 5538, 1630, 10076, 15278, 11819, 8559, 5887, 5556, 5560, 5891, 2]
 // Exports: default
 
 // Module 10111 (BadgeDetailsSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5548 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5567 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import CircleInformationIcon2 from "CircleInformationIcon" /* 6037 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5557 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import CircleInformationIcon2 from "CircleInformationIcon" /* 6027 */;
 import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8552 */;
 import openBadgeDetailsSheet from "openBadgeDetailsSheet" /* 10110 */;
 import BadgeUtils from "BadgeUtils" /* 10113 */;
@@ -117,7 +117,7 @@ function BadgeUnlockLabel(unlock) {
   items2 = [tmp.unlockLabel, animatedStyle];
   const View = _modDef1655.View;
   obj3 = { variant: "heading-lg/semibold", color: "text-strong", style: tmp.centeredText, children: tmp2Result.getBadgeUnlockLabel(unlock.badge, unlock.previousTierKey) };
-  Text = tmp2(5929).Text;
+  Text = tmp2(5919).Text;
   tmp2Result = BadgeUtils;
   return map1(View, obj2);
 }

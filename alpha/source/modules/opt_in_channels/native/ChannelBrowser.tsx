@@ -1,7 +1,7 @@
 // Module ID: 12473
 // Function ID: 12474
 // Name: ChannelBrowser
-// Dependencies: [32, 19, 17, 8735, 7875, 5236, 5177, 6958, 1072, 5152, 21, 1380, 6057, 11061, 9355, 5306, 575, 5929, 5913, 12474, 504, 12476, 5348, 5139, 12472, 7825, 7888, 7445, 7428, 1113, 7629, 6020, 12478, 5954, 5378, 7746, 7734, 5902, 8033, 7733, 7455, 1187, 2]
+// Dependencies: [32, 19, 17, 8735, 7875, 5236, 5177, 6948, 1072, 5152, 21, 1380, 6047, 11061, 9355, 5306, 575, 5919, 5903, 12474, 504, 12476, 5338, 5139, 12472, 7825, 7888, 7445, 7428, 1113, 7629, 6010, 12478, 5944, 5368, 7746, 7734, 5892, 8033, 7733, 7455, 1187, 2]
 // Exports: default
 
 // Module 12473 (ChannelBrowser)
@@ -9,7 +9,7 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import MarkupRulesUtils from "MarkupRulesUtils" /* 9355 */;
 import MarkupInlineChannelMentionRules from "MarkupInlineChannelMentionRules" /* 11061 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
@@ -18,10 +18,10 @@ import NewChannelsStore from "NewChannelsStore" /* 8735 */;
 import GuildCategoryStore from "GuildCategoryStore" /* 7875 */;
 import GuildChannelStore from "GuildChannelStore" /* 5236 */;
 import GuildStore from "GuildStore" /* 5177 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6958 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6948 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1380 */;
-import MarkupUtils from "MarkupUtils" /* 6057 */;
+import MarkupUtils from "MarkupUtils" /* 6047 */;
 import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
@@ -106,10 +106,10 @@ let closure_20 = react.memo(function CategoryRow(channel) {
   const onChannelClick = channel.onChannelClick;
   const tmp = closure_17();
   const items = [UserGuildSettingsStore];
-  const tmp3 = onChannelClick(5954)(channel);
+  const tmp3 = onChannelClick(5944)(channel);
   const obj = channel(504);
   const stateFromStores = obj.useStateFromStores(items, () => UserGuildSettingsStore.isChannelOptedIn(channel.guild_id, channel.id));
-  const obj2 = channel(5378);
+  const obj2 = channel(5368);
   const checkboxA11yNative = obj2.useCheckboxA11yNative({ checked: stateFromStores });
   const obj3 = {
     style: tmp.categoryContainer,
@@ -140,7 +140,7 @@ let closure_20 = react.memo(function CategoryRow(channel) {
     obj7 = { checked: stateFromStores };
     items2 = [closure_12(View, obj6), ];
     const obj8 = { variant: "body-xs/semibold", color: "interactive-text-default", children: intl.string(channel(1113).t.mSQwnW) };
-    const Text = tmp4(5929).Text;
+    const Text = tmp4(5919).Text;
     intl = tmp4(1113).intl;
     items2[1] = closure_12(Text, obj8);
     tmp10Result = tmp10(View, obj5);

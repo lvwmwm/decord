@@ -1,16 +1,16 @@
-// Module ID: 20536
-// Function ID: 20537
+// Module ID: 20539
+// Function ID: 20540
 // Name: GuildSettingsServerTagBadgeGrid
-// Dependencies: [19, 17, 8410, 21, 575, 5306, 20537, 10679, 6337, 5929, 1113, 20538, 20539, 16355, 7963, 2]
+// Dependencies: [19, 17, 8410, 21, 575, 5306, 20540, 10679, 6327, 5919, 1113, 20541, 20542, 16355, 7963, 2]
 // Exports: default
 
-// Module 20536 (GuildSettingsServerTagBadgeGrid)
+// Module 20539 (GuildSettingsServerTagBadgeGrid)
 import nativeDefault from "native" /* 575 */;
 import GuildTagConstants from "GuildTagConstants" /* 8410 */;
 import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 10679 */;
-import useGuildTagBadgeCollectionDefault from "useGuildTagBadgeCollection" /* 20537 */;
-import GuildSettingsServerTagPickerCellDefault from "GuildSettingsServerTagPickerCell" /* 20538 */;
-import getGuildTagBadgeLabelDefault from "getGuildTagBadgeLabel" /* 20539 */;
+import useGuildTagBadgeCollectionDefault from "useGuildTagBadgeCollection" /* 20540 */;
+import GuildSettingsServerTagPickerCellDefault from "GuildSettingsServerTagPickerCell" /* 20541 */;
+import getGuildTagBadgeLabelDefault from "getGuildTagBadgeLabel" /* 20542 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -56,9 +56,9 @@ export default function GuildSettingsServerTagBadgeGrid(guildId) {
     openGuildPowerupsModalDefault(obj);
   }, items);
   let obj = { spacing: nativeDefault.space.PX_8, children: items1 };
-  const Stack = guildId(6337).Stack;
+  const Stack = guildId(6327).Stack;
   const obj2 = { variant: "body-md/medium", color: "text-subtle", accessibilityRole: "header", children: intl.string(guildId(1113).t.wRnfnY) };
-  const Text = guildId(5929).Text;
+  const Text = guildId(5919).Text;
   intl = guildId(1113).intl;
   items1 = [closure_7(Text, obj2), , ];
   const obj3 = {
@@ -95,7 +95,7 @@ export default function GuildSettingsServerTagBadgeGrid(guildId) {
     substr = lockedBadges.slice(0, 10);
     items2 = [closure_7(tmp9, obj5), , ];
     const obj6 = { variant: "body-md/medium", color: "text-subtle", style: tmp.upsellText, children: intl3.string(guildId(1113).t.U5p3GZ) };
-    const Text2 = tmp7(5929).Text;
+    const Text2 = tmp7(5919).Text;
     intl3 = tmp7(1113).intl;
     items2[1] = closure_7(Text2, obj6);
     const obj7 = { size: "md", color: nativeDefault.colors.ICON_SUBTLE };

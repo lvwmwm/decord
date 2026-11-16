@@ -1,18 +1,18 @@
-// Module ID: 20401
-// Function ID: 20402
+// Module ID: 20404
+// Function ID: 20405
 // Name: StageSpeakInviteNotificationManager
-// Dependencies: [6901, 502, 5155, 5177, 5248, 5209, 1388, 5160, 1072, 12920, 1113, 5954, 11018, 11027, 11025, 7882, 6358, 11951, 2]
+// Dependencies: [6891, 502, 5155, 5177, 5248, 5209, 1388, 5160, 1072, 12920, 1113, 5944, 11018, 11027, 11025, 7882, 6348, 11951, 2]
 
-// Module 20401 (StageSpeakInviteNotificationManager)
+// Module 20404 (StageSpeakInviteNotificationManager)
 import Constants from "Constants" /* 1072 */;
-import useChannelName from "useChannelName" /* 5954 */;
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 6358 */;
+import useChannelName from "useChannelName" /* 5944 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 6348 */;
 import NotificationTextUtils from "NotificationTextUtils" /* 11018 */;
 import InAppNotificationUtils from "InAppNotificationUtils" /* 11025 */;
 import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 11027 */;
 import StageChannelUnifiedCallExperiment from "StageChannelUnifiedCallExperiment" /* 11951 */;
 import PushNotificationDefault from "PushNotification" /* 12920 */;
-import VoicePanelStore from "VoicePanelStore" /* 6901 */;
+import VoicePanelStore from "VoicePanelStore" /* 6891 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import GuildStore from "GuildStore" /* 5177 */;

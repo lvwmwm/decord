@@ -1,27 +1,27 @@
 // Module ID: 15606
 // Function ID: 15607
 // Name: createMediaPostPreviewEmbedContent
-// Dependencies: [17, 5932, 5155, 5177, 5349, 1388, 12374, 6359, 5956, 1113, 9188, 9190, 575, 6361, 6363, 15607, 8853, 6830, 6360, 2]
+// Dependencies: [17, 5922, 5155, 5177, 5339, 1388, 12374, 6349, 5946, 1113, 9188, 9190, 575, 6351, 6353, 15607, 8853, 6820, 6350, 2]
 // Exports: default
 
 // Module 15606 (createMediaPostPreviewEmbedContent)
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
-import LinkUtils from "LinkUtils" /* 5956 */;
-import MediaPostEmbedUtils from "MediaPostEmbedUtils" /* 6359 */;
-import MediaPostThumbnailUtils from "MediaPostThumbnailUtils" /* 6360 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 6361 */;
-import MediaFormatParamUtils from "MediaFormatParamUtils" /* 6363 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6830 */;
+import LinkUtils from "LinkUtils" /* 5946 */;
+import MediaPostEmbedUtils from "MediaPostEmbedUtils" /* 6349 */;
+import MediaPostThumbnailUtils from "MediaPostThumbnailUtils" /* 6350 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 6351 */;
+import MediaFormatParamUtils from "MediaFormatParamUtils" /* 6353 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6820 */;
 import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8853 */;
 import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 9188 */;
 import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 9190 */;
 import MediaPostEmbedStore2 from "MediaPostEmbedStore" /* 12374 */;
 import react_native from "react-native" /* 17 */;
-import DevSettingsStore from "DevSettingsStore" /* 5932 */;
+import DevSettingsStore from "DevSettingsStore" /* 5922 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import GuildStore from "GuildStore" /* 5177 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5349 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 

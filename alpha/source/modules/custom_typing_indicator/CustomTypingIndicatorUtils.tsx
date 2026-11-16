@@ -1,7 +1,7 @@
 // Module ID: 14579
 // Function ID: 14580
 // Name: CustomTypingIndicatorUtils
-// Dependencies: [5932, 6969, 8542, 5155, 6956, 1388, 1072, 1391, 1401, 4133, 5252, 5256, 1410, 1084, 5243, 504, 2]
+// Dependencies: [5922, 6969, 8542, 5155, 6946, 1388, 1072, 1391, 1401, 4133, 5252, 5256, 1410, 1084, 5243, 504, 2]
 // Exports: getCustomTypingIndicatorSuggestionMessage, getCustomTypingIndicatorSuggestionPresets, getCustomTypingIndicatorSuggestionWithNameMessage, getRandomCustomTypingIndicatorAnimation, getRandomCustomTypingIndicatorSuggestion, getSurpriseMeEmojiPool, getViewableCustomTypingIndicatorConfig, pickRandomCustomTypingIndicatorEmojis, useCurrentCustomTypingIndicatorConfig, useIsPreviewingOwnTypingIndicator
 
 // Module 14579 (CustomTypingIndicatorUtils)
@@ -14,11 +14,11 @@ import CustomTypingIndicatorTypes from "CustomTypingIndicatorTypes" /* 1410 */;
 import _modDef4133 from "module_4133" /* 4133 */;
 import PermissionUtilsAll from "PermissionUtils" /* 5243 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 5252 */;
-import DevSettingsStore from "DevSettingsStore" /* 5932 */;
+import DevSettingsStore from "DevSettingsStore" /* 5922 */;
 import EmojiStore from "EmojiStore" /* 6969 */;
 import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8542 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
-import SortedGuildStore from "SortedGuildStore" /* 6956 */;
+import SortedGuildStore from "SortedGuildStore" /* 6946 */;
 import UserStore from "UserStore" /* 1388 */;
 import size_mod from "module_2" /* 2 */;
 

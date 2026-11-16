@@ -1,7 +1,7 @@
 // Module ID: 11164
 // Function ID: 11165
 // Name: ThreadCreationHooks
-// Dependencies: [32, 5, 19, 9108, 502, 5155, 8725, 6372, 8792, 1112, 1072, 5311, 7287, 8786, 8147, 1113, 11165, 11, 1285, 9004, 11153, 8788, 1406, 8846, 11166, 8866, 6067, 8660, 6268, 572, 5313, 1089, 8852, 11217, 2]
+// Dependencies: [32, 5, 19, 9108, 502, 5155, 8725, 6362, 8792, 1112, 1072, 5311, 7287, 8786, 8147, 1113, 11165, 11, 1285, 9004, 11153, 8788, 1406, 8846, 11166, 8866, 6057, 8660, 6258, 572, 5313, 1089, 8852, 11217, 2]
 // Exports: createThread, useCreateForumPostCommon, useCreateThreadCommon, usePrivateThreadMode
 
 // Module 11164 (ThreadCreationHooks)
@@ -17,7 +17,7 @@ import react from "react" /* 19 */;
 import ForumActivePostStore from "ForumActivePostStore" /* 9108 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
-import MessageStore from "MessageStore" /* 6372 */;
+import MessageStore from "MessageStore" /* 6362 */;
 import ThreadConstants from "ThreadConstants" /* 1112 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;

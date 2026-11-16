@@ -1,14 +1,14 @@
 // Module ID: 10787
 // Function ID: 10788
 // Name: useGameServerPerk
-// Dependencies: [19, 9242, 5525, 5524, 5542, 504, 10788, 1113, 3189, 10789, 2]
+// Dependencies: [19, 9242, 5515, 5514, 5532, 504, 10788, 1113, 3189, 10789, 2]
 // Exports: default
 
 // Module 10787 (useGameServerPerk)
 import intl3 from "intl" /* 1113 */;
 import _modDef3189 from "module_3189" /* 3189 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5524 */;
-import GameServerConstants from "GameServerConstants" /* 5525 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5514 */;
+import GameServerConstants from "GameServerConstants" /* 5515 */;
 import _modDef10789 from "module_10789" /* 10789 */;
 import react from "react" /* 19 */;
 import GameServerStore from "GameServerStore" /* 9242 */;

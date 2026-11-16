@@ -1,7 +1,7 @@
 // Module ID: 15842
 // Function ID: 15843
 // Name: useIsGameFriends
-// Dependencies: [32, 8765, 1072, 504, 6950, 2]
+// Dependencies: [32, 8765, 1072, 504, 6940, 2]
 // Exports: useIsGameFriends
 
 // Module 15842 (useIsGameFriends)

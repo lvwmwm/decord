@@ -1,13 +1,13 @@
-// Module ID: 17839
-// Function ID: 17840
+// Module ID: 17841
+// Function ID: 17842
 // Name: LabeledDataBlock
-// Dependencies: [19, 17, 21, 5306, 575, 5929, 7428, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 5919, 7428, 2]
 // Exports: default
 
-// Module 17839 (LabeledDataBlock)
+// Module 17841 (LabeledDataBlock)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;
@@ -52,7 +52,7 @@ export default function LabeledDataBlock(arg0) {
   let tmp4Result2 = children;
   if (typeof children === "string") {
     const obj5 = { variant: "heading-xl/medium", color: "mobile-text-heading-primary", children };
-    tmp4Result2 = tmp4(tmp5(5929).Text, obj5);
+    tmp4Result2 = tmp4(tmp5(5919).Text, obj5);
   }
   items2[1] = tmp4Result2;
   return React3(View, obj);

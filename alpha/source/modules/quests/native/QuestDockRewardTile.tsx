@@ -1,7 +1,7 @@
 // Module ID: 15258
 // Function ID: 15259
 // Name: QuestDockRewardTile
-// Dependencies: [32, 19, 17, 5307, 21, 5306, 575, 1380, 504, 10146, 9730, 6020, 2]
+// Dependencies: [32, 19, 17, 5307, 21, 5306, 575, 1380, 504, 10146, 9730, 6010, 2]
 
 // Module 15258 (QuestDockRewardTile)
 import Fragment from "Fragment" /* 21 */;

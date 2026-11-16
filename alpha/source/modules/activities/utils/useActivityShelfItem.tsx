@@ -1,7 +1,7 @@
 // Module ID: 13389
 // Function ID: 13390
 // Name: useActivityShelfItem
-// Dependencies: [5, 5154, 2145, 1072, 5984, 1380, 12898, 13390, 13391, 2119, 7057, 12843, 12842, 7259, 5227, 7918, 12705, 12711, 12747, 2]
+// Dependencies: [5, 5154, 2145, 1072, 5974, 1380, 12898, 13390, 13391, 2119, 7057, 12843, 12842, 7259, 5227, 7918, 12705, 12711, 12747, 2]
 // Exports: default, getStaffReleasePhase
 
 // Module 13389 (useActivityShelfItem)
@@ -9,7 +9,7 @@ import Constants from "Constants" /* 1072 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import Constants2 from "Constants" /* 2145 */;
 import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 5227 */;
-import getPlatformDefault from "getPlatform" /* 5984 */;
+import getPlatformDefault from "getPlatform" /* 5974 */;
 import ApplicationFlagUtils from "ApplicationFlagUtils" /* 7057 */;
 import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7259 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7918 */;
@@ -24,7 +24,7 @@ import size from "module_2" /* 2 */;
 
 let c2;
 
-const f107247 = (str) => str.toUpperCase();
+const f107260 = (str) => str.toUpperCase();
 function useActivityAction(applicationId) {
   let context;
   let fetchesApplication;
@@ -339,7 +339,7 @@ export default function useActivityShelfItem(backgroundResolution) {
     let replaced;
     if (STAFF_RELEASE_PHASES.includes(str)) {
       const str4 = str.replace("_", " ");
-      replaced = str4.replace(/(^\w|\s\w)/g, f107247);
+      replaced = str4.replace(/(^\w|\s\w)/g, f107260);
     }
     tmp16 = replaced;
   } else {
@@ -366,7 +366,7 @@ export function getStaffReleasePhase(application, client_platform_config) {
   let replaced;
   if (STAFF_RELEASE_PHASES.includes(str)) {
     const str4 = str.replace("_", " ");
-    replaced = str4.replace(/(^\w|\s\w)/g, f107247);
+    replaced = str4.replace(/(^\w|\s\w)/g, f107260);
   }
   return replaced;
 }

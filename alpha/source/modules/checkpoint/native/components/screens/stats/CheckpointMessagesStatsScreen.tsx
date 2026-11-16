@@ -1,15 +1,15 @@
 // Module ID: 14508
 // Function ID: 14509
 // Name: CheckpointMessagesStatsScreen
-// Dependencies: [17, 14253, 6377, 21, 5306, 575, 14485, 504, 6747, 1113, 3317, 3285, 14270, 14273, 14509, 14510, 8069, 14271, 14504, 14506, 14505, 14507, 2]
+// Dependencies: [17, 14253, 6367, 21, 5306, 575, 14485, 504, 6737, 1113, 3317, 3285, 14270, 14273, 14509, 14510, 8069, 14271, 14504, 14506, 14505, 14507, 2]
 // Exports: default
 
 // Module 14508 (CheckpointMessagesStatsScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import CheckpointConstants from "CheckpointConstants" /* 6377 */;
-import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6747 */;
+import CheckpointConstants from "CheckpointConstants" /* 6367 */;
+import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6737 */;
 import ChatIcon from "ChatIcon" /* 8069 */;
 import CheckpointScreenDefault from "CheckpointScreen" /* 14270 */;
 import CheckpointTextDefault from "CheckpointText" /* 14271 */;

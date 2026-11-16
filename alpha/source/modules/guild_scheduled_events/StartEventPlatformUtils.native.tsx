@@ -1,7 +1,7 @@
 // Module ID: 8442
 // Function ID: 8443
 // Name: StartEventPlatformUtils
-// Dependencies: [5, 5155, 6071, 5349, 5161, 1072, 38, 7678, 6909, 6935, 1099, 2]
+// Dependencies: [5, 5155, 6061, 5339, 5161, 1072, 38, 7678, 6899, 6925, 1099, 2]
 // Exports: navigateToEvent, postStartActions
 
 // Module 8442 (StartEventPlatformUtils)
@@ -12,8 +12,8 @@ import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 516
 import StageChannelModalActionCreatorsAll from "StageChannelModalActionCreators" /* 7678 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6071 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5349 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;

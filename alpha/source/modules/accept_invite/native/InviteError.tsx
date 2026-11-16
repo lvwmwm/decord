@@ -1,7 +1,7 @@
 // Module ID: 15082
 // Function ID: 15083
 // Name: InviteError
-// Dependencies: [19, 17, 1072, 21, 5306, 575, 5313, 5547, 15083, 15084, 15085, 1113, 6020, 5929, 5936, 1414, 1187, 15086, 7720, 2188, 2]
+// Dependencies: [19, 17, 1072, 21, 5306, 575, 5313, 5537, 15083, 15084, 15085, 1113, 6010, 5919, 5926, 1414, 1187, 15086, 7720, 2188, 2]
 // Exports: default
 
 // Module 15082 (InviteError)
@@ -12,10 +12,10 @@ import native from "native" /* 1187 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
 import shared from "shared" /* 5313 */;
-import useThemeDefault from "useTheme" /* 5547 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import components_Button_Button from "components/Button/Button" /* 5936 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import useThemeDefault from "useTheme" /* 5537 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import GuildIcon from "GuildIcon" /* 7720 */;
 import InviteErrorUtils from "InviteErrorUtils" /* 15085 */;
 import AssetRegistryDefault from "AssetRegistry" /* 15086 */;
@@ -71,7 +71,7 @@ function InviteErrorBase(invite) {
   items[0] = metroImportDefault(FastImageDefault, obj2);
   const obj3 = { style: tmp.expiredTitle, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: title };
   title = undefined;
-  const Text = tmp2(5929).Text;
+  const Text = tmp2(5919).Text;
   const tmp10 = React4;
   const tmp11 = metroImportAll;
   if (descriptiveInviteError != null) {
@@ -89,7 +89,7 @@ function InviteErrorBase(invite) {
   const obj5 = { style: tmp.expiredBody, variant: "body-sm/medium", color: "text-default", children: stringResult };
   items[2] = metroImportDefault(Text_Text.Text, obj5);
   const obj6 = { variant: "primary", size: "lg", text: intl4.string(intl5.t.wcqOoF), onPress: handlePressClose };
-  const Button = tmp2(5936).Button;
+  const Button = tmp2(5926).Button;
   intl4 = tmp2(1113).intl;
   items[3] = metroImportDefault(Button, obj6);
   return tmp10(tmp11, obj4);

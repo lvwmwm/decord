@@ -1,14 +1,14 @@
 // Module ID: 14532
 // Function ID: 14533
 // Name: CheckpointRecapCard
-// Dependencies: [19, 17, 21, 575, 14479, 5306, 14266, 6401, 6743, 14279, 2]
+// Dependencies: [19, 17, 21, 575, 14479, 5306, 14266, 6391, 6733, 14279, 2]
 // Exports: default
 
 // Module 14532 (CheckpointRecapCard)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import CheckpointCharacterAccessibilityUtils from "CheckpointCharacterAccessibilityUtils" /* 6743 */;
+import CheckpointCharacterAccessibilityUtils from "CheckpointCharacterAccessibilityUtils" /* 6733 */;
 import CheckpointStepHeaderRefContextDefault from "CheckpointStepHeaderRefContext" /* 14266 */;
 import CheckpointCardFrameDefault from "CheckpointCardFrame" /* 14279 */;
 import react from "react" /* 19 */;
@@ -50,10 +50,10 @@ export default function CheckpointRecapCard(character) {
     const _Math2 = Math;
     bound = Math.min(Math.max(maxHeight / 268, 0.75), maxScale);
   }
-  const obj2 = character(6401);
+  const obj2 = character(6391);
   const characterCardColorPalette = obj2.getCharacterCardColorPalette(character);
   const items = [character];
-  const obj3 = character(6401);
+  const obj3 = character(6391);
   const primaryBackgroundColor = obj3.getCardColors(characterCardColorPalette).primaryBackgroundColor;
   const memo = obj.useMemo(() => {
     let checkpointCharacterAccessibilityLabel = null;

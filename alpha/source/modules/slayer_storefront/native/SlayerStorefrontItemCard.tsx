@@ -1,7 +1,7 @@
 // Module ID: 9515
 // Function ID: 9516
 // Name: SlayerStorefrontItemCard
-// Dependencies: [19, 17, 21, 5306, 575, 7244, 9516, 8495, 6020, 5893, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 7244, 9516, 8495, 6010, 5883, 2]
 // Exports: default
 
 // Module 9515 (SlayerStorefrontItemCard)

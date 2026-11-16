@@ -1,10 +1,10 @@
-// Module ID: 19275
-// Function ID: 19276
+// Module ID: 19277
+// Function ID: 19278
 // Name: ForYouLoadMore
-// Dependencies: [19, 17, 7032, 21, 5306, 563, 5936, 1113, 2]
+// Dependencies: [19, 17, 7032, 21, 5306, 563, 5926, 1113, 2]
 // Exports: ForYouLoadMore
 
-// Module 19275 (ForYouLoadMore)
+// Module 19277 (ForYouLoadMore)
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import intl2 from "intl" /* 1113 */;
@@ -33,7 +33,7 @@ export function ForYouLoadMore(onPressLoad) {
     tmp4Result = tmp4(React2, {});
   } else {
     const obj3 = { variant: "secondary", grow: true, size: "md", text: intl.string(intl2.t["Q/LSXp"]), onPress: onPressLoad };
-    const Button = tmp2(5936).Button;
+    const Button = tmp2(5926).Button;
     intl = tmp2(1113).intl;
     tmp4Result = tmp4(Button, obj3);
   }

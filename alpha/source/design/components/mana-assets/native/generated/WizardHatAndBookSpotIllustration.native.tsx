@@ -1,7 +1,7 @@
 // Module ID: 17445
 // Function ID: 17446
 // Name: WizardHatAndBookSpotIllustration
-// Dependencies: [19, 21, 17446, 17447, 17448, 7755, 6020, 2]
+// Dependencies: [19, 21, 17446, 17447, 17448, 7755, 6010, 2]
 // Exports: WizardHatAndBookSpotIllustration
 
 // Module 17445 (WizardHatAndBookSpotIllustration)

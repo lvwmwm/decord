@@ -1,13 +1,13 @@
-// Module ID: 18141
-// Function ID: 18142
+// Module ID: 18143
+// Function ID: 18144
 // Name: FriendOnlineNotificationSetting
-// Dependencies: [9202, 12406, 1113, 5131, 18142, 2]
+// Dependencies: [9202, 12406, 1113, 5131, 18144, 2]
 
-// Module 18141 (FriendOnlineNotificationSetting)
+// Module 18143 (FriendOnlineNotificationSetting)
 import intl2 from "intl" /* 1113 */;
 import UserSettings from "UserSettings" /* 5131 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;
-import FriendOnlineNotificationUtils from "FriendOnlineNotificationUtils" /* 18142 */;
+import FriendOnlineNotificationUtils from "FriendOnlineNotificationUtils" /* 18144 */;
 import SettingBuilders from "SettingBuilders" /* 12406 */;
 import size from "module_2" /* 2 */;
 

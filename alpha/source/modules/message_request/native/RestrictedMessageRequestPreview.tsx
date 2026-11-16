@@ -1,17 +1,17 @@
-// Module ID: 19762
-// Function ID: 19763
+// Module ID: 19764
+// Function ID: 19765
 // Name: RestrictedMessageRequestPreview
-// Dependencies: [32, 19, 17, 5155, 6372, 1388, 21, 5306, 575, 1630, 504, 14929, 19763, 19765, 14953, 14870, 2]
+// Dependencies: [32, 19, 17, 5155, 6362, 1388, 21, 5306, 575, 1630, 504, 14929, 19765, 19767, 14953, 14870, 2]
 // Exports: default
 
-// Module 19762 (RestrictedMessageRequestPreview)
+// Module 19764 (RestrictedMessageRequestPreview)
 import nativeDefault from "native" /* 575 */;
 import useIsEmptyMessageRequestChat from "useIsEmptyMessageRequestChat" /* 14929 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
-import MessageStore from "MessageStore" /* 6372 */;
+import MessageStore from "MessageStore" /* 6362 */;
 import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
@@ -153,9 +153,9 @@ export default function RestrictedMessageRequestPreview(channelId) {
       }
       items8[1] = scrollContentEmpty;
       const obj6 = { channel: stateFromStores, user: stateFromStores1 };
-      items9 = [closure_10(tmp2(19763), obj6), , ];
+      items9 = [closure_10(tmp2(19765), obj6), , ];
       const obj7 = { channelId };
-      items9[1] = closure_10(ref(19765), obj7);
+      items9[1] = closure_10(ref(19767), obj7);
       let tmp19Result = null;
       if (isEmpty) {
         const obj8 = { style: tmp.emptyChat };

@@ -1,7 +1,7 @@
 // Module ID: 9979
 // Function ID: 9980
 // Name: LinkButton
-// Dependencies: [19, 21, 5306, 7428, 5929, 2]
+// Dependencies: [19, 21, 5306, 7428, 5919, 2]
 // Exports: LinkButton
 
 // Module 9979 (LinkButton)
@@ -14,7 +14,7 @@ import size from "module_2" /* 2 */;
 let c2;
 let c3;
 let tmp3;
-const Text_Text = tmp3(5929);
+const Text_Text = tmp3(5919);
 ({ jsx: c2, jsxs: c3 } = Fragment);
 let closure_4 = createStyles.createStyles({ defaultContainerStyle: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center" }, disabledContainerStyle: { opacity: 0.5 } });
 const result = size.fileFinishedImporting("modules/premium/native/components/LinkButton.tsx");

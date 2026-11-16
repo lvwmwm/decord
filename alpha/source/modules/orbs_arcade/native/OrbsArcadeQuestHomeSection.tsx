@@ -1,7 +1,7 @@
 // Module ID: 17646
 // Function ID: 17647
 // Name: OrbsArcadeQuestHomeSection
-// Dependencies: [19, 17647, 17650, 21, 5306, 575, 17651, 504, 6337, 7438, 5929, 1113, 17655, 17657, 10455, 2]
+// Dependencies: [19, 17647, 17650, 21, 5306, 575, 17651, 504, 6327, 7438, 5919, 1113, 17655, 17657, 10455, 2]
 // Exports: default
 
 // Module 17646 (OrbsArcadeQuestHomeSection)
@@ -57,20 +57,20 @@ export default function OrbsArcadeQuestHomeSection(location) {
   if (!stateFromStores1) {
     let mapped;
     const obj3 = { spacing: nativeDefault.space.PX_8, style: tmp.section, children: items4 };
-    const Stack = tmp5(6337).Stack;
+    const Stack = tmp5(6327).Stack;
     const obj4 = { style: tmp.sectionHeader, children: items3 };
-    const Stack2 = tmp5(6337).Stack;
+    const Stack2 = tmp5(6327).Stack;
     const obj5 = { direction: "horizontal", spacing: nativeDefault.space.PX_8, children: items2 };
-    const Stack3 = tmp5(6337).Stack;
+    const Stack3 = tmp5(6327).Stack;
     const obj6 = { size: "custom", style: tmp.sectionIcon };
     items2 = [React3(GameControllerIcon.GameControllerIcon, obj6), ];
     const obj7 = { variant: "body-lg/semibold", color: "text-strong", children: intl.string(intl3.t["2L068F"]) };
-    const Heading = tmp5(5929).Heading;
+    const Heading = tmp5(5919).Heading;
     intl = tmp5(1113).intl;
     items2[1] = React3(Heading, obj7);
     items3 = [hasOwnProperty(Stack3, obj5), ];
     const obj8 = { variant: "heading-xs/medium", color: "text-subtle", children: intl2.string(intl3.t.kMY21I) };
-    const Text = tmp5(5929).Text;
+    const Text = tmp5(5919).Text;
     intl2 = tmp5(1113).intl;
     items3[1] = React3(Text, obj8);
     items4 = [hasOwnProperty(Stack2, obj4), ];

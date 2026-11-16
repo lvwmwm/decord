@@ -1,12 +1,12 @@
 // Module ID: 13696
 // Function ID: 13697
 // Name: BotIllocon
-// Dependencies: [19, 21, 13697, 13698, 13699, 7755, 6020, 2]
+// Dependencies: [19, 21, 13697, 13698, 13699, 7755, 6010, 2]
 // Exports: BotIllocon
 
 // Module 13696 (BotIllocon)
 import Fragment from "Fragment" /* 21 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import react_native from "react-native" /* 7755 */;
 import _modDef13697 from "module_13697" /* 13697 */;
 import _modDef13698 from "module_13698" /* 13698 */;

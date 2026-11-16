@@ -1,13 +1,13 @@
 // Module ID: 7586
 // Function ID: 7587
 // Name: PostponeRender
-// Dependencies: [32, 19, 17, 21, 5306, 575, 5899, 7587, 7588, 7474, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 575, 5889, 7587, 7588, 7474, 2]
 // Exports: PostponeRender
 
 // Module 7586 (PostponeRender)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useMountEffectDefault from "useMountEffect" /* 5899 */;
+import useMountEffectDefault from "useMountEffect" /* 5889 */;
 import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7587 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

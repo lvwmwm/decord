@@ -1,7 +1,7 @@
 // Module ID: 11867
 // Function ID: 11868
 // Name: MessageReactions
-// Dependencies: [19, 6372, 21, 504, 7918, 7937, 11868, 2]
+// Dependencies: [19, 6362, 21, 504, 7918, 7937, 11868, 2]
 // Exports: default
 
 // Module 11867 (MessageReactions)
@@ -9,7 +9,7 @@ import Fragment from "Fragment" /* 21 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7918 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
 import react from "react" /* 19 */;
-import MessageStore from "MessageStore" /* 6372 */;
+import MessageStore from "MessageStore" /* 6362 */;
 import size from "module_2" /* 2 */;
 
 let count_details, message;

@@ -1,14 +1,14 @@
 // Module ID: 13282
 // Function ID: 13283
 // Name: ConjureVersionRestoreConfirm
-// Dependencies: [32, 19, 21, 6274, 1113, 4131, 7746, 7733, 6270, 2]
+// Dependencies: [32, 19, 21, 6264, 1113, 4131, 7746, 7733, 6260, 2]
 // Exports: confirmRestoreVersion
 
 // Module 13282 (ConjureVersionRestoreConfirm)
 import intl7 from "intl" /* 1113 */;
 import _modDef4131 from "module_4131" /* 4131 */;
-import useAlertStore from "useAlertStore" /* 6270 */;
-import AlertModal2 from "AlertModal" /* 6274 */;
+import useAlertStore from "useAlertStore" /* 6260 */;
+import AlertModal2 from "AlertModal" /* 6264 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -65,11 +65,11 @@ function ConjureVersionRestoreAlert(matchingBackup) {
       return tmp(tmp2);
     }
   };
-  const AlertActionButton = tmp5(6274).AlertActionButton;
+  const AlertActionButton = tmp5(6264).AlertActionButton;
   intl5 = tmp5(1113).intl;
   items = [hasOwnProperty(AlertActionButton, obj5), ];
   const obj6 = { variant: "secondary", text: intl6.string(intl7.t["ETE/oC"]) };
-  const AlertActionButton2 = tmp5(6274).AlertActionButton;
+  const AlertActionButton2 = tmp5(6264).AlertActionButton;
   intl6 = tmp5(1113).intl;
   items[1] = hasOwnProperty(AlertActionButton2, obj6);
   return hasOwnProperty(AlertModal, obj);

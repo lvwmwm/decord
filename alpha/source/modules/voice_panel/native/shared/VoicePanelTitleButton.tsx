@@ -1,19 +1,19 @@
-// Module ID: 19991
-// Function ID: 19992
+// Module ID: 19993
+// Function ID: 19994
 // Name: VoicePanelTitleButton
-// Dependencies: [19, 17, 2165, 5160, 5155, 5983, 21, 5306, 575, 10815, 1113, 5937, 7906, 504, 5954, 10608, 7997, 11984, 6351, 19992, 6337, 8038, 19940, 19989, 6949, 6943, 13048, 5929, 7436, 11951, 12955, 8018, 11253, 1093, 19988, 19192, 2]
+// Dependencies: [19, 17, 2165, 5160, 5155, 5973, 21, 5306, 575, 10815, 1113, 5927, 7906, 504, 5944, 10608, 7997, 11984, 6341, 19994, 6327, 8038, 19942, 19991, 6939, 6933, 13048, 5919, 7436, 11951, 12955, 8018, 11253, 1093, 19990, 19194, 2]
 
-// Module 19991 (VoicePanelTitleButton)
+// Module 19993 (VoicePanelTitleButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import BaseTextButton from "BaseTextButton" /* 5937 */;
-import useChannelNameDefault from "useChannelName" /* 5954 */;
-import CallConstants from "CallConstants" /* 5983 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6351 */;
-import StageChannelParticipants from "StageChannelParticipants" /* 6943 */;
-import StageChannelParticipantStoreHooks from "StageChannelParticipantStoreHooks" /* 6949 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import BaseTextButton from "BaseTextButton" /* 5927 */;
+import useChannelNameDefault from "useChannelName" /* 5944 */;
+import CallConstants from "CallConstants" /* 5973 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6341 */;
+import StageChannelParticipants from "StageChannelParticipants" /* 6933 */;
+import StageChannelParticipantStoreHooks from "StageChannelParticipantStoreHooks" /* 6939 */;
 import GroupIcon2 from "GroupIcon" /* 7436 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7906 */;
 import native from "native" /* 7997 */;
@@ -22,10 +22,10 @@ import ShieldLockIcon2 from "ShieldLockIcon" /* 10815 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11984 */;
 import useStageSummaryDefault from "useStageSummary" /* 12955 */;
 import MicrophoneIcon2 from "MicrophoneIcon" /* 13048 */;
-import VoicePanelSettingsActionCreators from "VoicePanelSettingsActionCreators" /* 19192 */;
-import QuestActivityButtonDefault from "QuestActivityButton" /* 19940 */;
-import VoicePanelHeaderUserState from "VoicePanelHeaderUserState" /* 19989 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 19992 */;
+import VoicePanelSettingsActionCreators from "VoicePanelSettingsActionCreators" /* 19194 */;
+import QuestActivityButtonDefault from "QuestActivityButton" /* 19942 */;
+import VoicePanelHeaderUserState from "VoicePanelHeaderUserState" /* 19991 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 19994 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
 import StageInstanceStore from "StageInstanceStore" /* 5160 */;
@@ -108,7 +108,7 @@ function ActivityButton(participant) {
   const obj = participant(504);
   const stateFromStores = obj.useStateFromStores(items, () => ApplicationStore.getApplication(participant.applicationId));
   const obj2 = { direction: "horizontal", spacing: nativeDefault.space.PX_8, children: items1 };
-  const Stack = participant(6337).Stack;
+  const Stack = participant(6327).Stack;
   const obj3 = { accessibilityRole: "button", accessibilityHint: intl.string(participant(1113).t["Y2b7+e"]), text: str, icon: AssetRegistryDefault3, iconPosition: "start", onPress, shrink: true };
   const HeaderButton = participant(7997).HeaderButton;
   intl = participant(1113).intl;
@@ -239,7 +239,7 @@ const memoResult = react.memo(function VoicePanelTitleButton() {
     return id;
   });
   const GUILD_STAGE_VOICE = guildId(1093).ChannelTypes.GUILD_STAGE_VOICE;
-  const tmp3 = channelId(19988)(derivedStateFromSharedValue, channelId, guildId);
+  const tmp3 = channelId(19990)(derivedStateFromSharedValue, channelId, guildId);
   const items = [guildId, channelId];
   const onPress = react.useCallback(() => {
     const obj = VoicePanelSettingsActionCreators;

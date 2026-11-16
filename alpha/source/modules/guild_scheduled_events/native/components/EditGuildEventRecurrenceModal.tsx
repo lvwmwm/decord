@@ -1,7 +1,7 @@
 // Module ID: 7990
 // Function ID: 7991
 // Name: EditGuildEventRecurrenceModal
-// Dependencies: [5, 32, 19, 17, 21, 5306, 575, 1630, 7979, 7972, 7982, 2020, 7991, 5936, 1113, 7992, 7971, 7993, 7995, 5929, 7490, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5306, 575, 1630, 7979, 7972, 7982, 2020, 7991, 5926, 1113, 7992, 7971, 7993, 7995, 5919, 7490, 2]
 // Exports: default
 
 // Module 7990 (EditGuildEventRecurrenceModal)
@@ -9,7 +9,7 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 2020 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import EditGuildEventUtils from "EditGuildEventUtils" /* 7971 */;
 import useEventExceptionDefault from "useEventException" /* 7979 */;
 import LazyAPIPromiseDefault from "LazyAPIPromise" /* 7982 */;
@@ -175,7 +175,7 @@ export default function EditGuildEventRecurrenceModal(guildEvent) {
     },
     disabled: null != first
   };
-  const Button = guildEvent(5936).Button;
+  const Button = guildEvent(5926).Button;
   intl = guildEvent(1113).intl;
   const action = closure_8(Button, obj3);
   let obj4 = {

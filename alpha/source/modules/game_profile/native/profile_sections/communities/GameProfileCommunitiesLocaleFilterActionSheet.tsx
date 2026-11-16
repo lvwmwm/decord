@@ -1,7 +1,7 @@
 // Module ID: 10503
 // Function ID: 10504
 // Name: GameProfileCommunitiesLocaleFilterActionSheet
-// Dependencies: [19, 21, 5306, 575, 1630, 10504, 1113, 7951, 7913, 5570, 7746, 7733, 2]
+// Dependencies: [19, 21, 5306, 575, 1630, 10504, 1113, 7951, 7913, 5560, 7746, 7733, 2]
 // Exports: default
 
 // Module 10503 (GameProfileCommunitiesLocaleFilterActionSheet)

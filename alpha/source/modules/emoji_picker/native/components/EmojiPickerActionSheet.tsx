@@ -1,7 +1,7 @@
 // Module ID: 9545
 // Function ID: 9546
 // Name: EmojiPickerActionSheet
-// Dependencies: [32, 19, 17, 1388, 9546, 1072, 1391, 21, 5306, 575, 5920, 1655, 9547, 5913, 1630, 1380, 7918, 7937, 9553, 5552, 9543, 9554, 5929, 1113, 7825, 9556, 2174, 9571, 2121, 5554, 5555, 11246, 5566, 5508, 11255, 11298, 11315, 2]
+// Dependencies: [32, 19, 17, 1388, 9546, 1072, 1391, 21, 5306, 575, 5910, 1655, 9547, 5903, 1630, 1380, 7918, 7937, 9553, 5542, 9543, 9554, 5919, 1113, 7825, 9556, 2174, 9571, 2121, 5544, 5545, 11246, 5556, 5498, 11255, 11298, 11315, 2]
 // Exports: default
 
 // Module 9545 (EmojiPickerActionSheet)
@@ -10,8 +10,8 @@ import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import EmojiConstants from "EmojiConstants" /* 1391 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import SearchBar2 from "SearchBar" /* 7825 */;
 import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9543 */;
 import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9546 */;

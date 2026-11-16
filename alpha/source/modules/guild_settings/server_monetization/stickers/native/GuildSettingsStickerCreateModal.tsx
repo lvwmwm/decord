@@ -1,14 +1,14 @@
-// Module ID: 20525
-// Function ID: 20526
+// Module ID: 20528
+// Function ID: 20529
 // Name: GuildSettingsStickerCreateModal
-// Dependencies: [19, 21, 10904, 1503, 6332, 10907, 1113, 20526, 2]
+// Dependencies: [19, 21, 10904, 1503, 6322, 10907, 1113, 20529, 2]
 // Exports: default
 
-// Module 20525 (GuildSettingsStickerCreateModal)
+// Module 20528 (GuildSettingsStickerCreateModal)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
 import Link from "Link" /* 1503 */;
-import GuildSettingsStickerCreateDefault from "GuildSettingsStickerCreate" /* 20526 */;
+import GuildSettingsStickerCreateDefault from "GuildSettingsStickerCreate" /* 20529 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ export default function GuildSettingsStickerCreateModal(arg0) {
   stickerId(10904)();
   const obj = Link;
   const isFocused = obj.useIsFocused();
-  stickerId(6332)(() => {
+  stickerId(6322)(() => {
     onFinish(true);
     return true;
   }, isFocused);

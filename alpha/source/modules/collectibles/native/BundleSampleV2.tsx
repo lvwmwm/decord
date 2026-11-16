@@ -1,7 +1,7 @@
 // Module ID: 9489
 // Function ID: 9490
 // Name: BundleSampleV2
-// Dependencies: [19, 17, 9490, 21, 6020, 5306, 575, 38, 2114, 2111, 9491, 9500, 9507, 1187, 2]
+// Dependencies: [19, 17, 9490, 21, 6010, 5306, 575, 38, 2114, 2111, 9491, 9500, 9507, 1187, 2]
 // Exports: default
 
 // Module 9489 (BundleSampleV2)
@@ -9,7 +9,7 @@ import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
 import utils from "utils" /* 2111 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 2114 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9490 */;
 import ProfileEffectSampleV2Default from "ProfileEffectSampleV2" /* 9491 */;
 import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9500 */;

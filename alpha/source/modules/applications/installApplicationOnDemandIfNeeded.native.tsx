@@ -1,7 +1,7 @@
 // Module ID: 12763
 // Function ID: 12764
 // Name: installApplicationOnDemandIfNeeded
-// Dependencies: [5, 2143, 2165, 1072, 12701, 7055, 5953, 6067, 5501, 12764, 2]
+// Dependencies: [5, 2143, 2165, 1072, 12701, 7055, 5943, 6057, 5491, 12764, 2]
 // Exports: installApplicationOnDemandIfNeeded
 
 // Module 12763 (installApplicationOnDemandIfNeeded)

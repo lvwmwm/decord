@@ -1,7 +1,7 @@
 // Module ID: 16299
 // Function ID: 16300
 // Name: QrLoginSpotIllustration
-// Dependencies: [19, 21, 16300, 16301, 16302, 7755, 6020, 2]
+// Dependencies: [19, 21, 16300, 16301, 16302, 7755, 6010, 2]
 // Exports: QrLoginSpotIllustration
 
 // Module 16299 (QrLoginSpotIllustration)

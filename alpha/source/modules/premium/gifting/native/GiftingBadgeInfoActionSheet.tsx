@@ -1,7 +1,7 @@
 // Module ID: 11677
 // Function ID: 11678
 // Name: GiftingBadgeInfoActionSheet
-// Dependencies: [19, 17, 5307, 8547, 1072, 21, 5306, 575, 1630, 504, 8480, 1256, 5566, 5929, 1113, 2797, 11678, 11680, 2]
+// Dependencies: [19, 17, 5307, 8547, 1072, 21, 5306, 575, 1630, 504, 8480, 1256, 5556, 5919, 1113, 2797, 11678, 11680, 2]
 // Exports: default
 
 // Module 11677 (GiftingBadgeInfoActionSheet)
@@ -10,7 +10,7 @@ import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
 import _modDef2797 from "module_2797" /* 2797 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import BadgeDirectoryStore2 from "BadgeDirectoryStore" /* 8547 */;
 import GiftingBadgesUtils from "GiftingBadgesUtils" /* 11678 */;
 import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 11680 */;
@@ -138,7 +138,7 @@ export default function GiftingBadgeInfoActionSheet() {
         const tmp13 = React4;
         if (tmp13Result) {
           const obj6 = { variant: "body-md/normal", color: "text-subtle", children: intl.formatToPlainString(_modDef2797.qvx9E4, obj7) };
-          const Text = tmp8(5929).Text;
+          const Text = tmp8(5919).Text;
           intl = tmp8(1113).intl;
           obj7 = { count: tmp4 };
           tmp13Result = tmp13(Text, obj6);

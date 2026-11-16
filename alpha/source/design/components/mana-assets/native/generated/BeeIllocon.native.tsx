@@ -1,12 +1,12 @@
 // Module ID: 13692
 // Function ID: 13693
 // Name: BeeIllocon
-// Dependencies: [19, 21, 13693, 13694, 13695, 7755, 6020, 2]
+// Dependencies: [19, 21, 13693, 13694, 13695, 7755, 6010, 2]
 // Exports: BeeIllocon
 
 // Module 13692 (BeeIllocon)
 import Fragment from "Fragment" /* 21 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import react_native from "react-native" /* 7755 */;
 import _modDef13693 from "module_13693" /* 13693 */;
 import _modDef13694 from "module_13694" /* 13694 */;

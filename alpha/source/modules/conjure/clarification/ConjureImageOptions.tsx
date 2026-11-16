@@ -11,7 +11,7 @@ import MaskedLinkStoreMethodsAdditional from "MaskedLinkStoreMethodsAdditional" 
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size_mod from "module_2" /* 2 */;
 
-const f108187 = (image) => null != image.image;
+const f108200 = (image) => null != image.image;
 let closure_4 = [];
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/conjure/clarification/ConjureImageOptions.tsx");
@@ -20,7 +20,7 @@ export function isImageQuestion(upload) {
   let someResult = true === upload.upload;
   if (!someResult) {
     const options = upload.options;
-    someResult = options.some(f108187);
+    someResult = options.some(f108200);
   }
   return someResult;
 }
@@ -32,7 +32,7 @@ export function hasTypedAnswer(allow_custom) {
       let someResult = true === allow_custom.upload;
       if (!someResult) {
         const options = allow_custom.options;
-        someResult = options.some(f108187);
+        someResult = options.some(f108200);
       }
       tmp2 = !someResult;
     }

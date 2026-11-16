@@ -1,15 +1,15 @@
-// Module ID: 20867
-// Function ID: 20868
+// Module ID: 20870
+// Function ID: 20871
 // Name: SafetyFlowTaskScreen
-// Dependencies: [19, 21, 5306, 8208, 8210, 6337, 5929, 14079, 20865, 15159, 2]
+// Dependencies: [19, 21, 5306, 8208, 8210, 6327, 5919, 14079, 20868, 15159, 2]
 // Exports: default
 
-// Module 20867 (SafetyFlowTaskScreen)
-import Text_Text from "Text/Text" /* 5929 */;
-import Stack_Stack from "Stack/Stack" /* 6337 */;
+// Module 20870 (SafetyFlowTaskScreen)
+import Text_Text from "Text/Text" /* 5919 */;
+import Stack_Stack from "Stack/Stack" /* 6327 */;
 import ModalScreen2 from "ModalScreen" /* 8208 */;
 import ModalContent2 from "ModalContent" /* 8210 */;
-import LogOutDisclaimerDefault from "LogOutDisclaimer" /* 20865 */;
+import LogOutDisclaimerDefault from "LogOutDisclaimer" /* 20868 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;
@@ -58,7 +58,7 @@ export default function SafetyFlowTaskScreen(title) {
   let tmp7Result = null != subtitle;
   if (tmp7Result) {
     const obj2 = { variant: "body-md/medium", color: subtitleColor, style: tmp2.header, children: subtitle };
-    tmp7Result = tmp7(tmp4(5929).Text, obj2);
+    tmp7Result = tmp7(tmp4(5919).Text, obj2);
   }
   const obj3 = { children: items1 };
   items[2] = tmp7Result;

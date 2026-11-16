@@ -1,13 +1,13 @@
 // Module ID: 7641
 // Function ID: 7642
 // Name: BaseTextField
-// Dependencies: [19, 21, 1380, 7639, 5484, 7642, 7645, 5483, 2]
+// Dependencies: [19, 21, 1380, 7639, 5474, 7642, 7645, 5473, 2]
 // Exports: BaseTextField
 
 // Module 7641 (BaseTextField)
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import mergeProps from "mergeProps" /* 5483 */;
-import useFocus from "useFocus" /* 5484 */;
+import mergeProps from "mergeProps" /* 5473 */;
+import useFocus from "useFocus" /* 5474 */;
 import InputFieldContainer2 from "InputFieldContainer" /* 7639 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 7645 */;
 import react from "react" /* 19 */;

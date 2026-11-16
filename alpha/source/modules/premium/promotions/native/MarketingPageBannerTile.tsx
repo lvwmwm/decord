@@ -1,14 +1,14 @@
 // Module ID: 10015
 // Function ID: 10016
 // Name: MarketingPageBannerTile
-// Dependencies: [19, 17, 21, 5306, 575, 7918, 10016, 6338, 1264, 10073, 6020, 5929, 6012, 10074, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 7918, 10016, 6328, 1264, 10073, 6010, 5919, 6002, 10074, 2]
 // Exports: default
 
 // Module 10015 (MarketingPageBannerTile)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import LinkingDefault from "Linking" /* 6012 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 6338 */;
+import LinkingDefault from "Linking" /* 6002 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 6328 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7918 */;
 import NitroUpsellButtonDefault from "NitroUpsellButton" /* 10074 */;
 import react from "react" /* 19 */;
@@ -95,15 +95,15 @@ export default function MarketingPageBannerTile(bannerFields) {
   if (tmp14Result) {
     const obj5 = { source: obj6, style: tmp.image, resizeMode: "contain" };
     obj6 = { uri: bannerFields.assetUrl };
-    tmp14Result = tmp14(tmp2(6020), obj5);
+    tmp14Result = tmp14(tmp2(6010), obj5);
   }
   items2 = [tmp14Result, , , ];
   const obj7 = { color: "mobile-text-heading-primary", variant: "body-lg/semibold", children: bannerFields.header };
-  items2[1] = closure_4(helpArticleLinkProps(5929).Text, obj7);
+  items2[1] = closure_4(helpArticleLinkProps(5919).Text, obj7);
   const obj8 = { color: "mobile-text-heading-primary", variant: "body-sm/medium", style: tmp.bodyText, children: items3 };
   items3 = [formatStringWithCommonPremiumParams, " ", ];
   let tmp14Result3 = null != helpArticleLinkProps;
-  const Text = tmp4(5929).Text;
+  const Text = tmp4(5919).Text;
   if (tmp14Result3) {
     const obj9 = {
       color: "text-link",
@@ -115,7 +115,7 @@ export default function MarketingPageBannerTile(bannerFields) {
         },
       children: helpArticleLinkProps.linkText
     };
-    tmp14Result3 = tmp14(tmp4(5929).Text, obj9);
+    tmp14Result3 = tmp14(tmp4(5919).Text, obj9);
   }
   items3[2] = tmp14Result3;
   items2[2] = closure_5(Text, obj8);

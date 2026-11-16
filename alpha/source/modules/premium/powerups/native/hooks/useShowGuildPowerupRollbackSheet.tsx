@@ -1,7 +1,7 @@
 // Module ID: 10709
 // Function ID: 10710
 // Name: useShowGuildPowerupRollbackSheet
-// Dependencies: [32, 19, 5152, 10710, 9560, 10711, 5552, 2]
+// Dependencies: [32, 19, 5152, 10710, 9560, 10711, 5542, 2]
 // Exports: default
 
 // Module 10709 (useShowGuildPowerupRollbackSheet)

@@ -1,7 +1,7 @@
 // Module ID: 8120
 // Function ID: 8121
 // Name: CardSection
-// Dependencies: [19, 17, 1072, 21, 5306, 6826, 575, 8121, 2]
+// Dependencies: [19, 17, 1072, 21, 5306, 6816, 575, 8121, 2]
 // Exports: default
 
 // Module 8120 (CardSection)
@@ -12,7 +12,7 @@ import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8121 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
-import TextStyles_mod from "TextStyles" /* 6826 */;
+import TextStyles_mod from "TextStyles" /* 6816 */;
 import size from "module_2" /* 2 */;
 
 let DISPLAY_EXTRABOLD;

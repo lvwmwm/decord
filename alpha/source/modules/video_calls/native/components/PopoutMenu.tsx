@@ -1,7 +1,7 @@
 // Module ID: 12781
 // Function ID: 12782
 // Name: PopoutMenu
-// Dependencies: [32, 19, 17, 21, 5306, 575, 7901, 1187, 8106, 1496, 1630, 12, 1655, 5548, 1708, 5556, 5598, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 575, 7901, 1187, 8106, 1496, 1630, 12, 1655, 5538, 1708, 5546, 5588, 2]
 // Exports: default
 
 // Module 12781 (PopoutMenu)
@@ -10,8 +10,8 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import _mod1708 from "module_1708" /* 1708 */;
-import Patterns from "Patterns" /* 5556 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5598 */;
+import Patterns from "Patterns" /* 5546 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5588 */;
 import FormRowDefault from "FormRow" /* 7901 */;
 import _mod8106 from "module_8106" /* 8106 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

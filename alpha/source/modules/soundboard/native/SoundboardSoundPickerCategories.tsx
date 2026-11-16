@@ -1,20 +1,20 @@
-// Module ID: 19226
-// Function ID: 19227
+// Module ID: 19228
+// Function ID: 19229
 // Name: SoundboardSoundPickerCategories
-// Dependencies: [19, 17, 19210, 1388, 1072, 21, 5306, 575, 7227, 7720, 1113, 11362, 6042, 19224, 10324, 7428, 1187, 8092, 5598, 5554, 5555, 504, 2174, 11260, 1630, 5508, 8611, 7888, 2]
+// Dependencies: [19, 17, 19212, 1388, 1072, 21, 5306, 575, 7227, 7720, 1113, 11362, 6032, 19226, 10324, 7428, 1187, 8092, 5588, 5544, 5545, 504, 2174, 11260, 1630, 5498, 8611, 7888, 2]
 
-// Module 19226 (SoundboardSoundPickerCategories)
+// Module 19228 (SoundboardSoundPickerCategories)
 import nativeDefault from "native" /* 575 */;
-import HapticUtils from "HapticUtils" /* 5554 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5555 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5598 */;
+import HapticUtils from "HapticUtils" /* 5544 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5545 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5588 */;
 import SoundboardTypes from "SoundboardTypes" /* 7227 */;
 import GuildIconDefault from "GuildIcon" /* 7720 */;
 import LockIcon from "LockIcon" /* 8092 */;
 import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 11260 */;
 import AssetRegistryDefault from "AssetRegistry" /* 11362 */;
-import ExpressionPickerStore from "ExpressionPickerStore" /* 19210 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 19224 */;
+import ExpressionPickerStore from "ExpressionPickerStore" /* 19212 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 19226 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1388 */;
@@ -76,7 +76,7 @@ function SoundCategoryItem(style) {
     const intl3 = tmp2(1113).intl;
     name = intl3.string(tmp2(1113).t["+cGVV6"]);
     const obj = { style: tmp.keyboardItem };
-    tmp7 = authStore(tmp2(6042).ClockIcon, obj);
+    tmp7 = authStore(tmp2(6032).ClockIcon, obj);
     tmp6 = null;
     tmp14Result = null;
   } else if (SoundboardTypes.SoundboardSoundGridSectionType.DEFAULTS === type) {

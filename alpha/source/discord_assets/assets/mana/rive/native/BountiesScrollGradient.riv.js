@@ -1,8 +1,8 @@
-// Module ID: 5444
-// Function ID: 5445
+// Module ID: 5434
+// Function ID: 5435
 // Dependencies: [2]
 
-// Module 5444
+// Module 5434
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/rive/native/BountiesScrollGradient.riv.js");

@@ -1,11 +1,11 @@
 // Module ID: 16287
 // Function ID: 16288
 // Name: AddFriendModalActionCreators
-// Dependencies: [1388, 6848, 16288, 2121, 2]
+// Dependencies: [1388, 6838, 16288, 2121, 2]
 
 // Module 16287 (AddFriendModalActionCreators)
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 

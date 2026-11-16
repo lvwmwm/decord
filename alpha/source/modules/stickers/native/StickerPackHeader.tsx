@@ -1,15 +1,15 @@
 // Module ID: 11367
 // Function ID: 11368
 // Name: StickerPackHeader
-// Dependencies: [19, 17, 11244, 21, 5306, 575, 5929, 6792, 1187, 11368, 11369, 1113, 11370, 7428, 2]
+// Dependencies: [19, 17, 11244, 21, 5306, 575, 5919, 6782, 1187, 11368, 11369, 1113, 11370, 7428, 2]
 
 // Module 11367 (StickerPackHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import StickersUtils from "StickersUtils" /* 6792 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import StickersUtils from "StickersUtils" /* 6782 */;
 import AssetRegistryDefault from "AssetRegistry" /* 11368 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 11369 */;
 import react from "react" /* 19 */;
@@ -88,12 +88,12 @@ const memoResult = react.memo(function StickerPackHeader(withDescription) {
   }
   if (flag) {
     const obj9 = { variant: "body-sm/medium", children: stickerPack.description };
-    flag = tmp4(tmp6(5929).Text, obj9);
+    flag = tmp4(tmp6(5919).Text, obj9);
   }
   const obj10 = { children: items1 };
   items1[1] = flag;
   const obj11 = { lineClamp: 1, variant: "body-xs/medium", color: "text-default", children: intl.format(intl2.t["0S3JpO"], obj12) };
-  const Text = tmp6(5929).Text;
+  const Text = tmp6(5919).Text;
   intl = tmp6(1113).intl;
   obj12 = { numStickers: stickerPack.stickers.length };
   items1[2] = React3(Text, obj11);

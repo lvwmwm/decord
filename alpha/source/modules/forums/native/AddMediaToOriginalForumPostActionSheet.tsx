@@ -1,14 +1,14 @@
 // Module ID: 14607
 // Function ID: 14608
 // Name: AddMediaToOriginalForumPostActionSheet
-// Dependencies: [32, 5, 19, 17, 5155, 8725, 5177, 6372, 1072, 21, 5306, 575, 9022, 8875, 8890, 5552, 11167, 11153, 11, 8846, 11166, 8864, 1285, 14608, 8660, 8853, 6269, 1113, 504, 7918, 8866, 8879, 5566, 14609, 5929, 5937, 2]
+// Dependencies: [32, 5, 19, 17, 5155, 8725, 5177, 6362, 1072, 21, 5306, 575, 9022, 8875, 8890, 5542, 11167, 11153, 11, 8846, 11166, 8864, 1285, 14608, 8660, 8853, 6259, 1113, 504, 7918, 8866, 8879, 5556, 14609, 5919, 5927, 2]
 // Exports: default
 
 // Module 14607 (AddMediaToOriginalForumPostActionSheet)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import DraftStore from "DraftStore" /* 8725 */;
 import Tracking from "Tracking" /* 8866 */;
 import utils_UploadUtils from "utils/UploadUtils" /* 8879 */;
@@ -17,7 +17,7 @@ import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import GuildStore from "GuildStore" /* 5177 */;
-import MessageStore from "MessageStore" /* 6372 */;
+import MessageStore from "MessageStore" /* 6362 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;

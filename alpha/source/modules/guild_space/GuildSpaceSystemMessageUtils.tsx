@@ -1,12 +1,12 @@
 // Module ID: 9177
 // Function ID: 9178
 // Name: GuildSpaceSystemMessageUtils
-// Dependencies: [5249, 1388, 9178, 9179, 6351, 1113, 5226, 9180, 2]
+// Dependencies: [5249, 1388, 9178, 9179, 6341, 1113, 5226, 9180, 2]
 // Exports: stringifyGuildSpaceSystemMessage
 
 // Module 9177 (GuildSpaceSystemMessageUtils)
 import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 5226 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6351 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6341 */;
 import PopularMusicSystemMessageTypes from "PopularMusicSystemMessageTypes" /* 9178 */;
 import PopularMusicSystemMessageCopy from "PopularMusicSystemMessageCopy" /* 9179 */;
 import GuildLeaderboardSystemMessageCopy from "GuildLeaderboardSystemMessageCopy" /* 9180 */;
@@ -110,7 +110,7 @@ export function stringifyGuildSpaceSystemMessage(message5, channel) {
       obj6 = NicknameUtilsDefault;
       const tmp31 = importDefault;
       if (guildSpaceLeaderboardMessage.data.event === GuildLeaderboardTypes.GuildSpaceLeaderboardEvent.LEADER_CHANGED) {
-        const tmp31Result = tmp31(6351);
+        const tmp31Result = tmp31(6341);
         str = tmp31Result.getName(guildId, channel_id, guildSpaceLeaderboardMessage.previousLeader);
       }
       const leaderboardSystemMessage = getLeaderboardSystemMessage(data, obj2);

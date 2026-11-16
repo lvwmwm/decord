@@ -1,14 +1,14 @@
 // Module ID: 17285
 // Function ID: 17286
 // Name: TwoFASetupLanding
-// Dependencies: [19, 17, 21, 5306, 17286, 17282, 7415, 6020, 17287, 5929, 1113, 2]
+// Dependencies: [19, 17, 21, 5306, 17286, 17282, 7415, 6010, 17287, 5919, 1113, 2]
 // Exports: default
 
 // Module 17285 (TwoFASetupLanding)
 import react_native from "react-native" /* 17 */;
 import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 7415 */;
 import TwoFASetupModal from "TwoFASetupModal" /* 17282 */;
 import TwoFASetupStyles from "TwoFASetupStyles" /* 17286 */;

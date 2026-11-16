@@ -1,7 +1,7 @@
 // Module ID: 7838
 // Function ID: 7839
 // Name: useFastestListSections
-// Dependencies: [19, 5917, 7839, 7840, 2]
+// Dependencies: [19, 5907, 7839, 7840, 2]
 // Exports: default
 
 // Module 7838 (useFastestListSections)

@@ -1,7 +1,7 @@
 // Module ID: 12586
 // Function ID: 12587
 // Name: handleMessagesTapLink
-// Dependencies: [11406, 2165, 9165, 12000, 1407, 5155, 6052, 6372, 1388, 1072, 1501, 5162, 6847, 1112, 12584, 6048, 8841, 12585, 10286, 10281, 7653, 12460, 8476, 5552, 10655, 2121, 6935, 6862, 12587, 10902, 12588, 8660, 7937, 12589, 1628, 12590, 6749, 1099, 9221, 12593, 12616, 2]
+// Dependencies: [11406, 2165, 9165, 12000, 1407, 5155, 6042, 6362, 1388, 1072, 1501, 5162, 6837, 1112, 12584, 6038, 8841, 12585, 10286, 10281, 7653, 12460, 8476, 5542, 10655, 2121, 6925, 6852, 12587, 10902, 12588, 8660, 7937, 12589, 1628, 12590, 6739, 1099, 9221, 12593, 12616, 2]
 // Exports: handleMessagesTapLink
 
 // Module 12586 (handleMessagesTapLink)
@@ -11,12 +11,12 @@ import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
 import KeyboardTypes from "KeyboardTypes" /* 1628 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
 import ChannelConstants from "ChannelConstants" /* 5162 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import parseURLDefault from "parseURL" /* 6048 */;
-import useMessageAuthor from "useMessageAuthor" /* 6749 */;
-import PushNotificationConstants from "PushNotificationConstants" /* 6847 */;
-import StreamActionCreators from "StreamActionCreators" /* 6862 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6935 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import parseURLDefault from "parseURL" /* 6038 */;
+import useMessageAuthor from "useMessageAuthor" /* 6739 */;
+import PushNotificationConstants from "PushNotificationConstants" /* 6837 */;
+import StreamActionCreators from "StreamActionCreators" /* 6852 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6925 */;
 import MaskedLinkUtils from "MaskedLinkUtils" /* 7653 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;
@@ -38,8 +38,8 @@ import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 9165 */;
 import SummaryStore from "SummaryStore" /* 12000 */;
 import UserRecord from "UserRecord" /* 1407 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
-import InviteStore from "InviteStore" /* 6052 */;
-import MessageStore from "MessageStore" /* 6372 */;
+import InviteStore from "InviteStore" /* 6042 */;
+import MessageStore from "MessageStore" /* 6362 */;
 import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;

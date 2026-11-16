@@ -1,25 +1,25 @@
-// Module ID: 20069
-// Function ID: 20070
+// Module ID: 20071
+// Function ID: 20072
 // Name: VoicePanelControls
-// Dependencies: [32, 19, 17, 7016, 11985, 11988, 11983, 1072, 21, 5306, 575, 1627, 20070, 7997, 11984, 1655, 19978, 5902, 5598, 1708, 19187, 11991, 14677, 5554, 5568, 13809, 11333, 20071, 19959, 20072, 5377, 20076, 20078, 7416, 20081, 5939, 19229, 20104, 19218, 1263, 20105, 20106, 1108, 1630, 1496, 10576, 12017, 20077, 13434, 20107, 20049, 20080, 20108, 2]
+// Dependencies: [32, 19, 17, 7016, 11985, 11988, 11983, 1072, 21, 5306, 575, 1627, 20072, 7997, 11984, 1655, 19980, 5892, 5588, 1708, 19189, 11991, 14677, 5544, 5558, 13809, 11333, 20073, 19961, 20074, 5367, 20078, 20080, 7416, 20083, 5929, 19231, 20106, 19220, 1263, 20107, 20108, 1108, 1630, 1496, 10576, 12017, 20079, 13434, 20109, 20051, 20082, 20110, 2]
 
-// Module 20069 (VoicePanelControls)
+// Module 20071 (VoicePanelControls)
 import nativeDefault from "native" /* 575 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import native from "native" /* 5377 */;
-import spring_spring from "spring/spring" /* 5939 */;
+import native from "native" /* 5367 */;
+import spring_spring from "spring/spring" /* 5929 */;
 import useRefValueDefault from "useRefValue" /* 7416 */;
 import native2 from "native" /* 7997 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11984 */;
-import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 19187 */;
-import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 19959 */;
-import useControlsLockDefault from "useControlsLock" /* 19978 */;
-import useDrawerToggleDefault from "useDrawerToggle" /* 20070 */;
-import useConsoleConnectingInfoDefault from "useConsoleConnectingInfo" /* 20072 */;
-import VoicePanelFloatingCTAContainer from "VoicePanelFloatingCTAContainer" /* 20076 */;
-import VoicePanelConsoleStatus from "VoicePanelConsoleStatus" /* 20078 */;
-import useControlsButtonsDefault from "useControlsButtons" /* 20081 */;
+import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 19189 */;
+import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 19961 */;
+import useControlsLockDefault from "useControlsLock" /* 19980 */;
+import useDrawerToggleDefault from "useDrawerToggle" /* 20072 */;
+import useConsoleConnectingInfoDefault from "useConsoleConnectingInfo" /* 20074 */;
+import VoicePanelFloatingCTAContainer from "VoicePanelFloatingCTAContainer" /* 20078 */;
+import VoicePanelConsoleStatus from "VoicePanelConsoleStatus" /* 20080 */;
+import useControlsButtonsDefault from "useControlsButtons" /* 20083 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -134,7 +134,7 @@ let closure_37 = react.memo(function FloatingBars(controlsSpecs) {
   const obj2 = { item: tmp11, renderItem: VoicePanelFloatingCTAContainer.renderVoicePanelFloatingCTA };
   items2[0] = authStore4(TransitionItem, obj2);
   let tmp12;
-  const TransitionItem2 = tmp(5377).TransitionItem;
+  const TransitionItem2 = tmp(5367).TransitionItem;
   if (isConnectingOrConnectedToConsole) {
     tmp12 = memo;
   }

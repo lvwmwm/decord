@@ -1,7 +1,7 @@
 // Module ID: 13505
 // Function ID: 13506
 // Name: AppLauncherAutocompleteOption
-// Dependencies: [32, 19, 17, 1191, 21, 5306, 7639, 5902, 575, 2020, 5552, 13506, 2121, 13504, 7428, 5929, 2]
+// Dependencies: [32, 19, 17, 1191, 21, 5306, 7639, 5892, 575, 2020, 5542, 13506, 2121, 13504, 7428, 5919, 2]
 // Exports: default
 
 // Module 13505 (AppLauncherAutocompleteOption)
@@ -11,8 +11,8 @@ import nativeDefault from "native" /* 575 */;
 import FormConstants from "FormConstants" /* 1191 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 2020 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import useToken from "useToken" /* 5902 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import useToken from "useToken" /* 5892 */;
 import Pressables from "Pressables" /* 7428 */;
 import InputFieldContainer2 from "InputFieldContainer" /* 7639 */;
 import useAnimationDelayedAutoFocus from "useAnimationDelayedAutoFocus" /* 13504 */;
@@ -22,7 +22,7 @@ import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let tmp4;
-const Text_Text = tmp4(5929);
+const Text_Text = tmp4(5919);
 const View = react_native.View;
 const ANDROID_FOREGROUND_RIPPLE = FormConstants.ANDROID_FOREGROUND_RIPPLE;
 const jsx = Fragment.jsx;

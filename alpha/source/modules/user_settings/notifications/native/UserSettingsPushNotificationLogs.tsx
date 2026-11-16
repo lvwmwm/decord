@@ -1,14 +1,14 @@
-// Module ID: 18200
-// Function ID: 18201
+// Module ID: 18202
+// Function ID: 18203
 // Name: UserSettingsPushNotificationLogs
-// Dependencies: [5, 32, 19, 17, 1072, 21, 5306, 575, 7640, 510, 11105, 1630, 7825, 7428, 1113, 10230, 11107, 12289, 7888, 5929, 2]
+// Dependencies: [5, 32, 19, 17, 1072, 21, 5306, 575, 7640, 510, 11105, 1630, 7825, 7428, 1113, 10230, 11107, 12289, 7888, 5919, 2]
 // Exports: default
 
-// Module 18200 (UserSettingsPushNotificationLogs)
+// Module 18202 (UserSettingsPushNotificationLogs)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import InputTypes from "InputTypes" /* 7640 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;

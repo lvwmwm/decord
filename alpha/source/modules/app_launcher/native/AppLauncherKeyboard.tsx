@@ -1,7 +1,7 @@
 // Module ID: 13367
 // Function ID: 13368
 // Name: AppLauncherKeyboard
-// Dependencies: [19, 17, 1072, 5152, 13368, 21, 5306, 575, 12580, 12578, 12015, 5568, 13369, 1655, 13378, 1708, 5377, 5570, 13379, 1380, 6067, 1627, 1500, 1628, 6331, 13410, 12579, 13413, 2]
+// Dependencies: [19, 17, 1072, 5152, 13368, 21, 5306, 575, 12580, 12578, 12015, 5558, 13369, 1655, 13378, 1708, 5367, 5560, 13379, 1380, 6057, 1627, 1500, 1628, 6321, 13410, 12579, 13413, 2]
 // Exports: setAppLauncherA11yFocusReturnRef
 
 // Module 13367 (AppLauncherKeyboard)
@@ -12,10 +12,10 @@ import KeyboardUIStore from "KeyboardUIStore" /* 1500 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1627 */;
 import KeyboardTypes from "KeyboardTypes" /* 1628 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
-import native from "native" /* 5377 */;
-import BottomSheetModal from "BottomSheetModal" /* 5570 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6067 */;
-import react_native2 from "react-native" /* 6331 */;
+import native from "native" /* 5367 */;
+import BottomSheetModal from "BottomSheetModal" /* 5560 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6057 */;
+import react_native2 from "react-native" /* 6321 */;
 import PortalKeyboardConstants from "PortalKeyboardConstants" /* 13368 */;
 import completeAppLauncherOnboardingDefault from "completeAppLauncherOnboarding" /* 13378 */;
 import AppLauncherOnboardingLayerDefault from "AppLauncherOnboardingLayer" /* 13379 */;

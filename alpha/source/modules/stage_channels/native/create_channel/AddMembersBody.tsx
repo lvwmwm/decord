@@ -1,7 +1,7 @@
 // Module ID: 8187
 // Function ID: 8188
 // Name: AddMembersBody
-// Dependencies: [109, 32, 19, 17, 5218, 5212, 1388, 6912, 1083, 21, 5306, 575, 5243, 5913, 504, 5958, 8131, 1187, 1113, 8172, 5315, 5570, 8177, 7075, 5929, 8159, 8182, 2]
+// Dependencies: [109, 32, 19, 17, 5218, 5212, 1388, 6902, 1083, 21, 5306, 575, 5243, 5903, 504, 5948, 8131, 1187, 1113, 8172, 5315, 5560, 8177, 7075, 5919, 8159, 8182, 2]
 // Exports: default
 
 // Module 8187 (AddMembersBody)
@@ -10,8 +10,8 @@ import Constants from "Constants" /* 1083 */;
 import intl6 from "intl" /* 1113 */;
 import PermissionUtilsAll from "PermissionUtils" /* 5243 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5315 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import RegexUtilsDefault from "RegexUtils" /* 5958 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import RegexUtilsDefault from "RegexUtils" /* 5948 */;
 import GuildUtilsDefault from "GuildUtils" /* 7075 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
@@ -20,7 +20,7 @@ import react_native from "react-native" /* 17 */;
 import GuildMemberStore from "GuildMemberStore" /* 5218 */;
 import GuildRoleStore from "GuildRoleStore" /* 5212 */;
 import UserStore from "UserStore" /* 1388 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 6912 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 6902 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
@@ -146,7 +146,7 @@ export default function AddMembersBody(pendingAdditions) {
   const tmp4 = pendingAdditions;
   let tmp5 = dependencyMap;
   let obj = { isKeyboardAwareOnAndroid: !inActionSheet };
-  const insets = pendingAdditions(5913)(obj).insets;
+  const insets = pendingAdditions(5903)(obj).insets;
   let obj2 = guild(504);
   let items = [GuildRoleStore];
   const stateFromStores = obj2.useStateFromStores(items, () => GuildRoleStore.getSortedRoles(guild.id));
@@ -202,12 +202,12 @@ export default function AddMembersBody(pendingAdditions) {
     }
   }, items4);
   if (inActionSheet) {
-    BottomSheetScrollView = tmp6(5570).BottomSheetScrollView;
+    BottomSheetScrollView = tmp6(5560).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = c8;
   }
   if (inActionSheet) {
-    BottomSheetSectionList = tmp6(5570).BottomSheetSectionList;
+    BottomSheetSectionList = tmp6(5560).BottomSheetSectionList;
   } else {
     BottomSheetSectionList = closure_9;
   }
@@ -245,7 +245,7 @@ export default function AddMembersBody(pendingAdditions) {
   const tmp25 = closure_18;
   const tmp26 = closure_17;
   if (null != inputDesc) {
-    const obj11 = { style: tmp3.inputDescContainer, children: closure_16(guild(5929).Text, obj12) };
+    const obj11 = { style: tmp3.inputDescContainer, children: closure_16(guild(5919).Text, obj12) };
     obj12 = { style: tmp3.inputDescText, variant: "body-xs/medium", color: "text-default", children: inputDesc };
     tmp27Result = tmp27(tmp28, obj11);
   }

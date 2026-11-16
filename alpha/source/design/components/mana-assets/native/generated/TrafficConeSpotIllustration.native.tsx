@@ -1,7 +1,7 @@
 // Module ID: 7751
 // Function ID: 7752
 // Name: TrafficConeSpotIllustration
-// Dependencies: [19, 21, 7752, 7753, 7754, 7755, 6020, 2]
+// Dependencies: [19, 21, 7752, 7753, 7754, 7755, 6010, 2]
 // Exports: TrafficConeSpotIllustration
 
 // Module 7751 (TrafficConeSpotIllustration)

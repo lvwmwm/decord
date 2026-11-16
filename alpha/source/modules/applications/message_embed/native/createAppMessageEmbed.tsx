@@ -1,7 +1,7 @@
 // Module ID: 14549
 // Function ID: 14550
 // Name: createAppMessageEmbed
-// Dependencies: [32, 1388, 7314, 2165, 1501, 11891, 7055, 14550, 9170, 1113, 14551, 12698, 7313, 12697, 14552, 14553, 1414, 1381, 8797, 12705, 7937, 5985, 5501, 1628, 12764, 7943, 6014, 1255, 2]
+// Dependencies: [32, 1388, 7314, 2165, 1501, 11891, 7055, 14550, 9170, 1113, 14551, 12698, 7313, 12697, 14552, 14553, 1414, 1381, 8797, 12705, 7937, 5975, 5491, 1628, 12764, 7943, 6004, 1255, 2]
 // Exports: createAppMessageEmbed, getAppLinkGateResult, handleTapAppMessageEmbed
 
 // Module 14549 (createAppMessageEmbed)
@@ -11,9 +11,9 @@ import URLUtilsDefault from "URLUtils" /* 1381 */;
 import AvatarUtils from "AvatarUtils" /* 1414 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
 import KeyboardTypes from "KeyboardTypes" /* 1628 */;
-import ChatInputUtils from "ChatInputUtils" /* 5501 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5985 */;
-import ToastUtils from "ToastUtils" /* 6014 */;
+import ChatInputUtils from "ChatInputUtils" /* 5491 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5975 */;
+import ToastUtils from "ToastUtils" /* 6004 */;
 import ApplicationActionCreators from "ApplicationActionCreators" /* 7055 */;
 import ApplicationAssetUtils from "ApplicationAssetUtils" /* 7313 */;
 import ApplicationAssetsStore2 from "ApplicationAssetsStore" /* 7314 */;

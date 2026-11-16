@@ -1,20 +1,20 @@
-// Module ID: 19907
-// Function ID: 19908
+// Module ID: 19909
+// Function ID: 19910
 // Name: useExternalPipParticipant
-// Dependencies: [19, 7016, 16245, 6820, 502, 2133, 6071, 5983, 11985, 19908, 11990, 504, 2]
+// Dependencies: [19, 7016, 16245, 6810, 502, 2133, 6061, 5973, 11985, 19910, 11990, 504, 2]
 // Exports: default
 
-// Module 19907 (useExternalPipParticipant)
-import CallConstants from "CallConstants" /* 5983 */;
+// Module 19909 (useExternalPipParticipant)
+import CallConstants from "CallConstants" /* 5973 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11985 */;
-import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 19908 */;
+import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 19910 */;
 import react from "react" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 7016 */;
 import PIPSpeakerStore from "PIPSpeakerStore" /* 16245 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6820 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6810 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6071 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
 import size from "module_2" /* 2 */;
 
 let mediaEngine;

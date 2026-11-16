@@ -1,17 +1,17 @@
 // Module ID: 12575
 // Function ID: 12576
 // Name: MarkupReactCommandRule
-// Dependencies: [19, 5155, 1501, 6345, 6346, 21, 5985, 5493, 5552, 1628, 6269, 1113, 1187, 12576, 6014, 7943, 5131, 11629, 7948, 12578, 5929, 5501, 12581, 9355, 2]
+// Dependencies: [19, 5155, 1501, 6335, 6336, 21, 5975, 5483, 5542, 1628, 6259, 1113, 1187, 12576, 6004, 7943, 5131, 11629, 7948, 12578, 5919, 5491, 12581, 9355, 2]
 // Exports: default
 
 // Module 12575 (MarkupReactCommandRule)
 import Fragment from "Fragment" /* 21 */;
 import KeyboardTypes from "KeyboardTypes" /* 1628 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5985 */;
-import ToastUtils from "ToastUtils" /* 6014 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6345 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6346 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5975 */;
+import ToastUtils from "ToastUtils" /* 6004 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6335 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6336 */;
 import ClipboardUtils from "ClipboardUtils" /* 7943 */;
 import navigateToLastChannelDefault from "navigateToLastChannel" /* 12581 */;
 import react from "react" /* 19 */;
@@ -177,7 +177,7 @@ export default function MarkupReactCommandRule(node) {
   ({ output, state, style } = node);
   let closure_1 = null != react.useContext(node(12578).AppLauncherContext);
   dependencyMap = closure_6();
-  const Text = node(5929).Text;
+  const Text = node(5919).Text;
   let obj2 = node(9355);
   const items = ["/", obj2.smartOutput(node, output, state)];
   return <Text style={style} variant="body-md/semibold" onPress={function onPress() {

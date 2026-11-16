@@ -1,7 +1,7 @@
 // Module ID: 14858
 // Function ID: 14859
 // Name: EmojiSuggestionBarSmall
-// Dependencies: [19, 9546, 21, 575, 5306, 14842, 1655, 11274, 11298, 5377, 2]
+// Dependencies: [19, 9546, 21, 575, 5306, 14842, 1655, 11274, 11298, 5367, 2]
 // Exports: EmojiSuggestionBarSmall
 
 // Module 14858 (EmojiSuggestionBarSmall)

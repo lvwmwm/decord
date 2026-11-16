@@ -1,12 +1,12 @@
 // Module ID: 7619
 // Function ID: 7620
 // Name: TextInput/TextInput
-// Dependencies: [109, 19, 21, 5379, 7620, 7626, 7621, 2]
+// Dependencies: [109, 19, 21, 5369, 7620, 7626, 7621, 2]
 // Exports: TextInput
 
 // Module 7619 (TextInput/TextInput)
 import Fragment from "Fragment" /* 21 */;
-import useFieldLabelA11yNative from "useFieldLabelA11yNative" /* 5379 */;
+import useFieldLabelA11yNative from "useFieldLabelA11yNative" /* 5369 */;
 import getRequiredFieldA11yName from "getRequiredFieldA11yName" /* 7621 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;

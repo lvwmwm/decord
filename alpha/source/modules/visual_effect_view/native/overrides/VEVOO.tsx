@@ -1,23 +1,23 @@
-// Module ID: 18636
-// Function ID: 18637
+// Module ID: 18638
+// Function ID: 18639
 // Name: VEVOO
-// Dependencies: [19, 17, 5932, 573, 21, 5306, 575, 1655, 5939, 5940, 8106, 18637, 18639, 18640, 10865, 7549, 504, 18334, 2]
+// Dependencies: [19, 17, 5922, 573, 21, 5306, 575, 1655, 5929, 5930, 8106, 18639, 18641, 18642, 10865, 7549, 504, 18336, 2]
 
-// Module 18636 (VEVOO)
+// Module 18638 (VEVOO)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 573 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import spring_spring from "spring/spring" /* 5939 */;
-import springPresets from "springPresets" /* 5940 */;
+import spring_spring from "spring/spring" /* 5929 */;
+import springPresets from "springPresets" /* 5930 */;
 import XSmallIcon from "XSmallIcon" /* 7549 */;
 import ActionButtonDefault from "ActionButton" /* 10865 */;
-import VEVOOPropBlurAmountDefault from "VEVOOPropBlurAmount" /* 18637 */;
-import VEVOOPropTintColorDefault from "VEVOOPropTintColor" /* 18639 */;
-import VEVOOPropBlurEffectNameDefault from "VEVOOPropBlurEffectName" /* 18640 */;
+import VEVOOPropBlurAmountDefault from "VEVOOPropBlurAmount" /* 18639 */;
+import VEVOOPropTintColorDefault from "VEVOOPropTintColor" /* 18641 */;
+import VEVOOPropBlurEffectNameDefault from "VEVOOPropBlurEffectName" /* 18642 */;
 import react from "react" /* 19 */;
-import DevSettingsStore from "DevSettingsStore" /* 5932 */;
+import DevSettingsStore from "DevSettingsStore" /* 5922 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;

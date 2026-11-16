@@ -1,25 +1,25 @@
-// Module ID: 20007
-// Function ID: 20008
+// Module ID: 20009
+// Function ID: 20010
 // Name: VoicePanelCardView
-// Dependencies: [32, 19, 17, 7016, 6071, 11985, 11983, 19909, 11988, 5983, 21, 20008, 1655, 11333, 1708, 11984, 504, 5902, 575, 11991, 10576, 5939, 12017, 11995, 11994, 7416, 6299, 19968, 12, 5315, 1113, 5377, 2]
+// Dependencies: [32, 19, 17, 7016, 6061, 11985, 11983, 19911, 11988, 5973, 21, 20010, 1655, 11333, 1708, 11984, 504, 5892, 575, 11991, 10576, 5929, 12017, 11995, 11994, 7416, 6289, 19970, 12, 5315, 1113, 5367, 2]
 
-// Module 20007 (VoicePanelCardView)
+// Module 20009 (VoicePanelCardView)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef1655 from "module_1655" /* 1655 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5315 */;
-import CallConstants from "CallConstants" /* 5983 */;
-import react2 from "react" /* 6299 */;
+import CallConstants from "CallConstants" /* 5973 */;
+import react2 from "react" /* 6289 */;
 import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11983 */;
 import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11988 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19909 */;
-import VoicePanelCardDefault from "VoicePanelCard" /* 20008 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19911 */;
+import VoicePanelCardDefault from "VoicePanelCard" /* 20010 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 7016 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6071 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11985 */;
 import size_mod from "module_2" /* 2 */;
 

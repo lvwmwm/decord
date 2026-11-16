@@ -1,12 +1,12 @@
 // Module ID: 11416
 // Function ID: 11417
 // Name: application_commands/ApplicationCommandBuiltIns
-// Dependencies: [5248, 1388, 6345, 2119, 5985, 1113, 5954, 10900, 8134, 8660, 2]
+// Dependencies: [5248, 1388, 6335, 2119, 5975, 1113, 5944, 10900, 8134, 8660, 2]
 
 // Module 11416 (application_commands/ApplicationCommandBuiltIns)
 import Server from "Server" /* 2119 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5985 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6345 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5975 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6335 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 8134 */;
 import MessageActionCreatorsDefault from "MessageActionCreators" /* 8660 */;
 import RelationshipStore from "RelationshipStore" /* 5248 */;
@@ -33,7 +33,7 @@ let obj = {
     let intl4;
     channel = channel.channel;
     if (null != channel) {
-      const obj4 = channel(5954);
+      const obj4 = channel(5944);
       const channelName = obj4.computeChannelName(channel, UserStore, RelationshipStore);
       const intl5 = channel(1113).intl;
       const obj2 = { name: channelName };

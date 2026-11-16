@@ -1,11 +1,11 @@
-// Module ID: 18897
-// Function ID: 18898
+// Module ID: 18899
+// Function ID: 18900
 // Name: registerSidebarVisibilityMethods
-// Dependencies: [10134, 5177, 6956, 2]
+// Dependencies: [10134, 5177, 6946, 2]
 // Exports: registerFastListChannelVisibilityMethod, registerGuildVisibilityMethod
 
-// Module 18897 (registerSidebarVisibilityMethods)
-import SortedGuildStore2 from "SortedGuildStore" /* 6956 */;
+// Module 18899 (registerSidebarVisibilityMethods)
+import SortedGuildStore2 from "SortedGuildStore" /* 6946 */;
 import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore" /* 10134 */;
 import GuildStore from "GuildStore" /* 5177 */;
 import size from "module_2" /* 2 */;

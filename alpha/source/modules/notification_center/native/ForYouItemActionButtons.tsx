@@ -1,22 +1,22 @@
-// Module ID: 19251
-// Function ID: 19252
+// Module ID: 19253
+// Function ID: 19254
 // Name: ForYouItemActionButtons
-// Dependencies: [5, 19, 17, 5155, 1388, 1072, 21, 5306, 1108, 1655, 5548, 6337, 5936, 1113, 5929, 563, 9203, 18763, 6048, 16285, 10840, 7033, 8134, 8137, 6015, 12641, 1256, 2]
+// Dependencies: [5, 19, 17, 5155, 1388, 1072, 21, 5306, 1108, 1655, 5538, 6327, 5926, 1113, 5919, 563, 9203, 18765, 6038, 16285, 10840, 7033, 8134, 8137, 6005, 12641, 1256, 2]
 // Exports: ForYouItemActionButtons, useItemActionButtonPropsV2
 
-// Module 19251 (ForYouItemActionButtons)
+// Module 19253 (ForYouItemActionButtons)
 import react_native from "react-native" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5548 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 6015 */;
-import parseURLDefault from "parseURL" /* 6048 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
+import parseURLDefault from "parseURL" /* 6038 */;
 import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 7033 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 8134 */;
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 8137 */;
 import PeopleUtilsDefault from "PeopleUtils" /* 10840 */;
 import handleSupportedURLDefault from "handleSupportedURL" /* 16285 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 18763 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 18765 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
@@ -38,9 +38,9 @@ let metroImportAll;
 let tmp2;
 let unpackModuleId;
 const intl23 = tmp2(1113);
-const Text_Text = tmp2(5929);
-const components_Button_Button = tmp2(5936);
-const Stack_Stack = tmp2(6337);
+const Text_Text = tmp2(5919);
+const components_Button_Button = tmp2(5926);
+const Stack_Stack = tmp2(6327);
 function focusChatInput(channelId) {
   let tmp;
   if (null != channelId) {

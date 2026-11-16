@@ -1,18 +1,18 @@
-// Module ID: 6746
-// Function ID: 6747
+// Module ID: 6736
+// Function ID: 6737
 // Name: CheckpointTraitOptionNames
-// Dependencies: [6484, 3317, 6422, 6625, 6656, 6455, 6685, 6714, 6424, 2]
+// Dependencies: [6474, 3317, 6412, 6615, 6646, 6445, 6675, 6704, 6414, 2]
 
-// Module 6746 (CheckpointTraitOptionNames)
+// Module 6736 (CheckpointTraitOptionNames)
 import _modDef3317 from "module_3317" /* 3317 */;
-import CheckpointTrait from "CheckpointTrait" /* 6422 */;
-import CheckpointCharacterBase from "CheckpointCharacterBase" /* 6424 */;
-import CheckpointCharacterShoes from "CheckpointCharacterShoes" /* 6455 */;
-import CheckpointCharacterOutfit from "CheckpointCharacterOutfit" /* 6484 */;
-import CheckpointCharacterFace from "CheckpointCharacterFace" /* 6625 */;
-import CheckpointCharacterHat from "CheckpointCharacterHat" /* 6656 */;
-import CheckpointCharacterWearable from "CheckpointCharacterWearable" /* 6685 */;
-import CheckpointCharacterAura from "CheckpointCharacterAura" /* 6714 */;
+import CheckpointTrait from "CheckpointTrait" /* 6412 */;
+import CheckpointCharacterBase from "CheckpointCharacterBase" /* 6414 */;
+import CheckpointCharacterShoes from "CheckpointCharacterShoes" /* 6445 */;
+import CheckpointCharacterOutfit from "CheckpointCharacterOutfit" /* 6474 */;
+import CheckpointCharacterFace from "CheckpointCharacterFace" /* 6615 */;
+import CheckpointCharacterHat from "CheckpointCharacterHat" /* 6646 */;
+import CheckpointCharacterWearable from "CheckpointCharacterWearable" /* 6675 */;
+import CheckpointCharacterAura from "CheckpointCharacterAura" /* 6704 */;
 import size from "module_2" /* 2 */;
 
 const obj = {};

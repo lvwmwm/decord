@@ -1,16 +1,16 @@
 // Module ID: 8400
 // Function ID: 8401
 // Name: ManualReviewDecidedTeenAlertModal
-// Dependencies: [19, 6832, 21, 5929, 8190, 2188, 1113, 3417, 6274, 6274, 1264, 2]
+// Dependencies: [19, 6822, 21, 5919, 8190, 2188, 1113, 3417, 6264, 6264, 1264, 2]
 // Exports: default
 
 // Module 8400 (ManualReviewDecidedTeenAlertModal)
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1113 */;
 import _modDef3417 from "module_3417" /* 3417 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import AlertModal2 from "AlertModal" /* 6274 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 6832 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import AlertModal2 from "AlertModal" /* 6264 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 6822 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

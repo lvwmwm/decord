@@ -1,12 +1,12 @@
 // Module ID: 13672
 // Function ID: 13673
 // Name: CatIllocon
-// Dependencies: [19, 21, 13673, 13674, 13675, 7755, 6020, 2]
+// Dependencies: [19, 21, 13673, 13674, 13675, 7755, 6010, 2]
 // Exports: CatIllocon
 
 // Module 13672 (CatIllocon)
 import Fragment from "Fragment" /* 21 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import react_native from "react-native" /* 7755 */;
 import _modDef13673 from "module_13673" /* 13673 */;
 import _modDef13674 from "module_13674" /* 13674 */;

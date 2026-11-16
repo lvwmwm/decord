@@ -1,13 +1,13 @@
 // Module ID: 14103
 // Function ID: 14104
 // Name: ExperimentEmbedPlatformUtils
-// Dependencies: [5552, 14104, 2121, 12416, 12417, 8649, 5537, 2]
+// Dependencies: [5542, 14104, 2121, 12416, 12417, 8649, 5527, 2]
 // Exports: handleCodedLinkExperimentEmbedTap
 
 // Module 14103 (ExperimentEmbedPlatformUtils)
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ExperimentManager from "ExperimentManager" /* 5537 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ExperimentManager from "ExperimentManager" /* 5527 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import ExperimentEmbedUtils from "ExperimentEmbedUtils" /* 8649 */;
 import useLegacyExperiments from "useLegacyExperiments" /* 12416 */;
 import useApexExperiments from "useApexExperiments" /* 12417 */;

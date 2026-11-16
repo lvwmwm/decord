@@ -1,7 +1,7 @@
 // Module ID: 8433
 // Function ID: 8434
 // Name: GuildEventRecurrences
-// Dependencies: [19, 17, 21, 5306, 575, 8434, 5929, 1113, 11, 8436, 5936, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 8434, 5919, 1113, 11, 8436, 5926, 2]
 // Exports: default
 
 // Module 8433 (GuildEventRecurrences)
@@ -50,7 +50,7 @@ export default function GuildEventRecurrences(guildEventId) {
   let obj = { style: tmp2.container, children: items };
   let obj2 = { variant: "heading-sm/semibold", children: intl.string(guildEventId(1113).t["D/jjoa"]) };
   useGuildEventRecurrencesDefault(guildEventId, guildId, recurrenceRule);
-  const Text = guildEventId(5929).Text;
+  const Text = guildEventId(5919).Text;
   intl = guildEventId(1113).intl;
   items = [closure_6(Text, obj2), , ];
   const obj3 = {
@@ -83,7 +83,7 @@ export default function GuildEventRecurrences(guildEventId) {
         },
       size: "sm"
     };
-    const Button = tmp8(5936).Button;
+    const Button = tmp8(5926).Button;
     intl2 = tmp8(1113).intl;
     canViewMoreRecurrences = tmp7(Button, obj4);
   }

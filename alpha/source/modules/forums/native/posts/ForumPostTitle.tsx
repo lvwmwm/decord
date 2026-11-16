@@ -1,12 +1,12 @@
 // Module ID: 14625
 // Function ID: 14626
 // Name: ForumPostTitle
-// Dependencies: [19, 21, 5306, 1360, 5929, 2]
+// Dependencies: [19, 21, 5306, 1360, 5919, 2]
 // Exports: default
 
 // Module 14625 (ForumPostTitle)
 import Fragment from "Fragment" /* 21 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 5306 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1360 */;

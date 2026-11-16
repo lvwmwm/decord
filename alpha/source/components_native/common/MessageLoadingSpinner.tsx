@@ -1,14 +1,14 @@
 // Module ID: 12800
 // Function ID: 12801
 // Name: MessageLoadingSpinner
-// Dependencies: [19, 17, 21, 1380, 5902, 575, 7418, 2]
+// Dependencies: [19, 17, 21, 1380, 5892, 575, 7418, 2]
 // Exports: default
 
 // Module 12800 (MessageLoadingSpinner)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useToken2 from "useToken" /* 5902 */;
+import useToken2 from "useToken" /* 5892 */;
 import react from "react" /* 19 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import size from "module_2" /* 2 */;

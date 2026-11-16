@@ -1,13 +1,13 @@
 // Module ID: 7445
 // Function ID: 7446
 // Name: Card/Card
-// Dependencies: [109, 19, 17, 21, 1655, 575, 5306, 7446, 5942, 5902, 7447, 1380, 5939, 5940, 7451, 2]
+// Dependencies: [109, 19, 17, 21, 1655, 575, 5306, 7446, 5932, 5892, 7447, 1380, 5929, 5930, 7451, 2]
 
 // Module 7445 (Card/Card)
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import useToken2 from "useToken" /* 5902 */;
-import ButtonConstants from "ButtonConstants" /* 5942 */;
+import useToken2 from "useToken" /* 5892 */;
+import ButtonConstants from "ButtonConstants" /* 5932 */;
 import CardTokens from "CardTokens" /* 7446 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
@@ -25,8 +25,8 @@ let metroRequire;
 let tmp;
 let tmp2;
 const _mod1655 = tmp(1655);
-const spring_spring = tmp(5939);
-const springPresets = tmp(5940);
+const spring_spring = tmp(5929);
+const springPresets = tmp(5930);
 const DragHandle2 = tmp2(7447);
 const AnimatedPressableHighlight2 = tmp(7451);
 class Card {

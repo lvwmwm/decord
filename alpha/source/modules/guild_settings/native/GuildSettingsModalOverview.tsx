@@ -1,23 +1,23 @@
-// Module ID: 20440
-// Function ID: 20441
+// Module ID: 20443
+// Function ID: 20444
 // Name: GuildSettingsModalOverview
-// Dependencies: [19, 5173, 5155, 5236, 5536, 5238, 5248, 1388, 8405, 1072, 21, 5306, 575, 1113, 5377, 6014, 7493, 7427, 8404, 11963, 20441, 1406, 7948, 6269, 6340, 7619, 5954, 7746, 7443, 9221, 20200, 7243, 7954, 7745, 7747, 2188, 20445, 1414, 12002, 7859, 7688, 8106, 6337, 5912, 1502, 504, 2]
+// Dependencies: [19, 5173, 5155, 5236, 5526, 5238, 5248, 1388, 8405, 1072, 21, 5306, 575, 1113, 5367, 6004, 7493, 7427, 8404, 11963, 20444, 1406, 7948, 6259, 6330, 7619, 5944, 7746, 7443, 9221, 20203, 7243, 7954, 7745, 7747, 2188, 20448, 1414, 12002, 7859, 7688, 8106, 6327, 5902, 1502, 504, 2]
 // Exports: default
 
-// Module 20440 (GuildSettingsModalOverview)
+// Module 20443 (GuildSettingsModalOverview)
 import nativeDefault from "native" /* 575 */;
 import intl13 from "intl" /* 1113 */;
 import FlagUtils from "FlagUtils" /* 1406 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
 import GuildRecord from "GuildRecord" /* 5173 */;
-import native from "native" /* 5377 */;
-import NavScrim from "NavScrim" /* 5912 */;
-import useChannelName from "useChannelName" /* 5954 */;
-import ToastUtils from "ToastUtils" /* 6014 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6269 */;
-import Stack_Stack from "Stack/Stack" /* 6337 */;
-import AlertDefault from "Alert" /* 6340 */;
+import native from "native" /* 5367 */;
+import NavScrim from "NavScrim" /* 5902 */;
+import useChannelName from "useChannelName" /* 5944 */;
+import ToastUtils from "ToastUtils" /* 6004 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6259 */;
+import Stack_Stack from "Stack/Stack" /* 6327 */;
+import AlertDefault from "Alert" /* 6330 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7427 */;
 import TableRow3 from "TableRow" /* 7443 */;
 import TextInput_TextInput from "TextInput/TextInput" /* 7619 */;
@@ -32,11 +32,11 @@ import _mod8106 from "module_8106" /* 8106 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8404 */;
 import openChannelPickerDefault from "openChannelPicker" /* 11963 */;
 import ChannelSummariesExperiment from "ChannelSummariesExperiment" /* 12002 */;
-import AssetChooserDefault from "AssetChooser" /* 20445 */;
+import AssetChooserDefault from "AssetChooser" /* 20448 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import GuildChannelStore from "GuildChannelStore" /* 5236 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5536 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5526 */;
 import PermissionStore from "PermissionStore" /* 5238 */;
 import RelationshipStore from "RelationshipStore" /* 5248 */;
 import UserStore from "UserStore" /* 1388 */;
@@ -477,7 +477,7 @@ class GuildSettingsModalOverview extends PureComponent {
       const tmpResult14 = tmp(1406);
       hasFlagResult1 = tmpResult14.hasFlag(guild.systemChannelFlags, constants6.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATION_REPLIES);
     }
-    const tmpResult15 = tmp(20200);
+    const tmpResult15 = tmp(20203);
     let result1 = tmpResult15.isPastVcActivityMessagesEnabled(guild.id, "GuildSettingsModalOverview");
     if (!result1) {
       const tmpResult16 = tmp(1406);

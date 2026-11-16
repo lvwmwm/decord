@@ -1,7 +1,7 @@
 // Module ID: 11091
 // Function ID: 11092
 // Name: MediaPreviewRightAccessory
-// Dependencies: [19, 17, 5307, 11026, 21, 5306, 575, 7606, 5929, 5902, 1380, 5906, 8079, 7635, 563, 8853, 11092, 11070, 10229, 8633, 1495, 6020, 8634, 8640, 9730, 11093, 1187, 9503, 2]
+// Dependencies: [19, 17, 5307, 11026, 21, 5306, 575, 7606, 5919, 5892, 1380, 5896, 8079, 7635, 563, 8853, 11092, 11070, 10229, 8633, 1495, 6010, 8634, 8640, 9730, 11093, 1187, 9503, 2]
 // Exports: MediaPreviewRightAccessory
 
 // Module 11091 (MediaPreviewRightAccessory)
@@ -10,9 +10,9 @@ import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import utils_ImageUtils from "utils/ImageUtils" /* 1495 */;
-import useToken from "useToken" /* 5902 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import useToken from "useToken" /* 5892 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import PlayIcon from "PlayIcon" /* 7606 */;
 import EyeIcon from "EyeIcon" /* 7635 */;
 import MediaSourceUtil from "MediaSourceUtil" /* 8633 */;
@@ -48,7 +48,7 @@ let obj8;
 let size;
 let size1;
 let tmp4;
-const VisualEffectViewDefault = tmp4(5906);
+const VisualEffectViewDefault = tmp4(5896);
 function VideoBadge() {
   let obj2;
   const tmp = closure_11();

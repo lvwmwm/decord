@@ -1,7 +1,7 @@
 // Module ID: 11631
 // Function ID: 11632
 // Name: ImageCarousel
-// Dependencies: [19, 17, 8725, 8872, 11632, 21, 5306, 575, 1655, 5548, 1187, 5939, 38, 8850, 504, 11633, 1113, 11857, 8611, 5929, 7606, 7635, 7428, 11124, 7648, 1496, 11153, 11635, 8874, 2]
+// Dependencies: [19, 17, 8725, 8872, 11632, 21, 5306, 575, 1655, 5538, 1187, 5929, 38, 8850, 504, 11633, 1113, 11857, 8611, 5919, 7606, 7635, 7428, 11124, 7648, 1496, 11153, 11635, 8874, 2]
 
 // Module 11631 (ImageCarousel)
 import nativeDefault from "native" /* 575 */;
@@ -9,8 +9,8 @@ import intl5 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import useWindowDimensions from "useWindowDimensions" /* 1496 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5548 */;
-import spring_spring from "spring/spring" /* 5939 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import spring_spring from "spring/spring" /* 5929 */;
 import Pressables from "Pressables" /* 7428 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7648 */;
 import DraftStore from "DraftStore" /* 8725 */;

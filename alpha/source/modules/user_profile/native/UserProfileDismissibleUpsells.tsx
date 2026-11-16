@@ -1,7 +1,7 @@
 // Module ID: 15848
 // Function ID: 15849
 // Name: UserProfileDismissibleUpsells
-// Dependencies: [19, 17, 1388, 8479, 9435, 5152, 21, 5306, 575, 15849, 8545, 504, 2174, 10568, 5139, 1187, 5929, 1113, 7428, 7549, 5936, 9436, 10565, 2]
+// Dependencies: [19, 17, 1388, 8479, 9435, 5152, 21, 5306, 575, 15849, 8545, 504, 2174, 10568, 5139, 1187, 5919, 1113, 7428, 7549, 5926, 9436, 10565, 2]
 // Exports: default
 
 // Module 15848 (UserProfileDismissibleUpsells)
@@ -110,7 +110,7 @@ export default function UserProfileDismissibleUpsells(navigateToShop) {
             const merged1 = Object.assign(tmp4);
             const obj4 = { style: upsellContainer.header, children: items };
             const obj5 = { accessibilityRole: "header", variant: "body-sm/semibold", children: intl.string(intl5.t.EIYbj6) };
-            const Text = tmp(5929).Text;
+            const Text = tmp(5919).Text;
             intl = tmp(1113).intl;
             items = [metroImportAll(Text, obj5), ];
             const obj6 = {
@@ -127,7 +127,7 @@ export default function UserProfileDismissibleUpsells(navigateToShop) {
             items1 = [React4(View, obj4), ];
             const obj7 = { style: upsellContainer.upsellButtonsContainer, children: items2 };
             const obj8 = { style: upsellContainer.upsellButton, children: metroImportAll(Button, obj9) };
-            Button = tmp(5936).Button;
+            Button = tmp(5926).Button;
             const intl3 = tmp(1113).intl;
             const string = intl3.string;
             const t = tmp(1113).t;
@@ -140,7 +140,7 @@ export default function UserProfileDismissibleUpsells(navigateToShop) {
             items2 = [metroImportAll(View, obj8), ];
             const obj10 = { style: upsellContainer.upsellButton, children: metroImportAll(Button2, obj11) };
             obj11 = { text: intl4.string(intl5.t.pWG4ze), onPress, icon: metroImportAll(ShopIcon.ShopIcon, { size: "sm" }), iconPosition: "start", variant: "secondary" };
-            Button2 = tmp(5936).Button;
+            Button2 = tmp(5926).Button;
             intl4 = tmp(1113).intl;
             items2[1] = metroImportAll(View, obj10);
             items1[1] = React4(View, obj7);

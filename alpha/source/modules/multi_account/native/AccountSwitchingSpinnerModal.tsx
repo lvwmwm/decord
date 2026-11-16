@@ -1,15 +1,15 @@
-// Module ID: 20313
-// Function ID: 20314
+// Module ID: 20316
+// Function ID: 20317
 // Name: AccountSwitchingSpinnerModal
-// Dependencies: [19, 17, 21, 5306, 575, 18713, 1113, 7418, 1092, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 18715, 1113, 7418, 1092, 2]
 
-// Module 20313 (AccountSwitchingSpinnerModal)
+// Module 20316 (AccountSwitchingSpinnerModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
 import intl2 from "intl" /* 1113 */;
-import useAppFrameDefault from "useAppFrame" /* 18713 */;
+import useAppFrameDefault from "useAppFrame" /* 18715 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;

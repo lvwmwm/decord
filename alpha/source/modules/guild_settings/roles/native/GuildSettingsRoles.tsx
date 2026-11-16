@@ -1,42 +1,42 @@
-// Module ID: 20549
-// Function ID: 20550
+// Module ID: 20552
+// Function ID: 20553
 // Name: GuildSettingsRoles
-// Dependencies: [32, 19, 17, 5213, 502, 5536, 5212, 5177, 5238, 7892, 20550, 20551, 1072, 21, 5306, 575, 6826, 1256, 20552, 504, 18863, 8404, 1502, 5243, 6067, 20553, 20562, 20563, 7746, 1113, 7428, 12100, 5929, 20564, 5936, 20568, 7427, 15138, 1380, 20560, 6917, 7893, 7825, 8106, 1187, 8176, 19153, 5912, 2]
+// Dependencies: [32, 19, 17, 5213, 502, 5526, 5212, 5177, 5238, 7892, 20553, 20554, 1072, 21, 5306, 575, 6816, 1256, 20555, 504, 18865, 8404, 1502, 5243, 6057, 20556, 20565, 20566, 7746, 1113, 7428, 12100, 5919, 20567, 5926, 20571, 7427, 15138, 1380, 20563, 6907, 7893, 7825, 8106, 1187, 8176, 19155, 5902, 2]
 // Exports: default
 
-// Module 20549 (GuildSettingsRoles)
+// Module 20552 (GuildSettingsRoles)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import GuildRoleRecord from "GuildRoleRecord" /* 5213 */;
 import PermissionUtilsAll from "PermissionUtils" /* 5243 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import components_Button_Button from "components/Button/Button" /* 5936 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6067 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6917 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6057 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6907 */;
 import TableRowGroup from "TableRowGroup" /* 7746 */;
 import GuildRoleMemberActionCreatorsAll from "GuildRoleMemberActionCreators" /* 7893 */;
-import GuildSettingsConstants from "GuildSettingsConstants" /* 20551 */;
-import GuildSettingsRolesUtils from "GuildSettingsRolesUtils" /* 20560 */;
-import actions_GuildActionCreators from "actions/GuildActionCreators" /* 20562 */;
-import GuildSettingsModalRolesActionCreatorsDefault from "GuildSettingsModalRolesActionCreators" /* 20563 */;
-import MemberRolesAbstractUI from "MemberRolesAbstractUI" /* 20564 */;
-import GuildSettingsRoleItemDefault from "GuildSettingsRoleItem" /* 20568 */;
+import GuildSettingsConstants from "GuildSettingsConstants" /* 20554 */;
+import GuildSettingsRolesUtils from "GuildSettingsRolesUtils" /* 20563 */;
+import actions_GuildActionCreators from "actions/GuildActionCreators" /* 20565 */;
+import GuildSettingsModalRolesActionCreatorsDefault from "GuildSettingsModalRolesActionCreators" /* 20566 */;
+import MemberRolesAbstractUI from "MemberRolesAbstractUI" /* 20567 */;
+import GuildSettingsRoleItemDefault from "GuildSettingsRoleItem" /* 20571 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5536 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5526 */;
 import GuildRoleStore from "GuildRoleStore" /* 5212 */;
 import GuildStore from "GuildStore" /* 5177 */;
 import PermissionStore from "PermissionStore" /* 5238 */;
 import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 7892 */;
-import GuildSettingsModalRolesStore from "GuildSettingsModalRolesStore" /* 20550 */;
+import GuildSettingsModalRolesStore from "GuildSettingsModalRolesStore" /* 20553 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
-import TextStyles from "TextStyles" /* 6826 */;
+import TextStyles from "TextStyles" /* 6816 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -57,7 +57,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp;
-const GuildSettingsRoleCreateModalActionCreatorsDefault = tmp(20553);
+const GuildSettingsRoleCreateModalActionCreatorsDefault = tmp(20556);
 ({ View: metroRequire, StyleSheet } = react_native);
 const isEveryoneRole = GuildRoleRecord.isEveryoneRole;
 let closure_15 = GuildSettingsConstants.GuildSettingsRoleEditSections;
@@ -89,7 +89,7 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
   let tmp39Result2;
   let tmp49;
   let tmp54;
-  const f123328 = () => sortedGuildRoles;
+  const f123343 = () => sortedGuildRoles;
   guildId = guildId.guildId;
   let guild;
   let memberCount;
@@ -215,8 +215,8 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
   const tmp13 = guildEveryoneRole(memberCount.useState(""), 2);
   let str = tmp13[0];
   let closure_3 = tmp13[1];
-  [tmp15, c4] = guildEveryoneRole(memberCount.useState(f123328), 2);
-  const tmp14 = guildEveryoneRole(memberCount.useState(f123328), 2);
+  [tmp15, c4] = guildEveryoneRole(memberCount.useState(f123343), 2);
+  const tmp14 = guildEveryoneRole(memberCount.useState(f123343), 2);
   let closure_5 = memberCount.useRef(false);
   const items4 = [sortedGuildRoles];
   const callback = memberCount.useCallback((str) => {
@@ -404,7 +404,7 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
         const ArrowsUpDownIcon = tmp7(12100).ArrowsUpDownIcon;
         items2 = [closure_20(ArrowsUpDownIcon, obj5), ];
         const obj6 = { style: closure_1.reorderButtonText, variant: "body-sm/medium", color: "text-link", children: intl3.string(intl5.t["0dOFq+"]) };
-        const Text = tmp7(5929).Text;
+        const Text = tmp7(5919).Text;
         intl3 = tmp7(1113).intl;
         items2[1] = closure_20(Text, obj6);
         tmpResult = tmp(PressableOpacity, obj4);
@@ -415,7 +415,7 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
     let tmp6Result = null;
     if (first) {
       const obj7 = { style: closure_1.rolesBody, variant: "body-sm/medium", color: "interactive-text-default", children: intl4.string(intl5.t.nHcwVl) };
-      const Text2 = tmp7(5929).Text;
+      const Text2 = tmp7(5919).Text;
       intl4 = tmp7(1113).intl;
       tmp6Result = tmp6(Text2, obj7);
     }

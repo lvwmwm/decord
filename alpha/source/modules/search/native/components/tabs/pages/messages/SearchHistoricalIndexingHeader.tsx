@@ -1,10 +1,10 @@
-// Module ID: 19544
-// Function ID: 19545
+// Module ID: 19546
+// Function ID: 19547
 // Name: SearchHistoricalIndexingHeader
-// Dependencies: [19, 2189, 9066, 21, 5306, 14761, 7445, 5929, 1113, 2]
+// Dependencies: [19, 2189, 9066, 21, 5306, 14761, 7445, 5919, 1113, 2]
 // Exports: default
 
-// Module 19544 (SearchHistoricalIndexingHeader)
+// Module 19546 (SearchHistoricalIndexingHeader)
 import Fragment from "Fragment" /* 21 */;
 import TrackingDefault from "Tracking" /* 14761 */;
 import react_mod from "react" /* 19 */;

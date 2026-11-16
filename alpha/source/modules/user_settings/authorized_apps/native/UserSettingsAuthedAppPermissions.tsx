@@ -1,11 +1,11 @@
 // Module ID: 17489
 // Function ID: 17490
 // Name: UserSettingsAuthedAppPermissions
-// Dependencies: [19, 17, 21, 5306, 7403, 7307, 1113, 5929, 7930, 575, 7405, 17483, 2]
+// Dependencies: [19, 17, 21, 5306, 7403, 7307, 1113, 5919, 7930, 575, 7405, 17483, 2]
 // Exports: default
 
 // Module 17489 (UserSettingsAuthedAppPermissions)
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import disclosures from "disclosures" /* 7405 */;
 import UserSettingsAuthedApps from "UserSettingsAuthedApps" /* 17483 */;
 import react from "react" /* 19 */;

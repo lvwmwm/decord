@@ -1,12 +1,12 @@
 // Module ID: 11057
 // Function ID: 11058
 // Name: MarkupReactGameMentionRule
-// Dependencies: [19, 17, 6060, 21, 575, 5306, 5929, 6061, 9377, 11058, 5944, 2152, 1113, 11059, 6337, 2153, 8375, 6020, 10281, 10286, 9533, 2]
+// Dependencies: [19, 17, 6050, 21, 575, 5306, 5919, 6051, 9377, 11058, 5934, 2152, 1113, 11059, 6327, 2153, 8375, 6010, 10281, 10286, 9533, 2]
 // Exports: createFetchingGameMentionRule
 
 // Module 11057 (MarkupReactGameMentionRule)
 import nativeDefault from "native" /* 575 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 6060 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 6050 */;
 import useGame from "useGame" /* 9533 */;
 import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 10281 */;
 import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 10286 */;
@@ -45,7 +45,7 @@ class MarkupGameMention {
     let obj2 = state(11058);
     const previewMentionLayout = obj2.usePreviewMentionLayout();
     let variant;
-    const obj3 = state(5944);
+    const obj3 = state(5934);
     const fontScale = obj3.useFontScale();
     if (previewMentionLayout != null) {
       variant = previewMentionLayout.variant;
@@ -57,7 +57,7 @@ class MarkupGameMention {
     if (previewMentionLayout != null) {
       prop = previewMentionLayout.maxFontSizeMultiplier;
     }
-    const fontSize = tmp(5929).TextStyleSheet[variant].fontSize;
+    const fontSize = tmp(5919).TextStyleSheet[variant].fontSize;
     let num = Infinity;
     if (null != prop) {
       num = Infinity;
@@ -65,7 +65,7 @@ class MarkupGameMention {
         num = prop;
       }
     }
-    const tmpResult = state(6061);
+    const tmpResult = state(6051);
     const minResult = min(tmpResult.scaleLineHeight(fontSize, fontScale), fontSize * num);
     let value;
     if (previewMentionLayout != null) {
@@ -103,7 +103,7 @@ class MarkupGameMention {
     let result1;
     if (null != mentionPillOffsetY) {
       const result = mentionPillOffsetY * minResult;
-      result1 = result / tmp(5929).TextStyleSheet[variant].fontSize;
+      result1 = result / tmp(5919).TextStyleSheet[variant].fontSize;
     }
     if (null != result1) {
       const items = [tmp11.inlineRoot, ];
@@ -115,7 +115,7 @@ class MarkupGameMention {
     } else {
       inlineRoot = tmp11.inlineRoot;
     }
-    const Stack = tmp(6337).Stack;
+    const Stack = tmp(6327).Stack;
     const tmp20 = closure_7;
     if (null != value) {
       const items2 = [tmp11.pill, ];
@@ -134,13 +134,13 @@ class MarkupGameMention {
     } else {
       const obj9 = { source: obj10, resizeMode: "contain", style: tmp11.icon, accessible: false };
       obj10 = { uri: tmp13Result };
-      tmp21Result = tmp21(tmp12(6020), obj9);
+      tmp21Result = tmp21(tmp12(6010), obj9);
       tmp23 = tmp21;
     }
     items3 = [tmp21Result, ];
     const obj11 = { variant, color: str, lineClamp: 1, ellipsizeMode: str2, maxFontSizeMultiplier: prop, style: tmp11.name, children: gameName };
     str2 = "tail";
-    const Text = tmp(5929).Text;
+    const Text = tmp(5919).Text;
     if (null != value) {
       str2 = "clip";
     }

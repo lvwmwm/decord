@@ -9,7 +9,7 @@ import intl3 from "intl" /* 1113 */;
 import OrbsArcadeTypes from "OrbsArcadeTypes" /* 17648 */;
 import size from "module_2" /* 2 */;
 
-const f115799 = (pendingAt) => null != pendingAt.pendingAt && null == pendingAt.claimedAt;
+const f115813 = (pendingAt) => null != pendingAt.pendingAt && null == pendingAt.claimedAt;
 function getOrbsArcadeRewardStatus(reward, gameState, ownedRewardSkuIds) {
   let tmp;
   if (gameState != null) {
@@ -93,7 +93,7 @@ export function hasOrbsArcadeUnclaimedRewards(gameState) {
     rewardGrants = {};
   }
   const values2 = values(rewardGrants);
-  return values2.some(f115799);
+  return values2.some(f115813);
 }
 export function isOrbsArcadeEnrollmentOver(gameStateForGame) {
   let tmp = null != gameStateForGame.expiresAt;
@@ -113,7 +113,7 @@ export function isOrbsArcadeEnrollmentOver(gameStateForGame) {
       rewardGrants = {};
     }
     const values2 = values(rewardGrants);
-    tmp = !values2.some(f115799);
+    tmp = !values2.some(f115813);
   }
   return tmp;
 }
@@ -135,7 +135,7 @@ export function mustClaimOrbsArcadeRewardsToPlay(gameStateForGame) {
       rewardGrants = {};
     }
     const values2 = values(rewardGrants);
-    someResult = values2.some(f115799);
+    someResult = values2.some(f115813);
   }
   return someResult;
 }

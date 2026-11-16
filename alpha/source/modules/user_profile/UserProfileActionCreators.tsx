@@ -1,7 +1,7 @@
 // Module ID: 9399
 // Function ID: 9400
 // Name: UserProfileActionCreators
-// Dependencies: [5, 1388, 1072, 1390, 1108, 5313, 1113, 1256, 9400, 8786, 572, 7805, 1285, 7801, 6757, 2]
+// Dependencies: [5, 1388, 1072, 1390, 1108, 5313, 1113, 1256, 9400, 8786, 572, 7805, 1285, 7801, 6747, 2]
 // Exports: notifyUnsavedUserProfileChangesInModal, pinUserProfileBadgesOnClient, resetAllPendingChanges, resetAllTryItOutChanges, resetPendingProfileChanges, saveProfileChanges, setTryItOutAvatar, setTryItOutAvatarDecoration, setTryItOutBanner, setTryItOutCustomTypingIndicatorStyle, setTryItOutDisplayNameStyles, setTryItOutPreset, setTryItOutProfileEffect, setTryItOutThemeColors
 
 // Module 9399 (UserProfileActionCreators)

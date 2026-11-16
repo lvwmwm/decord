@@ -1,9 +1,9 @@
-// Module ID: 6814
-// Function ID: 6815
+// Module ID: 6804
+// Function ID: 6805
 // Name: RobloxSubgamePlatformUtils
-// Dependencies: [5, 6815, 6813, 2]
+// Dependencies: [5, 6805, 6803, 2]
 
-// Module 6814 (RobloxSubgamePlatformUtils)
+// Module 6804 (RobloxSubgamePlatformUtils)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

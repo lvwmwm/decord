@@ -1,7 +1,7 @@
 // Module ID: 7617
 // Function ID: 7618
 // Name: FreeFormInputGroup
-// Dependencies: [19, 17, 21, 5306, 1380, 7618, 7619, 1187, 7646, 7647, 7649, 5929, 2]
+// Dependencies: [19, 17, 21, 5306, 1380, 7618, 7619, 1187, 7646, 7647, 7649, 5919, 2]
 // Exports: default
 
 // Module 7617 (FreeFormInputGroup)
@@ -103,7 +103,7 @@ export default (textStyle) => {
     let tmp17Result2 = null;
     if (null != hint) {
       const obj8 = { style: tmp2.hint, variant: "body-xs/medium", color: "text-muted", children: hint };
-      tmp17Result2 = tmp17(tmp8(5929).Text, obj8);
+      tmp17Result2 = tmp17(tmp8(5919).Text, obj8);
     }
     items[3] = tmp17Result2;
     return tmp12(tmp13, obj4);

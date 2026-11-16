@@ -1,7 +1,7 @@
 // Module ID: 16927
 // Function ID: 16928
 // Name: NativeRPCImplementation
-// Dependencies: [5307, 5330, 1238, 1192, 1231, 5373, 16928, 16980, 16981, 16982, 16984, 16985, 16986, 16987, 16995, 16996, 16998, 17000, 17001, 17002, 17003, 7298, 12860, 2]
+// Dependencies: [5307, 5330, 1238, 1192, 1231, 5363, 16928, 16980, 16981, 16982, 16984, 16985, 16986, 16987, 16995, 16996, 16998, 17000, 17001, 17002, 17003, 7298, 12860, 2]
 
 // Module 16927 (NativeRPCImplementation)
 import NativeRPCServerDefault from "NativeRPCServer" /* 7298 */;
@@ -25,7 +25,7 @@ import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5330 */
 import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1238 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import StreamerModeStore from "StreamerModeStore" /* 5373 */;
+import StreamerModeStore from "StreamerModeStore" /* 5363 */;
 import discordEnvironmentEvents from "discordEnvironmentEvents" /* 17000 */;
 import size from "module_2" /* 2 */;
 

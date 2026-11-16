@@ -1,7 +1,7 @@
 // Module ID: 11800
 // Function ID: 11801
 // Name: CollectiblesShopGiftPurchaseSection
-// Dependencies: [5, 32, 19, 17, 8547, 9592, 1072, 1390, 21, 5306, 575, 5913, 11673, 504, 8480, 7918, 11791, 1256, 11801, 572, 6848, 6269, 11802, 2121, 1380, 11688, 11678, 5929, 1113, 5936, 2]
+// Dependencies: [5, 32, 19, 17, 8547, 9592, 1072, 1390, 21, 5306, 575, 5903, 11673, 504, 8480, 7918, 11791, 1256, 11801, 572, 6838, 6259, 11802, 2121, 1380, 11688, 11678, 5919, 1113, 5926, 2]
 // Exports: default
 
 // Module 11800 (CollectiblesShopGiftPurchaseSection)
@@ -10,8 +10,8 @@ import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6269 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6259 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import NativeCheckoutStore from "NativeCheckoutStore" /* 9592 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;

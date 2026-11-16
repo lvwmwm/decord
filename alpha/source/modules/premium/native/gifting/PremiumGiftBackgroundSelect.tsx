@@ -1,7 +1,7 @@
 // Module ID: 11750
 // Function ID: 11751
 // Name: PremiumGiftBackgroundSelect
-// Dependencies: [32, 19, 17, 21, 1655, 5306, 575, 1496, 1187, 5548, 11751, 11664, 2]
+// Dependencies: [32, 19, 17, 21, 1655, 5306, 575, 1496, 1187, 5538, 11751, 11664, 2]
 // Exports: default
 
 // Module 11750 (PremiumGiftBackgroundSelect)
@@ -10,7 +10,7 @@ import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5548 */;
+import timing_timing from "timing/timing" /* 5538 */;
 import NativeGiftContext from "NativeGiftContext" /* 11664 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

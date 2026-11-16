@@ -1,15 +1,15 @@
-// Module ID: 19788
-// Function ID: 19789
+// Module ID: 19790
+// Function ID: 19791
 // Name: Alerts
-// Dependencies: [19, 17, 5307, 16255, 16847, 12461, 21, 19789, 19790, 19794, 5306, 575, 504, 1655, 5377, 5548, 1708, 5939, 5940, 6269, 6332, 6327, 7474, 6275, 558, 19795, 2]
+// Dependencies: [19, 17, 5307, 16255, 16847, 12461, 21, 19791, 19792, 19796, 5306, 575, 504, 1655, 5367, 5538, 1708, 5929, 5930, 6259, 6322, 6317, 7474, 6265, 558, 19797, 2]
 
-// Module 19788 (Alerts)
+// Module 19790 (Alerts)
 import shallowEqualDefault from "shallowEqual" /* 558 */;
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 5377 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6269 */;
-import OverlayViewDefault from "OverlayView" /* 6275 */;
-import ModalRegistryDefault from "ModalRegistry" /* 19789 */;
+import native from "native" /* 5367 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6259 */;
+import OverlayViewDefault from "OverlayView" /* 6265 */;
+import ModalRegistryDefault from "ModalRegistry" /* 19791 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5307 */;
@@ -300,7 +300,7 @@ function renderAlertItem(arg0, item, transitionState, cleanUp) {
   const obj = { item, transitionState, cleanUp };
   return unpackModuleId(AlertWrapper, obj, arg0);
 }
-let closure_23 = Object.freeze({ renderAlert: "channel_id", renderKey: "flex", props: "analyticsLocations" });
+let closure_23 = Object.freeze({ renderAlert: "a", renderKey: "isArray", props: "isArray" });
 const memoResult = react.memo(function Alerts() {
   let alertDismissable;
   let ref;
@@ -337,7 +337,7 @@ const memoResult = react.memo(function Alerts() {
           return <component />;
         };
       } else {
-        return { renderAlert: "channel_id", renderKey: "flex", props: "analyticsLocations" };
+        return { renderAlert: "a", renderKey: "isArray", props: "isArray" };
       }
     }
   });

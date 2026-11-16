@@ -1,14 +1,14 @@
-// Module ID: 6944
-// Function ID: 6945
+// Module ID: 6934
+// Function ID: 6935
 // Name: GuildMemberRequesterStore
-// Dependencies: [5155, 5218, 5209, 6945, 572, 5226, 1088, 504, 2]
+// Dependencies: [5155, 5218, 5209, 6935, 572, 5226, 1088, 504, 2]
 
-// Module 6944 (GuildMemberRequesterStore)
+// Module 6934 (GuildMemberRequesterStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import MessageTypes from "MessageTypes" /* 1088 */;
 import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 5226 */;
-import GuildMemberRequesterDefault from "GuildMemberRequester" /* 6945 */;
+import GuildMemberRequesterDefault from "GuildMemberRequester" /* 6935 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import GuildMemberStore from "GuildMemberStore" /* 5218 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;

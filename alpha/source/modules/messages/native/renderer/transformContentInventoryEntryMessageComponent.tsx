@@ -1,7 +1,7 @@
 // Module ID: 12426
 // Function ID: 12427
 // Name: transformContentInventoryEntryMessageComponent
-// Dependencies: [17, 2165, 2189, 1388, 2145, 8421, 6351, 1417, 8376, 8538, 12427, 5303, 8419, 1089, 1113, 9340, 7439, 8038, 7313, 12429, 12430, 8420, 2]
+// Dependencies: [17, 2165, 2189, 1388, 2145, 8421, 6341, 1417, 8376, 8538, 12427, 5303, 8419, 1089, 1113, 9340, 7439, 8038, 7313, 12429, 12430, 8420, 2]
 // Exports: transformToRowGeneratedContentInventoryEntryComponent
 
 // Module 12426 (transformContentInventoryEntryMessageComponent)
@@ -10,7 +10,7 @@ import intl5 from "intl" /* 1113 */;
 import utils_AvatarUtils from "utils/AvatarUtils" /* 1417 */;
 import Constants from "Constants" /* 2145 */;
 import ColorUtils from "ColorUtils" /* 5303 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6351 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6341 */;
 import ApplicationAssetUtils from "ApplicationAssetUtils" /* 7313 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7439 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 8376 */;

@@ -1,13 +1,13 @@
 // Module ID: 7075
 // Function ID: 7076
 // Name: GuildUtils
-// Dependencies: [5177, 1388, 1456, 1089, 572, 6917, 5372, 1113, 2]
+// Dependencies: [5177, 1388, 1456, 1089, 572, 6907, 5362, 1113, 2]
 // Exports: getGuildNameSuggestion
 
 // Module 7075 (GuildUtils)
 import DurationsDefault from "Durations" /* 1089 */;
 import intl2 from "intl" /* 1113 */;
-import UserUtilsAll from "UserUtils" /* 5372 */;
+import UserUtilsAll from "UserUtils" /* 5362 */;
 import GuildStore from "GuildStore" /* 5177 */;
 import UserStore from "UserStore" /* 1388 */;
 import LRUCache from "LRUCache" /* 1456 */;
@@ -50,7 +50,7 @@ let obj2 = {
     let closure_4;
     let flag2;
     let timeout;
-    const f93456 = () => {
+    const f93469 = () => {
       items = [];
       if (null == items) {
         const push = items.push;
@@ -128,7 +128,7 @@ let obj2 = {
           clearTimeout(timeout);
         }
         const _setTimeout2 = setTimeout;
-        timeout = setTimeout(f93456, 200);
+        timeout = setTimeout(f93469, 200);
       }
     }
     if (flag2) {
@@ -139,7 +139,7 @@ let obj2 = {
         clearTimeout(timeout);
       }
       const _setTimeout = setTimeout;
-      timeout = setTimeout(f93456, 200);
+      timeout = setTimeout(f93469, 200);
     }
   }
 };

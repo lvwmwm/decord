@@ -1,23 +1,23 @@
-// Module ID: 18573
-// Function ID: 18574
+// Module ID: 18575
+// Function ID: 18576
 // Name: SafetyGuildSettingMessageRequests
-// Dependencies: [5177, 18563, 9202, 12407, 18574, 17346, 5131, 6268, 1113, 6340, 18575, 8190, 6833, 7813, 18566, 12406, 2]
+// Dependencies: [5177, 18565, 9202, 12407, 18576, 17346, 5131, 6258, 1113, 6330, 18577, 8190, 6823, 7813, 18568, 12406, 2]
 
-// Module 18573 (SafetyGuildSettingMessageRequests)
+// Module 18575 (SafetyGuildSettingMessageRequests)
 import intl5 from "intl" /* 1113 */;
 import UserSettings from "UserSettings" /* 5131 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6268 */;
-import AlertDefault from "Alert" /* 6340 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6258 */;
+import AlertDefault from "Alert" /* 6330 */;
 import UserSettingsUtils from "UserSettingsUtils" /* 7813 */;
 import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8190 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;
 import SettingRendererConstants from "SettingRendererConstants" /* 12407 */;
 import useParentalControlSettings from "useParentalControlSettings" /* 17346 */;
-import DefultGuildsRestrictedSetting from "DefultGuildsRestrictedSetting" /* 18566 */;
-import useShouldDisableMessageRequestSettings from "useShouldDisableMessageRequestSettings" /* 18574 */;
-import DefaultDMSettingsExperiment from "DefaultDMSettingsExperiment" /* 18575 */;
+import DefultGuildsRestrictedSetting from "DefultGuildsRestrictedSetting" /* 18568 */;
+import useShouldDisableMessageRequestSettings from "useShouldDisableMessageRequestSettings" /* 18576 */;
+import DefaultDMSettingsExperiment from "DefaultDMSettingsExperiment" /* 18577 */;
 import GuildStore from "GuildStore" /* 5177 */;
-import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 18563 */;
+import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 18565 */;
 import SettingBuilders from "SettingBuilders" /* 12406 */;
 import size from "module_2" /* 2 */;
 
@@ -168,7 +168,7 @@ let obj = {
       const obj = DefaultDMSettingsExperiment;
       const tmp2 = require;
       if (obj.shouldAgeVerifyForDMDefaultOff()) {
-        const obj2 = { entryPoint: tmp2(6833).AgeVerificationModalEntryPoint.MESSAGE_REQUESTS_SETTINGS };
+        const obj2 = { entryPoint: tmp2(6823).AgeVerificationModalEntryPoint.MESSAGE_REQUESTS_SETTINGS };
         const showAgeVerificationGetStartedModal = AgeVerificationActionCreatorsDefault.showAgeVerificationGetStartedModal;
         AgeVerificationActionCreatorsDefault;
         const result = showAgeVerificationGetStartedModal(obj2);

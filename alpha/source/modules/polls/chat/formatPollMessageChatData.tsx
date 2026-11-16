@@ -1,7 +1,7 @@
 // Module ID: 12656
 // Function ID: 12657
 // Name: formatPollMessageChatData
-// Dependencies: [5307, 6969, 5155, 5218, 6372, 1388, 12376, 1072, 1083, 6788, 5252, 5256, 1414, 10406, 5244, 5225, 12657, 1113, 8861, 12659, 1380, 12660, 12661, 2]
+// Dependencies: [5307, 6969, 5155, 5218, 6362, 1388, 12376, 1072, 1083, 6778, 5252, 5256, 1414, 10406, 5244, 5225, 12657, 1113, 8861, 12659, 1380, 12660, 12661, 2]
 // Exports: default, isPollMessageDirectlyInteractive
 
 // Module 12656 (formatPollMessageChatData)
@@ -12,7 +12,7 @@ import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 5225 */;
 import AutomodPermissionUtils from "AutomodPermissionUtils" /* 5244 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 5252 */;
 import EmojiUtilsDefault from "EmojiUtils" /* 5256 */;
-import merged5 from "merged5" /* 6788 */;
+import merged5 from "merged5" /* 6778 */;
 import useFormattedExpirationLabel from "useFormattedExpirationLabel" /* 10406 */;
 import PollsInteractionStore from "PollsInteractionStore" /* 12376 */;
 import PollLayoutTypes from "PollLayoutTypes" /* 12659 */;
@@ -20,7 +20,7 @@ import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import EmojiStore from "EmojiStore" /* 6969 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import GuildMemberStore from "GuildMemberStore" /* 5218 */;
-import MessageStore from "MessageStore" /* 6372 */;
+import MessageStore from "MessageStore" /* 6362 */;
 import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;

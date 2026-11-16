@@ -1,14 +1,14 @@
 // Module ID: 13736
 // Function ID: 13737
 // Name: ConjureImageOptions
-// Dependencies: [5, 32, 19, 17, 21, 5306, 575, 13230, 8079, 5929, 1113, 4131, 6020, 5378, 7445, 7734, 7748, 13734, 7988, 6040, 13737, 7994, 13228, 8627, 13739, 5936, 13186, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5306, 575, 13230, 8079, 5919, 1113, 4131, 6010, 5368, 7445, 7734, 7748, 13734, 7988, 6030, 13737, 7994, 13228, 8627, 13739, 5926, 13186, 2]
 // Exports: default
 
 // Module 13736 (ConjureImageOptions)
 import nativeDefault from "native" /* 575 */;
 import _modDef4131 from "module_4131" /* 4131 */;
-import react_native from "react-native" /* 5378 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import react_native from "react-native" /* 5368 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import openMediaModal from "openMediaModal" /* 8627 */;
 import useConjureAttachmentImage from "useConjureAttachmentImage" /* 13230 */;
 import ConjureImageOptions2 from "ConjureImageOptions" /* 13734 */;
@@ -68,7 +68,7 @@ function ImageOptionPicture(onMeasured) {
     const ImageWarningIcon = tmp2(8079).ImageWarningIcon;
     items1 = [metroImportAll(ImageWarningIcon, obj4), ];
     const obj5 = { variant: "body-xs/medium", color: "text-muted", style: tmp.brokenText, children: intl.string(_modDef4131.lhgD88) };
-    const Text = tmp2(5929).Text;
+    const Text = tmp2(5919).Text;
     intl = tmp2(1113).intl;
     items1[1] = metroImportAll(Text, obj5);
     obj2.children = React4(metroImportDefault, obj3);
@@ -234,7 +234,7 @@ function ImageOptionTile(option) {
   items3[1] = tmp13Result3;
   items4 = [React4(metroImportDefault, obj10), ];
   const obj16 = { variant: "body-xs/normal", color: "text-muted", lineClamp: 1, style: tmp.caption, children: tmp2Result.imageOptionCaption(option) };
-  const Text = tmp2(5929).Text;
+  const Text = tmp2(5919).Text;
   tmp2Result = ConjureImageOptions2;
   items4[1] = tmp13(Text, obj16);
   items5 = [React4(Card, obj6), ];
@@ -249,7 +249,7 @@ function ImageOptionTile(option) {
       const obj18 = { top: frameHeight - nativeDefault.space.PX_32 };
       IconButton = tmp2(7988).IconButton;
       if (null != onRemove) {
-        MaximizeIcon = tmp2(6040).TrashIcon;
+        MaximizeIcon = tmp2(6030).TrashIcon;
       } else {
         MaximizeIcon = tmp2(13737).MaximizeIcon;
       }

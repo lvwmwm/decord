@@ -1,10 +1,10 @@
-// Module ID: 19064
-// Function ID: 19065
+// Module ID: 19066
+// Function ID: 19067
 // Name: getGuildsBarGuildMenuItems
 // Dependencies: [5, 5177, 1072, 7855, 1113, 16400, 2121, 10996, 7883, 10569, 16345, 2]
 // Exports: default
 
-// Module 19064 (getGuildsBarGuildMenuItems)
+// Module 19066 (getGuildsBarGuildMenuItems)
 import Constants from "Constants" /* 1072 */;
 import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7883 */;
 import openGuildActionSheetDefault from "openGuildActionSheet" /* 16345 */;

@@ -1,7 +1,7 @@
 // Module ID: 13422
 // Function ID: 13423
 // Name: RecommendationsBannerCard
-// Dependencies: [19, 17, 1072, 21, 5306, 575, 12698, 8483, 1414, 13414, 7428, 13423, 2119, 13417, 5929, 1113, 13388, 7456, 2]
+// Dependencies: [19, 17, 1072, 21, 5306, 575, 12698, 8483, 1414, 13414, 7428, 13423, 2119, 13417, 5919, 1113, 13388, 7456, 2]
 // Exports: default
 
 // Module 13422 (RecommendationsBannerCard)
@@ -124,7 +124,7 @@ export default function RecommendationsBannerCard(application) {
       if (showsPromoted) {
         const obj13 = { style: tmp.promotedLabelWrapper, children: closure_6(Text, obj14) };
         obj14 = { variant: "footnote/medium", color: "mobile-text-heading-primary", children: intl.string(application(1113).t["/eVltv"]) };
-        Text = tmp4(5929).Text;
+        Text = tmp4(5919).Text;
         intl = tmp4(1113).intl;
         showsPromoted = tmp14(tmp13, obj13);
       }
@@ -144,9 +144,9 @@ export default function RecommendationsBannerCard(application) {
     items5 = [tmp14Result, , ];
     const obj17 = { style: tmp.appDetails, children: items6 };
     const obj18 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: application.name };
-    items6 = [closure_6(application(5929).Text, obj18), ];
+    items6 = [closure_6(application(5919).Text, obj18), ];
     const obj19 = { variant: "body-sm/normal", color: "text-subtle", lineClamp: 1, children: application.description };
-    items6[1] = closure_6(application(5929).Text, obj19);
+    items6[1] = closure_6(application(5919).Text, obj19);
     items5[1] = closure_7(View, obj17);
     items5[2] = closure_6(application(7456).TableRowArrow, {});
     items4[1] = closure_7(View, obj15);

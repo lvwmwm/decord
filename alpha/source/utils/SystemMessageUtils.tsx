@@ -1,15 +1,15 @@
 // Module ID: 9215
 // Function ID: 9216
 // Name: SystemMessageUtils
-// Dependencies: [32, 5249, 502, 5155, 5177, 5248, 1388, 1072, 1113, 11, 9216, 9220, 6351, 5954, 9221, 9223, 6749, 6374, 9224, 9225, 8719, 9177, 2]
+// Dependencies: [32, 5249, 502, 5155, 5177, 5248, 1388, 1072, 1113, 11, 9216, 9220, 6341, 5944, 9221, 9223, 6739, 6364, 9224, 9225, 8719, 9177, 2]
 
 // Module 9215 (SystemMessageUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl21 from "intl" /* 1113 */;
-import useChannelName from "useChannelName" /* 5954 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6351 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 6374 */;
-import useMessageAuthor from "useMessageAuthor" /* 6749 */;
+import useChannelName from "useChannelName" /* 5944 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6341 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 6364 */;
+import useMessageAuthor from "useMessageAuthor" /* 6739 */;
 import GuildSpaceSystemMessageUtils from "GuildSpaceSystemMessageUtils" /* 9177 */;
 import MarkupParser from "MarkupParser" /* 9216 */;
 import AutomodNotificationEmbedTypeKeys from "AutomodNotificationEmbedTypeKeys" /* 9220 */;

@@ -1,7 +1,7 @@
 // Module ID: 14285
 // Function ID: 14286
 // Name: CheckpointShareCardStats
-// Dependencies: [19, 17, 21, 5306, 575, 8375, 6020, 14284, 5929, 10409, 2024, 1414, 13048, 8069, 10939, 7438, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 8375, 6010, 14284, 5919, 10409, 2024, 1414, 13048, 8069, 10939, 7438, 2]
 // Exports: default
 
 // Module 14285 (CheckpointShareCardStats)
@@ -9,7 +9,7 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
 import react_nativeDefault from "react-native" /* 2024 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import GameControllerIcon from "GameControllerIcon" /* 7438 */;
 import ChatIcon from "ChatIcon" /* 8069 */;
 import UnknownGameIcon from "UnknownGameIcon" /* 8375 */;
@@ -28,7 +28,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp2;
-const Text_Text = tmp2(5929);
+const Text_Text = tmp2(5919);
 function StatIcon(size) {
   size = size.size;
   const obj = { size: "custom", color: nativeDefault.colors.BLACK, style: { width: size, height: size } };

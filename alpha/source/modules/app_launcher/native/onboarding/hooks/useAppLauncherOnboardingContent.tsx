@@ -1,7 +1,7 @@
 // Module ID: 13369
 // Function ID: 13370
 // Name: useAppLauncherOnboardingContent
-// Dependencies: [32, 11407, 5155, 5152, 5348, 5139, 504, 13370, 13375, 9560, 2]
+// Dependencies: [32, 11407, 5155, 5152, 5338, 5139, 504, 13370, 13375, 9560, 2]
 // Exports: default
 
 // Module 13369 (useAppLauncherOnboardingContent)

@@ -1,12 +1,12 @@
 // Module ID: 11151
 // Function ID: 11152
 // Name: ForumComposerModalActionCreators
-// Dependencies: [8866, 6848, 11152, 2121, 2]
+// Dependencies: [8866, 6838, 11152, 2121, 2]
 // Exports: closeCreateForumPostModal, openCreateForumPostModal
 
 // Module 11151 (ForumComposerModalActionCreators)
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import Tracking from "Tracking" /* 8866 */;
 import size from "module_2" /* 2 */;
 

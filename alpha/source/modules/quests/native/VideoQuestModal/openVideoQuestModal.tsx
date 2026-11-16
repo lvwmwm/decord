@@ -1,7 +1,7 @@
 // Module ID: 17730
 // Function ID: 17731
 // Name: openVideoQuestModal
-// Dependencies: [8808, 17723, 1269, 6848, 17731, 2121, 15249, 2]
+// Dependencies: [8808, 17723, 1269, 6838, 17731, 2121, 15249, 2]
 // Exports: default
 
 // Module 17730 (openVideoQuestModal)
@@ -37,7 +37,7 @@ export default function openVideoQuestModal(questId) {
   let obj2 = v1All;
   const v4Result = obj2.v4();
   importAll = v4Result;
-  const pushLazy = sourceQuestContent(6848).pushLazy;
+  const pushLazy = sourceQuestContent(6838).pushLazy;
   const obj3 = {
     questId,
     questContentPosition,
@@ -50,7 +50,7 @@ export default function openVideoQuestModal(questId) {
     },
     sourceQuestContent
   };
-  sourceQuestContent(6848);
+  sourceQuestContent(6838);
   const tmp9 = questId(2121)(17731, dependencyMap.paths);
   const obj4 = questId(15249);
   return pushLazy(tmp9, obj3, obj4.getVideoQuestModalKey(questId));

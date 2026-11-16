@@ -1,16 +1,16 @@
 // Module ID: 13375
 // Function ID: 13376
 // Name: useCanShowAppLauncherOnboarding
-// Dependencies: [32, 5155, 5536, 1388, 13376, 13377, 6345, 1089, 504, 11, 5139, 9560, 5348, 2]
+// Dependencies: [32, 5155, 5526, 1388, 13376, 13377, 6335, 1089, 504, 11, 5139, 9560, 5338, 2]
 // Exports: default
 
 // Module 13375 (useCanShowAppLauncherOnboarding)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6345 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6335 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5536 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5526 */;
 import UserStore from "UserStore" /* 1388 */;
 import AppLauncherOnboardingPersistedStore from "AppLauncherOnboardingPersistedStore" /* 13376 */;
 import AppLauncherOnboardingStore from "AppLauncherOnboardingStore" /* 13377 */;
@@ -103,12 +103,12 @@ export default function useCanShowAppLauncherOnboarding(channelId) {
     applicationId = recentApplicationCommandMetadata.applicationId;
   }
   const BUILT_IN = BuiltInSectionId.BUILT_IN;
-  const tmp2Result14 = channelId(5348);
+  const tmp2Result14 = channelId(5338);
   result = tmp2Result14.useIsDismissibleContentDismissed_UNSAFE(tmp2(5139).DismissibleContent.APP_LAUNCHER_ONBOARDING_BOTS_BANNER);
-  const tmp2Result15 = channelId(5348);
+  const tmp2Result15 = channelId(5338);
   let result1 = tmp2Result15.useIsDismissibleContentDismissed_UNSAFE(tmp2(5139).DismissibleContent.APP_LAUNCHER_ONBOARDING_APPS_BANNER);
   let tmp31 = null != stateFromStores4;
-  const tmp2Result16 = channelId(5348);
+  const tmp2Result16 = channelId(5338);
   const result2 = tmp2Result16.useIsDismissibleContentDismissed_UNSAFE(tmp2(5139).DismissibleContent.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER);
   if (tmp31) {
     tmp31 = stateFromStores4.channelId === channelId;

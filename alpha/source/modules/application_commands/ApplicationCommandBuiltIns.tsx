@@ -1,7 +1,7 @@
 // Module ID: 11414
 // Function ID: 11415
 // Name: ApplicationCommandBuiltIns
-// Dependencies: [5, 5155, 5238, 1388, 6345, 1072, 11415, 5220, 5311, 5985, 1113, 11416, 2119, 5131, 11417, 11157, 7287, 11164, 1093, 11165, 8660, 8786, 6917, 5372, 1089, 11418, 2169, 8134, 38, 7263, 11419, 2]
+// Dependencies: [5, 5155, 5238, 1388, 6335, 1072, 11415, 5220, 5311, 5975, 1113, 11416, 2119, 5131, 11417, 11157, 7287, 11164, 1093, 11165, 8660, 8786, 6907, 5362, 1089, 11418, 2169, 8134, 38, 7263, 11419, 2]
 // Exports: getBuiltInCommands
 
 // Module 11414 (ApplicationCommandBuiltIns)
@@ -9,8 +9,8 @@ import Server from "Server" /* 2119 */;
 import UserSettings from "UserSettings" /* 5131 */;
 import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 5220 */;
 import MessageConstants from "MessageConstants" /* 5311 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5985 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6345 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5975 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6335 */;
 import DiceRollActionCreators from "DiceRollActionCreators" /* 7263 */;
 import ThreadHooks from "ThreadHooks" /* 7287 */;
 import MessageActionCreatorsDefault from "MessageActionCreators" /* 8660 */;

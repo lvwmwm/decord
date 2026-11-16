@@ -1,15 +1,15 @@
 // Module ID: 7400
 // Function ID: 7401
 // Name: useOAuth2AuthorizeForm
-// Dependencies: [5, 32, 19, 17, 5253, 5307, 2143, 7085, 1388, 7401, 1072, 21, 5306, 5243, 504, 5568, 1655, 5548, 7055, 7402, 7403, 1084, 7404, 1285, 1269, 7405, 7407, 7409, 5953, 7410, 1242, 7411, 7412, 6067, 7413, 6332, 7414, 5936, 1113, 7418, 7087, 7419, 15957, 7307, 7408, 15958, 15962, 15961, 15963, 15964, 15965, 15967, 15970, 7894, 2]
+// Dependencies: [5, 32, 19, 17, 5253, 5307, 2143, 7085, 1388, 7401, 1072, 21, 5306, 5243, 504, 5558, 1655, 5538, 7055, 7402, 7403, 1084, 7404, 1285, 1269, 7405, 7407, 7409, 5943, 7410, 1242, 7411, 7412, 6057, 7413, 6322, 7414, 5926, 1113, 7418, 7087, 7419, 15957, 7307, 7408, 15958, 15962, 15961, 15963, 15964, 15965, 15967, 15970, 7894, 2]
 // Exports: default
 
 // Module 7400 (useOAuth2AuthorizeForm)
 import react_native from "react-native" /* 17 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
 import PermissionUtilsAll from "PermissionUtils" /* 5243 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5953 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6067 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5943 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6057 */;
 import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 7055 */;
 import Authorize from "Authorize" /* 7402 */;
 import react_nativeDefault from "react-native" /* 7404 */;

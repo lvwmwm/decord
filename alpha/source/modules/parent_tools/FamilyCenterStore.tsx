@@ -1,12 +1,12 @@
 // Module ID: 8740
 // Function ID: 8741
 // Name: FamilyCenterStore
-// Dependencies: [32, 5997, 1071, 1388, 8741, 5169, 11, 8742, 2]
+// Dependencies: [32, 5987, 1071, 1388, 8741, 5169, 11, 8742, 2]
 
 // Module 8740 (FamilyCenterStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 5169 */;
-import CountryCodeUtils from "CountryCodeUtils" /* 5997 */;
+import CountryCodeUtils from "CountryCodeUtils" /* 5987 */;
 import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 8742 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1071 */;
@@ -21,7 +21,7 @@ let REQUESTS;
 let metroRequire;
 let tmp;
 let tmp2;
-const f96827 = (acc, id) => {
+const f96840 = (acc, id) => {
   let num;
   const obj = {};
   const merged = Object.assign(acc);
@@ -36,7 +36,7 @@ const f96827 = (acc, id) => {
   obj[id] = obj2;
   return obj;
 };
-const f96828 = (acc, invoice_items) => {
+const f96841 = (acc, invoice_items) => {
   let sku_id;
   let subscription_plan_id;
   if (null != invoice_items.invoice_items) {
@@ -52,7 +52,7 @@ const f96828 = (acc, invoice_items) => {
   }
   return acc;
 };
-const f96829 = (acc, entitlement_id) => {
+const f96842 = (acc, entitlement_id) => {
   acc[entitlement_id.entitlement_id] = entitlement_id;
   return acc;
 };
@@ -184,13 +184,13 @@ function handleInitialLoad(linkedUsers) {
   if (undefined !== totals) {
     closure_16 = totals;
   }
-  closure_34 = guilds.reduce(f96827, closure_34);
+  closure_34 = guilds.reduce(f96840, closure_34);
   processLinkedUsers(linkedUsers);
   if (null != invoices) {
-    closure_31 = invoices.reduce(f96828, {});
+    closure_31 = invoices.reduce(f96841, {});
   }
   if (null != gifts) {
-    closure_32 = gifts.reduce(f96829, {});
+    closure_32 = gifts.reduce(f96842, {});
   }
   if (spendingLimit == null) {
     spendingLimit = null;
@@ -239,12 +239,12 @@ function handleTeenActivityFetch(familyCenterTeenActivity) {
       closure_16 = totals;
     }
     let tmp = closure_34;
-    closure_34 = guilds.reduce(f96827, closure_34);
+    closure_34 = guilds.reduce(f96840, closure_34);
     if (null != invoices) {
-      closure_31 = invoices.reduce(f96828, {});
+      closure_31 = invoices.reduce(f96841, {});
     }
     if (null != gifts) {
-      closure_32 = gifts.reduce(f96829, {});
+      closure_32 = gifts.reduce(f96842, {});
     }
     c21 = false;
     let obj = SnowflakeUtilsDefault;
@@ -270,7 +270,7 @@ function handleTeenActivityMoreFetch(familyCenterTeenActivity) {
       const result = value.set(display_type.event_id, display_type);
     }
   });
-  closure_34 = guilds.reduce(f96827, closure_34);
+  closure_34 = guilds.reduce(f96840, closure_34);
 }
 function handleUserLinkStatusUpdate(linkedUsers) {
   processLinkedUsers(linkedUsers.linkedUsers);
@@ -456,7 +456,7 @@ class FamilyCenterStore extends MobileCacheSnapshotStore {
       let tmp3 = processLinkedUsers(snapshot.linkedUsers);
       const guilds = snapshot.guilds;
       let tmp4 = closure_34;
-      closure_34 = guilds.reduce(f96827, closure_34);
+      closure_34 = guilds.reduce(f96840, closure_34);
       const teenActivity = snapshot.teenActivity;
       const tmp6 = freshTeenActivityWithMap();
       let closure_0 = tmp6;

@@ -1,7 +1,7 @@
 // Module ID: 11730
 // Function ID: 11731
 // Name: SocialLayerStorefrontProductDetailsModal
-// Dependencies: [32, 19, 17, 7070, 7246, 11731, 1072, 21, 671, 575, 5306, 5892, 11732, 9730, 6020, 5929, 1113, 11733, 1187, 2153, 6766, 1630, 8560, 9723, 504, 7259, 7919, 7244, 7937, 5899, 1256, 11729, 10018, 1380, 2186, 11734, 9410, 9722, 11735, 7249, 9515, 11738, 4031, 5936, 7988, 9333, 11741, 7500, 7549, 5893, 11743, 2]
+// Dependencies: [32, 19, 17, 7070, 7246, 11731, 1072, 21, 671, 575, 5306, 5882, 11732, 9730, 6010, 5919, 1113, 11733, 1187, 2153, 6756, 1630, 8560, 9723, 504, 7259, 7919, 7244, 7937, 5889, 1256, 11729, 10018, 1380, 2186, 11734, 9410, 9722, 11735, 7249, 9515, 11738, 4031, 5926, 7988, 9333, 11741, 7500, 7549, 5883, 11743, 2]
 // Exports: default
 
 // Module 11730 (SocialLayerStorefrontProductDetailsModal)
@@ -11,10 +11,10 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import StringUtils from "StringUtils" /* 2153 */;
 import BillingPlatformUtils from "BillingPlatformUtils" /* 2186 */;
-import NavigatorConstants from "NavigatorConstants" /* 5892 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import FastImageDefault from "FastImage" /* 6020 */;
-import StoreUtils from "StoreUtils" /* 6766 */;
+import NavigatorConstants from "NavigatorConstants" /* 5882 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import StoreUtils from "StoreUtils" /* 6756 */;
 import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7244 */;
 import XSmallIcon from "XSmallIcon" /* 7549 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
@@ -229,7 +229,7 @@ function SKUNameAndDescriptionSection(sku) {
     const tmp7 = gesture;
     if (tmp7Result) {
       const obj4 = { variant: "body-md/medium", color: "text-muted", children: sku.description };
-      tmp7Result = tmp7(tmp2(5929).Text, obj4);
+      tmp7Result = tmp7(tmp2(5919).Text, obj4);
     }
     items[1] = tmp7Result;
     tmp5Result = tmp5(tmp6, obj2);
@@ -276,7 +276,7 @@ function ItemDetailsSection(selectedItem) {
   tmp8Result6.isNullOrEmpty(trimmed);
   if (tmp14) {
     const obj4 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: trimmed };
-    tmp14 = gesture(tmp8(5929).Heading, obj4);
+    tmp14 = gesture(tmp8(5919).Heading, obj4);
   }
   items = [tmp14, , ];
   const tmp8Result7 = StringUtils;
@@ -301,7 +301,7 @@ function ItemDetailsSection(selectedItem) {
   tmp8Result8.isNullOrEmpty(trimmed2);
   if (tmp23) {
     const obj9 = { variant: "body-md/medium", color: "text-default", children: trimmed2 };
-    tmp23 = gesture(tmp8(5929).Text, obj9);
+    tmp23 = gesture(tmp8(5919).Text, obj9);
   }
   items[2] = tmp23;
   tmp11Result2 = tmp11(tmp12, obj3);
@@ -350,7 +350,7 @@ function SocialLayerStorefrontProductDetailsModal(skuId) {
   let tmp43;
   let tmp70;
   let type;
-  const f103199 = () => {
+  const f103212 = () => {
     let result;
     let applicationId1;
     if (stateFromStores != null) {
@@ -440,7 +440,7 @@ function SocialLayerStorefrontProductDetailsModal(skuId) {
     const items1 = [...items, AnalyticsLocationDefault.SLAYER_STOREFRONT_NATIVE_PDP];
     return items1;
   }, items4);
-  tmp2(5899)(() => {
+  tmp2(5889)(() => {
     let applicationId;
     const tmp = AnalyticsUtilsDefault;
     const track = tmp.track;
@@ -473,9 +473,9 @@ function SocialLayerStorefrontProductDetailsModal(skuId) {
     track(SLAYER_STOREFRONT_PDP_ELEMENT_CLICKED, obj);
   }, items5);
   const items6 = [stateFromStores, stateFromStores2];
-  [arr8, arr9] = mobileStoreFront(stateFromStores.useMemo(f103199, items6), 2);
+  [arr8, arr9] = mobileStoreFront(stateFromStores.useMemo(f103212, items6), 2);
   let num = 0;
-  mobileStoreFront(stateFromStores.useMemo(f103199, items6), 2);
+  mobileStoreFront(stateFromStores.useMemo(f103212, items6), 2);
   if (first < arr9.length) {
     num = first;
   }
@@ -692,7 +692,7 @@ function SocialLayerStorefrontProductDetailsModal(skuId) {
     let tmp67Result = !result;
     if (tmp67Result) {
       const obj17 = { variant: "body-xs/normal", color: "text-muted", style: tmp.availabilityCopy, includeFontPadding: true, children: intl.string(tmp2(4031).gndWN7) };
-      const Text = tmp4(5929).Text;
+      const Text = tmp4(5919).Text;
       intl = tmp4(1113).intl;
       tmp67Result = tmp67(Text, obj17);
     }
@@ -701,7 +701,7 @@ function SocialLayerStorefrontProductDetailsModal(skuId) {
     const obj19 = { style: tmp.buyButton, children: closure_14(Button, obj20) };
     obj20 = { variant: "primary", size: "lg", text: stringResult, loading: tmp30, disabled: tmp70, onPress: callback3 };
     tmp70 = tmp30;
-    Button = tmp4(5936).Button;
+    Button = tmp4(5926).Button;
     if (!tmp30) {
       tmp70 = !result;
     }
@@ -755,7 +755,7 @@ function SocialLayerStorefrontProductDetailsModal(skuId) {
     items17 = [closure_14(HeaderBackButton, obj27), ];
     const obj28 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: tmp.headerTitle, children: name };
     name = undefined;
-    const Heading = tmp4(5929).Heading;
+    const Heading = tmp4(5919).Heading;
     if (getOrFetchApplication != null) {
       name = getOrFetchApplication.name;
     }
@@ -766,7 +766,7 @@ function SocialLayerStorefrontProductDetailsModal(skuId) {
     if (exclusive) {
       const obj30 = { style: stateFromStores2.absoluteFill, colors: items18, pointerEvents: "none" };
       items18 = [closure_16, closure_17];
-      exclusive = tmp67(tmp2(5893), obj30);
+      exclusive = tmp67(tmp2(5883), obj30);
     }
     items19 = [exclusive, ];
     if (isScreenLandscape) {
@@ -819,7 +819,7 @@ const importDefaultResult1Result = module_671(nativeDefault.unsafe_rawColors.BRA
 const alphaResult1 = importDefaultResult1Result.alpha(0);
 let closure_17 = alphaResult1.hex();
 let createStyles = createStyles_mod;
-let obj = { container: { flex: 1 }, header: obj2, headerTitle: { flexShrink: 1 }, closeButtonIcon: obj3, scrollContent: obj4, scrollContainer: { flex: 1 }, columnsLandscape: obj5, heroColumnLandscape: { flex: 1 }, heroColumnContentLandscape: obj6, bundleGroupLandscape: obj7, detailsScrollLandscape: { flex: 1 }, detailsContentLandscape: { flexGrow: 1, justifyContent: "space-between", paddingBottom: 0 }, detailsGroupLandscape: obj8, section: obj9, bundleThumbnailRow: obj10, thumbnail: size, thumbnailSelected: obj11, thumbnailInner: obj12, thumbnailInnerSelected: obj13, thumbnailImage: { width: "100%", height: "100%" }, labelRow: obj14, labelIcon: size1, priceRow: obj15, footer: obj16, footerButtonRow: obj17, buyButton: { flex: 1 }, availabilityCopy: { textAlign: "center" }, legalCopy: obj18, hero: obj19, heroLandscape: { flex: 1, minHeight: 140, height: "analyticsLocations" }, priceSection: obj20, heroImage: { width: "100%", height: "100%" }, exclusiveBadgeContainer: obj21 };
+let obj = { container: { flex: 1 }, header: obj2, headerTitle: { flexShrink: 1 }, closeButtonIcon: obj3, scrollContent: obj4, scrollContainer: { flex: 1 }, columnsLandscape: obj5, heroColumnLandscape: { flex: 1 }, heroColumnContentLandscape: obj6, bundleGroupLandscape: obj7, detailsScrollLandscape: { flex: 1 }, detailsContentLandscape: { flexGrow: 1, justifyContent: "space-between", paddingBottom: 0 }, detailsGroupLandscape: obj8, section: obj9, bundleThumbnailRow: obj10, thumbnail: size, thumbnailSelected: obj11, thumbnailInner: obj12, thumbnailInnerSelected: obj13, thumbnailImage: { width: "100%", height: "100%" }, labelRow: obj14, labelIcon: size1, priceRow: obj15, footer: obj16, footerButtonRow: obj17, buyButton: { flex: 1 }, availabilityCopy: { textAlign: "center" }, legalCopy: obj18, hero: obj19, heroLandscape: { flex: 1, minHeight: 140, height: "assign" }, priceSection: obj20, heroImage: { width: "100%", height: "100%" }, exclusiveBadgeContainer: obj21 };
 obj2 = { height: NavigatorConstants.NAV_BAR_HEIGHT, flexDirection: "row", alignItems: "center", paddingHorizontal: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8, borderBottomWidth: 1, borderBottomColor: nativeDefault.colors.BORDER_SUBTLE };
 createStyles = createStyles.createStyles;
 obj3 = { tintColor: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };

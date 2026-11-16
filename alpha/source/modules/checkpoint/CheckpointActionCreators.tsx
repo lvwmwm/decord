@@ -1,7 +1,7 @@
 // Module ID: 14260
 // Function ID: 14261
 // Name: CheckpointActionCreators
-// Dependencies: [5, 5155, 14253, 1072, 572, 14251, 6747, 14254, 1285, 8134, 8786, 8660, 10245, 1255, 2]
+// Dependencies: [5, 5155, 14253, 1072, 572, 14251, 6737, 14254, 1285, 8134, 8786, 8660, 10245, 1255, 2]
 // Exports: completeCheckpoint, fetchCheckpointData, resetCheckpoint, saveCheckpointProgress, selectCharacterTrait, sendCheckpointCard, sendSidekickMessage, setVolume, toggleMute
 
 // Module 14260 (CheckpointActionCreators)

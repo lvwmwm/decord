@@ -1,7 +1,7 @@
 // Module ID: 11889
 // Function ID: 11890
 // Name: VoiceChannelListInviteEmbed
-// Dependencies: [17, 5307, 11890, 5173, 5155, 5218, 5177, 5238, 5248, 1388, 5981, 6074, 11891, 1072, 8842, 11892, 9170, 8655, 1414, 5372, 5486, 5954, 1113, 11893, 2]
+// Dependencies: [17, 5307, 11890, 5173, 5155, 5218, 5177, 5238, 5248, 1388, 5971, 6064, 11891, 1072, 8842, 11892, 9170, 8655, 1414, 5362, 5476, 5944, 1113, 11893, 2]
 // Exports: canShowVoiceChannelListInviteEmbed, createVoiceChannelListInviteEmbed
 
 // Module 11889 (VoiceChannelListInviteEmbed)
@@ -9,7 +9,7 @@ import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
 import GuildRecord from "GuildRecord" /* 5173 */;
-import UserUtilsDefault from "UserUtils" /* 5372 */;
+import UserUtilsDefault from "UserUtils" /* 5362 */;
 import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8655 */;
 import Constants2 from "Constants" /* 8842 */;
 import CodedLinksConstants from "CodedLinksConstants" /* 11891 */;
@@ -22,8 +22,8 @@ import GuildStore from "GuildStore" /* 5177 */;
 import PermissionStore from "PermissionStore" /* 5238 */;
 import RelationshipStore from "RelationshipStore" /* 5248 */;
 import UserStore from "UserStore" /* 1388 */;
-import VoiceStateStore from "VoiceStateStore" /* 5981 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 6074 */;
+import VoiceStateStore from "VoiceStateStore" /* 5971 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 6064 */;
 import size from "module_2" /* 2 */;
 
 let member;
@@ -180,13 +180,13 @@ export function createVoiceChannelListInviteEmbed(invite, theme) {
     const currentClientVoiceChannelId = VoiceStateStore.getCurrentClientVoiceChannelId(guild.id);
     const id = channel2.id;
     const merged = Object.assign(baseColors);
-    let obj4 = guild(5486);
+    let obj4 = guild(5476);
     const embedScrollGradientBackground = obj4.getEmbedScrollGradientBackground();
     backgroundColor = processColor(embedScrollGradientBackground);
     if (backgroundColor == null) {
       backgroundColor = baseColors.backgroundColor;
     }
-    tmp31Result = guild(5954);
+    tmp31Result = guild(5944);
     tmp36 = currentClientVoiceChannelId === id;
     intl = tmp31(1113).intl;
     ({ acceptLabelGreenColor: obj3.acceptLabelColor, acceptLabelGreenBackgroundColor: obj3.acceptLabelBackgroundColor } = colors);

@@ -1,13 +1,13 @@
 // Module ID: 11977
 // Function ID: 11978
 // Name: useChannelContentGate
-// Dependencies: [19, 21, 6838, 6858, 11259, 11978, 11980, 11982, 2]
+// Dependencies: [19, 21, 6828, 6848, 11259, 11978, 11980, 11982, 2]
 // Exports: renderChannelContentGate, useChannelContentGate
 
 // Module 11977 (useChannelContentGate)
 import Fragment from "Fragment" /* 21 */;
-import AgeGateUtils from "AgeGateUtils" /* 6838 */;
-import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6858 */;
+import AgeGateUtils from "AgeGateUtils" /* 6828 */;
+import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6848 */;
 import NsfwGateChatDefault from "NsfwGateChat" /* 11978 */;
 import GuildNSFWDefault from "GuildNSFW" /* 11980 */;
 import ChannelSpoilerDefault from "ChannelSpoiler" /* 11982 */;

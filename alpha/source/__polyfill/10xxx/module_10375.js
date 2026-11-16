@@ -18,7 +18,7 @@ export function getFeed(children) {
   let elements;
   let elements1;
   let str2;
-  const f100366 = (attribs) => {
+  const f100379 = (attribs) => {
     let num;
     let num2;
     attribs = attribs.attribs;
@@ -55,7 +55,7 @@ export function getFeed(children) {
         items: elements.map(function(children) {
               let elements;
               children = children.children;
-              const obj = { media: elements.map(f100366) };
+              const obj = { media: elements.map(f100379) };
               elements = testElement.getElementsByTagName("media:content", children);
               const str = _mod10363.textContent(testElement.getElementsByTagName("id", children, false, 1));
               const trimmed = str.trim();
@@ -159,7 +159,7 @@ export function getFeed(children) {
               let length;
               let length2;
               children = children.children;
-              let obj = { media: elements.map(f100366) };
+              let obj = { media: elements.map(f100379) };
               let tmp = require;
               let tmp2 = dependencyMap;
               elements = testElement.getElementsByTagName("media:content", children);

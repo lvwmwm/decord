@@ -1,7 +1,7 @@
 // Module ID: 9493
 // Function ID: 9494
 // Name: ProfileEffect
-// Dependencies: [32, 19, 17, 5307, 2120, 21, 5306, 1496, 9494, 9495, 9496, 9498, 504, 1092, 9499, 9497, 6020, 8589, 2]
+// Dependencies: [32, 19, 17, 5307, 2120, 21, 5306, 1496, 9494, 9495, 9496, 9498, 504, 1092, 9499, 9497, 6010, 8589, 2]
 // Exports: default, usePreloadProfileEffect
 
 // Module 9493 (ProfileEffect)
@@ -78,7 +78,7 @@ function StaticEffect(useThumbnail) {
     const obj2 = { style: tmp.profileEffects, pointerEvents: "none", onLayout: callback };
   } else {
     obj3 = { style: tmp.profileEffects, pointerEvents: "none", onLayout: callback, children: null };
-    tmp4(6020);
+    tmp4(6010);
     if (useThumbnail) {
       reducedMotionSrc = thumbnailUrlOverride;
     }

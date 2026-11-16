@@ -1,14 +1,14 @@
 // Module ID: 15492
 // Function ID: 15493
 // Name: ShopNitroUpsellPromoSheet
-// Dependencies: [19, 1072, 21, 7918, 11170, 11260, 9037, 11279, 10713, 15493, 6951, 10074, 1113, 5936, 2]
+// Dependencies: [19, 1072, 21, 7918, 11170, 11260, 9037, 11279, 10713, 15493, 6941, 10074, 1113, 5926, 2]
 // Exports: default
 
 // Module 15492 (ShopNitroUpsellPromoSheet)
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
-import components_Button_Button from "components/Button/Button" /* 5936 */;
-import ButtonGroup2 from "ButtonGroup" /* 6951 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
+import ButtonGroup2 from "ButtonGroup" /* 6941 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7918 */;
 import EntitlementFeatureNames from "EntitlementFeatureNames" /* 9037 */;
 import NitroUpsellButtonDefault from "NitroUpsellButton" /* 10074 */;

@@ -1,7 +1,7 @@
 // Module ID: 8415
 // Function ID: 8416
 // Name: EditGuildEventDetails
-// Dependencies: [32, 19, 7029, 5161, 21, 5306, 2169, 1113, 7972, 5315, 1502, 5929, 5936, 2020, 7971, 7993, 8188, 7996, 2]
+// Dependencies: [32, 19, 7029, 5161, 21, 5306, 2169, 1113, 7972, 5315, 1502, 5919, 5926, 2020, 7971, 7993, 8188, 7996, 2]
 // Exports: default
 
 // Module 8415 (EditGuildEventDetails)
@@ -50,7 +50,7 @@ export default function EditGuildEventDetails(guildEvent) {
   let name;
   let scheduledStartTime;
   let tmp12;
-  const f95914 = () => {
+  const f95927 = () => {
     const obj = ScheduleUtils;
     return obj.recurrenceRuleToOption(_modDef2169(scheduledStartTime), recurrenceRule);
   };
@@ -83,8 +83,8 @@ export default function EditGuildEventDetails(guildEvent) {
     }
     return addResult;
   }, items1);
-  [c6, c7] = recurrenceRule(memo.useState(f95914), 2);
-  const tmp4 = recurrenceRule(memo.useState(f95914), 2);
+  [c6, c7] = recurrenceRule(memo.useState(f95927), 2);
+  const tmp4 = recurrenceRule(memo.useState(f95927), 2);
   const memo2 = memo.useMemo(() => onChange(scheduledEndTime[6])(), []);
   const items2 = [memo];
   const memo3 = memo.useMemo(() => {

@@ -1,7 +1,7 @@
 // Module ID: 15252
 // Function ID: 15253
 // Name: QuestMatchingUtils
-// Dependencies: [32, 2165, 7318, 5338, 2145, 7472, 8831, 8815, 8829, 15137, 2]
+// Dependencies: [32, 2165, 7318, 6954, 2145, 7472, 8831, 8815, 8829, 15137, 2]
 // Exports: getActivityQuestForApplicationId, getEligibleQuestsForApplicationId, getQuestApplicationIdsForRunningGame, getQuestByApplicationId, getQuestsFromActivities
 
 // Module 15252 (QuestMatchingUtils)
@@ -14,7 +14,7 @@ import getApplicationIdsForGameDefault from "getApplicationIdsForGame" /* 15137 
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
 import SocialSdkApplicationStore from "SocialSdkApplicationStore" /* 7318 */;
-import QuestConstants from "QuestConstants" /* 5338 */;
+import QuestConstants from "QuestConstants" /* 6954 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;

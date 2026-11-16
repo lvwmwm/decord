@@ -1,7 +1,7 @@
 // Module ID: 12346
 // Function ID: 12347
 // Name: ChannelHeaderShared
-// Dependencies: [32, 19, 17, 5248, 1388, 21, 5306, 575, 7428, 1380, 10064, 5929, 1187, 12347, 10891, 5902, 8033, 12348, 1113, 5954, 6020, 1414, 10546, 10870, 2]
+// Dependencies: [32, 19, 17, 5248, 1388, 21, 5306, 575, 7428, 1380, 10064, 5919, 1187, 12347, 10891, 5892, 8033, 12348, 1113, 5944, 6010, 1414, 10546, 10870, 2]
 // Exports: renderAppSubTitle, renderChannelIcon, renderChannelIconRaw, renderChannelTitle, renderEmptyIcon, renderGroupDMIcon, renderMemberCountText, renderParentChannelSubTitle, renderTitleWrapper, renderUserAvatar
 
 // Module 12346 (ChannelHeaderShared)
@@ -10,10 +10,10 @@ import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import useToken from "useToken" /* 5902 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import useChannelName from "useChannelName" /* 5954 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import useToken from "useToken" /* 5892 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import useChannelName from "useChannelName" /* 5944 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import Pressables from "Pressables" /* 7428 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 8033 */;
 import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10064 */;

@@ -1,7 +1,7 @@
 // Module ID: 14848
 // Function ID: 14849
 // Name: EmojiSuggestionChatButton
-// Dependencies: [32, 19, 17, 1192, 5152, 1228, 21, 5306, 575, 1380, 5902, 14842, 14849, 1655, 5939, 1708, 12011, 14850, 5598, 13509, 7428, 1113, 6020, 5313, 7895, 7896, 11275, 1187, 2]
+// Dependencies: [32, 19, 17, 1192, 5152, 1228, 21, 5306, 575, 1380, 5892, 14842, 14849, 1655, 5929, 1708, 12011, 14850, 5588, 13509, 7428, 1113, 6010, 5313, 7895, 7896, 11275, 1187, 2]
 // Exports: EmojiSuggestionChatButton
 
 // Module 14848 (EmojiSuggestionChatButton)
@@ -10,8 +10,8 @@ import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1228 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import _mod1708 from "module_1708" /* 1708 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5598 */;
-import spring_spring from "spring/spring" /* 5939 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5588 */;
+import spring_spring from "spring/spring" /* 5929 */;
 import EmojiSuggestionBarUtils from "EmojiSuggestionBarUtils" /* 14842 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

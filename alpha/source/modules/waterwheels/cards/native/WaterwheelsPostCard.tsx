@@ -1,16 +1,16 @@
-// Module ID: 19009
-// Function ID: 19010
+// Module ID: 19011
+// Function ID: 19012
 // Name: WaterwheelsPostCard
-// Dependencies: [19, 17, 21, 5306, 575, 5377, 10225, 7087, 6020, 1414, 5328, 6029, 5929, 5936, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 5367, 10225, 7087, 6010, 1414, 5328, 6019, 5919, 5926, 2]
 // Exports: default
 
-// Module 19009 (WaterwheelsPostCard)
+// Module 19011 (WaterwheelsPostCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AvatarUtils from "AvatarUtils" /* 1414 */;
 import themes from "themes" /* 5328 */;
-import native from "native" /* 5377 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import native from "native" /* 5367 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import PlatformsDefault from "Platforms" /* 7087 */;
 import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 10225 */;
 import react from "react" /* 19 */;
@@ -92,7 +92,7 @@ export default function WaterwheelsPostCard(onAction) {
     let num;
     const obj4 = { style: tmp5 ? tmp.content : tmp.standardContent, children: items2 };
     const obj6 = { style: tmp.copy, children: items1 };
-    const Heading = tmp2(5929).Heading;
+    const Heading = tmp2(5919).Heading;
     if (tmp5) {
       num = 2;
     }
@@ -101,7 +101,7 @@ export default function WaterwheelsPostCard(onAction) {
     let tmp19Result = null;
     if (tmp5) {
       const obj8 = { variant: "body-sm/normal", color: "text-subtle", lineClamp: 2, children: post.body };
-      tmp19Result = tmp19(tmp2(5929).Text, obj8);
+      tmp19Result = tmp19(tmp2(5919).Text, obj8);
     }
     items1[1] = tmp19Result;
     items[1] = hasOwnProperty(View, obj6);
@@ -109,7 +109,7 @@ export default function WaterwheelsPostCard(onAction) {
     let tmp19Result5 = null;
     if (!tmp5) {
       const obj9 = { variant: "body-md/normal", color: "text-default", lineClamp: 4, children: post.body };
-      tmp19Result5 = tmp19(tmp2(5929).Text, obj9);
+      tmp19Result5 = tmp19(tmp2(5919).Text, obj9);
     }
     items2[1] = tmp19Result5;
     let tmp19Result6 = null;
@@ -129,7 +129,7 @@ export default function WaterwheelsPostCard(onAction) {
         }
         let str = "sm";
         const obj12 = { style: postAction, children: React3(Button, obj13) };
-        Button = tmp2(5936).Button;
+        Button = tmp2(5926).Button;
         if (tmp5) {
           str = "md";
         }
@@ -146,7 +146,7 @@ export default function WaterwheelsPostCard(onAction) {
         tmp19Result7 = undefined;
         if (tmp5) {
           const obj14 = { size: "sm", color: nativeDefault.colors.ICON_OVERLAY_LIGHT };
-          const LinkIcon2 = tmp2(6029).LinkIcon;
+          const LinkIcon2 = tmp2(6019).LinkIcon;
           tmp19Result7 = tmp19(LinkIcon2, obj14);
         }
         tmp19Result8 = tmp19(tmp18, obj12);
@@ -161,7 +161,7 @@ export default function WaterwheelsPostCard(onAction) {
     items3 = [, ];
     ({ icon: arr[0], fallback: arr[1] } = tmp);
     obj16 = { size: "md", color: nativeDefault.colors.ICON_MUTED };
-    LinkIcon = tmp2(6029).LinkIcon;
+    LinkIcon = tmp2(6019).LinkIcon;
     tmp13Result = React3(View, obj15);
   }
 };

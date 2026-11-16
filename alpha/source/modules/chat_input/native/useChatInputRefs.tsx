@@ -1,16 +1,16 @@
 // Module ID: 14600
 // Function ID: 14601
 // Name: useChatInputRefs
-// Dependencies: [19, 9007, 7010, 8725, 8785, 8792, 1388, 11865, 1072, 6346, 5311, 5917, 5501, 12, 13797, 14601, 14602, 14603, 14604, 11157, 9004, 5503, 1628, 1500, 1380, 5504, 2020, 6331, 1256, 12639, 8660, 12641, 14605, 8786, 14606, 6792, 14638, 7643, 2]
+// Dependencies: [19, 9007, 7010, 8725, 8785, 8792, 1388, 11865, 1072, 6336, 5311, 5907, 5491, 12, 13797, 14601, 14602, 14603, 14604, 11157, 9004, 5493, 1628, 1500, 1380, 5494, 2020, 6321, 1256, 12639, 8660, 12641, 14605, 8786, 14606, 6782, 14638, 7643, 2]
 // Exports: default
 
 // Module 14600 (useChatInputRefs)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import MessageConstants from "MessageConstants" /* 5311 */;
-import ChatInputUtils from "ChatInputUtils" /* 5501 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6346 */;
-import StickersUtils from "StickersUtils" /* 6792 */;
+import ChatInputUtils from "ChatInputUtils" /* 5491 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6336 */;
+import StickersUtils from "StickersUtils" /* 6782 */;
 import MessageActionCreatorsDefault from "MessageActionCreators" /* 8660 */;
 import DraftStore2 from "DraftStore" /* 8725 */;
 import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 11865 */;
@@ -54,7 +54,7 @@ export default function useChatInputRefs(chatInputProps) {
   const useRef = react.useRef;
   map = new Map();
   const chatInputTextFlushedResponses = useRef(map);
-  let tmp2 = chatInputTextFieldHeight(5917)(() => {
+  let tmp2 = chatInputTextFieldHeight(5907)(() => {
     const obj = ChatInputUtils;
     return obj.createInputRefTracker(chatInputProps.channel.id, chatInputProps.screenIndex);
   });
@@ -85,7 +85,7 @@ export default function useChatInputRefs(chatInputProps) {
       closure_1_12.handleRef(null, channel.channel.id);
     };
   }, items2);
-  const state = react.useRef(chatInputTextFieldHeight(5917)(() => ({ editId: null, focused: false, selectionStart: 0, selectionEnd: 0, text: chatInputProps.defaultValue, textPrev: chatInputProps.defaultValue, textFieldContentSize: 0, textFieldHeight: chatInputTextFieldHeight })));
+  const state = react.useRef(chatInputTextFieldHeight(5907)(() => ({ editId: null, focused: false, selectionStart: 0, selectionEnd: 0, text: chatInputProps.defaultValue, textPrev: chatInputProps.defaultValue, textFieldContentSize: 0, textFieldHeight: chatInputTextFieldHeight })));
   const ref = react.useRef({ handledHereMention: false, sending: false });
   const items3 = [tmp2];
   const memo = react.useMemo(() => {

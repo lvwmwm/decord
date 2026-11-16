@@ -1,18 +1,18 @@
-// Module ID: 19417
-// Function ID: 19418
+// Module ID: 19419
+// Function ID: 19420
 // Name: GuildSettingsModalMemberApplications
-// Dependencies: [19, 17, 6933, 21, 5306, 575, 5372, 5929, 19418, 1414, 7443, 1187, 1630, 19423, 5352, 19424, 504, 1113, 7888, 8596, 5912, 2]
+// Dependencies: [19, 17, 6923, 21, 5306, 575, 5362, 5919, 19420, 1414, 7443, 1187, 1630, 19425, 5342, 19426, 504, 1113, 7888, 8596, 5902, 2]
 
-// Module 19417 (GuildSettingsModalMemberApplications)
+// Module 19419 (GuildSettingsModalMemberApplications)
 import nativeDefault from "native" /* 575 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 5352 */;
-import UserUtilsDefault from "UserUtils" /* 5372 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 19418 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5342 */;
+import UserUtilsDefault from "UserUtils" /* 5362 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 19420 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6933 */;
+import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6923 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;

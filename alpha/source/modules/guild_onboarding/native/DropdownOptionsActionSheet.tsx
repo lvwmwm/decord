@@ -1,7 +1,7 @@
 // Module ID: 7899
 // Function ID: 7900
 // Name: DropdownOptionsActionSheet
-// Dependencies: [19, 17, 6969, 7869, 1391, 21, 5306, 563, 7894, 1414, 7459, 5929, 7900, 1630, 5552, 7913, 1113, 5566, 5570, 1187, 5936, 2]
+// Dependencies: [19, 17, 6969, 7869, 1391, 21, 5306, 563, 7894, 1414, 7459, 5919, 7900, 1630, 5542, 7913, 1113, 5556, 5560, 1187, 5926, 2]
 // Exports: default
 
 // Module 7899 (DropdownOptionsActionSheet)
@@ -10,7 +10,7 @@ import useStateFromStores from "useStateFromStores" /* 563 */;
 import intl4 from "intl" /* 1113 */;
 import EmojiConstants from "EmojiConstants" /* 1391 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import react from "react" /* 19 */;
 import EmojiStore from "EmojiStore" /* 6969 */;
 import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7869 */;
@@ -146,10 +146,10 @@ export default function DropdownOptionsActionSheet(arg0) {
     intl = tmp3(1113).intl;
     const obj4 = { scrollable: true, header: closure_8(BottomSheetTitleHeader, obj3), children: closure_9(BottomSheetScrollView, obj5) };
     closure_8(BottomSheetTitleHeader, obj3);
-    const BottomSheet = tmp3(5566).BottomSheet;
+    const BottomSheet = tmp3(5556).BottomSheet;
     obj5 = { contentContainerStyle: obj6, children: items2 };
     obj6 = { paddingBottom: bottom };
-    BottomSheetScrollView = tmp3(5570).BottomSheetScrollView;
+    BottomSheetScrollView = tmp3(5560).BottomSheetScrollView;
     const obj7 = {
       accessibilityRole: "radiogroup",
       accessibilityLabel: intl2.string(intl4.t.E2ICbC),
@@ -164,7 +164,7 @@ export default function DropdownOptionsActionSheet(arg0) {
     items2 = [closure_8(CardSection, obj7), ];
     const obj8 = { style: tmp.closeButtonWrapper, children: closure_8(Button, obj9) };
     obj9 = { onPress: tmp5, text: intl3.string(intl4.t.cpT0Cq), grow: true };
-    Button = tmp3(5936).Button;
+    Button = tmp3(5926).Button;
     intl3 = tmp3(1113).intl;
     items2[1] = closure_8(responses, obj8);
     return closure_8(BottomSheet, obj4);

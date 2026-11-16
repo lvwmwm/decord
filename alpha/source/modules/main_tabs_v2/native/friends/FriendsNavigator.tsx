@@ -1,15 +1,15 @@
-// Module ID: 19590
-// Function ID: 19591
+// Module ID: 19592
+// Function ID: 19593
 // Name: FriendsNavigator
-// Dependencies: [19, 21, 9128, 5306, 575, 9054, 9051, 14922, 1113, 8678, 7490, 19591, 19597, 19600, 19601, 19602, 19613, 19614, 19615, 19617, 19620, 19621, 5488, 7771, 5263, 5377, 19622, 2]
+// Dependencies: [19, 21, 9128, 5306, 575, 9054, 9051, 14922, 1113, 8678, 7490, 19593, 19599, 19602, 19603, 19604, 19615, 19616, 19617, 19619, 19622, 19623, 5478, 7771, 5263, 5367, 19624, 2]
 // Exports: default
 
-// Module 19590 (FriendsNavigator)
+// Module 19592 (FriendsNavigator)
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1113 */;
 import DeviceUtils from "DeviceUtils" /* 5263 */;
-import native from "native" /* 5377 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5488 */;
+import native from "native" /* 5367 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5478 */;
 import useIsWindowLargeDefault from "useIsWindowLarge" /* 7771 */;
 import HeaderShared from "HeaderShared" /* 9051 */;
 import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9054 */;
@@ -27,7 +27,7 @@ let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp;
-const AppFrameContainerDefault = tmp(19622);
+const AppFrameContainerDefault = tmp(19624);
 function RequestsSettingsModalButton(onPress) {
   let HeaderIconButton;
   let intl;

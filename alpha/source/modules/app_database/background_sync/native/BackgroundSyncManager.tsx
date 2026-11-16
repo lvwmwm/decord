@@ -1,10 +1,10 @@
-// Module ID: 20183
-// Function ID: 20184
+// Module ID: 20186
+// Function ID: 20187
 // Name: BackgroundSyncManager
-// Dependencies: [502, 1388, 7882, 20184, 2]
+// Dependencies: [502, 1388, 7882, 20187, 2]
 
-// Module 20183 (BackgroundSyncManager)
-import background_sync_BackgroundSync from "background_sync/BackgroundSync" /* 20184 */;
+// Module 20186 (BackgroundSyncManager)
+import background_sync_BackgroundSync from "background_sync/BackgroundSync" /* 20187 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import UserStore from "UserStore" /* 1388 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;

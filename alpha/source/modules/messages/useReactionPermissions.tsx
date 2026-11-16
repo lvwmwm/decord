@@ -1,7 +1,7 @@
 // Module ID: 11899
 // Function ID: 11900
 // Name: useReactionPermissions
-// Dependencies: [32, 5239, 5218, 6937, 5238, 1072, 504, 5244, 9204, 7287, 11900, 2]
+// Dependencies: [32, 5239, 5218, 6927, 5238, 1072, 504, 5244, 9204, 7287, 11900, 2]
 // Exports: default
 
 // Module 11899 (useReactionPermissions)
@@ -9,7 +9,7 @@ import Constants from "Constants" /* 1072 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import LurkingStore from "LurkingStore" /* 5239 */;
 import GuildMemberStore from "GuildMemberStore" /* 5218 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 6937 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 6927 */;
 import PermissionStore from "PermissionStore" /* 5238 */;
 import size from "module_2" /* 2 */;
 

@@ -1,14 +1,14 @@
 // Module ID: 14185
 // Function ID: 14186
 // Name: AutomatedUnderageAppealModalActionCreators
-// Dependencies: [5, 8206, 6832, 21, 14183, 572, 5552, 14186, 2121, 8205, 8230, 6833, 8236, 8190, 6848, 8243, 8389, 2]
+// Dependencies: [5, 8206, 6822, 21, 14183, 572, 5542, 14186, 2121, 8205, 8230, 6823, 8236, 8190, 6838, 8243, 8389, 2]
 
 // Module 14185 (AutomatedUnderageAppealModalActionCreators)
 import Fragment from "Fragment" /* 21 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 6832 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 6822 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import SafetyHubConstants from "SafetyHubConstants" /* 8206 */;
 import size from "module_2" /* 2 */;
@@ -19,7 +19,7 @@ let _require, c3, dependencyMap, importDefault, paths;
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const ModalActionCreatorsDefault = tmp(6848);
+const ModalActionCreatorsDefault = tmp(6838);
 ({ AGE_APPEAL_ACTION_SHEET_NAME: closure_4, AGE_CHECK_POLL_DELAY_MS: hasOwnProperty } = SafetyHubConstants);
 let closure_6 = AgeVerificationConstants.AGE_VERIFICATION_GET_STARTED_MODAL_KEY;
 const jsx = Fragment.jsx;
@@ -42,7 +42,7 @@ let obj = {
     let obj2 = require("SafetyHubUtils");
     if (obj2.isCurrentUserSuspended()) {
       const tmp4Result = tmp4(8230);
-      if (tmp4Result.isExpressiveModalV2Enabled(tmp4(6833).AgeVerificationModalEntryPoint.AUTOMATED_UNDERAGE_APPEALS)) {
+      if (tmp4Result.isExpressiveModalV2Enabled(tmp4(6823).AgeVerificationModalEntryPoint.AUTOMATED_UNDERAGE_APPEALS)) {
         let tmp6 = globalThis;
         const _Math = Math;
         const _Date = Date;

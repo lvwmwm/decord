@@ -1,12 +1,12 @@
-// Module ID: 6168
-// Function ID: 6169
+// Module ID: 6158
+// Function ID: 6159
 // Name: Devices
-// Dependencies: [6098, 1356, 2135, 2]
+// Dependencies: [6088, 1356, 2135, 2]
 // Exports: getAudioInputDevices, getAudioOutputDevices, getVideoInputDevices, sanitizeDevices
 
-// Module 6168 (Devices)
+// Module 6158 (Devices)
 import _modDef1356 from "module_1356" /* 1356 */;
-import Constants from "Constants" /* 6098 */;
+import Constants from "Constants" /* 6088 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;

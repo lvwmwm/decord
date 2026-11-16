@@ -1,7 +1,7 @@
 // Module ID: 12528
 // Function ID: 12529
 // Name: useMemberListAction
-// Dependencies: [32, 19, 17, 5155, 5238, 5248, 1388, 10578, 1072, 21, 5306, 563, 12529, 12530, 8131, 12533, 12537, 7824, 12540, 12549, 12550, 1113, 10982, 10981, 5348, 5139, 12552, 12557, 10569, 12558, 2020, 8460, 6337, 8108, 7438, 12562, 2565, 2]
+// Dependencies: [32, 19, 17, 5155, 5238, 5248, 1388, 10578, 1072, 21, 5306, 563, 12529, 12530, 8131, 12533, 12537, 7824, 12540, 12549, 12550, 1113, 10982, 10981, 5338, 5139, 12552, 12557, 10569, 12558, 2020, 8460, 6327, 8108, 7438, 12562, 2565, 2]
 // Exports: default
 
 // Module 12528 (useMemberListAction)
@@ -33,7 +33,7 @@ const View = react_native.View;
 const USERS_LIST_PADDING_BETWEEN_SECTIONS = UsersFastListConstants.USERS_LIST_PADDING_BETWEEN_SECTIONS;
 ({ Permissions: unpackModuleId, AnalyticsSections: closure_12, InstantInviteSources: map1 } = Constants);
 ({ jsx: closure_14, jsxs: closure_15 } = Fragment);
-let closure_16 = { listActionRenderer: "disabled", listActionHeight: "isArray" };
+let closure_16 = { listActionRenderer: "Array", listActionHeight: "Path" };
 let closure_17 = [];
 let obj = { wrapper: { paddingTop: USERS_LIST_PADDING_BETWEEN_SECTIONS } };
 let closure_18 = createStyles.createStyles(obj);

@@ -1,7 +1,7 @@
 // Module ID: 10771
 // Function ID: 10772
 // Name: MarketingCardsScroller
-// Dependencies: [32, 19, 17, 5307, 21, 5306, 5303, 575, 504, 5568, 1113, 1360, 1655, 7428, 10772, 10774, 2]
+// Dependencies: [32, 19, 17, 5307, 21, 5306, 5303, 575, 504, 5558, 1113, 1360, 1655, 7428, 10772, 10774, 2]
 // Exports: MarketingCardsScroller
 
 // Module 10771 (MarketingCardsScroller)

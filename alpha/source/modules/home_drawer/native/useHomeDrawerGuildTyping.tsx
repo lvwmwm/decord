@@ -1,10 +1,10 @@
-// Module ID: 19096
-// Function ID: 19097
+// Module ID: 19098
+// Function ID: 19099
 // Name: useHomeDrawerGuildTyping
-// Dependencies: [5240, 5159, 5155, 14575, 558, 19093, 19094, 504, 11, 2]
+// Dependencies: [5240, 5159, 5155, 14575, 558, 19095, 19096, 504, 11, 2]
 // Exports: useHomeDrawerGuildTyping
 
-// Module 19096 (useHomeDrawerGuildTyping)
+// Module 19098 (useHomeDrawerGuildTyping)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import shallowEqual from "shallowEqual" /* 558 */;
 import ChannelRecord from "ChannelRecord" /* 5159 */;

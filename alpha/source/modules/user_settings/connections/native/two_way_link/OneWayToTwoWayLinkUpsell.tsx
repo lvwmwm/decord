@@ -1,7 +1,7 @@
 // Module ID: 17477
 // Function ID: 17478
 // Name: OneWayToTwoWayLinkUpsell
-// Dependencies: [19, 17, 1072, 5152, 21, 5306, 575, 6826, 1187, 10568, 5929, 5936, 1113, 2]
+// Dependencies: [19, 17, 1072, 5152, 21, 5306, 575, 6816, 1187, 10568, 5919, 5926, 1113, 2]
 // Exports: OneWayToTwoWayLinkUpsell
 
 // Module 17477 (OneWayToTwoWayLinkUpsell)
@@ -13,7 +13,7 @@ import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
-import TextStyles_mod from "TextStyles" /* 6826 */;
+import TextStyles_mod from "TextStyles" /* 6816 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -78,14 +78,14 @@ export function OneWayToTwoWayLinkUpsell(newIndicatorDismissibleContent) {
   const obj3 = { style: tmp.titleContainer, children: items1 };
   items1 = [closure_6(SelectedDismissibleContentDefault, obj4), ];
   const obj5 = { style: tmp.title, variant: "body-md/semibold", children: title };
-  items1[1] = closure_6(newIndicatorDismissibleContent(5929).Text, obj5);
+  items1[1] = closure_6(newIndicatorDismissibleContent(5919).Text, obj5);
   items2 = [closure_7(View, obj3), img];
   items3 = [closure_7(View, obj2), , ];
   const obj6 = { style: tmp.body, variant: "body-sm/medium", children: body };
-  items3[1] = closure_6(newIndicatorDismissibleContent(5929).Text, obj6);
+  items3[1] = closure_6(newIndicatorDismissibleContent(5919).Text, obj6);
   const obj7 = { style: tmp.reconnectButton, children: closure_6(Button, obj8) };
   obj8 = { text: intl.string(newIndicatorDismissibleContent(1113).t.vD60Pv), onPress };
-  Button = newIndicatorDismissibleContent(5936).Button;
+  Button = newIndicatorDismissibleContent(5926).Button;
   intl = newIndicatorDismissibleContent(1113).intl;
   items3[2] = closure_6(View, obj7);
   return closure_7(View, obj);

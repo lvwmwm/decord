@@ -1,7 +1,7 @@
 // Module ID: 10877
 // Function ID: 10878
 // Name: MedalFirstBadge
-// Dependencies: [19, 21, 10878, 10879, 10880, 7755, 6020, 2]
+// Dependencies: [19, 21, 10878, 10879, 10880, 7755, 6010, 2]
 // Exports: MedalFirstBadge
 
 // Module 10877 (MedalFirstBadge)

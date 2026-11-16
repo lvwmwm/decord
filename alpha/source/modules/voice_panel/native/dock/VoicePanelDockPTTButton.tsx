@@ -1,15 +1,15 @@
-// Module ID: 19227
-// Function ID: 19228
+// Module ID: 19229
+// Function ID: 19230
 // Name: VoicePanelDockPTTButton
-// Dependencies: [19, 17, 5155, 2133, 12009, 21, 575, 5306, 11984, 1655, 19204, 504, 13046, 13022, 13061, 5548, 5939, 5554, 11975, 19228, 7790, 5598, 1708, 19230, 7988, 1113, 13049, 5508, 19231, 2]
+// Dependencies: [19, 17, 5155, 2133, 12009, 21, 575, 5306, 11984, 1655, 19206, 504, 13046, 13022, 13061, 5538, 5929, 5544, 11975, 19230, 7790, 5588, 1708, 19232, 7988, 1113, 13049, 5498, 19233, 2]
 
-// Module 19227 (VoicePanelDockPTTButton)
+// Module 19229 (VoicePanelDockPTTButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1708 from "module_1708" /* 1708 */;
-import timing_timing from "timing/timing" /* 5548 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5598 */;
-import spring_spring from "spring/spring" /* 5939 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5588 */;
+import spring_spring from "spring/spring" /* 5929 */;
 import MediaEngineActionCreators from "MediaEngineActionCreators" /* 11975 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5155 */;

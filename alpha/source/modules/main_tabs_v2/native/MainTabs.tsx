@@ -1,17 +1,17 @@
-// Module ID: 18712
-// Function ID: 18713
+// Module ID: 18714
+// Function ID: 18715
 // Name: MainTabs
-// Dependencies: [19, 17, 21, 5306, 575, 5488, 9062, 18713, 5902, 5377, 10271, 18714, 19582, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 5478, 9062, 18715, 5892, 5367, 10271, 18716, 19584, 2]
 
-// Module 18712 (MainTabs)
+// Module 18714 (MainTabs)
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 5377 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5488 */;
-import useToken from "useToken" /* 5902 */;
+import native from "native" /* 5367 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5478 */;
+import useToken from "useToken" /* 5892 */;
 import useActiveTheme from "useActiveTheme" /* 9062 */;
 import ThemedGradientDefault from "ThemedGradient" /* 10271 */;
-import useAppFrameDefault from "useAppFrame" /* 18713 */;
-import MainTabsNavigatorPanelDefault from "MainTabsNavigatorPanel" /* 18714 */;
+import useAppFrameDefault from "useAppFrame" /* 18715 */;
+import MainTabsNavigatorPanelDefault from "MainTabsNavigatorPanel" /* 18716 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -85,7 +85,7 @@ const memoResult = react.memo(function MainTabs() {
   items6 = [metroRequire(ThemeContextProvider, obj4), ];
   let tmp12Result2 = null;
   if (null != styles.container) {
-    tmp12Result2 = tmp12(tmp(19582), {});
+    tmp12Result2 = tmp12(tmp(19584), {});
   }
   items6[1] = tmp12Result2;
   return metroRequire(React3, obj3);

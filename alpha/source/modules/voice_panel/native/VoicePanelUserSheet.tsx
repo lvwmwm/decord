@@ -1,16 +1,16 @@
-// Module ID: 20012
-// Function ID: 20013
+// Module ID: 20014
+// Function ID: 20015
 // Name: VoicePanelUserSheet
-// Dependencies: [19, 17, 5155, 5248, 1388, 1072, 21, 5306, 575, 7918, 7937, 15682, 8545, 504, 14530, 5131, 5995, 15681, 8476, 1113, 15691, 8134, 1655, 9148, 7420, 6351, 15756, 20011, 9516, 5566, 1187, 6020, 5929, 15704, 15759, 2]
+// Dependencies: [19, 17, 5155, 5248, 1388, 1072, 21, 5306, 575, 7918, 7937, 15682, 8545, 504, 14530, 5131, 5985, 15681, 8476, 1113, 15691, 8134, 1655, 9148, 7420, 6341, 15756, 20013, 9516, 5556, 1187, 6010, 5919, 15704, 15759, 2]
 // Exports: default
 
-// Module 20012 (VoicePanelUserSheet)
+// Module 20014 (VoicePanelUserSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 8134 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;
 import UserProfileActivity from "UserProfileActivity" /* 15704 */;
-import VoicePanelUserActionCreators from "VoicePanelUserActionCreators" /* 20011 */;
+import VoicePanelUserActionCreators from "VoicePanelUserActionCreators" /* 20013 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
@@ -200,7 +200,7 @@ export default function VoicePanelUserSheet(userId) {
   const items2 = [UserStore];
   const obj4 = channelId(504);
   const stateFromStores2 = obj4.useStateFromStores(items2, () => currentUser.getCurrentUser());
-  const obj5 = channelId(6351);
+  const obj5 = channelId(6341);
   const name = obj5.useName(guildId, channelId, stateFromStores);
   const live = userId(15756)(userId).live;
   let closure_5 = tmp8;
@@ -226,20 +226,20 @@ export default function VoicePanelUserSheet(userId) {
         const obj2 = { style: tmp.wrapper, children: items6 };
         const obj6 = { style: tmp.header, children: items5 };
         const obj7 = { style: tmp.user, children: items4 };
-        const BottomSheet = tmp2(5566).BottomSheet;
+        const BottomSheet = tmp2(5556).BottomSheet;
         if (null != avatarDecoration) {
           const obj8 = { source: cachedSourceFromURI, size: channelId(1187).AvatarSizes.LARGE_48, avatarDecoration };
           const Avatar = tmp2(1187).Avatar;
           tmp11Result = tmp11(Avatar, obj8);
         } else {
           size = { source: cachedSourceFromURI, resizeMode: "stretch", width: 48, height: 48, style: tmp.avatar };
-          const tmp7Result = userId(6020);
+          const tmp7Result = userId(6010);
           tmp11Result = tmp11(tmp7Result, size);
         }
         items4 = [tmp11Result, ];
         const obj10 = { variant: "body-md/semibold", style: tmp.username, lineClamp: 1, children: name };
         const obj9 = { children: closure_11(stateFromStores2, obj2) };
-        items4[1] = closure_10(channelId(5929).Text, obj10);
+        items4[1] = closure_10(channelId(5919).Text, obj10);
         items5 = [closure_11(stateFromStores2, obj7), ];
         const obj11 = { userId: stateFromStores.id, currentUserId: stateFromStores2.id, channelId, guildId };
         items5[1] = closure_10(OverflowMenu, obj11);

@@ -1,12 +1,12 @@
 // Module ID: 8118
 // Function ID: 8119
 // Name: FormRadioRow
-// Dependencies: [19, 21, 7618, 5378, 7747, 7901, 7907, 2]
+// Dependencies: [19, 21, 7618, 5368, 7747, 7901, 7907, 2]
 // Exports: default
 
 // Module 8118 (FormRadioRow)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 5378 */;
+import react_native from "react-native" /* 5368 */;
 import RedesignCompat from "RedesignCompat" /* 7618 */;
 import FormRowDefault from "FormRow" /* 7901 */;
 import react from "react" /* 19 */;

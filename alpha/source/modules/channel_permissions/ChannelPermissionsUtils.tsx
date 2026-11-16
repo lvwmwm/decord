@@ -1,7 +1,7 @@
 // Module ID: 8131
 // Function ID: 8132
 // Name: ChannelPermissionsUtils
-// Dependencies: [5159, 5173, 5213, 5218, 1388, 6912, 1072, 5216, 1113, 1084, 11, 5372, 1255, 5243, 8132, 2119, 6356, 2]
+// Dependencies: [5159, 5173, 5213, 5218, 1388, 6902, 1072, 5216, 1113, 1084, 11, 5362, 1255, 5243, 8132, 2119, 6346, 2]
 // Exports: canCreatePrivateChannel, extractPermissionOverwrites, flipEveryonePermission, getAllExistingRolesWithPermission, getExistingMembers, getExistingMembersRows, getExistingRoles, getExistingRolesRowWithPermissionDisabled, getExistingRolesRows, getMembersRows, getNoRolesRow, getPrivateChannelHintText, getRemoveTooltipHint, getRolesRows, getRolesRowsWithPermissionDisabled, getRowTypeLabel, grantUserChannelAccess, isEveryoneRoleId, isPrivateGuildChannel, isPrivateTextChannel, toggleChannelEveryonePermission
 
 // Module 8131 (ChannelPermissionsUtils)
@@ -13,9 +13,9 @@ import ChannelRecord from "ChannelRecord" /* 5159 */;
 import GuildRecord from "GuildRecord" /* 5173 */;
 import GuildRoleUtils from "GuildRoleUtils" /* 5216 */;
 import PermissionUtilsAll from "PermissionUtils" /* 5243 */;
-import UserUtilsDefault from "UserUtils" /* 5372 */;
-import ChannelUtils from "ChannelUtils" /* 6356 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 6912 */;
+import UserUtilsDefault from "UserUtils" /* 5362 */;
+import ChannelUtils from "ChannelUtils" /* 6346 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 6902 */;
 import ChannelSettingsPermissionsActionCreators from "ChannelSettingsPermissionsActionCreators" /* 8132 */;
 import GuildRoleRecord from "GuildRoleRecord" /* 5213 */;
 import GuildMemberStore from "GuildMemberStore" /* 5218 */;

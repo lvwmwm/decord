@@ -1,9 +1,9 @@
-// Module ID: 20107
-// Function ID: 20108
+// Module ID: 20109
+// Function ID: 20110
 // Name: VoicePanelControlsDimOverlay
-// Dependencies: [19, 16436, 11985, 11983, 21, 11984, 1655, 20071, 5939, 16888, 5904, 2]
+// Dependencies: [19, 16436, 11985, 11983, 21, 11984, 1655, 20073, 5929, 16888, 5894, 2]
 
-// Module 20107 (VoicePanelControlsDimOverlay)
+// Module 20109 (VoicePanelControlsDimOverlay)
 import Fragment from "Fragment" /* 21 */;
 import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11983 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11984 */;
@@ -56,7 +56,7 @@ const memoResult = react.memo(function VoicePanelControlsDimOverlay(wrapperSpecs
   let items = [closure_9, windowDimensions, , , , , , , , , ];
   const useDerivedValue = setControlsMode(1655).useDerivedValue;
   const tmp4 = setControlsMode(1655);
-  items[2] = setControlsMode(20071).getDrawerSpec;
+  items[2] = setControlsMode(20073).getDrawerSpec;
   items[3] = safeArea;
   items[4] = controlsSpecs;
   items[5] = VoicePanelControlsModes;
@@ -116,7 +116,7 @@ const memoResult = react.memo(function VoicePanelControlsDimOverlay(wrapperSpecs
   const items4 = [closure_11, , , , , ];
   const useAnimatedStyle = tmp3(1655).useAnimatedStyle;
   setControlsMode(1655);
-  items4[1] = setControlsMode(5939).withSpring;
+  items4[1] = setControlsMode(5929).withSpring;
   items4[2] = derivedValue;
   items4[3] = closure_5;
   items4[4] = setControlsMode(16888).accessibilityPreferencesSharedValue;
@@ -169,7 +169,7 @@ const memoResult = react.memo(function VoicePanelControlsDimOverlay(wrapperSpecs
     const obj = { mode: VoicePanelControlsModes.FLOATING_DEFAULT };
     setControlsMode(obj);
   }, items8);
-  return jsx(setControlsMode(5904).Backdrop, { onDismiss, style, animatedProps, opaque: true, "aria-hidden": true });
+  return jsx(setControlsMode(5894).Backdrop, { onDismiss, style, animatedProps, opaque: true, "aria-hidden": true });
 });
 const result = size.fileFinishedImporting("modules/voice_panel/native/controls/VoicePanelControlsDimOverlay.tsx");
 

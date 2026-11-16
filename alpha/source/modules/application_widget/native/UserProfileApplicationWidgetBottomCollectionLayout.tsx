@@ -1,13 +1,13 @@
 // Module ID: 12263
 // Function ID: 12264
 // Name: UserProfileApplicationWidgetBottomCollectionLayout
-// Dependencies: [19, 17, 21, 5306, 575, 12255, 12149, 6020, 12256, 5929, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 12255, 12149, 6010, 12256, 5919, 2]
 // Exports: default
 
 // Module 12263 (UserProfileApplicationWidgetBottomCollectionLayout)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import _mod12149 from "module_12149" /* 12149 */;
 import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 12255 */;
 import react from "react" /* 19 */;
@@ -62,14 +62,14 @@ function CollectionItem(arg0) {
   const obj7 = { style: tmp.itemContent, children: items2 };
   if ("value" === singleStringOrSkeleton.status) {
     const obj8 = { variant: "body-xs/medium", lineClamp: 2, style: emojiOverflowStyle, children: singleStringOrSkeleton.text };
-    tmp14Result = tmp14(tmp2(5929).Text, obj8);
+    tmp14Result = tmp14(tmp2(5919).Text, obj8);
   } else {
     tmp14Result = tmp14(tmp2(12256).TextSkeleton, { variant: "body-xs/medium", widthChars: 6 });
   }
   items2 = [tmp14Result, ];
   if ("value" === singleStringOrSkeleton1.status) {
     const obj9 = { variant: "footnote/medium", color: "text-subtle", lineClamp: 2, style: emojiOverflowStyle1, children: singleStringOrSkeleton1.text };
-    tmp14Result2 = tmp14(tmp2(5929).Text, obj9);
+    tmp14Result2 = tmp14(tmp2(5919).Text, obj9);
   } else {
     tmp14Result2 = tmp14(tmp2(12256).TextSkeleton, { variant: "footnote/medium", widthChars: 10 });
   }

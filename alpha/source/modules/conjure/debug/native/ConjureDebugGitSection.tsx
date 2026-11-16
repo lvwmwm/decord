@@ -1,12 +1,12 @@
 // Module ID: 14022
 // Function ID: 14023
 // Name: ConjureDebugGitSection
-// Dependencies: [32, 19, 17, 21, 5306, 575, 8072, 10901, 14023, 14025, 8457, 14027, 10939, 14029, 12988, 11073, 7930, 8160, 7629, 14031, 14033, 14035, 14017, 5929, 5378, 6274, 6337, 7734, 5936, 11095, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 575, 8072, 10901, 14023, 14025, 8457, 14027, 10939, 14029, 12988, 11073, 7930, 8160, 7629, 14031, 14033, 14035, 14017, 5919, 5368, 6264, 6327, 7734, 5926, 11095, 2]
 // Exports: ConjureDebugGitSection, ConjureDebugRestartAgent
 
 // Module 14022 (ConjureDebugGitSection)
 import nativeDefault from "native" /* 575 */;
-import AlertModal from "AlertModal" /* 6274 */;
+import AlertModal from "AlertModal" /* 6264 */;
 import CircleXIcon from "CircleXIcon" /* 7629 */;
 import CircleCheckIcon from "CircleCheckIcon" /* 7930 */;
 import FolderIcon from "FolderIcon" /* 8072 */;
@@ -46,7 +46,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp2;
-const Text_Text = tmp2(5929);
+const Text_Text = tmp2(5919);
 ({ Pressable: hasOwnProperty, View: metroRequire } = react_native);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let createStyles = createStyles_mod;

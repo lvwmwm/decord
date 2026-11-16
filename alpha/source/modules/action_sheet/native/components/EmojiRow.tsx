@@ -1,16 +1,16 @@
 // Module ID: 12668
 // Function ID: 12669
 // Name: EmojiRow
-// Dependencies: [19, 17, 5567, 21, 5306, 5552, 5554, 8863, 5250, 8660, 9554, 5902, 575, 12669, 12670, 11866, 12671, 7937, 2]
+// Dependencies: [19, 17, 5557, 21, 5306, 5542, 5544, 8863, 5250, 8660, 9554, 5892, 575, 12669, 12670, 11866, 12671, 7937, 2]
 // Exports: default
 
 // Module 12668 (EmojiRow)
 import react_native from "react-native" /* 17 */;
 import ReactionUtils from "ReactionUtils" /* 5250 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import HapticUtils from "HapticUtils" /* 5554 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5567 */;
-import useToken from "useToken" /* 5902 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import HapticUtils from "HapticUtils" /* 5544 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5557 */;
+import useToken from "useToken" /* 5892 */;
 import ReactionActionCreators from "ReactionActionCreators" /* 8863 */;
 import DoubleTapReminderToast from "DoubleTapReminderToast" /* 9554 */;
 import reactions_ReactionUtils from "reactions/ReactionUtils" /* 11866 */;

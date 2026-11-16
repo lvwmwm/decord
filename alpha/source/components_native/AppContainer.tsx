@@ -1,7 +1,7 @@
 // Module ID: 17036
 // Function ID: 17037
 // Name: AppContainer
-// Dependencies: [32, 19, 17, 7049, 5155, 5209, 1072, 5162, 21, 5306, 575, 1655, 8560, 17037, 6850, 1108, 1243, 5493, 6276, 7585, 17039, 7050, 5492, 1099, 5547, 6335, 1256, 5494, 17040, 7590, 1503, 1255, 17041, 1708, 1380, 12447, 17042, 17050, 5433, 17052, 1499, 12879, 13115, 13121, 17053, 5508, 13130, 17054, 17055, 17056, 18641, 1242, 2]
+// Dependencies: [32, 19, 17, 7049, 5155, 5209, 1072, 5162, 21, 5306, 575, 1655, 8560, 17037, 6840, 1108, 1243, 5483, 6266, 7585, 17039, 7050, 5482, 1099, 5537, 6325, 1256, 5484, 17040, 7590, 1503, 1255, 17041, 1708, 1380, 12447, 17042, 17050, 5423, 17052, 1499, 12879, 13115, 13121, 17053, 5498, 13130, 17054, 17055, 17056, 18643, 1242, 2]
 
 // Module 17036 (AppContainer)
 import react_native from "react-native" /* 17 */;
@@ -14,15 +14,15 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import AppEntryKeyContext from "AppEntryKeyContext" /* 1499 */;
 import Link from "Link" /* 1503 */;
 import ChannelConstants from "ChannelConstants" /* 5162 */;
-import ManaContext from "ManaContext" /* 5433 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5492 */;
-import RootNavigationRef from "RootNavigationRef" /* 5493 */;
-import getInitialNavigationStateDefault from "getInitialNavigationState" /* 5494 */;
-import Portal from "Portal" /* 5508 */;
-import useThemeDefault from "useTheme" /* 5547 */;
-import enableScreens from "enableScreens" /* 6276 */;
-import BackPressTracking from "BackPressTracking" /* 6335 */;
-import ModalDispatchQueueDefault from "ModalDispatchQueue" /* 6850 */;
+import ManaContext from "ManaContext" /* 5423 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5482 */;
+import RootNavigationRef from "RootNavigationRef" /* 5483 */;
+import getInitialNavigationStateDefault from "getInitialNavigationState" /* 5484 */;
+import Portal from "Portal" /* 5498 */;
+import useThemeDefault from "useTheme" /* 5537 */;
+import enableScreens from "enableScreens" /* 6266 */;
+import BackPressTracking from "BackPressTracking" /* 6325 */;
+import ModalDispatchQueueDefault from "ModalDispatchQueue" /* 6840 */;
 import NavigationHistoryStore from "NavigationHistoryStore" /* 7049 */;
 import getChannelDetailsFromRouteDefault from "getChannelDetailsFromRoute" /* 7050 */;
 import useNavigationTheme from "useNavigationTheme" /* 7590 */;
@@ -265,7 +265,7 @@ const result1 = SentryUtils.profiledRootComponent(function AppContainer(children
       SplashScreenManager2.hideSplashScreen();
     }
   }, []);
-  let obj2 = appEntryKey(18641);
+  let obj2 = appEntryKey(18643);
   const riveAppStatePlaybackExperiment = obj2.useRiveAppStatePlaybackExperiment("AppContainer");
   let items = [riveAppStatePlaybackExperiment];
   const memo = react.useMemo(() => {

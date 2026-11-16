@@ -1,7 +1,7 @@
 // Module ID: 8424
 // Function ID: 8425
 // Name: GuildEventsListActionSheet
-// Dependencies: [19, 17, 7015, 5161, 1072, 6959, 21, 5306, 8425, 7913, 1113, 8020, 7989, 8426, 7969, 7965, 5899, 1256, 7874, 5566, 8429, 7416, 2]
+// Dependencies: [19, 17, 7015, 5161, 1072, 6949, 21, 5306, 8425, 7913, 1113, 8020, 7989, 8426, 7969, 7965, 5889, 1256, 7874, 5556, 8429, 7416, 2]
 // Exports: default
 
 // Module 8424 (GuildEventsListActionSheet)
@@ -10,7 +10,7 @@ import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 5161 */;
-import ReadStateConstants from "ReadStateConstants" /* 6959 */;
+import ReadStateConstants from "ReadStateConstants" /* 6949 */;
 import ReadStateActionCreators from "ReadStateActionCreators" /* 7874 */;
 import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 7965 */;
 import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 7969 */;
@@ -114,7 +114,7 @@ export default function GuildEventsListActionSheet(guild) {
     };
     let result = obj.openGuildEventDetails(obj2);
   }, items1);
-  events(5899)(() => {
+  events(5889)(() => {
     const obj = AnalyticsUtilsDefault;
     const obj2 = { type, guild_id: guild.id, guild_events_count: arr.length };
     obj.track(AnalyticEvents.OPEN_MODAL, obj2);
@@ -126,7 +126,7 @@ export default function GuildEventsListActionSheet(guild) {
       obj.ackGuildFeature(tmp.id, ReadStateTypes.GUILD_EVENT);
     }
   }, items2);
-  const BottomSheet = guild(5566).BottomSheet;
+  const BottomSheet = guild(5556).BottomSheet;
   const intl = guild(1113).intl;
   let obj2 = { eventCount: events.length, guild };
   ({ inActionSheet: true, events, onPressEvent: callback1, onCloseAction: callback, guild, lastAckedId: events(7416)(ref) });

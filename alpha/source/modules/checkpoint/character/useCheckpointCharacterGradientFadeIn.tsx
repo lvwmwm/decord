@@ -1,7 +1,7 @@
 // Module ID: 14475
 // Function ID: 14476
 // Name: useCheckpointCharacterGradientFadeIn
-// Dependencies: [32, 19, 5307, 6377, 504, 6745, 14476, 2]
+// Dependencies: [32, 19, 5307, 6367, 504, 6735, 14476, 2]
 // Exports: useCheckpointCharacterGradientFadeIn
 
 // Module 14475 (useCheckpointCharacterGradientFadeIn)
@@ -9,7 +9,7 @@ import _mod14476 from "module_14476" /* 14476 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5307 */;
-import CheckpointConstants from "CheckpointConstants" /* 6377 */;
+import CheckpointConstants from "CheckpointConstants" /* 6367 */;
 import size from "module_2" /* 2 */;
 
 let closure_1, dependencyMap;
@@ -30,7 +30,7 @@ export function useCheckpointCharacterGradientFadeIn(dataBinding) {
   let obj = dataBinding(504);
   const items = [AccessibilityStore];
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  const tmp2 = stage === dataBinding(6745).CheckpointCharacterStage.INTRODUCTION && !stateFromStores;
+  const tmp2 = stage === dataBinding(6735).CheckpointCharacterStage.INTRODUCTION && !stateFromStores;
   dependencyMap = tmp2;
   let num = 1;
   let num2 = 1;

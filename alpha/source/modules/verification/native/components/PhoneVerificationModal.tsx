@@ -1,7 +1,7 @@
 // Module ID: 7817
 // Function ID: 7818
 // Name: PhoneVerificationModal
-// Dependencies: [5, 19, 1072, 7818, 21, 7493, 7819, 7820, 6848, 1264, 7852, 7811, 7490, 1113, 2]
+// Dependencies: [5, 19, 1072, 7818, 21, 7493, 7819, 7820, 6838, 1264, 7852, 7811, 7490, 1113, 2]
 // Exports: default
 
 // Module 7817 (PhoneVerificationModal)

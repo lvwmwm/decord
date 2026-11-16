@@ -1,7 +1,7 @@
 // Module ID: 10547
 // Function ID: 10548
 // Name: useConjureDefaultAppIcon
-// Dependencies: [19, 5902, 575, 10548, 2]
+// Dependencies: [19, 5892, 575, 10548, 2]
 // Exports: default
 
 // Module 10547 (useConjureDefaultAppIcon)

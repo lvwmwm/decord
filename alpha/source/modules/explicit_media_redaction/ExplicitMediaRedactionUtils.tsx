@@ -1,7 +1,7 @@
 // Module ID: 8853
 // Function ID: 8854
 // Name: ExplicitMediaRedactionUtils
-// Dependencies: [5932, 5155, 8635, 8637, 1072, 1196, 1113, 1256, 8854, 6771, 6776, 5995, 6835, 6830, 8639, 2]
+// Dependencies: [5922, 5155, 8635, 8637, 1072, 1196, 1113, 1256, 8854, 6761, 6766, 5985, 6825, 6820, 8639, 2]
 // Exports: hasMessageSnapshotsWithAttachmentsOrEmbeds, isObscuredMediaBelowConstraints, isPendingScanVersion, redactionSettingToRenderedString, shouldAgeVerifyForExplicitMedia, trackExplicitMediaRedactableMessagedLoaded, trackExplicitMediaScanComplete, trackMediaRedactionAction, trackRedactableMessageLoaded, trackScanTiming, trackScanningTimedOut, trackToggleMediaObscurityV2, useShouldAgeVerifyForExplicitMedia, useShouldAgeVerifyForReason
 
 // Module 8853 (ExplicitMediaRedactionUtils)
@@ -9,13 +9,13 @@ import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5995 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 6771 */;
-import MetricEvents from "MetricEvents" /* 6776 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6830 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 6835 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5985 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 6761 */;
+import MetricEvents from "MetricEvents" /* 6766 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6820 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 6825 */;
 import SelfModUtils from "SelfModUtils" /* 8854 */;
-import DevSettingsStore from "DevSettingsStore" /* 5932 */;
+import DevSettingsStore from "DevSettingsStore" /* 5922 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import ExplicitMediaStore from "ExplicitMediaStore" /* 8635 */;
 import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 8637 */;
@@ -178,7 +178,7 @@ export function trackExplicitMediaRedactableMessagedLoaded(arg0) {
     const sum = numOfAttachmentsPendingScan + numOfEmbedsPendingScan;
     if (sum > 0) {
       const obj = { name: MetricEvents.MetricEvents.EXPLICIT_MEDIA_PENDING_MESSAGE_LOADED_V2 };
-      const distribution = tmp11(6771).distribution;
+      const distribution = tmp11(6761).distribution;
       MonitoringAgentDefault;
       distribution(obj, sum);
     }

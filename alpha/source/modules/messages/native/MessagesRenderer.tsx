@@ -1,7 +1,7 @@
 // Module ID: 12448
 // Function ID: 12449
 // Name: MessagesRenderer
-// Dependencies: [5, 32, 19, 11865, 5218, 5238, 7015, 9160, 1072, 21, 9, 12449, 11864, 10280, 12452, 9159, 11882, 12412, 12, 11, 12454, 10133, 11886, 11881, 12456, 8660, 12457, 12458, 12459, 14558, 5543, 1242, 11884, 14199, 14565, 12419, 558, 6055, 8841, 12431, 14566, 14196, 12463, 1380, 1628, 5341, 14567, 2]
+// Dependencies: [5, 32, 19, 11865, 5218, 5238, 7015, 9160, 1072, 21, 9, 12449, 11864, 10280, 12452, 9159, 11882, 12412, 12, 11, 12454, 10133, 11886, 11881, 12456, 8660, 12457, 12458, 12459, 14558, 5533, 1242, 11884, 14199, 14565, 12419, 558, 6045, 8841, 12431, 14566, 14196, 12463, 1380, 1628, 6957, 14567, 2]
 
 // Module 12448 (MessagesRenderer)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
@@ -10,9 +10,9 @@ import shallowEqualDefault from "shallowEqual" /* 558 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import GuildMemberStore from "GuildMemberStore" /* 5218 */;
-import QuestTypes from "QuestTypes" /* 5341 */;
-import flow_Client from "flow/Client" /* 5543 */;
-import CodedLink from "CodedLink" /* 6055 */;
+import flow_Client from "flow/Client" /* 5533 */;
+import CodedLink from "CodedLink" /* 6045 */;
+import QuestTypes from "QuestTypes" /* 6957 */;
 import MessageActionCreatorsDefault from "MessageActionCreators" /* 8660 */;
 import InviteTypeUtils from "InviteTypeUtils" /* 8841 */;
 import RowGeneratorConstants from "RowGeneratorConstants" /* 9160 */;
@@ -109,7 +109,7 @@ class MessagesRenderer {
     let loadMoreBefore;
     let scrollToTopMessage;
     let updateNativeRows;
-    const f105072 = (id) => id.id;
+    const f105085 = (id) => id.id;
     ref = ref.ref;
     const merged = Object.assign(ref, Object.assign({ ref: 0 }));
     dependencyMap = undefined;
@@ -530,7 +530,7 @@ class MessagesRenderer {
       ({ channelId, messages: messages2 } = messages);
       const recordMessageRender = first(hasJumpedToOriginalPost[10]).recordMessageRender;
       first(hasJumpedToOriginalPost[10]);
-      const mapped = messages2.map(f105072);
+      const mapped = messages2.map(f105085);
       let hasFetched = messages2.hasFetched;
       if (!hasFetched) {
         hasFetched = messages2.ready && !messages2.cached;
@@ -539,7 +539,7 @@ class MessagesRenderer {
       ({ channelId: channelId2, messages: messages3 } = messages);
       const recordMessageRender2 = tmp15(hasJumpedToOriginalPost[10]).recordMessageRender;
       first(hasJumpedToOriginalPost[10]);
-      const mapped1 = messages3.map(f105072);
+      const mapped1 = messages3.map(f105085);
       let hasFetched2 = messages3.hasFetched;
       if (!hasFetched2) {
         hasFetched2 = messages3.ready && !messages3.cached;
@@ -782,7 +782,7 @@ class MessagesRenderer {
                                                                                                                                                     let tmp67 = first;
                                                                                                                                                     const tmp69 = first(hasJumpedToOriginalPost[10]);
                                                                                                                                                     const recordMessageRender = tmp69.recordMessageRender;
-                                                                                                                                                    const mapped = messages.map(f105072);
+                                                                                                                                                    const mapped = messages.map(f105085);
                                                                                                                                                     let hasFetched = messages.hasFetched;
                                                                                                                                                     if (!hasFetched) {
                                                                                                                                                       hasFetched = messages.ready && !messages.cached;
@@ -1186,7 +1186,7 @@ class MessagesRenderer {
             ({ channelId: channelId3, messages: messages3 } = tmp2);
             const tmp101 = first(hasJumpedToOriginalPost[10]);
             const recordMessageRender2 = tmp101.recordMessageRender;
-            const mapped1 = messages3.map(f105072);
+            const mapped1 = messages3.map(f105085);
             let hasFetched2 = messages3.hasFetched;
             if (!hasFetched2) {
               hasFetched2 = messages3.ready && !messages3.cached;

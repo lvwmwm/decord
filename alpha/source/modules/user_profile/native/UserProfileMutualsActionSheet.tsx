@@ -1,13 +1,13 @@
 // Module ID: 14938
 // Function ID: 14939
 // Name: UserProfileMutualsActionSheet
-// Dependencies: [19, 17, 6068, 8479, 21, 5306, 575, 7027, 504, 7443, 1187, 6351, 10845, 7720, 5929, 7994, 14931, 7983, 14939, 14940, 14932, 14933, 14934, 1113, 13262, 14944, 2]
+// Dependencies: [19, 17, 6058, 8479, 21, 5306, 575, 7027, 504, 7443, 1187, 6341, 10845, 7720, 5919, 7994, 14931, 7983, 14939, 14940, 14932, 14933, 14934, 1113, 13262, 14944, 2]
 // Exports: default
 
 // Module 14938 (UserProfileMutualsActionSheet)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6351 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6341 */;
 import TableRow2 from "TableRow" /* 7443 */;
 import GuildIcon from "GuildIcon" /* 7720 */;
 import useMeasuredLayoutDefault from "useMeasuredLayout" /* 7994 */;
@@ -19,7 +19,7 @@ import getMutualGuildsLabelDefault from "getMutualGuildsLabel" /* 14933 */;
 import getMutualFriendsLabelDefault from "getMutualFriendsLabel" /* 14939 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import PresenceStore from "PresenceStore" /* 6068 */;
+import PresenceStore from "PresenceStore" /* 6058 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
@@ -101,13 +101,13 @@ class MutualGuildRow {
     let tmp3Result3 = null != nick;
     if (tmp3Result3) {
       const obj5 = { variant: "body-xs/medium", color: "text-subtle", children: nick };
-      tmp3Result3 = tmp3(tmp4(5929).Text, obj5);
+      tmp3Result3 = tmp3(tmp4(5919).Text, obj5);
     }
     items[1] = tmp3Result3;
     let tmp3Result4 = null == nick && hasAvatarForGuildResult;
     if (tmp3Result4) {
       const obj6 = { variant: "body-xs/medium", color: "text-subtle", children: user.username };
-      tmp3Result4 = tmp3(tmp4(5929).Text, obj6);
+      tmp3Result4 = tmp3(tmp4(5919).Text, obj6);
     }
     items[2] = tmp3Result4;
     return metroImportDefault(TableRow, obj, guild.id);

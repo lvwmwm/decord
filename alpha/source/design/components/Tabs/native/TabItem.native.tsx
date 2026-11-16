@@ -1,14 +1,14 @@
 // Module ID: 13263
 // Function ID: 13264
 // Name: TabItem
-// Dependencies: [19, 17, 21, 1655, 5306, 575, 5939, 5929, 1708, 13264, 1380, 1113, 9487, 2]
+// Dependencies: [19, 17, 21, 1655, 5306, 575, 5929, 5919, 1708, 13264, 1380, 1113, 9487, 2]
 // Exports: TabItem
 
 // Module 13263 (TabItem)
 import nativeDefault from "native" /* 575 */;
 import _mod1655 from "module_1655" /* 1655 */;
 import _mod1708 from "module_1708" /* 1708 */;
-import spring_spring from "spring/spring" /* 5939 */;
+import spring_spring from "spring/spring" /* 5929 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -25,7 +25,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp2;
-const Text_Text = tmp2(5929);
+const Text_Text = tmp2(5919);
 function useAnimatedTextStyle(arg0) {
   let activeIndex;
   let index;
@@ -227,7 +227,7 @@ export function TabItem(arg0) {
     const obj3 = { position: index + 1, tabCount: itemCount };
     formatToPlainStringResult = intl.formatToPlainString(tmp3(1113).t["4EsQA1"], obj3);
   }
-  items3 = [closure_5(index(5929).Text, { animated: true, variant: "body-sm/semibold", style: tmp9, lineClamp: 1, children: label }), , ];
+  items3 = [closure_5(index(5919).Text, { animated: true, variant: "body-sm/semibold", style: tmp9, lineClamp: 1, children: label }), , ];
   let tmp14Result = null;
   if (null != count) {
     const obj4 = { count, index, activeIndex, pressed, variant };

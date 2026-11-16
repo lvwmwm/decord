@@ -1,15 +1,15 @@
 // Module ID: 14501
 // Function ID: 14502
 // Name: CheckpointVoiceStatsScreen
-// Dependencies: [19, 17, 14253, 6377, 21, 5306, 575, 14485, 1496, 504, 6747, 1113, 3317, 14273, 14502, 14503, 14270, 13048, 14271, 14504, 14505, 14507, 2]
+// Dependencies: [19, 17, 14253, 6367, 21, 5306, 575, 14485, 1496, 504, 6737, 1113, 3317, 14273, 14502, 14503, 14270, 13048, 14271, 14504, 14505, 14507, 2]
 // Exports: default
 
 // Module 14501 (CheckpointVoiceStatsScreen)
 import nativeDefault from "native" /* 575 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
 import _modDef3317 from "module_3317" /* 3317 */;
-import CheckpointConstants from "CheckpointConstants" /* 6377 */;
-import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6747 */;
+import CheckpointConstants from "CheckpointConstants" /* 6367 */;
+import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6737 */;
 import CheckpointScreenDefault from "CheckpointScreen" /* 14270 */;
 import CheckpointTextDefault from "CheckpointText" /* 14271 */;
 import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 14273 */;
@@ -106,8 +106,8 @@ export default function CheckpointVoiceStatsScreen() {
     return obj.formatCheckpointPeakHour(stateFromStores1);
   }, items2);
   let prop;
-  const getCheckpointTopPercent = stateFromStores1(6747).getCheckpointTopPercent;
-  stateFromStores1(6747);
+  const getCheckpointTopPercent = stateFromStores1(6737).getCheckpointTopPercent;
+  stateFromStores1(6737);
   if (stateFromStores != null) {
     prop = stateFromStores.totalVoiceMinutesPercentile;
   }

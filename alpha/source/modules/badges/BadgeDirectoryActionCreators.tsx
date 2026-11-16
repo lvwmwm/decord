@@ -1,7 +1,7 @@
 // Module ID: 8552
 // Function ID: 8553
 // Name: BadgeDirectoryActionCreators
-// Dependencies: [5, 1388, 1072, 572, 1285, 6771, 6776, 1242, 559, 1089, 2]
+// Dependencies: [5, 1388, 1072, 572, 1285, 6761, 6766, 1242, 559, 1089, 2]
 // Exports: ackBadge, fetchBadgeDirectory, fetchBadgeSummary, markBadgeDirectoryBadgeIndicatorSeen
 
 // Module 8552 (BadgeDirectoryActionCreators)

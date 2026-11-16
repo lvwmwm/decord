@@ -1,15 +1,15 @@
-// Module ID: 19514
-// Function ID: 19515
+// Module ID: 19516
+// Function ID: 19517
 // Name: SmartSearchContent
-// Dependencies: [19, 21, 14745, 19515, 19516, 19459, 2]
+// Dependencies: [19, 21, 14745, 19517, 19518, 19461, 2]
 // Exports: SmartSearchContent
 
-// Module 19514 (SmartSearchContent)
+// Module 19516 (SmartSearchContent)
 import Fragment from "Fragment" /* 21 */;
 import SmartSearchTypes from "SmartSearchTypes" /* 14745 */;
-import SuggestedSearchListDefault from "SuggestedSearchList" /* 19459 */;
-import SmartSearchSkeletonDefault from "SmartSearchSkeleton" /* 19515 */;
-import SmartSearchResults from "SmartSearchResults" /* 19516 */;
+import SuggestedSearchListDefault from "SuggestedSearchList" /* 19461 */;
+import SmartSearchSkeletonDefault from "SmartSearchSkeleton" /* 19517 */;
+import SmartSearchResults from "SmartSearchResults" /* 19518 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

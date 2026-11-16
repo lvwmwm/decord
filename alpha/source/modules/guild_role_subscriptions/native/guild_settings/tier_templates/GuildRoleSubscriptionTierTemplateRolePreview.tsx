@@ -1,19 +1,19 @@
-// Module ID: 20780
-// Function ID: 20781
+// Module ID: 20783
+// Function ID: 20784
 // Name: GuildRoleSubscriptionTierTemplateRolePreview
-// Dependencies: [19, 17, 1388, 21, 5306, 575, 1113, 563, 6351, 6020, 5929, 1090, 1187, 7959, 2]
+// Dependencies: [19, 17, 1388, 21, 5306, 575, 1113, 563, 6341, 6010, 5919, 1090, 1187, 7959, 2]
 // Exports: GuildRoleSubscriptionRolePreview
 
-// Module 20780 (GuildRoleSubscriptionTierTemplateRolePreview)
+// Module 20783 (GuildRoleSubscriptionTierTemplateRolePreview)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
 import utils_ColorUtilsAll from "utils/ColorUtils" /* 1090 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import FastImageDefault from "FastImage" /* 6020 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6351 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6341 */;
 import RoleIconDefault from "RoleIcon" /* 7959 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;

@@ -1,7 +1,7 @@
 // Module ID: 13225
 // Function ID: 13226
 // Name: ConjureFileMention
-// Dependencies: [5, 19, 17, 21, 5306, 575, 13224, 13226, 13229, 5929, 1113, 4131, 13185, 13231, 2121, 2]
+// Dependencies: [5, 19, 17, 21, 5306, 575, 13224, 13226, 13229, 5919, 1113, 4131, 13185, 13231, 2121, 2]
 // Exports: default
 
 // Module 13225 (ConjureFileMention)
@@ -59,7 +59,7 @@ export default function ConjureFileMention(variant) {
   items = [closure_7(tmp10, obj3), ];
   let obj4 = { variant: str, style: tmp.name, children: name };
   name = undefined;
-  const Text = context(5929).Text;
+  const Text = context(5919).Text;
   const tmp6 = closure_8;
   const tmp7 = closure_6;
   if (conjureStoredAttachment != null) {

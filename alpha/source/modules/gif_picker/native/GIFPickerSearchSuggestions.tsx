@@ -1,7 +1,7 @@
 // Module ID: 11346
 // Function ID: 11347
 // Name: GIFPickerSearchSuggestions
-// Dependencies: [19, 17, 11338, 21, 5306, 575, 504, 5929, 1113, 5936, 2]
+// Dependencies: [19, 17, 11338, 21, 5306, 575, 504, 5919, 1113, 5926, 2]
 
 // Module 11346 (GIFPickerSearchSuggestions)
 import react_native from "react-native" /* 17 */;
@@ -39,7 +39,7 @@ const memoResult = react.memo(function GIFPickerSearchSuggestions(onClickSuggest
   if (0 !== stateFromStoresArray.length) {
     const obj2 = { style: tmp.footerSuggestionsContainer, children: items1 };
     const obj3 = { style: tmp.footerSuggestionsTitle, variant: "body-md/medium", color: "text-default", children: intl.string(onClickSuggestion(1113).t["3JGJo2"]) };
-    const Text = tmp2(5929).Text;
+    const Text = tmp2(5919).Text;
     intl = tmp2(1113).intl;
     items1 = [closure_5(Text, obj3), ];
     const obj4 = {

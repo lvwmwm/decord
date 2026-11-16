@@ -16,7 +16,7 @@ let closure_5, importDefault;
 
 let c2;
 let c3;
-const f93379 = (type) => set.has(type.type);
+const f93392 = (type) => set.has(type.type);
 function handleThreadCreateOrUpdate(channel) {
   channel = channel.channel;
   if (set.has(channel.type)) {
@@ -140,7 +140,7 @@ let obj = {
       if (tmp) {
         closure_5[threads.id] = {};
         threads = threads.threads;
-        const found = threads.filter(f93379);
+        const found = threads.filter(f93392);
         const item = found.forEach((id) => {
           id = threads.id;
           const parent_id = id.parent_id;
@@ -183,7 +183,7 @@ let obj = {
     if (tmp) {
       closure_5[guild.id] = {};
       const threads = guild.threads;
-      const found = threads.filter(f93379);
+      const found = threads.filter(f93392);
       const item = found.forEach((id) => {
         id = threads.id;
         const parent_id = id.parent_id;

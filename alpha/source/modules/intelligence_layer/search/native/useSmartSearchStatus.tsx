@@ -1,10 +1,10 @@
-// Module ID: 19457
-// Function ID: 19458
+// Module ID: 19459
+// Function ID: 19460
 // Name: useSmartSearchStatus
 // Dependencies: [14744, 504, 14745, 14743, 2]
 // Exports: useSmartSearchStatus
 
-// Module 19457 (useSmartSearchStatus)
+// Module 19459 (useSmartSearchStatus)
 import SmartSearchUtils from "SmartSearchUtils" /* 14743 */;
 import SmartSearchTypes from "SmartSearchTypes" /* 14745 */;
 import SmartSearchResultsStore from "SmartSearchResultsStore" /* 14744 */;

@@ -302,7 +302,7 @@ let items = [
     let closure_129_1;
     let items2;
     let pinnedWidgets;
-    const f135291 = (id) => {
+    const f135306 = (id) => {
       let rect = null;
       if (null != closure_1_0) {
         rect = closure_1_0[id];
@@ -332,9 +332,9 @@ let items = [
         let items = [];
         const items1 = [migrated, ];
         obj2 = { layouts: items2, widgets: items };
-        items1[1] = { id: migrated, widgets: pinnedWidgets.map(f135291) };
+        items1[1] = { id: migrated, widgets: pinnedWidgets.map(f135306) };
         items2 = [items1];
-        const obj3 = { id: migrated, widgets: pinnedWidgets.map(f135291) };
+        const obj3 = { id: migrated, widgets: pinnedWidgets.map(f135306) };
         return obj2;
       }
     }

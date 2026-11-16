@@ -1,7 +1,7 @@
 // Module ID: 17466
 // Function ID: 17467
 // Name: FamilyCenterParentalControlsScreenTime
-// Dependencies: [17, 1072, 21, 5306, 575, 11016, 7443, 5929, 1113, 2701, 17423, 1502, 7746, 2]
+// Dependencies: [17, 1072, 21, 5306, 575, 11016, 7443, 5919, 1113, 2701, 17423, 1502, 7746, 2]
 // Exports: default
 
 // Module 17466 (FamilyCenterParentalControlsScreenTime)
@@ -36,7 +36,7 @@ function ScheduleRuleRow(rule) {
   let obj2 = rule(11016);
   const obj3 = { label: scheduleRuleDateRange, subLabel: obj2.formatDays(rule.days), trailing: closure_5(Text, { variant: "body-sm/medium", color: "text-subtle", children: stringResult }), arrow: !readOnly, onPress: fn };
   const TableRow = rule(7443).TableRow;
-  Text = rule(5929).Text;
+  Text = rule(5919).Text;
   const enabled = rule.enabled;
   const intl = rule(1113).intl;
   const string = intl.string;

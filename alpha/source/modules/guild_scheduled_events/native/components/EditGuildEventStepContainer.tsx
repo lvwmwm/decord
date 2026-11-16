@@ -1,7 +1,7 @@
 // Module ID: 7993
 // Function ID: 7994
 // Name: EditGuildEventStepContainer
-// Dependencies: [19, 17, 21, 5306, 575, 7994, 5913, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 7994, 5903, 2]
 // Exports: default
 
 // Module 7993 (EditGuildEventStepContainer)
@@ -20,7 +20,7 @@ let hasOwnProperty;
 let obj2;
 let rect;
 let tmp2;
-const useSafeAreaInsetsKeyboardAwareDefault = tmp2(5913);
+const useSafeAreaInsetsKeyboardAwareDefault = tmp2(5903);
 ({ View: c2, ScrollView: c3 } = react_native);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;

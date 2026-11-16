@@ -1,7 +1,7 @@
 // Module ID: 13057
 // Function ID: 13058
 // Name: FocusedExpandedControls
-// Dependencies: [19, 17, 6820, 502, 6075, 21, 5306, 575, 1187, 6020, 13058, 13059, 8106, 504, 13060, 1113, 13017, 1380, 10583, 10590, 12981, 13061, 13046, 13062, 13063, 2]
+// Dependencies: [19, 17, 6810, 502, 6065, 21, 5306, 575, 1187, 6010, 13058, 13059, 8106, 504, 13060, 1113, 13017, 1380, 10583, 10590, 12981, 13061, 13046, 13062, 13063, 2]
 // Exports: AudioRouteButton, DeafenButton, ScreenshareButton, StreamVolumeItem
 
 // Module 13057 (FocusedExpandedControls)
@@ -9,8 +9,8 @@ import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import FastImageDefault from "FastImage" /* 6020 */;
-import Constants from "Constants" /* 6075 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import Constants from "Constants" /* 6065 */;
 import _mod8106 from "module_8106" /* 8106 */;
 import CallsUtils from "CallsUtils" /* 10583 */;
 import showAudioOutputSelector from "showAudioOutputSelector" /* 10590 */;
@@ -22,7 +22,7 @@ import AssetRegistryDefault2 from "AssetRegistry" /* 13059 */;
 import useMuteAwareLocalVolumeDefault from "useMuteAwareLocalVolume" /* 13060 */;
 import useDeafStatesDefault from "useDeafStates" /* 13061 */;
 import react from "react" /* 19 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6820 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6810 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;

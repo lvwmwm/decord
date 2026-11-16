@@ -1,18 +1,18 @@
-// Module ID: 17800
-// Function ID: 17801
+// Module ID: 17805
+// Function ID: 17806
 // Name: QuestDockUnenrolledBody
-// Dependencies: [5, 19, 8808, 5338, 21, 17727, 17783, 17695, 563, 17693, 10131, 10168, 10166, 10153, 10154, 17702, 17621, 5341, 8834, 17723, 10133, 17730, 15261, 10128, 10170, 17801, 17769, 1113, 7988, 12301, 10156, 2]
+// Dependencies: [5, 19, 8808, 6954, 21, 17727, 17783, 17695, 563, 17693, 10131, 10168, 10166, 10153, 10154, 17702, 17621, 6957, 8834, 17723, 10133, 17730, 15261, 10128, 10170, 17806, 17769, 1113, 7988, 12301, 10156, 2]
 
-// Module 17800 (QuestDockUnenrolledBody)
+// Module 17805 (QuestDockUnenrolledBody)
 import Fragment from "Fragment" /* 21 */;
-import QuestTypes from "QuestTypes" /* 5341 */;
+import QuestTypes from "QuestTypes" /* 6957 */;
 import AnalyticsTypes from "AnalyticsTypes" /* 8834 */;
 import QuestUtils from "QuestUtils" /* 10128 */;
 import QuestPlatformUtils from "QuestPlatformUtils" /* 10170 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import QuestStore from "QuestStore" /* 8808 */;
-import QuestConstants from "QuestConstants" /* 5338 */;
+import QuestConstants from "QuestConstants" /* 6954 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;

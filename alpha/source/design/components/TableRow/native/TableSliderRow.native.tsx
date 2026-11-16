@@ -1,12 +1,12 @@
 // Module ID: 15760
 // Function ID: 15761
 // Name: TableSliderRow
-// Dependencies: [32, 19, 17, 21, 5306, 7444, 15761, 7445, 5929, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 7444, 15761, 7445, 5919, 2]
 // Exports: TableSliderRow
 
 // Module 15760 (TableSliderRow)
 import react_native from "react-native" /* 17 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import react2 from "react" /* 7444 */;
 import Card_Card from "Card/Card" /* 7445 */;
 import Slider2 from "Slider" /* 15761 */;
@@ -69,7 +69,7 @@ export function TableSliderRow(end) {
   let tmp11Result = null;
   if (null != formatValue) {
     const obj5 = { variant: "body-md/medium", color: "text-muted", children: formatValue(first) };
-    const Text = tmp3(5929).Text;
+    const Text = tmp3(5919).Text;
     tmp11Result = tmp11(Text, obj5);
   }
   items[1] = tmp11Result;

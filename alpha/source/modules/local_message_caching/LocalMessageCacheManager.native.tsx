@@ -1,7 +1,7 @@
 // Module ID: 17034
 // Function ID: 17035
 // Name: LocalMessageCacheManager
-// Dependencies: [5, 32, 5249, 502, 5155, 6372, 12640, 1072, 17035, 3, 1089, 510, 2169, 5128, 8851, 8660, 12685, 12648, 2121, 2123, 572, 6795, 9069, 2]
+// Dependencies: [5, 32, 5249, 502, 5155, 6362, 12640, 1072, 17035, 3, 1089, 510, 2169, 5128, 8851, 8660, 12685, 12648, 2121, 2123, 572, 6785, 9069, 2]
 
 // Module 17034 (LocalMessageCacheManager)
 import LoggerDefault from "Logger" /* 3 */;
@@ -18,7 +18,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import MessageRecord from "MessageRecord" /* 5249 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
-import MessageStore from "MessageStore" /* 6372 */;
+import MessageStore from "MessageStore" /* 6362 */;
 import SendMessageOptionsStore from "SendMessageOptionsStore" /* 12640 */;
 import Constants from "Constants" /* 1072 */;
 import MutexUtils from "MutexUtils" /* 17035 */;

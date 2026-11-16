@@ -1,14 +1,14 @@
 // Module ID: 13398
 // Function ID: 13399
 // Name: AppLauncherSearchUtils
-// Dependencies: [32, 19, 11408, 11406, 11407, 13399, 6345, 6346, 11411, 2119, 12698, 11420, 13371, 13401, 12, 12579, 504, 5953, 13400, 13402, 2]
+// Dependencies: [32, 19, 11408, 11406, 11407, 13399, 6335, 6336, 11411, 2119, 12698, 11420, 13371, 13401, 12, 12579, 504, 5943, 13400, 13402, 2]
 // Exports: bucketApplicationDescriptionContains, bucketApplicationDescriptionStartsWith, bucketApplicationNameContains, bucketApplicationNameStartsWith, bucketCommandNameContains, bucketCommandOptionNameContains, bucketCommandSectionNameContains, bucketCommandSectionNameStartsWith, bucketFullCommandNameStartsWith, bucketOptionNameStartsWithOrCommandAndOptionStartsWith, bucketRootCommandNameStartsWith, defaultApplicationBucketing, defaultCommandBucketing, defaultCommandsSort, filterApplicationAllowed, filterCommandAllowed, sortCommandsByFreceny, useApplicationCommandsInContext, useGlobalSearchResults, useLocalSearchResults
 
 // Module 13398 (AppLauncherSearchUtils)
 import Server from "Server" /* 2119 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5953 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6345 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6346 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5943 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6335 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6336 */;
 import CommandPermissionContext from "CommandPermissionContext" /* 11411 */;
 import AppLauncherUtils from "AppLauncherUtils" /* 12698 */;
 import ApplicationDirectorySearchStore2 from "ApplicationDirectorySearchStore" /* 13399 */;

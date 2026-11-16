@@ -1,14 +1,14 @@
 // Module ID: 10323
 // Function ID: 10324
 // Name: GameProfileRankPill
-// Dependencies: [19, 17, 21, 5306, 575, 10324, 5929, 1113, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 10324, 5919, 1113, 2]
 // Exports: default
 
 // Module 10323 (GameProfileRankPill)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import TrophyIcon2 from "TrophyIcon" /* 10324 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

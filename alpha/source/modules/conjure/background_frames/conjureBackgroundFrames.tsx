@@ -1,11 +1,11 @@
 // Module ID: 16988
 // Function ID: 16989
 // Name: conjureBackgroundFrames
-// Dependencies: [19, 7019, 5155, 7020, 16989, 16991, 12743, 16914, 5977, 7349, 7339, 7022, 2]
+// Dependencies: [19, 7019, 5155, 7020, 16989, 16991, 12743, 16914, 5967, 7349, 7339, 7022, 2]
 // Exports: default, returnToConjureFrameSurface
 
 // Module 16988 (conjureBackgroundFrames)
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5977 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5967 */;
 import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 7022 */;
 import conjurePreviewSurface from "conjurePreviewSurface" /* 7339 */;
 import leaveFrame from "leaveFrame" /* 7349 */;

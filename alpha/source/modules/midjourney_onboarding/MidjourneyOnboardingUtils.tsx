@@ -1,13 +1,13 @@
 // Module ID: 16294
 // Function ID: 16295
 // Name: MidjourneyOnboardingUtils
-// Dependencies: [5177, 5349, 16295, 504, 2]
+// Dependencies: [5177, 5339, 16295, 504, 2]
 // Exports: hasRedirectedToGuild, isEligibleForMidjourneyRedirect, isMidjourneyOnboardingFlow, useIsMidjourneyOnboardingFlow
 
 // Module 16294 (MidjourneyOnboardingUtils)
 import get_initialized from "get initialized" /* 504 */;
 import GuildStore from "GuildStore" /* 5177 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5349 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
 import MidjourneyOnboardingConstants from "MidjourneyOnboardingConstants" /* 16295 */;
 import size from "module_2" /* 2 */;
 

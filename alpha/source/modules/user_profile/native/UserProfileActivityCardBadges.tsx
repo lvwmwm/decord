@@ -1,7 +1,7 @@
 // Module ID: 15716
 // Function ID: 15717
 // Name: UserProfileActivityCardBadges
-// Dependencies: [19, 17, 21, 6069, 15717, 2]
+// Dependencies: [19, 17, 21, 6059, 15717, 2]
 // Exports: default
 
 // Module 15716 (UserProfileActivityCardBadges)
@@ -18,13 +18,13 @@ export default function UserProfileActivityCardBadges(activity) {
   let items3;
   activity = activity.activity;
   const style = activity.style;
-  if (activity.type === activity(6069).ActivityTypes.PLAYING) {
+  if (activity.type === activity(6059).ActivityTypes.PLAYING) {
     const items = [activity(15717).PartyBadge, activity(15717).TimestampBadge];
     items3 = items;
-  } else if (activity.type === activity(6069).ActivityTypes.LISTENING) {
+  } else if (activity.type === activity(6059).ActivityTypes.LISTENING) {
     const items1 = [activity(15717).TimestampBadge];
     items3 = items1;
-  } else if (activity.type === activity(6069).ActivityTypes.WATCHING) {
+  } else if (activity.type === activity(6059).ActivityTypes.WATCHING) {
     const items2 = [activity(15717).TimestampBadge, activity(15717).EpisodeBadge];
     items3 = items2;
   } else {

@@ -1,11 +1,11 @@
 // Module ID: 9620
 // Function ID: 9621
 // Name: openLinkedUsersChannel
-// Dependencies: [5, 5155, 6063, 8134, 2]
+// Dependencies: [5, 5155, 6053, 8134, 2]
 // Exports: default
 
 // Module 9620 (openLinkedUsersChannel)
-import transitionToChannel from "transitionToChannel" /* 6063 */;
+import transitionToChannel from "transitionToChannel" /* 6053 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 8134 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 5155 */;

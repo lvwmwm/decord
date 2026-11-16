@@ -1,14 +1,14 @@
 // Module ID: 13770
 // Function ID: 13771
 // Name: ConjureUsageSheet
-// Dependencies: [19, 17, 7321, 21, 5306, 575, 5929, 7368, 504, 7951, 7913, 1113, 4131, 6337, 2]
+// Dependencies: [19, 17, 7321, 21, 5306, 575, 5919, 7368, 504, 7951, 7913, 1113, 4131, 6327, 2]
 // Exports: default
 
 // Module 13770 (ConjureUsageSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef4131 from "module_4131" /* 4131 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import ConjureUsageTypes from "ConjureUsageTypes" /* 7368 */;
 import react from "react" /* 19 */;
 import ConjureChatStore from "ConjureChatStore" /* 7321 */;
@@ -93,9 +93,9 @@ export default function ConjureUsageSheet(projectId) {
     intl = tmp2(1113).intl;
     obj4 = { children: closure_6(Stack, obj5) };
     obj5 = { direction: "vertical", spacing: nativeDefault.space.PX_12, children: items2 };
-    Stack = tmp2(6337).Stack;
+    Stack = tmp2(6327).Stack;
     const obj6 = { variant: "body-md/semibold", color: "text-default", children: formatToPlainString(gMuw5d, obj7) };
-    const Text = tmp2(5929).Text;
+    const Text = tmp2(5919).Text;
     const intl2 = tmp2(1113).intl;
     formatToPlainString = intl2.formatToPlainString;
     obj7 = { runes: runesFromUsdResult.toLocaleString() };
@@ -104,7 +104,7 @@ export default function ConjureUsageSheet(projectId) {
     runesFromUsdResult = tmp2Result10.runesFromUsd(stateFromStores.cost_usd);
     items2 = [closure_5(Text, obj6), , ];
     const obj8 = { direction: "vertical", spacing: nativeDefault.space.PX_4, children: items3 };
-    const Stack2 = tmp2(6337).Stack;
+    const Stack2 = tmp2(6327).Stack;
     const obj9 = { label: intl3.string(_modDef4131.xtxP0e), usage: stateFromStores.orchestrator };
     intl3 = tmp2(1113).intl;
     items3 = [closure_5(RoleRow, obj9), , , , ];
@@ -127,12 +127,12 @@ export default function ConjureUsageSheet(projectId) {
     const obj14 = { style: tmp.row, children: items4 };
     const obj15 = { style: tmp.label, children: closure_5(Text2, obj16) };
     obj16 = { variant: "body-sm/normal", color: "text-muted", children: intl8.string(_modDef4131["8OUg09"]) };
-    Text2 = tmp2(5929).Text;
+    Text2 = tmp2(5919).Text;
     intl8 = tmp2(1113).intl;
     items4 = [closure_5(View, obj15), ];
     const _Math = Math;
     const obj17 = { variant: "body-sm/medium", color: "text-default", children: "" + round(100 * tmp2Result14.cacheHitRate(sumTokenUsageResult1)) + "%" };
-    const Text3 = tmp2(5929).Text;
+    const Text3 = tmp2(5919).Text;
     round = Math.round;
     const _HermesInternal = HermesInternal;
     tmp2Result14 = projectId(7368);

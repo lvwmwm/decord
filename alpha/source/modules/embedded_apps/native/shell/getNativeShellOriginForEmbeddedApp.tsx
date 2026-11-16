@@ -1,11 +1,11 @@
 // Module ID: 12887
 // Function ID: 12888
 // Name: getNativeShellOriginForEmbeddedApp
-// Dependencies: [5974, 12888, 2]
+// Dependencies: [5964, 12888, 2]
 // Exports: getNativeShellOriginForEmbeddedApp
 
 // Module 12887 (getNativeShellOriginForEmbeddedApp)
-import getURLForApplication from "getURLForApplication" /* 5974 */;
+import getURLForApplication from "getURLForApplication" /* 5964 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

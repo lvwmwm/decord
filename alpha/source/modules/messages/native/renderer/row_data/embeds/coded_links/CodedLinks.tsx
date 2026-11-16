@@ -1,12 +1,12 @@
 // Module ID: 15551
 // Function ID: 15552
 // Name: CodedLinks
-// Dependencies: [32, 5239, 5177, 1388, 8795, 14549, 6055, 15552, 15557, 15571, 15573, 15563, 15575, 15568, 12415, 14104, 12434, 15576, 15579, 15580, 15582, 15584, 12440, 12531, 15585, 1255, 2]
+// Dependencies: [32, 5239, 5177, 1388, 8795, 14549, 6045, 15552, 15557, 15571, 15573, 15563, 15575, 15568, 12415, 14104, 12434, 15576, 15579, 15580, 15582, 15584, 12440, 12531, 15585, 1255, 2]
 // Exports: createCodedLinkEmbeds
 
 // Module 15551 (CodedLinks)
 import GlobalUtils from "GlobalUtils" /* 1255 */;
-import CodedLink from "CodedLink" /* 6055 */;
+import CodedLink from "CodedLink" /* 6045 */;
 import ApplicationCodedLink from "ApplicationCodedLink" /* 8795 */;
 import useCodedLinksExperimentEmbeds from "useCodedLinksExperimentEmbeds" /* 12415 */;
 import storefrontCodedLink from "storefrontCodedLink" /* 12434 */;

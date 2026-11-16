@@ -1,7 +1,7 @@
 // Module ID: 17419
 // Function ID: 17420
 // Name: FamilyCenterActivityCard
-// Dependencies: [19, 17, 8741, 1072, 21, 5306, 575, 9617, 9616, 9619, 14227, 1113, 2701, 1187, 17420, 5929, 8451, 6848, 17421, 2121, 9975, 17422, 17423, 14224, 5552, 6014, 5372, 8009, 1256, 12973, 17424, 17425, 17426, 17429, 17436, 2]
+// Dependencies: [19, 17, 8741, 1072, 21, 5306, 575, 9617, 9616, 9619, 14227, 1113, 2701, 1187, 17420, 5919, 8451, 6838, 17421, 2121, 9975, 17422, 17423, 14224, 5542, 6004, 5362, 8009, 1256, 12973, 17424, 17425, 17426, 17429, 17436, 2]
 // Exports: default
 
 // Module 17419 (FamilyCenterActivityCard)
@@ -12,7 +12,7 @@ import intl5 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
 import _modDef2701 from "module_2701" /* 2701 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import TouchableHitBoxDefault from "TouchableHitBox" /* 8451 */;
 import useUserLinks from "useUserLinks" /* 9616 */;
 import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 9617 */;
@@ -49,7 +49,7 @@ let obj8;
 let size;
 let size1;
 let tmp3;
-const Text_Text = tmp3(5929);
+const Text_Text = tmp3(5919);
 function FamilyCenterActivityCardPrefaceText() {
   let Icon2;
   let items;
@@ -89,7 +89,7 @@ function FamilyCenterActivityCardPrefaceText() {
   items = [tmp16, , ];
   const obj7 = { style: tmp.text, variant: "body-xs/semibold", color: "text-subtle", children: tmp19 };
   tmp19 = ageSpecificText;
-  const Text = tmp5(5929).Text;
+  const Text = tmp5(5919).Text;
   if (activeLinkUserIds.length > 1) {
     tmp19 = ageSpecificText;
     if (tmp4) {

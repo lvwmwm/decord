@@ -1,7 +1,7 @@
 // Module ID: 11156
 // Function ID: 11157
 // Name: ForumComposer
-// Dependencies: [5, 32, 19, 17, 5307, 1192, 8725, 5218, 5238, 5209, 8792, 8872, 1388, 1072, 5162, 5152, 1228, 1112, 1083, 21, 5306, 575, 7918, 504, 5313, 5503, 11157, 5954, 9107, 8786, 11158, 5372, 5913, 1655, 9004, 6063, 8660, 12, 9112, 10919, 11163, 11227, 6269, 1113, 11228, 11230, 1380, 11231, 11232, 11235, 5139, 11236, 2121, 11237, 11238, 8106, 1187, 8147, 1628, 1500, 7649, 8476, 11241, 5929, 11242, 11393, 10568, 11626, 9521, 11627, 11631, 7427, 11858, 8085, 11635, 8866, 5552, 11860, 10409, 5936, 8069, 2]
+// Dependencies: [5, 32, 19, 17, 5307, 1192, 8725, 5218, 5238, 5209, 8792, 8872, 1388, 1072, 5162, 5152, 1228, 1112, 1083, 21, 5306, 575, 7918, 504, 5313, 5493, 11157, 5944, 9107, 8786, 11158, 5362, 5903, 1655, 9004, 6053, 8660, 12, 9112, 10919, 11163, 11227, 6259, 1113, 11228, 11230, 1380, 11231, 11232, 11235, 5139, 11236, 2121, 11237, 11238, 8106, 1187, 8147, 1628, 1500, 7649, 8476, 11241, 5919, 11242, 11393, 10568, 11626, 9521, 11627, 11631, 7427, 11858, 8085, 11635, 8866, 5542, 11860, 10409, 5926, 8069, 2]
 // Exports: default
 
 // Module 11156 (ForumComposer)
@@ -16,10 +16,10 @@ import asyncRequire from "asyncRequire" /* 2121 */;
 import dismissible_content from "dismissible_content" /* 5139 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
 import ChannelConstants from "ChannelConstants" /* 5162 */;
-import useKeyboardTypeDefault from "useKeyboardType" /* 5503 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5913 */;
-import transitionToChannel from "transitionToChannel" /* 6063 */;
+import useKeyboardTypeDefault from "useKeyboardType" /* 5493 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5903 */;
+import transitionToChannel from "transitionToChannel" /* 6053 */;
 import sanitizeThreadNameDefault from "sanitizeThreadName" /* 8147 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;
 import DraftStore2 from "DraftStore" /* 8725 */;
@@ -256,7 +256,7 @@ function ActionBar(channel) {
   }
   items5[2] = tmp18;
   const obj9 = { style: tmp.postButtonWrapper, children: closure_29(Button, obj10) };
-  Button = tmp2(5936).Button;
+  Button = tmp2(5926).Button;
   const intl4 = tmp2(1113).intl;
   const string = intl4.string;
   const t = tmp2(1113).t;

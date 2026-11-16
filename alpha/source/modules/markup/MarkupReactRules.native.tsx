@@ -1,10 +1,10 @@
-// Module ID: 6058
-// Function ID: 6059
+// Module ID: 6048
+// Function ID: 6049
 // Name: MarkupReactRules
-// Dependencies: [19, 17, 5307, 5155, 5212, 1072, 5162, 1083, 21, 575, 6059, 5929, 5306, 6063, 5956, 5493, 6848, 8476, 6268, 1113, 7943, 6014, 7720, 1187, 1381, 7653, 6012, 12584, 12504, 9355, 504, 5303, 9189, 5552, 12524, 2121, 11, 5131, 6020, 12574, 12482, 16275, 16277, 6029, 12465, 16279, 12575, 11061, 6342, 1380, 6344, 8033, 11057, 11062, 2]
+// Dependencies: [19, 17, 5307, 5155, 5212, 1072, 5162, 1083, 21, 575, 6049, 5919, 5306, 6053, 5946, 5483, 6838, 8476, 6258, 1113, 7943, 6004, 7720, 1187, 1381, 7653, 6002, 12584, 12504, 9355, 504, 5303, 9189, 5542, 12524, 2121, 11, 5131, 6010, 12574, 12482, 16275, 16277, 6019, 12465, 16279, 12575, 11061, 6332, 1380, 6334, 8033, 11057, 11062, 2]
 // Exports: default, plainMentionRenderer, plainSpoilerRenderer
 
-// Module 6058 (MarkupReactRules)
+// Module 6048 (MarkupReactRules)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -13,16 +13,16 @@ import intl4 from "intl" /* 1113 */;
 import URLUtilsDefault from "URLUtils" /* 1381 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
 import ChannelConstants from "ChannelConstants" /* 5162 */;
-import RootNavigationRef from "RootNavigationRef" /* 5493 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import LinkUtils from "LinkUtils" /* 5956 */;
-import LinkingDefault from "Linking" /* 6012 */;
-import ToastUtils from "ToastUtils" /* 6014 */;
-import FastImageDefault from "FastImage" /* 6020 */;
-import Spoiler from "Spoiler" /* 6059 */;
-import transitionToChannel from "transitionToChannel" /* 6063 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6268 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import RootNavigationRef from "RootNavigationRef" /* 5483 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import LinkUtils from "LinkUtils" /* 5946 */;
+import LinkingDefault from "Linking" /* 6002 */;
+import ToastUtils from "ToastUtils" /* 6004 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import Spoiler from "Spoiler" /* 6049 */;
+import transitionToChannel from "transitionToChannel" /* 6053 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6258 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import ClipboardUtils from "ClipboardUtils" /* 7943 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;
 import MarkupRulesUtils from "MarkupRulesUtils" /* 9355 */;
@@ -61,7 +61,7 @@ let obj7;
 let obj8;
 let obj9;
 let tmp3;
-const Text_Text = tmp3(5929);
+const Text_Text = tmp3(5919);
 class MarkupText {
   constructor(color) {
     let items;
@@ -77,7 +77,7 @@ class MarkupText {
     let tmp = null;
     const merged = Object.assign(color, Object.assign({ children: 0, color: 0, variant: 0 }));
     if (react.useContext(Spoiler.SpoilerHiddenContext)) {
-      const obj = { style: items, onPress: "channelId", onLongPress: "forEach", accessibilityRole: "mode" };
+      const obj = { style: items, onPress: "__d", onLongPress: "paddingHorizontal", accessibilityRole: "__initData" };
       items = [merged.style, obj.spoilerHiddenText];
       tmp = obj;
     }
@@ -470,7 +470,7 @@ function MarkupCustomEmoji(styles) {
           tmp13Result2 = tmp13Result;
           if (!state.inLink) {
             let str = state.textVariant;
-            const Text = tmp(5929).Text;
+            const Text = tmp(5919).Text;
             if (str == null) {
               str = "text-sm/medium";
             }
@@ -524,7 +524,7 @@ function MarkupChannelMention(state) {
   const tmp4 = state;
   const tmp3 = closure_13;
   let str2 = variants.channelMentionText;
-  const Text = state(5929).Text;
+  const Text = state(5919).Text;
   if (str2 == null) {
     str2 = "body-xs/medium";
   }
@@ -641,7 +641,7 @@ function MarkupStaticRouteLink(state) {
       if (StaticChannelId.CHANNEL_BROWSER !== channelId) {
         if (StaticChannelId.CUSTOMIZE_COMMUNITY !== channelId) {
           if (StaticChannelId.LINKED_ROLES === channelId) {
-            SignPostIcon = tmp2(6029).LinkIcon;
+            SignPostIcon = tmp2(6019).LinkIcon;
           }
         }
       }
@@ -652,7 +652,7 @@ function MarkupStaticRouteLink(state) {
       str = "text";
     }
     let str2 = variants.channelMentionText;
-    const Text = tmp2(5929).Text;
+    const Text = tmp2(5919).Text;
     const tmp5 = closure_13;
     if (str2 == null) {
       str2 = "body-xs/medium";
@@ -739,7 +739,7 @@ function MarkupAttachmentLink(state) {
     str = "text";
   }
   let str2 = variants.channelMentionText;
-  const Text = state(5929).Text;
+  const Text = state(5919).Text;
   const tmp2 = closure_13;
   if (str2 == null) {
     str2 = "body-xs/medium";

@@ -1,10 +1,10 @@
-// Module ID: 18246
-// Function ID: 18247
+// Module ID: 18248
+// Function ID: 18249
 // Name: UserSettingsDesignSystemsScreen
 // Dependencies: [19, 9202, 21, 12406, 17213, 2]
 // Exports: default
 
-// Module 18246 (UserSettingsDesignSystemsScreen)
+// Module 18248 (UserSettingsDesignSystemsScreen)
 import Fragment from "Fragment" /* 21 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;
 import SettingBuilders from "SettingBuilders" /* 12406 */;

@@ -1,12 +1,12 @@
 // Module ID: 12052
 // Function ID: 12053
 // Name: LikelyAtoMoreTipsModalActionItems
-// Dependencies: [19, 1388, 21, 504, 5372, 7746, 7443, 1113, 10994, 2]
+// Dependencies: [19, 1388, 21, 504, 5362, 7746, 7443, 1113, 10994, 2]
 // Exports: default
 
 // Module 12052 (LikelyAtoMoreTipsModalActionItems)
 import Fragment from "Fragment" /* 21 */;
-import UserUtilsDefault from "UserUtils" /* 5372 */;
+import UserUtilsDefault from "UserUtils" /* 5362 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;

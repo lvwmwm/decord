@@ -1,13 +1,13 @@
 // Module ID: 8148
 // Function ID: 8149
 // Name: AppChannelApplicationSelector
-// Dependencies: [19, 21, 8149, 1113, 7746, 7443, 8151, 5552, 8152, 2121, 8152, 2]
+// Dependencies: [19, 21, 8149, 1113, 7746, 7443, 8151, 5542, 8152, 2121, 8152, 2]
 // Exports: default
 
 // Module 8148 (AppChannelApplicationSelector)
 import Fragment from "Fragment" /* 21 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import AppChannelApplicationActionSheet from "AppChannelApplicationActionSheet" /* 8152 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

@@ -1,14 +1,14 @@
 // Module ID: 11365
 // Function ID: 11366
 // Name: openStickerPackDetailActionSheet
-// Dependencies: [1072, 1256, 5552, 11366, 2121, 2]
+// Dependencies: [1072, 1256, 5542, 11366, 2121, 2]
 // Exports: default
 
 // Module 11365 (openStickerPackDetailActionSheet)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

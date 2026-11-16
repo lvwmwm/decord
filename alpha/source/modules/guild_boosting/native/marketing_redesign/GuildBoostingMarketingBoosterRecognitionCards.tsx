@@ -1,14 +1,14 @@
 // Module ID: 16022
 // Function ID: 16023
 // Name: GuildBoostingMarketingBoosterRecognitionCards
-// Dependencies: [19, 17, 21, 5306, 575, 5929, 1113, 16023, 9981, 16024, 15398, 16025, 8173, 16026, 9458, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 5919, 1113, 16023, 9981, 16024, 15398, 16025, 8173, 16026, 9458, 2]
 // Exports: default
 
 // Module 16022 (GuildBoostingMarketingBoosterRecognitionCards)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import ShieldUserIcon from "ShieldUserIcon" /* 8173 */;
 import HeartIcon from "HeartIcon" /* 9458 */;
 import BoostGemIcon from "BoostGemIcon" /* 9981 */;

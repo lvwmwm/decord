@@ -1,7 +1,7 @@
 // Module ID: 12000
 // Function ID: 12001
 // Name: SummaryStore
-// Dependencies: [32, 5532, 10246, 5155, 5177, 7015, 5209, 6958, 1388, 12001, 10247, 504, 11, 1089, 12002, 572, 12003, 12, 2]
+// Dependencies: [32, 5522, 10246, 5155, 5177, 7015, 5209, 6948, 1388, 12001, 10247, 504, 11, 1089, 12002, 572, 12003, 12, 2]
 
 // Module 12000 (SummaryStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
@@ -14,13 +14,13 @@ import SummaryConstants from "SummaryConstants" /* 12001 */;
 import ChannelSummariesExperiment from "ChannelSummariesExperiment" /* 12002 */;
 import Summary from "Summary" /* 12003 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ExperimentStore from "ExperimentStore" /* 5532 */;
+import ExperimentStore from "ExperimentStore" /* 5522 */;
 import QuickSwitcherStore from "QuickSwitcherStore" /* 10246 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import GuildStore from "GuildStore" /* 5177 */;
 import ReadStateStore from "ReadStateStore" /* 7015 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6958 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6948 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 

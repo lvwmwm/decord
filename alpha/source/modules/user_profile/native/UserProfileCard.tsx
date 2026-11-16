@@ -1,13 +1,13 @@
 // Module ID: 7961
 // Function ID: 7962
 // Name: UserProfileCard
-// Dependencies: [19, 17, 7962, 21, 5306, 575, 7428, 5929, 7963, 2]
+// Dependencies: [19, 17, 7962, 21, 5306, 575, 7428, 5919, 7963, 2]
 // Exports: UserProfileCardRows, UserProfileFormRow, default
 
 // Module 7961 (UserProfileCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import Pressables from "Pressables" /* 7428 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 7962 */;

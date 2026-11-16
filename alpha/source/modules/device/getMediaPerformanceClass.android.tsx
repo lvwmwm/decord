@@ -1,10 +1,10 @@
-// Module ID: 6199
-// Function ID: 6200
+// Module ID: 6189
+// Function ID: 6190
 // Name: getMediaPerformanceClass
 // Dependencies: [5263, 2]
 // Exports: default
 
-// Module 6199 (getMediaPerformanceClass)
+// Module 6189 (getMediaPerformanceClass)
 import DeviceUtils from "DeviceUtils" /* 5263 */;
 import size from "module_2" /* 2 */;
 

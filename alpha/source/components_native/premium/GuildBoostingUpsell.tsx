@@ -1,7 +1,7 @@
 // Module ID: 15396
 // Function ID: 15397
 // Name: GuildBoostingUpsell
-// Dependencies: [19, 17, 6956, 1390, 21, 5306, 575, 15375, 1113, 9981, 15397, 15398, 15400, 8173, 15401, 10409, 15402, 10737, 15403, 10729, 15404, 10733, 15405, 10183, 504, 9987, 15406, 5547, 6020, 9946, 5313, 9955, 9956, 5929, 10970, 15410, 15411, 15412, 2]
+// Dependencies: [19, 17, 6946, 1390, 21, 5306, 575, 15375, 1113, 9981, 15397, 15398, 15400, 8173, 15401, 10409, 15402, 10737, 15403, 10729, 15404, 10733, 15405, 10183, 504, 9987, 15406, 5537, 6010, 9946, 5313, 9955, 9956, 5919, 10970, 15410, 15411, 15412, 2]
 // Exports: default
 
 // Module 15396 (GuildBoostingUpsell)
@@ -10,8 +10,8 @@ import nativeDefault from "native" /* 575 */;
 import intl14 from "intl" /* 1113 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
 import shared from "shared" /* 5313 */;
-import useThemeDefault from "useTheme" /* 5547 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import useThemeDefault from "useTheme" /* 5537 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import ShieldUserIcon from "ShieldUserIcon" /* 8173 */;
 import AssetRegistryDefault from "AssetRegistry" /* 9946 */;
 import BoostGemIcon from "BoostGemIcon" /* 9981 */;
@@ -35,7 +35,7 @@ import GuildSubscriptionNoGuilds from "GuildSubscriptionNoGuilds" /* 15406 */;
 import GuildBoostingGuildListDefault from "GuildBoostingGuildList" /* 15411 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SortedGuildStore from "SortedGuildStore" /* 6956 */;
+import SortedGuildStore from "SortedGuildStore" /* 6946 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
@@ -137,23 +137,23 @@ export default function GuildBoostingUpsell(arg0) {
   }
   items1[1] = metroRequire(tmp7Result5, obj7);
   const obj8 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl.string(intl14.t.hw6WTd) };
-  const Text = tmp2(5929).Text;
+  const Text = tmp2(5919).Text;
   intl = tmp2(1113).intl;
   items1[2] = metroRequire(Text, obj8);
   const obj9 = { style: tmp.cardText, variant: "body-md/medium", children: intl2.string(intl14.t.K5jBdG) };
-  const Text2 = tmp2(5929).Text;
+  const Text2 = tmp2(5919).Text;
   intl2 = tmp2(1113).intl;
   items1[3] = metroRequire(Text2, obj9);
   items2 = [metroImportDefault(_false, obj5), , , , , ];
   const obj10 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl3.string(intl14.t.RvfRTB) };
-  const Text3 = tmp2(5929).Text;
+  const Text3 = tmp2(5919).Text;
   intl3 = tmp2(1113).intl;
   items2[1] = metroRequire(Text3, obj10);
   const obj11 = { style: tmp.features, features: FEATURES_PREMIUM_GUILD_USER() };
   const tmp7Result7 = PremiumFeatureListDefault;
   items2[2] = metroRequire(tmp7Result7, obj11);
   const obj12 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl4.string(intl14.t["/pVhjb"]) };
-  const Text4 = tmp2(5929).Text;
+  const Text4 = tmp2(5919).Text;
   intl4 = tmp2(1113).intl;
   items2[3] = metroRequire(Text4, obj12);
   const obj13 = { style: tmp.features, features: items3 };
@@ -189,11 +189,11 @@ export default function GuildBoostingUpsell(arg0) {
     const obj20 = { children: null };
     if (stateFromStores) {
       const obj21 = { style: tmp.cardText, variant: "body-md/medium", children: intl12.string(intl14.t.WRzob8) };
-      const Text7 = tmp2(5929).Text;
+      const Text7 = tmp2(5919).Text;
       intl12 = tmp2(1113).intl;
       const items5 = [metroRequire(Text7, obj21), , ];
       const obj22 = { style: tmp.cardText, variant: "body-md/semibold", children: intl13.string(intl14.t.j4bXcm) };
-      const Text8 = tmp2(5929).Text;
+      const Text8 = tmp2(5919).Text;
       intl13 = tmp2(1113).intl;
       items5[1] = metroRequire(Text8, obj22);
       const obj23 = { style: tmp.guildList };
@@ -204,11 +204,11 @@ export default function GuildBoostingUpsell(arg0) {
       const obj24 = { style: tmp.imgNoGuilds, source: guildSubscriptionNoGuildsSource };
       const items6 = [metroRequire(FastImageDefault, obj24), , ];
       const obj25 = { style: tmp.cardText, variant: "body-md/semibold", children: intl10.string(intl14.t.FHm4bZ) };
-      const Text5 = tmp2(5929).Text;
+      const Text5 = tmp2(5919).Text;
       intl10 = tmp2(1113).intl;
       items6[1] = metroRequire(Text5, obj25);
       const obj26 = { style: tmp.cardText, variant: "body-md/medium", children: intl11.string(intl14.t.PSLiiu) };
-      const Text6 = tmp2(5929).Text;
+      const Text6 = tmp2(5919).Text;
       intl11 = tmp2(1113).intl;
       items6[2] = metroRequire(Text6, obj26);
       obj20.children = items6;

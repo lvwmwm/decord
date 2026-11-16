@@ -1,12 +1,12 @@
 // Module ID: 11400
 // Function ID: 11401
 // Name: ApplicationCommandChoiceUtils
-// Dependencies: [9006, 6345, 2]
+// Dependencies: [9006, 6335, 2]
 // Exports: findAutocompleteChoiceNumberValue, findAutocompleteChoiceStringValue, findChoiceNumberValue, findChoiceStringValue, toChoiceBooleanValue
 
 // Module 11400 (ApplicationCommandChoiceUtils)
 import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 9006 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6345 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6335 */;
 import size from "module_2" /* 2 */;
 
 let c2;

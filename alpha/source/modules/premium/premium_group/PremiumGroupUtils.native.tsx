@@ -1,13 +1,13 @@
 // Module ID: 9289
 // Function ID: 9290
 // Name: PremiumGroupUtils
-// Dependencies: [1388, 2187, 5372, 1113, 3513, 2, 9290]
+// Dependencies: [1388, 2187, 5362, 1113, 3513, 2, 9290]
 // Exports: getPremiumGroupInviteEmbedText, useCheckoutInstancePremiumGroupPurchaseEligibility, useIsEligibleForPremiumGroupMarketingMaterials, useIsEligibleForPremiumGroupNitroTabMarketingMaterials, useIsEligibleForPremiumGroupPurchase
 
 // Module 9289 (PremiumGroupUtils)
 import intl7 from "intl" /* 1113 */;
 import _modDef3513 from "module_3513" /* 3513 */;
-import UserUtils from "UserUtils" /* 5372 */;
+import UserUtils from "UserUtils" /* 5362 */;
 import _mod9290 from "module_9290" /* 9290 */;
 import UserStore from "UserStore" /* 1388 */;
 import PremiumGroupConstants from "PremiumGroupConstants" /* 2187 */;

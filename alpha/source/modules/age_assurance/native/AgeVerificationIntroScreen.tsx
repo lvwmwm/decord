@@ -1,14 +1,14 @@
 // Module ID: 8390
 // Function ID: 8391
 // Name: AgeVerificationIntroScreen
-// Dependencies: [5, 19, 17, 1072, 21, 5306, 575, 1630, 8256, 8211, 5929, 6830, 7746, 8391, 8392, 1113, 8190, 2188, 6833, 5936, 8393, 2]
+// Dependencies: [5, 19, 17, 1072, 21, 5306, 575, 1630, 8256, 8211, 5919, 6820, 7746, 8391, 8392, 1113, 8190, 2188, 6823, 5926, 8393, 2]
 // Exports: default
 
 // Module 8390 (AgeVerificationIntroScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6833 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6823 */;
 import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8190 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -78,12 +78,12 @@ export default function GetStartedScreen(modalSessionId) {
   const obj5 = { style: tmp.getStartedHeaderContainer, children: items };
   items = [closure_7(modalSessionId(8211).ShieldSpotIllustration, {}), , ];
   const obj6 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp.getStartedHeaderText, children: obj7.getAgeVerificationGetStartedTitle(entryPoint) };
-  const Text = modalSessionId(5929).Text;
-  obj7 = modalSessionId(6830);
+  const Text = modalSessionId(5919).Text;
+  obj7 = modalSessionId(6820);
   items[1] = closure_7(Text, obj6);
   const obj8 = { variant: "heading-sm/medium", color: "text-default", style: tmp.getStartedHeaderText, children: obj9.getAgeVerificationGetStartedSubtitle(entryPoint) };
-  const Text2 = modalSessionId(5929).Text;
-  obj9 = modalSessionId(6830);
+  const Text2 = modalSessionId(5919).Text;
+  obj9 = modalSessionId(6820);
   items[2] = closure_7(Text2, obj8);
   items1 = [closure_8(closure_5, obj5), , ];
   const obj10 = {
@@ -110,7 +110,7 @@ export default function GetStartedScreen(modalSessionId) {
   items1[1] = closure_7(TableRowGroup, obj10);
   const obj12 = { style: tmp.ageGroupLearnMoreContainer, children: closure_7(Text3, obj13) };
   obj13 = { variant: "body-xs/medium", color: "text-muted", children: intl.format(modalSessionId(1113).t["L+FgkZ"], obj14) };
-  Text3 = modalSessionId(5929).Text;
+  Text3 = modalSessionId(5919).Text;
   intl = modalSessionId(1113).intl;
   obj14 = {
     handleOnHelpUrlHook() {
@@ -187,7 +187,7 @@ export default function GetStartedScreen(modalSessionId) {
     loading,
     iconPosition: "end"
   };
-  Button = modalSessionId(5936).Button;
+  Button = modalSessionId(5926).Button;
   intl2 = modalSessionId(1113).intl;
   obj18 = { color: initiateAgeVerification(575).colors.WHITE };
   LinkExternalSmallIcon = modalSessionId(8393).LinkExternalSmallIcon;

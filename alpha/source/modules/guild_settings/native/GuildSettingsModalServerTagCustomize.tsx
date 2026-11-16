@@ -1,14 +1,14 @@
-// Module ID: 20534
-// Function ID: 20535
+// Module ID: 20537
+// Function ID: 20538
 // Name: GuildSettingsModalServerTagCustomize
-// Dependencies: [32, 19, 17, 8156, 8405, 8410, 21, 575, 5306, 8408, 1496, 8157, 504, 8158, 8404, 5552, 20535, 2121, 7588, 10672, 8106, 6337, 7619, 1113, 6037, 5929, 20536, 20540, 2]
+// Dependencies: [32, 19, 17, 8156, 8405, 8410, 21, 575, 5306, 8408, 1496, 8157, 504, 8158, 8404, 5542, 20538, 2121, 7588, 10672, 8106, 6327, 7619, 1113, 6027, 5919, 20539, 20543, 2]
 // Exports: default
 
-// Module 20534 (GuildSettingsModalServerTagCustomize)
+// Module 20537 (GuildSettingsModalServerTagCustomize)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import GuildProfileStore from "GuildProfileStore" /* 8156 */;
 import GuildProfileActionCreators from "GuildProfileActionCreators" /* 8158 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8404 */;

@@ -1,7 +1,7 @@
 // Module ID: 9556
 // Function ID: 9557
 // Name: BurstReactionToggle
-// Dependencies: [19, 17, 5307, 5152, 21, 1655, 504, 5902, 575, 5548, 5939, 5306, 9557, 1113, 9558, 2]
+// Dependencies: [19, 17, 5307, 5152, 21, 1655, 504, 5892, 575, 5538, 5929, 5306, 9557, 1113, 9558, 2]
 // Exports: default
 
 // Module 9556 (BurstReactionToggle)
@@ -11,9 +11,9 @@ import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1655 from "module_1655" /* 1655 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
-import timing_timing from "timing/timing" /* 5548 */;
-import useToken2 from "useToken" /* 5902 */;
-import spring_spring from "spring/spring" /* 5939 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import useToken2 from "useToken" /* 5892 */;
+import spring_spring from "spring/spring" /* 5929 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import createStyles from "createStyles" /* 5306 */;

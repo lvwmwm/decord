@@ -1,11 +1,11 @@
-// Module ID: 20027
-// Function ID: 20028
+// Module ID: 20029
+// Function ID: 20030
 // Name: ActivityShelfItemBackground
-// Dependencies: [32, 19, 21, 5306, 7722, 13416, 6020, 2]
+// Dependencies: [32, 19, 21, 5306, 7722, 13416, 6010, 2]
 
-// Module 20027 (ActivityShelfItemBackground)
+// Module 20029 (ActivityShelfItemBackground)
 import Fragment from "Fragment" /* 21 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import NativeViewDefault from "NativeView" /* 7722 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

@@ -1,7 +1,7 @@
 // Module ID: 14568
 // Function ID: 14569
 // Name: ChatInput
-// Dependencies: [5, 32, 19, 17, 9007, 14569, 11041, 8784, 14570, 8725, 8785, 5238, 8872, 11865, 13804, 1072, 1501, 5152, 1391, 1626, 21, 5306, 575, 1380, 14572, 5131, 5486, 5902, 14573, 12008, 14574, 504, 7287, 7918, 8861, 1655, 5503, 7864, 14596, 14597, 14599, 14600, 7241, 1108, 1629, 14639, 13807, 8879, 11153, 8850, 1269, 5554, 1256, 1628, 6067, 12741, 13367, 13534, 11635, 5501, 8874, 2019, 13537, 9544, 9149, 14640, 11650, 11157, 14643, 14644, 2186, 13806, 14658, 14659, 14660, 14667, 14668, 1090, 14669, 14670, 14673, 14680, 14684, 14687, 14794, 14796, 14821, 14823, 14824, 14837, 14841, 14845, 14847, 14851, 14852, 14858, 14859, 14864, 2]
+// Dependencies: [5, 32, 19, 17, 9007, 14569, 11041, 8784, 14570, 8725, 8785, 5238, 8872, 11865, 13804, 1072, 1501, 5152, 1391, 1626, 21, 5306, 575, 1380, 14572, 5131, 5476, 5892, 14573, 12008, 14574, 504, 7287, 7918, 8861, 1655, 5493, 7864, 14596, 14597, 14599, 14600, 7241, 1108, 1629, 14639, 13807, 8879, 11153, 8850, 1269, 5544, 1256, 1628, 6057, 12741, 13367, 13534, 11635, 5491, 8874, 2019, 13537, 9544, 9149, 14640, 11650, 11157, 14643, 14644, 2186, 13806, 14658, 14659, 14660, 14667, 14668, 1090, 14669, 14670, 14673, 14680, 14684, 14687, 14794, 14796, 14821, 14823, 14824, 14837, 14841, 14845, 14847, 14851, 14852, 14858, 14859, 14864, 2]
 
 // Module 14568 (ChatInput)
 import nativeDefault from "native" /* 575 */;
@@ -140,14 +140,14 @@ class ChatInput {
     const InlineEmojiSuggestionsEnabled = channel(5131).InlineEmojiSuggestionsEnabled;
     let tmp74Result32 = mobileEmojiSuggestionsConfig.enabled && InlineEmojiSuggestionsEnabled.useSetting();
     dependencyMap = tmp74Result32;
-    let tmpResult = tmp(5486);
-    const gradientValue = tmpResult.useGradientValue(tmp(5486).GradientPercentage.END);
+    let tmpResult = tmp(5476);
+    const gradientValue = tmpResult.useGradientValue(tmp(5476).GradientPercentage.END);
     let tmp6 = screenIndex;
-    const tmpResult30 = tmp(5902);
+    const tmpResult30 = tmp(5892);
     const token = tmpResult30.useToken(screenIndex(575).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);
-    const tmpResult31 = tmp(5902);
+    const tmpResult31 = tmp(5892);
     let result = (tmpResult31.useToken(screenIndex(575).modules.mobile.CHAT_INPUT_SEND_BUTTON_HEIGHT) - token) / 2;
-    const tmpResult32 = tmp(5902);
+    const tmpResult32 = tmp(5892);
     const token1 = tmpResult32.useToken(screenIndex(575).modules.mobile.CHAT_INPUT_FLOATING_SCRIM_GRADIENT_HEIGHT);
     const tmp10 = closure_40(gradientValue, token1);
     const tmpResult33 = tmp(14573);
@@ -155,18 +155,18 @@ class ChatInput {
     const tmpResult34 = tmp(12008);
     const tmp12 = tmpResult34.useChatDockHeight() > 0;
     _slicedToArray = tmp12;
-    const useToken = tmp(5902).useToken;
+    const useToken = tmp(5892).useToken;
     let token2 = gradientValue;
-    tmp(5902);
+    tmp(5892);
     if (gradientValue == null) {
       token2 = useToken(screenIndex(575).colors.BACKGROUND_BASE_LOWER);
     }
-    const tmpResult36 = tmp(5902);
+    const tmpResult36 = tmp(5892);
     const token3 = tmpResult36.useToken(tmp6(575).modules.mobile.CHAT_INPUT_FLOATING_TYPING_GRADIENT_HEIGHT_REDUCED);
-    const tmpResult37 = tmp(5902);
+    const tmpResult37 = tmp(5892);
     const token4 = tmpResult37.useToken(tmp6(575).modules.mobile.CHAT_INPUT_FLOATING_INLINE_FULL_GRADIENT_HEIGHT);
     let obj11 = react;
-    const tmpResult38 = tmp(5902);
+    const tmpResult38 = tmp(5892);
     const token5 = tmpResult38.useToken(tmp6(575).modules.mobile.CHAT_INPUT_FLOATING_SCRIM_GRADIENT_HEIGHT_AT_BOTTOM);
     [floatingInputBoxPressed, c6] = _slicedToArray(react.useState(false), 2);
     const tmp18 = _slicedToArray(react.useState(false), 2);
@@ -349,7 +349,7 @@ class ChatInput {
       const result = sharedValue.set(token);
       const result1 = sharedValue1.set(token);
     }, items10);
-    let tmp49 = tmp6(5503)();
+    let tmp49 = tmp6(5493)();
     const tmp50 = stateFromStores1((startTimeMillis) => null != startTimeMillis.startTimeMillis);
     let result3 = !tmp27;
     let isAppLauncherEnabled = result3;

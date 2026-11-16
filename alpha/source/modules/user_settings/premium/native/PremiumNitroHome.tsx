@@ -1,7 +1,7 @@
 // Module ID: 9983
 // Function ID: 9984
 // Name: PremiumNitroHome
-// Dependencies: [32, 19, 17, 5307, 2179, 9984, 1072, 5152, 1390, 21, 671, 575, 5306, 1502, 7428, 7497, 5929, 1113, 9985, 9307, 9986, 10010, 9627, 10013, 10014, 10015, 10075, 15290, 1256, 15313, 15314, 15316, 15317, 15318, 1630, 15326, 7994, 504, 8529, 9317, 15327, 7983, 5598, 1655, 5939, 5313, 15328, 5348, 5139, 9306, 5140, 6020, 15329, 15330, 14944, 11251, 5893, 1380, 5905, 2]
+// Dependencies: [32, 19, 17, 5307, 2179, 9984, 1072, 5152, 1390, 21, 671, 575, 5306, 1502, 7428, 7497, 5919, 1113, 9985, 9307, 9986, 10010, 9627, 10013, 10014, 10015, 10075, 15290, 1256, 15313, 15314, 15316, 15317, 15318, 1630, 15326, 7994, 504, 8529, 9317, 15327, 7983, 5588, 1655, 5929, 5313, 15328, 5338, 5139, 9306, 5140, 6010, 15329, 15330, 14944, 11251, 5883, 1380, 5895, 2]
 // Exports: default
 
 // Module 9983 (PremiumNitroHome)
@@ -14,8 +14,8 @@ import _mod1655 from "module_1655" /* 1655 */;
 import dismissible_content from "dismissible_content" /* 5139 */;
 import DismissibleContentUtils from "DismissibleContentUtils" /* 5140 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5348 */;
-import spring_spring from "spring/spring" /* 5939 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5338 */;
+import spring_spring from "spring/spring" /* 5929 */;
 import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 7497 */;
 import ReferralProgramUtils from "ReferralProgramUtils" /* 9306 */;
 import PremiumNitroNavigationStore2 from "PremiumNitroNavigationStore" /* 9984 */;
@@ -81,7 +81,7 @@ function NitroHomeHeader(arg0) {
   const PressableOpacity = tmp2(7428).PressableOpacity;
   items1 = [authStore3(PressableOpacity, obj4), , ];
   const obj5 = { variant: "display-sm", color: "text-overlay-light", style: tmp.headerText, accessibilityRole: "header", children: intl.string(intl5.t["BnquQ/"]) };
-  const Text = tmp2(5929).Text;
+  const Text = tmp2(5919).Text;
   intl = tmp2(1113).intl;
   items1[1] = authStore3(Text, obj5);
   const obj6 = { style: tmp.backButtonWrapper };
@@ -511,7 +511,7 @@ export default function PremiumNitroHome(onClose) {
   const obj11 = { style: items9, children: items10 };
   items9 = [tmp5.container, { paddingTop: youBarSettingsCustomHeaderPaddingTop }];
   const obj12 = { style: tmp5.background, source: navigation(15329) };
-  const tmp6Result3 = navigation(6020);
+  const tmp6Result3 = navigation(6010);
   items10 = [closure_16(tmp6Result3, obj12), closure_16(NitroHomeHeader, { onClose, subscription: stateFromStores1 }), , , ];
   let tmp25Result = tmp19.fractionalState !== FractionalPremiumStates.NONE && !isInReverseTrial;
   if (tmp25Result) {
@@ -538,7 +538,7 @@ export default function PremiumNitroHome(onClose) {
     items13 = [tmp5.segmentedControlVirtual, ];
     const obj19 = { height: tmp12, zIndex: 2 };
     items13[1] = obj19;
-    tmp25Result5 = tmp25(tmp6(5893), obj18);
+    tmp25Result5 = tmp25(tmp6(5883), obj18);
   }
   items12[1] = tmp25Result5;
   const tmpResult22 = tmp(1380);
@@ -551,7 +551,7 @@ export default function PremiumNitroHome(onClose) {
     tmp25Result6 = tmp25(tmp43, obj20);
   } else {
     let num4 = 0.5;
-    const tmp6Result4 = navigation(5905);
+    const tmp6Result4 = navigation(5895);
     if (isThemeDarkResult) {
       num4 = 0.2;
     }

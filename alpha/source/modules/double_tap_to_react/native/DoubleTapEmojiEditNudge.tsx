@@ -1,7 +1,7 @@
 // Module ID: 12671
 // Function ID: 12672
 // Name: DoubleTapEmojiEditNudge
-// Dependencies: [5, 19, 17, 5307, 1497, 1072, 1391, 21, 5306, 575, 5131, 9196, 1499, 504, 1414, 9543, 1256, 9555, 5929, 1113, 7894, 7428, 2]
+// Dependencies: [5, 19, 17, 5307, 1497, 1072, 1391, 21, 5306, 575, 5131, 9196, 1499, 504, 1414, 9543, 1256, 9555, 5919, 1113, 7894, 7428, 2]
 // Exports: DoubleTapEmojiEditNudge
 
 // Module 12671 (DoubleTapEmojiEditNudge)
@@ -135,7 +135,7 @@ function DoubleTapEmojiEditNudgeInner(location) {
     let result = openEmojiPickerActionSheet(obj, "stack");
   }, items2);
   let obj4 = { color: "text-subtle", variant: "body-sm/normal", children: intl.string(_location(1113).t["1EUr/W"]) };
-  const Text = _location(5929).Text;
+  const Text = _location(5919).Text;
   intl = _location(1113).intl;
   items3 = [closure_11(Text, obj4), , ];
   let obj5 = { style: tmp5.doubleTapEmojiContainer, fastImageStyle: tmp5.doubleTapCustomEmoji, textEmojiStyle: tmp5.doubleTapTextEmoji, src: memo, name: str };
@@ -150,7 +150,7 @@ function DoubleTapEmojiEditNudgeInner(location) {
   let obj6 = { accessibilityRole: "button", onPress: callback, hitSlop, style: tmp5.editButton, children: closure_11(Text2, obj7) };
   const PressableOpacity = tmp(7428).PressableOpacity;
   obj7 = { color: "text-brand", variant: "body-sm/normal", children: intl2.string(tmp(1113).t.bt75uw) };
-  Text2 = tmp(5929).Text;
+  Text2 = tmp(5919).Text;
   intl2 = tmp(1113).intl;
   items3[2] = closure_11(PressableOpacity, obj6);
   return tmp8(tmp9, obj3);

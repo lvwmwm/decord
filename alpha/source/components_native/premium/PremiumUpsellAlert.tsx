@@ -1,7 +1,7 @@
 // Module ID: 11178
 // Function ID: 11179
 // Name: PremiumUpsellAlert
-// Dependencies: [32, 19, 17, 1194, 1388, 1072, 11179, 1390, 21, 5306, 575, 5377, 6020, 5929, 9310, 1113, 2174, 11171, 11172, 5547, 5313, 11206, 11207, 11208, 11157, 11209, 11210, 11211, 11212, 504, 7954, 6242, 11170, 1496, 7918, 7937, 5899, 1256, 11213, 6762, 6340, 1187, 11214, 11215, 11174, 2]
+// Dependencies: [32, 19, 17, 1194, 1388, 1072, 11179, 1390, 21, 5306, 575, 5367, 6010, 5919, 9310, 1113, 2174, 11171, 11172, 5537, 5313, 11206, 11207, 11208, 11157, 11209, 11210, 11211, 11212, 504, 7954, 6232, 11170, 1496, 7918, 7937, 5889, 1256, 11213, 6752, 6330, 1187, 11214, 11215, 11174, 2]
 
 // Module 11178 (PremiumUpsellAlert)
 import react_native from "react-native" /* 17 */;
@@ -11,11 +11,11 @@ import intl6 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import PremiumUtils from "PremiumUtils" /* 2174 */;
 import shared from "shared" /* 5313 */;
-import native from "native" /* 5377 */;
-import useThemeDefault from "useTheme" /* 5547 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import FastImageDefault from "FastImage" /* 6020 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 6242 */;
+import native from "native" /* 5367 */;
+import useThemeDefault from "useTheme" /* 5537 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 6232 */;
 import usePremiumTrialOffer from "usePremiumTrialOffer" /* 9310 */;
 import useMessageMaxLengthDefault from "useMessageMaxLength" /* 11157 */;
 import AssetRegistryDefault from "AssetRegistry" /* 11171 */;

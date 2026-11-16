@@ -1,7 +1,7 @@
 // Module ID: 15458
 // Function ID: 15459
 // Name: UserSettingsGiftingBadgeProgress
-// Dependencies: [32, 19, 17, 8547, 21, 5306, 575, 7918, 7937, 504, 8480, 5929, 1113, 2797, 11678, 11680, 5936, 11817, 11661, 15459, 10560, 2]
+// Dependencies: [32, 19, 17, 8547, 21, 5306, 575, 7918, 7937, 504, 8480, 5919, 1113, 2797, 11678, 11680, 5926, 11817, 11661, 15459, 10560, 2]
 // Exports: default
 
 // Module 15458 (UserSettingsGiftingBadgeProgress)
@@ -85,13 +85,13 @@ function GiftingBadgeIntro(analyticsLocation) {
           const obj4 = { style: tmp6.badgeCopy, accessible: true, accessibilityLabel: tmpResult.getGiftingBadgeAccessibilityLabel(name), children: items1 };
           let str = name.name;
           tmpResult = GiftingBadgesUtils;
-          const Text = tmp(5929).Text;
+          const Text = tmp(5919).Text;
           if (str == null) {
             str = "";
           }
           items1 = [React4(Text, { variant: "body-sm/semibold", color: "text-subtle", children: str }), ];
           const obj5 = { variant: "body-xs/normal", color: "text-muted", children: format(qvx9E4, obj6) };
-          const Text2 = tmp(5929).Text;
+          const Text2 = tmp(5919).Text;
           const intl = tmp(1113).intl;
           format = intl.format;
           obj6 = { count: closure_8(name) };
@@ -259,7 +259,7 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
     }
     items1 = [tmp13, , ];
     const obj9 = { style: tmp.progressTitleText, variant: "body-md/medium", color: "text-strong", children: formatToPlainString2Result };
-    items1[1] = closure_9(analyticsLocation(5929).Text, obj9);
+    items1[1] = closure_9(analyticsLocation(5919).Text, obj9);
     let tmp15Result = null != giftingBadgeTierIconUrl1;
     if (tmp15Result) {
       const obj10 = { icon: giftingBadgeTierIconUrl1, size: 36, style: { margin: 4 } };
@@ -276,7 +276,7 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
     const obj14 = { width: "" + giftingBadgeProgressPercent + "%" };
     items4 = [closure_9(tmp12, obj12), ];
     const obj15 = { style: tmp.progressLabels, children: closure_9(Text, obj17) };
-    Text = tmp7(5929).Text;
+    Text = tmp7(5919).Text;
     const intl3 = tmp7(1113).intl;
     let format = intl3.format;
     let tmp18 = tmp19;
@@ -303,7 +303,7 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
         },
       grow: true
     };
-    const Button = tmp7(5936).Button;
+    const Button = tmp7(5926).Button;
     obj19 = { size: "sm", color: nativeDefault.unsafe_rawColors.WHITE };
     GiftIcon = tmp7(11817).GiftIcon;
     intl4 = tmp7(1113).intl;
@@ -318,7 +318,7 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
       children: items6
     };
     const obj22 = { variant: "body-sm/medium", color: "text-strong", children: intl5.string(_modDef2797.WZ4cXA) };
-    let Text2 = tmp7(5929).Text;
+    let Text2 = tmp7(5919).Text;
     intl5 = tmp7(1113).intl;
     items6 = [closure_9(Text2, obj22), ];
     const tmp20 = closure_5;
@@ -361,13 +361,13 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
               const obj4 = { style: badgeItem.badgeCopy, accessible: true, accessibilityLabel: tmpResult.getGiftingBadgeAccessibilityLabel(key), children: items2 };
               let str = key.name;
               tmpResult = GiftingBadgesUtils;
-              const Text = tmp(5929).Text;
+              const Text = tmp(5919).Text;
               if (str == null) {
                 str = "";
               }
               items2 = [React4(Text, { variant: "body-sm/semibold", color: "text-strong", children: str }), ];
               const obj5 = { variant: "body-xs/normal", color: "text-subtle", children: format(qvx9E4, obj6) };
-              const Text2 = tmp(5929).Text;
+              const Text2 = tmp(5919).Text;
               const intl = tmp(1113).intl;
               format = intl.format;
               obj6 = { count: closure_8(key) };
@@ -379,7 +379,7 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
       };
       items7 = [closure_9(tmp12, obj25), ];
       const obj26 = { style: tmp.footerText, variant: "body-xs/normal", color: "text-muted", children: intl6.string(_modDef2797["4Yp0mI"]) };
-      const Text3 = tmp7(5929).Text;
+      const Text3 = tmp7(5919).Text;
       intl6 = tmp7(1113).intl;
       items7[1] = closure_9(Text3, obj26);
       tmp11Result = closure_10(closure_11, obj24);

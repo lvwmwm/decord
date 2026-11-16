@@ -1,15 +1,15 @@
 // Module ID: 7756
 // Function ID: 7757
 // Name: ResendEmail
-// Dependencies: [32, 19, 17, 5149, 1388, 1072, 21, 5306, 1502, 504, 38, 7757, 7740, 7758, 5929, 1113, 5936, 6844, 6015, 2]
+// Dependencies: [32, 19, 17, 5149, 1388, 1072, 21, 5306, 1502, 504, 38, 7757, 7740, 7758, 5919, 1113, 5926, 6834, 6005, 2]
 // Exports: default
 
 // Module 7756 (ResendEmail)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 6015 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6844 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6834 */;
 import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 7740 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -82,11 +82,11 @@ export default function ResendEmail() {
   }, items3);
   items4 = [closure_9(navigation(7758).EnvelopeOpenSpotIllustration, { scale: 0.75 }), , , , ];
   const obj6 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(navigation(1113).t.fUtddV) };
-  const Text = navigation(5929).Text;
+  const Text = navigation(5919).Text;
   intl = navigation(1113).intl;
   items4[1] = closure_9(Text, obj6);
   const obj7 = { style: tmp.body, variant: "body-sm/medium", color: "text-default", children: formatResult };
-  const Text2 = navigation(5929).Text;
+  const Text2 = navigation(5919).Text;
   const intl2 = navigation(1113).intl;
   const tmp14 = closure_10;
   if (tmp10) {
@@ -113,13 +113,13 @@ export default function ResendEmail() {
     },
     grow: true
   };
-  Button = tmp2(5936).Button;
+  Button = tmp2(5926).Button;
   intl3 = tmp2(1113).intl;
   items4[3] = closure_9(View, obj9);
   if (!result) {
     const obj11 = { style: tmp.change, children: closure_9(Button2, obj12) };
     obj12 = { text: intl4.string(navigation(1113).t.Vm8akB), variant: "secondary", onPress: callback, grow: true };
-    Button2 = tmp2(5936).Button;
+    Button2 = tmp2(5926).Button;
     intl4 = tmp2(1113).intl;
     tmp16Result = tmp16(tmp15, obj11);
   }

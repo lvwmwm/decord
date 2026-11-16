@@ -1,15 +1,15 @@
-// Module ID: 18370
-// Function ID: 18371
+// Module ID: 18372
+// Function ID: 18373
 // Name: DevToolsActionSheetsScreen
-// Dependencies: [32, 19, 17, 21, 5306, 575, 15949, 12511, 6848, 18371, 2121, 5552, 5566, 7913, 7746, 7443, 8160, 7738, 6337, 7445, 5929, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 575, 15949, 12511, 6838, 18373, 2121, 5542, 5556, 7913, 7746, 7443, 8160, 7738, 6327, 7445, 5919, 2]
 // Exports: default
 
-// Module 18370 (DevToolsActionSheetsScreen)
+// Module 18372 (DevToolsActionSheetsScreen)
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5566 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5556 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import TableRowGroup2 from "TableRowGroup" /* 7746 */;
 import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7913 */;
 import SuspiciousDownloadModalActionCreatorsDefault from "SuspiciousDownloadModalActionCreators" /* 12511 */;
@@ -116,7 +116,7 @@ let items = [
     description: "Shows safety warning for inappropriate conversations",
     show() {
       const obj = ModalActionCreatorsDefault;
-      return obj.pushLazy(asyncRequire(18371, dependencyMap.paths), { warningId: "test-warning-123", warningType: "inappropriate_conversation", senderId: "123456789", channelId: "987654321" }, "INAPPROPRIATE_CONVERSATION_TAKEOVER_MODAL");
+      return obj.pushLazy(asyncRequire(18373, dependencyMap.paths), { warningId: "test-warning-123", warningType: "inappropriate_conversation", senderId: "123456789", channelId: "987654321" }, "INAPPROPRIATE_CONVERSATION_TAKEOVER_MODAL");
     }
   }
 ];
@@ -143,10 +143,10 @@ export default function DevToolsActionSheetsScreen() {
     obj.openLazy(Promise.resolve(obj2), "action-sheet-selector", obj3);
   }, items);
   obj2 = { spacing: 16, children: closure_8(Card, obj3) };
-  Stack = selectedType(6337).Stack;
+  Stack = selectedType(6327).Stack;
   obj3 = { children: items1 };
   Card = selectedType(7445).Card;
-  items1 = [closure_7(selectedType(5929).Text, { variant: "heading-lg/medium", children: "Action Sheets" }), ];
+  items1 = [closure_7(selectedType(5919).Text, { variant: "heading-lg/medium", children: "Action Sheets" }), ];
   const obj4 = { description: "Tap an option to launch the action sheet immediately", hasIcons: false, children: closure_7(selectedType(7443).TableRow, obj5) };
   const TableRowGroup = selectedType(7746).TableRowGroup;
   obj5 = { label: found.label, subLabel: found.description, arrow: true, onPress: callback };

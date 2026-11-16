@@ -1,13 +1,13 @@
-// Module ID: 19754
-// Function ID: 19755
+// Module ID: 19756
+// Function ID: 19757
 // Name: Pending
-// Dependencies: [19, 21, 8183, 19755, 19756, 19757, 5313, 6020, 2]
+// Dependencies: [19, 21, 8183, 19757, 19758, 19759, 5313, 6010, 2]
 // Exports: Pending, getPendingSource, usePendingSource
 
-// Module 19754 (Pending)
+// Module 19756 (Pending)
 import Fragment from "Fragment" /* 21 */;
 import shared from "shared" /* 5313 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import _mod8183 from "module_8183" /* 8183 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

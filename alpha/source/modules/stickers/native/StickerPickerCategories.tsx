@@ -1,7 +1,7 @@
 // Module ID: 11391
 // Function ID: 11392
 // Name: StickerPickerCategories
-// Dependencies: [32, 19, 17, 5177, 11360, 1072, 1228, 21, 5306, 575, 5131, 6792, 6793, 1256, 7428, 1187, 1414, 7720, 11093, 8092, 5554, 5555, 11330, 11331, 7830, 1113, 11392, 2]
+// Dependencies: [32, 19, 17, 5177, 11360, 1072, 1228, 21, 5306, 575, 5131, 6782, 6783, 1256, 7428, 1187, 1414, 7720, 11093, 8092, 5544, 5545, 11330, 11331, 7830, 1113, 11392, 2]
 // Exports: default
 
 // Module 11391 (StickerPickerCategories)
@@ -9,9 +9,9 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1228 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import HapticUtils from "HapticUtils" /* 5554 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5555 */;
-import StickersTypes from "StickersTypes" /* 6793 */;
+import HapticUtils from "HapticUtils" /* 5544 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5545 */;
+import StickersTypes from "StickersTypes" /* 6783 */;
 import StickerPickerStore from "StickerPickerStore" /* 11360 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

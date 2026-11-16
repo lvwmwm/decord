@@ -1,14 +1,14 @@
 // Module ID: 8827
 // Function ID: 8828
 // Name: DeveloperExperimentStore
-// Dependencies: [5177, 1388, 5533, 1405, 1404, 504, 572, 2]
+// Dependencies: [5177, 1388, 5523, 1405, 1404, 504, 572, 2]
 
 // Module 8827 (DeveloperExperimentStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import UserStoreUtils from "UserStoreUtils" /* 1404 */;
 import UserStoreConstants from "UserStoreConstants" /* 1405 */;
-import ExperimentConstants from "ExperimentConstants" /* 5533 */;
+import ExperimentConstants from "ExperimentConstants" /* 5523 */;
 import GuildStore from "GuildStore" /* 5177 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;

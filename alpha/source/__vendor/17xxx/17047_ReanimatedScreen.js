@@ -1,11 +1,11 @@
 // Module ID: 17047
 // Function ID: 17048
 // Name: ReanimatedScreen
-// Dependencies: [19, 21, 1655, 6293]
+// Dependencies: [19, 21, 1655, 6283]
 
 // Module 17047 (ReanimatedScreen)
 import Fragment from "Fragment" /* 21 */;
-import InnerScreen from "InnerScreen" /* 6293 */;
+import InnerScreen from "InnerScreen" /* 6283 */;
 import react from "react" /* 19 */;
 import module_1655 from "module_1655" /* 1655 */;
 

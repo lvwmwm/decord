@@ -1,7 +1,7 @@
 // Module ID: 15373
 // Function ID: 15374
 // Name: UserSettingsPremiumGuildSubscriptions
-// Dependencies: [19, 17, 1388, 2175, 9236, 2178, 2179, 1072, 1390, 21, 5306, 6961, 5377, 9238, 7272, 6767, 7809, 7813, 5929, 1113, 2188, 15374, 1401, 15388, 15390, 15392, 15396, 9987, 8529, 9317, 15328, 504, 1502, 9978, 1627, 2]
+// Dependencies: [19, 17, 1388, 2175, 9236, 2178, 2179, 1072, 1390, 21, 5306, 6951, 5367, 9238, 7272, 6757, 7809, 7813, 5919, 1113, 2188, 15374, 1401, 15388, 15390, 15392, 15396, 9987, 8529, 9317, 15328, 504, 1502, 9978, 1627, 2]
 // Exports: default
 
 // Module 15373 (UserSettingsPremiumGuildSubscriptions)
@@ -9,10 +9,10 @@ import intl3 from "intl" /* 1113 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
 import user from "user" /* 1401 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
-import native from "native" /* 5377 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6767 */;
-import LegacyTokens from "LegacyTokens" /* 6961 */;
+import native from "native" /* 5367 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6757 */;
+import LegacyTokens from "LegacyTokens" /* 6951 */;
 import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 7272 */;
 import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7809 */;
 import UserSettingsUtils from "UserSettingsUtils" /* 7813 */;
@@ -126,7 +126,7 @@ class UserSettingsPremiumGuildSubscriptions extends PureComponent {
       const tmp9 = importDefault;
       if (tmp6Result) {
         const obj6 = { style: tmp.externalManagement, variant: "body-sm/medium", color: "text-default", children: externalManagementMessage };
-        tmp6Result = tmp6(tmp7(5929).Text, obj6);
+        tmp6Result = tmp6(tmp7(5919).Text, obj6);
       }
       const obj7 = { children: items2 };
       items1[2] = tmp6Result;

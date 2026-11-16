@@ -1,7 +1,7 @@
 // Module ID: 10466
 // Function ID: 10467
 // Name: GameProfileDetails
-// Dependencies: [19, 17, 10213, 21, 9479, 10467, 7786, 10308, 10469, 10471, 10298, 5306, 575, 6012, 10473, 10474, 10319, 1113, 2119, 5128, 10475, 5929, 2]
+// Dependencies: [19, 17, 10213, 21, 9479, 10467, 7786, 10308, 10469, 10471, 10298, 5306, 575, 6002, 10473, 10474, 10319, 1113, 2119, 5128, 10475, 5919, 2]
 // Exports: default
 
 // Module 10466 (GameProfileDetails)
@@ -9,8 +9,8 @@ import nativeDefault from "native" /* 575 */;
 import intl13 from "intl" /* 1113 */;
 import Server from "Server" /* 2119 */;
 import DateUtilsAll from "DateUtils" /* 5128 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import LinkingDefault from "Linking" /* 6012 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import LinkingDefault from "Linking" /* 6002 */;
 import MobilePhoneIcon from "MobilePhoneIcon" /* 7786 */;
 import PlatformType from "PlatformType" /* 9479 */;
 import ContentInventoryConstants from "ContentInventoryConstants" /* 10213 */;

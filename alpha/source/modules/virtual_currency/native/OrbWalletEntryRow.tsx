@@ -1,10 +1,10 @@
-// Module ID: 18341
-// Function ID: 18342
+// Module ID: 18343
+// Function ID: 18344
 // Name: OrbWalletEntryRow
-// Dependencies: [19, 17, 16242, 21, 5306, 575, 7459, 1113, 2333, 7445, 9442, 5929, 7963, 2]
+// Dependencies: [19, 17, 16242, 21, 5306, 575, 7459, 1113, 2333, 7445, 9442, 5919, 7963, 2]
 // Exports: OrbWalletEntryRow
 
-// Module 18341 (OrbWalletEntryRow)
+// Module 18343 (OrbWalletEntryRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
@@ -85,7 +85,7 @@ export function OrbWalletEntryRow(onPress) {
   const OrbsIcon = tmp3(9442).OrbsIcon;
   items = [hasOwnProperty(OrbsIcon, obj4), ];
   const obj5 = { variant: "body-sm/medium", color: "text-subtle", lineClamp: 1, style: tmp.balanceText, children: intl2.formatToPlainString(intl3.t["8xDISf"], { balance: str }) };
-  const Text = tmp3(5929).Text;
+  const Text = tmp3(5919).Text;
   intl2 = tmp3(1113).intl;
   items[1] = hasOwnProperty(Text, obj5);
   items1 = [metroRequire(View, obj3), ];

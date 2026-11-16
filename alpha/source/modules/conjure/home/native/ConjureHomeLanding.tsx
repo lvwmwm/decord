@@ -1,7 +1,7 @@
 // Module ID: 13814
 // Function ID: 13815
 // Name: ConjureHomeLanding
-// Dependencies: [5, 32, 19, 17, 7321, 7365, 21, 575, 5306, 13815, 1502, 1630, 13129, 1655, 13971, 13190, 13796, 13972, 13973, 13739, 7329, 1503, 13139, 1113, 4131, 7333, 6015, 13975, 7459, 5929, 13976, 13791, 13978, 2]
+// Dependencies: [5, 32, 19, 17, 7321, 7365, 21, 575, 5306, 13815, 1502, 1630, 13129, 1655, 13971, 13190, 13796, 13972, 13973, 13739, 7329, 1503, 13139, 1113, 4131, 7333, 6005, 13975, 7459, 5919, 13976, 13791, 13978, 2]
 // Exports: default
 
 // Module 13814 (ConjureHomeLanding)
@@ -180,12 +180,12 @@ export default function ConjureHomeLanding(focusRequest) {
     function whenFirstPromptShown(value) {
       closure_0 = value;
       const promise = new Promise((fn) => {
-        const f147015 = (role) => "user" === role.role;
+        const f147032 = (role) => "user" === role.role;
         closure_0 = fn;
         function check() {
           const messages = ref.getMessages(closure_0);
           const obj = ref;
-          if (messages.some(f147015)) {
+          if (messages.some(f147032)) {
             obj.removeChangeListener(check);
             const _clearTimeout = clearTimeout;
             clearTimeout(timerId);
@@ -200,7 +200,7 @@ export default function ConjureHomeLanding(focusRequest) {
         let obj = closure_1_8;
         closure_1_8.addChangeListener(check);
         let messages = closure_1_8.getMessages(closure_0);
-        if (messages.some(f147015)) {
+        if (messages.some(f147032)) {
           obj.removeChangeListener(check);
           let _clearTimeout = clearTimeout;
           clearTimeout(timerId);

@@ -1,14 +1,14 @@
 // Module ID: 10236
 // Function ID: 10237
 // Name: SharePreparingModal
-// Dependencies: [19, 17, 21, 5306, 575, 5904, 10237, 10238, 1113, 7549, 7418, 5929, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 5894, 10237, 10238, 1113, 7549, 7418, 5919, 2]
 // Exports: default
 
 // Module 10236 (SharePreparingModal)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import Backdrop from "Backdrop" /* 5904 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Backdrop from "Backdrop" /* 5894 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7418 */;
 import XSmallIcon from "XSmallIcon" /* 7549 */;
 import MediaModalOverlayHeaderWrapper2 from "MediaModalOverlayHeaderWrapper" /* 10237 */;

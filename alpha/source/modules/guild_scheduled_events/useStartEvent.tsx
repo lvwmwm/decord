@@ -1,7 +1,7 @@
 // Module ID: 8439
 // Function ID: 8440
 // Name: useStartEvent
-// Dependencies: [5, 32, 19, 8440, 8442, 6757, 2]
+// Dependencies: [5, 32, 19, 8440, 8442, 6747, 2]
 // Exports: default
 
 // Module 8439 (useStartEvent)

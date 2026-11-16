@@ -1,7 +1,7 @@
 // Module ID: 11745
 // Function ID: 11746
 // Name: SocialLayerStorefrontGiftModal
-// Dependencies: [19, 7070, 1072, 21, 504, 7918, 7937, 1380, 9410, 5899, 1256, 11729, 2186, 11746, 1113, 11743, 9722, 11747, 11789, 11790, 2]
+// Dependencies: [19, 7070, 1072, 21, 504, 7918, 7937, 1380, 9410, 5889, 1256, 11729, 2186, 11746, 1113, 11743, 9722, 11747, 11789, 11790, 2]
 // Exports: default
 
 // Module 11745 (SocialLayerStorefrontGiftModal)

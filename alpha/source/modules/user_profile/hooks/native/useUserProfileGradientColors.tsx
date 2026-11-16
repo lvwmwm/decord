@@ -1,7 +1,7 @@
 // Module ID: 8602
 // Function ID: 8603
 // Name: useUserProfileGradientColors
-// Dependencies: [19, 5307, 504, 5377, 7939, 8592, 2]
+// Dependencies: [19, 5307, 504, 5367, 7939, 8592, 2]
 // Exports: useUserProfileGradientColors
 
 // Module 8602 (useUserProfileGradientColors)

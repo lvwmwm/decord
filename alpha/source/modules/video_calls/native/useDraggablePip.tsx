@@ -1,7 +1,7 @@
 // Module ID: 12727
 // Function ID: 12728
 // Name: useDraggablePip
-// Dependencies: [32, 11003, 12714, 1655, 5548, 1187, 11333, 5598, 1708, 5939, 2]
+// Dependencies: [32, 11003, 12714, 1655, 5538, 1187, 11333, 5588, 1708, 5929, 2]
 // Exports: useDraggablePip
 
 // Module 12727 (useDraggablePip)
@@ -316,7 +316,7 @@ export function useDraggablePip(size1) {
   useDraggablePipTsx11.__workletHash = 14934070264554;
   useDraggablePipTsx11.__initData = tmp51;
   const animatedReaction2 = useAnimatedReaction2(useDraggablePipTsx10, useDraggablePipTsx11);
-  let Gesture = tmp2(5598).Gesture;
+  let Gesture = tmp2(5588).Gesture;
   const items22 = [-closure_5, closure_5];
   const items23 = [-closure_5, closure_5];
   const PanResult = Gesture.Pan();
@@ -344,7 +344,7 @@ export function useDraggablePip(size1) {
   const items26 = [closure_19, sharedValue1, derivedValue5, derivedValue3, clamp, sharedValue3, derivedValue6, derivedValue4, snapToCorners, , , , ];
   const onEnd = onUpdate(useDraggablePipTsx12).onEnd;
   onUpdate(useDraggablePipTsx12);
-  items26[9] = tmp2(5939).withSpring;
+  items26[9] = tmp2(5929).withSpring;
   items26[10] = closure_6;
   items26[11] = sharedValue;
   items26[12] = sharedValue2;
@@ -437,7 +437,7 @@ export function useDraggablePip(size1) {
   useDraggablePipTsx13.__workletHash = 12738554963651;
   useDraggablePipTsx13.__initData = tmp67;
   const onEndResult = onEnd(useDraggablePipTsx13);
-  const Gesture2 = tmp2(5598).Gesture;
+  const Gesture2 = tmp2(5588).Gesture;
   const TapResult = Gesture2.Tap();
   const items28 = [closure_20, onPress, ];
   const onStart = TapResult.onStart;
@@ -453,7 +453,7 @@ export function useDraggablePip(size1) {
   useDraggablePipTsx14.__workletHash = 16181399743221;
   useDraggablePipTsx14.__initData = tmp82;
   const onStartResult = onStart(useDraggablePipTsx14);
-  const Gesture3 = tmp2(5598).Gesture;
+  const Gesture3 = tmp2(5588).Gesture;
   const items30 = [closure_21, sharedValue1, derivedValue3, derivedValue1, sharedValue3, derivedValue4, derivedValue2, derivedValue];
   _require = undefined;
   dependencyMap = undefined;

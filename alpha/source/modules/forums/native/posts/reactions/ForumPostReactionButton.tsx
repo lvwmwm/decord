@@ -1,7 +1,7 @@
 // Module ID: 11144
 // Function ID: 11145
 // Name: ForumPostReactionButton
-// Dependencies: [19, 17, 21, 5306, 575, 11145, 7428, 1113, 5929, 5920, 11866, 11899, 5131, 11870, 1090, 1414, 5250, 7894, 11901, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 11145, 7428, 1113, 5919, 5910, 11866, 11899, 5131, 11870, 1090, 1414, 5250, 7894, 11901, 2]
 // Exports: AddReactionButton, AdditionalReactionCount, ForumPostReactionButton
 
 // Module 11144 (ForumPostReactionButton)
@@ -12,8 +12,8 @@ import intl2 from "intl" /* 1113 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
 import UserSettings from "UserSettings" /* 5131 */;
 import ReactionUtils from "ReactionUtils" /* 5250 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 5920 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 5910 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import Pressables from "Pressables" /* 7428 */;
 import EmojiDefault from "Emoji" /* 7894 */;
 import useNativeForumPostHandlersDefault from "useNativeForumPostHandlers" /* 11145 */;

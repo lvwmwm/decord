@@ -1,12 +1,12 @@
-// Module ID: 20470
-// Function ID: 20471
+// Module ID: 20473
+// Function ID: 20474
 // Name: MentionSpamTriggerFields
-// Dependencies: [32, 19, 17, 14166, 21, 5306, 19702, 1113, 7746, 5929, 7443, 7626, 20453, 7733, 2]
+// Dependencies: [32, 19, 17, 14166, 21, 5306, 19704, 1113, 7746, 5919, 7443, 7626, 20456, 7733, 2]
 // Exports: default
 
-// Module 20470 (MentionSpamTriggerFields)
+// Module 20473 (MentionSpamTriggerFields)
 import react_native from "react-native" /* 17 */;
-import AutomodRuleUtils from "AutomodRuleUtils" /* 20453 */;
+import AutomodRuleUtils from "AutomodRuleUtils" /* 20456 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Constants from "Constants" /* 14166 */;
@@ -49,7 +49,7 @@ export default function MentionSpamTriggerFields(rule) {
   const triggerMetadata = rule.triggerMetadata;
   ({ mentionTotalLimit, mentionRaidProtectionEnabled } = triggerMetadata);
   const tmp = closure_9();
-  let obj = rule(19702);
+  let obj = rule(19704);
   let hasMentionRaidLimitAccess = obj.useHasMentionRaidLimitAccess(rule.guildId);
   const intl = rule(1113).intl;
   const stringResult = intl.string(rule(1113).t["s/26oQ"]);
@@ -62,7 +62,7 @@ export default function MentionSpamTriggerFields(rule) {
   const tmp8 = closure_8;
   if (!tmp7) {
     let obj3 = { variant: "body-xs/normal", color: "text-feedback-critical", children: intl3.formatToPlainString(rule(1113).t["8Y5zsp"], obj4) };
-    const Text = tmp2(5929).Text;
+    const Text = tmp2(5919).Text;
     intl3 = tmp2(1113).intl;
     obj4 = { minimum, maximum };
     tmp9 = closure_7(Text, obj3);

@@ -1,14 +1,14 @@
 // Module ID: 10739
 // Function ID: 10740
 // Name: useGuildPowerupCardFooterConfig
-// Dependencies: [5177, 5524, 1072, 10700, 504, 5527, 10696, 2]
+// Dependencies: [5177, 5514, 1072, 10700, 504, 5517, 10696, 2]
 // Exports: default
 
 // Module 10739 (useGuildPowerupCardFooterConfig)
 import Constants from "Constants" /* 1072 */;
 import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 10700 */;
 import GuildStore from "GuildStore" /* 5177 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5524 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5514 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

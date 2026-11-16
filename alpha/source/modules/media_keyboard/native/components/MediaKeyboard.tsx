@@ -1,13 +1,13 @@
 // Module ID: 13532
 // Function ID: 13533
 // Name: MediaKeyboard
-// Dependencies: [19, 8725, 8872, 1626, 1072, 1501, 13368, 21, 1256, 1655, 5503, 1628, 13533, 5902, 575, 7864, 13535, 13493, 11635, 8879, 5501, 8874, 1380, 8873, 11633, 13537, 1113, 8101, 8071, 11638, 11048, 8085, 11640, 13559, 13560, 11642, 13561, 11643, 2]
+// Dependencies: [19, 8725, 8872, 1626, 1072, 1501, 13368, 21, 1256, 1655, 5493, 1628, 13533, 5892, 575, 7864, 13535, 13493, 11635, 8879, 5491, 8874, 1380, 8873, 11633, 13537, 1113, 8101, 8071, 11638, 11048, 8085, 11640, 13559, 13560, 11642, 13561, 11643, 2]
 
 // Module 13532 (MediaKeyboard)
 import intl6 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
-import ChatInputUtils from "ChatInputUtils" /* 5501 */;
+import ChatInputUtils from "ChatInputUtils" /* 5491 */;
 import ThreadIcon from "ThreadIcon" /* 8071 */;
 import ImageIcon from "ImageIcon" /* 8085 */;
 import AppsIcon from "AppsIcon" /* 8101 */;

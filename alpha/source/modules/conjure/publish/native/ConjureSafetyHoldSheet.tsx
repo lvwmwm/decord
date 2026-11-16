@@ -1,13 +1,13 @@
 // Module ID: 13148
 // Function ID: 13149
 // Name: ConjureSafetyHoldSheet
-// Dependencies: [19, 17, 21, 5306, 575, 13149, 7951, 7913, 5929, 5936, 1113, 4131, 13150, 5552, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 13149, 7951, 7913, 5919, 5926, 1113, 4131, 13150, 5542, 2]
 // Exports: default
 
 // Module 13148 (ConjureSafetyHoldSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5542 */;
 import useConjureSafetyRecheckDefault from "useConjureSafetyRecheck" /* 13149 */;
 import conjurePublishConnection from "conjurePublishConnection" /* 13150 */;
 import react from "react" /* 19 */;
@@ -49,14 +49,14 @@ function ConjureSafetyHoldSheet(projectId) {
   items = [, , , ];
   obj4 = { title: conjureSafetyHoldCopy.title };
   const obj6 = { variant: "body-md/normal", color: "text-muted", children: conjureSafetyHoldCopy.body };
-  items[0] = closure_4(projectId(5929).Text, obj6);
+  items[0] = closure_4(projectId(5919).Text, obj6);
   let tmp9Result = null;
   tmp10 = closure_5;
   tmp11 = View;
   if (null != conjureSafetyRecheckNotice) {
     const obj7 = { variant: "body-md/medium", color: closure_7[conjureSafetyRecheckNotice.type], accessibilityRole: str2, accessibilityLiveRegion: "polite", children: conjureSafetyRecheckNotice.message };
     str2 = undefined;
-    const Text = tmp5(5929).Text;
+    const Text = tmp5(5919).Text;
     if ("critical" === conjureSafetyRecheckNotice.type) {
       str2 = "alert";
     }
@@ -74,7 +74,7 @@ function ConjureSafetyHoldSheet(projectId) {
           return obj.requestConjureSafetyRecheck(projectId);
         }
     };
-    const Button = tmp5(5936).Button;
+    const Button = tmp5(5926).Button;
     intl = tmp5(1113).intl;
     status1 = undefined;
     if (tmp4 != null) {
@@ -84,7 +84,7 @@ function ConjureSafetyHoldSheet(projectId) {
   }
   items[2] = tmp9Result2;
   let str4 = "secondary";
-  const Button2 = tmp5(5936).Button;
+  const Button2 = tmp5(5926).Button;
   if ("cleared" === status) {
     str4 = "primary";
   }

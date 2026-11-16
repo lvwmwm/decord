@@ -1,10 +1,10 @@
-// Module ID: 18030
-// Function ID: 18031
+// Module ID: 18032
+// Function ID: 18033
 // Name: DisplayNameStylesAccessibilitySetting
 // Dependencies: [5307, 9202, 504, 16889, 12406, 1113, 3125, 2]
 // Exports: onValueChange, useValue
 
-// Module 18030 (DisplayNameStylesAccessibilitySetting)
+// Module 18032 (DisplayNameStylesAccessibilitySetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef3125 from "module_3125" /* 3125 */;

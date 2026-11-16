@@ -1,14 +1,14 @@
 // Module ID: 16002
 // Function ID: 16003
 // Name: useMarketablePowerupPerks
-// Dependencies: [19, 5523, 5524, 5527, 504, 10787, 5529, 2]
+// Dependencies: [19, 5513, 5514, 5517, 504, 10787, 5519, 2]
 // Exports: default
 
 // Module 16002 (useMarketablePowerupPerks)
-import Powerups from "Powerups" /* 5527 */;
+import Powerups from "Powerups" /* 5517 */;
 import react from "react" /* 19 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 5523 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5524 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 5513 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5514 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,12 +1,12 @@
 // Module ID: 15053
 // Function ID: 15054
 // Name: LeafIllocon
-// Dependencies: [19, 21, 15054, 15055, 15056, 7755, 6020, 2]
+// Dependencies: [19, 21, 15054, 15055, 15056, 7755, 6010, 2]
 // Exports: LeafIllocon
 
 // Module 15053 (LeafIllocon)
 import Fragment from "Fragment" /* 21 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import react_native from "react-native" /* 7755 */;
 import _modDef15054 from "module_15054" /* 15054 */;
 import _modDef15055 from "module_15055" /* 15055 */;

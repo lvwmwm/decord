@@ -1,7 +1,7 @@
 // Module ID: 9140
 // Function ID: 9141
 // Name: ConversationNavigatorHeader
-// Dependencies: [19, 17, 5155, 21, 5306, 575, 504, 5954, 9051, 5902, 1360, 1113, 9141, 2]
+// Dependencies: [19, 17, 5155, 21, 5306, 575, 504, 5944, 9051, 5892, 1360, 1113, 9141, 2]
 // Exports: conversationNavigatorFocusHeaderOptions, conversationNavigatorListHeaderOptions
 
 // Module 9140 (ConversationNavigatorHeader)
@@ -9,8 +9,8 @@ import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import useToken from "useToken" /* 5902 */;
-import useChannelNameDefault from "useChannelName" /* 5954 */;
+import useToken from "useToken" /* 5892 */;
+import useChannelNameDefault from "useChannelName" /* 5944 */;
 import HeaderShared from "HeaderShared" /* 9051 */;
 import ConversationNavigatorMoreMenuDefault from "ConversationNavigatorMoreMenu" /* 9141 */;
 import react from "react" /* 19 */;

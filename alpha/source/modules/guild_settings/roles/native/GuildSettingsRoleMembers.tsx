@@ -1,18 +1,18 @@
-// Module ID: 20582
-// Function ID: 20583
+// Module ID: 20585
+// Function ID: 20586
 // Name: GuildSettingsRoleMembers
-// Dependencies: [32, 19, 17, 7892, 1072, 21, 5306, 575, 6015, 1113, 20560, 14150, 504, 6268, 8404, 1187, 1256, 5552, 20561, 2121, 10929, 7988, 7629, 7825, 6037, 5929, 7443, 13466, 2]
+// Dependencies: [32, 19, 17, 7892, 1072, 21, 5306, 575, 6005, 1113, 20563, 14150, 504, 6258, 8404, 1187, 1256, 5542, 20564, 2121, 10929, 7988, 7629, 7825, 6027, 5919, 7443, 13466, 2]
 // Exports: default
 
-// Module 20582 (GuildSettingsRoleMembers)
+// Module 20585 (GuildSettingsRoleMembers)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 6015 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8404 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -147,7 +147,7 @@ export default function GuildSettingsRoleMembers(guild) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     ActionSheetActionCreatorsDefault;
     const obj2 = { guild, role };
-    const tmp3 = asyncRequire(20561, dependencyMap.paths);
+    const tmp3 = asyncRequire(20564, dependencyMap.paths);
     openLazy(tmp3, "role-add-members-" + guild.id + "-" + role.id, obj2);
   }, items3);
   closure_6 = found.useCallback((item) => {

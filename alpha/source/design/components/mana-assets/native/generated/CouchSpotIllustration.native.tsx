@@ -1,7 +1,7 @@
 // Module ID: 12791
 // Function ID: 12792
 // Name: CouchSpotIllustration
-// Dependencies: [19, 21, 12792, 12793, 12794, 7755, 6020, 2]
+// Dependencies: [19, 21, 12792, 12793, 12794, 7755, 6010, 2]
 // Exports: CouchSpotIllustration
 
 // Module 12791 (CouchSpotIllustration)

@@ -1,7 +1,7 @@
 // Module ID: 14615
 // Function ID: 14616
 // Name: ForumPostGridBody
-// Dependencies: [32, 19, 17, 21, 5306, 575, 1187, 14616, 14617, 11857, 5929, 12421, 1255, 14618, 11158, 9111, 14622, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 575, 1187, 14616, 14617, 11857, 5919, 12421, 1255, 14618, 11158, 9111, 14622, 2]
 // Exports: default
 
 // Module 14615 (ForumPostGridBody)
@@ -9,7 +9,7 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import GlobalUtils from "GlobalUtils" /* 1255 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import ForumPostMediaUtils from "ForumPostMediaUtils" /* 9111 */;
 import AssetRegistryDefault from "AssetRegistry" /* 11857 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 14616 */;

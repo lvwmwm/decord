@@ -1,7 +1,7 @@
 // Module ID: 10842
 // Function ID: 10843
 // Name: AcceptFriendRequestModalActionCreators
-// Dependencies: [10843, 1072, 21, 1256, 6269, 10844, 2121, 2]
+// Dependencies: [10843, 1072, 21, 1256, 6259, 10844, 2121, 2]
 // Exports: openAcceptFriendRequestConfirmModal
 
 // Module 10842 (AcceptFriendRequestModalActionCreators)
@@ -9,7 +9,7 @@ import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6269 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6259 */;
 import Constants2 from "Constants" /* 10843 */;
 import size from "module_2" /* 2 */;
 

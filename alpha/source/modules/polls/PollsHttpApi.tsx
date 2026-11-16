@@ -1,7 +1,7 @@
 // Module ID: 12665
 // Function ID: 12666
 // Name: PollsHttpApi
-// Dependencies: [5, 1072, 1285, 6757, 2]
+// Dependencies: [5, 1072, 1285, 6747, 2]
 // Exports: endPollEarly, submitPollVote
 
 // Module 12665 (PollsHttpApi)

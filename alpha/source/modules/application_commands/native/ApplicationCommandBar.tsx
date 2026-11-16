@@ -1,15 +1,15 @@
 // Module ID: 14819
 // Function ID: 14820
 // Name: ApplicationCommandBar
-// Dependencies: [32, 19, 17, 5218, 21, 5306, 575, 6961, 7428, 1113, 1187, 504, 14640, 6020, 5929, 8106, 6836, 14820, 2]
+// Dependencies: [32, 19, 17, 5218, 21, 5306, 575, 6951, 7428, 1113, 1187, 504, 14640, 6010, 5919, 8106, 6826, 14820, 2]
 // Exports: default
 
 // Module 14819 (ApplicationCommandBar)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import usePreviousDefault from "usePrevious" /* 6836 */;
-import LegacyTokens from "LegacyTokens" /* 6961 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import usePreviousDefault from "usePrevious" /* 6826 */;
+import LegacyTokens from "LegacyTokens" /* 6951 */;
 import Pressables from "Pressables" /* 7428 */;
 import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 14640 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -341,11 +341,11 @@ export default function _default(command) {
   const tmp21 = closure_6;
   if (tmp22) {
     const obj4 = { style: tmp.applicationIcon, source: memo };
-    tmp22 = ref(section(6020), obj4);
+    tmp22 = ref(section(6010), obj4);
   }
   items5 = [tmp22, , , ];
   const obj5 = { style: tmp.applicationName, lineClamp: 1, variant: "body-sm/semibold", color: "mobile-text-heading-primary", children: `/ ${command.displayName}` };
-  items5[1] = ref(command(5929).Text, obj5);
+  items5[1] = ref(command(5919).Text, obj5);
   let options = command.options;
   let mapped;
   if (options != null) {
@@ -385,7 +385,7 @@ export default function _default(command) {
     items6[1] = applicationOptionalOptionsDividerWithNoRequired;
     const items7 = [ref(onPressOption, obj6), , ];
     const obj7 = { style: tmp.applicationOptionalOptionsIndicator, lineClamp: 1, variant: "body-sm/medium", color: "text-muted", children: intl.string(command(1113).t.U19GM3) };
-    const Text = tmp12(5929).Text;
+    const Text = tmp12(5919).Text;
     intl = tmp12(1113).intl;
     items7[1] = ref(Text, obj7);
     const options1 = command.options;

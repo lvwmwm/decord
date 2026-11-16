@@ -1,7 +1,7 @@
 // Module ID: 13502
 // Function ID: 13503
 // Name: AppLauncherList
-// Dependencies: [19, 17, 21, 5306, 1630, 13433, 5483, 1187, 13503, 1113, 7825, 2]
+// Dependencies: [19, 17, 21, 5306, 1630, 13433, 5473, 1187, 13503, 1113, 7825, 2]
 // Exports: AppLauncherList, AppLauncherListEmptyState, AppLauncherListSearchBar
 
 // Module 13502 (AppLauncherList)
@@ -9,7 +9,7 @@ import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import mergeProps from "mergeProps" /* 5483 */;
+import mergeProps from "mergeProps" /* 5473 */;
 import SearchBar2 from "SearchBar" /* 7825 */;
 import AssetRegistryDefault from "AssetRegistry" /* 13503 */;
 import react from "react" /* 19 */;

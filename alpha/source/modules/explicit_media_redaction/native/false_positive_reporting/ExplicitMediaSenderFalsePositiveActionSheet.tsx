@@ -1,7 +1,7 @@
 // Module ID: 11221
 // Function ID: 11222
 // Name: ExplicitMediaSenderFalsePositiveActionSheet
-// Dependencies: [19, 8635, 8637, 21, 563, 11222, 11223, 11220, 11226, 5552, 8853, 2]
+// Dependencies: [19, 8635, 8637, 21, 563, 11222, 11223, 11220, 11226, 5542, 8853, 2]
 // Exports: default
 
 // Module 11221 (ExplicitMediaSenderFalsePositiveActionSheet)
@@ -55,7 +55,7 @@ export default function ExplicitMediaObscuredFalsePositiveActionSheet(channelId)
   reportFalsePositive = explicitMediaActions.reportFalsePositive;
   const isReportFalsePositiveLoading = explicitMediaActions.isReportFalsePositiveLoading;
   if (stateFromStores.attachments.length <= 0) {
-    const obj4 = messageId(5552);
+    const obj4 = messageId(5542);
     obj4.hideActionSheet();
   }
   const items1 = [reportFalsePositive];

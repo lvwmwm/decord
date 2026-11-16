@@ -1,15 +1,15 @@
 // Module ID: 13706
 // Function ID: 13707
 // Name: ConjurePlanProposalCard
-// Dependencies: [32, 19, 17, 7017, 21, 5306, 575, 13707, 13712, 13713, 6020, 13230, 13231, 1113, 4131, 13714, 5929, 13709, 6057, 13290, 13715, 13717, 13720, 504, 13721, 13211, 13705, 13722, 13726, 13727, 13728, 13730, 5936, 2]
+// Dependencies: [32, 19, 17, 7017, 21, 5306, 575, 13707, 13712, 13713, 6010, 13230, 13231, 1113, 4131, 13714, 5919, 13709, 6047, 13290, 13715, 13717, 13720, 504, 13721, 13211, 13705, 13722, 13726, 13727, 13728, 13730, 5926, 2]
 // Exports: default
 
 // Module 13706 (ConjurePlanProposalCard)
 import nativeDefault from "native" /* 575 */;
 import intl9 from "intl" /* 1113 */;
 import _modDef4131 from "module_4131" /* 4131 */;
-import FastImageDefault from "FastImage" /* 6020 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 6057 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 6047 */;
 import useConjureAttachmentImage from "useConjureAttachmentImage" /* 13230 */;
 import openConjureNativeImages from "openConjureNativeImages" /* 13231 */;
 import ConjureNativeMarkdown from "ConjureNativeMarkdown" /* 13290 */;
@@ -207,7 +207,7 @@ function PlanOverlayDesign(projectId) {
       ({ overlayDesign: arr2[0], overlayWidgetSlide: arr2[1] } = tmp);
       tmp12Result = tmp12(tmp11, obj6);
     } else if (0 === slide) {
-      const obj7 = { style: items1, children: closure_10(design(6020), obj8) };
+      const obj7 = { style: items1, children: closure_10(design(6010), obj8) };
       items1 = [, ];
       ({ overlayDesign: arr[0], overlayWidgetSlide: arr[1] } = tmp);
       obj8 = { source: obj9, style: tmp.overlayFullWidget, resizeMode: "contain", onError: handleError };
@@ -330,7 +330,7 @@ function PlanReferences(projectId) {
   if (0 !== result.length) {
     const obj2 = { style: tmp.stack, children: items };
     const obj3 = { variant: "body-xs/medium", color: "text-muted", children: intl.string(_modDef4131.ubBJcy) };
-    const Text = tmp2(5929).Text;
+    const Text = tmp2(5919).Text;
     intl = tmp2(1113).intl;
     items = [closure_10(Text, obj3), ];
     const obj4 = {
@@ -595,7 +595,7 @@ export default function ConjurePlanProposalCard(projectId) {
     tmp20 = closure_12;
     if ("" !== trimmed) {
       const obj13 = { variant: "body-md/normal", color: "text-default", children: closure_10(projectId(13726).ConjurePlanCommandMarkup, obj14) };
-      const Text = tmp4(5929).Text;
+      const Text = tmp4(5919).Text;
       obj14 = { markup: memo, commandNames: conjurePlanSlashCommandNames, size: "body-md" };
       tmp12Result2 = tmp12(Text, obj13);
     }
@@ -606,11 +606,11 @@ export default function ConjurePlanProposalCard(projectId) {
     if ("" !== str3) {
       const obj16 = { style: tmp.whatChanged, children: items5 };
       const obj17 = { variant: "body-xs/medium", color: "text-muted", children: intl8.string(tmp10(4131).iNS4dl) };
-      const Text3 = tmp4(5929).Text;
+      const Text3 = tmp4(5919).Text;
       intl8 = tmp4(1113).intl;
       items5 = [tmp12(Text3, obj17), ];
       const obj18 = { variant: "body-md/normal", color: "text-default", children: closure_10(projectId(13726).ConjurePlanCommandText, obj19) };
-      const Text4 = tmp4(5929).Text;
+      const Text4 = tmp4(5919).Text;
       obj19 = { text: str3, commandNames: conjurePlanSlashCommandNames, size: "body-md" };
       items5[1] = closure_10(Text4, obj18);
       tmp9Result = tmp9(tmp13, obj16);
@@ -625,11 +625,11 @@ export default function ConjurePlanProposalCard(projectId) {
       if (!superseded) {
         const obj21 = { style: tmp.footer, children: items7 };
         const obj22 = { text: intl6.string(tmp10(4131)["6S+wRM"]), variant: "primary", size: "sm", onPress: onApprove };
-        const Button = tmp4(5936).Button;
+        const Button = tmp4(5926).Button;
         intl6 = tmp4(1113).intl;
         items7 = [tmp12(Button, obj22), ];
         const obj23 = { variant: "body-sm/normal", color: "text-subtle", style: tmp.replyHint, children: intl7.string(tmp10(4131).IZoqbR) };
-        const Text2 = tmp4(5929).Text;
+        const Text2 = tmp4(5919).Text;
         intl7 = tmp4(1113).intl;
         items7[1] = closure_10(Text2, obj23);
         tmp9Result2 = tmp9(tmp13, obj21);

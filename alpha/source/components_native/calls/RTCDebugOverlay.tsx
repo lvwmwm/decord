@@ -1,7 +1,7 @@
 // Module ID: 13079
 // Function ID: 13080
 // Name: RTCDebugOverlay
-// Dependencies: [19, 17, 5155, 5177, 6071, 6094, 6802, 1388, 6075, 21, 5306, 5303, 575, 1187, 504, 5954, 13080, 6095, 7415, 5936, 1113, 2]
+// Dependencies: [19, 17, 5155, 5177, 6061, 6084, 6792, 1388, 6065, 21, 5306, 5303, 575, 1187, 504, 5944, 13080, 6085, 7415, 5926, 1113, 2]
 // Exports: default
 
 // Module 13079 (RTCDebugOverlay)
@@ -9,18 +9,18 @@ import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import components_Button_Button from "components/Button/Button" /* 5936 */;
-import Constants from "Constants" /* 6075 */;
-import RTCDebugActionCreatorsAll from "RTCDebugActionCreators" /* 6095 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
+import Constants from "Constants" /* 6065 */;
+import RTCDebugActionCreatorsAll from "RTCDebugActionCreators" /* 6085 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 7415 */;
 import RTCConnectionUtilsDefault from "RTCConnectionUtils" /* 13080 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import GuildStore from "GuildStore" /* 5177 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6071 */;
-import RTCDebugStore from "RTCDebugStore" /* 6094 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 6802 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
+import RTCDebugStore from "RTCDebugStore" /* 6084 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 6792 */;
 import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
@@ -127,7 +127,7 @@ function RTCDebugGeneral() {
   const stateFromStores1 = obj3.useStateFromStores(items3, () => ChannelStore.getChannel(channelId), items4);
   const obj4 = { id: guildId, name };
   name = null;
-  const tmp4 = channelId(5954)(stateFromStores1);
+  const tmp4 = channelId(5944)(stateFromStores1);
   const tmp6 = Section;
   const tmp7 = ObjectKV;
   if (null != stateFromStores) {

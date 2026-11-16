@@ -1,7 +1,7 @@
 // Module ID: 12379
 // Function ID: 12380
 // Name: GiftCodeActionCreators
-// Dependencies: [5, 2165, 8485, 8493, 1072, 1390, 572, 6755, 7055, 8484, 6757, 5127, 1242, 1285, 12380, 12381, 2]
+// Dependencies: [5, 2165, 8485, 8493, 1072, 1390, 572, 6745, 7055, 8484, 6747, 5127, 1242, 1285, 12380, 12381, 2]
 // Exports: deliverGiftCodes, reportUnexpectedGiftCodeError, resolveGiftCode
 
 // Module 12379 (GiftCodeActionCreators)

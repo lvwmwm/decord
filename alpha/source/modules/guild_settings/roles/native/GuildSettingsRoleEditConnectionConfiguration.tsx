@@ -1,10 +1,10 @@
-// Module ID: 20584
-// Function ID: 20585
+// Module ID: 20587
+// Function ID: 20588
 // Name: GuildSettingsRoleEditConnectionConfiguration
-// Dependencies: [32, 19, 17, 1072, 7423, 21, 5306, 575, 5547, 12480, 1187, 1414, 5313, 7443, 1113, 7428, 7549, 7954, 20585, 1380, 5929, 7087, 7746, 2]
+// Dependencies: [32, 19, 17, 1072, 7423, 21, 5306, 575, 5537, 12480, 1187, 1414, 5313, 7443, 1113, 7428, 7549, 7954, 20588, 1380, 5919, 7087, 7746, 2]
 // Exports: default
 
-// Module 20584 (GuildSettingsRoleEditConnectionConfiguration)
+// Module 20587 (GuildSettingsRoleEditConnectionConfiguration)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants2 from "Constants" /* 1072 */;
@@ -12,13 +12,13 @@ import intl3 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import AvatarUtils from "AvatarUtils" /* 1414 */;
 import shared from "shared" /* 5313 */;
-import useThemeDefault from "useTheme" /* 5547 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import useThemeDefault from "useTheme" /* 5537 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import PlatformsDefault from "Platforms" /* 7087 */;
 import XSmallIcon from "XSmallIcon" /* 7549 */;
 import TableRowGroup3 from "TableRowGroup" /* 7746 */;
 import useGetOrFetchApplicationBatched2 from "useGetOrFetchApplicationBatched" /* 12480 */;
-import RoleConnectionRequirementUtils from "RoleConnectionRequirementUtils" /* 20585 */;
+import RoleConnectionRequirementUtils from "RoleConnectionRequirementUtils" /* 20588 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 7423 */;
@@ -244,7 +244,7 @@ function NumericalConfigRule(existingPendingConfiguration) {
   }
   let tmp2 = metadataField;
   let tmp3 = dependencyMap;
-  let obj = metadataField(20585);
+  let obj = metadataField(20588);
   const realizedOperatorForResult = obj.realizedOperatorFor(operator);
   c7 = realizedOperatorForResult;
   value = undefined;
@@ -253,7 +253,7 @@ function NumericalConfigRule(existingPendingConfiguration) {
       value = iter.value;
     }
   }
-  const tmp2Result = tmp2(20585);
+  const tmp2Result = tmp2(20588);
   const str = tmp2Result.displayedValueFor(value, realizedOperatorForResult);
   str1 = str.toString();
   [value, tmp10] = react.useState(str1);
@@ -320,7 +320,7 @@ function NumericalConfigRule(existingPendingConfiguration) {
     items[1] = numericalInputDisabled;
     items1 = [onInputValueChange(closure_5, obj5, "_numericalInputContainer"), ];
     const obj7 = { variant: "body-md/semibold", style: tmp.appNumericalInputText, children: fieldText };
-    items1[1] = onInputValueChange(tmp2(5929).Text, obj7);
+    items1[1] = onInputValueChange(tmp2(5919).Text, obj7);
     tmp19Result = tmp19(tmp20, obj4);
   }
   const obj8 = {

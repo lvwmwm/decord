@@ -1,7 +1,7 @@
 // Module ID: 8454
 // Function ID: 8455
 // Name: FormHeader
-// Dependencies: [19, 1083, 21, 5306, 6826, 575, 1187, 2]
+// Dependencies: [19, 1083, 21, 5306, 6816, 575, 1187, 2]
 // Exports: default
 
 // Module 8454 (FormHeader)
@@ -11,7 +11,7 @@ import Constants from "Constants" /* 1083 */;
 import native from "native" /* 1187 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 5306 */;
-import TextStyles from "TextStyles" /* 6826 */;
+import TextStyles from "TextStyles" /* 6816 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

@@ -1,15 +1,15 @@
 // Module ID: 17638
 // Function ID: 17639
 // Name: HexagonCampaignThemeLegal
-// Dependencies: [19, 17, 5331, 21, 5306, 575, 5929, 1113, 4516, 17104, 6020, 17639, 2]
+// Dependencies: [19, 17, 5331, 21, 5306, 575, 5919, 1113, 4516, 17104, 6010, 17639, 2]
 // Exports: default
 
 // Module 17638 (HexagonCampaignThemeLegal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef4516 from "module_4516" /* 4516 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import AssetRegistryDefault from "AssetRegistry" /* 17639 */;
 import react from "react" /* 19 */;
 import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5331 */;
@@ -52,7 +52,7 @@ export default function HexagonCampaignThemeLegal(animatedStyles) {
   dependencyMap = tmp2;
   let tmp5 = dependencyMap;
   let obj = { animated: tmp2, variant: "body-xs/medium", color: str, style: items, children: intl.format(_modDef4516.y2YmJv, obj2) };
-  let Text = animatedStyles(5929).Text;
+  let Text = animatedStyles(5919).Text;
   let headerSecondary;
   const tmp4 = animatedStyles;
   if (animatedStyles != null) {

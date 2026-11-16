@@ -1,7 +1,7 @@
 // Module ID: 11022
 // Function ID: 11023
 // Name: setUserStatus
-// Dependencies: [5, 7879, 7316, 1072, 5372, 1113, 11023, 5136, 1227, 5314, 1256, 2]
+// Dependencies: [5, 7879, 7316, 1072, 5362, 1113, 11023, 5136, 1227, 5314, 1256, 2]
 // Exports: default
 
 // Module 11022 (setUserStatus)

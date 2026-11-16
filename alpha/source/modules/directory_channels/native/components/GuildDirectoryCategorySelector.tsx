@@ -1,7 +1,7 @@
 // Module ID: 15123
 // Function ID: 15124
 // Name: GuildDirectoryCategorySelector
-// Dependencies: [19, 17, 14709, 14702, 21, 5306, 575, 1113, 5902, 671, 7994, 504, 7983, 14713, 13262, 15124, 2]
+// Dependencies: [19, 17, 14709, 14702, 21, 5306, 575, 1113, 5892, 671, 7994, 504, 7983, 14713, 13262, 15124, 2]
 // Exports: default
 
 // Module 15123 (GuildDirectoryCategorySelector)

@@ -1,13 +1,13 @@
 // Module ID: 8208
 // Function ID: 8209
 // Name: ModalScreen
-// Dependencies: [19, 17, 21, 575, 5306, 5913, 7589, 7492, 8209, 2]
+// Dependencies: [19, 17, 21, 575, 5306, 5903, 7589, 7492, 8209, 2]
 // Exports: ModalScreen
 
 // Module 8208 (ModalScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5913 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5903 */;
 import react2 from "react" /* 7492 */;
 import NavigatorGradientContext from "NavigatorGradientContext" /* 7589 */;
 import react from "react" /* 19 */;

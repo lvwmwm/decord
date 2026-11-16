@@ -65,7 +65,8 @@ class StackView {
     }
     const tmp3Result = tmp3(self, constructResult);
     closure_0 = tmp3Result;
-    tmp3Result.state = { routes: [], previousState: "y", openingRouteKeys: [], closingRouteKeys: [], replacingRouteKeys: [], descriptors: {} };
+    let obj2 = { routes: [], previousState: "y", openingRouteKeys: [], closingRouteKeys: [], replacingRouteKeys: [], descriptors: {} };
+    tmp3Result.state = obj2;
     tmp3Result.getPreviousRoute = (route) => {
       let c1;
       let c2;
@@ -257,7 +258,7 @@ const entry1 = {
     let arr3;
     let closingRouteKeys;
     let openingRouteKeys;
-    const f94330 = (item, index) => Object.is(item, arr3[index]);
+    const f94343 = (item, index) => Object.is(item, arr3[index]);
     _require = state;
     dependencyMap = previousState;
     const items = [...state.state.preloadedRoutes];
@@ -278,7 +279,7 @@ const entry1 = {
       let tmp11;
       let found4;
       let arr11;
-      const tmp6 = mapped.length === mapped1.length && mapped.every(f94330);
+      const tmp6 = mapped.length === mapped1.length && mapped.every(f94343);
       if (tmp6) {
         if (previousState.routes.length) {
           let routes = previousState.routes;
@@ -319,7 +320,7 @@ const entry1 = {
           }
           if (typeof tmp5 === "function") {
             let mapped2 = substr;
-            const tmp73 = items.length === arr3.length && items.every(f94330);
+            const tmp73 = items.length === arr3.length && items.every(f94343);
             if (!tmp73) {
               closure_2 = items.reduce((acc, key) => {
                 acc[key.key] = key;

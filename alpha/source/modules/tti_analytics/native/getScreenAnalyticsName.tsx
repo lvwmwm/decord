@@ -1,18 +1,18 @@
-// Module ID: 18726
-// Function ID: 18727
+// Module ID: 18728
+// Function ID: 18729
 // Name: getScreenAnalyticsName
-// Dependencies: [5155, 8775, 5162, 5493, 5492, 2]
+// Dependencies: [5155, 8775, 5162, 5483, 5482, 2]
 // Exports: default, getChannelScreenName
 
-// Module 18726 (getScreenAnalyticsName)
+// Module 18728 (getScreenAnalyticsName)
 import ChannelConstants from "ChannelConstants" /* 5162 */;
-import RootNavigationRef from "RootNavigationRef" /* 5493 */;
+import RootNavigationRef from "RootNavigationRef" /* 5483 */;
 import AcceptInviteConstants from "AcceptInviteConstants" /* 8775 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const NavigationRouteUtils = tmp(5492);
+const NavigationRouteUtils = tmp(5482);
 const ACCEPT_INVITE_MODAL_KEY = AcceptInviteConstants.ACCEPT_INVITE_MODAL_KEY;
 const isStaticChannelRoute = ChannelConstants.isStaticChannelRoute;
 const result = size.fileFinishedImporting("modules/tti_analytics/native/getScreenAnalyticsName.tsx");

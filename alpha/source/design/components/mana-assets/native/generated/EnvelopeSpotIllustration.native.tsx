@@ -1,7 +1,7 @@
 // Module ID: 14232
 // Function ID: 14233
 // Name: EnvelopeSpotIllustration
-// Dependencies: [19, 21, 14233, 14234, 14235, 7755, 6020, 2]
+// Dependencies: [19, 21, 14233, 14234, 14235, 7755, 6010, 2]
 // Exports: EnvelopeSpotIllustration
 
 // Module 14232 (EnvelopeSpotIllustration)

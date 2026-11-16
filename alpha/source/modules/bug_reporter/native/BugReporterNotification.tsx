@@ -1,7 +1,7 @@
 // Module ID: 11098
 // Function ID: 11099
 // Name: BugReporterNotification
-// Dependencies: [19, 17, 11099, 1072, 21, 5306, 575, 6020, 11087, 11043, 11025, 6848, 11027, 11100, 2121, 8604, 2]
+// Dependencies: [19, 17, 11099, 1072, 21, 5306, 575, 6010, 11087, 11043, 11025, 6838, 11027, 11100, 2121, 8604, 2]
 // Exports: BugReporterNotification
 
 // Module 11098 (BugReporterNotification)
@@ -10,7 +10,7 @@ import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import InAppNotificationUtils from "InAppNotificationUtils" /* 11025 */;
 import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 11027 */;
 import react from "react" /* 19 */;

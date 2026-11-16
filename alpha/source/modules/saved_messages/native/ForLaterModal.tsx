@@ -1,14 +1,14 @@
 // Module ID: 11907
 // Function ID: 11908
 // Name: ForLaterModal
-// Dependencies: [19, 17, 21, 5306, 575, 1630, 1113, 11905, 7500, 9051, 1380, 7493, 6848, 11908, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 1630, 1113, 11905, 7500, 9051, 1380, 7493, 6838, 11908, 2]
 // Exports: default
 
 // Module 11907 (ForLaterModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import HeaderShared from "HeaderShared" /* 9051 */;
 import ForLaterScreenDefault from "ForLaterScreen" /* 11908 */;
 import react from "react" /* 19 */;

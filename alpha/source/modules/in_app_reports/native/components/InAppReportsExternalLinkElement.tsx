@@ -1,15 +1,15 @@
 // Module ID: 12299
 // Function ID: 12300
 // Name: InAppReportsExternalLinkElement
-// Dependencies: [17, 21, 5306, 575, 5929, 1113, 12072, 12300, 6012, 2]
+// Dependencies: [17, 21, 5306, 575, 5919, 1113, 12072, 12300, 6002, 2]
 // Exports: default
 
 // Module 12299 (InAppReportsExternalLinkElement)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import LinkingDefault from "Linking" /* 6012 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import LinkingDefault from "Linking" /* 6002 */;
 import InAppReportsOptionRowDefault from "InAppReportsOptionRow" /* 12072 */;
 import LinkExternalMediumIcon2 from "LinkExternalMediumIcon" /* 12300 */;
 import Fragment from "Fragment" /* 21 */;
@@ -53,7 +53,7 @@ function ExternalLinkItem(data) {
     const tmp8 = require;
     if (tmp3Result) {
       const obj4 = { style: tmp.linkDescription, variant: "body-xs/medium", color: "text-subtle", children: link_description };
-      tmp3Result = tmp3(tmp8(5929).Text, obj4);
+      tmp3Result = tmp3(tmp8(5919).Text, obj4);
     }
     tmp3Result2 = tmp3(tmp6, obj);
   }

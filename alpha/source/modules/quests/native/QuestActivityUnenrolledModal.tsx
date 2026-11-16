@@ -1,17 +1,17 @@
-// Module ID: 19942
-// Function ID: 19943
+// Module ID: 19944
+// Function ID: 19945
 // Name: QuestActivityUnenrolledModal
-// Dependencies: [5, 32, 19, 17, 8808, 19941, 5338, 21, 5306, 575, 1360, 5547, 5328, 504, 7259, 8831, 10131, 15261, 5341, 1414, 10133, 8834, 6848, 5378, 17621, 17723, 6337, 6020, 15257, 5929, 1113, 5936, 7734, 7427, 7430, 15264, 12523, 2]
+// Dependencies: [5, 32, 19, 17, 8808, 19943, 6954, 21, 5306, 575, 1360, 5537, 5328, 504, 7259, 8831, 10131, 15261, 6957, 1414, 10133, 8834, 6838, 5368, 17621, 17723, 6327, 6010, 15257, 5919, 1113, 5926, 7734, 7427, 7430, 15264, 12523, 2]
 // Exports: default
 
-// Module 19942 (QuestActivityUnenrolledModal)
+// Module 19944 (QuestActivityUnenrolledModal)
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1360 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import QuestConstants from "QuestConstants" /* 5338 */;
-import QuestTypes from "QuestTypes" /* 5341 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
+import QuestConstants from "QuestConstants" /* 6954 */;
+import QuestTypes from "QuestTypes" /* 6957 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7427 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7430 */;
 import AnalyticsTypes from "AnalyticsTypes" /* 8834 */;
@@ -23,7 +23,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import QuestStore from "QuestStore" /* 8808 */;
-import UnenrolledActivityQuestStore from "UnenrolledActivityQuestStore" /* 19941 */;
+import UnenrolledActivityQuestStore from "UnenrolledActivityQuestStore" /* 19943 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
@@ -60,7 +60,7 @@ function QuestActivityUnenrolledModalInner(quest) {
   let trackQuestContentClickedWithImpression;
   let tmp = quest;
   const tmp2 = dependencyMap;
-  let obj = quest(5547);
+  let obj = quest(5537);
   const theme = obj.useTheme();
   let obj2 = quest(5328);
   const tmp4 = closure_14(obj2.isThemeDark(theme));
@@ -77,7 +77,7 @@ function QuestActivityUnenrolledModalInner(quest) {
   const questTaskDetails = obj5.useQuestTaskDetails(quest);
   const items1 = [getOrFetchApplication];
   const obj6 = quest(15261);
-  const obj7 = { quest, taskDetails: questTaskDetails, location: QuestsExperimentLocations.QUEST_ACTIVITY_UNENROLLED_MODAL, sourceQuestContent: quest(5341).QuestContent.QUEST_ACTIVITY_UNENROLLED_MODAL };
+  const obj7 = { quest, taskDetails: questTaskDetails, location: QuestsExperimentLocations.QUEST_ACTIVITY_UNENROLLED_MODAL, sourceQuestContent: quest(6957).QuestContent.QUEST_ACTIVITY_UNENROLLED_MODAL };
   const questsInstructionsToWinReward = obj6.useQuestsInstructionsToWinReward(obj7);
   const memo = react.useMemo(() => {
     let applicationIconSource = null;
@@ -146,7 +146,7 @@ function QuestActivityUnenrolledModalInner(quest) {
       }
     }
   }), items2);
-  const obj8 = quest(5378);
+  const obj8 = quest(5368);
   const checkboxA11yNative = obj8.useCheckboxA11yNative({ checked });
   ({ accessibilityRole, accessibilityState } = checkboxA11yNative);
   const obj9 = quest(10131);
@@ -164,9 +164,9 @@ function QuestActivityUnenrolledModalInner(quest) {
   const obj13 = { style: tmp4.baseShadow, children: closure_12(closure_7, obj14) };
   let tmp19Result = null != memo;
   obj14 = { style: tmp4.imagesContainer, children: items4 };
-  const Stack = quest(6337).Stack;
+  const Stack = quest(6327).Stack;
   if (tmp19Result) {
-    const obj15 = { style: tmp4.appIconContainer, children: closure_11(checked(6020), obj16) };
+    const obj15 = { style: tmp4.appIconContainer, children: closure_11(checked(6010), obj16) };
     obj16 = { source: memo, style: tmp4.appIcon };
     tmp19Result = tmp19(tmp18, obj15);
   }
@@ -177,11 +177,11 @@ function QuestActivityUnenrolledModalInner(quest) {
   items5 = [closure_11(tmp18, obj13), ];
   const obj18 = { style: tmp4.textContainer, children: items6 };
   const obj19 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: { textAlign: "center" }, children: intl.string(tmp(1113).t.IrNgN4) };
-  const Text = tmp(5929).Text;
+  const Text = tmp(5919).Text;
   intl = tmp(1113).intl;
   items6 = [closure_11(Text, obj19), ];
   const obj20 = { variant: "body-sm/normal", color: "text-subtle", style: { textAlign: "center" }, children: items7 };
-  const Text2 = tmp(5929).Text;
+  const Text2 = tmp(5919).Text;
   const intl2 = tmp(1113).intl;
   items7 = [, , ];
   const obj21 = { questName: quest.config.messages.questName };
@@ -194,7 +194,7 @@ function QuestActivityUnenrolledModalInner(quest) {
   const obj22 = { style: tmp4.footer, children: items10 };
   const obj23 = { style: tmp4.buttonsContainer, children: items9 };
   const obj24 = { size: "lg", text: intl3.string(tmp(1113).t.l7E81v), onPress: callback, disabled: isQuestAccessSuspended, onPressDisabled: tmp22 };
-  const Button = tmp(5936).Button;
+  const Button = tmp(5926).Button;
   intl3 = tmp(1113).intl;
   tmp22 = undefined;
   if (isQuestAccessSuspended) {
@@ -212,7 +212,7 @@ function QuestActivityUnenrolledModalInner(quest) {
     },
     variant: "secondary"
   };
-  const Button2 = tmp(5936).Button;
+  const Button2 = tmp(5926).Button;
   intl4 = tmp(1113).intl;
   items9[1] = closure_11(Button2, obj25);
   items10 = [tmp17(tmp18, obj23), ];
@@ -231,7 +231,7 @@ function QuestActivityUnenrolledModalInner(quest) {
   intl5 = tmp(1113).intl;
   items11 = [closure_11(tmp(7734).FormCheckbox, { checked }), ];
   const obj27 = { variant: "body-sm/normal", color: "text-subtle", children: intl6.string(tmp(1113).t["931n1T"]) };
-  const Text3 = tmp(5929).Text;
+  const Text3 = tmp(5919).Text;
   intl6 = tmp(1113).intl;
   items11[1] = closure_11(Text3, obj27);
   items10[1] = closure_12(closure_6, obj26);

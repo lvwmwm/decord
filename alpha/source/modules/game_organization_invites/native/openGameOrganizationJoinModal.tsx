@@ -1,7 +1,7 @@
 // Module ID: 14065
 // Function ID: 14066
 // Name: openGameOrganizationJoinModal
-// Dependencies: [5, 12369, 14066, 14070, 6848, 14073, 2121, 2]
+// Dependencies: [5, 12369, 14066, 14070, 6838, 14073, 2121, 2]
 // Exports: default
 
 // Module 14065 (openGameOrganizationJoinModal)

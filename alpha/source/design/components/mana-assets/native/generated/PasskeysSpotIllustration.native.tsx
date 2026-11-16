@@ -1,7 +1,7 @@
 // Module ID: 17304
 // Function ID: 17305
 // Name: PasskeysSpotIllustration
-// Dependencies: [19, 21, 17305, 17306, 17307, 7755, 6020, 2]
+// Dependencies: [19, 21, 17305, 17306, 17307, 7755, 6010, 2]
 // Exports: PasskeysSpotIllustration
 
 // Module 17304 (PasskeysSpotIllustration)

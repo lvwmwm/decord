@@ -1,10 +1,10 @@
-// Module ID: 18594
-// Function ID: 18595
+// Module ID: 18596
+// Function ID: 18597
 // Name: ParentalControlsExplicitMediaFiltersNonFriendsDMsSetting
 // Dependencies: [8740, 9202, 17346, 8853, 17350, 1113, 17356, 1196, 12406, 2]
 // Exports: onObscuredContentNonFriendsDmOnPress, useObscuredContentNonFriendsDmSettingValue
 
-// Module 18594 (ParentalControlsExplicitMediaFiltersNonFriendsDMsSetting)
+// Module 18596 (ParentalControlsExplicitMediaFiltersNonFriendsDMsSetting)
 import intl3 from "intl" /* 1113 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;
 import useParentalControlSettings from "useParentalControlSettings" /* 17346 */;

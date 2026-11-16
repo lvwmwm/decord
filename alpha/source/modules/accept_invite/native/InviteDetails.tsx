@@ -1,7 +1,7 @@
 // Module ID: 15079
 // Function ID: 15080
 // Name: InviteDetails
-// Dependencies: [32, 19, 17, 14829, 1407, 1388, 1072, 15080, 21, 5306, 575, 6961, 8841, 1187, 14982, 5372, 1113, 7723, 5929, 1414, 6020, 1256, 504, 15081, 7984, 5936, 6951, 2]
+// Dependencies: [32, 19, 17, 14829, 1407, 1388, 1072, 15080, 21, 5306, 575, 6951, 8841, 1187, 14982, 5362, 1113, 7723, 5919, 1414, 6010, 1256, 504, 15081, 7984, 5926, 6941, 2]
 // Exports: default
 
 // Module 15079 (InviteDetails)
@@ -10,9 +10,9 @@ import nativeDefault from "native" /* 575 */;
 import intl8 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import UserUtilsDefault from "UserUtils" /* 5372 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import LegacyTokens from "LegacyTokens" /* 6961 */;
+import UserUtilsDefault from "UserUtils" /* 5362 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import LegacyTokens from "LegacyTokens" /* 6951 */;
 import GuildBadgeDefault from "GuildBadge" /* 7723 */;
 import InviteTypeUtils from "InviteTypeUtils" /* 8841 */;
 import GuildInviteIconDefault from "GuildInviteIcon" /* 14982 */;
@@ -190,7 +190,7 @@ function InviteJoinContext(invite) {
     const format3 = intl7.format;
     let obj2 = { username: obj11.getFormattedName(invite.inviter) };
     const Quj7HX = tmp3(1113).t.Quj7HX;
-    obj11 = isGuildMember(5372);
+    obj11 = isGuildMember(5362);
     format3Result = format3(Quj7HX, obj2);
   } else {
     const tmp3Result = invite(8841);
@@ -202,7 +202,7 @@ function InviteJoinContext(invite) {
           const format2 = intl6.format;
           let obj3 = { username: obj9.getFormattedName(invite.inviter) };
           const Lu4h18 = tmp3(1113).t.Lu4h18;
-          obj9 = isGuildMember(5372);
+          obj9 = isGuildMember(5362);
           format2Result = format2(Lu4h18, obj3);
         }
         format3Result = format2Result;
@@ -217,7 +217,7 @@ function InviteJoinContext(invite) {
           const formatToPlainString = intl4.formatToPlainString;
           const obj4 = { username: obj7.getFormattedName(invite.target_user) };
           const x2L32Q = tmp3(1113).t.x2L32Q;
-          obj7 = isGuildMember(5372);
+          obj7 = isGuildMember(5362);
           format3Result = formatToPlainString(x2L32Q, obj4);
         }
       }
@@ -241,7 +241,7 @@ function InviteJoinContext(invite) {
           const format = intl2.format;
           const obj6 = { username: obj5.getFormattedName(invite.inviter) };
           const spU2mI = tmp3(1113).t.spU2mI;
-          obj5 = isGuildMember(5372);
+          obj5 = isGuildMember(5362);
           format3Result = format(spU2mI, obj6);
         }
       }
@@ -254,14 +254,14 @@ function InviteJoinContext(invite) {
     tmp22 = null;
     const tmp3Result4 = invite(8841);
     if (!tmp3Result4.isFriendInvite(invite)) {
-      const obj10 = { style: tmp.inviterIconWrapper, children: closure_12(isGuildMember(6020), obj12) };
+      const obj10 = { style: tmp.inviterIconWrapper, children: closure_12(isGuildMember(6010), obj12) };
       obj12 = { source: memo, style: tmp.inviterIcon };
       tmp22 = closure_12(tmp21, obj10);
     }
   }
   items1 = [tmp22, ];
   const obj13 = { style: tmp.inviteJoinText, variant: "body-sm/normal", color: "text-default", children: format3Result };
-  items1[1] = closure_12(invite(5929).Text, obj13);
+  items1[1] = closure_12(invite(5919).Text, obj13);
   return tmp20(View, obj8);
 }
 function InviteMemberCounts(invite) {
@@ -422,7 +422,7 @@ export default function InviteDetails(invite) {
   let tmp10Result;
   if (null != userAvatarSource) {
     const obj13 = { source: userAvatarSource, variant: "entity" };
-    tmp10Result = tmp10(tmp4(5936).Button.Icon, obj13);
+    tmp10Result = tmp10(tmp4(5926).Button.Icon, obj13);
   }
   if (null != stateFromStores) {
     const intl = tmp4(1113).intl;
@@ -460,11 +460,11 @@ export default function InviteDetails(invite) {
     _undefined(constants.ACCEPT);
     importDefault();
   }
-  const ButtonGroup = tmp4(6951).ButtonGroup;
+  const ButtonGroup = tmp4(6941).ButtonGroup;
   const items4 = [, ];
   const obj15 = { icon: tmp10Result, variant: "primary", size: "lg", text: tmp24, accessibilityLabel: stringResult, onPress: handleAcceptInvitePress, loading: tmp3 === constants3.ACCEPT, disabled: tmp3 === constants3.ACCEPT };
-  items4[0] = closure_12(invite(5936).Button, obj15);
-  const Button = tmp4(5936).Button;
+  items4[0] = closure_12(invite(5926).Button, obj15);
+  const Button = tmp4(5926).Button;
   const intl4 = tmp4(1113).intl;
   const string = intl4.string;
   const t = tmp4(1113).t;

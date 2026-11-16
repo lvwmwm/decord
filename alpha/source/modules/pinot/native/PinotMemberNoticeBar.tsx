@@ -1,7 +1,7 @@
 // Module ID: 12349
 // Function ID: 12350
 // Name: PinotMemberNoticeBar
-// Dependencies: [19, 17, 1072, 21, 5306, 575, 12344, 6012, 2188, 5929, 1113, 3385, 7428, 7549, 2]
+// Dependencies: [19, 17, 1072, 21, 5306, 575, 12344, 6002, 2188, 5919, 1113, 3385, 7428, 7549, 2]
 // Exports: PinotMemberNoticeBar
 
 // Module 12349 (PinotMemberNoticeBar)
@@ -9,8 +9,8 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import LinkingDefault from "Linking" /* 6012 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import LinkingDefault from "Linking" /* 6002 */;
 import PinotAnalytics from "PinotAnalytics" /* 12344 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -64,7 +64,7 @@ export function PinotMemberNoticeBar(channel) {
   let obj = { style: tmp.underlay, children: closure_7(View, obj2) };
   obj2 = { style: tmp.bar, children: items1 };
   let obj3 = { variant: "body-sm/normal", color: "text-default", style: tmp.text, children: intl.format(onDismiss(3385).Jry6Gr, obj4) };
-  const Text = channel(5929).Text;
+  const Text = channel(5919).Text;
   intl = channel(1113).intl;
   obj4 = {
     learnMoreHook(children, arg1) {

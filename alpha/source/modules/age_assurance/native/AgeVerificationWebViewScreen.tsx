@@ -1,16 +1,16 @@
 // Module ID: 8215
 // Function ID: 8216
 // Name: AgeVerificationWebViewScreen
-// Dependencies: [32, 19, 17, 6832, 8191, 21, 3, 5306, 575, 5492, 6830, 8204, 6012, 8216, 1113, 3321, 1380, 7418, 2]
+// Dependencies: [32, 19, 17, 6822, 8191, 21, 3, 5306, 575, 5482, 6820, 8204, 6002, 8216, 1113, 3321, 1380, 7418, 2]
 // Exports: default
 
 // Module 8215 (AgeVerificationWebViewScreen)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5492 */;
-import LinkingDefault from "Linking" /* 6012 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 6832 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5482 */;
+import LinkingDefault from "Linking" /* 6002 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 6822 */;
 import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 8204 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -30,7 +30,7 @@ let obj3;
 let rect;
 let tmp;
 let unpackModuleId;
-const AgeVerificationUtils = tmp(6830);
+const AgeVerificationUtils = tmp(6820);
 let react = react_mod;
 const View = react_native.View;
 let closure_6 = AgeVerificationConstants.AGE_VERIFICATION_MODAL_KEY;

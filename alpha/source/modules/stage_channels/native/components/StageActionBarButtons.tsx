@@ -1,7 +1,7 @@
 // Module ID: 12934
 // Function ID: 12935
 // Name: StageActionBarButtons
-// Dependencies: [32, 19, 17, 5307, 7015, 12935, 6906, 1072, 21, 5306, 575, 12729, 1113, 12936, 6909, 504, 12937, 12938, 12939, 12940, 10856, 12942, 12943, 12295, 12944, 6903, 10583, 7918, 6949, 6943, 5552, 12945, 2121, 12960, 12961, 12963, 12968, 12969, 11952, 12971, 11009, 8069, 12972, 1655, 5939, 12909, 8106, 8018, 7678, 8445, 7428, 1187, 12973, 2]
+// Dependencies: [32, 19, 17, 5307, 7015, 12935, 6896, 1072, 21, 5306, 575, 12729, 1113, 12936, 6899, 504, 12937, 12938, 12939, 12940, 10856, 12942, 12943, 12295, 12944, 6893, 10583, 7918, 6939, 6933, 5542, 12945, 2121, 12960, 12961, 12963, 12968, 12969, 11952, 12971, 11009, 8069, 12972, 1655, 5929, 12909, 8106, 8018, 7678, 8445, 7428, 1187, 12973, 2]
 // Exports: AnimatedStartStagePrompt, ChatButton, ContinueToStagePrompt, DisconnectStageButton, JoinStagePrompt, MoveToAudienceButton, MusicMuteButton, RequestToSpeakButton, RequestToSpeakListButton
 
 // Module 12934 (StageActionBarButtons)
@@ -13,11 +13,11 @@ import intl3 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import _mod1655 from "module_1655" /* 1655 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import spring_spring from "spring/spring" /* 5939 */;
-import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 6903 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 6906 */;
-import StageChannelActionCreators from "StageChannelActionCreators" /* 6909 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import spring_spring from "spring/spring" /* 5929 */;
+import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 6893 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 6896 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 6899 */;
 import Pressables from "Pressables" /* 7428 */;
 import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7678 */;
 import _mod8106 from "module_8106" /* 8106 */;
@@ -259,8 +259,8 @@ export function RequestToSpeakListButton(channel) {
     obj.openLazy(asyncRequire(12945, dependencyMap.paths), closure_10, obj2);
   }
   analyticsLocations = analyticsLocations(7918)().analyticsLocations;
-  let obj = channel(6949);
-  const stageParticipantsCount = obj.useStageParticipantsCount(channel.id, channel(6943).StageChannelParticipantNamedIndex.REQUESTED_TO_SPEAK_ONLY);
+  let obj = channel(6939);
+  const stageParticipantsCount = obj.useStageParticipantsCount(channel.id, channel(6933).StageChannelParticipantNamedIndex.REQUESTED_TO_SPEAK_ONLY);
   if (stageParticipantsCount > 0) {
     let obj2 = { accessibilityLabel: intl.formatToPlainString(channel(1113).t.OhK58v, obj3), source: analyticsLocations(12960), imageStyle: obj4, IconComponent: channel(12961).HandRequestSpeakListIcon, onPress: handleOpenAudienceList, notifications: stageParticipantsCount, isSmallSize };
     const NotifiedActionButton = CallBarActionAll.NotifiedActionButton;

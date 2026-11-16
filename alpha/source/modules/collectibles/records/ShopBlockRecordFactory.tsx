@@ -1,11 +1,11 @@
 // Module ID: 8514
 // Function ID: 8515
 // Name: ShopBlockRecordFactory
-// Dependencies: [8515, 8516, 8519, 8520, 8521, 8522, 8523, 8524, 5991, 2]
+// Dependencies: [8515, 8516, 8519, 8520, 8521, 8522, 8523, 8524, 5981, 2]
 // Exports: parseNonHeroShopBlock
 
 // Module 8514 (ShopBlockRecordFactory)
-import ShopBlockType from "ShopBlockType" /* 5991 */;
+import ShopBlockType from "ShopBlockType" /* 5981 */;
 import CountdownTimerBlockRecord2 from "CountdownTimerBlockRecord" /* 8515 */;
 import FeaturedBlockRecord2 from "FeaturedBlockRecord" /* 8516 */;
 import FeedBlockRecord2 from "FeedBlockRecord" /* 8519 */;

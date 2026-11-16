@@ -1,7 +1,7 @@
 // Module ID: 9306
 // Function ID: 9307
 // Name: ReferralProgramUtils
-// Dependencies: [1231, 9293, 5152, 1089, 1113, 5348, 5139, 11, 5140, 9307, 504, 2]
+// Dependencies: [1231, 9293, 5152, 1089, 1113, 5338, 5139, 11, 5140, 9307, 504, 2]
 // Exports: getReferralTrialOfferExpirationCopy, isReferralProgramBadgeAcknowledged, markReferralProgramBadgeAcknowledged, markReferralProgramEntrypointBadgeAcknowledged, markReferralProgramPopoverSeen, useIsReferralProgramBadgeShowable, useIsReferralProgramEntrypointBadgeAcknowledged, useIsReferralProgramPopoverShowable
 
 // Module 9306 (ReferralProgramUtils)
@@ -11,7 +11,7 @@ import intl4 from "intl" /* 1113 */;
 import dismissible_content from "dismissible_content" /* 5139 */;
 import DismissibleContentUtils from "DismissibleContentUtils" /* 5140 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5348 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5338 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import ReferralTrialStore from "ReferralTrialStore" /* 9293 */;
 import size from "module_2" /* 2 */;

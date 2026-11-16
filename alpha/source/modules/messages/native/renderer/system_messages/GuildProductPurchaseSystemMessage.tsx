@@ -1,7 +1,7 @@
 // Module ID: 9265
 // Function ID: 9266
 // Name: GuildProductPurchaseSystemMessage
-// Dependencies: [5249, 5155, 1072, 6749, 9188, 1417, 1414, 9223, 9190, 1113, 9192, 2]
+// Dependencies: [5249, 5155, 1072, 6739, 9188, 1417, 1414, 9223, 9190, 1113, 9192, 2]
 // Exports: createGuildProductPurchaseSystemMessage
 
 // Module 9265 (GuildProductPurchaseSystemMessage)
@@ -9,7 +9,7 @@ import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import AvatarUtils from "AvatarUtils" /* 1414 */;
 import utils_AvatarUtils from "utils/AvatarUtils" /* 1417 */;
-import useMessageAuthor from "useMessageAuthor" /* 6749 */;
+import useMessageAuthor from "useMessageAuthor" /* 6739 */;
 import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 9188 */;
 import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 9190 */;
 import createCommonMessageDefault from "createCommonMessage" /* 9192 */;

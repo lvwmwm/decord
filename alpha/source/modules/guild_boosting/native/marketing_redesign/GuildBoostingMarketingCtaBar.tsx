@@ -1,7 +1,7 @@
 // Module ID: 16000
 // Function ID: 16001
 // Name: GuildBoostingMarketingCtaBar
-// Dependencies: [32, 19, 17, 1388, 9236, 1072, 1390, 21, 1089, 5306, 575, 1187, 1655, 5548, 7918, 7937, 563, 15328, 9317, 9241, 2174, 1401, 15388, 15390, 5893, 16001, 5929, 1113, 7720, 7428, 15375, 10799, 16004, 16005, 5936, 6952, 11661, 16006, 9579, 2]
+// Dependencies: [32, 19, 17, 1388, 9236, 1072, 1390, 21, 1089, 5306, 575, 1187, 1655, 5538, 7918, 7937, 563, 15328, 9317, 9241, 2174, 1401, 15388, 15390, 5883, 16001, 5919, 1113, 7720, 7428, 15375, 10799, 16004, 16005, 5926, 6942, 11661, 16006, 9579, 2]
 // Exports: default
 
 // Module 16000 (GuildBoostingMarketingCtaBar)
@@ -10,8 +10,8 @@ import nativeDefault from "native" /* 575 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5548 */;
-import BoostingActionCreators from "BoostingActionCreators" /* 6952 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import BoostingActionCreators from "BoostingActionCreators" /* 6942 */;
 import openPremiumModalDefault from "openPremiumModal" /* 9579 */;
 import utils_openGiftModal from "utils/openGiftModal" /* 11661 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -175,7 +175,7 @@ export default function GuildBoostingMarketingCtaBar(premiumGroupRole) {
   }
   const obj7 = { onLayout, angle: 160, angleCenter: { x: 0.5, y: 0.5 }, colors: items4, locations: [0, 0.3221, 0.429, 0.7606, 1], useAngle: true, style: tmp.gradient, children: closure_13(tmp4Result3, obj8) };
   items4 = [, , , , ];
-  const tmp4Result = first(5893);
+  const tmp4Result = first(5883);
   items4[0] = first(575).unsafe_rawColors.PREMIUM_TIER_0_HEADER_GRADIENT_1;
   items4[1] = first(575).unsafe_rawColors.PREMIUM_TIER_0_HEADER_GRADIENT_2;
   items4[2] = first(575).unsafe_rawColors.PREMIUM_TIER_0_HEADER_GRADIENT_3;
@@ -183,11 +183,11 @@ export default function GuildBoostingMarketingCtaBar(premiumGroupRole) {
   items4[4] = first(575).unsafe_rawColors.PREMIUM_TIER_0_HEADER_GRADIENT_5;
   obj8 = { angle: 0, angleCenter: { x: 0.5, y: 0.5 }, colors: ["rgba(0, 0, 0, 0.7)", "rgba(0, 0, 0, 0)"], locations: [0.12, 0.5], useAngle: true, style: tmp.gradient, children: items5 };
   items5 = [, , , ];
-  tmp4Result3 = first(5893);
+  tmp4Result3 = first(5883);
   items5[0] = closure_12(first(16001), { guild });
   const obj9 = { style: tmp.headerContent, children: items6 };
   const obj10 = { style: tmp.heading, color: "text-overlay-light", variant: "display-sm", children: intl.string(guild(1113).t["AF+Tyh"]) };
-  const Heading = tmp7(5929).Heading;
+  const Heading = tmp7(5919).Heading;
   intl = tmp7(1113).intl;
   items6 = [closure_12(Heading, obj10), , , , ];
   const obj11 = { style: tmp.guildIcon, textStyle: tmp.guildIconText, guild, size: guild(7720).GuildIconSizes.LARGE };
@@ -203,7 +203,7 @@ export default function GuildBoostingMarketingCtaBar(premiumGroupRole) {
   const PressableOpacity = tmp7(7428).PressableOpacity;
   items7 = [, ];
   const obj13 = { style: tmp.guildName, color: "text-overlay-light", variant: "body-md/semibold", children: guild.name };
-  items7[0] = closure_12(guild(5929).Text, obj13);
+  items7[0] = closure_12(guild(5919).Text, obj13);
   const obj15 = { style: items8, children: items9 };
   items8 = [tmp12, tmp.totalBoostCountWrapper];
   const obj14 = { style: tmp.guildBoostCountWrapper, children: items10 };
@@ -212,7 +212,7 @@ export default function GuildBoostingMarketingCtaBar(premiumGroupRole) {
   const Icon = tmp7(1187).Icon;
   items9 = [closure_12(Icon, obj16), ];
   const obj17 = { style: tmp.guildBoostCount, accessibilityRole: "header", variant: "body-sm/semibold", color: "text-overlay-light", children: intl2.format(guild(1113).t["pob/cL"], { subscriptions: total }) };
-  const Text = tmp7(5929).Text;
+  const Text = tmp7(5919).Text;
   intl2 = tmp7(1113).intl;
   items9[1] = closure_12(Text, obj17);
   items10 = [closure_13(View, obj15), ];
@@ -222,7 +222,7 @@ export default function GuildBoostingMarketingCtaBar(premiumGroupRole) {
   obj19 = { style: items12, variant: "body-sm/semibold", color: "text-overlay-light", children: intl3.format(guild(1113).t.xXb78j, { numSubscriptions: memo }) };
   items12 = [, ];
   ({ guildBoostCount: arr13[0], guildBoostCurrentUserCount: arr13[1] } = tmp);
-  Text2 = tmp7(5929).Text;
+  Text2 = tmp7(5919).Text;
   intl3 = tmp7(1113).intl;
   items10[1] = closure_12(View2, obj18);
   items7[1] = closure_13(memo, obj14);
@@ -241,7 +241,7 @@ export default function GuildBoostingMarketingCtaBar(premiumGroupRole) {
   const obj23 = { style: items15, children: closure_12(Button, obj26) };
   items15 = [, ];
   ({ cta: arr16[0], ctaSecondary: arr16[1] } = tmp);
-  Button = tmp7(5936).Button;
+  Button = tmp7(5926).Button;
   const tmp22 = closure_13;
   if (isPremiumResult) {
     const obj24 = {

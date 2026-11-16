@@ -1,7 +1,7 @@
 // Module ID: 9460
 // Function ID: 9461
 // Name: useWishlistNUXActionSheet
-// Dependencies: [19, 7352, 502, 5152, 504, 5348, 5139, 5140, 5552, 9461, 2121, 2]
+// Dependencies: [19, 7352, 502, 5152, 504, 5338, 5139, 5140, 5542, 9461, 2121, 2]
 // Exports: default, useHasNeverWishlisted
 
 // Module 9460 (useWishlistNUXActionSheet)
@@ -14,9 +14,9 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require;
 
-const f98200 = () => id.getId();
-const f98201 = () => UserProfileStore.getFirstWishlistId(closure_0);
-const f98202 = () => {
+const f98213 = () => id.getId();
+const f98214 = () => UserProfileStore.getFirstWishlistId(closure_0);
+const f98215 = () => {
   const userProfile = UserProfileStore.getUserProfile(closure_0);
   return null != userProfile && userProfile.fetchEndedAt > 0;
 };
@@ -29,13 +29,13 @@ export default function useWishlistNUXActionSheet() {
   let paths;
   let obj = require("get initialized");
   const items = [AuthenticationStore];
-  _require = obj.useStateFromStores(items, f98200);
+  _require = obj.useStateFromStores(items, f98213);
   let obj2 = require("get initialized");
   const items1 = [UserProfileStore];
-  const stateFromStores = obj2.useStateFromStores(items1, f98201);
+  const stateFromStores = obj2.useStateFromStores(items1, f98214);
   let obj3 = require("get initialized");
   const items2 = [UserProfileStore];
-  let stateFromStores1 = obj3.useStateFromStores(items2, f98202) && null == stateFromStores;
+  let stateFromStores1 = obj3.useStateFromStores(items2, f98215) && null == stateFromStores;
   const useIsDismissibleContentDismissed_UNSAFE = require("DismissibleContentUnsafeUtils").useIsDismissibleContentDismissed_UNSAFE;
   require("DismissibleContentUnsafeUtils");
   if (stateFromStores1) {
@@ -60,12 +60,12 @@ export function useHasNeverWishlisted() {
   let closure_0;
   const items = [AuthenticationStore];
   const obj = require("get initialized");
-  _require = obj.useStateFromStores(items, f98200);
+  _require = obj.useStateFromStores(items, f98213);
   const items1 = [UserProfileStore];
   const obj2 = require("get initialized");
-  const stateFromStores = obj2.useStateFromStores(items1, f98201);
+  const stateFromStores = obj2.useStateFromStores(items1, f98214);
   const items2 = [UserProfileStore];
   const obj3 = require("get initialized");
-  const stateFromStores1 = obj3.useStateFromStores(items2, f98202) && null == stateFromStores;
+  const stateFromStores1 = obj3.useStateFromStores(items2, f98215) && null == stateFromStores;
   return stateFromStores1;
 }

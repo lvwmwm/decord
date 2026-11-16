@@ -1,7 +1,7 @@
 // Module ID: 10428
 // Function ID: 10429
 // Name: NitroCoinStackSpotIllustration
-// Dependencies: [19, 21, 10429, 10430, 10431, 7755, 6020, 2]
+// Dependencies: [19, 21, 10429, 10430, 10431, 7755, 6010, 2]
 // Exports: NitroCoinStackSpotIllustration
 
 // Module 10428 (NitroCoinStackSpotIllustration)

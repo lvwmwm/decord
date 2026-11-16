@@ -1,7 +1,7 @@
 // Module ID: 9111
 // Function ID: 9112
 // Name: ForumPostMediaUtils
-// Dependencies: [19, 8871, 5155, 6372, 1388, 1072, 1090, 6361, 5131, 1406, 1381, 1255, 6376, 2119, 6383, 11, 2]
+// Dependencies: [19, 8871, 5155, 6362, 1388, 1072, 1090, 6351, 5131, 1406, 1381, 1255, 6366, 2119, 6373, 11, 2]
 // Exports: getEmbedColor, isValidImageAttachment, isValidVideoAttachment, messageContainsGifOrVideo, shouldShowAddMediaToOriginalPostModal, useFindFirstMediaProperties, useFirstMediaIsEmbed, useForumPostComponentsMedia, useForumPostMediaThumbnail
 
 // Module 9111 (ForumPostMediaUtils)
@@ -11,12 +11,12 @@ import GlobalUtils from "GlobalUtils" /* 1255 */;
 import URLUtilsDefault from "URLUtils" /* 1381 */;
 import FlagUtils from "FlagUtils" /* 1406 */;
 import UserSettings from "UserSettings" /* 5131 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 6361 */;
-import InteractionComponentUtils from "InteractionComponentUtils" /* 6376 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 6351 */;
+import InteractionComponentUtils from "InteractionComponentUtils" /* 6366 */;
 import react from "react" /* 19 */;
 import ThreadMessageStore from "ThreadMessageStore" /* 8871 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
-import MessageStore from "MessageStore" /* 6372 */;
+import MessageStore from "MessageStore" /* 6362 */;
 import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import size_mod from "module_2" /* 2 */;

@@ -1,14 +1,14 @@
 // Module ID: 11347
 // Function ID: 11348
 // Name: GIFPickerHeader
-// Dependencies: [32, 19, 17, 1072, 21, 5306, 575, 11342, 7640, 1655, 5548, 5551, 7988, 7827, 1113, 7825, 11340, 7428, 10772, 5929, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5306, 575, 11342, 7640, 1655, 5538, 5541, 7988, 7827, 1113, 7825, 11340, 7428, 10772, 5919, 2]
 
 // Module 11347 (GIFPickerHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl6 from "intl" /* 1113 */;
-import timing_timing from "timing/timing" /* 5548 */;
+import timing_timing from "timing/timing" /* 5538 */;
 import InputTypes from "InputTypes" /* 7640 */;
 import GifProvider from "GifProvider" /* 11340 */;
 import gif_picker_GIFPickerUtils from "gif_picker/GIFPickerUtils" /* 11342 */;
@@ -27,7 +27,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp2;
-const timingPresets = tmp2(5551);
+const timingPresets = tmp2(5541);
 function FavoritesSearch(onQueryChange) {
   let IconButton;
   let accessibilityElementsHidden;
@@ -207,7 +207,7 @@ const memoResult = react.memo(function GIFPickerHeader(arg0) {
     const obj6 = { color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE, size: "sm" };
     const ChevronLargeLeftIcon = tmp2(10772).ChevronLargeLeftIcon;
     items = [metroImportDefault(ChevronLargeLeftIcon, obj6), ];
-    const Text = tmp2(5929).Text;
+    const Text = tmp2(5919).Text;
     if (categoryType === GIFPickerResultTypes.TRENDING_GIFS) {
       const intl3 = tmp2(1113).intl;
       stringResult = intl3.string(tmp2(1113).t.TsWCdW);

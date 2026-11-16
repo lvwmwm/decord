@@ -1,7 +1,7 @@
 // Module ID: 7278
 // Function ID: 7279
 // Name: useGuildShopPreviewVisible
-// Dependencies: [5238, 1072, 5348, 5139, 563, 7273, 2]
+// Dependencies: [5238, 1072, 5338, 5139, 563, 7273, 2]
 // Exports: useGuildShopPreviewVisible
 
 // Module 7278 (useGuildShopPreviewVisible)

@@ -1,13 +1,13 @@
 // Module ID: 12145
 // Function ID: 12146
 // Name: UserProfileWidgetSuggestedGames
-// Dependencies: [19, 17, 502, 8479, 21, 575, 5306, 12110, 1113, 12112, 12137, 6331, 12104, 12090, 5315, 8546, 5929, 7988, 10866, 2]
+// Dependencies: [19, 17, 502, 8479, 21, 575, 5306, 12110, 1113, 12112, 12137, 6321, 12104, 12090, 5315, 8546, 5919, 7988, 10866, 2]
 // Exports: default
 
 // Module 12145 (UserProfileWidgetSuggestedGames)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import react_native from "react-native" /* 6331 */;
+import react_native from "react-native" /* 6321 */;
 import Constants from "Constants" /* 8479 */;
 import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8546 */;
 import WidgetUtils from "WidgetUtils" /* 12090 */;

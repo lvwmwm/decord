@@ -1,15 +1,15 @@
 // Module ID: 10929
 // Function ID: 10930
 // Name: DetailedGuildIdentityUserRow
-// Dependencies: [19, 17, 1388, 21, 5306, 575, 6351, 5372, 10930, 1187, 504, 8106, 7443, 2]
+// Dependencies: [19, 17, 1388, 21, 5306, 575, 6341, 5362, 10930, 1187, 504, 8106, 7443, 2]
 
 // Module 10929 (DetailedGuildIdentityUserRow)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import UserUtilsDefault from "UserUtils" /* 5372 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6351 */;
+import UserUtilsDefault from "UserUtils" /* 5362 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6341 */;
 import DiscordTagDefault from "DiscordTag" /* 10930 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;
@@ -51,7 +51,7 @@ const memoResult = react.memo(function DetailedGuildIdentityUser(contentHeight) 
     let tmp8Result = null;
     const obj3 = { style: tmp.mainIdentity, children: items1 };
     if (hasAvatarForGuildResult) {
-      const obj4 = { size: native.AvatarSizes.SIZE_16, style: tmp.primaryAvatar, user, guildId: "Path" };
+      const obj4 = { size: native.AvatarSizes.SIZE_16, style: tmp.primaryAvatar, user, guildId: "Array" };
       const Avatar = native.Avatar;
       tmp8Result = tmp8(Avatar, obj4);
     }

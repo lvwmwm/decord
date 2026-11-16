@@ -1,10 +1,10 @@
-// Module ID: 18130
-// Function ID: 18131
+// Module ID: 18132
+// Function ID: 18133
 // Name: UserSettingsCommunityNotifications
-// Dependencies: [19, 11013, 21, 5306, 575, 504, 11, 8106, 6337, 7746, 7954, 1113, 5136, 2]
+// Dependencies: [19, 11013, 21, 5306, 575, 504, 11, 8106, 6327, 7746, 7954, 1113, 5136, 2]
 // Exports: default
 
-// Module 18130 (UserSettingsCommunityNotifications)
+// Module 18132 (UserSettingsCommunityNotifications)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
@@ -79,7 +79,7 @@ export default function UserSettingsCommunityNotifications() {
           return hasOwnProperty(TableRowGroup, obj, item);
         })
     };
-    Stack = tmp2(6337).Stack;
+    Stack = tmp2(6327).Stack;
     tmp5 = closure_4(Form, obj3);
   }
   return tmp5;

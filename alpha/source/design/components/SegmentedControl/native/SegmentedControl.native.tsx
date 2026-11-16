@@ -1,7 +1,7 @@
 // Module ID: 11251
 // Function ID: 11252
 // Name: SegmentedControl
-// Dependencies: [19, 17, 21, 5306, 575, 5902, 1655, 5939, 11252, 5598, 1708, 1380, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 5892, 1655, 5929, 11252, 5588, 1708, 1380, 2]
 // Exports: SegmentedControl
 
 // Module 11251 (SegmentedControl)

@@ -1,7 +1,7 @@
 // Module ID: 15849
 // Function ID: 15850
 // Name: UserProfilePrivacyNotice
-// Dependencies: [32, 19, 17, 1072, 5152, 21, 5306, 575, 1196, 1113, 12029, 5131, 5139, 9560, 5929, 8604, 6037, 7428, 7549, 2]
+// Dependencies: [32, 19, 17, 1072, 5152, 21, 5306, 575, 1196, 1113, 12029, 5131, 5139, 9560, 5919, 8604, 6027, 7428, 7549, 2]
 // Exports: default, useIsPrivacyNoticeVisible
 
 // Module 15849 (UserProfilePrivacyNotice)
@@ -13,8 +13,8 @@ import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
 import UserSettings from "UserSettings" /* 5131 */;
 import dismissible_content from "dismissible_content" /* 5139 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 6037 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 6027 */;
 import XSmallIcon from "XSmallIcon" /* 7549 */;
 import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 9560 */;
 import useUserIsTeen from "useUserIsTeen" /* 12029 */;
@@ -94,7 +94,7 @@ export default function UserProfilePrivacyNotice() {
     const obj4 = { style: tmp.icon, children: closure_7(CircleInformationIcon.CircleInformationIcon, { size: "xs", color: "icon-feedback-info" }) };
     items1 = [closure_7(View, obj4), , ];
     const obj5 = { style: tmp.text, variant: "body-sm/normal", color: "text-default", children: intl.format(dqQ7AN, obj6) };
-    const Text = tmp2(5929).Text;
+    const Text = tmp2(5919).Text;
     intl = tmp2(1113).intl;
     obj6 = { privacySettingsLink: callback };
     items1[1] = closure_7(Text, obj5);

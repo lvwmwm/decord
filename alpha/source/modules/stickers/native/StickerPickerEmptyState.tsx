@@ -1,7 +1,7 @@
 // Module ID: 11384
 // Function ID: 11385
 // Name: StickerPickerEmptyState
-// Dependencies: [32, 19, 17, 7010, 5134, 1072, 1390, 21, 5306, 11357, 11093, 7918, 7937, 504, 1256, 5929, 1113, 7428, 5554, 5555, 5936, 6020, 11214, 11378, 2]
+// Dependencies: [32, 19, 17, 7010, 5134, 1072, 1390, 21, 5306, 11357, 11093, 7918, 7937, 504, 1256, 5919, 1113, 7428, 5544, 5545, 5926, 6010, 11214, 11378, 2]
 // Exports: default
 
 // Module 11384 (StickerPickerEmptyState)
@@ -9,8 +9,8 @@ import react_native from "react-native" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
 import StickersConstants from "StickersConstants" /* 5134 */;
-import HapticUtils from "HapticUtils" /* 5554 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5555 */;
+import HapticUtils from "HapticUtils" /* 5544 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5545 */;
 import StickerDefault from "Sticker" /* 11093 */;
 import StickersHooks from "StickersHooks" /* 11357 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -130,7 +130,7 @@ export default function _default() {
   };
   Button = require("components/Button/Button").Button;
   obj9 = { source: analyticsLocations(11214), style: tmp.nitroWheel, resizeMode: "contain" };
-  tmp6 = analyticsLocations(6020);
+  tmp6 = analyticsLocations(6010);
   intl3 = require("intl").intl;
   items2[3] = closure_11(View, obj7);
   return closure_12(View, obj3);

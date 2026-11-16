@@ -1,15 +1,15 @@
 // Module ID: 14515
 // Function ID: 14516
 // Name: CheckpointTag
-// Dependencies: [32, 19, 17, 6377, 21, 5306, 575, 8263, 6744, 5929, 2]
+// Dependencies: [32, 19, 17, 6367, 21, 5306, 575, 8263, 6734, 5919, 2]
 // Exports: default
 
 // Module 14515 (CheckpointTag)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import CheckpointConstants from "CheckpointConstants" /* 6377 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6744 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import CheckpointConstants from "CheckpointConstants" /* 6367 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6734 */;
 import inlineStyles from "inlineStyles" /* 8263 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

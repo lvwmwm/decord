@@ -1,14 +1,14 @@
 // Module ID: 12259
 // Function ID: 12260
 // Name: UserProfileApplicationWidgetHeroImage
-// Dependencies: [19, 17, 1072, 21, 5306, 7533, 5893, 6020, 2]
+// Dependencies: [19, 17, 1072, 21, 5306, 7533, 5883, 6010, 2]
 // Exports: default
 
 // Module 12259 (UserProfileApplicationWidgetHeroImage)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
-import LinearGradientDefault from "LinearGradient" /* 5893 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import LinearGradientDefault from "LinearGradient" /* 5883 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import _modDef7533 from "module_7533" /* 7533 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

@@ -1,12 +1,12 @@
 // Module ID: 8472
 // Function ID: 8473
 // Name: openInstantInviteActionSheet
-// Dependencies: [5552, 8473, 2121, 1264, 2]
+// Dependencies: [5542, 8473, 2121, 1264, 2]
 // Exports: default
 
 // Module 8472 (openInstantInviteActionSheet)
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import size from "module_2" /* 2 */;
 
 let tmp3;

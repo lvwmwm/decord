@@ -1,15 +1,15 @@
 // Module ID: 8641
 // Function ID: 8642
 // Name: SensitiveMediaExplicitRedactionSettingsUtils
-// Dependencies: [1388, 5133, 1196, 5995, 6003, 5131, 8642, 2]
+// Dependencies: [1388, 5133, 1196, 5985, 5993, 5131, 8642, 2]
 // Exports: getExplicitContentSettingOrDefault, resolveSettingWithDefaultsForTeen, shouldRedactMessageMediaForForum, updateExplicitContentSetting
 
 // Module 8641 (SensitiveMediaExplicitRedactionSettingsUtils)
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
 import UserSettings from "UserSettings" /* 5131 */;
 import DMSafetyConstants from "DMSafetyConstants" /* 5133 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5995 */;
-import SettingsDefaultFeature from "SettingsDefaultFeature" /* 6003 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5985 */;
+import SettingsDefaultFeature from "SettingsDefaultFeature" /* 5993 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 

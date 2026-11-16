@@ -1,16 +1,16 @@
 // Module ID: 16980
 // Function ID: 16981
 // Name: commands/activities
-// Dependencies: [5, 6761, 1072, 6902, 16922, 7307, 16941, 7303, 8460, 7297, 7022, 7339, 8880, 8192, 12741, 6758, 2]
+// Dependencies: [5, 6751, 1072, 6892, 16922, 7307, 16941, 7303, 8460, 7297, 7022, 7339, 8880, 8192, 12741, 6748, 2]
 
 // Module 16980 (commands/activities)
-import NativePermissionConstants from "NativePermissionConstants" /* 6902 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 6892 */;
 import RPCErrorDefault from "RPCError" /* 7303 */;
 import OAuth2Scopes from "OAuth2Scopes" /* 7307 */;
 import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8460 */;
 import validateOpenInviteDialog from "validateOpenInviteDialog" /* 16941 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants_mod from "Constants" /* 6761 */;
+import Constants_mod from "Constants" /* 6751 */;
 import Constants_mod2 from "Constants" /* 1072 */;
 import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 16922 */;
 import size from "module_2" /* 2 */;

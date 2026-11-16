@@ -1,13 +1,13 @@
 // Module ID: 12109
 // Function ID: 12110
 // Name: UserProfileGameDetailsRow
-// Dependencies: [19, 17, 21, 5306, 12104, 575, 5944, 12110, 5929, 12111, 12115, 2153, 12116, 12118, 12114, 2]
+// Dependencies: [19, 17, 21, 5306, 12104, 575, 5934, 12110, 5919, 12111, 12115, 2153, 12116, 12118, 12114, 2]
 
 // Module 12109 (UserProfileGameDetailsRow)
 import nativeDefault from "native" /* 575 */;
 import StringUtils from "StringUtils" /* 2153 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import useFontScale from "useFontScale" /* 5944 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import useFontScale from "useFontScale" /* 5934 */;
 import UserProfileGameWidgetConstants from "UserProfileGameWidgetConstants" /* 12104 */;
 import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 12110 */;
 import useWidgetGamePressDefault from "useWidgetGamePress" /* 12114 */;
@@ -79,7 +79,7 @@ let closure_8 = react.memo(function UserProfileGameDetailsRowContent(coverWidth)
     num = num3;
   }
   let num4 = 2;
-  const Text = tmp6(5929).Text;
+  const Text = tmp6(5919).Text;
   if (compact) {
     num4 = 1;
   }

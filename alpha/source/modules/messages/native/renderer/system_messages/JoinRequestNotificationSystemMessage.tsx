@@ -1,15 +1,15 @@
 // Module ID: 9285
 // Function ID: 9286
 // Name: JoinRequestNotificationSystemMessage
-// Dependencies: [6933, 5350, 5177, 1388, 1072, 1113, 11, 9192, 2]
+// Dependencies: [6923, 5340, 5177, 1388, 1072, 1113, 11, 9192, 2]
 // Exports: createJoinRequestNotificationSystemMessage
 
 // Module 9285 (JoinRequestNotificationSystemMessage)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1072 */;
 import intl7 from "intl" /* 1113 */;
-import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6933 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5350 */;
+import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6923 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5340 */;
 import GuildStore from "GuildStore" /* 5177 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;

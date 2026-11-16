@@ -1,10 +1,10 @@
-// Module ID: 17920
-// Function ID: 17921
+// Module ID: 17922
+// Function ID: 17923
 // Name: SettingsAppearancePickerUtils
-// Dependencies: [19, 1083, 5544, 1241, 5304, 5303, 575, 1230, 5902, 1113, 2]
+// Dependencies: [19, 1083, 5534, 1241, 5304, 5303, 575, 1230, 5892, 1113, 2]
 // Exports: convertThemesToAnimatedThemes, useLaunchWelcomeSystemTheme
 
-// Module 17920 (SettingsAppearancePickerUtils)
+// Module 17922 (SettingsAppearancePickerUtils)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import intl2 from "intl" /* 1113 */;
@@ -12,7 +12,7 @@ import getSystemThemeDefault from "getSystemTheme" /* 1230 */;
 import ClientThemesTypes from "ClientThemesTypes" /* 1241 */;
 import ColorUtils from "ColorUtils" /* 5303 */;
 import utils_ColorDefault from "utils/Color" /* 5304 */;
-import MobileThemesUtils from "MobileThemesUtils" /* 5544 */;
+import MobileThemesUtils from "MobileThemesUtils" /* 5534 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -239,7 +239,7 @@ export function useLaunchWelcomeSystemTheme() {
   let token;
   let tmp = importDefault;
   const tmp4 = getSystemThemeDefault() === ThemeTypes.LIGHT ? ThemeTypes.LIGHT : ThemeTypes.DARK;
-  let obj = token(5902);
+  let obj = token(5892);
   token = obj.useToken(nativeDefault.colors.BACKGROUND_BASE_LOW, tmp4);
   let items = [token];
   return react.useMemo(() => {

@@ -1,13 +1,13 @@
 // Module ID: 9352
 // Function ID: 9353
 // Name: ChangeLogUtils
-// Dependencies: [2070, 9353, 6353, 9357, 9358, 6057, 2]
+// Dependencies: [2070, 9353, 6343, 9357, 9358, 6047, 2]
 // Exports: renderChangelogMessageMarkup
 
 // Module 9352 (ChangeLogUtils)
 import _modDef2070 from "module_2070" /* 2070 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 6057 */;
-import MarkupTextRuleDefault from "MarkupTextRule" /* 6353 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 6047 */;
+import MarkupTextRuleDefault from "MarkupTextRule" /* 6343 */;
 import MarkupListRuleDefault from "MarkupListRule" /* 9357 */;
 import MarkupSubtextRuleDefault from "MarkupSubtextRule" /* 9358 */;
 import size from "module_2" /* 2 */;

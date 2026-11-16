@@ -1,7 +1,7 @@
 // Module ID: 8155
 // Function ID: 8156
 // Name: CreateChannelTypeDescription
-// Dependencies: [19, 17, 8156, 1072, 21, 8157, 7690, 5929, 1113, 2]
+// Dependencies: [19, 17, 8156, 1072, 21, 8157, 7690, 5919, 1113, 2]
 // Exports: default
 
 // Module 8155 (CreateChannelTypeDescription)
@@ -48,7 +48,7 @@ export default function CreateChannelTypeDescription(guildId) {
   let tmp9 = null;
   if (tmp6) {
     ({ variant: "body-sm/normal", color: "text-subtle", children: intl.string(intl2.t["2Ab4Id"]) });
-    const Text = tmp(5929).Text;
+    const Text = tmp(5919).Text;
     intl = tmp(1113).intl;
     tmp9 = <View>{null}</View>;
   }

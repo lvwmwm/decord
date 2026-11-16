@@ -1,7 +1,7 @@
 // Module ID: 8171
 // Function ID: 8172
 // Name: AddMembersActionSheet
-// Dependencies: [5, 109, 32, 19, 17, 5218, 5212, 5177, 1388, 6912, 1083, 21, 5306, 575, 5243, 5913, 5958, 504, 8131, 5315, 1113, 1187, 5929, 8172, 5570, 7888, 8177, 7075, 8159, 8182, 5954, 6356, 8132, 6014, 5552, 5566, 7913, 5936, 2]
+// Dependencies: [5, 109, 32, 19, 17, 5218, 5212, 5177, 1388, 6902, 1083, 21, 5306, 575, 5243, 5903, 5948, 504, 8131, 5315, 1113, 1187, 5919, 8172, 5560, 7888, 8177, 7075, 8159, 8182, 5944, 6346, 8132, 6004, 5542, 5556, 7913, 5926, 2]
 // Exports: default
 
 // Module 8171 (AddMembersActionSheet)
@@ -10,7 +10,7 @@ import Constants from "Constants" /* 1083 */;
 import intl9 from "intl" /* 1113 */;
 import PermissionUtilsAll from "PermissionUtils" /* 5243 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5315 */;
-import RegexUtilsDefault from "RegexUtils" /* 5958 */;
+import RegexUtilsDefault from "RegexUtils" /* 5948 */;
 import GuildUtilsDefault from "GuildUtils" /* 7075 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
@@ -21,7 +21,7 @@ import GuildMemberStore from "GuildMemberStore" /* 5218 */;
 import GuildRoleStore from "GuildRoleStore" /* 5212 */;
 import GuildStore from "GuildStore" /* 5177 */;
 import UserStore from "UserStore" /* 1388 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 6912 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 6902 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
@@ -134,7 +134,7 @@ class AddMembersBody {
     const tmp8 = pendingAdditions;
     let obj2 = { isKeyboardAwareOnAndroid: !emptyStateInActionSheet };
     let tmp10 = importAll;
-    const insets = pendingAdditions(5913)(obj2).insets;
+    const insets = pendingAdditions(5903)(obj2).insets;
     let obj3 = PermissionUtilsAll;
     let canEveryoneRoleResult = obj3.canEveryoneRole(Permissions.ADMINISTRATOR, guild);
     const tmp12 = guild;
@@ -216,7 +216,7 @@ class AddMembersBody {
       return obj;
     });
     if (emptyStateInActionSheet) {
-      BottomSheetScrollView = tmp12(5570).BottomSheetScrollView;
+      BottomSheetScrollView = tmp12(5560).BottomSheetScrollView;
     } else {
       BottomSheetScrollView = num3;
     }
@@ -515,7 +515,7 @@ export default function AddMembersActionSheet(channel) {
     }
     return getGuild(guildId);
   });
-  let str = pendingAdditions(5954)(channel, true);
+  let str = pendingAdditions(5944)(channel, true);
   if (str == null) {
     str = "";
   }
@@ -527,7 +527,7 @@ export default function AddMembersActionSheet(channel) {
     let num = 0;
     const tmp11 = 0 === Object.keys(pendingAdditions).length;
     let tmp12 = closure_17;
-    const BottomSheet = tmp5(5566).BottomSheet;
+    const BottomSheet = tmp5(5556).BottomSheet;
     let obj2 = { title: intl3.string(tmp5(1113).t.dMJ3Y6), subtitle: str, trailing: null };
     const BottomSheetTitleHeader = tmp5(7913).BottomSheetTitleHeader;
     intl3 = tmp5(1113).intl;

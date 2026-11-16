@@ -1,14 +1,14 @@
 // Module ID: 11097
 // Function ID: 11098
 // Name: ForumThreadCreatedNotification
-// Dependencies: [19, 11026, 21, 5954, 1113, 6749, 6063, 6848, 11078, 2121, 11087, 1187, 5929, 2]
+// Dependencies: [19, 11026, 21, 5944, 1113, 6739, 6053, 6838, 11078, 2121, 11087, 1187, 5919, 2]
 // Exports: default
 
 // Module 11097 (ForumThreadCreatedNotification)
 import Fragment from "Fragment" /* 21 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import transitionToChannel from "transitionToChannel" /* 6063 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import transitionToChannel from "transitionToChannel" /* 6053 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import InAppNotificationConstants from "InAppNotificationConstants" /* 11026 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

@@ -1,7 +1,7 @@
 // Module ID: 11233
 // Function ID: 11234
 // Name: autocompleter/AutocompleteUtils
-// Dependencies: [19, 17, 5159, 5236, 5248, 1388, 1072, 11234, 6346, 21, 5306, 575, 5954, 9374, 6962, 5372, 8110, 2]
+// Dependencies: [19, 17, 5159, 5236, 5248, 1388, 1072, 11234, 6336, 21, 5306, 575, 5944, 9374, 6952, 5362, 8110, 2]
 // Exports: findAutoInsertOnSpaceToken, findWordStart, getAutocompleteResultText, getItemLayout, getItemSeparator, getMentionTextWithUser, getPrefix, getQuery, isSingleLineRun, isSpaceJustTypedAtCaret, isUnbrokenRun, isWhitespaceSeparatingBoundary
 
 // Module 11233 (autocompleter/AutocompleteUtils)
@@ -9,8 +9,8 @@ import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import ChannelRecord from "ChannelRecord" /* 5159 */;
-import useChannelName from "useChannelName" /* 5954 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6962 */;
+import useChannelName from "useChannelName" /* 5944 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6952 */;
 import FormDividerDefault from "FormDivider" /* 8110 */;
 import TimestampUtils from "TimestampUtils" /* 9374 */;
 import react from "react" /* 19 */;
@@ -19,7 +19,7 @@ import RelationshipStore from "RelationshipStore" /* 5248 */;
 import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 11234 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6346 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6336 */;
 import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ let metroImportDefault;
 let obj2;
 let tmp;
 let unpackModuleId;
-const UserUtilsDefault = tmp(5372);
+const UserUtilsDefault = tmp(5362);
 function AutocompleteFormDivider() {
   return jsx(FormDividerDefault, { style: closure_17().itemDivider });
 }
@@ -80,7 +80,7 @@ export function getAutocompleteResultText(type, channel, set) {
       combined = "" + tmp37 + user.tag;
     } else {
       const _HermesInternal8 = HermesInternal;
-      const tmp35Result = tmp35(5372);
+      const tmp35Result = tmp35(5362);
       combined = "" + tmp37 + tmp35Result.getUserTag(user);
     }
     return combined;

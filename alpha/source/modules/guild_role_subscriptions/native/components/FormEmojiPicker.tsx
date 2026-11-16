@@ -1,10 +1,10 @@
-// Module ID: 20753
-// Function ID: 20754
+// Module ID: 20756
+// Function ID: 20757
 // Name: FormEmojiPicker
-// Dependencies: [19, 1391, 21, 5252, 17859, 5256, 1113, 17858, 7443, 10409, 5929, 9543, 2]
+// Dependencies: [19, 1391, 21, 5252, 17861, 5256, 1113, 17860, 7443, 10409, 5919, 9543, 2]
 // Exports: default
 
-// Module 20753 (FormEmojiPicker)
+// Module 20756 (FormEmojiPicker)
 import Fragment from "Fragment" /* 21 */;
 import EmojiConstants from "EmojiConstants" /* 1391 */;
 import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9543 */;
@@ -32,7 +32,7 @@ export default function FormEmojiPicker(emoji) {
     }
     emojiId = convertSurrogateToName(emojiName, false);
   }
-  let obj = guildId(17859);
+  let obj = guildId(17861);
   const emojiByIdOrName = obj.useEmojiByIdOrName(guildId, emojiId);
   let allEmojiNamesString = null;
   if (null != emojiByIdOrName) {
@@ -42,7 +42,7 @@ export default function FormEmojiPicker(emoji) {
   const intl = tmp4(1113).intl;
   const stringResult = intl.string(guildId(1113).t.gXAN3P);
   if (null != emojiId) {
-    tmp10 = jsx(onChange(17858), { guildId, id: emojiId });
+    tmp10 = jsx(onChange(17860), { guildId, id: emojiId });
     tmp9 = jsx;
   } else {
     tmp9 = jsx;
@@ -78,7 +78,7 @@ export default function FormEmojiPicker(emoji) {
   const TableRow = tmp4(7443).TableRow;
   if (allEmojiNamesString == null) {
     const obj5 = { variant: "body-md/medium", color: "text-muted", children: stringResult };
-    allEmojiNamesString = tmp9(tmp4(5929).Text, obj5);
+    allEmojiNamesString = tmp9(tmp4(5919).Text, obj5);
   }
   return tmp9(TableRow, obj4);
 };

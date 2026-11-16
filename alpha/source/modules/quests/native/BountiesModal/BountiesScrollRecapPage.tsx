@@ -1,7 +1,7 @@
 // Module ID: 17592
 // Function ID: 17593
 // Name: BountiesScrollRecapPage
-// Dependencies: [19, 17, 5307, 21, 575, 5306, 1380, 6020, 17593, 9730, 17594, 1630, 504, 17595, 5929, 1113, 9442, 5936, 2]
+// Dependencies: [19, 17, 5307, 21, 575, 5306, 1380, 6010, 17593, 9730, 17594, 1630, 504, 17595, 5919, 1113, 9442, 5926, 2]
 // Exports: BountiesScrollRecapPage
 
 // Module 17592 (BountiesScrollRecapPage)
@@ -10,9 +10,9 @@ import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import components_Button_Button from "components/Button/Button" /* 5936 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import OrbsIcon from "OrbsIcon" /* 9442 */;
 import _modDef17593 from "module_17593" /* 17593 */;
 import _modDef17594 from "module_17594" /* 17594 */;

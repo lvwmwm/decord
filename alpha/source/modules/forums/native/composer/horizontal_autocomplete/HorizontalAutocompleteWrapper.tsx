@@ -1,7 +1,7 @@
 // Module ID: 11393
 // Function ID: 11394
 // Name: HorizontalAutocompleteWrapper
-// Dependencies: [19, 1072, 21, 11394, 11621, 11624, 1655, 5548, 7888, 2]
+// Dependencies: [19, 1072, 21, 11394, 11621, 11624, 1655, 5538, 7888, 2]
 // Exports: default
 
 // Module 11393 (HorizontalAutocompleteWrapper)

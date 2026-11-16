@@ -1,7 +1,7 @@
 // Module ID: 14816
 // Function ID: 14817
 // Name: ApplicationCommandItem
-// Dependencies: [19, 17, 5218, 11234, 21, 5306, 575, 5944, 504, 14640, 7428, 1113, 6020, 5929, 2]
+// Dependencies: [19, 17, 5218, 11234, 21, 5306, 575, 5934, 504, 14640, 7428, 1113, 6010, 5919, 2]
 // Exports: default
 
 // Module 14816 (ApplicationCommandItem)

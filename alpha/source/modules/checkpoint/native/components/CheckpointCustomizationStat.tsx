@@ -1,7 +1,7 @@
 // Module ID: 14533
 // Function ID: 14534
 // Name: CheckpointCustomizationStat
-// Dependencies: [19, 17, 14253, 6377, 21, 5306, 575, 6744, 13048, 1113, 3317, 8069, 3285, 10939, 14281, 7438, 8457, 504, 14506, 6747, 14515, 14479, 14271, 2]
+// Dependencies: [19, 17, 14253, 6367, 21, 5306, 575, 6734, 13048, 1113, 3317, 8069, 3285, 10939, 14281, 7438, 8457, 504, 14506, 6737, 14515, 14479, 14271, 2]
 // Exports: default
 
 // Module 14533 (CheckpointCustomizationStat)
@@ -10,9 +10,9 @@ import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef3285 from "module_3285" /* 3285 */;
 import _modDef3317 from "module_3317" /* 3317 */;
-import CheckpointConstants from "CheckpointConstants" /* 6377 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6744 */;
-import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6747 */;
+import CheckpointConstants from "CheckpointConstants" /* 6367 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6734 */;
+import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6737 */;
 import GameControllerIcon from "GameControllerIcon" /* 7438 */;
 import ChatIcon from "ChatIcon" /* 8069 */;
 import CalendarIcon from "CalendarIcon" /* 8457 */;

@@ -1,7 +1,7 @@
 // Module ID: 9385
 // Function ID: 9386
 // Name: transformEmbeds
-// Dependencies: [17, 1072, 9386, 9387, 6790, 9388, 1380, 8655, 6361, 1113, 1090, 9344, 5128, 8634, 8640, 6830, 9389, 2]
+// Dependencies: [17, 1072, 9386, 9387, 6780, 9388, 1380, 8655, 6351, 1113, 1090, 9344, 5128, 8634, 8640, 6820, 9389, 2]
 // Exports: default
 
 // Module 9385 (transformEmbeds)
@@ -11,9 +11,9 @@ import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
 import intl6 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import DateUtils from "DateUtils" /* 5128 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 6361 */;
-import EmbedUtils from "EmbedUtils" /* 6790 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6830 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 6351 */;
+import EmbedUtils from "EmbedUtils" /* 6780 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6820 */;
 import ObscuredMediaUtils from "ObscuredMediaUtils" /* 8634 */;
 import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 8640 */;
 import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8655 */;
@@ -191,7 +191,7 @@ export default function transformEmbeds(arg0) {
                               }
                               ({ proxyURL: proxyURL4, url: url4 } = type.video);
                               let tmp50 = url4;
-                              const isWebPlayerVideoUrl = tmp3(6361).isWebPlayerVideoUrl;
+                              const isWebPlayerVideoUrl = tmp3(6351).isWebPlayerVideoUrl;
                               MediaFormatTesters;
                               if (null != proxyURL4) {
                                 tmp50 = url4;

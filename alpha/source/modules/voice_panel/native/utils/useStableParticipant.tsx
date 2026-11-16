@@ -1,13 +1,13 @@
-// Module ID: 19988
-// Function ID: 19989
+// Module ID: 19990
+// Function ID: 19991
 // Name: useStableParticipant
-// Dependencies: [7016, 502, 2133, 1388, 5983, 558, 504, 6351, 7027, 11990, 2]
+// Dependencies: [7016, 502, 2133, 1388, 5973, 558, 504, 6341, 7027, 11990, 2]
 // Exports: default, isStableActivityParticipant, isStableParticipantWithUser, isStableStreamParticipant, isStableUserParticipant, stableParticipantHasVideo
 
-// Module 19988 (useStableParticipant)
+// Module 19990 (useStableParticipant)
 import shallowEqualDefault from "shallowEqual" /* 558 */;
-import CallConstants from "CallConstants" /* 5983 */;
-import NicknameUtils from "NicknameUtils" /* 6351 */;
+import CallConstants from "CallConstants" /* 5973 */;
+import NicknameUtils from "NicknameUtils" /* 6341 */;
 import useAvatarDecoration from "useAvatarDecoration" /* 7027 */;
 import participantHasVideoDefault from "participantHasVideo" /* 11990 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 7016 */;
@@ -57,7 +57,7 @@ export default function useStableParticipant(id, arg1, arg2) {
         const user = UserStore.getUser(tmp);
         if (null != user) {
           const id3 = user.id;
-          const obj3 = { type: ParticipantTypes.USER, id, user, selfVideo: false, canRenderVideo: false, userNick: obj5.getName(closure_2, tmp3, user), userAvatarDecoration: obj6.getAvatarDecoration(user, closure_2), streamId: "Promise", ringing: null, hasVideo: 44, isSelf: id3 === id1 };
+          const obj3 = { type: ParticipantTypes.USER, id, user, selfVideo: false, canRenderVideo: false, userNick: obj5.getName(closure_2, tmp3, user), userAvatarDecoration: obj6.getAvatarDecoration(user, closure_2), streamId: "Promise", ringing: null, hasVideo: 176.75, isSelf: id3 === id1 };
           id1 = AuthenticationStore.getId();
           obj5 = NicknameUtils;
           obj6 = useAvatarDecoration;

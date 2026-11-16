@@ -1,14 +1,14 @@
-// Module ID: 19575
-// Function ID: 19576
+// Module ID: 19577
+// Function ID: 19578
 // Name: PinotChannelDetailsLabel
-// Dependencies: [19, 21, 5306, 575, 12329, 1113, 3385, 7428, 6015, 5929, 2]
+// Dependencies: [19, 21, 5306, 575, 12329, 1113, 3385, 7428, 6005, 5919, 2]
 // Exports: PinotChannelDetailsLabel
 
-// Module 19575 (PinotChannelDetailsLabel)
+// Module 19577 (PinotChannelDetailsLabel)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef3385 from "module_3385" /* 3385 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 6015 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;

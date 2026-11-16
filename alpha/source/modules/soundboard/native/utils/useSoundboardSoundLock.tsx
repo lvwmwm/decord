@@ -1,14 +1,14 @@
-// Module ID: 19221
-// Function ID: 19222
+// Module ID: 19223
+// Function ID: 19224
 // Name: useSoundboardSoundLock
-// Dependencies: [19, 1388, 6371, 504, 13021, 2174, 9035, 9037, 6015, 1113, 9981, 2]
+// Dependencies: [19, 1388, 6361, 504, 13021, 2174, 9035, 9037, 6005, 1113, 9981, 2]
 // Exports: useSoundboardSoundLock
 
-// Module 19221 (useSoundboardSoundLock)
+// Module 19223 (useSoundboardSoundLock)
 import intl3 from "intl" /* 1113 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 6015 */;
-import SoundboardConstants from "SoundboardConstants" /* 6371 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
+import SoundboardConstants from "SoundboardConstants" /* 6361 */;
 import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 9035 */;
 import EntitlementFeatureNames from "EntitlementFeatureNames" /* 9037 */;
 import BoostGemIcon from "BoostGemIcon" /* 9981 */;

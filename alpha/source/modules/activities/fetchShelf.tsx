@@ -1,7 +1,7 @@
 // Module ID: 12736
 // Function ID: 12737
 // Name: fetchShelf
-// Dependencies: [5, 2165, 2143, 5154, 1072, 1255, 572, 6851, 1264, 2]
+// Dependencies: [5, 2165, 2143, 5154, 1072, 1255, 572, 6841, 1264, 2]
 // Exports: fetchShelf
 
 // Module 12736 (fetchShelf)

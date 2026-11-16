@@ -1,18 +1,18 @@
 // Module ID: 10631
 // Function ID: 10632
 // Name: SecureFramesPlatformUtils
-// Dependencies: [5155, 6071, 10628, 1072, 6848, 10632, 2121, 5552, 10642, 1113, 6269, 1187, 7262, 10645, 2]
+// Dependencies: [5155, 6061, 10628, 1072, 6838, 10632, 2121, 5542, 10642, 1113, 6259, 1187, 7262, 10645, 2]
 
 // Module 10631 (SecureFramesPlatformUtils)
 import intl3 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6269 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6259 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import safeTransitionToDefault from "safeTransitionTo" /* 7262 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6071 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
 import SecureFramesConstants from "SecureFramesConstants" /* 10628 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;

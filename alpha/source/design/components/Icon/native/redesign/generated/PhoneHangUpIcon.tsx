@@ -1,13 +1,13 @@
 // Module ID: 9104
 // Function ID: 9105
 // Name: PhoneHangUpIcon
-// Dependencies: [19, 21, 575, 6019, 9105, 2]
+// Dependencies: [19, 21, 575, 6009, 9105, 2]
 // Exports: PhoneHangUpIcon
 
 // Module 9104 (PhoneHangUpIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6019 */;
+import BaseIconImage2 from "BaseIconImage" /* 6009 */;
 import AssetRegistry from "AssetRegistry" /* 9105 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

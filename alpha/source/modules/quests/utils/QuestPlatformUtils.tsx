@@ -1,17 +1,17 @@
 // Module ID: 10170
 // Function ID: 10171
 // Name: QuestPlatformUtils
-// Dependencies: [5338, 1072, 8831, 5346, 10135, 10138, 5345, 7422, 1113, 1380, 10156, 6044, 10171, 8825, 1108, 10166, 6008, 10172, 10175, 1269, 15242, 15244, 15245, 8834, 8604, 572, 2]
+// Dependencies: [6954, 1072, 8831, 6962, 10135, 10138, 6961, 7422, 1113, 1380, 10156, 6034, 10171, 8825, 1108, 10166, 5998, 10172, 10175, 1269, 15242, 15244, 15245, 8834, 8604, 572, 2]
 // Exports: getExpiredCredentialsHintMessage, getPlatformTypeForHintMessage, isQuestSupportedOnWeb, openAdGameLinkDirectly, openAddConsoleConnectionModal, openAuthorizationConnectionModal, openConsoleConnectionSettings, openGameLinkDirectly, openSingleConsoleConnectionModal, supportedTaskPlatforms
 
 // Module 10170 (QuestPlatformUtils)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import QuestConstants from "QuestConstants" /* 5338 */;
-import AdCreativeType from "AdCreativeType" /* 5345 */;
-import FirstPartyQuestTaskTypes from "FirstPartyQuestTaskTypes" /* 5346 */;
-import BrowserManager from "BrowserManager" /* 6044 */;
+import BrowserManager from "BrowserManager" /* 6034 */;
+import QuestConstants from "QuestConstants" /* 6954 */;
+import AdCreativeType from "AdCreativeType" /* 6961 */;
+import FirstPartyQuestTaskTypes from "FirstPartyQuestTaskTypes" /* 6962 */;
 import authorizeConnectionDefault from "authorizeConnection" /* 7422 */;
 import openUserSettings from "openUserSettings" /* 8604 */;
 import AnalyticsActions from "AnalyticsActions" /* 8825 */;
@@ -39,7 +39,7 @@ function supportedConsoles(quest) {
     let tmp2 = require;
     if (FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.PLAY_ON_XBOX === item10013) {
       let arr = items.push(metroRequire.XBOX);
-    } else if (tmp2(5346).FirstPartyQuestTaskTypes.PLAY_ON_PLAYSTATION === item10013) {
+    } else if (tmp2(6962).FirstPartyQuestTaskTypes.PLAY_ON_PLAYSTATION === item10013) {
       let arr3 = items.push(metroRequire.PLAYSTATION);
     }
     continue;

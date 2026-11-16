@@ -1,7 +1,7 @@
 // Module ID: 16307
 // Function ID: 16308
 // Name: QRScannerModal
-// Dependencies: [32, 19, 17, 1072, 8741, 21, 1380, 16308, 575, 7587, 1630, 1381, 16283, 6848, 16298, 2121, 8604, 14221, 6012, 6269, 1113, 8451, 7863, 1187, 2]
+// Dependencies: [32, 19, 17, 1072, 8741, 21, 1380, 16308, 575, 7587, 1630, 1381, 16283, 6838, 16298, 2121, 8604, 14221, 6002, 6259, 1113, 8451, 7863, 1187, 2]
 // Exports: default
 
 // Module 16307 (QRScannerModal)
@@ -11,9 +11,9 @@ import intl3 from "intl" /* 1113 */;
 import URLUtilsDefault from "URLUtils" /* 1381 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import LinkingDefault from "Linking" /* 6012 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6269 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import LinkingDefault from "Linking" /* 6002 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6259 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import TouchableHitBoxDefault from "TouchableHitBox" /* 8451 */;
 import openUserSettings from "openUserSettings" /* 8604 */;
 import FamilyCenterConstants from "FamilyCenterConstants" /* 8741 */;
@@ -156,7 +156,7 @@ export default function QRScannerModal(showHelp) {
             show(obj4);
             tmp9 = importDefault;
           }
-          const tmp9Result = tmp9(6848);
+          const tmp9Result = tmp9(6838);
           tmp9Result.pop();
         }
     };
@@ -165,7 +165,7 @@ export default function QRScannerModal(showHelp) {
     tmp14 = tmp10;
   }
   items1 = [tmp10Result, , ];
-  let obj4 = { accessibilityRole: "button", accessibilityLabel: intl.string(onScanSuccess(1113).t.cpT0Cq), source: tmp5(7863), style: items2, onPress: tmp5(6848).pop };
+  let obj4 = { accessibilityRole: "button", accessibilityLabel: intl.string(onScanSuccess(1113).t.cpT0Cq), source: tmp5(7863), style: items2, onPress: tmp5(6838).pop };
   const tmp5Result = TouchableHitBoxDefault;
   intl = onScanSuccess(1113).intl;
   items2 = [tmp12.closeButton, { marginTop: top }];

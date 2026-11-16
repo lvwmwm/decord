@@ -1,7 +1,7 @@
 // Module ID: 15632
 // Function ID: 15633
 // Name: ForumChannelSearch
-// Dependencies: [19, 17, 5155, 8868, 21, 5306, 1503, 12352, 9051, 5936, 1113, 9112, 504, 7825, 8866, 2]
+// Dependencies: [19, 17, 5155, 8868, 21, 5306, 1503, 12352, 9051, 5926, 1113, 9112, 504, 7825, 8866, 2]
 
 // Module 15632 (ForumChannelSearch)
 import react_native from "react-native" /* 17 */;

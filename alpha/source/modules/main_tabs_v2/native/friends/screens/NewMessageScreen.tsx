@@ -1,10 +1,10 @@
-// Module ID: 19597
-// Function ID: 19598
+// Module ID: 19599
+// Function ID: 19600
 // Name: NewMessageScreen
-// Dependencies: [5, 32, 19, 17, 5159, 5155, 5248, 7240, 10244, 1072, 21, 1655, 5929, 5306, 575, 1380, 8134, 7241, 572, 504, 1256, 19598, 5548, 19599, 9051, 1113, 11976, 13365, 7918, 7937, 5913, 5899, 12544, 12542, 12541, 9063, 1099, 12545, 6014, 10982, 10981, 6024, 6023, 11788, 5936, 14770, 19536, 2]
+// Dependencies: [5, 32, 19, 17, 5159, 5155, 5248, 7240, 10244, 1072, 21, 1655, 5919, 5306, 575, 1380, 8134, 7241, 572, 504, 1256, 19600, 5538, 19601, 9051, 1113, 11976, 13365, 7918, 7937, 5903, 5889, 12544, 12542, 12541, 9063, 1099, 12545, 6004, 10982, 10981, 6014, 6013, 11788, 5926, 14770, 19538, 2]
 // Exports: default
 
-// Module 19597 (NewMessageScreen)
+// Module 19599 (NewMessageScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import router_utils from "router_utils" /* 1099 */;
@@ -12,13 +12,13 @@ import intl4 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import _mod1655 from "module_1655" /* 1655 */;
 import ChannelRecord from "ChannelRecord" /* 5159 */;
-import timing_timing from "timing/timing" /* 5548 */;
-import useMountEffectDefault from "useMountEffect" /* 5899 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5913 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import components_Button_Button from "components/Button/Button" /* 5936 */;
-import UserPlusIcon from "UserPlusIcon" /* 6023 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6024 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import useMountEffectDefault from "useMountEffect" /* 5889 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5903 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
+import UserPlusIcon from "UserPlusIcon" /* 6013 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6014 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7918 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 8134 */;
@@ -28,8 +28,8 @@ import GroupPlusIcon from "GroupPlusIcon" /* 10981 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 10982 */;
 import NoResultsDefault from "NoResults" /* 11788 */;
 import ChatViewDefault from "ChatView" /* 11976 */;
-import useOnMessageSendDefault from "useOnMessageSend" /* 19598 */;
-import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 19599 */;
+import useOnMessageSendDefault from "useOnMessageSend" /* 19600 */;
+import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 19601 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -60,7 +60,7 @@ let tmp2;
 const getGroupDMRecipientLimitDefault = tmp2(12542);
 const GroupDMNitroCapExperimentDefault = tmp2(12544);
 const NewMessageUserListDefault = tmp2(14770);
-const GroupDMNitroUpsellBannerDefault = tmp2(19536);
+const GroupDMNitroUpsellBannerDefault = tmp2(19538);
 function isPrivateChannelMatch(arr, channel) {
   const recipients = channel.recipients;
   if (recipients.length !== arr.length) {
@@ -523,9 +523,9 @@ export default function NewMessageScreen(navigation) {
         tmp82 = new tmp8(obj);
         dispatch(obj2);
         return () => {
-          const obj2 = { type: "CHANNEL_DELETE", channel: { id: first(closure_1_2[17]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "Array", parent_id: "channel_id" } };
+          const obj2 = { type: "CHANNEL_DELETE", channel: { id: first(closure_1_2[17]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "Array", parent_id: "alignItems" } };
           obj = FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(closure_1_2[18]);
-          ({ id: first(closure_1_2[17]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "Array", parent_id: "channel_id" });
+          ({ id: first(closure_1_2[17]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "Array", parent_id: "alignItems" });
           obj.dispatch(obj2);
         };
       }

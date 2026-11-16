@@ -1,12 +1,12 @@
 // Module ID: 8152
 // Function ID: 8153
 // Name: AppChannelApplicationActionSheet
-// Dependencies: [19, 21, 8149, 5552, 7951, 7913, 1113, 7745, 7747, 8153, 8151, 2]
+// Dependencies: [19, 21, 8149, 5542, 7951, 7913, 1113, 7745, 7747, 8153, 8151, 2]
 // Exports: default
 
 // Module 8152 (AppChannelApplicationActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import getAppChannelApplicationUnsupportedTextDefault from "getAppChannelApplicationUnsupportedText" /* 8153 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

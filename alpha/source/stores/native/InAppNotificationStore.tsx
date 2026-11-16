@@ -1,7 +1,7 @@
 // Module ID: 11012
 // Function ID: 11013
 // Name: InAppNotificationStore
-// Dependencies: [5154, 7016, 11013, 7879, 8740, 1231, 5155, 5177, 11014, 7015, 5209, 5149, 1388, 1072, 9257, 9255, 2169, 12, 11015, 11017, 6858, 7062, 11018, 6181, 6374, 11024, 11025, 11027, 7048, 11028, 11030, 5956, 5131, 1196, 11031, 6067, 11, 504, 572, 2]
+// Dependencies: [5154, 7016, 11013, 7879, 8740, 1231, 5155, 5177, 11014, 7015, 5209, 5149, 1388, 1072, 9257, 9255, 2169, 12, 11015, 11017, 6848, 7062, 11018, 6171, 6364, 11024, 11025, 11027, 7048, 11028, 11030, 5946, 5131, 1196, 11031, 6057, 11, 504, 572, 2]
 
 // Module 11012 (InAppNotificationStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
@@ -9,10 +9,10 @@ import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import _modDef2169 from "module_2169" /* 2169 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6067 */;
-import ExternalPipDefault from "ExternalPip" /* 6181 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 6374 */;
-import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6858 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6057 */;
+import ExternalPipDefault from "ExternalPip" /* 6171 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 6364 */;
+import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6848 */;
 import isChannelFocused from "isChannelFocused" /* 7048 */;
 import isSystemMessageDefault from "isSystemMessage" /* 7062 */;
 import LastMentionTimestampStore from "LastMentionTimestampStore" /* 7879 */;
@@ -317,7 +317,7 @@ let obj3 = {
         if (!optimistic) {
           const tmpResult8 = NotificationTextUtils;
           if (tmpResult8.allowInAppNotifications()) {
-            const tmp3Result = tmp3(6181);
+            const tmp3Result = tmp3(6171);
             if (!tmp3Result.isEnabled()) {
               if (!ChannelRTCStore.getChatOpen(channel_id)) {
                 const tmpResult9 = NotificationTextUtils;
@@ -423,7 +423,7 @@ let obj3 = {
       const result = obj2.extractMetadataFromNotification(_null);
       ({ guildId, channelId: channelId2, messageId: messageId2 } = result);
       const obj4 = { type: _null.type, guild_id: guildId, channel_id: channelId2, message_id: messageId2, dismiss_reason: "message_acked", in_app_notification_id: _null.inAppNotificationId };
-      const obj3 = messageId(6067);
+      const obj3 = messageId(6057);
       obj3.trackWithMetadata(constants.IN_APP_NOTIFICATION_DISMISSED, obj4);
     }
     obj2.removeAll(function predicate(type) {
@@ -466,7 +466,7 @@ let obj3 = {
         if (null != emoji) {
           const obj13 = emoji(11018);
           if (obj13.allowInAppNotifications()) {
-            const tmp20Result = emoji(5956);
+            const tmp20Result = emoji(5946);
             let tryParseChannelPathResult = tmp20Result.tryParseChannelPath(tmp);
             if (tryParseChannelPathResult == null) {
               tryParseChannelPathResult = { channelId: null, guildId: null };
@@ -507,7 +507,7 @@ let obj3 = {
                         let obj = { message, channel, reactor: user, includeSelectedChannel: result1 };
                         const tmp20Result10 = emoji(11018);
                         if (tmp20Result10.shouldNotifyForReaction(obj)) {
-                          const tmp20Result11 = emoji(6374);
+                          const tmp20Result11 = emoji(6364);
                           const messageRecord = tmp20Result11.createMessageRecord(message);
                           const tmp20Result12 = emoji(11024);
                           if (tmp20Result12.isMessageContentPreviewable(messageRecord)) {
@@ -774,7 +774,7 @@ let obj3 = {
       const obj = channelId(11025);
       const result = obj.extractMetadataFromNotification(_null);
       ({ guildId, channelId: channelId2, messageId } = result);
-      obj2 = chatOpen(6067);
+      obj2 = chatOpen(6057);
       const obj3 = { type: _null.type, guild_id: guildId, channel_id: channelId2, message_id: messageId, dismiss_reason: "notification_clicked", in_app_notification_id: _null.inAppNotificationId };
       obj2.trackWithMetadata(constants.IN_APP_NOTIFICATION_DISMISSED, obj3);
     }

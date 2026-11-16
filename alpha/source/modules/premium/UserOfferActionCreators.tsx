@@ -1,7 +1,7 @@
 // Module ID: 9315
 // Function ID: 9316
 // Name: UserOfferActionCreators
-// Dependencies: [5, 9300, 9295, 9298, 1390, 1072, 1380, 572, 1256, 1285, 9316, 1242, 5348, 5139, 5136, 2]
+// Dependencies: [5, 9300, 9295, 9298, 1390, 1072, 1380, 572, 1256, 1285, 9316, 1242, 5338, 5139, 5136, 2]
 // Exports: acknowledgeUserOffer, fetchChurnDiscountOffer, fetchExistingChurnDiscountOffer, fetchUserOffer, triggerUserOffer
 
 // Module 9315 (UserOfferActionCreators)
@@ -90,7 +90,7 @@ let obj = function _fetchUserOffer() {
               }
               obj6 = closure_2;
               if (closure_2 === undefined) {
-                obj6 = { offerId: "disabled", paymentGatewayOverride: "isArray" };
+                obj6 = { offerId: "Array", paymentGatewayOverride: "Path" };
               }
               offerId = undefined;
               paymentGatewayOverride = undefined;

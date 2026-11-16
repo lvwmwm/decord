@@ -1,30 +1,52 @@
 // Module ID: 5875
 // Function ID: 5876
-// Dependencies: []
-// Exports: useDataMultiplier
+// Dependencies: [19, 21, 5565, 5588]
 
 // Module 5875
+import Fragment from "Fragment" /* 21 */;
+import _mod5565 from "module_5565" /* 5565 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5588 */;
+import react_mod from "react" /* 19 */;
 
-export function useDataMultiplier(arg0, arg1) {
-  let num;
-  const length = arg0.length;
-  const array = new Array(arg1);
-  let flag = false;
-  if (typeof arg0[0] === "object") {
-    flag = true;
-  }
-  for (let num = 0; num < arg1; num = num + 1) {
-    let tmp4;
-    let tmp2 = arg0[num % length];
-    if (flag) {
-      let obj = {};
-      let merged = Object.assign(tmp2);
-      tmp4 = obj;
-    } else {
-      tmp4 = tmp2;
+let onFocus;
+
+let c2;
+let c3;
+let forwardRef;
+let memo;
+let react = react_mod;
+({ useCallback: c2, useEffect: c3 } = react);
+({ memo, forwardRef } = react);
+react = react_mod;
+const jsx = Fragment.jsx;
+const memoResult = memo(forwardRef((onFocus, ref) => {
+  onFocus = onFocus.onFocus;
+  const onBlur = onFocus.onBlur;
+  const merged = Object.assign(onFocus, Object.assign({ onFocus: 0, onBlur: 0 }));
+  const obj = _mod5565;
+  const shouldHandleKeyboardEvents = obj.useBottomSheetInternal().shouldHandleKeyboardEvents;
+  const items = [onFocus, shouldHandleKeyboardEvents];
+  const items1 = [onBlur, shouldHandleKeyboardEvents];
+  const items2 = [shouldHandleKeyboardEvents];
+  const tmp2 = React2((arg0) => {
+    shouldHandleKeyboardEvents.value = true;
+    if (onFocus) {
+      tmp(arg0);
     }
-    array[num] = tmp4;
-  }
-  const items = [array];
-  return items;
-}
+  }, items);
+  const tmp3 = React2((arg0) => {
+    shouldHandleKeyboardEvents.value = false;
+    if (onBlur) {
+      tmp(arg0);
+    }
+  }, items1);
+  _false(() => () => {
+    shouldHandleKeyboardEvents.value = false;
+  }, items2);
+  const TextInput = LegacyBaseButton.TextInput;
+  const merged1 = Object.assign(merged);
+  return <TextInput ref={arg1} onFocus={tmp2} onBlur={tmp3} />;
+}));
+memoResult.displayName = "BottomSheetTextInput";
+
+export default memoResult;

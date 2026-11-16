@@ -1,7 +1,7 @@
 // Module ID: 15485
 // Function ID: 15486
 // Name: FractionalNitroPreview
-// Dependencies: [19, 17, 1072, 1390, 21, 5306, 575, 1113, 8847, 2174, 5893, 6020, 15486, 15487, 7897, 5929, 2]
+// Dependencies: [19, 17, 1072, 1390, 21, 5306, 575, 1113, 8847, 2174, 5883, 6010, 15486, 15487, 7897, 5919, 2]
 // Exports: FractionalNitroPreview
 
 // Module 15485 (FractionalNitroPreview)
@@ -9,9 +9,9 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
-import LinearGradientDefault from "LinearGradient" /* 5893 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import FastImageDefault from "FastImage" /* 6020 */;
+import LinearGradientDefault from "LinearGradient" /* 5883 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import CheckmarkSmallIcon2 from "CheckmarkSmallIcon" /* 7897 */;
 import _modDef15486 from "module_15486" /* 15486 */;
 import NitroIconDefault from "NitroIcon" /* 15487 */;

@@ -1,13 +1,13 @@
 // Module ID: 14652
 // Function ID: 14653
 // Name: ChatInputActionButtonGiftOrThread
-// Dependencies: [19, 17, 13804, 21, 5306, 13803, 13800, 1113, 14645, 14653, 5902, 575, 5377, 2]
+// Dependencies: [19, 17, 13804, 21, 5306, 13803, 13800, 1113, 14645, 14653, 5892, 575, 5367, 2]
 
 // Module 14652 (ChatInputActionButtonGiftOrThread)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useToken from "useToken" /* 5902 */;
+import useToken from "useToken" /* 5892 */;
 import ChatInputActionButtonDefault from "ChatInputActionButton" /* 13800 */;
 import ChatInputActionButtonTransitionItemDefault from "ChatInputActionButtonTransitionItem" /* 13803 */;
 import ChatInputConstants from "ChatInputConstants" /* 13804 */;

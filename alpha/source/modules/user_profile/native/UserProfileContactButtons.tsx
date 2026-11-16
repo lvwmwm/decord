@@ -1,16 +1,16 @@
 // Module ID: 15877
 // Function ID: 15878
 // Name: UserProfileContactButtons
-// Dependencies: [19, 17, 5248, 1072, 21, 5306, 575, 5936, 7918, 8545, 15783, 504, 5372, 15878, 6023, 1113, 12123, 8137, 12581, 5552, 6848, 8134, 15880, 7988, 8069, 9102, 15636, 2]
+// Dependencies: [19, 17, 5248, 1072, 21, 5306, 575, 5926, 7918, 8545, 15783, 504, 5362, 15878, 6013, 1113, 12123, 8137, 12581, 5542, 6838, 8134, 15880, 7988, 8069, 9102, 15636, 2]
 // Exports: default
 
 // Module 15877 (UserProfileContactButtons)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import components_Button_Button from "components/Button/Button" /* 5936 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 8134 */;
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 8137 */;
 import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12123 */;
@@ -77,7 +77,7 @@ function FriendRequestButton(user) {
   const items = [userDisplayName];
   const tmp3Result2 = user(504);
   stateFromStores = tmp3Result2.useStateFromStores(items, () => RelationshipStore.getRelationshipType(user.id));
-  const tmpResult = tmp(5372);
+  const tmpResult = tmp(5362);
   userDisplayName = tmpResult.useName(user);
   if (stateFromStores !== RelationshipTypes.FRIEND) {
     if (stateFromStores !== RelationshipTypes.BLOCKED) {
@@ -92,7 +92,7 @@ function FriendRequestButton(user) {
         if (stateFromStores === RelationshipTypes.PENDING_OUTGOING) {
           UserPlusIcon = tmp3(15878).UserClockIcon;
         } else {
-          UserPlusIcon = tmp3(6023).UserPlusIcon;
+          UserPlusIcon = tmp3(6013).UserPlusIcon;
         }
         const intl = tmp3(1113).intl;
         const string = intl.string;

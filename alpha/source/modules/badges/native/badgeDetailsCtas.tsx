@@ -1,16 +1,16 @@
 // Module ID: 10127
 // Function ID: 10128
 // Name: badgeDetailsCtas
-// Dependencies: [1072, 1074, 5493, 1503, 8480, 1113, 6008, 8604, 8484, 7937, 10128, 5343, 10132, 11661, 2]
+// Dependencies: [1072, 1074, 5483, 1503, 8480, 1113, 5998, 8604, 8484, 7937, 10128, 6959, 10132, 11661, 2]
 // Exports: getBadgeDetailsCta
 
 // Module 10127 (badgeDetailsCtas)
 import Constants from "Constants" /* 1072 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import intl2 from "intl" /* 1113 */;
-import QuestContent from "QuestContent" /* 5343 */;
-import RootNavigationRef from "RootNavigationRef" /* 5493 */;
-import openURLDefault from "openURL" /* 6008 */;
+import RootNavigationRef from "RootNavigationRef" /* 5483 */;
+import openURLDefault from "openURL" /* 5998 */;
+import QuestContent from "QuestContent" /* 6959 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
 import BadgeId from "BadgeId" /* 8480 */;
 import CollectiblesActionCreators from "CollectiblesActionCreators" /* 8484 */;

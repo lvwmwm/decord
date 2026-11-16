@@ -1,14 +1,14 @@
 // Module ID: 17282
 // Function ID: 17283
 // Name: TwoFASetupModal
-// Dependencies: [19, 17, 17283, 21, 5306, 575, 1502, 1503, 17281, 7415, 5936, 1113, 17284, 7493, 17285, 17288, 17289, 17292, 5917, 7777, 7490, 2]
+// Dependencies: [19, 17, 17283, 21, 5306, 575, 1502, 1503, 17281, 7415, 5926, 1113, 17284, 7493, 17285, 17288, 17289, 17292, 5907, 7777, 7490, 2]
 // Exports: TwoFASetupModalScreen, default
 
 // Module 17282 (TwoFASetupModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import reactDefault from "react" /* 5917 */;
+import reactDefault from "react" /* 5907 */;
 import Navigator2 from "Navigator" /* 7490 */;
 import TwoFASetupModalActionCreatorsDefault from "TwoFASetupModalActionCreators" /* 17281 */;
 import TwoFAConstants from "TwoFAConstants" /* 17283 */;
@@ -35,7 +35,7 @@ const result = size.fileFinishedImporting("modules/user_settings/account/native/
 
 export default function TwoFASetupModal(initialRouteName) {
   let intl;
-  const f115012 = () => {
+  const f115026 = () => {
     let obj4;
     let obj6;
     let totpSecret;
@@ -96,8 +96,8 @@ export default function TwoFASetupModal(initialRouteName) {
   if (LANDING === undefined) {
     LANDING = TwoFAModalSetupSections.LANDING;
   }
-  let obj = { initialRouteName: LANDING, screens: reactDefault(f115012), headerBackTitle: intl.string(intl3.t["13/7kX"]), headerTitleAlign: "center" };
-  reactDefault(f115012);
+  let obj = { initialRouteName: LANDING, screens: reactDefault(f115026), headerBackTitle: intl.string(intl3.t["13/7kX"]), headerTitleAlign: "center" };
+  reactDefault(f115026);
   const Navigator = Navigator2.Navigator;
   intl = intl3.intl;
   return metroRequire(Navigator, obj);
@@ -125,7 +125,7 @@ export function TwoFASetupModalScreen(children) {
     const obj4 = { bottom: true, style: tmp.floatingButton, children: closure_6(Button, obj5) };
     const SafeAreaPaddingView = tmp2(7415).SafeAreaPaddingView;
     obj5 = { onPress: tmp7, text: stringResult };
-    Button = tmp2(5936).Button;
+    Button = tmp2(5926).Button;
     if (name === tmp5.SUCCESS) {
       const intl2 = tmp2(1113).intl;
       stringResult = intl2.string(tmp2(1113).t.i4jeWR);

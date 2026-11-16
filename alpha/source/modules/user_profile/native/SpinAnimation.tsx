@@ -1,13 +1,13 @@
 // Module ID: 17176
 // Function ID: 17177
 // Name: SpinAnimation
-// Dependencies: [19, 21, 1655, 5548, 2]
+// Dependencies: [19, 21, 1655, 5538, 2]
 // Exports: default
 
 // Module 17176 (SpinAnimation)
 import Fragment from "Fragment" /* 21 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5548 */;
+import timing_timing from "timing/timing" /* 5538 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,12 +1,12 @@
 // Module ID: 15074
 // Function ID: 15075
 // Name: JoinServer
-// Dependencies: [32, 19, 7797, 21, 5306, 5892, 1502, 7493, 15000, 7415, 7796, 1113, 7660, 2]
+// Dependencies: [32, 19, 7797, 21, 5306, 5882, 1502, 7493, 15000, 7415, 7796, 1113, 7660, 2]
 // Exports: default
 
 // Module 15074 (JoinServer)
 import Fragment from "Fragment" /* 21 */;
-import NavigatorConstants from "NavigatorConstants" /* 5892 */;
+import NavigatorConstants from "NavigatorConstants" /* 5882 */;
 import NavigatorHeader from "NavigatorHeader" /* 7493 */;
 import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 7660 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

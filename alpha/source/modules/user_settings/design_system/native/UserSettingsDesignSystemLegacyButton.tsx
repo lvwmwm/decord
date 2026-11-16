@@ -1,15 +1,15 @@
-// Module ID: 18412
-// Function ID: 18413
+// Module ID: 18414
+// Function ID: 18415
 // Name: UserSettingsDesignSystemLegacyButton
-// Dependencies: [19, 17, 21, 1187, 5929, 5936, 5306, 575, 6337, 8106, 2]
+// Dependencies: [19, 17, 21, 1187, 5919, 5926, 5306, 575, 6327, 8106, 2]
 // Exports: default
 
-// Module 18412 (UserSettingsDesignSystemLegacyButton)
+// Module 18414 (UserSettingsDesignSystemLegacyButton)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import components_Button_Button from "components/Button/Button" /* 5936 */;
-import Stack_Stack from "Stack/Stack" /* 6337 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
+import Stack_Stack from "Stack/Stack" /* 6327 */;
 import _mod8106 from "module_8106" /* 8106 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -43,7 +43,7 @@ function ComparisonRow(entry) {
   const tmp9 = hasItem && tmp.darkBg;
   items[1] = tmp9;
   let str = "text-muted";
-  const Text = tmp4(5929).Text;
+  const Text = tmp4(5919).Text;
   if (hasItem) {
     str = "text-default";
   }

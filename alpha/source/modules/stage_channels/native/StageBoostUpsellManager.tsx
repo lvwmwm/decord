@@ -1,16 +1,16 @@
-// Module ID: 20398
-// Function ID: 20399
+// Module ID: 20401
+// Function ID: 20402
 // Name: StageBoostUpsellManager
-// Dependencies: [5553, 5155, 5238, 5209, 6906, 7882, 5552, 6939, 10586, 5163, 6948, 2121, 2]
+// Dependencies: [5543, 5155, 5238, 5209, 6896, 7882, 5542, 6929, 10586, 5163, 6938, 2121, 2]
 
-// Module 20398 (StageBoostUpsellManager)
+// Module 20401 (StageBoostUpsellManager)
 import asyncRequire from "asyncRequire" /* 2121 */;
 import StageChannelPermissions from "StageChannelPermissions" /* 5163 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 6906 */;
-import StageMediaHooks from "StageMediaHooks" /* 6939 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 6896 */;
+import StageMediaHooks from "StageMediaHooks" /* 6929 */;
 import useChannelVideoLimit from "useChannelVideoLimit" /* 10586 */;
-import ActionSheetStore from "ActionSheetStore" /* 5553 */;
+import ActionSheetStore from "ActionSheetStore" /* 5543 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import PermissionStore from "PermissionStore" /* 5238 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
@@ -52,7 +52,7 @@ class StageBoostUpsellManager extends AutomaticLifecycleManager {
                 if (PermissionStore.can(StageChannelPermissions.MODERATE_STAGE_CHANNEL_PERMISSIONS, channel)) {
                   const obj2 = { channel };
                   const obj3 = ActionSheetActionCreatorsDefault;
-                  obj3.openLazy(asyncRequire(6948, tmp7.paths), STAGE_BOOSTING_SHEET_KEY, obj2);
+                  obj3.openLazy(asyncRequire(6938, tmp7.paths), STAGE_BOOSTING_SHEET_KEY, obj2);
                   c8 = true;
                 }
               }

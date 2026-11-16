@@ -1,11 +1,11 @@
 // Module ID: 7935
 // Function ID: 7936
 // Name: useStartProviderConnection
-// Dependencies: [5, 19, 7936, 6012, 2]
+// Dependencies: [5, 19, 7936, 6002, 2]
 // Exports: useStartProviderConnection
 
 // Module 7935 (useStartProviderConnection)
-import LinkingDefault from "Linking" /* 6012 */;
+import LinkingDefault from "Linking" /* 6002 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

@@ -1,17 +1,17 @@
 // Module ID: 15704
 // Function ID: 15705
 // Name: UserProfileActivity
-// Dependencies: [32, 19, 17, 2165, 15705, 5155, 5177, 5238, 6068, 5209, 7316, 5981, 7352, 7962, 1072, 21, 5306, 575, 1380, 5929, 7653, 15707, 5377, 10860, 1113, 12686, 6020, 1414, 9481, 8375, 5313, 10854, 6069, 8469, 15716, 15726, 7918, 7937, 15732, 10664, 10286, 15733, 504, 15734, 15735, 7428, 7961, 1187, 15719, 15740, 15742, 15749, 15595, 8625, 6070, 15714, 15715, 5936, 8546, 3221, 6015, 15753, 6827, 15754, 6935, 6862, 5552, 15743, 5954, 15755, 10863, 8418, 6848, 6900, 7231, 12744, 15756, 15758, 15759, 2]
+// Dependencies: [32, 19, 17, 2165, 15705, 5155, 5177, 5238, 6058, 5209, 7316, 5971, 7352, 7962, 1072, 21, 5306, 575, 1380, 5919, 7653, 15707, 5367, 10860, 1113, 12686, 6010, 1414, 9481, 8375, 5313, 10854, 6059, 8469, 15716, 15726, 7918, 7937, 15732, 10664, 10286, 15733, 504, 15734, 15735, 7428, 7961, 1187, 15719, 15740, 15742, 15749, 15595, 8625, 6060, 15714, 15715, 5926, 8546, 3221, 6005, 15753, 6817, 15754, 6925, 6852, 5542, 15743, 5944, 15755, 10863, 8418, 6838, 6890, 7231, 12744, 15756, 15758, 15759, 2]
 // Exports: default
 
 // Module 15704 (UserProfileActivity)
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
-import Text_Text from "Text/Text" /* 5929 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6848 */;
-import StreamActionCreators from "StreamActionCreators" /* 6862 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6900 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6935 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
+import StreamActionCreators from "StreamActionCreators" /* 6852 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6890 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6925 */;
 import transitionToGuild from "transitionToGuild" /* 7231 */;
 import MaskedLinkUtils from "MaskedLinkUtils" /* 7653 */;
 import Constants2 from "Constants" /* 7962 */;
@@ -28,10 +28,10 @@ import RequestToStreamStore from "RequestToStreamStore" /* 15705 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import GuildStore from "GuildStore" /* 5177 */;
 import PermissionStore from "PermissionStore" /* 5238 */;
-import PresenceStore from "PresenceStore" /* 6068 */;
+import PresenceStore from "PresenceStore" /* 6058 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 7316 */;
-import VoiceStateStore from "VoiceStateStore" /* 5981 */;
+import VoiceStateStore from "VoiceStateStore" /* 5971 */;
 import UserProfileStore from "UserProfileStore" /* 7352 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
@@ -464,9 +464,9 @@ class ActivityCard {
     const tmp10Result = user(15735);
     requestToStreamData = tmp10Result.useRequestToStreamData(user.id, requestToStreamChannel);
     let tmp37Result8 = null;
-    if (activity.type !== user(6069).ActivityTypes.CUSTOM_STATUS) {
+    if (activity.type !== user(6059).ActivityTypes.CUSTOM_STATUS) {
       tmp37Result8 = null;
-      if (activity.type !== user(6069).ActivityTypes.HANG_STATUS) {
+      if (activity.type !== user(6059).ActivityTypes.HANG_STATUS) {
         const obj6 = { value: analyticsLocations, children: closure_21(PressableOpacity, obj7) };
         const AnalyticsLocationProvider = tmp10(7918).AnalyticsLocationProvider;
         obj7 = { onPress: callback, disabled: null == tmp2ResultResult, accessibilityRole: "button", accessibilityLabel: intl2.formatToPlainString(user(1113).t["9sZWVp"], obj8), children: tmp38(tmp2Result2, obj9) };
@@ -563,7 +563,7 @@ class ActivityCard {
                 }
               }
               tmp37Result7 = null;
-              if (!tmp2(6070)(activity)) {
+              if (!tmp2(6060)(activity)) {
                 if (tmp2(15714)(activity)) {
                   const obj19 = { type: constants2.XBOX, onAction: tmp6Result };
                   tmp37Result7 = tmp37(tmp10(15749).ConnectPlatformButton, obj19);
@@ -622,7 +622,7 @@ class ActivityCard {
                     open("REQUEST_TO_STREAM_DISABLED", obj);
                   }
           };
-          const Button = tmp10(5936).Button;
+          const Button = tmp10(5926).Button;
           intl = tmp10(1113).intl;
           enabled = tmp37(Button, obj21);
         }
@@ -787,7 +787,7 @@ function VoiceCallActivityCard(arg0) {
   ({ isInChannel, style } = arg0);
   let tmp = closure_24();
   const tmp4 = stateFromStores(15743)(channel);
-  const tmp5 = stateFromStores(5954)(channel);
+  const tmp5 = stateFromStores(5944)(channel);
   let obj = channel(504);
   const items = [GuildStore];
   stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(channel.guild_id));
@@ -858,14 +858,14 @@ function VoiceCallActivityCard(arg0) {
       intl3 = tmp6(1113).intl;
       obj11 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", children: items4 };
       const obj12 = { style: tmp.voiceCallNameIconWrapper, children: closure_21(stateFromStores(10863), obj13) };
-      Text2 = tmp6(5929).Text;
+      Text2 = tmp6(5919).Text;
       obj13 = { channel, size: "sm", color: "mobile-text-heading-primary" };
       items4 = [closure_21(closure_7, obj12), tmp5];
       tmp13Result = tmp18(PressableOpacity, obj9);
     } else {
       const obj14 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", children: items5 };
       const obj15 = { style: tmp.voiceCallNameIconWrapper, children: closure_21(stateFromStores(10863), obj16) };
-      const Text = tmp6(5929).Text;
+      const Text = tmp6(5919).Text;
       obj16 = { channel, size: "sm", color: "mobile-text-heading-primary" };
       items5 = [closure_21(closure_7, obj15), tmp5];
       tmp13Result = tmp13(Text, obj14);
@@ -892,7 +892,7 @@ function VoiceCallActivityCard(arg0) {
       intl5 = tmp6(1113).intl;
       obj18 = { guildName: stateFromStores.name };
       obj19 = { variant: "body-xs/medium", children: intl6.format(channel(1113).t["hq/Qze"], obj20) };
-      Text3 = tmp6(5929).Text;
+      Text3 = tmp6(5919).Text;
       intl6 = tmp6(1113).intl;
       obj20 = { guildName: stateFromStores.name };
       tmp18Result2 = tmp18(PressableOpacity2, obj17);

@@ -1,14 +1,14 @@
 // Module ID: 13195
 // Function ID: 13196
 // Name: useConjureProjectSettingsForm
-// Dependencies: [5, 32, 19, 17, 5212, 1072, 21, 5306, 575, 504, 7018, 5552, 1113, 4131, 7951, 5929, 7913, 8020, 7825, 7746, 7733, 13196, 13192, 13202, 13184, 13204, 7443, 13205, 13210, 2]
+// Dependencies: [5, 32, 19, 17, 5212, 1072, 21, 5306, 575, 504, 7018, 5542, 1113, 4131, 7951, 5919, 7913, 8020, 7825, 7746, 7733, 13196, 13192, 13202, 13184, 13204, 7443, 13205, 13210, 2]
 // Exports: default
 
 // Module 13195 (useConjureProjectSettingsForm)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import ConjureProjectTypes from "ConjureProjectTypes" /* 7018 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -404,7 +404,7 @@ export default function useConjureProjectSettingsForm(projectId, arg1) {
   }), items);
   if (flag) {
     let obj4 = { variant: "body-sm/normal", color: "text-muted", children: intl.string(tmp2(4131).s7VnVF) };
-    const Text = tmp6(5929).Text;
+    const Text = tmp6(5919).Text;
     intl = tmp6(1113).intl;
     tmp11 = closure_9(Text, obj4);
   }

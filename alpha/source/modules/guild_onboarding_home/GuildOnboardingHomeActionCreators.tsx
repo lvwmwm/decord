@@ -1,7 +1,7 @@
 // Module ID: 14682
 // Function ID: 14683
 // Name: GuildOnboardingHomeActionCreators
-// Dependencies: [5, 5211, 5155, 7080, 9001, 1072, 572, 1285, 7081, 1256, 6063, 11, 2]
+// Dependencies: [5, 5211, 5155, 7080, 9001, 1072, 572, 1285, 7081, 1256, 6053, 11, 2]
 // Exports: clearNewMemberActions, completeNewMemberAction, fetchGuildHomeSettings, fetchNewMemberActions, selectHomeResourceChannel, selectNewMemberActionChannel
 
 // Module 14682 (GuildOnboardingHomeActionCreators)
@@ -9,7 +9,7 @@ import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
-import transitionToChannel from "transitionToChannel" /* 6063 */;
+import transitionToChannel from "transitionToChannel" /* 6053 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ImpersonateStore from "ImpersonateStore" /* 5211 */;
 import ChannelStore from "ChannelStore" /* 5155 */;

@@ -1,14 +1,14 @@
 // Module ID: 10760
 // Function ID: 10761
 // Name: GuildPowerupsBoostInfo
-// Dependencies: [17, 5524, 21, 5306, 575, 10761, 9981, 5929, 2]
+// Dependencies: [17, 5514, 21, 5306, 575, 10761, 9981, 5919, 2]
 // Exports: default
 
 // Module 10760 (GuildPowerupsBoostInfo)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5524 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5514 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import BoostGemIcon2 from "BoostGemIcon" /* 9981 */;
 import getGuildPowerupsBoostInfoText from "getGuildPowerupsBoostInfoText" /* 10761 */;
 import Fragment from "Fragment" /* 21 */;
@@ -47,7 +47,7 @@ export default function GuildPowerupsBoostInfo(arg0) {
   }
   items = [hasOwnProperty(BoostGemIcon, { size: "sm", color: TEXT_MUTED }), ];
   let str = "text-subtle";
-  const Text = tmp2(5929).Text;
+  const Text = tmp2(5919).Text;
   if (type === tmp8.AVAILABLE) {
     str = "text-strong";
   }

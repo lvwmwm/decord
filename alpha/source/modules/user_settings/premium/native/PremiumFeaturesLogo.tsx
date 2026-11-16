@@ -1,7 +1,7 @@
 // Module ID: 10963
 // Function ID: 10964
 // Name: PremiumFeaturesLogo
-// Dependencies: [19, 1390, 21, 10964, 9604, 6020, 2174, 2]
+// Dependencies: [19, 1390, 21, 10964, 9604, 6010, 2174, 2]
 // Exports: default
 
 // Module 10963 (PremiumFeaturesLogo)
@@ -29,7 +29,7 @@ export default function PremiumFeaturesLogo(premiumType) {
     tmp = importDefault;
     tmp3 = AssetRegistryDefault;
   }
-  tmp(6020);
+  tmp(6010);
   const obj2 = PremiumUtils;
   return <tmpResult accessible accessibilityLabel={obj2.getPremiumTypeDisplayName(premiumType)} accessibilityRole="header" style={style} resizeMode="contain" source={tmp3} />;
 };

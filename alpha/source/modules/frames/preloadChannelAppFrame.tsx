@@ -1,13 +1,13 @@
-// Module ID: 18943
-// Function ID: 18944
+// Module ID: 18945
+// Function ID: 18946
 // Name: preloadChannelAppFrame
-// Dependencies: [5155, 5238, 7019, 7020, 1072, 6838, 6858, 5974, 7341, 7022, 7342, 7055, 2]
+// Dependencies: [5155, 5238, 7019, 7020, 1072, 6828, 6848, 5964, 7341, 7022, 7342, 7055, 2]
 // Exports: preloadChannelAppFrame
 
-// Module 18943 (preloadChannelAppFrame)
-import getURLForApplicationDefault from "getURLForApplication" /* 5974 */;
-import AgeGateUtils from "AgeGateUtils" /* 6838 */;
-import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6858 */;
+// Module 18945 (preloadChannelAppFrame)
+import getURLForApplicationDefault from "getURLForApplication" /* 5964 */;
+import AgeGateUtils from "AgeGateUtils" /* 6828 */;
+import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6848 */;
 import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 7022 */;
 import createProxyTicket from "createProxyTicket" /* 7341 */;
 import loadEmbeddedAppCSPForLaunchDefault from "loadEmbeddedAppCSPForLaunch" /* 7342 */;

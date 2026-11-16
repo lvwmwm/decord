@@ -1,15 +1,15 @@
-// Module ID: 18215
-// Function ID: 18216
+// Module ID: 18217
+// Function ID: 18218
 // Name: DevToolsAnalyticsScreen
-// Dependencies: [32, 19, 17, 1388, 16849, 1072, 21, 5306, 575, 5929, 7443, 11354, 2169, 10930, 7428, 7943, 6033, 504, 7888, 6337, 7746, 7954, 12100, 6040, 18210, 7825, 2]
+// Dependencies: [32, 19, 17, 1388, 16849, 1072, 21, 5306, 575, 5919, 7443, 11354, 2169, 10930, 7428, 7943, 6023, 504, 7888, 6327, 7746, 7954, 12100, 6030, 18212, 7825, 2]
 // Exports: default
 
-// Module 18215 (DevToolsAnalyticsScreen)
+// Module 18217 (DevToolsAnalyticsScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import _modDef2169 from "module_2169" /* 2169 */;
-import Text_Text from "Text/Text" /* 5929 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import ClipboardUtils from "ClipboardUtils" /* 7943 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -98,7 +98,7 @@ function LoggedEvent(arg0) {
     let obj3 = { style: tmp.commonPropertiesContainer, children: items1 };
     let obj4 = { name: "Timestamp (local)", children: tmp7(Text, obj5) };
     obj5 = { variant: "body-sm/semibold", color: "mobile-text-heading-primary", children: obj6.calendar() };
-    Text = tmp8(5929).Text;
+    Text = tmp8(5919).Text;
     obj6 = _modDef2169(timestamp);
     items1 = [tmp7(CommonProperty, obj4), , ];
     let tmp7Result = null != user;
@@ -123,11 +123,11 @@ function LoggedEvent(arg0) {
       const PressableOpacity = tmp8(7428).PressableOpacity;
       const obj10 = { variant: "body-sm/medium", color: "mobile-text-heading-primary", style: items2, children: fingerprint };
       items2 = [tmp.monospace, { marginRight: 4 }];
-      items3 = [tmp7(fingerprint(5929).Text, obj10), tmp7(fingerprint(6033).CopyIcon, { size: "sm" })];
+      items3 = [tmp7(fingerprint(5919).Text, obj10), tmp7(fingerprint(6023).CopyIcon, { size: "sm" })];
       tmp7Result1 = tmp5(PressableOpacity, obj9);
     } else {
       const obj11 = { variant: "body-sm/medium", color: "text-muted", style: tmp.monospace, children: "null" };
-      tmp7Result1 = tmp7(tmp8(5929).Text, obj11);
+      tmp7Result1 = tmp7(tmp8(5919).Text, obj11);
     }
     const obj12 = { name: "Fingerprint", children: tmp7Result1 };
     items1[2] = closure_8(CommonProperty, obj12);
@@ -221,13 +221,13 @@ export default function DevToolsAnalyticsScreen() {
   }
   const obj2 = { style: tmp.analyticsContainer, children: closure_8(FlashList, obj8) };
   FlashList = tmp2(7888).FlashList;
-  const Stack = tmp2(6337).Stack;
+  const Stack = tmp2(6327).Stack;
   const obj3 = { title: "Actions", hasIcons: true, children: items2 };
   const TableRowGroup = tmp2(7746).TableRowGroup;
   const obj4 = { icon: closure_8(trimmed(12100).ArrowsUpDownIcon, {}), label: "Reverse Events", value: first, onValueChange: tmp7 };
   const TableSwitchRow = tmp2(7954).TableSwitchRow;
   items2 = [closure_8(TableSwitchRow, obj4), ];
-  const obj5 = { arrow: true, variant: "danger", icon: closure_8(trimmed(6040).TrashIcon, { color: "text-feedback-critical" }), label: "Clear Analytics Log", onPress: trimmed(18210).clearAnalyticsLog };
+  const obj5 = { arrow: true, variant: "danger", icon: closure_8(trimmed(6030).TrashIcon, { color: "text-feedback-critical" }), label: "Clear Analytics Log", onPress: trimmed(18212).clearAnalyticsLog };
   const TableRow = tmp2(7443).TableRow;
   items2[1] = closure_8(TableRow, obj5);
   const items3 = [closure_9(TableRowGroup, obj3), , ];

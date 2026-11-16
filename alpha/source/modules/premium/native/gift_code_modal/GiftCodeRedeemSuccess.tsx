@@ -1,7 +1,7 @@
 // Module ID: 12396
 // Function ID: 12397
 // Name: GiftCodeRedeemSuccess
-// Dependencies: [32, 19, 17, 7070, 21, 5306, 575, 504, 12385, 7259, 11832, 8497, 2114, 9402, 10029, 7415, 7244, 9515, 7924, 9489, 6788, 1187, 9527, 10062, 10063, 12392, 5929, 1113, 6755, 5936, 6848, 2]
+// Dependencies: [32, 19, 17, 7070, 21, 5306, 575, 504, 12385, 7259, 11832, 8497, 2114, 9402, 10029, 7415, 7244, 9515, 7924, 9489, 6778, 1187, 9527, 10062, 10063, 12392, 5919, 1113, 6745, 5926, 6838, 2]
 // Exports: default
 
 // Module 12396 (GiftCodeRedeemSuccess)
@@ -153,21 +153,21 @@ export default function GiftCodeRedeemSuccess(giftCode) {
     const items1 = [tmp24Result2, , ];
     if (null == stateFromStores) {
       const obj12 = { variant: "heading-xl/semibold", style: tmp.header, accessibilityRole: "header", children: intl4.string(tmp2(1113).t["+BNMcF"]) };
-      const Text4 = tmp2(5929).Text;
+      const Text4 = tmp2(5919).Text;
       intl4 = tmp2(1113).intl;
       tmp34 = closure_8(Text4, obj12);
     } else {
       const tmp2Result8 = tmp2(7244);
       if (tmp2Result8.isGameItemSKU(stateFromStores)) {
         const obj13 = { variant: "heading-xl/semibold", style: tmp.header, accessibilityRole: "header", children: intl3.string(tmp2(1113).t["5glWta"]) };
-        const Text3 = tmp2(5929).Text;
+        const Text3 = tmp2(5919).Text;
         intl3 = tmp2(1113).intl;
         tmp34 = closure_8(Text3, obj13);
       } else {
         if (giftCode.isSubscription) {
           if (null != getOrFetchSubscriptionPlan) {
             const obj14 = { variant: "heading-xl/semibold", style: tmp.header, accessibilityRole: "header", children: intl2.format(tmp2(1113).t["1C2BG/"], obj15) };
-            const Text2 = tmp2(5929).Text;
+            const Text2 = tmp2(5919).Text;
             intl2 = tmp2(1113).intl;
             obj15 = { skuName: stateFromStores.name };
             tmp34 = closure_8(Text2, obj14);
@@ -175,7 +175,7 @@ export default function GiftCodeRedeemSuccess(giftCode) {
         }
         if (null != first) {
           const obj16 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp.header, accessibilityRole: "header", children: intl.string(tmp2(1113).t.IMffmm) };
-          const Text = tmp2(5929).Text;
+          const Text = tmp2(5919).Text;
           intl = tmp2(1113).intl;
           tmp34 = closure_8(Text, obj16);
         }
@@ -186,7 +186,7 @@ export default function GiftCodeRedeemSuccess(giftCode) {
     if (tmp2Result9.isGameItemSKU(stateFromStores)) {
       if (null != getOrFetchApplication) {
         const obj17 = { variant: "body-md/medium", style: tmp.message, children: formatToPlainString(W2znvX, obj18) };
-        const Text6 = tmp2(5929).Text;
+        const Text6 = tmp2(5919).Text;
         const intl7 = tmp2(1113).intl;
         formatToPlainString = intl7.formatToPlainString;
         let str2;
@@ -218,14 +218,14 @@ export default function GiftCodeRedeemSuccess(giftCode) {
         obj7.children = items2;
         return closure_9(tmp21, obj7);
       }
-      obj21 = { text: intl8.string(tmp2(1113).t["NX+WJN"]), size: "md", onPress: user(6848).pop };
+      obj21 = { text: intl8.string(tmp2(1113).t["NX+WJN"]), size: "md", onPress: user(6838).pop };
       intl8 = tmp2(1113).intl;
     }
     if (giftCode.isSubscription) {
       if (null != getOrFetchSubscriptionPlan) {
         const obj22 = { variant: "body-md/medium", style: tmp.message, children: tmp2Result10.getSubscriptionGiftSuccessText(getOrFetchSubscriptionPlan) };
-        const Text5 = tmp2(5929).Text;
-        tmp2Result10 = tmp2(6755);
+        const Text5 = tmp2(5919).Text;
+        tmp2Result10 = tmp2(6745);
         tmp39Result = closure_8(Text5, obj22);
         tmp39 = closure_8;
       }
@@ -261,7 +261,7 @@ export default function GiftCodeRedeemSuccess(giftCode) {
       tmp24Result2 = tmp24(tmp25, obj25);
     }
   }
-  const str = tmp2(6788);
+  const str = tmp2(6778);
   const match = str.match(first);
   const obj28 = { type: tmp2(2114).CollectiblesItemType.AVATAR_DECORATION };
   const withResult = match.with(obj28, (avatarDecoration) => {
