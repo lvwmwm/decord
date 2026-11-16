@@ -1,24 +1,24 @@
-// Module ID: 19980
-// Function ID: 19981
+// Module ID: 20431
+// Function ID: 20432
 // Name: GuildRoleSubscriptionTierDesignModal
-// Dependencies: [32, 19, 17, 17191, 1072, 21, 5014, 575, 5596, 17223, 19945, 19955, 17211, 7356, 19940, 7060, 1113, 19946, 19981, 19947, 2]
+// Dependencies: [32, 19, 17, 17551, 1072, 21, 5170, 575, 5756, 17583, 20396, 20406, 17571, 7450, 20391, 7159, 1113, 20397, 20432, 20398, 2]
 // Exports: GuildRoleSubscriptionTierDesignTab, default
 
-// Module 19980 (GuildRoleSubscriptionTierDesignModal)
+// Module 20431 (GuildRoleSubscriptionTierDesignModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
-import useToken5 from "useToken" /* 5596 */;
-import RoleIconUtils from "RoleIconUtils" /* 7356 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17191 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17211 */;
-import GuildRoleSubscriptionMemberPreview from "GuildRoleSubscriptionMemberPreview" /* 17223 */;
-import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 19947 */;
+import useToken5 from "useToken" /* 5756 */;
+import RoleIconUtils from "RoleIconUtils" /* 7450 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17551 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17571 */;
+import GuildRoleSubscriptionMemberPreview from "GuildRoleSubscriptionMemberPreview" /* 17583 */;
+import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 20398 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -72,7 +72,7 @@ function Content() {
   let role;
   let tmp7;
   let tmp8;
-  const tmp3 = role(19945)();
+  const tmp3 = role(20396)();
   let obj = require("EditStateContextProvider");
   const editStateContext = obj.useEditStateContext();
   ({ editStateId, guildId } = editStateContext);
@@ -105,7 +105,7 @@ function Content() {
   items2 = [closure_9(MemberPreviews, { role }), , ];
   const obj7 = { children: items3 };
   const obj8 = { title: intl.string(require("intl").t.sEr1zr) };
-  const TableRowGroupTitle = tmp4(7060).TableRowGroupTitle;
+  const TableRowGroupTitle = tmp4(7159).TableRowGroupTitle;
   intl = tmp4(1113).intl;
   items3 = [closure_9(TableRowGroupTitle, obj8), ];
   const obj9 = {
@@ -115,17 +115,17 @@ function Content() {
     previewShape: require("FormImagePicker").PreviewShape.SQUIRCLE,
     previewResizeMode: "cover",
     setImage(icon) {
-      const obj = { icon: icon.uri, unicodeEmoji: "Array" };
+      const obj = { icon: icon.uri, unicodeEmoji: "r" };
       return closure_0(obj);
     },
     disabled: roleSubscriptionSettingsDisabled
   };
-  const tmpResult = role(19946);
+  const tmpResult = role(20397);
   intl2 = tmp4(1113).intl;
   items3[1] = closure_9(tmpResult, obj9);
   items2[1] = closure_10(View, obj7);
-  const obj10 = { title: intl3.string(require("intl").t["W7hH+z"]), hasIcons: true, children: closure_9(role(19981), { color: tmp7, onChange: tmp8, disabled: roleSubscriptionSettingsDisabled }) };
-  const TableRowGroup = tmp4(7060).TableRowGroup;
+  const obj10 = { title: intl3.string(require("intl").t["W7hH+z"]), hasIcons: true, children: closure_9(role(20432), { color: tmp7, onChange: tmp8, disabled: roleSubscriptionSettingsDisabled }) };
+  const TableRowGroup = tmp4(7159).TableRowGroup;
   intl3 = tmp4(1113).intl;
   items2[2] = closure_9(TableRowGroup, obj10);
   return closure_10(View, obj6);

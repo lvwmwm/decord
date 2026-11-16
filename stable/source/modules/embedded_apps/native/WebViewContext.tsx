@@ -1,15 +1,15 @@
-// Module ID: 11823
-// Function ID: 11824
+// Module ID: 12018
+// Function ID: 12019
 // Name: WebViewContext
-// Dependencies: [32, 19, 17, 21, 5014, 2]
+// Dependencies: [32, 19, 17, 21, 5170, 2]
 // Exports: WebViewContextProvider
 
-// Module 11823 (WebViewContext)
+// Module 12018 (WebViewContext)
 import react_native from "react-native" /* 17 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let c3;

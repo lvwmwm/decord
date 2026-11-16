@@ -1,14 +1,14 @@
-// Module ID: 19667
-// Function ID: 19668
+// Module ID: 20118
+// Function ID: 20119
 // Name: AutomodStore
-// Dependencies: [32, 5, 19, 13292, 1072, 1254, 19668, 1259, 13297, 6446, 4929, 2]
+// Dependencies: [32, 5, 19, 13557, 1072, 1254, 20119, 1259, 13562, 6611, 5085, 2]
 // Exports: getRuleCountByTriggerType, useAutomodRulesList, useSyncAutomodRules, useSyncAutomodRulesEffect
 
-// Module 19667 (AutomodStore)
+// Module 20118 (AutomodStore)
 import Constants from "Constants" /* 1072 */;
-import _slicedToArray2 from "_slicedToArray" /* 4929 */;
-import Constants2 from "Constants" /* 13292 */;
-import SystemRulesUtils from "SystemRulesUtils" /* 19668 */;
+import _slicedToArray2 from "_slicedToArray" /* 5085 */;
+import Constants2 from "Constants" /* 13557 */;
+import SystemRulesUtils from "SystemRulesUtils" /* 20119 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -18,7 +18,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, c0, c1, c6, c7, closure_5;
 
-const f118404 = (arg0) => {
+const f120368 = (arg0) => {
   const items = [, ];
   ({ syncRules: arr[0], fetching: arr[1] } = arg0);
   return items;
@@ -242,7 +242,7 @@ export function useSyncAutomodRules(arg0) {
   let first;
   let closure_0 = arg0;
   [first, closure_1] = react.useState(false);
-  const tmp3 = _slicedToArray(withEqualityFn(f118404, _slicedToArray2.shallow), 2);
+  const tmp3 = _slicedToArray(withEqualityFn(f120368, _slicedToArray2.shallow), 2);
   const first1 = tmp3[0];
   let closure_3 = tmp5;
   const items = [first, ];
@@ -327,7 +327,7 @@ export function useSyncAutomodRulesEffect(arg0) {
   let tmp8;
   _require = arg0;
   [first, closure_1] = react.useState(false);
-  [first1, tmp5] = withEqualityFn(f118404, require("_slicedToArray").shallow);
+  [first1, tmp5] = withEqualityFn(f120368, require("_slicedToArray").shallow);
   let closure_3 = tmp5;
   let items = [first, ];
   const items1 = [arg0, tmp5, first1];

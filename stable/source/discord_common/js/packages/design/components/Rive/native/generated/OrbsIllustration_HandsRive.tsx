@@ -1,13 +1,13 @@
-// Module ID: 5177
-// Function ID: 5178
+// Module ID: 5325
+// Function ID: 5326
 // Name: OrbsIllustration_HandsRive
-// Dependencies: [109, 19, 21, 5089, 5178, 5146, 2]
+// Dependencies: [109, 19, 21, 5239, 5326, 5292, 2]
 // Exports: OrbsIllustration_HandsRive
 
-// Module 5177 (OrbsIllustration_HandsRive)
+// Module 5325 (OrbsIllustration_HandsRive)
 import Fragment from "Fragment" /* 21 */;
-import BaseRive2 from "BaseRive" /* 5089 */;
-import RiveErrorBoundary2 from "RiveErrorBoundary" /* 5146 */;
+import BaseRive2 from "BaseRive" /* 5239 */;
+import RiveErrorBoundary2 from "RiveErrorBoundary" /* 5292 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

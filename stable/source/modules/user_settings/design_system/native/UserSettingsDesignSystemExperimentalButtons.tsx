@@ -1,25 +1,25 @@
-// Module ID: 17772
-// Function ID: 17773
+// Module ID: 18139
+// Function ID: 18140
 // Name: UserSettingsDesignSystemExperimentalButtons
-// Dependencies: [19, 17, 1072, 21, 5596, 575, 8992, 6027, 7060, 6985, 7220, 5732, 5634, 5624, 5080, 5587, 8179, 7562, 2]
+// Dependencies: [19, 17, 1072, 21, 5756, 575, 9105, 6191, 7159, 7081, 7317, 5888, 5790, 5783, 5231, 5747, 8281, 7667, 2]
 // Exports: default
 
-// Module 17772 (UserSettingsDesignSystemExperimentalButtons)
+// Module 18139 (UserSettingsDesignSystemExperimentalButtons)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import native from "native" /* 5080 */;
-import LinearGradientDefault from "LinearGradient" /* 5587 */;
-import useToken from "useToken" /* 5596 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import AssetRegistryDefault from "AssetRegistry" /* 5732 */;
-import Stack_Stack from "Stack/Stack" /* 6027 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 6985 */;
-import TableRowGroup7 from "TableRowGroup" /* 7060 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 7220 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 7562 */;
-import RowButton2 from "RowButton" /* 8179 */;
-import native2 from "native" /* 8992 */;
+import native from "native" /* 5231 */;
+import LinearGradientDefault from "LinearGradient" /* 5747 */;
+import useToken from "useToken" /* 5756 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import components_Button_Button from "components/Button/Button" /* 5790 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5888 */;
+import Stack_Stack from "Stack/Stack" /* 6191 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 7081 */;
+import TableRowGroup7 from "TableRowGroup" /* 7159 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 7317 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 7667 */;
+import RowButton2 from "RowButton" /* 8281 */;
+import native2 from "native" /* 9105 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -139,7 +139,7 @@ export default function UserSettingsDesignSystemExperimentalButtons() {
     },
     children: metroRequire(_false, obj22)
   };
-  obj22 = { style: { borderColor: "pink", borderWidth: 1, borderRadius: 8, padding: 12 }, children: metroRequire(Text_Text.Text, { variant: "text-md/semibold", children: "This is a custom button" }) };
+  obj22 = { style: { borderColor: "pink", borderWidth: 1, borderRadius: 8, padding: 12 }, children: metroRequire(Text_Text.Text, { variant: "body-md/semibold", children: "This is a custom button" }) };
   PressableScale = native2.PressableScale;
   items[3] = metroRequire(TableRowGroup4, obj19);
   const obj23 = { title: "Experimental Blur Background Row Button", description: "Row Button Row Buttons are full-width, high-emphasis buttons that are used as primary CTAs in a page.", hasIcons: false, children: metroRequire(_false, {}) };

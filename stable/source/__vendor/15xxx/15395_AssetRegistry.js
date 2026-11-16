@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting/tier_icons/colored", width: 24, height: 24, scales: [2, 3], hash: "8f9077e5b37bff7706de677d0f3debbe", name: "tier_2_32px", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 25, height: 24, scales: [1, 2, 3], hash: "495d1e3b5fc10bbfc9830f32405f0c83", name: "ic_feedback_dark", type: "png" });

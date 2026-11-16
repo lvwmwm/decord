@@ -1,17 +1,17 @@
-// Module ID: 14761
-// Function ID: 14762
+// Module ID: 15026
+// Function ID: 15027
 // Name: URLCallout
-// Dependencies: [19, 17, 21, 5014, 575, 14762, 5624, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 15027, 5783, 2]
 // Exports: URLCallout
 
-// Module 14761 (URLCallout)
+// Module 15026 (URLCallout)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import SharedStateUtils from "SharedStateUtils" /* 14762 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import SharedStateUtils from "SharedStateUtils" /* 15027 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -42,10 +42,10 @@ export function URLCallout(url) {
   const urlParts = obj.useUrlParts(url);
   ({ protocol, hostname, theRestOfTheUrl } = urlParts);
   const obj2 = { style: tmp.linkCalloutContainer, children: _false(Text, obj3) };
-  obj3 = { style: tmp.linkCalloutContainerText, variant: "text-md/normal", children: items1 };
+  obj3 = { style: tmp.linkCalloutContainerText, variant: "body-md/normal", children: items1 };
   Text = Text_Text.Text;
-  const obj4 = { variant: "text-md/normal", color: "text-muted", children: items };
+  const obj4 = { variant: "body-md/normal", color: "text-muted", children: items };
   items = [protocol, "//"];
-  items1 = [_false(Text_Text.Text, obj4), React3(Text_Text.Text, { variant: "text-md/semibold", color: "text-default", children: hostname }), React3(Text_Text.Text, { variant: "text-md/normal", color: "text-muted", children: theRestOfTheUrl })];
+  items1 = [_false(Text_Text.Text, obj4), React3(Text_Text.Text, { variant: "body-md/semibold", color: "text-default", children: hostname }), React3(Text_Text.Text, { variant: "body-md/normal", color: "text-muted", children: theRestOfTheUrl })];
   return React3(ScrollView, obj2);
 }

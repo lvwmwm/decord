@@ -1,30 +1,19 @@
 // Module ID: 5569
 // Function ID: 5570
-// Dependencies: []
-// Exports: useDataMultiplier
+// Dependencies: [5568, 5514]
+// Exports: useExclusiveGestures
 
 // Module 5569
+import ComposedGestureName from "ComposedGestureName" /* 5514 */;
+import _mod5568 from "module_5568" /* 5568 */;
 
-export function useDataMultiplier(arg0, arg1) {
-  let num;
-  const length = arg0.length;
-  const array = new Array(arg1);
-  let flag = false;
-  if (typeof arg0[0] === "object") {
-    flag = true;
-  }
-  for (let num = 0; num < arg1; num = num + 1) {
-    let tmp4;
-    let tmp2 = arg0[num % length];
-    if (flag) {
-      let obj = {};
-      let merged = Object.assign(tmp2);
-      tmp4 = obj;
-    } else {
-      tmp4 = tmp2;
-    }
-    array[num] = tmp4;
-  }
-  const items = [array];
-  return items;
+
+export function useExclusiveGestures() {
+  const items = [...arguments];
+  const useComposedGesture = _mod5568.useComposedGesture;
+  _mod5568;
+  const items1 = [ComposedGestureName.ComposedGestureName.Exclusive, ...items];
+  const applyResult = useComposedGesture.apply(items1);
+  applyResult.type = ComposedGestureName.ComposedGestureName.Exclusive;
+  return applyResult;
 }

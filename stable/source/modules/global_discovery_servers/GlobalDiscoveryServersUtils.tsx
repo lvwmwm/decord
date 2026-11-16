@@ -1,17 +1,17 @@
-// Module ID: 20040
-// Function ID: 20041
+// Module ID: 20490
+// Function ID: 20491
 // Name: GlobalDiscoveryServersUtils
-// Dependencies: [5, 2062, 9076, 1072, 1113, 1379, 7521, 1252, 1266, 2]
+// Dependencies: [5, 2186, 9189, 1072, 1113, 1380, 7626, 1252, 1266, 2]
 // Exports: fromDiscoverableGuildSearchResult, fromDiscoverableGuildServer, getCategoryIdFromServerTab, getGlobalDiscoveryServersBannerDescription, getGlobalDiscoveryServersBannerTitle, getGlobalDiscoveryServersTabSectionTitle, getGlobalDiscoveryServersTabTitle, getLanguageCodeFallback, isStaleFeaturedGuilds, makeAnalyticsID, navigateToGuild
 
-// Module 20040 (GlobalDiscoveryServersUtils)
+// Module 20490 (GlobalDiscoveryServersUtils)
 import Constants from "Constants" /* 1072 */;
 import intl8 from "intl" /* 1113 */;
 import v1 from "v1" /* 1266 */;
-import GlobalUtils from "GlobalUtils" /* 1379 */;
+import GlobalUtils from "GlobalUtils" /* 1380 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LocaleStore from "LocaleStore" /* 2062 */;
-import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 9076 */;
+import LocaleStore from "LocaleStore" /* 2186 */;
+import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 9189 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -259,7 +259,7 @@ export function fromDiscoverableGuildServer(id) {
   return obj;
 }
 export function fromDiscoverableGuildSearchResult(id) {
-  obj = { id: id.id, name: id.name, description: id.description, splash: id.splash, banner: id.banner, icon: id.icon, features: new Set(id.features), presenceCount: null, memberCount: null, premiumSubscriptionCount: "r", preferredLocale: "isArray", discoverySplash: null, emojis: [] };
+  obj = { id: id.id, name: id.name, description: id.description, splash: id.splash, banner: id.banner, icon: id.icon, features: new Set(id.features), presenceCount: null, memberCount: null, premiumSubscriptionCount: "r", preferredLocale: "channel", discoverySplash: false, emojis: [] };
   ({ approximate_presence_count: obj.presenceCount, approximate_member_count: obj.memberCount, discovery_splash: obj.discoverySplash } = id);
   new Set(id.features);
   return obj;

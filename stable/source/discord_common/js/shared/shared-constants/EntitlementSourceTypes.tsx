@@ -1,9 +1,9 @@
-// Module ID: 7581
-// Function ID: 7582
+// Module ID: 7689
+// Function ID: 7690
 // Name: EntitlementSourceTypes
 // Dependencies: [2]
 
-// Module 7581 (EntitlementSourceTypes)
+// Module 7689 (EntitlementSourceTypes)
 import size from "module_2" /* 2 */;
 
 const obj = { INVOICE_ITEMS: new Set([5, 10]) };

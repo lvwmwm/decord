@@ -1,13 +1,13 @@
-// Module ID: 17966
-// Function ID: 17967
+// Module ID: 18340
+// Function ID: 18341
 // Name: RedesignSettingsFriendActivityTitleScreen
-// Dependencies: [19, 21, 11540, 17958, 16583, 2]
+// Dependencies: [19, 21, 11717, 18330, 18335, 2]
 
-// Module 17966 (RedesignSettingsFriendActivityTitleScreen)
+// Module 18340 (RedesignSettingsFriendActivityTitleScreen)
 import Fragment from "Fragment" /* 21 */;
-import SettingBuilders from "SettingBuilders" /* 11540 */;
-import SettingLayoutDefault from "SettingLayout" /* 16583 */;
-import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 17958 */;
+import SettingBuilders from "SettingBuilders" /* 11717 */;
+import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 18330 */;
+import EffectiveNotifSettingsLayoutDefault from "EffectiveNotifSettingsLayout" /* 18335 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ const memoResult = react.memo(function RedesignSettingsFriendActivityTitleScreen
     items[0] = obj2.buildFriendActivityTitleSettingsSection();
     return createList(obj);
   }, []);
-  return jsx(SettingLayoutDefault, { node });
+  return jsx(EffectiveNotifSettingsLayoutDefault, { node });
 });
 const result = size.fileFinishedImporting("modules/notifications/settings/native/routes/RedesignSettingsFriendActivityTitleScreen.tsx");
 

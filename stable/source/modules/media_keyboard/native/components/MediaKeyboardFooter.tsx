@@ -1,20 +1,20 @@
-// Module ID: 10552
-// Function ID: 10553
+// Module ID: 10703
+// Function ID: 10704
 // Name: MediaKeyboardFooter
-// Dependencies: [19, 17, 21, 5014, 575, 10541, 5624, 1113, 5634, 5717, 10553, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 10692, 5783, 1113, 5790, 5874, 10704, 2]
 
-// Module 10552 (MediaKeyboardFooter)
+// Module 10703 (MediaKeyboardFooter)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import DeviceMediaDefault from "DeviceMedia" /* 10541 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10553 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import components_Button_Button from "components/Button/Button" /* 5790 */;
+import FastImageDefault from "FastImage" /* 5874 */;
+import DeviceMediaDefault from "DeviceMedia" /* 10692 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10704 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -47,7 +47,7 @@ const memoResult = react.memo(function MediaKeyboardFooter(arg0) {
   const obj = DeviceMediaDefault;
   if (obj.useHasReachedEnd()) {
     const obj2 = { style: tmp.container, children: items };
-    const obj3 = { variant: "text-sm/normal", style: tmp.label, children: intl.string(intl3.t.mKSwAW) };
+    const obj3 = { variant: "body-sm/normal", style: tmp.label, children: intl.string(intl3.t.mKSwAW) };
     const Text = Text_Text.Text;
     intl = intl3.intl;
     items = [hasOwnProperty(Text, obj3), , ];

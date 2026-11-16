@@ -1,23 +1,23 @@
-// Module ID: 16796
-// Function ID: 16797
+// Module ID: 17150
+// Function ID: 17151
 // Name: FamilyCenterTopUsersBottomSheet
-// Dependencies: [19, 1383, 21, 5014, 8372, 6975, 5068, 1187, 7366, 5624, 1113, 2538, 7060, 2]
+// Dependencies: [19, 1385, 21, 5170, 8476, 7071, 5226, 1187, 7459, 5783, 1113, 2664, 7159, 2]
 // Exports: default
 
-// Module 16796 (FamilyCenterTopUsersBottomSheet)
+// Module 17150 (FamilyCenterTopUsersBottomSheet)
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import _modDef2538 from "module_2538" /* 2538 */;
-import UserUtilsDefault from "UserUtils" /* 5068 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import TableRow2 from "TableRow" /* 6975 */;
-import TableRowGroup2 from "TableRowGroup" /* 7060 */;
-import ActionSheet2 from "ActionSheet" /* 7366 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 8372 */;
+import _modDef2664 from "module_2664" /* 2664 */;
+import UserUtilsDefault from "UserUtils" /* 5226 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import TableRow2 from "TableRow" /* 7071 */;
+import TableRowGroup2 from "TableRowGroup" /* 7159 */;
+import ActionSheet2 from "ActionSheet" /* 7459 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 8476 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1383 */;
+import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -36,7 +36,7 @@ function UserRow(userActivity) {
     const obj2 = { label: obj3.getName(user), subLabel: topUserOrGuildDescription, icon: React3(Avatar, obj4) };
     const TableRow = TableRow2.TableRow;
     obj3 = UserUtilsDefault;
-    obj4 = { size: native.AvatarSizes.SMALL, user, guildId: "Array" };
+    obj4 = { size: native.AvatarSizes.SMALL, user, guildId: "r" };
     Avatar = native.Avatar;
     return React3(TableRow, obj2);
   }
@@ -52,7 +52,7 @@ export default function FamilyCenterTopUsersBottomSheet(topUserActivities) {
   let obj = { children: items };
   const tmp = closure_6();
   const ActionSheet = ActionSheet2.ActionSheet;
-  const obj2 = { variant: "text-md/bold", style: tmp.header, children: intl.string(_modDef2538.BxbvS7) };
+  const obj2 = { variant: "body-md/semibold", style: tmp.header, children: intl.string(_modDef2664.BxbvS7) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   items = [React3(Text, obj2), ];

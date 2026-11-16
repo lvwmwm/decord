@@ -1,15 +1,15 @@
-// Module ID: 17245
-// Function ID: 17246
+// Module ID: 17605
+// Function ID: 17606
 // Name: AutomaticGainControlSetting
-// Dependencies: [2006, 8432, 504, 1113, 11540, 11956, 2]
+// Dependencies: [2130, 8536, 504, 1113, 11717, 12154, 2]
 
-// Module 17245 (AutomaticGainControlSetting)
+// Module 17605 (AutomaticGainControlSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
-import SettingsConstants from "SettingsConstants" /* 8432 */;
-import UserSettingsVoiceUtils from "UserSettingsVoiceUtils" /* 11956 */;
-import MediaEngineStore from "MediaEngineStore" /* 2006 */;
-import SettingBuilders from "SettingBuilders" /* 11540 */;
+import SettingsConstants from "SettingsConstants" /* 8536 */;
+import UserSettingsVoiceUtils from "UserSettingsVoiceUtils" /* 12154 */;
+import MediaEngineStore from "MediaEngineStore" /* 2130 */;
+import SettingBuilders from "SettingBuilders" /* 11717 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

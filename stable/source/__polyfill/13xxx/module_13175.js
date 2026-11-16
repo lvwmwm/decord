@@ -1,11 +1,17 @@
 // Module ID: 13175
 // Function ID: 13176
 // Dependencies: []
-// Exports: escapeStringForRegex
 
 // Module 13175
+let obj2;
+const obj = { parse: obj2 };
+obj2 = {
+  prelude() {
+    return this.createSingleNodeList(this.MediaQueryList());
+  },
+  block() {
+    return this.Block(false);
+  }
+};
 
-export function escapeStringForRegex(str) {
-  str = str.replace(/[|\\{}()[\]^$+*?.]/g, "\\$&");
-  return str.replace(/-/g, "\\x2d");
-}
+export default obj;

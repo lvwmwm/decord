@@ -1,26 +1,24 @@
-// Module ID: 9465
-// Function ID: 9466
+// Module ID: 9582
+// Function ID: 9583
 // Name: WishlistNUXAddedItemActionSheet
-// Dependencies: [32, 19, 17, 1383, 8754, 21, 5014, 575, 504, 1987, 5258, 8750, 7351, 9466, 5272, 9467, 5624, 1113, 6767, 5634, 2]
+// Dependencies: [32, 19, 17, 1385, 8858, 21, 5170, 575, 504, 2111, 5406, 8854, 7445, 9583, 5420, 9584, 5783, 1113, 6855, 5790, 2]
 // Exports: default
 
-// Module 9465 (WishlistNUXAddedItemActionSheet)
+// Module 9582 (WishlistNUXAddedItemActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7351 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8750 */;
-import Constants from "Constants" /* 8754 */;
-import SKUPreview from "SKUPreview" /* 9466 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 2111 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7445 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8854 */;
+import Constants from "Constants" /* 8858 */;
+import SKUPreview from "SKUPreview" /* 9583 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1383 */;
+import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let c9;
 let metroImportAll;
@@ -98,14 +96,14 @@ export default function WishlistNUXAddedItemActionSheet(product) {
   }, items3);
   let obj2 = { children: closure_9(View, obj3) };
   obj3 = { style: tmp.container, children: items4 };
-  BottomSheet = require("Sheet/BottomSheet").BottomSheet;
+  const BottomSheet = require("Sheet/BottomSheet").BottomSheet;
   items4 = [closure_8(stateFromStores(memo[15]), { renderPreview: callback2 }), , ];
   const obj4 = { style: tmp.textContainer, children: items5 };
-  const obj5 = { variant: "heading-lg/extrabold", color: "text-strong", accessibilityRole: "header", children: intl.string(require("intl").t["3T2jbf"]) };
+  const obj5 = { variant: "heading-lg/semibold", color: "text-strong", accessibilityRole: "header", children: intl.string(require("intl").t["3T2jbf"]) };
   const Text = require("Text/Text").Text;
   intl = require("intl").intl;
   items5 = [closure_8(Text, obj5), ];
-  const obj6 = { variant: "text-md/normal", color: "text-default", style: tmp.subtitle, children: intl2.string(require("intl").t.SXb73A) };
+  const obj6 = { variant: "body-md/normal", color: "text-default", style: tmp.subtitle, children: intl2.string(require("intl").t.SXb73A) };
   const Text2 = require("Text/Text").Text;
   intl2 = require("intl").intl;
   items5[1] = closure_8(Text2, obj6);

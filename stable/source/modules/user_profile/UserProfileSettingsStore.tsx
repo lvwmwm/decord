@@ -1,17 +1,19 @@
-// Module ID: 8731
-// Function ID: 8732
+// Module ID: 8835
+// Function ID: 8836
 // Name: UserProfileSettingsStore
-// Dependencies: [1072, 4876, 8732, 1073, 504, 8733, 572, 2]
+// Dependencies: [1072, 5032, 8836, 1073, 504, 8837, 572, 2]
 
-// Module 8731 (UserProfileSettingsStore)
+// Module 8835 (UserProfileSettingsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import RouteConstants from "RouteConstants" /* 1073 */;
-import FavoritesConstants from "FavoritesConstants" /* 4876 */;
-import NotificationsInboxConstants from "NotificationsInboxConstants" /* 8732 */;
-import BioMaxLengthExperiment from "BioMaxLengthExperiment" /* 8733 */;
+import FavoritesConstants from "FavoritesConstants" /* 5032 */;
+import NotificationsInboxConstants from "NotificationsInboxConstants" /* 8836 */;
+import BioMaxLengthExperiment from "BioMaxLengthExperiment" /* 8837 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
+
+let errors;
 
 let c3;
 let closure_4;
@@ -173,7 +175,6 @@ let obj2 = {
     }
   },
   USER_PROFILE_SETTINGS_SUBMIT_FAILURE: function handleFormSubmitFailure(arg0) {
-    let errors;
     ({ guildId, errors } = arg0);
     if (CLOSED !== FormStates.SUBMITTING) {
       return false;
@@ -330,7 +331,6 @@ let obj2 = {
     }
   },
   USER_PROFILE_UPDATE_FAILURE: function handleProfileUpdateFailure(arg0) {
-    let errors;
     ({ guildId, errors } = arg0);
     CLOSED = FormStates.OPEN;
     const tmp = closure_13;

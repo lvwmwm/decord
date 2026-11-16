@@ -1,10 +1,10 @@
-// Module ID: 10885
-// Function ID: 10886
+// Module ID: 11039
+// Function ID: 11040
 // Name: createProxyTicket
-// Dependencies: [5, 502, 1072, 1282, 5672, 2]
+// Dependencies: [5, 502, 1072, 1282, 5828, 2]
 // Exports: createProxyTicket, prefetchProxyTicket, rememberProxyTicket
 
-// Module 10885 (createProxyTicket)
+// Module 11039 (createProxyTicket)
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

@@ -1,19 +1,19 @@
-// Module ID: 18103
-// Function ID: 18104
+// Module ID: 18480
+// Function ID: 18481
 // Name: ChannelListPanelBackdrop
-// Dependencies: [19, 17, 1072, 21, 5014, 575, 18075, 1625, 17063, 18104, 2]
+// Dependencies: [19, 17, 1072, 21, 5170, 575, 18452, 1627, 17422, 18481, 2]
 // Exports: default
 
-// Module 18103 (ChannelListPanelBackdrop)
+// Module 18480 (ChannelListPanelBackdrop)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
-import QuestHooks from "QuestHooks" /* 17063 */;
-import useHomeDrawerGesture from "useHomeDrawerGesture" /* 18075 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
+import QuestHooks from "QuestHooks" /* 17422 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 18452 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;

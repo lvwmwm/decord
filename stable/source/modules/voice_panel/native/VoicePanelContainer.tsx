@@ -1,17 +1,17 @@
-// Module ID: 19157
-// Function ID: 19158
+// Module ID: 19571
+// Function ID: 19572
 // Name: VoicePanelContainer
-// Dependencies: [19, 4863, 6875, 21, 504, 19158, 19200, 4929, 5080, 2]
+// Dependencies: [19, 5019, 6963, 21, 504, 19572, 19614, 5085, 5231, 2]
 
-// Module 19157 (VoicePanelContainer)
+// Module 19571 (VoicePanelContainer)
 import Fragment from "Fragment" /* 21 */;
-import _slicedToArray from "_slicedToArray" /* 4929 */;
-import native from "native" /* 5080 */;
-import VoicePanelControllerDefault from "VoicePanelController" /* 19158 */;
-import VoicePanelUIDefault from "VoicePanelUI" /* 19200 */;
+import _slicedToArray from "_slicedToArray" /* 5085 */;
+import native from "native" /* 5231 */;
+import VoicePanelControllerDefault from "VoicePanelController" /* 19572 */;
+import VoicePanelUIDefault from "VoicePanelUI" /* 19614 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import VoicePanelStore from "VoicePanelStore" /* 6875 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import VoicePanelStore from "VoicePanelStore" /* 6963 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

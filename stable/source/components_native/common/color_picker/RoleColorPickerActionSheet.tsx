@@ -1,23 +1,21 @@
-// Module ID: 18362
-// Function ID: 18363
+// Module ID: 18736
+// Function ID: 18737
 // Name: RoleColorPickerActionSheet
-// Dependencies: [32, 19, 17, 1072, 21, 5014, 575, 16446, 9844, 5258, 16444, 5272, 7321, 1113, 5634, 17339, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5170, 575, 16796, 9997, 5406, 16794, 5420, 7415, 1113, 5790, 17699, 2]
 // Exports: default
 
-// Module 18362 (RoleColorPickerActionSheet)
+// Module 18736 (RoleColorPickerActionSheet)
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 16444 */;
-import ColorBlockDefault from "ColorBlock" /* 16446 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
+import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 16794 */;
+import ColorBlockDefault from "ColorBlock" /* 16796 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let ROLE_COLORS;
 let c9;
@@ -95,7 +93,7 @@ export default function RoleColorPickerActionSheet(color) {
     const obj = { color, onSelect };
     showCustomColorPickerActionSheetDefault(obj);
   }, items2);
-  BottomSheet = color(defaultColor[11]).BottomSheet;
+  const BottomSheet = color(defaultColor[11]).BottomSheet;
   const obj3 = { title: intl.string(color(defaultColor[13]).t.WTqQ5e), trailing: onSelect(Button, obj5) };
   const BottomSheetTitleHeader = color(defaultColor[12]).BottomSheetTitleHeader;
   intl = color(defaultColor[13]).intl;

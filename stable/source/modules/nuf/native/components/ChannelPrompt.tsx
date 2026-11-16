@@ -1,21 +1,21 @@
-// Module ID: 14359
-// Function ID: 14360
+// Module ID: 14623
+// Function ID: 14624
 // Name: ChannelPrompt
-// Dependencies: [5, 32, 19, 17, 4944, 4885, 21, 5014, 5586, 504, 1497, 6998, 1113, 7485, 6446, 7292, 6957, 1409, 5624, 7081, 5634, 7107, 2]
+// Dependencies: [5, 32, 19, 17, 5100, 5041, 21, 5170, 5746, 504, 1499, 7097, 1113, 7582, 6611, 7388, 7053, 1411, 5783, 7180, 5790, 7211, 2]
 // Exports: default
 
-// Module 14359 (ChannelPrompt)
+// Module 14623 (ChannelPrompt)
 import intl5 from "intl" /* 1113 */;
-import NavigatorConstants from "NavigatorConstants" /* 5586 */;
-import NavigatorHeader from "NavigatorHeader" /* 6998 */;
+import NavigatorConstants from "NavigatorConstants" /* 5746 */;
+import NavigatorHeader from "NavigatorHeader" /* 7097 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildChannelStore from "GuildChannelStore" /* 4944 */;
-import GuildStore from "GuildStore" /* 4885 */;
+import GuildChannelStore from "GuildChannelStore" /* 5100 */;
+import GuildStore from "GuildStore" /* 5041 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, navigation;
@@ -200,13 +200,13 @@ export default function ChannelPrompt(guildId) {
       guildIconURL = tmp18Result.getGuildIconURL(obj7);
     }
     items3 = [tmp15(tmp19, obj6), , , , , , ];
-    const obj9 = { style: tmp.guildName, lineClamp: 1, variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: stateFromStores.name };
+    const obj9 = { style: tmp.guildName, lineClamp: 1, variant: "body-sm/semibold", color: "mobile-text-heading-primary", children: stateFromStores.name };
     items3[1] = closure_10(guildId(tmp3[18]).Text, obj9);
-    const obj10 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(guildId(tmp3[12]).t["8VRa7d"]) };
+    const obj10 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(guildId(tmp3[12]).t["8VRa7d"]) };
     const Text = tmp2(tmp3[18]).Text;
     intl = tmp2(tmp3[12]).intl;
     items3[2] = closure_10(Text, obj10);
-    const obj11 = { style: tmp.subTitle, variant: "text-sm/medium", color: "text-default", children: intl2.string(guildId(tmp3[12]).t["+855Pm"]) };
+    const obj11 = { style: tmp.subTitle, variant: "body-sm/medium", color: "text-default", children: intl2.string(guildId(tmp3[12]).t["+855Pm"]) };
     const Text2 = tmp2(tmp3[18]).Text;
     intl2 = tmp2(tmp3[12]).intl;
     items3[3] = closure_10(Text2, obj11);

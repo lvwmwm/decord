@@ -1,15 +1,15 @@
-// Module ID: 10193
-// Function ID: 10194
+// Module ID: 10344
+// Function ID: 10345
 // Name: canForwardMessage
-// Dependencies: [4918, 4863, 4885, 4946, 1072, 1396, 504, 2]
+// Dependencies: [5074, 5019, 5041, 5102, 1072, 1403, 504, 2]
 // Exports: useCanForwardMessage
 
-// Module 10193 (canForwardMessage)
-import FlagUtils from "FlagUtils" /* 1396 */;
-import GatedChannelStore from "GatedChannelStore" /* 4918 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import PermissionStore from "PermissionStore" /* 4946 */;
+// Module 10344 (canForwardMessage)
+import FlagUtils from "FlagUtils" /* 1403 */;
+import GatedChannelStore from "GatedChannelStore" /* 5074 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import GuildStore from "GuildStore" /* 5041 */;
+import PermissionStore from "PermissionStore" /* 5102 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -109,7 +109,7 @@ function canForwardMessage(state, PermissionStore, GatedChannelStore, ChannelSto
   }
 }
 ({ GuildFeatures: metroRequire, MessageFlags, MessageStates: metroImportDefault, MessageTypesSets: metroImportAll, Permissions: c9 } = Constants);
-let closure_10 = MessageFlags.CROSSPOSTED | MessageFlags.FAILED_TO_MENTION_SOME_ROLES_IN_THREAD | MessageFlags.GUILD_FEED_HIDDEN | MessageFlags.HAS_SNAPSHOT | MessageFlags.HAS_THREAD | MessageFlags.IS_CROSSPOST | MessageFlags.IS_VOICE_MESSAGE | MessageFlags.SHOULD_SHOW_LINK_NOT_DISCORD_WARNING | MessageFlags.SUPPRESS_EMBEDS | MessageFlags.SUPPRESS_NOTIFICATIONS | MessageFlags.URGENT | MessageFlags.IS_COMPONENTS_V2 | MessageFlags.IS_GUILD_OFFICIAL | MessageFlags.IS_SCHEDULED;
+let closure_10 = MessageFlags.CROSSPOSTED | MessageFlags.FAILED_TO_MENTION_SOME_ROLES_IN_THREAD | MessageFlags.GUILD_FEED_HIDDEN | MessageFlags.HAS_SNAPSHOT | MessageFlags.HAS_THREAD | MessageFlags.IS_CROSSPOST | MessageFlags.IS_VOICE_MESSAGE | MessageFlags.SHOULD_SHOW_LINK_NOT_DISCORD_WARNING | MessageFlags.SUPPRESS_EMBEDS | MessageFlags.SUPPRESS_NOTIFICATIONS | MessageFlags.URGENT | MessageFlags.IS_COMPONENTS_V2 | MessageFlags.IS_GUILD_OFFICIAL;
 const result = size.fileFinishedImporting("modules/forwarding/canForwardMessage.tsx");
 
 export { canForwardMessage };

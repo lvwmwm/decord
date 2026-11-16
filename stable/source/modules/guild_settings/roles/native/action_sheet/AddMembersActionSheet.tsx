@@ -1,32 +1,31 @@
-// Module ID: 19778
-// Function ID: 19779
+// Module ID: 20229
+// Function ID: 20230
 // Name: AddMembersActionSheet
-// Dependencies: [32, 19, 17, 19772, 21, 5014, 575, 5082, 10819, 6989, 5607, 5656, 1187, 5023, 1113, 7294, 9062, 6901, 19777, 11, 9067, 7482, 5272, 7321, 5634, 9074, 5258, 5624, 2]
+// Dependencies: [32, 19, 17, 20223, 21, 5170, 575, 5232, 10970, 7088, 5767, 5812, 1187, 5179, 1113, 7390, 9175, 6989, 20228, 11, 9180, 7579, 5420, 7415, 5790, 9187, 5406, 5783, 2]
 // Exports: default
 
-// Module 19778 (AddMembersActionSheet)
+// Module 20229 (AddMembersActionSheet)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5023 */;
-import react_native2 from "react-native" /* 5082 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import RegexUtilsDefault from "RegexUtils" /* 5656 */;
-import GuildUtilsDefault from "GuildUtils" /* 6901 */;
-import FormCheckbox from "FormCheckbox" /* 6989 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9074 */;
-import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 10819 */;
-import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 19772 */;
-import GuildSettingsRolesUtils from "GuildSettingsRolesUtils" /* 19777 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5179 */;
+import react_native2 from "react-native" /* 5232 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
+import RegexUtilsDefault from "RegexUtils" /* 5812 */;
+import GuildUtilsDefault from "GuildUtils" /* 6989 */;
+import FormCheckbox from "FormCheckbox" /* 7088 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9187 */;
+import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 10970 */;
+import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 20223 */;
+import GuildSettingsRolesUtils from "GuildSettingsRolesUtils" /* 20228 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let BottomSheet;
 
 let c9;
 let metroImportAll;
@@ -292,7 +291,7 @@ export default function AddMembersActionSheet(guild) {
     const _Object = Object;
     tmp10 = Object.keys(pendingAdditions).length > MAX_BULK_ROLE_MEMBERS_ADD;
   }
-  BottomSheet = tmp6(tmp7[22]).BottomSheet;
+  const BottomSheet = tmp6(tmp7[22]).BottomSheet;
   const obj4 = { title: intl.string(guild(pendingAdditions[14]).t.ZYOK46), subtitle: role.name, trailing: closure_7(Button, obj5) };
   const BottomSheetTitleHeader = tmp6(tmp7[23]).BottomSheetTitleHeader;
   intl = tmp6(tmp7[14]).intl;
@@ -320,7 +319,7 @@ export default function AddMembersActionSheet(guild) {
   }
   const obj6 = { scrollable: true, header: closure_7(BottomSheetTitleHeader, obj4), startExpanded: true, children: closure_9(View, obj7) };
   obj7 = { style: tmp.container, children: items1 };
-  const obj8 = { variant: "text-sm/normal", style: tmp.addMembersDescription, children: intl3.format(guild(pendingAdditions[14]).t["3OxP4q"], obj9) };
+  const obj8 = { variant: "body-sm/normal", style: tmp.addMembersDescription, children: intl3.format(guild(pendingAdditions[14]).t["3OxP4q"], obj9) };
   const Text = tmp6(tmp7[27]).Text;
   intl3 = tmp6(tmp7[14]).intl;
   obj9 = { numMembers: MAX_BULK_ROLE_MEMBERS_ADD };

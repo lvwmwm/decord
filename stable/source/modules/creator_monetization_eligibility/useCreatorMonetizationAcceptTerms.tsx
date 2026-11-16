@@ -1,16 +1,16 @@
-// Module ID: 19874
-// Function ID: 19875
+// Module ID: 20325
+// Function ID: 20326
 // Name: useCreatorMonetizationAcceptTerms
-// Dependencies: [5, 32, 19, 4881, 4885, 1383, 504, 7435, 19875, 6447, 2]
+// Dependencies: [5, 32, 19, 5037, 5041, 1385, 504, 7532, 20326, 6612, 2]
 // Exports: default
 
-// Module 19874 (useCreatorMonetizationAcceptTerms)
-import GuildRecord from "GuildRecord" /* 4881 */;
+// Module 20325 (useCreatorMonetizationAcceptTerms)
+import GuildRecord from "GuildRecord" /* 5037 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import UserStore from "UserStore" /* 1383 */;
+import GuildStore from "GuildStore" /* 5041 */;
+import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

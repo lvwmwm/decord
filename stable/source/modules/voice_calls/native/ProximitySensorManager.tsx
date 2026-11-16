@@ -1,22 +1,22 @@
-// Module ID: 19596
-// Function ID: 19597
+// Module ID: 20046
+// Function ID: 20047
 // Name: ProximitySensorManager
-// Dependencies: [4862, 6714, 5764, 5784, 19597, 5785, 1375, 7287, 2]
+// Dependencies: [5018, 6801, 5925, 5945, 20047, 5946, 1377, 7383, 2]
 
-// Module 19596 (ProximitySensorManager)
-import VoiceCallTypes from "VoiceCallTypes" /* 5785 */;
-import react_nativeDefault from "react-native" /* 19597 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4862 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6714 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5764 */;
-import AudioRouteStore from "AudioRouteStore" /* 5784 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7287 */;
+// Module 20046 (ProximitySensorManager)
+import VoiceCallTypes from "VoiceCallTypes" /* 5946 */;
+import react_nativeDefault from "react-native" /* 20047 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5018 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6801 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5925 */;
+import AudioRouteStore from "AudioRouteStore" /* 5945 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7383 */;
 import size from "module_2" /* 2 */;
 
 let map;
 
 let tmp7;
-const PlatformUtils = tmp7(1375);
+const PlatformUtils = tmp7(1377);
 function handleChange() {
   const currentRouteType = AudioRouteStore.getCurrentRouteType();
   const isConnectedResult = RTCConnectionStore.isConnected();

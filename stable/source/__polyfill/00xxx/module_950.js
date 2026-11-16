@@ -120,7 +120,7 @@ function makeReplayDebugLogger() {
   }
   return obj;
 }
-const f79752 = (item) => {
+const f81100 = (item) => {
   mirror = mirror.mirror;
   return mirror.getId(item);
 };
@@ -3167,7 +3167,7 @@ function initInputObserver(sampling) {
       HermesBuiltin.arraySpread(items7, items1.map((item) => {
         let tmp;
         let tmp2;
-        const f79692 = () => {
+        const f81040 = () => {
           let ownPropertyDescriptor;
           const tmp3 = ownPropertyDescriptor || {};
           closure_0 = tmp;
@@ -3177,7 +3177,7 @@ function initInputObserver(sampling) {
           ownPropertyDescriptor = _Object.getOwnPropertyDescriptor(tmp, tmp2);
           const _Object2 = window.Object;
           _Object2.defineProperty(closure_0, closure_1, tmp3);
-          return f79692;
+          return f81040;
         };
         [tmp, tmp2] = item;
         obj = {
@@ -3238,7 +3238,7 @@ function initInputObserver(sampling) {
           }
         };
         _Object2.defineProperty(tmp, tmp2, obj2);
-        return f79692;
+        return f81040;
       }), 0);
       const tmp8 = mapped;
       HermesBuiltin.apply(push, items7, mapped);
@@ -3427,7 +3427,7 @@ function initObservers(doc) {
     ({ mousemoveCb: closure_0, sampling, doc, mirror: closure_1 } = doc);
     closure_2 = undefined;
     closure_3 = undefined;
-    let f79690;
+    let f81038;
     items = undefined;
     if (false === sampling.mousemove) {
       return () => {
@@ -3468,7 +3468,7 @@ function initObservers(doc) {
         closure_2 = {};
         let c3 = null;
         let c4 = 0;
-        f79690 = function() {
+        f81038 = function() {
           function clearTimeout$2() {
             items = [...arguments];
             const tmp = closure_1_71("clearTimeout");
@@ -6173,11 +6173,11 @@ function getLargestContentfulPaint(arg0) {
   obj = _mod681;
   const result = ((obj.browserPerformanceTimeOrigin() || _mod681.GLOBAL_OBJ.performance.timeOrigin) + value) / 1000;
   const obj2 = { type: "web-vital", name: "largest-contentful-paint", start: result, end: result, data: obj3 };
-  obj3 = { value, size: value, rating, nodeIds: mapped, attributions: "ind" };
+  obj3 = { value, size: value, rating, nodeIds: mapped, attributions: "fileBytes" };
   mapped = undefined;
   obj.browserPerformanceTimeOrigin() || _mod681.GLOBAL_OBJ.performance.timeOrigin;
   if (tmp3) {
-    mapped = tmp3.map(f79752);
+    mapped = tmp3.map(f81100);
   }
   return obj2;
 }
@@ -6235,11 +6235,11 @@ function getInteractionToNextPaint(arg0) {
   obj = _mod681;
   const result = ((obj.browserPerformanceTimeOrigin() || _mod681.GLOBAL_OBJ.performance.timeOrigin) + value) / 1000;
   const obj2 = { type: "web-vital", name: "interaction-to-next-paint", start: result, end: result, data: obj3 };
-  obj3 = { value, size: value, rating, nodeIds: mapped, attributions: "ind" };
+  obj3 = { value, size: value, rating, nodeIds: mapped, attributions: "fileBytes" };
   mapped = undefined;
   obj.browserPerformanceTimeOrigin() || _mod681.GLOBAL_OBJ.performance.timeOrigin;
   if (tmp3) {
-    mapped = tmp3.map(f79752);
+    mapped = tmp3.map(f81100);
   }
   return obj2;
 }
@@ -6255,7 +6255,7 @@ function getWebVital(value, name, items1, items) {
   mapped = undefined;
   obj.browserPerformanceTimeOrigin() || _mod681.GLOBAL_OBJ.performance.timeOrigin;
   if (items1) {
-    mapped = items1.map(f79752);
+    mapped = items1.map(f81100);
   }
   return obj2;
 }
@@ -9359,7 +9359,7 @@ let closure_82 = (() => {
                     } while (-2 === id1);
                     if (-1 !== id) {
                       if (-1 !== id1) {
-                        let obj3 = { doc: null, mirror: null, blockClass: null, blockSelector: null, maskAllText: null, unblockSelector: null, maskTextClass: null, unmaskTextClass: null, maskTextSelector: null, unmaskTextSelector: null, skipChild: true, newlyAddedElement: true, inlineStylesheet: null, maskInputOptions: null, maskAttributeFn: null, maskTextFn: null, maskInputFn: null, slimDOMOptions: null, dataURLOptions: null, recordCanvas: null, inlineImages: null, onSerialize() { /* body not rendered: F138738 */ }, onIframeLoad() { /* body not rendered: F138739 */ }, onStylesheetLoad() { /* body not rendered: F138740 */ }, onBlockedImageLoad() { /* body not rendered: F138741 */ }, ignoreCSSAttributes: self.ignoreCSSAttributes };
+                        let obj3 = { doc: null, mirror: null, blockClass: null, blockSelector: null, maskAllText: null, unblockSelector: null, maskTextClass: null, unmaskTextClass: null, maskTextSelector: null, unmaskTextSelector: null, skipChild: true, newlyAddedElement: true, inlineStylesheet: null, maskInputOptions: null, maskAttributeFn: null, maskTextFn: null, maskInputFn: null, slimDOMOptions: null, dataURLOptions: null, recordCanvas: null, inlineImages: null, onSerialize() { /* body not rendered: F141833 */ }, onIframeLoad() { /* body not rendered: F141834 */ }, onStylesheetLoad() { /* body not rendered: F141835 */ }, onBlockedImageLoad() { /* body not rendered: F141836 */ }, ignoreCSSAttributes: self.ignoreCSSAttributes };
                         ({ doc: obj2.doc, mirror: obj2.mirror, blockClass: obj2.blockClass, blockSelector: obj2.blockSelector, maskAllText: obj2.maskAllText, unblockSelector: obj2.unblockSelector, maskTextClass: obj2.maskTextClass, unmaskTextClass: obj2.unmaskTextClass, maskTextSelector: obj2.maskTextSelector, unmaskTextSelector: obj2.unmaskTextSelector, inlineStylesheet: obj2.inlineStylesheet, maskInputOptions: obj2.maskInputOptions, maskAttributeFn: obj2.maskAttributeFn, maskTextFn: obj2.maskTextFn, maskInputFn: obj2.maskInputFn, slimDOMOptions: obj2.slimDOMOptions, dataURLOptions: obj2.dataURLOptions, recordCanvas: obj2.recordCanvas, inlineImages: obj2.inlineImages } = self);
                         const tmp25 = closure_3_58(value, obj3);
                         if (tmp25) {
@@ -9719,7 +9719,7 @@ let closure_82 = (() => {
                 let addedSet2;
                 let id1;
                 let tmp28;
-                const f79696 = function() { /* body not rendered: F79696 */ };
+                const f81044 = function() { /* body not rendered: F81044 */ };
                 const mirror = self.mirror;
                 const id = mirror.getId(childNodes);
                 target = target.target;
@@ -9755,7 +9755,7 @@ let closure_82 = (() => {
                     addedSet2.delete(childNodes);
                     childNodes = childNodes.childNodes;
                     if (childNodes != null) {
-                      let item = childNodes.forEach(f79696);
+                      let item = childNodes.forEach(f81044);
                     }
                     const droppedSet = tmp.droppedSet;
                     droppedSet.add(childNodes);
@@ -9839,7 +9839,7 @@ let closure_82 = (() => {
                             movedSet2.delete(childNodes);
                             const childNodes1 = childNodes.childNodes;
                             if (childNodes1 != null) {
-                              const item1 = childNodes1.forEach(f79696);
+                              const item1 = childNodes1.forEach(f81044);
                             }
                           }
                         } else {
@@ -10997,14 +10997,14 @@ try {
           });
         }
         const arr = closure_111.push(fn);
-        const f79746 = () => {
+        const f81094 = () => {
 
         };
         this._teardown = () => {
-          if (typeof f79746 === "function") {
+          if (typeof f81094 === "function") {
             let num2 = -1;
             if (closure_1_111) {
-              num2 = arr.indexOf(f79746);
+              num2 = arr.indexOf(f81094);
             }
             if (num2 > -1) {
               closure_1_111.splice(num2, 1);
@@ -11313,7 +11313,7 @@ try {
         obj = _mod681;
         const result = ((obj.browserPerformanceTimeOrigin() || _mod681.GLOBAL_OBJ.performance.timeOrigin) + startTime) / 1000;
         obj.browserPerformanceTimeOrigin() || _mod681.GLOBAL_OBJ.performance.timeOrigin;
-        return { type: entryType, name, start: result, end: result + duration, data: "ind" };
+        return { type: entryType, name, start: result, end: result + duration, data: "fileBytes" };
       },
     navigation: function createNavigationEntry(arg0) {
         let domComplete;
@@ -12063,14 +12063,14 @@ try {
         const debounce = tmp4.debounce;
         let merged = Object.assign(obj2);
         this._debouncedFlush = debounce(() => self._flush(), flushMinDelay, obj3);
-        const f120854 = (timestamp, arg1) => {
+        const f122817 = (timestamp, arg1) => {
           let resolved;
           let flag = false;
-          if (f120854.eventBuffer) {
+          if (f122817.eventBuffer) {
             flag = false;
-            if (!f120854.isPaused()) {
+            if (!f122817.isPaused()) {
               flag = false;
-              if (f120854.isEnabled()) {
+              if (f122817.isEnabled()) {
                 timestamp = timestamp.timestamp;
                 let result = timestamp;
                 if (timestamp <= 9999999999) {
@@ -13765,7 +13765,7 @@ try {
           }
         }
         function setupPerformanceObserver(self) {
-          const f79751 = (metric) => {
+          const f81099 = (metric) => {
             const prop = closure_1.replayPerformanceEntries;
             prop.push(closure_0(metric.metric));
           };
@@ -13792,14 +13792,14 @@ try {
           let push = items.push;
           obj = performanceEntries(addPerformanceEntry[9]);
           performanceEntries = closure_125;
-          const result = obj.addLcpInstrumentationHandler(f79751);
+          const result = obj.addLcpInstrumentationHandler(f81099);
           const obj2 = performanceEntries(addPerformanceEntry[9]);
           performanceEntries = closure_127;
-          const result1 = obj2.addClsInstrumentationHandler(f79751);
+          const result1 = obj2.addClsInstrumentationHandler(f81099);
           const obj3 = performanceEntries(addPerformanceEntry[9]);
           performanceEntries = closure_128;
           closure_1 = self;
-          push(result, result1, obj3.addInpInstrumentationHandler(f79751));
+          push(result, result1, obj3.addInpInstrumentationHandler(f81099));
           return () => {
             const item = items.forEach((fn) => fn());
           };
@@ -14422,7 +14422,7 @@ try {
         let maskFn;
         let onError;
         let workerUrl;
-        const f79781 = (item) => item.toLowerCase();
+        const f81129 = (item) => item.toLowerCase();
         obj = arg0;
         if (arg0 === undefined) {
           obj = {};
@@ -14590,8 +14590,8 @@ try {
         const merged = Object.assign(obj2);
         this._recordingOptions = obj3;
         obj4 = { flushMinDelay: num, flushMaxDelay: num2, minReplayDuration: Math.min(num3, 50000), maxReplayDuration: Math.min(num4, c15), stickySession: flag, useCompression: flag2, workerUrl, blockAllMedia: flag5, maskAllInputs: flag4, maskAllText: flag3, mutationBreadcrumbLimit: num5, mutationLimit: num6, slowClickTimeout: num7, slowClickIgnoreSelectors: prop, networkDetailAllowUrls: prop1, networkDetailDenyUrls: prop2, networkCaptureBodies: flag6, networkRequestHeaders: items5, networkResponseHeaders: items6, beforeAddRecordingEvent, beforeErrorSampling, onError, attachRawBodyFromRequest, _experiments };
-        items5 = [...closure_180, ...prop3.map(f79781)];
-        items6 = [...closure_180, ...prop4.map(f79781)];
+        items5 = [...closure_180, ...prop3.map(f81129)];
+        items6 = [...closure_180, ...prop4.map(f81129)];
         this._initialOptions = obj4;
         if (this._initialOptions.blockAllMedia) {
           let combined;

@@ -1,21 +1,21 @@
-// Module ID: 15375
-// Function ID: 15376
+// Module ID: 15697
+// Function ID: 15698
 // Name: Footer
-// Dependencies: [19, 17, 21, 5014, 15376, 7351, 5624, 1113, 5634, 5717, 15377, 2]
+// Dependencies: [19, 17, 21, 5170, 15698, 7445, 5783, 1113, 5790, 5874, 15699, 2]
 // Exports: default
 
-// Module 15375 (Footer)
+// Module 15697 (Footer)
 import react_native from "react-native" /* 17 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7351 */;
-import useOpenPremiumMarketingPaymentDefault from "useOpenPremiumMarketingPayment" /* 15376 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15377 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import components_Button_Button from "components/Button/Button" /* 5790 */;
+import FastImageDefault from "FastImage" /* 5874 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7445 */;
+import useOpenPremiumMarketingPaymentDefault from "useOpenPremiumMarketingPayment" /* 15698 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15699 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -42,7 +42,7 @@ export default function Footer(showSubscribeButton) {
   let tmp8Result = showSubscribeButton;
   if (tmp8Result) {
     const obj2 = { children: items1 };
-    const obj3 = { style: tmp.footerText, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(intl2.t["2bSPbq"]) };
+    const obj3 = { style: tmp.footerText, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(intl2.t["2bSPbq"]) };
     const Text = Text_Text.Text;
     intl = intl2.intl;
     items1 = [React3(Text, obj3), ];

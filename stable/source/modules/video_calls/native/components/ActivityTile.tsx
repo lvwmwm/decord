@@ -1,25 +1,25 @@
-// Module ID: 11787
-// Function ID: 11788
+// Module ID: 11982
+// Function ID: 11983
 // Name: ActivityTile
-// Dependencies: [5, 32, 19, 17, 4862, 1383, 1072, 1191, 11694, 21, 1187, 5014, 575, 504, 1379, 7330, 6041, 5068, 11788, 7326, 7351, 10049, 1113, 11790, 11697, 11792, 11793, 6980, 11794, 11841, 5624, 5635, 5080, 2]
+// Dependencies: [5, 32, 19, 17, 5018, 1385, 1072, 1191, 11887, 21, 1187, 5170, 575, 504, 1380, 7424, 6205, 5226, 11983, 7420, 7445, 10202, 1113, 11985, 11892, 11987, 11988, 7076, 11989, 12036, 5783, 5791, 5231, 2]
 // Exports: default
 
-// Module 11787 (ActivityTile)
+// Module 11982 (ActivityTile)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import FormConstants from "FormConstants" /* 1191 */;
-import native2 from "native" /* 5080 */;
-import Constants2 from "Constants" /* 11694 */;
-import handlePressJoinActivityDefault from "handlePressJoinActivity" /* 11793 */;
+import native2 from "native" /* 5231 */;
+import Constants2 from "Constants" /* 11887 */;
+import handlePressJoinActivityDefault from "handlePressJoinActivity" /* 11988 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4862 */;
-import UserStore from "UserStore" /* 1383 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5018 */;
+import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let applicationId, c2;
@@ -265,7 +265,7 @@ function ActivityTileInner(participant) {
     };
     const SummarizedIconRow = tmp5(tmp3[10]).SummarizedIconRow;
     items5 = [closure_10(SummarizedIconRow, obj12), , , ];
-    const obj13 = { style: tmp.subtitleText, lineClamp: 2, variant: "text-sm/normal", children: formatToPlainStringResult };
+    const obj13 = { style: tmp.subtitleText, lineClamp: 2, variant: "body-sm/normal", children: formatToPlainStringResult };
     items5[1] = closure_10(tmp5(tmp3[30]).Text, obj13);
     const obj14 = { style: tmp.titleText, children: name1 };
     items5[2] = closure_10(tmp5(tmp3[10]).LegacyText, obj14);

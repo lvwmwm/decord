@@ -98,7 +98,7 @@ class BaseApexExperimentStore extends PersistedStore {
           tmp12[key10020] = v3Result;
           tmp9 = v3Result;
         }
-        let obj3 = { hashedName: tmp9, variantId: buildOverrideExperiments[key10020], isOverride: true, exposureTrackingEnabled: false, useAsEligibility: false };
+        let obj3 = { hashedName: tmp9, variantId: buildOverrideExperiments[key10020], isOverride: true, isAppLaunch: false, exposureTrackingEnabled: false, useAsEligibility: false };
         closure_13[key10020] = obj3;
         continue;
       }
@@ -154,7 +154,7 @@ class BaseApexExperimentStore extends PersistedStore {
                 if (tmp19 == null) {
                   num = 0;
                 }
-                let obj2 = { hashedName: tmp17, variantId: tmp18, trackedVariantId: tmp21, isOverride: num & ApexTypes.ExperimentFlags.IsOverride, revision: tmp20, exposureTrackingEnabled: num & ApexTypes.ExperimentFlags.ExposureTrackingEnabled, useAsEligibility: num & ApexTypes.ExperimentFlags.UseAsEligibility, config: tmp22 };
+                let obj2 = { hashedName: tmp17, variantId: tmp18, trackedVariantId: tmp21, isOverride: num & ApexTypes.ExperimentFlags.IsOverride, isAppLaunch: num & ApexTypes.ExperimentFlags.IsAppLaunch, revision: tmp20, exposureTrackingEnabled: num & ApexTypes.ExperimentFlags.ExposureTrackingEnabled, useAsEligibility: num & ApexTypes.ExperimentFlags.UseAsEligibility, config: tmp22 };
                 let assignments = tmp10.assignments;
                 assignments[tmp17] = obj2;
                 continue;
@@ -201,7 +201,7 @@ class BaseApexExperimentStore extends PersistedStore {
         if (tmp16 == null) {
           num = 0;
         }
-        let obj3 = { hashedName: tmp14, variantId: tmp15, trackedVariantId: tmp18, isOverride: num & ApexTypes.ExperimentFlags.IsOverride, revision: tmp17, exposureTrackingEnabled: num & ApexTypes.ExperimentFlags.ExposureTrackingEnabled, useAsEligibility: num & ApexTypes.ExperimentFlags.UseAsEligibility };
+        let obj3 = { hashedName: tmp14, variantId: tmp15, trackedVariantId: tmp18, isOverride: num & ApexTypes.ExperimentFlags.IsOverride, isAppLaunch: num & ApexTypes.ExperimentFlags.IsAppLaunch, revision: tmp17, exposureTrackingEnabled: num & ApexTypes.ExperimentFlags.ExposureTrackingEnabled, useAsEligibility: num & ApexTypes.ExperimentFlags.UseAsEligibility };
         tmp8.assignments[tmp14] = obj3;
         continue;
       }
@@ -218,7 +218,7 @@ class BaseApexExperimentStore extends PersistedStore {
       tmp2[experimentName] = v3Result;
       tmp3 = v3Result;
     }
-    obj[experimentName] = { hashedName: tmp3, variantId, isOverride: true, exposureTrackingEnabled: false };
+    obj[experimentName] = { hashedName: tmp3, variantId, isOverride: true, isAppLaunch: false, exposureTrackingEnabled: false };
     closure_11 = obj;
     const result = this.trackExposureSuppression(experimentName, "client_override");
   }
@@ -236,7 +236,7 @@ class BaseApexExperimentStore extends PersistedStore {
       tmp2[experimentName] = v3Result;
       tmp3 = v3Result;
     }
-    obj[experimentName] = { hashedName: tmp3, variantId, isOverride: true, exposureTrackingEnabled: false };
+    obj[experimentName] = { hashedName: tmp3, variantId, isOverride: true, isAppLaunch: false, exposureTrackingEnabled: false };
     closure_12 = obj;
   }
   deleteSessionOverride(experimentName) {

@@ -1,10 +1,10 @@
-// Module ID: 4941
-// Function ID: 4942
+// Module ID: 5097
+// Function ID: 5098
 // Name: SecondaryIndexMap
-// Dependencies: [32, 4942, 2]
+// Dependencies: [32, 5098, 2]
 
-// Module 4941 (SecondaryIndexMap)
-import sortedIndexByDefault from "sortedIndexBy" /* 4942 */;
+// Module 5097 (SecondaryIndexMap)
+import sortedIndexByDefault from "sortedIndexBy" /* 5098 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

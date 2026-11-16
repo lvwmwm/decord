@@ -1,20 +1,20 @@
-// Module ID: 8700
-// Function ID: 8701
+// Module ID: 8804
+// Function ID: 8805
 // Name: InteractionUtils
-// Dependencies: [5, 502, 8389, 1072, 11, 8202, 8701, 6070, 1282, 1992, 7636, 8702, 572, 6071, 2, 6068]
+// Dependencies: [5, 502, 8493, 1072, 11, 8304, 8805, 6235, 1282, 2116, 7745, 8806, 572, 6236, 2, 6233]
 // Exports: canRetryInteractionData, executeMessageComponentInteraction, getInteractionInitialResponseDeadlineTimestamp, getInteractionStatusViewState, getInteractionTimeoutTimestamp
 
-// Module 8700 (InteractionUtils)
+// Module 8804 (InteractionUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import Server from "Server" /* 1992 */;
-import interactionCallbackErrorReason from "interactionCallbackErrorReason" /* 6068 */;
-import InteractionTypes from "InteractionTypes" /* 6070 */;
-import InteractionActionCreators from "InteractionActionCreators" /* 8701 */;
-import _slicedToArray from "_slicedToArray" /* 8702 */;
+import Server from "Server" /* 2116 */;
+import interactionCallbackErrorReason from "interactionCallbackErrorReason" /* 6233 */;
+import InteractionTypes from "InteractionTypes" /* 6235 */;
+import InteractionActionCreators from "InteractionActionCreators" /* 8805 */;
+import _slicedToArray from "_slicedToArray" /* 8806 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import InteractionStore from "InteractionStore" /* 8389 */;
+import InteractionStore from "InteractionStore" /* 8493 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -203,7 +203,7 @@ function handleInteractionResponse(nonce, ok, applicationId, channelId, guildId)
                   dispatch2(obj2);
                 }
                 let message;
-                const setFailed2 = tmp26(8701).setFailed;
+                const setFailed2 = tmp26(8805).setFailed;
                 InteractionActionCreators;
                 if (firstSkemaError != null) {
                   message = firstSkemaError.message;
@@ -378,7 +378,7 @@ export function canRetryInteractionData(interactionData) {
           } else {
             tmp4 = options1;
             items = options1;
-            if (options1[0].type !== tmp7(1992).ApplicationCommandOptionType.SUB_COMMAND) {
+            if (options1[0].type !== tmp7(2116).ApplicationCommandOptionType.SUB_COMMAND) {
               break;
             }
           }

@@ -1,16 +1,16 @@
-// Module ID: 12055
-// Function ID: 12056
+// Module ID: 12251
+// Function ID: 12252
 // Name: ModeratorStartStageHeader
-// Dependencies: [19, 17, 21, 5014, 5586, 12016, 12012, 2]
+// Dependencies: [19, 17, 21, 5170, 5746, 12214, 12210, 2]
 
-// Module 12055 (ModeratorStartStageHeader)
+// Module 12251 (ModeratorStartStageHeader)
 import react_native from "react-native" /* 17 */;
-import NavigatorConstants from "NavigatorConstants" /* 5586 */;
-import StageActionHeader from "StageActionHeader" /* 12012 */;
-import useMyCurrentStageChannelRoleDefault from "useMyCurrentStageChannelRole" /* 12016 */;
+import NavigatorConstants from "NavigatorConstants" /* 5746 */;
+import StageActionHeader from "StageActionHeader" /* 12210 */;
+import useMyCurrentStageChannelRoleDefault from "useMyCurrentStageChannelRole" /* 12214 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -36,7 +36,7 @@ const memoResult = react.memo(function ModeratorStartStageHeader(channel) {
   const tmp6 = View;
   if (speaker) {
     const obj2 = { channelId: channel.id };
-    speaker = tmp7(tmp8(12012).MusicMuteButton, obj2);
+    speaker = tmp7(tmp8(12210).MusicMuteButton, obj2);
   }
   items[2] = speaker;
   const obj3 = { channelId: channel.id };

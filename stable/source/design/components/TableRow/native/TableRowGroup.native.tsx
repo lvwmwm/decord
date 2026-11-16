@@ -1,19 +1,19 @@
-// Module ID: 7060
-// Function ID: 7061
+// Module ID: 7159
+// Function ID: 7160
 // Name: TableRowGroup
-// Dependencies: [19, 17, 21, 5014, 575, 5624, 5596, 6972, 6976, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 5783, 5756, 7068, 7072, 2]
 // Exports: TableRowGroup
 
-// Module 7060 (TableRowGroup)
+// Module 7159 (TableRowGroup)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useToken from "useToken" /* 5596 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import TableRowDivider from "TableRowDivider" /* 6972 */;
-import react2 from "react" /* 6976 */;
+import useToken from "useToken" /* 5756 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import TableRowDivider from "TableRowDivider" /* 7068 */;
+import react2 from "react" /* 7072 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let c1, importDefault;
@@ -30,7 +30,7 @@ class TableRowGroupTitle {
     let style;
     let title;
     ({ title, style, lineClamp } = arg0);
-    const obj = { accessibilityRole: "header", variant: "text-md/medium", color: "text-subtle", style: items, lineClamp, children: title };
+    const obj = { accessibilityRole: "header", variant: "body-md/medium", color: "text-subtle", style: items, lineClamp, children: title };
     items = [closure_8().title, style];
     closure_8();
     return hasOwnProperty(Text_Text.Text, obj);
@@ -101,7 +101,7 @@ export function TableRowGroup(children) {
   items = [tmp6Result, , , ];
   let tmp6Result3 = null != description;
   if (tmp6Result3) {
-    const obj4 = { variant: "text-sm/normal", color: "text-subtle", style: tmp.description, children: description };
+    const obj4 = { variant: "body-sm/normal", color: "text-subtle", style: tmp.description, children: description };
     tmp6Result3 = tmp6(Text_Text.Text, obj4);
   }
   items[1] = tmp6Result3;

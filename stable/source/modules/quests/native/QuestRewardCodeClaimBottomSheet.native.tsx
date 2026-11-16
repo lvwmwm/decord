@@ -1,26 +1,25 @@
-// Module ID: 14694
-// Function ID: 14695
+// Module ID: 14959
+// Function ID: 14960
 // Name: QuestRewardCodeClaimBottomSheet
-// Dependencies: [19, 17, 7846, 6781, 21, 5014, 575, 1625, 504, 14695, 5712, 1113, 5258, 9700, 7358, 5731, 14696, 5272, 7321, 5624, 5754, 7060, 6975, 5634, 14699, 2]
+// Dependencies: [19, 17, 7955, 6869, 21, 5170, 575, 1627, 504, 14960, 5869, 1113, 5406, 9823, 7451, 5887, 14961, 5420, 7415, 5783, 5911, 7159, 7071, 5790, 14964, 2]
 // Exports: default
 
-// Module 14694 (QuestRewardCodeClaimBottomSheet)
+// Module 14959 (QuestRewardCodeClaimBottomSheet)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
-import QuestConstants from "QuestConstants" /* 6781 */;
-import ClipboardUtils from "ClipboardUtils" /* 7358 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 9700 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5869 */;
+import QuestConstants from "QuestConstants" /* 6869 */;
+import ClipboardUtils from "ClipboardUtils" /* 7451 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 9823 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import QuestStore from "QuestStore" /* 7846 */;
+import QuestStore from "QuestStore" /* 7955 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let BottomSheet;
 
 let c9;
 let closure_4;
@@ -161,14 +160,14 @@ function QuestRewardCodeClaimBottomSheet(quest) {
     isFetchingRewardCode = null == code;
   }
   const obj6 = { header: closure_8(BottomSheetTitleHeader, obj7), startExpanded: true, children: null };
-  BottomSheet = tmp4(tmp2[17]).BottomSheet;
+  const BottomSheet = tmp4(tmp2[17]).BottomSheet;
   obj7 = { title: intl.string(tmp4(hasError[11]).t.srzsU2) };
   BottomSheetTitleHeader = tmp4(tmp2[18]).BottomSheetTitleHeader;
   intl = tmp4(tmp2[11]).intl;
   const obj8 = { style: tmp3.wrapper, children: null };
   let tmp16Result = null != rewardCode && null != rewardCodeRedemptionInstructions;
   if (tmp16Result) {
-    const obj9 = { style: tmp3.redemptionInstructions, variant: "text-md/normal", color: "text-default", children: tmpResult.parse(rewardCodeRedemptionInstructions, true, { allowLinks: true }) };
+    const obj9 = { style: tmp3.redemptionInstructions, variant: "body-md/normal", color: "text-default", children: tmpResult.parse(rewardCodeRedemptionInstructions, true, { allowLinks: true }) };
     const Text = tmp4(tmp2[19]).Text;
     tmpResult = tmp(hasError[20]);
     tmp16Result = tmp16(Text, obj9);

@@ -1,9 +1,9 @@
-// Module ID: 17021
-// Function ID: 17022
+// Module ID: 17378
+// Function ID: 17379
 // Name: OrbsArcadeNativeConstants
 // Dependencies: [2]
 
-// Module 17021 (OrbsArcadeNativeConstants)
+// Module 17378 (OrbsArcadeNativeConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/orbs_arcade/native/OrbsArcadeNativeConstants.tsx");

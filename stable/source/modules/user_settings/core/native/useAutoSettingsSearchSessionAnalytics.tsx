@@ -1,16 +1,16 @@
-// Module ID: 18990
-// Function ID: 18991
+// Module ID: 19400
+// Function ID: 19401
 // Name: useAutoSettingsSearchSessionAnalytics
-// Dependencies: [19, 1993, 16585, 504, 1092, 6732, 5593, 7166, 2]
+// Dependencies: [19, 2117, 16938, 504, 1092, 6819, 5753, 7261, 2]
 // Exports: useAutoSettingsSearchSessionAnalytics
 
-// Module 18990 (useAutoSettingsSearchSessionAnalytics)
-import useMountEffectDefault from "useMountEffect" /* 5593 */;
-import usePreviousDefault from "usePrevious" /* 6732 */;
-import SettingSearchSessionAnalyticsManagerDefault from "SettingSearchSessionAnalyticsManager" /* 7166 */;
+// Module 19400 (useAutoSettingsSearchSessionAnalytics)
+import useMountEffectDefault from "useMountEffect" /* 5753 */;
+import usePreviousDefault from "usePrevious" /* 6819 */;
+import SettingSearchSessionAnalyticsManagerDefault from "SettingSearchSessionAnalyticsManager" /* 7261 */;
 import react from "react" /* 19 */;
-import AppStateStore from "AppStateStore" /* 1993 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 16585 */;
+import AppStateStore from "AppStateStore" /* 2117 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 16938 */;
 import size from "module_2" /* 2 */;
 
 let importDefault, isFocused, state;

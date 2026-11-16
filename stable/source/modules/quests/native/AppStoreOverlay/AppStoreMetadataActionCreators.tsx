@@ -1,14 +1,14 @@
-// Module ID: 14664
-// Function ID: 14665
+// Module ID: 14929
+// Function ID: 14930
 // Name: AppStoreMetadataActionCreators
-// Dependencies: [5, 2062, 1072, 1089, 572, 1282, 559, 2]
+// Dependencies: [5, 2186, 1072, 1089, 572, 1282, 559, 2]
 // Exports: fetchAppStoreMetadata, getAppStoreMetadataCacheKey
 
-// Module 14664 (AppStoreMetadataActionCreators)
+// Module 14929 (AppStoreMetadataActionCreators)
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LocaleStore from "LocaleStore" /* 2062 */;
+import LocaleStore from "LocaleStore" /* 2186 */;
 import Dispatcher from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 

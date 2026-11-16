@@ -1,14 +1,14 @@
-// Module ID: 14959
-// Function ID: 14960
+// Module ID: 12584
+// Function ID: 12585
 // Name: WidgetActionCreators
-// Dependencies: [5, 1383, 1072, 572, 1282, 7780, 1242, 2]
+// Dependencies: [5, 1385, 1072, 572, 1282, 7889, 1242, 2]
 
-// Module 14959 (WidgetActionCreators)
+// Module 12584 (WidgetActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1383 */;
+import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 let c2, c6, c7, closure_4, constants, currentUser;
@@ -20,8 +20,8 @@ let obj = {
     const obj2 = { type: "WIDGET_PENDING_SET", widgets: items };
     obj.dispatch(obj2);
   },
-  savePendingWidgets(arg0) {
-    let closure_0 = arg0;
+  savePendingWidgets(items) {
+    let closure_0 = items;
     return (async (arg0, value) => {
       let closure_1;
       let obj4;

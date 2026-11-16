@@ -1,20 +1,20 @@
-// Module ID: 14493
-// Function ID: 14494
+// Module ID: 14758
+// Function ID: 14759
 // Name: PremiumGiftDMPurchaseSuccess
-// Dependencies: [19, 17, 21, 5014, 575, 10562, 1497, 10610, 10559, 5634, 1113, 2602, 10697, 5624, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 10713, 1499, 10763, 10710, 5790, 1113, 2728, 10848, 5783, 2]
 // Exports: PremiumGiftDMSuccessActions, default
 
-// Module 14493 (PremiumGiftDMPurchaseSuccess)
+// Module 14758 (PremiumGiftDMPurchaseSuccess)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import PremiumGiftModal from "PremiumGiftModal" /* 10559 */;
-import NativeGiftContext from "NativeGiftContext" /* 10562 */;
-import PremiumGiftBackgroundAnimationDefault from "PremiumGiftBackgroundAnimation" /* 10697 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import PremiumGiftModal from "PremiumGiftModal" /* 10710 */;
+import NativeGiftContext from "NativeGiftContext" /* 10713 */;
+import PremiumGiftBackgroundAnimationDefault from "PremiumGiftBackgroundAnimation" /* 10848 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -44,11 +44,11 @@ export default function PremiumGiftDMSuccessBody() {
   const obj = NativeGiftContext;
   const obj3 = { children: hasOwnProperty(PremiumGiftBackgroundAnimationDefault, { giftStyle: obj.useNativeGiftContext().giftStyle }) };
   items[0] = hasOwnProperty(View, obj3);
-  const obj4 = { style: tmp.title, variant: "heading-lg/bold", children: intl.string(intl3.t.MqZXbv) };
+  const obj4 = { style: tmp.title, variant: "heading-lg/semibold", children: intl.string(intl3.t.MqZXbv) };
   const Text = Text_Text.Text;
   intl = intl3.intl;
   items[1] = hasOwnProperty(Text, obj4);
-  const obj5 = { style: tmp.description, variant: "text-md/medium", children: intl2.string(intl3.t.Y1keV0) };
+  const obj5 = { style: tmp.description, variant: "body-md/medium", children: intl2.string(intl3.t.Y1keV0) };
   const Text2 = Text_Text.Text;
   intl2 = intl3.intl;
   items[2] = hasOwnProperty(Text2, obj5);

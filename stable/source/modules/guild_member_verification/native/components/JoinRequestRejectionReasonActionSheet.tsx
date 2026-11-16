@@ -1,17 +1,17 @@
-// Module ID: 14210
-// Function ID: 14211
+// Module ID: 14475
+// Function ID: 14476
 // Name: JoinRequestRejectionReasonActionSheet
-// Dependencies: [5, 32, 19, 21, 5014, 8741, 6916, 5048, 5712, 1113, 5258, 5272, 7292, 7253, 6767, 5634, 2]
+// Dependencies: [5, 32, 19, 21, 5170, 8845, 7004, 5206, 5869, 1113, 5406, 5420, 7388, 7349, 6855, 5790, 2]
 
-// Module 14210 (JoinRequestRejectionReasonActionSheet)
+// Module 14475 (JoinRequestRejectionReasonActionSheet)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet, c4;
+let c4;
 
 let metroImportDefault;
 let metroRequire;
@@ -132,7 +132,7 @@ class JoinRequestRejectionReasonActionSheet {
       }
     }), items);
     let obj2 = { bodyStyles: tmp.container, onDismiss, ref: bottomSheetRef, children: closure_7(SafeAreaPaddingView, obj3) };
-    BottomSheet = onError(guildId[11]).BottomSheet;
+    const BottomSheet = onError(guildId[11]).BottomSheet;
     obj3 = { bottom: true, children: items1 };
     SafeAreaPaddingView = onError(guildId[12]).SafeAreaPaddingView;
     let obj4 = { label: intl.string(onError(guildId[9]).t["mFP/qw"]), maxLength: 160, onChange: tmp4, value };

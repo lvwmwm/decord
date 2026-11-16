@@ -1,19 +1,19 @@
-// Module ID: 8374
-// Function ID: 8375
+// Module ID: 8478
+// Function ID: 8479
 // Name: InAppReportsTextLineElement
-// Dependencies: [5, 32, 19, 17, 21, 5014, 575, 5612, 6031, 1375, 4971, 5709, 5624, 5634, 1113, 7358, 5711, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5170, 575, 5771, 6195, 1377, 5127, 5866, 5783, 5790, 1113, 7451, 5868, 2]
 // Exports: default
 
-// Module 8374 (InAppReportsTextLineElement)
+// Module 8478 (InAppReportsTextLineElement)
 import nativeDefault from "native" /* 575 */;
-import ToastUtils from "ToastUtils" /* 5711 */;
-import ClipboardUtils from "ClipboardUtils" /* 7358 */;
+import ToastUtils from "ToastUtils" /* 5868 */;
+import ClipboardUtils from "ClipboardUtils" /* 7451 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -144,16 +144,16 @@ export default function TextLineElement(element) {
   if (is_localized) {
     let stringResult;
     obj = { style: tmp.container, children: items };
-    let obj2 = { style: tmp.header, variant: "heading-md/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: title };
+    let obj2 = { style: tmp.header, variant: "heading-sm/semibold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: title };
     const tmp7 = tmp3 ? tmp.smsNumberContainerSuccess : {};
     items = [closure_9(sms(tmp4[12]).Text, obj2), , ];
-    let obj3 = { style: tmp.description, variant: "text-md/medium", children: tmp5(body) };
+    let obj3 = { style: tmp.description, variant: "body-md/medium", children: tmp5(body) };
     const Text = sms(tmp4[12]).Text;
     items[1] = closure_9(Text, obj3);
     let obj4 = { style: tmp.smsInfoContainer, children: items3 };
     let obj5 = { style: items1, children: items2 };
     items1 = [tmp.smsNumberContainer, tmp7];
-    const obj6 = { variant: "text-sm/semibold", color: "interactive-text-active", children: sms };
+    const obj6 = { variant: "body-sm/semibold", color: "interactive-text-active", children: sms };
     items2 = [closure_9(sms(tmp4[12]).Text, obj6), ];
     const obj7 = { style: tmp.trailingButtonContainer, children: closure_9(Button, obj8) };
     Button = sms(tmp4[13]).Button;

@@ -1,12 +1,12 @@
-// Module ID: 16414
-// Function ID: 16415
+// Module ID: 16764
+// Function ID: 16765
 // Name: useRequestGatewaySocket
-// Dependencies: [19, 6872, 10212, 2]
+// Dependencies: [19, 6960, 10363, 2]
 // Exports: useRequestGatewaySocket
 
-// Module 16414 (useRequestGatewaySocket)
-import DiscordAppStateDefault from "DiscordAppState" /* 6872 */;
-import RequestGatewaySocketAll from "RequestGatewaySocket" /* 10212 */;
+// Module 16764 (useRequestGatewaySocket)
+import DiscordAppStateDefault from "DiscordAppState" /* 6960 */;
+import RequestGatewaySocketAll from "RequestGatewaySocket" /* 10363 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

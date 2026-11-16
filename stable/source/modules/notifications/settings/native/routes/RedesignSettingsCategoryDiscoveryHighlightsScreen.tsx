@@ -1,13 +1,13 @@
-// Module ID: 17964
-// Function ID: 17965
+// Module ID: 18338
+// Function ID: 18339
 // Name: RedesignSettingsCategoryDiscoveryHighlightsScreen
-// Dependencies: [19, 21, 11540, 17958, 16583, 2]
+// Dependencies: [19, 21, 11717, 18330, 18335, 2]
 
-// Module 17964 (RedesignSettingsCategoryDiscoveryHighlightsScreen)
+// Module 18338 (RedesignSettingsCategoryDiscoveryHighlightsScreen)
 import Fragment from "Fragment" /* 21 */;
-import SettingBuilders from "SettingBuilders" /* 11540 */;
-import SettingLayoutDefault from "SettingLayout" /* 16583 */;
-import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 17958 */;
+import SettingBuilders from "SettingBuilders" /* 11717 */;
+import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 18330 */;
+import EffectiveNotifSettingsLayoutDefault from "EffectiveNotifSettingsLayout" /* 18335 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ const memoResult = react.memo(function RedesignSettingsCategoryDiscoveryHighligh
     items[0] = obj2.buildCategoryDiscoveryHighlightsSettingsSection();
     return createList(obj);
   }, []);
-  return jsx(SettingLayoutDefault, { node });
+  return jsx(EffectiveNotifSettingsLayoutDefault, { node });
 });
 const result = size.fileFinishedImporting("modules/notifications/settings/native/routes/RedesignSettingsCategoryDiscoveryHighlightsScreen.tsx");
 

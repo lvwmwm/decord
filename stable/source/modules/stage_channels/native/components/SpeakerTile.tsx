@@ -1,20 +1,20 @@
-// Module ID: 12027
-// Function ID: 12028
+// Module ID: 12225
+// Function ID: 12226
 // Name: SpeakerTile
-// Dependencies: [19, 17, 6843, 5681, 21, 5014, 575, 5011, 12028, 1491, 8773, 504, 7950, 12029, 6980, 1113, 8821, 1187, 12031, 12033, 7136, 5624, 2]
+// Dependencies: [19, 17, 6931, 5837, 21, 5170, 575, 5167, 12226, 1493, 8877, 504, 8052, 12227, 7076, 1113, 8928, 1187, 12229, 12231, 7196, 5783, 2]
 // Exports: getSizeStyle, getTileWidthStyle
 
-// Module 12027 (SpeakerTile)
+// Module 12225 (SpeakerTile)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import CallConstants from "CallConstants" /* 5681 */;
-import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7950 */;
-import StageTileTypes from "StageTileTypes" /* 12028 */;
+import CallConstants from "CallConstants" /* 5837 */;
+import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 8052 */;
+import StageTileTypes from "StageTileTypes" /* 12226 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6843 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6931 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
-import ColorUtils_mod from "ColorUtils" /* 5011 */;
+import createStyles_mod from "createStyles" /* 5170 */;
+import ColorUtils_mod from "ColorUtils" /* 5167 */;
 import size_mod from "module_2" /* 2 */;
 
 let ColorUtils;
@@ -135,7 +135,7 @@ const memoResult = react.memo(function SpeakerTile(channel) {
         tmp10Result = tmp10(tmp11, obj13);
       }
       items10 = [tmp10Result, ];
-      const obj16 = { lineClamp: 1, style: tmp.nameplateText, variant: "text-sm/medium", color: "text-overlay-light", children: tmp9 };
+      const obj16 = { lineClamp: 1, style: tmp.nameplateText, variant: "body-sm/medium", color: "text-overlay-light", children: tmp9 };
       items10[1] = closure_7(channel(user[21]).Text, obj16);
       items7[1] = closure_8(View, obj12);
       return closure_8(PressableOpacity, obj3);

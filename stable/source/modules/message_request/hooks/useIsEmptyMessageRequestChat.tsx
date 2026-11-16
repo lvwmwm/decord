@@ -1,17 +1,17 @@
-// Module ID: 14178
-// Function ID: 14179
+// Module ID: 14450
+// Function ID: 14451
 // Name: useIsEmptyMessageRequestChat
-// Dependencies: [6061, 504, 11259, 2]
+// Dependencies: [6226, 504, 11431, 2]
 // Exports: isEmptyLoadedChat, useIsEmptyChat, useIsEmptyMessageRequestChat
 
-// Module 14178 (useIsEmptyMessageRequestChat)
-import MessageStore from "MessageStore" /* 6061 */;
+// Module 14450 (useIsEmptyMessageRequestChat)
+import MessageStore from "MessageStore" /* 6226 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const f105924 = () => {
+const f107750 = () => {
   const messages = MessageStore.getMessages(id);
   const ready = messages.ready && 0 === messages.length && !messages.hasMoreBefore && !messages.hasMoreAfter;
   return ready;
@@ -28,7 +28,7 @@ export function useIsEmptyChat(arg0) {
   const items = [MessageStore];
   const items1 = [arg0];
   const obj = require("get initialized");
-  return obj.useStateFromStores(items, f105924, items1);
+  return obj.useStateFromStores(items, f107750, items1);
 }
 export function useIsEmptyMessageRequestChat(id) {
   const obj = require("useIsMessageRequest");
@@ -38,7 +38,7 @@ export function useIsEmptyMessageRequestChat(id) {
   const items1 = [id];
   const obj2 = require("get initialized");
   if (isEitherTypeOfMessageRequest) {
-    isEitherTypeOfMessageRequest = obj2.useStateFromStores(items, f105924, items1);
+    isEitherTypeOfMessageRequest = obj2.useStateFromStores(items, f107750, items1);
   }
   return isEitherTypeOfMessageRequest;
 }

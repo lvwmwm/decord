@@ -1,12 +1,12 @@
-// Module ID: 13408
-// Function ID: 13409
+// Module ID: 13672
+// Function ID: 13673
 // Name: ForwardPreviewUtils
-// Dependencies: [4946, 504, 6558, 2]
+// Dependencies: [5102, 504, 6645, 2]
 // Exports: useForwardPreviewContent
 
-// Module 13408 (ForwardPreviewUtils)
-import EmbedUtils from "EmbedUtils" /* 6558 */;
-import PermissionStore from "PermissionStore" /* 4946 */;
+// Module 13672 (ForwardPreviewUtils)
+import EmbedUtils from "EmbedUtils" /* 6645 */;
+import PermissionStore from "PermissionStore" /* 5102 */;
 import size from "module_2" /* 2 */;
 
 let set;

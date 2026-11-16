@@ -1,12 +1,12 @@
-// Module ID: 6538
-// Function ID: 6539
+// Module ID: 6624
+// Function ID: 6625
 // Name: SharedCaptchaUtils
-// Dependencies: [6539, 6546, 2]
+// Dependencies: [6625, 6632, 2]
 // Exports: emitCaptchaDistributionMetric, extractCaptchaPropsFromResponse
 
-// Module 6538 (SharedCaptchaUtils)
-import CaptchaConstants from "CaptchaConstants" /* 6546 */;
-import CaptchaStore from "CaptchaStore" /* 6539 */;
+// Module 6624 (SharedCaptchaUtils)
+import CaptchaConstants from "CaptchaConstants" /* 6632 */;
+import CaptchaStore from "CaptchaStore" /* 6625 */;
 import size from "module_2" /* 2 */;
 
 let _window;

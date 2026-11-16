@@ -1,18 +1,18 @@
-// Module ID: 18121
-// Function ID: 18122
+// Module ID: 18498
+// Function ID: 18499
 // Name: useActiveChannels
-// Dependencies: [4867, 4863, 4946, 6775, 15593, 1072, 4870, 1379, 2]
+// Dependencies: [5023, 5019, 5102, 6863, 15937, 1072, 5026, 1380, 2]
 // Exports: getActiveTextChannels
 
-// Module 18121 (useActiveChannels)
+// Module 18498 (useActiveChannels)
 import Constants from "Constants" /* 1072 */;
-import GlobalUtils from "GlobalUtils" /* 1379 */;
-import ChannelRecord from "ChannelRecord" /* 4867 */;
-import ChannelConstants from "ChannelConstants" /* 4870 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import PermissionStore from "PermissionStore" /* 4946 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6775 */;
-import ActiveChannelsStore from "ActiveChannelsStore" /* 15593 */;
+import GlobalUtils from "GlobalUtils" /* 1380 */;
+import ChannelRecord from "ChannelRecord" /* 5023 */;
+import ChannelConstants from "ChannelConstants" /* 5026 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import PermissionStore from "PermissionStore" /* 5102 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6863 */;
+import ActiveChannelsStore from "ActiveChannelsStore" /* 15937 */;
 import size from "module_2" /* 2 */;
 
 let set;

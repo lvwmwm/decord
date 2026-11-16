@@ -1,11 +1,11 @@
-// Module ID: 18559
-// Function ID: 18560
+// Module ID: 18952
+// Function ID: 18953
 // Name: useICYMIEmptyLoadingAnalytics
-// Dependencies: [19, 16227, 2]
+// Dependencies: [19, 16574, 2]
 // Exports: useICYMIEmptyLoadingAnalytics
 
-// Module 18559 (useICYMIEmptyLoadingAnalytics)
-import ICYMIAnalytics3 from "ICYMIAnalytics" /* 16227 */;
+// Module 18952 (useICYMIEmptyLoadingAnalytics)
+import ICYMIAnalytics3 from "ICYMIAnalytics" /* 16574 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

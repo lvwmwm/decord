@@ -1,11 +1,11 @@
-// Module ID: 15596
-// Function ID: 15597
+// Module ID: 15940
+// Function ID: 15941
 // Name: BlockedUserUtils
-// Dependencies: [4956, 1379, 2]
+// Dependencies: [5112, 1380, 2]
 // Exports: filterOutBlockedOrIgnoredUserIds, filterOutBlockedOrIgnoredUsers, hasBlockedOrIgnoredUserIds
 
-// Module 15596 (BlockedUserUtils)
-import RelationshipStore from "RelationshipStore" /* 4956 */;
+// Module 15940 (BlockedUserUtils)
+import RelationshipStore from "RelationshipStore" /* 5112 */;
 import size from "module_2" /* 2 */;
 
 let id;

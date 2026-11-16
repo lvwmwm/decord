@@ -1,20 +1,18 @@
-// Module ID: 13341
-// Function ID: 13342
+// Module ID: 13606
+// Function ID: 13607
 // Name: AppealIngestionFreeTextAppealReasonActionSheet
-// Dependencies: [32, 19, 17, 7994, 21, 5014, 575, 504, 1113, 5272, 6027, 6980, 7054, 13319, 7253, 5624, 5634, 2]
+// Dependencies: [32, 19, 17, 8097, 21, 5170, 575, 504, 1113, 5420, 6191, 7076, 7153, 13584, 7349, 5783, 5790, 2]
 // Exports: default
 
-// Module 13341 (AppealIngestionFreeTextAppealReasonActionSheet)
+// Module 13606 (AppealIngestionFreeTextAppealReasonActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 7994 */;
+import SafetyHubStore from "SafetyHubStore" /* 8097 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let metroImportDefault;
 let metroRequire;
@@ -55,7 +53,7 @@ export default function AppealIngestionFreeTextAppealReasonActionSheet(onSave) {
   const intl3 = tmp2(tmp3[8]).intl;
   const obj2 = { startExpanded: true, children: closure_7(Stack, obj3) };
   const stringResult1 = intl3.string(onSave(value[8]).t["Rk+uJx"]);
-  BottomSheet = tmp2(tmp3[9]).BottomSheet;
+  const BottomSheet = tmp2(tmp3[9]).BottomSheet;
   obj3 = { spacing: 16, children: items1 };
   Stack = tmp2(tmp3[10]).Stack;
   const obj4 = { onPress: onClose, style: tmp.closeIcon, children: closure_6(onSave(value[12]).XSmallIcon, { size: "md" }) };
@@ -67,7 +65,7 @@ export default function AppealIngestionFreeTextAppealReasonActionSheet(onSave) {
   items1[2] = closure_6(TextArea, obj5);
   const obj6 = { style: tmp.separator };
   items1[3] = closure_6(View, obj6);
-  const obj7 = { variant: "text-xs/medium", color: "text-default", style: tmp.footerText, children: intl5.string(onSave(value[8]).t.xfNY3L) };
+  const obj7 = { variant: "body-xs/medium", color: "text-default", style: tmp.footerText, children: intl5.string(onSave(value[8]).t.xfNY3L) };
   const Text = tmp2(tmp3[15]).Text;
   intl5 = tmp2(tmp3[8]).intl;
   items1[4] = closure_6(Text, obj7);

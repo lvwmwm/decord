@@ -1,17 +1,17 @@
-// Module ID: 9020
-// Function ID: 9021
+// Module ID: 9133
+// Function ID: 9134
 // Name: useManageResourcePermissions
-// Dependencies: [32, 19, 4946, 1383, 9019, 1083, 1084, 4877, 504, 2]
+// Dependencies: [32, 19, 5102, 1385, 9132, 1083, 1084, 5033, 504, 2]
 // Exports: attachChannelPermissions, getManageResourcePermissions, useManageResourcePermissions
 
-// Module 9020 (useManageResourcePermissions)
+// Module 9133 (useManageResourcePermissions)
 import Constants from "Constants" /* 1083 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4946 */;
-import UserStore from "UserStore" /* 1383 */;
-import PermissionsConstants from "PermissionsConstants" /* 9019 */;
+import PermissionStore from "PermissionStore" /* 5102 */;
+import UserStore from "UserStore" /* 1385 */;
+import PermissionsConstants from "PermissionsConstants" /* 9132 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

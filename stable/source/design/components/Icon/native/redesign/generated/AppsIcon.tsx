@@ -1,14 +1,14 @@
-// Module ID: 8678
-// Function ID: 8679
+// Module ID: 8782
+// Function ID: 8783
 // Name: AppsIcon
-// Dependencies: [19, 21, 575, 5716, 8608, 2]
+// Dependencies: [19, 21, 575, 5873, 8712, 2]
 // Exports: AppsIcon
 
-// Module 8678 (AppsIcon)
+// Module 8782 (AppsIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5716 */;
-import AssetRegistry from "AssetRegistry" /* 8608 */;
+import BaseIconImage2 from "BaseIconImage" /* 5873 */;
+import AssetRegistry from "AssetRegistry" /* 8712 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

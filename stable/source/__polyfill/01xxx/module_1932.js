@@ -1,74 +1,26 @@
 // Module ID: 1932
 // Function ID: 1933
-// Dependencies: []
+// Dependencies: [1872, 1933, 1945, 1871]
 
 // Module 1932
-const obj = {
-  locale: "uk",
-  pluralRuleFunction(arg0, arg1) {
-    let arr;
-    let str2;
-    let str6;
-    let tmp2;
-    const str = String(arg0);
-    const parts = str.split(".");
-    [arr, tmp2] = parts;
-    let substr1 = Number(parts[0]) == arg0;
-    let substr = substr1;
-    if (substr) {
-      const first = parts[0];
-      substr = first.slice(-1);
-    }
-    if (substr1) {
-      const first1 = parts[0];
-      substr1 = first1.slice(-2);
-    }
-    const substr2 = arr.slice(-1);
-    const substr3 = arr.slice(-2);
-    if (arg1) {
-      let str8 = "other";
-      if (3 == substr) {
-        str8 = "other";
-        if (13 != substr1) {
-          str8 = "few";
-        }
-      }
-      str2 = str8;
-    } else {
-      let str4;
-      if (!tmp2) {
-        if (1 == substr2) {
-          str2 = "one";
-        }
-      }
-      if (!tmp2) {
-        if (substr2 >= 2) {
-          if (substr2 <= 4) {
-            str4 = "few";
-            if (substr3 >= 12) {
-              str4 = "few";
-            }
-          }
-          str2 = str4;
-        }
-      }
-      if (tmp2) {
-        if (!tmp2) {
-          if (substr2 >= 5) {
-            str4 = str6;
-          }
-        }
-        str6 = "other";
-        if (!tmp2) {
-          str6 = "other";
-          if (substr3 >= 11) {
-            str6 = "other";
-          }
-        }
-      }
-      str6 = "many";
-    }
-    return str2;
-  }
-};
-globalThis.IntlMessageFormat.__addLocaleData(obj);
+import SharedTransition from "SharedTransition" /* 1871 */;
+import _mod1872 from "module_1872" /* 1872 */;
+import _mod1933 from "module_1933" /* 1933 */;
+import _mod1945 from "module_1945" /* 1945 */;
+
+for (const key10013 in _mod1872) {
+  exports[key10013] = _mod1872[key10013];
+  continue;
+}
+for (const key10017 in _mod1933) {
+  exports[key10017] = _mod1933[key10017];
+  continue;
+}
+for (const key10021 in _mod1945) {
+  exports[key10021] = _mod1945[key10021];
+  continue;
+}
+for (const key10025 in SharedTransition) {
+  exports[key10025] = SharedTransition[key10025];
+  continue;
+}

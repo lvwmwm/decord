@@ -1,12 +1,12 @@
-// Module ID: 7496
-// Function ID: 7497
+// Module ID: 7601
+// Function ID: 7602
 // Name: SafetyToastsActionCreators
-// Dependencies: [7490, 5711, 7495, 2]
+// Dependencies: [7587, 5868, 7600, 2]
 
-// Module 7496 (SafetyToastsActionCreators)
-import ToastUtils from "ToastUtils" /* 5711 */;
-import Constants from "Constants" /* 7490 */;
-import SafetyToastsUtils from "SafetyToastsUtils" /* 7495 */;
+// Module 7601 (SafetyToastsActionCreators)
+import ToastUtils from "ToastUtils" /* 5868 */;
+import Constants from "Constants" /* 7587 */;
+import SafetyToastsUtils from "SafetyToastsUtils" /* 7600 */;
 import size from "module_2" /* 2 */;
 
 const SafetyToastType = Constants.SafetyToastType;
@@ -66,13 +66,13 @@ let obj = {
     const obj = SafetyToastsUtils;
     showSafetySuccess(REPORT_TO_MOD_SUCCESS, obj.getSafetyToastTypeContent(REPORT_TO_MOD_SUCCESS));
   },
-  showFailedToast(TIGGER_PAWTECT_ERROR) {
-    let GENERIC_ERROR = TIGGER_PAWTECT_ERROR;
+  showFailedToast(AGE_VERIFICATION_ERROR) {
+    let GENERIC_ERROR = AGE_VERIFICATION_ERROR;
     const presentFailedToast = ToastUtils.presentFailedToast;
     ToastUtils;
     const getSafetyToastTypeContent = SafetyToastsUtils.getSafetyToastTypeContent;
     SafetyToastsUtils;
-    if (TIGGER_PAWTECT_ERROR == null) {
+    if (AGE_VERIFICATION_ERROR == null) {
       GENERIC_ERROR = SafetyToastType.GENERIC_ERROR;
     }
     presentFailedToast(getSafetyToastTypeContent(GENERIC_ERROR));

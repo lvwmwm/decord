@@ -1,33 +1,33 @@
-// Module ID: 18904
-// Function ID: 18905
+// Module ID: 19314
+// Function ID: 19315
 // Name: EasyChannelPermissionSettings
-// Dependencies: [32, 5, 19, 17, 18905, 4863, 4926, 4920, 4885, 4946, 4956, 1383, 7947, 1072, 21, 5014, 575, 1497, 11646, 504, 9031, 9032, 9033, 1113, 5652, 5958, 9058, 4951, 6027, 7060, 7369, 8025, 6975, 11489, 11644, 7004, 5760, 8980, 9214, 18906, 18908, 2]
+// Dependencies: [32, 5, 19, 17, 19315, 5019, 5082, 5076, 5041, 5102, 5112, 1385, 8049, 1072, 21, 5170, 575, 1499, 11837, 504, 9144, 9145, 9146, 1113, 5808, 6122, 9171, 5107, 6191, 7159, 7462, 8128, 7071, 11666, 11835, 7103, 5921, 9092, 9327, 19316, 19318, 2]
 // Exports: default
 
-// Module 18904 (EasyChannelPermissionSettings)
+// Module 19314 (EasyChannelPermissionSettings)
 import nativeDefault from "native" /* 575 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5760 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5958 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7947 */;
-import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 9031 */;
-import ChannelSettingsPermissionsActionCreators from "ChannelSettingsPermissionsActionCreators" /* 9032 */;
-import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 9058 */;
-import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11644 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5921 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6122 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 8049 */;
+import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 9144 */;
+import ChannelSettingsPermissionsActionCreators from "ChannelSettingsPermissionsActionCreators" /* 9145 */;
+import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 9171 */;
+import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11835 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelSettingsPermissionsStore from "ChannelSettingsPermissionsStore" /* 18905 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import GuildMemberStore from "GuildMemberStore" /* 4926 */;
-import GuildRoleStore from "GuildRoleStore" /* 4920 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import PermissionStore from "PermissionStore" /* 4946 */;
-import RelationshipStore from "RelationshipStore" /* 4956 */;
-import UserStore from "UserStore" /* 1383 */;
+import ChannelSettingsPermissionsStore from "ChannelSettingsPermissionsStore" /* 19315 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import GuildMemberStore from "GuildMemberStore" /* 5082 */;
+import GuildRoleStore from "GuildRoleStore" /* 5076 */;
+import GuildStore from "GuildStore" /* 5041 */;
+import PermissionStore from "PermissionStore" /* 5102 */;
+import RelationshipStore from "RelationshipStore" /* 5112 */;
+import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -395,7 +395,7 @@ function ChannelPermissionSettingsBasicView(channel) {
         hasIcons: true,
         children: memo.map((item) => {
               obj = { item, channelId: channel.id, showType: true, showRemove: true, guildId: channel.guild_id };
-              return closure_23(ChannelOverwritesItemDefault, obj, item.id);
+              return sidebars(ChannelOverwritesItemDefault, obj, item.id);
             })
       };
       const TableRowGroup3 = tmp2(tmp3[29]).TableRowGroup;
@@ -405,7 +405,7 @@ function ChannelPermissionSettingsBasicView(channel) {
         hasIcons: true,
         children: existingMembersRows.map((item) => {
               obj = { item, channelId: channel.id, showType: true, showRemove: true, guildId: channel.guild_id };
-              return closure_23(ChannelOverwritesItemDefault, obj, item.id);
+              return sidebars(ChannelOverwritesItemDefault, obj, item.id);
             })
       };
       const TableRowGroup4 = tmp2(tmp3[29]).TableRowGroup;

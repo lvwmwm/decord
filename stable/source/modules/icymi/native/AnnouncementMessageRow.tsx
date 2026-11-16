@@ -1,26 +1,26 @@
-// Module ID: 18560
-// Function ID: 18561
+// Module ID: 18953
+// Function ID: 18954
 // Name: AnnouncementMessageRow
-// Dependencies: [19, 17, 4863, 4885, 4956, 6775, 1383, 18561, 21, 18523, 575, 504, 6902, 8924, 10802, 10188, 18562, 18526, 18564, 1113, 11, 6980, 9085, 18566, 18570, 2]
+// Dependencies: [19, 17, 5019, 5041, 5112, 6863, 1385, 18954, 21, 18913, 575, 504, 6990, 9031, 10953, 10339, 18955, 18944, 18957, 1113, 11, 7076, 9198, 18959, 18963, 2]
 // Exports: default
 
-// Module 18560 (AnnouncementMessageRow)
+// Module 18953 (AnnouncementMessageRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6902 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8924 */;
-import showLongPressMessageActionSheet from "showLongPressMessageActionSheet" /* 10188 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10802 */;
-import DesignConstants from "DesignConstants" /* 18561 */;
-import ICYMIShared from "ICYMIShared" /* 18562 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6990 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 9031 */;
+import showLongPressMessageActionSheet from "showLongPressMessageActionSheet" /* 10339 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10953 */;
+import DesignConstants from "DesignConstants" /* 18954 */;
+import ICYMIShared from "ICYMIShared" /* 18955 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import RelationshipStore from "RelationshipStore" /* 4956 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6775 */;
-import UserStore from "UserStore" /* 1383 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import GuildStore from "GuildStore" /* 5041 */;
+import RelationshipStore from "RelationshipStore" /* 5112 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6863 */;
+import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 18523 */;
+import createICYMIStyles from "createICYMIStyles" /* 18913 */;
 import size from "module_2" /* 2 */;
 
 let closure_12;
@@ -104,7 +104,7 @@ let closure_14 = react.memo(function ChannelRow(message) {
     if (null != message) {
       const _Date = Date;
       const obj4 = { id: message.id, timestamp: Date.now() };
-      const ackGravityItems = tmp(8924).ackGravityItems;
+      const ackGravityItems = tmp(9031).ackGravityItems;
       ICYMIActionCreatorsDefault;
       const items = [obj4];
       ackGravityItems(items);

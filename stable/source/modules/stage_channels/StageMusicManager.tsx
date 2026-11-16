@@ -1,20 +1,20 @@
-// Module ID: 11877
-// Function ID: 11878
+// Module ID: 12071
+// Function ID: 12072
 // Name: StageMusicManager
-// Dependencies: [4863, 2006, 4917, 5679, 6713, 4868, 11875, 11030, 504, 6765, 6759, 7287, 2]
+// Dependencies: [5019, 2130, 5073, 5835, 6800, 5024, 12069, 11192, 504, 6853, 6847, 7383, 2]
 // Exports: shouldShowStageMusicMuteButton, useShowStageMusicMuteButton
 
-// Module 11877 (StageMusicManager)
-import StageChannelParticipants from "StageChannelParticipants" /* 6759 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import MediaEngineStore from "MediaEngineStore" /* 2006 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
-import VoiceStateStore from "VoiceStateStore" /* 5679 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6713 */;
-import StageInstanceStore from "StageInstanceStore" /* 4868 */;
-import StageMusicStore from "StageMusicStore" /* 11875 */;
-import SoundUtils from "SoundUtils" /* 11030 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7287 */;
+// Module 12071 (StageMusicManager)
+import StageChannelParticipants from "StageChannelParticipants" /* 6847 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import MediaEngineStore from "MediaEngineStore" /* 2130 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5073 */;
+import VoiceStateStore from "VoiceStateStore" /* 5835 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6800 */;
+import StageInstanceStore from "StageInstanceStore" /* 5024 */;
+import StageMusicStore from "StageMusicStore" /* 12069 */;
+import SoundUtils from "SoundUtils" /* 11192 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7383 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

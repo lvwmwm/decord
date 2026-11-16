@@ -1,15 +1,15 @@
-// Module ID: 13737
-// Function ID: 13738
+// Module ID: 14002
+// Function ID: 14003
 // Name: CustomTypingIndicatorDynamicAsset
-// Dependencies: [19, 17, 21, 5014, 6027, 5717, 5624, 1113, 13733, 2]
+// Dependencies: [19, 17, 21, 5170, 6191, 5874, 5783, 1113, 13998, 2]
 // Exports: default
 
-// Module 13737 (CustomTypingIndicatorDynamicAsset)
+// Module 14002 (CustomTypingIndicatorDynamicAsset)
 import react_native from "react-native" /* 17 */;
-import FastImageDefault from "FastImage" /* 5717 */;
+import FastImageDefault from "FastImage" /* 5874 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,13 +1,13 @@
-// Module ID: 17407
-// Function ID: 17408
+// Module ID: 17768
+// Function ID: 17769
 // Name: AutoplayGifSetting
-// Dependencies: [8432, 11540, 1113, 4839, 2]
+// Dependencies: [8536, 11717, 1113, 4995, 2]
 
-// Module 17407 (AutoplayGifSetting)
+// Module 17768 (AutoplayGifSetting)
 import intl2 from "intl" /* 1113 */;
-import UserSettings from "UserSettings" /* 4839 */;
-import SettingsConstants from "SettingsConstants" /* 8432 */;
-import SettingBuilders from "SettingBuilders" /* 11540 */;
+import UserSettings from "UserSettings" /* 4995 */;
+import SettingsConstants from "SettingsConstants" /* 8536 */;
+import SettingBuilders from "SettingBuilders" /* 11717 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

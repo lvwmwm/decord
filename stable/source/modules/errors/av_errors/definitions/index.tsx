@@ -1,27 +1,27 @@
-// Module ID: 20044
-// Function ID: 20045
+// Module ID: 20494
+// Function ID: 20495
 // Name: ErrorDefinitions
-// Dependencies: [5947, 20045, 20047, 20048, 20050, 20051, 20052, 20053, 20054, 20055, 20056, 20057, 20058, 20059, 20060, 20061, 20062, 20063, 2]
+// Dependencies: [6111, 20495, 20497, 20498, 20500, 20501, 20502, 20503, 20504, 20505, 20506, 20507, 20508, 20509, 20510, 20511, 20512, 20513, 2]
 
-// Module 20044 (ErrorDefinitions)
-import AVError from "AVError" /* 5947 */;
-import AVErrorNoAudioInputDetected from "AVErrorNoAudioInputDetected" /* 20045 */;
-import AVErrorNoInputDevices from "AVErrorNoInputDevices" /* 20047 */;
-import AVErrorStreamViewLowFPS from "AVErrorStreamViewLowFPS" /* 20048 */;
-import AVErrorStreamViewHighPacketLoss from "AVErrorStreamViewHighPacketLoss" /* 20050 */;
-import AVErrorStreamSendHighPacketLoss from "AVErrorStreamSendHighPacketLoss" /* 20051 */;
-import AVErrorStreamSendLowFPS from "AVErrorStreamSendLowFPS" /* 20052 */;
-import AVErrorStreamBadNetworkQuality from "AVErrorStreamBadNetworkQuality" /* 20053 */;
-import AVErrorStreamSoundshareFailed from "AVErrorStreamSoundshareFailed" /* 20054 */;
-import AVErrorStreamFailedToStart from "AVErrorStreamFailedToStart" /* 20055 */;
-import AVErrorStreamReconnecting from "AVErrorStreamReconnecting" /* 20056 */;
-import AVErrorScreenshareOSError from "AVErrorScreenshareOSError" /* 20057 */;
-import AVErrorAudioCaptureSampleRateMismatch from "AVErrorAudioCaptureSampleRateMismatch" /* 20058 */;
-import AVErrorVideoStreamSenderReadyTimeout from "AVErrorVideoStreamSenderReadyTimeout" /* 20059 */;
-import AVErrorVideoStreamReceiverReadyTimeout from "AVErrorVideoStreamReceiverReadyTimeout" /* 20060 */;
-import AVErrorVideoStreamSenderReadyTimeoutNoStream from "AVErrorVideoStreamSenderReadyTimeoutNoStream" /* 20061 */;
-import AVErrorVideoStreamReceiverReadyTimeoutNoStream from "AVErrorVideoStreamReceiverReadyTimeoutNoStream" /* 20062 */;
-import AVErrorCameraSendLowFPS from "AVErrorCameraSendLowFPS" /* 20063 */;
+// Module 20494 (ErrorDefinitions)
+import AVError from "AVError" /* 6111 */;
+import AVErrorNoAudioInputDetected from "AVErrorNoAudioInputDetected" /* 20495 */;
+import AVErrorNoInputDevices from "AVErrorNoInputDevices" /* 20497 */;
+import AVErrorStreamViewLowFPS from "AVErrorStreamViewLowFPS" /* 20498 */;
+import AVErrorStreamViewHighPacketLoss from "AVErrorStreamViewHighPacketLoss" /* 20500 */;
+import AVErrorStreamSendHighPacketLoss from "AVErrorStreamSendHighPacketLoss" /* 20501 */;
+import AVErrorStreamSendLowFPS from "AVErrorStreamSendLowFPS" /* 20502 */;
+import AVErrorStreamBadNetworkQuality from "AVErrorStreamBadNetworkQuality" /* 20503 */;
+import AVErrorStreamSoundshareFailed from "AVErrorStreamSoundshareFailed" /* 20504 */;
+import AVErrorStreamFailedToStart from "AVErrorStreamFailedToStart" /* 20505 */;
+import AVErrorStreamReconnecting from "AVErrorStreamReconnecting" /* 20506 */;
+import AVErrorScreenshareOSError from "AVErrorScreenshareOSError" /* 20507 */;
+import AVErrorAudioCaptureSampleRateMismatch from "AVErrorAudioCaptureSampleRateMismatch" /* 20508 */;
+import AVErrorVideoStreamSenderReadyTimeout from "AVErrorVideoStreamSenderReadyTimeout" /* 20509 */;
+import AVErrorVideoStreamReceiverReadyTimeout from "AVErrorVideoStreamReceiverReadyTimeout" /* 20510 */;
+import AVErrorVideoStreamSenderReadyTimeoutNoStream from "AVErrorVideoStreamSenderReadyTimeoutNoStream" /* 20511 */;
+import AVErrorVideoStreamReceiverReadyTimeoutNoStream from "AVErrorVideoStreamReceiverReadyTimeoutNoStream" /* 20512 */;
+import AVErrorCameraSendLowFPS from "AVErrorCameraSendLowFPS" /* 20513 */;
 import size from "module_2" /* 2 */;
 
 const obj = {};

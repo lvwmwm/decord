@@ -1,13 +1,13 @@
-// Module ID: 8977
-// Function ID: 8978
+// Module ID: 9089
+// Function ID: 9090
 // Name: useEventSchedule
-// Dependencies: [6855, 8969, 8976, 504, 2]
+// Dependencies: [6943, 9081, 9088, 504, 2]
 // Exports: default, getEventSchedule, useEventScheduleById
 
-// Module 8977 (useEventSchedule)
-import ScheduleUtils from "ScheduleUtils" /* 8969 */;
-import useEventException from "useEventException" /* 8976 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6855 */;
+// Module 9089 (useEventSchedule)
+import ScheduleUtils from "ScheduleUtils" /* 9081 */;
+import useEventException from "useEventException" /* 9088 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6943 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

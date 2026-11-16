@@ -1,16 +1,16 @@
-// Module ID: 10798
-// Function ID: 10799
+// Module ID: 10949
+// Function ID: 10950
 // Name: GroupDMRow
-// Dependencies: [19, 10727, 21, 5652, 10799, 1187, 10800, 5624, 6974, 6975, 2]
+// Dependencies: [19, 10878, 21, 5808, 10950, 1187, 10951, 5783, 7070, 7071, 2]
 // Exports: default
 
-// Module 10798 (GroupDMRow)
+// Module 10949 (GroupDMRow)
 import Fragment from "Fragment" /* 21 */;
 import native from "native" /* 1187 */;
-import useChannelNameDefault from "useChannelName" /* 5652 */;
-import UserRowConstants from "UserRowConstants" /* 10727 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 10799 */;
-import useRecipientsLabel from "useRecipientsLabel" /* 10800 */;
+import useChannelNameDefault from "useChannelName" /* 5808 */;
+import UserRowConstants from "UserRowConstants" /* 10878 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 10950 */;
+import useRecipientsLabel from "useRecipientsLabel" /* 10951 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -52,20 +52,20 @@ export default function GroupDMRow(channel) {
   const merged1 = Object.assign(merged);
   tmp5Result = undefined;
   if (null != recipientsLabel) {
-    const obj4 = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: recipientsLabel };
-    tmp5Result = tmp5(tmp7(5624).Text, obj4);
+    const obj4 = { variant: "body-xs/medium", color: "text-muted", lineClamp: 1, children: recipientsLabel };
+    tmp5Result = tmp5(tmp7(5783).Text, obj4);
   }
   if (str == null) {
     str = "";
   }
   if (NONE === UserRowModes.TOGGLE) {
     const obj5 = { checked: flag };
-    const TableCheckboxRow = tmp7(6974).TableCheckboxRow;
+    const TableCheckboxRow = tmp7(7070).TableCheckboxRow;
     const merged2 = Object.assign(obj3);
     tmp5Result2 = tmp5(TableCheckboxRow, obj5);
   } else {
     const obj6 = {};
-    const TableRow = tmp7(6975).TableRow;
+    const TableRow = tmp7(7071).TableRow;
     const merged3 = Object.assign(obj3);
     tmp5Result2 = tmp5(TableRow, obj6);
   }

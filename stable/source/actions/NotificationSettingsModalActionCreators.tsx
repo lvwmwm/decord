@@ -1,20 +1,20 @@
-// Module ID: 7288
-// Function ID: 7289
+// Module ID: 7384
+// Function ID: 7385
 // Name: NotificationSettingsModalActionCreators
-// Dependencies: [5, 6775, 1072, 4959, 1082, 572, 7283, 7285, 11, 5021, 1113, 1396, 1282, 2]
+// Dependencies: [5, 6863, 1072, 5115, 1082, 572, 7379, 7381, 11, 5177, 1113, 1403, 1282, 2]
 
-// Module 7288 (NotificationSettingsModalActionCreators)
+// Module 7384 (NotificationSettingsModalActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import intl2 from "intl" /* 1113 */;
-import NotificationConstants from "NotificationConstants" /* 4959 */;
-import shared from "shared" /* 5021 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7283 */;
-import UserGuildSettingsManagerDefault from "UserGuildSettingsManager" /* 7285 */;
+import NotificationConstants from "NotificationConstants" /* 5115 */;
+import shared from "shared" /* 5177 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7379 */;
+import UserGuildSettingsManagerDefault from "UserGuildSettingsManager" /* 7381 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6775 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6863 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

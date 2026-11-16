@@ -1,10 +1,10 @@
-// Module ID: 1411
-// Function ID: 1412
+// Module ID: 1413
+// Function ID: 1414
 // Name: AvatarConstants
 // Dependencies: [2]
 // Exports: getAvatarSize, getAvatarSpecs, getStatusSize, getVoiceStatus
 
-// Module 1411 (AvatarConstants)
+// Module 1413 (AvatarConstants)
 import size_mod from "module_2" /* 2 */;
 
 let DEPRECATED_SIZE_100;

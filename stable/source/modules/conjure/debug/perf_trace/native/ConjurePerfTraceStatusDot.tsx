@@ -1,16 +1,16 @@
-// Module ID: 13022
-// Function ID: 13023
+// Module ID: 13278
+// Function ID: 13279
 // Name: ConjurePerfTraceStatusDot
-// Dependencies: [19, 17, 21, 5014, 575, 13018, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 13274, 2]
 // Exports: default
 
-// Module 13022 (ConjurePerfTraceStatusDot)
+// Module 13278 (ConjurePerfTraceStatusDot)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ConjurePerfTraceFormat from "ConjurePerfTraceFormat" /* 13018 */;
+import ConjurePerfTraceFormat from "ConjurePerfTraceFormat" /* 13274 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;

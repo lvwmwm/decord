@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 20, height: 20, scales: [1, 2], hash: "a29a6c52d3f111d84d3e5afb9287492b", name: "ic_add_circle", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9pbnRs", scales: [1], hash: "1240638c60c6143203e89b55bf3dd564", name: "fi.messages.1240638c60c6143203e89b55bf3dd564.compiled.messages", type: "jsona" });

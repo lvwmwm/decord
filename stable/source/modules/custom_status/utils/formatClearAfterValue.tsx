@@ -1,15 +1,16 @@
-// Module ID: 11488
-// Function ID: 11489
+// Module ID: 11665
+// Function ID: 11666
 // Name: formatClearAfterValue
-// Dependencies: [11399, 4836, 1113, 1089, 1379, 2]
+// Dependencies: [11572, 4992, 1113, 11576, 1089, 1380, 2]
 // Exports: default
 
-// Module 11488 (formatClearAfterValue)
+// Module 11665 (formatClearAfterValue)
 import DurationsDefault from "Durations" /* 1089 */;
 import intl6 from "intl" /* 1113 */;
-import GlobalUtils from "GlobalUtils" /* 1379 */;
-import DateUtils from "DateUtils" /* 4836 */;
-import Constants from "Constants" /* 11399 */;
+import GlobalUtils from "GlobalUtils" /* 1380 */;
+import DateUtils from "DateUtils" /* 4992 */;
+import Constants from "Constants" /* 11572 */;
+import getClearAfterDurationDefault from "getClearAfterDuration" /* 11576 */;
 import size from "module_2" /* 2 */;
 
 const ClearAfterValues = Constants.ClearAfterValues;
@@ -23,7 +24,8 @@ export default function formatClearAfterValue(arg0) {
   if (ClearAfterValues.TODAY === arg0) {
     let formatTimeResult;
     const _Date10 = Date;
-    const sum = Date.now() + DurationsDefault.Millis.DAY;
+    const tmp50 = getClearAfterDurationDefault(ClearAfterValues.TODAY);
+    const sum = Date.now() + tmp50;
     const _Date11 = Date;
     const self13 = this;
     const self14 = this;
@@ -42,8 +44,8 @@ export default function formatClearAfterValue(arg0) {
     } else {
       const formatToPlainString4 = intl5.formatToPlainString;
       const obj2 = { time: data7.formatTime(sum, { format: "short" }) };
-      const bI7n9i4 = tmp52(1113).t.bI7n9i;
-      data7 = tmp52(1113).intl.data;
+      const bI7n9i4 = tmp53(1113).t.bI7n9i;
+      data7 = tmp53(1113).intl.data;
       formatTimeResult = formatToPlainString4(bI7n9i4, obj2);
     }
     return formatTimeResult;

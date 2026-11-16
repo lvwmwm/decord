@@ -1,51 +1,31 @@
 // Module ID: 1670
 // Function ID: 1671
-// Dependencies: [41, 42, 90, 91, 1671, 1672, 1661]
-// Exports: createNativeWorkletsModule
+// Dependencies: [1671, 1672, 1683, 1691, 1693, 1692]
 
 // Module 1670
-import _classPrivateFieldKeyDefault from "_classPrivateFieldKey" /* 91 */;
-import ReanimatedError from "ReanimatedError" /* 1661 */;
 import _mod1671 from "module_1671" /* 1671 */;
-import react_native from "react-native" /* 1672 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import _classPrivateFieldBase from "_classPrivateFieldBase" /* 90 */;
+import _mod1672 from "module_1672" /* 1672 */;
+import processStyleValue from "processStyleValue" /* 1683 */;
+import registerComponentPropsBuilder from "registerComponentPropsBuilder" /* 1691 */;
+import propsBuilder from "propsBuilder" /* 1692 */;
+import createPropsBuilderDefault from "createPropsBuilder" /* 1693 */;
 
-let closure_5 = _classPrivateFieldKeyDefault("workletsModuleProxy");
-class NativeWorklets {
-  constructor() {
-    _classCallCheck(this, NativeWorklets);
-    Object.defineProperty(this, closure_5, { writable: true, value: "a" });
-    if (undefined === global.__workletsModuleProxy) {
-      const obj = _mod1671;
-      const valueUnpackerCode = obj.getValueUnpackerCode();
-      const WorkletsTurboModule = react_native.WorkletsTurboModule;
-      if (WorkletsTurboModule != null) {
-        WorkletsTurboModule.installTurboModule(valueUnpackerCode);
-      }
-    }
-    if (undefined === global.__workletsModuleProxy) {
-      const self = this;
-      const self2 = this;
-      const reanimatedError = new ReanimatedError.ReanimatedError("Native part of Reanimated doesn't seem to be initialized (Worklets).\nSee https://docs.swmansion.com/react-native-reanimated/docs/guides/troubleshooting#native-part-of-reanimated-doesnt-seem-to-be-initialized for more details.");
-      throw reanimatedError;
-    } else {
-      _classPrivateFieldBase(this, closure_5)[closure_5] = global.__workletsModuleProxy;
-    }
-  }
+for (const key10013 in _mod1671) {
+  exports[key10013] = _mod1671[key10013];
+  continue;
 }
-const entry = {
-  key: "makeShareableClone",
-  value: function makeShareableClone(arg0, arg1, arg2) {
-    const obj = _classPrivateFieldBase(this, closure_5)[closure_5];
-    return obj.makeShareableClone(arg0, arg1, arg2);
-  }
-};
-const items = [entry];
-let closure_6 = _createClass(NativeWorklets, items);
+for (const key10017 in _mod1672) {
+  exports[key10017] = _mod1672[key10017];
+  continue;
+}
+for (const key10021 in processStyleValue) {
+  exports[key10021] = processStyleValue[key10021];
+  continue;
+}
+for (const key10025 in registerComponentPropsBuilder) {
+  exports[key10025] = registerComponentPropsBuilder[key10025];
+  continue;
+}
 
-export function createNativeWorkletsModule() {
-  const tmp = new closure_6();
-  return tmp;
-}
+export const createPropsBuilder = createPropsBuilderDefault;
+export const stylePropsBuilder = propsBuilder.stylePropsBuilder;

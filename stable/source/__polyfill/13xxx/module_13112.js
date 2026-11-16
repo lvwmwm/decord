@@ -1,30 +1,84 @@
 // Module ID: 13112
 // Function ID: 13113
-// Dependencies: [13068, 13098]
-// Exports: createClientReportEnvelope
+// Dependencies: [13084]
 
 // Module 13112
-import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 13068 */;
-import _mod13098 from "module_13098" /* 13098 */;
+import List from "List" /* 13084 */;
 
-
-export function createClientReportEnvelope(discarded_events, dsn, arg2) {
-  let obj3;
-  let result = arg2;
-  const items = [{ type: "client_report" }, ];
-  if (!arg2) {
-    const obj = _browserPerformanceTimeOriginMode;
-    result = obj.dateTimestampInSeconds();
-  }
-  items[1] = { timestamp: result, discarded_events };
-  const createEnvelope = _mod13098.createEnvelope;
-  _mod13098;
-  if (dsn) {
-    obj3 = { dsn };
-    const obj2 = { dsn };
+function getFirstMatchNode(node) {
+  if ("node" in node) {
+    node = node.node;
   } else {
-    obj3 = {};
+    node = getFirstMatchNode(node.match[0]);
   }
-  const items1 = [items];
-  return createEnvelope(obj3, items1);
+  return node;
 }
+function getLastMatchNode(node) {
+  if ("node" in node) {
+    node = node.node;
+  } else {
+    node = getLastMatchNode(node.match[node.match.length - 1]);
+  }
+  return node;
+}
+let obj = {
+  matchFragments(arg0, value, matched, arg3, arg4) {
+    let closure_0 = arg0;
+    let closure_1 = value;
+    let closure_2 = arg3;
+    let closure_3 = arg4;
+    const items = [];
+    if (null !== matched.matched) {
+      function findFragments(matched) {
+        if (null !== matched.syntax) {
+          if (matched.syntax.type === closure_2) {
+            if (matched.syntax.name === closure_3) {
+              let node;
+              let node2;
+              if ("node" in matched) {
+                node = matched.node;
+              } else if ("node" in matched.match[0]) {
+                node = str.node;
+              } else {
+                node = closure_2(str.match[0]);
+              }
+              if ("node" in matched) {
+                node2 = matched.node;
+              } else if ("node" in matched.match[matched.match.length - 1]) {
+                node2 = str2.node;
+              } else {
+                node2 = closure_3(str2.match[str2.match.length - 1]);
+              }
+              const syntax = node.syntax;
+              syntax.walk(node2, function(arg0, arg1, parent) {
+                if (arg0 === node) {
+                  let iter = arg1;
+                  const self = this;
+                  const self2 = this;
+                  const obj2 = new List();
+                  obj2.appendData(iter.data);
+                  while (iter.data !== node2) {
+                    iter = iter.next;
+                    if (null === iter) {
+                      break;
+                    }
+                  }
+                  const obj = { parent, nodes: obj2 };
+                  items.push(obj);
+                }
+              });
+            }
+          }
+        }
+        if (Array.isArray(matched.match)) {
+          const match = matched.match;
+          const item = match.forEach(findFragments);
+        }
+      }
+      findFragments(matched.matched);
+    }
+    return items;
+  }
+};
+
+export default obj;

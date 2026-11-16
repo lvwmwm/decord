@@ -1,16 +1,17 @@
-// Module ID: 17940
-// Function ID: 17941
+// Module ID: 18312
+// Function ID: 18313
 // Name: ParentalControlsUseDataToImproveDiscordSetting
-// Dependencies: [7715, 8432, 1072, 7717, 16716, 11540, 1113, 2]
+// Dependencies: [7824, 8536, 1072, 17074, 7826, 17069, 11717, 1113, 2]
 
-// Module 17940 (ParentalControlsUseDataToImproveDiscordSetting)
+// Module 18312 (ParentalControlsUseDataToImproveDiscordSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7717 */;
-import SettingsConstants from "SettingsConstants" /* 8432 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 16716 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7715 */;
-import SettingBuilders from "SettingBuilders" /* 11540 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7826 */;
+import SettingsConstants from "SettingsConstants" /* 8536 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 17069 */;
+import FamilyCenterSaveErrorUtils from "FamilyCenterSaveErrorUtils" /* 17074 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7824 */;
+import SettingBuilders from "SettingBuilders" /* 11717 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -42,8 +43,10 @@ let obj = {
       } else {
         items2 = [Consents.USAGE_STATISTICS];
       }
+      const showToastIfSaveFails = FamilyCenterSaveErrorUtils.showToastIfSaveFails;
+      FamilyCenterSaveErrorUtils;
       const obj = FamilyCenterActionCreatorsDefault;
-      obj.updateTeenConsents(selectedTeenId, items1, items2);
+      showToastIfSaveFails(obj.updateTeenConsents(selectedTeenId, items1, items2));
     }
   },
   unsearchable: true

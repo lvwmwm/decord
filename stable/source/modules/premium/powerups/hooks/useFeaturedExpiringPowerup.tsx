@@ -1,14 +1,14 @@
-// Module ID: 14082
-// Function ID: 14083
+// Module ID: 14353
+// Function ID: 14354
 // Name: useFeaturedExpiringPowerup
-// Dependencies: [19, 8469, 5229, 504, 14083, 7732, 2]
+// Dependencies: [19, 8573, 5377, 504, 14354, 7841, 2]
 // Exports: default
 
-// Module 14082 (useFeaturedExpiringPowerup)
-import CollectiblesUtils from "CollectiblesUtils" /* 7732 */;
+// Module 14353 (useFeaturedExpiringPowerup)
+import CollectiblesUtils from "CollectiblesUtils" /* 7841 */;
 import react from "react" /* 19 */;
-import GameServerStore from "GameServerStore" /* 8469 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 5229 */;
+import GameServerStore from "GameServerStore" /* 8573 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 5377 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

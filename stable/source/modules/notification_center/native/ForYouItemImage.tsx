@@ -1,21 +1,21 @@
-// Module ID: 18492
-// Function ID: 18493
+// Module ID: 18882
+// Function ID: 18883
 // Name: ForYouItemImage
-// Dependencies: [19, 17, 4881, 4885, 1383, 18493, 21, 5014, 575, 6859, 9186, 18494, 18495, 18496, 18497, 5717, 18498, 1187, 18499, 18500, 7326, 504, 6980, 8750, 8820, 18501, 5624, 2]
+// Dependencies: [19, 17, 5037, 5041, 1385, 18883, 21, 5170, 575, 6947, 9299, 18884, 18885, 18886, 18887, 5874, 18888, 1187, 18889, 18890, 7420, 504, 7076, 8854, 8927, 18891, 5783, 2]
 
-// Module 18492 (ForYouItemImage)
+// Module 18882 (ForYouItemImage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import GuildRecord from "GuildRecord" /* 4881 */;
-import Pressables from "Pressables" /* 6980 */;
-import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 8820 */;
+import GuildRecord from "GuildRecord" /* 5037 */;
+import Pressables from "Pressables" /* 7076 */;
+import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 8927 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import UserStore from "UserStore" /* 1383 */;
-import Constants from "Constants" /* 18493 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import GuildStore from "GuildStore" /* 5041 */;
+import UserStore from "UserStore" /* 1385 */;
+import Constants from "Constants" /* 18883 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let FRIEND_BACKGROUND;
@@ -194,11 +194,11 @@ const memoResult = react.memo(function ForYouItemImageWrapped(item) {
         if (obj14.icon === compactMode(tmp3[12])) {
           let tmp13Result;
           if (null != tmp10) {
-            let str2 = "text-lg/normal";
+            let str2 = "body-lg/normal";
             const Text = tmp6(tmp3[26]).Text;
             const tmp13 = jsx;
             if (tmp10.length > 4) {
-              str2 = "text-md/normal";
+              str2 = "body-md/normal";
             }
             const obj16 = { variant: str2, style: items2, children: tmp10 };
             items2 = [, ];

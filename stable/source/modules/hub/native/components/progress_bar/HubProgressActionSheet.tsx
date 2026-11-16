@@ -1,25 +1,25 @@
-// Module ID: 14244
-// Function ID: 14245
+// Module ID: 14508
+// Function ID: 14509
 // Name: HubProgressActionSheet
-// Dependencies: [19, 17, 4944, 9131, 1072, 13858, 14042, 21, 5258, 5014, 14240, 14047, 1252, 9130, 1113, 14049, 5624, 14051, 1099, 14245, 1196, 9118, 14246, 14247, 14365, 5634, 6980, 5272, 2]
+// Dependencies: [19, 17, 5100, 9244, 1072, 14124, 14313, 21, 5406, 5170, 14504, 14318, 1252, 9243, 1113, 14320, 5783, 14322, 1099, 14509, 1196, 9231, 14510, 14511, 14629, 5790, 7076, 5420, 2]
 // Exports: default
 
-// Module 14244 (HubProgressActionSheet)
+// Module 14508 (HubProgressActionSheet)
 import react_native from "react-native" /* 17 */;
 import router_utils from "router_utils" /* 1099 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9118 */;
-import HubProgressActionCreators from "HubProgressActionCreators" /* 9130 */;
-import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 13858 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9231 */;
+import HubProgressActionCreators from "HubProgressActionCreators" /* 9243 */;
+import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 14124 */;
 import react from "react" /* 19 */;
-import GuildChannelStore from "GuildChannelStore" /* 4944 */;
-import HubProgressBarConstants from "HubProgressBarConstants" /* 9131 */;
+import GuildChannelStore from "GuildChannelStore" /* 5100 */;
+import HubProgressBarConstants from "HubProgressBarConstants" /* 9244 */;
 import Constants from "Constants" /* 1072 */;
-import GuildProgressConstants from "GuildProgressConstants" /* 14042 */;
+import GuildProgressConstants from "GuildProgressConstants" /* 14313 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;
@@ -33,7 +33,7 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 let unpackModuleId;
-const ContactSyncModalActionCreators = tmp(14247);
+const ContactSyncModalActionCreators = tmp(14511);
 const View = react_native.View;
 ({ HUB_PROGRESS_ACTION_SHEET_ID: metroRequire, HUB_PROGRESS_NUM_TOTAL_STEPS: metroImportDefault } = HubProgressBarConstants);
 ({ AnalyticEvents: metroImportAll, AnalyticsLocations: c9, InstantInviteSources: c10, Routes: unpackModuleId } = Constants);
@@ -101,7 +101,7 @@ export default function HubProgressActionSheet(guild) {
     numFinished: size,
     total: tmp4,
     stepsHook(children, arg1) {
-      const obj = { variant: "text-sm/medium", color: "mobile-text-heading-primary", children };
+      const obj = { variant: "body-sm/medium", color: "mobile-text-heading-primary", children };
       return closure_1_15(guild(hubProgressBarCompletedSteps[16]).Text, obj, arg1);
     }
   };
@@ -176,7 +176,7 @@ export default function HubProgressActionSheet(guild) {
   } else {
     const obj10 = { accessibilityRole: "button", onPress: handleFinishPress, children: closure_15(Text, obj11) };
     const PressableOpacity = tmp2(tmp3[26]).PressableOpacity;
-    obj11 = { variant: "text-sm/medium", color: "text-default", children: intl6.string(guild(hubProgressBarCompletedSteps[14]).t["9E36wf"]) };
+    obj11 = { variant: "body-sm/medium", color: "text-default", children: intl6.string(guild(hubProgressBarCompletedSteps[14]).t["9E36wf"]) };
     Text = tmp2(tmp3[16]).Text;
     intl6 = tmp2(tmp3[14]).intl;
     tmp11Result = tmp11(PressableOpacity, obj10);

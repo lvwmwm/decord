@@ -1,9 +1,9 @@
-// Module ID: 6537
-// Function ID: 6538
+// Module ID: 6623
+// Function ID: 6624
 // Name: Constants
 // Dependencies: [2]
 
-// Module 6537 (Constants)
+// Module 6623 (Constants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/billing/Constants.tsx");

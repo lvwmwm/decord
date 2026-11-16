@@ -1,11 +1,11 @@
-// Module ID: 7122
-// Function ID: 7123
+// Module ID: 7226
+// Function ID: 7227
 // Name: useWithPostLoginRouting
-// Dependencies: [5, 32, 19, 502, 1072, 504, 1113, 7123, 6740, 2]
+// Dependencies: [5, 32, 19, 502, 1072, 504, 1113, 7227, 6827, 2]
 // Exports: default
 
-// Module 7122 (useWithPostLoginRouting)
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6740 */;
+// Module 7226 (useWithPostLoginRouting)
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6827 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

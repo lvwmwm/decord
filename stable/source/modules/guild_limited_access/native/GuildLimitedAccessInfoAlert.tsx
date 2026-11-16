@@ -1,21 +1,21 @@
-// Module ID: 6721
-// Function ID: 6722
+// Module ID: 6808
+// Function ID: 6809
 // Name: GuildLimitedAccessInfoAlert
-// Dependencies: [19, 4885, 6722, 1072, 21, 5014, 6723, 575, 1113, 6030, 1187, 5624, 2]
+// Dependencies: [19, 5041, 6809, 1072, 21, 5170, 6810, 575, 1113, 6194, 1187, 5783, 2]
 // Exports: default
 
-// Module 6721 (GuildLimitedAccessInfoAlert)
+// Module 6808 (GuildLimitedAccessInfoAlert)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import AlertDefault from "Alert" /* 6030 */;
-import GuildLimitedAccessConstants from "GuildLimitedAccessConstants" /* 6722 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import AlertDefault from "Alert" /* 6194 */;
+import GuildLimitedAccessConstants from "GuildLimitedAccessConstants" /* 6809 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4885 */;
+import GuildStore from "GuildStore" /* 5041 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
-import TextStyles from "TextStyles" /* 6723 */;
+import createStyles_mod from "createStyles" /* 5170 */;
+import TextStyles from "TextStyles" /* 6810 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -56,7 +56,7 @@ export default function GuildLimitedAccessInfoAlert(arg0) {
   const LegacyText = tmp2(1187).LegacyText;
   intl3 = tmp2(1113).intl;
   items = [hasOwnProperty(LegacyText, obj4), ];
-  const obj5 = { style: tmp.text, variant: "text-md/medium", children: formatResult1 };
+  const obj5 = { style: tmp.text, variant: "body-md/medium", children: formatResult1 };
   items[1] = hasOwnProperty(Text_Text.Text, obj5);
   return metroRequire(tmp8, obj3);
 };

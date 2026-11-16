@@ -1,14 +1,14 @@
-// Module ID: 15390
-// Function ID: 15391
+// Module ID: 15712
+// Function ID: 15713
 // Name: Tier048Px
-// Dependencies: [19, 21, 8806, 15391, 15392, 15393, 5021, 5717, 2]
+// Dependencies: [19, 21, 8913, 15713, 15714, 15715, 5177, 5874, 2]
 // Exports: Tier048Px, getTier048PxSource, useTier048PxSource
 
-// Module 15390 (Tier048Px)
+// Module 15712 (Tier048Px)
 import Fragment from "Fragment" /* 21 */;
-import shared from "shared" /* 5021 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import _mod8806 from "module_8806" /* 8806 */;
+import shared from "shared" /* 5177 */;
+import FastImageDefault from "FastImage" /* 5874 */;
+import _mod8913 from "module_8913" /* 8913 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -27,21 +27,21 @@ const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("design/components/Illustration/native/redesign/generated/Tier048Px.tsx");
 
 export function getTier048PxSource(theme) {
-  const obj = _mod8806;
+  const obj = _mod8913;
   const obj2 = { dark, darker, light };
   return obj.getIllustrationSource(theme, obj2);
 }
 export function useTier048PxSource() {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8806;
+  const obj2 = _mod8913;
   const obj3 = { dark, darker, light };
   return obj2.getIllustrationSource(theme, obj3);
 }
 export function Tier048Px(arg0) {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8806;
+  const obj2 = _mod8913;
   const obj3 = { dark, darker, light };
   const illustrationSource = obj2.getIllustrationSource(theme, obj3);
   FastImageDefault;

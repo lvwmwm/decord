@@ -1,14 +1,14 @@
-// Module ID: 13751
-// Function ID: 13752
+// Module ID: 14016
+// Function ID: 14017
 // Name: RefreshChatInputCoachmark
-// Dependencies: [32, 19, 4860, 7569, 4847, 1113, 5175, 9954, 2]
+// Dependencies: [32, 19, 5016, 7674, 5003, 1113, 5323, 10109, 2]
 // Exports: default, useRefreshChatInputCoachmark
 
-// Module 13751 (RefreshChatInputCoachmark)
+// Module 14016 (RefreshChatInputCoachmark)
 import intl3 from "intl" /* 1113 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
-import OmnibuttonCoachmarkRive from "OmnibuttonCoachmarkRive" /* 5175 */;
-import useCoachmark from "useCoachmark" /* 9954 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5016 */;
+import OmnibuttonCoachmarkRive from "OmnibuttonCoachmarkRive" /* 5323 */;
+import useCoachmark from "useCoachmark" /* 10109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -38,7 +38,7 @@ export function useRefreshChatInputCoachmark(disabled) {
   if (disabled) {
     items = [];
   } else {
-    items = [tmp(4847).DismissibleContent.MOBILE_REFRESH_CHAT_INPUT_PLUS_BUTTON_COACHMARK];
+    items = [tmp(5003).DismissibleContent.MOBILE_REFRESH_CHAT_INPUT_PLUS_BUTTON_COACHMARK];
   }
   const tmp4 = _slicedToArray(useSelectedDismissibleContent(items), 2);
   _require = tmp5;

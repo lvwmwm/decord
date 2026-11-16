@@ -1,15 +1,15 @@
-// Module ID: 17147
-// Function ID: 17148
+// Module ID: 17508
+// Function ID: 17509
 // Name: MobileSearchableSelect
-// Dependencies: [32, 19, 17, 21, 5014, 575, 1113, 7218, 5624, 2]
+// Dependencies: [32, 19, 17, 21, 5170, 575, 1113, 7315, 5783, 2]
 
-// Module 17147 (MobileSearchableSelect)
+// Module 17508 (MobileSearchableSelect)
 import nativeDefault from "native" /* 575 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let closure_9, dependencyMap;
@@ -174,7 +174,7 @@ class MobileSearchableSelect {
       _undefined(false);
       closure_12(false);
     }, []);
-    items6 = [ref(options(7218).SearchBar, { ref, placeholder, defaultValue: first, onChange: callback1, onSubmitEditing: callback2, onFocus: callback3, onBlur: callback4, disabled: flag2 }), ];
+    items6 = [ref(options(7315).SearchBar, { ref, placeholder, defaultValue: first, onChange: callback1, onSubmitEditing: callback2, onFocus: callback3, onBlur: callback4, disabled: flag2 }), ];
     const tmp18 = first1;
     if (tmp20Result) {
       tmp20Result = memo.length > 0;
@@ -203,7 +203,7 @@ class MobileSearchableSelect {
               disabled: flag2,
               children: ref(options(dependencyMap[8]).Text, obj2)
             };
-            obj2 = { variant: "text-sm/medium", color: "text-default", style: dropdownItem.dropdownItemText, children: children.label };
+            obj2 = { variant: "body-sm/medium", color: "text-default", style: dropdownItem.dropdownItemText, children: children.label };
             return ref(tmp2, obj, "option-" + children.value + "-" + index);
           })
       };

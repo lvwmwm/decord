@@ -1,10 +1,10 @@
-// Module ID: 2022
-// Function ID: 2023
+// Module ID: 2146
+// Function ID: 2147
 // Name: UserApplicationIdentityConstants
 // Dependencies: [2]
 // Exports: getMigratedApplicationIdentityConnectionsScreenApplications
 
-// Module 2022 (UserApplicationIdentityConstants)
+// Module 2146 (UserApplicationIdentityConstants)
 import size from "module_2" /* 2 */;
 
 let obj3;

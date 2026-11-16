@@ -1,25 +1,25 @@
-// Module ID: 14540
-// Function ID: 14541
+// Module ID: 14805
+// Function ID: 14806
 // Name: EmojiRow
-// Dependencies: [19, 17, 5273, 21, 5014, 5258, 5260, 8405, 4958, 7636, 9950, 5596, 575, 14541, 14542, 9896, 14543, 7351, 2]
+// Dependencies: [19, 17, 5421, 21, 5170, 5406, 5408, 8509, 5114, 7745, 10105, 5756, 575, 14806, 14807, 10051, 14808, 7445, 2]
 // Exports: default
 
-// Module 14540 (EmojiRow)
+// Module 14805 (EmojiRow)
 import react_native from "react-native" /* 17 */;
-import ReactionUtils from "ReactionUtils" /* 4958 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import HapticUtils from "HapticUtils" /* 5260 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5273 */;
-import useToken from "useToken" /* 5596 */;
-import ReactionActionCreators from "ReactionActionCreators" /* 8405 */;
-import reactions_ReactionUtils from "reactions/ReactionUtils" /* 9896 */;
-import DoubleTapReminderToast from "DoubleTapReminderToast" /* 9950 */;
-import useEmojisForReactionRow from "useEmojisForReactionRow" /* 14541 */;
-import EmojiReactionRowButton2 from "EmojiReactionRowButton" /* 14542 */;
-import DoubleTapEmojiEditNudge2 from "DoubleTapEmojiEditNudge" /* 14543 */;
+import ReactionUtils from "ReactionUtils" /* 5114 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
+import HapticUtils from "HapticUtils" /* 5408 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5421 */;
+import useToken from "useToken" /* 5756 */;
+import ReactionActionCreators from "ReactionActionCreators" /* 8509 */;
+import reactions_ReactionUtils from "reactions/ReactionUtils" /* 10051 */;
+import DoubleTapReminderToast from "DoubleTapReminderToast" /* 10105 */;
+import useEmojisForReactionRow from "useEmojisForReactionRow" /* 14806 */;
+import EmojiReactionRowButton2 from "EmojiReactionRowButton" /* 14807 */;
+import DoubleTapEmojiEditNudge2 from "DoubleTapEmojiEditNudge" /* 14808 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -27,7 +27,7 @@ let dependencyMap;
 let hasOwnProperty;
 let metroRequire;
 let tmp3;
-const MessageActionCreatorsDefault = tmp3(7636);
+const MessageActionCreatorsDefault = tmp3(7745);
 const View = react_native.View;
 const ACTION_SHEET_MAX_WIDTH = ActionSheetConstants.ACTION_SHEET_MAX_WIDTH;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
@@ -101,7 +101,7 @@ export default function EmojiRow(arg0) {
   };
   items[1] = token(EmojiReactionRowButton2.EmojiPickerRowButton, obj9);
   items1 = [closure_6(emojiFontSize, obj8), ];
-  const obj10 = { location: channel(7351).MESSAGE_LONG_PRESS_MENU };
+  const obj10 = { location: channel(7445).MESSAGE_LONG_PRESS_MENU };
   const DoubleTapEmojiEditNudge = DoubleTapEmojiEditNudge2.DoubleTapEmojiEditNudge;
   items1[1] = token(DoubleTapEmojiEditNudge, obj10);
   return closure_6(emojiFontSize, obj7);

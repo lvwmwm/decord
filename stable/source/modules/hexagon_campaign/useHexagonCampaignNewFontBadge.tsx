@@ -1,17 +1,18 @@
-// Module ID: 16469
-// Function ID: 16470
+// Module ID: 16816
+// Function ID: 16817
 // Name: useHexagonCampaignNewFontBadge
-// Dependencies: [19, 16470, 16221, 5039, 5042, 504, 16471, 16460, 2]
-// Exports: useHexagonCampaignHasVisitedDisplayNameStyles, useHexagonCampaignNewFontBadge, useMarkHexagonCampaignDisplayNameStylesVisited
+// Dependencies: [19, 16817, 16568, 5195, 5200, 504, 16818, 16807, 16808, 6872, 2]
+// Exports: useHexagonCampaignDisplayNameStylePromo, useHexagonCampaignHasVisitedDisplayNameStyles, useHexagonCampaignNewFontBadge, useMarkHexagonCampaignDisplayNameStylesVisited
 
-// Module 16469 (useHexagonCampaignNewFontBadge)
+// Module 16816 (useHexagonCampaignNewFontBadge)
 import get_initialized from "get initialized" /* 504 */;
-import HexagonCampaignPerkAvailability from "HexagonCampaignPerkAvailability" /* 5042 */;
-import HexagonActionCreators from "HexagonActionCreators" /* 16460 */;
+import HexagonCampaignPerkAvailability from "HexagonCampaignPerkAvailability" /* 5200 */;
+import HexagonActionCreators from "HexagonActionCreators" /* 16807 */;
+import HexagonCampaignAnalytics from "HexagonCampaignAnalytics" /* 16808 */;
 import react from "react" /* 19 */;
-import DisplayNameStylesSeenStore from "DisplayNameStylesSeenStore" /* 16470 */;
-import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 16221 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5039 */;
+import DisplayNameStylesSeenStore from "DisplayNameStylesSeenStore" /* 16817 */;
+import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 16568 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5195 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -20,7 +21,7 @@ let _require, seenFonts;
 let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
-const f110015 = () => HexagonCampaignPersistedStore.hasVisitedDisplayNameStyles;
+const f112153 = () => HexagonCampaignPersistedStore.hasVisitedDisplayNameStyles;
 ({ HEXAGON_CAMPAIGN_DISPLAY_NAME_FONT: hasOwnProperty, HexagonCampaignPerk: metroRequire, HexagonCampaignPerkAvailability: metroImportDefault } = HexagonCampaignConstants);
 let result = size.fileFinishedImporting("modules/hexagon_campaign/useHexagonCampaignNewFontBadge.tsx");
 
@@ -47,7 +48,7 @@ export function useHexagonCampaignNewFontBadge(DisplayNameStylesEditScreen) {
 export function useHexagonCampaignHasVisitedDisplayNameStyles() {
   const items = [HexagonCampaignPersistedStore];
   const obj = get_initialized;
-  return obj.useStateFromStores(items, f110015);
+  return obj.useStateFromStores(items, f112153);
 }
 export function useMarkHexagonCampaignDisplayNameStylesVisited(DisplayNameStylesEditScreen) {
   let closure_0;
@@ -57,7 +58,7 @@ export function useMarkHexagonCampaignDisplayNameStylesVisited(DisplayNameStyles
   _require = tmp;
   const items = [HexagonCampaignPersistedStore];
   const obj2 = require("get initialized");
-  stateFromStores = obj2.useStateFromStores(items, f110015);
+  stateFromStores = obj2.useStateFromStores(items, f112153);
   const items1 = [tmp, stateFromStores];
   const effect = react.useEffect(() => {
     const tmp = closure_0 && !stateFromStores;
@@ -66,4 +67,34 @@ export function useMarkHexagonCampaignDisplayNameStylesVisited(DisplayNameStyles
       const result = obj.markHexagonCampaignDisplayNameStylesVisited();
     }
   }, items1);
+}
+export function useHexagonCampaignDisplayNameStylePromo(arg0) {
+  let _location;
+  let disabled;
+  let displayNameStyles;
+  let isTryItOut;
+  ({ displayNameStyles, disabled } = arg0);
+  ({ location: _location, isTryItOut } = arg0);
+  if (disabled === undefined) {
+    disabled = false;
+  }
+  const obj = HexagonCampaignPerkAvailability;
+  let tmp3 = !disabled && obj.useHexagonCampaignPerkAvailability(metroRequire.DISPLAY_NAME_STYLE, _location) === metroImportDefault.SELECTABLE && true !== isTryItOut;
+  if (tmp3) {
+    let fontId;
+    if (displayNameStyles != null) {
+      fontId = displayNameStyles.fontId;
+    }
+    tmp3 = fontId !== hasOwnProperty;
+  }
+  const useTrackHexagonCampaignContentViewed = HexagonCampaignAnalytics.useTrackHexagonCampaignContentViewed;
+  HexagonCampaignAnalytics;
+  const trackHexagonCampaignContentViewed = useTrackHexagonCampaignContentViewed(tmp(6872).QuestContent.DISPLAY_NAME_STYLES_SETTINGS, tmp(16808).HexagonCampaignContentSurface.PROFILE_ROW_PROMO, tmp3);
+  const items = [HexagonCampaignPersistedStore];
+  const obj2 = { showCampaignPromo: tmp3, showCampaignNewBadge: tmp3 };
+  const tmpResult2 = get_initialized;
+  if (tmp3) {
+    tmp3 = !tmpResult2.useStateFromStores(items, f112153);
+  }
+  return obj2;
 }

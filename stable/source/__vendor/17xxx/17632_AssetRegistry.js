@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9pbnRs", scales: [1], hash: "895275c6d10d8df54595628c903e365d", name: "hu.messages.895275c6d10d8df54595628c903e365d.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/main_tabs", width: 216, height: 216, scales: [1], hash: "e8cc96dfc04f2226c8870fdf46cc16af", name: "ExampleVoiceChatActivity", type: "png" });

@@ -1,18 +1,18 @@
-// Module ID: 7475
-// Function ID: 7476
+// Module ID: 7572
+// Function ID: 7573
 // Name: ForumPostDataLoader
-// Dependencies: [5, 4863, 7476, 7458, 7479, 1072, 12, 11, 504, 1282, 572, 2]
+// Dependencies: [5, 5019, 7573, 7555, 7576, 1072, 12, 11, 504, 1282, 572, 2]
 // Exports: preloadForumThreads, useFirstForumPostMessage, useMostRecentForumMessage
 
-// Module 7475 (ForumPostDataLoader)
+// Module 7572 (ForumPostDataLoader)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import Constants from "Constants" /* 1072 */;
-import ForumActivePostStore from "ForumActivePostStore" /* 7476 */;
+import ForumActivePostStore from "ForumActivePostStore" /* 7573 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import ForumPostMessagesStore from "ForumPostMessagesStore" /* 7458 */;
-import ForumPostRecentMessageStore from "ForumPostRecentMessageStore" /* 7479 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import ForumPostMessagesStore from "ForumPostMessagesStore" /* 7555 */;
+import ForumPostRecentMessageStore from "ForumPostRecentMessageStore" /* 7576 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

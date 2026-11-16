@@ -1,27 +1,27 @@
-// Module ID: 18702
-// Function ID: 18703
+// Module ID: 19100
+// Function ID: 19101
 // Name: useOnPressSearchItem
-// Dependencies: [5, 19, 7770, 4863, 13900, 9827, 18703, 9826, 1072, 4870, 13886, 13911, 1377, 5711, 1113, 8940, 5709, 1497, 13998, 18704, 13889, 9849, 9867, 1108, 6753, 8833, 7485, 5756, 7939, 1994, 6734, 14745, 6045, 8632, 6944, 1099, 13907, 2]
+// Dependencies: [5, 19, 7879, 5019, 14166, 9950, 19101, 9949, 1072, 5026, 14152, 14177, 1378, 5868, 1113, 9052, 5866, 1499, 14264, 19102, 14155, 10002, 10020, 1108, 6841, 8940, 7582, 5917, 8041, 2118, 6821, 15010, 6209, 8736, 7032, 1099, 14173, 2]
 // Exports: useOnPressConversationCitation, useOnPressDMItem, useOnPressGroupDMItem, useOnPressGuildTextChannel, useOnPressGuildVoiceChannel, useOnPressMediaItem, useOnPressMessageItem, useOnPressSearchHistoryText, useOnPressSearchLink
 
-// Module 18702 (useOnPressSearchItem)
+// Module 19100 (useOnPressSearchItem)
 import intl2 from "intl" /* 1113 */;
-import URLUtilsDefault from "URLUtils" /* 1377 */;
-import ChannelConstants from "ChannelConstants" /* 4870 */;
-import ToastUtils from "ToastUtils" /* 5711 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7485 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 8940 */;
-import TrackingConstants from "TrackingConstants" /* 9826 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 13886 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13907 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13911 */;
-import SearchNavigatorConstants from "SearchNavigatorConstants" /* 18703 */;
+import URLUtilsDefault from "URLUtils" /* 1378 */;
+import ChannelConstants from "ChannelConstants" /* 5026 */;
+import ToastUtils from "ToastUtils" /* 5868 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7582 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 9052 */;
+import TrackingConstants from "TrackingConstants" /* 9949 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 14152 */;
+import TrackingDefault from "Tracking" /* 14173 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 14177 */;
+import SearchNavigatorConstants from "SearchNavigatorConstants" /* 19101 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7770 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import SearchQueryStore from "SearchQueryStore" /* 13900 */;
-import SearchConstants from "SearchConstants" /* 9827 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7879 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import SearchQueryStore from "SearchQueryStore" /* 14166 */;
+import SearchConstants from "SearchConstants" /* 9950 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -434,7 +434,7 @@ export function useOnPressMediaItem(searchContext) {
 }
 export function useOnPressGroupDMItem(searchContext) {
   searchContext = searchContext.searchContext;
-  obj = searchContext(1497);
+  obj = searchContext(1499);
   navigation = obj.useNavigation();
   const items = [navigation, searchContext];
   return react.useCallback((channelId) => {
@@ -463,7 +463,7 @@ export function useOnPressGroupDMItem(searchContext) {
 }
 export function useOnPressDMItem(searchContext) {
   searchContext = searchContext.searchContext;
-  obj = searchContext(1497);
+  obj = searchContext(1499);
   navigation = obj.useNavigation();
   const items = [navigation, searchContext];
   return react.useCallback((userId, arg1) => {
@@ -661,7 +661,7 @@ export function useOnPressSearchHistoryText(searchContext) {
       const item = tags.forEach((type) => {
         if (type.type === constants2.COMPLETE) {
           const obj2 = { searchContext, searchTokenType: type.searchTokenType, location: constants3.SEARCH_HISTORY };
-          obj = search_tracking_TrackingDefault;
+          obj = TrackingDefault;
           obj.trackSearchFilterAdd(obj2);
         }
       });

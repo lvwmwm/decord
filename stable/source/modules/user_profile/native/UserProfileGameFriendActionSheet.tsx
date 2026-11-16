@@ -1,21 +1,21 @@
-// Module ID: 14919
-// Function ID: 14920
+// Module ID: 15181
+// Function ID: 15182
 // Name: UserProfileGameFriendActionSheet
-// Dependencies: [5, 32, 19, 17, 4956, 1072, 21, 5014, 575, 14195, 7368, 7054, 1187, 5624, 14920, 7330, 6041, 7488, 5711, 5258, 7366, 7321, 1113, 2]
+// Dependencies: [5, 32, 19, 17, 5112, 1072, 21, 5170, 575, 12586, 7461, 7153, 1187, 5783, 15182, 7424, 6205, 7585, 5868, 5406, 7459, 7415, 1113, 2]
 // Exports: default
 
-// Module 14919 (UserProfileGameFriendActionSheet)
+// Module 15181 (UserProfileGameFriendActionSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 14195 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
+import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12586 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RelationshipStore from "RelationshipStore" /* 4956 */;
+import RelationshipStore from "RelationshipStore" /* 5112 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let _undefined;
@@ -58,7 +58,7 @@ function GameFriendApplicationRow(application) {
     str = "";
   }
   items1 = [closure_10(Icon, obj3, application.id), ];
-  const obj4 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: application.name };
+  const obj4 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", children: application.name };
   items1[1] = closure_10(tmp4(tmp5[13]).Text, obj4);
   return closure_10(ActionSheetRow, obj, application.id);
 }

@@ -1,22 +1,22 @@
-// Module ID: 14880
-// Function ID: 14881
+// Module ID: 15144
+// Function ID: 15145
 // Name: UserProfileActivityVoiceChannel
-// Dependencies: [17, 4881, 4946, 1083, 21, 5014, 1375, 7326, 8761, 5274, 14881, 5652, 504, 8669, 8673, 1113, 6957, 6980, 5712, 7378, 5624, 9085, 7939, 5258, 14882, 1994, 8750, 14883, 1187, 2]
+// Dependencies: [17, 5037, 5102, 1083, 21, 5170, 1377, 7420, 8865, 5422, 15145, 5808, 504, 8773, 8777, 1113, 7053, 7076, 5869, 7471, 5783, 9198, 8041, 5406, 15146, 2118, 8854, 15147, 1187, 2]
 // Exports: default
 
-// Module 14880 (UserProfileActivityVoiceChannel)
+// Module 15144 (UserProfileActivityVoiceChannel)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1083 */;
 import native from "native" /* 1187 */;
-import asyncRequire from "asyncRequire" /* 1994 */;
-import GuildRecord from "GuildRecord" /* 4881 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7939 */;
-import PermissionStore from "PermissionStore" /* 4946 */;
+import asyncRequire from "asyncRequire" /* 2118 */;
+import GuildRecord from "GuildRecord" /* 5037 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5869 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 8041 */;
+import PermissionStore from "PermissionStore" /* 5102 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
+import createStyles_mod from "createStyles" /* 5170 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -134,13 +134,13 @@ export default function UserProfileActivityVoiceChannel(guild) {
     obj11 = { channel };
     intl2 = tmp4(tmp3[15]).intl;
     items3 = [tmp13(VoiceNormalIcon, { size: "xxs", color: "text-default" }), ];
-    const obj12 = { style: tmp.channelName, variant: "text-xs/normal", lineClamp: 1, children: tmp6 };
+    const obj12 = { style: tmp.channelName, variant: "body-xs/normal", lineClamp: 1, children: tmp6 };
     items3[1] = tmp13(guild(onAction[20]).Text, obj12);
     tmp8Result = tmp8(PressableOpacity2, obj10);
   } else {
     const obj13 = { style: tmp.channelButton, children: items4 };
     items4 = [tmp13(VoiceNormalIcon, { size: "xxs", color: "text-default" }), ];
-    const obj14 = { style: tmp.channelName, variant: "text-xs/normal", lineClamp: 1, children: tmp6 };
+    const obj14 = { style: tmp.channelName, variant: "body-xs/normal", lineClamp: 1, children: tmp6 };
     items4[1] = tmp13(guild(onAction[20]).Text, obj14);
     tmp8Result = tmp8(tmp9, obj13);
   }
@@ -161,7 +161,7 @@ export default function UserProfileActivityVoiceChannel(guild) {
           return tmp(obj);
         }
       };
-      obj.openLazy(asyncRequire(14882, dependencyMap.paths), "UserProfileActivityVoiceChannelUsers", obj2, "stack");
+      obj.openLazy(asyncRequire(15146, dependencyMap.paths), "UserProfileActivityVoiceChannelUsers", obj2, "stack");
     },
     children: tmp13(AvatarPile, obj17)
   };

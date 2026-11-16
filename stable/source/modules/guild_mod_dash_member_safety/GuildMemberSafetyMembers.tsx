@@ -1,18 +1,18 @@
-// Module ID: 7675
-// Function ID: 7676
+// Module ID: 7784
+// Function ID: 7785
 // Name: GuildMemberSafetyMembers
-// Dependencies: [1383, 4941, 7676, 7677, 7679, 7680, 7686, 5854, 2]
+// Dependencies: [1385, 5097, 7785, 7786, 7788, 7789, 7795, 6015, 2]
 // Exports: hasUnusualDmActivity
 
-// Module 7675 (GuildMemberSafetyMembers)
-import SecondaryIndexMap from "SecondaryIndexMap" /* 4941 */;
-import isEqualDefault from "isEqual" /* 5854 */;
-import MemberSafetyElasticSearchQueryTypes from "MemberSafetyElasticSearchQueryTypes" /* 7676 */;
-import guild_mod_dash_member_safety_DateUtils from "guild_mod_dash_member_safety/DateUtils" /* 7677 */;
-import SortUtils from "SortUtils" /* 7679 */;
-import MemberSafetyStoreSupplemental from "MemberSafetyStoreSupplemental" /* 7680 */;
-import isSpam from "isSpam" /* 7686 */;
-import UserStore from "UserStore" /* 1383 */;
+// Module 7784 (GuildMemberSafetyMembers)
+import SecondaryIndexMap from "SecondaryIndexMap" /* 5097 */;
+import isEqualDefault from "isEqual" /* 6015 */;
+import MemberSafetyElasticSearchQueryTypes from "MemberSafetyElasticSearchQueryTypes" /* 7785 */;
+import guild_mod_dash_member_safety_DateUtils from "guild_mod_dash_member_safety/DateUtils" /* 7786 */;
+import SortUtils from "SortUtils" /* 7788 */;
+import MemberSafetyStoreSupplemental from "MemberSafetyStoreSupplemental" /* 7789 */;
+import isSpam from "isSpam" /* 7795 */;
+import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 function getGuildMemberSecondaryIndexes(isCurrentGuildMemberByTimestamp) {
@@ -133,7 +133,7 @@ class GuildMemberSafetyMembers {
       const self2 = this;
       const date = new Date(unusualDMActivityUntil);
       const time = date.getTime();
-      tmp9 = time >= closure_4 - tmp(7676).UNUSUAL_DM_COMPARISON_DELTA;
+      tmp9 = time >= closure_4 - tmp(7785).UNUSUAL_DM_COMPARISON_DELTA;
     }
     tmpResult = isSpam;
     return obj3;

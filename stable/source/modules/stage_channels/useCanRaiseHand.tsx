@@ -1,12 +1,12 @@
-// Module ID: 11903
-// Function ID: 11904
+// Module ID: 12102
+// Function ID: 12103
 // Name: useCanRaiseHand
-// Dependencies: [4946, 1083, 504, 2]
+// Dependencies: [5102, 1083, 504, 2]
 // Exports: useCanRaiseHand
 
-// Module 11903 (useCanRaiseHand)
+// Module 12102 (useCanRaiseHand)
 import Constants from "Constants" /* 1083 */;
-import PermissionStore from "PermissionStore" /* 4946 */;
+import PermissionStore from "PermissionStore" /* 5102 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -15,9 +15,9 @@ let _require;
 const Permissions = Constants.Permissions;
 const result = size.fileFinishedImporting("modules/stage_channels/useCanRaiseHand.tsx");
 
-export function useCanRaiseHand(channel) {
-  _require = channel;
+export function useCanRaiseHand(id) {
+  _require = id;
   const items = [PermissionStore];
   const obj = require("get initialized");
-  return obj.useStateFromStores(items, () => PermissionStore.can(Permissions.REQUEST_TO_SPEAK, channel));
+  return obj.useStateFromStores(items, () => PermissionStore.can(Permissions.REQUEST_TO_SPEAK, id));
 }

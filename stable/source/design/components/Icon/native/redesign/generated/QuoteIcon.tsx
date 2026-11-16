@@ -1,14 +1,14 @@
-// Module ID: 14953
-// Function ID: 14954
+// Module ID: 15257
+// Function ID: 15258
 // Name: QuoteIcon
-// Dependencies: [19, 21, 575, 5716, 14954, 2]
+// Dependencies: [19, 21, 575, 5873, 15258, 2]
 // Exports: QuoteIcon
 
-// Module 14953 (QuoteIcon)
+// Module 15257 (QuoteIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5716 */;
-import AssetRegistry from "AssetRegistry" /* 14954 */;
+import BaseIconImage2 from "BaseIconImage" /* 5873 */;
+import AssetRegistry from "AssetRegistry" /* 15258 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

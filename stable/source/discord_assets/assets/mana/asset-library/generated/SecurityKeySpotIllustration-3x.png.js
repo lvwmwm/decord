@@ -1,8 +1,8 @@
-// Module ID: 16689
-// Function ID: 16690
+// Module ID: 17042
+// Function ID: 17043
 // Dependencies: [2]
 
-// Module 16689
+// Module 17042
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SecurityKeySpotIllustration-3x.png.js");

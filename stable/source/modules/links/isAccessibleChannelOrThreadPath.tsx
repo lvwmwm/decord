@@ -1,17 +1,17 @@
-// Module ID: 7423
-// Function ID: 7424
+// Module ID: 7520
+// Function ID: 7521
 // Name: isAccessibleChannelOrThreadPath
-// Dependencies: [5, 7264, 4863, 4920, 4885, 1072, 4870, 7419, 7424, 7433, 7404, 7436, 7438, 7397, 7439, 7440, 5248, 7441, 7402, 1379, 7484, 7485, 5653, 2]
+// Dependencies: [5, 7360, 5019, 5076, 5041, 1072, 5026, 7516, 7521, 7530, 7501, 7533, 7535, 7494, 7536, 7537, 5396, 7538, 7499, 1380, 7581, 7582, 5809, 2]
 // Exports: default
 
-// Module 7423 (isAccessibleChannelOrThreadPath)
+// Module 7520 (isAccessibleChannelOrThreadPath)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildOnboardingStore from "GuildOnboardingStore" /* 7264 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import GuildRoleStore from "GuildRoleStore" /* 4920 */;
-import GuildStore from "GuildStore" /* 4885 */;
+import GuildOnboardingStore from "GuildOnboardingStore" /* 7360 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import GuildRoleStore from "GuildRoleStore" /* 5076 */;
+import GuildStore from "GuildStore" /* 5041 */;
 import Constants from "Constants" /* 1072 */;
-import ChannelConstants from "ChannelConstants" /* 4870 */;
+import ChannelConstants from "ChannelConstants" /* 5026 */;
 import size from "module_2" /* 2 */;
 
 let id, obj13;
@@ -106,6 +106,9 @@ let obj = function _isAccessibleChannelOrThreadPath() {
                       }
                       c5 = 3;
                       return { value: canAccessConjureResult, done: true };
+                    } else if (closure_131_11.CONJURE_PROJECT === c1) {
+                      c5 = 3;
+                      return { value: false, done: true };
                     } else if (closure_131_11.ROLE_SUBSCRIPTIONS === c1) {
                       c5 = 3;
                       const obj9 = { value: obj30.areRoleSubscriptionsVisibleInGuild(id, unsafeMutableRoles), done: true };

@@ -1,11 +1,11 @@
-// Module ID: 15463
-// Function ID: 15464
+// Module ID: 15785
+// Function ID: 15786
 // Name: GuildBoostingMarketingStars
-// Dependencies: [19, 21, 8031, 2]
+// Dependencies: [19, 21, 8134, 2]
 // Exports: default
 
-// Module 15463 (GuildBoostingMarketingStars)
-import inlineStyles from "inlineStyles" /* 8031 */;
+// Module 15785 (GuildBoostingMarketingStars)
+import inlineStyles from "inlineStyles" /* 8134 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

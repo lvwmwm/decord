@@ -1,12 +1,12 @@
-// Module ID: 18914
-// Function ID: 18915
+// Module ID: 19324
+// Function ID: 19325
 // Name: useGuildEligibleForStageChannels
-// Dependencies: [4885, 1072, 504, 2]
+// Dependencies: [5041, 1072, 504, 2]
 // Exports: isGuildEligibleForStageChannels, useGuildEligibleForStageChannels
 
-// Module 18914 (useGuildEligibleForStageChannels)
+// Module 19324 (useGuildEligibleForStageChannels)
 import Constants from "Constants" /* 1072 */;
-import GuildStore from "GuildStore" /* 4885 */;
+import GuildStore from "GuildStore" /* 5041 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

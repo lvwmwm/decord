@@ -1,24 +1,24 @@
-// Module ID: 18576
-// Function ID: 18577
+// Module ID: 18969
+// Function ID: 18970
 // Name: ReactActionSheet
-// Dependencies: [5, 32, 19, 17, 5273, 1386, 21, 1113, 5014, 575, 9939, 5615, 6980, 9452, 8714, 8924, 9943, 5194, 9821, 1491, 7366, 5624, 10736, 5192, 5080, 18571, 5717, 1409, 7082, 5068, 8028, 5729, 18524, 2]
+// Dependencies: [5, 32, 19, 17, 5421, 1388, 21, 1113, 5170, 575, 10094, 5774, 7076, 9566, 8818, 9031, 10098, 5342, 9944, 1493, 7459, 5783, 10887, 5340, 5231, 18964, 5874, 1411, 7181, 5226, 8131, 5885, 18914, 2]
 // Exports: default, getStatusReplyContent
 
-// Module 18576 (ReactActionSheet)
+// Module 18969 (ReactActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
-import EmojiConstants from "EmojiConstants" /* 1386 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5273 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 5615 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8924 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9939 */;
-import ICYMIContext from "ICYMIContext" /* 18524 */;
+import EmojiConstants from "EmojiConstants" /* 1388 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5421 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 5774 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 9031 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 10094 */;
+import ICYMIContext from "ICYMIContext" /* 18914 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -306,7 +306,7 @@ function ReactActionSheetBase(content) {
               children: callback1(content(sendMessage[21]).Text, obj12)
             };
             const PressableHighlight2 = content(sendMessage[12]).PressableHighlight;
-            obj12 = { variant: "text-md/medium", color: "interactive-text-default", style: items1, allowFontScaling: false, children: id.surrogates };
+            obj12 = { variant: "body-md/medium", color: "interactive-text-default", style: items1, allowFontScaling: false, children: id.surrogates };
             items1 = [, ];
             ({ defaultEmoji: arr2[0], emojiText: arr2[1] } = closure_3);
             tmp11 = callback1(PressableHighlight2, obj7, id.surrogates);

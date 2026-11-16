@@ -1,18 +1,18 @@
-// Module ID: 14555
-// Function ID: 14556
+// Module ID: 14820
+// Function ID: 14821
 // Name: IconActionButton
-// Dependencies: [19, 21, 5014, 575, 1375, 1187, 5642, 6980, 5624, 9818, 2]
+// Dependencies: [19, 21, 5170, 575, 1377, 1187, 5798, 7076, 5783, 9941, 2]
 // Exports: default
 
-// Module 14555 (IconActionButton)
+// Module 14820 (IconActionButton)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
-import useFontScale from "useFontScale" /* 5642 */;
-import shared_components_Badge from "shared_components/Badge" /* 9818 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import useFontScale from "useFontScale" /* 5798 */;
+import shared_components_Badge from "shared_components/Badge" /* 9941 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const shared_components_BadgeDefault = shared_components_Badge;
@@ -109,7 +109,7 @@ export default function IconActionButton(variant) {
   const obj = { ref, hitSlop, onPress, onLongPress, disabled, accessibilityRole: "button", accessibilityLabel, accessibilityActions, onAccessibilityAction, style: items, children: items1 };
   items = [tmp.actionIconButtonPressable, "outlined" === str ? tmp.outlined : tmp.filled, , , ];
   let roundButton;
-  const PressableOpacity = tmp2(6980).PressableOpacity;
+  const PressableOpacity = tmp2(7076).PressableOpacity;
   const tmp7 = hasOwnProperty;
   if (!tmp10Result) {
     roundButton = tmp.roundButton;
@@ -123,8 +123,8 @@ export default function IconActionButton(variant) {
   items[4] = style;
   items1 = [React3(closure_7, { IconComponent, color, source }), , , ];
   if (tmp10Result) {
-    const obj2 = { variant: "text-sm/bold", color: buttonTextColor, style: tmp.actionText, children: buttonText };
-    tmp10Result = tmp10(tmp2(5624).Text, obj2);
+    const obj2 = { variant: "body-sm/semibold", color: buttonTextColor, style: tmp.actionText, children: buttonText };
+    tmp10Result = tmp10(tmp2(5783).Text, obj2);
   }
   items1[1] = tmp10Result;
   let tmp10Result2 = null;

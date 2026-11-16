@@ -1,23 +1,23 @@
-// Module ID: 15793
-// Function ID: 15794
+// Module ID: 16139
+// Function ID: 16140
 // Name: GuildActionSheetHeader
-// Dependencies: [19, 17, 15794, 4885, 7445, 1072, 21, 5014, 575, 1376, 9304, 1113, 11333, 6980, 5712, 9307, 1187, 9311, 5624, 7112, 504, 4877, 15795, 15796, 1491, 6957, 1409, 5717, 1444, 9821, 5596, 9306, 11339, 2]
+// Dependencies: [19, 17, 16140, 5041, 7542, 1072, 21, 5170, 575, 1357, 9418, 1113, 11505, 7076, 5869, 9421, 1187, 9425, 5783, 7216, 504, 5033, 16141, 16142, 1493, 7053, 1411, 5874, 1446, 9944, 5756, 9420, 11511, 2]
 // Exports: default
 
-// Module 15793 (GuildActionSheetHeader)
+// Module 16139 (GuildActionSheetHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 4877 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
-import GuildPopoutActionCreators from "GuildPopoutActionCreators" /* 15795 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 5033 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5869 */;
+import GuildPopoutActionCreators from "GuildPopoutActionCreators" /* 16141 */;
 import react from "react" /* 19 */;
-import GuildPopoutStore from "GuildPopoutStore" /* 15794 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import GuildSubscriptionsStore from "GuildSubscriptionsStore" /* 7445 */;
+import GuildPopoutStore from "GuildPopoutStore" /* 16140 */;
+import GuildStore from "GuildStore" /* 5041 */;
+import GuildSubscriptionsStore from "GuildSubscriptionsStore" /* 7542 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
-import PlatformUtils from "utils/PlatformUtils" /* 1376 */;
+import createStyles_mod from "createStyles" /* 5170 */;
+import PlatformUtils from "utils/PlatformUtils" /* 1357 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -46,7 +46,7 @@ function CommunityPill(guildVisibility) {
   _require = string(tmp4 ? t.op2cJ6 : t.TME4LJ);
   let ExperimentalWebIcon;
   if (tmp4) {
-    ExperimentalWebIcon = tmp2(11333).ExperimentalWebIcon;
+    ExperimentalWebIcon = tmp2(11505).ExperimentalWebIcon;
   }
   let obj = {
     style: tmp.communityPill,
@@ -58,22 +58,22 @@ function CommunityPill(guildVisibility) {
     },
     children: items
   };
-  const PressableOpacity = tmp2(6980).PressableOpacity;
+  const PressableOpacity = tmp2(7076).PressableOpacity;
   const tmp6 = closure_10;
   if (tmp4) {
     let obj2 = { size: "xs", color: ExperimentalWebIcon(575).colors.BADGE_INVERTED_BACKGROUND, secondaryColor: ExperimentalWebIcon(575).colors.BADGE_INVERTED_TEXT, style: tmp.communityPillIcon };
-    const ExperimentalWebBadgeIcon = tmp2(9307).ExperimentalWebBadgeIcon;
+    const ExperimentalWebBadgeIcon = tmp2(9421).ExperimentalWebBadgeIcon;
     tmp7Result = tmp7(ExperimentalWebBadgeIcon, obj2);
     tmp10 = tmp7;
   } else {
-    const obj3 = { style: tmp.communityPillIcon, source: ExperimentalWebIcon(9311), disableColor: true };
+    const obj3 = { style: tmp.communityPillIcon, source: ExperimentalWebIcon(9425), disableColor: true };
     const Icon = tmp2(1187).Icon;
     tmp7Result = tmp7(Icon, obj3);
     tmp10 = tmp7;
   }
   items = [tmp7Result, ];
-  const obj4 = { variant: "text-xs/medium", color: "text-default", style: tmp.communityPillText, children: string2(tmp4 ? t2.SiZQ0N : t2.K7iRig) };
-  const Text = tmp2(5624).Text;
+  const obj4 = { variant: "body-xs/medium", color: "text-default", style: tmp.communityPillText, children: string2(tmp4 ? t2.SiZQ0N : t2.K7iRig) };
+  const Text = tmp2(5783).Text;
   const intl2 = tmp2(1113).intl;
   string2 = intl2.string;
   t2 = tmp2(1113).t;
@@ -254,7 +254,7 @@ export default function GuildActionSheetHeader(guild) {
   items8[1] = closure_10(c4, obj17);
   let tmp19Result5 = null;
   if (null != description) {
-    const obj18 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: description };
+    const obj18 = { style: tmp.description, variant: "body-sm/medium", color: "text-default", children: description };
     tmp19Result5 = tmp19(tmp5(tmp3[18]).Text, obj18);
   }
   items8[2] = tmp19Result5;

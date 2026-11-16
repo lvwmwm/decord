@@ -1,19 +1,19 @@
-// Module ID: 18112
-// Function ID: 18113
+// Module ID: 18489
+// Function ID: 18490
 // Name: MessagesItemHappeningNow
-// Dependencies: [19, 17, 17282, 21, 12522, 575, 5014, 5596, 9510, 18113, 2]
+// Dependencies: [19, 17, 17642, 21, 12757, 575, 5170, 5756, 9627, 18490, 2]
 // Exports: getMessagesItemHappeningNowHeight
 
-// Module 18112 (MessagesItemHappeningNow)
+// Module 18489 (MessagesItemHappeningNow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useToken from "useToken" /* 5596 */;
-import CutoutBackgroundContext from "CutoutBackgroundContext" /* 9510 */;
-import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 12522 */;
+import useToken from "useToken" /* 5756 */;
+import CutoutBackgroundContext from "CutoutBackgroundContext" /* 9627 */;
+import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 12757 */;
 import react from "react" /* 19 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 17282 */;
-import createStyles from "createStyles" /* 5014 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 17642 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let HappeningNowItem;

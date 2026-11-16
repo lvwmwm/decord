@@ -1,14 +1,14 @@
-// Module ID: 14918
-// Function ID: 14919
+// Module ID: 15180
+// Function ID: 15181
 // Name: UserCheckIcon
-// Dependencies: [19, 21, 575, 5716, 8542, 2]
+// Dependencies: [19, 21, 575, 5873, 8646, 2]
 // Exports: UserCheckIcon
 
-// Module 14918 (UserCheckIcon)
+// Module 15180 (UserCheckIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5716 */;
-import AssetRegistry from "AssetRegistry" /* 8542 */;
+import BaseIconImage2 from "BaseIconImage" /* 5873 */;
+import AssetRegistry from "AssetRegistry" /* 8646 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

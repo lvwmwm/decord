@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Illustration/native/redesign/generated/images", width: 48, height: 48, scales: [2, 3], hash: "8011f85c511bc539d06f3c7f5cbb3598", name: "feedback-modal-sad-desaturated_darker", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/upsell", width: 240, height: 152, scales: [2, 3], hash: "99a0c83db7ec93ecc4f9138bd68cba05", name: "img_guild_cap_upsell_dark", type: "png" });

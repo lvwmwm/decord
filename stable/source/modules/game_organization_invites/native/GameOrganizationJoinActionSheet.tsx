@@ -1,24 +1,22 @@
-// Module ID: 13215
-// Function ID: 13216
+// Module ID: 13492
+// Function ID: 13493
 // Name: GameOrganizationJoinActionSheet
-// Dependencies: [19, 17, 2038, 1383, 11364, 21, 5014, 575, 13203, 504, 13196, 7327, 13216, 5258, 13197, 5272, 7321, 10837, 1113, 2404, 13204, 6027, 7334, 9756, 1187, 5634, 9727, 2]
+// Dependencies: [19, 17, 2162, 1385, 11536, 21, 5170, 575, 13475, 504, 13467, 7421, 13493, 5406, 13468, 5420, 7415, 10988, 1113, 2530, 13476, 6191, 7428, 9879, 1187, 5790, 9850, 2]
 // Exports: default
 
-// Module 13215 (GameOrganizationJoinActionSheet)
+// Module 13492 (GameOrganizationJoinActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11364 */;
-import openGameOrganizationJoinModalDefault from "openGameOrganizationJoinModal" /* 13197 */;
-import prefetchGameOrganizationAccountLinkStateDefault from "prefetchGameOrganizationAccountLinkState" /* 13216 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11536 */;
+import openGameOrganizationJoinModalDefault from "openGameOrganizationJoinModal" /* 13468 */;
+import prefetchGameOrganizationAccountLinkStateDefault from "prefetchGameOrganizationAccountLinkState" /* 13493 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2038 */;
-import UserStore from "UserStore" /* 1383 */;
+import ApplicationStore from "ApplicationStore" /* 2162 */;
+import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let c9;
 let metroImportAll;
@@ -140,7 +138,7 @@ export default function GameOrganizationJoinActionSheet(code) {
       }
     }
     const obj16 = { startExpanded: true, header: closure_8(code(id[16]).BottomSheetTitleHeader, { title: null }), children: closure_8(startAuthorization, obj17) };
-    BottomSheet = tmp6(tmp3[15]).BottomSheet;
+    const BottomSheet = tmp6(tmp3[15]).BottomSheet;
     obj17 = { style: tmp.loading };
     return closure_8(BottomSheet, obj16);
   }

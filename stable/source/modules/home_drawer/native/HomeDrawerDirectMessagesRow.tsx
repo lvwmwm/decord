@@ -1,21 +1,21 @@
-// Module ID: 18381
-// Function ID: 18382
+// Module ID: 18755
+// Function ID: 18756
 // Name: HomeDrawerDirectMessagesRow
-// Dependencies: [19, 17, 5761, 4956, 1072, 21, 5014, 575, 504, 5624, 1113, 18377, 5204, 5201, 2]
+// Dependencies: [19, 17, 5922, 5112, 1072, 21, 5170, 575, 504, 5783, 1113, 18751, 5352, 5349, 2]
 // Exports: default
 
-// Module 18381 (HomeDrawerDirectMessagesRow)
+// Module 18755 (HomeDrawerDirectMessagesRow)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
-import HomeDrawerExperiment from "HomeDrawerExperiment" /* 5204 */;
+import HomeDrawerExperiment from "HomeDrawerExperiment" /* 5352 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 5761 */;
-import RelationshipStore from "RelationshipStore" /* 4956 */;
+import PresenceStore from "PresenceStore" /* 5922 */;
+import RelationshipStore from "RelationshipStore" /* 5112 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let friendIDs;
@@ -43,17 +43,17 @@ function HomeDrawerDMsRow() {
     const obj2 = { style: tmp.subtitle, children: items1 };
     const obj3 = { style: tmp.onlineDot };
     items1 = [metroImportDefault(View, obj3), ];
-    const obj4 = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: intl.format(intl3.t.N5UIKr, obj5) };
-    const Text = tmp2(5624).Text;
+    const obj4 = { variant: "body-xs/medium", color: "text-muted", lineClamp: 1, children: intl.format(intl3.t.N5UIKr, obj5) };
+    const Text = tmp2(5783).Text;
     intl = tmp2(1113).intl;
     obj5 = { numFriends: stateFromStores };
     items1[1] = metroImportDefault(Text, obj4);
     tmp5 = metroImportAll(View, obj2);
   }
   const obj6 = { title: metroImportDefault(Text2, obj7), subtitle: tmp5 };
-  const HomeDrawerSharedItem = tmp2(18377).HomeDrawerSharedItem;
-  obj7 = { variant: "text-md/medium", color: "text-default", lineClamp: 1, children: intl2.string(intl3.t.YUU0RF) };
-  Text2 = tmp2(5624).Text;
+  const HomeDrawerSharedItem = tmp2(18751).HomeDrawerSharedItem;
+  obj7 = { variant: "body-md/medium", color: "text-default", lineClamp: 1, children: intl2.string(intl3.t.YUU0RF) };
+  Text2 = tmp2(5783).Text;
   intl2 = tmp2(1113).intl;
   return metroImportDefault(HomeDrawerSharedItem, obj6);
 }

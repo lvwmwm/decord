@@ -1,20 +1,20 @@
-// Module ID: 16780
-// Function ID: 16781
+// Module ID: 17134
+// Function ID: 17135
 // Name: ConnectGuardianCard
-// Dependencies: [19, 17, 1383, 7716, 21, 5014, 575, 563, 7624, 16776, 16777, 7358, 5711, 1113, 2538, 6027, 9169, 5624, 8238, 5634, 14767, 6767, 2]
+// Dependencies: [19, 17, 1385, 7825, 21, 5170, 575, 563, 7733, 17130, 17131, 7451, 5868, 1113, 2664, 6191, 9282, 5783, 8341, 5790, 12442, 6855, 2]
 // Exports: ConnectGuardianCard
 
-// Module 16780 (ConnectGuardianCard)
+// Module 17134 (ConnectGuardianCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ToastUtils from "ToastUtils" /* 5711 */;
-import ClipboardUtils from "ClipboardUtils" /* 7358 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7716 */;
-import shareGuardianConnectLink from "shareGuardianConnectLink" /* 16777 */;
+import ToastUtils from "ToastUtils" /* 5868 */;
+import ClipboardUtils from "ClipboardUtils" /* 7451 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7825 */;
+import shareGuardianConnectLink from "shareGuardianConnectLink" /* 17131 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1383 */;
+import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -107,7 +107,7 @@ export function ConnectGuardianCard(linkCode) {
     Stack2 = tmp2(tmp3[15]).Stack;
     const obj4 = { size: 160, text: tmp17 };
     items3 = [closure_7(tmp2(tmp3[16]).QRCodeWithOverlay, obj4), ];
-    const obj5 = { style: tmp.countdown, variant: "text-xs/normal", children: "" + stringResult + " " + tmp2Result.getTimeFormat(86400 * days + 3600 * hours + 60 * minutes + seconds) };
+    const obj5 = { style: tmp.countdown, variant: "body-xs/normal", children: "" + stringResult + " " + tmp2Result.getTimeFormat(86400 * days + 3600 * hours + 60 * minutes + seconds) };
     const Text2 = tmp2(tmp3[17]).Text;
     const _HermesInternal = HermesInternal;
     tmp2Result = tmp2(id[18]);
@@ -123,7 +123,7 @@ export function ConnectGuardianCard(linkCode) {
       items4[1] = tmp11;
       const obj7 = { style: tmp.dividerLine };
       items5 = [closure_7(View, obj7), , ];
-      const obj8 = { style: tmp.dividerText, variant: "text-sm/medium", color: "text-muted", children: string("compact" === shareActions ? tmp6Result.XhROZk : tmp6Result.lggBOi) };
+      const obj8 = { style: tmp.dividerText, variant: "body-sm/medium", color: "text-muted", children: string("compact" === shareActions ? tmp6Result.XhROZk : tmp6Result.lggBOi) };
       const Text = tmp2(tmp3[17]).Text;
       const intl = tmp2(tmp3[13]).intl;
       string = intl.string;

@@ -1,15 +1,15 @@
-// Module ID: 18694
-// Function ID: 18695
+// Module ID: 19092
+// Function ID: 19093
 // Name: SuggestedSearchList
-// Dependencies: [19, 17, 21, 5014, 575, 18695, 5624, 1113, 4123, 18696, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 19093, 5783, 1113, 4249, 19094, 2]
 
-// Module 18694 (SuggestedSearchList)
+// Module 19092 (SuggestedSearchList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import SuggestedSearchRowDefault from "SuggestedSearchRow" /* 18696 */;
+import SuggestedSearchRowDefault from "SuggestedSearchRow" /* 19094 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -47,7 +47,7 @@ const memoResult = react.memo(function SuggestedSearchList(smartSearchQuery) {
     const obj2 = { children: items1 };
     const obj4 = { marginTop: num };
     items[1] = obj4;
-    const obj3 = { variant: "text-sm/semibold", color: "interactive-text-default", style: items, children: intl.string(source(suggestedSearches[8]).bzswFC) };
+    const obj3 = { variant: "body-sm/semibold", color: "interactive-text-default", style: items, children: intl.string(source(suggestedSearches[8]).bzswFC) };
     intl = tmp2(tmp3[7]).intl;
     items1 = [
       tmp9(Text, obj3),

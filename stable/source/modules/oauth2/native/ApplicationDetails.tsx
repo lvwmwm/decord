@@ -1,21 +1,21 @@
-// Module ID: 14622
-// Function ID: 14623
+// Module ID: 14886
+// Function ID: 14887
 // Name: ApplicationDetails
-// Dependencies: [19, 17, 21, 5014, 575, 9745, 9050, 14623, 11, 9743, 5727, 1113, 8667, 9747, 12997, 5740, 8910, 12105, 11281, 5624, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 9868, 9163, 14887, 11, 9866, 5883, 1113, 8771, 9870, 13244, 5896, 9017, 12300, 11453, 5783, 2]
 // Exports: default
 
-// Module 14622 (ApplicationDetails)
+// Module 14886 (ApplicationDetails)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import GlobeEarthIcon from "GlobeEarthIcon" /* 9050 */;
-import scopes from "scopes" /* 9743 */;
-import disclosures from "disclosures" /* 9745 */;
-import EmbedIcon from "EmbedIcon" /* 14623 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import GlobeEarthIcon from "GlobeEarthIcon" /* 9163 */;
+import scopes from "scopes" /* 9866 */;
+import disclosures from "disclosures" /* 9868 */;
+import EmbedIcon from "EmbedIcon" /* 14887 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -23,14 +23,14 @@ let hasOwnProperty;
 let size;
 let tmp4;
 const intl5 = tmp4(1113);
-const LinkIcon = tmp4(5727);
-const ClockIcon = tmp4(5740);
-const LockIcon = tmp4(8667);
-const OAuth2Scopes = tmp4(8910);
-const Utils = tmp4(9747);
-const ShieldIcon = tmp4(11281);
-const RobotIcon = tmp4(12105);
-const HammerIcon = tmp4(12997);
+const LinkIcon = tmp4(5883);
+const ClockIcon = tmp4(5896);
+const LockIcon = tmp4(8771);
+const OAuth2Scopes = tmp4(9017);
+const Utils = tmp4(9870);
+const ShieldIcon = tmp4(11453);
+const RobotIcon = tmp4(12300);
+const HammerIcon = tmp4(13244);
 function ApplicationDetailsEntry(iconComponent) {
   let items;
   iconComponent = iconComponent.iconComponent;
@@ -45,7 +45,7 @@ function ApplicationDetailsEntry(iconComponent) {
     iconComponentResult = iconComponent(obj2);
   }
   items = [iconComponentResult, ];
-  const obj3 = { variant: "text-sm/normal", color: "text-default", style: tmp.entryText, children: text };
+  const obj3 = { variant: "body-sm/normal", color: "text-default", style: tmp.entryText, children: text };
   items[1] = React3(Text_Text.Text, obj3);
   return tmp2(tmp3, obj);
 }

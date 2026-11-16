@@ -1,11 +1,11 @@
-// Module ID: 18324
-// Function ID: 18325
+// Module ID: 18697
+// Function ID: 18698
 // Name: GameClaimCoachmarkExperiment
-// Dependencies: [5236, 2]
+// Dependencies: [5384, 2]
 // Exports: useGameClaimCoachmarkEnabled
 
-// Module 18324 (GameClaimCoachmarkExperiment)
-import createExperiment from "module_5236" /* 5236 */;
+// Module 18697 (GameClaimCoachmarkExperiment)
+import createExperiment from "module_5384" /* 5384 */;
 import size from "module_2" /* 2 */;
 
 let items;

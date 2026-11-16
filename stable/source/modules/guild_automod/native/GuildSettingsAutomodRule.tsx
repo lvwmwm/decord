@@ -1,23 +1,23 @@
-// Module ID: 19685
-// Function ID: 19686
+// Module ID: 20136
+// Function ID: 20137
 // Name: GuildSettingsAutomodRule
-// Dependencies: [5, 32, 19, 19667, 19669, 13292, 21, 5014, 575, 1497, 18916, 4839, 19670, 5964, 1113, 6998, 7558, 8177, 6027, 5624, 7082, 7369, 19686, 19697, 19700, 7060, 6975, 13297, 5711, 6446, 7358, 5606, 2]
+// Dependencies: [5, 32, 19, 20118, 20120, 13557, 21, 5170, 575, 1499, 19326, 4995, 20121, 6128, 1113, 7097, 7663, 8279, 6191, 5783, 7181, 7462, 20137, 20148, 20151, 7159, 7071, 13562, 5868, 6611, 7451, 5766, 2]
 // Exports: default
 
-// Module 19685 (GuildSettingsAutomodRule)
+// Module 20136 (GuildSettingsAutomodRule)
 import nativeDefault from "native" /* 575 */;
-import ToastUtils from "ToastUtils" /* 5711 */;
-import NavigatorHeader2 from "NavigatorHeader" /* 6998 */;
-import ClipboardUtils from "ClipboardUtils" /* 7358 */;
-import Constants from "Constants" /* 13292 */;
-import AutomodStore from "AutomodStore" /* 19667 */;
-import AutomodRuleUtils from "AutomodRuleUtils" /* 19670 */;
+import ToastUtils from "ToastUtils" /* 5868 */;
+import NavigatorHeader2 from "NavigatorHeader" /* 7097 */;
+import ClipboardUtils from "ClipboardUtils" /* 7451 */;
+import Constants from "Constants" /* 13557 */;
+import AutomodStore from "AutomodStore" /* 20118 */;
+import AutomodRuleUtils from "AutomodRuleUtils" /* 20121 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildSettingsAutomodRuleStore from "GuildSettingsAutomodRuleStore" /* 19669 */;
+import GuildSettingsAutomodRuleStore from "GuildSettingsAutomodRuleStore" /* 20120 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, c5, c6, closure_3, navigation;
@@ -265,7 +265,7 @@ export default function GuildSettingsAutomodRule(guildId) {
       Stack = tmp2(tmp3[18]).Stack;
       let tmp30Result = null != errorMessage;
       if (tmp30Result) {
-        const obj6 = { variant: "text-sm/normal", color: "text-feedback-critical", accessibilityLiveRegion: "polite", children: errorMessage };
+        const obj6 = { variant: "body-sm/normal", color: "text-feedback-critical", accessibilityLiveRegion: "polite", children: errorMessage };
         tmp30Result = tmp30(tmp2(tmp3[19]).Text, obj6);
       }
       items6 = [tmp30Result, , , , , , ];

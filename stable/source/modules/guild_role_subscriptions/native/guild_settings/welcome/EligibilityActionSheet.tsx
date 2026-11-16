@@ -1,20 +1,18 @@
-// Module ID: 19876
-// Function ID: 19877
+// Module ID: 20327
+// Function ID: 20328
 // Name: EligibilityActionSheet
-// Dependencies: [19, 1072, 21, 5014, 5258, 9074, 7563, 19877, 5272, 5624, 1113, 19881, 2]
+// Dependencies: [19, 1072, 21, 5170, 5406, 9187, 7668, 20328, 5420, 5783, 1113, 20332, 2]
 // Exports: default
 
-// Module 19876 (EligibilityActionSheet)
+// Module 20327 (EligibilityActionSheet)
 import Constants from "Constants" /* 1072 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import useCreatorMonetizationEligibilityItemsDefault from "useCreatorMonetizationEligibilityItems" /* 19877 */;
-import EligibilityChecklistDefault from "EligibilityChecklist" /* 19881 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
+import useCreatorMonetizationEligibilityItemsDefault from "useCreatorMonetizationEligibilityItems" /* 20328 */;
+import EligibilityChecklistDefault from "EligibilityChecklist" /* 20332 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let hasOwnProperty;
 let metroRequire;
@@ -55,9 +53,9 @@ export default function EligibilityActionSheet(onRequireModeratorMFAClick) {
   }, items);
   let obj = { startExpanded: true, children: items1 };
   const tmp3 = useCreatorMonetizationEligibilityItemsDefault(eligibility, memo);
-  BottomSheet = onRequireModeratorMFAClick(5272).BottomSheet;
+  const BottomSheet = onRequireModeratorMFAClick(5420).BottomSheet;
   let obj2 = { style: tmp.title, variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl.string(onRequireModeratorMFAClick(1113).t["3s47iN"]) };
-  const Heading = onRequireModeratorMFAClick(5624).Heading;
+  const Heading = onRequireModeratorMFAClick(5783).Heading;
   intl = onRequireModeratorMFAClick(1113).intl;
   items1 = [closure_5(Heading, obj2), ];
   let obj3 = { style: tmp.container, items: tmp3 };

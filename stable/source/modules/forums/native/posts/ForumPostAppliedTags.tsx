@@ -1,16 +1,16 @@
-// Module ID: 13776
-// Function ID: 13777
+// Module ID: 14041
+// Function ID: 14042
 // Name: ForumPostAppliedTags
-// Dependencies: [19, 17, 21, 5014, 575, 10522, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 10673, 2]
 // Exports: ForumPostAppliedTagPills, ForumPostAppliedTags
 
-// Module 13776 (ForumPostAppliedTags)
+// Module 14041 (ForumPostAppliedTags)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import AppliedForumTag2 from "AppliedForumTag" /* 10522 */;
+import AppliedForumTag2 from "AppliedForumTag" /* 10673 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -62,7 +62,7 @@ export function ForumPostAppliedTagPills(additionalTagsCount) {
     const obj2 = { tag: obj3, containerStyle: tmp.tag, hasUnreads };
     const _HermesInternal = HermesInternal;
     obj3 = { id: "-1", name: "+" + num };
-    const AppliedForumTagPill = hasUnreads(10522).AppliedForumTagPill;
+    const AppliedForumTagPill = hasUnreads(10673).AppliedForumTagPill;
     tmp4 = closure_3(AppliedForumTagPill, obj2);
   }
   items1[1] = tmp4;

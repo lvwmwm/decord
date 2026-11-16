@@ -1,30 +1,30 @@
-// Module ID: 9445
-// Function ID: 9446
+// Module ID: 9559
+// Function ID: 9560
 // Name: GameProfileAnnouncements
-// Dependencies: [19, 17, 9370, 21, 1375, 6031, 1113, 5014, 575, 9438, 7112, 9437, 9446, 9447, 5624, 5717, 9450, 4836, 9452, 7326, 9454, 9340, 9320, 9457, 9386, 2]
+// Dependencies: [19, 17, 9484, 21, 1377, 6195, 1113, 5170, 575, 9552, 7216, 9551, 9560, 9561, 5783, 5874, 9564, 4992, 9566, 7420, 9568, 9454, 9434, 9571, 9500, 2]
 // Exports: default
 
-// Module 9445 (GameProfileAnnouncements)
+// Module 9559 (GameProfileAnnouncements)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import DateUtils from "DateUtils" /* 4836 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import CustomMarkupAll from "CustomMarkup" /* 6031 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7112 */;
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9320 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9340 */;
-import GameProfileConstants from "GameProfileConstants" /* 9370 */;
-import GameProfileSkeleton from "GameProfileSkeleton" /* 9438 */;
-import GameProfileSkeletonCardRowDefault from "GameProfileSkeletonCardRow" /* 9446 */;
-import AnnouncementMessageUtils from "AnnouncementMessageUtils" /* 9447 */;
-import ImageWithPlaceholder from "ImageWithPlaceholder" /* 9450 */;
-import navigateToGameAnnouncementDefault from "navigateToGameAnnouncement" /* 9457 */;
+import DateUtils from "DateUtils" /* 4992 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import FastImageDefault from "FastImage" /* 5874 */;
+import CustomMarkupAll from "CustomMarkup" /* 6195 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7216 */;
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9434 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9454 */;
+import GameProfileConstants from "GameProfileConstants" /* 9484 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 9552 */;
+import GameProfileSkeletonCardRowDefault from "GameProfileSkeletonCardRow" /* 9560 */;
+import AnnouncementMessageUtils from "AnnouncementMessageUtils" /* 9561 */;
+import ImageWithPlaceholder from "ImageWithPlaceholder" /* 9564 */;
+import navigateToGameAnnouncementDefault from "navigateToGameAnnouncement" /* 9571 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -120,7 +120,7 @@ function EmbedAnnouncementCard(message) {
     obj6 = { style: tmp.cardBody, children: items };
     const tmp12 = metroRequire;
     if (tmp11Result) {
-      const obj7 = { variant: "text-xs/medium", color: "text-link", lineClamp: 1, children: embedSource.url };
+      const obj7 = { variant: "body-xs/medium", color: "text-link", lineClamp: 1, children: embedSource.url };
       tmp11Result = tmp11(Text_Text.Text, obj7);
     }
     items = [tmp11Result, ];
@@ -136,7 +136,7 @@ function EmbedAnnouncementCard(message) {
         tmp11Result6 = tmp11(FastImageDefault, obj10);
       }
       items2 = [tmp11Result6, ];
-      const obj12 = { variant: "text-xs/semibold", color: "text-strong", lineClamp: 1, children: embedSource.authorName };
+      const obj12 = { variant: "body-xs/semibold", color: "text-strong", lineClamp: 1, children: embedSource.authorName };
       items2[1] = metroImportAll(Text_Text.Text, obj12);
       tmp13Result = tmp13(tmp14, obj9);
     }
@@ -150,14 +150,14 @@ function EmbedAnnouncementCard(message) {
     items3[1] = tmp11Result7;
     let tmp11Result8 = null != message.title;
     if (tmp11Result8) {
-      const obj15 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 2, children: parser(message.title, true, obj2) };
+      const obj15 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", lineClamp: 2, children: parser(message.title, true, obj2) };
       const Text = Text_Text.Text;
       tmp11Result8 = tmp11(Text, obj15);
     }
     items3[2] = tmp11Result8;
     let tmp11Result9 = message.body.length > 0;
     if (tmp11Result9) {
-      const obj16 = { variant: "text-sm/medium", color: "text-default", lineClamp: 3, children: parser(message.body, true, obj2) };
+      const obj16 = { variant: "body-sm/medium", color: "text-default", lineClamp: 3, children: parser(message.body, true, obj2) };
       const Text2 = Text_Text.Text;
       tmp11Result9 = tmp11(Text2, obj16);
     }
@@ -176,7 +176,7 @@ function EmbedAnnouncementCard(message) {
       const _HermesInternal = HermesInternal;
       str2 = "" + embedSource.providerName + " \u00B7 ";
     }
-    const obj20 = { variant: "text-xs/medium", color: "text-muted", children: items5 };
+    const obj20 = { variant: "body-xs/medium", color: "text-muted", children: items5 };
     items5 = [str2, ];
     const _Date = Date;
     const self = this;
@@ -190,10 +190,10 @@ function EmbedAnnouncementCard(message) {
     if (tmp13Result2) {
       const obj21 = { style: tmp.reactionInfo, children: items6 };
       const obj22 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
-      const ReactionIcon = tmp36(9452).ReactionIcon;
+      const ReactionIcon = tmp36(9566).ReactionIcon;
       items6 = [metroImportAll(ReactionIcon, obj22), ];
       let tmp46 = null != obj14;
-      const Text4 = tmp36(5624).Text;
+      const Text4 = tmp36(5783).Text;
       const reactionCount = message.reactionCount;
       if (tmp46) {
         tmp46 = obj14.locale === tmp36(1113).intl.currentLocale;
@@ -206,7 +206,7 @@ function EmbedAnnouncementCard(message) {
         numberFormat = new Intl.NumberFormat(tmp36(1113).intl.currentLocale);
         obj14 = obj23;
       }
-      const obj24 = { variant: "text-xs/medium", color: "text-muted", children: format.format(reactionCount) };
+      const obj24 = { variant: "body-xs/medium", color: "text-muted", children: format.format(reactionCount) };
       format = obj14.format;
       items6[1] = metroImportAll(Text4, obj24);
       tmp13Result2 = tmp13(tmp14, obj21);
@@ -283,20 +283,20 @@ function MessageAnnouncementCard(message) {
   let tmp18 = null != message.title;
   const obj7 = { style: tmp.cardBody, children: items1 };
   if (tmp18) {
-    const obj8 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 2, children: parser(message.title, true, obj2) };
+    const obj8 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", lineClamp: 2, children: parser(message.title, true, obj2) };
     const Text = Text_Text.Text;
     tmp18 = metroImportAll(Text, obj8);
   }
   items1 = [tmp18, , ];
   let tmp22 = message.body.length > 0;
   if (tmp22) {
-    const obj9 = { variant: "text-sm/medium", color: "text-default", lineClamp: 3, children: parser(message.body, true, obj2) };
+    const obj9 = { variant: "body-sm/medium", color: "text-default", lineClamp: 3, children: parser(message.body, true, obj2) };
     const Text2 = Text_Text.Text;
     tmp22 = metroImportAll(Text2, obj9);
   }
   items1[1] = tmp22;
   const obj10 = { style: tmp.metadataRow, children: items2 };
-  const obj11 = { variant: "text-xs/medium", color: "text-muted", children: dateFormat(date, "LL") };
+  const obj11 = { variant: "body-xs/medium", color: "text-muted", children: dateFormat(date, "LL") };
   const Text3 = Text_Text.Text;
   dateFormat = DateUtils.dateFormat;
   DateUtils;
@@ -306,10 +306,10 @@ function MessageAnnouncementCard(message) {
   if (tmp10Result) {
     const obj12 = { style: tmp.reactionInfo, children: items3 };
     const obj13 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
-    const ReactionIcon = tmp27(9452).ReactionIcon;
+    const ReactionIcon = tmp27(9566).ReactionIcon;
     items3 = [metroImportAll(ReactionIcon, obj13), ];
     let tmp34 = null != obj14;
-    const Text4 = tmp27(5624).Text;
+    const Text4 = tmp27(5783).Text;
     const reactionCount = message.reactionCount;
     if (tmp34) {
       tmp34 = obj14.locale === tmp27(1113).intl.currentLocale;
@@ -321,7 +321,7 @@ function MessageAnnouncementCard(message) {
       const self2 = this;
       numberFormat = new Intl.NumberFormat(tmp27(1113).intl.currentLocale);
     }
-    const obj15 = { variant: "text-xs/medium", color: "text-muted", children: format.format(reactionCount) };
+    const obj15 = { variant: "body-xs/medium", color: "text-muted", children: format.format(reactionCount) };
     format = obj14.format;
     items3[1] = metroImportAll(Text4, obj15);
     tmp10Result = tmp10(tmp17, obj12);
@@ -365,14 +365,14 @@ function PollAnnouncementCard(message) {
       children: closure_9(closure_5, obj3)
     };
     obj3 = { style: tmp.cardBody, children: items };
-    const obj4 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: poll.question.text };
-    items = [closure_8(message(5624).Text, obj4), , ];
+    const obj4 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", children: poll.question.text };
+    items = [closure_8(message(5783).Text, obj4), , ];
     const obj5 = { style: tmp.pollAnswers, children: items1 };
     items1 = [
       substr.map((poll_media) => {
           let Text;
           let str;
-          const obj = { style: pollAnswerOption.pollAnswerOption, children: metroImportAll(Text, { variant: "text-sm/medium", color: "text-default", lineClamp: 1, children: str }) };
+          const obj = { style: pollAnswerOption.pollAnswerOption, children: metroImportAll(Text, { variant: "body-sm/medium", color: "text-default", lineClamp: 1, children: str }) };
           str = poll_media.poll_media.text;
           Text = Text_Text.Text;
           const tmp2 = hasOwnProperty;
@@ -386,8 +386,8 @@ function PollAnnouncementCard(message) {
     let tmp7Result = diff > 0;
     const tmp8 = closure_6;
     if (tmp7Result) {
-      let obj = { variant: "text-xs/medium", color: "text-muted", style: tmp.pollMoreOptions, children: intl.format(message(1113).t["mv/nIa"], obj6) };
-      let Text = tmp11(5624).Text;
+      let obj = { variant: "body-xs/medium", color: "text-muted", style: tmp.pollMoreOptions, children: intl.format(message(1113).t["mv/nIa"], obj6) };
+      let Text = tmp11(5783).Text;
       intl = tmp11(1113).intl;
       obj6 = { count: diff };
       tmp7Result = tmp7(Text, obj);
@@ -395,8 +395,8 @@ function PollAnnouncementCard(message) {
     items1[1] = tmp7Result;
     items[1] = closure_9(closure_5, obj5);
     const obj7 = { style: tmp.metadataRow, children: closure_8(Text2, obj8) };
-    obj8 = { variant: "text-xs/medium", color: "text-muted", children: format(t0FTsH, obj9) };
-    Text2 = tmp11(5624).Text;
+    obj8 = { variant: "body-xs/medium", color: "text-muted", children: format(t0FTsH, obj9) };
+    Text2 = tmp11(5783).Text;
     const intl2 = tmp11(1113).intl;
     format = intl2.format;
     const _Date = Date;
@@ -405,7 +405,7 @@ function PollAnnouncementCard(message) {
     obj9 = { createdAt: date, expiryLabel: tmp11Result.getPollExpiryLabel(poll) };
     t0FTsH = tmp11(1113).t.t0FTsH;
     date = new Date(message.timestamp);
-    tmp11Result = message(9447);
+    tmp11Result = message(9561);
     items[2] = closure_8(closure_5, obj7);
     return closure_8(tmp8, obj2);
   }

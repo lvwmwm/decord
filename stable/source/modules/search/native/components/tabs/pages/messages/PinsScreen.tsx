@@ -1,20 +1,20 @@
-// Module ID: 18793
-// Function ID: 18794
+// Module ID: 19191
+// Function ID: 19192
 // Name: messages/PinsScreen
-// Dependencies: [19, 14535, 6863, 13900, 9827, 9826, 1072, 21, 504, 18706, 14534, 18702, 13907, 18767, 18710, 18709, 18790, 2]
+// Dependencies: [19, 14800, 6951, 14166, 9950, 9949, 1072, 21, 504, 19104, 14799, 19100, 14173, 19165, 19108, 19107, 19188, 2]
 
-// Module 18793 (messages/PinsScreen)
+// Module 19191 (messages/PinsScreen)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import TrackingConstants from "TrackingConstants" /* 9826 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13907 */;
-import ChannelPinActionCreatorsDefault from "ChannelPinActionCreators" /* 14534 */;
-import ChannelPinsStore2 from "ChannelPinsStore" /* 14535 */;
-import MessagesScreenDefault from "MessagesScreen" /* 18790 */;
+import TrackingConstants from "TrackingConstants" /* 9949 */;
+import TrackingDefault from "Tracking" /* 14173 */;
+import ChannelPinActionCreatorsDefault from "ChannelPinActionCreators" /* 14799 */;
+import ChannelPinsStore2 from "ChannelPinsStore" /* 14800 */;
+import MessagesScreenDefault from "MessagesScreen" /* 19188 */;
 import react from "react" /* 19 */;
-import SearchMessageStore from "SearchMessageStore" /* 6863 */;
-import SearchQueryStore from "SearchQueryStore" /* 13900 */;
-import SearchConstants from "SearchConstants" /* 9827 */;
+import SearchMessageStore from "SearchMessageStore" /* 6951 */;
+import SearchQueryStore from "SearchQueryStore" /* 14166 */;
+import SearchConstants from "SearchConstants" /* 9950 */;
 import size from "module_2" /* 2 */;
 
 const ChannelPinsStore = ChannelPinsStore2;
@@ -71,7 +71,7 @@ function InitialPinsScreen(searchContext) {
     const message = SearchMessageStore.getMessage(messageId);
     const obj = { searchContext, channelId, messageId, userId: id, index, entityType: constants2.MESSAGE };
     id = undefined;
-    const trackSearchResultClicked = search_tracking_TrackingDefault.trackSearchResultClicked;
+    const trackSearchResultClicked = TrackingDefault.trackSearchResultClicked;
     if (message != null) {
       const author = message.author;
       if (author != null) {

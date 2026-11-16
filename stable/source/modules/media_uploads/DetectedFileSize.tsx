@@ -1,10 +1,10 @@
-// Module ID: 8245
-// Function ID: 8246
+// Module ID: 8348
+// Function ID: 8349
 // Name: _asyncToGenerator
 // Dependencies: [5, 2]
 // Exports: getDetectedFileSize
 
-// Module 8245 (_asyncToGenerator)
+// Module 8348 (_asyncToGenerator)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -46,8 +46,8 @@ let obj = function _getDetectedFileSize() {
             c4 = 1;
             let self = this;
             let self2 = this;
-            const promise = new Promise((data, arg1) => {
-              closure_0 = data;
+            const promise = new Promise((arg0, arg1) => {
+              closure_0 = arg0;
               let closure_1 = arg1;
               const fileReader = new FileReader();
               const timeout = setTimeout(() => {

@@ -1,20 +1,20 @@
-// Module ID: 9757
-// Function ID: 9758
+// Module ID: 9880
+// Function ID: 9881
 // Name: IntegrationTypeSelector
-// Dependencies: [19, 17, 21, 5014, 575, 1409, 5651, 5721, 1113, 9758, 5717, 5624, 9760, 7060, 6975, 1187, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 1411, 5807, 5877, 1113, 9881, 5874, 5783, 9883, 7159, 7071, 1187, 2]
 // Exports: default
 
-// Module 9757 (IntegrationTypeSelector)
+// Module 9880 (IntegrationTypeSelector)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5651 */;
-import UserPlusIcon from "UserPlusIcon" /* 5721 */;
-import ServerIcon from "ServerIcon" /* 9758 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5807 */;
+import UserPlusIcon from "UserPlusIcon" /* 5877 */;
+import ServerIcon from "ServerIcon" /* 9881 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -102,7 +102,7 @@ export default function IntegrationTypeSelector(application) {
   const obj3 = { style: tmp.container, children: items4 };
   const obj5 = { style: tmp.appIconMask, children: tmp5 };
   items3[0] = tmp6(closure_4, obj5);
-  const obj6 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", children: application.name };
+  const obj6 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: application.name };
   items3[1] = tmp6(application(memo1[11]).Text, obj6);
   let tmp6Result = null != application.description;
   const tmp12 = application;

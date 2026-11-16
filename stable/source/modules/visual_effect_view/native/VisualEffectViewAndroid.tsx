@@ -1,12 +1,12 @@
-// Module ID: 5605
-// Function ID: 5606
+// Module ID: 5765
+// Function ID: 5766
 // Name: VisualEffectViewAndroid
-// Dependencies: [4971, 5603, 5604, 2]
+// Dependencies: [5127, 5763, 5764, 2]
 
-// Module 5605 (VisualEffectViewAndroid)
-import VisualEffectViewNativeComponentDefault from "VisualEffectViewNativeComponent" /* 5604 */;
-import DeviceUtils from "DeviceUtils" /* 4971 */;
-import requireNativeComponentOrDefault from "requireNativeComponentOrDefault" /* 5603 */;
+// Module 5765 (VisualEffectViewAndroid)
+import VisualEffectViewNativeComponentDefault from "VisualEffectViewNativeComponent" /* 5764 */;
+import DeviceUtils from "DeviceUtils" /* 5127 */;
+import requireNativeComponentOrDefault from "requireNativeComponentOrDefault" /* 5763 */;
 import size from "module_2" /* 2 */;
 
 const obj = { componentName: "DCDVisualEffectView", componentFoundInstance: VisualEffectViewNativeComponentDefault };

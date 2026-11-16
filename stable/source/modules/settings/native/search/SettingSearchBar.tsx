@@ -1,19 +1,19 @@
-// Module ID: 16597
-// Function ID: 16598
+// Module ID: 16950
+// Function ID: 16951
 // Name: SettingSearchBar
-// Dependencies: [19, 17, 16585, 21, 5014, 575, 1888, 16591, 7218, 2]
+// Dependencies: [19, 17, 16938, 21, 5170, 575, 2017, 16944, 7315, 2]
 // Exports: default
 
-// Module 16597 (SettingSearchBar)
+// Module 16950 (SettingSearchBar)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1888 */;
-import SearchBar2 from "SearchBar" /* 7218 */;
-import settings_tracking_Tracking from "settings/tracking/Tracking" /* 16591 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 2017 */;
+import SearchBar2 from "SearchBar" /* 7315 */;
+import Tracking from "Tracking" /* 16944 */;
 import react from "react" /* 19 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 16585 */;
-import createStyles from "createStyles" /* 5014 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 16938 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -33,7 +33,7 @@ export default function SettingSearchBar() {
     const result = obj.dismissGlobalKeyboard();
   }, []);
   const callback1 = react.useCallback(() => {
-    const obj = settings_tracking_Tracking;
+    const obj = Tracking;
     const result = obj.trackSettingSearchInputFocused();
     UserSettingSearchStore.setState({ isActive: true, isFocused: true });
   }, []);

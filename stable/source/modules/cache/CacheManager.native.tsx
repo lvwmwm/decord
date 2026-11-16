@@ -1,21 +1,21 @@
-// Module ID: 19410
-// Function ID: 19411
+// Module ID: 19855
+// Function ID: 19856
 // Name: CacheManager
-// Dependencies: [6568, 7655, 3, 1089, 7287, 7796, 17566, 1375, 1092, 2]
+// Dependencies: [6655, 7764, 3, 1089, 7383, 7905, 17933, 1377, 1092, 2]
 
-// Module 19410 (CacheManager)
+// Module 19855 (CacheManager)
 import LoggerDefault from "Logger" /* 3 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
-import KvCacheVersionDefault from "KvCacheVersion" /* 7796 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6568 */;
-import CacheStore from "CacheStore" /* 7655 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7287 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import KvCacheVersionDefault from "KvCacheVersion" /* 7905 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6655 */;
+import CacheStore from "CacheStore" /* 7764 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7383 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const CacheActionCreators = tmp(17566);
+const CacheActionCreators = tmp(17933);
 const hasOwnProperty = new LoggerDefault("CacheStore");
 const tmp2 = new LoggerDefault("CacheStore");
 let closure_6 = 15 * DurationsDefault.Millis.MINUTE;

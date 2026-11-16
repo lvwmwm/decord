@@ -1,17 +1,17 @@
-// Module ID: 19790
-// Function ID: 19791
+// Module ID: 20241
+// Function ID: 20242
 // Name: RoleIconActionSheet
-// Dependencies: [5, 19, 19773, 1072, 1386, 21, 504, 5258, 8220, 1488, 19791, 5711, 1113, 19787, 7366, 7321, 5624, 7060, 6975, 9939, 2]
+// Dependencies: [5, 19, 20224, 1072, 1388, 21, 504, 5406, 8323, 1490, 20242, 5868, 1113, 20238, 7459, 7415, 5783, 7159, 7071, 10094, 2]
 // Exports: default
 
-// Module 19790 (RoleIconActionSheet)
+// Module 20241 (RoleIconActionSheet)
 import Constants from "Constants" /* 1072 */;
-import EmojiConstants from "EmojiConstants" /* 1386 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import GuildSettingsRolesActionCreators from "GuildSettingsRolesActionCreators" /* 19787 */;
+import EmojiConstants from "EmojiConstants" /* 1388 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
+import GuildSettingsRolesActionCreators from "GuildSettingsRolesActionCreators" /* 20238 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 19773 */;
+import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 20224 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -148,7 +148,7 @@ export default function RoleIconActionSheet(arg0) {
   const BottomSheetTitleHeader = require("BottomSheetTitleHeader").BottomSheetTitleHeader;
   intl = require("intl").intl;
   const items2 = [closure_7(BottomSheetTitleHeader, obj2), , ];
-  let obj3 = { variant: "text-sm/medium", color: "text-muted", children: intl2.string(require("intl").t.I3YQeV) };
+  let obj3 = { variant: "body-sm/medium", color: "text-muted", children: intl2.string(require("intl").t.I3YQeV) };
   const Text = require("Text/Text").Text;
   intl2 = require("intl").intl;
   items2[1] = closure_7(Text, obj3);

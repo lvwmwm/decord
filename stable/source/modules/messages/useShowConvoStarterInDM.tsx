@@ -1,16 +1,16 @@
-// Module ID: 13823
-// Function ID: 13824
+// Module ID: 14089
+// Function ID: 14090
 // Name: useShowConvoStarterInDM
-// Dependencies: [19, 6856, 6061, 4956, 1383, 1072, 4870, 11257, 504, 2]
+// Dependencies: [19, 6944, 6226, 5112, 1385, 1072, 5026, 11429, 504, 2]
 // Exports: useShowConvoStarterInDM
 
-// Module 13823 (useShowConvoStarterInDM)
+// Module 14089 (useShowConvoStarterInDM)
 import react from "react" /* 19 */;
-import ChannelConstants from "ChannelConstants" /* 4870 */;
-import MessageRequestStore from "MessageRequestStore" /* 6856 */;
-import MessageStore from "MessageStore" /* 6061 */;
-import RelationshipStore from "RelationshipStore" /* 4956 */;
-import UserStore_mod from "UserStore" /* 1383 */;
+import ChannelConstants from "ChannelConstants" /* 5026 */;
+import MessageRequestStore from "MessageRequestStore" /* 6944 */;
+import MessageStore from "MessageStore" /* 6226 */;
+import RelationshipStore from "RelationshipStore" /* 5112 */;
+import UserStore_mod from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

@@ -50,10 +50,10 @@ export function registerConfig(arr) {
     }
   });
 }
-export function registerComponent(Discord, arg1, arg2) {
-  let closure_0 = Discord;
+export function registerComponent(arg0, arg1, arg2) {
+  let closure_0 = arg0;
   let closure_1 = arg1;
-  closure_5[Discord] = (arg0, displayMode) => {
+  closure_5[arg0] = (arg0, displayMode) => {
     const obj = { RootComponent: componentProviderInstrumentationHook(component, _modDef239), initialProps: null, rootTag: null, WrapperComponent: closure_2_3 && closure_2_3(arg0), rootViewStyle: closure_2_4 && closure_2_4(arg0), isLogBox: "LogBox" === appKey, debugName: appKey, displayMode };
     ({ initialProps: obj.initialProps, rootTag: obj.rootTag } = arg0);
     const _default = require("renderApplication").default;
@@ -63,9 +63,9 @@ export function registerComponent(Discord, arg1, arg2) {
   };
   const tmp2 = arg2;
   if (tmp2) {
-    closure_6[Discord] = tmp[Discord];
+    closure_6[arg0] = tmp[arg0];
   }
-  return Discord;
+  return arg0;
 }
 export function registerRunnable(Discord, arg1) {
   closure_5[Discord] = arg1;

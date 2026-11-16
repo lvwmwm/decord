@@ -1,17 +1,17 @@
-// Module ID: 11549
-// Function ID: 11550
+// Module ID: 11726
+// Function ID: 11727
 // Name: useCodedLinksExperimentEmbeds
-// Dependencies: [32, 19, 1383, 5238, 1246, 504, 11550, 11551, 2]
+// Dependencies: [32, 19, 1385, 5386, 1246, 504, 11727, 11728, 2]
 // Exports: canSeeExperimentEmbeds, useCanSeeExperimentEmbeds, useCodedLinksExperimentEmbeds
 
-// Module 11549 (useCodedLinksExperimentEmbeds)
+// Module 11726 (useCodedLinksExperimentEmbeds)
 import get_initialized from "get initialized" /* 504 */;
-import useLegacyExperiments from "useLegacyExperiments" /* 11550 */;
-import useApexExperiments from "useApexExperiments" /* 11551 */;
+import useLegacyExperiments from "useLegacyExperiments" /* 11727 */;
+import useApexExperiments from "useApexExperiments" /* 11728 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1383 */;
-import ExperimentStore from "ExperimentStore" /* 5238 */;
+import UserStore from "UserStore" /* 1385 */;
+import ExperimentStore from "ExperimentStore" /* 5386 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
 import size from "module_2" /* 2 */;
 

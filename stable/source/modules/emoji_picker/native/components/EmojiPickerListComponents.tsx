@@ -1,20 +1,20 @@
-// Module ID: 10024
-// Function ID: 10025
+// Module ID: 10178
+// Function ID: 10179
 // Name: EmojiPickerListComponents
-// Dependencies: [19, 17, 9942, 21, 5014, 575, 1187, 8727, 5624, 1113, 10022, 2]
+// Dependencies: [19, 17, 10097, 21, 5170, 575, 1187, 8831, 5783, 1113, 10176, 2]
 
-// Module 10024 (EmojiPickerListComponents)
+// Module 10178 (EmojiPickerListComponents)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8727 */;
-import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 10022 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8831 */;
+import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 10176 */;
 import react from "react" /* 19 */;
-import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9942 */;
+import EmojiPickerListConstants from "EmojiPickerListConstants" /* 10097 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let LABEL_BOTTOM_PADDING;
@@ -41,7 +41,7 @@ const memoResult = react.memo(function EmojiPickerListNSFWRow() {
   const obj2 = { source: AssetRegistryDefault, size: native.Icon.Sizes.SMALL };
   const Icon = native.Icon;
   items = [React3(Icon, obj2), ];
-  const obj3 = { style: tmp.nsfwText, variant: "text-sm/normal", color: "interactive-text-active", children: intl.string(intl2.t.SLzV5z) };
+  const obj3 = { style: tmp.nsfwText, variant: "body-sm/normal", color: "interactive-text-active", children: intl.string(intl2.t.SLzV5z) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   items[1] = React3(Text, obj3);
@@ -63,7 +63,7 @@ const memoResult1 = react.memo(function EmojiPickerListSection(useTier0UpsellCon
   items = [isSectionNitroLocked, ];
   let tmp6 = null;
   if ("" !== label) {
-    const obj3 = { lineClamp: 1, color: "interactive-text-default", variant: "heading-sm/semibold", children: label };
+    const obj3 = { lineClamp: 1, color: "interactive-text-default", variant: "heading-xs/semibold", children: label };
     tmp6 = React3(Text_Text.Text, obj3);
   }
   items[1] = tmp6;

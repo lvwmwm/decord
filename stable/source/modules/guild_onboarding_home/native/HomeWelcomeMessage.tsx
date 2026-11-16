@@ -1,19 +1,19 @@
-// Module ID: 18637
-// Function ID: 18638
+// Module ID: 19033
+// Function ID: 19034
 // Name: HomeWelcomeMessage
-// Dependencies: [19, 17, 4885, 1383, 7398, 21, 5014, 575, 563, 8757, 8800, 7482, 8758, 5068, 5080, 1090, 8829, 1187, 11395, 5624, 6041, 9060, 2]
+// Dependencies: [19, 17, 5041, 1385, 7495, 21, 5170, 575, 563, 8861, 8906, 7579, 8862, 5226, 5231, 1090, 8936, 1187, 11568, 5783, 6205, 9173, 2]
 // Exports: default
 
-// Module 18637 (HomeWelcomeMessage)
+// Module 19033 (HomeWelcomeMessage)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8758 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8862 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import UserStore from "UserStore" /* 1383 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7398 */;
+import GuildStore from "GuildStore" /* 5041 */;
+import UserStore from "UserStore" /* 1385 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7495 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let c9;
@@ -151,7 +151,7 @@ export default function HomeWelcomeMessage(guildId) {
         const obj11 = { containerStyle: tmp.welcomeContainer, primaryColor, secondaryColor, fallbackBackground: items5, children: closure_9(View, obj12) };
         obj12 = { style: tmp.welcomeContent, children: items9 };
         const obj13 = { style: tmp.adminUsernameContainer, children: items8 };
-        const obj14 = { style: tmp.adminUsername, variant: "text-md/semibold", children: tmp7Result4.getName(guildId, null, stateFromStores2) };
+        const obj14 = { style: tmp.adminUsername, variant: "body-md/semibold", children: tmp7Result4.getName(guildId, null, stateFromStores2) };
         const tmp7Result3 = stateFromStores1(tmp3[18]);
         const Text = tmp2(tmp3[19]).Text;
         tmp7Result4 = stateFromStores1(tmp3[20]);
@@ -176,10 +176,10 @@ export default function HomeWelcomeMessage(guildId) {
         let num3 = 0;
         if (0 < parts.length - 1) {
           do {
-            let obj16 = { variant: "text-sm/normal", style: tmp.message, children: parts[num3] };
+            let obj16 = { variant: "body-sm/normal", style: tmp.message, children: parts[num3] };
             let arr = items10.push(closure_8(guildId(stateFromStores2[19]).Text, obj16, num3));
             let push = items10.push;
-            let obj17 = { variant: "text-sm/bold", style: tmp.message, children: "@" + username };
+            let obj17 = { variant: "body-sm/semibold", style: tmp.message, children: "@" + username };
             let _HermesInternal = HermesInternal;
             let Text3 = guildId(stateFromStores2[19]).Text;
             let _HermesInternal2 = HermesInternal;
@@ -191,8 +191,8 @@ export default function HomeWelcomeMessage(guildId) {
             diff = parts.length - 1;
           } while (num3 < diff);
         }
-        const obj18 = { variant: "text-sm/normal", children: items10 };
-        const obj19 = { variant: "text-sm/normal", style: tmp.message, children: parts[parts.length - 1] };
+        const obj18 = { variant: "body-sm/normal", children: items10 };
+        const obj19 = { variant: "body-sm/normal", style: tmp.message, children: parts[parts.length - 1] };
         items10.push(tmp27(tmp2(tmp3[19]).Text, obj19, parts.length));
         items9[1] = closure_8(Text2, obj18);
         items7[3] = closure_8(tmp7Result3, obj11);

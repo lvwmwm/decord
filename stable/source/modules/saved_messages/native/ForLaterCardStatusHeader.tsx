@@ -1,15 +1,15 @@
-// Module ID: 11175
-// Function ID: 11176
+// Module ID: 11339
+// Function ID: 11340
 // Name: ForLaterCardStatusHeader
-// Dependencies: [17, 21, 5014, 575, 5624, 2]
+// Dependencies: [17, 21, 5170, 575, 5783, 2]
 // Exports: ForLaterCardStatusHeader
 
-// Module 11175 (ForLaterCardStatusHeader)
+// Module 11339 (ForLaterCardStatusHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
+import Text_Text from "Text/Text" /* 5783 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -55,7 +55,7 @@ export function ForLaterCardStatusHeader(isCritical) {
   if (flag) {
     str = "text-feedback-critical";
   }
-  const obj3 = { variant: "text-md/semibold", color: str, style: tmp.label, lineClamp, children: label };
+  const obj3 = { variant: "body-md/semibold", color: str, style: tmp.label, lineClamp, children: label };
   items[1] = React3(Text, obj3);
   const obj4 = { style: tmp.actionsContainer, children: actions };
   items[2] = React3(View, obj4);

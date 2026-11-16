@@ -1,20 +1,20 @@
-// Module ID: 13917
-// Function ID: 13918
+// Module ID: 14183
+// Function ID: 14184
 // Name: NewMessagesTagListInput
-// Dependencies: [19, 17, 1383, 21, 5014, 575, 1375, 1379, 10730, 9062, 6980, 1113, 13918, 11489, 5624, 5023, 2]
+// Dependencies: [19, 17, 1385, 21, 5170, 575, 1377, 1380, 10881, 9175, 7076, 1113, 14184, 11666, 5783, 5179, 2]
 
-// Module 13917 (NewMessagesTagListInput)
+// Module 14183 (NewMessagesTagListInput)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import GlobalUtils from "GlobalUtils" /* 1379 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5023 */;
-import makeUserListPillDataDefault from "makeUserListPillData" /* 10730 */;
+import GlobalUtils from "GlobalUtils" /* 1380 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5179 */;
+import makeUserListPillDataDefault from "makeUserListPillData" /* 10881 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1383 */;
-import createStyles_mod from "createStyles" /* 5014 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
+import UserStore from "UserStore" /* 1385 */;
+import createStyles_mod from "createStyles" /* 5170 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -106,7 +106,7 @@ const memoResult = react.memo(function NewMessagesTagListInput(forceSearchResult
       tmp2Result = tmp2(PressableOpacity, obj3);
     }
   }
-  ({ style: tmp.header, variant: "text-sm/medium", color: "text-muted", accessible: false, children: intl2.string(require("intl").t.kHyiXs) });
+  ({ style: tmp.header, variant: "body-sm/medium", color: "text-muted", accessible: false, children: intl2.string(require("intl").t.kHyiXs) });
   const Text = require("Text/Text").Text;
   intl2 = require("intl").intl;
   intl3 = require("intl").intl;

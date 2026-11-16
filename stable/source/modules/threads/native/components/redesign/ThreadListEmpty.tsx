@@ -1,18 +1,18 @@
-// Module ID: 18788
-// Function ID: 18789
+// Module ID: 19186
+// Function ID: 19187
 // Name: ThreadListEmpty
-// Dependencies: [19, 17, 21, 5014, 575, 1187, 13799, 5624, 1113, 5634, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 1187, 14064, 5783, 1113, 5790, 2]
 
-// Module 18788 (ThreadListEmpty)
+// Module 19186 (ThreadListEmpty)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13799 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14064 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -41,7 +41,7 @@ const memoResult = react.memo(function ThreadListEmpty(onCreateThreadPress) {
   const Text = Text_Text.Text;
   intl = intl4.intl;
   items[1] = React3(Text, obj4);
-  const obj5 = { style: tmp.subtext, maxFontSizeMultiplier: 2, variant: "text-sm/medium", color: "text-default", children: intl2.string(intl4.t.jmq9GC) };
+  const obj5 = { style: tmp.subtext, maxFontSizeMultiplier: 2, variant: "body-sm/medium", color: "text-default", children: intl2.string(intl4.t.jmq9GC) };
   const Text2 = Text_Text.Text;
   intl2 = intl4.intl;
   items[2] = React3(Text2, obj5);
@@ -51,7 +51,7 @@ const memoResult = react.memo(function ThreadListEmpty(onCreateThreadPress) {
   const tmp4 = React3;
   if (tmp4Result) {
     const obj6 = { onPress: onCreateThreadPress, text: intl3.string(intl4.t.rBIGBL) };
-    const Button = tmp5(5634).Button;
+    const Button = tmp5(5790).Button;
     intl3 = tmp5(1113).intl;
     tmp4Result = tmp4(Button, obj6);
   }

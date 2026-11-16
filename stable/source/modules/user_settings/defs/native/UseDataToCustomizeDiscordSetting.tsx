@@ -1,20 +1,20 @@
-// Module ID: 16756
-// Function ID: 16757
+// Module ID: 17110
+// Function ID: 17111
 // Name: UseDataToCustomizeDiscordSetting
-// Dependencies: [6742, 8432, 1072, 16716, 504, 5958, 1113, 6030, 16754, 16755, 11540, 2]
+// Dependencies: [6829, 8536, 1072, 17069, 504, 6122, 1113, 6194, 17108, 17109, 11717, 2]
 
-// Module 16756 (UseDataToCustomizeDiscordSetting)
+// Module 17110 (UseDataToCustomizeDiscordSetting)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5958 */;
-import AlertDefault from "Alert" /* 6030 */;
-import SettingsConstants from "SettingsConstants" /* 8432 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 16716 */;
-import ConsentActionCreators from "ConsentActionCreators" /* 16754 */;
-import showDataPrivacyRateLimitAlert from "showDataPrivacyRateLimitAlert" /* 16755 */;
-import ConsentStore from "ConsentStore" /* 6742 */;
-import SettingBuilders from "SettingBuilders" /* 11540 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6122 */;
+import AlertDefault from "Alert" /* 6194 */;
+import SettingsConstants from "SettingsConstants" /* 8536 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 17069 */;
+import ConsentActionCreators from "ConsentActionCreators" /* 17108 */;
+import showDataPrivacyRateLimitAlert from "showDataPrivacyRateLimitAlert" /* 17109 */;
+import ConsentStore from "ConsentStore" /* 6829 */;
+import SettingBuilders from "SettingBuilders" /* 11717 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

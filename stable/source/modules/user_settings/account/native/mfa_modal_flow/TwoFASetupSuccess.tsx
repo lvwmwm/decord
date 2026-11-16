@@ -1,25 +1,25 @@
-// Module ID: 16662
-// Function ID: 16663
+// Module ID: 17015
+// Function ID: 17016
 // Name: TwoFASetupSuccess
-// Dependencies: [5, 32, 19, 17, 21, 5014, 575, 6748, 1113, 16651, 7116, 16652, 5717, 16663, 5624, 1187, 5634, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5170, 575, 6835, 1113, 17004, 7220, 17005, 5874, 17016, 5783, 1187, 5790, 2]
 // Exports: default
 
-// Module 16662 (TwoFASetupSuccess)
+// Module 17015 (TwoFASetupSuccess)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import NativeCeremoniesDefault from "NativeCeremonies" /* 7116 */;
-import TwoFASetupModal from "TwoFASetupModal" /* 16652 */;
-import AssetRegistry from "AssetRegistry" /* 16663 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import components_Button_Button from "components/Button/Button" /* 5790 */;
+import FastImageDefault from "FastImage" /* 5874 */;
+import NativeCeremoniesDefault from "NativeCeremonies" /* 7220 */;
+import TwoFASetupModal from "TwoFASetupModal" /* 17005 */;
+import AssetRegistry from "AssetRegistry" /* 17016 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -108,7 +108,7 @@ export default function TwoFASetupSuccess() {
   const obj3 = { source: AssetRegistry, style: tmp.image };
   const tmp12 = FastImageDefault;
   items[1] = closure_7(tmp12, obj3);
-  const obj4 = { style: tmp.success, variant: "text-lg/semibold", color: "mobile-text-heading-primary", children: intl.string(intl5.t.Awk3Gw) };
+  const obj4 = { style: tmp.success, variant: "body-lg/semibold", color: "mobile-text-heading-primary", children: intl.string(intl5.t.Awk3Gw) };
   const Text = Text_Text.Text;
   intl = intl5.intl;
   items[2] = closure_7(Text, obj4);

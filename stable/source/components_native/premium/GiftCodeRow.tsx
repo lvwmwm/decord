@@ -1,20 +1,20 @@
-// Module ID: 15449
-// Function ID: 15450
+// Module ID: 15771
+// Function ID: 15772
 // Name: GiftCodeRow
-// Dependencies: [19, 17, 1072, 21, 5014, 575, 5080, 11371, 6444, 8931, 7097, 5624, 5634, 1113, 2042, 1187, 2]
+// Dependencies: [19, 17, 1072, 21, 5170, 575, 5231, 11544, 6609, 9043, 7201, 5783, 5790, 1113, 2166, 1187, 2]
 
-// Module 15449 (GiftCodeRow)
+// Module 15771 (GiftCodeRow)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
-import native2 from "native" /* 5080 */;
-import GiftCodeUtils from "GiftCodeUtils" /* 6444 */;
-import showShareActionSheet2 from "showShareActionSheet" /* 8931 */;
-import GiftCodeActionCreatorsDefault from "GiftCodeActionCreators" /* 11371 */;
+import native2 from "native" /* 5231 */;
+import GiftCodeUtils from "GiftCodeUtils" /* 6609 */;
+import showShareActionSheet2 from "showShareActionSheet" /* 9043 */;
+import GiftCodeActionCreatorsDefault from "GiftCodeActionCreators" /* 11544 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -100,7 +100,7 @@ class GiftCodeRow extends PureComponent {
     obj3 = { children: closure_7(closure_3, obj4) };
     obj4 = { style: tmp.giftCodeInputContent, children: items1 };
     InputFieldContainer = giftCode(self[10]).InputFieldContainer;
-    const obj5 = { variant: "text-sm/normal", style: tmp.codeText, lineClamp: 1, children: obj6.getGiftCodeURL(giftCode.code) };
+    const obj5 = { variant: "body-sm/normal", style: tmp.codeText, lineClamp: 1, children: obj6.getGiftCodeURL(giftCode.code) };
     const Text = giftCode(self[11]).Text;
     obj6 = giftCode(self[8]);
     items1 = [closure_6(Text, obj5), ];
@@ -115,12 +115,12 @@ class GiftCodeRow extends PureComponent {
     const obj9 = { style: tmp.subTextRow, children: tmp5Result };
     tmp5Result = null;
     if (null != giftCode.expiresAt) {
-      const obj10 = { variant: "text-xs/normal", color: "text-subtle", children: format(b1BfWD, obj11) };
+      const obj10 = { variant: "body-xs/normal", color: "text-subtle", children: format(b1BfWD, obj11) };
       const Text2 = tmp6(tmp7[11]).Text;
       const intl2 = tmp6(tmp7[13]).intl;
       format = intl2.format;
       obj11 = {
-        hours: expiresAt.diff(require("module_2042")(), "h"),
+        hours: expiresAt.diff(require("module_2166")(), "h"),
         revokeHook(children, arg1) {
             let code;
             let items;

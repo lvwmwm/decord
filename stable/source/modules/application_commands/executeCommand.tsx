@@ -1,25 +1,25 @@
-// Module ID: 10310
-// Function ID: 10311
+// Module ID: 10461
+// Function ID: 10462
 // Name: executeCommand
-// Dependencies: [5, 6796, 2062, 4885, 8208, 1383, 8346, 1072, 5019, 5683, 572, 8202, 7700, 1992, 10311, 10313, 38, 10314, 5760, 8344, 9778, 4960, 1379, 10315, 8701, 6070, 8384, 8700, 10316, 8752, 10319, 7636, 8231, 8216, 8212, 1113, 10217, 2]
+// Dependencies: [5, 6884, 2186, 5041, 8310, 1385, 8449, 1072, 5175, 5839, 572, 8304, 7809, 2116, 10462, 10464, 38, 10465, 5921, 8447, 9901, 5116, 1380, 10466, 8805, 6235, 8488, 8804, 10467, 8856, 10470, 7745, 8334, 8319, 8314, 1113, 10368, 2]
 // Exports: default, retryCommandMessage
 
-// Module 10310 (executeCommand)
-import MessageConstants from "MessageConstants" /* 5019 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5683 */;
-import UploadUtils from "UploadUtils" /* 8212 */;
-import FileUtils from "FileUtils" /* 8216 */;
-import UploadLimits from "UploadLimits" /* 8231 */;
-import MessageQueue from "MessageQueue" /* 8384 */;
-import InteractionActionCreatorsAll from "InteractionActionCreators" /* 8701 */;
-import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 10316 */;
+// Module 10461 (executeCommand)
+import MessageConstants from "MessageConstants" /* 5175 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5839 */;
+import UploadUtils from "UploadUtils" /* 8314 */;
+import FileUtils from "FileUtils" /* 8319 */;
+import UploadLimits from "UploadLimits" /* 8334 */;
+import MessageQueue from "MessageQueue" /* 8488 */;
+import InteractionActionCreatorsAll from "InteractionActionCreators" /* 8805 */;
+import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 10467 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import EmojiStore from "EmojiStore" /* 6796 */;
-import LocaleStore from "LocaleStore" /* 2062 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8208 */;
-import UserStore from "UserStore" /* 1383 */;
-import ApplicationCommandStore from "ApplicationCommandStore" /* 8346 */;
+import EmojiStore from "EmojiStore" /* 6884 */;
+import LocaleStore from "LocaleStore" /* 2186 */;
+import GuildStore from "GuildStore" /* 5041 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8310 */;
+import UserStore from "UserStore" /* 1385 */;
+import ApplicationCommandStore from "ApplicationCommandStore" /* 8449 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -753,12 +753,12 @@ function enqueueCommandInteraction(interactionLifecycleOptions) {
     message = { applicationId, channelId: id, guildId: id1, data: tmp, nonce, attachments, maxSizeCallback, analytics_location: tmp2, sectionName: tmp3, source: tmp4 };
     nonce = interactionLifecycleOptions.nonce;
     if (nonce == null) {
-      const obj2 = onMessageSuccess(10315);
+      const obj2 = onMessageSuccess(10466);
       nonce = obj2.createNonce();
     }
     const obj4 = { messageId: null, onCreate: null, onSuccess: null, onFailure: null, data: obj5 };
     ({ messageId: obj3.messageId, onCreate: obj3.onCreate, onSuccess: obj3.onSuccess, onFailure: obj3.onFailure } = interactionLifecycleOptions);
-    obj5 = { interactionType: onMessageSuccess(6070).InteractionTypes.APPLICATION_COMMAND, applicationId, channelId: id };
+    obj5 = { interactionType: onMessageSuccess(6235).InteractionTypes.APPLICATION_COMMAND, applicationId, channelId: id };
     const addQueued = InteractionActionCreatorsAll.addQueued;
     const nonce2 = message.nonce;
     InteractionActionCreatorsAll;
@@ -796,9 +796,9 @@ function enqueueCommandInteraction(interactionLifecycleOptions) {
         });
       }
     }
-    const obj8 = { type: tmp11(8384).MessageDataType.COMMAND, message };
-    let enqueue = message(8384).enqueue;
-    message(8384);
+    const obj8 = { type: tmp11(8488).MessageDataType.COMMAND, message };
+    let enqueue = message(8488).enqueue;
+    message(8488);
     enqueue(obj8, (ok) => {
       let applicationId;
       let channelId;

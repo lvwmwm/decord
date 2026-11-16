@@ -1,20 +1,20 @@
-// Module ID: 9884
-// Function ID: 9885
+// Module ID: 10039
+// Function ID: 10040
 // Name: ConversationPreviewMessage
-// Dependencies: [19, 17, 5015, 4926, 21, 8377, 8710, 5014, 575, 504, 6041, 8419, 4839, 4836, 1187, 5624, 9885, 2]
+// Dependencies: [19, 17, 5171, 5082, 21, 8481, 8814, 5170, 575, 504, 6205, 8523, 4995, 4992, 1187, 5783, 10040, 2]
 // Exports: default
 
-// Module 9884 (ConversationPreviewMessage)
+// Module 10039 (ConversationPreviewMessage)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import DateUtils from "DateUtils" /* 4836 */;
-import RowGeneratorDefault from "RowGenerator" /* 8377 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 8710 */;
+import DateUtils from "DateUtils" /* 4992 */;
+import RowGeneratorDefault from "RowGenerator" /* 8481 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 8814 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
-import GuildMemberStore from "GuildMemberStore" /* 4926 */;
+import AccessibilityStore from "AccessibilityStore" /* 5171 */;
+import GuildMemberStore from "GuildMemberStore" /* 5082 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -98,7 +98,7 @@ export default function ConversationPreviewMessage(message) {
       tmp25Result = tmp25(tmp2(tmp3[14]).RoleDot, obj8);
     }
     items5 = [tmp25Result, ];
-    const obj10 = { variant: "text-md/medium", lineClamp: 1, style: {}, gradientColors: tmp28, children: tmp7 };
+    const obj10 = { variant: "body-md/medium", lineClamp: 1, style: {}, gradientColors: tmp28, children: tmp7 };
     tmp28 = undefined;
     const Text = tmp2(tmp3[15]).Text;
     if (isRoleStyleAndRoleColorsEligibleForERC) {
@@ -106,7 +106,7 @@ export default function ConversationPreviewMessage(message) {
     }
     items5[1] = closure_7(Text, obj10);
     items4[1] = closure_8(View, obj7);
-    const obj11 = { variant: "text-xs/normal", color: "text-muted", lineClamp: 1, style: tmp.headerTimestamp, children: memo };
+    const obj11 = { variant: "body-xs/normal", color: "text-muted", lineClamp: 1, style: tmp.headerTimestamp, children: memo };
     items4[2] = closure_7(message(setting[15]).Text, obj11);
     items6 = [closure_8(View, obj5), ];
     const obj12 = { pointerEvents: "none", horizontalOffset: 0, modifyRow, message, rowGenerator };

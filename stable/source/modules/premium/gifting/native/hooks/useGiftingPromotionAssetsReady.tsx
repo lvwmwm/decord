@@ -1,10 +1,10 @@
-// Module ID: 19053
-// Function ID: 19054
+// Module ID: 19466
+// Function ID: 19467
 // Name: useGiftingPromotionAssetsReady
-// Dependencies: [32, 19, 10623, 1893, 2]
+// Dependencies: [32, 19, 10774, 2022, 2]
 // Exports: default
 
-// Module 19053 (useGiftingPromotionAssetsReady)
+// Module 19466 (useGiftingPromotionAssetsReady)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -19,7 +19,7 @@ export default function useGiftingPromotionAssetsReady(asset, asset2) {
   let first1;
   let themeAndReducedMotionAwareAssetUrl;
   let themeAndReducedMotionAwareAssetUrl1;
-  const f116565 = () => {
+  const f118570 = () => {
     let tmp;
     if (null != c0) {
       c0 = true;
@@ -49,24 +49,24 @@ export default function useGiftingPromotionAssetsReady(asset, asset2) {
   }
   const tmp2 = themeAndReducedMotionAwareAssetUrl;
   let tmp3 = dependencyMap;
-  let obj = themeAndReducedMotionAwareAssetUrl(10623);
+  let obj = themeAndReducedMotionAwareAssetUrl(10774);
   themeAndReducedMotionAwareAssetUrl = obj.useThemeAndReducedMotionAwareAssetUrl(asset);
   let obj2 = react;
   [first, closure_1] = react.useState(null);
   const items = [themeAndReducedMotionAwareAssetUrl];
-  const effect = react.useEffect(f116565, items);
+  const effect = react.useEffect(f118570, items);
   let asset1;
   const obj3 = { isGiftCoachmarkAssetReady: null == themeAndReducedMotionAwareAssetUrl || first === themeAndReducedMotionAwareAssetUrl, isGiftReminderAssetReady: null == themeAndReducedMotionAwareAssetUrl1 || first1 === themeAndReducedMotionAwareAssetUrl1 };
   const tmp5 = _slicedToArray;
   if (asset2 != null) {
     asset1 = asset2.asset;
   }
-  const tmp2Result = tmp2(10623);
+  const tmp2Result = tmp2(10774);
   themeAndReducedMotionAwareAssetUrl1 = tmp2Result.useThemeAndReducedMotionAwareAssetUrl(asset1);
   const tmp5Result = tmp5(obj2.useState(null), 2);
   closure_1 = tmp5Result[1];
   const items1 = [themeAndReducedMotionAwareAssetUrl1];
   first1 = tmp5Result[0];
-  const effect1 = obj2.useEffect(f116565, items1);
+  const effect1 = obj2.useEffect(f118570, items1);
   return obj3;
 };

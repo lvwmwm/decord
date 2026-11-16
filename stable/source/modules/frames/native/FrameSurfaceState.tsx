@@ -1,17 +1,17 @@
-// Module ID: 18673
-// Function ID: 18674
+// Module ID: 19071
+// Function ID: 19072
 // Name: FrameSurfaceState
-// Dependencies: [19, 17, 21, 5014, 575, 5624, 6953, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 5783, 7048, 2]
 // Exports: FrameSurfaceExplanation, FrameSurfaceLoading
 
-// Module 18673 (FrameSurfaceState)
+// Module 19071 (FrameSurfaceState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6953 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7048 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -42,19 +42,19 @@ export function FrameSurfaceExplanation(icon) {
   let tmp4 = null;
   const tmp2 = React3;
   if (null != heading) {
-    const obj2 = { variant: "heading-md/semibold", color: "text-default", children: heading };
+    const obj2 = { variant: "heading-sm/semibold", color: "text-default", children: heading };
     tmp4 = _false(Text_Text.Heading, obj2);
   }
   items[1] = tmp4;
   let tmp8 = null;
   if (null != description) {
-    const obj3 = { variant: "text-sm/normal", color: "text-muted", children: description };
+    const obj3 = { variant: "body-sm/normal", color: "text-muted", children: description };
     tmp8 = _false(Text_Text.Text, obj3);
   }
   items[2] = tmp8;
   let tmp12 = null;
   if (null != error) {
-    const obj4 = { variant: "text-sm/normal", color: "text-feedback-critical", children: error };
+    const obj4 = { variant: "body-sm/normal", color: "text-feedback-critical", children: error };
     tmp12 = _false(Text_Text.Text, obj4);
   }
   items[3] = tmp12;

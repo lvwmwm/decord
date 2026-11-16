@@ -1,15 +1,15 @@
-// Module ID: 7990
-// Function ID: 7991
+// Module ID: 8093
+// Function ID: 8094
 // Name: AgeVerificationQuestUnsupportedAlertModal
-// Dependencies: [19, 21, 5964, 1113, 3096, 5964, 1260, 2]
+// Dependencies: [19, 21, 6128, 1113, 3252, 6128, 1260, 2]
 // Exports: default
 
-// Module 7990 (AgeVerificationQuestUnsupportedAlertModal)
+// Module 8093 (AgeVerificationQuestUnsupportedAlertModal)
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1113 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import _modDef3096 from "module_3096" /* 3096 */;
-import AlertModal2 from "AlertModal" /* 5964 */;
+import _modDef3252 from "module_3252" /* 3252 */;
+import AlertModal2 from "AlertModal" /* 6128 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -27,5 +27,5 @@ export default function AgeVerificationQuestUnsupportedAlertModal() {
   intl3 = intl4.intl;
   const obj4 = { impression: { impressionName: discord_common_AnalyticsUtils.ImpressionNames.USER_AGE_VERIFICATION_QUEST_UNSUPPORTED } };
   ({ impressionName: discord_common_AnalyticsUtils.ImpressionNames.USER_AGE_VERIFICATION_QUEST_UNSUPPORTED });
-  return <AlertModal title={intl.string(_modDef3096.gUqXQN)} content={intl2.string(_modDef3096.yBHwMy)} actions={null} trackingProps={obj4} />;
+  return <AlertModal title={intl.string(_modDef3252.gUqXQN)} content={intl2.string(_modDef3252.yBHwMy)} actions={null} trackingProps={obj4} />;
 };

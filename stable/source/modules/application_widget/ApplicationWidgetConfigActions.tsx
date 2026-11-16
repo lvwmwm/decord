@@ -1,15 +1,15 @@
-// Module ID: 10942
-// Function ID: 10943
+// Module ID: 11108
+// Function ID: 11109
 // Name: ApplicationWidgetConfigActions
-// Dependencies: [5, 10943, 1072, 5144, 559, 1089, 572, 1282, 1242, 2]
+// Dependencies: [5, 11109, 1072, 5290, 559, 1089, 572, 1282, 1242, 2]
 // Exports: fetchDeveloperWidgetConfigs, fetchFeaturedWidgetConfigs, fetchWidgetConfigs
 
-// Module 10942 (ApplicationWidgetConfigActions)
+// Module 11108 (ApplicationWidgetConfigActions)
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import utils_FunctionUtils from "utils/FunctionUtils" /* 5144 */;
-import ApplicationWidgetConfigStore2 from "ApplicationWidgetConfigStore" /* 10943 */;
+import utils_FunctionUtils from "utils/FunctionUtils" /* 5290 */;
+import ApplicationWidgetConfigStore2 from "ApplicationWidgetConfigStore" /* 11109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Backoff from "Backoff" /* 559 */;
 import Dispatcher from "Dispatcher" /* 572 */;
@@ -331,8 +331,8 @@ export function fetchDeveloperWidgetConfigs() {
   }
   resolved = promiseDeduper3.one(undefined, fetchDeveloperWidgetConfigsFromApi, { force: flag });
 }
-export function fetchWidgetConfigs(item10012, arg1) {
-  let closure_0 = item10012;
+export function fetchWidgetConfigs(c3, arg1) {
+  let closure_0 = c3;
   obj = arg1;
   if (arg1 === undefined) {
     obj = {};
@@ -348,10 +348,10 @@ export function fetchWidgetConfigs(item10012, arg1) {
     }
     return resolved;
   }
-  resolved = promiseDeduper4.one(item10012, () => {
+  resolved = promiseDeduper4.one(c3, () => {
     function fetchWidgetConfigsFromApi() {
       return closure_1_15(...arguments);
     }
-    return fetchWidgetConfigsFromApi(item10012);
+    return fetchWidgetConfigsFromApi(closure_0);
   }, { force: flag });
 }

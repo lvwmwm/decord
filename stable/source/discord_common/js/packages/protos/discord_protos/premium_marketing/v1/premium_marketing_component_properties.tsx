@@ -1,45 +1,46 @@
-// Module ID: 9629
-// Function ID: 9630
+// Module ID: 9752
+// Function ID: 9753
 // Name: premium_marketing_component_properties
-// Dependencies: [32, 1197, 9630, 9634, 9635, 9636, 9637, 9638, 9640, 9642, 9643, 9644, 9645, 9646, 9647, 9648, 9649, 9650, 9651, 9652, 9653, 9654, 9655, 9656, 9657, 9658, 9659, 9660, 9661, 9662, 9663, 9664, 2]
+// Dependencies: [32, 1197, 9753, 9757, 9758, 9759, 9760, 9761, 9763, 9765, 9766, 9767, 9768, 9769, 9770, 9771, 9772, 9773, 9774, 9775, 9776, 9777, 9778, 9779, 9780, 9781, 9782, 9783, 9784, 9785, 9786, 9787, 9788, 2]
 
-// Module 9629 (premium_marketing_component_properties)
+// Module 9752 (premium_marketing_component_properties)
 import _mod1197 from "module_1197" /* 1197 */;
-import announcement_modal_variant_1_properties from "announcement_modal_variant_1_properties" /* 9630 */;
-import premium_tab from "premium_tab" /* 9634 */;
-import marketing_page_banner from "marketing_page_banner" /* 9635 */;
-import payment_modal_banner from "payment_modal_banner" /* 9636 */;
-import mobile_bottom_sheet from "mobile_bottom_sheet" /* 9637 */;
-import gift_icon from "gift_icon" /* 9638 */;
-import gift_icon_coachmark from "gift_icon_coachmark" /* 9640 */;
-import gift_plan_selection_card_banner from "gift_plan_selection_card_banner" /* 9642 */;
-import gift_customization_banner from "gift_customization_banner" /* 9643 */;
-import billing_settings_nitro_gift_banner from "billing_settings_nitro_gift_banner" /* 9644 */;
-import gift_reminder_nagbar from "gift_reminder_nagbar" /* 9645 */;
-import gift_reminder_coachmark from "gift_reminder_coachmark" /* 9646 */;
-import premium_tab_tooltip from "premium_tab_tooltip" /* 9647 */;
-import premium_tab_popover from "premium_tab_popover" /* 9648 */;
-import nagbar2 from "nagbar" /* 9649 */;
-import plan_select_card_banner from "plan_select_card_banner" /* 9650 */;
-import billing_settings_banner from "billing_settings_banner" /* 9651 */;
-import shop_nagbar from "shop_nagbar" /* 9652 */;
-import admin_editor_test_component from "admin_editor_test_component" /* 9653 */;
-import guild_header_coachmark from "guild_header_coachmark" /* 9654 */;
-import guild_boost_checkout_banner from "guild_boost_checkout_banner" /* 9655 */;
-import guild_boost_marketing_page_banner from "guild_boost_marketing_page_banner" /* 9656 */;
-import guild_boost_tab_banner from "guild_boost_tab_banner" /* 9657 */;
-import shop_tab_tooltip from "shop_tab_tooltip" /* 9658 */;
-import premium_home_perk_card from "premium_home_perk_card" /* 9659 */;
-import marketing_page_bento_box from "marketing_page_bento_box" /* 9660 */;
-import outbound_promotion_popover from "outbound_promotion_popover" /* 9661 */;
-import outbound_promotion_claim_modal_card from "outbound_promotion_claim_modal_card" /* 9662 */;
-import shop_coachmark from "shop_coachmark" /* 9663 */;
-import nitro_perk_card from "nitro_perk_card" /* 9664 */;
+import announcement_modal_variant_1_properties from "announcement_modal_variant_1_properties" /* 9753 */;
+import premium_tab from "premium_tab" /* 9757 */;
+import marketing_page_banner from "marketing_page_banner" /* 9758 */;
+import payment_modal_banner from "payment_modal_banner" /* 9759 */;
+import mobile_bottom_sheet from "mobile_bottom_sheet" /* 9760 */;
+import gift_icon from "gift_icon" /* 9761 */;
+import gift_icon_coachmark from "gift_icon_coachmark" /* 9763 */;
+import gift_plan_selection_card_banner from "gift_plan_selection_card_banner" /* 9765 */;
+import gift_customization_banner from "gift_customization_banner" /* 9766 */;
+import billing_settings_nitro_gift_banner from "billing_settings_nitro_gift_banner" /* 9767 */;
+import gift_reminder_nagbar from "gift_reminder_nagbar" /* 9768 */;
+import gift_reminder_coachmark from "gift_reminder_coachmark" /* 9769 */;
+import premium_tab_tooltip from "premium_tab_tooltip" /* 9770 */;
+import premium_tab_popover from "premium_tab_popover" /* 9771 */;
+import nagbar2 from "nagbar" /* 9772 */;
+import plan_select_card_banner from "plan_select_card_banner" /* 9773 */;
+import billing_settings_banner from "billing_settings_banner" /* 9774 */;
+import shop_nagbar from "shop_nagbar" /* 9775 */;
+import admin_editor_test_component from "admin_editor_test_component" /* 9776 */;
+import guild_header_coachmark from "guild_header_coachmark" /* 9777 */;
+import guild_boost_checkout_banner from "guild_boost_checkout_banner" /* 9778 */;
+import guild_boost_marketing_page_banner from "guild_boost_marketing_page_banner" /* 9779 */;
+import guild_boost_tab_banner from "guild_boost_tab_banner" /* 9780 */;
+import shop_tab_tooltip from "shop_tab_tooltip" /* 9781 */;
+import premium_home_perk_card from "premium_home_perk_card" /* 9782 */;
+import marketing_page_bento_box from "marketing_page_bento_box" /* 9783 */;
+import outbound_promotion_popover from "outbound_promotion_popover" /* 9784 */;
+import outbound_promotion_claim_modal_card from "outbound_promotion_claim_modal_card" /* 9785 */;
+import shop_coachmark from "shop_coachmark" /* 9786 */;
+import nitro_perk_card from "nitro_perk_card" /* 9787 */;
+import collection_page_marketing_block from "collection_page_marketing_block" /* 9788 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let internalBinaryWrite, internalBinaryWrite10, internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8, internalBinaryWrite9;
+let internalBinaryWrite, internalBinaryWrite10, internalBinaryWrite11, internalBinaryWrite12, internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8, internalBinaryWrite9;
 
 const MessageType = _mod1197.MessageType;
 class PremiumMarketingComponentProperties$Type extends MessageType {
@@ -298,29 +299,38 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
           return require("outbound_promotion_claim_modal_card").OutboundPromotionClaimModalCard;
         }
       },
+      {
+        no: 32,
+        name: "shop_coachmark",
+        kind: "message",
+        oneof: "properties",
+        T() {
+          return require("shop_coachmark").ShopCoachmark;
+        }
+      },
     ,
     ,
     ,
 
     ];
-    const obj = { no: 32, name: "shop_coachmark", kind: "message", oneof: "properties", T };
+    const obj = { no: 33, name: "nitro_perk_card", kind: "message", oneof: "properties", T };
     class T {
       constructor() {
-        return require("shop_coachmark").ShopCoachmark;
+        return require("nitro_perk_card").NitroPerkCard;
       }
     }
-    items[29] = obj;
-    items[30] = {
-      no: 33,
-      name: "nitro_perk_card",
+    items[30] = obj;
+    items[31] = {
+      no: 34,
+      name: "collection_page_marketing_block",
       kind: "message",
       oneof: "properties",
       T() {
-        return require("nitro_perk_card").NitroPerkCard;
+        return require("collection_page_marketing_block").CollectionPageMarketingBlock;
       }
     };
-    items[31] = { no: 3, name: "content_identifier", kind: "scalar", T: 9 };
-    items[32] = { no: 18, name: "is_default_base", kind: "scalar", T: 8 };
+    items[32] = { no: 3, name: "content_identifier", kind: "scalar", T: 9 };
+    items[33] = { no: 18, name: "is_default_base", kind: "scalar", T: 8 };
     const tmp2 = new tmp("discord_protos.premium_marketing.v1.PremiumMarketingComponentProperties", items, T);
     return tmp2;
   }
@@ -434,7 +444,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
     }
     if ("giftReminderNagbar" === properties.properties.oneofKind) {
       const GiftReminderNagbar = gift_reminder_nagbar.GiftReminderNagbar;
-      const internalBinaryWrite11 = GiftReminderNagbar.internalBinaryWrite;
+      internalBinaryWrite11 = GiftReminderNagbar.internalBinaryWrite;
       const giftReminderNagbar = properties.properties.giftReminderNagbar;
       const tagResult11 = tag.tag(13, _mod1197.WireType.LengthDelimited);
       const result1 = internalBinaryWrite11(giftReminderNagbar, tagResult11.fork(), writeUnknownFields);
@@ -442,7 +452,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
     }
     if ("giftReminderCoachmark" === properties.properties.oneofKind) {
       const GiftReminderCoachmark = gift_reminder_coachmark.GiftReminderCoachmark;
-      const internalBinaryWrite12 = GiftReminderCoachmark.internalBinaryWrite;
+      internalBinaryWrite12 = GiftReminderCoachmark.internalBinaryWrite;
       const giftReminderCoachmark = properties.properties.giftReminderCoachmark;
       const tagResult12 = tag.tag(14, _mod1197.WireType.LengthDelimited);
       const result2 = internalBinaryWrite12(giftReminderCoachmark, tagResult12.fork(), writeUnknownFields);
@@ -592,13 +602,21 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       const result20 = internalBinaryWrite30(nitroPerkCard, tagResult30.fork(), writeUnknownFields);
       const joined29 = result20.join();
     }
+    if ("collectionPageMarketingBlock" === properties.properties.oneofKind) {
+      const CollectionPageMarketingBlock = collection_page_marketing_block.CollectionPageMarketingBlock;
+      const internalBinaryWrite31 = CollectionPageMarketingBlock.internalBinaryWrite;
+      const collectionPageMarketingBlock = properties.properties.collectionPageMarketingBlock;
+      const tagResult31 = tag.tag(34, _mod1197.WireType.LengthDelimited);
+      const result21 = internalBinaryWrite31(collectionPageMarketingBlock, tagResult31.fork(), writeUnknownFields);
+      const joined30 = result21.join();
+    }
     if ("" !== properties.contentIdentifier) {
-      const tagResult31 = tag.tag(3, _mod1197.WireType.LengthDelimited);
-      tagResult31.string(properties.contentIdentifier);
+      const tagResult32 = tag.tag(3, _mod1197.WireType.LengthDelimited);
+      tagResult32.string(properties.contentIdentifier);
     }
     if (false !== properties.isDefaultBase) {
-      const tagResult32 = tag.tag(18, _mod1197.WireType.Varint);
-      tagResult32.bool(properties.isDefaultBase);
+      const tagResult33 = tag.tag(18, _mod1197.WireType.Varint);
+      tagResult33.bool(properties.isDefaultBase);
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {

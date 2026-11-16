@@ -1,9 +1,9 @@
-// Module ID: 5648
-// Function ID: 5649
+// Module ID: 5804
+// Function ID: 5805
 // Name: MemoizerUtils
 // Dependencies: [2]
 
-// Module 5648 (MemoizerUtils)
+// Module 5804 (MemoizerUtils)
 import size from "module_2" /* 2 */;
 
 let map;

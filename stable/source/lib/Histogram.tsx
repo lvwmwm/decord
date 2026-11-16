@@ -1,10 +1,10 @@
-// Module ID: 5894
-// Function ID: 5895
+// Module ID: 6057
+// Function ID: 6058
 // Name: Histogram
-// Dependencies: [5895, 2]
+// Dependencies: [6058, 2]
 
-// Module 5894 (Histogram)
-import RBTree from "RBTree" /* 5895 */;
+// Module 6057 (Histogram)
+import RBTree from "RBTree" /* 6058 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("lib/Histogram.tsx");

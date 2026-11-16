@@ -1,20 +1,20 @@
-// Module ID: 14596
-// Function ID: 14597
+// Module ID: 14861
+// Function ID: 14862
 // Name: NitroLimitUpsellBar
-// Dependencies: [17, 21, 5014, 575, 8026, 5717, 10048, 5624, 1113, 10290, 5634, 2]
+// Dependencies: [17, 21, 5170, 575, 8129, 5874, 10201, 5783, 1113, 10441, 5790, 2]
 // Exports: default
 
-// Module 14596 (NitroLimitUpsellBar)
+// Module 14861 (NitroLimitUpsellBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import WarningIcon from "WarningIcon" /* 8026 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10048 */;
-import NitroUpsellButtonDefault from "NitroUpsellButton" /* 10290 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import FastImageDefault from "FastImage" /* 5874 */;
+import WarningIcon from "WarningIcon" /* 8129 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10201 */;
+import NitroUpsellButtonDefault from "NitroUpsellButton" /* 10441 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -54,9 +54,9 @@ export default function NitroLimitUpsellBar(isAtLimit) {
     tmp9 = tmp4;
   }
   items = [tmp4Result, , ];
-  const obj4 = { variant: "text-xs/medium", color: "text-default", style: tmp.text, children: items1 };
+  const obj4 = { variant: "body-xs/medium", color: "text-default", style: tmp.text, children: items1 };
   const Text = Text_Text.Text;
-  const obj5 = { variant: "text-xs/bold", color: "text-brand", children: str.toUpperCase() };
+  const obj5 = { variant: "body-xs/semibold", color: "text-brand", children: str.toUpperCase() };
   const Text2 = Text_Text.Text;
   const intl = intl3.intl;
   str = intl.string(intl3.t.oW0eUd);
@@ -65,7 +65,7 @@ export default function NitroLimitUpsellBar(isAtLimit) {
   if (isAtLimit) {
     Button = NitroUpsellButtonDefault;
   } else {
-    Button = tmp12(5634).Button;
+    Button = tmp12(5790).Button;
   }
   const obj6 = { size: "sm", text: intl2.string(intl3.t["8x0jKT"]), onPress, loading };
   intl2 = tmp12(1113).intl;

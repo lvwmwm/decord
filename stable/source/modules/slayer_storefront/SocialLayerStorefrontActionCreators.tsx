@@ -1,17 +1,17 @@
-// Module ID: 10670
-// Function ID: 10671
+// Module ID: 10821
+// Function ID: 10822
 // Name: SocialLayerStorefrontActionCreators
-// Dependencies: [5, 9481, 7406, 1072, 1089, 572, 7404, 9557, 1282, 2026, 559, 2]
+// Dependencies: [5, 9598, 7503, 1072, 1089, 572, 7501, 9678, 1282, 2150, 559, 2]
 // Exports: fetchSocialLayerSKUPurchaseEligibility, fetchSocialLayerStorefront, fetchSocialLayerStorefrontAnnouncement, fetchSocialLayerStorefrontById, fetchSocialLayerStorefrontConfig, fetchSocialLayerStorefrontEntries, fetchSocialLayerStorefrontForApplication, fetchSocialLayerStorefrontLaunchAnnouncement, fetchSocialLayerStorefrontSku, fetchSocialLayerStorefrontSkuForApplication, setSocialLayerStorefrontState
 
-// Module 10670 (SocialLayerStorefrontActionCreators)
+// Module 10821 (SocialLayerStorefrontActionCreators)
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9481 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7406 */;
+import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9598 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7503 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -926,12 +926,12 @@ export function fetchSocialLayerStorefrontSkuForApplication(applicationId, id, a
   }
   return _fetchSocialLayerStorefrontSkuWithUrl(id, Endpoints.SOCIAL_LAYER_APPLICATION_STOREFRONT_SKU_BY_APPLICATION_ID(applicationId, id), obj);
 }
-export function fetchSocialLayerStorefrontSku(guildId, id, arg2) {
+export function fetchSocialLayerStorefrontSku(guildId, skuId, arg2) {
   obj = arg2;
   if (arg2 === undefined) {
     obj = {};
   }
-  return _fetchSocialLayerStorefrontSkuWithUrl(id, Endpoints.SOCIAL_LAYER_APPLICATION_STOREFRONT_SKU(guildId, id), obj);
+  return _fetchSocialLayerStorefrontSkuWithUrl(skuId, Endpoints.SOCIAL_LAYER_APPLICATION_STOREFRONT_SKU(guildId, skuId), obj);
 }
 export function setSocialLayerStorefrontState(applicationId, pageIndex, skuId) {
   obj = DispatcherDefault;

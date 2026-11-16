@@ -1,29 +1,29 @@
-// Module ID: 16496
-// Function ID: 16497
+// Module ID: 16845
+// Function ID: 16846
 // Name: EditProfileEffectActionSheet
-// Dependencies: [32, 19, 17, 7735, 7726, 1072, 21, 5014, 575, 8757, 8741, 7326, 7351, 1252, 8742, 8738, 8735, 5272, 7321, 1113, 8743, 10604, 504, 16497, 15067, 8737, 8758, 16498, 15073, 15074, 8744, 11392, 5587, 2]
+// Dependencies: [32, 19, 17, 7844, 7835, 1072, 21, 5170, 575, 8861, 8845, 7420, 7445, 1252, 8846, 8842, 8839, 5420, 7415, 1113, 8847, 10757, 504, 16846, 15377, 8841, 8862, 16847, 15383, 15384, 8848, 11565, 5747, 2]
 // Exports: default
 
-// Module 16496 (EditProfileEffectActionSheet)
+// Module 16845 (EditProfileEffectActionSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7351 */;
-import ProfileEffectRecord from "ProfileEffectRecord" /* 7726 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8735 */;
-import UserProfileActionCreators from "UserProfileActionCreators" /* 8738 */;
-import useShopProductItems from "useShopProductItems" /* 8742 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8758 */;
-import EditProfileEffectSection from "EditProfileEffectSection" /* 16498 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7445 */;
+import ProfileEffectRecord from "ProfileEffectRecord" /* 7835 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8839 */;
+import UserProfileActionCreators from "UserProfileActionCreators" /* 8842 */;
+import useShopProductItems from "useShopProductItems" /* 8846 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8862 */;
+import EditProfileEffectSection from "EditProfileEffectSection" /* 16847 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7735 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7844 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet, dependencyMap;
+let dependencyMap;
 
 let StyleSheet;
 let c10;
@@ -139,7 +139,7 @@ function ProfileEffectSectionPreview(arg0) {
   let purchase;
   ({ previewSkuId, user, guildId } = arg0);
   const tmp = closure_12();
-  const tmp2 = purchase(8744)(previewSkuId);
+  const tmp2 = purchase(8848)(previewSkuId);
   const product = tmp2.product;
   let c0 = product;
   purchase = tmp2.purchase;
@@ -163,10 +163,10 @@ function ProfileEffectSectionPreview(arg0) {
     }
     return tmp3;
   }, items);
-  items1 = [closure_9(purchase(11392), { user, guildId, profileEffect: memo, maxWidth: 250 }), ];
+  items1 = [closure_9(purchase(11565), { user, guildId, profileEffect: memo, maxWidth: 250 }), ];
   const obj2 = { style: tmp.previewGradient, start: { x: 0, y: 0.6 }, end: { x: 0, y: 1 }, colors: items2 };
   items2 = [, ];
-  const tmp4 = purchase(5587);
+  const tmp4 = purchase(5747);
   items2[0] = "" + tmp.previewGradient.color + "00";
   items2[1] = tmp.previewGradient.color;
   items1[1] = closure_9(tmp4, obj2);
@@ -185,6 +185,7 @@ let closure_12 = createStyles(obj);
 let result = size.fileFinishedImporting("modules/user_profile/native/EditProfileEffectActionSheet.tsx");
 
 export default function EditProfileEffectActionSheet(isTryItOut) {
+  let BottomSheet;
   let BottomSheetTitleHeader;
   let closure_2;
   let currentProfileEffect;
@@ -204,7 +205,7 @@ export default function EditProfileEffectActionSheet(isTryItOut) {
   let memo;
   let tmp = closure_12();
   let str = user.id;
-  let tmp4 = isTryItOut(8757);
+  let tmp4 = isTryItOut(8861);
   if (str == null) {
     str = "";
   }
@@ -213,10 +214,10 @@ export default function EditProfileEffectActionSheet(isTryItOut) {
   const tmp6 = selectedProfileEffect(memo.useState(currentProfileEffect), 2);
   selectedProfileEffect = tmp6[0];
   const tmp8 = tmp6[1];
-  let obj = guildId(8741);
+  let obj = guildId(8845);
   const bottomSheetRef = obj.useBottomSheetRef().bottomSheetRef;
-  const tmp2Result = isTryItOut(7326);
-  const analyticsLocations = tmp2Result(tmp2(7351).EDIT_PROFILE_EFFECT_SHEET).analyticsLocations;
+  const tmp2Result = isTryItOut(7420);
+  const analyticsLocations = tmp2Result(tmp2(7445).EDIT_PROFILE_EFFECT_SHEET).analyticsLocations;
   const items = [guildId, tmp4Result];
   memo = memo.useMemo(() => {
     let tmp;
@@ -261,19 +262,19 @@ export default function EditProfileEffectActionSheet(isTryItOut) {
     }
   }, items2);
   let obj2 = { value: analyticsLocations, children: tmp14(BottomSheet, obj3) };
-  const AnalyticsLocationProvider = guildId(7326).AnalyticsLocationProvider;
+  const AnalyticsLocationProvider = guildId(7420).AnalyticsLocationProvider;
   obj3 = { scrollable: true, ref: bottomSheetRef, onExpand: callback, startExpanded: true, header: closure_9(BottomSheetTitleHeader, obj4), children: items3 };
-  BottomSheet = guildId(5272).BottomSheet;
+  BottomSheet = guildId(5420).BottomSheet;
   obj4 = { title: intl.string(guildId(1113).t["/6nv6N"]) };
-  BottomSheetTitleHeader = guildId(7321).BottomSheetTitleHeader;
+  BottomSheetTitleHeader = guildId(7415).BottomSheetTitleHeader;
   intl = guildId(1113).intl;
   items3 = [, ];
   const obj5 = { style: tmp.container, children: closure_9(EditProfileEffectInner, { user, selectedProfileEffect, setSelectedProfileEffect: tmp8, guildId, isTryItOut }) };
   items3[0] = closure_9(closure_5, obj5);
-  const obj6 = { user, currentSkuId: skuId, selectedSkuId: skuId1, isTryItOut, onApply: callback1, analyticsLocations, analyticsSource: isTryItOut(7351).EDIT_PROFILE_EFFECT_SHEET };
+  const obj6 = { user, currentSkuId: skuId, selectedSkuId: skuId1, isTryItOut, onApply: callback1, analyticsLocations, analyticsSource: isTryItOut(7445).EDIT_PROFILE_EFFECT_SHEET };
   skuId = undefined;
   tmp14 = closure_10;
-  const tmp2Result2 = isTryItOut(8743);
+  const tmp2Result2 = isTryItOut(8847);
   if (currentProfileEffect != null) {
     skuId = currentProfileEffect.skuId;
   }

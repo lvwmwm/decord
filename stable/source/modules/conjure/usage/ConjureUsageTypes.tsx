@@ -1,10 +1,10 @@
-// Module ID: 10859
-// Function ID: 10860
+// Module ID: 11010
+// Function ID: 11011
 // Name: ConjureUsageTypes
 // Dependencies: [2]
 // Exports: cacheHitRate, promptRunes, runeCount, runesFromUsd, sumTokenUsage, usageOrEmpty
 
-// Module 10859 (ConjureUsageTypes)
+// Module 11010 (ConjureUsageTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/usage/ConjureUsageTypes.tsx");

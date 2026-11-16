@@ -1,27 +1,27 @@
-// Module ID: 9130
-// Function ID: 9131
+// Module ID: 9243
+// Function ID: 9244
 // Name: HubProgressActionCreators
-// Dependencies: [4885, 9131, 1072, 4844, 1396, 2]
+// Dependencies: [5041, 9244, 1072, 5000, 1403, 2]
 // Exports: setHubProgressActionComplete, skipHubProgress
 
-// Module 9130 (HubProgressActionCreators)
+// Module 9243 (HubProgressActionCreators)
 import Constants from "Constants" /* 1072 */;
-import FlagUtils from "FlagUtils" /* 1396 */;
-import HubProgressBarConstants from "HubProgressBarConstants" /* 9131 */;
-import GuildStore from "GuildStore" /* 4885 */;
+import FlagUtils from "FlagUtils" /* 1403 */;
+import HubProgressBarConstants from "HubProgressBarConstants" /* 9244 */;
+import GuildStore from "GuildStore" /* 5041 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const f94104 = (hubProgress) => {
+const f95708 = (hubProgress) => {
   let flag = false;
   for (const item10008 of HUB_PROGRESS_STEP_ORDER) {
     let tmp = item10008;
     let tmp2 = require;
     let obj = FlagUtils;
     if (!obj.hasFlag(hubProgress.hubProgress, item10008)) {
-      let tmp2Result = tmp2(1396);
+      let tmp2Result = tmp2(1403);
       hubProgress.hubProgress = tmp2Result.addFlag(hubProgress.hubProgress, tmp);
       flag = true;
     }
@@ -43,13 +43,13 @@ export function setHubProgressActionComplete(guildId, JOIN_GUILD) {
     }
     if (hasItem) {
       const items = [JOIN_GUILD];
-      const obj = items(4844);
-      const result = obj.updateUserGuildSettings(guildId, f94104, items(4844).UserSettingsDelay.INFREQUENT_USER_ACTION);
+      const obj = items(5000);
+      const result = obj.updateUserGuildSettings(guildId, f95708, items(5000).UserSettingsDelay.INFREQUENT_USER_ACTION);
     }
   }
 }
 export function skipHubProgress(id) {
   _require = HUB_PROGRESS_STEP_ORDER;
   let obj = require("UserSettingsProtoActionCreators");
-  const result = obj.updateUserGuildSettings(id, f94104, require("UserSettingsProtoActionCreators").UserSettingsDelay.INFREQUENT_USER_ACTION);
+  const result = obj.updateUserGuildSettings(id, f95708, require("UserSettingsProtoActionCreators").UserSettingsDelay.INFREQUENT_USER_ACTION);
 }

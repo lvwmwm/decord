@@ -1,23 +1,25 @@
-// Module ID: 5039
-// Function ID: 5040
+// Module ID: 5195
+// Function ID: 5196
 // Name: HexagonCampaignConstants
-// Dependencies: [1385, 1403, 1402, 1391, 1196, 5040, 2]
+// Dependencies: [1387, 1395, 1396, 5196, 1398, 1196, 5197, 2]
 
-// Module 5039 (HexagonCampaignConstants)
+// Module 5195 (HexagonCampaignConstants)
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
-import PremiumConstants from "PremiumConstants" /* 1385 */;
-import user from "user" /* 1391 */;
-import DisplayNameEffect from "DisplayNameEffect" /* 1402 */;
-import DisplayNameFont from "DisplayNameFont" /* 1403 */;
-import HexagonCampaignDates from "HexagonCampaignDates" /* 5040 */;
+import PremiumConstants from "PremiumConstants" /* 1387 */;
+import DisplayNameFont from "DisplayNameFont" /* 1395 */;
+import DisplayNameEffect from "DisplayNameEffect" /* 1396 */;
+import user from "user" /* 1398 */;
+import AppIconTypes from "AppIconTypes" /* 5196 */;
+import HexagonCampaignDates from "HexagonCampaignDates" /* 5197 */;
 import size from "module_2" /* 2 */;
 
 const PremiumTypes = PremiumConstants.PremiumTypes;
 const combined = "/quests/special-events/" + "1549285425984831508" + "/enroll";
 const HEXAGON = DisplayNameFont.DisplayNameFont.HEXAGON;
-const obj2 = { DISPLAY_NAME_STYLE: "display_name_style", CLIENT_THEME: "client_theme", APP_ICON: "app_icon" };
 const obj = { fontId: HEXAGON, effectId: DisplayNameEffect.DisplayNameEffect.SOLID, colors: [] };
 const frozen = Object.freeze(obj);
+const obj2 = { DISPLAY_NAME_STYLE: "display_name_style", CLIENT_THEME: "client_theme", APP_ICON: "app_icon" };
+const DEFAULT = AppIconTypes.FreemiumAppIconIds.DEFAULT;
 const obj3 = {};
 const frozen1 = Object.freeze({ [obj2.CLIENT_THEME]: "client_theme", [obj2.DISPLAY_NAME_STYLE]: "display_name_font", [obj2.APP_ICON]: "app_icon" });
 obj3[obj2.DISPLAY_NAME_STYLE] = user.Perk.DISPLAY_NAME_STYLES;
@@ -40,7 +42,10 @@ export const HEXAGON_CAMPAIGN_ENROLL_ENDPOINT = combined;
 export const HEXAGON_CAMPAIGN_DISPLAY_NAME_FONT = HEXAGON;
 export const HEXAGON_CAMPAIGN_DISPLAY_NAME_STYLES = frozen;
 export const HEXAGON_CAMPAIGN_LEARN_MORE_URL = "https://dis.gd/vice-city-theme-available-in-discord";
-export const HEXAGON_CAMPAIGN_AD_CONTENT_ID = "1549285425984831508";
+export const HEXAGON_CAMPAIGN_QUEST_HOME_HERO_ID = "1560067021281042513";
+export const HEXAGON_CAMPAIGN_AD_CONTENT_ID = "1560067021281042513";
+export const DEFAULT_HEXAGON_CAMPAIGN_CLIENT_THEME = { theme: "system" };
+export const DEFAULT_HEXAGON_CAMPAIGN_APP_ICON_ID = DEFAULT;
 export const HexagonCampaignPerk = obj2;
 export const HexagonCampaignPerkAvailability = { HIDDEN: "hidden", LOCKED: "locked", SELECTABLE: "selectable" };
 export const HEXAGON_CAMPAIGN_PERK_ANALYTICS_ACTION = frozen1;

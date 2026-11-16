@@ -1,19 +1,19 @@
-// Module ID: 7778
-// Function ID: 7779
+// Module ID: 7887
+// Function ID: 7888
 // Name: UserProfilePersonalWidget
-// Dependencies: [1383, 1385, 7779, 5044, 4847, 1379, 1342, 7773, 1983, 2]
+// Dependencies: [1385, 1387, 7888, 5202, 5003, 1380, 1342, 7882, 2107, 2]
 // Exports: createDefaultCoverSection, createDefaultField, createDefaultPersonalWidget, isPersonalWidgetNew, parsePersonalWidgetSections
 
-// Module 7778 (UserProfilePersonalWidget)
+// Module 7887 (UserProfilePersonalWidget)
 import _modDef1342 from "module_1342" /* 1342 */;
-import GlobalUtils from "GlobalUtils" /* 1379 */;
-import PremiumConstants from "PremiumConstants" /* 1385 */;
-import PremiumTypeUtils from "PremiumTypeUtils" /* 1983 */;
-import dismissible_content from "dismissible_content" /* 4847 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5044 */;
-import WidgetType from "WidgetType" /* 7773 */;
-import PersonalWidgetSectionType from "PersonalWidgetSectionType" /* 7779 */;
-import UserStore from "UserStore" /* 1383 */;
+import GlobalUtils from "GlobalUtils" /* 1380 */;
+import PremiumConstants from "PremiumConstants" /* 1387 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 2107 */;
+import dismissible_content from "dismissible_content" /* 5003 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5202 */;
+import WidgetType from "WidgetType" /* 7882 */;
+import PersonalWidgetSectionType from "PersonalWidgetSectionType" /* 7888 */;
+import UserStore from "UserStore" /* 1385 */;
 import size_mod from "module_2" /* 2 */;
 
 function createDefaultFieldsSection() {
@@ -265,7 +265,7 @@ class UserProfilePersonalWidget {
                 if (!tmp14) {
                   break;
                 }
-              } else if (tmp17(7779).PersonalWidgetSectionType.FIELDS === type) {
+              } else if (tmp17(7888).PersonalWidgetSectionType.FIELDS === type) {
                 let flag2 = false;
                 if (tmp3.fields.length === tmp4.fields.length) {
                   let num = 0;

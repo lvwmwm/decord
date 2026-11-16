@@ -1,18 +1,18 @@
-// Module ID: 10256
-// Function ID: 10257
+// Module ID: 10407
+// Function ID: 10408
 // Name: GIFPickerNoResults
-// Dependencies: [19, 17, 1072, 21, 5014, 575, 10240, 10034, 1113, 10038, 5275, 1187, 2]
+// Dependencies: [19, 17, 1072, 21, 5170, 575, 10391, 10188, 1113, 10192, 5424, 1187, 2]
 
-// Module 10256 (GIFPickerNoResults)
+// Module 10407 (GIFPickerNoResults)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import SearchEmpty from "SearchEmpty" /* 10034 */;
-import useModalDismissGuardRefreshControl from "useModalDismissGuardRefreshControl" /* 10038 */;
-import useExpressionPickerInsetsDefault from "useExpressionPickerInsets" /* 10240 */;
+import SearchEmpty from "SearchEmpty" /* 10188 */;
+import useModalDismissGuardRefreshControl from "useModalDismissGuardRefreshControl" /* 10192 */;
+import useExpressionPickerInsetsDefault from "useExpressionPickerInsets" /* 10391 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -45,7 +45,7 @@ const memoResult = react.memo(function GIFPickerNoResults(inActionSheet) {
   const tmp4Result = useModalDismissGuardRefreshControl;
   const modalDismissGuardRefreshControl = tmp4Result.useModalDismissGuardRefreshControl();
   if (inActionSheet) {
-    let BottomSheetScrollView = tmp4(5275).BottomSheetScrollView;
+    let BottomSheetScrollView = tmp4(5424).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = ScrollView;
   }

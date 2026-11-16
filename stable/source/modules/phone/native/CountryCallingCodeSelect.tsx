@@ -1,18 +1,18 @@
-// Module ID: 7216
-// Function ID: 7217
+// Module ID: 7313
+// Function ID: 7314
 // Name: CountryCallingCodeSelect
-// Dependencies: [32, 19, 17, 5695, 21, 5014, 575, 7111, 5696, 7217, 6899, 6975, 5624, 7218, 7221, 7222, 1113, 7223, 2]
+// Dependencies: [32, 19, 17, 5851, 21, 5170, 575, 7215, 5852, 7314, 6987, 7071, 5783, 7315, 7318, 7319, 1113, 7320, 2]
 // Exports: default
 
-// Module 7216 (CountryCallingCodeSelect)
+// Module 7313 (CountryCallingCodeSelect)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import CountryCodeUtils from "CountryCodeUtils" /* 5695 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6899 */;
+import CountryCodeUtils from "CountryCodeUtils" /* 5851 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6987 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let alpha2;
@@ -120,7 +120,7 @@ export default function CountryCallingCodeSelect(onCountrySelected) {
       }
     };
     const TableRow = onCountrySelected(first[11]).TableRow;
-    obj2 = { variant: "text-md/semibold", children: country.code };
+    obj2 = { variant: "body-md/semibold", children: country.code };
     return closure_1_7(TableRow, obj);
   }, items1);
   let tmp11 = closure_8;

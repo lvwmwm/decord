@@ -1,12 +1,12 @@
-// Module ID: 11613
-// Function ID: 11614
+// Module ID: 11803
+// Function ID: 11804
 // Name: handleMessagesLongPressChannel
-// Dependencies: [6046, 10181, 2]
+// Dependencies: [6210, 10334, 2]
 // Exports: handleMessagesLongPressChannel
 
-// Module 11613 (handleMessagesLongPressChannel)
-import ChannelUtils from "ChannelUtils" /* 6046 */;
-import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 10181 */;
+// Module 11803 (handleMessagesLongPressChannel)
+import ChannelUtils from "ChannelUtils" /* 6210 */;
+import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 10334 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/native/handlers/handleMessagesLongPressChannel.tsx");

@@ -1,18 +1,18 @@
-// Module ID: 17185
-// Function ID: 17186
+// Module ID: 17545
+// Function ID: 17546
 // Name: QuestDockPlayableBody
-// Dependencies: [19, 6781, 21, 17149, 17095, 17064, 17071, 9717, 7326, 9684, 9687, 6788, 7871, 6784, 11693, 9719, 17167, 9707, 17182, 1113, 8028, 15172, 2]
+// Dependencies: [19, 6869, 21, 17510, 17456, 17424, 17431, 9840, 7420, 9808, 9811, 6876, 7981, 6872, 11886, 9842, 17528, 9830, 17542, 1113, 8131, 15488, 2]
 
-// Module 17185 (QuestDockPlayableBody)
+// Module 17545 (QuestDockPlayableBody)
 import Fragment from "Fragment" /* 21 */;
-import QuestConstants from "QuestConstants" /* 6781 */;
-import QuestTypes from "QuestTypes" /* 6784 */;
-import AdCreativeType from "AdCreativeType" /* 6788 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7871 */;
-import captureAdUserAction from "captureAdUserAction" /* 9684 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9687 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 9719 */;
-import GamesActionCreatorsDefault from "GamesActionCreators" /* 11693 */;
+import QuestConstants from "QuestConstants" /* 6869 */;
+import QuestTypes from "QuestTypes" /* 6872 */;
+import AdCreativeType from "AdCreativeType" /* 6876 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7981 */;
+import captureAdUserAction from "captureAdUserAction" /* 9808 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9811 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 9842 */;
+import GamesActionCreatorsDefault from "GamesActionCreators" /* 11886 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

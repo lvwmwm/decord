@@ -1,19 +1,17 @@
-// Module ID: 16726
-// Function ID: 16727
+// Module ID: 17080
+// Function ID: 17081
 // Name: ExplicitMediaSettingsActionSheet
-// Dependencies: [19, 17, 21, 5014, 575, 5258, 5272, 7321, 7058, 1196, 7061, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 5406, 5420, 7415, 7157, 1196, 7160, 2]
 // Exports: default
 
-// Module 16726 (ExplicitMediaSettingsActionSheet)
+// Module 17080 (ExplicitMediaSettingsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let hasOwnProperty;
 let metroRequire;
@@ -44,10 +42,10 @@ export default function ExplicitMediaSettingsActionSheet(options) {
       obj2.hideActionSheet();
     }
   }, items);
-  BottomSheet = options(5272).BottomSheet;
-  const items1 = [closure_5(options(7321).BottomSheetTitleHeader, { title, subtitle }), ];
+  const BottomSheet = options(5420).BottomSheet;
+  const items1 = [closure_5(options(7415).BottomSheetTitleHeader, { title, subtitle }), ];
   let obj = { style: tmp.content, children: closure_5(TableRadioGroup, obj3) };
-  TableRadioGroup = options(7058).TableRadioGroup;
+  TableRadioGroup = options(7157).TableRadioGroup;
   const tmp3 = closure_6;
   const tmp4 = options;
   const tmp7 = View;

@@ -1,30 +1,29 @@
-// Module ID: 10157
-// Function ID: 10158
+// Module ID: 10310
+// Function ID: 10311
 // Name: GuildHighlightsNotificationsActionSheet
-// Dependencies: [32, 19, 17, 4885, 6775, 1072, 10158, 21, 5014, 575, 6957, 5624, 10159, 563, 1113, 10160, 1625, 5272, 5275, 2061, 6977, 8177, 7288, 7283, 5258, 2]
+// Dependencies: [32, 19, 17, 5041, 6863, 1072, 10311, 21, 5170, 575, 7053, 5783, 10312, 563, 1113, 10313, 1627, 5420, 5424, 2185, 7073, 8279, 7384, 7379, 5406, 2]
 // Exports: default
 
-// Module 10157 (GuildHighlightsNotificationsActionSheet)
+// Module 10310 (GuildHighlightsNotificationsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import GuildIcon from "GuildIcon" /* 6957 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7283 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7288 */;
-import Constants2 from "Constants" /* 10158 */;
-import PushFeedbackActions from "PushFeedbackActions" /* 10159 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import GuildIcon from "GuildIcon" /* 7053 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7379 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7384 */;
+import Constants2 from "Constants" /* 10311 */;
+import PushFeedbackActions from "PushFeedbackActions" /* 10312 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6775 */;
+import GuildStore from "GuildStore" /* 5041 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6863 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;
-let BottomSheet;
 
 let c9;
 let closure_12;
@@ -41,7 +40,7 @@ function GuildPill(guild) {
   const obj2 = { guild, size: GuildIcon.GuildIconSizes.SMALL_32, animate: true };
   const tmp5 = GuildIconDefault;
   items = [unpackModuleId(tmp5, obj2), ];
-  const obj3 = { style: tmp.guildName, variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: name };
+  const obj3 = { style: tmp.guildName, variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: name };
   name = undefined;
   const Text = Text_Text.Text;
   const tmp2 = authStore2;
@@ -184,7 +183,7 @@ export default function SummaryFeedbackActionSheet(guildId) {
     }
     const tmp19 = obj.rating === FeedbackRating.GOOD || null != obj.reason;
     if (tmp19) {
-      const obj3 = { style: items5, variant: "heading-md/semibold", color: "text-brand", children: intl3.string(guildId(ref[14]).t.kZbFIO) };
+      const obj3 = { style: items5, variant: "heading-sm/semibold", color: "text-brand", children: intl3.string(guildId(ref[14]).t.kZbFIO) };
       items5 = [, ];
       ({ centerText: arr7[0], thanks: arr7[1] } = tmp);
       const Text = tmp12(tmp13[11]).Text;
@@ -242,7 +241,7 @@ export default function SummaryFeedbackActionSheet(guildId) {
   }
   const obj6 = { scrollable: true, ref, contentHeight: tmp29, startHeight: sum, children: closure_11(BottomSheetScrollView, obj7) };
   tmp29 = undefined;
-  BottomSheet = tmp12(tmp13[17]).BottomSheet;
+  const BottomSheet = tmp12(tmp13[17]).BottomSheet;
   if (tmp24) {
     tmp29 = sum;
   }
@@ -258,7 +257,7 @@ export default function SummaryFeedbackActionSheet(guildId) {
   const Text2 = tmp12(tmp13[11]).Text;
   intl4 = tmp12(tmp13[14]).intl;
   items6[1] = closure_11(Text2, obj9);
-  const obj10 = { style: tmp.centerText, variant: "text-md/medium", color: "text-default", children: format(enfuur, obj11) };
+  const obj10 = { style: tmp.centerText, variant: "body-md/medium", color: "text-default", children: format(enfuur, obj11) };
   const Text3 = tmp12(tmp13[11]).Text;
   const intl5 = tmp12(tmp13[14]).intl;
   format = intl5.format;
@@ -302,7 +301,7 @@ export default function SummaryFeedbackActionSheet(guildId) {
   }
   obj15 = { children: items7 };
   items7[2] = tmp28Result2;
-  const obj16 = { style: tmp.centerText, variant: "text-sm/medium", color: "text-default", children: intl7.format(guildId(ref[14]).t.F9rfLX, obj17) };
+  const obj16 = { style: tmp.centerText, variant: "body-sm/medium", color: "text-default", children: intl7.format(guildId(ref[14]).t.F9rfLX, obj17) };
   const Text4 = tmp12(tmp13[11]).Text;
   intl7 = tmp12(tmp13[14]).intl;
   obj17 = {

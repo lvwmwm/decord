@@ -1,29 +1,29 @@
-// Module ID: 13760
-// Function ID: 13761
+// Module ID: 14025
+// Function ID: 14026
 // Name: AddMediaToOriginalForumPostActionSheet
-// Dependencies: [32, 5, 19, 17, 4863, 7701, 4885, 6061, 1072, 21, 5014, 575, 10208, 8216, 8231, 5258, 9781, 9778, 11, 8212, 9780, 8202, 1282, 13761, 7636, 8687, 5959, 1113, 504, 7326, 8204, 8220, 5272, 13762, 5624, 5635, 2]
+// Dependencies: [32, 5, 19, 17, 5019, 7810, 5041, 6226, 1072, 21, 5170, 575, 10359, 8319, 8334, 5406, 9904, 9901, 11, 8314, 9903, 8304, 1282, 14026, 7745, 8791, 6123, 1113, 504, 7420, 8306, 8323, 5420, 14027, 5783, 5791, 2]
 // Exports: default
 
-// Module 13760 (AddMediaToOriginalForumPostActionSheet)
+// Module 14025 (AddMediaToOriginalForumPostActionSheet)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import DraftStore from "DraftStore" /* 7701 */;
-import Tracking from "Tracking" /* 8204 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 8220 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
+import DraftStore from "DraftStore" /* 7810 */;
+import Tracking from "Tracking" /* 8306 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 8323 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import MessageStore from "MessageStore" /* 6061 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import GuildStore from "GuildStore" /* 5041 */;
+import MessageStore from "MessageStore" /* 6226 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
-let BottomSheet, c9, closure_6;
+let c9, closure_6;
 
 let closure_12;
 let closure_14;
@@ -400,14 +400,14 @@ export default function AddMediaToOriginalForumPostActionSheet(threadId) {
   const obj5 = { startExpanded: true, children: closure_14(stateFromStores2, obj6) };
   obj6 = { style: tmp.container, children: items9 };
   const obj7 = { pointerEvents: "none", style: tmp.post, children: closure_13(threadId(sendMessage[33]).ForumPostListDisabled, obj8) };
-  BottomSheet = tmp4(tmp5[32]).BottomSheet;
+  const BottomSheet = tmp4(tmp5[32]).BottomSheet;
   obj8 = { threadId, localDeviceMedia: tmp16, style: tmp.postContent };
   items9 = [closure_13(stateFromStores2, obj7), , , , , ];
-  const obj9 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(threadId(sendMessage[27]).t["+SZF6S"]) };
+  const obj9 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(threadId(sendMessage[27]).t["+SZF6S"]) };
   const Text = tmp4(tmp5[34]).Text;
   intl = tmp4(tmp5[27]).intl;
   items9[1] = closure_13(Text, obj9);
-  const obj10 = { style: tmp.description, variant: "text-md/medium", color: "text-default", children: intl2.string(threadId(sendMessage[27]).t["0Ycgw5"]) };
+  const obj10 = { style: tmp.description, variant: "body-md/medium", color: "text-default", children: intl2.string(threadId(sendMessage[27]).t["0Ycgw5"]) };
   const Text2 = tmp4(tmp5[34]).Text;
   intl2 = tmp4(tmp5[27]).intl;
   items9[2] = closure_13(Text2, obj10);

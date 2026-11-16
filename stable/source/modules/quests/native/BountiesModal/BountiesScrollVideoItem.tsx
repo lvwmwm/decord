@@ -1,21 +1,21 @@
-// Module ID: 16927
-// Function ID: 16928
+// Module ID: 17281
+// Function ID: 17282
 // Name: BountiesScrollVideoItem
-// Dependencies: [5, 32, 19, 17, 9555, 7845, 6781, 21, 16928, 504, 16929, 14691, 16934, 16936, 16937, 16932, 16940, 14699, 6788, 6786, 16961, 2]
+// Dependencies: [5, 32, 19, 17, 9676, 7954, 6869, 21, 17282, 504, 17283, 14956, 17288, 17290, 17291, 17286, 17294, 14964, 6876, 6874, 17315, 2]
 // Exports: BountiesScrollVideoItem
 
-// Module 16927 (BountiesScrollVideoItem)
+// Module 17281 (BountiesScrollVideoItem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import QuestConstants from "QuestConstants" /* 6781 */;
-import QuestContent from "QuestContent" /* 6786 */;
-import AdCreativeType from "AdCreativeType" /* 6788 */;
-import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 14699 */;
+import QuestConstants from "QuestConstants" /* 6869 */;
+import QuestContent from "QuestContent" /* 6874 */;
+import AdCreativeType from "AdCreativeType" /* 6876 */;
+import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 14964 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import VirtualCurrencyStore_mod from "VirtualCurrencyStore" /* 9555 */;
-import BountyStore from "BountyStore" /* 7845 */;
+import VirtualCurrencyStore_mod from "VirtualCurrencyStore" /* 9676 */;
+import BountyStore from "BountyStore" /* 7954 */;
 import size_mod from "module_2" /* 2 */;
 
 let c4, c5;
@@ -58,7 +58,7 @@ function BountiesScrollVideoItemInner(bounty) {
   let tmp23;
   let tmp7;
   let tmp8;
-  const f110954 = () => {
+  const f113068 = () => {
     let currentBalance = null;
     if (isActive) {
       currentBalance = VirtualCurrencyStore.getCurrentBalance();
@@ -136,9 +136,9 @@ function BountiesScrollVideoItemInner(bounty) {
   }, items2);
   [tmp19, tmp20] = isActive(obj.useState(isActive), 2);
   isActive(obj.useState(isActive), 2);
-  [tmp22, tmp23] = isActive(obj.useState(f110954), 2);
+  [tmp22, tmp23] = isActive(obj.useState(f113068), 2);
   VirtualCurrencyStore = tmp23;
-  isActive(obj.useState(f110954), 2);
+  isActive(obj.useState(f113068), 2);
   const first = tmp5(obj.useState(0), 2)[0];
   isActive(obj.useState(0), 2);
   const tmp12 = flushProgress;
@@ -359,14 +359,14 @@ export function BountiesScrollVideoItem(bounty) {
   }
   const obj = {
     adContentId: bounty.id,
-    adCreativeType: bounty(6788).AdCreativeType.BOUNTY,
-    questContent: bounty(6786).QuestContent.VIDEO_MODAL_MOBILE,
+    adCreativeType: bounty(6876).AdCreativeType.BOUNTY,
+    questContent: bounty(6874).QuestContent.VIDEO_MODAL_MOBILE,
     sourceQuestContent,
     overrideVisibility: isActive,
     children() {
       return <BountiesScrollVideoItemInner bounty={bounty} sourceQuestContent={sourceQuestContent} width={dependencyMap} height={_asyncToGenerator} index={_slicedToArray} isActive={isActive} isRecapPageRevealed={flag} isRecapPageOnTop={flag2} isScrollingInBoundsSharedValue={BountyStore} shouldLoadHls={shouldLoadHls} softDownloadCapsEnabled={flag3} isScrollIndicatorEnabled={flag4} />;
     }
   };
-  const BillableAdPlacementImpressionTrackerNative = bounty(14699).BillableAdPlacementImpressionTrackerNative;
+  const BillableAdPlacementImpressionTrackerNative = bounty(14964).BillableAdPlacementImpressionTrackerNative;
   return flag3(BillableAdPlacementImpressionTrackerNative, obj);
 }

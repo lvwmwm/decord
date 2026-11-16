@@ -1,15 +1,15 @@
-// Module ID: 7145
-// Function ID: 7146
+// Module ID: 7242
+// Function ID: 7243
 // Name: AuthNavbarPlaceholder
-// Dependencies: [19, 21, 5014, 575, 6998, 2]
+// Dependencies: [19, 21, 5170, 575, 7097, 2]
 // Exports: default
 
-// Module 7145 (AuthNavbarPlaceholder)
+// Module 7242 (AuthNavbarPlaceholder)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import NavigatorHeader from "NavigatorHeader" /* 6998 */;
+import NavigatorHeader from "NavigatorHeader" /* 7097 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;

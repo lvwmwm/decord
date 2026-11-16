@@ -1,12 +1,12 @@
-// Module ID: 8145
-// Function ID: 8146
+// Module ID: 8248
+// Function ID: 8249
 // Name: GoogleWalletVerificationScreen
-// Dependencies: [5, 32, 19, 17, 21, 1497, 6726, 8004, 7969, 6540, 6545, 1113, 3096, 7972, 7973, 6027, 5624, 6767, 5634, 6729, 2]
+// Dependencies: [5, 32, 19, 17, 21, 1499, 6813, 8107, 8071, 6626, 6631, 1113, 3252, 8074, 8076, 6191, 5783, 6855, 5790, 6816, 2]
 // Exports: default
 
-// Module 8145 (GoogleWalletVerificationScreen)
+// Module 8248 (GoogleWalletVerificationScreen)
 import react_native from "react-native" /* 17 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6729 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6816 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -288,7 +288,7 @@ export default function GoogleWalletVerificationScreen(onClose) {
     obj5 = { align: "center", justify: "center", spacing: 16, children: items4 };
     Stack = tmp(tmp2[15]).Stack;
     items4 = [callback2(callback1, { size: "large" }), ];
-    let obj6 = { variant: "text-md/medium", color: "text-strong", children: intl.string(onComplete(tmp2[12]).MlFuBI) };
+    let obj6 = { variant: "body-md/medium", color: "text-strong", children: intl.string(onComplete(tmp2[12]).MlFuBI) };
     const Text = tmp(tmp2[16]).Text;
     intl = tmp(tmp2[11]).intl;
     items4[1] = callback2(Text, obj6);
@@ -300,7 +300,7 @@ export default function GoogleWalletVerificationScreen(onClose) {
     ModalContent2 = tmp(tmp2[14]).ModalContent;
     obj9 = { align: "center", justify: "center", spacing: 16, children: items5 };
     Stack2 = tmp(tmp2[15]).Stack;
-    let obj10 = { variant: "text-md/medium", color: "text-strong", children: tmp5.message };
+    let obj10 = { variant: "body-md/medium", color: "text-strong", children: tmp5.message };
     items5 = [callback2(tmp(tmp2[16]).Text, obj10), ];
     let obj11 = { children: callback2(Button, obj12) };
     const ButtonGroup = tmp(tmp2[17]).ButtonGroup;
@@ -311,7 +311,7 @@ export default function GoogleWalletVerificationScreen(onClose) {
       onPress() {
           const trackAgeVerificationModalClicked = AgeVerificationAnalyticsUtils.trackAgeVerificationModalClicked;
           AgeVerificationAnalyticsUtils;
-          const result = trackAgeVerificationModalClicked(modalSessionId, AgeVerificationAnalyticsUtils.AgeVerificationModalVersion.EXPRESSIVE_PRIMARY, AgeVerificationAnalyticsUtils.AgeVerificationModalCta.METHOD_SELECT);
+          const result = trackAgeVerificationModalClicked(modalSessionId, AgeVerificationAnalyticsUtils.AgeVerificationModalVersion.EXPRESSIVE_V2, AgeVerificationAnalyticsUtils.AgeVerificationModalCta.METHOD_SELECT);
           callback1();
         }
     };

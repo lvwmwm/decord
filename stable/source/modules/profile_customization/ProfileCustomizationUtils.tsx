@@ -1,17 +1,17 @@
-// Module ID: 8737
-// Function ID: 8738
+// Module ID: 8841
+// Function ID: 8842
 // Name: ProfileCustomizationUtils
-// Dependencies: [19, 8731, 7772, 4926, 504, 5021, 1113, 2]
+// Dependencies: [19, 8835, 7881, 5082, 504, 5177, 1113, 2]
 // Exports: announcePendingAvatarChange, getProfilePreviewValue, resolveCollectiblesOverride, showRemoveAvatar, showRemoveBanner, useAvatarDecorationSettings, useAvatarsWithGuilds, useGuildMemberAndUserPendingNameplate, useGuildMemberOrUserPendingDisplayNameStyles, useProfileEffectSettings, useProfileFrameSettings, useUserAvatarDecoration, useUserProfileEffect, useUserProfileFrame
 
-// Module 8737 (ProfileCustomizationUtils)
+// Module 8841 (ProfileCustomizationUtils)
 import get_initialized from "get initialized" /* 504 */;
 import intl4 from "intl" /* 1113 */;
-import shared from "shared" /* 5021 */;
+import shared from "shared" /* 5177 */;
 import react from "react" /* 19 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8731 */;
-import UserProfileStore from "UserProfileStore" /* 7772 */;
-import GuildMemberStore from "GuildMemberStore" /* 4926 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8835 */;
+import UserProfileStore from "UserProfileStore" /* 7881 */;
+import GuildMemberStore from "GuildMemberStore" /* 5082 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -79,20 +79,20 @@ export function useGuildMemberAndUserPendingNameplate(user, guildId) {
   }
   return obj3;
 }
-export function useGuildMemberOrUserPendingDisplayNameStyles(user, guildId) {
+export function useGuildMemberOrUserPendingDisplayNameStyles(stateFromStores, guildId) {
   let displayNameStyles1;
   let pendingDisplayNameStyles;
   let pendingErrors;
   let tryItOutDisplayNameStyles;
-  _require = user;
+  _require = stateFromStores;
   dependencyMap = guildId;
   let obj = require("get initialized");
   const items = [GuildMemberStore];
-  const stateFromStores = obj.useStateFromStores(items, () => {
+  stateFromStores = obj.useStateFromStores(items, () => {
     let member = null;
     if (undefined !== guildId) {
       member = null;
-      if (null != user) {
+      if (null != stateFromStores) {
         member = GuildMemberStore.getMember(tmp, tmp3.id);
       }
     }
@@ -106,8 +106,8 @@ export function useGuildMemberOrUserPendingDisplayNameStyles(user, guildId) {
   });
   let displayNameStyles;
   ({ pendingDisplayNameStyles, tryItOutDisplayNameStyles, pendingErrors } = stateFromStoresObject);
-  if (user != null) {
-    displayNameStyles = user.displayNameStyles;
+  if (stateFromStores != null) {
+    displayNameStyles = stateFromStores.displayNameStyles;
   }
   const obj3 = { userDisplayNameStyles: displayNameStyles, guildDisplayNameStyles: displayNameStyles1, pendingDisplayNameStyles, tryItOutDisplayNameStyles, pendingErrors };
   displayNameStyles1 = undefined;

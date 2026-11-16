@@ -1,20 +1,20 @@
-// Module ID: 14841
-// Function ID: 14842
+// Module ID: 15105
+// Function ID: 15106
 // Name: AddOrOpenAppButton
-// Dependencies: [5, 32, 19, 9762, 1072, 1496, 21, 12476, 10909, 5258, 7358, 12462, 5711, 1377, 8161, 9572, 1113, 5634, 575, 6881, 7485, 5207, 1623, 1252, 2]
+// Dependencies: [5, 32, 19, 9885, 1072, 1498, 21, 12711, 11067, 5406, 7451, 12697, 5868, 1378, 8264, 9692, 1113, 5790, 575, 6969, 7582, 5355, 1625, 1252, 2]
 // Exports: default
 
-// Module 14841 (AddOrOpenAppButton)
+// Module 15105 (AddOrOpenAppButton)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1496 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import ToastUtils from "ToastUtils" /* 5711 */;
-import ClipboardUtils from "ClipboardUtils" /* 7358 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9762 */;
-import ApplicationUtils from "ApplicationUtils" /* 10909 */;
-import getApplicationInstallURL from "getApplicationInstallURL" /* 12462 */;
-import useIsAppDMDefault from "useIsAppDM" /* 12476 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1498 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
+import ToastUtils from "ToastUtils" /* 5868 */;
+import ClipboardUtils from "ClipboardUtils" /* 7451 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9885 */;
+import ApplicationUtils from "ApplicationUtils" /* 11067 */;
+import getApplicationInstallURL from "getApplicationInstallURL" /* 12697 */;
+import useIsAppDMDefault from "useIsAppDM" /* 12711 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -40,9 +40,9 @@ function AddAppButton(application) {
   const customInstallUrl = application.customInstallUrl;
   if (null != customInstallUrl) {
     let tmp6;
-    let obj2 = guildId(1377);
+    let obj2 = guildId(1378);
     if (!obj2.isDiscordUrl(customInstallUrl)) {
-      let PlusSmallIcon = application(8161).LinkExternalSmallIcon;
+      let PlusSmallIcon = application(8264).LinkExternalSmallIcon;
       tmp6 = application;
     }
     const items1 = [application];
@@ -63,12 +63,12 @@ function AddAppButton(application) {
         obj2.presentLinkCopied();
       }
     }, items1);
-    const Button = tmp6(5634).Button;
+    const Button = tmp6(5790).Button;
     let intl = tmp6(1113).intl;
     ({ size: "sm", color: guildId(575).colors.WHITE });
     return <Button text={intl.string(tmp6(1113).t.NgXl3C)} onPress={callback} onLongPress={tmp2} accessibilityActions={memo} onAccessibilityAction={callback1} icon={null} />;
   }
-  PlusSmallIcon = application(9572).PlusSmallIcon;
+  PlusSmallIcon = application(9692).PlusSmallIcon;
   tmp6 = application;
 }
 function OpenAppButton(profileApplication) {

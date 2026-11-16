@@ -1,14 +1,15 @@
-// Module ID: 11482
-// Function ID: 11483
+// Module ID: 11659
+// Function ID: 11660
 // Name: Modal
-// Dependencies: [19, 21, 1625, 7169, 5586, 2]
+// Dependencies: [19, 21, 1627, 7097, 7266, 7264, 2]
 // Exports: Modal
 
-// Module 11482 (Modal)
+// Module 11659 (Modal)
 import Fragment from "Fragment" /* 21 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
-import NavigatorConstants from "NavigatorConstants" /* 5586 */;
-import Navigator2 from "Navigator" /* 7169 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
+import NavigatorHeader from "NavigatorHeader" /* 7097 */;
+import Navigator2 from "Navigator" /* 7264 */;
+import react2 from "react" /* 7266 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -17,8 +18,10 @@ const result = size.fileFinishedImporting("design/components/Modal/native/Modal.
 
 export function Modal(arg0) {
   const tmp = useSafeAreaInsetsDefault();
+  const obj = NavigatorHeader;
+  const navigatorHeaderSize = obj.useNavigatorHeaderSize();
+  const Provider = react2.NavigatorBackgroundContext.Provider;
   const Navigator = Navigator2.Navigator;
   const merged = Object.assign(arg0);
-  ({ height: NavigatorConstants.NAV_BAR_HEIGHT + tmp.top });
-  return <Navigator headerStyle={{ height: NavigatorConstants.NAV_BAR_HEIGHT + tmp.top }} />;
+  return <Provider value="modal">{null}</Provider>;
 }

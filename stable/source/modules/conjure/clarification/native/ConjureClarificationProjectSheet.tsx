@@ -1,19 +1,19 @@
-// Module ID: 12756
-// Function ID: 12757
+// Module ID: 12989
+// Function ID: 12990
 // Name: ConjureClarificationProjectSheet
-// Dependencies: [19, 21, 5014, 575, 1625, 7366, 7321, 5275, 7368, 5258, 2]
+// Dependencies: [19, 21, 5170, 575, 1627, 7459, 7415, 5424, 7461, 5406, 2]
 // Exports: default
 
-// Module 12756 (ConjureClarificationProjectSheet)
+// Module 12989 (ConjureClarificationProjectSheet)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import BottomSheetModal from "BottomSheetModal" /* 5275 */;
-import ActionSheet2 from "ActionSheet" /* 7366 */;
-import ActionSheetRow2 from "ActionSheetRow" /* 7368 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
+import BottomSheetModal from "BottomSheetModal" /* 5424 */;
+import ActionSheet2 from "ActionSheet" /* 7459 */;
+import ActionSheetRow2 from "ActionSheetRow" /* 7461 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;

@@ -1,11 +1,11 @@
-// Module ID: 9323
-// Function ID: 9324
+// Module ID: 9437
+// Function ID: 9438
 // Name: useOpenExternalUrlFromGameProfile
-// Dependencies: [32, 5, 19, 9324, 9339, 5705, 2]
+// Dependencies: [32, 5, 19, 9438, 9453, 5862, 2]
 // Exports: default
 
-// Module 9323 (useOpenExternalUrlFromGameProfile)
-import GameUtilsDefault from "GameUtils" /* 9324 */;
+// Module 9437 (useOpenExternalUrlFromGameProfile)
+import GameUtilsDefault from "GameUtils" /* 9438 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;

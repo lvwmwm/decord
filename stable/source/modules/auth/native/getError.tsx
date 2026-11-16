@@ -1,10 +1,10 @@
-// Module ID: 7124
-// Function ID: 7125
+// Module ID: 7228
+// Function ID: 7229
 // Name: getError
 // Dependencies: [2]
 // Exports: default
 
-// Module 7124 (getError)
+// Module 7228 (getError)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/auth/native/getError.tsx");

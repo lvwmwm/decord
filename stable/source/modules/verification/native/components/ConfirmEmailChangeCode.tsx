@@ -1,13 +1,13 @@
-// Module ID: 7079
-// Function ID: 7080
+// Module ID: 7178
+// Function ID: 7179
 // Name: ConfirmEmailChangeCode
-// Dependencies: [5, 19, 6997, 21, 1497, 1092, 7080, 7077, 1113, 2]
+// Dependencies: [5, 19, 7096, 21, 1499, 1092, 7179, 7176, 1113, 2]
 // Exports: default
 
-// Module 7079 (ConfirmEmailChangeCode)
+// Module 7178 (ConfirmEmailChangeCode)
 import Fragment from "Fragment" /* 21 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
-import ChangeEmailStore from "ChangeEmailStore" /* 6997 */;
+import ChangeEmailStore from "ChangeEmailStore" /* 7096 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -20,7 +20,7 @@ const result = size.fileFinishedImporting("modules/verification/native/component
 
 export default function ConfirmEmailChangeCode(isChangeEmail) {
   isChangeEmail = isChangeEmail.isChangeEmail;
-  let obj = isChangeEmail(1497);
+  let obj = isChangeEmail(1499);
   navigation = obj.useNavigation();
   const items = [isChangeEmail, navigation];
   const callback = react.useCallback((arg0) => {
@@ -38,7 +38,7 @@ export default function ConfirmEmailChangeCode(isChangeEmail) {
       push(VerificationModalScenes.ENTER_EMAIL);
     }
   }, items);
-  navigation(7080);
+  navigation(7179);
   isChangeEmail = _asyncToGenerator(async (arg0) => {
     let c1;
     closure_0 = arg0;

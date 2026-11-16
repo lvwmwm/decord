@@ -1,9 +1,9 @@
-// Module ID: 15528
-// Function ID: 15529
+// Module ID: 15851
+// Function ID: 15852
 // Name: DispatcherWorkConstants
 // Dependencies: [2]
 
-// Module 15528 (DispatcherWorkConstants)
+// Module 15851 (DispatcherWorkConstants)
 import size from "module_2" /* 2 */;
 
 let c0 = 2.0833333333333335;

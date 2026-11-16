@@ -1,12 +1,13 @@
-// Module ID: 18858
-// Function ID: 18859
+// Module ID: 19258
+// Function ID: 19259
 // Name: YouSettingsCoachmark
-// Dependencies: [18859, 9954, 2]
+// Dependencies: [19259, 19264, 10109, 2]
 // Exports: default, useYouSettingsCoachmark
 
-// Module 18858 (YouSettingsCoachmark)
-import useCoachmark from "useCoachmark" /* 9954 */;
-import useReferralProgramCoachmark from "useReferralProgramCoachmark" /* 18859 */;
+// Module 19258 (YouSettingsCoachmark)
+import useCoachmark from "useCoachmark" /* 10109 */;
+import useConsoleConnectionCoachmark from "useConsoleConnectionCoachmark" /* 19259 */;
+import useReferralProgramCoachmark from "useReferralProgramCoachmark" /* 19264 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouSettingsCoachmark.tsx");
@@ -20,10 +21,14 @@ export default function YouSettingsCoachmark(buttonRef) {
 };
 export function useYouSettingsCoachmark(disabled) {
   disabled = disabled.disabled;
-  const obj = useReferralProgramCoachmark;
-  let referralProgramCoachmark = obj.useReferralProgramCoachmark({ disabled });
-  if (referralProgramCoachmark == null) {
-    referralProgramCoachmark = null;
+  const obj = useConsoleConnectionCoachmark;
+  let consoleConnectionCoachmark = obj.useConsoleConnectionCoachmark({ disabled });
+  const obj2 = useReferralProgramCoachmark;
+  if (consoleConnectionCoachmark == null) {
+    consoleConnectionCoachmark = obj2.useReferralProgramCoachmark({ disabled });
   }
-  return referralProgramCoachmark;
+  if (consoleConnectionCoachmark == null) {
+    consoleConnectionCoachmark = null;
+  }
+  return consoleConnectionCoachmark;
 }

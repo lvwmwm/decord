@@ -1,9 +1,9 @@
-// Module ID: 6069
-// Function ID: 6070
+// Module ID: 6234
+// Function ID: 6235
 // Name: InteractionCallbackError
 // Dependencies: [2]
 
-// Module 6069 (InteractionCallbackError)
+// Module 6234 (InteractionCallbackError)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/errors/InteractionCallbackError.tsx");

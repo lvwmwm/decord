@@ -1,24 +1,24 @@
-// Module ID: 9232
-// Function ID: 9233
+// Module ID: 9345
+// Function ID: 9346
 // Name: FormComponents
-// Dependencies: [19, 5761, 21, 5014, 575, 6960, 7060, 9233, 1187, 7326, 9234, 9246, 7497, 6439, 9290, 8750, 504, 7882, 9291, 9293, 5624, 1113, 6975, 5634, 7487, 9294, 5068, 9295, 14739, 2]
+// Dependencies: [19, 5922, 21, 5170, 575, 7056, 7159, 9346, 1187, 7420, 9347, 9359, 7602, 6604, 9403, 8854, 504, 7992, 9404, 9406, 5783, 1113, 7071, 5790, 7584, 9407, 5226, 9408, 15004, 2]
 // Exports: MemberRowItem, VoicePanelFormSection
 
-// Module 9232 (FormComponents)
+// Module 9345 (FormComponents)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import NativeViewDefault from "NativeView" /* 6960 */;
-import TableRowGroup2 from "TableRowGroup" /* 7060 */;
-import CallActionCreatorsDefault from "CallActionCreators" /* 7487 */;
-import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7882 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8750 */;
-import VoiceStateIcons from "VoiceStateIcons" /* 9233 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import NativeViewDefault from "NativeView" /* 7056 */;
+import TableRowGroup2 from "TableRowGroup" /* 7159 */;
+import CallActionCreatorsDefault from "CallActionCreators" /* 7584 */;
+import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7992 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8854 */;
+import VoiceStateIcons from "VoiceStateIcons" /* 9346 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 5761 */;
+import PresenceStore from "PresenceStore" /* 5922 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -167,7 +167,7 @@ export function MemberRowItem(user) {
           if ("" !== stateFromStores.details) {
             name = tmp2.details;
           }
-          const obj = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: format(tmp15, obj2) };
+          const obj = { variant: "body-xs/medium", color: "text-muted", lineClamp: 1, children: format(tmp15, obj2) };
           obj2 = { name };
           stringResult = tmp8(Text, obj);
         }
@@ -205,7 +205,7 @@ export function MemberRowItem(user) {
     if (notConnected) {
       str = "text-muted";
     }
-    const obj12 = { variant: "text-md/semibold", color: str, style: tmp28, children: nick };
+    const obj12 = { variant: "body-md/semibold", color: str, style: tmp28, children: nick };
     tmp28 = null != displayNameStylesFont;
     if (tmp28) {
       tmp28 = { fontFamily: displayNameStylesFont };

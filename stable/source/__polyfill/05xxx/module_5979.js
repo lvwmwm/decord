@@ -1,73 +1,29 @@
 // Module ID: 5979
 // Function ID: 5980
-// Dependencies: [19, 17, 5971]
-// Exports: useTabsScreen
+// Dependencies: [659, 657, 658, 5975]
 
 // Module 5979
-import react_native from "react-native" /* 17 */;
-import RNSLog2 from "RNSLog" /* 5971 */;
-import react from "react" /* 19 */;
+import arrayPush from "arrayPush" /* 657 */;
+import stubArray from "stubArray" /* 658 */;
+import stubArray2 from "stubArray" /* 659 */;
+import overArg from "overArg" /* 5975 */;
 
-const findNodeHandle = react_native.findNodeHandle;
-
-export function useTabsScreen(componentNodeRef) {
-  componentNodeRef = componentNodeRef.componentNodeRef;
-  const onDidAppear = componentNodeRef.onDidAppear;
-  const onDidDisappear = componentNodeRef.onDidDisappear;
-  const onWillAppear = componentNodeRef.onWillAppear;
-  const onWillDisappear = componentNodeRef.onWillDisappear;
-  const screenKey = componentNodeRef.screenKey;
-  const ref = onDidDisappear.useRef(-1);
-  const effect = onDidDisappear.useEffect(() => {
-    if (null != componentNodeRef.current) {
-      let num2 = findNodeHandle(tmp.current);
-      const tmp3 = ref;
-      if (num2 == null) {
-        num2 = -1;
-      }
-      tmp3.current = num2;
-    } else {
-      ref.current = -1;
+let fn;
+if (Object.getOwnPropertySymbols) {
+  fn = (arg0) => {
+    let tmp = arg0;
+    const items = [];
+    if (arg0) {
+      do {
+        let tmp4 = arrayPush;
+        let tmp4Result = tmp4(items, stubArray(tmp));
+        tmp = overArg(tmp);
+      } while (tmp);
     }
-  }, []);
-  const items = [onWillAppear];
-  const items1 = [onDidAppear];
-  const callback = onDidDisappear.useCallback((arg0) => {
-    const RNSLog = RNSLog2.RNSLog;
-    RNSLog.log("TabsScreen [" + ref.current + "] onWillAppear received");
-    if (onWillAppear != null) {
-      tmp2(arg0);
-    }
-  }, items);
-  const items2 = [onWillDisappear];
-  const callback1 = onDidDisappear.useCallback((arg0) => {
-    const RNSLog = RNSLog2.RNSLog;
-    RNSLog.log("TabsScreen [" + ref.current + "] onDidAppear received");
-    if (onDidAppear != null) {
-      tmp2(arg0);
-    }
-  }, items1);
-  const items3 = [onDidDisappear];
-  const callback2 = onDidDisappear.useCallback((arg0) => {
-    const RNSLog = RNSLog2.RNSLog;
-    RNSLog.log("TabsScreen [" + ref.current + "] onWillDisappear received");
-    if (onWillDisappear != null) {
-      tmp2(arg0);
-    }
-  }, items2);
-  const callback3 = onDidDisappear.useCallback((arg0) => {
-    const RNSLog = RNSLog2.RNSLog;
-    RNSLog.log("TabsScreen [" + ref.current + "] onDidDisappear received");
-    if (onDidDisappear != null) {
-      tmp2(arg0);
-    }
-  }, items3);
-  let RNSLog = componentNodeRef(onDidAppear[2]).RNSLog;
-  let num = ref.current;
-  const log = RNSLog.log;
-  if (num == null) {
-    num = -1;
-  }
-  log("TabsScreen [" + num + "] render; screenKey: " + screenKey);
-  return { componentNodeRef, lifecycleCallbacks: { onWillAppear: callback, onDidAppear: callback1, onWillDisappear: callback2, onDidDisappear: callback3 } };
+    return items;
+  };
+} else {
+  fn = stubArray2;
 }
+
+export default fn;

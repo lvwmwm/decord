@@ -1,23 +1,23 @@
-// Module ID: 13275
-// Function ID: 13276
+// Module ID: 13540
+// Function ID: 13541
 // Name: TransferOwnership
-// Dependencies: [5, 32, 19, 17, 1383, 13274, 1072, 21, 5014, 575, 5596, 1497, 504, 38, 9074, 13272, 5711, 6041, 6957, 5624, 5717, 13276, 1187, 1113, 5068, 7060, 6974, 5634, 2]
+// Dependencies: [5, 32, 19, 17, 1385, 13539, 1072, 21, 5170, 575, 5756, 1499, 504, 38, 9187, 13537, 5868, 6205, 7053, 5783, 5874, 13541, 1187, 1113, 5226, 7159, 7070, 5790, 2]
 // Exports: default
 
-// Module 13275 (TransferOwnership)
+// Module 13540 (TransferOwnership)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import GuildIcon from "GuildIcon" /* 6957 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import GuildIcon from "GuildIcon" /* 7053 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1383 */;
-import TransferOwnershipConstants from "TransferOwnershipConstants" /* 13274 */;
+import UserStore from "UserStore" /* 1385 */;
+import TransferOwnershipConstants from "TransferOwnershipConstants" /* 13539 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;
@@ -165,18 +165,18 @@ export default function TransferOwnership(guild) {
       }
       const obj3 = { children: items };
       items = [tmp5, ];
-      const obj4 = { variant: "text-md/bold", children: guild.name };
+      const obj4 = { variant: "body-md/semibold", children: guild.name };
       items[1] = authStore2(Text_Text.Text, obj4);
       return tmp2(tmp3, obj3);
     }
   }
   let tmp = guild;
   let tmp2 = dependencyMap;
-  obj = guild(5596);
+  obj = guild(5756);
   let tmp3 = toUser;
   const token = obj.useToken(toUser(575).modules.mobile.TABLE_ROW_PADDING);
   let tmp5 = closure_15();
-  let obj2 = guild(1497);
+  let obj2 = guild(1499);
   dependencyMap = obj2.useNavigation();
   let obj3 = guild(504);
   let items = [UserStore];
@@ -187,16 +187,16 @@ export default function TransferOwnership(guild) {
   });
   [tmp8, c4] = _slicedToArray(obj.useState(false), 2);
   const tmp7 = _slicedToArray(obj.useState(false), 2);
-  let obj4 = toUser(6041);
+  let obj4 = toUser(6205);
   nickname = obj4.getNickname(guild.id, undefined, toUser);
   const hasAvatarForGuildResult = toUser.hasAvatarForGuild(guild.id);
   c7 = hasAvatarForGuildResult;
   let obj5 = { style: tmp5.background, keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, children: null };
   const obj6 = { style: { paddingTop: toUser(575).space.PX_16, paddingHorizontal: token }, children: null };
   const obj8 = { style: tmp5.header, children: null };
-  const obj9 = { source: toUser(13276), style: tmp5.arrow };
+  const obj9 = { source: toUser(13541), style: tmp5.arrow };
   ({ paddingTop: toUser(575).space.PX_16, paddingHorizontal: token });
-  let tmp15 = toUser(5717);
+  let tmp15 = toUser(5874);
   const items1 = [closure_12(tmp15, obj9), , , ];
   const obj10 = { style: tmp5.avatarsWrapper, children: items2 };
   const obj11 = { user: stateFromStores, guildId: guild.id, size: guild(1187).AvatarSizes.XXLARGE };
@@ -207,8 +207,8 @@ export default function TransferOwnership(guild) {
   Avatar2 = guild(1187).Avatar;
   items2[1] = closure_12(nickname, obj12);
   items1[1] = closure_14(nickname, obj10);
-  const obj14 = { variant: "text-xs/medium", color: "text-default", children: guild.name };
-  items1[2] = closure_12(guild(5624).Text, obj14);
+  const obj14 = { variant: "body-xs/medium", color: "text-default", children: guild.name };
+  items1[2] = closure_12(guild(5783).Text, obj14);
   const tmp12 = c7;
   if (null == nickname) {
     let formatResult;
@@ -217,16 +217,16 @@ export default function TransferOwnership(guild) {
       const format = intl.format;
       const obj15 = { GuildHook: GuildWithSmallIcon, user: tmp3Result.getUserTag(toUser) };
       const v2XLnG0 = tmp(1113).t["2XLnG0"];
-      tmp3Result = tmp3(5068);
+      tmp3Result = tmp3(5226);
       formatResult = format(v2XLnG0, obj15);
     }
     let str = "transfer-ownership-details";
-    const obj16 = { variant: "text-md/medium", color: "text-default", children: formatResult };
+    const obj16 = { variant: "body-md/medium", color: "text-default", children: formatResult };
     items1[3] = closure_12(tmp16, obj16, "transfer-ownership-details");
     obj8.children = items1;
     const items3 = [tmp13(tmp14, obj8), , ];
     const obj17 = { title: null, hasIcons: false, children: closure_12(TableCheckboxRow, obj18) };
-    const TableRowGroup = tmp(7060).TableRowGroup;
+    const TableRowGroup = tmp(7159).TableRowGroup;
     const string = tmp(1113).intl.string;
     class GuildWithSmallIcon {
       constructor() {
@@ -244,7 +244,7 @@ export default function TransferOwnership(guild) {
         }
         const obj3 = { children: items };
         items = [tmp5, ];
-        const obj4 = { variant: "text-md/bold", children: guild.name };
+        const obj4 = { variant: "body-md/semibold", children: guild.name };
         items[1] = authStore2(Text_Text.Text, obj4);
         return tmp2(tmp3, obj3);
       }
@@ -256,12 +256,12 @@ export default function TransferOwnership(guild) {
           _undefined(arg0);
         }
     };
-    TableCheckboxRow = tmp(6974).TableCheckboxRow;
+    TableCheckboxRow = tmp(7070).TableCheckboxRow;
     const intl3 = tmp(1113).intl;
     format3 = intl3.format;
     obj19 = { username: tmp3Result3.getUserTag(toUser) };
     xm6ACJ = tmp(1113).t.xm6ACJ;
-    tmp3Result3 = tmp3(5068);
+    tmp3Result3 = tmp3(5226);
     items3[1] = closure_12(TableRowGroup, obj17);
     const obj20 = {
       onPress: function handleTransfer() {
@@ -270,7 +270,7 @@ export default function TransferOwnership(guild) {
       text: intl4.string(tmp(1113).t.jqqLb6),
       disabled: !tmp8
     };
-    const Button = tmp(5634).Button;
+    const Button = tmp(5790).Button;
     intl4 = tmp(1113).intl;
     items3[2] = closure_12(Button, obj20);
     obj6.children = items3;
@@ -285,7 +285,7 @@ export default function TransferOwnership(guild) {
     AKAHook: function NicknameAKA() {
       const tmp = closure_15();
       const items = [, , ];
-      obj = { style: tmp.aka, variant: "text-sm/bold", color: "text-default", children: ["AKA", " "] };
+      obj = { style: tmp.aka, variant: "body-sm/semibold", color: "text-default", children: ["AKA", " "] };
       items[0] = authStore3(Text_Text.Text, obj);
       let tmp6 = null;
       const tmp2 = authStore3;
@@ -297,17 +297,17 @@ export default function TransferOwnership(guild) {
       }
       items[1] = tmp6;
       let str = nickname;
-      const Text = tmp4(5624).Text;
+      const Text = tmp4(5783).Text;
       const tmp10 = authStore2;
       if (nickname == null) {
         str = toUser.toString();
       }
       const obj3 = { children: items };
-      items[2] = tmp10(Text, { variant: "text-md/medium", children: str });
+      items[2] = tmp10(Text, { variant: "body-md/medium", children: str });
       return tmp2(tmp3, obj3);
     }
   };
   const E90vgp = tmp(1113).t.E90vgp;
-  tmp3Result4 = tmp3(5068);
+  tmp3Result4 = tmp3(5226);
   formatResult = format2(E90vgp, obj21);
 };

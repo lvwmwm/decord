@@ -1,13 +1,13 @@
-// Module ID: 14738
-// Function ID: 14739
+// Module ID: 15003
+// Function ID: 15004
 // Name: useGetJoinRequestGuild
-// Dependencies: [19, 5046, 504, 6916, 2]
+// Dependencies: [19, 5204, 504, 7004, 2]
 // Exports: default
 
-// Module 14738 (useGetJoinRequestGuild)
-import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 6916 */;
+// Module 15003 (useGetJoinRequestGuild)
+import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 7004 */;
 import react from "react" /* 19 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5046 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5204 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

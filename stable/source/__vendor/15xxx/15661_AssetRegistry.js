@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "b3429e38ab32663de7a271eafbda6e13", name: "ChannelListMagnifyingGlassIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/native/images", width: 375, height: 199.5, scales: [2, 3], hash: "84a21c838928df371966fa4ffd9053d1", name: "nitro_home_banner", type: "png" });

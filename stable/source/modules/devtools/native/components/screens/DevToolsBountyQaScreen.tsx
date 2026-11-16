@@ -1,21 +1,21 @@
-// Module ID: 17661
-// Function ID: 17662
+// Module ID: 18024
+// Function ID: 18025
 // Name: DevToolsBountyQaScreen
-// Dependencies: [5, 32, 19, 17, 7843, 21, 5014, 575, 5712, 1625, 504, 6784, 7844, 14691, 9682, 5624, 7058, 7061, 7060, 6975, 12177, 17079, 7137, 6788, 2]
+// Dependencies: [5, 32, 19, 17, 7952, 21, 5170, 575, 5869, 1627, 504, 6872, 7953, 14956, 9806, 5783, 7157, 7160, 7159, 7071, 12381, 17439, 7197, 6876, 2]
 // Exports: default
 
-// Module 17661 (DevToolsBountyQaScreen)
+// Module 18024 (DevToolsBountyQaScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
-import AdCreativeType from "AdCreativeType" /* 6788 */;
-import QuestActionCreators from "QuestActionCreators" /* 9682 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5869 */;
+import AdCreativeType from "AdCreativeType" /* 6876 */;
+import QuestActionCreators from "QuestActionCreators" /* 9806 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 7843 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 7952 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let c1, c3;
@@ -197,7 +197,7 @@ export default function DevToolsBountyQaScreen() {
     const _HermesInternal2 = HermesInternal;
     str4 = "Last dock bounty still in memory: " + stateFromStores + ".";
   }
-  items5 = [tmp14(Text, { variant: "text-sm/medium", color: "text-muted", children: str4 }), , ];
+  items5 = [tmp14(Text, { variant: "body-sm/medium", color: "text-muted", children: str4 }), , ];
   let obj4 = {
     title: "Reset scope",
     description: "Used by Reset and re-serve. Refresh Organic Serve ignores this.",

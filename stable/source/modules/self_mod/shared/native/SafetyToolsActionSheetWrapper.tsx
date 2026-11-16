@@ -1,16 +1,14 @@
-// Module ID: 11304
-// Function ID: 11305
+// Module ID: 11476
+// Function ID: 11477
 // Name: SafetyToolsActionSheetWrapper
-// Dependencies: [19, 4863, 21, 504, 5272, 11305, 2]
+// Dependencies: [19, 5019, 21, 504, 5420, 11477, 2]
 // Exports: default
 
-// Module 11304 (SafetyToolsActionSheetWrapper)
+// Module 11476 (SafetyToolsActionSheetWrapper)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
 import size from "module_2" /* 2 */;
-
-let BottomSheet;
 
 const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/self_mod/shared/native/SafetyToolsActionSheetWrapper.tsx");
@@ -39,7 +37,7 @@ export default function SafetyToolsActionSheetWrapper(channelId) {
   let tmp5 = null;
   const tmp = channelId;
   if (null != stateFromStores) {
-    BottomSheet = tmp(tmp2[4]).BottomSheet;
+    const BottomSheet = tmp(tmp2[4]).BottomSheet;
     tmp5 = <BottomSheet showGradient startExpanded header={null}>{children}</BottomSheet>;
   }
   return tmp5;

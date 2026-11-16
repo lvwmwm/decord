@@ -24,7 +24,7 @@ Object.defineProperty(obj, "experimental_LayoutConformance", { get: () => requir
 Object.defineProperty(obj, "Modal", { get: () => require("Wrapper").default, set: undefined });
 Object.defineProperty(obj, "unstable_NativeText", { get: () => require("NativeText").NativeText, set: undefined });
 Object.defineProperty(obj, "unstable_NativeView", { get: () => require("Commands").default, set: undefined });
-Object.defineProperty(obj, "Pressable", { get: () => require("Pressable").default, set: undefined });
+Object.defineProperty(obj, "Pressable", { get: () => require("module_414").default, set: undefined });
 Object.defineProperty(obj, "ProgressBarAndroid", {
   get: () => {
     const obj = require("warnOnce");

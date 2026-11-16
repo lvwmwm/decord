@@ -1,27 +1,27 @@
-// Module ID: 18457
-// Function ID: 18458
+// Module ID: 18849
+// Function ID: 18850
 // Name: YouBarName
-// Dependencies: [19, 17, 6714, 4863, 4946, 5761, 4956, 6570, 5679, 21, 5014, 575, 10772, 9295, 11414, 504, 11394, 10749, 5762, 10747, 10748, 18458, 10745, 10766, 5624, 5068, 2]
+// Dependencies: [19, 17, 6801, 5019, 5102, 5922, 5112, 6657, 5835, 21, 5170, 575, 10923, 9408, 11587, 504, 11567, 10900, 5923, 10898, 10899, 18850, 10896, 10917, 5783, 5226, 2]
 
-// Module 18457 (YouBarName)
+// Module 18849 (YouBarName)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import GuildTagDefault from "GuildTag" /* 9295 */;
-import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 10747 */;
-import useUserVoiceActivity from "useUserVoiceActivity" /* 10748 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10772 */;
-import ChevronSmallDownIcon from "ChevronSmallDownIcon" /* 11414 */;
-import shouldShowActivityStatusDefault from "shouldShowActivityStatus" /* 18458 */;
+import GuildTagDefault from "GuildTag" /* 9408 */;
+import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 10898 */;
+import useUserVoiceActivity from "useUserVoiceActivity" /* 10899 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10923 */;
+import ChevronSmallDownIcon from "ChevronSmallDownIcon" /* 11587 */;
+import shouldShowActivityStatusDefault from "shouldShowActivityStatus" /* 18850 */;
 import react from "react" /* 19 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6714 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import PermissionStore from "PermissionStore" /* 4946 */;
-import PresenceStore from "PresenceStore" /* 5761 */;
-import RelationshipStore from "RelationshipStore" /* 4956 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6570 */;
-import VoiceStateStore from "VoiceStateStore" /* 5679 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6801 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import PermissionStore from "PermissionStore" /* 5102 */;
+import PresenceStore from "PresenceStore" /* 5922 */;
+import RelationshipStore from "RelationshipStore" /* 5112 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6657 */;
+import VoiceStateStore from "VoiceStateStore" /* 5835 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let closure_12;
@@ -35,7 +35,7 @@ function Username(userId) {
   const tmp = closure_14();
   const obj = { style: tmp.usernameRow, children: items };
   items = [, , ];
-  const obj2 = { userId, userName: username, defaultColor: "mobile-text-heading-primary", variant: "heading-md/semibold", lineClamp: 1, ellipsizeMode: "tail", maxFontSizeMultiplier: 1.75, containerStyle: tmp.username, style: tmp.username };
+  const obj2 = { userId, userName: username, defaultColor: "mobile-text-heading-primary", variant: "heading-sm/semibold", lineClamp: 1, ellipsizeMode: "tail", maxFontSizeMultiplier: 1.75, containerStyle: tmp.username, style: tmp.username };
   items[0] = unpackModuleId(UsernameWithEffectsDefault, obj2);
   const obj3 = { userId, disabledTooltip: true, containerStyles: tmp.guildTag };
   items[1] = unpackModuleId(GuildTagDefault, obj3);
@@ -58,11 +58,11 @@ const memoResult = react.memo(function YouName(userId) {
   let obj = userId(504);
   let items = [SelfPresenceStore];
   const stateFromStores = obj.useStateFromStores(items, () => status.getStatus());
-  let obj2 = userId(11394);
+  let obj2 = userId(11567);
   const customStatusActivity = obj2.useCustomStatusActivity();
   let state;
-  const useGameMentionsAsPlainText = userId(10749).useGameMentionsAsPlainText;
-  userId(10749);
+  const useGameMentionsAsPlainText = userId(10900).useGameMentionsAsPlainText;
+  userId(10900);
   if (customStatusActivity != null) {
     state = customStatusActivity.state;
   }
@@ -86,7 +86,7 @@ const memoResult = react.memo(function YouName(userId) {
   let obj4 = { style: tmp.statusRow, children: tmp10Result };
   if (stateFromStores1) {
     let obj5 = { userId, emojiSize: 16, maxFontSizeMultiplier: 1.75 };
-    tmp10Result = tmp12(stateFromStores(10745), obj5);
+    tmp10Result = tmp12(stateFromStores(10896), obj5);
   } else {
     let emoji;
     const tmp13 = closure_13;
@@ -96,14 +96,14 @@ const memoResult = react.memo(function YouName(userId) {
     let tmp12Result2 = null;
     if (null != emoji) {
       const obj6 = { size: 16, style: tmp.statusEmoji, emoji: customStatusActivity.emoji };
-      tmp12Result2 = tmp12(stateFromStores(10766), obj6);
+      tmp12Result2 = tmp12(stateFromStores(10917), obj6);
     }
     const items3 = [tmp12Result2, ];
-    const obj7 = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, ellipsizeMode: "tail", maxFontSizeMultiplier: 1.75, style: tmp.statusText, children: humanizeStatusResult };
+    const obj7 = { variant: "body-xs/medium", color: "text-muted", lineClamp: 1, ellipsizeMode: "tail", maxFontSizeMultiplier: 1.75, style: tmp.statusText, children: humanizeStatusResult };
     humanizeStatusResult = gameMentionsAsPlainText;
-    const Text = tmp2(5624).Text;
+    const Text = tmp2(5783).Text;
     if (gameMentionsAsPlainText == null) {
-      const tmp2Result2 = userId(5068);
+      const tmp2Result2 = userId(5226);
       humanizeStatusResult = tmp2Result2.humanizeStatus(stateFromStores);
     }
     const obj8 = { children: items3 };

@@ -1,126 +1,233 @@
 // Module ID: 1781
 // Function ID: 1782
-// Dependencies: [41, 42, 93, 95, 98, 1722, 1720]
+// Dependencies: [41, 42, 1761, 1665]
 
 // Module 1781
-import BaseAnimationBuilder from "BaseAnimationBuilder" /* 1720 */;
+import _createClassDefault from "_createClass" /* 42 */;
+import _mod1665 from "module_1665" /* 1665 */;
+import _mod1761 from "module_1761" /* 1761 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
 
-let size;
-
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-let closure_6 = { code: "function pnpm_FadingTransitionTs1(values){const{delayFunction,delay,withSequence,withTiming,halfDuration,withDelay,callback}=this.__closure;return{initialValues:{opacity:1,originX:values.currentOriginX,originY:values.currentOriginY,width:values.currentWidth,height:values.currentHeight},animations:{opacity:delayFunction(delay,withSequence(withTiming(0,{duration:halfDuration}),withTiming(1,{duration:halfDuration}))),originX:withDelay(delay+halfDuration,withTiming(values.targetOriginX,{duration:0})),originY:withDelay(delay+halfDuration,withTiming(values.targetOriginY,{duration:0})),width:withDelay(delay+halfDuration,withTiming(values.targetWidth,{duration:0})),height:withDelay(delay+halfDuration,withTiming(values.targetHeight,{duration:0}))},callback:callback};}" };
-class FadingTransition {
-  constructor() {
-    let constructResult;
-    const self = this;
-    const items = [...arguments];
-    let closure_0;
-    const tmp = _classCallCheck(this, FadingTransition);
-    const items1 = [...items];
-    let obj = _getPrototypeOf(FadingTransition);
-    const tmp3 = c3;
-    const tmp2 = _getPrototypeOf;
-    if (_isNativeReflectConstruct()) {
-      const tmp5 = globalThis;
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, items1);
-    }
-    const tmp3Result = tmp3(self, constructResult);
-    closure_0 = tmp3Result;
-    tmp3Result.build = () => {
-      const delayFunction = closure_0.getDelayFunction();
-      const callbackV = closure_0.callbackV;
-      const delay = closure_0.getDelay();
-      let num = closure_0.durationV;
-      if (num == null) {
-        num = 500;
-      }
-      const result = num / 2;
-      const fn = function t(originX) {
-        let obj10;
-        let obj4;
-        let obj5;
-        let obj7;
-        let obj8;
-        let obj9;
-        let sum;
-        let sum1;
-        let sum2;
-        let sum3;
-        let withDelay;
-        let withDelay2;
-        let withDelay3;
-        let withDelay4;
-        let withSequence;
-        let withTimingResult;
-        const obj = { initialValues: { opacity: 1, originX: originX.currentOriginX, originY: originX.currentOriginY, width: originX.currentWidth, height: originX.currentHeight }, animations: size, callback: callbackV };
-        size = { opacity: delayFunction(delay, withSequence(withTimingResult, obj5.withTiming(1, obj4))), originX: withDelay(sum, obj7.withTiming(originX.targetOriginX, { duration: 0 })), originY: withDelay2(sum1, obj8.withTiming(originX.targetOriginY, { duration: 0 })), width: withDelay3(sum2, obj9.withTiming(originX.targetWidth, { duration: 0 })), height: withDelay4(sum3, obj10.withTiming(originX.targetHeight, { duration: 0 })) };
-        withSequence = closure_2_0(closure_2_1[5]).withSequence;
-        closure_2_0(closure_2_1[5]);
-        const obj2 = { duration: result };
-        const obj3 = closure_2_0(closure_2_1[5]);
-        obj4 = { duration: result };
-        withTimingResult = obj3.withTiming(0, obj2);
-        obj5 = closure_2_0(closure_2_1[5]);
-        withDelay = closure_2_0(closure_2_1[5]).withDelay;
-        sum = delay + result;
-        closure_2_0(closure_2_1[5]);
-        obj7 = closure_2_0(closure_2_1[5]);
-        withDelay2 = closure_2_0(closure_2_1[5]).withDelay;
-        sum1 = delay + result;
-        closure_2_0(closure_2_1[5]);
-        obj8 = closure_2_0(closure_2_1[5]);
-        withDelay3 = closure_2_0(closure_2_1[5]).withDelay;
-        sum2 = delay + result;
-        closure_2_0(closure_2_1[5]);
-        obj9 = closure_2_0(closure_2_1[5]);
-        withDelay4 = closure_2_0(closure_2_1[5]).withDelay;
-        sum3 = delay + result;
-        closure_2_0(closure_2_1[5]);
-        obj10 = closure_2_0(closure_2_1[5]);
-        return obj;
-      };
-      let obj = { delayFunction, delay, withSequence: FadingTransition(closure_2_1[5]).withSequence, withTiming: FadingTransition(closure_2_1[5]).withTiming, halfDuration: result, withDelay: FadingTransition(closure_2_1[5]).withDelay, callback: callbackV };
-      fn.__closure = obj;
-      fn.__workletHash = 3440645628303;
-      fn.__initData = __initData;
-      return fn;
-    };
-    return tmp3Result;
-  }
-}
-_inherits(FadingTransition, BaseAnimationBuilder.BaseAnimationBuilder);
-const entry = {
-  key: "createInstance",
-  value: function createInstance() {
-    const tmp = FadingTransition();
-    return tmp;
+const ERROR_MESSAGES = {
+  invalidPointsCount() {
+    return "Invalid linear easing points count. There should be at least two points";
+  },
+  invalidInputProgressValue(item) {
+    return "Invalid input progress " + item + " value, it should be a percentage between 0% and 100%";
   }
 };
-let items = [entry];
-const importDefaultResultResult = _createClass(FadingTransition, null, items);
-importDefaultResultResult.presetName = "FadingTransition";
-const FadingTransition_export = importDefaultResultResult;
+const obj2 = {
+  inputProgressLessThanPrecedingPoint(arg0, arg1) {
+    return "Linear easing point x value " + arg0 + " is less than value of the preceding control point " + arg1 + ". Value will be overridden by " + arg1;
+  }
+};
+function parsePercentage(arg0) {
 
-export { FadingTransition_export as FadingTransition };
+}
+function extrapolate(arg0, arg1, arg2) {
+
+}
+class LinearEasing {
+  constructor(arr) {
+    _classCallCheck(this, LinearEasing);
+    if (arr.length < 2) {
+      const _Error = Error;
+      const _HermesInternal = HermesInternal;
+      const self = this;
+      const self2 = this;
+      const error = new Error("[Reanimated] " + obj.invalidPointsCount());
+      throw error;
+    } else {
+      this.points = arr.map((item) => {
+        let first = item;
+        if (Array.isArray(item)) {
+          first = item;
+          if (1 === item.length) {
+            first = item[0];
+          }
+        }
+        return first;
+      });
+    }
+  }
+}
+const entry = {
+  key: "toString",
+  value: function toString() {
+    const easingName = LinearEasing.easingName;
+    const points = this.points;
+    let mapped = points.map((arr) => {
+      let combined = arr;
+      if (Array.isArray(arr)) {
+        const mapped = arr.map((item) => {
+          let combined = item;
+          if (typeof item === "string") {
+            const _HermesInternal = HermesInternal;
+            combined = "\"" + item + "\"";
+          }
+          return combined;
+        });
+        let _HermesInternal = HermesInternal;
+        combined = "[" + mapped.join(", ") + "]";
+      }
+      return combined;
+    });
+    return "" + easingName + "(" + mapped.join(", ") + ")";
+  }
+};
+const items = [
+  entry,
+  {
+    key: "normalize",
+    value: function normalize() {
+      let point;
+      let point2;
+      const canonicalizeResult = this.canonicalize();
+      if (canonicalizeResult[0].x > 0) {
+        [point, point2] = canonicalizeResult;
+        if (typeof extrapolate === "function") {
+          let sum;
+          if (point.x === point2.x) {
+            sum = 0 <= point.x ? point.y : point2.y;
+          } else {
+            sum = point.y + (point2.y - point.y) / (point2.x - point.x) * (0 - point.x);
+          }
+          const point1 = { x: 0, y: sum };
+          tmp5(point1);
+        } else {
+          throw new TypeError("Trying to call a non-function");
+        }
+      }
+      if (canonicalizeResult[canonicalizeResult.length - 1].x < 1) {
+        const point3 = canonicalizeResult[canonicalizeResult.length - 2];
+        const point4 = canonicalizeResult[canonicalizeResult.length - 1];
+        if (typeof extrapolate === "function") {
+          let sum1;
+          if (point3.x === point4.x) {
+            sum1 = 1 <= point3.x ? point3.y : point4.y;
+          } else {
+            sum1 = point3.y + (point4.y - point3.y) / (point4.x - point3.x) * (1 - point3.x);
+          }
+          const point5 = { x: 1, y: sum1 };
+          tmp7(point5);
+        } else {
+          throw new TypeError("Trying to call a non-function");
+        }
+      }
+      return { name: LinearEasing.easingName, points: canonicalizeResult };
+    }
+  },
+  {
+    key: "canonicalize",
+    value: function canonicalize() {
+      let sum;
+      const points = this.points;
+      const flatMapResult = points.flatMap((item) => {
+        let mapped;
+        if (Array.isArray(item)) {
+          const substr = item.slice(1);
+          mapped = substr.map(function(item) {
+            if (typeof parsePercentage === "function") {
+              let result = item;
+              if (typeof item !== "number") {
+                const PERCENTAGE_REGEX = _mod1761.PERCENTAGE_REGEX;
+                if (PERCENTAGE_REGEX.test(item)) {
+                  const _parseFloat = parseFloat;
+                  result = parseFloat(item) / 100;
+                }
+              }
+              if (undefined !== result) {
+                if (result >= 0) {
+                  if (result <= 1) {
+                    const point = { x: result, y: item[0] };
+                    return point;
+                  }
+                }
+              }
+              const _Error = Error;
+              const _HermesInternal = HermesInternal;
+              const self = this;
+              const self2 = this;
+              const error = new Error("[Reanimated] " + ERROR_MESSAGES.invalidInputProgressValue(item));
+              throw error;
+            } else {
+              throw new TypeError("Trying to call a non-function");
+            }
+          });
+        } else {
+          mapped = [{ y: item }];
+          const obj = { y: item };
+        }
+        return mapped;
+      });
+      if (undefined === flatMapResult[0].x) {
+        flatMapResult[0].x = 0;
+      }
+      if (undefined === flatMapResult[flatMapResult.length - 1].x) {
+        flatMapResult[flatMapResult.length - 1].x = 1;
+      }
+      let num2 = -Infinity;
+      let num3 = 0;
+      if (0 < flatMapResult.length) {
+        do {
+          let x = flatMapResult[num3].x;
+          let tmp3 = num2;
+          if (undefined !== x) {
+            let tmp4 = x;
+            if (x < num2) {
+              let logger = _mod1665.logger;
+              let warnResult = logger.warn(obj2.inputProgressLessThanPrecedingPoint(x, num2));
+              flatMapResult[num3].x = num2;
+              tmp4 = num2;
+            }
+            tmp3 = tmp4;
+          }
+          num3 = num3 + 1;
+          num2 = tmp3;
+        } while (num3 < flatMapResult.length);
+      }
+      let x2 = flatMapResult[0].x;
+      let num4 = 1;
+      let num5 = 0;
+      if (1 < flatMapResult.length) {
+        do {
+          let tmp12;
+          let num6;
+          let x3 = flatMapResult[num4].x;
+          if (undefined !== x3) {
+            tmp12 = x3;
+            num6 = 0;
+            if (0 < num5) {
+              let num7 = 0;
+              num6 = 0;
+              tmp12 = x3;
+              if (0 < num5) {
+                do {
+                  sum = num7 + 1;
+                  flatMapResult[num4 - num5 + num7].x = x2 + tmp13 * sum / tmp14;
+                  num6 = 0;
+                  tmp12 = x3;
+                  num7 = sum;
+                } while (sum < num5);
+              }
+            }
+          } else {
+            num6 = num5 + 1;
+            tmp12 = x2;
+          }
+          num4 = num4 + 1;
+          num5 = num6;
+          x2 = tmp12;
+        } while (num4 < flatMapResult.length);
+      }
+      return flatMapResult;
+    }
+  }
+];
+let tmp2 = _createClassDefault(LinearEasing, items);
+tmp2.easingName = "linear";
+const LinearEasing_export = tmp2;
+
+export { ERROR_MESSAGES };
+export const WARN_MESSAGES = obj2;
+export { LinearEasing_export as LinearEasing };

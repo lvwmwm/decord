@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/intl", scales: [1], hash: "7422eb427d55bb21283f58c1e4179902", name: "Mana.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images", width: 184, height: 184, scales: [1], hash: "0910d1721e6366e2c8c6c1e76a322e5a", name: "no-app-icon", type: "png" });

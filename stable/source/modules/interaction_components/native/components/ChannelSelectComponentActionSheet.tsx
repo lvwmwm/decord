@@ -1,16 +1,16 @@
-// Module ID: 13253
-// Function ID: 13254
+// Module ID: 13518
+// Function ID: 13519
 // Name: ChannelSelectComponentActionSheet
-// Dependencies: [19, 4863, 4885, 21, 8704, 13252, 12156, 8706, 1187, 9085, 2]
+// Dependencies: [19, 5019, 5041, 21, 8808, 13517, 12358, 8810, 1187, 9198, 2]
 // Exports: default
 
-// Module 13253 (ChannelSelectComponentActionSheet)
+// Module 13518 (ChannelSelectComponentActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import SearchableSelectActionComponentUtils from "SearchableSelectActionComponentUtils" /* 8704 */;
-import NativeSearchableSelectActionComponentUtils from "NativeSearchableSelectActionComponentUtils" /* 8706 */;
+import SearchableSelectActionComponentUtils from "SearchableSelectActionComponentUtils" /* 8808 */;
+import NativeSearchableSelectActionComponentUtils from "NativeSearchableSelectActionComponentUtils" /* 8810 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import GuildStore from "GuildStore" /* 4885 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import GuildStore from "GuildStore" /* 5041 */;
 import size from "module_2" /* 2 */;
 
 let channel;

@@ -1,15 +1,20 @@
-// Module ID: 11364
-// Function ID: 11365
+// Module ID: 11536
+// Function ID: 11537
 // Name: GameOrganizationInviteConstants
 // Dependencies: [2]
 
-// Module 11364 (GameOrganizationInviteConstants)
+// Module 11536 (GameOrganizationInviteConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_organization_invites/GameOrganizationInviteConstants.tsx");
 
 export const GAME_ORGANIZATION_JOIN_ACTION_SHEET_KEY = "GameOrganizationJoinActionSheet";
 export const GAME_ORGANIZATION_INVITE_PICKER_ACTION_SHEET_KEY = "GameOrganizationInvitePickerActionSheet";
+export const GAME_ORGANIZATION_CANT_JOIN_ACTION_SHEET_KEY = "GameOrganizationCantJoinActionSheet";
+export const GAME_ORGANIZATION_JOIN_MODAL_KEY = "GameOrganizationJoinModal";
+export const GAME_ORGANIZATION_ACCOUNT_LINK_MODAL_KEY = "GameOrganizationAccountLinkModal";
+export const GAME_ORGANIZATION_ERROR_MODAL_KEY = "GameOrganizationErrorModal";
+export const GameOrganizationCantJoinReasons = { NO_CHARACTERS: "NO_CHARACTERS", ERROR: "ERROR" };
 export const GAME_ORGANIZATION_INVITE_EXPIRY_DAYS = 7;
 export const GameOrganizationInviteStates = { RESOLVING: "RESOLVING", RESOLVED: "RESOLVED", ERROR: "ERROR" };
 export const GameOrganizationDisplayNouns = { GUILD: "GUILD" };

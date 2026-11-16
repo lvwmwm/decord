@@ -1,20 +1,28 @@
 // Module ID: 16249
 // Function ID: 16250
-// Dependencies: []
-// Exports: default
+// Dependencies: [16241]
 
 // Module 16249
+import _mod16241 from "module_16241" /* 16241 */;
 
-export default () => (arg0) => {
-  let closure_0 = arg0;
-  let obj = {
-    features: {
-      apiResponse(request, response, tmp4Result) {
-        const obj = { request, response, duration: tmp4Result };
-        const tmp = response && response.status && typeof response.status === "number" && response.status >= 200 && response.status <= 299;
-        closure_0.send("api.response", obj, !tmp);
-      }
+
+export default function(version, pre, major2, arg3, arg4) {
+  let tmp = arg4;
+  let tmp2 = arg3;
+  if (typeof major2 === "string") {
+    tmp = arg3;
+    tmp2 = major2;
+  }
+  try {
+    const tmp7 = _mod16241;
+    if (version instanceof _mod16241) {
+      version = version.version;
     }
-  };
-  return obj;
+    const self = this;
+    const self2 = this;
+    const tmp72 = new tmp7(version, major2);
+    return tmp72.inc(pre, tmp2, tmp).version;
+  } catch (err) {
+    return null;
+  }
 };

@@ -1,26 +1,26 @@
-// Module ID: 18610
-// Function ID: 18611
+// Module ID: 19006
+// Function ID: 19007
 // Name: GuildRoleSubscriptionsOverview
-// Dependencies: [19, 6568, 5049, 4885, 21, 5624, 18611, 1113, 9910, 17199, 18612, 563, 7425, 6834, 5959, 1099, 2]
+// Dependencies: [19, 6655, 5207, 5041, 21, 5783, 19007, 1113, 10065, 17559, 19008, 563, 7522, 6922, 6123, 1099, 2]
 // Exports: default
 
-// Module 18610 (GuildRoleSubscriptionsOverview)
+// Module 19006 (GuildRoleSubscriptionsOverview)
 import Fragment from "Fragment" /* 21 */;
 import router_utils from "router_utils" /* 1099 */;
 import intl4 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5959 */;
-import NativePaymentHooksDefault from "NativePaymentHooks" /* 9910 */;
-import GroupListingsFetchContext from "GroupListingsFetchContext" /* 17199 */;
-import UnavailableNoticeDefault from "UnavailableNotice" /* 18611 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6123 */;
+import NativePaymentHooksDefault from "NativePaymentHooks" /* 10065 */;
+import GroupListingsFetchContext from "GroupListingsFetchContext" /* 17559 */;
+import UnavailableNoticeDefault from "UnavailableNotice" /* 19007 */;
 import react_mod from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6568 */;
-import DefaultRouteStore from "DefaultRouteStore" /* 5049 */;
-import GuildStore from "GuildStore" /* 4885 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6655 */;
+import DefaultRouteStore from "DefaultRouteStore" /* 5207 */;
+import GuildStore from "GuildStore" /* 5041 */;
 import size from "module_2" /* 2 */;
 
 function serverNameHook(children) {
-  return jsx(Text_Text.Text, { variant: "heading-lg/extrabold", color: "interactive-text-active", children });
+  return jsx(Text_Text.Text, { variant: "heading-lg/semibold", color: "interactive-text-active", children });
 }
 class RoleSubscriptionsUnavailableNotice {
   constructor(serverName) {

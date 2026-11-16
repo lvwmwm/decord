@@ -1,11 +1,11 @@
-// Module ID: 1887
-// Function ID: 1888
+// Module ID: 2016
+// Function ID: 2017
 // Name: KeyboardStateDebugging
-// Dependencies: [3, 1376, 2]
+// Dependencies: [3, 1357, 2]
 
-// Module 1887 (KeyboardStateDebugging)
+// Module 2016 (KeyboardStateDebugging)
 import LoggerDefault from "Logger" /* 3 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1376 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1357 */;
 import size from "module_2" /* 2 */;
 
 const logger = new LoggerDefault("KeyboardStateDebugging");

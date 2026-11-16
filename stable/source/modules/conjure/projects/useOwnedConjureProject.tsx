@@ -1,12 +1,12 @@
-// Module ID: 14177
-// Function ID: 14178
+// Module ID: 14449
+// Function ID: 14450
 // Name: useOwnedConjureProject
-// Dependencies: [6844, 12358, 504, 2]
+// Dependencies: [6932, 12577, 504, 2]
 // Exports: default
 
-// Module 14177 (useOwnedConjureProject)
-import useIsOwnedConjureApplicationDefault from "useIsOwnedConjureApplication" /* 12358 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6844 */;
+// Module 14449 (useOwnedConjureProject)
+import useIsOwnedConjureApplicationDefault from "useIsOwnedConjureApplication" /* 12577 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6932 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,15 +1,15 @@
-// Module ID: 2018
-// Function ID: 2019
+// Module ID: 2142
+// Function ID: 2143
 // Name: Constants
-// Dependencies: [1072, 1992, 2019, 2020, 2, 2021]
+// Dependencies: [1072, 2116, 2143, 2144, 2, 2145]
 // Exports: getAppIntentScheme
 
-// Module 2018 (Constants)
+// Module 2142 (Constants)
 import Constants from "Constants" /* 1072 */;
-import Server from "Server" /* 1992 */;
-import EmbeddedActivityOrientationLockState from "EmbeddedActivityOrientationLockState" /* 2019 */;
-import EmbeddedActivitySupportedPlatforms from "EmbeddedActivitySupportedPlatforms" /* 2020 */;
-import ActivityApplications from "ActivityApplications" /* 2021 */;
+import Server from "Server" /* 2116 */;
+import EmbeddedActivityOrientationLockState from "EmbeddedActivityOrientationLockState" /* 2143 */;
+import EmbeddedActivitySupportedPlatforms from "EmbeddedActivitySupportedPlatforms" /* 2144 */;
+import ActivityApplications from "ActivityApplications" /* 2145 */;
 import size from "module_2" /* 2 */;
 
 let items3;

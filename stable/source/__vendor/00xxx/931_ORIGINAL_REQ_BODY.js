@@ -9,8 +9,8 @@ import _mod681 from "module_681" /* 681 */;
 import _mod897 from "module_897" /* 897 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 
-function serializeFormData(size) {
-  const str = new URLSearchParams(size);
+function serializeFormData(arg0) {
+  const str = new URLSearchParams(arg0);
   return str.toString();
 }
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });

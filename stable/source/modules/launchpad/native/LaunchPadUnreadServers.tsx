@@ -1,22 +1,22 @@
-// Module ID: 19068
-// Function ID: 19069
+// Module ID: 19482
+// Function ID: 19483
 // Name: LaunchPadUnreadServers
-// Dependencies: [19, 17, 4863, 6842, 1383, 1072, 21, 5014, 575, 7522, 19069, 504, 1187, 10799, 5717, 14886, 7485, 5756, 9817, 18159, 1491, 19074, 1113, 7240, 2]
+// Dependencies: [19, 17, 5019, 6930, 1385, 1072, 21, 5170, 575, 7627, 19483, 504, 1187, 10950, 5874, 15150, 7582, 5917, 9940, 18536, 1493, 19488, 1113, 7337, 2]
 
-// Module 19068 (LaunchPadUnreadServers)
+// Module 19482 (LaunchPadUnreadServers)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import transitionToChannel from "transitionToChannel" /* 5756 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7485 */;
-import transitionToGuild from "transitionToGuild" /* 7522 */;
-import isGuildSelectableDefault from "isGuildSelectable" /* 19074 */;
+import transitionToChannel from "transitionToChannel" /* 5917 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7582 */;
+import transitionToGuild from "transitionToGuild" /* 7627 */;
+import isGuildSelectableDefault from "isGuildSelectable" /* 19488 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import ReadStateStore from "ReadStateStore" /* 6842 */;
-import UserStore from "UserStore" /* 1383 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import ReadStateStore from "ReadStateStore" /* 6930 */;
+import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;
@@ -55,7 +55,7 @@ let closure_13 = react.memo(function GuildItemInner(guildId) {
   const callback = react.useCallback(() => {
     onGuildSelect(guildId);
   }, items);
-  let obj = { style: tmp.guildWrapper, children: closure_10(onGuildSelect(19069), obj2) };
+  let obj = { style: tmp.guildWrapper, children: closure_10(onGuildSelect(19483), obj2) };
   const callback1 = react.useCallback(() => {
     const obj = transitionToGuild;
     obj.transitionToGuild(guildId);

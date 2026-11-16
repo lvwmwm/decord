@@ -1,21 +1,21 @@
-// Module ID: 8873
-// Function ID: 8874
+// Module ID: 8980
+// Function ID: 8981
 // Name: common/Video
-// Dependencies: [32, 19, 17, 21, 5014, 575, 8874, 5080, 8833, 7207, 5717, 1113, 2]
+// Dependencies: [32, 19, 17, 21, 5170, 575, 8981, 5231, 8940, 7303, 5874, 1113, 2]
 // Exports: createVideoControls
 
-// Module 8873 (common/Video)
+// Module 8980 (common/Video)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import native from "native" /* 5080 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7207 */;
-import openMediaModal2 from "openMediaModal" /* 8833 */;
+import native from "native" /* 5231 */;
+import FastImageDefault from "FastImage" /* 5874 */;
+import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7303 */;
+import openMediaModal2 from "openMediaModal" /* 8940 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_0;
@@ -75,7 +75,7 @@ class VideoComponent {
     }
     closure_1 = undefined;
     ({ httpEngine, useTextureView } = paused);
-    const _default = pauseWhileAppInactive(8874).default;
+    const _default = pauseWhileAppInactive(8981).default;
     [first, closure_1] = react.useState("active" === currentState.currentState);
     const items = [pauseWhileAppInactive];
     const effect = react.useEffect(() => {

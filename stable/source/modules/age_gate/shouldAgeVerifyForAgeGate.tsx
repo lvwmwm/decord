@@ -1,22 +1,22 @@
-// Module ID: 6725
-// Function ID: 6726
+// Module ID: 6812
+// Function ID: 6813
 // Name: shouldAgeVerifyForAgeGate
-// Dependencies: [6726, 5693, 6731, 2]
+// Dependencies: [6813, 5849, 6818, 2]
 // Exports: shouldAgeVerifyForAgeGate, useShouldAgeVerifyForAgeGate
 
-// Module 6725 (shouldAgeVerifyForAgeGate)
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5693 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6726 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 6731 */;
+// Module 6812 (shouldAgeVerifyForAgeGate)
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5849 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6813 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 6818 */;
 import size from "module_2" /* 2 */;
 
-let result = size.fileFinishedImporting("modules/age_gate/shouldAgeVerifyForAgeGate.tsx");
+const result = size.fileFinishedImporting("modules/age_gate/shouldAgeVerifyForAgeGate.tsx");
 
 export function shouldAgeVerifyForAgeGate() {
   const obj = AgeVerificationUtils;
-  const result = obj.shouldShowTiggerPawtect();
+  const needsAgeVerificationResult = obj.needsAgeVerification();
   const obj2 = RegionalFeatureConfigUtils;
-  const tmp2 = obj2.isFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.AGE_GATED_SPACES) && result;
+  const tmp2 = obj2.isFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.AGE_GATED_SPACES) && needsAgeVerificationResult;
   return tmp2;
 }
 export function useShouldAgeVerifyForAgeGate() {
@@ -24,7 +24,7 @@ export function useShouldAgeVerifyForAgeGate() {
   let isFeatureAgeGated = obj.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.AGE_GATED_SPACES);
   const obj2 = AgeVerificationUtils;
   if (isFeatureAgeGated) {
-    isFeatureAgeGated = obj2.useShouldShowTiggerPawtect();
+    isFeatureAgeGated = obj2.useNeedsAgeVerification();
   }
   return isFeatureAgeGated;
 }

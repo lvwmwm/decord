@@ -1,20 +1,20 @@
-// Module ID: 19748
-// Function ID: 19749
+// Module ID: 20199
+// Function ID: 20200
 // Name: GuildSettingsModalStickerInfoActionSheet
-// Dependencies: [5, 32, 19, 17, 6837, 21, 504, 10267, 5712, 1113, 5272, 7321, 575, 7060, 6975, 10232, 19741, 5738, 2]
+// Dependencies: [5, 32, 19, 17, 6925, 21, 504, 10418, 5869, 1113, 5420, 7415, 575, 7159, 7071, 10383, 20192, 5894, 2]
 
-// Module 19748 (GuildSettingsModalStickerInfoActionSheet)
-import showGuildSettingsStickerCreateModalDefault from "showGuildSettingsStickerCreateModal" /* 19741 */;
+// Module 20199 (GuildSettingsModalStickerInfoActionSheet)
+import showGuildSettingsStickerCreateModalDefault from "showGuildSettingsStickerCreateModal" /* 20192 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import StickersStore from "StickersStore" /* 6837 */;
+import StickersStore from "StickersStore" /* 6925 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let BottomSheet, c1, closure_2;
+let c1, closure_2;
 
 let c10;
 let c9;
@@ -148,7 +148,7 @@ const memoResult = react.memo(function GuildSettingsModalStickerInfoActionSheet(
   let tmp8Result2 = null;
   if (null != stateFromStores) {
     let obj2 = { header: closure_9(tmp(tmp2[11]).BottomSheetTitleHeader, obj4), children: tmp8(tmp9, obj5) };
-    BottomSheet = tmp(tmp2[10]).BottomSheet;
+    const BottomSheet = tmp(tmp2[10]).BottomSheet;
     obj4 = { title: null, subtitle: null };
     ({ name: obj3.title, description: obj3.subtitle } = stateFromStores);
     obj5 = { style: obj6, children: tmp11(TableRowGroup, obj15) };

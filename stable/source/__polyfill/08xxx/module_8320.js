@@ -1,287 +1,614 @@
 // Module ID: 8320
 // Function ID: 8321
-// Dependencies: [8279, 8321]
+// Dependencies: []
 
 // Module 8320
-import _mod8279 from "module_8279" /* 8279 */;
-import iccTags from "iccTags" /* 8321 */;
-
-function parseTags(buffer) {
-  let length;
-  buffer = buffer.buffer;
-  if (buffer.byteLength !== buffer.getUint32()) {
-    const _Error3 = Error;
-    const self9 = this;
-    const self10 = this;
-    const error = new Error("ICC profile length not matching");
-    throw error;
-  } else if (buffer.byteLength < c2) {
-    const _Error2 = Error;
-    const self7 = this;
-    const self8 = this;
-    const error1 = new Error("ICC profile too short");
-    throw error1;
-  } else {
-    let num;
-    const obj2 = {};
-    const _Object = Object;
-    const keys = Object.keys(iccTags.iccProfile);
-    for (let num = 0; num < keys.length; num = num + 1) {
-      let tmp = keys[num];
-      let iter = iccTags.iccProfile[tmp];
-      let _parseInt = parseInt;
-      let valueResult = iter.value(buffer, parseInt(tmp, 10));
-      let descriptionResult = valueResult;
-      if (iter.description) {
-        descriptionResult = iter.description(valueResult);
-      }
-      let obj = { value: valueResult, description: descriptionResult };
-      obj2[iter.name] = obj;
-    }
-    const _String = String;
-    const _Uint8Array = Uint8Array;
-    const self = this;
-    const self2 = this;
-    const apply = fromCharCode.apply;
-    const uint8Array = new Uint8Array(buffer.slice(36, 40));
-    if (apply(null, uint8Array) !== acsp) {
-      const _Error = Error;
-      const self5 = this;
-      const self6 = this;
-      const error2 = new Error("ICC profile: missing signature");
-      throw error2;
-    } else {
-      let num6 = 132;
-      if (buffer.length < 132) {
-        return obj2;
-      } else {
-        const uint32 = buffer.getUint32(128);
-        let num7 = 0;
-        if (0 < uint32) {
-          while (buffer.length >= num6 + c8) {
-            let tmp45 = require;
-            let obj17 = _mod8279;
-            let stringFromDataView = obj17.getStringFromDataView(buffer, num6, 4);
-            let uint321 = buffer.getUint32(num6 + 4);
-            let uint322 = buffer.getUint32(num6 + 8);
-            if (uint321 > buffer.length) {
-              return obj2;
-            } else {
-              let tmp45Result = tmp45(8279);
-              let stringFromDataView1 = tmp45Result.getStringFromDataView(buffer, uint321, 4);
-              if (stringFromDataView1 === desc) {
-                let uint323 = buffer.getUint32(uint321 + 8);
-                if (uint323 > uint322) {
-                  return obj2;
-                } else {
-                  let _String4 = String;
-                  let fromCharCode4 = String.fromCharCode;
-                  let _Uint8Array4 = Uint8Array;
-                  let self13 = this;
-                  let self14 = this;
-                  let apply4 = fromCharCode4.apply;
-                  let uint8Array1 = new Uint8Array(buffer.slice(uint321 + 12, uint321 + uint323 + 11));
-                  let apply4Result = apply4(null, uint8Array1);
-                  if (tmp45(8321).iccTags[stringFromDataView]) {
-                    let obj3 = { value: apply4Result, description: apply4Result };
-                    obj2[tmp45(8321).iccTags[stringFromDataView].name] = obj3;
-                  } else {
-                    let obj4 = { value: apply4Result, description: apply4Result };
-                    obj2[stringFromDataView] = obj4;
-                  }
-                }
-              } else if (stringFromDataView1 === mluc) {
-                let uint324 = buffer.getUint32(uint321 + 8);
-                let sum = uint321 + 16;
-                let items = [];
-                let num4 = 0;
-                let tmp21 = tmp45;
-                if (0 < uint324) {
-                  do {
-                    let obj6 = _mod8279;
-                    let stringFromDataView2 = obj6.getStringFromDataView(buffer, sum, 2);
-                    let obj7 = _mod8279;
-                    let stringFromDataView3 = obj7.getStringFromDataView(buffer, sum + 2, 2);
-                    let uint325 = buffer.getUint32(sum + 4);
-                    let uint326 = buffer.getUint32(sum + 8);
-                    let obj8 = _mod8279;
-                    let obj5 = { languageCode: stringFromDataView2, countryCode: stringFromDataView3, text: obj8.getUnicodeStringFromDataView(buffer, uint321 + uint326, uint325) };
-                    let arr = items.push(obj5);
-                    sum = sum + tmp18;
-                    num4 = num4 + 1;
-                    tmp21 = require;
-                  } while (num4 < uint324);
-                }
-                if (1 === uint324) {
-                  metroRequire = items[0].text;
-                  if (tmp21(8321).iccTags[stringFromDataView]) {
-                    let obj9 = { value: metroRequire, description: metroRequire };
-                    obj2[tmp21(8321).iccTags[stringFromDataView].name] = obj9;
-                  } else {
-                    let obj10 = { value: metroRequire, description: metroRequire };
-                    obj2[stringFromDataView] = obj10;
-                  }
-                } else {
-                  let obj11 = {};
-                  let num5 = 0;
-                  if (0 < items.length) {
-                    do {
-                      let _HermesInternal = HermesInternal;
-                      obj11["" + items[num5].languageCode + "-" + items[num5].countryCode] = items[num5].text;
-                      num5 = num5 + 1;
-                      length = items.length;
-                    } while (num5 < length);
-                  }
-                  let tmp29 = require;
-                  if (iccTags.iccTags[stringFromDataView]) {
-                    let obj12 = { value: obj11, description: obj11 };
-                    obj2[tmp29(8321).iccTags[stringFromDataView].name] = obj12;
-                  } else {
-                    let obj13 = { value: obj11, description: obj11 };
-                    obj2[stringFromDataView] = obj13;
-                  }
-                }
-              } else if (stringFromDataView1 === metroRequire) {
-                let _String2 = String;
-                let fromCharCode2 = String.fromCharCode;
-                let _Uint8Array2 = Uint8Array;
-                let self3 = this;
-                let self4 = this;
-                let apply2 = fromCharCode2.apply;
-                let uint8Array2 = new Uint8Array(buffer.slice(uint321 + 8, uint321 + uint322 - 7));
-                let apply2Result = apply2(null, uint8Array2);
-                if (tmp45(8321).iccTags[stringFromDataView]) {
-                  let obj14 = { value: apply2Result, description: apply2Result };
-                  obj2[tmp45(8321).iccTags[stringFromDataView].name] = obj14;
-                } else {
-                  let obj15 = { value: apply2Result, description: apply2Result };
-                  obj2[stringFromDataView] = obj15;
-                }
-              } else if (stringFromDataView1 === c7) {
-                let _String3 = String;
-                let fromCharCode3 = String.fromCharCode;
-                let _Uint8Array3 = Uint8Array;
-                let self11 = this;
-                let self12 = this;
-                let apply3 = fromCharCode3.apply;
-                let uint8Array3 = new Uint8Array(buffer.slice(uint321 + 8, uint321 + 12));
-                let apply3Result = apply3(null, uint8Array3);
-                if (tmp45(8321).iccTags[stringFromDataView]) {
-                  let obj16 = { value: apply3Result, description: apply3Result };
-                  obj2[tmp45(8321).iccTags[stringFromDataView].name] = obj16;
-                } else {
-                  let obj18 = { value: apply3Result, description: apply3Result };
-                  obj2[stringFromDataView] = obj18;
-                }
-              }
-              num6 = num6 + 12;
-              num7 = num7 + 1;
-            }
-          }
-          return obj2;
-        }
-        return obj2;
-      }
-    }
-  }
-}
-let obj = {
-  read(buffer, arr, arg2) {
-    function readIcc(buffer, arr) {
+const obj = exports;
+const fn = function() {
+  let tmp;
+  let self = this;
+  const humanize = {
+    noConflict: function() {
+      self.humanize = humanize;
+      return this;
+    },
+    pad: (arg0, arg1, str, arg3) => {
       let length;
-      let sum;
-      function getBuffer(buffer) {
-        if (Array.isArray(buffer)) {
-          const _DataView = DataView;
-          const _Uint8Array = Uint8Array;
-          const self = this;
-          const self2 = this;
-          const dataView = new DataView(Uint8Array.from(buffer).buffer);
-          return dataView.buffer;
-        } else {
-          return buffer.buffer;
+      let length2;
+      let tmp2;
+      const text = `${arg0}`;
+      str = " ";
+      if (str) {
+        if (str.length > 1) {
+          str = str.charAt(0);
         }
       }
-      let closure_0 = arr;
-      try {
-        let _Uint8Array = Uint8Array;
-        let self = this;
-        let self2 = this;
-        let uint8Array = new Uint8Array(arr.reduce((acc, item) => acc + item.length, 0));
-        let closure_2 = 0;
-        let closure_3 = getBuffer(buffer);
-        function _loop(arg0) {
-          closure_0 = arg0;
-          const found = closure_0.find((chunkNumber) => chunkNumber.chunkNumber === closure_0);
-          if (found) {
-            const _Uint8Array = Uint8Array;
-            const self3 = this;
-            const self4 = this;
-            uint8Array = new Uint8Array(closure_3.slice(found.offset, found.offset + found.length));
-            const result = uint8Array.set(uint8Array, closure_2);
-            closure_2 = closure_2 + uint8Array.length;
+      let str2 = "right";
+      if (undefined === arg3) {
+        str2 = "left";
+      }
+      if ("right" === str2) {
+        let tmp3 = text;
+        tmp2 = text;
+        if (text.length < arg1) {
+          do {
+            let sum = tmp3 + str;
+            tmp3 = sum;
+            tmp2 = sum;
+            length2 = sum.length;
+          } while (length2 < arg1);
+        }
+      } else {
+        let tmp = text;
+        tmp2 = text;
+        if (text.length < arg1) {
+          do {
+            let sum1 = str + tmp;
+            tmp = sum1;
+            tmp2 = sum1;
+            length = sum1.length;
+          } while (length < arg1);
+        }
+      }
+      return tmp2;
+    },
+    time: () => {
+      const date = new Date();
+      return date.getTime() / 1000;
+    },
+    date: function(str, arg1) {
+      if (undefined === arg1) {
+        let tmp4 = globalThis;
+        const _Date3 = Date;
+        const self5 = this;
+        const self6 = this;
+        let date = new Date();
+      } else {
+        let tmp = globalThis;
+        const _Date = Date;
+        const _Date2 = Date;
+        if (arg1 instanceof Date) {
+          const self3 = this;
+          const self4 = this;
+          date = new _Date2(arg1);
+        } else {
+          let num = 1000;
+          self = this;
+          const self2 = this;
+          date = new _Date2(1000 * arg1);
+        }
+      }
+      const tmp5 = /\\?([a-z])/gi;
+      const re1 = tmp5;
+      function formatChrCb(arg0, arg1) {
+        let tmp = arg1;
+        const tmp2 = closure_5;
+        if (closure_5[arg0]) {
+          tmp = tmp2[arg0]();
+        }
+        return tmp;
+      }
+      closure_3 = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+      closure_4 = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+      let closure_5 = {
+        d() {
+          return obj.pad(closure_5.j(), 2, "0");
+        },
+        D() {
+          const lResult = closure_5.l();
+          return lResult.slice(0, 3);
+        },
+        j() {
+          return date.getDate();
+        },
+        l() {
+          return closure_3[closure_5.w(closure_5)];
+        },
+        N() {
+          const tmp = closure_5.w() || 7;
+          return tmp;
+        },
+        S() {
+          let str;
+          const jResult = closure_5.j();
+          if (jResult <= 4) {
+            str = { 1: "st", 2: "nd", 3: "rd" }[jResult % 10] || "th";
           } else {
-            const _Error = Error;
-            const _HermesInternal = HermesInternal;
-            const self = this;
-            const self2 = this;
-            const error = new Error("ICC chunk " + arg0 + " not found");
-            throw error;
+            str = "th";
+          }
+          return str;
+        },
+        w() {
+          return date.getDay();
+        },
+        z() {
+          let tmp2;
+          if (closure_5.L()) {
+            tmp2 = closure_4[obj.n(obj)];
+          } else {
+            tmp2 = closure_3[obj.n(obj)];
+          }
+          return tmp2 + closure_5.j() - 1;
+        },
+        W() {
+          const zResult = closure_5.z();
+          const sum = zResult - closure_5.N() + 1.5;
+          const pad = obj.pad;
+          let num = 0;
+          const sum1 = 1 + Math.floor(Math.abs(sum) / 7);
+          if (3.5 < sum % 7) {
+            num = 1;
+          }
+          return pad(sum1 + num, 2, "0");
+        },
+        F() {
+          return closure_4[date.getMonth(date)];
+        },
+        m() {
+          return obj.pad(closure_5.n(), 2, "0");
+        },
+        M() {
+          const FResult = closure_5.F();
+          return FResult.slice(0, 3);
+        },
+        n() {
+          return date.getMonth() + 1;
+        },
+        t() {
+          const YResult = closure_5.Y();
+          date = new Date(YResult, closure_5.n(), 0);
+          return date.getDate();
+        },
+        L() {
+          let num = 0;
+          date = new Date(closure_5.Y(), 1, 29);
+          if (1 === date.getMonth()) {
+            num = 1;
+          }
+          return num;
+        },
+        o() {
+          let num2;
+          const nResult = closure_5.n();
+          const WResult = closure_5.W();
+          const YResult = closure_5.Y();
+          if (12 !== nResult) {
+            num2 = 1 === nResult && WResult > 9;
+            const tmp4 = 1 === nResult && WResult > 9;
+          } else {
+            num2 = -1;
+          }
+          return YResult + num2;
+        },
+        Y() {
+          return date.getFullYear();
+        },
+        y() {
+          const StringResult = String(closure_5.Y());
+          return StringResult.slice(-2);
+        },
+        a() {
+          let str = "am";
+          if (date.getHours() > 11) {
+            str = "pm";
+          }
+          return str;
+        },
+        A() {
+          const str = closure_5.a();
+          return str.toUpperCase();
+        },
+        B() {
+          let rounded;
+          const result = date.getTime() / 1000;
+          const sum = result % 86400 + 3600;
+          let sum1 = sum;
+          if (sum < 0) {
+            sum1 = sum + 86400;
+          }
+          const result1 = sum1 / 86.4 % 1000;
+          if (result < 0) {
+            const _Math2 = Math;
+            rounded = Math.ceil(result1);
+          } else {
+            const _Math = Math;
+            rounded = Math.floor(result1);
+          }
+          return rounded;
+        },
+        g() {
+          const tmp = closure_5.G() % 12 || 12;
+          return tmp;
+        },
+        G() {
+          return date.getHours();
+        },
+        h() {
+          return obj.pad(closure_5.g(), 2, "0");
+        },
+        H() {
+          return obj.pad(closure_5.G(), 2, "0");
+        },
+        i() {
+          return obj.pad(date.getMinutes(), 2, "0");
+        },
+        s() {
+          return obj.pad(date.getSeconds(), 2, "0");
+        },
+        u() {
+          return obj.pad(1000 * date.getMilliseconds(), 6, "0");
+        },
+        O() {
+          const timezoneOffset = date.getTimezoneOffset();
+          const absolute = Math.abs(timezoneOffset);
+          let str = "+";
+          if (timezoneOffset > 0) {
+            str = "-";
+          }
+          return str + obj.pad(100 * Math.floor(absolute / 60) + absolute % 60, 4, "0");
+        },
+        P() {
+          const str = closure_5.O();
+          const text = `${str.substr(0, 3)}:`;
+          return `${str.substr(0, 3)}:` + str.substr(3, 2);
+        },
+        Z() {
+          return 60 * -date.getTimezoneOffset();
+        },
+        c() {
+          return "Y-m-d\\TH:i:sP".replace(re1, formatChrCb);
+        },
+        r() {
+          return "D, d M Y H:i:s O".replace(re1, formatChrCb);
+        },
+        U() {
+          const tmp = date.getTime() / 1000 || 0;
+          return tmp;
+        }
+      };
+      return str.replace(tmp5, formatChrCb);
+    },
+    numberFormat: (arg0, arg1, arg2, arg3) => {
+      let num = 2;
+      if (!isNaN(arg1)) {
+        const _Math = Math;
+        num = Math.abs(arg1);
+      }
+      let str = ".";
+      if (undefined !== arg2) {
+        str = arg2;
+      }
+      let str2 = ",";
+      if (undefined !== arg3) {
+        str2 = arg3;
+      }
+      let str3 = "";
+      let str4 = "";
+      if (arg0 < 0) {
+        str4 = "-";
+      }
+      let num2 = +arg0;
+      const _Math2 = Math;
+      if (!num2) {
+        num2 = 0;
+      }
+      const absResult = abs(num2);
+      const str5 = `${parseInt(obj.toFixed(num), 10)}`;
+      let num3 = 0;
+      if (`${parseInt(obj.toFixed(num), 10)}`.length > 3) {
+        num3 = `${parseInt(obj.toFixed(num), 10)}`.length % 3;
+      }
+      let sum = str3;
+      if (num3) {
+        sum = str5.substr(0, num3) + str2;
+      }
+      const str6 = str5.substr(num3);
+      const sum1 = str4 + sum + str6.replace(/(\d{3})(?=\d)/g, `$1${str2}`);
+      if (num) {
+        const _Math3 = Math;
+        const absolute = Math.abs(absResult - str5);
+        const toFixedResult = absolute.toFixed(num);
+        str3 = str + toFixedResult.slice(2);
+      }
+      return sum1 + str3;
+    },
+    naturalDay: (arg0, arg1) => {
+      let str2;
+      let timeResult = arg0;
+      if (undefined === arg0) {
+        timeResult = obj.time();
+      }
+      let str = "Y-m-d";
+      if (undefined !== arg1) {
+        str = arg1;
+      }
+      const date = new Date();
+      const fullYear = date.getFullYear();
+      const month = date.getMonth();
+      const date1 = new Date(fullYear, month, date.getDate());
+      const result = date1.getTime() / 1000;
+      if (timeResult >= result) {
+        let str3;
+        if (timeResult < result) {
+          let str4;
+          if (timeResult < result + 86400) {
+            str4 = obj.date(str, timeResult);
+          } else {
+            str4 = "tomorrow";
+          }
+          str3 = str4;
+        } else {
+          str3 = "today";
+        }
+        str2 = str3;
+      } else {
+        str2 = "yesterday";
+      }
+      return str2;
+    },
+    relativeTime: (arg0) => {
+      let text5;
+      let timeResult = arg0;
+      if (undefined === arg0) {
+        timeResult = obj.time();
+      }
+      const timeResult1 = obj.time();
+      const diff = timeResult1 - timeResult;
+      if (diff < 2) {
+        if (diff > -2) {
+          let str24 = "";
+          if (diff >= 0) {
+            str24 = "just ";
+          }
+          return str24 + "now";
+        }
+      }
+      if (diff < 60) {
+        if (diff > -60) {
+          let text;
+          if (diff >= 0) {
+            const _Math8 = Math;
+            text = `${Math.floor(tmp4)} seconds ago`;
+          } else {
+            const _Math7 = Math;
+            text = `${"in " + Math.floor(-tmp4)} seconds`;
+          }
+          return text;
+        }
+      }
+      if (diff < 120) {
+        if (diff > -120) {
+          let str20 = "in about a minute";
+          if (diff >= 0) {
+            str20 = "about a minute ago";
+          }
+          return str20;
+        }
+      }
+      if (diff < 3600) {
+        if (diff > -3600) {
+          let text1;
+          if (diff >= 0) {
+            const _Math6 = Math;
+            text1 = `${Math.floor(tmp4 / 60)} minutes ago`;
+          } else {
+            const _Math5 = Math;
+            text1 = `${"in " + Math.floor(-tmp4 / 60)} minutes`;
+          }
+          return text1;
+        }
+      }
+      if (diff < 7200) {
+        if (diff > -7200) {
+          let str16 = "in about an hour";
+          if (diff >= 0) {
+            str16 = "about an hour ago";
+          }
+          return str16;
+        }
+      }
+      if (diff < 86400) {
+        if (diff > -86400) {
+          let text2;
+          if (diff >= 0) {
+            const _Math4 = Math;
+            text2 = `${Math.floor(tmp4 / 3600)} hours ago`;
+          } else {
+            const _Math3 = Math;
+            text2 = `${"in " + Math.floor(-tmp4 / 3600)} hours`;
+          }
+          return text2;
+        }
+      }
+      if (diff < 172800) {
+        if (diff > -172800) {
+          let str12 = "in 1 day";
+          if (diff >= 0) {
+            str12 = "1 day ago";
+          }
+          return str12;
+        }
+      }
+      if (diff < 2505600) {
+        if (diff > -2505600) {
+          let text3;
+          if (diff >= 0) {
+            const _Math2 = Math;
+            text3 = `${Math.floor(tmp4 / 86400)} days ago`;
+          } else {
+            const _Math = Math;
+            text3 = `${"in " + Math.floor(-tmp4 / 86400)} days`;
+          }
+          return text3;
+        }
+      }
+      if (diff < 5184000) {
+        if (diff > -5184000) {
+          let str8 = "in about a month";
+          if (diff >= 0) {
+            str8 = "about a month ago";
+          }
+          return str8;
+        }
+      }
+      const parsed = parseInt(obj.date("Y", timeResult1), 10);
+      const parsed1 = parseInt(obj.date("Y", timeResult), 10);
+      const result = 12 * parsed;
+      const sum = result + parseInt(obj.date("n", timeResult1), 10);
+      const result1 = 12 * parsed1;
+      const diff1 = sum - (result1 + parseInt(obj.date("n", timeResult), 10));
+      if (diff1 < 12) {
+        if (-12 < diff1) {
+          let text4;
+          if (0 <= diff1) {
+            text4 = `${tmp10} months ago`;
+          } else {
+            text4 = `${"in " + -tmp10} months`;
+          }
+          return text4;
+        }
+      }
+      const diff2 = parsed - parsed1;
+      if (diff2 < 2) {
+        if (diff2 > -2) {
+          let str4 = "in a year";
+          if (diff2 >= 0) {
+            str4 = "a year ago";
+          }
+          text5 = str4;
+        }
+        return text5;
+      }
+      if (diff2 >= 0) {
+        text5 = `${tmp11} years ago`;
+      } else {
+        text5 = `${"in " + -tmp11} years`;
+      }
+    },
+    ordinal: (match) => {
+      let str2;
+      const parsed = parseInt(match, 10);
+      let num = 0;
+      if (!isNaN(parsed)) {
+        num = parsed;
+      }
+      let str = "";
+      if (num < 0) {
+        str = "-";
+      }
+      const absolute = Math.abs(num);
+      const result = absolute % 100;
+      const sum = str + absolute;
+      if (4 >= result) {
+        str2 = { 1: "st", 2: "nd", 3: "rd" }[absolute % 10] || "th";
+      } else {
+        str2 = "th";
+      }
+      return sum + str2;
+    },
+    filesize: (arg0, arg1, arg2, arg3, arg4, arg5) => {
+      let str = "0 bytes";
+      if (arg0 > 0) {
+        let num = 1024;
+        if (undefined !== arg1) {
+          num = arg1;
+        }
+        let num2 = arg2;
+        const tmp2 = arg0 < num && undefined === num2;
+        if (tmp2) {
+          num2 = 0;
+        }
+        let str2 = arg5;
+        if (undefined === arg5) {
+          str2 = " ";
+        }
+        str = obj.intword(arg0, ["bytes", "KB", "MB", "GB", "TB", "PB"], num, num2, arg3, arg4, str2);
+      }
+      return str;
+    },
+    intword: (arg0, arg1, sum, arg3, arg4, arg5, arg6) => {
+      const arr = arg1 || ["", "K", "M", "B", "T"];
+      let num = sum;
+      const diff = arr.length - 1;
+      if (!sum) {
+        num = 1000;
+      }
+      let num2 = 2;
+      if (!isNaN(arg3)) {
+        const _Math = Math;
+        num2 = Math.abs(arg3);
+      }
+      let num3 = 0;
+      let tmp5 = diff;
+      const tmp2 = arg4 || ".";
+      const tmp3 = arg5 || ",";
+      const tmp4 = arg6 || "";
+      if (0 < arr.length) {
+        const _Math2 = Math;
+        sum = num3 + 1;
+        tmp5 = num3;
+        while (arg0 >= Math.pow(num, sum)) {
+          tmp5 = diff;
+          num3 = sum;
+          if (sum >= arr.length) {
+            break;
           }
         }
-        let num3 = 1;
-        const tmp4 = uint8Array;
-        if (1 <= arr.length) {
-          do {
-            let _loopResult = _loop(num3);
-            sum = num3 + 1;
-            num3 = sum;
-            length = arr.length;
-          } while (sum <= length);
-        }
-        let _DataView = DataView;
-        let self3 = this;
-        let self4 = this;
-        let dataView = new DataView(tmp4.buffer);
-        return parseTags(dataView);
-      } catch (err) {
-        return {};
       }
-    }
-    const tmp = arg2;
-    if (tmp) {
-      const tmp2 = require;
-      if (arr[0].compressionMethod !== _mod8279.COMPRESSION_METHOD_NONE) {
-        let catchPromise;
-        if (arr[0].compressionMethod === tmp2(8279).COMPRESSION_METHOD_DEFLATE) {
-          let tmp4 = globalThis;
-          let _DataView = DataView;
-          buffer = buffer.buffer;
-          let self = this;
-          let self2 = this;
-          let dataView = new DataView(buffer.slice(arr[0].offset, arr[0].offset + arr[0].length));
-          const tmp2Result = tmp2(8279);
-          let tmp6 = dataView;
-          let tmp7 = tmp2Result;
-          const decompressResult = tmp2Result.decompress(dataView, arr[0].compressionMethod, "utf-8", "dataview");
-          const nextPromise = decompressResult.then(parseTags);
-          catchPromise = nextPromise.catch(() => ({}));
-        } else {
-          catchPromise = {};
-        }
-        return catchPromise;
+      const result = arg0 / Math.pow(num, tmp5);
+      let str = "";
+      if (arr[tmp5]) {
+        str = tmp4 + arr[tmp5];
       }
+      return obj.numberFormat(result, num2, tmp2, tmp3) + str;
+    },
+    linebreaks: (str) => {
+      str = str.replace(/^([\n|\r]*)/, "");
+      const str2 = str.replace(/([\n|\r]*)$/, "");
+      const str3 = str2.replace(/(\r\n|\n|\r)/g, "\n");
+      const str4 = str3.replace(/(\n{2,})/g, "</p><p>");
+      return "<p>" + str4.replace(/\n/g, "<br />") + "</p>";
+    },
+    nl2br: (str) => str.replace(/(\r\n|\n|\r)/g, "<br />"),
+    truncatechars: (arg0, arg1) => {
+      let text = arg0;
+      if (arg0.length > arg1) {
+        text = `${arg0.substr(0, arg1)}…`;
+      }
+      return text;
+    },
+    truncatewords: (str, arg1) => {
+      let text = str;
+      const parts = str.split(" ");
+      if (parts.length >= arg1) {
+        const substr = parts.slice(0, arg1);
+        text = `${obj.join(" ")}…`;
+      }
+      return text;
     }
-    return readIcc(buffer, arr);
+  };
+  if (undefined !== humanize) {
+    let tmp4 = module;
+    let tmp5 = undefined !== module && tmp4.exports;
+    if (tmp5) {
+      tmp4.exports = humanize;
+    }
+    humanize.humanize = humanize;
+  } else {
+    let tmp2 = globalThis;
+    let amd = typeof globalThis.define === "function";
+    if (typeof globalThis.define === "function") {
+      const define3 = globalThis.define;
+      amd = globalThis.define.amd;
+    }
+    if (amd) {
+      const define2 = globalThis.define;
+      let str = "humanize";
+      globalThis.define("humanize", () => obj);
+    }
+    tmp.humanize = humanize;
   }
+  let closure_3 = [0, 0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334];
+  let closure_4 = [0, 0, 31, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335];
 };
-let c2 = 84;
-const acsp = "acsp";
-const desc = "desc";
-const mluc = "mluc";
-let metroRequire = "text";
-let c7 = "sig ";
-let c8 = 12;
-
-export default obj;
-export { parseTags };
+fn.call(this);

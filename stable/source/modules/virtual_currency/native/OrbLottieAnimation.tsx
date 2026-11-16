@@ -1,12 +1,12 @@
-// Module ID: 14504
-// Function ID: 14505
+// Module ID: 14769
+// Function ID: 14770
 // Name: OrbLottieAnimation
-// Dependencies: [19, 21, 5253, 5021, 14505, 14507, 2]
+// Dependencies: [19, 21, 5401, 5177, 14770, 14772, 2]
 
-// Module 14504 (OrbLottieAnimation)
+// Module 14769 (OrbLottieAnimation)
 import Fragment from "Fragment" /* 21 */;
-import shared from "shared" /* 5021 */;
-import useTheme from "useTheme" /* 5253 */;
+import shared from "shared" /* 5177 */;
+import useTheme from "useTheme" /* 5401 */;
 import "react";
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
@@ -45,9 +45,9 @@ class OrbLottieAnimation {
       }
     }));
     if (isThemeLightResult) {
-      SpendEarnOrbsLottie = tmp(14505).SpendEarnOrbsLightThemeLottie;
+      SpendEarnOrbsLottie = tmp(14770).SpendEarnOrbsLightThemeLottie;
     } else {
-      SpendEarnOrbsLottie = tmp(14507).SpendEarnOrbsLottie;
+      SpendEarnOrbsLottie = tmp(14772).SpendEarnOrbsLottie;
     }
     size = { ref: tmp5, size: "custom", width: 60, height: 60, opacity: 0.8, animation: str, useLottieDefaultColors: true };
     str = "spend";

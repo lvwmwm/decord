@@ -1,26 +1,26 @@
-// Module ID: 19425
-// Function ID: 19426
+// Module ID: 19871
+// Function ID: 19872
 // Name: ConjureTurnNotificationManager
-// Dependencies: [7715, 1231, 11011, 4917, 5045, 6570, 11529, 6844, 1072, 4870, 7287, 10902, 4839, 10878, 11030, 7419, 12637, 2]
+// Dependencies: [7824, 1231, 11173, 5073, 5203, 6657, 11706, 6932, 1072, 5026, 7383, 11060, 4995, 11031, 11192, 7516, 12870, 2]
 
-// Module 19425 (ConjureTurnNotificationManager)
-import UserSettings from "UserSettings" /* 4839 */;
-import ChannelConstants from "ChannelConstants" /* 4870 */;
-import ConjureUtils from "ConjureUtils" /* 7419 */;
-import conjureProjectMute from "conjureProjectMute" /* 10878 */;
-import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 10902 */;
-import SoundUtils from "SoundUtils" /* 11030 */;
-import conjureMentions from "conjureMentions" /* 12637 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7715 */;
+// Module 19871 (ConjureTurnNotificationManager)
+import UserSettings from "UserSettings" /* 4995 */;
+import ChannelConstants from "ChannelConstants" /* 5026 */;
+import ConjureUtils from "ConjureUtils" /* 7516 */;
+import conjureProjectMute from "conjureProjectMute" /* 11031 */;
+import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 11060 */;
+import SoundUtils from "SoundUtils" /* 11192 */;
+import conjureMentions from "conjureMentions" /* 12870 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7824 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import NotificationSettingsStore from "NotificationSettingsStore" /* 11011 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5045 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6570 */;
-import ConjurePagesStore from "ConjurePagesStore" /* 11529 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6844 */;
+import NotificationSettingsStore from "NotificationSettingsStore" /* 11173 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5073 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5203 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6657 */;
+import ConjurePagesStore from "ConjurePagesStore" /* 11706 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6932 */;
 import Constants from "Constants" /* 1072 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7287 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7383 */;
 import size from "module_2" /* 2 */;
 
 let closure_12;

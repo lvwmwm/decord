@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/LottieIcon/native/generated/lotties", scales: [1], hash: "6ab310fc9336bead9d2a9726051f2397", name: "SpendEarnOrbsLightTheme", type: "lottie" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/directory_channels/native/images", width: 375, height: 300, scales: [2], hash: "ce796d5b5dedd403e327ddf7cc5530fc", name: "hub_header", type: "png" });

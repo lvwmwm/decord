@@ -1,15 +1,15 @@
-// Module ID: 17409
-// Function ID: 17410
+// Module ID: 17770
+// Function ID: 17771
 // Name: AnimateStickersSetting
-// Dependencies: [19, 8432, 4842, 4839, 1113, 11540, 2]
+// Dependencies: [19, 8536, 4998, 4995, 1113, 11717, 2]
 
-// Module 17409 (AnimateStickersSetting)
+// Module 17770 (AnimateStickersSetting)
 import intl4 from "intl" /* 1113 */;
-import UserSettings from "UserSettings" /* 4839 */;
-import StickersConstants from "StickersConstants" /* 4842 */;
-import SettingsConstants from "SettingsConstants" /* 8432 */;
+import UserSettings from "UserSettings" /* 4995 */;
+import StickersConstants from "StickersConstants" /* 4998 */;
+import SettingsConstants from "SettingsConstants" /* 8536 */;
 import react from "react" /* 19 */;
-import SettingBuilders from "SettingBuilders" /* 11540 */;
+import SettingBuilders from "SettingBuilders" /* 11717 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

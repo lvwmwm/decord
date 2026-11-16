@@ -1,20 +1,20 @@
-// Module ID: 17145
-// Function ID: 17146
+// Module ID: 17506
+// Function ID: 17507
 // Name: MobileQuestPreviewControlBar
-// Dependencies: [5, 32, 19, 17, 7846, 1083, 21, 5014, 575, 9681, 504, 9682, 7364, 1113, 7358, 17146, 17147, 8028, 12219, 14777, 5624, 2]
+// Dependencies: [5, 32, 19, 17, 7955, 1083, 21, 5170, 575, 9805, 504, 9806, 7457, 1113, 7451, 17507, 17508, 8131, 12423, 15041, 5783, 2]
 
-// Module 17145 (MobileQuestPreviewControlBar)
+// Module 17506 (MobileQuestPreviewControlBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import intl5 from "intl" /* 1113 */;
-import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7364 */;
+import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7457 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import QuestStore from "QuestStore" /* 7846 */;
+import QuestStore from "QuestStore" /* 7955 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let c1, c4, config;
@@ -371,7 +371,7 @@ class MobileQuestPreviewControlBar {
     items10[1] = closure_10(callback2, obj5);
     let tmp17Result2 = null != stateFromStores;
     if (tmp17Result2) {
-      const obj11 = { variant: "text-sm/medium", color: "text-feedback-critical", style: tmp.errorText, children: stateFromStores.message };
+      const obj11 = { variant: "body-sm/medium", color: "text-feedback-critical", style: tmp.errorText, children: stateFromStores.message };
       tmp17Result2 = tmp17(tmp4(tmp5[20]).Text, obj11);
     }
     items10[2] = tmp17Result2;

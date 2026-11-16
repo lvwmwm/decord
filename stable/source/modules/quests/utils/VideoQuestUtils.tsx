@@ -1,24 +1,24 @@
-// Module ID: 14684
-// Function ID: 14685
+// Module ID: 14949
+// Function ID: 14950
 // Name: VideoQuestUtils
-// Dependencies: [5901, 7846, 7848, 1072, 7852, 9682, 7868, 1113, 7862, 5198, 2, 14685]
-// Exports: computeMaxSeekableTime, formatVideoProgressRatio, getVideoOrientation, getVideoQuestEndCardCtaText, getVideoQuestModalKey, getVideoQuestProgressRemainingAccessibilityLabel, handleVideoQuestModalClose, isValidDuration, isVideoQuestProgressing, sendVideoProgress
+// Dependencies: [6064, 7955, 7957, 1072, 7962, 9806, 7978, 1113, 7972, 5346, 2, 14950]
+// Exports: computeMaxSeekableTime, formatVideoProgressRatio, getVideoOrientation, getVideoQuestModalKey, getVideoQuestProgressRemainingAccessibilityLabel, handleVideoQuestModalClose, isValidDuration, isVideoQuestProgressing, sendVideoProgress
 
-// Module 14684 (VideoQuestUtils)
+// Module 14949 (VideoQuestUtils)
 import Constants from "Constants" /* 1072 */;
 import intl6 from "intl" /* 1113 */;
-import QuestExpirationUtils from "QuestExpirationUtils" /* 7852 */;
-import AnalyticsActions from "AnalyticsActions" /* 7862 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7868 */;
-import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 14685 */;
-import NetworkStore from "NetworkStore" /* 5901 */;
-import QuestStore from "QuestStore" /* 7846 */;
-import VideoQuestUIStore from "VideoQuestUIStore" /* 7848 */;
+import QuestExpirationUtils from "QuestExpirationUtils" /* 7962 */;
+import AnalyticsActions from "AnalyticsActions" /* 7972 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7978 */;
+import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 14950 */;
+import NetworkStore from "NetworkStore" /* 6064 */;
+import QuestStore from "QuestStore" /* 7955 */;
+import VideoQuestUIStore from "VideoQuestUIStore" /* 7957 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const NavigationRouteUtils = tmp(5198);
-const QuestActionCreators = tmp(9682);
+const NavigationRouteUtils = tmp(5346);
+const QuestActionCreators = tmp(9806);
 const AnalyticEvents = Constants.AnalyticEvents;
 const portrait = "portrait";
 const result = size.fileFinishedImporting("modules/quests/utils/VideoQuestUtils.tsx");
@@ -113,55 +113,45 @@ export function formatVideoProgressRatio(maxVideoProgressSeconds, current) {
   }
   return num;
 }
-export function isValidDuration(arg0) {
-  const isFiniteResult = Number.isFinite(arg0) && arg0 > 0;
+export function isValidDuration(scrollLength) {
+  const isFiniteResult = Number.isFinite(scrollLength) && scrollLength > 0;
   return isFiniteResult;
-}
-export function getVideoQuestEndCardCtaText(ctaConfig) {
-  let buttonLabel = ctaConfig.ctaConfig.buttonLabel;
-  if (buttonLabel == null) {
-    const intl = intl6.intl;
-    buttonLabel = intl.string(intl6.t.iiTtpJ);
-  }
-  return buttonLabel;
 }
 export function handleVideoQuestModalClose(arg0) {
   let duration;
   let maxTimestampSec2;
-  let obj2;
+  let obj3;
   let obj6;
   let questId;
   let sourceQuestContent;
   let videoSessionId;
   ({ questId, sourceQuestContent, videoSessionId } = arg0);
   const state = VideoQuestUIStore.getState();
-  state.setTranscriptEnabled(false);
-  const state1 = VideoQuestUIStore.getState();
-  const videoProgress = state1.getVideoProgress(questId);
+  const videoProgress = state.getVideoProgress(questId);
   if (null != videoProgress) {
     const quest = QuestStore.getQuest(questId);
-    let tmp4 = null != quest;
-    if (tmp4) {
+    let tmp3 = null != quest;
+    if (tmp3) {
       const userStatus = quest.userStatus;
       let enrolledAt;
       if (userStatus != null) {
         enrolledAt = userStatus.enrolledAt;
       }
-      tmp4 = null != enrolledAt;
+      tmp3 = null != enrolledAt;
     }
-    if (tmp4) {
+    if (tmp3) {
       const userStatus2 = quest.userStatus;
       let completedAt;
       if (userStatus2 != null) {
         completedAt = userStatus2.completedAt;
       }
-      tmp4 = null == completedAt;
+      tmp3 = null == completedAt;
     }
-    if (tmp4) {
+    if (tmp3) {
       const maxTimestampSec = videoProgress.maxTimestampSec;
-      const obj3 = QuestExpirationUtils;
-      let isQuestExpiredResult = obj3.isQuestExpired(quest);
-      const tmp6 = require;
+      const obj2 = QuestExpirationUtils;
+      let isQuestExpiredResult = obj2.isQuestExpired(quest);
+      const tmp5 = require;
       if (!isQuestExpiredResult) {
         const userStatus3 = quest.userStatus;
         let enrolledAt1;
@@ -179,8 +169,8 @@ export function handleVideoQuestModalClose(arg0) {
         isQuestExpiredResult = null != completedAt1;
       }
       if (!isQuestExpiredResult) {
-        const tmp6Result = tmp6(9682);
-        tmp6Result.updateVideoProgress(quest.id, maxTimestampSec);
+        const tmp5Result = tmp5(9806);
+        tmp5Result.updateVideoProgress(quest.id, maxTimestampSec);
       }
     }
     ({ maxTimestampSec: maxTimestampSec2, duration } = videoProgress);
@@ -197,15 +187,15 @@ export function handleVideoQuestModalClose(arg0) {
         num2 = num4;
       }
     }
-    const obj = { questId, event: AnalyticEvents.QUEST_VIDEO_PROGRESSED, properties: obj2, sourceQuestContent };
-    obj2 = { progress: num2, video_timestamp_seconds: videoProgress.maxTimestampSec, video_session_id: videoSessionId };
-    const obj5 = AnalyticsActions;
-    obj5.trackQuestEvent(obj);
-    const obj4 = { questId, event: AnalyticEvents.QUEST_VIDEO_MODAL_CLOSED, properties: obj6, sourceQuestContent };
+    const obj = { questId, event: AnalyticEvents.QUEST_VIDEO_PROGRESSED, properties: obj3, sourceQuestContent };
+    obj3 = { progress: num2, video_timestamp_seconds: videoProgress.maxTimestampSec, video_session_id: videoSessionId };
+    const obj4 = AnalyticsActions;
+    obj4.trackQuestEvent(obj);
+    const obj5 = { questId, event: AnalyticEvents.QUEST_VIDEO_MODAL_CLOSED, properties: obj6, sourceQuestContent };
     obj6 = { video_progress: num2, video_session_id: videoSessionId, network_connection_speed: NetworkStore.getEffectiveConnectionSpeed() };
     const trackQuestEvent = AnalyticsActions.trackQuestEvent;
     AnalyticsActions;
-    trackQuestEvent(obj4);
+    trackQuestEvent(obj5);
   }
 }
 export function getVideoQuestModalKey(questId) {

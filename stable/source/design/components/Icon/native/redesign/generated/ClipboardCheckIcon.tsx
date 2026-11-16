@@ -1,14 +1,14 @@
-// Module ID: 17654
-// Function ID: 17655
+// Module ID: 18017
+// Function ID: 18018
 // Name: ClipboardCheckIcon
-// Dependencies: [19, 21, 575, 5716, 17655, 2]
+// Dependencies: [19, 21, 575, 5873, 18018, 2]
 // Exports: ClipboardCheckIcon
 
-// Module 17654 (ClipboardCheckIcon)
+// Module 18017 (ClipboardCheckIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5716 */;
-import AssetRegistry from "AssetRegistry" /* 17655 */;
+import BaseIconImage2 from "BaseIconImage" /* 5873 */;
+import AssetRegistry from "AssetRegistry" /* 18018 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,19 +1,19 @@
-// Module ID: 7766
-// Function ID: 7767
+// Module ID: 7875
+// Function ID: 7876
 // Name: ReferencedMessageStore
-// Dependencies: [32, 7767, 7770, 4863, 6061, 1072, 1451, 6063, 7771, 504, 572, 2]
+// Dependencies: [32, 7876, 7879, 5019, 6226, 1072, 1453, 6228, 7880, 504, 572, 2]
 
-// Module 7766 (ReferencedMessageStore)
+// Module 7875 (ReferencedMessageStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import LRUCacheDefault from "LRUCache" /* 1451 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 6063 */;
-import handleExplicitMediaScanTimeoutForMessage from "handleExplicitMediaScanTimeoutForMessage" /* 7771 */;
+import LRUCacheDefault from "LRUCache" /* 1453 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 6228 */;
+import handleExplicitMediaScanTimeoutForMessage from "handleExplicitMediaScanTimeoutForMessage" /* 7880 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7767 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7770 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import MessageStore from "MessageStore" /* 6061 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7876 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7879 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import MessageStore from "MessageStore" /* 6226 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -51,7 +51,7 @@ function processMessage(message) {
           }
         } else {
           const obj3 = { state: merged.DELETED };
-          const result1 = obj.set(message.channel_id, message_id, obj3);
+          const result1 = obj.set(message_reference.channel_id, message_id, obj3);
           flag2 = true;
         }
       } else {

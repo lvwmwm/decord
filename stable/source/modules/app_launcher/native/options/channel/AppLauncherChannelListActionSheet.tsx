@@ -1,23 +1,23 @@
-// Module ID: 12526
-// Function ID: 12527
+// Module ID: 12761
+// Function ID: 12762
 // Name: AppLauncherChannelListActionSheet
-// Dependencies: [32, 19, 4885, 21, 5014, 575, 8652, 8603, 12514, 6779, 5258, 12498, 12499, 5652, 6975, 5624, 2]
+// Dependencies: [32, 19, 5041, 21, 5170, 575, 8756, 8707, 12749, 6867, 5406, 12733, 12734, 5808, 7071, 5783, 2]
 // Exports: default
 
-// Module 12526 (AppLauncherChannelListActionSheet)
+// Module 12761 (AppLauncherChannelListActionSheet)
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import useChannelNameDefault from "useChannelName" /* 5652 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6779 */;
-import TableRow2 from "TableRow" /* 6975 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8603 */;
-import TextIcon3 from "TextIcon" /* 8652 */;
-import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 12514 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import useChannelNameDefault from "useChannelName" /* 5808 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6867 */;
+import TableRow2 from "TableRow" /* 7071 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8707 */;
+import TextIcon3 from "TextIcon" /* 8756 */;
+import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 12749 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4885 */;
+import GuildStore from "GuildStore" /* 5041 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -43,7 +43,7 @@ class ChannelIcon {
       const tmp2Result = utils_ChannelUtils;
       let TextIcon2 = tmp2Result.getChannelIconComponentWithGuild(channel, guild);
       if (TextIcon2 == null) {
-        TextIcon2 = tmp2(8652).TextIcon;
+        TextIcon2 = tmp2(8756).TextIcon;
       }
       TextIcon = TextIcon2;
     }
@@ -60,7 +60,7 @@ function ChannelListItem(arg0) {
   let totalCount;
   ({ channel, index } = arg0);
   ({ totalCount, onPress } = arg0);
-  const obj = { onPress, label: metroRequire(Text_Text.Text, { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: tmp }), icon: metroRequire(ChannelIcon, { channel }), start: 0 === index, end: index === totalCount - 1 };
+  const obj = { onPress, label: metroRequire(Text_Text.Text, { lineClamp: 1, variant: "body-md/semibold", color: "mobile-text-heading-primary", children: tmp }), icon: metroRequire(ChannelIcon, { channel }), start: 0 === index, end: index === totalCount - 1 };
   tmp = useChannelNameDefault(channel);
   const TableRow = TableRow2.TableRow;
   return metroRequire(TableRow, obj, channel.id);

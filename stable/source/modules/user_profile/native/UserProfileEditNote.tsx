@@ -1,18 +1,18 @@
-// Module ID: 14912
-// Function ID: 14913
+// Module ID: 15176
+// Function ID: 15177
 // Name: UserProfileEditNote
-// Dependencies: [32, 19, 17, 1072, 21, 5014, 1497, 14908, 14913, 6998, 11407, 7558, 1113, 5624, 7253, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5170, 1499, 15172, 15177, 7097, 11580, 7663, 1113, 5783, 7349, 2]
 // Exports: default
 
-// Module 14912 (UserProfileEditNote)
+// Module 15176 (UserProfileEditNote)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
-import NavigatorHeader from "NavigatorHeader" /* 6998 */;
-import NoteActionCreatorsDefault from "NoteActionCreators" /* 14913 */;
+import NavigatorHeader from "NavigatorHeader" /* 7097 */;
+import NoteActionCreatorsDefault from "NoteActionCreators" /* 15177 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -139,7 +139,7 @@ export default function UserProfileEditNote(userId) {
     setOptions(obj);
   }, items2);
   const obj3 = { contentContainerStyle: tmp.contentContainer, keyboardShouldPersistTaps: "always", children: items3 };
-  const obj4 = { variant: "text-sm/semibold", children: intl.string(userId(onClose[12]).t["mQKv+v"]) };
+  const obj4 = { variant: "body-sm/semibold", children: intl.string(userId(onClose[12]).t["mQKv+v"]) };
   const Text = tmp2(tmp3[13]).Text;
   intl = tmp2(tmp3[12]).intl;
   items3 = [closure_7(Text, obj4), ];

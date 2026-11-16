@@ -1,32 +1,32 @@
-// Module ID: 9265
-// Function ID: 9266
+// Module ID: 9378
+// Function ID: 9379
 // Name: SecureFramesUtils
-// Dependencies: [32, 5, 502, 2006, 5764, 7885, 1383, 5782, 9266, 1072, 2061, 9267, 9268, 9250, 9269, 1113, 5068, 2042, 1089, 38, 206, 1282, 1242, 5958, 6041, 2]
+// Dependencies: [32, 5, 502, 2130, 5925, 7995, 1385, 5943, 9379, 1072, 2185, 9380, 9381, 9363, 9382, 1113, 5226, 2166, 1089, 38, 206, 1282, 1242, 6122, 6205, 2]
 // Exports: addVerification, deletePersistentVerification, deleteUserPersistentVerifications, deleteVerification, ensureCurrentUserPublicKey, getSecureFramesHelpdeskArticle, getSecureFramesPersistentCodesHelpdeskArticle, getSecureFramesUserVerifiedTimestamp, getSecureFramesVerifiedDevicesHelpdeskArticle, getUserVerificationDeeplink, getUserVerificationFooterText, getUserVerifyStateText, isCurrentUserPublicKeyMatch, showSecureFramesKeyInconsistentAlert, validateSecureFramesKeyConsistent
 
-// Module 9265 (SecureFramesUtils)
+// Module 9378 (SecureFramesUtils)
 import _modDef38 from "module_38" /* 38 */;
 import byteLengthDefault from "byteLength" /* 206 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import intl15 from "intl" /* 1113 */;
-import _modDef2042 from "module_2042" /* 2042 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2061 */;
-import UserUtilsDefault from "UserUtils" /* 5068 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5958 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6041 */;
-import _mod9250 from "module_9250" /* 9250 */;
-import SecureFramesActionCreatorsDefault from "SecureFramesActionCreators" /* 9267 */;
-import SecureFramesTracking from "SecureFramesTracking" /* 9268 */;
-import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9269 */;
+import _modDef2166 from "module_2166" /* 2166 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
+import UserUtilsDefault from "UserUtils" /* 5226 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6122 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6205 */;
+import _mod9363 from "module_9363" /* 9363 */;
+import SecureFramesActionCreatorsDefault from "SecureFramesActionCreators" /* 9380 */;
+import SecureFramesTracking from "SecureFramesTracking" /* 9381 */;
+import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9382 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 2006 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5764 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7885 */;
-import UserStore from "UserStore" /* 1383 */;
-import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 5782 */;
-import SecureFramesConstants from "SecureFramesConstants" /* 9266 */;
+import MediaEngineStore from "MediaEngineStore" /* 2130 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5925 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7995 */;
+import UserStore from "UserStore" /* 1385 */;
+import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 5943 */;
+import SecureFramesConstants from "SecureFramesConstants" /* 9379 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -478,8 +478,8 @@ export function deleteVerification(userId, arg1, isOtherUserKeyPersistent) {
     const _Uint8Array = Uint8Array;
     const self = this;
     const self2 = this;
-    const serializeKey = _mod9250.serializeKey;
-    _mod9250;
+    const serializeKey = _mod9363.serializeKey;
+    _mod9363;
     const uint8Array = new Uint8Array(arg1);
     const serializeKeyResult = serializeKey(uint8Array);
     const obj2 = SecureFramesActionCreatorsDefault;
@@ -534,8 +534,8 @@ export function deleteUserPersistentVerifications(userId) {
   let result = openSecureFramesUpdateConfirmation(obj2);
 }
 export function getSecureFramesUserVerifiedTimestamp(timestamp) {
-  const tmp3 = _modDef2042(timestamp);
-  obj = _modDef2042();
+  const tmp3 = _modDef2166(timestamp);
+  obj = _modDef2166();
   const diffResult = obj.diff(tmp3, "s");
   if (diffResult > 12 * DurationsDefault.Seconds.DAYS_30) {
     const _Math6 = Math;

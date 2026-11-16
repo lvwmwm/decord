@@ -1,28 +1,28 @@
-// Module ID: 13269
-// Function ID: 13270
+// Module ID: 13534
+// Function ID: 13535
 // Name: GuildDisableCommunication
-// Dependencies: [5, 32, 19, 17, 4928, 1072, 21, 1113, 5014, 575, 5607, 11405, 5593, 1252, 13270, 5712, 6041, 5624, 7058, 7061, 7253, 5634, 2]
+// Dependencies: [5, 32, 19, 17, 5084, 1072, 21, 1113, 5170, 575, 5767, 11578, 5753, 1252, 13535, 5869, 6205, 5783, 7157, 7160, 7349, 5790, 2]
 
-// Module 13269 (GuildDisableCommunication)
+// Module 13534 (GuildDisableCommunication)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl6 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import useMountEffectDefault from "useMountEffect" /* 5593 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5607 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import TableRadioGroup2 from "TableRadioGroup" /* 7058 */;
-import TableRadioRow2 from "TableRadioRow" /* 7061 */;
-import TextArea2 from "TextArea" /* 7253 */;
-import useSafeAreaAvoidingInputsDefault from "useSafeAreaAvoidingInputs" /* 11405 */;
+import useMountEffectDefault from "useMountEffect" /* 5753 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5767 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import components_Button_Button from "components/Button/Button" /* 5790 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 7157 */;
+import TableRadioRow2 from "TableRadioRow" /* 7160 */;
+import TextArea2 from "TextArea" /* 7349 */;
+import useSafeAreaAvoidingInputsDefault from "useSafeAreaAvoidingInputs" /* 11578 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 4928 */;
+import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 5084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -207,7 +207,7 @@ const memoResult = react.memo(function GuildDisableCommunication(arg0) {
   let obj2 = { style: tmp.container, ref, contentContainerStyle: obj3, children: closure_13(closure_12, obj4) };
   obj3 = { paddingHorizontal: nativeDefault.space.PX_12, paddingBottom: insets.bottom };
   obj4 = { children: items1 };
-  let obj5 = { style: obj6, variant: "heading-md/semibold", children: intl.format(intl6.t.Ns83GT, obj7) };
+  let obj5 = { style: obj6, variant: "heading-sm/semibold", children: intl.format(intl6.t.Ns83GT, obj7) };
   obj6 = { marginVertical: nativeDefault.space.PX_16 };
   const Text = Text_Text.Text;
   intl = intl6.intl;

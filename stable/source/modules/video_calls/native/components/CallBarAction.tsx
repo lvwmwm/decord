@@ -1,20 +1,20 @@
-// Module ID: 11715
-// Function ID: 11716
+// Module ID: 11910
+// Function ID: 11911
 // Name: CallBarAction
-// Dependencies: [19, 17, 11000, 21, 5011, 575, 5014, 11716, 6980, 11717, 5717, 5624, 2]
+// Dependencies: [19, 17, 11162, 21, 5167, 575, 5170, 11911, 7076, 11912, 5874, 5783, 2]
 // Exports: NotifiedActionButton, PrimaryActionButton, ToggledActionButton
 
-// Module 11715 (CallBarAction)
+// Module 11910 (CallBarAction)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import Pressables from "Pressables" /* 6980 */;
-import ChannelCallStore from "ChannelCallStore" /* 11000 */;
-import CircleWithCutoutUtils from "CircleWithCutoutUtils" /* 11717 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import Pressables from "Pressables" /* 7076 */;
+import ChannelCallStore from "ChannelCallStore" /* 11162 */;
+import CircleWithCutoutUtils from "CircleWithCutoutUtils" /* 11912 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import ColorUtils from "ColorUtils" /* 5011 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import ColorUtils from "ColorUtils" /* 5167 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -108,7 +108,7 @@ class ActionButton {
       cloneElementResult = tmp10(IconComponent, obj6);
     } else {
       const obj7 = { source, style: imageStyle };
-      cloneElementResult = tmp10(tmp2(5717), obj7);
+      cloneElementResult = tmp10(tmp2(5874), obj7);
     }
     items1[1] = closure_6(View, obj4);
     let tmp10Result = null;
@@ -219,7 +219,7 @@ export function NotifiedActionButton(isMentioned) {
     const obj2 = { children: metroRequire(tmp5, obj) };
     items[1] = notificationAreaMentioned;
     const obj3 = { style: items, children: metroRequire(Text_Text.Text, obj4) };
-    obj4 = { style: tmp2.notificationText, variant: "text-xs/semibold", color: "text-overlay-light", children: notifications };
+    obj4 = { style: tmp2.notificationText, variant: "body-xs/semibold", color: "text-overlay-light", children: notifications };
     obj.children = metroRequire(View, obj3);
     return metroRequire(View, obj2);
   }

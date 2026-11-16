@@ -1,19 +1,20 @@
-// Module ID: 18379
-// Function ID: 18380
+// Module ID: 18753
+// Function ID: 18754
 // Name: GuildsBarMessages
-// Dependencies: [19, 5045, 1072, 21, 18380, 18365, 504, 18368, 575, 1113, 18381, 8643, 2]
+// Dependencies: [19, 9013, 5203, 1072, 21, 18754, 18739, 504, 18742, 575, 1113, 18755, 8747, 2]
 
-// Module 18379 (GuildsBarMessages)
+// Module 18753 (GuildsBarMessages)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 18365 */;
-import useGuildsBarBottomRightBadgeDefault from "useGuildsBarBottomRightBadge" /* 18368 */;
-import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 18380 */;
+import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 18739 */;
+import useGuildsBarBottomRightBadgeDefault from "useGuildsBarBottomRightBadge" /* 18742 */;
+import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 18754 */;
 import react from "react" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5045 */;
+import ICYMIStore from "ICYMIStore" /* 9013 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5203 */;
 import size from "module_2" /* 2 */;
 
 const GuildsBarAnimatedItemWrapperDefault = GuildsBarAnimatedItemWrapper;
@@ -29,20 +30,23 @@ const config = {
 const memoResult = react.memo(function GuildsBarMessages() {
   let badge;
   let cutouts;
+  let isTabFocused;
+  let tmp2 = dependencyMap;
   const obj = GuildsBarAnimatedItemWrapper;
-  const items = [SelectedGuildStore];
+  const items = [SelectedGuildStore, ICYMIStore];
   const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles();
   const obj2 = get_initialized;
   const stateFromStores = obj2.useStateFromStores(items, () => {
     guildId = guildId.getGuildId();
-    return null == guildId || guildId === ME;
+    const tmp2 = (null == guildId || guildId === ME) && !isTabFocused.getIsTabFocused();
+    return tmp2;
   });
   ({ badge, cutouts } = useGuildsBarBottomRightBadgeDefault({ mentionCount: 0 }));
   useGuildsBarBottomRightBadgeDefault({ mentionCount: 0 });
   const colors = nativeDefault.colors;
   GuildsBarAnimatedItemWrapperDefault;
   const intl = tmp(1113).intl;
-  return <tmp5Result selected={stateFromStores} circle={false} unread={false} styles={guildsBarAnimatedWrapperStyles} cutouts={cutouts} config={config} overState="y" label={intl.string(intl2.t.YUU0RF)} externalChildren={badge} expandedChildren={null}>{null}</tmp5Result>;
+  return <tmp5Result selected={stateFromStores} circle={false} unread={false} styles={guildsBarAnimatedWrapperStyles} cutouts={cutouts} config={config} overState="y" label={intl.string(intl2.t.YUU0RF)} externalChildren={badge} expandedChildren="mobile_invite_embed_impression">{"channelMention"}</tmp5Result>;
 });
 const result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarMessages.tsx");
 

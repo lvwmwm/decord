@@ -1,10 +1,10 @@
-// Module ID: 6891
-// Function ID: 6892
+// Module ID: 6979
+// Function ID: 6980
 // Name: visibleInlineChannels
 // Dependencies: [2]
 // Exports: isChannelVisibleInline, registerVisibleInlineChannel, unregisterVisibleInlineChannel
 
-// Module 6891 (visibleInlineChannels)
+// Module 6979 (visibleInlineChannels)
 import size from "module_2" /* 2 */;
 
 let set;

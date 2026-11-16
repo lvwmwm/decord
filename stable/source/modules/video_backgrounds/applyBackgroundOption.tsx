@@ -1,22 +1,22 @@
-// Module ID: 5925
-// Function ID: 5926
+// Module ID: 6089
+// Function ID: 6090
 // Name: applyBackgroundOption
-// Dependencies: [5, 1383, 5926, 5927, 1072, 5928, 5789, 5933, 1409, 5938, 5931, 5930, 5939, 2]
+// Dependencies: [5, 1385, 6090, 6091, 1072, 6092, 5950, 6097, 1411, 6102, 6095, 6094, 6103, 2]
 // Exports: applyBackgroundOptionPreview, applyInitialVideoBackgroundOption
 
-// Module 5925 (applyBackgroundOption)
+// Module 6089 (applyBackgroundOption)
 import Constants from "Constants" /* 1072 */;
-import AvatarUtils from "AvatarUtils" /* 1409 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 5789 */;
-import VideoBackgroundActionCreators from "VideoBackgroundActionCreators" /* 5928 */;
-import LastUsedVideoBackgroundOption from "LastUsedVideoBackgroundOption" /* 5930 */;
-import getDefaultBackgroundDataDefault from "getDefaultBackgroundData" /* 5933 */;
-import getFilterImageDefault from "getFilterImage" /* 5938 */;
-import isVideoBackgroundEnabledDefault from "isVideoBackgroundEnabled" /* 5939 */;
+import AvatarUtils from "AvatarUtils" /* 1411 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5950 */;
+import VideoBackgroundActionCreators from "VideoBackgroundActionCreators" /* 6092 */;
+import LastUsedVideoBackgroundOption from "LastUsedVideoBackgroundOption" /* 6094 */;
+import getDefaultBackgroundDataDefault from "getDefaultBackgroundData" /* 6097 */;
+import getFilterImageDefault from "getFilterImage" /* 6102 */;
+import isVideoBackgroundEnabledDefault from "isVideoBackgroundEnabled" /* 6103 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1383 */;
-import VideoBackgroundStore from "VideoBackgroundStore" /* 5926 */;
-import VideoBackgroundConstants from "VideoBackgroundConstants" /* 5927 */;
+import UserStore from "UserStore" /* 1385 */;
+import VideoBackgroundStore from "VideoBackgroundStore" /* 6090 */;
+import VideoBackgroundConstants from "VideoBackgroundConstants" /* 6091 */;
 import size from "module_2" /* 2 */;
 
 let c8, c9;
@@ -222,11 +222,11 @@ obj = function _applyBackgroundOptionLive() {
       }
       await "HermesInternal";
       flag = track.track;
-      const tmp14 = track;
+      const tmp22 = track;
       if (flag === undefined) {
         flag = true;
       }
-      location = tmp14.location;
+      location = tmp22.location;
       return "flexDirection";
     })();
     iter.next();

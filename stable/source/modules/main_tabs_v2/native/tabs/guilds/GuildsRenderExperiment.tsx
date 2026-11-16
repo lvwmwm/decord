@@ -1,10 +1,10 @@
-// Module ID: 18067
-// Function ID: 18068
+// Module ID: 18444
+// Function ID: 18445
 // Name: GuildsRenderExperiment
-// Dependencies: [1447, 2]
+// Dependencies: [1449, 2]
 
-// Module 18067 (GuildsRenderExperiment)
-import ApexExperiment from "ApexExperiment" /* 1447 */;
+// Module 18444 (GuildsRenderExperiment)
+import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

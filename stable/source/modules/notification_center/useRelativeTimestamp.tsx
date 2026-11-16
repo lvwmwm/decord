@@ -1,11 +1,11 @@
-// Module ID: 18089
-// Function ID: 18090
+// Module ID: 18466
+// Function ID: 18467
 // Name: useRelativeTimestamp
-// Dependencies: [32, 19, 6860, 1089, 2]
+// Dependencies: [32, 19, 6948, 1089, 2]
 // Exports: useRelativeTimestamp
 
-// Module 18089 (useRelativeTimestamp)
-import NotificationCenterUtils from "NotificationCenterUtils" /* 6860 */;
+// Module 18466 (useRelativeTimestamp)
+import NotificationCenterUtils from "NotificationCenterUtils" /* 6948 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

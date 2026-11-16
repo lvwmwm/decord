@@ -1,16 +1,16 @@
-// Module ID: 19176
-// Function ID: 19177
+// Module ID: 19590
+// Function ID: 19591
 // Name: SoundboardHooks
-// Dependencies: [5, 19, 5015, 1192, 19169, 5272, 504, 5021, 4844, 7517, 2]
+// Dependencies: [5, 19, 5171, 1192, 19583, 5420, 504, 5177, 5290, 5000, 7622, 2]
 // Exports: useMaybeFetchSoundboardSounds, useSoundButtonStyleConfig
 
-// Module 19176 (SoundboardHooks)
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5272 */;
+// Module 19590 (SoundboardHooks)
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5420 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import AccessibilityStore from "AccessibilityStore" /* 5171 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
-import SoundboardStyleConstants from "SoundboardStyleConstants" /* 19169 */;
+import SoundboardStyleConstants from "SoundboardStyleConstants" /* 19583 */;
 import size from "module_2" /* 2 */;
 
 let c0, c1;
@@ -74,14 +74,16 @@ export function useMaybeFetchSoundboardSounds(shouldFetch) {
                 const obj4 = { value, done: true };
                 return obj4;
               } else {
-                const tmp4 = c0;
-                if (tmp4) {
-                  const FrecencyUserSettingsActionCreators = closure_2_0(closure_2_1[8]).FrecencyUserSettingsActionCreators;
-                  const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
+                const tmp12 = c0;
+                if (tmp12) {
+                  const ignoreErrors = closure_2_0(closure_2_1[8]).ignoreErrors;
+                  const tmp6 = closure_2_0(closure_2_1[8]);
+                  const FrecencyUserSettingsActionCreators = closure_2_0(closure_2_1[9]).FrecencyUserSettingsActionCreators;
+                  ignoreErrors(FrecencyUserSettingsActionCreators.loadIfNecessary());
                   c1 = 1;
                   c0 = 1;
                   const obj5 = { value: obj2.maybeFetchSoundboardSounds(), done: false };
-                  obj2 = closure_2_0(closure_2_1[9]);
+                  obj2 = closure_2_0(closure_2_1[10]);
                   return obj5;
                 }
               }

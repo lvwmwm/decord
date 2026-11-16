@@ -1,15 +1,15 @@
-// Module ID: 19237
-// Function ID: 19238
+// Module ID: 19672
+// Function ID: 19673
 // Name: useVoiceChannelAppSurface
-// Dependencies: [6846, 16363, 18893, 504, 13188, 18675, 2]
+// Dependencies: [6934, 16713, 19303, 504, 13444, 19073, 2]
 // Exports: useCurrentVoiceChannelApplicationId, useVoiceChannelAppAvailable, useVoiceChannelAppOpen, useVoiceChannelAppVisible
 
-// Module 19237 (useVoiceChannelAppSurface)
-import voiceChannelAppSession from "voiceChannelAppSession" /* 13188 */;
-import useChannelAppFrameTeardownDefault from "useChannelAppFrameTeardown" /* 18675 */;
-import useVoiceChannelApp from "useVoiceChannelApp" /* 18893 */;
-import FramesStore from "FramesStore" /* 6846 */;
-import VoiceChannelAppStore from "VoiceChannelAppStore" /* 16363 */;
+// Module 19672 (useVoiceChannelAppSurface)
+import voiceChannelAppSession from "voiceChannelAppSession" /* 13444 */;
+import useChannelAppFrameTeardownDefault from "useChannelAppFrameTeardown" /* 19073 */;
+import useVoiceChannelApp from "useVoiceChannelApp" /* 19303 */;
+import FramesStore from "FramesStore" /* 6934 */;
+import VoiceChannelAppStore from "VoiceChannelAppStore" /* 16713 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,17 +1,17 @@
-// Module ID: 18503
-// Function ID: 18504
+// Module ID: 18893
+// Function ID: 18894
 // Name: ForYouRecentActivitySectionHeader
-// Dependencies: [19, 17, 21, 5014, 575, 5624, 1113, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 5783, 1113, 2]
 // Exports: ForYouRecentActivitySectionHeader
 
-// Module 18503 (ForYouRecentActivitySectionHeader)
+// Module 18893 (ForYouRecentActivitySectionHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
+import Text_Text from "Text/Text" /* 5783 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -28,7 +28,7 @@ const result = size.fileFinishedImporting("modules/notification_center/native/Fo
 export function ForYouRecentActivitySectionHeader() {
   let intl;
   const tmp = closure_4();
-  ({ style: tmp.textHeader, color: "text-muted", variant: "text-sm/semibold", accessibilityRole: "header", children: intl.string(intl2.t.yM9Krm) });
+  ({ style: tmp.textHeader, color: "text-muted", variant: "body-sm/semibold", accessibilityRole: "header", children: intl.string(intl2.t.yM9Krm) });
   const Text = Text_Text.Text;
   intl = intl2.intl;
   return <View style={tmp.container}>{null}</View>;

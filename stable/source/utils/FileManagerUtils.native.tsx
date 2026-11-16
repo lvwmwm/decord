@@ -1,13 +1,13 @@
-// Module ID: 8778
-// Function ID: 8779
+// Module ID: 8882
+// Function ID: 8883
 // Name: FileManagerUtils
-// Dependencies: [5, 3, 1149, 1375, 2]
+// Dependencies: [5, 3, 1149, 1377, 2]
 // Exports: clearFolder, moveFile, readFile, removeFile, writeFile
 
-// Module 8778 (FileManagerUtils)
+// Module 8882 (FileManagerUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import react_nativeDefault from "react-native" /* 1149 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

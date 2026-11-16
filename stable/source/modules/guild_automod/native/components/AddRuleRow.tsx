@@ -1,15 +1,15 @@
-// Module ID: 19684
-// Function ID: 19685
+// Module ID: 20135
+// Function ID: 20136
 // Name: AddRuleRow
-// Dependencies: [19, 21, 6975, 11489, 1113, 19671, 2]
+// Dependencies: [19, 21, 7071, 11666, 1113, 20122, 2]
 // Exports: default
 
-// Module 19684 (AddRuleRow)
+// Module 20135 (AddRuleRow)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import TableRow2 from "TableRow" /* 6975 */;
-import CirclePlusIcon from "CirclePlusIcon" /* 11489 */;
-import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 19671 */;
+import TableRow2 from "TableRow" /* 7071 */;
+import CirclePlusIcon from "CirclePlusIcon" /* 11666 */;
+import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 20122 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

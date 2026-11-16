@@ -1,19 +1,19 @@
-// Module ID: 19111
-// Function ID: 19112
+// Module ID: 19525
+// Function ID: 19526
 // Name: ConjureAppPictureInPictures
-// Dependencies: [19, 17, 6846, 6847, 21, 5014, 1491, 1625, 19112, 7101, 5095, 19115, 504, 16366, 19116, 19118, 19119, 2]
+// Dependencies: [19, 17, 6934, 6935, 21, 5170, 1493, 1627, 19526, 7205, 1652, 19529, 504, 16716, 19530, 19532, 19533, 2]
 // Exports: default
 
-// Module 19111 (ConjureAppPictureInPictures)
+// Module 19525 (ConjureAppPictureInPictures)
 import react_native from "react-native" /* 17 */;
-import conjureAppPictureInPictureFrames from "conjureAppPictureInPictureFrames" /* 16366 */;
-import conjureAppPictureInPictureLayout from "conjureAppPictureInPictureLayout" /* 19115 */;
-import useFloatConjureAppsOffScreenDefault from "useFloatConjureAppsOffScreen" /* 19119 */;
+import conjureAppPictureInPictureFrames from "conjureAppPictureInPictureFrames" /* 16716 */;
+import conjureAppPictureInPictureLayout from "conjureAppPictureInPictureLayout" /* 19529 */;
+import useFloatConjureAppsOffScreenDefault from "useFloatConjureAppsOffScreen" /* 19533 */;
 import react_mod from "react" /* 19 */;
-import FramesStore from "FramesStore" /* 6846 */;
-import FramesConstants from "FramesConstants" /* 6847 */;
+import FramesStore from "FramesStore" /* 6934 */;
+import FramesConstants from "FramesConstants" /* 6935 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let c9;

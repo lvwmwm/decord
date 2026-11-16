@@ -1,22 +1,22 @@
-// Module ID: 14709
-// Function ID: 14710
+// Module ID: 14974
+// Function ID: 14975
 // Name: openQuestCollectibleRewardModal
-// Dependencies: [1383, 6781, 21, 5014, 575, 504, 9700, 9681, 5624, 1113, 7853, 14495, 2]
+// Dependencies: [1385, 6869, 21, 5170, 575, 504, 9823, 9805, 5783, 1113, 7963, 14760, 2]
 // Exports: openQuestCollectibleRewardModal
 
-// Module 14709 (openQuestCollectibleRewardModal)
+// Module 14974 (openQuestCollectibleRewardModal)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import QuestConstants from "QuestConstants" /* 6781 */;
-import getQuestLogger from "getQuestLogger" /* 7853 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 9681 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 9700 */;
-import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 14495 */;
-import UserStore from "UserStore" /* 1383 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import QuestConstants from "QuestConstants" /* 6869 */;
+import getQuestLogger from "getQuestLogger" /* 7963 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 9805 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 9823 */;
+import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 14760 */;
+import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -37,11 +37,11 @@ function QuestCollectibleRewardModalMessages(quest) {
   const obj4 = { children: items1 };
   const obj3 = hooks_QuestHooks;
   const claimedCollectibleRewardMessage = obj3.useClaimedCollectibleRewardMessage(quest.config);
-  const obj5 = { variant: "heading-xl/bold", style: tmp.title, children: intl.format(intl2.t.YNaxMp, { itemName: defaultRewardNameWithArticle }) };
+  const obj5 = { variant: "heading-xl/semibold", style: tmp.title, children: intl.format(intl2.t.YNaxMp, { itemName: defaultRewardNameWithArticle }) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   items1 = [hasOwnProperty(Text, obj5), ];
-  const obj6 = { variant: "text-md/medium", style: tmp.title, children: claimedCollectibleRewardMessage };
+  const obj6 = { variant: "body-md/medium", style: tmp.title, children: claimedCollectibleRewardMessage };
   items1[1] = hasOwnProperty(Text_Text.Text, obj6);
   return metroImportDefault(metroRequire, obj4);
 }

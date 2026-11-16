@@ -1,16 +1,16 @@
-// Module ID: 18944
-// Function ID: 18945
+// Module ID: 19354
+// Function ID: 19355
 // Name: SearchNavigatorPreviewScreen
-// Dependencies: [19, 17, 1072, 21, 5014, 1497, 1500, 13907, 18901, 2]
+// Dependencies: [19, 17, 1072, 21, 5170, 1499, 1502, 14173, 19311, 2]
 // Exports: default
 
-// Module 18944 (SearchNavigatorPreviewScreen)
+// Module 19354 (SearchNavigatorPreviewScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13907 */;
+import TrackingDefault from "Tracking" /* 14173 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -33,7 +33,7 @@ export default function SearchNavigatorPreviewScreen() {
   const onBeforeJumpToMessage = route.params.onBeforeJumpToMessage;
   const items = [searchContext, channelId, onBeforeJumpToMessage, navigation];
   const callback = onBeforeJumpToMessage.useCallback(() => {
-    const obj = search_tracking_TrackingDefault;
+    const obj = TrackingDefault;
     const obj2 = { searchContext, channelId };
     const result = obj.trackSearchJumpToMessage(obj2);
     const tmp = searchContext;

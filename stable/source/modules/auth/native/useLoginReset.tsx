@@ -1,10 +1,10 @@
-// Module ID: 7121
-// Function ID: 7122
+// Module ID: 7225
+// Function ID: 7226
 // Name: useLoginReset
-// Dependencies: [19, 502, 6740, 2]
+// Dependencies: [19, 502, 6827, 2]
 // Exports: default
 
-// Module 7121 (useLoginReset)
+// Module 7225 (useLoginReset)
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;

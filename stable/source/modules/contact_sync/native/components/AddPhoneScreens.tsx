@@ -1,24 +1,24 @@
-// Module ID: 14275
-// Function ID: 14276
+// Module ID: 14539
+// Function ID: 14540
 // Name: AddPhoneScreens
-// Dependencies: [5, 32, 19, 17, 1383, 14248, 21, 5014, 5586, 575, 1497, 5624, 1113, 7212, 7213, 14247, 563, 7207, 38, 7246, 7163, 2]
+// Dependencies: [5, 32, 19, 17, 1385, 14512, 21, 5170, 5746, 575, 1499, 5783, 1113, 7309, 7310, 14511, 563, 7303, 38, 7342, 7258, 2]
 // Exports: AddPhoneScreen, VerifyPasswordScreen, VerifyPhoneScreen
 
-// Module 14275 (AddPhoneScreens)
+// Module 14539 (AddPhoneScreens)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import NavigatorConstants from "NavigatorConstants" /* 5586 */;
-import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7207 */;
-import AddPhoneDefault from "AddPhone" /* 7212 */;
-import PhoneActionCreators from "PhoneActionCreators" /* 7213 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 14247 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 14248 */;
+import NavigatorConstants from "NavigatorConstants" /* 5746 */;
+import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7303 */;
+import AddPhoneDefault from "AddPhone" /* 7309 */;
+import PhoneActionCreators from "PhoneActionCreators" /* 7310 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 14511 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 14512 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1383 */;
+import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const PhoneActionCreatorsDefault = PhoneActionCreators;
@@ -49,11 +49,11 @@ export function AddPhoneScreen() {
   _require = obj.useNavigation();
   const tmp = closure_11();
   const obj2 = { style: tmp.header, children: items };
-  const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(require("intl").t.Xgb497) };
+  const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(require("intl").t.Xgb497) };
   const Text = require("Text/Text").Text;
   intl = require("intl").intl;
   items = [closure_9(Text, obj3), ];
-  const obj4 = { style: tmp.subtitle, variant: "text-sm/medium", color: "text-default", children: intl2.string(require("intl").t.qFmzyo) };
+  const obj4 = { style: tmp.subtitle, variant: "body-sm/medium", color: "text-default", children: intl2.string(require("intl").t.qFmzyo) };
   const Text2 = require("Text/Text").Text;
   intl2 = require("intl").intl;
   items[1] = closure_9(Text2, obj4);

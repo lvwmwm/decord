@@ -1,15 +1,15 @@
-// Module ID: 9927
-// Function ID: 9928
+// Module ID: 10082
+// Function ID: 10083
 // Name: PremiumFeaturesLogo
-// Dependencies: [19, 1385, 21, 9928, 7622, 5717, 2047, 2]
+// Dependencies: [19, 1387, 21, 10083, 7731, 5874, 2171, 2]
 // Exports: default
 
-// Module 9927 (PremiumFeaturesLogo)
+// Module 10082 (PremiumFeaturesLogo)
 import Fragment from "Fragment" /* 21 */;
-import PremiumConstants from "PremiumConstants" /* 1385 */;
-import PremiumUtils from "PremiumUtils" /* 2047 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7622 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9928 */;
+import PremiumConstants from "PremiumConstants" /* 1387 */;
+import PremiumUtils from "PremiumUtils" /* 2171 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7731 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10083 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ export default function PremiumFeaturesLogo(premiumType) {
     tmp = importDefault;
     tmp3 = AssetRegistryDefault;
   }
-  tmp(5717);
+  tmp(5874);
   const obj2 = PremiumUtils;
   return <tmpResult accessible accessibilityLabel={obj2.getPremiumTypeDisplayName(premiumType)} accessibilityRole="header" style={style} resizeMode="contain" source={tmp3} />;
 };

@@ -1,14 +1,14 @@
-// Module ID: 5706
-// Function ID: 5707
+// Module ID: 5863
+// Function ID: 5864
 // Name: handleURL
-// Dependencies: [5, 17, 5259, 1072, 3, 5707, 5708, 5709, 5710, 1943, 5711, 1113, 5742, 1375, 5258, 1380, 5745, 7508, 15669, 2]
+// Dependencies: [5, 17, 5407, 1072, 3, 5864, 5865, 5866, 5867, 2067, 5868, 1113, 5898, 1377, 5406, 5901, 1381, 5902, 7613, 16012, 2]
 // Exports: default
 
-// Module 5706 (handleURL)
+// Module 5863 (handleURL)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ActionSheetStore from "ActionSheetStore" /* 5259 */;
+import ActionSheetStore from "ActionSheetStore" /* 5407 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -39,7 +39,7 @@ let obj = function _handleURL() {
       let open;
       let openInBrowser;
       let tmp4;
-      let tmp57;
+      let tmp62;
       function tryHandleCustomScheme(tryHandleUniversalLink) {
         let protocol;
         let regex;
@@ -158,30 +158,34 @@ let obj = function _handleURL() {
         } else {
           tryHandleUniversalLink = flag2;
           if (tryHandleUniversalLink) {
+            if (tryHandleUniversalLink.startsWith("//")) {
+              tryHandleUniversalLink = closure_132_1(closure_132_2[15])(tryHandleUniversalLink);
+            }
             openInBrowser();
+            c8 = 3;
+            return { value: "HermesInternal", done: null };
           } else {
-            let obj6 = /^[a-zA-Z0-9+-.]+:/;
-            tryHandleUniversalLink = obj6.test(tryHandleUniversalLink) || `https://${tryHandleUniversalLink}`;
-            let obj7 = /^https?:/i;
-            tryHandleUniversalLink = obj7.test(tryHandleUniversalLink);
+            tryHandleUniversalLink = closure_132_1(closure_132_2[15])(tryHandleUniversalLink);
+            let obj6 = /^https?:/i;
+            tryHandleUniversalLink = obj6.test(tryHandleUniversalLink);
             if (tryHandleUniversalLink) {
-              const obj8 = closure_132_1(closure_132_2[15]);
-              tmp57 = obj8.parse(tryHandleUniversalLink);
-              tmp57.pathname = closure_132_9(tmp57.pathname);
-              tmp57.search = closure_132_9(tmp57.search);
-              tmp57.hash = closure_132_9(tmp57.hash);
-              const obj9 = closure_132_1(closure_132_2[15]);
-              tryHandleUniversalLink = obj9.format(tmp57);
+              let obj7 = closure_132_1(closure_132_2[16]);
+              tmp62 = obj7.parse(tryHandleUniversalLink);
+              tmp62.pathname = closure_132_9(tmp62.pathname);
+              tmp62.search = closure_132_9(tmp62.search);
+              tmp62.hash = closure_132_9(tmp62.hash);
+              const obj8 = closure_132_1(closure_132_2[16]);
+              tryHandleUniversalLink = obj8.format(tmp62);
               c6 = 0;
             }
-            const payload = closure_132_1(closure_132_2[16])(tryHandleUniversalLink).payload;
+            const payload = closure_132_1(closure_132_2[17])(tryHandleUniversalLink).payload;
             tryHandleUniversalLink = payload.type === closure_132_6.CHANNEL && null != payload.channelId;
             if (tryHandleUniversalLink) {
-              const obj10 = closure_132_0(closure_132_2[17]);
-              tryHandleUniversalLink = obj10.queueFrameDeepLinkFromUrl(payload.channelId, tryHandleUniversalLink);
+              const obj9 = closure_132_0(closure_132_2[18]);
+              tryHandleUniversalLink = obj9.queueFrameDeepLinkFromUrl(payload.channelId, tryHandleUniversalLink);
             }
-            const obj11 = { payload, safe: true };
-            tryHandleUniversalLink = closure_132_1(closure_132_2[18])(obj11);
+            const obj10 = { payload, safe: true };
+            tryHandleUniversalLink = closure_132_1(closure_132_2[19])(obj10);
             if (!tryHandleUniversalLink) {
               const tmp53 = flag;
               if (tmp53) {
@@ -204,14 +208,14 @@ let obj = function _handleURL() {
                 };
                 c7 = 3;
                 c8 = 1;
-                const obj12 = { value: tryHandleUniversalLink(tryHandleUniversalLink), done: false };
-                return obj12;
+                const obj11 = { value: tryHandleUniversalLink(tryHandleUniversalLink), done: false };
+                return obj11;
               }
             }
           }
         }
       } else if (2 === tmp4) {
-        let tmp12 = tmp57;
+        let tmp12 = tmp62;
         c6 = 0;
         c8 = 3;
         return { value: "HermesInternal", done: null };

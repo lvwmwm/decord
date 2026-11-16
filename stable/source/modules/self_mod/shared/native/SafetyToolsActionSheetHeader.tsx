@@ -1,17 +1,17 @@
-// Module ID: 11305
-// Function ID: 11306
+// Module ID: 11477
+// Function ID: 11478
 // Name: SafetyToolsActionSheetHeader
-// Dependencies: [19, 17, 21, 5014, 575, 11296, 6998, 5624, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 11468, 7097, 5783, 2]
 // Exports: default
 
-// Module 11305 (SafetyToolsActionSheetHeader)
+// Module 11477 (SafetyToolsActionSheetHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import NavigatorHeader from "NavigatorHeader" /* 6998 */;
-import SafetyToolsActionCreators from "SafetyToolsActionCreators" /* 11296 */;
+import NavigatorHeader from "NavigatorHeader" /* 7097 */;
+import SafetyToolsActionCreators from "SafetyToolsActionCreators" /* 11468 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -52,6 +52,6 @@ export default function SafetyToolsActionSheetHeader(channelId) {
       return React3(obj.getHeaderBackButton(callback), obj2);
     }, items1);
   }
-  items2 = [memo, navbarLeft(channelId(recipientId[7]).Text, { variant: "heading-lg/bold", color: "mobile-text-heading-primary", children: title })];
+  items2 = [memo, navbarLeft(channelId(recipientId[7]).Text, { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: title })];
   return tmp3(tmp4, obj);
 };

@@ -1,20 +1,20 @@
-// Module ID: 19563
-// Function ID: 19564
+// Module ID: 20006
+// Function ID: 20007
 // Name: RedesignAddAvatarModal
-// Dependencies: [5, 32, 19, 17, 8731, 1072, 21, 5014, 575, 1625, 504, 16442, 19543, 8740, 8821, 8220, 8735, 8737, 5624, 1113, 19552, 5634, 19540, 2]
+// Dependencies: [5, 32, 19, 17, 8835, 1072, 21, 5170, 575, 1627, 504, 16792, 19987, 8844, 8928, 8323, 8839, 8841, 5783, 1113, 19996, 5790, 19984, 2]
 // Exports: default
 
-// Module 19563 (RedesignAddAvatarModal)
+// Module 20006 (RedesignAddAvatarModal)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import AddAvatarModalActionCreators from "AddAvatarModalActionCreators" /* 19540 */;
+import AddAvatarModalActionCreators from "AddAvatarModalActionCreators" /* 19984 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8731 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8835 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -180,11 +180,11 @@ export default function RedesignAddAvatarModal(route) {
   let obj5 = { style: tmp.headerContainer, children: items3 };
   let obj6 = { children: items2 };
   const memoizedImageSourceResult = memoizedImageSource(imageUri);
-  let obj7 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(tmp9(tmp8[19]).t.XQRWvR) };
+  let obj7 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(tmp9(tmp8[19]).t.XQRWvR) };
   const Text = tmp9(tmp8[18]).Text;
   intl = tmp9(tmp8[19]).intl;
   items2 = [closure_10(Text, obj7), ];
-  let obj8 = { style: tmp.subtitle, variant: "text-sm/medium", color: "text-default", children: intl2.string(tmp9(tmp8[19]).t.fH9TLT) };
+  let obj8 = { style: tmp.subtitle, variant: "body-sm/medium", color: "text-default", children: intl2.string(tmp9(tmp8[19]).t.fH9TLT) };
   const Text2 = tmp9(tmp8[18]).Text;
   intl2 = tmp9(tmp8[19]).intl;
   items2[1] = closure_10(Text2, obj8);
@@ -199,7 +199,7 @@ export default function RedesignAddAvatarModal(route) {
   items3[1] = closure_10(require("TouchableUploadAvatar"), obj9);
   let obj10 = { style: tmp.errorContainer, children: tmp19Result };
   if (tmp19Result) {
-    const obj11 = { variant: "text-sm/medium", color: "text-feedback-critical", children: intl3.string(onComplete(selectedAvatar[19]).t.XyLlVm) };
+    const obj11 = { variant: "body-sm/medium", color: "text-feedback-critical", children: intl3.string(onComplete(selectedAvatar[19]).t.XyLlVm) };
     const Text3 = tmp9(tmp8[18]).Text;
     intl3 = tmp9(tmp8[19]).intl;
     tmp19Result = closure_10(Text3, obj11);

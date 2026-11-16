@@ -1,57 +1,61 @@
 // Module ID: 4756
 // Function ID: 4757
-// Dependencies: [2070]
+// Dependencies: [4753]
 
 // Module 4756
-import buildLocalizeFn from "buildLocalizeFn" /* 2070 */;
+import DateToSystemTimezoneSetter from "DateToSystemTimezoneSetter" /* 4753 */;
 
-let obj;
-let obj3;
-let obj4;
-let obj5;
-let obj6;
-let obj7;
-if (!buildLocalizeFn) {
-  obj = { default: buildLocalizeFn };
-  const obj2 = { default: buildLocalizeFn };
-} else {
-  obj = buildLocalizeFn;
+let num;
+class Parser {
+  constructor() {
+    if (!(this instanceof Parser)) {
+      const _TypeError = TypeError;
+      const self = this;
+      const self2 = this;
+      const typeError = new TypeError("Cannot call a class as a function");
+      throw typeError;
+    }
+  }
 }
-const date = {
-  ordinalNumber(arg0, unit) {
-    const NumberResult = Number(arg0);
-    unit = undefined;
-    if (null != unit) {
-      unit = unit.unit;
+const entry = {
+  key: "run",
+  value: function run(arg0, arg1, arg2, arg3) {
+    let valueSetter;
+    const self = this;
+    const iter = this.parse(arg0, arg1, arg2, arg3);
+    let tmp = null;
+    if (iter) {
+      const self2 = this;
+      const self3 = this;
+      const obj = { setter: valueSetter, rest: iter.rest };
+      valueSetter = new DateToSystemTimezoneSetter.ValueSetter(iter.value, self.validate, self.set, self.priority, self.subPriority);
+      tmp = obj;
     }
-    if ("date" === unit) {
-      return NumberResult + "\u65E5";
-    } else if ("hour" === unit) {
-      return NumberResult + "\u6642";
-    } else if ("minute" === unit) {
-      return NumberResult + "\u5206";
-    } else if ("second" === unit) {
-      return NumberResult + "\u79D2";
-    } else {
-      return "\u7B2C " + NumberResult;
-    }
-  },
-  era: obj.default(obj3),
-  quarter: obj.default(obj4),
-  month: obj.default(obj5),
-  day: obj.default(obj6),
-  dayPeriod: obj.default(obj7)
-};
-obj3 = { values: { narrow: ["\u524D", "\u516C\u5143"], abbreviated: ["\u524D", "\u516C\u5143"], wide: ["\u516C\u5143\u524D", "\u516C\u5143"] }, defaultWidth: "wide" };
-obj4 = {
-  values: { narrow: ["1", "2", "3", "4"], abbreviated: ["\u7B2C\u4E00\u523B", "\u7B2C\u4E8C\u523B", "\u7B2C\u4E09\u523B", "\u7B2C\u56DB\u523B"], wide: ["\u7B2C\u4E00\u523B\u9418", "\u7B2C\u4E8C\u523B\u9418", "\u7B2C\u4E09\u523B\u9418", "\u7B2C\u56DB\u523B\u9418"] },
-  defaultWidth: "wide",
-  argumentCallback(arg0) {
-    return arg0 - 1;
+    return tmp;
   }
 };
-obj5 = { values: { narrow: ["\u4E00", "\u4E8C", "\u4E09", "\u56DB", "\u4E94", "\u516D", "\u4E03", "\u516B", "\u4E5D", "\u5341", "\u5341\u4E00", "\u5341\u4E8C"], abbreviated: ["1\u6708", "2\u6708", "3\u6708", "4\u6708", "5\u6708", "6\u6708", "7\u6708", "8\u6708", "9\u6708", "10\u6708", "11\u6708", "12\u6708"], wide: ["\u4E00\u6708", "\u4E8C\u6708", "\u4E09\u6708", "\u56DB\u6708", "\u4E94\u6708", "\u516D\u6708", "\u4E03\u6708", "\u516B\u6708", "\u4E5D\u6708", "\u5341\u6708", "\u5341\u4E00\u6708", "\u5341\u4E8C\u6708"] }, defaultWidth: "wide" };
-obj6 = { values: { narrow: ["\u65E5", "\u4E00", "\u4E8C", "\u4E09", "\u56DB", "\u4E94", "\u516D"], short: ["\u65E5", "\u4E00", "\u4E8C", "\u4E09", "\u56DB", "\u4E94", "\u516D"], abbreviated: ["\u9031\u65E5", "\u9031\u4E00", "\u9031\u4E8C", "\u9031\u4E09", "\u9031\u56DB", "\u9031\u4E94", "\u9031\u516D"], wide: ["\u661F\u671F\u65E5", "\u661F\u671F\u4E00", "\u661F\u671F\u4E8C", "\u661F\u671F\u4E09", "\u661F\u671F\u56DB", "\u661F\u671F\u4E94", "\u661F\u671F\u516D"] }, defaultWidth: "wide" };
-obj7 = { values: { narrow: { am: "\u4E0A", pm: "\u4E0B", midnight: "\u51CC\u6668", noon: "\u5348", morning: "\u65E9", afternoon: "\u4E0B\u5348", evening: "\u665A", night: "\u591C" }, abbreviated: { am: "\u4E0A\u5348", pm: "\u4E0B\u5348", midnight: "\u51CC\u6668", noon: "\u4E2D\u5348", morning: "\u65E9\u6668", afternoon: "\u4E2D\u5348", evening: "\u665A\u4E0A", night: "\u591C\u9593" }, wide: { am: "\u4E0A\u5348", pm: "\u4E0B\u5348", midnight: "\u51CC\u6668", noon: "\u4E2D\u5348", morning: "\u65E9\u6668", afternoon: "\u4E2D\u5348", evening: "\u665A\u4E0A", night: "\u591C\u9593" } }, defaultWidth: "wide", formattingValues: { narrow: { am: "\u4E0A", pm: "\u4E0B", midnight: "\u51CC\u6668", noon: "\u5348", morning: "\u65E9", afternoon: "\u4E0B\u5348", evening: "\u665A", night: "\u591C" }, abbreviated: { am: "\u4E0A\u5348", pm: "\u4E0B\u5348", midnight: "\u51CC\u6668", noon: "\u4E2D\u5348", morning: "\u65E9\u6668", afternoon: "\u4E2D\u5348", evening: "\u665A\u4E0A", night: "\u591C\u9593" }, wide: { am: "\u4E0A\u5348", pm: "\u4E0B\u5348", midnight: "\u51CC\u6668", noon: "\u4E2D\u5348", morning: "\u65E9\u6668", afternoon: "\u4E2D\u5348", evening: "\u665A\u4E0A", night: "\u591C\u9593" } }, defaultFormattingWidth: "wide" };
+const items = [
+  entry,
+  {
+    key: "validate",
+    value: function validate(arg0, arg1, arg2) {
+      return true;
+    }
+  }
+];
+for (let num = 0; num < items.length; num = num + 1) {
+  let tmp3 = items[num];
+  let flag = tmp3.enumerable;
+  if (!flag) {
+    flag = false;
+  }
+  tmp3.enumerable = flag;
+  tmp3.configurable = true;
+  if ("value" in tmp3) {
+    tmp3.writable = true;
+  }
+  let _Object = Object;
+  let definePropertyResult1 = Object.defineProperty(tmp2, tmp3.key, tmp3);
+}
 
-export default date;
+export { Parser };

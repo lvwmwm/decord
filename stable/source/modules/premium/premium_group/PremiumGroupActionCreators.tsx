@@ -1,16 +1,16 @@
-// Module ID: 15372
-// Function ID: 15373
+// Module ID: 15694
+// Function ID: 15695
 // Name: PremiumGroupActionCreators
-// Dependencies: [5, 1397, 15373, 1072, 572, 1282, 38, 2]
+// Dependencies: [5, 1404, 15695, 1072, 572, 1282, 38, 2]
 // Exports: acceptSubscriptionGroupInvite, fetchEligibleUsers, fetchPremiumGroupInvite, fetchPremiumGroupInvites, fetchPremiumGroupMembership, fetchSubscriptionGroupMembers, inviteUsersToSubscriptionGroup, removeSubscriptionGroupInvite, removeUserFromSubscriptionGroup
 
-// Module 15372 (PremiumGroupActionCreators)
+// Module 15694 (PremiumGroupActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserRecord from "UserRecord" /* 1397 */;
-import SubscriptionGroupMemberRecord from "SubscriptionGroupMemberRecord" /* 15373 */;
+import UserRecord from "UserRecord" /* 1404 */;
+import SubscriptionGroupMemberRecord from "SubscriptionGroupMemberRecord" /* 15695 */;
 import size from "module_2" /* 2 */;
 
 let closure_4, closure_5, closure_6, limit, status, status2, user, value2;

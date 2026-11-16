@@ -1,14 +1,14 @@
-// Module ID: 17599
-// Function ID: 17600
+// Module ID: 17962
+// Function ID: 17963
 // Name: BurgerIcon
-// Dependencies: [19, 21, 575, 5716, 17600, 2]
+// Dependencies: [19, 21, 575, 5873, 17963, 2]
 // Exports: BurgerIcon
 
-// Module 17599 (BurgerIcon)
+// Module 17962 (BurgerIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5716 */;
-import AssetRegistry from "AssetRegistry" /* 17600 */;
+import BaseIconImage2 from "BaseIconImage" /* 5873 */;
+import AssetRegistry from "AssetRegistry" /* 17963 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

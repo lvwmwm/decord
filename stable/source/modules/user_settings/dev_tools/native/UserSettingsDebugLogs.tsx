@@ -1,23 +1,23 @@
-// Module ID: 17556
-// Function ID: 17557
+// Module ID: 17923
+// Function ID: 17924
 // Name: UserSettingsDebugLogs
-// Dependencies: [32, 19, 17, 1072, 21, 5014, 575, 7098, 1625, 5712, 510, 7, 5624, 7218, 12806, 1113, 17557, 5258, 17558, 7294, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5170, 575, 7202, 1627, 5869, 510, 7, 5783, 7315, 13052, 1113, 17924, 5406, 17925, 7390, 2]
 // Exports: default
 
-// Module 17556 (UserSettingsDebugLogs)
+// Module 17923 (UserSettingsDebugLogs)
 import LogAggregator from "LogAggregator" /* 7 */;
 import Storage2 from "Storage" /* 510 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
-import InputTypes from "InputTypes" /* 7098 */;
-import UserSettingsDebugLogsActionSheet from "UserSettingsDebugLogsActionSheet" /* 17557 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5869 */;
+import InputTypes from "InputTypes" /* 7202 */;
+import UserSettingsDebugLogsActionSheet from "UserSettingsDebugLogsActionSheet" /* 17924 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -159,7 +159,7 @@ export default function UserSettingsDebugLogs() {
     item = item.item;
     const index = item.index;
     const obj = { style: closure_0.log, children: items1 };
-    const obj2 = { style: closure_0.code, variant: "text-xs/normal", color: "text-muted", children: items };
+    const obj2 = { style: closure_0.code, variant: "body-xs/normal", color: "text-muted", children: items };
     const Text = Text_Text.Text;
     items = [, , ];
     const date = new Date(item.time);
@@ -172,10 +172,10 @@ export default function UserSettingsDebugLogs() {
     }
     items[2] = str;
     items1 = [metroImportDefault(Text, obj2), ];
-    const obj3 = { style: closure_0.code, variant: "text-sm/normal", children: items2 };
-    const Text2 = tmp4(5624).Text;
-    const obj4 = { style: closure_0.code, variant: "text-sm/normal", color: "text-brand", children: "[" + item.category + "]: " };
-    const Text3 = tmp4(5624).Text;
+    const obj3 = { style: closure_0.code, variant: "body-sm/normal", children: items2 };
+    const Text2 = tmp4(5783).Text;
+    const obj4 = { style: closure_0.code, variant: "body-sm/normal", color: "text-brand", children: "[" + item.category + "]: " };
+    const Text3 = tmp4(5783).Text;
     items2 = [metroImportAll(Text3, obj4), item.message];
     items1[1] = metroImportDefault(Text2, obj3);
     return metroImportDefault(tmp2, obj, index);

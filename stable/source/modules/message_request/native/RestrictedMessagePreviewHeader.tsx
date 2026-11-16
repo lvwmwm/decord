@@ -1,21 +1,21 @@
-// Module ID: 18980
-// Function ID: 18981
+// Module ID: 19390
+// Function ID: 19391
 // Name: RestrictedMessagePreviewHeader
-// Dependencies: [19, 17, 14016, 21, 5014, 575, 7326, 5068, 8750, 7358, 5711, 5258, 14179, 1994, 8762, 7522, 6744, 6980, 1113, 1187, 5624, 18963, 6957, 18981, 2]
+// Dependencies: [19, 17, 14287, 21, 5170, 575, 7420, 5226, 8854, 7451, 5868, 5406, 14451, 2118, 8866, 7627, 6831, 7076, 1113, 1187, 5783, 19373, 7053, 19391, 2]
 // Exports: default
 
-// Module 18980 (RestrictedMessagePreviewHeader)
+// Module 19390 (RestrictedMessagePreviewHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import asyncRequire from "asyncRequire" /* 1994 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import ToastUtils from "ToastUtils" /* 5711 */;
-import ClipboardUtils from "ClipboardUtils" /* 7358 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8750 */;
-import MessageRequestConstants from "MessageRequestConstants" /* 14016 */;
+import asyncRequire from "asyncRequire" /* 2118 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
+import ToastUtils from "ToastUtils" /* 5868 */;
+import ClipboardUtils from "ClipboardUtils" /* 7451 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8854 */;
+import MessageRequestConstants from "MessageRequestConstants" /* 14287 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -80,7 +80,7 @@ export default function RestrictedMessagePreviewHeader(channel) {
         obj4.popWithKey(closure_1_5);
       }
     };
-    obj.openLazy(asyncRequire(14179, dependencyMap.paths), "MutualGuildsActionSheet", obj2);
+    obj.openLazy(asyncRequire(14451, dependencyMap.paths), "MutualGuildsActionSheet", obj2);
   }, items2);
   let obj4 = { accessibilityRole: "button", accessibilityLabel: intl.string(channel(analyticsLocations[18]).t.iXAna6), onPress: callback, children: closure_6(Avatar, obj5) };
   const PressableOpacity = channel(analyticsLocations[17]).PressableOpacity;
@@ -88,7 +88,7 @@ export default function RestrictedMessagePreviewHeader(channel) {
   obj5 = { style: tmp.avatar, user, guildId: channel.guild_id, size: channel(analyticsLocations[19]).AvatarSizes.XXLARGE, avatarDecoration: user.avatarDecoration };
   Avatar = channel(analyticsLocations[19]).Avatar;
   items3 = [closure_6(PressableOpacity, obj4), , , , , ];
-  const obj6 = { accessibilityRole: "button", accessibilityLabel: intl2.string(channel(analyticsLocations[18]).t.iXAna6), onPress: callback, children: closure_6(channel(analyticsLocations[20]).Text, { variant: "heading-xxl/extrabold", color: "mobile-text-heading-primary", children: name }) };
+  const obj6 = { accessibilityRole: "button", accessibilityLabel: intl2.string(channel(analyticsLocations[18]).t.iXAna6), onPress: callback, children: closure_6(channel(analyticsLocations[20]).Text, { variant: "heading-xxl/semibold", color: "mobile-text-heading-primary", children: name }) };
   const PressableOpacity2 = channel(analyticsLocations[17]).PressableOpacity;
   intl2 = channel(analyticsLocations[18]).intl;
   items3[1] = closure_6(PressableOpacity2, obj6);
@@ -103,11 +103,11 @@ export default function RestrictedMessagePreviewHeader(channel) {
     tmp11Result = tmp11(PressableOpacity3, obj7);
   }
   items3[2] = tmp11Result;
-  const obj9 = { variant: "text-md/medium", color: "text-default", children: intl4.formatToPlainString(channel(analyticsLocations[18]).t["Qvg+6+"], { username: name }) };
+  const obj9 = { variant: "body-md/medium", color: "text-default", children: intl4.formatToPlainString(channel(analyticsLocations[18]).t["Qvg+6+"], { username: name }) };
   const Text = tmp12(tmp3[20]).Text;
   intl4 = tmp12(tmp3[18]).intl;
   items3[3] = closure_6(Text, obj9);
-  const obj10 = { userId: user.id, onPress: callback2, iconSize: channel(analyticsLocations[22]).GuildIconSizes.XSMALL, textVariant: "text-md/medium" };
+  const obj10 = { userId: user.id, onPress: callback2, iconSize: channel(analyticsLocations[22]).GuildIconSizes.XSMALL, textVariant: "body-md/medium" };
   const tmp2Result = user(analyticsLocations[21]);
   items3[4] = closure_6(tmp2Result, obj10);
   items3[5] = closure_6(user(analyticsLocations[23]), { channel, user });

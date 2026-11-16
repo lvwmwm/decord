@@ -1,25 +1,23 @@
-// Module ID: 10259
-// Function ID: 10260
+// Module ID: 10410
+// Function ID: 10411
 // Name: GIFPickerItemActionSheet
-// Dependencies: [19, 17, 21, 5014, 575, 10248, 10244, 1491, 5258, 5712, 1113, 10260, 7358, 5711, 5634, 5272, 5717, 6767, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 10399, 10395, 1493, 5406, 5869, 1113, 10411, 7451, 5868, 5790, 5420, 5874, 6855, 2]
 // Exports: default
 
-// Module 10259 (GIFPickerItemActionSheet)
+// Module 10410 (GIFPickerItemActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import ToastUtils from "ToastUtils" /* 5711 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
-import ClipboardUtils from "ClipboardUtils" /* 7358 */;
-import GIFPickerActionCreators from "GIFPickerActionCreators" /* 10244 */;
-import GifIcon from "GifIcon" /* 10260 */;
+import components_Button_Button from "components/Button/Button" /* 5790 */;
+import ToastUtils from "ToastUtils" /* 5868 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5869 */;
+import ClipboardUtils from "ClipboardUtils" /* 7451 */;
+import GIFPickerActionCreators from "GIFPickerActionCreators" /* 10395 */;
+import GifIcon from "GifIcon" /* 10411 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let hasOwnProperty;
 let metroRequire;
@@ -117,7 +115,7 @@ export default function GIFPickerItemActionSheet(item) {
   let obj2 = { startExpanded: true, children: callback1(callback, obj3) };
   obj3 = { style: tmp.contentWrapper, children: closure_6(callback, obj4) };
   obj4 = { style: tmp.gifContainer, children: items5 };
-  BottomSheet = item(width[15]).BottomSheet;
+  const BottomSheet = item(width[15]).BottomSheet;
   const obj5 = { style: items4, source: { uri: item.src } };
   items4 = [tmp.gifImage, memo];
   items5 = [callback1(isFavoriteGIF(width[16]), obj5), ];

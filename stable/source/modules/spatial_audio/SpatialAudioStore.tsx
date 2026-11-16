@@ -1,18 +1,18 @@
-// Module ID: 5916
-// Function ID: 5917
+// Module ID: 6080
+// Function ID: 6081
 // Name: SpatialAudioStore
-// Dependencies: [1246, 2006, 5764, 5917, 5768, 12, 510, 5918, 504, 5789, 572, 2]
+// Dependencies: [1246, 2130, 5925, 6081, 5929, 12, 510, 6082, 504, 5950, 572, 2]
 
-// Module 5916 (SpatialAudioStore)
+// Module 6080 (SpatialAudioStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import SpatialAudioConstants from "SpatialAudioConstants" /* 5917 */;
-import SpatialAudioForVoiceExperimentDefault from "SpatialAudioForVoiceExperiment" /* 5918 */;
+import SpatialAudioConstants from "SpatialAudioConstants" /* 6081 */;
+import SpatialAudioForVoiceExperimentDefault from "SpatialAudioForVoiceExperiment" /* 6082 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
-import MediaEngineStore from "MediaEngineStore" /* 2006 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5764 */;
-import Constants from "Constants" /* 5768 */;
+import MediaEngineStore from "MediaEngineStore" /* 2130 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5925 */;
+import Constants from "Constants" /* 5929 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -104,8 +104,8 @@ class SpatialAudioStore extends DeviceSettingsStore {
     const items = [ApexExperimentStore];
     self.syncWith(items, handleExperimentChange);
     const mediaEngine = MediaEngineStore.getMediaEngine();
-    mediaEngine.on(self(5789).MediaEngineEvent.Connection, (setSpatialAudioEnabled) => setSpatialAudioEnabled.setSpatialAudioEnabled(isSpatial.isSpatial));
-    mediaEngine.on(self(5789).MediaEngineEvent.SpatialAudioStatus, (arg0) => {
+    mediaEngine.on(self(5950).MediaEngineEvent.Connection, (setSpatialAudioEnabled) => setSpatialAudioEnabled.setSpatialAudioEnabled(isSpatial.isSpatial));
+    mediaEngine.on(self(5950).MediaEngineEvent.SpatialAudioStatus, (arg0) => {
       let flag = arg0 !== UNKNOWN;
       if (flag) {
         UNKNOWN = arg0;

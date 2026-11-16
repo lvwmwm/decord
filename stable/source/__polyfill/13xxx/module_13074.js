@@ -1,271 +1,67 @@
 // Module ID: 13074
 // Function ID: 13075
-// Dependencies: [41, 42, 13075, 13061, 13072, 13080]
-// Exports: getStackAsyncContextStrategy
+// Dependencies: [13075, 13087, 13088, 13096, 13084, 13085, 13077, 13097, 13111, 13114, 13082, 13115, 13116]
+// Exports: create
 
 // Module 13074
-import _mod13061 from "module_13061" /* 13061 */;
-import _mod13072 from "module_13072" /* 13072 */;
-import _mod13075 from "module_13075" /* 13075 */;
-import _mod13080 from "module_13080" /* 13080 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
+import Lexer from "Lexer" /* 13097 */;
+import _slicedToArray from "_slicedToArray" /* 13116 */;
 
 const require = globalThis.__r;
 let _require;
 
-function withScope(arg0) {
-  const obj = _mod13072;
-  const mainCarrier = obj.getMainCarrier();
-  const obj2 = _mod13072;
-  const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
-  let stack = sentryCarrier.stack;
-  if (!stack) {
-    const tmpResult = _mod13080;
-    const defaultCurrentScope = tmpResult.getDefaultCurrentScope();
-    const self = this;
-    const self2 = this;
-    const tmpResult2 = _mod13080;
-    stack = new c3(defaultCurrentScope, tmpResult2.getDefaultIsolationScope());
-  }
-  sentryCarrier.stack = stack;
-  return stack.withScope(arg0);
-}
-function withSetScope(arg0, arg1) {
-  let closure_0 = arg0;
-  let closure_1 = arg1;
-  const obj = _mod13072;
-  const mainCarrier = obj.getMainCarrier();
-  const obj2 = _mod13072;
-  const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
-  let stack = sentryCarrier.stack;
-  if (!stack) {
-    const tmpResult = _mod13080;
-    const defaultCurrentScope = tmpResult.getDefaultCurrentScope();
-    const self = this;
-    const self2 = this;
-    const tmpResult2 = _mod13080;
-    stack = new c3(defaultCurrentScope, tmpResult2.getDefaultIsolationScope());
-  }
-  sentryCarrier.stack = stack;
-  return stack.withScope(() => {
-    stack.getStackTop().scope = scope;
-    return closure_1(scope);
-  });
-}
-function withIsolationScope(arg0) {
-  let closure_0;
-  _require = arg0;
-  const obj = require("module_13072");
-  const mainCarrier = obj.getMainCarrier();
-  const obj2 = require("module_13072");
-  const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
-  let stack = sentryCarrier.stack;
-  if (!stack) {
-    const tmpResult = require("module_13080");
-    const defaultCurrentScope = tmpResult.getDefaultCurrentScope();
-    const self = this;
-    const self2 = this;
-    const tmpResult2 = require("module_13080");
-    stack = new closure_3(defaultCurrentScope, tmpResult2.getDefaultIsolationScope());
-  }
-  sentryCarrier.stack = stack;
-  return stack.withScope(function() {
-    const obj = require("module_13072");
-    const mainCarrier = obj.getMainCarrier();
-    const obj2 = require("module_13072");
-    const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
-    let stack = sentryCarrier.stack;
-    const tmp = closure_0;
-    if (!stack) {
-      const tmp2Result = require("module_13080");
-      const defaultCurrentScope = tmp2Result.getDefaultCurrentScope();
-      const self = this;
-      const self2 = this;
-      const tmp2Result2 = require("module_13080");
-      stack = new closure_2_3(defaultCurrentScope, tmp2Result2.getDefaultIsolationScope());
-    }
-    sentryCarrier.stack = stack;
-    return tmp(stack.getIsolationScope());
-  });
-}
-class AsyncContextStack {
-  constructor(arg0, arg1) {
-    const self = this;
-    let scope = arg0;
-    _classCallCheck(this, AsyncContextStack);
-    if (!arg0) {
-      const self2 = this;
-      const self3 = this;
-      scope = new _mod13075.Scope();
-    }
-    let scope1 = arg1;
-    if (!scope1) {
-      const self4 = this;
-      const self5 = this;
-      scope1 = new _mod13075.Scope();
-    }
-    const items = [{ scope }];
-    self._stack = items;
-    self._isolationScope = scope1;
-  }
-}
-const entry = {
-  key: "withScope",
-  value: function withScope(fn) {
-    const self = this;
-    try {
-      let nextPromise;
-      const promise = fn(tmp);
-      const obj = _mod13061;
-      if (obj.isThenable(promise)) {
-        nextPromise = promise.then((result) => {
-          self._popScope();
-          return result;
-        }, (arg0) => {
-          self._popScope();
-          throw arg0;
-        });
+function createSyntax(types) {
+  let obj;
+  let tmp4;
+  _require = types;
+  let tmp = require("createParser")(types);
+  const arr = require("createWalker")(types);
+  const tmp2 = require("createGenerator")(types);
+  let tmp3 = require("createConvertors")(arr);
+  obj = {
+    List: require("List"),
+    SyntaxError: require("createCustomError"),
+    TokenStream: require("TokenStream"),
+    Lexer: require("Lexer"),
+    vendorPrefix: require("module_13111").vendorPrefix,
+    keyword: require("module_13111").keyword,
+    property: require("module_13111").property,
+    isCustomProperty: require("module_13111").isCustomProperty,
+    definitionSyntax: require("module_13114"),
+    lexer: tmp4,
+    createLexer(arg0) {
+      const tmp = new Lexer(arg0, obj, obj.lexer.structure);
+      return tmp;
+    },
+    tokenize: require("tokenize"),
+    parse: tmp,
+    walk: arr,
+    generate: tmp2,
+    find: arr.find,
+    findLast: arr.findLast,
+    findAll: arr.findAll,
+    clone: require("clone"),
+    fromPlainObject: tmp3.fromPlainObject,
+    toPlainObject: tmp3.toPlainObject,
+    createSyntax(arg0) {
+      return createSyntax(types(obj[12])({}, arg0));
+    },
+    fork(fn) {
+      let tmp6;
+      const tmp3 = _slicedToArray({}, types);
+      const tmp4 = createSyntax;
+      if (typeof fn === "function") {
+        const _Object = Object;
+        tmp6 = fn(tmp3, Object.assign);
       } else {
-        self._popScope();
-        nextPromise = promise;
+        tmp6 = _slicedToArray(tmp3, fn);
       }
-      return nextPromise;
-    } catch (tmp9) {
-      self._popScope();
-      throw tmp9;
-    }
-  }
-};
-let items = [
-  entry,
-  {
-    key: "getClient",
-    value: function getClient() {
-      return this.getStackTop().client;
-    }
-  },
-  {
-    key: "getScope",
-    value: function getScope() {
-      return this.getStackTop().scope;
-    }
-  },
-  {
-    key: "getIsolationScope",
-    value: function getIsolationScope() {
-      return this._isolationScope;
-    }
-  },
-  {
-    key: "getStackTop",
-    value: function getStackTop() {
-      return this._stack[this._stack.length - 1];
-    }
-  },
-  {
-    key: "_pushScope",
-    value: function _pushScope() {
-      const scope = this.getScope();
-      const cloneResult = scope.clone();
-      const _stack = this._stack;
-      const obj = { client: this.getClient(), scope: cloneResult };
-      _stack.push(obj);
-      return cloneResult;
-    }
-  },
-  {
-    key: "_popScope",
-    value: function _popScope() {
-      let arr = this._stack.length > 1;
-      if (arr) {
-        const _stack = this._stack;
-        arr = _stack.pop();
-      }
-      return arr;
-    }
-  }
-];
-const _moduleResult = _createClass(AsyncContextStack, items);
-let c3 = _moduleResult;
-const AsyncContextStack_export = _moduleResult;
-
-export { AsyncContextStack_export as AsyncContextStack };
-export function getStackAsyncContextStrategy() {
-  let obj = {
-    withIsolationScope,
-    withScope,
-    withSetScope,
-    withSetIsolationScope(arg0, arg1) {
-      let closure_0 = arg1;
-      let tmp = closure_0;
-      let obj = closure_0(closure_1[4]);
-      let mainCarrier = obj.getMainCarrier();
-      let obj2 = closure_0(closure_1[4]);
-      let sentryCarrier = obj2.getSentryCarrier(mainCarrier);
-      let stack = sentryCarrier.stack;
-      if (!stack) {
-        const tmpResult = tmp(closure_1[5]);
-        let defaultCurrentScope = tmpResult.getDefaultCurrentScope();
-        let self = this;
-        let self2 = this;
-        const tmpResult2 = tmp(closure_1[5]);
-        stack = new closure_3(defaultCurrentScope, tmpResult2.getDefaultIsolationScope());
-      }
-      sentryCarrier.stack = stack;
-      return stack.withScope(function() {
-        const obj = require("module_13072");
-        const mainCarrier = obj.getMainCarrier();
-        const obj2 = require("module_13072");
-        const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
-        let stack = sentryCarrier.stack;
-        const tmp = closure_0;
-        if (!stack) {
-          const tmp2Result = require("module_13080");
-          const defaultCurrentScope = tmp2Result.getDefaultCurrentScope();
-          const self = this;
-          const self2 = this;
-          const tmp2Result2 = require("module_13080");
-          stack = new closure_2_3(defaultCurrentScope, tmp2Result2.getDefaultIsolationScope());
-        }
-        sentryCarrier.stack = stack;
-        return tmp(stack.getIsolationScope());
-      });
-    },
-    getCurrentScope() {
-      const obj = require("module_13072");
-      const mainCarrier = obj.getMainCarrier();
-      const obj2 = require("module_13072");
-      const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
-      let stack = sentryCarrier.stack;
-      if (!stack) {
-        const tmpResult = require("module_13080");
-        const defaultCurrentScope = tmpResult.getDefaultCurrentScope();
-        const self = this;
-        const self2 = this;
-        const tmpResult2 = require("module_13080");
-        stack = new closure_1_3(defaultCurrentScope, tmpResult2.getDefaultIsolationScope());
-      }
-      sentryCarrier.stack = stack;
-      return stack.getScope();
-    },
-    getIsolationScope() {
-      const obj = require("module_13072");
-      const mainCarrier = obj.getMainCarrier();
-      const obj2 = require("module_13072");
-      const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
-      let stack = sentryCarrier.stack;
-      if (!stack) {
-        const tmpResult = require("module_13080");
-        const defaultCurrentScope = tmpResult.getDefaultCurrentScope();
-        const self = this;
-        const self2 = this;
-        const tmpResult2 = require("module_13080");
-        stack = new closure_1_3(defaultCurrentScope, tmpResult2.getDefaultIsolationScope());
-      }
-      sentryCarrier.stack = stack;
-      return stack.getIsolationScope();
+      return tmp4(tmp6);
     }
   };
+  const obj2 = { generic: true, types: types.types, atrules: types.atrules, properties: types.properties, node: types.node };
+  tmp4 = new require("Lexer")(obj2, obj);
   return obj;
 }
+
+export const create = (arg0) => createSyntax(_slicedToArray({}, arg0));

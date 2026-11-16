@@ -1,17 +1,17 @@
-// Module ID: 19676
-// Function ID: 19677
+// Module ID: 20127
+// Function ID: 20128
 // Name: RuleRow
-// Dependencies: [19, 17, 13292, 21, 5014, 575, 19677, 5624, 5596, 19679, 19674, 19671, 5634, 1113, 6975, 2]
+// Dependencies: [19, 17, 13557, 21, 5170, 575, 20128, 5783, 5756, 20130, 20125, 20122, 5790, 1113, 7071, 2]
 // Exports: default
 
-// Module 19676 (RuleRow)
+// Module 20127 (RuleRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 13292 */;
-import getActionInfo from "getActionInfo" /* 19677 */;
+import Constants from "Constants" /* 13557 */;
+import getActionInfo from "getActionInfo" /* 20128 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -20,7 +20,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp2;
-const Text_Text = tmp2(5624);
+const Text_Text = tmp2(5783);
 function ActionPill(arg0) {
   let action;
   let actionType;
@@ -41,7 +41,7 @@ function ActionPill(arg0) {
     ({ headerText, icon } = actionInfo);
     const obj3 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
     items = [hasOwnProperty(icon, obj3), ];
-    const obj4 = { variant: "text-xs/medium", color: "text-subtle", style: tmp.actionText, children: items1 };
+    const obj4 = { variant: "body-xs/medium", color: "text-subtle", style: tmp.actionText, children: items1 };
     items1 = [headerText, , ];
     let str = null;
     const Text = Text_Text.Text;
@@ -81,11 +81,11 @@ export default function RuleRow(triggerType) {
   triggerType = triggerType.triggerType;
   ({ rule, onPress } = triggerType);
   const tmp = closure_8();
-  let obj = triggerType(5596);
+  let obj = triggerType(5756);
   const token = obj.useToken(nativeDefault.modules.mobile.TABLE_ROW_LABEL_TEXT_STYLE);
-  const obj2 = triggerType(5596);
+  const obj2 = triggerType(5756);
   const token1 = obj2.useToken(nativeDefault.modules.mobile.TABLE_ROW_LABEL_COLOR);
-  const obj3 = triggerType(19679);
+  const obj3 = triggerType(20130);
   const ruleInfo = obj3.getRuleInfo(triggerType, rule);
   if (null == ruleInfo) {
     return null;
@@ -94,14 +94,14 @@ export default function RuleRow(triggerType) {
     let tmp16Result;
     ({ headerText, headerSubtext, icon, descriptionText } = ruleInfo);
     if (null != rule) {
-      const tmp2Result = triggerType(19674);
+      const tmp2Result = triggerType(20125);
       const ruleActionsInOrder = tmp2Result.getRuleActionsInOrder(rule);
       mapped = ruleActionsInOrder.map((actionType) => {
         const obj = { actionType: actionType.type, action: actionType, triggerType };
         return hasOwnProperty(ActionPill, obj, actionType.type);
       });
     } else {
-      const tmp2Result2 = triggerType(19671);
+      const tmp2Result2 = triggerType(20122);
       const availableActionTypes = tmp2Result2.getAvailableActionTypes(triggerType);
       mapped = availableActionTypes.map((actionType) => {
         const obj = { actionType, triggerType };
@@ -116,13 +116,13 @@ export default function RuleRow(triggerType) {
     let tmp10 = tmp7;
     if (null == rule) {
       const obj5 = { children: items };
-      const obj6 = { variant: "text-xs/medium", color: "text-subtle", includeFontPadding: true, children: descriptionText };
-      items = [closure_5(triggerType(5624).Text, obj6), tmp7];
+      const obj6 = { variant: "body-xs/medium", color: "text-subtle", includeFontPadding: true, children: descriptionText };
+      items = [closure_5(triggerType(5783).Text, obj6), tmp7];
       tmp10 = closure_6(closure_7, obj5);
     }
     if (null == rule) {
       let oRs6mG;
-      const Button = tmp2(5634).Button;
+      const Button = tmp2(5790).Button;
       const intl2 = tmp2(1113).intl;
       const string = intl2.string;
       const tmp16 = closure_5;
@@ -135,7 +135,7 @@ export default function RuleRow(triggerType) {
       tmp16Result = tmp16(Button, obj7);
     } else if (!rule.enabled) {
       const obj8 = { text: intl.string(triggerType(1113).t.Yl1D84) };
-      const TrailingText = tmp2(6975).TableRow.TrailingText;
+      const TrailingText = tmp2(7071).TableRow.TrailingText;
       intl = tmp2(1113).intl;
       tmp16Result = closure_5(TrailingText, obj8);
     }
@@ -143,15 +143,15 @@ export default function RuleRow(triggerType) {
     if ("" !== headerSubtext) {
       const obj9 = { variant: token, color: token1, includeFontPadding: true, children: items1 };
       items1 = [headerText, " ", ];
-      const Text = tmp2(5624).Text;
-      const obj10 = { variant: "text-sm/normal", color: "interactive-text-default", children: headerSubtext };
-      items1[2] = closure_5(triggerType(5624).Text, obj10);
+      const Text = tmp2(5783).Text;
+      const obj10 = { variant: "body-sm/normal", color: "interactive-text-default", children: headerSubtext };
+      items1[2] = closure_5(triggerType(5783).Text, obj10);
       tmp18 = closure_6(Text, obj9);
     }
     const obj11 = { label: tmp18, subLabel: tmp10, icon: closure_5(Icon, obj12), trailing: tmp16Result, arrow: null != rule, onPress };
-    const TableRow = tmp2(6975).TableRow;
+    const TableRow = tmp2(7071).TableRow;
     obj12 = {};
-    Icon = tmp2(6975).TableRow.Icon;
+    Icon = tmp2(7071).TableRow.Icon;
     const merged = Object.assign(icon);
     return closure_5(TableRow, obj11);
   }

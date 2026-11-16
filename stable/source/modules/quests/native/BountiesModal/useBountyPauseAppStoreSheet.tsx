@@ -1,18 +1,18 @@
-// Module ID: 16933
-// Function ID: 16934
+// Module ID: 17287
+// Function ID: 17288
 // Name: useBountyPauseAppStoreSheet
-// Dependencies: [19, 6781, 1072, 9691, 9717, 16931, 1108, 6786, 7871, 9719, 7862, 6788, 14679, 16928, 2]
+// Dependencies: [19, 6869, 1072, 9814, 9840, 17285, 1108, 6874, 7981, 9842, 7972, 6876, 14944, 17282, 2]
 // Exports: useBountyPauseAppStoreSheet
 
-// Module 16933 (useBountyPauseAppStoreSheet)
+// Module 17287 (useBountyPauseAppStoreSheet)
 import Constants from "Constants" /* 1072 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
-import QuestConstants from "QuestConstants" /* 6781 */;
-import AdCreativeType from "AdCreativeType" /* 6788 */;
-import AnalyticsActions from "AnalyticsActions" /* 7862 */;
-import trackAppStoreOverlaySurfaceClicked from "trackAppStoreOverlaySurfaceClicked" /* 14679 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 16928 */;
-import QuestCustomAppStoreOverlayUtils from "QuestCustomAppStoreOverlayUtils" /* 16931 */;
+import QuestConstants from "QuestConstants" /* 6869 */;
+import AdCreativeType from "AdCreativeType" /* 6876 */;
+import AnalyticsActions from "AnalyticsActions" /* 7972 */;
+import trackAppStoreOverlaySurfaceClicked from "trackAppStoreOverlaySurfaceClicked" /* 14944 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 17282 */;
+import QuestCustomAppStoreOverlayUtils from "QuestCustomAppStoreOverlayUtils" /* 17285 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -137,7 +137,7 @@ export function useBountyPauseAppStoreSheet(bounty) {
         const tmp3 = require;
         if (arg0 === AdsVideoTypes.PlaybackTriggerSource.USER_INTERACTION) {
           if (null != c5) {
-            if (tmp5 === tmp3(9691).BountiesMobileQuestBarCtrVariant.FIRST_TAP_APP_STORE_OVERLAY) {
+            if (tmp5 === tmp3(9814).BountiesMobileQuestBarCtrVariant.FIRST_TAP_APP_STORE_OVERLAY) {
               if (!ref.current) {
                 tmp9.current = true;
                 const promise = callback1();

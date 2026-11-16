@@ -1,17 +1,17 @@
-// Module ID: 16832
-// Function ID: 16833
+// Module ID: 17186
+// Function ID: 17187
 // Name: FamilyCenterParentalControlsContentAndSocial
-// Dependencies: [19, 17, 1072, 8432, 21, 11540, 1113, 2061, 16583, 2]
+// Dependencies: [19, 17, 1072, 8536, 21, 11717, 1113, 2185, 16936, 2]
 // Exports: default
 
-// Module 16832 (FamilyCenterParentalControlsContentAndSocial)
+// Module 17186 (FamilyCenterParentalControlsContentAndSocial)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2061 */;
-import SettingsConstants from "SettingsConstants" /* 8432 */;
-import SettingBuilders from "SettingBuilders" /* 11540 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
+import SettingsConstants from "SettingsConstants" /* 8536 */;
+import SettingBuilders from "SettingBuilders" /* 11717 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

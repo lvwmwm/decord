@@ -1,17 +1,17 @@
-// Module ID: 8407
-// Function ID: 8408
+// Module ID: 8511
+// Function ID: 8512
 // Name: GuildSpaceSystemMessageUtils
-// Dependencies: [4957, 1383, 8408, 8409, 6041, 1113, 4934, 8410, 2]
+// Dependencies: [5113, 1385, 8512, 8513, 6205, 1113, 5090, 8514, 2]
 // Exports: stringifyGuildSpaceSystemMessage
 
-// Module 8407 (GuildSpaceSystemMessageUtils)
-import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4934 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6041 */;
-import PopularMusicSystemMessageTypes from "PopularMusicSystemMessageTypes" /* 8408 */;
-import PopularMusicSystemMessageCopy from "PopularMusicSystemMessageCopy" /* 8409 */;
-import GuildLeaderboardSystemMessageCopy from "GuildLeaderboardSystemMessageCopy" /* 8410 */;
-import MessageRecord from "MessageRecord" /* 4957 */;
-import UserStore from "UserStore" /* 1383 */;
+// Module 8511 (GuildSpaceSystemMessageUtils)
+import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 5090 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6205 */;
+import PopularMusicSystemMessageTypes from "PopularMusicSystemMessageTypes" /* 8512 */;
+import PopularMusicSystemMessageCopy from "PopularMusicSystemMessageCopy" /* 8513 */;
+import GuildLeaderboardSystemMessageCopy from "GuildLeaderboardSystemMessageCopy" /* 8514 */;
+import MessageRecord from "MessageRecord" /* 5113 */;
+import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/guild_space/GuildSpaceSystemMessageUtils.tsx");
@@ -110,7 +110,7 @@ export function stringifyGuildSpaceSystemMessage(message5, channel) {
       obj6 = NicknameUtilsDefault;
       const tmp31 = importDefault;
       if (guildSpaceLeaderboardMessage.data.event === GuildLeaderboardTypes.GuildSpaceLeaderboardEvent.LEADER_CHANGED) {
-        const tmp31Result = tmp31(6041);
+        const tmp31Result = tmp31(6205);
         str = tmp31Result.getName(guildId, channel_id, guildSpaceLeaderboardMessage.previousLeader);
       }
       const leaderboardSystemMessage = getLeaderboardSystemMessage(data, obj2);

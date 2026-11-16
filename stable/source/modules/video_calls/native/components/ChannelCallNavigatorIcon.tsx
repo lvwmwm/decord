@@ -1,21 +1,21 @@
-// Module ID: 11896
-// Function ID: 11897
+// Module ID: 12094
+// Function ID: 12095
 // Name: ChannelCallNavigatorIcon
-// Dependencies: [19, 17, 11000, 1072, 21, 5014, 575, 6980, 5021, 5600, 1187, 2]
+// Dependencies: [19, 17, 11162, 1072, 21, 5170, 575, 7076, 5177, 5760, 1187, 2]
 // Exports: default
 
-// Module 11896 (ChannelCallNavigatorIcon)
+// Module 12094 (ChannelCallNavigatorIcon)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import shared from "shared" /* 5021 */;
-import VisualEffectViewDefault from "VisualEffectView" /* 5600 */;
-import Pressables from "Pressables" /* 6980 */;
-import ChannelCallStore from "ChannelCallStore" /* 11000 */;
+import shared from "shared" /* 5177 */;
+import VisualEffectViewDefault from "VisualEffectView" /* 5760 */;
+import Pressables from "Pressables" /* 7076 */;
+import ChannelCallStore from "ChannelCallStore" /* 11162 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

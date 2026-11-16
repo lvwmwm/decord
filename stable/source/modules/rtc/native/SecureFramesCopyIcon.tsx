@@ -1,13 +1,13 @@
-// Module ID: 9282
-// Function ID: 9283
+// Module ID: 9395
+// Function ID: 9396
 // Name: SecureFramesCopyIcon
-// Dependencies: [19, 21, 5711, 7358, 8028, 5731, 1113, 2]
+// Dependencies: [19, 21, 5868, 7451, 8131, 5887, 1113, 2]
 // Exports: default
 
-// Module 9282 (SecureFramesCopyIcon)
+// Module 9395 (SecureFramesCopyIcon)
 import Fragment from "Fragment" /* 21 */;
-import ToastUtils from "ToastUtils" /* 5711 */;
-import ClipboardUtils from "ClipboardUtils" /* 7358 */;
+import ToastUtils from "ToastUtils" /* 5868 */;
+import ClipboardUtils from "ClipboardUtils" /* 7451 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

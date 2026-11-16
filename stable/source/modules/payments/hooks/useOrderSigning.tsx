@@ -1,13 +1,13 @@
-// Module ID: 9561
-// Function ID: 9562
+// Module ID: 9681
+// Function ID: 9682
 // Name: useOrderSigning
-// Dependencies: [5, 32, 19, 5747, 4834, 4827, 7418, 9562, 1113, 9564, 2]
+// Dependencies: [5, 32, 19, 5904, 4990, 4983, 7515, 9682, 1113, 9684, 2]
 // Exports: useOrderSigning
 
-// Module 9561 (useOrderSigning)
-import BillingUtils from "BillingUtils" /* 4827 */;
-import BillingErrorDefault from "BillingError" /* 4834 */;
-import PaymentConstants from "PaymentConstants" /* 5747 */;
+// Module 9681 (useOrderSigning)
+import BillingUtils from "BillingUtils" /* 4983 */;
+import BillingErrorDefault from "BillingError" /* 4990 */;
+import PaymentConstants from "PaymentConstants" /* 5904 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -49,13 +49,13 @@ export function useOrderSigning(order) {
     if (!(error instanceof BillingErrorDefault)) {
       const self = this;
       const self2 = this;
-      tmp3 = new tmp(4834)(error);
+      tmp3 = new tmp(4990)(error);
     }
     const obj = BillingUtils;
     if (!obj.isExpectedHttpClientError(error)) {
       const _Error = Error;
       let tmp8 = tmp3;
-      const captureBillingException = tmp5(4827).captureBillingException;
+      const captureBillingException = tmp5(4983).captureBillingException;
       BillingUtils;
       if (error instanceof Error) {
         tmp8 = error;
@@ -67,7 +67,7 @@ export function useOrderSigning(order) {
     if (null != arg2) {
       const self3 = this;
       const self4 = this;
-      tmp3 = new tmp(4834)(arg2);
+      tmp3 = new tmp(4990)(arg2);
     }
     closure_5(tmp3);
     return tmp3;

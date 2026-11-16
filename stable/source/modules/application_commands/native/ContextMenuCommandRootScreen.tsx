@@ -1,21 +1,21 @@
-// Module ID: 18952
-// Function ID: 18953
+// Module ID: 19362
+// Function ID: 19363
 // Name: ContextMenuCommandRootScreen
-// Dependencies: [32, 19, 17, 4885, 6035, 21, 5014, 575, 504, 10316, 9768, 10310, 5607, 7217, 11047, 1113, 5624, 18953, 7218, 7223, 2]
+// Dependencies: [32, 19, 17, 5041, 6199, 21, 5170, 575, 504, 10467, 9891, 10461, 5767, 7314, 5915, 1113, 5783, 19363, 7315, 7320, 2]
 // Exports: default
 
-// Module 18952 (ContextMenuCommandRootScreen)
+// Module 19362 (ContextMenuCommandRootScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import executeCommandDefault from "executeCommand" /* 10310 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import executeCommandDefault from "executeCommand" /* 10461 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6035 */;
+import GuildStore from "GuildStore" /* 5041 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6199 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -207,9 +207,9 @@ export default function ContextMenuCommandRootScreen(navigation) {
   const memo2 = obj2.useMemo(() => memo1.map((item) => item.length), items8);
   const tmp20 = onPressCommand();
   closure_18 = tmp20;
-  c19 = "text-sm/semibold";
+  c19 = "body-sm/semibold";
   const tmpResult = tmp(tmp2[14]);
-  scaledTextLineHeight = tmpResult.useScaledTextLineHeight("text-sm/semibold");
+  scaledTextLineHeight = tmpResult.useScaledTextLineHeight("body-sm/semibold");
   const items9 = [loading, commands.length, tmp7, frecencyItems.length, tmp20.sectionHeader];
   const items10 = [memo1, onPressCommand, callback1, sections];
   const callback2 = obj2.useCallback((arg0) => {

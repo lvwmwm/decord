@@ -1,23 +1,23 @@
-// Module ID: 16364
-// Function ID: 16365
+// Module ID: 16714
+// Function ID: 16715
 // Name: conjureBackgroundFramePlatform
-// Dependencies: [6846, 5657, 6847, 16365, 10927, 16366, 12252, 5675, 5756, 2]
+// Dependencies: [6934, 5813, 6935, 16715, 11093, 16716, 12471, 5831, 5917, 2]
 
-// Module 16364 (conjureBackgroundFramePlatform)
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5657 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5675 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 10927 */;
-import FramePoolManagerDefault from "FramePoolManager" /* 12252 */;
-import isConjureAppChannelFrameDefault from "isConjureAppChannelFrame" /* 16365 */;
-import conjureAppPictureInPictureFrames from "conjureAppPictureInPictureFrames" /* 16366 */;
-import FramesStore from "FramesStore" /* 6846 */;
-import FramesConstants from "FramesConstants" /* 6847 */;
+// Module 16714 (conjureBackgroundFramePlatform)
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5813 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5831 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 11093 */;
+import FramePoolManagerDefault from "FramePoolManager" /* 12471 */;
+import isConjureAppChannelFrameDefault from "isConjureAppChannelFrame" /* 16715 */;
+import conjureAppPictureInPictureFrames from "conjureAppPictureInPictureFrames" /* 16716 */;
+import FramesStore from "FramesStore" /* 6934 */;
+import FramesConstants from "FramesConstants" /* 6935 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
 let metroRequire;
 let tmp;
-const transitionToChannel = tmp(5756);
+const transitionToChannel = tmp(5917);
 const ActivityPanelModes = ActivityPanelConstants.ActivityPanelModes;
 ({ asLaunched: hasOwnProperty, FrameLayoutModes: metroRequire } = FramesConstants);
 let obj = {

@@ -34,7 +34,6 @@ class APIError extends Error {
   constructor(message, code) {
     let _Array2;
     let captchaFields;
-    let errors;
     let first;
     let obj;
     let retryAfter;
@@ -109,7 +108,7 @@ class APIError extends Error {
       const items = [ASSET];
       arr = items;
     }
-    const errors = this.errors;
+    errors = this.errors;
     let tmp = errors;
     if (arr.length > 0) {
       tmp = errors;
@@ -195,7 +194,7 @@ class APIError extends Error {
     return error;
   }
   getAnyErrorMessageAndField() {
-    let errors = this.errors;
+    errors = this.errors;
     let tmp = null;
     if (null != errors) {
       while (null == errors._errors) {

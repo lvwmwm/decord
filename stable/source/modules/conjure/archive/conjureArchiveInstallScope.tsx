@@ -1,10 +1,10 @@
-// Module ID: 12991
-// Function ID: 12992
+// Module ID: 13238
+// Function ID: 13239
 // Name: conjureArchiveInstallScope
-// Dependencies: [5, 12992, 1994, 2]
+// Dependencies: [5, 13239, 2118, 2]
 // Exports: importedConjureInstallScope, readConjureArchiveInstallScope
 
-// Module 12991 (conjureArchiveInstallScope)
+// Module 13238 (conjureArchiveInstallScope)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -14,8 +14,8 @@ let obj = function _readConjureArchiveInstallScope() {
   obj = _asyncToGenerator(async (arg0, value) => {
     function readBytes(arg0) {
       closure_0 = arg0;
-      const promise = new Promise((data, arg1) => {
-        closure_0 = data;
+      const promise = new Promise((arg0, arg1) => {
+        closure_0 = arg0;
         closure_1 = arg1;
         const fileReader = new FileReader();
         fileReader.onload = () => {

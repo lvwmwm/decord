@@ -1,26 +1,26 @@
-// Module ID: 10785
-// Function ID: 10786
+// Module ID: 10936
+// Function ID: 10937
 // Name: MedalFirstBadge
-// Dependencies: [19, 21, 10786, 10787, 10788, 7069, 5717, 2]
+// Dependencies: [19, 21, 10937, 10938, 10939, 7168, 5874, 2]
 // Exports: MedalFirstBadge
 
-// Module 10785 (MedalFirstBadge)
+// Module 10936 (MedalFirstBadge)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 7069 */;
-import _modDef10786 from "module_10786" /* 10786 */;
-import _modDef10787 from "module_10787" /* 10787 */;
-import _modDef10788 from "module_10788" /* 10788 */;
+import react_native from "react-native" /* 7168 */;
+import _modDef10937 from "module_10937" /* 10937 */;
+import _modDef10938 from "module_10938" /* 10938 */;
+import _modDef10939 from "module_10939" /* 10939 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef10786 };
+let obj2 = { uri: _modDef10937 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef10787 };
+let obj3 = { uri: _modDef10938 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef10788 };
-({ uri: _modDef10788 });
+obj[3] = { uri: _modDef10939 };
+({ uri: _modDef10939 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/MedalFirstBadge.native.tsx");
 

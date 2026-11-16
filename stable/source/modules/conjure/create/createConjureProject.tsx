@@ -1,12 +1,12 @@
-// Module ID: 12977
-// Function ID: 12978
+// Module ID: 13224
+// Function ID: 13225
 // Name: createConjureProject
-// Dependencies: [5, 10850, 10875, 12978, 2]
+// Dependencies: [5, 11001, 11028, 13225, 2]
 // Exports: default
 
-// Module 12977 (createConjureProject)
+// Module 13224 (createConjureProject)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10850 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 11001 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, closure_3, guild_id, install_scope, templateId;

@@ -1,14 +1,14 @@
-// Module ID: 19284
-// Function ID: 19285
+// Module ID: 19723
+// Function ID: 19724
 // Name: StreamEnded
-// Dependencies: [19, 21, 8806, 19285, 19286, 5021, 5717, 2]
+// Dependencies: [19, 21, 8913, 19724, 19725, 5177, 5874, 2]
 // Exports: StreamEnded, getStreamEndedSource, useStreamEndedSource
 
-// Module 19284 (StreamEnded)
+// Module 19723 (StreamEnded)
 import Fragment from "Fragment" /* 21 */;
-import shared from "shared" /* 5021 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import _mod8806 from "module_8806" /* 8806 */;
+import shared from "shared" /* 5177 */;
+import FastImageDefault from "FastImage" /* 5874 */;
+import _mod8913 from "module_8913" /* 8913 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -24,21 +24,21 @@ const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("design/components/Illustration/native/redesign/generated/StreamEnded.tsx");
 
 export function getStreamEndedSource(theme) {
-  const obj = _mod8806;
+  const obj = _mod8913;
   const obj2 = { dark, darker };
   return obj.getIllustrationSource(theme, obj2);
 }
 export function useStreamEndedSource() {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8806;
+  const obj2 = _mod8913;
   const obj3 = { dark, darker };
   return obj2.getIllustrationSource(theme, obj3);
 }
 export function StreamEnded(arg0) {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8806;
+  const obj2 = _mod8913;
   const obj3 = { dark, darker };
   const illustrationSource = obj2.getIllustrationSource(theme, obj3);
   FastImageDefault;

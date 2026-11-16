@@ -1,12 +1,12 @@
-// Module ID: 17565
-// Function ID: 17566
+// Module ID: 17932
+// Function ID: 17933
 // Name: CacheActionsStorageDiagnostics
-// Dependencies: [5, 32, 19, 21, 5712, 5735, 17563, 1113, 6027, 5624, 5634, 2]
+// Dependencies: [5, 32, 19, 21, 5869, 5891, 17930, 1113, 6191, 5783, 5790, 2]
 // Exports: default
 
-// Module 17565 (CacheActionsStorageDiagnostics)
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5735 */;
+// Module 17932 (CacheActionsStorageDiagnostics)
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5869 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5891 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -144,9 +144,9 @@ export default function CacheActionsStorageDiagnostics(onBusyChange) {
   [tmp2, c1] = tmp;
   dependencyMap = react.useRef(false);
   obj = { children: items };
-  const Stack = onBusyChange(6027).Stack;
-  let obj2 = { variant: "text-sm/normal", color: "text-subtle", children: intl.string(onBusyChange(1113).t.Fzi4HX) };
-  const Text = onBusyChange(5624).Text;
+  const Stack = onBusyChange(6191).Stack;
+  let obj2 = { variant: "body-sm/normal", color: "text-subtle", children: intl.string(onBusyChange(1113).t.Fzi4HX) };
+  const Text = onBusyChange(5783).Text;
   intl = onBusyChange(1113).intl;
   items = [closure_6(Text, obj2), ];
   let obj3 = {
@@ -158,7 +158,7 @@ export default function CacheActionsStorageDiagnostics(onBusyChange) {
       return obj(...arguments);
     }
   };
-  const Button = onBusyChange(5634).Button;
+  const Button = onBusyChange(5790).Button;
   intl2 = onBusyChange(1113).intl;
   items[1] = closure_6(Button, obj3);
   return closure_7(Stack, obj);

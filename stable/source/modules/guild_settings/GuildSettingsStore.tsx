@@ -1,35 +1,35 @@
-// Module ID: 9075
-// Function ID: 9076
+// Module ID: 9188
+// Function ID: 9189
 // Name: GuildSettingsStore
-// Dependencies: [4878, 9046, 4867, 4881, 8201, 1397, 4885, 1383, 1072, 9076, 8503, 11, 9077, 1282, 572, 9078, 4877, 9079, 2042, 9080, 504, 12, 510, 2]
+// Dependencies: [5034, 9159, 5023, 5037, 8303, 1404, 5041, 1385, 1072, 9189, 8607, 11, 9190, 1282, 572, 9191, 5033, 9192, 2166, 9193, 504, 12, 510, 2]
 
-// Module 9075 (GuildSettingsStore)
+// Module 9188 (GuildSettingsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import _modDef2042 from "module_2042" /* 2042 */;
-import ChannelRecord from "ChannelRecord" /* 4867 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 4877 */;
-import PlainRecord from "PlainRecord" /* 4878 */;
-import GuildRecord from "GuildRecord" /* 4881 */;
-import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 9076 */;
-import GuildSettingsServerTagUtils from "GuildSettingsServerTagUtils" /* 9077 */;
-import GuildSettingsVanityURLActionCreators from "GuildSettingsVanityURLActionCreators" /* 9078 */;
-import getDefaultGuildSettingsSection from "getDefaultGuildSettingsSection" /* 9079 */;
-import GuildSettingsFetchActionCreators from "GuildSettingsFetchActionCreators" /* 9080 */;
-import GuildProfileStore from "GuildProfileStore" /* 9046 */;
-import InviteRecord from "InviteRecord" /* 8201 */;
-import UserRecord from "UserRecord" /* 1397 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import UserStore from "UserStore" /* 1383 */;
+import _modDef2166 from "module_2166" /* 2166 */;
+import ChannelRecord from "ChannelRecord" /* 5023 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 5033 */;
+import PlainRecord from "PlainRecord" /* 5034 */;
+import GuildRecord from "GuildRecord" /* 5037 */;
+import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 9189 */;
+import GuildSettingsServerTagUtils from "GuildSettingsServerTagUtils" /* 9190 */;
+import GuildSettingsVanityURLActionCreators from "GuildSettingsVanityURLActionCreators" /* 9191 */;
+import getDefaultGuildSettingsSection from "getDefaultGuildSettingsSection" /* 9192 */;
+import GuildSettingsFetchActionCreators from "GuildSettingsFetchActionCreators" /* 9193 */;
+import GuildProfileStore from "GuildProfileStore" /* 9159 */;
+import InviteRecord from "InviteRecord" /* 8303 */;
+import UserRecord from "UserRecord" /* 1404 */;
+import GuildStore from "GuildStore" /* 5041 */;
+import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
-import PublicGuildsConstants from "PublicGuildsConstants" /* 8503 */;
+import PublicGuildsConstants from "PublicGuildsConstants" /* 8607 */;
 import size from "module_2" /* 2 */;
 
-let c11, c12, c52, closure_56, closure_9, defaultGuildSettingsSection, map;
+let c11, c12, closure_56, closure_9, defaultGuildSettingsSection, map;
 
 let closure_23;
 let closure_24;
@@ -118,7 +118,7 @@ function _createInvite(code) {
   ({ uses: obj.uses, max_uses: obj.maxUses, max_age: obj.maxAge } = code);
   created_at = code.created_at;
   ({ flags: obj.flags, roles: obj.roles } = code);
-  tmp7 = _modDef2042;
+  tmp7 = _modDef2166;
   const tmp4 = new tmp(obj);
   return tmp4;
 }
@@ -175,7 +175,7 @@ let c48 = 0;
 let NONE = MFALevels.NONE;
 let _location = null;
 let obj = { primaryCategoryId: DEFAULT_DISCOVERY_CATEGORY_ID, secondaryCategoryIds: [], keywords: [], emojiDiscoverabilityEnabled: true, partnerActionedTimestamp: null, partnerApplicationTimestamp: null, isPublished: false, reasonsToJoin: [], socialLinks: [], about: "" };
-const isGuildMetadataLoaded = false;
+let c52 = false;
 let obj2 = obj;
 let bans = null;
 const bansVersion = 0;
@@ -251,7 +251,7 @@ class GuildSettingsStore extends Store {
   }
   showPublicSuccessModal() {
     const Storage = Storage2.Storage;
-    return !Storage.get(closure_28);
+    return !Storage.get(results);
   }
   getGuild() {
     return guild;
@@ -715,7 +715,7 @@ obj2 = {
             const merged = Object.assign(guild);
             const item = closure_31.forEach((item) => {
               if (!set.has(item)) {
-                const tmp = ("rulesChannelId" !== item && "publicUpdatesChannelId" !== item || obj2[item] !== closure_29) && "features" !== item;
+                const tmp = ("rulesChannelId" !== item && "publicUpdatesChannelId" !== item || obj2[item] !== mostRecentSelectedTextChannelIds) && "features" !== item;
                 if (tmp) {
                   let tmp7;
                   const tmp4 = set;

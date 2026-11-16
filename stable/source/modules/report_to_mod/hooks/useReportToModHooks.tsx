@@ -1,18 +1,18 @@
-// Module ID: 10198
-// Function ID: 10199
+// Module ID: 10349
+// Function ID: 10350
 // Name: useReportToModHooks
-// Dependencies: [19, 4885, 6061, 504, 7440, 7461, 7457, 7636, 8752, 2]
+// Dependencies: [19, 5041, 6226, 504, 7537, 7558, 7554, 7745, 8856, 2]
 // Exports: loadOriginalAuthorFromSnapshot, useIsModeratorReportOrPostChannel, useIsModeratorReportPostChannel, useIsReportToModEnabled, useLoadReportedMessage, useReportToModChannelId
 
-// Module 10198 (useReportToModHooks)
+// Module 10349 (useReportToModHooks)
 import react from "react" /* 19 */;
-import getGuildModeratorReportingEnabledDefault from "getGuildModeratorReportingEnabled" /* 7440 */;
-import ReportToModUtils from "ReportToModUtils" /* 7457 */;
-import getGuildModeratorReportChannelIdDefault from "getGuildModeratorReportChannelId" /* 7461 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7636 */;
-import UserActionCreators from "UserActionCreators" /* 8752 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import MessageStore from "MessageStore" /* 6061 */;
+import getGuildModeratorReportingEnabledDefault from "getGuildModeratorReportingEnabled" /* 7537 */;
+import ReportToModUtils from "ReportToModUtils" /* 7554 */;
+import getGuildModeratorReportChannelIdDefault from "getGuildModeratorReportChannelId" /* 7558 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7745 */;
+import UserActionCreators from "UserActionCreators" /* 8856 */;
+import GuildStore from "GuildStore" /* 5041 */;
+import MessageStore from "MessageStore" /* 6226 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

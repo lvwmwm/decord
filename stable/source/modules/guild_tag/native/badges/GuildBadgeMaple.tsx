@@ -1,12 +1,12 @@
-// Module ID: 15775
-// Function ID: 15776
+// Module ID: 16118
+// Function ID: 16119
 // Name: GuildBadgeMaple
-// Dependencies: [19, 21, 15740, 8031, 2]
+// Dependencies: [19, 21, 16083, 8134, 2]
 // Exports: GuildBadgeMaple
 
-// Module 15775 (GuildBadgeMaple)
-import inlineStyles from "inlineStyles" /* 8031 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 15740 */;
+// Module 16118 (GuildBadgeMaple)
+import inlineStyles from "inlineStyles" /* 8134 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 16083 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

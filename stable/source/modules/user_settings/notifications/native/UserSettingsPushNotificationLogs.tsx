@@ -1,20 +1,20 @@
-// Module ID: 17560
-// Function ID: 17561
+// Module ID: 17927
+// Function ID: 17928
 // Name: UserSettingsPushNotificationLogs
-// Dependencies: [5, 32, 19, 17, 1072, 21, 5014, 575, 7098, 510, 11093, 1625, 7218, 6980, 1113, 8931, 11094, 14767, 7294, 5624, 2]
+// Dependencies: [5, 32, 19, 17, 1072, 21, 5170, 575, 7202, 510, 11257, 1627, 7315, 7076, 1113, 9043, 11258, 12442, 7390, 5783, 2]
 // Exports: default
 
-// Module 17560 (UserSettingsPushNotificationLogs)
+// Module 17927 (UserSettingsPushNotificationLogs)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import InputTypes from "InputTypes" /* 7098 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import InputTypes from "InputTypes" /* 7202 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let c2, c3;
@@ -177,8 +177,8 @@ export default function UserSettingsPushNotificationLogs() {
   _slicedToArray = tmp10;
   let obj = { style: tmp10.wrap, children: items2 };
   let obj2 = { style: tmp10.searchWrap, children: items1 };
-  const bottom = first1(1625)().bottom;
-  items1 = [closure_7(defaultValue(7218).SearchBar, { size: "md", placeholder: "Filter (regex)", onChange: tmp3, defaultValue }), ];
+  const bottom = first1(1627)().bottom;
+  items1 = [closure_7(defaultValue(7315).SearchBar, { size: "md", placeholder: "Filter (regex)", onChange: tmp3, defaultValue }), ];
   let obj3 = {
     style: tmp10.shareButton,
     accessibilityLabel: intl.string(defaultValue(1113).t.leICvh),
@@ -238,9 +238,9 @@ export default function UserSettingsPushNotificationLogs() {
         }
       }
     }),
-    children: closure_7(defaultValue(14767).ShareIcon, {})
+    children: closure_7(defaultValue(12442).ShareIcon, {})
   };
-  const PressableOpacity = defaultValue(6980).PressableOpacity;
+  const PressableOpacity = defaultValue(7076).PressableOpacity;
   intl = defaultValue(1113).intl;
   items1[1] = closure_7(PressableOpacity, obj3);
   items2 = [closure_8(View, obj2), ];
@@ -259,13 +259,13 @@ export default function UserSettingsPushNotificationLogs() {
         str = "~silent~ ";
       }
       const obj = { style: closure_4.log, children: items };
-      const obj2 = { style: closure_4.code, variant: "text-xs/normal", children: date.toISOString() };
+      const obj2 = { style: closure_4.code, variant: "body-xs/normal", children: date.toISOString() };
       const Text = Text_Text.Text;
       date = new Date(item.receivedTimestamp);
       items = [metroImportDefault(Text, obj2), ];
-      const obj3 = { style: closure_4.code, variant: "text-sm/normal", children: items2 };
+      const obj3 = { style: closure_4.code, variant: "body-sm/normal", children: items2 };
       const Text2 = Text_Text.Text;
-      const obj4 = { style: closure_4.code, variant: "text-sm/normal", color: "text-brand", children: items1 };
+      const obj4 = { style: closure_4.code, variant: "body-sm/normal", color: "text-brand", children: items1 };
       items1 = [str, "[", item.type, "]", " "];
       items2 = [metroImportAll(Text_Text.Text, obj4), item.title, " - ", item.content];
       items[1] = metroImportAll(Text2, obj3);
@@ -273,7 +273,7 @@ export default function UserSettingsPushNotificationLogs() {
     }
   };
   obj5 = { paddingBottom: bottom + first1(575).space.PX_16 };
-  const FlashList = defaultValue(7294).FlashList;
+  const FlashList = defaultValue(7390).FlashList;
   const merged = Object.assign(tmp10.list);
   items2[1] = closure_7(FlashList, obj4);
   return closure_8(View, obj);

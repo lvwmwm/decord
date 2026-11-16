@@ -1,13 +1,13 @@
-// Module ID: 16357
-// Function ID: 16358
+// Module ID: 16707
+// Function ID: 16708
 // Name: screenCapture
-// Dependencies: [6450, 1072, 16296, 16287, 2]
+// Dependencies: [6615, 1072, 16645, 16637, 2]
 
-// Module 16357 (screenCapture)
+// Module 16707 (screenCapture)
 import Constants2 from "Constants" /* 1072 */;
-import validateConjureAppFrameDefault from "validateConjureAppFrame" /* 16287 */;
-import Constants from "Constants" /* 6450 */;
-import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 16296 */;
+import validateConjureAppFrameDefault from "validateConjureAppFrame" /* 16637 */;
+import Constants from "Constants" /* 6615 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 16645 */;
 import size from "module_2" /* 2 */;
 
 let RPC_AUTHENTICATED_SCOPE;

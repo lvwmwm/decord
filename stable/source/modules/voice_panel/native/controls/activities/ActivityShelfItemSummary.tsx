@@ -1,23 +1,23 @@
-// Module ID: 19260
-// Function ID: 19261
+// Module ID: 19696
+// Function ID: 19697
 // Name: ActivityShelfItemSummary
-// Dependencies: [32, 19, 17, 21, 5014, 575, 5011, 19261, 11602, 1187, 5645, 5624, 5095, 5647, 2]
+// Dependencies: [32, 19, 17, 21, 5170, 575, 5167, 19697, 11792, 1187, 5801, 5783, 1652, 5803, 2]
 // Exports: default
 
-// Module 19260 (ActivityShelfItemSummary)
+// Module 19696 (ActivityShelfItemSummary)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 5095 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import ButtonPill from "ButtonPill" /* 5645 */;
-import UserSummaryItemDefault from "UserSummaryItem" /* 11602 */;
-import useActivityUsersDefault from "useActivityUsers" /* 19261 */;
+import _modDef1652 from "module_1652" /* 1652 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import ButtonPill from "ButtonPill" /* 5801 */;
+import UserSummaryItemDefault from "UserSummaryItem" /* 11792 */;
+import useActivityUsersDefault from "useActivityUsers" /* 19697 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
-import ColorUtils_mod from "ColorUtils" /* 5011 */;
+import createStyles_mod from "createStyles" /* 5170 */;
+import ColorUtils_mod from "ColorUtils" /* 5167 */;
 import size from "module_2" /* 2 */;
 
 let ColorUtils;
@@ -26,7 +26,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp2;
-const ButtonEllipsis = tmp2(5647);
+const ButtonEllipsis = tmp2(5803);
 function ParticipantsSummary(arg0) {
   let applicationId;
   let channelId;
@@ -64,12 +64,12 @@ export default function ActivityShelfItemSummary(submitting) {
   items = [, ];
   const obj = ButtonPill;
   const obj2 = { style: tmp.ongoingActivityContainer, children: items2 };
-  const obj4 = { variant: "text-md/semibold", style: flag ? tmp.loadingTextColor : tmp.overlayActivityNameText, lineClamp: 2, children: applicationName };
+  const obj4 = { variant: "body-md/semibold", style: flag ? tmp.loadingTextColor : tmp.overlayActivityNameText, lineClamp: 2, children: applicationName };
   const tmp5 = _slicedToArray(obj.useLoadingStyles(flag, "md"), 2)[1];
   items[0] = hasOwnProperty(Text_Text.Text, obj4);
   const obj5 = { style: items1, children: tmp8Result };
   items1 = [tmp.ellipsis, tmp5];
-  View = ReanimatedRexportDefault.View;
+  View = _modDef1652.View;
   if (tmp8Result) {
     tmp8Result = tmp8(ButtonEllipsis.Ellipsis, { variant: "active", size: "md" });
   }

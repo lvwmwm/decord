@@ -1,25 +1,25 @@
-// Module ID: 13290
-// Function ID: 13291
+// Module ID: 13555
+// Function ID: 13556
 // Name: GuildRaidResolveActionSheet
-// Dependencies: [5, 32, 19, 17, 1072, 7490, 21, 5014, 575, 1113, 7697, 5258, 5760, 13257, 7496, 7366, 6954, 5624, 8177, 1187, 5634, 2]
+// Dependencies: [5, 32, 19, 17, 1072, 7587, 21, 5170, 575, 1113, 7806, 5406, 5921, 13522, 7601, 7459, 7049, 5783, 8279, 1187, 5790, 2]
 // Exports: default
 
-// Module 13290 (GuildRaidResolveActionSheet)
+// Module 13555 (GuildRaidResolveActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl9 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import KeyboardAwareViewDefault from "KeyboardAwareView" /* 6954 */;
-import ActionSheet2 from "ActionSheet" /* 7366 */;
-import Constants2 from "Constants" /* 7490 */;
-import AutomodFeedback from "AutomodFeedback" /* 7697 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import components_Button_Button from "components/Button/Button" /* 5790 */;
+import KeyboardAwareViewDefault from "KeyboardAwareView" /* 7049 */;
+import ActionSheet2 from "ActionSheet" /* 7459 */;
+import Constants2 from "Constants" /* 7587 */;
+import AutomodFeedback from "AutomodFeedback" /* 7806 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, dependencyMap, raid_alert_id;
@@ -191,11 +191,11 @@ export default function GuildRaidResolveActionSheet(arg0) {
   const ActionSheet = ActionSheet2.ActionSheet;
   obj6 = { style: tmp.container, children: items1 };
   tmp6 = KeyboardAwareViewDefault;
-  let obj7 = { style: tmp.title, variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: intl5.string(intl9.t["1zmw/H"]) };
+  let obj7 = { style: tmp.title, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl5.string(intl9.t["1zmw/H"]) };
   const Text = Text_Text.Text;
   intl5 = intl9.intl;
   items1 = [handleTextInputChange(Text, obj7), , , , ];
-  let obj8 = { style: tmp.subtitle, variant: "text-sm/normal", color: "text-default", children: intl6.string(intl9.t.nF79oO) };
+  let obj8 = { style: tmp.subtitle, variant: "body-sm/normal", color: "text-default", children: intl6.string(intl9.t.nF79oO) };
   const Text2 = Text_Text.Text;
   intl6 = intl9.intl;
   items1[1] = handleTextInputChange(Text2, obj8);
@@ -223,7 +223,7 @@ export default function GuildRaidResolveActionSheet(arg0) {
       leading: handleTextInputChange(Checkbox, obj3),
       label: text
     };
-    const FormRow = require("module_8177").FormRow;
+    const FormRow = require("module_8279").FormRow;
     obj3 = { selected: _undefined.includes(value) };
     Checkbox = require("native").Checkbox;
     items = [handleTextInputChange(FormRow, obj2), ];

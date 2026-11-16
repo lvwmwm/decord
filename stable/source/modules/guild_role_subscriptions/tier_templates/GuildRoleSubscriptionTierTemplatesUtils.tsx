@@ -1,29 +1,28 @@
-// Module ID: 17217
-// Function ID: 17218
+// Module ID: 17577
+// Function ID: 17578
 // Name: GuildRoleSubscriptionTierTemplatesUtils
-// Dependencies: [5, 19, 4863, 4939, 17212, 17218, 1072, 4870, 6456, 563, 1396, 572, 9030, 7434, 15716, 2]
+// Dependencies: [5, 19, 5019, 5095, 17572, 17578, 1072, 5026, 563, 1403, 572, 9143, 7531, 16059, 2]
 // Exports: announceCreateTemplateChannels, announceDeleteTemplateChannels, createChannelsFromTemplateTierBenefits, getTemplateTierCreationAnalyticsContext, isEligibleForNewBadge, useChannelWithTemplateFallback, useSuggestedUnusedPrices
 
-// Module 17217 (GuildRoleSubscriptionTierTemplatesUtils)
+// Module 17577 (GuildRoleSubscriptionTierTemplatesUtils)
 import react from "react" /* 19 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import FlagUtilsAll from "FlagUtils" /* 1396 */;
-import ChannelConstants from "ChannelConstants" /* 4870 */;
-import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 7434 */;
-import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 17212 */;
+import FlagUtilsAll from "FlagUtils" /* 1403 */;
+import ChannelConstants from "ChannelConstants" /* 5026 */;
+import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 7531 */;
+import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 17572 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4939 */;
-import GuildRoleSubscriptionTierTemplatesStore from "GuildRoleSubscriptionTierTemplatesStore" /* 17218 */;
-import allSettled_mod from "allSettled" /* 6456 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 5095 */;
+import GuildRoleSubscriptionTierTemplatesStore from "GuildRoleSubscriptionTierTemplatesStore" /* 17578 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, c3, c4, set;
 
 let tmp;
-const GuildRoleSubscriptionsExperimentUtils = tmp(15716);
+const GuildRoleSubscriptionsExperimentUtils = tmp(16059);
 function getUsedTemplateChannelsForGuild(arg0) {
   const arr = useEditStateStore.getState().editStateIdsForGroup[arg0];
   const listings = useEditStateStore.getState().listings;
@@ -92,7 +91,7 @@ let obj = function _createChannelsFromTemplateTierBenefits() {
               channel = channel.getChannel(ref_id.ref_id);
               if (null != channel) {
                 const push = navigation.push;
-                obj = closure_2_1(closure_2_3[12]);
+                obj = closure_2_1(closure_2_3[11]);
                 push(obj.createRoleSubscriptionTemplateChannel(closure_1_0, channel.name, channel.type, channel.topic));
                 closure_1_3.push(channel);
               }
@@ -160,8 +159,6 @@ const useMemo = react.useMemo;
 const useEditStateStore = GuildRoleSubscriptionEditStore.useEditStateStore;
 const GuildFeatures = Constants.GuildFeatures;
 const ChannelFlags = ChannelConstants.ChannelFlags;
-let allSettled = allSettled_mod;
-allSettled = allSettled.shim();
 let closure_12 = {};
 let result = size.fileFinishedImporting("modules/guild_role_subscriptions/tier_templates/GuildRoleSubscriptionTierTemplatesUtils.tsx");
 

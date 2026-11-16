@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/conjure/home/images", width: 640, height: 360, scales: [1], hash: "b88db832be1f753b114623298ec2ec89", name: "conjure-home-movie-night", type: "svg" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "0cbf6a63eb42fee45267174e07a266f8", name: "WindowTopIcon", type: "png" });

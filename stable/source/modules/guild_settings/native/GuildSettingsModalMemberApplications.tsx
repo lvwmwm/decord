@@ -1,20 +1,20 @@
-// Module ID: 18654
-// Function ID: 18655
+// Module ID: 19050
+// Function ID: 19051
 // Name: GuildSettingsModalMemberApplications
-// Dependencies: [19, 17, 6917, 21, 5014, 575, 5068, 5624, 18655, 1409, 6975, 1187, 1625, 18660, 5048, 18661, 504, 1113, 7294, 8805, 5606, 2]
+// Dependencies: [19, 17, 7005, 21, 5170, 575, 5226, 5783, 19051, 1411, 7071, 1187, 1627, 19056, 5206, 19057, 504, 1113, 7390, 8912, 5766, 2]
 
-// Module 18654 (GuildSettingsModalMemberApplications)
+// Module 19050 (GuildSettingsModalMemberApplications)
 import nativeDefault from "native" /* 575 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 5048 */;
-import UserUtilsDefault from "UserUtils" /* 5068 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 18655 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5206 */;
+import UserUtilsDefault from "UserUtils" /* 5226 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 19051 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6917 */;
+import GuildJoinRequestStore from "GuildJoinRequestStore" /* 7005 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -46,10 +46,10 @@ const memoResult = react.memo(function MemberApplicationUser(user) {
   if (globalName == null) {
     username = user.username;
   }
-  const children = [metroImportDefault(Text, { variant: "text-md/semibold", children: username }), ];
+  const children = [metroImportDefault(Text, { variant: "body-md/semibold", children: username }), ];
   let tmp5Result = null != globalName;
   if (tmp5Result) {
-    const obj2 = { variant: "text-xs/medium", children: user.username };
+    const obj2 = { variant: "body-xs/medium", children: user.username };
     tmp5Result = tmp5(Text_Text.Text, obj2);
   }
   children[1] = tmp5Result;
@@ -78,7 +78,7 @@ let closure_12 = react.memo(function GuildSettingsModalMemberApplication(joinReq
         userAvatarSource = obj.getUserAvatarSource(user);
       }
       const obj2 = { arrow: true, icon: closure_7(Avatar, obj3), label: closure_7(closure_11, obj4), onPress: tmp, start, end };
-      const TableRow = joinRequest(6975).TableRow;
+      const TableRow = joinRequest(7071).TableRow;
       obj3 = { source: userAvatarSource, size: joinRequest(1187).AvatarSizes.SMALL };
       Avatar = joinRequest(1187).Avatar;
       obj4 = { user };

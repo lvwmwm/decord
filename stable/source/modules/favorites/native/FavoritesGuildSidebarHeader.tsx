@@ -1,24 +1,24 @@
-// Module ID: 18350
-// Function ID: 18351
+// Module ID: 18724
+// Function ID: 18725
 // Name: FavoritesGuildSidebarHeader
-// Dependencies: [19, 17, 18257, 21, 5014, 575, 14402, 5624, 1113, 3450, 8652, 8673, 8643, 6027, 2]
+// Dependencies: [19, 17, 18629, 21, 5170, 575, 14667, 5783, 1113, 3608, 8756, 8777, 8747, 6191, 2]
 // Exports: default
 
-// Module 18350 (FavoritesGuildSidebarHeader)
+// Module 18724 (FavoritesGuildSidebarHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import _modDef3450 from "module_3450" /* 3450 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import Stack_Stack from "Stack/Stack" /* 6027 */;
-import ChatIcon2 from "ChatIcon" /* 8643 */;
-import TextIcon2 from "TextIcon" /* 8652 */;
-import VoiceNormalIcon2 from "VoiceNormalIcon" /* 8673 */;
-import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 14402 */;
-import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 18257 */;
+import _modDef3608 from "module_3608" /* 3608 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import Stack_Stack from "Stack/Stack" /* 6191 */;
+import ChatIcon2 from "ChatIcon" /* 8747 */;
+import TextIcon2 from "TextIcon" /* 8756 */;
+import VoiceNormalIcon2 from "VoiceNormalIcon" /* 8777 */;
+import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 14667 */;
+import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 18629 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -36,7 +36,7 @@ function EmptyBody() {
   const callback = react.useCallback(() => {
     openFavoritesGuildAddChannelModalDefault({ source: "favorites_empty_sidebar" });
   }, []);
-  const obj = { variant: "text-sm/medium", color: "text-muted", children: intl.format(_modDef3450.Z3Hdr5, { onClick: callback }) };
+  const obj = { variant: "body-sm/medium", color: "text-muted", children: intl.format(_modDef3608.Z3Hdr5, { onClick: callback }) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   return metroRequire(Text, obj);
@@ -112,9 +112,9 @@ export default function FavoritesGuildSidebarHeader() {
   }
   items = [tmp7, , ];
   const obj3 = { spacing: nativeDefault.space.PX_8, style: tmp.copy, children: items1 };
-  const Stack2 = tmp4(6027).Stack;
-  const obj4 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: intl.string(_modDef3450["1n0TGE"]) };
-  const Heading = tmp4(5624).Heading;
+  const Stack2 = tmp4(6191).Stack;
+  const obj4 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: intl.string(_modDef3608["1n0TGE"]) };
+  const Heading = tmp4(5783).Heading;
   intl = tmp4(1113).intl;
   items1 = [metroRequire(Heading, obj4), metroRequire(EmptyBody, {})];
   items[1] = metroImportDefault(Stack2, obj3);

@@ -188,9 +188,9 @@ WeakMap.prototype[SymbolResult] = true;
 WeakSet.prototype[SymbolResult] = true;
 Promise.prototype[SymbolResult] = true;
 
-export default function structuredClone(style) {
+export default function structuredClone(source) {
   try {
-    const tmp3 = structuredCloneInternal(style);
+    const tmp3 = structuredCloneInternal(source);
     map.clear();
     return tmp3;
   } catch (tmp6) {

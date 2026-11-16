@@ -1,23 +1,23 @@
-// Module ID: 9295
-// Function ID: 9296
+// Module ID: 9408
+// Function ID: 9409
 // Name: GuildTag
-// Dependencies: [19, 17, 1383, 8393, 21, 5014, 575, 1375, 5717, 1113, 5624, 6980, 504, 8736, 5258, 9296, 1994, 2]
+// Dependencies: [19, 17, 1385, 8497, 21, 5170, 575, 1377, 5874, 1113, 5783, 7076, 504, 8840, 5406, 9409, 2118, 2]
 
-// Module 9295 (GuildTag)
+// Module 9408 (GuildTag)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import asyncRequire from "asyncRequire" /* 1994 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import GuildTagConstants from "GuildTagConstants" /* 8393 */;
-import GuildTagUtils from "GuildTagUtils" /* 8736 */;
+import asyncRequire from "asyncRequire" /* 2118 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import FastImageDefault from "FastImage" /* 5874 */;
+import GuildTagConstants from "GuildTagConstants" /* 8497 */;
+import GuildTagUtils from "GuildTagUtils" /* 8840 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1383 */;
+import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1375 */;
+import createStyles_mod from "createStyles" /* 5170 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1377 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -83,7 +83,7 @@ const memoResult1 = react.memo(function BaseGuildTagChiplet(textVariant) {
   }
   let str = textVariant.textVariant;
   if (str === undefined) {
-    str = "text-xs/semibold";
+    str = "body-xs/semibold";
   }
   let str2 = textVariant.textColor;
   if (str2 === undefined) {

@@ -1,14 +1,14 @@
-// Module ID: 9341
-// Function ID: 9342
+// Module ID: 9455
+// Function ID: 9456
 // Name: useInAppBrowserReturn
-// Dependencies: [19, 9322, 1376, 5742, 9320, 9340, 2]
+// Dependencies: [19, 9436, 1357, 5898, 9434, 9454, 2]
 // Exports: default
 
-// Module 9341 (useInAppBrowserReturn)
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9320 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9340 */;
+// Module 9455 (useInAppBrowserReturn)
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9434 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9454 */;
 import react from "react" /* 19 */;
-import GameProfileStore from "GameProfileStore" /* 9322 */;
+import GameProfileStore from "GameProfileStore" /* 9436 */;
 import size from "module_2" /* 2 */;
 
 let c0;

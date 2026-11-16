@@ -1,13 +1,13 @@
-// Module ID: 19877
-// Function ID: 19878
+// Module ID: 20328
+// Function ID: 20329
 // Name: useCreatorMonetizationEligibilityItems
-// Dependencies: [5, 19, 1072, 19878, 19879, 1113, 2061, 5705, 19880, 2]
+// Dependencies: [5, 19, 1072, 20329, 20330, 1113, 2185, 5862, 20331, 2]
 // Exports: default
 
-// Module 19877 (useCreatorMonetizationEligibilityItems)
+// Module 20328 (useCreatorMonetizationEligibilityItems)
 import Constants from "Constants" /* 1072 */;
 import intl27 from "intl" /* 1113 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2061 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -217,7 +217,7 @@ export default function useCreatorMonetizationEligibilityItems(arg0) {
         intl9 = tmp23(1113).intl;
         const intl10 = tmp23(1113).intl;
         formatToPlainString = intl10.formatToPlainString;
-        obj8 = { minimumAge: tmp25(19880)(tmp.minimumAgeInDays) };
+        obj8 = { minimumAge: tmp25(20331)(tmp.minimumAgeInDays) };
         Zwv84O = tmp23(1113).t.Zwv84O;
         push3(obj7);
       }

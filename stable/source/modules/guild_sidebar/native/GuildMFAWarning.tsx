@@ -1,23 +1,23 @@
-// Module ID: 18254
-// Function ID: 18255
+// Module ID: 18626
+// Function ID: 18627
 // Name: GuildMFAWarning
-// Dependencies: [5, 19, 1072, 21, 5014, 575, 11047, 2061, 1994, 5709, 6980, 5717, 18255, 5624, 1113, 1187, 2]
+// Dependencies: [5, 19, 1072, 21, 5170, 575, 5915, 2185, 2118, 5866, 7076, 5874, 18627, 5783, 1113, 1187, 2]
 // Exports: default, getScaledGuildMFAWarningHeight
 
-// Module 18254 (GuildMFAWarning)
+// Module 18626 (GuildMFAWarning)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import Pressables from "Pressables" /* 6980 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11047 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18255 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import FastImageDefault from "FastImage" /* 5874 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 5915 */;
+import Pressables from "Pressables" /* 7076 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18627 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -109,7 +109,7 @@ export default function GuildMFAWarning() {
   const obj2 = { style: tmp.MFAWarningIcon, source: AssetRegistryDefault };
   const tmp2 = FastImageDefault;
   items = [hasOwnProperty(tmp2, obj2), ];
-  const obj3 = { variant: "text-xs/medium", color: "text-default", children: items1 };
+  const obj3 = { variant: "body-xs/medium", color: "text-default", children: items1 };
   const Text = Text_Text.Text;
   const intl = intl3.intl;
   items1 = [intl.string(intl3.t.ZIf8Ag), ];
@@ -123,5 +123,5 @@ export default function GuildMFAWarning() {
 };
 export function getScaledGuildMFAWarningHeight(fontScale) {
   obj = useScaledTextLineHeight;
-  return 83 + 5 * obj.scaleTextLineHeight("text-xs/medium", fontScale) + 10 + 10;
+  return 83 + 5 * obj.scaleTextLineHeight("body-xs/medium", fontScale) + 10 + 10;
 }

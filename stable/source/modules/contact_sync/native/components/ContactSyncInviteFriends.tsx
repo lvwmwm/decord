@@ -1,21 +1,21 @@
-// Module ID: 14272
-// Function ID: 14273
+// Module ID: 14536
+// Function ID: 14537
 // Name: ContactSyncInviteFriends
-// Dependencies: [19, 17, 1383, 1072, 21, 5014, 575, 504, 5717, 14273, 5624, 1113, 5634, 1252, 5068, 8931, 2]
+// Dependencies: [19, 17, 1385, 1072, 21, 5170, 575, 504, 5874, 14537, 5783, 1113, 5790, 1252, 5226, 9043, 2]
 // Exports: default
 
-// Module 14272 (ContactSyncInviteFriends)
+// Module 14536 (ContactSyncInviteFriends)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14273 */;
+import FastImageDefault from "FastImage" /* 5874 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14537 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1383 */;
+import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -29,8 +29,8 @@ let metroRequire;
 let obj2;
 let tmp;
 let tmp5;
-const UserUtilsDefault = tmp(5068);
-const showShareActionSheet = tmp5(8931);
+const UserUtilsDefault = tmp(5226);
+const showShareActionSheet = tmp5(9043);
 const View = react_native.View;
 ({ AnalyticEvents: hasOwnProperty, AnalyticsSections: metroRequire } = Constants);
 ({ jsx: metroImportDefault, jsxs: metroImportAll, Fragment: c9 } = Fragment);
@@ -58,11 +58,11 @@ export default function ContactSyncInviteFriends() {
   const obj4 = { style: tmp.art, source: AssetRegistryDefault };
   const tmp2 = FastImageDefault;
   items1 = [closure_7(tmp2, obj4), , ];
-  const obj5 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(require("intl").t.ZxBpLf) };
+  const obj5 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(require("intl").t.ZxBpLf) };
   const Text = require("Text/Text").Text;
   intl = require("intl").intl;
   items1[1] = closure_7(Text, obj5);
-  const obj6 = { style: tmp.subtitle, variant: "text-sm/medium", color: "text-default", children: intl2.string(require("intl").t["fXtCJ+"]) };
+  const obj6 = { style: tmp.subtitle, variant: "body-sm/medium", color: "text-default", children: intl2.string(require("intl").t["fXtCJ+"]) };
   const Text2 = require("Text/Text").Text;
   intl2 = require("intl").intl;
   items1[2] = closure_7(Text2, obj6);

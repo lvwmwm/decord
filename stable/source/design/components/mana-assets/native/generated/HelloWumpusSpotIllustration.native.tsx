@@ -1,26 +1,26 @@
-// Module ID: 14321
-// Function ID: 14322
+// Module ID: 14585
+// Function ID: 14586
 // Name: HelloWumpusSpotIllustration
-// Dependencies: [19, 21, 14322, 14323, 14324, 7069, 5717, 2]
+// Dependencies: [19, 21, 14586, 14587, 14588, 7168, 5874, 2]
 // Exports: HelloWumpusSpotIllustration
 
-// Module 14321 (HelloWumpusSpotIllustration)
+// Module 14585 (HelloWumpusSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 7069 */;
-import _modDef14322 from "module_14322" /* 14322 */;
-import _modDef14323 from "module_14323" /* 14323 */;
-import _modDef14324 from "module_14324" /* 14324 */;
+import react_native from "react-native" /* 7168 */;
+import _modDef14586 from "module_14586" /* 14586 */;
+import _modDef14587 from "module_14587" /* 14587 */;
+import _modDef14588 from "module_14588" /* 14588 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef14322 };
+let obj2 = { uri: _modDef14586 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef14323 };
+let obj3 = { uri: _modDef14587 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef14324 };
-({ uri: _modDef14324 });
+obj[3] = { uri: _modDef14588 };
+({ uri: _modDef14588 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/HelloWumpusSpotIllustration.native.tsx");
 

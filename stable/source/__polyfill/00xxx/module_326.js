@@ -16,6 +16,8 @@ import "react";
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 
+let keyExtractor;
+
 let c10;
 let closure_12;
 let closure_14;
@@ -196,7 +198,7 @@ class VirtualizedSectionList {
       const tmp3 = closure_0;
       if (_subExtractorResult) {
         let keyExtractorResult;
-        const keyExtractor = _subExtractorResult.section.keyExtractor;
+        keyExtractor = _subExtractorResult.section.keyExtractor;
         const keyExtractor2 = tmp3.props.keyExtractor || VirtualizedSectionList(tmp[10]).keyExtractor;
         if (null != keyExtractor) {
           keyExtractorResult = keyExtractor(index.item, _subExtractorResult.index);
@@ -455,7 +457,6 @@ let items = [
       let getItem;
       let getItemCount;
       let key;
-      let keyExtractor;
       let sections;
       let text;
       let diff1 = index;

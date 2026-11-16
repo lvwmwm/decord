@@ -1,22 +1,22 @@
-// Module ID: 8757
-// Function ID: 8758
+// Module ID: 8861
+// Function ID: 8862
 // Name: useDisplayProfile
-// Dependencies: [19, 1383, 7772, 504, 8758, 2034, 8760, 2]
+// Dependencies: [19, 1385, 7881, 504, 8862, 2158, 8864, 2]
 // Exports: default, getDisplayProfile, useDisplayProfileWithFetchEffect
 
-// Module 8757 (useDisplayProfile)
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8758 */;
-import DisplayProfileDefault from "DisplayProfile" /* 8760 */;
+// Module 8861 (useDisplayProfile)
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8862 */;
+import DisplayProfileDefault from "DisplayProfile" /* 8864 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1383 */;
-import UserProfileStore from "UserProfileStore" /* 7772 */;
-import FunctionUtils from "FunctionUtils" /* 2034 */;
+import UserStore from "UserStore" /* 1385 */;
+import UserProfileStore from "UserProfileStore" /* 7881 */;
+import FunctionUtils from "FunctionUtils" /* 2158 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const f93242 = () => {
+const f94850 = () => {
   let obj;
   let obj2;
   let tmp2 = null;
@@ -52,7 +52,7 @@ export default function useDisplayProfile(arg0, arg1) {
   let closure_1 = arg1;
   const items = [UserStore, UserProfileStore];
   const obj = require("get initialized");
-  return obj.useStateFromStores(items, f93242);
+  return obj.useStateFromStores(items, f94850);
 };
 export function useDisplayProfileWithFetchEffect(arg0, guildId) {
   let closure_0;
@@ -64,7 +64,7 @@ export function useDisplayProfileWithFetchEffect(arg0, guildId) {
   _require = arg0;
   const obj = require("get initialized");
   const items1 = [UserStore, UserProfileStore];
-  return obj.useStateFromStores(items1, f93242);
+  return obj.useStateFromStores(items1, f94850);
 }
 export function getDisplayProfile(id1, guildId) {
   let obj;

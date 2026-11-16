@@ -1,14 +1,14 @@
-// Module ID: 17567
-// Function ID: 17568
+// Module ID: 17934
+// Function ID: 17935
 // Name: FileWarningIcon
-// Dependencies: [19, 21, 575, 5716, 17568, 2]
+// Dependencies: [19, 21, 575, 5873, 17935, 2]
 // Exports: FileWarningIcon
 
-// Module 17567 (FileWarningIcon)
+// Module 17934 (FileWarningIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5716 */;
-import AssetRegistry from "AssetRegistry" /* 17568 */;
+import BaseIconImage2 from "BaseIconImage" /* 5873 */;
+import AssetRegistry from "AssetRegistry" /* 17935 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

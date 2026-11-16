@@ -1,16 +1,16 @@
-// Module ID: 10695
-// Function ID: 10696
+// Module ID: 10846
+// Function ID: 10847
 // Name: UnifiedGiftModalDetailsScreen
-// Dependencies: [32, 19, 17, 21, 5014, 575, 1497, 10694, 10565, 10696, 5624, 1113, 10723, 10724, 10725, 2]
+// Dependencies: [32, 19, 17, 21, 5170, 575, 1499, 10845, 10716, 10847, 5783, 1113, 10874, 10875, 10876, 2]
 
-// Module 10695 (UnifiedGiftModalDetailsScreen)
+// Module 10846 (UnifiedGiftModalDetailsScreen)
 import nativeDefault from "native" /* 575 */;
-import UnifiedGiftModalTypes from "UnifiedGiftModalTypes" /* 10694 */;
+import UnifiedGiftModalTypes from "UnifiedGiftModalTypes" /* 10845 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -121,7 +121,7 @@ const memoResult = react.memo(function UnifiedGiftModalDetailsScreen(recipientUs
     return obj;
   }, items3);
   const items4 = [first2(recipientUser(navigation[9]).GiftBackgroundSelect, { giftStyle: first1, setGiftStyle: tmp13, withConsistentHeight: false }), , , , , ];
-  const obj5 = { variant: "text-sm/semibold", style: tmp.sectionHeader, children: intl.string(recipientUser(navigation[11]).t.xFn72s) };
+  const obj5 = { variant: "body-sm/semibold", style: tmp.sectionHeader, children: intl.string(recipientUser(navigation[11]).t.xFn72s) };
   const Text = recipientUser(navigation[10]).Text;
   intl = recipientUser(navigation[11]).intl;
   items4[1] = first2(Text, obj5);
@@ -134,7 +134,7 @@ const memoResult = react.memo(function UnifiedGiftModalDetailsScreen(recipientUs
       tmp26Result = tmp26(validateRecipient(tmp3[12]), obj6);
     }
     items4[2] = tmp26Result;
-    const obj7 = { variant: "text-sm/semibold", style: tmp.sectionHeader, children: intl2.string(tmp2(navigation[11]).t.PpoJzt) };
+    const obj7 = { variant: "body-sm/semibold", style: tmp.sectionHeader, children: intl2.string(tmp2(navigation[11]).t.PpoJzt) };
     const Text2 = tmp2(tmp3[10]).Text;
     intl2 = tmp2(tmp3[11]).intl;
     items4[3] = first2(Text2, obj7);

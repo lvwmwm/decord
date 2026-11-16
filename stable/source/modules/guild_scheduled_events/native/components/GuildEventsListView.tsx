@@ -1,15 +1,15 @@
-// Module ID: 9093
-// Function ID: 9094
+// Module ID: 9206
+// Function ID: 9207
 // Name: GuildEventsListView
-// Dependencies: [19, 17, 21, 575, 1625, 5275, 9094, 7294, 9095, 11, 2]
+// Dependencies: [19, 17, 21, 575, 1627, 5424, 9207, 7390, 9208, 11, 2]
 // Exports: default
 
-// Module 9093 (GuildEventsListView)
+// Module 9206 (GuildEventsListView)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import GuildEventsNoContentDefault from "GuildEventsNoContent" /* 9094 */;
-import GuildEventCardDefault from "GuildEventCard" /* 9095 */;
+import GuildEventsNoContentDefault from "GuildEventsNoContent" /* 9207 */;
+import GuildEventCardDefault from "GuildEventCard" /* 9208 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 

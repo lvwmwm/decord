@@ -1,9 +1,9 @@
-// Module ID: 8406
-// Function ID: 8407
+// Module ID: 8510
+// Function ID: 8511
 // Name: PollsConstants
 // Dependencies: [1228, 2]
 
-// Module 8406 (PollsConstants)
+// Module 8510 (PollsConstants)
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1228 */;
 import size from "module_2" /* 2 */;
 

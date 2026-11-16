@@ -1,12 +1,12 @@
-// Module ID: 9947
-// Function ID: 9948
+// Module ID: 10102
+// Function ID: 10103
 // Name: useTopAndNewlyAddedEmojis
-// Dependencies: [6796, 1386, 563, 2]
+// Dependencies: [6884, 1388, 563, 2]
 // Exports: default, getTopAndNewlyAddedEmojis
 
-// Module 9947 (useTopAndNewlyAddedEmojis)
-import EmojiConstants from "EmojiConstants" /* 1386 */;
-import EmojiStore from "EmojiStore" /* 6796 */;
+// Module 10102 (useTopAndNewlyAddedEmojis)
+import EmojiConstants from "EmojiConstants" /* 1388 */;
+import EmojiStore from "EmojiStore" /* 6884 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,21 +1,21 @@
-// Module ID: 16453
-// Function ID: 16454
+// Module ID: 16803
+// Function ID: 16804
 // Name: UserProfileEditBannerButton
-// Dependencies: [19, 17, 21, 5014, 575, 7326, 8761, 8750, 6980, 1113, 5624, 10232, 16454, 8803, 8819, 16455, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 7420, 8865, 8854, 7076, 1113, 5783, 10383, 9102, 8909, 8926, 16804, 2]
 // Exports: default
 
-// Module 16453 (UserProfileEditBannerButton)
+// Module 16803 (UserProfileEditBannerButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Pressables from "Pressables" /* 6980 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8750 */;
-import useUserProfileBannerHeightDefault from "useUserProfileBannerHeight" /* 8803 */;
-import UserProfileBannerDefault from "UserProfileBanner" /* 8819 */;
-import PencilIcon2 from "PencilIcon" /* 10232 */;
-import useMeasuredLayoutDefault from "useMeasuredLayout" /* 16454 */;
+import Pressables from "Pressables" /* 7076 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8854 */;
+import useUserProfileBannerHeightDefault from "useUserProfileBannerHeight" /* 8909 */;
+import UserProfileBannerDefault from "UserProfileBanner" /* 8926 */;
+import useMeasuredLayoutDefault from "useMeasuredLayout" /* 9102 */;
+import PencilIcon2 from "PencilIcon" /* 10383 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -23,7 +23,7 @@ let metroRequire;
 let rect;
 let size;
 let tmp2;
-const EditButtonDefault = tmp2(16455);
+const EditButtonDefault = tmp2(16804);
 function ProfilePreviewButton(userId) {
   let Text;
   let intl;
@@ -43,7 +43,7 @@ function ProfilePreviewButton(userId) {
     const obj2 = { style: tmp.previewButton, onPress: tmp4, accessibilityRole: "button", accessibilityLabel: intl.string(userId(context[9]).t["3Qcx6K"]), children: closure_5(Text, obj3) };
     const PressableOpacity = tmp3(tmp2[8]).PressableOpacity;
     intl = tmp3(tmp2[9]).intl;
-    obj3 = { variant: "text-sm/semibold", color: "text-overlay-light", children: intl2.string(userId(context[9]).t["3Qcx6K"]) };
+    obj3 = { variant: "body-sm/semibold", color: "text-overlay-light", children: intl2.string(userId(context[9]).t["3Qcx6K"]) };
     Text = tmp3(tmp2[10]).Text;
     intl2 = tmp3(tmp2[9]).intl;
     tmp5 = closure_5(PressableOpacity, obj2);

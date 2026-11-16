@@ -1,13 +1,13 @@
-// Module ID: 14014
-// Function ID: 14015
+// Module ID: 14285
+// Function ID: 14286
 // Name: useIsMessageRequestRestrictedViewer
-// Dependencies: [6726, 5693, 5700, 2]
+// Dependencies: [6813, 5849, 5857, 2]
 // Exports: useIsMessageRequestRestrictedViewer
 
-// Module 14014 (useIsMessageRequestRestrictedViewer)
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5693 */;
-import SettingsDefaultFeature from "SettingsDefaultFeature" /* 5700 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6726 */;
+// Module 14285 (useIsMessageRequestRestrictedViewer)
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5849 */;
+import SettingsDefaultFeature from "SettingsDefaultFeature" /* 5857 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6813 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/message_request/hooks/useIsMessageRequestRestrictedViewer.tsx");

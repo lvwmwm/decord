@@ -1,17 +1,17 @@
-// Module ID: 11332
-// Function ID: 11333
+// Module ID: 11504
+// Function ID: 11505
 // Name: useAttachPinotMemberCoachmark
-// Dependencies: [19, 1072, 4860, 21, 11333, 575, 11325, 11335, 1113, 3160, 5624, 7563, 5709, 2061, 9954, 2]
+// Dependencies: [19, 1072, 5016, 21, 11505, 575, 11497, 11507, 1113, 3316, 5783, 7668, 5866, 2185, 10109, 2]
 // Exports: useAttachPinotMemberCoachmark
 
-// Module 11332 (useAttachPinotMemberCoachmark)
+// Module 11504 (useAttachPinotMemberCoachmark)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
-import _modDef3160 from "module_3160" /* 3160 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import ExperimentalWebIcon2 from "ExperimentalWebIcon" /* 11333 */;
-import PinotAnalytics from "PinotAnalytics" /* 11335 */;
+import _modDef3316 from "module_3316" /* 3316 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5016 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import ExperimentalWebIcon2 from "ExperimentalWebIcon" /* 11505 */;
+import PinotAnalytics from "PinotAnalytics" /* 11507 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
@@ -64,7 +64,7 @@ export function useAttachPinotMemberCoachmark(ref1, channel, bottom) {
     let items;
     let obj2;
     let obj = {
-      title: intl.string(_modDef3160.MrT2mn),
+      title: intl.string(_modDef3316.MrT2mn),
       description: React4(metroImportAll, obj2),
       renderImgComponent: renderWebIcon,
       visible,
@@ -82,7 +82,6 @@ export function useAttachPinotMemberCoachmark(ref1, channel, bottom) {
         const obj = position(markAsDismissed[7]);
         const obj2 = { noticeType: "member_coachmark", guildId };
         const result = obj.trackPinotNoticeAction(obj2, "learn_more");
-        closure_1_2(constants3.TAKE_ACTION);
         const openURL = visible(markAsDismissed[12]).openURL;
         visible(markAsDismissed[12]);
         const obj3 = visible(markAsDismissed[13]);
@@ -92,21 +91,20 @@ export function useAttachPinotMemberCoachmark(ref1, channel, bottom) {
     intl = intl5.intl;
     obj2 = { children: items };
     const intl2 = intl5.intl;
-    items = [intl2.string(_modDef3160.x9NGts), "\n", ];
+    items = [intl2.string(_modDef3316.x9NGts), "\n", ];
     let obj3 = {
-      variant: "text-sm/medium",
+      variant: "body-sm/medium",
       color: "text-link",
       accessibilityRole: "link",
       onPress() {
         const obj = position(markAsDismissed[7]);
         const obj2 = { noticeType: "member_coachmark", guildId };
         const result = obj.trackPinotNoticeAction(obj2, "open_settings");
-        closure_1_2(constants3.TAKE_ACTION);
         const obj3 = position(markAsDismissed[11]);
         const obj4 = { screen: constants2.DATA_AND_PRIVACY };
         obj3.openUserSettings(obj4);
       },
-      children: intl3.string(_modDef3160.eJZ8MS)
+      children: intl3.string(_modDef3316.eJZ8MS)
     };
     const Text = Text_Text.Text;
     intl3 = intl5.intl;

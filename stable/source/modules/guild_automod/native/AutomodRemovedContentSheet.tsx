@@ -1,19 +1,19 @@
-// Module ID: 19399
-// Function ID: 19400
+// Module ID: 19844
+// Function ID: 19845
 // Name: AutomodRemovedContentSheet
-// Dependencies: [19, 17, 1072, 21, 8377, 5014, 575, 1113, 6063, 7366, 7321, 9885, 5624, 2]
+// Dependencies: [19, 17, 1072, 21, 8481, 5170, 575, 1113, 6228, 7459, 7415, 10040, 5783, 2]
 // Exports: default
 
-// Module 19399 (AutomodRemovedContentSheet)
+// Module 19844 (AutomodRemovedContentSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 6063 */;
-import RowGeneratorDefault from "RowGenerator" /* 8377 */;
-import ChatItemDefault from "ChatItem" /* 9885 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 6228 */;
+import RowGeneratorDefault from "RowGenerator" /* 8481 */;
+import ChatItemDefault from "ChatItem" /* 10040 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -72,8 +72,8 @@ export default function AutomodRemovedContentSheet(action) {
     return messageRecord;
   }, items);
   const tmp5 = message;
-  const ActionSheet = message(7366).ActionSheet;
-  const BottomSheetTitleHeader = message(7321).BottomSheetTitleHeader;
+  const ActionSheet = message(7459).ActionSheet;
+  const BottomSheetTitleHeader = message(7415).BottomSheetTitleHeader;
   let intl = message(1113).intl;
   const string = intl.string;
   if (null != thread) {
@@ -93,8 +93,8 @@ export default function AutomodRemovedContentSheet(action) {
     obj5 = { rowGenerator, message: memo, modifyRow: callback, pointerEvents: "none" };
     tmp4Result = tmp4(tmp8, obj4);
   } else {
-    const obj6 = { variant: "text-md/normal", color: "text-default", children: notice };
-    tmp4Result = tmp4(tmp5(5624).Text, obj6);
+    const obj6 = { variant: "body-md/normal", color: "text-default", children: notice };
+    tmp4Result = tmp4(tmp5(5783).Text, obj6);
   }
   return jsx(ActionSheet, obj2);
 };

@@ -1,19 +1,19 @@
-// Module ID: 17874
-// Function ID: 17875
+// Module ID: 18245
+// Function ID: 18246
 // Name: ShopFlashList
-// Dependencies: [19, 21, 5014, 575, 17837, 7294, 1187, 8805, 1113, 2]
+// Dependencies: [19, 21, 5170, 575, 18204, 7390, 1187, 8912, 1113, 2]
 // Exports: default
 
-// Module 17874 (ShopFlashList)
+// Module 18245 (ShopFlashList)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import defaultMVCPConfig from "defaultMVCPConfig" /* 7294 */;
-import NoResults from "NoResults" /* 8805 */;
-import react2 from "react" /* 17837 */;
+import defaultMVCPConfig from "defaultMVCPConfig" /* 7390 */;
+import NoResults from "NoResults" /* 8912 */;
+import react2 from "react" /* 18204 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -31,7 +31,6 @@ const result = size.fileFinishedImporting("modules/collectibles/native/ShopFlash
 export default function ShopFlashList(initialScrollIndex) {
   let data;
   let getItemType;
-  let keyExtractor;
   let onViewableItemsChanged;
   let renderItem;
   initialScrollIndex = initialScrollIndex.initialScrollIndex;

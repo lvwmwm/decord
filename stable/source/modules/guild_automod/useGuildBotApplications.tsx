@@ -1,14 +1,14 @@
-// Module ID: 19693
-// Function ID: 19694
+// Module ID: 20144
+// Function ID: 20145
 // Name: useGuildBotApplications
-// Dependencies: [19, 9075, 504, 9080, 19694, 1379, 2]
+// Dependencies: [19, 9188, 504, 9193, 20145, 1380, 2]
 // Exports: useGuildBotApplications
 
-// Module 19693 (useGuildBotApplications)
-import GlobalUtils from "GlobalUtils" /* 1379 */;
-import GuildSettingsFetchActionCreators from "GuildSettingsFetchActionCreators" /* 9080 */;
+// Module 20144 (useGuildBotApplications)
+import GlobalUtils from "GlobalUtils" /* 1380 */;
+import GuildSettingsFetchActionCreators from "GuildSettingsFetchActionCreators" /* 9193 */;
 import react from "react" /* 19 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9075 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9188 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

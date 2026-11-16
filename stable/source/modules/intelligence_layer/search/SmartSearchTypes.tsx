@@ -1,9 +1,9 @@
-// Module ID: 13891
-// Function ID: 13892
+// Module ID: 14157
+// Function ID: 14158
 // Name: SmartSearchTypes
 // Dependencies: [2]
 
-// Module 13891 (SmartSearchTypes)
+// Module 14157 (SmartSearchTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/intelligence_layer/search/SmartSearchTypes.tsx");

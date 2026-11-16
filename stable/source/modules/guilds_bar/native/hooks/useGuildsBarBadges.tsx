@@ -1,25 +1,25 @@
-// Module ID: 18398
-// Function ID: 18399
+// Module ID: 18772
+// Function ID: 18773
 // Name: useGuildsBarBadges
-// Dependencies: [109, 19, 11010, 5046, 4926, 4885, 4946, 1383, 1072, 21, 5014, 504, 5047, 18399, 5596, 575, 1187, 18400, 18369, 18368, 2]
+// Dependencies: [109, 19, 11172, 5204, 5082, 5041, 5102, 1385, 1072, 21, 5170, 504, 5205, 18773, 5756, 575, 1187, 18774, 18743, 18742, 2]
 // Exports: default
 
-// Module 18398 (useGuildsBarBadges)
+// Module 18772 (useGuildsBarBadges)
 import Fragment from "Fragment" /* 21 */;
 import native from "native" /* 1187 */;
-import GuildJoinRequestUtils from "GuildJoinRequestUtils" /* 5047 */;
-import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 18369 */;
-import GuildsBarActivityIndicator from "GuildsBarActivityIndicator" /* 18400 */;
+import GuildJoinRequestUtils from "GuildJoinRequestUtils" /* 5205 */;
+import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 18743 */;
+import GuildsBarActivityIndicator from "GuildsBarActivityIndicator" /* 18774 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 11010 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5046 */;
-import GuildMemberStore from "GuildMemberStore" /* 4926 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import PermissionStore from "PermissionStore" /* 4946 */;
-import UserStore from "UserStore" /* 1383 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 11172 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5204 */;
+import GuildMemberStore from "GuildMemberStore" /* 5082 */;
+import GuildStore from "GuildStore" /* 5041 */;
+import PermissionStore from "PermissionStore" /* 5102 */;
+import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

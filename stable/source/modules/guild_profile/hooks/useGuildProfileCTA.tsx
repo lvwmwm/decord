@@ -1,19 +1,19 @@
-// Module ID: 13217
-// Function ID: 13218
+// Module ID: 13494
+// Function ID: 13495
 // Name: useGuildProfileCTA
-// Dependencies: [19, 502, 4926, 4885, 5749, 1383, 1072, 504, 1396, 8959, 13218, 8736, 6925, 2]
+// Dependencies: [19, 502, 5082, 5041, 5906, 1385, 1072, 504, 1403, 9071, 13495, 8840, 7013, 2]
 // Exports: default, getGuildProfileCTAType
 
-// Module 13217 (useGuildProfileCTA)
-import FlagUtils from "FlagUtils" /* 1396 */;
-import GuildTagUtils from "GuildTagUtils" /* 8736 */;
-import usePendingFolderGuildIds from "usePendingFolderGuildIds" /* 13218 */;
+// Module 13494 (useGuildProfileCTA)
+import FlagUtils from "FlagUtils" /* 1403 */;
+import GuildTagUtils from "GuildTagUtils" /* 8840 */;
+import usePendingFolderGuildIds from "usePendingFolderGuildIds" /* 13495 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 4926 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import InviteStore from "InviteStore" /* 5749 */;
-import UserStore from "UserStore" /* 1383 */;
+import GuildMemberStore from "GuildMemberStore" /* 5082 */;
+import GuildStore from "GuildStore" /* 5041 */;
+import InviteStore from "InviteStore" /* 5906 */;
+import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -81,7 +81,7 @@ export default function useGuildProfileCTA(id, arg1, arg2) {
       if (invite.state !== validInviteKey.BANNED) {
         let obj;
         if (invite.state !== tmp9.EXPIRED) {
-          obj = { validInviteKey: inviteKeyForGuildId, isBypassInvite: hasFlag(num, tmp6(8959).GuildInviteFlags.IS_APPLICATION_BYPASS), inviteRoles: invite.roles };
+          obj = { validInviteKey: inviteKeyForGuildId, isBypassInvite: hasFlag(num, tmp6(9071).GuildInviteFlags.IS_APPLICATION_BYPASS), inviteRoles: invite.roles };
           num = invite.flags;
           hasFlag = FlagUtils.hasFlag;
           FlagUtils;
@@ -254,7 +254,7 @@ export function getGuildProfileCTAType(guildProfileFromInvite, code) {
         if (num == null) {
           num = 0;
         }
-        flag = hasFlag(num, tmp13(8959).GuildInviteFlags.IS_APPLICATION_BYPASS);
+        flag = hasFlag(num, tmp13(9071).GuildInviteFlags.IS_APPLICATION_BYPASS);
         tmp11 = inviteKeyForGuildId;
       }
     }

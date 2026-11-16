@@ -1,16 +1,16 @@
-// Module ID: 18636
-// Function ID: 18637
+// Module ID: 19032
+// Function ID: 19033
 // Name: OnboardingHomeResourcesSheet
-// Dependencies: [19, 18634, 21, 5596, 575, 18635, 13833, 5258, 7366, 7368, 1409, 5717, 2]
+// Dependencies: [19, 19030, 21, 5756, 575, 19031, 14099, 5406, 7459, 7461, 1411, 5874, 2]
 // Exports: default
 
-// Module 18636 (OnboardingHomeResourcesSheet)
+// Module 19032 (OnboardingHomeResourcesSheet)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 13833 */;
-import OnboardingHomeConstants from "OnboardingHomeConstants" /* 18634 */;
-import useResourceChannelsDefault from "useResourceChannels" /* 18635 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
+import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 14099 */;
+import OnboardingHomeConstants from "OnboardingHomeConstants" /* 19030 */;
+import useResourceChannelsDefault from "useResourceChannels" /* 19031 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -24,10 +24,10 @@ const result = size.fileFinishedImporting("modules/guild_onboarding_home/native/
 export default function OnboardingHomeResourcesSheet(guildId) {
   let closure_1;
   guildId = guildId.guildId;
-  let obj = guildId(5596);
+  let obj = guildId(5756);
   importDefault = obj.useToken(nativeDefault.modules.mobile.TABLE_ROW_ICON_SIZE);
   const arr = useResourceChannelsDefault(guildId);
-  const ActionSheet = guildId(7366).ActionSheet;
+  const ActionSheet = guildId(7459).ActionSheet;
   let obj3 = {
     hasIcons: true,
     children: arr.map((label) => {
@@ -52,6 +52,6 @@ export default function OnboardingHomeResourcesSheet(guildId) {
       }} arrow />;
     })
   };
-  const Group = guildId(7368).ActionSheetRow.Group;
+  const Group = guildId(7461).ActionSheetRow.Group;
   return <ActionSheet>{null}</ActionSheet>;
 };

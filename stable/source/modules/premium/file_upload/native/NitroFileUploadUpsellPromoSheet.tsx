@@ -1,18 +1,18 @@
-// Module ID: 19047
-// Function ID: 19048
+// Module ID: 19457
+// Function ID: 19458
 // Name: NitroFileUploadUpsellPromoSheet
-// Dependencies: [19, 17, 1072, 4860, 21, 5014, 575, 5593, 7563, 10030, 10837, 19043, 1113, 2642, 5634, 2]
+// Dependencies: [19, 17, 1072, 5016, 21, 5170, 575, 5753, 7668, 10184, 10988, 19453, 1113, 2766, 5790, 2]
 // Exports: default
 
-// Module 19047 (NitroFileUploadUpsellPromoSheet)
+// Module 19457 (NitroFileUploadUpsellPromoSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
-import openUserSettings from "openUserSettings" /* 7563 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5016 */;
+import openUserSettings from "openUserSettings" /* 7668 */;
 import react_mod from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -76,12 +76,12 @@ export default function NitroFileUploadUpsellPromoSheet(markAsDismissed) {
   const PromoSheet = markAsDismissed(callback[10]).PromoSheet;
   const intl = markAsDismissed(callback[12]).intl;
   const intl2 = markAsDismissed(callback[12]).intl;
-  ({ grow: true, size: "lg", variant: "primary", loading, text: intl3.string(require("module_2642").mRy6sO), onPress: tmp9 });
+  ({ grow: true, size: "lg", variant: "primary", loading, text: intl3.string(require("module_2766").mRy6sO), onPress: tmp9 });
   const Button = markAsDismissed(callback[14]).Button;
   intl3 = markAsDismissed(callback[12]).intl;
   tmp9 = null;
   if (!loading) {
     tmp9 = callback2;
   }
-  return <PromoSheet illustration={null} title={intl.string(require("module_2642")["Uty2/X"])} description={intl2.string(require("module_2642").VAgI8Q)} onDismiss={callback3} actions={null} />;
+  return <PromoSheet illustration={null} title={intl.string(require("module_2766")["Uty2/X"])} description={intl2.string(require("module_2766").VAgI8Q)} onDismiss={callback3} actions={null} />;
 };

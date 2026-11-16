@@ -1,15 +1,15 @@
-// Module ID: 16936
-// Function ID: 16937
+// Module ID: 17290
+// Function ID: 17291
 // Name: useBountyVideoProgressPersistence
-// Dependencies: [32, 19, 7845, 16932, 14691, 2]
+// Dependencies: [32, 19, 7954, 17286, 14956, 2]
 // Exports: useBountyVideoProgressPersistence
 
-// Module 16936 (useBountyVideoProgressPersistence)
-import BountyActionCreators from "BountyActionCreators" /* 14691 */;
-import useBountiesModalTiming from "useBountiesModalTiming" /* 16932 */;
+// Module 17290 (useBountyVideoProgressPersistence)
+import BountyActionCreators from "BountyActionCreators" /* 14956 */;
+import useBountiesModalTiming from "useBountiesModalTiming" /* 17286 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import BountyStore from "BountyStore" /* 7845 */;
+import BountyStore from "BountyStore" /* 7954 */;
 import size from "module_2" /* 2 */;
 
 let _slicedToArray = _slicedToArray_mod;

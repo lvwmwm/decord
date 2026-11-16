@@ -1,19 +1,19 @@
-// Module ID: 16739
-// Function ID: 16740
+// Module ID: 17093
+// Function ID: 17094
 // Name: AndroidViewNsfwDmCommandsSetting
-// Dependencies: [8432, 7389, 6734, 7390, 6726, 1375, 7955, 6729, 4839, 11540, 1113, 2]
+// Dependencies: [8536, 7482, 6821, 7483, 6813, 1377, 8057, 6816, 4995, 11717, 1113, 2]
 
-// Module 16739 (AndroidViewNsfwDmCommandsSetting)
+// Module 17093 (AndroidViewNsfwDmCommandsSetting)
 import intl2 from "intl" /* 1113 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6726 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6729 */;
-import AgeGateUtils from "AgeGateUtils" /* 6734 */;
-import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 7389 */;
-import useNSFWAllowed from "useNSFWAllowed" /* 7390 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7955 */;
-import SettingsConstants from "SettingsConstants" /* 8432 */;
-import SettingBuilders from "SettingBuilders" /* 11540 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6813 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6816 */;
+import AgeGateUtils from "AgeGateUtils" /* 6821 */;
+import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 7482 */;
+import useNSFWAllowed from "useNSFWAllowed" /* 7483 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8057 */;
+import SettingsConstants from "SettingsConstants" /* 8536 */;
+import SettingBuilders from "SettingBuilders" /* 11717 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -41,7 +41,7 @@ let obj = {
         const result = showAgeVerificationGetStartedModal(obj2);
       }
     }
-    const ViewNsfwCommands = tmp(4839).ViewNsfwCommands;
+    const ViewNsfwCommands = tmp(4995).ViewNsfwCommands;
     ViewNsfwCommands.updateSetting(arg0);
   },
   usePredicate() {

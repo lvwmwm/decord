@@ -1,17 +1,17 @@
-// Module ID: 16693
-// Function ID: 16694
+// Module ID: 17046
+// Function ID: 17047
 // Name: WebAuthnEditStep
-// Dependencies: [32, 19, 1072, 21, 5014, 575, 7164, 1497, 8177, 1113, 1187, 5634, 6748, 5712, 2]
+// Dependencies: [32, 19, 1072, 21, 5170, 575, 7259, 1499, 8279, 1113, 1187, 5790, 6835, 5869, 2]
 // Exports: default
 
-// Module 16693 (WebAuthnEditStep)
+// Module 17046 (WebAuthnEditStep)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6748 */;
+import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6835 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -38,10 +38,10 @@ export default function WebAuthnEditStep() {
   let tmp5;
   let value;
   let tmp = credential;
-  let obj = credential(7164);
+  let obj = credential(7259);
   credential = obj.useSettingNavigationRoute().params.credential;
   const tmp3 = closure_8();
-  const obj2 = credential(1497);
+  const obj2 = credential(1499);
   let closure_1 = obj2.useNavigation();
   [tmp5, dependencyMap] = value(react.useState(false), 2);
   value(react.useState(false), 2);
@@ -51,11 +51,11 @@ export default function WebAuthnEditStep() {
   const tmp9 = value(react.useState(null), 2);
   [tmp10, react] = tmp9;
   const obj3 = { style: tmp3.form, children: items };
-  const Form = credential(8177).Form;
+  const Form = credential(8279).Form;
   const obj4 = { showTopContainer: false, value, onChange: tmp8, style: tmp3.inputField, error: tmp10, title: intl.string(credential(1113).t["Jzd+z/"]), placeholder: credential.name, disabled: tmp5, clearButtonVisibility: credential(1187).ClearButtonVisibility.WITH_CONTENT, autoFocus: true, showBorder: true, required: true, large: true };
-  const FormInput = credential(8177).FormInput;
+  const FormInput = credential(8279).FormInput;
   intl = credential(1113).intl;
-  items = [closure_6(FormInput, obj4), closure_6(credential(8177).FormDivider, {}), ];
+  items = [closure_6(FormInput, obj4), closure_6(credential(8279).FormDivider, {}), ];
   const obj5 = {
     onPress() {
       const tmp = dependencyMap(true);
@@ -85,7 +85,7 @@ export default function WebAuthnEditStep() {
     grow: true
   };
   tmp13 = tmp5;
-  const Button = credential(5634).Button;
+  const Button = credential(5790).Button;
   const tmp11 = closure_7;
   const tmp12 = closure_6;
   if (!tmp5) {

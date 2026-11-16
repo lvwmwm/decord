@@ -1,21 +1,21 @@
-// Module ID: 1490
-// Function ID: 1491
+// Module ID: 1492
+// Function ID: 1493
 // Name: utils/ImageUtils
-// Dependencies: [32, 17, 1072, 1445, 1491, 1485, 1446, 1892, 12, 1412, 1409, 1893, 2]
+// Dependencies: [32, 17, 1072, 1447, 1493, 1487, 1448, 2021, 12, 1414, 1411, 2022, 2]
 // Exports: getMobileOptimizedSrc, getPaletteForAvatarMobile
 
-// Module 1490 (utils/ImageUtils)
+// Module 1492 (utils/ImageUtils)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
-import AvatarUtils from "AvatarUtils" /* 1409 */;
-import utils_AvatarUtils from "utils/AvatarUtils" /* 1412 */;
-import AttachmentImageLadderExperiment from "AttachmentImageLadderExperiment" /* 1445 */;
-import AttachmentImageLadder from "AttachmentImageLadder" /* 1446 */;
-import _modDef1485 from "module_1485" /* 1485 */;
-import useWindowDimensions from "useWindowDimensions" /* 1491 */;
-import react_nativeDefault from "react-native" /* 1892 */;
-import react_nativeDefault2 from "react-native" /* 1893 */;
+import AvatarUtils from "AvatarUtils" /* 1411 */;
+import utils_AvatarUtils from "utils/AvatarUtils" /* 1414 */;
+import AttachmentImageLadderExperiment from "AttachmentImageLadderExperiment" /* 1447 */;
+import AttachmentImageLadder from "AttachmentImageLadder" /* 1448 */;
+import _modDef1487 from "module_1487" /* 1487 */;
+import useWindowDimensions from "useWindowDimensions" /* 1493 */;
+import react_nativeDefault from "react-native" /* 2021 */;
+import react_nativeDefault2 from "react-native" /* 2022 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -53,7 +53,7 @@ function getSrcWithWidthAndHeight(animated) {
   const tmp = _slicedToArray(src.split("?"), 2);
   const items = [tmp[0], ];
   const tmp2 = tmp[1];
-  let obj = _modDef1485;
+  let obj = _modDef1487;
   items[1] = obj.parse(tmp2);
   let tmp5 = _slicedToArray(items, 2);
   [tmp6, tmp7] = tmp5;
@@ -72,7 +72,7 @@ function getSrcWithWidthAndHeight(animated) {
     const tmp10 = getAttachmentLadderConfig("native/ImageUtils.getSrcWithWidthAndHeight");
     size = { width: targetWidth, height: targetHeight };
     if (null != tmp10) {
-      const obj2 = { targetWidth, targetHeight, sourceWidth, sourceHeight, maxUpscale: obj3.getSnapDownMaxUpscale(tmp10, react_nativeDefault()) };
+      const obj2 = { targetWidth, targetHeight, sourceWidth, sourceHeight, maxUpscale: obj3.getSnapDownMaxUpscale(tmp10, react_nativeDefault()), ladder: tmp10.ladder };
       const snapAttachmentDimensions = AttachmentImageLadder.snapAttachmentDimensions;
       AttachmentImageLadder;
       obj3 = AttachmentImageLadder;
@@ -90,7 +90,7 @@ function getSrcWithWidthAndHeight(animated) {
   let text = tmp6;
   const tmp3Result = _modDef12;
   if (!tmp3Result.isEmpty(tmp7)) {
-    _modDef1485;
+    _modDef1487;
     text = `${tmp6}?${obj5.stringify(tmp7)}`;
   }
   return text;

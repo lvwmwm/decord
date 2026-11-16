@@ -1,20 +1,20 @@
-// Module ID: 15214
-// Function ID: 15215
+// Module ID: 15529
+// Function ID: 15530
 // Name: PoggermodeStore
-// Dependencies: [502, 4917, 7820, 7821, 1072, 4941, 4858, 15215, 1108, 504, 572, 2]
+// Dependencies: [502, 5073, 7929, 7930, 1072, 5097, 5014, 15530, 1108, 504, 572, 2]
 // Exports: getComboId, isComboing, shouldTrackMessage
 
-// Module 15214 (PoggermodeStore)
+// Module 15529 (PoggermodeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
-import SecondaryIndexMap from "SecondaryIndexMap" /* 4941 */;
-import PoggermodeUtils from "PoggermodeUtils" /* 15215 */;
+import SecondaryIndexMap from "SecondaryIndexMap" /* 5097 */;
+import PoggermodeUtils from "PoggermodeUtils" /* 15530 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
-import PoggermodeSettingsStore from "PoggermodeSettingsStore" /* 7820 */;
-import PoggermodeConstants from "PoggermodeConstants" /* 7821 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5073 */;
+import PoggermodeSettingsStore from "PoggermodeSettingsStore" /* 7929 */;
+import PoggermodeConstants from "PoggermodeConstants" /* 7930 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -61,7 +61,7 @@ function updateCombo(userId) {
   if (decayInterval1 == null) {
     const self = this;
     const self2 = this;
-    decayInterval1 = new obj2(4858).Interval();
+    decayInterval1 = new obj2(5014).Interval();
   }
   const result = obj.set("" + userId.userId + "-" + userId.channelId, obj2);
   if (flag) {

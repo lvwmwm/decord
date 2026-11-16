@@ -1,19 +1,19 @@
-// Module ID: 7080
-// Function ID: 7081
+// Module ID: 7179
+// Function ID: 7180
 // Name: ConfirmEmailCode
-// Dependencies: [5, 32, 19, 17, 1383, 6997, 21, 5014, 575, 504, 6447, 5624, 1113, 7081, 7108, 5712, 5634, 2]
+// Dependencies: [5, 32, 19, 17, 1385, 7096, 21, 5170, 575, 504, 6612, 5783, 1113, 7180, 7212, 5869, 5790, 2]
 // Exports: default
 
-// Module 7080 (ConfirmEmailCode)
+// Module 7179 (ConfirmEmailCode)
 import nativeDefault from "native" /* 575 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1383 */;
-import ChangeEmailStore from "ChangeEmailStore" /* 6997 */;
+import UserStore from "UserStore" /* 1385 */;
+import ChangeEmailStore from "ChangeEmailStore" /* 7096 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let _undefined, c4;
@@ -169,9 +169,9 @@ export default function ConfirmEmailCode(onFormSubmit) {
     let obj3 = { style: null, keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, contentContainerStyle: null, children: items3 };
     ({ background: obj2.style, contentContainer: obj2.contentContainerStyle } = tmp);
     let obj4 = { children: items2 };
-    let obj5 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: headerText };
+    let obj5 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: headerText };
     items2 = [closure_11(tmp2(tmp3[11]).Text, obj5), , , ];
-    let obj6 = { style: tmp.prompt, variant: "text-sm/medium", color: "text-default", children: intl.string(tmp2(tmp3[12]).t.SZJowy) };
+    let obj6 = { style: tmp.prompt, variant: "body-sm/medium", color: "text-default", children: intl.string(tmp2(tmp3[12]).t.SZJowy) };
     const Text = tmp2(tmp3[11]).Text;
     intl = tmp2(tmp3[12]).intl;
     items2[1] = closure_11(Text, obj6);
@@ -182,7 +182,7 @@ export default function ConfirmEmailCode(onFormSubmit) {
     items2[2] = closure_11(tmp21, obj7);
     let obj8 = {
       text: intl3.string(tmp2(tmp3[12]).t.K0NPQ6),
-      variant: "text-sm/medium",
+      variant: "body-sm/medium",
       onPress: tmp13(function*(arg0, value) {
           let closure_1;
           let closure_2;

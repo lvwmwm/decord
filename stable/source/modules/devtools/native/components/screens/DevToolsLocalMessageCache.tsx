@@ -1,20 +1,20 @@
-// Module ID: 17582
-// Function ID: 17583
+// Module ID: 17945
+// Function ID: 17946
 // Name: DevToolsLocalMessageCache
-// Dependencies: [17, 4863, 21, 5014, 575, 6975, 6027, 7060, 7667, 5624, 2]
+// Dependencies: [17, 5019, 21, 5170, 575, 7071, 6191, 7159, 7776, 5783, 2]
 // Exports: default
 
-// Module 17582 (DevToolsLocalMessageCache)
+// Module 17945 (DevToolsLocalMessageCache)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import Stack_Stack from "Stack/Stack" /* 6027 */;
-import TableRow5 from "TableRow" /* 6975 */;
-import TableRowGroup3 from "TableRowGroup" /* 7060 */;
-import MessageCacheStatsDefault from "MessageCacheStats" /* 7667 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import Stack_Stack from "Stack/Stack" /* 6191 */;
+import TableRow5 from "TableRow" /* 7071 */;
+import TableRowGroup3 from "TableRowGroup" /* 7159 */;
+import MessageCacheStatsDefault from "MessageCacheStats" /* 7776 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -109,7 +109,7 @@ export default function DevToolsLocalMessageCache() {
   const obj7 = { label: "Incomplete Fetches", subLabel: MessageCacheStatsDefault.channelsFetchStarted.size - MessageCacheStatsDefault.channelsFetchedNetwork.size };
   const TableRow4 = TableRow5.TableRow;
   items[3] = hasOwnProperty(TableRow4, obj7);
-  items1 = [metroRequire(TableRowGroup, obj3), hasOwnProperty(Text_Text.Text, { variant: "text-sm/normal", color: "text-muted", children: "Cumulative since app launch. Does not update dynamically." }), ];
+  items1 = [metroRequire(TableRowGroup, obj3), hasOwnProperty(Text_Text.Text, { variant: "body-sm/normal", color: "text-muted", children: "Cumulative since app launch. Does not update dynamically." }), ];
   const obj8 = {
     title: "Fetch Log (Reversed)",
     hasIcons: false,

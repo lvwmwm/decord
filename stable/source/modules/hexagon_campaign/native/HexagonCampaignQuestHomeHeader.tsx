@@ -1,22 +1,22 @@
-// Module ID: 16999
-// Function ID: 17000
+// Module ID: 17353
+// Function ID: 17354
 // Name: HexagonCampaignQuestHomeHeader
-// Dependencies: [19, 17, 5039, 1072, 21, 5014, 575, 5080, 5043, 5596, 671, 7862, 6788, 7871, 6784, 7819, 17000, 5717, 17011, 5587, 17012, 5624, 1113, 4285, 17013, 6027, 16480, 5634, 5021, 2]
+// Dependencies: [19, 17, 5195, 1072, 21, 5170, 575, 5231, 5201, 5756, 671, 7972, 6876, 7981, 6872, 7928, 17354, 5874, 17368, 5747, 17369, 5783, 1113, 17370, 6191, 4411, 16827, 5790, 5177, 2]
 // Exports: default
 
-// Module 16999 (HexagonCampaignQuestHomeHeader)
+// Module 17353 (HexagonCampaignQuestHomeHeader)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5039 */;
-import QuestTypes from "QuestTypes" /* 6784 */;
-import AdCreativeType from "AdCreativeType" /* 6788 */;
-import getDeviceMetadataDefault from "getDeviceMetadata" /* 7819 */;
-import AnalyticsActions from "AnalyticsActions" /* 7862 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7871 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5195 */;
+import QuestTypes from "QuestTypes" /* 6872 */;
+import AdCreativeType from "AdCreativeType" /* 6876 */;
+import getDeviceMetadataDefault from "getDeviceMetadata" /* 7928 */;
+import AnalyticsActions from "AnalyticsActions" /* 7972 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7981 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let c9;
@@ -69,11 +69,11 @@ export default function HexagonCampaignQuestHomeHeader() {
   let obj20;
   let token;
   let tmp = closure_10();
-  let obj = isHexagonCampaignQuestHomeHeaderEnabled(5080);
+  let obj = isHexagonCampaignQuestHomeHeaderEnabled(5231);
   const theme = obj.useThemeContext().theme;
-  let obj2 = isHexagonCampaignQuestHomeHeaderEnabled(5043);
+  let obj2 = isHexagonCampaignQuestHomeHeaderEnabled(5201);
   isHexagonCampaignQuestHomeHeaderEnabled = obj2.useIsHexagonCampaignQuestHomeHeaderEnabled("HexagonCampaignQuestHomeHeader");
-  let obj3 = isHexagonCampaignQuestHomeHeaderEnabled(5596);
+  let obj3 = isHexagonCampaignQuestHomeHeaderEnabled(5756);
   token = obj3.useToken(token(575).colors.BACKGROUND_BASE_LOWEST);
   let items = [token];
   const items1 = [isHexagonCampaignQuestHomeHeaderEnabled];
@@ -103,58 +103,58 @@ export default function HexagonCampaignQuestHomeHeader() {
   if (isHexagonCampaignQuestHomeHeaderEnabled) {
     const obj4 = { style: tmp.container, children: items3 };
     const obj5 = { style: tmp.banner, children: items2 };
-    const obj6 = { source: token(17011), style: tmp.bannerImage, resizeMode: "cover", accessible: false };
-    const tmp5Result = token(5717);
+    const obj6 = { source: token(17368), style: tmp.bannerImage, resizeMode: "cover", accessible: false };
+    const tmp5Result = token(5874);
     items2 = [closure_8(tmp5Result, obj6), , , ];
     const obj7 = { colors: memo, locations: [0.716, 0.823, 1], style: absoluteFill.absoluteFill, pointerEvents: "none" };
-    items2[1] = closure_8(token(5587), obj7);
-    const obj8 = { source: token(17012), style: tmp.logo, resizeMode: "contain", accessible: false };
-    const tmp5Result2 = token(5717);
+    items2[1] = closure_8(token(5747), obj7);
+    const obj8 = { source: token(17369), style: tmp.logo, resizeMode: "contain", accessible: false };
+    const tmp5Result2 = token(5874);
     items2[2] = closure_8(tmp5Result2, obj8);
     const obj9 = { style: tmp.sponsoredTag, children: closure_8(Text, obj10) };
-    obj10 = { variant: "text-sm/semibold", color: "text-overlay-light", children: intl.string(token(4285).kVJc0r) };
-    Text = tmp2(5624).Text;
+    obj10 = { variant: "body-sm/semibold", color: "text-overlay-light", children: intl.string(isHexagonCampaignQuestHomeHeaderEnabled(1113).t.OJjFi5) };
+    Text = tmp2(5783).Text;
     intl = tmp2(1113).intl;
     items2[3] = closure_8(closure_5, obj9);
     items3 = [closure_9(closure_5, obj5), ];
     const obj11 = { style: tmp.cardShadow, children: closure_9(closure_5, obj12) };
     obj12 = { style: tmp.card, children: items4 };
-    const obj13 = { style: tmp.cardArt, children: closure_8(isHexagonCampaignQuestHomeHeaderEnabled(17013).BundleAbstractUI, { accessible: false }) };
+    const obj13 = { style: tmp.cardArt, children: closure_8(isHexagonCampaignQuestHomeHeaderEnabled(17370).BundleAbstractUI, { accessible: false }) };
     items4 = [closure_8(closure_5, obj13), ];
     const obj14 = { direction: "vertical", spacing: token(575).space.PX_12, style: tmp.cardContent, children: items7 };
-    const Stack = tmp2(6027).Stack;
+    const Stack = tmp2(6191).Stack;
     const obj15 = { direction: "vertical", spacing: token(575).space.PX_8, children: items6 };
-    const Stack2 = tmp2(6027).Stack;
+    const Stack2 = tmp2(6191).Stack;
     const obj16 = { direction: "vertical", spacing: token(575).space.PX_4, children: items5 };
-    const Stack3 = tmp2(6027).Stack;
-    const obj17 = { variant: "text-lg/semibold", color: "text-strong", children: intl2.string(token(4285)["fShp/D"]) };
-    const Heading = tmp2(5624).Heading;
+    const Stack3 = tmp2(6191).Stack;
+    const obj17 = { variant: "body-lg/semibold", color: "text-strong", children: intl2.string(token(4411)["fShp/D"]) };
+    const Heading = tmp2(5783).Heading;
     intl2 = tmp2(1113).intl;
     items5 = [closure_8(Heading, obj17), ];
-    const obj18 = { variant: "text-sm/medium", color: "text-default", style: tmp.cardBody, children: intl3.string(token(4285).XLqMej) };
-    const Text2 = tmp2(5624).Text;
+    const obj18 = { variant: "body-sm/medium", color: "text-default", style: tmp.cardBody, children: intl3.string(token(4411).XLqMej) };
+    const Text2 = tmp2(5783).Text;
     intl3 = tmp2(1113).intl;
     items5[1] = closure_8(Text2, obj18);
     items6 = [closure_9(Stack3, obj16), ];
-    const obj19 = { variant: "text-xs/medium", color: "text-subtle", children: intl4.format(token(4285).uL0TOA, obj20) };
-    const Text3 = tmp2(5624).Text;
+    const obj19 = { variant: "body-xs/medium", color: "text-subtle", children: intl4.format(token(4411).uL0TOA, obj20) };
+    const Text3 = tmp2(5783).Text;
     intl4 = tmp2(1113).intl;
     obj20 = {
       learnMoreHook(children, arg1) {
-          const obj = { variant: "text-xs/medium", color: "text-link", accessibilityRole: "link", onPress: isHexagonCampaignQuestHomeHeaderEnabled(dependencyMap[26]).openHexagonCampaignLearnMore, children };
+          const obj = { variant: "body-xs/medium", color: "text-link", accessibilityRole: "link", onPress: isHexagonCampaignQuestHomeHeaderEnabled(dependencyMap[26]).openHexagonCampaignLearnMore, children };
           const Text = isHexagonCampaignQuestHomeHeaderEnabled(dependencyMap[21]).Text;
           return closure_1_8(Text, obj, arg1);
         }
     };
     items6[1] = closure_8(Text3, obj19);
     items7 = [closure_9(Stack2, obj15), ];
-    const Button = tmp2(5634).Button;
+    const Button = tmp2(5790).Button;
     let str = "primary-overlay";
-    const tmp2Result = isHexagonCampaignQuestHomeHeaderEnabled(5021);
+    const tmp2Result = isHexagonCampaignQuestHomeHeaderEnabled(5177);
     if (tmp2Result.isThemeLight(theme)) {
       str = "primary";
     }
-    const obj21 = { variant: str, text: intl5.string(token(4285)["KX1/jp"]), onPress: tmp9, grow: true };
+    const obj21 = { variant: str, text: intl5.string(token(4411)["KX1/jp"]), onPress: tmp9, grow: true };
     intl5 = tmp2(1113).intl;
     items7[1] = closure_8(Button, obj21);
     items4[1] = closure_9(Stack, obj14);

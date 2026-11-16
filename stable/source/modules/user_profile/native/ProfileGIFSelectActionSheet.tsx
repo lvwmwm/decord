@@ -1,25 +1,25 @@
-// Module ID: 16452
-// Function ID: 16453
+// Module ID: 16802
+// Function ID: 16803
 // Name: ProfileGIFSelectActionSheet
-// Dependencies: [32, 5, 19, 17, 21, 5014, 575, 7154, 16442, 8740, 8738, 8735, 8737, 7160, 5258, 5272, 7321, 1113, 9528, 10242, 2]
+// Dependencies: [32, 5, 19, 17, 21, 5170, 575, 7249, 16792, 8844, 8842, 8839, 8841, 7255, 5406, 5420, 7415, 1113, 9645, 10393, 2]
 // Exports: default
 
-// Module 16452 (ProfileGIFSelectActionSheet)
+// Module 16802 (ProfileGIFSelectActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5272 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7321 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9528 */;
-import GIFPickerDefault from "GIFPicker" /* 10242 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5420 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7415 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 9645 */;
+import GIFPickerDefault from "GIFPicker" /* 10393 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet, c4, c5;
+let c4, c5;
 
 let metroImportAll;
 let metroImportDefault;
@@ -207,7 +207,7 @@ export default function ProfileGIFSelectActionSheet(arg0) {
   const tmp = closure_9();
   const ref = react.useRef(null);
   obj = { ref, scrollable: true, startExpanded: true, children: items };
-  BottomSheet = Sheet_BottomSheet.BottomSheet;
+  const BottomSheet = Sheet_BottomSheet.BottomSheet;
   obj3 = { title: intl.string(intl2.t["xsC+/y"]), trailing: closure_7(NitroWheelIcon.NitroWheelIcon, {}), titleWrapperStyle: null, titleContainerStyle: null };
   const BottomSheetTitleHeader = BottomSheetTitleHeader2.BottomSheetTitleHeader;
   intl = intl2.intl;

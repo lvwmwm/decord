@@ -1,22 +1,14 @@
 // Module ID: 13076
 // Function ID: 13077
-// Dependencies: [13060]
-// Exports: _getSpanForScope, _setSpanForScope
+// Dependencies: []
 
 // Module 13076
-import _mod13060 from "module_13060" /* 13060 */;
+const f60753 = (acc, item) => {
+  acc[obj[item]] = item;
+  return acc;
+};
+const TYPE = { EOF: 0, Ident: 1, Function: 2, AtKeyword: 3, Hash: 4, String: 5, BadString: 6, Url: 7, BadUrl: 8, Delim: 9, Number: 10, Percentage: 11, Dimension: 12, WhiteSpace: 13, CDO: 14, CDC: 15, Colon: 16, Semicolon: 17, Comma: 18, LeftSquareBracket: 19, RightSquareBracket: 20, LeftParenthesis: 21, RightParenthesis: 22, LeftCurlyBracket: 23, RightCurlyBracket: 24, Comment: 25 };
+const keys = Object.keys(TYPE);
+({ TYPE, NAME: keys.reduce(f60753, {}) });
 
-const _sentrySpan = "_sentrySpan";
-
-export function _getSpanForScope(arg0) {
-  return arg0[_sentrySpan];
-}
-export function _setSpanForScope(arg0, arg1) {
-  const tmp2 = arg1;
-  if (tmp2) {
-    const obj = _mod13060;
-    const result = obj.addNonEnumerableProperty(arg0, _sentrySpan, arg1);
-  } else {
-    delete tmp[_sentrySpan];
-  }
-}
+export default { TYPE, NAME: keys.reduce(f60753, {}) };

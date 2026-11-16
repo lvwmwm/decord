@@ -1,28 +1,28 @@
-// Module ID: 9101
-// Function ID: 9102
+// Module ID: 9214
+// Function ID: 9215
 // Name: StartEventModal
-// Dependencies: [5, 32, 19, 17, 4863, 4885, 4869, 8963, 21, 5014, 575, 6744, 6980, 1113, 1187, 7257, 5624, 9095, 504, 9020, 9102, 7292, 7954, 9105, 5634, 2]
+// Dependencies: [5, 32, 19, 17, 5019, 5041, 5025, 9075, 21, 5170, 575, 6831, 7076, 1113, 1187, 7353, 5783, 9208, 504, 9133, 9215, 7388, 8056, 9218, 5790, 2]
 // Exports: default
 
-// Module 9101 (StartEventModal)
+// Module 9214 (StartEventModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
-import Pressables from "Pressables" /* 6980 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7257 */;
-import GuildEventModalConstants from "GuildEventModalConstants" /* 8963 */;
-import GuildEventCardDefault from "GuildEventCard" /* 9095 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6831 */;
+import Pressables from "Pressables" /* 7076 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7353 */;
+import GuildEventModalConstants from "GuildEventModalConstants" /* 9075 */;
+import GuildEventCardDefault from "GuildEventCard" /* 9208 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4869 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import GuildStore from "GuildStore" /* 5041 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 5025 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let c0, c1;
@@ -64,11 +64,11 @@ function StartEventHeader(event) {
   event = event.event;
   const tmp = closure_14();
   const obj = { style: tmp.header, children: items };
-  const obj2 = { style: tmp.headerPrivacyLevel, variant: "heading-lg/bold", color: "mobile-text-heading-primary", children: intl.string(intl2.t["q+fFJv"]) };
+  const obj2 = { style: tmp.headerPrivacyLevel, variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl.string(intl2.t["q+fFJv"]) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   items = [authStore2(Text, obj2), ];
-  const obj3 = { style: tmp.headerTitle, variant: "text-md/medium", color: "text-default", children: event.name };
+  const obj3 = { style: tmp.headerTitle, variant: "body-md/medium", color: "text-default", children: event.name };
   items[1] = authStore2(Text_Text.Text, obj3);
   return map1(View, obj);
 }
@@ -240,7 +240,7 @@ export default function StartEventModal(event) {
   let tmp14Result2 = null;
   const obj8 = { style: tmp.buttonContainer, children: items7 };
   if (null != error) {
-    const obj9 = { variant: "text-sm/medium", color: "text-feedback-critical", children: error.getAnyErrorMessage() };
+    const obj9 = { variant: "body-sm/medium", color: "text-feedback-critical", children: error.getAnyErrorMessage() };
     const Text = tmp2(tmp3[16]).Text;
     tmp14Result2 = tmp14(Text, obj9);
   }

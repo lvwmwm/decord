@@ -1,12 +1,12 @@
-// Module ID: 7649
-// Function ID: 7650
+// Module ID: 7758
+// Function ID: 7759
 // Name: SkippedClientHeartbeatUtil
-// Dependencies: [1383, 7650, 2]
+// Dependencies: [1385, 7759, 2]
 // Exports: shouldLogClientHeartbeatSkipped
 
-// Module 7649 (SkippedClientHeartbeatUtil)
-import sampleWithUserId from "sampleWithUserId" /* 7650 */;
-import UserStore from "UserStore" /* 1383 */;
+// Module 7758 (SkippedClientHeartbeatUtil)
+import sampleWithUserId from "sampleWithUserId" /* 7759 */;
+import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/analytics_sessions/SkippedClientHeartbeatUtil.tsx");

@@ -1,13 +1,13 @@
-// Module ID: 19327
-// Function ID: 19328
+// Module ID: 19772
+// Function ID: 19773
 // Name: useShowConnectedControls
-// Dependencies: [19, 19146, 11222, 8841, 2]
+// Dependencies: [19, 19560, 11394, 8948, 2]
 // Exports: default
 
-// Module 19327 (useShowConnectedControls)
-import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8841 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11222 */;
-import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 19146 */;
+// Module 19772 (useShowConnectedControls)
+import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8948 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11394 */;
+import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 19560 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

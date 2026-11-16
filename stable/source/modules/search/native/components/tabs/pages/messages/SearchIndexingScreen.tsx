@@ -1,13 +1,13 @@
-// Module ID: 18779
-// Function ID: 18780
+// Module ID: 19177
+// Function ID: 19178
 // Name: SearchIndexingScreen
-// Dependencies: [19, 21, 13907, 13893, 18698, 2]
+// Dependencies: [19, 21, 14173, 14159, 19096, 2]
 // Exports: default
 
-// Module 18779 (SearchIndexingScreen)
+// Module 19177 (SearchIndexingScreen)
 import Fragment from "Fragment" /* 21 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13907 */;
-import ErrorScreenDefault from "ErrorScreen" /* 18698 */;
+import TrackingDefault from "Tracking" /* 14173 */;
+import ErrorScreenDefault from "ErrorScreen" /* 19096 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -18,11 +18,11 @@ export default function SearchIndexingScreen(searchContext) {
   searchContext = searchContext.searchContext;
   const items = [searchContext];
   const effect = react.useEffect(() => {
-    const obj = search_tracking_TrackingDefault;
+    const obj = TrackingDefault;
     const obj2 = { searchContext };
     obj.trackSearchIndexing(obj2);
   }, items);
-  let obj = searchContext(13893);
+  let obj = searchContext(14159);
   const text = obj.getIndexingErrorText(searchContext);
   return jsx(ErrorScreenDefault, { text });
 };

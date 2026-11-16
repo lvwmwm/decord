@@ -1,15 +1,15 @@
-// Module ID: 14073
-// Function ID: 14074
+// Module ID: 14344
+// Function ID: 14345
 // Name: useGuildPowerupRollbackNotificationConfig
-// Dependencies: [5229, 14074, 4847, 1113, 2570, 504, 5233, 14075, 2]
+// Dependencies: [5377, 14345, 5003, 1113, 2696, 504, 5381, 14346, 2]
 // Exports: default, getGuildThemeRollbackNotificationConfig
 
-// Module 14073 (useGuildPowerupRollbackNotificationConfig)
+// Module 14344 (useGuildPowerupRollbackNotificationConfig)
 import intl3 from "intl" /* 1113 */;
-import _modDef2570 from "module_2570" /* 2570 */;
-import dismissible_content from "dismissible_content" /* 4847 */;
-import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 14074 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 5229 */;
+import _modDef2696 from "module_2696" /* 2696 */;
+import dismissible_content from "dismissible_content" /* 5003 */;
+import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 14345 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 5377 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -42,7 +42,7 @@ export default function useGuildPowerupRollbackNotificationConfig(guildId, useGu
       tmp6 = null;
       if (null != storeRemovalDate) {
         const tmp8 = getGuildPowerupFormattedDateStringDefault(storeRemovalDate);
-        const obj2 = { dismissibleContent: require("dismissible_content").DismissibleContent.GUILD_THEME_POWERUP_ROLLBACK_NOTIFICATION, title: intl.formatToPlainString(_modDef2570["6e2ry1"], obj3), description: intl2.formatToPlainString(_modDef2570.jd8fki, obj4) };
+        const obj2 = { dismissibleContent: require("dismissible_content").DismissibleContent.GUILD_THEME_POWERUP_ROLLBACK_NOTIFICATION, title: intl.formatToPlainString(_modDef2696["6e2ry1"], obj3), description: intl2.formatToPlainString(_modDef2696.jd8fki, obj4) };
         intl = tmp(1113).intl;
         obj3 = { dateString: tmp8 };
         intl2 = tmp(1113).intl;
@@ -66,7 +66,7 @@ export function getGuildThemeRollbackNotificationConfig(storeRemovalDate) {
   if (null != storeRemovalDate) {
     if (null != storeRemovalDate) {
       const tmp3 = getGuildPowerupFormattedDateStringDefault(storeRemovalDate);
-      const obj = { dismissibleContent: dismissible_content.DismissibleContent.GUILD_THEME_POWERUP_ROLLBACK_NOTIFICATION, title: intl.formatToPlainString(_modDef2570["6e2ry1"], obj2), description: intl2.formatToPlainString(_modDef2570.jd8fki, obj5) };
+      const obj = { dismissibleContent: dismissible_content.DismissibleContent.GUILD_THEME_POWERUP_ROLLBACK_NOTIFICATION, title: intl.formatToPlainString(_modDef2696["6e2ry1"], obj2), description: intl2.formatToPlainString(_modDef2696.jd8fki, obj5) };
       intl = intl3.intl;
       obj2 = { dateString: tmp3 };
       intl2 = intl3.intl;

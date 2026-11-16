@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/gift_cards/messages", scales: [1], hash: "33220ca1692001336851ca90c88c864e", name: "GiftCards.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy91c2VyX3NldHRpbmdzL2Rldl90b29scw==", scales: [1], hash: "9d290bd3c5a15804be105a433c76ee20", name: "de.messages.9d290bd3c5a15804be105a433c76ee20.compiled.messages", type: "jsona" });

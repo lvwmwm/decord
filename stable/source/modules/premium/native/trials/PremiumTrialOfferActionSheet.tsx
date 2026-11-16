@@ -1,23 +1,21 @@
-// Module ID: 17690
-// Function ID: 17691
+// Module ID: 18053
+// Function ID: 18054
 // Name: PremiumTrialOfferActionSheet
-// Dependencies: [19, 1385, 1072, 4860, 21, 7326, 7351, 1252, 15233, 9905, 2047, 5272, 17691, 2]
+// Dependencies: [19, 1387, 1072, 5016, 21, 7420, 7445, 1252, 15548, 10060, 2171, 5420, 18054, 2]
 // Exports: default
 
-// Module 17690 (PremiumTrialOfferActionSheet)
+// Module 18053 (PremiumTrialOfferActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import PremiumConstants from "PremiumConstants" /* 1385 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
-import UserTrialActionCreatorsDefault from "UserTrialActionCreators" /* 15233 */;
+import PremiumConstants from "PremiumConstants" /* 1387 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5016 */;
+import UserTrialActionCreatorsDefault from "UserTrialActionCreators" /* 15548 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet;
-
 let tmp;
-const openPremiumModalDefault = tmp(9905);
+const openPremiumModalDefault = tmp(10060);
 const PremiumTypes = PremiumConstants.PremiumTypes;
 const AnalyticEvents = Constants.AnalyticEvents;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
@@ -100,7 +98,7 @@ export default function _default(markAsDismissed) {
   ({ intervalType: interval, intervalCount: null }.intervalCount) = intervalCount;
   let tmp14 = null;
   if (null != userTrialOffer) {
-    BottomSheet = tmp9(tmp3[11]).BottomSheet;
+    const BottomSheet = tmp9(tmp3[11]).BottomSheet;
     let obj2 = { intervalDuration: tmp13, trialOffer: userTrialOffer, onConfirm: callback1, fallbackPremiumType: TIER_2 };
     tmp14 = <BottomSheet key={userTrialOffer.id} startExpanded onDismiss={callback}>{null}</BottomSheet>;
   }

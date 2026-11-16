@@ -1,18 +1,18 @@
-// Module ID: 9106
-// Function ID: 9107
+// Module ID: 9219
+// Function ID: 9220
 // Name: StageSparkle
-// Dependencies: [19, 17, 21, 5014, 575, 9107, 5717, 9108, 5080, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 9220, 5874, 9221, 5231, 2]
 // Exports: default
 
-// Module 9106 (StageSparkle)
+// Module 9219 (StageSparkle)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 5080 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9107 */;
+import native from "native" /* 5231 */;
+import FastImageDefault from "FastImage" /* 5874 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9220 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -46,8 +46,8 @@ function StageSparkleInner(style) {
     tmp10 = importDefault;
   }
   items1 = [React3(View, obj2), ];
-  const obj5 = { style: tmp3.sparkles, source: tmp10(9108) };
-  const tmp10Result = tmp10(5717);
+  const obj5 = { style: tmp3.sparkles, source: tmp10(9221) };
+  const tmp10Result = tmp10(5874);
   items1[1] = React3(tmp10Result, obj5);
   return tmp4(View, obj);
 }

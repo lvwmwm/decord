@@ -1,28 +1,28 @@
-// Module ID: 16575
-// Function ID: 16576
+// Module ID: 16928
+// Function ID: 16929
 // Name: SettingsAccountScreen
-// Dependencies: [32, 19, 17, 16576, 8432, 1072, 21, 5014, 575, 1497, 6977, 5717, 16577, 5624, 1113, 5634, 504, 16578, 7118, 6748, 7060, 16579, 11540, 16580, 16583, 5593, 13314, 2]
+// Dependencies: [32, 19, 17, 16929, 8536, 1072, 21, 5170, 575, 1499, 7073, 5874, 16930, 5783, 1113, 5790, 504, 16931, 7222, 6835, 7159, 16932, 11717, 16933, 16936, 5753, 13579, 2]
 
-// Module 16575 (SettingsAccountScreen)
+// Module 16928 (SettingsAccountScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
-import useMountEffectDefault from "useMountEffect" /* 5593 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6748 */;
-import TableRowGroup from "TableRowGroup" /* 7060 */;
-import MFAUtils from "MFAUtils" /* 7118 */;
-import SettingsConstants from "SettingsConstants" /* 8432 */;
-import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 13314 */;
-import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 16579 */;
-import SettingsAccountHeaderDefault from "SettingsAccountHeader" /* 16580 */;
-import SettingLayoutDefault from "SettingLayout" /* 16583 */;
+import useMountEffectDefault from "useMountEffect" /* 5753 */;
+import FastImageDefault from "FastImage" /* 5874 */;
+import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6835 */;
+import TableRowGroup from "TableRowGroup" /* 7159 */;
+import MFAUtils from "MFAUtils" /* 7222 */;
+import SettingsConstants from "SettingsConstants" /* 8536 */;
+import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 13579 */;
+import AgeNoticeSettingsPredicate from "AgeNoticeSettingsPredicate" /* 16932 */;
+import SettingsAccountHeaderDefault from "SettingsAccountHeader" /* 16933 */;
+import SettingLayoutDefault from "SettingLayout" /* 16936 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import WebAuthnStore from "WebAuthnStore" /* 16576 */;
+import WebAuthnStore from "WebAuthnStore" /* 16929 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -63,7 +63,7 @@ function PasswordlessUpsell() {
   const Heading = require("Text/Text").Heading;
   intl = require("intl").intl;
   items1 = [closure_10(Heading, obj9), , ];
-  const obj10 = { variant: "text-md/normal", color: "text-muted", children: intl2.string(require("intl").t.S0g2K9) };
+  const obj10 = { variant: "body-md/normal", color: "text-muted", children: intl2.string(require("intl").t.S0g2K9) };
   const Text = require("Text/Text").Text;
   intl2 = require("intl").intl;
   items1[1] = closure_10(Text, obj10);
@@ -95,7 +95,7 @@ function AccountTwoFALabel() {
   }), 2);
   first = tmp3[0];
   let closure_1 = tmp5;
-  const obj2 = first(16578);
+  const obj2 = first(16931);
   const isUserVerified = obj2.useIsUserVerified();
   const items1 = [tmp3[1], first, isUserVerified];
   const memo = react.useMemo(() => {
@@ -119,19 +119,19 @@ function AccountTwoFALabel() {
   const obj3 = { children: items3 };
   items3 = [tmp11, ];
   const obj4 = { title: intl.string(tmp(1113).t.fuTmEJ) };
-  const TableRowGroupTitle = tmp(7060).TableRowGroupTitle;
+  const TableRowGroupTitle = tmp(7159).TableRowGroupTitle;
   intl = tmp(1113).intl;
   items3[1] = closure_10(TableRowGroupTitle, obj4);
   return tmp9(tmp10, obj3);
 }
 function AccountStatusLabel() {
-  const obj = TinyBroncoSettingsPredicate;
-  const isTinyBroncoSettingsEnabled = obj.useIsTinyBroncoSettingsEnabled();
+  const obj = AgeNoticeSettingsPredicate;
+  const isAgeNoticeSettingsEnabled = obj.useIsAgeNoticeSettingsEnabled();
   const TableRowGroupTitle = TableRowGroup.TableRowGroupTitle;
   const intl = intl4.intl;
   const string = intl.string;
   const t = intl4.t;
-  const obj2 = { title: string(isTinyBroncoSettingsEnabled ? t.GI2mea : t["16r9jm"]) };
+  const obj2 = { title: string(isAgeNoticeSettingsEnabled ? t.GI2mea : t["16r9jm"]) };
   return authStore(TableRowGroupTitle, obj2);
 }
 function AccountSecurityPage() {

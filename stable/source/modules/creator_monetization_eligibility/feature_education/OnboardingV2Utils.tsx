@@ -1,15 +1,15 @@
-// Module ID: 18308
-// Function ID: 18309
+// Module ID: 18681
+// Function ID: 18682
 // Name: OnboardingV2Utils
-// Dependencies: [4881, 4885, 1383, 1072, 504, 7434, 2]
+// Dependencies: [5037, 5041, 1385, 1072, 504, 7531, 2]
 // Exports: canSeeCreatorMonetizationOnboardingV2Upsell, useCanSeeCreatorMonetizationOnboardingV2Upsell
 
-// Module 18308 (OnboardingV2Utils)
+// Module 18681 (OnboardingV2Utils)
 import Constants from "Constants" /* 1072 */;
-import GuildRecord from "GuildRecord" /* 4881 */;
-import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 7434 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import UserStore from "UserStore" /* 1383 */;
+import GuildRecord from "GuildRecord" /* 5037 */;
+import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 7531 */;
+import GuildStore from "GuildStore" /* 5041 */;
+import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

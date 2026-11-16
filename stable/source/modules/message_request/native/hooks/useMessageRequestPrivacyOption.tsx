@@ -1,27 +1,27 @@
-// Module ID: 15731
-// Function ID: 15732
+// Module ID: 16074
+// Function ID: 16075
 // Name: useMessageRequestPrivacyOption
-// Dependencies: [19, 21, 4839, 7165, 7368, 1113, 14018, 2]
+// Dependencies: [19, 21, 4995, 7260, 7461, 1113, 14289, 2]
 // Exports: useMessageRequestPrivacyOption
 
-// Module 15731 (useMessageRequestPrivacyOption)
+// Module 16074 (useMessageRequestPrivacyOption)
 import Fragment from "Fragment" /* 21 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7165 */;
-import useIsStricterMessageRequestsDefault from "useIsStricterMessageRequests" /* 14018 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7260 */;
+import useIsStricterMessageRequestsDefault from "useIsStricterMessageRequests" /* 14289 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const UserSettings = tmp(4839);
+const UserSettings = tmp(4995);
 function MessageRequestRestrictedGuildPrivacyOption(guild) {
   let intl;
   let intl2;
   guild = guild.guild;
   const id = guild.id;
-  let MessageRequestRestrictedGuildIds = id(4839).MessageRequestRestrictedGuildIds;
+  let MessageRequestRestrictedGuildIds = id(4995).MessageRequestRestrictedGuildIds;
   const setting = MessageRequestRestrictedGuildIds.useSetting();
   const hasItem = setting.includes(id);
-  const RestrictedGuildIds = id(4839).RestrictedGuildIds;
+  const RestrictedGuildIds = id(4995).RestrictedGuildIds;
   const setting1 = RestrictedGuildIds.useSetting();
   const hasItem1 = setting1.includes(guild.id);
   const items = [id];
@@ -38,7 +38,7 @@ function MessageRequestRestrictedGuildPrivacyOption(guild) {
     MessageRequestRestrictedGuildIds.updateSetting(Array.from(sanitizedMessageRequestRestrictedGuilds));
   }, items);
   let obj = { label: intl.string(id(1113).t["7UgSGP"]), subLabel: intl2.string(id(1113).t.INRaYb), value: !hasItem1 && !hasItem, onValueChange: callback, disabled: hasItem1 };
-  const ActionSheetSwitchRow = id(7368).ActionSheetSwitchRow;
+  const ActionSheetSwitchRow = id(7461).ActionSheetSwitchRow;
   intl = id(1113).intl;
   intl2 = id(1113).intl;
   return jsx(ActionSheetSwitchRow, obj);

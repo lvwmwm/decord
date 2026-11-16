@@ -1,25 +1,25 @@
-// Module ID: 13745
-// Function ID: 13746
+// Module ID: 14010
+// Function ID: 14011
 // Name: CustomTypingIndicatorDisplay
-// Dependencies: [19, 21, 5014, 1113, 13733, 6027, 13746, 5624, 6980, 575, 2]
+// Dependencies: [19, 21, 5170, 1113, 13998, 6191, 14011, 5783, 7076, 575, 2]
 // Exports: default
 
-// Module 13745 (CustomTypingIndicatorDisplay)
+// Module 14010 (CustomTypingIndicatorDisplay)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 13733 */;
-import CustomTypingIndicatorGlyphDefault from "CustomTypingIndicatorGlyph" /* 13746 */;
+import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 13998 */;
+import CustomTypingIndicatorGlyphDefault from "CustomTypingIndicatorGlyph" /* 14011 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let c3;
 let closure_4;
 let tmp3;
-const Text_Text = tmp3(5624);
-const Stack_Stack = tmp3(6027);
-const Pressables = tmp3(6980);
+const Text_Text = tmp3(5783);
+const Stack_Stack = tmp3(6191);
+const Pressables = tmp3(7076);
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
 let closure_5 = createStyles.createStyles(() => ({ text: { flexShrink: 1 }, pressable: { flex: 1 } }));
 const result = size.fileFinishedImporting("modules/custom_typing_indicator/native/CustomTypingIndicatorDisplay.tsx");
@@ -69,7 +69,7 @@ export default function CustomTypingIndicatorDisplay(showName) {
       tmp10 = _false(CustomTypingIndicatorGlyphDefault, obj5);
     }
     items = [tmp10, ];
-    const obj6 = { style: tmp.text, variant: "text-xs/medium", color: "interactive-text-default", lineClamp: 1, maxFontSizeMultiplier: 2, includeFontPadding: true, ellipsizeMode: "tail", children: formatResult };
+    const obj6 = { style: tmp.text, variant: "body-xs/medium", color: "interactive-text-default", lineClamp: 1, maxFontSizeMultiplier: 2, includeFontPadding: true, ellipsizeMode: "tail", children: formatResult };
     items[1] = _false(Text_Text.Text, obj6);
     const tmp8Result = tmp8(Stack, obj4);
     let tmp13Result = tmp8Result;

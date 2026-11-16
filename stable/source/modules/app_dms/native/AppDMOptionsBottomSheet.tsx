@@ -1,23 +1,21 @@
-// Module ID: 14586
-// Function ID: 14587
+// Module ID: 14851
+// Function ID: 14852
 // Name: AppDMOptionsBottomSheet
-// Dependencies: [19, 17, 7276, 1072, 21, 5014, 575, 504, 8750, 5258, 7563, 7332, 5272, 7060, 6975, 1113, 2]
+// Dependencies: [19, 17, 7372, 1072, 21, 5170, 575, 504, 8854, 5406, 7668, 7426, 5420, 7159, 7071, 1113, 2]
 // Exports: default
 
-// Module 14586 (AppDMOptionsBottomSheet)
+// Module 14851 (AppDMOptionsBottomSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import openUserSettings from "openUserSettings" /* 7563 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8750 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
+import openUserSettings from "openUserSettings" /* 7668 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8854 */;
 import react from "react" /* 19 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7276 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7372 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let metroImportAll;
 let metroImportDefault;
@@ -77,7 +75,7 @@ export default function AppDMOptionsBottomSheet(userId) {
   }, []);
   let obj2 = { startExpanded: true, backgroundStyles: tmp.sheet, children: closure_7(View, obj3) };
   obj3 = { style: tmp.content, children: closure_8(TableRowGroup, obj4) };
-  BottomSheet = userId(application[12]).BottomSheet;
+  const BottomSheet = userId(application[12]).BottomSheet;
   obj4 = { hasIcons: false, children: items3 };
   TableRowGroup = userId(application[13]).TableRowGroup;
   const obj5 = { label: intl.string(userId(application[15]).t.iXAna6), onPress: callback };

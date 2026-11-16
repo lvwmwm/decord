@@ -1,64 +1,35 @@
 // Module ID: 1839
 // Function ID: 1840
-// Dependencies: [19, 17, 1840]
-// Exports: useAnimatedValue, useEventHandlerRegistration
+// Dependencies: [1840, 1846, 1852, 1853, 1854, 1855, 1859, 1860, 1841]
 
 // Module 1839
-import react_native from "react-native" /* 17 */;
-import react from "react" /* 19 */;
-import react_native2 from "react-native" /* 1840 */;
+import clamp from "clamp" /* 1840 */;
+import utilNative from "utilNative" /* 1841 */;
+import _mod1846 from "module_1846" /* 1846 */;
+import delay from "delay" /* 1852 */;
+import repeat from "repeat" /* 1853 */;
+import sequence from "sequence" /* 1854 */;
+import _mod1855 from "module_1855" /* 1855 */;
+import styleAnimation from "styleAnimation" /* 1859 */;
+import timing from "timing" /* 1860 */;
 
-const useRef = react.useRef;
-const Animated = react_native.Animated;
 
-export function useEventHandlerRegistration(arg0) {
-  const ref = arg0;
-  return (workletEventHandler) => {
-    if (workletEventHandler.current) {
-      let obj = ref(dependencyMap[2]);
-      let findNodeHandleResult = obj.findNodeHandle(tmp.current);
-      if (findNodeHandleResult) {
-        if ("workletEventHandler" in workletEventHandler) {
-          workletEventHandler = workletEventHandler.workletEventHandler;
-          workletEventHandler.registerForEvents(findNodeHandleResult);
-        } else {
-          workletEventHandler.registerForEvents(findNodeHandleResult);
-        }
-      }
-    } else {
-      const _queueMicrotask = queueMicrotask;
-      queueMicrotask(function attachWorkletHandlers() {
-        const obj = react_native2;
-        const findNodeHandleResult = obj.findNodeHandle(workletEventHandler.current);
-        if (findNodeHandleResult) {
-          if ("workletEventHandler" in workletEventHandler) {
-            workletEventHandler.workletEventHandler.registerForEvents(findNodeHandleResult);
-          } else {
-            workletEventHandler.registerForEvents(findNodeHandleResult);
-          }
-        }
-      });
-    }
-    return () => {
-      const obj = react_native2;
-      const findNodeHandleResult = obj.findNodeHandle(workletEventHandler.current);
-      if (findNodeHandleResult) {
-        if ("workletEventHandler" in workletEventHandler) {
-          workletEventHandler.workletEventHandler.unregisterFromEvents(findNodeHandleResult);
-        } else {
-          workletEventHandler.unregisterFromEvents(findNodeHandleResult);
-        }
-      }
-    };
-  };
-}
-export function useAnimatedValue(arg0, arg1) {
-  const tmp = useRef(null);
-  if (null === tmp.current) {
-    const self = this;
-    const self2 = this;
-    const value = new Animated.Value(arg0, arg1);
-    tmp.current = value;
-  }
-  return tmp.current;
-}
+export const withClamp = clamp.withClamp;
+export const withDecay = _mod1846.withDecay;
+export const withDelay = delay.withDelay;
+export const withRepeat = repeat.withRepeat;
+export const withSequence = sequence.withSequence;
+export const GentleSpringConfig = _mod1855.GentleSpringConfig;
+export const GentleSpringConfigWithDuration = _mod1855.GentleSpringConfigWithDuration;
+export const Reanimated3DefaultSpringConfig = _mod1855.Reanimated3DefaultSpringConfig;
+export const Reanimated3DefaultSpringConfigWithDuration = _mod1855.Reanimated3DefaultSpringConfigWithDuration;
+export const SnappySpringConfig = _mod1855.SnappySpringConfig;
+export const SnappySpringConfigWithDuration = _mod1855.SnappySpringConfigWithDuration;
+export const WigglySpringConfig = _mod1855.WigglySpringConfig;
+export const WigglySpringConfigWithDuration = _mod1855.WigglySpringConfigWithDuration;
+export const withSpring = _mod1855.withSpring;
+export const withStyleAnimation = styleAnimation.withStyleAnimation;
+export const withTiming = timing.withTiming;
+export const cancelAnimation = utilNative.cancelAnimation;
+export const defineAnimation = utilNative.defineAnimation;
+export const initialUpdaterRun = utilNative.initialUpdaterRun;

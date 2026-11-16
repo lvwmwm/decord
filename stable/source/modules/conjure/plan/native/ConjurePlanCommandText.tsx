@@ -1,16 +1,16 @@
-// Module ID: 12742
-// Function ID: 12743
+// Module ID: 12975
+// Function ID: 12976
 // Name: ConjurePlanCommandText
-// Dependencies: [19, 6036, 21, 5014, 575, 5624, 12731, 2]
+// Dependencies: [19, 6200, 21, 5170, 575, 5783, 12964, 2]
 // Exports: ConjurePlanCommandMarkup, ConjurePlanCommandText
 
-// Module 12742 (ConjurePlanCommandText)
+// Module 12975 (ConjurePlanCommandText)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6036 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6200 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let obj2;
@@ -25,7 +25,7 @@ class ConjurePlanCommandMention {
     if (prefix === undefined) {
       prefix = COMMAND_SENTINEL;
     }
-    const obj = { variant: "" + size + "/bold", color: "none", style: tmp.mention, children: combined };
+    const obj = { variant: "" + size + "/semibold", color: "none", style: tmp.mention, children: combined };
     tmp = closure_5();
     const Text = Text_Text.Text;
     combined = name;
@@ -50,9 +50,9 @@ export function ConjurePlanCommandText(text) {
   let commandNames;
   text = text.text;
   ({ commandNames, size } = text);
-  const obj = size(12731);
+  const obj = size(12964);
   const conjurePlanCommandPattern = obj.useConjurePlanCommandPattern(commandNames);
-  const obj2 = size(12731);
+  const obj2 = size(12964);
   const result = obj2.splitConjurePlanCommandText(text, conjurePlanCommandPattern);
   if (null != result) {
     text = result.map((kind) => {
@@ -78,7 +78,7 @@ export function ConjurePlanCommandMarkup(markup) {
   return conjurePlanCommandPattern.useMemo(() => {
     let mapped;
     let validElement;
-    const f102898 = (icon) => {
+    const f104746 = (icon) => {
       let Children;
       let cloneElement;
       let cloneElementResult;
@@ -107,7 +107,7 @@ export function ConjurePlanCommandMarkup(markup) {
           cloneElementResult = mapped;
           if (null != mapped.props.children) {
             ({ Children, cloneElement } = tmp11);
-            cloneElementResult = cloneElement(mapped, undefined, Children.map(mapped.props.children, f102898));
+            cloneElementResult = cloneElement(mapped, undefined, Children.map(mapped.props.children, f104746));
           }
         }
       }
@@ -119,7 +119,7 @@ export function ConjurePlanCommandMarkup(markup) {
       let closure_0 = tmp;
       let closure_1 = size;
       const Children = react.Children;
-      mapped = Children.map(markup, f102898);
+      mapped = Children.map(markup, f104746);
     }
     return mapped;
   }, items);

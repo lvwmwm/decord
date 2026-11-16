@@ -1,10 +1,10 @@
-// Module ID: 10919
-// Function ID: 10920
+// Module ID: 11077
+// Function ID: 11078
 // Name: conjurePreviewCall
 // Dependencies: [2]
 // Exports: controlAnswerTimeoutMs, isResultEnvelope, previewCallTypes
 
-// Module 10919 (conjurePreviewCall)
+// Module 11077 (conjurePreviewCall)
 import size from "module_2" /* 2 */;
 
 let closure_0 = ["conjure-", "vibegrations-"];

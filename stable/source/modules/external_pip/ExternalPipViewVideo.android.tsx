@@ -1,23 +1,23 @@
-// Module ID: 19105
-// Function ID: 19106
+// Module ID: 19519
+// Function ID: 19520
 // Name: ExternalPipViewVideo
-// Dependencies: [32, 19, 17, 4863, 1383, 21, 5014, 575, 5735, 5624, 1113, 504, 6853, 19106, 5587, 1187, 5888, 5874, 5596, 19107, 11773, 19108, 2]
+// Dependencies: [32, 19, 17, 5019, 1385, 21, 5170, 575, 5891, 5783, 1113, 504, 6941, 19520, 5747, 1187, 6051, 6035, 5756, 19521, 11968, 19522, 2]
 
-// Module 19105 (ExternalPipViewVideo)
+// Module 19519 (ExternalPipViewVideo)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5735 */;
-import ExternalPipDefault from "ExternalPip" /* 5874 */;
-import VideoActionCreators from "VideoActionCreators" /* 19107 */;
-import useExternalPipParticipantDefault from "useExternalPipParticipant" /* 19108 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5891 */;
+import ExternalPipDefault from "ExternalPip" /* 6035 */;
+import VideoActionCreators from "VideoActionCreators" /* 19521 */;
+import useExternalPipParticipantDefault from "useExternalPipParticipant" /* 19522 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import UserStore from "UserStore" /* 1383 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;
@@ -42,7 +42,7 @@ function ExternalPipViewVideoUnavailable() {
   const tmp = closure_14();
   const obj = { style: tmp.unavailable, children: items };
   items = [unpackModuleId(CircleInformationIcon.CircleInformationIcon, {}), ];
-  const obj2 = { variant: "text-md/semibold", style: tmp.unavailableText, lineClamp: 1, children: intl.string(intl2.t.Nzo5nz) };
+  const obj2 = { variant: "body-md/semibold", style: tmp.unavailableText, lineClamp: 1, children: intl.string(intl2.t.Nzo5nz) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   items[1] = unpackModuleId(Text, obj2);
@@ -73,11 +73,11 @@ function ExternalPipViewVideoUser(userId) {
     }
     return guild_id;
   });
-  const obj4 = userId(6853);
+  const obj4 = userId(6941);
   const avatarDecoration = obj4.useAvatarDecoration(stateFromStores, stateFromStores1);
   const obj2 = { userId, guildId: stateFromStores1, avatarURI: avatarURL, location: "ExternalPipViewVideo-native" };
   avatarURL = undefined;
-  const tmp7 = channelId(19106);
+  const tmp7 = channelId(19520);
   const tmp6 = channelId;
   if (stateFromStores != null) {
     avatarURL = stateFromStores.getAvatarURL(stateFromStores1, 80, false);
@@ -99,7 +99,7 @@ function ExternalPipViewVideoUser(userId) {
   const tmp11 = closure_7;
   if (null != gradientStops) {
     const obj6 = { colors: gradientStops, start, end, style: StyleSheet.absoluteFill, pointerEvents: "none" };
-    tmp12 = closure_11(tmp6(5587), obj6);
+    tmp12 = closure_11(tmp6(5747), obj6);
   }
   items3 = [tmp12, ];
   let tmp17 = null;
@@ -121,7 +121,7 @@ function ExternalPipViewVideoStream(streamId) {
   let video;
   streamId = streamId.streamId;
   const userId = streamId.userId;
-  let obj = streamId(5888);
+  let obj = streamId(6051);
   let c1 = 300;
   first = undefined;
   closure_3 = undefined;
@@ -165,7 +165,7 @@ function ExternalPipViewVideoStream(streamId) {
     items[1] = { opacity: num };
     return items;
   }, items3);
-  const obj2 = streamId(5596);
+  const obj2 = streamId(5756);
   const token = obj2.useToken(first(575).colors.TEXT_FEEDBACK_INFO);
   const value = closure_8.get();
   _slicedToArray = value;
@@ -180,7 +180,7 @@ function ExternalPipViewVideoStream(streamId) {
       obj.updateVideoSize(tmp, size, 1);
     }
   }, items4);
-  const children = [closure_11(first(11773), { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, style: memo, streamId, onReady: callback, onLayout: callback1 }), ];
+  const children = [closure_11(first(11968), { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, style: memo, streamId, onReady: callback, onLayout: callback1 }), ];
   let tmp16Result = null;
   const tmp14 = closure_12;
   const tmp15 = closure_13;

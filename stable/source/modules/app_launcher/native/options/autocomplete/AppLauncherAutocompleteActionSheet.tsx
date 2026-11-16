@@ -1,30 +1,30 @@
-// Module ID: 12503
-// Function ID: 12504
+// Module ID: 12738
+// Function ID: 12739
 // Name: AppLauncherAutocompleteActionSheet
-// Dependencies: [32, 19, 17, 8345, 4885, 1072, 6035, 21, 12, 10310, 5014, 575, 563, 5258, 12498, 12499, 1113, 38, 6975, 6556, 5624, 1187, 12500, 2]
+// Dependencies: [32, 19, 17, 8448, 5041, 1072, 6199, 21, 12, 10461, 5170, 575, 563, 5406, 12733, 12734, 1113, 38, 7071, 6643, 5783, 1187, 12735, 2]
 // Exports: default
 
-// Module 12503 (AppLauncherAutocompleteActionSheet)
+// Module 12738 (AppLauncherAutocompleteActionSheet)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6035 */;
-import merged5 from "merged5" /* 6556 */;
-import TableRow from "TableRow" /* 6975 */;
-import executeCommandDefault from "executeCommand" /* 10310 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12500 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6199 */;
+import merged5 from "merged5" /* 6643 */;
+import TableRow from "TableRow" /* 7071 */;
+import executeCommandDefault from "executeCommand" /* 10461 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12735 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 8345 */;
-import GuildStore from "GuildStore" /* 4885 */;
+import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 8448 */;
+import GuildStore from "GuildStore" /* 5041 */;
 import Fragment from "Fragment" /* 21 */;
 import module_12 from "module_12" /* 12 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -73,7 +73,7 @@ function Item(arg0) {
         obj.hideActionSheet();
       }
     };
-    obj2 = { lineClamp: 1, variant: "text-md/normal", color: "mobile-text-heading-primary", children: children.choice.displayName };
+    obj2 = { lineClamp: 1, variant: "body-md/normal", color: "mobile-text-heading-primary", children: children.choice.displayName };
     return closure_1_9(ListItem, obj);
   });
   const withResult1 = withResult.with(obj2, (label) => {
@@ -92,7 +92,7 @@ function Item(arg0) {
         obj2.hideActionSheet();
       }
     };
-    obj2 = { lineClamp: 1, variant: "text-md/normal", color: "mobile-text-heading-primary", children: items };
+    obj2 = { lineClamp: 1, variant: "body-md/normal", color: "mobile-text-heading-primary", children: items };
     items = ["\"", label.label, "\""];
     return closure_1_9(ListItem, obj);
   });

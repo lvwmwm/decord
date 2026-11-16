@@ -1,21 +1,21 @@
-// Module ID: 18588
-// Function ID: 18589
+// Module ID: 18983
+// Function ID: 18984
 // Name: ICYMIForumThreadRow
-// Dependencies: [19, 17, 4863, 4885, 21, 18523, 575, 504, 6902, 8924, 18562, 10802, 18526, 5652, 18564, 1113, 11, 6980, 5624, 5754, 18568, 18570, 2]
+// Dependencies: [19, 17, 5019, 5041, 21, 18913, 575, 504, 6990, 9031, 18955, 10953, 18944, 5808, 18957, 1113, 11, 7076, 5783, 5911, 18961, 18963, 2]
 // Exports: default
 
-// Module 18588 (ICYMIForumThreadRow)
+// Module 18983 (ICYMIForumThreadRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6902 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8924 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10802 */;
-import ICYMIShared from "ICYMIShared" /* 18562 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6990 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 9031 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10953 */;
+import ICYMIShared from "ICYMIShared" /* 18955 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import GuildStore from "GuildStore" /* 4885 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import GuildStore from "GuildStore" /* 5041 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 18523 */;
+import createICYMIStyles from "createICYMIStyles" /* 18913 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -124,9 +124,9 @@ class ICYMIForumThreadRow {
               const obj5 = { onPress: callback, onLongPress: callback1, accessibilityRole: "button", unstable_pressDelay: 130, style: tmp.pressable, children: closure_8(View, obj6) };
               obj6 = { style: tmp.container, children: items5 };
               const PressableHighlight = tmp2(tmp3[17]).PressableHighlight;
-              const obj7 = { variant: "text-lg/semibold", color: "mobile-text-heading-primary", children: tmp12 };
+              const obj7 = { variant: "body-lg/semibold", color: "mobile-text-heading-primary", children: tmp12 };
               items5 = [closure_7(tmp2(tmp3[18]).Text, obj7), , ];
-              const obj8 = { variant: "text-md/normal", color: "text-subtle", style: tmp.subtitle, lineClamp: 5, children: tmp11Result4.parseInlineReply(message.content, true) };
+              const obj8 = { variant: "body-md/normal", color: "text-subtle", style: tmp.subtitle, lineClamp: 5, children: tmp11Result4.parseInlineReply(message.content, true) };
               const Text = tmp2(tmp3[18]).Text;
               tmp11Result4 = message(stateFromStores[19]);
               items5[1] = closure_7(Text, obj8);

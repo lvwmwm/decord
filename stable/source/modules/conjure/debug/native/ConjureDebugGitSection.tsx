@@ -1,34 +1,34 @@
-// Module ID: 13035
-// Function ID: 13036
+// Module ID: 13291
+// Function ID: 13292
 // Name: ConjureDebugGitSection
-// Dependencies: [32, 19, 17, 21, 5014, 575, 8646, 10232, 13036, 13038, 9115, 13040, 9758, 13042, 11927, 11062, 7340, 8026, 7092, 13044, 13046, 13048, 13030, 5624, 5082, 5964, 6027, 6989, 5634, 11083, 2]
+// Dependencies: [32, 19, 17, 21, 5170, 575, 8750, 10383, 13292, 13294, 9228, 13296, 9881, 13298, 12125, 11226, 7434, 8129, 7191, 13300, 13302, 13304, 13286, 5783, 5232, 6128, 6191, 7088, 5790, 11247, 2]
 // Exports: ConjureDebugGitSection, ConjureDebugRestartAgent
 
-// Module 13035 (ConjureDebugGitSection)
+// Module 13291 (ConjureDebugGitSection)
 import nativeDefault from "native" /* 575 */;
-import AlertModal from "AlertModal" /* 5964 */;
-import CircleXIcon from "CircleXIcon" /* 7092 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 7340 */;
-import WarningIcon from "WarningIcon" /* 8026 */;
-import FolderIcon from "FolderIcon" /* 8646 */;
-import CalendarIcon from "CalendarIcon" /* 9115 */;
-import ServerIcon from "ServerIcon" /* 9758 */;
-import PencilIcon from "PencilIcon" /* 10232 */;
-import FileIcon from "FileIcon" /* 11062 */;
-import SpeedometerIcon from "SpeedometerIcon" /* 11927 */;
-import ConjureDebugPrimitives from "ConjureDebugPrimitives" /* 13030 */;
-import CloudIcon from "CloudIcon" /* 13036 */;
-import ListNumberedIcon from "ListNumberedIcon" /* 13038 */;
-import SaveIcon from "SaveIcon" /* 13040 */;
-import CloudDownloadIcon from "CloudDownloadIcon" /* 13042 */;
-import ArrowSmallUpIcon from "ArrowSmallUpIcon" /* 13044 */;
-import ArrowSmallDownIcon from "ArrowSmallDownIcon" /* 13046 */;
-import ConjureDebugGit from "ConjureDebugGit" /* 13048 */;
+import AlertModal from "AlertModal" /* 6128 */;
+import CircleXIcon from "CircleXIcon" /* 7191 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 7434 */;
+import WarningIcon from "WarningIcon" /* 8129 */;
+import FolderIcon from "FolderIcon" /* 8750 */;
+import CalendarIcon from "CalendarIcon" /* 9228 */;
+import ServerIcon from "ServerIcon" /* 9881 */;
+import PencilIcon from "PencilIcon" /* 10383 */;
+import FileIcon from "FileIcon" /* 11226 */;
+import SpeedometerIcon from "SpeedometerIcon" /* 12125 */;
+import ConjureDebugPrimitives from "ConjureDebugPrimitives" /* 13286 */;
+import CloudIcon from "CloudIcon" /* 13292 */;
+import ListNumberedIcon from "ListNumberedIcon" /* 13294 */;
+import SaveIcon from "SaveIcon" /* 13296 */;
+import CloudDownloadIcon from "CloudDownloadIcon" /* 13298 */;
+import ArrowSmallUpIcon from "ArrowSmallUpIcon" /* 13300 */;
+import ArrowSmallDownIcon from "ArrowSmallDownIcon" /* 13302 */;
+import ConjureDebugGit from "ConjureDebugGit" /* 13304 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -46,7 +46,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp2;
-const Text_Text = tmp2(5624);
+const Text_Text = tmp2(5783);
 ({ Pressable: hasOwnProperty, View: metroRequire } = react_native);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let createStyles = createStyles_mod;
@@ -85,7 +85,7 @@ export function ConjureDebugGitSection(projectId) {
     if (gitInfoStatusResult.critical) {
       str = "text-feedback-critical";
     }
-    obj4 = { variant: "text-xs/normal", accessibilityLiveRegion: "polite", color: str, children: gitInfoStatusResult.line };
+    obj4 = { variant: "body-xs/normal", accessibilityLiveRegion: "polite", color: str, children: gitInfoStatusResult.line };
     tmp6Result = tmp6(Text, obj4);
   }
   const children = [tmp6(tmp7, obj3), ];
@@ -188,7 +188,7 @@ export function ConjureDebugRestartAgent(projectId) {
   obj6 = { direction: "horizontal", spacing: 8, align: "center", children: items2 };
   Stack = tmp2(tmp3[26]).Stack;
   items2 = [closure_7(clearAlarm(confirmCopy[27]).FormCheckbox, { checked: clearAlarm }), ];
-  const obj7 = { variant: "text-sm/medium", color: "text-default", children: clearAlarm(confirmCopy[21]).RESTART_AGENT_CLEAR_ALARM_LABEL };
+  const obj7 = { variant: "body-sm/medium", color: "text-default", children: clearAlarm(confirmCopy[21]).RESTART_AGENT_CLEAR_ALARM_LABEL };
   const Text = tmp2(tmp3[23]).Text;
   items2[1] = closure_7(Text, obj7);
   items3 = [closure_7(tmp10, obj5), ];
@@ -203,7 +203,7 @@ export function ConjureDebugRestartAgent(projectId) {
   if ("failed" === state.phase) {
     str = "text-feedback-critical";
   }
-  const obj10 = { variant: "text-xs/normal", accessibilityLiveRegion: "polite", color: str, children: tmp2Result.restartAgentStatusLine(state) };
+  const obj10 = { variant: "body-xs/normal", accessibilityLiveRegion: "polite", color: str, children: tmp2Result.restartAgentStatusLine(state) };
   tmp2Result = clearAlarm(confirmCopy[21]);
   items4[1] = closure_7(Text2, obj10);
   return closure_8(closure_6, obj3);

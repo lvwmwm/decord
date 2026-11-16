@@ -1,11 +1,11 @@
-// Module ID: 13414
-// Function ID: 13415
+// Module ID: 13678
+// Function ID: 13679
 // Name: CheckpointColors
-// Dependencies: [13413, 575, 2]
+// Dependencies: [13677, 575, 2]
 
-// Module 13414 (CheckpointColors)
+// Module 13678 (CheckpointColors)
 import nativeDefault from "native" /* 575 */;
-import checkpoint_CheckpointConstants from "checkpoint/CheckpointConstants" /* 13413 */;
+import checkpoint_CheckpointConstants from "checkpoint/CheckpointConstants" /* 13677 */;
 import size from "module_2" /* 2 */;
 
 let items;

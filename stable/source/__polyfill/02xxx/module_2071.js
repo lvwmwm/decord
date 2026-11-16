@@ -1,73 +1,7 @@
 // Module ID: 2071
 // Function ID: 2072
-// Dependencies: [2072, 2073]
+// Dependencies: []
 
 // Module 2071
-import buildMatchFn from "buildMatchFn" /* 2072 */;
-import buildMatchPatternFn from "buildMatchPatternFn" /* 2073 */;
 
-let items;
-let items1;
-let items2;
-let items3;
-let items4;
-let items5;
-let obj;
-let obj10;
-let obj11;
-let obj12;
-let obj13;
-let obj14;
-let obj15;
-let obj3;
-let obj5;
-let obj6;
-let obj7;
-let obj8;
-let obj9;
-if (!buildMatchFn) {
-  obj = { default: buildMatchFn };
-  const obj2 = { default: buildMatchFn };
-} else {
-  obj = buildMatchFn;
-}
-if (!buildMatchPatternFn) {
-  obj3 = { default: buildMatchPatternFn };
-  const obj4 = { default: buildMatchPatternFn };
-} else {
-  obj3 = buildMatchPatternFn;
-}
-const date = { ordinalNumber: obj3.default(obj5), era: obj.default(obj6), quarter: obj.default(obj8), month: obj.default(obj10), day: obj.default(obj12), dayPeriod: obj.default(obj14) };
-obj6 = { matchPatterns: { narrow: /^(b|a)/i, abbreviated: /^(b\.?\s?c\.?|b\.?\s?c\.?\s?e\.?|a\.?\s?d\.?|c\.?\s?e\.?)/i, wide: /^(before christ|before common era|anno domini|common era)/i }, defaultMatchWidth: "wide", parsePatterns: obj7, defaultParseWidth: "any" };
-obj7 = { any: items };
-items = [/^b/i, /^(a|c)/i];
-obj8 = {
-  matchPatterns: { narrow: /^[1234]/i, abbreviated: /^q[1234]/i, wide: /^[1234](th|st|nd|rd)? quarter/i },
-  defaultMatchWidth: "wide",
-  parsePatterns: obj9,
-  defaultParseWidth: "any",
-  valueCallback(arg0) {
-    return arg0 + 1;
-  }
-};
-obj9 = { any: items1 };
-items1 = [/1/i, /2/i, /3/i, /4/i];
-obj10 = { matchPatterns: { narrow: /^[jfmasond]/i, abbreviated: /^(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)/i, wide: /^(january|february|march|april|may|june|july|august|september|october|november|december)/i }, defaultMatchWidth: "wide", parsePatterns: obj11, defaultParseWidth: "any" };
-obj11 = { narrow: items2, any: items3 };
-items2 = [/^j/i, /^f/i, /^m/i, /^a/i, /^m/i, /^j/i, /^j/i, /^a/i, /^s/i, /^o/i, /^n/i, /^d/i];
-items3 = [/^ja/i, /^f/i, /^mar/i, /^ap/i, /^may/i, /^jun/i, /^jul/i, /^au/i, /^s/i, /^o/i, /^n/i, /^d/i];
-obj12 = { matchPatterns: { narrow: /^[smtwf]/i, short: /^(su|mo|tu|we|th|fr|sa)/i, abbreviated: /^(sun|mon|tue|wed|thu|fri|sat)/i, wide: /^(sunday|monday|tuesday|wednesday|thursday|friday|saturday)/i }, defaultMatchWidth: "wide", parsePatterns: obj13, defaultParseWidth: "any" };
-obj13 = { narrow: items4, any: items5 };
-items4 = [/^s/i, /^m/i, /^t/i, /^w/i, /^t/i, /^f/i, /^s/i];
-items5 = [/^su/i, /^m/i, /^tu/i, /^w/i, /^th/i, /^f/i, /^sa/i];
-obj14 = { matchPatterns: { narrow: /^(a|p|mi|n|(in the|at) (morning|afternoon|evening|night))/i, any: /^([ap]\.?\s?m\.?|midnight|noon|(in the|at) (morning|afternoon|evening|night))/i }, defaultMatchWidth: "any", parsePatterns: obj15, defaultParseWidth: "any" };
-obj15 = { any: { am: /^a/i, pm: /^p/i, midnight: /^mi/i, noon: /^no/i, morning: /morning/i, afternoon: /afternoon/i, evening: /evening/i, night: /night/i } };
-obj5 = {
-  matchPattern: /^(\d+)(th|st|nd|rd)?/i,
-  parsePattern: /\d+/i,
-  valueCallback(match) {
-    return parseInt(match, 10);
-  }
-};
-
-export default date;
+export default { COMMON_OPEN_DISCORD: "Otev\u0159\u00EDt Discord", COMMON_SIGN_UP_NOW: "Zaregistruj se", FOOTER_READY_TO_TRY_DISCORD: "Chce\u0161 vyzkou\u0161et Discord? Je zdarma!", FOOTER_JOIN_OVER_PLAYERS_TODAY: "P\u0158IPOJ SE JE\u0160T\u011A DNES K V\u00CDCE NE\u017D {num}\u00A0MILION\u016EM HR\u00C1\u010C\u016E", NAVIGATION_HOME: "\u00DAvod", NAVIGATION_FEATURES: "Funkce", NAVIGATION_NITRO: "Nitro", NAVIGATION_DOWNLOAD: "St\u00E1hnout", NAVIGATION_PARTNERS: "Partne\u0159i", NAVIGATION_BUILD: "Sestaven\u00ED", NAVIGATION_MORE: "V\u00EDce", NAVIGATION_STATUS: "Stav", NAVIGATION_FEEDBACK: "Zp\u011Btn\u00E1 vazba", NAVIGATION_HELP_AND_SUPPORT: "Pomoc a podpora", NAVIGATION_GUIDELINES: "Pravidla", NAVIGATION_HYPESQUAD: "HypeSquad", NAVIGATION_STREAMKIT: "Streamovac\u00ED sada", NAVIGATION_COMPANY: "Spole\u010Dnost", NAVIGATION_JOBS: "Pracovn\u00ED pozice", NAVIGATION_SECURITY: "Bezpe\u010Dnost", NAVIGATION_DEVELOPERS: "V\u00FDvoj\u00E1\u0159i", NAVIGATION_DOCUMENTATION: "Dokumentace", NAVIGATION_BRANDING: "Zna\u010Dka", NAVIGATION_LOGIN: "P\u0159ihl\u00E1sit se", NAVIGATION_OPEN: "Otev\u0159\u00EDt", NAVIGATION_PRODUCT: "Produkt", NAVIGATION_RESOURCES: "Zdroje", NAVIGATION_APPLICATIONS: "Aplikace", NAVIGATION_TERMS: "Podm\u00EDnky", NAVIGATION_PRIVACY: "Ochrana osobn\u00EDch \u00FAdaj\u016F", NAVIGATION_ABOUT: "O n\u00E1s", NAVIGATION_VERIFICATION: "Ov\u011B\u0159en\u00ED", NAVIGATION_RICH_PRESENCE: "Rich Presence", NAVIGATION_PRESS_INQUIRIES: "Dotazy pro tisk", NAVIGATION_SUPPORT: "Podpora", NAVIGATION_DEVELOPER_PORTAL: "Port\u00E1l pro v\u00FDvoj\u00E1\u0159e", NAVIGATION_COMMUNITY: "Komunita", NAVIGATION_SAFETY: "Bezpe\u010Dnost", NAVIGATION_SAFETY_CENTER: "Bezpe\u010Dnostn\u00ED centrum", NAVIGATION_MOD_ACADEMY: "Akademie pro moder\u00E1tory", NAVIGATION_DISCOVER: "Objevovat", NAVIGATION_SERVERS: "Servery", NAVIGATION_CAREERS: "Kari\u00E9ra", NAVIGATION_QUESTS: "\u00DAkoly", STOREFRONT_BENEFITS_SUMMARY: "{count, plural, one {#\u00A0exkluzivn\u00ED v\u00FDhoda} few {#\u00A0exkluzivn\u00ED v\u00FDhody} other {#\u00A0exkluzivn\u00EDch v\u00FDhod}}", STOREFRONT_BENEFITS_TITLE: "Exkluzivn\u011B pro tuto \u00FArove\u0148", STOREFRONT_SERVER_SUBSCRIPTION: "P\u0159edplatn\u00E9 serveru", STOREFRONT_USER_SUBSCRIPTION: "Osobn\u00ED p\u0159edplatn\u00E9", STOREFRONT_MORE_BENEFITS: "+ {count, plural, one {#\u00A0dal\u0161\u00ED v\u00FDhoda} few {#\u00A0dal\u0161\u00ED v\u00FDhody} other {#\u00A0dal\u0161\u00EDch v\u00FDhod}}", NUMBER_ABBREVIATIONS_MILLION: "{num}\u00A0MIL.", NUMBER_ABBREVIATIONS_THOUSAND: "{num}\u00A0TIS.", DYNAMIC_LINKS_IOS_APP_PREVIEW_DESCRIPTION: "M\u00EDsto, kde si m\u016F\u017Ee\u0161 popov\u00EDdat s\u00A0p\u0159\u00E1teli a\u00A0komunitami.", SELF_XSS_HEADER: "Zadr\u017E!", SELF_XSS_LINE_1: "Jestli ti n\u011Bkdo \u0159ekl, abys sem n\u011Bco zkop\u00EDroval, pak je tu \u0161ance 11:10, \u017Ee jde o podvod.", SELF_XSS_LINE_2: "Pokud sem n\u011Bco zkop\u00EDruje\u0161, mohli by \u00FAto\u010Dn\u00EDci z\u00EDskat p\u0159\u00EDstup k tv\u00E9mu \u00FA\u010Dtu na Discordu.", SELF_XSS_LINE_3: "Jestli si nejsi 100% jist\u00FD, co d\u011Bl\u00E1\u0161, rad\u011Bji tohle okno zav\u0159i a dr\u017E si bezpe\u010Dn\u00FD odstup.", SELF_XSS_LINE_4: "Pokud v\u00ED\u0161 zcela jist\u011B, co d\u011Bl\u00E1\u0161, m\u011Bl bys j\u00EDt pracovat k n\u00E1m {url}" };

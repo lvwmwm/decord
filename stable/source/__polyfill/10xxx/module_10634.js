@@ -1,96 +1,103 @@
 // Module ID: 10634
 // Function ID: 10635
-// Dependencies: [1650, 10635, 10636, 10637]
-// Exports: useCommonVariables
+// Dependencies: [41, 42, 93, 95, 98, 10632, 10485]
 
 // Module 10634
-import handlerOffsetDirection from "handlerOffsetDirection" /* 10635 */;
-import omitZero from "omitZero" /* 10636 */;
-import computeOffsetIfSizeChanged from "computeOffsetIfSizeChanged" /* 10637 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10485 */;
+import _mod10632 from "module_10632" /* 10632 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-let closure_2 = { code: "function pnpm_useCommonVariablesTs1(){const{prevDataLength,dataLength,loop}=this.__closure;const previousLength=prevDataLength.value;const currentLength=dataLength;const isLengthChanged=previousLength!==currentLength;const shouldComputed=isLengthChanged&&loop;if(shouldComputed)prevDataLength.value=dataLength;return{shouldComputed:shouldComputed,previousLength:previousLength,currentLength:currentLength};}" };
-let closure_3 = { code: "function pnpm_useCommonVariablesTs2({shouldComputed:shouldComputed,previousLength:previousLength,currentLength:currentLength}){const{handlerOffsetDirection,handlerOffset,computeOffsetIfDataChanged,size}=this.__closure;if(shouldComputed){const direction=handlerOffsetDirection(handlerOffset);handlerOffset.value=computeOffsetIfDataChanged({direction:direction,previousLength:previousLength,currentLength:currentLength,size:size,handlerOffset:handlerOffset.value});}}" };
-let closure_4 = { code: "function pnpm_useCommonVariablesTs3(){const{prevSize,size}=this.__closure;const previousSize=prevSize.value;const isSizeChanged=previousSize!==size;const shouldComputed=isSizeChanged;if(shouldComputed)prevSize.value=size;return{shouldComputed:shouldComputed,previousSize:previousSize,size:size};}" };
-let closure_5 = { code: "function pnpm_useCommonVariablesTs4({shouldComputed:shouldComputed,previousSize:previousSize,size:size}){const{handlerOffset,computeOffsetIfSizeChanged}=this.__closure;if(shouldComputed){handlerOffset.value=computeOffsetIfSizeChanged({handlerOffset:handlerOffset.value,prevSize:previousSize,size:size});}}" };
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
-export function useCommonVariables(initProps) {
-  let dataLength;
-  let defaultScrollOffsetValue;
-  let loop;
-  let width;
-  ({ width, dataLength } = initProps);
-  ({ defaultScrollOffsetValue, loop } = initProps);
-  const defaultIndex = initProps.defaultIndex;
-  if (initProps.vertical) {
-    width = initProps.height;
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
-  const tmp2 = dataLength;
-  let tmp = -Math.abs(defaultIndex * width);
-  let obj = dataLength(loop[0]);
-  if (defaultScrollOffsetValue == null) {
-    defaultScrollOffsetValue = obj.useSharedValue(tmp);
-  }
-  const tmp2Result = tmp2(loop[0]);
-  const sharedValue = tmp2Result.useSharedValue(dataLength);
-  const tmp2Result4 = tmp2(loop[0]);
-  const sharedValue1 = tmp2Result4.useSharedValue(width);
-  const fn = function f() {
-    const previousLength = sharedValue.value;
-    const currentLength = dataLength;
-    let shouldComputed = previousLength !== dataLength;
-    const tmp = sharedValue;
-    if (shouldComputed) {
-      shouldComputed = loop;
-    }
-    if (shouldComputed) {
-      tmp.value = currentLength;
-    }
-    return { shouldComputed, previousLength, currentLength };
-  };
-  fn.__closure = { prevDataLength: sharedValue, dataLength, loop };
-  fn.__workletHash = 16900133248154;
-  fn.__initData = width;
-  const fn2 = function h(shouldComputed) {
-    if (shouldComputed.shouldComputed) {
-      const obj = handlerOffsetDirection;
-      const result = obj.handlerOffsetDirection(defaultScrollOffsetValue);
-      const obj3 = { direction: result, previousLength: tmp, currentLength: tmp2, size: width, handlerOffset: defaultScrollOffsetValue.value };
-      const obj2 = omitZero;
-      defaultScrollOffsetValue.value = obj2.computeOffsetIfDataChanged(obj3);
-    }
-  };
-  const tmp2Result5 = tmp2(loop[0]);
-  let obj2 = { handlerOffsetDirection: tmp2(tmp3[1]).handlerOffsetDirection, handlerOffset: defaultScrollOffsetValue, computeOffsetIfDataChanged: tmp2(tmp3[2]).computeOffsetIfDataChanged, size: width };
-  fn2.__closure = obj2;
-  fn2.__workletHash = 6990374823872;
-  fn2.__initData = defaultScrollOffsetValue;
-  const items = [dataLength, loop];
-  const animatedReaction = tmp2Result5.useAnimatedReaction(fn, fn2, items);
-  const fn3 = function c() {
-    const previousSize = sharedValue1.value;
-    size = width;
-    const shouldComputed = previousSize !== width;
-    if (shouldComputed) {
-      sharedValue1.value = size;
-    }
-    return { shouldComputed, previousSize, size };
-  };
-  fn3.__closure = { prevSize: sharedValue1, size: width };
-  fn3.__workletHash = 10373775645111;
-  fn3.__initData = sharedValue;
-  const fn4 = function l(shouldComputed) {
-    if (shouldComputed.shouldComputed) {
-      const obj2 = { handlerOffset: defaultScrollOffsetValue.value, prevSize: tmp, size: tmp2 };
-      const obj = computeOffsetIfSizeChanged;
-      defaultScrollOffsetValue.value = obj.computeOffsetIfSizeChanged(obj2);
-    }
-  };
-  const tmp2Result6 = tmp2(loop[0]);
-  let obj3 = { handlerOffset: defaultScrollOffsetValue, computeOffsetIfSizeChanged: tmp2(tmp3[3]).computeOffsetIfSizeChanged };
-  fn4.__closure = obj3;
-  fn4.__workletHash = 12618693189041;
-  fn4.__initData = sharedValue1;
-  const items1 = [width];
-  const animatedReaction1 = tmp2Result6.useAnimatedReaction(fn3, fn4, items1);
-  return { size: width, validLength: dataLength - 1, handlerOffset: defaultScrollOffsetValue };
 }
+class AbstractParserWithLeftBoundaryChecking {
+  constructor() {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, AbstractParserWithLeftBoundaryChecking);
+    const obj = _getPrototypeOf(AbstractParserWithLeftBoundaryChecking);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(AbstractParserWithLeftBoundaryChecking, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+const entry = {
+  key: "patternLeftBoundary",
+  value: function patternLeftBoundary() {
+    return _mod10632.REGEX_PARTS.leftBoundary;
+  }
+};
+const items = [
+  entry,
+  {
+    key: "innerPattern",
+    value: function innerPattern(arg0) {
+      const innerPatternStringResult = this.innerPatternString(arg0);
+      const regExp = new RegExp(innerPatternStringResult, _mod10632.REGEX_PARTS.flags);
+      return regExp;
+    }
+  },
+  {
+    key: "innerPatternHasChange",
+    value: function innerPatternHasChange(arg0, arg1) {
+      return false;
+    }
+  }
+];
+const _moduleResult = _createClass(AbstractParserWithLeftBoundaryChecking, items);
+class AbstractParserWithLeftRightBoundaryChecking {
+  constructor() {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, AbstractParserWithLeftRightBoundaryChecking);
+    const obj = _getPrototypeOf(AbstractParserWithLeftRightBoundaryChecking);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(AbstractParserWithLeftRightBoundaryChecking, _moduleResult);
+const entry1 = {
+  key: "innerPattern",
+  value: function innerPattern(arg0) {
+    const innerPatternStringResult = this.innerPatternString(arg0);
+    const combined = "" + innerPatternStringResult + _mod10632.REGEX_PARTS.rightBoundary;
+    const regExp = new RegExp(combined, _mod10632.REGEX_PARTS.flags);
+    return regExp;
+  }
+};
+const items1 = [entry1];
+const AbstractParserWithLeftBoundaryChecking_export = _moduleResult;
+const AbstractParserWithLeftRightBoundaryChecking_export = _createClass(AbstractParserWithLeftRightBoundaryChecking, items1);
+
+export { AbstractParserWithLeftBoundaryChecking_export as AbstractParserWithLeftBoundaryChecking };
+export { AbstractParserWithLeftRightBoundaryChecking_export as AbstractParserWithLeftRightBoundaryChecking };

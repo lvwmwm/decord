@@ -39,8 +39,10 @@ export const COLLECTIBLES_SHOP_FETCH_ERROR_RETRY_THRESHOLD_MS = 600000;
 export const ViewState = { VISIBLE: 0, [0]: "VISIBLE", HIDDEN: 1, [1]: "HIDDEN", IN: 2, [2]: "IN", OUT: 3, [3]: "OUT" };
 export const CollectiblesUpgradedSearchBarWidthPx = { DEFAULT: 182, [182]: "DEFAULT", WIDE: 256, [256]: "WIDE" };
 export const STATE_TRANSITION_THRESHOLD_PX = 20;
+export const SHOP_SEARCH_QUERY_MAX_LENGTH = 256;
 export const CollectiblesSearchBarCTAName = { SEARCH_ICON: "search icon", SEARCH_BAR: "search bar", SEARCH_BAR_CLEAR: "search bar clear" };
-export const CollectiblesSearchBarTileType = { SEARCH: "SEARCH", SEARCH_SUGGESTION: "search suggestion" };
+export const CollectiblesSearchBarTileType = { SEARCH: "SEARCH" };
+export const CollectiblesSearchInputMethod = { ENTER: "enter", SUGGESTION: "suggestion" };
 export const BROWSE_CATEGORY_QUERY_PARAM = "category";
 export const GAME_SERVER_GAME_ID_QUERY_PARAM = "game_server_game_id";
 export { CollectibleShopTab };
@@ -59,9 +61,9 @@ export const MAX_FEED_SIZE = 36;
 export const SHOP_ALL_PAGE_SIZE = 5;
 export const ShopPurchaseType = { FIAT: 0, [0]: "FIAT", ORB: 1, [1]: "ORB", PREMIUM_PURCHASE: 2, [2]: "PREMIUM_PURCHASE", PROMOTIONAL: 3, [3]: "PROMOTIONAL", TENURE_REWARD: 4, [4]: "TENURE_REWARD", GIFT: 5, [5]: "GIFT" };
 export const EXTERNAL_PRODUCT_SKU_IDS = obj2;
-export function isFractionalPremiumSku(arg0) {
+export function isFractionalPremiumSku(skuId) {
   const ALL = FractionalPremiumSKUs.FractionalPremiumSKUsSets.ALL;
-  return ALL.has(arg0);
+  return ALL.has(skuId);
 }
 export function isExternalProduct(arg0) {
   return set.has(arg0);

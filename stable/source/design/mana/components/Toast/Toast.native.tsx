@@ -1,18 +1,18 @@
-// Module ID: 15857
-// Function ID: 15858
+// Module ID: 16203
+// Function ID: 16204
 // Name: Toast
-// Dependencies: [19, 17, 21, 575, 7340, 7086, 5014, 5596, 15858, 15859, 15860, 5624, 2]
+// Dependencies: [19, 17, 21, 575, 7434, 7185, 5170, 5756, 16204, 16205, 16206, 5783, 2]
 // Exports: Toast
 
-// Module 15857 (Toast)
+// Module 16203 (Toast)
 import nativeDefault from "native" /* 575 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 7086 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 7340 */;
-import _mod15858 from "module_15858" /* 15858 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 7185 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 7434 */;
+import _mod16204 from "module_16204" /* 16204 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -70,12 +70,12 @@ export function Toast(variant) {
   const memo = secondaryIconColor.useMemo(() => {
     let obj;
     if (null == obj[str]) {
-      obj = _mod15858;
+      obj = _mod16204;
       const tmp2 = require;
       const tmp4 = icon;
       if (obj.isToastEntity(icon)) {
         const obj3 = { entity: tmp4 };
-        return metroRequire(tmp2(15859).ToastEntity, obj3);
+        return metroRequire(tmp2(16205).ToastEntity, obj3);
       }
     }
     icon = undefined;
@@ -84,7 +84,7 @@ export function Toast(variant) {
     }
     if (icon == null) {
       let tmp9;
-      const obj2 = _mod15858;
+      const obj2 = _mod16204;
       const tmp8 = icon;
       if (!obj2.isToastEntity(icon)) {
         tmp9 = tmp8;
@@ -121,7 +121,7 @@ export function Toast(variant) {
   const tmp6 = closure_7;
   const tmp7 = closure_5;
   if (tmp8Result) {
-    let obj4 = { variant: "text-md/normal", color: "text-strong", lineClamp: token, style: tmp.text, children: text };
+    let obj4 = { variant: "body-md/normal", color: "text-strong", lineClamp: token, style: tmp.text, children: text };
     tmp8Result = tmp8(tmp2(tmp3[11]).Text, obj4);
   }
   items2[2] = tmp8Result;

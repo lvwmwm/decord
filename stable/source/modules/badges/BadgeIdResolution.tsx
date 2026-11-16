@@ -1,15 +1,15 @@
-// Module ID: 8764
-// Function ID: 8765
+// Module ID: 8868
+// Function ID: 8869
 // Name: BadgeIdResolution
-// Dependencies: [8765, 8754, 8766, 8755, 8767, 2]
+// Dependencies: [8869, 8858, 8870, 8859, 8871, 2]
 // Exports: isLegacyBadgeId, legacyBadgeIdToBadgeId, resolveProfileBadgeId, toProfileBadgeLegacyId
 
-// Module 8764 (BadgeIdResolution)
-import Constants from "Constants" /* 8754 */;
-import BadgeId from "BadgeId" /* 8755 */;
-import Constants2 from "Constants" /* 8765 */;
-import LegacyBadgeIdMap from "LegacyBadgeIdMap" /* 8766 */;
-import types from "types" /* 8767 */;
+// Module 8868 (BadgeIdResolution)
+import Constants from "Constants" /* 8858 */;
+import BadgeId from "BadgeId" /* 8859 */;
+import Constants2 from "Constants" /* 8869 */;
+import LegacyBadgeIdMap from "LegacyBadgeIdMap" /* 8870 */;
+import types from "types" /* 8871 */;
 import size from "module_2" /* 2 */;
 
 const DEFAULT_PREMIUM_BADGE_ID = Constants2.DEFAULT_PREMIUM_BADGE_ID;

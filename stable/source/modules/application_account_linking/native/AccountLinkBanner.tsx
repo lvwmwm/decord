@@ -1,20 +1,20 @@
-// Module ID: 18249
-// Function ID: 18250
+// Module ID: 18621
+// Function ID: 18622
 // Name: AccountLinkBanner
-// Dependencies: [19, 17, 1383, 4860, 21, 575, 7334, 11047, 5640, 5014, 563, 7326, 7351, 6977, 6980, 7054, 1187, 5624, 1113, 5634, 9440, 2]
+// Dependencies: [19, 17, 1385, 5016, 21, 575, 7428, 5915, 5796, 5170, 563, 7420, 7445, 7073, 7076, 7153, 1187, 5783, 1113, 5790, 9554, 2]
 // Exports: getScaledAccountLinkBannerHeight
 
-// Module 18249 (AccountLinkBanner)
+// Module 18621 (AccountLinkBanner)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
-import ButtonConstants from "ButtonConstants" /* 5640 */;
-import GameIcon from "GameIcon" /* 7334 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11047 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5016 */;
+import ButtonConstants from "ButtonConstants" /* 5796 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 5915 */;
+import GameIcon from "GameIcon" /* 7428 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1383 */;
+import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -77,7 +77,7 @@ function AccountLinkLargeBanner(arg0) {
     const obj9 = { style: tmp.ellipsisDot };
     items3[2] = closure_6(View, obj9);
     items2[1] = closure_7(View, obj6);
-    const obj10 = { user: stateFromStores, size: require("native").AvatarSizes.LARGE_48, guildId: "Array" };
+    const obj10 = { user: stateFromStores, size: require("native").AvatarSizes.LARGE_48, guildId: "r" };
     const Avatar = tmp2(tmp3[16]).Avatar;
     items2[2] = closure_6(Avatar, obj10);
     items1[1] = closure_7(View, obj4);
@@ -119,8 +119,8 @@ const PX_16 = nativeDefault.space.PX_16;
 const PX_4 = nativeDefault.space.PX_4;
 const NORMAL = GameIcon.GameIconSizes.NORMAL;
 let closure_14 = GameIcon.GameIconImageSize[NORMAL];
-let c15 = "heading-md/bold";
-let c16 = "text-sm/medium";
+let c15 = "heading-sm/semibold";
+let c16 = "body-sm/medium";
 const PX_162 = nativeDefault.space.PX_16;
 let createStyles = createStyles_mod;
 let obj = { card: { padding: PX_12 }, closeButton: size, imagesContainer: { flexDirection: "row", alignItems: "center", justifyContent: "center" }, ellipsisContainer: obj2, ellipsisDot: size1, title: { marginTop: PX_16, textAlign: "center" }, body: { marginTop: PX_4, textAlign: "center" }, ctaContainer: { marginTop: PX_162 } };

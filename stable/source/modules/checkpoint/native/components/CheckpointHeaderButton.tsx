@@ -1,16 +1,16 @@
-// Module ID: 13688
-// Function ID: 13689
+// Module ID: 13718
+// Function ID: 13719
 // Name: CheckpointHeaderButton
-// Dependencies: [19, 17, 6066, 21, 5014, 575, 2]
+// Dependencies: [19, 17, 6231, 21, 5170, 575, 2]
 // Exports: default
 
-// Module 13688 (CheckpointHeaderButton)
+// Module 13718 (CheckpointHeaderButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import CheckpointConstants from "CheckpointConstants" /* 6066 */;
+import CheckpointConstants from "CheckpointConstants" /* 6231 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const Pressable = react_native.Pressable;
@@ -34,3 +34,4 @@ export default function CheckpointHeaderButton(color) {
   items1[1] = react.useMemo(() => ({ borderColor: color }), items);
   return <Pressable style={items1} hitSlop={nativeDefault.space.PX_8} onPress={onPress} accessibilityRole="button" accessibilityLabel={accessibilityLabel}>{children}</Pressable>;
 };
+export const CHECKPOINT_HEADER_BUTTON_SIZE = 32;

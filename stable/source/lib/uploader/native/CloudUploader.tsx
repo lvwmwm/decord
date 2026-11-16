@@ -1,16 +1,16 @@
-// Module ID: 10208
-// Function ID: 10209
+// Module ID: 10359
+// Function ID: 10360
 // Name: CloudUploader
-// Dependencies: [5, 1072, 5019, 3, 10209, 10210, 1113, 10214, 10215, 8241, 10216, 10217, 8209, 8211, 1439, 12, 2]
+// Dependencies: [5, 1072, 5175, 3, 10360, 10361, 1113, 10365, 10366, 8344, 10367, 10368, 8311, 8313, 1441, 12, 2]
 
-// Module 10208 (CloudUploader)
+// Module 10359 (CloudUploader)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
-import MessageConstants from "MessageConstants" /* 5019 */;
-import UploadPlatform from "UploadPlatform" /* 8211 */;
+import MessageConstants from "MessageConstants" /* 5175 */;
+import UploadPlatform from "UploadPlatform" /* 8313 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1072 */;
-import UploaderBase from "UploaderBase" /* 10209 */;
+import UploaderBase from "UploaderBase" /* 10360 */;
 import size from "module_2" /* 2 */;
 
 let _self, c2, c4, closure_0, constants, logger, preCompressionSize, set, uri;
@@ -437,7 +437,7 @@ class CloudUploader extends UploaderBase {
     let mediaEventSubscriptions = this.mediaEventSubscriptions;
     const id = this._file.id;
     set = mediaEventSubscriptions.set;
-    const obj = self(1439);
+    const obj = self(1441);
     let result = set(id, obj.onCompressionProgress((uri) => {
       uri = uri.uri;
       const uploadItems = self.uploadItems;

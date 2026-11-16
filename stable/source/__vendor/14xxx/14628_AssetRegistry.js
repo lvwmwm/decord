@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/user_settings/connections/native/two_way_link/images", width: 18, height: 18.5, scales: [2, 3], hash: "84a5f82b0047a661ec45232254da9031", name: "app_installed_check", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/nuf/native/images", width: 221, height: 195, scales: [1, 2, 3], hash: "3a31ec2d5aeb0eedce9411671227bdc1", name: "discoverability-header", type: "png" });

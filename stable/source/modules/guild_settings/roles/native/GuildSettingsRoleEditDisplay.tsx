@@ -1,22 +1,22 @@
-// Module ID: 19788
-// Function ID: 19789
+// Module ID: 20239
+// Function ID: 20240
 // Name: GuildSettingsRoleEditDisplay
-// Dependencies: [19, 17, 4921, 19773, 19772, 1072, 19775, 21, 5014, 575, 6040, 504, 7356, 7355, 7374, 1187, 19789, 5258, 19790, 1994, 18362, 19787, 19792, 19793, 7082, 1113, 19795, 7060, 6975, 5587, 1379, 1090, 16446, 5735, 5624, 2570, 7369, 2]
+// Dependencies: [19, 17, 5077, 20224, 20223, 1072, 20226, 21, 5170, 575, 6204, 504, 7450, 7449, 7467, 1187, 20240, 5406, 20241, 2118, 18736, 20238, 20243, 20244, 7181, 1113, 20246, 7159, 7071, 5747, 1380, 1090, 16796, 5891, 5783, 2696, 7462, 2]
 // Exports: default
 
-// Module 19788 (GuildSettingsRoleEditDisplay)
+// Module 20239 (GuildSettingsRoleEditDisplay)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import asyncRequire from "asyncRequire" /* 1994 */;
-import GuildRoleRecord from "GuildRoleRecord" /* 4921 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 19772 */;
-import GuildSettingsRolesStore2 from "GuildSettingsRolesStore" /* 19773 */;
-import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 19775 */;
+import asyncRequire from "asyncRequire" /* 2118 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 5077 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
+import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 20223 */;
+import GuildSettingsRolesStore2 from "GuildSettingsRolesStore" /* 20224 */;
+import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 20226 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const GuildSettingsRolesStore = GuildSettingsRolesStore2;
@@ -35,7 +35,7 @@ const STYLE_CONFIGS = GuildSettingsRoleConstants.STYLE_CONFIGS;
 let closure_11 = EnhancedRoleColorConstants.DEFAULT_GRADIENT_ROLE_COLORS;
 ({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = Fragment);
 let obj = { roleIcon: { paddingTop: 2 }, roleIconPlaceholder: { opacity: 0.5 }, trailingColorContainer: { flexDirection: "row", alignItems: "center", justifyContent: "center" }, colorBlock: { marginHorizontal: 0, marginVertical: 0, marginRight: 8, minWidth: 24, height: 24, borderRadius: 3 }, holographicInfo: obj2 };
-obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO, padding: nativeDefault.space.PX_8, marginHorizontal: nativeDefault.space.PX_12, marginTop: -1 * nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_12, display: "flex", flexDirection: "row", gap: nativeDefault.space.PX_8, justifyContent: "center", alignItems: "center", borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderColor: nativeDefault.colors.ICON_FEEDBACK_INFO };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_MOD_INFO, padding: nativeDefault.space.PX_8, marginHorizontal: nativeDefault.space.PX_12, marginTop: -1 * nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_12, display: "flex", flexDirection: "row", gap: nativeDefault.space.PX_8, justifyContent: "center", alignItems: "center", borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderColor: nativeDefault.colors.ICON_FEEDBACK_INFO };
 let closure_15 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/guild_settings/roles/native/GuildSettingsRoleEditDisplay.tsx");
 
@@ -138,7 +138,7 @@ export default function GuildSettingsRoleEditDisplay(guild) {
     const callback = SOLID.useCallback(() => {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { guildId: guild.id, roleId: id };
-      obj.openLazy(asyncRequire(19790, dependencyMap.paths), "RoleIcon", obj2);
+      obj.openLazy(asyncRequire(20241, dependencyMap.paths), "RoleIcon", obj2);
     }, items1);
     const items3 = [guild.id, role, id, SOLID];
     const callback1 = SOLID.useCallback(() => {
@@ -151,7 +151,7 @@ export default function GuildSettingsRoleEditDisplay(guild) {
               obj.updateRoleColor(role, arg0);
             }
         };
-        obj.openLazy(asyncRequire(18362, dependencyMap.paths), "RoleColorPicker", obj2);
+        obj.openLazy(asyncRequire(18736, dependencyMap.paths), "RoleColorPicker", obj2);
       } else if (tmp === tmp2.GRADIENT) {
         const obj4 = {
           colors,
@@ -161,7 +161,7 @@ export default function GuildSettingsRoleEditDisplay(guild) {
             }
         };
         const obj3 = ActionSheetActionCreatorsDefault;
-        obj3.openLazy(asyncRequire(19792, dependencyMap.paths), "RoleColorPicker", obj4);
+        obj3.openLazy(asyncRequire(20243, dependencyMap.paths), "RoleColorPicker", obj4);
       }
     }, items2);
     const callback2 = SOLID.useCallback(() => {
@@ -175,7 +175,7 @@ export default function GuildSettingsRoleEditDisplay(guild) {
           obj.updateRoleStyles(closure_1_2, currentStyle);
         }
       };
-      obj.openLazy(asyncRequire(19793, dependencyMap.paths), "EnhancedRoleColorsSelectStyleModal", obj2);
+      obj.openLazy(asyncRequire(20244, dependencyMap.paths), "EnhancedRoleColorsSelectStyleModal", obj2);
     }, items3);
     const obj6 = { label: intl.string(guild(id[25]).t.dLbkBk), value: name, disabled: tmp3, onChange: onNameChanged, maxLength, autoFocus: autoFocusInput, errorMessage: first };
     const TextInput = tmp4(tmp5[24]).TextInput;
@@ -279,7 +279,7 @@ export default function GuildSettingsRoleEditDisplay(guild) {
       const obj15 = { size: "sm", color: tmp18(id[9]).colors.ICON_FEEDBACK_INFO };
       const CircleInformationIcon = tmp4(tmp5[33]).CircleInformationIcon;
       items7 = [tmp19(CircleInformationIcon, obj15), ];
-      const obj16 = { variant: "text-sm/normal", children: intl5.string(tmp18(id[35]).tBhCyr) };
+      const obj16 = { variant: "body-sm/normal", children: intl5.string(tmp18(id[35]).tBhCyr) };
       const Text = tmp4(tmp5[34]).Text;
       intl5 = tmp4(tmp5[25]).intl;
       items7[1] = tmp19(Text, obj16);

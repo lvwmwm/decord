@@ -1,29 +1,29 @@
-// Module ID: 10203
-// Function ID: 10204
+// Module ID: 10354
+// Function ID: 10355
 // Name: ForumComposerModal
-// Dependencies: [19, 17, 10204, 4863, 7701, 8208, 7458, 21, 5014, 575, 1888, 5959, 1113, 8343, 9778, 7326, 504, 10205, 10202, 1495, 1623, 11, 8204, 7004, 10206, 2]
+// Dependencies: [19, 17, 10355, 5019, 7810, 8310, 7555, 21, 5170, 575, 2017, 6123, 1113, 8446, 9901, 7420, 504, 10356, 10353, 1497, 1625, 11, 8306, 7103, 10357, 2]
 // Exports: default
 
-// Module 10203 (ForumComposerModal)
+// Module 10354 (ForumComposerModal)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
-import KeyboardUIStore from "KeyboardUIStore" /* 1495 */;
-import KeyboardTypes from "KeyboardTypes" /* 1623 */;
-import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1888 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5959 */;
-import DraftStore2 from "DraftStore" /* 7701 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 8343 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9778 */;
-import ForumComposerModalActionCreators from "ForumComposerModalActionCreators" /* 10202 */;
+import KeyboardUIStore from "KeyboardUIStore" /* 1497 */;
+import KeyboardTypes from "KeyboardTypes" /* 1625 */;
+import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 2017 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6123 */;
+import DraftStore2 from "DraftStore" /* 7810 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 8446 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9901 */;
+import ForumComposerModalActionCreators from "ForumComposerModalActionCreators" /* 10353 */;
 import react from "react" /* 19 */;
-import NativeMenuStore from "NativeMenuStore" /* 10204 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8208 */;
-import ForumPostMessagesStore from "ForumPostMessagesStore" /* 7458 */;
-import createStyles from "createStyles" /* 5014 */;
+import NativeMenuStore from "NativeMenuStore" /* 10355 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8310 */;
+import ForumPostMessagesStore from "ForumPostMessagesStore" /* 7555 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const DraftStore = DraftStore2;

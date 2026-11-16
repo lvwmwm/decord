@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 16, height: 16, scales: [1, 2, 3], hash: "2b87933d8084823c9896755fb55aa5f1", name: "ic_spotify_white_16px", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "9ca1aab40b1d1dec8d5caf0688317d98", name: "TextSpoilerIcon", type: "png" });

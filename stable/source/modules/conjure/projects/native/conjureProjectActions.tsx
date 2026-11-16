@@ -1,27 +1,27 @@
-// Module ID: 12221
-// Function ID: 12222
+// Module ID: 12425
+// Function ID: 12426
 // Name: conjureProjectActions
-// Dependencies: [5, 10850, 10867, 6844, 4870, 12222, 5711, 5964, 1113, 3868, 7358, 6046, 5712, 5731, 12212, 12223, 10875, 9208, 10992, 10878, 10846, 5733, 12225, 5727, 10524, 7561, 11884, 7135, 12227, 5738, 2]
+// Dependencies: [5, 11001, 11019, 6932, 5026, 12426, 5868, 6128, 1113, 4026, 7451, 6210, 5869, 5887, 12416, 12427, 11028, 9321, 11154, 11031, 10997, 5889, 12429, 5883, 10675, 7666, 12078, 7195, 12431, 5894, 2]
 // Exports: canUnpublishConjureUserApp, conjureProjectActions, copyConjureProjectId, copyConjureProjectLink, exportConjureProject, importConjureProject
 
-// Module 12221 (conjureProjectActions)
+// Module 12425 (conjureProjectActions)
 import intl11 from "intl" /* 1113 */;
-import _modDef3868 from "module_3868" /* 3868 */;
-import ChannelConstants from "ChannelConstants" /* 4870 */;
-import ToastUtils from "ToastUtils" /* 5711 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
-import CopyIcon from "CopyIcon" /* 5731 */;
-import ChannelUtils from "ChannelUtils" /* 6046 */;
-import ClipboardUtils from "ClipboardUtils" /* 7358 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10875 */;
-import conjureProjectMute from "conjureProjectMute" /* 10878 */;
-import conjureRemoveApp from "conjureRemoveApp" /* 12212 */;
-import openConjureRemoveAppAlertDefault from "openConjureRemoveAppAlert" /* 12223 */;
-import openConjureUnpublishUserAppAlertDefault from "openConjureUnpublishUserAppAlert" /* 12227 */;
+import _modDef4026 from "module_4026" /* 4026 */;
+import ChannelConstants from "ChannelConstants" /* 5026 */;
+import ToastUtils from "ToastUtils" /* 5868 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5869 */;
+import CopyIcon from "CopyIcon" /* 5887 */;
+import ChannelUtils from "ChannelUtils" /* 6210 */;
+import ClipboardUtils from "ClipboardUtils" /* 7451 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 11028 */;
+import conjureProjectMute from "conjureProjectMute" /* 11031 */;
+import conjureRemoveApp from "conjureRemoveApp" /* 12416 */;
+import openConjureRemoveAppAlertDefault from "openConjureRemoveAppAlert" /* 12427 */;
+import openConjureUnpublishUserAppAlertDefault from "openConjureUnpublishUserAppAlert" /* 12431 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10850 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10867 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6844 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 11001 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 11019 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6932 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -210,8 +210,8 @@ function deleteConjureProject(project, removeTarget) {
   if (null == removeTarget) {
     const obj2 = {
       key: "ConjureProjectDelete",
-      title: intl.formatToPlainString(_modDef3868.CJBhb2, obj3),
-      content: intl2.string(_modDef3868["0OmrVn"]),
+      title: intl.formatToPlainString(_modDef4026.CJBhb2, obj3),
+      content: intl2.string(_modDef4026["0OmrVn"]),
       confirmText: intl3.string(require("intl").t.oyYWHE),
       onConfirm() {
           obj = ConjureActionCreators;
@@ -247,7 +247,7 @@ export function exportConjureProject(project, fn) {
   React3(project.id);
   const id = project.id;
   const intl = intl11.intl;
-  hasOwnProperty(id, intl.string(_modDef3868.oU20rd));
+  hasOwnProperty(id, intl.string(_modDef4026.oU20rd));
 }
 export function importConjureProject(project, arg1) {
   const promise = importIntoProject(project, arg1);
@@ -270,7 +270,7 @@ export function copyConjureProjectId(project) {
   let intl;
   obj = ClipboardUtils;
   obj.copy(project.id);
-  const obj2 = { text: intl.string(_modDef3868.CmfaZG), icon: CopyIcon.CopyIcon };
+  const obj2 = { text: intl.string(_modDef4026.CmfaZG), icon: CopyIcon.CopyIcon };
   const open = ToastActionCreatorsDefault.open;
   ToastActionCreatorsDefault;
   intl = intl11.intl;
@@ -313,7 +313,7 @@ export function conjureProjectActions(project) {
   const push = items.push;
   let intl = project(muted[8]).intl;
   const string = intl.string;
-  const tmp6 = require("module_3868");
+  const tmp6 = require("module_4026");
   if (muted) {
     s9rCuH = tmp6.s9rCuH;
     tmp8 = tmp5;
@@ -336,7 +336,7 @@ export function conjureProjectActions(project) {
   }
   push(obj);
   if (closure_8(project)) {
-    let obj2 = { label: intl2.string(tmp8(tmp4[9])["276ll6"]), IconComponent: project(tmp4[20]).RemixIcon, action: onRemix };
+    let obj2 = { label: intl2.string(tmp8(tmp4[9])["276ll6"]), IconComponent: project(tmp4[20]).PaperPlusIcon, action: onRemix };
     const push2 = items.push;
     intl2 = tmp3(tmp4[8]).intl;
     push2(obj2);
@@ -352,7 +352,7 @@ export function conjureProjectActions(project) {
       React3(project.id);
       const id = tmp.id;
       const intl = intl11.intl;
-      hasOwnProperty(id, intl.string(_modDef3868.oU20rd));
+      hasOwnProperty(id, intl.string(_modDef4026.oU20rd));
     }
   };
   intl3 = tmp3(tmp4[8]).intl;
@@ -398,7 +398,7 @@ export function conjureProjectActions(project) {
       let intl;
       obj = ClipboardUtils;
       obj.copy(project.id);
-      const obj2 = { text: intl.string(_modDef3868.CmfaZG), icon: CopyIcon.CopyIcon };
+      const obj2 = { text: intl.string(_modDef4026.CmfaZG), icon: CopyIcon.CopyIcon };
       const open = ToastActionCreatorsDefault.open;
       ToastActionCreatorsDefault;
       intl = intl11.intl;

@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9pbnRs", scales: [1], hash: "15e2770ff873ff5fbea525f59a114fa0", name: "es-419.messages.15e2770ff873ff5fbea525f59a114fa0.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/main_tabs", width: 192, height: 144, scales: [1], hash: "2bbd6220afd7d7de1fa25c481ae56a3d", name: "ExampleSketchheadsActivity", type: "png" });

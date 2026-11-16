@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting/perks", width: 20, height: 20, scales: [2, 3], hash: "4f7f3933dfbb31e71ae1545e9b3d82b6", name: "sticker", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/gifting", width: 270, height: 134, scales: [2, 3], hash: "05b73f8565eab54ae61e59eb9ff991a8", name: "img_premium_embed_background_dark", type: "png" });

@@ -1,23 +1,23 @@
-// Module ID: 11754
-// Function ID: 11755
+// Module ID: 11949
+// Function ID: 11950
 // Name: ScreenshareTile
-// Dependencies: [19, 17, 1072, 21, 5014, 575, 11755, 5303, 1187, 5717, 11756, 5624, 1113, 2]
+// Dependencies: [19, 17, 1072, 21, 5170, 575, 11950, 5452, 1187, 5874, 11951, 5783, 1113, 2]
 // Exports: default
 
-// Module 11754 (ScreenshareTile)
+// Module 11949 (ScreenshareTile)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import useParticipantTileTapGestureDefault from "useParticipantTileTapGesture" /* 11755 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11756 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5452 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import FastImageDefault from "FastImage" /* 5874 */;
+import useParticipantTileTapGestureDefault from "useParticipantTileTapGesture" /* 11950 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11951 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -52,7 +52,7 @@ export default function ScreenShareTile(onSingleTap) {
   const obj4 = { source: AssetRegistryDefault, style: tmp.image, resizeMode: "contain" };
   const tmp3 = FastImageDefault;
   items[1] = hasOwnProperty(tmp3, obj4);
-  const obj5 = { style: tmp.label, variant: "text-xs/bold", color: "text-overlay-light", children: intl.string(intl2.t.G84gtR) };
+  const obj5 = { style: tmp.label, variant: "body-xs/semibold", color: "text-overlay-light", children: intl.string(intl2.t.G84gtR) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   items[2] = hasOwnProperty(Text, obj5);

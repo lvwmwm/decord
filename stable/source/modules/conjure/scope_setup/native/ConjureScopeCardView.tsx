@@ -1,18 +1,18 @@
-// Module ID: 12752
-// Function ID: 12753
+// Module ID: 12985
+// Function ID: 12986
 // Name: ConjureScopeCardView
-// Dependencies: [19, 17, 21, 5014, 575, 12753, 12758, 5624, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 12986, 12991, 5783, 2]
 // Exports: default
 
-// Module 12752 (ConjureScopeCardView)
+// Module 12985 (ConjureScopeCardView)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import ConjureScopeServerCardDefault from "ConjureScopeServerCard" /* 12753 */;
-import ConjureClarificationCardDefault from "ConjureClarificationCard" /* 12758 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import ConjureScopeServerCardDefault from "ConjureScopeServerCard" /* 12986 */;
+import ConjureClarificationCardDefault from "ConjureClarificationCard" /* 12991 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -49,7 +49,7 @@ export default function ConjureScopeCardView(onInputFocusChange) {
   items = [tmp6, ];
   let tmp3Result = null;
   if (null != card.failure) {
-    const obj7 = { variant: "text-sm/normal", color: "text-feedback-critical", accessibilityRole: "alert", children: card.failure };
+    const obj7 = { variant: "body-sm/normal", color: "text-feedback-critical", accessibilityRole: "alert", children: card.failure };
     tmp3Result = tmp3(Text_Text.Text, obj7);
   }
   items[1] = tmp3Result;

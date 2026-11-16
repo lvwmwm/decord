@@ -1,20 +1,20 @@
-// Module ID: 16495
-// Function ID: 16496
+// Module ID: 16844
+// Function ID: 16845
 // Name: UserProfileEffectEditButton
-// Dependencies: [19, 17, 7377, 9494, 1083, 21, 5014, 575, 8737, 11386, 5258, 16496, 1994, 1113, 16475, 6953, 5717, 14431, 9497, 1187, 15071, 2]
+// Dependencies: [19, 17, 7470, 9611, 1083, 21, 5170, 575, 8841, 11559, 5406, 16845, 2118, 1113, 16822, 7048, 5874, 14696, 9614, 1187, 15381, 2]
 // Exports: default
 
-// Module 16495 (UserProfileEffectEditButton)
+// Module 16844 (UserProfileEffectEditButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
-import asyncRequire from "asyncRequire" /* 1994 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import Constants2 from "Constants" /* 7377 */;
-import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9494 */;
+import asyncRequire from "asyncRequire" /* 2118 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
+import Constants2 from "Constants" /* 7470 */;
+import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9611 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -93,7 +93,7 @@ export default function UserProfileEffectEditButton(isTryItOut) {
   const callback = userProfileEffect.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { user, currentProfileEffect: userProfileEffect, guildId, isTryItOut };
-    obj.openLazy(asyncRequire(16496, dependencyMap.paths), "Profile Effect", obj2);
+    obj.openLazy(asyncRequire(16845, dependencyMap.paths), "Profile Effect", obj2);
   }, items);
   if (product != null) {
     name = product.name;

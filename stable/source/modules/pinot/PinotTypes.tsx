@@ -1,9 +1,9 @@
-// Module ID: 9054
-// Function ID: 9055
+// Module ID: 9167
+// Function ID: 9168
 // Name: PinotTypes
 // Dependencies: [2]
 
-// Module 9054 (PinotTypes)
+// Module 9167 (PinotTypes)
 import size from "module_2" /* 2 */;
 
 const obj = { CHANNEL_SUMMARIES: "channel_summaries", CHANNEL_MESSAGES: "channel_messages" };

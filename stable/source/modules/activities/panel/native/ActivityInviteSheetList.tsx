@@ -1,23 +1,23 @@
-// Module ID: 19138
-// Function ID: 19139
+// Module ID: 19552
+// Function ID: 19553
 // Name: ActivityInviteSheetList
-// Dependencies: [19, 1072, 21, 5014, 6723, 575, 1187, 1113, 6980, 5258, 5199, 5624, 19139, 5607, 7294, 2]
+// Dependencies: [19, 1072, 21, 5170, 6810, 575, 1187, 1113, 7076, 5406, 5347, 5783, 19553, 5767, 7390, 2]
 // Exports: default
 
-// Module 19138 (ActivityInviteSheetList)
+// Module 19552 (ActivityInviteSheetList)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import RootNavigationRef from "RootNavigationRef" /* 5199 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import Pressables from "Pressables" /* 6980 */;
-import ActivityInviteSheetRowDefault from "ActivityInviteSheetRow" /* 19139 */;
+import RootNavigationRef from "RootNavigationRef" /* 5347 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import Pressables from "Pressables" /* 7076 */;
+import ActivityInviteSheetRowDefault from "ActivityInviteSheetRow" /* 19553 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
-import TextStyles_mod from "TextStyles" /* 6723 */;
+import createStyles_mod from "createStyles" /* 5170 */;
+import TextStyles_mod from "TextStyles" /* 6810 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -65,7 +65,7 @@ function FriendsEmptyComponent() {
   };
   const PressableOpacity = Pressables.PressableOpacity;
   intl3 = intl5.intl;
-  obj7 = { style: tmp.goToFriendsLink, variant: "text-sm/semibold", color: "text-link", children: intl4.string(intl5.t.a7FVbE) };
+  obj7 = { style: tmp.goToFriendsLink, variant: "body-sm/semibold", color: "text-link", children: intl4.string(intl5.t.a7FVbE) };
   Text = Text_Text.Text;
   intl4 = intl5.intl;
   items[1] = React3(PressableOpacity, obj4);

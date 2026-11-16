@@ -1,14 +1,14 @@
-// Module ID: 17367
-// Function ID: 17368
+// Module ID: 17728
+// Function ID: 17729
 // Name: EmojiMeltingFaceIcon
-// Dependencies: [19, 21, 575, 5716, 17368, 2]
+// Dependencies: [19, 21, 575, 5873, 17729, 2]
 // Exports: EmojiMeltingFaceIcon
 
-// Module 17367 (EmojiMeltingFaceIcon)
+// Module 17728 (EmojiMeltingFaceIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5716 */;
-import AssetRegistry from "AssetRegistry" /* 17368 */;
+import BaseIconImage2 from "BaseIconImage" /* 5873 */;
+import AssetRegistry from "AssetRegistry" /* 17729 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

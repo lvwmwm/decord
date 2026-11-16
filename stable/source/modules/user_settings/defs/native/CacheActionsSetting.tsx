@@ -1,25 +1,25 @@
-// Module ID: 17561
-// Function ID: 17562
+// Module ID: 17928
+// Function ID: 17929
 // Name: CacheActionsSetting
-// Dependencies: [5, 32, 19, 6568, 21, 5258, 5712, 5735, 1113, 504, 4839, 17562, 7366, 7321, 7060, 6975, 12225, 17566, 17563, 11062, 6953, 17567, 5742, 11540, 2]
+// Dependencies: [5, 32, 19, 6655, 21, 5406, 5869, 5891, 1113, 504, 4995, 17929, 7459, 7415, 7159, 7071, 12429, 17933, 17930, 11226, 7048, 17934, 5898, 11717, 2]
 
-// Module 17561 (CacheActionsSetting)
+// Module 17928 (CacheActionsSetting)
 import react from "react" /* 19 */;
 import get_initialized from "get initialized" /* 504 */;
-import UserSettings from "UserSettings" /* 4839 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5735 */;
-import BrowserManager from "BrowserManager" /* 5742 */;
-import CacheActionsDiskUsageSection from "CacheActionsDiskUsageSection" /* 17562 */;
-import DiskUsageManagerDefault from "DiskUsageManager" /* 17563 */;
-import CacheActionCreators from "CacheActionCreators" /* 17566 */;
-import FileWarningIcon from "FileWarningIcon" /* 17567 */;
+import UserSettings from "UserSettings" /* 4995 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5869 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5891 */;
+import BrowserManager from "BrowserManager" /* 5898 */;
+import CacheActionsDiskUsageSection from "CacheActionsDiskUsageSection" /* 17929 */;
+import DiskUsageManagerDefault from "DiskUsageManager" /* 17930 */;
+import CacheActionCreators from "CacheActionCreators" /* 17933 */;
+import FileWarningIcon from "FileWarningIcon" /* 17934 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6568 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6655 */;
 import Fragment from "Fragment" /* 21 */;
-import SettingBuilders from "SettingBuilders" /* 11540 */;
+import SettingBuilders from "SettingBuilders" /* 11717 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2;
@@ -29,14 +29,14 @@ let metroImportDefault;
 let tmp;
 let tmp10;
 const intl6 = tmp(1113);
-const ActivityIndicator_ActivityIndicator = tmp(6953);
-const TableRow4 = tmp(6975);
-const TableRowGroup2 = tmp(7060);
-const BottomSheetTitleHeader2 = tmp(7321);
-const ActionSheet2 = tmp(7366);
-const FileIcon = tmp(11062);
-const FileUpIcon = tmp(12225);
-const CacheActionsDiskUsageSectionDefault = tmp10(17562);
+const ActivityIndicator_ActivityIndicator = tmp(7048);
+const TableRow4 = tmp(7071);
+const TableRowGroup2 = tmp(7159);
+const BottomSheetTitleHeader2 = tmp(7415);
+const ActionSheet2 = tmp(7459);
+const FileIcon = tmp(11226);
+const FileUpIcon = tmp(12429);
+const CacheActionsDiskUsageSectionDefault = tmp10(17929);
 function handleCacheActionPress(text) {
   const obj = ToastActionCreatorsDefault;
   const obj2 = { text, icon: CircleInformationIcon.CircleInformationIcon };

@@ -1,17 +1,17 @@
-// Module ID: 20101
-// Function ID: 20102
+// Module ID: 20550
+// Function ID: 20551
 // Name: ErrorScreen
-// Dependencies: [5, 32, 19, 17, 21, 5014, 575, 1497, 20078, 20083, 5624, 1113, 6027, 5634, 6740, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5170, 575, 1499, 20528, 20532, 5783, 1113, 6191, 5790, 6827, 2]
 // Exports: default
 
-// Module 20101 (ErrorScreen)
+// Module 20550 (ErrorScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -123,7 +123,7 @@ export default function ErrorScreen() {
   const Text = require("Text/Text").Text;
   intl = require("intl").intl;
   items = [closure_7(Text, obj3), , ];
-  let obj4 = { variant: "text-md/normal", color: "text-muted", children: intl2.string(require("intl").t.ZUEGFn) };
+  let obj4 = { variant: "body-md/normal", color: "text-muted", children: intl2.string(require("intl").t.ZUEGFn) };
   const Text2 = require("Text/Text").Text;
   intl2 = require("intl").intl;
   items[1] = closure_7(Text2, obj4);

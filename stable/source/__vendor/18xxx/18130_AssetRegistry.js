@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/main_tabs_v2/native/images", width: 64, height: 64, scales: [1], hash: "99c427c3b3ea910fa2d3aeb72dd0f935", name: "game-empty-state-controller", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "0d0b8d91cad785fc29460e6b86930814", name: "FolderPlusIcon", type: "png" });

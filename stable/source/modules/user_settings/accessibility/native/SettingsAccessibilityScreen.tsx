@@ -1,20 +1,20 @@
-// Module ID: 17317
-// Function ID: 17318
+// Module ID: 17677
+// Function ID: 17678
 // Name: SettingsAccessibilityScreen
-// Dependencies: [19, 5015, 4840, 8432, 1072, 21, 1113, 2061, 2932, 7563, 7207, 17318, 1497, 563, 11540, 16583, 2]
+// Dependencies: [19, 5171, 4996, 8536, 1072, 21, 1113, 2185, 3056, 7668, 7303, 17678, 1499, 563, 11717, 16936, 2]
 // Exports: default
 
-// Module 17317 (SettingsAccessibilityScreen)
+// Module 17677 (SettingsAccessibilityScreen)
 import Fragment from "Fragment" /* 21 */;
 import intl15 from "intl" /* 1113 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2061 */;
-import _modDef2932 from "module_2932" /* 2932 */;
-import SettingsConstants from "SettingsConstants" /* 8432 */;
-import SettingBuilders from "SettingBuilders" /* 11540 */;
-import getSettingsOverrideReasonDefault from "getSettingsOverrideReason" /* 17318 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
+import _modDef3056 from "module_3056" /* 3056 */;
+import SettingsConstants from "SettingsConstants" /* 8536 */;
+import SettingBuilders from "SettingBuilders" /* 11717 */;
+import getSettingsOverrideReasonDefault from "getSettingsOverrideReason" /* 17678 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
-import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 4840 */;
+import AccessibilityStore from "AccessibilityStore" /* 5171 */;
+import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 4996 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -96,7 +96,7 @@ export default function SettingsAccessibilityScreen() {
     items2 = [MobileUserSettings.OFFICIAL_MESSAGE_STYLE];
     intl2 = intl15.intl;
     items1[1] = obj4;
-    const obj5 = { settings: items3, subLabel: intl3.format(_modDef2932.L8U56h, obj6) };
+    const obj5 = { settings: items3, subLabel: intl3.format(_modDef3056.L8U56h, obj6) };
     items3 = [MobileUserSettings.DISPLAY_NAME_STYLES_ACCESSIBILITY];
     intl3 = intl15.intl;
     obj6 = {

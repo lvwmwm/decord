@@ -1,14 +1,14 @@
-// Module ID: 17389
-// Function ID: 17390
+// Module ID: 17750
+// Function ID: 17751
 // Name: EmojiZanyFaceIcon
-// Dependencies: [19, 21, 575, 5716, 17390, 2]
+// Dependencies: [19, 21, 575, 5873, 17751, 2]
 // Exports: EmojiZanyFaceIcon
 
-// Module 17389 (EmojiZanyFaceIcon)
+// Module 17750 (EmojiZanyFaceIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5716 */;
-import AssetRegistry from "AssetRegistry" /* 17390 */;
+import BaseIconImage2 from "BaseIconImage" /* 5873 */;
+import AssetRegistry from "AssetRegistry" /* 17751 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

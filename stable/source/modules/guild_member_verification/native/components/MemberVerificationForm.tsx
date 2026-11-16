@@ -1,23 +1,23 @@
-// Module ID: 6967
-// Function ID: 6968
+// Module ID: 7063
+// Function ID: 7064
 // Name: MemberVerificationForm
-// Dependencies: [5, 32, 19, 17, 6948, 1072, 21, 5014, 5712, 1113, 6950, 5612, 5048, 504, 6968, 6922, 6969, 7107, 5634, 2]
+// Dependencies: [5, 32, 19, 17, 7036, 1072, 21, 5170, 5869, 1113, 7038, 5771, 5206, 504, 7064, 7010, 7065, 7211, 5790, 2]
 // Exports: default
 
-// Module 6967 (MemberVerificationForm)
+// Module 7063 (MemberVerificationForm)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 5048 */;
-import MemberVerificationFormStore2 from "MemberVerificationFormStore" /* 6948 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5206 */;
+import MemberVerificationFormStore2 from "MemberVerificationFormStore" /* 7036 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let c5, c6, phone;
+let c5, c6, errors, phone;
 
 let c10;
 let unpackModuleId;
@@ -127,7 +127,7 @@ export default function MemberVerificationForm(guild) {
             let version;
             const tmp19 = closure_130_9;
             if (body != null) {
-              const errors = body.errors;
+              errors = body.errors;
               if (errors != null) {
                 version = errors.version;
               }

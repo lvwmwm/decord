@@ -1,23 +1,23 @@
-// Module ID: 7263
-// Function ID: 7264
+// Module ID: 7359
+// Function ID: 7360
 // Name: doGuildOnboarding
-// Dependencies: [32, 5, 17, 5045, 7264, 7265, 1072, 7266, 5258, 6744, 6902, 7267, 1409, 1892, 1893, 7271, 7272, 7273, 7290, 1994, 1099, 2]
+// Dependencies: [32, 5, 17, 5203, 7360, 7361, 1072, 7362, 5406, 6831, 6990, 7363, 1411, 2021, 2022, 7367, 7368, 7369, 7386, 2118, 1099, 2]
 // Exports: default, discardOnboardingPromise, isOnboardingActiveForGuild
 
-// Module 7263 (doGuildOnboarding)
+// Module 7359 (doGuildOnboarding)
 import react_native from "react-native" /* 17 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
-import react_nativeDefault from "react-native" /* 1892 */;
-import react_nativeDefault2 from "react-native" /* 1893 */;
-import asyncRequire from "asyncRequire" /* 1994 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
-import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7265 */;
-import _mod7266 from "module_7266" /* 7266 */;
-import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 7273 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
+import react_nativeDefault from "react-native" /* 2021 */;
+import react_nativeDefault2 from "react-native" /* 2022 */;
+import asyncRequire from "asyncRequire" /* 2118 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6831 */;
+import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7361 */;
+import _mod7362 from "module_7362" /* 7362 */;
+import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 7369 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5045 */;
-import GuildOnboardingStore from "GuildOnboardingStore" /* 7264 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5203 */;
+import GuildOnboardingStore from "GuildOnboardingStore" /* 7360 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let _require, c4;
 let c10;
 let c9;
 function getBaseAnimationData() {
-  return JSON.parse(JSON.stringify(_mod7266));
+  return JSON.parse(JSON.stringify(_mod7362));
 }
 let obj = function _doGuildOnboarding() {
   obj = _asyncToGenerator(async (arg0) => {
@@ -302,7 +302,7 @@ function openAndWaitForOnboarding(guildId) {
       landingAnimation: closure_13[guildId],
       isFirstOpen: true
     };
-    const pushLazyResult = obj.pushLazy(asyncRequire(7290, dependencyMap.paths), obj2, closure_8);
+    const pushLazyResult = obj.pushLazy(asyncRequire(7386, dependencyMap.paths), obj2, closure_8);
     pushLazyResult.then(() => {
       if (guildId.getGuildId() !== closure_1_0) {
         obj = closure_0(dependencyMap[20]);

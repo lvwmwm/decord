@@ -1,38 +1,39 @@
-// Module ID: 18568
-// Function ID: 18569
+// Module ID: 18961
+// Function ID: 18962
 // Name: ICYMIMediaMosaic
-// Dependencies: [32, 19, 17, 5015, 4863, 4956, 1383, 8906, 1072, 21, 5014, 575, 6051, 1092, 504, 8873, 5095, 5254, 18569, 5717, 5624, 1113, 8848, 8220, 6980, 8924, 11950, 8673, 18524, 8839, 8919, 1379, 12, 7279, 8833, 5652, 2]
+// Dependencies: [32, 19, 17, 5171, 5019, 5112, 1385, 9013, 1072, 21, 5170, 575, 6215, 1092, 504, 8980, 1652, 5402, 18962, 5874, 5783, 1113, 8955, 8323, 7076, 9031, 12148, 8777, 18914, 8946, 9026, 1380, 12, 7375, 8940, 5808, 2]
 // Exports: default
 
-// Module 18568 (ICYMIMediaMosaic)
+// Module 18961 (ICYMIMediaMosaic)
 import _mod12 from "module_12" /* 12 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import GlobalUtils from "GlobalUtils" /* 1379 */;
-import timing from "timing" /* 5254 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 7279 */;
-import openMediaModal2 from "openMediaModal" /* 8833 */;
-import MediaSourceUtil from "MediaSourceUtil" /* 8839 */;
-import common_VideoDefault from "common/Video" /* 8873 */;
-import ICYMITypes from "ICYMITypes" /* 8919 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8924 */;
-import ICYMIContext from "ICYMIContext" /* 18524 */;
-import ThumbhashUtils from "ThumbhashUtils" /* 18569 */;
+import GlobalUtils from "GlobalUtils" /* 1380 */;
+import _modDef1652 from "module_1652" /* 1652 */;
+import FastImageDefault from "FastImage" /* 5874 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 7375 */;
+import openMediaModal2 from "openMediaModal" /* 8940 */;
+import MediaSourceUtil from "MediaSourceUtil" /* 8946 */;
+import common_VideoDefault from "common/Video" /* 8980 */;
+import ICYMITypes from "ICYMITypes" /* 9026 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 9031 */;
+import ICYMIContext from "ICYMIContext" /* 18914 */;
+import ThumbhashUtils from "ThumbhashUtils" /* 18962 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import RelationshipStore from "RelationshipStore" /* 4956 */;
-import UserStore from "UserStore" /* 1383 */;
-import ICYMIStore from "ICYMIStore" /* 8906 */;
+import AccessibilityStore from "AccessibilityStore" /* 5171 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import RelationshipStore from "RelationshipStore" /* 5112 */;
+import UserStore from "UserStore" /* 1385 */;
+import ICYMIStore from "ICYMIStore" /* 9013 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let dependencyMap;
+let importDefault;
 
 let closure_12;
 let closure_14;
@@ -43,7 +44,7 @@ let hasOwnProperty;
 let map1;
 let metroRequire;
 let tmp4;
-const useChannelName = tmp4(5652);
+const useChannelName = tmp4(5808);
 function MediaMosaicVideo(source) {
   let autoplay;
   let height;
@@ -73,74 +74,85 @@ function MediaMosaicVideo(source) {
   return tmp2(tmp3, size);
 }
 function MediaMosaicImage(source) {
-  let closure_2;
+  let closure_1;
   let dimensions;
-  let imageFinishedLoading;
-  let items1;
-  let items2;
+  let first;
+  let items3;
   let items4;
+  let items6;
   let num;
-  let obj4;
+  let obj3;
   let style;
+  let tmp6;
+  let tmp7;
+  let tmp8;
   source = source.source;
   ({ dimensions, style } = source);
-  imageFinishedLoading = undefined;
-  dependencyMap = undefined;
+  importDefault = undefined;
   const isSpoiler = source.isSpoiler;
-  const tmp = closure_18();
-  [imageFinishedLoading, dependencyMap] = react.useState(false);
-  let obj = source(5095);
-  const fn = function u() {
-    let num = 1;
-    const withTiming = timing.withTiming;
-    timing;
-    if (first) {
-      num = 0;
+  let tmp = closure_18();
+  let obj = react;
+  [first, importDefault] = react.useState(false);
+  const items = [closure_20, , ];
+  const useAnimatedStyle = source(1652).useAnimatedStyle;
+  source(1652);
+  items[1] = source(5402).withTiming;
+  items[2] = first;
+  let c0;
+  let c1;
+  [tmp6, tmp7, tmp8] = items;
+  class ICYMIMediaMosaicTsx1 {
+    constructor() {
+      let num = 1;
+      const tmp = c0;
+      if (c1) {
+        num = 0;
+      }
+      const obj = { opacity: tmp(num, { duration: 150 }) };
+      return obj;
     }
-    const obj = { opacity: withTiming(num, { duration: 150 }) };
-    return obj;
-  };
-  let obj2 = { withTiming: source(5254).withTiming, imageFinishedLoading };
-  fn.__closure = obj2;
-  fn.__workletHash = 7803531897566;
-  fn.__initData = __initData;
-  const items = [source.placeholder];
-  const animatedStyle = obj.useAnimatedStyle(fn);
-  const memo = react.useMemo(() => {
+  }
+  const items1 = [tmp7, tmp8];
+  ICYMIMediaMosaicTsx1.__closure = items1;
+  ICYMIMediaMosaicTsx1.__workletHash = 7965789718407;
+  ICYMIMediaMosaicTsx1.__initData = tmp6;
+  const items2 = [source.placeholder];
+  const animatedStyle = useAnimatedStyle(ICYMIMediaMosaicTsx1);
+  const memo = obj.useMemo(() => {
     let obj2;
     if (null != source.placeholder) {
       const obj = { uri: obj2.createThumbhashImageFromPlaceholder(tmp.placeholder) };
       obj2 = ThumbhashUtils;
       return obj;
     }
-  }, items);
-  const obj3 = { style: items1, children: closure_15(imageFinishedLoading(5717), obj4) };
-  items1 = [animatedStyle, tmp.thumbhashMedia];
-  const View = imageFinishedLoading(5095).View;
-  obj4 = { source: memo, style: items2 };
-  items2 = [style, tmp.media, dimensions];
-  const items3 = [closure_15(View, obj3), ];
-  const obj5 = {
+  }, items2);
+  let obj2 = { style: items3, children: closure_15(FastImageDefault, obj3) };
+  items3 = [animatedStyle, tmp.thumbhashMedia];
+  const View = _modDef1652.View;
+  obj3 = { source: memo, style: items4 };
+  items4 = [style, tmp.media, dimensions];
+  const items5 = [closure_15(View, obj2), ];
+  const obj4 = {
     source: { uri: source.uri },
-    style: items4,
+    style: items6,
     onLoadEnd() {
-      return closure_2(true);
+      return closure_1(true);
     },
     blurRadius: num,
     fadeDuration: 0
   };
-  items4 = [tmp.media, style, dimensions];
+  items6 = [tmp.media, style, dimensions];
   num = 0;
-  const tmp6 = closure_17;
-  const tmp7 = closure_16;
-  const tmp8 = closure_15;
-  const tmp9 = imageFinishedLoading(5717);
+  const tmp11 = closure_17;
+  const tmp12 = closure_16;
+  const tmp13 = closure_15;
+  const tmp14 = FastImageDefault;
   if (isSpoiler) {
     num = 100;
   }
-  const obj6 = { children: items3 };
-  items3[1] = tmp8(tmp9, obj5, source.uri);
-  return tmp6(tmp7, obj6);
+  const obj5 = { children: items5 };
+  items5[1] = tmp13(tmp14, obj4, source.uri);
+  return tmp11(tmp12, obj5);
 }
 function Media(handlePressMedia) {
   let PlayIcon;
@@ -199,7 +211,7 @@ function Media(handlePressMedia) {
   if (isSpoiler) {
     const obj5 = { style: tmp.centerContainer, children: closure_15(closure_6, obj6) };
     obj6 = { style: tmp.spoilerText, children: closure_15(Text, obj7) };
-    obj7 = { maxFontSizeMultiplier: 1, variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: str.toUpperCase() };
+    obj7 = { maxFontSizeMultiplier: 1, variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: str.toUpperCase() };
     Text = tmp6(tmp7[20]).Text;
     const intl = tmp6(tmp7[21]).intl;
     str = intl.string(initialIndex(ref[21]).t["F+x38C"]);
@@ -600,7 +612,7 @@ const authStore5 = createStyles.createStyles(() => {
   ({ backgroundColor: nativeDefault.colors.WHITE });
   return obj;
 });
-const __initData = { code: "function ICYMIMediaMosaicTsx1(){const{withTiming,imageFinishedLoading}=this.__closure;return{opacity:withTiming(imageFinishedLoading?0:1,{duration:150})};}" };
+let closure_20 = { code: "(function ICYMIMediaMosaicTsx1(){let[withTiming,imageFinishedLoading]=this.__closure;return{opacity:withTiming(imageFinishedLoading?0:1,{duration:150})};})" };
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/icymi/native/media/ICYMIMediaMosaic.tsx");
 

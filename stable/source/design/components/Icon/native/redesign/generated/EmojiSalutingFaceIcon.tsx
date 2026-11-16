@@ -1,14 +1,14 @@
-// Module ID: 17375
-// Function ID: 17376
+// Module ID: 17736
+// Function ID: 17737
 // Name: EmojiSalutingFaceIcon
-// Dependencies: [19, 21, 575, 5716, 17376, 2]
+// Dependencies: [19, 21, 575, 5873, 17737, 2]
 // Exports: EmojiSalutingFaceIcon
 
-// Module 17375 (EmojiSalutingFaceIcon)
+// Module 17736 (EmojiSalutingFaceIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5716 */;
-import AssetRegistry from "AssetRegistry" /* 17376 */;
+import BaseIconImage2 from "BaseIconImage" /* 5873 */;
+import AssetRegistry from "AssetRegistry" /* 17737 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

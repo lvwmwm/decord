@@ -1,18 +1,18 @@
-// Module ID: 10145
-// Function ID: 10146
+// Module ID: 10298
+// Function ID: 10299
 // Name: ChatGDMCustomize
-// Dependencies: [5, 32, 19, 17, 4863, 1072, 21, 5014, 575, 5607, 504, 5652, 5612, 1409, 10146, 7485, 1113, 5712, 10147, 6980, 5624, 7082, 5634, 10149, 2]
+// Dependencies: [5, 32, 19, 17, 5019, 1072, 21, 5170, 575, 5767, 504, 5808, 5771, 1411, 10299, 7582, 1113, 5869, 10300, 7076, 5783, 7181, 5790, 10302, 2]
 
-// Module 10145 (ChatGDMCustomize)
+// Module 10298 (ChatGDMCustomize)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, maxLength;
@@ -347,7 +347,7 @@ const memoResult = react.memo(function ChatGDMCustomize(channelId) {
     if (tmp21) {
       let obj8 = { onPress: memo.clear, accessibilityRole: "button", children: tmp47(Text, obj9) };
       const PressableOpacity = tmp4(tmp3[19]).PressableOpacity;
-      obj9 = { style: tmp.iconClear, variant: "text-sm/semibold", color: "text-link", children: intl.string(tmp4(tmp3[16]).t["uY+Nk/"]) };
+      obj9 = { style: tmp.iconClear, variant: "body-sm/semibold", color: "text-link", children: intl.string(tmp4(tmp3[16]).t["uY+Nk/"]) };
       Text = tmp4(tmp3[20]).Text;
       intl = tmp4(tmp3[16]).intl;
       tmp47Result = tmp47(PressableOpacity, obj8);
@@ -375,7 +375,7 @@ const memoResult = react.memo(function ChatGDMCustomize(channelId) {
     let tmp45Result = null;
     if (null != first2) {
       const obj13 = { style: tmp.rateLimitedContainer, children: items6 };
-      const obj14 = { variant: "text-sm/semibold", color: "text-feedback-critical", children: intl4.string(tmp4(tmp3[16]).t.Whhv4w) };
+      const obj14 = { variant: "body-sm/semibold", color: "text-feedback-critical", children: intl4.string(tmp4(tmp3[16]).t.Whhv4w) };
       const Text2 = tmp4(tmp3[20]).Text;
       intl4 = tmp4(tmp3[16]).intl;
       items6 = [tmp47(Text2, obj14), ];

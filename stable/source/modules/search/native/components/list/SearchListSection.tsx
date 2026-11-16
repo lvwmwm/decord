@@ -1,15 +1,15 @@
-// Module ID: 18745
-// Function ID: 18746
+// Module ID: 19143
+// Function ID: 19144
 // Name: SearchListSection
-// Dependencies: [19, 17, 9827, 21, 5014, 5624, 2]
+// Dependencies: [19, 17, 9950, 21, 5170, 5783, 2]
 
-// Module 18745 (SearchListSection)
+// Module 19143 (SearchListSection)
 import react_native from "react-native" /* 17 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import SearchConstants from "SearchConstants" /* 9827 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import SearchConstants from "SearchConstants" /* 9950 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -25,7 +25,7 @@ const memoResult = react.memo(function SearchListSection(arg0) {
   let trailing;
   ({ title, trailing } = arg0);
   const obj = { style: closure_5().section, children: items };
-  items = [_false(Text_Text.Text, { maxFontSizeMultiplier: 2, accessibilityRole: "header", variant: "text-sm/semibold", color: "interactive-text-default", children: title }), trailing];
+  items = [_false(Text_Text.Text, { maxFontSizeMultiplier: 2, accessibilityRole: "header", variant: "body-sm/semibold", color: "interactive-text-default", children: title }), trailing];
   return React3(View, obj);
 });
 const result = size.fileFinishedImporting("modules/search/native/components/list/SearchListSection.tsx");

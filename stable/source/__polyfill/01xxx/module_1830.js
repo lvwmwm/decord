@@ -1,77 +1,81 @@
 // Module ID: 1830
 // Function ID: 1831
-// Dependencies: [1654, 1693, 1653]
-// Exports: setNativeProps
+// Dependencies: [41, 42, 1697, 1831, 1663]
 
 // Module 1830
-import react_native from "react-native" /* 1654 */;
-import clampRGBA from "clampRGBA" /* 1693 */;
-import module_1653_mod from "module_1653" /* 1653 */;
+import _createClassDefault from "_createClass" /* 42 */;
+import ReanimatedModule2 from "ReanimatedModule" /* 1663 */;
+import LayoutAnimationType from "LayoutAnimationType" /* 1697 */;
+import mutablesNative from "mutablesNative" /* 1831 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
 
-function setNativePropsFabric(fn, updates) {
-  if (globalThis._WORKLET) {
-    const tmp6 = fn();
-    const obj = clampRGBA;
-    obj.processColorsInProps(updates);
-    const items = [{ shadowNodeWrapper: tmp6, updates }];
-    const obj2 = { shadowNodeWrapper: tmp6, updates };
-    global._updatePropsFabric(items);
-  } else {
-    const logger = react_native.logger;
-    logger.warn("setNativeProps() can only be used on the UI runtime.");
-  }
-}
-let obj = { logger: react_native.logger, processColorsInProps: clampRGBA.processColorsInProps };
-setNativePropsFabric.__closure = obj;
-setNativePropsFabric.__workletHash = 13825557000530;
-setNativePropsFabric.__initData = { code: "function setNativePropsFabric_Pnpm_setNativePropsTs1(animatedRef,updates){const{logger,processColorsInProps}=this.__closure;if(!_WORKLET){logger.warn('setNativeProps() can only be used on the UI runtime.');return;}const shadowNodeWrapper=animatedRef();processColorsInProps(updates);global._updatePropsFabric([{shadowNodeWrapper:shadowNodeWrapper,updates:updates}]);}" };
-function setNativePropsPaper(viewName, updates) {
-  if (globalThis._WORKLET) {
-    let value;
-    const tmp5 = viewName();
-    if (viewName.viewName != null) {
-      value = iter.value;
+class Sensor {
+  constructor(sensorType, config) {
+    _classCallCheck(this, Sensor);
+    this.listenersNumber = 0;
+    this.sensorId = null;
+    this.sensorType = sensorType;
+    this.config = config;
+    const makeMutable = mutablesNative.makeMutable;
+    mutablesNative;
+    if (LayoutAnimationType.SensorType.ACCELEROMETER !== sensorType) {
+      if (LayoutAnimationType.SensorType.GYROSCOPE !== sensorType) {
+        if (LayoutAnimationType.SensorType.GRAVITY !== sensorType) {
+          this.data = makeMutable({ x: 0, y: 0, z: 0, interfaceOrientation: 0 });
+        }
+      }
     }
-    if (value == null) {
-      value = null;
+  }
+}
+const entry = {
+  key: "register",
+  value: function register(arg0) {
+    let config;
+    let sensorType;
+    const self = this;
+    ({ config, sensorType } = this);
+    const ReanimatedModule = ReanimatedModule2.ReanimatedModule;
+    let num = -1;
+    const registerSensor = ReanimatedModule.registerSensor;
+    if ("auto" !== config.interval) {
+      num = config.interval;
     }
-    const obj = clampRGBA;
-    obj.processColorsInProps(updates);
-    const items = [{ tag: tmp5, name: value, updates }];
-    const obj2 = { tag: tmp5, name: value, updates };
-    global._updatePropsPaper(items);
-  } else {
-    const logger = react_native.logger;
-    logger.warn("setNativeProps() can only be used on the UI runtime.");
+    self.sensorId = registerSensor(sensorType, num, config.iosReferenceFrame, arg0);
+    return -1 !== self.sensorId;
   }
-}
-let obj2 = { logger: react_native.logger, processColorsInProps: clampRGBA.processColorsInProps };
-setNativePropsPaper.__closure = obj2;
-setNativePropsPaper.__workletHash = 9895881337862;
-setNativePropsPaper.__initData = { code: "function setNativePropsPaper_Pnpm_setNativePropsTs2(animatedRef,updates){const{logger,processColorsInProps}=this.__closure;var _viewName$value,_viewName;if(!_WORKLET){logger.warn('setNativeProps() can only be used on the UI runtime.');return;}const tag=animatedRef();const name=(_viewName$value=(_viewName=animatedRef.viewName)===null||_viewName===void 0?void 0:_viewName.value)!==null&&_viewName$value!==void 0?_viewName$value:null;processColorsInProps(updates);global._updatePropsPaper([{tag:tag,name:name,updates:updates}]);}" };
-let module_1653 = module_1653_mod;
-module_1653.shouldBeUseWeb();
-module_1653 = module_1653_mod;
-if (module_1653) {
-  let setNativePropsJest;
-  if (module_1653.isJest()) {
-    setNativePropsJest = function setNativePropsJest() {
-      const logger = react_native.logger;
-      logger.warn("setNativeProps() is not supported with Jest.");
-    };
-  } else {
-    const _module2 = module_1653;
-    setNativePropsJest = _module2.isChromeDebugger() ? (function setNativePropsChromeDebugger() {
-      const logger = react_native.logger;
-      logger.warn("setNativeProps() is not supported with Chrome Debugger.");
-    }) : (function setNativePropsDefault() {
-      const logger = react_native.logger;
-      logger.warn("setNativeProps() is not supported on this configuration.");
-    });
+};
+const items = [
+  entry,
+  {
+    key: "isRunning",
+    value: function isRunning() {
+      return -1 !== this.sensorId && null !== this.sensorId;
+    }
+  },
+  {
+    key: "isAvailable",
+    value: function isAvailable() {
+      return -1 !== this.sensorId;
+    }
+  },
+  {
+    key: "getSharedValue",
+    value: function getSharedValue() {
+      return this.data;
+    }
+  },
+  {
+    key: "unregister",
+    value: function unregister() {
+      const self = this;
+      const tmp = null !== this.sensorId && -1 !== self.sensorId;
+      if (tmp) {
+        const ReanimatedModule = ReanimatedModule2.ReanimatedModule;
+        ReanimatedModule.unregisterSensor(self.sensorId);
+      }
+      self.sensorId = null;
+    }
   }
-  setNativePropsPaper = setNativePropsJest;
-} else if (module_1653.isFabric()) {
-  setNativePropsPaper = setNativePropsFabric;
-}
+];
 
-export const setNativeProps = setNativePropsPaper;
+export default _createClassDefault(Sensor, items);

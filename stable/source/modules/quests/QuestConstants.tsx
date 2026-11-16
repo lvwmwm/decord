@@ -1,17 +1,17 @@
-// Module ID: 6781
-// Function ID: 6782
+// Module ID: 6869
+// Function ID: 6870
 // Name: QuestConstants
-// Dependencies: [6782, 1089, 6783, 1282, 6784, 6788, 6789, 12, 2, 6790]
+// Dependencies: [6870, 1089, 6871, 1282, 6872, 6876, 6877, 12, 2, 6878]
 // Exports: getQuestCdnUrlBase, getQuestHomeFilterOptionItem
 
-// Module 6781 (QuestConstants)
+// Module 6869 (QuestConstants)
 import DurationsDefault from "Durations" /* 1089 */;
-import QuestVariants from "QuestVariants" /* 6782 */;
-import Quests from "Quests" /* 6783 */;
-import QuestTypes from "QuestTypes" /* 6784 */;
-import AdCreativeType from "AdCreativeType" /* 6788 */;
-import FirstPartyQuestTaskTypes from "FirstPartyQuestTaskTypes" /* 6789 */;
-import DismissibleQuestContentFlags from "DismissibleQuestContentFlags" /* 6790 */;
+import QuestVariants from "QuestVariants" /* 6870 */;
+import Quests from "Quests" /* 6871 */;
+import QuestTypes from "QuestTypes" /* 6872 */;
+import AdCreativeType from "AdCreativeType" /* 6876 */;
+import FirstPartyQuestTaskTypes from "FirstPartyQuestTaskTypes" /* 6877 */;
+import DismissibleQuestContentFlags from "DismissibleQuestContentFlags" /* 6878 */;
 import HTTPUtils_mod from "HTTPUtils" /* 1282 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
@@ -108,7 +108,6 @@ export const QuestsExperimentLocations = { ACTIVITY_PANEL: "quests_bar_activity_
 export { DismissibleQuestContentFlags_export as DismissibleQuestContentFlags };
 export { QuestVariants_export as QuestVariants };
 export const NitroQuestVariants = set;
-export const QUESTS_SETTINGS_SECTION = "inventory";
 export const CONSECUTIVE_HEARTBEAT_PERIOD_MS = result;
 export const QUEST_BAR_SPRING_CONFIG_QUEST_ACCEPTED = { tension: 900, friction: 45, clamp: true };
 export const QUEST_BAR_SPRING_CONFIG_QUEST_UNACCEPTED = { tension: 360, friction: 30, clamp: true };

@@ -1,22 +1,22 @@
-// Module ID: 19281
-// Function ID: 19282
+// Module ID: 19719
+// Function ID: 19720
 // Name: VoiceControlsToggleNuxActionSheet
-// Dependencies: [32, 19, 17, 5015, 4860, 21, 5014, 575, 8773, 504, 5272, 8873, 5624, 1113, 5634, 2]
+// Dependencies: [32, 19, 17, 5171, 5016, 21, 5170, 575, 8877, 504, 5420, 8980, 5783, 1113, 5790, 2]
 // Exports: default
 
-// Module 19281 (VoiceControlsToggleNuxActionSheet)
+// Module 19719 (VoiceControlsToggleNuxActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5016 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import AccessibilityStore from "AccessibilityStore" /* 5171 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let BottomSheet, importDefault;
+let importDefault;
 
 let c9;
 let metroImportAll;
@@ -77,14 +77,14 @@ export default function VoiceControlsToggleActionSheet(markAsDismissed) {
     },
     children: items1
   };
-  BottomSheet = tmp4(tmp5[10]).BottomSheet;
+  const BottomSheet = tmp4(tmp5[10]).BottomSheet;
   size = { style: tmp.videoContainer, src, poster: "https://cdn.discordapp.com/assets/activities/platform/activities_pipfab_tutorial_redesign.png", width: tmp3, height: tmp3 / num, muted: true, paused: stateFromStores };
   items1 = [closure_8(require("common/Video"), size), , , ];
-  const obj6 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(markAsDismissed(isScreenLandscape[13]).t.pT6hue) };
+  const obj6 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(markAsDismissed(isScreenLandscape[13]).t.pT6hue) };
   const Text = tmp4(tmp5[12]).Text;
   intl = tmp4(tmp5[13]).intl;
   items1[1] = closure_8(Text, obj6);
-  const obj7 = { style: tmp.body, variant: "text-sm/normal", children: intl2.string(markAsDismissed(isScreenLandscape[13]).t.tNm8AZ) };
+  const obj7 = { style: tmp.body, variant: "body-sm/normal", children: intl2.string(markAsDismissed(isScreenLandscape[13]).t.tNm8AZ) };
   const Text2 = tmp4(tmp5[12]).Text;
   intl2 = tmp4(tmp5[13]).intl;
   items1[2] = closure_8(Text2, obj7);

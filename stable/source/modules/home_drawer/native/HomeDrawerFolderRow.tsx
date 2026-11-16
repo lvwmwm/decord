@@ -1,23 +1,23 @@
-// Module ID: 18376
-// Function ID: 18377
+// Module ID: 18750
+// Function ID: 18751
 // Name: HomeDrawerFolderRow
-// Dependencies: [19, 17, 6886, 4885, 6772, 6775, 5679, 1072, 21, 5014, 504, 10992, 5624, 1113, 18377, 5204, 5201, 2]
+// Dependencies: [19, 17, 6974, 5041, 6860, 6863, 5835, 1072, 21, 5170, 504, 11154, 5783, 1113, 18751, 5352, 5349, 2]
 // Exports: default
 
-// Module 18376 (HomeDrawerFolderRow)
+// Module 18750 (HomeDrawerFolderRow)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import BellSlashIcon2 from "BellSlashIcon" /* 10992 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import BellSlashIcon2 from "BellSlashIcon" /* 11154 */;
 import react from "react" /* 19 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6886 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import SortedGuildStore from "SortedGuildStore" /* 6772 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6775 */;
-import VoiceStateStore from "VoiceStateStore" /* 5679 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6974 */;
+import GuildStore from "GuildStore" /* 5041 */;
+import SortedGuildStore from "SortedGuildStore" /* 6860 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6863 */;
+import VoiceStateStore from "VoiceStateStore" /* 5835 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -171,7 +171,7 @@ function Wrapper(folder) {
     }
     const obj = { style: closure_1.title, children: items };
     items = [unpackModuleId(BellSlashIcon, { size: "xs" }), ];
-    const obj2 = { variant: "text-md/medium", style: closure_1.titleText, lineClamp: 1, color: "text-default", children: folderName };
+    const obj2 = { variant: "body-md/medium", style: closure_1.titleText, lineClamp: 1, color: "text-default", children: folderName };
     folderName = folder.folderName;
     const Text = Text_Text.Text;
     const tmp3 = authStore2;
@@ -201,7 +201,7 @@ function Wrapper(folder) {
     }
     const items7 = [tmp14, str];
     const memo2 = obj.useMemo(() => {
-      const obj = { variant: "text-xs/medium", color, lineClamp: 1, children: formatResult3 };
+      const obj = { variant: "body-xs/medium", color, lineClamp: 1, children: formatResult3 };
       return unpackModuleId(Text_Text.Text, obj);
     }, items7);
     const obj10 = { title: memo1, subtitle: tmp20 };
@@ -258,7 +258,7 @@ export default function HomeDrawerFolderExpandedChildren(folderId) {
     }
     return guildFolderById;
   });
-  const MobileHomeDrawerExperiment = folderId(5204).MobileHomeDrawerExperiment;
+  const MobileHomeDrawerExperiment = folderId(5352).MobileHomeDrawerExperiment;
   const enableHome = MobileHomeDrawerExperiment.useConfig({ location: "folder-expanded-children" }).enableHome;
   let tmp3 = null;
   if (null != stateFromStores) {

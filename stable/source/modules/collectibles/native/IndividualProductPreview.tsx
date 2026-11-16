@@ -1,23 +1,23 @@
-// Module ID: 15027
-// Function ID: 15028
+// Module ID: 15335
+// Function ID: 15336
 // Name: IndividualProductPreview
-// Dependencies: [19, 17, 1074, 21, 5014, 575, 5587, 8749, 11392, 11506, 15028, 15029, 1987, 1075, 15030, 15033, 2]
+// Dependencies: [19, 17, 1074, 21, 5170, 575, 5747, 8853, 11565, 11683, 15336, 15337, 2111, 1075, 15338, 15341, 2]
 // Exports: IndividualProductPreview
 
-// Module 15027 (IndividualProductPreview)
+// Module 15335 (IndividualProductPreview)
 import nativeDefault from "native" /* 575 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1987 */;
-import LinearGradientDefault from "LinearGradient" /* 5587 */;
-import useCurrentUser from "useCurrentUser" /* 8749 */;
-import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 11392 */;
-import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 11506 */;
-import AvatarDecorationProductPreviewDefault from "AvatarDecorationProductPreview" /* 15028 */;
-import NameplateProductPreviewDefault from "NameplateProductPreview" /* 15029 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 2111 */;
+import LinearGradientDefault from "LinearGradient" /* 5747 */;
+import useCurrentUser from "useCurrentUser" /* 8853 */;
+import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 11565 */;
+import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 11683 */;
+import AvatarDecorationProductPreviewDefault from "AvatarDecorationProductPreview" /* 15336 */;
+import NameplateProductPreviewDefault from "NameplateProductPreview" /* 15337 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -151,11 +151,11 @@ export function IndividualProductPreview(arg0) {
     let tmp5;
     const ALL = tmp(1075).FractionalPremiumSKUsSets.ALL;
     if (ALL.has(product.skuId)) {
-      tmp5 = metroImportDefault(tmp(15030).FractionalNitroPreview, {});
+      tmp5 = metroImportDefault(tmp(15338).FractionalNitroPreview, {});
     } else {
       tmp5 = null;
       if (product.skuId === hasOwnProperty.ORB_PROFILE_BADGE) {
-        tmp5 = metroImportDefault(tmp(15033).OrbBadgePreview, {});
+        tmp5 = metroImportDefault(tmp(15341).OrbBadgePreview, {});
       }
     }
     return tmp5;

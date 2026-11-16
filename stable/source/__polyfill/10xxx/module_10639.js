@@ -1,56 +1,72 @@
 // Module ID: 10639
 // Function ID: 10640
-// Dependencies: [19, 21, 1650]
-// Exports: GlobalStateProvider, useGlobalState
+// Dependencies: [41, 42, 93, 95, 98, 10499]
 
 // Module 10639
-import Fragment from "Fragment" /* 21 */;
-import _mod1650 from "module_1650" /* 1650 */;
-import react from "react" /* 19 */;
+import _mod10499 from "module_10499" /* 10499 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import map from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-const jsx = Fragment.jsx;
-let context = react.createContext({});
-const __initData = { code: "function pnpm_indexTsx1(index,dimensions){const{itemDimensions}=this.__closure;itemDimensions.value={...itemDimensions.value,[index]:dimensions};}" };
-const __initData2 = { code: "function pnpm_indexTsx2(dimensions){const{containerSize}=this.__closure;containerSize.value=dimensions;}" };
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
-export const GlobalStateContext = context;
-export const GlobalStateProvider = (arg0) => {
-  let children;
-  let value;
-  ({ children, value } = arg0);
-  let obj = _mod1650;
-  const sharedValue = obj.useSharedValue({ width: 0, height: 0 });
-  const obj2 = _mod1650;
-  const sharedValue1 = obj2.useSharedValue({});
-  const fn = function c(arg0, arg1) {
-    const obj = {};
-    const merged = Object.assign(sharedValue1.value);
-    obj[arg0] = arg1;
-    sharedValue1.value = obj;
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
+  }
+}
+let fn = this;
+if (this) {
+  fn = this.__importDefault;
+}
+if (!fn) {
+  fn = (__esModule) => {
+    let tmp2;
+    const tmp = __esModule;
+    if (!tmp) {
+      tmp2 = { default: __esModule };
+      const obj = { default: __esModule };
+    } else {
+      tmp2 = __esModule;
+    }
+    return tmp2;
   };
-  fn.__closure = { itemDimensions: sharedValue1 };
-  fn.__workletHash = 9846581158902;
-  fn.__initData = __initData;
-  const fn2 = function _(value) {
-    sharedValue.value = value;
-  };
-  fn2.__closure = { containerSize: sharedValue };
-  fn2.__workletHash = 5978604737778;
-  fn2.__initData = __initData2;
-  const Provider = context.Provider;
-  const obj4 = { layout: { containerSize: sharedValue, itemDimensions: sharedValue1, updateItemDimensions: fn, updateContainerSize: fn2 } };
-  let merged = Object.assign(value);
-  return <Provider value={obj4}>{children}</Provider>;
-};
-export const useGlobalState = function() {
-  context = react.useContext(context);
-  if (context) {
-    return context;
-  } else {
-    const _Error = Error;
+}
+class UKMergeDateTimeRefiner {
+  constructor() {
+    let constructResult;
     const self = this;
-    const self2 = this;
-    const error = new Error("useGlobalState must be used within a GlobalStateProvider");
-    throw error;
+    _classCallCheck(this, UKMergeDateTimeRefiner);
+    const obj = _getPrototypeOf(UKMergeDateTimeRefiner);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = map;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(UKMergeDateTimeRefiner, fn(_mod10499).default);
+const entry = {
+  key: "patternBetween",
+  value: function patternBetween() {
+    const regExp = new RegExp("^\\s*(T|\u0432|\u0443|\u043E|,|-)?\\s*$");
+    return regExp;
   }
 };
+const items = [entry];
+
+export default _createClass(UKMergeDateTimeRefiner, items);

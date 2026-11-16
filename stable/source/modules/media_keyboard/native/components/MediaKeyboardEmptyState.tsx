@@ -1,24 +1,24 @@
-// Module ID: 10555
-// Function ID: 10556
+// Module ID: 10706
+// Function ID: 10707
 // Name: MediaKeyboardEmptyState
-// Dependencies: [19, 17, 7940, 21, 5014, 575, 5717, 5624, 5634, 7561, 1113, 10556, 10550, 10557, 2]
+// Dependencies: [19, 17, 8042, 21, 5170, 575, 5874, 5783, 5790, 7666, 1113, 10707, 10701, 10708, 2]
 // Exports: getMediaEmptyStateComponentOrNull
 
-// Module 10555 (MediaKeyboardEmptyState)
+// Module 10706 (MediaKeyboardEmptyState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import SettingsIcon from "SettingsIcon" /* 7561 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7940 */;
-import CameraIcon from "CameraIcon" /* 10550 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10556 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 10557 */;
+import Text_Text from "Text/Text" /* 5783 */;
+import components_Button_Button from "components/Button/Button" /* 5790 */;
+import FastImageDefault from "FastImage" /* 5874 */;
+import SettingsIcon from "SettingsIcon" /* 7666 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 8042 */;
+import CameraIcon from "CameraIcon" /* 10701 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10707 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10708 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -37,7 +37,7 @@ class MediaKeyboardEmptyState {
     const tmp = closure_7();
     const obj = { style: tmp.container, children: items };
     items = [hasOwnProperty(FastImageDefault, { source: imageSource }), , ];
-    const obj2 = { variant: "text-sm/semibold", color: "text-muted", style: tmp.label, children: label };
+    const obj2 = { variant: "body-sm/semibold", color: "text-muted", style: tmp.label, children: label };
     items[1] = hasOwnProperty(Text_Text.Text, obj2);
     items[2] = hasOwnProperty(components_Button_Button.Button, { icon: actionIcon, size: "sm", text: actionLabel, onPress: actionPress });
     return metroRequire(View, obj);

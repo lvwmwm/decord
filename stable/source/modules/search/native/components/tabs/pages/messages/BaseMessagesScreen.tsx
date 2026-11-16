@@ -1,19 +1,19 @@
-// Module ID: 18776
-// Function ID: 18777
+// Module ID: 19174
+// Function ID: 19175
 // Name: BaseMessagesScreen
-// Dependencies: [19, 6863, 13900, 9826, 21, 13907, 504, 13893, 18765, 18777, 13886, 18778, 18779, 13891, 18698, 18710, 2]
+// Dependencies: [19, 6951, 14166, 9949, 21, 14173, 504, 14159, 19163, 19175, 14152, 19176, 19177, 14157, 19096, 19108, 2]
 // Exports: default, trackMessageItemPress
 
-// Module 18776 (BaseMessagesScreen)
+// Module 19174 (BaseMessagesScreen)
 import Fragment from "Fragment" /* 21 */;
-import TrackingConstants from "TrackingConstants" /* 9826 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13886 */;
-import SearchUtils from "SearchUtils" /* 13893 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13907 */;
-import SearchHistoricalIndexingHeaderDefault from "SearchHistoricalIndexingHeader" /* 18778 */;
+import TrackingConstants from "TrackingConstants" /* 9949 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 14152 */;
+import SearchUtils from "SearchUtils" /* 14159 */;
+import TrackingDefault from "Tracking" /* 14173 */;
+import SearchHistoricalIndexingHeaderDefault from "SearchHistoricalIndexingHeader" /* 19176 */;
 import react from "react" /* 19 */;
-import SearchMessageStore from "SearchMessageStore" /* 6863 */;
-import SearchQueryStore from "SearchQueryStore" /* 13900 */;
+import SearchMessageStore from "SearchMessageStore" /* 6951 */;
+import SearchQueryStore from "SearchQueryStore" /* 14166 */;
 import size from "module_2" /* 2 */;
 
 const constants = TrackingConstants.SearchResultContentEntityTypes;
@@ -146,7 +146,7 @@ export function trackMessageItemPress(messageId) {
   const message = SearchMessageStore.getMessage(messageId);
   const obj = { searchContext, channelId, messageId, userId: id, index, entityType: constants.MESSAGE };
   id = undefined;
-  const trackSearchResultClicked = search_tracking_TrackingDefault.trackSearchResultClicked;
+  const trackSearchResultClicked = TrackingDefault.trackSearchResultClicked;
   if (message != null) {
     const author = message.author;
     if (author != null) {

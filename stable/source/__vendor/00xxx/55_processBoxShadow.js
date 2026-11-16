@@ -7,8 +7,8 @@
 // Module 55 (processBoxShadow)
 import processColorDefault from "processColor" /* 50 */;
 
-function parseLength(arg0) {
-  const match = re4.exec(arg0);
+function parseLength(blurRadius) {
+  const match = re4.exec(blurRadius);
   if (match) {
     let tmp6;
     const _parseFloat = parseFloat;

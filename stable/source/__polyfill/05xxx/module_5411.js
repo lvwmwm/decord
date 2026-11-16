@@ -1,55 +1,198 @@
 // Module ID: 5411
 // Function ID: 5412
-// Dependencies: [5371, 5308, 5346]
-// Exports: useComposedGesture
+// Dependencies: [5, 5412, 5413]
 
 // Module 5411
-let handlerTags;
+import HapticFeedbackTypes from "HapticFeedbackTypes" /* 5412 */;
+import react_nativeDefault from "react-native" /* 5413 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 
+const require = globalThis.__r;
+let c0, c1;
 
-export function useComposedGesture(type) {
-  const substr = [...arguments].slice();
-  const flatMapResult = substr.flatMap((handlerTags) => {
-    const obj = substr(dependencyMap[0]);
-    if (obj.isComposedGesture(handlerTags)) {
-      handlerTags = handlerTags.handlerTags;
-    } else {
-      handlerTags = [handlerTags.handlerTag];
+let closure_4 = { [require(5412).HapticFeedbackTypes.impactLight]: 0.3, [require(5412).HapticFeedbackTypes.impactMedium]: 0.6, [require(5412).HapticFeedbackTypes.impactHeavy]: 0.8, [require(5412).HapticFeedbackTypes.rigid]: 1, [require(5412).HapticFeedbackTypes.soft]: 0.1, [require(5412).HapticFeedbackTypes.selection]: 0.3 };
+let closure_5 = { enableVibrateFallback: false, ignoreAndroidSystemSettings: false };
+let c6 = true;
+
+export default {
+  setEnabled(arg0) {
+    c6 = arg0;
+  },
+  isEnabled() {
+    return c6;
+  },
+  trigger() {
+    let selection = arg0;
+    if (arg0 === undefined) {
+      selection = HapticFeedbackTypes.HapticFeedbackTypes.selection;
     }
-    return handlerTags;
-  });
-  let tmp2 = substr;
-  let obj = substr(5371);
-  if (obj.containsDuplicates(flatMapResult)) {
-    const _Error2 = Error;
-    const self3 = this;
-    const self4 = this;
-    const tmp2Result = tmp2(5308);
-    const error = new Error(tmp2Result.tagMessage("Each gesture can be used only once in the gesture composition."));
-    throw error;
-  } else {
-    const obj2 = { shouldUseReanimatedDetector: substr.some((config) => config.config.shouldUseReanimatedDetector), dispatchesAnimatedEvents: substr.some((config) => config.config.dispatchesAnimatedEvents) };
-    if (obj2.shouldUseReanimatedDetector) {
-      if (obj2.dispatchesAnimatedEvents) {
-        const _Error = Error;
-        const self = this;
-        const self2 = this;
-        const tmp2Result2 = tmp2(5308);
-        const error1 = new Error(tmp2Result2.tagMessage("Composed gestures cannot use both Reanimated and Animated events at the same time."));
-        throw error1;
+    let obj = arg1;
+    if (arg1 === undefined) {
+      obj = {};
+    }
+    const tmp3 = c6;
+    if (tmp3) {
+      try {
+        const obj2 = {};
+        const trigger = react_nativeDefault.trigger;
+        react_nativeDefault;
+        const merged = Object.assign(closure_5);
+        const merged1 = Object.assign(obj);
+        trigger(selection, obj2);
+      } catch (tmp14) {
+        const _console = console;
+        console.warn("RNReactNativeHapticFeedback: trigger failed \u2013", tmp14);
       }
     }
-    const Reanimated = tmp2(5346).Reanimated;
-    let composedEventHandler;
-    if (Reanimated != null) {
-      composedEventHandler = Reanimated.useComposedEventHandler(substr.map((detectorCallbacks) => detectorCallbacks.detectorCallbacks.reanimatedEventHandler || null));
+  },
+  stop() {
+    const tmp = c6;
+    if (tmp) {
+      try {
+        const obj = react_nativeDefault;
+        obj.stop();
+      } catch (tmp5) {
+        const _console = console;
+        console.warn("RNReactNativeHapticFeedback: stop failed \u2013", tmp5);
+      }
     }
-    const found = substr.filter((detectorCallbacks) => undefined !== detectorCallbacks.detectorCallbacks.animatedEventHandler);
-    let animatedEventHandler;
-    if (found.length > 0) {
-      animatedEventHandler = found[0].detectorCallbacks.animatedEventHandler;
+  },
+  isSupported() {
+    try {
+      const obj = react_nativeDefault;
+      return obj.isSupported();
+    } catch (err) {
+      return false;
     }
-    const obj3 = { handlerTags: flatMapResult, type, config: obj2, detectorCallbacks: obj4, externalSimultaneousHandlers: [], gestures: substr };
-    return obj3;
+  },
+  triggerPattern(arg0) {
+    let obj = arg1;
+    if (arg1 === undefined) {
+      obj = {};
+    }
+    const tmp = c6;
+    if (tmp) {
+      try {
+        const obj2 = {};
+        const triggerPattern = react_nativeDefault.triggerPattern;
+        react_nativeDefault;
+        const merged = Object.assign(closure_5);
+        const merged1 = Object.assign(obj);
+        triggerPattern(arg0, obj2);
+      } catch (tmp13) {
+        const _console = console;
+        console.warn("RNReactNativeHapticFeedback: triggerPattern failed \u2013", tmp13);
+      }
+    }
+  },
+  playAHAP(arg0) {
+    const tmp = c6;
+    if (tmp) {
+      try {
+        const obj = react_nativeDefault;
+        return obj.playAHAP(arg0);
+      } catch (err) {
+        return Promise.resolve();
+      }
+    } else {
+      return Promise.resolve();
+    }
+  },
+  impact() {
+    let impactMedium = arg0;
+    if (arg0 === undefined) {
+      impactMedium = HapticFeedbackTypes.HapticFeedbackTypes.impactMedium;
+    }
+    let obj = arg2;
+    if (arg2 === undefined) {
+      obj = {};
+    }
+    const tmp3 = c6;
+    if (tmp3) {
+      let num2 = closure_4[impactMedium];
+      if (num2 == null) {
+        num2 = 0.5;
+      }
+      const _Math = Math;
+      const _Math2 = Math;
+      try {
+        const items = [{ time: 0, intensity: tmp7, sharpness: num2 }];
+        const obj2 = { time: 0, intensity: tmp7, sharpness: num2 };
+        const obj3 = {};
+        const triggerPattern = react_nativeDefault.triggerPattern;
+        react_nativeDefault;
+        const merged = Object.assign(closure_5);
+        const merged1 = Object.assign(obj);
+        triggerPattern(items, obj3);
+      } catch (tmp18) {
+        const _console = console;
+        console.warn("RNReactNativeHapticFeedback: impact failed \u2013", tmp18);
+      }
+    }
+  },
+  getSystemHapticStatus() {
+    return (async (arg0, value) => {
+      let obj4;
+      if (c0 === 2) {
+        c0 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp2 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        let c2;
+        try {
+          c0 = 2;
+          if (0 === c1) {
+            if (arg0 === 1) {
+              c0 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c0 = 3;
+              const obj3 = { value, done: true };
+              return obj3;
+            } else {
+              c2 = 1;
+              c1 = 2;
+              c0 = 1;
+              const obj5 = { value: obj4.getSystemHapticStatus(), done: false };
+              obj4 = react_nativeDefault;
+              return obj5;
+            }
+          } else if (1 === tmp3) {
+            c2 = 0;
+            c0 = 3;
+            const obj6 = { value: { vibrationEnabled: false, ringerMode: null }, done: true };
+            return obj6;
+          } else if (arg0 === 1) {
+            c0 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c2 = 0;
+            c0 = 3;
+            const obj7 = { value, done: true };
+            return obj7;
+          } else {
+            c2 = 0;
+            c0 = 3;
+            const obj = { value, done: true };
+            return obj;
+          }
+        } catch (tmp6) {
+          if (0 === c2) {
+            c0 = 3;
+            throw tmp6;
+          } else {
+            c1 = 1;
+          }
+        }
+      }
+    })();
   }
-}
+};

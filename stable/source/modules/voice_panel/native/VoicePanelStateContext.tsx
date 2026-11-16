@@ -1,18 +1,18 @@
-// Module ID: 11222
-// Function ID: 11223
+// Module ID: 11394
+// Function ID: 11395
 // Name: VoicePanelStateContext
-// Dependencies: [19, 11223, 11221, 11224, 7242, 11225, 1627, 11231, 2]
+// Dependencies: [19, 11395, 11393, 11396, 7338, 11397, 1629, 11403, 2]
 
-// Module 11222 (VoicePanelStateContext)
-import SafeAreaConstants from "SafeAreaConstants" /* 1627 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11223 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 11224 */;
-import VoicePanelCardLayoutManagerDefault from "VoicePanelCardLayoutManager" /* 11225 */;
-import VoicePanelPIPHandoffDefault from "VoicePanelPIPHandoff" /* 11231 */;
+// Module 11394 (VoicePanelStateContext)
+import SafeAreaConstants from "SafeAreaConstants" /* 1629 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11395 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 11396 */;
+import VoicePanelCardLayoutManagerDefault from "VoicePanelCardLayoutManager" /* 11397 */;
+import VoicePanelPIPHandoffDefault from "VoicePanelPIPHandoff" /* 11403 */;
 import react from "react" /* 19 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11221 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11393 */;
 import "ReanimatedHelperTypes";
-import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 7242 */;
+import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 7338 */;
 import size from "module_2" /* 2 */;
 
 let CONTROLS_HEIGHT;
@@ -25,7 +25,7 @@ const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
 ({ CONTROLS_HEIGHT, VoicePanelControlsModes } = VoicePanelControlsConstants);
 const obj = {
   channelId: "context-not-initialized",
-  channelType: "ind",
+  channelType: "e",
   connected: ReanimatedHelperTypes.createFakeSharedValue(false),
   contentDimensions: ReanimatedHelperTypes.createFakeSharedValue({ width: 0, height: 0 }),
   controlsSpecs: ReanimatedHelperTypes.createFakeSharedValue(obj2),
@@ -41,6 +41,8 @@ const obj = {
   dockMinimizeProgress: ReanimatedHelperTypes.createFakeSharedValue(0),
   dockPressProgress: ReanimatedHelperTypes.createFakeSharedValue(0),
   dockPressed: ReanimatedHelperTypes.createFakeSharedValue(false),
+  dockPTTPortalHostName: null,
+  dockPTTMeasureHostRef: { current: null },
   dismissToPIPGestureRef: { current: "r" },
   dragScrolling: ReanimatedHelperTypes.createFakeSharedValue(false),
   focused: ReanimatedHelperTypes.createFakeSharedValue(null),

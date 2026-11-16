@@ -1,18 +1,18 @@
-// Module ID: 16462
-// Function ID: 16463
+// Module ID: 16809
+// Function ID: 16810
 // Name: showInvalidProfileUpdateToastNative
-// Dependencies: [5712, 2]
+// Dependencies: [5869, 2]
 // Exports: showGenericGuildProfileUpdateFailureToast, showGenericProfileUpdateFailureToast
 
-// Module 16462 (showInvalidProfileUpdateToastNative)
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
+// Module 16809 (showInvalidProfileUpdateToastNative)
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5869 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_settings/profiles/native/showInvalidProfileUpdateToastNative.tsx");
 
-export function showGenericProfileUpdateFailureToast(intl2) {
+export function showGenericProfileUpdateFailureToast(text) {
   const obj = ToastActionCreatorsDefault;
-  const obj2 = { text: intl2, variant: "critical" };
+  const obj2 = { text, variant: "critical" };
   obj.open("USER_SETTINGS_UPDATE_FAILURE", obj2);
 }
 export function showGenericGuildProfileUpdateFailureToast(intl2) {

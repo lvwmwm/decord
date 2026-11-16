@@ -1,82 +1,113 @@
 // Module ID: 13125
 // Function ID: 13126
-// Dependencies: [13050, 13053, 13082, 13068, 13081, 13102, 13072, 13073, 13059, 13090, 13067, 13066, 13054]
-// Exports: getTraceData
+// Dependencies: [13082, 13126]
 
 // Module 13125
-import _mod13059 from "module_13059" /* 13059 */;
-import _mod13066 from "module_13066" /* 13066 */;
-import BAGGAGE_HEADER_NAME from "BAGGAGE_HEADER_NAME" /* 13067 */;
-import _mod13072 from "module_13072" /* 13072 */;
-import _mod13073 from "module_13073" /* 13073 */;
-import _mod13081 from "module_13081" /* 13081 */;
-import _mod13090 from "module_13090" /* 13090 */;
-import _mod13102 from "module_13102" /* 13102 */;
-import registerSpanErrorInstrumentation from "module_13050" /* 13050 */;
-import "module_13053";
-import DEBUG_BUILD from "module_13082" /* 13082 */;
-import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 13068 */;
+import tokenize from "tokenize" /* 13082 */;
+import tokenize2 from "tokenize" /* 13126 */;
 
-
-export function getTraceData() {
-  let sampled;
-  let spanId;
-  let traceId;
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
+let obj2;
+function consumeRaw(arg0) {
+  return this.Raw(arg0, tokenize2.mode.leftCurlyBracketOrSemicolon, true);
+}
+function isDeclarationBlockAtrule() {
+  const scanner = this.scanner;
+  let lookupTypeResult = scanner.lookupType(1);
+  let num = 1;
+  if (lookupTypeResult) {
+    while (lookupTypeResult !== RightCurlyBracket) {
+      if (lookupTypeResult !== LeftCurlyBracket) {
+        if (lookupTypeResult !== AtKeyword) {
+          let sum = num + 1;
+          let scanner2 = this.scanner;
+          lookupTypeResult = scanner2.lookupType(sum);
+          num = sum;
+        }
+      }
+      let flag = false;
+      return false;
+    }
+    return true;
   }
-  const obj2 = _mod13081;
-  const client = obj2.getClient();
-  const obj3 = _mod13102;
-  if (obj3.isEnabled()) {
-    if (client) {
-      const tmpResult = _mod13072;
-      const mainCarrier = tmpResult.getMainCarrier();
-      const tmpResult8 = _mod13073;
-      const asyncContextStrategy = tmpResult8.getAsyncContextStrategy(mainCarrier);
-      if (asyncContextStrategy.getTraceData) {
-        return asyncContextStrategy.getTraceData(obj);
+  return false;
+}
+const AtKeyword = tokenize.TYPE.AtKeyword;
+const Semicolon = tokenize.TYPE.Semicolon;
+const LeftCurlyBracket = tokenize.TYPE.LeftCurlyBracket;
+const RightCurlyBracket = tokenize.TYPE.RightCurlyBracket;
+let obj = {
+  name: "Atrule",
+  structure: obj2,
+  parse() {
+    let AtrulePrelude;
+    let parseWithFallback;
+    let tmp13;
+    const self = this;
+    const tokenStart = this.scanner.tokenStart;
+    this.eat(AtKeyword);
+    const scanner = this.scanner;
+    const str = scanner.substrToCursor(tokenStart + 1);
+    const formatted = str.toLowerCase();
+    const scanner2 = this.scanner;
+    scanner2.skipSC();
+    let tmp7 = null;
+    const tmp4 = false === this.scanner.eof && self.scanner.tokenType !== LeftCurlyBracket && self.scanner.tokenType !== Semicolon;
+    if (tmp4) {
+      let callResult;
+      if (self.parseAtrulePrelude) {
+        ({ AtrulePrelude, parseWithFallback } = self);
+        const element = parseWithFallback(AtrulePrelude.bind(self, str), consumeRaw);
+        callResult = element;
+        const tmp10 = "AtrulePrelude" === element.type && null === element.children.head;
+        if (tmp10) {
+          callResult = null;
+        }
       } else {
-        let spanToTraceHeaderResult;
-        let dynamicSamplingContextFromSpan;
-        let obj5;
-        const tmpResult9 = _mod13081;
-        const currentScope = tmpResult9.getCurrentScope();
-        let span = obj.span;
-        if (!span) {
-          const tmpResult10 = _mod13059;
-          span = tmpResult10.getActiveSpan();
+        callResult = consumeRaw.call(self, self.scanner.tokenIndex);
+      }
+      const scanner3 = self.scanner;
+      scanner3.skipSC();
+      tmp7 = callResult;
+    }
+    const tokenType = self.scanner.tokenType;
+    if (Semicolon === tokenType) {
+      const iter = self.scanner;
+      iter.next();
+      tmp13 = null;
+    } else {
+      tmp13 = null;
+      if (LeftCurlyBracket === tokenType) {
+        const atrule = self.atrule;
+        if (atrule.hasOwnProperty(formatted)) {
+          let callResult1;
+          if (typeof self.atrule[formatted].block === "function") {
+            const block = self.atrule[formatted].block;
+            callResult1 = block.call(self);
+          }
+          tmp13 = callResult1;
         }
-        if (span) {
-          const tmpResult11 = _mod13059;
-          spanToTraceHeaderResult = tmpResult11.spanToTraceHeader(span);
-        } else {
-          const propagationContext = currentScope.getPropagationContext();
-          ({ traceId, sampled, spanId } = propagationContext);
-          const tmpResult12 = _mod13066;
-          spanToTraceHeaderResult = tmpResult12.generateSentryTraceHeader(traceId, spanId, sampled);
-        }
-        const tmpResult13 = _mod13090;
-        if (span) {
-          dynamicSamplingContextFromSpan = tmpResult13.getDynamicSamplingContextFromSpan(span);
-        } else {
-          dynamicSamplingContextFromSpan = tmpResult13.getDynamicSamplingContextFromScope(client, currentScope);
-        }
-        const tmpResult14 = BAGGAGE_HEADER_NAME;
-        const result = tmpResult14.dynamicSamplingContextToSentryBaggageHeader(dynamicSamplingContextFromSpan);
-        const TRACEPARENT_REGEXP = tmp(13066).TRACEPARENT_REGEXP;
-        if (TRACEPARENT_REGEXP.test(spanToTraceHeaderResult)) {
-          obj5 = { "sentry-trace": spanToTraceHeaderResult, baggage: result };
-          const obj4 = { "sentry-trace": spanToTraceHeaderResult, baggage: result };
-        } else {
-          const logger = tmp(13054).logger;
-          logger.warn("Invalid sentry-trace data. Cannot generate trace data");
-          obj5 = {};
-        }
-        return obj5;
+        callResult1 = self.Block(isDeclarationBlockAtrule.call(self));
       }
     }
-  }
-  return {};
-}
+    const obj = { type: "Atrule", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: str, prelude: tmp7, block: tmp13 };
+    return obj;
+  },
+  generate(name) {
+    const self = this;
+    this.chunk("@");
+    this.chunk(name.name);
+    if (null !== name.prelude) {
+      self.chunk(" ");
+      self.node(name.prelude);
+    }
+    if (name.block) {
+      self.node(name.block);
+    } else {
+      self.chunk(";");
+    }
+  },
+  walkContext: "atrule"
+};
+obj2 = { name: String, prelude: ["AtrulePrelude", "Raw", null], block: ["Block", null] };
+
+export default obj;
