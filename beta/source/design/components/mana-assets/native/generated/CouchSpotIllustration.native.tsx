@@ -1,26 +1,26 @@
-// Module ID: 11955
-// Function ID: 11956
+// Module ID: 12791
+// Function ID: 12792
 // Name: CouchSpotIllustration
-// Dependencies: [19, 21, 11956, 11957, 11958, 7168, 5874, 2]
+// Dependencies: [19, 21, 12792, 12793, 12794, 7755, 6010, 2]
 // Exports: CouchSpotIllustration
 
-// Module 11955 (CouchSpotIllustration)
+// Module 12791 (CouchSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 7168 */;
-import _modDef11956 from "module_11956" /* 11956 */;
-import _modDef11957 from "module_11957" /* 11957 */;
-import _modDef11958 from "module_11958" /* 11958 */;
+import react_native from "react-native" /* 7755 */;
+import _modDef12792 from "module_12792" /* 12792 */;
+import _modDef12793 from "module_12793" /* 12793 */;
+import _modDef12794 from "module_12794" /* 12794 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef11956 };
+let obj2 = { uri: _modDef12792 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef11957 };
+let obj3 = { uri: _modDef12793 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef11958 };
-({ uri: _modDef11958 });
+obj[3] = { uri: _modDef12794 };
+({ uri: _modDef12794 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/CouchSpotIllustration.native.tsx");
 

@@ -1,16 +1,16 @@
-// Module ID: 12121
-// Function ID: 12122
+// Module ID: 12985
+// Function ID: 12986
 // Name: GoLiveAutoQualityExperiment
-// Dependencies: [1246, 6107, 6025, 1450, 504, 510, 8011, 2]
+// Dependencies: [1246, 6243, 6161, 1453, 504, 510, 6852, 2]
 // Exports: getGoLiveAutoQualityExperimentConfig, maybeMigrateToAutoQuality, useGoLiveAutoQualityExperimentConfig
 
-// Module 12121 (GoLiveAutoQualityExperiment)
+// Module 12985 (GoLiveAutoQualityExperiment)
 import Storage3 from "Storage" /* 510 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 6025 */;
-import StreamActionCreators from "StreamActionCreators" /* 8011 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 6161 */;
+import StreamActionCreators from "StreamActionCreators" /* 6852 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
-import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 6107 */;
-import ApexExperiment from "apex/ApexExperiment" /* 1450 */;
+import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 6243 */;
+import ApexExperiment from "apex/ApexExperiment" /* 1453 */;
 import size from "module_2" /* 2 */;
 
 let obj3;

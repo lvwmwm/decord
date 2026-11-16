@@ -1,14 +1,14 @@
-// Module ID: 14306
-// Function ID: 14307
+// Module ID: 14892
+// Function ID: 14893
 // Name: ChatInputGuardGuildCommunicationDisabled
-// Dependencies: [19, 5084, 21, 14307, 14293, 13547, 1113, 2]
+// Dependencies: [19, 5220, 21, 14893, 14878, 14157, 1113, 2]
 
-// Module 14306 (ChatInputGuardGuildCommunicationDisabled)
+// Module 14892 (ChatInputGuardGuildCommunicationDisabled)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1113 */;
-import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 5084 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 14293 */;
-import useCommunicationDisabledCountdownCleanup from "useCommunicationDisabledCountdownCleanup" /* 14307 */;
+import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 5220 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 14878 */;
+import useCommunicationDisabledCountdownCleanup from "useCommunicationDisabledCountdownCleanup" /* 14893 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

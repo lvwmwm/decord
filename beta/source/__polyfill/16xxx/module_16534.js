@@ -1,19 +1,9 @@
 // Module ID: 16534
 // Function ID: 16535
-// Dependencies: [16486, 16493]
+// Dependencies: [16532]
 
 // Module 16534
-import _mod16486 from "module_16486" /* 16486 */;
-import _mod16493 from "module_16493" /* 16493 */;
+import _mod16532 from "module_16532" /* 16532 */;
 
-let closure_2 = _mod16486("keys");
 
-export default (arg0) => {
-  let tmp2 = closure_2[arg0];
-  if (!tmp2) {
-    const tmp5 = _mod16493(arg0);
-    tmp[arg0] = tmp5;
-    tmp2 = tmp5;
-  }
-  return tmp2;
-};
+export default (arg0, arg1) => _mod16532(arg0, arg1, true);

@@ -1,21 +1,21 @@
-// Module ID: 20427
-// Function ID: 20428
+// Module ID: 20757
+// Function ID: 20758
 // Name: GuildRoleSubscriptionEmojiEditorModal
-// Dependencies: [5, 32, 19, 17, 5125, 21, 5170, 575, 20419, 504, 5874, 1411, 20425, 1113, 6122, 6194, 7070, 20415, 5783, 2]
+// Dependencies: [5, 32, 19, 17, 5261, 21, 5306, 575, 20749, 504, 6010, 1414, 20755, 1113, 6258, 6330, 7733, 20745, 5919, 2]
 // Exports: default
 
-// Module 20427 (GuildRoleSubscriptionEmojiEditorModal)
+// Module 20757 (GuildRoleSubscriptionEmojiEditorModal)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6122 */;
-import AlertDefault from "Alert" /* 6194 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6258 */;
+import AlertDefault from "Alert" /* 6330 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SubscriptionRoleStore from "SubscriptionRoleStore" /* 5125 */;
+import SubscriptionRoleStore from "SubscriptionRoleStore" /* 5261 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let c1, c4, roles, set;
@@ -71,7 +71,7 @@ export default function GuildRoleSubscriptionEmojiEditorModal(guildId) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         let c3;
@@ -109,7 +109,7 @@ export default function GuildRoleSubscriptionEmojiEditorModal(guildId) {
               c3 = 0;
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } catch (tmp11) {
           let closure_2 = tmp11;

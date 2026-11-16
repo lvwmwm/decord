@@ -1,20 +1,20 @@
-// Module ID: 19846
-// Function ID: 19847
+// Module ID: 20177
+// Function ID: 20178
 // Name: AppIconPremiumManager
-// Dependencies: [5, 16569, 1385, 10134, 1072, 5195, 3, 5196, 7383, 1377, 15655, 5198, 5200, 5202, 5003, 2171, 1252, 2]
+// Dependencies: [5, 16845, 1388, 11179, 1072, 5331, 3, 5332, 7882, 1380, 15314, 5334, 5336, 5338, 5139, 2174, 1256, 2]
 
-// Module 19846 (AppIconPremiumManager)
+// Module 20177 (AppIconPremiumManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5195 */;
-import AppIconTypes from "AppIconTypes" /* 5196 */;
-import AppIconConstants from "AppIconConstants" /* 10134 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5331 */;
+import AppIconTypes from "AppIconTypes" /* 5332 */;
+import AppIconConstants from "AppIconConstants" /* 11179 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 16569 */;
-import UserStore from "UserStore" /* 1385 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7383 */;
+import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 16845 */;
+import UserStore from "UserStore" /* 1388 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -69,7 +69,7 @@ class AppIconPremiumManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -147,7 +147,7 @@ class AppIconPremiumManager extends AutomaticLifecycleManager {
                     id = _undefined2.id;
                   } else {
                     c7 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "ulw" };
                   }
                 }
               }
@@ -191,7 +191,7 @@ class AppIconPremiumManager extends AutomaticLifecycleManager {
               }
             }
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } catch (tmp88) {
           c7 = 3;

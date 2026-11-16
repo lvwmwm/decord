@@ -1,22 +1,22 @@
-// Module ID: 13649
-// Function ID: 13650
+// Module ID: 10262
+// Function ID: 10263
 // Name: ForwardDestinationUtils
-// Dependencies: [19, 6925, 5023, 5019, 5102, 5112, 1385, 1072, 13647, 1380, 504, 1093, 6647, 2116, 6821, 6813, 5849, 6818, 13650, 1113, 6645, 7940, 5226, 5808, 2]
+// Dependencies: [19, 7010, 5159, 5155, 5238, 5248, 1388, 1072, 10245, 1255, 504, 1093, 6782, 2119, 6828, 6820, 5985, 6825, 10263, 1113, 6780, 8793, 5362, 5944, 2]
 // Exports: getDestinationIsUnavailable, isRatelimitedInChannel, useDestinationNamesWithSlowmode, useSelectedDestinationChannel, useSelectedDestinationNames
 
-// Module 13649 (ForwardDestinationUtils)
+// Module 10262 (ForwardDestinationUtils)
 import ChannelTypes from "ChannelTypes" /* 1093 */;
-import GlobalUtils from "GlobalUtils" /* 1380 */;
-import StickersUtils from "StickersUtils" /* 6647 */;
-import SlowmodeUtils from "SlowmodeUtils" /* 7940 */;
-import ForwardAgeRestrictedDestinationsExperimentDefault from "ForwardAgeRestrictedDestinationsExperiment" /* 13650 */;
+import GlobalUtils from "GlobalUtils" /* 1255 */;
+import StickersUtils from "StickersUtils" /* 6782 */;
+import SlowmodeUtils from "SlowmodeUtils" /* 8793 */;
+import ForwardAgeRestrictedDestinationsExperimentDefault from "ForwardAgeRestrictedDestinationsExperiment" /* 10263 */;
 import react from "react" /* 19 */;
-import StickersStore from "StickersStore" /* 6925 */;
-import ChannelRecord from "ChannelRecord" /* 5023 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import PermissionStore from "PermissionStore" /* 5102 */;
-import RelationshipStore from "RelationshipStore" /* 5112 */;
-import UserStore from "UserStore" /* 1385 */;
+import StickersStore from "StickersStore" /* 7010 */;
+import ChannelRecord from "ChannelRecord" /* 5159 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import PermissionStore from "PermissionStore" /* 5238 */;
+import RelationshipStore from "RelationshipStore" /* 5248 */;
+import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -34,8 +34,8 @@ const result = size.fileFinishedImporting("modules/forwarding/ForwardDestination
 
 export function useSelectedDestinationChannel(selectedDestinations) {
   let found;
-  const mapped = selectedDestinations.map(found(13647).getChannelIdFromDestinationId);
-  found = mapped.find(found(1380).isNotNullish);
+  const mapped = selectedDestinations.map(found(10245).getChannelIdFromDestinationId);
+  found = mapped.find(found(1255).isNotNullish);
   let obj = found(504);
   const items = [ChannelStore];
   const items1 = [found];
@@ -101,7 +101,7 @@ export function getDestinationIsUnavailable(components, channel, type, fn) {
           let needsAgeVerificationResult = tmp13Result9.needsAgeVerification();
           if (needsAgeVerificationResult) {
             const tmp13Result10 = require("RegionalFeatureConfigUtils");
-            needsAgeVerificationResult = tmp13Result10.isFeatureAgeGated(tmp13(6818).AgeGatedFeature.AGE_GATED_SPACES);
+            needsAgeVerificationResult = tmp13Result10.isFeatureAgeGated(tmp13(6825).AgeGatedFeature.AGE_GATED_SPACES);
           }
           let disableAgeRestrictedDestinations = !(false !== nsfwAllowed && !needsAgeVerificationResult);
           if (disableAgeRestrictedDestinations) {

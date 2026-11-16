@@ -1,11 +1,11 @@
-// Module ID: 17470
-// Function ID: 17471
+// Module ID: 17740
+// Function ID: 17741
 // Name: useVideoSegmentAnalytics
-// Dependencies: [32, 19, 7958, 2]
+// Dependencies: [32, 19, 8811, 2]
 // Exports: default
 
-// Module 17470 (useVideoSegmentAnalytics)
-import DiscordVideoPlayerTypes from "DiscordVideoPlayerTypes" /* 7958 */;
+// Module 17740 (useVideoSegmentAnalytics)
+import DiscordVideoPlayerTypes from "DiscordVideoPlayerTypes" /* 8811 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import "react";
 import react from "react" /* 19 */;
@@ -142,14 +142,17 @@ export default function useVideoSegmentAnalytics(getCurrentVideoTime) {
     }
   }, items4);
   const items5 = [first, tmp9, getCurrentVideoTime];
-  let tmp14 = closure_5(() => {
-    const tmp = getCurrentVideoTime();
+  let tmp14 = closure_5((arg0) => {
+    let tmp = arg0;
+    if (arg0 == null) {
+      tmp = getCurrentVideoTime();
+    }
     if (null != first) {
       if (null != tmp) {
         const _Date = Date;
         if (tmp - first.segmentStartSec > 0.2) {
-          const obj = { endTimeMs: tmp4, segmentEndSec: tmp };
-          const merged = Object.assign(tmp2);
+          const obj = { endTimeMs: tmp5, segmentEndSec: tmp };
+          const merged = Object.assign(tmp3);
           closure_15(obj);
         }
         closure_5(null);
@@ -175,8 +178,8 @@ export default function useVideoSegmentAnalytics(getCurrentVideoTime) {
     handleFirstFrame: closure_5(() => {
       closure_11(true);
     }, []),
-    handleSeek: closure_5(() => {
-      ref4.current();
+    handleSeek: closure_5((AUTO_DISMISS) => {
+      ref4.current(AUTO_DISMISS);
     }, [])
   };
   return obj;

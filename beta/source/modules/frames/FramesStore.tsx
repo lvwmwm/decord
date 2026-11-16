@@ -1,17 +1,17 @@
-// Module ID: 6934
-// Function ID: 6935
+// Module ID: 7019
+// Function ID: 7020
 // Name: FramesStore
-// Dependencies: [6935, 5813, 1083, 5828, 1378, 504, 6936, 6937, 572, 2]
+// Dependencies: [7020, 5949, 1083, 5964, 1381, 504, 7021, 7022, 572, 2]
 
-// Module 6934 (FramesStore)
+// Module 7019 (FramesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1083 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5813 */;
-import getURLForApplicationDefault from "getURLForApplication" /* 5828 */;
-import EmbeddedAppTypes from "EmbeddedAppTypes" /* 6936 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6937 */;
-import FramesConstants from "FramesConstants" /* 6935 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5949 */;
+import getURLForApplicationDefault from "getURLForApplication" /* 5964 */;
+import EmbeddedAppTypes from "EmbeddedAppTypes" /* 7021 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 7022 */;
+import FramesConstants from "FramesConstants" /* 7020 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -148,7 +148,7 @@ let obj = {
         if (null != tmp5) {
           tmp6 = tmp5;
           if (null != launch.path) {
-            const tmp3Result = tmp3(1378);
+            const tmp3Result = tmp3(1381);
             const str = tmp3Result.toURLSafe(launch.path, tmp5);
             let str1;
             if (str != null) {

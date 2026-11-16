@@ -1,38 +1,38 @@
-// Module ID: 16636
-// Function ID: 16637
+// Module ID: 16912
+// Function ID: 16913
 // Name: RPCServerManager
-// Dependencies: [32, 7955, 5019, 5082, 5041, 2130, 5922, 5925, 5112, 5073, 1385, 5835, 6615, 1072, 6935, 11886, 5929, 1377, 572, 1252, 16637, 504, 1380, 12008, 16642, 12009, 9440, 7613, 16643, 16645, 9445, 12007, 7978, 2]
+// Dependencies: [32, 8808, 5155, 5218, 5177, 2133, 6058, 6061, 5248, 5209, 1388, 5971, 6751, 1072, 7020, 12706, 6065, 1380, 572, 1256, 16913, 504, 1255, 12870, 16918, 12871, 7296, 15993, 16919, 16921, 7301, 12869, 8831, 2]
 
-// Module 16636 (RPCServerManager)
+// Module 16912 (RPCServerManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import GlobalUtils from "GlobalUtils" /* 1380 */;
-import Constants2 from "Constants" /* 5929 */;
-import Constants3 from "Constants" /* 6615 */;
-import FramesConstants from "FramesConstants" /* 6935 */;
-import frameDeepLinks from "frameDeepLinks" /* 7613 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7978 */;
-import transformUserDefault from "transformUser" /* 9445 */;
-import Constants4 from "Constants" /* 11886 */;
-import RPCHelpers from "RPCHelpers" /* 12007 */;
-import transformMessage from "transformMessage" /* 12008 */;
-import getRemoteIconURLDefault from "getRemoteIconURL" /* 12009 */;
-import ConjureVoiceSessionCoordinatorDefault from "ConjureVoiceSessionCoordinator" /* 16637 */;
-import useThermalState from "useThermalState" /* 16643 */;
-import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 16645 */;
+import GlobalUtils from "GlobalUtils" /* 1255 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import Constants2 from "Constants" /* 6065 */;
+import Constants3 from "Constants" /* 6751 */;
+import FramesConstants from "FramesConstants" /* 7020 */;
+import transformUserDefault from "transformUser" /* 7301 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 8831 */;
+import Constants4 from "Constants" /* 12706 */;
+import RPCHelpers from "RPCHelpers" /* 12869 */;
+import transformMessage from "transformMessage" /* 12870 */;
+import getRemoteIconURLDefault from "getRemoteIconURL" /* 12871 */;
+import frameDeepLinks from "frameDeepLinks" /* 15993 */;
+import ConjureVoiceSessionCoordinatorDefault from "ConjureVoiceSessionCoordinator" /* 16913 */;
+import useThermalState from "useThermalState" /* 16919 */;
+import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 16921 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import QuestStore from "QuestStore" /* 7955 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import GuildMemberStore from "GuildMemberStore" /* 5082 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import MediaEngineStore from "MediaEngineStore" /* 2130 */;
-import PresenceStore from "PresenceStore" /* 5922 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5925 */;
-import RelationshipStore from "RelationshipStore" /* 5112 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5073 */;
-import UserStore from "UserStore" /* 1385 */;
-import VoiceStateStore from "VoiceStateStore" /* 5835 */;
+import QuestStore from "QuestStore" /* 8808 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import GuildMemberStore from "GuildMemberStore" /* 5218 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import MediaEngineStore from "MediaEngineStore" /* 2133 */;
+import PresenceStore from "PresenceStore" /* 6058 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
+import RelationshipStore from "RelationshipStore" /* 5248 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
+import UserStore from "UserStore" /* 1388 */;
+import VoiceStateStore from "VoiceStateStore" /* 5971 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

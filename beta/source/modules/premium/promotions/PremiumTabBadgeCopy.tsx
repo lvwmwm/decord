@@ -1,27 +1,27 @@
-// Module ID: 17235
-// Function ID: 17236
+// Module ID: 17512
+// Function ID: 17513
 // Name: PremiumTabBadgeCopy
-// Dependencies: [1113, 17236, 2]
-// Exports: getPremiumTabBadgeCopy
+// Dependencies: [1113, 9676, 2]
+// Exports: getPremiumTabBadgeCopy, hasVisiblePremiumTabBadgeCopy
 
-// Module 17235 (PremiumTabBadgeCopy)
+// Module 17512 (PremiumTabBadgeCopy)
 import intl from "intl" /* 1113 */;
-import MarketingStringFormat from "MarketingStringFormat" /* 17236 */;
+import MarketingStringFormat from "MarketingStringFormat" /* 9676 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/premium/promotions/PremiumTabBadgeCopy.tsx");
 
-export function getPremiumTabBadgeCopy(promotionMarketingComponent) {
-  if ("premiumTab" !== promotionMarketingComponent.properties.properties.oneofKind) {
+export function getPremiumTabBadgeCopy(promotionMarketingSurface) {
+  if ("premiumTab" !== promotionMarketingSurface.properties.properties.oneofKind) {
     return null;
   } else {
-    const premiumTab = promotionMarketingComponent.properties.properties.premiumTab;
-    const formatVariableValues = promotionMarketingComponent.getFormatVariableValues(intl.intl.currentLocale);
+    const premiumTab = promotionMarketingSurface.properties.properties.premiumTab;
+    const formatVariableValues = promotionMarketingSurface.getFormatVariableValues(intl.intl.currentLocale);
     const obj3 = MarketingStringFormat;
     const result = obj3.formatMarketingPlainString(premiumTab.badgeLabel, formatVariableValues);
     const tmp5 = require;
     if (result.ok) {
-      const tmp5Result = tmp5(17236);
+      const tmp5Result = tmp5(9676);
       const result1 = tmp5Result.formatMarketingPlainString(premiumTab.acknowledgedBadgeLabel, formatVariableValues);
       let tmp3 = null;
       if (result1.ok) {
@@ -33,4 +33,8 @@ export function getPremiumTabBadgeCopy(promotionMarketingComponent) {
       return null;
     }
   }
+}
+export function hasVisiblePremiumTabBadgeCopy(premiumTabBadgeCopy, arg1) {
+  const str = arg1 ? premiumTabBadgeCopy.acknowledgedBadgeCopy : premiumTabBadgeCopy.badgeCopy;
+  return "" !== str.trim();
 }

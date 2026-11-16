@@ -1,19 +1,19 @@
-// Module ID: 12305
-// Function ID: 12306
+// Module ID: 13178
+// Function ID: 13179
 // Name: useConjurePublishPanel
-// Dependencies: [5, 32, 19, 5041, 5102, 6932, 1072, 6933, 4026, 1113, 12306, 12307, 12309, 11026, 12310, 504, 9144, 11028, 2]
+// Dependencies: [5, 32, 19, 5177, 5238, 7017, 1072, 7018, 4131, 1113, 13179, 13180, 13182, 7384, 13183, 504, 8131, 7329, 2]
 // Exports: conjurePublishComponents, default
 
-// Module 12305 (useConjurePublishPanel)
-import _modDef4026 from "module_4026" /* 4026 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6932 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6933 */;
-import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 9144 */;
+// Module 13178 (useConjurePublishPanel)
+import _modDef4131 from "module_4131" /* 4131 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 7017 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 7018 */;
+import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 8131 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore_mod from "GuildStore" /* 5041 */;
-import PermissionStore from "PermissionStore" /* 5102 */;
+import GuildStore_mod from "GuildStore" /* 5177 */;
+import PermissionStore from "PermissionStore" /* 5238 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ let _require, c1, c4, closure_2, importDefault;
 
 let c10;
 let c9;
-const f102609 = (item) => {
+const f106666 = (item) => {
   let intl;
   let tmp;
   let tmp2;
@@ -35,17 +35,17 @@ let _slicedToArray = _slicedToArray_mod;
 let GuildStore = GuildStore_mod;
 const isProjectOwner = ConjureProjectStore.isProjectOwner;
 ({ ChannelTypes: c9, Permissions: c10 } = Constants);
-let items = [ConjureProjectTypes.ConjureSupportedSurface.BOT, _modDef4026.UnoAgo];
+let items = [ConjureProjectTypes.ConjureSupportedSurface.BOT, _modDef4131.UnoAgo];
 let items1 = [items, , , , ];
-let items2 = [ConjureProjectTypes.ConjureSupportedSurface.ACTIVITY, _modDef4026["I88/iG"]];
+let items2 = [ConjureProjectTypes.ConjureSupportedSurface.ACTIVITY, _modDef4131["I88/iG"]];
 items1[1] = items2;
-let items3 = [ConjureProjectTypes.ConjureSupportedSurface.VOICE_CHANNEL, _modDef4026.skjf5I];
+let items3 = [ConjureProjectTypes.ConjureSupportedSurface.VOICE_CHANNEL, _modDef4131.skjf5I];
 items1[2] = items3;
-let items4 = [ConjureProjectTypes.ConjureSupportedSurface.PROFILE_WIDGET, _modDef4026.gXY1x1];
+let items4 = [ConjureProjectTypes.ConjureSupportedSurface.PROFILE_WIDGET, _modDef4131.gXY1x1];
 items1[3] = items4;
-const items5 = [ConjureProjectTypes.ConjureSupportedSurface.AUTOMOD, _modDef4026.Q9ruoM];
+const items5 = [ConjureProjectTypes.ConjureSupportedSurface.AUTOMOD, _modDef4131.Q9ruoM];
 items1[4] = items5;
-let obj = { screen_capture: _modDef4026["8/7kE7"], connect_user_to_voice: _modDef4026.uvDWXa };
+let obj = { screen_capture: _modDef4131["8/7kE7"], connect_user_to_voice: _modDef4131.uvDWXa };
 let result = size.fileFinishedImporting("modules/conjure/publish/useConjurePublishPanel.tsx");
 
 export default function useConjurePublishPanel(id, guildId) {
@@ -86,7 +86,7 @@ export default function useConjurePublishPanel(id, guildId) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         let c3;
@@ -242,7 +242,7 @@ export default function useConjurePublishPanel(id, guildId) {
     initialChannelNames: arr4,
     channels,
     appChannelsPrivate: tmp25,
-    components: found.map(f102609),
+    components: found.map(f106666),
     devicePermissions: items4,
     note: stringResult,
     sharing: tmp27,
@@ -323,6 +323,6 @@ export function conjurePublishComponents(arg0) {
     [tmp] = item;
     return items.includes(tmp);
   });
-  return found.map(f102609);
+  return found.map(f106666);
 }
 export const CONJURE_PUBLISH_PERMISSION_LABELS = obj;

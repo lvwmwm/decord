@@ -1,11 +1,11 @@
-// Module ID: 17075
-// Function ID: 17076
+// Module ID: 17351
+// Function ID: 17352
 // Name: FamilyCenterSaveErrorUtils
-// Dependencies: [5, 7587, 7601, 2]
+// Dependencies: [5, 6900, 6905, 2]
 // Exports: showToastIfSaveFails
 
-// Module 17075 (FamilyCenterSaveErrorUtils)
-import Constants from "Constants" /* 7587 */;
+// Module 17351 (FamilyCenterSaveErrorUtils)
+import Constants from "Constants" /* 6900 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let obj = function _showToastIfSaveFails() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -61,7 +61,7 @@ let obj = function _showToastIfSaveFails() {
               c3 = 0;
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } catch (tmp10) {
           if (0 === c3) {

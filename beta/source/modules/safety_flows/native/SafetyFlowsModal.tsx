@@ -1,10 +1,10 @@
-// Module ID: 20534
-// Function ID: 20535
+// Module ID: 20864
+// Function ID: 20865
 // Name: SafetyFlowsModal
-// Dependencies: [32, 19, 21, 7264, 20531, 20535, 20539, 7097, 20541, 20543, 20544, 20545, 20546, 20554, 20555, 20537, 20536, 13489, 2]
+// Dependencies: [32, 19, 21, 7490, 20861, 20865, 20869, 7493, 20871, 20873, 20874, 20875, 20876, 20884, 20885, 20867, 20866, 14098, 2]
 // Exports: default
 
-// Module 20534 (SafetyFlowsModal)
+// Module 20864 (SafetyFlowsModal)
 import Fragment from "Fragment" /* 21 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -20,7 +20,7 @@ export default function SafetyFlowsModal(initialScreen) {
   setTask = undefined;
   initialScreen = initialScreen.initialScreen;
   [task, setTask] = react.useState(initialScreen.task);
-  let obj = task(7264);
+  let obj = task(7490);
   const items = [task];
   const navigatorScreens = obj.useNavigatorScreens(() => {
     let obj2;
@@ -135,6 +135,6 @@ export default function SafetyFlowsModal(initialScreen) {
     }
   }, items);
   const memo1 = react.useMemo(() => ({ task, setTask }), items1);
-  const Provider = task(20536).SafetyFlowTaskContext.Provider;
+  const Provider = task(20866).SafetyFlowTaskContext.Provider;
   return <Provider value={memo1}>{null}</Provider>;
 };

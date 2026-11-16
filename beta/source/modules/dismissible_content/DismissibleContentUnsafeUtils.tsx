@@ -1,19 +1,19 @@
-// Module ID: 5202
-// Function ID: 5203
+// Module ID: 5338
+// Function ID: 5339
 // Name: DismissibleContentUnsafeUtils
-// Dependencies: [5, 1231, 5203, 1089, 5224, 5010, 5004, 11, 5002, 504, 5000, 2]
+// Dependencies: [5, 1231, 5339, 1089, 5360, 5146, 5140, 11, 5138, 504, 5136, 2]
 // Exports: UNSAFE_isSnowflakeBoundDismissibleContentDismissed, UNSAFE_markDismissibleContentAsDismissed, UNSAFE_markSingleUseGuildDismissibleContentAsDismissed, UNSAFE_markSnowflakeBoundGuildDismissibleContentAsDismissed, UNSAFE_markTimeRecurringGuildDismissibleContentAsDismissed, useIsDismissibleContentDismissed_UNSAFE
 
-// Module 5202 (DismissibleContentUnsafeUtils)
+// Module 5338 (DismissibleContentUnsafeUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import Uint8ArrayUtils from "Uint8ArrayUtils" /* 5002 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 5004 */;
-import DismissibleContentTypes from "DismissibleContentTypes" /* 5010 */;
-import NewUserDismissibleContentRegistry from "NewUserDismissibleContentRegistry" /* 5224 */;
+import Uint8ArrayUtils from "Uint8ArrayUtils" /* 5138 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 5140 */;
+import DismissibleContentTypes from "DismissibleContentTypes" /* 5146 */;
+import NewUserDismissibleContentRegistry from "NewUserDismissibleContentRegistry" /* 5360 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5203 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -153,7 +153,7 @@ let obj = function _UNSAFE_markDismissibleContentAsDismissed() {
     if (closure_1 === undefined) {
       obj6 = {};
     }
-    return "flexDirection";
+    return "Path";
   });
   return obj(...arguments);
 };
@@ -173,7 +173,7 @@ obj = function _UNSAFE_markSingleUseGuildDismissibleContentAsDismissed() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       try {
@@ -196,7 +196,7 @@ obj = function _UNSAFE_markSingleUseGuildDismissibleContentAsDismissed() {
             }
             c5 = 1;
             c6 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "Path", done: true };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {
@@ -226,7 +226,7 @@ obj = function _UNSAFE_markSingleUseGuildDismissibleContentAsDismissed() {
           obj = closure_132_0(closure_132_2[6]);
           const result1 = obj.markDismissibleContentAsDismissedPostProcessing(closure_0, obj6);
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } catch (tmp25) {
         c6 = 3;
@@ -252,7 +252,7 @@ obj = function _UNSAFE_markTimeRecurringGuildDismissibleContentAsDismissed() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       try {
@@ -290,7 +290,7 @@ obj = function _UNSAFE_markTimeRecurringGuildDismissibleContentAsDismissed() {
           obj = closure_132_0(closure_132_2[6]);
           const result1 = obj.markDismissibleContentAsDismissedPostProcessing(closure_0, closure_1);
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } catch (tmp12) {
         c6 = 3;
@@ -317,7 +317,7 @@ obj = function _UNSAFE_markSnowflakeBoundGuildDismissibleContentAsDismissed() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -356,7 +356,7 @@ obj = function _UNSAFE_markSnowflakeBoundGuildDismissibleContentAsDismissed() {
             obj = closure_133_0(closure_133_2[6]);
             const result1 = obj.markDismissibleContentAsDismissedPostProcessing(closure_0, snowflakeId);
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } catch (tmp12) {
           c7 = 3;

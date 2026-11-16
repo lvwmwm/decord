@@ -1,12 +1,12 @@
-// Module ID: 11054
-// Function ID: 11055
+// Module ID: 7390
+// Function ID: 7391
 // Name: conjureLiveReloadConnection
-// Dependencies: [572, 11027, 2]
+// Dependencies: [572, 7335, 2]
 // Exports: sendLiveReload
 
-// Module 11054 (conjureLiveReloadConnection)
+// Module 7390 (conjureLiveReloadConnection)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 11027 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 7335 */;
 import size from "module_2" /* 2 */;
 
 let obj = {

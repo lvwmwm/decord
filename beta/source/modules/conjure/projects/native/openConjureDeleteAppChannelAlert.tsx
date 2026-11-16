@@ -1,11 +1,11 @@
-// Module ID: 19356
-// Function ID: 19357
+// Module ID: 19669
+// Function ID: 19670
 // Name: openConjureDeleteAppChannelAlert
-// Dependencies: [5, 32, 19, 21, 13542, 13544, 1113, 4026, 6128, 12427, 6191, 5783, 6124, 2]
+// Dependencies: [5, 32, 19, 21, 14152, 19670, 1113, 4131, 6264, 13209, 6327, 5919, 6260, 2]
 // Exports: default
 
-// Module 19356 (openConjureDeleteAppChannelAlert)
-import useAlertStore from "useAlertStore" /* 6124 */;
+// Module 19669 (openConjureDeleteAppChannelAlert)
+import useAlertStore from "useAlertStore" /* 6260 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -52,7 +52,7 @@ function ConjureDeleteAppChannelAlert(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -100,7 +100,7 @@ function ConjureDeleteAppChannelAlert(arg0) {
             throw error;
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         } catch (tmp31) {
           c3 = 3;
           throw tmp31;
@@ -128,7 +128,7 @@ function ConjureDeleteAppChannelAlert(arg0) {
   const tmp6 = tmp4[1];
   [tmp8, c5] = checked(react.useState(null), 2);
   const tmp7 = checked(react.useState(null), 2);
-  let obj2 = { title: intl.string(tmp(tmp2[6]).t["8D8Rsb"]), content: tmpResult2.formatWithAppTag(require("module_4026")["HmNT/r"], conjureServerApp.targetAppName), extraContent: tmp11Result, actions: closure_7(closure_8, obj6) };
+  let obj2 = { title: intl.string(tmp(tmp2[6]).t["8D8Rsb"]), content: tmpResult2.formatWithAppTag(require("module_4131")["HmNT/r"], conjureServerApp.targetAppName), extraContent: tmp11Result, actions: closure_7(closure_8, obj6) };
   const AlertModal = tmp(tmp2[8]).AlertModal;
   intl = tmp(tmp2[6]).intl;
   tmpResult2 = tmp(tmp2[9]);

@@ -1,13 +1,13 @@
-// Module ID: 8002
-// Function ID: 8003
+// Module ID: 6802
+// Function ID: 6803
 // Name: RobloxSubgameUtils
-// Dependencies: [5, 1072, 8003, 12, 8004, 5862, 2]
+// Dependencies: [5, 1072, 6803, 12, 6804, 5998, 2]
 // Exports: convertMapToRobloxSubgameInfo, getSubgameMetadata, hasRunningGameChanged, hasSubgameInfoChanged, isRobloxSubgame, keyForRobloxGame, maybeAddAdditionalGameMetadata, maybeTransformRobloxSubgameToRoblox, openRobloxURLWithRootPlaceId
 
-// Module 8002 (RobloxSubgameUtils)
+// Module 6802 (RobloxSubgameUtils)
 import _modDef12 from "module_12" /* 12 */;
-import RobloxSubgameTypes from "RobloxSubgameTypes" /* 8003 */;
-import RobloxSubgamePlatformUtilsDefault from "RobloxSubgamePlatformUtils" /* 8004 */;
+import RobloxSubgameTypes from "RobloxSubgameTypes" /* 6803 */;
+import RobloxSubgamePlatformUtilsDefault from "RobloxSubgamePlatformUtils" /* 6804 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -30,7 +30,7 @@ let obj = function _openRobloxURLWithRootPlaceId() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       try {
@@ -186,7 +186,7 @@ export function getSubgameMetadata(currentGameForAnalytics) {
       const tmp2 = require;
       if (null != currentGameForAnalytics.gameMetadata[RobloxSubgameTypes.RobloxMetadataKeys.PLACE_ID]) {
         const _JSON = JSON;
-        obj = { placeId: currentGameForAnalytics.gameMetadata[tmp2(undefined, 8003).RobloxMetadataKeys.PLACE_ID] };
+        obj = { placeId: currentGameForAnalytics.gameMetadata[tmp2(undefined, 6803).RobloxMetadataKeys.PLACE_ID] };
         json = stringify(obj);
       }
     }
@@ -223,7 +223,7 @@ export function maybeTransformRobloxSubgameToRoblox(distributor) {
     tmp2 = distributor;
     const tmp3 = require;
     if (distributor.id !== RobloxSubgameTypes.ROBLOX_APPLICATION_ID) {
-      obj = { id: tmp3(8003).ROBLOX_APPLICATION_ID, name: React3[tmp.ROBLOX] };
+      obj = { id: tmp3(6803).ROBLOX_APPLICATION_ID, name: React3[tmp.ROBLOX] };
       const merged = Object.assign(distributor);
       tmp2 = obj;
     }

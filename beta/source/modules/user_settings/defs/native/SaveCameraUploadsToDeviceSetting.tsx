@@ -1,15 +1,15 @@
-// Module ID: 17816
-// Function ID: 17817
+// Module ID: 18090
+// Function ID: 18091
 // Name: SaveCameraUploadsToDeviceSetting
-// Dependencies: [1194, 8536, 504, 6096, 11716, 1113, 2]
+// Dependencies: [1194, 9202, 504, 6232, 12406, 1113, 2]
 
-// Module 17816 (SaveCameraUploadsToDeviceSetting)
+// Module 18090 (SaveCameraUploadsToDeviceSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 6096 */;
-import SettingsConstants from "SettingsConstants" /* 8536 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 6232 */;
+import SettingsConstants from "SettingsConstants" /* 9202 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1194 */;
-import SettingBuilders from "SettingBuilders" /* 11716 */;
+import SettingBuilders from "SettingBuilders" /* 12406 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

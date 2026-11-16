@@ -1,31 +1,31 @@
-// Module ID: 7389
-// Function ID: 7390
+// Module ID: 7887
+// Function ID: 7888
 // Name: GuildOnboardingPrompt
-// Dependencies: [32, 19, 17, 6884, 7036, 5041, 7364, 7361, 1388, 21, 5170, 5746, 575, 1499, 504, 1627, 5756, 671, 7388, 7390, 7067, 5783, 1113, 5790, 7010, 5747, 1092, 7370, 7391, 7392, 7396, 1411, 5406, 7401, 2118, 7076, 5874, 7416, 2]
+// Dependencies: [32, 19, 17, 6969, 7707, 5177, 7869, 7866, 1391, 21, 5306, 5882, 575, 1502, 504, 1630, 5892, 671, 7415, 7888, 7732, 5919, 1113, 5926, 7686, 5883, 1092, 7084, 7889, 7890, 7894, 1414, 5542, 7899, 2121, 7428, 6010, 7914, 2]
 // Exports: DropdownPrompt, MultipleChoicePrompt, RulesPrompt
 
-// Module 7389 (GuildOnboardingPrompt)
+// Module 7887 (GuildOnboardingPrompt)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import EmojiConstants from "EmojiConstants" /* 1388 */;
-import asyncRequire from "asyncRequire" /* 2118 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
-import NavigatorConstants from "NavigatorConstants" /* 5746 */;
-import Text_Text from "Text/Text" /* 5783 */;
-import MemberVerificationActionCreatorsDefault from "MemberVerificationActionCreators" /* 7010 */;
-import TermsFieldListDefault from "TermsFieldList" /* 7067 */;
-import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7361 */;
-import GuildOnboardingUtils from "GuildOnboardingUtils" /* 7370 */;
-import EmojiDefault from "Emoji" /* 7396 */;
+import EmojiConstants from "EmojiConstants" /* 1391 */;
+import asyncRequire from "asyncRequire" /* 2121 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import NavigatorConstants from "NavigatorConstants" /* 5882 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import GuildOnboardingUtils from "GuildOnboardingUtils" /* 7084 */;
+import MemberVerificationActionCreatorsDefault from "MemberVerificationActionCreators" /* 7686 */;
+import TermsFieldListDefault from "TermsFieldList" /* 7732 */;
+import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7866 */;
+import EmojiDefault from "Emoji" /* 7894 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import EmojiStore from "EmojiStore" /* 6884 */;
-import MemberVerificationFormStore from "MemberVerificationFormStore" /* 7036 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7364 */;
+import EmojiStore from "EmojiStore" /* 6969 */;
+import MemberVerificationFormStore from "MemberVerificationFormStore" /* 7707 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7869 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -43,7 +43,7 @@ let obj5;
 let obj6;
 let size;
 let tmp8;
-const AvatarUtilsDefault = tmp8(1411);
+const AvatarUtilsDefault = tmp8(1414);
 function PromptHeader(currentPrompt) {
   let currentPromptIndex;
   let intl;
@@ -72,17 +72,17 @@ function PromptHeader(currentPrompt) {
     const obj5 = { style: tmp.requiredSeparator };
     items1 = [map1(hasOwnProperty, obj5), ];
     const obj6 = { variant: "body-sm/medium", color: "text-brand", children: intl2.string(intl3.t.Ur8Vrt) };
-    const Text2 = tmp6(5783).Text;
+    const Text2 = tmp6(5919).Text;
     intl2 = tmp6(1113).intl;
     items1[1] = map1(Text2, obj6);
     tmp2Result = tmp2(tmp3, obj4);
   }
   const obj7 = { children: items2 };
   items[1] = tmp2Result;
-  items2 = [authStore3(hasOwnProperty, obj), ];
+  items2 = [gesture(hasOwnProperty, obj), ];
   const obj8 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: currentPrompt.title };
   items2[1] = map1(Text_Text.Text, obj8);
-  return authStore3(closure_15, obj7);
+  return gesture(closure_15, obj7);
 }
 function PromptFooter(lastPrompt) {
   let combined;
@@ -266,7 +266,7 @@ function DropdownOption(option) {
   }
   items1 = [closure_13(closure_5, obj3), ];
   const obj7 = { variant: "body-md/semibold", children: option.title };
-  items1[1] = closure_13(tmp2(5783).Text, obj7);
+  items1[1] = closure_13(tmp2(5919).Text, obj7);
   return tmp5(closure_5, obj2);
 }
 let _slicedToArray = _slicedToArray_mod;
@@ -559,7 +559,7 @@ export function DropdownPrompt(guildId) {
         return tmp(id, id2, flag);
       }
     };
-    obj.openLazy(asyncRequire(7401, dependencyMap.paths), "DropdownOptions", obj2);
+    obj.openLazy(asyncRequire(7899, dependencyMap.paths), "DropdownOptions", obj2);
   }, items2);
   items4 = [closure_13(PromptHeader, { currentPrompt, numberOfPrompts, currentPromptIndex }), ];
   let tmp11Result = 0 === found.length;

@@ -1,14 +1,14 @@
-// Module ID: 13640
-// Function ID: 13641
+// Module ID: 14241
+// Function ID: 14242
 // Name: handleForwardBreadcrumb
-// Dependencies: [5, 5019, 5041, 1072, 7626, 6990, 6994, 1252, 7518, 2]
+// Dependencies: [5, 5155, 5177, 1072, 7230, 6907, 6912, 1256, 7262, 2]
 // Exports: default
 
-// Module 13640 (handleForwardBreadcrumb)
-import GuildDiscoveryUtils from "GuildDiscoveryUtils" /* 7626 */;
+// Module 14241 (handleForwardBreadcrumb)
+import GuildDiscoveryUtils from "GuildDiscoveryUtils" /* 7230 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import GuildStore from "GuildStore" /* 5041 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import GuildStore from "GuildStore" /* 5177 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ let obj = function _handleForwardBreadcrumb() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       let c4;
@@ -85,7 +85,7 @@ let obj = function _handleForwardBreadcrumb() {
               }
             }
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } else if (1 === did_lurk) {
           c4 = 0;

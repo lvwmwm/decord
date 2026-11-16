@@ -1,24 +1,24 @@
-// Module ID: 8311
-// Function ID: 8312
+// Module ID: 8873
+// Function ID: 8874
 // Name: CloudUpload
-// Dependencies: [109, 5, 32, 5786, 1194, 6064, 1072, 3, 1282, 8312, 8313, 8321, 1089, 559, 7248, 12, 1477, 8323, 8342, 7249, 8343, 8344, 8348, 1242, 8322, 8314, 8349, 8350, 2118, 8435, 1252, 2]
+// Dependencies: [109, 5, 32, 5922, 1194, 6200, 1072, 3, 1285, 8874, 8850, 8877, 1089, 559, 7801, 12, 1480, 8879, 8898, 7802, 8899, 8900, 8904, 1242, 8878, 8846, 8905, 8906, 2121, 8991, 1256, 2]
 
-// Module 8311 (CloudUpload)
+// Module 8873 (CloudUpload)
 import LoggerDefault from "Logger" /* 3 */;
 import BackoffDefault from "Backoff" /* 559 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import InlineUploaderDefault from "InlineUploader" /* 7248 */;
-import UploadPlatform from "UploadPlatform" /* 8313 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
+import InlineUploaderDefault from "InlineUploader" /* 7801 */;
+import UploadPlatform from "UploadPlatform" /* 8850 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import DevSettingsStore from "DevSettingsStore" /* 5786 */;
+import DevSettingsStore from "DevSettingsStore" /* 5922 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1194 */;
-import NetworkStore from "NetworkStore" /* 6064 */;
+import NetworkStore from "NetworkStore" /* 6200 */;
 import Constants from "Constants" /* 1072 */;
-import Upload from "Upload" /* 8312 */;
+import Upload from "Upload" /* 8874 */;
 import size_mod from "module_2" /* 2 */;
 
 let c0, c5, c8, closure_6, createAttachmentURL;
@@ -233,13 +233,13 @@ class CloudUpload extends Upload {
         if (typeof obj.origin === "string") {
           origin = obj.origin;
         } else {
-          origin = tmp11(8312).UploadOrigin[obj.origin];
+          origin = tmp11(8874).UploadOrigin[obj.origin];
         }
         uploadAnalytics.origin = origin;
       }
       const self3 = this;
       const self4 = this;
-      const defaultHttpClient = new tmp11(8321).DefaultHttpClient();
+      const defaultHttpClient = new tmp11(8877).DefaultHttpClient();
       obj._uploadHttpClient = defaultHttpClient;
       obj._libdiscoreEnabled = false;
       return obj;
@@ -399,7 +399,7 @@ class CloudUpload extends Upload {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -491,7 +491,7 @@ class CloudUpload extends Upload {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -604,7 +604,7 @@ class CloudUpload extends Upload {
             let obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } else {
           let c6;
@@ -648,7 +648,7 @@ class CloudUpload extends Upload {
                       const obj2 = { value, done: true };
                       return obj2;
                     } else {
-                      return { value: "HermesInternal", done: null };
+                      return { value: "HermesInternal", done: "ulw" };
                     }
                   } else {
                     try {
@@ -789,7 +789,7 @@ class CloudUpload extends Upload {
                             return obj;
                           } else {
                             c6 = 3;
-                            return { value: "HermesInternal", done: null };
+                            return { value: "HermesInternal", done: "ulw" };
                           }
                           value = {};
                           num7 = request.startOrResumeUpload(closure_130_3, num7);
@@ -963,7 +963,7 @@ class CloudUpload extends Upload {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         let c3;
@@ -1048,7 +1048,7 @@ class CloudUpload extends Upload {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } else {
           let tmp221;
@@ -1179,7 +1179,7 @@ class CloudUpload extends Upload {
                     }
                   }
                   c9 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "ulw" };
                 }
                 break;
               }
@@ -1804,7 +1804,7 @@ class CloudUpload extends Upload {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         let c3;
@@ -2000,7 +2000,7 @@ class CloudUpload extends Upload {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -2038,7 +2038,7 @@ class CloudUpload extends Upload {
             c2 = 0;
           }
           _self = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         } catch (tmp7) {
           if (0 === c2) {
             _self = 3;
@@ -2079,7 +2079,7 @@ class CloudUpload extends Upload {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         let c3;
@@ -2172,7 +2172,7 @@ class CloudUpload extends Upload {
             }
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         } catch (tmp35) {
           url = tmp35;
           if (0 === c3) {

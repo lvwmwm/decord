@@ -1,13 +1,13 @@
-// Module ID: 10892
-// Function ID: 10893
+// Module ID: 10841
+// Function ID: 10842
 // Name: GameRelationshipActionCreators
-// Dependencies: [5, 1072, 6611, 6122, 1113, 1282, 5177, 2]
+// Dependencies: [5, 1072, 6747, 6258, 1113, 1285, 5313, 2]
 
-// Module 10892 (GameRelationshipActionCreators)
+// Module 10841 (GameRelationshipActionCreators)
 import intl3 from "intl" /* 1113 */;
-import shared from "shared" /* 5177 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6122 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 6611 */;
+import shared from "shared" /* 5313 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6258 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 6747 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -61,7 +61,7 @@ let obj = function _deleteGameRelationship() {
     await "HermesInternal";
     let closure_2 = tmp;
     ({ userId: c0, applicationId: c1, onSuccess: c2 } = closure_0);
-    return "flexDirection";
+    return "Path";
   });
   return obj(...arguments);
 };
@@ -87,7 +87,7 @@ obj = function _removeGameFriend() {
       await closure_130_7(obj5);
       await "HermesInternal";
       ({ userId: c0, applicationId: c1 } = closure_0);
-      return "flexDirection";
+      return "Path";
     })();
     iter.next();
     return iter;
@@ -116,7 +116,7 @@ obj = function _cancelGameFriendRequest() {
       await closure_130_7(obj5);
       await "HermesInternal";
       ({ userId: c0, applicationId: c1 } = closure_0);
-      return "flexDirection";
+      return "Path";
     })();
     iter.next();
     return iter;
@@ -136,7 +136,7 @@ obj = {
     }
     ({ userId, applicationId } = arg0);
     const FRIEND = constants.FRIEND;
-    const HTTP = onSuccess(1282).HTTP;
+    const HTTP = onSuccess(1285).HTTP;
     const request = { url: closure_4.USER_GAME_RELATIONSHIP(userId, applicationId), body: { type: FRIEND }, oldFormErrors: true, rejectWithError: false };
     const putResult = HTTP.put(request);
     const nextPromise = putResult.then(() => {

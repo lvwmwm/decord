@@ -1,13 +1,13 @@
-// Module ID: 6972
-// Function ID: 6973
+// Module ID: 7058
+// Function ID: 7059
 // Name: MessageRequestUtils
-// Dependencies: [6944, 6945, 11, 2]
+// Dependencies: [7030, 7031, 11, 2]
 // Exports: filterOutMessageRequestsAndSpam, filterOutMessageRequestsAndSpamById, isMessageRequestOrSpamRequest, shouldShowMessageRequests
 
-// Module 6972 (MessageRequestUtils)
+// Module 7058 (MessageRequestUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import MessageRequestStore from "MessageRequestStore" /* 6944 */;
-import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6945 */;
+import MessageRequestStore from "MessageRequestStore" /* 7030 */;
+import SpamMessageRequestStore from "SpamMessageRequestStore" /* 7031 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/message_request/MessageRequestUtils.tsx");

@@ -3,8 +3,24 @@
 // Dependencies: []
 
 // Module 16521
-const tmp = Math.trunc || (function trunc(arg0) {
-  return 0 < +arg0 ? floor : ceil(+arg0);
-});
+if (typeof process === "object") {
+  const _process3 = process;
+  if (process.env) {
+    const _process = process;
+    if (process.env.NODE_DEBUG) {
+      let fn;
+      const _process2 = process;
+      const obj = /\bsemver\b/i;
+      if (obj.test(process.env.NODE_DEBUG)) {
+        fn = () => {
+          const items = ["SEMVER", ...HermesBuiltin.copyRestArgs()];
+          return console.error.apply(items);
+        };
+      }
+      module.exports = fn;
+    }
+  }
+}
+fn = () => {
 
-export default tmp;
+};

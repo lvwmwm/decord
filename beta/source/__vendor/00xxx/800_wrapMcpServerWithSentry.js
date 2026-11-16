@@ -64,7 +64,7 @@ export function wrapMcpServerWithSentry(arg0, recordInputs) {
               } else if (arg0 === 2) {
                 return { value, done: true };
               } else {
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "ulw" };
               }
             } else {
               try {
@@ -85,7 +85,7 @@ export function wrapMcpServerWithSentry(arg0, recordInputs) {
                     value = undefined;
                     c6 = 1;
                     c7 = 1;
-                    return { value: "flexDirection", done: true };
+                    return { value: "Path", done: true };
                   }
                 } else if (1 === tmp5) {
                   if (arg0 === 1) {

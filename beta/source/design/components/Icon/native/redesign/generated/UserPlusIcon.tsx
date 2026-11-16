@@ -1,14 +1,14 @@
-// Module ID: 5877
-// Function ID: 5878
+// Module ID: 6013
+// Function ID: 6014
 // Name: UserPlusIcon
-// Dependencies: [19, 21, 575, 5873, 5878, 2]
+// Dependencies: [19, 21, 575, 6009, 6014, 2]
 // Exports: UserPlusIcon
 
-// Module 5877 (UserPlusIcon)
+// Module 6013 (UserPlusIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5873 */;
-import AssetRegistry from "AssetRegistry" /* 5878 */;
+import BaseIconImage2 from "BaseIconImage" /* 6009 */;
+import AssetRegistry from "AssetRegistry" /* 6014 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

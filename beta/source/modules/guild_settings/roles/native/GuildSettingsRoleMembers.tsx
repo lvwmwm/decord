@@ -1,24 +1,24 @@
-// Module ID: 20255
-// Function ID: 20256
+// Module ID: 20585
+// Function ID: 20586
 // Name: GuildSettingsRoleMembers
-// Dependencies: [32, 19, 17, 7394, 1072, 21, 5170, 575, 5869, 1113, 20233, 7579, 504, 6122, 9187, 1187, 1252, 5406, 20234, 2118, 10970, 8131, 7191, 7315, 5891, 5783, 7071, 11665, 2]
+// Dependencies: [32, 19, 17, 7892, 1072, 21, 5306, 575, 6005, 1113, 20563, 14150, 504, 6258, 8404, 1187, 1256, 5542, 20564, 2121, 10929, 7988, 7629, 7825, 6027, 5919, 7443, 13466, 2]
 // Exports: default
 
-// Module 20255 (GuildSettingsRoleMembers)
+// Module 20585 (GuildSettingsRoleMembers)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import asyncRequire from "asyncRequire" /* 2118 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5869 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9187 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import asyncRequire from "asyncRequire" /* 2121 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8404 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 7394 */;
+import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 7892 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let item;
@@ -147,7 +147,7 @@ export default function GuildSettingsRoleMembers(guild) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     ActionSheetActionCreatorsDefault;
     const obj2 = { guild, role };
-    const tmp3 = asyncRequire(20234, dependencyMap.paths);
+    const tmp3 = asyncRequire(20564, dependencyMap.paths);
     openLazy(tmp3, "role-add-members-" + guild.id + "-" + role.id, obj2);
   }, items3);
   closure_6 = found.useCallback((item) => {

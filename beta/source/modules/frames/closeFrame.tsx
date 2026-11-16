@@ -1,15 +1,15 @@
-// Module ID: 14663
-// Function ID: 14664
+// Module ID: 15149
+// Function ID: 15150
 // Name: closeFrame
-// Dependencies: [6934, 14664, 5831, 14665, 11047, 2]
+// Dependencies: [7019, 15150, 5967, 15151, 7349, 2]
 // Exports: default
 
-// Module 14663 (closeFrame)
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5831 */;
-import leaveFrame from "leaveFrame" /* 11047 */;
-import closeFramePopoutDefault from "closeFramePopout" /* 14664 */;
-import VoiceChannelAppActionCreators from "VoiceChannelAppActionCreators" /* 14665 */;
-import FramesStore from "FramesStore" /* 6934 */;
+// Module 15149 (closeFrame)
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5967 */;
+import leaveFrame from "leaveFrame" /* 7349 */;
+import closeFramePopoutDefault from "closeFramePopout" /* 15150 */;
+import VoiceChannelAppActionCreators from "VoiceChannelAppActionCreators" /* 15151 */;
+import FramesStore from "FramesStore" /* 7019 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/frames/closeFrame.tsx");

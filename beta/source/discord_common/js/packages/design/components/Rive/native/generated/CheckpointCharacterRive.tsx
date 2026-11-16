@@ -1,13 +1,13 @@
-// Module ID: 5305
-// Function ID: 5306
+// Module ID: 5441
+// Function ID: 5442
 // Name: CheckpointCharacterRive
-// Dependencies: [109, 19, 21, 5239, 5306, 5292, 2]
+// Dependencies: [109, 19, 21, 5375, 5442, 5428, 2]
 // Exports: CheckpointCharacterRive
 
-// Module 5305 (CheckpointCharacterRive)
+// Module 5441 (CheckpointCharacterRive)
 import Fragment from "Fragment" /* 21 */;
-import BaseRive2 from "BaseRive" /* 5239 */;
-import RiveErrorBoundary2 from "RiveErrorBoundary" /* 5292 */;
+import BaseRive2 from "BaseRive" /* 5375 */;
+import RiveErrorBoundary2 from "RiveErrorBoundary" /* 5428 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

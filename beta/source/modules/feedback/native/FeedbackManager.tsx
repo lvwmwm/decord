@@ -1,16 +1,16 @@
-// Module ID: 19901
-// Function ID: 19902
+// Module ID: 20234
+// Function ID: 20235
 // Name: FeedbackManager
-// Dependencies: [2162, 5019, 5925, 7995, 10311, 19902, 6804, 19906, 2118, 7303, 5406, 5091, 19910, 19913, 19915, 2]
+// Dependencies: [2165, 5155, 6061, 6792, 12596, 20235, 6798, 20239, 2121, 7587, 5542, 5227, 20243, 20246, 20248, 2]
 
-// Module 19901 (FeedbackManager)
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 5091 */;
-import Constants from "Constants" /* 10311 */;
-import ApplicationStore from "ApplicationStore" /* 2162 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5925 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7995 */;
-import FeedbackManager2 from "feedback/FeedbackManager" /* 19902 */;
+// Module 20234 (FeedbackManager)
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 5227 */;
+import Constants from "Constants" /* 12596 */;
+import ApplicationStore from "ApplicationStore" /* 2165 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 6792 */;
+import FeedbackManager2 from "feedback/FeedbackManager" /* 20235 */;
 import size from "module_2" /* 2 */;
 
 let videoStats;

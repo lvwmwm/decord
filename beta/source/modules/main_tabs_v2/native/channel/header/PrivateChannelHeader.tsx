@@ -1,21 +1,21 @@
-// Module ID: 14841
-// Function ID: 14842
+// Module ID: 15641
+// Function ID: 15642
 // Name: PrivateChannelHeader
-// Dependencies: [19, 17, 5019, 5922, 5112, 1385, 1072, 21, 1187, 5170, 575, 504, 14838, 5808, 1113, 10896, 14842, 14843, 11508, 5226, 14845, 2]
+// Dependencies: [19, 17, 5155, 6058, 5248, 1388, 1072, 21, 1187, 5306, 575, 504, 15638, 5944, 1113, 10845, 15642, 15643, 12346, 5362, 15645, 2]
 
-// Module 14841 (PrivateChannelHeader)
+// Module 15641 (PrivateChannelHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import ChannelHeader from "ChannelHeader" /* 14838 */;
+import ChannelHeader from "ChannelHeader" /* 15638 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import PresenceStore from "PresenceStore" /* 5922 */;
-import RelationshipStore from "RelationshipStore" /* 5112 */;
-import UserStore from "UserStore" /* 1385 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import PresenceStore from "PresenceStore" /* 6058 */;
+import RelationshipStore from "RelationshipStore" /* 5248 */;
+import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let currentUser;

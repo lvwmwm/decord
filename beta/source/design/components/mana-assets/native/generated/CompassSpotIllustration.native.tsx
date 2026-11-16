@@ -1,26 +1,26 @@
-// Module ID: 19299
-// Function ID: 19300
+// Module ID: 19611
+// Function ID: 19612
 // Name: CompassSpotIllustration
-// Dependencies: [19, 21, 19300, 19301, 19302, 7168, 5874, 2]
+// Dependencies: [19, 21, 19612, 19613, 19614, 7755, 6010, 2]
 // Exports: CompassSpotIllustration
 
-// Module 19299 (CompassSpotIllustration)
+// Module 19611 (CompassSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 7168 */;
-import _modDef19300 from "module_19300" /* 19300 */;
-import _modDef19301 from "module_19301" /* 19301 */;
-import _modDef19302 from "module_19302" /* 19302 */;
+import react_native from "react-native" /* 7755 */;
+import _modDef19612 from "module_19612" /* 19612 */;
+import _modDef19613 from "module_19613" /* 19613 */;
+import _modDef19614 from "module_19614" /* 19614 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef19300 };
+let obj2 = { uri: _modDef19612 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef19301 };
+let obj3 = { uri: _modDef19613 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef19302 };
-({ uri: _modDef19302 });
+obj[3] = { uri: _modDef19614 };
+({ uri: _modDef19614 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/CompassSpotIllustration.native.tsx");
 

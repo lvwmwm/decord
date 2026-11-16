@@ -1,23 +1,23 @@
-// Module ID: 7369
-// Function ID: 7370
+// Module ID: 7872
+// Function ID: 7873
 // Name: GuildOnboardingActionCreators
-// Dependencies: [5, 32, 5075, 5019, 5082, 1385, 7364, 1072, 5088, 6864, 1282, 572, 1242, 7015, 12, 7370, 1380, 7374, 1252, 5921, 7375, 11, 1403, 7378, 7385, 2]
+// Dependencies: [5, 32, 5211, 5155, 5218, 1388, 7869, 1072, 5224, 6949, 1285, 572, 1242, 7691, 12, 7084, 1255, 7873, 1256, 6057, 7874, 11, 1406, 7877, 7884, 2]
 
-// Module 7369 (GuildOnboardingActionCreators)
+// Module 7872 (GuildOnboardingActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 5088 */;
-import ReadStateConstants from "ReadStateConstants" /* 6864 */;
-import ImpersonateActionCreators from "ImpersonateActionCreators" /* 7015 */;
-import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7378 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 5224 */;
+import ReadStateConstants from "ReadStateConstants" /* 6949 */;
+import ImpersonateActionCreators from "ImpersonateActionCreators" /* 7691 */;
+import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7877 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ImpersonateStore from "ImpersonateStore" /* 5075 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import GuildMemberStore from "GuildMemberStore" /* 5082 */;
-import UserStore from "UserStore" /* 1385 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7364 */;
+import ImpersonateStore from "ImpersonateStore" /* 5211 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import GuildMemberStore from "GuildMemberStore" /* 5218 */;
+import UserStore from "UserStore" /* 1388 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7869 */;
 import Constants from "Constants" /* 1072 */;
 import module_12_mod from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
@@ -180,23 +180,23 @@ let obj = {
       tmp = prompts[prompts.length - 1];
     }
     const selectedOptions = GuildOnboardingPromptsStore.getSelectedOptions(guildId);
-    const obj2 = items1(7370);
+    const obj2 = items1(7084);
     const selectedRoleIds = obj2.getSelectedRoleIds(selectedOptions);
-    const obj3 = items1(7370);
+    const obj3 = items1(7084);
     const selectedChannelIds = obj3.getSelectedChannelIds(selectedOptions);
     if (GuildOnboardingPromptsStore.getEnabled(guildId)) {
       defaultChannelIds = obj.getDefaultChannelIds(guildId);
     } else {
       defaultChannelIds = [];
     }
-    const tmp2Result = items1(7370);
+    const tmp2Result = items1(7084);
     [arr3, arr4] = tmp2Result.getChannelCoverageForOnboarding(guildId, prompts, defaultChannelIds);
     const items = [...defaultChannelIds];
     _slicedToArray(tmp2Result.getChannelCoverageForOnboarding(guildId, prompts, defaultChannelIds), 2);
     const mapped = items.map((item) => channel.getChannel(item));
-    const found = mapped.filter(tmp2(1380).isNotNullish);
-    const getFlattenedChannels = items1(7374).getFlattenedChannels;
-    items1(7374);
+    const found = mapped.filter(tmp2(1255).isNotNullish);
+    const getFlattenedChannels = items1(7873).getFlattenedChannels;
+    items1(7873);
     set = new Set(items);
     const length = getFlattenedChannels(guildId, set, found, true).length;
     if (null == tmp) {
@@ -206,15 +206,15 @@ let obj = {
       items1 = options.map((id) => id.id);
     }
     const connections = obj.getConnections(guildId);
-    const tmp2Result12 = items1(7370);
+    const tmp2Result12 = items1(7084);
     const providerConnectionState = tmp2Result12.getProviderConnectionState(connections);
-    const tmp2Result13 = items1(7370);
+    const tmp2Result13 = items1(7084);
     const applicationConnectionState = tmp2Result13.getApplicationConnectionState(connections);
     const obj4 = { step: prompts.length - 1, options_selected: num2, skipped: items1.length > 0, back: false, in_onboarding: true, is_final_step: true, roles_granted: selectedRoleIds.size, channels_granted: length, guild_onboarding_covered_channel_ids: arr3.map((id) => id.id), guild_onboarding_uncovered_channel_ids: arr4.map((id) => id.id) };
     const track = AnalyticsUtilsDefault.track;
     const GUILD_ONBOARDING_STEP_COMPLETED = constants.GUILD_ONBOARDING_STEP_COMPLETED;
     AnalyticsUtilsDefault;
-    const tmp2Result14 = items1(5921);
+    const tmp2Result14 = items1(6057);
     const merged = Object.assign(tmp2Result14.collectGuildAnalyticsMetadata(guildId));
     num2 = 0;
     if (null != tmp) {
@@ -223,20 +223,20 @@ let obj = {
     ({ connected: obj7.provider_connections_connected, notConnected: obj7.provider_connections_not_connected } = providerConnectionState);
     ({ connected: obj7.application_connections_connected, notConnected: obj7.application_connections_not_connected } = applicationConnectionState);
     track(GUILD_ONBOARDING_STEP_COMPLETED, obj4);
-    const ackGuildFeature = items1(7375).ackGuildFeature;
+    const ackGuildFeature = items1(7874).ackGuildFeature;
     const GUILD_ONBOARDING_QUESTION = ReadStateTypes.GUILD_ONBOARDING_QUESTION;
-    items1(7375);
+    items1(7874);
     const tmp13Result = SnowflakeUtilsDefault;
     ackGuildFeature(guildId, GUILD_ONBOARDING_QUESTION, tmp13Result.fromTimestamp(Date.now()));
     _updateOnboardingResponses(guildId, true);
     if (ImpersonateStore.isFullServerPreview(guildId)) {
-      const tmp2Result16 = items1(7015);
+      const tmp2Result16 = items1(7691);
       const result = tmp2Result16.updateImpersonatedChannels(guildId, items, []);
       const obj5 = { optInEnabled: defaultChannelIds.length > 0 };
-      const tmp2Result17 = items1(7015);
+      const tmp2Result17 = items1(7691);
       const result1 = tmp2Result17.updateImpersonatedData(guildId, obj5);
       const _Array = Array;
-      const tmp2Result18 = items1(7015);
+      const tmp2Result18 = items1(7691);
       const result2 = tmp2Result18.updateImpersonatedRoles(guildId, Array.from(selectedRoleIds));
       const currentUser = UserStore.getCurrentUser();
       if (null != currentUser) {
@@ -250,9 +250,9 @@ let obj = {
         }
         const obj6 = { memberOptions: obj8 };
         obj8 = { flags: tmp2Result20.setFlag(num3, GuildMemberFlags.COMPLETED_ONBOARDING, true) };
-        const updateImpersonatedData = items1(7015).updateImpersonatedData;
-        items1(7015);
-        tmp2Result20 = items1(1403);
+        const updateImpersonatedData = items1(7691).updateImpersonatedData;
+        items1(7691);
+        tmp2Result20 = items1(1406);
         const result3 = updateImpersonatedData(guildId, obj6);
       }
     }
@@ -300,7 +300,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -345,7 +345,7 @@ let obj = {
             return obj;
           }
           c1 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         } catch (tmp13) {
           c1 = 3;
           throw tmp13;

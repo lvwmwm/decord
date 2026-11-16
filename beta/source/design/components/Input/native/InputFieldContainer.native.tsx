@@ -1,23 +1,22 @@
-// Module ID: 7201
-// Function ID: 7202
+// Module ID: 7639
+// Function ID: 7640
 // Name: InputFieldContainer
-// Dependencies: [19, 17, 21, 575, 5756, 5170, 7202, 5783, 1652, 5793, 2]
+// Dependencies: [19, 17, 21, 575, 5892, 5306, 7640, 5919, 1655, 5929, 2]
 // Exports: InputFieldContainer
 
-// Module 7201 (InputFieldContainer)
+// Module 7639 (InputFieldContainer)
 import nativeDefault from "native" /* 575 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import useToken4 from "useToken" /* 5756 */;
-import spring_spring from "spring/spring" /* 5793 */;
-import InputTypes from "InputTypes" /* 7202 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import useToken4 from "useToken" /* 5892 */;
+import spring_spring from "spring/spring" /* 5929 */;
+import InputTypes from "InputTypes" /* 7640 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
-const _modDef1652 = _mod1652;
-let rect;
+const _modDef1655 = _mod1655;
 
 let Platform;
 let c3;
@@ -25,7 +24,7 @@ let closure_4;
 let hasOwnProperty;
 let metroRequire;
 let tmp;
-const Text_Text = tmp(5783);
+const Text_Text = tmp(5919);
 function useInputStyles(size) {
   let INPUT_FIELD_RADIUS_LG;
   let INPUT_FIELD_TEXT_STYLE_LG;
@@ -84,6 +83,7 @@ let closure_9 = createStyles.createStyles(() => {
   let obj13;
   let obj14;
   let obj15;
+  let rect;
   let str3;
   let str = arg0;
   if (arg0 === undefined) {
@@ -126,7 +126,7 @@ let closure_9 = createStyles.createStyles(() => {
   if (flag2) {
     num3 = 1;
   }
-  const obj9 = { container: obj8, background: { backgroundColor: nativeDefault.colors.INPUT_BACKGROUND_DEFAULT, borderWidth: nativeDefault.modules.mobile.INPUT_FIELD_BORDER_WIDTH, borderColor: nativeDefault.colors.INPUT_BORDER_DEFAULT }, placeholderText: { color: nativeDefault.colors.INPUT_PLACEHOLDER_TEXT_DEFAULT }, minHeight: { minHeight: tmp3 }, radius: { borderRadius: num }, padding: obj4[str], text: obj12, leadingText: obj13, trailingText: obj14, leadingIcon: { position: "absolute", left: 0, top: 0, bottom: 0, paddingTop: tmp5, paddingBottom: tmp5, paddingStart: tmp5, paddingEnd: tmp6, justifyContent: "center", zIndex: 1, pointerEvents: "none" }, trailingIcon: { position: "absolute", right: 0, top: 0, bottom: 0, paddingTop: tmp5, paddingBottom: tmp5, paddingStart: tmp6, paddingEnd: tmp5, justifyContent: "center", zIndex: 1, pointerEvents: "none" }, splitBorder: obj15 };
+  const obj9 = { container: obj8, background: { backgroundColor: nativeDefault.colors.INPUT_BACKGROUND_DEFAULT, borderWidth: nativeDefault.modules.mobile.INPUT_FIELD_BORDER_WIDTH, borderColor: nativeDefault.colors.INPUT_BORDER_DEFAULT }, placeholderText: { color: nativeDefault.colors.INPUT_PLACEHOLDER_TEXT_DEFAULT }, minHeight: { minHeight: tmp3 }, radius: { borderRadius: num }, padding: obj4[str], text: obj12, leadingText: obj13, trailingText: obj14, leadingIcon: { position: "absolute", left: 0, top: 0, bottom: 0, paddingTop: tmp5, paddingBottom: tmp5, paddingStart: tmp5, paddingEnd: tmp6, justifyContent: "center", zIndex: 1, pointerEvents: "none" }, trailingIcon: { position: "absolute", right: 0, top: 0, bottom: 0, paddingTop: tmp5, paddingBottom: tmp5, paddingStart: tmp6, paddingEnd: tmp5, justifyContent: "center", zIndex: 1, pointerEvents: "none" }, splitBorder: obj15, leadingDivider: rect, leadingDividerText: { flexGrow: 0 } };
   ({ backgroundColor: nativeDefault.colors.INPUT_BACKGROUND_DEFAULT, borderWidth: nativeDefault.modules.mobile.INPUT_FIELD_BORDER_WIDTH, borderColor: nativeDefault.colors.INPUT_BORDER_DEFAULT });
   obj12 = { lineHeight: undefined, color: flag ? colors.TEXT_MUTED : colors.TEXT_DEFAULT, flexGrow: 1 };
   ({ color: nativeDefault.colors.INPUT_PLACEHOLDER_TEXT_DEFAULT });
@@ -138,6 +138,7 @@ let closure_9 = createStyles.createStyles(() => {
   const merged2 = Object.assign(tmp7);
   obj15 = { borderRightWidth: 1, borderRightColor: nativeDefault.colors.BORDER_STRONG };
   const merged3 = Object.assign(tmp7);
+  rect = { top: 0, bottom: 0, justifyContent: "center", paddingVertical: 0, paddingEnd: tmp7.paddingHorizontal, borderRightWidth: 1, borderRightColor: tmp4(575).colors.BORDER_STRONG };
   return obj9;
 });
 createStyles = createStyles_mod;
@@ -187,8 +188,8 @@ export function InputFieldContainer(isFocused) {
   }
   const tmp4Result = tmp4(obj);
   const items = [closure_11, str, tmp, tmp2, , ];
-  const useAnimatedStyle = _mod1652.useAnimatedStyle;
-  _mod1652;
+  const useAnimatedStyle = _mod1655.useAnimatedStyle;
+  _mod1655;
   items[4] = spring_spring.withSpring;
   items[5] = closure_7;
   let c0;
@@ -232,6 +233,6 @@ export function InputFieldContainer(isFocused) {
   const animatedStyle = useAnimatedStyle(InputFieldContainerNativeTsx1);
   const obj3 = { style: items3 };
   items3 = [_false.absoluteFill, tmp4Result.radius, animatedStyle];
-  items4 = [hasOwnProperty(_modDef1652.View, obj3), children];
+  items4 = [hasOwnProperty(_modDef1655.View, obj3), children];
   return metroRequire(React3, obj2);
 }

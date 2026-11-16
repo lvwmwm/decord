@@ -1,16 +1,16 @@
-// Module ID: 8274
-// Function ID: 8275
+// Module ID: 8403
+// Function ID: 8404
 // Name: ManualReviewActionCreators
-// Dependencies: [5, 502, 1072, 7587, 1089, 1282, 572, 8071, 8057, 7601, 2]
+// Dependencies: [5, 502, 1072, 6900, 1089, 1285, 572, 8205, 8190, 6905, 2]
 // Exports: handleManualReviewCta, invalidateAgeVerificationCaches, invalidateManualReviewCache
 
-// Module 8274 (ManualReviewActionCreators)
+// Module 8403 (ManualReviewActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import Constants2 from "Constants" /* 7587 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 8071 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
+import Constants2 from "Constants" /* 6900 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 8205 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
@@ -61,7 +61,7 @@ obj = function _handleManualReviewCta() {
         const obj5 = { value, done: true };
         return obj5;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       let c3;
@@ -133,7 +133,7 @@ obj = function _handleManualReviewCta() {
               }
             }
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } else if (1 === c4) {
           c3 = 0;

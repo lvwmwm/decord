@@ -1,15 +1,15 @@
-// Module ID: 16626
-// Function ID: 16627
+// Module ID: 16902
+// Function ID: 16903
 // Name: notifications/NotificationSettingsUtils
-// Dependencies: [32, 19, 16622, 16627, 15904, 504, 1449, 2]
+// Dependencies: [32, 19, 16898, 16903, 16177, 504, 1452, 2]
 // Exports: getAssignedNotifSettingsAndMappings, useIsDeclarativeSettingsUIAvailable, useNotifCategoryVisibility, useNotifSettingVisibility
 
-// Module 16626 (notifications/NotificationSettingsUtils)
-import DeclarativeNotificationSettingsRedesignExperiment from "DeclarativeNotificationSettingsRedesignExperiment" /* 15904 */;
-import NotificationSettingsExperiments from "NotificationSettingsExperiments" /* 16627 */;
+// Module 16902 (notifications/NotificationSettingsUtils)
+import DeclarativeNotificationSettingsRedesignExperiment from "DeclarativeNotificationSettingsRedesignExperiment" /* 16177 */;
+import NotificationSettingsExperiments from "NotificationSettingsExperiments" /* 16903 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import NotificationSettingsConstants from "NotificationSettingsConstants" /* 16622 */;
+import NotificationSettingsConstants from "NotificationSettingsConstants" /* 16898 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -114,9 +114,9 @@ export function useNotifCategoryVisibility(CATEGORY_CALLS_MESSAGES) {
   const obj = DeclarativeNotificationSettingsRedesignExperiment;
   return obj.useIsDeclarativeNotificationSettingsRedesignEnabled("useIsDeclarativeSettingsUIAvailable:" + CATEGORY_CALLS_MESSAGES);
 }
-export function useNotifSettingVisibility(CALLS) {
-  _require = CALLS;
-  const items = [CALLS];
+export function useNotifSettingVisibility(REACTIONS_CHOICE) {
+  _require = REACTIONS_CHOICE;
+  const items = [REACTIONS_CHOICE];
   const memo = react.useMemo(() => {
     function getExperimentAndConfigBySettingId(arg0) {
       const iter = closure_1_7[Symbol.iterator]();
@@ -139,7 +139,7 @@ export function useNotifSettingVisibility(CALLS) {
       }
       return {};
     }
-    return getExperimentAndConfigBySettingId(CALLS);
+    return getExperimentAndConfigBySettingId(REACTIONS_CHOICE);
   }, items);
   const experiment = memo.experiment;
   const variations = memo.variations;

@@ -1,26 +1,26 @@
-// Module ID: 10040
-// Function ID: 10041
+// Module ID: 11065
+// Function ID: 11066
 // Name: ChatItem
-// Dependencies: [32, 19, 17, 5171, 1072, 8482, 21, 575, 10041, 1088, 10042, 6976, 10043, 5170, 1377, 8814, 5756, 671, 5747, 2]
+// Dependencies: [32, 19, 17, 5307, 1072, 9160, 21, 575, 11066, 1088, 11067, 7062, 11068, 5306, 1380, 11069, 5892, 671, 5883, 2]
 // Exports: default
 
-// Module 10040 (ChatItem)
+// Module 11065 (ChatItem)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import Constants from "Constants" /* 1072 */;
 import MessageTypes2 from "MessageTypes" /* 1088 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import isSystemMessageDefault from "isSystemMessage" /* 6976 */;
-import AutoModerationSystemMessageViewNativeComponent from "AutoModerationSystemMessageViewNativeComponent" /* 10041 */;
-import MessageViewNativeComponent from "MessageViewNativeComponent" /* 10042 */;
-import SystemMessageViewNativeComponent from "SystemMessageViewNativeComponent" /* 10043 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import isSystemMessageDefault from "isSystemMessage" /* 7062 */;
+import AutoModerationSystemMessageViewNativeComponent from "AutoModerationSystemMessageViewNativeComponent" /* 11066 */;
+import MessageViewNativeComponent from "MessageViewNativeComponent" /* 11067 */;
+import SystemMessageViewNativeComponent from "SystemMessageViewNativeComponent" /* 11068 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore_mod from "AccessibilityStore" /* 5171 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 8482 */;
+import AccessibilityStore_mod from "AccessibilityStore" /* 5307 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 9160 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -28,7 +28,7 @@ let c9;
 let metroImportAll;
 let tmp;
 let unpackModuleId;
-const RowGeneratorTypes = tmp(8814);
+const RowGeneratorTypes = tmp(11069);
 function DCDChatItem(message) {
   let tmp3Result;
   message = message.message;

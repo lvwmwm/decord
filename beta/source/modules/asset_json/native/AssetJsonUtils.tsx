@@ -58,7 +58,7 @@ let jsonAssets = function _loadJsonAsset() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       try {
@@ -86,7 +86,7 @@ let jsonAssets = function _loadJsonAsset() {
             value = undefined;
             c4 = 1;
             c5 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "Path", done: true };
           }
         } else if (1 === tmp4) {
           if (arg0 === 1) {

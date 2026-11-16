@@ -1,12 +1,12 @@
-// Module ID: 11547
-// Function ID: 11548
+// Module ID: 9789
+// Function ID: 9790
 // Name: BlockedPaymentsCountryActionSheet
-// Dependencies: [19, 21, 5420, 11548, 2]
+// Dependencies: [19, 21, 5556, 9718, 2]
 // Exports: default
 
-// Module 11547 (BlockedPaymentsCountryActionSheet)
+// Module 9789 (BlockedPaymentsCountryActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5420 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5556 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

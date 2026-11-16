@@ -1,8 +1,8 @@
-// Module ID: 13785
-// Function ID: 13786
+// Module ID: 14357
+// Function ID: 14358
 // Dependencies: [2]
 
-// Module 13785
+// Module 14357
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_headwear_06_sunGlasses.webp.js");

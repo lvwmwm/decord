@@ -1,11 +1,11 @@
-// Module ID: 5046
-// Function ID: 5047
+// Module ID: 5182
+// Function ID: 5183
 // Name: BridgedStore
-// Dependencies: [5047, 2]
+// Dependencies: [5183, 2]
 // Exports: ensureValidMode
 
-// Module 5046 (BridgedStore)
-import FluxApi from "FluxApi" /* 5047 */;
+// Module 5182 (BridgedStore)
+import FluxApi from "FluxApi" /* 5183 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/libdiscore/stores/BridgedStore.tsx");

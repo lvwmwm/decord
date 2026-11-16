@@ -1,13 +1,13 @@
-// Module ID: 7680
-// Function ID: 7681
+// Module ID: 9566
+// Function ID: 9567
 // Name: useSelectedDismissibleContentShared
-// Dependencies: [19, 5006, 5016, 5007, 5010, 2]
+// Dependencies: [19, 5142, 5152, 5143, 5146, 2]
 // Exports: useSelectedDismissibleContentShared
 
-// Module 7680 (useSelectedDismissibleContentShared)
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5016 */;
+// Module 9566 (useSelectedDismissibleContentShared)
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
 import react_mod from "react" /* 19 */;
-import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 5006 */;
+import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

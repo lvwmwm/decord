@@ -1,13 +1,13 @@
-// Module ID: 19209
-// Function ID: 19210
+// Module ID: 19521
+// Function ID: 19522
 // Name: MessageSearchResultParser
-// Dependencies: [5113, 9950, 19210, 14159, 19211, 12, 2]
+// Dependencies: [5249, 9066, 19522, 14747, 19523, 12, 2]
 
-// Module 19209 (MessageSearchResultParser)
+// Module 19521 (MessageSearchResultParser)
 import _mod12 from "module_12" /* 12 */;
-import SearchConstants from "SearchConstants" /* 9950 */;
-import CachedSearchResultParser2 from "CachedSearchResultParser" /* 19210 */;
-import MessageRecord from "MessageRecord" /* 5113 */;
+import SearchConstants from "SearchConstants" /* 9066 */;
+import CachedSearchResultParser2 from "CachedSearchResultParser" /* 19522 */;
+import MessageRecord from "MessageRecord" /* 5249 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

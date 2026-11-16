@@ -1,12 +1,12 @@
-// Module ID: 12385
-// Function ID: 12386
+// Module ID: 13274
+// Function ID: 13275
 // Name: conjureHistoryRestore
-// Dependencies: [5, 12386, 12382, 1113, 4026, 2]
+// Dependencies: [5, 13275, 13271, 1113, 4131, 2]
 // Exports: rewindDataAfterVersionRestore
 
-// Module 12385 (conjureHistoryRestore)
-import conjureHistoryRequests from "conjureHistoryRequests" /* 12382 */;
-import conjureDatabaseLock from "conjureDatabaseLock" /* 12386 */;
+// Module 13274 (conjureHistoryRestore)
+import conjureHistoryRequests from "conjureHistoryRequests" /* 13271 */;
+import conjureDatabaseLock from "conjureDatabaseLock" /* 13275 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let obj = function _runConjureDataRewind() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       try {

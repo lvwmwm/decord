@@ -1,27 +1,28 @@
-// Module ID: 19526
-// Function ID: 19527
+// Module ID: 19855
+// Function ID: 19856
 // Name: useHexagonCampaignExpirySheetEligibility
-// Dependencies: [32, 19, 5194, 6655, 1385, 16569, 5195, 1089, 5198, 5201, 504, 15655, 5229, 17358, 17364, 5202, 5003, 2]
+// Dependencies: [32, 19, 5330, 6790, 1192, 1388, 16845, 5331, 1195, 5334, 5337, 504, 15314, 5365, 17635, 5338, 5139, 17629, 2]
 // Exports: useHexagonCampaignExpirySheetEligibility
 
-// Module 19526 (useHexagonCampaignExpirySheetEligibility)
-import DurationsDefault from "Durations" /* 1089 */;
-import restoreHexagonCampaignPerks from "restoreHexagonCampaignPerks" /* 17364 */;
+// Module 19855 (useHexagonCampaignExpirySheetEligibility)
+import ThemeConstants from "ThemeConstants" /* 1195 */;
+import restoreHexagonCampaignPerks from "restoreHexagonCampaignPerks" /* 17635 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5194 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6655 */;
-import UserStore from "UserStore" /* 1385 */;
-import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 16569 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5195 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5330 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6790 */;
+import ThemeStore from "ThemeStore" /* 1192 */;
+import UserStore from "UserStore" /* 1388 */;
+import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 16845 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5331 */;
 import size from "module_2" /* 2 */;
 
-let gradientPreset;
+let gradientPreset, syncedClientTheme;
 
+let c10;
 let c9;
-let metroImportAll;
-({ HEXAGON_CAMPAIGN_NON_PREMIUM_CUTOFF_AT_MS: metroImportAll, HexagonCampaignPerk: c9 } = HexagonCampaignConstants);
-let closure_10 = 3 * DurationsDefault.Millis.DAY;
+({ HEXAGON_CAMPAIGN_NON_PREMIUM_CUTOFF_AT_MS: c9, HexagonCampaignPerk: c10 } = HexagonCampaignConstants);
+const SystemTheme = ThemeConstants.SystemTheme;
 let result = size.fileFinishedImporting("modules/hexagon_campaign/native/useHexagonCampaignExpirySheetEligibility.tsx");
 
 export function useHexagonCampaignExpirySheetEligibility(MainViewTooltipActionSheets) {
@@ -32,9 +33,10 @@ export function useHexagonCampaignExpirySheetEligibility(MainViewTooltipActionSh
   let tmp7;
   let tmp8;
   let tmp = require;
+  const tmp2 = result1;
   let obj = require("HexagonCampaignExperiment");
   let isHexagonCampaignEnabled = obj.useIsHexagonCampaignEnabled(MainViewTooltipActionSheets);
-  const items = [UserStore];
+  let items = [UserStore];
   const obj2 = require("get initialized");
   const stateFromStores = obj2.useStateFromStores(items, () => currentUser.getCurrentUser());
   const items1 = [GatewayConnectionStore];
@@ -48,35 +50,45 @@ export function useHexagonCampaignExpirySheetEligibility(MainViewTooltipActionSh
   if (stateFromStores1) {
     tmp8(true);
   }
-  let tmpResult = tmp(tmp2[11]);
+  const tmpResult = tmp(tmp2[12]);
   const currentAppIcon = tmpResult.useCurrentAppIcon();
-  const items2 = [ClientThemesBackgroundStore];
-  const tmpResult8 = tmp(result1[10]);
+  const items2 = [ClientThemesBackgroundStore, ThemeStore];
+  const tmpResult8 = tmp(tmp2[11]);
   const stateFromStores2 = tmpResult8.useStateFromStores(items2, () => {
-    let tmp7;
+    let someResult;
+    const tmp = require;
     const obj = require("isPerModeThemingActive");
     if (obj.isPerModeThemingActive()) {
-      const tmpResult = require("getAppliedHexagonCampaignPerks");
-      tmp7 = tmpResult.getHexagonCampaignClientThemeSystemThemes().length > 0;
+      const items = [, ];
+      ({ LIGHT: arr[0], DARK: arr[1] } = SystemTheme);
+      someResult = items.some((item) => {
+        const isHexagonCampaignClientThemePreset = closure_1_0(result1[9]).isHexagonCampaignClientThemePreset;
+        closure_1_0(result1[9]);
+        syncedClientTheme = syncedClientTheme.getSyncedClientTheme(item);
+        let prop;
+        if (syncedClientTheme != null) {
+          prop = syncedClientTheme.backgroundGradientPresetId;
+        }
+        return isHexagonCampaignClientThemePreset(prop);
+      });
     } else {
       gradientPreset = gradientPreset.gradientPreset;
       let id;
-      const isHexagonCampaignClientThemePreset = require("HexagonCampaignUtils").isHexagonCampaignClientThemePreset;
-      require("HexagonCampaignUtils");
-      const tmp4 = gradientPreset;
+      let isHexagonCampaignClientThemePreset = tmp(tmp2[9]).isHexagonCampaignClientThemePreset;
+      tmp(result1[9]);
       if (gradientPreset != null) {
         id = gradientPreset.id;
       }
-      tmp7 = isHexagonCampaignClientThemePreset(id) || tmp4.hasHiddenHexagonCampaignPreset;
+      someResult = isHexagonCampaignClientThemePreset(id) && !tmp4.isUpsellGradientPreview || tmp4.hasHiddenHexagonCampaignPreset;
     }
-    return tmp7;
+    return someResult;
   });
   const items3 = [HexagonCampaignPersistedStore];
-  const tmpResult9 = tmp(result1[10]);
+  const tmpResult9 = tmp(tmp2[11]);
   let stateFromStores3 = tmpResult9.useStateFromStores(items3, () => HexagonCampaignPersistedStore.hasRestoredExpiredClientTheme);
   let result = tmp7 && null != stateFromStores && stateFromStores2;
   if (result) {
-    const tmpResult10 = tmp(result1[8]);
+    const tmpResult10 = tmp(tmp2[9]);
     result = tmpResult10.isHexagonCampaignPerkExpired(constants.CLIENT_THEME, stateFromStores.premiumType);
   }
   require = result;
@@ -88,15 +100,15 @@ export function useHexagonCampaignExpirySheetEligibility(MainViewTooltipActionSh
       require = obj.restoreExpiredHexagonCampaignClientTheme([]);
     }
   }, items4);
-  const tmpResult11 = tmp(result1[15]);
+  const tmpResult11 = tmp(tmp2[15]);
   result1 = tmpResult11.useIsDismissibleContentDismissed_UNSAFE(tmp(tmp2[16]).DismissibleContent.HEXAGON_CAMPAIGN_PERKS_EXPIRED_PROMO_SHEET, { bypassNewUserCheck: true });
   result2 = tmp7 && null != stateFromStores;
   if (result2) {
-    const tmpResult12 = tmp(result1[8]);
+    const tmpResult12 = tmp(tmp2[9]);
     result2 = tmpResult12.hasHexagonCampaignDisplayNameFont(stateFromStores.displayNameStyles);
   }
   if (result2) {
-    const tmpResult13 = tmp(result1[8]);
+    const tmpResult13 = tmp(tmp2[9]);
     result2 = tmpResult13.isHexagonCampaignPerkExpired(constants.DISPLAY_NAME_STYLE, stateFromStores.premiumType);
   }
   const items5 = [result1, result2];
@@ -110,7 +122,7 @@ export function useHexagonCampaignExpirySheetEligibility(MainViewTooltipActionSh
   if (tmp7) {
     if (null != stateFromStores) {
       const obj5 = { isClientThemeApplied: stateFromStores2, displayNameStyles: stateFromStores.displayNameStyles, currentAppIconId: currentAppIcon };
-      const tmpResult14 = tmp(result1[13]);
+      const tmpResult14 = tmp(tmp2[17]);
       const appliedHexagonCampaignPerks = tmpResult14.getAppliedHexagonCampaignPerks(obj5);
       const premiumType = stateFromStores.premiumType;
       const _Date = Date;
@@ -126,7 +138,14 @@ export function useHexagonCampaignExpirySheetEligibility(MainViewTooltipActionSh
         isHexagonCampaignEnabled = !stateFromStores3;
       }
       if (isHexagonCampaignEnabled) {
-        isHexagonCampaignEnabled = mapped.some((item) => item === closure_2_8 && closure_1 >= item - closure_2_10 && closure_1 < item);
+        isHexagonCampaignEnabled = mapped.some((item) => {
+          require = item === closure_2_9;
+          if (require) {
+            const obj = require("HexagonCampaignUtils");
+            require = obj.isWithinHexagonCampaignExpiringSoonWindow(item, closure_1);
+          }
+          return require;
+        });
       }
     }
     return { isExpiringSoonEligible: false, isExpiredEligible: false };

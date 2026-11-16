@@ -1,24 +1,24 @@
-// Module ID: 18699
-// Function ID: 18700
+// Module ID: 18990
+// Function ID: 18991
 // Name: GuildUpsellChannelList
-// Dependencies: [19, 17, 15943, 6829, 18700, 1072, 21, 5170, 575, 1113, 15098, 18701, 18705, 5349, 504, 18709, 1252, 14545, 7073, 5783, 5790, 17433, 18710, 2]
+// Dependencies: [19, 17, 16216, 6836, 18991, 1072, 21, 5306, 575, 1113, 15695, 18992, 18996, 5485, 504, 19000, 1256, 15026, 7445, 5919, 5926, 17703, 19001, 2]
 // Exports: default
 
-// Module 18699 (GuildUpsellChannelList)
+// Module 18990 (GuildUpsellChannelList)
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5783 */;
-import BumpingFistsSpotIllustration from "BumpingFistsSpotIllustration" /* 15098 */;
-import MobileGameCommunitiesConstants from "MobileGameCommunitiesConstants" /* 18700 */;
-import ChatControllersSpotIllustration from "ChatControllersSpotIllustration" /* 18701 */;
-import MiniaturesSpotIllustration from "MiniaturesSpotIllustration" /* 18705 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import BumpingFistsSpotIllustration from "BumpingFistsSpotIllustration" /* 15695 */;
+import MobileGameCommunitiesConstants from "MobileGameCommunitiesConstants" /* 18991 */;
+import ChatControllersSpotIllustration from "ChatControllersSpotIllustration" /* 18992 */;
+import MiniaturesSpotIllustration from "MiniaturesSpotIllustration" /* 18996 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LocalAppDetectionStore from "LocalAppDetectionStore" /* 15943 */;
-import ConsentStore from "ConsentStore" /* 6829 */;
+import LocalAppDetectionStore from "LocalAppDetectionStore" /* 16216 */;
+import ConsentStore from "ConsentStore" /* 6836 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -212,11 +212,11 @@ export default function GuildUpsellChannelList(style) {
     const obj7 = { style: items2, children: items3 };
     items2[1] = buttonGroupWide;
     const obj8 = { variant: "primary", size: "md", text: intl3.string(intl7.t.B44MTm), onPress: callback1, grow: true };
-    const Button = tmp6(5790).Button;
+    const Button = tmp6(5926).Button;
     intl3 = tmp6(1113).intl;
     items3 = [tmp5(Button, obj8), ];
     const obj9 = { variant: "secondary", size: "md", text: intl4.string(intl7.t.wKy7MA), onPress: callback2, grow: true };
-    const Button2 = tmp6(5790).Button;
+    const Button2 = tmp6(5926).Button;
     intl4 = tmp6(1113).intl;
     items3[1] = tmp5(Button2, obj9);
     items[3] = tmp2(tmp3, obj7);
@@ -224,11 +224,11 @@ export default function GuildUpsellChannelList(style) {
     if (tmp2Result) {
       const obj10 = { style: tmp4.joinSection, children: items4 };
       const obj11 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: intl5.string(intl7.t.rJRote) };
-      const Text3 = tmp6(5783).Text;
+      const Text3 = tmp6(5919).Text;
       intl5 = tmp6(1113).intl;
       items4 = [tmp5(Text3, obj11), ];
       const obj21 = { variant: "body-sm/medium", color: "text-subtle", style: tmp4.descriptionSpacing, children: intl6.string(intl7.t.pJT2DK) };
-      const Text4 = tmp6(5783).Text;
+      const Text4 = tmp6(5919).Text;
       intl6 = tmp6(1113).intl;
       items4[1] = tmp5(Text4, obj21);
       tmp2Result = tmp2(tmp3, obj10);

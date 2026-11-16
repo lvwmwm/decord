@@ -1,15 +1,15 @@
-// Module ID: 7581
-// Function ID: 7582
+// Module ID: 10974
+// Function ID: 10975
 // Name: LazyLoadedThreadManager
-// Dependencies: [6655, 5023, 5019, 5073, 1072, 5026, 572, 7493, 5208, 5221, 1282, 2]
+// Dependencies: [6790, 5159, 5155, 5209, 1072, 5162, 572, 7241, 5344, 5357, 1285, 2]
 
-// Module 7581 (LazyLoadedThreadManager)
+// Module 10974 (LazyLoadedThreadManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ChannelConstants from "ChannelConstants" /* 5026 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6655 */;
-import ChannelRecord from "ChannelRecord" /* 5023 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5073 */;
+import ChannelConstants from "ChannelConstants" /* 5162 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6790 */;
+import ChannelRecord from "ChannelRecord" /* 5159 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ let c9;
 let closure_4;
 let hasOwnProperty;
 let metroImportAll;
-const f92424 = () => {
+const f101315 = () => {
   closure_11 = {};
   channelId = channelId.getChannelId();
   const tmp2 = null != channelId && null == channel.getChannel(channelId);
@@ -33,7 +33,7 @@ function initialize() {
   if (!tmp) {
     c12 = true;
     const obj = DispatcherDefault;
-    const subscription = obj.subscribe("CONNECTION_OPEN", f92424);
+    const subscription = obj.subscribe("CONNECTION_OPEN", f101315);
   }
 }
 function dispatchLoadedThread(nextResult, arg1) {
@@ -64,7 +64,7 @@ function loadThread(c1) {
       c12 = true;
       let tmp2 = importDefault;
       let obj = DispatcherDefault;
-      const subscription = obj.subscribe("CONNECTION_OPEN", f92424);
+      const subscription = obj.subscribe("CONNECTION_OPEN", f101315);
     }
     if (GatewayConnectionStore.isConnected()) {
       if (null != closure_11[c1]) {
@@ -81,11 +81,11 @@ function loadThread(c1) {
         const matchPath = require("matchPathCompat").matchPath;
         CHANNEL = constants.CHANNEL;
         require("matchPathCompat");
-        const RouteParam = tmp13(5221).RouteParam;
+        const RouteParam = tmp13(5357).RouteParam;
         guildIdResult = RouteParam.guildId();
-        RouteParam2 = tmp13(5221).RouteParam;
+        RouteParam2 = tmp13(5357).RouteParam;
         importDefault = matchPath(pathname, obj2);
-        const HTTP = tmp13(1282).HTTP;
+        const HTTP = tmp13(1285).HTTP;
         const get = HTTP.get;
         const obj3 = { url: closure_8.CHANNEL(c1), rejectWithError: tmp13Result2.rejectWithMigratedError() };
         tmp13Result2 = require("HTTPUtils");
@@ -109,7 +109,7 @@ function loadThread(c1) {
         const catchPromise = nextPromise.catch(() => {
           let guildId;
           closure_11[id] = { type: "NOT_FOUND" };
-          const obj = { id, guild_id: guildId, parent_id: "r" };
+          const obj = { id, guild_id: guildId, parent_id: "Array" };
           guildId = undefined;
           const dispatch = DispatcherDefault.dispatch;
           DispatcherDefault;
@@ -159,7 +159,7 @@ let obj = {
       let nextResult = iter.next();
       while (iter !== undefined) {
         let tmp10 = nextResult;
-        if (nextResult !== items1(7493).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+        if (nextResult !== items1(7241).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
           if (!isStaticChannelRoute(tmp10)) {
             if (null == ChannelStore.getChannel(tmp10)) {
               let tmp19 = closure_11[tmp10];
@@ -180,11 +180,11 @@ let obj = {
 
         });
       } else {
-        const HTTP = items1(1282).HTTP;
+        const HTTP = items1(1285).HTTP;
         const request = { url: closure_8.THREADS_BULK, body: obj2, rejectWithError: obj4.rejectWithMigratedError() };
         const post = HTTP.post;
         obj2 = { thread_ids: items1 };
-        obj4 = items1(1282);
+        obj4 = items1(1285);
         const postResult = post(request);
         const nextPromise = postResult.then((body) => {
           body = body.body;

@@ -1,13 +1,13 @@
-// Module ID: 5128
-// Function ID: 5129
+// Module ID: 5264
+// Function ID: 5265
 // Name: burst_reactions/BurstReactionEffectUtils
-// Dependencies: [5, 32, 19, 17, 5120, 5129, 2022, 1377, 5166, 2]
+// Dependencies: [5, 32, 19, 17, 5256, 5265, 2025, 1380, 5302, 2]
 // Exports: useBurstReactionAnimationSource, useSuperReactionAnimationSourceFromLocalImage
 
-// Module 5128 (burst_reactions/BurstReactionEffectUtils)
+// Module 5264 (burst_reactions/BurstReactionEffectUtils)
 import react_native from "react-native" /* 17 */;
-import EmojiUtils from "EmojiUtils" /* 5120 */;
-import getBurstAnimation from "getBurstAnimation" /* 5129 */;
+import EmojiUtils from "EmojiUtils" /* 5256 */;
+import getBurstAnimation from "getBurstAnimation" /* 5265 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -36,7 +36,7 @@ let obj = function _generateAnimationSource() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         let c9;
@@ -227,7 +227,7 @@ obj = function _generateAnimationSourceFromLocalImage() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -260,7 +260,7 @@ obj = function _generateAnimationSourceFromLocalImage() {
               b = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "Path", done: true };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {
@@ -381,7 +381,7 @@ export function useBurstReactionAnimationSource(channelId) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } else {
           try {
@@ -417,7 +417,7 @@ export function useBurstReactionAnimationSource(channelId) {
               closure_1_4(closure_0);
             }
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           } catch (tmp17) {
             c3 = 3;
             throw tmp17;
@@ -458,7 +458,7 @@ export function useSuperReactionAnimationSourceFromLocalImage(animationSource) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } else {
           try {
@@ -491,7 +491,7 @@ export function useSuperReactionAnimationSourceFromLocalImage(animationSource) {
               animationSource = value;
               c2(animationSource);
               c3 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "ulw" };
             }
           } catch (tmp13) {
             c3 = 3;

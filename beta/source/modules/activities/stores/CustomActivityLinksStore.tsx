@@ -1,12 +1,12 @@
-// Module ID: 15020
-// Function ID: 15021
+// Module ID: 15554
+// Function ID: 15555
 // Name: CustomActivityLinksStore
-// Dependencies: [15021, 504, 572, 2]
+// Dependencies: [15555, 504, 572, 2]
 
-// Module 15020 (CustomActivityLinksStore)
+// Module 15554 (CustomActivityLinksStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import CustomActivityLinkRecord from "CustomActivityLinkRecord" /* 15021 */;
+import CustomActivityLinkRecord from "CustomActivityLinkRecord" /* 15555 */;
 import size from "module_2" /* 2 */;
 
 let closure_1;

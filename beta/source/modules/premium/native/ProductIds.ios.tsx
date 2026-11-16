@@ -1,12 +1,12 @@
-// Module ID: 7709
-// Function ID: 7710
+// Module ID: 9583
+// Function ID: 9584
 // Name: premium/ProductIds
-// Dependencies: [1387, 7710, 2]
+// Dependencies: [1390, 9584, 2]
 // Exports: getPlanIdForGift, getProductIdForGift
 
-// Module 7709 (premium/ProductIds)
-import AppleProductIds from "AppleProductIds" /* 7710 */;
-import PremiumConstants from "PremiumConstants" /* 1387 */;
+// Module 9583 (premium/ProductIds)
+import AppleProductIds from "AppleProductIds" /* 9584 */;
+import PremiumConstants from "PremiumConstants" /* 1390 */;
 import size from "module_2" /* 2 */;
 
 let PREMIUM_TIER_0_LIKELIHOOD_TRIAL_ID;

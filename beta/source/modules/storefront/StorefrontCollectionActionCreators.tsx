@@ -1,19 +1,19 @@
-// Module ID: 9703
-// Function ID: 9704
+// Module ID: 10459
+// Function ID: 10460
 // Name: StorefrontCollectionActionCreators
-// Dependencies: [5, 2186, 9701, 7846, 1072, 8898, 8897, 572, 6620, 6612, 2]
+// Dependencies: [5, 2189, 9451, 8502, 1072, 8582, 8581, 572, 6756, 6748, 2]
 // Exports: maybeFetchCollectionsAfter, maybeFetchCollectionsForApplication, maybeFetchCollectionsForApplicationPage, maybeFetchCollectionsWithProducts
 
-// Module 9703 (StorefrontCollectionActionCreators)
+// Module 10459 (StorefrontCollectionActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import StoreUtils from "StoreUtils" /* 6620 */;
-import StorefrontCacheUtils from "StorefrontCacheUtils" /* 8897 */;
-import getStorefrontNativeStoreQuery from "getStorefrontNativeStoreQuery" /* 8898 */;
+import StoreUtils from "StoreUtils" /* 6756 */;
+import StorefrontCacheUtils from "StorefrontCacheUtils" /* 8581 */;
+import getStorefrontNativeStoreQuery from "getStorefrontNativeStoreQuery" /* 8582 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LocaleStore from "LocaleStore" /* 2186 */;
-import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9701 */;
-import StorefrontCollectionRecord from "StorefrontCollectionRecord" /* 7846 */;
+import LocaleStore from "LocaleStore" /* 2189 */;
+import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9451 */;
+import StorefrontCollectionRecord from "StorefrontCollectionRecord" /* 8502 */;
 import size from "module_2" /* 2 */;
 
 let collectionsAfterFetchState, fetchState, requestKey;
@@ -138,7 +138,7 @@ let obj = function _maybeFetchCollectionsWithProducts() {
       obj5 = {};
     }
     const flag4 = obj5.retryAfterError ?? false;
-    return "flexDirection";
+    return "Path";
   });
   return obj(...arguments);
 };
@@ -252,7 +252,7 @@ obj = function _maybeFetchCollectionsForApplicationPage() {
                   const _Date = Date;
                   if (Date.now() - collectionPageFetchedAt <= TWELVE_HOURS_MS) {
                     c7 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "ulw" };
                   }
                 }
               }
@@ -306,7 +306,7 @@ obj = function _maybeFetchCollectionsForApplicationPage() {
       obj7 = {};
     }
     flag = obj7.retryAfterError ?? false;
-    return "flexDirection";
+    return "Path";
   });
   return obj(...arguments);
 };
@@ -348,7 +348,7 @@ obj = function _maybeFetchCollectionsAfter() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -394,7 +394,7 @@ obj = function _maybeFetchCollectionsAfter() {
                         const _Date = Date;
                         if (Date.now() - collectionsAfterFetchedAt <= TWELVE_HOURS_MS) {
                           c6 = 3;
-                          return { value: "HermesInternal", done: null };
+                          return { value: "HermesInternal", done: "ulw" };
                         }
                       }
                     }
@@ -440,7 +440,7 @@ obj = function _maybeFetchCollectionsAfter() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         } catch (tmp46) {
           closure_3 = tmp46;
           if (0 === c4) {
@@ -502,7 +502,7 @@ obj = function _maybeFetchCollectionsForApplication() {
                   }
                 }
                 c6 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "ulw" };
               }
             }
             skuTypes = 1;
@@ -572,7 +572,7 @@ obj = function _maybeFetchCollectionsForApplication() {
     if (includePricing === undefined) {
       includePricing = false;
     }
-    return "flexDirection";
+    return "Path";
   });
   return obj(...arguments);
 };

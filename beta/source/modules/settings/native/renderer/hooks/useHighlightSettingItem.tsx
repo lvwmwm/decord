@@ -1,11 +1,11 @@
-// Module ID: 16943
-// Function ID: 16944
+// Module ID: 17219
+// Function ID: 17220
 // Name: useHighlightSettingItem
-// Dependencies: [16939, 2]
+// Dependencies: [17215, 2]
 // Exports: useHighlightSettingItem
 
-// Module 16943 (useHighlightSettingItem)
-import UserSettingSearchStore from "UserSettingSearchStore" /* 16939 */;
+// Module 17219 (useHighlightSettingItem)
+import UserSettingSearchStore from "UserSettingSearchStore" /* 17215 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/settings/native/renderer/hooks/useHighlightSettingItem.tsx");

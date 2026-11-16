@@ -1,11 +1,11 @@
-// Module ID: 20529
-// Function ID: 20530
+// Module ID: 20859
+// Function ID: 20860
 // Name: SafetyFlowsManager
-// Dependencies: [20530, 7383, 2]
+// Dependencies: [20860, 7882, 2]
 
-// Module 20529 (SafetyFlowsManager)
-import openSafetyFlow from "openSafetyFlow" /* 20530 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7383 */;
+// Module 20859 (SafetyFlowsManager)
+import openSafetyFlow from "openSafetyFlow" /* 20860 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
 import size from "module_2" /* 2 */;
 
 function handleConnectionOpenSupplemental() {

@@ -1,21 +1,21 @@
-// Module ID: 5373
-// Function ID: 5374
+// Module ID: 5509
+// Function ID: 5510
 // Name: GuildThemeResolver
-// Dependencies: [19, 1231, 5041, 5203, 5374, 5376, 1072, 5343, 504, 5382, 5397, 2]
+// Dependencies: [19, 1231, 5177, 5339, 5510, 5512, 1072, 5479, 504, 5518, 5533, 2]
 // Exports: getActiveGuildTheme, getActiveGuildThemeForGuildId, isRenderableGuildThemeSettings, resolveRenderableGuildThemeSettings, useActiveGuildTheme, useEnabledGuildThemeForGuildId, useIsGuildThemePreviewActive
 
-// Module 5373 (GuildThemeResolver)
+// Module 5509 (GuildThemeResolver)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
-import GuildThemePresets from "GuildThemePresets" /* 5343 */;
-import ServerThemeUserExperiment from "ServerThemeUserExperiment" /* 5382 */;
-import flow_Client from "flow/Client" /* 5397 */;
+import GuildThemePresets from "GuildThemePresets" /* 5479 */;
+import ServerThemeUserExperiment from "ServerThemeUserExperiment" /* 5518 */;
+import flow_Client from "flow/Client" /* 5533 */;
 import react from "react" /* 19 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5203 */;
-import GuildThemePreviewStore from "GuildThemePreviewStore" /* 5374 */;
-import GuildThemeRuntimeStore from "GuildThemeRuntimeStore" /* 5376 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
+import GuildThemePreviewStore from "GuildThemePreviewStore" /* 5510 */;
+import GuildThemeRuntimeStore from "GuildThemeRuntimeStore" /* 5512 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -287,7 +287,7 @@ export function getActiveGuildThemeForGuildId(guildId, GuildPowerupsConstants) {
         const features = guild.features;
         if (features.has(GuildFeatures.GUILD_THEME)) {
           const guildThemeSourcePreference = UserSettingsProtoStore.resolveGuildThemeSourcePreference(guildId);
-          if (guildThemeSourcePreference === tmp8(5397).GuildThemeSourcePreference.PERSONAL) {
+          if (guildThemeSourcePreference === tmp8(5533).GuildThemeSourcePreference.PERSONAL) {
             return null;
           } else {
             let guildTheme = GuildThemeRuntimeStore.getGuildThemeSnapshot(guildId);
@@ -320,7 +320,7 @@ export function getActiveGuildTheme() {
         if (features.has(GuildFeatures.GUILD_THEME)) {
           const guildThemeSourcePreference = UserSettingsProtoStore.resolveGuildThemeSourcePreference(guildId);
           tmp11Result = null;
-          if (guildThemeSourcePreference !== tmp3(5397).GuildThemeSourcePreference.PERSONAL) {
+          if (guildThemeSourcePreference !== tmp3(5533).GuildThemeSourcePreference.PERSONAL) {
             let guildTheme = GuildThemeRuntimeStore.getGuildThemeSnapshot(guildId);
             const tmp11 = resolveSavedActiveGuildTheme;
             if (undefined === guildTheme) {

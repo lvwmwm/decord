@@ -1,16 +1,17 @@
-// Module ID: 18344
-// Function ID: 18345
+// Module ID: 18635
+// Function ID: 18636
 // Name: NotifSettingsActionCreators
-// Dependencies: [5, 15890, 1072, 3, 572, 1233, 15891, 1282, 15893, 1089, 15904, 15889, 2]
+// Dependencies: [5, 16163, 1072, 3, 572, 1233, 16164, 1285, 16166, 1089, 16177, 16162, 2]
 // Exports: schedulePersistPendingEditsIfNeeded, updateNotifSettingRadioValue, updateNotifSettingToggleValue
 
-// Module 18344 (NotifSettingsActionCreators)
+// Module 18635 (NotifSettingsActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import settings_NotifSettingsUtils from "settings/NotifSettingsUtils" /* 15889 */;
-import notification_settings from "notification_settings" /* 15891 */;
+import settings_NotifSettingsUtils from "settings/NotifSettingsUtils" /* 16162 */;
+import notification_settings from "notification_settings" /* 16164 */;
+import DeclarativeNotificationSettingsRedesignExperiment from "DeclarativeNotificationSettingsRedesignExperiment" /* 16177 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 15890 */;
+import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 16163 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -44,7 +45,7 @@ let obj = function _persistPendingEdit() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       let c7;
@@ -90,7 +91,7 @@ let obj = function _persistPendingEdit() {
                 logger.log("Unable to take ownership of notification settings apply");
                 skipEdit(pendingEdit);
                 c9 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "ulw" };
               } else {
                 const obj13 = require("user_settings/UserSettingsUtils");
                 const protoToB64Result = obj13.protoToB64(require("notification_settings").DeclarativeSettings, pendingEdit.partialSettings);
@@ -112,7 +113,7 @@ let obj = function _persistPendingEdit() {
                 logger.log("Not persisting proto because there is nothing to change");
                 skipEdit(pendingEdit);
                 c9 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "ulw" };
               }
             }
           }
@@ -123,7 +124,7 @@ let obj = function _persistPendingEdit() {
             let body = versions;
             if (closure_133_4.applyingEdit !== pendingEdit) {
               c9 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "ulw" };
             } else {
               status = closure_133_0;
               let tmp45;
@@ -189,7 +190,7 @@ let obj = function _persistPendingEdit() {
             if (closure_133_4.applyingEdit !== pendingEdit) {
               c7 = 0;
               c9 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "ulw" };
             } else {
               resetAnyPending = status.declarative_settings_out_of_date;
               const tmp114 = resetAnyPending;
@@ -246,7 +247,7 @@ let obj = function _persistPendingEdit() {
           }
         }
         c9 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       } catch (tmp100) {
         versions = tmp100;
         if (0 === c7) {
@@ -272,7 +273,7 @@ obj = function _reload() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       let c4;
@@ -474,13 +475,35 @@ export function updateNotifSettingToggleValue(CALLS, toggle) {
   }
   tmp4(CALLS, obj2, effectiveDataVersion);
 }
-export function updateNotifSettingRadioValue(updatedSettingId, arg1) {
-  let closure_0 = arg1;
-  obj = {
-    update(radio) {
-      radio.radio = radio;
-      return radio.radio !== radio;
+export function updateNotifSettingRadioValue(REACTIONS_CHOICE, scrollLength) {
+  let closure_0 = scrollLength;
+  if (Number.isFinite(scrollLength)) {
+    let tmp = require;
+    let tmp2 = dependencyMap;
+    obj = DeclarativeNotificationSettingsRedesignExperiment;
+    const result = obj.isDeclarativeNotificationSettingsRedesignEnabled("updateNotifSettingRadioValue");
+    let closure_2 = null != NotifSettingsProtoStore.getSetting(REACTIONS_CHOICE);
+    let effectiveDataVersion;
+    const obj2 = {
+      update(radio) {
+          radio.radio = radio;
+          let tmp2 = result;
+          radio = radio.radio;
+          const tmp = radio;
+          if (result) {
+            tmp2 = !closure_2;
+          }
+          if (!tmp2) {
+            tmp2 = radio !== tmp;
+          }
+          return tmp2;
+        }
+    };
+    const tmp6 = NotifSettingsProtoStore;
+    const tmp8 = updateNotifSettingValue;
+    if (result) {
+      effectiveDataVersion = tmp6.effectiveDataVersion;
     }
-  };
-  updateNotifSettingValue(updatedSettingId, obj);
+    tmp8(REACTIONS_CHOICE, obj2, effectiveDataVersion);
+  }
 }

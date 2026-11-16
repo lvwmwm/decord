@@ -1,23 +1,23 @@
-// Module ID: 15494
-// Function ID: 15495
+// Module ID: 16077
+// Function ID: 16078
 // Name: NUFChannelsManager
-// Dependencies: [5082, 5041, 5203, 1385, 1072, 5088, 510, 5226, 7383, 5347, 5346, 1403, 5406, 15495, 2118, 2]
+// Dependencies: [5218, 5177, 5339, 1388, 1072, 5224, 510, 5362, 7882, 5483, 5482, 1406, 5542, 16078, 2121, 2]
 
-// Module 15494 (NUFChannelsManager)
+// Module 16077 (NUFChannelsManager)
 import Storage3 from "Storage" /* 510 */;
 import Constants from "Constants" /* 1072 */;
-import FlagUtils from "FlagUtils" /* 1403 */;
-import asyncRequire from "asyncRequire" /* 2118 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 5088 */;
-import UserUtils from "UserUtils" /* 5226 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5346 */;
-import RootNavigationRef from "RootNavigationRef" /* 5347 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
-import GuildMemberStore from "GuildMemberStore" /* 5082 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5203 */;
-import UserStore from "UserStore" /* 1385 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7383 */;
+import FlagUtils from "FlagUtils" /* 1406 */;
+import asyncRequire from "asyncRequire" /* 2121 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 5224 */;
+import UserUtils from "UserUtils" /* 5362 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5482 */;
+import RootNavigationRef from "RootNavigationRef" /* 5483 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import GuildMemberStore from "GuildMemberStore" /* 5218 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
+import UserStore from "UserStore" /* 1388 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
 import size from "module_2" /* 2 */;
 
 const GuildFeatures = Constants.GuildFeatures;
@@ -96,7 +96,7 @@ class NUFChannelsManager extends AutomaticLifecycleManager {
           }
           if (isNewUserResult) {
             const obj3 = ActionSheetActionCreatorsDefault;
-            obj3.openLazy(asyncRequire(15495, tmp2.paths), "NUFChannelsActionSheet");
+            obj3.openLazy(asyncRequire(16078, tmp2.paths), "NUFChannelsActionSheet");
             const Storage2 = tmp(510).Storage;
             const result = Storage2.set(tmp14, true);
           }

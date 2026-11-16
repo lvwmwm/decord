@@ -1,44 +1,44 @@
-// Module ID: 10889
-// Function ID: 10890
+// Module ID: 10581
+// Function ID: 10582
 // Name: UserRow
-// Dependencies: [19, 17, 5171, 2162, 7913, 5019, 5922, 5112, 10878, 1072, 21, 1357, 5170, 575, 7582, 38, 10890, 10891, 5868, 10892, 7585, 7914, 504, 1187, 5783, 5226, 10896, 7420, 6941, 1113, 10918, 10919, 7092, 5790, 2151, 9986, 8747, 8854, 2118, 8893, 10921, 10075, 6204, 8523, 6604, 9403, 10923, 9315, 10931, 9408, 10932, 7070, 10948, 7071, 2]
+// Dependencies: [19, 17, 5307, 2165, 8767, 5155, 6058, 5248, 10244, 1072, 21, 1360, 5306, 575, 8134, 38, 10582, 10840, 6004, 10841, 8137, 8768, 504, 1187, 5919, 5362, 10845, 7918, 7027, 1113, 10865, 10866, 7738, 5926, 2154, 9102, 8069, 8476, 2121, 8576, 10868, 9981, 6340, 9189, 6740, 10066, 10064, 10870, 10872, 10654, 10873, 7733, 10889, 7443, 2]
 
-// Module 10889 (UserRow)
+// Module 10581 (UserRow)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl14 from "intl" /* 1113 */;
-import asyncRequire from "asyncRequire" /* 2118 */;
-import utils_StringUtils from "utils/StringUtils" /* 2151 */;
-import UserUtils from "UserUtils" /* 5226 */;
-import Text_Text from "Text/Text" /* 5783 */;
-import components_Button_Button from "components/Button/Button" /* 5790 */;
-import ToastUtils from "ToastUtils" /* 5868 */;
-import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 7092 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7582 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7585 */;
-import FriendSuggestionActionCreatorsDefault from "FriendSuggestionActionCreators" /* 7914 */;
-import ChatIcon from "ChatIcon" /* 8747 */;
-import PhoneCallIcon from "PhoneCallIcon" /* 9986 */;
-import BoostGemIcon2 from "BoostGemIcon" /* 10075 */;
-import UserRowConstants from "UserRowConstants" /* 10878 */;
-import PeopleUtilsDefault from "PeopleUtils" /* 10891 */;
-import GameRelationshipActionCreatorsDefault from "GameRelationshipActionCreators" /* 10892 */;
-import ActivityStatusDefault from "ActivityStatus" /* 10896 */;
-import ActionButtonDefault from "ActionButton" /* 10918 */;
-import XLargeIcon from "XLargeIcon" /* 10919 */;
-import CrownIcon2 from "CrownIcon" /* 10921 */;
+import asyncRequire from "asyncRequire" /* 2121 */;
+import utils_StringUtils from "utils/StringUtils" /* 2154 */;
+import UserUtils from "UserUtils" /* 5362 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
+import ToastUtils from "ToastUtils" /* 6004 */;
+import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 7738 */;
+import ChatIcon from "ChatIcon" /* 8069 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 8134 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 8137 */;
+import FriendSuggestionActionCreatorsDefault from "FriendSuggestionActionCreators" /* 8768 */;
+import PhoneCallIcon from "PhoneCallIcon" /* 9102 */;
+import BoostGemIcon2 from "BoostGemIcon" /* 9981 */;
+import UserRowConstants from "UserRowConstants" /* 10244 */;
+import PeopleUtilsDefault from "PeopleUtils" /* 10840 */;
+import GameRelationshipActionCreatorsDefault from "GameRelationshipActionCreators" /* 10841 */;
+import ActivityStatusDefault from "ActivityStatus" /* 10845 */;
+import ActionButtonDefault from "ActionButton" /* 10865 */;
+import XLargeIcon from "XLargeIcon" /* 10866 */;
+import CrownIcon2 from "CrownIcon" /* 10868 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5171 */;
-import ApplicationStore from "ApplicationStore" /* 2162 */;
-import FriendSuggestionStore from "FriendSuggestionStore" /* 7913 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import PresenceStore from "PresenceStore" /* 5922 */;
-import RelationshipStore from "RelationshipStore" /* 5112 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import ApplicationStore from "ApplicationStore" /* 2165 */;
+import FriendSuggestionStore from "FriendSuggestionStore" /* 8767 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import PresenceStore from "PresenceStore" /* 6058 */;
+import RelationshipStore from "RelationshipStore" /* 5248 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils from "utils/PlatformUtils" /* 1357 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import PlatformUtils from "utils/PlatformUtils" /* 1360 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const UserUtilsDefault = UserUtils;
@@ -103,7 +103,7 @@ function UserRowSubLabel(arg0) {
     tmp9 = tmp14Result;
   } else {
     const obj8 = { lineClamp: 1, variant: "body-xs/medium", color: "text-muted", children: tmp2Result.getUserTag(user) };
-    const Text = tmp2(5783).Text;
+    const Text = tmp2(5919).Text;
     tmp2Result = UserUtils;
     tmp9 = closure_14(Text, obj8);
   }
@@ -293,7 +293,7 @@ const memoResult = react.memo(function UserRow(type) {
     let zFfSFQ2;
     const items = [];
     if (NONE !== UserRowModes.ACTIONS) {
-      let obj2 = { accessibilityActions: items, actions: "a" };
+      let obj2 = { accessibilityActions: items, actions: "y" };
       return obj2;
     } else {
       let tmp9;
@@ -341,7 +341,7 @@ const memoResult = react.memo(function UserRow(type) {
         obj10 = { name: obj22.getName(user) };
         prop1 = intl14.t["C9Xe6+"];
         obj22 = UserUtilsDefault;
-        items1 = [authStore3(tmp32, obj9), ];
+        items1 = [gesture(tmp32, obj9), ];
         const obj11 = {
           styles: closure_17.action,
           IconComponent: CheckmarkLargeIcon.CheckmarkLargeIcon,
@@ -374,7 +374,7 @@ const memoResult = react.memo(function UserRow(type) {
         obj13 = { name: obj25.getName(user) };
         v6p0yBo1 = intl14.t["6p0yBo"];
         obj25 = UserUtilsDefault;
-        items1[1] = authStore3(tmp34, obj11);
+        items1[1] = gesture(tmp34, obj11);
         tmp9 = applicationId(View, obj7);
       } else if (trailing.PENDING_OUTGOING === type) {
         const push2 = items.push;
@@ -385,7 +385,7 @@ const memoResult = react.memo(function UserRow(type) {
         JFJ8Cg = intl14.t.JFJ8Cg;
         obj8 = UserUtilsDefault;
         push2(obj14);
-        const obj17 = { style: closure_17.actions, children: authStore3(tmp19, obj19) };
+        const obj17 = { style: closure_17.actions, children: gesture(tmp19, obj19) };
         obj19 = {
           styles: closure_17.action,
           IconComponent: XLargeIcon.XLargeIcon,
@@ -414,7 +414,7 @@ const memoResult = react.memo(function UserRow(type) {
         obj20 = { name: obj12.getName(user) };
         JFJ8Cg2 = intl14.t.JFJ8Cg;
         obj12 = UserUtilsDefault;
-        tmp9 = authStore3(View, obj17);
+        tmp9 = gesture(View, obj17);
       } else if (trailing.SUGGESTION === type) {
         obj = { name: analyticsLocations.ACCEPT_SUGGESTION, label: intl.string(intl14.t["ed99+i"]) };
         let tmp = analyticsLocations;
@@ -425,8 +425,8 @@ const memoResult = react.memo(function UserRow(type) {
         const obj21 = { name: analyticsLocations.IGNORE_SUGGESTION, label: intl2.string(intl14.t["Tw3a/R"]) };
         intl2 = intl14.intl;
         push(obj, obj21);
-        const obj23 = { style: closure_17.actions, children: authStore3(View, obj24) };
-        obj24 = { style: closure_17.buttonWrapper, children: authStore3(Button, obj26) };
+        const obj23 = { style: closure_17.actions, children: gesture(View, obj24) };
+        obj24 = { style: closure_17.buttonWrapper, children: gesture(Button, obj26) };
         obj26 = {
           variant: "secondary",
           size: "sm",
@@ -434,7 +434,7 @@ const memoResult = react.memo(function UserRow(type) {
           onPress() {
                 let obj3;
                 const current = closure_1_26.current;
-                const obj2 = { userId: current.id, context: obj3, type: "HermesInternal", fromFriendSuggestion: null };
+                const obj2 = { userId: current.id, context: obj3, type: "HermesInternal", fromFriendSuggestion: "ulw" };
                 obj3 = { location: isMobileOnline };
                 obj = user(NONE[20]);
                 obj.addRelationship(obj2);
@@ -445,7 +445,7 @@ const memoResult = react.memo(function UserRow(type) {
         Button = components_Button_Button.Button;
         truncateText = utils_StringUtils.truncateText;
         intl3 = intl14.intl;
-        tmp9 = authStore3(View, obj23);
+        tmp9 = gesture(View, obj23);
       } else {
         const FRIEND = tmp37.FRIEND;
         const push4 = items.push;
@@ -496,7 +496,7 @@ const memoResult = react.memo(function UserRow(type) {
         obj35 = { name: obj37.getName(user) };
         Q75ddl2 = intl14.t.Q75ddl;
         obj37 = UserUtilsDefault;
-        items2 = [authStore3(tmp48, obj34), ];
+        items2 = [gesture(tmp48, obj34), ];
         const obj36 = {
           styles: closure_17.action,
           IconComponent: ChatIcon.ChatIcon,
@@ -516,7 +516,7 @@ const memoResult = react.memo(function UserRow(type) {
         obj38 = { name: obj40.getName(user) };
         zFfSFQ2 = intl14.t.zFfSFQ;
         obj40 = UserUtilsDefault;
-        items2[1] = authStore3(tmp49, obj36);
+        items2[1] = gesture(tmp49, obj36);
         tmp9 = applicationId(View, obj32);
       }
       return { accessibilityActions: items, actions: tmp9 };
@@ -577,7 +577,7 @@ const memoResult = react.memo(function UserRow(type) {
       if (analyticsLocations.DECLINE !== actionName) {
         if (analyticsLocations.CANCEL !== actionName) {
           if (analyticsLocations.ACCEPT_SUGGESTION === actionName) {
-            const obj4 = { userId: user.id, context: obj7, type: "HermesInternal", fromFriendSuggestion: null };
+            const obj4 = { userId: user.id, context: obj7, type: "HermesInternal", fromFriendSuggestion: "ulw" };
             obj7 = { location: Friends_v2 };
             const obj2 = RelationshipActionCreatorsDefault;
             obj2.addRelationship(obj4);
@@ -608,7 +608,7 @@ const memoResult = react.memo(function UserRow(type) {
     let localUser;
     let sourceAnalyticsLocations;
     if (null == onLongPress) {
-      const promise = asyncRequire(8854, dependencyMap.paths);
+      const promise = asyncRequire(8476, dependencyMap.paths);
       promise.then((result) => {
         obj = { userId: localUser.id, localUser, sourceAnalyticsLocations };
         return result.default(obj);
@@ -638,7 +638,7 @@ const memoResult = react.memo(function UserRow(type) {
     obj = { style: closure_17.avatar, user, guildId, status: tmp4, isMobileOnline, isVROnline, size: native.AvatarSizes.REFRESH_MEDIUM_32, avatarDecoration, autoStatusCutout: true };
     tmp4 = null;
     const Avatar = native.Avatar;
-    const tmp = authStore3;
+    const tmp = gesture;
     if (map1.OFFLINE !== status) {
       tmp4 = status;
     }
@@ -679,18 +679,18 @@ const memoResult = react.memo(function UserRow(type) {
     if (undefined === label) {
       let tmp5 = null;
       const tmp = closure_15;
-      const tmp2 = authStore4;
+      const tmp2 = authStore3;
       if (flag3) {
         obj = { size: "xs", color: nativeDefault.colors.TEXT_FEEDBACK_WARNING };
         const CrownIcon = CrownIcon2.CrownIcon;
-        tmp5 = authStore3(CrownIcon, obj);
+        tmp5 = gesture(CrownIcon, obj);
       }
       const items = [tmp5, ];
       let tmp11 = null;
       if (null != premiumSince) {
         const obj2 = { size: "xs", color: nativeDefault.unsafe_rawColors.GUILD_BOOSTING_PINK };
         const BoostGemIcon = BoostGemIcon2.BoostGemIcon;
-        tmp11 = authStore3(BoostGemIcon, obj2);
+        tmp11 = gesture(BoostGemIcon, obj2);
       }
       const obj3 = { children: items };
       items[1] = tmp11;
@@ -702,7 +702,7 @@ const memoResult = react.memo(function UserRow(type) {
     let tmp = subLabel;
     if (undefined === subLabel) {
       obj = { user, type, animate: !useReducedMotion, isGameRelationship: flag4, guildId, applicationId };
-      tmp = authStore3(UserRowSubLabel, obj);
+      tmp = gesture(UserRowSubLabel, obj);
     }
     return tmp;
   }, items13);

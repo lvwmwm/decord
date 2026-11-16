@@ -1,12 +1,12 @@
-// Module ID: 8251
-// Function ID: 8252
+// Module ID: 8380
+// Function ID: 8381
 // Name: AppStoreAgeSignalActionCreators
-// Dependencies: [5, 1072, 1282, 2]
+// Dependencies: [5, 1072, 1285, 2]
 // Exports: registerAgeSignalAttestKey, reinstateAppStoreConsent, requestAgeSignalChallenge, submitAgeSignal
 
-// Module 8251 (AppStoreAgeSignalActionCreators)
+// Module 8380 (AppStoreAgeSignalActionCreators)
 import Constants from "Constants" /* 1072 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -44,7 +44,7 @@ obj = function _requestAgeSignalChallenge() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -95,7 +95,7 @@ obj = function _requestAgeSignalChallenge() {
               }
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } catch (tmp11) {
           c4 = 3;
@@ -147,7 +147,7 @@ obj = function _submitAgeSignal() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -170,7 +170,7 @@ obj = function _submitAgeSignal() {
               }
               c8 = 1;
               c9 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "Path", done: true };
             }
           } else if (1 === c8) {
             if (arg0 === 1) {

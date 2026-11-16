@@ -1,8 +1,8 @@
-// Module ID: 13761
-// Function ID: 13762
+// Module ID: 14333
+// Function ID: 14334
 // Dependencies: [2]
 
-// Module 13761
+// Module 14333
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_base_shadow.webp.js");

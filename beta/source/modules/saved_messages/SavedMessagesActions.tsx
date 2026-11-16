@@ -1,14 +1,14 @@
-// Module ID: 11320
-// Function ID: 11321
+// Module ID: 11912
+// Function ID: 11913
 // Name: SavedMessagesActions
-// Dependencies: [5, 10342, 1072, 1282, 10343, 572, 2]
+// Dependencies: [5, 11909, 1072, 1285, 11905, 572, 2]
 // Exports: deleteSavedMessage, fetchAndUpdateSavedMessages, fetchBookmarks, upsertSavedMessage
 
-// Module 11320 (SavedMessagesActions)
+// Module 11912 (SavedMessagesActions)
 import Constants from "Constants" /* 1072 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 10342 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 11909 */;
 import size from "module_2" /* 2 */;
 
 let bookmarksFetchState, c3, c4, c8, results;
@@ -28,7 +28,7 @@ let obj = function _upsertSavedMessage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       try {
@@ -109,7 +109,7 @@ obj = function _fetchSavedMessages() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       let c2;
@@ -168,7 +168,7 @@ obj = function _fetchSavedMessages() {
             return obj10;
           } else {
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } else if (arg0 === 1) {
           c4 = 3;
@@ -307,7 +307,7 @@ obj = function _fetchBookmarks() {
       obj5 = {};
     }
     flag = obj5.loadMore ?? false;
-    return "flexDirection";
+    return "Path";
   });
   return obj(...arguments);
 };

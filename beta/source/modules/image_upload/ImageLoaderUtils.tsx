@@ -1,18 +1,18 @@
-// Module ID: 1446
-// Function ID: 1447
+// Module ID: 1449
+// Function ID: 1450
 // Name: ImageLoaderUtils
-// Dependencies: [32, 5, 1072, 1447, 1453, 559, 1477, 1487, 1378, 1490, 1448, 2021, 12, 2]
+// Dependencies: [32, 5, 1072, 1450, 1456, 559, 1480, 1490, 1381, 1493, 1451, 2024, 12, 2]
 // Exports: getBestMediaProxySize, getImageSrc, isImageLoaded, loadImage
 
-// Module 1446 (ImageLoaderUtils)
+// Module 1449 (ImageLoaderUtils)
 import _modDef12 from "module_12" /* 12 */;
-import URLUtilsDefault from "URLUtils" /* 1378 */;
-import AttachmentImageLadderExperiment from "AttachmentImageLadderExperiment" /* 1447 */;
-import AttachmentImageLadder from "AttachmentImageLadder" /* 1448 */;
-import LRUCacheDefault from "LRUCache" /* 1453 */;
-import _modDef1487 from "module_1487" /* 1487 */;
-import ImageUtils from "ImageUtils" /* 1490 */;
-import react_nativeDefault from "react-native" /* 2021 */;
+import URLUtilsDefault from "URLUtils" /* 1381 */;
+import AttachmentImageLadderExperiment from "AttachmentImageLadderExperiment" /* 1450 */;
+import AttachmentImageLadder from "AttachmentImageLadder" /* 1451 */;
+import LRUCacheDefault from "LRUCache" /* 1456 */;
+import _modDef1490 from "module_1490" /* 1490 */;
+import ImageUtils from "ImageUtils" /* 1493 */;
+import react_nativeDefault from "react-native" /* 2024 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1072 */;
@@ -39,10 +39,11 @@ function getSrcWithWidthAndHeight(quality) {
   let src;
   let targetHeight;
   let targetWidth;
-  let tmp15Result2;
+  let tmp10;
+  let tmp11;
+  let tmp17Result2;
   let tmp6;
-  let tmp8;
-  let tmp9;
+  let tmp7;
   let width;
   function getAttachmentLadderConfig(arg0) {
     try {
@@ -78,17 +79,18 @@ function getSrcWithWidthAndHeight(quality) {
     let obj = URLUtilsDefault;
     if (!obj.isDiscordCdnUrl(src)) {
       let tmp5 = _slicedToArray(src.split("?"), 2);
-      const items = [, ];
-      [arr[0], tmp6] = tmp5;
-      const tmp2Result = _modDef1487;
-      items[1] = tmp2Result.parse(tmp6);
-      [tmp8, tmp9] = items;
+      [tmp6, tmp7] = tmp5;
+      const tmp2Result = _modDef1490;
+      const parsed = tmp2Result.parse(tmp7);
+      delete tmp8[""];
+      const items = [tmp6, parsed];
+      [tmp10, tmp11] = items;
       _slicedToArray(items, 2);
       if (null != format) {
-        tmp9.format = format;
+        tmp11.format = format;
       }
       if (null != quality) {
-        tmp9.quality = quality;
+        tmp11.quality = quality;
       }
       if (flag) {
         flag = flag2;
@@ -98,36 +100,36 @@ function getSrcWithWidthAndHeight(quality) {
         flag = isMatch;
       }
       if (flag) {
-        tmp9.animated = true;
+        tmp11.animated = true;
       }
       if (re8.test(src)) {
-        tmp9.format = "webp";
+        tmp11.format = "webp";
       }
       const size1 = { width: targetWidth, height: targetHeight, maxWidth: maxHeight, maxHeight };
       const obj3 = ImageUtils;
       ({ width, height } = obj3.fit(size1));
       obj3.fit(size1);
       if (width !== sourceWidth) {
-        const tmp18 = getAttachmentLadderConfig("ImageLoaderUtils.getSrcWithWidthAndHeight");
+        const tmp20 = getAttachmentLadderConfig("ImageLoaderUtils.getSrcWithWidthAndHeight");
         size = { width, height };
-        if (null != tmp18) {
-          const obj2 = { targetWidth: width, targetHeight: height, sourceWidth, sourceHeight, maxUpscale: tmp15Result2.getSnapDownMaxUpscale(tmp18, react_nativeDefault()), ladder: tmp18.ladder };
+        if (null != tmp20) {
+          const obj2 = { targetWidth: width, targetHeight: height, sourceWidth, sourceHeight, maxUpscale: tmp17Result2.getSnapDownMaxUpscale(tmp20, react_nativeDefault()), ladder: tmp20.ladder };
           const snapAttachmentDimensions = AttachmentImageLadder.snapAttachmentDimensions;
           AttachmentImageLadder;
-          tmp15Result2 = AttachmentImageLadder;
+          tmp17Result2 = AttachmentImageLadder;
           size = snapAttachmentDimensions(obj2);
         }
-        const tmp20 = size.width === sourceWidth && size.height === sourceHeight;
-        if (!tmp20) {
-          tmp9.width = size.width | 0;
-          tmp9.height = size.height | 0;
+        const tmp22 = size.width === sourceWidth && size.height === sourceHeight;
+        if (!tmp22) {
+          tmp11.width = size.width | 0;
+          tmp11.height = size.height | 0;
         }
       }
-      let text = tmp8;
+      let text = tmp10;
       const tmp2Result3 = _modDef12;
-      if (!tmp2Result3.isEmpty(tmp9)) {
-        _modDef1487;
-        text = `${tmp8}?${obj8.stringify(tmp9)}`;
+      if (!tmp2Result3.isEmpty(tmp11)) {
+        _modDef1490;
+        text = `${tmp10}?${obj8.stringify(tmp11)}`;
       }
       return text;
     }
@@ -150,7 +152,7 @@ export function isImageLoaded(arg0) {
 }
 export function loadImage(url, bind) {
   let image;
-  const f123232 = async (arg0, value) => {
+  const f125907 = async (arg0, value) => {
     let c2;
     let closure_1;
     let tmp;
@@ -174,7 +176,7 @@ export function loadImage(url, bind) {
           let obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -223,7 +225,7 @@ export function loadImage(url, bind) {
                 let tmp12 = backoff;
                 let tmp13 = tmp;
                 let tmp14 = closure_129_2;
-                let failResult = closure_129_2.fail(f141948);
+                let failResult = closure_129_2.fail(f144985);
               } else {
                 let tmp7 = tmp;
                 let tmp8 = closure_1_11;
@@ -234,7 +236,7 @@ export function loadImage(url, bind) {
               }
               let num4 = 3;
               c3 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "ulw" };
             }
           }
         } catch (tmp18) {
@@ -253,7 +255,7 @@ export function loadImage(url, bind) {
     let fn;
     if (value.loaded) {
       if (null != bind) {
-        const obj2 = image(1477);
+        const obj2 = image(1480);
         const awaitOnlineResult = obj2.awaitOnline();
         awaitOnlineResult.then(() => {
           let url;
@@ -291,7 +293,7 @@ export function loadImage(url, bind) {
       obj3.backoff = tmp4;
     }
     backoff = obj3.backoff;
-    image.onerror = _asyncToGenerator(f123232);
+    image.onerror = _asyncToGenerator(f125907);
     image.onload = () => {
       let callbacks;
       let url;

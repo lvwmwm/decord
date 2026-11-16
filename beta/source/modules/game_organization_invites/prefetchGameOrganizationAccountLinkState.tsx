@@ -1,16 +1,16 @@
-// Module ID: 13492
-// Function ID: 13493
+// Module ID: 14101
+// Function ID: 14102
 // Name: prefetchGameOrganizationAccountLinkState
-// Dependencies: [5, 2162, 7372, 11534, 11535, 6969, 7423, 7426, 2]
+// Dependencies: [5, 2165, 7221, 12368, 12369, 7055, 7921, 7410, 2]
 // Exports: default
 
-// Module 13492 (prefetchGameOrganizationAccountLinkState)
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6969 */;
-import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7372 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11535 */;
+// Module 14101 (prefetchGameOrganizationAccountLinkState)
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 7055 */;
+import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7221 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 12369 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 2162 */;
-import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11534 */;
+import ApplicationStore from "ApplicationStore" /* 2165 */;
+import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 12368 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6, invite;
@@ -29,7 +29,7 @@ let obj = function _prefetchGameOrganizationAccountLinkState() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       let c4;
@@ -70,7 +70,7 @@ let obj = function _prefetchGameOrganizationAccountLinkState() {
         } else if (1 === c5) {
           c4 = 0;
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         } else if (arg0 === 1) {
           c6 = 3;
           throw value;
@@ -98,7 +98,7 @@ let obj = function _prefetchGameOrganizationAccountLinkState() {
           }
         }
         c6 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       } catch (tmp17) {
         if (0 === c4) {
           c6 = 3;

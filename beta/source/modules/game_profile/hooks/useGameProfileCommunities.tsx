@@ -1,14 +1,14 @@
-// Module ID: 9734
-// Function ID: 9735
+// Module ID: 10498
+// Function ID: 10499
 // Name: useGameProfileCommunities
-// Dependencies: [5, 2138, 9735, 504, 9736, 1089, 2]
+// Dependencies: [5, 2141, 10499, 504, 10500, 1089, 2]
 
-// Module 9734 (useGameProfileCommunities)
+// Module 10498 (useGameProfileCommunities)
 import DurationsDefault from "Durations" /* 1089 */;
-import DiscoverableGuildsActionCreators from "DiscoverableGuildsActionCreators" /* 9736 */;
+import DiscoverableGuildsActionCreators from "DiscoverableGuildsActionCreators" /* 10500 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GameStore from "GameStore" /* 2138 */;
-import DiscoverableGuildsStore from "DiscoverableGuildsStore" /* 9735 */;
+import GameStore from "GameStore" /* 2141 */;
+import DiscoverableGuildsStore from "DiscoverableGuildsStore" /* 10499 */;
 import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;
 
@@ -75,7 +75,7 @@ let closure_6 = _asyncToGenerator(async (arg0, value) => {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "HermesInternal", done: "ulw" };
     }
   } else {
     try {
@@ -107,7 +107,7 @@ let closure_6 = _asyncToGenerator(async (arg0, value) => {
         return obj;
       }
       c1 = 3;
-      return { value: "HermesInternal", done: null };
+      return { value: "HermesInternal", done: "ulw" };
     } catch (tmp8) {
       c1 = 3;
       throw tmp8;

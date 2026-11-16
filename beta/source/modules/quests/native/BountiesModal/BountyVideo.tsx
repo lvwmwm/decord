@@ -1,26 +1,26 @@
-// Module ID: 17295
-// Function ID: 17296
+// Module ID: 17566
+// Function ID: 17567
 // Name: BountyVideo
-// Dependencies: [32, 19, 17, 17275, 21, 1357, 9818, 575, 1652, 5747, 671, 5170, 17296, 17297, 5756, 5402, 5405, 17285, 17298, 17310, 5874, 1113, 17311, 17313, 17315, 14768, 2]
+// Dependencies: [32, 19, 17, 17546, 21, 1360, 10146, 575, 1655, 5883, 671, 5306, 17567, 17568, 5892, 5538, 5541, 17556, 17569, 17581, 6010, 1113, 17582, 17584, 17586, 10044, 2]
 // Exports: BountyVideo
 
-// Module 17295 (BountyVideo)
+// Module 17566 (BountyVideo)
 import nativeDefault from "native" /* 575 */;
-import timing_timing from "timing/timing" /* 5402 */;
-import timingPresets from "timingPresets" /* 5405 */;
-import LinearGradientDefault from "LinearGradient" /* 5747 */;
-import AssetUtils from "AssetUtils" /* 9818 */;
-import BountiesModalProgress from "BountiesModalProgress" /* 17296 */;
-import pickBountyVideoRendition from "pickBountyVideoRendition" /* 17297 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import timingPresets from "timingPresets" /* 5541 */;
+import LinearGradientDefault from "LinearGradient" /* 5883 */;
+import AssetUtils from "AssetUtils" /* 10146 */;
+import BountiesModalProgress from "BountiesModalProgress" /* 17567 */;
+import pickBountyVideoRendition from "pickBountyVideoRendition" /* 17568 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import BountiesModalConstants from "BountiesModalConstants" /* 17275 */;
+import BountiesModalConstants from "BountiesModalConstants" /* 17546 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils from "utils/PlatformUtils" /* 1357 */;
-import module_1652 from "module_1652" /* 1652 */;
+import PlatformUtils from "utils/PlatformUtils" /* 1360 */;
+import module_1655 from "module_1655" /* 1655 */;
 import module_671_mod from "module_671" /* 671 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let borderRadius, set;
@@ -43,7 +43,7 @@ if (PlatformUtils.isAndroid()) {
 }
 const contentInsets = { top: 48, bottom: 16, left: 16, right: 16 };
 const lg = nativeDefault.radii.lg;
-const LinearGradient = module_1652.createAnimatedComponent(LinearGradientDefault);
+const LinearGradient = module_1655.createAnimatedComponent(LinearGradientDefault);
 const start = { x: 0, y: 0 };
 const end = { x: 0, y: 1 };
 let module_671 = module_671_mod;

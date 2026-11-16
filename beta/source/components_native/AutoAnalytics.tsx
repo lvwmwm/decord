@@ -1,37 +1,37 @@
-// Module ID: 19273
-// Function ID: 19274
+// Module ID: 19585
+// Function ID: 19586
 // Name: AutoAnalytics
-// Dependencies: [19, 6931, 6655, 6943, 5024, 5019, 5082, 5041, 2130, 6064, 5925, 5073, 5203, 6657, 6863, 1385, 1072, 5026, 21, 8440, 8444, 5921, 19274, 19275, 5044, 19276, 1252, 1380, 19277, 504, 5923, 19278, 19279, 2]
+// Dependencies: [19, 7016, 6790, 7029, 5160, 5155, 5218, 5177, 2133, 6200, 6061, 5209, 5339, 7316, 6948, 1388, 1072, 5162, 21, 8998, 9002, 6057, 19586, 19587, 5180, 19588, 1256, 1255, 19589, 504, 6059, 19590, 19591, 2]
 // Exports: default
 
-// Module 19273 (AutoAnalytics)
+// Module 19585 (AutoAnalytics)
 import Fragment from "Fragment" /* 21 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import GlobalUtils from "GlobalUtils" /* 1380 */;
-import ChannelConstants from "ChannelConstants" /* 5026 */;
-import FavoritesUtils from "FavoritesUtils" /* 5044 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5921 */;
-import getChannelOpenedMetadata from "getChannelOpenedMetadata" /* 8440 */;
-import trackChannelOpenedClickstreamDefault from "trackChannelOpenedClickstream" /* 8444 */;
-import GuildThemeAnalyticsUtils from "GuildThemeAnalyticsUtils" /* 19274 */;
-import trackGuildViewedClickstreamDefault from "trackGuildViewedClickstream" /* 19275 */;
-import getChannelOpenedRouteTrackingProps from "getChannelOpenedRouteTrackingProps" /* 19277 */;
+import GlobalUtils from "GlobalUtils" /* 1255 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import ChannelConstants from "ChannelConstants" /* 5162 */;
+import FavoritesUtils from "FavoritesUtils" /* 5180 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6057 */;
+import getChannelOpenedMetadata from "getChannelOpenedMetadata" /* 8998 */;
+import trackChannelOpenedClickstreamDefault from "trackChannelOpenedClickstream" /* 9002 */;
+import GuildThemeAnalyticsUtils from "GuildThemeAnalyticsUtils" /* 19586 */;
+import trackGuildViewedClickstreamDefault from "trackGuildViewedClickstream" /* 19587 */;
+import getChannelOpenedRouteTrackingProps from "getChannelOpenedRouteTrackingProps" /* 19589 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6931 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6655 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6943 */;
-import StageInstanceStore from "StageInstanceStore" /* 5024 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import GuildMemberStore from "GuildMemberStore" /* 5082 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import MediaEngineStore from "MediaEngineStore" /* 2130 */;
-import NetworkStore from "NetworkStore" /* 6064 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5925 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5073 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5203 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6657 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6863 */;
-import UserStore from "UserStore" /* 1385 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 7016 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6790 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7029 */;
+import StageInstanceStore from "StageInstanceStore" /* 5160 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import GuildMemberStore from "GuildMemberStore" /* 5218 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import MediaEngineStore from "MediaEngineStore" /* 2133 */;
+import NetworkStore from "NetworkStore" /* 6200 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 7316 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6948 */;
+import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -65,7 +65,7 @@ class AutoAnalytics extends PureComponent {
       const tmp18 = require;
       if (tmp) {
         const obj3 = { channel_is_nsfw: tmp2 };
-        const tmp18Result = tmp18(5921);
+        const tmp18Result = tmp18(6057);
         tmp18Result.trackWithMetadata(tmp17.TEXT_IN_VOICE_OPENED, obj3);
       }
     }
@@ -89,7 +89,7 @@ class AutoAnalytics extends PureComponent {
       const obj8 = FavoritesUtils;
       const tmp14 = importDefault;
       if (obj8.isFavoritesGuildId(selectedGuildId)) {
-        tmp14(19276)();
+        tmp14(19588)();
       }
     }
   }
@@ -215,7 +215,7 @@ class AutoAnalytics extends PureComponent {
         const VIDEO_INPUT_TOGGLED = constants.VIDEO_INPUT_TOGGLED;
         AnalyticsUtilsDefault;
         const merged5 = Object.assign(self.getGameMetadata());
-        const tmp32Result = tmp32(5921);
+        const tmp32Result = tmp32(6057);
         const merged6 = Object.assign(tmp32Result.collectVoiceAnalyticsMetadata(voiceChannelId));
         track2(VIDEO_INPUT_TOGGLED, obj5);
       }
@@ -239,7 +239,7 @@ class AutoAnalytics extends PureComponent {
       const tmp46 = require;
       if (isTextInVoice) {
         const obj10 = { channel_is_nsfw: isNSFWChannel };
-        const tmp46Result = tmp46(5921);
+        const tmp46Result = tmp46(6057);
         tmp46Result.trackWithMetadata(tmp45.TEXT_IN_VOICE_OPENED, obj10);
       }
     }
@@ -272,7 +272,7 @@ class AutoAnalytics extends PureComponent {
         const obj19 = FavoritesUtils;
         const tmp70 = importDefault;
         if (obj19.isFavoritesGuildId(selectedGuildId)) {
-          tmp70(19276)();
+          tmp70(19588)();
         }
       }
     }
@@ -297,7 +297,7 @@ class AutoAnalytics extends PureComponent {
         const obj3 = {};
         const merged = Object.assign(obj);
         const merged1 = Object.assign(self.collectDefaultAnalyticsMetadata(tmp, tmp2));
-        const tmp3Result = tmp3(1252);
+        const tmp3Result = tmp3(1256);
         tmp3Result.track(CHANNEL_OPENED, obj3);
       }
     }

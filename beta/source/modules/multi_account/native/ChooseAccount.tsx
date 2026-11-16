@@ -1,22 +1,22 @@
-// Module ID: 18364
-// Function ID: 18365
+// Module ID: 18655
+// Function ID: 18656
 // Name: ChooseAccount
-// Dependencies: [5, 19, 17, 14243, 14244, 1072, 21, 5170, 575, 1499, 18365, 1252, 14247, 6123, 1113, 1187, 5406, 7456, 7239, 5783, 7041, 18366, 7076, 9213, 8279, 18367, 2]
+// Dependencies: [5, 19, 17, 14829, 14830, 1072, 21, 5306, 575, 1502, 18656, 1256, 14833, 6259, 1113, 1187, 5542, 7948, 7792, 5919, 7712, 18657, 7428, 8437, 8106, 18658, 2]
 // Exports: default
 
-// Module 18364 (ChooseAccount)
+// Module 18655 (ChooseAccount)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6123 */;
-import MultiAccountStore from "MultiAccountStore" /* 14243 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6259 */;
+import MultiAccountStore from "MultiAccountStore" /* 14829 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import Constants_mod from "Constants" /* 14244 */;
+import Constants_mod from "Constants" /* 14830 */;
 import Constants_mod2 from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -78,7 +78,7 @@ export default function ChooseAccount() {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -130,7 +130,7 @@ export default function ChooseAccount() {
               obj2.removeAccount(closure_0.id);
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } catch (tmp22) {
           c4 = 3;
@@ -145,8 +145,8 @@ export default function ChooseAccount() {
   _require = obj.useNavigation();
   let obj2 = require("useMultiAccount");
   const multiAccountUsers = obj2.useMultiAccountUsers().multiAccountUsers;
-  let obj3 = { headerText: intl.string(require("intl").t.bVbB63), subHeader: closure_11(Text, obj4), background: closure_11(multiAccountUsers(7041), {}), contentStyle: tmp.container, children: closure_12(View, obj5) };
-  let tmp2 = multiAccountUsers(7239);
+  let obj3 = { headerText: intl.string(require("intl").t.bVbB63), subHeader: closure_11(Text, obj4), background: closure_11(multiAccountUsers(7712), {}), contentStyle: tmp.container, children: closure_12(View, obj5) };
+  let tmp2 = multiAccountUsers(7792);
   intl = require("intl").intl;
   obj4 = { variant: "body-sm/medium", color: "text-default", children: intl2.string(require("intl").t["0M5fN7"]) };
   Text = require("Text/Text").Text;
@@ -249,9 +249,9 @@ export default function ChooseAccount() {
       }
     }
   };
-  const FormRow = require("module_8279").FormRow;
-  obj7 = { themedColor: multiAccountUsers(575).colors.TEXT_LINK, size: require("native").Icon.Sizes.SMALL_20, source: multiAccountUsers(18367) };
-  Icon = require("module_8279").FormRow.Icon;
+  const FormRow = require("module_8106").FormRow;
+  obj7 = { themedColor: multiAccountUsers(575).colors.TEXT_LINK, size: require("native").Icon.Sizes.SMALL_20, source: multiAccountUsers(18658) };
+  Icon = require("module_8106").FormRow.Icon;
   intl3 = require("intl").intl;
   items[1] = closure_11(FormRow, obj6);
   return closure_11(tmp2, obj3);

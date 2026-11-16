@@ -1,17 +1,17 @@
-// Module ID: 5835
-// Function ID: 5836
+// Module ID: 5971
+// Function ID: 5972
 // Name: VoiceStateStore
-// Dependencies: [32, 5836, 1072, 5837, 12, 504, 1624, 572, 2]
+// Dependencies: [32, 5972, 1072, 5973, 12, 504, 1627, 572, 2]
 
-// Module 5835 (VoiceStateStore)
+// Module 5971 (VoiceStateStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1624 */;
-import CallConstants from "CallConstants" /* 5837 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1627 */;
+import CallConstants from "CallConstants" /* 5973 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import VoiceStateRecord from "VoiceStateRecord" /* 5836 */;
+import VoiceStateRecord from "VoiceStateRecord" /* 5972 */;
 import size from "module_2" /* 2 */;
 
 let closure_14, closure_16, closure_9, sessionId, set2, set3;
@@ -179,9 +179,9 @@ let closure_10 = 0;
 let closure_11 = {};
 let set = new Set();
 const map = new Map();
-const authStore3 = {};
+const gesture = {};
 let closure_15 = {};
-const authStore4 = {};
+const authStore3 = {};
 let closure_17 = {};
 const Store = get_initializedDefault.Store;
 class VoiceStateStore extends Store {

@@ -1,30 +1,30 @@
-// Module ID: 14692
-// Function ID: 14693
+// Module ID: 11792
+// Function ID: 11793
 // Name: SocialLayerStorefrontPoductPurchaseSuccessModal
-// Dependencies: [32, 717, 19, 17, 5171, 6984, 7504, 1072, 21, 5170, 575, 1652, 5793, 5402, 5408, 1493, 504, 8877, 7501, 5783, 5790, 1113, 5874, 5747, 7388, 7104, 7153, 9638, 7424, 7421, 11559, 7445, 1252, 5753, 10820, 3896, 9554, 5226, 2]
+// Dependencies: [32, 717, 19, 17, 5307, 7070, 7247, 1072, 21, 5306, 575, 1655, 5929, 5538, 5544, 1496, 504, 8560, 7244, 5919, 5926, 1113, 6010, 5883, 7415, 7500, 7549, 9515, 7259, 7919, 11793, 7937, 1256, 5889, 11729, 4031, 10386, 5362, 2]
 // Exports: SocialLayerStorefrontProductGiftPurchaseSuccessModal, SocialLayerStorefrontProductSelfPurchaseSuccessModal
 
-// Module 14692 (SocialLayerStorefrontPoductPurchaseSuccessModal)
+// Module 11792 (SocialLayerStorefrontPoductPurchaseSuccessModal)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import _modDef3896 from "module_3896" /* 3896 */;
-import UserUtilsDefault from "UserUtils" /* 5226 */;
-import HapticUtils from "HapticUtils" /* 5408 */;
-import XSmallIcon from "XSmallIcon" /* 7153 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7445 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7501 */;
-import SocialLayerStorefrontConstants from "SocialLayerStorefrontConstants" /* 7504 */;
-import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 10820 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import _modDef4031 from "module_4031" /* 4031 */;
+import UserUtilsDefault from "UserUtils" /* 5362 */;
+import HapticUtils from "HapticUtils" /* 5544 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7244 */;
+import SocialLayerStorefrontConstants from "SocialLayerStorefrontConstants" /* 7247 */;
+import XSmallIcon from "XSmallIcon" /* 7549 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
+import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 11729 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _toArray from "_toArray" /* 717 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5171 */;
-import SKUStore from "SKUStore" /* 6984 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import SKUStore from "SKUStore" /* 7070 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -346,7 +346,7 @@ function PurchaseSuccessModalBase(sku) {
     onPress: onClose,
     backImage() {
       const obj = { size: "lg", style: closeButtonIcon.closeButtonIcon };
-      return authStore3(XSmallIcon.XSmallIcon, obj);
+      return gesture(XSmallIcon.XSmallIcon, obj);
     },
     accessibilityLabel: intl2.string(sku(tmp3[21]).t.cpT0Cq),
     displayMode: "minimal"
@@ -389,7 +389,7 @@ function PurchaseSuccessModalBase(sku) {
   items22[2] = closure_15(SafeAreaPaddingView, rect);
   const obj20 = { style: items28, pointerEvents: "none" };
   items28 = [tmp.curtain, animatedStyle3];
-  items22[3] = closure_14(require("module_1652").View, obj20);
+  items22[3] = closure_14(require("module_1655").View, obj20);
   return closure_15(closure_7, obj10);
 }
 let _slicedToArray = _slicedToArray_mod;
@@ -608,7 +608,7 @@ export function SocialLayerStorefrontProductSelfPurchaseSuccessModal(skuId) {
         formatToPlainString2Result = formatToPlainString(prop, obj3);
       } else {
         let str;
-        const eNNnIG = _modDef3896.eNNnIG;
+        const eNNnIG = _modDef4031.eNNnIG;
         if (getOrFetchApplication != null) {
           str = getOrFetchApplication.name;
         }

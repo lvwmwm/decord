@@ -1,12 +1,12 @@
-// Module ID: 11962
-// Function ID: 11963
+// Module ID: 12798
+// Function ID: 12799
 // Name: useVideoReadyTimeout
-// Dependencies: [19, 1089, 5014, 11961, 5950, 6034, 11963, 2]
+// Dependencies: [19, 1089, 5150, 12797, 6086, 6170, 12799, 2]
 // Exports: default
 
-// Module 11962 (useVideoReadyTimeout)
+// Module 12798 (useVideoReadyTimeout)
 import DurationsDefault from "Durations" /* 1089 */;
-import VideoStreamReadyActionCreators from "VideoStreamReadyActionCreators" /* 11963 */;
+import VideoStreamReadyActionCreators from "VideoStreamReadyActionCreators" /* 12799 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

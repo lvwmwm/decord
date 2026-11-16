@@ -1,12 +1,12 @@
-// Module ID: 13976
-// Function ID: 13977
+// Module ID: 14557
+// Function ID: 14558
 // Name: sharedClientThemeViewed
-// Dependencies: [6192, 1260, 2]
+// Dependencies: [6328, 1264, 2]
 // Exports: handleSharedClientThemeViewed
 
-// Module 13976 (sharedClientThemeViewed)
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import useTrackImpression from "useTrackImpression" /* 6192 */;
+// Module 14557 (sharedClientThemeViewed)
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
+import useTrackImpression from "useTrackImpression" /* 6328 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/client_themes/native/chat/sharedClientThemeViewed.tsx");

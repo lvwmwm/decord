@@ -1,18 +1,18 @@
-// Module ID: 1398
-// Function ID: 1399
+// Module ID: 1401
+// Function ID: 1402
 // Name: user
-// Dependencies: [32, 1197, 1227, 1399, 1226, 2]
+// Dependencies: [32, 1197, 1227, 1402, 1226, 2]
 
-// Module 1398 (user)
+// Module 1401 (user)
 import _mod1197 from "module_1197" /* 1197 */;
 import timestamp from "timestamp" /* 1226 */;
 import wrappers from "wrappers" /* 1227 */;
-import safety_state from "safety_state" /* 1399 */;
+import safety_state from "safety_state" /* 1402 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let internalBinaryWrite10, internalBinaryWrite11, internalBinaryWrite12, internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8, internalBinaryWrite9, obj;
+let internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8, internalBinaryWrite9, obj;
 
 let obj40;
 let tmp;
@@ -317,7 +317,7 @@ class TimeOfDay$Type extends MessageType {
 const prototype = TimeOfDay$Type.prototype;
 let items = [{ no: 1, name: "hours", kind: "scalar", T: 5 }, { no: 2, name: "minutes", kind: "scalar", T: 5 }, { no: 3, name: "seconds", kind: "scalar", T: 5 }, { no: 4, name: "nanos", kind: "scalar", T: 5 }];
 let tmp8 = new "SUBSCRIPTION_GROUP"("discord_protos.users.v1.TimeOfDay", items, tmp6, tmp5, "create", "internalBinaryRead", tmp4, "internalBinaryWrite", tmp3, tmp2, require, dependencyMap, DayOfWeek, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10, obj11, obj12, obj13);
-const authStore5 = tmp8;
+const authStore4 = tmp8;
 const MessageType2 = _mod1197.MessageType;
 class User$Type extends MessageType2 {
   constructor() {
@@ -2363,7 +2363,7 @@ const mediumUserType14 = new MediumUser$Type("discord_protos.users.v1.Anonymizat
 const MessageType19 = _mod1197.MessageType;
 class UserData$Type extends MessageType19 {
   constructor() {
-    const items = [, , , , , , , , , , , , , , , , , , , , , ];
+    const items = [, , , , , , , , , , , , , , , , , , , , , , ];
     obj = {
       no: 1,
       name: "linked_users",
@@ -2529,11 +2529,12 @@ class UserData$Type extends MessageType19 {
       }
     };
     items[21] = { no: 22, name: "hidden_flags", kind: "scalar", T: 4 };
+    items[22] = { no: 23, name: "play_install_ids", kind: "scalar", repeat: 2, T: 9 };
     const tmp2 = new tmp("discord_protos.users.v1.UserData", items, T);
     return tmp2;
   }
   create(partialSettings) {
-    obj = { linkedUsers: {}, safetyFeatureLimits: {}, safetyFlags: {}, isPendingRequiredAction: false, disableStaffDiscount: false, hiddenFlags: "0" };
+    obj = { linkedUsers: {}, safetyFeatureLimits: {}, safetyFlags: {}, isPendingRequiredAction: false, disableStaffDiscount: false, hiddenFlags: "0", playInstallIds: [] };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
@@ -2677,6 +2678,7 @@ class UserData$Type extends MessageType19 {
     arg0[num] = obj;
   }
   internalBinaryWrite(linkedUsers, tag, writeUnknownFields) {
+    let length;
     const keys = Object.keys(linkedUsers.linkedUsers);
     const iter = keys[Symbol.iterator]();
     const nextResult = iter.next();
@@ -2787,21 +2789,21 @@ class UserData$Type extends MessageType19 {
       const joined14 = internalBinaryWrite9Result.join();
     }
     if (linkedUsers.ageAssuranceData) {
-      internalBinaryWrite10 = internalBinaryWrite.internalBinaryWrite;
+      const internalBinaryWrite10 = internalBinaryWrite.internalBinaryWrite;
       const ageAssuranceData = linkedUsers.ageAssuranceData;
       const tagResult18 = tag.tag(13, _mod1197.WireType.LengthDelimited);
       const result = internalBinaryWrite10(ageAssuranceData, tagResult18.fork(), writeUnknownFields);
       const joined15 = result.join();
     }
     if (linkedUsers.perks) {
-      internalBinaryWrite11 = items321.internalBinaryWrite;
+      const internalBinaryWrite11 = items321.internalBinaryWrite;
       const perks = linkedUsers.perks;
       const tagResult19 = tag.tag(14, _mod1197.WireType.LengthDelimited);
       const result1 = internalBinaryWrite11(perks, tagResult19.fork(), writeUnknownFields);
       const joined16 = result1.join();
     }
     if (linkedUsers.badges) {
-      internalBinaryWrite12 = mediumUserType13.internalBinaryWrite;
+      const internalBinaryWrite12 = mediumUserType13.internalBinaryWrite;
       const badges = linkedUsers.badges;
       const tagResult20 = tag.tag(15, _mod1197.WireType.LengthDelimited);
       const result2 = internalBinaryWrite12(badges, tagResult20.fork(), writeUnknownFields);
@@ -2846,6 +2848,15 @@ class UserData$Type extends MessageType19 {
     if ("0" !== linkedUsers.hiddenFlags) {
       const tagResult27 = tag.tag(22, _mod1197.WireType.Varint);
       tagResult27.uint64(linkedUsers.hiddenFlags);
+    }
+    let num20 = 0;
+    if (0 < linkedUsers.playInstallIds.length) {
+      do {
+        let tagResult28 = tag.tag(23, _mod1197.WireType.LengthDelimited);
+        let stringResult = tagResult28.string(linkedUsers.playInstallIds[num20]);
+        num20 = num20 + 1;
+        length = linkedUsers.playInstallIds.length;
+      } while (num20 < length);
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {

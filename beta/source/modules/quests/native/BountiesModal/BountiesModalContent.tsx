@@ -1,34 +1,34 @@
-// Module ID: 17327
-// Function ID: 17328
+// Module ID: 17598
+// Function ID: 17599
 // Name: BountiesModalContent
-// Dependencies: [5, 32, 19, 17, 7954, 6869, 17275, 1072, 1083, 21, 1493, 1627, 5170, 575, 1377, 14776, 5410, 504, 9674, 17284, 14957, 17289, 9814, 17292, 17287, 7972, 6876, 7981, 6874, 14950, 17271, 17295, 14965, 17328, 17326, 7388, 17319, 1652, 5402, 5405, 14927, 1108, 17285, 17325, 7951, 5231, 2]
+// Dependencies: [5, 32, 19, 17, 8807, 6954, 17546, 1072, 1083, 21, 1496, 1630, 5306, 575, 1380, 10053, 5546, 504, 10437, 17555, 15256, 17560, 10141, 17563, 17558, 8825, 6961, 8834, 6959, 15249, 17542, 17566, 15264, 17599, 17597, 7415, 17590, 1655, 5538, 5541, 10171, 1108, 17556, 17596, 8804, 5367, 2]
 // Exports: default
 
-// Module 17327 (BountiesModalContent)
+// Module 17598 (BountiesModalContent)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants2 from "Constants" /* 1083 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
-import timing_timing from "timing/timing" /* 5402 */;
-import timingPresets from "timingPresets" /* 5405 */;
-import QuestContent from "QuestContent" /* 6874 */;
-import AdCreativeType from "AdCreativeType" /* 6876 */;
-import QuestDataUtils from "QuestDataUtils" /* 7951 */;
-import AnalyticsActions from "AnalyticsActions" /* 7972 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7981 */;
-import AppStoreOverlayTelemetryManager from "AppStoreOverlayTelemetryManager" /* 14927 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 14950 */;
-import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 14965 */;
-import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 17271 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import timingPresets from "timingPresets" /* 5541 */;
+import QuestContent from "QuestContent" /* 6959 */;
+import AdCreativeType from "AdCreativeType" /* 6961 */;
+import QuestDataUtils from "QuestDataUtils" /* 8804 */;
+import AnalyticsActions from "AnalyticsActions" /* 8825 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8834 */;
+import AppStoreOverlayTelemetryManager from "AppStoreOverlayTelemetryManager" /* 10171 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 15249 */;
+import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 15264 */;
+import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 17542 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import BountyStore from "BountyStore" /* 7954 */;
-import QuestConstants from "QuestConstants" /* 6869 */;
-import BountiesModalConstants from "BountiesModalConstants" /* 17275 */;
+import BountyStore from "BountyStore" /* 8807 */;
+import QuestConstants from "QuestConstants" /* 6954 */;
+import BountiesModalConstants from "BountiesModalConstants" /* 17546 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let c4, c5, set;
@@ -210,7 +210,7 @@ function BountiesModalContentInner(bounty) {
         let obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       let c3;
@@ -277,7 +277,7 @@ function BountiesModalContentInner(bounty) {
           }
           let num4 = 3;
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } catch (tmp36) {
         dismissVideoEndAppStoreOverlay = tmp36;

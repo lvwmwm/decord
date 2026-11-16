@@ -1,17 +1,17 @@
-// Module ID: 14480
-// Function ID: 14481
+// Module ID: 14961
+// Function ID: 14962
 // Name: ChatPlaceholder
-// Dependencies: [19, 17, 10050, 21, 5170, 575, 1627, 5767, 1493, 7050, 1652, 14481, 14482, 14483, 2]
+// Dependencies: [19, 17, 11865, 21, 5306, 575, 1630, 5903, 1496, 7475, 1655, 14962, 14963, 14964, 2]
 
-// Module 14480 (ChatPlaceholder)
+// Module 14961 (ChatPlaceholder)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 10050 */;
-import getChatPlaceholderRowHeightDefault from "getChatPlaceholderRowHeight" /* 14482 */;
-import ChatPlaceholderRowDefault from "ChatPlaceholderRow" /* 14483 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 11865 */;
+import getChatPlaceholderRowHeightDefault from "getChatPlaceholderRowHeight" /* 14963 */;
+import ChatPlaceholderRowDefault from "ChatPlaceholderRow" /* 14964 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -43,13 +43,13 @@ const memoResult = react.memo(function ChatPlaceholder(screenIndex) {
   _require = tmp2;
   let tmp3 = height;
   let tmp4 = dependencyMap;
-  height = height(1493)().height;
-  const rect = height(1627)();
+  height = height(1496)().height;
+  const rect = height(1630)();
   let sum = rect.top + rect.bottom;
   dependencyMap = sum;
-  let diff = height(5767)({ isKeyboardAwareOnAndroid: false, includeKeyboardHeight: true }).insets.bottom - rect.bottom;
-  const tmp7 = height(7050)(diff);
-  let obj = require("module_1652");
+  let diff = height(5903)({ isKeyboardAwareOnAndroid: false, includeKeyboardHeight: true }).insets.bottom - rect.bottom;
+  const tmp7 = height(7475)(diff);
+  let obj = require("module_1655");
   let items = [closure_7, tmp2, tmp7];
   let c0;
   let c1;
@@ -78,7 +78,7 @@ const memoResult = react.memo(function ChatPlaceholder(screenIndex) {
     return tmp2;
   }, []);
   const items2 = [height, sum, tmp2, callback];
-  const tmp13 = tmp3(14481)({ visible: true, animated: true });
+  const tmp13 = tmp3(14962)({ visible: true, animated: true });
   const memo = callback.useMemo(() => {
     let diff;
     const items = [];
@@ -95,7 +95,7 @@ const memoResult = react.memo(function ChatPlaceholder(screenIndex) {
     return items;
   }, items2);
   const items3 = [tmp.placeholder, animatedStyle, tmp13];
-  return jsx(tmp3(1652).View, { style: items3, pointerEvents: "none", children: memo });
+  return jsx(tmp3(1655).View, { style: items3, pointerEvents: "none", children: memo });
 });
 const result = size.fileFinishedImporting("modules/chat/native/placeholder/ChatPlaceholder.tsx");
 

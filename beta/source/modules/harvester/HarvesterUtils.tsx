@@ -1,16 +1,16 @@
-// Module ID: 17113
-// Function ID: 17114
+// Module ID: 17389
+// Function ID: 17390
 // Name: HarvesterUtils
-// Dependencies: [32, 19, 1385, 15942, 17114, 504, 2]
+// Dependencies: [32, 19, 1388, 16215, 17390, 504, 2]
 // Exports: harvestDisabled, useRequestHarvestStatus
 
-// Module 17113 (HarvesterUtils)
+// Module 17389 (HarvesterUtils)
 import get_initialized from "get initialized" /* 504 */;
-import HarvesterConstants from "HarvesterConstants" /* 17114 */;
+import HarvesterConstants from "HarvesterConstants" /* 17390 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1385 */;
-import DataHarvestStore from "DataHarvestStore" /* 15942 */;
+import UserStore from "UserStore" /* 1388 */;
+import DataHarvestStore from "DataHarvestStore" /* 16215 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -48,16 +48,16 @@ export function useRequestHarvestStatus() {
   let obj6;
   let ref;
   let tmp3;
-  const f112741 = () => Date.now();
+  const f115203 = () => Date.now();
   const items = [UserStore];
   const obj = get_initialized;
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   const items1 = [DataHarvestStore];
   const obj3 = get_initialized;
   const stateFromStores1 = obj3.useStateFromStores(items1, () => harvestType.harvestType);
-  [tmp3, require] = react.useState(f112741);
+  [tmp3, require] = react.useState(f115203);
   let sum = tmp3;
-  _slicedToArray(react.useState(f112741), 2);
+  _slicedToArray(react.useState(f115203), 2);
   if (null != stateFromStores1) {
     const _Date = Date;
     const self = this;

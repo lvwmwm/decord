@@ -1,13 +1,13 @@
-// Module ID: 5311
-// Function ID: 5312
+// Module ID: 5447
+// Function ID: 5448
 // Name: CheckpointKnickKnacksRive
-// Dependencies: [109, 19, 21, 5239, 5312, 5292, 2]
+// Dependencies: [109, 19, 21, 5375, 5448, 5428, 2]
 // Exports: CheckpointKnickKnacksRive
 
-// Module 5311 (CheckpointKnickKnacksRive)
+// Module 5447 (CheckpointKnickKnacksRive)
 import Fragment from "Fragment" /* 21 */;
-import BaseRive2 from "BaseRive" /* 5239 */;
-import RiveErrorBoundary2 from "RiveErrorBoundary" /* 5292 */;
+import BaseRive2 from "BaseRive" /* 5375 */;
+import RiveErrorBoundary2 from "RiveErrorBoundary" /* 5428 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

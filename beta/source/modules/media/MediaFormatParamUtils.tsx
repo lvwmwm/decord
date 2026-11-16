@@ -1,11 +1,11 @@
-// Module ID: 6217
-// Function ID: 6218
+// Module ID: 6353
+// Function ID: 6354
 // Name: MediaFormatParamUtils
-// Dependencies: [1378, 2]
+// Dependencies: [1381, 2]
 // Exports: withMediaFormat
 
-// Module 6217 (MediaFormatParamUtils)
-import URLUtilsDefault from "URLUtils" /* 1378 */;
+// Module 6353 (MediaFormatParamUtils)
+import URLUtilsDefault from "URLUtils" /* 1381 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/media/MediaFormatParamUtils.tsx");

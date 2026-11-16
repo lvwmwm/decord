@@ -1,30 +1,30 @@
-// Module ID: 9884
-// Function ID: 9885
+// Module ID: 12698
+// Function ID: 12699
 // Name: AppLauncherUtils
-// Dependencies: [109, 5, 9885, 2140, 12650, 1072, 6199, 5175, 1113, 2148, 5831, 6971, 5838, 1377, 2116, 5839, 10461, 7933, 7745, 6122, 1411, 11678, 12686, 7809, 11932, 2]
-// Exports: appLauncherShowsRecommendations, ensureRecommendationSectionsOnlyContainActivities, executeAppLauncherCommand, formatPrimaryEntryPointCommandName, getApplicationDetails, getEmbeddedActivityConfig, getInstallAppProps, getInstallAppPropsFromProfileApplication, getSectionDescription, getSectionName, getShelfBadgeNameIfActive, isActivityApp, isAppAvailableInAppLauncher, isApplicationAdSupported, isApplicationMonetizedWithIAP, isConjureAppWithoutIcon, isPartnerApplication, isPromotedApplication, isRealApplication
+// Dependencies: [109, 5, 11406, 2143, 12699, 1072, 6335, 5311, 1113, 2151, 5967, 7057, 5974, 1380, 2119, 5975, 11397, 8786, 8660, 6258, 1414, 12579, 12700, 8724, 12701, 2]
+// Exports: appLauncherShowsRecommendations, ensureRecommendationSectionsOnlyContainActivities, executeAppLauncherCommand, formatPrimaryEntryPointCommandName, getApplicationDetails, getConjureProjectId, getEmbeddedActivityConfig, getInstallAppProps, getInstallAppPropsFromProfileApplication, getInstallableApplication, getSectionDescription, getSectionName, getShelfBadgeNameIfActive, isActivityApp, isAppAvailableInAppLauncher, isApplicationAdSupported, isApplicationMonetizedWithIAP, isConjureAppWithoutIcon, isPartnerApplication, isPromotedApplication, isRealApplication
 
-// Module 9884 (AppLauncherUtils)
+// Module 12698 (AppLauncherUtils)
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
-import Server from "Server" /* 2116 */;
-import EmbeddedSurfaceUtils from "EmbeddedSurfaceUtils" /* 2148 */;
-import MessageConstants from "MessageConstants" /* 5175 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5831 */;
-import getPlatformDefault from "getPlatform" /* 5838 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6199 */;
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 6971 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7809 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 11678 */;
-import ApplicationInstallUtils from "ApplicationInstallUtils" /* 11932 */;
-import ApplicationDirectoryCollectionItemType from "ApplicationDirectoryCollectionItemType" /* 12686 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import Server from "Server" /* 2119 */;
+import EmbeddedSurfaceUtils from "EmbeddedSurfaceUtils" /* 2151 */;
+import MessageConstants from "MessageConstants" /* 5311 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5967 */;
+import getPlatformDefault from "getPlatform" /* 5974 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6335 */;
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 7057 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8724 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 12579 */;
+import ApplicationDirectoryCollectionItemType from "ApplicationDirectoryCollectionItemType" /* 12700 */;
+import ApplicationInstallUtils from "ApplicationInstallUtils" /* 12701 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9885 */;
-import ApplicationRecord from "ApplicationRecord" /* 2140 */;
-import AppLauncherStore from "AppLauncherStore" /* 12650 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 11406 */;
+import ApplicationRecord from "ApplicationRecord" /* 2143 */;
+import AppLauncherStore from "AppLauncherStore" /* 12699 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -91,6 +91,9 @@ let result = size.fileFinishedImporting("modules/app_launcher/utils/AppLauncherU
 export const FAKE_BUILT_IN_APP = obj;
 export function isRealApplication(application) {
   return application.id !== BuiltInSectionId.BUILT_IN;
+}
+export function getConjureProjectId(conjureProjectId) {
+  return conjureProjectId instanceof ApplicationRecord ? conjureProjectId.conjureProjectId : conjureProjectId.conjure_project_id;
 }
 export function isConjureAppWithoutIcon(icon, arg1) {
   let tmp = null == icon.icon;
@@ -198,7 +201,7 @@ export function executeAppLauncherCommand(arg0) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       try {
@@ -274,7 +277,7 @@ export function executeAppLauncherCommand(arg0) {
           }
           maxSizeCallback = 0;
           commandOrigin = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } catch (tmp37) {
         commandTargetId = tmp37;
@@ -387,6 +390,21 @@ export function ensureRecommendationSectionsOnlyContainActivities(stateFromStore
 }
 export function getInstallAppPropsFromProfileApplication(application) {
   return { applicationId: application.id, customInstallUrl: application.customInstallUrl, installParams: application.installParams, integrationTypesConfig: application.integrationTypesConfig };
+}
+export function getInstallableApplication(application) {
+  let tmp2;
+  const obj = { applicationId: application.id, customInstallUrl: null, installParams: null, integrationTypesConfig: null };
+  const tmp = ApplicationRecord;
+  if (application instanceof ApplicationRecord) {
+    ({ customInstallUrl: obj.customInstallUrl, installParams: obj.installParams, integrationTypesConfig: obj.integrationTypesConfig } = application);
+    tmp2 = obj;
+  } else {
+    ({ custom_install_url: obj.customInstallUrl, install_params: obj.installParams, integration_types_config: obj.integrationTypesConfig } = application);
+    tmp2 = obj;
+  }
+  const obj2 = { id: application.id, conjureProjectId: application instanceof tmp ? application.conjureProjectId : application.conjure_project_id };
+  const merged = Object.assign(tmp2);
+  return obj2;
 }
 export function getInstallAppProps(application) {
   let tmp;

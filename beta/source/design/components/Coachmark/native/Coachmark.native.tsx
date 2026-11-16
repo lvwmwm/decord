@@ -1,23 +1,23 @@
-// Module ID: 10118
-// Function ID: 10119
+// Module ID: 9569
+// Function ID: 9570
 // Name: Coachmark
-// Dependencies: [109, 32, 19, 17, 1072, 21, 1652, 5170, 575, 10113, 5797, 10119, 5874, 6185, 5783, 5790, 1113, 7153, 9105, 8075, 1377, 5231, 2]
+// Dependencies: [109, 32, 19, 17, 1072, 21, 1655, 5306, 575, 9429, 5933, 9570, 6010, 6321, 5919, 5926, 1113, 7549, 7997, 8209, 1380, 5367, 2]
 // Exports: CoachmarkContainer
 
-// Module 10118 (Coachmark)
+// Module 9569 (Coachmark)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import native from "native" /* 5231 */;
-import FastImageDefault from "FastImage" /* 5874 */;
-import react_native from "react-native" /* 6185 */;
-import Graphic2 from "Graphic" /* 10119 */;
+import native from "native" /* 5367 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import react_native from "react-native" /* 6321 */;
+import Graphic2 from "Graphic" /* 9570 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import module_1652 from "module_1652" /* 1652 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import module_1655 from "module_1655" /* 1655 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let Pressable;
@@ -288,7 +288,7 @@ let closure_3 = ["style"];
 ({ View: metroImportDefault, Pressable } = react_native2);
 const ThemeTypes = Constants.ThemeTypes;
 ({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = Fragment);
-let closure_13 = module_1652.createAnimatedComponent(Pressable);
+let closure_13 = module_1655.createAnimatedComponent(Pressable);
 let createStyles = createStyles_mod;
 let obj = { container: { position: "absolute", alignItems: "center" }, shadow: obj2, body: obj3, textGap: { gap: 4 }, textOnlyPadding: obj4, bodyBgColor: obj5, gradient: obj6, bodyContainer: obj7, center: { alignItems: "center", justifyContent: "center" }, buttonSpacing: obj8, text: { maxWidth: 200, textAlign: "center" }, cursorContainer: { alignItems: "center", zIndex: 0 }, cursorHead: size, cursorSpine: size1, image: { height: 40, width: 40 }, bottomMargin: obj9, closeButton: rect };
 obj2 = {};
@@ -304,7 +304,7 @@ size = { height: 8, width: 8, borderRadius: nativeDefault.radii.xs, borderWidth:
 size1 = { width: 2, height: 16, backgroundColor: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE };
 obj9 = { marginBottom: nativeDefault.modules.mobile.COACHMARK_BUTTON_SPACING };
 rect = { position: "absolute", top: nativeDefault.modules.mobile.COACHMARK_BUTTON_SPACING, right: nativeDefault.modules.mobile.COACHMARK_BUTTON_SPACING };
-const authStore3 = createStyles(obj);
+const gesture = createStyles(obj);
 let closure_15 = { "21/9": 90, "16/9": 90, "6/4": 60, "2/1": 40, "1/1": 40 };
 size = size_mod;
 let result = size.fileFinishedImporting("design/components/Coachmark/native/Coachmark.native.tsx");

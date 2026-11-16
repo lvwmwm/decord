@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/logos", width: 134, height: 56, scales: [2, 3], hash: "3d54a60f579be5dc72492b0eeac44a2b", name: "img_discord_nitro_logo_centered_light", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/media_viewer/native/images", width: 16, height: 16, scales: [2, 3], hash: "4d6296c901620eb3ce6d9e0093bbc96e", name: "scrubber", type: "png" });

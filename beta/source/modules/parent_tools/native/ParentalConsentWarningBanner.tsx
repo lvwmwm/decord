@@ -1,22 +1,22 @@
-// Module ID: 19562
-// Function ID: 19563
+// Module ID: 19891
+// Function ID: 19892
 // Name: ParentalConsentWarningBanner
-// Dependencies: [19, 17, 7825, 1072, 21, 575, 5170, 1627, 17120, 17119, 19563, 12051, 5756, 7839, 1252, 7826, 7668, 5783, 5747, 1113, 2664, 2]
+// Dependencies: [19, 17, 8741, 1072, 21, 575, 5306, 1630, 17396, 17395, 19892, 12914, 5892, 8495, 1256, 8742, 8604, 5919, 5883, 1113, 2701, 2]
 // Exports: default
 
-// Module 19562 (ParentalConsentWarningBanner)
+// Module 19891 (ParentalConsentWarningBanner)
 import nativeDefault from "native" /* 575 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import Text_Text from "Text/Text" /* 5783 */;
-import openUserSettings from "openUserSettings" /* 7668 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7825 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7826 */;
-import _modDef7839 from "module_7839" /* 7839 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import _modDef8495 from "module_8495" /* 8495 */;
+import openUserSettings from "openUserSettings" /* 8604 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 8741 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 8742 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -79,7 +79,7 @@ export default function ParentalConsentWarningBanner(children) {
   daysRemaining = undefined;
   const memo = react.useMemo(() => {
     const items = [token, ];
-    const obj = _modDef7839(token);
+    const obj = _modDef8495(token);
     const setAlphaResult = obj.setAlpha(0);
     items[1] = setAlphaResult.toRgbString();
     return items;

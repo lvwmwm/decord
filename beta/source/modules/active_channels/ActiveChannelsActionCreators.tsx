@@ -1,10 +1,10 @@
-// Module ID: 18494
-// Function ID: 18495
+// Module ID: 18785
+// Function ID: 18786
 // Name: ActiveChannelsActionCreators
-// Dependencies: [5, 1072, 572, 1282, 6612, 2]
+// Dependencies: [5, 1072, 572, 1285, 6748, 2]
 // Exports: fetchActiveChannels
 
-// Module 18494 (ActiveChannelsActionCreators)
+// Module 18785 (ActiveChannelsActionCreators)
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -29,7 +29,7 @@ let obj = function _fetchActiveChannels() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -53,7 +53,7 @@ let obj = function _fetchActiveChannels() {
               channels = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "Path", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {

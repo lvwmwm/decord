@@ -1,14 +1,14 @@
-// Module ID: 18244
-// Function ID: 18245
+// Module ID: 18528
+// Function ID: 18529
 // Name: MenuIcon
-// Dependencies: [19, 21, 575, 5873, 18245, 2]
+// Dependencies: [19, 21, 575, 6009, 18529, 2]
 // Exports: MenuIcon
 
-// Module 18244 (MenuIcon)
+// Module 18528 (MenuIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5873 */;
-import AssetRegistry from "AssetRegistry" /* 18245 */;
+import BaseIconImage2 from "BaseIconImage" /* 6009 */;
+import AssetRegistry from "AssetRegistry" /* 18529 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

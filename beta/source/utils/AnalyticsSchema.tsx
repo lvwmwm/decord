@@ -1,9 +1,9 @@
-// Module ID: 1373
-// Function ID: 1374
+// Module ID: 1376
+// Function ID: 1377
 // Name: utils/AnalyticsSchema
 // Dependencies: [1072, 2]
 
-// Module 1373 (utils/AnalyticsSchema)
+// Module 1376 (utils/AnalyticsSchema)
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

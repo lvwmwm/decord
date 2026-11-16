@@ -1,12 +1,12 @@
-// Module ID: 16098
-// Function ID: 16099
+// Module ID: 16371
+// Function ID: 16372
 // Name: GuildBadgeGem
-// Dependencies: [19, 21, 16084, 8134, 2]
+// Dependencies: [19, 21, 16357, 8263, 2]
 // Exports: GuildBadgeGem
 
-// Module 16098 (GuildBadgeGem)
-import inlineStyles from "inlineStyles" /* 8134 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 16084 */;
+// Module 16371 (GuildBadgeGem)
+import inlineStyles from "inlineStyles" /* 8263 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 16357 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

@@ -1,26 +1,26 @@
-// Module ID: 9878
-// Function ID: 9879
+// Module ID: 7419
+// Function ID: 7420
 // Name: ConnectAccountStep
-// Dependencies: [19, 17, 2162, 502, 1385, 21, 5170, 575, 5401, 504, 6661, 1411, 5177, 6969, 1187, 9879, 5783, 1113, 5790, 9843, 5891, 7092, 2]
+// Dependencies: [19, 17, 2165, 502, 1388, 21, 5306, 575, 5537, 504, 7087, 1414, 5313, 7055, 1187, 7420, 5919, 1113, 5926, 7422, 6027, 7738, 2]
 // Exports: ConnectedAccountCard, default
 
-// Module 9878 (ConnectAccountStep)
+// Module 7419 (ConnectAccountStep)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
-import AvatarUtils from "AvatarUtils" /* 1411 */;
-import shared from "shared" /* 5177 */;
-import useThemeDefault from "useTheme" /* 5401 */;
-import Text_Text from "Text/Text" /* 5783 */;
-import PlatformsDefault from "Platforms" /* 6661 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6969 */;
-import authorizeConnectionDefault from "authorizeConnection" /* 9843 */;
+import AvatarUtils from "AvatarUtils" /* 1414 */;
+import shared from "shared" /* 5313 */;
+import useThemeDefault from "useTheme" /* 5537 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 7055 */;
+import PlatformsDefault from "Platforms" /* 7087 */;
+import authorizeConnectionDefault from "authorizeConnection" /* 7422 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2162 */;
+import ApplicationStore from "ApplicationStore" /* 2165 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import UserStore from "UserStore" /* 1385 */;
+import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let currentUser;
@@ -61,7 +61,7 @@ export default function ConnectAccountStep(clientId) {
   const platformType = clientId.platformType;
   const platformName = clientId.platformName;
   const tmp = closure_10();
-  const tmp4 = platformType(5401)();
+  const tmp4 = platformType(5537)();
   let obj = clientId(504);
   const items = [ApplicationStore];
   const items1 = [clientId];
@@ -75,26 +75,26 @@ export default function ConnectAccountStep(clientId) {
     }
     return currentUser;
   });
-  const obj3 = platformType(6661);
+  const obj3 = platformType(7087);
   const value = obj3.get(platformType);
   let source = null;
   if (null != value) {
-    const makeSource = clientId(1411).makeSource;
-    clientId(1411);
+    const makeSource = clientId(1414).makeSource;
+    clientId(1414);
     const icon = value.icon;
-    const tmp5Result2 = clientId(5177);
+    const tmp5Result2 = clientId(5313);
     source = makeSource(tmp5Result2.isThemeLight(tmp4) ? icon.lightPNG : icon.darkPNG);
   }
   let applicationIconSource;
   if (null != stateFromStores) {
     const obj4 = { id: null, icon: null };
     ({ id: obj6.id, icon: obj6.icon } = stateFromStores);
-    const tmp2Result = platformType(1411);
+    const tmp2Result = platformType(1414);
     applicationIconSource = tmp2Result.getApplicationIconSource(obj4);
   }
   let userAvatarSource;
   if (null != stateFromStores1) {
-    const tmp2Result2 = platformType(1411);
+    const tmp2Result2 = platformType(1414);
     userAvatarSource = tmp2Result2.getUserAvatarSource(stateFromStores1);
   }
   let str;
@@ -116,20 +116,20 @@ export default function ConnectAccountStep(clientId) {
   const Avatar = tmp5(1187).Avatar;
   items4 = [closure_8(Avatar, obj9), , ];
   const obj10 = { color: platformType(575).colors.INTERACTIVE_TEXT_DEFAULT, size: "md" };
-  const MoreHorizontalIcon = tmp5(9879).MoreHorizontalIcon;
+  const MoreHorizontalIcon = tmp5(7420).MoreHorizontalIcon;
   items4[1] = closure_8(MoreHorizontalIcon, obj10);
   const obj11 = { source: userAvatarSource, size: clientId(1187).AvatarSizes.XLARGE };
   const Avatar2 = tmp5(1187).Avatar;
   items4[2] = closure_8(Avatar2, obj11);
   items5 = [closure_9(View, obj8), , ];
   const obj12 = { variant: "body-lg/normal", color: "text-default", children: intl.string(clientId(1113).t.uT1CPa) };
-  const Text = tmp5(5783).Text;
+  const Text = tmp5(5919).Text;
   intl = tmp5(1113).intl;
   items5[1] = closure_8(Text, obj12);
-  items5[2] = closure_8(clientId(5783).Text, { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: str });
+  items5[2] = closure_8(clientId(5919).Text, { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: str });
   items6 = [closure_9(View, obj7), , , ];
   const obj13 = { variant: "body-sm/normal", color: "text-default", children: intl2.format(clientId(1113).t["aJRE/Q"], { applicationName: str, platformName }) };
-  const Text2 = tmp5(5783).Text;
+  const Text2 = tmp5(5919).Text;
   intl2 = tmp5(1113).intl;
   items6[1] = closure_8(Text2, obj13);
   let tmp16Result = null;
@@ -140,7 +140,7 @@ export default function ConnectAccountStep(clientId) {
   }
   items7 = [tmp16Result, , ];
   const obj16 = { variant: "body-md/medium", style: tmp.cardName, color: "text-default", children: platformName };
-  items7[1] = closure_8(clientId(5783).Text, obj16);
+  items7[1] = closure_8(clientId(5919).Text, obj16);
   const obj17 = {
     variant: "primary",
     size: "sm",
@@ -150,16 +150,16 @@ export default function ConnectAccountStep(clientId) {
     },
     text: intl3.string(clientId(1113).t.S0W8Z5)
   };
-  const Button = tmp5(5790).Button;
+  const Button = tmp5(5926).Button;
   intl3 = tmp5(1113).intl;
   items7[2] = closure_8(Button, obj17);
   items6[2] = closure_9(View, obj14);
   const obj18 = { style: tmp.infoNotice, children: items8 };
   const obj19 = { color: platformType(575).colors.ICON_FEEDBACK_INFO, size: "sm" };
-  const CircleInformationIcon = tmp5(5891).CircleInformationIcon;
+  const CircleInformationIcon = tmp5(6027).CircleInformationIcon;
   items8 = [closure_8(CircleInformationIcon, obj19), ];
   const obj20 = { variant: "body-sm/normal", color: "text-default", style: tmp.infoText, children: intl4.format(clientId(1113).t["8psEFX"], { platformName, applicationName: str }) };
-  const Text3 = tmp5(5783).Text;
+  const Text3 = tmp5(5919).Text;
   intl4 = tmp5(1113).intl;
   items8[1] = closure_8(Text3, obj20);
   items6[3] = closure_9(View, obj18);
@@ -208,17 +208,17 @@ export function ConnectedAccountCard(arg0) {
   const obj8 = { variant: "body-md/medium", color: "mobile-text-heading-primary", children: connectedAccount.name };
   items2[0] = metroImportAll(Text_Text.Text, obj8);
   const obj9 = { variant: "body-xs/normal", color: "text-muted", children: intl2.format(intl5.t.Dkd7sE, obj10) };
-  const Text2 = tmp12(5783).Text;
+  const Text2 = tmp12(5919).Text;
   intl2 = tmp12(1113).intl;
   obj10 = { platformName, connectedAccountId: connectedAccount.id };
   items2[1] = metroImportAll(Text2, obj9);
   items1[1] = React4(View, obj7);
   const obj11 = { color: nativeDefault.colors.TEXT_FEEDBACK_POSITIVE, size: "sm" };
-  const CheckmarkLargeIcon = tmp12(7092).CheckmarkLargeIcon;
+  const CheckmarkLargeIcon = tmp12(7738).CheckmarkLargeIcon;
   items1[2] = metroImportAll(CheckmarkLargeIcon, obj11);
   items[1] = React4(View, obj5);
   const obj12 = { variant: "body-sm/normal", color: "text-default", children: intl3.format(intl5.t.pyRNXJ, { applicationName }) };
-  const Text3 = tmp12(5783).Text;
+  const Text3 = tmp12(5919).Text;
   intl3 = tmp12(1113).intl;
   items[2] = metroImportAll(Text3, obj12);
   const obj13 = { style: tmp.divider };

@@ -1,19 +1,19 @@
-// Module ID: 18693
-// Function ID: 18694
+// Module ID: 18984
+// Function ID: 18985
 // Name: useGuildActionRows
-// Dependencies: [32, 7495, 7822, 1072, 14196, 7535, 7521, 7533, 7501, 7494, 563, 7516, 7497, 14102, 7536, 7499, 7619, 6973, 14359, 18651, 7538, 5396, 18694, 7674, 5003, 2]
+// Dependencies: [32, 7080, 8737, 1072, 14782, 7279, 7265, 7277, 7244, 7079, 563, 7260, 7082, 14685, 7282, 7242, 7223, 7059, 10676, 18942, 7285, 5532, 18985, 9560, 5139, 2]
 // Exports: default
 
-// Module 18693 (useGuildActionRows)
+// Module 18984 (useGuildActionRows)
 import Constants from "Constants" /* 1072 */;
-import useIsNewMemberDefault from "useIsNewMember" /* 7497 */;
-import useGuildOnboardingAvailableDefault from "useGuildOnboardingAvailable" /* 7619 */;
-import GuildSidebarConstants from "GuildSidebarConstants" /* 7822 */;
-import useCanSeeEventsInChannelListDefault from "useCanSeeEventsInChannelList" /* 14196 */;
-import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 14359 */;
-import useTotalPossibleBoostCountDefault from "useTotalPossibleBoostCount" /* 18651 */;
+import useIsNewMemberDefault from "useIsNewMember" /* 7082 */;
+import useGuildOnboardingAvailableDefault from "useGuildOnboardingAvailable" /* 7223 */;
+import GuildSidebarConstants from "GuildSidebarConstants" /* 8737 */;
+import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 10676 */;
+import useCanSeeEventsInChannelListDefault from "useCanSeeEventsInChannelList" /* 14782 */;
+import useTotalPossibleBoostCountDefault from "useTotalPossibleBoostCount" /* 18942 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7495 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7080 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -76,7 +76,7 @@ export default function useGuildActionRows(id) {
     if (isGameServerTabAlwaysOnEnabled) {
       let items2;
       if (!hasItem3) {
-        items2 = [tmp3(5003).DismissibleContent.EMPTY_GAME_SERVER_TAB];
+        items2 = [tmp3(5139).DismissibleContent.EMPTY_GAME_SERVER_TAB];
       }
       const items3 = [];
       const first = _slicedToArray(tmp27(items2, { bypassAutoDismiss: true }), 1)[0];

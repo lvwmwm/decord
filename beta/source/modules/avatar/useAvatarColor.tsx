@@ -1,21 +1,21 @@
-// Module ID: 8819
-// Function ID: 8820
+// Module ID: 8538
+// Function ID: 8539
 // Name: useAvatarColor
-// Dependencies: [32, 5, 19, 5171, 560, 1259, 1490, 5167, 504, 7839, 2]
+// Dependencies: [32, 5, 19, 5307, 560, 1263, 1493, 5303, 504, 8495, 2]
 // Exports: default, maybeFetchColors, useAvatarColors, useHasFetchedColors
 
-// Module 8819 (useAvatarColor)
+// Module 8538 (useAvatarColor)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5171 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, c1, c2, c5, c6, dependencyMap;
 
-const f94775 = () => {
+const f96232 = () => {
   let tmp2 = null != closure_0;
   const tmp = closure_0;
   if (tmp2) {
@@ -41,7 +41,7 @@ let obj = function _maybeFetchColors() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       try {
@@ -72,7 +72,7 @@ let obj = function _maybeFetchColors() {
           return obj;
         }
         c1 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       } catch (tmp7) {
         c1 = 3;
         throw tmp7;
@@ -100,7 +100,7 @@ obj = function _fetchColors() {
         let obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       let c4;
@@ -180,7 +180,7 @@ obj = function _fetchColors() {
           c4 = 0;
         }
         c6 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       } catch (tmp24) {
         let closure_3 = tmp24;
         if (0 === c4) {
@@ -229,7 +229,7 @@ export default function useAvatarColor(arg0, arg1) {
     return num;
   });
   const items1 = [arg0, tmp];
-  const effect = react.useEffect(f94775, items1);
+  const effect = react.useEffect(f96232, items1);
   const items2 = [tmp, stateFromStores];
   let memo = react.useMemo(() => {
     let mapped;
@@ -293,7 +293,7 @@ export function useAvatarColors(pendingAvatarSrc, PRIMARY_530) {
     return num;
   });
   const items1 = [pendingAvatarSrc, tmp];
-  const effect = react.useEffect(f94775, items1);
+  const effect = react.useEffect(f96232, items1);
   const items2 = [tmp, stateFromStores];
   let memo = react.useMemo(() => {
     let mapped;

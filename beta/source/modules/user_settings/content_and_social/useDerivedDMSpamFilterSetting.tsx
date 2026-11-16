@@ -1,17 +1,17 @@
-// Module ID: 17093
-// Function ID: 17094
+// Module ID: 17369
+// Function ID: 17370
 // Name: useDerivedDMSpamFilterSetting
-// Dependencies: [1385, 4997, 4995, 504, 5849, 5857, 1196, 2]
+// Dependencies: [1388, 5133, 5131, 504, 5985, 5993, 1196, 2]
 // Exports: useDerivedDmSpamFilterSettingValue
 
-// Module 17093 (useDerivedDMSpamFilterSetting)
+// Module 17369 (useDerivedDMSpamFilterSetting)
 import get_initialized from "get initialized" /* 504 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
-import UserSettings from "UserSettings" /* 4995 */;
-import DMSafetyConstants from "DMSafetyConstants" /* 4997 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5849 */;
-import SettingsDefaultFeature from "SettingsDefaultFeature" /* 5857 */;
-import UserStore from "UserStore" /* 1385 */;
+import UserSettings from "UserSettings" /* 5131 */;
+import DMSafetyConstants from "DMSafetyConstants" /* 5133 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5985 */;
+import SettingsDefaultFeature from "SettingsDefaultFeature" /* 5993 */;
+import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = DMSafetyConstants.ExplicitContentFilterToDmSpamFilterV2;

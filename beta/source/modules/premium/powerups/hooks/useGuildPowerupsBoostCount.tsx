@@ -1,15 +1,15 @@
-// Module ID: 8572
-// Function ID: 8573
+// Module ID: 9241
+// Function ID: 9242
 // Name: useGuildPowerupsBoostCount
-// Dependencies: [19, 8573, 5041, 5377, 5396, 504, 2]
+// Dependencies: [19, 9242, 5177, 5513, 5532, 504, 2]
 // Exports: default, getGuildPowerupsBoostCount
 
-// Module 8572 (useGuildPowerupsBoostCount)
-import GameServerExperiment from "GameServerExperiment" /* 5396 */;
+// Module 9241 (useGuildPowerupsBoostCount)
+import GameServerExperiment from "GameServerExperiment" /* 5532 */;
 import react from "react" /* 19 */;
-import GameServerStore from "GameServerStore" /* 8573 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 5377 */;
+import GameServerStore from "GameServerStore" /* 9242 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 5513 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

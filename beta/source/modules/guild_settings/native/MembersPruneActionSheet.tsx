@@ -1,20 +1,20 @@
-// Module ID: 19105
-// Function ID: 19106
+// Module ID: 19416
+// Function ID: 19417
 // Name: MembersPruneActionSheet
-// Dependencies: [32, 19, 19106, 5041, 5102, 1385, 21, 572, 19107, 7459, 7415, 1113, 7157, 7160, 5783, 5790, 5406, 504, 7536, 2]
+// Dependencies: [32, 19, 19417, 5177, 5238, 1388, 21, 572, 19418, 7951, 7913, 1113, 7745, 7747, 5919, 5926, 5542, 504, 7282, 2]
 // Exports: default
 
-// Module 19105 (MembersPruneActionSheet)
+// Module 19416 (MembersPruneActionSheet)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
-import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 7536 */;
-import PruneGuildModalActionCreatorsDefault from "PruneGuildModalActionCreators" /* 19107 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 7282 */;
+import PruneGuildModalActionCreatorsDefault from "PruneGuildModalActionCreators" /* 19418 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PrunePreviewStore from "PrunePreviewStore" /* 19106 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import PermissionStore from "PermissionStore" /* 5102 */;
-import UserStore from "UserStore" /* 1385 */;
+import PrunePreviewStore from "PrunePreviewStore" /* 19417 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import PermissionStore from "PermissionStore" /* 5238 */;
+import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 

@@ -1,20 +1,18 @@
-// Module ID: 15660
-// Function ID: 15661
+// Module ID: 15327
+// Function ID: 15328
 // Name: useMaybeFetchTieredTenureBadgeData
-// Dependencies: [1385, 1387, 504, 11589, 5753, 8862, 2]
+// Dependencies: [1388, 504, 15288, 5889, 8483, 2]
 // Exports: useMaybeFetchTieredTenureBadgeData
 
-// Module 15660 (useMaybeFetchTieredTenureBadgeData)
-import PremiumConstants from "PremiumConstants" /* 1387 */;
-import useMountEffectDefault from "useMountEffect" /* 5753 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8862 */;
-import UserStore from "UserStore" /* 1385 */;
+// Module 15327 (useMaybeFetchTieredTenureBadgeData)
+import useMountEffectDefault from "useMountEffect" /* 5889 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8483 */;
+import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, id, importDefault;
 
-const PremiumTypes = PremiumConstants.PremiumTypes;
 const result = size.fileFinishedImporting("modules/premium/tiered_tenure_badging/hooks/useMaybeFetchTieredTenureBadgeData.tsx");
 
 export function useMaybeFetchTieredTenureBadgeData() {
@@ -23,8 +21,8 @@ export function useMaybeFetchTieredTenureBadgeData() {
   const items = [UserStore];
   const obj = require("get initialized");
   _require = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  const obj2 = require("useIsPremiumSubscriber");
-  importDefault = obj2.useIsPremiumSubscriber(PremiumTypes.TIER_2);
+  const obj2 = require("useCanUseTenureBadge");
+  importDefault = obj2.useCanUseTenureBadge();
   const tmp = useMountEffectDefault(() => {
     id = undefined;
     if (id != null) {

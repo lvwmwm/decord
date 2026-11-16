@@ -1,65 +1,56 @@
 // Module ID: 5635
 // Function ID: 5636
-// Dependencies: [19, 17, 21, 5636, 5637]
+// Dependencies: [19, 5612, 5624, 5636, 5637, 5638, 5639, 5640]
+// Exports: useDetectorUpdater
 
 // Module 5635
-import react_native from "react-native" /* 5637 */;
-import react_mod from "react" /* 19 */;
-import react_native2 from "react-native" /* 17 */;
-import Fragment from "Fragment" /* 21 */;
+import react from "react" /* 19 */;
+import react_nativeDefault from "react-native" /* 5624 */;
+import assignRef from "assignRef" /* 5636 */;
+import needsToReattach from "needsToReattach" /* 5637 */;
+import dropHandlers from "dropHandlers" /* 5638 */;
+import attachHandlers from "attachHandlers" /* 5639 */;
+import _mod5640 from "module_5640" /* 5640 */;
 
-let c3;
-let closure_4;
-let hasOwnProperty;
-let metroRequire;
-let react = react_mod;
-const useMemo = react.useMemo;
-const memo = react.memo;
-react = react_mod;
-({ StyleSheet: c3, View: closure_4 } = react_native2);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
-const memoResult = memo(function BottomSheetHandleComponent(style) {
-  let items2;
-  style = style.style;
-  const indicatorStyle = style.indicatorStyle;
-  let DEFAULT_ACCESSIBLE = style.accessible;
-  if (DEFAULT_ACCESSIBLE === undefined) {
-    DEFAULT_ACCESSIBLE = style(indicatorStyle[3]).DEFAULT_ACCESSIBLE;
-  }
-  let DEFAULT_ACCESSIBILITY_ROLE = style.accessibilityRole;
-  if (DEFAULT_ACCESSIBILITY_ROLE === undefined) {
-    DEFAULT_ACCESSIBILITY_ROLE = style(indicatorStyle[3]).DEFAULT_ACCESSIBILITY_ROLE;
-  }
-  let DEFAULT_ACCESSIBILITY_LABEL = style.accessibilityLabel;
-  if (DEFAULT_ACCESSIBILITY_LABEL === undefined) {
-    DEFAULT_ACCESSIBILITY_LABEL = style(indicatorStyle[3]).DEFAULT_ACCESSIBILITY_LABEL;
-  }
-  let DEFAULT_ACCESSIBILITY_HINT = style.accessibilityHint;
-  if (DEFAULT_ACCESSIBILITY_HINT === undefined) {
-    DEFAULT_ACCESSIBILITY_HINT = style(indicatorStyle[3]).DEFAULT_ACCESSIBILITY_HINT;
-  }
-  let items = [style];
-  const children = style.children;
-  const items1 = [indicatorStyle];
-  const obj = {
-    style: useMemo(() => {
-      const items = [react_native.styles.container, _false.flatten(style)];
-      return items;
-    }, items),
-    accessible: DEFAULT_ACCESSIBLE,
-    accessibilityRole: DEFAULT_ACCESSIBILITY_ROLE,
-    accessibilityLabel: DEFAULT_ACCESSIBILITY_LABEL,
-    accessibilityHint: DEFAULT_ACCESSIBILITY_HINT,
-    collapsable: true,
-    children: items2
-  };
-  const tmp10 = useMemo(() => {
-    const items = [react_native.styles.indicator, _false.flatten(indicatorStyle)];
-    return items;
-  }, items1);
-  items2 = [closure_5(closure_4, { style: tmp10 }), children];
-  return closure_6(closure_4, obj);
-});
-memoResult.displayName = "BottomSheetHandle";
+const require = globalThis.__r;
+let _require, dependencyMap;
 
-export default memoResult;
+react.useCallback;
+
+export function useDetectorUpdater(current, current2, gesturesToAttach, gesture, webEventHandlers) {
+  let gestureConfig;
+  _require = current;
+  const preparedGesture = current2;
+  dependencyMap = gesturesToAttach;
+  const webEventHandlersRef = webEventHandlers;
+  let obj = require("ALLOWED_PROPS");
+  const forceRender = obj.useForceRender();
+  const items = [forceRender, gesture, gesturesToAttach, current2, current, webEventHandlers];
+  return gesture((arg0) => {
+    const tmp2 = react_nativeDefault;
+    const obj = assignRef;
+    const tmp2Result = tmp2(obj.resolveHostInstance(current.viewRef));
+    if (tmp2Result === current.previousViewTag) {
+      const tmp3Result = needsToReattach;
+      const tmp7 = preparedGesture;
+      const tmp8 = gesturesToAttach;
+      if (!tmp3Result.needsToReattach(preparedGesture, gesturesToAttach)) {
+        const tmp9 = arg0;
+        if (!tmp9) {
+          const tmp3Result4 = _mod5640;
+          tmp3Result4.updateHandlers(tmp7, gestureConfig, tmp8);
+        }
+      }
+    }
+    const tmp3Result5 = dropHandlers;
+    tmp3Result5.dropHandlers(preparedGesture);
+    const obj2 = { preparedGesture, gestureConfig, gesturesToAttach, webEventHandlersRef, viewTag: tmp2Result };
+    const tmp3Result6 = attachHandlers;
+    tmp3Result6.attachHandlers(obj2);
+    if (tmp2Result !== current.previousViewTag) {
+      current.previousViewTag = tmp2Result;
+      current.forceRebuildReanimatedEvent = true;
+      forceRender();
+    }
+  }, items);
+}

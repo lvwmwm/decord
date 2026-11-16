@@ -1,12 +1,12 @@
-// Module ID: 13928
-// Function ID: 13929
+// Module ID: 14512
+// Function ID: 14513
 // Name: CheckpointDisplayText
-// Dependencies: [19, 21, 13909, 2]
+// Dependencies: [19, 21, 14271, 2]
 // Exports: default
 
-// Module 13928 (CheckpointDisplayText)
+// Module 14512 (CheckpointDisplayText)
 import Fragment from "Fragment" /* 21 */;
-import CheckpointTextDefault from "CheckpointText" /* 13909 */;
+import CheckpointTextDefault from "CheckpointText" /* 14271 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

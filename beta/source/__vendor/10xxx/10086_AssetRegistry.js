@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/illustrations", width: 188.5, height: 121, scales: [2, 3], hash: "a1c720960ae9ac46d7d61ad850607231", name: "img_tier_0_clouds_bigger", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/tiered_tenure_badging/native/images", width: 57, height: 56.666666666666664, scales: [3], hash: "7e4be2270db873116542e37e78120107", name: "asset_bronze_badge_small", type: "webp" });

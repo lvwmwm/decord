@@ -1,16 +1,17 @@
-// Module ID: 6989
-// Function ID: 6990
+// Module ID: 7075
+// Function ID: 7076
 // Name: GuildUtils
-// Dependencies: [5041, 1385, 1453, 1089, 6990, 5226, 1113, 2]
+// Dependencies: [5177, 1388, 1456, 1089, 572, 6907, 5362, 1113, 2]
 // Exports: getGuildNameSuggestion
 
-// Module 6989 (GuildUtils)
+// Module 7075 (GuildUtils)
 import DurationsDefault from "Durations" /* 1089 */;
 import intl2 from "intl" /* 1113 */;
-import UserUtilsAll from "UserUtils" /* 5226 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import UserStore from "UserStore" /* 1385 */;
-import LRUCache from "LRUCache" /* 1453 */;
+import UserUtilsAll from "UserUtils" /* 5362 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import UserStore from "UserStore" /* 1388 */;
+import LRUCache from "LRUCache" /* 1456 */;
+import Dispatcher from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 function getGuildNameSuggestion(truncateUsername) {
@@ -39,14 +40,17 @@ function getGuildNameSuggestion(truncateUsername) {
   return str;
 }
 let obj = { maxAge: DurationsDefault.Millis.MINUTE };
-const importDefaultResult1 = new LRUCache(obj);
+const importDefaultResult2 = new LRUCache(obj);
+const subscription = Dispatcher.subscribe("CONNECTION_OPEN", () => {
+  importDefaultResult2.reset();
+});
 let obj2 = {
   getGuildNameSuggestion,
   requestMembers(arr, arg1) {
     let closure_4;
     let flag2;
     let timeout;
-    const f91275 = () => {
+    const f93469 = () => {
       items = [];
       if (null == items) {
         const push = items.push;
@@ -70,7 +74,7 @@ let obj2 = {
         }
       }
       if (items.length > 0) {
-        const obj = items(dependencyMap[4]);
+        const obj = items(dependencyMap[5]);
         const members = obj.requestMembers(items, closure_1.toLocaleLowerCase(), num);
       }
     };
@@ -89,8 +93,8 @@ let obj2 = {
           str = "";
         }
         const combined = "" + str + ":" + tmp;
-        const value = importDefaultResult1.get(combined);
-        const obj = importDefaultResult1;
+        const value = importDefaultResult2.get(combined);
+        const obj = importDefaultResult2;
         if (null == value) {
           const result = obj.set(combined, true);
         }
@@ -106,8 +110,8 @@ let obj2 = {
       }
       const _HermesInternal = HermesInternal;
       let combined = "" + str + ":" + arg1;
-      let obj = importDefaultResult1;
-      let value = importDefaultResult1.get(combined);
+      let obj = importDefaultResult2;
+      let value = importDefaultResult2.get(combined);
       if (null == value) {
         let result = obj.set(combined, true);
       }
@@ -124,7 +128,7 @@ let obj2 = {
           clearTimeout(timeout);
         }
         const _setTimeout2 = setTimeout;
-        timeout = setTimeout(f91275, 200);
+        timeout = setTimeout(f93469, 200);
       }
     }
     if (flag2) {
@@ -135,7 +139,7 @@ let obj2 = {
         clearTimeout(timeout);
       }
       const _setTimeout = setTimeout;
-      timeout = setTimeout(f91275, 200);
+      timeout = setTimeout(f93469, 200);
     }
   }
 };

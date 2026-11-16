@@ -1,17 +1,17 @@
-// Module ID: 17077
-// Function ID: 17078
+// Module ID: 17353
+// Function ID: 17354
 // Name: SensitiveContentFiltersNotices
-// Dependencies: [19, 7587, 21, 17068, 7569, 16935, 1113, 5866, 2185, 8057, 6816, 2]
+// Dependencies: [19, 6900, 21, 17344, 8643, 17211, 1113, 6002, 2188, 8190, 6823, 2]
 // Exports: SensitiveContentFiltersAgeVerificationNotice, SensitiveContentFiltersTeenNotice
 
-// Module 17077 (SensitiveContentFiltersNotices)
+// Module 17353 (SensitiveContentFiltersNotices)
 import Fragment from "Fragment" /* 21 */;
 import intl from "intl" /* 1113 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
-import LinkingDefault from "Linking" /* 5866 */;
-import Constants from "Constants" /* 7587 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8057 */;
-import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 16935 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
+import LinkingDefault from "Linking" /* 6002 */;
+import Constants from "Constants" /* 6900 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8190 */;
+import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 17211 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ export function SensitiveContentFiltersTeenNotice() {
   const obj2 = require("SensitiveMediaGoreRedactionSettingsUtils");
   _require = obj2.useSensitiveContentFilterHelpArticle();
   if (isAgeNoticeSettingsNoticeEnabled) {
-    tmp4Result = tmp4(tmp(17068).ContentFiltersTeenNotice, {});
+    tmp4Result = tmp4(tmp(17344).ContentFiltersTeenNotice, {});
   } else {
     const obj3 = {
       label: tmp(1113).t.EUo0yj,

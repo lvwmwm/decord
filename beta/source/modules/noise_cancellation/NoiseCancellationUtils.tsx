@@ -1,13 +1,13 @@
-// Module ID: 12154
-// Function ID: 12155
+// Module ID: 13033
+// Function ID: 13034
 // Name: NoiseCancellationUtils
-// Dependencies: [2130, 12155, 504, 2]
+// Dependencies: [2133, 13034, 504, 2]
 // Exports: getNoiseCancellationDeferredToSystem, useNoiseCancellationDeferredToSystem
 
-// Module 12154 (NoiseCancellationUtils)
+// Module 13033 (NoiseCancellationUtils)
 import get_initialized from "get initialized" /* 504 */;
-import getEffectiveNoiseCancellationDefault from "getEffectiveNoiseCancellation" /* 12155 */;
-import MediaEngineStore from "MediaEngineStore" /* 2130 */;
+import getEffectiveNoiseCancellationDefault from "getEffectiveNoiseCancellation" /* 13034 */;
+import MediaEngineStore from "MediaEngineStore" /* 2133 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/noise_cancellation/NoiseCancellationUtils.tsx");

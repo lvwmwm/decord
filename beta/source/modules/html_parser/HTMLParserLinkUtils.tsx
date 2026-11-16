@@ -1,16 +1,16 @@
-// Module ID: 9545
-// Function ID: 9546
+// Module ID: 10377
+// Function ID: 10378
 // Name: HTMLParserLinkUtils
-// Dependencies: [109, 9519, 6202, 5905, 1378, 2067, 6201, 9544, 2]
+// Dependencies: [109, 10351, 6338, 6041, 1381, 2070, 6337, 10376, 2]
 // Exports: addTextLinks
 
-// Module 9545 (HTMLParserLinkUtils)
-import MarkupLinkRule2 from "MarkupLinkRule" /* 6201 */;
-import UnicodeSanitizationUtils from "UnicodeSanitizationUtils" /* 6202 */;
-import HTMLParserRunUtils from "HTMLParserRunUtils" /* 9544 */;
+// Module 10377 (HTMLParserLinkUtils)
+import MarkupLinkRule2 from "MarkupLinkRule" /* 6337 */;
+import UnicodeSanitizationUtils from "UnicodeSanitizationUtils" /* 6338 */;
+import HTMLParserRunUtils from "HTMLParserRunUtils" /* 10376 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import HTMLParserConstants from "HTMLParserConstants" /* 9519 */;
-import module_2067_mod from "module_2067" /* 2067 */;
+import HTMLParserConstants from "HTMLParserConstants" /* 10351 */;
+import module_2070_mod from "module_2070" /* 2070 */;
 import size from "module_2" /* 2 */;
 
 const MarkupLinkRuleDefault = MarkupLinkRule2;
@@ -27,7 +27,7 @@ let map1;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-let module_2067;
+let module_2070;
 let obj2;
 let obj3;
 let unpackModuleId;
@@ -74,12 +74,12 @@ function getLink(arr3, flag) {
   }
   return tmp;
 }
-function normalizeLabelForComparison(content) {
+function normalizeLabelForComparison(text) {
   const obj = UnicodeSanitizationUtils;
-  const str = obj.sanitizeWhitespace(content);
+  const str = obj.sanitizeWhitespace(text);
   const sanitizeUnicodeConfusables = UnicodeSanitizationUtils.sanitizeUnicodeConfusables;
   UnicodeSanitizationUtils;
-  const normalizer = str.replace(authStore3, "");
+  const normalizer = str.replace(gesture, "");
   return sanitizeUnicodeConfusables(normalizer.normalize("NFKC"));
 }
 function hasMisleadingURLLabel(str, href) {
@@ -186,10 +186,10 @@ function hasMisleadingURLLabel(str, href) {
           require("URLUtils");
           const uRL = new URL(href);
           let tmp12 = uRL;
-          const str9 = safeDecodeURIComponent(uRL.pathname);
+          const str10 = safeDecodeURIComponent(uRL.pathname);
           formatted = undefined;
-          if (str9 != null) {
-            formatted = str9.toLowerCase();
+          if (str10 != null) {
+            formatted = str10.toLowerCase();
           }
           let tmp14 = null == formatted || fromResult.some((item) => item.toLowerCase() !== formatted);
           return tmp14;
@@ -441,7 +441,7 @@ function validateSplitURLs(items) {
 }
 let closure_3 = ["rawURL"];
 ({ ALLOWED_MAILTO_HEADERS: hasOwnProperty, BIDI_CONTROL_CHARACTERS: metroRequire, BIDI_CONTROL_CHARACTERS_GLOBAL: metroImportDefault, BIDI_PARAGRAPH_SEPARATOR: metroImportAll, BIDI_PARAGRAPH_SEPARATORS: c9, BROKEN_URL_SCHEME_IN_LABEL: c10, EMAIL_IN_LABEL: unpackModuleId, HTTP_URL_SCHEME: closure_12, URL_IN_LABEL: map1, URL_LABEL_IGNORABLE_CHARACTERS: closure_14, URL_MATCH: closure_15, URL_TEXT_BOUNDARY: closure_16 } = HTMLParserConstants);
-let obj = { text: module_2067.defaultRules.text, link: obj2, url: obj3 };
+let obj = { text: module_2070.defaultRules.text, link: obj2, url: obj3 };
 obj2 = {
   match(arg0, arg1, arg2) {
     const str = MarkupLinkRuleDefault;
@@ -450,7 +450,7 @@ obj2 = {
     if (null != match) {
       tmp4 = null;
       if (!metroImportAll.test(match[0])) {
-        const tmpResult = module_2067;
+        const tmpResult = module_2070;
         const unescapeUrlResult = tmpResult.unescapeUrl(match[2]);
         let tmp7;
         if (null != unescapeUrlResult) {
@@ -471,7 +471,7 @@ obj2 = {
     return tmp4;
   },
   parse(content, arg1, arg2) {
-    const obj = module_2067;
+    const obj = module_2070;
     const unescapeUrlResult = obj.unescapeUrl(content[2]);
     let tmp4;
     if (null != unescapeUrlResult) {
@@ -489,7 +489,7 @@ obj2 = {
       const str = obj4.sanitizeWhitespace(tmp12);
       const sanitizeUnicodeConfusables = UnicodeSanitizationUtils.sanitizeUnicodeConfusables;
       UnicodeSanitizationUtils;
-      const normalizer = str.replace(authStore3, "");
+      const normalizer = str.replace(gesture, "");
       if (!hasMisleadingURLLabel(sanitizeUnicodeConfusables(normalizer.normalize("NFKC")), tmp4)) {
         const tmpResult = MarkupLinkRuleDefault;
         parsed = tmpResult.parse(content, arg1, arg2);
@@ -501,7 +501,7 @@ obj2 = {
 };
 const MarkupLinkRule = Object.assign(MarkupLinkRuleDefault);
 obj3 = {
-  order: module_2067.defaultRules.url.order,
+  order: module_2070.defaultRules.url.order,
   requiredFirstCharacters: ["h", "H"],
   match(arg0) {
     const match = regex3.exec(arg0);
@@ -532,7 +532,7 @@ obj3 = {
   },
   parse(arg0) {
     let items;
-    const searchResult = arg0[1].search(authStore4);
+    const searchResult = arg0[1].search(authStore3);
     let str = arr;
     if (-1 !== searchResult) {
       str = arr.slice(0, searchResult);
@@ -579,8 +579,8 @@ obj3 = {
     }
   }
 };
-module_2067 = module_2067_mod;
-let closure_22 = module_2067.parserFor(obj);
+module_2070 = module_2070_mod;
+let closure_22 = module_2070.parserFor(obj);
 const result = size.fileFinishedImporting("modules/html_parser/HTMLParserLinkUtils.tsx");
 
 export { getLink };

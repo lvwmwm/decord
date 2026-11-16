@@ -1,12 +1,12 @@
-// Module ID: 12442
-// Function ID: 12443
+// Module ID: 13329
+// Function ID: 13330
 // Name: openConjureShareSheet
-// Dependencies: [5406, 12443, 2118, 2]
+// Dependencies: [5542, 13330, 2121, 2]
 // Exports: default
 
-// Module 12442 (openConjureShareSheet)
-import asyncRequire from "asyncRequire" /* 2118 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
+// Module 13329 (openConjureShareSheet)
+import asyncRequire from "asyncRequire" /* 2121 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/share/native/openConjureShareSheet.tsx");
@@ -14,5 +14,5 @@ const result = size.fileFinishedImporting("modules/conjure/share/native/openConj
 export default function openConjureShareSheet(projectId) {
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { projectId };
-  obj.openLazy(asyncRequire(12443, dependencyMap.paths), "ConjureShareSheet", obj2);
+  obj.openLazy(asyncRequire(13330, dependencyMap.paths), "ConjureShareSheet", obj2);
 };

@@ -1,14 +1,14 @@
-// Module ID: 8746
-// Function ID: 8747
+// Module ID: 8068
+// Function ID: 8069
 // Name: ExperimentalLfgIcon
-// Dependencies: [19, 21, 575, 5873, 8737, 2]
+// Dependencies: [19, 21, 575, 6009, 8059, 2]
 // Exports: ExperimentalLfgIcon
 
-// Module 8746 (ExperimentalLfgIcon)
+// Module 8068 (ExperimentalLfgIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5873 */;
-import AssetRegistry from "AssetRegistry" /* 8737 */;
+import BaseIconImage2 from "BaseIconImage" /* 6009 */;
+import AssetRegistry from "AssetRegistry" /* 8059 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

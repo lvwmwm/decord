@@ -1,18 +1,18 @@
-// Module ID: 2187
-// Function ID: 2188
+// Module ID: 2190
+// Function ID: 2191
 // Name: IntlLoaderStore
-// Dependencies: [5, 2025, 1254, 2188, 1113, 2198, 1152, 4445, 4920, 4951, 2166, 1242, 2]
+// Dependencies: [5, 2028, 1258, 2191, 1113, 2201, 1152, 4580, 5055, 5086, 2169, 1242, 2]
 // Exports: setAppLocale, subscribeToIntlLoadingSuccess, useLocaleData
 
-// Module 2187 (IntlLoaderStore)
+// Module 2190 (IntlLoaderStore)
 import intl2 from "intl" /* 1113 */;
-import _modDef2188 from "module_2188" /* 2188 */;
-import dateFnsLocales from "dateFnsLocales" /* 4445 */;
-import formatjs from "formatjs" /* 4920 */;
-import moment from "moment" /* 4951 */;
+import _modDef2191 from "module_2191" /* 2191 */;
+import dateFnsLocales from "dateFnsLocales" /* 4580 */;
+import formatjs from "formatjs" /* 5055 */;
+import moment from "moment" /* 5086 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import module_2025 from "module_2025" /* 2025 */;
-import module_1254 from "module_1254" /* 1254 */;
+import module_2028 from "module_2028" /* 2028 */;
+import module_1258 from "module_1258" /* 1258 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -50,7 +50,7 @@ let obj = function _setAppLocale() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -83,7 +83,7 @@ let obj = function _setAppLocale() {
                     const obj3 = { value, done: true };
                     return obj3;
                   } else {
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "ulw" };
                   }
                 } else {
                   try {
@@ -128,7 +128,7 @@ let obj = function _setAppLocale() {
                       return obj;
                     } else {
                       c2 = 3;
-                      return { value: "HermesInternal", done: null };
+                      return { value: "HermesInternal", done: "ulw" };
                     }
                   } catch (tmp10) {
                     c2 = 3;
@@ -158,7 +158,7 @@ let obj = function _setAppLocale() {
           } else {
             state.setLoadingSucceeded(closure_0);
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } catch (tmp9) {
           c3 = 3;
@@ -182,7 +182,7 @@ obj = function _loadDateFnsLocale() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       try {
@@ -208,7 +208,7 @@ obj = function _loadDateFnsLocale() {
               const obj4 = { value: tmp18(), done: false };
               return obj4;
             } else {
-              state.setLocaleData(require("module_2188"));
+              state.setLocaleData(require("module_2191"));
             }
           }
         } else if (arg0 === 1) {
@@ -223,7 +223,7 @@ obj = function _loadDateFnsLocale() {
           state.setLocaleData(closure_1);
         }
         c3 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       } catch (tmp10) {
         c3 = 3;
         throw tmp10;
@@ -245,7 +245,7 @@ obj = function _loadFormatJsLocale() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       try {
@@ -276,7 +276,7 @@ obj = function _loadFormatJsLocale() {
           return obj;
         }
         c1 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       } catch (tmp9) {
         c1 = 3;
         throw tmp9;
@@ -299,7 +299,7 @@ obj = function _setMomentLocale() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       try {
@@ -350,7 +350,7 @@ obj = function _setMomentLocale() {
         const obj2 = closure_130_0(closure_130_2[10]);
         obj2.locale(closure_1);
         c4 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       } catch (tmp25) {
         c4 = 3;
         throw tmp25;
@@ -359,21 +359,21 @@ obj = function _setMomentLocale() {
   });
   return obj(...arguments);
 };
-const withEqualityFn = module_1254.createWithEqualityFn((arg0, arg1) => {
+const withEqualityFn = module_1258.createWithEqualityFn((arg0, arg1) => {
   let closure_0 = arg0;
   let closure_1 = arg1;
   obj = {
     isLoading: false,
     inProgressLocale: "Boolean",
-    error: "dispatch",
-    localeData: _modDef2188,
+    error: "channelId",
+    localeData: _modDef2191,
     setLoadingStarted(inProgressLocale) {
       obj = { isLoading: true, inProgressLocale };
       return closure_0(obj);
     },
     setLoadingSucceeded(arg0) {
       if (closure_1().inProgressLocale === arg0) {
-        closure_0({ isLoading: false, inProgressLocale: "Boolean", error: "dispatch" });
+        closure_0({ isLoading: false, inProgressLocale: "Boolean", error: "channelId" });
       }
     },
     setLoadingFailed(error, arg1) {
@@ -407,7 +407,7 @@ export function setAppLocale() {
 export function useLocaleData() {
   let tmp = withEqualityFn((localeData) => localeData.localeData);
   if (tmp == null) {
-    tmp = _modDef2188;
+    tmp = _modDef2191;
   }
   return tmp;
 }

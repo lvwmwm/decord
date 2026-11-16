@@ -1,14 +1,14 @@
-// Module ID: 11649
-// Function ID: 11650
+// Module ID: 10125
+// Function ID: 10126
 // Name: ExperimentalMythicIcon
-// Dependencies: [19, 21, 575, 5873, 11650, 2]
+// Dependencies: [19, 21, 575, 6009, 10126, 2]
 // Exports: ExperimentalMythicIcon
 
-// Module 11649 (ExperimentalMythicIcon)
+// Module 10125 (ExperimentalMythicIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5873 */;
-import AssetRegistry from "AssetRegistry" /* 11650 */;
+import BaseIconImage2 from "BaseIconImage" /* 6009 */;
+import AssetRegistry from "AssetRegistry" /* 10126 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

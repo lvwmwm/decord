@@ -1,15 +1,15 @@
-// Module ID: 7602
-// Function ID: 7603
+// Module ID: 8142
+// Function ID: 8143
 // Name: useCanRing
-// Dependencies: [502, 6656, 5019, 5112, 1072, 504, 2]
+// Dependencies: [502, 7023, 5155, 5248, 1072, 504, 2]
 // Exports: canRingUsersInChannel, useCanRing
 
-// Module 7602 (useCanRing)
+// Module 8142 (useCanRing)
 import Constants from "Constants" /* 1072 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CallStore from "CallStore" /* 6656 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import RelationshipStore from "RelationshipStore" /* 5112 */;
+import CallStore from "CallStore" /* 7023 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import RelationshipStore from "RelationshipStore" /* 5248 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

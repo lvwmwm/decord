@@ -1,10 +1,10 @@
-// Module ID: 14956
-// Function ID: 14957
+// Module ID: 15255
+// Function ID: 15256
 // Name: QuestHomeBountiesFeatureGateExperiment
-// Dependencies: [1449, 2]
+// Dependencies: [1452, 2]
 
-// Module 14956 (QuestHomeBountiesFeatureGateExperiment)
-import ApexExperiment from "ApexExperiment" /* 1449 */;
+// Module 15255 (QuestHomeBountiesFeatureGateExperiment)
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

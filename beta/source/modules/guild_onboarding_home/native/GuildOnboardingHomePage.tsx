@@ -1,19 +1,19 @@
-// Module ID: 19081
-// Function ID: 19082
+// Module ID: 19392
+// Function ID: 19393
 // Name: GuildOnboardingHomePage
-// Dependencies: [19, 5386, 7495, 8443, 1072, 21, 1652, 504, 7497, 14099, 1252, 5921, 6990, 19082, 19083, 19087, 19091, 19092, 19095, 7494, 2]
+// Dependencies: [19, 5522, 7080, 9001, 1072, 21, 1655, 504, 7082, 14682, 1256, 6057, 6907, 19393, 19394, 19398, 19402, 19403, 19406, 7079, 2]
 // Exports: default
 
-// Module 19081 (GuildOnboardingHomePage)
+// Module 19392 (GuildOnboardingHomePage)
 import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5921 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6990 */;
-import GuildOnboardingHomeSettingsStore2 from "GuildOnboardingHomeSettingsStore" /* 7495 */;
-import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 14099 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6057 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6907 */;
+import GuildOnboardingHomeSettingsStore2 from "GuildOnboardingHomeSettingsStore" /* 7080 */;
+import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 14682 */;
 import react from "react" /* 19 */;
-import ExperimentStore from "ExperimentStore" /* 5386 */;
-import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 8443 */;
+import ExperimentStore from "ExperimentStore" /* 5522 */;
+import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 9001 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -30,12 +30,12 @@ function GuildOnboardingHomePage(guildId) {
   guildId = guildId.guildId;
   dependencyMap = undefined;
   let tmp = dependencyMap;
-  let obj = guildId(1652);
+  let obj = guildId(1655);
   const sharedValue = obj.useSharedValue(-999);
   let obj2 = guildId(504);
   const items = [GuildOnboardingHomeSettingsStore];
   const stateFromStores = obj2.useStateFromStores(items, () => GuildOnboardingHomeSettingsStore.getSettings(guildId));
-  const tmp5 = stateFromStores(7497)(guildId);
+  const tmp5 = stateFromStores(7082)(guildId);
   let tmp6 = !tmp5;
   if (tmp6) {
     let num;
@@ -108,21 +108,21 @@ function GuildOnboardingHomePage(guildId) {
     let obj4 = { guildId, hideDescription: tmp5 };
     const obj3 = { guildId, scrollValue: sharedValue, children: items3 };
     items3 = [, ];
-    const tmp4Result = stateFromStores(19082);
-    items3[0] = closure_9(stateFromStores(19083), obj4);
+    const tmp4Result = stateFromStores(19393);
+    items3[0] = closure_9(stateFromStores(19394), obj4);
     if (tmp5) {
       let tmp15 = closure_10;
       const obj5 = { children: items4 };
       const obj6 = { guildId };
-      items4 = [tmp13(tmp4(19087), obj6), , ];
+      items4 = [tmp13(tmp4(19398), obj6), , ];
       const obj7 = { guildId };
-      items4[1] = closure_9(stateFromStores(19091), obj7);
+      items4[1] = closure_9(stateFromStores(19402), obj7);
       const obj8 = { guildId };
-      items4[2] = closure_9(stateFromStores(19092), obj8);
+      items4[2] = closure_9(stateFromStores(19403), obj8);
       tmp13Result = tmp11(closure_10, obj5);
     } else {
       const obj9 = { guildId };
-      tmp13Result = tmp13(tmp4(19095), obj9);
+      tmp13Result = tmp13(tmp4(19406), obj9);
     }
     items3[1] = tmp13Result;
     tmp11Result2 = tmp11(tmp4Result, obj3);

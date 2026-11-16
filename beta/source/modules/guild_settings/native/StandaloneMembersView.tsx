@@ -1,22 +1,22 @@
-// Module ID: 19098
-// Function ID: 19099
+// Module ID: 19409
+// Function ID: 19410
 // Name: StandaloneMembersView
-// Dependencies: [19, 17, 21, 5170, 575, 9946, 10887, 1499, 1627, 9187, 7097, 1113, 19099, 13527, 13541, 13545, 7264, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 9062, 10271, 1502, 1630, 8404, 7493, 1113, 19410, 14136, 14151, 14155, 7490, 2]
 // Exports: default
 
-// Module 19098 (StandaloneMembersView)
+// Module 19409 (StandaloneMembersView)
 import nativeDefault from "native" /* 575 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9187 */;
-import useActiveTheme from "useActiveTheme" /* 9946 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10887 */;
-import GuildSettingsModalMemberEdit from "GuildSettingsModalMemberEdit" /* 13527 */;
-import KickConfirmDefault from "KickConfirm" /* 13541 */;
-import BanConfirmDefault from "BanConfirm" /* 13545 */;
-import GuildSettingsModalMembersWithTabsDefault from "GuildSettingsModalMembersWithTabs" /* 19099 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8404 */;
+import useActiveTheme from "useActiveTheme" /* 9062 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10271 */;
+import GuildSettingsModalMemberEdit from "GuildSettingsModalMemberEdit" /* 14136 */;
+import KickConfirmDefault from "KickConfirm" /* 14151 */;
+import BanConfirmDefault from "BanConfirm" /* 14155 */;
+import GuildSettingsModalMembersWithTabsDefault from "GuildSettingsModalMembersWithTabs" /* 19410 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

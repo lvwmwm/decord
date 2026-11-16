@@ -1,9 +1,9 @@
-// Module ID: 7819
-// Function ID: 7820
+// Module ID: 8734
+// Function ID: 8735
 // Name: RecentlyActiveCollapseStore
 // Dependencies: [504, 572, 2]
 
-// Module 7819 (RecentlyActiveCollapseStore)
+// Module 8734 (RecentlyActiveCollapseStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

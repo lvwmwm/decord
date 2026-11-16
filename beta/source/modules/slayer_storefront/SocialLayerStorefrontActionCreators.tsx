@@ -1,17 +1,17 @@
-// Module ID: 10821
-// Function ID: 10822
+// Module ID: 10018
+// Function ID: 10019
 // Name: SocialLayerStorefrontActionCreators
-// Dependencies: [5, 9598, 7503, 1072, 1089, 572, 7501, 9678, 1282, 2150, 559, 2]
+// Dependencies: [5, 9414, 7246, 1072, 1089, 572, 7244, 9931, 1285, 2153, 559, 2]
 // Exports: fetchSocialLayerSKUPurchaseEligibility, fetchSocialLayerStorefront, fetchSocialLayerStorefrontAnnouncement, fetchSocialLayerStorefrontById, fetchSocialLayerStorefrontConfig, fetchSocialLayerStorefrontEntries, fetchSocialLayerStorefrontForApplication, fetchSocialLayerStorefrontLaunchAnnouncement, fetchSocialLayerStorefrontSku, fetchSocialLayerStorefrontSkuForApplication, setSocialLayerStorefrontState
 
-// Module 10821 (SocialLayerStorefrontActionCreators)
+// Module 10018 (SocialLayerStorefrontActionCreators)
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9598 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7503 */;
+import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9414 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7246 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -181,7 +181,7 @@ let obj = function _fetchSocialLayerStorefront2() {
       if (closure_2 === undefined) {
         obj6 = {};
       }
-      return "flexDirection";
+      return "Path";
     })();
     iter.next();
     return iter;
@@ -284,7 +284,7 @@ obj = function _fetchSocialLayerStorefrontSkuWithUrl2() {
       if (closure_2 === undefined) {
         obj7 = {};
       }
-      return "flexDirection";
+      return "Path";
     })();
     iter.next();
     return iter;
@@ -317,7 +317,7 @@ obj = function _fetchSocialLayerStorefrontEntries() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -395,7 +395,7 @@ obj = function _fetchSocialLayerStorefrontEntries() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         } catch (tmp24) {
           closure_3 = tmp24;
           if (0 === c4) {
@@ -428,7 +428,7 @@ obj = function _fetchSocialLayerStorefrontById() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -547,7 +547,7 @@ obj = function _fetchSocialLayerStorefrontById() {
             c6 = 0;
           }
           c8 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         } catch (tmp62) {
           storefront = tmp62;
           if (0 === c6) {
@@ -582,7 +582,7 @@ obj = function _fetchSocialLayerStorefrontAnnouncement() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -639,7 +639,7 @@ obj = function _fetchSocialLayerStorefrontAnnouncement() {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } catch (tmp34) {
           closure_3 = tmp34;
@@ -668,7 +668,7 @@ obj = function _fetchSocialLayerStorefrontConfig() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       let c3;
@@ -728,7 +728,7 @@ obj = function _fetchSocialLayerStorefrontConfig() {
           if (storefronts != null) {
             mapped = storefronts.map((guildId) => {
               let excluded_platforms;
-              obj = { guildId: guildId.guild_id, applicationId: guildId.application_id, gameId: guildId.game_id, collectiblesShopNavigationEnabled: true === guildId.collectibles_shop_navigation_enabled, excludedPlatforms: excluded_platforms, disableMobileAccountLinking: true === guildId.disable_mobile_account_linking, allowOrbsSpending: true === guildId.allow_orbs_spending };
+              obj = { guildId: guildId.guild_id, applicationId: guildId.application_id, gameId: guildId.game_id, collectiblesShopNavigationEnabled: true === guildId.collectibles_shop_navigation_enabled, excludedPlatforms: excluded_platforms, disableMobileAccountLinking: true === guildId.disable_mobile_account_linking };
               excluded_platforms = guildId.excluded_platforms;
               if (excluded_platforms == null) {
                 excluded_platforms = [];
@@ -752,7 +752,7 @@ obj = function _fetchSocialLayerStorefrontConfig() {
           c3 = 0;
         }
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       } catch (tmp32) {
         if (0 === c3) {
           c5 = 3;
@@ -784,7 +784,7 @@ obj = function _fetchSocialLayerStorefrontLaunchAnnouncement() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       let c11;
@@ -874,7 +874,7 @@ obj = function _fetchSocialLayerStorefrontLaunchAnnouncement() {
             c11 = 0;
           }
           c13 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } catch (tmp43) {
         closure_10 = tmp43;

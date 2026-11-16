@@ -1,24 +1,24 @@
-// Module ID: 10814
-// Function ID: 10815
+// Module ID: 11723
+// Function ID: 11724
 // Name: PremiumGiftWishlistBanner
-// Dependencies: [5, 19, 17, 7502, 1387, 1072, 1074, 8858, 21, 575, 5170, 9573, 9587, 10815, 10819, 7420, 7445, 1252, 8854, 10765, 10820, 5347, 5869, 1113, 7828, 14693, 5226, 5783, 14718, 14723, 2]
+// Dependencies: [5, 19, 17, 7245, 1390, 1072, 1074, 8479, 21, 575, 5306, 10416, 9464, 11724, 11728, 7918, 7937, 1256, 8476, 11675, 11729, 5483, 6005, 1113, 8484, 11794, 5362, 5919, 11821, 11826, 2]
 // Exports: PremiumGiftWishlistBanner
 
-// Module 10814 (PremiumGiftWishlistBanner)
+// Module 11723 (PremiumGiftWishlistBanner)
 import nativeDefault from "native" /* 575 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 7502 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8854 */;
-import Constants2 from "Constants" /* 8858 */;
-import WishlistBannerUtils from "WishlistBannerUtils" /* 10819 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 7245 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;
+import Constants2 from "Constants" /* 8479 */;
+import WishlistBannerUtils from "WishlistBannerUtils" /* 11728 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import PremiumConstants from "PremiumConstants" /* 1387 */;
+import PremiumConstants from "PremiumConstants" /* 1390 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let set, sku;
@@ -155,7 +155,7 @@ export function PremiumGiftWishlistBanner(giftRecipient) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -230,7 +230,7 @@ export function PremiumGiftWishlistBanner(giftRecipient) {
             return { value, done: true };
           }
           c2 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         } catch (tmp23) {
           c2 = 3;
           throw tmp23;
@@ -276,7 +276,7 @@ export function PremiumGiftWishlistBanner(giftRecipient) {
         style: tmp12.placeholderRow,
         children: Array.from(obj9, (arg0, arg1) => {
               const obj = { style: closure_14.placeholder };
-              return authStore3(metroRequire, obj, arg1);
+              return gesture(metroRequire, obj, arg1);
             })
       };
       let _Array = Array;

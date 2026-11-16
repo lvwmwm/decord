@@ -1,10 +1,10 @@
-// Module ID: 19054
-// Function ID: 19055
+// Module ID: 19365
+// Function ID: 19366
 // Name: NavigationTTIExperiment
-// Dependencies: [1449, 2]
+// Dependencies: [1452, 2]
 
-// Module 19054 (NavigationTTIExperiment)
-import ApexExperiment from "ApexExperiment" /* 1449 */;
+// Module 19365 (NavigationTTIExperiment)
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

@@ -1,11 +1,11 @@
-// Module ID: 20037
-// Function ID: 20038
+// Module ID: 20367
+// Function ID: 20368
 // Name: AppStoreConsentReinstateEndpointExperiment
-// Dependencies: [1449, 2]
+// Dependencies: [1452, 2]
 // Exports: getIsAppStoreConsentReinstateEndpointEnabled
 
-// Module 20037 (AppStoreConsentReinstateEndpointExperiment)
-import ApexExperiment from "ApexExperiment" /* 1449 */;
+// Module 20367 (AppStoreConsentReinstateEndpointExperiment)
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-10-app-store-consent-reinstate-endpoint", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

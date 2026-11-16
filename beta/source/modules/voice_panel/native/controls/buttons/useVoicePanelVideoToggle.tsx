@@ -1,25 +1,25 @@
-// Module ID: 18871
-// Function ID: 18872
+// Module ID: 19187
+// Function ID: 19188
 // Name: useVoicePanelVideoToggle
-// Dependencies: [19, 11899, 5019, 5041, 2130, 5102, 5929, 21, 504, 6811, 14834, 6124, 14837, 1113, 18872, 9334, 11918, 2]
+// Dependencies: [19, 12719, 5155, 5177, 2133, 5238, 6065, 21, 504, 6817, 15634, 6260, 15637, 1113, 19188, 10583, 12739, 2]
 // Exports: default
 
-// Module 18871 (useVoicePanelVideoToggle)
+// Module 19187 (useVoicePanelVideoToggle)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import Constants from "Constants" /* 5929 */;
-import useAlertStore from "useAlertStore" /* 6124 */;
-import StreamPermissionUtils from "StreamPermissionUtils" /* 6811 */;
-import CallsUtils from "CallsUtils" /* 9334 */;
-import openIgnoreThermalStateAlert from "openIgnoreThermalStateAlert" /* 11918 */;
-import VoicePanelVideoGuardErrorAlert from "VoicePanelVideoGuardErrorAlert" /* 14837 */;
-import VoicePanelNoVideoPermissionsAlert from "VoicePanelNoVideoPermissionsAlert" /* 18872 */;
+import Constants from "Constants" /* 6065 */;
+import useAlertStore from "useAlertStore" /* 6260 */;
+import StreamPermissionUtils from "StreamPermissionUtils" /* 6817 */;
+import CallsUtils from "CallsUtils" /* 10583 */;
+import openIgnoreThermalStateAlert from "openIgnoreThermalStateAlert" /* 12739 */;
+import VoicePanelVideoGuardErrorAlert from "VoicePanelVideoGuardErrorAlert" /* 15637 */;
+import VoicePanelNoVideoPermissionsAlert from "VoicePanelNoVideoPermissionsAlert" /* 19188 */;
 import react from "react" /* 19 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11899 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import MediaEngineStore from "MediaEngineStore" /* 2130 */;
-import PermissionStore from "PermissionStore" /* 5102 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 12719 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import MediaEngineStore from "MediaEngineStore" /* 2133 */;
+import PermissionStore from "PermissionStore" /* 5238 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

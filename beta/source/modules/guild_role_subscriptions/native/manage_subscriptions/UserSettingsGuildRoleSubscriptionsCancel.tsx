@@ -1,30 +1,30 @@
-// Module ID: 17571
-// Function ID: 17572
+// Module ID: 17845
+// Function ID: 17846
 // Name: UserSettingsGuildRoleSubscriptionsCancel
-// Dependencies: [5, 32, 19, 17, 2176, 21, 5170, 575, 17572, 2166, 1113, 7053, 1187, 5783, 17564, 5874, 17580, 7420, 7445, 10065, 6123, 6621, 5868, 4990, 5790, 17568, 17559, 17581, 17582, 504, 2]
+// Dependencies: [5, 32, 19, 17, 2179, 21, 5306, 575, 17846, 2169, 1113, 7720, 1187, 5919, 17838, 6010, 17854, 7918, 7937, 9723, 6259, 6757, 6004, 5126, 5926, 17842, 17833, 17855, 17856, 504, 2]
 // Exports: default
 
-// Module 17571 (UserSettingsGuildRoleSubscriptionsCancel)
+// Module 17845 (UserSettingsGuildRoleSubscriptionsCancel)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import _modDef2166 from "module_2166" /* 2166 */;
-import Text_Text from "Text/Text" /* 5783 */;
-import FastImageDefault from "FastImage" /* 5874 */;
-import GuildIconDefault from "GuildIcon" /* 7053 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 17559 */;
-import FormSeparatorDefault from "FormSeparator" /* 17564 */;
-import useManageSubscriptionCardDataDefault from "useManageSubscriptionCardData" /* 17568 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17572 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17580 */;
-import GuildRoleSubscriptionCardAll from "GuildRoleSubscriptionCard" /* 17582 */;
+import _modDef2169 from "module_2169" /* 2169 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import GuildIconDefault from "GuildIcon" /* 7720 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 17833 */;
+import FormSeparatorDefault from "FormSeparator" /* 17838 */;
+import useManageSubscriptionCardDataDefault from "useManageSubscriptionCardData" /* 17842 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17846 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17854 */;
+import GuildRoleSubscriptionCardAll from "GuildRoleSubscriptionCard" /* 17856 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SubscriptionStore from "SubscriptionStore" /* 2176 */;
+import SubscriptionStore from "SubscriptionStore" /* 2179 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let _undefined, c4, c5, dependencyMap;
@@ -36,7 +36,7 @@ let obj2;
 let obj4;
 let tmp2;
 let unpackModuleId;
-const FastAssetImageDefault = tmp2(17581);
+const FastAssetImageDefault = tmp2(17855);
 function WhatYouLose(subscription) {
   let guild;
   let intl3;
@@ -56,7 +56,7 @@ function WhatYouLose(subscription) {
   const first2 = _slicedToArray(obj3.useIntangibleBenefits(listingId), 1)[0];
   const obj4 = GuildRoleSubscriptionListingEditStateUtilsAll;
   const first3 = _slicedToArray(obj4.useName(listingId), 1)[0];
-  const obj5 = _modDef2166(subscription.currentPeriodEnd);
+  const obj5 = _modDef2169(subscription.currentPeriodEnd);
   const formatResult = obj5.format(c12);
   const intl = intl4.intl;
   const formatResult1 = intl.format(intl4.t.EtAXzC, { subscriptionEndDate: formatResult });
@@ -104,9 +104,9 @@ function CancelSubscriptionButtonFooter(guild) {
   [tmp3, c3] = cancelSubscription(isPurchasedViaAppleGeneric.useState(false), 2);
   const tmp4 = dependencyMap;
   const tmp2 = cancelSubscription(isPurchasedViaAppleGeneric.useState(false), 2);
-  const tmp5 = subscription(7420);
-  const analyticsLocations = tmp5(subscription(7445).GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL).analyticsLocations;
-  let obj = subscription(10065);
+  const tmp5 = subscription(7918);
+  const analyticsLocations = tmp5(subscription(7937).GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL).analyticsLocations;
+  let obj = subscription(9723);
   const cancelSubscription1 = obj.useCancelSubscription(subscription.id, subscription.isACOM);
   cancelSubscription = cancelSubscription1.cancelSubscription;
   isPurchasedViaAppleGeneric = subscription.isPurchasedViaAppleGeneric;
@@ -140,7 +140,7 @@ function CancelSubscriptionButtonFooter(guild) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       try {
@@ -269,7 +269,7 @@ function CancelSubscriptionButtonFooter(guild) {
             _undefined = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } catch (tmp59) {
         if (0 === _undefined) {
@@ -281,7 +281,7 @@ function CancelSubscriptionButtonFooter(guild) {
       }
     }
   }), items);
-  Button = guild(5790).Button;
+  Button = guild(5926).Button;
   const tmp9 = closure_7;
   if (!tmp3) {
     if (isPurchasedViaAppleGeneric) {
@@ -328,7 +328,7 @@ function Content(subscription) {
       const obj5 = { guild, listingId: listing.id, subscription };
       items1 = [authStore(WhatYouLose, obj5), authStore(native.Spacer, { size: 24 }), , , ];
       const obj6 = { variant: "body-sm/semibold", color: "text-default", children: intl.string(intl4.t.xyvN8p) };
-      const Text = tmp5(5783).Text;
+      const Text = tmp5(5919).Text;
       intl = tmp5(1113).intl;
       items1[2] = authStore(Text, obj6);
       items1[3] = authStore(native.Spacer, { size: 16 });
@@ -347,7 +347,7 @@ function Content(subscription) {
 ({ jsx: c10, jsxs: unpackModuleId } = Fragment);
 let c12 = "M/DD/YY";
 let createStyles = createStyles_mod;
-let obj = { container: { flex: 1 }, body: { marginVertical: 24, marginHorizontal: 16 }, heroImage: { width: "100%", height: "WireType", aspectRatio: "<string:2353406737>" }, footer: obj2 };
+let obj = { container: { flex: 1 }, body: { marginVertical: 24, marginHorizontal: 16 }, heroImage: { width: "100%", height: "__closure", aspectRatio: "<string:2353406737>" }, footer: obj2 };
 obj2 = { borderTopColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_HOVER, borderTopWidth: 1, padding: 16 };
 let closure_13 = createStyles.createStyles(obj);
 createStyles = createStyles_mod;

@@ -1,22 +1,22 @@
-// Module ID: 5797
-// Function ID: 5798
+// Module ID: 5933
+// Function ID: 5934
 // Name: ButtonHooks
-// Dependencies: [19, 5170, 5231, 575, 5177, 5756, 1652, 5793, 5794, 5796, 5798, 5792, 5783, 1377, 2]
+// Dependencies: [19, 5306, 5367, 575, 5313, 5892, 1655, 5929, 5930, 5932, 5934, 5928, 5919, 1380, 2]
 // Exports: useButtonPillStyles, useButtonPressAnimationProps, useButtonTextColorStyles, useForegroundColor, useGradientPillStyles, useIconSizeStyles, useIconTintStyles, useProfileThemedButtonStyles
 
-// Module 5797 (ButtonHooks)
+// Module 5933 (ButtonHooks)
 import nativeDefault from "native" /* 575 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import shared from "shared" /* 5177 */;
-import native from "native" /* 5231 */;
-import useToken from "useToken" /* 5756 */;
-import Icon from "Icon" /* 5792 */;
-import spring_spring from "spring/spring" /* 5793 */;
-import springPresets from "springPresets" /* 5794 */;
-import ButtonConstants from "ButtonConstants" /* 5796 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import shared from "shared" /* 5313 */;
+import native from "native" /* 5367 */;
+import useToken from "useToken" /* 5892 */;
+import Icon from "Icon" /* 5928 */;
+import spring_spring from "spring/spring" /* 5929 */;
+import springPresets from "springPresets" /* 5930 */;
+import ButtonConstants from "ButtonConstants" /* 5932 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -183,9 +183,9 @@ function useButtonScaleStyles(sharedValue, sharedValue1, scaleAmountInPx) {
   let tmp7;
   let tmp8;
   let items = [closure_11, sharedValue1, scaleAmountInPx, , , , ];
-  const useAnimatedStyle = _mod1652.useAnimatedStyle;
+  const useAnimatedStyle = _mod1655.useAnimatedStyle;
   items[3] = spring_spring.withSpring;
-  items[4] = _mod1652.interpolate;
+  items[4] = _mod1655.interpolate;
   items[5] = sharedValue;
   items[6] = springPresets.ON_PRESS_SPRING;
   let c0;
@@ -285,7 +285,7 @@ export function useProfileThemedButtonStyles(arg0) {
       } else {
         setColorOpacity3Result = setColorOpacity3("white", 0.34);
       }
-      const obj8 = { backgroundColor: items2, borderColor: items3, color: "r" };
+      const obj8 = { backgroundColor: items2, borderColor: items3, color: "Array" };
       items2[1] = setColorOpacity3Result;
       items3 = [c4, c4];
       return obj8;
@@ -311,7 +311,7 @@ export function useProfileThemedButtonStyles(arg0) {
       } else {
         darkenColorResult1 = obj3.setColorOpacity("white", 0.2);
       }
-      const obj10 = { backgroundColor: items4, borderColor: items5, color: "r" };
+      const obj10 = { backgroundColor: items4, borderColor: items5, color: "Array" };
       items4[1] = darkenColorResult1;
       items5 = [c4, c4];
       return obj10;
@@ -375,7 +375,7 @@ export function useButtonTextColorStyles(primary) {
       } else {
         setColorOpacity3Result = setColorOpacity3("white", 0.34);
       }
-      const obj8 = { backgroundColor: items2, borderColor: items3, color: "r" };
+      const obj8 = { backgroundColor: items2, borderColor: items3, color: "Array" };
       items2[1] = setColorOpacity3Result;
       items3 = [c4, c4];
       return obj8;
@@ -401,7 +401,7 @@ export function useButtonTextColorStyles(primary) {
       } else {
         darkenColorResult1 = obj3.setColorOpacity("white", 0.2);
       }
-      const obj10 = { backgroundColor: items4, borderColor: items5, color: "r" };
+      const obj10 = { backgroundColor: items4, borderColor: items5, color: "Array" };
       items4[1] = darkenColorResult1;
       items5 = [c4, c4];
       return obj10;
@@ -475,7 +475,7 @@ export function useIconTintStyles(variant, sharedValue) {
       } else {
         setColorOpacity3Result = setColorOpacity3("white", 0.34);
       }
-      const obj8 = { backgroundColor: items2, borderColor: items3, color: "r" };
+      const obj8 = { backgroundColor: items2, borderColor: items3, color: "Array" };
       items2[1] = setColorOpacity3Result;
       items3 = [c4, c4];
       return obj8;
@@ -501,7 +501,7 @@ export function useIconTintStyles(variant, sharedValue) {
       } else {
         darkenColorResult1 = obj3.setColorOpacity("white", 0.2);
       }
-      const obj10 = { backgroundColor: items4, borderColor: items5, color: "r" };
+      const obj10 = { backgroundColor: items4, borderColor: items5, color: "Array" };
       items4[1] = darkenColorResult1;
       items5 = [c4, c4];
       return obj10;
@@ -522,9 +522,9 @@ export function useIconTintStyles(variant, sharedValue) {
   const tmpResult = require("useToken");
   const token1 = tmpResult.useToken(tmp5(variant).foregroundPressed);
   const items1 = [closure_9, , , , ];
-  const useAnimatedStyle = require("module_1652").useAnimatedStyle;
-  require("module_1652");
-  items1[1] = require("module_1652").interpolateColor;
+  const useAnimatedStyle = require("module_1655").useAnimatedStyle;
+  require("module_1655");
+  items1[1] = require("module_1655").interpolateColor;
   items1[2] = sharedValue;
   items1[3] = color;
   items1[4] = token1;
@@ -606,7 +606,7 @@ export function useButtonPillStyles(variant, pressed) {
       } else {
         setColorOpacity3Result = setColorOpacity3("white", 0.34);
       }
-      const obj8 = { backgroundColor: items2, borderColor: items3, color: "r" };
+      const obj8 = { backgroundColor: items2, borderColor: items3, color: "Array" };
       items2[1] = setColorOpacity3Result;
       items3 = [c4, c4];
       return obj8;
@@ -632,7 +632,7 @@ export function useButtonPillStyles(variant, pressed) {
       } else {
         darkenColorResult1 = obj3.setColorOpacity("white", 0.2);
       }
-      const obj10 = { backgroundColor: items4, borderColor: items5, color: "r" };
+      const obj10 = { backgroundColor: items4, borderColor: items5, color: "Array" };
       items4[1] = darkenColorResult1;
       items5 = [c4, c4];
       return obj10;
@@ -641,10 +641,10 @@ export function useButtonPillStyles(variant, pressed) {
     }
   }, items);
   const tmp3 = styleProperties(variant);
-  let tmp4 = require("module_1652");
+  let tmp4 = require("module_1655");
   let items1 = [closure_10, memo, tmp3, , ];
   const useAnimatedStyle = tmp4.useAnimatedStyle;
-  items1[3] = require("module_1652").interpolateColor;
+  items1[3] = require("module_1655").interpolateColor;
   items1[4] = pressed;
   let c0;
   let c1;
@@ -694,9 +694,9 @@ export function useButtonPressAnimationProps(sharedValue, scaleAmountInPx, onLay
   let closure_1 = onPressIn;
   let closure_2 = onPressOut;
   const tmp2 = dependencyMap;
-  const obj = _mod1652;
+  const obj = _mod1655;
   sharedValue = obj.useSharedValue(0);
-  const tmpResult = _mod1652;
+  const tmpResult = _mod1655;
   const sharedValue1 = tmpResult.useSharedValue(0);
   const obj2 = {
     onPressIn: react.useCallback((arg0) => {
@@ -744,19 +744,19 @@ export const useIconSizeStyles = (arg0) => {
     Icon;
     if ("sm" === closure_0) {
       const tmpResult = Icon;
-      iconSize = tmpResult.getIconSize(tmp(5796).SMALL_BUTTON_ICON_SIZE);
+      iconSize = tmpResult.getIconSize(tmp(5932).SMALL_BUTTON_ICON_SIZE);
     } else {
       iconSize = tmp4;
       if ("lg" === closure_0) {
         const tmpResult4 = Icon;
-        iconSize = tmpResult4.getIconSize(tmp(5796).LARGE_BUTTON_ICON_SIZE);
+        iconSize = tmpResult4.getIconSize(tmp(5932).LARGE_BUTTON_ICON_SIZE);
       }
     }
     let width = iconSize;
     if (flag) {
       width = iconSize;
       if (fontScale > 1) {
-        const TextStyleSheet = tmp(5783).TextStyleSheet;
+        const TextStyleSheet = tmp(5919).TextStyleSheet;
         const tmpResult5 = ButtonConstants;
         const tmp13 = TextStyleSheet[tmpResult5.getButtonDefaultTextVariant(tmpResult5, closure_0)];
         const tmpResult6 = PlatformUtils;

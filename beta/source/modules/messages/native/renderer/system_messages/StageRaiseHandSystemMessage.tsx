@@ -1,18 +1,18 @@
-// Module ID: 8601
-// Function ID: 8602
+// Module ID: 9270
+// Function ID: 9271
 // Name: StageRaiseHandSystemMessage
-// Dependencies: [6800, 5019, 5102, 1072, 1113, 2185, 8522, 11, 6212, 8524, 8526, 2]
+// Dependencies: [6930, 5155, 5238, 1072, 1113, 2188, 9188, 11, 6348, 9190, 9192, 2]
 // Exports: createStageRaiseHandSystemMessage
 
-// Module 8601 (StageRaiseHandSystemMessage)
+// Module 9270 (StageRaiseHandSystemMessage)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl5 from "intl" /* 1113 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8522 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8524 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6800 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import PermissionStore from "PermissionStore" /* 5102 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 9188 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 9190 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6930 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import PermissionStore from "PermissionStore" /* 5238 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -61,7 +61,7 @@ export function createStageRaiseHandSystemMessage(message) {
     if (participant != null) {
       rtsState = participant.rtsState;
     }
-    canResult = rtsState === tmp(6212).RequestToSpeakStates.REQUESTED_TO_SPEAK;
+    canResult = rtsState === tmp(6348).RequestToSpeakStates.REQUESTED_TO_SPEAK;
   }
   if (canResult) {
     canResult = toISOStringResult === toISOStringResult1;
@@ -84,6 +84,6 @@ export function createStageRaiseHandSystemMessage(message) {
       tmp10 = obj5;
     }
   }
-  const merged = Object.assign(tmp6(8526)(message));
+  const merged = Object.assign(tmp6(9192)(message));
   return obj3;
 }

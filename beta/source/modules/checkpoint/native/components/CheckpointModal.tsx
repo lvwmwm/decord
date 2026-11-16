@@ -1,44 +1,50 @@
-// Module ID: 13703
-// Function ID: 13704
+// Module ID: 14275
+// Function ID: 14276
 // Name: CheckpointModal
-// Dependencies: [5, 32, 19, 17, 5113, 13699, 6231, 1083, 21, 575, 5406, 13704, 2118, 5170, 13717, 1627, 1493, 13718, 504, 13721, 13722, 6599, 6255, 12147, 8777, 13723, 13724, 13725, 6598, 13727, 9102, 5408, 6831, 2116, 6238, 6252, 13642, 13701, 13697, 5868, 1113, 6275, 5231, 13728, 13903, 13905, 13914, 6260, 6261, 7153, 13949, 13950, 13964, 13729, 13966, 2]
+// Dependencies: [5, 32, 19, 17, 5249, 14253, 6367, 14276, 1083, 21, 575, 5542, 14277, 2121, 5306, 14274, 1630, 1496, 14255, 504, 14290, 14264, 6735, 6391, 14291, 14262, 6734, 14298, 7994, 5544, 6838, 14292, 2119, 6374, 6388, 10239, 14260, 14251, 6004, 1113, 5367, 14299, 14477, 14300, 14267, 14483, 14272, 6396, 6397, 14533, 14534, 14486, 14266, 14547, 14265, 2]
 // Exports: default
 
-// Module 13703 (CheckpointModal)
+// Module 14275 (CheckpointModal)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
-import Server from "Server" /* 2116 */;
-import asyncRequire from "asyncRequire" /* 2118 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
-import HapticUtils from "HapticUtils" /* 5408 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 6238 */;
-import checkpoint_CheckpointMessageComponentUtils from "checkpoint/CheckpointMessageComponentUtils" /* 6252 */;
-import CheckpointNavigation from "CheckpointNavigation" /* 6599 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6831 */;
-import ForwardModalUtils from "ForwardModalUtils" /* 13642 */;
-import CheckpointHeaderButton from "CheckpointHeaderButton" /* 13717 */;
-import CheckpointFlows from "CheckpointFlows" /* 13718 */;
-import useCheckpointStepAnalytics from "useCheckpointStepAnalytics" /* 13722 */;
-import useCheckpointPreloaderDefault from "useCheckpointPreloader" /* 13966 */;
+import Server from "Server" /* 2119 */;
+import asyncRequire from "asyncRequire" /* 2121 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import HapticUtils from "HapticUtils" /* 5544 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 6374 */;
+import checkpoint_CheckpointMessageComponentUtils from "checkpoint/CheckpointMessageComponentUtils" /* 6388 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
+import ForwardModalUtils from "ForwardModalUtils" /* 10239 */;
+import CheckpointFlows from "CheckpointFlows" /* 14255 */;
+import useCheckpointStepAnalytics from "useCheckpointStepAnalytics" /* 14264 */;
+import useCheckpointForegroundTrackingDefault from "useCheckpointForegroundTracking" /* 14265 */;
+import CheckpointHeaderButton from "CheckpointHeaderButton" /* 14274 */;
+import CheckpointSounds from "CheckpointSounds" /* 14292 */;
+import useCheckpointPreloaderDefault from "useCheckpointPreloader" /* 14547 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import MessageRecord from "MessageRecord" /* 5113 */;
-import CheckpointStore from "CheckpointStore" /* 13699 */;
-import CheckpointConstants from "CheckpointConstants" /* 6231 */;
+import MessageRecord from "MessageRecord" /* 5249 */;
+import CheckpointStore from "CheckpointStore" /* 14253 */;
+import CheckpointConstants from "CheckpointConstants" /* 6367 */;
+import CheckpointTransitionConstants from "CheckpointTransitionConstants" /* 14276 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
-import size_mod from "module_2" /* 2 */;
+import createStyles_mod from "createStyles" /* 5306 */;
+import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let c1, c4, closure_1, closure_4, closure_5, importDefault;
+let c3, closure_2, closure_4, closure_5, dependencyMap;
 
 let CHECKPOINT_CONTROL_SIZE;
 let CHECKPOINT_LOGO_SIZE;
 let CHECKPOINT_NAV_HEIGHT;
 let c10;
 let closure_12;
+let closure_14;
+let closure_15;
+let closure_16;
+let closure_18;
+let closure_19;
 let map1;
 let metroImportDefault;
 let metroRequire;
@@ -47,63 +53,49 @@ let obj3;
 let obj4;
 let rect;
 let rect1;
-let rect2;
 let result;
-let size;
+let unpackModuleId;
 function CheckpointModal(didPlayerShareDataWithDiscord) {
-  let VoiceNormalIcon;
-  let _undefined;
-  let c9;
   let characterStage;
-  let closure_3;
-  let clydeLogoImage;
   let clydeLogoStaticImage;
-  let first1;
+  let first;
   let height;
-  let intl2;
+  let items4;
   let items5;
   let items6;
-  let items7;
-  let items8;
-  let items9;
-  let obj12;
+  let obj15;
+  let obj17;
   let obj21;
   let obj25;
-  let obj7;
+  let obj27;
   let obj9;
   let onLayout;
   let ref;
   let route;
-  let shadowColor;
-  let stats;
   let statsScreen;
+  let str2;
   let str3;
-  let str4;
-  let str5;
-  let string;
-  let t;
+  let sum;
+  let tmp26;
   let tmp27;
-  let tmp28;
-  let tmp2Result13;
-  let tmp40;
-  let tmp45;
+  let tmp2Result10;
+  let tmp2Result14;
+  let tmp49;
+  let tmp53;
   let width;
   let flag = didPlayerShareDataWithDiscord.didPlayerShareDataWithDiscord;
   if (flag === undefined) {
     flag = true;
   }
-  let checkpointFlow;
-  importDefault = undefined;
+  let stateFromStores;
   route = undefined;
-  closure_3 = undefined;
+  dependencyMap = undefined;
+  let stateFromStores2;
   _slicedToArray = undefined;
   react = undefined;
-  let stateFromStores;
-  let closure_7;
-  let stateFromStores2;
-  c9 = undefined;
+  let obj6;
   function transition(direction, arg1) {
-    obj = arg1;
+    let obj = arg1;
     if (arg1 === undefined) {
       obj = {};
     }
@@ -117,21 +109,25 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
     }
     const timestamp = Date.now();
     if (flag) {
-      const obj3 = { flow: checkpointFlow, stats, currentRoute: route, direction };
-      const obj2 = CheckpointFlows;
-      const adjacentCheckpointRoute = obj2.getAdjacentCheckpointRoute(obj3);
-      const tmp10 = route;
+      const obj2 = { currentRoute, direction };
+      const getAdjacentCheckpointRoute = CheckpointFlows.getAdjacentCheckpointRoute;
+      CheckpointFlows;
+      const merged = Object.assign(obj6);
+      const adjacentCheckpointRoute = getAdjacentCheckpointRoute(obj2);
+      const tmp12 = currentRoute;
       if (null != adjacentCheckpointRoute) {
         ref.current = timestamp;
         if (null != IMPACT_LIGHT) {
-          const obj4 = HapticUtils;
-          const result = obj4.triggerHapticFeedback(IMPACT_LIGHT);
+          const obj3 = HapticUtils;
+          const result = obj3.triggerHapticFeedback(IMPACT_LIGHT);
         }
-        const SILENT_CHECKPOINT_ROUTES = CheckpointNavigation.SILENT_CHECKPOINT_ROUTES;
-        if (!SILENT_CHECKPOINT_ROUTES.has(tmp10)) {
-          closure_7();
+        const obj5 = { previousRoute: tmp12, route: adjacentCheckpointRoute };
+        const obj4 = CheckpointSounds;
+        const checkpointRouteSounds = obj4.getCheckpointRouteSounds(obj5);
+        if (null != checkpointRouteSounds) {
+          closure_4(checkpointRouteSounds);
         }
-        closure_3(adjacentCheckpointRoute);
+        closure_2(adjacentCheckpointRoute);
       } else if (1 === direction) {
         const arr = ModalActionCreatorsDefault;
         arr.pop();
@@ -143,27 +139,27 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
     let obj4;
     let obj5;
     let closure_0 = STATS_ONLY;
-    obj = HapticUtils;
+    let obj = HapticUtils;
     let result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_LIGHT);
     let obj2 = { content: "", components: items };
-    const obj3 = { type: Server.ComponentType.CHECKPOINT_CARD, id: obj4.asComponentId("0"), checkpointData: obj5.toCheckpointMessageComponentData(STATS_ONLY, stateFromStores, closure_1) };
+    const obj3 = { type: Server.ComponentType.CHECKPOINT_CARD, id: obj4.asComponentId("0"), checkpointData: obj5.toCheckpointMessageComponentData(STATS_ONLY, stateFromStores2, stateFromStores) };
     obj4 = InteractionComponentTypes;
     obj5 = checkpoint_CheckpointMessageComponentUtils;
     items = [obj3];
     const tmp2 = new MessageRecord(obj2);
     const tmp3 = ForwardModalUtils;
-    let obj6 = {
+    obj6 = {
       message: tmp2,
       source: "checkpoint",
-      customSendHandler(arg0, arg1, arg2) {
+      customSendHandler() {
         return closure_1(...arguments);
       }
     };
     const openForwardModal = tmp3.openForwardModal;
-    closure_1 = _asyncToGenerator(async (arg0, arg1, arg2) => {
+    let closure_1 = _asyncToGenerator(async (arg0, arg1, arg2) => {
       closure_0 = arg0;
       let withMessage = arg1;
-      let closure_2 = arg2;
+      closure_2 = arg2;
       let c7 = 0;
       let c8 = 0;
       let c6 = 0;
@@ -178,7 +174,7 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } else {
           try {
@@ -198,7 +194,7 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
                 withMessage = withMessage.withMessage;
                 c7 = 1;
                 c8 = 1;
-                return { value: "flexDirection", done: true };
+                return { value: "Path", done: true };
               }
             } else if (1 === c7) {
               if (arg0 === 1) {
@@ -211,24 +207,24 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
                 closure_2(true);
                 c6 = 1;
                 c3 = withMessage;
-                const sendCheckpointCard = closure_0(closure_2[37]).sendCheckpointCard;
-                closure_0(closure_2[37]);
+                const sendCheckpointCard = closure_0(closure_2[36]).sendCheckpointCard;
+                closure_0(closure_2[36]);
                 const tmp34 = closure_0;
                 if (withMessage == null) {
                   c3 = "";
                 }
                 c7 = 3;
                 c8 = 1;
-                const obj6 = { value: sendCheckpointCard(tmp34, c3, closure_133_0), done: false };
+                obj6 = { value: sendCheckpointCard(tmp34, c3, closure_133_0), done: false };
                 return obj6;
               }
             } else if (2 === c7) {
               c6 = 0;
               closure_2(false);
-              const presentError = closure_0(closure_2[39]).presentError;
-              closure_0(closure_2[39]);
-              const intl = closure_0(closure_2[40]).intl;
-              presentError(intl.string(closure_0(closure_2[40]).t.fEptJP));
+              const presentError = closure_0(closure_2[38]).presentError;
+              closure_0(closure_2[38]);
+              const intl = closure_0(closure_2[39]).intl;
+              presentError(intl.string(closure_0(closure_2[39]).t.fEptJP));
               c8 = 3;
               return { value: undefined, done: true };
             } else if (arg0 === 1) {
@@ -239,13 +235,13 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
               c8 = 3;
               return { value, done: true };
             } else {
-              obj = closure_0(closure_2[38]);
+              const obj = closure_0(closure_2[37]);
               const result = obj.trackCheckpoint2026CardShared(closure_133_0);
               c6 = 0;
-              const obj2 = closure_0(closure_2[36]);
+              const obj2 = closure_0(closure_2[35]);
               obj2.closeForwardModal();
               c8 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "ulw" };
             }
           } catch (tmp42) {
             tmp43 = c6;
@@ -263,222 +259,119 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
     });
     openForwardModal(obj6);
   }
-  let obj = function _handleNext() {
-    obj = _asyncToGenerator(async (arg0, value) => {
-      let closure_0;
-      let obj4;
-      if (c4 === 2) {
-        c4 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          const obj2 = { value, done: true };
-          return obj2;
-        } else {
-          return { value: "HermesInternal", done: null };
-        }
-      } else {
-        let c3;
-        try {
-          c4 = 2;
-          if (0 === c1) {
-            if (arg0 === 1) {
-              c4 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 3;
-              const obj5 = { value, done: true };
-              return obj5;
-            } else {
-              const tmp45 = closure_2_5;
-              if (tmp45) {
-                _undefined(true);
-                c3 = 1;
-                const obj3 = tmp(closure_2[41]);
-                const characterFromTraits = obj3.getCharacterFromTraits(stateFromStores2);
-                c1 = 2;
-                c4 = 1;
-                const obj6 = { value: obj4.completeCheckpoint(characterFromTraits), done: false };
-                obj4 = tmp(closure_2[37]);
-                return obj6;
-              } else {
-                transition(1);
-              }
-            }
-          } else if (1 === tmp4) {
-            c3 = 0;
-            closure_128_9(false);
-            throw closure_2;
-          } else if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c3 = 0;
-            closure_128_9(false);
-            c4 = 3;
-            const obj7 = { value, done: true };
-            return obj7;
-          } else {
-            if (value) {
-              obj = { skipThrottle: true, hapticType: tmp(closure_2[31]).HapticFeedbackTypes.NOTIFICATION_SUCCESS };
-              closure_128_10(1, obj);
-            } else {
-              const presentError = tmp(closure_2[39]).presentError;
-              const tmp7 = tmp(closure_2[39]);
-              const intl = tmp(closure_2[40]).intl;
-              presentError(intl.string(tmp(closure_2[40]).t.fEptJP));
-            }
-            c3 = 0;
-            closure_128_9(false);
-          }
-          c4 = 3;
-          return { value: "HermesInternal", done: null };
-        } catch (tmp38) {
-          closure_2 = tmp38;
-          if (0 === c3) {
-            c4 = 3;
-            throw tmp38;
-          } else {
-            c1 = 1;
-          }
-        }
-      }
-    });
-    return obj(...arguments);
-  };
-  const tmp = closure_15();
-  let tmp2 = importDefault;
-  let tmp3 = route;
-  const rect = require("useSafeAreaInsets")();
-  const tmp4 = require("useWindowDimensions")();
-  ({ width, height } = tmp4);
+  const tmp = closure_21();
+  let tmp2 = route;
+  let tmp3 = dependencyMap;
+  const rect = route(1630)();
+  ({ width, height } = route(1496)());
   let str = "MobilePortrait";
+  const tmp4 = route(1496)();
   if (width > height) {
     str = "MobileLandscape";
   }
-  obj = checkpointFlow(tmp3[17]);
-  checkpointFlow = obj.getCheckpointFlow(flag);
-  let obj2 = checkpointFlow(tmp3[18]);
-  let tmp7 = c9;
-  let items = [c9];
-  importDefault = obj2.useStateFromStores(items, () => _undefined.stats);
-  [route, closure_3] = tmp2(tmp3[19])(checkpointFlow);
-  let obj3 = checkpointFlow(tmp3[20]);
-  const checkpointStepAnalytics = obj3.useCheckpointStepAnalytics(route);
-  let obj4 = react;
-  _slicedToArray = react.useRef(0);
-  let obj5 = checkpointFlow(tmp3[21]);
+  let obj = stateFromStores(14255);
+  const checkpointFlow = obj.getCheckpointFlow(flag);
+  let obj2 = stateFromStores(504);
+  let items = [CheckpointStore];
+  stateFromStores = obj2.useStateFromStores(items, () => CheckpointStore.stats);
+  let obj3 = stateFromStores(504);
+  const items1 = [CheckpointStore];
+  const stateFromStores1 = obj3.useStateFromStores(items1, () => CheckpointStore.isCharacterCreatorEnabled);
+  [route, dependencyMap] = tmp2(14290)(checkpointFlow);
+  let obj4 = stateFromStores(14264);
+  const checkpointStepAnalytics = obj4.useCheckpointStepAnalytics(route);
+  let obj5 = stateFromStores(6735);
   const checkpointRoutePresentation = obj5.getCheckpointRoutePresentation(route);
   ({ characterStage, statsScreen } = checkpointRoutePresentation);
-  let tmp44Result = route === checkpointFlow(tmp3[21]).CheckpointRoute.HOME;
-  if (!tmp44Result) {
-    tmp44Result = null != statsScreen;
+  let tmp15 = route === stateFromStores(6735).CheckpointRoute.HOME;
+  if (!tmp15) {
+    tmp15 = null != statsScreen;
   }
-  let tmp44Result4 = tmp44Result || route === tmp5(tmp3[21]).CheckpointRoute.INTRODUCTION;
-  const tmp5Result = checkpointFlow(tmp3[21]);
+  const INTRODUCTION = tmp5(6735).CheckpointRoute.INTRODUCTION;
+  const tmp5Result = stateFromStores(6735);
   let result = tmp5Result.isCheckpointCustomizationRoute(route);
-  const tmp17 = route === checkpointFlow(tmp3[21]).CheckpointRoute.FINALIZE_CHARACTER;
-  react = tmp17;
-  const tmp18 = route === checkpointFlow(tmp3[21]).CheckpointRoute.SUMMARY;
-  const items1 = [tmp7];
-  const tmp5Result7 = checkpointFlow(tmp3[18]);
-  stateFromStores = tmp5Result7.useStateFromStores(items1, () => _undefined.character);
-  const tmp5Result8 = checkpointFlow(tmp3[22]);
-  const characterCardColorPalette = tmp5Result8.getCharacterCardColorPalette(stateFromStores);
-  const tmp5Result9 = checkpointFlow(tmp3[22]);
-  const cardColors = tmp5Result9.getCardColors(characterCardColorPalette);
-  const tmp22 = tmp18 ? cardColors.primaryBackgroundColor : transition;
+  const FINALIZE_CHARACTER = tmp5(6735).CheckpointRoute.FINALIZE_CHARACTER;
+  const tmp18 = route === stateFromStores(6735).CheckpointRoute.SUMMARY;
   const items2 = [tmp7];
-  const tmp5Result10 = checkpointFlow(tmp3[18]);
-  const stateFromStores1 = tmp5Result10.useStateFromStores(items2, () => _undefined.isMuted);
-  if (stateFromStores1) {
-    VoiceNormalIcon = tmp5(tmp3[23]).VoiceXIcon;
-  } else {
-    VoiceNormalIcon = tmp5(tmp3[24]).VoiceNormalIcon;
-  }
-  const tmp2Result = tmp2(tmp3[25]);
-  closure_7 = tmp2Result(tmp2(tmp3[26]));
-  tmp2(tmp3[27])();
-  [tmp27, tmp28] = _slicedToArray(obj4.useState(checkpointFlow(tmp3[28]).CheckpointCustomizationOption.BASE), 2);
-  _slicedToArray(obj4.useState(checkpointFlow(tmp3[28]).CheckpointCustomizationOption.BASE), 2);
-  if (!tmp17) {
-    const tmp5Result11 = checkpointFlow(tmp3[28]);
-    let BASE = tmp5Result11.getCustomizationOptionForCharacterStage(characterStage);
+  const tmp5Result7 = stateFromStores(504);
+  stateFromStores2 = tmp5Result7.useStateFromStores(items2, () => CheckpointStore.character);
+  const tmp5Result8 = stateFromStores(6391);
+  const characterCardColorPalette = tmp5Result8.getCharacterCardColorPalette(stateFromStores2);
+  const tmp5Result9 = stateFromStores(6391);
+  const cardColors = tmp5Result9.getCardColors(characterCardColorPalette);
+  const tmp22 = tmp18 ? cardColors.primaryBackgroundColor : closure_10;
+  _slicedToArray = tmp2(14291)();
+  tmp2(14262)();
+  [tmp26, tmp27] = _slicedToArray(react.useState(stateFromStores(6734).CheckpointCustomizationOption.BASE), 2);
+  _slicedToArray(react.useState(stateFromStores(6734).CheckpointCustomizationOption.BASE), 2);
+  if (route !== FINALIZE_CHARACTER) {
+    const tmp5Result10 = stateFromStores(6734);
+    let BASE = tmp5Result10.getCustomizationOptionForCharacterStage(characterStage);
     if (BASE == null) {
-      BASE = tmp5(tmp3[28]).CheckpointCustomizationOption.BASE;
+      BASE = tmp5(6734).CheckpointCustomizationOption.BASE;
     }
   }
-  const tmp31 = checkpointFlow(tmp3[28]).CUSTOMIZATION_OPTION_TO_TRAIT[tmp27];
-  const items3 = [tmp7];
-  const tmp5Result12 = checkpointFlow(tmp3[18]);
-  stateFromStores2 = tmp5Result12.useStateFromStores(items3, () => _undefined.selectedCharacterTraits);
-  const obj13 = tmp2(tmp3[29])();
-  const hasItem = obj13.includes(tmp31);
-  let tmp35 = result;
-  const tmp2Result8 = tmp2(tmp3[30]);
+  const tmp30 = stateFromStores(6734).CUSTOMIZATION_OPTION_TO_TRAIT[tmp26];
+  const obj12 = tmp2(14298)();
+  const hasItem = obj12.includes(tmp30);
+  let tmp33 = result;
+  const tmp2Result = tmp2(7994);
   if (result) {
-    tmp35 = !tmp30;
+    tmp33 = !tmp29;
   }
-  const tmp2Result1Result = tmp2Result8({ isMounted: tmp35 });
-  const height2 = tmp2Result1Result.height;
-  let sum = null;
-  ({ ref, onLayout } = tmp2Result1Result);
+  let tmp47Result = route === INTRODUCTION;
+  const tmp2ResultResult = tmp2Result({ isMounted: tmp33 });
+  const height2 = tmp2ResultResult.height;
+  ({ ref, onLayout } = tmp2ResultResult);
+  const first1 = tmp10(react.useState(null), 2)[0];
+  _slicedToArray(react.useState(null), 2);
   if (result) {
-    sum = null;
+    let clydeLogoImage;
     if (null != height2) {
-      const tmp38 = sum1;
       sum = rect.bottom + sum1 + height2;
     }
-  }
-  [tmp40, c9] = _slicedToArray(obj4.useState(false), 2);
-  _slicedToArray(obj4.useState(false), 2);
-  if (tmp17) {
-    first1 = obj13[0];
-  } else if (hasItem) {
-    first1 = tmp31;
-  }
-  let tmp42 = result;
-  if (tmp42) {
-    let tmp43 = null != first1 || null == stateFromStores2[tmp31];
-    tmp42 = tmp43;
-  }
-  let obj6 = { theme: handleForward.DARK, children: tmp45(tmp46, obj7) };
-  tmp45 = closure_13;
-  obj7 = { style: tmp.container, children: items5 };
-  const items4 = [tmp.layer, ];
-  let coveredCharacterLayer = tmp44Result;
-  const ThemeContextProvider = tmp5(tmp3[42]).ThemeContextProvider;
-  if (tmp44Result) {
-    coveredCharacterLayer = tmp.coveredCharacterLayer;
-  }
-  const obj8 = { collapsable: false, style: items4, pointerEvents: str3, accessibilityElementsHidden: tmp44Result4, importantForAccessibility: str4, children: tmp44(tmp2(tmp3[43]), obj9) };
-  items4[1] = coveredCharacterLayer;
-  let str2 = "auto";
-  str3 = "auto";
-  if (tmp44Result4) {
-    str3 = "none";
-  }
-  str4 = str2;
-  if (tmp44Result4) {
-    str4 = "no-hide-descendants";
-  }
-  obj9 = { stage: characterStage, layout: str, isActive: !tmp44Result4, isHidden: tmp44Result, characterBottomInset: sum };
-  items5 = [tmp44(tmp46, obj8), , , , , , ];
-  if (tmp44Result) {
+    const items3 = [tmp7];
+    const tmp5Result11 = stateFromStores(504);
+    const stateFromStores3 = tmp5Result11.useStateFromStores(items3, () => CheckpointStore.isSaving);
+    react = obj10.useRef(0);
+    obj6 = { flow: checkpointFlow, stats: stateFromStores, character: stateFromStores2, isCharacterCreatorEnabled: stateFromStores1 };
+    const obj7 = { currentRoute: route, direction: 1 };
+    let tmp43 = obj7;
+    let getAdjacentCheckpointRoute = tmp5(14255).getAdjacentCheckpointRoute;
+    stateFromStores(14255);
+    let merged = Object.assign(obj6);
+    const tmp46 = null == getAdjacentCheckpointRoute(obj7);
+    const obj8 = { theme: ThemeTypes.DARK, children: tmp49(transition, obj9) };
+    let tmp47Result4 = stateFromStores1;
+    obj9 = { style: tmp.container, children: items4 };
+    const ThemeContextProvider = tmp5(5367).ThemeContextProvider;
+    tmp49 = closure_19;
+    if (stateFromStores1) {
+      const obj11 = { stage: characterStage, layout: str, characterBottomInset: sum, isCovered: tmp15, isActive: !tmp53, style: tmp.layer, children: tmp47Result };
+      tmp53 = tmp15;
+      const tmp2Result8 = tmp2(14299);
+      if (!tmp15) {
+        tmp53 = tmp47Result;
+      }
+      if (tmp47Result) {
+        const obj13 = { layout: str, onCharacterBottomInsetChange: tmp38 };
+        tmp47Result = tmp47(tmp2(14477), obj13);
+      }
+      tmp47Result4 = tmp47(tmp2Result8, obj11);
+    }
+    items4 = [tmp47Result4, , , , , , ];
     let prop;
-    const tmp2Result9 = tmp2(tmp3[44]);
+    const obj14 = { visible: tmp15, enter: exit, exit, hiddenScale, style: tmp.layer, children: closure_18(tmp2Result10, obj15) };
+    const tmp2Result9 = tmp2(14300);
+    tmp2Result10 = tmp2(14267);
+    const tmp56 = hiddenScale;
     if (tmp18) {
       prop = cardColors.backgroundGradientStartColor;
     }
-    const obj10 = { gradientStartColor: prop };
-    tmp44Result = tmp44(tmp2Result9, obj10);
-  }
-  items5[1] = tmp44Result;
-  if (tmp44Result4) {
-    const obj11 = { style: tmp.layer, children: obj(tmp2(tmp3[45]), obj12) };
-    obj12 = {
+    obj15 = { gradientStartColor: prop };
+    items4[1] = closure_18(tmp2Result9, obj14);
+    const obj16 = { visible: tmp15, enter: enter2, exit: exit2, hiddenScale: tmp56, mountAfterDelay: true, style: tmp.layer, children: closure_18(tmp2(14483), obj17) };
+    obj17 = {
       route,
       onNextStep: function handleNextStep() {
           transition(1, { skipThrottle: true, hapticType: null });
@@ -487,159 +380,140 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
           transition(-1, { skipThrottle: true, hapticType: null });
         }
     };
-    tmp44Result4 = tmp44(tmp46, obj11);
-  }
-  items5[2] = tmp44Result4;
-  const obj14 = { style: items6, children: items7 };
-  items6 = [tmp.nav, { marginTop: rect.top, marginLeft: rect.left, marginRight: rect.right }];
-  const tmp2Result10 = tmp2(tmp3[46]);
-  if (tmp18) {
-    clydeLogoImage = cardColors.clydeLogoImage;
-  } else {
-    clydeLogoImage = tmp2(tmp3[47]);
-  }
-  const obj15 = { animatedUri: clydeLogoImage, staticUri: clydeLogoStaticImage, style: tmp.logo };
-  if (tmp18) {
-    clydeLogoStaticImage = cardColors.clydeLogoStaticImage;
-  } else {
-    clydeLogoStaticImage = tmp2(tmp3[48]);
-  }
-  items7 = [tmp44(tmp2Result10, obj15), ];
-  const obj16 = { style: tmp.headerActions, children: items8 };
-  const obj17 = { onPress: checkpointFlow(tmp3[37]).toggleMute, accessibilityLabel: string(stateFromStores1 ? t.YqAjXy : t.w4m945), color: tmp22, children: obj(VoiceNormalIcon, { color: tmp22, size: "xs" }) };
-  const tmp2Result11 = tmp2(tmp3[14]);
-  let intl = tmp5(tmp3[40]).intl;
-  string = intl.string;
-  t = tmp5(tmp3[40]).t;
-  items8 = [tmp44(tmp2Result11, obj17), ];
-  const obj18 = {
-    onPress: function handleClose() {
-      obj = checkpointFlow(route[31]);
-      const result = obj.triggerHapticFeedback(checkpointFlow(route[31]).HapticFeedbackTypes.IMPACT_LIGHT);
-      const arr = stats(route[32]);
-      arr.pop();
-    },
-    accessibilityLabel: intl2.string(checkpointFlow(tmp3[40]).t.cpT0Cq),
-    color: tmp22,
-    children: obj(checkpointFlow(tmp3[49]).XSmallIcon, { color: tmp22, size: "xs" })
-  };
-  const tmp2Result12 = tmp2(tmp3[14]);
-  intl2 = tmp5(tmp3[40]).intl;
-  items8[1] = obj(tmp2Result12, obj18);
-  items7[1] = tmp45(closure_7, obj16);
-  items5[3] = tmp45(closure_7, obj14);
-  let tmp44Result5 = result && tmp30 && !tmp17;
-  if (tmp44Result5) {
-    tmp44Result5 = width / height >= 1.3333333333333333;
-  }
-  if (tmp44Result5) {
-    const obj19 = { style: items9, children: obj(tmp2(tmp3[50]), obj21) };
-    items9 = [tmp.landscapeStat, ];
-    const obj20 = { marginTop: null, marginLeft: null };
-    ({ top: obj27.marginTop, left: obj27.marginLeft } = rect);
-    items9[1] = obj20;
-    obj21 = { customizationOption: tmp27 };
-    tmp44Result5 = tmp44(tmp46, obj19);
-  }
-  items5[4] = tmp44Result5;
-  if (result) {
-    const items10 = [tmp.customizationSection, , ];
-    const obj22 = { marginLeft: null, marginRight: null, marginBottom: null };
+    const tmp2Result11 = tmp2(14300);
+    items4[2] = closure_18(tmp2Result11, obj16);
+    const tmp2Result12 = tmp2(14272);
+    if (tmp18) {
+      clydeLogoImage = cardColors.clydeLogoImage;
+    } else {
+      clydeLogoImage = tmp2(6396);
+    }
+    const obj18 = { logoAnimatedUri: clydeLogoImage, logoStaticUri: clydeLogoStaticImage, color: tmp22 };
+    if (tmp18) {
+      clydeLogoStaticImage = cardColors.clydeLogoStaticImage;
+    } else {
+      clydeLogoStaticImage = tmp2(6397);
+    }
+    items4[3] = closure_18(tmp2Result12, obj18);
+    let tmp47Result5 = result && tmp29 && !tmp23;
+    if (tmp47Result5) {
+      tmp47Result5 = width / height >= 1.3333333333333333;
+    }
+    if (tmp47Result5) {
+      const obj19 = { style: items5, children: closure_18(tmp2(14533), obj21) };
+      items5 = [tmp.landscapeStat, ];
+      const obj20 = { marginTop: null, marginLeft: null };
+      ({ top: obj26.marginTop, left: obj26.marginLeft } = rect);
+      items5[1] = obj20;
+      obj21 = { customizationOption: tmp26 };
+      tmp47Result5 = tmp47(tmp50, obj19);
+    }
+    items4[4] = tmp47Result5;
+    const obj22 = { visible: result, enter, exit, style: items6, children: closure_18(transition, obj25) };
+    items6 = [tmp.customizationSection, , ];
+    const obj23 = { marginLeft: null, marginRight: null, marginBottom: null };
     ({ left: obj29.marginLeft, right: obj29.marginRight, bottom: obj29.marginBottom } = rect);
-    items10[1] = obj22;
-    let tmp53 = tmp30;
-    if (tmp53) {
-      const items11 = [tmp.landscapeCustomizationSection, ];
-      const obj23 = { marginTop: rect.top };
-      items11[1] = obj23;
-      tmp53 = items11;
+    items6[1] = obj23;
+    let tmp67 = tmp29;
+    const tmp2Result13 = tmp2(14300);
+    if ("MobileLandscape" === str) {
+      const items7 = [tmp.landscapeCustomizationSection, ];
+      const obj24 = { marginTop: rect.top };
+      items7[1] = obj24;
+      tmp67 = items7;
     }
-    items10[2] = tmp53;
-    const obj24 = { style: items10, ref, onLayout, pointerEvents: str5, accessibilityElementsHidden: tmp40, importantForAccessibility: str2, children: obj(tmp2Result13, obj25) };
-    str5 = str2;
-    if (tmp40) {
-      str5 = "none";
+    items6[2] = tmp67;
+    const items8 = [tmp.customizationContent, ];
+    const tmp68 = "MobileLandscape" === str && tmp.landscapeCustomizationContent;
+    items8[1] = tmp68;
+    obj25 = { style: items8, ref, onLayout, pointerEvents: str3, accessibilityElementsHidden: stateFromStores3, importantForAccessibility: str2, children: closure_18(tmp2Result14, obj27) };
+    str2 = "auto";
+    str3 = "auto";
+    if (stateFromStores3) {
+      str3 = "none";
     }
-    if (tmp40) {
+    if (stateFromStores3) {
       str2 = "no-hide-descendants";
     }
-    obj25 = { activeCustomizationOption: tmp27, isFinalizeRoute: tmp17, isCurrentTraitBlocked: hasItem, isSaving: tmp40, isLandscape: "MobileLandscape" === str, onSelectFinalizeOption: tmp28, onSelectTraitOption: checkpointFlow(tmp3[37]).selectCharacterTrait };
-    tmp2Result13 = tmp2(tmp3[51]);
-    result = tmp44(tmp46, obj24);
+    obj27 = { activeCustomizationOption: tmp26, isFinalizeRoute: route === FINALIZE_CHARACTER, isCurrentTraitBlocked: hasItem, isSaving: stateFromStores3, isLandscape: "MobileLandscape" === str, onSelectFinalizeOption: tmp27, onSelectTraitOption: stateFromStores(14260).selectCharacterTrait };
+    tmp2Result14 = tmp2(14534);
+    items4[5] = closure_18(tmp2Result13, obj22);
+    const obj28 = {
+      activeRoute: route,
+      onBack: function handleBack() {
+          transition(-1);
+        },
+      onNext: function handleNext() {
+          transition(1);
+        },
+      onSave: function handleSaved() {
+          const obj = { skipThrottle: true, hapticType: HapticUtils.HapticFeedbackTypes.NOTIFICATION_SUCCESS };
+          transition(1, obj);
+        },
+      onReplay: function handleReplay() {
+          const obj = HapticUtils;
+          const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_LIGHT);
+          const obj2 = CheckpointFlows;
+          const checkpointReplayRoute = obj2.getCheckpointReplayRoute(obj6);
+          const obj3 = CheckpointSounds;
+          const obj4 = { previousRoute, route: checkpointReplayRoute };
+          const checkpointRouteSounds = obj3.getCheckpointRouteSounds(obj4);
+          if (null != checkpointRouteSounds) {
+            closure_4(checkpointRouteSounds);
+          }
+          closure_2(checkpointReplayRoute);
+        },
+      onShare: function handleShare() {
+          const obj = { character: stateFromStores2, stats: stateFromStores, onForward: handleForward };
+          const obj2 = ActionSheetActionCreatorsDefault;
+          obj2.openLazy(asyncRequire(14277, dependencyMap.paths), "CheckpointShare", obj);
+        },
+      isLastRoute: tmp46
+    };
+    items4[6] = closure_18(tmp2(14486), obj28);
+    const obj30 = { route, children: closure_18(ThemeContextProvider, obj8) };
+    closure_18(ThemeContextProvider, obj8);
+    return closure_18(stateFromStores(14266).CheckpointStepFocusProvider, obj30);
   }
-  items5[5] = result;
-  const obj26 = {
-    activeRoute: route,
-    onBack: function handleBack() {
-      transition(-1);
-    },
-    onNext: function handleNext() {
-      return obj(...arguments);
-    },
-    onReplay: function handleReplay() {
-      obj = HapticUtils;
-      const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_LIGHT);
-      closure_7();
-      const obj2 = CheckpointFlows;
-      const obj3 = { flow: checkpointFlow, stats };
-      closure_3(obj2.getCheckpointReplayRoute(obj3));
-    },
-    onShare: function handleShare() {
-      obj = { character: stateFromStores, stats, onForward: handleForward };
-      const obj2 = ActionSheetActionCreatorsDefault;
-      obj2.openLazy(asyncRequire(13704, dependencyMap.paths), "CheckpointShare", obj);
-    },
-    color: tmp22,
-    shadowColor,
-    backDisabled: tmp40,
-    nextDisabled: tmp42,
-    nextLoading: tmp40,
-    nextBlockedTrait: first1
-  };
-  shadowColor = undefined;
-  const tmp2Result14 = tmp2(tmp3[52]);
-  if (tmp18) {
-    shadowColor = cardColors.shadowColor;
+  sum = null;
+  if (tmp47Result) {
+    sum = first1;
   }
-  items5[6] = obj(tmp2Result14, obj26);
-  const tmp44Result6 = obj(ThemeContextProvider, obj6);
-  return obj(checkpointFlow(tmp3[53]).CheckpointStepFocusProvider, { route, children: tmp44Result6 });
 }
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 ({ ActivityIndicator: metroRequire, View: metroImportDefault } = react_native);
-({ CHECKPOINT_CONTROL_SIZE, CHECKPOINT_LOGO_SIZE, CHECKPOINT_NAV_HEIGHT, CHECKPOINT_PRIMARY: c10 } = CheckpointConstants);
+({ CHECKPOINT_CONTROL_SIZE, CHECKPOINT_NAV_HEIGHT, CHECKPOINT_PRIMARY: c10, CHECKPOINT_LOGO_SIZE } = CheckpointConstants);
+({ CHECKPOINT_BACKGROUND_FADE: unpackModuleId, CHECKPOINT_CHARACTER_PAGE_FADE_IN: closure_12, CHECKPOINT_CHARACTER_PAGE_FADE_OUT: map1, CHECKPOINT_STATS_FADE_IN: closure_14, CHECKPOINT_STATS_FADE_OUT: closure_15, CHECKPOINT_STATS_HIDDEN_SCALE: closure_16 } = CheckpointTransitionConstants);
 const ThemeTypes = Constants.ThemeTypes;
-({ jsx: closure_12, jsxs: map1 } = Fragment);
+({ jsx: closure_18, jsxs: closure_19 } = Fragment);
 let sum = CHECKPOINT_CONTROL_SIZE + nativeDefault.space.PX_16;
 const sum1 = sum + nativeDefault.space.PX_24;
 let createStyles = createStyles_mod;
-let obj = { loader: obj2, container: obj3, layer: { position: "absolute", width: "100%", height: "100%" }, coveredCharacterLayer: { opacity: 0 }, nav: rect, logo: size, headerActions: obj4, customizationSection: { position: "absolute", left: 0, right: 0, bottom: sum1 }, landscapeCustomizationSection: rect1, landscapeStat: rect2 };
+let obj = { loader: obj2, container: obj3, layer: { position: "absolute", width: "100%", height: "100%" }, customizationSection: { position: "absolute", left: 0, right: 0, bottom: sum1 }, landscapeCustomizationSection: rect, landscapeStat: rect1, customizationContent: obj4, landscapeCustomizationContent: { flex: 1 } };
 obj2 = { flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: nativeDefault.colors.BLACK };
 createStyles = createStyles.createStyles;
 obj3 = { height: "100%", backgroundColor: nativeDefault.colors.BLACK };
-rect = { position: "absolute", top: 0, left: nativeDefault.space.PX_16, right: nativeDefault.space.PX_16, height: CHECKPOINT_NAV_HEIGHT, flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
-size = { width: CHECKPOINT_LOGO_SIZE + 6, height: CHECKPOINT_LOGO_SIZE + 6, margin: -3 };
-obj4 = { flexDirection: "row", gap: nativeDefault.space.PX_12 };
-rect1 = { top: (CHECKPOINT_NAV_HEIGHT + CheckpointHeaderButton.CHECKPOINT_HEADER_BUTTON_SIZE) / 2, bottom: CHECKPOINT_CONTROL_SIZE + nativeDefault.space.PX_16, left: "59%", marginLeft: 0 };
-rect2 = { position: "absolute", top: result + nativeDefault.space.PX_32, left: nativeDefault.space.PX_16 };
+rect = { top: (CHECKPOINT_NAV_HEIGHT + CheckpointHeaderButton.CHECKPOINT_HEADER_BUTTON_SIZE) / 2, bottom: CHECKPOINT_CONTROL_SIZE + nativeDefault.space.PX_16, left: "59%", marginLeft: 0 };
+rect1 = { position: "absolute", top: result + nativeDefault.space.PX_32, left: nativeDefault.space.PX_16 };
 result = (CHECKPOINT_NAV_HEIGHT + CHECKPOINT_LOGO_SIZE) / 2;
-let closure_15 = createStyles(obj);
-size = size_mod;
+obj4 = { gap: nativeDefault.space.PX_12 };
+let closure_21 = createStyles(obj);
 const result1 = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointModal.tsx");
 
 export default function CheckpointLoaderWrapper(arg0) {
-  let tmp4Result;
+  let tmp5Result;
   const tmp = useCheckpointPreloaderDefault();
   const obj = useCheckpointStepAnalytics;
   const checkpointCloseAnalytics = obj.useCheckpointCloseAnalytics();
+  useCheckpointForegroundTrackingDefault();
   if (tmp) {
     const obj2 = {};
     const merged = Object.assign(arg0);
-    tmp4Result = tmp4(CheckpointModal, obj2);
+    tmp5Result = tmp5(CheckpointModal, obj2);
   } else {
-    const obj3 = { style: tmp3.loader, children: authStore2(metroRequire, {}) };
-    tmp4Result = tmp4(metroImportDefault, obj3);
+    const obj3 = { style: tmp4.loader, children: authStore4(metroRequire, {}) };
+    tmp5Result = tmp5(metroImportDefault, obj3);
   }
-  return tmp4Result;
+  return tmp5Result;
 };

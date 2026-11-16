@@ -1,17 +1,17 @@
-// Module ID: 17078
-// Function ID: 17079
+// Module ID: 17354
+// Function ID: 17355
 // Name: ExplicitMediaFiltersFriendsDMsSetting
-// Dependencies: [8536, 17079, 8791, 7567, 1113, 17080, 11716, 17082, 2]
+// Dependencies: [9202, 17355, 8853, 8641, 1113, 17356, 12406, 17358, 2]
 
-// Module 17078 (ExplicitMediaFiltersFriendsDMsSetting)
+// Module 17354 (ExplicitMediaFiltersFriendsDMsSetting)
 import intl4 from "intl" /* 1113 */;
-import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 7567 */;
-import SettingsConstants from "SettingsConstants" /* 8536 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8791 */;
-import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 17079 */;
-import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 17080 */;
-import useSensitiveMediaSettingDisabled from "useSensitiveMediaSettingDisabled" /* 17082 */;
-import SettingBuilders from "SettingBuilders" /* 11716 */;
+import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 8641 */;
+import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8853 */;
+import SettingsConstants from "SettingsConstants" /* 9202 */;
+import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 17355 */;
+import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 17356 */;
+import useSensitiveMediaSettingDisabled from "useSensitiveMediaSettingDisabled" /* 17358 */;
+import SettingBuilders from "SettingBuilders" /* 12406 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

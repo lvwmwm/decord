@@ -1,10 +1,10 @@
-// Module ID: 7895
-// Function ID: 7896
+// Module ID: 8751
+// Function ID: 8752
 // Name: MobileAppDatabaseManager
-// Dependencies: [7896, 7898, 7899, 6888, 7901, 7902, 7903, 6928, 7904, 7905, 7765, 7906, 7907, 7778, 7777, 7779, 7908, 2]
+// Dependencies: [8752, 8754, 8755, 6973, 8757, 8758, 8759, 7013, 8760, 8761, 8680, 8762, 8763, 8693, 8692, 8694, 8764, 2]
 
-// Module 7895 (MobileAppDatabaseManager)
-import AppDatabaseManager from "AppDatabaseManager" /* 7896 */;
+// Module 8751 (MobileAppDatabaseManager)
+import AppDatabaseManager from "AppDatabaseManager" /* 8752 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -20,7 +20,7 @@ const obj = {
 items[0] = obj;
 items[1] = {
   name: "GuildBasicChannels",
-  actions: ["BACKGROUND_SYNC", "CHANNEL_CREATE", "CHANNEL_DELETE", "CHANNEL_UPDATES", "CONNECTION_OPEN", "GUILD_CREATE", "GUILD_DELETE", "GUILD_MEMBER_UPDATE", "GUILD_ROLE_UPDATE", "GUILD_UPDATE", "POST_CONNECTION_OPEN", "WRITE_CACHES"],
+  actions: ["BACKGROUND_SYNC", "CHANNEL_CREATE", "CHANNEL_DELETE", "CHANNEL_UPDATES", "CONNECTION_OPEN", "GUILD_CREATE", "GUILD_DELETE", "GUILD_MEMBER_UPDATE", "GUILD_ROLE_DELETE", "GUILD_ROLE_UPDATE", "GUILD_UPDATE", "POST_CONNECTION_OPEN", "WRITE_CACHES"],
   require() {
     return require("GuildBasicChannels").default;
   }

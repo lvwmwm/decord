@@ -1,18 +1,18 @@
-// Module ID: 11840
-// Function ID: 11841
+// Module ID: 12564
+// Function ID: 12565
 // Name: GameOrganizationInvitePickerRow
-// Dependencies: [19, 9312, 7989, 21, 5170, 575, 11841, 7071, 5874, 7432, 6191, 8765, 5783, 1113, 2530, 9317, 2]
+// Dependencies: [19, 12565, 8842, 21, 5306, 575, 12566, 7443, 6010, 7928, 6327, 7436, 5919, 1113, 2565, 12567, 2]
 
-// Module 11840 (GameOrganizationInvitePickerRow)
+// Module 12564 (GameOrganizationInvitePickerRow)
 import nativeDefault from "native" /* 575 */;
-import FastImageDefault from "FastImage" /* 5874 */;
-import TableRow2 from "TableRow" /* 7071 */;
-import Constants from "Constants" /* 7989 */;
-import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 9312 */;
-import getGameOrganizationInviteSendStateKey from "getGameOrganizationInviteSendStateKey" /* 11841 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import TableRow2 from "TableRow" /* 7443 */;
+import Constants from "Constants" /* 8842 */;
+import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 12565 */;
+import getGameOrganizationInviteSendStateKey from "getGameOrganizationInviteSendStateKey" /* 12566 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 const getGameOrganizationInviteSendStateKeyDefault = getGameOrganizationInviteSendStateKey;
@@ -21,9 +21,9 @@ let metroImportDefault;
 let metroRequire;
 let size;
 let tmp2;
-const _modDef2530 = tmp2(2530);
-const AssetRegistryDefault = tmp2(7432);
-const InviteButtonDefault = tmp2(9317);
+const _modDef2565 = tmp2(2565);
+const AssetRegistryDefault = tmp2(7928);
+const InviteButtonDefault = tmp2(12567);
 let closure_4 = InstantInviteSendStateStore.useInstantInviteSendStates;
 const InviteSendStates = Constants.InviteSendStates;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -75,12 +75,12 @@ const memoResult = react.memo(function GameOrganizationInvitePickerRow(organizat
   if (null != memberCount) {
     if (null != maxMembers) {
       const obj5 = { direction: "horizontal", spacing: nativeDefault.space.PX_4, align: "center", children: items1 };
-      const Stack = tmp5(6191).Stack;
+      const Stack = tmp5(6327).Stack;
       const obj6 = { size: "xs", color: nativeDefault.colors.ICON_MUTED };
-      const GroupIcon = tmp5(8765).GroupIcon;
+      const GroupIcon = tmp5(7436).GroupIcon;
       items1 = [metroRequire(GroupIcon, obj6), ];
-      const obj7 = { variant: "body-xs/medium", color: "text-muted", children: intl.formatToPlainString(_modDef2530.VuENGl, obj8) };
-      const Text = tmp5(5783).Text;
+      const obj7 = { variant: "body-xs/medium", color: "text-muted", children: intl.formatToPlainString(_modDef2565.VuENGl, obj8) };
+      const Text = tmp5(5919).Text;
       intl = tmp5(1113).intl;
       obj8 = { count: memberCount, max: maxMembers };
       items1[1] = metroRequire(Text, obj7);

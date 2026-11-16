@@ -1,11 +1,11 @@
-// Module ID: 5861
-// Function ID: 5862
+// Module ID: 5997
+// Function ID: 5998
 // Name: intlFormatDate
-// Dependencies: [2186, 5858, 1113, 2]
+// Dependencies: [2189, 5994, 1113, 2]
 // Exports: makeFormatter
 
-// Module 5861 (intlFormatDate)
-import LocaleStore from "LocaleStore" /* 2186 */;
+// Module 5997 (intlFormatDate)
+import LocaleStore from "LocaleStore" /* 2189 */;
 import size from "module_2" /* 2 */;
 
 function makeIntlFormatter(locale, arg1) {

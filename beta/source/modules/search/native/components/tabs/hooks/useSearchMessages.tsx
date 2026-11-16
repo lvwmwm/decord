@@ -1,13 +1,13 @@
-// Module ID: 19230
-// Function ID: 19231
+// Module ID: 19542
+// Function ID: 19543
 // Name: useSearchMessages
-// Dependencies: [6951, 14166, 504, 14159, 2]
+// Dependencies: [7037, 14754, 504, 14747, 2]
 // Exports: useSearchMessages
 
-// Module 19230 (useSearchMessages)
-import SearchUtils from "SearchUtils" /* 14159 */;
-import SearchMessageStore from "SearchMessageStore" /* 6951 */;
-import SearchQueryStore from "SearchQueryStore" /* 14166 */;
+// Module 19542 (useSearchMessages)
+import SearchUtils from "SearchUtils" /* 14747 */;
+import SearchMessageStore from "SearchMessageStore" /* 7037 */;
+import SearchQueryStore from "SearchQueryStore" /* 14754 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

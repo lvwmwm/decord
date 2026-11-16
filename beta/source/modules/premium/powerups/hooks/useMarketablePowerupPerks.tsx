@@ -1,14 +1,14 @@
-// Module ID: 15784
-// Function ID: 15785
+// Module ID: 16002
+// Function ID: 16003
 // Name: useMarketablePowerupPerks
-// Dependencies: [19, 5377, 5378, 5381, 504, 14422, 5383, 2]
+// Dependencies: [19, 5513, 5514, 5517, 504, 10787, 5519, 2]
 // Exports: default
 
-// Module 15784 (useMarketablePowerupPerks)
-import Powerups from "Powerups" /* 5381 */;
+// Module 16002 (useMarketablePowerupPerks)
+import Powerups from "Powerups" /* 5517 */;
 import react from "react" /* 19 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 5377 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5378 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 5513 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5514 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -37,7 +37,7 @@ export default function useMarketablePowerupPerks(guildId) {
     }
     return tmp2;
   });
-  let tmp2 = stateFromStores(14422)(guildId);
+  let tmp2 = stateFromStores(10787)(guildId);
   dependencyMap = tmp2;
   const obj2 = require("ServerThemeExperiment");
   const serverThemeRollbackEnabled = obj2.useServerThemeRollbackEnabled(guildId, "useMarketablePowerupPerks");

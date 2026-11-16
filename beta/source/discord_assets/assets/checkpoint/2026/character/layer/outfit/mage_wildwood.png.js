@@ -1,8 +1,8 @@
-// Module ID: 6451
-// Function ID: 6452
+// Module ID: 6587
+// Function ID: 6588
 // Dependencies: [2]
 
-// Module 6451
+// Module 6587
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/outfit/mage_wildwood.png.js");

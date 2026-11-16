@@ -1,15 +1,15 @@
-// Module ID: 9255
-// Function ID: 9256
+// Module ID: 10254
+// Function ID: 10255
 // Name: GameAutocompleteActionCreators
-// Dependencies: [5, 8784, 1072, 8785, 572, 1282, 2]
+// Dependencies: [5, 9378, 1072, 9379, 572, 1285, 2]
 // Exports: fetchGameAutocomplete
 
-// Module 9255 (GameAutocompleteActionCreators)
+// Module 10254 (GameAutocompleteActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8785 */;
+import GameAutocompleteUtils from "GameAutocompleteUtils" /* 9379 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GameAutocompleteStore from "GameAutocompleteStore" /* 8784 */;
+import GameAutocompleteStore from "GameAutocompleteStore" /* 9378 */;
 import size from "module_2" /* 2 */;
 
 let closure_3, closure_4, closure_5, closure_6, filterGroup;
@@ -30,7 +30,7 @@ let obj = function _fetchGameAutocomplete() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -103,7 +103,7 @@ let obj = function _fetchGameAutocomplete() {
             c7 = 0;
           }
           c9 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         } catch (tmp28) {
           closure_6 = tmp28;
           if (0 === c7) {

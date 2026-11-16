@@ -1,11 +1,11 @@
-// Module ID: 15245
-// Function ID: 15246
+// Module ID: 12136
+// Function ID: 12137
 // Name: useAreGamesLoading
-// Dependencies: [2138, 504, 2]
+// Dependencies: [2141, 504, 2]
 // Exports: default
 
-// Module 15245 (useAreGamesLoading)
-import GameStore from "GameStore" /* 2138 */;
+// Module 12136 (useAreGamesLoading)
+import GameStore from "GameStore" /* 2141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,14 +1,14 @@
-// Module ID: 13672
-// Function ID: 13673
+// Module ID: 15184
+// Function ID: 15185
 // Name: MosaicMediaType
-// Dependencies: [1072, 6215, 1403, 13673, 2]
+// Dependencies: [1072, 6351, 1406, 12522, 2]
 // Exports: getMosaicMediaTypeForAttachment, getMosaicMediaTypeForUnfurledMediaItem, isVisualMedia
 
-// Module 13672 (MosaicMediaType)
+// Module 15184 (MosaicMediaType)
 import Constants from "Constants" /* 1072 */;
-import FlagUtils from "FlagUtils" /* 1403 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 6215 */;
-import PlaintextFilePreviewHelpers from "PlaintextFilePreviewHelpers" /* 13673 */;
+import FlagUtils from "FlagUtils" /* 1406 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 6351 */;
+import PlaintextFilePreviewHelpers from "PlaintextFilePreviewHelpers" /* 12522 */;
 import size from "module_2" /* 2 */;
 
 const MessageAttachmentFlags = Constants.MessageAttachmentFlags;
@@ -88,7 +88,7 @@ export function getMosaicMediaTypeForUnfurledMediaItem(arg0) {
           if (obj.isImageContentType(contentType)) {
             return "IMAGE";
           } else {
-            const tmpResult = tmp(6215);
+            const tmpResult = tmp(6351);
             if (tmpResult.isVideoContentType(contentType)) {
               return "VIDEO";
             }

@@ -1,10 +1,10 @@
-// Module ID: 7785
-// Function ID: 7786
+// Module ID: 8700
+// Function ID: 8701
 // Name: MemberSafetyElasticSearchQueryTypes
 // Dependencies: [1089, 2]
 // Exports: createMemberSearchCursor
 
-// Module 7785 (MemberSafetyElasticSearchQueryTypes)
+// Module 8700 (MemberSafetyElasticSearchQueryTypes)
 import DurationsDefault from "Durations" /* 1089 */;
 import size from "module_2" /* 2 */;
 

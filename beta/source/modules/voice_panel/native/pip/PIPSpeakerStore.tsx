@@ -1,15 +1,15 @@
-// Module ID: 15972
-// Function ID: 15973
+// Module ID: 16245
+// Function ID: 16246
 // Name: PIPSpeakerStore
-// Dependencies: [6931, 5925, 6844, 550, 504, 572, 2]
+// Dependencies: [7016, 6061, 6931, 550, 504, 572, 2]
 
-// Module 15972 (PIPSpeakerStore)
+// Module 16245 (PIPSpeakerStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import throttleDefault from "throttle" /* 550 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6931 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5925 */;
-import SpeakingStore from "SpeakingStore" /* 6844 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 7016 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
+import SpeakingStore from "SpeakingStore" /* 6931 */;
 import size from "module_2" /* 2 */;
 
 let c0;

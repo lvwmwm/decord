@@ -1,19 +1,19 @@
-// Module ID: 9883
-// Function ID: 9884
+// Module ID: 13480
+// Function ID: 13481
 // Name: DetailsHeader
-// Dependencies: [32, 19, 17, 21, 5170, 575, 1652, 9884, 11670, 8877, 6819, 7055, 5783, 1113, 5402, 5405, 1705, 7137, 5747, 1092, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 575, 1655, 12698, 13481, 8560, 6826, 7416, 5919, 1113, 5538, 5541, 1708, 7533, 5883, 1092, 2]
 
-// Module 9883 (DetailsHeader)
+// Module 13480 (DetailsHeader)
 import nativeDefault from "native" /* 575 */;
-import _mod1705 from "module_1705" /* 1705 */;
-import timing_timing from "timing/timing" /* 5402 */;
-import timingPresets from "timingPresets" /* 5405 */;
-import BioMarkupUtils from "BioMarkupUtils" /* 11670 */;
+import _mod1708 from "module_1708" /* 1708 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import timingPresets from "timingPresets" /* 5541 */;
+import BioMarkupUtils from "BioMarkupUtils" /* 13481 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, set, set2;
@@ -91,7 +91,7 @@ const memoResult = react.memo(function DetailsHeader(viewContainerStyle) {
   let closure_18;
   viewContainerStyle = viewContainerStyle.viewContainerStyle;
   let tmp = ref2();
-  let obj = ref(9884);
+  let obj = ref(12698);
   const isPartnerApplicationResult = obj.isPartnerApplication(application);
   ref = react.useRef(null);
   let tmp7 = first1(react.useState(false), 2);
@@ -101,12 +101,12 @@ const memoResult = react.memo(function DetailsHeader(viewContainerStyle) {
   first1 = tmp9[0];
   react = tmp9[1];
   let closure_5 = react.useRef(true);
-  const obj3 = ref(1652);
+  const obj3 = ref(1655);
   const sharedValue = obj3.useSharedValue(null);
   let items = [ref3, sharedValue];
   let c0;
   [tmp12, tmp13] = items;
-  const obj4 = ref(1652);
+  const obj4 = ref(1655);
   class DetailsHeaderTsx1 {
     constructor() {
       const obj = { height: _undefined.get() };
@@ -118,9 +118,9 @@ const memoResult = react.memo(function DetailsHeader(viewContainerStyle) {
   DetailsHeaderTsx1.__workletHash = 9372666213791;
   DetailsHeaderTsx1.__initData = tmp12;
   const animatedStyle = obj4.useAnimatedStyle(DetailsHeaderTsx1);
-  const tmp2Result = ref(9884);
+  const tmp2Result = ref(12698);
   const sectionName = tmp2Result.getSectionName(application);
-  const tmp2Result3 = ref(9884);
+  const tmp2Result3 = ref(12698);
   str = tmp2Result3.getSectionDescription(application);
   let tmp30Result5 = null != str;
   if (tmp30Result5) {
@@ -148,10 +148,10 @@ const memoResult = react.memo(function DetailsHeader(viewContainerStyle) {
     }
     return result;
   }, items2);
-  const tmp2Result4 = ref(8877);
+  const tmp2Result4 = ref(8560);
   isScreenLandscape = tmp2Result4.useIsScreenLandscape();
   const tmp25 = first;
-  const tmp26 = first(6819)(isScreenLandscape);
+  const tmp26 = first(6826)(isScreenLandscape);
   closure_18 = tmp26;
   const items3 = [isScreenLandscape, tmp26];
   const effect = obj2.useEffect(() => {
@@ -162,7 +162,7 @@ const memoResult = react.memo(function DetailsHeader(viewContainerStyle) {
     }
   }, items3);
   let tmp29 = first;
-  first(7055)(ref);
+  first(7416)(ref);
   if (first) {
     tmp29 = !first1;
   }
@@ -186,18 +186,18 @@ const memoResult = react.memo(function DetailsHeader(viewContainerStyle) {
   items5 = [tmp.container, mainContainerStyle];
   let tmp32Result = !hideName;
   const obj7 = { style: tmp.nameContainer, children: items6 };
-  const View = tmp25(1652).View;
+  const View = tmp25(1655).View;
   const tmp31 = num3;
   if (!hideName) {
     const obj8 = { style: tmp.nameText, variant: "heading-lg/semibold", color: "text-default", lineClamp: 1, children: sectionName };
-    tmp32Result = tmp32(tmp2(5783).Heading, obj8);
+    tmp32Result = tmp32(tmp2(5919).Heading, obj8);
   }
   items6 = [tmp32Result, ];
   let tmp32Result5 = null;
   if (isPartnerApplicationResult) {
     const obj9 = { style: tmp.partnerLabelWrapper, children: num2(Text, obj10) };
     obj10 = { variant: "body-xs/medium", color: "text-default", children: intl.string(ref(1113).t.LO4f0P) };
-    Text = tmp2(5783).Text;
+    Text = tmp2(5919).Text;
     intl = tmp2(1113).intl;
     tmp32Result5 = tmp32(tmp33, obj9);
   }
@@ -227,7 +227,7 @@ const memoResult = react.memo(function DetailsHeader(viewContainerStyle) {
               const current = ref2.current;
               const withTiming = timing_timing.withTiming;
               const timingStandard = timingPresets.timingStandard;
-              const items = [closure_14, _mod1705.scheduleOnRN, _undefined];
+              const items = [closure_14, _mod1708.scheduleOnRN, _undefined];
               let c0;
               let c1;
               [tmp25, tmp26, tmp27] = items;
@@ -254,7 +254,7 @@ const memoResult = react.memo(function DetailsHeader(viewContainerStyle) {
       accessibilityRole: "button",
       children: items12
     };
-    const tmp25Result = tmp25(7137);
+    const tmp25Result = tmp25(7533);
     if (tmp29) {
       const obj13 = { style: absoluteFill, children: items8 };
       obj12.style = tmp.maskFill;
@@ -269,7 +269,7 @@ const memoResult = react.memo(function DetailsHeader(viewContainerStyle) {
       const obj16 = { style: tmp.maskFill };
       items10 = [num2(tmp33, obj16), , ];
       const obj17 = { start: ref(1092).HorizontalGradient.START, end: ref(1092).HorizontalGradient.END, colors, style: tmp.maskFade };
-      const tmp25Result2 = tmp25(5747);
+      const tmp25Result2 = tmp25(5883);
       items10[1] = num2(tmp25Result2, obj17);
       if (num2 == null) {
         num2 = 0;
@@ -285,7 +285,7 @@ const memoResult = react.memo(function DetailsHeader(viewContainerStyle) {
       tmp32Result6 = tmp32(tmp33, obj12);
     }
     const obj20 = { maskElement: tmp32Result6, children: num2(Text2, obj21) };
-    Text2 = tmp2(5783).Text;
+    Text2 = tmp2(5919).Text;
     obj21 = { variant: "body-sm/medium", color: "text-default", lineClamp: num4, children: memo };
     items12 = [num2(tmp25Result, obj20), , ];
     let tmp32Result7 = null;
@@ -301,7 +301,7 @@ const memoResult = react.memo(function DetailsHeader(viewContainerStyle) {
         color: "text-brand",
         children: items13
       };
-      Text3 = tmp2(5783).Text;
+      Text3 = tmp2(5919).Text;
       const intl2 = tmp2(1113).intl;
       items13 = ["\u2026 ", intl2.string(tmp2(1113).t["OBCR+p"])];
       tmp32Result7 = tmp32(tmp33, obj22);
@@ -312,7 +312,7 @@ const memoResult = react.memo(function DetailsHeader(viewContainerStyle) {
       tmp32Result8 = null;
       if (first1) {
         const obj24 = { variant: "body-sm/medium", color: "text-brand", style: tmp.collapseDescriptionCTA, children: intl3.string(ref(1113).t.D5xGUK) };
-        const Text4 = tmp2(5783).Text;
+        const Text4 = tmp2(5919).Text;
         intl3 = tmp2(1113).intl;
         tmp32Result8 = tmp32(Text4, obj24);
       }
@@ -339,7 +339,7 @@ const memoResult = react.memo(function DetailsHeader(viewContainerStyle) {
     let tmp32Result9 = !hideName;
     if (tmp32Result9) {
       const obj26 = { variant: "heading-lg/semibold", color: "text-default", children: sectionName };
-      tmp32Result9 = tmp32(tmp2(5783).Heading, obj26);
+      tmp32Result9 = tmp32(tmp2(5919).Heading, obj26);
     }
     items16 = [tmp32Result9, ];
     if (tmp30Result5) {
@@ -364,9 +364,9 @@ const memoResult = react.memo(function DetailsHeader(viewContainerStyle) {
         children: memo
       };
       tmp47 = !hideName && tmp.descriptionContainer;
-      items17 = [num2(tmp2(5783).Text, obj28), ];
+      items17 = [num2(tmp2(5919).Text, obj28), ];
       const obj29 = { variant: "body-sm/medium", color: "text-brand", style: tmp.collapseDescriptionCTA, children: intl4.string(ref(1113).t.D5xGUK) };
-      const Text5 = tmp2(5783).Text;
+      const Text5 = tmp2(5919).Text;
       intl4 = tmp2(1113).intl;
       items17[1] = num2(Text5, obj29);
       tmp30Result5 = tmp30(tmp33, obj27);

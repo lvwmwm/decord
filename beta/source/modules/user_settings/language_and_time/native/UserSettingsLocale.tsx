@@ -1,21 +1,21 @@
-// Module ID: 17773
-// Function ID: 17774
+// Module ID: 18047
+// Function ID: 18048
 // Name: UserSettingsLocale
-// Dependencies: [5, 19, 17, 2187, 2186, 21, 5170, 575, 6096, 504, 7388, 7157, 1113, 7160, 5874, 17774, 2]
+// Dependencies: [5, 19, 17, 2190, 2189, 21, 5306, 575, 6232, 504, 7415, 7745, 1113, 7747, 6010, 18048, 2]
 
-// Module 17773 (UserSettingsLocale)
+// Module 18047 (UserSettingsLocale)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import IntlLoaderStore from "IntlLoaderStore" /* 2187 */;
-import FastImageDefault from "FastImage" /* 5874 */;
-import TableRadioRow2 from "TableRadioRow" /* 7160 */;
-import flags from "flags" /* 17774 */;
+import IntlLoaderStore from "IntlLoaderStore" /* 2190 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import TableRadioRow2 from "TableRadioRow" /* 7747 */;
+import flags from "flags" /* 18048 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2186 */;
-import createStyles from "createStyles" /* 5170 */;
+import LocaleStore from "LocaleStore" /* 2189 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -38,7 +38,7 @@ let obj = function _handleLanguageChange() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       try {
@@ -70,7 +70,7 @@ let obj = function _handleLanguageChange() {
           obj = closure_130_1(closure_130_2[8]);
           obj.updateLocale(closure_0);
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } catch (tmp13) {
         c4 = 3;

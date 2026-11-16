@@ -1,18 +1,18 @@
-// Module ID: 11803
-// Function ID: 11804
+// Module ID: 12506
+// Function ID: 12507
 // Name: contentHandlers
-// Dependencies: [5, 10334, 9984, 9056, 5866, 11804, 10338, 8854, 7445, 5406, 11809, 2118, 11, 4995, 1113, 7451, 5868, 6122, 11853, 2]
+// Dependencies: [5, 12504, 9100, 7657, 6002, 12507, 12463, 8476, 7937, 5542, 12524, 2121, 11, 5131, 1113, 7943, 6004, 6258, 12574, 2]
 
-// Module 11803 (contentHandlers)
+// Module 12506 (contentHandlers)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
-import ToastUtils from "ToastUtils" /* 5868 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6122 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7445 */;
-import ClipboardUtils from "ClipboardUtils" /* 7451 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8854 */;
-import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 10334 */;
-import showEmojiActionSheetDefault from "showEmojiActionSheet" /* 11853 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import ToastUtils from "ToastUtils" /* 6004 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6258 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
+import ClipboardUtils from "ClipboardUtils" /* 7943 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;
+import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 12504 */;
+import showEmojiActionSheetDefault from "showEmojiActionSheet" /* 12574 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -49,7 +49,7 @@ let obj = {
     let roleId;
     let roleName;
     let userId;
-    let obj = parsedUserId(10338);
+    let obj = parsedUserId(12463);
     const nativeSyntheticEventData = obj.getNativeSyntheticEventData(nativeEvent);
     ({ userId, channelId, roleName, parsedUserId } = nativeSyntheticEventData);
     ({ roleId, guildId } = nativeSyntheticEventData);
@@ -64,7 +64,7 @@ let obj = {
         if (null != guildId) {
           const obj3 = { guildId, roleId, channelId };
           const obj7 = ActionSheetActionCreatorsDefault;
-          obj7.openLazy(parsedUserId(2118)(11809, dependencyMap.paths), "RoleMembersActionSheet", obj3);
+          obj7.openLazy(parsedUserId(2121)(12524, dependencyMap.paths), "RoleMembersActionSheet", obj3);
         }
       }
       if ("@everyone" === roleName) {
@@ -72,13 +72,13 @@ let obj = {
           const openLazy = ActionSheetActionCreatorsDefault.openLazy;
           const obj4 = { guildId, roleId: obj6.castGuildIdAsEveryoneGuildRoleId(guildId), channelId };
           ActionSheetActionCreatorsDefault;
-          const tmp12 = parsedUserId(2118)(11809, dependencyMap.paths);
+          const tmp12 = parsedUserId(2121)(12524, dependencyMap.paths);
           obj6 = SnowflakeUtilsDefault;
           openLazy(tmp12, "RoleMembersActionSheet", obj4);
         }
       }
       if (null == roleName) {
-        const DeveloperMode = tmp(4995).DeveloperMode;
+        const DeveloperMode = tmp(5131).DeveloperMode;
         if (DeveloperMode.getSetting()) {
           let obj9;
           if (null != parsedUserId) {
@@ -166,7 +166,7 @@ let closure_6 = _asyncToGenerator(async (arg0) => {
     await "HermesInternal";
     closure_1 = tmp;
     attachmentUrl = nativeEvent.nativeEvent.data.attachmentUrl;
-    return "flexDirection";
+    return "Path";
   })();
   iter.next();
   return iter;
@@ -215,7 +215,7 @@ let closure_5 = _asyncToGenerator(async (arg0) => {
     await "HermesInternal";
     url = tmp;
     ({ attachmentUrl: c0, fileName: c1 } = nativeEvent.nativeEvent.data);
-    return "flexDirection";
+    return "Path";
   })();
   iter.next();
   return iter;
@@ -258,7 +258,7 @@ let closure_4 = _asyncToGenerator(async (arg0) => {
     await "HermesInternal";
     urlString = tmp;
     attachmentUrl = nativeEvent.nativeEvent.data.attachmentUrl;
-    return "flexDirection";
+    return "Path";
   })();
   iter.next();
   return iter;

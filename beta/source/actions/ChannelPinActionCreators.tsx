@@ -1,11 +1,11 @@
-// Module ID: 14800
-// Function ID: 14801
+// Module ID: 12646
+// Function ID: 12647
 // Name: ChannelPinActionCreators
-// Dependencies: [5, 14801, 1072, 8304, 1282, 6611, 1113, 6122, 572, 2]
+// Dependencies: [5, 12647, 1072, 8864, 1285, 6747, 1113, 6258, 572, 2]
 
-// Module 14800 (ChannelPinActionCreators)
+// Module 12646 (ChannelPinActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ChannelPinsStore2 from "ChannelPinsStore" /* 14801 */;
+import ChannelPinsStore2 from "ChannelPinsStore" /* 12647 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -39,7 +39,7 @@ let obj = {
           let obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -145,7 +145,7 @@ let obj = {
               show(obj3);
             });
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } catch (tmp9) {
           c3 = 3;
@@ -168,7 +168,7 @@ let obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -218,7 +218,7 @@ let obj = {
               return show(obj);
             });
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } catch (tmp7) {
           c3 = 3;

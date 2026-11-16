@@ -1,16 +1,16 @@
-// Module ID: 20021
-// Function ID: 20022
+// Module ID: 19020
+// Function ID: 19021
 // Name: InterestGuildActions
-// Dependencies: [5, 5204, 5021, 1072, 5206, 6990, 6994, 5868, 1113, 2534, 2]
+// Dependencies: [5, 5340, 5157, 1072, 5342, 6907, 6912, 6004, 1113, 2569, 2]
 // Exports: getInterestGuildJoinsInFlight, joinInterestGuild
 
-// Module 20021 (InterestGuildActions)
+// Module 19020 (InterestGuildActions)
 import Constants from "Constants" /* 1072 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 5206 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6990 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5342 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6907 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5204 */;
-import GuildMembershipStore from "GuildMembershipStore" /* 5021 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5340 */;
+import GuildMembershipStore from "GuildMembershipStore" /* 5157 */;
 import size from "module_2" /* 2 */;
 
 let c7, c8, closure_5, request;
@@ -31,7 +31,7 @@ let obj = function _joinInterestGuild() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       let c6;
@@ -159,7 +159,7 @@ let obj = function _joinInterestGuild() {
           }
         }
         c8 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       } catch (tmp85) {
         closure_5 = tmp85;
         if (0 === c6) {

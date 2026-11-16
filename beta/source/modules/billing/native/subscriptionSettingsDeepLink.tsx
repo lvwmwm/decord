@@ -1,15 +1,15 @@
-// Module ID: 16155
-// Function ID: 16156
+// Module ID: 16434
+// Function ID: 16435
 // Name: subscriptionSettingsDeepLink
-// Dependencies: [5, 2176, 1072, 7668, 16156, 5406, 1113, 1252, 6621, 2]
+// Dependencies: [5, 2179, 1072, 8604, 16435, 5542, 1113, 1256, 6757, 2]
 // Exports: openSubscriptionSettingsFromDeepLink
 
-// Module 16155 (subscriptionSettingsDeepLink)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6621 */;
-import openUserSettings from "openUserSettings" /* 7668 */;
+// Module 16434 (subscriptionSettingsDeepLink)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6757 */;
+import openUserSettings from "openUserSettings" /* 8604 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SubscriptionStore from "SubscriptionStore" /* 2176 */;
+import SubscriptionStore from "SubscriptionStore" /* 2179 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -80,7 +80,7 @@ let obj = function _openSubscriptionSettingsFromDeepLink() {
         let obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       let c3;
@@ -114,7 +114,7 @@ let obj = function _openSubscriptionSettingsFromDeepLink() {
           closure_130_11();
           closure_130_8();
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         } else if (arg0 === 1) {
           c5 = 3;
           throw value;
@@ -142,7 +142,7 @@ let obj = function _openSubscriptionSettingsFromDeepLink() {
             showSubscriptionPicker();
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
         const tmp28 = hasGuild;
         if (tmp28) {

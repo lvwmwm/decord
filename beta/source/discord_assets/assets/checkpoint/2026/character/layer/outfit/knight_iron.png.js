@@ -1,8 +1,8 @@
-// Module ID: 6463
-// Function ID: 6464
+// Module ID: 6599
+// Function ID: 6600
 // Dependencies: [2]
 
-// Module 6463
+// Module 6599
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/outfit/knight_iron.png.js");

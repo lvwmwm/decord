@@ -1,13 +1,13 @@
-// Module ID: 18822
-// Function ID: 18823
+// Module ID: 19138
+// Function ID: 19139
 // Name: NonCollapsableGestureDetector
-// Dependencies: [109, 19, 17, 21, 5452, 2]
+// Dependencies: [109, 19, 17, 21, 5588, 2]
 // Exports: NonCollapsableGestureDetector
 
-// Module 18822 (NonCollapsableGestureDetector)
+// Module 19138 (NonCollapsableGestureDetector)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5452 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5588 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

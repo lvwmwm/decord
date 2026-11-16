@@ -1,18 +1,8 @@
 // Module ID: 16520
 // Function ID: 16521
-// Dependencies: [16521]
+// Dependencies: []
 
 // Module 16520
-import _mod16521 from "module_16521" /* 16521 */;
+const tmp = Number.MAX_SAFE_INTEGER || 9007199254740991;
 
-
-export default (arg0) => {
-  let num = 0;
-  {
-    num = 0;
-    if (0 !== +arg0) {
-      num = _mod16521(tmp);
-    }
-  }
-  return num;
-};
+export default { MAX_LENGTH: 256, MAX_SAFE_COMPONENT_LENGTH: 16, MAX_SAFE_BUILD_LENGTH: 250, MAX_SAFE_INTEGER: tmp, RELEASE_TYPES: ["major", "premajor", "minor", "preminor", "patch", "prepatch", "prerelease"], SEMVER_SPEC_VERSION: "2.0.0", FLAG_INCLUDE_PRERELEASE: 1, FLAG_LOOSE: 2 };

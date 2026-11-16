@@ -1,16 +1,16 @@
-// Module ID: 13721
-// Function ID: 13722
+// Module ID: 14290
+// Function ID: 14291
 // Name: useCheckpointRoute
-// Dependencies: [32, 19, 13699, 6599, 13718, 13701, 2]
+// Dependencies: [32, 19, 14253, 6735, 14255, 14260, 2]
 // Exports: default
 
-// Module 13721 (useCheckpointRoute)
-import CheckpointNavigation from "CheckpointNavigation" /* 6599 */;
-import CheckpointActionCreators from "CheckpointActionCreators" /* 13701 */;
-import CheckpointFlows from "CheckpointFlows" /* 13718 */;
+// Module 14290 (useCheckpointRoute)
+import CheckpointNavigation from "CheckpointNavigation" /* 6735 */;
+import CheckpointFlows from "CheckpointFlows" /* 14255 */;
+import CheckpointActionCreators from "CheckpointActionCreators" /* 14260 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import CheckpointStore from "CheckpointStore" /* 13699 */;
+import CheckpointStore from "CheckpointStore" /* 14253 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/checkpoint/hooks/useCheckpointRoute.tsx");
@@ -20,16 +20,20 @@ export default function useCheckpointRoute(arg0) {
   let tmp3;
   let closure_0 = arg0;
   [first, tmp3] = react.useState(() => {
-    const progress = CheckpointStore.progress;
-    const stats = CheckpointStore.stats;
+    let character;
+    let isCharacterCreatorEnabled;
+    let progress;
+    let stats;
+    ({ character, progress } = CheckpointStore);
+    ({ stats, isCharacterCreatorEnabled } = CheckpointStore);
     const tmp = closure_0;
-    if (null != CheckpointStore.character) {
+    if (null != character) {
       let stage = CheckpointNavigation.CheckpointCharacterStage.SUMMARY;
     } else if (progress != null) {
       stage = progress.stage;
     }
     let obj = CheckpointFlows;
-    const checkpointRoutes = obj.getCheckpointRoutes({ flow: tmp, stats });
+    const checkpointRoutes = obj.getCheckpointRoutes({ flow: tmp, stats, character, isCharacterCreatorEnabled });
     let HOME = checkpointRoutes.find((item) => {
       const obj = closure_2_0(first[3]);
       return obj.getCheckpointRoutePresentation(item).characterStage === stage;

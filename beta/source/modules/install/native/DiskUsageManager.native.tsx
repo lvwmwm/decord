@@ -1,17 +1,17 @@
-// Module ID: 17931
-// Function ID: 17932
+// Module ID: 18205
+// Function ID: 18206
 // Name: DiskUsageManager
-// Dependencies: [5, 1385, 1072, 3, 1355, 510, 10361, 1377, 17932, 1252, 7763, 7383, 11261, 11262, 2]
+// Dependencies: [5, 1388, 1072, 3, 1358, 510, 8856, 1380, 18206, 1256, 8678, 7882, 11110, 11111, 2]
 
-// Module 17931 (DiskUsageManager)
+// Module 18205 (DiskUsageManager)
 import LoggerDefault from "Logger" /* 3 */;
-import react_native from "react-native" /* 1355 */;
-import BackgroundTaskManagerDefault from "BackgroundTaskManager" /* 10361 */;
-import react_nativeDefault from "react-native" /* 17932 */;
+import react_native from "react-native" /* 1358 */;
+import BackgroundTaskManagerDefault from "BackgroundTaskManager" /* 8856 */;
+import react_nativeDefault from "react-native" /* 18206 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1385 */;
+import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7383 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
 import size_mod from "module_2" /* 2 */;
 
 let c2, c3, c5, c6, closure_3;
@@ -41,7 +41,7 @@ let obj = function _measureAndReportInstallSize() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       let c4;
@@ -147,7 +147,7 @@ let obj = function _measureAndReportInstallSize() {
             obj3.endBackgroundTask(caches_directory_bytes);
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } catch (tmp55) {
         closure_3 = tmp55;
@@ -199,7 +199,7 @@ class DiskUsageManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {

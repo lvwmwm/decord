@@ -1,21 +1,21 @@
-// Module ID: 18398
-// Function ID: 18399
+// Module ID: 18689
+// Function ID: 18690
 // Name: PrivacyHint
-// Dependencies: [19, 17, 6828, 18359, 1072, 21, 5170, 5783, 1113, 5232, 7088, 8279, 18399, 2]
+// Dependencies: [19, 17, 6835, 18650, 1072, 21, 5306, 5919, 1113, 5368, 7734, 8106, 18690, 2]
 // Exports: default
 
-// Module 18398 (PrivacyHint)
+// Module 18689 (PrivacyHint)
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
-import react_native from "react-native" /* 5232 */;
-import Text_Text from "Text/Text" /* 5783 */;
-import PromoEmailConsentStore from "PromoEmailConsentStore" /* 6828 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 18359 */;
-import PromotionalEmailCheckBoxDefault from "PromotionalEmailCheckBox" /* 18399 */;
+import react_native from "react-native" /* 5368 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import PromoEmailConsentStore from "PromoEmailConsentStore" /* 6835 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 18650 */;
+import PromotionalEmailCheckBoxDefault from "PromotionalEmailCheckBox" /* 18690 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -54,16 +54,16 @@ function PrivacyPolicyCheckbox(onToggleConsent) {
   const tmp6 = React3;
   if (asCheckbox) {
     const obj3 = { checked: consent };
-    tmp7Result = tmp7(tmp2(7088).FormCheckbox, obj3);
+    tmp7Result = tmp7(tmp2(7734).FormCheckbox, obj3);
     tmp9 = tmp7;
   } else {
     const obj4 = { selected: consent };
-    tmp7Result = tmp7(tmp2(8279).FormRow.Radio, obj4);
+    tmp7Result = tmp7(tmp2(8106).FormRow.Radio, obj4);
     tmp9 = tmp7;
   }
   items = [tmp7Result, ];
   const obj5 = { variant: "body-xs/medium", color: "text-muted", style: tmp.checkboxLabel, children: intl2.format(intl3.t.qMDAP0, obj6) };
-  const Text = tmp2(5783).Text;
+  const Text = tmp2(5919).Text;
   intl2 = tmp2(1113).intl;
   obj6 = { termsURL: MarketingURLs.TERMS, privacyURL: MarketingURLs.PRIVACY };
   items[1] = tmp9(Text, obj5);

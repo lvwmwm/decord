@@ -1,16 +1,21 @@
 // Module ID: 16519
 // Function ID: 16520
-// Dependencies: [16520]
+// Dependencies: []
 
 // Module 16519
-import _mod16520 from "module_16520" /* 16520 */;
-
+let closure_0 = Object.freeze({ loose: true });
+let closure_1 = Object.freeze({});
 
 export default (arg0) => {
-  const tmp = _mod16520(arg0);
-  let num = 0;
-  if (tmp > 0) {
-    num = min(tmp, 9007199254740991);
+  let tmp2;
+  let tmp = arg0;
+  if (tmp) {
+    if (typeof tmp !== "object") {
+      tmp = closure_0;
+    }
+    tmp2 = tmp;
+  } else {
+    tmp2 = closure_1;
   }
-  return num;
+  return tmp2;
 };

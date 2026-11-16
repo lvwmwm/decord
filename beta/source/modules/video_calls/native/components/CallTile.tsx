@@ -1,33 +1,33 @@
-// Module ID: 12234
-// Function ID: 12235
+// Module ID: 13096
+// Function ID: 13097
 // Name: CallTile
-// Dependencies: [19, 17, 6801, 1385, 11162, 5837, 21, 5170, 5167, 575, 7420, 1627, 504, 5920, 8854, 11951, 12206, 11972, 11981, 12235, 12240, 12241, 12242, 12243, 12244, 1187, 11895, 1652, 5402, 12245, 2]
+// Dependencies: [19, 17, 6810, 1388, 11003, 5973, 21, 5306, 5303, 575, 7918, 1630, 504, 6056, 8476, 12787, 13067, 12808, 12841, 13097, 13102, 13103, 7480, 10838, 13104, 1187, 12715, 1655, 5538, 13105, 2]
 
-// Module 12234 (CallTile)
+// Module 13096 (CallTile)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5402 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5920 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8854 */;
-import RevealProvider from "RevealProvider" /* 11895 */;
-import TouchableStreamPreviewDefault from "TouchableStreamPreview" /* 12235 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12240 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 12241 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 12242 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 12243 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 12244 */;
-import ParticipantTitleDefault from "ParticipantTitle" /* 12245 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6056 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7480 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10838 */;
+import RevealProvider from "RevealProvider" /* 12715 */;
+import TouchableStreamPreviewDefault from "TouchableStreamPreview" /* 13097 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 13102 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 13103 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 13104 */;
+import ParticipantTitleDefault from "ParticipantTitle" /* 13105 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6801 */;
-import UserStore from "UserStore" /* 1385 */;
-import ChannelCallStore from "ChannelCallStore" /* 11162 */;
-import CallConstants from "CallConstants" /* 5837 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6810 */;
+import UserStore from "UserStore" /* 1388 */;
+import ChannelCallStore from "ChannelCallStore" /* 11003 */;
+import CallConstants from "CallConstants" /* 5973 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
-import ColorUtils_mod from "ColorUtils" /* 5167 */;
+import createStyles_mod from "createStyles" /* 5306 */;
+import ColorUtils_mod from "ColorUtils" /* 5303 */;
 import size from "module_2" /* 2 */;
 
 let obj1;
@@ -73,15 +73,15 @@ function ParticipantIcon(participant) {
   participant = participant.participant;
   const tmp = closure_16();
   if (participant.type === constants.STREAM) {
-    tmp3 = AssetRegistryDefault;
+    tmp3 = AssetRegistryDefault3;
   } else if (participant.type === tmp2.USER) {
     const voicePlatform = participant.voicePlatform;
     if (constants2.MOBILE === voicePlatform) {
-      tmp3 = AssetRegistryDefault2;
-    } else if (constants2.XBOX === voicePlatform) {
-      tmp3 = AssetRegistryDefault3;
-    } else if (constants2.PLAYSTATION === voicePlatform) {
       tmp3 = AssetRegistryDefault4;
+    } else if (constants2.XBOX === voicePlatform) {
+      tmp3 = AssetRegistryDefault;
+    } else if (constants2.PLAYSTATION === voicePlatform) {
+      tmp3 = AssetRegistryDefault2;
     } else if (constants2.QUEST === voicePlatform) {
       tmp3 = AssetRegistryDefault5;
     }
@@ -125,8 +125,8 @@ class TileOverlay {
     useSafeAreaInsetsDefault();
     const reveal = react.useContext(RevealProvider.RevealContext).reveal;
     const items = [closure_19, , , ];
-    const useAnimatedStyle = _mod1652.useAnimatedStyle;
-    _mod1652;
+    const useAnimatedStyle = _mod1655.useAnimatedStyle;
+    _mod1655;
     items[1] = timing_timing.withTiming;
     items[2] = reveal;
     items[3] = native.STANDARD_EASING;
@@ -171,7 +171,7 @@ class TileOverlay {
     }
     let obj = { pointerEvents: "none", style: items2, children: items3 };
     items2 = [absoluteFill.absoluteFill, rect, animatedStyle];
-    const View = tmp2(1652).View;
+    const View = tmp2(1655).View;
     if (isActiveStream) {
       const obj2 = { style: tmp.liveContainer, children: map1(native.LiveTag, {}) };
       isActiveStream = map1(hasOwnProperty, obj2);
@@ -197,7 +197,7 @@ rect = { overflow: "hidden", position: "absolute", bottom: 8, left: 8, right: 40
 obj3 = { flex: 1, width: "100%", backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_600 };
 obj4 = { flex: 1, alignItems: "center", justifyContent: "center", overflow: "hidden", width: "100%", backgroundColor: nativeDefault.colors.BLACK };
 obj5 = { backgroundColor: nativeDefault.colors.BLACK };
-const authStore4 = createStyles(obj);
+const authStore3 = createStyles(obj);
 let closure_19 = { code: "(function CallTileTsx1(){let[withTiming,reveal,STANDARD_EASING]=this.__closure;return{opacity:withTiming(reveal?1:0,{easing:STANDARD_EASING,duration:250})};})" };
 const memoResult = react.memo(function CallTitle(participant) {
   let avatarSize;

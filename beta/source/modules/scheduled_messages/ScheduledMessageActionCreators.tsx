@@ -1,12 +1,12 @@
-// Module ID: 14858
-// Function ID: 14859
+// Module ID: 9029
+// Function ID: 9030
 // Name: ScheduledMessageActionCreators
-// Dependencies: [32, 5, 1072, 572, 1282, 9931, 1403, 2]
+// Dependencies: [32, 5, 1072, 572, 1285, 9030, 1406, 2]
 // Exports: createScheduledMessage, deleteScheduledMessage, fetchScheduledMessages, sendScheduledMessageNow, updateScheduledMessage
 
-// Module 14858 (ScheduledMessageActionCreators)
+// Module 9029 (ScheduledMessageActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1072 */;
@@ -35,7 +35,7 @@ let obj = function _createScheduledMessage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       let c6;
@@ -62,7 +62,7 @@ let obj = function _createScheduledMessage() {
             errorMsg = undefined;
             c7 = 1;
             c8 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "Path", done: true };
           }
         } else if (1 === c7) {
           if (arg0 === 1) {
@@ -161,7 +161,7 @@ obj = function _updateScheduledMessage() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         let c6;
@@ -191,7 +191,7 @@ obj = function _updateScheduledMessage() {
               errorMsg = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "Path", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -273,7 +273,7 @@ obj = function _updateScheduledMessage() {
             dispatch(obj);
             c6 = 0;
             c8 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } catch (tmp58) {
           closure_5 = tmp58;
@@ -306,7 +306,7 @@ obj = function _deleteScheduledMessage() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -370,7 +370,7 @@ obj = function _deleteScheduledMessage() {
             obj.dispatch(obj11);
             c5 = 0;
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } catch (tmp34) {
           closure_4 = tmp34;
@@ -401,7 +401,7 @@ obj = function _sendScheduledMessageNow() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -465,7 +465,7 @@ obj = function _sendScheduledMessageNow() {
             obj.dispatch(obj11);
             c5 = 0;
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } catch (tmp34) {
           closure_4 = tmp34;
@@ -509,7 +509,7 @@ obj = function _fetchScheduledMessages() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       let c3;
@@ -563,7 +563,7 @@ obj = function _fetchScheduledMessages() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } catch (tmp30) {
         closure_2 = tmp30;

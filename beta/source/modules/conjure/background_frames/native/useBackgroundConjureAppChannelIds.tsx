@@ -1,14 +1,14 @@
-// Module ID: 19269
-// Function ID: 19270
+// Module ID: 19581
+// Function ID: 19582
 // Name: useBackgroundConjureAppChannelIds
-// Dependencies: [16717, 11037, 6937, 504, 2]
+// Dependencies: [16993, 7339, 7022, 504, 2]
 // Exports: default
 
-// Module 19269 (useBackgroundConjureAppChannelIds)
+// Module 19581 (useBackgroundConjureAppChannelIds)
 import get_initialized from "get initialized" /* 504 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6937 */;
-import conjurePreviewSurface from "conjurePreviewSurface" /* 11037 */;
-import conjureAppPictureInPictureFrames from "conjureAppPictureInPictureFrames" /* 16717 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 7022 */;
+import conjurePreviewSurface from "conjurePreviewSurface" /* 7339 */;
+import conjureAppPictureInPictureFrames from "conjureAppPictureInPictureFrames" /* 16993 */;
 import size from "module_2" /* 2 */;
 
 function getChannelIds() {

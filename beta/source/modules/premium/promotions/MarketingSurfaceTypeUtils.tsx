@@ -1,22 +1,43 @@
-// Module ID: 9750
-// Function ID: 9751
+// Module ID: 9626
+// Function ID: 9627
 // Name: MarketingSurfaceTypeUtils
-// Dependencies: [9751, 2]
-// Exports: classifyMarketingSurfaceType, isMarketingSurfaceType
+// Dependencies: [9627, 2]
+// Exports: classifyMarketingSurfaceType, isMarketingSurface
 
-// Module 9750 (MarketingSurfaceTypeUtils)
-import MarketingSurfaceType from "MarketingSurfaceType" /* 9751 */;
+// Module 9626 (MarketingSurfaceTypeUtils)
+import MarketingSurfaceType from "MarketingSurfaceType" /* 9627 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/premium/promotions/MarketingSurfaceTypeUtils.tsx");
-
-export function isMarketingSurfaceType(num) {
-  let hasOwnResult = typeof num === "number";
-  if (typeof num === "number") {
+function isMarketingSurfaceType(items) {
+  let hasOwnResult = typeof items === "number";
+  if (typeof items === "number") {
     const _Object = Object;
-    hasOwnResult = Object.hasOwn(MarketingSurfaceType.MarketingSurfaceKindByType, num);
+    hasOwnResult = Object.hasOwn(MarketingSurfaceType.MarketingSurfaceKindByType, items);
   }
   return hasOwnResult;
+}
+function isMarketingSurfaceProperties(properties, items) {
+  if (typeof items === "number") {
+    const tmp7 = isMarketingSurfaceType(items) && properties.properties.oneofKind === MarketingSurfaceType.MarketingSurfaceKindByType[items];
+    return tmp7;
+  } else {
+    const obj = items[Symbol.iterator]();
+    while (obj !== undefined) {
+      if (isMarketingSurfaceProperties(properties, tmp2)) {
+        obj.return();
+        let flag = true;
+        return true;
+      }
+    }
+    return false;
+  }
+}
+const result = size.fileFinishedImporting("modules/premium/promotions/MarketingSurfaceTypeUtils.tsx");
+
+export { isMarketingSurfaceType };
+export { isMarketingSurfaceProperties };
+export function isMarketingSurface(properties, items) {
+  return isMarketingSurfaceProperties(properties.properties, items);
 }
 export function classifyMarketingSurfaceType(component_type) {
   if (typeof component_type === "number") {

@@ -1,16 +1,17 @@
-// Module ID: 11932
-// Function ID: 11933
+// Module ID: 12701
+// Function ID: 12702
 // Name: ApplicationInstallUtils
-// Dependencies: [9885, 6199, 5807, 2]
-// Exports: canInstallApplication, isAppUserInstallable, shouldInstallApplicationOnDemand
+// Dependencies: [11406, 6335, 7028, 5943, 2]
+// Exports: canInstallApplication, hasInstallConfiguration, isAppUserInstallable, isKnownConjureApplication, shouldInstallApplicationOnDemand
 
-// Module 11932 (ApplicationInstallUtils)
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5807 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6199 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9885 */;
+// Module 12701 (ApplicationInstallUtils)
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5943 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6335 */;
+import isConjureApplicationDefault from "isConjureApplication" /* 7028 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 11406 */;
 import size from "module_2" /* 2 */;
 
-const f101937 = (oauth2_install_params) => {
+const f105815 = (oauth2_install_params) => {
   let prop;
   if (oauth2_install_params != null) {
     prop = oauth2_install_params.oauth2_install_params;
@@ -28,7 +29,7 @@ const f101937 = (oauth2_install_params) => {
 const BuiltInSectionId = ApplicationCommandConstants.BuiltInSectionId;
 let result = size.fileFinishedImporting("modules/applications/utils/ApplicationInstallUtils.tsx");
 
-export function canInstallApplication(application) {
+export function hasInstallConfiguration(application) {
   const integrationTypesConfig = application.integrationTypesConfig;
   let tmp = null != application.customInstallUrl || null != application.installParams;
   if (!tmp) {
@@ -36,9 +37,41 @@ export function canInstallApplication(application) {
     if (someResult) {
       const _Object = Object;
       const values = Object.values(integrationTypesConfig);
-      someResult = values.some(f101937);
+      someResult = values.some(f105815);
     }
     tmp = someResult;
+  }
+  return tmp;
+}
+export function isKnownConjureApplication(id) {
+  id = id.id;
+  let tmp = null != id.conjureProjectId;
+  if (!tmp) {
+    tmp = null != id && isConjureApplicationDefault(id);
+    const tmp2 = null != id && isConjureApplicationDefault(id);
+  }
+  return tmp;
+}
+export function canInstallApplication(integrationTypesConfig) {
+  integrationTypesConfig = integrationTypesConfig.integrationTypesConfig;
+  let tmp = null != integrationTypesConfig.customInstallUrl || null != integrationTypesConfig.installParams;
+  if (!tmp) {
+    let someResult = null != integrationTypesConfig;
+    if (someResult) {
+      const _Object = Object;
+      const values = Object.values(integrationTypesConfig);
+      someResult = values.some(f105815);
+    }
+    tmp = someResult;
+  }
+  if (tmp) {
+    const id = integrationTypesConfig.id;
+    let tmp4 = null != integrationTypesConfig.conjureProjectId;
+    if (!tmp4) {
+      tmp4 = null != id && isConjureApplicationDefault(id);
+      const tmp5 = null != id && isConjureApplicationDefault(id);
+    }
+    tmp = !tmp4;
   }
   return tmp;
 }
@@ -50,7 +83,7 @@ export function isAppUserInstallable(integrationTypesConfig) {
     if (someResult) {
       const _Object = Object;
       const values = Object.values(integrationTypesConfig);
-      someResult = values.some(f101937);
+      someResult = values.some(f105815);
     }
     tmp = someResult;
   }

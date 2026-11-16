@@ -1,10 +1,10 @@
-// Module ID: 19106
-// Function ID: 19107
+// Module ID: 19417
+// Function ID: 19418
 // Name: PrunePreviewStore
 // Dependencies: [32, 560, 2]
 // Exports: clearAllPrunePreviews, getPrunePreview, getPrunePreviewKey, setPrunePreview, usePrunePreview
 
-// Module 19106 (PrunePreviewStore)
+// Module 19417 (PrunePreviewStore)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;

@@ -1,14 +1,14 @@
-// Module ID: 19432
-// Function ID: 19433
+// Module ID: 19749
+// Function ID: 19750
 // Name: useMutualGuilds
-// Dependencies: [19, 7881, 1385, 504, 8862, 2]
+// Dependencies: [19, 7352, 1388, 504, 8483, 2]
 // Exports: useMutualGuildsForMessageRequests
 
-// Module 19432 (useMutualGuilds)
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8862 */;
+// Module 19749 (useMutualGuilds)
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8483 */;
 import react from "react" /* 19 */;
-import UserProfileStore from "UserProfileStore" /* 7881 */;
-import UserStore from "UserStore" /* 1385 */;
+import UserProfileStore from "UserProfileStore" /* 7352 */;
+import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

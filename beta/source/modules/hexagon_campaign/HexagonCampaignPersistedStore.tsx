@@ -1,9 +1,9 @@
-// Module ID: 16569
-// Function ID: 16570
+// Module ID: 16845
+// Function ID: 16846
 // Name: HexagonCampaignPersistedStore
 // Dependencies: [504, 572, 2]
 
-// Module 16569 (HexagonCampaignPersistedStore)
+// Module 16845 (HexagonCampaignPersistedStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

@@ -1,11 +1,11 @@
-// Module ID: 19831
-// Function ID: 19832
+// Module ID: 20162
+// Function ID: 20163
 // Name: ManagerRegistry
-// Dependencies: [19832, 19835, 19844, 19845, 19846, 19847, 14927, 1377, 19850, 19851, 19854, 19855, 19857, 11291, 19858, 19860, 19861, 19865, 19866, 19867, 19869, 14308, 19874, 19875, 19876, 14517, 19877, 19878, 19879, 19881, 19882, 19887, 19888, 19895, 19896, 19899, 19901, 19919, 10382, 8438, 16740, 19920, 19921, 19923, 19925, 19926, 19927, 9078, 19928, 19929, 19930, 19931, 19939, 19940, 19956, 17931, 19958, 19959, 19963, 19965, 19967, 19968, 9953, 19979, 17668, 19980, 19981, 19986, 19988, 20002, 20031, 20034, 15494, 20035, 20038, 20047, 20048, 20050, 20051, 20053, 20054, 20057, 20059, 20060, 20062, 20063, 20064, 20065, 20066, 20067, 20071, 20072, 20074, 12070, 20075, 20078, 20079, 20081, 20082, 20086, 7381, 9251, 20087, 20088, 8930, 20089, 19852, 20090, 20091, 20467, 20468, 20469, 20474, 20475, 20476, 20478, 20479, 20481, 20482, 20484, 20485, 20486, 20488, 20489, 20490, 20491, 18046, 20493, 20494, 20497, 20498, 20520, 20523, 20524, 20525, 20528, 20529, 20556, 20557, 20558, 20559, 20560, 20562, 20563, 20566, 2]
+// Dependencies: [20163, 20166, 20175, 20176, 20177, 20178, 10171, 1380, 20181, 20182, 20185, 20186, 20188, 11140, 20189, 20191, 20192, 20196, 20197, 20198, 20200, 14894, 20205, 20206, 20207, 20209, 14998, 20210, 20211, 20212, 20214, 20215, 20220, 20221, 20228, 20229, 20232, 20234, 20252, 11240, 8994, 17016, 20253, 20254, 20256, 20258, 20259, 20260, 7969, 20261, 20262, 20263, 20264, 20271, 20272, 20288, 18205, 20290, 20291, 20295, 20297, 20299, 20300, 9069, 20313, 17942, 20314, 20315, 20320, 20322, 20336, 20361, 20364, 16077, 20365, 20368, 20377, 20378, 20380, 20381, 20383, 20384, 20387, 20389, 20390, 20392, 20393, 20394, 20395, 20396, 20397, 20401, 20402, 20404, 12937, 20405, 20408, 20409, 20411, 20412, 20416, 7880, 10250, 20417, 20418, 8616, 20419, 20183, 20420, 20421, 20797, 20798, 20799, 20804, 20805, 20806, 20808, 20809, 20811, 20812, 20814, 20815, 20816, 20818, 20819, 20820, 20821, 18320, 20823, 20824, 20827, 20828, 20850, 20853, 20854, 20855, 20858, 20859, 20886, 20887, 20888, 20889, 20890, 20892, 20893, 20894, 20895, 2]
 
-// Module 19831 (ManagerRegistry)
-import PlatformUtils_mod from "PlatformUtils" /* 1377 */;
-import ManagerRegistryShared from "ManagerRegistryShared" /* 20566 */;
+// Module 20162 (ManagerRegistry)
+import PlatformUtils_mod from "PlatformUtils" /* 1380 */;
+import ManagerRegistryShared from "ManagerRegistryShared" /* 20895 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -154,6 +154,12 @@ const obj = {
       return require("ConjureProjectReconnectManager").default;
     }
   },
+  ConjurePublishEvalManager: {
+    actions: ["POST_CONNECTION_OPEN", "CONJURE_PUBLISH_EVAL_PENDING"],
+    inlineRequire() {
+      return require("ConjurePublishEvalManager").default;
+    }
+  },
   ConjureTurnNotificationManager: {
     actions: ["CONJURE_TURN_NOTIFICATION", "CONJURE_TURN_SETTLED", "LOGOUT"],
     inlineRequire() {
@@ -266,7 +272,7 @@ const obj = {
     }
   },
   FrecencyUserSettingsManager: {
-    actions: ["POST_CONNECTION_OPEN", "CONNECTION_RESUMED", "CONNECTION_CLOSED", "APP_STATE_UPDATE"],
+    actions: ["POST_CONNECTION_OPEN", "CONNECTION_RESUMED", "CONNECTION_CLOSED", "APP_STATE_UPDATE", "LOGOUT"],
     inlineRequire() {
       return require("FrecencyUserSettingsManager").default;
     },
@@ -948,6 +954,13 @@ const obj = {
       return require("AccountLinkManagerNative").default;
     },
     loadRightBeforeConnectionOpen: true
+  },
+  AccountLinkingCampaignManager: {
+    actions: ["LOGOUT", "POST_CONNECTION_OPEN"],
+    inlineRequire() {
+      return require("AccountLinkingCampaignManager").default;
+    },
+    neverLoadBeforeConnectionOpen: true
   }
 };
 PlatformUtils = PlatformUtils_mod;

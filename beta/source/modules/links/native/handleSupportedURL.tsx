@@ -1,52 +1,52 @@
-// Module ID: 16013
-// Function ID: 16014
+// Module ID: 16285
+// Function ID: 16286
 // Name: handleSupportedURL
-// Dependencies: [109, 5, 7020, 6943, 7715, 15595, 502, 5203, 1072, 5026, 6802, 8042, 11068, 7825, 5904, 16014, 8536, 14512, 6831, 5347, 16015, 8854, 7668, 11629, 9558, 13447, 2017, 11543, 1252, 11545, 7519, 10335, 10820, 10821, 16021, 6984, 7445, 13619, 16022, 14545, 11063, 2118, 11069, 11067, 16024, 16026, 1624, 8059, 16035, 5866, 16037, 5041, 7627, 9079, 9074, 7608, 8040, 12176, 5346, 6881, 1099, 572, 7441, 1378, 9187, 16040, 16055, 1377, 6123, 16064, 9231, 13611, 16072, 6621, 16073, 7828, 9382, 16153, 7972, 6874, 9802, 14957, 6875, 10709, 16154, 6856, 11094, 16155, 9454, 9434, 11136, 13028, 5898, 2]
+// Dependencies: [109, 5, 7661, 7029, 9589, 9984, 502, 5339, 1072, 5162, 6793, 6892, 12765, 8741, 6040, 16286, 9202, 14993, 6838, 5483, 16287, 8476, 8604, 15273, 10401, 14045, 2020, 12379, 1256, 12381, 7263, 12505, 11729, 10018, 16293, 7070, 7937, 14221, 16294, 15026, 7399, 2121, 12766, 12764, 16296, 16298, 1627, 8192, 16307, 6002, 16309, 5177, 7231, 7970, 7965, 10489, 6889, 10821, 5482, 6966, 1099, 572, 7466, 1381, 8404, 16312, 16327, 1380, 6259, 16336, 8460, 14216, 16344, 6757, 16345, 8484, 10631, 16432, 8825, 6959, 10128, 15256, 6960, 11661, 16433, 6942, 12744, 16434, 10286, 10281, 10536, 13776, 6034, 2]
 // Exports: default
 
-// Module 16013 (handleSupportedURL)
+// Module 16285 (handleSupportedURL)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 2017 */;
-import asyncRequire from "asyncRequire" /* 2118 */;
-import ChannelConstants from "ChannelConstants" /* 5026 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5346 */;
-import PaymentConstants from "PaymentConstants" /* 5904 */;
-import Constants2 from "Constants" /* 6802 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6831 */;
-import BoostingActionCreators from "BoostingActionCreators" /* 6856 */;
-import QuestContent from "QuestContent" /* 6874 */;
-import AdPlacement from "AdPlacement" /* 6875 */;
-import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 7020 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7445 */;
-import openUserSettings from "openUserSettings" /* 7668 */;
-import PremiumPlanPurchasedStore from "PremiumPlanPurchasedStore" /* 7715 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7825 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7828 */;
-import AnalyticsActions from "AnalyticsActions" /* 7972 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 8042 */;
-import SettingsConstants from "SettingsConstants" /* 8536 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9187 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9231 */;
-import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9382 */;
-import GameProfileActionCreators from "GameProfileActionCreators" /* 9434 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9454 */;
-import DisplayedInviteActionCreators from "DisplayedInviteActionCreators" /* 9558 */;
-import QuestUtils from "QuestUtils" /* 9802 */;
-import ApplicationUtils from "ApplicationUtils" /* 11067 */;
-import Constants3 from "Constants" /* 11068 */;
-import closeVoicePanelsDefault from "closeVoicePanels" /* 11094 */;
-import guild_templates_GuildTemplateActionCreatorsDefault from "guild_templates/GuildTemplateActionCreators" /* 13447 */;
-import BountyActionCreators from "BountyActionCreators" /* 14957 */;
-import ShareScreenConstants from "ShareScreenConstants" /* 16014 */;
-import MidjourneyOnboardingUtils from "MidjourneyOnboardingUtils" /* 16022 */;
-import GuildSettingsPickerActionCreators from "GuildSettingsPickerActionCreators" /* 16055 */;
-import AgeKeyReturnHandler from "AgeKeyReturnHandler" /* 16153 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 2020 */;
+import asyncRequire from "asyncRequire" /* 2121 */;
+import ChannelConstants from "ChannelConstants" /* 5162 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5482 */;
+import PaymentConstants from "PaymentConstants" /* 6040 */;
+import Constants2 from "Constants" /* 6793 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 6892 */;
+import BoostingActionCreators from "BoostingActionCreators" /* 6942 */;
+import QuestContent from "QuestContent" /* 6959 */;
+import AdPlacement from "AdPlacement" /* 6960 */;
+import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 7661 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8404 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8460 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 8484 */;
+import openUserSettings from "openUserSettings" /* 8604 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 8741 */;
+import AnalyticsActions from "AnalyticsActions" /* 8825 */;
+import SettingsConstants from "SettingsConstants" /* 9202 */;
+import PremiumPlanPurchasedStore from "PremiumPlanPurchasedStore" /* 9589 */;
+import QuestUtils from "QuestUtils" /* 10128 */;
+import GameProfileActionCreators from "GameProfileActionCreators" /* 10281 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 10286 */;
+import DisplayedInviteActionCreators from "DisplayedInviteActionCreators" /* 10401 */;
+import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 10631 */;
+import closeVoicePanelsDefault from "closeVoicePanels" /* 12744 */;
+import ApplicationUtils from "ApplicationUtils" /* 12764 */;
+import Constants3 from "Constants" /* 12765 */;
+import guild_templates_GuildTemplateActionCreatorsDefault from "guild_templates/GuildTemplateActionCreators" /* 14045 */;
+import BountyActionCreators from "BountyActionCreators" /* 15256 */;
+import ShareScreenConstants from "ShareScreenConstants" /* 16286 */;
+import MidjourneyOnboardingUtils from "MidjourneyOnboardingUtils" /* 16294 */;
+import GuildSettingsPickerActionCreators from "GuildSettingsPickerActionCreators" /* 16327 */;
+import AgeKeyReturnHandler from "AgeKeyReturnHandler" /* 16432 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6943 */;
-import PremiumNitroNavigationStore from "PremiumNitroNavigationStore" /* 15595 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7029 */;
+import PremiumNitroNavigationStore from "PremiumNitroNavigationStore" /* 9984 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5203 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -60,9 +60,9 @@ let closure_18;
 let map1;
 let tmp;
 let tmp3;
-const authorizeCallbackDefault = tmp(11069);
-const FamilyCenterNativeUtils = tmp3(13619);
-const CreateGuildModalActionCreatorsDefault = tmp(14545);
+const authorizeCallbackDefault = tmp(12766);
+const FamilyCenterNativeUtils = tmp3(14221);
+const CreateGuildModalActionCreatorsDefault = tmp(15026);
 let closure_4 = ["code", "state"];
 PostConnectionCallbackStore.addPostConnectionCallback;
 let closure_9 = PremiumPlanPurchasedStore.handleMobileWebCheckoutStatus;
@@ -279,7 +279,7 @@ export default function handleSupportedURL(payload) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -336,7 +336,7 @@ export default function handleSupportedURL(payload) {
             return obj6;
           }
           inviteCode = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         } catch (tmp22) {
           inviteCode = 3;
           throw tmp22;
@@ -413,7 +413,7 @@ export default function handleSupportedURL(payload) {
               });
             } else {
               const obj3 = { callback: authorizeCallbackDefault };
-              const openOAuth2Modal = tmp4(11067).openOAuth2Modal;
+              const openOAuth2Modal = tmp4(12764).openOAuth2Modal;
               ApplicationUtils;
               let merged = Object.assign(payload.props);
               openOAuth2Modal(obj3);
@@ -432,7 +432,7 @@ export default function handleSupportedURL(payload) {
           pathname(null != remoteAuthFingerprint ? (() => {
             const obj = ModalActionCreatorsDefault;
             const obj2 = { remoteAuthFingerprint };
-            obj.pushLazy(asyncRequire(16026, dependencyMap.paths), obj2, "REMOTE_AUTH_MODAL");
+            obj.pushLazy(asyncRequire(16298, dependencyMap.paths), obj2, "REMOTE_AUTH_MODAL");
           }) : (() => {
             let paths;
             let tmp = inviteCode;
@@ -493,7 +493,7 @@ export default function handleSupportedURL(payload) {
                 const obj4 = { value, done: true };
                 return obj4;
               } else {
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "ulw" };
               }
             } else {
               try {
@@ -561,7 +561,7 @@ export default function handleSupportedURL(payload) {
                     const result = obj3.openGuildEventDetails(obj10);
                   }
                   c4 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "ulw" };
                 }
               } catch (tmp34) {
                 c4 = 3;
@@ -592,7 +592,7 @@ export default function handleSupportedURL(payload) {
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "ulw" };
               }
             } else {
               try {
@@ -638,7 +638,7 @@ export default function handleSupportedURL(payload) {
                   obj4.disconnectRemote();
                 }
                 c2 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "ulw" };
               } catch (tmp36) {
                 c2 = 3;
                 throw tmp36;
@@ -703,7 +703,7 @@ export default function handleSupportedURL(payload) {
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "ulw" };
               }
             } else {
               try {
@@ -802,7 +802,7 @@ export default function handleSupportedURL(payload) {
                   }
                 }
                 c8 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "ulw" };
               } catch (tmp29) {
                 c8 = 3;
                 throw tmp29;
@@ -885,7 +885,7 @@ export default function handleSupportedURL(payload) {
                       const obj2 = { value, done: true };
                       return obj2;
                     } else {
-                      return { value: "HermesInternal", done: null };
+                      return { value: "HermesInternal", done: "ulw" };
                     }
                   } else {
                     try {
@@ -934,7 +934,7 @@ export default function handleSupportedURL(payload) {
                         }
                       }
                       inviteCode = 3;
-                      return { value: "HermesInternal", done: null };
+                      return { value: "HermesInternal", done: "ulw" };
                     } catch (tmp15) {
                       inviteCode = 3;
                       throw tmp15;

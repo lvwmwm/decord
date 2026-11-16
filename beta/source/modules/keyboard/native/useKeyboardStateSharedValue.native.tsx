@@ -1,16 +1,16 @@
-// Module ID: 13058
-// Function ID: 13059
+// Module ID: 13808
+// Function ID: 13809
 // Name: useKeyboardStateSharedValue
-// Dependencies: [1495, 1652, 5768, 2020, 5357, 11399, 2]
+// Dependencies: [1498, 1655, 5904, 2023, 5493, 11989, 2]
 // Exports: default, getKeyboardStateWorklet
 
-// Module 13058 (useKeyboardStateSharedValue)
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11399 */;
-import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1495 */;
-import module_1652 from "module_1652" /* 1652 */;
-import useCustomKeyboardHeight_mod from "useCustomKeyboardHeight" /* 5768 */;
-import useSystemKeyboardHeight_mod from "useSystemKeyboardHeight" /* 2020 */;
-import useKeyboardType_mod from "useKeyboardType" /* 5357 */;
+// Module 13808 (useKeyboardStateSharedValue)
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11989 */;
+import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1498 */;
+import module_1655 from "module_1655" /* 1655 */;
+import useCustomKeyboardHeight_mod from "useCustomKeyboardHeight" /* 5904 */;
+import useSystemKeyboardHeight_mod from "useSystemKeyboardHeight" /* 2023 */;
+import useKeyboardType_mod from "useKeyboardType" /* 5493 */;
 import size from "module_2" /* 2 */;
 
 let tmp6;
@@ -18,7 +18,7 @@ let tmp7;
 let useCustomKeyboardHeight;
 let useKeyboardType;
 let useSystemKeyboardHeight;
-const makeMutable = module_1652.makeMutable;
+const makeMutable = module_1655.makeMutable;
 const obj = { customKeyboardHeight: useCustomKeyboardHeight.getCustomKeyboardHeight(), keyboardHeight: useSystemKeyboardHeight.getSystemKeyboardHeight(), keyboardType: useKeyboardType.getKeyboardType() };
 useCustomKeyboardHeight = useCustomKeyboardHeight_mod;
 useSystemKeyboardHeight = useSystemKeyboardHeight_mod;

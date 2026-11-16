@@ -1,10 +1,10 @@
-// Module ID: 5337
-// Function ID: 5338
+// Module ID: 5473
+// Function ID: 5474
 // Name: mergeProps
 // Dependencies: [2]
 // Exports: mergeProps, mergeRefs
 
-// Module 5337 (mergeProps)
+// Module 5473 (mergeProps)
 import size from "module_2" /* 2 */;
 
 function chainCallbacks() {

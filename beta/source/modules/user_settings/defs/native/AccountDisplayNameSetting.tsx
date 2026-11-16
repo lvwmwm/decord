@@ -1,15 +1,15 @@
-// Module ID: 16961
-// Function ID: 16962
+// Module ID: 17237
+// Function ID: 17238
 // Name: AccountDisplayNameSetting
-// Dependencies: [1385, 8536, 1072, 504, 11716, 1113, 16786, 2]
+// Dependencies: [1388, 9202, 1072, 504, 12406, 1113, 17062, 2]
 
-// Module 16961 (AccountDisplayNameSetting)
+// Module 17237 (AccountDisplayNameSetting)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import SettingsConstants from "SettingsConstants" /* 8536 */;
-import UserStore from "UserStore" /* 1385 */;
-import SettingBuilders from "SettingBuilders" /* 11716 */;
+import SettingsConstants from "SettingsConstants" /* 9202 */;
+import UserStore from "UserStore" /* 1388 */;
+import SettingBuilders from "SettingBuilders" /* 12406 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

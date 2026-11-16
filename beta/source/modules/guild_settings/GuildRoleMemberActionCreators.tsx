@@ -1,16 +1,16 @@
-// Module ID: 7395
-// Function ID: 7396
+// Module ID: 7893
+// Function ID: 7894
 // Name: GuildRoleMemberActionCreators
-// Dependencies: [5, 7394, 1072, 572, 1282, 1453, 6990, 2]
+// Dependencies: [5, 7892, 1072, 572, 1285, 1456, 6907, 2]
 // Exports: fetchMemberCounts, requestMembersForRole
 
-// Module 7395 (GuildRoleMemberActionCreators)
+// Module 7893 (GuildRoleMemberActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import LRUCacheDefault from "LRUCache" /* 1453 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6990 */;
+import LRUCacheDefault from "LRUCache" /* 1456 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6907 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 7394 */;
+import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 7892 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -31,7 +31,7 @@ let obj = function _fetchMemberCountsFromBackend() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -81,7 +81,7 @@ let obj = function _fetchMemberCountsFromBackend() {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } catch (tmp19) {
           closure_3 = tmp19;
@@ -113,7 +113,7 @@ obj = function _fetchMemberCounts() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       try {
@@ -144,7 +144,7 @@ obj = function _fetchMemberCounts() {
           return obj;
         }
         c1 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       } catch (tmp6) {
         c1 = 3;
         throw tmp6;

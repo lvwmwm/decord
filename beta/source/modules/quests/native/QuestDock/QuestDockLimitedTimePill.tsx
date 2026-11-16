@@ -1,17 +1,17 @@
-// Module ID: 17543
-// Function ID: 17544
+// Module ID: 17817
+// Function ID: 17818
 // Name: QuestDockLimitedTimePill
-// Dependencies: [19, 17, 21, 575, 5170, 11831, 5783, 1113, 2]
+// Dependencies: [19, 17, 21, 575, 5306, 12555, 5919, 1113, 2]
 
-// Module 17543 (QuestDockLimitedTimePill)
+// Module 17817 (QuestDockLimitedTimePill)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5783 */;
-import TimerIcon2 from "TimerIcon" /* 11831 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import TimerIcon2 from "TimerIcon" /* 12555 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

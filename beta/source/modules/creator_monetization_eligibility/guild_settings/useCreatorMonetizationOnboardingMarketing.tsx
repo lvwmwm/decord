@@ -1,11 +1,11 @@
-// Module ID: 20385
-// Function ID: 20386
+// Module ID: 20715
+// Function ID: 20716
 // Name: useCreatorMonetizationOnboardingMarketing
-// Dependencies: [5, 32, 19, 20331, 6611, 2]
+// Dependencies: [5, 32, 19, 20661, 6747, 2]
 // Exports: default
 
-// Module 20385 (useCreatorMonetizationOnboardingMarketing)
-import CreatorMonetizationEligibilityActionCreatorsAll from "CreatorMonetizationEligibilityActionCreators" /* 20331 */;
+// Module 20715 (useCreatorMonetizationOnboardingMarketing)
+import CreatorMonetizationEligibilityActionCreatorsAll from "CreatorMonetizationEligibilityActionCreators" /* 20661 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -43,7 +43,7 @@ export default function useCreatorMonetizationOnboardingMarketing(arg0) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       let c4;
@@ -99,7 +99,7 @@ export default function useCreatorMonetizationOnboardingMarketing(arg0) {
           c4 = 0;
           closure_1(false);
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } catch (tmp39) {
         if (0 === c4) {

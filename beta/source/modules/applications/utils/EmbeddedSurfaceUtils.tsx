@@ -1,10 +1,10 @@
-// Module ID: 2148
-// Function ID: 2149
+// Module ID: 2151
+// Function ID: 2152
 // Name: EmbeddedSurfaceUtils
 // Dependencies: [2]
 // Exports: isEmbeddedApplication, supportsEmbeddedSurface
 
-// Module 2148 (EmbeddedSurfaceUtils)
+// Module 2151 (EmbeddedSurfaceUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/applications/utils/EmbeddedSurfaceUtils.tsx");

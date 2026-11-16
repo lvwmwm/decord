@@ -1,19 +1,19 @@
-// Module ID: 8627
-// Function ID: 8628
+// Module ID: 9306
+// Function ID: 9307
 // Name: ReferralProgramUtils
-// Dependencies: [1231, 7741, 5016, 1089, 1113, 5202, 5003, 11, 5004, 8628, 504, 2]
-// Exports: getReferralTrialOfferExpirationCopy, isReferralProgramBadgeAcknowledged, markReferralIncentivePopoverSeen, markReferralProgramBadgeAcknowledged, markReferralProgramEntrypointBadgeAcknowledged, markReferralProgramPopoverSeen, useIsReferralProgramBadgeShowable, useIsReferralProgramEntrypointBadgeAcknowledged, useIsReferralProgramPopoverShowable
+// Dependencies: [1231, 9293, 5152, 1089, 1113, 5338, 5139, 11, 5140, 9307, 504, 2]
+// Exports: getReferralTrialOfferExpirationCopy, isReferralProgramBadgeAcknowledged, markReferralProgramBadgeAcknowledged, markReferralProgramEntrypointBadgeAcknowledged, markReferralProgramPopoverSeen, useIsReferralProgramBadgeShowable, useIsReferralProgramEntrypointBadgeAcknowledged, useIsReferralProgramPopoverShowable
 
-// Module 8627 (ReferralProgramUtils)
+// Module 9306 (ReferralProgramUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import intl4 from "intl" /* 1113 */;
-import dismissible_content from "dismissible_content" /* 5003 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 5004 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5016 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5202 */;
+import dismissible_content from "dismissible_content" /* 5139 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 5140 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5338 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 7741 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 9293 */;
 import size from "module_2" /* 2 */;
 
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
@@ -95,13 +95,9 @@ export function markReferralProgramPopoverSeen(promotionId) {
     const result = obj.markSnowflakeBoundDismissibleContentAsDismissed(dismissible_content.DismissibleContent.REFERRAL_PROGRAM_POPOVER_V2, promotionId, obj2);
   }
 }
-export function markReferralIncentivePopoverSeen() {
-  const obj = DismissibleContentUnsafeUtils;
-  const result = obj.UNSAFE_markDismissibleContentAsDismissed(dismissible_content.DismissibleContent.REFERRAL_PROGRAM_INCENTIVE_POPOVER);
-}
 export function useIsReferralProgramPopoverShowable() {
   let stateFromStores1;
-  let obj = stateFromStores1(8628);
+  let obj = stateFromStores1(9307);
   let isEligibleSenderForReferralProgram = obj.useIsEligibleSenderForReferralProgram(false);
   const items = [ReferralTrialStore];
   const obj2 = stateFromStores1(504);

@@ -1,13 +1,13 @@
-// Module ID: 11838
-// Function ID: 11839
+// Module ID: 12562
+// Function ID: 12563
 // Name: openGameOrganizationInvitePicker
-// Dependencies: [11535, 5406, 11839, 2118, 2]
+// Dependencies: [12369, 5542, 12563, 2121, 2]
 // Exports: default
 
-// Module 11838 (openGameOrganizationInvitePicker)
-import asyncRequire from "asyncRequire" /* 2118 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11535 */;
+// Module 12562 (openGameOrganizationInvitePicker)
+import asyncRequire from "asyncRequire" /* 2121 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 12369 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = GameOrganizationInviteConstants.GAME_ORGANIZATION_INVITE_PICKER_ACTION_SHEET_KEY;
@@ -16,5 +16,5 @@ const result = size.fileFinishedImporting("modules/game_organization_invites/nat
 export default function openGameOrganizationInvitePicker(userId) {
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { userId };
-  obj.openLazy(asyncRequire(11839, dependencyMap.paths), closure_3, obj2);
+  obj.openLazy(asyncRequire(12563, dependencyMap.paths), closure_3, obj2);
 };

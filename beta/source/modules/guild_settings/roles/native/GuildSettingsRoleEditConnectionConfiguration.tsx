@@ -1,29 +1,29 @@
-// Module ID: 20257
-// Function ID: 20258
+// Module ID: 20587
+// Function ID: 20588
 // Name: GuildSettingsRoleEditConnectionConfiguration
-// Dependencies: [32, 19, 17, 1072, 7443, 21, 5170, 575, 5401, 11780, 1187, 1411, 5177, 7071, 1113, 7076, 7153, 7462, 20258, 1377, 5783, 6661, 7159, 2]
+// Dependencies: [32, 19, 17, 1072, 7423, 21, 5306, 575, 5537, 12480, 1187, 1414, 5313, 7443, 1113, 7428, 7549, 7954, 20588, 1380, 5919, 7087, 7746, 2]
 // Exports: default
 
-// Module 20257 (GuildSettingsRoleEditConnectionConfiguration)
+// Module 20587 (GuildSettingsRoleEditConnectionConfiguration)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants2 from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import AvatarUtils from "AvatarUtils" /* 1411 */;
-import shared from "shared" /* 5177 */;
-import useThemeDefault from "useTheme" /* 5401 */;
-import Text_Text from "Text/Text" /* 5783 */;
-import PlatformsDefault from "Platforms" /* 6661 */;
-import XSmallIcon from "XSmallIcon" /* 7153 */;
-import TableRowGroup3 from "TableRowGroup" /* 7159 */;
-import useGetOrFetchApplicationBatched2 from "useGetOrFetchApplicationBatched" /* 11780 */;
-import RoleConnectionRequirementUtils from "RoleConnectionRequirementUtils" /* 20258 */;
+import AvatarUtils from "AvatarUtils" /* 1414 */;
+import shared from "shared" /* 5313 */;
+import useThemeDefault from "useTheme" /* 5537 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import PlatformsDefault from "Platforms" /* 7087 */;
+import XSmallIcon from "XSmallIcon" /* 7549 */;
+import TableRowGroup3 from "TableRowGroup" /* 7746 */;
+import useGetOrFetchApplicationBatched2 from "useGetOrFetchApplicationBatched" /* 12480 */;
+import RoleConnectionRequirementUtils from "RoleConnectionRequirementUtils" /* 20588 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 7443 */;
+import Constants from "Constants" /* 7423 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, map;
@@ -77,7 +77,7 @@ function Header(arg0) {
     application2 = integration.application;
   }
   if (null != application2) {
-    const obj = { size: native.AvatarSizes.XSMALL, user: bot, guildId: "r" };
+    const obj = { size: native.AvatarSizes.XSMALL, user: bot, guildId: "Array" };
     const Avatar2 = tmp3(1187).Avatar;
     bot = undefined;
     const tmp16 = authStore2;
@@ -99,7 +99,7 @@ function Header(arg0) {
       }
       let tmp13;
       if (null != bot1) {
-        const obj2 = { size: native.AvatarSizes.XSMALL, user: getOrFetchApplicationBatched.bot, guildId: "r" };
+        const obj2 = { size: native.AvatarSizes.XSMALL, user: getOrFetchApplicationBatched.bot, guildId: "Array" };
         const Avatar = tmp3(1187).Avatar;
         tmp13 = authStore2(Avatar, obj2);
       }
@@ -120,7 +120,7 @@ function Header(arg0) {
     tmp9Result = authStore2(Icon, obj3);
   }
   const obj4 = { icon: tmp9Result, label: format(Nj0a3j, { platformName: name2 }), trailing: authStore2(PressableOpacity, obj5) };
-  const TableRow = tmp3(7071).TableRow;
+  const TableRow = tmp3(7443).TableRow;
   const intl = tmp3(1113).intl;
   format = intl.format;
   name2 = undefined;
@@ -132,7 +132,7 @@ function Header(arg0) {
     name2 = name;
   }
   obj5 = { "aria-label": intl2.string(intl3.t.N86XcP), onPress: onRemove, disabled: locked, children: authStore2(XSmallIcon.XSmallIcon, {}) };
-  PressableOpacity = tmp3(7076).PressableOpacity;
+  PressableOpacity = tmp3(7428).PressableOpacity;
   intl2 = tmp3(1113).intl;
   return authStore2(TableRow, obj4);
 }
@@ -181,7 +181,7 @@ function BooleanConfigRule(metadataField) {
     }
   };
   value = undefined;
-  const TableSwitchRow = metadataField(7462).TableSwitchRow;
+  const TableSwitchRow = metadataField(7954).TableSwitchRow;
   const tmp2 = closure_12;
   if (existingPendingConfiguration != null) {
     value = existingPendingConfiguration.configuration.value;
@@ -244,7 +244,7 @@ function NumericalConfigRule(existingPendingConfiguration) {
   }
   let tmp2 = metadataField;
   let tmp3 = dependencyMap;
-  let obj = metadataField(20258);
+  let obj = metadataField(20588);
   const realizedOperatorForResult = obj.realizedOperatorFor(operator);
   c7 = realizedOperatorForResult;
   value = undefined;
@@ -253,7 +253,7 @@ function NumericalConfigRule(existingPendingConfiguration) {
       value = iter.value;
     }
   }
-  const tmp2Result = tmp2(20258);
+  const tmp2Result = tmp2(20588);
   const str = tmp2Result.displayedValueFor(value, realizedOperatorForResult);
   str1 = str.toString();
   [value, tmp10] = react.useState(str1);
@@ -269,7 +269,7 @@ function NumericalConfigRule(existingPendingConfiguration) {
   }
   closure_11 = tmp15;
   if (undefined !== fieldTextHook) {
-    const tmp2Result2 = tmp2(1377);
+    const tmp2Result2 = tmp2(1380);
     closure_13 = tmp2Result2.isIOS() ? tmp.numericalInputContainerIOSInline : tmp.numericalInputContainerAndroidInline;
     const intl = tmp2(1113).intl;
     let obj2 = {
@@ -320,7 +320,7 @@ function NumericalConfigRule(existingPendingConfiguration) {
     items[1] = numericalInputDisabled;
     items1 = [onInputValueChange(closure_5, obj5, "_numericalInputContainer"), ];
     const obj7 = { variant: "body-md/semibold", style: tmp.appNumericalInputText, children: fieldText };
-    items1[1] = onInputValueChange(tmp2(5783).Text, obj7);
+    items1[1] = onInputValueChange(tmp2(5919).Text, obj7);
     tmp19Result = tmp19(tmp20, obj4);
   }
   const obj8 = {
@@ -358,7 +358,7 @@ function NumericalConfigRule(existingPendingConfiguration) {
       tmp10(tmp3, num);
     }
   };
-  return onInputValueChange(tmp2(7462).TableSwitchRow, obj8, metadataField);
+  return onInputValueChange(tmp2(7954).TableSwitchRow, obj8, metadataField);
 }
 function BlueskyMetadataRules(arg0) {
   let configMetadataMap;
@@ -376,7 +376,7 @@ function BlueskyMetadataRules(arg0) {
   items[1] = authStore2(NumericalConfigRule, obj4);
   const obj5 = { fieldTextHook: intl3.t["5I4mVS"], metadataField: metroImportDefault.BLUESKY_STATUSES_COUNT, existingPendingConfiguration: configMetadataMap.get(metroImportDefault.BLUESKY_STATUSES_COUNT), platform: value, onConfigurationChange, locked };
   items[2] = authStore2(NumericalConfigRule, obj5);
-  return map1(authStore3, obj2);
+  return map1(gesture, obj2);
 }
 function LetterboxdMetadataRules(arg0) {
   let configMetadataMap;
@@ -392,7 +392,7 @@ function LetterboxdMetadataRules(arg0) {
   items[0] = authStore2(NumericalConfigRule, obj3);
   const obj4 = { fieldTextHook: intl3.t["6wOYUY"], metadataField: metroImportDefault.LETTERBOXD_FILMS_IN_DIARY_THIS_YEAR, existingPendingConfiguration: configMetadataMap.get(metroImportDefault.LETTERBOXD_FILMS_IN_DIARY_THIS_YEAR), platform: value, onConfigurationChange, locked };
   items[1] = authStore2(NumericalConfigRule, obj4);
-  return map1(authStore3, obj2);
+  return map1(gesture, obj2);
 }
 function SteamMetadataRules(arg0) {
   let configMetadataMap;
@@ -412,7 +412,7 @@ function SteamMetadataRules(arg0) {
   items[2] = authStore2(NumericalConfigRule, obj5);
   const obj6 = { fieldTextHook: intl3.t["MCHnK+"], metadataField: metroImportDefault.STEAM_ITEM_COUNT_TF2, existingPendingConfiguration: configMetadataMap.get(metroImportDefault.STEAM_ITEM_COUNT_TF2), platform: value, onConfigurationChange, locked };
   items[3] = authStore2(NumericalConfigRule, obj6);
-  return map1(authStore3, obj2);
+  return map1(gesture, obj2);
 }
 function TwitterMetadataRules(arg0) {
   let configMetadataMap;
@@ -434,7 +434,7 @@ function TwitterMetadataRules(arg0) {
   const obj6 = { fieldText: intl.string(intl3.t.E2iT8K), metadataField: metroImportDefault.TWITTER_VERIFIED, existingPendingConfiguration: configMetadataMap.get(metroImportDefault.TWITTER_VERIFIED), platform: value, onConfigurationChange, locked };
   intl = intl3.intl;
   items[3] = authStore2(BooleanConfigRule, obj6);
-  return map1(authStore3, obj2);
+  return map1(gesture, obj2);
 }
 function RedditMetadataRules(arg0) {
   let configMetadataMap;
@@ -458,7 +458,7 @@ function RedditMetadataRules(arg0) {
   const obj6 = { fieldText: intl2.string(intl3.t.kCAN58), metadataField: metroImportDefault.REDDIT_GOLD, existingPendingConfiguration: configMetadataMap.get(metroImportDefault.REDDIT_GOLD), platform: value, onConfigurationChange, locked };
   intl2 = intl3.intl;
   items[3] = authStore2(BooleanConfigRule, obj6);
-  return map1(authStore3, obj2);
+  return map1(gesture, obj2);
 }
 function PaypalMetadataRules(arg0) {
   let configMetadataMap;
@@ -476,7 +476,7 @@ function PaypalMetadataRules(arg0) {
   const obj4 = { fieldText: intl.string(intl3.t["0JyE8I"]), metadataField: metroImportDefault.PAYPAL_VERIFIED, existingPendingConfiguration: configMetadataMap.get(metroImportDefault.PAYPAL_VERIFIED), platform: value, onConfigurationChange, locked };
   intl = intl3.intl;
   items[1] = authStore2(BooleanConfigRule, obj4);
-  return map1(authStore3, obj2);
+  return map1(gesture, obj2);
 }
 function EbayMetadataRules(arg0) {
   let configMetadataMap;
@@ -500,7 +500,7 @@ function EbayMetadataRules(arg0) {
   const obj7 = { fieldText: intl.string(intl3.t["39wASN"]), metadataField: metroImportDefault.EBAY_TOP_RATED_SELLER, existingPendingConfiguration: configMetadataMap.get(metroImportDefault.EBAY_TOP_RATED_SELLER), platform: value, onConfigurationChange, locked };
   intl = intl3.intl;
   items[4] = authStore2(BooleanConfigRule, obj7);
-  return map1(authStore3, obj2);
+  return map1(gesture, obj2);
 }
 function TikTokMetadataRules(arg0) {
   let configMetadataMap;
@@ -521,7 +521,7 @@ function TikTokMetadataRules(arg0) {
   items[2] = authStore2(NumericalConfigRule, obj5);
   const obj6 = { fieldTextHook: intl3.t.tEFCYA, metadataField: metroImportDefault.TIKTOK_LIKES_COUNT, existingPendingConfiguration: configMetadataMap.get(metroImportDefault.TIKTOK_LIKES_COUNT), platform: value, onConfigurationChange, locked };
   items[3] = authStore2(NumericalConfigRule, obj6);
-  return map1(authStore3, obj2);
+  return map1(gesture, obj2);
 }
 function ApplicationMetadataRules(arg0) {
   let integration;

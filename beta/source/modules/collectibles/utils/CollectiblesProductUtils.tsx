@@ -1,12 +1,12 @@
-// Module ID: 7840
-// Function ID: 7841
+// Module ID: 8496
+// Function ID: 8497
 // Name: CollectiblesProductUtils
-// Dependencies: [32, 7835, 1072, 2111, 2]
+// Dependencies: [32, 8491, 1072, 2114, 2]
 // Exports: getHasNonOrbPrice, getHasOrbPrice, getIsVariantProduct, getProductFiatPrice, getProductOrbPrice, getProductSkuIds, getProductType, getProductsWithOrbsPrice, getSelectedProduct, isDynamicProduct, isOrbsExclusiveProduct
 
-// Module 7840 (CollectiblesProductUtils)
-import CollectiblesItemType from "CollectiblesItemType" /* 2111 */;
-import ProfileEffectRecord from "ProfileEffectRecord" /* 7835 */;
+// Module 8496 (CollectiblesProductUtils)
+import CollectiblesItemType from "CollectiblesItemType" /* 2114 */;
+import ProfileEffectRecord from "ProfileEffectRecord" /* 8491 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -15,8 +15,8 @@ let effects;
 
 let closure_4;
 let hasOwnProperty;
-const f93175 = (currency) => currency.currency === constants.DISCORD_ORB;
-const f93176 = (currency) => currency.currency !== constants.DISCORD_ORB;
+const f96178 = (currency) => currency.currency === constants.DISCORD_ORB;
+const f96179 = (currency) => currency.currency !== constants.DISCORD_ORB;
 const isProfileEffectRecord = ProfileEffectRecord.isProfileEffectRecord;
 ({ CurrencyCodes: closure_4, PriceSetAssignmentPurchaseTypes: hasOwnProperty } = Constants);
 const result = size.fileFinishedImporting("modules/collectibles/utils/CollectiblesProductUtils.tsx");
@@ -33,7 +33,7 @@ export function getProductOrbPrice(arg0) {
   if (prices == null) {
     prices = [];
   }
-  let found = prices.find(f93175);
+  let found = prices.find(f96178);
   if (found == null) {
     found = null;
   }
@@ -51,7 +51,7 @@ export function getProductFiatPrice(arg0) {
   if (prices == null) {
     prices = [];
   }
-  let found = prices.find(f93176);
+  let found = prices.find(f96179);
   if (found == null) {
     found = null;
   }
@@ -68,7 +68,7 @@ export function getHasOrbPrice(arg0) {
   if (prices == null) {
     prices = [];
   }
-  let found = prices.find(f93175);
+  let found = prices.find(f96178);
   if (found == null) {
     found = null;
   }
@@ -85,7 +85,7 @@ export function getHasNonOrbPrice(isFirstParty) {
   if (prices == null) {
     prices = [];
   }
-  let found = prices.find(f93176);
+  let found = prices.find(f96179);
   if (found == null) {
     found = null;
   }
@@ -106,7 +106,7 @@ export function isOrbsExclusiveProduct(product) {
     if (prices == null) {
       prices = [];
     }
-    let found = prices.find(f93175);
+    let found = prices.find(f96178);
     if (found == null) {
       found = null;
     }
@@ -121,7 +121,7 @@ export function isOrbsExclusiveProduct(product) {
     if (prices1 == null) {
       prices1 = [];
     }
-    let found1 = prices1.find(f93176);
+    let found1 = prices1.find(f96179);
     if (found1 == null) {
       found1 = null;
     }
@@ -182,7 +182,7 @@ export function getProductsWithOrbsPrice(arr) {
     if (prices == null) {
       prices = [];
     }
-    let found = prices.find(f93175);
+    let found = prices.find(f96178);
     if (found == null) {
       found = null;
     }
@@ -197,7 +197,7 @@ export function getProductsWithOrbsPrice(arr) {
     if (prices1 == null) {
       prices1 = [];
     }
-    let found1 = prices1.find(f93176);
+    let found1 = prices1.find(f96179);
     if (found1 == null) {
       found1 = null;
     }

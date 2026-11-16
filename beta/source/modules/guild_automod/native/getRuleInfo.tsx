@@ -1,18 +1,18 @@
-// Module ID: 20135
-// Function ID: 20136
+// Module ID: 20465
+// Function ID: 20466
 // Name: getRuleInfo
-// Dependencies: [13556, 8766, 20136, 20138, 18244, 12299, 20139, 5883, 2]
+// Dependencies: [14166, 8087, 20466, 20468, 18528, 12682, 20469, 6019, 2]
 // Exports: getRuleInfo
 
-// Module 20135 (getRuleInfo)
-import LinkIcon from "LinkIcon" /* 5883 */;
-import AtIcon from "AtIcon" /* 8766 */;
-import RobotIcon from "RobotIcon" /* 12299 */;
-import Constants from "Constants" /* 13556 */;
-import MenuIcon from "MenuIcon" /* 18244 */;
-import ChannelListPlusIcon from "ChannelListPlusIcon" /* 20136 */;
-import AssetRegistryDefault from "AssetRegistry" /* 20138 */;
-import BaseRuleInfo from "BaseRuleInfo" /* 20139 */;
+// Module 20465 (getRuleInfo)
+import LinkIcon from "LinkIcon" /* 6019 */;
+import AtIcon from "AtIcon" /* 8087 */;
+import RobotIcon from "RobotIcon" /* 12682 */;
+import Constants from "Constants" /* 14166 */;
+import MenuIcon from "MenuIcon" /* 18528 */;
+import ChannelListPlusIcon from "ChannelListPlusIcon" /* 20466 */;
+import AssetRegistryDefault from "AssetRegistry" /* 20468 */;
+import BaseRuleInfo from "BaseRuleInfo" /* 20469 */;
 import size from "module_2" /* 2 */;
 
 const AutomodTriggerType = Constants.AutomodTriggerType;

@@ -1,9 +1,9 @@
-// Module ID: 7321
-// Function ID: 7322
+// Module ID: 7831
+// Function ID: 7832
 // Name: FastestListNativeComponent
 // Dependencies: [106, 65, 114, 2]
 
-// Module 7321 (FastestListNativeComponent)
+// Module 7831 (FastestListNativeComponent)
 import renderElement from "renderElement" /* 114 */;
 import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
 import module_65 from "module_65" /* 65 */;

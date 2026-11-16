@@ -1,14 +1,14 @@
-// Module ID: 10130
-// Function ID: 10131
+// Module ID: 11263
+// Function ID: 11264
 // Name: CreatorRevenueButton
-// Dependencies: [19, 21, 5170, 10131, 2]
+// Dependencies: [19, 21, 5306, 11264, 2]
 // Exports: CreatorRevenueButton
 
-// Module 10130 (CreatorRevenueButton)
+// Module 11263 (CreatorRevenueButton)
 import Fragment from "Fragment" /* 21 */;
-import ShinyButtonDefault from "ShinyButton" /* 10131 */;
+import ShinyButtonDefault from "ShinyButton" /* 11264 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;

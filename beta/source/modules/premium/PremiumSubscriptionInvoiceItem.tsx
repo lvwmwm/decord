@@ -1,10 +1,10 @@
-// Module ID: 2180
-// Function ID: 2181
+// Module ID: 2183
+// Function ID: 2184
 // Name: PremiumSubscriptionInvoiceItem
 // Dependencies: [12, 2]
 // Exports: coalesceInvoiceItems, createInvoiceItemFromServer
 
-// Module 2180 (PremiumSubscriptionInvoiceItem)
+// Module 2183 (PremiumSubscriptionInvoiceItem)
 import _modDef12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 

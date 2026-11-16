@@ -1,10 +1,10 @@
-// Module ID: 6616
-// Function ID: 6617
+// Module ID: 6752
+// Function ID: 6753
 // Name: FileSizeUtils
 // Dependencies: [1113, 2]
 // Exports: formatKbSize
 
-// Module 6616 (FileSizeUtils)
+// Module 6752 (FileSizeUtils)
 import intl3 from "intl" /* 1113 */;
 import size from "module_2" /* 2 */;
 

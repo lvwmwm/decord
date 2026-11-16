@@ -1,10 +1,10 @@
-// Module ID: 6635
-// Function ID: 6636
+// Module ID: 6770
+// Function ID: 6771
 // Name: StripeActionCreators
-// Dependencies: [5, 1072, 1282, 2]
+// Dependencies: [5, 1072, 1285, 2]
 // Exports: createSetupIntentForPaymentElements, createStripeSetupIntent
 
-// Module 6635 (StripeActionCreators)
+// Module 6770 (StripeActionCreators)
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -24,7 +24,7 @@ let obj = function _createStripeSetupIntent() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       try {
@@ -47,7 +47,7 @@ let obj = function _createStripeSetupIntent() {
             }
             c3 = 1;
             c4 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "Path", done: true };
           }
         } else if (1 === c3) {
           if (arg0 === 1) {
@@ -100,7 +100,7 @@ obj = function _createSetupIntentForPaymentElements() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       try {
@@ -123,7 +123,7 @@ obj = function _createSetupIntentForPaymentElements() {
             }
             c3 = 1;
             c4 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "Path", done: true };
           }
         } else if (1 === c3) {
           if (arg0 === 1) {

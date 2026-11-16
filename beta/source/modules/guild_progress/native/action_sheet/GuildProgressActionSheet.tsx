@@ -1,32 +1,32 @@
-// Module ID: 14321
-// Function ID: 14322
+// Module ID: 14907
+// Function ID: 14908
 // Name: GuildProgressActionSheet
-// Dependencies: [5, 19, 17, 9188, 5100, 14314, 1072, 21, 5170, 575, 504, 14319, 5868, 1252, 14322, 14323, 9231, 14324, 1113, 9187, 8323, 14325, 5917, 5406, 1108, 14326, 14327, 7445, 14434, 5783, 5790, 7076, 7459, 1187, 2]
+// Dependencies: [5, 19, 17, 8405, 5236, 14900, 1072, 21, 5306, 575, 504, 14905, 6004, 1256, 14908, 14909, 8460, 14910, 1113, 8404, 8879, 14911, 6053, 5542, 1108, 14912, 10679, 7937, 14913, 5919, 5926, 7428, 7951, 1187, 2]
 // Exports: default
 
-// Module 14321 (GuildProgressActionSheet)
+// Module 14907 (GuildProgressActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import native from "native" /* 1187 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
-import Text_Text from "Text/Text" /* 5783 */;
-import ToastUtils from "ToastUtils" /* 5868 */;
-import transitionToChannel from "transitionToChannel" /* 5917 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7445 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9231 */;
-import GuildProgressUtils from "GuildProgressUtils" /* 14319 */;
-import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 14322 */;
-import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 14327 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import ToastUtils from "ToastUtils" /* 6004 */;
+import transitionToChannel from "transitionToChannel" /* 6053 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8460 */;
+import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 10679 */;
+import GuildProgressUtils from "GuildProgressUtils" /* 14905 */;
+import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 14908 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9188 */;
-import GuildChannelStore from "GuildChannelStore" /* 5100 */;
-import GuildProgressConstants from "GuildProgressConstants" /* 14314 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8405 */;
+import GuildChannelStore from "GuildChannelStore" /* 5236 */;
+import GuildProgressConstants from "GuildProgressConstants" /* 14900 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -51,9 +51,9 @@ class GuildProgressHeader {
     const obj = { style: tmp.header, children: items };
     items = [, ];
     const obj2 = { style: tmp.headerTitle, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: title };
-    items[0] = authStore3(Text_Text.Text, obj2);
+    items[0] = gesture(Text_Text.Text, obj2);
     const obj3 = { style: tmp.headerSubtitle, children: subtitle };
-    items[1] = authStore3(native.LegacyText, obj3);
+    items[1] = gesture(native.LegacyText, obj3);
     return closure_15(View, obj);
   }
 }
@@ -63,7 +63,7 @@ const View = react_native.View;
 ({ jsx: closure_14, jsxs: closure_15 } = Fragment);
 let obj = { container: { padding: 16 }, header: { alignItems: "center", paddingTop: 8, paddingBottom: 16 }, headerTitle: { marginBottom: 8, textAlign: "center" }, headerSubtitle: obj2, footer: { marginTop: 4 }, center: { alignItems: "center" } };
 obj2 = { fontSize: 14, fontWeight: "500", color: nativeDefault.colors.TEXT_SUBTLE };
-const authStore4 = createStyles.createStyles(obj);
+const authStore3 = createStyles.createStyles(obj);
 let result = size.fileFinishedImporting("modules/guild_progress/native/action_sheet/GuildProgressActionSheet.tsx");
 
 export default function GuildProgressActionSheet(guild) {
@@ -105,7 +105,7 @@ export default function GuildProgressActionSheet(guild) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -146,7 +146,7 @@ export default function GuildProgressActionSheet(guild) {
               obj.updateIcon(closure_129_5, base64);
             }
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } catch (tmp15) {
           c3 = 3;
@@ -205,7 +205,7 @@ export default function GuildProgressActionSheet(guild) {
     analyticsSetupType: constants.GUILD_PROGRESS,
     analyticsAction: constants2.INVITE
   };
-  obj5 = { uri: require("module_14324") };
+  obj5 = { uri: require("module_14910") };
   const tmp10 = require("ProgressItem");
   intl = guild(numFinished[18]).intl;
   const tmp11 = closure_14(tmp10, obj4);
@@ -219,7 +219,7 @@ export default function GuildProgressActionSheet(guild) {
     analyticsSetupType: constants.GUILD_PROGRESS,
     analyticsAction: constants2.PERSONALIZE_SERVER
   };
-  obj7 = { uri: require("module_14325") };
+  obj7 = { uri: require("module_14911") };
   const tmp12 = require("ProgressItem");
   intl2 = guild(numFinished[18]).intl;
   const tmp13 = closure_14(tmp12, obj6);
@@ -245,7 +245,7 @@ export default function GuildProgressActionSheet(guild) {
     analyticsSetupType: constants.GUILD_PROGRESS,
     analyticsAction: constants2.SEND_MESSAGE
   };
-  obj9 = { uri: require("module_14326") };
+  obj9 = { uri: require("module_14912") };
   const tmp14 = require("ProgressItem");
   intl3 = guild(numFinished[18]).intl;
   const tmp15 = closure_14(tmp14, obj8);
@@ -263,7 +263,7 @@ export default function GuildProgressActionSheet(guild) {
     analyticsSetupType: constants.GUILD_PROGRESS,
     analyticsAction: constants2.BOOST
   };
-  obj11 = { uri: require("module_14434") };
+  obj11 = { uri: require("module_14913") };
   const tmp16 = require("ProgressItem");
   intl4 = guild(numFinished[18]).intl;
   const obj12 = { style: tmp.container, children: items5 };

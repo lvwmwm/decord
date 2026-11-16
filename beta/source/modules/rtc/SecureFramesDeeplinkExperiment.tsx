@@ -1,11 +1,11 @@
-// Module ID: 9388
-// Function ID: 9389
+// Module ID: 10637
+// Function ID: 10638
 // Name: SecureFramesDeeplinkExperiment
-// Dependencies: [5385, 2]
+// Dependencies: [5521, 2]
 // Exports: getSecureFramesDeeplinkExperiment, useSecureFramesDeeplinkExperiment
 
-// Module 9388 (SecureFramesDeeplinkExperiment)
-import createExperimentDefault from "createExperiment" /* 5385 */;
+// Module 10637 (SecureFramesDeeplinkExperiment)
+import createExperimentDefault from "createExperiment" /* 5521 */;
 import size from "module_2" /* 2 */;
 
 let items;

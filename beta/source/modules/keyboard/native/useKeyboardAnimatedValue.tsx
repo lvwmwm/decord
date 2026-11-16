@@ -1,21 +1,21 @@
-// Module ID: 7050
-// Function ID: 7051
+// Module ID: 7475
+// Function ID: 7476
 // Name: useKeyboardAnimatedValue
-// Dependencies: [19, 1652, 1377, 5402, 7051, 2]
+// Dependencies: [19, 1655, 1380, 5538, 7476, 2]
 // Exports: default
 
-// Module 7050 (useKeyboardAnimatedValue)
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5402 */;
-import useKeyboardDuration from "useKeyboardDuration" /* 7051 */;
+// Module 7475 (useKeyboardAnimatedValue)
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import useKeyboardDuration from "useKeyboardDuration" /* 7476 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const Easing = _mod1652.Easing;
+const Easing = _mod1655.Easing;
 const bezierResult = Easing.bezier(0.2, 0, 0, 1);
 let c3 = bezierResult;
 const result = size.fileFinishedImporting("modules/keyboard/native/useKeyboardAnimatedValue.tsx");
@@ -27,7 +27,7 @@ export default function useKeyboardAnimatedValue(UNDETERMINED) {
   if (arg1 === undefined) {
     flag = true;
   }
-  let obj = require("module_1652");
+  let obj = require("module_1655");
   const sharedValue = obj.useSharedValue(UNDETERMINED);
   const items = [sharedValue, UNDETERMINED, flag];
   const effect = sharedValue.useEffect(() => {

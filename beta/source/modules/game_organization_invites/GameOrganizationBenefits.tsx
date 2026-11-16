@@ -1,16 +1,16 @@
-// Module ID: 13487
-// Function ID: 13488
+// Module ID: 14097
+// Function ID: 14098
 // Name: GameOrganizationBenefits
-// Dependencies: [2530, 2]
+// Dependencies: [2565, 2]
 
-// Module 13487 (GameOrganizationBenefits)
-import _modDef2530 from "module_2530" /* 2530 */;
+// Module 14097 (GameOrganizationBenefits)
+import _modDef2565 from "module_2565" /* 2565 */;
 import size from "module_2" /* 2 */;
 
-const items = [{ key: "auto-sync", message: _modDef2530.WUVzdk }, ];
-({ key: "auto-sync", message: _modDef2530.WUVzdk });
-items[1] = { key: "linked-channel", message: _modDef2530.MEQJ1m };
-({ key: "linked-channel", message: _modDef2530.MEQJ1m });
+const items = [{ key: "auto-sync", message: _modDef2565.WUVzdk }, ];
+({ key: "auto-sync", message: _modDef2565.WUVzdk });
+items[1] = { key: "linked-channel", message: _modDef2565.MEQJ1m };
+({ key: "linked-channel", message: _modDef2565.MEQJ1m });
 const result = size.fileFinishedImporting("modules/game_organization_invites/GameOrganizationBenefits.tsx");
 
 export const GAME_ORGANIZATION_BENEFITS = items;

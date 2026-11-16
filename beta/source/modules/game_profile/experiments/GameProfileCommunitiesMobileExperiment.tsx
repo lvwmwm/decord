@@ -1,11 +1,11 @@
-// Module ID: 14988
-// Function ID: 14989
+// Module ID: 10571
+// Function ID: 10572
 // Name: GameProfileCommunitiesMobileExperiment
-// Dependencies: [1449, 2]
+// Dependencies: [1452, 2]
 // Exports: useIsGameProfileCommunitiesMobileEnabled
 
-// Module 14988 (GameProfileCommunitiesMobileExperiment)
-import ApexExperiment from "ApexExperiment" /* 1449 */;
+// Module 10571 (GameProfileCommunitiesMobileExperiment)
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 let obj = { enabled: false };

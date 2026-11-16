@@ -21,7 +21,7 @@ let ProtoClass;
 
 let FrecencyUserSettings;
 let PreloadedUserSettings;
-const f82415 = (editInfo) => {
+const f84293 = (editInfo) => {
   if (null != editInfo.editInfo.timeout) {
     const _clearTimeout = clearTimeout;
     clearTimeout(editInfo.editInfo.timeout);
@@ -43,7 +43,7 @@ const f82415 = (editInfo) => {
 };
 function handleConnectionClosedOrResumed() {
   const values = Object.values(closure_7);
-  const item = values.forEach(f82415);
+  const item = values.forEach(f84293);
 }
 function handleUserSettingsProtoUpdate(settings) {
   settings = settings.settings;
@@ -401,7 +401,7 @@ const obj3 = {
       }
     });
     const values2 = Object.values(closure_7);
-    const item1 = values2.forEach(f82415);
+    const item1 = values2.forEach(f84293);
   },
   CONNECTION_CLOSED: handleConnectionClosedOrResumed,
   CONNECTION_RESUMED: handleConnectionClosedOrResumed,
@@ -413,7 +413,7 @@ const obj3 = {
   },
   LOGOUT: function handleLogout() {
     const values = Object.values(closure_7);
-    const item = values.forEach(f82415);
+    const item = values.forEach(f84293);
     const values2 = Object.values(closure_7);
     const item1 = values2.forEach((ProtoClass) => {
       ProtoClass = ProtoClass.ProtoClass;

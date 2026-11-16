@@ -1,25 +1,25 @@
-// Module ID: 20031
-// Function ID: 20032
+// Module ID: 20361
+// Function ID: 20362
 // Name: NotificationsManager
-// Dependencies: [5, 5104, 502, 5019, 6863, 14239, 1072, 8042, 14240, 5406, 20032, 2118, 1260, 2166, 8065, 14242, 11177, 1252, 1377, 7383, 17834, 1092, 2]
+// Dependencies: [5, 5240, 502, 5155, 6948, 14825, 1072, 6892, 14826, 5542, 20362, 2121, 1264, 2169, 8199, 14828, 11018, 1256, 1380, 7882, 18108, 1092, 2]
 
-// Module 20031 (NotificationsManager)
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import asyncRequire from "asyncRequire" /* 2118 */;
-import _modDef2166 from "module_2166" /* 2166 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 8042 */;
-import react_nativeDefault from "react-native" /* 8065 */;
-import PushNotificationPermissionStore2 from "PushNotificationPermissionStore" /* 14239 */;
-import PushNotificationActionCreators from "PushNotificationActionCreators" /* 14242 */;
+// Module 20361 (NotificationsManager)
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
+import asyncRequire from "asyncRequire" /* 2121 */;
+import _modDef2169 from "module_2169" /* 2169 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 6892 */;
+import react_nativeDefault from "react-native" /* 8199 */;
+import PushNotificationPermissionStore2 from "PushNotificationPermissionStore" /* 14825 */;
+import PushNotificationActionCreators from "PushNotificationActionCreators" /* 14828 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 5104 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 5240 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6863 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6948 */;
 import Constants from "Constants" /* 1072 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 14240 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7383 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 14826 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
 import size from "module_2" /* 2 */;
 
 const PushNotificationPermissionStore = PushNotificationPermissionStore2;
@@ -36,7 +36,7 @@ function haveNotSeenPromptSince(arg0, arg1) {
   if (!tmp2) {
     let tmp4;
     if (items.includes(arg0)) {
-      obj = _modDef2166();
+      obj = _modDef2169();
       tmp4 = obj.diff(tmp, "days") >= 1;
     }
     tmp2 = tmp4;
@@ -60,7 +60,7 @@ let obj = function _shouldShowPrompt() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       try {
@@ -122,7 +122,7 @@ obj = function _shouldShowReactivationPrompt() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       try {
@@ -180,8 +180,8 @@ function showPrompt(arg0, arg1, arg2) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     const obj2 = { impressionName: discord_common_AnalyticsUtils.ImpressionNames.PUSH_NOTIFICATION_REACTIVATION_PROMPT, impressionProperties: { action_location: location }, location };
     ActionSheetActionCreatorsDefault;
-    const tmp3 = asyncRequire(20032, dependencyMap.paths);
-    openLazy(tmp3, authStore3, obj2);
+    const tmp3 = asyncRequire(20362, dependencyMap.paths);
+    openLazy(tmp3, gesture, obj2);
   }, arg2);
 }
 function _logNotificationPermissionStatus() {
@@ -202,7 +202,7 @@ obj = function _logNotificationPermissionStatus2() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       try {
@@ -248,7 +248,7 @@ obj = function _logNotificationPermissionStatus2() {
           }
           track(NOTIFICATION_PERMISSION_STATUS, obj7);
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } catch (tmp10) {
         c3 = 3;
@@ -302,7 +302,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -345,7 +345,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
             return obj;
           } else {
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } catch (tmp7) {
           c2 = 3;
@@ -371,7 +371,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } else {
           try {
@@ -392,7 +392,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
                 ({ message: c0, optimistic: c1, isPushNotification: c2, sendMessageOptions: c3 } = closure_0);
                 c3 = 1;
                 c4 = 1;
-                return { value: "flexDirection", done: true };
+                return { value: "Path", done: true };
               }
             } else {
               let tmp5;
@@ -422,7 +422,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
                     }
                   }
                   c4 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "ulw" };
                 }
               } else if (arg0 === 1) {
                 c4 = 3;
@@ -466,7 +466,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } else {
           try {
@@ -485,7 +485,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
                 invite = invite.invite;
                 c4 = 1;
                 c5 = 1;
-                return { value: "flexDirection", done: true };
+                return { value: "Path", done: true };
               }
             } else {
               let tmp5;
@@ -516,7 +516,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
                     }
                   }
                   c5 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "ulw" };
                 }
               } else if (2 === c4) {
                 if (arg0 === 1) {
@@ -617,7 +617,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
         }
         await "HermesInternal";
         relationship = relationship.relationship;
-        return "flexDirection";
+        return "Path";
       })();
       iter.next();
       return iter;
@@ -637,7 +637,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -659,7 +659,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
               closure_2 = undefined;
               c3 = 1;
               c4 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "Path", done: true };
             }
           } else {
             if (1 === c3) {
@@ -701,7 +701,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
                 return obj;
               }
               c4 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "ulw" };
             }
             if (state === closure_0(closure_2[21]).AppStates.ACTIVE) {
               c3 = 3;
@@ -732,7 +732,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -766,7 +766,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
             obj = tmp(c2[15]);
             const result = obj.updateNotificationAuthorizationStatus(tmp);
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } catch (tmp13) {
           c3 = 3;

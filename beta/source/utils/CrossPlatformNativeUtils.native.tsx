@@ -1,9 +1,9 @@
-// Module ID: 5176
-// Function ID: 5177
+// Module ID: 5312
+// Function ID: 5313
 // Name: CrossPlatformNativeUtils
 // Dependencies: [2]
 
-// Module 5176 (CrossPlatformNativeUtils)
+// Module 5312 (CrossPlatformNativeUtils)
 import size from "module_2" /* 2 */;
 
 const obj = {

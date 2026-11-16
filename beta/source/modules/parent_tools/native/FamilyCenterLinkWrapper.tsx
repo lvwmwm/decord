@@ -1,15 +1,15 @@
-// Module ID: 17175
-// Function ID: 17176
+// Module ID: 17452
+// Function ID: 17453
 // Name: FamilyCenterLinkWrapper
-// Dependencies: [19, 21, 5170, 575, 7420, 7076, 8854, 2]
+// Dependencies: [19, 21, 5306, 575, 7918, 7428, 8476, 2]
 // Exports: default
 
-// Module 17175 (FamilyCenterLinkWrapper)
+// Module 17452 (FamilyCenterLinkWrapper)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8854 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -23,10 +23,10 @@ export default function FamilyCenterLinkRowWrapper(userId) {
   let analyticsLocations;
   const children = userId.children;
   const tmp = closure_4();
-  analyticsLocations = analyticsLocations(7420)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7918)().analyticsLocations;
   let tmp3 = null;
   if (undefined !== userId) {
-    tmp3 = jsx(userId(7076).PressableOpacity, {
+    tmp3 = jsx(userId(7428).PressableOpacity, {
       style: tmp.container,
       onPress: function handlePress() {
           const obj = { userId, disableCalls: true, disableMessage: true, sourceAnalyticsLocations: analyticsLocations };

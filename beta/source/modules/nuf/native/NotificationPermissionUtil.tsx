@@ -1,27 +1,27 @@
-// Module ID: 14241
-// Function ID: 14242
+// Module ID: 14827
+// Function ID: 14828
 // Name: NotificationPermissionUtil
-// Dependencies: [32, 5, 19, 17, 14239, 14240, 1072, 8042, 8065, 11076, 1252, 14242, 14248, 14249, 504, 2]
+// Dependencies: [32, 5, 19, 17, 14825, 14826, 1072, 6892, 8199, 12923, 1256, 14828, 14834, 14835, 504, 2]
 // Exports: enableProvisionalPushNotification, requestPushNotificationPermission, useCanSeePushNotificationNudge, useShouldShowPushNotificationNudgeByPromptType, useShowReactivationPrompt
 
-// Module 14241 (NotificationPermissionUtil)
+// Module 14827 (NotificationPermissionUtil)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 8042 */;
-import react_nativeDefault from "react-native" /* 8065 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 14240 */;
-import PushNotificationActionCreators from "PushNotificationActionCreators" /* 14242 */;
-import RegionalTeenUtils from "RegionalTeenUtils" /* 14249 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 6892 */;
+import react_nativeDefault from "react-native" /* 8199 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 14826 */;
+import PushNotificationActionCreators from "PushNotificationActionCreators" /* 14828 */;
+import RegionalTeenUtils from "RegionalTeenUtils" /* 14835 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 14239 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 14825 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2, c3, closure_3, closure_4;
 
-const f107340 = () => state.authorizationStatus;
+const f110265 = () => state.authorizationStatus;
 let obj = function _requestPushNotificationPermission() {
   obj = _asyncToGenerator(async (arg0, action_location, arg2) => {
     let closure_0 = arg0;
@@ -40,7 +40,7 @@ let obj = function _requestPushNotificationPermission() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -106,7 +106,7 @@ let obj = function _requestPushNotificationPermission() {
               return obj;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } catch (tmp35) {
           c6 = 3;
@@ -132,7 +132,7 @@ obj = function _enableProvisionalPushNotification() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       try {
@@ -187,7 +187,7 @@ obj = function _enableProvisionalPushNotification() {
             });
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } catch (tmp12) {
         c3 = 3;
@@ -228,7 +228,7 @@ export function useShowReactivationPrompt() {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } else {
           try {
@@ -260,7 +260,7 @@ export function useShowReactivationPrompt() {
                 tmp3(true);
               }
               c2 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "ulw" };
             }
           } catch (tmp11) {
             c2 = 3;
@@ -284,7 +284,7 @@ export function useCanSeePushNotificationNudge() {
   const isTeenInStrictCountry = obj.useIsTeenInStrictCountry();
   const items = [PushNotificationPermissionStore];
   const obj2 = get_initialized;
-  const stateFromStores = obj2.useStateFromStores(items, f107340);
+  const stateFromStores = obj2.useStateFromStores(items, f110265);
   [tmp4, require] = react.useState(false);
   _slicedToArray(react.useState(false), 2);
   const effect = react.useEffect(() => {
@@ -319,7 +319,7 @@ export function useShouldShowPushNotificationNudgeByPromptType(CHANNEL_BANNER) {
   const isTeenInStrictCountry = obj.useIsTeenInStrictCountry();
   const items = [PushNotificationPermissionStore];
   const obj2 = get_initialized;
-  const stateFromStores = obj2.useStateFromStores(items, f107340);
+  const stateFromStores = obj2.useStateFromStores(items, f110265);
   [tmp7, require] = react.useState(false);
   _slicedToArray(react.useState(false), 2);
   const effect = react.useEffect(() => {

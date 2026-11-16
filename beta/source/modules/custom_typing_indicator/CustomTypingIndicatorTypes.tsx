@@ -1,11 +1,11 @@
-// Module ID: 1407
-// Function ID: 1408
+// Module ID: 1410
+// Function ID: 1411
 // Name: CustomTypingIndicatorTypes
-// Dependencies: [1398, 2]
+// Dependencies: [1401, 2]
 // Exports: getCustomTypingIndicatorEmojisKey, getEffectiveCustomTypingIndicatorAnimation, hasCustomTypingIndicatorEmojis, isValidCustomTypingIndicatorEmojiSelection, parseServerTypingIndicatorStyle, serializeTypingIndicatorStyle
 
-// Module 1407 (CustomTypingIndicatorTypes)
-import user from "user" /* 1398 */;
+// Module 1410 (CustomTypingIndicatorTypes)
+import user from "user" /* 1401 */;
 import size from "module_2" /* 2 */;
 
 let obj = { emojis: [], typingSuggestion: user.TypingSuggestion.UNSPECIFIED, animation: user.TypingIndicatorAnimation.UNSPECIFIED };

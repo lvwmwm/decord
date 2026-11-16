@@ -1,13 +1,13 @@
-// Module ID: 18294
-// Function ID: 18295
+// Module ID: 18580
+// Function ID: 18581
 // Name: ReactCompilerSetting
-// Dependencies: [4995, 16309, 11716, 17922, 2]
+// Dependencies: [5131, 16585, 12406, 18196, 2]
 
-// Module 18294 (ReactCompilerSetting)
-import UserSettings from "UserSettings" /* 4995 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 16309 */;
-import WrenchIcon from "WrenchIcon" /* 17922 */;
-import SettingBuilders from "SettingBuilders" /* 11716 */;
+// Module 18580 (ReactCompilerSetting)
+import UserSettings from "UserSettings" /* 5131 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 16585 */;
+import WrenchIcon from "WrenchIcon" /* 18196 */;
+import SettingBuilders from "SettingBuilders" /* 12406 */;
 import size from "module_2" /* 2 */;
 
 let obj = {

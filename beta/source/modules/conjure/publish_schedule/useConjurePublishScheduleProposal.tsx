@@ -1,12 +1,12 @@
-// Module ID: 13011
-// Function ID: 13012
+// Module ID: 13758
+// Function ID: 13759
 // Name: useConjurePublishScheduleProposal
-// Dependencies: [5, 32, 19, 6932, 504, 11121, 11122, 1113, 4026, 12364, 2]
+// Dependencies: [5, 32, 19, 7017, 504, 13246, 13247, 1113, 4131, 13248, 2]
 // Exports: default
 
-// Module 13011 (useConjurePublishScheduleProposal)
-import _modDef4026 from "module_4026" /* 4026 */;
-import ConjureProjectStore2 from "ConjureProjectStore" /* 6932 */;
+// Module 13758 (useConjurePublishScheduleProposal)
+import _modDef4131 from "module_4131" /* 4131 */;
+import ConjureProjectStore2 from "ConjureProjectStore" /* 7017 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -56,7 +56,7 @@ export default function useConjurePublishScheduleProposal(arg0, trigger, arg2) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       let c3;
@@ -108,7 +108,7 @@ export default function useConjurePublishScheduleProposal(arg0, trigger, arg2) {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } catch (tmp35) {
         dependencyMap = tmp35;
@@ -126,13 +126,13 @@ export default function useConjurePublishScheduleProposal(arg0, trigger, arg2) {
     let intl = tmp(1113).intl;
     const formatToPlainString = intl.formatToPlainString;
     let obj2 = { time: tmpResult.formatPublishScheduleTime(trigger.next_run_at) };
-    const orZDqY = _modDef4026.orZDqY;
-    tmpResult = tmp(12364);
+    const orZDqY = _modDef4131.orZDqY;
+    tmpResult = tmp(13248);
     formatToPlainStringResult = formatToPlainString(orZDqY, obj2);
   }
   let obj3 = { summary: tmpResult2.publishScheduleSummary(trigger.trigger), firstPublish: formatToPlainStringResult, status: tmp5, error: first, onTurnOn: tmp11 };
   tmp11 = undefined;
-  tmpResult2 = tmp(12364);
+  tmpResult2 = tmp(13248);
   if (stateFromStores) {
     let tmp12 = arg2;
     if (tmp12) {

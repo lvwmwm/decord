@@ -1,18 +1,18 @@
-// Module ID: 10045
-// Function ID: 10046
+// Module ID: 15616
+// Function ID: 15617
 // Name: ConversationFocusView
-// Dependencies: [19, 17, 21, 5170, 575, 5756, 10005, 10020, 1113, 5783, 5790, 10046, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 5892, 9124, 9139, 1113, 5919, 5926, 15617, 2]
 // Exports: default
 
-// Module 10045 (ConversationFocusView)
+// Module 15616 (ConversationFocusView)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 10005 */;
-import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 10020 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9124 */;
+import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 9139 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

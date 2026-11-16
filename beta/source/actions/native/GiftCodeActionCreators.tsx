@@ -1,12 +1,12 @@
-// Module ID: 11545
-// Function ID: 11546
+// Module ID: 12381
+// Function ID: 12382
 // Name: actions/GiftCodeActionCreators
-// Dependencies: [5, 1072, 7711, 11546, 572, 1282, 1252, 6611, 6831, 11551, 2118, 2]
+// Dependencies: [5, 1072, 9585, 9788, 572, 1285, 1256, 6747, 6838, 12382, 2121, 2]
 // Exports: openGiftCodeRedeemModal, redeemGiftCode
 
-// Module 11545 (actions/GiftCodeActionCreators)
-import asyncRequire from "asyncRequire" /* 2118 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6831 */;
+// Module 12381 (actions/GiftCodeActionCreators)
+import asyncRequire from "asyncRequire" /* 2121 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -38,7 +38,7 @@ let value = function _redeemGiftCode() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -73,7 +73,7 @@ let value = function _redeemGiftCode() {
               billingError = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "Path", done: true };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {
@@ -87,7 +87,7 @@ let value = function _redeemGiftCode() {
               if (obj18.getIsPaymentsBlocked()) {
                 closure_130_1(closure_130_2[3])();
                 c6 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "ulw" };
               } else {
                 channelId = options.channelId;
                 let tmp36 = null;
@@ -175,7 +175,7 @@ let value = function _redeemGiftCode() {
 function openGiftCodeRedeemModal(c0, fromServer) {
   const obj = ModalActionCreatorsDefault;
   const obj2 = { code: c0, giftCodeDebugOverride: fromServer };
-  obj.pushLazy(asyncRequire(11551, dependencyMap.paths), obj2, "GIFT_CODE_REDEEM_MODAL_KEY");
+  obj.pushLazy(asyncRequire(12382, dependencyMap.paths), obj2, "GIFT_CODE_REDEEM_MODAL_KEY");
 }
 ({ Endpoints: closure_4, AnalyticEvents: hasOwnProperty } = Constants);
 let closure_6 = Object.freeze({});

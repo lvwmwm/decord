@@ -1,14 +1,14 @@
-// Module ID: 19796
-// Function ID: 19797
+// Module ID: 20126
+// Function ID: 20127
 // Name: MediaPlaybackPanelStateContext
-// Dependencies: [19, 16744, 11396, 7338, 2]
+// Dependencies: [19, 17020, 11986, 7848, 2]
 
-// Module 19796 (MediaPlaybackPanelStateContext)
-import MorphablePanelConstants from "MorphablePanelConstants" /* 11396 */;
-import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 16744 */;
+// Module 20126 (MediaPlaybackPanelStateContext)
+import MorphablePanelConstants from "MorphablePanelConstants" /* 11986 */;
+import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 17020 */;
 import react from "react" /* 19 */;
 import "ReanimatedHelperTypes";
-import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 7338 */;
+import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 7848 */;
 import size from "module_2" /* 2 */;
 
 let MorphablePanelModes;

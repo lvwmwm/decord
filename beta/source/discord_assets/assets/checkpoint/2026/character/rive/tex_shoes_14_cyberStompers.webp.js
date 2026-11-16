@@ -1,8 +1,8 @@
-// Module ID: 13878
-// Function ID: 13879
+// Module ID: 14450
+// Function ID: 14451
 // Dependencies: [2]
 
-// Module 13878
+// Module 14450
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_shoes_14_cyberStompers.webp.js");

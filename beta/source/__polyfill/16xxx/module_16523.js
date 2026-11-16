@@ -1,18 +1,74 @@
 // Module ID: 16523
 // Function ID: 16524
-// Dependencies: [16496]
+// Dependencies: []
 
 // Module 16523
-import _mod16496 from "module_16496" /* 16496 */;
-
-
-export default function(arg0) {
-  if (_mod16496(arg0)) {
-    return arg0;
-  } else {
-    const self = this;
-    const self2 = this;
-    const tmp3 = new TypeError(String(arg0) + " is not an object");
-    throw tmp3;
+const re0 = /^[0-9]+$/;
+const obj = {
+  compareIdentifiers(major, major2) {
+    const isMatch = re0.test(major);
+    const isMatch1 = re0.test(major2);
+    let tmp4 = major2;
+    let tmp5 = major;
+    const tmp3 = isMatch && isMatch1;
+    if (tmp3) {
+      tmp5 = +major;
+      tmp4 = +major2;
+    }
+    let num = 0;
+    if (tmp5 !== tmp4) {
+      let num2;
+      if (!isMatch) {
+        let num3;
+        if (!isMatch1) {
+          let num4 = 1;
+          if (tmp5 < tmp4) {
+            num4 = -1;
+          }
+          num3 = num4;
+        } else {
+          num3 = 1;
+        }
+        num2 = num3;
+      } else {
+        num2 = -1;
+      }
+      num = num2;
+    }
+    return num;
+  },
+  rcompareIdentifiers(arg0, arg1) {
+    const isMatch = re0.test(arg1);
+    const isMatch1 = re0.test(arg0);
+    let tmp4 = arg0;
+    let tmp5 = arg1;
+    const tmp3 = isMatch && isMatch1;
+    if (tmp3) {
+      tmp5 = +arg1;
+      tmp4 = +arg0;
+    }
+    let num = 0;
+    if (tmp5 !== tmp4) {
+      let num2;
+      if (!isMatch) {
+        let num3;
+        if (!isMatch1) {
+          let num4 = 1;
+          if (tmp5 < tmp4) {
+            num4 = -1;
+          }
+          num3 = num4;
+        } else {
+          num3 = 1;
+        }
+        num2 = num3;
+      } else {
+        num2 = -1;
+      }
+      num = num2;
+    }
+    return num;
   }
 };
+
+export default obj;

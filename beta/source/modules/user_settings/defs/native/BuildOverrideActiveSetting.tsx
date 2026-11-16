@@ -1,26 +1,26 @@
-// Module ID: 18122
-// Function ID: 18123
+// Module ID: 18402
+// Function ID: 18403
 // Name: BuildOverrideActiveSetting
-// Dependencies: [19, 11533, 21, 17944, 504, 13461, 17096, 6191, 18120, 1113, 2267, 5790, 8131, 7666, 11716, 12422, 2]
+// Dependencies: [19, 12367, 21, 18218, 504, 14059, 17372, 6327, 18400, 1113, 2302, 5926, 7988, 10569, 12406, 13308, 2]
 
-// Module 18122 (BuildOverrideActiveSetting)
+// Module 18402 (BuildOverrideActiveSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl3 from "intl" /* 1113 */;
-import _modDef2267 from "module_2267" /* 2267 */;
-import SettingsIcon from "SettingsIcon" /* 7666 */;
-import RefreshIcon from "RefreshIcon" /* 12422 */;
-import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 13461 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 17096 */;
-import openBuildOverridesSettings from "openBuildOverridesSettings" /* 17944 */;
+import _modDef2302 from "module_2302" /* 2302 */;
+import SettingsIcon from "SettingsIcon" /* 10569 */;
+import RefreshIcon from "RefreshIcon" /* 13308 */;
+import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 14059 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 17372 */;
+import openBuildOverridesSettings from "openBuildOverridesSettings" /* 18218 */;
 import react from "react" /* 19 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 11533 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 12367 */;
 import Fragment from "Fragment" /* 21 */;
-import SettingBuilders from "SettingBuilders" /* 11716 */;
+import SettingBuilders from "SettingBuilders" /* 12406 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
-const f114978 = () => {
+const f117480 = () => {
   const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
   let tmp;
   if (overrides != null) {
@@ -36,7 +36,7 @@ function handleBuildOverrideActivePress() {
 let obj = {
   useTitle() {
     const intl = intl3.intl;
-    return intl.string(_modDef2267.jBvMiO);
+    return intl.string(_modDef2302.jBvMiO);
   },
   parent: null,
   IconComponent: RefreshIcon.RefreshIcon,
@@ -45,26 +45,26 @@ let obj = {
     let intl2;
     const items = [BuildOverrideStore];
     const obj = get_initialized;
-    const stateFromStores = obj.useStateFromStores(items, f114978);
+    const stateFromStores = obj.useStateFromStores(items, f117480);
     const obj2 = useIsStaffOrDeveloperSettingPredicate;
     const staffOrDeveloperSettingPredicate = obj2.useStaffOrDeveloperSettingPredicate();
     let tmp6Result;
     if (null != stateFromStores) {
-      const Stack = tmp(6191).Stack;
-      const obj3 = { label: "" + intl.string(_modDef2267.d11XdP) + " ", value: stateFromStores.id };
-      const DevToolsContentSubLabel = tmp(18120).DevToolsContentSubLabel;
+      const Stack = tmp(6327).Stack;
+      const obj3 = { label: "" + intl.string(_modDef2302.d11XdP) + " ", value: stateFromStores.id };
+      const DevToolsContentSubLabel = tmp(18400).DevToolsContentSubLabel;
       intl = tmp(1113).intl;
       const _HermesInternal = HermesInternal;
       const items1 = [React3(DevToolsContentSubLabel, obj3), ];
-      const Stack2 = tmp(6191).Stack;
+      const Stack2 = tmp(6327).Stack;
       const obj4 = { text: intl2.string(intl3.t.tX4xrt), variant: "secondary", onPress: build_overrides_BuildOverrideUtils.clearBuildOverride, grow: true, shrink: true };
-      const Button = tmp(5790).Button;
+      const Button = tmp(5926).Button;
       intl2 = tmp(1113).intl;
       const items2 = [React3(Button, obj4), ];
       let tmp7Result = staffOrDeveloperSettingPredicate;
       if (tmp7Result) {
         const obj5 = { icon: React3(SettingsIcon.SettingsIcon, {}), accessibilityLabel: "Build Overrides", variant: "secondary", onPress: handleBuildOverrideActivePress };
-        const IconButton = tmp(8131).IconButton;
+        const IconButton = tmp(7988).IconButton;
         tmp7Result = tmp7(IconButton, obj5);
       }
       const obj6 = { spacing: 4, children: items1 };
@@ -79,7 +79,7 @@ let obj = {
     let currentBuildOverride;
     const items = [BuildOverrideStore];
     const obj = get_initialized;
-    return null != obj.useStateFromStores(items, f114978);
+    return null != obj.useStateFromStores(items, f117480);
   }
 };
 const createStaticResult = SettingBuilders.createStatic(obj);

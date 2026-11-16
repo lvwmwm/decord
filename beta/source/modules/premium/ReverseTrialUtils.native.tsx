@@ -1,12 +1,12 @@
-// Module ID: 8637
-// Function ID: 8638
+// Module ID: 9317
+// Function ID: 9318
 // Name: ReverseTrialUtils
-// Dependencies: [1385, 504, 2]
+// Dependencies: [1388, 504, 2]
 // Exports: maybeShowReverseTrialFollowupUpsellModal, maybeShowReverseTrialInitialUpsellModal, useIsInReverseTrial, useReverseTrialDaysRemaining
 
-// Module 8637 (ReverseTrialUtils)
+// Module 9317 (ReverseTrialUtils)
 import get_initialized from "get initialized" /* 504 */;
-import UserStore from "UserStore" /* 1385 */;
+import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 let currentUser;

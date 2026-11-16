@@ -1,29 +1,48 @@
-// Module ID: 18339
-// Function ID: 18340
+// Module ID: 18629
+// Function ID: 18630
 // Name: RedesignSettingsCategoryDiscoveryHighlightsScreen
-// Dependencies: [19, 21, 11716, 18331, 18336, 2]
+// Dependencies: [19, 9202, 21, 18620, 12406, 18621, 2]
 
-// Module 18339 (RedesignSettingsCategoryDiscoveryHighlightsScreen)
+// Module 18629 (RedesignSettingsCategoryDiscoveryHighlightsScreen)
 import Fragment from "Fragment" /* 21 */;
-import SettingBuilders from "SettingBuilders" /* 11716 */;
-import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 18331 */;
-import EffectiveNotifSettingsLayoutDefault from "EffectiveNotifSettingsLayout" /* 18336 */;
+import SettingsConstants from "SettingsConstants" /* 9202 */;
+import SettingBuilders from "SettingBuilders" /* 12406 */;
+import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 18620 */;
+import SystemNotifPermissionLayoutDefault from "SystemNotifPermissionLayout" /* 18621 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const jsx = Fragment.jsx;
 const memoResult = react.memo(function RedesignSettingsCategoryDiscoveryHighlightsScreen() {
-  const node = react.useMemo(() => {
-    let items;
-    const obj = { sections: items };
-    const createList = SettingBuilders.createList;
+  let node;
+  let unavailableNode;
+  const memo = react.useMemo(() => {
+    let createList;
+    let items1;
+    let items2;
+    let items3;
+    let obj3;
+    let obj5;
+    let obj6;
+    const obj = MobileNotifSettingsRouteBuilders;
+    const categoryDiscoveryHighlightsSettingsSection = obj.buildCategoryDiscoveryHighlightsSettingsSection();
+    const items = [constants.REDESIGN_HIGHLIGHT_NOTIFICATIONS];
+    const obj2 = { node: createList(obj3), unavailableNode: obj5.createList(obj6) };
+    obj3 = { sections: items2 };
+    const obj4 = { settings: items1 };
+    createList = SettingBuilders.createList;
     SettingBuilders;
-    items = [];
-    const obj2 = MobileNotifSettingsRouteBuilders;
-    items[0] = obj2.buildCategoryDiscoveryHighlightsSettingsSection();
-    return createList(obj);
+    const merged = Object.assign(categoryDiscoveryHighlightsSettingsSection);
+    items1 = [...items];
+    items2 = [obj4];
+    obj6 = { sections: items3 };
+    items3 = [{ settings: items }];
+    obj5 = SettingBuilders;
+    return obj2;
   }, []);
-  return jsx(EffectiveNotifSettingsLayoutDefault, { node });
+  ({ node, unavailableNode } = memo);
+  return jsx(SystemNotifPermissionLayoutDefault, { node, unavailableNode, category: "444_other" });
 });
 const result = size.fileFinishedImporting("modules/notifications/settings/native/routes/RedesignSettingsCategoryDiscoveryHighlightsScreen.tsx");
 

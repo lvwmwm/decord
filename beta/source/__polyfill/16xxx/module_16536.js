@@ -1,14 +1,12 @@
 // Module ID: 16536
 // Function ID: 16537
-// Dependencies: [16515, 16514]
+// Dependencies: [16535]
 
 // Module 16536
-import _mod16514 from "module_16514" /* 16514 */;
-import _mod16515 from "module_16515" /* 16515 */;
+import _mod16535 from "module_16535" /* 16535 */;
 
-let tmp = Object.keys || (function keys(arg0) {
-  const tmp = _mod16515;
-  return tmp(arg0, _mod16514);
-});
 
-export default tmp;
+export default (arr, arg1) => {
+  let closure_0 = arg1;
+  return arr.sort((arg0, arg1) => _mod16535(arg0, arg1, closure_0));
+};

@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/conjure/presence/native/images", width: 80, height: 80, scales: [1, 2, 3], hash: "d0ac2ff8bbd27dac2fa6efc885f4d1a1", name: "conjure_activity_light", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/nuf/native/images", width: 221, height: 195, scales: [1, 2, 3], hash: "3a31ec2d5aeb0eedce9411671227bdc1", name: "discoverability-header", type: "png" });

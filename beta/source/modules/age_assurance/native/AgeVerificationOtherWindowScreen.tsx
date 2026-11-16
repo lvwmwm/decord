@@ -1,21 +1,21 @@
-// Module ID: 8123
-// Function ID: 8124
+// Module ID: 8257
+// Function ID: 8258
 // Name: AgeVerificationOtherWindowScreen
-// Dependencies: [19, 21, 5170, 1113, 3252, 8074, 8076, 6191, 7231, 575, 5783, 2]
+// Dependencies: [19, 21, 5306, 1113, 3321, 8208, 8210, 6327, 7786, 575, 5919, 2]
 // Exports: default
 
-// Module 8123 (AgeVerificationOtherWindowScreen)
+// Module 8257 (AgeVerificationOtherWindowScreen)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import _modDef3252 from "module_3252" /* 3252 */;
-import Text_Text from "Text/Text" /* 5783 */;
-import Stack_Stack from "Stack/Stack" /* 6191 */;
-import MobilePhoneIcon2 from "MobilePhoneIcon" /* 7231 */;
-import ModalScreen2 from "ModalScreen" /* 8074 */;
-import ModalContent2 from "ModalContent" /* 8076 */;
+import _modDef3321 from "module_3321" /* 3321 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import Stack_Stack from "Stack/Stack" /* 6327 */;
+import MobilePhoneIcon2 from "MobilePhoneIcon" /* 7786 */;
+import ModalScreen2 from "ModalScreen" /* 8208 */;
+import ModalContent2 from "ModalContent" /* 8210 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -39,7 +39,7 @@ export default function AgeVerificationOtherWindowScreen(copy) {
   }
   if (title == null) {
     const intl = intl3.intl;
-    title = intl.string(_modDef3252.MLPgsX);
+    title = intl.string(_modDef3321.MLPgsX);
   }
   let description;
   if (copy != null) {
@@ -47,7 +47,7 @@ export default function AgeVerificationOtherWindowScreen(copy) {
   }
   if (description == null) {
     const intl2 = intl3.intl;
-    description = intl2.string(_modDef3252.VcZF1q);
+    description = intl2.string(_modDef3321.VcZF1q);
   }
   const obj = { children: _false(ModalContent, obj2) };
   const ModalScreen = ModalScreen2.ModalScreen;

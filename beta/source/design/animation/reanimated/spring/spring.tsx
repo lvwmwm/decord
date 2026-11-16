@@ -1,13 +1,13 @@
-// Module ID: 5793
-// Function ID: 5794
+// Module ID: 5929
+// Function ID: 5930
 // Name: spring/spring
-// Dependencies: [5403, 5404, 1652, 2]
+// Dependencies: [5539, 5540, 1655, 2]
 // Exports: withSpring
 
-// Module 5793 (spring/spring)
-import _mod1652 from "module_1652" /* 1652 */;
-import ReanimatedConstants from "ReanimatedConstants" /* 5403 */;
-import reanimated_AccessibilityPreferencesSharedValue from "reanimated/AccessibilityPreferencesSharedValue" /* 5404 */;
+// Module 5929 (spring/spring)
+import _mod1655 from "module_1655" /* 1655 */;
+import ReanimatedConstants from "ReanimatedConstants" /* 5539 */;
+import reanimated_AccessibilityPreferencesSharedValue from "reanimated/AccessibilityPreferencesSharedValue" /* 5540 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
@@ -19,8 +19,8 @@ const items = [{ code: "(function withSpring_springTsx1(toValue,config,shouldAni
 const CONFIG_NEVER_ANIMATE = ReanimatedConstants.CONFIG_NEVER_ANIMATE;
 items[1] = reanimated_AccessibilityPreferencesSharedValue.accessibilityPreferencesSharedValue;
 items[2] = CONFIG_NEVER_ANIMATE;
-items[3] = _mod1652.ReduceMotion;
-items[4] = _mod1652.withSpring;
+items[3] = _mod1655.ReduceMotion;
+items[4] = _mod1655.withSpring;
 let c0;
 let c1;
 let c2;

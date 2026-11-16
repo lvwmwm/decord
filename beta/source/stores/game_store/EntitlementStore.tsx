@@ -1,20 +1,20 @@
-// Module ID: 7687
-// Function ID: 7688
+// Module ID: 8530
+// Function ID: 8531
 // Name: EntitlementStore
-// Dependencies: [2163, 2160, 6984, 1387, 504, 12, 7688, 7689, 2170, 1075, 572, 2]
+// Dependencies: [2166, 2163, 7070, 1390, 504, 12, 8531, 8532, 2173, 1075, 572, 2]
 
-// Module 7687 (EntitlementStore)
+// Module 8530 (EntitlementStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedAll from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import FractionalPremiumSKUs from "FractionalPremiumSKUs" /* 1075 */;
-import PremiumConstants from "PremiumConstants" /* 1387 */;
-import EntitlementTypes from "EntitlementTypes" /* 2170 */;
-import LibraryApplicationUtils from "LibraryApplicationUtils" /* 7688 */;
-import EntitlementSourceTypes from "EntitlementSourceTypes" /* 7689 */;
-import EntitlementRecord from "EntitlementRecord" /* 2163 */;
-import LibraryApplicationStore from "LibraryApplicationStore" /* 2160 */;
-import SKUStore from "SKUStore" /* 6984 */;
+import PremiumConstants from "PremiumConstants" /* 1390 */;
+import EntitlementTypes from "EntitlementTypes" /* 2173 */;
+import LibraryApplicationUtils from "LibraryApplicationUtils" /* 8531 */;
+import EntitlementSourceTypes from "EntitlementSourceTypes" /* 8532 */;
+import EntitlementRecord from "EntitlementRecord" /* 2166 */;
+import LibraryApplicationStore from "LibraryApplicationStore" /* 2163 */;
+import SKUStore from "SKUStore" /* 7070 */;
 import size from "module_2" /* 2 */;
 
 let closure_10, closure_7, closure_9, set2;
@@ -77,7 +77,7 @@ let c12 = false;
 let c13 = false;
 let set = new Set();
 let set1 = new Set();
-const authStore4 = {};
+const authStore3 = {};
 const Store = get_initializedAll.Store;
 class EntitlementStore extends Store {
   initialize() {

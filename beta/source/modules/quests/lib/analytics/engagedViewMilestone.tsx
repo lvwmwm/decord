@@ -1,10 +1,10 @@
-// Module ID: 17293
-// Function ID: 17294
+// Module ID: 17564
+// Function ID: 17565
 // Name: engagedViewMilestone
 // Dependencies: [2]
 // Exports: createEngagedViewEmitter, resetEngagedViewMilestoneStateForTests
 
-// Module 17293 (engagedViewMilestone)
+// Module 17564 (engagedViewMilestone)
 import size from "module_2" /* 2 */;
 
 const set = new Set();

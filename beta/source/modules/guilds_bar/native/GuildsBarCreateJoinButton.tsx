@@ -1,22 +1,22 @@
-// Module ID: 18812
-// Function ID: 18813
+// Module ID: 19128
+// Function ID: 19129
 // Name: GuildsBarCreateJoinButton
-// Dependencies: [5, 19, 17, 5203, 1072, 1387, 21, 5170, 10402, 2118, 14545, 7473, 9908, 7445, 18740, 504, 18755, 1113, 18813, 11665, 575, 2]
+// Dependencies: [5, 19, 17, 5339, 1072, 1390, 21, 5306, 11345, 2121, 15026, 14112, 11170, 7937, 19074, 504, 19025, 1113, 19129, 13466, 575, 2]
 
-// Module 18812 (GuildsBarCreateJoinButton)
+// Module 19128 (GuildsBarCreateJoinButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import PremiumConstants from "PremiumConstants" /* 1387 */;
-import CirclePlusIcon2 from "CirclePlusIcon" /* 11665 */;
-import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 18740 */;
+import PremiumConstants from "PremiumConstants" /* 1390 */;
+import CirclePlusIcon2 from "CirclePlusIcon" /* 13466 */;
+import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 19074 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5203 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
 import Constants from "Constants" /* 1072 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -44,7 +44,7 @@ let obj = function _handleCreateJoinGuildPress() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       try {
@@ -106,7 +106,7 @@ let obj = function _handleCreateJoinGuildPress() {
             closure_1.openCreateGuildModal();
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } catch (tmp27) {
         c3 = 3;
@@ -152,7 +152,7 @@ const memoResult = react.memo(function GuildsBarCreateJoinButton() {
     };
     return obj;
   }, []);
-  obj4 = { selected: stateFromStores, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, overState: "y", config: memo, label: intl.string(intl2.t.l5WIbf), expandedChildren: "MEDIA_ENGINE_SET_ENABLE_HARDWARE_MUTE_NOTICE", children: jsx(CirclePlusIcon, obj5) };
+  obj4 = { selected: stateFromStores, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, overState: "y", config: memo, label: intl.string(intl2.t.l5WIbf), expandedChildren: 24, children: jsx(CirclePlusIcon, obj5) };
   tmp7 = GuildsBarAnimatedItemWrapperDefault;
   intl = intl2.intl;
   CirclePlusIcon = CirclePlusIcon2.CirclePlusIcon;

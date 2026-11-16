@@ -1,25 +1,25 @@
-// Module ID: 19826
-// Function ID: 19827
+// Module ID: 20157
+// Function ID: 20158
 // Name: RestrictedHoursModal
-// Dependencies: [32, 19, 17, 1385, 21, 5170, 575, 7048, 1627, 19827, 504, 1652, 5402, 1113, 2664, 8074, 5874, 19828, 5329, 5783, 7264, 19829, 6827, 19825, 6186, 11658, 2]
+// Dependencies: [32, 19, 17, 1388, 21, 5306, 575, 7418, 1630, 20158, 504, 1655, 5538, 1113, 2701, 8208, 6010, 20159, 5465, 5919, 7490, 20160, 6834, 20156, 6322, 12523, 2]
 // Exports: default
 
-// Module 19826 (RestrictedHoursModal)
+// Module 20157 (RestrictedHoursModal)
 import nativeDefault from "native" /* 575 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5402 */;
-import Text_Text from "Text/Text" /* 5783 */;
-import useBackPressHandlerDefault from "useBackPressHandler" /* 6186 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6827 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7048 */;
-import RestrictedHoursActionCreators from "RestrictedHoursActionCreators" /* 19825 */;
-import useIsInRestrictedHoursDefault from "useIsInRestrictedHours" /* 19829 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import useBackPressHandlerDefault from "useBackPressHandler" /* 6322 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6834 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7418 */;
+import RestrictedHoursActionCreators from "RestrictedHoursActionCreators" /* 20156 */;
+import useIsInRestrictedHoursDefault from "useIsInRestrictedHours" /* 20160 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1385 */;
+import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -108,31 +108,31 @@ function RestrictedHoursScreen(onLogin) {
     const obj = { duration: 3000, easing: Easing.bezier(0.24, 0.27, 0.58, 1) };
     const withTiming = timing_timing.withTiming;
     timing_timing;
-    Easing = _mod1652.Easing;
+    Easing = _mod1655.Easing;
     const result = set(withTiming(1, obj));
     set2 = sharedValue1.set;
-    const withDelay = _mod1652.withDelay;
-    _mod1652;
+    const withDelay = _mod1655.withDelay;
+    _mod1655;
     const obj2 = { duration: 1500, easing: Easing2.bezier(0, 0, 1, 1) };
     const withTiming2 = timing_timing.withTiming;
     timing_timing;
-    Easing2 = _mod1652.Easing;
+    Easing2 = _mod1655.Easing;
     set2(withDelay(1500, withTiming2(1, obj2)));
     set3 = sharedValue2.set;
-    const withDelay2 = _mod1652.withDelay;
-    _mod1652;
+    const withDelay2 = _mod1655.withDelay;
+    _mod1655;
     const obj3 = { duration: 1000, easing: Easing3.bezier(0.1, 0.24, 0.32, 1) };
     const withTiming3 = timing_timing.withTiming;
     timing_timing;
-    Easing3 = _mod1652.Easing;
+    Easing3 = _mod1655.Easing;
     set3(withDelay2(2000, withTiming3(1, obj3)));
     const set4 = sharedValue3.set;
-    const withDelay3 = _mod1652.withDelay;
-    _mod1652;
+    const withDelay3 = _mod1655.withDelay;
+    _mod1655;
     const obj4 = { duration: 1000, easing: Easing4.bezier(0.1, 0.24, 0.32, 1) };
     const withTiming4 = timing_timing.withTiming;
     timing_timing;
-    Easing4 = _mod1652.Easing;
+    Easing4 = _mod1655.Easing;
     set4(withDelay3(2000, withTiming4(1, obj4)));
   }, items1);
   const items2 = [closure_13, sharedValue];

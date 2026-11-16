@@ -1,12 +1,12 @@
-// Module ID: 17267
-// Function ID: 17268
+// Module ID: 17538
+// Function ID: 17539
 // Name: AnalyticsLocationsProvider
-// Dependencies: [19, 21, 7420, 2]
+// Dependencies: [19, 21, 7918, 2]
 // Exports: AnalyticsLocationsProvider
 
-// Module 17267 (AnalyticsLocationsProvider)
+// Module 17538 (AnalyticsLocationsProvider)
 import Fragment from "Fragment" /* 21 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 7420 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 7918 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

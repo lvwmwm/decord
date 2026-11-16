@@ -1,12 +1,12 @@
-// Module ID: 14082
-// Function ID: 14083
+// Module ID: 14665
+// Function ID: 14666
 // Name: useVoiceMessageBottomInset
-// Dependencies: [19, 5767, 7050, 11411, 1652, 5793, 11420, 2]
+// Dependencies: [19, 5903, 7475, 12008, 1655, 5929, 12017, 2]
 // Exports: default
 
-// Module 14082 (useVoiceMessageBottomInset)
-import spring_spring from "spring/spring" /* 5793 */;
-import VoicePanelSheetMorph from "VoicePanelSheetMorph" /* 11420 */;
+// Module 14665 (useVoiceMessageBottomInset)
+import spring_spring from "spring/spring" /* 5929 */;
+import VoicePanelSheetMorph from "VoicePanelSheetMorph" /* 12017 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -21,11 +21,11 @@ export default function useVoiceMessageBottomInset() {
   let tmp5;
   let tmp6;
   let tmp7;
-  const insets = sharedValue(5767)({ includeCustomKeyboardHeight: true, includeKeyboardHeight: true }).insets;
-  const tmp = sharedValue(7050)(insets.bottom);
-  let obj = channelDockHeight(11411);
+  const insets = sharedValue(5903)({ includeCustomKeyboardHeight: true, includeKeyboardHeight: true }).insets;
+  const tmp = sharedValue(7475)(insets.bottom);
+  let obj = channelDockHeight(12008);
   channelDockHeight = obj.useChannelDockHeight();
-  const obj2 = channelDockHeight(1652);
+  const obj2 = channelDockHeight(1655);
   sharedValue = obj2.useSharedValue(channelDockHeight);
   const items = [sharedValue, channelDockHeight];
   const effect = react.useEffect(() => {
@@ -45,7 +45,7 @@ export default function useVoiceMessageBottomInset() {
   useVoiceMessageBottomInsetTsx1.__closure = items2;
   useVoiceMessageBottomInsetTsx1.__workletHash = 9835465598919;
   useVoiceMessageBottomInsetTsx1.__initData = tmp5;
-  const obj3 = channelDockHeight(1652);
+  const obj3 = channelDockHeight(1655);
   const obj4 = { bottomInset: obj3.useDerivedValue(useVoiceMessageBottomInsetTsx1), targetBottomInset: Math.max(insets.bottom, channelDockHeight) };
   return obj4;
 };

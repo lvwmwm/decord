@@ -1,13 +1,13 @@
-// Module ID: 8435
-// Function ID: 8436
+// Module ID: 8991
+// Function ID: 8992
 // Name: imageConversion
-// Dependencies: [5, 3, 6237, 8342, 4981, 2]
+// Dependencies: [5, 3, 6373, 8898, 5116, 2]
 // Exports: convertFileToJpeg
 
-// Module 8435 (imageConversion)
+// Module 8991 (imageConversion)
 import LoggerDefault from "Logger" /* 3 */;
-import MediaTypes from "MediaTypes" /* 6237 */;
-import imageFilename from "imageFilename" /* 8342 */;
+import MediaTypes from "MediaTypes" /* 6373 */;
+import imageFilename from "imageFilename" /* 8898 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -46,7 +46,7 @@ let obj = function _convertViaSysimg() {
         obj = { value, done: true };
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       let c6;
@@ -95,7 +95,7 @@ let obj = function _convertViaSysimg() {
             };
             c7 = 1;
             c8 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "Path", done: true };
           }
         } else if (1 === c7) {
           if (arg0 === 1) {

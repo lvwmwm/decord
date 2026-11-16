@@ -1,33 +1,33 @@
-// Module ID: 10954
-// Function ID: 10955
+// Module ID: 10895
+// Function ID: 10896
 // Name: ChannelLongPressActionSheet
-// Dependencies: [5, 19, 10955, 6842, 5024, 6949, 5023, 7382, 5019, 7815, 5041, 5102, 6930, 5112, 5073, 6863, 1385, 1072, 10290, 21, 8052, 2118, 8041, 1113, 10956, 8854, 5881, 7582, 5808, 9896, 10383, 10291, 5883, 6831, 10958, 3608, 9881, 1099, 10979, 8750, 10981, 10996, 4026, 10997, 5406, 10999, 11136, 11137, 11139, 9231, 11141, 7378, 5347, 7153, 11143, 8129, 11144, 11145, 11147, 11149, 11150, 11152, 7197, 7375, 11154, 9321, 7384, 7379, 11156, 8301, 8749, 11158, 11159, 8773, 8747, 11160, 14660, 5920, 8043, 10237, 8455, 14661, 14662, 12077, 14663, 7195, 6990, 7666, 5887, 9147, 10675, 7451, 5868, 7420, 7445, 10983, 504, 5027, 6973, 9990, 4995, 7053, 1187, 14666, 11307, 14667, 14673, 7516, 14678, 14679, 1449, 12019, 14681, 9800, 7459, 1624, 11308, 7461, 2]
+// Dependencies: [5, 19, 10896, 6849, 5160, 7035, 5159, 7881, 5155, 8730, 5177, 5238, 7015, 5248, 5209, 6948, 1388, 1072, 10897, 21, 7678, 2121, 6890, 1113, 10898, 8476, 6017, 8134, 5944, 10900, 10901, 10902, 6019, 6838, 10914, 3679, 10939, 1099, 10941, 8072, 10943, 10975, 4131, 10976, 5542, 10978, 10536, 10528, 10981, 8460, 10539, 7877, 5483, 7549, 10983, 8160, 10984, 10985, 10987, 10989, 10990, 10992, 7635, 7874, 10994, 10996, 7883, 7878, 10997, 10919, 8071, 10999, 11000, 8017, 8069, 11001, 15146, 6056, 6893, 11328, 12063, 15147, 15148, 12295, 15149, 7633, 6907, 10569, 6023, 8143, 11629, 7943, 6004, 7918, 7937, 10945, 504, 5163, 7059, 9106, 5131, 7720, 1187, 15152, 11897, 15153, 15161, 7260, 15166, 15167, 1452, 12881, 15169, 10516, 7951, 1627, 11898, 7953, 2]
 // Exports: default
 
-// Module 10954 (ChannelLongPressActionSheet)
+// Module 10895 (ChannelLongPressActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import asyncRequire from "asyncRequire" /* 2118 */;
-import StageChannelPermissions from "StageChannelPermissions" /* 5027 */;
-import ActionSheetRow2 from "ActionSheetRow" /* 7461 */;
-import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10290 */;
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10955 */;
-import EmbeddedAppShimExperiment from "EmbeddedAppShimExperiment" /* 12019 */;
+import asyncRequire from "asyncRequire" /* 2121 */;
+import StageChannelPermissions from "StageChannelPermissions" /* 5163 */;
+import ActionSheetRow2 from "ActionSheetRow" /* 7953 */;
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10896 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10897 */;
+import EmbeddedAppShimExperiment from "EmbeddedAppShimExperiment" /* 12881 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelSpoilerAgreeStore from "ChannelSpoilerAgreeStore" /* 6842 */;
-import StageInstanceStore from "StageInstanceStore" /* 5024 */;
-import ActiveThreadsStore from "ActiveThreadsStore" /* 6949 */;
-import ChannelRecord from "ChannelRecord" /* 5023 */;
-import CategoryCollapseStore from "CategoryCollapseStore" /* 7382 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 7815 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import PermissionStore from "PermissionStore" /* 5102 */;
-import ReadStateStore from "ReadStateStore" /* 6930 */;
-import RelationshipStore from "RelationshipStore" /* 5112 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5073 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6863 */;
-import UserStore from "UserStore" /* 1385 */;
+import ChannelSpoilerAgreeStore from "ChannelSpoilerAgreeStore" /* 6849 */;
+import StageInstanceStore from "StageInstanceStore" /* 5160 */;
+import ActiveThreadsStore from "ActiveThreadsStore" /* 7035 */;
+import ChannelRecord from "ChannelRecord" /* 5159 */;
+import CategoryCollapseStore from "CategoryCollapseStore" /* 7881 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 8730 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import PermissionStore from "PermissionStore" /* 5238 */;
+import ReadStateStore from "ReadStateStore" /* 7015 */;
+import RelationshipStore from "RelationshipStore" /* 5248 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6948 */;
+import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -65,7 +65,7 @@ let obj = function _handleVoiceOrStageChannelConnectPress() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -114,7 +114,7 @@ let obj = function _handleVoiceOrStageChannelConnectPress() {
               value.connectAndOpen(guildStageVoice);
             }
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } catch (tmp11) {
           c3 = 3;
@@ -127,7 +127,6 @@ let obj = function _handleVoiceOrStageChannelConnectPress() {
 };
 function ChannelLongPressActionSheetConnected(channel) {
   let ActionSheet;
-  let ActionSheetIconHeader;
   let CopyIcon;
   let canConnect;
   let canCreateInstantInvite;
@@ -139,6 +138,7 @@ function ChannelLongPressActionSheetConnected(channel) {
   let constants6;
   let currentUser;
   let currentlySelectedChannelId;
+  let header;
   let intl;
   let intl12;
   let intl14;
@@ -171,9 +171,6 @@ function ChannelLongPressActionSheetConnected(channel) {
   let items16;
   let items18;
   let obj58;
-  let obj59;
-  let subtitle;
-  let title;
   let tmp24;
   let tmp25;
   let tmp5Result30;
@@ -952,7 +949,7 @@ function ChannelLongPressActionSheetConnected(channel) {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "ulw" };
                   }
                 } else {
                   try {
@@ -981,7 +978,7 @@ function ChannelLongPressActionSheetConnected(channel) {
                     } else {
                       value.openEndStageModal(closure_128_0);
                       paths = 3;
-                      return { value: "HermesInternal", done: null };
+                      return { value: "HermesInternal", done: "ulw" };
                     }
                   } catch (tmp9) {
                     paths = 3;
@@ -1173,7 +1170,7 @@ function ChannelLongPressActionSheetConnected(channel) {
     obj58 = {
       showGradient: true,
       startExpanded: tmp5Result30.isMetaQuest(),
-      header: tmp24(ActionSheetIconHeader, obj59),
+      header,
       children: items14.map((buttons) => {
           buttons = buttons.buttons;
           const Group = ActionSheetRow2.ActionSheetRow.Group;
@@ -1207,32 +1204,11 @@ function ChannelLongPressActionSheetConnected(channel) {
         })
     };
     ActionSheet = tmp5(tmp2[114]).ActionSheet;
-    const header = tmp50.header;
-    let icon;
+    header = tmp50.header;
     tmp5Result30 = tmp5(tmp2[115]);
-    ActionSheetIconHeader = tmp5(tmp2[116]).ActionSheetIconHeader;
-    if (header != null) {
-      icon = header.icon;
-    }
-    if (icon == null) {
-      icon = tmp25;
-    }
-    const header2 = tmp50.header;
-    obj59 = { icon, title, subtitle };
-    title = undefined;
-    if (header2 != null) {
-      title = header2.title;
-    }
-    if (title == null) {
-      title = tmpResultResult;
-    }
-    const header3 = tmp50.header;
-    subtitle = undefined;
-    if (header3 != null) {
-      subtitle = header3.subtitle;
-    }
-    if (subtitle == null) {
-      subtitle = formatToPlainStringResult;
+    if (header == null) {
+      const obj59 = { icon: tmp25, title: tmpResultResult, subtitle: formatToPlainStringResult };
+      header = tmp24(tmp5(tmp2[116]).ActionSheetIconHeader, obj59);
     }
     return tmp24(AnalyticsLocationProvider, obj57);
   }

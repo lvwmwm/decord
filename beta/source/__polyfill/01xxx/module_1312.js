@@ -4,4 +4,4 @@
 
 // Module 1312
 
-export default RangeError;
+export default Function.prototype.apply;

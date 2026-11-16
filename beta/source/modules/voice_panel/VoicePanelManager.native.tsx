@@ -1,14 +1,14 @@
-// Module ID: 20467
-// Function ID: 20468
+// Module ID: 20797
+// Function ID: 20798
 // Name: VoicePanelManager
-// Dependencies: [5019, 5925, 6963, 11359, 7383, 2]
+// Dependencies: [5155, 6061, 6891, 11951, 7882, 2]
 
-// Module 20467 (VoicePanelManager)
-import StageChannelUnifiedCallExperiment from "StageChannelUnifiedCallExperiment" /* 11359 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5925 */;
-import VoicePanelStore from "VoicePanelStore" /* 6963 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7383 */;
+// Module 20797 (VoicePanelManager)
+import StageChannelUnifiedCallExperiment from "StageChannelUnifiedCallExperiment" /* 11951 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
+import VoicePanelStore from "VoicePanelStore" /* 6891 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
 import size from "module_2" /* 2 */;
 
 class VoicePanelManager extends AutomaticLifecycleManager {

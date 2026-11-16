@@ -1,22 +1,22 @@
-// Module ID: 13495
-// Function ID: 13496
+// Module ID: 14102
+// Function ID: 14103
 // Name: handleTapConjureProjectEmbed
-// Dependencies: [5, 6932, 11744, 11747, 11925, 13033, 5868, 1113, 4026, 9800, 13028, 13040, 2118, 2]
+// Dependencies: [5, 7017, 12439, 12442, 12757, 13781, 6004, 1113, 4131, 10516, 13776, 13790, 2121, 2]
 // Exports: default
 
-// Module 13495 (handleTapConjureProjectEmbed)
-import ConjureProjectStore2 from "ConjureProjectStore" /* 6932 */;
-import conjureSharedProjectCoverTargetDefault from "conjureSharedProjectCoverTarget" /* 11747 */;
-import launchConjureSharedProjectDefault from "launchConjureSharedProject" /* 13033 */;
+// Module 14102 (handleTapConjureProjectEmbed)
+import ConjureProjectStore2 from "ConjureProjectStore" /* 7017 */;
+import conjureSharedProjectCoverTargetDefault from "conjureSharedProjectCoverTarget" /* 12442 */;
+import launchConjureSharedProjectDefault from "launchConjureSharedProject" /* 13781 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureSharedProjectStore from "ConjureSharedProjectStore" /* 11744 */;
+import ConjureSharedProjectStore from "ConjureSharedProjectStore" /* 12439 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let closure_4, project, status;
 
 let tmp;
-const openFrameDefault = tmp(11925);
+const openFrameDefault = tmp(12757);
 function runConjureSharedProjectCoverAction(applicationId, arg1, arg2) {
   let channelId;
   let guildId;
@@ -55,7 +55,7 @@ let obj = function _launchOrReport() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -94,7 +94,7 @@ let obj = function _launchOrReport() {
               c5 = 0;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } catch (tmp18) {
           if (0 === c5) {
@@ -128,7 +128,7 @@ obj = function _handleTapConjureProjectEmbed() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -211,7 +211,7 @@ obj = function _handleTapConjureProjectEmbed() {
             _default(project, guildId, str, closure_0);
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         } catch (tmp32) {
           c6 = 3;
           throw tmp32;

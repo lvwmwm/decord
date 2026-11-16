@@ -1,22 +1,22 @@
-// Module ID: 15655
-// Function ID: 15656
+// Module ID: 15314
+// Function ID: 15315
 // Name: AppIconUtils
-// Dependencies: [32, 5, 19, 10134, 1072, 1387, 3, 15656, 5196, 5753, 572, 1252, 5869, 1113, 7668, 1624, 2]
+// Dependencies: [32, 5, 19, 11179, 1072, 1390, 3, 15315, 5332, 5889, 572, 1256, 6005, 1113, 8604, 1627, 2]
 // Exports: isAppIconsSupported, navigateToAppIconSettings, setAppIcon, useAppIcons, useCurrentAppIcon
 
-// Module 15655 (AppIconUtils)
+// Module 15314 (AppIconUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import PremiumConstants from "PremiumConstants" /* 1387 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1624 */;
-import AppIconTypes from "AppIconTypes" /* 5196 */;
-import useMountEffectDefault from "useMountEffect" /* 5753 */;
-import openUserSettings from "openUserSettings" /* 7668 */;
-import react_nativeDefault from "react-native" /* 15656 */;
+import PremiumConstants from "PremiumConstants" /* 1390 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1627 */;
+import AppIconTypes from "AppIconTypes" /* 5332 */;
+import useMountEffectDefault from "useMountEffect" /* 5889 */;
+import openUserSettings from "openUserSettings" /* 8604 */;
+import react_nativeDefault from "react-native" /* 15315 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import AppIconConstants from "AppIconConstants" /* 10134 */;
+import AppIconConstants from "AppIconConstants" /* 11179 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -45,7 +45,7 @@ let obj = function _fetchCurrentAppIcon() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       let c3;
@@ -123,7 +123,7 @@ obj = function _setAppIcon() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -146,7 +146,7 @@ obj = function _setAppIcon() {
               flag = obj5.showErrorToast ?? true;
               c7 = 1;
               c8 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "Path", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -243,7 +243,7 @@ export function useCurrentAppIcon() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       try {
@@ -275,7 +275,7 @@ export function useCurrentAppIcon() {
           closure_0 = value;
           closure_129_0(closure_0);
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } catch (tmp11) {
         c3 = 3;
@@ -315,7 +315,7 @@ export function useAppIcons() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       try {
@@ -347,7 +347,7 @@ export function useAppIcons() {
           closure_0 = value;
           closure_129_0(closure_0);
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } catch (tmp11) {
         c3 = 3;
@@ -382,7 +382,7 @@ export function useAppIcons() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       let c4;
@@ -442,7 +442,7 @@ export function useAppIcons() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } catch (tmp22) {
         closure_3 = tmp22;

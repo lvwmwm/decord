@@ -1,11 +1,11 @@
-// Module ID: 12378
-// Function ID: 12379
+// Module ID: 13267
+// Function ID: 13268
 // Name: conjureExternalConnectionRequests
-// Dependencies: [5, 11113, 12379, 2]
+// Dependencies: [5, 13219, 13268, 2]
 // Exports: fetchProjectMcpConnection, formatMcpConnectionExpiry, requestExternalAuthorizeUrl
 
-// Module 12378 (conjureExternalConnectionRequests)
-import conjureWorkerFetch from "conjureWorkerFetch" /* 11113 */;
+// Module 13267 (conjureExternalConnectionRequests)
+import conjureWorkerFetch from "conjureWorkerFetch" /* 13219 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let obj = function _fetchProjectMcpConnection() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       try {
@@ -54,7 +54,7 @@ let obj = function _fetchProjectMcpConnection() {
             closure_3 = undefined;
             expiresAtMs = 1;
             c5 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "Path", done: true };
           }
         } else if (1 === expiresAtMs) {
           if (arg0 === 1) {
@@ -152,7 +152,7 @@ obj = function _requestExternalAuthorizeUrl() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {

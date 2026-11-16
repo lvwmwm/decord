@@ -1,31 +1,29 @@
-// Module ID: 13953
-// Function ID: 13954
+// Module ID: 14538
+// Function ID: 14539
 // Name: TraitPicker
-// Dependencies: [19, 17, 6231, 21, 5170, 13954, 575, 6598, 1113, 3248, 5783, 13909, 13956, 1493, 13958, 13959, 13701, 5350, 13960, 2]
+// Dependencies: [19, 17, 6367, 21, 5306, 14539, 575, 6734, 1113, 3317, 5919, 14271, 14541, 1496, 14537, 14543, 14260, 5486, 14544, 2]
 // Exports: default
 
-// Module 13953 (TraitPicker)
+// Module 14538 (TraitPicker)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
-import _modDef3248 from "module_3248" /* 3248 */;
-import useWindowSizeClassifier from "useWindowSizeClassifier" /* 5350 */;
-import Text_Text from "Text/Text" /* 5783 */;
-import CheckpointConstants from "CheckpointConstants" /* 6231 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6598 */;
-import CheckpointActionCreators from "CheckpointActionCreators" /* 13701 */;
-import CheckpointTextDefault from "CheckpointText" /* 13909 */;
-import TraitOptionList from "TraitOptionList" /* 13954 */;
-import TraitOptionDetails from "TraitOptionDetails" /* 13956 */;
-import useTraitPickerOptions from "useTraitPickerOptions" /* 13958 */;
-import react2 from "react" /* 13959 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
+import _modDef3317 from "module_3317" /* 3317 */;
+import useWindowSizeClassifier from "useWindowSizeClassifier" /* 5486 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import CheckpointConstants from "CheckpointConstants" /* 6367 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6734 */;
+import CheckpointActionCreators from "CheckpointActionCreators" /* 14260 */;
+import CheckpointTextDefault from "CheckpointText" /* 14271 */;
+import useTraitPickerOptions from "useTraitPickerOptions" /* 14537 */;
+import TraitOptionList from "TraitOptionList" /* 14539 */;
+import TraitOptionDetailsDefault from "TraitOptionDetails" /* 14541 */;
+import react2 from "react" /* 14543 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
-
-const TraitOptionDetailsDefault = TraitOptionDetails;
 
 let c9;
 let closure_4;
@@ -37,7 +35,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp;
-const TraitOptionListDefault = tmp(13954);
+const TraitOptionListDefault = tmp(14539);
 function EarnedCountHeader(customizationOption) {
   let earnedCount;
   let intl2;
@@ -56,8 +54,8 @@ function EarnedCountHeader(customizationOption) {
       return arg0;
     }
   };
-  const combined = "" + customizationOptionName + ", " + intl.formatToPlainString(_modDef3248.Vfq58K, obj2);
-  const obj3 = { variant: "body-sm/medium", color: "text-default", style: tmp.earnedRow, accessibilityRole: "header", accessibilityLabel: combined, children: intl2.format(_modDef3248.Vfq58K, obj4) };
+  const combined = "" + customizationOptionName + ", " + intl.formatToPlainString(_modDef3317.Vfq58K, obj2);
+  const obj3 = { variant: "body-sm/medium", color: "text-default", style: tmp.earnedRow, accessibilityRole: "header", accessibilityLabel: combined, children: intl2.format(_modDef3317.Vfq58K, obj4) };
   const Text = Text_Text.Text;
   intl2 = intl3.intl;
   obj4 = {
@@ -72,13 +70,12 @@ function EarnedCountHeader(customizationOption) {
 }
 function TraitPickerDetails(arg0) {
   let asset;
-  let descriptionVisibility;
-  ({ asset, descriptionVisibility } = arg0);
-  const obj = { style: closure_10().details, children: metroImportDefault(TraitOptionDetailsDefault, { asset, descriptionVisibility }) };
+  let hideRarity;
+  ({ asset, hideRarity } = arg0);
+  const obj = { style: closure_10().details, children: metroImportDefault(TraitOptionDetailsDefault, { asset, hideRarity }) };
   return metroImportDefault(hasOwnProperty, obj);
 }
 function TraitPickerPortrait(selectedAsset) {
-  let DescriptionVisibility;
   let header;
   let isRarityVisible;
   let items;
@@ -87,19 +84,17 @@ function TraitPickerPortrait(selectedAsset) {
   ({ header, optionList, isRarityVisible } = selectedAsset);
   const obj = { style: closure_10().container, children: items };
   items = [header, optionList, ];
-  let tmp4Result = null != selectedAsset;
+  let tmp3 = null != selectedAsset;
   const tmp = metroImportAll;
   const tmp2 = hasOwnProperty;
-  if (tmp4Result) {
-    const obj2 = { asset: selectedAsset, descriptionVisibility: isRarityVisible ? DescriptionVisibility.VISIBLE : DescriptionVisibility.INVISIBLE };
-    DescriptionVisibility = TraitOptionDetails.DescriptionVisibility;
-    tmp4Result = metroImportDefault(TraitPickerDetails, obj2);
+  if (tmp3) {
+    const obj2 = { asset: selectedAsset, hideRarity: !isRarityVisible };
+    tmp3 = metroImportDefault(TraitPickerDetails, obj2);
   }
-  items[2] = tmp4Result;
+  items[2] = tmp3;
   return tmp(tmp2, obj);
 }
 function TraitPickerLandscape(selectedAsset) {
-  let DescriptionVisibility;
   let header;
   let isRarityVisible;
   let items;
@@ -118,13 +113,12 @@ function TraitPickerLandscape(selectedAsset) {
   let tmp2Result = null != selectedAsset;
   const tmp3 = React3;
   if (tmp2Result) {
-    const obj4 = { asset: selectedAsset, descriptionVisibility: isRarityVisible ? DescriptionVisibility.VISIBLE : DescriptionVisibility.GONE };
-    DescriptionVisibility = TraitOptionDetails.DescriptionVisibility;
-    const obj5 = { children: items1 };
-    items1 = [metroImportDefault(TraitPickerDetails, obj4), ];
+    const obj4 = { children: items1 };
+    const obj5 = { asset: selectedAsset, hideRarity: !isRarityVisible };
+    items1 = [metroImportDefault(TraitPickerDetails, obj5), ];
     const obj6 = { style: tmp.landscapeGap };
     items1[1] = metroImportDefault(hasOwnProperty, obj6);
-    tmp2Result = tmp2(React4, obj5);
+    tmp2Result = tmp2(React4, obj4);
   }
   items[3] = tmp2Result;
   items[4] = optionList;
@@ -200,8 +194,8 @@ export default function TraitPicker(selectedOptionId) {
     }
   }
   if (isFinalizeRoute) {
-    const obj6 = { activeCustomizationOption: customizationOption, onSelectOption: onSelectFinalizeOption, disableSwitching: isCurrentTraitBlocked, disabled };
-    tmp8Result = tmp8(tmp3(13960).FinalizeTraitTabs, obj6);
+    const obj6 = { activeCustomizationOption: customizationOption, onSelectOption: onSelectFinalizeOption, isCurrentTraitBlocked, disabled };
+    tmp8Result = tmp8(tmp3(14544).FinalizeTraitTabs, obj6);
     tmp11 = tmp8;
   } else {
     const obj7 = { customizationOption, earnedCount, totalCount };

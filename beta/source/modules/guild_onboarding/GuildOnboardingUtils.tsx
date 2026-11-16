@@ -1,24 +1,24 @@
-// Module ID: 7370
-// Function ID: 7371
+// Module ID: 7084
+// Function ID: 7085
 // Name: GuildOnboardingUtils
-// Dependencies: [5019, 6659, 5100, 5041, 5102, 7365, 1072, 5088, 504, 1403, 7371, 7366, 5107, 1380, 558, 2150, 7372, 2]
+// Dependencies: [5155, 7085, 5236, 5177, 5238, 7218, 1072, 5224, 504, 1406, 7219, 7220, 5243, 1255, 558, 2153, 7221, 2]
 // Exports: getApplicationConnectionState, getChannelCoverageForOnboarding, getChattableDefaultChannels, getMinimumSetOfDefaultChannelIds, getProviderConnectionState, getSelectedChannelIds, getSelectedRoleIds, isBlockedByOnboarding, isChattableChannelId, isGuildOnboardingSettingsAvailable, showRulesInOnboarding, useChannelCoverageForOnboarding, useChattableDefaultChannels, useGuildOnboardingSettingsAvailable, useIsChattableChannel
 
-// Module 7370 (GuildOnboardingUtils)
+// Module 7084 (GuildOnboardingUtils)
 import shallowEqualDefault from "shallowEqual" /* 558 */;
-import GlobalUtils from "GlobalUtils" /* 1380 */;
-import FlagUtilsAll from "FlagUtils" /* 1403 */;
-import StringUtils from "StringUtils" /* 2150 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 5088 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 5100 */;
-import PermissionUtilsAll from "PermissionUtils" /* 5107 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7365 */;
-import DefaultChannelUtils from "DefaultChannelUtils" /* 7366 */;
-import isRoleRequiredDefault from "isRoleRequired" /* 7371 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6659 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import PermissionStore from "PermissionStore" /* 5102 */;
+import GlobalUtils from "GlobalUtils" /* 1255 */;
+import FlagUtilsAll from "FlagUtils" /* 1406 */;
+import StringUtils from "StringUtils" /* 2153 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 5224 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 5236 */;
+import PermissionUtilsAll from "PermissionUtils" /* 5243 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7218 */;
+import isRoleRequiredDefault from "isRoleRequired" /* 7219 */;
+import DefaultChannelUtils from "DefaultChannelUtils" /* 7220 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 7085 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import PermissionStore from "PermissionStore" /* 5238 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ let _require, application_id, authStore, navigation, provider_id, set;
 
 let closure_12;
 let unpackModuleId;
-const f91867 = (isCategory) => {
+const f93491 = (isCategory) => {
   const isCategoryResult = isCategory.isCategory();
   const tmp2 = !isCategoryResult && !isCategory.isThread() && !isRoleRequiredDefault(isCategory);
   return tmp2;
@@ -168,7 +168,7 @@ export function isBlockedByOnboarding(guild, selfMember) {
             const tmp2 = importAll;
             const tmp4 = GuildMemberFlags;
             if (hasFlagResult) {
-              const tmp2Result = tmp2(1403);
+              const tmp2Result = tmp2(1406);
               hasFlagResult = !tmp2Result.hasFlag(num, tmp4.COMPLETED_ONBOARDING);
             }
             return hasFlagResult;
@@ -210,7 +210,7 @@ export function getChannelCoverageForOnboarding(guildId, arr, defaultChannelIds)
     });
   });
   const item1 = defaultChannelIds.forEach((item) => set.add(item));
-  const found = mapped.filter(f91867);
+  const found = mapped.filter(f93491);
   const items = [
     found.filter((id) => {
       let hasItem = set.has(id.id);
@@ -253,7 +253,7 @@ export function useChannelCoverageForOnboarding(arg0, arr, arr2) {
     });
   });
   const item1 = arr2.forEach((item) => set.add(item));
-  const found = mapped.filter(f91867);
+  const found = mapped.filter(f93491);
   const items1 = [
     found.filter((id) => {
       let hasItem = set.has(id.id);

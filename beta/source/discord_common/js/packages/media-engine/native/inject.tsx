@@ -1,10 +1,10 @@
-// Module ID: 2132
-// Function ID: 2133
+// Module ID: 2135
+// Function ID: 2136
 // Name: inject
 // Dependencies: [2]
 // Exports: getOpenH264LibraryPath, getVoiceEngine, inject, setProcessPriority, supported, supportsFeature
 
-// Module 2132 (inject)
+// Module 2135 (inject)
 import size from "module_2" /* 2 */;
 
 let voiceEngine;

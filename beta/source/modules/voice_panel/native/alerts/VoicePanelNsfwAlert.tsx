@@ -1,14 +1,14 @@
-// Module ID: 19763
-// Function ID: 19764
+// Module ID: 20092
+// Function ID: 20093
 // Name: VoicePanelNsfwAlert
-// Dependencies: [19, 5037, 5041, 21, 6128, 6128, 1113, 6990, 2]
+// Dependencies: [19, 5173, 5177, 21, 6264, 6264, 1113, 6907, 2]
 // Exports: default
 
-// Module 19763 (VoicePanelNsfwAlert)
-import GuildRecord from "GuildRecord" /* 5037 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6990 */;
+// Module 20092 (VoicePanelNsfwAlert)
+import GuildRecord from "GuildRecord" /* 5173 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6907 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5041 */;
+import GuildStore from "GuildStore" /* 5177 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -31,10 +31,10 @@ export default function VoicePanelNsfwAlert(guildId) {
   let stringResult;
   guildId = guildId.guildId;
   const onConnect = guildId.onConnect;
-  let obj = guildId(6128);
+  let obj = guildId(6264);
   dependencyMap = obj.useDismissModalCallback();
   const tmp3 = isGuildNSFW(GuildStore.getGuild(guildId));
-  const AlertModal = guildId(6128).AlertModal;
+  const AlertModal = guildId(6264).AlertModal;
   const intl = guildId(1113).intl;
   const string = intl.string;
   const t = guildId(1113).t;
@@ -53,7 +53,7 @@ export default function VoicePanelNsfwAlert(guildId) {
     string2Result = string2(t2.E4Cd5I);
   }
   obj3 = { children: items };
-  AlertActions = tmp(6128).AlertActions;
+  AlertActions = tmp(6264).AlertActions;
   const obj4 = {
     variant: "primary",
     onPress: function handleAgree() {
@@ -64,7 +64,7 @@ export default function VoicePanelNsfwAlert(guildId) {
     },
     text: intl3.string(guildId(1113).t.wVq7uo)
   };
-  const AlertActionButton = tmp(6128).AlertActionButton;
+  const AlertActionButton = tmp(6264).AlertActionButton;
   intl3 = tmp(1113).intl;
   items = [closure_5(AlertActionButton, obj4, "confirm"), ];
   const obj5 = {
@@ -76,7 +76,7 @@ export default function VoicePanelNsfwAlert(guildId) {
     },
     text: intl4.string(guildId(1113).t["/g10LC"])
   };
-  const AlertActionButton2 = tmp(6128).AlertActionButton;
+  const AlertActionButton2 = tmp(6264).AlertActionButton;
   intl4 = tmp(1113).intl;
   items[1] = closure_5(AlertActionButton2, obj5, "add-profile-picture");
   return closure_5(AlertModal, obj2);

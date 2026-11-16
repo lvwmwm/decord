@@ -1,13 +1,13 @@
-// Module ID: 12142
-// Function ID: 12143
+// Module ID: 13004
+// Function ID: 13005
 // Name: useIsVideoBackgroundSupported
-// Dependencies: [2130, 504, 6104, 2]
+// Dependencies: [2133, 504, 6240, 2]
 // Exports: default
 
-// Module 12142 (useIsVideoBackgroundSupported)
+// Module 13004 (useIsVideoBackgroundSupported)
 import get_initialized from "get initialized" /* 504 */;
-import isVideoBackgroundSupportedDefault from "isVideoBackgroundSupported" /* 6104 */;
-import MediaEngineStore from "MediaEngineStore" /* 2130 */;
+import isVideoBackgroundSupportedDefault from "isVideoBackgroundSupported" /* 6240 */;
+import MediaEngineStore from "MediaEngineStore" /* 2133 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/video_backgrounds/useIsVideoBackgroundSupported.tsx");

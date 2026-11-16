@@ -1,21 +1,21 @@
-// Module ID: 18209
-// Function ID: 18210
+// Module ID: 18493
+// Function ID: 18494
 // Name: HeroBlock
-// Dependencies: [19, 17, 7829, 1074, 21, 5170, 575, 9698, 9573, 17381, 18210, 18213, 18216, 504, 9797, 18217, 18218, 17341, 7420, 7445, 9576, 18228, 18230, 5770, 18231, 1113, 7390, 2]
+// Dependencies: [19, 17, 8485, 1074, 21, 5306, 575, 10455, 10416, 17652, 18494, 18497, 18500, 504, 10132, 18501, 18502, 17612, 7918, 7937, 9420, 18512, 18514, 5906, 18515, 1113, 7888, 2]
 // Exports: default
 
-// Module 18209 (HeroBlock)
+// Module 18493 (HeroBlock)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
-import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 9573 */;
-import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9576 */;
-import SkeletonCardDefault from "SkeletonCard" /* 9698 */;
-import OrbsArcadeExperiment2 from "OrbsArcadeExperiment" /* 17381 */;
+import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9420 */;
+import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 10416 */;
+import SkeletonCardDefault from "SkeletonCard" /* 10455 */;
+import OrbsArcadeExperiment2 from "OrbsArcadeExperiment" /* 17652 */;
 import react_mod from "react" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7829 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 8485 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -23,7 +23,7 @@ let metroImportAll;
 let metroImportDefault;
 let obj2;
 let tmp2;
-const FeaturedFirstCardCoachmarkAnchorDefault = tmp2(18228);
+const FeaturedFirstCardCoachmarkAnchorDefault = tmp2(18512);
 function SkeletonLoading(accessibilityLabel) {
   let arr;
   let obj = {
@@ -48,10 +48,10 @@ function OrbsExclusiveHeroHeader(heroBlock) {
   const OrbsArcadeExperiment = OrbsArcadeExperiment2.OrbsArcadeExperiment;
   if (OrbsArcadeExperiment.useConfig({ location: "HeroBlock" }).enabled) {
     const obj2 = { productsTitle: heroBlock.mobileProductsTitle };
-    tmp2Result = tmp2(tmp3(18213), obj2);
+    tmp2Result = tmp2(tmp3(18497), obj2);
   } else {
     const obj = { heroBlock, category };
-    tmp2Result = tmp2(tmp3(18210), obj);
+    tmp2Result = tmp2(tmp3(18494), obj);
   }
   return tmp2Result;
 }

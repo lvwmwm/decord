@@ -1,10 +1,10 @@
-// Module ID: 15070
-// Function ID: 15071
+// Module ID: 15235
+// Function ID: 15236
 // Name: MediaViewerItemTransformPresenter
-// Dependencies: [19, 17, 21, 15068, 8945, 15067, 1652, 2]
+// Dependencies: [19, 17, 21, 15233, 8632, 15232, 1655, 2]
 // Exports: canPresentWithTransforms, default
 
-// Module 15070 (MediaViewerItemTransformPresenter)
+// Module 15235 (MediaViewerItemTransformPresenter)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -176,17 +176,17 @@ export default function MediaViewerItemTransformPresenter(windowHeight) {
       let tmp9;
       const value = _undefined.get();
       const items = [c3, c4];
-      const tmp2 = _undefined2(value, [0, 1], items, _undefined3.CLAMP);
+      const tmp2 = uri(value, [0, 1], items, _undefined2.CLAMP);
       const items1 = [c5, c6];
-      const tmp3 = _undefined2(value, [0, 1], items1, _undefined3.CLAMP);
+      const tmp3 = uri(value, [0, 1], items1, _undefined2.CLAMP);
       const items2 = [c7, 0];
       const items3 = [c8, 0];
       const items4 = [c9, 1];
-      const tmp4 = _undefined2(value, [0, 1], items2, _undefined3.CLAMP);
-      const tmp5 = _undefined2(value, [0, 1], items3, _undefined3.CLAMP);
-      const tmp6 = _undefined2(value, [0, 1], items4, _undefined3.CLAMP);
-      const tmp7 = _undefined4(tmp2, c4);
-      const tmp8 = _undefined4(tmp3, c6);
+      const tmp4 = uri(value, [0, 1], items2, _undefined2.CLAMP);
+      const tmp5 = uri(value, [0, 1], items3, _undefined2.CLAMP);
+      const tmp6 = uri(value, [0, 1], items4, _undefined2.CLAMP);
+      const tmp7 = _undefined3(tmp2, c4);
+      const tmp8 = _undefined3(tmp3, c6);
       obj = { borderRadius: tmp9 / Math.sqrt(tmp7 * tmp8), transform: items5 };
       items5 = [, , , ];
       const obj2 = { translateX: tmp4 + (tmp2 - c4) / 2 };
@@ -194,7 +194,7 @@ export default function MediaViewerItemTransformPresenter(windowHeight) {
       items5[1] = { translateY: tmp5 + (tmp3 - c6) / 2 };
       items5[2] = { scaleX: tmp6 * tmp7 };
       items5[3] = { scaleY: tmp6 * tmp8 };
-      tmp9 = _undefined2(value, [0, 0.25], [16, 0], _undefined3.CLAMP);
+      tmp9 = uri(value, [0, 0.25], [16, 0], _undefined2.CLAMP);
       return obj;
     }
   }

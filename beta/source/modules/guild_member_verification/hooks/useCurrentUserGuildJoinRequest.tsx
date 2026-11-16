@@ -1,11 +1,11 @@
-// Module ID: 7008
-// Function ID: 7009
+// Module ID: 14887
+// Function ID: 14888
 // Name: useCurrentUserGuildJoinRequest
-// Dependencies: [5204, 504, 2]
+// Dependencies: [5340, 504, 2]
 // Exports: useCurrentUserGuildJoinRequest
 
-// Module 7008 (useCurrentUserGuildJoinRequest)
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5204 */;
+// Module 14887 (useCurrentUserGuildJoinRequest)
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5340 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

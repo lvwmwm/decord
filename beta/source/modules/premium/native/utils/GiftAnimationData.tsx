@@ -1,36 +1,36 @@
-// Module ID: 10849
-// Function ID: 10850
+// Module ID: 11752
+// Function ID: 11753
 // Name: GiftAnimationData
-// Dependencies: [1387, 8652, 10850, 10851, 10852, 10853, 10854, 10855, 10856, 10857, 10858, 10859, 10860, 10861, 10862, 10863, 10864, 10865, 10866, 10867, 10868, 10869, 10870, 10871, 10872, 10873, 2]
+// Dependencies: [1390, 9332, 11753, 11754, 11755, 11756, 11757, 11758, 11759, 11760, 11761, 11762, 11763, 11764, 11765, 11766, 11767, 11768, 11769, 11770, 11771, 11772, 11773, 11774, 11775, 11776, 2]
 // Exports: getGiftAnimationData, getLottieType
 
-// Module 10849 (GiftAnimationData)
-import PremiumConstants from "PremiumConstants" /* 1387 */;
-import PremiumGiftingUtils from "PremiumGiftingUtils" /* 8652 */;
-import _mod10850 from "module_10850" /* 10850 */;
-import _mod10851 from "module_10851" /* 10851 */;
-import _mod10852 from "module_10852" /* 10852 */;
-import _mod10853 from "module_10853" /* 10853 */;
-import _mod10854 from "module_10854" /* 10854 */;
-import _mod10855 from "module_10855" /* 10855 */;
-import _mod10856 from "module_10856" /* 10856 */;
-import _mod10857 from "module_10857" /* 10857 */;
-import _mod10858 from "module_10858" /* 10858 */;
-import _mod10859 from "module_10859" /* 10859 */;
-import _mod10860 from "module_10860" /* 10860 */;
-import _mod10861 from "module_10861" /* 10861 */;
-import _mod10862 from "module_10862" /* 10862 */;
-import _mod10863 from "module_10863" /* 10863 */;
-import _mod10864 from "module_10864" /* 10864 */;
-import _mod10865 from "module_10865" /* 10865 */;
-import _mod10866 from "module_10866" /* 10866 */;
-import _mod10867 from "module_10867" /* 10867 */;
-import _mod10868 from "module_10868" /* 10868 */;
-import _mod10869 from "module_10869" /* 10869 */;
-import _mod10870 from "module_10870" /* 10870 */;
-import _mod10871 from "module_10871" /* 10871 */;
-import _mod10872 from "module_10872" /* 10872 */;
-import _mod10873 from "module_10873" /* 10873 */;
+// Module 11752 (GiftAnimationData)
+import PremiumConstants from "PremiumConstants" /* 1390 */;
+import PremiumGiftingUtils from "PremiumGiftingUtils" /* 9332 */;
+import _mod11753 from "module_11753" /* 11753 */;
+import _mod11754 from "module_11754" /* 11754 */;
+import _mod11755 from "module_11755" /* 11755 */;
+import _mod11756 from "module_11756" /* 11756 */;
+import _mod11757 from "module_11757" /* 11757 */;
+import _mod11758 from "module_11758" /* 11758 */;
+import _mod11759 from "module_11759" /* 11759 */;
+import _mod11760 from "module_11760" /* 11760 */;
+import _mod11761 from "module_11761" /* 11761 */;
+import _mod11762 from "module_11762" /* 11762 */;
+import _mod11763 from "module_11763" /* 11763 */;
+import _mod11764 from "module_11764" /* 11764 */;
+import _mod11765 from "module_11765" /* 11765 */;
+import _mod11766 from "module_11766" /* 11766 */;
+import _mod11767 from "module_11767" /* 11767 */;
+import _mod11768 from "module_11768" /* 11768 */;
+import _mod11769 from "module_11769" /* 11769 */;
+import _mod11770 from "module_11770" /* 11770 */;
+import _mod11771 from "module_11771" /* 11771 */;
+import _mod11772 from "module_11772" /* 11772 */;
+import _mod11773 from "module_11773" /* 11773 */;
+import _mod11774 from "module_11774" /* 11774 */;
+import _mod11775 from "module_11775" /* 11775 */;
+import _mod11776 from "module_11776" /* 11776 */;
 import size from "module_2" /* 2 */;
 
 const PremiumGiftStyles = PremiumConstants.PremiumGiftStyles;
@@ -50,67 +50,67 @@ export function getLottieType(giftStyle) {
 export function getGiftAnimationData(giftStyle, ACTION) {
   if (PremiumGiftStyles.STANDARD_BOX === giftStyle) {
     if (PremiumGiftingUtils.AnimationState.IDLE === ACTION) {
-      return _mod10850;
+      return _mod11753;
     } else if (PremiumGiftingUtils.AnimationState.LOOP === ACTION) {
-      return _mod10851;
+      return _mod11754;
     } else {
-      return _mod10852;
+      return _mod11755;
     }
   } else if (PremiumGiftStyles.CAKE === giftStyle) {
     if (PremiumGiftingUtils.AnimationState.IDLE === ACTION) {
-      return _mod10853;
+      return _mod11756;
     } else if (PremiumGiftingUtils.AnimationState.LOOP === ACTION) {
-      return _mod10854;
+      return _mod11757;
     } else {
-      return _mod10855;
+      return _mod11758;
     }
   } else if (PremiumGiftStyles.CHEST === giftStyle) {
     if (PremiumGiftingUtils.AnimationState.IDLE === ACTION) {
-      return _mod10856;
+      return _mod11759;
     } else if (PremiumGiftingUtils.AnimationState.LOOP === ACTION) {
-      return _mod10857;
+      return _mod11760;
     } else {
-      return _mod10858;
+      return _mod11761;
     }
   } else if (PremiumGiftStyles.COFFEE === giftStyle) {
     if (PremiumGiftingUtils.AnimationState.IDLE === ACTION) {
-      return _mod10859;
+      return _mod11762;
     } else if (PremiumGiftingUtils.AnimationState.LOOP === ACTION) {
-      return _mod10860;
+      return _mod11763;
     } else {
-      return _mod10861;
+      return _mod11764;
     }
   } else if (PremiumGiftStyles.SEASONAL_STANDARD_BOX === giftStyle) {
     if (PremiumGiftingUtils.AnimationState.IDLE === ACTION) {
-      return _mod10862;
+      return _mod11765;
     } else if (PremiumGiftingUtils.AnimationState.LOOP === ACTION) {
-      return _mod10863;
+      return _mod11766;
     } else {
-      return _mod10864;
+      return _mod11767;
     }
   } else if (PremiumGiftStyles.SEASONAL_CAKE === giftStyle) {
     if (PremiumGiftingUtils.AnimationState.IDLE === ACTION) {
-      return _mod10865;
+      return _mod11768;
     } else if (PremiumGiftingUtils.AnimationState.LOOP === ACTION) {
-      return _mod10866;
+      return _mod11769;
     } else {
-      return _mod10867;
+      return _mod11770;
     }
   } else if (PremiumGiftStyles.SEASONAL_CHEST === giftStyle) {
     if (PremiumGiftingUtils.AnimationState.IDLE === ACTION) {
-      return _mod10868;
+      return _mod11771;
     } else if (PremiumGiftingUtils.AnimationState.LOOP === ACTION) {
-      return _mod10869;
+      return _mod11772;
     } else {
-      return _mod10870;
+      return _mod11773;
     }
   } else if (PremiumGiftStyles.SEASONAL_COFFEE === giftStyle) {
     if (PremiumGiftingUtils.AnimationState.IDLE === ACTION) {
-      return _mod10871;
+      return _mod11774;
     } else if (PremiumGiftingUtils.AnimationState.LOOP === ACTION) {
-      return _mod10872;
+      return _mod11775;
     } else {
-      return _mod10873;
+      return _mod11776;
     }
   } else {
     if (PremiumGiftStyles.SNOWGLOBE !== giftStyle) {

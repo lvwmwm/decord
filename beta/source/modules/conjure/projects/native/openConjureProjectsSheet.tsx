@@ -1,15 +1,15 @@
-// Module ID: 13251
-// Function ID: 13252
+// Module ID: 10532
+// Function ID: 10533
 // Name: openConjureProjectsSheet
-// Dependencies: [6932, 13252, 11136, 5406, 13255, 2118, 2]
+// Dependencies: [7017, 10533, 10536, 5542, 10537, 2121, 2]
 // Exports: default, showConjureProjectsSheet
 
-// Module 13251 (openConjureProjectsSheet)
-import asyncRequire from "asyncRequire" /* 2118 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
-import openConjureHomeScreenDefault from "openConjureHomeScreen" /* 11136 */;
-import useConjureProjectGroups from "useConjureProjectGroups" /* 13252 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6932 */;
+// Module 10532 (openConjureProjectsSheet)
+import asyncRequire from "asyncRequire" /* 2121 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import useConjureProjectGroups from "useConjureProjectGroups" /* 10533 */;
+import openConjureHomeScreenDefault from "openConjureHomeScreen" /* 10536 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 7017 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/projects/native/openConjureProjectsSheet.tsx");
@@ -22,9 +22,9 @@ export default function openConjureProjectsSheet() {
     }
   }
   const obj2 = ActionSheetActionCreatorsDefault;
-  obj2.openLazy(asyncRequire(13255, dependencyMap.paths), "ConjureProjectsSheet");
+  obj2.openLazy(asyncRequire(10537, dependencyMap.paths), "ConjureProjectsSheet");
 };
 export function showConjureProjectsSheet() {
   const obj = ActionSheetActionCreatorsDefault;
-  obj.openLazy(asyncRequire(13255, dependencyMap.paths), "ConjureProjectsSheet");
+  obj.openLazy(asyncRequire(10537, dependencyMap.paths), "ConjureProjectsSheet");
 }

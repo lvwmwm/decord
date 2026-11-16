@@ -1,14 +1,14 @@
-// Module ID: 17974
-// Function ID: 17975
+// Module ID: 18248
+// Function ID: 18249
 // Name: UserSettingsDesignSystemsScreen
-// Dependencies: [19, 8536, 21, 11716, 16937, 2]
+// Dependencies: [19, 9202, 21, 12406, 17213, 2]
 // Exports: default
 
-// Module 17974 (UserSettingsDesignSystemsScreen)
+// Module 18248 (UserSettingsDesignSystemsScreen)
 import Fragment from "Fragment" /* 21 */;
-import SettingsConstants from "SettingsConstants" /* 8536 */;
-import SettingBuilders from "SettingBuilders" /* 11716 */;
-import SettingLayoutDefault from "SettingLayout" /* 16937 */;
+import SettingsConstants from "SettingsConstants" /* 9202 */;
+import SettingBuilders from "SettingBuilders" /* 12406 */;
+import SettingLayoutDefault from "SettingLayout" /* 17213 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -25,17 +25,17 @@ export default function SettingsDesignSystemsScreen() {
     let items4;
     let items5;
     const obj3 = { label: "Components", settings: items };
-    items = [, , , , , , , , , , , , , , , , ];
+    items = [, , , , , , , , , , , , , , , , , ];
     const obj2 = { sections: items1 };
-    ({ DESIGN_SYSTEMS_TEXT: arr[0], DESIGN_SYSTEMS_BUTTON: arr[1], DESIGN_SYSTEMS_BUTTON_GROUP: arr[2], DESIGN_SYSTEMS_ROW_BUTTON: arr[3], DESIGN_SYSTEMS_TABLE_ROW: arr[4], DESIGN_SYSTEMS_ALERT_MODAL: arr[5], DESIGN_SYSTEMS_SHADOWS: arr[6], DESIGN_SYSTEM_SEGMENTED_CONTROL: arr[7], DESIGN_SYSTEMS_TABS: arr[8], DESIGN_SYSTEM_BACKDROP: arr[9], DESIGN_SYSTEMS_TOOLTIP: arr[10], DESIGN_SYSTEMS_COACHMARK: arr[11], DESIGN_SYSTEM_FORM_PRIMITIVES: arr[12], DESIGN_SYSTEMS_TEXT_INPUT: arr[13], DESIGN_SYSTEM_PILE: arr[14], DESIGN_SYSTEM_TAG_GROUP: arr[15], DESIGN_SYSTEM_HAPTICS: arr[16] } = constants);
+    ({ DESIGN_SYSTEMS_TEXT: arr[0], DESIGN_SYSTEMS_BUTTON: arr[1], DESIGN_SYSTEMS_BUTTON_GROUP: arr[2], DESIGN_SYSTEMS_ROW_BUTTON: arr[3], DESIGN_SYSTEMS_TABLE_ROW: arr[4], DESIGN_SYSTEM_DRAG_HANDLE: arr[5], DESIGN_SYSTEMS_ALERT_MODAL: arr[6], DESIGN_SYSTEMS_SHADOWS: arr[7], DESIGN_SYSTEM_SEGMENTED_CONTROL: arr[8], DESIGN_SYSTEMS_TABS: arr[9], DESIGN_SYSTEM_BACKDROP: arr[10], DESIGN_SYSTEMS_TOOLTIP: arr[11], DESIGN_SYSTEMS_COACHMARK: arr[12], DESIGN_SYSTEM_FORM_PRIMITIVES: arr[13], DESIGN_SYSTEMS_TEXT_INPUT: arr[14], DESIGN_SYSTEM_PILE: arr[15], DESIGN_SYSTEM_TAG_GROUP: arr[16], DESIGN_SYSTEM_HAPTICS: arr[17] } = constants);
     items1 = [obj3, , , , ];
     const obj4 = { label: "AI Visual Identity", settings: items2 };
     items2 = [, ];
     ({ DESIGN_SYSTEM_AI_LOADER: arr3[0], DESIGN_SYSTEM_AI_SHIMMER: arr3[1] } = constants);
     items1[1] = obj4;
     const obj5 = { label: "In Progress", settings: items3 };
-    items3 = [, , , , , ];
-    ({ DESIGN_SYSTEM_BADGE: arr4[0], DESIGN_SYSTEM_SHEETS: arr4[1], DESIGN_SYSTEM_STACK: arr4[2], DESIGN_SYSTEMS_CONTEXT_MENU: arr4[3], DESIGN_SYSTEMS_TOAST: arr4[4], DESIGN_SYSTEMS_MODAL: arr4[5] } = constants);
+    items3 = [, , , , , , ];
+    ({ DESIGN_SYSTEM_BADGE: arr4[0], DESIGN_SYSTEM_SHEETS: arr4[1], DESIGN_SYSTEM_STACK: arr4[2], DESIGN_SYSTEMS_CONTEXT_MENU: arr4[3], DESIGN_SYSTEMS_TOAST: arr4[4], DESIGN_SYSTEMS_MODAL: arr4[5], DESIGN_SYSTEMS_NAVIGATOR: arr4[6] } = constants);
     items1[2] = obj5;
     const obj6 = { label: "Experimental", settings: items4 };
     items4 = [, ];

@@ -1,28 +1,28 @@
-// Module ID: 19920
-// Function ID: 19921
+// Module ID: 20253
+// Function ID: 20254
 // Name: FrecencyUserSettingsManager
-// Dependencies: [5, 9887, 9886, 6884, 6223, 6924, 6983, 1231, 1082, 1362, 1089, 7383, 5000, 1232, 1233, 12, 2]
+// Dependencies: [5, 11408, 11407, 6969, 6359, 7009, 7069, 1231, 1082, 1365, 1089, 7882, 5136, 1232, 1233, 12, 2]
 
-// Module 19920 (FrecencyUserSettingsManager)
+// Module 20253 (FrecencyUserSettingsManager)
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import frecency_user_settings from "frecency_user_settings" /* 1232 */;
 import user_settings_UserSettingsUtils from "user_settings/UserSettingsUtils" /* 1233 */;
-import ApplicationConstants from "ApplicationConstants" /* 1362 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 5000 */;
-import FrecencyStore2 from "FrecencyStore" /* 6983 */;
+import ApplicationConstants from "ApplicationConstants" /* 1365 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 5136 */;
+import FrecencyStore2 from "FrecencyStore" /* 7069 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationCommandFrecencyStore from "ApplicationCommandFrecencyStore" /* 9887 */;
-import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 9886 */;
-import EmojiStore from "EmojiStore" /* 6884 */;
-import SoundboardStore from "SoundboardStore" /* 6223 */;
-import StickersPersistedStore from "StickersPersistedStore" /* 6924 */;
+import ApplicationCommandFrecencyStore from "ApplicationCommandFrecencyStore" /* 11408 */;
+import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 11407 */;
+import EmojiStore from "EmojiStore" /* 6969 */;
+import SoundboardStore from "SoundboardStore" /* 6359 */;
+import StickersPersistedStore from "StickersPersistedStore" /* 7009 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7383 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
 import size from "module_2" /* 2 */;
 
 const FrecencyStore = FrecencyStore2;
-let c3, c4;
+let c4, c5;
 
 function handleConnectionOpen() {
   let closure_16;
@@ -35,6 +35,11 @@ function handleConnectionOpen() {
     clearTimeout(timeout);
   }
   timeout = setTimeout(() => saveProtos(c0), tmp);
+}
+function handleLogout() {
+  c17 = false;
+  clearTimeout(c16);
+  c16 = null;
 }
 function handleAppStateUpdate(state) {
   const tmp = c17 && "active" !== state.state;
@@ -59,9 +64,9 @@ function saveProtos() {
 }
 let actions = function _saveProtos() {
   let obj = _asyncToGenerator(async (arg0, value) => {
-    let closure_0 = arg0;
-    if (c4 === 2) {
-      c4 = 3;
+    let closure_0;
+    if (c5 === 2) {
+      c5 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
     } else if (tmp3 === 3) {
       if (arg0 === 1) {
@@ -70,58 +75,66 @@ let actions = function _saveProtos() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
+      let c3;
       try {
-        c4 = 2;
-        if (0 === c3) {
+        c5 = 2;
+        if (0 === c4) {
           if (arg0 === 1) {
-            c4 = 3;
+            c5 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c4 = 3;
+            c5 = 3;
             const obj4 = { value, done: true };
             return obj4;
           } else {
             let closure_2 = tmp;
             let closure_1 = tmp;
-            resetTimer(closure_2_15, false);
-            const tmp28 = closure_0;
-            if (!UserSettingsProtoStore.hasLoaded(constants.FRECENCY_AND_FAVORITES_SETTINGS)) {
-              let hasPendingUsageResult = StickersPersistedStore.hasPendingUsage() || EmojiStore.hasPendingUsage() || ApplicationCommandFrecencyStore.hasPendingUsage() || ApplicationFrecencyStore.hasPendingUsage() || SoundboardStore.hasPendingUsage();
-              if (!hasPendingUsageResult) {
-                const hasPendingUsageResult1 = FrecencyStore.hasPendingUsage() && !tmp28;
-                hasPendingUsageResult = hasPendingUsageResult1;
-              }
-              if (hasPendingUsageResult) {
+            const tmp33 = closure_2_17;
+            if (tmp33) {
+              resetTimer(closure_2_15, false);
+              if (!UserSettingsProtoStore.hasLoaded(constants.FRECENCY_AND_FAVORITES_SETTINGS)) {
                 const obj2 = UserSettingsProtoActionCreators;
                 let result = obj2.markUserSettingsLoadOkayForDevelopment();
-                const FrecencyUserSettingsActionCreators = UserSettingsProtoActionCreators.FrecencyUserSettingsActionCreators;
                 c3 = 1;
-                c4 = 1;
+                const FrecencyUserSettingsActionCreators = UserSettingsProtoActionCreators.FrecencyUserSettingsActionCreators;
+                c4 = 2;
+                c5 = 1;
                 const obj5 = { value: FrecencyUserSettingsActionCreators.loadIfNecessary(), done: false };
                 return obj5;
               }
             }
+            c5 = 3;
+            return { value: "HermesInternal", done: "ulw" };
           }
+        } else if (1 === tmp4) {
+          c3 = 0;
+          c5 = 3;
+          return { value: "HermesInternal", done: "ulw" };
         } else if (arg0 === 1) {
-          c4 = 3;
+          c5 = 3;
           throw value;
         } else if (arg0 === 2) {
-          c4 = 3;
+          c3 = 0;
+          c5 = 3;
           const obj = { value, done: true };
           return obj;
+        } else {
+          c3 = 0;
         }
         const arr = closure_130_1(closure_130_2[15]);
         const item = arr.forEach(closure_130_0(closure_130_2[12]).UserSettingsActionCreatorsByType, (markDirtyIfHasPendingChange) => {
           const result = markDirtyIfHasPendingChange.markDirtyIfHasPendingChange();
         });
-        c4 = 3;
-        return { value: "HermesInternal", done: null };
-      } catch (tmp24) {
-        c4 = 3;
-        throw tmp24;
+      } catch (tmp27) {
+        if (0 === c3) {
+          c5 = 3;
+          throw tmp27;
+        } else {
+          c4 = 1;
+        }
       }
     }
   });
@@ -150,7 +163,7 @@ let c17 = false;
 class FrecencyUserSettingsManager extends AutomaticLifecycleManager {
   constructor() {
     const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
-    actions = { POST_CONNECTION_OPEN: handleConnectionOpen, CONNECTION_RESUMED: handleConnectionOpen, CONNECTION_CLOSED: handleConnectionClosed, APP_STATE_UPDATE: handleAppStateUpdate };
+    actions = { POST_CONNECTION_OPEN: handleConnectionOpen, CONNECTION_RESUMED: handleConnectionOpen, CONNECTION_CLOSED: handleConnectionClosed, APP_STATE_UPDATE: handleAppStateUpdate, LOGOUT: handleLogout };
     applyArgumentsResult.actions = actions;
     return applyArgumentsResult;
   }

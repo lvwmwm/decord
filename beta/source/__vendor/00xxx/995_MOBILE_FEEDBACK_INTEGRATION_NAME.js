@@ -49,14 +49,14 @@ function _getClientIntegration() {
 }
 
 export const MOBILE_FEEDBACK_INTEGRATION_NAME = "MobileFeedback";
-export const feedbackIntegration = (buffer) => {
+export const feedbackIntegration = () => {
   let buttonOptions;
   let colorScheme;
   let screenshotButtonOptions;
   let themeDark;
   let themeLight;
-  let obj = buffer;
-  if (buffer === undefined) {
+  let obj = arg0;
+  if (arg0 === undefined) {
     obj = {};
   }
   ({ buttonOptions, screenshotButtonOptions, colorScheme, themeLight, themeDark } = obj);

@@ -1,16 +1,16 @@
-// Module ID: 15623
-// Function ID: 15624
+// Module ID: 10017
+// Function ID: 10018
 // Name: navigateToSocialLayerStorefront
-// Dependencies: [5, 5041, 7503, 1072, 10821, 7501, 1099, 7626, 9058, 2]
+// Dependencies: [5, 5177, 7246, 1072, 10018, 7244, 1099, 7230, 7660, 2]
 // Exports: default, eagerNavigateToSocialLayerStorefront, eagerNavigateToSocialLayerStorefrontForApplication
 
-// Module 15623 (navigateToSocialLayerStorefront)
+// Module 10017 (navigateToSocialLayerStorefront)
 import router_utils from "router_utils" /* 1099 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7501 */;
-import SocialLayerStorefrontActionCreators from "SocialLayerStorefrontActionCreators" /* 10821 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7244 */;
+import SocialLayerStorefrontActionCreators from "SocialLayerStorefrontActionCreators" /* 10018 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7503 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7246 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -40,7 +40,7 @@ let obj = function _navigateToSocialLayerStorefrontWithGuildPreview() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       try {
@@ -65,7 +65,7 @@ let obj = function _navigateToSocialLayerStorefrontWithGuildPreview() {
             joinedAt = undefined;
             c3 = 1;
             c4 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "Path", done: true };
           }
         } else {
           if (1 === c3) {
@@ -121,7 +121,7 @@ let obj = function _navigateToSocialLayerStorefrontWithGuildPreview() {
                 }
               } else {
                 c4 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "ulw" };
               }
             }
           } else if (2 === c3) {

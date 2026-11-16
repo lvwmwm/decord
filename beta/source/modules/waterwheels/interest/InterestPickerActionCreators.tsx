@@ -1,10 +1,10 @@
-// Module ID: 18799
-// Function ID: 18800
+// Module ID: 19029
+// Function ID: 19030
 // Name: InterestPickerActionCreators
 // Dependencies: [572, 2]
-// Exports: markInterestPickerSeen, setInterestPickerPicks
+// Exports: markInterestPickerSeen, setInterestPickerOpen, setInterestPickerPicks
 
-// Module 18799 (InterestPickerActionCreators)
+// Module 19029 (InterestPickerActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
@@ -18,4 +18,9 @@ export function setInterestPickerPicks(gameIds) {
 export function markInterestPickerSeen() {
   const obj = DispatcherDefault;
   obj.dispatch({ type: "WATERWHEELS_INTEREST_PICKER_SEEN" });
+}
+export function setInterestPickerOpen(open) {
+  const obj = DispatcherDefault;
+  const obj2 = { type: "WATERWHEELS_INTEREST_PICKER_OPEN_CHANGE", open };
+  obj.dispatch(obj2);
 }

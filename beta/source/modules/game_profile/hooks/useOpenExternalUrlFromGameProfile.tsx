@@ -1,11 +1,11 @@
-// Module ID: 9437
-// Function ID: 9438
+// Module ID: 10284
+// Function ID: 10285
 // Name: useOpenExternalUrlFromGameProfile
-// Dependencies: [32, 5, 19, 9438, 9453, 5862, 2]
+// Dependencies: [32, 5, 19, 7294, 10285, 5998, 2]
 // Exports: default
 
-// Module 9437 (useOpenExternalUrlFromGameProfile)
-import GameUtilsDefault from "GameUtils" /* 9438 */;
+// Module 10284 (useOpenExternalUrlFromGameProfile)
+import GameUtilsDefault from "GameUtils" /* 7294 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -29,7 +29,7 @@ let obj = function _getDeepLinkUrl() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       try {
@@ -151,7 +151,7 @@ export default function useOpenExternalUrlFromGameProfile(arg0) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       let c3;
@@ -188,7 +188,7 @@ export default function useOpenExternalUrlFromGameProfile(arg0) {
         } else if (1 === c4) {
           c3 = 0;
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         } else if (arg0 === 1) {
           c5 = 3;
           throw value;
@@ -214,7 +214,7 @@ export default function useOpenExternalUrlFromGameProfile(arg0) {
           }
         }
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       } catch (tmp35) {
         if (0 === c3) {
           c5 = 3;

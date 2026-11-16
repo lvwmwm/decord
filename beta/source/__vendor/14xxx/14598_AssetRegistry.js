@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 121, height: 80, scales: [1, 2, 3], hash: "dc39c8debe144867da8663a97ac0ae70", name: "link_expired_light", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/chat_input/native/images", width: 160, height: 120, scales: [2, 3], hash: "145762114c01b711fbf68400d2eda882", name: "omnibutton_coachmark_static", type: "png" });

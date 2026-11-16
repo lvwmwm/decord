@@ -1,19 +1,19 @@
-// Module ID: 18788
-// Function ID: 18789
+// Module ID: 19121
+// Function ID: 19122
 // Name: GuildsBarPendingGuild
-// Dependencies: [19, 5204, 5037, 5203, 6860, 21, 5170, 575, 18740, 5756, 504, 7053, 18772, 18743, 5206, 6996, 18755, 18779, 18732, 1652, 18761, 5874, 2]
+// Dependencies: [19, 5340, 5173, 5339, 6946, 21, 5306, 575, 19074, 5892, 504, 7720, 19105, 19077, 5342, 6914, 19025, 19112, 19066, 1655, 19094, 6010, 2]
 
-// Module 18788 (GuildsBarPendingGuild)
+// Module 19121 (GuildsBarPendingGuild)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import GuildIcon from "GuildIcon" /* 7053 */;
-import getGuildsBarGuildMenuItemsDefault from "getGuildsBarGuildMenuItems" /* 18732 */;
+import GuildIcon from "GuildIcon" /* 7720 */;
+import getGuildsBarGuildMenuItemsDefault from "getGuildsBarGuildMenuItems" /* 19066 */;
 import react from "react" /* 19 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5204 */;
-import GuildRecord from "GuildRecord" /* 5037 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5203 */;
-import SortedGuildStore from "SortedGuildStore" /* 6860 */;
-import createStyles from "createStyles" /* 5170 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5340 */;
+import GuildRecord from "GuildRecord" /* 5173 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
+import SortedGuildStore from "SortedGuildStore" /* 6946 */;
+import createStyles from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -153,7 +153,7 @@ const memoResult = react.memo(function GuildsBarPendingGuild(guildId) {
     const tmp5Result2 = token(stateFromStores[11]);
     tmp19Result = tmp19(tmp5Result2, obj9);
   }
-  return <tmp5Result id={guildId} accessibilityActions={accessibilityActions} onAccessibilityAction={onAccessibilityAction} cutouts={cutouts} selected={stateFromStores} sharedId={sharedValue} circle={!stateFromStores} overState="flexDirection" unread={null} label={str} config={memo} styles={guildsBarAnimatedWrapperStyles} externalChildren={badge} expandedChildren={null}>{tmp19Result}</tmp5Result>;
+  return <tmp5Result id={guildId} accessibilityActions={accessibilityActions} onAccessibilityAction={onAccessibilityAction} cutouts={cutouts} selected={stateFromStores} sharedId={sharedValue} circle={!stateFromStores} overState="Path" unread={null} label={str} config={memo} styles={guildsBarAnimatedWrapperStyles} externalChildren={badge} expandedChildren={null}>{tmp19Result}</tmp5Result>;
 });
 size = size_mod;
 let result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarPendingGuild.tsx");

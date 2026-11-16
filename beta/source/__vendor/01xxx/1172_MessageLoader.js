@@ -121,7 +121,7 @@ class MessageLoader {
               } else if (arg0 === 2) {
                 return { value, done: true };
               } else {
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "ulw" };
               }
             } else {
               try {
@@ -149,7 +149,7 @@ class MessageLoader {
                 } else {
                   closure_1._parseCache = {};
                   c3 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "ulw" };
                 }
               } catch (tmp7) {
                 c3 = 3;
@@ -304,7 +304,7 @@ let items = [
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "ulw" };
             }
           } else {
             try {
@@ -387,7 +387,7 @@ let items = [
                 return { value, done: true };
               }
               c6 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "ulw" };
             } catch (tmp29) {
               c6 = 3;
               throw tmp29;
@@ -496,7 +496,7 @@ let items = [
           if (ref === undefined) {
             flag = false;
           }
-          return "flexDirection";
+          return "Path";
         })();
         iter.next();
         return iter;
@@ -521,7 +521,7 @@ let items = [
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "ulw" };
             }
           } else {
             try {
@@ -543,7 +543,7 @@ let items = [
                   }
                   c4 = 1;
                   c5 = 1;
-                  return { value: "flexDirection", done: true };
+                  return { value: "Path", done: true };
                 }
               } else if (arg0 === 1) {
                 c5 = 3;
@@ -586,7 +586,7 @@ export function loadAllMessagesInLocale(arg0) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       try {
@@ -614,7 +614,7 @@ export function loadAllMessagesInLocale(arg0) {
           return obj;
         } else {
           c0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } catch (tmp6) {
         c0 = 3;
@@ -635,7 +635,7 @@ export function waitForAllDefaultIntlMessagesLoaded() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       try {
@@ -663,7 +663,7 @@ export function waitForAllDefaultIntlMessagesLoaded() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } catch (tmp6) {
         c0 = 3;

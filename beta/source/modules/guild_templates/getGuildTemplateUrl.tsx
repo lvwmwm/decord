@@ -1,10 +1,10 @@
-// Module ID: 20272
-// Function ID: 20273
+// Module ID: 20602
+// Function ID: 20603
 // Name: getGuildTemplateUrl
 // Dependencies: [2]
 // Exports: default
 
-// Module 20272 (getGuildTemplateUrl)
+// Module 20602 (getGuildTemplateUrl)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_templates/getGuildTemplateUrl.tsx");

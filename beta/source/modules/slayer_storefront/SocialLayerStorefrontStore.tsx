@@ -1,12 +1,12 @@
-// Module ID: 7503
-// Function ID: 7504
+// Module ID: 7246
+// Function ID: 7247
 // Name: SocialLayerStorefrontStore
-// Dependencies: [2186, 502, 504, 572, 2]
+// Dependencies: [2189, 502, 504, 572, 2]
 
-// Module 7503 (SocialLayerStorefrontStore)
+// Module 7246 (SocialLayerStorefrontStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import LocaleStore from "LocaleStore" /* 2186 */;
+import LocaleStore from "LocaleStore" /* 2189 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ obj = { state: "idle" };
 let set1 = new Set();
 let set = set1;
 let closure_17 = {};
-const authStore5 = {};
+const authStore4 = {};
 let closure_19 = {};
 let closure_20 = {};
 const set2 = new Set();

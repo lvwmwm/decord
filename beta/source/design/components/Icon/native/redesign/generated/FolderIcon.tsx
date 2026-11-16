@@ -1,14 +1,14 @@
-// Module ID: 8750
-// Function ID: 8751
+// Module ID: 8072
+// Function ID: 8073
 // Name: FolderIcon
-// Dependencies: [19, 21, 575, 5873, 8710, 2]
+// Dependencies: [19, 21, 575, 6009, 8036, 2]
 // Exports: FolderIcon
 
-// Module 8750 (FolderIcon)
+// Module 8072 (FolderIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5873 */;
-import AssetRegistry from "AssetRegistry" /* 8710 */;
+import BaseIconImage2 from "BaseIconImage" /* 6009 */;
+import AssetRegistry from "AssetRegistry" /* 8036 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

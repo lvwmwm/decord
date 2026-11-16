@@ -1,20 +1,20 @@
-// Module ID: 18068
-// Function ID: 18069
+// Module ID: 18343
+// Function ID: 18344
 // Name: OrbWalletEntryRow
-// Dependencies: [19, 17, 15969, 21, 5170, 575, 7083, 1113, 2298, 7073, 9649, 5783, 7471, 2]
+// Dependencies: [19, 17, 16242, 21, 5306, 575, 7459, 1113, 2333, 7445, 9442, 5919, 7963, 2]
 // Exports: OrbWalletEntryRow
 
-// Module 18068 (OrbWalletEntryRow)
+// Module 18343 (OrbWalletEntryRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import _modDef2298 from "module_2298" /* 2298 */;
-import Card_Card from "Card/Card" /* 7073 */;
-import Badge_Badge from "Badge/Badge" /* 7083 */;
-import OrbChallengesStore from "OrbChallengesStore" /* 15969 */;
+import _modDef2333 from "module_2333" /* 2333 */;
+import Card_Card from "Card/Card" /* 7445 */;
+import Badge_Badge from "Badge/Badge" /* 7459 */;
+import OrbChallengesStore from "OrbChallengesStore" /* 16242 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -30,7 +30,7 @@ function OrbWalletEntryBadge(notificationType) {
     return hasOwnProperty(Badge_Badge.Badge, { type: "new", variant: "primary" });
   } else if (tmp.UNCLAIMED_ACHIEVEMENT === notificationType) {
     const obj = { type: obj2, variant: "primary" };
-    obj2 = { text: intl.string(_modDef2298.WmfVjs) };
+    obj2 = { text: intl.string(_modDef2333.WmfVjs) };
     const Badge = Badge_Badge.Badge;
     intl = intl3.intl;
     return hasOwnProperty(Badge, obj);
@@ -82,17 +82,17 @@ export function OrbWalletEntryRow(onPress) {
   obj2 = { style: tmp.row, children: items1 };
   const obj3 = { style: tmp.balance, children: items };
   const obj4 = { size: "sm", color: nativeDefault.colors.ICON_SUBTLE, accessible: false };
-  const OrbsIcon = tmp3(9649).OrbsIcon;
+  const OrbsIcon = tmp3(9442).OrbsIcon;
   items = [hasOwnProperty(OrbsIcon, obj4), ];
   const obj5 = { variant: "body-sm/medium", color: "text-subtle", lineClamp: 1, style: tmp.balanceText, children: intl2.formatToPlainString(intl3.t["8xDISf"], { balance: str }) };
-  const Text = tmp3(5783).Text;
+  const Text = tmp3(5919).Text;
   intl2 = tmp3(1113).intl;
   items[1] = hasOwnProperty(Text, obj5);
   items1 = [metroRequire(View, obj3), ];
   const obj6 = { style: tmp.trailing, children: items2 };
   items2 = [hasOwnProperty(OrbWalletEntryBadge, { notificationType }), ];
   const obj7 = { size: "refresh_sm", color: nativeDefault.colors.ICON_SUBTLE, accessible: false };
-  const ChevronSmallRightIcon = tmp3(7471).ChevronSmallRightIcon;
+  const ChevronSmallRightIcon = tmp3(7963).ChevronSmallRightIcon;
   items2[1] = hasOwnProperty(ChevronSmallRightIcon, obj7);
   items1[1] = metroRequire(View, obj6);
   return hasOwnProperty(Card, obj);

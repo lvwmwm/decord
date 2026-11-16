@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/empties", width: 375, height: 229, scales: [1, 2, 3], hash: "33688e5a17ba6d5d12db0d817e82285c", name: "empty_quest_home", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Illustration/native/redesign/generated/images", width: 433, height: 231, scales: [2, 3], hash: "a255589f0ef23e06a175ac0fc6767b9f", name: "blocked_darker", type: "png" });

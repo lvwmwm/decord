@@ -1,16 +1,16 @@
-// Module ID: 19630
-// Function ID: 19631
+// Module ID: 19959
+// Function ID: 19960
 // Name: useTransitionToConnectedActivityInVoice
-// Dependencies: [5, 19, 5019, 5073, 1072, 5091, 5834, 11944, 11892, 1108, 2]
+// Dependencies: [5, 19, 5155, 5209, 1072, 5227, 5970, 12780, 12712, 1108, 2]
 // Exports: default
 
-// Module 19630 (useTransitionToConnectedActivityInVoice)
+// Module 19959 (useTransitionToConnectedActivityInVoice)
 import Constants from "Constants" /* 1072 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5073 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
 import size from "module_2" /* 2 */;
 
 let channelId, guild_id;
@@ -42,7 +42,7 @@ export default function useTransitionToConnectedActivityInVoice(onTransition) {
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "ulw" };
             }
           } else {
             try {
@@ -61,7 +61,7 @@ export default function useTransitionToConnectedActivityInVoice(onTransition) {
                   guild_id = undefined;
                   c3 = 1;
                   c4 = 1;
-                  return { value: "flexDirection", done: true };
+                  return { value: "Path", done: true };
                 }
               } else {
                 if (1 === c3) {
@@ -86,7 +86,7 @@ export default function useTransitionToConnectedActivityInVoice(onTransition) {
                       }
                     }
                     c4 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "ulw" };
                   }
                 } else if (arg0 === 1) {
                   c4 = 3;

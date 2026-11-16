@@ -1,12 +1,12 @@
-// Module ID: 10345
-// Function ID: 10346
+// Module ID: 12634
+// Function ID: 12635
 // Name: useShouldHideMediaOptions
-// Dependencies: [5019, 5026, 563, 2]
+// Dependencies: [5155, 5162, 563, 2]
 // Exports: default
 
-// Module 10345 (useShouldHideMediaOptions)
-import ChannelConstants from "ChannelConstants" /* 5026 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
+// Module 12634 (useShouldHideMediaOptions)
+import ChannelConstants from "ChannelConstants" /* 5162 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

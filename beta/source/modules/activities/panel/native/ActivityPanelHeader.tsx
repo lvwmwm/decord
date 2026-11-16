@@ -1,28 +1,28 @@
-// Module ID: 19606
-// Function ID: 19607
+// Module ID: 19935
+// Function ID: 19936
 // Name: ActivityPanelHeader
-// Dependencies: [32, 19, 17, 5018, 5813, 1083, 21, 5170, 575, 1627, 1705, 19603, 5231, 5452, 19607, 504, 7424, 19608, 19612, 19613, 19465, 19598, 2]
+// Dependencies: [32, 19, 17, 5154, 5949, 1083, 21, 5306, 575, 1630, 1708, 19932, 5367, 5588, 19936, 504, 7259, 19937, 19941, 19942, 19782, 19927, 2]
 // Exports: useBaseActivityPanelHeader
 
-// Module 19606 (ActivityPanelHeader)
+// Module 19935 (ActivityPanelHeader)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import native from "native" /* 5231 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5452 */;
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7424 */;
-import LeaveActivityButtonDefault from "LeaveActivityButton" /* 19465 */;
-import BlurVisualEffectViewDefault from "BlurVisualEffectView" /* 19607 */;
-import InviteActivityButtonDefault from "InviteActivityButton" /* 19608 */;
-import MinimizeActivityButtonDefault from "MinimizeActivityButton" /* 19612 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import native from "native" /* 5367 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5588 */;
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7259 */;
+import LeaveActivityButtonDefault from "LeaveActivityButton" /* 19782 */;
+import BlurVisualEffectViewDefault from "BlurVisualEffectView" /* 19936 */;
+import InviteActivityButtonDefault from "InviteActivityButton" /* 19937 */;
+import MinimizeActivityButtonDefault from "MinimizeActivityButton" /* 19941 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5018 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5813 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5949 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;
@@ -38,7 +38,7 @@ let obj2;
 let obj4;
 let size;
 let tmp2;
-const useMorphablePanelGestureDefault = tmp2(19603);
+const useMorphablePanelGestureDefault = tmp2(19932);
 function useBaseActivityPanelHeaderContent(landscape) {
   let closure_1;
   let closure_2;
@@ -100,7 +100,7 @@ function useBaseActivityPanelHeaderContent(landscape) {
     return items;
   }, items1);
   const useCallback = react.useCallback;
-  items2[1] = landscape(1705).scheduleOnRN;
+  items2[1] = landscape(1708).scheduleOnRN;
   items2[2] = setMode;
   items2[3] = closure_10;
   let c0;
@@ -120,7 +120,7 @@ function useBaseActivityPanelHeaderContent(landscape) {
   const items4 = [setMode];
   let obj = { gesture: tmp2Result(obj2), headerWrapperStyles: memo, headerStyles: memo1, styles: tmp };
   const callback = useCallback(ActivityPanelHeaderTsx1, items4);
-  obj2 = { mode: tmp8(19603).MorphablePanelModes.PANEL, panGestureEnabled: true, pipState, swipeRequiresPop: true, wrapperOffset, onPanMinimizeGestureEnd: callback, disableHorizontalSafeAreas: true };
+  obj2 = { mode: tmp8(19932).MorphablePanelModes.PANEL, panGestureEnabled: true, pipState, swipeRequiresPop: true, wrapperOffset, onPanMinimizeGestureEnd: callback, disableHorizontalSafeAreas: true };
   tmp2Result = useMorphablePanelGestureDefault;
   return obj;
 }
@@ -128,7 +128,6 @@ class BaseActivityPanelContent {
   constructor(landscape) {
     let GestureDetector;
     let children;
-    let gesture;
     let hasConnectedActivity;
     let headerStyles;
     let headerWrapperStyles;
@@ -177,7 +176,6 @@ let obj3 = { buttonContainer: obj4, buttonContainerLandscape: { flexDirection: "
 obj4 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, flexShrink: 1 };
 const styles = createStyles.createStyles(obj3);
 let closure_19 = react.memo(function ActivityPanelHeaderContentInner(wrapperOffset) {
-  let gesture;
   let headerStyles;
   let headerWrapperStyles;
   let items3;
@@ -227,7 +225,7 @@ let closure_19 = react.memo(function ActivityPanelHeaderContentInner(wrapperOffs
   let tmp8Result2 = null != applicationId;
   if (tmp8Result2) {
     const obj5 = { applicationId };
-    tmp8Result2 = tmp8(tmp5(19613), obj5);
+    tmp8Result2 = tmp8(tmp5(19942), obj5);
   }
   items3[1] = tmp8Result2;
   let tmp20 = null;
@@ -251,7 +249,7 @@ const memoResult = react.memo(function ActivityPanelHeader() {
   let setMode;
   let wrapperOffset;
   let wrapperDimensions;
-  let tmp = wrapperDimensions(19598);
+  let tmp = wrapperDimensions(19927);
   const tmp2 = closure_14();
   const headerContainer = tmp2;
   const context = react.useContext(tmp);

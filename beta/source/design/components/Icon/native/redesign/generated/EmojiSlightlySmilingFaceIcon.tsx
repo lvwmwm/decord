@@ -1,14 +1,14 @@
-// Module ID: 13708
-// Function ID: 13709
+// Module ID: 14281
+// Function ID: 14282
 // Name: EmojiSlightlySmilingFaceIcon
-// Dependencies: [19, 21, 575, 5873, 13709, 2]
+// Dependencies: [19, 21, 575, 6009, 14282, 2]
 // Exports: EmojiSlightlySmilingFaceIcon
 
-// Module 13708 (EmojiSlightlySmilingFaceIcon)
+// Module 14281 (EmojiSlightlySmilingFaceIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5873 */;
-import AssetRegistry from "AssetRegistry" /* 13709 */;
+import BaseIconImage2 from "BaseIconImage" /* 6009 */;
+import AssetRegistry from "AssetRegistry" /* 14282 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

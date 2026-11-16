@@ -1,22 +1,13 @@
 // Module ID: 5552
 // Function ID: 5553
-// Dependencies: [5523, 5540, 5514]
-// Exports: useNativeGesture
+// Dependencies: [5553]
 
 // Module 5552
-import ComposedGestureName from "ComposedGestureName" /* 5514 */;
-import _mod5523 from "module_5523" /* 5523 */;
-import _mod5540 from "module_5540" /* 5540 */;
+import "PATTERN_CHARS";
+import PATTERN_CHARS_mod from "PATTERN_CHARS" /* 5553 */;
 
-let closure_2 = {};
+let PATTERN_CHARS;
+const obj = { success: PATTERN_CHARS.pattern("oO.O"), error: PATTERN_CHARS.pattern("OO.OO"), warning: PATTERN_CHARS.pattern("O.O"), heartbeat: PATTERN_CHARS.pattern("oO--oO"), tripleClick: PATTERN_CHARS.pattern("o.o.o"), notification: PATTERN_CHARS.pattern("o-O=o") };
+PATTERN_CHARS = PATTERN_CHARS_mod;
 
-export function useNativeGesture(gestureHandlerProps) {
-  let tmp = gestureHandlerProps;
-  if (gestureHandlerProps === undefined) {
-    tmp = closure_2;
-  }
-  const obj = _mod5523;
-  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp);
-  const obj2 = _mod5540;
-  return obj2.useGesture(ComposedGestureName.SingleGestureName.Native, clonedAndRemappedConfig);
-}
+export const Patterns = obj;

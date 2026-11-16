@@ -1,10 +1,10 @@
-// Module ID: 13032
-// Function ID: 13033
+// Module ID: 13780
+// Function ID: 13781
 // Name: useConjureSharedProjectLaunch
-// Dependencies: [5, 32, 19, 11748, 13033, 2]
+// Dependencies: [5, 32, 19, 12443, 13781, 2]
 // Exports: default
 
-// Module 13032 (useConjureSharedProjectLaunch)
+// Module 13780 (useConjureSharedProjectLaunch)
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -60,7 +60,7 @@ export default function useConjureSharedProjectLaunch(arg0, install_scope, guild
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {

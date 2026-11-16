@@ -1,22 +1,22 @@
-// Module ID: 7782
-// Function ID: 7783
+// Module ID: 8697
+// Function ID: 8698
 // Name: MemberSafetyStore
-// Dependencies: [32, 502, 5082, 5041, 1385, 7783, 1072, 1380, 11, 7789, 7790, 7785, 504, 572, 2]
+// Dependencies: [32, 502, 5218, 5177, 1388, 8698, 1072, 1255, 11, 8704, 8705, 8700, 504, 572, 2]
 
-// Module 7782 (MemberSafetyStore)
+// Module 8697 (MemberSafetyStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import GuildMemberSafetyPageStore from "GuildMemberSafetyPageStore" /* 7783 */;
-import MemberSafetyElasticSearchQueryTypes from "MemberSafetyElasticSearchQueryTypes" /* 7785 */;
-import MemberSafetyStoreSupplemental from "MemberSafetyStoreSupplemental" /* 7789 */;
-import MemberSafetySupplementalUtils from "MemberSafetySupplementalUtils" /* 7790 */;
+import GuildMemberSafetyPageStore from "GuildMemberSafetyPageStore" /* 8698 */;
+import MemberSafetyElasticSearchQueryTypes from "MemberSafetyElasticSearchQueryTypes" /* 8700 */;
+import MemberSafetyStoreSupplemental from "MemberSafetyStoreSupplemental" /* 8704 */;
+import MemberSafetySupplementalUtils from "MemberSafetySupplementalUtils" /* 8705 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 5082 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import UserStore from "UserStore" /* 1385 */;
+import GuildMemberStore from "GuildMemberStore" /* 5218 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 let participants;
@@ -428,6 +428,18 @@ let obj = {
     }
     const obj = closure_11[guildId];
     return obj.removeMember(user.id);
+  },
+  GUILD_MEMBER_REMOVE_LOCAL: function handleGuildMemberRemoveLocal(guildId) {
+    guildId = guildId.guildId;
+    const userId = guildId.userId;
+    if (null == closure_11[guildId]) {
+      const self = this;
+      const self2 = this;
+      closure_11[guildId] = new closure_8(guildId);
+      const tmp4 = new closure_8(guildId);
+    }
+    const obj = closure_11[guildId];
+    return obj.removeMember(userId);
   },
   GUILD_ROLE_UPDATE: handleGuildRoleUpdateOrDelete,
   GUILD_ROLE_DELETE: handleGuildRoleUpdateOrDelete,

@@ -1,39 +1,39 @@
-// Module ID: 9991
-// Function ID: 9992
+// Module ID: 9107
+// Function ID: 9108
 // Name: ForumHooks
-// Dependencies: [5, 19, 6884, 6929, 6949, 7574, 5019, 6848, 5041, 5102, 6930, 1385, 7573, 7555, 9992, 8307, 7551, 1072, 5026, 1112, 504, 7575, 572, 12, 1380, 5753, 11, 8450, 5028, 8499, 6603, 8686, 9038, 9993, 7375, 2]
+// Dependencies: [5, 19, 6969, 7014, 7035, 8871, 5155, 6934, 5177, 5238, 7015, 1388, 9108, 8867, 9109, 8868, 8996, 1072, 5162, 1112, 504, 8995, 572, 12, 1255, 5889, 11, 9008, 5164, 9110, 6739, 8646, 9111, 9112, 7874, 2]
 // Exports: getForumPostAuthor, useAutomaticForumSearch, useCanManageChannel, useCanSearchForumPosts, useCanViewArchivedPosts, useChannelTemplate, useDefaultReactionEmoji, useExistingPin, useFacepileUsers, useForumActiveThreadIds, useForumPostAuthor, useForumPostFirstMessageMarkup, useForumPostMessageAuthor, useForumPostReadStates, useForumSearchQuery, useForumSearchState, useForumThreadsForChannelList, useHasForumSearchQuery, useLastActiveTimestamp, useLoadForumUnreadCounts, useMaxPossibleForumPostReactions, useMessageCount, useMostUsedReaction, useSomeForumPostReactions, useUnreadThreadsCountForParent
 
-// Module 9991 (ForumHooks)
+// Module 9107 (ForumHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ThreadConstants from "ThreadConstants" /* 1112 */;
-import GlobalUtils from "GlobalUtils" /* 1380 */;
-import ChannelConstants from "ChannelConstants" /* 5026 */;
-import ThreadSortOrder from "ThreadSortOrder" /* 5028 */;
-import useMessageAuthor from "useMessageAuthor" /* 6603 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 7375 */;
-import ForumConstants from "ForumConstants" /* 7551 */;
-import ForumUtils from "ForumUtils" /* 7575 */;
-import ThreadUtils from "ThreadUtils" /* 8450 */;
-import renderMessageMarkupDefault from "renderMessageMarkup" /* 8686 */;
+import GlobalUtils from "GlobalUtils" /* 1255 */;
+import ChannelConstants from "ChannelConstants" /* 5162 */;
+import ThreadSortOrder from "ThreadSortOrder" /* 5164 */;
+import useMessageAuthor from "useMessageAuthor" /* 6739 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 7874 */;
+import renderMessageMarkupDefault from "renderMessageMarkup" /* 8646 */;
+import ForumUtils from "ForumUtils" /* 8995 */;
+import ForumConstants from "ForumConstants" /* 8996 */;
+import ThreadUtils from "ThreadUtils" /* 9008 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6884 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6929 */;
-import ActiveThreadsStore from "ActiveThreadsStore" /* 6949 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 7574 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 6848 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import PermissionStore from "PermissionStore" /* 5102 */;
-import ReadStateStore from "ReadStateStore" /* 6930 */;
-import UserStore from "UserStore" /* 1385 */;
-import ForumActivePostStore from "ForumActivePostStore" /* 7573 */;
-import ForumPostMessagesStore from "ForumPostMessagesStore" /* 7555 */;
-import ForumPostUnreadCountStore from "ForumPostUnreadCountStore" /* 9992 */;
-import ForumSearchStore from "ForumSearchStore" /* 8307 */;
+import EmojiStore from "EmojiStore" /* 6969 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 7014 */;
+import ActiveThreadsStore from "ActiveThreadsStore" /* 7035 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 8871 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 6934 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import PermissionStore from "PermissionStore" /* 5238 */;
+import ReadStateStore from "ReadStateStore" /* 7015 */;
+import UserStore from "UserStore" /* 1388 */;
+import ForumActivePostStore from "ForumActivePostStore" /* 9108 */;
+import ForumPostMessagesStore from "ForumPostMessagesStore" /* 8867 */;
+import ForumPostUnreadCountStore from "ForumPostUnreadCountStore" /* 9109 */;
+import ForumSearchStore from "ForumSearchStore" /* 8868 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -44,9 +44,9 @@ let closure_20;
 let closure_21;
 let closure_22;
 let closure_23;
-const f97567 = (count) => count.count + count.burst_count;
-const f97568 = (burst_count) => burst_count.burst_count;
-const f97570 = () => PermissionStore.can(constants.READ_MESSAGE_HISTORY, closure_0);
+const f97747 = (count) => count.count + count.burst_count;
+const f97748 = (burst_count) => burst_count.burst_count;
+const f97750 = () => PermissionStore.can(constants.READ_MESSAGE_HISTORY, closure_0);
 const ForumTimestampFormats = ForumConstants.ForumTimestampFormats;
 ({ AnalyticsObjectTypes: closure_20, AnalyticsObjects: closure_21, EMPTY_STRING_SNOWFLAKE_ID: closure_22, Permissions: closure_23 } = Constants);
 const ChannelFlags = ChannelConstants.ChannelFlags;
@@ -180,7 +180,7 @@ export function useMostUsedReaction(reactions) {
       reactions = [];
     }
     if (0 !== reactions.length) {
-      const items = [f97567, f97568];
+      const items = [f97747, f97748];
       const obj = _modDef12;
       return obj.orderBy(reactions, items, ["desc", "desc"])[0];
     }
@@ -289,7 +289,7 @@ export function useSomeForumPostReactions(message) {
     }
     let orderByResult = reactions;
     if (flag) {
-      const items = [f97567, f97568];
+      const items = [f97747, f97748];
       const obj = _modDef12;
       orderByResult = obj.orderBy(reactions, items, ["desc", "desc"]);
     }
@@ -366,7 +366,7 @@ export function useMaxPossibleForumPostReactions(message) {
     if (reactions == null) {
       reactions = [];
     }
-    const items = [f97567, f97568];
+    const items = [f97747, f97748];
     const obj = _modDef12;
     return obj.orderBy(reactions, items, ["desc", "desc"]);
   }, items1);
@@ -480,7 +480,7 @@ export function useForumPostMessageAuthor(message, thread) {
   const items = [UserStore];
   const obj = id(504);
   const stateFromStores = obj.useStateFromStores(items, () => UserStore.getUser(id));
-  const obj2 = id(6603);
+  const obj2 = id(6739);
   const nullableMessageAuthor = obj2.useNullableMessageAuthor(message);
   const items1 = [guildId, id];
   const effect = react.useEffect(() => {
@@ -632,7 +632,7 @@ export function useForumPostReadStates(stateFromStores) {
     let guildId = stateFromStores.getGuildId();
     const tmp2 = stateFromStores;
     if (guildId == null) {
-      guildId = authStore6;
+      guildId = authStore5;
     }
     const guild = getGuild(guildId);
     if (null == guild) {
@@ -675,7 +675,7 @@ export function useCanSearchForumPosts(channel) {
   _require = channel;
   const items = [PermissionStore];
   const obj = require("get initialized");
-  return obj.useStateFromStores(items, f97570);
+  return obj.useStateFromStores(items, f97750);
 }
 export function useCanViewArchivedPosts(channel) {
   _require = channel;
@@ -729,7 +729,7 @@ export function useAutomaticForumSearch(channel, tagFilter, tagSetting) {
   _require = channel;
   let obj2 = require("get initialized");
   const items1 = [PermissionStore];
-  const stateFromStores = obj2.useStateFromStores(items1, f97570);
+  const stateFromStores = obj2.useStateFromStores(items1, f97750);
   const ref = isSearchLoading.useRef(null);
   const useRef = isSearchLoading.useRef;
   set = new Set();
@@ -772,7 +772,7 @@ export function useAutomaticForumSearch(channel, tagFilter, tagSetting) {
                       const obj3 = { value, done: true };
                       return obj3;
                     } else {
-                      return { value: "HermesInternal", done: null };
+                      return { value: "HermesInternal", done: "ulw" };
                     }
                   } else {
                     let c2;
@@ -811,7 +811,7 @@ export function useAutomaticForumSearch(channel, tagFilter, tagSetting) {
                           c2 = 0;
                         }
                         c0 = 3;
-                        return { value: "HermesInternal", done: null };
+                        return { value: "HermesInternal", done: "ulw" };
                       }
                     } catch (tmp15) {
                       if (0 === c2) {

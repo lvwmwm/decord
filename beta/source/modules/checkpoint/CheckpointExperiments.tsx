@@ -1,11 +1,11 @@
-// Module ID: 6602
-// Function ID: 6603
+// Module ID: 6738
+// Function ID: 6739
 // Name: CheckpointExperiments
-// Dependencies: [1449, 2]
-// Exports: getIsCheckpointCardEnabled, getIsCheckpointEnabled, useIsCheckpointCardEnabled, useIsCheckpointEnabled, useIsCheckpointQAEnabled
+// Dependencies: [1452, 2]
+// Exports: getIsCheckpointCardEnabled, getIsCheckpointEnabled, useCheckpointQAMode, useIsCheckpointCardEnabled, useIsCheckpointEnabled
 
-// Module 6602 (CheckpointExperiments)
-import ApexExperiment_mod from "ApexExperiment" /* 1449 */;
+// Module 6738 (CheckpointExperiments)
+import ApexExperiment_mod from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 let ApexExperiment = ApexExperiment_mod;
@@ -15,7 +15,7 @@ ApexExperiment = ApexExperiment_mod;
 const obj2 = { name: "2026-09-build-a-bear-cards", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
 let closure_1 = ApexExperiment.createApexExperiment(obj2);
 ApexExperiment = ApexExperiment_mod;
-const obj3 = { name: "2026-10-build-a-bear-qa", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
+const obj3 = { name: "2026-10-build-a-bear-qa", kind: "user", defaultConfig: { mode: "off" }, variations: { 0: { mode: "off" }, 1: { mode: "all" }, 2: { mode: "reset_only" } } };
 let closure_2 = ApexExperiment.createApexExperiment(obj3);
 const result = size.fileFinishedImporting("modules/checkpoint/CheckpointExperiments.tsx");
 
@@ -35,7 +35,7 @@ export function getIsCheckpointCardEnabled(transformCheckpointCardToRowGenerated
   const obj = { location: transformCheckpointCardToRowGeneratedComponent };
   return closure_1.getConfig(obj).enabled;
 }
-export function useIsCheckpointQAEnabled(CheckpointProfileEntrypoint) {
+export function useCheckpointQAMode(CheckpointProfileEntrypoint) {
   const obj = { location: CheckpointProfileEntrypoint };
-  return closure_2.useConfig(obj).enabled;
+  return closure_2.useConfig(obj).mode;
 }

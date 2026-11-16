@@ -1,27 +1,27 @@
-// Module ID: 17325
-// Function ID: 17326
+// Module ID: 17596
+// Function ID: 17597
 // Name: BountyVideoEndAppStorePanel
-// Dependencies: [19, 17, 1192, 5421, 21, 5170, 575, 14933, 5753, 1652, 7972, 5862, 14928, 5452, 1705, 5402, 5405, 5755, 504, 5231, 2]
+// Dependencies: [19, 17, 1192, 5557, 21, 5306, 575, 10177, 5889, 1655, 8825, 5998, 10172, 5588, 1708, 5538, 5541, 5891, 504, 5367, 2]
 // Exports: default
 
-// Module 17325 (BountyVideoEndAppStorePanel)
+// Module 17596 (BountyVideoEndAppStorePanel)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1705 from "module_1705" /* 1705 */;
-import native from "native" /* 5231 */;
-import timing_timing from "timing/timing" /* 5402 */;
-import timingPresets from "timingPresets" /* 5405 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5421 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5452 */;
-import openURLDefault from "openURL" /* 5862 */;
-import AnalyticsActions from "AnalyticsActions" /* 7972 */;
-import AppStoreOverlayContent from "AppStoreOverlayContent" /* 14928 */;
-import AppStoreOverlayBody from "AppStoreOverlayBody" /* 14933 */;
+import _mod1708 from "module_1708" /* 1708 */;
+import native from "native" /* 5367 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import timingPresets from "timingPresets" /* 5541 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5557 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5588 */;
+import openURLDefault from "openURL" /* 5998 */;
+import AnalyticsActions from "AnalyticsActions" /* 8825 */;
+import AppStoreOverlayContent from "AppStoreOverlayContent" /* 10172 */;
+import AppStoreOverlayBody from "AppStoreOverlayBody" /* 10177 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let num, tmp2;
@@ -167,7 +167,7 @@ function BountyVideoEndAppStorePanelInner(metadata) {
     const items4 = [closure_13, tmp4, 0.5, 800, , , , ];
     const onEnd = onBeginResult.onUpdate(BountyVideoEndAppStorePanelTsx3).onEnd;
     onBeginResult.onUpdate(BountyVideoEndAppStorePanelTsx3);
-    items4[4] = _mod1705.scheduleOnRN;
+    items4[4] = _mod1708.scheduleOnRN;
     items4[5] = callback;
     items4[6] = timing_timing.withTiming;
     items4[7] = timingPresets.timingStandard;

@@ -1,18 +1,18 @@
-// Module ID: 16893
-// Function ID: 16894
+// Module ID: 17169
+// Function ID: 17170
 // Name: UserProfileDisplayNameStyleTileButton
-// Dependencies: [19, 17, 5171, 8835, 21, 5170, 575, 504, 8841, 4995, 7076, 1113, 16894, 10923, 10924, 7080, 2]
+// Dependencies: [19, 17, 5307, 8542, 21, 5306, 575, 504, 8541, 5131, 7428, 1113, 17170, 10064, 10065, 7456, 2]
 // Exports: default
 
-// Module 16893 (UserProfileDisplayNameStyleTileButton)
+// Module 17169 (UserProfileDisplayNameStyleTileButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8841 */;
+import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8541 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5171 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8835 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8542 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -54,13 +54,13 @@ export default function UserProfileDisplayNameStyleTileButton(user) {
   let obj2 = user(504);
   const items1 = [AccessibilityStore];
   const stateFromStores = obj2.useStateFromStores(items1, () => useReducedMotion.useReducedMotion);
-  const GifAutoPlay = user(4995).GifAutoPlay;
+  const GifAutoPlay = user(5131).GifAutoPlay;
   const setting = GifAutoPlay.useSetting();
   const obj3 = { accessibilityRole: "button", accessibilityLabel: intl.string(user(1113).t.lsjENp), accessibilityValue: obj4, accessibilityHint: intl2.string(user(1113).t["4lAcxv"]), onPress, style: tmp.button, children: null };
-  const PressableHighlight = user(7076).PressableHighlight;
+  const PressableHighlight = user(7428).PressableHighlight;
   intl = user(1113).intl;
   obj4 = { text: obj5.getDisplayNameStyleAccessibleValue(displayNameStyles) };
-  obj5 = user(16894);
+  obj5 = user(17170);
   intl2 = user(1113).intl;
   const obj6 = { style: tmp.previewContainer, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: null };
   const obj7 = { userId: user.id, userName: displayName, pendingDisplayNameStyles: displayNameStyles, ignoreDisabledStylesSetting: true, effectDisplayType: null, variant: "heading-xl/semibold", defaultColor: "text-muted", lineClamp: 1 };
@@ -69,13 +69,13 @@ export default function UserProfileDisplayNameStyleTileButton(user) {
   if (!stateFromStores) {
     let STATIC;
     if (setting) {
-      STATIC = tmp2(10924).EffectDisplayType.ANIMATED;
+      STATIC = tmp2(10065).EffectDisplayType.ANIMATED;
     }
     obj7.effectDisplayType = STATIC;
     obj6.children = closure_6(tmp10, obj7);
-    const items2 = [closure_6(tmp9, obj6), closure_6(user(7080).TableRowArrow, {})];
+    const items2 = [closure_6(tmp9, obj6), closure_6(user(7456).TableRowArrow, {})];
     obj3.children = items2;
     return tmp7(PressableHighlight, obj3);
   }
-  STATIC = tmp2(10924).EffectDisplayType.STATIC;
+  STATIC = tmp2(10065).EffectDisplayType.STATIC;
 };

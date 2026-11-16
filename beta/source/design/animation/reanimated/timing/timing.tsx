@@ -1,13 +1,13 @@
-// Module ID: 5402
-// Function ID: 5403
+// Module ID: 5538
+// Function ID: 5539
 // Name: timing/timing
-// Dependencies: [5403, 5404, 1652, 2]
+// Dependencies: [5539, 5540, 1655, 2]
 // Exports: withTiming
 
-// Module 5402 (timing/timing)
-import _mod1652 from "module_1652" /* 1652 */;
-import ReanimatedConstants from "ReanimatedConstants" /* 5403 */;
-import reanimated_AccessibilityPreferencesSharedValue from "reanimated/AccessibilityPreferencesSharedValue" /* 5404 */;
+// Module 5538 (timing/timing)
+import _mod1655 from "module_1655" /* 1655 */;
+import ReanimatedConstants from "ReanimatedConstants" /* 5539 */;
+import reanimated_AccessibilityPreferencesSharedValue from "reanimated/AccessibilityPreferencesSharedValue" /* 5540 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
@@ -19,24 +19,24 @@ const items = [{ code: "(function withTiming_timingTsx1(toValue,config,shouldAni
 const CONFIG_NEVER_ANIMATE_TIMING = ReanimatedConstants.CONFIG_NEVER_ANIMATE_TIMING;
 items[1] = reanimated_AccessibilityPreferencesSharedValue.accessibilityPreferencesSharedValue;
 items[2] = CONFIG_NEVER_ANIMATE_TIMING;
-items[3] = _mod1652.ReduceMotion;
-items[4] = _mod1652.withTiming;
+items[3] = _mod1655.ReduceMotion;
+items[4] = _mod1655.withTiming;
 let c0;
 let c1;
 let c2;
 let c3;
 [tmp2, tmp3, tmp4, tmp5, tmp6] = items;
-function withTiming(c9, timingStandard, arg2, BadgeUnlockAnimationTsx5) {
+function withTiming(c9, timingSlow, arg2, BadgeUnlockAnimationTsx5) {
   let tmp3;
   let str = arg2;
   if (arg2 === undefined) {
     str = "respect-motion-settings";
   }
   if ("animate-always" === str) {
-    let tmp5 = timingStandard;
+    let tmp5 = timingSlow;
     if ("animate-always" === str) {
-      let obj = timingStandard;
-      if (timingStandard == null) {
+      let obj = timingSlow;
+      if (timingSlow == null) {
         obj = {};
       }
       const obj2 = { reduceMotion: Never.Never };

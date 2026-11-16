@@ -1,21 +1,21 @@
-// Module ID: 16610
-// Function ID: 16611
+// Module ID: 16886
+// Function ID: 16887
 // Name: AccessibilityManager
-// Dependencies: [5, 17, 5171, 1072, 1195, 16611, 572, 1252, 16614, 11399, 16612, 5230, 5177, 2]
+// Dependencies: [5, 17, 5307, 1072, 1195, 16887, 572, 1256, 16890, 11989, 16888, 5366, 5313, 2]
 
-// Module 16610 (AccessibilityManager)
+// Module 16886 (AccessibilityManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import ThemeConstants from "ThemeConstants" /* 1195 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ThemeActionCreators from "ThemeActionCreators" /* 5230 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11399 */;
-import AccessibilitySystemFeaturesDefault from "AccessibilitySystemFeatures" /* 16611 */;
-import AccessibilityPreferencesSharedValue from "AccessibilityPreferencesSharedValue" /* 16612 */;
-import react_native from "react-native" /* 16614 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import ThemeActionCreators from "ThemeActionCreators" /* 5366 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11989 */;
+import AccessibilitySystemFeaturesDefault from "AccessibilitySystemFeatures" /* 16887 */;
+import AccessibilityPreferencesSharedValue from "AccessibilityPreferencesSharedValue" /* 16888 */;
+import react_native from "react-native" /* 16890 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_native2 from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5171 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, set;
@@ -71,7 +71,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -104,7 +104,7 @@ let obj = {
             closure_0 = value;
             const result = closure_129_0.updateScreenReaderEnabled(closure_0);
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } catch (tmp11) {
           c3 = 3;

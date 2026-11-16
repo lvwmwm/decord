@@ -1,13 +1,13 @@
-// Module ID: 18972
-// Function ID: 18973
+// Module ID: 19287
+// Function ID: 19288
 // Name: ICYMIContext
-// Dependencies: [19, 21, 1493, 575, 2]
+// Dependencies: [19, 21, 1496, 575, 2]
 // Exports: ICYMIContextProvider, useICYMIContextConstructor
 
-// Module 18972 (ICYMIContext)
+// Module 19287 (ICYMIContext)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

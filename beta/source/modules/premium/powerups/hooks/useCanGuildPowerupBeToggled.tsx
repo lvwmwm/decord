@@ -1,14 +1,14 @@
-// Module ID: 14380
-// Function ID: 14381
+// Module ID: 10740
+// Function ID: 10741
 // Name: useCanGuildPowerupBeToggled
-// Dependencies: [19, 5377, 5378, 504, 14348, 1113, 2696, 2]
+// Dependencies: [19, 5513, 5514, 504, 10700, 1113, 2733, 2]
 // Exports: default
 
-// Module 14380 (useCanGuildPowerupBeToggled)
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5378 */;
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 14348 */;
+// Module 10740 (useCanGuildPowerupBeToggled)
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5514 */;
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 10700 */;
 import react from "react" /* 19 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 5377 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 5513 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

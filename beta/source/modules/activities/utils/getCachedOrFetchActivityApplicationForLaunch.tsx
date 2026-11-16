@@ -1,15 +1,15 @@
-// Module ID: 11934
-// Function ID: 11935
+// Module ID: 12770
+// Function ID: 12771
 // Name: getCachedOrFetchActivityApplicationForLaunch
-// Dependencies: [5, 2162, 2140, 5019, 11916, 11935, 11936, 2]
+// Dependencies: [5, 2165, 2143, 5155, 12736, 12771, 12772, 2]
 // Exports: default
 
-// Module 11934 (getCachedOrFetchActivityApplicationForLaunch)
-import fetchShelf from "fetchShelf" /* 11916 */;
+// Module 12770 (getCachedOrFetchActivityApplicationForLaunch)
+import fetchShelf from "fetchShelf" /* 12736 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 2162 */;
-import ApplicationRecord from "ApplicationRecord" /* 2140 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
+import ApplicationStore from "ApplicationStore" /* 2165 */;
+import ApplicationRecord from "ApplicationRecord" /* 2143 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
 import size from "module_2" /* 2 */;
 
 let application, channel, closure_2, closure_3;
@@ -31,7 +31,7 @@ let obj = function _getCachedOrFetchActivityApplicationForLaunch() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {

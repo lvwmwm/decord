@@ -1,18 +1,18 @@
-// Module ID: 12891
-// Function ID: 12892
+// Module ID: 13643
+// Function ID: 13644
 // Name: ConjurePublishNoticeLine
-// Dependencies: [19, 21, 12885, 12892, 12893, 5783, 1113, 12813, 7627, 12894, 4026, 5406, 12895, 2]
+// Dependencies: [19, 21, 13637, 13644, 13645, 5919, 1113, 13568, 7231, 13646, 4131, 5542, 13647, 2]
 // Exports: default
 
-// Module 12891 (ConjurePublishNoticeLine)
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5406 */;
-import Text_Text from "Text/Text" /* 5783 */;
-import transitionToGuild from "transitionToGuild" /* 7627 */;
-import useConjurePublishedAppNameDefault from "useConjurePublishedAppName" /* 12885 */;
-import useConjurePublishedServerNameDefault from "useConjurePublishedServerName" /* 12892 */;
-import useConjureAutomodSettingsLinkDefault from "useConjureAutomodSettingsLink" /* 12893 */;
-import useConjurePatchNotesLink from "useConjurePatchNotesLink" /* 12894 */;
-import ConjurePublishNotesSheet from "ConjurePublishNotesSheet" /* 12895 */;
+// Module 13643 (ConjurePublishNoticeLine)
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5542 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import transitionToGuild from "transitionToGuild" /* 7231 */;
+import useConjurePublishedAppNameDefault from "useConjurePublishedAppName" /* 13637 */;
+import useConjurePublishedServerNameDefault from "useConjurePublishedServerName" /* 13644 */;
+import useConjureAutomodSettingsLinkDefault from "useConjureAutomodSettingsLink" /* 13645 */;
+import useConjurePatchNotesLink from "useConjurePatchNotesLink" /* 13646 */;
+import ConjurePublishNotesSheet from "ConjurePublishNotesSheet" /* 13647 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -54,7 +54,7 @@ function PatchNotesLink(projectId) {
               return _false(Text_Text.Text, obj, arg1);
             }
       };
-      formatResult = intl2.format(tmp(4026)["35VEu5"], obj2);
+      formatResult = intl2.format(tmp(4131)["35VEu5"], obj2);
     } else {
       let tmp7 = projectId;
       const intl = projectId(1113).intl;
@@ -75,7 +75,7 @@ function PatchNotesLink(projectId) {
               }
             }
       };
-      formatResult = intl.format(tmp(4026)["6/zJpD"], obj);
+      formatResult = intl.format(tmp(4131)["6/zJpD"], obj);
     }
     let obj3 = { children: items };
     items = [" ", formatResult];
@@ -133,7 +133,7 @@ export default function ConjurePublishNoticeLine(arg0) {
   const children = [format(publishNoticeMessageResult, obj), ];
   if (null != tmp4.guildId) {
     const obj2 = { guildId: tmp4.guildId, update: notice.update };
-    tmp10 = closure_3(tmp6(12893).ConjureAutomodSettingsLink, obj2);
+    tmp10 = closure_3(tmp6(13645).ConjureAutomodSettingsLink, obj2);
   } else {
     tmp10 = null;
     if (!tmp4.automod) {

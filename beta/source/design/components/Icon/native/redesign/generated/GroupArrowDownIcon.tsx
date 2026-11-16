@@ -1,14 +1,14 @@
-// Module ID: 12081
-// Function ID: 12082
+// Module ID: 12946
+// Function ID: 12947
 // Name: GroupArrowDownIcon
-// Dependencies: [19, 21, 575, 5873, 12082, 2]
+// Dependencies: [19, 21, 575, 6009, 12947, 2]
 // Exports: GroupArrowDownIcon
 
-// Module 12081 (GroupArrowDownIcon)
+// Module 12946 (GroupArrowDownIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5873 */;
-import AssetRegistry from "AssetRegistry" /* 12082 */;
+import BaseIconImage2 from "BaseIconImage" /* 6009 */;
+import AssetRegistry from "AssetRegistry" /* 12947 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,18 +1,18 @@
-// Module ID: 10710
-// Function ID: 10711
+// Module ID: 11662
+// Function ID: 11663
 // Name: PremiumGiftModal
-// Dependencies: [32, 19, 1385, 21, 10711, 5170, 575, 504, 9587, 1113, 7097, 10712, 14725, 14727, 14756, 2760, 14714, 10709, 7445, 7420, 5771, 1266, 6831, 2183, 10843, 10713, 14785, 7264, 2]
+// Dependencies: [32, 19, 1388, 21, 9684, 5306, 575, 504, 9464, 1113, 7493, 11663, 11830, 11833, 11837, 2797, 11815, 11661, 7937, 7918, 5907, 1269, 6838, 2186, 11746, 11664, 11842, 7490, 2]
 // Exports: default
 
-// Module 10710 (PremiumGiftModal)
+// Module 11662 (PremiumGiftModal)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6831 */;
-import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10711 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
+import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 9684 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import UserStore from "UserStore" /* 1385 */;
-import createStyles from "createStyles" /* 5170 */;
+import UserStore from "UserStore" /* 1388 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let user;

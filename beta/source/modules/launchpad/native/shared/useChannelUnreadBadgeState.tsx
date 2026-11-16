@@ -1,13 +1,13 @@
-// Module ID: 18786
-// Function ID: 18787
+// Module ID: 19119
+// Function ID: 19120
 // Name: useChannelUnreadBadgeState
-// Dependencies: [7820, 6930, 6863, 504, 6973, 2]
+// Dependencies: [8735, 7015, 6948, 504, 7059, 2]
 // Exports: useBaseChannelUnreadBadgeState, useChannelUnreadBadgeState
 
-// Module 18786 (useChannelUnreadBadgeState)
-import NewChannelsStore from "NewChannelsStore" /* 7820 */;
-import ReadStateStore from "ReadStateStore" /* 6930 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6863 */;
+// Module 19119 (useChannelUnreadBadgeState)
+import NewChannelsStore from "NewChannelsStore" /* 8735 */;
+import ReadStateStore from "ReadStateStore" /* 7015 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6948 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

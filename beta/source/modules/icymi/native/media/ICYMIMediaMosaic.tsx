@@ -1,35 +1,35 @@
-// Module ID: 19019
-// Function ID: 19020
+// Module ID: 19331
+// Function ID: 19332
 // Name: ICYMIMediaMosaic
-// Dependencies: [32, 19, 17, 5171, 5019, 5112, 1385, 9013, 1072, 21, 5170, 575, 6215, 1092, 504, 8980, 1652, 5402, 19020, 5874, 5783, 1113, 8955, 8323, 7076, 9031, 12147, 8777, 18972, 8946, 9026, 1380, 12, 7375, 8940, 5808, 2]
+// Dependencies: [32, 19, 17, 5307, 5155, 5248, 1388, 10205, 1072, 21, 5306, 575, 6351, 1092, 504, 9730, 1655, 5538, 19332, 6010, 5919, 1113, 7606, 8879, 7428, 10217, 13018, 7432, 19287, 8633, 10210, 1255, 12, 7874, 8627, 5944, 2]
 // Exports: default
 
-// Module 19019 (ICYMIMediaMosaic)
+// Module 19331 (ICYMIMediaMosaic)
 import _mod12 from "module_12" /* 12 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import GlobalUtils from "GlobalUtils" /* 1380 */;
-import _modDef1652 from "module_1652" /* 1652 */;
-import FastImageDefault from "FastImage" /* 5874 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 7375 */;
-import openMediaModal2 from "openMediaModal" /* 8940 */;
-import MediaSourceUtil from "MediaSourceUtil" /* 8946 */;
-import common_VideoDefault from "common/Video" /* 8980 */;
-import ICYMITypes from "ICYMITypes" /* 9026 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 9031 */;
-import ICYMIContext from "ICYMIContext" /* 18972 */;
-import ThumbhashUtils from "ThumbhashUtils" /* 19020 */;
+import GlobalUtils from "GlobalUtils" /* 1255 */;
+import _modDef1655 from "module_1655" /* 1655 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 7874 */;
+import openMediaModal2 from "openMediaModal" /* 8627 */;
+import MediaSourceUtil from "MediaSourceUtil" /* 8633 */;
+import common_VideoDefault from "common/Video" /* 9730 */;
+import ICYMITypes from "ICYMITypes" /* 10210 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 10217 */;
+import ICYMIContext from "ICYMIContext" /* 19287 */;
+import ThumbhashUtils from "ThumbhashUtils" /* 19332 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5171 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import RelationshipStore from "RelationshipStore" /* 5112 */;
-import UserStore from "UserStore" /* 1385 */;
-import ICYMIStore from "ICYMIStore" /* 9013 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import RelationshipStore from "RelationshipStore" /* 5248 */;
+import UserStore from "UserStore" /* 1388 */;
+import ICYMIStore from "ICYMIStore" /* 10205 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -44,7 +44,7 @@ let hasOwnProperty;
 let map1;
 let metroRequire;
 let tmp4;
-const useChannelName = tmp4(5808);
+const useChannelName = tmp4(5944);
 function MediaMosaicVideo(source) {
   let autoplay;
   let height;
@@ -94,9 +94,9 @@ function MediaMosaicImage(source) {
   let obj = react;
   [first, importDefault] = react.useState(false);
   const items = [closure_20, , ];
-  const useAnimatedStyle = source(1652).useAnimatedStyle;
-  source(1652);
-  items[1] = source(5402).withTiming;
+  const useAnimatedStyle = source(1655).useAnimatedStyle;
+  source(1655);
+  items[1] = source(5538).withTiming;
   items[2] = first;
   let c0;
   let c1;
@@ -128,7 +128,7 @@ function MediaMosaicImage(source) {
   }, items2);
   let obj2 = { style: items3, children: closure_15(FastImageDefault, obj3) };
   items3 = [animatedStyle, tmp.thumbhashMedia];
-  const View = _modDef1652.View;
+  const View = _modDef1655.View;
   obj3 = { source: memo, style: items4 };
   items4 = [style, tmp.media, dimensions];
   const items5 = [closure_15(View, obj2), ];
@@ -595,7 +595,7 @@ let react = react_mod;
 ({ Pressable: hasOwnProperty, View: metroRequire } = react_native);
 ({ AnalyticsObjectTypes: closure_12, AnalyticsObjects: map1, AnalyticsPages: closure_14 } = Constants);
 ({ jsx: closure_15, Fragment: closure_16, jsxs: closure_17 } = Fragment);
-const authStore5 = createStyles.createStyles(() => {
+const authStore4 = createStyles.createStyles(() => {
   let rect;
   const obj = { media: { borderRadius: nativeDefault.radii.xs }, video: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH }, thumbhashMedia: { position: "absolute", top: 0, left: 0, zIndex: 1 }, container: { gap: 4 }, imagesContainer: { justifyContent: "center", gap: 4, width: "100%" }, imageRow: { flexDirection: "row", gap: 4 }, topRow: { overflow: "hidden", borderTopEndRadius: nativeDefault.radii.lg, borderTopStartRadius: nativeDefault.radii.lg }, bottomRow: { overflow: "hidden", borderBottomEndRadius: nativeDefault.radii.lg, borderBottomStartRadius: nativeDefault.radii.lg }, videoIcon: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderRadius: nativeDefault.radii.round, padding: 16 }, muteIcon: rect, spoilerText: { backgroundColor: nativeDefault.colors.SPOILER_HIDDEN_BACKGROUND, borderRadius: nativeDefault.radii.lg, paddingHorizontal: nativeDefault.space.PX_12, paddingVertical: 6 }, leftColumn: { overflow: "hidden", borderTopStartRadius: nativeDefault.radii.lg, borderBottomStartRadius: nativeDefault.radii.lg }, rightColumn: { overflow: "hidden", borderTopEndRadius: nativeDefault.radii.lg, borderBottomEndRadius: nativeDefault.radii.lg, gap: 4 }, singleImage: { overflow: "hidden", borderRadius: nativeDefault.radii.lg }, centerContainer: { position: "absolute", width: "100%", height: "100%", alignItems: "center", justifyContent: "center", zIndex: 2 }, absoluteContainer: { position: "absolute", width: "100%", height: "100%", zIndex: 2 }, iconBg: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER }, iconBgSelected: { backgroundColor: nativeDefault.colors.WHITE } };
   ({ borderRadius: nativeDefault.radii.xs });

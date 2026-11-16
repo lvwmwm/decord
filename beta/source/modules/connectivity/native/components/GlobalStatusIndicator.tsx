@@ -1,19 +1,19 @@
-// Module ID: 12055
-// Function ID: 12056
+// Module ID: 12917
+// Function ID: 12918
 // Name: GlobalStatusIndicator
-// Dependencies: [19, 17, 5407, 6931, 10355, 5019, 5925, 21, 12053, 504, 11168, 8041, 1113, 12056, 1652, 12051, 2]
+// Dependencies: [19, 17, 5543, 7016, 11041, 5155, 6061, 21, 10818, 504, 11009, 6890, 1113, 12918, 1655, 12914, 2]
 // Exports: default, useGlobalStatusIndicatorHeightSharedValue
 
-// Module 12055 (GlobalStatusIndicator)
-import _mod1652 from "module_1652" /* 1652 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 8041 */;
+// Module 12917 (GlobalStatusIndicator)
+import _mod1655 from "module_1655" /* 1655 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6890 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ActionSheetStore from "ActionSheetStore" /* 5407 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6931 */;
-import NativeMenuStore from "NativeMenuStore" /* 10355 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5925 */;
+import ActionSheetStore from "ActionSheetStore" /* 5543 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 7016 */;
+import NativeMenuStore from "NativeMenuStore" /* 11041 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -147,7 +147,7 @@ export default function GlobalStatusIndicator(children) {
   return height.useMemo(() => {
     let items;
     let str;
-    const tmp = authStore3;
+    const tmp = gesture;
     const tmp2 = map1;
     const tmp4 = React3;
     if (accessibilityElementsHidden) {
@@ -172,7 +172,7 @@ export default function GlobalStatusIndicator(children) {
 };
 export function useGlobalStatusIndicatorHeightSharedValue(globalStatusIndicatorState) {
   let closure_0 = globalStatusIndicatorState;
-  const obj = _mod1652;
+  const obj = _mod1655;
   const sharedValue = obj.useSharedValue(globalStatusIndicatorState.height);
   const items = [globalStatusIndicatorState.height, sharedValue];
   const effect = react.useEffect(() => {

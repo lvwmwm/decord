@@ -1,25 +1,26 @@
-// Module ID: 13484
-// Function ID: 13485
+// Module ID: 14080
+// Function ID: 14081
 // Name: AcceptStep
-// Dependencies: [5, 32, 19, 13477, 21, 5170, 13474, 1499, 11846, 5869, 1113, 13479, 8076, 6191, 575, 5783, 2530, 13485, 13486, 13483, 6855, 5790, 2]
+// Dependencies: [5, 32, 19, 12369, 14074, 21, 5306, 14072, 1502, 7493, 12536, 14081, 14093, 6005, 1113, 8208, 8210, 6327, 575, 5919, 2565, 14095, 14096, 14079, 6941, 5926, 2]
 // Exports: AcceptStep
 
-// Module 13484 (AcceptStep)
+// Module 14080 (AcceptStep)
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 12369 */;
+import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 14074 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 13477 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
-let c5, c6, closure_3, dependencyMap, id;
+let c5, closure_3, constants, id, navigation;
 
 let c9;
 let metroImportAll;
-let metroImportDefault;
-let metroRequire;
-({ closeGameOrganizationJoinModal: metroRequire, GameOrganizationJoinScenes: metroImportDefault } = GameOrganizationJoinModalConstants);
+let _slicedToArray = _slicedToArray_mod;
+let closure_6 = GameOrganizationInviteConstants.GameOrganizationInviteAcceptStatus;
+const onPress = GameOrganizationJoinModalConstants.closeGameOrganizationJoinModal;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 let closure_10 = createStyles.createStyles({ text: { textAlign: "center" }, buttonGroup: { paddingVertical: 0 } });
 const result = size.fileFinishedImporting("modules/game_organization_invites/native/GameOrganizationJoinModal/steps/AcceptStep.tsx");
@@ -27,30 +28,30 @@ const result = size.fileFinishedImporting("modules/game_organization_invites/nat
 export function AcceptStep(code) {
   let ButtonGroup;
   let WmxMAI;
-  let _undefined;
-  let c3;
-  let closure_2;
+  let closure_4;
+  let disabled;
+  let first;
   let formatToPlainString;
   let intl;
   let intl2;
   let intl3;
-  let items;
   let items1;
   let items2;
   let items3;
   let items4;
+  let items5;
   let obj12;
   let obj7;
-  let tmp7;
   code = code.code;
-  const character = code.character;
-  dependencyMap = undefined;
-  c3 = undefined;
+  let character = code.character;
+  navigation = undefined;
+  disabled = undefined;
+  _slicedToArray = undefined;
   let obj = function _handleAcceptInvite() {
     obj = _asyncToGenerator(async (arg0, value) => {
       let intl;
-      if (c6 === 2) {
-        c6 = 3;
+      if (constants === 2) {
+        constants = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
       } else if (tmp3 === 3) {
         if (arg0 === 1) {
@@ -59,94 +60,108 @@ export function AcceptStep(code) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         let c4;
         try {
-          let characterName;
+          let closure_2;
           let joinStatus;
-          let failureReason;
-          let guild_join_status;
-          c6 = 2;
+          let obj7;
+          constants = 2;
           if (0 === c5) {
             if (arg0 === 1) {
-              c6 = 3;
+              constants = 3;
               throw value;
             } else if (arg0 === 2) {
-              c6 = 3;
+              constants = 3;
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              characterName = undefined;
+              closure_2 = tmp;
+              character = undefined;
               joinStatus = undefined;
-              failureReason = undefined;
-              guild_join_status = undefined;
-              _undefined(true);
+              obj7 = undefined;
+              closure_2_4(true);
               c4 = 2;
               id = undefined;
-              const acceptGameOrganizationInvite = joinStatus(failureReason[8]).acceptGameOrganizationInvite;
-              const tmp49 = joinStatus(failureReason[8]);
-              const tmp50 = code;
+              const acceptGameOrganizationInvite = joinStatus(closure_2[10]).acceptGameOrganizationInvite;
+              const tmp54 = joinStatus(closure_2[10]);
+              const tmp55 = code;
               if (id != null) {
                 id = id.id;
               }
               c5 = 3;
-              c6 = 1;
-              const obj4 = { value: acceptGameOrganizationInvite(tmp50, id), done: false };
+              constants = 1;
+              const obj4 = { value: acceptGameOrganizationInvite(tmp55, id), done: false };
               return obj4;
             }
           } else if (1 === c5) {
             c4 = 0;
-            closure_130_3(false);
+            closure_130_4(false);
             throw closure_3;
           } else {
             if (2 === c5) {
               c4 = 1;
-              const obj5 = { text: intl.string(characterName(failureReason[10]).t.fEptJP) };
-              const open = joinStatus(failureReason[9]).open;
-              const tmp14 = joinStatus(failureReason[9]);
-              intl = characterName(failureReason[10]).intl;
+              const obj5 = { text: intl.string(character(closure_2[14]).t.fEptJP) };
+              const open = joinStatus(closure_2[13]).open;
+              const tmp37 = joinStatus(closure_2[13]);
+              intl = character(closure_2[14]).intl;
               open("GAME_ORGANIZATION_INVITE_ACCEPT_ERROR", obj5);
-            } else if (arg0 === 1) {
-              c6 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 0;
-              closure_130_3(false);
-              c6 = 3;
-              obj = { value, done: true };
-              return obj;
             } else {
-              characterName = value;
-              joinStatus = characterName.game_organization_join_status;
-              failureReason = characterName.game_organization_join_failure_reason;
-              guild_join_status = characterName.guild_join_status;
-              const obj6 = { joinStatus, failureReason, guildJoinStatus: guild_join_status, characterName };
-              let name;
-              const push = closure_130_2.push;
-              const OUTCOME = constants.OUTCOME;
-              if (closure_130_1 != null) {
-                name = closure_130_1.name;
+              if (3 === c5) {
+                if (arg0 === 1) {
+                  constants = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c4 = 0;
+                  closure_130_4(false);
+                  constants = 3;
+                  const obj6 = { value, done: true };
+                  return obj6;
+                } else {
+                  character = value;
+                  joinStatus = character.game_organization_join_status;
+                  obj7 = { joinStatus, failureReason: character.game_organization_join_failure_reason, guildJoinStatus: character.guild_join_status, character };
+                  character = closure_130_1;
+                  if (closure_130_1 == null) {
+                    character = null;
+                  }
+                  if (joinStatus === constants.JOINED) {
+                    closure_1_7();
+                    joinStatus(closure_2[11])(closure_130_0, obj7);
+                  } else {
+                    c5 = 4;
+                    constants = 1;
+                    const obj8 = { value: joinStatus(closure_2[12])(closure_130_0, obj7), done: false };
+                    return obj8;
+                  }
+                }
+              } else if (arg0 === 1) {
+                constants = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c4 = 0;
+                closure_130_4(false);
+                constants = 3;
+                obj = { value, done: true };
+                return obj;
+              } else {
+                closure_1_7();
               }
-              characterName = name;
-              if (name == null) {
-                characterName = null;
-              }
-              push(OUTCOME, obj6);
               c4 = 1;
             }
             c4 = 0;
-            closure_130_3(false);
-            c6 = 3;
-            return { value: "HermesInternal", done: null };
+            closure_130_4(false);
+            constants = 3;
+            return { value: "HermesInternal", done: "ulw" };
           }
-        } catch (tmp28) {
-          closure_3 = tmp28;
+        } catch (tmp57) {
+          closure_3 = tmp57;
           if (0 === c4) {
-            c6 = 3;
-            throw tmp28;
-          } else if (1 === tmp30) {
+            constants = 3;
+            throw tmp57;
+          } else if (1 === tmp59) {
             c5 = 1;
           } else {
             c5 = 2;
@@ -157,67 +172,81 @@ export function AcceptStep(code) {
     return obj(...arguments);
   };
   const tmp = closure_10();
-  const tmp3 = dependencyMap;
-  const tmp4 = character(13474)(code);
-  obj = code(1499);
-  dependencyMap = obj.useNavigation();
-  [tmp7, c3] = obj(react.useState(false), 2);
-  const tmp6 = obj(react.useState(false), 2);
+  const tmp3 = navigation;
+  const tmp4 = character(navigation[7])(code);
+  obj = code(navigation[8]);
+  navigation = obj.useNavigation();
+  [disabled, _slicedToArray] = obj.useState(false);
+  const items = [navigation, disabled];
+  const layoutEffect = obj.useLayoutEffect(() => {
+    let closure_0;
+    obj = code(navigation[9]);
+    const headerBackButton = obj.getHeaderBackButton(undefined, first);
+    const obj2 = {
+      headerLeft(arg0) {
+        obj = { disabled };
+        const merged = Object.assign(arg0);
+        return closure_0(obj);
+      },
+      gestureEnabled: !first
+    };
+    navigation.setOptions(obj2);
+  }, items);
   if (null == tmp4) {
     return null;
   } else {
     let str = tmp4.displayNoun;
     const linkedGuild = tmp4.linkedGuild;
-    const tmp2Result = character(13479);
-    const ModalContent = tmp5(8076).ModalContent;
-    let obj2 = { spacing: tmp2(575).space.PX_48, children: items1 };
-    const Stack2 = tmp5(6191).Stack;
-    let obj3 = { spacing: tmp2(575).space.PX_24, children: items };
-    const Stack3 = tmp5(6191).Stack;
-    let obj4 = { variant: "heading-xl/semibold", style: tmp.text, children: formatToPlainString(WmxMAI, obj7) };
-    const Text2 = tmp5(5783).Text;
-    const intl4 = tmp5(1113).intl;
+    const ModalScreen = tmp5(tmp3[15]).ModalScreen;
+    const ModalContent = tmp5(tmp3[16]).ModalContent;
+    let obj2 = { spacing: tmp2(tmp3[18]).space.PX_48, children: items2 };
+    const Stack2 = tmp5(tmp3[17]).Stack;
+    let obj3 = { spacing: tmp2(tmp3[18]).space.PX_24, children: items1 };
+    const Stack3 = tmp5(tmp3[17]).Stack;
+    let obj4 = { variant: "heading-lg/semibold", style: tmp.text, children: formatToPlainString(WmxMAI, obj7) };
+    const Text2 = tmp5(tmp3[19]).Text;
+    const intl4 = tmp5(tmp3[14]).intl;
     formatToPlainString = intl4.formatToPlainString;
-    WmxMAI = tmp2(2530).WmxMAI;
+    WmxMAI = tmp2(tmp3[20]).WmxMAI;
     if (str == null) {
       str = "other";
     }
-    let obj5 = { children: items3 };
-    let obj6 = { children: tmp9(Stack2, obj2) };
+    let obj5 = { children: items4 };
+    let obj6 = { children: tmp11(Stack2, obj2) };
     obj7 = { displayNoun: str };
-    items = [tmp11(Text2, obj4), ];
-    const obj8 = { linkedGuild };
-    items[1] = closure_8(character(13485), obj8);
-    items1 = [tmp9(Stack3, obj3), ];
-    const obj9 = { spacing: character(575).space.PX_24, children: items2 };
-    const Stack = tmp5(6191).Stack;
-    const obj10 = { variant: "heading-lg/semibold", children: intl.string(character(2530).yFqGy8) };
-    const Text = tmp5(5783).Text;
-    intl = tmp5(1113).intl;
-    items2 = [tmp11(Text, obj10), tmp11(tmp2(13486), {})];
-    items1[1] = closure_9(Stack, obj9);
-    items3 = [tmp11(ModalContent, obj6), ];
+    items1 = [tmp12(Text2, obj4), ];
+    let obj8 = { linkedGuild };
+    items1[1] = closure_8(character(tmp3[21]), obj8);
+    items2 = [tmp11(Stack3, obj3), ];
+    const obj9 = { spacing: character(tmp3[18]).space.PX_24, children: items3 };
+    const Stack = tmp5(tmp3[17]).Stack;
+    const obj10 = { variant: "heading-lg/semibold", children: intl.string(character(tmp3[20]).yFqGy8) };
+    const Text = tmp5(tmp3[19]).Text;
+    intl = tmp5(tmp3[14]).intl;
+    items3 = [tmp12(Text, obj10), tmp12(tmp2(tmp3[22]), {})];
+    items2[1] = closure_9(Stack, obj9);
+    items4 = [tmp12(ModalContent, obj6), ];
     const obj11 = { children: closure_9(ButtonGroup, obj12) };
-    const ModalFooter = tmp5(13483).ModalFooter;
-    obj12 = { style: tmp.buttonGroup, children: items4 };
-    ButtonGroup = tmp5(6855).ButtonGroup;
+    const ModalFooter = tmp5(tmp3[23]).ModalFooter;
+    obj12 = { style: tmp.buttonGroup, children: items5 };
+    ButtonGroup = tmp5(tmp3[24]).ButtonGroup;
     const obj13 = {
-      text: intl2.string(character(2530).BaZ6nt),
+      text: intl2.string(character(tmp3[20]).BaZ6nt),
       size: "lg",
-      loading: tmp7,
-      disabled: tmp7,
+      loading: disabled,
+      disabled,
       onPress: function handleAcceptInvite() {
           return obj(...arguments);
         }
     };
-    const Button = tmp5(5790).Button;
-    intl2 = tmp5(1113).intl;
-    items4 = [tmp11(Button, obj13), ];
-    const obj14 = { text: intl3.string(code(1113).t["ETE/oC"]), size: "lg", variant: "secondary", onPress, disabled: tmp7 };
-    const Button2 = tmp5(5790).Button;
-    intl3 = tmp5(1113).intl;
-    items4[1] = closure_8(Button2, obj14);
-    items3[1] = closure_8(ModalFooter, obj11);
-    return closure_9(tmp2Result, obj5);
+    const Button = tmp5(tmp3[25]).Button;
+    intl2 = tmp5(tmp3[14]).intl;
+    items5 = [tmp12(Button, obj13), ];
+    const obj14 = { text: intl3.string(code(tmp3[14]).t["ETE/oC"]), size: "lg", variant: "secondary", onPress, disabled };
+    const Button2 = tmp5(tmp3[25]).Button;
+    intl3 = tmp5(tmp3[14]).intl;
+    items5[1] = closure_8(Button2, obj14);
+    items4[1] = closure_8(ModalFooter, obj11);
+    return closure_9(ModalScreen, obj5);
   }
 }

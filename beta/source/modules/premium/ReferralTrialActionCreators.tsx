@@ -1,17 +1,17 @@
-// Module ID: 7742
-// Function ID: 7743
+// Module ID: 9294
+// Function ID: 9295
 // Name: ReferralTrialActionCreators
-// Dependencies: [5, 7743, 1404, 5073, 1072, 1282, 559, 1089, 572, 1242, 7745, 2]
+// Dependencies: [5, 9295, 1407, 5209, 1072, 1285, 559, 1089, 572, 1242, 8660, 2]
 // Exports: createReferralTrial, createReferralTrials, fetchReferralEligibleUsers, fetchReferralsRemaining, maybeFetchRecipientEligibility, resolveReferralTrialOffer
 
-// Module 7742 (ReferralTrialActionCreators)
+// Module 9294 (ReferralTrialActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7743 */;
-import UserRecord from "UserRecord" /* 1404 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5073 */;
+import UserTrialOfferRecord from "UserTrialOfferRecord" /* 9295 */;
+import UserRecord from "UserRecord" /* 1407 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
 import Constants from "Constants" /* 1072 */;
 import Backoff from "Backoff" /* 559 */;
 import size from "module_2" /* 2 */;
@@ -79,7 +79,7 @@ obj = function _maybeFetchRecipientEligibility() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -136,7 +136,7 @@ obj = function _maybeFetchRecipientEligibility() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         } catch (tmp23) {
           if (0 === c3) {
             c5 = 3;
@@ -166,7 +166,7 @@ obj = function _createReferralTrials() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         while (true) {

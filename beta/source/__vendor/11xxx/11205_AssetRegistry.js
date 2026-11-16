@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "b001972a2062de923c0ef45fb0f2ab23", name: "VideoIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/custom_app_icons/HexagonIcon", width: 102, height: 102, scales: [2, 3], hash: "6fc713ff4969740a35633ad9d71eaf93", name: "HexagonIcon", type: "png" });

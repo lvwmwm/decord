@@ -1,22 +1,22 @@
-// Module ID: 19625
-// Function ID: 19626
+// Module ID: 19954
+// Function ID: 19955
 // Name: FramePanelHeader
-// Dependencies: [32, 19, 17, 6934, 6935, 21, 7424, 19606, 19608, 19612, 19613, 19626, 504, 19621, 2]
+// Dependencies: [32, 19, 17, 7019, 7020, 21, 7259, 19935, 19937, 19941, 19942, 19955, 504, 19950, 2]
 
-// Module 19625 (FramePanelHeader)
+// Module 19954 (FramePanelHeader)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
-import FramesConstants from "FramesConstants" /* 6935 */;
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7424 */;
-import ActivityPanelHeader from "ActivityPanelHeader" /* 19606 */;
-import InviteActivityButtonDefault from "InviteActivityButton" /* 19608 */;
-import MinimizeActivityButtonDefault from "MinimizeActivityButton" /* 19612 */;
-import QuestActivityButtonDefault from "QuestActivityButton" /* 19613 */;
-import FramePanelStateContextDefault from "FramePanelStateContext" /* 19621 */;
-import panel_LeaveActivityButtonDefault from "panel/LeaveActivityButton" /* 19626 */;
+import FramesConstants from "FramesConstants" /* 7020 */;
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7259 */;
+import ActivityPanelHeader from "ActivityPanelHeader" /* 19935 */;
+import InviteActivityButtonDefault from "InviteActivityButton" /* 19937 */;
+import MinimizeActivityButtonDefault from "MinimizeActivityButton" /* 19941 */;
+import QuestActivityButtonDefault from "QuestActivityButton" /* 19942 */;
+import FramePanelStateContextDefault from "FramePanelStateContext" /* 19950 */;
+import panel_LeaveActivityButtonDefault from "panel/LeaveActivityButton" /* 19955 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import FramesStore from "FramesStore" /* 6934 */;
+import FramesStore from "FramesStore" /* 7019 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,6 @@ let metroImportAll;
 let metroImportDefault;
 function FramePanelHeaderContentInner(arg0) {
   let frame;
-  let gesture;
   let headerStyles;
   let headerWrapperStyles;
   let items2;

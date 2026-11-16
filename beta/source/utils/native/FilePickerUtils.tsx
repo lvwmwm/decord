@@ -1,10 +1,10 @@
-// Module ID: 11263
-// Function ID: 11264
+// Module ID: 11112
+// Function ID: 11113
 // Name: FilePickerUtils
-// Dependencies: [5, 1072, 11264, 1377, 6123, 1113, 5921, 2]
+// Dependencies: [5, 1072, 11113, 1380, 6259, 1113, 6057, 2]
 // Exports: handleDocumentSelection
 
-// Module 11263 (FilePickerUtils)
+// Module 11112 (FilePickerUtils)
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -67,7 +67,7 @@ let obj = function _handleDocumentSelection() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -98,7 +98,7 @@ let obj = function _handleDocumentSelection() {
               closure_4 = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "Path", done: true };
             }
           } else if (1 === tmp4) {
             if (arg0 === 1) {
@@ -144,7 +144,7 @@ let obj = function _handleDocumentSelection() {
             if (obj4.isErrorWithCode(code)) {
               if (code.code === closure_130_0(closure_130_2[2]).errorCodes.OPERATION_CANCELED) {
                 c6 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "ulw" };
               }
             }
             const _JSON = JSON;
@@ -160,7 +160,7 @@ let obj = function _handleDocumentSelection() {
             intl4 = closure_130_0(closure_130_2[5]).intl;
             show2(obj12);
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           } else if (arg0 === 1) {
             c6 = 3;
             throw value;

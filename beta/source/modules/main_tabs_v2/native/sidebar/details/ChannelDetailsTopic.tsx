@@ -1,22 +1,22 @@
-// Module ID: 19267
-// Function ID: 19268
+// Module ID: 19579
+// Function ID: 19580
 // Name: ChannelDetailsTopic
-// Dependencies: [32, 19, 17, 1385, 10290, 1072, 21, 5170, 1377, 19268, 1652, 5793, 5911, 11217, 7076, 5783, 1113, 5747, 504, 5226, 6210, 2]
+// Dependencies: [32, 19, 17, 1388, 10897, 1072, 21, 5306, 1380, 19580, 1655, 5929, 6047, 11059, 7428, 5919, 1113, 5883, 504, 5362, 6346, 2]
 
-// Module 19267 (ChannelDetailsTopic)
+// Module 19579 (ChannelDetailsTopic)
 import Constants from "Constants" /* 1072 */;
-import UserUtilsDefault from "UserUtils" /* 5226 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 5911 */;
-import ChannelUtils from "ChannelUtils" /* 6210 */;
-import MentionPillOffset from "MentionPillOffset" /* 11217 */;
+import UserUtilsDefault from "UserUtils" /* 5362 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 6047 */;
+import ChannelUtils from "ChannelUtils" /* 6346 */;
+import MentionPillOffset from "MentionPillOffset" /* 11059 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1385 */;
-import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10290 */;
+import UserStore from "UserStore" /* 1388 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10897 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
+import createStyles_mod from "createStyles" /* 5306 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
 import size from "module_2" /* 2 */;
 
 let absoluteFill;
@@ -312,7 +312,7 @@ function PrivateChannelDetailsTopic(channel) {
   if (null != stateFromStores) {
     const obj2 = { variant: "heading-xs/medium", color: "interactive-text-default", style: obj3, children: stateFromStores };
     obj3 = { textAlign };
-    tmp4 = closure_11(tmp(5783).Text, obj2);
+    tmp4 = closure_11(tmp(5919).Text, obj2);
   }
   return tmp4;
 }
@@ -331,7 +331,7 @@ function GroupDMChannelDetailsTopic(channel) {
   if (null != stateFromStores) {
     const obj2 = { variant: "heading-xs/medium", color: "interactive-text-default", style: obj3, children: stateFromStores };
     obj3 = { textAlign };
-    tmp4 = closure_11(tmp(5783).Text, obj2);
+    tmp4 = closure_11(tmp(5919).Text, obj2);
   }
   return tmp4;
 }

@@ -1,14 +1,14 @@
-// Module ID: 19929
-// Function ID: 19930
+// Module ID: 20262
+// Function ID: 20263
 // Name: MemberVerificationApplicationManager
-// Dependencies: [5203, 5204, 7383, 6123, 5206, 6996, 7004, 2]
+// Dependencies: [5339, 5340, 7882, 6259, 5342, 6914, 6922, 2]
 
-// Module 19929 (MemberVerificationApplicationManager)
-import MemberVerificationTypes from "MemberVerificationTypes" /* 5206 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6123 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5203 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5204 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7383 */;
+// Module 20262 (MemberVerificationApplicationManager)
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5342 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6259 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5340 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
 import size from "module_2" /* 2 */;
 
 class MemberVerificationApplicationManager extends AutomaticLifecycleManager {
@@ -63,7 +63,7 @@ class MemberVerificationApplicationManager extends AutomaticLifecycleManager {
             tmp6 = null !== lastSeen1;
           }
           if (!tmp6) {
-            const tmp3Result = tmp3(6996);
+            const tmp3Result = tmp3(6914);
             let result = tmp3Result.openMemberVerificationSuccessAlert(guildId, () => {
               const obj = closure_2_1(closure_2_2[6]);
               const result = obj.ackUserGuildJoinRequest(guildId, request.joinRequestId);

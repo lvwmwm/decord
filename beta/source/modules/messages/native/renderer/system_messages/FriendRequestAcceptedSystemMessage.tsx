@@ -1,18 +1,18 @@
-// Module ID: 8645
-// Function ID: 8646
+// Module ID: 9325
+// Function ID: 9326
 // Name: FriendRequestAcceptedSystemMessage
-// Dependencies: [5019, 1385, 8522, 8524, 5170, 575, 1113, 8500, 8646, 8526, 2]
+// Dependencies: [5155, 1388, 9188, 9190, 5306, 575, 1113, 8655, 9326, 9192, 2]
 // Exports: createFriendRequestAcceptedSystemMessage
 
-// Module 8645 (FriendRequestAcceptedSystemMessage)
+// Module 9325 (FriendRequestAcceptedSystemMessage)
 import nativeDefault from "native" /* 575 */;
-import createStyles from "createStyles" /* 5170 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8500 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8522 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8524 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8646 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import UserStore from "UserStore" /* 1385 */;
+import createStyles from "createStyles" /* 5306 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8655 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 9188 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 9190 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9326 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/FriendRequestAcceptedSystemMessage.tsx");
@@ -66,7 +66,7 @@ export function createFriendRequestAcceptedSystemMessage(message) {
             }
             const obj8 = { content: formatToPartsResult, iconUrl: tmp18Result2.getAssetUriForEmbed(AssetRegistryDefault), textColor: tmp6 };
             tmp18Result2 = renderer_EmbedUtils;
-            const merged2 = Object.assign(tmp21(8526)(message));
+            const merged2 = Object.assign(tmp21(9192)(message));
             return obj8;
           }
           const intl = tmp18(1113).intl;

@@ -1,14 +1,14 @@
-// Module ID: 16700
-// Function ID: 16701
+// Module ID: 16976
+// Function ID: 16977
 // Name: activities
-// Dependencies: [5, 1072, 16646, 16645, 12007, 2148, 9447, 9441, 6937, 6936, 11039, 2]
+// Dependencies: [5, 1072, 16922, 16921, 12869, 2151, 7303, 7297, 7022, 7021, 7341, 2]
 
-// Module 16700 (activities)
-import RPCHelpers from "RPCHelpers" /* 12007 */;
-import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 16645 */;
+// Module 16976 (activities)
+import RPCHelpers from "RPCHelpers" /* 12869 */;
+import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 16921 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1072 */;
-import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 16646 */;
+import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 16922 */;
 import size from "module_2" /* 2 */;
 
 let c5, closure_2, constants;
@@ -50,7 +50,7 @@ let obj3 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         let c3;

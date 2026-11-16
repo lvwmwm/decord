@@ -1,10 +1,10 @@
-// Module ID: 17381
-// Function ID: 17382
+// Module ID: 17652
+// Function ID: 17653
 // Name: OrbsArcadeExperiment
-// Dependencies: [1449, 2]
+// Dependencies: [1452, 2]
 
-// Module 17381 (OrbsArcadeExperiment)
-import ApexExperiment from "ApexExperiment" /* 1449 */;
+// Module 17652 (OrbsArcadeExperiment)
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-09-orbs-arcade", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

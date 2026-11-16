@@ -1,20 +1,20 @@
-// Module ID: 12712
-// Function ID: 12713
+// Module ID: 13483
+// Function ID: 13484
 // Name: FrecencyCommandsSection
-// Dependencies: [19, 17, 1072, 21, 5170, 12693, 12713, 5921, 11678, 5783, 1113, 5839, 2]
+// Dependencies: [19, 17, 1072, 21, 5306, 13460, 13484, 6057, 12579, 5919, 1113, 5975, 2]
 // Exports: default
 
-// Module 12712 (FrecencyCommandsSection)
+// Module 13483 (FrecencyCommandsSection)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5839 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5921 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 11678 */;
-import AppDetailContent from "AppDetailContent" /* 12693 */;
-import useFilterAndSortToOnlyFrecentCommandsDefault from "useFilterAndSortToOnlyFrecentCommands" /* 12713 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5975 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6057 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 12579 */;
+import AppDetailContent from "AppDetailContent" /* 13460 */;
+import useFilterAndSortToOnlyFrecentCommandsDefault from "useFilterAndSortToOnlyFrecentCommands" /* 13484 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -58,7 +58,7 @@ export default function FrecencyCommandsSection(context) {
     let obj = { style: tmp.container, children: items1 };
     const obj2 = { style: tmp.header, children: arr(Heading, obj3) };
     obj3 = { variant: "body-md/medium", color: "text-default", children: intl.string(context(1113).t.acSE0h) };
-    Heading = context(5783).Heading;
+    Heading = context(5919).Heading;
     intl = context(1113).intl;
     items1 = [
       arr(View, obj2),

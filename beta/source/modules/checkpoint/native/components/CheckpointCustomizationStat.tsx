@@ -1,32 +1,32 @@
-// Module ID: 13949
-// Function ID: 13950
+// Module ID: 14533
+// Function ID: 14534
 // Name: CheckpointCustomizationStat
-// Dependencies: [19, 17, 13699, 6231, 21, 5170, 575, 6598, 12169, 1113, 3248, 8747, 3216, 9881, 13708, 9850, 9228, 504, 6601, 13931, 13912, 13909, 2]
+// Dependencies: [19, 17, 14253, 6367, 21, 5306, 575, 6734, 13048, 1113, 3317, 8069, 3285, 10939, 14281, 7438, 8457, 504, 14506, 6737, 14515, 14479, 14271, 2]
 // Exports: default
 
-// Module 13949 (CheckpointCustomizationStat)
+// Module 14533 (CheckpointCustomizationStat)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import intl8 from "intl" /* 1113 */;
-import _modDef3216 from "module_3216" /* 3216 */;
-import _modDef3248 from "module_3248" /* 3248 */;
-import CheckpointConstants from "CheckpointConstants" /* 6231 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6598 */;
-import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6601 */;
-import ChatIcon from "ChatIcon" /* 8747 */;
-import CalendarIcon from "CalendarIcon" /* 9228 */;
-import GameControllerIcon from "GameControllerIcon" /* 9850 */;
-import ServerIcon from "ServerIcon" /* 9881 */;
-import MicrophoneIcon from "MicrophoneIcon" /* 12169 */;
-import EmojiSlightlySmilingFaceIcon from "EmojiSlightlySmilingFaceIcon" /* 13708 */;
-import CheckpointTextDefault from "CheckpointText" /* 13909 */;
-import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 13912 */;
-import CheckpointTagDefault from "CheckpointTag" /* 13931 */;
+import _modDef3285 from "module_3285" /* 3285 */;
+import _modDef3317 from "module_3317" /* 3317 */;
+import CheckpointConstants from "CheckpointConstants" /* 6367 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6734 */;
+import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6737 */;
+import GameControllerIcon from "GameControllerIcon" /* 7438 */;
+import ChatIcon from "ChatIcon" /* 8069 */;
+import CalendarIcon from "CalendarIcon" /* 8457 */;
+import ServerIcon from "ServerIcon" /* 10939 */;
+import MicrophoneIcon from "MicrophoneIcon" /* 13048 */;
+import CheckpointTextDefault from "CheckpointText" /* 14271 */;
+import EmojiSlightlySmilingFaceIcon from "EmojiSlightlySmilingFaceIcon" /* 14281 */;
+import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 14479 */;
+import CheckpointNumberUtils from "CheckpointNumberUtils" /* 14506 */;
+import CheckpointTagDefault from "CheckpointTag" /* 14515 */;
 import react from "react" /* 19 */;
-import CheckpointStore from "CheckpointStore" /* 13699 */;
+import CheckpointStore from "CheckpointStore" /* 14253 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -38,7 +38,7 @@ const CHECKPOINT_PRIMARY = CheckpointConstants.CHECKPOINT_PRIMARY;
 let obj = { stat: { maxWidth: 144, alignItems: "flex-start" }, label: obj2, labelText: { flexShrink: 1 } };
 obj2 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
 let closure_8 = createStyles.createStyles(obj);
-const result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointCustomizationStat.tsx");
+let result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointCustomizationStat.tsx");
 
 export default function CheckpointCustomizationStat(customizationOption) {
   let Icon;
@@ -71,7 +71,7 @@ export default function CheckpointCustomizationStat(customizationOption) {
   const obj = get_initialized;
   const stateFromStores = obj.useStateFromStores(items, () => stats.stats);
   if (CheckpointCustomizationUtils.CheckpointCustomizationOption.FACE === customizationOption) {
-    const obj2 = { Icon: MicrophoneIcon.MicrophoneIcon, value: totalVoiceMinutes, percentile: prop, title: intl6.string(_modDef3248["3/T12E"]) };
+    const obj2 = { Icon: MicrophoneIcon.MicrophoneIcon, statType: "voice", value: totalVoiceMinutes, percentile: prop, title: intl6.string(_modDef3317["3/T12E"]) };
     totalVoiceMinutes = undefined;
     if (stateFromStores != null) {
       const voice = stateFromStores.voice;
@@ -89,7 +89,7 @@ export default function CheckpointCustomizationStat(customizationOption) {
     intl6 = tmp2(1113).intl;
     tmp8 = obj2;
   } else if (CheckpointCustomizationUtils.CheckpointCustomizationOption.OUTFIT === customizationOption) {
-    const obj3 = { Icon: ChatIcon.ChatIcon, value: numMessagesSent, percentile: prop1, title: intl5.string(_modDef3216.wWKySP) };
+    const obj3 = { Icon: ChatIcon.ChatIcon, statType: "messages", value: numMessagesSent, percentile: prop1, title: intl5.string(_modDef3285.wWKySP) };
     numMessagesSent = undefined;
     if (stateFromStores != null) {
       const messages = stateFromStores.messages;
@@ -107,7 +107,7 @@ export default function CheckpointCustomizationStat(customizationOption) {
     intl5 = tmp2(1113).intl;
     tmp8 = obj3;
   } else if (CheckpointCustomizationUtils.CheckpointCustomizationOption.HAT === customizationOption) {
-    const obj4 = { Icon: ServerIcon.ServerIcon, value: numDaysInteracted, percentile: prop2, title: intl4.string(_modDef3248["M+a+t1"]) };
+    const obj4 = { Icon: ServerIcon.ServerIcon, statType: "topServerDays", value: numDaysInteracted, percentile: prop2, title: intl4.string(_modDef3317["M+a+t1"]) };
     numDaysInteracted = undefined;
     if (stateFromStores != null) {
       const guilds = stateFromStores.guilds;
@@ -131,7 +131,7 @@ export default function CheckpointCustomizationStat(customizationOption) {
     intl4 = tmp2(1113).intl;
     tmp8 = obj4;
   } else if (CheckpointCustomizationUtils.CheckpointCustomizationOption.SHOES === customizationOption) {
-    const obj5 = { Icon: EmojiSlightlySmilingFaceIcon.EmojiSlightlySmilingFaceIcon, value: numEmojisSent, percentile: prop3, title: intl3.string(_modDef3248.ZTDCIv) };
+    const obj5 = { Icon: EmojiSlightlySmilingFaceIcon.EmojiSlightlySmilingFaceIcon, statType: "emoji", value: numEmojisSent, percentile: prop3, title: intl3.string(_modDef3317.ZTDCIv) };
     numEmojisSent = undefined;
     if (stateFromStores != null) {
       const emojis = stateFromStores.emojis;
@@ -149,7 +149,7 @@ export default function CheckpointCustomizationStat(customizationOption) {
     intl3 = tmp2(1113).intl;
     tmp8 = obj5;
   } else if (CheckpointCustomizationUtils.CheckpointCustomizationOption.WEARABLE === customizationOption) {
-    const obj6 = { Icon: GameControllerIcon.GameControllerIcon, value: totalGamesPlayed, percentile: prop4, title: intl2.string(_modDef3248.HM2fjf) };
+    const obj6 = { Icon: GameControllerIcon.GameControllerIcon, statType: "games", value: totalGamesPlayed, percentile: prop4, title: intl2.string(_modDef3317.HM2fjf) };
     totalGamesPlayed = undefined;
     if (stateFromStores != null) {
       const games3 = stateFromStores.games;
@@ -169,7 +169,7 @@ export default function CheckpointCustomizationStat(customizationOption) {
   } else {
     tmp8 = null;
     if (CheckpointCustomizationUtils.CheckpointCustomizationOption.AURA === customizationOption) {
-      const obj7 = { Icon: CalendarIcon.CalendarIcon, value: totalDaysPlayed, percentile: prop5, title: intl.string(_modDef3248["4N5p4D"]) };
+      const obj7 = { Icon: CalendarIcon.CalendarIcon, statType: "gameDays", value: totalDaysPlayed, percentile: prop5, title: intl.string(_modDef3317["4N5p4D"]) };
       totalDaysPlayed = undefined;
       if (stateFromStores != null) {
         const games = stateFromStores.games;
@@ -191,7 +191,6 @@ export default function CheckpointCustomizationStat(customizationOption) {
   if (null == tmp8) {
     return null;
   } else {
-    let combined;
     const title = tmp8.title;
     ({ value, Icon } = tmp8);
     const _Math = Math;
@@ -199,39 +198,41 @@ export default function CheckpointCustomizationStat(customizationOption) {
       value = 0;
     }
     const roundResult = round(value);
-    const toLocaleStringResult = roundResult.toLocaleString(intl8.intl.currentLocale);
-    const tmp2Result = CheckpointStatsUtils;
-    const checkpointTopPercent = tmp2Result.getCheckpointTopPercent(tmp8.percentile);
+    const tmp2Result = CheckpointNumberUtils;
+    const result = tmp2Result.formatCheckpointStatNumber(roundResult);
+    const tmp2Result3 = CheckpointStatsUtils;
+    const checkpointTopPercent = tmp2Result3.getCheckpointTopPercent(tmp8.percentile);
     let formatToPlainStringResult = null;
     if (null != checkpointTopPercent) {
       const intl7 = tmp2(1113).intl;
       const obj8 = { percent: checkpointTopPercent };
-      formatToPlainStringResult = intl7.formatToPlainString(_modDef3248.fOGKA4, obj8);
+      formatToPlainStringResult = intl7.formatToPlainString(_modDef3317.fOGKA4, obj8);
     }
+    const tmp2Result4 = CheckpointNumberUtils;
+    const result1 = tmp2Result4.formatCheckpointStatAccessibilityLabel(tmp8.statType, roundResult);
+    let formatToPlainStringResult1 = result1;
     if (null != formatToPlainStringResult) {
-      const _HermesInternal2 = HermesInternal;
-      combined = "" + toLocaleStringResult + " " + title + ", " + formatToPlainStringResult;
-    } else {
-      const _HermesInternal = HermesInternal;
-      combined = "" + toLocaleStringResult + " " + title;
+      const intl8 = tmp2(1113).intl;
+      const obj9 = { stat: result1, percentile: formatToPlainStringResult };
+      formatToPlainStringResult1 = intl8.formatToPlainString(_modDef3317.OxxTjh, obj9);
     }
     let tmp41 = null != formatToPlainStringResult;
-    const obj9 = { style: tmp.stat, accessible: true, accessibilityLabel: combined, children: items1 };
+    const obj10 = { style: tmp.stat, accessible: true, accessibilityLabel: formatToPlainStringResult1, children: items1 };
     if (tmp41) {
-      const obj10 = { children: formatToPlainStringResult.toLocaleUpperCase() };
+      const obj11 = { children: formatToPlainStringResult.toLocaleUpperCase() };
       const tmp44 = CheckpointTagDefault;
-      tmp41 = metroRequire(tmp44, obj10);
+      tmp41 = metroRequire(tmp44, obj11);
     }
     items1 = [tmp41, , ];
-    const obj11 = { value: toLocaleStringResult };
-    items1[1] = metroRequire(CheckpointStatNumberDefault, obj11);
-    const obj12 = { style: tmp.label, children: items2 };
-    const obj13 = { size: "xs", color: CHECKPOINT_PRIMARY };
-    items2 = [metroRequire(Icon, obj13), ];
-    const obj14 = { variant: "heading-xs/semibold", style: tmp.labelText, children: title.toLocaleUpperCase() };
+    const obj12 = { value: result };
+    items1[1] = metroRequire(CheckpointStatNumberDefault, obj12);
+    const obj13 = { style: tmp.label, children: items2 };
+    const obj14 = { size: "xs", color: CHECKPOINT_PRIMARY };
+    items2 = [metroRequire(Icon, obj14), ];
+    const obj15 = { variant: "heading-xs/semibold", style: tmp.labelText, children: title.toLocaleUpperCase() };
     const tmp48 = CheckpointTextDefault;
-    items2[1] = metroRequire(tmp48, obj14);
-    items1[2] = metroImportDefault(View, obj12);
-    return metroImportDefault(View, obj9);
+    items2[1] = metroRequire(tmp48, obj15);
+    items1[2] = metroImportDefault(View, obj13);
+    return metroImportDefault(View, obj10);
   }
 };

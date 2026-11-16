@@ -1,26 +1,26 @@
-// Module ID: 19605
-// Function ID: 19606
+// Module ID: 19934
+// Function ID: 19935
 // Name: ActivityPanelFocusedView
-// Dependencies: [19, 17, 5171, 5019, 5018, 5813, 19463, 1072, 11395, 11886, 21, 5170, 575, 1627, 504, 1493, 19596, 12269, 1652, 5231, 1705, 5402, 5793, 6182, 5091, 19598, 19606, 11920, 11988, 2]
+// Dependencies: [19, 17, 5307, 5155, 5154, 5949, 19780, 1072, 11985, 12706, 21, 5306, 575, 1630, 504, 1496, 19925, 13129, 1655, 5367, 1708, 5538, 5929, 6318, 5227, 19927, 19935, 12741, 12848, 2]
 // Exports: useBaseActivityPanelFocusedView
 
-// Module 19605 (ActivityPanelFocusedView)
+// Module 19934 (ActivityPanelFocusedView)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11395 */;
-import Constants2 from "Constants" /* 11886 */;
-import EmbeddedActivityViewDefault from "EmbeddedActivityView" /* 11988 */;
-import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 19598 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11985 */;
+import Constants2 from "Constants" /* 12706 */;
+import EmbeddedActivityViewDefault from "EmbeddedActivityView" /* 12848 */;
+import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 19927 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5171 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5018 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5813 */;
-import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 19463 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5949 */;
+import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 19780 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -415,9 +415,9 @@ const memoResult = react.memo(function ActivityPanelFocusedView(transitionState)
   const items2 = [transitionState, transitionCleanUp, updateActivityPanelModeToPIP, hasActivity, memo1, channel, tmp6, memo];
   return obj2.useMemo(() => {
     let obj2;
-    const obj = { transitionState, transitionCleanUp, updateActivityPanelModeToPIP, hasActivity, context: ActivityPanelStateContextDefault, header: memo1, children: authStore4(EmbeddedActivityViewDefault, obj2) };
+    const obj = { transitionState, transitionCleanUp, updateActivityPanelModeToPIP, hasActivity, context: ActivityPanelStateContextDefault, header: memo1, children: authStore3(EmbeddedActivityViewDefault, obj2) };
     obj2 = { channel, layoutMode: ActivityLayoutMode.FOCUSED, portraitSafeAreasConfig, landscapeSafeAreasConfig: memo };
-    return authStore4(BaseActivityPanelFocusedView, obj);
+    return authStore3(BaseActivityPanelFocusedView, obj);
   }, items2);
 });
 let size = size_mod;

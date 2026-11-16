@@ -1,15 +1,15 @@
-// Module ID: 18335
-// Function ID: 18336
+// Module ID: 18624
+// Function ID: 18625
 // Name: DeclarativeSystemNotifPermissionAnalytics
-// Dependencies: [16622, 1072, 16626, 16624, 1252, 2]
+// Dependencies: [16898, 1072, 16902, 16900, 1256, 2]
 // Exports: trackSystemNotifSettingsOpened, trackSystemNotifSettingsReenabled
 
-// Module 18335 (DeclarativeSystemNotifPermissionAnalytics)
+// Module 18624 (DeclarativeSystemNotifPermissionAnalytics)
 import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import NotificationSettingsConstants from "NotificationSettingsConstants" /* 16622 */;
-import NotifTypes from "NotifTypes" /* 16624 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 16626 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import NotificationSettingsConstants from "NotificationSettingsConstants" /* 16898 */;
+import NotifTypes from "NotifTypes" /* 16900 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 16902 */;
 import size from "module_2" /* 2 */;
 
 let set;

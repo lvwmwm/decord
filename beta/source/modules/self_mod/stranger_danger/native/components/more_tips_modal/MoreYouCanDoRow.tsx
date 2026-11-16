@@ -1,12 +1,12 @@
-// Module ID: 11462
-// Function ID: 11463
+// Module ID: 12058
+// Function ID: 12059
 // Name: MoreYouCanDoRow
-// Dependencies: [19, 21, 7071, 2]
+// Dependencies: [19, 21, 7443, 2]
 // Exports: default
 
-// Module 11462 (MoreYouCanDoRow)
+// Module 12058 (MoreYouCanDoRow)
 import Fragment from "Fragment" /* 21 */;
-import TableRow from "TableRow" /* 7071 */;
+import TableRow from "TableRow" /* 7443 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

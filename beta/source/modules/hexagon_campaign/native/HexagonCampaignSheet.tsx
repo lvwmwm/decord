@@ -1,27 +1,27 @@
-// Module ID: 17356
-// Function ID: 17357
+// Module ID: 17627
+// Function ID: 17628
 // Name: HexagonCampaignSheet
-// Dependencies: [5, 32, 19, 17, 1193, 1385, 16569, 5195, 5421, 1240, 1083, 21, 1395, 1396, 9403, 5170, 575, 5200, 504, 7420, 7445, 15655, 5198, 9102, 1627, 2171, 5196, 16809, 6872, 17357, 5869, 1113, 5406, 17355, 4411, 5753, 10887, 5783, 17365, 5420, 7415, 16832, 5790, 17366, 7159, 7462, 17367, 2]
+// Dependencies: [5, 32, 19, 17, 1193, 1388, 16845, 5331, 5557, 1240, 1083, 21, 1398, 1399, 10066, 5306, 575, 5336, 504, 7918, 7937, 15314, 5334, 7994, 1630, 2174, 5332, 17085, 6957, 17628, 6005, 1113, 5542, 17626, 4516, 5889, 10271, 5919, 17636, 5556, 7913, 17108, 5926, 17637, 7746, 7954, 17638, 2]
 // Exports: default
 
-// Module 17356 (HexagonCampaignSheet)
+// Module 17627 (HexagonCampaignSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import ClientThemesConstants from "ClientThemesConstants" /* 1240 */;
-import DisplayNameFont from "DisplayNameFont" /* 1395 */;
-import DisplayNameEffect from "DisplayNameEffect" /* 1396 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5421 */;
-import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 9403 */;
+import DisplayNameFont from "DisplayNameFont" /* 1398 */;
+import DisplayNameEffect from "DisplayNameEffect" /* 1399 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5557 */;
+import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 10066 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1193 */;
-import UserStore from "UserStore" /* 1385 */;
-import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 16569 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5195 */;
+import UserStore from "UserStore" /* 1388 */;
+import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 16845 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5331 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -76,7 +76,7 @@ function ScaledPreview(arg0) {
   const obj2 = { style: tmp.scaledPreview, onLayout: callback, children };
   items1[0] = closure_15(metroRequire, obj2);
   items1[1] = overlay;
-  return authStore4(metroRequire, obj);
+  return authStore3(metroRequire, obj);
 }
 ({ Platform, View: metroRequire, StyleSheet } = react_native);
 const HEXAGON_CAMPAIGN_DISPLAY_NAME_FONT = HexagonCampaignConstants.HEXAGON_CAMPAIGN_DISPLAY_NAME_FONT;
@@ -184,7 +184,7 @@ export default function HexagonCampaignSheet() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -266,7 +266,7 @@ export default function HexagonCampaignSheet() {
             }
           }
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         } catch (tmp59) {
           if (0 === analyticsLocations) {
             c4 = 3;
@@ -409,7 +409,7 @@ export default function HexagonCampaignSheet() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       try {
@@ -465,7 +465,7 @@ export default function HexagonCampaignSheet() {
             open("HEXAGON_CAMPAIGN_APPLY_ERROR", obj);
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } catch (tmp18) {
         c3 = 3;

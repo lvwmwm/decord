@@ -1,23 +1,23 @@
-// Module ID: 17832
-// Function ID: 17833
+// Module ID: 18106
+// Function ID: 18107
 // Name: SettingsNotificationScreen
-// Dependencies: [19, 17, 17833, 8536, 21, 5170, 575, 14241, 17834, 17835, 5783, 1113, 7073, 7185, 11716, 17836, 17837, 16937, 2]
+// Dependencies: [19, 17, 18107, 9202, 21, 5306, 575, 14827, 18108, 18109, 5919, 1113, 7445, 7623, 12406, 18110, 18111, 17213, 2]
 
-// Module 17832 (SettingsNotificationScreen)
+// Module 18106 (SettingsNotificationScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
-import SettingsConstants from "SettingsConstants" /* 8536 */;
-import SettingBuilders from "SettingBuilders" /* 11716 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 14241 */;
-import SettingLayoutDefault from "SettingLayout" /* 16937 */;
-import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 17833 */;
-import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 17834 */;
-import SettingsNotificationUtils from "SettingsNotificationUtils" /* 17835 */;
-import NotificationPermissionSettingsHeaderDefault from "NotificationPermissionSettingsHeader" /* 17836 */;
+import SettingsConstants from "SettingsConstants" /* 9202 */;
+import SettingBuilders from "SettingBuilders" /* 12406 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 14827 */;
+import SettingLayoutDefault from "SettingLayout" /* 17213 */;
+import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 18107 */;
+import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 18108 */;
+import SettingsNotificationUtils from "SettingsNotificationUtils" /* 18109 */;
+import NotificationPermissionSettingsHeaderDefault from "NotificationPermissionSettingsHeader" /* 18110 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -43,7 +43,7 @@ function SystemNotificationsSubLabel() {
   const tmp8 = React4;
   if (result) {
     const obj4 = { variant: "body-xs/normal", color: "text-muted", children: intl.string(intl7.t["/TZX1J"]) };
-    const Text = tmp2(5783).Text;
+    const Text = tmp2(5919).Text;
     intl = tmp2(1113).intl;
     result = metroImportDefault(Text, obj4);
   }
@@ -55,13 +55,13 @@ function SystemNotificationsSubLabel() {
     const obj5 = { style: tmp.card, children: metroImportDefault(Card, obj6) };
     obj6 = { border: "none", shadow: "none", children: metroImportAll(View, obj7) };
     obj7 = { style: tmp.cardContent, children: items1 };
-    Card = tmp2(7073).Card;
+    Card = tmp2(7445).Card;
     const obj8 = { color: nativeDefault.unsafe_rawColors.YELLOW_300 };
-    const CircleErrorIcon = tmp2(7185).CircleErrorIcon;
+    const CircleErrorIcon = tmp2(7623).CircleErrorIcon;
     items1 = [metroImportDefault(CircleErrorIcon, obj8), ];
     const obj9 = { style: tmp.text, children: metroImportDefault(Text2, obj10) };
     obj10 = { color: "text-default", variant: "body-sm/medium", children: intl2.string(intl7.t.TAuasM) };
-    Text2 = tmp2(5783).Text;
+    Text2 = tmp2(5919).Text;
     intl2 = tmp2(1113).intl;
     items1[1] = metroImportDefault(View, obj9);
     showReactivationPrompt = metroImportDefault(View, obj5);

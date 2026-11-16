@@ -1,10 +1,10 @@
-// Module ID: 18510
-// Function ID: 18511
+// Module ID: 18801
+// Function ID: 18802
 // Name: EmojiSourceUtils
-// Dependencies: [5, 5120, 1411, 2022, 2]
+// Dependencies: [5, 5256, 1414, 2025, 2]
 // Exports: getEmojiSource
 
-// Module 18510 (EmojiSourceUtils)
+// Module 18801 (EmojiSourceUtils)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let obj = function _getEmojiSource() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -53,7 +53,7 @@ let obj = function _getEmojiSource() {
               closure_3 = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "Path", done: true };
             }
           } else if (1 === tmp4) {
             if (arg0 === 1) {

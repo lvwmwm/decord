@@ -1,20 +1,19 @@
-// Module ID: 18907
-// Function ID: 18908
+// Module ID: 19223
+// Function ID: 19224
 // Name: useSoundboardSoundLock
-// Dependencies: [19, 1385, 6225, 504, 7630, 2171, 18908, 9916, 9919, 5869, 1113, 10075, 2]
+// Dependencies: [19, 1388, 6361, 504, 13021, 2174, 9035, 9037, 6005, 1113, 9981, 2]
 // Exports: useSoundboardSoundLock
 
-// Module 18907 (useSoundboardSoundLock)
+// Module 19223 (useSoundboardSoundLock)
 import intl3 from "intl" /* 1113 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2171 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5869 */;
-import SoundboardConstants from "SoundboardConstants" /* 6225 */;
-import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 9916 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 9919 */;
-import BoostGemIcon from "BoostGemIcon" /* 10075 */;
-import SoundboardSoundPreviewMenuExperiment2 from "SoundboardSoundPreviewMenuExperiment" /* 18908 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
+import SoundboardConstants from "SoundboardConstants" /* 6361 */;
+import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 9035 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 9037 */;
+import BoostGemIcon from "BoostGemIcon" /* 9981 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1385 */;
+import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -43,19 +42,12 @@ export function useSoundboardSoundLock(sound, channel) {
   importDefault = tmp7;
   const items1 = [tmp7, sound.available];
   let lockedAccessibilityHint;
-  const onLockedPress = react.useCallback((arg0) => {
+  const onLockedPress = react.useCallback(() => {
     let intl;
     const tmp = closure_1;
     if (tmp) {
-      const SoundboardSoundPreviewMenuExperiment = SoundboardSoundPreviewMenuExperiment2.SoundboardSoundPreviewMenuExperiment;
-      const returnOnUpsellDismiss = SoundboardSoundPreviewMenuExperiment.getConfig({ location: "PremiumUpsellActionSheet" }).returnOnUpsellDismiss;
-      let tmp20;
-      const tmp17 = openPremiumUpsellActionSheetDefault;
-      const SOUNDBOARD_EVERYWHERE = EntitlementFeatureNames.EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE;
-      if (returnOnUpsellDismiss) {
-        tmp20 = arg0;
-      }
-      tmp17(SOUNDBOARD_EVERYWHERE, undefined, tmp20);
+      const tmp15 = openPremiumUpsellActionSheetDefault;
+      tmp15(EntitlementFeatureNames.EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE, undefined, "stack");
     } else if (!sound.available) {
       const obj = { text: intl.string(intl3.t.MDOXJR), icon: BoostGemIcon.BoostGemIcon, duration: 3000 };
       const open = ToastActionCreatorsDefault.open;

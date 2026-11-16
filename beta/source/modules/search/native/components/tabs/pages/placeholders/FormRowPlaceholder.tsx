@@ -1,18 +1,18 @@
-// Module ID: 19193
-// Function ID: 19194
+// Module ID: 19505
+// Function ID: 19506
 // Name: FormRowPlaceholder
-// Dependencies: [19, 17, 9950, 21, 5170, 575, 19162, 1652, 2]
+// Dependencies: [19, 17, 9066, 21, 5306, 575, 19474, 1655, 2]
 // Exports: default
 
-// Module 19193 (FormRowPlaceholder)
+// Module 19505 (FormRowPlaceholder)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef1652 from "module_1652" /* 1652 */;
-import SearchConstants from "SearchConstants" /* 9950 */;
-import usePlaceholderStyles from "usePlaceholderStyles" /* 19162 */;
+import _modDef1655 from "module_1655" /* 1655 */;
+import SearchConstants from "SearchConstants" /* 9066 */;
+import usePlaceholderStyles from "usePlaceholderStyles" /* 19474 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -44,7 +44,7 @@ export default function FormRowPlaceholderItem(style) {
   const obj2 = { style: items, pointerEvents: "none", children: items1 };
   items = [placeholderAnimatedStyle, tmp.itemContainer, style];
   const obj3 = { style: tmp.avatar };
-  View = _modDef1652.View;
+  View = _modDef1655.View;
   items1 = [React3(View, obj3), ];
   const obj4 = { style: tmp.innerContainer, children: items2 };
   items2 = [, ];

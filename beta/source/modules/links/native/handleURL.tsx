@@ -1,14 +1,14 @@
-// Module ID: 5863
-// Function ID: 5864
+// Module ID: 5999
+// Function ID: 6000
 // Name: handleURL
-// Dependencies: [5, 17, 5407, 1072, 3, 5864, 5865, 5866, 5867, 2067, 5868, 1113, 5898, 1377, 5406, 5901, 1381, 5902, 7613, 16013, 2]
+// Dependencies: [5, 17, 5543, 1072, 3, 6000, 6001, 6002, 6003, 2070, 6004, 1113, 6034, 1380, 5542, 6037, 1383, 6038, 15993, 16285, 2]
 // Exports: default
 
-// Module 5863 (handleURL)
+// Module 5999 (handleURL)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ActionSheetStore from "ActionSheetStore" /* 5407 */;
+import ActionSheetStore from "ActionSheetStore" /* 5543 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -163,7 +163,7 @@ let obj = function _handleURL() {
             }
             openInBrowser();
             c8 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           } else {
             tryHandleUniversalLink = closure_132_1(closure_132_2[15])(tryHandleUniversalLink);
             let obj6 = /^https?:/i;
@@ -218,7 +218,7 @@ let obj = function _handleURL() {
         let tmp12 = tmp62;
         c6 = 0;
         c8 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       } else if (3 === tmp4) {
         if (arg0 === 1) {
           c8 = 3;
@@ -338,7 +338,7 @@ let obj = function _handleURL() {
           presentFailedToast(intl.string(closure_2_0(tmp2[11]).t.XiqzAp));
         }
       };
-      return "flexDirection";
+      return "Path";
     })();
     let nextResult = iter.next();
     return iter;

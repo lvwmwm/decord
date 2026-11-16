@@ -1,31 +1,31 @@
-// Module ID: 12043
-// Function ID: 12044
+// Module ID: 12905
+// Function ID: 12906
 // Name: StageChannelCallNavigator
-// Dependencies: [32, 19, 17, 1083, 21, 12044, 1652, 5793, 575, 12045, 12109, 12047, 11166, 11165, 9953, 11400, 5920, 12110, 12195, 5231, 11895, 12203, 12204, 12050, 12209, 12217, 12219, 12250, 12251, 5170, 12252, 12067, 2]
+// Dependencies: [32, 19, 17, 1083, 21, 12906, 1655, 5929, 575, 12907, 12974, 12909, 11007, 11006, 9069, 11990, 6056, 12975, 13056, 5367, 12715, 13064, 13065, 12913, 13070, 13079, 13081, 13110, 13111, 5306, 13112, 12934, 2]
 // Exports: default
 
-// Module 12043 (StageChannelCallNavigator)
+// Module 12905 (StageChannelCallNavigator)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import spring_spring from "spring/spring" /* 5793 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5920 */;
-import MessageManagerDefault from "MessageManager" /* 9953 */;
-import participantHasVideoDefault from "participantHasVideo" /* 11400 */;
-import ModeratorOverlayState from "ModeratorOverlayState" /* 12044 */;
-import ModeratorStartStageViewDefault from "ModeratorStartStageView" /* 12045 */;
-import StageActionBarButtons from "StageActionBarButtons" /* 12067 */;
-import JoinStageViewDefault from "JoinStageView" /* 12109 */;
-import ThemeContextProvider_RootThemeContextProvider from "ThemeContextProvider/RootThemeContextProvider" /* 12252 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import spring_spring from "spring/spring" /* 5929 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6056 */;
+import MessageManagerDefault from "MessageManager" /* 9069 */;
+import participantHasVideoDefault from "participantHasVideo" /* 11990 */;
+import ModeratorOverlayState from "ModeratorOverlayState" /* 12906 */;
+import ModeratorStartStageViewDefault from "ModeratorStartStageView" /* 12907 */;
+import StageActionBarButtons from "StageActionBarButtons" /* 12934 */;
+import JoinStageViewDefault from "JoinStageView" /* 12974 */;
+import ThemeContextProvider_RootThemeContextProvider from "ThemeContextProvider/RootThemeContextProvider" /* 13112 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-const _modDef1652 = _mod1652;
+const _modDef1655 = _mod1655;
 let importDefault;
 
 let c10;
@@ -53,8 +53,8 @@ function ModeratorViewOverlay(channel) {
   [tmp6, c2] = _slicedToArray(react.useState(first), 2);
   _slicedToArray(react.useState(first), 2);
   const items = [closure_13, , , ];
-  const useAnimatedStyle = _mod1652.useAnimatedStyle;
-  _mod1652;
+  const useAnimatedStyle = _mod1655.useAnimatedStyle;
+  _mod1655;
   items[1] = spring_spring.withSpring;
   items[2] = tmp6;
   items[3] = closure_11;
@@ -97,7 +97,7 @@ function ModeratorViewOverlay(channel) {
     const obj3 = { style: items3, children: metroImportAll(ModeratorStartStageViewDefault, obj5) };
     items3 = [hasOwnProperty.absoluteFill, , ];
     const obj4 = { backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_800 };
-    const View = _modDef1652.View;
+    const View = _modDef1655.View;
     items3[1] = obj4;
     items3[2] = animatedStyle;
     obj5 = { channel, onSkip: tmp14 };
@@ -118,8 +118,8 @@ function JoinStageOverlay(channel) {
   channel = channel.channel;
   [first, closure_0] = react.useState(false);
   const items = [closure_15, , , ];
-  const useAnimatedStyle = _mod1652.useAnimatedStyle;
-  _mod1652;
+  const useAnimatedStyle = _mod1655.useAnimatedStyle;
+  _mod1655;
   items[1] = spring_spring.withSpring;
   items[2] = first;
   items[3] = closure_11;
@@ -154,7 +154,7 @@ function JoinStageOverlay(channel) {
   const obj2 = { style: items2, children: metroImportAll(JoinStageViewDefault, { channel }) };
   items2 = [hasOwnProperty.absoluteFill, , ];
   const obj3 = { backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_800 };
-  const View = _modDef1652.View;
+  const View = _modDef1655.View;
   items2[1] = obj3;
   items2[2] = animatedStyle;
   return metroImportAll(View, obj2);

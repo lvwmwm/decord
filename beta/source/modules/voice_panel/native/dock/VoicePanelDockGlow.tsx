@@ -1,22 +1,22 @@
-// Module ID: 18864
-// Function ID: 18865
+// Module ID: 19180
+// Function ID: 19181
 // Name: VoicePanelDockGlow
-// Dependencies: [19, 17, 11412, 21, 11394, 1652, 5402, 5756, 575, 18865, 8134, 8948, 14268, 14267, 14270, 5167, 11420, 5747, 2]
+// Dependencies: [19, 17, 12009, 21, 11984, 1655, 5538, 5892, 575, 19181, 8263, 11253, 14854, 14853, 14856, 5303, 12017, 5883, 2]
 // Exports: VoicePanelDockBottomLine, VoicePanelDockGlow
 
-// Module 18864 (VoicePanelDockGlow)
+// Module 19180 (VoicePanelDockGlow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import ColorUtils from "ColorUtils" /* 5167 */;
-import timing_timing from "timing/timing" /* 5402 */;
-import inlineStyles from "inlineStyles" /* 8134 */;
-import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8948 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11394 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11412 */;
-import VoicePanelDockRimLight from "VoicePanelDockRimLight" /* 14267 */;
-import useVoicePanelDockLevelProps from "useVoicePanelDockLevelProps" /* 14268 */;
-import LiveVoiceLevelViewDefault from "LiveVoiceLevelView" /* 14270 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import ColorUtils from "ColorUtils" /* 5303 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import inlineStyles from "inlineStyles" /* 8263 */;
+import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 11253 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11984 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 12009 */;
+import VoicePanelDockRimLight from "VoicePanelDockRimLight" /* 14853 */;
+import useVoicePanelDockLevelProps from "useVoicePanelDockLevelProps" /* 14854 */;
+import LiveVoiceLevelViewDefault from "LiveVoiceLevelView" /* 14856 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size_mod from "module_2" /* 2 */;
@@ -28,8 +28,8 @@ let _require, num, num3, result1, result2, set, tmp2Result, tmp3, tmp5;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const _modDef1652 = tmp(1652);
-const LinearGradientDefault = tmp(5747);
+const _modDef1655 = tmp(1655);
+const LinearGradientDefault = tmp(5883);
 const StyleSheet = react_native.StyleSheet;
 const getDockInset = VoicePanelDockConstants.getDockInset;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -65,7 +65,7 @@ let closure_16 = react.memo(function DockGlowGradient(dockHeight) {
       let tmp;
       let tmp2;
       [tmp, tmp2] = item;
-      const obj = { offset: tmp, stopColor, stopOpacity: Math.min(tmp2 * (1 + 0.3500000000000001 * tmp2) * 0.1337 * 1.8, 1) };
+      const obj = { offset: tmp, stopColor, stopOpacity: Math.min(tmp2 * (1 + 0.3500000000000001 * tmp2) * 0.1337 * 2.2, 1) };
       const Stop = inlineStyles.Stop;
       return metroRequire(Stop, obj, tmp);
     })
@@ -129,12 +129,12 @@ export function VoicePanelDockGlow(micLive) {
   const tmp4 = useStateFromSharedValueDefault(dockHeight);
   const context1 = react.useContext(VoicePanelStateContextDefault);
   ({ dockMinimizeProgress, dockPressProgress, dockPressed, isDockConnected, wrapperOffset } = context1);
-  let obj = _mod1652;
+  let obj = _mod1655;
   const sharedValue = obj.useSharedValue(1);
   items = [closure_12, dockPressed];
   let c0;
   [tmp9, tmp10] = items;
-  const tmp8 = _mod1652;
+  const tmp8 = _mod1655;
   class VoicePanelDockGlowTsx1 {
     constructor() {
       return closure_0.get();
@@ -174,7 +174,7 @@ export function VoicePanelDockGlow(micLive) {
   VoicePanelDockGlowTsx2.__workletHash = 16677252752401;
   VoicePanelDockGlowTsx2.__initData = tmp12;
   const animatedReaction = useAnimatedReaction(VoicePanelDockGlowTsx1, VoicePanelDockGlowTsx2);
-  const tmp6Result = _mod1652;
+  const tmp6Result = _mod1655;
   const sharedValue1 = tmp6Result.useSharedValue(0);
   const items4 = [closure_14, isDockConnected, wrapperOffset, dockMinimizeProgress, dockPressProgress];
   c0 = undefined;
@@ -183,7 +183,7 @@ export function VoicePanelDockGlow(micLive) {
   let c3;
   [tmp19, tmp20, tmp21, tmp22, tmp23] = items4;
   const tmp11 = closure_9;
-  const tmp6Result5 = _mod1652;
+  const tmp6Result5 = _mod1655;
   class VoicePanelDockGlowTsx3 {
     constructor() {
       value = closure_0.get();
@@ -253,7 +253,7 @@ export function VoicePanelDockGlow(micLive) {
   c3 = undefined;
   let c4;
   [tmp31, tmp32, tmp33, tmp34, tmp35, tmp36] = items8;
-  const tmp6Result7 = _mod1652;
+  const tmp6Result7 = _mod1655;
   class VoicePanelDockGlowTsx5 {
     constructor() {
       obj = { opacity: null };
@@ -275,7 +275,7 @@ export function VoicePanelDockGlow(micLive) {
   c1 = undefined;
   c2 = undefined;
   [tmp39, tmp40, tmp41, tmp42] = items10;
-  const tmp6Result8 = _mod1652;
+  const tmp6Result8 = _mod1655;
   class VoicePanelDockGlowTsx6 {
     constructor() {
       value = closure_0.get();
@@ -310,7 +310,7 @@ export function VoicePanelDockGlow(micLive) {
     const obj3 = { height: tmp4 };
     items14[1] = obj3;
     items14[2] = animatedStyle;
-    const View = tmp(1652).View;
+    const View = tmp(1655).View;
     obj4 = { style: StyleSheet.absoluteFill, minOpacity: VoicePanelDockRimLight.DOCK_GLOW_REST_OPACITY, maxOpacity: 1, children: metroRequire(closure_16, obj5) };
     tmpResult = LiveVoiceLevelViewDefault;
     const merged = Object.assign(voicePanelDockGlowLevelProps);
@@ -349,7 +349,7 @@ export function VoicePanelDockBottomLine(micLive) {
   micLive = micLive.micLive;
   const context = react.useContext(VoicePanelStateContextDefault);
   ({ dockContentSwap, dockMinimizeProgress, dockPressProgress, isDockConnected, isDockExpanding, sheetExitProgress, wrapperDimensions, dockSheetWidth } = context);
-  let obj = token(5756);
+  let obj = token(5892);
   token = obj.useToken(nativeDefault.colors.ICON_VOICE_SPEAKING);
   items = [token];
   const memo = react.useMemo(() => {
@@ -361,12 +361,12 @@ export function VoicePanelDockBottomLine(micLive) {
     items[2] = obj2.hexWithOpacity(token, 0);
     return items;
   }, items);
-  let obj2 = token(14268);
+  let obj2 = token(14854);
   const voicePanelDockGlowLevelProps = obj2.useVoicePanelDockGlowLevelProps();
   const items1 = [closure_20, getDockInset, dockPressProgress, isDockConnected, wrapperDimensions, , , , , , , ];
-  const useAnimatedStyle = token(1652).useAnimatedStyle;
-  const tmp7 = token(1652);
-  items1[5] = token(11420).getDockRowOpacity;
+  const useAnimatedStyle = token(1655).useAnimatedStyle;
+  const tmp7 = token(1655);
+  items1[5] = token(12017).getDockRowOpacity;
   items1[6] = dockMinimizeProgress;
   items1[7] = isDockExpanding;
   items1[8] = dockContentSwap;
@@ -409,8 +409,8 @@ export function VoicePanelDockBottomLine(micLive) {
   const animatedStyle = useAnimatedStyle(VoicePanelDockGlowTsx8);
   const obj3 = { style: items3, pointerEvents: "none", children: closure_6(tmpResult, obj4) };
   items3 = [closure_11.bottomLine, animatedStyle];
-  const View = _modDef1652.View;
-  obj4 = { style: StyleSheet.absoluteFill, minOpacity: 0.1, maxOpacity: 0.3, children: closure_6(LinearGradientDefault, obj5) };
+  const View = _modDef1655.View;
+  obj4 = { style: StyleSheet.absoluteFill, minOpacity: 0.16, maxOpacity: 0.4, children: closure_6(LinearGradientDefault, obj5) };
   tmpResult = LiveVoiceLevelViewDefault;
   const merged = Object.assign(voicePanelDockGlowLevelProps);
   obj5 = { style: StyleSheet.absoluteFill, colors: memo, locations: [0, 0.5, 1], start: { x: 0, y: 0.5 }, end: { x: 1, y: 0.5 } };

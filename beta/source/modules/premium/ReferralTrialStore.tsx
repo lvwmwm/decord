@@ -1,15 +1,15 @@
-// Module ID: 7741
-// Function ID: 7742
+// Module ID: 9293
+// Function ID: 9294
 // Name: ReferralTrialStore
-// Dependencies: [1385, 1072, 7742, 1088, 504, 572, 2]
+// Dependencies: [1388, 1072, 9294, 1088, 504, 572, 2]
 
-// Module 7741 (ReferralTrialStore)
+// Module 9293 (ReferralTrialStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import MessageTypes from "MessageTypes" /* 1088 */;
-import ReferralTrialActionCreators from "ReferralTrialActionCreators" /* 7742 */;
-import UserStore from "UserStore" /* 1385 */;
+import ReferralTrialActionCreators from "ReferralTrialActionCreators" /* 9294 */;
+import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 let closure_14;
@@ -62,7 +62,7 @@ map = map1;
 let c11 = 0;
 let c12 = null;
 let set3 = new Set();
-const authStore3 = [];
+const gesture = [];
 let closure_15 = [];
 let c16 = false;
 let c17 = false;

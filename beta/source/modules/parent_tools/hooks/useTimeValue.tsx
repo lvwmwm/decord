@@ -1,11 +1,11 @@
-// Module ID: 17192
-// Function ID: 17193
+// Module ID: 17469
+// Function ID: 17470
 // Name: useTimeValue
-// Dependencies: [19, 2, 11175]
+// Dependencies: [19, 2, 11016]
 // Exports: default
 
-// Module 17192 (useTimeValue)
-import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 11175 */;
+// Module 17469 (useTimeValue)
+import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 11016 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

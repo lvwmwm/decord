@@ -1,11 +1,11 @@
-// Module ID: 5761
-// Function ID: 5762
+// Module ID: 5897
+// Function ID: 5898
 // Name: VEVOOStore
-// Dependencies: [560, 1259, 2]
+// Dependencies: [560, 1263, 2]
 // Exports: clearVisualEffectViewOverrides, getVisualEffectViewOverrides, setVisualEffectViewOverides, useVisualEffectViewOverrides
 
-// Module 5761 (VEVOOStore)
-import react_native from "react-native" /* 1259 */;
+// Module 5897 (VEVOOStore)
+import react_native from "react-native" /* 1263 */;
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 

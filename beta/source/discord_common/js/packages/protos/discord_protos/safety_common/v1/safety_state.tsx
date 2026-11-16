@@ -1,9 +1,9 @@
-// Module ID: 1399
-// Function ID: 1400
+// Module ID: 1402
+// Function ID: 1403
 // Name: safety_state
-// Dependencies: [32, 1197, 1226, 1400, 1227, 2]
+// Dependencies: [32, 1197, 1226, 1403, 1227, 2]
 
-// Module 1399 (safety_state)
+// Module 1402 (safety_state)
 import _mod1197 from "module_1197" /* 1197 */;
 import timestamp from "timestamp" /* 1226 */;
 import wrappers from "wrappers" /* 1227 */;

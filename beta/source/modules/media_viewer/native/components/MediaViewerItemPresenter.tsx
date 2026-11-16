@@ -1,23 +1,23 @@
-// Module ID: 15069
-// Function ID: 15070
+// Module ID: 15234
+// Function ID: 15235
 // Name: MediaViewerItemPresenter
-// Dependencies: [19, 17, 21, 1377, 5127, 15068, 8945, 15067, 1652, 15049, 15070, 2]
+// Dependencies: [19, 17, 21, 1380, 5263, 15233, 8632, 15232, 1655, 15213, 15235, 2]
 // Exports: default
 
-// Module 15069 (MediaViewerItemPresenter)
+// Module 15234 (MediaViewerItemPresenter)
 import Fragment from "Fragment" /* 21 */;
-import DeviceUtils from "DeviceUtils" /* 5127 */;
-import MediaViewerEntranceJankExperiment from "MediaViewerEntranceJankExperiment" /* 15049 */;
-import MediaViewerItemTransformPresenterDefault from "MediaViewerItemTransformPresenter" /* 15070 */;
+import DeviceUtils from "DeviceUtils" /* 5263 */;
+import MediaViewerEntranceJankExperiment from "MediaViewerEntranceJankExperiment" /* 15213 */;
+import MediaViewerItemTransformPresenterDefault from "MediaViewerItemTransformPresenter" /* 15235 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
 import size_mod from "module_2" /* 2 */;
 
 let StyleSheet;
 let closure_4;
 let tmp;
-const MediaViewerItemTransformPresenter = tmp(15070);
+const MediaViewerItemTransformPresenter = tmp(15235);
 function MediaViewerItemPresenter(windowHeight) {
   let diff;
   let diff1;
@@ -146,13 +146,13 @@ function MediaViewerItemPresenter(windowHeight) {
       let items5;
       let items6;
       const value = _undefined.get();
-      size = { height: uri(value, [0, 1], items, _undefined2.CLAMP), width: uri(value, [0, 1], items1, _undefined2.CLAMP), top: uri(value, [0, 1], items2, _undefined2.CLAMP), left: uri(value, [0, 1], items3, _undefined2.CLAMP), borderRadius: uri(value, [0, 0.25], items4, _undefined2.CLAMP), transform: items6 };
+      size = { height: _undefined2(value, [0, 1], items, _undefined3.CLAMP), width: _undefined2(value, [0, 1], items1, _undefined3.CLAMP), top: _undefined2(value, [0, 1], items2, _undefined3.CLAMP), left: _undefined2(value, [0, 1], items3, _undefined3.CLAMP), borderRadius: _undefined2(value, [0, 0.25], items4, _undefined3.CLAMP), transform: items6 };
       items = [c3, c4];
       items1 = [c5, c6];
       items2 = [c7, 0];
       items3 = [c8, 0];
       items4 = [16, c9];
-      const obj = { scale: uri(value, [0, 1], items5, _undefined2.CLAMP) };
+      const obj = { scale: _undefined2(value, [0, 1], items5, _undefined3.CLAMP) };
       items5 = [c10, 1];
       items6 = [obj];
       return size;

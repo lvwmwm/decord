@@ -1,13 +1,13 @@
-// Module ID: 17810
-// Function ID: 17811
+// Module ID: 18084
+// Function ID: 18085
 // Name: DisplayMediaLinksSetting
-// Dependencies: [8536, 11716, 1113, 4995, 2]
+// Dependencies: [9202, 12406, 1113, 5131, 2]
 
-// Module 17810 (DisplayMediaLinksSetting)
+// Module 18084 (DisplayMediaLinksSetting)
 import intl2 from "intl" /* 1113 */;
-import UserSettings from "UserSettings" /* 4995 */;
-import SettingsConstants from "SettingsConstants" /* 8536 */;
-import SettingBuilders from "SettingBuilders" /* 11716 */;
+import UserSettings from "UserSettings" /* 5131 */;
+import SettingsConstants from "SettingsConstants" /* 9202 */;
+import SettingBuilders from "SettingBuilders" /* 12406 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

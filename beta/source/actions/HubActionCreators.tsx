@@ -1,14 +1,14 @@
-// Module ID: 14607
-// Function ID: 14608
+// Module ID: 15094
+// Function ID: 15095
 // Name: HubActionCreators
-// Dependencies: [5, 1072, 6834, 1260, 5031, 1282, 572, 2]
+// Dependencies: [5, 1072, 6841, 1264, 5167, 1285, 572, 2]
 
-// Module 14607 (HubActionCreators)
+// Module 15094 (HubActionCreators)
 import Constants from "Constants" /* 1072 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import TypeUtils from "TypeUtils" /* 5031 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6834 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
+import TypeUtils from "TypeUtils" /* 5167 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6841 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -89,7 +89,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         let c3;
@@ -147,7 +147,7 @@ let obj = {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         } catch (tmp29) {
           body = tmp29;
           if (0 === c3) {
@@ -179,7 +179,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         let c3;
@@ -213,7 +213,7 @@ let obj = {
                 return obj7;
               } else {
                 c5 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "ulw" };
               }
             }
           } else if (1 === constants) {

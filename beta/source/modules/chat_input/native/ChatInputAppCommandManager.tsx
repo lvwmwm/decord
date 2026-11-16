@@ -1,21 +1,21 @@
-// Module ID: 14235
-// Function ID: 14236
+// Module ID: 14821
+// Function ID: 14822
 // Name: ChatInputAppCommandManager
-// Dependencies: [32, 19, 8448, 8449, 2138, 8784, 1385, 6200, 5170, 575, 13044, 12, 7577, 504, 8786, 12670, 14019, 10467, 2116, 14236, 2]
+// Dependencies: [32, 19, 9006, 9007, 2141, 9378, 1388, 6336, 5306, 575, 13793, 12, 9533, 504, 9380, 13438, 14602, 11405, 2119, 14822, 2]
 
-// Module 14235 (ChatInputAppCommandManager)
+// Module 14821 (ChatInputAppCommandManager)
 import nativeDefault from "native" /* 575 */;
-import ChatInputCommandOptionParser from "ChatInputCommandOptionParser" /* 14019 */;
-import ApplicationCommandManagerDefault from "ApplicationCommandManager" /* 14236 */;
+import ChatInputCommandOptionParser from "ChatInputCommandOptionParser" /* 14602 */;
+import ApplicationCommandManagerDefault from "ApplicationCommandManager" /* 14822 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 8448 */;
-import ApplicationCommandStore from "ApplicationCommandStore" /* 8449 */;
-import GameStore from "GameStore" /* 2138 */;
-import GameAutocompleteStore from "GameAutocompleteStore" /* 8784 */;
-import UserStore from "UserStore" /* 1385 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6200 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 9006 */;
+import ApplicationCommandStore from "ApplicationCommandStore" /* 9007 */;
+import GameStore from "GameStore" /* 2141 */;
+import GameAutocompleteStore from "GameAutocompleteStore" /* 9378 */;
+import UserStore from "UserStore" /* 1388 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6336 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let gameById, map, set;
@@ -314,7 +314,7 @@ obj3 = { backgroundColor: nativeDefault.colors.KEYWORD_HIGHLIGHT_BACKGROUND, col
 obj4 = { backgroundColor: nativeDefault.colors.MENTION_BACKGROUND, color: nativeDefault.colors.MENTION_FOREGROUND, borderRadius: nativeDefault.radii.xs, fontSize: 14, fontWeight: "bold" };
 obj5 = { backgroundColor: nativeDefault.colors.MENTION_BACKGROUND, color: nativeDefault.colors.MENTION_FOREGROUND, borderRadius: nativeDefault.radii.xs, fontSize: 14, fontWeight: "bold" };
 obj6 = { color: nativeDefault.colors.TEXT_BRAND, fontWeight: "bold" };
-const authStore3 = createStyles(obj);
+const gesture = createStyles(obj);
 ChatInputAppCommandManager.displayName = "ChatInputAppCommandManager";
 const memoResult = react.memo(ChatInputAppCommandManager);
 let result = size.fileFinishedImporting("modules/chat_input/native/ChatInputAppCommandManager.tsx");

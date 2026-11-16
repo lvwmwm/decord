@@ -1,35 +1,35 @@
-// Module ID: 15354
-// Function ID: 15355
+// Module ID: 15500
+// Function ID: 15501
 // Name: ProductDetailsActionSheetPurchaseSection
-// Dependencies: [32, 19, 17, 7844, 1074, 1072, 11690, 1387, 21, 5170, 575, 8131, 13628, 5406, 14693, 1113, 9673, 9694, 9654, 5797, 1499, 7420, 6831, 15355, 2118, 7828, 15363, 1075, 15364, 14761, 9649, 5783, 5791, 2111, 8853, 504, 11589, 2171, 7841, 7840, 9674, 10065, 8849, 9670, 11689, 15366, 15367, 1627, 9672, 5790, 15368, 1242, 1377, 6627, 6123, 2]
+// Dependencies: [32, 19, 17, 8500, 1074, 1072, 10030, 1390, 21, 5306, 575, 7988, 11817, 5542, 11794, 1113, 10436, 10451, 9518, 5933, 1502, 7918, 6838, 15501, 2121, 8484, 15509, 1075, 15510, 10020, 9442, 5919, 5927, 2114, 9409, 504, 15469, 2174, 8497, 8496, 10437, 9723, 9405, 10435, 10029, 15512, 15513, 1630, 9452, 5926, 15514, 1242, 1380, 6762, 6259, 2]
 // Exports: default
 
-// Module 15354 (ProductDetailsActionSheetPurchaseSection)
+// Module 15500 (ProductDetailsActionSheetPurchaseSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1113 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import PremiumConstants from "PremiumConstants" /* 1387 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 2111 */;
-import asyncRequire from "asyncRequire" /* 2118 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
-import Text_Text from "Text/Text" /* 5783 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6123 */;
-import ReleaseChannelUtils from "ReleaseChannelUtils" /* 6627 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6831 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7420 */;
-import OrbsIcon from "OrbsIcon" /* 9649 */;
-import MainTabsConstants from "MainTabsConstants" /* 11690 */;
-import openGiftModal from "openGiftModal" /* 14693 */;
-import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 14761 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import PremiumConstants from "PremiumConstants" /* 1390 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 2114 */;
+import asyncRequire from "asyncRequire" /* 2121 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6259 */;
+import ReleaseChannelUtils from "ReleaseChannelUtils" /* 6762 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7918 */;
+import OrbsIcon from "OrbsIcon" /* 9442 */;
+import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 10020 */;
+import MainTabsConstants from "MainTabsConstants" /* 10030 */;
+import openGiftModal from "openGiftModal" /* 11794 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7844 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 8500 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let importDefault, navigation;
@@ -111,12 +111,12 @@ function VCButton(balance) {
   const tmp = closure_17();
   react = tmp;
   const tmp2 = balance;
-  let obj = balance(9673);
+  let obj = balance(10436);
   const virtualCurrencyData = obj.useVirtualCurrencyData(product, flag);
   ({ price, canAfford } = virtualCurrencyData);
-  let obj2 = balance(9694);
+  let obj2 = balance(10451);
   let isDisabled = obj2.useProductDisableState(product.skuId).isDisabled;
-  let obj3 = balance(9654);
+  let obj3 = balance(9518);
   const isPartiallyOwnedBundle = obj3.useProductPurchaseState(product).isPartiallyOwnedBundle;
   if (!isDisabled) {
     isDisabled = !canAfford;
@@ -129,9 +129,9 @@ function VCButton(balance) {
   } else {
     str = "primary";
   }
-  const tmp2Result = tmp2(5797);
+  const tmp2Result = tmp2(5933);
   color = tmp2Result.useButtonTextColorStyles(str);
-  const tmp2Result2 = tmp2(1499);
+  const tmp2Result2 = tmp2(1502);
   navigation = tmp2Result2.useNavigation();
   analyticsLocations = useAnalyticsLocationsDefault().analyticsLocations;
   let items = [navigation, product, balance, analyticsLocations, stageCollectibleChangeForEditProfile];
@@ -197,7 +197,7 @@ function VCButton(balance) {
         }
       }
     };
-    obj2.pushLazy(asyncRequire(15355, dependencyMap.paths), obj3, ORB_CHECKOUT_MODAL);
+    obj2.pushLazy(asyncRequire(15501, dependencyMap.paths), obj3, ORB_CHECKOUT_MODAL);
   }, items);
   if (null == price) {
     return null;
@@ -236,7 +236,7 @@ function VCButton(balance) {
     };
     intl = tmp2(1113).intl;
     obj6 = { orbPrice: price.amount };
-    const obj7 = { style: tmp.buttonContainer, children: closure_13(tmp2(5791).BaseTextButton, obj8) };
+    const obj7 = { style: tmp.buttonContainer, children: closure_13(tmp2(5927).BaseTextButton, obj8) };
     obj8 = {
       loading: false,
       textElement: closure_13(color, obj5),
@@ -340,7 +340,7 @@ export default function ProductDetailsActionSheetPurchaseSection(product) {
   const result1 = obj7.isFreeCollectiblesProduct(product);
   const obj8 = require("CollectiblesProductUtils");
   const result2 = obj8.isOrbsExclusiveProduct(product);
-  const obj9 = require("module_9674");
+  const obj9 = require("module_10437");
   const balance = obj9.useFetchVirtualCurrencyBalance().balance;
   const obj10 = require("NativePaymentHooks");
   nativePaymentsConnected = obj10.useNativeIAPPayments().nativePaymentsConnected;

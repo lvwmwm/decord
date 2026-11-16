@@ -1,17 +1,17 @@
-// Module ID: 19310
-// Function ID: 19311
+// Module ID: 19622
+// Function ID: 19623
 // Name: SpamRequestsScreen
-// Dependencies: [19, 5112, 1385, 10878, 1072, 21, 7420, 7445, 504, 19309, 6192, 1260, 8854, 10884, 2]
+// Dependencies: [19, 5248, 1388, 10244, 1072, 21, 7918, 7937, 504, 19621, 6328, 1264, 8476, 10577, 2]
 // Exports: default
 
-// Module 19310 (SpamRequestsScreen)
+// Module 19622 (SpamRequestsScreen)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8854 */;
-import UserRowConstants from "UserRowConstants" /* 10878 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;
+import UserRowConstants from "UserRowConstants" /* 10244 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 5112 */;
-import UserStore from "UserStore" /* 1385 */;
+import RelationshipStore from "RelationshipStore" /* 5248 */;
+import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 const UserRowModes = UserRowConstants.UserRowModes;

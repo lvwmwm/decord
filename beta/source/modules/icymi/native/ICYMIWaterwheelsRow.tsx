@@ -1,13 +1,13 @@
-// Module ID: 19038
-// Function ID: 19039
+// Module ID: 19350
+// Function ID: 19351
 // Name: ICYMIWaterwheelsRow
-// Dependencies: [19, 21, 19039, 19005, 2]
+// Dependencies: [19, 21, 19004, 19009, 2]
 // Exports: default
 
-// Module 19038 (ICYMIWaterwheelsRow)
+// Module 19350 (ICYMIWaterwheelsRow)
 import Fragment from "Fragment" /* 21 */;
-import WaterwheelsCard from "WaterwheelsCard" /* 19005 */;
-import useWaterwheelsActions from "useWaterwheelsActions" /* 19039 */;
+import useWaterwheelsActions from "useWaterwheelsActions" /* 19004 */;
+import WaterwheelsCard from "WaterwheelsCard" /* 19009 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -17,6 +17,11 @@ const result = size.fileFinishedImporting("modules/icymi/native/ICYMIWaterwheels
 export default function ICYMIWaterwheelsRow(card) {
   card = card.card;
   const obj = useWaterwheelsActions;
-  const onAction = obj.useWaterwheelsActions();
-  return jsx(WaterwheelsCard.WaterwheelsCard, { card, onAction });
+  let closure_0 = obj.useWaterwheelsActions();
+  return jsx(WaterwheelsCard.WaterwheelsCard, {
+    card,
+    onAction(arg0) {
+      return closure_0(arg0);
+    }
+  });
 };

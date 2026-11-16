@@ -1,14 +1,15 @@
-// Module ID: 1450
-// Function ID: 1451
+// Module ID: 1453
+// Function ID: 1454
 // Name: apex/ApexExperiment
-// Dependencies: [32, 502, 1246, 1451, 1265, 1380, 504, 2]
+// Dependencies: [32, 502, 1246, 1454, 1253, 504, 1254, 1255, 2]
 // Exports: default
 
-// Module 1450 (apex/ApexExperiment)
+// Module 1453 (apex/ApexExperiment)
 import get_initialized from "get initialized" /* 504 */;
-import FingerprintUtils from "FingerprintUtils" /* 1265 */;
-import GlobalUtils from "GlobalUtils" /* 1380 */;
-import discord_common_apex_ApexExperiment from "discord_common/apex/ApexExperiment" /* 1451 */;
+import ApexUnitUtils from "ApexUnitUtils" /* 1253 */;
+import FingerprintUtils from "FingerprintUtils" /* 1254 */;
+import GlobalUtils from "GlobalUtils" /* 1255 */;
+import discord_common_apex_ApexExperiment from "discord_common/apex/ApexExperiment" /* 1454 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
@@ -16,23 +17,6 @@ import size from "module_2" /* 2 */;
 
 const discord_common_apex_ApexExperimentDefault = discord_common_apex_ApexExperiment;
 
-function getUnitId(arg0, guildId) {
-  if ("guild" === arg0) {
-    return guildId.guildId;
-  } else if ("user" === arg0) {
-    return AuthenticationStore.getId();
-  } else if ("installation" === arg0) {
-    const obj2 = FingerprintUtils;
-    let str2 = obj2.maybeExtractId(AuthenticationStore.getInstallationForTracking());
-    if (str2 == null) {
-      str2 = "";
-    }
-    return str2;
-  } else {
-    const obj = GlobalUtils;
-    obj.assertNever(arg0);
-  }
-}
 function useUnitId(arg0, guildId) {
   let items = [AuthenticationStore];
   const obj = get_initialized;
@@ -59,7 +43,8 @@ function useUnitId(arg0, guildId) {
 const result = size.fileFinishedImporting("modules/experiments/apex/ApexExperiment.tsx");
 
 export default function createApexExperiment(arg0) {
-  return discord_common_apex_ApexExperimentDefault(arg0, ApexExperimentStore, getUnitId, useUnitId);
+  const tmp = discord_common_apex_ApexExperimentDefault;
+  return tmp(arg0, ApexExperimentStore, ApexUnitUtils.getUnitId, useUnitId);
 };
 export const ApexExperiment = discord_common_apex_ApexExperiment.ApexExperiment;
-export { getUnitId };
+export const getUnitId = ApexUnitUtils.getUnitId;

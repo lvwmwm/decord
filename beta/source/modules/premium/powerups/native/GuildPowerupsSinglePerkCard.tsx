@@ -1,17 +1,17 @@
-// Module ID: 14416
-// Function ID: 14417
+// Module ID: 10781
+// Function ID: 10782
 // Name: GuildPowerupsSinglePerkCard
-// Dependencies: [19, 21, 14366, 14348, 14344, 14365, 14413, 14417, 2]
+// Dependencies: [19, 21, 10718, 10700, 10696, 10717, 10778, 10782, 2]
 // Exports: default
 
-// Module 14416 (GuildPowerupsSinglePerkCard)
+// Module 10781 (GuildPowerupsSinglePerkCard)
 import Fragment from "Fragment" /* 21 */;
-import useGuildPowerupRollbackEnabledDefault from "useGuildPowerupRollbackEnabled" /* 14344 */;
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 14348 */;
-import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 14365 */;
-import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 14366 */;
-import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 14413 */;
-import GuildPowerupsPerkCardDefault from "GuildPowerupsPerkCard" /* 14417 */;
+import useGuildPowerupRollbackEnabledDefault from "useGuildPowerupRollbackEnabled" /* 10696 */;
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 10700 */;
+import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 10717 */;
+import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 10718 */;
+import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 10778 */;
+import GuildPowerupsPerkCardDefault from "GuildPowerupsPerkCard" /* 10782 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

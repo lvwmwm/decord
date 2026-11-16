@@ -1,9 +1,9 @@
-// Module ID: 9257
-// Function ID: 9258
+// Module ID: 10256
+// Function ID: 10257
 // Name: GameSearchFilterGroup
 // Dependencies: [2]
 
-// Module 9257 (GameSearchFilterGroup)
+// Module 10256 (GameSearchFilterGroup)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/GameSearchFilterGroup.tsx");

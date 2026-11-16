@@ -1,20 +1,20 @@
-// Module ID: 11153
-// Function ID: 11154
+// Module ID: 10993
+// Function ID: 10994
 // Name: markUnread
-// Dependencies: [5, 5104, 5019, 6226, 6930, 1385, 1072, 3, 11, 8304, 1282, 2]
+// Dependencies: [5, 5240, 5155, 6362, 7015, 1388, 1072, 3, 11, 8864, 1285, 2]
 // Exports: default
 
-// Module 11153 (markUnread)
+// Module 10993 (markUnread)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1072 */;
-import ReadStateStore from "ReadStateStore" /* 6930 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8304 */;
+import ReadStateStore from "ReadStateStore" /* 7015 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8864 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 5104 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import MessageStore from "MessageStore" /* 6226 */;
-import UserStore from "UserStore" /* 1385 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 5240 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import MessageStore from "MessageStore" /* 6362 */;
+import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 let channel, closure_2, closure_3, closure_4, currentUser, mention_count, messages;
@@ -37,7 +37,7 @@ let obj = function _markUnread() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -104,7 +104,7 @@ let obj = function _markUnread() {
                 post(request);
               }
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "ulw" };
             }
           } else if (1 === mention_count) {
             if (arg0 === 1) {

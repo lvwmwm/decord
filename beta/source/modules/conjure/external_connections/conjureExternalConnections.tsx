@@ -1,10 +1,10 @@
-// Module ID: 12379
-// Function ID: 12380
+// Module ID: 13268
+// Function ID: 13269
 // Name: conjureExternalConnections
 // Dependencies: [2]
 // Exports: beginExternalAuthorization, endExternalAuthorization, externalAuthErrorCode, externalAuthErrorCopy, externalAuthErrorFor, externalConnectionOffers
 
-// Module 12379 (conjureExternalConnections)
+// Module 13268 (conjureExternalConnections)
 import size from "module_2" /* 2 */;
 
 function externalConnectionOffer(nextResult) {

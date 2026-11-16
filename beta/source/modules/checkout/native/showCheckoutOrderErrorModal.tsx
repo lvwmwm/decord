@@ -1,13 +1,13 @@
-// Module ID: 7724
-// Function ID: 7725
+// Module ID: 9598
+// Function ID: 9599
 // Name: showCheckoutOrderErrorModal
-// Dependencies: [5, 32, 19, 21, 6128, 1113, 6124, 2]
+// Dependencies: [5, 32, 19, 21, 6264, 1113, 6260, 2]
 // Exports: showCheckoutOrderErrorModal, showRetryConfirmModal
 
-// Module 7724 (showCheckoutOrderErrorModal)
+// Module 9598 (showCheckoutOrderErrorModal)
 import intl4 from "intl" /* 1113 */;
-import useAlertStore from "useAlertStore" /* 6124 */;
-import AlertModal2 from "AlertModal" /* 6128 */;
+import useAlertStore from "useAlertStore" /* 6260 */;
+import AlertModal2 from "AlertModal" /* 6264 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -52,7 +52,7 @@ function SyncedLoadingAlertModal(onConfirm) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         let c3;
@@ -92,7 +92,7 @@ function SyncedLoadingAlertModal(onConfirm) {
             c3 = 0;
             closure_128_1(false);
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } catch (tmp19) {
           closure_2 = tmp19;
@@ -171,7 +171,7 @@ export function showCheckoutOrderErrorModal(arg0, c6) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -204,7 +204,7 @@ export function showCheckoutOrderErrorModal(arg0, c6) {
             tmp = value;
             closure_129_0(tmp);
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } catch (tmp11) {
           c3 = 3;

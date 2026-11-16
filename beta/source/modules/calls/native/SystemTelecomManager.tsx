@@ -1,43 +1,43 @@
-// Module ID: 16616
-// Function ID: 16617
+// Module ID: 16892
+// Function ID: 16893
 // Name: SystemTelecomManager
-// Dependencies: [5, 32, 17, 6655, 5023, 502, 5019, 2130, 5925, 5112, 5073, 1385, 5835, 5928, 1072, 5929, 3, 16617, 572, 16618, 1252, 5921, 7445, 6793, 11, 7584, 6079, 10363, 1266, 16619, 5808, 7582, 1377, 2120, 2]
+// Dependencies: [5, 32, 17, 6790, 5159, 502, 5155, 2133, 6061, 5248, 5209, 1388, 5971, 6064, 1072, 6065, 3, 16893, 572, 16894, 1256, 6057, 7937, 6925, 11, 8136, 6215, 8858, 1269, 16895, 5944, 8134, 1380, 2123, 2]
 
-// Module 16616 (SystemTelecomManager)
+// Module 16892 (SystemTelecomManager)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import v1 from "v1" /* 1266 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import ChannelRecord from "ChannelRecord" /* 5023 */;
-import useChannelName from "useChannelName" /* 5808 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5921 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 6079 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6793 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7445 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7582 */;
-import CallActionCreatorsDefault from "CallActionCreators" /* 7584 */;
-import RequestGatewaySocketAll from "RequestGatewaySocket" /* 10363 */;
-import SystemTelecomPlatform from "SystemTelecomPlatform" /* 16618 */;
-import SystemTelecomUtils from "SystemTelecomUtils" /* 16619 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import v1 from "v1" /* 1269 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import ChannelRecord from "ChannelRecord" /* 5159 */;
+import useChannelName from "useChannelName" /* 5944 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6057 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 6215 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6925 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 8134 */;
+import CallActionCreatorsDefault from "CallActionCreators" /* 8136 */;
+import RequestGatewaySocketAll from "RequestGatewaySocket" /* 8858 */;
+import SystemTelecomPlatform from "SystemTelecomPlatform" /* 16894 */;
+import SystemTelecomUtils from "SystemTelecomUtils" /* 16895 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6655 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6790 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import MediaEngineStore from "MediaEngineStore" /* 2130 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5925 */;
-import RelationshipStore from "RelationshipStore" /* 5112 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5073 */;
-import UserStore from "UserStore" /* 1385 */;
-import VoiceStateStore from "VoiceStateStore" /* 5835 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5928 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import MediaEngineStore from "MediaEngineStore" /* 2133 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
+import RelationshipStore from "RelationshipStore" /* 5248 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
+import UserStore from "UserStore" /* 1388 */;
+import VoiceStateStore from "VoiceStateStore" /* 5971 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 6064 */;
 import Constants_mod from "Constants" /* 1072 */;
-import Constants_mod2 from "Constants" /* 5929 */;
-import react_native2 from "react-native" /* 16617 */;
-import LifecycleManager from "LifecycleManager" /* 2120 */;
+import Constants_mod2 from "Constants" /* 6065 */;
+import react_native2 from "react-native" /* 16893 */;
+import LifecycleManager from "LifecycleManager" /* 2123 */;
 import size from "module_2" /* 2 */;
 
 let c3, c5;
@@ -279,7 +279,7 @@ class SystemTelecomManager {
           const privateChannel = obj.selectPrivateChannel(channel.id);
         }
       };
-      return "flexDirection";
+      return "Path";
     });
     obj.handleSystemStartCall = function() {
       return closure_0(...arguments);
@@ -564,7 +564,7 @@ class SystemTelecomManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -627,7 +627,7 @@ class SystemTelecomManager {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         } catch (tmp26) {
           if (0 === c3) {
             c5 = 3;

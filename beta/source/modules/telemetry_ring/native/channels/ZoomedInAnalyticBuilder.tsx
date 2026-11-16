@@ -1,15 +1,17 @@
-// Module ID: 2127
-// Function ID: 2128
+// Module ID: 2130
+// Function ID: 2131
 // Name: ZoomedInAnalyticBuilder
-// Dependencies: [1072, 1371, 2128, 2129, 2]
+// Dependencies: [1072, 1374, 2131, 2132, 2]
 // Exports: buildZoomedInAnalyticsEvent
 
-// Module 2127 (ZoomedInAnalyticBuilder)
+// Module 2130 (ZoomedInAnalyticBuilder)
 import Constants from "Constants" /* 1072 */;
-import ProcessUtilsDefault from "ProcessUtils" /* 1371 */;
-import GatewaySocketOpcode from "GatewaySocketOpcode" /* 2128 */;
-import RTCControlSocket from "RTCControlSocket" /* 2129 */;
+import ProcessUtilsDefault from "ProcessUtils" /* 1374 */;
+import GatewaySocketOpcode from "GatewaySocketOpcode" /* 2131 */;
+import RTCControlSocket from "RTCControlSocket" /* 2132 */;
 import size from "module_2" /* 2 */;
+
+let gesture;
 
 const AnalyticEvents = Constants.AnalyticEvents;
 let closure_3 = { Gateway: "gateway", RtcControl: "rtc_control", RemoteAuth: "remote_auth", Spotify: "spotify", Rpc: "rpc", GameServerPing: "game_server_ping" };
@@ -395,7 +397,7 @@ let closure_5 = {
       if (typeof view_hierarchy === "string") {
         tmp13 = view_hierarchy;
       }
-      const gesture = data.gesture;
+      gesture = data.gesture;
       tmp14 = null;
       if (typeof gesture === "string") {
         tmp14 = gesture;
@@ -531,7 +533,7 @@ let closure_5 = {
     let obj;
     data = data.data;
     if (null == data) {
-      obj = { message_identity: "unknown", socket_kind: "add" };
+      obj = { message_identity: "unknown", socket_kind: "alignItems" };
     } else {
       const url = data.url;
       let tmp58 = null;

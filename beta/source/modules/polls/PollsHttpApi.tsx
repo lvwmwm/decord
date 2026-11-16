@@ -1,10 +1,10 @@
-// Module ID: 12788
-// Function ID: 12789
+// Module ID: 12665
+// Function ID: 12666
 // Name: PollsHttpApi
-// Dependencies: [5, 1072, 1282, 6611, 2]
+// Dependencies: [5, 1072, 1285, 6747, 2]
 // Exports: endPollEarly, submitPollVote
 
-// Module 12788 (PollsHttpApi)
+// Module 12665 (PollsHttpApi)
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -28,7 +28,7 @@ let obj = function _submitPollVote() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       let c4;
@@ -51,7 +51,7 @@ let obj = function _submitPollVote() {
             ({ channelId: c0, messageId: c1, answerIds: c2 } = closure_0);
             c5 = 1;
             c6 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "Path", done: true };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {
@@ -89,7 +89,7 @@ let obj = function _submitPollVote() {
         } else {
           c4 = 0;
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } catch (tmp15) {
         closure_3 = tmp15;
@@ -119,7 +119,7 @@ obj = function _endPollEarly() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       let c4;
@@ -141,7 +141,7 @@ obj = function _endPollEarly() {
             ({ channelId: c0, messageId: c1 } = closure_0);
             c5 = 1;
             c6 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "Path", done: true };
           }
         } else {
           let self;
@@ -182,7 +182,7 @@ obj = function _endPollEarly() {
           } else {
             c4 = 0;
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         }
       } catch (tmp22) {

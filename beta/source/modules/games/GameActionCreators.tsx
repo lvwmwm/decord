@@ -1,16 +1,16 @@
-// Module ID: 7578
-// Function ID: 7579
+// Module ID: 9534
+// Function ID: 9535
 // Name: GameActionCreators
-// Dependencies: [5, 2138, 1072, 1282, 572, 5014, 12, 2]
+// Dependencies: [5, 2141, 1072, 1285, 572, 5150, 12, 2]
 // Exports: fetchGamesWithSupplementalData
 
-// Module 7578 (GameActionCreators)
+// Module 9534 (GameActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import Timers from "Timers" /* 5014 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
+import Timers from "Timers" /* 5150 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GameStore from "GameStore" /* 2138 */;
+import GameStore from "GameStore" /* 2141 */;
 import size from "module_2" /* 2 */;
 
 let c1;
@@ -32,7 +32,7 @@ let obj = function _requestGames() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       let c3;
@@ -82,7 +82,7 @@ let obj = function _requestGames() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } catch (tmp18) {
         if (0 === c3) {
@@ -136,7 +136,7 @@ obj = function _fetchGamesWithSupplementalData() {
       if (closure_1 === undefined) {
         flag = false;
       }
-      return "flexDirection";
+      return "Path";
     })();
     iter.next();
     return iter;
@@ -159,7 +159,7 @@ let closure_0 = _asyncToGenerator(async (arg0, value) => {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "HermesInternal", done: "ulw" };
     }
   } else {
     try {
@@ -189,7 +189,7 @@ let closure_0 = _asyncToGenerator(async (arg0, value) => {
         return obj;
       } else {
         c1 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } catch (tmp9) {
       c1 = 3;

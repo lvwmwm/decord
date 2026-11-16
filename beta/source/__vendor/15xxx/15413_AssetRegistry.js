@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/gifting", width: 270, height: 134, scales: [2, 3], hash: "415663ee17f9e1c2411c453e5e8ca806", name: "img_premium_embed_background_light", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/logos", width: 45.5, height: 8.5, scales: [2, 3], hash: "8d16389f341b45c184ca21d1deb5fd2e", name: "img_logo_discord", type: "png" });

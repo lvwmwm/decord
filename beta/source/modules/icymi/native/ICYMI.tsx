@@ -1,55 +1,55 @@
-// Module ID: 18969
-// Function ID: 18970
+// Module ID: 19284
+// Function ID: 19285
 // Name: ICYMI
-// Dependencies: [32, 19, 17, 5171, 502, 5041, 9025, 9013, 18970, 5016, 21, 5170, 575, 18971, 8131, 13051, 9031, 5406, 18973, 2118, 5891, 18984, 5783, 1113, 7216, 7388, 10887, 5340, 7076, 18920, 16923, 7153, 19002, 1493, 1627, 1500, 7763, 504, 18855, 19004, 19007, 19010, 7675, 5003, 18994, 1499, 9026, 11314, 10343, 17423, 1093, 19011, 19017, 19022, 19033, 19034, 19035, 19036, 19037, 19038, 19040, 19041, 19042, 9944, 19043, 7390, 9030, 1377, 13599, 5342, 19044, 18972, 5231, 2]
+// Dependencies: [32, 19, 17, 5307, 502, 5177, 10209, 10205, 19285, 5152, 21, 5306, 575, 19286, 7988, 13801, 10217, 5542, 19288, 2121, 6027, 19299, 5919, 1113, 7771, 7415, 10271, 5476, 7428, 19235, 17199, 7549, 19317, 1496, 1630, 1503, 8678, 504, 19171, 19008, 19319, 19322, 9561, 5139, 19309, 1502, 10210, 11904, 11905, 17693, 1093, 19323, 19329, 19334, 19345, 19346, 19347, 19348, 19349, 19350, 19351, 19352, 19353, 9060, 19354, 7888, 10216, 1380, 14204, 5478, 19355, 19287, 5367, 2]
 // Exports: ICYMITab
 
-// Module 18969 (ICYMI)
+// Module 19284 (ICYMI)
 import nativeDefault from "native" /* 575 */;
 import ChannelTypes from "ChannelTypes" /* 1093 */;
 import intl3 from "intl" /* 1113 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import asyncRequire from "asyncRequire" /* 2118 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5016 */;
-import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 5340 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5342 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5891 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7216 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7388 */;
-import IconButton2 from "IconButton" /* 8131 */;
-import ICYMITypes from "ICYMITypes" /* 9026 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 9031 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10887 */;
-import FiltersHorizontalIcon from "FiltersHorizontalIcon" /* 13051 */;
-import Notifications from "Notifications" /* 18920 */;
-import ICYMIConstants from "ICYMIConstants" /* 18970 */;
-import NativeICYMIUtils from "NativeICYMIUtils" /* 18984 */;
-import ICYMIStoreUtils from "ICYMIStoreUtils" /* 19002 */;
-import AnnouncementMessageRowDefault from "AnnouncementMessageRow" /* 19011 */;
-import ICYMIMessageRowDefault from "ICYMIMessageRow" /* 19017 */;
-import ContentInventoryEntryRowDefault from "ContentInventoryEntryRow" /* 19022 */;
-import ICYMILoading from "ICYMILoading" /* 19033 */;
-import ICYMIBottomLoading from "ICYMIBottomLoading" /* 19034 */;
-import CaughtUpRowDefault from "CaughtUpRow" /* 19035 */;
-import ICYMIGuildEventRowDefault from "ICYMIGuildEventRow" /* 19036 */;
-import ICYMIServerRecommendationRow from "ICYMIServerRecommendationRow" /* 19037 */;
-import ICYMIWaterwheelsRowDefault from "ICYMIWaterwheelsRow" /* 19038 */;
-import ICYMIHeaderDefault from "ICYMIHeader" /* 19040 */;
-import ICYMIForumThreadRow2 from "ICYMIForumThreadRow" /* 19041 */;
-import CardHeightMeasurer from "CardHeightMeasurer" /* 19042 */;
-import AppFreezerDefault from "AppFreezer" /* 19044 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import asyncRequire from "asyncRequire" /* 2121 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
+import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 5476 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5478 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 6027 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7415 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7771 */;
+import IconButton2 from "IconButton" /* 7988 */;
+import ICYMITypes from "ICYMITypes" /* 10210 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 10217 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10271 */;
+import FiltersHorizontalIcon from "FiltersHorizontalIcon" /* 13801 */;
+import Notifications from "Notifications" /* 19235 */;
+import ICYMIConstants from "ICYMIConstants" /* 19285 */;
+import NativeICYMIUtils from "NativeICYMIUtils" /* 19299 */;
+import ICYMIStoreUtils from "ICYMIStoreUtils" /* 19317 */;
+import AnnouncementMessageRowDefault from "AnnouncementMessageRow" /* 19323 */;
+import ICYMIMessageRowDefault from "ICYMIMessageRow" /* 19329 */;
+import ContentInventoryEntryRowDefault from "ContentInventoryEntryRow" /* 19334 */;
+import ICYMILoading from "ICYMILoading" /* 19345 */;
+import ICYMIBottomLoading from "ICYMIBottomLoading" /* 19346 */;
+import CaughtUpRowDefault from "CaughtUpRow" /* 19347 */;
+import ICYMIGuildEventRowDefault from "ICYMIGuildEventRow" /* 19348 */;
+import ICYMIServerRecommendationRow from "ICYMIServerRecommendationRow" /* 19349 */;
+import ICYMIWaterwheelsRowDefault from "ICYMIWaterwheelsRow" /* 19350 */;
+import ICYMIHeaderDefault from "ICYMIHeader" /* 19351 */;
+import ICYMIForumThreadRow2 from "ICYMIForumThreadRow" /* 19352 */;
+import CardHeightMeasurer from "CardHeightMeasurer" /* 19353 */;
+import AppFreezerDefault from "AppFreezer" /* 19355 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5171 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import ICYMIFiltersStore from "ICYMIFiltersStore" /* 9025 */;
-import ICYMIStore from "ICYMIStore" /* 9013 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import ICYMIFiltersStore from "ICYMIFiltersStore" /* 10209 */;
+import ICYMIStore from "ICYMIStore" /* 10205 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
-import createICYMIStyles from "createICYMIStyles" /* 18971 */;
+import createStyles from "createStyles" /* 5306 */;
+import createICYMIStyles from "createICYMIStyles" /* 19286 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -66,7 +66,7 @@ function SettingsButton() {
     accessibilityLabel: "button",
     variant: "tertiary",
     size: "sm",
-    icon: authStore3(FiltersHorizontalIcon.FiltersHorizontalIcon, { size: "sm" }),
+    icon: gesture(FiltersHorizontalIcon.FiltersHorizontalIcon, { size: "sm" }),
     onPress() {
       const obj = require("ICYMIActionCreators");
       obj.itemInteracted("filters_button", "filters_button", "press_info_button");
@@ -77,14 +77,14 @@ function SettingsButton() {
     }
   };
   const IconButton = IconButton2.IconButton;
-  return authStore3(IconButton, obj);
+  return gesture(IconButton, obj);
 }
 function InfoButton() {
   let obj = {
     accessibilityLabel: "button",
     variant: "tertiary",
     size: "sm",
-    icon: authStore3(CircleInformationIcon.CircleInformationIcon, { size: "sm" }),
+    icon: gesture(CircleInformationIcon.CircleInformationIcon, { size: "sm" }),
     onPress() {
       const obj = ICYMIActionCreatorsDefault;
       obj.itemInteracted("info_button", "info_button", "press_info_button");
@@ -95,7 +95,7 @@ function InfoButton() {
     }
   };
   const IconButton = IconButton2.IconButton;
-  return authStore3(IconButton, obj);
+  return gesture(IconButton, obj);
 }
 function ICYMIHeaderTextWrapper() {
   const tmp = closure_18();
@@ -117,7 +117,7 @@ function ICYMIHeaderTextWrapper() {
       return closure_1_16(closure_1_15, obj);
     }, [])
   };
-  return authStore3(hasOwnProperty, obj);
+  return gesture(hasOwnProperty, obj);
 }
 function handleEndReached() {
   const obj = ICYMIStoreUtils;
@@ -205,7 +205,7 @@ function ICYMI(inNestedNavigator) {
     const hasOpenedEnoughTimesResult = endVisible && ICYMIStore.hasOpenedEnoughTimes();
     if (hasOpenedEnoughTimesResult) {
       const obj = ActionSheetActionCreatorsDefault;
-      obj.openLazy(asyncRequire(18994, dependencyMap.paths), "ICYMIFeedbackSheet", {});
+      obj.openLazy(asyncRequire(19309, dependencyMap.paths), "ICYMIFeedbackSheet", {});
     }
   }, items6);
   const ref = handleOnRefresh.useRef(null);
@@ -271,62 +271,62 @@ function ICYMI(inNestedNavigator) {
         if (item.channelType === ChannelTypes.ChannelTypes.GUILD_ANNOUNCEMENT) {
           const obj2 = { unread: item.unread, message: item.data.message, visible: null != visibleItemIds.find((item) => item.item.id === item.id) };
           const tmp47 = AnnouncementMessageRowDefault;
-          tmp43 = authStore3(tmp47, obj2);
+          tmp43 = gesture(tmp47, obj2);
         } else {
           const obj3 = { message: item.data.message, messageContext: item.data.messageContext, visible: null != visibleItemIds.find((item) => item.item.id === item.id) };
           const tmp40 = ICYMIMessageRowDefault;
-          tmp43 = authStore3(tmp40, obj3);
+          tmp43 = gesture(tmp40, obj3);
         }
         tmp6 = tmp43;
         const obj4 = { itemId: item.id, children: tmp6 };
-        return authStore3(CardHeightMeasurer.CardHeightMeasurer, obj4);
+        return gesture(CardHeightMeasurer.CardHeightMeasurer, obj4);
       }
       case "contentInventory":
       {
         const obj5 = { visible: null != visibleItemIds.find((item) => item.item.id === item.id), content: item.data.content };
         const tmp32 = ContentInventoryEntryRowDefault;
-        tmp6 = authStore3(tmp32, obj5);
+        tmp6 = gesture(tmp32, obj5);
         break;
       }
       case "loading":
       {
-        return authStore3(ICYMILoading.ICYMILoading, {});
+        return gesture(ICYMILoading.ICYMILoading, {});
       }
       case "bottomLoading":
       {
-        return authStore3(ICYMIBottomLoading.ICYMIBottomLoading, {});
+        return gesture(ICYMIBottomLoading.ICYMIBottomLoading, {});
       }
       case "end":
       {
         const obj6 = { visible: endVisible };
-        return authStore3(CaughtUpRowDefault, obj6);
+        return gesture(CaughtUpRowDefault, obj6);
       }
       case "guildEvent":
       {
         const obj7 = { eventId: item.data.eventId };
-        tmp6 = authStore3(ICYMIGuildEventRowDefault, obj7);
+        tmp6 = gesture(ICYMIGuildEventRowDefault, obj7);
         break;
       }
       case "recommendedGuilds":
       {
-        tmp6 = authStore3(ICYMIServerRecommendationRow.ICYMIServerRecommendationRow, {});
+        tmp6 = gesture(ICYMIServerRecommendationRow.ICYMIServerRecommendationRow, {});
         break;
       }
       case "waterwheelsItem":
       {
         const obj8 = { card: item.data.card };
-        tmp6 = authStore3(ICYMIWaterwheelsRowDefault, obj8);
+        tmp6 = gesture(ICYMIWaterwheelsRowDefault, obj8);
         break;
       }
       case "icymiHeader":
       {
-        return authStore3(ICYMIHeaderDefault, {});
+        return gesture(ICYMIHeaderDefault, {});
       }
       case "forumThread":
       {
         const obj = { message: item.data.message, channel: item.data.threadChannel, visible: null != visibleItemIds.find((item) => item.item.id === item.id) };
         const ICYMIForumThreadRow = ICYMIForumThreadRow2.ICYMIForumThreadRow;
-        tmp6 = authStore3(ICYMIForumThreadRow, obj);
+        tmp6 = gesture(ICYMIForumThreadRow, obj);
         break;
       }
       default:
@@ -431,31 +431,31 @@ let closure_22 = react.memo(function Header(inNestedNavigator) {
   const obj2 = { absolute: true, wide: true, tall: true, mix: true, mixAmount: obj3 };
   obj3 = { dark: client_themes_ClientThemesUtils.OverlayOpacity.LEVEL_7, light: client_themes_ClientThemesUtils.OverlayOpacity.LEVEL_8 };
   const tmp7 = ThemedGradientDefault;
-  items = [authStore3(tmp7, obj2), , ];
+  items = [gesture(tmp7, obj2), , ];
   const obj4 = { style: tmp.headerTitle, children: items2 };
   const obj5 = { style: tmp.headerLeft, children: items1 };
   if (tmp3) {
     const obj6 = { style: tmp.headerClose, accessibilityLabel: intl.string(intl3.t["13/7kX"]), onPress: Notifications.goBack, children: tmp6Result };
-    const PressableOpacity = tmp5(7076).PressableOpacity;
+    const PressableOpacity = tmp5(7428).PressableOpacity;
     intl = tmp5(1113).intl;
     if (inNestedNavigator) {
-      tmp6Result = tmp6(tmp5(16923).LeftBackIconWithBadge, { includeNotificationsCount: true });
+      tmp6Result = tmp6(tmp5(17199).LeftBackIconWithBadge, { includeNotificationsCount: true });
     } else {
-      tmp6Result = tmp6(tmp5(7153).XSmallIcon, { color: "interactive-text-default" });
+      tmp6Result = tmp6(tmp5(7549).XSmallIcon, { color: "interactive-text-default" });
     }
     tmp6Result2 = tmp6(PressableOpacity, obj6);
   } else {
     tmp6Result2 = null;
   }
-  items1 = [tmp6Result2, authStore3(ICYMIHeaderTextWrapper, {})];
-  items2 = [authStore4(hasOwnProperty, obj5), ];
+  items1 = [tmp6Result2, gesture(ICYMIHeaderTextWrapper, {})];
+  items2 = [authStore3(hasOwnProperty, obj5), ];
   const obj7 = { style: tmp.headerActions, children: items3 };
-  items3 = [authStore3(InfoButton, {}), authStore3(SettingsButton, {})];
-  items2[1] = authStore4(hasOwnProperty, obj7);
-  items[1] = authStore4(hasOwnProperty, obj4);
+  items3 = [gesture(InfoButton, {}), gesture(SettingsButton, {})];
+  items2[1] = authStore3(hasOwnProperty, obj7);
+  items[1] = authStore3(hasOwnProperty, obj4);
   const obj8 = { style: tmp.headerBorder };
-  items[2] = authStore3(hasOwnProperty, obj8);
-  return authStore4(SafeAreaPaddingView, obj);
+  items[2] = gesture(hasOwnProperty, obj8);
+  return authStore3(SafeAreaPaddingView, obj);
 });
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/icymi/native/ICYMI.tsx");
@@ -496,7 +496,7 @@ export function ICYMITab(route) {
   }, items1);
   const tmp11 = tmp6 ? closure_5 : react.Fragment;
   const tmpResult = AppFreezerDefault;
-  const ICYMIContextProvider = tmp4(18972).ICYMIContextProvider;
+  const ICYMIContextProvider = tmp4(19287).ICYMIContextProvider;
   const tmp14 = closure_16;
   if (tmp6) {
     obj3 = { style: memo };
@@ -510,7 +510,7 @@ export function ICYMITab(route) {
   const merged = Object.assign(obj3);
   items2 = [closure_14(ThemedGradientDefault, { absolute: true }), ];
   const obj7 = { gradient: tmp3, children: closure_14(ICYMI, { inNestedNavigator }, "" + stateFromStores) };
-  const ThemeContextProvider = tmp4(5231).ThemeContextProvider;
+  const ThemeContextProvider = tmp4(5367).ThemeContextProvider;
   items2[1] = closure_14(ThemeContextProvider, obj7);
   return closure_14(tmpResult, obj4);
 }

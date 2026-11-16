@@ -1,12 +1,12 @@
-// Module ID: 16060
-// Function ID: 16061
+// Module ID: 16332
+// Function ID: 16333
 // Name: GuildRoleSubscriptionsExperimentUtils
-// Dependencies: [5041, 1072, 563, 2]
+// Dependencies: [5177, 1072, 563, 2]
 // Exports: hasEnabledMonetization, isGuildEligibleForTierTemplates, useGuildEligibleForTierTemplates
 
-// Module 16060 (GuildRoleSubscriptionsExperimentUtils)
+// Module 16332 (GuildRoleSubscriptionsExperimentUtils)
 import Constants from "Constants" /* 1072 */;
-import GuildStore from "GuildStore" /* 5041 */;
+import GuildStore from "GuildStore" /* 5177 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

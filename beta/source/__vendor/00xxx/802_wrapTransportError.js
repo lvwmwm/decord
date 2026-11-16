@@ -177,7 +177,7 @@ export function wrapTransportSend(send, arg1) {
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "ulw" };
             }
           } else {
             try {
@@ -196,7 +196,7 @@ export function wrapTransportSend(send, arg1) {
                   _self = undefined;
                   c6 = 1;
                   c7 = 1;
-                  return { value: "flexDirection", done: true };
+                  return { value: "Path", done: true };
                 }
               } else {
                 if (1 === tmp4) {

@@ -1,14 +1,13 @@
-// Module ID: 13962
-// Function ID: 13963
+// Module ID: 14546
+// Function ID: 14547
 // Name: useFinalizeTraitTabItems
-// Dependencies: [32, 19, 13699, 6598, 504, 6276, 6275, 2]
-// Exports: default, useFinalizeMoreTabOption
+// Dependencies: [19, 14253, 6734, 504, 6412, 6411, 2]
+// Exports: default
 
-// Module 13962 (useFinalizeTraitTabItems)
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6598 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+// Module 14546 (useFinalizeTraitTabItems)
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6734 */;
 import react from "react" /* 19 */;
-import CheckpointStore from "CheckpointStore" /* 13699 */;
+import CheckpointStore from "CheckpointStore" /* 14253 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -25,18 +24,18 @@ export default function useFinalizeTraitTabItems(arg0, arg1) {
   items = [CheckpointStore];
   const obj = require("get initialized");
   const stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
-    const tmp3 = CheckpointStore.selectedCharacterTraits[closure_0(undefined, closure_1[5]).CheckpointTrait.OUTFIT];
+    const tmp3 = CheckpointStore.selectedCharacterTraits[closure_0(undefined, closure_1[4]).CheckpointTrait.OUTFIT];
     if (null != tmp3) {
       let found;
-      const tmpResult = closure_0(closure_1[6]);
-      if (!tmpResult.isTraitNoneOptionId(closure_0(closure_1[5]).CheckpointTrait.OUTFIT, tmp3)) {
+      const tmpResult = closure_0(closure_1[5]);
+      if (!tmpResult.isTraitNoneOptionId(closure_0(closure_1[4]).CheckpointTrait.OUTFIT, tmp3)) {
         found = items;
       }
       return found;
     }
-    found = items.filter((item) => item !== closure_1_0(closure_1_1[3]).CheckpointCustomizationOption.OUTFIT_COLOR);
+    found = items.filter((item) => item !== closure_1_0(closure_1_1[2]).CheckpointCustomizationOption.OUTFIT_COLOR);
   });
-  let tmp3 = arg0 === require("CheckpointCustomizationUtils").CheckpointCustomizationOption.OUTFIT_COLOR && !stateFromStoresArray.includes(tmp(6598).CheckpointCustomizationOption.OUTFIT_COLOR);
+  let tmp3 = arg0 === require("CheckpointCustomizationUtils").CheckpointCustomizationOption.OUTFIT_COLOR && !stateFromStoresArray.includes(tmp(6734).CheckpointCustomizationOption.OUTFIT_COLOR);
   dependencyMap = tmp3;
   const items1 = [tmp3, arg1];
   const effect = react.useEffect(() => {
@@ -48,18 +47,3 @@ export default function useFinalizeTraitTabItems(arg0, arg1) {
   return stateFromStoresArray;
 };
 export const FINALIZE_TRAIT_TAB_ITEMS = items;
-export function useFinalizeMoreTabOption(activeCustomizationOption) {
-  let moreTabOption;
-  let tmp5;
-  const hasItem = items.includes(activeCustomizationOption);
-  const isMoreMenuActive = !hasItem;
-  [moreTabOption, tmp5] = react.useState(null);
-  let tmp6 = isMoreMenuActive;
-  if (!hasItem) {
-    tmp6 = moreTabOption !== activeCustomizationOption;
-  }
-  if (tmp6) {
-    tmp5(activeCustomizationOption);
-  }
-  return { isMoreMenuActive, moreTabOption };
-}

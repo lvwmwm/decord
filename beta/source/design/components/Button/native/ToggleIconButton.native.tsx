@@ -1,17 +1,17 @@
-// Module ID: 13015
-// Function ID: 13016
+// Module ID: 13762
+// Function ID: 13763
 // Name: ToggleIconButton
-// Dependencies: [19, 21, 13016, 8132, 2]
+// Dependencies: [19, 21, 13763, 7448, 2]
 // Exports: ToggleIconButton
 
-// Module 13015 (ToggleIconButton)
+// Module 13762 (ToggleIconButton)
 import Fragment from "Fragment" /* 21 */;
-import useToggleButtonProps from "useToggleButtonProps" /* 13016 */;
+import useToggleButtonProps from "useToggleButtonProps" /* 13763 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
-const BaseIconButton2 = tmp2(8132);
+const BaseIconButton2 = tmp2(7448);
 const jsx = Fragment.jsx;
 let closure_3 = { default: { off: "toggle-icon-default-off", on: "toggle-icon-default-on" }, critical: { off: "toggle-icon-critical-off", on: "toggle-icon-critical-on" }, "icon-only": { off: "toggle-icon-only-off", on: "toggle-icon-only-on" } };
 const result = size.fileFinishedImporting("design/components/Button/native/ToggleIconButton.native.tsx");

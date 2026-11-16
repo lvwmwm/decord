@@ -1,14 +1,14 @@
-// Module ID: 10442
-// Function ID: 10443
+// Module ID: 11378
+// Function ID: 11379
 // Name: openStickersPremiumUpsellAlert
-// Dependencies: [5, 19, 1072, 21, 1252, 7528, 6621, 6123, 10443, 2118, 2]
+// Dependencies: [5, 19, 1072, 21, 1256, 7272, 6757, 6259, 11379, 2121, 2]
 // Exports: default
 
-// Module 10442 (openStickersPremiumUpsellAlert)
+// Module 11378 (openStickersPremiumUpsellAlert)
 import Fragment from "Fragment" /* 21 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6621 */;
-import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 7528 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6757 */;
+import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 7272 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
@@ -33,7 +33,7 @@ let obj = function _openStickersPremiumUpsellAlert() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -85,7 +85,7 @@ let obj = function _openStickersPremiumUpsellAlert() {
             };
             obj.openLazy(obj8);
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } catch (tmp10) {
           c4 = 3;

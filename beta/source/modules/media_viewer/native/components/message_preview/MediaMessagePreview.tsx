@@ -1,32 +1,32 @@
-// Module ID: 15048
-// Function ID: 15049
+// Module ID: 15212
+// Function ID: 15213
 // Name: MediaMessagePreview
-// Dependencies: [32, 19, 17, 7555, 6951, 5019, 6226, 9042, 1072, 21, 8481, 8814, 5170, 8974, 10040, 1652, 1705, 575, 15049, 504, 11309, 1113, 11, 15050, 10338, 10049, 8509, 10334, 5452, 13591, 10274, 5917, 2]
+// Dependencies: [32, 19, 17, 8867, 7037, 5155, 6362, 10228, 1072, 21, 9159, 11069, 5306, 10195, 11065, 1655, 1708, 575, 15213, 504, 11899, 1113, 11, 15214, 12463, 11864, 8863, 12504, 5588, 14196, 12586, 6053, 2]
 // Exports: default
 
-// Module 15048 (MediaMessagePreview)
+// Module 15212 (MediaMessagePreview)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5452 */;
-import RowGeneratorDefault from "RowGenerator" /* 8481 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 8814 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 10049 */;
-import handleMessagesTapLink from "handleMessagesTapLink" /* 10274 */;
-import MessageDataSnowflakeUtils from "MessageDataSnowflakeUtils" /* 10338 */;
-import showMediaMessagePreviewActionSheetDefault from "showMediaMessagePreviewActionSheet" /* 15050 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5588 */;
+import RowGeneratorDefault from "RowGenerator" /* 9159 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 11069 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 11864 */;
+import MessageDataSnowflakeUtils from "MessageDataSnowflakeUtils" /* 12463 */;
+import handleMessagesTapLink from "handleMessagesTapLink" /* 12586 */;
+import showMediaMessagePreviewActionSheetDefault from "showMediaMessagePreviewActionSheet" /* 15214 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ForumPostMessagesStore from "ForumPostMessagesStore" /* 7555 */;
-import SearchMessageStore from "SearchMessageStore" /* 6951 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import MessageStore from "MessageStore" /* 6226 */;
-import MessagePreviewStore from "MessagePreviewStore" /* 9042 */;
+import ForumPostMessagesStore from "ForumPostMessagesStore" /* 8867 */;
+import SearchMessageStore from "SearchMessageStore" /* 7037 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import MessageStore from "MessageStore" /* 6362 */;
+import MessagePreviewStore from "MessagePreviewStore" /* 10228 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let flag, rowGenerator;
@@ -37,7 +37,7 @@ let hasOwnProperty;
 let map1;
 let metroRequire;
 let tmp5;
-const _mod1705 = tmp5(1705);
+const _mod1708 = tmp5(1708);
 function MeasureMessage(message) {
   let closure_4;
   let items1;
@@ -105,7 +105,7 @@ function MeasureMessageAfterEntrance(entranceAnimationDriver) {
   let c0;
   [tmp8, tmp9] = items;
   const tmp2 = _slicedToArray(react.useState(false), 2);
-  const tmp7 = _mod1652;
+  const tmp7 = _mod1655;
   class MediaMessagePreviewTsx1 {
     constructor() {
       return closure_0.get() >= 1;
@@ -117,7 +117,7 @@ function MeasureMessageAfterEntrance(entranceAnimationDriver) {
   MediaMessagePreviewTsx1.__initData = tmp8;
   const items2 = [closure_20, , ];
   const useAnimatedReaction = tmp7.useAnimatedReaction;
-  items2[1] = _mod1705.scheduleOnRN;
+  items2[1] = _mod1708.scheduleOnRN;
   items2[2] = tmp4;
   c0 = undefined;
   let c1;
@@ -314,7 +314,7 @@ export default function MediaMessagePreview(channelId) {
           const merged = Object.assign(reaction);
           tmp7 = obj;
         }
-        const result = handleAddOrRemoveReaction(tmp6, channel, tmp7, isBurst, tmp3(8509).ReactionLocations.MOBILE_MEDIA_VIEWER);
+        const result = handleAddOrRemoveReaction(tmp6, channel, tmp7, isBurst, tmp3(8863).ReactionLocations.MOBILE_MEDIA_VIEWER);
       }
     }
   }, items7);

@@ -1,15 +1,15 @@
-// Module ID: 15447
-// Function ID: 15448
+// Module ID: 15591
+// Function ID: 15592
 // Name: GamePartyStore
-// Dependencies: [502, 5112, 6657, 1072, 12, 504, 572, 2]
+// Dependencies: [502, 5248, 7316, 1072, 12, 504, 572, 2]
 
-// Module 15447 (GamePartyStore)
+// Module 15591 (GamePartyStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RelationshipStore from "RelationshipStore" /* 5112 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6657 */;
+import RelationshipStore from "RelationshipStore" /* 5248 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 7316 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

@@ -1,18 +1,18 @@
-// Module ID: 15177
-// Function ID: 15178
+// Module ID: 15777
+// Function ID: 15778
 // Name: UserProfileEditNote
-// Dependencies: [32, 19, 17, 1072, 21, 5170, 1499, 15173, 15178, 7097, 11579, 7663, 1113, 5783, 7349, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5306, 1502, 15773, 15778, 7493, 15462, 7427, 1113, 5919, 7859, 2]
 // Exports: default
 
-// Module 15177 (UserProfileEditNote)
+// Module 15777 (UserProfileEditNote)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
-import NavigatorHeader from "NavigatorHeader" /* 7097 */;
-import NoteActionCreatorsDefault from "NoteActionCreators" /* 15178 */;
+import NavigatorHeader from "NavigatorHeader" /* 7493 */;
+import NoteActionCreatorsDefault from "NoteActionCreators" /* 15778 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let navigation;

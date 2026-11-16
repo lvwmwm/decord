@@ -1,12 +1,12 @@
-// Module ID: 19672
-// Function ID: 19673
+// Module ID: 20000
+// Function ID: 20001
 // Name: activityPlatformToConnectedAccountType
-// Dependencies: [1072, 9861, 2]
+// Dependencies: [1072, 7472, 2]
 // Exports: default
 
-// Module 19672 (activityPlatformToConnectedAccountType)
+// Module 20000 (activityPlatformToConnectedAccountType)
 import Constants from "Constants" /* 1072 */;
-import ActivityGamePlatforms from "ActivityGamePlatforms" /* 9861 */;
+import ActivityGamePlatforms from "ActivityGamePlatforms" /* 7472 */;
 import size from "module_2" /* 2 */;
 
 const PlatformTypes = Constants.PlatformTypes;

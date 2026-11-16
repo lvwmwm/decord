@@ -1,16 +1,16 @@
-// Module ID: 12708
-// Function ID: 12709
+// Module ID: 13477
+// Function ID: 13478
 // Name: useIsPrimaryEntryPointDisabled
-// Dependencies: [2140, 11942, 12619, 9073, 5838, 1377, 1113, 2]
+// Dependencies: [2143, 12778, 13389, 7864, 5974, 1380, 1113, 2]
 // Exports: default
 
-// Module 12708 (useIsPrimaryEntryPointDisabled)
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import getPlatformDefault from "getPlatform" /* 5838 */;
-import ActivitiesInTextUtils from "ActivitiesInTextUtils" /* 9073 */;
-import getEmbeddedActivityLaunchability from "getEmbeddedActivityLaunchability" /* 11942 */;
-import useActivityShelfItem from "useActivityShelfItem" /* 12619 */;
-import ApplicationRecord from "ApplicationRecord" /* 2140 */;
+// Module 13477 (useIsPrimaryEntryPointDisabled)
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import getPlatformDefault from "getPlatform" /* 5974 */;
+import ActivitiesInTextUtils from "ActivitiesInTextUtils" /* 7864 */;
+import getEmbeddedActivityLaunchability from "getEmbeddedActivityLaunchability" /* 12778 */;
+import useActivityShelfItem from "useActivityShelfItem" /* 13389 */;
+import ApplicationRecord from "ApplicationRecord" /* 2143 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/app_launcher/hooks/useIsPrimaryEntryPointDisabled.tsx");
@@ -61,7 +61,7 @@ export default function useIsPrimaryEntryPointDisabled(arg0) {
           isGuildVoiceResult1 = channel.isGuildVoice();
         }
         if (isGuildVoiceResult1) {
-          flag = embeddedActivityLaunchability !== tmp2(11942).EmbeddedActivityLaunchability.CAN_LAUNCH;
+          flag = embeddedActivityLaunchability !== tmp2(12778).EmbeddedActivityLaunchability.CAN_LAUNCH;
         } else {
           flag = false;
           const tmp2Result3 = ActivitiesInTextUtils;

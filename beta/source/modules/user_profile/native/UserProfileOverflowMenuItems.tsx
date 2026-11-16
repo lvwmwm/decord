@@ -1,26 +1,26 @@
-// Module ID: 15094
-// Function ID: 15095
+// Module ID: 15691
+// Function ID: 15692
 // Name: UserProfileOverflowMenuItems
-// Dependencies: [1072, 11458, 1113, 7585, 5406, 11460, 2118, 1260, 7601, 11459, 15095, 15095, 8455, 1377, 12585, 1252, 7451, 5868, 5226, 7457, 2]
+// Dependencies: [1072, 12054, 1113, 8137, 5542, 12056, 2121, 1264, 6905, 12055, 15692, 15692, 12063, 1380, 12123, 1256, 7943, 6004, 5362, 7949, 2]
 // Exports: getBlockMenuItem, getDeveloperCopyMenuItem, getIgnoreMenuItem, getReportMenuItem
 
-// Module 15094 (UserProfileOverflowMenuItems)
+// Module 15691 (UserProfileOverflowMenuItems)
 import intl6 from "intl" /* 1113 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import asyncRequire from "asyncRequire" /* 2118 */;
-import UserUtilsDefault from "UserUtils" /* 5226 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
-import ToastUtils from "ToastUtils" /* 5868 */;
-import ClipboardUtils from "ClipboardUtils" /* 7451 */;
-import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7457 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7585 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7601 */;
-import ReportModals from "ReportModals" /* 8455 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12585 */;
-import BotReportChooser from "BotReportChooser" /* 15095 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
+import asyncRequire from "asyncRequire" /* 2121 */;
+import UserUtilsDefault from "UserUtils" /* 5362 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import ToastUtils from "ToastUtils" /* 6004 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 6905 */;
+import ClipboardUtils from "ClipboardUtils" /* 7943 */;
+import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7949 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 8137 */;
+import ReportModals from "ReportModals" /* 12063 */;
+import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12123 */;
+import BotReportChooser from "BotReportChooser" /* 15692 */;
 import Constants from "Constants" /* 1072 */;
-import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 11458 */;
+import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 12054 */;
 import size from "module_2" /* 2 */;
 
 let avatarURL;
@@ -64,7 +64,7 @@ export function getIgnoreMenuItem(arg0, isBlocked) {
       obj.action = function action() {
         const openLazy = ActionSheetActionCreatorsDefault.openLazy;
         ActionSheetActionCreatorsDefault;
-        const tmp2 = asyncRequire(11460, dependencyMap.paths);
+        const tmp2 = asyncRequire(12056, dependencyMap.paths);
         let obj = {
           userId: require.id,
           channelId: importDefault,
@@ -122,7 +122,7 @@ export function getBlockMenuItem(arg0, isBlocked) {
       action() {
           const openLazy = ActionSheetActionCreatorsDefault.openLazy;
           ActionSheetActionCreatorsDefault;
-          const tmp2 = asyncRequire(11459, dependencyMap.paths);
+          const tmp2 = asyncRequire(12055, dependencyMap.paths);
           let obj = {
             userId: require.id,
             channelId: importDefault,
@@ -171,7 +171,7 @@ export function getReportMenuItem(user, isInIarUserReportingExperiment) {
           if (user.bot) {
             const openLazy = ActionSheetActionCreatorsDefault.openLazy;
             const obj4 = { user, entrypoint, contextualGuildId: tmp3, contextualChannelId: importDefault };
-            const tmp19 = asyncRequire(15095, dependencyMap.paths);
+            const tmp19 = asyncRequire(15692, dependencyMap.paths);
             openLazy(tmp19, BotReportChooser.BOT_REPORT_CHOOSER_KEY, obj4, "replaceAll");
           } else {
             const obj2 = ReportModals;
@@ -184,7 +184,7 @@ export function getReportMenuItem(user, isInIarUserReportingExperiment) {
     tmp3 = obj;
   } else {
     tmp3 = null;
-    const tmpResult = user(1377);
+    const tmpResult = user(1380);
     if (tmpResult.isAndroid()) {
       let obj2 = {
         label: intl.string(tmp(1113).t.TbHyMG),
@@ -296,7 +296,7 @@ export function getDeveloperCopyMenuItem(arg0, isTidaRegion) {
       }
       const obj6 = { options: items, key: "copy-info", header: obj7, stackingBehavior: "stack", hasIcons: false };
       obj7 = { title: intl5.string(intl6.t.QvQeLv) };
-      const showSimpleActionSheet = tmp(7457).showSimpleActionSheet;
+      const showSimpleActionSheet = tmp(7949).showSimpleActionSheet;
       Sheet_showSimpleActionSheet;
       intl5 = tmp(1113).intl;
       let result = showSimpleActionSheet(obj6);

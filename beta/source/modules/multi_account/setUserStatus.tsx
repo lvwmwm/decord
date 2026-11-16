@@ -1,14 +1,14 @@
-// Module ID: 11181
-// Function ID: 11182
+// Module ID: 11022
+// Function ID: 11023
 // Name: setUserStatus
-// Dependencies: [5, 7380, 6657, 1072, 5226, 1113, 11182, 5000, 1227, 5178, 1252, 2]
+// Dependencies: [5, 7879, 7316, 1072, 5362, 1113, 11023, 5136, 1227, 5314, 1256, 2]
 // Exports: default
 
-// Module 11181 (setUserStatus)
+// Module 11022 (setUserStatus)
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LastMentionTimestampStore from "LastMentionTimestampStore" /* 7380 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6657 */;
+import LastMentionTimestampStore from "LastMentionTimestampStore" /* 7879 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 7316 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, prev_status, statusCreatedAtMs;
@@ -109,7 +109,7 @@ let obj = function _setUserStatus() {
       if (disableTracking === undefined) {
         disableTracking = false;
       }
-      return "flexDirection";
+      return "Path";
     })();
     iter.next();
     return iter;

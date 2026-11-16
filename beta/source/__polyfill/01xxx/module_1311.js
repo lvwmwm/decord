@@ -4,4 +4,4 @@
 
 // Module 1311
 
-export default EvalError;
+export default Function.prototype.call;

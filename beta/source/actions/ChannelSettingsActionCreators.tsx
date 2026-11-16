@@ -1,16 +1,16 @@
-// Module ID: 8301
-// Function ID: 8302
+// Module ID: 10919
+// Function ID: 10920
 // Name: ChannelSettingsActionCreators
-// Dependencies: [5, 8302, 5019, 1072, 572, 5347, 8304, 1282, 7603, 2]
+// Dependencies: [5, 10915, 5155, 1072, 572, 5483, 8864, 1285, 8127, 2]
 // Exports: deleteChannel, init, open, removeLinkedLobby, saveChannel, selectPermissionOverwrite, setSection, updateChannel, updateVoiceChannelStatus
 
-// Module 8301 (ChannelSettingsActionCreators)
+// Module 10919 (ChannelSettingsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import RootNavigationRef from "RootNavigationRef" /* 5347 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
+import RootNavigationRef from "RootNavigationRef" /* 5483 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelSettingsStore from "ChannelSettingsStore" /* 8302 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
+import ChannelSettingsStore from "ChannelSettingsStore" /* 10915 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -138,7 +138,7 @@ let obj = function _saveChannel() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -184,7 +184,7 @@ let obj = function _saveChannel() {
               channel = undefined;
               topic = 1;
               bitrate = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "Path", done: true };
             }
           } else if (1 === topic) {
             if (arg0 === 1) {
@@ -317,7 +317,7 @@ obj = function _deleteChannel() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       try {
@@ -374,7 +374,7 @@ obj = function _deleteChannel() {
           }
           closure_130_8();
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } catch (tmp21) {
         c4 = 3;

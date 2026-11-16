@@ -1,25 +1,25 @@
-// Module ID: 15638
-// Function ID: 15639
+// Module ID: 15297
+// Function ID: 15298
 // Name: ReferralProgramShareActionSheet
-// Dependencies: [5, 32, 19, 17, 1385, 7741, 1072, 21, 5170, 575, 504, 15639, 38, 1380, 10881, 15640, 1113, 5179, 15641, 7420, 7445, 1252, 7742, 5406, 15642, 2118, 5868, 7415, 5783, 5874, 15647, 15648, 10882, 7048, 5790, 5420, 9175, 10884, 2]
+// Dependencies: [5, 32, 19, 17, 1388, 9293, 1072, 21, 5306, 575, 504, 15298, 38, 1255, 11785, 15299, 1113, 5315, 15300, 7918, 7937, 1256, 9294, 5542, 15301, 2121, 6004, 7913, 5919, 6010, 15306, 15307, 11786, 7418, 5926, 5556, 8177, 10577, 2]
 // Exports: default
 
-// Module 15638 (ReferralProgramShareActionSheet)
+// Module 15297 (ReferralProgramShareActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl8 from "intl" /* 1113 */;
-import GlobalUtils from "GlobalUtils" /* 1380 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5179 */;
-import makeUserListPillDataDefault from "makeUserListPillData" /* 10881 */;
-import ReferralProgramShareActionSheetUtils from "ReferralProgramShareActionSheetUtils" /* 15641 */;
+import GlobalUtils from "GlobalUtils" /* 1255 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5315 */;
+import makeUserListPillDataDefault from "makeUserListPillData" /* 11785 */;
+import ReferralProgramShareActionSheetUtils from "ReferralProgramShareActionSheetUtils" /* 15300 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import UserStore from "UserStore" /* 1385 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 7741 */;
+import UserStore from "UserStore" /* 1388 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 9293 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_2, trialCreationResult, v3;
@@ -202,7 +202,7 @@ export default function ReferralProgramShareActionSheet(actionSheetKey) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -252,7 +252,7 @@ export default function ReferralProgramShareActionSheet(actionSheetKey) {
               c3 = 0;
             }
             v3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } catch (tmp16) {
           if (0 === c3) {

@@ -1,45 +1,71 @@
-// Module ID: 15886
-// Function ID: 15887
+// Module ID: 16159
+// Function ID: 16160
 // Name: LocalVoiceStateManager
-// Dependencies: [5019, 2130, 6024, 1072, 15884, 4995, 1403, 15526, 2]
+// Dependencies: [6791, 502, 5155, 2133, 6160, 1072, 6793, 16157, 5131, 1406, 16108, 6798, 2]
 
-// Module 15886 (LocalVoiceStateManager)
-import FlagUtils from "FlagUtils" /* 1403 */;
-import UserSettings from "UserSettings" /* 4995 */;
-import isClipsEnabled from "isClipsEnabled" /* 15526 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import MediaEngineStore from "MediaEngineStore" /* 2130 */;
-import RTCRegionStore from "RTCRegionStore" /* 6024 */;
+// Module 16159 (LocalVoiceStateManager)
+import FlagUtils from "FlagUtils" /* 1406 */;
+import UserSettings from "UserSettings" /* 5131 */;
+import Constants2 from "Constants" /* 6793 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6798 */;
+import isClipsEnabled from "isClipsEnabled" /* 16108 */;
+import PassTheControllerStore from "PassTheControllerStore" /* 6791 */;
+import AuthenticationStore from "AuthenticationStore" /* 502 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import MediaEngineStore from "MediaEngineStore" /* 2133 */;
+import RTCRegionStore from "RTCRegionStore" /* 6160 */;
 import Constants from "Constants" /* 1072 */;
-import StateManager from "StateManager" /* 15884 */;
+import StateManager from "StateManager" /* 16157 */;
 import size from "module_2" /* 2 */;
 
-let hasOwnProperty;
-let metroRequire;
-({ ChannelTypes: hasOwnProperty, VoiceFlags: metroRequire } = Constants);
+let metroImportAll;
+let metroImportDefault;
+({ ChannelTypes: metroImportDefault, VoiceFlags: metroImportAll } = Constants);
+const StreamTypes = Constants2.StreamTypes;
 class LocalVoiceStateManager extends StateManager {
   constructor(socket) {
     const tmp = new LocalVoiceStateManager(new.target);
     tmp.socket = socket;
     return tmp;
   }
-  computeVoiceFlags() {
+  computeVoiceFlags(guildId, channelId) {
     const ClipsAllowVoiceRecording = UserSettings.ClipsAllowVoiceRecording;
     const setting = ClipsAllowVoiceRecording.getSetting();
     const obj = FlagUtils;
-    const setFlagResult = obj.setFlag(0, metroRequire.ALLOW_VOICE_RECORDING, setting);
+    const setFlagResult = obj.setFlag(0, metroImportAll.ALLOW_VOICE_RECORDING, setting);
     const setFlag = FlagUtils.setFlag;
-    const CLIPS_ENABLED = metroRequire.CLIPS_ENABLED;
+    const CLIPS_ENABLED = metroImportAll.CLIPS_ENABLED;
     FlagUtils;
     const obj2 = isClipsEnabled;
-    return setFlag(setFlagResult, CLIPS_ENABLED, obj2.isClipsEnabled());
+    let result = null != channelId;
+    const setFlagResult1 = setFlag(setFlagResult, CLIPS_ENABLED, obj2.isClipsEnabled());
+    const setFlag2 = FlagUtils.setFlag;
+    const PASS_THE_CONTROLLER_HOST = metroImportAll.PASS_THE_CONTROLLER_HOST;
+    FlagUtils;
+    if (result) {
+      let CALL;
+      const isSelfPassingController = PassTheControllerStore.isSelfPassingController;
+      const encodeStreamKey = tmp(6798).encodeStreamKey;
+      StreamKeyUtils;
+      if (null != guildId) {
+        CALL = StreamTypes.GUILD;
+      } else {
+        CALL = StreamTypes.CALL;
+      }
+      const obj3 = { streamType: CALL, guildId, channelId, ownerId: AuthenticationStore.getId() };
+      result = isSelfPassingController(encodeStreamKey(obj3));
+    }
+    return setFlag2(setFlagResult1, PASS_THE_CONTROLLER_HOST, result);
   }
   getInitialState() {
     const obj = { guildId: null, channelId: null, selfMute: MediaEngineStore.isSelfMute(), selfDeaf: MediaEngineStore.isSelfDeaf(), selfVideo: MediaEngineStore.isVideoEnabled(), preferredRegion: null, preferredRegions: null, videoStreamParameters: null, flags: 0 };
     return obj;
   }
-  getNextState(guildId) {
-    const obj = { guildId: guildId.guildId, channelId: guildId.channelId, selfMute: MediaEngineStore.isSelfMute(), selfDeaf: MediaEngineStore.isSelfDeaf(), selfVideo: MediaEngineStore.isVideoEnabled(), preferredRegion: RTCRegionStore.getPreferredRegion(), preferredRegions: RTCRegionStore.getPreferredRegions(), videoStreamParameters: MediaEngineStore.getVideoStreamParameters(), flags: this.computeVoiceFlags() };
+  getNextState(arg0) {
+    let channelId;
+    let guildId;
+    ({ guildId, channelId } = arg0);
+    const obj = { guildId, channelId, selfMute: MediaEngineStore.isSelfMute(), selfDeaf: MediaEngineStore.isSelfDeaf(), selfVideo: MediaEngineStore.isVideoEnabled(), preferredRegion: RTCRegionStore.getPreferredRegion(), preferredRegions: RTCRegionStore.getPreferredRegions(), videoStreamParameters: MediaEngineStore.getVideoStreamParameters(), flags: this.computeVoiceFlags(guildId, channelId) };
     return obj;
   }
   shouldCommit() {
@@ -67,7 +93,7 @@ class LocalVoiceStateManager extends StateManager {
       if (channel != null) {
         type = channel.type;
       }
-      if (type === hasOwnProperty.GUILD_STAGE_VOICE) {
+      if (type === metroImportDefault.GUILD_STAGE_VOICE) {
         const socket2 = self.socket;
         const obj = { guildId, channelId, selfMute, selfDeaf, selfVideo, preferredRegion, preferredRegions, videoStreamParameters, flags };
         socket2.voiceStateUpdate(obj);
@@ -90,6 +116,6 @@ Object.defineProperty(prototype, "channelId", {
   },
   set: undefined
 });
-const result = size.fileFinishedImporting("modules/gateway/LocalVoiceStateManager.tsx");
+let result = size.fileFinishedImporting("modules/gateway/LocalVoiceStateManager.tsx");
 
 export default LocalVoiceStateManager;

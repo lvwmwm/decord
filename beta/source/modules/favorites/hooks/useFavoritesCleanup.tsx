@@ -1,14 +1,14 @@
-// Module ID: 18570
-// Function ID: 18571
+// Module ID: 18861
+// Function ID: 18862
 // Name: useFavoritesCleanup
-// Dependencies: [5, 32, 19, 5022, 504, 10982, 2]
+// Dependencies: [5, 32, 19, 5158, 504, 10944, 2]
 // Exports: default
 
-// Module 18570 (useFavoritesCleanup)
+// Module 18861 (useFavoritesCleanup)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import FavoriteStore from "FavoriteStore" /* 5022 */;
+import FavoriteStore from "FavoriteStore" /* 5158 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -47,7 +47,7 @@ export default function useFavoritesCleanup(arg0) {
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         let c3;
@@ -118,7 +118,7 @@ export default function useFavoritesCleanup(arg0) {
             }
           }
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         } catch (tmp48) {
           closure_2 = tmp48;
           if (0 === c3) {

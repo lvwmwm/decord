@@ -1,12 +1,12 @@
-// Module ID: 17254
-// Function ID: 17255
-// Dependencies: [19, 15969, 504, 15971, 2]
+// Module ID: 17531
+// Function ID: 17532
+// Dependencies: [19, 16242, 504, 16244, 2]
 // Exports: useFetchOrbChallenges, useOrbChallengeUnreadState
 
-// Module 17254
-import OrbChallengeActionCreators from "OrbChallengeActionCreators" /* 15971 */;
+// Module 17531
+import OrbChallengeActionCreators from "OrbChallengeActionCreators" /* 16244 */;
 import react from "react" /* 19 */;
-import OrbChallengesStore from "OrbChallengesStore" /* 15969 */;
+import OrbChallengesStore from "OrbChallengesStore" /* 16242 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,17 +1,17 @@
-// Module ID: 12408
-// Function ID: 12409
+// Module ID: 13299
+// Function ID: 13300
 // Name: useConjurePreviewMenu
-// Dependencies: [19, 11021, 12409, 12413, 5868, 504, 12379, 12414, 1113, 4026, 2]
+// Dependencies: [19, 7379, 12273, 13300, 6004, 504, 13268, 13301, 1113, 4131, 2]
 // Exports: default
 
-// Module 12408 (useConjurePreviewMenu)
+// Module 13299 (useConjurePreviewMenu)
 import intl2 from "intl" /* 1113 */;
-import _modDef4026 from "module_4026" /* 4026 */;
-import ToastUtils from "ToastUtils" /* 5868 */;
-import conjureExternalConnections from "conjureExternalConnections" /* 12379 */;
-import conjureProjectMenuItems from "conjureProjectMenuItems" /* 12414 */;
+import _modDef4131 from "module_4131" /* 4131 */;
+import ToastUtils from "ToastUtils" /* 6004 */;
+import conjureExternalConnections from "conjureExternalConnections" /* 13268 */;
+import conjureProjectMenuItems from "conjureProjectMenuItems" /* 13301 */;
 import react from "react" /* 19 */;
-import ConjureSettingsStore from "ConjureSettingsStore" /* 11021 */;
+import ConjureSettingsStore from "ConjureSettingsStore" /* 7379 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/preview/native/useConjurePreviewMenu.tsx");
@@ -54,7 +54,7 @@ export default function useConjurePreviewMenu(projectId) {
           const presentError = ToastUtils.presentError;
           ToastUtils;
           const intl = intl2.intl;
-          presentError(intl.string(_modDef4026["jCQ/1B"]));
+          presentError(intl.string(_modDef4131["jCQ/1B"]));
         }
       }
     } else {

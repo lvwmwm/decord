@@ -1,24 +1,24 @@
-// Module ID: 10336
-// Function ID: 10337
+// Module ID: 11999
+// Function ID: 12000
 // Name: SummaryActionCreators
-// Dependencies: [5, 19, 6655, 5019, 10275, 1072, 1089, 572, 1282, 6611, 12, 10277, 563, 2]
+// Dependencies: [5, 19, 6790, 5155, 12000, 1072, 1089, 572, 1285, 6747, 12, 12002, 563, 2]
 // Exports: deleteSummary, fetchSummaries, setHighlightedSummary, setSelectedSummary, setSummaryFeedback, stopPolling, toggleTopicsBar, updateVisibleMessages, useChannelSummaries, useMaybeFetchChannelAffinitiesAndSummaries
 
-// Module 10336 (SummaryActionCreators)
+// Module 11999 (SummaryActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6655 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import SummaryStore from "SummaryStore" /* 10275 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6790 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import SummaryStore from "SummaryStore" /* 12000 */;
 import size from "module_2" /* 2 */;
 
 let channel, closure_3;
 
-const f98206 = () => connected.isConnected();
+const f103726 = () => connected.isConnected();
 function fetchSummary() {
   return obj(...arguments);
 }
@@ -37,7 +37,7 @@ let obj = function _fetchSummary() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -103,7 +103,7 @@ let obj = function _fetchSummary() {
             dispatch(obj8);
           }
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         } catch (tmp34) {
           body = tmp34;
           if (0 === c5) {
@@ -136,7 +136,7 @@ obj = function _fetchSummaries() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -224,7 +224,7 @@ obj = function _fetchSummaries() {
             dispatch(obj9);
           }
           c8 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         } catch (tmp42) {
           closure_5 = tmp42;
           if (0 === c6) {
@@ -298,7 +298,7 @@ obj = function _fetchChannelAffinities() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       let c4;
@@ -378,7 +378,7 @@ obj = function _fetchChannelAffinities() {
           const _Date = Date;
           dispatch(obj8);
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } catch (tmp34) {
         closure_3 = tmp34;
@@ -487,7 +487,7 @@ obj = function _fetchSummariesBulk() {
     }
     flag = obj4.useQuickSwitcher ?? true;
     flag2 = obj4.useChannelAffinities ?? true;
-    return "flexDirection";
+    return "Path";
   });
   return obj(...arguments);
 };
@@ -503,7 +503,7 @@ function useChannelSummaries(channelIds) {
   let memo;
   obj = channelIds(memo[12]);
   const items = [GatewayConnectionStore];
-  const stateFromStores = obj.useStateFromStores(items, f98206);
+  const stateFromStores = obj.useStateFromStores(items, f103726);
   const items1 = [channelIds];
   memo = react.useMemo(() => channelIds.join(","), items1);
   const items2 = [memo, stateFromStores];
@@ -524,7 +524,7 @@ function useChannelSummaries(channelIds) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } else {
           let c3;
@@ -559,7 +559,7 @@ function useChannelSummaries(channelIds) {
                   return obj5;
                 } else {
                   c4 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "ulw" };
                 }
               } else if (arg0 === 1) {
                 c4 = 3;
@@ -616,7 +616,7 @@ obj = function _deleteSummary() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -660,7 +660,7 @@ obj = function _deleteSummary() {
             obj.dispatch(obj7);
             c4 = 0;
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } catch (tmp20) {
           closure_3 = tmp20;
@@ -717,7 +717,7 @@ export function useMaybeFetchChannelAffinitiesAndSummaries() {
   let memo;
   const items1 = [GatewayConnectionStore];
   obj = items(memo[12]);
-  const stateFromStores = obj.useStateFromStores(items1, f98206);
+  const stateFromStores = obj.useStateFromStores(items1, f103726);
   const items2 = [items];
   memo = react.useMemo(() => channelIds.join(","), items2);
   const items3 = [memo, stateFromStores];
@@ -738,7 +738,7 @@ export function useMaybeFetchChannelAffinitiesAndSummaries() {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } else {
           let c3;
@@ -773,7 +773,7 @@ export function useMaybeFetchChannelAffinitiesAndSummaries() {
                   return obj5;
                 } else {
                   c4 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "ulw" };
                 }
               } else if (arg0 === 1) {
                 c4 = 3;

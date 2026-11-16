@@ -1,15 +1,15 @@
-// Module ID: 9323
-// Function ID: 9324
+// Module ID: 15928
+// Function ID: 15929
 // Name: useSelectStage
-// Dependencies: [5, 32, 19, 5019, 5073, 504, 8052, 2]
+// Dependencies: [5, 32, 19, 5155, 5209, 504, 7678, 2]
 // Exports: default
 
-// Module 9323 (useSelectStage)
+// Module 15928 (useSelectStage)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5073 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
 import size from "module_2" /* 2 */;
 
 let c3, c6, channel;
@@ -50,7 +50,7 @@ export default function useSelectStage() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       let c5;
@@ -101,7 +101,7 @@ export default function useSelectStage() {
             c5 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } catch (tmp18) {
         let closure_4 = tmp18;

@@ -1,23 +1,23 @@
-// Module ID: 7359
-// Function ID: 7360
+// Module ID: 7865
+// Function ID: 7866
 // Name: doGuildOnboarding
-// Dependencies: [32, 5, 17, 5203, 7360, 7361, 1072, 7362, 5406, 6831, 6990, 7363, 1411, 2021, 2022, 7367, 7368, 7369, 7386, 2118, 1099, 2]
+// Dependencies: [32, 5, 17, 5339, 7239, 7866, 1072, 7867, 5542, 6838, 6907, 7868, 1414, 2024, 2025, 7870, 7871, 7872, 7885, 2121, 1099, 2]
 // Exports: default, discardOnboardingPromise, isOnboardingActiveForGuild
 
-// Module 7359 (doGuildOnboarding)
+// Module 7865 (doGuildOnboarding)
 import react_native from "react-native" /* 17 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
-import react_nativeDefault from "react-native" /* 2021 */;
-import react_nativeDefault2 from "react-native" /* 2022 */;
-import asyncRequire from "asyncRequire" /* 2118 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6831 */;
-import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7361 */;
-import _mod7362 from "module_7362" /* 7362 */;
-import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 7369 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import react_nativeDefault from "react-native" /* 2024 */;
+import react_nativeDefault2 from "react-native" /* 2025 */;
+import asyncRequire from "asyncRequire" /* 2121 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
+import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7866 */;
+import _mod7867 from "module_7867" /* 7867 */;
+import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 7872 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5203 */;
-import GuildOnboardingStore from "GuildOnboardingStore" /* 7360 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
+import GuildOnboardingStore from "GuildOnboardingStore" /* 7239 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let _require, c4;
 let c10;
 let c9;
 function getBaseAnimationData() {
-  return JSON.parse(JSON.stringify(_mod7362));
+  return JSON.parse(JSON.stringify(_mod7867));
 }
 let obj = function _doGuildOnboarding() {
   obj = _asyncToGenerator(async (arg0) => {
@@ -49,7 +49,7 @@ let obj = function _doGuildOnboarding() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -69,7 +69,7 @@ let obj = function _doGuildOnboarding() {
               closure_1 = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "Path", done: true };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {
@@ -150,7 +150,7 @@ let obj = function _doGuildOnboarding() {
               return { value, done: true };
             }
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } catch (tmp41) {
           c6 = 3;
@@ -179,7 +179,7 @@ obj = function _fetchLandingAsset() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       let c3;
@@ -302,7 +302,7 @@ function openAndWaitForOnboarding(guildId) {
       landingAnimation: closure_13[guildId],
       isFirstOpen: true
     };
-    const pushLazyResult = obj.pushLazy(asyncRequire(7386, dependencyMap.paths), obj2, closure_8);
+    const pushLazyResult = obj.pushLazy(asyncRequire(7885, dependencyMap.paths), obj2, closure_8);
     pushLazyResult.then(() => {
       if (guildId.getGuildId() !== closure_1_0) {
         obj = closure_0(dependencyMap[20]);

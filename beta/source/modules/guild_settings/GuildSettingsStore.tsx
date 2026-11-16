@@ -1,32 +1,32 @@
-// Module ID: 9188
-// Function ID: 9189
+// Module ID: 8405
+// Function ID: 8406
 // Name: GuildSettingsStore
-// Dependencies: [5034, 9159, 5023, 5037, 8303, 1404, 5041, 1385, 1072, 9189, 8607, 11, 9190, 1282, 572, 9191, 5033, 9192, 2166, 9193, 504, 12, 510, 2]
+// Dependencies: [5170, 8156, 5159, 5173, 7664, 1407, 5177, 1388, 1072, 8406, 8407, 11, 8408, 1285, 572, 8411, 5169, 8412, 2169, 8413, 504, 12, 510, 2]
 
-// Module 9188 (GuildSettingsStore)
+// Module 8405 (GuildSettingsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import _modDef2166 from "module_2166" /* 2166 */;
-import ChannelRecord from "ChannelRecord" /* 5023 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 5033 */;
-import PlainRecord from "PlainRecord" /* 5034 */;
-import GuildRecord from "GuildRecord" /* 5037 */;
-import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 9189 */;
-import GuildSettingsServerTagUtils from "GuildSettingsServerTagUtils" /* 9190 */;
-import GuildSettingsVanityURLActionCreators from "GuildSettingsVanityURLActionCreators" /* 9191 */;
-import getDefaultGuildSettingsSection from "getDefaultGuildSettingsSection" /* 9192 */;
-import GuildSettingsFetchActionCreators from "GuildSettingsFetchActionCreators" /* 9193 */;
-import GuildProfileStore from "GuildProfileStore" /* 9159 */;
-import InviteRecord from "InviteRecord" /* 8303 */;
-import UserRecord from "UserRecord" /* 1404 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import UserStore from "UserStore" /* 1385 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
+import _modDef2169 from "module_2169" /* 2169 */;
+import ChannelRecord from "ChannelRecord" /* 5159 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 5169 */;
+import PlainRecord from "PlainRecord" /* 5170 */;
+import GuildRecord from "GuildRecord" /* 5173 */;
+import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 8406 */;
+import GuildSettingsServerTagUtils from "GuildSettingsServerTagUtils" /* 8408 */;
+import GuildSettingsVanityURLActionCreators from "GuildSettingsVanityURLActionCreators" /* 8411 */;
+import getDefaultGuildSettingsSection from "getDefaultGuildSettingsSection" /* 8412 */;
+import GuildSettingsFetchActionCreators from "GuildSettingsFetchActionCreators" /* 8413 */;
+import GuildProfileStore from "GuildProfileStore" /* 8156 */;
+import InviteRecord from "InviteRecord" /* 7664 */;
+import UserRecord from "UserRecord" /* 1407 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
-import PublicGuildsConstants from "PublicGuildsConstants" /* 8607 */;
+import PublicGuildsConstants from "PublicGuildsConstants" /* 8407 */;
 import size from "module_2" /* 2 */;
 
 let c11, c12, closure_56, closure_9, defaultGuildSettingsSection, map;
@@ -118,7 +118,7 @@ function _createInvite(code) {
   ({ uses: obj.uses, max_uses: obj.maxUses, max_age: obj.maxAge } = code);
   created_at = code.created_at;
   ({ flags: obj.flags, roles: obj.roles } = code);
-  tmp7 = _modDef2166;
+  tmp7 = _modDef2169;
   const tmp4 = new tmp(obj);
   return tmp4;
 }
@@ -174,7 +174,7 @@ let code = null;
 let c48 = 0;
 let NONE = MFALevels.NONE;
 let _location = null;
-let obj = { primaryCategoryId: DEFAULT_DISCOVERY_CATEGORY_ID, secondaryCategoryIds: [], keywords: [], emojiDiscoverabilityEnabled: true, partnerActionedTimestamp: null, partnerApplicationTimestamp: null, isPublished: false, reasonsToJoin: [], socialLinks: [], about: "" };
+let obj = { primaryCategoryId: DEFAULT_DISCOVERY_CATEGORY_ID, secondaryCategoryIds: [], keywords: [], emojiDiscoverabilityEnabled: true, partnerActionedTimestamp: null, partnerApplicationTimestamp: null, isPublished: false, automaticPages: false, reasonsToJoin: [], socialLinks: [], about: "" };
 let c52 = false;
 let obj2 = obj;
 let bans = null;
@@ -912,6 +912,10 @@ obj2 = {
       let flag3 = metadata.isPublished;
       if (flag3 == null) {
         flag3 = false;
+      }
+      let flag4 = metadata.automaticPages;
+      if (flag4 == null) {
+        flag4 = false;
       }
       let reasonsToJoin = metadata.reasonsToJoin;
       if (reasonsToJoin == null) {

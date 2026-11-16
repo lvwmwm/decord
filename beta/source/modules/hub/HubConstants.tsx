@@ -1,9 +1,9 @@
-// Module ID: 14594
-// Function ID: 14595
+// Module ID: 15080
+// Function ID: 15081
 // Name: HubConstants
 // Dependencies: [2]
 
-// Module 14594 (HubConstants)
+// Module 15080 (HubConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/hub/HubConstants.tsx");

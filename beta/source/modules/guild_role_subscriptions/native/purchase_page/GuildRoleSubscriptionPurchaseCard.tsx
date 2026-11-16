@@ -1,26 +1,26 @@
-// Module ID: 19077
-// Function ID: 19078
+// Module ID: 19388
+// Function ID: 19389
 // Name: GuildRoleSubscriptionPurchaseCard
-// Dependencies: [32, 19, 17, 21, 5170, 575, 1627, 17572, 19072, 5420, 5783, 1187, 19078, 5424, 1113, 17582, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 575, 1630, 17846, 19383, 5556, 5919, 1187, 19389, 5560, 1113, 17856, 2]
 // Exports: default
 
-// Module 19077 (GuildRoleSubscriptionPurchaseCard)
+// Module 19388 (GuildRoleSubscriptionPurchaseCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5420 */;
-import BottomSheetModal from "BottomSheetModal" /* 5424 */;
-import Text_Text from "Text/Text" /* 5783 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17572 */;
-import GuildRoleSubscriptionCard from "GuildRoleSubscriptionCard" /* 17582 */;
-import Elements from "Elements" /* 19072 */;
-import SubscribeButtonDefault from "SubscribeButton" /* 19078 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5556 */;
+import BottomSheetModal from "BottomSheetModal" /* 5560 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17846 */;
+import GuildRoleSubscriptionCard from "GuildRoleSubscriptionCard" /* 17856 */;
+import Elements from "Elements" /* 19383 */;
+import SubscribeButtonDefault from "SubscribeButton" /* 19389 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportDefault;

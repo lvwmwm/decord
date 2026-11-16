@@ -1,14 +1,14 @@
-// Module ID: 6969
-// Function ID: 6970
+// Module ID: 7055
+// Function ID: 7056
 // Name: ApplicationActionCreators
-// Dependencies: [5, 6970, 2140, 2162, 1072, 572, 1282, 504, 2]
+// Dependencies: [5, 7056, 2143, 2165, 1072, 572, 1285, 504, 2]
 // Exports: useApplicationWithLoggedOutContext
 
-// Module 6969 (ApplicationActionCreators)
+// Module 7055 (ApplicationActionCreators)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationDirectoryApplicationsStore from "ApplicationDirectoryApplicationsStore" /* 6970 */;
-import ApplicationRecord from "ApplicationRecord" /* 2140 */;
-import ApplicationStore from "ApplicationStore" /* 2162 */;
+import ApplicationDirectoryApplicationsStore from "ApplicationDirectoryApplicationsStore" /* 7056 */;
+import ApplicationRecord from "ApplicationRecord" /* 2143 */;
+import ApplicationStore from "ApplicationStore" /* 2165 */;
 import Constants from "Constants" /* 1072 */;
 import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;
@@ -39,7 +39,7 @@ let obj = function _fetchApplication() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -63,7 +63,7 @@ let obj = function _fetchApplication() {
               closure_3 = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "Path", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -249,7 +249,7 @@ obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         let c3;
@@ -338,7 +338,7 @@ obj = {
             obj11.dispatch(obj10);
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         } catch (tmp26) {
           closure_2 = tmp26;
           if (0 === c3) {

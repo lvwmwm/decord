@@ -1,22 +1,22 @@
-// Module ID: 6031
-// Function ID: 6032
+// Module ID: 6167
+// Function ID: 6168
 // Name: RTCMediaSinkWantsManager
-// Dependencies: [32, 502, 1072, 5929, 1089, 6032, 1377, 5953, 5965, 5014, 6034, 11, 12, 558, 5950, 2]
+// Dependencies: [32, 502, 1072, 6065, 1089, 6168, 1380, 6089, 6101, 5150, 6170, 11, 12, 558, 6086, 2]
 
-// Module 6031 (RTCMediaSinkWantsManager)
+// Module 6167 (RTCMediaSinkWantsManager)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import shallowEqualDefault from "shallowEqual" /* 558 */;
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import Constants2 from "Constants" /* 5929 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 5950 */;
-import WindowVisibilityVideoManager2 from "WindowVisibilityVideoManager" /* 6034 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import Constants2 from "Constants" /* 6065 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 6086 */;
+import WindowVisibilityVideoManager2 from "WindowVisibilityVideoManager" /* 6170 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import BrowserUtils from "BrowserUtils" /* 6032 */;
-import TypedEventEmitter from "TypedEventEmitter" /* 5953 */;
+import BrowserUtils from "BrowserUtils" /* 6168 */;
+import TypedEventEmitter from "TypedEventEmitter" /* 6089 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -367,12 +367,12 @@ class RTCMediaSinkWantsManager extends TypedEventEmitter {
     tmp9.supportsSeamless = supportsSeamless;
     tmp9.ladder = mediaSinkWantsLadder;
     new Set();
-    let delayedCall = new tmp11(5014).DelayedCall(100, tmp9.update);
+    let delayedCall = new tmp11(5150).DelayedCall(100, tmp9.update);
     tmp9.delayedCall = delayedCall;
-    const timeout = new tmp11(5014).Timeout();
+    const timeout = new tmp11(5150).Timeout();
     tmp9.offscreenTimeout = timeout;
-    const WindowVisibilityVideoManager = tmp11(6034).WindowVisibilityVideoManager;
-    WindowVisibilityVideoManager.on(tmp11(6034).WindowVisibilityEvent.IncomingVideoEnabledChanged, tmp9.incomingVideoEnabledChanged);
+    const WindowVisibilityVideoManager = tmp11(6170).WindowVisibilityVideoManager;
+    WindowVisibilityVideoManager.on(tmp11(6170).WindowVisibilityEvent.IncomingVideoEnabledChanged, tmp9.incomingVideoEnabledChanged);
     return tmp9;
   }
   getWantsLevel(arg0) {
@@ -590,7 +590,7 @@ class RTCMediaSinkWantsManager extends TypedEventEmitter {
       obj3 = { any: tmp2 };
     }
     self.latestWants = obj3;
-    const WindowVisibilityVideoManager = tmp3(6034).WindowVisibilityVideoManager;
+    const WindowVisibilityVideoManager = tmp3(6170).WindowVisibilityVideoManager;
     WindowVisibilityVideoManager.off(WindowVisibilityVideoManager2.WindowVisibilityEvent.IncomingVideoEnabledChanged, self.incomingVideoEnabledChanged);
   }
   setSelectedParticipant(selectedParticipantId) {

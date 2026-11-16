@@ -1,19 +1,19 @@
-// Module ID: 16809
-// Function ID: 16810
+// Module ID: 17085
+// Function ID: 17086
 // Name: HexagonCampaignAnalytics
-// Dependencies: [5, 19, 5195, 1072, 7972, 6876, 7981, 7928, 1252, 2]
+// Dependencies: [5, 19, 5331, 1072, 8825, 6961, 8834, 8781, 1256, 2]
 // Exports: trackHexagonCampaignContentClicked, trackHexagonCampaignContentViewed, trackHexagonCampaignPerkAction, useTrackHexagonCampaignContentViewed
 
-// Module 16809 (HexagonCampaignAnalytics)
+// Module 17085 (HexagonCampaignAnalytics)
 import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import AdCreativeType from "AdCreativeType" /* 6876 */;
-import getDeviceMetadataDefault from "getDeviceMetadata" /* 7928 */;
-import AnalyticsActions from "AnalyticsActions" /* 7972 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7981 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import AdCreativeType from "AdCreativeType" /* 6961 */;
+import getDeviceMetadataDefault from "getDeviceMetadata" /* 8781 */;
+import AnalyticsActions from "AnalyticsActions" /* 8825 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8834 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5195 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5331 */;
 import size from "module_2" /* 2 */;
 
 let closure_3, closure_4, closure_5, questContentCTA;
@@ -38,7 +38,7 @@ let obj = function _trackHexagonCampaignContentClicked() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -63,7 +63,7 @@ let obj = function _trackHexagonCampaignContentClicked() {
               }
               c6 = 1;
               c7 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "Path", done: true };
             }
           } else {
             let obj5;
@@ -97,7 +97,7 @@ let obj = function _trackHexagonCampaignContentClicked() {
               obj5.sourceQuestContent = sourceQuestContent;
               trackAdContentEvent(obj5);
               c7 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "ulw" };
             }
           }
         } catch (tmp12) {
@@ -115,7 +115,7 @@ let obj = function _trackHexagonCampaignContentClicked() {
 const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/hexagon_campaign/HexagonCampaignAnalytics.tsx");
 
-export const HexagonCampaignContentSurface = { FONT_PICKER: "FONT_PICKER", PROFILE_ROW_PROMO: "PROFILE_ROW_PROMO", NON_NITRO_CARD: "NON_NITRO_CARD", THEME_PICKER: "THEME_PICKER", APP_ICON_PICKER: "APP_ICON_PICKER", USER_PROFILE: "USER_PROFILE", GUILD_PROFILE: "GUILD_PROFILE", EXPIRING_SOON_SHEET: "EXPIRING_SOON_SHEET", EXPIRED_SHEET: "EXPIRED_SHEET" };
+export const HexagonCampaignContentSurface = { FONT_PICKER: "FONT_PICKER", PROFILE_ROW_PROMO: "PROFILE_ROW_PROMO", NON_NITRO_CARD: "NON_NITRO_CARD", THEME_PICKER: "THEME_PICKER", APP_ICON_PICKER: "APP_ICON_PICKER", USER_PROFILE: "USER_PROFILE", GUILD_PROFILE: "GUILD_PROFILE", EXPIRING_SOON_SHEET: "EXPIRING_SOON_SHEET", EXPIRED_SHEET: "EXPIRED_SHEET", EXPIRING_SOON_POPOVER: "EXPIRING_SOON_POPOVER" };
 export function trackHexagonCampaignContentViewed(contentSurface) {
   let content;
   let obj2;

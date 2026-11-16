@@ -1,32 +1,28 @@
-// Module ID: 19932
-// Function ID: 19933
+// Module ID: 20265
+// Function ID: 20266
 // Name: HolidayEventsConfig
-// Dependencies: [11194, 19933, 1113, 19934, 19935, 5003, 2]
+// Dependencies: [11035, 1113, 20266, 20267, 5139, 2]
 
-// Module 19932 (HolidayEventsConfig)
+// Module 20265 (HolidayEventsConfig)
 import intl14 from "intl" /* 1113 */;
-import dismissible_content from "dismissible_content" /* 5003 */;
-import Constants from "Constants" /* 11194 */;
-import HalloweenHolidayExperimentDefault from "HalloweenHolidayExperiment" /* 19933 */;
-import AssetRegistryDefault from "AssetRegistry" /* 19934 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 19935 */;
+import dismissible_content from "dismissible_content" /* 5139 */;
+import Constants from "Constants" /* 11035 */;
+import AssetRegistryDefault from "AssetRegistry" /* 20266 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 20267 */;
 import size from "module_2" /* 2 */;
 
-let Soundpacks;
-let obj = {
-  experiment: HalloweenHolidayExperimentDefault,
+const obj = {
+  experiment: null,
   useIsExperimentEligible() {
-    const obj = HalloweenHolidayExperimentDefault;
-    return obj.useConfig({ location: "holiday_events_use_eligible" }).enabled;
+    return false;
   },
   getIsExperimentEligible() {
-    const obj = HalloweenHolidayExperimentDefault;
-    return obj.getConfig({ location: "holiday_events_is_eligible" }).enabled;
+    return false;
   },
   startTimeMs: 1791388800000,
   endTimeMs: 1793638800000,
   isDesktopOnly: true,
-  soundpack: Soundpacks.HALLOWEEN,
+  soundpack: Constants.Soundpacks.HALLOWEEN,
   soundpackLabel: intl14.t["+LasFV"],
   appSpinnerSources: { webmDark: AssetRegistryDefault, webmLight: AssetRegistryDefault2 },
   getLoadingTips() {
@@ -60,7 +56,6 @@ let obj = {
   },
   coachmarkDismissibleContent: dismissible_content.DismissibleContent.HOLIDAY_COACHMARK_HALLOWEEN_2026
 };
-Soundpacks = Constants.Soundpacks;
 ({ webmDark: AssetRegistryDefault, webmLight: AssetRegistryDefault2 });
 const result = size.fileFinishedImporting("modules/holidays/HolidayEventsConfig.tsx");
 

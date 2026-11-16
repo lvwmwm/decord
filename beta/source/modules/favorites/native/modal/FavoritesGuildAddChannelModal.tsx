@@ -1,20 +1,20 @@
-// Module ID: 14669
-// Function ID: 14670
+// Module ID: 15155
+// Function ID: 15156
 // Name: FavoritesGuildAddChannelModal
-// Dependencies: [5, 32, 19, 17, 5032, 10878, 21, 5170, 575, 14670, 14671, 13647, 1380, 5868, 1113, 10982, 14668, 1493, 1377, 13657, 3608, 10887, 13658, 13682, 14672, 2]
+// Dependencies: [5, 32, 19, 17, 5168, 10244, 21, 5306, 575, 15156, 15157, 10245, 1255, 6004, 1113, 10944, 15154, 1496, 1380, 10270, 3679, 10271, 10272, 15158, 15160, 2]
 // Exports: default
 
-// Module 14669 (FavoritesGuildAddChannelModal)
+// Module 15155 (FavoritesGuildAddChannelModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import FavoritesConstants from "FavoritesConstants" /* 5032 */;
-import UserRowConstants from "UserRowConstants" /* 10878 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import FavoritesConstants from "FavoritesConstants" /* 5168 */;
+import UserRowConstants from "UserRowConstants" /* 10244 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4, dependencyMap;
@@ -46,8 +46,8 @@ export default function FavoritesGuildAddChannelModal(parentId) {
   const source = parentId.source;
   const tmp = closure_11();
   const tmp3 = dependencyMap;
-  const tmp4 = first(14670)();
-  first(14671)(source);
+  const tmp4 = first(15156)();
+  first(15157)(source);
   const tmp2 = first;
   [first, dependencyMap] = react.useState([]);
   const callback = react.useCallback((arg0) => {
@@ -65,7 +65,7 @@ export default function FavoritesGuildAddChannelModal(parentId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       try {
@@ -116,7 +116,7 @@ export default function FavoritesGuildAddChannelModal(parentId) {
             presentError(intl.string(_null(c2[14]).t.R0RpRX));
           }
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } catch (tmp32) {
         c4 = 3;
@@ -124,7 +124,7 @@ export default function FavoritesGuildAddChannelModal(parentId) {
       }
     }
   }), items);
-  height = first(1493)({ ignoreKeyboard: true }).height;
+  height = first(1496)({ ignoreKeyboard: true }).height;
   const items1 = [height];
   let obj = {
     style: react.useMemo(() => {
@@ -134,22 +134,22 @@ export default function FavoritesGuildAddChannelModal(parentId) {
     }, items1),
     children: items2
   };
-  let obj2 = { title: intl.string(first(3608).Rp35U1), onClose: parentId(14668).closeFavoritesGuildAddChannelModal };
-  const tmp12 = first(13657);
+  let obj2 = { title: intl.string(first(3679).Rp35U1), onClose: parentId(15154).closeFavoritesGuildAddChannelModal };
+  const tmp12 = first(10270);
   intl = parentId(1113).intl;
   items2 = [closure_9(tmp12, obj2), ];
   let obj3 = { style: tmp.container, children: items3 };
-  items3 = [closure_9(first(10887), { absolute: true }), , ];
+  items3 = [closure_9(first(10271), { absolute: true }), , ];
   let obj4 = { rowMode: UserRowModes.TOGGLE, initialSelectedDestinations: [], onSelectedDestinationChange: callback, channelFilter: tmp4, insetEnd: num, disableGradient: true, disableStickySections: true, disableSelection: first.length >= closure_7 };
   num = 0;
-  const tmp14 = first(13658);
+  const tmp14 = first(10272);
   if (first.length > 0) {
     num = tmp2(575).space.PX_80;
   }
   items3[1] = closure_9(tmp14, obj4);
   let obj5 = { isVisible: length > 0, floatingBackgroundColor: tmp.container.backgroundColor, text: tmp13Result.getFavoritesAddButtonLabel(first.length), onPress: callback1 };
-  const ModalFloatingAction = tmp13(13682).ModalFloatingAction;
-  tmp13Result = parentId(14672);
+  const ModalFloatingAction = tmp13(15158).ModalFloatingAction;
+  tmp13Result = parentId(15160);
   items3[2] = closure_9(ModalFloatingAction, obj5);
   items2[1] = closure_10(View, obj3);
   return closure_10(View, obj);

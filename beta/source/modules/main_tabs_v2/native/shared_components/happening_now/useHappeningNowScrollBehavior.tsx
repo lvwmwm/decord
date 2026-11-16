@@ -1,10 +1,10 @@
-// Module ID: 18501
-// Function ID: 18502
+// Module ID: 18792
+// Function ID: 18793
 // Name: useHappeningNowScrollBehavior
 // Dependencies: [32, 19, 2]
 // Exports: default, useHappeningNowScrollSnapping
 
-// Module 18501 (useHappeningNowScrollBehavior)
+// Module 18792 (useHappeningNowScrollBehavior)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

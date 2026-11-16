@@ -1,24 +1,24 @@
-// Module ID: 14242
-// Function ID: 14243
+// Module ID: 14828
+// Function ID: 14829
 // Name: PushNotificationActionCreators
-// Dependencies: [5, 14243, 502, 1072, 14244, 6830, 3, 1098, 1282, 1242, 14247, 510, 6834, 1377, 1260, 1380, 572, 2]
+// Dependencies: [5, 14829, 502, 1072, 14830, 6837, 3, 1098, 1285, 1242, 14833, 510, 6841, 1380, 1264, 1255, 572, 2]
 // Exports: setPushNotificationPermissionEligibleForPrompt, setPushPermissionReactivationSeen, setPushPermissionState, updateNotificationAuthorizationStatus
 
-// Module 14242 (PushNotificationActionCreators)
+// Module 14828 (PushNotificationActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import TokenManagerAll from "TokenManager" /* 1098 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6834 */;
-import Constants2 from "Constants" /* 14244 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6841 */;
+import Constants2 from "Constants" /* 14830 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import MultiAccountStore from "MultiAccountStore" /* 14243 */;
+import MultiAccountStore from "MultiAccountStore" /* 14829 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1072 */;
-import PushNotificationConstants from "PushNotificationConstants" /* 6830 */;
+import PushNotificationConstants from "PushNotificationConstants" /* 6837 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, c5, c6, closure_3;
@@ -47,7 +47,7 @@ let body = function _getOrRefreshPushSyncToken() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       let c4;
@@ -161,7 +161,7 @@ body = {
       }
       body = { provider: tmp9, token, bypass_server_throttling_supported: isAndroidResult, bundle_id: unpackModuleId };
       const tmp2Result = PlatformUtils;
-      isAndroidResult = tmp2Result.isAndroid() && !authStore3;
+      isAndroidResult = tmp2Result.isAndroid() && !gesture;
       obj2 = { event: discord_common_AnalyticsUtils.NetworkActionNames.USER_REGISTER_DEVICE_TOKEN };
       syncDeviceResult = post(request);
     }
@@ -188,7 +188,7 @@ body = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -273,7 +273,7 @@ body = {
               }
             }
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } catch (tmp22) {
           c3 = 3;

@@ -617,11 +617,11 @@ if (tmp) {
     EventEmitter.prototype.listenerCount = listenerCount;
   }
   let _Object = Object;
-  tmp2 = Object.getOwnPropertySymbols ? (function ReflectOwnKeys(headers) {
-    const ownPropertyNames = Object.getOwnPropertyNames(headers);
-    return ownPropertyNames.concat(Object.getOwnPropertySymbols(headers));
-  }) : (function ReflectOwnKeys(headers) {
-    return Object.getOwnPropertyNames(headers);
+  tmp2 = Object.getOwnPropertySymbols ? (function ReflectOwnKeys(exports) {
+    const ownPropertyNames = Object.getOwnPropertyNames(exports);
+    return ownPropertyNames.concat(Object.getOwnPropertySymbols(exports));
+  }) : (function ReflectOwnKeys(exports) {
+    return Object.getOwnPropertyNames(exports);
   });
 }
 class ReflectApply {

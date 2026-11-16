@@ -1,15 +1,15 @@
-// Module ID: 12621
-// Function ID: 12622
+// Module ID: 13391
+// Function ID: 13392
 // Name: useEmbeddedAppsForChannel
-// Dependencies: [19, 5922, 1385, 5018, 504, 5091, 7424, 1380, 2]
+// Dependencies: [19, 6058, 1388, 5154, 504, 5227, 7259, 1255, 2]
 // Exports: default, useEmbeddedAppsByChannel, useEmbeddedAppsWithPresence
 
-// Module 12621 (useEmbeddedAppsForChannel)
-import EmbeddedActivitiesStore2 from "EmbeddedActivitiesStore" /* 5018 */;
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7424 */;
+// Module 13391 (useEmbeddedAppsForChannel)
+import EmbeddedActivitiesStore2 from "EmbeddedActivitiesStore" /* 5154 */;
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7259 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 5922 */;
-import UserStore from "UserStore" /* 1385 */;
+import PresenceStore from "PresenceStore" /* 6058 */;
+import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

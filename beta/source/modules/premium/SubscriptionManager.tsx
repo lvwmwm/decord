@@ -1,17 +1,17 @@
-// Module ID: 20078
-// Function ID: 20079
+// Module ID: 20408
+// Function ID: 20409
 // Name: SubscriptionManager
-// Dependencies: [5, 1385, 2172, 2176, 7687, 1387, 7383, 2107, 6621, 7690, 2]
+// Dependencies: [5, 1388, 2175, 2179, 8530, 1390, 7882, 2110, 6757, 8533, 2]
 
-// Module 20078 (SubscriptionManager)
-import PremiumTypeUtils from "PremiumTypeUtils" /* 2107 */;
+// Module 20408 (SubscriptionManager)
+import PremiumTypeUtils from "PremiumTypeUtils" /* 2110 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1385 */;
-import BillingInfoStore from "BillingInfoStore" /* 2172 */;
-import SubscriptionStore from "SubscriptionStore" /* 2176 */;
-import EntitlementStore from "EntitlementStore" /* 7687 */;
-import PremiumConstants from "PremiumConstants" /* 1387 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7383 */;
+import UserStore from "UserStore" /* 1388 */;
+import BillingInfoStore from "BillingInfoStore" /* 2175 */;
+import SubscriptionStore from "SubscriptionStore" /* 2179 */;
+import EntitlementStore from "EntitlementStore" /* 8530 */;
+import PremiumConstants from "PremiumConstants" /* 1390 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2, currentUser, isFetchingMostRecentSubscription;
@@ -45,7 +45,7 @@ class SubscriptionManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -77,7 +77,7 @@ class SubscriptionManager extends AutomaticLifecycleManager {
                 }
               }
               currentUser = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "ulw" };
             }
           } else if (1 === c2) {
             if (arg0 === 1) {
@@ -161,7 +161,7 @@ class SubscriptionManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -194,7 +194,7 @@ class SubscriptionManager extends AutomaticLifecycleManager {
             return obj;
           }
           applyArgumentsResult = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         } catch (tmp7) {
           applyArgumentsResult = 3;
           throw tmp7;
@@ -213,7 +213,7 @@ class SubscriptionManager extends AutomaticLifecycleManager {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -259,7 +259,7 @@ class SubscriptionManager extends AutomaticLifecycleManager {
               return obj;
             }
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } catch (tmp12) {
           c2 = 3;

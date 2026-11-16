@@ -1,20 +1,20 @@
-// Module ID: 20537
-// Function ID: 20538
+// Module ID: 20867
+// Function ID: 20868
 // Name: SafetyFlowsUtils
-// Dependencies: [5, 19, 1385, 20531, 20533, 6831, 20532, 5869, 1113, 2960, 1499, 20536, 2]
+// Dependencies: [5, 19, 1388, 20861, 20863, 6838, 20862, 6005, 1113, 2997, 1502, 20866, 2]
 // Exports: getScreensForTaskType, useOnTaskComplete
 
-// Module 20537 (SafetyFlowsUtils)
+// Module 20867 (SafetyFlowsUtils)
 import intl2 from "intl" /* 1113 */;
-import _modDef2960 from "module_2960" /* 2960 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5869 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6831 */;
-import types from "types" /* 20531 */;
-import constants from "constants" /* 20532 */;
-import SafetyFlowsActionCreators from "SafetyFlowsActionCreators" /* 20533 */;
+import _modDef2997 from "module_2997" /* 2997 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
+import types from "types" /* 20861 */;
+import constants from "constants" /* 20862 */;
+import SafetyFlowsActionCreators from "SafetyFlowsActionCreators" /* 20863 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1385 */;
+import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 let c2, closure_1, closure_2, data, navigation;
@@ -36,7 +36,7 @@ let obj = function _fetchAndUpdateTask() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       try {
@@ -85,7 +85,7 @@ function navigateToScreenForTask(arr, task_type) {
   if (null == task_type) {
     obj = ModalActionCreatorsDefault;
     obj.popWithKey(constants.SAFETY_FLOWS_MODAL_KEY);
-    const obj2 = { text: intl.string(_modDef2960["/fHz9S"]), variant: "success" };
+    const obj2 = { text: intl.string(_modDef2997["/fHz9S"]), variant: "success" };
     const open = ToastActionCreatorsDefault.open;
     ToastActionCreatorsDefault;
     intl = intl2.intl;
@@ -165,7 +165,7 @@ export function useOnTaskComplete() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -211,7 +211,7 @@ export function useOnTaskComplete() {
             data = value;
             closure_2_8(data, data);
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } catch (tmp14) {
           c4 = 3;

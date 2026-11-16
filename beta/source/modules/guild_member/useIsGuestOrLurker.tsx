@@ -1,13 +1,13 @@
-// Module ID: 12227
-// Function ID: 12228
+// Module ID: 13089
+// Function ID: 13090
 // Name: useIsGuestOrLurker
-// Dependencies: [5082, 5041, 1072, 504, 2]
+// Dependencies: [5218, 5177, 1072, 504, 2]
 // Exports: default, isGuestOrLurkerInGuild
 
-// Module 12227 (useIsGuestOrLurker)
+// Module 13089 (useIsGuestOrLurker)
 import Constants from "Constants" /* 1072 */;
-import GuildMemberStore from "GuildMemberStore" /* 5082 */;
-import GuildStore from "GuildStore" /* 5041 */;
+import GuildMemberStore from "GuildMemberStore" /* 5218 */;
+import GuildStore from "GuildStore" /* 5177 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,23 +1,23 @@
-// Module ID: 19549
-// Function ID: 19550
+// Module ID: 19878
+// Function ID: 19879
 // Name: UnreadBadge
-// Dependencies: [19, 17, 5914, 6864, 21, 5170, 19178, 5798, 9941, 2]
+// Dependencies: [19, 17, 6050, 6949, 21, 5306, 19490, 5934, 9057, 2]
 
-// Module 19549 (UnreadBadge)
+// Module 19878 (UnreadBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import useFontScale from "useFontScale" /* 5798 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5914 */;
-import ReadStateConstants from "ReadStateConstants" /* 6864 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 19178 */;
+import useFontScale from "useFontScale" /* 5934 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 6050 */;
+import ReadStateConstants from "ReadStateConstants" /* 6949 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 19490 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let tmp2;
 let tmp5;
-const shared_components_Badge = tmp5(9941);
-const shared_components_BadgeDefault = tmp2(9941);
+const shared_components_Badge = tmp5(9057);
+const shared_components_BadgeDefault = tmp2(9057);
 const View = react_native.View;
 const MUTED_OPACITY_CONTENT = RedesignChannelListConstants.MUTED_OPACITY_CONTENT;
 const UnreadSetting = ReadStateConstants.UnreadSetting;

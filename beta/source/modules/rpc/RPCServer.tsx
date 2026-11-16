@@ -1,16 +1,16 @@
-// Module ID: 9444
-// Function ID: 9445
+// Module ID: 7300
+// Function ID: 7301
 // Name: RPCServer
-// Dependencies: [5, 6615, 1072, 12, 9445, 9447, 9449, 1252, 38, 9450, 9452, 5014, 1089, 2]
+// Dependencies: [5, 6751, 1072, 12, 7301, 7303, 7305, 1256, 38, 7306, 7309, 5150, 1089, 2]
 
-// Module 9444 (RPCServer)
+// Module 7300 (RPCServer)
 import _modDef12 from "module_12" /* 12 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import Constants2 from "Constants" /* 6615 */;
-import transformUserDefault from "transformUser" /* 9445 */;
-import RPCErrorDefault from "RPCError" /* 9447 */;
-import validateScopeDefault from "validateScope" /* 9449 */;
-import RpcCommandInterception from "RpcCommandInterception" /* 9452 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import Constants2 from "Constants" /* 6751 */;
+import transformUserDefault from "transformUser" /* 7301 */;
+import RPCErrorDefault from "RPCError" /* 7303 */;
+import validateScopeDefault from "validateScope" /* 7305 */;
+import RpcCommandInterception from "RpcCommandInterception" /* 7309 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -87,7 +87,7 @@ class RPCServer {
     this.onDisconnect(abortController, arg1);
   }
   handleRequest(socket, arg1) {
-    const f127417 = function() {
+    const f128548 = function() {
       return closure_0(...arguments);
     };
     let closure_2 = arg1;
@@ -148,7 +148,7 @@ class RPCServer {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } else {
           try {
@@ -221,8 +221,8 @@ class RPCServer {
         }
       })();
     });
-    const then2 = then(f127417).then;
-    then(f127417);
+    const then2 = then(f128548).then;
+    then(f128548);
     let closure_0 = self((command) => {
       let closure_1;
       let c3 = 0;

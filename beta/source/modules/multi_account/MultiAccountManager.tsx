@@ -1,14 +1,17 @@
-// Module ID: 19983
-// Function ID: 19984
+// Module ID: 20317
+// Function ID: 20318
 // Name: MultiAccountManager
-// Dependencies: [1385, 15845, 7383, 572, 15846, 2]
+// Dependencies: [5155, 1388, 14829, 16118, 7882, 572, 16119, 6053, 2]
 
-// Module 19983 (MultiAccountManager)
+// Module 20317 (MultiAccountManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import GatewaySocket from "GatewaySocket" /* 15846 */;
-import UserStore from "UserStore" /* 1385 */;
-import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 15845 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7383 */;
+import transitionToChannel from "transitionToChannel" /* 6053 */;
+import GatewaySocket from "GatewaySocket" /* 16119 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import UserStore from "UserStore" /* 1388 */;
+import MultiAccountStore from "MultiAccountStore" /* 14829 */;
+import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 16118 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
 import size from "module_2" /* 2 */;
 
 class MultiAccountManager extends AutomaticLifecycleManager {
@@ -62,6 +65,16 @@ class MultiAccountManager extends AutomaticLifecycleManager {
   handleMultiAccountSwitchStart(targetUserId) {
     const obj = GatewaySocket;
     const result = obj.setAccountSwitchUserId(targetUserId.targetUserId);
+  }
+  transitionToLastChannel(id) {
+    const lastChannelId = MultiAccountStore.getLastChannelId(id);
+    let flag = null != lastChannelId && null != ChannelStore.getChannel(lastChannelId);
+    if (flag) {
+      const obj = transitionToChannel;
+      obj.transitionToChannel(lastChannelId, { navigationReplace: true });
+      flag = true;
+    }
+    return flag;
   }
 }
 const prototype = MultiAccountManager.prototype;

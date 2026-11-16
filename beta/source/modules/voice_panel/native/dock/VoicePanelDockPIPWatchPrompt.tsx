@@ -1,23 +1,23 @@
-// Module ID: 19730
-// Function ID: 19731
+// Module ID: 20058
+// Function ID: 20059
 // Name: VoicePanelDockPIPWatchPrompt
-// Dependencies: [19, 17, 6801, 1385, 1072, 21, 5170, 575, 11394, 504, 6205, 7420, 7445, 8011, 1252, 19729, 5231, 1652, 5402, 1705, 7083, 1113, 5783, 3184, 7056, 5790, 8131, 7153, 2]
+// Dependencies: [19, 17, 6810, 1388, 1072, 21, 5306, 575, 11984, 504, 6341, 7918, 7937, 6852, 1256, 20057, 5367, 1655, 5538, 1708, 7459, 1113, 5919, 3253, 5926, 7722, 7988, 7549, 2]
 
-// Module 19730 (VoicePanelDockPIPWatchPrompt)
+// Module 20058 (VoicePanelDockPIPWatchPrompt)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import _mod1705 from "module_1705" /* 1705 */;
-import native from "native" /* 5231 */;
-import timing_timing from "timing/timing" /* 5402 */;
-import StreamActionCreators from "StreamActionCreators" /* 8011 */;
-import VoicePanelDockActionCreators from "VoicePanelDockActionCreators" /* 19729 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import _mod1708 from "module_1708" /* 1708 */;
+import native from "native" /* 5367 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import StreamActionCreators from "StreamActionCreators" /* 6852 */;
+import VoicePanelDockActionCreators from "VoicePanelDockActionCreators" /* 20057 */;
 import react from "react" /* 19 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6801 */;
-import UserStore from "UserStore" /* 1385 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6810 */;
+import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -26,7 +26,6 @@ let obj2;
 let obj3;
 let rect;
 function WatchPrompt(ownerId) {
-  let Button;
   let IconButton;
   let intl;
   let intl2;
@@ -34,8 +33,7 @@ function WatchPrompt(ownerId) {
   let intl4;
   let items7;
   let items8;
-  let obj11;
-  let obj13;
+  let obj12;
   let obj7;
   let obj9;
   let str;
@@ -101,7 +99,7 @@ function WatchPrompt(ownerId) {
     } else {
       const items = [closure_11, , ];
       const withTiming = timing_timing.withTiming;
-      items[1] = _mod1705.scheduleOnRN;
+      items[1] = _mod1708.scheduleOnRN;
       items[2] = cleanUp;
       let c0;
       let c1;
@@ -164,18 +162,16 @@ function WatchPrompt(ownerId) {
     tmp18Result = tmp18(Text, obj8);
   }
   items8[1] = tmp18Result;
-  const obj10 = { style: tmp.buttonRow, children: closure_7(Button, obj11) };
-  obj11 = { size: "sm", variant: "primary-overlay", text: intl3.string(tmp5(tmp3[21]).t.I6JG46), onPress: callback, loading: isConnecting, grow: true };
-  const tmp2Result = tmp2(tmp3[24]);
-  Button = tmp5(tmp3[25]).Button;
+  const obj10 = { size: "sm", variant: "primary-overlay", text: intl3.string(tmp5(tmp3[21]).t.I6JG46), onPress: callback, loading: isConnecting };
+  const Button = tmp5(tmp3[24]).Button;
   intl3 = tmp5(tmp3[21]).intl;
-  items8[2] = closure_7(tmp2Result, obj10);
-  const obj12 = { style: tmp.dismissButton, children: closure_7(IconButton, obj13) };
-  obj13 = { size: "sm", variant: "tertiary", icon: closure_7(tmp5(tmp3[27]).XSmallIcon, { size: "sm" }), onPress: callback1, accessibilityLabel: intl4.string(tmp5(tmp3[21]).t.WAI6xu) };
-  const tmp2Result2 = tmp2(tmp3[24]);
+  items8[2] = closure_7(Button, obj10);
+  const obj11 = { style: tmp.dismissButton, children: closure_7(IconButton, obj12) };
+  obj12 = { size: "sm", variant: "tertiary", icon: closure_7(tmp5(tmp3[27]).XSmallIcon, { size: "sm" }), onPress: callback1, accessibilityLabel: intl4.string(tmp5(tmp3[21]).t.WAI6xu) };
+  const tmp2Result = tmp2(tmp3[25]);
   IconButton = tmp5(tmp3[26]).IconButton;
   intl4 = tmp5(tmp3[21]).intl;
-  items8[3] = closure_7(tmp2Result2, obj12);
+  items8[3] = closure_7(tmp2Result, obj11);
   return tmp17(View, obj5);
 }
 function renderWatchPrompt(arg0, arg1, transitionState, cleanUp) {
@@ -188,7 +184,7 @@ const AnalyticEvents = Constants.AnalyticEvents;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let closure_9 = { duration: 200 };
 let createStyles = createStyles_mod;
-let obj = { container: obj2, dismissButton: rect, buttonRow: { flexDirection: "row", alignSelf: "stretch" }, label: obj3 };
+let obj = { container: obj2, dismissButton: rect, label: obj3 };
 obj2 = { alignItems: "center", justifyContent: "center", padding: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 createStyles = createStyles.createStyles;
 let merged = Object.assign(StyleSheet.absoluteFillObject);

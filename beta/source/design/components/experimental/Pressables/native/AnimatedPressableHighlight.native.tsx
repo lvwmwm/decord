@@ -1,23 +1,23 @@
-// Module ID: 7075
-// Function ID: 7076
+// Module ID: 7451
+// Function ID: 7452
 // Name: AnimatedPressableHighlight
-// Dependencies: [19, 17, 21, 1652, 7076, 7078, 5756, 575, 1377, 2]
+// Dependencies: [19, 17, 21, 1655, 7428, 7452, 5892, 575, 1380, 2]
 
-// Module 7075 (AnimatedPressableHighlight)
+// Module 7451 (AnimatedPressableHighlight)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useToken from "useToken" /* 5756 */;
-import Pressables from "Pressables" /* 7076 */;
-import useIOSPressEffects from "useIOSPressEffects" /* 7078 */;
+import useToken from "useToken" /* 5892 */;
+import Pressables from "Pressables" /* 7428 */;
+import useIOSPressEffects from "useIOSPressEffects" /* 7452 */;
 import react from "react" /* 19 */;
-import module_1652 from "module_1652" /* 1652 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
+import module_1655 from "module_1655" /* 1655 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
 import size from "module_2" /* 2 */;
 
 const Pressable = react_native.Pressable;
 const jsx = Fragment.jsx;
-let closure_6 = module_1652.createAnimatedComponent(Pressables.PressableHighlight);
+let closure_6 = module_1655.createAnimatedComponent(Pressables.PressableHighlight);
 const tmp2 = PlatformUtils.isAndroid() ? (function AnimatedPressableHighlightAndroid(children) {
   children = children.children;
   const merged = Object.assign(children, Object.assign({ children: 0 }));

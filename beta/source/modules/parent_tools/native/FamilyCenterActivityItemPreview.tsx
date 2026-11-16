@@ -1,23 +1,23 @@
-// Module ID: 17157
-// Function ID: 17158
+// Module ID: 17433
+// Function ID: 17434
 // Name: FamilyCenterActivityItemPreview
-// Dependencies: [19, 17, 8900, 21, 5170, 17156, 575, 5874, 9632, 8878, 9635, 12702, 10075, 9645, 2111, 2108, 2]
+// Dependencies: [19, 17, 8584, 21, 5306, 17432, 575, 6010, 9509, 8561, 9512, 10565, 9981, 9436, 2114, 2111, 2]
 // Exports: default
 
-// Module 17157 (FamilyCenterActivityItemPreview)
+// Module 17433 (FamilyCenterActivityItemPreview)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import utils from "utils" /* 2108 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 2111 */;
-import FastImageDefault from "FastImage" /* 5874 */;
-import useMaybeFetchProfileFrameDefault from "useMaybeFetchProfileFrame" /* 8878 */;
-import ProfileFrameConstants from "ProfileFrameConstants" /* 8900 */;
-import NameplateUtils from "NameplateUtils" /* 9632 */;
-import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 9635 */;
-import FamilyCenterActivityPurchaseRowUtils from "FamilyCenterActivityPurchaseRowUtils" /* 17156 */;
+import utils from "utils" /* 2111 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 2114 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import useMaybeFetchProfileFrameDefault from "useMaybeFetchProfileFrame" /* 8561 */;
+import ProfileFrameConstants from "ProfileFrameConstants" /* 8584 */;
+import NameplateUtils from "NameplateUtils" /* 9509 */;
+import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 9512 */;
+import FamilyCenterActivityPurchaseRowUtils from "FamilyCenterActivityPurchaseRowUtils" /* 17432 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let size;
@@ -85,9 +85,9 @@ function SubscriptionPreview(arg0) {
   } else {
     const obj4 = FamilyCenterActivityPurchaseRowUtils;
     if (obj4.isGuildBoostSubscription(subscriptionPlanId)) {
-      let NitroWheelIcon = tmp5(10075).BoostGemIcon;
+      let NitroWheelIcon = tmp5(9981).BoostGemIcon;
     } else {
-      NitroWheelIcon = tmp5(9645).NitroWheelIcon;
+      NitroWheelIcon = tmp5(9436).NitroWheelIcon;
     }
     return <tmp8 style={styles.purchasePlaceholder}>{null}</tmp8>;
   }

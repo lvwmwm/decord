@@ -1,25 +1,25 @@
-// Module ID: 10827
-// Function ID: 10828
+// Module ID: 9722
+// Function ID: 9723
 // Name: NativeCheckoutStoreProvider
-// Dependencies: [5, 32, 19, 17, 7718, 1072, 5904, 1083, 21, 5170, 5771, 10065, 572, 7723, 7724, 7048, 1266, 1242, 5753, 10828, 1252, 10830, 2]
+// Dependencies: [5, 32, 19, 17, 9592, 1072, 6040, 1083, 21, 5306, 5907, 9723, 572, 9597, 9598, 7418, 1269, 1242, 5889, 9714, 1256, 9724, 2]
 // Exports: default
 
-// Module 10827 (NativeCheckoutStoreProvider)
+// Module 9722 (NativeCheckoutStoreProvider)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import Constants2 from "Constants" /* 1083 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import v1 from "v1" /* 1266 */;
-import PaymentConstants from "PaymentConstants" /* 5904 */;
-import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 10828 */;
-import OrderUtils from "OrderUtils" /* 10830 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import v1 from "v1" /* 1269 */;
+import PaymentConstants from "PaymentConstants" /* 6040 */;
+import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 9714 */;
+import OrderUtils from "OrderUtils" /* 9724 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import NativeCheckoutStore from "NativeCheckoutStore" /* 7718 */;
-import createStyles from "createStyles" /* 5170 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 9592 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let c5, country, redux;
@@ -39,7 +39,7 @@ function NativeCheckoutStoreProvider(children) {
   ({ checkoutInitParameters: require, order } = children);
   ({ paymentGateway: dependencyMap, orderRequired: _asyncToGenerator, onOrderRetryCancellation: _slicedToArray, initialSubscriptionFacet: react, checkoutAnalyticsFields: View, analyticsInitialStep: closure_7 } = children);
   children = children.children;
-  const contextMetadata = order(5771)(() => {
+  const contextMetadata = order(5907)(() => {
     let id;
     if (order != null) {
       id = order.id;
@@ -54,7 +54,7 @@ function NativeCheckoutStoreProvider(children) {
     const obj4 = { loadId: id, startTime: Date.now() };
     return obj4;
   });
-  redux = order(5771)(() => {
+  redux = order(5907)(() => {
     const obj = { load_id: contextMetadata.loadId, payment_gateway };
     const merged = Object.assign(View);
     return obj;
@@ -63,7 +63,7 @@ function NativeCheckoutStoreProvider(children) {
     const obj = { order, checkoutInitParameters: require, contextMetadata, analyticsFields, paymentGateway, orderRequired: _asyncToGenerator, onOrderRetryCancellation: _slicedToArray, initialSubscriptionFacet: react };
     return metroImportDefault(obj);
   }), 1)[0];
-  const tmp2 = order(5753)(() => {
+  const tmp2 = order(5889)(() => {
     if (null != View) {
       let obj = PaymentFlowStartedTriggerPoint;
       const result = obj.trackPaymentFlowStartedAnalyticsAndCTP(analyticsFields);
@@ -218,7 +218,7 @@ export default function NativeCheckoutStoreProviderWrapper(orderRequired) {
       yield "HermesInternal";
       isGift = tmp4;
       ({ orderLineItems: c0, subscriptionFacet: c1 } = orderLineItems);
-      return "flexDirection";
+      return "Path";
     })();
     iter.next();
     return iter;
@@ -240,7 +240,7 @@ export default function NativeCheckoutStoreProviderWrapper(orderRequired) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       let c3;
@@ -283,7 +283,7 @@ export default function NativeCheckoutStoreProviderWrapper(orderRequired) {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } catch (tmp12) {
         if (0 === c3) {

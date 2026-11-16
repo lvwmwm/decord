@@ -1,16 +1,16 @@
-// Module ID: 14320
-// Function ID: 14321
+// Module ID: 14906
+// Function ID: 14907
 // Name: GuildProgressStore
-// Dependencies: [502, 5019, 5041, 14314, 11, 504, 572, 2]
+// Dependencies: [502, 5155, 5177, 14900, 11, 504, 572, 2]
 
-// Module 14320 (GuildProgressStore)
+// Module 14906 (GuildProgressStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import GuildProgressConstants from "GuildProgressConstants" /* 14314 */;
+import GuildProgressConstants from "GuildProgressConstants" /* 14900 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import GuildStore from "GuildStore" /* 5041 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import GuildStore from "GuildStore" /* 5177 */;
 import size from "module_2" /* 2 */;
 
 let closure_6, importDefault, set;

@@ -1,26 +1,26 @@
-// Module ID: 17414
-// Function ID: 17415
+// Module ID: 17684
+// Function ID: 17685
 // Name: ChestLogoSpotIllustration
-// Dependencies: [19, 21, 17415, 17416, 17417, 7168, 5874, 2]
+// Dependencies: [19, 21, 17685, 17686, 17687, 7755, 6010, 2]
 // Exports: ChestLogoSpotIllustration
 
-// Module 17414 (ChestLogoSpotIllustration)
+// Module 17684 (ChestLogoSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 7168 */;
-import _modDef17415 from "module_17415" /* 17415 */;
-import _modDef17416 from "module_17416" /* 17416 */;
-import _modDef17417 from "module_17417" /* 17417 */;
+import react_native from "react-native" /* 7755 */;
+import _modDef17685 from "module_17685" /* 17685 */;
+import _modDef17686 from "module_17686" /* 17686 */;
+import _modDef17687 from "module_17687" /* 17687 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef17415 };
+let obj2 = { uri: _modDef17685 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef17416 };
+let obj3 = { uri: _modDef17686 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef17417 };
-({ uri: _modDef17417 });
+obj[3] = { uri: _modDef17687 };
+({ uri: _modDef17687 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/ChestLogoSpotIllustration.native.tsx");
 

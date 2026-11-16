@@ -1,10 +1,10 @@
-// Module ID: 12671
-// Function ID: 12672
+// Module ID: 13439
+// Function ID: 13440
 // Name: useTrackSearchItems
-// Dependencies: [19, 11677, 6192, 1260, 5839, 2]
+// Dependencies: [19, 12578, 6328, 1264, 5975, 2]
 // Exports: useTrackSearchItems
 
-// Module 12671 (useTrackSearchItems)
+// Module 13439 (useTrackSearchItems)
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

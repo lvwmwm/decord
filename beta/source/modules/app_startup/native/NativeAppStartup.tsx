@@ -1,35 +1,35 @@
-// Module ID: 19804
-// Function ID: 19805
+// Module ID: 20134
+// Function ID: 20135
 // Name: NativeAppStartup
-// Dependencies: [32, 5, 19805, 19807, 17, 19830, 2187, 5073, 2117, 7749, 19831, 1072, 9, 3, 20567, 1377, 7780, 20568, 10, 20570, 20571, 13463, 504, 1259, 1244, 20572, 2121, 20573, 16738, 572, 20574, 7763, 1242, 20575, 20576, 11072, 510, 1252, 16367, 5065, 9955, 9888, 2198, 1152, 20577, 2118, 9010, 20579, 16564, 7924, 20596, 20597, 20598, 9953, 7776, 7764, 5348, 1192, 5171, 16614, 19529, 19530, 1098, 16364, 7748, 16621, 16635, 6974, 20599, 5452, 7750, 7764, 2]
+// Dependencies: [32, 5, 20135, 20137, 17, 20161, 2190, 5209, 2120, 8664, 20162, 1072, 9, 3, 20896, 1380, 8695, 20897, 10, 20899, 20900, 14061, 504, 1263, 1244, 20901, 2124, 20902, 17014, 572, 20903, 8678, 1242, 20904, 20905, 12920, 510, 1256, 16643, 5201, 9071, 11409, 2201, 1152, 20906, 2121, 10041, 20908, 16840, 8777, 20925, 20926, 20927, 9069, 8691, 8679, 5484, 1192, 5307, 16890, 19858, 19859, 1098, 16640, 8663, 16897, 16911, 7060, 20928, 5588, 8665, 8679, 2]
 // Exports: init, initHeadlessTask
 
-// Module 19804 (NativeAppStartup)
+// Module 20134 (NativeAppStartup)
 import LoggerDefault from "Logger" /* 3 */;
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
 import Storage4 from "Storage" /* 510 */;
 import TokenManagerAll from "TokenManager" /* 1098 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import IntlLoaderStore from "IntlLoaderStore" /* 2187 */;
-import DatabaseManagerDefault from "DatabaseManager" /* 5065 */;
-import timeRequireDefault from "timeRequire" /* 7780 */;
-import Future from "Future" /* 9888 */;
-import react_nativeDefault from "react-native" /* 16367 */;
-import DeepLinkEventMapping from "DeepLinkEventMapping" /* 20570 */;
-import DeepLinkProcessorDefault from "DeepLinkProcessor" /* 20571 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import IntlLoaderStore from "IntlLoaderStore" /* 2190 */;
+import DatabaseManagerDefault from "DatabaseManager" /* 5201 */;
+import timeRequireDefault from "timeRequire" /* 8695 */;
+import Future from "Future" /* 11409 */;
+import react_nativeDefault from "react-native" /* 16643 */;
+import DeepLinkEventMapping from "DeepLinkEventMapping" /* 20899 */;
+import DeepLinkProcessorDefault from "DeepLinkProcessor" /* 20900 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import module_19805 from "module_19805" /* 19805 */;
-import superagentPatch from "superagentPatch" /* 19807 */;
+import module_20135 from "module_20135" /* 20135 */;
+import superagentPatch from "superagentPatch" /* 20137 */;
 import react_native from "react-native" /* 17 */;
-import logThirdPartyImportsDone from "logThirdPartyImportsDone" /* 19830 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5073 */;
-import AppStateStore from "AppStateStore" /* 2117 */;
-import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 7749 */;
-import ManagerRegistry from "ManagerRegistry" /* 19831 */;
+import logThirdPartyImportsDone from "logThirdPartyImportsDone" /* 20161 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
+import AppStateStore from "AppStateStore" /* 2120 */;
+import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 8664 */;
+import ManagerRegistry from "ManagerRegistry" /* 20162 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -156,11 +156,11 @@ let obj = function _getInitialURLs() {
 function sharedInit() {
   let _true;
   let closure_1;
-  const f135804 = () => _true(handleNotification[33]);
+  const f138776 = () => _true(handleNotification[33]);
   function handleNotification(arg0) {
     const tmp = c0;
     if (tmp) {
-      timeRequireDefault("receiveNotification", f135804).default(arg0, false);
+      timeRequireDefault("receiveNotification", f138776).default(arg0, false);
       TTITrackerDefault.extraProperties.tapped_notification = true;
     } else {
       closure_1.push(arg0);
@@ -294,7 +294,7 @@ function sharedInit() {
     if (state !== constants.ACTIVE) {
       const tmp4 = c0;
       if (tmp4) {
-        timeRequireDefault("receiveNotification", f135804).default(arg0, false);
+        timeRequireDefault("receiveNotification", f138776).default(arg0, false);
         TTITrackerDefault.extraProperties.tapped_notification = true;
       } else {
         closure_1.push(arg0);
@@ -326,7 +326,7 @@ obj = function _trackFirstLaunched() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       try {
@@ -382,7 +382,7 @@ obj = function _trackFirstLaunched() {
           const result = Storage.set(closure_130_15.APP_FIRST_LAUNCHED, false);
         }
         c6 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       } catch (tmp25) {
         c6 = 3;
         throw tmp25;
@@ -396,7 +396,6 @@ function loadStorage() {
 }
 obj = function _loadStorage() {
   obj = _asyncToGenerator(async (arg0, value) => {
-    let tmp;
     if (c5 === 2) {
       c5 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
@@ -407,7 +406,7 @@ obj = function _loadStorage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       let c3;
@@ -431,7 +430,7 @@ obj = function _loadStorage() {
             let Storage = require("Storage").Storage;
             c4 = 2;
             c5 = 1;
-            const obj4 = { value: Storage.refresh([], authStore5), done: false };
+            const obj4 = { value: Storage.refresh([], authStore4), done: false };
             return obj4;
           }
         } else {
@@ -459,7 +458,7 @@ obj = function _loadStorage() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } catch (tmp20) {
         closure_2 = tmp20;
@@ -515,7 +514,7 @@ obj = function _initializeIntl() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -535,7 +534,7 @@ obj = function _initializeIntl() {
               tmp = undefined;
               c3 = 1;
               c4 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "Path", done: true };
             }
           } else if (1 === c3) {
             if (arg0 === 1) {
@@ -594,7 +593,7 @@ obj = function _initializeIntl() {
             tmp();
             closure_130_11(() => closure_1_1());
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } catch (tmp28) {
           c4 = 3;
@@ -623,7 +622,7 @@ obj = function _init() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       let c3;
@@ -668,7 +667,7 @@ obj = function _init() {
           closure_128_25.finishInitialUrls();
         }
         c4 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       } catch (tmp19) {
         closure_2 = tmp19;
         if (0 === c3) {
@@ -697,7 +696,7 @@ obj = function _initializeApp() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       try {
@@ -844,7 +843,7 @@ obj = function _initializeApp() {
             obj = closure_129_0(closure_129_3[70]);
             const sessionHeartbeatScheduler = obj.initSessionHeartbeatScheduler();
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
           const tmp20 = closure_0;
           if (tmp20) {
@@ -977,7 +976,7 @@ obj = function _initHeadlessTask() {
         obj = { value, done: true };
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       try {
@@ -1050,7 +1049,7 @@ obj = function _initHeadlessTask() {
           closure_129_1(closure_129_3[51])();
         }
         c3 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       } catch (tmp19) {
         c3 = 3;
         throw tmp19;
@@ -1084,7 +1083,7 @@ function initializeTokenStorage() {
   const Storage3 = tmp(510).Storage;
   const obj5 = { storageHasToken: null != Storage3.get(closure_17), tokenManagerHasToken: tmp12 };
   obj.verbose("Token manager has initialized", obj5);
-  closure_1_32();
+  map3();
 }
 ({ AppState: metroRequire, NativeEventEmitter: metroImportDefault, Linking: metroImportAll, LogBox: c9, NativeModules: c10 } = react_native);
 let closure_11 = IntlLoaderStore.subscribeToIntlLoadingSuccess;

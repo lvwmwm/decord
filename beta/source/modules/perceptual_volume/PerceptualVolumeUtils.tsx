@@ -1,10 +1,10 @@
-// Module ID: 6088
-// Function ID: 6089
+// Module ID: 6224
+// Function ID: 6225
 // Name: perceptual_volume/PerceptualVolumeUtils
 // Dependencies: [2]
 // Exports: amplitudeToPerceptual, perceptualToAmplitude
 
-// Module 6088 (perceptual_volume/PerceptualVolumeUtils)
+// Module 6224 (perceptual_volume/PerceptualVolumeUtils)
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/perceptual_volume/PerceptualVolumeUtils.tsx");
@@ -29,16 +29,16 @@ export function perceptualToAmplitude(arg0) {
     return powResult * num;
   }
 }
-export function amplitudeToPerceptual(USER) {
+export function amplitudeToPerceptual(effectiveVolume) {
   let num = arg1;
   if (arg1 === undefined) {
     num = 100;
   }
-  if (0 === USER) {
+  if (0 === effectiveVolume) {
     return 0;
   } else {
     let powResult;
-    const result = USER / num;
+    const result = effectiveVolume / num;
     if (result < 1) {
       const _Math2 = Math;
       powResult = Math.pow(result, 0.35714285714285715);

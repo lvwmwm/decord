@@ -1,21 +1,21 @@
-// Module ID: 13486
-// Function ID: 13487
+// Module ID: 14096
+// Function ID: 14097
 // Name: GameOrganizationBenefitsCarousel
-// Dependencies: [32, 19, 17, 21, 575, 5170, 7073, 6191, 5874, 5783, 1493, 13487, 10170, 1113, 1187, 2]
+// Dependencies: [32, 19, 17, 21, 575, 5306, 7445, 6327, 6010, 5919, 1496, 14097, 11215, 1113, 1187, 2]
 // Exports: default
 
-// Module 13486 (GameOrganizationBenefitsCarousel)
+// Module 14096 (GameOrganizationBenefitsCarousel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
-import Text_Text from "Text/Text" /* 5783 */;
-import Card_Card from "Card/Card" /* 7073 */;
-import GameOrganizationBenefits from "GameOrganizationBenefits" /* 13487 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import Card_Card from "Card/Card" /* 7445 */;
+import GameOrganizationBenefits from "GameOrganizationBenefits" /* 14097 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -27,8 +27,8 @@ let obj2;
 let obj3;
 let tmp2;
 let tmp6;
-const FastImageDefault = tmp6(5874);
-const CarouselDefault = tmp2(10170);
+const FastImageDefault = tmp6(6010);
+const CarouselDefault = tmp2(11215);
 function BenefitCard(arg0) {
   let Stack;
   let img;
@@ -52,7 +52,7 @@ function BenefitCard(arg0) {
   items[2] = cardSpacing;
   const obj = { style: items, children: tmp5(Stack, obj2) };
   obj2 = { spacing: nativeDefault.space.PX_24, children: items1 };
-  Stack = tmp3(6191).Stack;
+  Stack = tmp3(6327).Stack;
   tmp5 = metroImportDefault;
   if (null != img) {
     const obj3 = { source: obj4, style: tmp.benefitImage, resizeMode: "cover", accessible: false };

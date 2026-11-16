@@ -1,14 +1,14 @@
-// Module ID: 20607
-// Function ID: 20608
+// Module ID: 20936
+// Function ID: 20937
 // Name: MuteAction
-// Dependencies: [1082, 20605, 2166, 7384, 7379, 2]
+// Dependencies: [1082, 20934, 2169, 7883, 7878, 2]
 
-// Module 20607 (MuteAction)
+// Module 20936 (MuteAction)
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
-import _modDef2166 from "module_2166" /* 2166 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7379 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7384 */;
-import HeadlessTaskUtilsDefault from "HeadlessTaskUtils" /* 20605 */;
+import _modDef2169 from "module_2169" /* 2169 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7878 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7883 */;
+import HeadlessTaskUtilsDefault from "HeadlessTaskUtils" /* 20934 */;
 import size from "module_2" /* 2 */;
 
 const MuteUntilSeconds = UserSettingsConstants.MuteUntilSeconds;
@@ -25,8 +25,8 @@ export default (arg0) => {
       let toISOStringResult = null;
       if (-1 !== closure_0.muteTime) {
         let HOURS_1 = tmp.muteTime;
-        const add = _modDef2166().add;
-        _modDef2166();
+        const add = _modDef2169().add;
+        _modDef2169();
         if (HOURS_1 == null) {
           HOURS_1 = MuteUntilSeconds.HOURS_1;
         }

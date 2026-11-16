@@ -1,10 +1,10 @@
-// Module ID: 19805
-// Function ID: 19806
-// Dependencies: [2026, 19806, 2]
+// Module ID: 20135
+// Function ID: 20136
+// Dependencies: [2029, 20136, 2]
 
-// Module 19805
-import I18N from "I18N" /* 2026 */;
-import updateRulesDefault from "updateRules" /* 19806 */;
+// Module 20135
+import I18N from "I18N" /* 2029 */;
+import updateRulesDefault from "updateRules" /* 20136 */;
 import size from "module_2" /* 2 */;
 
 const updateRules = I18N.setUpdateRules(updateRulesDefault);

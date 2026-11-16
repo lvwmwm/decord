@@ -1,15 +1,15 @@
-// Module ID: 14362
-// Function ID: 14363
+// Module ID: 10714
+// Function ID: 10715
 // Name: powerupListing
-// Dependencies: [32, 19, 5377, 5378, 5381, 504, 2]
+// Dependencies: [32, 19, 5513, 5514, 5517, 504, 2]
 // Exports: useBuildGuildPowerupsSections
 
-// Module 14362 (powerupListing)
-import Powerups from "Powerups" /* 5381 */;
+// Module 10714 (powerupListing)
+import Powerups from "Powerups" /* 5517 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 5377 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5378 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 5513 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5514 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

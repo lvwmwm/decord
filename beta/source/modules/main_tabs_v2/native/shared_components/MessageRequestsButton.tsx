@@ -1,38 +1,38 @@
-// Module ID: 18459
-// Function ID: 18460
+// Module ID: 18750
+// Function ID: 18751
 // Name: MessageRequestsButton
-// Dependencies: [19, 17, 6944, 6945, 21, 5170, 504, 18460, 5790, 1113, 8131, 14821, 9301, 2]
+// Dependencies: [19, 17, 7030, 7031, 21, 5306, 504, 18751, 5926, 1113, 7988, 15621, 15916, 2]
 // Exports: default
 
-// Module 18459 (MessageRequestsButton)
+// Module 18750 (MessageRequestsButton)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import intl4 from "intl" /* 1113 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9301 */;
-import IconActionButton from "IconActionButton" /* 14821 */;
-import _mod18460 from "module_18460" /* 18460 */;
+import IconActionButton from "IconActionButton" /* 15621 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15916 */;
+import _mod18751 from "module_18751" /* 18751 */;
 import react from "react" /* 19 */;
-import MessageRequestStore from "MessageRequestStore" /* 6944 */;
-import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6945 */;
+import MessageRequestStore from "MessageRequestStore" /* 7030 */;
+import SpamMessageRequestStore from "SpamMessageRequestStore" /* 7031 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const IconActionButtonDefault = IconActionButton;
 
 let metroImportAll;
 let metroImportDefault;
-const f115665 = () => messageRequestsCount.getMessageRequestsCount();
-const f115666 = () => spamChannelsCount.getSpamChannelsCount();
+const f118190 = () => messageRequestsCount.getMessageRequestsCount();
+const f118191 = () => spamChannelsCount.getSpamChannelsCount();
 function MessageRequestAnimation(color) {
   color = color.color;
   const ref = react.useRef(null);
   const items = [MessageRequestStore];
   const obj = get_initialized;
-  const stateFromStores = obj.useStateFromStores(items, f115665);
+  const stateFromStores = obj.useStateFromStores(items, f118190);
   const items1 = [SpamMessageRequestStore];
   const obj2 = get_initialized;
-  const stateFromStores1 = obj2.useStateFromStores(items1, f115666);
+  const stateFromStores1 = obj2.useStateFromStores(items1, f118191);
   const items2 = [stateFromStores];
   const effect = react.useEffect(() => {
     if (stateFromStores > 0) {
@@ -44,7 +44,7 @@ function MessageRequestAnimation(color) {
       }
     }
   }, items2);
-  return metroImportDefault(_mod18460.MessageRequestLottie, { ref, color, size: "sm", autoPlay: true });
+  return metroImportDefault(_mod18751.MessageRequestLottie, { ref, color, size: "sm", autoPlay: true });
 }
 const View = react_native.View;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
@@ -67,11 +67,11 @@ export default function MessageRequestsButton(alternateVariant) {
   const items = [MessageRequestStore];
   const tmp2 = closure_9();
   const obj = get_initialized;
-  const str = obj.useStateFromStores(items, f115665);
+  const str = obj.useStateFromStores(items, f118190);
   const items1 = [SpamMessageRequestStore];
   const obj2 = get_initialized;
   if (0 === str) {
-    if (0 === obj2.useStateFromStores(items1, f115666)) {
+    if (0 === obj2.useStateFromStores(items1, f118191)) {
       return null;
     }
   }
@@ -87,7 +87,7 @@ export default function MessageRequestsButton(alternateVariant) {
     const tmp15 = View;
     if (null != str1) {
       const obj4 = { icon: metroImportDefault(MessageRequestAnimation, {}), variant: "secondary", text: str1, size: "sm", accessibilityLabel: intl3.string(intl4.t.e7GWjQ) };
-      const Button = tmp3(5790).Button;
+      const Button = tmp3(5926).Button;
       intl3 = tmp3(1113).intl;
       const merged1 = Object.assign(merged);
       tmp21 = metroImportDefault(Button, obj4);
@@ -95,7 +95,7 @@ export default function MessageRequestsButton(alternateVariant) {
     } else {
       tmp16 = metroImportDefault;
       const obj5 = { variant: "secondary", size: "sm", icon: metroImportDefault(MessageRequestAnimation, {}), accessibilityLabel: intl2.string(intl4.t.e7GWjQ) };
-      const IconButton = tmp3(8131).IconButton;
+      const IconButton = tmp3(7988).IconButton;
       intl2 = tmp3(1113).intl;
       const merged2 = Object.assign(merged);
       tmp21 = metroImportDefault(IconButton, obj5);

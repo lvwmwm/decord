@@ -1,31 +1,31 @@
-// Module ID: 15231
-// Function ID: 15232
+// Module ID: 15828
+// Function ID: 15829
 // Name: UserProfileWidgetAddActionSheet
-// Dependencies: [32, 19, 17, 21, 5170, 575, 5783, 1113, 1627, 5424, 15227, 15223, 15228, 9800, 15229, 5406, 7424, 7071, 11665, 4026, 15219, 7159, 15232, 15233, 15210, 9092, 7459, 7415, 12373, 14465, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 575, 5919, 1113, 1630, 5560, 15824, 15819, 15825, 10516, 15826, 5542, 7259, 7443, 13466, 4131, 15815, 7746, 15829, 15823, 15808, 7983, 7951, 7913, 13262, 14944, 2]
 // Exports: default
 
-// Module 15231 (UserProfileWidgetAddActionSheet)
+// Module 15828 (UserProfileWidgetAddActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import _modDef4026 from "module_4026" /* 4026 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
-import BottomSheetModal from "BottomSheetModal" /* 5424 */;
-import Text_Text from "Text/Text" /* 5783 */;
-import ConjureMobileExperiment from "ConjureMobileExperiment" /* 9800 */;
-import useConjureServerWidgetOffersDefault from "useConjureServerWidgetOffers" /* 15210 */;
-import turnOnConjureServerWidgetDefault from "turnOnConjureServerWidget" /* 15219 */;
-import UserProfileWidgetOptionAddButtonDefault from "UserProfileWidgetOptionAddButton" /* 15223 */;
-import useAddProfileWidgetDefault from "useAddProfileWidget" /* 15227 */;
-import ConjureCustomWidget from "ConjureCustomWidget" /* 15228 */;
-import UserProfileWidgetOptionConjureButtonDefault from "UserProfileWidgetOptionConjureButton" /* 15229 */;
-import useStableAddableWidgetsDefault from "useStableAddableWidgets" /* 15232 */;
-import UserProfileAddableWidgetCategories from "UserProfileAddableWidgetCategories" /* 15233 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import _modDef4131 from "module_4131" /* 4131 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import BottomSheetModal from "BottomSheetModal" /* 5560 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import ConjureMobileExperiment from "ConjureMobileExperiment" /* 10516 */;
+import useConjureServerWidgetOffersDefault from "useConjureServerWidgetOffers" /* 15808 */;
+import turnOnConjureServerWidgetDefault from "turnOnConjureServerWidget" /* 15815 */;
+import UserProfileWidgetOptionAddButtonDefault from "UserProfileWidgetOptionAddButton" /* 15819 */;
+import UserProfileAddableWidgetCategories from "UserProfileAddableWidgetCategories" /* 15823 */;
+import useAddProfileWidgetDefault from "useAddProfileWidget" /* 15824 */;
+import ConjureCustomWidget from "ConjureCustomWidget" /* 15825 */;
+import UserProfileWidgetOptionConjureButtonDefault from "UserProfileWidgetOptionConjureButton" /* 15826 */;
+import useStableAddableWidgetsDefault from "useStableAddableWidgets" /* 15829 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -123,7 +123,7 @@ function ServerWidgetOptionRow(widget) {
   let intl;
   let obj3;
   widget = widget.widget;
-  const obj = widget(7424);
+  const obj = widget(7259);
   const getOrFetchApplication = obj.useGetOrFetchApplication(widget.applicationId);
   let str;
   if (getOrFetchApplication != null) {
@@ -135,14 +135,14 @@ function ServerWidgetOptionRow(widget) {
   const obj2 = {
     icon: closure_6(Icon, obj3),
     label: str,
-    subLabel: intl.formatToPlainString(_modDef4026.ZZywee, { applicationName: str }),
+    subLabel: intl.formatToPlainString(_modDef4131.ZZywee, { applicationName: str }),
     onPress() {
       return turnOnConjureServerWidgetDefault(widget.applicationId, hideSheet);
     }
   };
-  const TableRow = tmp(7071).TableRow;
-  obj3 = { IconComponent: widget(11665).CirclePlusIcon };
-  Icon = tmp(7071).TableRow.Icon;
+  const TableRow = tmp(7443).TableRow;
+  obj3 = { IconComponent: widget(13466).CirclePlusIcon };
+  Icon = tmp(7443).TableRow.Icon;
   intl = tmp(1113).intl;
   return closure_6(TableRow, obj2);
 }
@@ -226,7 +226,7 @@ export default function UserProfileWidgetAddActionSheet() {
   const intl2 = require("intl").intl;
   const stringResult1 = intl2.string(require("intl").t.EKR8Ps);
   const intl3 = require("intl").intl;
-  const stringResult2 = intl3.string(_modDef4026.OUrOHL);
+  const stringResult2 = intl3.string(_modDef4131.OUrOHL);
   const obj2 = { pageWidth: first, items: items1 };
   const useSegmentedControlState = require("SegmentedControlState").useSegmentedControlState;
   const tmp18 = require("SegmentedControlState");
@@ -248,14 +248,14 @@ export default function UserProfileWidgetAddActionSheet() {
     closure_0(nativeEvent.nativeEvent.layout.width);
   }, []);
   const obj7 = { header: closure_6(BottomSheetTitleHeader, obj8), scrollable: true, startExpanded: true, children: closure_7(View, obj9) };
-  const ActionSheet = tmp14(7459).ActionSheet;
+  const ActionSheet = tmp14(7951).ActionSheet;
   obj8 = { title: intl4.string(require("intl").t["grUgR+"]) };
-  BottomSheetTitleHeader = tmp14(7415).BottomSheetTitleHeader;
+  BottomSheetTitleHeader = tmp14(7913).BottomSheetTitleHeader;
   intl4 = tmp14(1113).intl;
   obj9 = { style: tmp2.container, onLayout: callback, children: items4 };
   items4 = [, ];
   const obj10 = { style: tmp2.tabs, children: closure_6(require("Tabs").Tabs, { state: segmentedControlState }) };
   items4[0] = closure_6(View, obj10);
-  items4[1] = closure_6(require("SegmentedControlPages").SegmentedControlPages, { state: segmentedControlState });
+  items4[1] = closure_6(require("SegmentedControlPages").SegmentedControlPages, { state: segmentedControlState, bounces: false });
   return closure_6(ActionSheet, obj7);
 };

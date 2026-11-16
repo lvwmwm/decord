@@ -1,53 +1,58 @@
-// Module ID: 18787
-// Function ID: 18788
+// Module ID: 19120
+// Function ID: 19121
 // Name: GuildsBarSeparator
-// Dependencies: [19, 21, 5170, 575, 18453, 1652, 5756, 7056, 2]
+// Dependencies: [19, 21, 5306, 575, 5892, 18744, 1655, 7722, 2]
 
-// Module 18787 (GuildsBarSeparator)
+// Module 19120 (GuildsBarSeparator)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import useToken from "useToken" /* 5756 */;
-import useHomeDrawerGesture from "useHomeDrawerGesture" /* 18453 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import useToken from "useToken" /* 5892 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 18744 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
-const _modDef1652 = _mod1652;
 let obj1;
 
 let tmp2;
-const NativeViewDefault = tmp2(7056);
+let tmp3;
+const _modDef1655 = tmp3(1655);
+const NativeViewDefault = tmp2(7722);
 function GuildsBarHomeDrawerSeparator(guildItemSize) {
-  let tmp3;
-  let tmp4;
   let tmp5;
+  let tmp6;
+  let tmp7;
+  let tmp8;
   guildItemSize = guildItemSize.guildItemSize;
   const tmp = closure_4(guildItemSize);
-  let obj = useHomeDrawerGesture;
-  const panelTranslateX = obj.useHomeDrawerState().panelTranslateX;
-  const obj2 = _mod1652;
-  let items = [closure_5, panelTranslateX, guildItemSize];
+  let obj = useToken;
+  const token = obj.useToken(nativeDefault.colors.BORDER_SUBTLE);
+  const obj2 = useHomeDrawerGesture;
+  const panelTranslateX = obj2.useHomeDrawerState().panelTranslateX;
+  let items = [closure_5, token, panelTranslateX, guildItemSize];
   let c0;
   let c1;
-  [tmp3, tmp4, tmp5] = items;
+  let c2;
+  [tmp5, tmp6, tmp7, tmp8] = items;
+  const obj3 = _mod1655;
   class GuildsBarSeparatorTsx1 {
     constructor() {
-      obj = { transform: null };
-      obj1 = { scaleX: Math.max(1, (closure_0.get() + closure_1) / closure_1) };
+      obj = { backgroundColor: closure_0, transform: null };
+      obj1 = { scaleX: Math.max(1, (closure_1.get() + closure_2) / closure_2) };
       items = [];
       items[0] = obj1;
       obj.transform = items;
       return obj;
     }
   }
-  const items1 = [tmp4, tmp5];
+  const items1 = [tmp6, tmp7, tmp8];
   GuildsBarSeparatorTsx1.__closure = items1;
-  GuildsBarSeparatorTsx1.__workletHash = 16141865753371;
-  GuildsBarSeparatorTsx1.__initData = tmp3;
-  const animatedStyle = obj2.useAnimatedStyle(GuildsBarSeparatorTsx1);
+  GuildsBarSeparatorTsx1.__workletHash = 17321522248050;
+  GuildsBarSeparatorTsx1.__initData = tmp5;
+  const animatedStyle = obj3.useAnimatedStyle(GuildsBarSeparatorTsx1);
   const items2 = [tmp.separator, animatedStyle];
-  return jsx(_modDef1652.View, { style: items2 });
+  return jsx(_modDef1655.View, { style: items2 });
 }
 const jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles((width) => {
@@ -55,7 +60,7 @@ let closure_4 = createStyles.createStyles((width) => {
   size = { height: 1, width, marginTop: nativeDefault.modules.mobile.GUILD_BAR_ITEM_MARGIN, marginBottom: nativeDefault.modules.mobile.GUILD_BAR_ITEM_MARGIN, marginLeft: 12, marginRight: 12, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, transformOrigin: "0% 50%" };
   return obj;
 });
-let closure_5 = { code: "(function GuildsBarSeparatorTsx1(){let[panelTranslateX,guildItemSize]=this.__closure;return{transform:[{scaleX:Math.max(1,(panelTranslateX.get()+guildItemSize)/guildItemSize)}]};})" };
+let closure_5 = { code: "(function GuildsBarSeparatorTsx1(){let[separatorColor,panelTranslateX,guildItemSize]=this.__closure;return{backgroundColor:separatorColor,transform:[{scaleX:Math.max(1,(panelTranslateX.get()+guildItemSize)/guildItemSize)}]};})" };
 const memoResult = react.memo(function GuildsBarSeparator() {
   let tmp5Result;
   const obj = useToken;

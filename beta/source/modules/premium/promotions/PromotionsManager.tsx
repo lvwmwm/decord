@@ -1,16 +1,16 @@
-// Module ID: 20050
-// Function ID: 20051
+// Module ID: 20380
+// Function ID: 20381
 // Name: PromotionsManager
-// Dependencies: [2186, 2176, 9747, 1083, 7383, 9792, 2170, 2]
+// Dependencies: [2189, 2179, 9623, 1083, 7882, 10011, 2173, 2]
 
-// Module 20050 (PromotionsManager)
+// Module 20380 (PromotionsManager)
 import Constants from "Constants" /* 1083 */;
-import EntitlementTypes from "EntitlementTypes" /* 2170 */;
-import PromotionsActionCreators from "PromotionsActionCreators" /* 9792 */;
-import LocaleStore from "LocaleStore" /* 2186 */;
-import SubscriptionStore from "SubscriptionStore" /* 2176 */;
-import PromotionsStore from "PromotionsStore" /* 9747 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7383 */;
+import EntitlementTypes from "EntitlementTypes" /* 2173 */;
+import PromotionsActionCreators from "PromotionsActionCreators" /* 10011 */;
+import LocaleStore from "LocaleStore" /* 2189 */;
+import SubscriptionStore from "SubscriptionStore" /* 2179 */;
+import PromotionsStore from "PromotionsStore" /* 9623 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
 import size from "module_2" /* 2 */;
 
 let map;

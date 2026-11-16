@@ -1,10 +1,10 @@
-// Module ID: 19917
-// Function ID: 19918
+// Module ID: 20250
+// Function ID: 20251
 // Name: improperGetEnglishIntlMessageText
 // Dependencies: [1113, 1152, 2]
 // Exports: improperGetEnglishIntlMessageText
 
-// Module 19917 (improperGetEnglishIntlMessageText)
+// Module 20250 (improperGetEnglishIntlMessageText)
 import intl from "intl" /* 1113 */;
 import _mod1152 from "module_1152" /* 1152 */;
 import size from "module_2" /* 2 */;

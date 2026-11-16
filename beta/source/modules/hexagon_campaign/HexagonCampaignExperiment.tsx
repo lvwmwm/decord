@@ -1,17 +1,17 @@
-// Module ID: 5201
-// Function ID: 5202
+// Module ID: 5337
+// Function ID: 5338
 // Name: HexagonCampaignExperiment
-// Dependencies: [1449, 5198, 2]
-// Exports: getIsHexagonCampaignEnabled, useIsHexagonCampaignEnabled, useIsHexagonCampaignQuestHomeHeaderEnabled, useIsHexagonCampaignQuestHomeRedirectEnabled
+// Dependencies: [1452, 5334, 2]
+// Exports: getIsHexagonCampaignEnabled, getIsHexagonCampaignQuestHomeRedirectEnabled, useIsHexagonCampaignEnabled, useIsHexagonCampaignQuestHomeHeaderEnabled, useIsHexagonCampaignQuestHomeRedirectEnabled, useShouldShowHexagonCampaignIntroCard
 
-// Module 5201 (HexagonCampaignExperiment)
-import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5198 */;
-import ApexExperiment from "ApexExperiment" /* 1449 */;
+// Module 5337 (HexagonCampaignExperiment)
+import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5334 */;
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 let obj = { kind: "user", name: "2026-09-hexagon-campaign-client", defaultConfig: { enabled: false, questHomeRedirect: false }, variations: { 0: { enabled: false, questHomeRedirect: false }, 1: { enabled: true, questHomeRedirect: true }, 2: { enabled: true, questHomeRedirect: false } } };
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
-const result = size.fileFinishedImporting("modules/hexagon_campaign/HexagonCampaignExperiment.tsx");
+let result = size.fileFinishedImporting("modules/hexagon_campaign/HexagonCampaignExperiment.tsx");
 
 export const HexagonCampaignClientExperiment = apexExperiment;
 export function useIsHexagonCampaignEnabled(location) {
@@ -32,6 +32,16 @@ export function useIsHexagonCampaignQuestHomeRedirectEnabled(location) {
   }
   return tmp2;
 }
+export function getIsHexagonCampaignQuestHomeRedirectEnabled(location) {
+  const obj = HexagonCampaignUtils;
+  if (obj.isHexagonCampaignTakeoverOver()) {
+    return false;
+  } else {
+    const obj2 = { location };
+    const config = apexExperiment.getConfig(obj2);
+    return config.enabled && config.questHomeRedirect;
+  }
+}
 export function useIsHexagonCampaignQuestHomeHeaderEnabled(HexagonCampaignQuestHomeHeader) {
   const obj = { location: HexagonCampaignQuestHomeHeader };
   let enabled = apexExperiment.useConfig(obj).enabled;
@@ -40,4 +50,13 @@ export function useIsHexagonCampaignQuestHomeHeaderEnabled(HexagonCampaignQuestH
     enabled = !obj2.isHexagonCampaignTakeoverOver();
   }
   return enabled;
+}
+export function useShouldShowHexagonCampaignIntroCard(stateFromStores) {
+  const obj = HexagonCampaignUtils;
+  let result = obj.isHexagonCampaignHero(stateFromStores);
+  if (result) {
+    const tmpResult = HexagonCampaignUtils;
+    result = !tmpResult.isHexagonCampaignTakeoverOver();
+  }
+  return result;
 }

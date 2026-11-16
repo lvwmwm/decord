@@ -1,18 +1,18 @@
-// Module ID: 19029
-// Function ID: 19030
+// Module ID: 19341
+// Function ID: 19342
 // Name: ReplyRow
-// Dependencies: [19, 17, 21, 18971, 575, 7076, 5783, 9566, 2]
+// Dependencies: [19, 17, 21, 19286, 575, 7428, 5919, 10409, 2]
 // Exports: ContentInventoryReplyRow
 
-// Module 19029 (ReplyRow)
+// Module 19341 (ReplyRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5783 */;
-import Pressables from "Pressables" /* 7076 */;
-import ReactionIcon from "ReactionIcon" /* 9566 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import Pressables from "Pressables" /* 7428 */;
+import ReactionIcon from "ReactionIcon" /* 10409 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 18971 */;
+import createICYMIStyles from "createICYMIStyles" /* 19286 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;

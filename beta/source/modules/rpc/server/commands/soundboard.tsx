@@ -1,16 +1,16 @@
-// Module ID: 16696
-// Function ID: 16697
+// Module ID: 16972
+// Function ID: 16973
 // Name: soundboard
-// Dependencies: [5, 6223, 1385, 6615, 1083, 9017, 7622, 7623, 12004, 7659, 7630, 9447, 7661, 7445, 2]
+// Dependencies: [5, 6359, 1388, 6751, 1083, 7307, 7226, 7227, 12866, 13026, 13021, 7303, 13028, 7937, 2]
 
-// Module 16696 (soundboard)
-import SoundboardActionCreators from "SoundboardActionCreators" /* 7622 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 9017 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 12004 */;
+// Module 16972 (soundboard)
+import SoundboardActionCreators from "SoundboardActionCreators" /* 7226 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 7307 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 12866 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SoundboardStore from "SoundboardStore" /* 6223 */;
-import UserStore from "UserStore" /* 1385 */;
-import Constants_mod from "Constants" /* 6615 */;
+import SoundboardStore from "SoundboardStore" /* 6359 */;
+import UserStore from "UserStore" /* 1388 */;
+import Constants_mod from "Constants" /* 6751 */;
 import Constants_mod2 from "Constants" /* 1083 */;
 import size from "module_2" /* 2 */;
 
@@ -43,7 +43,7 @@ let obj2 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -122,7 +122,7 @@ let obj4 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -180,7 +180,7 @@ let obj4 = {
                   playSound(tmp4, id, items);
                 }
                 c3 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "ulw" };
               } else {
                 const obj8 = { errorCode: constants.INVALID_PERMISSIONS };
                 const self3 = this;

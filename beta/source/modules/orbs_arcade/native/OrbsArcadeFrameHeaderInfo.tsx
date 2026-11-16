@@ -1,18 +1,18 @@
-// Module ID: 19464
-// Function ID: 19465
+// Module ID: 19781
+// Function ID: 19782
 // Name: OrbsArcadeFrameHeaderInfo
-// Dependencies: [19, 17, 2162, 17376, 21, 5170, 575, 5796, 504, 9675, 5783, 14767, 2]
+// Dependencies: [19, 17, 2165, 17647, 21, 5306, 575, 5932, 504, 10038, 5919, 10043, 2]
 // Exports: default
 
-// Module 19464 (OrbsArcadeFrameHeaderInfo)
+// Module 19781 (OrbsArcadeFrameHeaderInfo)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ButtonConstants from "ButtonConstants" /* 5796 */;
+import ButtonConstants from "ButtonConstants" /* 5932 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2162 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 17376 */;
+import ApplicationStore from "ApplicationStore" /* 2165 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 17647 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;

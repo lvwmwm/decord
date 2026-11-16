@@ -1,18 +1,18 @@
-// Module ID: 10986
-// Function ID: 10987
+// Module ID: 10948
+// Function ID: 10949
 // Name: FavoritesGuildUpsellSheet
-// Dependencies: [19, 5032, 1072, 21, 10984, 10987, 5406, 10985, 10988, 1113, 3608, 10989, 6855, 5790, 10060, 10061, 10993, 1099, 2]
+// Dependencies: [19, 5168, 1072, 21, 10946, 10949, 5542, 10947, 10713, 1113, 3679, 10950, 6941, 5926, 9579, 10954, 10971, 1099, 2]
 // Exports: default
 
-// Module 10986 (FavoritesGuildUpsellSheet)
+// Module 10948 (FavoritesGuildUpsellSheet)
 import Constants from "Constants" /* 1072 */;
 import router_utils from "router_utils" /* 1099 */;
-import _modDef3608 from "module_3608" /* 3608 */;
-import FavoritesConstants from "FavoritesConstants" /* 5032 */;
-import openPremiumModalDefault from "openPremiumModal" /* 10060 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10061 */;
-import useTrackFavoritesGuildUpsellModalOpenedDefault from "useTrackFavoritesGuildUpsellModalOpened" /* 10987 */;
-import FavoritesGuildAnalytics from "FavoritesGuildAnalytics" /* 10993 */;
+import _modDef3679 from "module_3679" /* 3679 */;
+import FavoritesConstants from "FavoritesConstants" /* 5168 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9579 */;
+import useTrackFavoritesGuildUpsellModalOpenedDefault from "useTrackFavoritesGuildUpsellModalOpened" /* 10949 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10954 */;
+import FavoritesGuildAnalytics from "FavoritesGuildAnalytics" /* 10971 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -40,20 +40,20 @@ export default function FavoritesGuildUpsellSheet(limit) {
   let FREE_FAVORITE_LIMIT = limit.limit;
   if (FREE_FAVORITE_LIMIT === undefined) {
     let tmp2 = dependencyMap;
-    FREE_FAVORITE_LIMIT = analyticsLocations(10984).FREE_FAVORITE_LIMIT;
+    FREE_FAVORITE_LIMIT = analyticsLocations(10946).FREE_FAVORITE_LIMIT;
   }
   analyticsLocations = useTrackFavoritesGuildUpsellModalOpenedDefault().analyticsLocations;
   importDefault = react.useCallback(() => {
     const obj = closure_1(dependencyMap[6]);
     obj.hideActionSheet(analyticsLocations(dependencyMap[7]).FAVORITES_UPSELL_SHEET_KEY);
   }, []);
-  let obj = { title: intl.string(_modDef3608.hINqUs), description: intl2.formatToPlainString(_modDef3608.D7S0Zo, obj2), illustration: closure_6(analyticsLocations(10989).FavoritesSpotIllustration, {}), actions: closure_7(ButtonGroup, obj3) };
-  const PromoSheet = analyticsLocations(10988).PromoSheet;
+  let obj = { title: intl.string(_modDef3679.hINqUs), description: intl2.formatToPlainString(_modDef3679.D7S0Zo, obj2), illustration: closure_6(analyticsLocations(10950).FavoritesSpotIllustration, {}), actions: closure_7(ButtonGroup, obj3) };
+  const PromoSheet = analyticsLocations(10713).PromoSheet;
   intl = analyticsLocations(1113).intl;
   intl2 = analyticsLocations(1113).intl;
   obj2 = { count: FREE_FAVORITE_LIMIT, maxCount: MAX_FAVORITE_CHANNELS };
   obj3 = { children: items };
-  ButtonGroup = analyticsLocations(6855).ButtonGroup;
+  ButtonGroup = analyticsLocations(6941).ButtonGroup;
   const obj4 = {
     size: "lg",
     variant: "primary",
@@ -65,13 +65,13 @@ export default function FavoritesGuildUpsellSheet(limit) {
       tmp2(obj);
     }
   };
-  const Button = analyticsLocations(5790).Button;
+  const Button = analyticsLocations(5926).Button;
   intl3 = analyticsLocations(1113).intl;
   items = [closure_6(Button, obj4), ];
   const obj5 = {
     size: "lg",
     variant: "secondary",
-    text: intl4.string(_modDef3608.PprSsy),
+    text: intl4.string(_modDef3679.PprSsy),
     onPress() {
       closure_1();
       const obj = FavoritesGuildAnalytics;
@@ -80,7 +80,7 @@ export default function FavoritesGuildUpsellSheet(limit) {
       obj2.transitionToGuild(FAVORITES);
     }
   };
-  const Button2 = analyticsLocations(5790).Button;
+  const Button2 = analyticsLocations(5926).Button;
   intl4 = analyticsLocations(1113).intl;
   items[1] = closure_6(Button2, obj5);
   return closure_6(PromoSheet, obj);

@@ -1,76 +1,45 @@
 // Module ID: 1918
 // Function ID: 1919
-// Dependencies: [42, 41, 93, 95, 98, 21, 1876]
-// Exports: createAnimatedComponent
+// Dependencies: [1761, 1882]
+// Exports: create
 
 // Module 1918
-import Fragment from "Fragment" /* 21 */;
-import _modDef1876 from "module_1876" /* 1876 */;
-import _createClass from "_createClass" /* 42 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
+import _mod1761 from "module_1761" /* 1761 */;
 
-let dependencyMap, importDefault;
 
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-const jsx = Fragment.jsx;
-
-export function createAnimatedComponent(displayName) {
-  let closure_1;
-  importDefault = displayName;
-  class AnimatedComponent {
-    constructor(arg0) {
-      let constructResult;
-      const self = this;
-      _classCallCheck(this, AnimatedComponent);
-      const items = [displayName, arg0];
-      const obj = _getPrototypeOf(AnimatedComponent);
-      const tmp2 = _getPrototypeOf;
-      const tmp3 = _possibleConstructorReturn;
-      if (_isNativeReflectConstruct()) {
-        const _Reflect = Reflect;
-        constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items);
+export const create = (obj) => {
+  for (const key10004 in obj) {
+    let tmp2 = key10004;
+    let tmp3 = obj[key10004];
+    if (!tmp3.animationName) {
+      continue;
+    } else {
+      let animationName = tmp3.animationName;
+      let mapped;
+      if (typeof animationName === "object") {
+        let _Array = Array;
+        let arr2 = animationName;
+        if (!Array.isArray(animationName)) {
+          let items = [animationName];
+          arr2 = items;
+        }
+        mapped = arr2.map(function(item) {
+          let cSSKeyframesRuleImpl = item;
+          const obj = _mod1761;
+          const tmp = require;
+          const tmp2 = dependencyMap;
+          if (!obj.isCSSKeyframesRule(item)) {
+            const self = this;
+            const self2 = this;
+            cSSKeyframesRuleImpl = new tmp(tmp2[1]).CSSKeyframesRuleImpl(item);
+          }
+          return cSSKeyframesRuleImpl;
+        });
       }
-      return tmp3(self, constructResult);
+      tmp3.animationName = mapped;
+      continue;
     }
+    continue;
   }
-  let tmp = _inherits(AnimatedComponent, _modDef1876);
-  let tmp2 = _createClass(AnimatedComponent);
-  dependencyMap = tmp2;
-  let tmp3 = displayName.displayName || displayName.name || "Component";
-  tmp2.displayName = "AnimatedComponent(" + tmp3 + ")";
-  let tmp4 = displayName.displayName || displayName.name || "Component";
-  function animatedComponent(ref) {
-    const obj = { ref: null };
-    const merged = Object.assign(ref);
-    let tmp4 = null;
-    const tmp = jsx;
-    const tmp2 = closure_1;
-    if (null !== ref.ref) {
-      tmp4 = { forwardedRef: ref.ref };
-      const obj2 = { forwardedRef: ref.ref };
-    }
-    const merged1 = Object.assign(tmp4);
-    return tmp(tmp2, obj);
-  }
-  animatedComponent.displayName = tmp4;
-  return animatedComponent;
-}
+  return obj;
+};

@@ -1,16 +1,16 @@
-// Module ID: 14193
-// Function ID: 14194
+// Module ID: 14779
+// Function ID: 14780
 // Name: SuggestedSearchActionCreators
-// Dependencies: [5, 14153, 14154, 1072, 559, 14192, 14176, 572, 1282, 2]
+// Dependencies: [5, 14741, 14742, 1072, 559, 14778, 14764, 572, 1285, 2]
 // Exports: advanceSuggestedSearches, fetchInitialSuggestedSearches
 
-// Module 14193 (SuggestedSearchActionCreators)
+// Module 14779 (SuggestedSearchActionCreators)
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import SmartSearchExperiments from "SmartSearchExperiments" /* 14192 */;
+import SmartSearchExperiments from "SmartSearchExperiments" /* 14778 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SuggestedSearchStore from "SuggestedSearchStore" /* 14153 */;
-import SmartSearchConstants from "SmartSearchConstants" /* 14154 */;
+import SuggestedSearchStore from "SuggestedSearchStore" /* 14741 */;
+import SmartSearchConstants from "SmartSearchConstants" /* 14742 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -103,7 +103,7 @@ let obj = function _performSuggestedSearchesFetch() {
         tmp28 = null;
       }
       windowSize = tmp28;
-      return "flexDirection";
+      return "Path";
     })();
     iter.next();
     return iter;
@@ -124,7 +124,7 @@ obj = function _fetchInitialSuggestedSearches() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       try {
@@ -157,7 +157,7 @@ obj = function _fetchInitialSuggestedSearches() {
           return obj;
         }
         c2 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       } catch (tmp9) {
         c2 = 3;
         throw tmp9;

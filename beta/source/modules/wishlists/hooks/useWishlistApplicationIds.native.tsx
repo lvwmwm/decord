@@ -1,10 +1,10 @@
-// Module ID: 10817
-// Function ID: 10818
+// Module ID: 11726
+// Function ID: 11727
 // Name: useWishlistApplicationIds
 // Dependencies: [19, 1072, 2]
 // Exports: useWishlistApplicationIds
 
-// Module 10817 (useWishlistApplicationIds)
+// Module 11726 (useWishlistApplicationIds)
 import Constants from "Constants" /* 1072 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

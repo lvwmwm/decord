@@ -1,17 +1,17 @@
-// Module ID: 18039
-// Function ID: 18040
+// Module ID: 18313
+// Function ID: 18314
 // Name: ClipboardCopyInput
-// Dependencies: [5, 19, 17, 2117, 1072, 21, 5170, 504, 7235, 7303, 7451, 7181, 2]
+// Dependencies: [5, 19, 17, 2120, 1072, 21, 5306, 504, 7790, 7587, 7943, 7619, 2]
 // Exports: default
 
-// Module 18039 (ClipboardCopyInput)
+// Module 18313 (ClipboardCopyInput)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import AppStateStore from "AppStateStore" /* 2117 */;
-import createStyles from "createStyles" /* 5170 */;
+import AppStateStore from "AppStateStore" /* 2120 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -71,7 +71,7 @@ export default function ClipboardCopyInput(arg0) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } else {
           try {
@@ -149,7 +149,7 @@ export default function ClipboardCopyInput(arg0) {
                 }
               }
               c3 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "ulw" };
             }
           } catch (tmp26) {
             c3 = 3;

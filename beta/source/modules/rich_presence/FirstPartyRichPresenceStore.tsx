@@ -1,14 +1,14 @@
-// Module ID: 11703
-// Function ID: 11704
+// Module ID: 7319
+// Function ID: 7320
 // Name: FirstPartyRichPresenceStore
-// Dependencies: [11704, 11706, 1342, 504, 572, 2]
+// Dependencies: [7320, 15985, 1345, 504, 572, 2]
 
-// Module 11703 (FirstPartyRichPresenceStore)
+// Module 7319 (FirstPartyRichPresenceStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import _modDef1342 from "module_1342" /* 1342 */;
-import StageChannelSelfRichPresenceStoreDefault from "StageChannelSelfRichPresenceStore" /* 11706 */;
-import ConjureRichPresenceStore from "ConjureRichPresenceStore" /* 11704 */;
+import _modDef1345 from "module_1345" /* 1345 */;
+import StageChannelSelfRichPresenceStoreDefault from "StageChannelSelfRichPresenceStore" /* 15985 */;
+import ConjureRichPresenceStore from "ConjureRichPresenceStore" /* 7320 */;
 import size from "module_2" /* 2 */;
 
 function updateActivities() {
@@ -22,8 +22,8 @@ function updateActivities() {
     }
     continue;
   }
-  let flag = !_modDef1342(items, items);
-  _modDef1342(items, items);
+  let flag = !_modDef1345(items, items);
+  _modDef1345(items, items);
   if (flag) {
     flag = true;
   }

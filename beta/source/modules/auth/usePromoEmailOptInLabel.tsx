@@ -1,12 +1,12 @@
-// Module ID: 18400
-// Function ID: 18401
+// Module ID: 18691
+// Function ID: 18692
 // Name: usePromoEmailOptInLabel
-// Dependencies: [18401, 1113, 2]
+// Dependencies: [18692, 1113, 2]
 // Exports: usePromoEmailOptInLabel
 
-// Module 18400 (usePromoEmailOptInLabel)
+// Module 18691 (usePromoEmailOptInLabel)
 import intl2 from "intl" /* 1113 */;
-import RegistrationEmailOptInCopyExperimentDefault from "RegistrationEmailOptInCopyExperiment" /* 18401 */;
+import RegistrationEmailOptInCopyExperimentDefault from "RegistrationEmailOptInCopyExperiment" /* 18692 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/auth/usePromoEmailOptInLabel.tsx");

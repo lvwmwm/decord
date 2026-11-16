@@ -1,12 +1,12 @@
-// Module ID: 14648
-// Function ID: 14649
+// Module ID: 15134
+// Function ID: 15135
 // Name: CreateGameInvitePostModalActionCreators
-// Dependencies: [6831, 14649, 2118, 2]
+// Dependencies: [6838, 15135, 2121, 2]
 // Exports: closeCreateGameInvitePostModal, openCreateGameInvitePostModal
 
-// Module 14648 (CreateGameInvitePostModalActionCreators)
-import asyncRequire from "asyncRequire" /* 2118 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6831 */;
+// Module 15134 (CreateGameInvitePostModalActionCreators)
+import asyncRequire from "asyncRequire" /* 2121 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import size from "module_2" /* 2 */;
 
 let c3 = "create-game-invite-post";
@@ -14,7 +14,7 @@ const result = size.fileFinishedImporting("modules/game_invite_channels/native/C
 
 export function openCreateGameInvitePostModal(merged) {
   const obj = ModalActionCreatorsDefault;
-  obj.pushLazy(asyncRequire(14649, dependencyMap.paths), merged, c3);
+  obj.pushLazy(asyncRequire(15135, dependencyMap.paths), merged, c3);
 }
 export function closeCreateGameInvitePostModal() {
   const obj = ModalActionCreatorsDefault;

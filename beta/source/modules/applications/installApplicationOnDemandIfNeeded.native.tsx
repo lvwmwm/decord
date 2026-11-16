@@ -1,14 +1,14 @@
-// Module ID: 11931
-// Function ID: 11932
+// Module ID: 12763
+// Function ID: 12764
 // Name: installApplicationOnDemandIfNeeded
-// Dependencies: [5, 2140, 2162, 1072, 11932, 6969, 5807, 5921, 5355, 11067, 2]
+// Dependencies: [5, 2143, 2165, 1072, 12701, 7055, 5943, 6057, 5491, 12764, 2]
 // Exports: installApplicationOnDemandIfNeeded
 
-// Module 11931 (installApplicationOnDemandIfNeeded)
+// Module 12763 (installApplicationOnDemandIfNeeded)
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationRecord from "ApplicationRecord" /* 2140 */;
-import ApplicationStore from "ApplicationStore" /* 2162 */;
+import ApplicationRecord from "ApplicationRecord" /* 2143 */;
+import ApplicationStore from "ApplicationStore" /* 2165 */;
 import size from "module_2" /* 2 */;
 
 let c4;
@@ -32,7 +32,7 @@ let obj = function _installApplicationOnDemandIfNeeded() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       try {
@@ -65,7 +65,7 @@ let obj = function _installApplicationOnDemandIfNeeded() {
             let scopes;
             c3 = 1;
             c4 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "Path", done: true };
           }
         } else {
           if (1 === tmp4) {

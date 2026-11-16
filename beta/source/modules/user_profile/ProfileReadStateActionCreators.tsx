@@ -1,19 +1,19 @@
-// Module ID: 15298
-// Function ID: 15299
+// Module ID: 15858
+// Function ID: 15859
 // Name: ProfileReadStateActionCreators
-// Dependencies: [5, 9588, 1385, 7881, 3, 15278, 7892, 1282, 15299, 7893, 572, 2]
+// Dependencies: [5, 9465, 1388, 7352, 3, 15839, 7363, 1285, 15859, 7364, 572, 2]
 // Exports: ackProfileWishlist
 
-// Module 15298 (ProfileReadStateActionCreators)
+// Module 15858 (ProfileReadStateActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import ProfileReadStateUtils from "ProfileReadStateUtils" /* 7892 */;
-import ProfileReadStateSection from "ProfileReadStateSection" /* 7893 */;
-import ProfileReadStateEndpoints2 from "ProfileReadStateEndpoints" /* 15299 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
+import ProfileReadStateUtils from "ProfileReadStateUtils" /* 7363 */;
+import ProfileReadStateSection from "ProfileReadStateSection" /* 7364 */;
+import ProfileReadStateEndpoints2 from "ProfileReadStateEndpoints" /* 15859 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import WishlistStore from "WishlistStore" /* 9588 */;
-import UserStore from "UserStore" /* 1385 */;
-import UserProfileStore from "UserProfileStore" /* 7881 */;
+import WishlistStore from "WishlistStore" /* 9465 */;
+import UserStore from "UserStore" /* 1388 */;
+import UserProfileStore from "UserProfileStore" /* 7352 */;
 import size from "module_2" /* 2 */;
 
 let ackedAt, c5, closure_3, closure_4, closure_5;
@@ -72,7 +72,7 @@ let obj = function _ackProfileWishlist() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       let c4;
@@ -136,7 +136,7 @@ let obj = function _ackProfileWishlist() {
           closure_130_8.delete(combined);
         }
         c6 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       } catch (tmp31) {
         closure_3 = tmp31;
         if (0 === c4) {
@@ -169,7 +169,7 @@ obj = function _sendWishlistAck() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -220,7 +220,7 @@ obj = function _sendWishlistAck() {
                 if (id !== closure_1) {
                   c6 = 0;
                   c8 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "ulw" };
                 } else {
                   const obj7 = { type: "PROFILE_READ_STATE_ACK", ownerId, ackedAt };
                   const dispatch = closure_132_1(closure_132_2[10]).dispatch;
@@ -248,7 +248,7 @@ obj = function _sendWishlistAck() {
               c6 = 0;
             }
             c8 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } catch (tmp16) {
           closure_5 = tmp16;

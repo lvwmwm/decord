@@ -1,52 +1,44 @@
-// Module ID: 13914
-// Function ID: 13915
+// Module ID: 14273
+// Function ID: 14274
 // Name: CheckpointApngPlayer
-// Dependencies: [17, 5171, 21, 5170, 504, 5874, 1357, 9621, 2]
+// Dependencies: [17, 5307, 14253, 21, 5306, 504, 6010, 2]
 // Exports: default
 
-// Module 13914 (CheckpointApngPlayer)
+// Module 14273 (CheckpointApngPlayer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1357 */;
-import FastImageDefault from "FastImage" /* 5874 */;
-import AccessibilityStore from "AccessibilityStore" /* 5171 */;
-import createStyles from "createStyles" /* 5170 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import CheckpointStore from "CheckpointStore" /* 14253 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;
 const jsx = Fragment.jsx;
-let closure_6 = createStyles.createStyles({ container: { alignItems: "center", justifyContent: "center" } });
+let closure_7 = createStyles.createStyles({ container: { alignItems: "center", justifyContent: "center" } });
 const result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointApngPlayer.tsx");
 
-export default function CheckpointApngPlayer(staticUri) {
+export default function CheckpointApngPlayer(style) {
   let animatedUri;
-  let obj6;
-  let style;
-  let tmp8;
+  let compactAssets;
+  let staticUri;
   let useReducedMotion;
-  ({ animatedUri, style } = staticUri);
-  staticUri = staticUri.staticUri;
+  style = style.style;
+  ({ animatedUri, staticUri } = style);
+  const tmp = closure_7();
   const items = [AccessibilityStore];
-  const obj2 = { style: closure_6().container, children: null };
   const obj = get_initialized;
-  if (obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion)) {
-    const obj4 = { uri: staticUri };
-    obj2.children = jsx(FastImageDefault, { source: obj4, style, resizeMode: "cover" });
-    tmp8 = obj2;
-  } else {
-    let tmp4Result;
-    const tmp2Result = utils_PlatformUtils;
-    if (tmp2Result.isIOS()) {
-      const obj5 = { source: obj6, style, resizeMode: "cover" };
-      obj6 = { uri: animatedUri };
-      tmp4Result = tmp4(FastImageDefault, obj5);
-    } else {
-      const obj7 = { url: animatedUri, autoplay: true, style };
-      tmp4Result = tmp4(tmp2(9621).APNGPlayer, obj7);
+  const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  const items1 = [CheckpointStore];
+  const obj2 = get_initialized;
+  if (!stateFromStores) {
+    let obj3;
+    if (!obj2.useStateFromStores(items1, () => compactAssets.compactAssets)) {
+      obj3 = { style: tmp.container, children: null };
+      const obj5 = { uri: animatedUri };
     }
-    obj2.children = tmp4Result;
-    tmp8 = obj2;
+    return <tmp5 {...obj3} />;
   }
-  return <tmp5 {...tmp8} />;
+  obj3 = { style: tmp.container, children: null };
+  const obj6 = { style: tmp.container, children: null };
 };

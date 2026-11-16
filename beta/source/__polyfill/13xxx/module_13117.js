@@ -1,148 +1,158 @@
 // Module ID: 13117
 // Function ID: 13118
-// Dependencies: [13118, 13119, 13120, 13121]
+// Dependencies: [5, 41, 42, 93, 95, 98, 19, 17, 21, 5350]
 
 // Module 13117
-import _mod13119 from "module_13119" /* 13119 */;
-import module_13118_mod from "module_13118" /* 13118 */;
-import module_13120 from "module_13120" /* 13120 */;
-import size_mod from "module_13121" /* 13121 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import MemoryRouter from "MemoryRouter" /* 5350 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
+import react from "react" /* 19 */;
 
-let module_13118;
-let obj5;
-let size;
-function patchDictionary(descriptors, descriptors1) {
-  const obj = {};
-  for (const key10004 in descriptors) {
-    let syntax = descriptors[key10004].syntax || descriptors[key10004];
-    obj[key10004] = syntax;
-    continue;
+let closure_2, closure_3;
+
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
-  for (const key10011 in descriptors1) {
-    let syntax3 = descriptors1[key10011].syntax;
-    if (key10011 in descriptors) {
-      if (syntax3) {
-        let syntax2;
-        if (re0.test(descriptors1[key10011].syntax)) {
-          let str2 = descriptors1[key10011].syntax;
-          let text = `${obj[key10011]} `;
-          syntax2 = `${obj[key10011]} ${str2.trim()}`;
-        } else {
-          syntax2 = descriptors1[key10011].syntax;
-        }
-        obj[key10011] = syntax2;
-        continue;
-      } else {
-        delete obj[tmp5];
-        continue;
-      }
-      continue;
+}
+const Linking = react_native.Linking;
+const jsx = Fragment.jsx;
+const re8 = /.*?:\/\//g;
+let closure_1;
+class DeepLinking {
+  constructor() {
+    let constructResult;
+    const self = this;
+    const items = [...arguments];
+    let closure_0;
+    _classCallCheck(this, DeepLinking);
+    const items1 = [...items];
+    const obj = _getPrototypeOf(DeepLinking);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
     } else {
-      if (!syntax3) {
-        continue;
-      } else {
-        let str = descriptors1[key10011].syntax;
-        obj[key10011] = str.replace(re0, "");
-        continue;
-      }
-      continue;
+      constructResult = obj.apply(self, items1);
     }
-    continue;
+    const tmp3Result = tmp3(self, constructResult);
+    closure_0 = tmp3Result;
+    tmp3Result.handleChange = (url) => {
+      closure_0.push(url.url);
+    };
+    return tmp3Result;
   }
-  return obj;
 }
-const re0 = /^\s*\|\s*/;
-let obj = { types: patchDictionary(module_13118, _mod13119.syntaxes), atrules: obj5, properties: patchDictionary(size, _mod13119.properties) };
-module_13118 = module_13118_mod;
-const obj2 = Object.create(null);
-for (const key10022 in module_13120) {
-  let tmp23 = module_13120[key10022];
-  let tmp7 = null;
-  if (tmp23.descriptors) {
-    let _Object = Object;
-    let obj3 = Object.create(null);
-    tmp7 = obj3;
-    let keys = Object.keys();
-    if (keys !== undefined) {
-      tmp7 = obj3;
-      let tmp9 = keys[tmp2];
-      while (tmp9 !== undefined) {
-        obj3[tmp9] = tmp23.descriptors[tmp9].syntax;
-        continue;
-      }
-    }
+_inherits(DeepLinking, react.Component);
+const entry = {
+  key: "push",
+  value: function push(str) {
+    const history = this.history;
+    history.push(str.replace(re8, ""));
   }
-  let str = tmp23.syntax;
-  let substr = key10022.substr(1);
-  let str2 = str.trim();
-  let str3 = str2.match(/^@\S+\s+([^;\{]*)/)[1];
-  let trimmed = str3.trim() || null;
-  let obj4 = { prelude: trimmed, descriptors: tmp7 };
-  obj2[substr] = obj4;
-  continue;
-}
-const atrules = _mod13119.atrules;
-obj5 = {};
-for (const key10049 in obj2) {
-  let descriptors1 = atrules[key10049] && atrules[key10049].descriptors || null;
-  if (key10049 in atrules) {
-    if ("prelude" in atrules[key10049]) {
-      let patchDictionaryResult;
-      let obj6 = { prelude: atrules[key10049].prelude, descriptors: patchDictionaryResult };
-      if (obj2[key10049].descriptors) {
-        let descriptors = obj2[key10049].descriptors;
-        if (!descriptors1) {
-          descriptors1 = {};
-        }
-        patchDictionaryResult = patchDictionary(descriptors, descriptors1);
+};
+let items = [entry, , , ];
+const entry1 = {
+  key: "componentDidMount",
+  value: function componentDidMount() {
+    return closure_1(...arguments);
+  }
+};
+closure_1 = _asyncToGenerator(async function() {
+  const self = this;
+  let c4 = 0;
+  let c5 = 0;
+  return (async (arg0, value) => {
+    if (c5 === 2) {
+      c5 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        return { value, done: true };
       } else {
-        patchDictionaryResult = descriptors1;
-        if (patchDictionaryResult) {
-          let obj7 = {};
-          patchDictionaryResult = obj7;
-          let keys1 = Object.keys();
-          if (keys1 !== undefined) {
-            patchDictionaryResult = obj7;
-            let tmp16 = keys1[tmp];
-            while (tmp16 !== undefined) {
-              obj7[tmp16] = descriptors1[tmp16].syntax;
-              continue;
-            }
+        return { value: "HermesInternal", done: "ulw" };
+      }
+    } else {
+      try {
+        let closure_0;
+        c5 = 2;
+        if (0 === c4) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            return { value, done: true };
+          } else {
+            closure_3 = self;
+            closure_2 = self;
+            closure_1 = tmp;
+            closure_0 = undefined;
+            c4 = 1;
+            c5 = 1;
+            const obj4 = { value: c5.getInitialURL(), done: false };
+            return obj4;
           }
+        } else if (arg0 === 1) {
+          c5 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c5 = 3;
+          return { value, done: true };
+        } else {
+          closure_0 = value;
+          const tmp6 = closure_0;
+          if (tmp6) {
+            closure_3.push(closure_0);
+          }
+          const listener = c5.addEventListener("url", closure_3.handleChange);
+          c5 = 3;
+          return { value: "HermesInternal", done: "ulw" };
         }
-      }
-      obj5[key10049] = obj6;
-      continue;
-    }
-  }
-  let prelude = obj2[key10049].prelude || null;
-}
-for (const key10070 in atrules) {
-  if (globalThis.hasOwnProperty.call(obj2, key10070)) {
-    continue;
-  } else {
-    let prelude1 = atrules[key10070].prelude || null;
-    let obj8 = { prelude: prelude1, descriptors: descriptors2 };
-    let descriptors2 = atrules[key10070].descriptors;
-    if (descriptors2) {
-      let descriptors3 = atrules[key10070].descriptors;
-      let obj16 = {};
-      descriptors2 = obj16;
-      let keys2 = Object.keys();
-      if (keys2 !== undefined) {
-        descriptors2 = obj16;
-        let tmp20 = keys2[tmp];
-        while (tmp20 !== undefined) {
-          obj16[tmp20] = descriptors3[tmp20].syntax;
-          continue;
-        }
+      } catch (tmp16) {
+        c5 = 3;
+        throw tmp16;
       }
     }
-    obj5[key10070] = obj8;
-    continue;
+  })();
+});
+items[1] = entry1;
+items[2] = {
+  key: "componentWillUnmount",
+  value: function componentWillUnmount() {
+    const removed = Linking.removeEventListener("url", this.handleChange);
   }
-  continue;
-}
-size = size_mod;
+};
+items[3] = {
+  key: "render",
+  value: function render() {
+    const self = this;
+    return jsx(MemoryRouter.__HistoryContext.Consumer, {
+      children(history) {
+        self.history = history;
+        return self.props.children || null;
+      }
+    });
+  }
+};
 
-export default obj;
+export default _createClass(DeepLinking, items);

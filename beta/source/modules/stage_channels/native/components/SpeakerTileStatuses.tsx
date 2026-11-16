@@ -1,21 +1,21 @@
-// Module ID: 12228
-// Function ID: 12229
+// Module ID: 13090
+// Function ID: 13091
 // Name: SpeakerTileStatuses
-// Dependencies: [19, 17, 2130, 5835, 6845, 21, 5170, 575, 504, 9348, 12171, 11976, 11977, 1187, 12229, 12230, 7196, 2]
+// Dependencies: [19, 17, 2133, 5971, 6932, 21, 5306, 575, 504, 10597, 13050, 12836, 12837, 1187, 13091, 13092, 7634, 2]
 // Exports: BlockedStatus, IgnoredStatus
 
-// Module 12228 (SpeakerTileStatuses)
+// Module 13090 (SpeakerTileStatuses)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7196 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 12230 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7634 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13092 */;
 import react from "react" /* 19 */;
-import MediaEngineStore from "MediaEngineStore" /* 2130 */;
-import VoiceStateStore from "VoiceStateStore" /* 5835 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 6845 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import MediaEngineStore from "MediaEngineStore" /* 2133 */;
+import VoiceStateStore from "VoiceStateStore" /* 5971 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 6932 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let obj2;
@@ -41,13 +41,13 @@ const memoResult = react.memo(function VoiceStatus(userId) {
   const tmp = closure_8();
   const obj = userId(504);
   const stateFromStores = obj.useStateFromStores(items, () => MediaEngineStore.isLocalMute(userId), items1);
-  const withLocalSelfMuteDeaf = userId(9348).withLocalSelfMuteDeaf;
-  userId(9348);
+  const withLocalSelfMuteDeaf = userId(10597).withLocalSelfMuteDeaf;
+  userId(10597);
   const items2 = [VoiceStateStore];
   const items3 = [channelId, userId];
   const obj2 = userId(504);
   const stateFromStores1 = obj2.useStateFromStores(items2, () => VoiceStateStore.getVoiceStateForChannel(channelId, userId), items3);
-  const obj3 = userId(9348);
+  const obj3 = userId(10597);
   const result = withLocalSelfMuteDeaf(stateFromStores1, obj3.useLocalSelfMuteDeaf());
   let flag;
   if (result != null) {
@@ -64,15 +64,15 @@ const memoResult = react.memo(function VoiceStatus(userId) {
     flag2 = false;
   }
   if (stateFromStores) {
-    tmp7 = channelId(12171);
+    tmp7 = channelId(13050);
     flag3 = true;
   } else if (flag2) {
-    tmp7 = channelId(11976);
+    tmp7 = channelId(12836);
     flag3 = false;
   } else {
     flag3 = false;
     if (flag) {
-      tmp7 = channelId(11977);
+      tmp7 = channelId(12837);
       flag3 = false;
     }
   }
@@ -95,7 +95,7 @@ const memoResult1 = react.memo(function ModeratorStatus(userId) {
   const tmp = closure_8();
   const obj = userId(504);
   if (obj.useStateFromStores(items, () => StageChannelRoleStore.isModerator(userId, channelId), items1)) {
-    tmp4 = channelId(12229);
+    tmp4 = channelId(13091);
   }
   let tmp6 = null;
   if (null != tmp4) {

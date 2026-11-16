@@ -1,16 +1,16 @@
-// Module ID: 13607
-// Function ID: 13608
+// Module ID: 14212
+// Function ID: 14213
 // Name: AppealIngestionBreadcrumbs
-// Dependencies: [19, 17, 21, 5170, 575, 5783, 1113, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 5919, 1113, 2]
 // Exports: default
 
-// Module 13607 (AppealIngestionBreadcrumbs)
+// Module 14212 (AppealIngestionBreadcrumbs)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5783 */;
+import Text_Text from "Text/Text" /* 5919 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

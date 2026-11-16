@@ -1,12 +1,12 @@
-// Module ID: 12481
-// Function ID: 12482
+// Module ID: 12151
+// Function ID: 12152
 // Name: resolvedDisplayField
-// Dependencies: [12482, 12483, 2]
+// Dependencies: [12152, 12153, 2]
 // Exports: decimalToClampedPercentage, resolveProgressPercentage, resolveSingleStringOrSkeleton, resolveStatComponentValues, resolveTextComponentValues
 
-// Module 12481 (resolvedDisplayField)
-import resolvedValues from "resolvedValues" /* 12482 */;
-import ApplicationWidgetFieldPresentationType from "ApplicationWidgetFieldPresentationType" /* 12483 */;
+// Module 12151 (resolvedDisplayField)
+import resolvedValues from "resolvedValues" /* 12152 */;
+import ApplicationWidgetFieldPresentationType from "ApplicationWidgetFieldPresentationType" /* 12153 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("../discord_common/js/packages/application-widget-renderer/src/resolvedDisplayField.tsx");

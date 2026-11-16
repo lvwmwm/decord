@@ -1,28 +1,36 @@
-// Module ID: 19346
-// Function ID: 19347
+// Module ID: 19659
+// Function ID: 19660
 // Name: CheckpointTestingOptions
-// Dependencies: [5, 13700, 13702, 3250, 13701, 19347, 1113, 2]
+// Dependencies: [5, 19658, 14258, 3319, 14260, 19660, 1113, 18323, 2]
+// Exports: getCheckpointTestingOptions
 
-// Module 19346 (CheckpointTestingOptions)
-import _modDef3250 from "module_3250" /* 3250 */;
-import openCheckpoint from "openCheckpoint" /* 13700 */;
-import CheckpointActionCreators from "CheckpointActionCreators" /* 13701 */;
-import CheckpointMockData from "CheckpointMockData" /* 13702 */;
+// Module 19659 (CheckpointTestingOptions)
+import _modDef3319 from "module_3319" /* 3319 */;
+import openCheckpoint2 from "openCheckpoint" /* 14258 */;
+import CheckpointActionCreators from "CheckpointActionCreators" /* 14260 */;
+import CheckpointMockData from "CheckpointMockData" /* 18323 */;
+import CheckpointMitigationOverrideStore from "CheckpointMitigationOverrideStore" /* 19658 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2;
 
 function action() {
-  const obj = openCheckpoint;
-  return obj.openCheckpoint("qa_menu", ZERO_DATA !== CheckpointMockData.CheckpointMockStats.NO_PERSONAL_DATA, ZERO_DATA);
+  const tmp = closure_2();
+  const openCheckpoint = openCheckpoint2.openCheckpoint;
+  const obj = {};
+  openCheckpoint2;
+  const merged = Object.assign(tmp);
+  const merged1 = Object.assign(UNAVAILABLE);
+  return openCheckpoint("qa_menu", obj);
 }
+let closure_2 = CheckpointMitigationOverrideStore.getCheckpointMitigationMock;
 let c0;
-let obj = { id: "open", label: _modDef3250.yLZjcu, description: "Array", action };
+let obj = { id: "open", label: _modDef3319.yLZjcu, action };
 const items = [obj, , , , ];
 let obj2 = {
   id: "reset",
-  label: _modDef3250["2DL3aX"],
+  label: _modDef3319["2DL3aX"],
   action() {
     return closure_3(...arguments);
   }
@@ -39,7 +47,7 @@ let closure_3 = _asyncToGenerator(async (arg0, value) => {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "HermesInternal", done: "ulw" };
     }
   } else {
     try {
@@ -68,18 +76,18 @@ let closure_3 = _asyncToGenerator(async (arg0, value) => {
         const obj = { value, done: true };
         return obj;
       } else {
-        const showCheckpointTestingToast = closure_128_0(closure_128_2[5]).showCheckpointTestingToast;
-        const tmp15 = closure_128_0(closure_128_2[5]);
-        const intl = closure_128_0(closure_128_2[6]).intl;
+        const showCheckpointTestingToast = closure_128_0(closure_128_1[5]).showCheckpointTestingToast;
+        const tmp15 = closure_128_0(closure_128_1[5]);
+        const intl = closure_128_0(closure_128_1[6]).intl;
         const string = intl.string;
-        const tmp20 = closure_128_1(closure_128_2[3]);
+        const t = closure_128_0(closure_128_1[6]).t;
         if (value) {
-          const result = showCheckpointTestingToast(string(tmp20.D5x6qE), "success");
+          const result = showCheckpointTestingToast(string(t.i4jeWR), "success");
         } else {
-          const result1 = showCheckpointTestingToast(string(tmp20.EkMBfH), "failure");
+          const result1 = showCheckpointTestingToast(string(t.fEptJP), "failure");
         }
         c2 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } catch (tmp8) {
       c2 = 3;
@@ -88,18 +96,31 @@ let closure_3 = _asyncToGenerator(async (arg0, value) => {
   }
 });
 items[1] = obj2;
-const kPBZ5M = _modDef3250.kPBZ5M;
-const cf0nfD = _modDef3250.cf0nfD;
-const DEFAULT = CheckpointMockData.CheckpointMockStats.DEFAULT;
-items[2] = { id: "open-fake-data", label: kPBZ5M, description: cf0nfD, action };
-const UwiUbM = _modDef3250.UwiUbM;
-const prop = _modDef3250["+5dICr"];
-const NO_PERSONAL_DATA = CheckpointMockData.CheckpointMockStats.NO_PERSONAL_DATA;
-items[3] = { id: "open-global-stats", label: UwiUbM, description: prop, action };
-const BYW9oX = _modDef3250.BYW9oX;
-const NffC17 = _modDef3250.NffC17;
-const ZERO_DATA = CheckpointMockData.CheckpointMockStats.ZERO_DATA;
-items[4] = { id: "open-zero-stats", label: BYW9oX, description: NffC17, action };
+const kPBZ5M = _modDef3319.kPBZ5M;
+const FAKE_DATA = CheckpointMockData.CheckpointMocks.FAKE_DATA;
+items[2] = { id: "open-fake-data", label: kPBZ5M, action };
+const UwiUbM = _modDef3319.UwiUbM;
+const GLOBAL_STATS = CheckpointMockData.CheckpointMocks.GLOBAL_STATS;
+items[3] = { id: "open-global-stats", label: UwiUbM, action };
+const BYW9oX = _modDef3319.BYW9oX;
+const ZERO_STATS = CheckpointMockData.CheckpointMocks.ZERO_STATS;
+items[4] = { id: "open-zero-stats", label: BYW9oX, action };
+const items1 = [...items];
+const v58TARv = _modDef3319["58TARv"];
+const UNAVAILABLE = CheckpointMockData.CheckpointMocks.UNAVAILABLE;
+let obj3 = { id: "open-unavailable", label: v58TARv, action };
+const items2 = [obj3];
+HermesBuiltin.arraySpread(items1, items2, tmp4);
+let closure_5 = ["reset"];
 let result = size.fileFinishedImporting("modules/checkpoint/testing/CheckpointTestingOptions.tsx");
 
-export const CHECKPOINT_TESTING_OPTIONS = items;
+export const CHECKPOINT_TESTING_OPTIONS = items1;
+export function getCheckpointTestingOptions(mode) {
+  if ("off" === mode) {
+    return [];
+  } else if ("reset_only" === mode) {
+    return items1.filter((id) => closure_1_5.includes(id.id));
+  } else if ("all" === mode) {
+    return items1;
+  }
+}

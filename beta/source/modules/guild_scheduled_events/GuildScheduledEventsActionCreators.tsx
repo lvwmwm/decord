@@ -1,19 +1,19 @@
-// Module ID: 9079
-// Function ID: 9080
+// Module ID: 7970
+// Function ID: 7971
 // Name: GuildScheduledEventsActionCreators
-// Dependencies: [5, 502, 6943, 5025, 1072, 1282, 6793, 1099, 9080, 6620, 572, 9085, 9086, 9087, 11, 2]
+// Dependencies: [5, 502, 7029, 5161, 1072, 1285, 6925, 1099, 7971, 6756, 572, 7976, 7977, 7978, 11, 2]
 
-// Module 9079 (GuildScheduledEventsActionCreators)
+// Module 7970 (GuildScheduledEventsActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import router_utils from "router_utils" /* 1099 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6793 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 9080 */;
-import guildEventEmbedFetchQueue from "guildEventEmbedFetchQueue" /* 9086 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6925 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 7971 */;
+import guildEventEmbedFetchQueue from "guildEventEmbedFetchQueue" /* 7977 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6943 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 5025 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7029 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 5161 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -213,7 +213,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -253,7 +253,7 @@ let obj = {
             const obj = tmp(c2[10]);
             obj.dispatch(obj7);
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } catch (tmp12) {
           c3 = 3;
@@ -283,7 +283,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         let c3;
@@ -368,7 +368,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         let c3;
@@ -405,7 +405,7 @@ let obj = {
                 return obj9;
               } else {
                 rsvp = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "ulw" };
               }
             }
           } else if (1 === userId) {
@@ -459,7 +459,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         let c3;
@@ -534,7 +534,7 @@ let obj = {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } catch (tmp33) {
           closure_2 = tmp33;
@@ -574,7 +574,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {

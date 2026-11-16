@@ -1,11 +1,11 @@
-// Module ID: 19905
-// Function ID: 19906
+// Module ID: 20238
+// Function ID: 20239
 // Name: SearchResultsFeedbackExperiment
-// Dependencies: [1449, 2]
+// Dependencies: [1452, 2]
 // Exports: getIsSearchResultsFeedbackExperimentEnabled, useIsSearchResultsFeedbackExperimentEnabled
 
-// Module 19905 (SearchResultsFeedbackExperiment)
-import ApexExperiment from "ApexExperiment" /* 1449 */;
+// Module 20238 (SearchResultsFeedbackExperiment)
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

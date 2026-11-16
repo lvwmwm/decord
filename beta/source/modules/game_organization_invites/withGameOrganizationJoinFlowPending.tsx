@@ -1,10 +1,10 @@
-// Module ID: 13470
-// Function ID: 13471
+// Module ID: 14068
+// Function ID: 14069
 // Name: withGameOrganizationJoinFlowPending
 // Dependencies: [5, 572, 2]
 // Exports: default
 
-// Module 13470 (withGameOrganizationJoinFlowPending)
+// Module 14068 (withGameOrganizationJoinFlowPending)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -27,7 +27,7 @@ let obj = function _withGameOrganizationJoinFlowPending() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {

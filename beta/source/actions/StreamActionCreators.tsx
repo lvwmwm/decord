@@ -1,32 +1,32 @@
-// Module ID: 8011
-// Function ID: 8012
+// Module ID: 6852
+// Function ID: 6853
 // Name: StreamActionCreators
-// Dependencies: [5, 5926, 8012, 8013, 6801, 502, 5019, 5041, 5073, 5835, 1072, 6802, 572, 6804, 38, 6210, 8014, 5920, 8040, 1282, 1089, 6834, 1260, 6106, 6793, 7582, 7584, 2]
+// Dependencies: [5, 6062, 6853, 6854, 6810, 502, 5155, 5177, 5209, 5971, 1072, 6793, 572, 6798, 38, 6346, 6855, 6056, 6889, 1285, 1089, 6841, 1264, 6242, 6925, 8134, 8136, 2]
 // Exports: changeStreamRegion, closeStream, fetchStreamPreview, joinPrivateChannelAndWatchStream, notifyStreamStart, setLayout, setStreamPaused, startStream, stopOwnStream, stopStream, toggleSelfStreamHidden, updateStreamSettings, watchStreamAndTransitionToStream
 
-// Module 8011 (StreamActionCreators)
+// Module 6852 (StreamActionCreators)
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import StreamQualityUtils from "StreamQualityUtils" /* 6106 */;
-import ChannelUtils from "ChannelUtils" /* 6210 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6793 */;
-import Constants2 from "Constants" /* 6802 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6804 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6834 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7582 */;
-import CallActionCreatorsDefault from "CallActionCreators" /* 7584 */;
-import transitionToStreamDefault from "transitionToStream" /* 8040 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
+import StreamQualityUtils from "StreamQualityUtils" /* 6242 */;
+import ChannelUtils from "ChannelUtils" /* 6346 */;
+import Constants2 from "Constants" /* 6793 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6798 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6841 */;
+import transitionToStreamDefault from "transitionToStream" /* 6889 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6925 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 8134 */;
+import CallActionCreatorsDefault from "CallActionCreators" /* 8136 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GameConsoleStore from "GameConsoleStore" /* 5926 */;
-import PopoutWindowStore from "PopoutWindowStore" /* 8012 */;
-import ApplicationStreamPreviewStore from "ApplicationStreamPreviewStore" /* 8013 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6801 */;
+import GameConsoleStore from "GameConsoleStore" /* 6062 */;
+import PopoutWindowStore from "PopoutWindowStore" /* 6853 */;
+import ApplicationStreamPreviewStore from "ApplicationStreamPreviewStore" /* 6854 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6810 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5073 */;
-import VoiceStateStore from "VoiceStateStore" /* 5835 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
+import VoiceStateStore from "VoiceStateStore" /* 5971 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -65,7 +65,7 @@ function watchStream(stream, forceMultiple) {
       }
       dispatch(obj3);
       if (null != guildId) {
-        const tmp12Result = tmp12(8014);
+        const tmp12Result = tmp12(6855);
         const result = tmp12Result.maybeSetGuildRoomVideoOverlay(true, guildId, channelId);
       }
       let forceFocus;
@@ -84,7 +84,7 @@ function watchStream(stream, forceMultiple) {
         tmp24 = forceMultiple;
       }
       if (!tmp24) {
-        const tmp18Result = tmp18(5920);
+        const tmp18Result = tmp18(6056);
         const participant = tmp18Result.selectParticipant(stream.channelId, encodeStreamKeyResult);
       }
     } else {
@@ -119,7 +119,7 @@ let obj = function _fetchStreamPreview() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -192,7 +192,7 @@ let obj = function _fetchStreamPreview() {
             c6 = 0;
           }
           c8 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         } catch (tmp40) {
           closure_5 = tmp40;
           if (0 === c6) {
@@ -221,7 +221,7 @@ obj = function _notifyStreamStart() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       let c4;
@@ -260,7 +260,7 @@ obj = function _notifyStreamStart() {
             c4 = 0;
           }
           c1 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } catch (tmp5) {
         let closure_3 = tmp5;

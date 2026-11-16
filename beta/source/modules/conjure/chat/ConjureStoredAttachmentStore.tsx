@@ -1,9 +1,9 @@
-// Module ID: 12345
-// Function ID: 12346
+// Module ID: 13227
+// Function ID: 13228
 // Name: ConjureStoredAttachmentStore
 // Dependencies: [504, 572, 2]
 
-// Module 12345 (ConjureStoredAttachmentStore)
+// Module 13227 (ConjureStoredAttachmentStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

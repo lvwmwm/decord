@@ -1,12 +1,12 @@
-// Module ID: 15096
-// Function ID: 15097
+// Module ID: 15693
+// Function ID: 15694
 // Name: openUserContextMenuCommands
-// Dependencies: [8866, 5406, 5346, 2116, 2]
+// Dependencies: [8546, 5542, 5482, 2119, 2]
 // Exports: default
 
-// Module 15096 (openUserContextMenuCommands)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8866 */;
+// Module 15693 (openUserContextMenuCommands)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8546 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/user_profile/native/openUserContextMenuCommands.tsx");
@@ -17,14 +17,14 @@ export default function openUserContextMenuCommands(analyticsLocations) {
   let userId;
   analyticsLocations = analyticsLocations.analyticsLocations;
   ({ userId, selectedChannel, showUserProfile } = analyticsLocations);
-  let obj = analyticsLocations(8866);
+  let obj = analyticsLocations(8546);
   const result = obj.trackUserProfileAction({ action: "PRESS_VIEW_APP_COMMANDS", analyticsLocations });
   let obj2 = ActionSheetActionCreatorsDefault;
   obj2.hideAllActionSheets();
-  const obj3 = analyticsLocations(5346);
+  const obj3 = analyticsLocations(5482);
   const obj4 = {
     channel: selectedChannel,
-    commandType: analyticsLocations(2116).ApplicationCommandType.USER,
+    commandType: analyticsLocations(2119).ApplicationCommandType.USER,
     commandTargetId: userId,
     onClose: showUserProfile,
     onPressAppCommand() {

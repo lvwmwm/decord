@@ -1,23 +1,23 @@
-// Module ID: 13507
-// Function ID: 13508
+// Module ID: 14115
+// Function ID: 14116
 // Name: GiftIntentGifModal
-// Dependencies: [32, 5, 19, 17, 5019, 1072, 5175, 21, 5170, 575, 7745, 7933, 1252, 7445, 5767, 504, 7349, 1113, 13508, 10393, 5790, 6831, 5771, 7097, 7264, 2]
+// Dependencies: [32, 5, 19, 17, 5155, 1072, 5311, 21, 5306, 575, 8660, 8786, 1256, 7937, 5903, 504, 7859, 1113, 14116, 11337, 5926, 6838, 5907, 7493, 7490, 2]
 // Exports: default
 
-// Module 13507 (GiftIntentGifModal)
+// Module 14115 (GiftIntentGifModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
-import MessageConstants from "MessageConstants" /* 5175 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6831 */;
-import NavigatorHeader from "NavigatorHeader" /* 7097 */;
+import MessageConstants from "MessageConstants" /* 5311 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
+import NavigatorHeader from "NavigatorHeader" /* 7493 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -50,7 +50,7 @@ let obj = function _sendGiftIntentGif() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -72,7 +72,7 @@ let obj = function _sendGiftIntentGif() {
               is_custom_message = undefined;
               url = 1;
               c4 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "Path", done: true };
             }
           } else {
             if (1 === url) {
@@ -120,7 +120,7 @@ let obj = function _sendGiftIntentGif() {
               items[0] = closure_130_1(closure_130_2[13]).PREMIUM_GIFT_INTENT_CARD;
               track(GIFT_INTENT_MESSAGE_SENT, obj10);
               c4 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "ulw" };
             }
             const id = user.id;
             const sendMessage = closure_130_1(closure_130_2[10]).sendMessage;
@@ -264,7 +264,7 @@ const result = size.fileFinishedImporting("modules/premium/gifting/native/GiftIn
 
 export default function GiftIntentGifModal(arg0) {
   let onDismiss;
-  const f105976 = () => {
+  const f108991 = () => {
     let channelId;
     let giftIntentType;
     let intl;
@@ -293,7 +293,7 @@ export default function GiftIntentGifModal(arg0) {
       onDismiss();
     }
   }, items);
-  obj = { initialRouteName: constants.GIFT_INTENT_GIF, screens: require("react")(f105976) };
-  require("react")(f105976);
+  obj = { initialRouteName: constants.GIFT_INTENT_GIF, screens: require("react")(f108991) };
+  require("react")(f108991);
   return closure_10(require("Navigator").Navigator, obj);
 };

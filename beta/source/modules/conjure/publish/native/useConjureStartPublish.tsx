@@ -1,12 +1,12 @@
-// Module ID: 12296
-// Function ID: 12297
+// Module ID: 13171
+// Function ID: 13172
 // Name: useConjureStartPublish
-// Dependencies: [12297, 12298, 2]
+// Dependencies: [13172, 13173, 2]
 // Exports: default
 
-// Module 12296 (useConjureStartPublish)
-import useConjureStartPublishDefault from "useConjureStartPublish" /* 12297 */;
-import ConjurePublishSheetDefault from "ConjurePublishSheet" /* 12298 */;
+// Module 13171 (useConjureStartPublish)
+import useConjureStartPublishDefault from "useConjureStartPublish" /* 13172 */;
+import ConjurePublishSheetDefault from "ConjurePublishSheet" /* 13173 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/publish/native/useConjureStartPublish.tsx");

@@ -1,14 +1,14 @@
-// Module ID: 18586
-// Function ID: 18587
+// Module ID: 18877
+// Function ID: 18878
 // Name: useIsGuildThemePerkEnabled
-// Dependencies: [5041, 5377, 1072, 504, 5381, 2]
+// Dependencies: [5177, 5513, 1072, 504, 5517, 2]
 // Exports: default
 
-// Module 18586 (useIsGuildThemePerkEnabled)
+// Module 18877 (useIsGuildThemePerkEnabled)
 import Constants from "Constants" /* 1072 */;
-import Powerups from "Powerups" /* 5381 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 5377 */;
+import Powerups from "Powerups" /* 5517 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 5513 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

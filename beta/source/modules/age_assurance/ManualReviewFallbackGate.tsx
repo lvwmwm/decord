@@ -1,13 +1,13 @@
-// Module ID: 8102
-// Function ID: 8103
+// Module ID: 8236
+// Function ID: 8237
 // Name: ManualReviewFallbackGate
-// Dependencies: [5, 8103, 8071, 8104, 572, 8105, 2]
+// Dependencies: [5, 8237, 8205, 8238, 572, 8239, 2]
 // Exports: shouldShowManualReviewFallback
 
-// Module 8102 (ManualReviewFallbackGate)
-import SafetyHubUtils from "SafetyHubUtils" /* 8071 */;
-import ManualAgeAssuranceFallbackExperiment from "ManualAgeAssuranceFallbackExperiment" /* 8103 */;
-import AgeVerificationMethodsV2 from "AgeVerificationMethodsV2" /* 8104 */;
+// Module 8236 (ManualReviewFallbackGate)
+import SafetyHubUtils from "SafetyHubUtils" /* 8205 */;
+import ManualAgeAssuranceFallbackExperiment from "ManualAgeAssuranceFallbackExperiment" /* 8237 */;
+import AgeVerificationMethodsV2 from "AgeVerificationMethodsV2" /* 8238 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ export function shouldShowManualReviewFallback(AUTOMATED_UNDERAGE_APPEALS) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "ulw" };
           }
         } else {
           let c2;

@@ -1,15 +1,20 @@
-// Module ID: 16751
-// Function ID: 16752
+// Module ID: 17027
+// Function ID: 17028
 // Name: ICYMIManager
-// Dependencies: [9031, 1089, 2120, 572, 9035, 2]
+// Dependencies: [10215, 10217, 1089, 2123, 572, 10220, 2]
 
-// Module 16751 (ICYMIManager)
+// Module 17027 (ICYMIManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 9031 */;
-import ICYMIExperiment from "ICYMIExperiment" /* 9035 */;
-import LifecycleManager from "LifecycleManager" /* 2120 */;
+import DurationsDefault from "Durations" /* 1089 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 10217 */;
+import ICYMIExperiment from "ICYMIExperiment" /* 10220 */;
+import LifecycleManager from "LifecycleManager" /* 2123 */;
 import size from "module_2" /* 2 */;
 
+const require = globalThis.__r;
+
+let tmp;
+const WaterwheelsDiscoverExperiment = tmp(10215);
 let closure_3 = null;
 class ICYMIManager extends LifecycleManager {
   _initialize() {
@@ -22,35 +27,39 @@ class ICYMIManager extends LifecycleManager {
   }
   handlePostConnectionOpen() {
     let timeout;
-    const f112019 = () => {
+    const f114481 = () => {
       let timeout;
-      const obj = ICYMIActionCreatorsDefault;
-      const dehydrated = obj.fetchDehydrated({ isInitialLoad: false });
-      const tmp = importDefault;
-      const tmp2 = dependencyMap;
+      const obj = WaterwheelsDiscoverExperiment;
+      if (!obj.getWaterwheelsDiscoverEnabled("ICYMIManager")) {
+        const obj3 = { isInitialLoad: false };
+        const obj2 = ICYMIActionCreatorsDefault;
+        const dehydrated = obj2.fetchDehydrated(obj3);
+      }
       if (null != timeout) {
         const _clearTimeout = clearTimeout;
         clearTimeout(timeout);
       }
-      timeout = setTimeout(f112019, 15 * tmp(tmp2[1]).Millis.MINUTE);
+      timeout = setTimeout(f114481, 15 * require("Durations").Millis.MINUTE);
     };
-    let tmp = dependencyMap;
+    const tmp = require;
     let obj = ICYMIExperiment;
     if (obj.getICYMIEnabled("ICYMIManager")) {
-      let tmp2 = importDefault;
-      const obj3 = { isInitialLoad: true };
-      const obj2 = ICYMIActionCreatorsDefault;
-      let dehydrated = obj2.fetchDehydrated(obj3);
+      const tmpResult = WaterwheelsDiscoverExperiment;
+      if (!tmpResult.getWaterwheelsDiscoverEnabled("ICYMIManager")) {
+        let obj3 = ICYMIActionCreatorsDefault;
+        let obj2 = { isInitialLoad: true };
+        let dehydrated = obj3.fetchDehydrated(obj2);
+      }
       if (null != timeout) {
         let _clearTimeout = clearTimeout;
         clearTimeout(timeout);
       }
       const _setTimeout = setTimeout;
-      timeout = setTimeout(f112019, 15 * tmp2(1089).Millis.MINUTE);
-      const tmp2Result = tmp2(9031);
-      const guildChannelScores = tmp2Result.getGuildChannelScores();
-      const tmp2Result2 = tmp2(9031);
-      const recommendedGuilds = tmp2Result2.getRecommendedGuilds();
+      timeout = setTimeout(f114481, 15 * DurationsDefault.Millis.MINUTE);
+      const obj5 = ICYMIActionCreatorsDefault;
+      const guildChannelScores = obj5.getGuildChannelScores();
+      const obj6 = ICYMIActionCreatorsDefault;
+      const recommendedGuilds = obj6.getRecommendedGuilds();
     }
   }
 }

@@ -1,29 +1,29 @@
-// Module ID: 18866
-// Function ID: 18867
+// Module ID: 19182
+// Function ID: 19183
 // Name: VoicePanelDock
-// Dependencies: [19, 17, 5019, 11395, 11412, 11413, 21, 5170, 575, 18867, 1652, 10029, 1113, 10031, 5408, 11394, 504, 1641, 1377, 13059, 1627, 11420, 1705, 6035, 11399, 5452, 5402, 18865, 18887, 18892, 2]
+// Dependencies: [19, 17, 5155, 11985, 12009, 12010, 21, 5306, 575, 19183, 1655, 9148, 1113, 9150, 5544, 11984, 504, 1644, 1380, 13809, 1630, 12017, 1708, 6171, 11989, 5588, 5538, 19181, 19203, 19208, 2]
 
-// Module 18866 (VoicePanelDock)
+// Module 19182 (VoicePanelDock)
 import nativeDefault from "native" /* 575 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import _mod1705 from "module_1705" /* 1705 */;
-import timing_timing from "timing/timing" /* 5402 */;
-import HapticUtils from "HapticUtils" /* 5408 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5452 */;
-import ContextMenu from "ContextMenu" /* 10029 */;
-import ContextMenuConstants from "ContextMenuConstants" /* 10031 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11394 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11395 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11399 */;
-import VoicePanelSheetMorph from "VoicePanelSheetMorph" /* 11420 */;
-import useVoicePanelDockContextMenuItemsDefault from "useVoicePanelDockContextMenuItems" /* 18867 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import _mod1708 from "module_1708" /* 1708 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import HapticUtils from "HapticUtils" /* 5544 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5588 */;
+import ContextMenu from "ContextMenu" /* 9148 */;
+import ContextMenuConstants from "ContextMenuConstants" /* 9150 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11984 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11985 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11989 */;
+import VoicePanelSheetMorph from "VoicePanelSheetMorph" /* 12017 */;
+import useVoicePanelDockContextMenuItemsDefault from "useVoicePanelDockContextMenuItems" /* 19183 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11412 */;
-import GestureConstants from "GestureConstants" /* 11413 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 12009 */;
+import GestureConstants from "GestureConstants" /* 12010 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -62,9 +62,9 @@ function DockPressTarget(arg0) {
   ({ channel, onExpand } = arg0);
   const contextMenuAnchor = closure_21();
   const tmp = useVoicePanelDockContextMenuItemsDefault(channel, onExpand);
-  let obj = _mod1652;
+  let obj = _mod1655;
   const animatedRef = obj.useAnimatedRef();
-  let obj2 = _mod1652;
+  let obj2 = _mod1655;
   const animatedRef1 = obj2.useAnimatedRef();
   const obj3 = {
     items: tmp,
@@ -483,7 +483,7 @@ const memoResult = react.memo(function VoicePanelDock(isInSlot) {
     const items5 = [closure_31, , , , , , , , , , ];
     const onStart = onBeginResult.onTouchesMove(VoicePanelDockTsx7).onStart;
     onBeginResult.onTouchesMove(VoicePanelDockTsx7);
-    items5[1] = _mod1705.scheduleOnRN;
+    items5[1] = _mod1708.scheduleOnRN;
     items5[2] = showControls;
     items5[3] = sharedValue5;
     items5[4] = sharedValue4;
@@ -533,10 +533,10 @@ const memoResult = react.memo(function VoicePanelDock(isInSlot) {
     items7[6] = sharedValue4;
     items7[7] = authStore;
     items7[8] = closure_17;
-    items7[9] = _mod1705.scheduleOnRN;
+    items7[9] = _mod1708.scheduleOnRN;
     items7[10] = HapticUtils.triggerHapticFeedback;
     items7[11] = HapticUtils.HapticFeedbackTypes;
-    items7[12] = authStore5;
+    items7[12] = authStore4;
     items7[13] = tmp19;
     c0 = undefined;
     c1 = undefined;
@@ -595,10 +595,10 @@ const memoResult = react.memo(function VoicePanelDock(isInSlot) {
     VoicePanelDockTsx9.__closure = items8;
     VoicePanelDockTsx9.__workletHash = 9262954094286;
     VoicePanelDockTsx9.__initData = tmp35;
-    const items9 = [closure_33, tmp6, authStore3, map1, tmp17, , , , , , ];
+    const items9 = [closure_33, tmp6, gesture, map1, tmp17, , , , , , ];
     const onEnd = onChange(VoicePanelDockTsx9).onEnd;
     onChange(VoicePanelDockTsx9);
-    items9[5] = _mod1705.scheduleOnRN;
+    items9[5] = _mod1708.scheduleOnRN;
     items9[6] = HapticUtils.triggerHapticFeedback;
     items9[7] = HapticUtils.HapticFeedbackTypes;
     items9[8] = committedMode;

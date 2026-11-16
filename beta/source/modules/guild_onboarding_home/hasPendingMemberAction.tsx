@@ -1,19 +1,19 @@
-// Module ID: 8442
-// Function ID: 8443
+// Module ID: 9000
+// Function ID: 9001
 // Name: hasPendingMemberAction
-// Dependencies: [5019, 5082, 5041, 7495, 8443, 1072, 5088, 7498, 1403, 2]
+// Dependencies: [5155, 5218, 5177, 7080, 9001, 1072, 5224, 7083, 1406, 2]
 // Exports: hasPendingMemberAction
 
-// Module 8442 (hasPendingMemberAction)
+// Module 9000 (hasPendingMemberAction)
 import Constants from "Constants" /* 1072 */;
-import FlagUtilsAll from "FlagUtils" /* 1403 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 5088 */;
-import guildHasOnboardingHomeDefault from "guildHasOnboardingHome" /* 7498 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import GuildMemberStore from "GuildMemberStore" /* 5082 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7495 */;
-import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 8443 */;
+import FlagUtilsAll from "FlagUtils" /* 1406 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 5224 */;
+import guildHasOnboardingHomeDefault from "guildHasOnboardingHome" /* 7083 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import GuildMemberStore from "GuildMemberStore" /* 5218 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7080 */;
+import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 9001 */;
 import size from "module_2" /* 2 */;
 
 const GuildFeatures = Constants.GuildFeatures;

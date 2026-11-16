@@ -1,22 +1,22 @@
-// Module ID: 5962
-// Function ID: 5963
+// Module ID: 6098
+// Function ID: 6099
 // Name: Connection
-// Dependencies: [32, 5, 5929, 5952, 5963, 2132, 4, 5967, 6011, 6012, 6013, 5961, 6015, 5964, 6016, 5968, 6017, 6020, 2]
+// Dependencies: [32, 5, 6065, 6088, 6099, 2135, 4, 6103, 6147, 6148, 6149, 6097, 6151, 6100, 6152, 6104, 6153, 6156, 2]
 
-// Module 5962 (Connection)
-import inject from "inject" /* 2132 */;
-import VideoQualityManager from "VideoQualityManager" /* 5964 */;
-import discord_common_BaseConnectionEvent from "discord_common/BaseConnectionEvent" /* 5967 */;
-import cloneDeepDefault from "cloneDeep" /* 5968 */;
-import VideoCodecUtils from "VideoCodecUtils" /* 6011 */;
-import isEqualDefault from "isEqual" /* 6015 */;
-import discord_common_VoiceEngine from "discord_common/VoiceEngine" /* 6016 */;
-import reduceDefault from "reduce" /* 6017 */;
+// Module 6098 (Connection)
+import inject from "inject" /* 2135 */;
+import VideoQualityManager from "VideoQualityManager" /* 6100 */;
+import discord_common_BaseConnectionEvent from "discord_common/BaseConnectionEvent" /* 6103 */;
+import cloneDeepDefault from "cloneDeep" /* 6104 */;
+import VideoCodecUtils from "VideoCodecUtils" /* 6147 */;
+import isEqualDefault from "isEqual" /* 6151 */;
+import discord_common_VoiceEngine from "discord_common/VoiceEngine" /* 6152 */;
+import reduceDefault from "reduce" /* 6153 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants_mod from "Constants" /* 5929 */;
-import Constants_mod2 from "Constants" /* 5952 */;
-import BaseConnection from "BaseConnection" /* 5963 */;
+import Constants_mod from "Constants" /* 6065 */;
+import Constants_mod2 from "Constants" /* 6088 */;
+import BaseConnection from "BaseConnection" /* 6099 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -78,11 +78,11 @@ class Connection extends BaseConnection {
     let obj2 = require("inject");
     let DISABLED = obj2.getVoiceEngine().DegradationPreference.MAINTAIN_FRAMERATE_AND_RESOLUTION;
     if (DISABLED == null) {
-      const tmp11Result = tmp11(2132);
+      const tmp11Result = tmp11(2135);
       DISABLED = tmp11Result.getVoiceEngine().DegradationPreference.DISABLED;
     }
     tmp8.sourceDesktopDegradationPreference = DISABLED;
-    const tmp11Result2 = tmp11(2132);
+    const tmp11Result2 = tmp11(2135);
     tmp8.videoDegradationPreference = tmp11Result2.getVoiceEngine().DegradationPreference.BALANCED;
     tmp8.localPans = {};
     tmp8.remoteAudioSSRCs = {};
@@ -151,7 +151,7 @@ class Connection extends BaseConnection {
           tmp11 = false === obj.soundshareSentSpeakingEvent;
         }
         if (tmp11) {
-          closure_0.emit(tmp3(5967).BaseConnectionEvent.SoundshareSpeaking);
+          closure_0.emit(tmp3(6103).BaseConnectionEvent.SoundshareSpeaking);
           closure_0.soundshareSentSpeakingEvent = true;
         }
       }
@@ -404,7 +404,7 @@ class Connection extends BaseConnection {
               if (diff1 >= 0) {
                 let num = 1;
                 let num2 = 100;
-                const tmp6 = tmp24(6020)(diff1 / (diff + diff1), 0, 1);
+                const tmp6 = tmp24(6156)(diff1 / (diff + diff1), 0, 1);
                 closure_0.emit(discord_common_BaseConnectionEvent.BaseConnectionEvent.OutboundLossRate, 100 * tmp6);
               }
             }
@@ -546,7 +546,7 @@ class Connection extends BaseConnection {
     let items = [obj, ...this.videoStreamParameters];
     address.streamParameters = items;
     address.context = this.context;
-    let obj2 = createVoiceConnection(2132);
+    let obj2 = createVoiceConnection(2135);
     const voiceEngine = obj2.getVoiceEngine();
     if (null != voiceEngine.createOwnStreamConnectionWithOptions) {
       if (self.context === tmp3.STREAM) {
@@ -871,7 +871,7 @@ class Connection extends BaseConnection {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         let c3;
@@ -1038,7 +1038,7 @@ class Connection extends BaseConnection {
   }
   destroyUser(arg0) {
     const self = this;
-    if (null != this.remoteAudioSSRCs[arg0]) {
+    if (arg0 in this.remoteAudioSSRCs) {
       const conn = self.conn;
       conn.destroyUser(arg0);
       delete self.remoteAudioSSRCs[arg0];
@@ -1183,7 +1183,7 @@ class Connection extends BaseConnection {
   getLocalVolume(arg0) {
     let tmp = this.localVolumes[arg0];
     if (null == tmp) {
-      tmp = this.context === constants5.DEFAULT ? closure_21 : authStore6;
+      tmp = this.context === constants5.DEFAULT ? closure_21 : authStore5;
     }
     if (null == tmp) {
       tmp = closure_21;
@@ -1712,7 +1712,7 @@ class Connection extends BaseConnection {
           FIXED = constants7.FIXED;
         }
         const emit = self.emit;
-        const Video = tmp8(5967).BaseConnectionEvent.Video;
+        const Video = tmp8(6103).BaseConnectionEvent.Video;
         ({ userId, audioSSRC } = self);
         const ssrc = self.videoStreamParameters[num5].ssrc;
         const ssrc2 = self.videoStreamParameters[num5].ssrc;
@@ -2076,7 +2076,7 @@ class Connection extends BaseConnection {
         tmp7.params["hardware-h264"] = "1";
         let experimentFlags5 = self.experimentFlags;
         if (experimentFlags5.has(tmp8.USE_LIBOPENH264_DECODER)) {
-          let tmp25Result = tmp25(2132);
+          let tmp25Result = tmp25(2135);
           let openH264LibraryPath = tmp25Result.getOpenH264LibraryPath();
           if (null != openH264LibraryPath) {
             tmp7.params.libopenh264 = "1";
@@ -2222,13 +2222,6 @@ class Connection extends BaseConnection {
     const processMLSWelcome = conn.processMLSWelcome;
     if (processMLSWelcome != null) {
       processMLSWelcome(lastPreparedTransitionId, arg1, arg2);
-    }
-  }
-  getMLSPairwiseFingerprint(arg0, arg1, arg2) {
-    const conn = this.conn;
-    const getMLSPairwiseFingerprint = conn.getMLSPairwiseFingerprint;
-    if (getMLSPairwiseFingerprint != null) {
-      const mLSPairwiseFingerprint = getMLSPairwiseFingerprint(arg0, arg1, arg2);
     }
   }
   presentDesktopSourcePicker(arg0) {

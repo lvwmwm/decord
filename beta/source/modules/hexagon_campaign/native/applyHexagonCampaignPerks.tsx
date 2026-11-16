@@ -1,15 +1,15 @@
-// Module ID: 17357
-// Function ID: 17358
+// Module ID: 17628
+// Function ID: 17629
 // Name: applyHexagonCampaignPerks
-// Dependencies: [5, 1385, 16569, 5195, 1240, 15655, 17358, 5198, 17359, 16808, 17360, 5196, 17363, 17364, 2]
+// Dependencies: [5, 1388, 16845, 5331, 1240, 15314, 17629, 5334, 17630, 17084, 17631, 5332, 17634, 17635, 2]
 // Exports: applyHexagonCampaignPerks
 
-// Module 17357 (applyHexagonCampaignPerks)
+// Module 17628 (applyHexagonCampaignPerks)
 import ClientThemesConstants from "ClientThemesConstants" /* 1240 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5195 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5331 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1385 */;
-import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 16569 */;
+import UserStore from "UserStore" /* 1388 */;
+import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 16845 */;
 import size from "module_2" /* 2 */;
 
 let c5, constants;
@@ -36,7 +36,7 @@ let obj = function _applyHexagonCampaignPerks() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       try {
@@ -93,7 +93,7 @@ let obj = function _applyHexagonCampaignPerks() {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "ulw" };
                   }
                 } else {
                   try {
@@ -148,7 +148,7 @@ let obj = function _applyHexagonCampaignPerks() {
             };
             analyticsLocations = 1;
             c5 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "Path", done: true };
           }
         } else if (1 === tmp5) {
           if (arg0 === 1) {

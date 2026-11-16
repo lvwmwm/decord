@@ -1,27 +1,27 @@
-// Module ID: 18102
-// Function ID: 18103
+// Module ID: 18382
+// Function ID: 18383
 // Name: DevToolsDisplayNameEffectsBenchmarkScreen
-// Dependencies: [32, 19, 17, 1385, 1394, 21, 1396, 10930, 1113, 10926, 3056, 5170, 575, 6191, 5783, 5790, 10923, 10924, 504, 18103, 7159, 7071, 14886, 6606, 2]
+// Dependencies: [32, 19, 17, 1388, 1397, 21, 1399, 10072, 1113, 10068, 3125, 5306, 575, 6327, 5919, 5926, 10064, 10065, 504, 18383, 7746, 7443, 15966, 6742, 2]
 // Exports: default
 
-// Module 18102 (DevToolsDisplayNameEffectsBenchmarkScreen)
+// Module 18382 (DevToolsDisplayNameEffectsBenchmarkScreen)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1394 */;
-import DisplayNameEffect from "DisplayNameEffect" /* 1396 */;
-import _modDef3056 from "module_3056" /* 3056 */;
-import Text_Text from "Text/Text" /* 5783 */;
-import Stack_Stack from "Stack/Stack" /* 6191 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10923 */;
-import types from "types" /* 10924 */;
-import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 10926 */;
-import _mod10930 from "module_10930" /* 10930 */;
+import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1397 */;
+import DisplayNameEffect from "DisplayNameEffect" /* 1399 */;
+import _modDef3125 from "module_3125" /* 3125 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import Stack_Stack from "Stack/Stack" /* 6327 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10064 */;
+import types from "types" /* 10065 */;
+import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 10068 */;
+import _mod10072 from "module_10072" /* 10072 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1385 */;
+import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -38,7 +38,7 @@ function effectName(arg0) {
   const string = intl.string;
   let OpWJ3f = useDisplayNameStylesEffectConfigs.DISPLAY_NAME_STYLES_EFFECT_NAMES[arg0];
   if (OpWJ3f == null) {
-    OpWJ3f = _modDef3056.OpWJ3f;
+    OpWJ3f = _modDef3125.OpWJ3f;
   }
   return string(OpWJ3f);
 }
@@ -169,7 +169,7 @@ export default function DevToolsDisplayNameEffectsBenchmarkScreen() {
   const memo = first1.useMemo(() => items.find((key) => key.key === first2).name, items2);
   const items3 = [memo];
   const memo1 = first1.useMemo(() => {
-    const obj = _mod10930;
+    const obj = _mod10072;
     return obj.splitGraphemes(memo).length;
   }, items3);
   const items4 = [first];
@@ -296,7 +296,7 @@ export default function DevToolsDisplayNameEffectsBenchmarkScreen() {
               const length = String(Math.max(run.params.rowCount - 1, 0)).length;
               const StringResult = String(arg1);
               const padStartResult = StringResult.padStart(length, "0");
-              const obj3 = _mod10930;
+              const obj3 = _mod10072;
               const splitGraphemesResult = obj3.splitGraphemes(name);
               sum = padStartResult;
               const tmp = metroImportAll;

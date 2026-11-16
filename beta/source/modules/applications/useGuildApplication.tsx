@@ -1,14 +1,14 @@
-// Module ID: 20325
-// Function ID: 20326
+// Module ID: 20655
+// Function ID: 20656
 // Name: useGuildApplication
-// Dependencies: [5, 32, 19, 2162, 504, 6969, 6611, 2]
+// Dependencies: [5, 32, 19, 2165, 504, 7055, 6747, 2]
 // Exports: default
 
-// Module 20325 (useGuildApplication)
+// Module 20655 (useGuildApplication)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2162 */;
+import ApplicationStore from "ApplicationStore" /* 2165 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -46,7 +46,7 @@ export default function useGuildApplication(arg0, arg1) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       }
     } else {
       let c3;
@@ -105,7 +105,7 @@ export default function useGuildApplication(arg0, arg1) {
           closure_129_3(false);
         }
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "ulw" };
       } catch (tmp35) {
         application = tmp35;
         if (0 === c3) {

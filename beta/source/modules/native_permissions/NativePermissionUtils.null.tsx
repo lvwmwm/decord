@@ -1,10 +1,10 @@
-// Module ID: 8060
-// Function ID: 8061
+// Module ID: 8194
+// Function ID: 8195
 // Name: nativePermissionDesktopNullUtils
-// Dependencies: [8061, 2]
+// Dependencies: [8195, 2]
 
-// Module 8060 (nativePermissionDesktopNullUtils)
-import NativePermissionBaseUtils2 from "NativePermissionBaseUtils" /* 8061 */;
+// Module 8194 (nativePermissionDesktopNullUtils)
+import NativePermissionBaseUtils2 from "NativePermissionBaseUtils" /* 8195 */;
 import size from "module_2" /* 2 */;
 
 const NativePermissionBaseUtils = NativePermissionBaseUtils2.NativePermissionBaseUtils;

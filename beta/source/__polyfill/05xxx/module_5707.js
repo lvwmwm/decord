@@ -1,553 +1,464 @@
 // Module ID: 5707
 // Function ID: 5708
-// Dependencies: [5708, 5665, 19, 17, 5709, 5710, 5680, 5711, 5705]
-// Exports: useRecyclerViewController
+// Dependencies: [32, 109, 19, 21, 5592, 5697, 5708, 5709]
+// Exports: default
 
 // Module 5707
-import react_native from "react-native" /* 17 */;
-import PlatformConfig from "PlatformConfig" /* 5680 */;
-import _asyncToGenerator from "_asyncToGenerator" /* 5708 */;
-import _slicedToArray from "_slicedToArray" /* 5665 */;
-import react from "react" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import react_mod from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import module_5592 from "tagMessage" /* 5592 */;
 
-const require = globalThis.__r;
-let _require, dependencyMap, size;
-
-let closure_4;
-let hasOwnProperty;
+let c9;
+let jsx;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-({ useCallback: closure_4, useImperativeHandle: hasOwnProperty, useMemo: metroRequire, useRef: metroImportDefault, useState: metroImportAll } = react);
-const I18nManager = react_native.I18nManager;
+let closure_2 = ["testOnly_pressed", "hitSlop", "pressRetentionOffset", "delayHoverIn", "delayHoverOut", "delayLongPress", "unstable_pressDelay", "onHoverIn", "onHoverOut", "onPress", "onPressIn", "onPressOut", "onLongPress", "onLayout", "style", "children", "android_disableSound", "android_ripple", "disabled", "accessible", "ref", "immediatePressOut"];
+let closure_3 = ["cancelable", "dimensionsAfterResize", "simultaneousWith", "requireToFail", "block"];
+let react = react_mod;
+({ useEffect: metroRequire, useRef: metroImportDefault, useState: metroImportAll } = react);
+react = react_mod;
+({ jsx, jsxs: c9 } = Fragment);
+let closure_10 = module_5592.isTestEnv();
+let animationDuration = { in: 50, out: 100, tap: { in: 130 } };
 
-export function useRecyclerViewController(recyclerViewManager, arg1, arg2, arg3) {
-  let _setTimeout;
-  let closure_4;
+export default function _default(delayHoverOut) {
+  let accessible;
+  let android_disableSound;
+  let android_ripple;
+  let block;
+  let borderless;
+  let cancelable;
+  let children;
+  let closure_11;
+  let closure_9;
+  let delayHoverIn;
+  let delayLongPress;
+  let dimensionsAfterResize;
+  let disabled;
+  let fn3;
+  let fn4;
+  let foreground;
+  let hitSlop;
+  let immediatePressOut;
+  let items;
+  let items1;
+  let numberAsInsetResult;
+  let numberAsInsetResult1;
+  let pressRetentionOffset;
+  let radius;
   let ref;
-  let ref5;
-  _require = recyclerViewManager;
-  dependencyMap = arg2;
-  const ref2 = arg3;
-  let obj = require("react");
-  const unmountFlag = obj.useUnmountFlag();
-  let tmp2 = unmountFlag(ref5(0), 2);
-  [r10016, closure_4] = tmp2;
-  const ref3 = _setTimeout(false);
-  const ref4 = _setTimeout(recyclerViewManager.getDataLength());
-  let obj2 = require("_slicedToArray");
-  _setTimeout = obj2.useUnmountAwareTimeout().setTimeout;
-  ref5 = _setTimeout(undefined);
-  const ref6 = _setTimeout(undefined);
-  const ref7 = _setTimeout([]);
-  const items = [recyclerViewManager];
-  let tmp3 = closure_4((arg0, fn) => {
-    if (undefined !== recyclerViewManager.updateScrollOffset(arg0)) {
-      const current = ref7.current;
-      current.push(fn);
-      closure_4((arg0) => arg0 + 1);
-    } else {
-      fn();
+  let requireToFail;
+  let simultaneousWith;
+  let style;
+  let testOnly_pressed;
+  let tmp25;
+  let tmp26;
+  let tmp27;
+  let tmp28;
+  let tmp29;
+  let tmp30;
+  let unstable_pressDelay;
+  ({ testOnly_pressed, hitSlop, pressRetentionOffset, delayHoverIn } = delayHoverOut);
+  delayHoverOut = delayHoverOut.delayHoverOut;
+  ({ delayLongPress, unstable_pressDelay } = delayHoverOut);
+  const onHoverIn = delayHoverOut.onHoverIn;
+  const onHoverOut = delayHoverOut.onHoverOut;
+  const onPress = delayHoverOut.onPress;
+  const onPressIn = delayHoverOut.onPressIn;
+  const onPressOut = delayHoverOut.onPressOut;
+  const onLongPress = delayHoverOut.onLongPress;
+  ({ onLayout: closure_9, style, children, android_disableSound, android_ripple, immediatePressOut } = delayHoverOut);
+  let tmp = undefined !== immediatePressOut;
+  ({ disabled, accessible, ref } = delayHoverOut);
+  if (tmp) {
+    tmp = immediatePressOut;
+  }
+  const tmp2 = onPress(delayHoverOut, unstable_pressDelay);
+  ({ cancelable, dimensionsAfterResize, simultaneousWith, requireToFail, block } = tmp2);
+  const tmp3 = onPress(tmp2, onHoverIn);
+  let tmp4 = onHoverOut(onLongPress(false), 2);
+  closure_10 = tmp4[1];
+  const first = tmp4[0];
+  animationDuration = onPressOut({ press: null, hoverIn: null, hoverOut: null });
+  ref = onPressOut({ width: 0, height: 0 });
+  let closure_13 = onPressOut(false);
+  const tmp6 = onPressIn(() => () => {
+    const current = ref.current;
+    if (current.press) {
+      const _clearTimeout = clearTimeout;
+      clearTimeout(current.press);
     }
-  }, items);
-  let closure_11 = tmp3;
-  const items1 = [recyclerViewManager];
-  const computeFirstVisibleIndexForOffsetCorrection = closure_4(() => {
-    if (recyclerViewManager.getIsFirstLayoutComplete()) {
-      if (recyclerViewManager.hasStableDataKeys()) {
-        if (recyclerViewManager.getDataLength() > 0) {
-          if (recyclerViewManager.shouldMaintainVisibleContentPosition()) {
-            const _Math = Math;
-            const bound = Math.max(0, obj.computeVisibleIndices().startIndex);
-            const tmp3 = undefined !== bound && bound >= 0;
-            if (tmp3) {
-              ref5.current = recyclerViewManager.getDataKey(bound);
-              const obj2 = {};
-              const merged = Object.assign(obj.getLayout(bound));
-              ref6.current = obj2;
-            }
-          }
-        }
-      }
+    if (current.hoverIn) {
+      const _clearTimeout2 = clearTimeout;
+      clearTimeout(current.hoverIn);
     }
-  }, items1);
-  const items2 = [recyclerViewManager, arg3, arg2, _setTimeout, tmp3, computeFirstVisibleIndexForOffsetCorrection];
-  const items3 = [recyclerViewManager, arg2, _setTimeout, unmountFlag, tmp3];
-  const applyOffsetCorrection = closure_4(() => {
-    let data;
-    let horizontal;
-    ({ horizontal, data } = recyclerViewManager.props);
-    const current1 = ref7.current;
-    ref7.current = [];
-    const item = current1.forEach((fn) => fn());
-    const dataLength = recyclerViewManager.getDataLength();
-    if (recyclerViewManager.getIsFirstLayoutComplete()) {
-      if (recyclerViewManager.hasStableDataKeys()) {
-        if (dataLength > 0) {
-          if (recyclerViewManager.shouldMaintainVisibleContentPosition()) {
-            if (ref5.current) {
-              const engagedIndices = obj.getEngagedIndices();
-              let findValueResult = engagedIndices.findValue((bound) => recyclerViewManager.getDataKey(bound) === ref.current);
-              if (findValueResult == null) {
-                let tmp8;
-                if (dataLength !== ref4.current) {
-                  let findIndexResult;
-                  if (data != null) {
-                    findIndexResult = data.findIndex((item, index) => recyclerViewManager.getDataKey(index) === ref.current);
-                  }
-                  tmp8 = findIndexResult;
-                }
-                findValueResult = tmp8;
-              }
-              if (undefined !== findValueResult) {
-                if (findValueResult >= 0) {
-                  let diff;
-                  let tmp10;
-                  const point = obj.getLayout(findValueResult);
-                  if (horizontal) {
-                    diff = point.x - ref6.current.x;
-                    tmp10 = ref6;
-                  } else {
-                    tmp10 = ref6;
-                    diff = point.y - ref6.current.y;
-                  }
-                  const obj2 = {};
-                  const merged = Object.assign(obj.getLayout(findValueResult));
-                  tmp10.current = obj2;
-                  if (0 !== diff) {
-                    if (!ref3.current) {
-                      if (!recyclerViewManager.animationOptimizationsEnabled) {
-                        if (PlatformConfig.PlatformConfig.supportsOffsetCorrection) {
-                          const current2 = ref2.current;
-                          if (current2 != null) {
-                            current2.scrollBy(diff);
-                          }
-                        } else {
-                          let obj4;
-                          if (horizontal) {
-                            obj4 = { x: recyclerViewManager.getAbsoluteLastScrollOffset() + diff, animated: false };
-                            const obj3 = { x: recyclerViewManager.getAbsoluteLastScrollOffset() + diff, animated: false };
-                          } else {
-                            obj4 = { y: recyclerViewManager.getAbsoluteLastScrollOffset() + diff, animated: false };
-                          }
-                          const current = ref.current;
-                          if (current != null) {
-                            current.scrollTo(obj4);
-                          }
-                        }
-                        if (dataLength !== ref4.current) {
-                          closure_11(recyclerViewManager.getAbsoluteLastScrollOffset() + diff, () => {
-
-                          });
-                          recyclerViewManager.ignoreScrollEvents = true;
-                          _setTimeout(() => {
-                            recyclerViewManager.ignoreScrollEvents = false;
-                          }, 100);
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-            computeFirstVisibleIndexForOffsetCorrection();
-          }
-        }
-      }
+    if (current.hoverOut) {
+      const _clearTimeout3 = clearTimeout;
+      clearTimeout(current.hoverOut);
     }
-    ref4.current = recyclerViewManager.getDataLength();
-  }, items2);
-  const handlerMethods = ref4(() => {
-    let isRTL;
-    let obj = {
-      scrollToOffset(animated) {
-        let offset;
-        let skipFirstItemOffset;
-        ({ offset, skipFirstItemOffset } = animated);
-        animated = animated.animated;
-        if (skipFirstItemOffset === undefined) {
-          skipFirstItemOffset = true;
-        }
-        const horizontal = closure_0.props.horizontal;
-        if (ref.current) {
-          let point1;
-          let sum = offset;
-          const tmp3 = isRTL.isRTL && horizontal;
-          if (tmp3) {
-            const adjustOffsetForRTL = closure_0(ref[7]).adjustOffsetForRTL;
-            const firstItemOffset = obj.firstItemOffset;
-            closure_0(ref[7]);
-            sum = adjustOffsetForRTL(offset, obj.getChildContainerDimensions().width, obj.getWindowSize().width) + (skipFirstItemOffset ? firstItemOffset : -firstItemOffset);
-          }
-          let num = 0;
-          if (!skipFirstItemOffset) {
-            num = obj.firstItemOffset;
-          }
-          const sum1 = sum + num;
-          if (horizontal) {
-            const point = { x: sum1, y: 0 };
-            point1 = point;
-          } else {
-            point1 = { x: 0, y: sum1 };
-          }
-          const current = tmp.current;
-          const scrollTo = current.scrollTo;
-          const obj2 = { animated };
-          const merged = Object.assign(point1);
-          scrollTo(obj2);
-        }
-      },
-      clearLayoutCacheOnUpdate() {
-        const result = closure_0.markLayoutManagerDirty();
-      },
-      flashScrollIndicators() {
-        const current = ref.current;
-        const result = current.flashScrollIndicators();
-      },
-      getNativeScrollRef() {
-        return ref.current;
-      },
-      getScrollResponder() {
-        const current = ref.current;
-        return current.getScrollResponder();
-      },
-      getScrollableNode() {
-        const current = ref.current;
-        return current.getScrollableNode();
-      },
-      scrollToEnd() {
-        return closure_0(...arguments);
-      },
-      scrollToTop() {
-        let obj = arg0;
-        if (arg0 === undefined) {
-          obj = {};
-        }
-        const obj2 = { offset: 0, animated: obj.animated };
-        handlerMethods.scrollToOffset(obj2);
-      },
-      scrollToIndex(arg0) {
-        let animated;
-        let closure_1;
-        let closure_2;
-        let closure_3;
-        let props;
-        ({ index: closure_0, animated: closure_1, viewPosition: closure_2, viewOffset: closure_3 } = arg0);
-        const promise = new Promise((fn) => {
-          let tmp;
-          let layout = fn;
-          let obj = props;
-          const horizontal = props.props.horizontal;
-          if (animated.current) {
-            if (layout >= 0) {
-              if (tmp < obj.getDataLength()) {
-                const tmp3 = closure_1_5;
-                closure_1_5.current = true;
-                let result = obj.setOffsetProjectionEnabled(false);
-                function getFinalOffset() {
-                  let sum;
-                  size = layout.getLayout(closure_0);
-                  const tmp2 = horizontal ? size.x : size.y;
-                  if (undefined !== closure_2) {
-                    const size2 = obj.getWindowSize();
-                    let diff = tmp2;
-                    if (undefined !== closure_2) {
-                      diff = tmp2 - ((tmp ? size2.width : size2.height) - (tmp ? size.width : size.height)) * tmp3;
-                    }
-                    sum = diff;
-                    if (undefined !== closure_3) {
-                      sum = diff + closure_3;
-                    }
-                  } else {
-                    sum = tmp2;
-                  }
-                  return sum + layout.firstItemOffset;
-                }
-                const absoluteLastScrollOffset = obj.getAbsoluteLastScrollOffset();
-                size = obj.getWindowSize();
-                const result1 = 2 * (horizontal ? size.width : size.height);
-                function getStartScrollOffset() {
+  }, []);
+  let tmp7;
+  if (android_ripple) {
+    const color = android_ripple.color;
+    let obj = { color, borderless, radius, foreground };
+    borderless = android_ripple.borderless;
+    radius = android_ripple.radius;
+    foreground = android_ripple.foreground;
+    tmp7 = obj;
+  }
+  if (typeof hitSlop === "number") {
+    const tmp12 = delayHoverIn;
+    let obj3 = delayHoverIn(delayHoverOut[5]);
+    numberAsInsetResult = obj3.numberAsInset(hitSlop);
+  } else {
+    numberAsInsetResult = hitSlop;
+    if (hitSlop == null) {
+      const tmp9 = delayHoverIn;
+      let obj2 = delayHoverIn(delayHoverOut[5]);
+      numberAsInsetResult = obj2.numberAsInset(0);
+    }
+  }
+  const addInsets = delayHoverIn(delayHoverOut[5]).addInsets;
+  const tmp16 = delayHoverIn(delayHoverOut[5]);
+  if (typeof pressRetentionOffset === "number") {
+    const tmp14Result = delayHoverIn(delayHoverOut[5]);
+    numberAsInsetResult1 = tmp14Result.numberAsInset(pressRetentionOffset);
+  } else {
+    numberAsInsetResult1 = pressRetentionOffset;
+    if (pressRetentionOffset == null) {
+      const tmp14Result2 = delayHoverIn(delayHoverOut[5]);
+      numberAsInsetResult1 = tmp14Result2.numberAsInset(0);
+    }
+  }
+  const addInsetsResult = addInsets(numberAsInsetResult, numberAsInsetResult1);
+  if (delayLongPress == null) {
+    delayLongPress = 500;
+  }
+  if (unstable_pressDelay == null) {
+    unstable_pressDelay = 0;
+  }
+  function firePressIn(arg0) {
 
-                }
-                let closure_6 = getFinalOffset();
-                const finalOffset = getFinalOffset();
-                if (finalOffset > absoluteLastScrollOffset) {
-                  const tmp11 = globalThis;
-                  let _Math2 = Math;
-                  let bound = Math.max(finalOffset - result1, absoluteLastScrollOffset);
-                  obj.setScrollDirection("forward");
-                } else {
-                  const tmp8 = globalThis;
-                  let _Math = Math;
-                  bound = Math.min(finalOffset + result1, absoluteLastScrollOffset);
-                  const str = "backward";
-                  obj.setScrollDirection("backward");
-                }
-                let closure_8 = closure_6;
-                function performScrollStep(arg0) {
-                  layout = arg0;
-                  if (absoluteLastScrollOffset.current) {
-                    let tmp26 = layout();
-                  } else {
-                    let maxScrollOffset;
-                    if (5 <= arg0) {
-                      if (typeof finishScrollToIndex === "function") {
-                        getFinalOffset();
-                        maxScrollOffset = layout.getMaxScrollOffset();
-                        const tmp14 = horizontal;
-                        if (tmp14) {
-                          let obj = { offset: bound, animated: false, skipFirstItemOffset: true };
-                          closure_2_13.scrollToOffset(obj);
-                        }
-                        const obj2 = { offset: maxScrollOffset, animated: horizontal, skipFirstItemOffset: true };
-                        closure_2_13.scrollToOffset(obj2);
-                        let num5 = 200;
-                        const tmp22 = closure_2_7;
-                        if (horizontal) {
-                          num5 = 300;
-                        }
-                        tmp22(() => {
-                          closure_3_5.current = false;
-                          const result = closure_0.setOffsetProjectionEnabled(true);
-                          closure_0();
-                        }, num5);
-                      } else {
-                        throw new TypeError("Trying to call a non-function");
-                      }
-                    } else {
-                      let sum;
-                      const tmp = closure_2_11;
-                      if (horizontal) {
-                        sum = maxScrollOffset + arg0 / 4 * (bound - maxScrollOffset);
-                      } else {
-                        sum = bound + arg0 / 4 * (maxScrollOffset - bound);
-                      }
-                      tmp(sum, () => {
-                        if (closure_0 >= closure_0.getDataLength()) {
-                          const obj = { animated };
-                          handlerMethods.scrollToEnd(obj);
-                          closure_0();
-                        } else {
-                          const tmp27 = getFinalOffset();
-                          const tmp26 = getFinalOffset;
-                          if (tmp27 >= closure_6) {
-                            performScrollStep(closure_0 + 1);
-                          }
-                          closure_8 = tmp27;
-                          if (typeof getStartScrollOffset === "function") {
-                            const tmp26Result = tmp26();
-                            if (tmp26Result > absoluteLastScrollOffset) {
-                              const _Math2 = Math;
-                              bound = Math.max(tmp26Result - result1, tmp8);
-                              closure_0.setScrollDirection("forward");
-                            } else {
-                              const _Math = Math;
-                              bound = Math.min(tmp26Result + result1, tmp8);
-                              closure_0.setScrollDirection("backward");
-                            }
-                            closure_6 = tmp27;
-                            performScrollStep(0);
-                          } else {
-                            throw new TypeError("Trying to call a non-function");
-                          }
-                        }
-                      });
-                    }
-                  }
-                }
-                function finishScrollToIndex() {
-
-                }
-                performScrollStep(0);
-              }
-            }
-          }
-          let tmp2 = fn();
-        });
-        return promise;
-      },
-      scrollToItem(item) {
-        item = item.item;
-        const data = closure_0.props.data;
-        if (ref.current) {
-          if (data) {
-            const findIndexResult = data.findIndex((item) => item === item);
-            if (findIndexResult >= 0) {
-              const obj = { index: findIndexResult, animated: tmp, viewPosition: tmp2, viewOffset: tmp3 };
-              handlerMethods.scrollToIndex(obj);
-            }
-          }
-        }
-      },
-      getFirstItemOffset() {
-        return closure_0.firstItemOffset;
-      },
-      getWindowSize() {
-        return closure_0.getWindowSize();
-      },
-      getLayout(currentStickyIndex) {
-        return closure_0.tryGetLayout(currentStickyIndex);
-      },
-      getAbsoluteLastScrollOffset() {
-        return closure_0.getAbsoluteLastScrollOffset();
-      },
-      getChildContainerDimensions() {
-        return closure_0.getChildContainerDimensions();
-      },
-      recordInteraction() {
-        closure_0.recordInteraction();
-      },
-      computeVisibleIndices() {
-        return closure_0.computeVisibleIndices();
-      },
-      getFirstVisibleIndex() {
-        return closure_0.computeVisibleIndices().startIndex;
-      },
-      recomputeViewableItems() {
-        const result = closure_0.recomputeViewableItems();
-      },
-      updateViewableItems() {
-        const itemViewability = closure_0.computeItemViewability();
-      },
-      prepareForLayoutAnimationRender() {
-        const tmp = closure_0;
-        if (!closure_0.props.keyExtractor) {
-          const _console = console;
-          console.warn(closure_0(ref[8]).WarningMessages.keyExtractorNotDefinedForAnimation);
-        }
-        tmp.animationOptimizationsEnabled = true;
+  }
+  let fn;
+  const sum = delayLongPress + unstable_pressDelay;
+  if (onPress) {
+    fn = (arg0) => {
+      let items;
+      let items1;
+      let obj3;
+      if (closure_13.current) {
+        const obj = { identifier: 0, locationX: null, locationY: null, pageX: null, pageY: null, target: 0, timestamp: Date.now(), touches: [], changedTouches: [], force: "Promise" };
+        ({ x: obj.locationX, y: obj.locationY, absoluteX: obj.pageX, absoluteY: obj.pageY } = arg0);
+        const _Date = Date;
+        const obj2 = { nativeEvent: obj3 };
+        obj3 = { touches: items, changedTouches: items1 };
+        const merged = Object.assign(obj);
+        items = [obj];
+        items1 = [obj];
+        onPress(obj2);
       }
     };
-    Object.defineProperty(obj, "props", { get: () => closure_0.props, set: undefined });
-    let closure_0 = ref2(() => {
-      let closure_1;
-      let engagedIndices = arg0;
-      let c3 = 0;
-      let c4 = 0;
-      const iter = (function*(arg0, value) {
-        let animated;
-        if (1 === c3) {
-          if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            return { value, done: true };
+  }
+  let fn2;
+  if (onLongPress) {
+    fn2 = (arg0) => {
+      let items;
+      let items1;
+      let items2;
+      let items3;
+      let obj11;
+      let obj5;
+      if (closure_13.current) {
+        if (closure_11.current.press) {
+          const _clearTimeout = clearTimeout;
+          clearTimeout(closure_11.current.press);
+          closure_11.current.press = null;
+          if (typeof firePressIn === "function") {
+            closure_10(true);
+            if (onPressIn != null) {
+              const obj2 = { identifier: 0, locationX: null, locationY: null, pageX: null, pageY: null, target: 0, timestamp: Date.now(), touches: [], changedTouches: [], force: "Promise" };
+              ({ x: obj4.locationX, y: obj4.locationY, absoluteX: obj4.pageX, absoluteY: obj4.pageY } = arg0);
+              const _Date2 = Date;
+              const obj3 = { nativeEvent: obj5 };
+              obj5 = { touches: items, changedTouches: items1 };
+              const merged = Object.assign(obj2);
+              items = [obj2];
+              items1 = [obj2];
+              tmp9(obj3);
+            }
           } else {
-            const data = engagedIndices.props.data;
-            const tmp23 = data;
-            if (tmp23) {
-              if (data.length > 0) {
-                index = data.length - 1;
-                engagedIndices = engagedIndices.getEngagedIndices();
-                if (!engagedIndices.includes(index)) {
-                  c3 = 2;
-                  c4 = 1;
-                  const obj6 = { index, animated };
-                  const obj7 = { value: closure_1_13.scrollToIndex(obj6), done: false };
-                  return obj7;
-                }
+            throw new TypeError("Trying to call a non-function");
+          }
+        }
+        const obj = { identifier: 0, locationX: null, locationY: null, pageX: null, pageY: null, target: 0, timestamp: Date.now(), touches: [], changedTouches: [], force: "Promise" };
+        ({ x: obj.locationX, y: obj.locationY, absoluteX: obj.pageX, absoluteY: obj.pageY } = arg0);
+        const _Date = Date;
+        const obj6 = { nativeEvent: obj11 };
+        obj11 = { touches: items2, changedTouches: items3 };
+        const merged1 = Object.assign(obj);
+        items2 = [obj];
+        items3 = [obj];
+        onLongPress(obj6);
+      }
+    };
+  }
+  if (null != onHoverIn) {
+    fn3 = (arg0) => {
+      let items;
+      let items1;
+      let obj3;
+      let closure_0 = arg0;
+      if (ref.current.hoverOut) {
+        const _clearTimeout = clearTimeout;
+        clearTimeout(ref.current.hoverOut);
+        ref.current.hoverOut = null;
+      }
+      if (onHoverIn) {
+        if (closure_0) {
+          const _setTimeout = setTimeout;
+          ref.current.hoverIn = setTimeout(() => {
+            let items;
+            let items1;
+            let obj3;
+            ref.current.hoverIn = null;
+            const obj = { identifier: 0, locationX: closure_0.x, locationY: closure_0.y, pageX: closure_0.absoluteX, pageY: closure_0.absoluteY, target: 0, timestamp: Date.now(), touches: [], changedTouches: [], force: "Promise" };
+            const obj2 = { nativeEvent: obj3 };
+            obj3 = { touches: items, changedTouches: items1 };
+            const merged = Object.assign(obj);
+            items = [obj];
+            items1 = [obj];
+            onHoverIn(obj2);
+          }, tmp6);
+        } else {
+          let obj = { identifier: 0, locationX: null, locationY: null, pageX: null, pageY: null, target: 0, timestamp: Date.now(), touches: [], changedTouches: [], force: "Promise" };
+          ({ x: obj.locationX, y: obj.locationY, absoluteX: obj.pageX, absoluteY: obj.pageY } = arg0);
+          const _Date = Date;
+          let obj2 = { nativeEvent: obj3 };
+          obj3 = { touches: items, changedTouches: items1 };
+          let merged = Object.assign(obj);
+          items = [obj];
+          items1 = [obj];
+          tmp5(obj2);
+        }
+      }
+    };
+  }
+  if (null != onHoverOut) {
+    fn4 = (arg0) => {
+      let items;
+      let items1;
+      let obj3;
+      let closure_0 = arg0;
+      if (ref.current.hoverIn) {
+        const _clearTimeout = clearTimeout;
+        clearTimeout(ref.current.hoverIn);
+        ref.current.hoverIn = null;
+      }
+      if (onHoverOut) {
+        if (delayHoverOut) {
+          const _setTimeout = setTimeout;
+          ref.current.hoverOut = setTimeout(() => {
+            let items;
+            let items1;
+            let obj3;
+            ref.current.hoverOut = null;
+            const obj = { identifier: 0, locationX: closure_0.x, locationY: closure_0.y, pageX: closure_0.absoluteX, pageY: closure_0.absoluteY, target: 0, timestamp: Date.now(), touches: [], changedTouches: [], force: "Promise" };
+            const obj2 = { nativeEvent: obj3 };
+            obj3 = { touches: items, changedTouches: items1 };
+            const merged = Object.assign(obj);
+            items = [obj];
+            items1 = [obj];
+            onHoverOut(obj2);
+          }, tmp6);
+        } else {
+          let obj = { identifier: 0, locationX: null, locationY: null, pageX: null, pageY: null, target: 0, timestamp: Date.now(), touches: [], changedTouches: [], force: "Promise" };
+          ({ x: obj.locationX, y: obj.locationY, absoluteX: obj.pageX, absoluteY: obj.pageY } = arg0);
+          const _Date = Date;
+          let obj2 = { nativeEvent: obj3 };
+          obj3 = { touches: items, changedTouches: items1 };
+          let merged = Object.assign(obj);
+          items = [obj];
+          items1 = [obj];
+          tmp5(obj2);
+        }
+      }
+    };
+  }
+  if (testOnly_pressed == null) {
+    testOnly_pressed = first;
+  }
+  let style1 = style;
+  if (typeof style === "function") {
+    let obj4 = { pressed: testOnly_pressed };
+    style1 = style(obj4);
+  }
+  let childrenResult = children;
+  if (typeof children === "function") {
+    let obj5 = { pressed: testOnly_pressed };
+    childrenResult = children(obj5);
+  }
+  let obj6 = {
+    ref,
+    accessible: false !== accessible,
+    disabled: true === disabled,
+    hitSlop: addInsetsResult,
+    onLayout(nativeEvent) {
+      if (closure_9 != null) {
+        tmp(nativeEvent);
+      }
+      ref.current = nativeEvent.nativeEvent.layout;
+    },
+    androidRipple: tmp7,
+    touchSoundDisabled: android_disableSound,
+    delayLongPress: sum,
+    style: items,
+    animationDuration,
+    immediatePressOut: tmp,
+    onPressIn(locationX) {
+      let items;
+      let items1;
+      let obj9;
+      let tmp;
+      let closure_0 = locationX;
+      let obj = delayHoverIn(delayHoverOut[5]);
+      let obj2 = { identifier: 0, locationX: locationX.x, locationY: locationX.y, pageX: locationX.absoluteX, pageY: locationX.absoluteY, target: 0, timestamp: Date.now(), touches: [], changedTouches: [], force: "Promise" };
+      closure_13.current = obj.isTouchWithinInset(ref.current, closure_14, obj2);
+      if (closure_13.current) {
+        if (unstable_pressDelay) {
+          if (ref.current.press) {
+            const _clearTimeout = clearTimeout;
+            clearTimeout(ref.current.press);
+          }
+          const _setTimeout = setTimeout;
+          ref.current.press = setTimeout(() => {
+            let items;
+            let items1;
+            let obj3;
+            ref.current.press = null;
+            const tmp = locationX;
+            if (typeof firePressIn === "function") {
+              closure_10(true);
+              if (onPressIn != null) {
+                const obj = { identifier: 0, locationX: null, locationY: null, pageX: null, pageY: null, target: 0, timestamp: Date.now(), touches: [], changedTouches: [], force: "Promise" };
+                ({ x: obj.locationX, y: obj.locationY, absoluteX: obj.pageX, absoluteY: obj.pageY } = tmp);
+                const _Date = Date;
+                const obj2 = { nativeEvent: obj3 };
+                obj3 = { touches: items, changedTouches: items1 };
+                const merged = Object.assign(obj);
+                items = [obj];
+                items1 = [obj];
+                tmp4(obj2);
               }
-            }
-          }
-        } else if (arg0 === 1) {
-          c4 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c4 = 3;
-          let obj = { value, done: true };
-          return obj;
-        }
-        closure_1_7(() => {
-          const current = ref.current;
-          if (current != null) {
-            const obj = { animated };
-            current.scrollToEnd(obj);
-          }
-        }, 0);
-        yield "HermesInternal";
-        index = tmp4;
-        let obj4 = engagedIndices;
-        if (engagedIndices === undefined) {
-          obj4 = {};
-        }
-        animated = obj4.animated;
-        return "flexDirection";
-      })();
-      iter.next();
-      return iter;
-    });
-    return obj;
-  }, items3);
-  const items4 = [handlerMethods, recyclerViewManager, _setTimeout];
-  const items5 = [handlerMethods, arg2, recyclerViewManager];
-  const applyInitialScrollIndex = closure_4(() => {
-    let data;
-    let horizontal;
-    let initialScrollIndexParams;
-    let obj = recyclerViewManager;
-    ({ data, initialScrollIndexParams, horizontal } = recyclerViewManager.props);
-    let num = recyclerViewManager.getInitialScrollIndex();
-    if (num == null) {
-      num = -1;
-    }
-    if (num >= 0) {
-      let num2;
-      if (data != null) {
-        num2 = data.length;
-      }
-      if (num2 == null) {
-        num2 = 0;
-      }
-      if (num < num2) {
-        if (!obj.isInitialScrollComplete) {
-          if (obj.getIsFirstLayoutComplete()) {
-            let sum;
-            _setTimeout(() => {
-              sum.isInitialScrollComplete = true;
-              ref3.current = false;
-            }, 100);
-            closure_5.current = true;
-            let num4;
-            const tmp = _setTimeout;
-            if (initialScrollIndexParams != null) {
-              num4 = initialScrollIndexParams.viewOffset;
-            }
-            if (num4 == null) {
-              num4 = 0;
-            }
-            const point = obj.getLayout(num);
-            if (horizontal) {
-              sum = point.x + num4;
             } else {
-              sum = point.y + num4;
+              throw new TypeError("Trying to call a non-function");
             }
-            recyclerViewManager = sum;
-            const obj2 = { offset: sum, animated: false, skipFirstItemOffset: false };
-            handlerMethods.scrollToOffset(obj2);
-            tmp(() => {
-              const obj = { offset: sum, animated: false, skipFirstItemOffset: false };
-              handlerMethods.scrollToOffset(obj);
-            }, 0);
+          }, tmp);
+        } else if (typeof firePressIn === "function") {
+          const tmp4 = closure_10(true);
+          if (onPressIn != null) {
+            const obj4 = { identifier: 0, locationX: null, locationY: null, pageX: null, pageY: null, target: 0, timestamp: Date.now(), touches: [], changedTouches: [], force: "Promise" };
+            ({ x: obj3.locationX, y: obj3.locationY, absoluteX: obj3.pageX, absoluteY: obj3.pageY } = locationX);
+            let _Date = Date;
+            const obj5 = { nativeEvent: obj9 };
+            obj9 = { touches: items, changedTouches: items1 };
+            let merged = Object.assign(obj4);
+            items = [obj4];
+            items1 = [obj4];
+            tmp5(obj5);
+          }
+        } else {
+          throw new TypeError("Trying to call a non-function");
+        }
+        return tmp7;
+      }
+    },
+    onPressOut(arg0) {
+      let items;
+      let items1;
+      let items2;
+      let items3;
+      let obj11;
+      let obj3;
+      if (closure_13.current) {
+        if (closure_11.current.press) {
+          const _clearTimeout = clearTimeout;
+          clearTimeout(closure_11.current.press);
+          closure_11.current.press = null;
+          if (typeof firePressIn === "function") {
+            closure_10(true);
+            if (onPressIn != null) {
+              const obj = { identifier: 0, locationX: null, locationY: null, pageX: null, pageY: null, target: 0, timestamp: Date.now(), touches: [], changedTouches: [], force: "Promise" };
+              ({ x: obj.locationX, y: obj.locationY, absoluteX: obj.pageX, absoluteY: obj.pageY } = arg0);
+              const _Date = Date;
+              const obj2 = { nativeEvent: obj3 };
+              obj3 = { touches: items, changedTouches: items1 };
+              const merged = Object.assign(obj);
+              items = [obj];
+              items1 = [obj];
+              tmp9(obj2);
+            }
+          } else {
+            throw new TypeError("Trying to call a non-function");
           }
         }
+        closure_10(false);
+        if (onPressOut != null) {
+          const obj5 = { identifier: 0, locationX: null, locationY: null, pageX: null, pageY: null, target: 0, timestamp: Date.now(), touches: [], changedTouches: [], force: "Promise" };
+          ({ x: obj4.locationX, y: obj4.locationY, absoluteX: obj4.pageX, absoluteY: obj4.pageY } = arg0);
+          const _Date2 = Date;
+          const obj6 = { nativeEvent: obj11 };
+          obj11 = { touches: items2, changedTouches: items3 };
+          const merged1 = Object.assign(obj5);
+          items2 = [obj5];
+          items3 = [obj5];
+          tmp12(obj6);
+        }
       }
-    }
-  }, items4);
-  let tmp8 = ref3(arg1, () => {
-    let props;
-    const obj = {};
-    const merged = Object.assign(ref.current);
-    const merged1 = Object.assign(handlerMethods);
-    const obj2 = {
-      get() {
-        return props.props;
-      },
-      enumerable: true,
-      configurable: true
-    };
-    Object.defineProperty(obj, "props", obj2);
-    return obj;
-  }, items5);
-  return { applyOffsetCorrection, computeFirstVisibleIndexForOffsetCorrection, applyInitialScrollIndex, handlerMethods };
-}
+    },
+    onPress: fn,
+    onLongPress: fn2,
+    onHoverIn: fn3,
+    onHoverOut: fn4,
+    testOnly_onPress: tmp25,
+    testOnly_onPressIn: tmp26,
+    testOnly_onPressOut: tmp27,
+    testOnly_onLongPress: tmp28,
+    testOnly_onHoverIn: tmp29,
+    testOnly_onHoverOut: tmp30,
+    children: items1
+  };
+  const Touchable = tmp14(tmp15[6]).Touchable;
+  let merged = Object.assign(tmp3);
+  items = [tmp14(tmp15[7]).pointerStyle, style1];
+  tmp25 = undefined;
+  const tmp22 = closure_9;
+  if (closure_10) {
+    tmp25 = onPress;
+  }
+  tmp26 = undefined;
+  if (closure_10) {
+    tmp26 = onPressIn;
+  }
+  tmp27 = undefined;
+  if (closure_10) {
+    tmp27 = onPressOut;
+  }
+  tmp28 = undefined;
+  if (closure_10) {
+    tmp28 = onLongPress;
+  }
+  tmp29 = undefined;
+  if (closure_10) {
+    tmp29 = onHoverIn;
+  }
+  tmp30 = undefined;
+  if (closure_10) {
+    tmp30 = onHoverOut;
+  }
+  items1 = [childrenResult, null];
+  return tmp22(Touchable, obj6);
+};

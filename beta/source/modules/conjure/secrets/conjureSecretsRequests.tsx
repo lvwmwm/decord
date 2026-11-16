@@ -1,11 +1,11 @@
-// Module ID: 13002
-// Function ID: 13003
+// Module ID: 13749
+// Function ID: 13750
 // Name: conjureSecretsRequests
-// Dependencies: [5, 11113, 2]
+// Dependencies: [5, 13219, 2]
 // Exports: submitProjectSecrets
 
-// Module 13002 (conjureSecretsRequests)
-import conjureWorkerFetch from "conjureWorkerFetch" /* 11113 */;
+// Module 13749 (conjureSecretsRequests)
+import conjureWorkerFetch from "conjureWorkerFetch" /* 13219 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let obj = function _submitProjectSecrets() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "ulw" };
         }
       } else {
         try {
@@ -63,7 +63,7 @@ let obj = function _submitProjectSecrets() {
               throw new closure_131_3("secret request expired");
             } else if (closure_0.ok) {
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "ulw" };
             } else {
               const _Error = Error;
               const _HermesInternal = HermesInternal;

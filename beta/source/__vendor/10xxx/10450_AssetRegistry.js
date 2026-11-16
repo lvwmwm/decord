@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/stickers/native/images", width: 16, height: 16, scales: [2, 3], hash: "494d75fe739ed4a36d195ab8193847fa", name: "alert", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "d6d04f6fd100db0e028d8a7cb876c1d6", name: "PlusSmallIcon", type: "png" });

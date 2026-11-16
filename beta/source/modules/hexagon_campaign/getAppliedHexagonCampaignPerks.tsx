@@ -1,23 +1,23 @@
-// Module ID: 17358
-// Function ID: 17359
+// Module ID: 17629
+// Function ID: 17630
 // Name: getAppliedHexagonCampaignPerks
-// Dependencies: [5194, 1192, 1385, 5195, 1195, 5198, 5229, 2]
+// Dependencies: [5330, 1192, 1388, 5331, 1195, 5334, 5365, 2]
 // Exports: getAppliedHexagonCampaignPerks, getHexagonCampaignClientThemeSystemThemes, isHexagonCampaignClientThemeApplied, isHexagonCampaignDisplayNameStyleApplied
 
-// Module 17358 (getAppliedHexagonCampaignPerks)
+// Module 17629 (getAppliedHexagonCampaignPerks)
 import ThemeConstants from "ThemeConstants" /* 1195 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5195 */;
-import isPerModeThemingActive from "isPerModeThemingActive" /* 5229 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5194 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5331 */;
+import isPerModeThemingActive from "isPerModeThemingActive" /* 5365 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5330 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
-import UserStore from "UserStore" /* 1385 */;
+import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 let syncedClientTheme;
 
 let tmp;
-const HexagonCampaignUtils = tmp(5198);
-const f113312 = (item) => {
+const HexagonCampaignUtils = tmp(5334);
+const f115770 = (item) => {
   const isHexagonCampaignClientThemePreset = HexagonCampaignUtils.isHexagonCampaignClientThemePreset;
   HexagonCampaignUtils;
   syncedClientTheme = syncedClientTheme.getSyncedClientTheme(item);
@@ -34,7 +34,7 @@ const result = size.fileFinishedImporting("modules/hexagon_campaign/getAppliedHe
 export function getHexagonCampaignClientThemeSystemThemes() {
   const items = [, ];
   ({ LIGHT: arr[0], DARK: arr[1] } = SystemTheme);
-  return items.filter(f113312);
+  return items.filter(f115770);
 }
 export function isHexagonCampaignClientThemeApplied() {
   let tmp7;
@@ -42,17 +42,16 @@ export function isHexagonCampaignClientThemeApplied() {
   if (obj.isPerModeThemingActive()) {
     const items = [, ];
     ({ LIGHT: arr[0], DARK: arr[1] } = SystemTheme);
-    tmp7 = items.filter(f113312).length > 0;
+    tmp7 = items.filter(f115770).length > 0;
   } else {
     const gradientPreset = ClientThemesBackgroundStore.gradientPreset;
     let id;
     let isHexagonCampaignClientThemePreset = HexagonCampaignUtils.isHexagonCampaignClientThemePreset;
     HexagonCampaignUtils;
-    const tmp4 = ClientThemesBackgroundStore;
     if (gradientPreset != null) {
       id = gradientPreset.id;
     }
-    tmp7 = isHexagonCampaignClientThemePreset(id) || tmp4.hasHiddenHexagonCampaignPreset;
+    tmp7 = isHexagonCampaignClientThemePreset(id) && !tmp4.isUpsellGradientPreview || tmp4.hasHiddenHexagonCampaignPreset;
   }
   return tmp7;
 }
