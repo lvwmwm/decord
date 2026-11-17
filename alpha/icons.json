@@ -421,7 +421,7 @@
     },
     "BadgeIcon": {
         "file": "app/design/components/Icon/native/redesign/generated/images/BadgeIcon.png",
-        "hash": "9e19181651828ca952221179ae78d318",
+        "hash": "ac89766a028c9f052b0262b6a3fded9f",
         "scales": [],
         "width": 24,
         "height": 24
@@ -8948,6 +8948,13 @@
     "VoiceLockIcon": {
         "file": "app/design/components/Icon/native/redesign/generated/images/VoiceLockIcon.png",
         "hash": "38f7d2f2d427a5f45efdf121101c72d6",
+        "scales": [],
+        "width": 24,
+        "height": 24
+    },
+    "VoiceLowIcon": {
+        "file": "app/design/components/Icon/native/redesign/generated/images/VoiceLowIcon.png",
+        "hash": "1315424d527706110d695c3a9af3f09a",
         "scales": [],
         "width": 24,
         "height": 24
