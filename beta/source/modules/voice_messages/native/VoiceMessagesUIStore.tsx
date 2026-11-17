@@ -21,7 +21,7 @@ let c3;
 let obj = module_560.create(() => {
   let items;
   let obj2;
-  obj = { voiceMessageAnimationState: obj2.makeMutable(items), recordingStatus: null, recordingId: null, currWaveHeight: "Path", showRecordingOverlay: "Array", startTimeMillis: 0, waveform: [], waveformVersion: "Promise", showVoiceMessagesTooltip: "skin-tone-1", savedVoiceMessageUploadData: "Manifest Source", isVoiceMessageButtonMounted: null, isUsingHoldGesture: null };
+  obj = { voiceMessageAnimationState: obj2.makeMutable(items), recordingStatus: null, recordingId: null, currWaveHeight: "Path", showRecordingOverlay: "Array", startTimeMillis: 0, waveform: [], waveformVersion: "Promise", showVoiceMessagesTooltip: 0, savedVoiceMessageUploadData: 0, isVoiceMessageButtonMounted: 0, isUsingHoldGesture: 0 };
   items = [, ];
   ({ SENDING: arr[0], SENDING: arr[1] } = React2);
   obj2 = _mod1655;

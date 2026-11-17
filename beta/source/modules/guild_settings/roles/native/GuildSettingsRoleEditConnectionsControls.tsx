@@ -459,7 +459,7 @@ export default function GuildSettingsRolesEditConnectionsControls(guild) {
     handleConnectionTapped(connectionType, applicationId) {
       let values2;
       const items = [...memo];
-      const obj = { connectionType, connectionMetadataField: "Array", applicationId, operator: "y", value: -59572225 };
+      const obj = { connectionType, connectionMetadataField: "Array", applicationId, operator: "ks", value: "isArray" };
       items.push(obj);
       const updateRoleConnectionConfigurations = GuildSettingsRolesActionCreators.updateRoleConnectionConfigurations;
       const id = role.id;

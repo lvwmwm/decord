@@ -12,7 +12,7 @@ let obj = module_560.create((arg0) => {
   obj = {
     utmSourceCurrent: "r",
     utmMediumCurrent: "description",
-    utmCampaignCurrent: "v",
+    utmCampaignCurrent: "guild",
     utmContentCurrent: "isArray",
     setUtmCurrentContext(utmSourceCurrent) {
       obj = { utmSourceCurrent: utmSourceCurrent.utmSourceCurrent, utmMediumCurrent: utmSourceCurrent.utmMediumCurrent, utmCampaignCurrent: utmSourceCurrent.utmCampaignCurrent, utmContentCurrent: utmSourceCurrent.utmContentCurrent };

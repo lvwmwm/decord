@@ -244,8 +244,8 @@ export default function PollAnswerInput(answer) {
     accessibilityHint: formatToPlainStringResult,
     maxLength,
     returnKeyType: null,
-    required: "two_way_link_error",
-    autoCorrect: null,
+    required: "MessageActionCreators.sendMessage",
+    autoCorrect: "string",
     "aria-invalid": error
   };
   const FormInput = tmp9(tmp10[22]).FormInput;

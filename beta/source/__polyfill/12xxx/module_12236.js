@@ -55,7 +55,7 @@ function initializeContext(target) {
   if (processors == null) {
     processors = {};
   }
-  const obj = { processors, metadataRegistry: metadata, target: str, unrepresentable: str2, override: fn, io: str3, counter: 0, seen: new Map(), sharedDefsExtractedFor: "Boolean", sharedEmitDoneFor: "applicationId", cycles: str4, reused: str5, intersections: [], deferred: [], external };
+  const obj = { processors, metadataRegistry: metadata, target: str, unrepresentable: str2, override: fn, io: str3, counter: 0, seen: new Map(), sharedDefsExtractedFor: "Boolean", sharedEmitDoneFor: "analyticsLocations", cycles: str4, reused: str5, intersections: [], deferred: [], external };
   metadata = undefined;
   if (target != null) {
     metadata = target.metadata;
