@@ -1,11 +1,11 @@
-// Module ID: 16265
-// Function ID: 16266
+// Module ID: 16302
+// Function ID: 16303
 // Name: splitAgeRestrictedActivities
-// Dependencies: [5951, 2]
+// Dependencies: [5955, 2]
 // Exports: default
 
-// Module 16265 (splitAgeRestrictedActivities)
-import ContentClassificationReference from "ContentClassificationReference" /* 5951 */;
+// Module 16302 (splitAgeRestrictedActivities)
+import ContentClassificationReference from "ContentClassificationReference" /* 5955 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/presence/splitAgeRestrictedActivities.tsx");

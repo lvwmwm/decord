@@ -1,29 +1,29 @@
-// Module ID: 19929
-// Function ID: 19930
+// Module ID: 19974
+// Function ID: 19975
 // Name: ActivityPanelPIPView
-// Dependencies: [19, 17, 5307, 12904, 5155, 5154, 5949, 19780, 1072, 11986, 12706, 21, 1187, 5306, 575, 1630, 504, 1496, 19925, 11989, 1655, 19930, 5367, 1708, 5538, 5929, 19931, 19932, 1113, 5588, 5227, 19927, 12848, 2]
+// Dependencies: [19, 17, 5311, 11518, 5159, 5158, 5953, 19825, 1072, 12429, 11452, 21, 1187, 5310, 575, 1630, 504, 1496, 19970, 12432, 1655, 19975, 5371, 1708, 5542, 5933, 19976, 19977, 1113, 5592, 5231, 19972, 11461, 2]
 // Exports: useBaseActivityPanelPIPView
 
-// Module 19929 (ActivityPanelPIPView)
+// Module 19974 (ActivityPanelPIPView)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 11986 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11989 */;
-import Constants2 from "Constants" /* 12706 */;
-import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 19780 */;
-import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 19927 */;
+import Constants2 from "Constants" /* 11452 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 12429 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 12432 */;
+import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 19825 */;
+import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 19972 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
-import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 12904 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5949 */;
+import AccessibilityStore from "AccessibilityStore" /* 5311 */;
+import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 11518 */;
+import ChannelStore from "ChannelStore" /* 5159 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5158 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5953 */;
 import native from "native" /* 1187 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -34,7 +34,7 @@ let map1;
 let obj2;
 let obj3;
 let unpackModuleId;
-const f121665 = () => {
+const f121943 = () => {
   let num;
   const _Math = Math;
   if (right != null) {
@@ -372,7 +372,7 @@ const memoResult = react.memo(function ActivityPanelPIPView(transitionState) {
   const tmp8 = transitionCleanUp(1630)();
   let closure_0 = tmp8;
   const items3 = [tmp8.right];
-  memo = activity.useMemo(f121665, items3);
+  memo = activity.useMemo(f121943, items3);
   const items4 = [activity, stateFromStores1, memo, stateFromStores, transitionCleanUp, transitionState];
   return activity.useMemo(() => <BaseActivityPanelPIPView transitionState={transitionState} transitionCleanUp={transitionCleanUp} pipOrientationLockState={stateFromStores} hasActivity={null != activity} context={ActivityPanelStateContextDefault}>{null}</BaseActivityPanelPIPView>, items4);
 });
@@ -384,7 +384,7 @@ export function useBaseActivityPanelPIPView() {
   let items;
   const tmp = useSafeAreaInsetsDefault();
   let closure_0 = tmp;
-  const obj = { landscapeSafeAreasConfig: react.useMemo(f121665, items) };
+  const obj = { landscapeSafeAreasConfig: react.useMemo(f121943, items) };
   items = [tmp.right];
   return obj;
 }

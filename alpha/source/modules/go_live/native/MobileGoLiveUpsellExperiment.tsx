@@ -1,9 +1,9 @@
-// Module ID: 12987
-// Function ID: 12988
+// Module ID: 11620
+// Function ID: 11621
 // Name: MobileGoLiveUpsellExperiment
 // Dependencies: [1452, 2]
 
-// Module 12987 (MobileGoLiveUpsellExperiment)
+// Module 11620 (MobileGoLiveUpsellExperiment)
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 

@@ -1,24 +1,24 @@
-// Module ID: 12494
-// Function ID: 12495
+// Module ID: 12693
+// Function ID: 12694
 // Name: ConnectionMetadataVanityItems
-// Dependencies: [19, 17, 7423, 21, 5306, 575, 1113, 12495, 12496, 12, 2027, 5919, 1187, 7467, 2]
+// Dependencies: [19, 17, 7433, 21, 5310, 575, 1113, 12694, 12695, 12, 2027, 5923, 1187, 7477, 2]
 // Exports: generateBlueskyMetadataItems, generateEbayMetadataItems, generateLetterboxdMetadataItems, generatePaypalMetadataItems, generateRedditMetadataItems, generateRoleConnectionMetadataItems, generateSteamMetadataItems, generateTikTokMetadataItems, generateTwitterMetadataItems
 
-// Module 12494 (ConnectionMetadataVanityItems)
+// Module 12693 (ConnectionMetadataVanityItems)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import NumberUtils from "NumberUtils" /* 2027 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import ConnectionsUtils from "ConnectionsUtils" /* 7467 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12495 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 12496 */;
+import Text_Text from "Text/Text" /* 5923 */;
+import ConnectionsUtils from "ConnectionsUtils" /* 7477 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12694 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 12695 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 7423 */;
+import Constants from "Constants" /* 7433 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let application_metadata;

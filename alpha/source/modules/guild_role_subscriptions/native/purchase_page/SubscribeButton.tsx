@@ -1,23 +1,23 @@
-// Module ID: 19389
-// Function ID: 19390
+// Module ID: 19434
+// Function ID: 19435
 // Name: SubscribeButton
-// Dependencies: [5, 32, 19, 17, 5209, 5231, 1072, 5162, 21, 17846, 504, 9723, 5919, 6259, 1113, 7684, 2169, 1187, 19383, 5542, 19390, 2121, 19379, 7683, 5926, 11264, 2]
+// Dependencies: [5, 32, 19, 17, 5213, 5235, 1072, 5166, 21, 17887, 504, 9736, 5923, 6267, 1113, 7694, 2169, 1187, 19428, 5546, 19435, 2121, 19424, 7693, 5930, 11967, 2]
 // Exports: default
 
-// Module 19389 (SubscribeButton)
+// Module 19434 (SubscribeButton)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ChannelConstants from "ChannelConstants" /* 5162 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6259 */;
+import ChannelConstants from "ChannelConstants" /* 5166 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
+import Text_Text from "Text/Text" /* 5923 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6267 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
-import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 5231 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5213 */;
+import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 5235 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -37,13 +37,13 @@ function SwitchTiersButton(activeSubscription) {
   activeSubscription = activeSubscription.activeSubscription;
   const activeListingId = activeSubscription.activeListingId;
   const changeToListingId = activeSubscription.changeToListingId;
-  let obj = changeToListingId(17846);
+  let obj = changeToListingId(17887);
   const first = _slicedToArray(obj.useName(activeListingId), 1)[0];
   const obj3 = { children: items };
   const obj2 = activeListingId(2169)(activeSubscription.currentPeriodEnd);
   const obj4 = { variant: "body-xs/normal", color: "text-muted", children: intl.format(activeSubscription(1113).t.lA7ztO, obj5) };
   const formatResult = obj2.format("MMMM Do");
-  const Text = activeSubscription(5919).Text;
+  const Text = activeSubscription(5923).Text;
   intl = activeSubscription(1113).intl;
   obj5 = { activeListingName: first, billingEndDate: formatResult, emphasisHook };
   items = [closure_12(Text, obj4), closure_12(activeSubscription(1187).Spacer, { size: 16 }), ];
@@ -53,11 +53,11 @@ function SwitchTiersButton(activeSubscription) {
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
       ActionSheetActionCreatorsDefault;
       const obj = { activeSubscription, activeListingId, changeToListingId };
-      const tmp2 = asyncRequire(19390, dependencyMap.paths);
+      const tmp2 = asyncRequire(19435, dependencyMap.paths);
       openLazy(tmp2, "ChangeSubscriptionCard:" + changeToListingId, obj);
     }
   };
-  const ArrowButton = activeSubscription(19383).ArrowButton;
+  const ArrowButton = activeSubscription(19428).ArrowButton;
   intl2 = activeSubscription(1113).intl;
   items[2] = closure_12(ArrowButton, obj6);
   return closure_13(View, obj3);

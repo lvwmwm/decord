@@ -1,16 +1,16 @@
-// Module ID: 9238
-// Function ID: 9239
+// Module ID: 9247
+// Function ID: 9248
 // Name: actions/BoostingActionCreators
-// Dependencies: [5, 9239, 9240, 2179, 1072, 1285, 572, 6747, 2]
+// Dependencies: [5, 9248, 9249, 2179, 1072, 1285, 572, 6755, 2]
 // Exports: applyToGuild, cancelGuildBoostSlot, fetchAppliedBoostsCooldown, fetchAppliedGuildBoostsForGuild, fetchAppliedGuildBoostsForUser, unapplyFromGuild, uncancelGuildBoostSlot
 
-// Module 9238 (actions/BoostingActionCreators)
+// Module 9247 (actions/BoostingActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import AppliedGuildBoostRecord from "AppliedGuildBoostRecord" /* 9239 */;
-import GuildBoostSlotRecord from "GuildBoostSlotRecord" /* 9240 */;
+import AppliedGuildBoostRecord from "AppliedGuildBoostRecord" /* 9248 */;
+import GuildBoostSlotRecord from "GuildBoostSlotRecord" /* 9249 */;
 import SubscriptionStore from "SubscriptionStore" /* 2179 */;
 import size from "module_2" /* 2 */;
 
@@ -71,8 +71,8 @@ let obj = function _fetchAppliedGuildBoostsForGuild() {
               const HTTP = closure_131_0(closure_131_2[5]).HTTP;
               const request = { url: closure_131_7.APPLIED_GUILD_BOOSTS_FOR_GUILD(guildId), oldFormErrors: true, query: obj6, rejectWithError: true };
               const get = HTTP.get;
-              const tmp23 = flag;
-              if (tmp23) {
+              const tmp18 = flag;
+              if (tmp18) {
                 obj6 = { include_ended: true };
               }
               c4 = 2;
@@ -95,9 +95,9 @@ let obj = function _fetchAppliedGuildBoostsForGuild() {
             c5 = 3;
             return { value: tmp, done: true };
           }
-        } catch (tmp13) {
+        } catch (tmp20) {
           c5 = 3;
-          throw tmp13;
+          throw tmp20;
         }
       }
     })();

@@ -1,13 +1,13 @@
-// Module ID: 11746
-// Function ID: 11747
+// Module ID: 10231
+// Function ID: 10232
 // Name: UnsupportedFeatureModal
-// Dependencies: [19, 17, 21, 7490, 7493, 6838, 5919, 1113, 2]
+// Dependencies: [19, 17, 21, 7500, 7503, 6833, 5923, 1113, 2]
 // Exports: default
 
-// Module 11746 (UnsupportedFeatureModal)
+// Module 10231 (UnsupportedFeatureModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6833 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ export default function UnsupportedFeatureModal(onDismiss) {
       return <View style={{ flex: 1, alignItems: "center", justifyContent: "center", padding: 24 }}>{null}</View>;
     }
   };
-  const Navigator = onDismiss(7490).Navigator;
-  obj4 = onDismiss(7493);
+  const Navigator = onDismiss(7500).Navigator;
+  obj4 = onDismiss(7503);
   return <Navigator initialRouteName="Unsupported" screens={obj2} />;
 };

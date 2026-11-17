@@ -1,20 +1,20 @@
-// Module ID: 15869
-// Function ID: 15870
+// Module ID: 15907
+// Function ID: 15908
 // Name: UserProfilePrivateBanner
-// Dependencies: [19, 17, 7962, 21, 5306, 575, 1090, 8092, 5919, 1113, 2]
+// Dependencies: [19, 17, 7972, 21, 5310, 575, 1090, 8103, 5923, 1113, 2]
 // Exports: default
 
-// Module 15869 (UserProfilePrivateBanner)
+// Module 15907 (UserProfilePrivateBanner)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import Constants from "Constants" /* 7962 */;
-import LockIcon2 from "LockIcon" /* 8092 */;
+import Text_Text from "Text/Text" /* 5923 */;
+import Constants from "Constants" /* 7972 */;
+import LockIcon2 from "LockIcon" /* 8103 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

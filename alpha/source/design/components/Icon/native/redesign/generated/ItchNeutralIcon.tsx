@@ -1,14 +1,14 @@
-// Module ID: 10484
-// Function ID: 10485
+// Module ID: 10539
+// Function ID: 10540
 // Name: ItchNeutralIcon
-// Dependencies: [19, 21, 575, 6009, 10485, 2]
+// Dependencies: [19, 21, 575, 6013, 10540, 2]
 // Exports: ItchNeutralIcon
 
-// Module 10484 (ItchNeutralIcon)
+// Module 10539 (ItchNeutralIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6009 */;
-import AssetRegistry from "AssetRegistry" /* 10485 */;
+import BaseIconImage2 from "BaseIconImage" /* 6013 */;
+import AssetRegistry from "AssetRegistry" /* 10540 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

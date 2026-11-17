@@ -1,13 +1,13 @@
-// Module ID: 7017
-// Function ID: 7018
+// Module ID: 7025
+// Function ID: 7026
 // Name: ConjureProjectStore
-// Dependencies: [32, 1388, 7018, 504, 572, 2]
+// Dependencies: [32, 1388, 7026, 504, 572, 2]
 // Exports: canPublishProject, canRemixProject
 
-// Module 7017 (ConjureProjectStore)
+// Module 7025 (ConjureProjectStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 7018 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 7026 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;

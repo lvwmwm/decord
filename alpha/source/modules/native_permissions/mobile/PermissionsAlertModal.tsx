@@ -1,12 +1,12 @@
-// Module ID: 8201
-// Function ID: 8202
+// Module ID: 8212
+// Function ID: 8213
 // Name: PermissionsAlertModal
-// Dependencies: [19, 21, 6264, 6264, 1113, 2]
+// Dependencies: [19, 21, 6272, 6272, 1113, 2]
 // Exports: default
 
-// Module 8201 (PermissionsAlertModal)
+// Module 8212 (PermissionsAlertModal)
 import intl3 from "intl" /* 1113 */;
-import AlertModal2 from "AlertModal" /* 6264 */;
+import AlertModal2 from "AlertModal" /* 6272 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

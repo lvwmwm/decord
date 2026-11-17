@@ -1,13 +1,13 @@
-// Module ID: 12726
-// Function ID: 12727
+// Module ID: 11332
+// Function ID: 11333
 // Name: useIsViewingActivity
-// Dependencies: [7016, 12716, 5482, 12713, 504, 2]
+// Dependencies: [7024, 11323, 5486, 11320, 504, 2]
 // Exports: useIsViewingActivity
 
-// Module 12726 (useIsViewingActivity)
-import ChannelCallModalDefault from "ChannelCallModal" /* 12713 */;
-import useIsActivityFocusedDefault from "useIsActivityFocused" /* 12716 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 7016 */;
+// Module 11332 (useIsViewingActivity)
+import ChannelCallModalDefault from "ChannelCallModal" /* 11320 */;
+import useIsActivityFocusedDefault from "useIsActivityFocused" /* 11323 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 7024 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/native/useIsViewingActivity.tsx");
@@ -15,7 +15,7 @@ const result = size.fileFinishedImporting("modules/activities/native/useIsViewin
 export function useIsViewingActivity(channelId) {
   channelId = channelId.channelId;
   let tmp = useIsActivityFocusedDefault(channelId);
-  const obj = channelId(5482);
+  const obj = channelId(5486);
   const isModalOpen = obj.useIsModalOpen(ChannelCallModalDefault);
   const items = [ChannelRTCStore];
   const items1 = [channelId];

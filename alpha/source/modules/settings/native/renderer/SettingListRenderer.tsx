@@ -1,22 +1,22 @@
-// Module ID: 17214
-// Function ID: 17215
+// Module ID: 17251
+// Function ID: 17252
 // Name: SettingListRenderer
-// Dependencies: [19, 17, 17215, 17059, 12407, 21, 5306, 575, 7746, 5919, 17216, 1630, 17217, 17222, 7888, 17223, 17226, 17227, 2020, 2]
+// Dependencies: [19, 17, 17252, 17094, 12613, 21, 5310, 575, 7756, 5923, 17253, 1630, 17254, 17259, 7898, 17260, 17263, 17264, 2020, 2]
 
-// Module 17214 (SettingListRenderer)
+// Module 17251 (SettingListRenderer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import TableRowGroup from "TableRowGroup" /* 7746 */;
-import SettingRendererConstants from "SettingRendererConstants" /* 12407 */;
-import SettingRenderer from "SettingRenderer" /* 17216 */;
-import SettingRendererUtils from "SettingRendererUtils" /* 17217 */;
-import SettingsSearchEmptyStateDefault from "SettingsSearchEmptyState" /* 17226 */;
+import Text_Text from "Text/Text" /* 5923 */;
+import TableRowGroup from "TableRowGroup" /* 7756 */;
+import SettingRendererConstants from "SettingRendererConstants" /* 12613 */;
+import SettingRenderer from "SettingRenderer" /* 17253 */;
+import SettingRendererUtils from "SettingRendererUtils" /* 17254 */;
+import SettingsSearchEmptyStateDefault from "SettingsSearchEmptyState" /* 17263 */;
 import react from "react" /* 19 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 17215 */;
-import SettingBlocklistStore from "SettingBlocklistStore" /* 17059 */;
-import createStyles from "createStyles" /* 5306 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 17252 */;
+import SettingBlocklistStore from "SettingBlocklistStore" /* 17094 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -118,10 +118,10 @@ const memoResult = react.memo(function SettingsList(node) {
     return obj.toSettingListItems(node, field);
   }, items);
   const ref = react.useRef(null);
-  let obj = node(17222);
+  let obj = node(17259);
   obj.useAutoScrollToSearchResultSetting(ref, memo, node.scrollTarget);
   const obj4 = { paddingBottom: bottom + field(575).space.PX_16 };
-  const FlashList = node(7888).FlashList;
+  const FlashList = node(7898).FlashList;
   const merged = Object.assign(tmp.contentContainer);
   return <View style={tmp.container}>{null}</View>;
 });

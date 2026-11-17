@@ -1,17 +1,17 @@
-// Module ID: 18875
-// Function ID: 18876
+// Module ID: 18916
+// Function ID: 18917
 // Name: GuildHeaderCoachmarks
-// Dependencies: [32, 19, 5238, 1072, 5152, 21, 504, 18876, 18878, 10676, 18885, 10704, 10705, 5139, 9560, 10701, 18886, 18887, 18889, 2]
+// Dependencies: [32, 19, 5242, 1072, 5156, 21, 504, 18917, 18919, 14026, 18926, 14019, 14020, 5143, 9572, 14016, 18927, 18928, 18930, 2]
 // Exports: default
 
-// Module 18875 (GuildHeaderCoachmarks)
+// Module 18916 (GuildHeaderCoachmarks)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import dismissible_content from "dismissible_content" /* 5139 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
+import dismissible_content from "dismissible_content" /* 5143 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5156 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 5238 */;
+import PermissionStore from "PermissionStore" /* 5242 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -34,14 +34,14 @@ export default function GuildHeaderCoachmarks(arg0) {
   const items1 = [guild];
   const obj = guild(504);
   const stateFromStores = obj.useStateFromStores(items, () => PermissionStore.can(Permissions.MANAGE_GUILD, guild), items1);
-  const tmp5 = stateFromStores(18876)(guild.id);
+  const tmp5 = stateFromStores(18917)(guild.id);
   dependencyMap = tmp5;
-  let tmp6 = stateFromStores(18878)(guild.id);
-  const tmp7 = stateFromStores(10676)(guild.id);
-  const tmp8 = stateFromStores(18885)();
-  const tmp9 = stateFromStores(10704)(guild.id);
+  let tmp6 = stateFromStores(18919)(guild.id);
+  const tmp7 = stateFromStores(14026)(guild.id);
+  const tmp8 = stateFromStores(18926)();
+  const tmp9 = stateFromStores(14019)(guild.id);
   const items2 = [stateFromStores, guild.premiumProgressBarEnabled, tmp5];
-  const tmp10 = stateFromStores(10705)();
+  const tmp10 = stateFromStores(14020)();
   const memo = react.useMemo(() => {
     const items = [];
     const tmp = stateFromStores && !guild.premiumProgressBarEnabled;
@@ -54,13 +54,13 @@ export default function GuildHeaderCoachmarks(arg0) {
     }
     return items;
   }, items2);
-  const obj2 = guild(9560);
+  const obj2 = guild(9572);
   const obj3 = { groupName: constants.GUILD_HEADER_TOOLTIPS };
   [tmp15, tmp16] = obj2.useSelectedDismissibleContent(memo, obj3);
   _slicedToArray(obj2.useSelectedDismissibleContent(memo, obj3), 2);
   let tmp18 = false === tmp7;
-  const useBoostToUnlockCoachmarkDCF = guild(10701).useBoostToUnlockCoachmarkDCF;
-  guild(10701);
+  const useBoostToUnlockCoachmarkDCF = guild(14016).useBoostToUnlockCoachmarkDCF;
+  guild(14016);
   const tmp12 = constants;
   const tmp13 = _slicedToArray;
   if (tmp18) {
@@ -77,14 +77,14 @@ export default function GuildHeaderCoachmarks(arg0) {
   if (first == null) {
     first = tmp13Result[0];
   }
-  if (tmp(5139).DismissibleContent.BOOST_PROGRESS_BAR_MOBILE_COACHMARK === first) {
-    return jsx(stateFromStores(18886), { targetRef, guild, markAsDismissed: tmp16 });
-  } else if (tmp(5139).DismissibleContent.GUILD_THEME_MEMBER_COACHMARK === first) {
-    return jsx(stateFromStores(18887), { guildId: guild.id, targetRef, markAsDismissed: tmp16 });
-  } else if (tmp(5139).DismissibleContent.BOOST_TO_UNLOCK_COACHMARK === first) {
+  if (tmp(5143).DismissibleContent.BOOST_PROGRESS_BAR_MOBILE_COACHMARK === first) {
+    return jsx(stateFromStores(18927), { targetRef, guild, markAsDismissed: tmp16 });
+  } else if (tmp(5143).DismissibleContent.GUILD_THEME_MEMBER_COACHMARK === first) {
+    return jsx(stateFromStores(18928), { guildId: guild.id, targetRef, markAsDismissed: tmp16 });
+  } else if (tmp(5143).DismissibleContent.BOOST_TO_UNLOCK_COACHMARK === first) {
     let tmp22 = null;
     if (null != tmp9) {
-      tmp22 = jsx(tmp4(18889), { guildId: guild.id, powerup: tmp9, targetRef, markAsDismissed: tmp21 });
+      tmp22 = jsx(tmp4(18930), { guildId: guild.id, powerup: tmp9, targetRef, markAsDismissed: tmp21 });
     }
     return tmp22;
   } else {

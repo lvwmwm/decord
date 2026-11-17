@@ -1,21 +1,21 @@
-// Module ID: 19369
-// Function ID: 19370
+// Module ID: 19414
+// Function ID: 19415
 // Name: StandaloneChannelScreen
-// Dependencies: [19, 17, 5155, 9052, 1072, 5162, 21, 5306, 575, 1503, 1630, 9060, 504, 5180, 10939, 1113, 5482, 9148, 9053, 5906, 12328, 15638, 9063, 19370, 12404, 6345, 7079, 5537, 5485, 12351, 7052, 9068, 1187, 10271, 19375, 15122, 19392, 19409, 13126, 19427, 19431, 11976, 19443, 19444, 14565, 2]
+// Dependencies: [19, 17, 5159, 9063, 1072, 5166, 21, 5310, 575, 1503, 1630, 9071, 504, 5184, 13091, 1113, 5486, 9159, 9064, 5910, 12527, 15672, 9074, 19415, 12610, 6353, 7087, 5541, 5489, 12555, 7060, 9079, 1187, 10279, 19420, 14336, 19437, 19454, 14372, 19472, 19476, 12419, 19488, 19489, 13439, 2]
 
-// Module 19369 (StandaloneChannelScreen)
+// Module 19414 (StandaloneChannelScreen)
 import nativeDefault from "native" /* 575 */;
-import ChannelConstants from "ChannelConstants" /* 5162 */;
-import FavoritesUtils from "FavoritesUtils" /* 5180 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5482 */;
-import PressableNavigatorBackIcon2 from "PressableNavigatorBackIcon" /* 9053 */;
+import ChannelConstants from "ChannelConstants" /* 5166 */;
+import FavoritesUtils from "FavoritesUtils" /* 5184 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5486 */;
+import PressableNavigatorBackIcon2 from "PressableNavigatorBackIcon" /* 9064 */;
 import react_mod from "react" /* 19 */;
 import react_native_mod from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import react_native_mod2 from "react-native" /* 9052 */;
+import ChannelStore from "ChannelStore" /* 5159 */;
+import react_native_mod2 from "react-native" /* 9063 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, navigation;
@@ -240,20 +240,20 @@ const memoResult = react.memo(function StandaloneChannelScreen(isActive) {
   dependencyMap = tmp;
   const obj = channelId(1503);
   react = obj.useNavigation();
-  const obj2 = channelId(12404);
+  const obj2 = channelId(12610);
   const isSwipeToMemberListEnabled = obj2.useIsSwipeToMemberListEnabled();
-  const needSubscriptionToAccess = frame(6345)(channelId).needSubscriptionToAccess;
+  const needSubscriptionToAccess = frame(6353)(channelId).needSubscriptionToAccess;
   let tmp7 = guildId;
-  const useCanSeeOnboardingHome = channelId(7079).useCanSeeOnboardingHome;
-  channelId(7079);
+  const useCanSeeOnboardingHome = channelId(7087).useCanSeeOnboardingHome;
+  channelId(7087);
   if (guildId == null) {
     tmp7 = closure_8;
   }
   const canSeeOnboardingHome = useCanSeeOnboardingHome(tmp7);
   const ref = react.useRef(null);
-  const tmp10 = frame(5537)() === constants2.ONYX;
+  const tmp10 = frame(5541)() === constants2.ONYX;
   closure_4 = tmp10;
-  const tmp11 = frame(5485)();
+  const tmp11 = frame(5489)();
   isChatBesideChannelList = tmp11.isChatBesideChannelList;
   const isChatLockedOpen = tmp11.isChatLockedOpen;
   let items = [frame, tmp10, isChatBesideChannelList, , ];
@@ -273,7 +273,7 @@ const memoResult = react.memo(function StandaloneChannelScreen(isActive) {
   }, items);
   const contentContainer = tmp.contentContainer;
   let tmp14 = !isChatLockedOpen;
-  const tmp2Result = channelId(12351);
+  const tmp2Result = channelId(12555);
   const isForumChannelSearchActive = tmp2Result.useIsForumChannelSearchActive(channelId);
   if (isChatLockedOpen) {
     tmp14 = isNavigationScreen;
@@ -293,14 +293,14 @@ const memoResult = react.memo(function StandaloneChannelScreen(isActive) {
     return channel;
   }, items2);
   let type;
-  const tmp2Result5 = channelId(7052);
+  const tmp2Result5 = channelId(7060);
   const dMAppChannelApplicationId = tmp2Result5.useDMAppChannelApplicationId(stateFromStores);
   if (stateFromStores != null) {
     type = stateFromStores.type;
   }
   let tmp20 = null;
-  const useDismissChannelSecondaryViewChatOnFrameDeepLink = tmp2(9068).useDismissChannelSecondaryViewChatOnFrameDeepLink;
-  channelId(9068);
+  const useDismissChannelSecondaryViewChatOnFrameDeepLink = tmp2(9079).useDismissChannelSecondaryViewChatOnFrameDeepLink;
+  channelId(9079);
   if (type === constants.GUILD_APP || null != dMAppChannelApplicationId) {
     tmp20 = channelId;
   }
@@ -317,27 +317,27 @@ const memoResult = react.memo(function StandaloneChannelScreen(isActive) {
             const obj5 = { style: contentContainer, children: items4 };
             if (canSeeOnboardingHome) {
               const obj6 = { guildId };
-              tmp42Result = tmp42(tmp5(19392), obj6);
+              tmp42Result = tmp42(tmp5(19437), obj6);
             }
-            items4 = [tmp42Result, closure_12(frame(15122), {})];
+            items4 = [tmp42Result, closure_12(frame(14336), {})];
             items3[1] = closure_13(closure_4, obj5);
             return closure_13(closure_4, obj3);
           } else if (channelId === StaticChannelRoute.MEMBER_SAFETY) {
             const obj7 = { style: tmp.container, children: items5 };
-            items5 = [closure_12(frame(10271), { absolute: true }), , ];
+            items5 = [closure_12(frame(10279), { absolute: true }), , ];
             const obj8 = { guildId };
-            items5[1] = closure_12(frame(19409), obj8);
-            items5[2] = closure_12(frame(15122), {});
+            items5[1] = closure_12(frame(19454), obj8);
+            items5[2] = closure_12(frame(14336), {});
             return closure_13(closure_4, obj7);
           } else if (channelId === StaticChannelRoute.CONJURE) {
             const obj9 = { guildId, inline: true };
-            return closure_12(frame(13126), obj9);
+            return closure_12(frame(14372), obj9);
           } else if (showCreateThread) {
             const obj10 = { style: contentContainer, children: items6 };
             const obj11 = { channelId, frame, guildId, isNavigationScreen, screenIndex, showCreateThread, isBackEnabled: tmp14, measureNavigationTTI: false };
             items6 = [closure_12(Header, obj11), ];
             const obj12 = { channelId, screenIndex };
-            items6[1] = closure_12(channelId(19427).CreateThreadView, obj12);
+            items6[1] = closure_12(channelId(19472).CreateThreadView, obj12);
             return closure_13(closure_4, obj10);
           } else {
             let tmp24Result;
@@ -346,7 +346,7 @@ const memoResult = react.memo(function StandaloneChannelScreen(isActive) {
                 const obj13 = { style: memo, children: items7 };
                 const obj14 = { channelId, frame, guildId, isNavigationScreen, screenIndex, showCreateThread, isBackEnabled: tmp14, measureNavigationTTI: false };
                 items7 = [closure_12(Header, obj14), ];
-                const obj15 = { style: contentContainer, children: closure_12(frame(19431), obj16) };
+                const obj15 = { style: contentContainer, children: closure_12(frame(19476), obj16) };
                 obj16 = { channel: stateFromStores };
                 items7[1] = closure_12(closure_4, obj15);
                 return closure_13(closure_4, obj13);
@@ -355,19 +355,19 @@ const memoResult = react.memo(function StandaloneChannelScreen(isActive) {
             const obj17 = { children: items8 };
             const obj18 = { channelId, frame, guildId, isNavigationScreen, screenIndex, showCreateThread, isBackEnabled: tmp14, measureNavigationTTI: true };
             items8 = [closure_12(Header, obj18), ];
-            const obj19 = { name: "chat_container", tracking: "include", style: contentContainer, children: closure_12(frame(11976), obj20) };
-            const NavTTIView = tmp2(19370).NavTTIView;
+            const obj19 = { name: "chat_container", tracking: "include", style: contentContainer, children: closure_12(frame(12419), obj20) };
+            const NavTTIView = tmp2(19415).NavTTIView;
             obj20 = { guildId, channelId, isActive, chatInputRef: ref, screenIndex };
             items8[1] = closure_12(NavTTIView, obj19);
             const tmp26 = closure_13(closure_14, obj17);
             if (isSwipeToMemberListEnabled) {
               const obj21 = { style: memo, channelId, isNavigationTTIVisible, screenIndex, isBackEnabled: tmp14, children: tmp26 };
-              tmp24Result = tmp24(tmp5(19443), obj21);
+              tmp24Result = tmp24(tmp5(19488), obj21);
             } else {
               const obj22 = {
                 name: "channel_screen",
                 navigationKey: channelId,
-                definition: channelId(14565).CHANNEL_NAVIGATION_TTI,
+                definition: channelId(13439).CHANNEL_NAVIGATION_TTI,
                 visibilityMode: "prerendered",
                 isVisible: isNavigationTTIVisible,
                 descendantTracking: "included",
@@ -381,7 +381,7 @@ const memoResult = react.memo(function StandaloneChannelScreen(isActive) {
                 style: memo,
                 children: tmp26
               };
-              const NavTTISurfaceProvider = tmp2(19444).NavTTISurfaceProvider;
+              const NavTTISurfaceProvider = tmp2(19489).NavTTISurfaceProvider;
               tmp24Result = tmp24(NavTTISurfaceProvider, obj22);
             }
             return tmp24Result;
@@ -392,15 +392,15 @@ const memoResult = react.memo(function StandaloneChannelScreen(isActive) {
       const obj24 = { channelId, frame, guildId, isNavigationScreen, screenIndex, showCreateThread, isBackEnabled: tmp14, measureNavigationTTI: false };
       items9 = [closure_12(Header, obj24), ];
       const obj25 = { style: contentContainer, children: items10 };
-      items10 = [closure_12(frame(10271), { absolute: true }), , ];
+      items10 = [closure_12(frame(10279), { absolute: true }), , ];
       const obj26 = { guildId, gatedChannelId: tmp50 };
       tmp50 = undefined;
-      const tmp5Result = frame(19375);
+      const tmp5Result = frame(19420);
       if (needSubscriptionToAccess) {
         tmp50 = channelId;
       }
       items10[1] = closure_12(tmp5Result, obj26);
-      items10[2] = closure_12(frame(15122), {});
+      items10[2] = closure_12(frame(14336), {});
       items9[1] = closure_13(closure_4, obj25);
       return closure_13(closure_4, obj23);
     }

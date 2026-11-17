@@ -1,12 +1,12 @@
-// Module ID: 14302
-// Function ID: 14303
+// Module ID: 13167
+// Function ID: 13168
 // Name: CheckpointCharacterTextureUtils
-// Dependencies: [2024, 14303, 2]
+// Dependencies: [2024, 13168, 2]
 // Exports: getCheckpointCharacterTextureRole, getCheckpointCharacterTextureScale, getCheckpointCharacterTextureUrl
 
-// Module 14302 (CheckpointCharacterTextureUtils)
+// Module 13167 (CheckpointCharacterTextureUtils)
 import react_nativeDefault from "react-native" /* 2024 */;
-import CheckpointCharacterTextureAssets from "CheckpointCharacterTextureAssets" /* 14303 */;
+import CheckpointCharacterTextureAssets from "CheckpointCharacterTextureAssets" /* 13168 */;
 import size from "module_2" /* 2 */;
 
 const CheckpointCharacterTextureType = { SLOT: "slot", TRAIT: "trait", LAYOUT: "layout", ALWAYS: "always" };
@@ -77,28 +77,36 @@ export function getCheckpointCharacterTextureScale(c3, height, arg2) {
 }
 export function getCheckpointCharacterTextureUrl(name, textureScale) {
   let columns;
+  let height;
   let rows;
   let url;
   let width;
   let widthAt1x;
-  ({ url, width, widthAt1x } = CheckpointCharacterTextureAssets.CHECKPOINT_CHARACTER_TEXTURE_NAME_TO_ASSET[name]);
+  ({ url, width, height, widthAt1x } = CheckpointCharacterTextureAssets.CHECKPOINT_CHARACTER_TEXTURE_NAME_TO_ASSET[name]);
   if (null == widthAt1x) {
     return url;
   } else {
-    const result = textureScale * widthAt1x / width;
-    const _Math3 = Math;
-    if (result < 1) {
-      if (textureScale < Math.round(width / widthAt1x)) {
+    const _Math4 = Math;
+    const result = 4096 / Math.max(width, height);
+    const _Math5 = Math;
+    const bound = Math.min(textureScale * widthAt1x / width, result);
+    let tmp = result >= 1;
+    if (1 <= result) {
+      const _Math = Math;
+      tmp = textureScale >= Math.round(width / widthAt1x);
+    }
+    if (bound < 1) {
+      if (!tmp) {
         let tmp3 = closure_10[name];
         if (tmp3 == null) {
           tmp3 = closure_9;
         }
         ({ columns, rows } = tmp3);
-        const _Math = Math;
         const _Math2 = Math;
-        const result1 = columns * Math.round(width / columns * result);
+        const _Math3 = Math;
+        const result1 = columns * Math.round(width / columns * bound);
         const _HermesInternal = HermesInternal;
-        return "" + url + "?width=" + result1 + "&height=" + rows * Math.round(tmp / rows * result);
+        return "" + url + "?width=" + result1 + "&height=" + rows * Math.round(height / rows * bound);
       }
     }
     return url;

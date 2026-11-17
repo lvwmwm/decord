@@ -114,9 +114,9 @@ function pnpm_decayTs3(arg0, arg1) {
       callback,
       velocity: num,
       initialVelocity: 0,
-      current: "ip",
+      current: "disabled",
       lastTimestamp: null,
-      startTimestamp: "AttributeSelector",
+      startTimestamp: 27,
       reduceMotion: closure_6(obj.reduceMotion)
     };
     num = obj.velocity;

@@ -1,34 +1,25 @@
 // Module ID: 8963
 // Function ID: 8964
-// Dependencies: []
-// Exports: getCalculatedGpsValue, getEncodedString, getStringValue
+// Dependencies: [8949]
 
 // Module 8963
-const f97309 = (item) => String.fromCharCode(item);
+import _mod8949 from "module_8949" /* 8949 */;
 
-export function getStringValue(value) {
-  const mapped = value.map(f97309);
-  return mapped.join("");
-}
-export function getEncodedString(arr) {
-  if (arr.length >= 8) {
-    const substr = arr.slice(0, 8);
-    const mapped = substr.map(f97309);
-    const joined = mapped.join("");
-    if ("ASCII\0\0\0" === joined) {
-      const substr1 = arr.slice(8);
-      const mapped1 = substr1.map(f97309);
-      return mapped1.join("");
-    } else if ("JIS\0\0\0\0\0" === joined) {
-      return "[JIS encoded text]";
-    } else if ("UNICODE\0" === joined) {
-      return "[Unicode encoded text]";
-    } else if ("\0\0\0\0\0\0\0\0" === joined) {
-      return "[Undefined encoding]";
+let obj = {
+  isGifFile(dataView) {
+    let hasItem = dataView;
+    if (hasItem) {
+      includes = includes.includes;
+      const obj = _mod8949;
+      hasItem = includes(obj.getStringFromDataView(dataView, 0, c2));
     }
+    return hasItem;
+  },
+  findOffsets() {
+    return { gifHeaderOffset: 0 };
   }
-  return "Undefined";
-}
-export function getCalculatedGpsValue(value) {
-  return value[0][0] / value[0][1] + value[1][0] / value[1][1] / 60 + value[2][0] / value[2][1] / 3600;
-}
+};
+let c2 = 6;
+let includes = ["GIF87a", "GIF89a"];
+
+export default obj;

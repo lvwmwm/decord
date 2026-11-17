@@ -1,11 +1,11 @@
-// Module ID: 5122
-// Function ID: 5123
+// Module ID: 5126
+// Function ID: 5127
 // Name: core/CodeSplittingUtils
-// Dependencies: [5123, 1480, 2]
+// Dependencies: [5127, 1480, 2]
 
-// Module 5122 (core/CodeSplittingUtils)
+// Module 5126 (core/CodeSplittingUtils)
 import NetworkUtilsDefault from "NetworkUtils" /* 1480 */;
-import CodeSplittingUtils from "CodeSplittingUtils" /* 5123 */;
+import CodeSplittingUtils from "CodeSplittingUtils" /* 5127 */;
 import size from "module_2" /* 2 */;
 
 CodeSplittingUtils.setAwaitOnline(NetworkUtilsDefault.awaitOnline);

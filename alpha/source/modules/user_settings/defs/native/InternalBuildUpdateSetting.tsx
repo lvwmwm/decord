@@ -1,16 +1,16 @@
-// Module ID: 18398
-// Function ID: 18399
+// Module ID: 18439
+// Function ID: 18440
 // Name: InternalBuildUpdateSetting
-// Dependencies: [16844, 21, 16344, 504, 2169, 17372, 6025, 13308, 12406, 2]
+// Dependencies: [16879, 21, 16380, 504, 2169, 17409, 6029, 14540, 12612, 2]
 
-// Module 18398 (InternalBuildUpdateSetting)
+// Module 18439 (InternalBuildUpdateSetting)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import _modDef2169 from "module_2169" /* 2169 */;
-import MobileNativeUpdateUtilsAll from "MobileNativeUpdateUtils" /* 16344 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 17372 */;
-import MobileNativeUpdateStore from "MobileNativeUpdateStore" /* 16844 */;
-import SettingBuilders from "SettingBuilders" /* 12406 */;
+import MobileNativeUpdateUtilsAll from "MobileNativeUpdateUtils" /* 16380 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 17409 */;
+import MobileNativeUpdateStore from "MobileNativeUpdateStore" /* 16879 */;
+import SettingBuilders from "SettingBuilders" /* 12612 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -25,9 +25,9 @@ let obj = {
     const obj = get_initialized;
     const tmp3 = jsx;
     if (obj.useStateFromStores(items, () => null !== MobileNativeUpdateStore.latestFetchedBuild().newBuild)) {
-      RefreshIcon = tmp(6025).DownloadIcon;
+      RefreshIcon = tmp(6029).DownloadIcon;
     } else {
-      RefreshIcon = tmp(13308).RefreshIcon;
+      RefreshIcon = tmp(14540).RefreshIcon;
     }
     return tmp3(RefreshIcon, {});
   },

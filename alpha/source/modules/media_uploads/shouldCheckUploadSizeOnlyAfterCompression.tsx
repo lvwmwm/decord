@@ -1,10 +1,10 @@
-// Module ID: 9024
-// Function ID: 9025
+// Module ID: 9035
+// Function ID: 9036
 // Name: shouldCheckUploadSizeOnlyAfterCompression
 // Dependencies: [1388, 2110, 2]
 // Exports: shouldCheckUploadSizeOnlyAfterCompression
 
-// Module 9024 (shouldCheckUploadSizeOnlyAfterCompression)
+// Module 9035 (shouldCheckUploadSizeOnlyAfterCompression)
 import PremiumTypeUtils from "PremiumTypeUtils" /* 2110 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;

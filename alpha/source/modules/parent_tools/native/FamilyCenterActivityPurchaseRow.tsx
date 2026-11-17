@@ -1,26 +1,26 @@
-// Module ID: 17431
-// Function ID: 17432
+// Module ID: 17468
+// Function ID: 17469
 // Name: FamilyCenterActivityPurchaseRow
-// Dependencies: [19, 17, 21, 5306, 575, 9404, 17432, 7253, 17433, 5919, 2]
+// Dependencies: [19, 17, 21, 5310, 575, 9413, 17469, 7262, 17470, 5923, 2]
 // Exports: default
 
-// Module 17431 (FamilyCenterActivityPurchaseRow)
+// Module 17468 (FamilyCenterActivityPurchaseRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import PriceUtils from "PriceUtils" /* 7253 */;
-import useCollectiblesDataDefault from "useCollectiblesData" /* 9404 */;
-import FamilyCenterActivityPurchaseRowUtils from "FamilyCenterActivityPurchaseRowUtils" /* 17432 */;
+import Text_Text from "Text/Text" /* 5923 */;
+import PriceUtils from "PriceUtils" /* 7262 */;
+import useCollectiblesDataDefault from "useCollectiblesData" /* 9413 */;
+import FamilyCenterActivityPurchaseRowUtils from "FamilyCenterActivityPurchaseRowUtils" /* 17469 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp2;
-const FamilyCenterActivityItemPreviewDefault = tmp2(17433);
+const FamilyCenterActivityItemPreviewDefault = tmp2(17470);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let obj = { container: obj2, textContainer: { display: "flex", flexDirection: "column", flexShrink: 1 } };

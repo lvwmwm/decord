@@ -1,13 +1,13 @@
-// Module ID: 18906
-// Function ID: 18907
+// Module ID: 18947
+// Function ID: 18948
 // Name: useActiveEventOrStageInstanceChannel
-// Dependencies: [5155, 8426, 18905, 2]
+// Dependencies: [5159, 8437, 18946, 2]
 // Exports: useActiveEventOrStageInstanceChannel
 
-// Module 18906 (useActiveEventOrStageInstanceChannel)
-import useGuildScheduledEvents from "useGuildScheduledEvents" /* 8426 */;
-import useLiveStageChannelsDefault from "useLiveStageChannels" /* 18905 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
+// Module 18947 (useActiveEventOrStageInstanceChannel)
+import useGuildScheduledEvents from "useGuildScheduledEvents" /* 8437 */;
+import useLiveStageChannelsDefault from "useLiveStageChannels" /* 18946 */;
+import ChannelStore from "ChannelStore" /* 5159 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_scheduled_events/useActiveEventOrStageInstanceChannel.tsx");

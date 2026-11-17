@@ -1,13 +1,13 @@
-// Module ID: 12727
-// Function ID: 12728
+// Module ID: 11333
+// Function ID: 11334
 // Name: useDraggablePip
-// Dependencies: [32, 11003, 12714, 1655, 5538, 1187, 11333, 5588, 1708, 5929, 2]
+// Dependencies: [32, 11314, 11321, 1655, 5542, 1187, 11334, 5592, 1708, 5933, 2]
 // Exports: useDraggablePip
 
-// Module 12727 (useDraggablePip)
-import ChannelCallStore from "ChannelCallStore" /* 11003 */;
+// Module 11333 (useDraggablePip)
+import ChannelCallStore from "ChannelCallStore" /* 11314 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import Constants from "Constants" /* 12714 */;
+import Constants from "Constants" /* 11321 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -239,7 +239,7 @@ export function useDraggablePip(size1) {
   const items16 = [closure_15, , , , ];
   const useAnimatedReaction = tmp2(1655).useAnimatedReaction;
   tmp2(1655);
-  items16[1] = tmp2(11333).cheapWorkletArrayShallowEqual;
+  items16[1] = tmp2(11334).cheapWorkletArrayShallowEqual;
   items16[2] = clamp;
   items16[3] = sharedValue1;
   items16[4] = sharedValue;
@@ -284,7 +284,7 @@ export function useDraggablePip(size1) {
   const items20 = [closure_17, , , , ];
   const useAnimatedReaction2 = tmp2(1655).useAnimatedReaction;
   tmp2(1655);
-  items20[1] = tmp2(11333).cheapWorkletArrayShallowEqual;
+  items20[1] = tmp2(11334).cheapWorkletArrayShallowEqual;
   items20[2] = clamp;
   items20[3] = sharedValue3;
   items20[4] = sharedValue2;
@@ -316,7 +316,7 @@ export function useDraggablePip(size1) {
   useDraggablePipTsx11.__workletHash = 14934070264554;
   useDraggablePipTsx11.__initData = tmp51;
   const animatedReaction2 = useAnimatedReaction2(useDraggablePipTsx10, useDraggablePipTsx11);
-  let Gesture = tmp2(5588).Gesture;
+  let Gesture = tmp2(5592).Gesture;
   const items22 = [-closure_5, closure_5];
   const items23 = [-closure_5, closure_5];
   const PanResult = Gesture.Pan();
@@ -344,7 +344,7 @@ export function useDraggablePip(size1) {
   const items26 = [closure_19, sharedValue1, derivedValue5, derivedValue3, clamp, sharedValue3, derivedValue6, derivedValue4, snapToCorners, , , , ];
   const onEnd = onUpdate(useDraggablePipTsx12).onEnd;
   onUpdate(useDraggablePipTsx12);
-  items26[9] = tmp2(5929).withSpring;
+  items26[9] = tmp2(5933).withSpring;
   items26[10] = closure_6;
   items26[11] = sharedValue;
   items26[12] = sharedValue2;
@@ -437,7 +437,7 @@ export function useDraggablePip(size1) {
   useDraggablePipTsx13.__workletHash = 12738554963651;
   useDraggablePipTsx13.__initData = tmp67;
   const onEndResult = onEnd(useDraggablePipTsx13);
-  const Gesture2 = tmp2(5588).Gesture;
+  const Gesture2 = tmp2(5592).Gesture;
   const TapResult = Gesture2.Tap();
   const items28 = [closure_20, onPress, ];
   const onStart = TapResult.onStart;
@@ -453,7 +453,7 @@ export function useDraggablePip(size1) {
   useDraggablePipTsx14.__workletHash = 16181399743221;
   useDraggablePipTsx14.__initData = tmp82;
   const onStartResult = onStart(useDraggablePipTsx14);
-  const Gesture3 = tmp2(5588).Gesture;
+  const Gesture3 = tmp2(5592).Gesture;
   const items30 = [closure_21, sharedValue1, derivedValue3, derivedValue1, sharedValue3, derivedValue4, derivedValue2, derivedValue];
   _require = undefined;
   dependencyMap = undefined;

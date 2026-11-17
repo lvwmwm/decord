@@ -1,12 +1,12 @@
-// Module ID: 14265
-// Function ID: 14266
+// Module ID: 13131
+// Function ID: 13132
 // Name: useCheckpointForegroundTracking
-// Dependencies: [19, 2120, 1072, 504, 14252, 2]
+// Dependencies: [19, 2120, 1072, 504, 13118, 2]
 // Exports: default
 
-// Module 14265 (useCheckpointForegroundTracking)
+// Module 13131 (useCheckpointForegroundTracking)
 import Constants from "Constants" /* 1072 */;
-import CheckpointSessionAnalyticsManagerDefault from "CheckpointSessionAnalyticsManager" /* 14252 */;
+import CheckpointSessionAnalyticsManagerDefault from "CheckpointSessionAnalyticsManager" /* 13118 */;
 import react from "react" /* 19 */;
 import AppStateStore from "AppStateStore" /* 2120 */;
 import size from "module_2" /* 2 */;

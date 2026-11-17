@@ -1,31 +1,31 @@
-// Module ID: 6890
-// Function ID: 6891
+// Module ID: 6898
+// Function ID: 6899
 // Name: PrivateChannelCallUtils
-// Dependencies: [5, 19, 5543, 6891, 5155, 5248, 5209, 1388, 1072, 1097, 6892, 21, 6828, 6056, 6893, 1108, 7587, 6833, 5542, 16075, 2121, 6838, 6925, 6259, 1113, 1256, 7937, 8192, 5491, 16107, 6260, 8136, 2]
+// Dependencies: [5, 19, 5547, 6899, 5159, 5252, 5213, 1388, 1072, 1097, 6900, 21, 6823, 6063, 6901, 1108, 7597, 6828, 5546, 16112, 2121, 6833, 6933, 6267, 1113, 1256, 7947, 8203, 5495, 16144, 6268, 8147, 2]
 // Exports: dismissVoiceChannelScreens, getVoiceChannelKey, getVoiceChannelKeyByChannelId, handleJoinCall, handleRedesignGroupDMCall, handleRedesignJoinCall, handleStartCall, hideVoiceChannelActionSheet, isVoiceChannelModalKey, maybeShowAgeGateModal, navigateToVoiceChannel, openChannelCallModal, openGuildVoiceModal, openVoiceChannelActionSheet, showGuardCallAlert
 
-// Module 6890 (PrivateChannelCallUtils)
+// Module 6898 (PrivateChannelCallUtils)
 import Fragment from "Fragment" /* 21 */;
 import AgeGateConstants from "AgeGateConstants" /* 1097 */;
 import intl4 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6056 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6259 */;
-import AgeGateUtils from "AgeGateUtils" /* 6828 */;
-import AgeGateModalActionCreators from "AgeGateModalActionCreators" /* 6833 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 6892 */;
-import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 6893 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6925 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6063 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6267 */;
+import AgeGateUtils from "AgeGateUtils" /* 6823 */;
+import AgeGateModalActionCreators from "AgeGateModalActionCreators" /* 6828 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6833 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 6900 */;
+import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 6901 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6933 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7947 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ActionSheetStore from "ActionSheetStore" /* 5543 */;
-import VoicePanelStore from "VoicePanelStore" /* 6891 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import RelationshipStore from "RelationshipStore" /* 5248 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
+import ActionSheetStore from "ActionSheetStore" /* 5547 */;
+import VoicePanelStore from "VoicePanelStore" /* 6899 */;
+import ChannelStore from "ChannelStore" /* 5159 */;
+import RelationshipStore from "RelationshipStore" /* 5252 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5213 */;
 import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -38,7 +38,7 @@ let closure_14;
 let map1;
 let tmp2;
 let unpackModuleId;
-const ActionSheetActionCreatorsDefault = tmp2(5542);
+const ActionSheetActionCreatorsDefault = tmp2(5546);
 function openChannelCallModal(channel) {
   const obj = AgeGateUtils;
   if (!obj.maybeOpenAgeGateForVoiceChannel(channel.id)) {
@@ -191,7 +191,7 @@ export function maybeShowAgeGateModal(channelId) {
   let obj = require("AgeGateUtils");
   const tmp = _require;
   if (obj.shouldShowAgeGateForChannelId(channelId)) {
-    const tmpResult = tmp(7587);
+    const tmpResult = tmp(7597);
     tmpResult.runAfterInteractions(() => {
       const obj = AgeGateModalActionCreators;
       obj.openAgeGateModal(AgeGateSource.NSFW_VOICE_CHANNEL, channelId);
@@ -202,7 +202,7 @@ export function openVoiceChannelActionSheet(channel) {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
   const obj = { channel };
-  const tmp2 = asyncRequire(16075, dependencyMap.paths);
+  const tmp2 = asyncRequire(16112, dependencyMap.paths);
   openLazy(tmp2, "" + c18 + "-" + channel.id, obj);
 }
 export function hideVoiceChannelActionSheet(id) {

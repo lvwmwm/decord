@@ -1,19 +1,19 @@
-// Module ID: 14771
-// Function ID: 14772
+// Module ID: 13849
+// Function ID: 13850
 // Name: NewMessagesTagListInput
-// Dependencies: [19, 17, 1388, 21, 5306, 575, 1380, 1255, 11785, 8177, 7428, 1113, 10774, 13466, 5919, 5315, 2]
+// Dependencies: [19, 17, 1388, 21, 5310, 575, 1380, 1255, 10273, 8188, 7438, 1113, 13850, 13621, 5923, 5319, 2]
 
-// Module 14771 (NewMessagesTagListInput)
+// Module 13849 (NewMessagesTagListInput)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import GlobalUtils from "GlobalUtils" /* 1255 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5315 */;
-import makeUserListPillDataDefault from "makeUserListPillData" /* 11785 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5319 */;
+import makeUserListPillDataDefault from "makeUserListPillData" /* 10273 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import size from "module_2" /* 2 */;
 

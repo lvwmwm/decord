@@ -1,14 +1,14 @@
-// Module ID: 12368
-// Function ID: 12369
+// Module ID: 12572
+// Function ID: 12573
 // Name: GameOrganizationInviteStore
-// Dependencies: [12369, 12370, 12371, 504, 572, 2]
+// Dependencies: [12573, 12574, 12575, 504, 572, 2]
 
-// Module 12368 (GameOrganizationInviteStore)
+// Module 12572 (GameOrganizationInviteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import GameOrganizationModels from "GameOrganizationModels" /* 12370 */;
-import fromServerGameOrganization from "fromServerGameOrganization" /* 12371 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 12369 */;
+import GameOrganizationModels from "GameOrganizationModels" /* 12574 */;
+import fromServerGameOrganization from "fromServerGameOrganization" /* 12575 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 12573 */;
 import size from "module_2" /* 2 */;
 
 let c2;

@@ -1,15 +1,15 @@
-// Module ID: 18347
-// Function ID: 18348
+// Module ID: 18388
+// Function ID: 18389
 // Name: DevToolsGuildPowerupsModal
-// Dependencies: [19, 21, 9128, 7490, 9051, 10908, 18348, 2]
+// Dependencies: [19, 21, 9139, 7500, 9062, 11216, 18389, 2]
 
-// Module 18347 (DevToolsGuildPowerupsModal)
+// Module 18388 (DevToolsGuildPowerupsModal)
 import Fragment from "Fragment" /* 21 */;
-import HeaderShared from "HeaderShared" /* 9051 */;
-import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10908 */;
-import DevToolsGuildPowerupsScreenDefault from "DevToolsGuildPowerupsScreen" /* 18348 */;
+import HeaderShared from "HeaderShared" /* 9062 */;
+import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 11216 */;
+import DevToolsGuildPowerupsScreenDefault from "DevToolsGuildPowerupsScreen" /* 18389 */;
 import react from "react" /* 19 */;
-import NativeStackView from "NativeStackView" /* 9128 */;
+import NativeStackView from "NativeStackView" /* 9139 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

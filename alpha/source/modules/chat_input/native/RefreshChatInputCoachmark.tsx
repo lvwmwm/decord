@@ -1,14 +1,14 @@
-// Module ID: 14597
-// Function ID: 14598
+// Module ID: 13472
+// Function ID: 13473
 // Name: RefreshChatInputCoachmark
-// Dependencies: [32, 19, 5152, 9560, 5139, 5320, 1113, 14598, 5459, 9567, 2]
+// Dependencies: [32, 19, 5156, 9572, 5143, 5324, 1113, 13473, 5463, 9579, 2]
 // Exports: default, useRefreshChatInputCoachmark
 
-// Module 14597 (RefreshChatInputCoachmark)
+// Module 13472 (RefreshChatInputCoachmark)
 import intl3 from "intl" /* 1113 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
-import useCoachmark from "useCoachmark" /* 9567 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14598 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5156 */;
+import useCoachmark from "useCoachmark" /* 9579 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13473 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -17,7 +17,7 @@ const require = globalThis.__r;
 let _require;
 
 let tmp;
-const OmnibuttonCoachmarkRive = tmp(5459);
+const OmnibuttonCoachmarkRive = tmp(5463);
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 const result = size.fileFinishedImporting("modules/chat_input/native/RefreshChatInputCoachmark.tsx");
 

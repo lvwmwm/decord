@@ -1,11 +1,11 @@
-// Module ID: 17246
-// Function ID: 17247
+// Module ID: 17283
+// Function ID: 17284
 // Name: useDismissOnce
-// Dependencies: [19, 5152, 2]
+// Dependencies: [19, 5156, 2]
 // Exports: useDismissOnce
 
-// Module 17246 (useDismissOnce)
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
+// Module 17283 (useDismissOnce)
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5156 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,22 +1,22 @@
-// Module ID: 18961
-// Function ID: 18962
+// Module ID: 19002
+// Function ID: 19003
 // Name: DMChannel
-// Dependencies: [19, 7015, 6948, 6050, 6949, 21, 5306, 575, 10894, 6053, 504, 18754, 18838, 8418, 2]
+// Dependencies: [19, 7023, 6956, 6056, 6957, 21, 5310, 575, 15146, 6060, 504, 18795, 18879, 8429, 2]
 
-// Module 18961 (DMChannel)
+// Module 19002 (DMChannel)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 6050 */;
-import transitionToChannel from "transitionToChannel" /* 6053 */;
-import ReadStateConstants from "ReadStateConstants" /* 6949 */;
-import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 8418 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10894 */;
-import useCallA11yStateDefault from "useCallA11yState" /* 18754 */;
-import ChannelItemDefault from "ChannelItem" /* 18838 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 6056 */;
+import transitionToChannel from "transitionToChannel" /* 6060 */;
+import ReadStateConstants from "ReadStateConstants" /* 6957 */;
+import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 8429 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 15146 */;
+import useCallA11yStateDefault from "useCallA11yState" /* 18795 */;
+import ChannelItemDefault from "ChannelItem" /* 18879 */;
 import react from "react" /* 19 */;
-import ReadStateStore from "ReadStateStore" /* 7015 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6948 */;
-import createStyles from "createStyles" /* 5306 */;
+import ReadStateStore from "ReadStateStore" /* 7023 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6956 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

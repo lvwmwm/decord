@@ -1,21 +1,21 @@
-// Module ID: 16846
-// Function ID: 16847
+// Module ID: 16881
+// Function ID: 16882
 // Name: ShareStore
-// Dependencies: [502, 5155, 5177, 5209, 5339, 1388, 1072, 1255, 10231, 1264, 1256, 504, 572, 2]
+// Dependencies: [502, 5159, 5181, 5213, 5343, 1388, 1072, 1255, 10339, 1264, 1256, 504, 572, 2]
 
-// Module 16846 (ShareStore)
+// Module 16881 (ShareStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import GlobalUtils from "GlobalUtils" /* 1255 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
-import react_nativeDefault from "react-native" /* 10231 */;
+import react_nativeDefault from "react-native" /* 10339 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
+import ChannelStore from "ChannelStore" /* 5159 */;
+import GuildStore from "GuildStore" /* 5181 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5213 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5343 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 

@@ -1,23 +1,23 @@
-// Module ID: 20875
-// Function ID: 20876
+// Module ID: 20922
+// Function ID: 20923
 // Name: ParentalConsentConnectionHeader
-// Dependencies: [19, 17, 1388, 21, 5306, 5882, 575, 1630, 504, 5919, 6834, 1113, 2997, 2]
+// Dependencies: [19, 17, 1388, 21, 5310, 5886, 575, 1630, 504, 5923, 6829, 1113, 2999, 2]
 // Exports: ParentalConsentConnectionNavbar
 
-// Module 20875 (ParentalConsentConnectionHeader)
+// Module 20922 (ParentalConsentConnectionHeader)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import _modDef2997 from "module_2997" /* 2997 */;
-import NavigatorConstants from "NavigatorConstants" /* 5882 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6834 */;
+import _modDef2999 from "module_2999" /* 2999 */;
+import NavigatorConstants from "NavigatorConstants" /* 5886 */;
+import Text_Text from "Text/Text" /* 5923 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6829 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let currentUser;
@@ -64,7 +64,7 @@ export function ParentalConsentConnectionNavbar() {
       const obj = AuthenticationActionCreatorsDefault;
       return obj.logout("safety_flows_parental_consent_connection");
     },
-    children: intl.string(_modDef2997["3HuGuY"])
+    children: intl.string(_modDef2999["3HuGuY"])
   };
   const Text = Text_Text.Text;
   intl = intl2.intl;

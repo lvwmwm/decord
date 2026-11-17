@@ -1,26 +1,26 @@
-// Module ID: 14607
-// Function ID: 14608
+// Module ID: 13486
+// Function ID: 13487
 // Name: AddMediaToOriginalForumPostActionSheet
-// Dependencies: [32, 5, 19, 17, 5155, 8725, 5177, 6362, 1072, 21, 5306, 575, 9022, 8875, 8890, 5542, 11167, 11153, 11, 8846, 11166, 8864, 1285, 14608, 8660, 8853, 6259, 1113, 504, 7918, 8866, 8879, 5556, 14609, 5919, 5927, 2]
+// Dependencies: [32, 5, 19, 17, 5159, 8736, 5181, 6370, 1072, 21, 5310, 575, 9033, 8886, 8901, 5546, 11134, 11131, 11, 8857, 11133, 8875, 1285, 13487, 8671, 8864, 6267, 1113, 504, 7928, 8877, 8890, 5560, 13488, 5923, 5931, 2]
 // Exports: default
 
-// Module 14607 (AddMediaToOriginalForumPostActionSheet)
+// Module 13486 (AddMediaToOriginalForumPostActionSheet)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import DraftStore from "DraftStore" /* 8725 */;
-import Tracking from "Tracking" /* 8866 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 8879 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
+import DraftStore from "DraftStore" /* 8736 */;
+import Tracking from "Tracking" /* 8877 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 8890 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import MessageStore from "MessageStore" /* 6362 */;
+import ChannelStore from "ChannelStore" /* 5159 */;
+import GuildStore from "GuildStore" /* 5181 */;
+import MessageStore from "MessageStore" /* 6370 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size_mod from "module_2" /* 2 */;
 
 let c9, closure_6;

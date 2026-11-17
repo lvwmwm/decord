@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/conjure/preview/images", width: 1920, height: 1018, scales: [1], hash: "7411b537f8491be980e9ec41477a904b", name: "overlay-frame-bg", type: "webp" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "d69e45ebad9f40b8957190ed86104514", name: "ic_application_command_24px", type: "png" });

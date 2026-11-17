@@ -1,14 +1,14 @@
-// Module ID: 13733
-// Function ID: 13734
+// Module ID: 14784
+// Function ID: 14785
 // Name: useConjureClarificationLinks
-// Dependencies: [5, 32, 19, 7017, 13572, 13243, 504, 7018, 13251, 2]
+// Dependencies: [5, 32, 19, 7025, 14622, 14472, 504, 7026, 14480, 2]
 // Exports: default
 
-// Module 13733 (useConjureClarificationLinks)
+// Module 14784 (useConjureClarificationLinks)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 7017 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 7025 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,9 +1,9 @@
-// Module ID: 13971
-// Function ID: 13972
+// Module ID: 14992
+// Function ID: 14993
 // Name: conjureTarget
 // Dependencies: [2]
 
-// Module 13971 (conjureTarget)
+// Module 14992 (conjureTarget)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/create/conjureTarget.tsx");

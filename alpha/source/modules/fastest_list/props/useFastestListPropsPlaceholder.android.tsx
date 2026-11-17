@@ -1,13 +1,13 @@
-// Module ID: 7836
-// Function ID: 7837
+// Module ID: 7846
+// Function ID: 7847
 // Name: useFastestListPropsPlaceholder
-// Dependencies: [19, 17, 7837, 5303, 2]
+// Dependencies: [19, 17, 7847, 5307, 2]
 // Exports: default
 
-// Module 7836 (useFastestListPropsPlaceholder)
+// Module 7846 (useFastestListPropsPlaceholder)
 import react_native from "react-native" /* 17 */;
-import ColorUtils from "ColorUtils" /* 5303 */;
-import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7837 */;
+import ColorUtils from "ColorUtils" /* 5307 */;
+import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7847 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ function createNativePlaceholderConfig(listFooter) {
   if (type == null) {
     NONE = FastestListPropsPlaceholder.FastestListPropsPlaceholderType.NONE;
   }
-  size = { borderRadius: "Array", borderTopLeftRadius: "text", borderTopRightRadius: "alignItems", borderBottomLeftRadius: "set", borderBottomRightRadius: "map", divider: "Array", dividerColor: "isArray", dividerPaddingLeft: "Array", dividerPaddingRight: "alignItems", placeholderShape: "surrogates", placeholderShapeColor: "constructor", placeholderShapeCount: "Array", placeholderShapeGap: "isArray", placeholderShapePaddingHorizontal: "alignItems", placeholderShapePaddingVertical: "Map", placeholderFeedBackgroundColor: "setTimeout", placeholderFeedColor: "r", placeholderFeedLabelPadding: "isArray", placeholderFeedLabelPaddingInnerRatio: "channelId", placeholderFeedLabelSize: "alignItems", placeholderFeedLabelSecondarySize: "default", placeholderFeedPadding: "Path", placeholderFeedShape: "a", placeholderFeedShapeSize: "isArray", placeholderType: NONE, width: "Basic", height: 170876827626422630000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, verticalAlignment: 0.0000000000000000000000000000000000000000000000000000009380140331662141, horizontalAlignment: 1681686304698668500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+  size = { borderRadius: "Array", borderTopLeftRadius: "count", borderTopRightRadius: "alignItems", borderBottomLeftRadius: "uri", borderBottomRightRadius: "HTTP", divider: "r", dividerColor: "isArray", dividerPaddingLeft: "Array", dividerPaddingRight: "alignItems", placeholderShape: "jsxs", placeholderShapeColor: "st", placeholderShapeCount: "Array", placeholderShapeGap: "isArray", placeholderShapePaddingHorizontal: "alignItems", placeholderShapePaddingVertical: "View", placeholderFeedBackgroundColor: "Promise", placeholderFeedColor: "a", placeholderFeedLabelPadding: "isArray", placeholderFeedLabelPaddingInnerRatio: "Array", placeholderFeedLabelSize: "channel_id", placeholderFeedLabelSecondarySize: "options", placeholderFeedPadding: "Text", placeholderFeedShape: "alignItems", placeholderFeedShapeSize: "props", placeholderType: NONE, width: false, height: false, verticalAlignment: false, horizontalAlignment: false };
   if (null == listFooter) {
     return size;
   } else {

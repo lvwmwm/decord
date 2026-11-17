@@ -1,23 +1,23 @@
-// Module ID: 9344
-// Function ID: 9345
+// Module ID: 9353
+// Function ID: 9354
 // Name: MarkupParsers
-// Dependencies: [1072, 1089, 1456, 6047, 9345, 9349, 8646, 9365, 1242, 2]
+// Dependencies: [1072, 1089, 1456, 6051, 9354, 9358, 8657, 9374, 1242, 2]
 // Exports: parseEmbedDescriptionMarkup, parseEmbedTitleMarkup, parseEmbedTitleMarkupWithoutLinks, parseMessageMarkup
 
-// Module 9344 (MarkupParsers)
+// Module 9353 (MarkupParsers)
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 6047 */;
-import renderMessageMarkup from "renderMessageMarkup" /* 8646 */;
-import NativeMarkdownExperiment from "NativeMarkdownExperiment" /* 9345 */;
-import parseNativeMarkupDefault from "parseNativeMarkup" /* 9365 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 6051 */;
+import renderMessageMarkup from "renderMessageMarkup" /* 8657 */;
+import NativeMarkdownExperiment from "NativeMarkdownExperiment" /* 9354 */;
+import parseNativeMarkupDefault from "parseNativeMarkup" /* 9374 */;
 import LRUCache_mod from "LRUCache" /* 1456 */;
 import size from "module_2" /* 2 */;
 
 let LRUCache;
 let tmp;
-const ChangeLogStandardTemplate = tmp(9349);
+const ChangeLogStandardTemplate = tmp(9358);
 const MessageTypes = Constants.MessageTypes;
 let obj = { max: Infinity, maxAge: 15 * DurationsDefault.Millis.MINUTE, updateAgeOnGet: true };
 const tmp2 = new LRUCache(obj);

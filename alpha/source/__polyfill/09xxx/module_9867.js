@@ -1,34 +1,56 @@
 // Module ID: 9867
 // Function ID: 9868
-// Dependencies: [9799]
-// Exports: applySdkMetadata
+// Dependencies: [42, 41, 93, 95, 98, 158]
 
 // Module 9867
-import _mod9799 from "module_9799" /* 9799 */;
+import _createClass from "_createClass" /* 42 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import map from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
+import _wrapNativeSuper from "_wrapNativeSuper" /* 158 */;
 
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
-export function applySdkMetadata(_metadata, arg1) {
-  let arr = arg2;
-  if (arg2 === undefined) {
-    const items = [arg1];
-    arr = items;
-  }
-  let str = arg3;
-  if (arg3 === undefined) {
-    str = "npm";
-  }
-  const tmp = _metadata._metadata || {};
-  if (!tmp.sdk) {
-    let obj = {
-      name: "sentry.javascript." + arg1,
-      packages: arr.map((item) => {
-          const obj = { name: "" + str + ":@sentry/" + item, version: _mod9799.SDK_VERSION };
-          return obj;
-        }),
-      version: str(9799).SDK_VERSION
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
     };
-    const _HermesInternal = HermesInternal;
-    tmp.sdk = obj;
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
-  _metadata._metadata = tmp;
 }
+class SentryError {
+  constructor(message) {
+    let constructResult;
+    let str = arg1;
+    if (arg1 === undefined) {
+      str = "warn";
+    }
+    const self = this;
+    _classCallCheck(this, SentryError);
+    const items = [message];
+    const obj = _getPrototypeOf(SentryError);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = map;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, items);
+    }
+    const tmp3Result = tmp3(self, constructResult);
+    tmp3Result.message = message;
+    tmp3Result.logLevel = str;
+    return tmp3Result;
+  }
+}
+_inherits(SentryError, _wrapNativeSuper(Error));
+const SentryError_export = _createClass(SentryError);
+
+export { SentryError_export as SentryError };

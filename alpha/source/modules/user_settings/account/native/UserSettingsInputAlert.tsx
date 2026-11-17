@@ -1,12 +1,12 @@
-// Module ID: 17299
-// Function ID: 17300
+// Module ID: 17336
+// Function ID: 17337
 // Name: UserSettingsInputAlert
-// Dependencies: [19, 21, 1285, 6327, 5919, 7619, 6330, 7474, 2]
+// Dependencies: [19, 21, 1285, 6335, 5923, 7629, 6338, 7484, 2]
 
-// Module 17299 (UserSettingsInputAlert)
+// Module 17336 (UserSettingsInputAlert)
 import HTTPUtils from "HTTPUtils" /* 1285 */;
-import Stack_Stack from "Stack/Stack" /* 6327 */;
-import AlertDefault from "Alert" /* 6330 */;
+import Stack_Stack from "Stack/Stack" /* 6335 */;
+import AlertDefault from "Alert" /* 6338 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -14,7 +14,7 @@ import size from "module_2" /* 2 */;
 let c3;
 let closure_4;
 let tmp2;
-const KeyboardAwareViewDefault = tmp2(7474);
+const KeyboardAwareViewDefault = tmp2(7484);
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
 const hasOwnProperty = { input: "", error: "alignItems" };
 const PureComponent = react.PureComponent;
@@ -91,7 +91,7 @@ class UserSettingsInputAlert extends PureComponent {
       const tmp3 = React3;
       if (tmp6) {
         let obj = { variant: "body-md/normal", children: helpText };
-        tmp6 = _false(tmp4(5919).Text, obj);
+        tmp6 = _false(tmp4(5923).Text, obj);
       }
       const items = [tmp6, ];
       const obj2 = {
@@ -113,7 +113,7 @@ class UserSettingsInputAlert extends PureComponent {
           }
       };
       str2 = undefined;
-      const TextInput = tmp4(7619).TextInput;
+      const TextInput = tmp4(7629).TextInput;
       const tmp8 = _false;
       if (secureTextEntry) {
         str2 = "current-password";

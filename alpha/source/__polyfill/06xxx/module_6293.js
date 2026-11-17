@@ -1,47 +1,18 @@
 // Module ID: 6293
 // Function ID: 6294
-// Dependencies: [19, 6273]
-// Exports: useEdgeInsetApplication
+// Dependencies: [17, 26, 106, 65]
 
 // Module 6293
-import get_synchronousScreenUpdatesEnabled from "get synchronousScreenUpdatesEnabled" /* 6273 */;
-import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import _mod26 from "module_26" /* 26 */;
+import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
+import module_65 from "module_65" /* 65 */;
 
-let context = react.createContext({ topAlreadyApplied: false, leftDisabled: false, rightDisabled: false, bottomDisabled: false });
+let obj2;
+const codegenNativeComponent = react_native.codegenNativeComponent;
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSModalScreen", directEventTypes: { topAppear: { registrationName: "onAppear" }, topDisappear: { registrationName: "onDisappear" }, topDismissed: { registrationName: "onDismissed" }, topNativeDismissCancelled: { registrationName: "onNativeDismissCancelled" }, topWillAppear: { registrationName: "onWillAppear" }, topWillDisappear: { registrationName: "onWillDisappear" }, topHeaderHeightChange: { registrationName: "onHeaderHeightChange" }, topTransitionProgress: { registrationName: "onTransitionProgress" }, topGestureCancel: { registrationName: "onGestureCancel" }, topHeaderBackButtonClicked: { registrationName: "onHeaderBackButtonClicked" }, topSheetDetentChanged: { registrationName: "onSheetDetentChanged" } }, validAttributes: obj2 };
+obj2 = { screenId: true, sheetAllowedDetents: true, sheetLargestUndimmedDetent: true, sheetGrabberVisible: true, sheetCornerRadius: true, sheetExpandsWhenScrolledToEdge: true, sheetInitialDetent: true, sheetElevation: true, sheetShouldOverflowTopInset: true, sheetDefaultResizeAnimationEnabled: true, customAnimationOnSwipe: true, fullScreenSwipeEnabled: true, fullScreenSwipeShadowEnabled: true, homeIndicatorHidden: true, preventNativeDismiss: true, gestureEnabled: true, statusBarColor: _mod26.colorAttribute, statusBarHidden: true, screenOrientation: true, statusBarAnimation: true, statusBarStyle: true, statusBarTranslucent: true, gestureResponseDistance: true, stackPresentation: true, stackAnimation: true, transitionDuration: true, replaceAnimation: true, swipeDirection: true, hideKeyboardOnSwipe: true, activityState: true, navigationBarColor: _mod26.colorAttribute, navigationBarTranslucent: true, navigationBarHidden: true, nativeBackButtonDismissalEnabled: true, bottomScrollEdgeEffect: true, leftScrollEdgeEffect: true, rightScrollEdgeEffect: true, topScrollEdgeEffect: true, synchronousShadowStateUpdatesEnabled: true, iosOrientationInheritanceFixEnabled: true };
+const merged = Object.assign(DynamicallyInjectedByGestureHandler.ConditionallyIgnoredEventHandlers({ onAppear: true, onDisappear: true, onDismissed: true, onNativeDismissCancelled: true, onWillAppear: true, onWillDisappear: true, onHeaderHeightChange: true, onTransitionProgress: true, onGestureCancel: true, onHeaderBackButtonClicked: true, onSheetDetentChanged: true }));
 
-export const EdgeInsetApplicationContext = context;
-export function useEdgeInsetApplication(arg0, flag, flag2, flag3, flag4) {
-  let bottomDisabled;
-  let leftDisabled;
-  let rightDisabled;
-  context = react.useContext(context);
-  const topAlreadyApplied = context.topAlreadyApplied;
-  ({ leftDisabled, rightDisabled, bottomDisabled } = context);
-  const experiment = get_synchronousScreenUpdatesEnabled.featureFlags.experiment;
-  flag = undefined;
-  const obj = react;
-  if (experiment != null) {
-    flag = experiment.androidLegacyTopInsetBehavior;
-  }
-  if (flag == null) {
-    flag = false;
-  }
-  let tmp2 = flag;
-  if (!tmp2) {
-    tmp2 = !topAlreadyApplied && arg0;
-  }
-  let closure_1 = tmp2;
-  const tmp4 = tmp2 && !flag;
-  if (!leftDisabled) {
-    leftDisabled = flag2;
-  }
-  if (!rightDisabled) {
-    rightDisabled = flag3;
-  }
-  if (!bottomDisabled) {
-    bottomDisabled = flag4;
-  }
-  const items = [topAlreadyApplied, tmp2, leftDisabled, rightDisabled, bottomDisabled];
-  const obj2 = { appliesTopInset: tmp4, consumeLeftInset: !leftDisabled, consumeRightInset: !rightDisabled, consumeBottomInset: !bottomDisabled, useLegacyBehavior: flag, nextContextValue: obj.useMemo(() => ({ topAlreadyApplied: topAlreadyApplied || closure_1, leftDisabled, rightDisabled, bottomDisabled }), items) };
-  return obj2;
-}
+export default module_65.get("RNSModalScreen", () => obj);
+export { __INTERNAL_VIEW_CONFIG };

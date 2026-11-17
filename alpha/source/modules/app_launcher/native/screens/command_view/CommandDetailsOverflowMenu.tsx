@@ -1,14 +1,14 @@
-// Module ID: 13489
-// Function ID: 13490
+// Module ID: 13645
+// Function ID: 13646
 // Name: CommandDetailsOverflowMenu
-// Dependencies: [19, 21, 5131, 1113, 7943, 6004, 11629, 9148, 7988, 7421, 2]
+// Dependencies: [19, 21, 5135, 1113, 7953, 6008, 11056, 9159, 7999, 7431, 2]
 // Exports: default
 
-// Module 13489 (CommandDetailsOverflowMenu)
+// Module 13645 (CommandDetailsOverflowMenu)
 import Fragment from "Fragment" /* 21 */;
-import ToastUtils from "ToastUtils" /* 6004 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7421 */;
-import ClipboardUtils from "ClipboardUtils" /* 7943 */;
+import ToastUtils from "ToastUtils" /* 6008 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7431 */;
+import ClipboardUtils from "ClipboardUtils" /* 7953 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ const result = size.fileFinishedImporting("modules/app_launcher/native/screens/c
 export default function CommandDetailsOverflowMenu(commandId) {
   let intl;
   commandId = commandId.commandId;
-  const DeveloperMode = commandId(5131).DeveloperMode;
+  const DeveloperMode = commandId(5135).DeveloperMode;
   if (null != commandId) {
     if (DeveloperMode.useSetting()) {
       let obj = {
@@ -29,11 +29,11 @@ export default function CommandDetailsOverflowMenu(commandId) {
               const obj2 = ToastUtils;
               obj2.presentIdCopied();
             },
-        IconComponent: commandId(11629).IdIcon
+        IconComponent: commandId(11056).IdIcon
       };
       intl = tmp(1113).intl;
       const items = [obj];
-      return jsx(commandId(9148).ContextMenu, {
+      return jsx(commandId(9159).ContextMenu, {
         items,
         children(ref) {
               ref = ref.ref;

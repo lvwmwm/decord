@@ -1,16 +1,16 @@
-// Module ID: 10954
-// Function ID: 10955
+// Module ID: 11183
+// Function ID: 11184
 // Name: PremiumFeaturesCards
-// Dependencies: [19, 17, 1390, 21, 5306, 10955, 2]
+// Dependencies: [19, 17, 1390, 21, 5310, 11184, 2]
 // Exports: default
 
-// Module 10954 (PremiumFeaturesCards)
+// Module 11183 (PremiumFeaturesCards)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
-import PremiumFeaturesCardDefault from "PremiumFeaturesCard" /* 10955 */;
+import PremiumFeaturesCardDefault from "PremiumFeaturesCard" /* 11184 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;
@@ -29,7 +29,7 @@ export default function PremiumFeaturesCards(style) {
   let onPaymentSuccess;
   let order;
   let tmp3;
-  const f101294 = (premiumType, index) => {
+  const f102506 = (premiumType, index) => {
     let tmp3;
     const tmp = jsx;
     const tmp2 = PremiumFeaturesCardDefault;
@@ -57,8 +57,8 @@ export default function PremiumFeaturesCards(style) {
     items1 = [, ];
     ({ TIER_0: arr[0], TIER_2: arr[1] } = onFirstCardLayout);
   }
-  obj = { style: items2, onLayout, children: items1.map(f101294) };
+  obj = { style: items2, onLayout, children: items1.map(f102506) };
   items2 = [tmp2.container, style];
-  return <View style={items2} onLayout={onLayout}>{items1.map(f101294)}</View>;
+  return <View style={items2} onLayout={onLayout}>{items1.map(f102506)}</View>;
 };
 export { PremiumFeatureCardOrder };

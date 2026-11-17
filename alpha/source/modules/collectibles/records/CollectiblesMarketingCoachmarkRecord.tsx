@@ -1,10 +1,10 @@
-// Module ID: 8509
-// Function ID: 8510
+// Module ID: 8520
+// Function ID: 8521
 // Name: CollectiblesMarketingCoachmarkRecord
-// Dependencies: [8507, 2]
+// Dependencies: [8518, 2]
 
-// Module 8509 (CollectiblesMarketingCoachmarkRecord)
-import CollectiblesMarketingType from "CollectiblesMarketingType" /* 8507 */;
+// Module 8520 (CollectiblesMarketingCoachmarkRecord)
+import CollectiblesMarketingType from "CollectiblesMarketingType" /* 8518 */;
 import size from "module_2" /* 2 */;
 
 class CollectiblesMarketingCoachmarkRecord {

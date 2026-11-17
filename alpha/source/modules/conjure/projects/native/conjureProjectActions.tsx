@@ -1,29 +1,29 @@
-// Module ID: 13310
-// Function ID: 13311
+// Module ID: 14542
+// Function ID: 14543
 // Name: conjureProjectActions
-// Dependencies: [5, 7365, 7377, 7017, 5162, 13311, 6004, 6264, 1113, 4131, 7943, 6346, 6005, 6023, 13206, 13312, 13207, 7329, 10996, 10994, 7332, 10976, 6025, 13317, 6019, 11629, 10569, 13189, 10939, 12295, 13319, 10553, 13320, 7633, 13321, 6030, 2]
+// Dependencies: [5, 7375, 7387, 7025, 5166, 14543, 6008, 6272, 1113, 4133, 7953, 6354, 6009, 6027, 13025, 14544, 14442, 7339, 11917, 11042, 7342, 14536, 6029, 14549, 6023, 11056, 11049, 14532, 13091, 11046, 14551, 12990, 14552, 7643, 14553, 6034, 2]
 // Exports: canUnpublishConjureUserApp, conjureProjectActions, copyConjureProjectId, copyConjureProjectLink, exportConjureProject, importConjureProject, openConjureAddToAnotherServerSheet
 
-// Module 13310 (conjureProjectActions)
+// Module 14542 (conjureProjectActions)
 import intl13 from "intl" /* 1113 */;
-import _modDef4131 from "module_4131" /* 4131 */;
-import ChannelConstants from "ChannelConstants" /* 5162 */;
-import ToastUtils from "ToastUtils" /* 6004 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
-import CopyIcon from "CopyIcon" /* 6023 */;
-import ChannelUtils from "ChannelUtils" /* 6346 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 7329 */;
-import conjureProjectMute from "conjureProjectMute" /* 7332 */;
-import ClipboardUtils from "ClipboardUtils" /* 7943 */;
-import conjureRemoveApp from "conjureRemoveApp" /* 13206 */;
-import openConjureRemoveAppAlertDefault from "openConjureRemoveAppAlert" /* 13207 */;
-import showConjureShareToServerSheetDefault from "showConjureShareToServerSheet" /* 13312 */;
-import openConjureMakePersonalAlertDefault from "openConjureMakePersonalAlert" /* 13320 */;
-import openConjureUnpublishUserAppAlertDefault from "openConjureUnpublishUserAppAlert" /* 13321 */;
+import _modDef4133 from "module_4133" /* 4133 */;
+import ChannelConstants from "ChannelConstants" /* 5166 */;
+import ToastUtils from "ToastUtils" /* 6008 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 6009 */;
+import CopyIcon from "CopyIcon" /* 6027 */;
+import ChannelUtils from "ChannelUtils" /* 6354 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 7339 */;
+import conjureProjectMute from "conjureProjectMute" /* 7342 */;
+import ClipboardUtils from "ClipboardUtils" /* 7953 */;
+import conjureRemoveApp from "conjureRemoveApp" /* 13025 */;
+import openConjureRemoveAppAlertDefault from "openConjureRemoveAppAlert" /* 14442 */;
+import showConjureShareToServerSheetDefault from "showConjureShareToServerSheet" /* 14544 */;
+import openConjureMakePersonalAlertDefault from "openConjureMakePersonalAlert" /* 14552 */;
+import openConjureUnpublishUserAppAlertDefault from "openConjureUnpublishUserAppAlert" /* 14553 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 7365 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 7377 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 7017 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 7375 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 7387 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 7025 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -212,8 +212,8 @@ function deleteConjureProject(project, removeTarget) {
   if (null == removeTarget) {
     const obj2 = {
       key: "ConjureProjectDelete",
-      title: intl.formatToPlainString(_modDef4131.CJBhb2, obj3),
-      content: intl2.string(_modDef4131["0OmrVn"]),
+      title: intl.formatToPlainString(_modDef4133.CJBhb2, obj3),
+      content: intl2.string(_modDef4133["0OmrVn"]),
       confirmText: intl3.string(require("intl").t.oyYWHE),
       onConfirm() {
           obj = ConjureActionCreators;
@@ -249,7 +249,7 @@ export function exportConjureProject(project, fn) {
   React3(project.id);
   const id = project.id;
   const intl = intl13.intl;
-  hasOwnProperty(id, intl.string(_modDef4131.oU20rd));
+  hasOwnProperty(id, intl.string(_modDef4133.oU20rd));
 }
 export function importConjureProject(project, arg1) {
   const promise = importIntoProject(project, arg1);
@@ -272,7 +272,7 @@ export function copyConjureProjectId(project) {
   let intl;
   obj = ClipboardUtils;
   obj.copy(project.id);
-  const obj2 = { text: intl.string(_modDef4131.CmfaZG), icon: CopyIcon.CopyIcon };
+  const obj2 = { text: intl.string(_modDef4133.CmfaZG), icon: CopyIcon.CopyIcon };
   const open = ToastActionCreatorsDefault.open;
   ToastActionCreatorsDefault;
   intl = intl13.intl;
@@ -287,7 +287,7 @@ export function canUnpublishConjureUserApp(project) {
   return result;
 }
 export function openConjureAddToAnotherServerSheet(id, guildId) {
-  obj = { projectId: id, guildId, publishOptions: null, addingToAnother: true };
+  obj = { projectId: id, guildId };
   showConjureShareToServerSheetDefault(obj);
 }
 export { deleteConjureProject };
@@ -361,7 +361,7 @@ export function conjureProjectActions(project) {
       React3(project.id);
       const id = tmp.id;
       const intl = intl13.intl;
-      hasOwnProperty(id, intl.string(_modDef4131.oU20rd));
+      hasOwnProperty(id, intl.string(_modDef4133.oU20rd));
     }
   };
   intl3 = tmp3(tmp4[8]).intl;
@@ -407,7 +407,7 @@ export function conjureProjectActions(project) {
       let intl;
       obj = ClipboardUtils;
       obj.copy(project.id);
-      const obj2 = { text: intl.string(_modDef4131.CmfaZG), icon: CopyIcon.CopyIcon };
+      const obj2 = { text: intl.string(_modDef4133.CmfaZG), icon: CopyIcon.CopyIcon };
       const open = ToastActionCreatorsDefault.open;
       ToastActionCreatorsDefault;
       intl = intl13.intl;
@@ -430,7 +430,7 @@ export function conjureProjectActions(project) {
       label: intl8.string(tmp8(muted[9]).RBPj0b),
       IconComponent: project(muted[28]).ServerIcon,
       action() {
-          obj = { projectId: project.id, guildId, publishOptions: null, addingToAnother: true };
+          obj = { projectId: project.id, guildId };
           showConjureShareToServerSheetDefault(obj);
         }
     };

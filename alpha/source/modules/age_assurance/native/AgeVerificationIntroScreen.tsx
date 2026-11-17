@@ -1,20 +1,20 @@
-// Module ID: 8390
-// Function ID: 8391
+// Module ID: 8401
+// Function ID: 8402
 // Name: AgeVerificationIntroScreen
-// Dependencies: [5, 19, 17, 1072, 21, 5306, 575, 1630, 8256, 8211, 5919, 6820, 7746, 8391, 8392, 1113, 8190, 2188, 6823, 5926, 8393, 2]
+// Dependencies: [5, 19, 17, 1072, 21, 5310, 575, 1630, 8267, 8222, 5923, 6815, 7756, 8402, 8403, 1113, 8201, 2188, 6818, 5930, 8404, 2]
 // Exports: default
 
-// Module 8390 (AgeVerificationIntroScreen)
+// Module 8401 (AgeVerificationIntroScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6823 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8190 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6818 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8201 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let c1, description;
@@ -68,7 +68,7 @@ export default function GetStartedScreen(modalSessionId) {
   const onClose = modalSessionId.onClose;
   const tmp = closure_10();
   const bottom = initiateAgeVerification(1630)().bottom;
-  let obj = modalSessionId(8256);
+  let obj = modalSessionId(8267);
   initiateAgeVerification = obj.useInitiateAgeVerification({ onComplete: onClose, entryPoint });
   initiateAgeVerification = initiateAgeVerification.initiateAgeVerification;
   let obj2 = { children: items2 };
@@ -76,14 +76,14 @@ export default function GetStartedScreen(modalSessionId) {
   obj4 = { style: tmp.getStartedContainer, children: items1 };
   const loading = initiateAgeVerification.loading;
   const obj5 = { style: tmp.getStartedHeaderContainer, children: items };
-  items = [closure_7(modalSessionId(8211).ShieldSpotIllustration, {}), , ];
+  items = [closure_7(modalSessionId(8222).ShieldSpotIllustration, {}), , ];
   const obj6 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp.getStartedHeaderText, children: obj7.getAgeVerificationGetStartedTitle(entryPoint) };
-  const Text = modalSessionId(5919).Text;
-  obj7 = modalSessionId(6820);
+  const Text = modalSessionId(5923).Text;
+  obj7 = modalSessionId(6815);
   items[1] = closure_7(Text, obj6);
   const obj8 = { variant: "heading-sm/medium", color: "text-default", style: tmp.getStartedHeaderText, children: obj9.getAgeVerificationGetStartedSubtitle(entryPoint) };
-  const Text2 = modalSessionId(5919).Text;
-  obj9 = modalSessionId(6820);
+  const Text2 = modalSessionId(5923).Text;
+  obj9 = modalSessionId(6815);
   items[2] = closure_7(Text2, obj8);
   items1 = [closure_8(closure_5, obj5), , ];
   const obj10 = {
@@ -104,13 +104,13 @@ export default function GetStartedScreen(modalSessionId) {
       return closure_1_7(tmp3, obj, index);
     })
   };
-  const TableRowGroup = modalSessionId(7746).TableRowGroup;
-  const obj11 = modalSessionId(8391);
+  const TableRowGroup = modalSessionId(7756).TableRowGroup;
+  const obj11 = modalSessionId(8402);
   ageVerificationGetStartedSteps = obj11.getAgeVerificationGetStartedSteps(modalSessionId);
   items1[1] = closure_7(TableRowGroup, obj10);
   const obj12 = { style: tmp.ageGroupLearnMoreContainer, children: closure_7(Text3, obj13) };
   obj13 = { variant: "body-xs/medium", color: "text-muted", children: intl.format(modalSessionId(1113).t["L+FgkZ"], obj14) };
-  Text3 = modalSessionId(5919).Text;
+  Text3 = modalSessionId(5923).Text;
   intl = modalSessionId(1113).intl;
   obj14 = {
     handleOnHelpUrlHook() {
@@ -187,10 +187,10 @@ export default function GetStartedScreen(modalSessionId) {
     loading,
     iconPosition: "end"
   };
-  Button = modalSessionId(5926).Button;
+  Button = modalSessionId(5930).Button;
   intl2 = modalSessionId(1113).intl;
   obj18 = { color: initiateAgeVerification(575).colors.WHITE };
-  LinkExternalSmallIcon = modalSessionId(8393).LinkExternalSmallIcon;
+  LinkExternalSmallIcon = modalSessionId(8404).LinkExternalSmallIcon;
   items2[1] = closure_7(closure_5, obj15);
   return closure_8(closure_9, obj2);
 };

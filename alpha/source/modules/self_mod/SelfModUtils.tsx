@@ -1,10 +1,10 @@
-// Module ID: 8854
-// Function ID: 8855
+// Module ID: 8865
+// Function ID: 8866
 // Name: SelfModUtils
 // Dependencies: [1388, 2]
 // Exports: isCurrentUserTeen
 
-// Module 8854 (SelfModUtils)
+// Module 8865 (SelfModUtils)
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 

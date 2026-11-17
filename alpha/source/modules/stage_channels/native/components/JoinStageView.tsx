@@ -1,16 +1,16 @@
-// Module ID: 12974
-// Function ID: 12975
+// Module ID: 11607
+// Function ID: 11608
 // Name: JoinStageView
-// Dependencies: [19, 21, 6939, 6933, 12910, 1113, 6901, 12934, 2]
+// Dependencies: [19, 21, 6947, 6941, 11524, 1113, 6909, 11557, 2]
 // Exports: default
 
-// Module 12974 (JoinStageView)
+// Module 11607 (JoinStageView)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import StageChannelUtils from "StageChannelUtils" /* 6901 */;
-import StageChannelParticipants from "StageChannelParticipants" /* 6933 */;
-import StageChannelParticipantStoreHooks from "StageChannelParticipantStoreHooks" /* 6939 */;
-import StageViewWithPromptsDefault from "StageViewWithPrompts" /* 12910 */;
+import StageChannelUtils from "StageChannelUtils" /* 6909 */;
+import StageChannelParticipants from "StageChannelParticipants" /* 6941 */;
+import StageChannelParticipantStoreHooks from "StageChannelParticipantStoreHooks" /* 6947 */;
+import StageViewWithPromptsDefault from "StageViewWithPrompts" /* 11524 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

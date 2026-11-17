@@ -1,10 +1,10 @@
-// Module ID: 6037
-// Function ID: 6038
+// Module ID: 6041
+// Function ID: 6042
 // Name: normalizeURLScheme
 // Dependencies: [2]
 // Exports: default
 
-// Module 6037 (normalizeURLScheme)
+// Module 6041 (normalizeURLScheme)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/links/native/normalizeURLScheme.tsx");

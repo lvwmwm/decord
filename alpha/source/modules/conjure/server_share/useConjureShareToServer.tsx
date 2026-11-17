@@ -1,30 +1,30 @@
-// Module ID: 13189
-// Function ID: 13190
+// Module ID: 14532
+// Function ID: 14533
 // Name: useConjureShareToServer
-// Dependencies: [5, 32, 19, 5177, 5238, 7017, 7377, 1072, 7018, 7260, 504, 13190, 1113, 4131, 13191, 7329, 13162, 7384, 2]
+// Dependencies: [5, 32, 19, 5181, 5242, 7025, 7387, 1072, 7026, 7270, 504, 14533, 1113, 4133, 14534, 7339, 14403, 7394, 2]
 // Exports: canAddConjureProjectToAnotherServer, default
 
-// Module 13189 (useConjureShareToServer)
+// Module 14532 (useConjureShareToServer)
 import Constants from "Constants" /* 1072 */;
-import ConjureProjectStore2 from "ConjureProjectStore" /* 7017 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 7018 */;
-import ConjureUtils from "ConjureUtils" /* 7260 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 7329 */;
-import ConjurePublishTypes from "ConjurePublishTypes" /* 7384 */;
+import ConjureProjectStore2 from "ConjureProjectStore" /* 7025 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 7026 */;
+import ConjureUtils from "ConjureUtils" /* 7270 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 7339 */;
+import ConjurePublishTypes from "ConjurePublishTypes" /* 7394 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import PermissionStore from "PermissionStore" /* 5238 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 7377 */;
+import GuildStore from "GuildStore" /* 5181 */;
+import PermissionStore from "PermissionStore" /* 5242 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 7387 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const ConjureProjectStore = ConjureProjectStore2;
-let _require, c4, c5;
+let _require, c4;
 
 function refreshUntilBotJoins(arg0, arg1) {
-  const f106684 = () => {
+  const f109840 = () => {
     const integrationStatus = ConjureProjectStore.getIntegrationStatus(closure_0);
     let prop;
     if (integrationStatus != null) {
@@ -37,13 +37,13 @@ function refreshUntilBotJoins(arg0, arg1) {
         closure_0 = tmp;
         let closure_1 = tmp7 - 1;
         const _setTimeout = setTimeout;
-        const timerId = setTimeout(f106684, 1500);
+        const timerId = setTimeout(f109840, 1500);
       }
     }
   };
   let closure_0 = arg0;
   let c1 = 6;
-  let timerId = setTimeout(f106684, 1500);
+  let timerId = setTimeout(f109840, 1500);
 }
 let obj = function _waitForPublishStatus() {
   obj = _asyncToGenerator(async function(arg0, value) {
@@ -176,7 +176,6 @@ export default function useConjureShareToServer(arg0, arg1, arg2) {
     available = isProjectOwner(stateFromStores);
   }
   let obj4 = first;
-  const tmp8 = conjureEligibleGuilds;
   first = conjureEligibleGuilds(first.useState(() => {
     const tmp = flag;
     if (tmp) {
@@ -214,10 +213,10 @@ export default function useConjureShareToServer(arg0, arg1, arg2) {
   if (guild == null) {
     guild = null;
   }
-  [tmp14, c9] = tmp8(obj4.useState(false), 2);
-  tmp8(obj4.useState(false), 2);
-  [tmp16, c10] = tmp8(obj4.useState(null), 2);
-  tmp8(obj4.useState(null), 2);
+  [tmp14, c9] = conjureEligibleGuilds(obj4.useState(false), 2);
+  conjureEligibleGuilds(obj4.useState(false), 2);
+  [tmp16, c10] = conjureEligibleGuilds(obj4.useState(null), 2);
+  conjureEligibleGuilds(obj4.useState(null), 2);
   const pickGuild = obj4.useCallback((arg0) => {
     closure_7(arg0);
     _undefined2(null);
@@ -418,66 +417,46 @@ export default function useConjureShareToServer(arg0, arg1, arg2) {
   }), items7);
   const items8 = [guild, arg0, arg2];
   const publish = obj4.useCallback(stateFromStores(function*(arg0, value) {
-    let v3;
-    if (c0 === 2) {
-      c0 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp2 === 3) {
+    closure_0 = arg0;
+    if (1 === c4) {
       if (arg0 === 1) {
+        let c5 = 3;
         throw value;
       } else if (arg0 === 2) {
-        const obj3 = { value, done: true };
-        return obj3;
-      } else {
-        return { value: "HermesInternal", done: null };
+        c5 = 3;
+        const obj5 = { value, done: true };
+        return obj5;
+      } else if (null != closure_130_1) {
+        if (null != closure_130_8) {
+          let c3 = 1;
+          const obj2 = closure_0(closure_2[16]);
+          const obj6 = { platform: closure_130_1.platform, guildId: closure_130_8.id };
+          c4 = 3;
+          c5 = 1;
+          const obj7 = { value: obj2.runConjurePublishAction(closure_130_0, "share", obj6, flag), done: false };
+          return obj7;
+        }
       }
+    } else if (2 === c4) {
+      c3 = 0;
+    } else if (arg0 === 1) {
+      c5 = 3;
+      throw value;
+    } else if (arg0 === 2) {
+      c3 = 0;
+      c5 = 3;
+      obj = { value, done: true };
+      return obj;
     } else {
-      let c2;
-      try {
-        c0 = 2;
-        if (0 === c1) {
-          if (arg0 === 1) {
-            c0 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c0 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
-          } else if (null != closure_1) {
-            if (null != guild) {
-              c2 = 1;
-              const obj5 = { platform: tmp14.platform, guildId: tmp4.id };
-              c1 = 2;
-              const obj2 = c0(c2[16]);
-              c0 = 1;
-              const obj6 = { value: obj2.runConjurePublishAction(closure_0, "share", obj5), done: false };
-              return obj6;
-            }
-          }
-        } else if (1 === tmp3) {
-          c2 = 0;
-        } else if (arg0 === 1) {
-          c0 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c2 = 0;
-          c0 = 3;
-          obj = { value, done: true };
-          return obj;
-        } else {
-          c2 = 0;
-        }
-        c0 = 3;
-        return { value: "HermesInternal", done: null };
-      } catch (tmp8) {
-        if (0 === c2) {
-          c0 = 3;
-          throw tmp8;
-        } else {
-          c1 = 1;
-        }
-      }
+      c3 = 0;
     }
+    yield "HermesInternal";
+    closure_2 = tmp;
+    flag = closure_0;
+    if (closure_0 === undefined) {
+      flag = false;
+    }
+    return "Path";
   }), items8);
   if (available) {
     available = stateFromStores1;

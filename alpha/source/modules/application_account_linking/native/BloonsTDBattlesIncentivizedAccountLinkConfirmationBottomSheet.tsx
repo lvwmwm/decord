@@ -1,18 +1,18 @@
-// Module ID: 19844
-// Function ID: 19845
+// Module ID: 19889
+// Function ID: 19890
 // Name: BloonsTDBattlesIncentivizedAccountLinkConfirmationBottomSheet
-// Dependencies: [19, 1074, 21, 19842, 7918, 7937, 19837, 1113, 3579, 5926, 5542, 8484, 2]
+// Dependencies: [19, 1074, 21, 19887, 7928, 7947, 19882, 1113, 3581, 5930, 5546, 8495, 2]
 // Exports: default
 
-// Module 19844 (BloonsTDBattlesIncentivizedAccountLinkConfirmationBottomSheet)
+// Module 19889 (BloonsTDBattlesIncentivizedAccountLinkConfirmationBottomSheet)
 import Fragment from "Fragment" /* 21 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
-import _modDef3579 from "module_3579" /* 3579 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7918 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 8484 */;
-import IncentivizedAccountLinkConfirmationPromoSheetDefault from "IncentivizedAccountLinkConfirmationPromoSheet" /* 19837 */;
+import _modDef3581 from "module_3581" /* 3581 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7928 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7947 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 8495 */;
+import IncentivizedAccountLinkConfirmationPromoSheetDefault from "IncentivizedAccountLinkConfirmationPromoSheet" /* 19882 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let result = size.fileFinishedImporting("modules/application_account_linking/nat
 export default function BloonsTDBattlesIncentivizedAccountLinkConfirmationBottomSheet() {
   let analyticsLocations;
   let intl3;
-  const bloonsTDBattlesUpsellExperiment = analyticsLocations(19842).bloonsTDBattlesUpsellExperiment;
+  const bloonsTDBattlesUpsellExperiment = analyticsLocations(19887).bloonsTDBattlesUpsellExperiment;
   const orbQuantity = bloonsTDBattlesUpsellExperiment.useConfig({ location: "BloonsTDBattlesIncentivizedAccountLinkConfirmationBottomSheet" }).orbQuantity;
   const tmp = useAnalyticsLocationsDefault;
   analyticsLocations = tmp(AnalyticsLocationDefault.ACTION_SHEET).analyticsLocations;
@@ -31,7 +31,7 @@ export default function BloonsTDBattlesIncentivizedAccountLinkConfirmationBottom
   const intl = analyticsLocations(1113).intl;
   const intl2 = analyticsLocations(1113).intl;
   let obj2 = {
-    text: intl3.string(_modDef3579.Iw0mSJ),
+    text: intl3.string(_modDef3581.Iw0mSJ),
     variant: "primary",
     size: "lg",
     onPress: function handleStoreRedirect() {
@@ -42,7 +42,7 @@ export default function BloonsTDBattlesIncentivizedAccountLinkConfirmationBottom
       const result = obj2.openCollectiblesShopMobile(obj3);
     }
   };
-  const Button = analyticsLocations(5926).Button;
+  const Button = analyticsLocations(5930).Button;
   intl3 = analyticsLocations(1113).intl;
-  return <tmp2 title={intl.formatToPlainString(_modDef3579["WdW7U/"], { orbCount: orbQuantity })} description={intl2.string(_modDef3579.DTk977)} actions={null} />;
+  return <tmp2 title={intl.formatToPlainString(_modDef3581["WdW7U/"], { orbCount: orbQuantity })} description={intl2.string(_modDef3581.DTk977)} actions={null} />;
 };

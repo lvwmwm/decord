@@ -1,23 +1,23 @@
-// Module ID: 20014
-// Function ID: 20015
+// Module ID: 20060
+// Function ID: 20061
 // Name: VoicePanelUserSheet
-// Dependencies: [19, 17, 5155, 5248, 1388, 1072, 21, 5306, 575, 7918, 7937, 15682, 8545, 504, 14530, 5131, 5985, 15681, 8476, 1113, 15691, 8134, 1655, 9148, 7420, 6341, 15756, 20013, 9516, 5556, 1187, 6010, 5919, 15704, 15759, 2]
+// Dependencies: [19, 17, 5159, 5252, 1388, 1072, 21, 5310, 575, 7928, 7947, 15716, 8556, 504, 13401, 5135, 5989, 15715, 8487, 1113, 15725, 8145, 1655, 9159, 7430, 6349, 15790, 20059, 9528, 5560, 1187, 6014, 5923, 15738, 15793, 2]
 // Exports: default
 
-// Module 20014 (VoicePanelUserSheet)
+// Module 20060 (VoicePanelUserSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 8134 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;
-import UserProfileActivity from "UserProfileActivity" /* 15704 */;
-import VoicePanelUserActionCreators from "VoicePanelUserActionCreators" /* 20013 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 8145 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8487 */;
+import UserProfileActivity from "UserProfileActivity" /* 15738 */;
+import VoicePanelUserActionCreators from "VoicePanelUserActionCreators" /* 20059 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import RelationshipStore from "RelationshipStore" /* 5248 */;
+import ChannelStore from "ChannelStore" /* 5159 */;
+import RelationshipStore from "RelationshipStore" /* 5252 */;
 import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -200,9 +200,9 @@ export default function VoicePanelUserSheet(userId) {
   const items2 = [UserStore];
   const obj4 = channelId(504);
   const stateFromStores2 = obj4.useStateFromStores(items2, () => currentUser.getCurrentUser());
-  const obj5 = channelId(6341);
+  const obj5 = channelId(6349);
   const name = obj5.useName(guildId, channelId, stateFromStores);
-  const live = userId(15756)(userId).live;
+  const live = userId(15790)(userId).live;
   let closure_5 = tmp8;
   const items3 = [null == stateFromStores || null == stateFromStores1 || null == stateFromStores2];
   const effect = stateFromStores.useEffect(() => {
@@ -219,27 +219,27 @@ export default function VoicePanelUserSheet(userId) {
         let tmp11Result;
         const avatarURL = stateFromStores.getAvatarURL(guildId, 48, false);
         if (null != avatarURL) {
-          const tmp2Result = channelId(9516);
+          const tmp2Result = channelId(9528);
           cachedSourceFromURI = tmp2Result.getCachedSourceFromURI(avatarURL);
         }
         const avatarDecoration = stateFromStores.avatarDecoration;
         const obj2 = { style: tmp.wrapper, children: items6 };
         const obj6 = { style: tmp.header, children: items5 };
         const obj7 = { style: tmp.user, children: items4 };
-        const BottomSheet = tmp2(5556).BottomSheet;
+        const BottomSheet = tmp2(5560).BottomSheet;
         if (null != avatarDecoration) {
           const obj8 = { source: cachedSourceFromURI, size: channelId(1187).AvatarSizes.LARGE_48, avatarDecoration };
           const Avatar = tmp2(1187).Avatar;
           tmp11Result = tmp11(Avatar, obj8);
         } else {
           size = { source: cachedSourceFromURI, resizeMode: "stretch", width: 48, height: 48, style: tmp.avatar };
-          const tmp7Result = userId(6010);
+          const tmp7Result = userId(6014);
           tmp11Result = tmp11(tmp7Result, size);
         }
         items4 = [tmp11Result, ];
         const obj10 = { variant: "body-md/semibold", style: tmp.username, lineClamp: 1, children: name };
         const obj9 = { children: closure_11(stateFromStores2, obj2) };
-        items4[1] = closure_10(channelId(5919).Text, obj10);
+        items4[1] = closure_10(channelId(5923).Text, obj10);
         items5 = [closure_11(stateFromStores2, obj7), ];
         const obj11 = { userId: stateFromStores.id, currentUserId: stateFromStores2.id, channelId, guildId };
         items5[1] = closure_10(OverflowMenu, obj11);
@@ -258,7 +258,7 @@ export default function VoicePanelUserSheet(userId) {
 
         ];
         const obj12 = { user: stateFromStores, channel: stateFromStores1, currentUser: stateFromStores2, style: tmp.card };
-        items6[2] = closure_10(userId(15759), obj12);
+        items6[2] = closure_10(userId(15793), obj12);
         return closure_10(BottomSheet, obj9);
       }
     }

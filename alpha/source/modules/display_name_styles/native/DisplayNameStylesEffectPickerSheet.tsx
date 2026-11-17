@@ -1,24 +1,24 @@
-// Module ID: 17965
-// Function ID: 17966
+// Module ID: 18006
+// Function ID: 18007
 // Name: DisplayNameStylesEffectPickerSheet
-// Dependencies: [32, 19, 17, 1397, 21, 5306, 575, 8559, 17960, 5544, 5542, 5556, 17963, 1113, 3125, 5926, 6327, 10068, 10064, 10065, 2]
+// Dependencies: [32, 19, 17, 1397, 21, 5310, 575, 8570, 18001, 5548, 5546, 5560, 18004, 1113, 3127, 5930, 6335, 10081, 10077, 10078, 2]
 // Exports: default
 
-// Module 17965 (DisplayNameStylesEffectPickerSheet)
+// Module 18006 (DisplayNameStylesEffectPickerSheet)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1397 */;
-import _modDef3125 from "module_3125" /* 3125 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import HapticUtils from "HapticUtils" /* 5544 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10064 */;
-import types from "types" /* 10065 */;
-import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 10068 */;
+import _modDef3127 from "module_3127" /* 3127 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
+import HapticUtils from "HapticUtils" /* 5548 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10077 */;
+import types from "types" /* 10078 */;
+import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 10081 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -47,7 +47,7 @@ function EffectTile(arg0) {
   const string = intl.string;
   let OpWJ3f = useDisplayNameStylesEffectConfigs.DISPLAY_NAME_STYLES_EFFECT_NAMES[effectId];
   if (OpWJ3f == null) {
-    OpWJ3f = _modDef3125.OpWJ3f;
+    OpWJ3f = _modDef3127.OpWJ3f;
   }
   const stringResult = string(OpWJ3f);
   const items = [tmp.effectCard, ];
@@ -113,9 +113,9 @@ export default function DisplayNameStylesEffectPickerSheet(userId) {
   let closure_7;
   let tmp = closure_10();
   let tmp3 = dependencyMap;
-  let obj = userId(8559);
+  let obj = userId(8570);
   const bottomSheetRef = obj.useBottomSheetRef().bottomSheetRef;
-  let obj2 = userId(17960);
+  let obj2 = userId(18001);
   const displayNameStylesNewEffects = obj2.useDisplayNameStylesNewEffects(closure_7);
   ({ dotEffectIds: c2, dismissEffectDot: c3 } = displayNameStylesNewEffects);
   [first, closure_5] = first.useState(selectedEffectId);
@@ -128,12 +128,12 @@ export default function DisplayNameStylesEffectPickerSheet(userId) {
   let tmp9 = null;
   if (null != userId) {
     const obj3 = { ref: bottomSheetRef, header: closure_8(tmp12, obj4), children: closure_8(closure_5, obj6) };
-    const BottomSheet = tmp2(5556).BottomSheet;
-    obj4 = { title: intl.string(onSelectEffect(3125).RVtMxT), trailing: closure_8(Button, obj5) };
-    tmp12 = onSelectEffect(17963);
+    const BottomSheet = tmp2(5560).BottomSheet;
+    obj4 = { title: intl.string(onSelectEffect(3127).RVtMxT), trailing: closure_8(Button, obj5) };
+    tmp12 = onSelectEffect(18004);
     intl = tmp2(1113).intl;
     obj5 = { text: intl2.string(userId(1113).t.XqMe3N), onPress: tmp8, variant: "primary", size: "sm" };
-    Button = tmp2(5926).Button;
+    Button = tmp2(5930).Button;
     intl2 = tmp2(1113).intl;
     obj6 = { style: tmp.container, children: closure_8(closure_5, obj7) };
     obj7 = { style: tmp.contentContainer, children: closure_8(Stack, obj8) };
@@ -159,7 +159,7 @@ export default function DisplayNameStylesEffectPickerSheet(userId) {
           return closure_1_8(EffectTile, obj, effectId);
         })
     };
-    Stack = tmp2(6327).Stack;
+    Stack = tmp2(6335).Stack;
     tmp9 = closure_8(BottomSheet, obj3);
   }
   return tmp9;

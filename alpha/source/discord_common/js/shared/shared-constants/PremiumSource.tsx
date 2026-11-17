@@ -1,9 +1,9 @@
-// Module ID: 9673
-// Function ID: 9674
+// Module ID: 9686
+// Function ID: 9687
 // Name: PremiumSource
 // Dependencies: [2]
 
-// Module 9673 (PremiumSource)
+// Module 9686 (PremiumSource)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/PremiumSource.tsx");

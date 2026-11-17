@@ -1,19 +1,19 @@
-// Module ID: 19023
-// Function ID: 19024
+// Module ID: 19064
+// Function ID: 19065
 // Name: WaterwheelsDiscoverStatus
-// Dependencies: [19, 17, 21, 5306, 575, 5919, 1113, 2569, 5926, 2]
+// Dependencies: [19, 17, 21, 5310, 575, 5923, 1113, 2571, 5930, 2]
 // Exports: WaterwheelsDiscoverRefreshError, default
 
-// Module 19023 (WaterwheelsDiscoverStatus)
+// Module 19064 (WaterwheelsDiscoverStatus)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
-import _modDef2569 from "module_2569" /* 2569 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import components_Button_Button from "components/Button/Button" /* 5926 */;
+import _modDef2571 from "module_2571" /* 2571 */;
+import Text_Text from "Text/Text" /* 5923 */;
+import components_Button_Button from "components/Button/Button" /* 5930 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -60,7 +60,7 @@ export default function WaterwheelsDiscoverStatus(onRetry) {
   }, items);
   if ("loading" === status) {
     const obj2 = { style: tmp.container, accessibilityLiveRegion: "polite", children: hasOwnProperty(Text2, obj3) };
-    obj3 = { variant: "body-md/medium", color: "text-subtle", style: tmp.centered, children: intl3.string(_modDef2569["71GnER"]) };
+    obj3 = { variant: "body-md/medium", color: "text-subtle", style: tmp.centered, children: intl3.string(_modDef2571["71GnER"]) };
     Text2 = Text_Text.Text;
     intl3 = intl5.intl;
     tmp12Result = hasOwnProperty(View, obj2);
@@ -72,7 +72,7 @@ export default function WaterwheelsDiscoverStatus(onRetry) {
     const Heading = Text_Text.Heading;
     const intl4 = intl5.intl;
     string = intl4.string;
-    const tmp19 = _modDef2569;
+    const tmp19 = _modDef2571;
     if ("empty" === status) {
       vtx6nV = tmp19.gv4HTM;
       tmp4 = tmp18;
@@ -83,15 +83,15 @@ export default function WaterwheelsDiscoverStatus(onRetry) {
     items1 = [hasOwnProperty(Heading, obj6), ];
     let tmp14Result = null;
     if ("empty" === status) {
-      const obj = { variant: "body-sm/normal", color: "text-subtle", style: tmp.centered, children: intl.string(tmp4(2569)["9KIqrW"]) };
-      const Text = tmp15(5919).Text;
+      const obj = { variant: "body-sm/normal", color: "text-subtle", style: tmp.centered, children: intl.string(tmp4(2571)["9KIqrW"]) };
+      const Text = tmp15(5923).Text;
       intl = tmp15(1113).intl;
       tmp14Result = tmp14(Text, obj);
     }
     items1[1] = tmp14Result;
     items2 = [metroRequire(View, obj5), ];
-    const obj7 = { size: "sm", variant: "secondary", text: intl2.string(tmp4(2569).DClDU4), onPress: onRetry, disabled: tmp3 };
-    const Button = tmp15(5926).Button;
+    const obj7 = { size: "sm", variant: "secondary", text: intl2.string(tmp4(2571).DClDU4), onPress: onRetry, disabled: tmp3 };
+    const Button = tmp15(5930).Button;
     intl2 = tmp15(1113).intl;
     items2[1] = hasOwnProperty(Button, obj7);
     tmp12Result = tmp12(tmp13, obj4);
@@ -147,11 +147,11 @@ export function WaterwheelsDiscoverRefreshError(retryAfterAt) {
     }
     return () => clearTimeout(closure_1);
   }, items1), callback);
-  const obj2 = { variant: "body-sm/medium", color: "text-subtle", style: tmp.bannerText, children: intl.string(_modDef2569["4O8kV0"]) };
+  const obj2 = { variant: "body-sm/medium", color: "text-subtle", style: tmp.bannerText, children: intl.string(_modDef2571["4O8kV0"]) };
   const Text = Text_Text.Text;
   intl = intl5.intl;
   items2 = [hasOwnProperty(Text, obj2), ];
-  const obj3 = { size: "sm", variant: "secondary", text: intl2.string(_modDef2569.DClDU4), onPress: onRetry, disabled: syncExternalStore };
+  const obj3 = { size: "sm", variant: "secondary", text: intl2.string(_modDef2571.DClDU4), onPress: onRetry, disabled: syncExternalStore };
   const Button = components_Button_Button.Button;
   intl2 = intl5.intl;
   items2[1] = hasOwnProperty(Button, obj3);

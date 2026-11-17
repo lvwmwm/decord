@@ -1,8 +1,8 @@
-// Module ID: 14091
-// Function ID: 14092
+// Module ID: 12915
+// Function ID: 12916
 // Dependencies: [2]
 
-// Module 14091
+// Module 12915
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GuildFallbackAbstractUI-2x.png.js");

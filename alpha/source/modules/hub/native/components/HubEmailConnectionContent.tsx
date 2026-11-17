@@ -1,23 +1,23 @@
-// Module ID: 15092
-// Function ID: 15093
+// Module ID: 14305
+// Function ID: 14306
 // Name: HubEmailConnectionContent
-// Dependencies: [5, 32, 19, 17, 5155, 15080, 1072, 21, 5306, 575, 5320, 1502, 5903, 5542, 15093, 2121, 15094, 6747, 1113, 5919, 15088, 15095, 7617, 1187, 5926, 2]
+// Dependencies: [5, 32, 19, 17, 5159, 14293, 1072, 21, 5310, 575, 5324, 1502, 5907, 5546, 14306, 2121, 14307, 6755, 1113, 5923, 14301, 14308, 7627, 1187, 5930, 2]
 // Exports: default
 
-// Module 15092 (HubEmailConnectionContent)
+// Module 14305 (HubEmailConnectionContent)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl8 from "intl" /* 1113 */;
 import useNavigation from "useNavigation" /* 1502 */;
-import react2 from "react" /* 5320 */;
+import react2 from "react" /* 5324 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import HubConstants from "HubConstants" /* 15080 */;
+import ChannelStore from "ChannelStore" /* 5159 */;
+import HubConstants from "HubConstants" /* 14293 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -31,10 +31,10 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 const native = tmp(1187);
-const Text_Text = tmp(5919);
-const components_Button_Button = tmp(5926);
-const HubEmailConnectionModal = tmp(15088);
-const InkQuillSpotIllustration = tmp(15095);
+const Text_Text = tmp(5923);
+const components_Button_Button = tmp(5930);
+const HubEmailConnectionModal = tmp(14301);
+const InkQuillSpotIllustration = tmp(14308);
 let react = react_mod;
 ({ View: metroRequire, ScrollView: metroImportDefault } = react_native);
 ({ HubEmailConnectionSteps: c9, INVITE_ROUTING_HUB_GUILD_ID: c10 } = HubConstants);
@@ -255,7 +255,7 @@ export default function HubEmailConnectionContent(arg0) {
   const first1 = tmp7[0];
   [obj2, c6] = value(react.useState(null), 2);
   const tmp9 = value(react.useState(null), 2);
-  const insets = invite(5903)().insets;
+  const insets = invite(5907)().insets;
   const ref = react.useRef(null);
   let intl = intl8.intl;
   const stringResult = intl.string(intl8.t.H1jCHH);
@@ -310,7 +310,7 @@ export default function HubEmailConnectionContent(arg0) {
   let obj10 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp3.title, accessibilityRole: "header", children: formatToPlainStringResult };
   items2[1] = closure_12(Text_Text.Text, obj10);
   let obj11 = { style: tmp3.description, children: mapped };
-  const tmp19 = ref;
+  const tmp20 = ref;
   if (obj4.usesLearnMoreHook) {
     mapped = arr.map((item, index) => {
       let tmp = item;
@@ -323,7 +323,7 @@ export default function HubEmailConnectionContent(arg0) {
     });
   } else {
     let obj12 = { style: tmp3.descriptionText, variant: "body-sm/medium", color: "text-default", children: formatResult };
-    mapped = tmp17(Text_Text.Text, obj12);
+    mapped = tmp18(Text_Text.Text, obj12);
   }
   items2[2] = closure_12(c6, obj11);
   const obj13 = {
@@ -357,7 +357,7 @@ export default function HubEmailConnectionContent(arg0) {
       }, 100);
     }
   };
-  const tmp10Result = invite(7617);
+  const tmp10Result = invite(7627);
   intl4 = intl8.intl;
   intl5 = intl8.intl;
   intl6 = intl8.intl;
@@ -366,9 +366,9 @@ export default function HubEmailConnectionContent(arg0) {
   if (obj2 != null) {
     anyErrorMessage = obj2.getAnyErrorMessage();
   }
-  const obj15 = { children: closure_13(tmp19, obj6) };
+  const obj15 = { children: closure_13(tmp20, obj6) };
   items2[3] = closure_12(tmp10Result, obj13);
-  items3 = [tmp18(tmp20, obj8), , ];
+  items3 = [tmp19(tmp21, obj8), , ];
   const obj16 = { style: tmp3.growSpacing };
   items3[1] = closure_12(c6, obj16);
   const obj17 = { style: tmp3.buttonContainer, children: closure_12(Button, obj18) };

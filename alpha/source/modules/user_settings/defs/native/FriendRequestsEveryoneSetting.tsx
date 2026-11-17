@@ -1,17 +1,17 @@
-// Module ID: 17505
-// Function ID: 17506
+// Module ID: 17542
+// Function ID: 17543
 // Name: FriendRequestsEveryoneSetting
-// Dependencies: [19, 9202, 1072, 5131, 7813, 17346, 12406, 1113, 2]
+// Dependencies: [19, 9213, 1072, 5135, 7823, 17383, 12612, 1113, 2]
 
-// Module 17505 (FriendRequestsEveryoneSetting)
+// Module 17542 (FriendRequestsEveryoneSetting)
 import intl2 from "intl" /* 1113 */;
-import UserSettings from "UserSettings" /* 5131 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7813 */;
-import SettingsConstants from "SettingsConstants" /* 9202 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 17346 */;
+import UserSettings from "UserSettings" /* 5135 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7823 */;
+import SettingsConstants from "SettingsConstants" /* 9213 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 17383 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
-import SettingBuilders from "SettingBuilders" /* 12406 */;
+import SettingBuilders from "SettingBuilders" /* 12612 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -26,7 +26,7 @@ let obj = {
   parent: MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   useValue: function useFriendRequestsEveryoneSettingValue() {
     let setting;
-    const FriendSourceFlagsSetting = setting(5131).FriendSourceFlagsSetting;
+    const FriendSourceFlagsSetting = setting(5135).FriendSourceFlagsSetting;
     setting = FriendSourceFlagsSetting.useSetting();
     const items = [setting];
     return react.useMemo(() => {

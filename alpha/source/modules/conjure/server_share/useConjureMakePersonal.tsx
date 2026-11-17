@@ -1,13 +1,13 @@
-// Module ID: 13319
-// Function ID: 13320
+// Module ID: 14551
+// Function ID: 14552
 // Name: useConjureMakePersonal
-// Dependencies: [5, 32, 19, 7017, 7329, 13206, 13316, 1113, 4131, 2]
+// Dependencies: [5, 32, 19, 7025, 7339, 13025, 14548, 1113, 4133, 2]
 // Exports: canMakeConjureProjectPersonal, default
 
-// Module 13319 (useConjureMakePersonal)
-import ConjureProjectStore2 from "ConjureProjectStore" /* 7017 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 7329 */;
-import conjureChangeRows from "conjureChangeRows" /* 13316 */;
+// Module 14551 (useConjureMakePersonal)
+import ConjureProjectStore2 from "ConjureProjectStore" /* 7025 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 7339 */;
+import conjureChangeRows from "conjureChangeRows" /* 14548 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -152,7 +152,7 @@ export default function useConjureMakePersonal(id) {
     }
   }), items2);
   if (null != target) {
-    const tmp6Result = tmp6(13206);
+    const tmp6Result = tmp6(13025);
     result = tmp6Result.conjureRemoveAppKeptChannels(target);
   }
   return obj3;

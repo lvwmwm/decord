@@ -1,13 +1,13 @@
-// Module ID: 18646
-// Function ID: 18647
+// Module ID: 18687
+// Function ID: 18688
 // Name: createChatPanelNativeStackNavigator
-// Dependencies: [19, 21, 1503, 5482, 16492, 9128, 2]
+// Dependencies: [19, 21, 1503, 5486, 16528, 9139, 2]
 // Exports: default
 
-// Module 18646 (createChatPanelNativeStackNavigator)
+// Module 18687 (createChatPanelNativeStackNavigator)
 import Fragment from "Fragment" /* 21 */;
 import Link from "Link" /* 1503 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5482 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5486 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,30 +1,30 @@
-// Module ID: 19034
-// Function ID: 19035
+// Module ID: 19075
+// Function ID: 19076
 // Name: InterestGamePicker
-// Dependencies: [32, 19, 17, 5307, 2141, 19027, 1072, 21, 5306, 575, 5952, 1655, 5538, 5541, 1113, 2569, 19035, 19039, 19038, 1256, 5892, 1630, 7643, 1499, 7994, 504, 19040, 9379, 12135, 19041, 19042, 5315, 7790, 5544, 6005, 9533, 7415, 9051, 5919, 19043, 7825, 19044, 5926, 19045, 2]
+// Dependencies: [32, 19, 17, 5311, 2141, 19068, 1072, 21, 5310, 575, 5956, 1655, 5542, 5545, 1113, 2569, 19076, 19080, 19079, 1256, 5896, 1630, 7653, 1499, 8005, 504, 19081, 9388, 10876, 19082, 19083, 5319, 7800, 5548, 6009, 9545, 7425, 9062, 5923, 19084, 7835, 19085, 5930, 19086, 2]
 // Exports: default
 
-// Module 19034 (InterestGamePicker)
+// Module 19075 (InterestGamePicker)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl11 from "intl" /* 1113 */;
 import _modDef2569 from "module_2569" /* 2569 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5315 */;
-import timing_timing from "timing/timing" /* 5538 */;
-import timingPresets from "timingPresets" /* 5541 */;
-import HapticUtils from "HapticUtils" /* 5544 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
-import GameAutocompleteUtils from "GameAutocompleteUtils" /* 9379 */;
-import useGame2 from "useGame" /* 9533 */;
-import InterestPickerPerformance2 from "InterestPickerPerformance" /* 19038 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5319 */;
+import timing_timing from "timing/timing" /* 5542 */;
+import timingPresets from "timingPresets" /* 5545 */;
+import HapticUtils from "HapticUtils" /* 5548 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 6009 */;
+import GameAutocompleteUtils from "GameAutocompleteUtils" /* 9388 */;
+import useGame2 from "useGame" /* 9545 */;
+import InterestPickerPerformance2 from "InterestPickerPerformance" /* 19079 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import AccessibilityStore from "AccessibilityStore" /* 5311 */;
 import GameStore from "GameStore" /* 2141 */;
-import InterestGamePickerConstants from "InterestGamePickerConstants" /* 19027 */;
+import InterestGamePickerConstants from "InterestGamePickerConstants" /* 19068 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -268,8 +268,8 @@ export default function InterestGamePicker(catalog) {
   let tmp66;
   let tmp67;
   let tmp6Result2;
-  const f118938 = (item, index) => item !== first4[index];
-  const f118955 = (arr, index) => {
+  const f119207 = (item, index) => item !== first4[index];
+  const f119224 = (arr, index) => {
     let items;
     let onPress;
     let radius;
@@ -639,8 +639,8 @@ export default function InterestGamePicker(catalog) {
   let tmp53 = memo6.length > 0;
   const tmp52 = tmpResult[1];
   if (tmp53) {
-    tmp53 = memo6.length !== first4.length || memo6.some(f118938);
-    memo6.length !== first4.length || memo6.some(f118938);
+    tmp53 = memo6.length !== first4.length || memo6.some(f119207);
+    memo6.length !== first4.length || memo6.some(f119207);
   }
   if (tmp53) {
     tmp52(memo6);
@@ -1017,7 +1017,7 @@ export default function InterestGamePicker(catalog) {
     items36 = [callback1(Text2, obj26), ];
     let tmp79Result4 = catalog.length > 0;
     if (tmp79Result4) {
-      const obj27 = { onPress: callback6, size: "sm", text: intl8.string(require("module_2569").uGhymA), variant: "secondary" };
+      const obj27 = { onPress: callback6, size: "sm", text: intl8.string(tmp4(tmp5[14]).t["5911Lb"]), variant: "secondary" };
       const Button = tmp4(tmp5[42]).Button;
       intl8 = tmp4(tmp5[14]).intl;
       tmp79Result4 = tmp79(Button, obj27);
@@ -1029,8 +1029,8 @@ export default function InterestGamePicker(catalog) {
   let tmp79Result5 = !tmp43 && memo3.length > 0;
   if (tmp79Result5) {
     let str2 = "browse";
-    const obj28 = { style: tmp9.grid, children: roundToNearestPixel2Result > 0 && memo5.map(f118955) };
-    roundToNearestPixel2Result > 0 && memo5.map(f118955);
+    const obj28 = { style: tmp9.grid, children: roundToNearestPixel2Result > 0 && memo5.map(f119224) };
+    roundToNearestPixel2Result > 0 && memo5.map(f119224);
     if (tmp35) {
       str2 = "search";
     }

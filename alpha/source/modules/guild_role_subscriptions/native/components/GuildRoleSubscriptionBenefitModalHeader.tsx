@@ -1,22 +1,22 @@
-// Module ID: 20755
-// Function ID: 20756
+// Module ID: 20802
+// Function ID: 20803
 // Name: GuildRoleSubscriptionBenefitModalHeader
-// Dependencies: [32, 19, 17, 21, 5306, 575, 17846, 7415, 8451, 5919, 1113, 7493, 2]
+// Dependencies: [32, 19, 17, 21, 5310, 575, 17887, 7425, 8462, 5923, 1113, 7503, 2]
 // Exports: default
 
-// Module 20755 (GuildRoleSubscriptionBenefitModalHeader)
+// Module 20802 (GuildRoleSubscriptionBenefitModalHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7415 */;
-import NavigatorHeader from "NavigatorHeader" /* 7493 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 8451 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17846 */;
+import Text_Text from "Text/Text" /* 5923 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7425 */;
+import NavigatorHeader from "NavigatorHeader" /* 7503 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 8462 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17887 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;

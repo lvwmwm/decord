@@ -1,64 +1,119 @@
-// Module ID: 9652
-// Function ID: 9653
+// Module ID: 9664
+// Function ID: 9665
 // Name: admin_editor_test_component
-// Dependencies: [32, 1197, 9630, 9640, 9631, 9632, 9638, 2]
+// Dependencies: [32, 1197, 9642, 9652, 9643, 9644, 9650, 2]
 
-// Module 9652 (admin_editor_test_component)
+// Module 9664 (admin_editor_test_component)
 import _mod1197 from "module_1197" /* 1197 */;
-import localized_string from "localized_string" /* 9630 */;
-import help_article from "help_article" /* 9631 */;
-import cta_button from "cta_button" /* 9632 */;
-import gradient from "gradient" /* 9638 */;
-import theme_aware_asset from "theme_aware_asset" /* 9640 */;
+import localized_string from "localized_string" /* 9642 */;
+import help_article from "help_article" /* 9643 */;
+import cta_button from "cta_button" /* 9644 */;
+import gradient from "gradient" /* 9650 */;
+import theme_aware_asset from "theme_aware_asset" /* 9652 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
-let internalBinaryWrite, internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6;
+let internalBinaryWrite, internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7;
 
 let tmp;
+let tmp2;
+function T() {
+  return localized_string.LocalizedString;
+}
 const T2 = function T() {
-  return localized_string.LocalizedString;
-};
-const T3 = function T() {
-  return localized_string.LocalizedString;
-};
-const T4 = function T() {
   return theme_aware_asset.ThemeAwareAsset;
-};
-const T5 = function T() {
-  return help_article.HelpArticle;
-};
-const T6 = function T() {
-  return cta_button.CTAButton;
-};
-const T7 = function T() {
-  return gradient.Gradient;
-};
-const T8 = function T() {
-  const items = ["discord_protos.premium_marketing.v1.AdminEditorTestSelectOption", AdminEditorTestSelectOption, "ADMIN_EDITOR_TEST_SELECT_OPTION_"];
-  return items;
 };
 const AdminEditorTestSelectOption = { UNSPECIFIED: 0, [0]: "UNSPECIFIED", FIRST: 1, [1]: "FIRST", SECOND: 2, [2]: "SECOND" };
 const MessageType = _mod1197.MessageType;
 class AdminEditorTestComponent$Type extends MessageType {
   constructor() {
-    let items = [{ no: 1, name: "deprecated_field", kind: "scalar", T: 9 }, { no: 2, name: "localized_text_field", kind: "message", T: T2 }, { no: 3, name: "plain_text_field", kind: "scalar", T: 9 }, { no: 4, name: "textarea_field", kind: "message", T: T3 }, { no: 5, name: "checkbox_field", kind: "scalar", T: 8 }, { no: 6, name: "asset_field", kind: "scalar", T: 9 }, { no: 7, name: "themed_asset_field", kind: "message", T: T4 }, { no: 8, name: "help_article_field", kind: "message", T: T5 }, { no: 9, name: "cta_field", kind: "message", T: T6 }, { no: 10, name: "gradient_field", kind: "message", T: T7 }, , ];
-    const obj = { no: 11, name: "select_field", kind: "enum", T };
+    let items = [
+      { no: 1, name: "deprecated_field", kind: "scalar", T: 9 },
+      {
+        no: 2,
+        name: "localized_text_field",
+        kind: "message",
+        T() {
+          return localized_string.LocalizedString;
+        }
+      },
+      { no: 3, name: "plain_text_field", kind: "scalar", T: 9 },
+      {
+        no: 4,
+        name: "textarea_field",
+        kind: "message",
+        T() {
+          return localized_string.LocalizedString;
+        }
+      },
+      { no: 5, name: "checkbox_field", kind: "scalar", T: 8 },
+      { no: 6, name: "asset_field", kind: "scalar", T: 9 },
+      {
+        no: 7,
+        name: "themed_asset_field",
+        kind: "message",
+        T() {
+          return theme_aware_asset.ThemeAwareAsset;
+        }
+      },
+      {
+        no: 8,
+        name: "help_article_field",
+        kind: "message",
+        T() {
+          return help_article.HelpArticle;
+        }
+      },
+      {
+        no: 9,
+        name: "cta_field",
+        kind: "message",
+        T() {
+          return cta_button.CTAButton;
+        }
+      },
+      {
+        no: 10,
+        name: "gradient_field",
+        kind: "message",
+        T() {
+          return gradient.Gradient;
+        }
+      },
+      {
+        no: 11,
+        name: "select_field",
+        kind: "enum",
+        T() {
+          const items = ["discord_protos.premium_marketing.v1.AdminEditorTestSelectOption", AdminEditorTestSelectOption, "ADMIN_EDITOR_TEST_SELECT_OPTION_"];
+          return items;
+        }
+      },
+    ,
+
+    ];
+    const obj = { no: 12, name: "multi_select_field", kind: "enum", repeat: 1, T };
     class T {
       constructor() {
-        items = ["discord_protos.premium_marketing.v1.AdminEditorTestSelectOption"];
-        items[1] = closure_1_3;
-        items[2] = "ADMIN_EDITOR_TEST_SELECT_OPTION_";
+        const items = ["discord_protos.premium_marketing.v1.AdminEditorTestSelectOption", AdminEditorTestSelectOption, "ADMIN_EDITOR_TEST_SELECT_OPTION_"];
         return items;
       }
     }
-    items[10] = obj;
-    items[11] = { no: 12, name: "multi_select_field", kind: "enum", repeat: 1, T: T8 };
+    items[11] = obj;
+    items[12] = {
+      no: 13,
+      name: "list_field",
+      kind: "message",
+      repeat: 1,
+      T() {
+        return internalBinaryWrite;
+      }
+    };
     const tmp2 = new tmp("discord_protos.premium_marketing.v1.AdminEditorTestComponent", items, T);
     return tmp2;
   }
   create(partialSettings) {
-    const obj = { deprecatedField: "", plainTextField: "", checkboxField: false, assetField: "", selectField: 0, multiSelectField: [] };
+    const obj = { deprecatedField: "", plainTextField: "", checkboxField: false, assetField: "", selectField: 0, multiSelectField: [], listField: [] };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
@@ -82,6 +137,7 @@ class AdminEditorTestComponent$Type extends MessageType {
   }
   internalBinaryWrite(deprecatedField, tag, writeUnknownFields) {
     let length;
+    let length2;
     if ("" !== deprecatedField.deprecatedField) {
       const tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
       tagResult.string(deprecatedField.deprecatedField);
@@ -163,6 +219,18 @@ class AdminEditorTestComponent$Type extends MessageType {
       }
       const joined6 = tag.join();
     }
+    let num15 = 0;
+    if (0 < deprecatedField.listField.length) {
+      do {
+        internalBinaryWrite7 = internalBinaryWrite.internalBinaryWrite;
+        let tmp40 = deprecatedField.listField[num15];
+        let tagResult12 = tag.tag(13, _mod1197.WireType.LengthDelimited);
+        let internalBinaryWrite7Result = internalBinaryWrite7(tmp40, tagResult12.fork(), writeUnknownFields);
+        let joined7 = internalBinaryWrite7Result.join();
+        num15 = num15 + 1;
+        length2 = deprecatedField.listField.length;
+      } while (num15 < length2);
+    }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
@@ -175,18 +243,116 @@ class AdminEditorTestComponent$Type extends MessageType {
   }
 }
 const prototype = AdminEditorTestComponent$Type.prototype;
-let items = [{ no: 1, name: "deprecated_field", kind: "scalar", T: 9 }, { no: 2, name: "localized_text_field", kind: "message", T: T2 }, { no: 3, name: "plain_text_field", kind: "scalar", T: 9 }, { no: 4, name: "textarea_field", kind: "message", T: T3 }, { no: 5, name: "checkbox_field", kind: "scalar", T: 8 }, { no: 6, name: "asset_field", kind: "scalar", T: 9 }, { no: 7, name: "themed_asset_field", kind: "message", T: T4 }, { no: 8, name: "help_article_field", kind: "message", T: T5 }, { no: 9, name: "cta_field", kind: "message", T: T6 }, { no: 10, name: "gradient_field", kind: "message", T: T7 }, , ];
-let obj2 = { no: 11, name: "select_field", kind: "enum", T };
-class T {
+const adminEditorTestComponentType = new AdminEditorTestComponent$Type();
+const MessageType2 = _mod1197.MessageType;
+class AdminEditorTestListItem$Type extends MessageType2 {
   constructor() {
-    const items = ["discord_protos.premium_marketing.v1.AdminEditorTestSelectOption", AdminEditorTestSelectOption, "ADMIN_EDITOR_TEST_SELECT_OPTION_"];
-    return items;
+    const items = [, , ];
+    const obj = { no: 1, name: "text_localized", kind: "message", T };
+    items[0] = obj;
+    items[1] = { no: 2, name: "asset", kind: "message", T: T2 };
+    items[2] = { no: 3, name: "text", kind: "scalar", T: 9 };
+    const tmp2 = new tmp("discord_protos.premium_marketing.v1.AdminEditorTestListItem", items, new.target);
+    return tmp2;
+  }
+  create(partialSettings) {
+    const obj = { text: "" };
+    const _Object = Object;
+    const obj2 = { enumerable: false, value: this };
+    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    if (undefined !== partialSettings) {
+      const tmpResult = _mod1197;
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
+    }
+    return obj;
+  }
+  internalBinaryRead(pos, arg1, readUnknownField, arg3) {
+    let tmp5;
+    let tmp6;
+    const self = this;
+    let obj = arg3;
+    if (arg3 == null) {
+      obj = self.create();
+    }
+    const sum = pos.pos + arg1;
+    if (pos.pos < sum) {
+      do {
+        let tmp4 = _slicedToArray(pos.tag(), 2);
+        [tmp5, tmp6] = tmp4;
+        if (1 === tmp5) {
+          let LocalizedString = localized_string.LocalizedString;
+          obj.textLocalized = LocalizedString.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.textLocalized);
+        } else if (2 === tmp5) {
+          let ThemeAwareAsset = theme_aware_asset.ThemeAwareAsset;
+          obj.asset = ThemeAwareAsset.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.asset);
+        } else if (3 === tmp5) {
+          obj.text = pos.string();
+        } else {
+          let onRead = readUnknownField.readUnknownField;
+          if ("throw" === onRead) {
+            let tmp15 = globalThis;
+            let _globalThis = globalThis;
+            let _HermesInternal = HermesInternal;
+            let str = ") for ";
+            let str2 = " (wire type ";
+            let str3 = "Unknown field ";
+            let self2 = this;
+            let self3 = this;
+            let error = new Error("Unknown field " + tmp5 + " (wire type " + tmp6 + ") for " + self.typeName);
+            throw error;
+          } else {
+            let skipResult = pos.skip(tmp6);
+            if (false !== onRead) {
+              if (true === onRead) {
+                onRead = _mod1197.UnknownFieldHandler.onRead;
+              }
+              let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
+            }
+          }
+        }
+      } while (pos.pos < sum);
+    }
+    return obj;
+  }
+  internalBinaryWrite(textLocalized, tag, writeUnknownFields) {
+    if (textLocalized.textLocalized) {
+      const LocalizedString = localized_string.LocalizedString;
+      internalBinaryWrite = LocalizedString.internalBinaryWrite;
+      textLocalized = textLocalized.textLocalized;
+      const tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+      const internalBinaryWriteResult = internalBinaryWrite(textLocalized, tagResult.fork(), writeUnknownFields);
+      const joined = internalBinaryWriteResult.join();
+    }
+    if (textLocalized.asset) {
+      const ThemeAwareAsset = theme_aware_asset.ThemeAwareAsset;
+      internalBinaryWrite2 = ThemeAwareAsset.internalBinaryWrite;
+      const asset = textLocalized.asset;
+      const tagResult1 = tag.tag(2, _mod1197.WireType.LengthDelimited);
+      const internalBinaryWrite2Result = internalBinaryWrite2(asset, tagResult1.fork(), writeUnknownFields);
+      const joined1 = internalBinaryWrite2Result.join();
+    }
+    if ("" !== textLocalized.text) {
+      const tagResult2 = tag.tag(3, _mod1197.WireType.LengthDelimited);
+      tagResult2.string(textLocalized.text);
+    }
+    let onWrite = writeUnknownFields.writeUnknownFields;
+    if (false !== onWrite) {
+      if (1 == onWrite) {
+        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+      }
+      const self = this;
+      onWrite(this.typeName, textLocalized, tag);
+    }
+    return tag;
   }
 }
-items[10] = obj2;
-items[11] = { no: 12, name: "multi_select_field", kind: "enum", repeat: 1, T: T8 };
-const prototype1 = new prototype("discord_protos.premium_marketing.v1.AdminEditorTestComponent", items, tmp, T, AdminEditorTestComponent$Type, prototype, items, require, dependencyMap);
+const prototype2 = AdminEditorTestListItem$Type.prototype;
+let obj2 = { no: 1, name: "text_localized", kind: "message", T };
+let items = [obj2, { no: 2, name: "asset", kind: "message", T: T2 }, { no: 3, name: "text", kind: "scalar", T: 9 }];
+const tmp5 = new "internalBinaryRead"("discord_protos.premium_marketing.v1.AdminEditorTestListItem", items, tmp2, "create", AdminEditorTestListItem$Type, "internalBinaryRead", items, this, tmp, require, dependencyMap);
+const React3 = tmp5;
 let result = size.fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/premium_marketing/v1/admin_editor_test_component.tsx");
 
 export { AdminEditorTestSelectOption };
-export const AdminEditorTestComponent = prototype1;
+export const AdminEditorTestComponent = adminEditorTestComponentType;
+export const AdminEditorTestListItem = tmp5;

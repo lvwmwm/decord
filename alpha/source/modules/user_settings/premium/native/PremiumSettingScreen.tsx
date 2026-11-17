@@ -1,15 +1,15 @@
-// Module ID: 17513
-// Function ID: 17514
+// Module ID: 17550
+// Function ID: 17551
 // Name: PremiumSettingScreen
-// Dependencies: [19, 21, 7812, 1502, 7809, 9581, 2]
+// Dependencies: [19, 21, 7822, 1502, 7819, 9593, 2]
 // Exports: default
 
-// Module 17513 (PremiumSettingScreen)
+// Module 17550 (PremiumSettingScreen)
 import Fragment from "Fragment" /* 21 */;
 import useNavigation from "useNavigation" /* 1502 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7809 */;
-import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7812 */;
-import UserSettingsPremiumDefault from "UserSettingsPremium" /* 9581 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7819 */;
+import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7822 */;
+import UserSettingsPremiumDefault from "UserSettingsPremium" /* 9593 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,16 +1,16 @@
-// Module ID: 10348
-// Function ID: 10349
+// Module ID: 10458
+// Function ID: 10459
 // Name: GameProfileSummary
-// Dependencies: [19, 17, 21, 5306, 10349, 10350, 10286, 1113, 5919, 10378, 2]
+// Dependencies: [19, 17, 21, 5310, 10459, 10460, 10394, 1113, 5923, 10488, 2]
 // Exports: default
 
-// Module 10348 (GameProfileSummary)
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 10286 */;
-import DEFAULT_MAX_HTML_LENGTH from "DEFAULT_MAX_HTML_LENGTH" /* 10350 */;
+// Module 10458 (GameProfileSummary)
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 10394 */;
+import DEFAULT_MAX_HTML_LENGTH from "DEFAULT_MAX_HTML_LENGTH" /* 10460 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let c3;

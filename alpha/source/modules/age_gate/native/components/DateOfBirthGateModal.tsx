@@ -1,20 +1,20 @@
-// Module ID: 20171
-// Function ID: 20172
+// Module ID: 20219
+// Function ID: 20220
 // Name: DateOfBirthGateModal
-// Dependencies: [19, 1097, 20168, 21, 1380, 6005, 1113, 6833, 8742, 20169, 1264, 7493, 20172, 20174, 18693, 15939, 7490, 2]
+// Dependencies: [19, 1097, 20216, 21, 1380, 6009, 1113, 6828, 8753, 20217, 1264, 7503, 20220, 20222, 18734, 15977, 7500, 2]
 // Exports: default
 
-// Module 20171 (DateOfBirthGateModal)
+// Module 20219 (DateOfBirthGateModal)
 import Fragment from "Fragment" /* 21 */;
 import AgeGateConstants from "AgeGateConstants" /* 1097 */;
-import ExistingUserAgeGateConstants from "ExistingUserAgeGateConstants" /* 20168 */;
-import ageGateNavigationCallbacks from "ageGateNavigationCallbacks" /* 20169 */;
+import ExistingUserAgeGateConstants from "ExistingUserAgeGateConstants" /* 20216 */;
+import ageGateNavigationCallbacks from "ageGateNavigationCallbacks" /* 20217 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const discord_common_AnalyticsUtils = tmp(1264);
-const NavigatorHeader = tmp(7493);
+const NavigatorHeader = tmp(7503);
 const AgeGateSource = AgeGateConstants.AgeGateSource;
 let AgeGate = ExistingUserAgeGateConstants.ExistingUserAgeGateScreens;
 const jsx = Fragment.jsx;
@@ -23,7 +23,7 @@ let result = size.fileFinishedImporting("modules/age_gate/native/components/Date
 export default function DateOfBirthGateModal(source) {
   source = source.source;
   const items = [source];
-  const Navigator = source(7490).Navigator;
+  const Navigator = source(7500).Navigator;
   let intl = source(1113).intl;
   return <Navigator screens={react.useMemo(() => {
     let tmpResult;

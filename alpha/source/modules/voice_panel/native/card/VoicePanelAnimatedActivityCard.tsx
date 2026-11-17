@@ -1,28 +1,28 @@
-// Module ID: 20024
-// Function ID: 20025
+// Module ID: 20070
+// Function ID: 20071
 // Name: VoicePanelAnimatedActivityCard
-// Dependencies: [32, 19, 5154, 12719, 5155, 11985, 11983, 1072, 2145, 12706, 21, 5306, 575, 11984, 13129, 504, 20025, 12736, 7259, 12842, 7918, 7937, 11297, 5968, 1655, 1708, 7025, 5588, 2146, 1496, 11008, 20026, 12848, 20027, 20028, 20032, 5367, 2]
+// Dependencies: [32, 19, 5158, 11325, 5159, 12428, 12426, 1072, 2145, 11452, 21, 5310, 575, 12427, 13398, 504, 20071, 11343, 7269, 11453, 7928, 7947, 11414, 5972, 1655, 1708, 7033, 5592, 2146, 1496, 11319, 20072, 11461, 20073, 20074, 20078, 5371, 2]
 
-// Module 20024 (VoicePanelAnimatedActivityCard)
+// Module 20070 (VoicePanelAnimatedActivityCard)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import useWindowDimensions from "useWindowDimensions" /* 1496 */;
 import _mod1708 from "module_1708" /* 1708 */;
 import Constants2 from "Constants" /* 2145 */;
 import EmbeddedActivityOrientationLockState from "EmbeddedActivityOrientationLockState" /* 2146 */;
-import native from "native" /* 5367 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5588 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11983 */;
-import Constants3 from "Constants" /* 12706 */;
-import fetchShelf from "fetchShelf" /* 12736 */;
+import native from "native" /* 5371 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5592 */;
+import fetchShelf from "fetchShelf" /* 11343 */;
+import Constants3 from "Constants" /* 11452 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 12426 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 12719 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11985 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5158 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11325 */;
+import ChannelStore from "ChannelStore" /* 5159 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 12428 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

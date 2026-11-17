@@ -1,19 +1,19 @@
-// Module ID: 20880
-// Function ID: 20881
+// Module ID: 20927
+// Function ID: 20928
 // Name: pendingRequestTimestamp
-// Dependencies: [1113, 2997, 9619, 2]
+// Dependencies: [1113, 2999, 9631, 2]
 // Exports: formatPendingRequestSentText
 
-// Module 20880 (pendingRequestTimestamp)
+// Module 20927 (pendingRequestTimestamp)
 import intl3 from "intl" /* 1113 */;
-import _modDef2997 from "module_2997" /* 2997 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 9619 */;
+import _modDef2999 from "module_2999" /* 2999 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 9631 */;
 import size from "module_2" /* 2 */;
 
 function SENT_TIMESTAMP_FORMATTER() {
   let intl;
   let intl2;
-  const time = { seconds: intl.string(_modDef2997.M4NOO3), minutes: _modDef2997["9nem85"], hours: _modDef2997.sJjWRY, yesterday: intl2.string(_modDef2997["7SxW32"]), days: _modDef2997.tVHevX, date: _modDef2997.q6jzya };
+  const time = { seconds: intl.string(_modDef2999.M4NOO3), minutes: _modDef2999["9nem85"], hours: _modDef2999.sJjWRY, yesterday: intl2.string(_modDef2999["7SxW32"]), days: _modDef2999.tVHevX, date: _modDef2999.q6jzya };
   intl = intl3.intl;
   intl2 = intl3.intl;
   return time;

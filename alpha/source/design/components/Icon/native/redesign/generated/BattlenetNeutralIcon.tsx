@@ -1,14 +1,14 @@
-// Module ID: 10300
-// Function ID: 10301
+// Module ID: 10410
+// Function ID: 10411
 // Name: BattlenetNeutralIcon
-// Dependencies: [19, 21, 575, 6009, 10301, 2]
+// Dependencies: [19, 21, 575, 6013, 10411, 2]
 // Exports: BattlenetNeutralIcon
 
-// Module 10300 (BattlenetNeutralIcon)
+// Module 10410 (BattlenetNeutralIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6009 */;
-import AssetRegistry from "AssetRegistry" /* 10301 */;
+import BaseIconImage2 from "BaseIconImage" /* 6013 */;
+import AssetRegistry from "AssetRegistry" /* 10411 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

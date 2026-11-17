@@ -1,18 +1,18 @@
-// Module ID: 17135
-// Function ID: 17136
+// Module ID: 17171
+// Function ID: 17172
 // Name: UserProfilePrimaryGuildEditButton
-// Dependencies: [19, 5177, 8410, 21, 5306, 575, 504, 17136, 10674, 8409, 9398, 1113, 1380, 5919, 17099, 5542, 17137, 2121, 7720, 10654, 2]
+// Dependencies: [19, 5181, 8421, 21, 5310, 575, 504, 17172, 15113, 8420, 9407, 1113, 1380, 5923, 17135, 5546, 17173, 2121, 7730, 10363, 2]
 // Exports: default
 
-// Module 17135 (UserProfilePrimaryGuildEditButton)
+// Module 17171 (UserProfilePrimaryGuildEditButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import GuildTagConstants from "GuildTagConstants" /* 8410 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
+import GuildTagConstants from "GuildTagConstants" /* 8421 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import createStyles from "createStyles" /* 5306 */;
+import GuildStore from "GuildStore" /* 5181 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -142,7 +142,7 @@ export default function UserProfilePrimaryGuildEditButton(arg0) {
     return <UserProfileEditFormButton label={intl2.string(pendingPrimaryGuildId(handleSelectPrimaryGuild[11]).t["DUD+5n"])} buttonText={name} accessibilityValue={obj5} onPress={function handleOpenSelectPrimaryGuild() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { availableGuilds: userAvailableGuildsWithTags, selectedGuildId: pendingPrimaryGuildId, onSelectGuild: handleSelectPrimaryGuild };
-      obj.openLazy(asyncRequire(17137, dependencyMap.paths), "UserPrimaryGuildListBottomSheet", obj2);
+      obj.openLazy(asyncRequire(17173, dependencyMap.paths), "UserPrimaryGuildListBottomSheet", obj2);
     }} leading={tmp23Result} trailing={tmp23Result2} disabled={disabled} />;
   }
   return null;

@@ -1,24 +1,24 @@
-// Module ID: 18749
-// Function ID: 18750
+// Module ID: 18790
+// Function ID: 18791
 // Name: MessagesHeader
-// Dependencies: [19, 17, 1072, 21, 575, 13523, 6051, 5932, 5306, 1655, 5929, 5930, 18744, 5483, 14740, 7494, 7988, 10941, 1113, 5919, 7827, 18750, 5926, 6014, 2]
+// Dependencies: [19, 17, 1072, 21, 575, 13680, 6057, 5936, 5310, 1655, 5933, 5934, 18785, 5487, 13818, 7504, 7999, 10883, 1113, 5923, 7837, 18791, 5930, 6018, 2]
 // Exports: getMessagesHeaderHeight
 
-// Module 18749 (MessagesHeader)
+// Module 18790 (MessagesHeader)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import _modDef1655 from "module_1655" /* 1655 */;
-import ButtonConstants from "ButtonConstants" /* 5932 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6014 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 6051 */;
-import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 7494 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 7827 */;
-import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 13523 */;
-import MessageRequestsButtonDefault from "MessageRequestsButton" /* 18750 */;
+import ButtonConstants from "ButtonConstants" /* 5936 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6018 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 6057 */;
+import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 7504 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 7837 */;
+import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 13680 */;
+import MessageRequestsButtonDefault from "MessageRequestsButton" /* 18791 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -77,9 +77,9 @@ const memoResult = react.memo(function MessagesHeader(height) {
   const items1 = [closure_11, , , ];
   const useAnimatedStyle = height(1655).useAnimatedStyle;
   height(1655);
-  items1[1] = height(5929).withSpring;
+  items1[1] = height(5933).withSpring;
   items1[2] = scrollPosition;
-  items1[3] = height(5930).Reanimated3DefaultSpringConfig;
+  items1[3] = height(5934).Reanimated3DefaultSpringConfig;
   let c0;
   let c1;
   let c2;
@@ -100,7 +100,7 @@ const memoResult = react.memo(function MessagesHeader(height) {
   MessagesHeaderTsx1.__workletHash = 7032090280260;
   MessagesHeaderTsx1.__initData = tmp6;
   const animatedStyle = useAnimatedStyle(MessagesHeaderTsx1);
-  const tmp3Result = height(18744);
+  const tmp3Result = height(18785);
   const isHomeDrawerEnabled = tmp3Result.useIsHomeDrawerEnabled();
   const callback = obj.useCallback(() => {
     const obj = height(dependencyMap[13]);
@@ -140,14 +140,14 @@ const memoResult = react.memo(function MessagesHeader(height) {
   }, []);
   let obj2 = { variant: "primary", icon: closure_6(PlusLargeIcon, obj3), size: "sm", accessibilityLabel: intl.string(tmp3(1113).t.jD1qzM), onPress: callback3 };
   const tmp17 = HeaderDebugOverlayDefault("bespoke");
-  const IconButton = tmp3(7988).IconButton;
+  const IconButton = tmp3(7999).IconButton;
   obj3 = { size: "sm", color: nativeDefault.colors.WHITE };
-  PlusLargeIcon = tmp3(10941).PlusLargeIcon;
+  PlusLargeIcon = tmp3(10883).PlusLargeIcon;
   intl = tmp3(1113).intl;
   const obj4 = { style: memo, children: items3 };
   const obj5 = { style: tmp.headerPanelTitle, children: closure_6(Text, { color: "mobile-text-heading-primary", variant: "heading-lg/semibold", maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: stringResult }) };
   const tmp19 = closure_6(IconButton, obj2);
-  Text = tmp3(5919).Text;
+  Text = tmp3(5923).Text;
   const intl2 = tmp3(1113).intl;
   const string = intl2.string;
   const t = tmp3(1113).t;
@@ -159,11 +159,11 @@ const memoResult = react.memo(function MessagesHeader(height) {
   items3 = [closure_6(closure_4, obj5), , , ];
   const obj6 = { style: tmp.headerPanelButtons, children: items4 };
   const obj7 = { onPress: callback2, variant: "secondary", size: "sm", icon: AssetRegistryDefault2, accessibilityLabel: intl3.string(height(1113).t["5h0QOP"]) };
-  const IconButton2 = tmp3(7988).IconButton;
+  const IconButton2 = tmp3(7999).IconButton;
   intl3 = tmp3(1113).intl;
   items4 = [closure_6(IconButton2, obj7), closure_6(MessageRequestsButtonDefault, { noMargin: true, onPress: callback, alternateVariant: true }), , ];
   const obj8 = { variant: "secondary", grow: true, shrink: true, size: "sm", icon: AssetRegistryDefault, onPress: callback1, maxFontSizeMultiplier: 1, text: intl4.string(height(1113).t.zIJnA6) };
-  const Button = tmp3(5926).Button;
+  const Button = tmp3(5930).Button;
   intl4 = tmp3(1113).intl;
   items4[2] = closure_6(Button, obj8);
   items4[3] = tmp19;

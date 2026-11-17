@@ -1,11 +1,11 @@
-// Module ID: 19980
-// Function ID: 19981
+// Module ID: 20026
+// Function ID: 20027
 // Name: useControlsLock
-// Dependencies: [19, 11984, 2]
+// Dependencies: [19, 12427, 2]
 // Exports: default
 
-// Module 19980 (useControlsLock)
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11984 */;
+// Module 20026 (useControlsLock)
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 12427 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,20 +1,20 @@
-// Module ID: 13252
-// Function ID: 13253
+// Module ID: 14481
+// Function ID: 14482
 // Name: ConjureLinkedAppHeader
-// Dependencies: [19, 17, 21, 5306, 575, 10543, 8101, 5919, 13251, 13253, 2]
+// Dependencies: [19, 17, 21, 5310, 575, 14482, 8112, 5923, 14480, 14483, 2]
 // Exports: default
 
-// Module 13252 (ConjureLinkedAppHeader)
+// Module 14481 (ConjureLinkedAppHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import AppsIcon2 from "AppsIcon" /* 8101 */;
-import ConjureProjectIconDefault from "ConjureProjectIcon" /* 10543 */;
-import conjureLinkedAppData from "conjureLinkedAppData" /* 13251 */;
-import ConjureLinkedAppConnectorDefault from "ConjureLinkedAppConnector" /* 13253 */;
+import Text_Text from "Text/Text" /* 5923 */;
+import AppsIcon2 from "AppsIcon" /* 8112 */;
+import conjureLinkedAppData from "conjureLinkedAppData" /* 14480 */;
+import ConjureProjectIconDefault from "ConjureProjectIcon" /* 14482 */;
+import ConjureLinkedAppConnectorDefault from "ConjureLinkedAppConnector" /* 14483 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;

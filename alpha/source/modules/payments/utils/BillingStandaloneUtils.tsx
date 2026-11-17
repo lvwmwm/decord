@@ -1,10 +1,10 @@
-// Module ID: 9717
-// Function ID: 9718
+// Module ID: 9730
+// Function ID: 9731
 // Name: BillingStandaloneUtils
 // Dependencies: [1072, 1381, 1269, 1285, 2]
 // Exports: goToBillingStandalonePageWithHandoff, goToStandalonePremiumCheckoutWeb
 
-// Module 9717 (BillingStandaloneUtils)
+// Module 9730 (BillingStandaloneUtils)
 import v1 from "v1" /* 1269 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
 import URLUtilsDefault from "URLUtils" /* 1381 */;

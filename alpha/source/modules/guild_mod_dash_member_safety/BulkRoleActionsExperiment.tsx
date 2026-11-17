@@ -1,9 +1,9 @@
-// Module ID: 7283
-// Function ID: 7284
+// Module ID: 7293
+// Function ID: 7294
 // Name: BulkRoleActionsExperiment
 // Dependencies: [1452, 2]
 
-// Module 7283 (BulkRoleActionsExperiment)
+// Module 7293 (BulkRoleActionsExperiment)
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 

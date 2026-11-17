@@ -1,21 +1,21 @@
-// Module ID: 10293
-// Function ID: 10294
+// Module ID: 10403
+// Function ID: 10404
 // Name: getGameProfileStoreWebsiteData
-// Dependencies: [19, 21, 10289, 10294, 10286, 1113, 10296, 10298, 10300, 10302, 10304, 10308, 2]
+// Dependencies: [19, 21, 10399, 10404, 10394, 1113, 10406, 10408, 10410, 10412, 10414, 10418, 2]
 // Exports: default
 
-// Module 10293 (getGameProfileStoreWebsiteData)
+// Module 10403 (getGameProfileStoreWebsiteData)
 import Fragment from "Fragment" /* 21 */;
 import intl8 from "intl" /* 1113 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 10286 */;
-import ThirdPartyGameApplicationWebsiteCategory from "ThirdPartyGameApplicationWebsiteCategory" /* 10289 */;
-import SteamNeutralIcon from "SteamNeutralIcon" /* 10294 */;
-import EpicGamesNeutralIcon from "EpicGamesNeutralIcon" /* 10296 */;
-import RobloxNeutralIcon from "RobloxNeutralIcon" /* 10298 */;
-import BattlenetNeutralIcon from "BattlenetNeutralIcon" /* 10300 */;
-import RiotGamesNeutralIcon from "RiotGamesNeutralIcon" /* 10302 */;
-import MinecraftNeutralIcon from "MinecraftNeutralIcon" /* 10304 */;
-import XboxNeutralIcon from "XboxNeutralIcon" /* 10308 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 10394 */;
+import ThirdPartyGameApplicationWebsiteCategory from "ThirdPartyGameApplicationWebsiteCategory" /* 10399 */;
+import SteamNeutralIcon from "SteamNeutralIcon" /* 10404 */;
+import EpicGamesNeutralIcon from "EpicGamesNeutralIcon" /* 10406 */;
+import RobloxNeutralIcon from "RobloxNeutralIcon" /* 10408 */;
+import BattlenetNeutralIcon from "BattlenetNeutralIcon" /* 10410 */;
+import RiotGamesNeutralIcon from "RiotGamesNeutralIcon" /* 10412 */;
+import MinecraftNeutralIcon from "MinecraftNeutralIcon" /* 10414 */;
+import XboxNeutralIcon from "XboxNeutralIcon" /* 10418 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

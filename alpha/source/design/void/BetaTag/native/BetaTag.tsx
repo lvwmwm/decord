@@ -1,20 +1,20 @@
-// Module ID: 15667
-// Function ID: 15668
+// Module ID: 15701
+// Function ID: 15702
 // Name: BetaTag
-// Dependencies: [19, 17, 9435, 21, 5306, 575, 5883, 1092, 5919, 1113, 2]
+// Dependencies: [19, 17, 9445, 21, 5310, 575, 5887, 1092, 5923, 1113, 2]
 // Exports: default
 
-// Module 15667 (BetaTag)
+// Module 15701 (BetaTag)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
 import intl3 from "intl" /* 1113 */;
-import LinearGradientDefault from "LinearGradient" /* 5883 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import ColorConstants from "ColorConstants" /* 9435 */;
+import LinearGradientDefault from "LinearGradient" /* 5887 */;
+import Text_Text from "Text/Text" /* 5923 */;
+import ColorConstants from "ColorConstants" /* 9445 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size_mod from "module_2" /* 2 */;
 
 let obj2;

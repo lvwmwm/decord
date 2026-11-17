@@ -1,21 +1,21 @@
-// Module ID: 14878
-// Function ID: 14879
+// Module ID: 13959
+// Function ID: 13960
 // Name: ChatInputGuard
-// Dependencies: [19, 17, 11865, 21, 5306, 575, 669, 9061, 14668, 14667, 10271, 1380, 14673, 7443, 7988, 10920, 10913, 5919, 5926, 6941, 7997, 2]
+// Dependencies: [19, 17, 11060, 21, 5310, 575, 669, 9072, 13746, 13745, 10279, 1380, 13751, 7453, 7999, 13360, 11221, 5923, 5930, 6949, 8008, 2]
 // Exports: ChatInputGuardContainer, default
 
-// Module 14878 (ChatInputGuard)
+// Module 13959 (ChatInputGuard)
 import nativeDefault from "native" /* 575 */;
 import Radius from "Radius" /* 669 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import components_Button_Button from "components/Button/Button" /* 5926 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9061 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 11865 */;
-import getChatInputPositionStyleDefault from "getChatInputPositionStyle" /* 14667 */;
+import Text_Text from "Text/Text" /* 5923 */;
+import components_Button_Button from "components/Button/Button" /* 5930 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9072 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 11060 */;
+import getChatInputPositionStyleDefault from "getChatInputPositionStyle" /* 13745 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -85,10 +85,10 @@ export default function ChatInputGuard(type) {
     if (null != actionLabel) {
       if (null != actionOnPress) {
         const obj4 = { accessibilityLabel: actionLabel, icon: actionIcon, size: "sm", onPress: actionOnPress };
-        const IconButton = tmp9(7988).IconButton;
+        const IconButton = tmp9(7999).IconButton;
         if (actionIcon == null) {
           const obj5 = { color: nativeDefault.colors.WHITE };
-          const ArrowSmallRightIcon = tmp9(10920).ArrowSmallRightIcon;
+          const ArrowSmallRightIcon = tmp9(13360).ArrowSmallRightIcon;
           actionIcon = tmp7(ArrowSmallRightIcon, obj5);
         }
         tmp7Result = tmp7(IconButton, obj4);
@@ -105,7 +105,7 @@ export default function ChatInputGuard(type) {
       const obj7 = { style: items, deadline: countdown };
       items = [, ];
       ({ text: arr3[0], spacing: arr3[1] } = tmp3);
-      tmp7Result = tmp7(tmp(10913), obj7);
+      tmp7Result = tmp7(tmp(11221), obj7);
     }
   } else {
     ({ subtext: subtext2, buttonSecondaryText, buttonSecondaryOnPress, countdown: countdown2 } = type);
@@ -123,19 +123,19 @@ export default function ChatInputGuard(type) {
         tmp13Result = null;
         if (subtext2.length > 0) {
           const obj = { style: tmp3.subtext, variant: "body-xs/medium", color: "text-muted", children: subtext2 };
-          tmp13Result = tmp13(tmp14(5919).Text, obj);
+          tmp13Result = tmp13(tmp14(5923).Text, obj);
         }
       }
     }
     items1[1] = tmp13Result;
     let tmp16Result = tmp15;
-    const ButtonGroup = tmp14(6941).ButtonGroup;
+    const ButtonGroup = tmp14(6949).ButtonGroup;
     if (null != buttonSecondaryText) {
       tmp16Result = tmp15;
       if (null != buttonSecondaryOnPress) {
         const obj11 = { children: items2 };
         items2 = [tmp15, ];
-        const TwinButtons = tmp14(7997).TwinButtons;
+        const TwinButtons = tmp14(8008).TwinButtons;
         const obj12 = { disabled: buttonSecondaryDisabled, loading: buttonSecondaryLoading, text: buttonSecondaryText, onPress: buttonSecondaryOnPress, variant: "secondary", size: "sm" };
         items2[1] = metroImportDefault(components_Button_Button.Button, obj12);
         tmp16Result = tmp16(TwinButtons, obj11);
@@ -148,7 +148,7 @@ export default function ChatInputGuard(type) {
       const obj14 = { style: items3, deadline: countdown2 };
       items3 = [, ];
       ({ text: arr2[0], spacing: arr2[1] } = tmp3);
-      tmp13Result2 = tmp13(tmp(10913), obj14);
+      tmp13Result2 = tmp13(tmp(11221), obj14);
     }
     items1[3] = tmp13Result2;
     return metroImportAll(tmp17, obj9);
@@ -166,7 +166,7 @@ export function ChatInputGuardContainer(screenIndex) {
   const channelId = screenIndex.channelId;
   ({ onJumpToPresent, children } = screenIndex);
   const tmp3 = useIsUsingClientThemeDefault();
-  const obj = screenIndex(14668);
+  const obj = screenIndex(13746);
   const chatInputFloatingOverlayStyle = obj.useChatInputFloatingOverlayStyle();
   const tmp6 = closure_9(tmp3);
   const items = [screenIndex];
@@ -175,7 +175,7 @@ export function ChatInputGuardContainer(screenIndex) {
     closure_6(screenIndex, nativeEvent.nativeEvent.layout.height);
   }, items);
   items1 = [getChatInputPositionStyleDefault({ isCreatingThread: false }), chatInputFloatingOverlayStyle];
-  items2 = [closure_7(screenIndex(14668).ChatInputScrimGradient, {}), ];
+  items2 = [closure_7(screenIndex(13746).ChatInputScrimGradient, {}), ];
   let tmp10Result = null;
   const obj3 = { style: tmp6.container, children: items3 };
   const tmp4 = screenIndex;
@@ -187,7 +187,7 @@ export function ChatInputGuardContainer(screenIndex) {
   let tmp10Result3 = null;
   const obj5 = { style: tmp6.content, children: items4 };
   if (tmp3) {
-    tmp10Result3 = tmp10(tmp(10271), { absolute: true, wide: true, tall: true, mix: true });
+    tmp10Result3 = tmp10(tmp(10279), { absolute: true, wide: true, tall: true, mix: true });
   }
   items4 = [tmp10Result3, children];
   items3[1] = closure_8(closure_5, obj5);
@@ -197,7 +197,7 @@ export function ChatInputGuardContainer(screenIndex) {
     tmp10Result4 = null;
     if (null != channelId) {
       const obj6 = { channelId, screenIndex, onJumpToPresent };
-      tmp10Result4 = tmp10(tmp(14673), obj6);
+      tmp10Result4 = tmp10(tmp(13751), obj6);
     }
   }
   items3[2] = tmp10Result4;

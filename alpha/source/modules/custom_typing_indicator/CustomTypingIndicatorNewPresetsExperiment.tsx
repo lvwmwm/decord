@@ -1,10 +1,10 @@
-// Module ID: 17980
-// Function ID: 17981
+// Module ID: 18021
+// Function ID: 18022
 // Name: CustomTypingIndicatorNewPresetsExperiment
 // Dependencies: [1452, 2]
 // Exports: useCustomTypingIndicatorNewPresetsConfig
 
-// Module 17980 (CustomTypingIndicatorNewPresetsExperiment)
+// Module 18021 (CustomTypingIndicatorNewPresetsExperiment)
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 

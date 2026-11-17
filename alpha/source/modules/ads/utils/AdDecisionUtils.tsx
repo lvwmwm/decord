@@ -1,12 +1,12 @@
-// Module ID: 8806
-// Function ID: 8807
+// Module ID: 8817
+// Function ID: 8818
 // Name: AdDecisionUtils
-// Dependencies: [1089, 6961, 2]
+// Dependencies: [1089, 6969, 2]
 // Exports: getDeliveredAdCreativeId, getDeliveredBounty, getDeliveredPlayable, getDeliveredQuestId, isAdDecisionValid, questAdDecisionFromAdDecision, resolveResponseTtl
 
-// Module 8806 (AdDecisionUtils)
+// Module 8817 (AdDecisionUtils)
 import DurationsDefault from "Durations" /* 1089 */;
-import AdCreativeType from "AdCreativeType" /* 6961 */;
+import AdCreativeType from "AdCreativeType" /* 6969 */;
 import size from "module_2" /* 2 */;
 
 const result = 6 * DurationsDefault.Millis.HOUR;
@@ -52,24 +52,24 @@ export function getDeliveredBounty(creative) {
   }
   return bounty;
 }
-export function getDeliveredPlayable(creative) {
+export function getDeliveredPlayable(creative2) {
   let type;
-  if (creative != null) {
-    type = creative.type;
+  if (creative2 != null) {
+    type = creative2.type;
   }
   let playable = null;
   if (type === AdCreativeType.AdCreativeType.PLAYABLE) {
-    playable = creative.playable;
+    playable = creative2.playable;
   }
   return playable;
 }
-export function isAdDecisionValid(stateFromStores) {
+export function isAdDecisionValid(fetchedAt) {
   let timestamp = arg1;
   if (arg1 === undefined) {
     const _Date = Date;
     timestamp = Date.now();
   }
-  return null != stateFromStores && stateFromStores.fetchedAt + stateFromStores.ttlMillis >= timestamp;
+  return null != fetchedAt && fetchedAt.fetchedAt + fetchedAt.ttlMillis >= timestamp;
 }
 export function resolveResponseTtl(responseTtlSeconds) {
   if (null == responseTtlSeconds) {

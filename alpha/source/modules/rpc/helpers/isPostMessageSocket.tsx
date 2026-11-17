@@ -1,11 +1,11 @@
-// Module ID: 7297
-// Function ID: 7298
+// Module ID: 7307
+// Function ID: 7308
 // Name: isPostMessageSocket
-// Dependencies: [6751, 2]
+// Dependencies: [6759, 2]
 // Exports: default
 
-// Module 7297 (isPostMessageSocket)
-import Constants from "Constants" /* 6751 */;
+// Module 7307 (isPostMessageSocket)
+import Constants from "Constants" /* 6759 */;
 import size from "module_2" /* 2 */;
 
 const TransportTypes = Constants.TransportTypes;

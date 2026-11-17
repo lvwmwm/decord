@@ -1,12 +1,12 @@
-// Module ID: 19563
-// Function ID: 19564
+// Module ID: 19608
+// Function ID: 19609
 // Name: SearchTabsTransitionGroup
-// Dependencies: [19, 21, 5131, 13262, 1655, 5367, 5929, 5930, 1708, 14850, 2]
+// Dependencies: [19, 21, 5135, 14155, 1655, 5371, 5933, 5934, 1708, 13931, 2]
 // Exports: default
 
-// Module 19563 (SearchTabsTransitionGroup)
+// Module 19608 (SearchTabsTransitionGroup)
 import Fragment from "Fragment" /* 21 */;
-import native from "native" /* 5367 */;
+import native from "native" /* 5371 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -43,19 +43,19 @@ function AnimatedTabs(cleanUp) {
   let tmp3 = transitionState(1655);
   const useSharedValue = tmp3.useSharedValue;
   let num = 0;
-  if (transitionState === transitionState(5367).TransitionStates.MOUNTED) {
+  if (transitionState === transitionState(5371).TransitionStates.MOUNTED) {
     num = 1;
   }
   sharedValue = useSharedValue(num);
   let items = [closure_7, , , , , , , , ];
   const useAnimatedStyle = tmp(1655).useAnimatedStyle;
   tmp(1655);
-  items[1] = tmp(5929).withSpring;
+  items[1] = tmp(5933).withSpring;
   items[2] = sharedValue;
-  items[3] = tmp(5930).springStandard;
+  items[3] = tmp(5934).springStandard;
   items[4] = closure_6;
   items[5] = transitionState;
-  items[6] = tmp(5367).TransitionStates;
+  items[6] = tmp(5371).TransitionStates;
   items[7] = tmp(1708).scheduleOnRN;
   items[8] = cleanUp;
   let c0;
@@ -128,7 +128,7 @@ function AnimatedTabs(cleanUp) {
     }
     const result = set(num);
   }, items2);
-  const SearchResultExactCountEnabled = tmp(5131).SearchResultExactCountEnabled;
+  const SearchResultExactCountEnabled = tmp(5135).SearchResultExactCountEnabled;
   const setting = SearchResultExactCountEnabled.useSetting();
   const items3 = [setting];
   const callback = react.useCallback((toLocaleString) => {
@@ -145,7 +145,7 @@ function AnimatedTabs(cleanUp) {
     const obj2 = transitionState(dependencyMap[3]);
     combined = "(" + obj2.defaultCountFormatter(toLocaleString) + ")";
   }, items3);
-  const context = react.useContext(tmp(14850).SwipeForMemberListContext);
+  const context = react.useContext(tmp(13931).SwipeForMemberListContext);
   const items4 = [closure_8, context];
   c0 = undefined;
   [tmp21, tmp22] = items4;
@@ -198,7 +198,7 @@ function AnimatedTabs(cleanUp) {
   const View = sharedValue(1655).View;
   let obj2 = { state, grow: false, formatCount: callback, simultaneousHandlers: gesture, onEndDrag: tmp31 };
   gesture = undefined;
-  const Tabs = tmp(13262).Tabs;
+  const Tabs = tmp(14155).Tabs;
   if (context != null) {
     gesture = context.gesture;
   }

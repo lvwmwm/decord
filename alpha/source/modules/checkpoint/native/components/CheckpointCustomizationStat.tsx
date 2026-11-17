@@ -1,32 +1,32 @@
-// Module ID: 14533
-// Function ID: 14534
+// Module ID: 13404
+// Function ID: 13405
 // Name: CheckpointCustomizationStat
-// Dependencies: [19, 17, 14253, 6367, 21, 5306, 575, 6734, 13048, 1113, 3317, 8069, 3285, 10939, 14281, 7438, 8457, 504, 14506, 6737, 14515, 14479, 14271, 2]
+// Dependencies: [19, 17, 13119, 6375, 21, 5310, 575, 6742, 11689, 1113, 3319, 8080, 3287, 13091, 13147, 7448, 8468, 504, 13373, 6745, 13382, 13344, 13137, 2]
 // Exports: default
 
-// Module 14533 (CheckpointCustomizationStat)
+// Module 13404 (CheckpointCustomizationStat)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef3285 from "module_3285" /* 3285 */;
-import _modDef3317 from "module_3317" /* 3317 */;
-import CheckpointConstants from "CheckpointConstants" /* 6367 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6734 */;
-import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6737 */;
-import GameControllerIcon from "GameControllerIcon" /* 7438 */;
-import ChatIcon from "ChatIcon" /* 8069 */;
-import CalendarIcon from "CalendarIcon" /* 8457 */;
-import ServerIcon from "ServerIcon" /* 10939 */;
-import MicrophoneIcon from "MicrophoneIcon" /* 13048 */;
-import CheckpointTextDefault from "CheckpointText" /* 14271 */;
-import EmojiSlightlySmilingFaceIcon from "EmojiSlightlySmilingFaceIcon" /* 14281 */;
-import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 14479 */;
-import CheckpointNumberUtils from "CheckpointNumberUtils" /* 14506 */;
-import CheckpointTagDefault from "CheckpointTag" /* 14515 */;
+import _modDef3287 from "module_3287" /* 3287 */;
+import _modDef3319 from "module_3319" /* 3319 */;
+import CheckpointConstants from "CheckpointConstants" /* 6375 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6742 */;
+import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6745 */;
+import GameControllerIcon from "GameControllerIcon" /* 7448 */;
+import ChatIcon from "ChatIcon" /* 8080 */;
+import CalendarIcon from "CalendarIcon" /* 8468 */;
+import MicrophoneIcon from "MicrophoneIcon" /* 11689 */;
+import ServerIcon from "ServerIcon" /* 13091 */;
+import CheckpointTextDefault from "CheckpointText" /* 13137 */;
+import EmojiSlightlySmilingFaceIcon from "EmojiSlightlySmilingFaceIcon" /* 13147 */;
+import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 13344 */;
+import CheckpointNumberUtils from "CheckpointNumberUtils" /* 13373 */;
+import CheckpointTagDefault from "CheckpointTag" /* 13382 */;
 import react from "react" /* 19 */;
-import CheckpointStore from "CheckpointStore" /* 14253 */;
+import CheckpointStore from "CheckpointStore" /* 13119 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -71,7 +71,7 @@ export default function CheckpointCustomizationStat(customizationOption) {
   const obj = get_initialized;
   const stateFromStores = obj.useStateFromStores(items, () => stats.stats);
   if (CheckpointCustomizationUtils.CheckpointCustomizationOption.FACE === customizationOption) {
-    const obj2 = { Icon: MicrophoneIcon.MicrophoneIcon, statType: "voice", value: totalVoiceMinutes, percentile: prop, title: intl6.string(_modDef3317["3/T12E"]) };
+    const obj2 = { Icon: MicrophoneIcon.MicrophoneIcon, statType: "voice", value: totalVoiceMinutes, percentile: prop, title: intl6.string(_modDef3319["3/T12E"]) };
     totalVoiceMinutes = undefined;
     if (stateFromStores != null) {
       const voice = stateFromStores.voice;
@@ -89,7 +89,7 @@ export default function CheckpointCustomizationStat(customizationOption) {
     intl6 = tmp2(1113).intl;
     tmp8 = obj2;
   } else if (CheckpointCustomizationUtils.CheckpointCustomizationOption.OUTFIT === customizationOption) {
-    const obj3 = { Icon: ChatIcon.ChatIcon, statType: "messages", value: numMessagesSent, percentile: prop1, title: intl5.string(_modDef3285.wWKySP) };
+    const obj3 = { Icon: ChatIcon.ChatIcon, statType: "messages", value: numMessagesSent, percentile: prop1, title: intl5.string(_modDef3287.wWKySP) };
     numMessagesSent = undefined;
     if (stateFromStores != null) {
       const messages = stateFromStores.messages;
@@ -107,7 +107,7 @@ export default function CheckpointCustomizationStat(customizationOption) {
     intl5 = tmp2(1113).intl;
     tmp8 = obj3;
   } else if (CheckpointCustomizationUtils.CheckpointCustomizationOption.HAT === customizationOption) {
-    const obj4 = { Icon: ServerIcon.ServerIcon, statType: "topServerDays", value: numDaysInteracted, percentile: prop2, title: intl4.string(_modDef3317["M+a+t1"]) };
+    const obj4 = { Icon: ServerIcon.ServerIcon, statType: "topServerDays", value: numDaysInteracted, percentile: prop2, title: intl4.string(_modDef3319["M+a+t1"]) };
     numDaysInteracted = undefined;
     if (stateFromStores != null) {
       const guilds = stateFromStores.guilds;
@@ -131,7 +131,7 @@ export default function CheckpointCustomizationStat(customizationOption) {
     intl4 = tmp2(1113).intl;
     tmp8 = obj4;
   } else if (CheckpointCustomizationUtils.CheckpointCustomizationOption.SHOES === customizationOption) {
-    const obj5 = { Icon: EmojiSlightlySmilingFaceIcon.EmojiSlightlySmilingFaceIcon, statType: "emoji", value: numEmojisSent, percentile: prop3, title: intl3.string(_modDef3317.ZTDCIv) };
+    const obj5 = { Icon: EmojiSlightlySmilingFaceIcon.EmojiSlightlySmilingFaceIcon, statType: "emoji", value: numEmojisSent, percentile: prop3, title: intl3.string(_modDef3319.ZTDCIv) };
     numEmojisSent = undefined;
     if (stateFromStores != null) {
       const emojis = stateFromStores.emojis;
@@ -149,7 +149,7 @@ export default function CheckpointCustomizationStat(customizationOption) {
     intl3 = tmp2(1113).intl;
     tmp8 = obj5;
   } else if (CheckpointCustomizationUtils.CheckpointCustomizationOption.WEARABLE === customizationOption) {
-    const obj6 = { Icon: GameControllerIcon.GameControllerIcon, statType: "games", value: totalGamesPlayed, percentile: prop4, title: intl2.string(_modDef3317.HM2fjf) };
+    const obj6 = { Icon: GameControllerIcon.GameControllerIcon, statType: "games", value: totalGamesPlayed, percentile: prop4, title: intl2.string(_modDef3319.HM2fjf) };
     totalGamesPlayed = undefined;
     if (stateFromStores != null) {
       const games3 = stateFromStores.games;
@@ -169,7 +169,7 @@ export default function CheckpointCustomizationStat(customizationOption) {
   } else {
     tmp8 = null;
     if (CheckpointCustomizationUtils.CheckpointCustomizationOption.AURA === customizationOption) {
-      const obj7 = { Icon: CalendarIcon.CalendarIcon, statType: "gameDays", value: totalDaysPlayed, percentile: prop5, title: intl.string(_modDef3317["4N5p4D"]) };
+      const obj7 = { Icon: CalendarIcon.CalendarIcon, statType: "gameDays", value: totalDaysPlayed, percentile: prop5, title: intl.string(_modDef3319["4N5p4D"]) };
       totalDaysPlayed = undefined;
       if (stateFromStores != null) {
         const games = stateFromStores.games;
@@ -206,7 +206,7 @@ export default function CheckpointCustomizationStat(customizationOption) {
     if (null != checkpointTopPercent) {
       const intl7 = tmp2(1113).intl;
       const obj8 = { percent: checkpointTopPercent };
-      formatToPlainStringResult = intl7.formatToPlainString(_modDef3317.fOGKA4, obj8);
+      formatToPlainStringResult = intl7.formatToPlainString(_modDef3319.fOGKA4, obj8);
     }
     const tmp2Result4 = CheckpointNumberUtils;
     const result1 = tmp2Result4.formatCheckpointStatAccessibilityLabel(tmp8.statType, roundResult);
@@ -214,7 +214,7 @@ export default function CheckpointCustomizationStat(customizationOption) {
     if (null != formatToPlainStringResult) {
       const intl8 = tmp2(1113).intl;
       const obj9 = { stat: result1, percentile: formatToPlainStringResult };
-      formatToPlainStringResult1 = intl8.formatToPlainString(_modDef3317.OxxTjh, obj9);
+      formatToPlainStringResult1 = intl8.formatToPlainString(_modDef3319.OxxTjh, obj9);
     }
     let tmp41 = null != formatToPlainStringResult;
     const obj10 = { style: tmp.stat, accessible: true, accessibilityLabel: formatToPlainStringResult1, children: items1 };

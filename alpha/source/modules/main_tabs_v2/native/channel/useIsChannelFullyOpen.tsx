@@ -1,10 +1,10 @@
-// Module ID: 12016
-// Function ID: 12017
+// Module ID: 12452
+// Function ID: 12453
 // Name: useIsChannelFullyOpen
-// Dependencies: [32, 19, 12011, 1655, 1708, 2]
+// Dependencies: [32, 19, 12448, 1655, 1708, 2]
 // Exports: default
 
-// Module 12016 (useIsChannelFullyOpen)
+// Module 12452 (useIsChannelFullyOpen)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -39,7 +39,7 @@ export default function useIsChannelFullyOpen() {
   let tmp8;
   let tmp9;
   let translateX;
-  const f103771 = () => {
+  const f105235 = () => {
     const obj = translateX;
     if (typeof getIsChannelFullyOpen === "function") {
       let tmp2 = !tmp;
@@ -52,10 +52,10 @@ export default function useIsChannelFullyOpen() {
     }
   };
   const tmp = dependencyMap;
-  const context = react.useContext(translateX(12011));
+  const context = react.useContext(translateX(12448));
   const isInMainTabs = context.isInMainTabs;
   translateX = context.translateX;
-  [tmp4, tmp5] = _slicedToArray(react.useState(f103771), 2);
+  [tmp4, tmp5] = _slicedToArray(react.useState(f105235), 2);
   const items = [closure_6, getIsChannelFullyOpen, isInMainTabs, translateX];
   let c2;
   [tmp8, tmp9, tmp10, tmp11] = items;
@@ -68,7 +68,7 @@ export default function useIsChannelFullyOpen() {
   useIsChannelFullyOpenTsx2.__workletHash = 2274606773816;
   useIsChannelFullyOpenTsx2.__initData = tmp8;
   const items2 = [closure_7, , ];
-  const tmp3 = _slicedToArray(react.useState(f103771), 2);
+  const tmp3 = _slicedToArray(react.useState(f105235), 2);
   const useAnimatedReaction = isInMainTabs(1655).useAnimatedReaction;
   isInMainTabs(1655);
   items2[1] = isInMainTabs(1708).scheduleOnRN;

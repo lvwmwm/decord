@@ -1,28 +1,28 @@
-// Module ID: 18900
-// Function ID: 18901
+// Module ID: 18941
+// Function ID: 18942
 // Name: ChannelsUnreadBars
-// Dependencies: [32, 19, 17, 5307, 5240, 5155, 7060, 7015, 6948, 6050, 6949, 21, 5306, 8731, 5934, 7847, 17703, 551, 558, 504, 1655, 1708, 18852, 7771, 5544, 5545, 18901, 2]
+// Dependencies: [32, 19, 17, 5311, 5244, 5159, 7068, 7023, 6956, 6056, 6957, 21, 5310, 8742, 5938, 7857, 17741, 551, 558, 504, 1655, 1708, 18893, 7781, 5548, 5549, 18942, 2]
 
-// Module 18900 (ChannelsUnreadBars)
+// Module 18941 (ChannelsUnreadBars)
 import debounceDefault from "debounce" /* 551 */;
-import HapticUtils from "HapticUtils" /* 5544 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5545 */;
-import useFontScale from "useFontScale" /* 5934 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 6050 */;
-import ReadStateConstants from "ReadStateConstants" /* 6949 */;
-import FastList from "FastList" /* 7847 */;
-import ChannelListState from "ChannelListState" /* 8731 */;
+import HapticUtils from "HapticUtils" /* 5548 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5549 */;
+import useFontScale from "useFontScale" /* 5938 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 6056 */;
+import ReadStateConstants from "ReadStateConstants" /* 6957 */;
+import FastList from "FastList" /* 7857 */;
+import ChannelListState from "ChannelListState" /* 8742 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 5240 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7060 */;
-import ReadStateStore from "ReadStateStore" /* 7015 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6948 */;
+import AccessibilityStore from "AccessibilityStore" /* 5311 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 5244 */;
+import ChannelStore from "ChannelStore" /* 5159 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 7068 */;
+import ReadStateStore from "ReadStateStore" /* 7023 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6956 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -147,7 +147,7 @@ function findNearestUnreadItem(fastList, guildChannels, headerHeight, youBarTota
             if (-1 === section) {
               ({ section, item } = tmp13);
             }
-            if (tmp13.type !== tmp72(7847).FastListItemTypes.ITEM) {
+            if (tmp13.type !== tmp72(7857).FastListItemTypes.ITEM) {
               tmp9 = item10031;
             } else if (shouldSkipSection(tmp13.section)) {
               continue;

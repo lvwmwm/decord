@@ -1,24 +1,24 @@
-// Module ID: 12848
-// Function ID: 12849
+// Module ID: 11461
+// Function ID: 11462
 // Name: EmbeddedActivityView
-// Dependencies: [109, 32, 19, 17, 5154, 2145, 1365, 12706, 21, 5306, 12846, 1496, 572, 12849, 12850, 12852, 12877, 12842, 504, 12893, 12747, 12894, 6056, 12896, 2]
+// Dependencies: [109, 32, 19, 17, 5158, 2145, 1365, 11452, 21, 5310, 11459, 1496, 572, 11462, 11463, 11465, 11490, 11453, 504, 11507, 11304, 11508, 6063, 11510, 2]
 
-// Module 12848 (EmbeddedActivityView)
+// Module 11461 (EmbeddedActivityView)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ApplicationConstants from "ApplicationConstants" /* 1365 */;
 import Constants from "Constants" /* 2145 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6056 */;
-import Constants2 from "Constants" /* 12706 */;
-import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 12747 */;
-import doesOrientationMatchLockStateDefault from "doesOrientationMatchLockState" /* 12849 */;
-import activityWebViewController from "activityWebViewController" /* 12852 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6063 */;
+import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 11304 */;
+import Constants2 from "Constants" /* 11452 */;
+import doesOrientationMatchLockStateDefault from "doesOrientationMatchLockState" /* 11462 */;
+import activityWebViewController from "activityWebViewController" /* 11465 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5158 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_14;
@@ -124,7 +124,7 @@ function EmbeddedActivityWebView(applicationId) {
     return obj.getOrCreateActivityWebViewController(applicationId);
   }), 1)[0]);
   let obj = { iframeId, shellBridgeSecret, deepLinkQueryParams, applicationId };
-  const BaseEmbeddedAppWebView = applicationId(12877).BaseEmbeddedAppWebView;
+  const BaseEmbeddedAppWebView = applicationId(11490).BaseEmbeddedAppWebView;
   const merged1 = Object.assign(merged);
   return closure_13(BaseEmbeddedAppWebView, obj);
 }

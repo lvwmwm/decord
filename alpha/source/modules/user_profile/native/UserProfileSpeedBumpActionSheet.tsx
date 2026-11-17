@@ -1,27 +1,27 @@
-// Module ID: 8478
-// Function ID: 8479
+// Module ID: 8489
+// Function ID: 8490
 // Name: UserProfileSpeedBumpActionSheet
-// Dependencies: [32, 19, 17, 5155, 5218, 1388, 8479, 1072, 21, 5306, 575, 8481, 1113, 7746, 7443, 1187, 5313, 5537, 504, 8482, 7918, 7937, 8545, 8556, 1256, 7350, 8476, 5556, 5560, 8557, 7634, 5919, 6341, 5926, 7428, 5131, 2]
+// Dependencies: [32, 19, 17, 5159, 5222, 1388, 8490, 1072, 21, 5310, 575, 8492, 1113, 7756, 7453, 1187, 5317, 5541, 504, 8493, 7928, 7947, 8556, 8567, 1256, 7360, 8487, 5560, 5564, 8568, 7644, 5923, 6349, 5930, 7438, 5135, 2]
 
-// Module 8478 (UserProfileSpeedBumpActionSheet)
+// Module 8489 (UserProfileSpeedBumpActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import UserSettings from "UserSettings" /* 5131 */;
-import UserActionCreators from "UserActionCreators" /* 7350 */;
-import TableRow2 from "TableRow" /* 7443 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;
-import Constants2 from "Constants" /* 8479 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8481 */;
+import UserSettings from "UserSettings" /* 5135 */;
+import UserActionCreators from "UserActionCreators" /* 7360 */;
+import TableRow2 from "TableRow" /* 7453 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8487 */;
+import Constants2 from "Constants" /* 8490 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8492 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import GuildMemberStore from "GuildMemberStore" /* 5218 */;
+import ChannelStore from "ChannelStore" /* 5159 */;
+import GuildMemberStore from "GuildMemberStore" /* 5222 */;
 import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -63,7 +63,7 @@ function InformationTable(speedBumpType) {
       return authStore2(TableRow, obj, index);
     })
   };
-  const TableRowGroup = tmp2(7746).TableRowGroup;
+  const TableRowGroup = tmp2(7756).TableRowGroup;
   return closure_12(TableRowGroup, obj3);
 }
 const View = react_native.View;

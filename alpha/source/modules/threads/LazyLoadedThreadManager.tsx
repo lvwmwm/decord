@@ -1,15 +1,15 @@
-// Module ID: 10974
-// Function ID: 10975
+// Module ID: 11911
+// Function ID: 11912
 // Name: LazyLoadedThreadManager
-// Dependencies: [6790, 5159, 5155, 5209, 1072, 5162, 572, 7241, 5344, 5357, 1285, 2]
+// Dependencies: [6798, 5163, 5159, 5213, 1072, 5166, 572, 7249, 5348, 5361, 1285, 2]
 
-// Module 10974 (LazyLoadedThreadManager)
+// Module 11911 (LazyLoadedThreadManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ChannelConstants from "ChannelConstants" /* 5162 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6790 */;
-import ChannelRecord from "ChannelRecord" /* 5159 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
+import ChannelConstants from "ChannelConstants" /* 5166 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6798 */;
+import ChannelRecord from "ChannelRecord" /* 5163 */;
+import ChannelStore from "ChannelStore" /* 5159 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5213 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ let c9;
 let closure_4;
 let hasOwnProperty;
 let metroImportAll;
-const f101315 = () => {
+const f103727 = () => {
   closure_11 = {};
   channelId = channelId.getChannelId();
   const tmp2 = null != channelId && null == channel.getChannel(channelId);
@@ -33,7 +33,7 @@ function initialize() {
   if (!tmp) {
     c12 = true;
     const obj = DispatcherDefault;
-    const subscription = obj.subscribe("CONNECTION_OPEN", f101315);
+    const subscription = obj.subscribe("CONNECTION_OPEN", f103727);
   }
 }
 function dispatchLoadedThread(nextResult, arg1) {
@@ -64,7 +64,7 @@ function loadThread(c1) {
       c12 = true;
       let tmp2 = importDefault;
       let obj = DispatcherDefault;
-      const subscription = obj.subscribe("CONNECTION_OPEN", f101315);
+      const subscription = obj.subscribe("CONNECTION_OPEN", f103727);
     }
     if (GatewayConnectionStore.isConnected()) {
       if (null != closure_11[c1]) {
@@ -81,9 +81,9 @@ function loadThread(c1) {
         const matchPath = require("matchPathCompat").matchPath;
         CHANNEL = constants.CHANNEL;
         require("matchPathCompat");
-        const RouteParam = tmp13(5357).RouteParam;
+        const RouteParam = tmp13(5361).RouteParam;
         guildIdResult = RouteParam.guildId();
-        RouteParam2 = tmp13(5357).RouteParam;
+        RouteParam2 = tmp13(5361).RouteParam;
         importDefault = matchPath(pathname, obj2);
         const HTTP = tmp13(1285).HTTP;
         const get = HTTP.get;
@@ -159,7 +159,7 @@ let obj = {
       let nextResult = iter.next();
       while (iter !== undefined) {
         let tmp10 = nextResult;
-        if (nextResult !== items1(7241).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+        if (nextResult !== items1(7249).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
           if (!isStaticChannelRoute(tmp10)) {
             if (null == ChannelStore.getChannel(tmp10)) {
               let tmp19 = closure_11[tmp10];

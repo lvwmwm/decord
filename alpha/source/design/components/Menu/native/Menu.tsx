@@ -1,10 +1,10 @@
-// Module ID: 16437
-// Function ID: 16438
+// Module ID: 16473
+// Function ID: 16474
 // Name: Menu
-// Dependencies: [32, 19, 17, 1072, 21, 16438, 5306, 575, 1655, 1708, 5320, 1630, 1496, 1380, 5315, 1113, 6321, 5538, 6322, 16439, 16440, 5929, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 16474, 5310, 575, 1655, 1708, 5324, 1630, 1496, 1380, 5319, 1113, 6329, 5542, 6330, 16475, 16476, 5933, 2]
 // Exports: Menu
 
-// Module 16437 (Menu)
+// Module 16473 (Menu)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -12,14 +12,14 @@ import intl2 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import _mod1655 from "module_1655" /* 1655 */;
 import _mod1708 from "module_1708" /* 1708 */;
-import timing_timing from "timing/timing" /* 5538 */;
-import spring_spring from "spring/spring" /* 5929 */;
-import react_native from "react-native" /* 6321 */;
-import Easing_Easing from "Easing/Easing" /* 16438 */;
+import timing_timing from "timing/timing" /* 5542 */;
+import spring_spring from "spring/spring" /* 5933 */;
+import react_native from "react-native" /* 6329 */;
+import Easing_Easing from "Easing/Easing" /* 16474 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -124,7 +124,7 @@ export function Menu(toggleButtonRef) {
   function openMenuCallback() {
     obj = PlatformUtils;
     if (obj.isAndroid()) {
-      const AccessibilityAnnouncer = tmp(5315).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = tmp(5319).AccessibilityAnnouncer;
       const announce = AccessibilityAnnouncer.announce;
       const intl = tmp(1113).intl;
       announce(intl.string(intl2.t.ZqK0uI));

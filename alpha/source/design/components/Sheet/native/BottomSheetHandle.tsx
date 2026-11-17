@@ -1,10 +1,10 @@
-// Module ID: 5888
-// Function ID: 5889
+// Module ID: 5892
+// Function ID: 5893
 // Name: react
 // Dependencies: [19, 2]
 // Exports: useBottomSheetImperativeHandle
 
-// Module 5888 (react)
+// Module 5892 (react)
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

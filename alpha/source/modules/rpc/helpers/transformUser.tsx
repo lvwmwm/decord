@@ -1,11 +1,11 @@
-// Module ID: 7301
-// Function ID: 7302
+// Module ID: 7311
+// Function ID: 7312
 // Name: transformUser
-// Dependencies: [7302, 2]
+// Dependencies: [7312, 2]
 // Exports: default
 
-// Module 7301 (transformUser)
-import transformAvatarDecorationDefault from "transformAvatarDecoration" /* 7302 */;
+// Module 7311 (transformUser)
+import transformAvatarDecorationDefault from "transformAvatarDecoration" /* 7312 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/rpc/helpers/transformUser.tsx");

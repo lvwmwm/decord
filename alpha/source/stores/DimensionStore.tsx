@@ -1,9 +1,9 @@
-// Module ID: 6784
-// Function ID: 6785
+// Module ID: 6792
+// Function ID: 6793
 // Name: DimensionStore
 // Dependencies: [558, 504, 572, 2]
 
-// Module 6784 (DimensionStore)
+// Module 6792 (DimensionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import shallowEqualDefault from "shallowEqual" /* 558 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;

@@ -1,35 +1,35 @@
-// Module ID: 7317
-// Function ID: 7318
+// Module ID: 7327
+// Function ID: 7328
 // Name: LocalActivityStore
-// Dependencies: [32, 5154, 2165, 2140, 7318, 7319, 7290, 1231, 6810, 5155, 2159, 15986, 5209, 6063, 1072, 5131, 9529, 6059, 12, 15987, 15988, 6802, 1345, 7472, 12695, 1406, 504, 572, 2]
+// Dependencies: [32, 5158, 2165, 2140, 7328, 7329, 7300, 1231, 6804, 5159, 2159, 16023, 5213, 6070, 1072, 5135, 9541, 6066, 12, 16024, 16025, 6851, 1345, 7482, 12850, 1406, 504, 572, 2]
 
-// Module 7317 (LocalActivityStore)
+// Module 7327 (LocalActivityStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import _modDef1345 from "module_1345" /* 1345 */;
 import FlagUtils from "FlagUtils" /* 1406 */;
-import ActivityTypes from "ActivityTypes" /* 6059 */;
-import ActivityGamePlatforms from "ActivityGamePlatforms" /* 7472 */;
+import ActivityTypes from "ActivityTypes" /* 6066 */;
+import ActivityGamePlatforms from "ActivityGamePlatforms" /* 7482 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5158 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
 import RunningGameStore from "RunningGameStore" /* 2140 */;
-import SocialSdkApplicationStore from "SocialSdkApplicationStore" /* 7318 */;
-import FirstPartyRichPresenceStore from "FirstPartyRichPresenceStore" /* 7319 */;
-import SpotifyStore from "SpotifyStore" /* 7290 */;
+import SocialSdkApplicationStore from "SocialSdkApplicationStore" /* 7328 */;
+import FirstPartyRichPresenceStore from "FirstPartyRichPresenceStore" /* 7329 */;
+import SpotifyStore from "SpotifyStore" /* 7300 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6810 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6804 */;
+import ChannelStore from "ChannelStore" /* 5159 */;
 import DetectableGameStore from "DetectableGameStore" /* 2159 */;
-import ExternalStreamingStore from "ExternalStreamingStore" /* 15986 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
-import SessionsStore from "SessionsStore" /* 6063 */;
+import ExternalStreamingStore from "ExternalStreamingStore" /* 16023 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5213 */;
+import SessionsStore from "SessionsStore" /* 6070 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ActivityFlagUtils = tmp(12695);
+const ActivityFlagUtils = tmp(12850);
 function updateActivities() {
   let id;
   let obj3;
@@ -305,7 +305,7 @@ let obj = {
         let tmp = activity.platform === ActivityGamePlatforms.ActivityGamePlatforms.EMBEDDED;
         const tmp11 = require;
         if (tmp) {
-          const tmp11Result = tmp11(12695);
+          const tmp11Result = tmp11(12850);
           tmp = !tmp11Result.isContextlessEmbeddedActivity(activity);
         }
         if (tmp) {

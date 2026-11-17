@@ -1,9 +1,9 @@
-// Module ID: 11059
-// Function ID: 11060
+// Module ID: 11817
+// Function ID: 11818
 // Name: MentionPillOffset
 // Dependencies: [1380, 2]
 
-// Module 11059 (MentionPillOffset)
+// Module 11817 (MentionPillOffset)
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import size from "module_2" /* 2 */;
 

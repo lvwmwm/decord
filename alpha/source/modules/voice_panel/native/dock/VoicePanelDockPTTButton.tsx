@@ -1,22 +1,22 @@
-// Module ID: 19229
-// Function ID: 19230
+// Module ID: 19274
+// Function ID: 19275
 // Name: VoicePanelDockPTTButton
-// Dependencies: [19, 17, 5155, 2133, 12009, 21, 575, 5306, 11984, 1655, 19206, 504, 13046, 13022, 13061, 5538, 5929, 5544, 11975, 19230, 7790, 5588, 1708, 19232, 7988, 1113, 13049, 5498, 19233, 2]
+// Dependencies: [19, 17, 5159, 2133, 12446, 21, 575, 5310, 12427, 1655, 19251, 504, 11687, 11663, 11719, 5542, 5933, 5548, 11550, 19275, 7800, 5592, 1708, 19277, 7999, 1113, 11690, 5502, 19278, 2]
 
-// Module 19229 (VoicePanelDockPTTButton)
+// Module 19274 (VoicePanelDockPTTButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1708 from "module_1708" /* 1708 */;
-import timing_timing from "timing/timing" /* 5538 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5588 */;
-import spring_spring from "spring/spring" /* 5929 */;
-import MediaEngineActionCreators from "MediaEngineActionCreators" /* 11975 */;
+import timing_timing from "timing/timing" /* 5542 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5592 */;
+import spring_spring from "spring/spring" /* 5933 */;
+import MediaEngineActionCreators from "MediaEngineActionCreators" /* 11550 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
+import ChannelStore from "ChannelStore" /* 5159 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 12009 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 12446 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size_mod from "module_2" /* 2 */;
 
 let activateResult, first, num, num2, point2, result2, set, set2, set3, tmp3, tmp7;
@@ -132,18 +132,18 @@ const memoResult = react.memo(function VoicePanelDockPTTButton(measureGlowOffset
   const tmp5Result4 = tmp5(dockPTTMeasureHostRef[9]);
   sharedValue4 = tmp5Result4.useSharedValue(0);
   let items2 = [sharedValue, sharedValue3, sharedValue4, useReducedMotion];
-  callback = obj.useCallback((c9) => {
+  callback = obj.useCallback((channelDockHeight) => {
     let withTimingResult;
     set = sharedValue.set;
     if (useReducedMotion.get()) {
       const tmp2Result = timing_timing;
-      withTimingResult = tmp2Result.withTiming(c9, { duration: 150 });
+      withTimingResult = tmp2Result.withTiming(channelDockHeight, { duration: 150 });
     } else {
       const tmp2Result2 = spring_spring;
-      withTimingResult = tmp2Result2.withSpring(c9, closure_10);
+      withTimingResult = tmp2Result2.withSpring(channelDockHeight, closure_10);
     }
     const result = set(withTimingResult);
-    if (0 === c9) {
+    if (0 === channelDockHeight) {
       let withTimingResult1;
       let withTimingResult2;
       set3 = sharedValue3.set;

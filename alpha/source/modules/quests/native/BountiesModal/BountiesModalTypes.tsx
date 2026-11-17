@@ -1,9 +1,9 @@
-// Module ID: 17544
-// Function ID: 17545
+// Module ID: 17581
+// Function ID: 17582
 // Name: BountiesModalTypes
 // Dependencies: [2]
 
-// Module 17544 (BountiesModalTypes)
+// Module 17581 (BountiesModalTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/quests/native/BountiesModal/BountiesModalTypes.tsx");

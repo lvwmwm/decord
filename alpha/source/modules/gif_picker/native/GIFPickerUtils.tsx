@@ -1,14 +1,14 @@
-// Module ID: 11342
-// Function ID: 11343
+// Module ID: 12031
+// Function ID: 12032
 // Name: gif_picker/GIFPickerUtils
-// Dependencies: [19, 1072, 1381, 9100, 11343, 1113, 2]
+// Dependencies: [19, 1072, 1381, 9111, 10772, 1113, 2]
 // Exports: useFavoriteGIFsMobile
 
-// Module 11342 (gif_picker/GIFPickerUtils)
+// Module 12031 (gif_picker/GIFPickerUtils)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import URLUtilsDefault from "URLUtils" /* 1381 */;
-import AttachmentUrlUtilsAll from "AttachmentUrlUtils" /* 9100 */;
+import AttachmentUrlUtilsAll from "AttachmentUrlUtils" /* 9111 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -40,7 +40,7 @@ function transformFavoriteGifUrl(assetURL, arg1) {
       const result1 = searchParams2.set("animated", "true");
       return str.toString();
     } else {
-      tmp14(9100);
+      tmp14(9111);
     }
   }
   if (re6.test(arg1)) {
@@ -71,7 +71,7 @@ let result = size.fileFinishedImporting("modules/gif_picker/native/GIFPickerUtil
 export const GIF_HEADER_HEIGHT = 56;
 export function useFavoriteGIFsMobile() {
   let sortedFavoriteGIFs;
-  let obj = sortedFavoriteGIFs(11343);
+  let obj = sortedFavoriteGIFs(10772);
   sortedFavoriteGIFs = obj.useSortedFavoriteGIFs(transformFavoriteGifUrl);
   const items = [sortedFavoriteGIFs];
   const obj2 = {

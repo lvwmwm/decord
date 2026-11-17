@@ -1,26 +1,26 @@
-// Module ID: 17868
-// Function ID: 17869
+// Module ID: 17909
+// Function ID: 17910
 // Name: SettingsVoiceScreen
-// Dependencies: [19, 17, 2133, 9202, 1072, 21, 2188, 5306, 5537, 5313, 13037, 13038, 6010, 1113, 5588, 13036, 5919, 13033, 12406, 17213, 2]
+// Dependencies: [19, 17, 2133, 9213, 1072, 21, 2188, 5310, 5541, 5317, 11678, 11679, 6014, 1113, 5592, 11677, 5923, 11674, 12612, 17250, 2]
 // Exports: default
 
-// Module 17868 (SettingsVoiceScreen)
+// Module 17909 (SettingsVoiceScreen)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl10 from "intl" /* 1113 */;
-import shared from "shared" /* 5313 */;
-import useThemeDefault from "useTheme" /* 5537 */;
-import FastImageDefault from "FastImage" /* 6010 */;
-import SettingsConstants from "SettingsConstants" /* 9202 */;
-import SettingBuilders from "SettingBuilders" /* 12406 */;
-import NoiseCancellationUtils from "NoiseCancellationUtils" /* 13033 */;
-import KrispLogo2 from "KrispLogo" /* 13036 */;
-import SettingLayoutDefault from "SettingLayout" /* 17213 */;
+import shared from "shared" /* 5317 */;
+import useThemeDefault from "useTheme" /* 5541 */;
+import FastImageDefault from "FastImage" /* 6014 */;
+import SettingsConstants from "SettingsConstants" /* 9213 */;
+import NoiseCancellationUtils from "NoiseCancellationUtils" /* 11674 */;
+import KrispLogo2 from "KrispLogo" /* 11677 */;
+import SettingBuilders from "SettingBuilders" /* 12612 */;
+import SettingLayoutDefault from "SettingLayout" /* 17250 */;
 import react from "react" /* 19 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
 import Fragment from "Fragment" /* 21 */;
 import HelpdeskUtils from "HelpdeskUtils" /* 2188 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let mediaEngine;
@@ -40,9 +40,9 @@ function KrispLogo() {
   const tmp4 = useThemeDefault();
   const obj = shared;
   if (obj.isThemeLight(tmp4)) {
-    tmp2Result = tmp2(13037);
+    tmp2Result = tmp2(11678);
   } else {
-    tmp2Result = tmp2(13038);
+    tmp2Result = tmp2(11679);
   }
   const obj2 = { style: tmp.krisp, children: items };
   const obj3 = { style: tmp.logo, source: tmp2Result, accessibilityLabel: intl.string(intl10.t.vFiCSx) };
@@ -50,10 +50,10 @@ function KrispLogo() {
   intl = tmp5(1113).intl;
   items = [metroImportAll(tmp2Result2, obj3), ];
   const obj4 = { accessibilityRole: "link", accessibilityLabel: intl2.string(intl10.t.hvVgAZ), onPress: KrispLogo2.handleKrispLinkPressed, children: metroImportAll(Text, obj5) };
-  const LegacyPressable = tmp5(5588).LegacyPressable;
+  const LegacyPressable = tmp5(5592).LegacyPressable;
   intl2 = tmp5(1113).intl;
   obj5 = { variant: "body-sm/medium", color: "text-link", children: intl3.string(intl10.t.hvVgAZ) };
-  Text = tmp5(5919).Text;
+  Text = tmp5(5923).Text;
   intl3 = tmp5(1113).intl;
   items[1] = metroImportAll(LegacyPressable, obj4);
   return React4(View, obj2);
@@ -65,7 +65,7 @@ function SystemProcessingSubLabel() {
   const obj = NoiseCancellationUtils;
   if (obj.useNoiseCancellationDeferredToSystem()) {
     const obj2 = { variant: "body-sm/medium", children: intl.format(intl10.t.EUNgko, obj3) };
-    const Text = tmp(5919).Text;
+    const Text = tmp(5923).Text;
     intl = tmp(1113).intl;
     obj3 = {
       onSettingsClick() {

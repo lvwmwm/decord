@@ -1,13 +1,13 @@
-// Module ID: 10640
-// Function ID: 10641
+// Module ID: 10349
+// Function ID: 10350
 // Name: useSecureFramesUserVerifiedKeysCount
-// Dependencies: [19, 10611, 10612, 504, 2]
+// Dependencies: [19, 10311, 10312, 504, 2]
 // Exports: useSecureFramesUserVerifiedKeysCount
 
-// Module 10640 (useSecureFramesUserVerifiedKeysCount)
-import _mod10612 from "module_10612" /* 10612 */;
+// Module 10349 (useSecureFramesUserVerifiedKeysCount)
+import _mod10312 from "module_10312" /* 10312 */;
 import react from "react" /* 19 */;
-import VerifiedKeyStore from "VerifiedKeyStore" /* 10611 */;
+import VerifiedKeyStore from "VerifiedKeyStore" /* 10311 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/rtc/hooks/useSecureFramesUserVerifiedKeysCount.tsx");
@@ -25,7 +25,7 @@ export function useSecureFramesUserVerifiedKeysCount(userId) {
       const self = this;
       const self2 = this;
       const uint8Array = new Uint8Array(tmp);
-      const obj = _mod10612;
+      const obj = _mod10312;
       return obj.serializeKey(uint8Array);
     }
   }, items);

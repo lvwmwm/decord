@@ -1,13 +1,13 @@
-// Module ID: 6051
-// Function ID: 6052
+// Module ID: 6057
+// Function ID: 6058
 // Name: useScaledTextLineHeight
-// Dependencies: [6052, 5919, 5934, 2]
+// Dependencies: [6058, 5923, 5938, 2]
 // Exports: scaleLineHeight, scaleTextLineHeight, useScaledTextLineHeight
 
-// Module 6051 (useScaledTextLineHeight)
-import Text_Text from "Text/Text" /* 5919 */;
-import useFontScale from "useFontScale" /* 5934 */;
-import react_nativeDefault from "react-native" /* 6052 */;
+// Module 6057 (useScaledTextLineHeight)
+import Text_Text from "Text/Text" /* 5923 */;
+import useFontScale from "useFontScale" /* 5938 */;
+import react_nativeDefault from "react-native" /* 6058 */;
 import size from "module_2" /* 2 */;
 
 const map = new Map();

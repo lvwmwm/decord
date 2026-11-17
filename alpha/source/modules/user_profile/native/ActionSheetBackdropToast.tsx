@@ -1,19 +1,19 @@
-// Module ID: 15883
-// Function ID: 15884
+// Module ID: 15921
+// Function ID: 15922
 // Name: ActionSheetBackdropToast
-// Dependencies: [19, 17, 5557, 21, 1380, 5306, 575, 1630, 1496, 1655, 5538, 5882, 5919, 2]
+// Dependencies: [19, 17, 5561, 21, 1380, 5310, 575, 1630, 1496, 1655, 5542, 5886, 5923, 2]
 // Exports: ActionSheetBackdropToast
 
-// Module 15883 (ActionSheetBackdropToast)
+// Module 15921 (ActionSheetBackdropToast)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5538 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5557 */;
+import timing_timing from "timing/timing" /* 5542 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5561 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let set, set2;
@@ -95,7 +95,7 @@ export function ActionSheetBackdropToast(arg0) {
   const items1 = [closure_9, closure_7, isExpanded, , , , , , , , ];
   const useAnimatedStyle = sharedValue(1655).useAnimatedStyle;
   const tmp8 = sharedValue(1655);
-  items1[3] = height - sharedValue(5882).NAV_BAR_HEIGHT_MULTILINE - top;
+  items1[3] = height - sharedValue(5886).NAV_BAR_HEIGHT_MULTILINE - top;
   items1[4] = 24;
   items1[5] = height * closure_5;
   items1[6] = closure_5;

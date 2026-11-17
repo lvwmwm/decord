@@ -1,13 +1,13 @@
-// Module ID: 16280
-// Function ID: 16281
+// Module ID: 6052
+// Function ID: 6053
 // Name: reactParserFor
-// Dependencies: [19, 21, 9217, 6049, 2]
+// Dependencies: [19, 21, 6053, 6055, 2]
 // Exports: default
 
-// Module 16280 (reactParserFor)
+// Module 6052 (reactParserFor)
 import Fragment from "Fragment" /* 21 */;
-import Spoiler from "Spoiler" /* 6049 */;
-import markup_MarkupParserDefault from "markup/MarkupParser" /* 9217 */;
+import MarkupParserDefault from "MarkupParser" /* 6053 */;
+import Spoiler from "Spoiler" /* 6055 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ const result = size.fileFinishedImporting("modules/markup/native/reactParserFor.
 
 export default function reactParserFor() {
   let items = [...arguments];
-  let tmp = markup_MarkupParserDefault;
+  let tmp = MarkupParserDefault;
   const items1 = [...items];
   let closure_0 = tmp.reactParserFor.apply(items1);
   return function parseWithSpoilers() {

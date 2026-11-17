@@ -1,16 +1,16 @@
-// Module ID: 20300
-// Function ID: 20301
+// Module ID: 20348
+// Function ID: 20349
 // Name: MessageCodedLinkManager
-// Dependencies: [5, 8461, 6042, 1083, 6041, 6045, 20301, 7660, 8128, 20308, 12531, 20310, 14101, 20311, 13402, 7882, 20312, 2]
+// Dependencies: [5, 8472, 6046, 1083, 6045, 6049, 20349, 7670, 8139, 20356, 12726, 20358, 12937, 20359, 13559, 7892, 20360, 2]
 
-// Module 20300 (MessageCodedLinkManager)
+// Module 20348 (MessageCodedLinkManager)
 import Constants from "Constants" /* 1083 */;
-import findCodedLinksDefault from "findCodedLinks" /* 6041 */;
-import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 20312 */;
+import findCodedLinksDefault from "findCodedLinks" /* 6045 */;
+import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 20360 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 8461 */;
-import InviteStore from "InviteStore" /* 6042 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 8472 */;
+import InviteStore from "InviteStore" /* 6046 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7892 */;
 import size from "module_2" /* 2 */;
 
 let c0, c1, c2;

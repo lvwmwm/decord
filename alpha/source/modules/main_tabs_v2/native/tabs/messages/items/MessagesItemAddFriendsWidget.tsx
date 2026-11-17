@@ -1,24 +1,24 @@
-// Module ID: 18821
-// Function ID: 18822
+// Module ID: 18862
+// Function ID: 18863
 // Name: MessagesItemAddFriendsWidget
-// Dependencies: [5, 19, 17, 1072, 21, 15621, 575, 5306, 7660, 6004, 1113, 8460, 8475, 5483, 7428, 5919, 16289, 18822, 2]
+// Dependencies: [5, 19, 17, 1072, 21, 15655, 575, 5310, 7670, 6008, 1113, 8471, 8486, 5487, 7438, 5923, 16325, 18863, 2]
 
-// Module 18821 (MessagesItemAddFriendsWidget)
+// Module 18862 (MessagesItemAddFriendsWidget)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
-import RootNavigationRef from "RootNavigationRef" /* 5483 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import Pressables from "Pressables" /* 7428 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 7660 */;
-import IconActionButton from "IconActionButton" /* 15621 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16289 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 18822 */;
+import RootNavigationRef from "RootNavigationRef" /* 5487 */;
+import Text_Text from "Text/Text" /* 5923 */;
+import Pressables from "Pressables" /* 7438 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 7670 */;
+import IconActionButton from "IconActionButton" /* 15655 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16325 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 18863 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 const IconActionButtonDefault = IconActionButton;

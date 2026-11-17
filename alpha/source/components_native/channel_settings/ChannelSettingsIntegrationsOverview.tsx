@@ -1,23 +1,23 @@
-// Module ID: 19706
-// Function ID: 19707
+// Module ID: 19751
+// Function ID: 19752
 // Name: ChannelSettingsIntegrationsOverview
-// Dependencies: [19, 5159, 5155, 1072, 21, 1502, 7259, 7746, 1113, 7443, 8151, 5306, 575, 504, 8106, 6327, 19572, 19707, 2]
+// Dependencies: [19, 5163, 5159, 1072, 21, 1502, 7269, 7756, 1113, 7453, 8162, 5310, 575, 504, 8117, 6335, 19617, 19752, 2]
 // Exports: default
 
-// Module 19706 (ChannelSettingsIntegrationsOverview)
+// Module 19751 (ChannelSettingsIntegrationsOverview)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
 import useNavigation from "useNavigation" /* 1502 */;
-import ChannelRecord from "ChannelRecord" /* 5159 */;
-import TableRowApplicationIconDefault from "TableRowApplicationIcon" /* 8151 */;
-import WebhookIcon from "WebhookIcon" /* 19572 */;
-import ChannelsFollowedIcon from "ChannelsFollowedIcon" /* 19707 */;
+import ChannelRecord from "ChannelRecord" /* 5163 */;
+import TableRowApplicationIconDefault from "TableRowApplicationIcon" /* 8162 */;
+import WebhookIcon from "WebhookIcon" /* 19617 */;
+import ChannelsFollowedIcon from "ChannelsFollowedIcon" /* 19752 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
+import ChannelStore from "ChannelStore" /* 5159 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -36,8 +36,8 @@ function LinkedLobbyFormSection(channel) {
   importDefault = obj.useNavigation();
   const linkedLobby = channel.linkedLobby;
   let application_id;
-  const useGetOrFetchApplication = channel(7259).useGetOrFetchApplication;
-  channel(7259);
+  const useGetOrFetchApplication = channel(7269).useGetOrFetchApplication;
+  channel(7269);
   if (linkedLobby != null) {
     application_id = linkedLobby.application_id;
   }
@@ -45,7 +45,7 @@ function LinkedLobbyFormSection(channel) {
   let tmp6 = null;
   if (null != getOrFetchApplication) {
     const obj2 = { title: intl.string(channel(1113).t.oAvIAg), hasIcons: true, children: closure_6(TableRow, obj3) };
-    const TableRowGroup = tmp(7746).TableRowGroup;
+    const TableRowGroup = tmp(7756).TableRowGroup;
     intl = tmp(1113).intl;
     obj3 = {
       label: getOrFetchApplication.name,
@@ -56,7 +56,7 @@ function LinkedLobbyFormSection(channel) {
           closure_1.push(ChannelSettingsSections.EDIT_LINKED_LOBBY, obj);
         }
     };
-    TableRow = tmp(7443).TableRow;
+    TableRow = tmp(7453).TableRow;
     obj4 = { application: getOrFetchApplication };
     tmp6 = closure_6(TableRowGroup, obj2);
   }
@@ -91,12 +91,12 @@ export default function ConnectedChannelSettingsIntegrationsOverview(arg0) {
   let tmp6Result = null;
   if (null != stateFromStores) {
     const obj3 = { style: tmp4.screenContainer, children: closure_7(Stack, obj4) };
-    const Form = tmp(8106).Form;
+    const Form = tmp(8117).Form;
     obj4 = { style: obj5, spacing: nativeDefault.space.PX_24, children: items2 };
     obj5 = { paddingHorizontal: nativeDefault.space.PX_12 };
-    Stack = tmp(6327).Stack;
+    Stack = tmp(6335).Stack;
     if (canManageWebhooks) {
-      const TableRowGroup = tmp(7746).TableRowGroup;
+      const TableRowGroup = tmp(7756).TableRowGroup;
       const obj6 = {
         label: intl.string(intl5.t.jp25Id),
         subLabel: intl2.string(intl5.t.mKIOkI),
@@ -106,7 +106,7 @@ export default function ConnectedChannelSettingsIntegrationsOverview(arg0) {
               return closure_1.push(ChannelSettingsSections.WEBHOOKS);
             }
       };
-      const TableRow = tmp(7443).TableRow;
+      const TableRow = tmp(7453).TableRow;
       intl = tmp(1113).intl;
       intl2 = tmp(1113).intl;
       const items1 = [closure_6(TableRow, obj6), ];
@@ -121,7 +121,7 @@ export default function ConnectedChannelSettingsIntegrationsOverview(arg0) {
                   return closure_1.push(ChannelSettingsSections.CHANNELS_FOLLOWED);
                 }
         };
-        const TableRow2 = tmp(7443).TableRow;
+        const TableRow2 = tmp(7453).TableRow;
         intl3 = tmp(1113).intl;
         intl4 = tmp(1113).intl;
         hasItem = tmp6(TableRow2, obj7);

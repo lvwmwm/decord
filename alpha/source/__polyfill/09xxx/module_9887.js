@@ -1,140 +1,114 @@
 // Module ID: 9887
 // Function ID: 9888
-// Dependencies: [9853, 9804, 9842, 9803, 9806, 9825, 9797]
+// Dependencies: [9817, 9819]
+// Exports: applyAggregateErrorsToEvent
 
 // Module 9887
-import _mod9803 from "module_9803" /* 9803 */;
-import _mod9804 from "module_9804" /* 9804 */;
-import module_9853 from "module_9853" /* 9853 */;
+import _mod9817 from "module_9817" /* 9817 */;
+import _mod9819 from "module_9819" /* 9819 */;
 
+const require = globalThis.__r;
+let _require, dependencyMap, length;
 
-export const extraErrorDataIntegration = module_9853.defineIntegration(() => {
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
-  }
+function aggregateExceptionsFromError(fn, arg1, arg2, errors, source, arg5, mechanism, exception_id) {
   let closure_1;
-  const depth = obj.depth;
-  let num = 3;
-  if (undefined !== depth) {
-    num = depth;
-  }
-  const captureErrorCause = obj.captureErrorCause;
-  closure_1 = undefined === captureErrorCause || captureErrorCause;
-  let obj2 = {
-    name: "ExtraErrorData",
-    processEvent(contexts, arg1, getOptions) {
-      function _extractErrorData(originalException, arg1, maxValueLength) {
-        try {
-          const items = ["name", "message", "stack", "line", "column", "fileName", "lineNumber", "columnNumber", "toJSON"];
-          const obj = {};
-          const _Object = Object;
-          const keys = Object.keys(originalException);
-          const iter = keys[Symbol.iterator]();
-          const nextResult = iter.next();
-          while (iter !== undefined) {
-            let tmp8 = nextResult;
-            if (-1 === items.indexOf(nextResult)) {
-              let tmp11 = originalException[tmp8];
-              let tmp12 = tmp11;
-              let tmp15 = num;
-              let tmp17 = closure_1_1;
-              let obj2 = num(closure_1_1[1]);
-              if (!obj2.isError(tmp11)) {
-                let truncateResult;
-                if (typeof tmp12 !== "string") {
-                  truncateResult = tmp11;
-                }
-                obj[tmp8] = truncateResult;
-              }
-              let tmp15Result = tmp15(tmp17[4]);
-              let _HermesInternal = HermesInternal;
-              truncateResult = tmp15Result.truncate("" + tmp12, maxValueLength);
-            }
-            continue;
-          }
-          const tmp23 = arg1 && undefined !== originalException.cause;
-          if (tmp23) {
-            let str1;
-            const obj4 = -1(closure_1_1[1]);
-            if (obj4.isError(originalException.cause)) {
-              str1 = str2.toString();
-            } else {
-              str1 = str2;
-            }
-            obj.cause = str1;
-          }
-          if (typeof originalException.toJSON === "function") {
-            const toJSONResult = originalException.toJSON();
-            const _Object2 = Object;
-            const keys1 = Object.keys(toJSONResult);
-            const tmp48 = toJSONResult;
-            for (const item10067 of keys1) {
-              let str5;
-              let tmp32 = tmp48[item10067];
-              let str3 = tmp32;
-              let obj5 = num(closure_1_1[1]);
-              if (obj5.isError(tmp32)) {
-                str5 = str3.toString();
-              } else {
-                str5 = str3;
-              }
-              obj[item10067] = str5;
-              continue;
-            }
-          }
-          return obj;
-        } catch (tmp40) {
-          const tmp41 = num;
-          const tmp43 = closure_1_1;
-          if (num(closure_1_1[5]).DEBUG_BUILD) {
-            const logger = tmp41(tmp43[6]).logger;
-            logger.error("Unable to extract extra data from the Error object:", tmp40);
-          }
-          return null;
-        }
-      }
-      const maxValueLength = getOptions.getOptions().maxValueLength;
-      num = 250;
-      const tmp = num;
-      const tmp2 = closure_1;
-      if (undefined !== maxValueLength) {
-        num = maxValueLength;
-      }
-      let obj = arg1;
-      if (arg1 === undefined) {
-        obj = {};
-      }
-      let tmp3 = contexts;
-      if (obj.originalException) {
-        let obj2 = _mod9804;
-        tmp3 = contexts;
-        if (obj2.isError(obj.originalException)) {
-          const tmp6 = obj.originalException.name || obj.originalException.constructor.name;
-          const tmp7 = _extractErrorData(obj.originalException, tmp2, num);
-          tmp3 = contexts;
-          if (tmp7) {
-            const obj3 = {};
-            let tmp8 = obj3;
-            const merged = Object.assign(contexts.contexts);
-            const normalizer = tmp4(9842);
-            const normalizeResult = normalizer.normalize(tmp7, tmp);
-            const tmp4Result = _mod9804;
-            if (tmp4Result.isPlainObject(normalizeResult)) {
-              const tmp4Result2 = _mod9803;
-              const result = tmp4Result2.addNonEnumerableProperty(normalizeResult, "__sentry_skip_normalization__", true);
-              obj3[tmp6] = normalizeResult;
-            }
-            let obj4 = { contexts: obj3 };
-            let tmp12 = obj4;
-            let tmp13 = contexts;
-            const merged1 = Object.assign(contexts);
-            tmp3 = obj4;
-          }
-        }
-      }
-      return tmp3;
+  let closure_2;
+  _require = fn;
+  dependencyMap = arg1;
+  aggregateExceptionsFromError = arg2;
+  let closure_3 = source;
+  if (arg5.length >= arg2 + 1) {
+    return arg5;
+  } else {
+    let items = [];
+    HermesBuiltin.arraySpread(items, arg5, 0);
+    length = items;
+    let obj3 = require("module_9817");
+    const _Error = Error;
+    if (obj3.isInstanceOf(errors[source], Error)) {
+      mechanism.mechanism = mechanism.mechanism || { type: "generic", handled: true };
+      let obj = { exception_id };
+      const tmp2 = obj;
+      let merged = Object.assign(mechanism.mechanism);
+      const tmp4 = "AggregateError" === mechanism.type && { is_exception_group: true };
+      let tmp6 = tmp4;
+      let merged1 = Object.assign(tmp4);
+      mechanism.mechanism = obj;
+      const tmp8 = fn(arg1, errors[source]);
+      length = length.length;
+      tmp8.mechanism = tmp8.mechanism || { type: "generic", handled: true };
+      let obj2 = { type: "chained", source, exception_id: length, parent_id: exception_id };
+      let merged2 = Object.assign(tmp8.mechanism);
+      tmp8.mechanism = obj2;
+      const tmp12 = aggregateExceptionsFromError;
+      const items1 = [tmp8];
+      let tmp13 = errors[source];
+      HermesBuiltin.arraySpread(items1, length, 1);
+      length = aggregateExceptionsFromError(fn, arg1, arg2, tmp13, source, items1, tmp8, length);
     }
-  };
-  return obj2;
-});
+    const _Array = Array;
+    if (Array.isArray(errors.errors)) {
+      errors = errors.errors;
+      const item = errors.forEach((item, index) => {
+        const obj = _mod9817;
+        if (obj.isInstanceOf(item, Error)) {
+          mechanism.mechanism = mechanism.mechanism || { type: "generic", handled: true };
+          const obj2 = { exception_id };
+          const merged = Object.assign(tmp2.mechanism);
+          const tmp6 = "AggregateError" === mechanism.type && { is_exception_group: true };
+          const merged1 = Object.assign(tmp6);
+          mechanism.mechanism = obj2;
+          const tmp13 = fn(closure_1, item);
+          length = length.length;
+          const _HermesInternal = HermesInternal;
+          mechanism = tmp13.mechanism;
+          const combined = "errors[" + index + "]";
+          if (!mechanism) {
+            mechanism = { type: "generic", handled: true };
+          }
+          tmp13.mechanism = mechanism;
+          const obj3 = { type: "chained", source: combined, exception_id: length, parent_id: exception_id };
+          const merged2 = Object.assign(tmp13.mechanism);
+          tmp13.mechanism = obj3;
+          const items = [tmp13];
+          HermesBuiltin.arraySpread(items, length, 1);
+          length = aggregateExceptionsFromError(tmp11, tmp12, closure_2, item, source, items, tmp13, length);
+        }
+      });
+    }
+    return length;
+  }
+}
+
+export function applyAggregateErrorsToEvent(arg0, arg1, arg2, arg3, arg4, exception, originalException) {
+  let num = arg2;
+  if (arg2 === undefined) {
+    num = 250;
+  }
+  if (exception.exception) {
+    if (exception.exception.values) {
+      const tmp = originalException;
+      if (tmp) {
+        let obj = num(9817);
+        const _Error = Error;
+        if (obj.isInstanceOf(originalException.originalException, Error)) {
+          let tmp5;
+          if (exception.exception.values.length > 0) {
+            tmp5 = exception.exception.values[exception.exception.values.length - 1];
+          }
+          if (tmp5) {
+            exception = exception.exception;
+            const arr = aggregateExceptionsFromError(arg0, arg1, arg4, originalException.originalException, arg3, exception.exception.values, tmp5, 0);
+            exception.values = arr.map((value) => {
+              if (value.value) {
+                const obj = _mod9819;
+                value.value = obj.truncate(value.value, num);
+              }
+              return value;
+            });
+          }
+        }
+      }
+    }
+  }
+}

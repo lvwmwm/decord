@@ -1,26 +1,26 @@
-// Module ID: 7751
-// Function ID: 7752
+// Module ID: 7761
+// Function ID: 7762
 // Name: TrafficConeSpotIllustration
-// Dependencies: [19, 21, 7752, 7753, 7754, 7755, 6010, 2]
+// Dependencies: [19, 21, 7762, 7763, 7764, 7765, 6014, 2]
 // Exports: TrafficConeSpotIllustration
 
-// Module 7751 (TrafficConeSpotIllustration)
+// Module 7761 (TrafficConeSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
-import _modDef7752 from "module_7752" /* 7752 */;
-import _modDef7753 from "module_7753" /* 7753 */;
-import _modDef7754 from "module_7754" /* 7754 */;
-import react_native from "react-native" /* 7755 */;
+import _modDef7762 from "module_7762" /* 7762 */;
+import _modDef7763 from "module_7763" /* 7763 */;
+import _modDef7764 from "module_7764" /* 7764 */;
+import react_native from "react-native" /* 7765 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef7752 };
+let obj2 = { uri: _modDef7762 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef7753 };
+let obj3 = { uri: _modDef7763 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef7754 };
-({ uri: _modDef7754 });
+obj[3] = { uri: _modDef7764 };
+({ uri: _modDef7764 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/TrafficConeSpotIllustration.native.tsx");
 

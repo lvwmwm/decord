@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/hub/native/images", width: 88, height: 80, scales: [2, 3], hash: "d719145f0510a722efd9724a4e3cf026", name: "verify-email", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "1fa18e452308090b708bccf68d32d023", name: "QuestsIcon", type: "png" });

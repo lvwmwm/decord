@@ -1,20 +1,20 @@
-// Module ID: 15252
-// Function ID: 15253
+// Module ID: 11296
+// Function ID: 11297
 // Name: QuestMatchingUtils
-// Dependencies: [32, 2165, 7318, 6954, 2145, 7472, 8831, 8815, 8829, 15137, 2]
+// Dependencies: [32, 2165, 7328, 6962, 2145, 7482, 8842, 8826, 8840, 11297, 2]
 // Exports: getActivityQuestForApplicationId, getEligibleQuestsForApplicationId, getQuestApplicationIdsForRunningGame, getQuestByApplicationId, getQuestsFromActivities
 
-// Module 15252 (QuestMatchingUtils)
+// Module 11296 (QuestMatchingUtils)
 import Constants from "Constants" /* 2145 */;
-import ActivityGamePlatforms from "ActivityGamePlatforms" /* 7472 */;
-import QuestExpirationUtils from "QuestExpirationUtils" /* 8815 */;
-import utils_QuestUtils from "utils/QuestUtils" /* 8829 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 8831 */;
-import getApplicationIdsForGameDefault from "getApplicationIdsForGame" /* 15137 */;
+import ActivityGamePlatforms from "ActivityGamePlatforms" /* 7482 */;
+import QuestExpirationUtils from "QuestExpirationUtils" /* 8826 */;
+import utils_QuestUtils from "utils/QuestUtils" /* 8840 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 8842 */;
+import getApplicationIdsForGameDefault from "getApplicationIdsForGame" /* 11297 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
-import SocialSdkApplicationStore from "SocialSdkApplicationStore" /* 7318 */;
-import QuestConstants from "QuestConstants" /* 6954 */;
+import SocialSdkApplicationStore from "SocialSdkApplicationStore" /* 7328 */;
+import QuestConstants from "QuestConstants" /* 6962 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -26,7 +26,7 @@ function questMatchesActivity(application_id, id) {
     const tmp3 = application_id.application_id === closure_9 || application_id.platform === ActivityGamePlatforms.ActivityGamePlatforms.XBOX;
     if (!tmp3) {
       let tmp10;
-      const tmp9 = application_id.platform === ActivityGamePlatforms.ActivityGamePlatforms.PLAYSTATION_4 || application_id.platform === tmp7(7472).ActivityGamePlatforms.PLAYSTATION_5;
+      const tmp9 = application_id.platform === ActivityGamePlatforms.ActivityGamePlatforms.PLAYSTATION_4 || application_id.platform === tmp7(7482).ActivityGamePlatforms.PLAYSTATION_5;
       if (!tmp9) {
         tmp10 = null != id && id.id === metroImportDefault && application_id.application_id === metroImportAll;
         if (!tmp10) {

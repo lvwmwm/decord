@@ -1,32 +1,32 @@
-// Module ID: 17694
-// Function ID: 17695
+// Module ID: 17732
+// Function ID: 17733
 // Name: PlayableStore
-// Dependencies: [8805, 7019, 2120, 5949, 7020, 7047, 1092, 8806, 6957, 6961, 504, 572, 2]
+// Dependencies: [7027, 2120, 5953, 7028, 7055, 1092, 6969, 504, 572, 2]
 
-// Module 17694 (PlayableStore)
+// Module 17732 (PlayableStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5949 */;
-import QuestTypes from "QuestTypes" /* 6957 */;
-import AdCreativeType from "AdCreativeType" /* 6961 */;
-import FramesConstants from "FramesConstants" /* 7020 */;
-import DiscordAppStateDefault from "DiscordAppState" /* 7047 */;
-import AdDecisionUtils from "AdDecisionUtils" /* 8806 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 8805 */;
-import FramesStore from "FramesStore" /* 7019 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5953 */;
+import AdCreativeType from "AdCreativeType" /* 6969 */;
+import DiscordAppStateDefault from "DiscordAppState" /* 7055 */;
+import FramesStore from "FramesStore" /* 7027 */;
 import AppStateStore from "AppStateStore" /* 2120 */;
+import FramesConstants from "FramesConstants" /* 7028 */;
 import size from "module_2" /* 2 */;
 
+let c10;
+let c9;
+let unpackModuleId;
 function pauseOrResumeTimer(startedAt) {
   let diff;
   startedAt = startedAt.startedAt;
   obj = FramesStore;
-  const tmp3 = asLaunched(FramesStore.getFrame(startedAt.frameId));
+  const tmp3 = React4(FramesStore.getFrame(startedAt.frameId));
   const obj2 = DiscordAppStateDefault;
   const state = obj2.getState();
   let tmp8 = state === ConstantsIOS.AppStates.ACTIVE;
-  const tmp2 = asLaunched;
+  const tmp2 = React4;
   if (tmp8) {
     let activityPanelMode;
     if (tmp3 != null) {
@@ -76,39 +76,51 @@ function handleVisibilityChange() {
   return tmp;
 }
 const ActivityPanelModes = ActivityPanelConstants.ActivityPanelModes;
-const asLaunched = FramesConstants.asLaunched;
+({ asLaunched: c9, makeFrameId: c10, MAIN_SURFACE: unpackModuleId } = FramesConstants);
+let c3 = null;
 let obj = null;
 let set = new Set();
 const Store = get_initializedDefault.Store;
 class PlayableStore extends Store {
   initialize() {
-    this.waitFor(FramesStore, AdDeliveryStore, AppStateStore);
+    this.waitFor(FramesStore, AppStateStore);
+  }
+  getPlayableForFrame(frameId) {
+    frameId = undefined;
+    if (obj != null) {
+      frameId = obj.frameId;
+    }
+    playable = null;
+    if (frameId === frameId) {
+      playable = obj.playable;
+    }
+    return playable;
   }
   getPlayingPlayableId() {
-    let playableId;
+    let id;
     if (obj != null) {
-      playableId = obj.playableId;
+      id = obj.playable.id;
     }
-    if (playableId == null) {
-      playableId = null;
+    if (id == null) {
+      id = null;
     }
-    return playableId;
+    return id;
   }
   isPlayableCompleted(id) {
     return set.has(id);
   }
   isRunning(arg0) {
-    let playableId;
+    let id;
     if (obj != null) {
-      playableId = obj.playableId;
+      id = obj.playable.id;
     }
-    return playableId === arg0 && null != obj.startedAt;
+    return id === arg0 && null != obj.startedAt;
   }
   getRemainingMs(playingPlayableId) {
     let tmp = null;
     if (null != obj) {
       tmp = null;
-      if (obj.playableId === playingPlayableId) {
+      if (obj.playable.id === playingPlayableId) {
         let remainingMs;
         if (null == obj.startedAt) {
           remainingMs = obj.remainingMs;
@@ -127,45 +139,63 @@ const prototype = PlayableStore.prototype;
 PlayableStore.displayName = "PlayableStore";
 obj = {
   LOGOUT: function handleLogout() {
+    let c3 = null;
     new Set();
+  },
+  PLAYABLE_LAUNCH: function handlePlayableLaunch(playable) {
+    playable = playable.playable;
+    return false;
   },
   FRAME_IFRAME_MOUNT: function handleFrameIframeMount(frameId) {
     frameId = frameId.frameId;
-    if (null != obj) {
-      return false;
-    } else {
-      const getDeliveredPlayable = AdDecisionUtils.getDeliveredPlayable;
-      AdDecisionUtils;
-      let first = AdDeliveryStore.getAdDecisionsForPlacement(QuestTypes.AdPlacement.MOBILE_HOME_DOCK_AREA)[0];
-      if (first == null) {
-        first = null;
+    obj = FramesStore;
+    const frame = FramesStore.getFrame(frameId);
+    let tmp3 = null != playable;
+    if (tmp3) {
+      let applicationId1;
+      const applicationId = tmp2.applicationId;
+      if (frame != null) {
+        applicationId1 = frame.applicationId;
       }
-      let creative;
-      if (first != null) {
-        creative = first.creative;
-      }
-      const deliveredPlayable = getDeliveredPlayable(creative);
-      if (null != deliveredPlayable) {
-        const applicationId = deliveredPlayable.applicationId;
-        const frame = FramesStore.getFrame(frameId);
-        let applicationId1;
-        if (frame != null) {
-          applicationId1 = frame.applicationId;
-        }
-        if (applicationId === applicationId1) {
-          obj = { playableId: deliveredPlayable.id, frameId, remainingMs: 1000 * deliveredPlayable.rewardTimerSeconds, startedAt: null };
-          pauseOrResumeTimer(obj);
-        }
-      }
-      return false;
+      tmp3 = applicationId === applicationId1;
     }
+    if (tmp3) {
+      const mainFrame = obj.getMainFrame();
+      let id;
+      if (mainFrame != null) {
+        id = mainFrame.id;
+      }
+      let flag = false;
+      if (id === frameId) {
+        flag = false;
+        if (frameId === authStore(playable.applicationId, unpackModuleId)) {
+          playable = null;
+          const obj2 = { playable, frameId, remainingMs: 1000 * playable.rewardTimerSeconds, startedAt: null };
+          obj = obj2;
+          pauseOrResumeTimer(obj2);
+        }
+      }
+      tmp3 = flag;
+    }
+    return tmp3;
   },
   FRAME_STOP: function handleFrameStop(arg0) {
+    let applicationId;
+    let frameId;
+    ({ frameId, applicationId } = arg0);
+    let applicationId1;
+    if (playable != null) {
+      applicationId1 = playable.applicationId;
+    }
+    const tmp2 = applicationId1 === applicationId && frameId === authStore(applicationId, unpackModuleId);
+    if (tmp2) {
+      playable = null;
+    }
     return false;
   },
   PLAYABLE_REWARD_TIMER_COMPLETE: function handlePlayableRewardTimerComplete(arg0) {
     if (null != obj) {
-      if (obj.playableId === tmp) {
+      if (obj.playable.id === tmp) {
         obj = { remainingMs: 0, startedAt: null };
         const merged = Object.assign(obj);
       }

@@ -1,17 +1,17 @@
-// Module ID: 11215
-// Function ID: 11216
+// Module ID: 11182
+// Function ID: 11183
 // Name: Carousel
-// Dependencies: [19, 17, 21, 5306, 575, 5367, 1187, 5588, 2]
+// Dependencies: [19, 17, 21, 5310, 575, 5371, 1187, 5592, 2]
 
-// Module 11215 (Carousel)
+// Module 11182 (Carousel)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import native2 from "native" /* 5367 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5588 */;
+import native2 from "native" /* 5371 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5592 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let c2;

@@ -1,17 +1,17 @@
-// Module ID: 14210
-// Function ID: 14211
+// Module ID: 13073
+// Function ID: 13074
 // Name: AppealIngestionFreeTextAppealReasonActionSheet
-// Dependencies: [32, 19, 17, 8231, 21, 5306, 575, 504, 1113, 5556, 6327, 7428, 7549, 14188, 7859, 5919, 5926, 2]
+// Dependencies: [32, 19, 17, 8242, 21, 5310, 575, 504, 1113, 5560, 6335, 7438, 7559, 13062, 7869, 5923, 5930, 2]
 // Exports: default
 
-// Module 14210 (AppealIngestionFreeTextAppealReasonActionSheet)
+// Module 13073 (AppealIngestionFreeTextAppealReasonActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 8231 */;
+import SafetyHubStore from "SafetyHubStore" /* 8242 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;

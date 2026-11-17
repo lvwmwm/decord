@@ -1,10 +1,10 @@
-// Module ID: 9494
-// Function ID: 9495
+// Module ID: 9506
+// Function ID: 9507
 // Name: utils
 // Dependencies: [32, 19, 12, 2]
 // Exports: sortEffectLayers, usePotentiallyRandomizedProfileEffect
 
-// Module 9494 (utils)
+// Module 9506 (utils)
 import _mod12 from "module_12" /* 12 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -30,7 +30,7 @@ export function usePotentiallyRandomizedProfileEffect(arg0) {
   let tmp5;
   let tmp8;
   let tmp9;
-  const f98296 = (acc, randomizedSources) => {
+  const f98492 = (acc, randomizedSources) => {
     randomizedSources = randomizedSources.randomizedSources;
     let num;
     if (randomizedSources != null) {
@@ -50,7 +50,7 @@ export function usePotentiallyRandomizedProfileEffect(arg0) {
     }
     return tmp;
   };
-  const f98297 = (randomizedSources) => {
+  const f98493 = (randomizedSources) => {
     const tmp = null != randomizedSources.randomizedSources && randomizedSources.randomizedSources.length > 0;
     if (tmp) {
       randomizedSources.src = randomizedSources.randomizedSources[closure_0].src;
@@ -70,10 +70,10 @@ export function usePotentiallyRandomizedProfileEffect(arg0) {
     let num = 0;
     let _Math = Math;
     const _Math2 = Math;
-    const diff = effects.reduce(f98296, 0) - 1;
+    const diff = effects.reduce(f98492, 0) - 1;
     closure_0 = Math.floor(Math.random() * (diff + 1));
     const effects1 = cloneDeepResult.effects;
-    cloneDeepResult.effects = effects1.map(f98297);
+    cloneDeepResult.effects = effects1.map(f98493);
     tmp6 = cloneDeepResult;
   }
   [tmp8, tmp9] = _slicedToArray(useState(tmp6), 2);
@@ -89,10 +89,10 @@ export function usePotentiallyRandomizedProfileEffect(arg0) {
       const effects2 = cloneDeepResult1.effects;
       const _Math3 = Math;
       const _Math4 = Math;
-      const diff1 = effects2.reduce(f98296, 0) - 1;
+      const diff1 = effects2.reduce(f98492, 0) - 1;
       closure_0 = Math.floor(Math.random() * (diff1 + 1));
       const effects3 = cloneDeepResult1.effects;
-      cloneDeepResult1.effects = effects3.map(f98297);
+      cloneDeepResult1.effects = effects3.map(f98493);
       tmp13 = cloneDeepResult1;
     }
     tmp9(tmp13);

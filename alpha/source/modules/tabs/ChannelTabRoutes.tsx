@@ -1,16 +1,16 @@
-// Module ID: 10278
-// Function ID: 10279
+// Module ID: 10704
+// Function ID: 10705
 // Name: ChannelTabRoutes
-// Dependencies: [1072, 5162, 5357, 1113, 5344, 4131, 2]
+// Dependencies: [1072, 5166, 5361, 1113, 5348, 4133, 2]
 // Exports: getRouteTabForLocation
 
-// Module 10278 (ChannelTabRoutes)
+// Module 10704 (ChannelTabRoutes)
 import Constants from "Constants" /* 1072 */;
 import intl6 from "intl" /* 1113 */;
-import _modDef4131 from "module_4131" /* 4131 */;
-import ChannelConstants from "ChannelConstants" /* 5162 */;
-import matchPathCompat from "matchPathCompat" /* 5344 */;
-import RouteUtils from "RouteUtils" /* 5357 */;
+import _modDef4133 from "module_4133" /* 4133 */;
+import ChannelConstants from "ChannelConstants" /* 5166 */;
+import matchPathCompat from "matchPathCompat" /* 5348 */;
+import RouteUtils from "RouteUtils" /* 5361 */;
 import size from "module_2" /* 2 */;
 
 const Routes = Constants.Routes;
@@ -60,7 +60,7 @@ export function getRouteTabForLocation(location) {
     const tmp2 = require;
     if (null != obj.matchPath(pathname, obj6)) {
       const _HermesInternal = HermesInternal;
-      const obj7 = { routePath: "" + pathname + search + str, routeLabel: intl.string(_modDef4131.uk6jhJ) };
+      const obj7 = { routePath: "" + pathname + search + str, routeLabel: intl.string(_modDef4133.uk6jhJ) };
       intl = tmp2(1113).intl;
       tmp5 = obj7;
     }

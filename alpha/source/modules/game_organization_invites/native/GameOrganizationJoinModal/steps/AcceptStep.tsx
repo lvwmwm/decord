@@ -1,17 +1,17 @@
-// Module ID: 14080
-// Function ID: 14081
+// Module ID: 12904
+// Function ID: 12905
 // Name: AcceptStep
-// Dependencies: [5, 32, 19, 12369, 14074, 21, 5306, 14072, 1502, 7493, 12536, 14081, 14093, 6005, 1113, 8208, 8210, 6327, 575, 5919, 2565, 14095, 14096, 14079, 6941, 5926, 2]
+// Dependencies: [5, 32, 19, 12573, 12898, 21, 5310, 12896, 1502, 7503, 12731, 12905, 12917, 6009, 1113, 8219, 8221, 6335, 575, 5923, 2565, 12919, 12920, 12734, 12903, 6949, 5930, 2]
 // Exports: AcceptStep
 
-// Module 14080 (AcceptStep)
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 12369 */;
-import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 14074 */;
+// Module 12904 (AcceptStep)
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 12573 */;
+import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 12898 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let c5, closure_3, constants, id, navigation;
@@ -41,6 +41,7 @@ export function AcceptStep(code) {
   let items4;
   let items5;
   let obj12;
+  let obj14;
   let obj7;
   code = code.code;
   let character = code.character;
@@ -195,7 +196,7 @@ export function AcceptStep(code) {
   if (null == tmp4) {
     return null;
   } else {
-    let str = tmp4.displayNoun;
+    const displayNoun = tmp4.displayNoun;
     const linkedGuild = tmp4.linkedGuild;
     const ModalScreen = tmp5(tmp3[15]).ModalScreen;
     const ModalContent = tmp5(tmp3[16]).ModalContent;
@@ -207,30 +208,35 @@ export function AcceptStep(code) {
     const Text2 = tmp5(tmp3[19]).Text;
     const intl4 = tmp5(tmp3[14]).intl;
     formatToPlainString = intl4.formatToPlainString;
+    let str = displayNoun;
     WmxMAI = tmp2(tmp3[20]).WmxMAI;
-    if (str == null) {
+    if (displayNoun == null) {
       str = "other";
     }
     let obj5 = { children: items4 };
-    let obj6 = { children: tmp11(Stack2, obj2) };
+    let obj6 = { children: tmp12(Stack2, obj2) };
     obj7 = { displayNoun: str };
-    items1 = [tmp12(Text2, obj4), ];
+    items1 = [tmp13(Text2, obj4), ];
     let obj8 = { linkedGuild };
     items1[1] = closure_8(character(tmp3[21]), obj8);
-    items2 = [tmp11(Stack3, obj3), ];
+    items2 = [tmp12(Stack3, obj3), ];
     const obj9 = { spacing: character(tmp3[18]).space.PX_24, children: items3 };
     const Stack = tmp5(tmp3[17]).Stack;
     const obj10 = { variant: "heading-lg/semibold", children: intl.string(character(tmp3[20]).yFqGy8) };
     const Text = tmp5(tmp3[19]).Text;
     intl = tmp5(tmp3[14]).intl;
-    items3 = [tmp12(Text, obj10), tmp12(tmp2(tmp3[22]), {})];
+    items3 = [tmp13(Text, obj10), ];
+    const obj11 = { noun: character(tmp3[23])(obj12) };
+    obj12 = { displayNoun, lowercase: true };
+    const tmp2Result = character(tmp3[22]);
+    items3[1] = closure_8(tmp2Result, obj11);
     items2[1] = closure_9(Stack, obj9);
-    items4 = [tmp12(ModalContent, obj6), ];
-    const obj11 = { children: closure_9(ButtonGroup, obj12) };
-    const ModalFooter = tmp5(tmp3[23]).ModalFooter;
-    obj12 = { style: tmp.buttonGroup, children: items5 };
-    ButtonGroup = tmp5(tmp3[24]).ButtonGroup;
-    const obj13 = {
+    items4 = [tmp13(ModalContent, obj6), ];
+    const obj13 = { children: closure_9(ButtonGroup, obj14) };
+    const ModalFooter = tmp5(tmp3[24]).ModalFooter;
+    obj14 = { style: tmp.buttonGroup, children: items5 };
+    ButtonGroup = tmp5(tmp3[25]).ButtonGroup;
+    const obj15 = {
       text: intl2.string(character(tmp3[20]).BaZ6nt),
       size: "lg",
       loading: disabled,
@@ -239,14 +245,14 @@ export function AcceptStep(code) {
           return obj(...arguments);
         }
     };
-    const Button = tmp5(tmp3[25]).Button;
+    const Button = tmp5(tmp3[26]).Button;
     intl2 = tmp5(tmp3[14]).intl;
-    items5 = [tmp12(Button, obj13), ];
-    const obj14 = { text: intl3.string(code(tmp3[14]).t["ETE/oC"]), size: "lg", variant: "secondary", onPress, disabled };
-    const Button2 = tmp5(tmp3[25]).Button;
+    items5 = [tmp13(Button, obj15), ];
+    const obj16 = { text: intl3.string(code(tmp3[14]).t["ETE/oC"]), size: "lg", variant: "secondary", onPress, disabled };
+    const Button2 = tmp5(tmp3[26]).Button;
     intl3 = tmp5(tmp3[14]).intl;
-    items5[1] = closure_8(Button2, obj14);
-    items4[1] = closure_8(ModalFooter, obj11);
+    items5[1] = closure_8(Button2, obj16);
+    items4[1] = closure_8(ModalFooter, obj13);
     return closure_9(ModalScreen, obj5);
   }
 }

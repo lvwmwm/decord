@@ -1,19 +1,19 @@
-// Module ID: 15776
-// Function ID: 15777
+// Module ID: 15810
+// Function ID: 15811
 // Name: UserProfileEditNoteModal
-// Dependencies: [32, 19, 21, 1502, 6838, 7490, 1360, 1113, 5919, 7493, 15777, 2]
+// Dependencies: [32, 19, 21, 1502, 6833, 7500, 1360, 1113, 5923, 7503, 15811, 2]
 // Exports: default
 
-// Module 15776 (UserProfileEditNoteModal)
+// Module 15810 (UserProfileEditNoteModal)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1360 */;
 import useNavigation from "useNavigation" /* 1502 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
-import Navigator2 from "Navigator" /* 7490 */;
-import NavigatorHeader from "NavigatorHeader" /* 7493 */;
-import UserProfileEditNote from "UserProfileEditNote" /* 15777 */;
+import Text_Text from "Text/Text" /* 5923 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6833 */;
+import Navigator2 from "Navigator" /* 7500 */;
+import NavigatorHeader from "NavigatorHeader" /* 7503 */;
+import UserProfileEditNote from "UserProfileEditNote" /* 15811 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

@@ -1,20 +1,20 @@
-// Module ID: 18913
-// Function ID: 18914
+// Module ID: 18954
+// Function ID: 18955
 // Name: AccountLinkBanner
-// Dependencies: [19, 17, 1388, 5152, 21, 575, 7924, 6051, 5932, 5306, 563, 7918, 7937, 7445, 7428, 7549, 1187, 5919, 1113, 5926, 10386, 2]
+// Dependencies: [19, 17, 1388, 5156, 21, 575, 7934, 6057, 5936, 5310, 563, 7928, 7947, 7455, 7438, 7559, 1187, 5923, 1113, 5930, 10496, 2]
 // Exports: getScaledAccountLinkBannerHeight
 
-// Module 18913 (AccountLinkBanner)
+// Module 18954 (AccountLinkBanner)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
-import ButtonConstants from "ButtonConstants" /* 5932 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 6051 */;
-import GameIcon from "GameIcon" /* 7924 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5156 */;
+import ButtonConstants from "ButtonConstants" /* 5936 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 6057 */;
+import GameIcon from "GameIcon" /* 7934 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,14 +1,14 @@
-// Module ID: 8073
-// Function ID: 8074
+// Module ID: 8084
+// Function ID: 8085
 // Name: BookCheckIcon
-// Dependencies: [19, 21, 575, 6009, 8060, 2]
+// Dependencies: [19, 21, 575, 6013, 8071, 2]
 // Exports: BookCheckIcon
 
-// Module 8073 (BookCheckIcon)
+// Module 8084 (BookCheckIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6009 */;
-import AssetRegistry from "AssetRegistry" /* 8060 */;
+import BaseIconImage2 from "BaseIconImage" /* 6013 */;
+import AssetRegistry from "AssetRegistry" /* 8071 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

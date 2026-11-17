@@ -1,19 +1,19 @@
-// Module ID: 14084
-// Function ID: 14085
+// Module ID: 12908
+// Function ID: 12909
 // Name: GameOrganizationJoinSuccessGraphic
-// Dependencies: [19, 17, 21, 5306, 575, 6327, 14076, 14085, 14089, 2]
+// Dependencies: [19, 17, 21, 5310, 575, 6335, 12900, 12909, 12913, 2]
 // Exports: default
 
-// Module 14084 (GameOrganizationJoinSuccessGraphic)
+// Module 12908 (GameOrganizationJoinSuccessGraphic)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Stack_Stack from "Stack/Stack" /* 6327 */;
-import GameOrganizationIconDefault from "GameOrganizationIcon" /* 14076 */;
-import CharacterFallbackAbstractUI from "CharacterFallbackAbstractUI" /* 14085 */;
-import GuildFallbackAbstractUI from "GuildFallbackAbstractUI" /* 14089 */;
+import Stack_Stack from "Stack/Stack" /* 6335 */;
+import GameOrganizationIconDefault from "GameOrganizationIcon" /* 12900 */;
+import CharacterFallbackAbstractUI from "CharacterFallbackAbstractUI" /* 12909 */;
+import GuildFallbackAbstractUI from "GuildFallbackAbstractUI" /* 12913 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -47,7 +47,7 @@ export default function GameOrganizationJoinSuccessGraphic(character) {
   size = { width: v78, height: v78, accessible: false };
   items = [React3(tmp8, obj3), , ];
   const obj4 = { direction: "horizontal", spacing: nativeDefault.space.PX_4, style: tmp.dots, children: items1 };
-  const Stack2 = tmp5(6327).Stack;
+  const Stack2 = tmp5(6335).Stack;
   items1 = [, , ];
   const obj5 = { style: tmp.dot };
   items1[0] = React3(View, obj5);

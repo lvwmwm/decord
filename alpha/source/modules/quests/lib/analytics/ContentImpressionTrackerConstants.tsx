@@ -1,9 +1,9 @@
-// Module ID: 10137
-// Function ID: 10138
+// Module ID: 10581
+// Function ID: 10582
 // Name: ContentImpressionTrackerConstants
 // Dependencies: [2]
 
-// Module 10137 (ContentImpressionTrackerConstants)
+// Module 10581 (ContentImpressionTrackerConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/quests/lib/analytics/ContentImpressionTrackerConstants.tsx");

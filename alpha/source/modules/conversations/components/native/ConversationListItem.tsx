@@ -1,22 +1,22 @@
-// Module ID: 9154
-// Function ID: 9155
+// Module ID: 9165
+// Function ID: 9166
 // Name: ConversationListItem
-// Dependencies: [19, 17, 8745, 5947, 1072, 21, 5306, 575, 1502, 504, 9121, 9139, 9124, 7445, 5919, 1113, 7533, 5883, 9155, 9156, 9158, 2]
+// Dependencies: [19, 17, 8756, 5951, 1072, 21, 5310, 575, 1502, 504, 9132, 9150, 9135, 7455, 5923, 1113, 7543, 5887, 9166, 9167, 9169, 2]
 
-// Module 9154 (ConversationListItem)
+// Module 9165 (ConversationListItem)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import ConversationConstants from "ConversationConstants" /* 5947 */;
-import ConversationsActionCreators from "ConversationsActionCreators" /* 9121 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9124 */;
-import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 9139 */;
-import ConversationPreviewBlockedMessageDefault from "ConversationPreviewBlockedMessage" /* 9156 */;
-import ConversationPreviewMessageDefault from "ConversationPreviewMessage" /* 9158 */;
+import ConversationConstants from "ConversationConstants" /* 5951 */;
+import ConversationsActionCreators from "ConversationsActionCreators" /* 9132 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9135 */;
+import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 9150 */;
+import ConversationPreviewBlockedMessageDefault from "ConversationPreviewBlockedMessage" /* 9167 */;
+import ConversationPreviewMessageDefault from "ConversationPreviewMessage" /* 9169 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 8745 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 8756 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let navigation;

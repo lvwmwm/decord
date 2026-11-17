@@ -1,21 +1,21 @@
-// Module ID: 19579
-// Function ID: 19580
+// Module ID: 19624
+// Function ID: 19625
 // Name: ChannelDetailsTopic
-// Dependencies: [32, 19, 17, 1388, 10897, 1072, 21, 5306, 1380, 19580, 1655, 5929, 6047, 11059, 7428, 5919, 1113, 5883, 504, 5362, 6346, 2]
+// Dependencies: [32, 19, 17, 1388, 11209, 1072, 21, 5310, 1380, 19625, 1655, 5933, 6051, 11817, 7438, 5923, 1113, 5887, 504, 5366, 6354, 2]
 
-// Module 19579 (ChannelDetailsTopic)
+// Module 19624 (ChannelDetailsTopic)
 import Constants from "Constants" /* 1072 */;
-import UserUtilsDefault from "UserUtils" /* 5362 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 6047 */;
-import ChannelUtils from "ChannelUtils" /* 6346 */;
-import MentionPillOffset from "MentionPillOffset" /* 11059 */;
+import UserUtilsDefault from "UserUtils" /* 5366 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 6051 */;
+import ChannelUtils from "ChannelUtils" /* 6354 */;
+import MentionPillOffset from "MentionPillOffset" /* 11817 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1388 */;
-import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10897 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 11209 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import size from "module_2" /* 2 */;
 
@@ -312,7 +312,7 @@ function PrivateChannelDetailsTopic(channel) {
   if (null != stateFromStores) {
     const obj2 = { variant: "heading-xs/medium", color: "interactive-text-default", style: obj3, children: stateFromStores };
     obj3 = { textAlign };
-    tmp4 = closure_11(tmp(5919).Text, obj2);
+    tmp4 = closure_11(tmp(5923).Text, obj2);
   }
   return tmp4;
 }
@@ -331,7 +331,7 @@ function GroupDMChannelDetailsTopic(channel) {
   if (null != stateFromStores) {
     const obj2 = { variant: "heading-xs/medium", color: "interactive-text-default", style: obj3, children: stateFromStores };
     obj3 = { textAlign };
-    tmp4 = closure_11(tmp(5919).Text, obj2);
+    tmp4 = closure_11(tmp(5923).Text, obj2);
   }
   return tmp4;
 }

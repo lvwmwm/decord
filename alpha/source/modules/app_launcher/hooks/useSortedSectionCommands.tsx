@@ -1,13 +1,13 @@
-// Module ID: 13469
-// Function ID: 13470
+// Module ID: 13624
+// Function ID: 13625
 // Name: useSortedSectionCommands
-// Dependencies: [32, 19, 13470, 13402, 1089, 2]
+// Dependencies: [32, 19, 13625, 13559, 1089, 2]
 // Exports: default
 
-// Module 13469 (useSortedSectionCommands)
+// Module 13624 (useSortedSectionCommands)
 import DurationsDefault from "Durations" /* 1089 */;
-import ApplicationDirectoryActionCreatorsAll from "ApplicationDirectoryActionCreators" /* 13402 */;
-import AppLauncherConstants from "AppLauncherConstants" /* 13470 */;
+import ApplicationDirectoryActionCreatorsAll from "ApplicationDirectoryActionCreators" /* 13559 */;
+import AppLauncherConstants from "AppLauncherConstants" /* 13625 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -42,7 +42,7 @@ export default function useSortedSectionCommands(sectionId) {
   }, items);
   const items1 = [memo];
   const memo1 = react.useMemo(() => {
-    const f142822 = (command) => command.command;
+    const f143229 = (command) => command.command;
     if (memo.length <= 1) {
       return { popularSortedCommands: memo, canSort: false };
     } else {
@@ -72,8 +72,8 @@ export default function useSortedSectionCommands(sectionId) {
             return 1;
           }
         });
-        obj = { popularSortedCommands: mapped.map(f142822), canSort: true };
-        const obj3 = { popularSortedCommands: mapped.map(f142822), canSort: true };
+        obj = { popularSortedCommands: mapped.map(f143229), canSort: true };
+        const obj3 = { popularSortedCommands: mapped.map(f143229), canSort: true };
       } else {
         obj = { popularSortedCommands: memo, canSort: false };
       }

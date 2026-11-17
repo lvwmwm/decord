@@ -1,13 +1,13 @@
-// Module ID: 10143
-// Function ID: 10144
+// Module ID: 10587
+// Function ID: 10588
 // Name: AdCreativeServerUtils
-// Dependencies: [6961, 10144, 10160, 2]
+// Dependencies: [6969, 10588, 10604, 2]
 // Exports: adCreativeFromServer
 
-// Module 10143 (AdCreativeServerUtils)
-import AdCreativeType from "AdCreativeType" /* 6961 */;
-import BountyTypes from "BountyTypes" /* 10144 */;
-import PlayableTypes from "PlayableTypes" /* 10160 */;
+// Module 10587 (AdCreativeServerUtils)
+import AdCreativeType from "AdCreativeType" /* 6969 */;
+import BountyTypes from "BountyTypes" /* 10588 */;
+import PlayableTypes from "PlayableTypes" /* 10604 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/ads/utils/AdCreativeServerUtils.tsx");

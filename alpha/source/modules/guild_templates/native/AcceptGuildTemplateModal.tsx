@@ -1,20 +1,20 @@
-// Module ID: 14046
-// Function ID: 14047
+// Module ID: 12869
+// Function ID: 12870
 // Name: AcceptGuildTemplateModal
-// Dependencies: [5, 32, 19, 8461, 1072, 21, 5306, 5882, 504, 7075, 14047, 7415, 14048, 8879, 14058, 14045, 7493, 7490, 2]
+// Dependencies: [5, 32, 19, 8472, 1072, 21, 5310, 5886, 504, 7083, 12870, 7425, 12871, 8890, 12882, 12868, 7503, 7500, 2]
 // Exports: default
 
-// Module 14046 (AcceptGuildTemplateModal)
+// Module 12869 (AcceptGuildTemplateModal)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import NavigatorConstants from "NavigatorConstants" /* 5882 */;
-import NavigatorHeader from "NavigatorHeader" /* 7493 */;
-import AcceptGuildTemplateActionCreatorsDefault from "AcceptGuildTemplateActionCreators" /* 14058 */;
+import NavigatorConstants from "NavigatorConstants" /* 5886 */;
+import NavigatorHeader from "NavigatorHeader" /* 7503 */;
+import AcceptGuildTemplateActionCreatorsDefault from "AcceptGuildTemplateActionCreators" /* 12882 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 8461 */;
-import createStyles from "createStyles" /* 5306 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 8472 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, dependencyMap;
@@ -38,12 +38,12 @@ function ConnectedAcceptGuildTemplate(code) {
   const items = [GuildTemplateStore];
   const stateFromStores = obj.useStateFromStores(items, () => GuildTemplateStore.getGuildTemplate(code));
   const useState = react.useState;
-  let obj2 = name(7075);
+  let obj2 = name(7083);
   [name, dependencyMap] = useState(obj2.getGuildNameSuggestion());
   [first1, _slicedToArray] = react.useState(null);
   [first2, react] = react.useState(null);
-  stateFromStores(14047)(stateFromStores);
-  const SafeAreaPaddingView = code(7415).SafeAreaPaddingView;
+  stateFromStores(12870)(stateFromStores);
+  const SafeAreaPaddingView = code(7425).SafeAreaPaddingView;
   let obj4 = {
     code,
     guildTemplate: stateFromStores,
@@ -121,7 +121,7 @@ function ConnectedAcceptGuildTemplate(code) {
       }
     }
   };
-  stateFromStores(14048);
+  stateFromStores(12871);
   return <SafeAreaPaddingView top style={tmp.container}>{null}</SafeAreaPaddingView>;
 }
 let _slicedToArray = _slicedToArray_mod;
@@ -158,5 +158,5 @@ export default function AcceptGuildTemplateModal(code) {
     obj4 = NavigatorHeader;
     return obj2;
   }, items);
-  return jsx(code(7490).Navigator, { initialRouteName: ACCEPT_GUILD_TEMPLATE, screens: memo });
+  return jsx(code(7500).Navigator, { initialRouteName: ACCEPT_GUILD_TEMPLATE, screens: memo });
 };

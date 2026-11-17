@@ -1,26 +1,26 @@
-// Module ID: 12131
-// Function ID: 12132
+// Module ID: 10872
+// Function ID: 10873
 // Name: UserProfileWidgetsBoard
-// Dependencies: [19, 17, 8479, 7355, 21, 5306, 575, 12104, 8545, 7988, 10449, 1113, 12132, 12103, 12090, 12139, 6321, 12097, 12141, 5919, 7353, 12142, 12109, 12144, 12111, 12089, 12145, 7357, 12146, 7358, 12085, 12279, 2]
+// Dependencies: [19, 17, 8490, 7365, 21, 5310, 575, 10838, 8556, 7999, 10198, 1113, 10873, 10837, 10822, 10880, 6329, 10831, 10882, 10885, 7363, 10886, 10843, 10888, 10845, 10821, 10889, 7367, 10892, 7368, 10817, 11028, 2]
 // Exports: default
 
-// Module 12131 (UserProfileWidgetsBoard)
+// Module 10872 (UserProfileWidgetsBoard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import react_native2 from "react-native" /* 6321 */;
-import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7357 */;
-import Constants from "Constants" /* 8479 */;
-import UserProfilePersonalWidgetCardDefault from "UserProfilePersonalWidgetCard" /* 12085 */;
-import WidgetUtils from "WidgetUtils" /* 12090 */;
-import UserProfileGameWidgetConstants from "UserProfileGameWidgetConstants" /* 12104 */;
-import UserProfileGameDetailsRowDefault from "UserProfileGameDetailsRow" /* 12109 */;
-import UserProfileWidgetGameCoverDefault from "UserProfileWidgetGameCover" /* 12111 */;
-import openUserProfileAddGameActionSheetDefault from "openUserProfileAddGameActionSheet" /* 12132 */;
-import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 12146 */;
+import react_native2 from "react-native" /* 6329 */;
+import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7367 */;
+import Constants from "Constants" /* 8490 */;
+import UserProfilePersonalWidgetCardDefault from "UserProfilePersonalWidgetCard" /* 10817 */;
+import WidgetUtils from "WidgetUtils" /* 10822 */;
+import UserProfileGameWidgetConstants from "UserProfileGameWidgetConstants" /* 10838 */;
+import UserProfileGameDetailsRowDefault from "UserProfileGameDetailsRow" /* 10843 */;
+import UserProfileWidgetGameCoverDefault from "UserProfileWidgetGameCover" /* 10845 */;
+import openUserProfileAddGameActionSheetDefault from "openUserProfileAddGameActionSheet" /* 10873 */;
+import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 10892 */;
 import react from "react" /* 19 */;
-import UserProfileWidgetConstants from "UserProfileWidgetConstants" /* 7355 */;
+import UserProfileWidgetConstants from "UserProfileWidgetConstants" /* 7365 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let map;
@@ -33,7 +33,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp;
-const UserProfilePersonalWidget = tmp(7358);
+const UserProfilePersonalWidget = tmp(7368);
 function AddGameButton(ref) {
   let PlusSmallIcon;
   let intl;
@@ -53,9 +53,9 @@ function AddGameButton(ref) {
       return openUserProfileAddGameActionSheetDefault(obj);
     }
   };
-  const IconButton = ref(7988).IconButton;
+  const IconButton = ref(7999).IconButton;
   obj2 = { size: "sm", color: widgetType(575).colors.ICON_DEFAULT };
-  PlusSmallIcon = ref(10449).PlusSmallIcon;
+  PlusSmallIcon = ref(10198).PlusSmallIcon;
   intl = ref(1113).intl;
   return closure_8(IconButton, obj);
 }
@@ -97,7 +97,7 @@ const memoResult = react.memo(function WidgetSection(userId) {
   let items6;
   let onLayout;
   let ref;
-  let tmp23;
+  let tmp22;
   let tmp5Result2;
   let width;
   userId = userId.userId;
@@ -125,9 +125,9 @@ const memoResult = react.memo(function WidgetSection(userId) {
   }, items);
   const tmp5 = userId;
   let obj2 = userId(disableInteraction[14]);
-  const widgetMaxGamesResult = obj2.widgetMaxGames(widget.type);
-  const tmp7 = 1 === widgetMaxGamesResult;
-  let closure_6 = tmp7;
+  const tmp6 = 1 === obj2.widgetMaxGames(widget.type);
+  let closure_6 = tmp6;
+  const tmp7 = flag && tmp6;
   const tmp5Result = tmp5(tmp3[15]);
   const shouldShowSuggestedGames = tmp5Result.useShouldShowSuggestedGames(widget);
   const handleDismissSuggestions = shouldShowSuggestedGames.handleDismissSuggestions;
@@ -137,7 +137,7 @@ const memoResult = react.memo(function WidgetSection(userId) {
   map = new Map();
   ref = useRef(map);
   ref2 = obj.useRef(null);
-  const items1 = [tmp7];
+  const items1 = [tmp6];
   const registerCoverRef = obj.useCallback((arg0, current) => {
     let obj2;
     if (null != current) {
@@ -219,45 +219,37 @@ const memoResult = react.memo(function WidgetSection(userId) {
       type2 = widget.type;
     }
   }
-  let tmp18;
+  let tmp17;
   if (flag) {
-    let tmp19 = !tmp8;
-    if (tmp19) {
+    let tmp18 = !tmp7;
+    if (tmp18) {
       const obj3 = { ref: ref1, widgetType: widget.type, disabled: tmp5Result2.isGameLimitReached(widget) };
       tmp5Result2 = tmp5(tmp3[14]);
-      tmp19 = ref1(registerCoverRef, obj3, "add-game");
+      tmp18 = ref1(registerCoverRef, obj3, "add-game");
     }
-    const items4 = [tmp19, ];
+    const items4 = [tmp18, ];
     const obj4 = { widget };
     items4[1] = ref1(tmp2(tmp3[17]), obj4, "edit-options");
-    tmp18 = items4;
+    tmp17 = items4;
   }
   if (0 === memo.length) {
-    let stringResult;
-    let tmp29;
-    const intl = tmp5(tmp3[11]).intl;
+    let tmp27;
     if (tmp7) {
-      stringResult = intl.string(tmp5(tmp3[11]).t["3FdPBT"]);
-    } else {
-      const obj5 = { maxGames: widgetMaxGamesResult };
-      stringResult = intl.formatToPlainString(tmp5(tmp3[11]).t.W8K2GH, obj5);
-    }
-    if (flag && tmp7) {
-      let tmp30 = isMeasured;
-      if (tmp30) {
-        const obj6 = { style: tmp.singleGameEmptyState, children: items5 };
-        const obj7 = { ref: ref1, widgetType: widget.type, coverWidth };
-        items5 = [ref1(tmp2(tmp3[18]), obj7), ];
-        const obj8 = { variant: "body-sm/medium", color: "text-muted", style: tmp.singleGameEmptyStateText, children: stringResult };
-        items5[1] = ref1(tmp5(tmp3[19]).Text, obj8);
-        tmp30 = ref(coverWidth, obj6);
+      let tmp28 = isMeasured;
+      if (tmp28) {
+        const obj5 = { style: tmp.singleGameEmptyState, children: items5 };
+        const obj6 = { ref: ref1, widgetType: widget.type, coverWidth };
+        items5 = [ref1(tmp2(tmp3[18]), obj6), ];
+        const obj7 = { widgetType: widget.type, style: tmp.singleGameEmptyStateText };
+        items5[1] = ref1(tmp2(tmp3[19]), obj7);
+        tmp28 = ref(coverWidth, obj5);
       }
-      tmp29 = tmp30;
+      tmp27 = tmp28;
     } else {
-      const obj9 = { variant: "body-sm/medium", color: "text-muted", style: tmp.emptyState, children: stringResult };
-      tmp29 = ref1(tmp5(tmp3[19]).Text, obj9);
+      const obj8 = { widgetType: widget.type, style: tmp.emptyState };
+      tmp27 = ref1(tmp2(tmp3[19]), obj8);
     }
-    tmp23 = tmp29;
+    tmp22 = tmp27;
   } else {
     let type = widget.type;
     if (tmp5(tmp3[20]).WidgetType.FAVORITE_GAMES !== type) {
@@ -267,9 +259,9 @@ const memoResult = react.memo(function WidgetSection(userId) {
             return null;
           }
         }
-        tmp23 = isMeasured;
-        if (tmp23) {
-          const obj10 = {
+        tmp22 = isMeasured;
+        if (tmp22) {
+          const obj9 = {
             games: memo,
             columns,
             renderCover(game) {
@@ -284,13 +276,13 @@ const memoResult = react.memo(function WidgetSection(userId) {
                       return tmp(tmp2, obj, game.gameId);
                     }
           };
-          tmp23 = ref1(tmp2(tmp3[23]), obj10);
+          tmp22 = ref1(tmp2(tmp3[23]), obj9);
         }
       }
     }
-    let tmp25 = isMeasured;
-    if (tmp25) {
-      const obj11 = {
+    let tmp24 = isMeasured;
+    if (tmp24) {
+      const obj10 = {
         games: memo,
         renderRow(game) {
               let type;
@@ -304,16 +296,16 @@ const memoResult = react.memo(function WidgetSection(userId) {
               return tmp(tmp2, obj, game.gameId);
             }
       };
-      tmp25 = ref1(tmp2(tmp3[21]), obj11);
+      tmp24 = ref1(tmp2(tmp3[21]), obj10);
     }
-    tmp23 = tmp25;
+    tmp22 = tmp24;
   }
-  const obj12 = { userId, widget, style: cardStyle, disableInteraction, actionButtons: tmp18, children: items6 };
+  const obj11 = { userId, widget, style: cardStyle, disableInteraction, actionButtons: tmp17, children: items6 };
   items6 = [, ];
   const tmp2Result = tmp2(tmp3[25]);
-  items6[0] = ref1(coverWidth, { ref, onLayout, children: tmp23 });
-  const tmp34 = ref;
-  const tmp36 = ref1;
+  items6[0] = ref1(coverWidth, { ref, onLayout, children: tmp22 });
+  const tmp32 = ref;
+  const tmp34 = ref1;
   if (flag) {
     flag = !disableInteraction;
   }
@@ -324,11 +316,11 @@ const memoResult = react.memo(function WidgetSection(userId) {
     flag = isMeasured;
   }
   if (flag) {
-    const obj13 = { widgetType: widget.type, addedGames: memo, containerWidth: width, onDismiss: callback, onFillWidget: callback1 };
-    flag = tmp36(tmp2(tmp3[26]), obj13);
+    const obj12 = { widgetType: widget.type, addedGames: memo, containerWidth: width, onDismiss: callback, onFillWidget: callback1 };
+    flag = tmp34(tmp2(tmp3[26]), obj12);
   }
   items6[1] = flag;
-  return tmp34(tmp2Result, obj12);
+  return tmp32(tmp2Result, obj11);
 });
 let result = size.fileFinishedImporting("modules/user_profile/native/UserProfileWidgetsBoard.tsx");
 

@@ -1,14 +1,14 @@
-// Module ID: 16340
-// Function ID: 16341
+// Module ID: 16376
+// Function ID: 16377
 // Name: ShareUtils
-// Dependencies: [5, 8725, 5311, 6005, 6027, 11153, 9004, 8850, 8873, 8786, 11409, 8660, 2]
+// Dependencies: [5, 8736, 5315, 6009, 6031, 11131, 9015, 8861, 8884, 8797, 11117, 8671, 2]
 // Exports: sendShareMessage, showInformationToast
 
-// Module 16340 (ShareUtils)
-import MessageConstants from "MessageConstants" /* 5311 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 6027 */;
-import DraftStore from "DraftStore" /* 8725 */;
+// Module 16376 (ShareUtils)
+import MessageConstants from "MessageConstants" /* 5315 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 6009 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 6031 */;
+import DraftStore from "DraftStore" /* 8736 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size_mod from "module_2" /* 2 */;
 

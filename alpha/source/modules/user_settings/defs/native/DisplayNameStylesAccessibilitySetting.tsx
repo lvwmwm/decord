@@ -1,17 +1,17 @@
-// Module ID: 18032
-// Function ID: 18033
+// Module ID: 18073
+// Function ID: 18074
 // Name: DisplayNameStylesAccessibilitySetting
-// Dependencies: [5307, 9202, 504, 16889, 12406, 1113, 3125, 2]
+// Dependencies: [5311, 9213, 504, 16924, 12612, 1113, 3127, 2]
 // Exports: onValueChange, useValue
 
-// Module 18032 (DisplayNameStylesAccessibilitySetting)
+// Module 18073 (DisplayNameStylesAccessibilitySetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
-import _modDef3125 from "module_3125" /* 3125 */;
-import SettingsConstants from "SettingsConstants" /* 9202 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 16889 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
-import SettingBuilders from "SettingBuilders" /* 12406 */;
+import _modDef3127 from "module_3127" /* 3127 */;
+import SettingsConstants from "SettingsConstants" /* 9213 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 16924 */;
+import AccessibilityStore from "AccessibilityStore" /* 5311 */;
+import SettingBuilders from "SettingBuilders" /* 12612 */;
 import size from "module_2" /* 2 */;
 
 function useValue() {
@@ -27,7 +27,7 @@ const MobileUserSettings = SettingsConstants.MobileUserSettings;
 let obj = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef3125["2gFUEw"]);
+    return intl.string(_modDef3127["2gFUEw"]);
   },
   parent: MobileUserSettings.ACCESSIBILITY,
   useValue,

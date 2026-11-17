@@ -1,16 +1,16 @@
-// Module ID: 7300
-// Function ID: 7301
+// Module ID: 7310
+// Function ID: 7311
 // Name: RPCServer
-// Dependencies: [5, 6751, 1072, 12, 7301, 7303, 7305, 1256, 38, 7306, 7309, 5150, 1089, 2]
+// Dependencies: [5, 6759, 1072, 12, 7311, 7313, 7315, 1256, 38, 7316, 7319, 5154, 1089, 2]
 
-// Module 7300 (RPCServer)
+// Module 7310 (RPCServer)
 import _modDef12 from "module_12" /* 12 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import Constants2 from "Constants" /* 6751 */;
-import transformUserDefault from "transformUser" /* 7301 */;
-import RPCErrorDefault from "RPCError" /* 7303 */;
-import validateScopeDefault from "validateScope" /* 7305 */;
-import RpcCommandInterception from "RpcCommandInterception" /* 7309 */;
+import Constants2 from "Constants" /* 6759 */;
+import transformUserDefault from "transformUser" /* 7311 */;
+import RPCErrorDefault from "RPCError" /* 7313 */;
+import validateScopeDefault from "validateScope" /* 7315 */;
+import RpcCommandInterception from "RpcCommandInterception" /* 7319 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -87,7 +87,7 @@ class RPCServer {
     this.onDisconnect(abortController, arg1);
   }
   handleRequest(socket, arg1) {
-    const f128548 = function() {
+    const f128841 = function() {
       return closure_0(...arguments);
     };
     let closure_2 = arg1;
@@ -221,8 +221,8 @@ class RPCServer {
         }
       })();
     });
-    const then2 = then(f128548).then;
-    then(f128548);
+    const then2 = then(f128841).then;
+    then(f128841);
     let closure_0 = self((command) => {
       let closure_1;
       let c3 = 0;

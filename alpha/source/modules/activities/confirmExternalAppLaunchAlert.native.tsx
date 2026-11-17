@@ -1,22 +1,22 @@
-// Module ID: 12776
-// Function ID: 12777
+// Module ID: 11385
+// Function ID: 11386
 // Name: confirmExternalAppLaunchAlert
-// Dependencies: [19, 17, 2145, 21, 5306, 6010, 12777, 5919, 1113, 5926, 6002, 6258, 2]
+// Dependencies: [19, 17, 2145, 21, 5310, 6014, 11386, 5923, 1113, 5930, 6006, 6266, 2]
 // Exports: confirmExternalAppLaunchAlert
 
-// Module 12776 (confirmExternalAppLaunchAlert)
+// Module 11385 (confirmExternalAppLaunchAlert)
 import react_native from "react-native" /* 17 */;
 import intl4 from "intl" /* 1113 */;
 import Constants from "Constants" /* 2145 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import components_Button_Button from "components/Button/Button" /* 5926 */;
-import LinkingDefault from "Linking" /* 6002 */;
-import FastImageDefault from "FastImage" /* 6010 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6258 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12777 */;
+import Text_Text from "Text/Text" /* 5923 */;
+import components_Button_Button from "components/Button/Button" /* 5930 */;
+import LinkingDefault from "Linking" /* 6006 */;
+import FastImageDefault from "FastImage" /* 6014 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6266 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11386 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

@@ -1,15 +1,15 @@
-// Module ID: 8229
-// Function ID: 8230
+// Module ID: 8240
+// Function ID: 8241
 // Name: AgeVerificationModal
-// Dependencies: [19, 21, 6002, 8216, 1113, 3321, 5306, 575, 6838, 7427, 7490, 2]
+// Dependencies: [19, 21, 6006, 8227, 1113, 3323, 5310, 575, 6833, 7437, 7500, 2]
 // Exports: default
 
-// Module 8229 (AgeVerificationModal)
+// Module 8240 (AgeVerificationModal)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import LinkingDefault from "Linking" /* 6002 */;
+import LinkingDefault from "Linking" /* 6006 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 function isOwnDeepLinkUrl(url) {

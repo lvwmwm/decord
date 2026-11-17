@@ -1,35 +1,50 @@
 // Module ID: 12166
 // Function ID: 12167
-// Dependencies: []
+// Dependencies: [41, 42, 12163, 12120]
 
 // Module 12166
-const tmp2 = (() => {
-  let tmp = exports;
-  const ownPropertyNames = Object.getOwnPropertyNames(exports);
-  let num = 0;
-  if (0 < ownPropertyNames.length) {
-    const _Object = Object;
-    const ownPropertyDescriptor = Object.getOwnPropertyDescriptor(exports, ownPropertyNames[num]);
-    if (ownPropertyDescriptor) {
-      if (ownPropertyDescriptor.get) {
-        if (ownPropertyDescriptor.configurable) {
-          let value;
-          try {
-            value = ownPropertyDescriptor.get();
-          } catch (err) {
-          }
-          if (undefined !== value) {
-            const _Object2 = Object;
-            const obj = { value, writable: false, enumerable: ownPropertyDescriptor.enumerable, configurable: false };
-            Object.defineProperty(exports, ownPropertyNames[num], obj);
+import NUMBER from "NUMBER" /* 12163 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+
+let tmp;
+const _mod12120 = tmp(12120);
+const keys = Object.keys(NUMBER.WEEKDAY_OFFSET);
+const regExp = new RegExp("((?<prefix>\u524D\u306E|\u6B21\u306E|\u4ECA\u9031))?(?<weekday>" + keys.join("|") + ")(?:\u66DC\u65E5|\u66DC)", "i");
+class JPWeekdayParser {
+  constructor() {
+    _classCallCheck(this, JPWeekdayParser);
+  }
+}
+const entry = {
+  key: "pattern",
+  value: function pattern() {
+    return regExp;
+  }
+};
+const items = [
+  entry,
+  {
+    key: "extract",
+    value: function extract(reference, groups) {
+      const tmp3 = NUMBER.WEEKDAY_OFFSET[groups.groups.weekday];
+      if (undefined === tmp3) {
+        return null;
+      } else {
+        let str2 = "last";
+        if (!(groups.groups.prefix || "").match(/前の/)) {
+          str2 = "next";
+          if (!(groups.groups.prefix || "").match(/次の/)) {
+            str2 = null;
+            if ((groups.groups.prefix || "").match(/今週/)) {
+              str2 = "this";
+            }
           }
         }
+        return _mod12120.createParsingComponentsAtWeekday(reference.reference, tmp3, str2);
       }
     }
-    num = num + 1;
-    tmp = tmp2;
   }
-  const frozen = Object.freeze(tmp);
-})();
+];
 
-export const version = { major: 4, minor: 6, patch: 7 };
+export default _createClass(JPWeekdayParser, items);

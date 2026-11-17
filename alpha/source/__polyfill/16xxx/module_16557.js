@@ -1,9 +1,26 @@
 // Module ID: 16557
 // Function ID: 16558
-// Dependencies: [16555]
+// Dependencies: []
 
 // Module 16557
-import _mod16555 from "module_16555" /* 16555 */;
+if (typeof process === "object") {
+  const _process3 = process;
+  if (process.env) {
+    const _process = process;
+    if (process.env.NODE_DEBUG) {
+      let fn;
+      const _process2 = process;
+      const obj = /\bsemver\b/i;
+      if (obj.test(process.env.NODE_DEBUG)) {
+        fn = () => {
+          const items = ["SEMVER", ...HermesBuiltin.copyRestArgs()];
+          return console.error.apply(items);
+        };
+      }
+      module.exports = fn;
+    }
+  }
+}
+fn = () => {
 
-
-export default (arg0, arg1, arg2) => _mod16555(arg0, arg1, "<", arg2);
+};

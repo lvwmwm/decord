@@ -1,24 +1,24 @@
-// Module ID: 14848
-// Function ID: 14849
+// Module ID: 13929
+// Function ID: 13930
 // Name: EmojiSuggestionChatButton
-// Dependencies: [32, 19, 17, 1192, 5152, 1228, 21, 5306, 575, 1380, 5892, 14842, 14849, 1655, 5929, 1708, 12011, 14850, 5588, 13509, 7428, 1113, 6010, 5313, 7895, 7896, 11275, 1187, 2]
+// Dependencies: [32, 19, 17, 1192, 5156, 1228, 21, 5310, 575, 1380, 5896, 13922, 13930, 1655, 5933, 1708, 12448, 13931, 5592, 13665, 7438, 1113, 6014, 5317, 7905, 7906, 11978, 1187, 2]
 // Exports: EmojiSuggestionChatButton
 
-// Module 14848 (EmojiSuggestionChatButton)
+// Module 13929 (EmojiSuggestionChatButton)
 import nativeDefault from "native" /* 575 */;
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1228 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import _mod1708 from "module_1708" /* 1708 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5588 */;
-import spring_spring from "spring/spring" /* 5929 */;
-import EmojiSuggestionBarUtils from "EmojiSuggestionBarUtils" /* 14842 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5156 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5592 */;
+import spring_spring from "spring/spring" /* 5933 */;
+import EmojiSuggestionBarUtils from "EmojiSuggestionBarUtils" /* 13922 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size_mod from "module_2" /* 2 */;
 
 let gesture, set, set2, tmp;

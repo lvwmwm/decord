@@ -1,52 +1,32 @@
 // Module ID: 5685
 // Function ID: 5686
-// Dependencies: [5659, 5676, 5650]
-// Exports: useRotationGesture
+// Dependencies: [5636]
+// Exports: createLastUpdateEventMap
 
 // Module 5685
-import ComposedGestureName from "ComposedGestureName" /* 5650 */;
-import _mod5659 from "module_5659" /* 5659 */;
-import _mod5676 from "module_5676" /* 5676 */;
+import reanimatedWrapper from "reanimatedWrapper" /* 5636 */;
 
-let tmp2;
-let tmp3;
-function transformRotationProps(arg0) {
-  const obj = _mod5659;
-  arg0.changeEventCalculator = obj.getChangeEventCalculator(diffCalculator);
-  arg0.fillInDefaultValues = fillInDefaultValues;
-  return arg0;
-}
-const items = [{ code: "(function diffCalculator_Pnpm_useRotationGestureTs1(current,previous){return{rotationChange:previous?current.rotation-previous.rotation:current.rotation};})" }];
-[tmp2] = items;
-function diffCalculator(rotation, rotation2) {
-  let rotationChange;
-  rotation = rotation.rotation;
-  if (rotation2) {
-    rotationChange = rotation - rotation2.rotation;
-  } else {
-    rotationChange = rotation;
-  }
-  return { rotationChange };
-}
-diffCalculator.__workletHash = 4592561053326;
-diffCalculator.__initData = tmp2;
-const items1 = [{ code: "(function fillInDefaultValues_Pnpm_useRotationGestureTs2(event){event.rotationChange=0;})" }];
-[tmp3] = items1;
-function fillInDefaultValues(arg0) {
-  arg0.rotationChange = 0;
-}
-fillInDefaultValues.__workletHash = 4459233048852;
-fillInDefaultValues.__initData = tmp3;
-const map = new Map();
-let closure_6 = {};
+let map;
 
-export function useRotationGesture(gestureHandlerProps) {
-  let tmp = gestureHandlerProps;
-  if (gestureHandlerProps === undefined) {
-    tmp = closure_6;
+
+export function createLastUpdateEventMap() {
+  const Worklets = reanimatedWrapper.Worklets;
+  let createShareable1;
+  if (Worklets != null) {
+    createShareable1 = Worklets.createShareable;
   }
-  const obj = _mod5659;
-  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp, map, transformRotationProps);
-  const obj2 = _mod5676;
-  return obj2.useGesture(ComposedGestureName.SingleGestureName.Rotation, clonedAndRemappedConfig);
+  if (undefined !== createShareable1) {
+    if (undefined !== reanimatedWrapper.Worklets.UIRuntimeId) {
+      if (undefined !== reanimatedWrapper.Reanimated) {
+        const Worklets2 = tmp(5636).Worklets;
+        const createShareable = Worklets2.createShareable;
+        const _Map = Map;
+        const self = this;
+        const self2 = this;
+        const UIRuntimeId = tmp(5636).Worklets.UIRuntimeId;
+        map = new Map();
+        return createShareable(UIRuntimeId, map);
+      }
+    }
+  }
 }

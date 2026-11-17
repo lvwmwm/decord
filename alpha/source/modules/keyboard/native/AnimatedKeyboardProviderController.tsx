@@ -1,9 +1,9 @@
-// Module ID: 13131
-// Function ID: 13132
+// Module ID: 13400
+// Function ID: 13401
 // Name: AnimatedKeyboardProviderController
 // Dependencies: [19, 21, 1655, 1644, 2]
 
-// Module 13131 (AnimatedKeyboardProviderController)
+// Module 13400 (AnimatedKeyboardProviderController)
 import KeyboardChatScrollView from "KeyboardChatScrollView" /* 1644 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

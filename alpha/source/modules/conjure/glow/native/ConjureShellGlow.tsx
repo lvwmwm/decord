@@ -1,22 +1,22 @@
-// Module ID: 13592
-// Function ID: 13593
+// Module ID: 14643
+// Function ID: 14644
 // Name: ConjureShellGlow
-// Dependencies: [32, 19, 17, 5307, 1192, 21, 1380, 575, 671, 5306, 504, 5314, 1655, 5538, 5883, 13593, 7533, 2]
+// Dependencies: [32, 19, 17, 5311, 1192, 21, 1380, 575, 671, 5310, 504, 5318, 1655, 5542, 5887, 14644, 7543, 2]
 // Exports: default
 
-// Module 13592 (ConjureShellGlow)
+// Module 14643 (ConjureShellGlow)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5538 */;
+import timing_timing from "timing/timing" /* 5542 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import AccessibilityStore from "AccessibilityStore" /* 5311 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size_mod from "module_2" /* 2 */;
 
 let set, set2, set3;

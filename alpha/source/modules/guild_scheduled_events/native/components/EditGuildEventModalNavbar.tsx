@@ -1,19 +1,19 @@
-// Module ID: 7992
-// Function ID: 7993
+// Module ID: 8003
+// Function ID: 8004
 // Name: EditGuildEventModalNavbar
-// Dependencies: [32, 19, 17, 21, 5306, 7971, 1255, 7415, 5919, 1113, 7427, 7430, 2]
+// Dependencies: [32, 19, 17, 21, 5310, 7982, 1255, 7425, 5923, 1113, 7437, 7440, 2]
 // Exports: default
 
-// Module 7992 (EditGuildEventModalNavbar)
+// Module 8003 (EditGuildEventModalNavbar)
 import react_native from "react-native" /* 17 */;
 import intl3 from "intl" /* 1113 */;
 import GlobalUtils from "GlobalUtils" /* 1255 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7430 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 7971 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7440 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 7982 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -49,15 +49,15 @@ export default function EditGuildEventModalNavbar(screen) {
   const obj = { top: true, style: tmp.header, children: items1 };
   const obj2 = { style: tmp.buttonContainer };
   _slicedToArray(items, 2);
-  const SafeAreaPaddingView = tmp2(7415).SafeAreaPaddingView;
+  const SafeAreaPaddingView = tmp2(7425).SafeAreaPaddingView;
   items1 = [hasOwnProperty(View, obj2), , ];
   const obj3 = { style: tmp.headerTitle, variant: "body-sm/medium", color: "text-default", children: intl.format(intl3.t["42HaFY"], { step: tmp6, total: tmp7 }) };
-  const Text = tmp2(5919).Text;
+  const Text = tmp2(5923).Text;
   intl = tmp2(1113).intl;
   items1[1] = hasOwnProperty(Text, obj3);
   const obj4 = { style: tmp.buttonContainer, children: hasOwnProperty(HeaderActionButton, obj5) };
   obj5 = { accessibilityLabel: intl2.string(intl3.t.cpT0Cq), onPress: onClose, source: AssetRegistryDefault, style: tmp.rightButton };
-  HeaderActionButton = tmp2(7427).HeaderActionButton;
+  HeaderActionButton = tmp2(7437).HeaderActionButton;
   intl2 = tmp2(1113).intl;
   items1[2] = hasOwnProperty(View, obj4);
   return metroRequire(SafeAreaPaddingView, obj);

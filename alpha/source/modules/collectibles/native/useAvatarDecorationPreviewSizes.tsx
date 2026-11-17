@@ -1,12 +1,12 @@
-// Module ID: 10024
-// Function ID: 10025
+// Module ID: 10037
+// Function ID: 10038
 // Name: useAvatarDecorationPreviewSizes
-// Dependencies: [1496, 9500, 2]
+// Dependencies: [1496, 9512, 2]
 // Exports: useAvatarDecorationPreviewSizes
 
-// Module 10024 (useAvatarDecorationPreviewSizes)
+// Module 10037 (useAvatarDecorationPreviewSizes)
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
-import AvatarDecorationSampleV2 from "AvatarDecorationSampleV2" /* 9500 */;
+import AvatarDecorationSampleV2 from "AvatarDecorationSampleV2" /* 9512 */;
 import size_mod from "module_2" /* 2 */;
 
 let size = size_mod;

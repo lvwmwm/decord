@@ -1,13 +1,13 @@
-// Module ID: 16110
-// Function ID: 16111
+// Module ID: 16147
+// Function ID: 16148
 // Name: InputConnection
-// Dependencies: [6089, 3, 16111, 16112, 6179, 2]
+// Dependencies: [6096, 3, 16148, 16149, 6187, 2]
 
-// Module 16110 (InputConnection)
+// Module 16147 (InputConnection)
 import LoggerDefault from "Logger" /* 3 */;
-import RTCConnectionEvent from "RTCConnectionEvent" /* 6179 */;
-import InputEvent from "InputEvent" /* 16111 */;
-import TypedEventEmitter from "TypedEventEmitter" /* 6089 */;
+import RTCConnectionEvent from "RTCConnectionEvent" /* 6187 */;
+import InputEvent from "InputEvent" /* 16148 */;
+import TypedEventEmitter from "TypedEventEmitter" /* 6096 */;
 import size from "module_2" /* 2 */;
 
 const _false = { Closed: 0, [0]: "Closed", Connecting: 1, [1]: "Connecting", Connected: 2, [2]: "Connected" };
@@ -25,14 +25,14 @@ class InputConnection extends TypedEventEmitter {
     const onWebTransportAck = obj.onWebTransportAck;
     new LoggerDefault("InputConnection");
     obj.webTransportAck = onWebTransportAck.bind(obj);
-    obj.on(obj(16111).InputEvent.Connect, () => {
+    obj.on(obj(16148).InputEvent.Connect, () => {
       obj.state = Connected.Connected;
     });
     ({ on, onDisconnect } = obj);
-    on(obj(16111).InputEvent.Disconnect, onDisconnect.bind(obj));
+    on(obj(16148).InputEvent.Disconnect, onDisconnect.bind(obj));
     ({ on: on2, onLogMessage } = obj);
-    on2(obj(16111).InputEvent.Log, onLogMessage.bind(obj));
-    const obj2 = obj(16112);
+    on2(obj(16148).InputEvent.Log, onLogMessage.bind(obj));
+    const obj2 = obj(16149);
     obj.worker = obj2.createInputWorker();
     if (null != obj.worker) {
       obj.worker.onmessage = (data) => {
@@ -47,7 +47,7 @@ class InputConnection extends TypedEventEmitter {
     const self = this;
     this.state = Connecting.Connecting;
     let rtc = this.rtc;
-    rtc.on(self(6179).RTCConnectionEvent.WebTransportAck, this.webTransportAck);
+    rtc.on(self(6187).RTCConnectionEvent.WebTransportAck, this.webTransportAck);
     const rtc2 = this.rtc;
     rtc2.startWebTransport();
     const timerId = setTimeout(() => {
@@ -111,6 +111,14 @@ class InputConnection extends TypedEventEmitter {
       postMessage(items);
     }
   }
+  sendMouseWheel(sessionId, arg1) {
+    const worker = this.worker;
+    if (worker != null) {
+      const postMessage = worker.postMessage;
+      const items = [InputEvent.InputCommand.SendMouseWheel, sessionId, arg1];
+      postMessage(items);
+    }
+  }
   sendMouseMove(sessionId, movementX, movementY) {
     const worker = this.worker;
     if (worker != null) {
@@ -124,6 +132,38 @@ class InputConnection extends TypedEventEmitter {
     if (worker != null) {
       const postMessage = worker.postMessage;
       const items = [InputEvent.InputCommand.SendMouseButton, sessionId, button, arg2];
+      postMessage(items);
+    }
+  }
+  sendControllerButton(sessionId, item, flag) {
+    const worker = this.worker;
+    if (worker != null) {
+      const postMessage = worker.postMessage;
+      const items = [InputEvent.InputCommand.SendControllerButton, sessionId, item, flag];
+      postMessage(items);
+    }
+  }
+  sendControllerStick(sessionId, arg1, max2Result, bound) {
+    const worker = this.worker;
+    if (worker != null) {
+      const postMessage = worker.postMessage;
+      const items = [InputEvent.InputCommand.SendControllerStick, sessionId, arg1, max2Result, bound];
+      postMessage(items);
+    }
+  }
+  sendControllerTrigger(sessionId, arg1, max4Result) {
+    const worker = this.worker;
+    if (worker != null) {
+      const postMessage = worker.postMessage;
+      const items = [InputEvent.InputCommand.SendControllerTrigger, sessionId, arg1, max4Result];
+      postMessage(items);
+    }
+  }
+  sendControllerPlug(sessionId, arg1) {
+    const worker = this.worker;
+    if (worker != null) {
+      const postMessage = worker.postMessage;
+      const items = [InputEvent.InputCommand.SendControllerPlug, sessionId, arg1];
       postMessage(items);
     }
   }

@@ -1,17 +1,17 @@
-// Module ID: 12441
-// Function ID: 12442
+// Module ID: 12647
+// Function ID: 12648
 // Name: conjureProjectLinkCard
-// Dependencies: [2165, 1388, 7017, 12439, 5362, 10516, 12442, 2]
+// Dependencies: [2165, 1388, 7025, 12645, 5366, 10571, 12648, 2]
 // Exports: conjureProjectLinkCardKey
 
-// Module 12441 (conjureProjectLinkCard)
-import UserUtils from "UserUtils" /* 5362 */;
-import ConjureProjectStore2 from "ConjureProjectStore" /* 7017 */;
-import ConjureMobileExperiment from "ConjureMobileExperiment" /* 10516 */;
-import conjureSharedProjectCoverTargetDefault from "conjureSharedProjectCoverTarget" /* 12442 */;
+// Module 12647 (conjureProjectLinkCard)
+import UserUtils from "UserUtils" /* 5366 */;
+import ConjureProjectStore2 from "ConjureProjectStore" /* 7025 */;
+import ConjureMobileExperiment from "ConjureMobileExperiment" /* 10571 */;
+import conjureSharedProjectCoverTargetDefault from "conjureSharedProjectCoverTarget" /* 12648 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
 import UserStore from "UserStore" /* 1388 */;
-import ConjureSharedProjectStore from "ConjureSharedProjectStore" /* 12439 */;
+import ConjureSharedProjectStore from "ConjureSharedProjectStore" /* 12645 */;
 import size from "module_2" /* 2 */;
 
 const ConjureProjectStore = ConjureProjectStore2;

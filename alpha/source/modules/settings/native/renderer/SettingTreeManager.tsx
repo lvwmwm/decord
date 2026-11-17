@@ -1,12 +1,12 @@
-// Module ID: 17218
-// Function ID: 17219
+// Module ID: 17255
+// Function ID: 17256
 // Name: SettingTreeManager
-// Dependencies: [12407, 17060, 17058, 2]
+// Dependencies: [12613, 17095, 17093, 2]
 
-// Module 17218 (SettingTreeManager)
-import SettingRendererConstants from "SettingRendererConstants" /* 12407 */;
-import SettingHookHarness from "SettingHookHarness" /* 17058 */;
-import SettingsRendererConfig from "SettingsRendererConfig" /* 17060 */;
+// Module 17255 (SettingTreeManager)
+import SettingRendererConstants from "SettingRendererConstants" /* 12613 */;
+import SettingHookHarness from "SettingHookHarness" /* 17093 */;
+import SettingsRendererConfig from "SettingsRendererConfig" /* 17095 */;
 import size from "module_2" /* 2 */;
 
 let set;

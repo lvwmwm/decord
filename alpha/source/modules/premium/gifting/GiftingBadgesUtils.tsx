@@ -1,16 +1,16 @@
-// Module ID: 11678
-// Function ID: 11679
+// Module ID: 10103
+// Function ID: 10104
 // Name: GiftingBadgesUtils
-// Dependencies: [19, 8547, 1388, 1113, 2797, 11673, 11679, 504, 5338, 5139, 8480, 8552, 2]
+// Dependencies: [19, 8558, 1388, 1113, 2799, 10098, 10104, 504, 5342, 5143, 8491, 8563, 2]
 // Exports: getGiftingBadgeAccessibilityLabel, getGiftingBadgeProgressPercent, getGiftingBadgeTierIconUrl, getIsGiftingBadgesDesktopEnabled, useGiftingBadgeCoachmarkVariant, useIsGiftingBadgesDesktopEnabled
 
-// Module 11678 (GiftingBadgesUtils)
+// Module 10103 (GiftingBadgesUtils)
 import intl2 from "intl" /* 1113 */;
-import _modDef2797 from "module_2797" /* 2797 */;
-import BadgeId from "BadgeId" /* 8480 */;
-import BadgeDirectoryStore2 from "BadgeDirectoryStore" /* 8547 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8552 */;
-import GiftingBadgeExperiment2 from "GiftingBadgeExperiment" /* 11673 */;
+import _modDef2799 from "module_2799" /* 2799 */;
+import BadgeId from "BadgeId" /* 8491 */;
+import BadgeDirectoryStore2 from "BadgeDirectoryStore" /* 8558 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8563 */;
+import GiftingBadgeExperiment2 from "GiftingBadgeExperiment" /* 10098 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
@@ -32,7 +32,7 @@ export function getGiftingBadgeAccessibilityLabel(name) {
     str = "";
   }
   const intl = intl2.intl;
-  return "" + str + ", " + intl.formatToPlainString(_modDef2797.qvx9E4, { count });
+  return "" + str + ", " + intl.formatToPlainString(_modDef2799.qvx9E4, { count });
 }
 export function getGiftingBadgeProgressPercent(badgeProgress, currentTier, nextTier) {
   let num3;
@@ -114,8 +114,8 @@ export function useGiftingBadgeCoachmarkVariant(arg0) {
     }
     return flag;
   });
-  const tmpResult3 = tmp(5338);
-  const result = tmpResult3.useIsDismissibleContentDismissed_UNSAFE(tmp(5139).DismissibleContent.NEW_GIFTING_BADGES_COACHMARK);
+  const tmpResult3 = tmp(5342);
+  const result = tmpResult3.useIsDismissibleContentDismissed_UNSAFE(tmp(5143).DismissibleContent.NEW_GIFTING_BADGES_COACHMARK);
   const items1 = [BadgeDirectoryStore];
   const tmpResult4 = tmp(504);
   const stateFromStores1 = tmpResult4.useStateFromStores(items1, () => badgeById.getBadgeById(closure_0(dependencyMap[10]).BadgeId.GIFTING));

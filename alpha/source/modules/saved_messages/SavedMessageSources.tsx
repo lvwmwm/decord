@@ -1,9 +1,9 @@
-// Module ID: 11925
-// Function ID: 11926
+// Module ID: 12378
+// Function ID: 12379
 // Name: SavedMessageSources
 // Dependencies: [2]
 
-// Module 11925 (SavedMessageSources)
+// Module 12378 (SavedMessageSources)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/saved_messages/SavedMessageSources.tsx");

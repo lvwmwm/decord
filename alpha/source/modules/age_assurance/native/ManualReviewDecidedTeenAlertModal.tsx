@@ -1,16 +1,16 @@
-// Module ID: 8400
-// Function ID: 8401
+// Module ID: 8411
+// Function ID: 8412
 // Name: ManualReviewDecidedTeenAlertModal
-// Dependencies: [19, 6822, 21, 5919, 8190, 2188, 1113, 3417, 6264, 6264, 1264, 2]
+// Dependencies: [19, 6817, 21, 5923, 8201, 2188, 1113, 3419, 6272, 6272, 1264, 2]
 // Exports: default
 
-// Module 8400 (ManualReviewDecidedTeenAlertModal)
+// Module 8411 (ManualReviewDecidedTeenAlertModal)
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1113 */;
-import _modDef3417 from "module_3417" /* 3417 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import AlertModal2 from "AlertModal" /* 6264 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 6822 */;
+import _modDef3419 from "module_3419" /* 3419 */;
+import Text_Text from "Text/Text" /* 5923 */;
+import AlertModal2 from "AlertModal" /* 6272 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 6817 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -47,12 +47,12 @@ export default function ManualReviewDecidedTeenAlertModal(teenAgeRange) {
   }
   const tmp = jsx;
   const decidedPassed = teenAgeRange.decidedPassed;
-  const obj = { title: intl.string(_modDef3417.AA3xYb), content: formatResult, actions: tmp(AlertActions, obj4), trackingProps: obj6 };
+  const obj = { title: intl.string(_modDef3419.AA3xYb), content: formatResult, actions: tmp(AlertActions, obj4), trackingProps: obj6 };
   const AlertModal = AlertModal2.AlertModal;
   intl = intl4.intl;
   const intl2 = intl4.intl;
   const format = intl2.format;
-  const tmp4 = _modDef3417;
+  const tmp4 = _modDef3419;
   if (decidedPassed) {
     const prop = tmp4["2+f8w1"];
     if (teenAgeRange == null) {

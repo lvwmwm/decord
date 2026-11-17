@@ -1,12 +1,12 @@
-// Module ID: 7768
-// Function ID: 7769
+// Module ID: 7778
+// Function ID: 7779
 // Name: PhoneStore
-// Dependencies: [5987, 504, 572, 2]
+// Dependencies: [5991, 504, 572, 2]
 
-// Module 7768 (PhoneStore)
+// Module 7778 (PhoneStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import CountryCodeUtils from "CountryCodeUtils" /* 5987 */;
+import CountryCodeUtils from "CountryCodeUtils" /* 5991 */;
 import size from "module_2" /* 2 */;
 
 function handleSetLocationMetadata(countryCode) {

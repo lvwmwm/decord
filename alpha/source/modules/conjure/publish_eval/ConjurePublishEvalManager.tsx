@@ -1,12 +1,12 @@
-// Module ID: 20207
-// Function ID: 20208
+// Module ID: 20255
+// Function ID: 20256
 // Name: ConjurePublishEvalManager
-// Dependencies: [7882, 13164, 20208, 2]
+// Dependencies: [7892, 14405, 20256, 2]
 
-// Module 20207 (ConjurePublishEvalManager)
-import conjurePublishEval from "conjurePublishEval" /* 13164 */;
-import conjurePublishEvalPlatformDefault from "conjurePublishEvalPlatform" /* 20208 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
+// Module 20255 (ConjurePublishEvalManager)
+import conjurePublishEval from "conjurePublishEval" /* 14405 */;
+import conjurePublishEvalPlatformDefault from "conjurePublishEvalPlatform" /* 20256 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7892 */;
 import size from "module_2" /* 2 */;
 
 function blockingProjectId() {

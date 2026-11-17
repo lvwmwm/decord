@@ -1,19 +1,19 @@
-// Module ID: 19019
-// Function ID: 19020
+// Module ID: 19060
+// Function ID: 19061
 // Name: InterestGuildJoinButton
-// Dependencies: [5, 32, 19, 17, 5157, 21, 5306, 575, 504, 14887, 5342, 8615, 19020, 1113, 2569, 5926, 2]
+// Dependencies: [5, 32, 19, 17, 5161, 21, 5310, 575, 504, 13968, 5346, 8626, 19061, 1113, 2569, 5930, 2]
 // Exports: default
 
-// Module 19019 (InterestGuildJoinButton)
+// Module 19060 (InterestGuildJoinButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import reactDefault from "react" /* 8615 */;
+import reactDefault from "react" /* 8626 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildMembershipStore from "GuildMembershipStore" /* 5157 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import GuildMembershipStore from "GuildMembershipStore" /* 5161 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let c1, c4, closure_2;
@@ -141,43 +141,43 @@ export default function InterestGuildJoinButton(guildId) {
   const items = [closure_7];
   const items1 = [guildId];
   let stateFromStores = obj.useStateFromStores(items, () => GuildMembershipStore.isMember(guildId), items1);
-  let obj2 = guildId(14887);
+  let obj2 = guildId(13968);
   const currentUserGuildJoinRequest = obj2.useCurrentUserGuildJoinRequest(guildId);
   let applicationStatus;
   if (currentUserGuildJoinRequest != null) {
     applicationStatus = currentUserGuildJoinRequest.applicationStatus;
   }
-  const tmp7 = applicationStatus === guildId(5342).GuildJoinRequestApplicationStatuses.SUBMITTED;
+  const tmp7 = applicationStatus === guildId(5346).GuildJoinRequestApplicationStatuses.SUBMITTED;
   _slicedToArray = tmp7;
   [loading, closure_6] = loading.useState(false);
   closure_7 = reactDefault();
   const intl = tmp2(1113).intl;
   const string = intl.string;
+  const t = tmp2(1113).t;
   if (stateFromStores) {
-    stringResult = string(tmp10(2569).X4zfDg);
+    stringResult = string(t.cEnaWx);
     const intl4 = tmp2(1113).intl;
     let obj3 = { guild: guildName };
     formatToPlainStringResult = intl4.formatToPlainString(tmp10(2569).t1du0D, obj3);
   } else if (tmp7) {
-    stringResult = string(tmp10(2569).fVWYWS);
+    stringResult = string(t.tQqnak);
     const intl3 = tmp2(1113).intl;
     let obj4 = { guild: guildName };
     formatToPlainStringResult = intl3.formatToPlainString(tmp10(2569).nQnkb3, obj4);
   } else {
-    const stringResult1 = string(guildId(1113).t.VJlc0S);
+    stringResult = string(t.VJlc0S);
     const intl2 = tmp2(1113).intl;
     let obj5 = { guild: guildName };
     formatToPlainStringResult = intl2.formatToPlainString(tmp10(2569).NOfX8z, obj5);
-    stringResult = stringResult1;
   }
   let button;
-  const tmp15 = closure_6;
+  const tmp14 = closure_6;
   if (!fullWidth) {
     button = tmp.button;
   }
   let str = "sm";
   const obj6 = { style: button, children: obj(Button, obj7) };
-  Button = tmp2(5926).Button;
+  Button = tmp2(5930).Button;
   if (fullWidth) {
     str = "lg";
   }
@@ -203,5 +203,5 @@ export default function InterestGuildJoinButton(guildId) {
   if (!stateFromStores) {
     stateFromStores = loading;
   }
-  return obj(tmp15, obj6);
+  return obj(tmp14, obj6);
 };

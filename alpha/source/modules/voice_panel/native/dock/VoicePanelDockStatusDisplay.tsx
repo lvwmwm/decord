@@ -1,20 +1,20 @@
-// Module ID: 19203
-// Function ID: 19204
+// Module ID: 19248
+// Function ID: 19249
 // Name: VoicePanelDockStatusDisplay
-// Dependencies: [32, 19, 17, 19204, 12009, 21, 5919, 5306, 1655, 1113, 3253, 5538, 5929, 19205, 5367, 1708, 11984, 2]
+// Dependencies: [32, 19, 17, 19249, 12446, 21, 5923, 5310, 1655, 1113, 3255, 5542, 5933, 19250, 5371, 1708, 12427, 2]
 
-// Module 19203 (VoicePanelDockStatusDisplay)
+// Module 19248 (VoicePanelDockStatusDisplay)
 import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5538 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import spring_spring from "spring/spring" /* 5929 */;
+import timing_timing from "timing/timing" /* 5542 */;
+import Text_Text from "Text/Text" /* 5923 */;
+import spring_spring from "spring/spring" /* 5933 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import VoicePanelDockStatusStore from "VoicePanelDockStatusStore" /* 19204 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 12009 */;
+import VoicePanelDockStatusStore from "VoicePanelDockStatusStore" /* 19249 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 12446 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -599,7 +599,7 @@ const memoResult = react.memo(function VoicePanelDockStatusDisplay() {
   let onExited;
   let tmp11;
   let userId;
-  const f119412 = () => {
+  const f119689 = () => {
     let items;
     if ("channel" === obj2.kind) {
       items = [];
@@ -634,8 +634,8 @@ const memoResult = react.memo(function VoicePanelDockStatusDisplay() {
   }
   const tmp7 = _slicedToArray(obj.useState(() => ({ status: obj2, enter: null })), 2);
   first = tmp7[0];
-  [arr, tmp11] = obj.useState(f119412);
-  _slicedToArray(obj.useState(f119412), 2);
+  [arr, tmp11] = obj.useState(f119689);
+  _slicedToArray(obj.useState(f119689), 2);
   const tmp12 = _slicedToArray(obj.useState(() => {
     map = new Map();
     return map;

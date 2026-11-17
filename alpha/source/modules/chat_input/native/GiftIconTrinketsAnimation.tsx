@@ -1,18 +1,18 @@
-// Module ID: 14656
-// Function ID: 14657
+// Module ID: 13732
+// Function ID: 13733
 // Name: GiftIconTrinketsAnimation
-// Dependencies: [19, 17, 5307, 21, 5306, 5892, 575, 504, 2153, 14657, 6010, 2]
+// Dependencies: [19, 17, 5311, 21, 5310, 5896, 575, 504, 2153, 13733, 6014, 2]
 
-// Module 14656 (GiftIconTrinketsAnimation)
+// Module 13732 (GiftIconTrinketsAnimation)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import StringUtils from "StringUtils" /* 2153 */;
-import useToken from "useToken" /* 5892 */;
+import useToken from "useToken" /* 5896 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
-import createStyles from "createStyles" /* 5306 */;
+import AccessibilityStore from "AccessibilityStore" /* 5311 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;

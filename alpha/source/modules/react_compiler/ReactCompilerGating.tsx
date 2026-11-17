@@ -1,10 +1,10 @@
-// Module ID: 16585
-// Function ID: 16586
+// Module ID: 16620
+// Function ID: 16621
 // Name: ReactCompilerGating
 // Dependencies: [2]
 // Exports: isReactCompilerBuild, isReactCompilerEnabled
 
-// Module 16585 (ReactCompilerGating)
+// Module 16620 (ReactCompilerGating)
 import size from "module_2" /* 2 */;
 
 let c0 = false;

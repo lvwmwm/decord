@@ -1,10 +1,10 @@
-// Module ID: 19908
-// Function ID: 19909
+// Module ID: 19953
+// Function ID: 19954
 // Name: VideoActionCreators
 // Dependencies: [572, 2]
 // Exports: updateVideoSize
 
-// Module 19908 (VideoActionCreators)
+// Module 19953 (VideoActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 

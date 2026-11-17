@@ -1,11 +1,11 @@
-// Module ID: 19930
-// Function ID: 19931
+// Module ID: 19975
+// Function ID: 19976
 // Name: MorphablePanelUtils
-// Dependencies: [11986, 2]
+// Dependencies: [12429, 2]
 // Exports: calculatePIPPositionFromVelocity, calculateXYDiff, getClampedPIPPosition, getPIPWindowDimensions, pipXYtoAbsoluteXY
 
-// Module 19930 (MorphablePanelUtils)
-import MorphablePanelConstants from "MorphablePanelConstants" /* 11986 */;
+// Module 19975 (MorphablePanelUtils)
+import MorphablePanelConstants from "MorphablePanelConstants" /* 12429 */;
 import size from "module_2" /* 2 */;
 
 let tmp10;

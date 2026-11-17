@@ -1,26 +1,26 @@
-// Module ID: 11045
-// Function ID: 11046
+// Module ID: 11803
+// Function ID: 11804
 // Name: ChannelRowPreview
-// Dependencies: [19, 17, 5248, 21, 8085, 11046, 10856, 11048, 6019, 10737, 9102, 9104, 5934, 11024, 11050, 6051, 11055, 11064, 5537, 5306, 575, 5892, 5131, 9159, 11065, 11069, 9163, 504, 2]
+// Dependencies: [19, 17, 5252, 21, 8096, 11804, 11572, 10727, 6023, 11806, 9113, 9115, 5938, 11790, 11808, 6057, 11813, 11822, 5541, 5310, 575, 5896, 5135, 9170, 10718, 10717, 9174, 504, 2]
 
-// Module 11045 (ChannelRowPreview)
+// Module 11803 (ChannelRowPreview)
 import react_native from "react-native" /* 17 */;
-import UserSettings from "UserSettings" /* 5131 */;
-import createStyles from "createStyles" /* 5306 */;
-import useToken from "useToken" /* 5892 */;
-import LinkIcon2 from "LinkIcon" /* 6019 */;
-import ImageIcon2 from "ImageIcon" /* 8085 */;
-import PhoneCallIcon2 from "PhoneCallIcon" /* 9102 */;
-import PhoneHangUpIcon2 from "PhoneHangUpIcon" /* 9104 */;
-import RowGeneratorDefault from "RowGenerator" /* 9159 */;
-import StickerIcon2 from "StickerIcon" /* 10737 */;
-import MusicIcon2 from "MusicIcon" /* 10856 */;
-import VideoIcon2 from "VideoIcon" /* 11046 */;
-import AttachmentIcon2 from "AttachmentIcon" /* 11048 */;
-import MessagePreviewMarkup from "MessagePreviewMarkup" /* 11055 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 11069 */;
+import UserSettings from "UserSettings" /* 5135 */;
+import createStyles from "createStyles" /* 5310 */;
+import useToken from "useToken" /* 5896 */;
+import LinkIcon2 from "LinkIcon" /* 6023 */;
+import ImageIcon2 from "ImageIcon" /* 8096 */;
+import PhoneCallIcon2 from "PhoneCallIcon" /* 9113 */;
+import PhoneHangUpIcon2 from "PhoneHangUpIcon" /* 9115 */;
+import RowGeneratorDefault from "RowGenerator" /* 9170 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 10717 */;
+import AttachmentIcon2 from "AttachmentIcon" /* 10727 */;
+import MusicIcon2 from "MusicIcon" /* 11572 */;
+import VideoIcon2 from "VideoIcon" /* 11804 */;
+import StickerIcon2 from "StickerIcon" /* 11806 */;
+import MessagePreviewMarkup from "MessagePreviewMarkup" /* 11813 */;
 import react_mod from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 5248 */;
+import RelationshipStore from "RelationshipStore" /* 5252 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let _require, dependencyMap;
 let metroImportDefault;
 let metroRequire;
 let tmp2;
-const react_native2 = tmp2(9163);
+const react_native2 = tmp2(9174);
 function PreviewIcon(icon) {
   icon = icon.icon;
   const merged = Object.assign(icon, Object.assign({ icon: 0 }));
@@ -195,7 +195,7 @@ class NativeChannelRowPreview {
       gifAutoPlay = false;
     }
     ({ textColor, gradientStyles, gradientColors } = arg0);
-    const tmp = gifAutoPlay(5537)();
+    const tmp = gifAutoPlay(5541)();
     let obj = createStyles;
     let obj2 = { seeMoreLabelColor: gifAutoPlay(575).colors.TEXT_DEFAULT };
     dependencyMap = obj.createNativeStyleProperties(obj2)(tmp);
@@ -245,7 +245,7 @@ class NativeChannelRowPreview {
       gradientStyles,
       gradientColors
     };
-    return setting2(gifAutoPlay(11065), obj4);
+    return setting2(gifAutoPlay(10718), obj4);
   }
 }
 let react = react_mod;

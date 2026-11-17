@@ -1,11 +1,11 @@
-// Module ID: 10160
-// Function ID: 10161
+// Module ID: 10604
+// Function ID: 10605
 // Name: PlayableTypes
-// Dependencies: [10146, 2]
+// Dependencies: [10590, 2]
 // Exports: playableCtaFromServer, playableFromServer
 
-// Module 10160 (PlayableTypes)
-import AssetUtils from "AssetUtils" /* 10146 */;
+// Module 10604 (PlayableTypes)
+import AssetUtils from "AssetUtils" /* 10590 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/ads/PlayableTypes.tsx");

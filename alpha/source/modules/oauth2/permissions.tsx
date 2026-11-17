@@ -1,10 +1,10 @@
-// Module ID: 7413
-// Function ID: 7414
+// Module ID: 7423
+// Function ID: 7424
 // Name: permissions
 // Dependencies: [1072, 1084, 1113, 2]
 // Exports: containsDisallowedPermission, getPermissionName
 
-// Module 7413 (permissions)
+// Module 7423 (permissions)
 import Constants from "Constants" /* 1072 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
 import intl2 from "intl" /* 1113 */;

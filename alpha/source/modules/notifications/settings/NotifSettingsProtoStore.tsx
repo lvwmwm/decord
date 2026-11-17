@@ -1,15 +1,15 @@
-// Module ID: 16163
-// Function ID: 16164
+// Module ID: 16200
+// Function ID: 16201
 // Name: NotifSettingsProtoStore
-// Dependencies: [1231, 502, 16164, 16166, 1233, 504, 572, 2]
+// Dependencies: [1231, 502, 16201, 16203, 1233, 504, 572, 2]
 // Exports: createPendingEdit
 
-// Module 16163 (NotifSettingsProtoStore)
+// Module 16200 (NotifSettingsProtoStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import user_settings_UserSettingsUtils from "user_settings/UserSettingsUtils" /* 1233 */;
-import notification_settings from "notification_settings" /* 16164 */;
-import EffectiveNotifSettings from "EffectiveNotifSettings" /* 16166 */;
+import notification_settings from "notification_settings" /* 16201 */;
+import EffectiveNotifSettings from "EffectiveNotifSettings" /* 16203 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
@@ -107,7 +107,8 @@ let unpackModuleId;
 let c12 = false;
 let c14 = false;
 let c15 = false;
-let closure_16 = 0;
+let c16 = false;
+let closure_17 = 0;
 let enabled = false;
 const PersistedStore = get_initializedDefault.PersistedStore;
 class NotifSettingsProtoStore extends PersistedStore {
@@ -133,7 +134,7 @@ class NotifSettingsProtoStore extends PersistedStore {
       const b64ToProto = user_settings_UserSettingsUtils.b64ToProto;
       let proto = effectiveSettings.proto;
       user_settings_UserSettingsUtils;
-      const DeclarativeSettings = tmp9(16164).DeclarativeSettings;
+      const DeclarativeSettings = tmp9(16201).DeclarativeSettings;
       if (proto == null) {
         proto = null;
       }
@@ -144,7 +145,7 @@ class NotifSettingsProtoStore extends PersistedStore {
       const b64ToProto2 = user_settings_UserSettingsUtils.b64ToProto;
       let protoToSave = effectiveSettings.protoToSave;
       user_settings_UserSettingsUtils;
-      const DeclarativeSettings2 = tmp9(16164).DeclarativeSettings;
+      const DeclarativeSettings2 = tmp9(16201).DeclarativeSettings;
       if (protoToSave == null) {
         protoToSave = null;
       }
@@ -180,9 +181,9 @@ class NotifSettingsProtoStore extends PersistedStore {
       if (null != _undefined) {
         let partialSettings;
         if (null != _undefined2) {
-          const DeclarativeSettings = tmp(16164).DeclarativeSettings;
+          const DeclarativeSettings = tmp(16201).DeclarativeSettings;
           const cloneResult = DeclarativeSettings.clone(_undefined.partialSettings);
-          const DeclarativeSettings2 = tmp(16164).DeclarativeSettings;
+          const DeclarativeSettings2 = tmp(16201).DeclarativeSettings;
           DeclarativeSettings2.mergePartial(cloneResult, _undefined2.partialSettings);
           partialSettings = cloneResult;
         }
@@ -314,6 +315,12 @@ Object.defineProperty(prototype, "isEffectiveSettingsStale", {
   },
   set: undefined
 });
+Object.defineProperty(prototype, "hasCompletedEffectiveSettingsFetch", {
+  get: function hasCompletedEffectiveSettingsFetch() {
+    return c16;
+  },
+  set: undefined
+});
 Object.defineProperty(prototype, "isEffectiveSettingsLoading", {
   get: function isEffectiveSettingsLoading() {
     return c15;
@@ -322,13 +329,13 @@ Object.defineProperty(prototype, "isEffectiveSettingsLoading", {
 });
 Object.defineProperty(prototype, "isEffectiveSettingsScreenOpen", {
   get: function isEffectiveSettingsScreenOpen() {
-    return closure_16 > 0;
+    return closure_17 > 0;
   },
   set: undefined
 });
 Object.defineProperty(prototype, "effectiveSettingsScreenCount", {
   get: function effectiveSettingsScreenCount() {
-    return closure_16;
+    return closure_17;
   },
   set: undefined
 });
@@ -625,7 +632,8 @@ let obj = {
     c14 = false;
     c5 = undefined;
     c15 = false;
-    closure_16 = 0;
+    c16 = false;
+    closure_17 = 0;
     enabled = false;
     assignment = undefined;
   },
@@ -633,6 +641,7 @@ let obj = {
     if (null != c2) {
       const obj = EffectiveNotifSettings;
       if (c3 !== obj.legacySourceFingerprint(c2, UserSettingsProtoStore.settings)) {
+        c16 = false;
         c14 = true;
         c5 = undefined;
         c15 = false;
@@ -648,6 +657,7 @@ let obj = {
     if (requestId.requestId !== c5) {
       return false;
     } else {
+      c16 = true;
       c15 = false;
       c5 = undefined;
       acceptEffectiveSettings(tmp);
@@ -659,13 +669,14 @@ let obj = {
     } else {
       c5 = undefined;
       c15 = false;
+      c16 = true;
     }
   },
   EFFECTIVE_NOTIFICATION_SETTINGS_SCREEN_OPEN() {
-    closure_16 = closure_16 + 1;
+    closure_17 = closure_17 + 1;
   },
   EFFECTIVE_NOTIFICATION_SETTINGS_SCREEN_CLOSE() {
-    closure_16 = Math.max(0, closure_16 - 1);
+    closure_17 = Math.max(0, closure_17 - 1);
   },
   EFFECTIVE_NOTIFICATION_SETTINGS_ARM_CHANGE(arg0) {
     ({ enabled, assignment } = arg0);
@@ -686,6 +697,7 @@ let obj = {
       tmp = arm !== str;
     }
     if (tmp) {
+      c16 = false;
       c14 = true;
       c5 = undefined;
       c15 = false;

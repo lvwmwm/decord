@@ -1,43 +1,43 @@
-// Module ID: 7660
-// Function ID: 7661
+// Module ID: 7670
+// Function ID: 7671
 // Name: InstantInviteActionCreators
-// Dependencies: [5, 7661, 7029, 5159, 502, 5155, 5236, 5218, 5177, 7663, 6042, 5238, 5248, 5339, 1388, 1072, 1097, 5162, 6793, 6896, 7665, 1406, 7677, 7079, 1111, 1099, 6925, 2121, 6215, 7678, 6086, 6852, 7682, 5975, 7683, 7684, 7864, 7865, 7965, 572, 15935, 6828, 15936, 6907, 1256, 1285, 6748, 1089, 6841, 1264, 5167, 6043, 6910, 6833, 15938, 5127, 15941, 15942, 12380, 6169, 6252, 15943, 15944, 1254, 15946, 2]
+// Dependencies: [5, 7671, 7037, 5163, 502, 5159, 5240, 5222, 5181, 7673, 6046, 5242, 5252, 5343, 1388, 1072, 1097, 5166, 6801, 6904, 7675, 1406, 7687, 7087, 1111, 1099, 6933, 2121, 6223, 7688, 6093, 6860, 7692, 5979, 7693, 7694, 7874, 7875, 7976, 572, 15973, 6823, 15974, 6915, 1256, 1285, 6756, 1089, 6836, 1264, 5171, 6047, 6918, 6828, 15976, 5131, 15979, 15980, 12584, 6177, 6260, 15981, 15982, 1254, 15984, 2]
 // Exports: trackInviteEmbedActioned, trackInviteServerClicked, transitionToGuildFromEventInvite
 
-// Module 7660 (InstantInviteActionCreators)
+// Module 7670 (InstantInviteActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import AgeGateConstants from "AgeGateConstants" /* 1097 */;
 import router_utils from "router_utils" /* 1099 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
 import FlagUtils from "FlagUtils" /* 1406 */;
-import ChannelConstants from "ChannelConstants" /* 5162 */;
-import InviteCodeUtils from "InviteCodeUtils" /* 6043 */;
-import _modDef6169 from "module_6169" /* 6169 */;
-import Constants2 from "Constants" /* 6793 */;
-import AgeGateModalActionCreators from "AgeGateModalActionCreators" /* 6833 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 6896 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6907 */;
-import GuildScheduledEventStore2 from "GuildScheduledEventStore" /* 7029 */;
-import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 7661 */;
-import InviteTargetTypes from "InviteTargetTypes" /* 7665 */;
-import GuildInviteFlags from "GuildInviteFlags" /* 7677 */;
-import CodedLinkActionCreatorsDefault from "CodedLinkActionCreators" /* 12380 */;
-import showNSFWGuildJoinGate2 from "showNSFWGuildJoinGate" /* 15938 */;
-import generateDynamicLinkDefault from "generateDynamicLink" /* 15944 */;
-import ProtocolUtilsDefault from "ProtocolUtils" /* 15946 */;
+import ChannelConstants from "ChannelConstants" /* 5166 */;
+import InviteCodeUtils from "InviteCodeUtils" /* 6047 */;
+import _modDef6177 from "module_6177" /* 6177 */;
+import Constants2 from "Constants" /* 6801 */;
+import AgeGateModalActionCreators from "AgeGateModalActionCreators" /* 6828 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 6904 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6915 */;
+import GuildScheduledEventStore2 from "GuildScheduledEventStore" /* 7037 */;
+import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 7671 */;
+import InviteTargetTypes from "InviteTargetTypes" /* 7675 */;
+import GuildInviteFlags from "GuildInviteFlags" /* 7687 */;
+import CodedLinkActionCreatorsDefault from "CodedLinkActionCreators" /* 12584 */;
+import showNSFWGuildJoinGate2 from "showNSFWGuildJoinGate" /* 15976 */;
+import generateDynamicLinkDefault from "generateDynamicLink" /* 15982 */;
+import ProtocolUtilsDefault from "ProtocolUtils" /* 15984 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelRecord from "ChannelRecord" /* 5159 */;
+import ChannelRecord from "ChannelRecord" /* 5163 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import GuildChannelStore from "GuildChannelStore" /* 5236 */;
-import GuildMemberStore from "GuildMemberStore" /* 5218 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import InstantInviteStore from "InstantInviteStore" /* 7663 */;
-import InviteStore from "InviteStore" /* 6042 */;
-import PermissionStore from "PermissionStore" /* 5238 */;
-import RelationshipStore from "RelationshipStore" /* 5248 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
+import ChannelStore from "ChannelStore" /* 5159 */;
+import GuildChannelStore from "GuildChannelStore" /* 5240 */;
+import GuildMemberStore from "GuildMemberStore" /* 5222 */;
+import GuildStore from "GuildStore" /* 5181 */;
+import InstantInviteStore from "InstantInviteStore" /* 7673 */;
+import InviteStore from "InviteStore" /* 6046 */;
+import PermissionStore from "PermissionStore" /* 5242 */;
+import RelationshipStore from "RelationshipStore" /* 5252 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5343 */;
 import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -62,9 +62,9 @@ let metroImportAll;
 let tmp;
 let tmp13;
 let unpackModuleId;
-const errors_V6OrEarlierAPIErrorDefault = tmp13(5127);
-const resolveInviteDefault = tmp(15935);
-const f94479 = () => {
+const errors_V6OrEarlierAPIErrorDefault = tmp13(5131);
+const resolveInviteDefault = tmp(15973);
+const f94682 = () => {
   let c4;
   let guildScheduledEvent;
   let intent;
@@ -76,364 +76,367 @@ const f94479 = () => {
   let tmp = id;
   channel = channel.getChannel(id);
   currentUser = currentUser.getCurrentUser();
-  let tmp3 = null == channel || null == currentUser;
-  if (!tmp3) {
-    let tmp4 = channel.nsfw && !currentUser.nsfwAllowed;
-    if (!tmp4) {
+  if (null != channel) {
+    if (null != currentUser) {
       let isGuildVocalOrThreadResult = channel.isGuildVocalOrThread();
-      if (isGuildVocalOrThreadResult) {
-        const tmp6 = closure_2_0;
+      let result = isGuildVocalOrThreadResult;
+      if (result) {
+        const tmp3 = closure_2_0;
+        let tmp4 = paths;
         let obj3 = closure_2_0(paths[41]);
-        isGuildVocalOrThreadResult = obj3.maybeOpenAgeGateForVoiceChannel(tmp);
+        result = obj3.maybeOpenAgeGateForVoiceChannel(tmp);
       }
-      tmp4 = isGuildVocalOrThreadResult;
-    }
-    if (!tmp4) {
-      let isGuildVocalOrThreadResult1 = channel.isGuildVocalOrThread();
-      if (isGuildVocalOrThreadResult1) {
-        let tmp9 = closure_2_0;
-        let tmp10 = paths;
-        let obj4 = closure_2_0(paths[42]);
-        isGuildVocalOrThreadResult1 = obj4.maybeOpenSpoilerGateForVoiceChannel(tmp);
+      if (!result) {
+        if (isGuildVocalOrThreadResult) {
+          const tmp6 = closure_2_0;
+          let obj4 = closure_2_0(paths[42]);
+          isGuildVocalOrThreadResult = obj4.maybeOpenSpoilerGateForVoiceChannel(tmp);
+        }
+        result = isGuildVocalOrThreadResult;
       }
-      tmp4 = isGuildVocalOrThreadResult1;
-    }
-    let flag = !tmp4;
-    if (flag) {
-      let tmp11 = obj;
-      let guildScheduledEvent1;
-      if (obj != null) {
-        guildScheduledEvent1 = tmp11.guildScheduledEvent;
+      if (!result) {
+        let tmp9 = channel.nsfw && !currentUser.nsfwAllowed;
+        result = tmp9;
       }
-      if (null != guildScheduledEvent1) {
-        const guildScheduledEvent2 = tmp11.guildScheduledEvent;
-        welcomeModalChannelId = tmp11.welcomeModalChannelId;
-        flag = false;
-        if (null != guildScheduledEvent2) {
-          closure_2_5(() => {
-            obj = { guildScheduledEventId: guildScheduledEvent2.id };
-            const tmp = guildScheduledEvent2;
-            if (null != welcomeModalChannelId) {
-              obj.welcomeModalChannelId = welcomeModalChannelId;
-            }
-            const obj2 = id(closure_2_3[38]);
-            const result = obj2.transitionToEventDetailsFromInvite(tmp, obj);
-          });
+      let flag = !result;
+      if (flag) {
+        let tmp10 = obj;
+        let guildScheduledEvent1;
+        if (obj != null) {
+          guildScheduledEvent1 = tmp10.guildScheduledEvent;
+        }
+        if (null != guildScheduledEvent1) {
+          const guildScheduledEvent2 = tmp10.guildScheduledEvent;
+          welcomeModalChannelId = tmp10.welcomeModalChannelId;
           flag = false;
-        }
-      } else {
-        let hasItem;
-        guildId = channel.getGuildId();
-        if (guildId == null) {
-          guildId = closure_2_27;
-        }
-        let closure_2 = tmp11;
-        if (items === undefined) {
-          items = [];
-        }
-        c4 = undefined;
-        targetType = undefined;
-        let targetApplicationId;
-        let isGuestInvite;
-        let GUILD_HOME;
-        let closure_9;
-        let c10;
-        guild = guild.getGuild(guildId);
-        if (guild != null) {
-          const features = guild.features;
-          hasItem = features.has(constants2.MEMBER_VERIFICATION_MANUAL_APPROVAL);
-        }
-        let obj2 = tmp11;
-        if (tmp11 == null) {
-          obj2 = {};
-        }
-        ({ targetUserId: c4, targetType } = obj2);
-        targetApplicationId = obj2.targetApplicationId;
-        isGuestInvite = obj2.isGuestInvite;
-        if (!isGuestInvite) {
-          if (!obj2.isApplicationBypassInvite) {
-            let forceTransition;
-            if (tmp11 != null) {
-              forceTransition = tmp11.forceTransition;
-            }
-            if (!forceTransition) {
-              if (hasItem) {
-                flag = false;
+          if (null != guildScheduledEvent2) {
+            closure_2_5(() => {
+              obj = { guildScheduledEventId: guildScheduledEvent2.id };
+              const tmp = guildScheduledEvent2;
+              if (null != welcomeModalChannelId) {
+                obj.welcomeModalChannelId = welcomeModalChannelId;
               }
-            }
+              const obj2 = id(closure_2_3[38]);
+              const result = obj2.transitionToEventDetailsFromInvite(tmp, obj);
+            });
+            flag = false;
           }
-        }
-        let type = channel.type;
-        let targetChannelId;
-        const channel1 = obj.getChannel(channel.id);
-        if (tmp11 != null) {
-          targetChannelId = tmp11.targetChannelId;
-        }
-        if (null != targetChannelId) {
-          const channel2 = obj.getChannel(targetChannelId);
-          if (null != channel2) {
-            GUILD_HOME = targetChannelId;
+        } else {
+          let hasItem;
+          guildId = channel.getGuildId();
+          if (guildId == null) {
+            guildId = closure_2_27;
           }
-          closure_9 = type === constants.GUILD_STAGE_VOICE;
-          let targetChannelId1;
-          const tmp37 = constants;
-          if (tmp11 != null) {
-            targetChannelId1 = tmp11.targetChannelId;
+          let closure_2 = tmp10;
+          if (items === undefined) {
+            items = [];
           }
-          let tmp40;
-          if (null != targetChannelId1 && GUILD_HOME === tmp11.targetChannelId) {
-            let targetMessageId;
-            if (tmp11 != null) {
-              targetMessageId = tmp11.targetMessageId;
-            }
-            tmp40 = targetMessageId;
+          c4 = undefined;
+          targetType = undefined;
+          let targetApplicationId;
+          let isGuestInvite;
+          let GUILD_HOME;
+          let closure_9;
+          let c10;
+          guild = guild.getGuild(guildId);
+          if (guild != null) {
+            const features = guild.features;
+            hasItem = features.has(constants2.MEMBER_VERIFICATION_MANUAL_APPROVAL);
           }
-          const CHANNELResult = closure_2_26.CHANNEL(guildId, GUILD_HOME, tmp40);
-          c10 = CHANNELResult;
-          const tmp42 = closure_2_26;
-          if (GUILD_HOME === channel.id) {
-            if (closure_2_9(type)) {
-              autoJoin = undefined;
-              if (tmp11 != null) {
-                autoJoin = tmp11.autoJoin;
+          let obj2 = tmp10;
+          if (tmp10 == null) {
+            obj2 = {};
+          }
+          ({ targetUserId: c4, targetType } = obj2);
+          targetApplicationId = obj2.targetApplicationId;
+          isGuestInvite = obj2.isGuestInvite;
+          if (!isGuestInvite) {
+            if (!obj2.isApplicationBypassInvite) {
+              let forceTransition;
+              if (tmp10 != null) {
+                forceTransition = tmp10.forceTransition;
               }
-              if (false !== autoJoin) {
-                closure_2_5(() => {
-                  let analyticsLocations;
-                  let applicationId;
-                  let ownerId;
-                  items = [id(closure_2_3[27])(closure_2_3[26], closure_2_3.paths), id(closure_2_3[27])(closure_2_3[28], closure_2_3.paths)];
-                  const allResult = all(items);
-                  allResult.then((result) => {
-                    const iter = result[Symbol.iterator]();
-                    let tmp = iter === undefined;
-                    let nextResult;
-                    if (!tmp) {
-                      nextResult = iter.next();
-                    }
-                    let nextResult1;
-                    let tmp4 = tmp;
-                    if (!tmp4) {
-                      tmp4 = tmp6;
-                      if (!tmp4) {
-                        nextResult1 = iter.next();
-                        tmp4 = tmp6;
-                      }
-                    }
-                    nextResult1 = nextResult1.default;
-                    if (!tmp4) {
-                      iter.return();
-                    }
-                    function connect() {
-                      let intent;
-                      let inviterUserId;
-                      const tmp = closure_2_9;
-                      if (tmp) {
-                        let tmp49;
-                        const connectAndOpen = guildId(items[29]).connectAndOpen;
-                        guildId(items[29]);
-                        if (closure_2_1 instanceof closure_3_11) {
-                          tmp49 = tmp46;
-                        } else {
-                          tmp49 = c10(tmp46);
-                        }
-                        connectAndOpen(tmp49);
-                        const obj4 = guildId(items[25]);
-                        obj4.transitionTo(closure_2_10);
-                      } else {
-                        let prop;
-                        if (closure_2_2 != null) {
-                          prop = tmp2.muteOnJoinVoiceChannel;
-                        }
-                        if (prop) {
-                          nextResult1.setSelfMute(guildId(items[30]).MediaEngineContextTypes.DEFAULT, true);
-                        }
-                        const voiceChannel = nextResult.selectVoiceChannel(GUILD_HOME);
-                        let tmp15 = targetType === guildId(items[20]).InviteTargetTypes.STREAM;
-                        const tmp12 = targetType;
-                        if (tmp15) {
-                          tmp15 = null != ownerId;
-                        }
-                        if (tmp15) {
-                          const obj2 = { streamType: constants2.GUILD, ownerId, guildId, channelId: GUILD_HOME };
-                          obj = closure_2(items[31]);
-                          const result = obj.watchStreamAndTransitionToStream(obj2);
-                        }
-                        const tmp25 = tmp12 === guildId(items[20]).InviteTargetTypes.EMBEDDED_APPLICATION && null != applicationId;
-                        if (tmp25) {
-                          let tmp31 = guildId;
-                          const transitionTo = guildId(items[25]).transitionTo;
-                          const CHANNEL = constants.CHANNEL;
-                          guildId(items[25]);
-                          if (guildId == null) {
-                            tmp31 = closure_3_27;
-                          }
-                          transitionTo(CHANNEL(tmp31, GUILD_HOME));
-                          const obj3 = { channelId: GUILD_HOME, applicationId, intent, inviterUserId, analyticsLocations, commandOrigin: guildId(items[33]).CommandOrigin.CHAT };
-                          intent = undefined;
-                          const tmp35 = channel(items[32]);
-                          if (closure_2_2 != null) {
-                            intent = tmp2.intent;
-                          }
-                          inviterUserId = undefined;
-                          if (closure_2_2 != null) {
-                            inviterUserId = tmp2.inviterUserId;
-                          }
-                          tmp35(obj3);
-                        }
-                      }
-                    }
-                    const tmp8 = closure_7;
-                    if (!tmp8) {
-                      obj = guildId(analyticsLocations[34]);
-                      let tmp12 = closure_1_17;
-                      items = [closure_1_17, , ];
-                      items[1] = closure_1_23;
-                      items[2] = closure_1_16;
-                      const tmp10 = analyticsLocations;
-                      const tmp11 = nextResult.default;
-                      const tmp9 = guildId;
-                      if (obj.shouldShowMembershipVerificationGate(nextResult.default, items)) {
-                        const tmp9Result = tmp9(tmp10[35]);
-                        result = tmp9Result.openMemberVerificationModal(tmp11, connect);
-                      }
-                    }
-                    connect();
-                  });
-                });
-              }
-              if (null != targetChannelId1 && GUILD_HOME === tmp11.targetChannelId) {
-                if (guildId !== closure_2_27) {
-                  function runDeepLinkJump() {
-                    let guildScheduledEvent;
-                    let transitionTo;
-                    let transitionToResult;
-                    let welcomeModalChannelId;
-                    obj = closure_2;
-                    const type = channel.type;
-                    if (closure_2 == null) {
-                      obj = {};
-                    }
-                    ({ transitionTo, welcomeModalChannelId, guildScheduledEvent } = obj);
-                    const obj2 = { source: closure_2_1(closure_2_3[24]).INVITE_ACCEPT, navigationReplace: true, openChannel: true };
-                    const GUILD_STAGE_VOICE = constants.GUILD_STAGE_VOICE;
-                    const tmp = closure_2_3;
-                    if (null != welcomeModalChannelId) {
-                      obj2.welcomeModalChannelId = welcomeModalChannelId;
-                    }
-                    if (type === GUILD_STAGE_VOICE) {
-                      const obj3 = { stageInviteKey };
-                      obj2.state = obj3;
-                    }
-                    if (null != guildScheduledEvent) {
-                      obj2.guildScheduledEventId = guildScheduledEvent.id;
-                    }
-                    if (null != transitionTo) {
-                      transitionToResult = transitionTo(tmp3, obj2);
-                    } else {
-                      const obj4 = id(tmp[25]);
-                      transitionToResult = obj4.transitionTo(tmp3, obj2);
-                    }
-                    return transitionToResult;
-                  }
-                  const promise = closure_2_0(paths[27])(paths[37], paths.paths);
-                  const nextPromise = promise.then((result) => {
-                    obj = { guildId };
-                    return result.default(obj);
-                  });
-                  nextPromise.then(runDeepLinkJump, runDeepLinkJump);
+              if (!forceTransition) {
+                if (hasItem) {
                   flag = false;
                 }
               }
-              let obj5 = tmp11;
-              const type2 = channel.type;
-              if (tmp11 == null) {
-                obj5 = {};
+            }
+          }
+          let type = channel.type;
+          let targetChannelId;
+          const channel1 = obj.getChannel(channel.id);
+          if (tmp10 != null) {
+            targetChannelId = tmp10.targetChannelId;
+          }
+          if (null != targetChannelId) {
+            const channel2 = obj.getChannel(targetChannelId);
+            if (null != channel2) {
+              GUILD_HOME = targetChannelId;
+            }
+            closure_9 = type === constants.GUILD_STAGE_VOICE;
+            let targetChannelId1;
+            const tmp36 = constants;
+            if (tmp10 != null) {
+              targetChannelId1 = tmp10.targetChannelId;
+            }
+            let tmp39;
+            if (null != targetChannelId1 && GUILD_HOME === tmp10.targetChannelId) {
+              let targetMessageId;
+              if (tmp10 != null) {
+                targetMessageId = tmp10.targetMessageId;
               }
-              ({ transitionTo: transitionTo2, welcomeModalChannelId, guildScheduledEvent } = obj5);
-              const obj8 = { source: closure_2_1(paths[24]).INVITE_ACCEPT, navigationReplace: true };
-              let GUILD_STAGE_VOICE = tmp37.GUILD_STAGE_VOICE;
-              const tmp61 = paths;
-              if (null != targetChannelId1 && GUILD_HOME === tmp11.targetChannelId) {
-                obj8.openChannel = true;
+              tmp39 = targetMessageId;
+            }
+            const CHANNELResult = closure_2_26.CHANNEL(guildId, GUILD_HOME, tmp39);
+            c10 = CHANNELResult;
+            const tmp41 = closure_2_26;
+            if (GUILD_HOME === channel.id) {
+              if (closure_2_9(type)) {
+                autoJoin = undefined;
+                if (tmp10 != null) {
+                  autoJoin = tmp10.autoJoin;
+                }
+                if (false !== autoJoin) {
+                  closure_2_5(() => {
+                    let analyticsLocations;
+                    let applicationId;
+                    let ownerId;
+                    items = [id(closure_2_3[27])(closure_2_3[26], closure_2_3.paths), id(closure_2_3[27])(closure_2_3[28], closure_2_3.paths)];
+                    const allResult = all(items);
+                    allResult.then((result) => {
+                      const iter = result[Symbol.iterator]();
+                      let tmp = iter === undefined;
+                      let nextResult;
+                      if (!tmp) {
+                        nextResult = iter.next();
+                      }
+                      let nextResult1;
+                      let tmp4 = tmp;
+                      if (!tmp4) {
+                        tmp4 = tmp6;
+                        if (!tmp4) {
+                          nextResult1 = iter.next();
+                          tmp4 = tmp6;
+                        }
+                      }
+                      nextResult1 = nextResult1.default;
+                      if (!tmp4) {
+                        iter.return();
+                      }
+                      function connect() {
+                        let intent;
+                        let inviterUserId;
+                        const tmp = closure_2_9;
+                        if (tmp) {
+                          let tmp49;
+                          const connectAndOpen = guildId(items[29]).connectAndOpen;
+                          guildId(items[29]);
+                          if (closure_2_1 instanceof closure_3_11) {
+                            tmp49 = tmp46;
+                          } else {
+                            tmp49 = c10(tmp46);
+                          }
+                          connectAndOpen(tmp49);
+                          const obj4 = guildId(items[25]);
+                          obj4.transitionTo(closure_2_10);
+                        } else {
+                          let prop;
+                          if (closure_2_2 != null) {
+                            prop = tmp2.muteOnJoinVoiceChannel;
+                          }
+                          if (prop) {
+                            nextResult1.setSelfMute(guildId(items[30]).MediaEngineContextTypes.DEFAULT, true);
+                          }
+                          const voiceChannel = nextResult.selectVoiceChannel(GUILD_HOME);
+                          let tmp15 = targetType === guildId(items[20]).InviteTargetTypes.STREAM;
+                          const tmp12 = targetType;
+                          if (tmp15) {
+                            tmp15 = null != ownerId;
+                          }
+                          if (tmp15) {
+                            const obj2 = { streamType: constants2.GUILD, ownerId, guildId, channelId: GUILD_HOME };
+                            obj = closure_2(items[31]);
+                            const result = obj.watchStreamAndTransitionToStream(obj2);
+                          }
+                          const tmp25 = tmp12 === guildId(items[20]).InviteTargetTypes.EMBEDDED_APPLICATION && null != applicationId;
+                          if (tmp25) {
+                            let tmp31 = guildId;
+                            const transitionTo = guildId(items[25]).transitionTo;
+                            const CHANNEL = constants.CHANNEL;
+                            guildId(items[25]);
+                            if (guildId == null) {
+                              tmp31 = closure_3_27;
+                            }
+                            transitionTo(CHANNEL(tmp31, GUILD_HOME));
+                            const obj3 = { channelId: GUILD_HOME, applicationId, intent, inviterUserId, analyticsLocations, commandOrigin: guildId(items[33]).CommandOrigin.CHAT };
+                            intent = undefined;
+                            const tmp35 = channel(items[32]);
+                            if (closure_2_2 != null) {
+                              intent = tmp2.intent;
+                            }
+                            inviterUserId = undefined;
+                            if (closure_2_2 != null) {
+                              inviterUserId = tmp2.inviterUserId;
+                            }
+                            tmp35(obj3);
+                          }
+                        }
+                      }
+                      const tmp8 = closure_7;
+                      if (!tmp8) {
+                        obj = guildId(analyticsLocations[34]);
+                        let tmp12 = closure_1_17;
+                        items = [closure_1_17, , ];
+                        items[1] = closure_1_23;
+                        items[2] = closure_1_16;
+                        const tmp10 = analyticsLocations;
+                        const tmp11 = nextResult.default;
+                        const tmp9 = guildId;
+                        if (obj.shouldShowMembershipVerificationGate(nextResult.default, items)) {
+                          const tmp9Result = tmp9(tmp10[35]);
+                          result = tmp9Result.openMemberVerificationModal(tmp11, connect);
+                        }
+                      }
+                      connect();
+                    });
+                  });
+                }
+                if (null != targetChannelId1 && GUILD_HOME === tmp10.targetChannelId) {
+                  if (guildId !== closure_2_27) {
+                    function runDeepLinkJump() {
+                      let guildScheduledEvent;
+                      let transitionTo;
+                      let transitionToResult;
+                      let welcomeModalChannelId;
+                      obj = closure_2;
+                      const type = channel.type;
+                      if (closure_2 == null) {
+                        obj = {};
+                      }
+                      ({ transitionTo, welcomeModalChannelId, guildScheduledEvent } = obj);
+                      const obj2 = { source: closure_2_1(closure_2_3[24]).INVITE_ACCEPT, navigationReplace: true, openChannel: true };
+                      const GUILD_STAGE_VOICE = constants.GUILD_STAGE_VOICE;
+                      const tmp = closure_2_3;
+                      if (null != welcomeModalChannelId) {
+                        obj2.welcomeModalChannelId = welcomeModalChannelId;
+                      }
+                      if (type === GUILD_STAGE_VOICE) {
+                        const obj3 = { stageInviteKey };
+                        obj2.state = obj3;
+                      }
+                      if (null != guildScheduledEvent) {
+                        obj2.guildScheduledEventId = guildScheduledEvent.id;
+                      }
+                      if (null != transitionTo) {
+                        transitionToResult = transitionTo(tmp3, obj2);
+                      } else {
+                        const obj4 = id(tmp[25]);
+                        transitionToResult = obj4.transitionTo(tmp3, obj2);
+                      }
+                      return transitionToResult;
+                    }
+                    const promise = closure_2_0(paths[27])(paths[37], paths.paths);
+                    const nextPromise = promise.then((result) => {
+                      obj = { guildId };
+                      return result.default(obj);
+                    });
+                    nextPromise.then(runDeepLinkJump, runDeepLinkJump);
+                    flag = false;
+                  }
+                }
+                let obj5 = tmp10;
+                const type2 = channel.type;
+                if (tmp10 == null) {
+                  obj5 = {};
+                }
+                ({ transitionTo: transitionTo2, welcomeModalChannelId, guildScheduledEvent } = obj5);
+                const obj8 = { source: closure_2_1(paths[24]).INVITE_ACCEPT, navigationReplace: true };
+                let GUILD_STAGE_VOICE = tmp36.GUILD_STAGE_VOICE;
+                const tmp60 = paths;
+                if (null != targetChannelId1 && GUILD_HOME === tmp10.targetChannelId) {
+                  obj8.openChannel = true;
+                }
+                if (null != welcomeModalChannelId) {
+                  obj8.welcomeModalChannelId = welcomeModalChannelId;
+                }
+                if (type2 === GUILD_STAGE_VOICE) {
+                  const obj9 = { stageInviteKey };
+                  obj8.state = obj9;
+                }
+                if (null != guildScheduledEvent) {
+                  obj8.guildScheduledEventId = guildScheduledEvent.id;
+                }
+                if (null != transitionTo2) {
+                  transitionTo2(CHANNELResult, obj8);
+                  flag = false;
+                } else {
+                  const obj12 = closure_2_0(tmp60[25]);
+                  let transitionToResult = obj12.transitionTo(CHANNELResult, obj8);
+                  flag = false;
+                }
               }
-              if (null != welcomeModalChannelId) {
-                obj8.welcomeModalChannelId = welcomeModalChannelId;
+            }
+            const tmp45 = closure_2_0;
+            const tmp46 = paths;
+            const obj7 = closure_2_0(paths[36]);
+            const tmp47 = obj7.isActivityInTextSupportedForChannel(channel1) && targetType === tmp45(tmp46[20]).InviteTargetTypes.EMBEDDED_APPLICATION && null != targetApplicationId;
+            if (tmp47) {
+              let tmp49 = guildId;
+              let transitionTo = tmp45(tmp46[25]).transitionTo;
+              let CHANNEL = tmp41.CHANNEL;
+              tmp45(tmp46[25]);
+              if (guildId == null) {
+                tmp49 = closure_2_27;
               }
-              if (type2 === GUILD_STAGE_VOICE) {
-                const obj9 = { stageInviteKey };
-                obj8.state = obj9;
+              transitionTo(CHANNEL(tmp49, GUILD_HOME));
+              const obj10 = { channelId: GUILD_HOME, applicationId: targetApplicationId, intent, inviterUserId, analyticsLocations: items, commandOrigin: tmp45(tmp46[33]).CommandOrigin.CHAT };
+              intent = undefined;
+              const tmp52 = closure_2_1(tmp46[32]);
+              if (tmp10 != null) {
+                intent = tmp10.intent;
               }
-              if (null != guildScheduledEvent) {
-                obj8.guildScheduledEventId = guildScheduledEvent.id;
+              inviterUserId = undefined;
+              if (tmp10 != null) {
+                inviterUserId = tmp10.inviterUserId;
               }
-              if (null != transitionTo2) {
-                transitionTo2(CHANNELResult, obj8);
-                flag = false;
-              } else {
-                const obj12 = closure_2_0(tmp61[25]);
-                let transitionToResult = obj12.transitionTo(CHANNELResult, obj8);
-                flag = false;
+              tmp52(obj10);
+            }
+          }
+          let targetType1;
+          if (tmp10 != null) {
+            targetType1 = tmp10.targetType;
+          }
+          if (null == targetType1) {
+            let tmp25 = closure_2_9;
+            if (!closure_2_9(channel.type)) {
+              const obj6 = closure_2_0(paths[23]);
+              if (obj6.canSeeOnboardingHome(guildId)) {
+                GUILD_HOME = constants4.GUILD_HOME;
               }
             }
           }
-          const tmp46 = closure_2_0;
-          const obj7 = closure_2_0(paths[36]);
-          const tmp48 = obj7.isActivityInTextSupportedForChannel(channel1) && targetType === tmp46(paths[20]).InviteTargetTypes.EMBEDDED_APPLICATION && null != targetApplicationId;
-          if (tmp48) {
-            let tmp50 = guildId;
-            let transitionTo = tmp46(tmp47[25]).transitionTo;
-            let CHANNEL = tmp42.CHANNEL;
-            tmp46(paths[25]);
-            if (guildId == null) {
-              tmp50 = closure_2_27;
-            }
-            transitionTo(CHANNEL(tmp50, GUILD_HOME));
-            const obj10 = { channelId: GUILD_HOME, applicationId: targetApplicationId, intent, inviterUserId, analyticsLocations: items, commandOrigin: tmp46(paths[33]).CommandOrigin.CHAT };
-            intent = undefined;
-            const tmp53 = closure_2_1(paths[32]);
-            if (tmp11 != null) {
-              intent = tmp11.intent;
-            }
-            inviterUserId = undefined;
-            if (tmp11 != null) {
-              inviterUserId = tmp11.inviterUserId;
-            }
-            tmp53(obj10);
-          }
-        }
-        let targetType1;
-        if (tmp11 != null) {
-          targetType1 = tmp11.targetType;
-        }
-        if (null == targetType1) {
-          if (!closure_2_9(channel.type)) {
-            const obj6 = closure_2_0(paths[23]);
-            if (obj6.canSeeOnboardingHome(guildId)) {
-              GUILD_HOME = constants4.GUILD_HOME;
-            }
-          }
-        }
-        let tmp31 = closure_2_12;
-        const channel3 = obj.getChannel(channel.id);
-        if (closure_2_20.can(closure_2_12(channel.type), channel3)) {
-          id = channel.id;
-        } else {
-          defaultChannel = defaultChannel.getDefaultChannel(guildId, true, constants3.CREATE_INSTANT_INVITE);
-          id = undefined;
-          if (defaultChannel != null) {
-            id = defaultChannel.id;
-          }
-          if (id == null) {
+          const channel3 = obj.getChannel(channel.id);
+          let tmp31 = closure_2_20;
+          if (closure_2_20.can(closure_2_12(channel.type), channel3)) {
             id = channel.id;
+          } else {
+            defaultChannel = defaultChannel.getDefaultChannel(guildId, true, constants3.CREATE_INSTANT_INVITE);
+            id = undefined;
+            if (defaultChannel != null) {
+              id = defaultChannel.id;
+            }
+            if (id == null) {
+              id = channel.id;
+            }
           }
+          GUILD_HOME = id;
         }
-        GUILD_HOME = id;
       }
+      return flag;
     }
-    tmp3 = flag;
   }
-  return tmp3;
+  return true;
 };
 function generateAcceptInviteOptions(target_type) {
   let hasFlag;
@@ -507,7 +510,7 @@ function generateAcceptInviteOptions(target_type) {
 function transitionToInviteChannelSync(arg0, arg1) {
   let closure_0 = arg0;
   const items = [];
-  const result = ChannelStore.addConditionalChangeListener(f94479);
+  const result = ChannelStore.addConditionalChangeListener(f94682);
 }
 let body = function _transitionToGuildFromEventInvite() {
   let obj = _asyncToGenerator(async (arg0, value) => {
@@ -593,7 +596,7 @@ body = {
   resolveInvite(code, arg1, arg2) {
     let closure_1;
     let nextPromise;
-    const f94481 = () => {
+    const f94684 = () => {
       let nextPromise;
       const tmp = code;
       let obj = DispatcherDefault;
@@ -601,7 +604,7 @@ body = {
       const tmp3 = closure_2;
       if (obj.isDispatching()) {
         const resolved = Promise.resolve();
-        nextPromise = resolved.then(f94481);
+        nextPromise = resolved.then(f94684);
       } else {
         let obj2 = { type: "INVITE_RESOLVE", code: tmp };
         const tmp4Result = DispatcherDefault;
@@ -632,7 +635,7 @@ body = {
     if (obj.isDispatching()) {
       const tmp5 = globalThis;
       let resolved = Promise.resolve();
-      nextPromise = resolved.then(f94481);
+      nextPromise = resolved.then(f94684);
     } else {
       let obj2 = { type: "INVITE_RESOLVE", code };
       const tmpResult = DispatcherDefault;
@@ -1028,7 +1031,7 @@ body = {
     let obj3;
     const code = invite.code;
     const channel = invite.channel;
-    const tmp = channel(6841);
+    const tmp = channel(6836);
     let obj = { url: closure_24.INVITE(code), oldFormErrors: true, trackedActionData: obj2, rejectWithError: obj3.rejectWithMigratedError() };
     const _delete = tmp.delete;
     obj2 = { event: code(1264).NetworkActionNames.INVITE_REVOKE, properties: { uses: invite.uses, max_uses: invite.maxUses, max_age: invite.maxAge, invite_type: invite.type } };
@@ -1305,7 +1308,7 @@ body = {
           if (items === undefined) {
             items = [];
           }
-          let result = ChannelStore.addConditionalChangeListener(f94479);
+          let result = ChannelStore.addConditionalChangeListener(f94682);
         }
         if (null != importDefault) {
           tmp7(channel);
@@ -1338,7 +1341,7 @@ body = {
           }
           if (null != dMFromUserId) {
             let closure_2 = [];
-            const result = ChannelStore.addConditionalChangeListener(f94479);
+            const result = ChannelStore.addConditionalChangeListener(f94682);
           }
         }
       }
@@ -1350,7 +1353,7 @@ body = {
         hasItem = features.includes(constants2.HUB);
       }
       if (hasItem) {
-        const obj6 = obj(15941);
+        const obj6 = obj(15979);
         obj6.onOpenHubInvite(flags);
       }
     }
@@ -1359,17 +1362,17 @@ body = {
       num = 0;
     }
     const obj2 = dMFromUserId(1406);
-    let hasFlagResult = obj2.hasFlag(num, dMFromUserId(7677).GuildInviteFlags.IS_GUEST_INVITE);
+    let hasFlagResult = obj2.hasFlag(num, dMFromUserId(7687).GuildInviteFlags.IS_GUEST_INVITE);
     if (!hasFlagResult) {
       const tmp6Result = dMFromUserId(1406);
-      hasFlagResult = tmp6Result.hasFlag(num, tmp6(7677).GuildInviteFlags.IS_APPLICATION_BYPASS);
+      hasFlagResult = tmp6Result.hasFlag(num, tmp6(7687).GuildInviteFlags.IS_APPLICATION_BYPASS);
     }
     if (null != guild) {
       if (!hasFlagResult) {
         if (flags.new_member) {
-          const tmp6Result3 = dMFromUserId(15942);
+          const tmp6Result3 = dMFromUserId(15980);
           if (tmp6Result3.inviteGuildHasPendingMemberDisabledVerification(guild)) {
-            const tmp6Result4 = dMFromUserId(15942);
+            const tmp6Result4 = dMFromUserId(15980);
             const result1 = tmp6Result4.openVerificationModalOrTransitionToApplication(guild.id);
           }
         }
@@ -1392,7 +1395,7 @@ body = {
       const id = channel.id;
       let closure_1 = tmp18;
       closure_2 = [];
-      const result2 = ChannelStore.addConditionalChangeListener(f94479);
+      const result2 = ChannelStore.addConditionalChangeListener(f94682);
     }
   },
   openNativeAppModal(inviteKey) {
@@ -1458,8 +1461,8 @@ body = {
     let obj2 = DispatcherDefault;
     const obj3 = { type: "INVITE_APP_OPENING", code };
     obj2.dispatch(obj3);
-    if (null != _modDef6169.ua) {
-      const str = _modDef6169.ua;
+    if (null != _modDef6177.ua) {
+      const str = _modDef6177.ua;
       const formatted = str.toLowerCase();
       if (formatted.indexOf("googlebot") > -1) {
         const obj6 = { type: "INVITE_APP_NOT_OPENED", code };
@@ -1467,13 +1470,13 @@ body = {
         tmp7Result.dispatch(obj6);
       }
     }
-    const os = tmp7(6169).os;
+    const os = tmp7(6177).os;
     let family;
     if (os != null) {
       family = os.family;
     }
     if ("Android" !== family) {
-      const os2 = tmp7(6169).os;
+      const os2 = tmp7(6177).os;
       let family1;
       if (os2 != null) {
         family1 = os2.family;
@@ -1520,7 +1523,7 @@ body = {
       const obj4 = require("DynamicLinkTemplates");
       inviteDynamicLinkTemplate = obj4.getDefaultDynamicLinkTemplate();
     }
-    const tmp18Result = tmp18(15944);
+    const tmp18Result = tmp18(15982);
     const attemptId = tmp18Result.generateAttemptId();
     inviteType = undefined;
     const tmp7Result5 = generateDynamicLinkDefault;

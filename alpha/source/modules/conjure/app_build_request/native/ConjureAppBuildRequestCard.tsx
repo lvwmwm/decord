@@ -1,22 +1,22 @@
-// Module ID: 13745
-// Function ID: 13746
+// Module ID: 14795
+// Function ID: 14796
 // Name: ConjureAppBuildRequestCard
-// Dependencies: [19, 17, 21, 5306, 575, 13583, 1113, 4131, 13211, 5919, 7988, 7549, 7746, 7443, 5542, 13746, 7859, 5926, 2]
+// Dependencies: [19, 17, 21, 5310, 575, 14633, 1113, 4133, 14444, 5923, 7999, 7559, 7756, 7453, 5546, 14796, 7869, 5930, 2]
 // Exports: default
 
-// Module 13745 (ConjureAppBuildRequestCard)
+// Module 14795 (ConjureAppBuildRequestCard)
 import nativeDefault from "native" /* 575 */;
 import intl8 from "intl" /* 1113 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5542 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import XSmallIcon from "XSmallIcon" /* 7549 */;
-import IconButton2 from "IconButton" /* 7988 */;
-import ConjureAppBuildRequest from "ConjureAppBuildRequest" /* 13583 */;
-import ConjureAppBuildRequestProjectsSheetDefault from "ConjureAppBuildRequestProjectsSheet" /* 13746 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5546 */;
+import Text_Text from "Text/Text" /* 5923 */;
+import XSmallIcon from "XSmallIcon" /* 7559 */;
+import IconButton2 from "IconButton" /* 7999 */;
+import ConjureAppBuildRequest from "ConjureAppBuildRequest" /* 14633 */;
+import ConjureAppBuildRequestProjectsSheetDefault from "ConjureAppBuildRequestProjectsSheet" /* 14796 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -28,10 +28,10 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp2;
-const components_Button_Button = tmp2(5926);
-const TableRow2 = tmp2(7443);
-const TableRowGroup2 = tmp2(7746);
-const TextArea2 = tmp2(7859);
+const components_Button_Button = tmp2(5930);
+const TableRow2 = tmp2(7453);
+const TableRowGroup2 = tmp2(7756);
+const TextArea2 = tmp2(7869);
 ({ Keyboard: c3, View: closure_4 } = react_native);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
@@ -76,15 +76,15 @@ export default function ConjureAppBuildRequestCard(arg0) {
     return targetIds.includes(projectId.projectId);
   });
   const intl = intl8.intl;
-  const stringResult = intl.string(conjureAppBuildRequestForm(4131)["29gr8j"]);
+  const stringResult = intl.string(conjureAppBuildRequestForm(4133)["29gr8j"]);
   dependencyMap = stringResult;
   let obj2 = { style: tmp.card, holdsKeyboard: true, children: items1 };
   const obj3 = { style: tmp.header, children: items };
   const obj4 = { style: tmp.heading, children: closure_5(Text_Text.Text, obj5) };
   obj5 = { variant: "body-md/semibold", color: "text-default", accessibilityRole: "header", children: request.summary };
-  const tmp8 = conjureAppBuildRequestForm(13211);
+  const tmp8 = conjureAppBuildRequestForm(14444);
   items = [closure_5(closure_4, obj4), ];
-  const obj6 = { variant: "tertiary", size: "sm", icon: closure_5(XSmallIcon.XSmallIcon, { size: "sm" }), onPress: conjureAppBuildRequestForm.dismiss, accessibilityLabel: intl2.string(conjureAppBuildRequestForm(4131).KQUuAZ) };
+  const obj6 = { variant: "tertiary", size: "sm", icon: closure_5(XSmallIcon.XSmallIcon, { size: "sm" }), onPress: conjureAppBuildRequestForm.dismiss, accessibilityLabel: intl2.string(conjureAppBuildRequestForm(4133).KQUuAZ) };
   const IconButton = IconButton2.IconButton;
   intl2 = intl8.intl;
   items[1] = closure_5(IconButton, obj6);
@@ -92,7 +92,7 @@ export default function ConjureAppBuildRequestCard(arg0) {
   const tmp7 = closure_6;
   const tmp9 = closure_4;
   if (0 === conjureAppBuildRequestForm.projects.length) {
-    const obj7 = { variant: "body-sm/normal", color: "text-muted", children: intl4.string(conjureAppBuildRequestForm(4131).TbbzW5) };
+    const obj7 = { variant: "body-sm/normal", color: "text-muted", children: intl4.string(conjureAppBuildRequestForm(4133).TbbzW5) };
     const Text = Text_Text.Text;
     intl4 = intl8.intl;
     tmp10Result = tmp10(Text, obj7);
@@ -103,7 +103,7 @@ export default function ConjureAppBuildRequestCard(arg0) {
     TableRow = TableRow2.TableRow;
     if (0 === found.length) {
       const intl3 = intl8.intl;
-      stringResult1 = intl3.string(tmp5(4131).twlOb6);
+      stringResult1 = intl3.string(tmp5(4133).twlOb6);
     } else {
       const mapped = found.map((name) => name.name);
       stringResult1 = mapped.join(", ");
@@ -134,7 +134,7 @@ export default function ConjureAppBuildRequestCard(arg0) {
   }
   items1[1] = tmp10Result;
   const obj11 = {
-    label: intl5.string(conjureAppBuildRequestForm(4131).XZNsDA),
+    label: intl5.string(conjureAppBuildRequestForm(4133).XZNsDA),
     value: null,
     onChange: null,
     maxLength: ConjureAppBuildRequest.CONJURE_APP_BUILD_PROMPT_MAX_LENGTH,
@@ -161,11 +161,11 @@ export default function ConjureAppBuildRequestCard(arg0) {
   stringResult2 = undefined;
   if (conjureAppBuildRequestForm.failed) {
     const intl6 = intl8.intl;
-    stringResult2 = intl6.string(tmp5(4131).kMZz8G);
+    stringResult2 = intl6.string(tmp5(4133).kMZz8G);
   }
   items1[2] = closure_5(TextArea, obj11);
   const obj13 = { style: tmp.footer, children: closure_5(Button, obj24) };
-  obj24 = { variant: "primary", size: "sm", text: intl7.string(conjureAppBuildRequestForm(4131).gG4j6o), disabled: !conjureAppBuildRequestForm.canSubmit, loading: null, onPress: null };
+  obj24 = { variant: "primary", size: "sm", text: intl7.string(conjureAppBuildRequestForm(4133).gG4j6o), disabled: !conjureAppBuildRequestForm.canSubmit, loading: null, onPress: null };
   Button = components_Button_Button.Button;
   intl7 = intl8.intl;
   ({ sending: obj12.loading, submit: obj12.onPress } = conjureAppBuildRequestForm);

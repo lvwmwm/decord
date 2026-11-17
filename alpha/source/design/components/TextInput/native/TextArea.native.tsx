@@ -1,15 +1,15 @@
-// Module ID: 7859
-// Function ID: 7860
+// Module ID: 7869
+// Function ID: 7870
 // Name: TextArea
-// Dependencies: [109, 19, 21, 5369, 7620, 7860, 7621, 2]
+// Dependencies: [109, 19, 21, 5373, 7630, 7870, 7631, 2]
 // Exports: TextArea
 
-// Module 7859 (TextArea)
+// Module 7869 (TextArea)
 import Fragment from "Fragment" /* 21 */;
-import useFieldLabelA11yNative from "useFieldLabelA11yNative" /* 5369 */;
-import Input2 from "Input" /* 7620 */;
-import getRequiredFieldA11yName from "getRequiredFieldA11yName" /* 7621 */;
-import TextAreaField2 from "TextAreaField" /* 7860 */;
+import useFieldLabelA11yNative from "useFieldLabelA11yNative" /* 5373 */;
+import Input2 from "Input" /* 7630 */;
+import getRequiredFieldA11yName from "getRequiredFieldA11yName" /* 7631 */;
+import TextAreaField2 from "TextAreaField" /* 7870 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

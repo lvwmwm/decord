@@ -1,17 +1,17 @@
-// Module ID: 7402
-// Function ID: 7403
+// Module ID: 7412
+// Function ID: 7413
 // Name: Authorize
-// Dependencies: [5155, 5339, 1072, 7403, 7307, 6966, 5243, 1084, 6044, 2]
+// Dependencies: [5159, 5343, 1072, 7413, 7317, 6974, 5247, 1084, 6048, 2]
 // Exports: filterScopes, parseOAuth2AuthorizeProps
 
-// Module 7402 (Authorize)
+// Module 7412 (Authorize)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
-import PermissionUtilsAll from "PermissionUtils" /* 5243 */;
-import _mod6966 from "module_6966" /* 6966 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 7307 */;
-import scopes from "scopes" /* 7403 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
+import PermissionUtilsAll from "PermissionUtils" /* 5247 */;
+import _mod6974 from "module_6974" /* 6974 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 7317 */;
+import scopes from "scopes" /* 7413 */;
+import ChannelStore from "ChannelStore" /* 5159 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5343 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const QueryStringUtils = tmp(6044);
+const QueryStringUtils = tmp(6048);
 ({ EMPTY_NUX_SERVER: hasOwnProperty, FAVORITES: metroRequire, ME: metroImportDefault } = Constants);
 const result = size.fileFinishedImporting("modules/oauth2/Authorize.tsx");
 
@@ -28,7 +28,7 @@ export function filterScopes(items) {
     const RemovedScopes = scopes.RemovedScopes;
     return !RemovedScopes.includes(item);
   });
-  const hasItem = found.includes(OAuth2Scopes.OAuth2Scopes.BOT) && !found.includes(tmp(7307).OAuth2Scopes.APPLICATIONS_COMMANDS);
+  const hasItem = found.includes(OAuth2Scopes.OAuth2Scopes.BOT) && !found.includes(tmp(7317).OAuth2Scopes.APPLICATIONS_COMMANDS);
   if (hasItem) {
     found.push(OAuth2Scopes.OAuth2Scopes.APPLICATIONS_COMMANDS);
   }
@@ -44,7 +44,7 @@ export function parseOAuth2AuthorizeProps(query) {
       return guild_id;
     }
   }
-  const obj = _mod6966;
+  const obj = _mod6974;
   const parsed = obj.parse(query, { arrayFormat: "bracket" });
   let NONE = PermissionUtilsAll.NONE;
   try {

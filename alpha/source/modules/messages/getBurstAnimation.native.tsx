@@ -1,10 +1,10 @@
-// Module ID: 5265
-// Function ID: 5266
+// Module ID: 5269
+// Function ID: 5270
 // Name: getBurstAnimation
-// Dependencies: [5, 5266, 5267, 5268, 5269, 5270, 5271, 5272, 5273, 5274, 5275, 5276, 5277, 5278, 5279, 5280, 5281, 5282, 5283, 5284, 5285, 5286, 5287, 5288, 5289, 5290, 5291, 5292, 5293, 5294, 5295, 5296, 5297, 5298, 5299, 5300, 5301, 5302, 2]
+// Dependencies: [5, 5270, 5271, 5272, 5273, 5274, 5275, 5276, 5277, 5278, 5279, 5280, 5281, 5282, 5283, 5284, 5285, 5286, 5287, 5288, 5289, 5290, 5291, 5292, 5293, 5294, 5295, 5296, 5297, 5298, 5299, 5300, 5301, 5302, 5303, 5304, 5305, 5306, 2]
 // Exports: getBurstAnimation
 
-// Module 5265 (getBurstAnimation)
+// Module 5269 (getBurstAnimation)
 import _asyncToGeneratorDefault from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -13,31 +13,11 @@ let closure_5;
 
 const obj = {
   load() {
-    return require("module_5266");
+    return require("module_5270");
   }
 };
 const items = [
   obj,
-  {
-    load() {
-      return require("module_5267");
-    }
-  },
-  {
-    load() {
-      return require("module_5268");
-    }
-  },
-  {
-    load() {
-      return require("module_5269");
-    }
-  },
-  {
-    load() {
-      return require("module_5270");
-    }
-  },
   {
     load() {
       return require("module_5271");
@@ -102,15 +82,12 @@ const items = [
     load() {
       return require("module_5283");
     }
-  }
-];
-const obj2 = {
-  load() {
-    return require("module_5284");
-  }
-};
-const items1 = [
-  obj2,
+  },
+  {
+    load() {
+      return require("module_5284");
+    }
+  },
   {
     load() {
       return require("module_5285");
@@ -125,12 +102,15 @@ const items1 = [
     load() {
       return require("module_5287");
     }
-  },
-  {
-    load() {
-      return require("module_5288");
-    }
-  },
+  }
+];
+const obj2 = {
+  load() {
+    return require("module_5288");
+  }
+};
+const items1 = [
+  obj2,
   {
     load() {
       return require("module_5289");
@@ -194,6 +174,26 @@ const items1 = [
   {
     load() {
       return require("module_5301");
+    }
+  },
+  {
+    load() {
+      return require("module_5302");
+    }
+  },
+  {
+    load() {
+      return require("module_5303");
+    }
+  },
+  {
+    load() {
+      return require("module_5304");
+    }
+  },
+  {
+    load() {
+      return require("module_5305");
     }
   }
 ];

@@ -1,41 +1,93 @@
 // Module ID: 9837
 // Function ID: 9838
-// Dependencies: [9825, 9797]
-// Exports: parseSampleRate
+// Dependencies: [9828, 9829, 9811, 9831, 9816]
+// Exports: getClient, getCurrentScope, getGlobalScope, getIsolationScope, getTraceContextFromScope, withIsolationScope, withScope
 
 // Module 9837
-import _mod9825 from "module_9825" /* 9825 */;
+import _mod9811 from "module_9811" /* 9811 */;
+import _mod9816 from "module_9816" /* 9816 */;
+import _mod9828 from "module_9828" /* 9828 */;
+import _mod9829 from "module_9829" /* 9829 */;
+import _mod9831 from "module_9831" /* 9831 */;
 
 
-export function parseSampleRate(flag) {
-  if (typeof flag === "boolean") {
-    const _Number = Number;
-    return Number(flag);
+export function getClient() {
+  const obj = _mod9828;
+  const mainCarrier = obj.getMainCarrier();
+  const obj2 = _mod9829;
+  const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
+  const currentScope = asyncContextStrategy.getCurrentScope();
+  return currentScope.getClient();
+}
+export function getCurrentScope() {
+  const obj = _mod9828;
+  const mainCarrier = obj.getMainCarrier();
+  const obj2 = _mod9829;
+  const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
+  return asyncContextStrategy.getCurrentScope();
+}
+export function getGlobalScope() {
+  const obj = _mod9811;
+  return obj.getGlobalSingleton("globalScope", () => {
+    const scope = new _mod9831.Scope();
+    return scope;
+  });
+}
+export function getIsolationScope() {
+  const obj = _mod9828;
+  const mainCarrier = obj.getMainCarrier();
+  const obj2 = _mod9829;
+  const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
+  return asyncContextStrategy.getIsolationScope();
+}
+export function getTraceContextFromScope(getPropagationContext) {
+  let parentSpanId;
+  let spanId;
+  let traceId;
+  const propagationContext = getPropagationContext.getPropagationContext();
+  ({ traceId, spanId, parentSpanId } = propagationContext);
+  const obj = _mod9816;
+  return obj.dropUndefinedKeys({ trace_id, span_id, parent_span_id });
+}
+export function withIsolationScope() {
+  let tmp2;
+  let tmp3;
+  const items = [...arguments];
+  const obj = _mod9828;
+  const mainCarrier = obj.getMainCarrier();
+  const obj2 = _mod9829;
+  const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
+  if (2 === items.length) {
+    let result;
+    [tmp2, tmp3] = items;
+    if (tmp2) {
+      result = asyncContextStrategy.withSetIsolationScope(tmp2, tmp3);
+    } else {
+      result = asyncContextStrategy.withIsolationScope(tmp3);
+    }
+    return result;
   } else {
-    let parsed = flag;
-    if (typeof flag === "string") {
-      const _parseFloat = parseFloat;
-      parsed = parseFloat(flag);
+    return asyncContextStrategy.withIsolationScope(items[0]);
+  }
+}
+export function withScope() {
+  let tmp2;
+  let tmp3;
+  const items = [...arguments];
+  const obj = _mod9828;
+  const mainCarrier = obj.getMainCarrier();
+  const obj2 = _mod9829;
+  const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
+  if (2 === items.length) {
+    let withSetScopeResult;
+    [tmp2, tmp3] = items;
+    if (tmp2) {
+      withSetScopeResult = asyncContextStrategy.withSetScope(tmp2, tmp3);
+    } else {
+      withSetScopeResult = asyncContextStrategy.withScope(tmp3);
     }
-    if (typeof parsed === "number") {
-      const _isNaN = isNaN;
-      if (!isNaN(parsed)) {
-        if (parsed >= 0) {
-          if (parsed <= 1) {
-            return parsed;
-          }
-        }
-      }
-    }
-    const tmp = require;
-    if (_mod9825.DEBUG_BUILD) {
-      const logger = tmp(9797).logger;
-      const _JSON = JSON;
-      const warn = logger.warn;
-      const json = JSON.stringify(flag);
-      const _JSON2 = JSON;
-      const _HermesInternal = HermesInternal;
-      warn("[Tracing] Given sample rate is invalid. Sample rate must be a boolean or a number between 0 and 1. Got " + json + " of type " + JSON.stringify(typeof flag) + ".");
-    }
+    return withSetScopeResult;
+  } else {
+    return asyncContextStrategy.withScope(items[0]);
   }
 }

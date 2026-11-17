@@ -1,10 +1,10 @@
-// Module ID: 7074
-// Function ID: 7075
+// Module ID: 7082
+// Function ID: 7083
 // Name: sortByMatchScore
 // Dependencies: [2]
 // Exports: default
 
-// Module 7074 (sortByMatchScore)
+// Module 7082 (sortByMatchScore)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/autocompleter/sortByMatchScore.tsx");

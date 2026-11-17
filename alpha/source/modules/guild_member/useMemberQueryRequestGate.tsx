@@ -1,10 +1,10 @@
-// Module ID: 13516
-// Function ID: 13517
+// Module ID: 12987
+// Function ID: 12988
 // Name: useMemberQueryRequestGate
 // Dependencies: [32, 19, 572, 2]
 // Exports: default
 
-// Module 13516 (useMemberQueryRequestGate)
+// Module 12987 (useMemberQueryRequestGate)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Dispatcher from "Dispatcher" /* 572 */;

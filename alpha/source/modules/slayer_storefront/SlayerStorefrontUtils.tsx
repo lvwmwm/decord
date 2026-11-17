@@ -1,24 +1,24 @@
-// Module ID: 7244
-// Function ID: 7245
+// Module ID: 7253
+// Function ID: 7254
 // Name: SlayerStorefrontUtils
-// Dependencies: [2165, 7245, 2143, 5177, 5339, 7246, 7247, 1072, 1074, 6756, 7248, 12, 7249, 1381, 6966, 504, 7259, 2]
+// Dependencies: [2165, 7254, 2143, 5181, 5343, 7255, 7256, 1072, 1074, 6764, 7257, 12, 7258, 1381, 6974, 504, 7269, 2]
 // Exports: canSeeGameShop, getCardBackgroundImageURL, getCardImageURL, getForwardedSKUShareURL, getForwardedStorefrontEmbedShareURL, getGameItemThumbnailUrl, getHasWishlistOrPopularRecommendations, getMarketingGuildId, getOrderedStorefrontSkuIds, getPrimaryCarouselItemInfo, getRequiredSubscriptionPlanIds, getRewardRequirementPlanTargetingParams, getSocialLayerStorefrontApplicationId, getSocialLayerStorefrontBackgroundImageURL, getSocialLayerStorefrontGuildId, getStorefrontEmbedShareURL, isGameItemSKU, isOnCollectiblesShopGameShopPage, isOnSocialLayerStorefrontPage, isOnSocialLayerStorefrontSkuPage, isOwnsMinSkusRewardRequirement, transformSlayerApplicationStorefrontServer, transformSlayerApplicationStorefrontSummaryServer, transformStorefrontMetadataServer, useGetSocialLayerStorefrontApplicationId, useGetSocialLayerStorefrontGuildIdAndApplication
 
-// Module 7244 (SlayerStorefrontUtils)
+// Module 7253 (SlayerStorefrontUtils)
 import _modDef12 from "module_12" /* 12 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import URLUtilsDefault from "URLUtils" /* 1381 */;
-import StoreUtils from "StoreUtils" /* 6756 */;
-import _mod6966 from "module_6966" /* 6966 */;
-import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 7245 */;
-import SocialLayerStorefrontTypes from "SocialLayerStorefrontTypes" /* 7248 */;
-import StorefrontUtils from "StorefrontUtils" /* 7249 */;
+import StoreUtils from "StoreUtils" /* 6764 */;
+import _mod6974 from "module_6974" /* 6974 */;
+import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 7254 */;
+import SocialLayerStorefrontTypes from "SocialLayerStorefrontTypes" /* 7257 */;
+import StorefrontUtils from "StorefrontUtils" /* 7258 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
 import ApplicationRecord from "ApplicationRecord" /* 2143 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7246 */;
-import SocialLayerStorefrontConstants from "SocialLayerStorefrontConstants" /* 7247 */;
+import GuildStore from "GuildStore" /* 5181 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5343 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7255 */;
+import SocialLayerStorefrontConstants from "SocialLayerStorefrontConstants" /* 7256 */;
 import Constants from "Constants" /* 1072 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -161,7 +161,7 @@ function getSKUShareURL(guildId, applicationId) {
     const _location2 = location;
     const _location3 = location;
     applicationId = applicationId.applicationId;
-    const obj = _mod6966;
+    const obj = _mod6974;
     const parsed = obj.parse(search);
     const skuId = parsed.skuId;
     ({ tab, applicationId: applicationId2 } = parsed);
@@ -203,7 +203,7 @@ function isOnCollectiblesShopGameShopPage(arr, arg1, arg2, arg3) {
   let applicationId;
   let skuId;
   let tab;
-  const obj = _mod6966;
+  const obj = _mod6974;
   const parsed = obj.parse(arg1);
   ({ tab, applicationId, skuId } = parsed);
   let tmp2 = arr.indexOf(gesture.COLLECTIBLES_SHOP) >= 0;
@@ -660,7 +660,7 @@ export function getHasWishlistOrPopularRecommendations(arr, arg1, arg2) {
 export function isOnSocialLayerStorefrontPage(arr, arg1, arg2, arg3) {
   let applicationId;
   let tab;
-  const obj = _mod6966;
+  const obj = _mod6974;
   const parsed = obj.parse(arg1);
   ({ tab, applicationId } = parsed);
   let tmp2 = arr.indexOf(gesture.COLLECTIBLES_SHOP) >= 0;
@@ -689,7 +689,7 @@ export function isOnSocialLayerStorefrontSkuPage(applicationId) {
   }
   ({ guildId, skuId } = applicationId);
   applicationId = applicationId.applicationId;
-  const obj = _mod6966;
+  const obj = _mod6974;
   const parsed = obj.parse(search);
   ({ tab, applicationId: applicationId2, skuId: skuId2 } = parsed);
   let tmp2 = pathname.indexOf(gesture.COLLECTIBLES_SHOP) >= 0;

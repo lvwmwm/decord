@@ -1,16 +1,16 @@
-// Module ID: 12257
-// Function ID: 12258
+// Module ID: 11003
+// Function ID: 11004
 // Name: ApplicationWidgetMarkupUtils
-// Dependencies: [6333, 12, 6334, 12258, 6048, 9216, 2]
+// Dependencies: [6341, 12, 6342, 11004, 6059, 9227, 2]
 // Exports: parseApplicationWidgetText, parseApplicationWidgetTextToAST
 
-// Module 12257 (ApplicationWidgetMarkupUtils)
-import MarkupReactRulesDefault from "MarkupReactRules" /* 6048 */;
-import MarkupRulesDefault from "MarkupRules" /* 6334 */;
-import MarkupLiteralImageRuleDefault from "MarkupLiteralImageRule" /* 12258 */;
-import combineMarkupRules from "combineMarkupRules" /* 6333 */;
+// Module 11003 (ApplicationWidgetMarkupUtils)
+import MarkupReactRulesDefault from "MarkupReactRules" /* 6059 */;
+import MarkupRulesDefault from "MarkupRules" /* 6342 */;
+import MarkupLiteralImageRuleDefault from "MarkupLiteralImageRule" /* 11004 */;
+import combineMarkupRules from "combineMarkupRules" /* 6341 */;
 import module_12 from "module_12" /* 12 */;
-import MarkupParser_mod from "MarkupParser" /* 9216 */;
+import MarkupParser_mod from "markup/MarkupParser" /* 9227 */;
 import size from "module_2" /* 2 */;
 
 const items = ["text", "link", "emoji"];

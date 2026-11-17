@@ -1,13 +1,13 @@
-// Module ID: 8843
-// Function ID: 8844
+// Module ID: 8854
+// Function ID: 8855
 // Name: GuildProfileUtils
-// Dependencies: [5159, 1072, 5169, 2]
+// Dependencies: [5163, 1072, 5173, 2]
 // Exports: getEstablishedDate, guildInviteCanEmbedProfile
 
-// Module 8843 (GuildProfileUtils)
+// Module 8854 (GuildProfileUtils)
 import Constants from "Constants" /* 1072 */;
-import ChannelRecord from "ChannelRecord" /* 5159 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 5169 */;
+import ChannelRecord from "ChannelRecord" /* 5163 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 5173 */;
 import size from "module_2" /* 2 */;
 
 let closure_2 = ChannelRecord.createChannelRecordFromInvite;

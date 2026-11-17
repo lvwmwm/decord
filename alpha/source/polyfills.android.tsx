@@ -1,11 +1,11 @@
-// Module ID: 16646
-// Function ID: 16647
+// Module ID: 16681
+// Function ID: 16682
 // Name: polyfills
-// Dependencies: [16647, 16743, 2]
+// Dependencies: [16682, 16778, 2]
 
-// Module 16646 (polyfills)
-import Locale from "Locale" /* 16647 */;
-import polyfillsNative from "polyfillsNative" /* 16743 */;
+// Module 16681 (polyfills)
+import Locale from "Locale" /* 16682 */;
+import polyfillsNative from "polyfillsNative" /* 16778 */;
 import size from "module_2" /* 2 */;
 
 String.prototype.toLocaleLowerCase = function toLocaleLowerCase() {

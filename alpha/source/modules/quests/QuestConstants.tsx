@@ -1,18 +1,19 @@
-// Module ID: 6954
-// Function ID: 6955
+// Module ID: 6962
+// Function ID: 6963
 // Name: QuestConstants
-// Dependencies: [6955, 1089, 6956, 1285, 6957, 6961, 6962, 12, 2, 6963]
+// Dependencies: [6963, 1089, 6964, 1285, 1255, 6965, 6969, 6970, 12, 2, 6971]
 // Exports: getQuestCdnUrlBase, getQuestHomeFilterOptionItem
 
-// Module 6954 (QuestConstants)
+// Module 6962 (QuestConstants)
 import DurationsDefault from "Durations" /* 1089 */;
-import QuestVariants from "QuestVariants" /* 6955 */;
-import Quests from "Quests" /* 6956 */;
-import QuestTypes from "QuestTypes" /* 6957 */;
-import AdCreativeType from "AdCreativeType" /* 6961 */;
-import FirstPartyQuestTaskTypes from "FirstPartyQuestTaskTypes" /* 6962 */;
-import DismissibleQuestContentFlags from "DismissibleQuestContentFlags" /* 6963 */;
+import QuestVariants from "QuestVariants" /* 6963 */;
+import Quests from "Quests" /* 6964 */;
+import QuestTypes from "QuestTypes" /* 6965 */;
+import AdCreativeType from "AdCreativeType" /* 6969 */;
+import FirstPartyQuestTaskTypes from "FirstPartyQuestTaskTypes" /* 6970 */;
+import DismissibleQuestContentFlags from "DismissibleQuestContentFlags" /* 6971 */;
 import HTTPUtils_mod from "HTTPUtils" /* 1285 */;
+import GlobalUtils_mod from "GlobalUtils" /* 1255 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -21,35 +22,47 @@ const set = new Set(items);
 const result = DurationsDefault.Millis.MINUTE * Quests.Quests.ConsecutiveHeartbeatPeriodMinutes;
 let HTTPUtils = HTTPUtils_mod;
 HTTPUtils = HTTPUtils.getAPIBaseURL();
-let tmp4 = -1 !== HTTPUtils.indexOf("localhost");
-if (!tmp4) {
-  tmp4 = -1 !== HTTPUtils.indexOf("127.0.0.1");
+let GlobalUtils = GlobalUtils_mod;
+GlobalUtils = GlobalUtils.isDiscordBackendDevelopment();
+if (!GlobalUtils) {
+  let num = -1;
+  GlobalUtils = -1 !== HTTPUtils.indexOf("localhost");
 }
-let str2 = "https://cdn.discordapp.com/";
-if (tmp4) {
+if (!GlobalUtils) {
+  let num2 = -1;
+  GlobalUtils = -1 !== HTTPUtils.indexOf("127.0.0.1");
+}
+let str3 = "https://cdn.discordapp.com/";
+if (GlobalUtils) {
   let _HermesInternal = HermesInternal;
-  let str3 = "/_cdn_storage/";
-  str2 = "" + HTTPUtils + "/_cdn_storage/";
+  let str4 = "/_cdn_storage/";
+  str3 = "" + HTTPUtils + "/_cdn_storage/";
 }
 function getQuestCdnUrlBase(arg0) {
   let apiBaseUrl;
   let isDevelopmentBuild;
+  let isLocalBackend;
   let pageHost;
-  let str3;
-  ({ apiBaseUrl, pageHost, isDevelopmentBuild } = arg0);
-  const tmp = -1 !== apiBaseUrl.indexOf("localhost") || -1 !== apiBaseUrl.indexOf("127.0.0.1");
+  let str4;
+  ({ apiBaseUrl, pageHost, isDevelopmentBuild, isLocalBackend } = arg0);
+  if (!isLocalBackend) {
+    isLocalBackend = -1 !== apiBaseUrl.indexOf("localhost");
+  }
+  if (!isLocalBackend) {
+    isLocalBackend = -1 !== apiBaseUrl.indexOf("127.0.0.1");
+  }
   if (isDevelopmentBuild) {
     isDevelopmentBuild = pageHost.endsWith(".devtun.to");
   }
-  if (tmp) {
+  if (isLocalBackend) {
     const _HermesInternal = HermesInternal;
-    str3 = "" + apiBaseUrl + "/_cdn_storage/";
+    str4 = "" + apiBaseUrl + "/_cdn_storage/";
   } else {
-    str3 = "https://cdn.discordapp.com/";
+    str4 = "https://cdn.discordapp.com/";
   }
-  return str3;
+  return str4;
 }
-const text = `${str2}quests/`;
+const text = `${str3}quests/`;
 const items1 = [QuestTypes.AdPlacement.DESKTOP_ACCOUNT_PANEL_AREA, QuestTypes.AdPlacement.MOBILE_HOME_DOCK_AREA, QuestTypes.AdPlacement.QUEST_HOME_BANNER_DESKTOP, QuestTypes.AdPlacement.VIDEO_MODAL_MOBILE];
 const items2 = [];
 const set1 = new Set(items1);
@@ -100,7 +113,7 @@ const sorted = entries1.sort((arg0, arg1) => {
   }
   return num;
 });
-const result1 = size.fileFinishedImporting("modules/quests/QuestConstants.tsx");
+const result2 = size.fileFinishedImporting("modules/quests/QuestConstants.tsx");
 const DismissibleQuestContentFlags_export = DismissibleQuestContentFlags.DismissibleQuestContentFlags;
 const QuestVariants_export = QuestVariants.QuestVariants;
 
@@ -119,7 +132,7 @@ export const QUEST_SPLIT_MODAL_PANEL_WIDTH = 454;
 export const QUEST_HERO_ASSET_ASPECT_RATIO = 3.5675675675675675;
 export const DEFAULT_PORTRAIT_ASPECT_RATIO = 0.5625;
 export { getQuestCdnUrlBase };
-export const CDN_URL_BASE = str2;
+export const CDN_URL_BASE = str3;
 export const QUESTS_CDN_URL_BASE = text;
 export const QuestDockMode = { COLLAPSED: "collapsed", EXPANDED: "expanded", CLOSED: "closed", SOFT_DISMISSED: "soft-dismissed", RESET_TO_PREVIOUS: "reset-to-previous" };
 export const DISCORD_APPLICATION_ID = "545364944258990091";

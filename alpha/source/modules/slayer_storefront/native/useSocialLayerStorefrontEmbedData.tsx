@@ -1,18 +1,18 @@
-// Module ID: 12431
-// Function ID: 12432
+// Module ID: 12637
+// Function ID: 12638
 // Name: useSocialLayerStorefrontEmbedData
-// Dependencies: [32, 5, 19, 7070, 7246, 12432, 6045, 12434, 12435, 12436, 504, 1255, 558, 7055, 12437, 12433, 2]
+// Dependencies: [32, 5, 19, 7078, 7255, 12638, 6049, 12640, 12641, 12642, 504, 1255, 558, 7063, 12643, 12639, 2]
 // Exports: collectSocialLayerStorefrontEmbedLinks, shouldRefreshSocialLayerStorefrontEmbed, useSocialLayerStorefrontEmbedData
 
-// Module 12431 (useSocialLayerStorefrontEmbedData)
+// Module 12637 (useSocialLayerStorefrontEmbedData)
 import GlobalUtils from "GlobalUtils" /* 1255 */;
-import CodedLink from "CodedLink" /* 6045 */;
+import CodedLink from "CodedLink" /* 6049 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import SKUStore from "SKUStore" /* 7070 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7246 */;
-import SocialLayerStorefrontEmbedStore from "SocialLayerStorefrontEmbedStore" /* 12432 */;
+import SKUStore from "SKUStore" /* 7078 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7255 */;
+import SocialLayerStorefrontEmbedStore from "SocialLayerStorefrontEmbedStore" /* 12638 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -255,11 +255,11 @@ export function useSocialLayerStorefrontEmbedData(stateFromStores) {
   const items7 = [tmp14];
   const tmp9Result = tmp9(tmp10[10]);
   const stateFromStoresArray = tmp9Result.useStateFromStoresArray(items6, () => {
-    const f132283 = (applicationId) => applicationId.applicationId;
+    const f132687 = (applicationId) => applicationId.applicationId;
     const mapped = closure_7.map((item) => stateFromStoresObject1.get(item));
     const found = mapped.filter(GlobalUtils.isNotNullish);
-    const items = [...new Set(found.map(f132283))];
-    new Set(found.map(f132283));
+    const items = [...new Set(found.map(f132687))];
+    new Set(found.map(f132687));
     return items;
   }, items7);
   const items8 = [stateFromStoresArray, stateFromStoresObject, stateFromStoresObject1];

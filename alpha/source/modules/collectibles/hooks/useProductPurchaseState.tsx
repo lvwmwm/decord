@@ -1,13 +1,13 @@
-// Module ID: 9518
-// Function ID: 9519
+// Module ID: 9530
+// Function ID: 9531
 // Name: useProductPurchaseState
-// Dependencies: [8500, 9519, 2114, 504, 2]
+// Dependencies: [8511, 9531, 2114, 504, 2]
 // Exports: useProductPurchaseState
 
-// Module 9518 (useProductPurchaseState)
+// Module 9530 (useProductPurchaseState)
 import CollectiblesItemType from "CollectiblesItemType" /* 2114 */;
-import compactDefault from "compact" /* 9519 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 8500 */;
+import compactDefault from "compact" /* 9531 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 8511 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,21 +1,21 @@
-// Module ID: 8745
-// Function ID: 8746
+// Module ID: 8756
+// Function ID: 8757
 // Name: ChannelConversationsStore
-// Dependencies: [502, 5155, 5248, 5209, 1388, 5947, 1456, 11, 8746, 8747, 1255, 6364, 504, 572, 2]
+// Dependencies: [502, 5159, 5252, 5213, 1388, 5951, 1456, 11, 8757, 8758, 1255, 6372, 504, 572, 2]
 
-// Module 8745 (ChannelConversationsStore)
+// Module 8756 (ChannelConversationsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import LRUCacheDefault from "LRUCache" /* 1456 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 6364 */;
-import ConversationMessageCacheUtils from "ConversationMessageCacheUtils" /* 8746 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 6372 */;
+import ConversationMessageCacheUtils from "ConversationMessageCacheUtils" /* 8757 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import RelationshipStore from "RelationshipStore" /* 5248 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
+import ChannelStore from "ChannelStore" /* 5159 */;
+import RelationshipStore from "RelationshipStore" /* 5252 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5213 */;
 import UserStore from "UserStore" /* 1388 */;
-import ConversationConstants from "ConversationConstants" /* 5947 */;
+import ConversationConstants from "ConversationConstants" /* 5951 */;
 import size from "module_2" /* 2 */;
 
 let length, set;
@@ -102,7 +102,7 @@ function handleReaction(messageId) {
       if (flag2) {
         value.message = applyReactionResult;
         let tmp8 = null;
-        const replaceHydratedMessage = tmp4(8746).replaceHydratedMessage;
+        const replaceHydratedMessage = tmp4(8757).replaceHydratedMessage;
         ConversationMessageCacheUtils;
         if (null != value.conversationId) {
           const conversationMetadataById = peekResult.conversationMetadataById;
@@ -132,7 +132,7 @@ function handleRelationshipUpdate() {
           c0 = true;
           message.message = result;
           let tmp2 = null;
-          const replaceHydratedMessage = tmp6(8746).replaceHydratedMessage;
+          const replaceHydratedMessage = tmp6(8757).replaceHydratedMessage;
           ConversationMessageCacheUtils;
           if (null != message.conversationId) {
             const conversationMetadataById = messageMetadataByMessageId.conversationMetadataById;
@@ -674,7 +674,7 @@ let obj2 = {
     set = undefined;
     if (removePendingListFetch(channelId, requestKey.requestKey)) {
       let conversations;
-      const mapped = rawConversations.map(set(8747).mapConversation);
+      const mapped = rawConversations.map(set(8758).mapConversation);
       const found = mapped.filter(set(1255).isNotNullish);
       let obj2 = navigation;
       const peekResult = navigation.peek(channelId);
@@ -932,7 +932,7 @@ let obj2 = {
           if (flag2) {
             value.message = updateMessageRecordResult;
             let tmp10 = null;
-            const replaceHydratedMessage = tmp6(8746).replaceHydratedMessage;
+            const replaceHydratedMessage = tmp6(8757).replaceHydratedMessage;
             ConversationMessageCacheUtils;
             if (null != value.conversationId) {
               const conversationMetadataById = peekResult.conversationMetadataById;

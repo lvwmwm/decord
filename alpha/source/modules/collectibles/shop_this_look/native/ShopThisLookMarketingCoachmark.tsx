@@ -1,19 +1,19 @@
-// Module ID: 15694
-// Function ID: 15695
+// Module ID: 15728
+// Function ID: 15729
 // Name: ShopThisLookMarketingCoachmark
-// Dependencies: [19, 17, 5152, 7962, 21, 5306, 15695, 15688, 1113, 9567, 2]
+// Dependencies: [19, 17, 5156, 7972, 21, 5310, 15729, 15722, 1113, 9579, 2]
 // Exports: default
 
-// Module 15694 (ShopThisLookMarketingCoachmark)
+// Module 15728 (ShopThisLookMarketingCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1113 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
-import Constants from "Constants" /* 7962 */;
-import ShopThisLookAnalyticsUtils from "ShopThisLookAnalyticsUtils" /* 15688 */;
-import BumpingFistsSpotIllustration from "BumpingFistsSpotIllustration" /* 15695 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5156 */;
+import Constants from "Constants" /* 7972 */;
+import ShopThisLookAnalyticsUtils from "ShopThisLookAnalyticsUtils" /* 15722 */;
+import BumpingFistsSpotIllustration from "BumpingFistsSpotIllustration" /* 15729 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 function ShopThisLookMarketingCoachmarkImage() {

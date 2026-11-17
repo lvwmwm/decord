@@ -1,26 +1,26 @@
-// Module ID: 17882
-// Function ID: 17883
+// Module ID: 17923
+// Function ID: 17924
 // Name: AppearanceSetting
-// Dependencies: [5330, 1195, 1072, 5537, 504, 1239, 9062, 1113, 2933, 12406, 17883, 17885, 2]
+// Dependencies: [5334, 1195, 1072, 5541, 504, 1239, 9073, 1113, 2935, 12612, 17924, 17926, 2]
 // Exports: useAppearanceSettingTrailing
 
-// Module 17882 (AppearanceSetting)
+// Module 17923 (AppearanceSetting)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import ThemeConstants from "ThemeConstants" /* 1195 */;
 import ClientThemesUtils from "ClientThemesUtils" /* 1239 */;
-import useThemeDefault from "useTheme" /* 5537 */;
-import useActiveTheme from "useActiveTheme" /* 9062 */;
-import PaintPaletteIcon from "PaintPaletteIcon" /* 17883 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5330 */;
-import SettingBuilders from "SettingBuilders" /* 12406 */;
+import useThemeDefault from "useTheme" /* 5541 */;
+import useActiveTheme from "useActiveTheme" /* 9073 */;
+import PaintPaletteIcon from "PaintPaletteIcon" /* 17924 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5334 */;
+import SettingBuilders from "SettingBuilders" /* 12612 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 let tmp;
-const _modDef2933 = tmp(2933);
+const _modDef2935 = tmp(2935);
 function useAppearanceSettingTrailing() {
   let gradientPreset;
   const items = [ClientThemesBackgroundStore];
@@ -33,7 +33,7 @@ function useAppearanceSettingTrailing() {
   const activeThemeType = obj3.useActiveThemeType();
   if (ActiveThemeType.CUSTOM === activeThemeType) {
     const intl2 = tmp4(1113).intl;
-    return intl2.string(_modDef2933.KSBBpC);
+    return intl2.string(_modDef2935.KSBBpC);
   } else if (ActiveThemeType.CLIENT === activeThemeType) {
     let name;
     if (stateFromStores != null) {

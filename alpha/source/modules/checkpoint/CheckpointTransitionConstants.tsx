@@ -1,9 +1,9 @@
-// Module ID: 14276
-// Function ID: 14277
+// Module ID: 13142
+// Function ID: 13143
 // Name: CheckpointTransitionConstants
 // Dependencies: [2]
 
-// Module 14276 (CheckpointTransitionConstants)
+// Module 13142 (CheckpointTransitionConstants)
 import size from "module_2" /* 2 */;
 
 const obj = { delay: 0, duration: 350 };
@@ -15,6 +15,7 @@ const result = size.fileFinishedImporting("modules/checkpoint/CheckpointTransiti
 export const CHECKPOINT_BACKGROUND_FADE = obj;
 export const CHECKPOINT_STATS_FADE_OUT = { delay: 35, duration: 125 };
 export const CHECKPOINT_STATS_FADE_IN = obj2;
+export const CHECKPOINT_SIDEKICK_CONTENT_FADE_IN = { delay: 700, duration: 175 };
 export const CHECKPOINT_CHARACTER_PAGE_FADE_IN = { delay: 175, duration: 175 };
 export const CHECKPOINT_CHARACTER_PAGE_FADE_OUT = { delay: 0, duration: 175 };
 export const CHECKPOINT_INSTANT = { delay: 0, duration: 0 };

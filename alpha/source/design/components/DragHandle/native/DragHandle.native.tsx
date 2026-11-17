@@ -1,16 +1,16 @@
-// Module ID: 7447
-// Function ID: 7448
+// Module ID: 7457
+// Function ID: 7458
 // Name: DragHandle
-// Dependencies: [19, 21, 5306, 12, 7448, 1113, 7449, 2]
+// Dependencies: [19, 21, 5310, 12, 7458, 1113, 7459, 2]
 // Exports: DragHandle
 
-// Module 7447 (DragHandle)
+// Module 7457 (DragHandle)
 import _mod12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
-import BaseIconButton2 from "BaseIconButton" /* 7448 */;
-import DragIcon from "DragIcon" /* 7449 */;
+import BaseIconButton2 from "BaseIconButton" /* 7458 */;
+import DragIcon from "DragIcon" /* 7459 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;

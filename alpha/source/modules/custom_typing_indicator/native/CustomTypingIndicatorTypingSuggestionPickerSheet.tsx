@@ -1,22 +1,22 @@
-// Module ID: 17984
-// Function ID: 17985
+// Module ID: 18025
+// Function ID: 18026
 // Name: CustomTypingIndicatorTypingSuggestionPickerSheet
-// Dependencies: [32, 19, 21, 5306, 575, 7951, 7913, 1113, 4133, 7745, 7747, 14579, 2]
+// Dependencies: [32, 19, 21, 5310, 575, 7961, 7923, 1113, 4135, 7755, 7757, 13454, 2]
 // Exports: default
 
-// Module 17984 (CustomTypingIndicatorTypingSuggestionPickerSheet)
+// Module 18025 (CustomTypingIndicatorTypingSuggestionPickerSheet)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import _modDef4133 from "module_4133" /* 4133 */;
-import TableRadioGroup2 from "TableRadioGroup" /* 7745 */;
-import TableRadioRow2 from "TableRadioRow" /* 7747 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7913 */;
-import ActionSheet2 from "ActionSheet" /* 7951 */;
-import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 14579 */;
+import _modDef4135 from "module_4135" /* 4135 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 7755 */;
+import TableRadioRow2 from "TableRadioRow" /* 7757 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7923 */;
+import ActionSheet2 from "ActionSheet" /* 7961 */;
+import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 13454 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -41,7 +41,7 @@ export default function CustomTypingIndicatorTypingSuggestionPickerSheet(arg0) {
   const tmp = closure_6();
   [first, dependencyMap] = react.useState(initialValue);
   const ActionSheet = ActionSheet2.ActionSheet;
-  let obj2 = { title: intl.string(_modDef4133["X+ijyw"]) };
+  let obj2 = { title: intl.string(_modDef4135["X+ijyw"]) };
   const BottomSheetTitleHeader = BottomSheetTitleHeader2.BottomSheetTitleHeader;
   intl = intl3.intl;
   const intl2 = intl3.intl;
@@ -75,5 +75,5 @@ export default function CustomTypingIndicatorTypingSuggestionPickerSheet(arg0) {
     })
   };
   const TableRadioGroup = TableRadioGroup2.TableRadioGroup;
-  return <ActionSheet contentStyles={tmp.content} onDismiss={onDismiss} header={null} dismissAccessibilityLabel={intl2.string(_modDef4133.hrl2cG)}>{null}</ActionSheet>;
+  return <ActionSheet contentStyles={tmp.content} onDismiss={onDismiss} header={null} dismissAccessibilityLabel={intl2.string(_modDef4135.hrl2cG)}>{null}</ActionSheet>;
 };

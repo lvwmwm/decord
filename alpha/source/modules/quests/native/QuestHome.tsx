@@ -1,50 +1,50 @@
-// Module ID: 17541
-// Function ID: 17542
+// Module ID: 17578
+// Function ID: 17579
 // Name: QuestHome
-// Dependencies: [32, 19, 17, 5307, 10129, 8808, 8830, 6954, 1072, 21, 5306, 575, 504, 1502, 17542, 572, 6879, 6886, 17600, 5926, 1113, 6838, 8604, 10131, 17602, 5919, 17625, 17646, 10132, 1630, 8815, 10133, 6961, 8804, 6005, 1256, 6328, 1264, 17690, 15948, 15255, 17691, 17652, 1503, 6957, 17544, 8829, 17617, 17622, 15264, 17692, 17773, 5337, 7888, 2]
+// Dependencies: [32, 19, 17, 5311, 10574, 8819, 8841, 6962, 1072, 21, 5310, 575, 504, 1502, 17579, 572, 6887, 6894, 17638, 5930, 1113, 6833, 8615, 10576, 17640, 5923, 17663, 17684, 10568, 1630, 8826, 10577, 6969, 8815, 6009, 1256, 6336, 1264, 17728, 15986, 15074, 17729, 17690, 1503, 6965, 17581, 8840, 17655, 17660, 15083, 17730, 17813, 5341, 7898, 2]
 
-// Module 17541 (QuestHome)
+// Module 17578 (QuestHome)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import useNavigation from "useNavigation" /* 1502 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import components_Button_Button from "components/Button/Button" /* 5926 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
-import QuestConstants from "QuestConstants" /* 6954 */;
-import QuestTypes from "QuestTypes" /* 6957 */;
-import AdCreativeType from "AdCreativeType" /* 6961 */;
-import openUserSettings from "openUserSettings" /* 8604 */;
-import QuestDataUtils from "QuestDataUtils" /* 8804 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 10131 */;
-import QuestActionCreators from "QuestActionCreators" /* 10133 */;
-import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 15264 */;
-import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 17542 */;
-import BountiesModalTypes from "BountiesModalTypes" /* 17544 */;
-import QuestHomeEmptyStateDefault from "QuestHomeEmptyState" /* 17600 */;
-import QuestHomeBountiesDefault from "QuestHomeBounties" /* 17602 */;
-import HexagonCampaignQuestHomeHeaderDefault from "HexagonCampaignQuestHomeHeader" /* 17625 */;
-import QuestHomeOpenTriggerPoint2 from "QuestHomeOpenTriggerPoint" /* 17690 */;
-import QuestHomeRoundtripTrackerDefault from "QuestHomeRoundtripTracker" /* 17773 */;
+import Text_Text from "Text/Text" /* 5923 */;
+import components_Button_Button from "components/Button/Button" /* 5930 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 6009 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6833 */;
+import QuestConstants from "QuestConstants" /* 6962 */;
+import QuestTypes from "QuestTypes" /* 6965 */;
+import AdCreativeType from "AdCreativeType" /* 6969 */;
+import openUserSettings from "openUserSettings" /* 8615 */;
+import QuestDataUtils from "QuestDataUtils" /* 8815 */;
+import QuestHomeNavigationStore2 from "QuestHomeNavigationStore" /* 10574 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 10576 */;
+import QuestActionCreators from "QuestActionCreators" /* 10577 */;
+import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 15083 */;
+import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 17579 */;
+import BountiesModalTypes from "BountiesModalTypes" /* 17581 */;
+import QuestHomeEmptyStateDefault from "QuestHomeEmptyState" /* 17638 */;
+import QuestHomeBountiesDefault from "QuestHomeBounties" /* 17640 */;
+import HexagonCampaignQuestHomeHeaderDefault from "HexagonCampaignQuestHomeHeader" /* 17663 */;
+import QuestHomeOpenTriggerPoint2 from "QuestHomeOpenTriggerPoint" /* 17728 */;
+import QuestHomeRoundtripTrackerDefault from "QuestHomeRoundtripTracker" /* 17813 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
-import QuestHomeNavigationStore from "QuestHomeNavigationStore" /* 10129 */;
-import QuestStore from "QuestStore" /* 8808 */;
-import QuestUtmStore from "QuestUtmStore" /* 8830 */;
+import AccessibilityStore from "AccessibilityStore" /* 5311 */;
+import QuestStore from "QuestStore" /* 8819 */;
+import QuestUtmStore from "QuestUtmStore" /* 8841 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let item, navigation;
 
 let StyleSheet;
-let closure_12;
 let closure_14;
 let closure_15;
+let closure_16;
 let hasOwnProperty;
 let map1;
 let metroRequire;
@@ -53,7 +53,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp4;
-const OrbsArcadeQuestHomeSectionDefault = tmp4(17646);
+const OrbsArcadeQuestHomeSectionDefault = tmp4(17684);
 function EmptyStateNoQuestsAvailable(hasContentAbove) {
   let Button;
   let intl;
@@ -63,12 +63,12 @@ function EmptyStateNoQuestsAvailable(hasContentAbove) {
   navigation = obj.useNavigation();
   const items = [navigation];
   const callback = react.useCallback(() => navigation.goBack(), items);
-  const obj2 = { hasContentAbove, action: gesture(Button, obj3) };
+  const obj2 = { hasContentAbove, action: closure_15(Button, obj3) };
   obj3 = { variant: "secondary", text: intl.string(intl4.t["/g10LC"]), onPress: callback };
   const tmp3 = QuestHomeEmptyStateDefault;
   Button = components_Button_Button.Button;
   intl = intl4.intl;
-  return gesture(tmp3, obj2);
+  return closure_15(tmp3, obj2);
 }
 function EmptyStateFiltered(arg0) {
   let Button;
@@ -79,21 +79,21 @@ function EmptyStateFiltered(arg0) {
   let obj2;
   let onClearFilters;
   ({ onClearFilters, hasContentAbove } = arg0);
-  const obj = { hasContentAbove, action: gesture(Button, obj2), title: intl2.string(intl4.t.PBfFnx), subtitle: intl3.string(intl4.t.nwdKFC) };
+  const obj = { hasContentAbove, action: closure_15(Button, obj2), title: intl2.string(intl4.t.PBfFnx), subtitle: intl3.string(intl4.t.nwdKFC) };
   obj2 = { variant: "secondary", text: intl.string(intl4.t.urZl31), onPress: onClearFilters };
   const tmp = QuestHomeEmptyStateDefault;
   Button = components_Button_Button.Button;
   intl = intl4.intl;
   intl2 = intl4.intl;
   intl3 = intl4.intl;
-  return gesture(tmp, obj);
+  return closure_15(tmp, obj);
 }
 function HeaderPreviewButton() {
   let Button;
   let QUEST_PREVIEW_TOOL_2;
   let intl;
   let obj3;
-  const tmp = closure_16();
+  const tmp = closure_17();
   const callback = react.useCallback(() => {
     const obj = ModalActionCreatorsDefault;
     obj.popAll();
@@ -104,11 +104,11 @@ function HeaderPreviewButton() {
   let obj = hooks_QuestHooks;
   let tmp5 = null;
   if (obj.useShouldShowPreviewToolTab()) {
-    let obj2 = { style: tmp.previewButton, children: gesture(Button, obj3) };
+    let obj2 = { style: tmp.previewButton, children: closure_15(Button, obj3) };
     obj3 = { grow: true, onPress: callback, variant: "primary", text: intl.string(intl4.t.tx5Ax5) };
-    Button = tmp3(5926).Button;
+    Button = tmp3(5930).Button;
     intl = tmp3(1113).intl;
-    tmp5 = gesture(hasOwnProperty, obj2);
+    tmp5 = closure_15(hasOwnProperty, obj2);
   }
   return tmp5;
 }
@@ -118,7 +118,7 @@ function HeaderWithBounties(arg0) {
   let shopCarouselConfig;
   let showOrbShopPlaceholderCarousel;
   ({ orbShopProducts, obtainableOrbRewards, showOrbShopPlaceholderCarousel, shopCarouselConfig } = arg0);
-  return gesture(QuestHomeBountiesDefault, { shopCarouselConfig, orbShopProducts, obtainableOrbRewards, showOrbShopPlaceholderCarousel });
+  return closure_15(QuestHomeBountiesDefault, { shopCarouselConfig, orbShopProducts, obtainableOrbRewards, showOrbShopPlaceholderCarousel });
 }
 function QuestsSectionHeader(onLayout) {
   let Text;
@@ -126,19 +126,20 @@ function QuestsSectionHeader(onLayout) {
   let items;
   let obj2;
   onLayout = onLayout.onLayout;
-  const obj = { style: items, onLayout, children: gesture(Text, obj2) };
+  const obj = { style: items, onLayout, children: closure_15(Text, obj2) };
   items = [, ];
-  ({ sectionHeader: arr[0], sectionHeaderWithTag: arr[1] } = closure_16());
+  ({ sectionHeader: arr[0], sectionHeaderWithTag: arr[1] } = closure_17());
   obj2 = { variant: "body-lg/semibold", color: "text-strong", children: intl.string(intl4.t.JALI2K) };
-  closure_16();
+  closure_17();
   Text = Text_Text.Text;
   intl = intl4.intl;
-  return gesture(hasOwnProperty, obj);
+  return closure_15(hasOwnProperty, obj);
 }
 ({ View: hasOwnProperty, ActivityIndicator: metroRequire, StyleSheet } = react_native);
+const QuestHomeSection = QuestHomeNavigationStore2.QuestHomeSection;
 const QuestsExperimentLocations = QuestConstants.QuestsExperimentLocations;
-({ AnalyticEvents: closure_12, UserSettingsSections: map1 } = Constants);
-({ jsx: closure_14, jsxs: closure_15 } = Fragment);
+({ AnalyticEvents: map1, UserSettingsSections: closure_14 } = Constants);
+({ jsx: closure_15, jsxs: closure_16 } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { container: { flex: 1 }, loadingContainer: obj2, sectionHeader: obj3, previewButton: obj4, sectionHeaderWithTag: obj5 };
 obj2 = { justifyContent: "center", alignItems: "center" };
@@ -147,10 +148,11 @@ let merged = Object.assign(StyleSheet.absoluteFillObject);
 obj3 = { marginBottom: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16 };
 obj4 = { marginBottom: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16, backgroundColor: "transparent" };
 obj5 = { gap: nativeDefault.space.PX_4 };
-let closure_16 = createStyles(obj);
-let closure_22 = react.memo(function MeasuredHeader(onLayout) {
+let closure_17 = createStyles(obj);
+let closure_23 = react.memo(function MeasuredHeader(onLayout) {
   let items;
   let obtainableOrbRewards;
+  let onOrbsArcadeSectionLayout;
   let onQuestsSectionHeaderLayout;
   let orbShopProducts;
   let shopCarouselConfig;
@@ -158,10 +160,10 @@ let closure_22 = react.memo(function MeasuredHeader(onLayout) {
   let shouldShowOrbsArcade;
   let showOrbShopPlaceholderCarousel;
   const obj = { onLayout: onLayout.onLayout, children: items };
-  ({ shouldShowBounties, shouldShowOrbsArcade, onQuestsSectionHeaderLayout, orbShopProducts, obtainableOrbRewards, showOrbShopPlaceholderCarousel, shopCarouselConfig } = onLayout);
-  items = [gesture(HeaderPreviewButton, {}), gesture(HexagonCampaignQuestHomeHeaderDefault, {}), , , ];
+  ({ shouldShowBounties, shouldShowOrbsArcade, onQuestsSectionHeaderLayout, onOrbsArcadeSectionLayout, orbShopProducts, obtainableOrbRewards, showOrbShopPlaceholderCarousel, shopCarouselConfig } = onLayout);
+  items = [closure_15(HeaderPreviewButton, {}), closure_15(HexagonCampaignQuestHomeHeaderDefault, {}), , , ];
   let tmp3Result = null;
-  const tmp = closure_15;
+  const tmp = authStore3;
   const tmp2 = hasOwnProperty;
   if (shouldShowBounties) {
     const obj2 = { shopCarouselConfig, orbShopProducts, obtainableOrbRewards, showOrbShopPlaceholderCarousel };
@@ -170,29 +172,30 @@ let closure_22 = react.memo(function MeasuredHeader(onLayout) {
   items[2] = tmp3Result;
   let tmp3Result2 = null;
   if (shouldShowOrbsArcade) {
-    const obj3 = { location: QuestsExperimentLocations.QUEST_HOME_MOBILE };
+    const obj3 = { location: QuestsExperimentLocations.QUEST_HOME_MOBILE, onLayout: onOrbsArcadeSectionLayout };
     tmp3Result2 = tmp3(OrbsArcadeQuestHomeSectionDefault, obj3);
   }
   items[3] = tmp3Result2;
-  items[4] = gesture(QuestsSectionHeader, { onLayout: onQuestsSectionHeaderLayout });
+  items[4] = closure_15(QuestsSectionHeader, { onLayout: onQuestsSectionHeaderLayout });
   return tmp(tmp2, obj);
 });
 const memoResult = react.memo(function QuestHome(filters) {
   let _undefined;
   let containerStyle;
   let isNavigationComplete;
-  let items24;
   let items25;
   let items26;
+  let items27;
   let scrollToQuestId;
   ({ containerStyle, isNavigationComplete, scrollToQuestId } = filters);
   filters = filters.filters;
   const sortMethod = filters.sortMethod;
   let quests;
   let ref;
+  let previewAdCreativeIds;
   let isLoading;
   let questHomeBounties;
-  let c18;
+  let c20;
   let config;
   let products;
   let obtainableOrbRewards;
@@ -203,7 +206,7 @@ const memoResult = react.memo(function QuestHome(filters) {
   const onClearFilters = filters.onClearFilters;
   let obj = scrollToQuestId(sortMethod[28]);
   const isEligibleForQuests = obj.getIsEligibleForQuests();
-  let tmp4 = isLoading();
+  let tmp4 = previewAdCreativeIds();
   let tmp5 = filters;
   const bottom = filters(sortMethod[29])().bottom;
   let tmp6 = scrollToQuestId(sortMethod[23]);
@@ -265,7 +268,7 @@ const memoResult = react.memo(function QuestHome(filters) {
         open("QUEST_HOME_MOBILE_DEEP_LINK_QUEST_NOT_FOUND", obj2);
         const obj4 = { quest_id: scrollToQuestId };
         const obj3 = AnalyticsUtilsDefault;
-        obj3.track(callback6.QUEST_HOME_MOBILE_DEEP_LINK_MISSING_QUEST, obj4);
+        obj3.track(map1.QUEST_HOME_MOBILE_DEEP_LINK_MISSING_QUEST, obj4);
         ref.current = scrollToQuestId;
       }
     }
@@ -352,41 +355,53 @@ const memoResult = react.memo(function QuestHome(filters) {
   const callback7 = quests.useCallback((nativeEvent) => {
     closure_9.current = nativeEvent.nativeEvent.layout.y;
   }, []);
+  let closure_10 = quests.useRef(null);
+  const callback8 = quests.useCallback((nativeEvent) => {
+    closure_10.current = nativeEvent.nativeEvent.layout.y;
+  }, []);
+  const callback9 = quests.useCallback(() => {
+    closure_10.current = null;
+  }, []);
   const items12 = [first, tmp12, stateFromStores, callback5];
   const effect3 = quests.useEffect(() => {
     let ref3;
+    let ref4;
     if (first) {
-      let tmp = stateFromStoresArray;
       let obj = { equalityFn: Object.is, fireImmediately: true };
+      let tmp2 = globalThis;
       const _Object = Object;
-      return stateFromStoresArray.subscribe((scrollToQuestsSection) => scrollToQuestsSection.scrollToQuestsSection, (arg0) => {
-        const tmp = arg0;
-        if (tmp) {
-          callback5.setState({ scrollToQuestsSection: false });
+      return stateFromStoresArray.subscribe((scrollToSection) => scrollToSection.scrollToSection, (arg0) => {
+        if (null != arg0) {
+          callback5.setState({ scrollToSection: null });
           if (null != ref.current) {
-            const tmp6 = closure_1_1;
-            if (tmp6) {
-              let num = ref2.current.parent.firstItemOffset;
-              const tmp9 = closure_1_8;
-              if (num == null) {
-                num = 0;
+            let num = ref2.current.parent.firstItemOffset;
+            if (num == null) {
+              num = 0;
+            }
+            if (arg0 === ref3.ORBS_ARCADE) {
+              if (null != ref4.current) {
+                closure_1_8(0, num - tmp8.current);
               }
-              tmp9(0, num - ref3.current);
             } else {
-              const current = tmp4.current;
-              const obj = { animated: !stateFromStores };
-              current.scrollToEnd(obj);
+              const tmp2 = closure_1_1;
+              if (tmp2) {
+                closure_1_8(0, num - ref3.current);
+              } else {
+                const current = tmp13.current;
+                const obj = { animated: !stateFromStores };
+                current.scrollToEnd(obj);
+              }
             }
           }
         }
       }, obj);
     }
   }, items12);
-  const tmp28 = ref((getUtmCurrentContext) => getUtmCurrentContext.getUtmCurrentContext());
-  const obj5 = { name: scrollToQuestId(sortMethod[37]).ImpressionNames.QUEST_HOME, type: scrollToQuestId(sortMethod[37]).ImpressionTypes.VIEW, properties: { utm_source_current: tmp28.utmSourceCurrent, utm_medium_current: tmp28.utmMediumCurrent, utm_campaign_current: tmp28.utmCampaignCurrent, utm_content_current: tmp28.utmContentCurrent, tab: scrollToQuestId(sortMethod[23]).QuestTabs.ALL } };
-  const tmp29 = filters(sortMethod[36]);
-  ({ utm_source_current: tmp28.utmSourceCurrent, utm_medium_current: tmp28.utmMediumCurrent, utm_campaign_current: tmp28.utmCampaignCurrent, utm_content_current: tmp28.utmContentCurrent, tab: scrollToQuestId(sortMethod[23]).QuestTabs.ALL });
-  tmp29(obj5);
+  const tmp30 = callback4((getUtmCurrentContext) => getUtmCurrentContext.getUtmCurrentContext());
+  const obj5 = { name: scrollToQuestId(sortMethod[37]).ImpressionNames.QUEST_HOME, type: scrollToQuestId(sortMethod[37]).ImpressionTypes.VIEW, properties: { utm_source_current: tmp30.utmSourceCurrent, utm_medium_current: tmp30.utmMediumCurrent, utm_campaign_current: tmp30.utmCampaignCurrent, utm_content_current: tmp30.utmContentCurrent, tab: scrollToQuestId(sortMethod[23]).QuestTabs.ALL } };
+  const tmp31 = filters(sortMethod[36]);
+  ({ utm_source_current: tmp30.utmSourceCurrent, utm_medium_current: tmp30.utmMediumCurrent, utm_campaign_current: tmp30.utmCampaignCurrent, utm_content_current: tmp30.utmContentCurrent, tab: scrollToQuestId(sortMethod[23]).QuestTabs.ALL });
+  tmp31(obj5);
   const items13 = [isEligibleForQuests];
   const effect4 = quests.useEffect(() => {
     const tmp = isEligibleForQuests;
@@ -413,18 +428,18 @@ const memoResult = react.memo(function QuestHome(filters) {
   const obj9 = scrollToQuestId(sortMethod[39]);
   const enabled = obj9.useVirtualCurrencyMobileEnabled().enabled;
   const QuestHomeBountiesFeatureGateExperiment = scrollToQuestId(sortMethod[40]).QuestHomeBountiesFeatureGateExperiment;
-  const obj10 = { location: callback4.QUEST_HOME_MOBILE };
+  const obj10 = { location: callback6.QUEST_HOME_MOBILE };
   const enabled2 = QuestHomeBountiesFeatureGateExperiment.useConfig(obj10).enabled;
   const OrbsHoldoutExperiment = scrollToQuestId(sortMethod[41]).OrbsHoldoutExperiment;
-  const obj11 = { location: callback4.QUEST_HOME_MOBILE };
+  const obj11 = { location: callback6.QUEST_HOME_MOBILE };
   const enabled3 = OrbsHoldoutExperiment.useConfig(obj11).enabled;
   const OrbsArcadeExperiment = scrollToQuestId(sortMethod[42]).OrbsArcadeExperiment;
-  const obj12 = { location: callback4.QUEST_HOME_MOBILE };
+  const obj12 = { location: callback6.QUEST_HOME_MOBILE };
   let enabled4 = OrbsArcadeExperiment.useConfig(obj12).enabled;
   const obj13 = scrollToQuestId(sortMethod[43]);
   const params = obj13.useRoute().params;
-  let previewAdCreativeIds;
-  const tmp34 = callback4;
+  previewAdCreativeIds = undefined;
+  const tmp36 = callback6;
   if (params != null) {
     previewAdCreativeIds = params.previewAdCreativeIds;
   }
@@ -454,17 +469,17 @@ const memoResult = react.memo(function QuestHome(filters) {
     const tmpResult6 = tmp(tmp2[46]);
     result = tmpResult6.shouldShowBountiesGivenFilters(filters);
   }
-  c18 = result;
+  c20 = result;
   const BountiesShopCarouselExperiment = tmp(tmp2[47]).BountiesShopCarouselExperiment;
-  const obj14 = { location: tmp34.QUEST_HOME_MOBILE };
+  const obj14 = { location: tmp36.QUEST_HOME_MOBILE };
   config = BountiesShopCarouselExperiment.useConfig(obj14);
-  let tmp41 = result;
+  let tmp43 = result;
   const useQuestHomeOrbShopCarouselData = tmp(tmp2[48]).useQuestHomeOrbShopCarouselData;
   tmp(tmp2[48]);
   if (result) {
-    tmp41 = "none" !== config.placement;
+    tmp43 = "none" !== config.placement;
   }
-  const obj15 = { enabled: tmp41, sortType: config.sortType };
+  const obj15 = { enabled: tmp43, sortType: config.sortType };
   const questHomeOrbShopCarouselData = useQuestHomeOrbShopCarouselData(obj15);
   products = questHomeOrbShopCarouselData.products;
   obtainableOrbRewards = questHomeOrbShopCarouselData.obtainableOrbRewards;
@@ -478,20 +493,27 @@ const memoResult = react.memo(function QuestHome(filters) {
   if (enabled4) {
     enabled4 = 0 === filters.length;
   }
-  let closure_0 = tmp43;
+  const items16 = [enabled4, callback9];
+  const effect7 = obj2.useEffect(() => {
+    const tmp = enabled4;
+    if (!tmp) {
+      callback9();
+    }
+  }, items16);
+  let closure_0 = tmp46;
   const tmpResult8 = tmp(tmp2[13]);
   navigation = tmpResult8.useNavigation();
   let closure_2 = obj2.useRef(false);
   let closure_3 = obj2.useRef(false);
   let closure_4 = obj2.useRef(false);
-  const items16 = [result && !isLoading && questHomeBounties.length > 0];
-  const effect7 = obj2.useEffect(() => {
+  const items17 = [result && !isLoading && questHomeBounties.length > 0];
+  const effect8 = obj2.useEffect(() => {
     const tmp = closure_0;
     if (tmp) {
       closure_2.current = true;
     }
-  }, items16);
-  const effect8 = obj2.useEffect(() => {
+  }, items17);
+  const effect9 = obj2.useEffect(() => {
     function handleBountiesModalPush(key) {
       if (key.key === handleBountiesModalPush(closure_2[14]).BOUNTIES_MODAL_KEY) {
         closure_1_3.current = true;
@@ -504,7 +526,7 @@ const memoResult = react.memo(function QuestHome(filters) {
       obj.unsubscribe("MODAL_PUSH", handleBountiesModalPush);
     };
   }, []);
-  const effect9 = obj2.useEffect(() => {
+  const effect10 = obj2.useEffect(() => {
     function handleClaimSuccess() {
       closure_1_4.current = true;
     }
@@ -515,8 +537,8 @@ const memoResult = react.memo(function QuestHome(filters) {
       obj.unsubscribe("BOUNTIES_CLAIM_REWARD_SUCCESS", handleClaimSuccess);
     };
   }, []);
-  const items17 = [navigation];
-  const effect10 = obj2.useEffect(() => {
+  const items18 = [navigation];
+  const effect11 = obj2.useEffect(() => {
     let ref3;
     return navigation.addListener("beforeRemove", () => {
       if (ref.current) {
@@ -536,15 +558,15 @@ const memoResult = react.memo(function QuestHome(filters) {
         }
       }
     });
-  }, items17);
-  const items18 = [result, enabled4, callback6, callback7, config, products, obtainableOrbRewards, showPlaceholderCarousel];
-  const items19 = [ref1];
-  const callback8 = obj2.useCallback(() => {
-    const obj = { shouldShowBounties: _undefined, shouldShowOrbsArcade: enabled4, onLayout: callback6, onQuestsSectionHeaderLayout: callback7, shopCarouselConfig: config, orbShopProducts: products, obtainableOrbRewards, showOrbShopPlaceholderCarousel: showPlaceholderCarousel };
-    return gesture(closure_22, obj);
   }, items18);
-  const items20 = [quests, callback4];
-  const callback9 = obj2.useCallback((item) => {
+  const items19 = [result, enabled4, callback6, callback7, callback8, config, products, obtainableOrbRewards, showPlaceholderCarousel];
+  const items20 = [ref1];
+  const callback10 = obj2.useCallback(() => {
+    const obj = { shouldShowBounties: _undefined, shouldShowOrbsArcade: enabled4, onLayout: callback6, onQuestsSectionHeaderLayout: callback7, onOrbsArcadeSectionLayout: callback8, shopCarouselConfig: config, orbShopProducts: products, obtainableOrbRewards, showOrbShopPlaceholderCarousel: showPlaceholderCarousel };
+    return callback9(closure_23, obj);
+  }, items19);
+  const items21 = [quests, callback4];
+  const callback11 = obj2.useCallback((item) => {
     item = item.item;
     const index = item.index;
     let obj = {
@@ -558,14 +580,14 @@ const memoResult = react.memo(function QuestHome(filters) {
       children() {
         const obj = { quest: item, questContentPosition: index, containerPadding: 0, sourceQuestContent: scrollToQuestId(sortMethod[44]).QuestContent.QUEST_HOME_MOBILE };
         const QuestCard = scrollToQuestId(sortMethod[50]).QuestCard;
-        return ref1(QuestCard, obj);
+        return callback9(QuestCard, obj);
       }
     };
     const QuestContentImpressionTrackerNative = QuestContentImpressionTracker.QuestContentImpressionTrackerNative;
-    return gesture(QuestContentImpressionTrackerNative, obj);
-  }, items19);
-  let tmp52 = !isNavigationComplete;
-  const callback10 = obj2.useCallback((arg0) => {
+    return callback9(QuestContentImpressionTrackerNative, obj);
+  }, items20);
+  let tmp55 = !isNavigationComplete;
+  const callback12 = obj2.useCallback((arg0) => {
     const index = arg0;
     let obj = {
       onLayout(arg0) {
@@ -577,25 +599,25 @@ const memoResult = react.memo(function QuestHome(filters) {
       }
     };
     const merged = Object.assign(arg0);
-    return ref1(excludedQuests, obj);
-  }, items20);
+    return callback9(excludedQuests, obj);
+  }, items21);
   if (isNavigationComplete) {
-    tmp52 = result && isLoading;
+    tmp55 = result && isLoading;
   }
-  if (!tmp52) {
+  if (!tmp55) {
     if (isFetchingCurrentQuests) {
       isFetchingCurrentQuests = 0 === quests.length;
     }
-    tmp52 = isFetchingCurrentQuests;
+    tmp55 = isFetchingCurrentQuests;
   }
-  isFetchingCurrentQuests = tmp52;
+  isFetchingCurrentQuests = tmp55;
   ref2 = obj2.useRef(result);
-  const items21 = [result];
-  const effect11 = obj2.useEffect(() => {
-    ref2.current = _undefined;
-  }, items21);
-  const items22 = [isEligibleForQuests];
+  const items22 = [result];
   const effect12 = obj2.useEffect(() => {
+    ref2.current = _undefined;
+  }, items22);
+  const items23 = [isEligibleForQuests];
+  const effect13 = obj2.useEffect(() => {
     if (isEligibleForQuests) {
       let obj = QuestHomeRoundtripTrackerDefault;
       const obj2 = { includesBounties: ref2.current };
@@ -605,68 +627,68 @@ const memoResult = react.memo(function QuestHome(filters) {
         obj.clearTracking();
       };
     }
-  }, items22);
-  const items23 = [isEligibleForQuests, tmp52];
-  const effect13 = obj2.useEffect(() => {
+  }, items23);
+  const items24 = [isEligibleForQuests, tmp55];
+  const effect14 = obj2.useEffect(() => {
     const tmp = isEligibleForQuests && !isFetchingCurrentQuests;
     if (tmp) {
       const obj2 = { includesBounties: ref2.current };
       const obj = QuestHomeRoundtripTrackerDefault;
       obj.stopTracking(obj2);
     }
-  }, items23);
+  }, items24);
   const tmpResult9 = tmp(tmp2[23]);
   const shouldShowPreviewToolTab = tmpResult9.useShouldShowPreviewToolTab();
   const tmpResult10 = tmp(tmp2[52]);
   const isHexagonCampaignQuestHomeHeaderEnabled = tmpResult10.useIsHexagonCampaignQuestHomeHeaderEnabled("QuestHome");
-  let tmp59 = null;
+  let tmp62 = null;
   if (isEligibleForQuests) {
-    let tmp70Result;
-    if (tmp52) {
-      const obj16 = { style: items24, children: ref1(isFetchingCurrentQuests, { animating: true }) };
-      items24 = [tmp4.loadingContainer, containerStyle];
-      tmp70Result = ref1(excludedQuests, obj16);
+    let tmp73Result;
+    if (tmp55) {
+      const obj16 = { style: items25, children: callback9(isFetchingCurrentQuests, { animating: true }) };
+      items25 = [tmp4.loadingContainer, containerStyle];
+      tmp73Result = callback9(excludedQuests, obj16);
     } else if (0 === quests.length) {
-      let tmp63Result;
-      const obj17 = { style: items25, children: items26 };
-      items25 = [tmp4.container, containerStyle];
-      items26 = [ref1(tmp5(tmp2[26]), {}), ];
-      const tmp61 = previewAdCreativeIds;
-      const tmp62 = excludedQuests;
+      let tmp66Result;
+      const obj17 = { style: items26, children: items27 };
+      items26 = [tmp4.container, containerStyle];
+      items27 = [callback9(tmp5(tmp2[26]), {}), ];
+      const tmp64 = ref1;
+      const tmp65 = excludedQuests;
       if (0 === filters.length) {
         const obj18 = { hasContentAbove: isHexagonCampaignQuestHomeHeaderEnabled };
-        tmp63Result = tmp63(questHomeBounties, obj18);
+        tmp66Result = tmp66(isLoading, obj18);
       } else {
         const obj19 = { onClearFilters, hasContentAbove: isHexagonCampaignQuestHomeHeaderEnabled };
-        tmp63Result = tmp63(c18, obj19);
+        tmp66Result = tmp66(questHomeBounties, obj19);
       }
-      items26[1] = tmp63Result;
-      tmp70Result = tmp61(tmp62, obj17);
+      items27[1] = tmp66Result;
+      tmp73Result = tmp64(tmp65, obj17);
     } else {
       const obj20 = { ref, contentContainerStyle: null, style: null, accessibilityLabel: null, data: null, renderItem: null, showsHorizontalScrollIndicator: false, ListHeaderComponent: null, CellRendererComponent: null, onLayout: null, onScroll: null, onLoad: null, scrollEventThrottle: 16 };
-      const tmp70 = ref1;
+      const tmp73 = callback9;
       if (result) {
         let num = 0;
         const obj21 = { paddingTop: num, paddingBottom: bottom };
         obj20.contentContainerStyle = obj21;
-        const items27 = [tmp4.container, containerStyle];
-        obj20.style = items27;
+        const items28 = [tmp4.container, containerStyle];
+        obj20.style = items28;
         let intl = tmp(tmp2[20]).intl;
         obj20.accessibilityLabel = intl.string(tmp(tmp2[20]).t.JALI2K);
         obj20.data = quests;
-        obj20.renderItem = callback9;
-        obj20.ListHeaderComponent = callback8;
-        obj20.CellRendererComponent = callback10;
+        obj20.renderItem = callback11;
+        obj20.ListHeaderComponent = callback10;
+        obj20.CellRendererComponent = callback12;
         obj20.onLayout = callback2;
         obj20.onScroll = callback1;
         obj20.onLoad = callback3;
-        tmp70Result = tmp70(tmp71, obj20);
+        tmp73Result = tmp73(tmp74, obj20);
       }
       num = tmp5(tmp2[11]).space.PX_16;
     }
-    tmp59 = tmp70Result;
+    tmp62 = tmp73Result;
   }
-  return tmp59;
+  return tmp62;
 });
 let result = size.fileFinishedImporting("modules/quests/native/QuestHome.tsx");
 

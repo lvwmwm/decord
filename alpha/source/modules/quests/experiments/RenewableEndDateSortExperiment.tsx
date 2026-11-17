@@ -1,9 +1,9 @@
-// Module ID: 10165
-// Function ID: 10166
+// Module ID: 10610
+// Function ID: 10611
 // Name: RenewableEndDateSortExperiment
 // Dependencies: [1452, 2]
 
-// Module 10165 (RenewableEndDateSortExperiment)
+// Module 10610 (RenewableEndDateSortExperiment)
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 

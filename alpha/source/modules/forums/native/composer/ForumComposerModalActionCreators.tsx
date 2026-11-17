@@ -1,13 +1,13 @@
-// Module ID: 11151
-// Function ID: 11152
+// Module ID: 11921
+// Function ID: 11922
 // Name: ForumComposerModalActionCreators
-// Dependencies: [8866, 6838, 11152, 2121, 2]
+// Dependencies: [8877, 6833, 11922, 2121, 2]
 // Exports: closeCreateForumPostModal, openCreateForumPostModal
 
-// Module 11151 (ForumComposerModalActionCreators)
+// Module 11921 (ForumComposerModalActionCreators)
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
-import Tracking from "Tracking" /* 8866 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6833 */;
+import Tracking from "Tracking" /* 8877 */;
 import size from "module_2" /* 2 */;
 
 let c3 = "create-forum-post";
@@ -26,7 +26,7 @@ export function openCreateForumPostModal(guildId) {
     const result1 = tmpResult.trackForumCreateNewPostStarted(obj3);
   }
   const obj5 = ModalActionCreatorsDefault;
-  obj5.pushLazy(asyncRequire(11152, tmp2.paths), guildId, c3);
+  obj5.pushLazy(asyncRequire(11922, tmp2.paths), guildId, c3);
 }
 export function closeCreateForumPostModal() {
   let flag = arg0;

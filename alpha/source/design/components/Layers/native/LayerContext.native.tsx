@@ -1,9 +1,9 @@
-// Module ID: 5908
-// Function ID: 5909
+// Module ID: 5912
+// Function ID: 5913
 // Name: LayerContext
 // Dependencies: [19, 2]
 
-// Module 5908 (LayerContext)
+// Module 5912 (LayerContext)
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

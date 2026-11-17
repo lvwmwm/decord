@@ -1,12 +1,12 @@
-// Module ID: 10718
-// Function ID: 10719
+// Module ID: 14033
+// Function ID: 14034
 // Name: useGetGuildPowerupBannerImage
-// Dependencies: [5307, 504, 2]
+// Dependencies: [5311, 504, 2]
 // Exports: default, getGuildPowerupBannerImage
 
-// Module 10718 (useGetGuildPowerupBannerImage)
+// Module 14033 (useGetGuildPowerupBannerImage)
 import get_initialized from "get initialized" /* 504 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import AccessibilityStore from "AccessibilityStore" /* 5311 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useGetGuildPowerupBannerImage.tsx");

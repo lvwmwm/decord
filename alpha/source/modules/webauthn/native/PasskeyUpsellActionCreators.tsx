@@ -1,14 +1,14 @@
-// Module ID: 18317
-// Function ID: 18318
+// Module ID: 18358
+// Function ID: 18359
 // Name: PasskeyUpsellActionCreators
-// Dependencies: [5338, 5139, 5140, 5542, 18318, 2121, 2]
+// Dependencies: [5342, 5143, 5144, 5546, 18359, 2121, 2]
 
-// Module 18317 (PasskeyUpsellActionCreators)
+// Module 18358 (PasskeyUpsellActionCreators)
 import asyncRequire from "asyncRequire" /* 2121 */;
-import dismissible_content from "dismissible_content" /* 5139 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 5140 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5338 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import dismissible_content from "dismissible_content" /* 5143 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 5144 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5342 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
 import size from "module_2" /* 2 */;
 
 const PASSKEY_UPSELL_KEY = "PASSKEY_UPSELL_KEY";
@@ -18,13 +18,13 @@ let obj = {
     if (!obj.UNSAFE_isDismissibleContentDismissed(dismissible_content.DismissibleContent.PASSWORDLESS_UPSELL)) {
       const self = this;
       const tmpResult = DismissibleContentUtils;
-      const markDismissibleContentAsShown = tmpResult.requestMarkDismissibleContentAsShown(tmp(5139).DismissibleContent.PASSWORDLESS_UPSELL);
+      const markDismissibleContentAsShown = tmpResult.requestMarkDismissibleContentAsShown(tmp(5143).DismissibleContent.PASSWORDLESS_UPSELL);
       const result = this.openPasskeyUpsellPromoSheet();
     }
   },
   openPasskeyUpsellPromoSheet() {
     const obj = ActionSheetActionCreatorsDefault;
-    obj.openLazy(asyncRequire(18318, dependencyMap.paths), PASSKEY_UPSELL_KEY);
+    obj.openLazy(asyncRequire(18359, dependencyMap.paths), PASSKEY_UPSELL_KEY);
   },
   closePasskeyUpsellPromoSheet() {
     const obj = ActionSheetActionCreatorsDefault;

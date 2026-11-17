@@ -1,33 +1,33 @@
-// Module ID: 12741
-// Function ID: 12742
+// Module ID: 11349
+// Function ID: 11350
 // Name: EmbeddedActivitiesActionCreators
-// Dependencies: [32, 5, 11406, 2165, 7016, 6853, 502, 5155, 5177, 5238, 1388, 5971, 5154, 2145, 1072, 1365, 5152, 12742, 8852, 12743, 12754, 12755, 12759, 12760, 572, 7341, 7342, 12761, 7346, 6748, 6370, 2151, 5967, 7864, 12762, 2119, 12763, 12769, 11397, 1256, 12770, 12778, 6828, 12779, 6258, 1113, 5970, 12780, 1264, 6841, 5227, 7025, 6056, 1285, 7660, 7665, 8660, 8134, 8786, 5140, 5139, 2]
+// Dependencies: [32, 5, 11114, 2165, 7024, 6861, 502, 5159, 5181, 5242, 1388, 5975, 5158, 2145, 1072, 1365, 5156, 11350, 8863, 11300, 11363, 11364, 11368, 11369, 572, 7351, 7352, 11370, 7356, 6756, 6378, 2151, 5971, 7874, 11371, 2119, 11372, 11378, 11355, 1256, 11379, 11387, 6823, 11388, 6266, 1113, 5974, 11389, 1264, 6836, 5231, 7033, 6063, 1285, 7670, 7675, 8671, 8145, 8797, 5144, 5143, 2]
 // Exports: consumeRequestToReactToSeriousThermalState, dismissNewActivityIndicator, disregardSeriousThermalState, maybeDisconnectFromCurrentActivity, refreshProxyTicket, requestRespondToSeriousThermalState, runPrimaryAppCommandOrJoinEmbeddedActivity, sendEmbeddedActivityInvite, sendEmbeddedActivityInviteUser, updateActivityPanelMode, updateActivityPopoutWindowLayout, updateFocusedActivityLayout, uploadImageAttachment, validateTestMode
 
-// Module 12741 (EmbeddedActivitiesActionCreators)
+// Module 11349 (EmbeddedActivitiesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
 import ApplicationConstants from "ApplicationConstants" /* 1365 */;
 import Constants2 from "Constants" /* 2145 */;
-import dismissible_content from "dismissible_content" /* 5139 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 5140 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 5227 */;
-import ChannelRTCParticipants from "ChannelRTCParticipants" /* 7025 */;
-import createProxyTicket2 from "createProxyTicket" /* 7341 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 11406 */;
+import dismissible_content from "dismissible_content" /* 5143 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 5144 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5156 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 5231 */;
+import ChannelRTCParticipants from "ChannelRTCParticipants" /* 7033 */;
+import createProxyTicket2 from "createProxyTicket" /* 7351 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 11114 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 7016 */;
-import PopoutWindowStore from "PopoutWindowStore" /* 6853 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 7024 */;
+import PopoutWindowStore from "PopoutWindowStore" /* 6861 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import PermissionStore from "PermissionStore" /* 5238 */;
+import ChannelStore from "ChannelStore" /* 5159 */;
+import GuildStore from "GuildStore" /* 5181 */;
+import PermissionStore from "PermissionStore" /* 5242 */;
 import UserStore from "UserStore" /* 1388 */;
-import VoiceStateStore from "VoiceStateStore" /* 5971 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
+import VoiceStateStore from "VoiceStateStore" /* 5975 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5158 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -39,7 +39,7 @@ let closure_19;
 let closure_20;
 let closure_21;
 let tmp2;
-const ChannelRTCActionCreatorsDefault = tmp2(6056);
+const ChannelRTCActionCreatorsDefault = tmp2(6063);
 let obj = function _runPrimaryAppCommandOrJoinEmbeddedActivity() {
   obj = _asyncToGenerator(async (channelId) => {
     let closure_8;
@@ -1080,7 +1080,7 @@ function stopEmbeddedActivity(showFeedback) {
         if ("" !== id) {
           const obj4 = { applicationId, instanceId: compositeInstanceId };
           compositeInstanceId = undefined;
-          const getEmbeddedActivityParticipantId = tmp7(7025).getEmbeddedActivityParticipantId;
+          const getEmbeddedActivityParticipantId = tmp7(7033).getEmbeddedActivityParticipantId;
           ChannelRTCParticipants;
           if (found != null) {
             compositeInstanceId = found.compositeInstanceId;

@@ -1,11 +1,11 @@
-// Module ID: 13085
-// Function ID: 13086
+// Module ID: 11745
+// Function ID: 11746
 // Name: StageChannelListStore
-// Dependencies: [32, 19, 1258, 1263, 5221, 2]
+// Dependencies: [32, 19, 1258, 1263, 5225, 2]
 // Exports: useActiveSpeakerPillScrollHandler, useActiveSpeakerPillState
 
-// Module 13085 (StageChannelListStore)
-import _slicedToArray2 from "_slicedToArray" /* 5221 */;
+// Module 11745 (StageChannelListStore)
+import _slicedToArray2 from "_slicedToArray" /* 5225 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import module_1258 from "module_1258" /* 1258 */;

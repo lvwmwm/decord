@@ -1,8 +1,8 @@
-// Module ID: 14346
-// Function ID: 14347
+// Module ID: 13211
+// Function ID: 13212
 // Dependencies: [2]
 
-// Module 14346
+// Module 13211
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_face_09_rage_textureAtlas.webp.js");

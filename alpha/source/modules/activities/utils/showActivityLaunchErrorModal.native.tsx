@@ -1,12 +1,12 @@
-// Module ID: 12753
-// Function ID: 12754
+// Module ID: 11312
+// Function ID: 11313
 // Name: showActivityLaunchErrorModal
-// Dependencies: [6259, 1113, 2]
+// Dependencies: [6267, 1113, 2]
 // Exports: default
 
-// Module 12753 (showActivityLaunchErrorModal)
+// Module 11312 (showActivityLaunchErrorModal)
 import intl2 from "intl" /* 1113 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6259 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6267 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/utils/showActivityLaunchErrorModal.native.tsx");

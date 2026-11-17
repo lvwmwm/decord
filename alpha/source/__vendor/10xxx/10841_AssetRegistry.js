@@ -1,0 +1,10 @@
+// Module ID: 10841
+// Function ID: 10842
+// Name: AssetRegistry
+// Dependencies: [1119]
+
+// Module 10841 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1119 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "3707ecbdc52255079d75d7398451480d", name: "RibbonIcon", type: "png" });

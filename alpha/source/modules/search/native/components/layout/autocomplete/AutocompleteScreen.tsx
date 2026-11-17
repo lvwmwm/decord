@@ -1,24 +1,24 @@
-// Module ID: 19569
-// Function ID: 19570
+// Module ID: 19614
+// Function ID: 19615
 // Name: AutocompleteScreen
-// Dependencies: [32, 19, 5155, 5248, 1388, 19570, 14754, 9066, 1072, 21, 504, 19474, 14740, 14765, 14761, 5362, 5944, 14747, 19571, 14746, 14748, 19533, 19465, 1113, 19478, 2]
+// Dependencies: [32, 19, 5159, 5252, 1388, 19615, 13832, 9077, 1072, 21, 504, 19519, 13818, 13843, 13839, 5366, 5948, 13825, 19616, 13824, 13826, 19578, 19510, 1113, 19523, 2]
 
-// Module 19569 (AutocompleteScreen)
+// Module 19614 (AutocompleteScreen)
 import Fragment from "Fragment" /* 21 */;
-import UserUtilsDefault from "UserUtils" /* 5362 */;
-import useChannelName from "useChannelName" /* 5944 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 14740 */;
-import TrackingDefault from "Tracking" /* 14761 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 14765 */;
-import AutocompleteScreenUtils from "AutocompleteScreenUtils" /* 19571 */;
+import UserUtilsDefault from "UserUtils" /* 5366 */;
+import useChannelName from "useChannelName" /* 5948 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13818 */;
+import TrackingDefault from "Tracking" /* 13839 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13843 */;
+import AutocompleteScreenUtils from "AutocompleteScreenUtils" /* 19616 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import RelationshipStore from "RelationshipStore" /* 5248 */;
+import ChannelStore from "ChannelStore" /* 5159 */;
+import RelationshipStore from "RelationshipStore" /* 5252 */;
 import UserStore from "UserStore" /* 1388 */;
-import SearchAutocompleteStore from "SearchAutocompleteStore" /* 19570 */;
-import SearchQueryStore from "SearchQueryStore" /* 14754 */;
-import SearchConstants from "SearchConstants" /* 9066 */;
+import SearchAutocompleteStore from "SearchAutocompleteStore" /* 19615 */;
+import SearchQueryStore from "SearchQueryStore" /* 13832 */;
+import SearchConstants from "SearchConstants" /* 9077 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

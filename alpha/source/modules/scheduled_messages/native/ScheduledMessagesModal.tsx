@@ -1,10 +1,10 @@
-// Module ID: 9049
-// Function ID: 9050
+// Module ID: 9060
+// Function ID: 9061
 // Name: ScheduledMessagesModal
-// Dependencies: [32, 19, 17, 9050, 1072, 1390, 9031, 21, 7937, 5306, 575, 1630, 1113, 1655, 5929, 5930, 7500, 9051, 1380, 7493, 6838, 9029, 504, 15656, 9030, 7418, 15658, 7888, 7918, 11170, 1092, 11279, 2174, 15659, 2]
+// Dependencies: [32, 19, 17, 9061, 1072, 1390, 9042, 21, 7947, 5310, 575, 1630, 1113, 1655, 5933, 5934, 7510, 9062, 1380, 7503, 6833, 9040, 504, 15690, 9041, 7428, 15692, 7898, 7928, 11137, 1092, 11628, 2174, 15693, 2]
 // Exports: default
 
-// Module 9049 (ScheduledMessagesModal)
+// Module 9060 (ScheduledMessagesModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -13,21 +13,21 @@ import intl2 from "intl" /* 1113 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
 import _mod1655 from "module_1655" /* 1655 */;
 import PremiumUtils from "PremiumUtils" /* 2174 */;
-import spring_spring from "spring/spring" /* 5929 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7918 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
-import ScheduledMessageActionCreators from "ScheduledMessageActionCreators" /* 9029 */;
-import ScheduledMessagesConstants from "ScheduledMessagesConstants" /* 9031 */;
-import HeaderShared from "HeaderShared" /* 9051 */;
-import PremiumUpsellUtils from "PremiumUpsellUtils" /* 11170 */;
-import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 11279 */;
-import ScheduledMessageCardDefault from "ScheduledMessageCard" /* 15656 */;
-import NitroLimitUpsellBarDefault from "NitroLimitUpsellBar" /* 15659 */;
+import spring_spring from "spring/spring" /* 5933 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7928 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7947 */;
+import ScheduledMessageActionCreators from "ScheduledMessageActionCreators" /* 9040 */;
+import ScheduledMessagesConstants from "ScheduledMessagesConstants" /* 9042 */;
+import HeaderShared from "HeaderShared" /* 9062 */;
+import PremiumUpsellUtils from "PremiumUpsellUtils" /* 11137 */;
+import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 11628 */;
+import ScheduledMessageCardDefault from "ScheduledMessageCard" /* 15690 */;
+import NitroLimitUpsellBarDefault from "NitroLimitUpsellBar" /* 15693 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ScheduledMessageStore from "ScheduledMessageStore" /* 9050 */;
+import ScheduledMessageStore from "ScheduledMessageStore" /* 9061 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size_mod from "module_2" /* 2 */;
 
 let _require, item, set;
@@ -42,9 +42,9 @@ let tmp2;
 let tmp4;
 let unpackModuleId;
 const PlatformUtils = tmp4(1380);
-const springPresets = tmp2(5930);
-const NavigatorHeader = tmp4(7493);
-const _mod7500 = tmp4(7500);
+const springPresets = tmp2(5934);
+const NavigatorHeader = tmp4(7503);
+const _mod7510 = tmp4(7510);
 function keyExtractor(scheduledMessageId) {
   return scheduledMessageId.scheduledMessageId;
 }
@@ -230,11 +230,11 @@ export default function ScheduledMessagesModal() {
     },
     headerTitleAlign: "center",
     headerStatusBarHeight: num + tmp2(575).space.PX_8,
-    headerLeft: tmp4Result2.getHeaderCloseButton(tmp2(6838).pop),
+    headerLeft: tmp4Result2.getHeaderCloseButton(tmp2(6833).pop),
     headerLeftContainerStyle: null,
     headerRightContainerStyle: null
   };
-  const Header = _mod7500.Header;
+  const Header = _mod7510.Header;
   num = 0;
   const tmp11 = closure_11;
   const tmp12 = View;

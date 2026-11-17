@@ -1,12 +1,12 @@
-// Module ID: 11644
-// Function ID: 11645
+// Module ID: 12307
+// Function ID: 12308
 // Name: DeviceMedia
-// Dependencies: [1072, 560, 1256, 1263, 11645, 1380, 2]
+// Dependencies: [1072, 560, 1256, 1263, 12308, 1380, 2]
 
-// Module 11644 (DeviceMedia)
+// Module 12307 (DeviceMedia)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import getDeviceMediaPhotosDefault from "getDeviceMediaPhotos" /* 11645 */;
+import getDeviceMediaPhotosDefault from "getDeviceMediaPhotos" /* 12308 */;
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
@@ -109,7 +109,7 @@ let obj = {
                     obj3.track(constants.MEDIA_PICKER_INFINITE_SCROLL_PAGED, obj2);
                   }
           };
-          lastAssetIndex(11645)(obj2);
+          lastAssetIndex(12308)(obj2);
         }
       }
     }

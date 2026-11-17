@@ -1,28 +1,28 @@
-// Module ID: 12473
-// Function ID: 12474
+// Module ID: 12673
+// Function ID: 12674
 // Name: ChannelBrowser
-// Dependencies: [32, 19, 17, 8735, 7875, 5236, 5177, 6948, 1072, 5152, 21, 1380, 6047, 11061, 9355, 5306, 575, 5919, 5903, 12474, 504, 12476, 5338, 5139, 12472, 7825, 7888, 7445, 7428, 1113, 7629, 6010, 12478, 5944, 5368, 7746, 7734, 5892, 8033, 7733, 7455, 1187, 2]
+// Dependencies: [32, 19, 17, 8746, 7885, 5240, 5181, 6956, 1072, 5156, 21, 1380, 6051, 11819, 9364, 5310, 575, 5923, 5907, 12674, 504, 12676, 5342, 5143, 12672, 7835, 7898, 7455, 7438, 1113, 7639, 6014, 12678, 5948, 5372, 7756, 7744, 5896, 8044, 7743, 7465, 1187, 2]
 // Exports: default
 
-// Module 12473 (ChannelBrowser)
+// Module 12673 (ChannelBrowser)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import MarkupRulesUtils from "MarkupRulesUtils" /* 9355 */;
-import MarkupInlineChannelMentionRules from "MarkupInlineChannelMentionRules" /* 11061 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5156 */;
+import Text_Text from "Text/Text" /* 5923 */;
+import MarkupRulesUtils from "MarkupRulesUtils" /* 9364 */;
+import MarkupInlineChannelMentionRules from "MarkupInlineChannelMentionRules" /* 11819 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import NewChannelsStore from "NewChannelsStore" /* 8735 */;
-import GuildCategoryStore from "GuildCategoryStore" /* 7875 */;
-import GuildChannelStore from "GuildChannelStore" /* 5236 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6948 */;
+import NewChannelsStore from "NewChannelsStore" /* 8746 */;
+import GuildCategoryStore from "GuildCategoryStore" /* 7885 */;
+import GuildChannelStore from "GuildChannelStore" /* 5240 */;
+import GuildStore from "GuildStore" /* 5181 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6956 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1380 */;
-import MarkupUtils from "MarkupUtils" /* 6047 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import MarkupUtils from "MarkupUtils" /* 6051 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -106,10 +106,10 @@ let closure_20 = react.memo(function CategoryRow(channel) {
   const onChannelClick = channel.onChannelClick;
   const tmp = closure_17();
   const items = [UserGuildSettingsStore];
-  const tmp3 = onChannelClick(5944)(channel);
+  const tmp3 = onChannelClick(5948)(channel);
   const obj = channel(504);
   const stateFromStores = obj.useStateFromStores(items, () => UserGuildSettingsStore.isChannelOptedIn(channel.guild_id, channel.id));
-  const obj2 = channel(5368);
+  const obj2 = channel(5372);
   const checkboxA11yNative = obj2.useCheckboxA11yNative({ checked: stateFromStores });
   const obj3 = {
     style: tmp.categoryContainer,
@@ -121,7 +121,7 @@ let closure_20 = react.memo(function CategoryRow(channel) {
     children: closure_13(tmp11, { children: items1 })
   };
   str = "text";
-  const PressableOpacity = channel(7428).PressableOpacity;
+  const PressableOpacity = channel(7438).PressableOpacity;
   if ("null" !== channel.id) {
     str = checkboxA11yNative.accessibilityRole;
   }
@@ -131,16 +131,16 @@ let closure_20 = react.memo(function CategoryRow(channel) {
   }
   items1 = [, ];
   const obj4 = { style: tmp.categoryTitle, title: tmp3, lineClamp: 1 };
-  items1[0] = closure_12(channel(7746).TableRowGroupTitle, obj4);
+  items1[0] = closure_12(channel(7756).TableRowGroupTitle, obj4);
   let tmp10Result = null;
   tmp11 = closure_14;
   if ("null" !== channel.id) {
     const obj5 = { style: tmp.selectAllContainer, children: items2 };
-    const obj6 = { style: tmp.selectAllCheckbox, children: closure_12(channel(7734).FormCheckbox, obj7) };
+    const obj6 = { style: tmp.selectAllCheckbox, children: closure_12(channel(7744).FormCheckbox, obj7) };
     obj7 = { checked: stateFromStores };
     items2 = [closure_12(View, obj6), ];
     const obj8 = { variant: "body-xs/semibold", color: "interactive-text-default", children: intl.string(channel(1113).t.mSQwnW) };
-    const Text = tmp4(5919).Text;
+    const Text = tmp4(5923).Text;
     intl = tmp4(1113).intl;
     items2[1] = closure_12(Text, obj8);
     tmp10Result = tmp10(View, obj5);

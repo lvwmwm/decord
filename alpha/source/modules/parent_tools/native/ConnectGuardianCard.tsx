@@ -1,20 +1,20 @@
-// Module ID: 17411
-// Function ID: 17412
+// Module ID: 17448
+// Function ID: 17449
 // Name: ConnectGuardianCard
-// Dependencies: [19, 17, 1388, 8741, 21, 5306, 575, 563, 9440, 17407, 17408, 7943, 6004, 1113, 2701, 6327, 15897, 5919, 8897, 5926, 12289, 6941, 2]
+// Dependencies: [19, 17, 1388, 8752, 21, 5310, 575, 563, 9450, 17444, 17445, 7953, 6008, 1113, 2703, 6335, 15935, 5923, 8908, 5930, 10755, 6949, 2]
 // Exports: ConnectGuardianCard
 
-// Module 17411 (ConnectGuardianCard)
+// Module 17448 (ConnectGuardianCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ToastUtils from "ToastUtils" /* 6004 */;
-import ClipboardUtils from "ClipboardUtils" /* 7943 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 8741 */;
-import shareGuardianConnectLink from "shareGuardianConnectLink" /* 17408 */;
+import ToastUtils from "ToastUtils" /* 6008 */;
+import ClipboardUtils from "ClipboardUtils" /* 7953 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 8752 */;
+import shareGuardianConnectLink from "shareGuardianConnectLink" /* 17445 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;

@@ -1,18 +1,18 @@
-// Module ID: 11312
-// Function ID: 11313
+// Module ID: 12008
+// Function ID: 12009
 // Name: EmojiGrid
-// Dependencies: [19, 21, 5306, 575, 5256, 1414, 7894, 11301, 11313, 6327, 2]
+// Dependencies: [19, 21, 5310, 575, 5260, 1414, 7904, 11999, 12009, 6335, 2]
 // Exports: EmojiGrid
 
-// Module 11312 (EmojiGrid)
+// Module 12008 (EmojiGrid)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import EmojiUtilsDefault from "EmojiUtils" /* 5256 */;
-import Stack_Stack from "Stack/Stack" /* 6327 */;
-import EmojiDefault from "Emoji" /* 7894 */;
+import EmojiUtilsDefault from "EmojiUtils" /* 5260 */;
+import Stack_Stack from "Stack/Stack" /* 6335 */;
+import EmojiDefault from "Emoji" /* 7904 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size_mod from "module_2" /* 2 */;
 
 let size;
@@ -57,7 +57,7 @@ export function EmojiGrid(numberToShow) {
     num2 = 5;
   }
   let obj = {};
-  const obj2 = doNotDisplayEmojiIds(11301);
+  const obj2 = doNotDisplayEmojiIds(11999);
   const merged = Object.assign(obj2.useSharedMessageEmojiStyles());
   const merged1 = Object.assign(closure_4());
   let emojis;
@@ -71,15 +71,15 @@ export function EmojiGrid(numberToShow) {
   const substr = emojis.slice(0, num + 1);
   const found = substr.filter((id) => !doNotDisplayEmojiIds.includes(id.id));
   const substr1 = found.slice(0, num);
-  const arr4 = obj(11313)(substr1, num2);
-  let Stack = tmp(6327).Stack;
+  const arr4 = obj(12009)(substr1, num2);
+  let Stack = tmp(6335).Stack;
   return <Stack spacing={8} align="center" style={obj.emojiGridContainer}>{arr4.map((arr, index) => {
-    const f131426 = (guildEmoji) => {
+    const f132350 = (guildEmoji) => {
       obj = { guildEmoji };
       return closure_1_3(closure_1_5, obj, guildEmoji.id);
     };
-    obj = { direction: "horizontal", spacing: 32, justify: "center", style: obj.emojiGridRowContainer, children: arr.map(f131426) };
+    obj = { direction: "horizontal", spacing: 32, justify: "center", style: obj.emojiGridRowContainer, children: arr.map(f132350) };
     const Stack = Stack_Stack.Stack;
-    return <Stack key={arg1} direction="horizontal" spacing={32} justify="center" style={obj.emojiGridRowContainer}>{arg0.map(f131426)}</Stack>;
+    return <Stack key={arg1} direction="horizontal" spacing={32} justify="center" style={obj.emojiGridRowContainer}>{arg0.map(f132350)}</Stack>;
   })}</Stack>;
 }

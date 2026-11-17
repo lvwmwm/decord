@@ -1,13 +1,13 @@
-// Module ID: 6091
-// Function ID: 6092
+// Module ID: 6098
+// Function ID: 6099
 // Name: DirectVideo
-// Dependencies: [19, 21, 4, 6092, 6093, 2]
+// Dependencies: [19, 21, 4, 6099, 6100, 2]
 // Exports: default
 
-// Module 6091 (DirectVideo)
+// Module 6098 (DirectVideo)
 import logger_Logger from "logger/Logger" /* 4 */;
 import Fragment from "Fragment" /* 21 */;
-import DirectVideoStream from "DirectVideoStream" /* 6092 */;
+import DirectVideoStream from "DirectVideoStream" /* 6099 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 

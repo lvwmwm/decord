@@ -1,15 +1,15 @@
-// Module ID: 12719
-// Function ID: 12720
+// Module ID: 11325
+// Function ID: 11326
 // Name: ChannelCallLifecycleStore
-// Dependencies: [5209, 11004, 10041, 1345, 504, 572, 2]
+// Dependencies: [5213, 11315, 10054, 1345, 504, 572, 2]
 
-// Module 12719 (ChannelCallLifecycleStore)
+// Module 11325 (ChannelCallLifecycleStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import _modDef1345 from "module_1345" /* 1345 */;
-import DeviceOrientation from "DeviceOrientation" /* 10041 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 11004 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
+import DeviceOrientation from "DeviceOrientation" /* 10054 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 11315 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5213 */;
 import size_mod from "module_2" /* 2 */;
 
 let voiceChannelId;
@@ -20,10 +20,10 @@ let c5 = false;
 let c6 = false;
 let visible = false;
 let obj = {};
-let size = { x: "Array", y: "s", width: "channelId", height: "e", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: 422417, isInitialized: 8060928, isVisible: 1359020032 };
+let size = { x: "Array", y: "s", width: "channel_id", height: "space", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: "<string:3951369912>", isInitialized: "<string:1070512209>", isVisible: "BADGE_DIRECTORY_NUX_POPOVER" };
 const VOICE_CONTROLS_TOGGLE_BUTTON = VoiceCallOverlayType.VOICE_CONTROLS_TOGGLE_BUTTON;
 obj[VOICE_CONTROLS_TOGGLE_BUTTON] = size;
-const size1 = { x: "Array", y: "s", width: "channelId", height: "e", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: 422417, isInitialized: 8060928, isVisible: 1359020032 };
+const size1 = { x: "Array", y: "s", width: "channel_id", height: "space", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: "<string:3951369912>", isInitialized: "<string:1070512209>", isVisible: "BADGE_DIRECTORY_NUX_POPOVER" };
 const CAMERA_PREVIEW_PICTURE_IN_PICTURE = VoiceCallOverlayType.CAMERA_PREVIEW_PICTURE_IN_PICTURE;
 obj[CAMERA_PREVIEW_PICTURE_IN_PICTURE] = size1;
 let c10 = true;

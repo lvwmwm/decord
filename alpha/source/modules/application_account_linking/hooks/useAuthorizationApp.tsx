@@ -1,10 +1,10 @@
-// Module ID: 7921
-// Function ID: 7922
+// Module ID: 7931
+// Function ID: 7932
 // Name: useAuthorizationApp
-// Dependencies: [19, 2165, 2143, 1365, 2119, 7259, 2]
+// Dependencies: [19, 2165, 2143, 1365, 2119, 7269, 2]
 // Exports: getAuthorizationApp, useAuthorizationApp
 
-// Module 7921 (useAuthorizationApp)
+// Module 7931 (useAuthorizationApp)
 import ApplicationConstants from "ApplicationConstants" /* 1365 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;

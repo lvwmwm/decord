@@ -1,15 +1,15 @@
-// Module ID: 17333
-// Function ID: 17334
+// Module ID: 17370
+// Function ID: 17371
 // Name: RestrictedUserRowLabel
-// Dependencies: [19, 17, 21, 5892, 575, 1113, 5919, 2]
+// Dependencies: [19, 17, 21, 5896, 575, 1113, 5923, 2]
 // Exports: RestrictedUserRowLabel
 
-// Module 17333 (RestrictedUserRowLabel)
+// Module 17370 (RestrictedUserRowLabel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import useToken from "useToken" /* 5892 */;
-import Text_Text from "Text/Text" /* 5919 */;
+import useToken from "useToken" /* 5896 */;
+import Text_Text from "Text/Text" /* 5923 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

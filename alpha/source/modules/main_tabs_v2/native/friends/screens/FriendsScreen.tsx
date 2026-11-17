@@ -1,26 +1,26 @@
-// Module ID: 19593
-// Function ID: 19594
+// Module ID: 19638
+// Function ID: 19639
 // Name: FriendsScreen
-// Dependencies: [19, 17, 8765, 5248, 21, 5306, 575, 1502, 7918, 7937, 1630, 504, 19594, 2020, 8476, 19595, 19598, 19274, 6021, 1113, 7443, 11788, 17717, 5926, 11781, 14204, 2]
+// Dependencies: [19, 17, 8776, 5252, 21, 5310, 575, 1502, 7928, 7947, 1630, 504, 19639, 2020, 8487, 19640, 19643, 19319, 6025, 1113, 7453, 10712, 17755, 5930, 10267, 11110, 2]
 // Exports: default
 
-// Module 19593 (FriendsScreen)
+// Module 19638 (FriendsScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 2020 */;
-import components_Button_Button from "components/Button/Button" /* 5926 */;
-import SendMessageIcon from "SendMessageIcon" /* 6021 */;
-import TableRow2 from "TableRow" /* 7443 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;
-import NoResultsDefault from "NoResults" /* 11788 */;
-import WumpusCouchSpotIllustration from "WumpusCouchSpotIllustration" /* 17717 */;
-import AssetRegistryDefault from "AssetRegistry" /* 19274 */;
+import components_Button_Button from "components/Button/Button" /* 5930 */;
+import SendMessageIcon from "SendMessageIcon" /* 6025 */;
+import TableRow2 from "TableRow" /* 7453 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8487 */;
+import NoResultsDefault from "NoResults" /* 10712 */;
+import WumpusCouchSpotIllustration from "WumpusCouchSpotIllustration" /* 17755 */;
+import AssetRegistryDefault from "AssetRegistry" /* 19319 */;
 import react from "react" /* 19 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 8765 */;
-import RelationshipStore from "RelationshipStore" /* 5248 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 8776 */;
+import RelationshipStore from "RelationshipStore" /* 5252 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

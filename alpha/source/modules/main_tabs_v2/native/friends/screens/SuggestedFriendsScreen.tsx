@@ -1,18 +1,18 @@
-// Module ID: 19616
-// Function ID: 19617
+// Module ID: 19661
+// Function ID: 19662
 // Name: SuggestedFriendsScreen
-// Dependencies: [19, 17, 1072, 21, 5306, 575, 7918, 7937, 1256, 18767, 19605, 8476, 19609, 10271, 10577, 11788, 1113, 2]
+// Dependencies: [19, 17, 1072, 21, 5310, 575, 7928, 7947, 1256, 18808, 19650, 8487, 19654, 10279, 10276, 10712, 1113, 2]
 // Exports: default
 
-// Module 19616 (SuggestedFriendsScreen)
+// Module 19661 (SuggestedFriendsScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;
-import ContactSuggestionRow2 from "ContactSuggestionRow" /* 19609 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8487 */;
+import ContactSuggestionRow2 from "ContactSuggestionRow" /* 19654 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

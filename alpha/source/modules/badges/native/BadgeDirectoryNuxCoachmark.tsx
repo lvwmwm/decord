@@ -1,20 +1,20 @@
-// Module ID: 15788
-// Function ID: 15789
+// Module ID: 15822
+// Function ID: 15823
 // Name: BadgeDirectoryNuxCoachmark
-// Dependencies: [19, 17, 5152, 21, 5306, 575, 15277, 15789, 15790, 15791, 15786, 15792, 15796, 15800, 1113, 15273, 9567, 2]
+// Dependencies: [19, 17, 5156, 21, 5310, 575, 15311, 15823, 15824, 15825, 15820, 15826, 15830, 15834, 1113, 15307, 9579, 2]
 // Exports: default
 
-// Module 15788 (BadgeDirectoryNuxCoachmark)
+// Module 15822 (BadgeDirectoryNuxCoachmark)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
-import BadgeArtImageDefault from "BadgeArtImage" /* 15277 */;
-import _modDef15789 from "module_15789" /* 15789 */;
-import _modDef15790 from "module_15790" /* 15790 */;
-import _modDef15791 from "module_15791" /* 15791 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5156 */;
+import BadgeArtImageDefault from "BadgeArtImage" /* 15311 */;
+import _modDef15823 from "module_15823" /* 15823 */;
+import _modDef15824 from "module_15824" /* 15824 */;
+import _modDef15825 from "module_15825" /* 15825 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -30,14 +30,14 @@ function NoProgressGraphic() {
   const obj = { style: items, children: items1 };
   items = [, ];
   ({ graphicRow: arr[0], badgeGraphicRow: arr[1] } = closure_9());
-  const obj2 = { url: _modDef15789, height: 44 };
+  const obj2 = { url: _modDef15823, height: 44 };
   closure_9();
   const tmp2 = BadgeArtImageDefault;
   items1 = [metroRequire(tmp2, obj2), , ];
-  const obj3 = { url: _modDef15790, height: 72 };
+  const obj3 = { url: _modDef15824, height: 72 };
   const tmp3 = BadgeArtImageDefault;
   items1[1] = metroRequire(tmp3, obj3);
-  const obj4 = { url: _modDef15791, height: 44 };
+  const obj4 = { url: _modDef15825, height: 44 };
   const tmp4 = BadgeArtImageDefault;
   items1[2] = metroRequire(tmp4, obj4);
   return metroImportDefault(View, obj);

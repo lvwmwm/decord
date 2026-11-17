@@ -1,14 +1,14 @@
-// Module ID: 13753
-// Function ID: 13754
+// Module ID: 14803
+// Function ID: 14804
 // Name: conjurePublishRatings
-// Dependencies: [32, 19, 4131, 1113, 510, 7383, 2]
+// Dependencies: [32, 19, 4133, 1113, 510, 7393, 2]
 // Exports: conjurePublishRatingLabel, conjurePublishRatingOptionLabel, conjurePublishRatingThanks, submitConjurePublishRatingFeedback, useConjurePublishRating, useConjureRatingFeedback
 
-// Module 13753 (conjurePublishRatings)
+// Module 14803 (conjurePublishRatings)
 import Storage4 from "Storage" /* 510 */;
 import intl4 from "intl" /* 1113 */;
-import _modDef4131 from "module_4131" /* 4131 */;
-import ConjureAnalytics from "ConjureAnalytics" /* 7383 */;
+import _modDef4133 from "module_4133" /* 4133 */;
+import ConjureAnalytics from "ConjureAnalytics" /* 7393 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -136,8 +136,8 @@ function submitConjurePublishRating(rating) {
 }
 const conjurePublishRatings = "conjurePublishRatings";
 const conjurePublishRatingViews = "conjurePublishRatingViews";
-let obj = { 1: null, 2: _modDef4131.GhbsGA, 3: _modDef4131.cm0nwU, 4: _modDef4131.kGvlh2, 5: _modDef4131.dVBSUg };
-obj[5] = _modDef4131.DKlgF7;
+let obj = { 1: null, 2: _modDef4133.GhbsGA, 3: _modDef4133.cm0nwU, 4: _modDef4133.kGvlh2, 5: _modDef4133.dVBSUg };
+obj[5] = _modDef4133.DKlgF7;
 let set = new Set();
 let closure_9 = 0;
 let result = size.fileFinishedImporting("modules/conjure/publish/conjurePublishRatings.tsx");
@@ -152,7 +152,7 @@ export function conjurePublishRatingOptionLabel(rating) {
   const intl = intl4.intl;
   const formatToPlainString = intl.formatToPlainString;
   obj = { rating, label: intl2.string(obj[rating]) };
-  const NU7Dex = _modDef4131.NU7Dex;
+  const NU7Dex = _modDef4133.NU7Dex;
   intl2 = intl4.intl;
   return formatToPlainString(NU7Dex, obj);
 }
@@ -160,13 +160,13 @@ export function conjurePublishRatingThanks(rating) {
   let stringResult;
   if (rating <= 2) {
     const intl3 = intl4.intl;
-    stringResult = intl3.string(_modDef4131["nIc9/M"]);
+    stringResult = intl3.string(_modDef4133["nIc9/M"]);
   } else if (3 === rating) {
     const intl2 = intl4.intl;
-    stringResult = intl2.string(_modDef4131.ausj8U);
+    stringResult = intl2.string(_modDef4133.ausj8U);
   } else {
     const intl = intl4.intl;
-    stringResult = intl.string(_modDef4131.HilSjw);
+    stringResult = intl.string(_modDef4133.HilSjw);
   }
   return stringResult;
 }

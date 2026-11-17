@@ -1,12 +1,12 @@
-// Module ID: 16930
-// Function ID: 16931
+// Module ID: 16965
+// Function ID: 16966
 // Name: getCurrentEmbeddedActivityChannel
-// Dependencies: [5154, 5155, 2]
+// Dependencies: [5158, 5159, 2]
 // Exports: default
 
-// Module 16930 (getCurrentEmbeddedActivityChannel)
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
+// Module 16965 (getCurrentEmbeddedActivityChannel)
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5158 */;
+import ChannelStore from "ChannelStore" /* 5159 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/rpc/helpers/getCurrentEmbeddedActivityChannel.tsx");

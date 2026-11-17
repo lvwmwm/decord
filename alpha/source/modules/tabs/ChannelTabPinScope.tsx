@@ -1,10 +1,10 @@
-// Module ID: 10277
-// Function ID: 10278
+// Module ID: 10703
+// Function ID: 10704
 // Name: ChannelTabPinScope
 // Dependencies: [2]
 // Exports: isSameTabLocation, wouldNavigationLeavePinnedTab
 
-// Module 10277 (ChannelTabPinScope)
+// Module 10703 (ChannelTabPinScope)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/tabs/ChannelTabPinScope.tsx");

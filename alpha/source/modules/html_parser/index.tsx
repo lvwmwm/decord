@@ -1,14 +1,14 @@
-// Module ID: 10350
-// Function ID: 10351
+// Module ID: 10460
+// Function ID: 10461
 // Name: DEFAULT_MAX_HTML_LENGTH
-// Dependencies: [10351, 10352, 10376, 10377, 2]
+// Dependencies: [10461, 10462, 10486, 10487, 2]
 // Exports: parseHTMLFromText
 
-// Module 10350 (DEFAULT_MAX_HTML_LENGTH)
-import _mod10352 from "module_10352" /* 10352 */;
-import HTMLParserRunUtils from "HTMLParserRunUtils" /* 10376 */;
-import HTMLParserLinkUtils from "HTMLParserLinkUtils" /* 10377 */;
-import HTMLParserConstants from "HTMLParserConstants" /* 10351 */;
+// Module 10460 (DEFAULT_MAX_HTML_LENGTH)
+import _mod10462 from "module_10462" /* 10462 */;
+import HTMLParserRunUtils from "HTMLParserRunUtils" /* 10486 */;
+import HTMLParserLinkUtils from "HTMLParserLinkUtils" /* 10487 */;
+import HTMLParserConstants from "HTMLParserConstants" /* 10461 */;
 import size from "module_2" /* 2 */;
 
 let c1, constants, map, regex;
@@ -355,7 +355,7 @@ function parseMarkupRuns(markup, keepInvalidAnchors) {
     keepInvalidAnchors = keepInvalidAnchors.keepInvalidAnchors;
   }
   const tmp2 = obj;
-  const Parser = obj(10352).Parser;
+  const Parser = obj(10462).Parser;
   class tmp4 extends Parser {
     onclosetag(arg0, arg1) {
       const markup = obj.markup;
@@ -523,7 +523,7 @@ function parseMarkupRuns(markup, keepInvalidAnchors) {
                     };
                     const self5 = this;
                     const self6 = this;
-                    const parser = new _mod10352.Parser(obj, { decodeEntities: true, recognizeSelfClosing: true });
+                    const parser = new _mod10462.Parser(obj, { decodeEntities: true, recognizeSelfClosing: true });
                     parser.end(markup);
                     map1 = map;
                   } else {
@@ -640,7 +640,7 @@ function parseMarkupRuns(markup, keepInvalidAnchors) {
     };
     let self = this;
     let self2 = this;
-    let parser = new tmp2(10352).Parser(obj3, { decodeEntities: true });
+    let parser = new tmp2(10462).Parser(obj3, { decodeEntities: true });
     let str2 = "&lt;";
     parser.end(str.replace(/</g, "&lt;"));
   }

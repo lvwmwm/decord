@@ -1,12 +1,12 @@
-// Module ID: 13147
-// Function ID: 13148
+// Module ID: 14390
+// Function ID: 14391
 // Name: conjurePublishBlockedReason
-// Dependencies: [1113, 4131, 2]
+// Dependencies: [1113, 4133, 2]
 // Exports: getConjurePublishBlockedCopy
 
-// Module 13147 (conjurePublishBlockedReason)
+// Module 14390 (conjurePublishBlockedReason)
 import intl13 from "intl" /* 1113 */;
-import _modDef4131 from "module_4131" /* 4131 */;
+import _modDef4133 from "module_4133" /* 4133 */;
 import size from "module_2" /* 2 */;
 
 const ConjurePublishBlockedReason = { PUBLISH_APPROVAL_REQUIRED: "publish-approval-required", NO_PREVIEW: "no-preview", MISSING_MANAGE_SERVER: "missing-manage-server", MISSING_MANAGE_CHANNELS: "missing-manage-channels" };
@@ -30,14 +30,14 @@ export function getConjurePublishBlockedCopy(reason, message) {
   let str;
   let tmp4;
   if (obj.PUBLISH_APPROVAL_REQUIRED === reason) {
-    const obj2 = { title: intl9.string(_modDef4131["5qiUbF"]), body: intl10.string(_modDef4131["8kdvyn"]), action: intl11.string(_modDef4131.z25acw), cancel: intl12.string(intl13.t["ETE/oC"]) };
+    const obj2 = { title: intl9.string(_modDef4133["5qiUbF"]), body: intl10.string(_modDef4133["8kdvyn"]), action: intl11.string(_modDef4133.z25acw), cancel: intl12.string(intl13.t["ETE/oC"]) };
     intl9 = intl13.intl;
     intl10 = intl13.intl;
     intl11 = intl13.intl;
     intl12 = intl13.intl;
     return obj2;
   } else if (obj.NO_PREVIEW === reason) {
-    const obj3 = { title: intl6.string(_modDef4131.ZNGLFE), body: intl7.string(_modDef4131.ffxKGK), action: intl8.string(_modDef4131["/omTNx"]) };
+    const obj3 = { title: intl6.string(_modDef4133.ZNGLFE), body: intl7.string(_modDef4133.ffxKGK), action: intl8.string(_modDef4133["/omTNx"]) };
     intl6 = intl13.intl;
     intl7 = intl13.intl;
     intl8 = intl13.intl;
@@ -45,7 +45,7 @@ export function getConjurePublishBlockedCopy(reason, message) {
   } else {
     let str2 = message;
     if (obj.MISSING_MANAGE_SERVER === reason) {
-      const obj4 = { title: intl4.string(_modDef4131.qpffbI), body: str2, action: intl5.string(intl13.t.BddRzS) };
+      const obj4 = { title: intl4.string(_modDef4133.qpffbI), body: str2, action: intl5.string(intl13.t.BddRzS) };
       intl4 = intl13.intl;
       if (str2 == null) {
         str2 = "";
@@ -53,7 +53,7 @@ export function getConjurePublishBlockedCopy(reason, message) {
       intl5 = tmp6(1113).intl;
       return obj4;
     } else if (obj.MISSING_MANAGE_CHANNELS === reason) {
-      obj = { title: intl.string(_modDef4131.qpffbI), body: str, action: intl2.string(tmp4(4131).dVtQRH), cancel: intl3.string(intl13.t["ETE/oC"]) };
+      obj = { title: intl.string(_modDef4133.qpffbI), body: str, action: intl2.string(tmp4(4133).dVtQRH), cancel: intl3.string(intl13.t["ETE/oC"]) };
       intl = intl13.intl;
       str = str2;
       tmp4 = importDefault;

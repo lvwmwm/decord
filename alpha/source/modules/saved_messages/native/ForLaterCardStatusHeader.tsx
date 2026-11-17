@@ -1,15 +1,15 @@
-// Module ID: 11931
-// Function ID: 11932
+// Module ID: 12382
+// Function ID: 12383
 // Name: ForLaterCardStatusHeader
-// Dependencies: [17, 21, 5306, 575, 5919, 2]
+// Dependencies: [17, 21, 5310, 575, 5923, 2]
 // Exports: ForLaterCardStatusHeader
 
-// Module 11931 (ForLaterCardStatusHeader)
+// Module 12382 (ForLaterCardStatusHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5919 */;
+import Text_Text from "Text/Text" /* 5923 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

@@ -1,10 +1,10 @@
-// Module ID: 10958
-// Function ID: 10959
+// Module ID: 11185
+// Function ID: 11186
 // Name: getTrialCtaOverride
 // Dependencies: [2174, 2]
 // Exports: getTrialCtaOverride
 
-// Module 10958 (getTrialCtaOverride)
+// Module 11185 (getTrialCtaOverride)
 import PremiumUtils from "PremiumUtils" /* 2174 */;
 import size from "module_2" /* 2 */;
 

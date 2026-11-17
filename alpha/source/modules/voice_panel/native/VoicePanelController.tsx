@@ -1,34 +1,34 @@
-// Module ID: 19958
-// Function ID: 19959
+// Module ID: 20004
+// Function ID: 20005
 // Name: VoicePanelController
-// Dependencies: [32, 19, 17, 5307, 5154, 7016, 10192, 12904, 12719, 5155, 2133, 6061, 5209, 6891, 11985, 11983, 1072, 5949, 5973, 11986, 21, 19959, 1655, 11333, 1708, 1089, 504, 6005, 1113, 10604, 15767, 19960, 6215, 12741, 19961, 1496, 1630, 19965, 11993, 19966, 11987, 11989, 12, 1269, 1108, 1263, 12013, 13810, 6762, 1256, 11951, 2146, 10041, 7025, 19924, 5367, 19968, 6056, 5491, 6057, 7587, 19969, 19970, 14573, 5227, 19971, 19972, 19977, 19978, 19926, 11995, 11984, 5508, 2]
+// Dependencies: [32, 19, 17, 5311, 5158, 7024, 10637, 11518, 11325, 5159, 2133, 6068, 5213, 6899, 12428, 12426, 1072, 5953, 5977, 12429, 21, 20005, 1655, 11334, 1708, 1089, 504, 6009, 1113, 10304, 15801, 20006, 6223, 11349, 20007, 1496, 1630, 20011, 12435, 20012, 12430, 12432, 12, 1269, 1108, 1263, 11494, 13523, 6770, 1256, 11533, 2146, 10054, 7033, 19969, 5371, 20014, 6063, 5495, 6064, 7597, 20015, 20016, 13448, 5231, 20017, 20018, 20023, 20024, 19971, 12437, 12427, 5512, 2]
 // Exports: default
 
-// Module 19958 (VoicePanelController)
+// Module 20004 (VoicePanelController)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 5227 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5949 */;
-import CallConstants from "CallConstants" /* 5973 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 11986 */;
-import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 11995 */;
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 12741 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 5231 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5953 */;
+import CallConstants from "CallConstants" /* 5977 */;
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 11349 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 12429 */;
+import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 12437 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 7016 */;
-import AppFreezeStore from "AppFreezeStore" /* 10192 */;
-import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 12904 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 12719 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
+import AccessibilityStore from "AccessibilityStore" /* 5311 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5158 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 7024 */;
+import AppFreezeStore from "AppFreezeStore" /* 10637 */;
+import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 11518 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11325 */;
+import ChannelStore from "ChannelStore" /* 5159 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
-import VoicePanelStore from "VoicePanelStore" /* 6891 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11985 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11983 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6068 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5213 */;
+import VoicePanelStore from "VoicePanelStore" /* 6899 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 12428 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 12426 */;
 import Constants from "Constants" /* 1072 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -1768,7 +1768,7 @@ export default function VoicePanelController(channelId) {
     dockPTTMeasureHostRef = obj2.useRef(null);
     const obj14 = {
       value: tmp5(obj2.useState(() => {
-          const obj = { channelId, channelType: type, committedMode: closure_24.committedMode, connected: sharedValue, contentDimensions: sharedValue11, controlsSpecs, dismissPanel, dismissToPIPGestureRef, dockContentSwap: closure_24.dockContentSwap, dockRestWidth: closure_24.dockRestWidth, dockSheetWidth: closure_24.dockSheetWidth, dockTouched: closure_24.dockTouched, isDockInLayout: closure_24.isDockInLayout, isDockSlotEmpty: closure_24.isDockSlotEmpty, dockEntryProgress: closure_24.dockEntryProgress, dockHeight: closure_24.dockHeight, dockJoinMorphOrigin: closure_24.dockJoinMorphOrigin, dockMinimizeProgress: closure_24.dockMinimizeProgress, dockPressProgress: closure_24.dockPressProgress, dockPressed: closure_24.dockPressed, dockPTTPortalHostName, dockPTTMeasureHostRef, dragScrolling: sharedValue5, focused: sharedValue6, generateStateLocker: callback3, guildId, handleDockSheetLayout: closure_24.handleDockSheetLayout, hideControls: callback4, isCall: flag, isDockConnected: closure_24.isDockConnected, isDockEnabled: first2, isDockExpanding: closure_24.isDockExpanding, isFocusedVideoZoomed: sharedValue8, layoutManager: first5, mode: sharedValue1, morphablePanelMode: derivedValue, mountedCards: first1, pipAvoidanceSpecs, preJoinContentSize: sharedValue7, refreshIdleTimeout: callback6, safeArea: sharedValue21, scrollPosition: sharedValue4, setControlsMode, setFocused: callback8, setIsFocusedVideoZoomed, setMode: callback7, setShowFloatingCTA: callback13, sheetExitProgress: closure_24.sheetExitProgress, showControls: callback5, showFloatingCTA: sharedValue13, streamOutputSinkStack, usePIPState: VoicePanelPIPStateContext.usePIPState, useReducedMotion: sharedValue9, windowDimensions: sharedValue2, wrapperDimensions: sharedValue3, wrapperOffset: sharedValue10, pipHandoff: first4 };
+          const obj = { channelId, channelType: type, committedMode: closure_24.committedMode, connected: sharedValue, contentDimensions: sharedValue11, controlsSpecs, dismissPanel, dismissToPIPGestureRef, dockContentSwap: closure_24.dockContentSwap, dockRestLeft: closure_24.dockRestLeft, dockRestWidth: closure_24.dockRestWidth, dockSlotWidth: closure_24.dockSlotWidth, dockSheetWidth: closure_24.dockSheetWidth, dockSheetLeft: closure_24.dockSheetLeft, dockTouched: closure_24.dockTouched, isDockInLayout: closure_24.isDockInLayout, isDockSlotEmpty: closure_24.isDockSlotEmpty, dockEntryProgress: closure_24.dockEntryProgress, dockHeight: closure_24.dockHeight, dockJoinMorphOrigin: closure_24.dockJoinMorphOrigin, dockMinimizeProgress: closure_24.dockMinimizeProgress, dockPressProgress: closure_24.dockPressProgress, dockPressed: closure_24.dockPressed, dockPTTPortalHostName, dockPTTMeasureHostRef, dragScrolling: sharedValue5, focused: sharedValue6, generateStateLocker: callback3, guildId, handleDockSheetLayout: closure_24.handleDockSheetLayout, hideControls: callback4, isCall: flag, isDockConnected: closure_24.isDockConnected, isDockEnabled: first2, isDockExpanding: closure_24.isDockExpanding, isFocusedVideoZoomed: sharedValue8, layoutManager: first5, mode: sharedValue1, morphablePanelMode: derivedValue, mountedCards: first1, pipAvoidanceSpecs, preJoinContentSize: sharedValue7, refreshIdleTimeout: callback6, safeArea: sharedValue21, scrollPosition: sharedValue4, setControlsMode, setFocused: callback8, setIsFocusedVideoZoomed, setMode: callback7, setShowFloatingCTA: callback13, sheetExitProgress: closure_24.sheetExitProgress, showControls: callback5, showFloatingCTA: sharedValue13, streamOutputSinkStack, usePIPState: VoicePanelPIPStateContext.usePIPState, useReducedMotion: sharedValue9, windowDimensions: sharedValue2, wrapperDimensions: sharedValue3, wrapperOffset: sharedValue10, pipHandoff: first4 };
           return obj;
         }), 1)[0],
       children: callback6(Provider2, obj16)

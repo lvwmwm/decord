@@ -1,123 +1,150 @@
 // Module ID: 9833
 // Function ID: 9834
-// Dependencies: [9803, 9834, 9824, 9802, 9810, 9812, 9829]
-// Exports: freezeDscOnSpan, getDynamicSamplingContextFromClient, getDynamicSamplingContextFromScope, spanToBaggageHeader
+// Dependencies: [9809, 9810, 9834, 9824, 9821, 9816]
+// Exports: closeSession, makeSession
 
 // Module 9833
-import _mod9802 from "module_9802" /* 9802 */;
-import _mod9803 from "module_9803" /* 9803 */;
-import _mod9810 from "module_9810" /* 9810 */;
-import SEMANTIC_ATTRIBUTE_CACHE_HIT from "SEMANTIC_ATTRIBUTE_CACHE_HIT" /* 9812 */;
-import _mod9824 from "module_9824" /* 9824 */;
-import _mod9829 from "module_9829" /* 9829 */;
+import _mod9816 from "module_9816" /* 9816 */;
+import _mod9821 from "module_9821" /* 9821 */;
+import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 9824 */;
+import _mod9834 from "module_9834" /* 9834 */;
+import DEBUG_BUILD from "module_9809" /* 9809 */;
+import CONSOLE_LEVELS from "module_9810" /* 9810 */;
 
-let tmp3;
-const _mod9834 = tmp3(9834);
-function getDynamicSamplingContextFromSpan(spanContext) {
-  const obj = _mod9824;
-  const client = obj.getClient();
-  if (client) {
-    const tmpResult = _mod9802;
-    const rootSpan = tmpResult.getRootSpan(spanContext);
-    if (rootSpan[_frozenDsc]) {
-      return rootSpan[_frozenDsc];
+function updateSession(ipAddress) {
+  let obj = arg1;
+  if (arg1 === undefined) {
+    obj = {};
+  }
+  if (obj.user) {
+    const tmp = !ipAddress.ipAddress && obj.user.ip_address;
+    if (tmp) {
+      ipAddress.ipAddress = obj.user.ip_address;
+    }
+    const tmp2 = ipAddress.did || obj.did;
+    if (!tmp2) {
+      ipAddress.did = obj.user.id || obj.user.email || obj.user.username;
+    }
+  }
+  let timestamp = obj.timestamp;
+  if (!timestamp) {
+    const obj2 = _browserPerformanceTimeOriginMode;
+    timestamp = obj2.timestampInSeconds();
+  }
+  ipAddress.timestamp = timestamp;
+  if (obj.abnormal_mechanism) {
+    ipAddress.abnormal_mechanism = obj.abnormal_mechanism;
+  }
+  if (obj.ignoreDuration) {
+    ipAddress.ignoreDuration = obj.ignoreDuration;
+  }
+  if (obj.sid) {
+    let sid;
+    if (32 === obj.sid.length) {
+      sid = obj.sid;
     } else {
-      const traceState = rootSpan.spanContext().traceState;
-      const value = traceState && traceState.get("sentry.dsc");
-      let result = value;
-      if (result) {
-        const tmpResult6 = _mod9810;
-        result = tmpResult6.baggageHeaderToDynamicSamplingContext(value);
-      }
-      if (result) {
-        return result;
-      } else {
-        const traceId = spanContext.spanContext().traceId;
-        const options = client.getOptions();
-        const publicKey = (client.getDsn() || {}).publicKey;
-        client.getDsn() || {};
-        let DEFAULT_ENVIRONMENT = options.environment;
-        const dropUndefinedKeys = _mod9803.dropUndefinedKeys;
-        _mod9803;
-        if (!DEFAULT_ENVIRONMENT) {
-          DEFAULT_ENVIRONMENT = tmp(9834).DEFAULT_ENVIRONMENT;
-        }
-        const obj2 = { environment: DEFAULT_ENVIRONMENT, release: options.release, public_key: publicKey, trace_id: traceId };
-        const dropUndefinedKeysResult = dropUndefinedKeys(obj2);
-        client.emit("createDsc", dropUndefinedKeysResult);
-        const tmpResult8 = _mod9802;
-        const spanToJSONResult = tmpResult8.spanToJSON(rootSpan);
-        const tmp14 = spanToJSONResult.data || {};
-        const tmp15 = tmp14[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_SAMPLE_RATE];
-        if (null != tmp15) {
-          const _HermesInternal = HermesInternal;
-          dropUndefinedKeysResult.sample_rate = "" + tmp15;
-        }
-        const description = spanToJSONResult.description;
-        const tmp18 = "url" !== tmp14[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_SOURCE] && description;
-        if (tmp18) {
-          dropUndefinedKeysResult.transaction = description;
-        }
-        const tmpResult9 = _mod9829;
-        if (tmpResult9.hasTracingEnabled()) {
-          const _String = String;
-          const tmpResult10 = _mod9802;
-          dropUndefinedKeysResult.sampled = String(tmpResult10.spanIsSampled(rootSpan));
-        }
-        client.emit("createDsc", dropUndefinedKeysResult, rootSpan);
-        return dropUndefinedKeysResult;
-      }
+      const obj3 = _mod9821;
+      sid = obj3.uuid4();
     }
+    ipAddress.sid = sid;
+  }
+  if (undefined !== obj.init) {
+    ipAddress.init = obj.init;
+  }
+  const tmp7 = !ipAddress.did && obj.did;
+  if (tmp7) {
+    const _HermesInternal = HermesInternal;
+    ipAddress.did = "" + obj.did;
+  }
+  if (typeof obj.started === "number") {
+    ipAddress.started = obj.started;
+  }
+  if (ipAddress.ignoreDuration) {
+    ipAddress.duration = undefined;
+  } else if (typeof obj.duration === "number") {
+    ipAddress.duration = obj.duration;
   } else {
-    return {};
-  }
-}
-const _frozenDsc = "_frozenDsc";
-
-export function freezeDscOnSpan(arg0, arg1) {
-  const obj = _mod9803;
-  const result = obj.addNonEnumerableProperty(arg0, _frozenDsc, arg1);
-}
-export function getDynamicSamplingContextFromClient(trace_id, getOptions) {
-  const options = getOptions.getOptions();
-  const publicKey = (getOptions.getDsn() || {}).publicKey;
-  getOptions.getDsn() || {};
-  let DEFAULT_ENVIRONMENT = options.environment;
-  const dropUndefinedKeys = _mod9803.dropUndefinedKeys;
-  _mod9803;
-  if (!DEFAULT_ENVIRONMENT) {
-    DEFAULT_ENVIRONMENT = _mod9834.DEFAULT_ENVIRONMENT;
-  }
-  const obj = { environment: DEFAULT_ENVIRONMENT, release: options.release, public_key: publicKey, trace_id };
-  const dropUndefinedKeysResult = dropUndefinedKeys(obj);
-  getOptions.emit("createDsc", dropUndefinedKeysResult);
-  return dropUndefinedKeysResult;
-}
-export function getDynamicSamplingContextFromScope(getOptions, getPropagationContext) {
-  const propagationContext = getPropagationContext.getPropagationContext();
-  let dsc = propagationContext.dsc;
-  if (!dsc) {
-    const traceId = propagationContext.traceId;
-    const options = getOptions.getOptions();
-    const publicKey = (getOptions.getDsn() || {}).publicKey;
-    getOptions.getDsn() || {};
-    let DEFAULT_ENVIRONMENT = options.environment;
-    const dropUndefinedKeys = _mod9803.dropUndefinedKeys;
-    _mod9803;
-    const tmp5 = require;
-    if (!DEFAULT_ENVIRONMENT) {
-      DEFAULT_ENVIRONMENT = tmp5(9834).DEFAULT_ENVIRONMENT;
+    const diff = ipAddress.timestamp - ipAddress.started;
+    let num2 = 0;
+    if (diff >= 0) {
+      num2 = diff;
     }
-    const obj = { environment: DEFAULT_ENVIRONMENT, release: options.release, public_key: publicKey, trace_id: traceId };
-    const dropUndefinedKeysResult = dropUndefinedKeys(obj);
-    getOptions.emit("createDsc", dropUndefinedKeysResult);
-    dsc = dropUndefinedKeysResult;
+    ipAddress.duration = num2;
   }
-  return dsc;
+  if (obj.release) {
+    ipAddress.release = obj.release;
+  }
+  if (obj.environment) {
+    ipAddress.environment = obj.environment;
+  }
+  const tmp9 = !ipAddress.ipAddress && obj.ipAddress;
+  if (tmp9) {
+    ipAddress.ipAddress = obj.ipAddress;
+  }
+  const tmp10 = !ipAddress.userAgent && obj.userAgent;
+  if (tmp10) {
+    ipAddress.userAgent = obj.userAgent;
+  }
+  if (typeof obj.errors === "number") {
+    ipAddress.errors = obj.errors;
+  }
+  if (obj.status) {
+    ipAddress.status = obj.status;
+  }
 }
-export { getDynamicSamplingContextFromSpan };
-export function spanToBaggageHeader(arg0) {
-  const tmp = getDynamicSamplingContextFromSpan(arg0);
-  const obj = _mod9810;
-  return obj.dynamicSamplingContextToSentryBaggageHeader(tmp);
+_mod9834;
+
+export function closeSession(status, status2) {
+  let obj;
+  const tmp = status2;
+  if (tmp) {
+    obj = { status: status2 };
+    const obj2 = { status: status2 };
+  } else {
+    obj = {};
+    if ("ok" === status.status) {
+      obj = { status: "exited" };
+    }
+  }
+  updateSession(status, obj);
 }
+export function makeSession(arg0) {
+  let obj2;
+  let obj3;
+  let obj = obj2(9824);
+  const timestampInSecondsResult = obj.timestampInSeconds();
+  obj2 = {
+    sid: obj3.uuid4(),
+    init: true,
+    timestamp: timestampInSecondsResult,
+    started: timestampInSecondsResult,
+    duration: 0,
+    status: "ok",
+    errors: 0,
+    ignoreDuration: false,
+    toJSON() {
+      let combined;
+      let date;
+      let date1;
+      const tmp2 = _mod9816;
+      const obj = { sid: "" + obj2.sid, init: obj2.init, started: date.toISOString(), timestamp: date1.toISOString(), status: null, errors: null, did: combined, duration: null, abnormal_mechanism: null, attrs: { release: obj2.release, environment: obj2.environment, ip_address: obj2.ipAddress, user_agent: obj2.userAgent } };
+      const dropUndefinedKeys = tmp2.dropUndefinedKeys;
+      date = new Date(1000 * obj2.started);
+      ({ status: obj.status, errors: obj.errors } = obj2);
+      date1 = new Date(1000 * obj2.timestamp);
+      if (typeof obj2.did === "number") {
+        const _HermesInternal = HermesInternal;
+        combined = "" + tmp.did;
+      }
+      ({ duration: obj.duration, abnormal_mechanism: obj.abnormal_mechanism } = obj2);
+      return dropUndefinedKeys(obj);
+    }
+  };
+  obj3 = obj2(9821);
+  if (arg0) {
+    let tmp2 = updateSession;
+    updateSession(obj2, arg0);
+  }
+  return obj2;
+}
+export { updateSession };

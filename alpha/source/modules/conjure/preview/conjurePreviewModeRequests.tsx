@@ -1,10 +1,10 @@
-// Module ID: 13137
-// Function ID: 13138
+// Module ID: 14380
+// Function ID: 14381
 // Name: conjurePreviewModeRequests
 // Dependencies: [19, 2]
 // Exports: requestConjurePreviewMode, useConjurePreviewModeRequests
 
-// Module 13137 (conjurePreviewModeRequests)
+// Module 14380 (conjurePreviewModeRequests)
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

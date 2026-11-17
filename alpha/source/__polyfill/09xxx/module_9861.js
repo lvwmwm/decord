@@ -1,83 +1,65 @@
 // Module ID: 9861
 // Function ID: 9862
-// Dependencies: [9821, 9854]
-// Exports: makePromiseBuffer
+// Dependencies: [9834, 9838, 9810, 9817]
+// Exports: notifyEventProcessors
 
 // Module 9861
-import _mod9821 from "module_9821" /* 9821 */;
+const require = globalThis.__r;
+let _require, closure_3, dependencyMap;
 
-let diff;
 
-
-export function makePromiseBuffer(arg0) {
-  let closure_0 = arg0;
-  const items = [];
-  let obj = {
-    $: items,
-    add(fn) {
-      let promise;
-      const tmp2 = undefined === promise || items.length < tmp;
-      if (tmp2) {
-        promise = fn();
-        const arr = items;
-        if (-1 === items.indexOf(promise)) {
-          arr.push(promise);
+export function notifyEventProcessors(arg0, arg1, arg2) {
+  let closure_0;
+  let closure_1;
+  let num;
+  const f99364 = function(fn, arg1) {
+    closure_0 = fn;
+    let tmp3 = closure_0[closure_3];
+    let tmp4 = closure_1;
+    if (null !== closure_1) {
+      if (typeof tmp3 === "function") {
+        let obj = {};
+        let tmp13 = obj;
+        let tmp14 = tmp4;
+        let merged = Object.assign(tmp4);
+        let tmp16 = closure_2;
+        let tmp3Result = tmp3(obj, closure_2);
+        let tmp17 = closure_0;
+        let tmp18 = closure_1;
+        let tmp5 = closure_0(closure_1[1]).DEBUG_BUILD && tmp3.id && null === tmp3Result;
+        if (tmp5) {
+          let logger = tmp17(tmp18[2]).logger;
+          let tmp6 = globalThis;
+          let _HermesInternal = HermesInternal;
+          let str = "\" dropped event";
+          let str2 = "Event processor \"";
+          let logResult = logger.log("Event processor \"" + tmp3.id + "\" dropped event");
         }
-        const nextPromise = promise.then(() => {
-          const first = items.splice(items.indexOf(promise), 1)[0] || Promise.resolve(undefined);
-          return first;
-        });
-        nextPromise.then(null, () => {
-          const first = items.splice(items.indexOf(promise), 1)[0] || Promise.resolve(undefined);
-          return first.then(null, () => {
-
-          });
-        });
-        return promise;
-      } else {
-        const self = this;
-        const self2 = this;
-        const rejectedSyncPromise = closure_0(items[0]).rejectedSyncPromise;
-        const sentryError = new closure_0(items[1]).SentryError("Not adding Promise because buffer limit was reached.");
-        return rejectedSyncPromise(sentryError);
-      }
-    },
-    drain(arg0) {
-      let length;
-      closure_0 = arg0;
-      const syncPromise = new closure_0(items[0]).SyncPromise((fn, arg1) => {
-        let closure_3;
-        closure_0 = fn;
-        let closure_1 = arg1;
-        const arr = length;
-        if (length.length) {
-          const tmp = globalThis;
-          const _setTimeout = setTimeout;
-          let tmp2 = closure_0;
-          const timeout = setTimeout(() => {
-            const tmp2 = closure_0 && tmp > 0;
-            if (tmp2) {
-              closure_0(false);
-            }
-          }, closure_0);
-          const item = arr.forEach((item) => {
-            const obj = _mod9821;
-            const resolvedSyncPromiseResult = obj.resolvedSyncPromise(item);
-            resolvedSyncPromiseResult.then(() => {
-              diff = diff - 1;
-              if (!diff) {
-                const _clearTimeout = clearTimeout;
-                clearTimeout(closure_1_3);
-                fn(true);
-              }
-            }, closure_1);
-          });
+        let tmp8 = arg1;
+        let tmp17Result = tmp17(tmp18[3]);
+        if (tmp17Result.isThenable(tmp3Result)) {
+          let nextPromise = tmp3Result.then(f130819);
+          let nextPromise1 = nextPromise.then(null, arg1);
         } else {
-          return fn(true);
+          let num = 1;
+          closure_0 = tmp;
+          closure_1 = tmp3Result;
+          closure_2 = tmp16;
+          closure_3 = tmp2 + 1;
+          let self = this;
+          let self2 = this;
+          let syncPromise = new tmp17(tmp18[0]).SyncPromise(f99364);
+          let tmp9 = syncPromise;
+          let nextPromise2 = syncPromise.then(fn);
+          let nextPromise3 = nextPromise2.then(null, arg1);
         }
-      });
-      return syncPromise;
+      }
     }
+    let tmp12 = fn(tmp4);
   };
-  return obj;
+  _require = arg0;
+  dependencyMap = arg1;
+  let closure_2 = arg2;
+  const syncPromise = new require("module_9834").SyncPromise(f99364);
+  return syncPromise;
 }

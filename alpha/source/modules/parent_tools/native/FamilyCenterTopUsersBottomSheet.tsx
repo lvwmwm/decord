@@ -1,23 +1,23 @@
-// Module ID: 17427
-// Function ID: 17428
+// Module ID: 17464
+// Function ID: 17465
 // Name: FamilyCenterTopUsersBottomSheet
-// Dependencies: [19, 1388, 21, 5306, 9619, 7443, 5362, 1187, 7951, 5919, 1113, 2701, 7746, 2]
+// Dependencies: [19, 1388, 21, 5310, 9631, 7453, 5366, 1187, 7961, 5923, 1113, 2703, 7756, 2]
 // Exports: default
 
-// Module 17427 (FamilyCenterTopUsersBottomSheet)
+// Module 17464 (FamilyCenterTopUsersBottomSheet)
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import _modDef2701 from "module_2701" /* 2701 */;
-import UserUtilsDefault from "UserUtils" /* 5362 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import TableRow2 from "TableRow" /* 7443 */;
-import TableRowGroup2 from "TableRowGroup" /* 7746 */;
-import ActionSheet2 from "ActionSheet" /* 7951 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 9619 */;
+import _modDef2703 from "module_2703" /* 2703 */;
+import UserUtilsDefault from "UserUtils" /* 5366 */;
+import Text_Text from "Text/Text" /* 5923 */;
+import TableRow2 from "TableRow" /* 7453 */;
+import TableRowGroup2 from "TableRowGroup" /* 7756 */;
+import ActionSheet2 from "ActionSheet" /* 7961 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 9631 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -52,7 +52,7 @@ export default function FamilyCenterTopUsersBottomSheet(topUserActivities) {
   let obj = { children: items };
   const tmp = closure_6();
   const ActionSheet = ActionSheet2.ActionSheet;
-  const obj2 = { variant: "body-md/semibold", style: tmp.header, children: intl.string(_modDef2701.BxbvS7) };
+  const obj2 = { variant: "body-md/semibold", style: tmp.header, children: intl.string(_modDef2703.BxbvS7) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   items = [React3(Text, obj2), ];

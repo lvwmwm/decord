@@ -1,14 +1,17 @@
 // Module ID: 16812
 // Function ID: 16813
-// Dependencies: [16791, 16790]
+// Dependencies: [16793, 16813]
 
 // Module 16812
-import _mod16790 from "module_16790" /* 16790 */;
-import _mod16791 from "module_16791" /* 16791 */;
+import _mod16793 from "module_16793" /* 16793 */;
 
-let tmp = Object.keys || (function keys(arg0) {
-  const tmp = _mod16791;
-  return tmp(arg0, _mod16790);
-});
+let tmp2;
+const _mod16813 = tmp2(16813);
 
-export default tmp;
+export default (arg0, arg1) => {
+  let tmp4;
+  if (!_mod16793(arg0[arg1])) {
+    tmp4 = _mod16813(tmp);
+  }
+  return tmp4;
+};

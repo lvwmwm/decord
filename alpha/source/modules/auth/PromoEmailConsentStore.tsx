@@ -1,10 +1,10 @@
-// Module ID: 6835
-// Function ID: 6836
+// Module ID: 6830
+// Function ID: 6831
 // Name: PromoEmailConsentStore
 // Dependencies: [560, 1263, 2]
 // Exports: setPromoEmailConsentChecked, setPromoEmailConsentState
 
-// Module 6835 (PromoEmailConsentStore)
+// Module 6830 (PromoEmailConsentStore)
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 

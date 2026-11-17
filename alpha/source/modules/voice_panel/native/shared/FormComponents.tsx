@@ -1,24 +1,24 @@
-// Module ID: 10594
-// Function ID: 10595
+// Module ID: 10294
+// Function ID: 10295
 // Name: FormComponents
-// Dependencies: [19, 6058, 21, 5306, 575, 7722, 7746, 10595, 1187, 7918, 10596, 10608, 8142, 6740, 10066, 8476, 504, 8468, 10650, 10652, 5919, 1113, 7443, 5926, 8136, 10653, 5362, 10654, 10815, 2]
+// Dependencies: [19, 6065, 21, 5310, 575, 7732, 7756, 10295, 1187, 7928, 10296, 10308, 8153, 6748, 10079, 8487, 504, 8479, 10359, 10361, 5923, 1113, 7453, 5930, 8147, 10362, 5366, 10363, 15120, 2]
 // Exports: MemberRowItem, VoicePanelFormSection
 
-// Module 10594 (FormComponents)
+// Module 10294 (FormComponents)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import NativeViewDefault from "NativeView" /* 7722 */;
-import TableRowGroup2 from "TableRowGroup" /* 7746 */;
-import CallActionCreatorsDefault from "CallActionCreators" /* 8136 */;
-import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 8468 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;
-import VoiceStateIcons from "VoiceStateIcons" /* 10595 */;
+import Text_Text from "Text/Text" /* 5923 */;
+import NativeViewDefault from "NativeView" /* 7732 */;
+import TableRowGroup2 from "TableRowGroup" /* 7756 */;
+import CallActionCreatorsDefault from "CallActionCreators" /* 8147 */;
+import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 8479 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8487 */;
+import VoiceStateIcons from "VoiceStateIcons" /* 10295 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 6058 */;
+import PresenceStore from "PresenceStore" /* 6065 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;

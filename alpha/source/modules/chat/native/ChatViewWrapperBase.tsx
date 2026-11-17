@@ -1,13 +1,13 @@
-// Module ID: 12022
-// Function ID: 12023
+// Module ID: 12458
+// Function ID: 12459
 // Name: ChatViewWrapperBase
-// Dependencies: [19, 21, 12020, 5906, 12021, 2]
+// Dependencies: [19, 21, 12456, 5910, 12457, 2]
 // Exports: default
 
-// Module 12022 (ChatViewWrapperBase)
+// Module 12458 (ChatViewWrapperBase)
 import Fragment from "Fragment" /* 21 */;
-import LayerScope2 from "LayerScope" /* 5906 */;
-import useChatViewPointerEventsDefault from "useChatViewPointerEvents" /* 12020 */;
+import LayerScope2 from "LayerScope" /* 5910 */;
+import useChatViewPointerEventsDefault from "useChatViewPointerEvents" /* 12456 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

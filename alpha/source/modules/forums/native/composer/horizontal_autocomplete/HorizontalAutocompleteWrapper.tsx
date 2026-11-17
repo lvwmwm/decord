@@ -1,10 +1,10 @@
-// Module ID: 11393
-// Function ID: 11394
+// Module ID: 12082
+// Function ID: 12083
 // Name: HorizontalAutocompleteWrapper
-// Dependencies: [19, 1072, 21, 11394, 11621, 11624, 1655, 5538, 7888, 2]
+// Dependencies: [19, 1072, 21, 12083, 12285, 12288, 1655, 5542, 7898, 2]
 // Exports: default
 
-// Module 11393 (HorizontalAutocompleteWrapper)
+// Module 12082 (HorizontalAutocompleteWrapper)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import react from "react" /* 19 */;

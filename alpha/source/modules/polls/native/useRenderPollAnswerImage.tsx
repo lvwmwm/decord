@@ -1,21 +1,21 @@
-// Module ID: 13554
-// Function ID: 13555
+// Module ID: 13707
+// Function ID: 13708
 // Name: useRenderPollAnswerImage
-// Dependencies: [32, 19, 17, 8725, 8872, 1391, 21, 504, 13546, 6010, 7894, 5255, 1414, 2]
+// Dependencies: [32, 19, 17, 8736, 8883, 1391, 21, 504, 13699, 6014, 7904, 5259, 1414, 2]
 // Exports: default
 
-// Module 13554 (useRenderPollAnswerImage)
+// Module 13707 (useRenderPollAnswerImage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import EmojiConstants from "EmojiConstants" /* 1391 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import EmojiTypes from "EmojiTypes" /* 5255 */;
-import FastImageDefault from "FastImage" /* 6010 */;
-import EmojiDefault from "Emoji" /* 7894 */;
-import DraftStore from "DraftStore" /* 8725 */;
+import EmojiTypes from "EmojiTypes" /* 5259 */;
+import FastImageDefault from "FastImage" /* 6014 */;
+import EmojiDefault from "Emoji" /* 7904 */;
+import DraftStore from "DraftStore" /* 8736 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8872 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8883 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -55,7 +55,7 @@ export default function useRenderPollAnswerImage(arg0, arg1, mediaAttachmentStat
       status = mediaAttachmentState.status;
     }
   }
-  const tmp8 = status === tmp(13546).PollMediaUploadAttachmentStatus.PREPARING;
+  const tmp8 = status === tmp(13699).PollMediaUploadAttachmentStatus.PREPARING;
   closure_7 = tmp8;
   let obj3 = {
     renderImage: obj2.useMemo(() => {

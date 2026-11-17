@@ -1,28 +1,28 @@
-// Module ID: 14538
-// Function ID: 14539
+// Module ID: 13409
+// Function ID: 13410
 // Name: TraitPicker
-// Dependencies: [19, 17, 6367, 21, 5306, 14539, 575, 6734, 1113, 3317, 5919, 14271, 14541, 1496, 14537, 14543, 14260, 5486, 14544, 2]
+// Dependencies: [19, 17, 6375, 21, 5310, 13410, 575, 6742, 1113, 3319, 5923, 13137, 13412, 1496, 13408, 13414, 13126, 5490, 13415, 2]
 // Exports: default
 
-// Module 14538 (TraitPicker)
+// Module 13409 (TraitPicker)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
-import _modDef3317 from "module_3317" /* 3317 */;
-import useWindowSizeClassifier from "useWindowSizeClassifier" /* 5486 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import CheckpointConstants from "CheckpointConstants" /* 6367 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6734 */;
-import CheckpointActionCreators from "CheckpointActionCreators" /* 14260 */;
-import CheckpointTextDefault from "CheckpointText" /* 14271 */;
-import useTraitPickerOptions from "useTraitPickerOptions" /* 14537 */;
-import TraitOptionList from "TraitOptionList" /* 14539 */;
-import TraitOptionDetailsDefault from "TraitOptionDetails" /* 14541 */;
-import react2 from "react" /* 14543 */;
+import _modDef3319 from "module_3319" /* 3319 */;
+import useWindowSizeClassifier from "useWindowSizeClassifier" /* 5490 */;
+import Text_Text from "Text/Text" /* 5923 */;
+import CheckpointConstants from "CheckpointConstants" /* 6375 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6742 */;
+import CheckpointActionCreators from "CheckpointActionCreators" /* 13126 */;
+import CheckpointTextDefault from "CheckpointText" /* 13137 */;
+import useTraitPickerOptions from "useTraitPickerOptions" /* 13408 */;
+import TraitOptionList from "TraitOptionList" /* 13410 */;
+import TraitOptionDetailsDefault from "TraitOptionDetails" /* 13412 */;
+import react2 from "react" /* 13414 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -35,7 +35,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp;
-const TraitOptionListDefault = tmp(14539);
+const TraitOptionListDefault = tmp(13410);
 function EarnedCountHeader(customizationOption) {
   let earnedCount;
   let intl2;
@@ -54,15 +54,15 @@ function EarnedCountHeader(customizationOption) {
       return arg0;
     }
   };
-  const combined = "" + customizationOptionName + ", " + intl.formatToPlainString(_modDef3317.Vfq58K, obj2);
-  const obj3 = { variant: "body-sm/medium", color: "text-default", style: tmp.earnedRow, accessibilityRole: "header", accessibilityLabel: combined, children: intl2.format(_modDef3317.Vfq58K, obj4) };
+  const combined = "" + customizationOptionName + ", " + intl.formatToPlainString(_modDef3319.Vfq58K, obj2);
+  const obj3 = { variant: "body-md/medium", color: "text-default", style: tmp.earnedRow, accessibilityRole: "header", accessibilityLabel: combined, children: intl2.format(_modDef3319.Vfq58K, obj4) };
   const Text = Text_Text.Text;
   intl2 = intl3.intl;
   obj4 = {
     earnedCount,
     totalCount,
     countHook(children, arg1) {
-      const obj = { variant: "mono-md/bold", children };
+      const obj = { variant: "body-md/semibold", tabularNumbers: true, children };
       return closure_1_7(CheckpointTextDefault, obj, arg1);
     }
   };
@@ -195,7 +195,7 @@ export default function TraitPicker(selectedOptionId) {
   }
   if (isFinalizeRoute) {
     const obj6 = { activeCustomizationOption: customizationOption, onSelectOption: onSelectFinalizeOption, isCurrentTraitBlocked, disabled };
-    tmp8Result = tmp8(tmp3(14544).FinalizeTraitTabs, obj6);
+    tmp8Result = tmp8(tmp3(13415).FinalizeTraitTabs, obj6);
     tmp11 = tmp8;
   } else {
     const obj7 = { customizationOption, earnedCount, totalCount };

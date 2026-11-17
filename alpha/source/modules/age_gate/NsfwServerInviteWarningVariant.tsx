@@ -1,15 +1,15 @@
-// Module ID: 10811
-// Function ID: 10812
+// Module ID: 11203
+// Function ID: 11204
 // Name: NsfwServerInviteWarningVariant
-// Dependencies: [1072, 6830, 1113, 10812, 6820, 10813, 2]
+// Dependencies: [1072, 6825, 1113, 11204, 6815, 11205, 2]
 // Exports: getNsfwServerInviteWarningAgeGroupForError, getNsfwServerInviteWarningVariant, useGatedAgeGroup
 
-// Module 10811 (NsfwServerInviteWarningVariant)
+// Module 11203 (NsfwServerInviteWarningVariant)
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6820 */;
-import getAgeNoticeWarningDescriptions from "getAgeNoticeWarningDescriptions" /* 6830 */;
-import useAgeGroupPresentation from "useAgeGroupPresentation" /* 10812 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6815 */;
+import getAgeNoticeWarningDescriptions from "getAgeNoticeWarningDescriptions" /* 6825 */;
+import useAgeGroupPresentation from "useAgeGroupPresentation" /* 11204 */;
 import size from "module_2" /* 2 */;
 
 const AbortCodes = Constants.AbortCodes;
@@ -61,7 +61,7 @@ export function getNsfwServerInviteWarningAgeGroupForError(arg0) {
     return null;
   }
   let tmp7 = null;
-  const tmp3Result = tmp3(10813);
+  const tmp3Result = tmp3(11205);
   if (tmp3Result.getIsInviteAcceptAgeGroupErrorsEnabled("invite_accept_error")) {
     tmp7 = UNVERIFIED;
   }

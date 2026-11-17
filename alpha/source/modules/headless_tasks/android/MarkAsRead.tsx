@@ -1,10 +1,10 @@
-// Module ID: 20935
-// Function ID: 20936
+// Module ID: 20981
+// Function ID: 20982
 // Name: MarkAsRead
-// Dependencies: [1072, 7874, 2]
+// Dependencies: [1072, 7884, 2]
 
-// Module 20935 (MarkAsRead)
-import ReadStateActionCreators from "ReadStateActionCreators" /* 7874 */;
+// Module 20981 (MarkAsRead)
+import ReadStateActionCreators from "ReadStateActionCreators" /* 7884 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

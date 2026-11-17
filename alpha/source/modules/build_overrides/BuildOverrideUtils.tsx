@@ -1,12 +1,12 @@
 // Module ID: 1377
 // Function ID: 1378
 // Name: BuildOverrideUtils
-// Dependencies: [1378, 1072, 1379, 1380, 1381, 1285, 1383, 1385, 1386, 2]
+// Dependencies: [1378, 1072, 1379, 1380, 1255, 1381, 1285, 1383, 1385, 1386, 2]
 // Exports: getAPIEndpoint, getBuildOverride, getBuildOverrideExperiments, getBuildOverrideMeta, isBuildOverrideLink, isManualBuildOverrideLink, manualOverrideLinkMeta, probablyHasBuildOverride, validateURL
 
 // Module 1377 (BuildOverrideUtils)
 import Constants from "Constants" /* 1072 */;
-import HTTPUtils from "HTTPUtils" /* 1285 */;
+import GlobalUtils from "GlobalUtils" /* 1255 */;
 import BuildOverrideConstants from "BuildOverrideConstants" /* 1378 */;
 import URLUtilsDefault from "URLUtils" /* 1381 */;
 import urlParseAll from "urlParse" /* 1383 */;
@@ -17,6 +17,8 @@ import PlatformUtils from "PlatformUtils" /* 1380 */;
 import size from "module_2" /* 2 */;
 
 let Version;
+let tmp;
+const HTTPUtils = tmp(1285);
 let closure_4 = BuildOverrideConstants.BUILD_OVERRIDE_COOKIE_NAME;
 const PRIMARY_DOMAIN = Constants.PRIMARY_DOMAIN;
 let react_native = react_native_mod;
@@ -63,25 +65,33 @@ const result = size.fileFinishedImporting("modules/build_overrides/BuildOverride
 export const APP_VERSION = Version;
 export { getAPIEndpoint };
 export function getBuildOverride() {
-  let obj3;
-  let resolved;
-  const obj = URLUtilsDefault;
-  const safeParseWithQueryResult = obj.safeParseWithQuery("" + location.protocol + "//" + location.host + "/__development/build_overrides");
-  if (null == safeParseWithQueryResult) {
-    resolved = Promise.resolve(null);
+  let obj4;
+  const obj = GlobalUtils;
+  if (obj.isDiscordBackendDevelopment()) {
+    return Promise.resolve(null);
   } else {
-    safeParseWithQueryResult.search = null;
-    if (Version) {
-      safeParseWithQueryResult.query.version = tmp3;
+    let resolved;
+    const _location = location;
+    const _location2 = location;
+    const _HermesInternal = HermesInternal;
+    const obj2 = URLUtilsDefault;
+    const safeParseWithQueryResult = obj2.safeParseWithQuery("" + location.protocol + "//" + location.host + "/__development/build_overrides");
+    if (null == safeParseWithQueryResult) {
+      resolved = Promise.resolve(null);
+    } else {
+      safeParseWithQueryResult.search = null;
+      if (Version) {
+        safeParseWithQueryResult.query.version = tmp7;
+      }
+      const HTTP = HTTPUtils.HTTP;
+      const get = HTTP.get;
+      const obj3 = { url: obj4.format(safeParseWithQueryResult), oldFormErrors: true, rejectWithError: false };
+      obj4 = urlParseAll;
+      const value = get(obj3);
+      resolved = value.then((body) => body.body || null, () => null);
     }
-    const HTTP = HTTPUtils.HTTP;
-    const get = HTTP.get;
-    const obj2 = { url: obj3.format(safeParseWithQueryResult), oldFormErrors: true, rejectWithError: false };
-    obj3 = urlParseAll;
-    const value = get(obj2);
-    resolved = value.then((body) => body.body || null, () => null);
+    return resolved;
   }
-  return resolved;
 }
 export function getBuildOverrideMeta(url) {
   let obj4;

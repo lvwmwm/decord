@@ -1,30 +1,30 @@
-// Module ID: 19468
-// Function ID: 19469
+// Module ID: 19513
+// Function ID: 19514
 // Name: RecentScreen
-// Dependencies: [32, 5, 19, 7037, 14767, 19469, 14754, 9066, 14756, 1072, 21, 7428, 14765, 1113, 5919, 11782, 19470, 8134, 14761, 14747, 504, 14743, 19462, 1503, 19473, 14740, 17356, 8190, 6823, 19474, 19475, 19478, 2]
+// Dependencies: [32, 5, 19, 7045, 13845, 19514, 13832, 9077, 13834, 1072, 21, 7438, 13843, 1113, 5923, 10268, 19515, 8145, 13839, 13825, 504, 13821, 19507, 1503, 19518, 13818, 17393, 8201, 6818, 19519, 19520, 19523, 2]
 
-// Module 19468 (RecentScreen)
+// Module 19513 (RecentScreen)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import Pressables from "Pressables" /* 7428 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8190 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 14740 */;
-import SmartSearchUtils from "SmartSearchUtils" /* 14743 */;
-import SearchUtils from "SearchUtils" /* 14747 */;
-import SearchPlatformConstants from "SearchPlatformConstants" /* 14756 */;
-import TrackingDefault from "Tracking" /* 14761 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 14765 */;
-import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 17356 */;
+import Text_Text from "Text/Text" /* 5923 */;
+import Pressables from "Pressables" /* 7438 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8201 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 13818 */;
+import SmartSearchUtils from "SmartSearchUtils" /* 13821 */;
+import SearchUtils from "SearchUtils" /* 13825 */;
+import SearchPlatformConstants from "SearchPlatformConstants" /* 13834 */;
+import TrackingDefault from "Tracking" /* 13839 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13843 */;
+import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 17393 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import SearchMessageStore from "SearchMessageStore" /* 7037 */;
-import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 14767 */;
-import SearchHistoryStore from "SearchHistoryStore" /* 19469 */;
-import SearchQueryStore from "SearchQueryStore" /* 14754 */;
-import SearchConstants from "SearchConstants" /* 9066 */;
+import SearchMessageStore from "SearchMessageStore" /* 7045 */;
+import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 13845 */;
+import SearchHistoryStore from "SearchHistoryStore" /* 19514 */;
+import SearchQueryStore from "SearchQueryStore" /* 13832 */;
+import SearchConstants from "SearchConstants" /* 9077 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -35,14 +35,14 @@ let closure_12;
 let map1;
 let tmp2;
 let unpackModuleId;
-const AgeVerificationAnalyticsUtils = tmp2(6823);
+const AgeVerificationAnalyticsUtils = tmp2(6818);
 function ClearAllHistory(searchContext) {
   let intl2;
   searchContext = searchContext.searchContext;
-  const PressableHighlight = searchContext(7428).PressableHighlight;
+  const PressableHighlight = searchContext(7438).PressableHighlight;
   const intl = searchContext(1113).intl;
   ({ variant: "body-sm/semibold", color: "text-brand", children: intl2.string(searchContext(1113).t.LFTAUp) });
-  const Text = searchContext(5919).Text;
+  const Text = searchContext(5923).Text;
   intl2 = searchContext(1113).intl;
   return <PressableHighlight onPress={function onPress() {
     const obj = SearchPlatformActionCreatorsDefault;
@@ -66,7 +66,7 @@ let closure_19 = react.memo(function RecentScreen(searchContext) {
   let _undefined;
   let c1;
   let tmp4;
-  const f137853 = () => memo.getSearchHistory(searchContextId);
+  const f138177 = () => memo.getSearchHistory(searchContextId);
   searchContext = searchContext.searchContext;
   const onJumpToMedia = searchContext.onJumpToMedia;
   const suggestedData = searchContext.suggestedData;
@@ -89,8 +89,8 @@ let closure_19 = react.memo(function RecentScreen(searchContext) {
   let obj2 = searchContext(suggestedData[19]);
   const searchContextId = obj2.getSearchContextId(searchContext);
   c1 = undefined;
-  [tmp4, c1] = messages(isInitialSearchQuery.useState(f137853), 2);
-  const tmp3 = messages(isInitialSearchQuery.useState(f137853), 2);
+  [tmp4, c1] = messages(isInitialSearchQuery.useState(f138177), 2);
+  const tmp3 = messages(isInitialSearchQuery.useState(f138177), 2);
   const obj3 = searchContext(suggestedData[23]);
   let items1 = [searchContextId];
   const focusEffect = obj3.useFocusEffect(isInitialSearchQuery.useCallback(() => {

@@ -1,16 +1,16 @@
-// Module ID: 18561
-// Function ID: 18562
+// Module ID: 18602
+// Function ID: 18603
 // Name: DataAndPrivacyScreen
-// Dependencies: [19, 6836, 9202, 1072, 21, 18553, 1113, 2188, 10627, 1502, 17385, 17388, 12406, 17342, 17213, 2]
+// Dependencies: [19, 6831, 9213, 1072, 21, 18594, 1113, 2188, 10327, 1502, 17422, 17425, 12612, 17379, 17250, 2]
 // Exports: default
 
-// Module 18561 (DataAndPrivacyScreen)
+// Module 18602 (DataAndPrivacyScreen)
 import intl8 from "intl" /* 1113 */;
-import SettingsConstants from "SettingsConstants" /* 9202 */;
-import SecureFramesUtils from "SecureFramesUtils" /* 10627 */;
-import SettingBuilders from "SettingBuilders" /* 12406 */;
+import SettingsConstants from "SettingsConstants" /* 9213 */;
+import SecureFramesUtils from "SecureFramesUtils" /* 10327 */;
+import SettingBuilders from "SettingBuilders" /* 12612 */;
 import react from "react" /* 19 */;
-import ConsentStore from "ConsentStore" /* 6836 */;
+import ConsentStore from "ConsentStore" /* 6831 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -62,7 +62,7 @@ export default function DataAndPrivacySettings() {
   let stackNavigation;
   let obj = stackNavigation(1502);
   stackNavigation = obj.useStackNavigation();
-  let obj2 = stackNavigation(18553);
+  let obj2 = stackNavigation(18594);
   const pinotDataPrivacySections = obj2.usePinotDataPrivacySections();
   let obj3 = { settings: items, subLabel: format(prop, obj4) };
   items = [MobileUserSettings.USE_DATA_TO_IMPROVE_DISCORD];
@@ -170,8 +170,8 @@ export default function DataAndPrivacySettings() {
     HermesBuiltin.arraySpread(items, items3, tmp3 + 1);
     return createList(obj);
   }, items8);
-  const obj22 = { screen: stackNavigation(17342).SettingsScreen.DATA_AND_PRIVACY };
-  const tmp13 = items1(17342);
-  items9 = [closure_8(tmp13, obj22), closure_8(items1(17213), { node: memo })];
+  const obj22 = { screen: stackNavigation(17379).SettingsScreen.DATA_AND_PRIVACY };
+  const tmp13 = items1(17379);
+  items9 = [closure_8(tmp13, obj22), closure_8(items1(17250), { node: memo })];
   return closure_10(closure_9, obj21);
 };

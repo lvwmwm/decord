@@ -1,10 +1,10 @@
-// Module ID: 7054
-// Function ID: 7055
+// Module ID: 7062
+// Function ID: 7063
 // Name: ConjureUserExperiment
 // Dependencies: [1452, 2]
 // Exports: isConjureUserEnabled, useIsConjureUserEnabled
 
-// Module 7054 (ConjureUserExperiment)
+// Module 7062 (ConjureUserExperiment)
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 

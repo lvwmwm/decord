@@ -1,10 +1,10 @@
-// Module ID: 12014
-// Function ID: 12015
+// Module ID: 12450
+// Function ID: 12451
 // Name: useSafeAreaBottomKeyboardInfoController
 // Dependencies: [19, 1627, 1380, 1642, 1643, 1499, 1644, 1655, 2019, 1708, 2]
 // Exports: default
 
-// Module 12014 (useSafeAreaBottomKeyboardInfoController)
+// Module 12450 (useSafeAreaBottomKeyboardInfoController)
 import KeyboardStateDebuggingDefault from "KeyboardStateDebugging" /* 2019 */;
 import react from "react" /* 19 */;
 import MetaQuestUtils_mod from "MetaQuestUtils" /* 1627 */;

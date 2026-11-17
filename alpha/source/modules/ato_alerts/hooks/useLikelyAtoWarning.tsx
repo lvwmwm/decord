@@ -1,16 +1,16 @@
-// Module ID: 12035
-// Function ID: 12036
+// Module ID: 12471
+// Function ID: 12472
 // Name: useLikelyAtoWarning
-// Dependencies: [10896, 12026, 12027, 12028, 12030, 12025, 2]
+// Dependencies: [12462, 12463, 12464, 12465, 12466, 12461, 2]
 // Exports: useLikelyAtoWarning
 
-// Module 12035 (useLikelyAtoWarning)
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10896 */;
-import useStrangerDangerWarning from "useStrangerDangerWarning" /* 12025 */;
-import useIsSpamMessageRequest from "useIsSpamMessageRequest" /* 12026 */;
-import useIsMessageRequest from "useIsMessageRequest" /* 12027 */;
-import useChannelSafetyWarning from "useChannelSafetyWarning" /* 12028 */;
-import useInappropriateConversationWarningsForChannel from "useInappropriateConversationWarningsForChannel" /* 12030 */;
+// Module 12471 (useLikelyAtoWarning)
+import useStrangerDangerWarning from "useStrangerDangerWarning" /* 12461 */;
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 12462 */;
+import useIsSpamMessageRequest from "useIsSpamMessageRequest" /* 12463 */;
+import useIsMessageRequest from "useIsMessageRequest" /* 12464 */;
+import useChannelSafetyWarning from "useChannelSafetyWarning" /* 12465 */;
+import useInappropriateConversationWarningsForChannel from "useInappropriateConversationWarningsForChannel" /* 12466 */;
 import size from "module_2" /* 2 */;
 
 const SafetyWarningTypes = ChannelSafetyWarningsStore.SafetyWarningTypes;

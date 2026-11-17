@@ -1,26 +1,26 @@
-// Module ID: 16299
-// Function ID: 16300
+// Module ID: 16335
+// Function ID: 16336
 // Name: QrLoginSpotIllustration
-// Dependencies: [19, 21, 16300, 16301, 16302, 7755, 6010, 2]
+// Dependencies: [19, 21, 16336, 16337, 16338, 7765, 6014, 2]
 // Exports: QrLoginSpotIllustration
 
-// Module 16299 (QrLoginSpotIllustration)
+// Module 16335 (QrLoginSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 7755 */;
-import _modDef16300 from "module_16300" /* 16300 */;
-import _modDef16301 from "module_16301" /* 16301 */;
-import _modDef16302 from "module_16302" /* 16302 */;
+import react_native from "react-native" /* 7765 */;
+import _modDef16336 from "module_16336" /* 16336 */;
+import _modDef16337 from "module_16337" /* 16337 */;
+import _modDef16338 from "module_16338" /* 16338 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef16300 };
+let obj2 = { uri: _modDef16336 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef16301 };
+let obj3 = { uri: _modDef16337 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef16302 };
-({ uri: _modDef16302 });
+obj[3] = { uri: _modDef16338 };
+({ uri: _modDef16338 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/QrLoginSpotIllustration.native.tsx");
 

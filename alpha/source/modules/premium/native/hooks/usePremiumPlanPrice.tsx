@@ -1,16 +1,16 @@
-// Module ID: 10956
-// Function ID: 10957
+// Module ID: 10115
+// Function ID: 10116
 // Name: usePremiumPlanPrice
-// Dependencies: [19, 2178, 9302, 1072, 1083, 9410, 9723, 504, 10957, 8580, 1380, 5907, 559, 7272, 7253, 2]
+// Dependencies: [19, 2178, 9311, 1072, 1083, 9419, 9736, 504, 10116, 8591, 1380, 5911, 559, 7282, 7262, 2]
 // Exports: default
 
-// Module 10956 (usePremiumPlanPrice)
+// Module 10115 (usePremiumPlanPrice)
 import Constants from "Constants" /* 1072 */;
 import Constants2 from "Constants" /* 1083 */;
-import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 7272 */;
+import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 7282 */;
 import react from "react" /* 19 */;
 import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2178 */;
-import IAPStore from "IAPStore" /* 9302 */;
+import IAPStore from "IAPStore" /* 9311 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

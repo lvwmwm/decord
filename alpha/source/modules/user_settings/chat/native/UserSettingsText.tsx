@@ -1,24 +1,24 @@
-// Module ID: 18087
-// Function ID: 18088
+// Module ID: 18128
+// Function ID: 18129
 // Name: UserSettingsText
-// Dependencies: [19, 17, 1388, 2179, 1193, 1194, 1072, 21, 5306, 575, 1256, 5131, 6232, 5892, 504, 2174, 1502, 7809, 1187, 11369, 5919, 1113, 8106, 6327, 7746, 7954, 7745, 7747, 2]
+// Dependencies: [19, 17, 1388, 2179, 1193, 1194, 1072, 21, 5310, 575, 1256, 5135, 6240, 5896, 504, 2174, 1502, 7819, 1187, 12058, 5923, 1113, 8117, 6335, 7756, 7964, 7755, 7757, 2]
 // Exports: default, setDataSavingMode, setImageDescriptions, setLowQualityImageMode, setStickerAutocomplete, setVideoUploadQuality
 
-// Module 18087 (UserSettingsText)
+// Module 18128 (UserSettingsText)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import UnsyncedUserSettingsStore2 from "UnsyncedUserSettingsStore" /* 1194 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import UserSettings from "UserSettings" /* 5131 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 6232 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7809 */;
+import UserSettings from "UserSettings" /* 5135 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 6240 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7819 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;
 import SubscriptionStore from "SubscriptionStore" /* 2179 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1193 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -120,7 +120,7 @@ export default function UserSettingsText() {
   const obj7 = require("useNavigation");
   closure_4 = obj7.useNavigation();
   const obj8 = { style: tmp5.flex, children: closure_12(Form, obj24) };
-  Form = require("module_8106").Form;
+  Form = require("module_8117").Form;
   const obj9 = { spacing: videoUploadQuality(dataSavingMode[9]).space.PX_24, style: { paddingHorizontal: token }, children: items6 };
   const Stack = require("Stack/Stack").Stack;
   const obj10 = { children: items5 };

@@ -1,17 +1,17 @@
-// Module ID: 14004
-// Function ID: 14005
+// Module ID: 15041
+// Function ID: 15042
 // Name: ConjurePerfTraceStatsHeader
-// Dependencies: [19, 17, 21, 5306, 575, 14005, 7387, 5919, 2]
+// Dependencies: [19, 17, 21, 5310, 575, 15042, 7397, 5923, 2]
 // Exports: default
 
-// Module 14004 (ConjurePerfTraceStatsHeader)
+// Module 15041 (ConjurePerfTraceStatsHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import ConjurePerfTraceFormat from "ConjurePerfTraceFormat" /* 14005 */;
+import Text_Text from "Text/Text" /* 5923 */;
+import ConjurePerfTraceFormat from "ConjurePerfTraceFormat" /* 15042 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -57,7 +57,7 @@ export default function ConjurePerfTraceStatsHeader(stats) {
   let items;
   stats = stats.stats;
   let tmp = stats;
-  let obj = stats(14005);
+  let obj = stats(15042);
   const perfModelSummaryResult = obj.perfModelSummary(stats);
   let tmp4 = closure_6();
   dependencyMap = tmp4;
@@ -113,13 +113,13 @@ export default function ConjurePerfTraceStatsHeader(stats) {
       return tmp4(tmp5, obj2, item);
     })
   };
-  PERF_CATEGORIES = stats(7387).PERF_CATEGORIES;
+  PERF_CATEGORIES = stats(7397).PERF_CATEGORIES;
   items[1] = closure_3(closure_2, obj4);
   let tmp7Result = null;
   const tmp7 = closure_3;
   if (null != perfModelSummaryResult) {
     let obj5 = { variant: "body-sm/normal", color: "text-default", children: perfModelSummaryResult };
-    tmp7Result = tmp7(tmp(5919).Text, obj5);
+    tmp7Result = tmp7(tmp(5923).Text, obj5);
   }
   items[2] = tmp7Result;
   return tmp5(tmp6, obj2);

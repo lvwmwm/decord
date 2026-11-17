@@ -1,17 +1,17 @@
-// Module ID: 14712
-// Function ID: 14713
+// Module ID: 13790
+// Function ID: 13791
 // Name: GuildDirectoryEditDescriptionModal
-// Dependencies: [5, 19, 17, 21, 5306, 5882, 14713, 14711, 7415, 5919, 1113, 14714, 7493, 7490, 2]
+// Dependencies: [5, 19, 17, 21, 5310, 5886, 13791, 13789, 7425, 5923, 1113, 13792, 7503, 7500, 2]
 // Exports: default
 
-// Module 14712 (GuildDirectoryEditDescriptionModal)
-import NavigatorConstants from "NavigatorConstants" /* 5882 */;
-import GuildDirectoryEditDescriptionModalActionCreatorsDefault from "GuildDirectoryEditDescriptionModalActionCreators" /* 14711 */;
+// Module 13790 (GuildDirectoryEditDescriptionModal)
+import NavigatorConstants from "NavigatorConstants" /* 5886 */;
+import GuildDirectoryEditDescriptionModalActionCreatorsDefault from "GuildDirectoryEditDescriptionModalActionCreators" /* 13789 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -91,9 +91,9 @@ function GuildDirectoryEditDescription(entry) {
   obj = { top: true, style: tmp.safeArea, children: closure_8(closure_6, obj2) };
   obj2 = { style: tmp.container, keyboardShouldPersistTaps: "handled", children: items };
   let obj3 = { style: tmp.header, children: closure_7(Text, obj4) };
-  const SafeAreaPaddingView = entry(7415).SafeAreaPaddingView;
+  const SafeAreaPaddingView = entry(7425).SafeAreaPaddingView;
   obj4 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.format(entry(1113).t.w9tsNk, obj5) };
-  Text = entry(5919).Text;
+  Text = entry(5923).Text;
   intl = entry(1113).intl;
   obj5 = { guildName: entry.name };
   items = [closure_7(closure_5, obj3), ];
@@ -105,7 +105,7 @@ function GuildDirectoryEditDescription(entry) {
     entry,
     directoryChannelId: entry.channelId
   };
-  const tmp2 = obj(14714);
+  const tmp2 = obj(13792);
   intl2 = entry(1113).intl;
   items[1] = closure_7(tmp2, obj6);
   return closure_7(SafeAreaPaddingView, obj);

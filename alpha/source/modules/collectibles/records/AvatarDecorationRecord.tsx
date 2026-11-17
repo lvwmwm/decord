@@ -1,10 +1,10 @@
-// Module ID: 8490
-// Function ID: 8491
+// Module ID: 8501
+// Function ID: 8502
 // Name: AvatarDecorationRecord
 // Dependencies: [2113, 2114, 2]
 // Exports: isAvatarDecorationRecord
 
-// Module 8490 (AvatarDecorationRecord)
+// Module 8501 (AvatarDecorationRecord)
 import CollectiblesItemType from "CollectiblesItemType" /* 2114 */;
 import BaseCollectiblesItemRecord from "BaseCollectiblesItemRecord" /* 2113 */;
 import size from "module_2" /* 2 */;

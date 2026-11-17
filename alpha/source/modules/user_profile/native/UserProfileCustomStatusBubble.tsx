@@ -1,29 +1,29 @@
-// Module ID: 9531
-// Function ID: 9532
+// Module ID: 9543
+// Function ID: 9544
 // Name: UserProfileCustomStatusBubble
-// Dependencies: [32, 19, 17, 7962, 1391, 1083, 21, 1380, 5306, 575, 8263, 5131, 6010, 1414, 5919, 7894, 5892, 8545, 9532, 6051, 5542, 9535, 7937, 1113, 7428, 13466, 2]
+// Dependencies: [32, 19, 17, 7972, 1391, 1083, 21, 1380, 5310, 575, 8274, 5135, 6014, 1414, 5923, 7904, 5896, 8556, 9544, 6057, 5546, 9547, 7947, 1113, 7438, 13621, 2]
 // Exports: default
 
-// Module 9531 (UserProfileCustomStatusBubble)
+// Module 9543 (UserProfileCustomStatusBubble)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import EmojiConstants from "EmojiConstants" /* 1391 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import UserSettings from "UserSettings" /* 5131 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import FastImageDefault from "FastImage" /* 6010 */;
-import EmojiDefault from "Emoji" /* 7894 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
-import Constants2 from "Constants" /* 7962 */;
-import inlineStyles from "inlineStyles" /* 8263 */;
-import CustomStatusUtils from "CustomStatusUtils" /* 9535 */;
+import UserSettings from "UserSettings" /* 5135 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
+import Text_Text from "Text/Text" /* 5923 */;
+import FastImageDefault from "FastImage" /* 6014 */;
+import EmojiDefault from "Emoji" /* 7904 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7947 */;
+import Constants2 from "Constants" /* 7972 */;
+import inlineStyles from "inlineStyles" /* 8274 */;
+import CustomStatusUtils from "CustomStatusUtils" /* 9547 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,16 +1,16 @@
-// Module ID: 14299
-// Function ID: 14300
+// Module ID: 13164
+// Function ID: 13165
 // Name: CheckpointCharacterStageLayer
-// Dependencies: [32, 19, 17, 14276, 21, 6826, 14300, 14301, 2]
+// Dependencies: [32, 19, 17, 13142, 21, 6821, 13165, 13166, 2]
 // Exports: default
 
-// Module 14299 (CheckpointCharacterStageLayer)
-import usePrevious from "usePrevious" /* 6826 */;
-import CheckpointFadeLayerDefault from "CheckpointFadeLayer" /* 14300 */;
+// Module 13164 (CheckpointCharacterStageLayer)
+import usePrevious from "usePrevious" /* 6821 */;
+import CheckpointFadeLayerDefault from "CheckpointFadeLayer" /* 13165 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CheckpointTransitionConstants from "CheckpointTransitionConstants" /* 14276 */;
+import CheckpointTransitionConstants from "CheckpointTransitionConstants" /* 13142 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp13;
-const CheckpointCharacterStageDefault = tmp13(14301);
+const CheckpointCharacterStageDefault = tmp13(13166);
 ({ StyleSheet: hasOwnProperty, View: metroRequire } = react_native);
 ({ CHECKPOINT_CHARACTER_STAGE_HIDE: metroImportDefault, CHECKPOINT_INSTANT: metroImportAll } = CheckpointTransitionConstants);
 ({ jsx: c9, jsxs: c10 } = Fragment);

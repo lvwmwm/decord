@@ -1,17 +1,17 @@
-// Module ID: 15239
-// Function ID: 15240
+// Module ID: 11282
+// Function ID: 11283
 // Name: ZoomLayoutGesture
-// Dependencies: [19, 17, 21, 5540, 5929, 1655, 5306, 5588, 1708, 2]
+// Dependencies: [19, 17, 21, 5544, 5933, 1655, 5310, 5592, 1708, 2]
 
-// Module 15239 (ZoomLayoutGesture)
+// Module 11282 (ZoomLayoutGesture)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import reanimated_AccessibilityPreferencesSharedValue from "reanimated/AccessibilityPreferencesSharedValue" /* 5540 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5588 */;
-import spring_spring from "spring/spring" /* 5929 */;
+import reanimated_AccessibilityPreferencesSharedValue from "reanimated/AccessibilityPreferencesSharedValue" /* 5544 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5592 */;
+import spring_spring from "spring/spring" /* 5933 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let _undefined, _undefined2, activateResult, diff, diff1, point2, point3, result3, result4, result5, set, set2, set2Result, set3, set3Result, value1;

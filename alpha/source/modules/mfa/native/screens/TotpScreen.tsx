@@ -1,12 +1,12 @@
-// Module ID: 18311
-// Function ID: 18312
+// Module ID: 18352
+// Function ID: 18353
 // Name: TotpScreen
-// Dependencies: [5, 32, 19, 21, 18312, 18307, 1113, 18313, 18310, 2]
+// Dependencies: [5, 32, 19, 21, 18353, 18348, 1113, 18354, 18351, 2]
 // Exports: default
 
-// Module 18311 (TotpScreen)
+// Module 18352 (TotpScreen)
 import Fragment from "Fragment" /* 21 */;
-import MFA from "MFA" /* 18312 */;
+import MFA from "MFA" /* 18353 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;

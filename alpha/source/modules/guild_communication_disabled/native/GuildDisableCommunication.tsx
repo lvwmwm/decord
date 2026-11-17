@@ -1,28 +1,28 @@
-// Module ID: 14142
-// Function ID: 14143
+// Module ID: 13008
+// Function ID: 13009
 // Name: GuildDisableCommunication
-// Dependencies: [5, 32, 19, 17, 5220, 1072, 21, 1113, 5306, 575, 5903, 11851, 5889, 1256, 14143, 6005, 6341, 5919, 7745, 7747, 7859, 5926, 2]
+// Dependencies: [5, 32, 19, 17, 5224, 1072, 21, 1113, 5310, 575, 5907, 12332, 5893, 1256, 13009, 6009, 6349, 5923, 7755, 7757, 7869, 5930, 2]
 
-// Module 14142 (GuildDisableCommunication)
+// Module 13008 (GuildDisableCommunication)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl6 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import useMountEffectDefault from "useMountEffect" /* 5889 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5903 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import components_Button_Button from "components/Button/Button" /* 5926 */;
-import TableRadioGroup2 from "TableRadioGroup" /* 7745 */;
-import TableRadioRow2 from "TableRadioRow" /* 7747 */;
-import TextArea2 from "TextArea" /* 7859 */;
-import useSafeAreaAvoidingInputsDefault from "useSafeAreaAvoidingInputs" /* 11851 */;
+import useMountEffectDefault from "useMountEffect" /* 5893 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5907 */;
+import Text_Text from "Text/Text" /* 5923 */;
+import components_Button_Button from "components/Button/Button" /* 5930 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 7755 */;
+import TableRadioRow2 from "TableRadioRow" /* 7757 */;
+import TextArea2 from "TextArea" /* 7869 */;
+import useSafeAreaAvoidingInputsDefault from "useSafeAreaAvoidingInputs" /* 12332 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 5220 */;
+import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 5224 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let c2;

@@ -1,11 +1,11 @@
-// Module ID: 13569
-// Function ID: 13570
+// Module ID: 14619
+// Function ID: 14620
 // Name: conjureQueuedMessage
-// Dependencies: [7382, 2]
+// Dependencies: [7392, 2]
 // Exports: queuedMessageActionHandler, queuedUserMessages
 
-// Module 13569 (conjureQueuedMessage)
-import conjureChatConnection from "conjureChatConnection" /* 7382 */;
+// Module 14619 (conjureQueuedMessage)
+import conjureChatConnection from "conjureChatConnection" /* 7392 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/chat/conjureQueuedMessage.tsx");

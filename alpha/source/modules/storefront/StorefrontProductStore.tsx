@@ -1,12 +1,12 @@
-// Module ID: 8578
-// Function ID: 8579
+// Module ID: 8589
+// Function ID: 8590
 // Name: StorefrontProductStore
-// Dependencies: [8579, 504, 572, 2]
+// Dependencies: [8590, 504, 572, 2]
 
-// Module 8578 (StorefrontProductStore)
+// Module 8589 (StorefrontProductStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import GenericIAPStore from "GenericIAPStore" /* 8579 */;
+import GenericIAPStore from "GenericIAPStore" /* 8590 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, closure_3, id, set;

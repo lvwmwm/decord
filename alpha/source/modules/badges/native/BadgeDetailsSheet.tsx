@@ -1,33 +1,33 @@
-// Module ID: 10111
-// Function ID: 10112
+// Module ID: 15289
+// Function ID: 15290
 // Name: BadgeDetailsSheet
-// Dependencies: [5, 32, 19, 17, 5307, 1388, 10112, 8547, 1072, 5557, 21, 5306, 575, 6027, 5919, 1655, 10113, 504, 10114, 10115, 10116, 1708, 10117, 2153, 1392, 10118, 10127, 15272, 5542, 10110, 15273, 8604, 1113, 7459, 15279, 15277, 15284, 5926, 15285, 8552, 5538, 1630, 10076, 15278, 11819, 8559, 5887, 5556, 5560, 5891, 2]
+// Dependencies: [5, 32, 19, 17, 5311, 1388, 15290, 8558, 1072, 5561, 21, 5310, 575, 6031, 5923, 1655, 15291, 504, 15292, 15293, 15294, 1708, 15295, 2153, 1392, 15296, 15305, 15306, 5546, 15288, 15307, 8615, 1113, 7469, 15313, 15311, 15318, 5930, 15319, 8563, 5542, 1630, 15254, 15312, 15231, 8570, 5891, 5560, 5564, 5895, 2]
 // Exports: default
 
-// Module 10111 (BadgeDetailsSheet)
+// Module 15289 (BadgeDetailsSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5538 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5557 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import CircleInformationIcon2 from "CircleInformationIcon" /* 6027 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8552 */;
-import openBadgeDetailsSheet from "openBadgeDetailsSheet" /* 10110 */;
-import BadgeUtils from "BadgeUtils" /* 10113 */;
-import trackBadgeDirectoryActionDefault from "trackBadgeDirectoryAction" /* 15272 */;
-import useBadgeDirectoryBadgeIndicators from "useBadgeDirectoryBadgeIndicators" /* 15278 */;
+import timing_timing from "timing/timing" /* 5542 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5561 */;
+import Text_Text from "Text/Text" /* 5923 */;
+import CircleInformationIcon2 from "CircleInformationIcon" /* 6031 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8563 */;
+import openBadgeDetailsSheet from "openBadgeDetailsSheet" /* 15288 */;
+import BadgeUtils from "BadgeUtils" /* 15291 */;
+import trackBadgeDirectoryActionDefault from "trackBadgeDirectoryAction" /* 15306 */;
+import useBadgeDirectoryBadgeIndicators from "useBadgeDirectoryBadgeIndicators" /* 15312 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import AccessibilityStore from "AccessibilityStore" /* 5311 */;
 import UserStore from "UserStore" /* 1388 */;
-import BadgeDirectorySeenStore from "BadgeDirectorySeenStore" /* 10112 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8547 */;
+import BadgeDirectorySeenStore from "BadgeDirectorySeenStore" /* 15290 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8558 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size_mod from "module_2" /* 2 */;
 
 const _modDef1655 = _mod1655;
@@ -117,7 +117,7 @@ function BadgeUnlockLabel(unlock) {
   items2 = [tmp.unlockLabel, animatedStyle];
   const View = _modDef1655.View;
   obj3 = { variant: "heading-lg/semibold", color: "text-strong", style: tmp.centeredText, children: tmp2Result.getBadgeUnlockLabel(unlock.badge, unlock.previousTierKey) };
-  Text = tmp2(5919).Text;
+  Text = tmp2(5923).Text;
   tmp2Result = BadgeUtils;
   return map1(View, obj2);
 }

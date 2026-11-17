@@ -1,27 +1,29 @@
-// Module ID: 17671
-// Function ID: 17672
+// Module ID: 17709
+// Function ID: 17710
 // Name: OrbsArcadePlayButton
-// Dependencies: [19, 17, 10129, 17647, 21, 5306, 1113, 9442, 575, 5919, 5932, 7918, 17672, 504, 17673, 17657, 5542, 17674, 17654, 5926, 17675, 5927, 2]
+// Dependencies: [19, 17, 10574, 17685, 21, 5310, 1113, 9452, 575, 5923, 5936, 7928, 17710, 504, 17711, 17695, 5546, 17712, 17692, 5930, 17713, 5931, 2]
 // Exports: default
 
-// Module 17671 (OrbsArcadePlayButton)
+// Module 17709 (OrbsArcadePlayButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import ButtonConstants from "ButtonConstants" /* 5932 */;
-import OrbsArcadeAnalytics from "OrbsArcadeAnalytics" /* 17657 */;
-import launchOrbsArcadeGameDefault from "launchOrbsArcadeGame" /* 17674 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
+import Text_Text from "Text/Text" /* 5923 */;
+import ButtonConstants from "ButtonConstants" /* 5936 */;
+import QuestHomeNavigationStore2 from "QuestHomeNavigationStore" /* 10574 */;
+import OrbsArcadeAnalytics from "OrbsArcadeAnalytics" /* 17695 */;
+import launchOrbsArcadeGameDefault from "launchOrbsArcadeGame" /* 17712 */;
 import react from "react" /* 19 */;
-import QuestHomeNavigationStore from "QuestHomeNavigationStore" /* 10129 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 17647 */;
-import createStyles from "createStyles" /* 5306 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 17685 */;
+import createStyles from "createStyles" /* 5310 */;
 import size_mod from "module_2" /* 2 */;
+
+const QuestHomeNavigationStore = QuestHomeNavigationStore2;
 
 function OrbsArcadePaidPlayLabel(size) {
   size = size.size;
   const orbCost = size.orbCost;
-  const tmp = closure_8();
+  const tmp = closure_9();
   let closure_1 = tmp;
   const intl = size(1113).intl;
   const obj = {
@@ -49,8 +51,9 @@ function OrbsArcadePaidPlayLabel(size) {
   })}</View>;
 }
 const View = react_native.View;
+const QuestHomeSection = QuestHomeNavigationStore2.QuestHomeSection;
 const jsx = Fragment.jsx;
-let closure_8 = createStyles.createStyles({ paidPlayLabel: { flexDirection: "row", alignItems: "center" }, paidPlayText: { flexShrink: 1 } });
+let closure_9 = createStyles.createStyles({ paidPlayLabel: { flexDirection: "row", alignItems: "center" }, paidPlayText: { flexShrink: 1 } });
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/orbs_arcade/native/OrbsArcadePlayButton.tsx");
 
@@ -90,7 +93,8 @@ export default function OrbsArcadePlayButton(game) {
     const result = obj.trackOrbsArcadeCtaClicked(game, OrbsArcadeAnalytics.OrbsArcadeCta.EARN_ORBS, _location, surface);
     const obj2 = ActionSheetActionCreatorsDefault;
     obj2.hideActionSheet();
-    QuestHomeNavigationStore.setState({ scrollToQuestsSection: true });
+    const obj3 = { scrollToSection: QuestHomeSection.QUESTS };
+    QuestHomeNavigationStore.setState(obj3);
   }, items4);
   const callback1 = analyticsLocations.useCallback(() => {
     const obj = OrbsArcadeAnalytics;

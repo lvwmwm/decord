@@ -1,19 +1,19 @@
-// Module ID: 13759
-// Function ID: 13760
+// Module ID: 14809
+// Function ID: 14810
 // Name: ConjureThinkingOverlay
-// Dependencies: [19, 17, 7321, 21, 5306, 575, 13760, 13290, 504, 13292, 7445, 11318, 5919, 1113, 4131, 2]
+// Dependencies: [19, 17, 7331, 21, 5310, 575, 14810, 14517, 504, 14519, 7455, 12014, 5923, 1113, 4133, 2]
 // Exports: default
 
-// Module 13759 (ConjureThinkingOverlay)
+// Module 14809 (ConjureThinkingOverlay)
 import nativeDefault from "native" /* 575 */;
-import _modDef4131 from "module_4131" /* 4131 */;
-import ConjureNativeMarkdownDefault from "ConjureNativeMarkdown" /* 13290 */;
-import conjureThinkingTail from "conjureThinkingTail" /* 13760 */;
+import _modDef4133 from "module_4133" /* 4133 */;
+import ConjureNativeMarkdownDefault from "ConjureNativeMarkdown" /* 14517 */;
+import conjureThinkingTail from "conjureThinkingTail" /* 14810 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ConjureChatStore from "ConjureChatStore" /* 7321 */;
+import ConjureChatStore from "ConjureChatStore" /* 7331 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault, nativeEvent;
@@ -104,8 +104,8 @@ export default function ConjureThinkingOverlay(projectId) {
   const obj = projectId(504);
   const stateFromStores = obj.useStateFromStores(items, () => ConjureChatStore.getThinkingActivity(projectId), items1);
   let str;
-  const useConjureRevealedText = projectId(13292).useConjureRevealedText;
-  projectId(13292);
+  const useConjureRevealedText = projectId(14519).useConjureRevealedText;
+  projectId(14519);
   if (stateFromStores != null) {
     str = stateFromStores.text;
   }
@@ -118,12 +118,12 @@ export default function ConjureThinkingOverlay(projectId) {
   obj3 = { style: tmp.opaque, children: closure_7(Card, obj10) };
   const obj4 = { style: tmp.body, children: items3 };
   const obj5 = { style: tmp.header, children: items2 };
-  Card = tmp2(7445).Card;
+  Card = tmp2(7455).Card;
   const obj6 = { size: "xs", color: nativeDefault.colors.TEXT_BRAND };
-  const LightbulbIcon = tmp2(11318).LightbulbIcon;
+  const LightbulbIcon = tmp2(12014).LightbulbIcon;
   items2 = [closure_7(LightbulbIcon, obj6), ];
-  const obj7 = { variant: "body-sm/semibold", color: "text-strong", children: intl.string(_modDef4131.XXYIeI) };
-  const Text = tmp2(5919).Text;
+  const obj7 = { variant: "body-sm/semibold", color: "text-strong", children: intl.string(_modDef4133.XXYIeI) };
+  const Text = tmp2(5923).Text;
   intl = tmp2(1113).intl;
   items2[1] = closure_7(Text, obj7);
   items3 = [closure_8(closure_5, obj5), ];
@@ -132,8 +132,8 @@ export default function ConjureThinkingOverlay(projectId) {
     const obj8 = { style: tmp.panel, text };
     tmp7Result = tmp7(ThinkingScroll, obj8);
   } else {
-    const obj9 = { variant: "body-sm/normal", color: "text-muted", children: intl2.string(_modDef4131.LfoD6c) };
-    const Text2 = tmp2(5919).Text;
+    const obj9 = { variant: "body-sm/normal", color: "text-muted", children: intl2.string(_modDef4133.LfoD6c) };
+    const Text2 = tmp2(5923).Text;
     intl2 = tmp2(1113).intl;
     tmp7Result = tmp7(Text2, obj9);
   }

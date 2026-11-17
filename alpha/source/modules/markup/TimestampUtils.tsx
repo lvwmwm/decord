@@ -1,13 +1,13 @@
-// Module ID: 9374
-// Function ID: 9375
+// Module ID: 9383
+// Function ID: 9384
 // Name: TimestampUtils
-// Dependencies: [5128, 2169, 1089, 2]
+// Dependencies: [5132, 2169, 1089, 2]
 // Exports: formatTimestampMention, parseTimestamp, unparseTimestamp
 
-// Module 9374 (TimestampUtils)
+// Module 9383 (TimestampUtils)
 import DurationsDefault from "Durations" /* 1089 */;
 import _modDef2169 from "module_2169" /* 2169 */;
-import DateUtils from "DateUtils" /* 5128 */;
+import DateUtils from "DateUtils" /* 5132 */;
 import size from "module_2" /* 2 */;
 
 const TIMESTAMP_FORMATS = {

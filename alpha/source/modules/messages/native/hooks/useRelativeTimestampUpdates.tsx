@@ -1,15 +1,15 @@
-// Module ID: 12458
-// Function ID: 12459
+// Module ID: 12661
+// Function ID: 12662
 // Name: useRelativeTimestampUpdates
-// Dependencies: [19, 9160, 6332, 7790, 9374, 11063, 1089, 2]
+// Dependencies: [19, 9171, 6340, 7800, 9383, 11821, 1089, 2]
 // Exports: default
 
-// Module 12458 (useRelativeTimestampUpdates)
+// Module 12661 (useRelativeTimestampUpdates)
 import DurationsDefault from "Durations" /* 1089 */;
-import MarkupTypes from "MarkupTypes" /* 6332 */;
-import TimestampUtils from "TimestampUtils" /* 9374 */;
+import MarkupTypes from "MarkupTypes" /* 6340 */;
+import TimestampUtils from "TimestampUtils" /* 9383 */;
 import react_mod from "react" /* 19 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 9160 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 9171 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, set;
@@ -87,7 +87,7 @@ export default function useRelativeTimestampUpdates(isActive) {
   dependencyMap = react.useRef({ first: -1, last: -1 });
   react = react.useRef(null);
   const ref3 = react.useRef(undefined);
-  const tmp = chatManager(7790)(onRefresh);
+  const tmp = chatManager(7800)(onRefresh);
   let closure_5 = tmp;
   function update() {
     let first;
@@ -144,7 +144,7 @@ export default function useRelativeTimestampUpdates(isActive) {
                     set = new Set();
                     tmp14.shownIn = set;
                   }
-                  let tmp53Result = tmp53(11063);
+                  let tmp53Result = tmp53(11821);
                   tmp14.dueAt = timestamp + tmp53Result.getTimestampUpdateInterval(tmp8.parsed, timestamp);
                   let result = obj.set(tmp8, tmp14);
                 }

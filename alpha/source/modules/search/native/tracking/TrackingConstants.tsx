@@ -1,10 +1,10 @@
-// Module ID: 9065
-// Function ID: 9066
+// Module ID: 9076
+// Function ID: 9077
 // Name: TrackingConstants
-// Dependencies: [9066, 2]
+// Dependencies: [9077, 2]
 
-// Module 9065 (TrackingConstants)
-import SearchConstants from "SearchConstants" /* 9066 */;
+// Module 9076 (TrackingConstants)
+import SearchConstants from "SearchConstants" /* 9077 */;
 import size from "module_2" /* 2 */;
 
 let SearchHistoryItemTypes;

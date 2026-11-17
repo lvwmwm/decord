@@ -1,14 +1,14 @@
-// Module ID: 7339
-// Function ID: 7340
+// Module ID: 7349
+// Function ID: 7350
 // Name: conjurePreviewSurface
-// Dependencies: [7019, 7020, 5967, 7340, 2]
+// Dependencies: [7027, 7028, 5971, 7350, 2]
 // Exports: getConjureBuilderPreviewFrame, getConjureBuilderPreviewFrames, getConjureBuilderPreviewOverlayFrame, getConjurePreviewGuildId, getConjurePreviewSurface, isConjurePreviewOverlayFrame, isConjurePreviewSurface
 
-// Module 7339 (conjurePreviewSurface)
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5967 */;
-import conjurePreviewFrameSurfaces from "conjurePreviewFrameSurfaces" /* 7340 */;
-import FramesStore from "FramesStore" /* 7019 */;
-import FramesConstants from "FramesConstants" /* 7020 */;
+// Module 7349 (conjurePreviewSurface)
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5971 */;
+import conjurePreviewFrameSurfaces from "conjurePreviewFrameSurfaces" /* 7350 */;
+import FramesStore from "FramesStore" /* 7027 */;
+import FramesConstants from "FramesConstants" /* 7028 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -18,7 +18,7 @@ let c3;
 let closure_4;
 let hasOwnProperty;
 let metroRequire;
-const f93990 = (item) => null != item;
+const f94193 = (item) => null != item;
 ({ getFrameHostWindowKey: c3, isLaunched: closure_4, makeFrameId: hasOwnProperty, OVERLAY_SURFACE: metroRequire } = FramesConstants);
 let c7 = "0";
 const CONJURE_PREVIEW_SURFACE = { type: EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL, channelId: "0" };
@@ -90,7 +90,7 @@ export function getConjureBuilderPreviewFrames(arg0) {
     }
     return getFrame(tmp2(tmp3, obj2));
   });
-  return mapped.filter(f93990);
+  return mapped.filter(f94193);
 }
 export function getConjureBuilderPreviewFrame(prop) {
   _require = prop;
@@ -113,7 +113,7 @@ export function getConjureBuilderPreviewFrame(prop) {
     }
     return getFrame(tmp2(tmp3, obj2));
   });
-  const found = mapped.filter(f93990);
+  const found = mapped.filter(f94193);
   let found1 = found.find(closure_4);
   if (found1 == null) {
     found1 = found[0];

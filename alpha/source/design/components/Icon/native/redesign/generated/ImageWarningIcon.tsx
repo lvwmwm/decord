@@ -1,14 +1,14 @@
-// Module ID: 8079
-// Function ID: 8080
+// Module ID: 8090
+// Function ID: 8091
 // Name: ImageWarningIcon
-// Dependencies: [19, 21, 575, 6009, 8055, 2]
+// Dependencies: [19, 21, 575, 6013, 8066, 2]
 // Exports: ImageWarningIcon
 
-// Module 8079 (ImageWarningIcon)
+// Module 8090 (ImageWarningIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6009 */;
-import AssetRegistry from "AssetRegistry" /* 8055 */;
+import BaseIconImage2 from "BaseIconImage" /* 6013 */;
+import AssetRegistry from "AssetRegistry" /* 8066 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

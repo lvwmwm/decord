@@ -1,14 +1,14 @@
-// Module ID: 5240
-// Function ID: 5241
+// Module ID: 5244
+// Function ID: 5245
 // Name: JoinedThreadsStore
-// Dependencies: [5159, 502, 5241, 12, 504, 572, 2]
+// Dependencies: [5163, 502, 5245, 12, 504, 572, 2]
 
-// Module 5240 (JoinedThreadsStore)
+// Module 5244 (JoinedThreadsStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ChannelRecord from "ChannelRecord" /* 5159 */;
-import MuteTimersDefault from "MuteTimers" /* 5241 */;
+import ChannelRecord from "ChannelRecord" /* 5163 */;
+import MuteTimersDefault from "MuteTimers" /* 5245 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
 

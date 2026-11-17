@@ -1,46 +1,85 @@
 // Module ID: 9822
 // Function ID: 9823
-// Dependencies: []
+// Dependencies: [9823, 9820]
+// Exports: extractTraceparentData, generateSentryTraceHeader, propagationContextFromHeaders
 
 // Module 9822
-let hasOwnProperty;
+import generatePropagationContext from "generatePropagationContext" /* 9820 */;
+import _mod9823 from "module_9823" /* 9823 */;
 
-function merge(arg0, obj) {
-  let num = arg2;
-  if (arg2 === undefined) {
-    num = 2;
-  }
-  const tmp = obj;
+const regExp = new RegExp("^[ \\t]*([0-9a-f]{32})?-?([0-9a-f]{16})?-?([01])?[ \\t]*$");
+
+export const TRACEPARENT_REGEXP = regExp;
+export function extractTraceparentData(str) {
+  const tmp = str;
   if (tmp) {
-    if (typeof obj === "object") {
-      if (num > 0) {
-        const tmp9 = arg0;
-        if (tmp9) {
-          if (obj) {
-            const _Object = Object;
-            if (0 === Object.keys(obj).length) {
-              return arg0;
-            }
-          }
+    const match = str.match(regExp);
+    if (match) {
+      let flag = true;
+      if ("1" !== match[3]) {
+        if ("0" === match[3]) {
+          flag = false;
         }
-        obj = {};
-        const merged = Object.assign(arg0);
-        for (const key10016 in obj) {
-          let _Object2 = Object;
-          hasOwnProperty = Object.prototype.hasOwnProperty;
-          if (!hasOwnProperty.call(obj, key10016)) {
-            continue;
-          } else {
-            obj[key10016] = merge(obj[key10016], obj[key10016], num - 1);
-            continue;
-          }
-          continue;
-        }
-        return obj;
       }
+      return { traceId: match[1], parentSampled: flag, parentSpanId: match[2] };
     }
   }
-  return obj;
 }
-
-export { merge };
+export function generateSentryTraceHeader() {
+  let traceId = arg0;
+  if (arg0 === undefined) {
+    const obj = generatePropagationContext;
+    traceId = obj.generateTraceId();
+  }
+  let spanId = arg1;
+  if (arg1 === undefined) {
+    const obj2 = generatePropagationContext;
+    spanId = obj2.generateSpanId();
+  }
+  let str = "";
+  if (undefined !== arg2) {
+    let str2 = "-0";
+    if (arg2) {
+      str2 = "-1";
+    }
+    str = str2;
+  }
+  return "" + traceId + "-" + spanId + str;
+}
+export function propagationContextFromHeaders(str, arg1) {
+  let parentSampled;
+  let tmp4Result;
+  let tmp4Result3;
+  let tmp4Result4;
+  let tmp;
+  if (str) {
+    const match = str.match(regExp);
+    if (match) {
+      let flag = true;
+      if ("1" !== match[3]) {
+        if ("0" === match[3]) {
+          flag = false;
+        }
+      }
+      tmp = { traceId: match[1], parentSampled: flag, parentSpanId: match[2] };
+      const obj = { traceId: match[1], parentSampled: flag, parentSpanId: match[2] };
+    }
+  }
+  const obj2 = _mod9823;
+  let result = obj2.baggageHeaderToDynamicSamplingContext(arg1);
+  if (tmp) {
+    if (tmp.traceId) {
+      const obj3 = { traceId: null, parentSpanId: null, spanId: tmp4Result.generateSpanId(), sampled: parentSampled, dsc: result };
+      ({ traceId: obj7.traceId, parentSpanId: obj7.parentSpanId, parentSampled } = tmp);
+      tmp4Result = generatePropagationContext;
+      if (!result) {
+        result = {};
+      }
+      return obj3;
+    }
+  }
+  const obj4 = { traceId: tmp4Result3.generateTraceId(), spanId: tmp4Result4.generateSpanId() };
+  tmp4Result3 = generatePropagationContext;
+  tmp4Result4 = generatePropagationContext;
+  return obj4;
+}

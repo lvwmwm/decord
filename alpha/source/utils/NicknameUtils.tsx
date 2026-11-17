@@ -1,15 +1,15 @@
-// Module ID: 6341
-// Function ID: 6342
+// Module ID: 6349
+// Function ID: 6350
 // Name: NicknameUtils
-// Dependencies: [5155, 5218, 5248, 1113, 5362, 504, 2]
+// Dependencies: [5159, 5222, 5252, 1113, 5366, 504, 2]
 // Exports: getNickname, useName
 
-// Module 6341 (NicknameUtils)
+// Module 6349 (NicknameUtils)
 import intl2 from "intl" /* 1113 */;
-import UserUtilsDefault from "UserUtils" /* 5362 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import GuildMemberStore from "GuildMemberStore" /* 5218 */;
-import RelationshipStore from "RelationshipStore" /* 5248 */;
+import UserUtilsDefault from "UserUtils" /* 5366 */;
+import ChannelStore from "ChannelStore" /* 5159 */;
+import GuildMemberStore from "GuildMemberStore" /* 5222 */;
+import RelationshipStore from "RelationshipStore" /* 5252 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

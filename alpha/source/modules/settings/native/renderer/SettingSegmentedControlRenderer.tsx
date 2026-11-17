@@ -1,19 +1,19 @@
-// Module ID: 17228
-// Function ID: 17229
+// Module ID: 17265
+// Function ID: 17266
 // Name: SettingSegmentedControlRenderer
-// Dependencies: [32, 19, 17, 17215, 12407, 21, 5306, 575, 7994, 17218, 17060, 38, 17217, 7983, 11251, 14944, 2]
+// Dependencies: [32, 19, 17, 17252, 12613, 21, 5310, 575, 8005, 17255, 17095, 38, 17254, 7994, 11956, 14158, 2]
 // Exports: default
 
-// Module 17228 (SettingSegmentedControlRenderer)
+// Module 17265 (SettingSegmentedControlRenderer)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import SettingRendererConstants from "SettingRendererConstants" /* 12407 */;
-import SettingTreeManagerDefault from "SettingTreeManager" /* 17218 */;
+import SettingRendererConstants from "SettingRendererConstants" /* 12613 */;
+import SettingTreeManagerDefault from "SettingTreeManager" /* 17255 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 17215 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 17252 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -43,7 +43,7 @@ export default function SettingSegmentedControl(node) {
   ({ defaultIndex: c0, settings } = node.node);
   let tmp = closure_11();
   let tmp2 = dependencyMap;
-  const tmp3 = settings(7994)();
+  const tmp3 = settings(8005)();
   const width = tmp3.width;
   let num = 0;
   ({ ref, onLayout } = tmp3);

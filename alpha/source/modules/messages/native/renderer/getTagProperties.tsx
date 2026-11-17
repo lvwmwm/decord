@@ -1,15 +1,15 @@
-// Module ID: 9274
-// Function ID: 9275
+// Module ID: 9283
+// Function ID: 9284
 // Name: getTagProperties
-// Dependencies: [17, 5311, 9275, 1113, 9276, 9278, 2]
+// Dependencies: [17, 5315, 9284, 1113, 9285, 9287, 2]
 // Exports: default
 
-// Module 9274 (getTagProperties)
+// Module 9283 (getTagProperties)
 import react_native from "react-native" /* 17 */;
 import intl7 from "intl" /* 1113 */;
-import MessageConstants from "MessageConstants" /* 5311 */;
-import PublicGuildsUtils from "PublicGuildsUtils" /* 9275 */;
-import isCrosspostDefault from "isCrosspost" /* 9276 */;
+import MessageConstants from "MessageConstants" /* 5315 */;
+import PublicGuildsUtils from "PublicGuildsUtils" /* 9284 */;
+import isCrosspostDefault from "isCrosspost" /* 9285 */;
 import size from "module_2" /* 2 */;
 
 const Image = react_native.Image;
@@ -49,7 +49,7 @@ export default function getTagProperties(arg0) {
           let uri;
           const stringResult1 = intl.string(intl7.t["9RNkeF"]);
           if (isVerifiedBotResult) {
-            uri = Image.resolveAssetSource(tmp4(9278)).uri;
+            uri = Image.resolveAssetSource(tmp4(9287)).uri;
           }
           flag = isVerifiedBotResult;
           stringResult = stringResult1;

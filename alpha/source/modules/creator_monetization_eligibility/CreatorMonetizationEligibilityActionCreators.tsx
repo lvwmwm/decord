@@ -1,10 +1,10 @@
-// Module ID: 20661
-// Function ID: 20662
+// Module ID: 20708
+// Function ID: 20709
 // Name: CreatorMonetizationEligibilityActionCreators
-// Dependencies: [5, 1072, 1365, 1285, 572, 7055, 2]
+// Dependencies: [5, 1072, 1365, 1285, 572, 7063, 2]
 // Exports: acceptCreatorMonetizationTerms, acceptCreatorMonetizationTermsV2, acceptNewTerms, acceptNewTermsDemonetized, createCreatorMonetizationEnableRequest, getCreatorMonetizationEligibility, getCreatorMonetizationOnboardingMarketing, ownershipTransferOnboard, removeMonetization
 
-// Module 20661 (CreatorMonetizationEligibilityActionCreators)
+// Module 20708 (CreatorMonetizationEligibilityActionCreators)
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
 import ApplicationConstants from "ApplicationConstants" /* 1365 */;
@@ -15,7 +15,7 @@ let c3;
 
 let obj = function _createCreatorMonetizationEnableRequest() {
   obj = _asyncToGenerator(async (arg0, value) => {
-    let obj6;
+    let obj3;
     let closure_0 = arg0;
     if (c1 === 2) {
       c1 = 3;
@@ -38,17 +38,17 @@ let obj = function _createCreatorMonetizationEnableRequest() {
             throw value;
           } else if (arg0 === 2) {
             c1 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
+            const obj4 = { value, done: true };
+            return obj4;
           } else {
             const HTTP = HTTPUtils.HTTP;
-            const obj4 = { url: Endpoints.CREATOR_MONETIZATION_ENABLE_REQUESTS(closure_0), rejectWithError: obj6.rejectWithMigratedError() };
+            const obj5 = { url: Endpoints.CREATOR_MONETIZATION_ENABLE_REQUESTS(closure_0), rejectWithError: obj3.rejectWithMigratedError() };
             const post = HTTP.post;
-            obj6 = HTTPUtils;
+            obj3 = HTTPUtils;
             c2 = 1;
             c1 = 1;
-            const obj5 = { value: post(obj4), done: false };
-            return obj5;
+            const obj6 = { value: post(obj5), done: false };
+            return obj6;
           }
         } else if (arg0 === 1) {
           c1 = 3;
@@ -61,9 +61,9 @@ let obj = function _createCreatorMonetizationEnableRequest() {
           c1 = 3;
           return { value: "HermesInternal", done: null };
         }
-      } catch (tmp4) {
+      } catch (tmp8) {
         c1 = 3;
-        throw tmp4;
+        throw tmp8;
       }
     }
   });
@@ -143,7 +143,7 @@ obj = function _acceptCreatorMonetizationTerms() {
 };
 obj = function _acceptCreatorMonetizationTermsV() {
   obj = _asyncToGenerator(async (arg0, value) => {
-    let obj6;
+    let obj3;
     let closure_0 = arg0;
     if (c1 === 2) {
       c1 = 3;
@@ -166,17 +166,17 @@ obj = function _acceptCreatorMonetizationTermsV() {
             throw value;
           } else if (arg0 === 2) {
             c1 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
+            const obj4 = { value, done: true };
+            return obj4;
           } else {
             const HTTP = HTTPUtils.HTTP;
-            const obj4 = { url: Endpoints.CREATOR_MONETIZATION_ACCEPT_TERMS_V2(closure_0), rejectWithError: obj6.rejectWithMigratedError() };
+            const obj5 = { url: Endpoints.CREATOR_MONETIZATION_ACCEPT_TERMS_V2(closure_0), rejectWithError: obj3.rejectWithMigratedError() };
             const post = HTTP.post;
-            obj6 = HTTPUtils;
+            obj3 = HTTPUtils;
             c2 = 1;
             c1 = 1;
-            const obj5 = { value: post(obj4), done: false };
-            return obj5;
+            const obj6 = { value: post(obj5), done: false };
+            return obj6;
           }
         } else if (arg0 === 1) {
           c1 = 3;
@@ -189,9 +189,9 @@ obj = function _acceptCreatorMonetizationTermsV() {
           c1 = 3;
           return { value: "HermesInternal", done: null };
         }
-      } catch (tmp4) {
+      } catch (tmp8) {
         c1 = 3;
-        throw tmp4;
+        throw tmp8;
       }
     }
   });

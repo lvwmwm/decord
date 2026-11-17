@@ -1,13 +1,13 @@
-// Module ID: 13161
-// Function ID: 13162
+// Module ID: 14402
+// Function ID: 14403
 // Name: useConjurePublishButton
-// Dependencies: [32, 19, 1113, 4131, 13162, 2]
+// Dependencies: [32, 19, 1113, 4133, 14403, 2]
 // Exports: default
 
-// Module 13161 (useConjurePublishButton)
+// Module 14402 (useConjurePublishButton)
 import intl3 from "intl" /* 1113 */;
-import _modDef4131 from "module_4131" /* 4131 */;
-import useConjurePublishActionDefault from "useConjurePublishAction" /* 13162 */;
+import _modDef4133 from "module_4133" /* 4133 */;
+import useConjurePublishActionDefault from "useConjurePublishAction" /* 14403 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -18,13 +18,13 @@ function publishButtonText(upToDate, arg1) {
     let label;
     if (null == upToDate) {
       const intl2 = intl3.intl;
-      label = intl2.string(_modDef4131["120EFN"]);
+      label = intl2.string(_modDef4133["120EFN"]);
     } else {
       const tmp2 = null != upToDate && upToDate.upToDate && "publish" === upToDate.action && !upToDate.awaitingApproval;
       if (tmp2) {
         if (!upToDate.publishing) {
           const intl = intl3.intl;
-          label = intl.string(_modDef4131.kAfbEN);
+          label = intl.string(_modDef4133.kAfbEN);
         }
       }
       label = upToDate.label;
@@ -39,6 +39,7 @@ export default function useConjurePublishButton(arg0, arg1, arg2, arg3) {
   let closure_129_3;
   let str2;
   let tmp13;
+  let tmp16;
   let tmp2;
   let closure_0 = arg1;
   let closure_1 = arg2;
@@ -91,7 +92,7 @@ export default function useConjurePublishButton(arg0, arg1, arg2, arg3) {
   if (true !== publishing) {
     tmp11 = tmp2;
   }
-  const obj2 = { publishOptions: memo1, publish: tmp7, publishing: true === publishing, confirmation: tmp11, variant: str2, text: publishButtonText(tmp7, tmp11), label: publishButtonText(tmp7, null), indicator: tmp13 };
+  const obj2 = { publishOptions: memo1, publish: tmp7, publishing: true === publishing, confirmation: tmp11, variant: str2, text: publishButtonText(tmp7, tmp11), label: publishButtonText(tmp7, null), indicator: tmp13, pendingChanges: tmp16 };
   str2 = "primary";
   const tmp12 = null != tmp7 && tmp7.upToDate && "publish" === tmp7.action && !tmp7.awaitingApproval;
   if (tmp12) {
@@ -109,6 +110,19 @@ export default function useConjurePublishButton(arg0, arg1, arg2, arg3) {
       str3 = tmp15;
     }
     tmp13 = str3;
+  }
+  tmp16 = null != tmp7;
+  if (tmp16) {
+    let isUpdate = tmp7.isUpdate;
+    if (!isUpdate) {
+      const status = tmp7.status;
+      let publishState;
+      if (status != null) {
+        publishState = status.publishState;
+      }
+      isUpdate = "not_live" === publishState;
+    }
+    tmp16 = isUpdate;
   }
   return obj2;
 };

@@ -1,23 +1,23 @@
-// Module ID: 15822
-// Function ID: 15823
+// Module ID: 15856
+// Function ID: 15857
 // Name: UserProfileApplicationWidgetPreview
-// Dependencies: [19, 17, 502, 21, 575, 5306, 504, 12264, 12251, 12147, 12149, 12256, 12259, 6010, 2]
+// Dependencies: [19, 17, 502, 21, 575, 5310, 504, 11010, 10997, 10893, 10895, 11002, 11005, 6014, 2]
 // Exports: default
 
-// Module 15822 (UserProfileApplicationWidgetPreview)
+// Module 15856 (UserProfileApplicationWidgetPreview)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import ApplicationWidgetLayoutName from "ApplicationWidgetLayoutName" /* 12147 */;
-import _mod12149 from "module_12149" /* 12149 */;
-import ApplicationWidgetConfigSurface from "ApplicationWidgetConfigSurface" /* 12251 */;
-import UserProfileApplicationWidgetSkeletons from "UserProfileApplicationWidgetSkeletons" /* 12256 */;
-import UserProfileApplicationWidgetHeroImageDefault from "UserProfileApplicationWidgetHeroImage" /* 12259 */;
-import useApplicationWidgetLayoutRendererPropsDefault from "useApplicationWidgetLayoutRendererProps" /* 12264 */;
+import ApplicationWidgetLayoutName from "ApplicationWidgetLayoutName" /* 10893 */;
+import _mod10895 from "module_10895" /* 10895 */;
+import ApplicationWidgetConfigSurface from "ApplicationWidgetConfigSurface" /* 10997 */;
+import UserProfileApplicationWidgetSkeletons from "UserProfileApplicationWidgetSkeletons" /* 11002 */;
+import UserProfileApplicationWidgetHeroImageDefault from "UserProfileApplicationWidgetHeroImage" /* 11005 */;
+import useApplicationWidgetLayoutRendererPropsDefault from "useApplicationWidgetLayoutRendererProps" /* 11010 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -75,7 +75,7 @@ export default function UserProfileApplicationWidgetPreview(applicationId) {
     layout = tmp7.layout;
   }
   const tmp9 = layout === ApplicationWidgetLayoutName.ApplicationWidgetLayoutName.ADD_WIDGET_PREVIEW_HERO;
-  const tmp2Result = _mod12149;
+  const tmp2Result = _mod10895;
   const result = tmp2Result.bindResolveFieldValue(resolutionContext);
   if (tmp9) {
     let hero_image;
@@ -90,7 +90,7 @@ export default function UserProfileApplicationWidgetPreview(applicationId) {
   if (contained_image != null) {
     image = contained_image.fields.image;
   }
-  const items1 = [_mod12149.ResolvedValueType.MEDIA];
+  const items1 = [_mod10895.ResolvedValueType.MEDIA];
   const resultResult = result(image, items1);
   const obj2 = { style: tmp.preview, importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, children: items6 };
   const obj3 = { style: tmp.contentColumn, children: metroRequire(View, obj4) };
@@ -129,7 +129,7 @@ export default function UserProfileApplicationWidgetPreview(applicationId) {
       tmp17Result = tmp17(tmp16, obj16);
     } else {
       const obj18 = { style: tmp.imageSkeleton };
-      tmp17Result = tmp17(tmp2(12256).ImageSkeleton, obj18);
+      tmp17Result = tmp17(tmp2(11002).ImageSkeleton, obj18);
     }
     tmp17Result4 = tmp17Result;
   } else {
@@ -137,10 +137,10 @@ export default function UserProfileApplicationWidgetPreview(applicationId) {
     if (null != resultResult) {
       const obj20 = { source: obj21, style: tmp.containedImage, resizeMode: "contain" };
       obj21 = { uri: resultResult.media.url };
-      tmp17Result3 = tmp17(tmp5(6010), obj20);
+      tmp17Result3 = tmp17(tmp5(6014), obj20);
     } else {
       const obj22 = { style: tmp.containedImageSkeleton };
-      tmp17Result3 = tmp17(tmp2(12256).ImageSkeleton, obj22);
+      tmp17Result3 = tmp17(tmp2(11002).ImageSkeleton, obj22);
     }
     tmp17Result4 = tmp17(tmp16, obj19);
   }

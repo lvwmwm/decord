@@ -1,26 +1,26 @@
-// Module ID: 19443
-// Function ID: 19444
+// Module ID: 19488
+// Function ID: 19489
 // Name: SwipeForMemberListWrapper
-// Dependencies: [32, 19, 17, 9064, 9052, 1072, 21, 3, 5306, 575, 6057, 12011, 5485, 1655, 5889, 5537, 7587, 5491, 12421, 1108, 18720, 11253, 18731, 13121, 5483, 5482, 6322, 1503, 19367, 14850, 18724, 18729, 18726, 5588, 19444, 14565, 19360, 10271, 5906, 19445, 15122, 2]
+// Dependencies: [32, 19, 17, 9075, 9063, 1072, 21, 3, 5310, 575, 6064, 12448, 5489, 1655, 5893, 5541, 7597, 5495, 12627, 1108, 18761, 11276, 18772, 14367, 5487, 5486, 6330, 1503, 19412, 13931, 18765, 18770, 18767, 5592, 19489, 13439, 19405, 10279, 5910, 19490, 14336, 2]
 // Exports: default
 
-// Module 19443 (SwipeForMemberListWrapper)
+// Module 19488 (SwipeForMemberListWrapper)
 import LoggerDefault from "Logger" /* 3 */;
 import nativeDefault from "native" /* 575 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5482 */;
-import RootNavigationRef from "RootNavigationRef" /* 5483 */;
-import useChatLayout from "useChatLayout" /* 5485 */;
-import ChatInputUtils from "ChatInputUtils" /* 5491 */;
-import react_native from "react-native" /* 9052 */;
-import getJankSurfaceName from "getJankSurfaceName" /* 18731 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5486 */;
+import RootNavigationRef from "RootNavigationRef" /* 5487 */;
+import useChatLayout from "useChatLayout" /* 5489 */;
+import ChatInputUtils from "ChatInputUtils" /* 5495 */;
+import react_native from "react-native" /* 9063 */;
+import getJankSurfaceName from "getJankSurfaceName" /* 18772 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import ChannelDetailsStore from "ChannelDetailsStore" /* 9064 */;
+import ChannelDetailsStore from "ChannelDetailsStore" /* 9075 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -75,7 +75,7 @@ export default function _default(channelId) {
   let items34;
   let items35;
   let movePanel;
-  let obj11;
+  let obj12;
   let obj6;
   let panelGestureContext;
   let str;
@@ -562,12 +562,14 @@ export default function _default(channelId) {
   let obj9 = { children: navigation(tmp2(tmp3[39]), { isShowing: derivedStateFromSharedValue, channelId: first, isSearchLocked: false, onBackPress: callback5, componentWidth: tmp9, onChannelDeleted: callback4 }) };
   const LayerScope = tmp13(tmp3[38]).LayerScope;
   items34[1] = navigation(LayerScope, obj9);
-  items34[2] = navigation(tmp2(tmp3[40]), {});
-  const obj10 = { style: items35, children: navigation(panelGestureContext, obj11) };
+  const obj10 = { background: tmp2(tmp3[9]).colors.MOBILE_ACTIONSHEET_BACKGROUND, ignoreTheme: true };
+  const tmp2Result2 = tmp2(tmp3[40]);
+  items34[2] = navigation(tmp2Result2, obj10);
+  const obj11 = { style: items35, children: navigation(panelGestureContext, obj12) };
   items35 = [StyleSheet.absoluteFill, animatedStyle];
-  obj11 = { style: tmp.memberListPreview };
+  obj12 = { style: tmp.memberListPreview };
   const View2 = tmp2(tmp3[13]).View;
-  items34[3] = navigation(View2, obj10);
+  items34[3] = navigation(View2, obj11);
   items32[1] = closure_14(View, obj8);
   items30[1] = navigation(GestureDetector, obj5);
   return closure_14(Provider, obj3);

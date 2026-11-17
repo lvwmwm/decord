@@ -1,14 +1,14 @@
-// Module ID: 14545
-// Function ID: 14546
+// Module ID: 13416
+// Function ID: 13417
 // Name: FinalizeTraitActionSheet
-// Dependencies: [21, 6734, 7951, 7913, 1113, 3317, 7745, 5542, 7747, 2]
+// Dependencies: [21, 6742, 7961, 7923, 1113, 3319, 7755, 5546, 7757, 2]
 // Exports: default
 
-// Module 14545 (FinalizeTraitActionSheet)
+// Module 13416 (FinalizeTraitActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import _modDef3317 from "module_3317" /* 3317 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6734 */;
+import _modDef3319 from "module_3319" /* 3319 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6742 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -20,13 +20,13 @@ export default function FinalizeTraitActionSheet(onSelectOption) {
   let intl2;
   onSelectOption = onSelectOption.onSelectOption;
   const selectedOption = onSelectOption.selectedOption;
-  const ActionSheet = onSelectOption(7951).ActionSheet;
-  let obj2 = { title: intl.string(_modDef3317.Zl5vPW) };
-  const BottomSheetTitleHeader = onSelectOption(7913).BottomSheetTitleHeader;
+  const ActionSheet = onSelectOption(7961).ActionSheet;
+  let obj2 = { title: intl.string(_modDef3319.Zl5vPW) };
+  const BottomSheetTitleHeader = onSelectOption(7923).BottomSheetTitleHeader;
   intl = onSelectOption(1113).intl;
   ({
     hasIcons: false,
-    accessibilityLabel: intl2.string(_modDef3317.Zl5vPW),
+    accessibilityLabel: intl2.string(_modDef3319.Zl5vPW),
     defaultValue: selectedOption,
     onChange(arg0) {
       const obj = ActionSheetActionCreatorsDefault;
@@ -39,7 +39,7 @@ export default function FinalizeTraitActionSheet(onSelectOption) {
       return <TableRadioRow key={arg0} value={arg0} label={obj2.getCustomizationOptionName(arg0)} />;
     })
   });
-  const TableRadioGroup = onSelectOption(7745).TableRadioGroup;
+  const TableRadioGroup = onSelectOption(7755).TableRadioGroup;
   intl2 = onSelectOption(1113).intl;
   return <ActionSheet startExpanded header={null}>{null}</ActionSheet>;
 };

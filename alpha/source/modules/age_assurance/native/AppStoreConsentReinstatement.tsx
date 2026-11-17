@@ -1,16 +1,16 @@
-// Module ID: 20366
-// Function ID: 20367
+// Module ID: 20414
+// Function ID: 20415
 // Name: AppStoreConsentReinstatement
-// Dependencies: [5, 5986, 1388, 3, 20367, 8387, 1380, 8379, 8380, 2]
+// Dependencies: [5, 5990, 1388, 3, 20415, 8398, 1380, 8390, 8391, 2]
 // Exports: beginAppStoreConsentReinstatement, cancelAppStoreConsentReinstatement, isAppStoreConsentReinstatementEnabledForSession, settleAppStoreConsentReinstatement
 
-// Module 20366 (AppStoreConsentReinstatement)
+// Module 20414 (AppStoreConsentReinstatement)
 import LoggerDefault from "Logger" /* 3 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import AppStoreAgeSignalReport from "AppStoreAgeSignalReport" /* 8387 */;
-import AppStoreConsentReinstateEndpointExperiment from "AppStoreConsentReinstateEndpointExperiment" /* 20367 */;
+import AppStoreAgeSignalReport from "AppStoreAgeSignalReport" /* 8398 */;
+import AppStoreConsentReinstateEndpointExperiment from "AppStoreConsentReinstateEndpointExperiment" /* 20415 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import RegionalFeatureConfigStore from "RegionalFeatureConfigStore" /* 5986 */;
+import RegionalFeatureConfigStore from "RegionalFeatureConfigStore" /* 5990 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 

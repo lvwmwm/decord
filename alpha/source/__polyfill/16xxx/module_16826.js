@@ -1,44 +1,41 @@
 // Module ID: 16826
 // Function ID: 16827
-// Dependencies: []
+// Dependencies: [16789, 16787, 16805, 16827, 16828]
 
 // Module 16826
-const obj = {
-  isASCIIDigit(decodeResult) {
-    return decodeResult >= 48 && decodeResult <= 57;
-  },
-  isASCIIAlpha(input) {
-    let tmp = input >= 65 && input <= 90;
-    if (!tmp) {
-      tmp = input >= 97 && input <= 122;
-      const tmp2 = input >= 97 && input <= 122;
-    }
-    return tmp;
-  },
-  isASCIIAlphanumeric(arg0) {
-    let tmp = arg0 >= 65 && arg0 <= 90;
-    if (!tmp) {
-      tmp = arg0 >= 97 && arg0 <= 122;
-      const tmp2 = arg0 >= 97 && arg0 <= 122;
-    }
-    if (!tmp) {
-      tmp = arg0 >= 48 && arg0 <= 57;
-      const tmp3 = arg0 >= 48 && arg0 <= 57;
-    }
-    return tmp;
-  },
-  isASCIIHex(decodeResult) {
-    let tmp = decodeResult >= 48 && decodeResult <= 57;
-    if (!tmp) {
-      tmp = decodeResult >= 65 && decodeResult <= 70;
-      const tmp2 = decodeResult >= 65 && decodeResult <= 70;
-    }
-    if (!tmp) {
-      tmp = decodeResult >= 97 && decodeResult <= 102;
-      const tmp3 = decodeResult >= 97 && decodeResult <= 102;
-    }
-    return tmp;
-  }
-};
+import _mod16787 from "module_16787" /* 16787 */;
+import _mod16789 from "module_16789" /* 16789 */;
+import _mod16805 from "module_16805" /* 16805 */;
+import _mod16827 from "module_16827" /* 16827 */;
 
-export default obj;
+let closure_2 = _mod16789([].push);
+
+export default (arg0, arg1) => {
+  let num;
+  const tmp = _mod16787(arg0);
+  const items = [];
+  for (const key10010 in tmp) {
+    let tmp12 = require;
+    let tmp14 = _mod16805;
+    let tmp14Result = tmp14(_mod16827, key10010);
+    let tmp2 = !tmp14Result && tmp12(16805)(tmp, key10010);
+    if (!tmp2) {
+      continue;
+    } else {
+      let tmp4 = closure_2(items, key10010);
+      continue;
+    }
+    continue;
+  }
+  for (let num = 0; arg1.length > num; num = num + 1) {
+    let tmp5 = require;
+    let tmp7 = arg1[num];
+    if (_mod16805(tmp, tmp7)) {
+      let tmp5Result = tmp5(16828);
+      if (!(~tmp5Result.indexOf(items, tmp7))) {
+        let tmp10 = closure_2(items, tmp7);
+      }
+    }
+  }
+  return items;
+};

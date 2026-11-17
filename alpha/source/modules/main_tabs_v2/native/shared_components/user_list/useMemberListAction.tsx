@@ -1,23 +1,23 @@
-// Module ID: 12528
-// Function ID: 12529
+// Module ID: 12723
+// Function ID: 12724
 // Name: useMemberListAction
-// Dependencies: [32, 19, 17, 5155, 5238, 5248, 1388, 10578, 1072, 21, 5306, 563, 12529, 12530, 8131, 12533, 12537, 7824, 12540, 12549, 12550, 1113, 10982, 10981, 5338, 5139, 12552, 12557, 10569, 12558, 2020, 8460, 6327, 8108, 7438, 12562, 2565, 2]
+// Dependencies: [32, 19, 17, 5159, 5242, 5252, 1388, 10277, 1072, 21, 5310, 563, 12724, 12725, 8142, 12728, 12732, 7834, 12735, 12744, 12745, 1113, 11733, 11734, 5342, 5143, 12747, 12752, 11049, 12753, 2020, 8471, 6335, 8119, 7448, 12757, 2565, 2]
 // Exports: default
 
-// Module 12528 (useMemberListAction)
+// Module 12723 (useMemberListAction)
 import react_native from "react-native" /* 17 */;
-import UsersFastListConstants from "UsersFastListConstants" /* 10578 */;
-import isGameOrganizationInviteRecipientDefault from "isGameOrganizationInviteRecipient" /* 12529 */;
-import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 12540 */;
+import UsersFastListConstants from "UsersFastListConstants" /* 10277 */;
+import isGameOrganizationInviteRecipientDefault from "isGameOrganizationInviteRecipient" /* 12724 */;
+import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 12735 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import PermissionStore from "PermissionStore" /* 5238 */;
-import RelationshipStore from "RelationshipStore" /* 5248 */;
+import ChannelStore from "ChannelStore" /* 5159 */;
+import PermissionStore from "PermissionStore" /* 5242 */;
+import RelationshipStore from "RelationshipStore" /* 5252 */;
 import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

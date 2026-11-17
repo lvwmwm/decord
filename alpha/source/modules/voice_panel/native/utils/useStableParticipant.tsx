@@ -1,16 +1,16 @@
-// Module ID: 19990
-// Function ID: 19991
+// Module ID: 20036
+// Function ID: 20037
 // Name: useStableParticipant
-// Dependencies: [7016, 502, 2133, 1388, 5973, 558, 504, 6341, 7027, 11990, 2]
+// Dependencies: [7024, 502, 2133, 1388, 5977, 558, 504, 6349, 7035, 11417, 2]
 // Exports: default, isStableActivityParticipant, isStableParticipantWithUser, isStableStreamParticipant, isStableUserParticipant, stableParticipantHasVideo
 
-// Module 19990 (useStableParticipant)
+// Module 20036 (useStableParticipant)
 import shallowEqualDefault from "shallowEqual" /* 558 */;
-import CallConstants from "CallConstants" /* 5973 */;
-import NicknameUtils from "NicknameUtils" /* 6341 */;
-import useAvatarDecoration from "useAvatarDecoration" /* 7027 */;
-import participantHasVideoDefault from "participantHasVideo" /* 11990 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 7016 */;
+import CallConstants from "CallConstants" /* 5977 */;
+import NicknameUtils from "NicknameUtils" /* 6349 */;
+import useAvatarDecoration from "useAvatarDecoration" /* 7035 */;
+import participantHasVideoDefault from "participantHasVideo" /* 11417 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 7024 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
 import UserStore from "UserStore" /* 1388 */;
@@ -57,7 +57,7 @@ export default function useStableParticipant(id, arg1, arg2) {
         const user = UserStore.getUser(tmp);
         if (null != user) {
           const id3 = user.id;
-          const obj3 = { type: ParticipantTypes.USER, id, user, selfVideo: false, canRenderVideo: false, userNick: obj5.getName(closure_2, tmp3, user), userAvatarDecoration: obj6.getAvatarDecoration(user, closure_2), streamId: "Promise", ringing: null, hasVideo: 176.75, isSelf: id3 === id1 };
+          const obj3 = { type: ParticipantTypes.USER, id, user, selfVideo: false, canRenderVideo: false, userNick: obj5.getName(closure_2, tmp3, user), userAvatarDecoration: obj6.getAvatarDecoration(user, closure_2), streamId: "Promise", ringing: null, hasVideo: 9.671, isSelf: id3 === id1 };
           id1 = AuthenticationStore.getId();
           obj5 = NicknameUtils;
           obj6 = useAvatarDecoration;

@@ -1,48 +1,48 @@
 // Module ID: 9883
 // Function ID: 9884
-// Dependencies: [9795, 9798, 9797, 9803]
-// Exports: addConsoleInstrumentationHandler
+// Dependencies: [9837, 9824, 9810]
+// Exports: addBreadcrumb
 
 // Module 9883
-import _mod9795 from "module_9795" /* 9795 */;
-import _mod9798 from "module_9798" /* 9798 */;
+import _mod9810 from "module_9810" /* 9810 */;
+import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 9824 */;
+import _mod9837 from "module_9837" /* 9837 */;
 
-let tmp;
-const _mod9797 = tmp(9797);
-function instrumentConsole() {
-  let tmp = require;
-  let tmp2 = dependencyMap;
-  if ("console" in _mod9798.GLOBAL_OBJ) {
-    const CONSOLE_LEVELS = _mod9797.CONSOLE_LEVELS;
-    const item = CONSOLE_LEVELS.forEach((item) => {
-      let closure_0 = item;
-      let tmp = closure_0;
-      let tmp2 = closure_1;
-      if (item in closure_0(closure_1[1]).GLOBAL_OBJ.console) {
-        const tmpResult = tmp(tmp2[3]);
-        tmpResult.fill(tmp(tmp2[1]).GLOBAL_OBJ.console, item, (arg0) => {
-          _mod9797.originalConsoleMethods[level] = arg0;
-          return () => {
-            const items = [...arguments];
-            const obj = { args: items, level };
-            const obj2 = level(closure_2_1[0]);
-            obj2.triggerHandlers("console", obj);
-            const obj3 = level(closure_2_1[2]).originalConsoleMethods[level];
-            const tmp = level;
-            const tmp2 = closure_2_1;
-            if (obj3) {
-              obj3.apply(tmp(tmp2[1]).GLOBAL_OBJ.console, items);
-            }
-          };
-        });
+
+export function addBreadcrumb(arg0, arg1) {
+  let tmpResult;
+  let closure_0 = arg1;
+  const obj = _mod9837;
+  const client = obj.getClient();
+  const obj3 = _mod9837;
+  const isolationScope = obj3.getIsolationScope();
+  if (client) {
+    const options = client.getOptions();
+    let beforeBreadcrumb = options.beforeBreadcrumb;
+    let tmp5 = null;
+    if (undefined !== beforeBreadcrumb) {
+      tmp5 = beforeBreadcrumb;
+    }
+    beforeBreadcrumb = tmp5;
+    const maxBreadcrumbs = options.maxBreadcrumbs;
+    let num = 100;
+    if (undefined !== maxBreadcrumbs) {
+      num = maxBreadcrumbs;
+    }
+    if (num > 0) {
+      let obj2 = { timestamp: tmpResult.dateTimestampInSeconds() };
+      tmpResult = _browserPerformanceTimeOriginMode;
+      const merged = Object.assign(arg0);
+      if (tmp5) {
+        const tmpResult2 = _mod9810;
+        obj2 = tmpResult2.consoleSandbox(() => beforeBreadcrumb(obj2, closure_0));
       }
-    });
+      if (null !== obj2) {
+        if (client.emit) {
+          client.emit("beforeAddBreadcrumb", obj2, arg1);
+        }
+        isolationScope.addBreadcrumb(obj2, num);
+      }
+    }
   }
-}
-
-export function addConsoleInstrumentationHandler(arg0) {
-  const obj = _mod9795;
-  obj.addHandler("console", arg0);
-  const obj2 = _mod9795;
-  obj2.maybeInstrument("console", instrumentConsole);
 }

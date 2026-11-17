@@ -1,23 +1,23 @@
-// Module ID: 17433
-// Function ID: 17434
+// Module ID: 17470
+// Function ID: 17471
 // Name: FamilyCenterActivityItemPreview
-// Dependencies: [19, 17, 8584, 21, 5306, 17432, 575, 6010, 9509, 8561, 9512, 10565, 9981, 9436, 2114, 2111, 2]
+// Dependencies: [19, 17, 8595, 21, 5310, 17469, 575, 6014, 9521, 8572, 9524, 13628, 9994, 9446, 2114, 2111, 2]
 // Exports: default
 
-// Module 17433 (FamilyCenterActivityItemPreview)
+// Module 17470 (FamilyCenterActivityItemPreview)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import utils from "utils" /* 2111 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 2114 */;
-import FastImageDefault from "FastImage" /* 6010 */;
-import useMaybeFetchProfileFrameDefault from "useMaybeFetchProfileFrame" /* 8561 */;
-import ProfileFrameConstants from "ProfileFrameConstants" /* 8584 */;
-import NameplateUtils from "NameplateUtils" /* 9509 */;
-import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 9512 */;
-import FamilyCenterActivityPurchaseRowUtils from "FamilyCenterActivityPurchaseRowUtils" /* 17432 */;
+import FastImageDefault from "FastImage" /* 6014 */;
+import useMaybeFetchProfileFrameDefault from "useMaybeFetchProfileFrame" /* 8572 */;
+import ProfileFrameConstants from "ProfileFrameConstants" /* 8595 */;
+import NameplateUtils from "NameplateUtils" /* 9521 */;
+import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 9524 */;
+import FamilyCenterActivityPurchaseRowUtils from "FamilyCenterActivityPurchaseRowUtils" /* 17469 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size_mod from "module_2" /* 2 */;
 
 let size;
@@ -85,9 +85,9 @@ function SubscriptionPreview(arg0) {
   } else {
     const obj4 = FamilyCenterActivityPurchaseRowUtils;
     if (obj4.isGuildBoostSubscription(subscriptionPlanId)) {
-      let NitroWheelIcon = tmp5(9981).BoostGemIcon;
+      let NitroWheelIcon = tmp5(9994).BoostGemIcon;
     } else {
-      NitroWheelIcon = tmp5(9436).NitroWheelIcon;
+      NitroWheelIcon = tmp5(9446).NitroWheelIcon;
     }
     return <tmp8 style={styles.purchasePlaceholder}>{null}</tmp8>;
   }

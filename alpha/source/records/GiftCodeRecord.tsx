@@ -1,14 +1,14 @@
-// Module ID: 11665
-// Function ID: 11666
+// Module ID: 10090
+// Function ID: 10091
 // Name: GiftCodeRecord
-// Dependencies: [1408, 9296, 9624, 2171, 1390, 2169, 1406, 2]
+// Dependencies: [1408, 9305, 9636, 2171, 1390, 2169, 1406, 2]
 
-// Module 11665 (GiftCodeRecord)
+// Module 10090 (GiftCodeRecord)
 import PremiumConstants from "PremiumConstants" /* 1390 */;
 import _modDef2169 from "module_2169" /* 2169 */;
 import Record from "Record" /* 1408 */;
-import SubscriptionTrialRecord from "SubscriptionTrialRecord" /* 9296 */;
-import PromotionRecord from "PromotionRecord" /* 9624 */;
+import SubscriptionTrialRecord from "SubscriptionTrialRecord" /* 9305 */;
+import PromotionRecord from "PromotionRecord" /* 9636 */;
 import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 2171 */;
 import size from "module_2" /* 2 */;
 

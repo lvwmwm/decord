@@ -1,12 +1,12 @@
-// Module ID: 20377
-// Function ID: 20378
+// Module ID: 20425
+// Function ID: 20426
 // Name: ParticipantFocusManager
-// Dependencies: [6061, 7016, 7882, 2]
+// Dependencies: [6068, 7024, 7892, 2]
 
-// Module 20377 (ParticipantFocusManager)
-import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 7016 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
+// Module 20425 (ParticipantFocusManager)
+import RTCConnectionStore from "RTCConnectionStore" /* 6068 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 7024 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7892 */;
 import size from "module_2" /* 2 */;
 
 let map;

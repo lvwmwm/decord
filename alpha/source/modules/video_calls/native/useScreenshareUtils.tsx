@@ -1,28 +1,28 @@
-// Module ID: 12981
-// Function ID: 12982
+// Module ID: 11614
+// Function ID: 11615
 // Name: useScreenshareUtils
-// Dependencies: [19, 17, 6810, 2133, 1072, 6065, 5263, 8857, 2135, 10583, 6852, 6798, 6215, 6247, 12982, 12977, 1627, 12992, 10732, 12993, 12994, 504, 12987, 7918, 1113, 2]
+// Dependencies: [19, 17, 6804, 2133, 1072, 6072, 5267, 8868, 2135, 10283, 6860, 6805, 6223, 6255, 11615, 11610, 1627, 11631, 11632, 11633, 11634, 504, 11620, 7928, 1113, 2]
 // Exports: default, getOSRequirement, getStreamPressHandler, handleCloseScreenshare, tryStartScreenShare
 
-// Module 12981 (useScreenshareUtils)
+// Module 11614 (useScreenshareUtils)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1627 */;
 import inject from "inject" /* 2135 */;
-import Constants2 from "Constants" /* 6065 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 6215 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6798 */;
-import StreamActionCreators from "StreamActionCreators" /* 6852 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7918 */;
-import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 8857 */;
-import CallsUtils from "CallsUtils" /* 10583 */;
-import useHasVideoPermission from "useHasVideoPermission" /* 12977 */;
-import MobileGoLiveUpsellExperimentDefault from "MobileGoLiveUpsellExperiment" /* 12987 */;
+import Constants2 from "Constants" /* 6072 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 6223 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6805 */;
+import StreamActionCreators from "StreamActionCreators" /* 6860 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7928 */;
+import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 8868 */;
+import CallsUtils from "CallsUtils" /* 10283 */;
+import useHasVideoPermission from "useHasVideoPermission" /* 11610 */;
+import MobileGoLiveUpsellExperimentDefault from "MobileGoLiveUpsellExperiment" /* 11620 */;
 import react from "react" /* 19 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6810 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6804 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import DeviceUtils from "DeviceUtils" /* 5263 */;
+import DeviceUtils from "DeviceUtils" /* 5267 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -36,7 +36,7 @@ function l() {
   const obj3 = closure_2_0(closure_2_2[9]);
   const result = obj3.showMinOSScreenshareRequirementAlert();
 }
-const f132703 = (arg0) => {
+const f132149 = (arg0) => {
   const tmp3 = arg0;
   if (tmp3) {
     const tmpResult = require("inject");
@@ -65,7 +65,7 @@ function startStream() {
   const obj = inject;
   if ("android" === obj.getVoiceEngine().platform) {
     const obj2 = ForegroundServiceManagerDefault;
-    const result = obj2.isForegroundServiceRunning(f132703);
+    const result = obj2.isForegroundServiceRunning(f132149);
   } else {
     BroadcastUploadManager.showPicker();
   }
@@ -136,13 +136,13 @@ export default function useScreenshareUtils(arg0) {
       obj.onPress = fn;
       let obj2 = MetaQuestUtils;
       if (obj2.isMetaQuest()) {
-        tmp19Result = tmp19(tmp ? 12992 : 10732);
+        tmp19Result = tmp19(tmp ? 11631 : 11632);
       } else {
         let tmp20;
         if (showMobileGoLiveUpsell) {
-          tmp20 = 12993;
+          tmp20 = 11633;
         } else {
-          tmp20 = tmp ? 12994 : 12993;
+          tmp20 = tmp ? 11634 : 11633;
         }
         tmp19Result = tmp19(tmp20);
       }
@@ -214,7 +214,7 @@ export function tryStartScreenShare(channel) {
     const obj2 = inject;
     if ("android" === obj2.getVoiceEngine().platform) {
       const obj3 = ForegroundServiceManagerDefault;
-      let result = obj3.isForegroundServiceRunning(f132703);
+      let result = obj3.isForegroundServiceRunning(f132149);
     } else {
       BroadcastUploadManager.showPicker();
     }

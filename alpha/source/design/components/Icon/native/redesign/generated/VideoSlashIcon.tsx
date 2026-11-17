@@ -1,14 +1,14 @@
-// Module ID: 15767
-// Function ID: 15768
+// Module ID: 15801
+// Function ID: 15802
 // Name: VideoSlashIcon
-// Dependencies: [19, 21, 575, 6009, 15768, 2]
+// Dependencies: [19, 21, 575, 6013, 15802, 2]
 // Exports: VideoSlashIcon
 
-// Module 15767 (VideoSlashIcon)
+// Module 15801 (VideoSlashIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6009 */;
-import AssetRegistry from "AssetRegistry" /* 15768 */;
+import BaseIconImage2 from "BaseIconImage" /* 6013 */;
+import AssetRegistry from "AssetRegistry" /* 15802 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

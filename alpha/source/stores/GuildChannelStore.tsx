@@ -1,23 +1,23 @@
-// Module ID: 5236
-// Function ID: 5237
+// Module ID: 5240
+// Function ID: 5241
 // Name: GuildChannelStore
-// Dependencies: [5210, 5158, 5237, 5159, 502, 5155, 5218, 5177, 5238, 5248, 1388, 1072, 5180, 12, 5944, 1084, 5243, 504, 572, 2]
+// Dependencies: [5214, 5162, 5241, 5163, 502, 5159, 5222, 5181, 5242, 5252, 1388, 1072, 5184, 12, 5948, 1084, 5247, 504, 572, 2]
 
-// Module 5236 (GuildChannelStore)
+// Module 5240 (GuildChannelStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
-import createFavoritesGuildChannelRecord from "createFavoritesGuildChannelRecord" /* 5237 */;
-import PermissionUtilsAll from "PermissionUtils" /* 5243 */;
-import GatedChannelStore from "GatedChannelStore" /* 5210 */;
-import FavoriteStore from "FavoriteStore" /* 5158 */;
-import ChannelRecord from "ChannelRecord" /* 5159 */;
+import createFavoritesGuildChannelRecord from "createFavoritesGuildChannelRecord" /* 5241 */;
+import PermissionUtilsAll from "PermissionUtils" /* 5247 */;
+import GatedChannelStore from "GatedChannelStore" /* 5214 */;
+import FavoriteStore from "FavoriteStore" /* 5162 */;
+import ChannelRecord from "ChannelRecord" /* 5163 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import GuildMemberStore from "GuildMemberStore" /* 5218 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import PermissionStore from "PermissionStore" /* 5238 */;
-import RelationshipStore from "RelationshipStore" /* 5248 */;
+import ChannelStore from "ChannelStore" /* 5159 */;
+import GuildMemberStore from "GuildMemberStore" /* 5222 */;
+import GuildStore from "GuildStore" /* 5181 */;
+import PermissionStore from "PermissionStore" /* 5242 */;
+import RelationshipStore from "RelationshipStore" /* 5252 */;
 import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -85,7 +85,7 @@ function rebuildGuildChannels(guildId) {
   closure_28[guildId] = [];
   const id = obj.id;
   const tmp2 = guildId;
-  const obj2 = obj(5180);
+  const obj2 = obj(5184);
   obj3 = {};
   if (obj2.isFavoritesGuildId(id)) {
     let tmp9 = FavoriteStore;

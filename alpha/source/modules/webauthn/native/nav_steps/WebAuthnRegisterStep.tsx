@@ -1,20 +1,20 @@
-// Module ID: 17313
-// Function ID: 17314
+// Module ID: 17350
+// Function ID: 17351
 // Name: WebAuthnRegisterStep
-// Dependencies: [32, 19, 17, 1072, 21, 5306, 575, 7775, 1113, 1187, 1502, 1380, 17314, 7415, 17315, 5919, 6941, 5926, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5310, 575, 7785, 1113, 1187, 1502, 1380, 17351, 7425, 17352, 5923, 6949, 5930, 2]
 // Exports: default
 
-// Module 17313 (WebAuthnRegisterStep)
+// Module 17350 (WebAuthnRegisterStep)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import NativeCeremoniesDefault from "NativeCeremonies" /* 7775 */;
+import NativeCeremoniesDefault from "NativeCeremonies" /* 7785 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault, navigation;
@@ -107,15 +107,15 @@ export default function WebAuthnRegisterStep() {
   let closure_5 = obj2.useMemo(() => obj4[first], items1);
   const items2 = [onRegisterSuccess, tmp11, tmp8];
   let closure_6 = obj2.useMemo(() => ({ onRegisterSuccess, setError: dependencyMap, setRegistering: importDefault }), items2);
-  const tmpResult = navigation(17314);
+  const tmpResult = navigation(17351);
   const announceError = tmpResult.useAnnounceError(tmp10);
   obj4 = { contentContainerStyle: tmp4.scrollContent, alwaysBounceVertical: false, children: closure_9(SafeAreaPaddingView, rect) };
   rect = { bottom: true, left: true, right: true, style: tmp4.flexContainer, children: items4 };
   const obj5 = { style: tmp4.centerFlex, children: items3 };
-  SafeAreaPaddingView = tmp(7415).SafeAreaPaddingView;
-  items3 = [closure_8(navigation(17315).KeyImage, {}), , ];
+  SafeAreaPaddingView = tmp(7425).SafeAreaPaddingView;
+  items3 = [closure_8(navigation(17352).KeyImage, {}), , ];
   const obj6 = { style: tmp4.margin, variant: "body-md/normal", children: stringResult };
-  const Text = tmp(5919).Text;
+  const Text = tmp(5923).Text;
   const intl = tmp(1113).intl;
   const string = intl.string;
   const t = tmp(1113).t;
@@ -130,7 +130,7 @@ export default function WebAuthnRegisterStep() {
   let tmp18Result = "" !== tmp10;
   if (tmp18Result) {
     const obj7 = { variant: "body-md/normal", color: "text-feedback-critical", children: tmp10 };
-    tmp18Result = tmp18(tmp(5919).Text, obj7);
+    tmp18Result = tmp18(tmp(5923).Text, obj7);
   }
   items3[2] = tmp18Result;
   items4 = [closure_9(tmp21, obj5), , ];
@@ -140,8 +140,8 @@ export default function WebAuthnRegisterStep() {
     shouldDisplayAndroidFidoSelector = tmp18(AndroidPasskeyRadioGroup, obj8);
   }
   items4[1] = shouldDisplayAndroidFidoSelector;
-  const ButtonGroup = tmp(6941).ButtonGroup;
-  const Button = tmp(5926).Button;
+  const ButtonGroup = tmp(6949).ButtonGroup;
+  const Button = tmp(5930).Button;
   const intl2 = tmp(1113).intl;
   const string2 = intl2.string;
   const t2 = tmp(1113).t;

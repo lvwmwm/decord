@@ -1,9 +1,9 @@
-// Module ID: 7472
-// Function ID: 7473
+// Module ID: 7482
+// Function ID: 7483
 // Name: ActivityGamePlatforms
 // Dependencies: [2]
 
-// Module 7472 (ActivityGamePlatforms)
+// Module 7482 (ActivityGamePlatforms)
 import size from "module_2" /* 2 */;
 
 const obj = { CONNECT: new Set(["android", "desktop", "embedded", "ios", "meta_quest", "ps4", "ps5", "xbox"]), PLAYSTATION: new Set(["ps4", "ps5"]) };

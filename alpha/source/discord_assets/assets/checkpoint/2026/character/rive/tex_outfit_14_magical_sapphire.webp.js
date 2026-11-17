@@ -1,11 +1,11 @@
-// Module ID: 14436
-// Function ID: 14437
+// Module ID: 13301
+// Function ID: 13302
 // Dependencies: [2]
 
-// Module 14436
+// Module 13301
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_outfit_14_magical_sapphire.webp.js");
 
-export default "https://cdn.discordapp.com/assets/content/4d0eca018f23d91c94d83a2c85b4e0a42606bff9f17e842cb0cf6b9d444bb56f.webp";
-export const metadata = { fileBytes: 32932 };
+export default "https://cdn.discordapp.com/assets/content/76cb60e4c7cee20be9fd070e89afe76e1001d8a50cd5c71f6ab1fdb23cf197ae.webp";
+export const metadata = { fileBytes: 80638 };

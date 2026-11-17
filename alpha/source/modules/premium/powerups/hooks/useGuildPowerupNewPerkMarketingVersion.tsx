@@ -1,16 +1,16 @@
-// Module ID: 10703
-// Function ID: 10704
+// Module ID: 14018
+// Function ID: 14019
 // Name: useGuildPowerupNewPerkMarketingVersion
-// Dependencies: [19, 5177, 5238, 5514, 1072, 5532, 504, 5519, 5518, 5517, 8408, 2]
+// Dependencies: [19, 5181, 5242, 5518, 1072, 5536, 504, 5523, 5522, 5521, 8419, 2]
 // Exports: default
 
-// Module 10703 (useGuildPowerupNewPerkMarketingVersion)
-import Powerups from "Powerups" /* 5517 */;
-import GuildSettingsServerTagUtils from "GuildSettingsServerTagUtils" /* 8408 */;
+// Module 14018 (useGuildPowerupNewPerkMarketingVersion)
+import Powerups from "Powerups" /* 5521 */;
+import GuildSettingsServerTagUtils from "GuildSettingsServerTagUtils" /* 8419 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import PermissionStore from "PermissionStore" /* 5238 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5514 */;
+import GuildStore from "GuildStore" /* 5181 */;
+import PermissionStore from "PermissionStore" /* 5242 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5518 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

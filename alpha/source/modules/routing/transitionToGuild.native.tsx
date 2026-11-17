@@ -1,13 +1,13 @@
-// Module ID: 7231
-// Function ID: 7232
+// Module ID: 7239
+// Function ID: 7240
 // Name: transitionToGuild
-// Dependencies: [32, 1072, 7232, 1099, 2]
+// Dependencies: [32, 1072, 7240, 1099, 2]
 // Exports: transitionToGuild
 
-// Module 7231 (transitionToGuild)
+// Module 7239 (transitionToGuild)
 import Constants from "Constants" /* 1072 */;
 import router_utils from "router_utils" /* 1099 */;
-import getGuildTransitionRoute from "getGuildTransitionRoute" /* 7232 */;
+import getGuildTransitionRoute from "getGuildTransitionRoute" /* 7240 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

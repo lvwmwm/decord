@@ -1,12 +1,12 @@
-// Module ID: 16395
-// Function ID: 16396
+// Module ID: 16431
+// Function ID: 16432
 // Name: GuildBadgeSnail
-// Dependencies: [19, 21, 16357, 8263, 2]
+// Dependencies: [19, 21, 16393, 8274, 2]
 // Exports: GuildBadgeSnail
 
-// Module 16395 (GuildBadgeSnail)
-import inlineStyles from "inlineStyles" /* 8263 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 16357 */;
+// Module 16431 (GuildBadgeSnail)
+import inlineStyles from "inlineStyles" /* 8274 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 16393 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -64,7 +64,7 @@ export function GuildBadgeSnail(width) {
   }
   items[5] = React2(Path, { d: "M5 15h-1v-1h1v1ZM4 14h-1v-1h1v1ZM3 13H2v-1h1v1ZM3 5h2v1h1v2H2v4H1V6h1V2h1v3Z", fill: tmp9 });
   let first;
-  const Path2 = tmp2(8263).Path;
+  const Path2 = tmp2(8274).Path;
   if (secondaryColorsTransformed != null) {
     first = secondaryColorsTransformed[0];
   }

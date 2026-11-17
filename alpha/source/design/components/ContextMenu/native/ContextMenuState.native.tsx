@@ -1,14 +1,14 @@
-// Module ID: 9149
-// Function ID: 9150
+// Module ID: 9161
+// Function ID: 9162
 // Name: ContextMenuState
-// Dependencies: [19, 560, 1263, 1708, 5544, 1655, 2]
+// Dependencies: [19, 560, 1263, 1708, 5548, 1655, 2]
 // Exports: hideContextMenu, resetContextMenuState, showContextMenu, updateContextMenuState, useActiveContextMenu, useContextMenuState, useIsContextMenuActive
 
-// Module 9149 (ContextMenuState)
+// Module 9161 (ContextMenuState)
 import react_native from "react-native" /* 1263 */;
 import _mod1655 from "module_1655" /* 1655 */;
 import _mod1708 from "module_1708" /* 1708 */;
-import HapticUtils from "HapticUtils" /* 5544 */;
+import HapticUtils from "HapticUtils" /* 5548 */;
 import react from "react" /* 19 */;
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;

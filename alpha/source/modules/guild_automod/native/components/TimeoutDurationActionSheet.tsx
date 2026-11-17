@@ -1,16 +1,16 @@
-// Module ID: 20484
-// Function ID: 20485
+// Module ID: 20531
+// Function ID: 20532
 // Name: TimeoutDurationActionSheet
-// Dependencies: [19, 14166, 5220, 21, 20463, 7951, 7913, 5919, 1113, 7745, 5542, 7747, 2]
+// Dependencies: [19, 13039, 5224, 21, 20510, 7961, 7923, 5923, 1113, 7755, 5546, 7757, 2]
 // Exports: default
 
-// Module 20484 (TimeoutDurationActionSheet)
+// Module 20531 (TimeoutDurationActionSheet)
 import intl3 from "intl" /* 1113 */;
-import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 5220 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import TableRadioRow2 from "TableRadioRow" /* 7747 */;
-import Constants from "Constants" /* 14166 */;
-import getActionInfo from "getActionInfo" /* 20463 */;
+import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 5224 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
+import TableRadioRow2 from "TableRadioRow" /* 7757 */;
+import Constants from "Constants" /* 13039 */;
+import getActionInfo from "getActionInfo" /* 20510 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -40,9 +40,9 @@ export default function TimeoutDurationActionSheet(triggerType) {
   if (action != null) {
     durationSeconds = action.metadata.durationSeconds;
   }
-  const ActionSheet = tmp(7951).ActionSheet;
+  const ActionSheet = tmp(7961).ActionSheet;
   let str;
-  const BottomSheetTitleHeader = tmp(7913).BottomSheetTitleHeader;
+  const BottomSheetTitleHeader = tmp(7923).BottomSheetTitleHeader;
   if (actionInfo != null) {
     str = actionInfo.headerText;
   }
@@ -51,11 +51,11 @@ export default function TimeoutDurationActionSheet(triggerType) {
   }
   const obj2 = { startExpanded: true, header: closure_5(BottomSheetTitleHeader, { title: str }), children: items };
   const obj3 = { variant: "body-md/normal", children: intl.string(intl3.t.DWGBAh) };
-  const Text = tmp(5919).Text;
+  const Text = tmp(5923).Text;
   intl = tmp(1113).intl;
   items = [tmp6(Text, obj3), ];
   let headerText;
-  const TableRadioGroup = tmp(7745).TableRadioGroup;
+  const TableRadioGroup = tmp(7755).TableRadioGroup;
   if (actionInfo != null) {
     headerText = actionInfo.headerText;
   }
@@ -81,7 +81,7 @@ export default function TimeoutDurationActionSheet(triggerType) {
     str2 = String(durationSeconds);
   }
   const obj5 = { value: "", label: intl2.string(intl3.t.PoWNfe) };
-  let TableRadioRow = tmp(7747).TableRadioRow;
+  let TableRadioRow = tmp(7757).TableRadioRow;
   intl2 = tmp(1113).intl;
   items1 = [
     tmp6(TableRadioRow, obj5),

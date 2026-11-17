@@ -1,10 +1,10 @@
-// Module ID: 14200
-// Function ID: 14201
+// Module ID: 11106
+// Function ID: 11107
 // Name: NavigationTTIAnalytics
 // Dependencies: [1362, 3, 572, 2]
 // Exports: trackNavigationTTISpan
 
-// Module 14200 (NavigationTTIAnalytics)
+// Module 11106 (NavigationTTIAnalytics)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1362 */;

@@ -1,12 +1,12 @@
-// Module ID: 16356
-// Function ID: 16357
+// Module ID: 16392
+// Function ID: 16393
 // Name: GuildBadgeSword
-// Dependencies: [19, 21, 16357, 8263, 2]
+// Dependencies: [19, 21, 16393, 8274, 2]
 // Exports: GuildBadgeSword
 
-// Module 16356 (GuildBadgeSword)
-import inlineStyles from "inlineStyles" /* 8263 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 16357 */;
+// Module 16392 (GuildBadgeSword)
+import inlineStyles from "inlineStyles" /* 8274 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 16393 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

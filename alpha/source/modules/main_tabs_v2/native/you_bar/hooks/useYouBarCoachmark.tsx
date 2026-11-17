@@ -1,15 +1,15 @@
-// Module ID: 19140
-// Function ID: 19141
+// Module ID: 19185
+// Function ID: 19186
 // Name: useYouBarCoachmark
-// Dependencies: [32, 19, 5339, 5152, 1113, 5139, 1655, 17241, 1503, 504, 16204, 6069, 9560, 19141, 9567, 2]
+// Dependencies: [32, 19, 5343, 5156, 1113, 5143, 1655, 17278, 1503, 504, 16241, 6076, 9572, 19186, 9579, 2]
 // Exports: useYouBarCoachmark
 
-// Module 19140 (useYouBarCoachmark)
-import dismissible_content from "dismissible_content" /* 5139 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
+// Module 19185 (useYouBarCoachmark)
+import dismissible_content from "dismissible_content" /* 5143 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5156 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5343 */;
 import size from "module_2" /* 2 */;
 
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;

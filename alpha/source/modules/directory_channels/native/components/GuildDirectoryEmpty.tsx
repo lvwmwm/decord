@@ -1,19 +1,19 @@
-// Module ID: 15118
-// Function ID: 15119
+// Module ID: 14332
+// Function ID: 14333
 // Name: GuildDirectoryEmpty
-// Dependencies: [19, 17, 5236, 1072, 21, 5306, 575, 1630, 504, 14704, 6010, 15119, 1187, 1113, 5919, 8106, 14705, 15120, 8460, 15121, 2]
+// Dependencies: [19, 17, 5240, 1072, 21, 5310, 575, 1630, 504, 13782, 6014, 14333, 1187, 1113, 5923, 8117, 13783, 14334, 8471, 14335, 2]
 // Exports: default
 
-// Module 15118 (GuildDirectoryEmpty)
+// Module 14332 (GuildDirectoryEmpty)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8460 */;
-import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 14705 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8471 */;
+import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 13783 */;
 import react from "react" /* 19 */;
-import GuildChannelStore from "GuildChannelStore" /* 5236 */;
+import GuildChannelStore from "GuildChannelStore" /* 5240 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -51,14 +51,14 @@ export default function GuildDirectoryEmpty(guild) {
   let obj = guild(504);
   const items = [GuildChannelStore];
   dependencyMap = obj.useStateFromStores(items, () => GuildChannelStore.getChannels(guild.id));
-  let obj2 = guild(14704);
+  let obj2 = guild(13782);
   const obj3 = { contentContainerStyle: items1, children: items2 };
   items1 = [tmp.container, ];
   const obj4 = { paddingBottom: bottom + 16 };
   items1[1] = obj4;
   const canCreateOrAddGuildInDirectory = obj2.useCanCreateOrAddGuildInDirectory(channel);
-  const obj5 = { source: channel(15119), style: tmp.header };
-  const tmp9 = channel(6010);
+  const obj5 = { source: channel(14333), style: tmp.header };
+  const tmp9 = channel(6014);
   items2 = [closure_6(tmp9, obj5), , , , ];
   const obj6 = { style: tmp.title, accessibilityRole: "header", children: intl.format(guild(1113).t.vyvrpC, obj7) };
   const LegacyText = guild(1187).LegacyText;
@@ -66,7 +66,7 @@ export default function GuildDirectoryEmpty(guild) {
   obj7 = { guildName: guild.name };
   items2[1] = closure_6(LegacyText, obj6);
   const obj8 = { style: tmp.description, variant: "body-sm/medium", color: "text-default", children: intl2.string(guild(1113).t.WypE0i) };
-  const Text = guild(5919).Text;
+  const Text = guild(5923).Text;
   intl2 = guild(1113).intl;
   items2[2] = closure_6(Text, obj8);
   let tmp8Result = null;
@@ -80,10 +80,10 @@ export default function GuildDirectoryEmpty(guild) {
           const obj2 = { directoryGuildName: guild.name, directoryGuildId: guild.id, directoryChannelId: channel.id };
           return obj.open(obj2);
         },
-      iconSource: channel(15120),
+      iconSource: channel(14334),
       title: intl3.string(guild(1113).t.hyK15i)
     };
-    const FormCTA = tmp4(8106).FormCTA;
+    const FormCTA = tmp4(8117).FormCTA;
     intl3 = tmp4(1113).intl;
     tmp8Result = tmp8(FormCTA, obj9);
   }
@@ -94,10 +94,10 @@ export default function GuildDirectoryEmpty(guild) {
       const obj = instant_invite_InstantInviteUtils;
       return obj.handleOpenInviteActionsheet(guild, channel.id, closure_2, hasOwnProperty.HUB_EMPTY_STATE);
     },
-    iconSource: channel(15121),
+    iconSource: channel(14335),
     title: intl4.string(guild(1113).t.L4bwJ9)
   };
-  const FormCTA2 = tmp4(8106).FormCTA;
+  const FormCTA2 = tmp4(8117).FormCTA;
   intl4 = tmp4(1113).intl;
   items2[4] = closure_6(FormCTA2, obj10);
   return tmp6(tmp7, obj3);

@@ -1,20 +1,20 @@
-// Module ID: 18202
-// Function ID: 18203
+// Module ID: 18243
+// Function ID: 18244
 // Name: UserSettingsPushNotificationLogs
-// Dependencies: [5, 32, 19, 17, 1072, 21, 5306, 575, 7640, 510, 11105, 1630, 7825, 7428, 1113, 10230, 11107, 12289, 7888, 5919, 2]
+// Dependencies: [5, 32, 19, 17, 1072, 21, 5310, 575, 7650, 510, 11853, 1630, 7835, 7438, 1113, 10338, 11854, 10755, 7898, 5923, 2]
 // Exports: default
 
-// Module 18202 (UserSettingsPushNotificationLogs)
+// Module 18243 (UserSettingsPushNotificationLogs)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import InputTypes from "InputTypes" /* 7640 */;
+import Text_Text from "Text/Text" /* 5923 */;
+import InputTypes from "InputTypes" /* 7650 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size_mod from "module_2" /* 2 */;
 
 let c2, c3;
@@ -178,7 +178,7 @@ export default function UserSettingsPushNotificationLogs() {
   let obj = { style: tmp10.wrap, children: items2 };
   let obj2 = { style: tmp10.searchWrap, children: items1 };
   const bottom = first1(1630)().bottom;
-  items1 = [closure_7(defaultValue(7825).SearchBar, { size: "md", placeholder: "Filter (regex)", onChange: tmp3, defaultValue }), ];
+  items1 = [closure_7(defaultValue(7835).SearchBar, { size: "md", placeholder: "Filter (regex)", onChange: tmp3, defaultValue }), ];
   let obj3 = {
     style: tmp10.shareButton,
     accessibilityLabel: intl.string(defaultValue(1113).t.leICvh),
@@ -238,9 +238,9 @@ export default function UserSettingsPushNotificationLogs() {
         }
       }
     }),
-    children: closure_7(defaultValue(12289).ShareIcon, {})
+    children: closure_7(defaultValue(10755).ShareIcon, {})
   };
-  const PressableOpacity = defaultValue(7428).PressableOpacity;
+  const PressableOpacity = defaultValue(7438).PressableOpacity;
   intl = defaultValue(1113).intl;
   items1[1] = closure_7(PressableOpacity, obj3);
   items2 = [closure_8(View, obj2), ];
@@ -273,7 +273,7 @@ export default function UserSettingsPushNotificationLogs() {
     }
   };
   obj5 = { paddingBottom: bottom + first1(575).space.PX_16 };
-  const FlashList = defaultValue(7888).FlashList;
+  const FlashList = defaultValue(7898).FlashList;
   const merged = Object.assign(tmp10.list);
   items2[1] = closure_7(FlashList, obj4);
   return closure_8(View, obj);

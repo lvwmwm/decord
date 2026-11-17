@@ -1,26 +1,26 @@
-// Module ID: 19377
-// Function ID: 19378
+// Module ID: 19422
+// Function ID: 19423
 // Name: GuildRoleSubscriptionPurchasePage
-// Dependencies: [19, 17, 1192, 5155, 5177, 1072, 21, 5306, 575, 5919, 1113, 1187, 12973, 17831, 17833, 17834, 563, 19378, 5944, 19380, 19381, 19382, 8033, 6010, 7720, 19383, 6327, 19385, 19386, 6002, 19387, 2]
+// Dependencies: [19, 17, 1192, 5159, 5181, 1072, 21, 5310, 575, 5923, 1113, 1187, 11606, 17872, 17874, 17875, 563, 19423, 5948, 19425, 19426, 19427, 8044, 6014, 7730, 19428, 6335, 19430, 19431, 6006, 19432, 2]
 // Exports: default
 
-// Module 19377 (GuildRoleSubscriptionPurchasePage)
+// Module 19422 (GuildRoleSubscriptionPurchasePage)
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import LinkingDefault from "Linking" /* 6002 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8033 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12973 */;
-import GuildRoleSubscriptionPurchasePreviewCardDefault from "GuildRoleSubscriptionPurchasePreviewCard" /* 19387 */;
+import Text_Text from "Text/Text" /* 5923 */;
+import LinkingDefault from "Linking" /* 6006 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8044 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11606 */;
+import GuildRoleSubscriptionPurchasePreviewCardDefault from "GuildRoleSubscriptionPurchasePreviewCard" /* 19432 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import GuildStore from "GuildStore" /* 5177 */;
+import ChannelStore from "ChannelStore" /* 5159 */;
+import GuildStore from "GuildStore" /* 5181 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

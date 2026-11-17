@@ -1,14 +1,14 @@
-// Module ID: 13208
-// Function ID: 13209
+// Module ID: 13022
+// Function ID: 13023
 // Name: useConjureRemoveFromServer
-// Dependencies: [5, 32, 19, 7018, 1113, 13158, 4131, 13206, 2]
+// Dependencies: [5, 32, 19, 7026, 1113, 13023, 4133, 13025, 2]
 // Exports: conjureRemoveTargetFromProject, conjureRemoveTargetFromServerApp, default
 
-// Module 13208 (useConjureRemoveFromServer)
+// Module 13022 (useConjureRemoveFromServer)
 import intl3 from "intl" /* 1113 */;
-import _modDef4131 from "module_4131" /* 4131 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 7018 */;
-import conjureRemoveApp from "conjureRemoveApp" /* 13206 */;
+import _modDef4133 from "module_4133" /* 4133 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 7026 */;
+import conjureRemoveApp from "conjureRemoveApp" /* 13025 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -138,7 +138,7 @@ export default function useConjureRemoveFromServer(arg0) {
     }
     return formatToPlainStringResult;
   }), items1);
-  let obj2 = { optionalItems: memo, body: intl.formatToPlainString(checked(4131)["8OKM1N"], { server: guildName }), notes: memo1, pending: first1, error: tmp8, submit: callback };
+  let obj2 = { optionalItems: memo, body: intl.formatToPlainString(checked(4133)["8OKM1N"], { server: guildName }), notes: memo1, pending: first1, error: tmp8, submit: callback };
   memo1 = obj.useMemo(() => {
     let items1;
     let items4;
@@ -150,7 +150,7 @@ export default function useConjureRemoveFromServer(arg0) {
     if (tmp5) {
       const intl = tmp2(1113).intl;
       const obj3 = { server: guildName };
-      const items = [intl.formatToPlainString(_modDef4131["9b3KdT"], obj3)];
+      const items = [intl.formatToPlainString(_modDef4133["9b3KdT"], obj3)];
       items1 = items;
     } else {
       items1 = [];
@@ -160,7 +160,7 @@ export default function useConjureRemoveFromServer(arg0) {
     if (tmp9) {
       const intl2 = tmp2(1113).intl;
       const formatToPlainString = intl2.formatToPlainString;
-      const tmp12 = _modDef4131;
+      const tmp12 = _modDef4133;
       const obj4 = { server: guildName };
       const items3 = [formatToPlainString(inOtherServers ? tmp12.oQ3WRg : tmp12["0a7JdI"], obj4)];
       items4 = items3;

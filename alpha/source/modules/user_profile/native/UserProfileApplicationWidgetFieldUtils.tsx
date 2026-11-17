@@ -1,20 +1,20 @@
-// Module ID: 12255
-// Function ID: 12256
+// Module ID: 11001
+// Function ID: 11002
 // Name: UserProfileApplicationWidgetFieldUtils
-// Dependencies: [19, 17, 21, 5306, 575, 5934, 1380, 5919, 1113, 12256, 12257, 6010, 2]
+// Dependencies: [19, 17, 21, 5310, 575, 5938, 1380, 5923, 1113, 11002, 11003, 6014, 2]
 // Exports: FieldText, formatDurationNarrow, useEmojiOverflowStyle
 
-// Module 12255 (UserProfileApplicationWidgetFieldUtils)
+// Module 11001 (UserProfileApplicationWidgetFieldUtils)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import useFontScale from "useFontScale" /* 5934 */;
-import FastImageDefault from "FastImage" /* 6010 */;
-import ApplicationWidgetMarkupUtils from "ApplicationWidgetMarkupUtils" /* 12257 */;
+import useFontScale from "useFontScale" /* 5938 */;
+import FastImageDefault from "FastImage" /* 6014 */;
+import ApplicationWidgetMarkupUtils from "ApplicationWidgetMarkupUtils" /* 11003 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -23,7 +23,7 @@ let hasOwnProperty;
 let metroRequire;
 let obj2;
 let tmp;
-const Text_Text = tmp(5919);
+const Text_Text = tmp(5923);
 ({ PixelRatio: c3, View: closure_4 } = react_native);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
@@ -101,7 +101,7 @@ export function FieldText(arg0) {
   let num = 0;
   const obj2 = PlatformUtils;
   if (obj2.isIOS()) {
-    num = _false.roundToNearestPixel(tmp2(5919).TextStyleSheet[variant].fontSize * fontScale * 0.25);
+    num = _false.roundToNearestPixel(tmp2(5923).TextStyleSheet[variant].fontSize * fontScale * 0.25);
   }
   if (num > 0) {
     text = closure_8(num).text;
@@ -111,11 +111,11 @@ export function FieldText(arg0) {
     let tmp11Result;
     if ("skeleton" === field.status) {
       const obj3 = { variant, widthChars: skeletonWidthChars };
-      tmp11Result = hasOwnProperty(tmp2(12256).TextSkeleton, obj3);
+      tmp11Result = hasOwnProperty(tmp2(11002).TextSkeleton, obj3);
     } else {
       const obj4 = { style: tmp.fieldTextRow, children: items };
       const obj5 = { variant, color, lineClamp: 2, style: text, children: tmp2Result.parseApplicationWidgetText(field.text, obj6) };
-      const Text = tmp2(5919).Text;
+      const Text = tmp2(5923).Text;
       obj6 = { linkVariant: variant };
       tmp2Result = ApplicationWidgetMarkupUtils;
       items = [hasOwnProperty(Text, obj5), ];

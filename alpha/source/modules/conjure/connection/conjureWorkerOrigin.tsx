@@ -1,11 +1,11 @@
-// Module ID: 15817
-// Function ID: 15818
+// Module ID: 15851
+// Function ID: 15852
 // Name: conjureWorkerOrigin
-// Dependencies: [7337, 2]
+// Dependencies: [7347, 2]
 // Exports: getConjureWorkerOrigin
 
-// Module 15817 (conjureWorkerOrigin)
-import conjureLocalDev from "conjureLocalDev" /* 7337 */;
+// Module 15851 (conjureWorkerOrigin)
+import conjureLocalDev from "conjureLocalDev" /* 7347 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/connection/conjureWorkerOrigin.tsx");

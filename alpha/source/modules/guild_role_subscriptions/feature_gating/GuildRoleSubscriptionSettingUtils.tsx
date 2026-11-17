@@ -1,13 +1,13 @@
-// Module ID: 7275
-// Function ID: 7276
+// Module ID: 7285
+// Function ID: 7286
 // Name: GuildRoleSubscriptionSettingUtils
-// Dependencies: [5173, 5238, 1388, 1072, 504, 7276, 7268, 2]
+// Dependencies: [5177, 5242, 1388, 1072, 504, 7286, 7278, 2]
 // Exports: canManageGuildRoleSubscriptions, canSeeGuildRoleSubscriptionSettings, canSeeGuildRoleSubscriptionSettingsContent, getGuildRoleSubscriptionSettingsVisibility, useCanManageGuildRoleSubscriptions, useCanSeeGuildRoleSubscriptionSettings
 
-// Module 7275 (GuildRoleSubscriptionSettingUtils)
-import GuildRecord from "GuildRecord" /* 5173 */;
-import CreatorMonetizationEligibilityExperimentUtils from "CreatorMonetizationEligibilityExperimentUtils" /* 7276 */;
-import PermissionStore from "PermissionStore" /* 5238 */;
+// Module 7285 (GuildRoleSubscriptionSettingUtils)
+import GuildRecord from "GuildRecord" /* 5177 */;
+import CreatorMonetizationEligibilityExperimentUtils from "CreatorMonetizationEligibilityExperimentUtils" /* 7286 */;
+import PermissionStore from "PermissionStore" /* 5242 */;
 import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -17,7 +17,7 @@ let _require;
 
 let hasOwnProperty;
 let metroRequire;
-const f93708 = () => {
+const f93911 = () => {
   const canResult = null != guild && PermissionStore.can(metroRequire.ADMINISTRATOR, tmp);
   return canResult;
 };
@@ -70,7 +70,7 @@ function useGuildRoleSubscriptionSettingsVisibility(stateFromStores) {
   const obj = require("get initialized");
   const items = [PermissionStore];
   const items1 = [stateFromStores];
-  stateFromStores = obj.useStateFromStores(items, f93708, items1);
+  stateFromStores = obj.useStateFromStores(items, f93911, items1);
   const items2 = [UserStore];
   const obj2 = require("get initialized");
   const stateFromStores1 = obj2.useStateFromStores(items2, () => {
@@ -165,7 +165,7 @@ export function useCanManageGuildRoleSubscriptions(guild) {
   const items = [PermissionStore];
   const items1 = [guild];
   const obj = require("get initialized");
-  return obj.useStateFromStores(items, f93708, items1);
+  return obj.useStateFromStores(items, f93911, items1);
 }
 export function canManageGuildRoleSubscriptions(stateFromStores) {
   const canResult = null != stateFromStores && PermissionStore.can(metroRequire.ADMINISTRATOR, stateFromStores);

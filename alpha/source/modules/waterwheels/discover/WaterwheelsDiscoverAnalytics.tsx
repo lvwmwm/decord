@@ -1,13 +1,13 @@
-// Module ID: 19015
-// Function ID: 19016
+// Module ID: 19056
+// Function ID: 19057
 // Name: WaterwheelsDiscoverAnalytics
-// Dependencies: [1072, 10225, 1256, 2]
+// Dependencies: [1072, 10668, 1256, 2]
 // Exports: getDiscoverActionParameters
 
-// Module 19015 (WaterwheelsDiscoverAnalytics)
+// Module 19056 (WaterwheelsDiscoverAnalytics)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 10225 */;
+import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 10668 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

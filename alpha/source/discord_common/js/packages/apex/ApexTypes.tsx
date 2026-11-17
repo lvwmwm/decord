@@ -11,6 +11,7 @@ const obj = { User: 1, [1]: "User", Installation: 2, [2]: "Installation", Guild:
 const LOGGED_OUT_USER_ID_SENTINEL = ExperimentsConstants.LOGGED_OUT_USER_ID_SENTINEL;
 const result = size.fileFinishedImporting("../discord_common/js/packages/apex/ApexTypes.tsx");
 
+export const INSTALLATION_UNIT_ID = "__installation__";
 export const UnitType = obj;
 export const UnitTypeToKind = { [obj.User]: "user", [obj.Installation]: "installation", [obj.Guild]: "guild" };
 export const ExperimentFlags = { IsOverride: 1, [1]: "IsOverride", ExposureTrackingEnabled: 2, [2]: "ExposureTrackingEnabled", DependentExperiment: 4, [4]: "DependentExperiment", UseAsEligibility: 8, [8]: "UseAsEligibility", IsAppLaunch: 16, [16]: "IsAppLaunch" };

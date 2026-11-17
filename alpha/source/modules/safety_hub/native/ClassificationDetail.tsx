@@ -1,32 +1,32 @@
-// Module ID: 14181
-// Function ID: 14182
+// Module ID: 13055
+// Function ID: 13056
 // Name: ClassificationDetail
-// Dependencies: [19, 17, 2189, 8231, 8206, 1072, 21, 5306, 575, 5919, 8207, 1113, 504, 3417, 8451, 6002, 11224, 7443, 5926, 14182, 14184, 8230, 6823, 1256, 14185, 6761, 6766, 14187, 7415, 14192, 8205, 2]
+// Dependencies: [19, 17, 2189, 8242, 8217, 1072, 21, 5310, 575, 5923, 8218, 1113, 504, 3419, 8462, 6006, 10751, 7453, 5930, 13056, 13058, 8241, 6818, 1256, 13059, 6769, 6774, 13061, 7425, 13066, 8216, 2]
 // Exports: default
 
-// Module 14181 (ClassificationDetail)
+// Module 13055 (ClassificationDetail)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import _modDef3417 from "module_3417" /* 3417 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import components_Button_Button from "components/Button/Button" /* 5926 */;
-import LinkingDefault from "Linking" /* 6002 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 6761 */;
-import MetricEvents from "MetricEvents" /* 6766 */;
-import TableRow2 from "TableRow" /* 7443 */;
-import SafetyHubModels from "SafetyHubModels" /* 8207 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 8451 */;
-import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 14185 */;
-import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 14187 */;
+import _modDef3419 from "module_3419" /* 3419 */;
+import Text_Text from "Text/Text" /* 5923 */;
+import components_Button_Button from "components/Button/Button" /* 5930 */;
+import LinkingDefault from "Linking" /* 6006 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 6769 */;
+import MetricEvents from "MetricEvents" /* 6774 */;
+import TableRow2 from "TableRow" /* 7453 */;
+import SafetyHubModels from "SafetyHubModels" /* 8218 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 8462 */;
+import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 13059 */;
+import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 13061 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import LocaleStore from "LocaleStore" /* 2189 */;
-import SafetyHubStore from "SafetyHubStore" /* 8231 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 8206 */;
+import SafetyHubStore from "SafetyHubStore" /* 8242 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 8217 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -60,7 +60,7 @@ function ClassificationHeader(classificationTypeText) {
   guildMetadata = classificationTypeText.guildMetadata;
   const tmp = closure_16();
   const items = [classificationTypeText, guildMetadata];
-  let obj = { style: tmp.header, children: closure_13(classificationTypeText(5919).Text, obj2) };
+  let obj = { style: tmp.header, children: closure_13(classificationTypeText(5923).Text, obj2) };
   const memo = react.useMemo(() => {
     let formatResult;
     let name;
@@ -207,7 +207,7 @@ function ManualReviewDecidedUnderageActionsTaken() {
   intl = intl4.intl;
   items = [map1(SectionHeader, obj2), ];
   const obj3 = { style: tmp.actionsTaken, children: map1(BulletRow, obj4) };
-  obj4 = { large: true, children: intl2.string(_modDef3417.rn3Gto) };
+  obj4 = { large: true, children: intl2.string(_modDef3419.rn3Gto) };
   intl2 = intl4.intl;
   items[1] = map1(React3, obj3);
   return gesture(React3, obj);
@@ -235,7 +235,7 @@ function ManualReviewDecidedUnderageGuidance() {
   intl = intl4.intl;
   items = [map1(SectionHeader, obj2), ];
   const obj3 = { style: tmp.actionsTaken, children: map1(BulletRow, obj4) };
-  obj4 = { large: true, children: intl2.string(_modDef3417["yV/t/V"]) };
+  obj4 = { large: true, children: intl2.string(_modDef3419["yV/t/V"]) };
   intl2 = intl4.intl;
   items[1] = map1(React3, obj3);
   return gesture(React3, obj);
@@ -287,11 +287,11 @@ function ClassificationPolicyCard(policyExplainerLink) {
   const obj3 = { style: tmp.classificationPolicyCardIcon, children: closure_13(ShieldIcon, obj4) };
   obj4 = { size: "sm", color: nativeDefault.colors.TEXT_LINK };
   tmp2 = TouchableHitBoxDefault;
-  ShieldIcon = policyExplainerLink(11224).ShieldIcon;
+  ShieldIcon = policyExplainerLink(10751).ShieldIcon;
   items = [closure_13(closure_4, obj3), ];
   const obj5 = { style: tmp.classificationPolicyCardContent, children: closure_13(Text, obj6) };
   obj6 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: intl.format(policyExplainerLink(1113).t.zxUdpj, { classificationDescription: classificationTypeText }) };
-  Text = policyExplainerLink(5919).Text;
+  Text = policyExplainerLink(5923).Text;
   intl = policyExplainerLink(1113).intl;
   items[1] = closure_13(closure_4, obj5);
   return closure_13(closure_4, obj);
@@ -378,7 +378,7 @@ function ManualReviewDecidedUnderageFooter(arg0) {
   let intl;
   let tosLink;
   ({ tosLink, communityGuidelinesLink } = arg0);
-  const obj = { variant: "body-sm/normal", color: "text-muted", children: intl.format(_modDef3417.vPOpia, { tosLink, communityGuidelinesLink }) };
+  const obj = { variant: "body-sm/normal", color: "text-muted", children: intl.format(_modDef3419.vPOpia, { tosLink, communityGuidelinesLink }) };
   const Text = Text_Text.Text;
   intl = intl4.intl;
   return map1(Text, obj);

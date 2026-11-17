@@ -1,8 +1,8 @@
-// Module ID: 6624
-// Function ID: 6625
+// Module ID: 6632
+// Function ID: 6633
 // Dependencies: [2]
 
-// Module 6624
+// Module 6632
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/face/smitten.png.js");

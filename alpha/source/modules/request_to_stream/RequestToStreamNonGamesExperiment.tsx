@@ -1,9 +1,9 @@
-// Module ID: 9019
-// Function ID: 9020
+// Module ID: 9030
+// Function ID: 9031
 // Name: RequestToStreamNonGamesExperiment
 // Dependencies: [1452, 2]
 
-// Module 9019 (RequestToStreamNonGamesExperiment)
+// Module 9030 (RequestToStreamNonGamesExperiment)
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 

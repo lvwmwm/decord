@@ -1,18 +1,18 @@
-// Module ID: 20806
-// Function ID: 20807
+// Module ID: 20853
+// Function ID: 20854
 // Name: FriendOnlineTimer
-// Dependencies: [5, 7316, 20807, 1072, 1083, 1089, 1285, 1242, 572, 7882, 5131, 2]
+// Dependencies: [5, 7326, 20854, 1072, 1083, 1089, 1285, 1242, 572, 7892, 5135, 2]
 
-// Module 20806 (FriendOnlineTimer)
+// Module 20853 (FriendOnlineTimer)
 import Constants from "Constants" /* 1072 */;
 import Constants2 from "Constants" /* 1083 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
-import UserSettings from "UserSettings" /* 5131 */;
+import UserSettings from "UserSettings" /* 5135 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 7316 */;
-import FriendOnlineTimerStore from "FriendOnlineTimerStore" /* 20807 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 7326 */;
+import FriendOnlineTimerStore from "FriendOnlineTimerStore" /* 20854 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7892 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, closure_2;

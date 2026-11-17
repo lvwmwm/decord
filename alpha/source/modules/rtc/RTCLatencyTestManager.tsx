@@ -1,17 +1,17 @@
-// Module ID: 20387
-// Function ID: 20388
+// Module ID: 20435
+// Function ID: 20436
 // Name: RTCLatencyTestManager
-// Dependencies: [2133, 6160, 6065, 1089, 3, 7882, 20388, 1380, 2]
+// Dependencies: [2133, 6167, 6072, 1089, 3, 7892, 20436, 1380, 2]
 
-// Module 20387 (RTCLatencyTestManager)
+// Module 20435 (RTCLatencyTestManager)
 import LoggerDefault from "Logger" /* 3 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import Constants from "Constants" /* 6065 */;
-import RTCLatencyTestActionCreators from "RTCLatencyTestActionCreators" /* 20388 */;
+import Constants from "Constants" /* 6072 */;
+import RTCLatencyTestActionCreators from "RTCLatencyTestActionCreators" /* 20436 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import RTCRegionStore from "RTCRegionStore" /* 6160 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
+import RTCRegionStore from "RTCRegionStore" /* 6167 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7892 */;
 import size from "module_2" /* 2 */;
 
 let mediaEngine;

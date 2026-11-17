@@ -1,155 +1,84 @@
 // Module ID: 9810
 // Function ID: 9811
-// Dependencies: [9804, 9796, 9797]
-// Exports: baggageHeaderToDynamicSamplingContext, dynamicSamplingContextToSentryBaggageHeader, parseBaggageHeader
+// Dependencies: [9811, 9809]
 
 // Module 9810
-import _mod9796 from "module_9796" /* 9796 */;
-import _mod9804 from "module_9804" /* 9804 */;
+import GLOBAL_OBJ from "module_9811" /* 9811 */;
 
-const f99018 = (acc, item) => {
-  let closure_0 = acc;
-  let parts = item.split(",");
-  const mapped = parts.map(f99019);
-  const entries = Object.entries(mapped.reduce(f99020, {}));
-  item = entries.forEach((item) => {
-    let tmp;
-    let tmp2;
-    [tmp, tmp2] = item;
-    acc[tmp] = tmp2;
-  });
-  return acc;
-};
-const f99019 = (item) => {
-  const parts = item.split("=");
-  return parts.map((item) => decodeURIComponent(item.trim()));
-};
-const f99020 = (acc, item) => {
-  let tmp;
-  let tmp2;
-  [tmp, tmp2] = item;
-  const tmp3 = tmp && tmp2;
-  if (tmp3) {
-    acc[tmp] = tmp2;
-  }
-  return acc;
-};
-let c2 = "sentry-";
-let tmp2 = /^sentry-/;
-const re3 = tmp2;
-let c4 = 8192;
+const require = globalThis.__r;
+let _require, c0, dependencyMap;
 
-export const BAGGAGE_HEADER_NAME = "baggage";
-export const MAX_BAGGAGE_STRING_LENGTH = 8192;
-export const SENTRY_BAGGAGE_KEY_PREFIX = "sentry-";
-export const SENTRY_BAGGAGE_KEY_PREFIX_REGEX = tmp2;
-export function baggageHeaderToDynamicSamplingContext(arr) {
-  let tmp;
-  if (arr) {
-    const tmp2 = require;
-    let tmp3 = dependencyMap;
-    const obj = _mod9804;
-    if (obj.isString(arr)) {
-      let reduced;
-      const _Array2 = Array;
-      if (Array.isArray(arr)) {
-        reduced = arr.reduce(f99018, {});
-      } else {
-        const str = ",";
-        let parts = arr.split(",");
-        let mapped = parts.map(f99019);
-        reduced = mapped.reduce(f99020, {});
-      }
-      tmp = reduced;
-    } else {
-      const _Array = Array;
-    }
-  }
-  if (tmp) {
+function consoleSandbox(fn) {
+  let closure_1;
+  let console;
+  const f99195 = (item) => {
+    console[item] = closure_1[item];
+  };
+  const tmp = console;
+  if ("console" in console(9811).GLOBAL_OBJ) {
+    console = tmp(9811).GLOBAL_OBJ.console;
+    dependencyMap = {};
     const _Object = Object;
-    let entries = Object.entries(tmp);
-    const reduced1 = entries.reduce((acc, item) => {
-      let str;
-      let tmp;
-      [str, tmp] = item;
-      if (str.match(closure_1_3)) {
-        acc[str.slice(7)] = tmp;
-      }
-      return acc;
-    }, {});
-    const _Object2 = Object;
-    let tmp9;
-    if (Object.keys(reduced1).length > 0) {
-      tmp9 = reduced1;
+    const keys = Object.keys(obj);
+    const item = keys.forEach((item) => {
+      closure_1[item] = console[item];
+      console[item] = obj[item];
+    });
+    try {
+      const tmp6 = fn();
+      const item1 = keys.forEach(f99195);
+      return tmp6;
+    } catch (tmp8) {
+      const item2 = keys.forEach(f99195);
+      throw tmp8;
     }
-    return tmp9;
+  } else {
+    return fn();
   }
 }
-export function dynamicSamplingContextToSentryBaggageHeader(arg0) {
-  const tmp = arg0;
-  if (tmp) {
-    const tmp2 = globalThis;
-    const _Object = Object;
-    const entries = Object.entries(arg0);
-    const reduced = entries.reduce((acc, item) => {
-      let tmp;
-      let tmp2;
-      [tmp, tmp2] = item;
-      if (tmp2) {
-        const _HermesInternal = HermesInternal;
-        acc["" + closure_1_2 + tmp] = tmp2;
-      }
-      return acc;
-    }, {});
-    const _Object2 = Object;
-    let reduced1;
-    if (0 !== Object.keys(reduced).length) {
-      const _Object3 = Object;
-      const entries1 = Object.entries(reduced);
-      reduced1 = entries1.reduce((acc, item, index) => {
-        let tmp;
-        let tmp2;
-        [tmp, tmp2] = item;
-        const encodeURIComponentResult = encodeURIComponent(tmp);
-        const combined = "" + encodeURIComponentResult + "=" + encodeURIComponent(tmp2);
-        let combined1 = combined;
-        if (0 !== index) {
-          const _HermesInternal = HermesInternal;
-          combined1 = "" + acc + "," + combined;
+let items = ["debug", "info", "warn", "error", "log", "assert", "trace"];
+const originalConsoleMethods = {};
+
+export const CONSOLE_LEVELS = items;
+export { consoleSandbox };
+export const logger = GLOBAL_OBJ.getGlobalSingleton("logger", function makeLogger() {
+  _require = false;
+  let obj = {
+    enable() {
+      c0 = true;
+    },
+    disable() {
+      c0 = false;
+    },
+    isEnabled() {
+      return c0;
+    }
+  };
+  let tmp = items;
+  const forEach = items.forEach;
+  if (require("module_9809").DEBUG_BUILD) {
+    const item = forEach((arg0) => {
+      let closure_0 = arg0;
+      obj[arg0] = () => {
+        const args = [...arguments];
+        const tmp = args;
+        if (tmp) {
+          consoleSandbox(() => {
+            const _console = GLOBAL_OBJ.GLOBAL_OBJ.console;
+            obj = _console[args];
+            items = ["Sentry Logger [" + args + "]:", ...closure_0];
+            obj.apply(items);
+          });
         }
-        if (combined1.length > closure_1_4) {
-          combined1 = acc;
-          const tmp5 = require;
-          const tmp6 = dependencyMap;
-          if (_mod9796.DEBUG_BUILD) {
-            const logger = tmp5(tmp6[2]).logger;
-            const _HermesInternal2 = HermesInternal;
-            logger.warn("Not adding key: " + tmp + " with val: " + tmp2 + " to baggage header due to exceeding baggage size limits.");
-            combined1 = acc;
-          }
-        }
-        return combined1;
-      }, "");
-    }
-    return reduced1;
+      };
+    });
+  } else {
+    const item1 = forEach((arg0) => {
+      obj[arg0] = () => {
+
+      };
+    });
   }
-}
-export function parseBaggageHeader(arr) {
-  const tmp = arr;
-  if (tmp) {
-    let reduced;
-    const obj = _mod9804;
-    if (!obj.isString(arr)) {
-      const _Array = Array;
-    }
-    const _Array2 = Array;
-    if (Array.isArray(arr)) {
-      reduced = arr.reduce(f99018, {});
-    } else {
-      const parts = arr.split(",");
-      const mapped = parts.map(f99019);
-      reduced = mapped.reduce(f99020, {});
-    }
-    return reduced;
-  }
-}
+  return obj;
+});
+export { originalConsoleMethods };

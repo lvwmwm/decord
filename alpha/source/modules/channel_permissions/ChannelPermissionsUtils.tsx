@@ -1,24 +1,24 @@
-// Module ID: 8131
-// Function ID: 8132
+// Module ID: 8142
+// Function ID: 8143
 // Name: ChannelPermissionsUtils
-// Dependencies: [5159, 5173, 5213, 5218, 1388, 6902, 1072, 5216, 1113, 1084, 11, 5362, 1255, 5243, 8132, 2119, 6346, 2]
+// Dependencies: [5163, 5177, 5217, 5222, 1388, 6910, 1072, 5220, 1113, 1084, 11, 5366, 1255, 5247, 8143, 2119, 6354, 2]
 // Exports: canCreatePrivateChannel, extractPermissionOverwrites, flipEveryonePermission, getAllExistingRolesWithPermission, getExistingMembers, getExistingMembersRows, getExistingRoles, getExistingRolesRowWithPermissionDisabled, getExistingRolesRows, getMembersRows, getNoRolesRow, getPrivateChannelHintText, getRemoveTooltipHint, getRolesRows, getRolesRowsWithPermissionDisabled, getRowTypeLabel, grantUserChannelAccess, isEveryoneRoleId, isPrivateGuildChannel, isPrivateTextChannel, toggleChannelEveryonePermission
 
-// Module 8131 (ChannelPermissionsUtils)
+// Module 8142 (ChannelPermissionsUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
 import intl8 from "intl" /* 1113 */;
 import Server from "Server" /* 2119 */;
-import ChannelRecord from "ChannelRecord" /* 5159 */;
-import GuildRecord from "GuildRecord" /* 5173 */;
-import GuildRoleUtils from "GuildRoleUtils" /* 5216 */;
-import PermissionUtilsAll from "PermissionUtils" /* 5243 */;
-import UserUtilsDefault from "UserUtils" /* 5362 */;
-import ChannelUtils from "ChannelUtils" /* 6346 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 6902 */;
-import ChannelSettingsPermissionsActionCreators from "ChannelSettingsPermissionsActionCreators" /* 8132 */;
-import GuildRoleRecord from "GuildRoleRecord" /* 5213 */;
-import GuildMemberStore from "GuildMemberStore" /* 5218 */;
+import ChannelRecord from "ChannelRecord" /* 5163 */;
+import GuildRecord from "GuildRecord" /* 5177 */;
+import GuildRoleUtils from "GuildRoleUtils" /* 5220 */;
+import PermissionUtilsAll from "PermissionUtils" /* 5247 */;
+import UserUtilsDefault from "UserUtils" /* 5366 */;
+import ChannelUtils from "ChannelUtils" /* 6354 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 6910 */;
+import ChannelSettingsPermissionsActionCreators from "ChannelSettingsPermissionsActionCreators" /* 8143 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 5217 */;
+import GuildMemberStore from "GuildMemberStore" /* 5222 */;
 import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -697,17 +697,17 @@ export function isPrivateTextChannel(type) {
   }
   return hasItem;
 }
-export function canCreatePrivateChannel(GUILD_APP, canResult, PermissionStore) {
+export function canCreatePrivateChannel(first1, canResult, canResult1) {
   let tmp2 = canResult;
-  if (GUILD_APP !== constants2.GUILD_TEXT) {
+  if (first1 !== constants2.GUILD_TEXT) {
     tmp2 = canResult;
-    if (GUILD_APP !== constants2.GUILD_ANNOUNCEMENT) {
+    if (first1 !== constants2.GUILD_ANNOUNCEMENT) {
       tmp2 = canResult;
-      if (GUILD_APP !== constants2.GUILD_APP) {
-        let tmp5 = !isGuildVocalChannelType(GUILD_APP) && GUILD_APP !== tmp.GUILD_CATEGORY;
-        isGuildVocalChannelType(GUILD_APP);
+      if (first1 !== constants2.GUILD_APP) {
+        let tmp5 = !isGuildVocalChannelType(first1) && first1 !== tmp.GUILD_CATEGORY;
+        isGuildVocalChannelType(first1);
         if (!tmp5) {
-          tmp5 = canResult && PermissionStore;
+          tmp5 = canResult && canResult1;
         }
         tmp2 = tmp5;
       }

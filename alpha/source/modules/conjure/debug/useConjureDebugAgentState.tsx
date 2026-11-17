@@ -1,14 +1,14 @@
-// Module ID: 14021
-// Function ID: 14022
+// Module ID: 15058
+// Function ID: 15059
 // Name: useConjureDebugAgentState
-// Dependencies: [19, 7321, 7366, 504, 7386, 2]
+// Dependencies: [19, 7331, 7376, 504, 7396, 2]
 // Exports: default
 
-// Module 14021 (useConjureDebugAgentState)
-import conjureDebugConnection from "conjureDebugConnection" /* 7386 */;
+// Module 15058 (useConjureDebugAgentState)
+import conjureDebugConnection from "conjureDebugConnection" /* 7396 */;
 import react from "react" /* 19 */;
-import ConjureChatStore from "ConjureChatStore" /* 7321 */;
-import ConjureDebugStore from "ConjureDebugStore" /* 7366 */;
+import ConjureChatStore from "ConjureChatStore" /* 7331 */;
+import ConjureDebugStore from "ConjureDebugStore" /* 7376 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

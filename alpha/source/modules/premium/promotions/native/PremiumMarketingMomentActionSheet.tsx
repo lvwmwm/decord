@@ -1,21 +1,21 @@
-// Module ID: 18356
-// Function ID: 18357
+// Module ID: 18397
+// Function ID: 18398
 // Name: PremiumMarketingMomentActionSheet
-// Dependencies: [19, 17, 5307, 1072, 5152, 21, 5306, 575, 504, 7918, 572, 10016, 6328, 1264, 5556, 8846, 9730, 6010, 5919, 6002, 10074, 1113, 2]
+// Dependencies: [19, 17, 5311, 1072, 5156, 21, 5310, 575, 504, 7928, 572, 10029, 6336, 1264, 5560, 8857, 9743, 6014, 5923, 6006, 11630, 1113, 2]
 // Exports: default
 
-// Module 18356 (PremiumMarketingMomentActionSheet)
+// Module 18397 (PremiumMarketingMomentActionSheet)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
-import LinkingDefault from "Linking" /* 6002 */;
-import PremiumMarketingButtonActions from "PremiumMarketingButtonActions" /* 10016 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5156 */;
+import LinkingDefault from "Linking" /* 6006 */;
+import PremiumMarketingButtonActions from "PremiumMarketingButtonActions" /* 10029 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import AccessibilityStore from "AccessibilityStore" /* 5311 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size_mod from "module_2" /* 2 */;
 
 let c9;
@@ -52,7 +52,7 @@ export default function PremiumMarketingMomentActionSheet(markAsDismissed) {
   let obj7;
   let obj9;
   let promotionId;
-  let tmp14Result;
+  let tmp15Result;
   let tmp5Result2;
   markAsDismissed = markAsDismissed.markAsDismissed;
   const bottomSheetData = markAsDismissed.bottomSheetData;
@@ -79,7 +79,7 @@ export default function PremiumMarketingMomentActionSheet(markAsDismissed) {
   if (button != null) {
     buttonAction = button.buttonAction;
   }
-  const items2 = [buttonAction, , , , ];
+  const items2 = [buttonAction, , , , , ];
   let button2 = bottomSheetData.button;
   let value;
   if (button2 != null) {
@@ -98,10 +98,17 @@ export default function PremiumMarketingMomentActionSheet(markAsDismissed) {
     }
   }
   items2[2] = value2;
-  items2[3] = callback;
-  items2[4] = analyticsLocations;
+  let button4 = bottomSheetData.button;
+  let giftModalDestination;
+  if (button4 != null) {
+    giftModalDestination = button4.giftModalDestination;
+  }
+  items2[3] = giftModalDestination;
+  items2[4] = callback;
+  items2[5] = analyticsLocations;
   const items3 = [callback];
   const callback1 = useCallback(() => {
+    let giftModalDestination;
     let value;
     let value2;
     callback(ContentDismissActionType.PRIMARY);
@@ -112,7 +119,7 @@ export default function PremiumMarketingMomentActionSheet(markAsDismissed) {
       buttonAction = button.buttonAction;
     }
     const button2 = tmp3.button;
-    const obj = { buttonAction, applicationId: value, shopCollectionId: value2, analyticsLocations, analyticsPage: AnalyticsPages.PREMIUM_MARKETING_MOMENT_ACTION_SHEET };
+    const obj = { buttonAction, applicationId: value, shopCollectionId: value2, giftModalDestination, analyticsLocations, analyticsPage: AnalyticsPages.PREMIUM_MARKETING_MOMENT_ACTION_SHEET };
     value = undefined;
     if (button2 != null) {
       if (button2.navigableStorefrontApplicationId != null) {
@@ -125,6 +132,11 @@ export default function PremiumMarketingMomentActionSheet(markAsDismissed) {
       if (button3.shopCollectionId != null) {
         value2 = iter2.value;
       }
+    }
+    const button4 = tmp3.button;
+    giftModalDestination = undefined;
+    if (button4 != null) {
+      giftModalDestination = button4.giftModalDestination;
     }
     getButtonActionHandler(obj)();
   }, items2);
@@ -144,20 +156,20 @@ export default function PremiumMarketingMomentActionSheet(markAsDismissed) {
     size = { src: obj7, style: tmp.video, muted: true, height: 188, width: 335, paused: stateFromStores, resizeMode: "contain" };
     obj7 = { videoURI: null, uri: null };
     ({ assetUrl: obj11.videoURI, assetUrl: obj11.uri } = bottomSheetData);
-    tmp14Result = tmp14(tmp5(tmp3[16]), size);
+    tmp15Result = tmp15(tmp5(tmp3[16]), size);
   } else {
     const obj8 = { source: obj9, style: tmp.image, resizeMode: "contain" };
     obj9 = { uri: bottomSheetData.assetUrl };
-    tmp14Result = tmp14(tmp5(tmp3[17]), obj8);
+    tmp15Result = tmp15(tmp5(tmp3[17]), obj8);
   }
-  items4 = [tmp14Result, , , ];
+  items4 = [tmp15Result, , , ];
   const obj10 = { style: tmp.header, color: "mobile-text-heading-primary", variant: "heading-lg/semibold", children: copy.header };
   items4[1] = closure_8(markAsDismissed(tmp3[18]).Text, obj10);
   const obj12 = { style: tmp.body, color: "text-default", variant: "body-sm/normal", children: items5 };
   items5 = [copy.body, " ", ];
-  let tmp14Result2 = null != helpArticleLink;
+  let tmp15Result2 = null != helpArticleLink;
   const Text = tmp2(tmp3[18]).Text;
-  if (tmp14Result2) {
+  if (tmp15Result2) {
     const obj13 = {
       color: "text-link",
       variant: "body-sm/normal",
@@ -168,9 +180,9 @@ export default function PremiumMarketingMomentActionSheet(markAsDismissed) {
         },
       children: helpArticleLink.linkText
     };
-    tmp14Result2 = tmp14(tmp2(tmp3[18]).Text, obj13);
+    tmp15Result2 = tmp15(tmp2(tmp3[18]).Text, obj13);
   }
-  items5[2] = tmp14Result2;
+  items5[2] = tmp15Result2;
   items4[2] = closure_9(Text, obj12);
   const obj14 = { style: tmp.buttonContainer, children: closure_8(tmp5Result2, { text: buttonCopy, onPress: callback1 }) };
   buttonCopy = copy.buttonCopy;

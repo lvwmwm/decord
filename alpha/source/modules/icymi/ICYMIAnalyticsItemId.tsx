@@ -1,15 +1,15 @@
-// Module ID: 10226
-// Function ID: 10227
+// Module ID: 10669
+// Function ID: 10670
 // Name: ICYMIAnalyticsItemId
-// Dependencies: [10210, 10224, 2]
+// Dependencies: [10654, 10667, 2]
 // Exports: getDehydratedAnalyticsItemId, getListAnalyticsItemId
 
-// Module 10226 (ICYMIAnalyticsItemId)
-import ICYMITypes from "ICYMITypes" /* 10210 */;
+// Module 10669 (ICYMIAnalyticsItemId)
+import ICYMITypes from "ICYMITypes" /* 10654 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const parseWaterwheelsCard = tmp(10224);
+const parseWaterwheelsCard = tmp(10667);
 const result = size.fileFinishedImporting("modules/icymi/ICYMIAnalyticsItemId.tsx");
 
 export function getDehydratedAnalyticsItemId(type) {

@@ -1,14 +1,14 @@
-// Module ID: 11328
-// Function ID: 11329
+// Module ID: 10828
+// Function ID: 10829
 // Name: FlagIcon
-// Dependencies: [19, 21, 575, 6009, 11329, 2]
+// Dependencies: [19, 21, 575, 6013, 10829, 2]
 // Exports: FlagIcon
 
-// Module 11328 (FlagIcon)
+// Module 10828 (FlagIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6009 */;
-import AssetRegistry from "AssetRegistry" /* 11329 */;
+import BaseIconImage2 from "BaseIconImage" /* 6013 */;
+import AssetRegistry from "AssetRegistry" /* 10829 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

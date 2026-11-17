@@ -1,27 +1,27 @@
-// Module ID: 15651
-// Function ID: 15652
+// Module ID: 15685
+// Function ID: 15686
 // Name: ConjureAppChannelSheet
-// Dependencies: [19, 15648, 5155, 5238, 1072, 21, 5306, 575, 5944, 7261, 6327, 5919, 15649, 15622, 15169, 10516, 15166, 504, 5542, 10978, 10536, 10919, 8460, 7746, 7443, 7455, 13308, 1113, 12295, 10976, 4131, 10528, 7456, 6027, 10569, 10997, 11224, 7436, 10981, 11328, 5556, 5560, 7415, 2]
+// Dependencies: [19, 15682, 5159, 5242, 1072, 21, 5310, 575, 5948, 7271, 6335, 5923, 15683, 15656, 15194, 10571, 15191, 504, 5546, 12957, 12956, 11929, 8471, 7756, 7453, 7465, 14540, 1113, 11046, 14536, 4133, 14434, 7466, 6031, 11049, 12345, 10751, 7446, 11734, 10828, 5560, 5564, 7425, 2]
 
-// Module 15651 (ConjureAppChannelSheet)
+// Module 15685 (ConjureAppChannelSheet)
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5542 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import useChannelNameDefault from "useChannelName" /* 5944 */;
-import Stack_Stack from "Stack/Stack" /* 6327 */;
-import useAppChannelApplication from "useAppChannelApplication" /* 7261 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8460 */;
-import openConjureHomeScreenDefault from "openConjureHomeScreen" /* 10536 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 10919 */;
-import ConjureRemixSheet from "ConjureRemixSheet" /* 10978 */;
-import openConjureAppChannelSheet from "openConjureAppChannelSheet" /* 15649 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5546 */;
+import Text_Text from "Text/Text" /* 5923 */;
+import useChannelNameDefault from "useChannelName" /* 5948 */;
+import Stack_Stack from "Stack/Stack" /* 6335 */;
+import useAppChannelApplication from "useAppChannelApplication" /* 7271 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8471 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 11929 */;
+import openConjureHomeScreenDefault from "openConjureHomeScreen" /* 12956 */;
+import ConjureRemixSheet from "ConjureRemixSheet" /* 12957 */;
+import openConjureAppChannelSheet from "openConjureAppChannelSheet" /* 15683 */;
 import react_mod from "react" /* 19 */;
-import ChannelMemberCountStore from "ChannelMemberCountStore" /* 15648 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import PermissionStore from "PermissionStore" /* 5238 */;
+import ChannelMemberCountStore from "ChannelMemberCountStore" /* 15682 */;
+import ChannelStore from "ChannelStore" /* 5159 */;
+import PermissionStore from "PermissionStore" /* 5242 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 const ConjureRemixSheetDefault = ConjureRemixSheet;
@@ -91,7 +91,7 @@ function ConjureAppChannelSheetContent(channel) {
   let string;
   let t;
   let tmp22Result;
-  const f112012 = () => {
+  const f112250 = () => {
     let fn = null;
     if (null != report) {
       fn = () => {
@@ -142,19 +142,19 @@ function ConjureAppChannelSheetContent(channel) {
   }, items4);
   const reload = appChannelAppActions.reload;
   const items5 = [reload];
-  const memo = react.useMemo(f112012, items5);
+  const memo = react.useMemo(f112250, items5);
   const close = appChannelAppActions.close;
   const items6 = [close];
-  const memo1 = react.useMemo(f112012, items6);
+  const memo1 = react.useMemo(f112250, items6);
   const appInfo = appChannelAppActions.appInfo;
   const items7 = [appInfo];
-  const memo2 = react.useMemo(f112012, items7);
+  const memo2 = react.useMemo(f112250, items7);
   const devicePermissions = appChannelAppActions.devicePermissions;
   const items8 = [devicePermissions];
-  const memo3 = react.useMemo(f112012, items8);
+  const memo3 = react.useMemo(f112250, items8);
   const report = appChannelAppActions.report;
   const items9 = [report];
-  const memo4 = react.useMemo(f112012, items9);
+  const memo4 = react.useMemo(f112250, items9);
   const items10 = [guild_id, remixProject];
   const items11 = [tmp7];
   const callback = react.useCallback(() => {
@@ -376,13 +376,13 @@ const memoResult = react.memo(function ConjureAppChannelSheet(channelId) {
   let tmp6 = null;
   if (null != stateFromStores) {
     const obj2 = { startExpanded: true, scrollable: true, children: closure_10(BottomSheetScrollView, obj3) };
-    const BottomSheet = tmp2(5556).BottomSheet;
+    const BottomSheet = tmp2(5560).BottomSheet;
     obj3 = { children: closure_10(SafeAreaPaddingView, obj4) };
-    BottomSheetScrollView = tmp2(5560).BottomSheetScrollView;
+    BottomSheetScrollView = tmp2(5564).BottomSheetScrollView;
     obj4 = { bottom: true, style: tmp.content, children: closure_10(Stack, obj5) };
-    SafeAreaPaddingView = tmp2(7415).SafeAreaPaddingView;
+    SafeAreaPaddingView = tmp2(7425).SafeAreaPaddingView;
     obj5 = { spacing: stateFromStores(575).space.PX_24, children: closure_10(ConjureAppChannelSheetContent, obj6) };
-    Stack = tmp2(6327).Stack;
+    Stack = tmp2(6335).Stack;
     obj6 = { channel: stateFromStores };
     tmp6 = closure_10(BottomSheet, obj2);
   }

@@ -1,17 +1,17 @@
-// Module ID: 13334
-// Function ID: 13335
+// Module ID: 14439
+// Function ID: 14440
 // Name: ConjureSharingModeSheet
-// Dependencies: [19, 21, 5542, 7951, 7913, 1113, 4131, 7745, 7747, 2]
+// Dependencies: [19, 21, 5546, 7961, 7923, 1113, 4133, 7755, 7757, 2]
 // Exports: default
 
-// Module 13334 (ConjureSharingModeSheet)
+// Module 14439 (ConjureSharingModeSheet)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import TableRadioGroup2 from "TableRadioGroup" /* 7745 */;
-import TableRadioRow from "TableRadioRow" /* 7747 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7913 */;
-import ActionSheet2 from "ActionSheet" /* 7951 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 7755 */;
+import TableRadioRow from "TableRadioRow" /* 7757 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7923 */;
+import ActionSheet2 from "ActionSheet" /* 7961 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -38,11 +38,11 @@ export default function ConjureSharingModeSheet(onChange) {
   }, items);
   let obj = { header: null, children: tmp2(TableRadioGroup, obj3) };
   const ActionSheet = ActionSheet2.ActionSheet;
-  ({ title: intl.string(onChange(4131).ujIxRm) });
+  ({ title: intl.string(onChange(4133).jDBYrs) });
   const BottomSheetTitleHeader = BottomSheetTitleHeader2.BottomSheetTitleHeader;
   intl = intl2.intl;
   TableRadioGroup = TableRadioGroup2.TableRadioGroup;
-  obj3 = { value, onChange: callback, hasIcons: false, children: options.map((value) => jsx(TableRadioRow.TableRadioRow, { value: value.value, label: value.label, subLabel: value.description }, value.value)) };
+  obj3 = { value, onChange: callback, hasIcons: false, children: options.map((value) => jsx(TableRadioRow.TableRadioRow, { value: value.value, label: value.label }, value.value)) };
   return jsx(ActionSheet, obj);
 };
 export const CONJURE_SHARING_MODE_SHEET_KEY = "ConjureSharingModeSheet";

@@ -1,14 +1,14 @@
-// Module ID: 19086
-// Function ID: 19087
+// Module ID: 19127
+// Function ID: 19128
 // Name: HomeDrawerShared
-// Dependencies: [19, 17, 21, 5306, 2]
+// Dependencies: [19, 17, 21, 5310, 2]
 // Exports: HomeDrawerSharedItem
 
-// Module 19086 (HomeDrawerShared)
+// Module 19127 (HomeDrawerShared)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let c2;

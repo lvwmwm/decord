@@ -1,12 +1,12 @@
-// Module ID: 20475
-// Function ID: 20476
+// Module ID: 20522
+// Function ID: 20523
 // Name: AutomodKeywordPresetInfo
-// Dependencies: [14166, 1113, 2]
+// Dependencies: [13039, 1113, 2]
 // Exports: getKeywordPresetInfo
 
-// Module 20475 (AutomodKeywordPresetInfo)
+// Module 20522 (AutomodKeywordPresetInfo)
 import intl7 from "intl" /* 1113 */;
-import Constants from "Constants" /* 14166 */;
+import Constants from "Constants" /* 13039 */;
 import size from "module_2" /* 2 */;
 
 const KeywordPreset = Constants.KeywordPreset;

@@ -1,19 +1,19 @@
-// Module ID: 8681
-// Function ID: 8682
+// Module ID: 8692
+// Function ID: 8693
 // Name: SaveableChannelsStore
-// Dependencies: [5155, 5526, 1071, 5209, 8682, 8683, 8684, 8686, 8687, 8688, 8689, 2]
+// Dependencies: [5159, 5530, 1071, 5213, 8693, 8694, 8695, 8697, 8698, 8699, 8700, 2]
 
-// Module 8681 (SaveableChannelsStore)
-import ExtendedMemoryLru from "ExtendedMemoryLru" /* 8683 */;
-import Lru from "Lru" /* 8684 */;
-import isPrivateChannel from "isPrivateChannel" /* 8686 */;
-import isReadableChannel from "isReadableChannel" /* 8687 */;
-import withFallbacks from "withFallbacks" /* 8689 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5526 */;
+// Module 8692 (SaveableChannelsStore)
+import ExtendedMemoryLru from "ExtendedMemoryLru" /* 8694 */;
+import Lru from "Lru" /* 8695 */;
+import isPrivateChannel from "isPrivateChannel" /* 8697 */;
+import isReadableChannel from "isReadableChannel" /* 8698 */;
+import withFallbacks from "withFallbacks" /* 8700 */;
+import ChannelStore from "ChannelStore" /* 5159 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5530 */;
 import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1071 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
-import FileSystemStore from "FileSystemStore" /* 8682 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5213 */;
+import FileSystemStore from "FileSystemStore" /* 8693 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -229,7 +229,7 @@ class SaveableChannelsStore extends MobileCacheSnapshotStore {
         const obj = { guildId: guild_id, channelId: id, channelType: basicChannel.type };
         lastChannel = obj;
         extendedMemoryLru.put(id, obj);
-        const tmp9Result = tmp9(8688);
+        const tmp9Result = tmp9(8699);
         if (tmp9Result.isLimitedChannel(basicChannel)) {
           const putResult1 = lru.put(id, null);
           if (null != putResult1) {

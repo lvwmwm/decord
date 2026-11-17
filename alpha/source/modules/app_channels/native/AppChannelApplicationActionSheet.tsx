@@ -1,13 +1,13 @@
-// Module ID: 8152
-// Function ID: 8153
+// Module ID: 8163
+// Function ID: 8164
 // Name: AppChannelApplicationActionSheet
-// Dependencies: [19, 21, 8149, 5542, 7951, 7913, 1113, 7745, 7747, 8153, 8151, 2]
+// Dependencies: [19, 21, 8160, 5546, 7961, 7923, 1113, 7755, 7757, 8164, 8162, 2]
 // Exports: default
 
-// Module 8152 (AppChannelApplicationActionSheet)
+// Module 8163 (AppChannelApplicationActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import getAppChannelApplicationUnsupportedTextDefault from "getAppChannelApplicationUnsupportedText" /* 8153 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
+import getAppChannelApplicationUnsupportedTextDefault from "getAppChannelApplicationUnsupportedText" /* 8164 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ export default function AppChannelApplicationActionSheet(arg0) {
   let selectedApplicationId;
   ({ selectedApplicationId, onChange } = arg0);
   ({ guildId, channelId } = arg0);
-  let obj = onChange(8149);
+  let obj = onChange(8160);
   const options = obj.useAppChannelApplicationOptions(guildId, channelId, selectedApplicationId).options;
   const items = [onChange];
   const callback = react.useCallback((arg0) => {
@@ -31,9 +31,9 @@ export default function AppChannelApplicationActionSheet(arg0) {
     const obj = ActionSheetActionCreatorsDefault;
     obj.hideActionSheet();
   }, items);
-  const ActionSheet = onChange(7951).ActionSheet;
+  const ActionSheet = onChange(7961).ActionSheet;
   ({ title: intl.string(onChange(1113).t.F2FMFR) });
-  const BottomSheetTitleHeader = onChange(7913).BottomSheetTitleHeader;
+  const BottomSheetTitleHeader = onChange(7923).BottomSheetTitleHeader;
   intl = onChange(1113).intl;
   ({
     accessibilityLabel: intl2.string(onChange(1113).t.F2FMFR),
@@ -48,7 +48,7 @@ export default function AppChannelApplicationActionSheet(arg0) {
       return <TableRadioRow key={application.id} value={application.id} label={application.name} subLabel={getAppChannelApplicationUnsupportedTextDefault(status)} disabled={!status.supported} icon={null} />;
     })
   });
-  const TableRadioGroup = onChange(7745).TableRadioGroup;
+  const TableRadioGroup = onChange(7755).TableRadioGroup;
   intl2 = onChange(1113).intl;
   if (selectedApplicationId == null) {
     selectedApplicationId = "";

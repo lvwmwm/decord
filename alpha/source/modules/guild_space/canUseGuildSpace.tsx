@@ -1,13 +1,14 @@
-// Module ID: 7242
-// Function ID: 7243
+// Module ID: 7250
+// Function ID: 7251
 // Name: canUseGuildSpace
-// Dependencies: [5177, 5238, 1072, 504, 7243, 2]
-// Exports: canUseGuildSpace, isGuildSpaceAdmin, useCanUseGuildSpace, useIsGuildSpaceAdmin
+// Dependencies: [5181, 5242, 1072, 504, 7251, 7252, 2]
+// Exports: canUseGuildSpace, isGuildSpaceAdmin, isGuildSpaceVisible, isGuildSpaceVisibleToMembers, useCanUseGuildSpace, useIsGuildSpaceAdmin
 
-// Module 7242 (canUseGuildSpace)
+// Module 7250 (canUseGuildSpace)
 import Constants from "Constants" /* 1072 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import PermissionStore from "PermissionStore" /* 5238 */;
+import GuildSpaceTypes from "GuildSpaceTypes" /* 7251 */;
+import GuildStore from "GuildStore" /* 5181 */;
+import PermissionStore from "PermissionStore" /* 5242 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -16,8 +17,8 @@ let _require;
 const Permissions = Constants.Permissions;
 const result = size.fileFinishedImporting("modules/guild_space/canUseGuildSpace.tsx");
 
-export function isGuildSpaceAdmin(arg0) {
-  const canResult = null != arg0 && PermissionStore.can(Permissions.MANAGE_GUILD, arg0);
+export function isGuildSpaceAdmin(guild) {
+  const canResult = null != guild && PermissionStore.can(Permissions.MANAGE_GUILD, guild);
   return canResult;
 }
 export function useIsGuildSpaceAdmin(arg0) {
@@ -30,6 +31,29 @@ export function useIsGuildSpaceAdmin(arg0) {
     const canResult = null != stateFromStores && PermissionStore.can(constants.MANAGE_GUILD, tmp);
     return canResult;
   }, items1);
+}
+export function isGuildSpaceVisibleToMembers(guild) {
+  const guildSpaceSettings = guild.guildSpaceSettings;
+  const tmp = null != guildSpaceSettings && guildSpaceSettings.enabled && guildSpaceSettings.publish_status === GuildSpaceTypes.GuildSpacePublishStatus.PUBLISHED;
+  return tmp;
+}
+export function isGuildSpaceVisible(guild, arg1) {
+  const guildSpaceSettings = guild.guildSpaceSettings;
+  let enabled;
+  if (guildSpaceSettings != null) {
+    enabled = guildSpaceSettings.enabled;
+  }
+  let tmp3 = false !== enabled;
+  if (tmp3) {
+    let tmp4 = arg1;
+    if (!tmp4) {
+      const guildSpaceSettings2 = guild.guildSpaceSettings;
+      tmp4 = null != guildSpaceSettings2 && guildSpaceSettings2.enabled && guildSpaceSettings2.publish_status === GuildSpaceTypes.GuildSpacePublishStatus.PUBLISHED;
+      const tmp5 = null != guildSpaceSettings2 && guildSpaceSettings2.enabled && guildSpaceSettings2.publish_status === GuildSpaceTypes.GuildSpacePublishStatus.PUBLISHED;
+    }
+    tmp3 = tmp4;
+  }
+  return tmp3;
 }
 export function canUseGuildSpace(guild, getChannelIdForGuildTransition) {
   return false;

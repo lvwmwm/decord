@@ -1,10 +1,10 @@
-// Module ID: 15248
-// Function ID: 15249
+// Module ID: 11292
+// Function ID: 11293
 // Name: IosAttributionSignRequest
 // Dependencies: [5, 1072, 1285, 1242, 2]
 // Exports: fetchIosAttributionSignedPayloads
 
-// Module 15248 (IosAttributionSignRequest)
+// Module 11292 (IosAttributionSignRequest)
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;

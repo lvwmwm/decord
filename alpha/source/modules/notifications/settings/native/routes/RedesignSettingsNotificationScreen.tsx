@@ -1,18 +1,18 @@
-// Module ID: 18619
-// Function ID: 18620
+// Module ID: 18660
+// Function ID: 18661
 // Name: RedesignSettingsNotificationScreen
-// Dependencies: [19, 18107, 9202, 21, 18620, 1113, 3029, 12406, 5889, 18621, 2]
+// Dependencies: [19, 18148, 9213, 21, 18661, 1113, 3031, 12612, 5893, 18662, 2]
 
-// Module 18619 (RedesignSettingsNotificationScreen)
+// Module 18660 (RedesignSettingsNotificationScreen)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import _modDef3029 from "module_3029" /* 3029 */;
-import useMountEffectDefault from "useMountEffect" /* 5889 */;
-import SettingsConstants from "SettingsConstants" /* 9202 */;
-import SettingBuilders from "SettingBuilders" /* 12406 */;
-import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 18107 */;
-import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 18620 */;
-import SystemNotifPermissionLayoutDefault from "SystemNotifPermissionLayout" /* 18621 */;
+import _modDef3031 from "module_3031" /* 3031 */;
+import useMountEffectDefault from "useMountEffect" /* 5893 */;
+import SettingsConstants from "SettingsConstants" /* 9213 */;
+import SettingBuilders from "SettingBuilders" /* 12612 */;
+import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 18148 */;
+import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 18661 */;
+import SystemNotifPermissionLayoutDefault from "SystemNotifPermissionLayout" /* 18662 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ const memoResult = react.memo(function RedesignSettingsNotificationsScreen() {
     items = [, , ];
     const obj2 = MobileNotifSettingsRouteBuilders;
     items[0] = obj2.buildOverviewCategoriesSection();
-    const obj3 = { label: intl.string(_modDef3029.nvBHcD), settings: items1 };
+    const obj3 = { label: intl.string(_modDef3031.nvBHcD), settings: items1 };
     intl = intl2.intl;
     items1 = [, , , , , , , ];
     ({ REDESIGN_SYSTEM_NOTIFICATIONS: arr2[0], REDESIGN_IN_APP_NOTIFICATIONS: arr2[1], REDESIGN_IN_APP_MESSAGE_SOUNDS: arr2[2], REDESIGN_ANDROID_MESSAGE_NOTIFICATIONS: arr2[3], REDESIGN_IOS_NATIVE_PHONE_INTEGRATION: arr2[4], REDESIGN_ANDROID_NOTIFICATION_LIGHTS: arr2[5], REDESIGN_ANDROID_NOTIFICATION_VIBRATIONS: arr2[6], REDESIGN_ANDROID_NOTIFICATION_SOUNDS: arr2[7] } = constants);

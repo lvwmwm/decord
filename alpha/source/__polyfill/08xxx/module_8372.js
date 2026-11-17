@@ -1,122 +1,94 @@
 // Module ID: 8372
 // Function ID: 8373
-// Dependencies: [5, 17, 1267]
-// Exports: fetchText
+// Dependencies: [41, 42, 93, 95, 98, 19, 8373, 21, 8282, 8289, 8290, 8296, 8375, 8298]
 
 // Module 8372
-import react_native from "react-native" /* 17 */;
-import Buffer from "Buffer" /* 1267 */;
-import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import Fragment from "Fragment" /* 21 */;
+import extractProps from "extractProps" /* 8289 */;
+import extractTextDefault from "extractText" /* 8296 */;
+import multiplyMatricesDefault from "multiplyMatrices" /* 8298 */;
+import _modDef8375 from "module_8375" /* 8375 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
+import react from "react" /* 19 */;
+import TSpan from "TSpan" /* 8373 */;
 
-let c1;
+const extractPropsDefault = extractProps;
 
-let obj = function _fetchText() {
-  obj = _asyncToGenerator(async (arg0, value) => {
-    function dataUriToXml(arg0) {
-      try {
-        const _decodeURIComponent = decodeURIComponent;
-        const str = decodeURIComponent(arg0);
-        const parts = str.split(",");
-        const substr = parts.slice(1);
-        return substr.join(",");
-      } catch (tmp2) {
-        const _Error = Error;
-        const _HermesInternal = HermesInternal;
-        const self = this;
-        const self2 = this;
-        const error = new Error("Decoding " + arg0 + " failed with error: " + tmp2);
-        throw error;
-      }
-    }
-    function fetchUriData(arg0) {
-      return closure_1_5(...arguments);
-    }
-    let closure_0 = arg0;
-    if (c1 === 2) {
-      c1 = 3;
-      const str3 = "Generator functions may not be called on executing generators";
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp2 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
+  }
+}
+const jsx = Fragment.jsx;
+class Text {
+  constructor() {
+    let constructResult;
+    const self = this;
+    const items = [...arguments];
+    let closure_0;
+    let tmp = _classCallCheck(this, Text);
+    const items1 = [...items];
+    let obj = _getPrototypeOf(Text);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = _possibleConstructorReturn;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
     } else {
-      try {
-        c1 = 2;
-        if (arg0 === 1) {
-          c1 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c1 = 3;
-          const obj3 = { value, done: true };
-          return obj3;
-        } else {
-          let tmp5 = null;
-          if (closure_0) {
-            let tmp3;
-            let str = "data:image/svg+xml;utf8";
-            if (closure_0.startsWith("data:image/svg+xml;utf8")) {
-              tmp3 = dataUriToXml(obj4);
-            } else {
-              const str2 = "data:image/svg+xml;base64";
-              if (closure_0.startsWith("data:image/svg+xml;base64")) {
-                tmp3 = decodeBase64Image(obj4);
-              } else {
-                tmp3 = fetchUriData(obj4);
-              }
-            }
-            tmp5 = tmp3;
-          }
-          c1 = 3;
-          obj = { value: tmp5, done: true };
-          return obj;
-        }
-      } catch (tmp6) {
-        c1 = 3;
-        throw tmp6;
+      constructResult = obj.apply(self, items1);
+    }
+    const tmp3Result = tmp3(self, constructResult);
+    closure_0 = tmp3Result;
+    tmp3Result.setNativeProps = (matrix) => {
+      const tmp = matrix && !matrix.matrix && closure_2_1(closure_2_2[8])(matrix);
+      if (tmp) {
+        matrix.matrix = tmp;
       }
-    }
-  });
-  return obj(...arguments);
-};
-obj = function _fetchUriData() {
-  obj = _asyncToGenerator(async function(arg0) {
-    let c2;
-    let c3;
-    let closure_0 = arg0;
-    const _fetch = fetch;
-    let closure_1 = await fetch(closure_0);
-    if (!closure_1.ok) {
-      const _Error = Error;
-      const _HermesInternal = HermesInternal;
-      const self = this;
-      const self2 = this;
-      const error = new Error("Fetching " + closure_0 + " failed with status " + closure_1.status);
-      throw error;
-    }
-    await closure_1.text();
-    return arg1;
-  });
-  return obj(...arguments);
-};
-const Platform = react_native.Platform;
-function decodeBase64Image(arg0) {
-  const str = decodeURIComponent(arg0);
-  const str2 = str.split(";")[1];
-  const parts = str2.split(",");
-  const first = parts[0];
-  const substr = parts.slice(1);
-  const joined = substr.join(",");
-  const _Buffer = Buffer.Buffer;
-  const str3 = _Buffer.from(joined, first);
-  return str3.toString("utf-8");
+      const obj = Text(closure_2_2[9]);
+      const propsAndStylesResult = obj.propsAndStyles(matrix);
+      const obj2 = Text(closure_2_2[10]);
+      assign(propsAndStylesResult, obj2.pickNotNil(closure_2_1(closure_2_2[11])(propsAndStylesResult, true)));
+      if (closure_0.root) {
+        const root = closure_0.root;
+        root.setNativeProps(propsAndStylesResult);
+      }
+    };
+    return tmp3Result;
+  }
 }
+_inherits(Text, multiplyMatricesDefault);
+const entry = {
+  key: "render",
+  value: function render() {
+    const obj = extractProps;
+    const propsAndStylesResult = obj.propsAndStyles(this.props);
+    const obj2 = { x: null, y: null };
+    const tmp2 = extractPropsDefault;
+    const merged = Object.assign(propsAndStylesResult);
+    const tmp2Result = tmp2(obj2, this);
+    const merged1 = Object.assign(tmp2Result, extractTextDefault(propsAndStylesResult, true));
+    tmp2Result.ref = this.refMethod;
+    _modDef8375;
+    const merged2 = Object.assign(tmp2Result);
+    return <tmp6 />;
+  }
+};
+let items = [entry];
+const importDefaultResultResult = _createClass(Text, items);
+importDefaultResultResult.displayName = "Text";
 
-export function fetchText(uri) {
-  return obj(...arguments);
-}
+export default importDefaultResultResult;

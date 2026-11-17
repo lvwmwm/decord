@@ -1,12 +1,12 @@
-// Module ID: 15148
-// Function ID: 15149
+// Module ID: 15175
+// Function ID: 15176
 // Name: getConjureAppSoundButton
-// Dependencies: [1113, 4131, 7432, 13018, 12743, 2]
+// Dependencies: [1113, 4133, 7442, 11659, 11300, 2]
 // Exports: default
 
-// Module 15148 (getConjureAppSoundButton)
-import _modDef4131 from "module_4131" /* 4131 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 12743 */;
+// Module 15175 (getConjureAppSoundButton)
+import _modDef4133 from "module_4133" /* 4133 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 11300 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -22,7 +22,7 @@ export default function getConjureAppSoundButton(arg0, arg1) {
   importDefault = arg1;
   const intl = require("intl").intl;
   const string = intl.string;
-  const tmp3 = _modDef4131;
+  const tmp3 = _modDef4133;
   let obj = {
     label: string(arg1 ? tmp3.bd0Ufh : tmp3.dxBzpe),
     IconComponent: VoiceXIcon,
@@ -32,9 +32,9 @@ export default function getConjureAppSoundButton(arg0, arg1) {
     }
   };
   if (arg1) {
-    VoiceXIcon = tmp(7432).VoiceNormalIcon;
+    VoiceXIcon = tmp(7442).VoiceNormalIcon;
   } else {
-    VoiceXIcon = tmp(13018).VoiceXIcon;
+    VoiceXIcon = tmp(11659).VoiceXIcon;
   }
   return obj;
 };

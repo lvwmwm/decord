@@ -1,18 +1,18 @@
-// Module ID: 13727
-// Function ID: 13728
+// Module ID: 14778
+// Function ID: 14779
 // Name: ConjurePlanWidget
-// Dependencies: [19, 502, 21, 5306, 575, 8607, 504, 7357, 12146, 2]
+// Dependencies: [19, 502, 21, 5310, 575, 8618, 504, 7367, 10892, 2]
 // Exports: default
 
-// Module 13727 (ConjurePlanWidget)
+// Module 14778 (ConjurePlanWidget)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7357 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8607 */;
-import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 12146 */;
+import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7367 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8618 */;
+import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 10892 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

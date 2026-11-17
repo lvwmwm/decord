@@ -1,24 +1,24 @@
-// Module ID: 18753
-// Function ID: 18754
+// Module ID: 18794
+// Function ID: 18795
 // Name: MessagesItemChannelBase
-// Dependencies: [19, 17, 6058, 7015, 5248, 5209, 6948, 1388, 21, 5306, 575, 504, 18754, 8576, 1380, 8134, 6053, 10894, 7428, 8418, 1113, 9508, 18755, 5984, 9504, 18756, 8625, 18757, 6059, 2]
+// Dependencies: [19, 17, 6065, 7023, 5252, 5213, 6956, 1388, 21, 5310, 575, 504, 18795, 8587, 1380, 8145, 6060, 15146, 7438, 8429, 1113, 9520, 18796, 5988, 9516, 18797, 8636, 18798, 6066, 2]
 
-// Module 18753 (MessagesItemChannelBase)
+// Module 18794 (MessagesItemChannelBase)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import transitionToChannel from "transitionToChannel" /* 6053 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 8134 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10894 */;
+import transitionToChannel from "transitionToChannel" /* 6060 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 8145 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 15146 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 6058 */;
-import ReadStateStore from "ReadStateStore" /* 7015 */;
-import RelationshipStore from "RelationshipStore" /* 5248 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6948 */;
+import PresenceStore from "PresenceStore" /* 6065 */;
+import ReadStateStore from "ReadStateStore" /* 7023 */;
+import RelationshipStore from "RelationshipStore" /* 5252 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5213 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6956 */;
 import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let closure_12;

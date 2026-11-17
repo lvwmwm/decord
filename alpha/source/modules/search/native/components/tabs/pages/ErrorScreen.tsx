@@ -1,15 +1,15 @@
-// Module ID: 19465
-// Function ID: 19466
+// Module ID: 19510
+// Function ID: 19511
 // Name: ErrorScreen
-// Dependencies: [19, 17, 21, 5306, 5903, 5315, 5919, 2]
+// Dependencies: [19, 17, 21, 5310, 5907, 5319, 5923, 2]
 
-// Module 19465 (ErrorScreen)
+// Module 19510 (ErrorScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5315 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5903 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5319 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5907 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;

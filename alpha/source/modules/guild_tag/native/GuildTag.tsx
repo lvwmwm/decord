@@ -1,22 +1,22 @@
-// Module ID: 10654
-// Function ID: 10655
+// Module ID: 10363
+// Function ID: 10364
 // Name: GuildTag
-// Dependencies: [19, 17, 1388, 8410, 21, 5306, 575, 1380, 6010, 1113, 5919, 7428, 504, 8409, 5542, 10655, 2121, 2]
+// Dependencies: [19, 17, 1388, 8421, 21, 5310, 575, 1380, 6014, 1113, 5923, 7438, 504, 8420, 5546, 10364, 2121, 2]
 
-// Module 10654 (GuildTag)
+// Module 10363 (GuildTag)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import FastImageDefault from "FastImage" /* 6010 */;
-import GuildTagUtils from "GuildTagUtils" /* 8409 */;
-import GuildTagConstants from "GuildTagConstants" /* 8410 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
+import Text_Text from "Text/Text" /* 5923 */;
+import FastImageDefault from "FastImage" /* 6014 */;
+import GuildTagUtils from "GuildTagUtils" /* 8420 */;
+import GuildTagConstants from "GuildTagConstants" /* 8421 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1380 */;
 import size_mod from "module_2" /* 2 */;
 

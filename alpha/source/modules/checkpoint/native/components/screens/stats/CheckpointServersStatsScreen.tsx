@@ -1,42 +1,53 @@
-// Module ID: 14511
-// Function ID: 14512
+// Module ID: 13378
+// Function ID: 13379
 // Name: CheckpointServersStatsScreen
-// Dependencies: [19, 17, 14253, 6367, 21, 5306, 575, 504, 14270, 14273, 14481, 14482, 14512, 1113, 3285, 14271, 3317, 10939, 14513, 14514, 5919, 7720, 2]
+// Dependencies: [32, 19, 17, 13119, 6375, 21, 5310, 575, 13350, 13140, 504, 13139, 13346, 13347, 13379, 1113, 3287, 13137, 3319, 13091, 13380, 13136, 13381, 13383, 7730, 2]
 // Exports: default
 
-// Module 14511 (CheckpointServersStatsScreen)
-import react_native from "react-native" /* 17 */;
+// Module 13378 (CheckpointServersStatsScreen)
 import nativeDefault from "native" /* 575 */;
-import _modDef3285 from "module_3285" /* 3285 */;
-import _modDef3317 from "module_3317" /* 3317 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import GuildIcon from "GuildIcon" /* 7720 */;
-import CheckpointScreenDefault from "CheckpointScreen" /* 14270 */;
-import CheckpointTextDefault from "CheckpointText" /* 14271 */;
-import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 14273 */;
-import _modDef14481 from "module_14481" /* 14481 */;
-import _modDef14482 from "module_14482" /* 14482 */;
-import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 14512 */;
-import CheckpointGuildStatsDefault from "CheckpointGuildStats" /* 14513 */;
-import CheckpointRankTagDefault from "CheckpointRankTag" /* 14514 */;
+import _modDef3287 from "module_3287" /* 3287 */;
+import _modDef3319 from "module_3319" /* 3319 */;
+import GuildIconDefault from "GuildIcon" /* 7730 */;
+import CheckpointScreen from "CheckpointScreen" /* 13136 */;
+import CheckpointTextDefault from "CheckpointText" /* 13137 */;
+import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 13139 */;
+import CheckpointHeaderButton from "CheckpointHeaderButton" /* 13140 */;
+import _modDef13346 from "module_13346" /* 13346 */;
+import _modDef13347 from "module_13347" /* 13347 */;
+import useIsCheckpointWide from "useIsCheckpointWide" /* 13350 */;
+import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 13379 */;
+import CheckpointGuildStatsDefault from "CheckpointGuildStats" /* 13380 */;
+import CheckpointRankTagDefault from "CheckpointRankTag" /* 13381 */;
+import CheckpointTruncatedTextDefault from "CheckpointTruncatedText" /* 13383 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import CheckpointStore from "CheckpointStore" /* 14253 */;
-import CheckpointConstants from "CheckpointConstants" /* 6367 */;
+import react_native from "react-native" /* 17 */;
+import CheckpointStore from "CheckpointStore" /* 13119 */;
+import CheckpointConstants from "CheckpointConstants" /* 6375 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-const GuildIconDefault = GuildIcon;
+const CheckpointScreenDefault = CheckpointScreen;
+const useIsCheckpointWideDefault = useIsCheckpointWide;
 let _require, stats;
 
+let CHECKPOINT_CONTROL_SIZE;
 let CHECKPOINT_GUILD_CARD_BACKGROUND;
+let CHECKPOINT_NAV_HEIGHT;
 let CHECKPOINT_WHITE;
-let metroImportDefault;
+let c10;
+let c9;
+let hasOwnProperty;
 let metroRequire;
 let obj10;
 let obj11;
 let obj12;
+let obj13;
+let obj14;
+let obj15;
 let obj2;
 let obj3;
 let obj4;
@@ -48,39 +59,109 @@ let obj9;
 let size;
 let size1;
 let size2;
-function GuildCard(guild) {
+let sum;
+function ServersLayout(containerStyle) {
   let children;
+  let guildsStyle;
+  let header;
+  let items;
+  let items1;
+  let items2;
+  let obj10;
+  let obj3;
+  let obj7;
+  let obj8;
+  ({ header, children, guildsStyle } = containerStyle);
+  containerStyle = containerStyle.containerStyle;
+  const tmp = closure_11();
+  const tmp2 = useIsCheckpointWideDefault();
+  const obj = CheckpointScreen;
+  const checkpointScreenContentHeight = obj.useCheckpointScreenContentHeight(true);
+  const tmp5 = CheckpointScreenDefault;
+  if (tmp2) {
+    const obj2 = { centered: true, children: authStore(metroRequire, obj3) };
+    obj3 = { style: items, children: items1 };
+    items = [tmp.wideContainer, ];
+    const obj4 = { height: checkpointScreenContentHeight };
+    items[1] = obj4;
+    const obj5 = { style: tmp.wideHeader, children: header };
+    items1 = [React4(metroRequire, obj5), ];
+    ({ wideGuildsScroll: obj9.style, wideGuildsContent: obj9.contentContainerStyle } = tmp);
+    const obj6 = { style: null, contentContainerStyle: null, showsVerticalScrollIndicator: false, nestedScrollEnabled: true, children: React4(metroRequire, obj7) };
+    obj7 = { style: guildsStyle, children };
+    items1[1] = React4(hasOwnProperty, obj6);
+    obj8 = obj2;
+  } else {
+    obj8 = { children: authStore(metroRequire, obj10) };
+    obj10 = { style: containerStyle, children: items2 };
+    items2 = [header, ];
+    const obj19 = { style: guildsStyle, children };
+    items2[1] = React4(metroRequire, obj19);
+  }
+  return React4(tmp5, obj8);
+}
+function GuildCard(children) {
+  let _undefined;
+  let c0;
+  let guild;
+  let iconFillsHeight;
   let iconStyle;
   let items;
   let items1;
   let items2;
+  let items3;
   let rank;
-  guild = guild.guild;
-  ({ rank, iconStyle, children } = guild);
-  const tmp = closure_8();
+  let tmp11;
+  let tmp3;
+  ({ guild, iconFillsHeight } = children);
+  ({ rank, iconStyle } = children);
+  if (iconFillsHeight === undefined) {
+    iconFillsHeight = false;
+  }
+  _require = undefined;
+  children = children.children;
+  const tmp = closure_11();
+  [tmp3, c0] = _slicedToArray(react.useState(0), 2);
+  const tmp2 = _slicedToArray(react.useState(0), 2);
+  const callback = react.useCallback((nativeEvent) => {
+    const layout = nativeEvent.nativeEvent.layout;
+    const sum = layout.y + layout.height;
+    _undefined(sum + nativeDefault.space.PX_12);
+  }, []);
+  const bound = Math.max(96, tmp3);
   const obj2 = { style: tmp.guildContent, children: items };
   items = [, ];
   const obj = { style: tmp.guildCard, children: items2 };
-  const obj3 = { style: tmp.guildRankRow, children: metroRequire(CheckpointRankTagDefault, { rank, chamferCorner: "bottom-right" }) };
-  items[0] = metroRequire(View, obj3);
-  const obj4 = { style: tmp.guildDetails, children: items1 };
+  const obj3 = { style: tmp.guildRankRow, children: closure_9(CheckpointRankTagDefault, { rank, chamferCorner: "bottom-right" }) };
+  items[0] = closure_9(closure_6, obj3);
+  const obj4 = { style: tmp.guildDetails, onLayout: tmp11, children: items1 };
+  tmp11 = undefined;
+  if (iconFillsHeight) {
+    tmp11 = callback;
+  }
   items1 = [, ];
-  const obj5 = { variant: "heading-lg/medium", style: tmp.guildName, lineClamp: 1, ellipsizeMode: "tail", children: guild.name };
-  items1[0] = metroRequire(Text_Text.Text, obj5);
+  const obj5 = { text: guild.name, guildId: guild.id, variant: "heading-lg/medium", style: tmp.guildName };
+  items1[0] = closure_9(CheckpointTruncatedTextDefault, obj5);
   items1[1] = children;
-  items[1] = metroImportDefault(View, obj4);
-  items2 = [metroImportDefault(View, obj2), ];
-  const obj6 = { guild, size: GuildIcon.GuildIconSizes.XXLARGE, style: iconStyle };
-  const tmp2 = GuildIconDefault;
-  items2[1] = metroRequire(tmp2, obj6);
-  return metroImportDefault(View, obj);
+  items[1] = closure_10(closure_6, obj4);
+  items2 = [closure_10(closure_6, obj2), ];
+  const obj6 = { guild, size: require("GuildIcon").GuildIconSizes.XXLARGE, style: items3 };
+  items3 = [iconStyle, ];
+  const tmp9Result = GuildIconDefault;
+  if (iconFillsHeight) {
+    size = { width: bound, height: bound };
+    iconFillsHeight = size;
+  }
+  items3[1] = iconFillsHeight;
+  items2[1] = closure_9(tmp9Result, obj6);
+  return closure_10(closure_6, obj);
 }
-const View = react_native.View;
+({ ScrollView: hasOwnProperty, View: metroRequire } = react_native);
 const CHECKPOINT_PRIMARY = CheckpointConstants.CHECKPOINT_PRIMARY;
-({ CHECKPOINT_GUILD_CARD_BACKGROUND, CHECKPOINT_WHITE } = CheckpointConstants);
-({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+({ CHECKPOINT_CONTROL_SIZE, CHECKPOINT_GUILD_CARD_BACKGROUND, CHECKPOINT_NAV_HEIGHT, CHECKPOINT_WHITE } = CheckpointConstants);
+({ jsx: c9, jsxs: c10 } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { container: obj2, globalContainer: obj3, header: obj4, heading: obj5, globalHeading: obj6, globe: { width: 75, height: 56 }, title: obj7, titleText: { flexShrink: 1 }, guilds: obj8, globalGuilds: obj9, guildCard: obj10, guildContent: obj11, guildRankRow: { flexDirection: "row" }, guildDetails: obj12, guildName: { color: CHECKPOINT_WHITE }, topGuildIcon: size, guildIcon: size1, globalGuildIcon: size2 };
+let obj = { container: obj2, globalContainer: obj3, header: obj4, heading: obj5, globalHeading: obj6, globe: { width: 75, height: 56 }, title: obj7, titleText: { flexShrink: 1 }, guilds: obj8, globalGuilds: obj9, guildCard: obj10, guildContent: obj11, guildRankRow: { flexDirection: "row" }, guildDetails: obj12, guildName: { color: CHECKPOINT_WHITE }, topGuildIcon: size, guildIcon: size1, globalGuildIcon: size2, wideContainer: obj13, wideHeader: obj14, wideGuildsScroll: { flexGrow: 0, width: "50%", alignSelf: "stretch" }, wideGuildsContent: obj15 };
 obj2 = { width: "100%", flexGrow: 1, justifyContent: "center", gap: nativeDefault.space.PX_40, paddingBottom: nativeDefault.space.PX_64 };
 createStyles = createStyles.createStyles;
 obj3 = { justifyContent: "flex-start", gap: nativeDefault.space.PX_24 };
@@ -96,9 +177,14 @@ obj12 = { gap: nativeDefault.space.PX_4, paddingHorizontal: nativeDefault.space.
 size = { width: 96, height: 96, borderRadius: nativeDefault.radii.none };
 size1 = { width: 72, height: 72, borderRadius: nativeDefault.radii.none };
 size2 = { width: 64, height: 64, borderRadius: nativeDefault.radii.none };
-let closure_8 = createStyles(obj);
+obj13 = { flexDirection: "row", alignItems: "center", alignSelf: "center", width: "100%", maxWidth: useIsCheckpointWide.CHECKPOINT_WIDE_MAX_WIDTH };
+obj14 = { width: "50%", paddingRight: nativeDefault.space.PX_32 };
+obj15 = { flexGrow: 1, justifyContent: "center", paddingTop: CHECKPOINT_NAV_HEIGHT, paddingBottom: CHECKPOINT_CONTROL_SIZE + nativeDefault.space.PX_16, paddingLeft: nativeDefault.space.PX_32, paddingRight: sum + nativeDefault.space.PX_8 };
+const result = 2 * CheckpointHeaderButton.CHECKPOINT_HEADER_BUTTON_SIZE;
+sum = result + nativeDefault.space.PX_12;
+let closure_11 = createStyles(obj);
 size = size_mod;
-const result = size.fileFinishedImporting("modules/checkpoint/native/components/screens/stats/CheckpointServersStatsScreen.tsx");
+const result1 = size.fileFinishedImporting("modules/checkpoint/native/components/screens/stats/CheckpointServersStatsScreen.tsx");
 
 export default function CheckpointServersStatsScreen() {
   let globalGuildIcon;
@@ -112,14 +198,13 @@ export default function CheckpointServersStatsScreen() {
   let items4;
   let items5;
   let items6;
-  let items7;
-  let items8;
   let mapped;
+  let obj11;
   let obj3;
   let stringResult;
   let stringResult1;
   let stringResult2;
-  let tmp = closure_8();
+  let tmp = closure_11();
   _require = tmp;
   let tmp2 = _require;
   let tmp3 = dependencyMap;
@@ -151,41 +236,17 @@ export default function CheckpointServersStatsScreen() {
   if (null != guilds) {
     let tmp5Result;
     if (0 !== guilds.length) {
-      let obj2 = { children: closure_7(View, obj3) };
-      const obj6 = { style: tmp.title, children: items1 };
-      items1 = [, ];
-      obj3 = { style: tmp.container, children: items4 };
-      const obj4 = { style: tmp.header, children: items3 };
-      const obj5 = { style: tmp.heading, children: items2 };
-      const obj7 = { size: "refresh_sm", color: CHECKPOINT_PRIMARY };
-      const tmp16 = CheckpointScreenDefault;
-      items1[0] = closure_6(tmp2(10939).ServerIcon, obj7);
-      const obj8 = { isStepHeading: true, variant: "heading-sm/semibold", style: tmp.titleText, children: stringResult.toLocaleUpperCase() };
-      const tmp20 = CheckpointTextDefault;
-      const intl3 = tmp2(1113).intl;
-      stringResult = intl3.string(_modDef3317.Mb5E6r);
-      items1[1] = closure_6(tmp20, obj8);
-      items2 = [closure_7(View, obj6), ];
-      const obj9 = { children: stringResult1.toLocaleUpperCase() };
-      const tmp21 = CheckpointDisplayTextDefault;
-      const intl4 = tmp2(1113).intl;
-      stringResult1 = intl4.string(_modDef3285.F0fkrh);
-      items2[1] = closure_6(tmp21, obj9);
-      items3 = [closure_7(View, obj5), ];
-      const obj10 = { variant: "heading-lg/medium", children: intl5.string(_modDef3317.IN1DaS) };
-      const tmp22 = CheckpointTextDefault;
-      intl5 = tmp2(1113).intl;
-      items3[1] = closure_6(tmp22, obj10);
-      items4 = [closure_7(View, obj4), ];
-      const obj11 = {
-        style: tmp.guilds,
+      let obj2 = {
+        containerStyle: tmp.container,
+        header: closure_10(closure_6, obj3),
+        guildsStyle: tmp.guilds,
         children: guilds.map((item, index) => {
               let guild;
               let numMessagesSent;
               let numVoiceMinutes;
               ({ guild, numMessagesSent, numVoiceMinutes } = item);
               let tmp = 0 === index;
-              const obj = { guild, rank: index + 1, iconStyle: tmp ? globalGuildIcon.topGuildIcon : globalGuildIcon.guildIcon, children: tmp };
+              const obj = { guild, rank: index + 1, iconStyle: tmp ? globalGuildIcon.topGuildIcon : globalGuildIcon.guildIcon, iconFillsHeight: tmp, children: tmp };
               const tmp3 = GuildCard;
               if (tmp) {
                 const tmp7 = CheckpointGuildStatsDefault;
@@ -198,44 +259,60 @@ export default function CheckpointServersStatsScreen() {
                 }
                 tmp = tmp2(tmp7, obj2);
               }
-              return metroRequire(tmp3, obj, guild.id);
+              return React4(tmp3, obj, guild.id);
             })
       };
-      items4[1] = closure_6(View, obj11);
-      tmp5Result = closure_6(tmp16, obj2);
+      obj3 = { style: tmp.header, children: items3 };
+      const obj4 = { style: tmp.heading, children: items2 };
+      const obj5 = { style: tmp.title, children: items1 };
+      const obj6 = { size: "refresh_sm", color: CHECKPOINT_PRIMARY };
+      items1 = [closure_9(tmp2(13091).ServerIcon, obj6), ];
+      const obj7 = { isStepHeading: true, variant: "heading-sm/semibold", style: tmp.titleText, children: stringResult.toLocaleUpperCase() };
+      const tmp18 = CheckpointTextDefault;
+      const intl3 = tmp2(1113).intl;
+      stringResult = intl3.string(_modDef3319.Mb5E6r);
+      items1[1] = closure_9(tmp18, obj7);
+      items2 = [closure_10(closure_6, obj5), ];
+      const obj8 = { children: stringResult1.toLocaleUpperCase() };
+      const tmp19 = CheckpointDisplayTextDefault;
+      const intl4 = tmp2(1113).intl;
+      stringResult1 = intl4.string(_modDef3287.F0fkrh);
+      items2[1] = closure_9(tmp19, obj8);
+      items3 = [closure_10(closure_6, obj4), ];
+      const obj9 = { variant: "heading-lg/medium", children: intl5.string(_modDef3319.IN1DaS) };
+      const tmp20 = CheckpointTextDefault;
+      intl5 = tmp2(1113).intl;
+      items3[1] = closure_9(tmp20, obj9);
+      tmp5Result = closure_9(ServersLayout, obj2);
     }
     return tmp5Result;
   }
-  const obj12 = { style: items5, children: items8 };
-  items5 = [, ];
+  const obj10 = { containerStyle: items4, header: closure_10(closure_6, obj11), guildsStyle: tmp.globalGuilds, children: mapped };
+  items4 = [, ];
   ({ container: arr2[0], globalContainer: arr2[1] } = tmp);
-  const obj13 = { style: tmp.header, children: items7 };
-  const obj14 = { style: tmp.globalHeading, children: items6 };
-  let tmp7 = closure_7;
-  const tmp6 = CheckpointScreenDefault;
-  const obj15 = { animatedUri: _modDef14481, staticUri: _modDef14482, style: tmp.globe };
-  const tmp9 = CheckpointApngPlayerDefault;
-  items6 = [closure_6(tmp9, obj15), ];
-  const obj16 = { isStepHeading: true, children: stringResult2.toLocaleUpperCase() };
-  const tmp10 = CheckpointDisplayTextDefault;
+  obj11 = { style: tmp.header, children: items6 };
+  const obj12 = { style: tmp.globalHeading, children: items5 };
+  const obj13 = { animatedUri: _modDef13346, staticUri: _modDef13347, style: tmp.globe };
+  let tmp7 = CheckpointApngPlayerDefault;
+  items5 = [closure_9(tmp7, obj13), ];
+  const obj14 = { isStepHeading: true, children: stringResult2.toLocaleUpperCase() };
+  const tmp8 = CheckpointDisplayTextDefault;
   const intl = tmp2(1113).intl;
-  stringResult2 = intl.string(_modDef3285.F0fkrh);
-  items6[1] = closure_6(tmp10, obj16);
-  items7 = [closure_7(View, obj14), ];
-  const obj17 = { variant: "heading-lg/medium", children: intl2.string(_modDef3317.bhnqop) };
-  const tmp11 = CheckpointTextDefault;
+  stringResult2 = intl.string(_modDef3287.F0fkrh);
+  items5[1] = closure_9(tmp8, obj14);
+  items6 = [closure_10(closure_6, obj12), ];
+  const obj15 = { variant: "heading-lg/medium", children: intl2.string(_modDef3319.bhnqop) };
+  const tmp9 = CheckpointTextDefault;
   intl2 = tmp2(1113).intl;
-  items7[1] = closure_6(tmp11, obj17);
-  items8 = [closure_7(View, obj13), ];
-  const obj18 = { style: tmp.globalGuilds, children: mapped };
+  items6[1] = closure_9(tmp9, obj15);
   mapped = undefined;
+  const tmp5 = closure_9;
+  const tmp6 = ServersLayout;
   if (globalGuilds != null) {
     mapped = globalGuilds.map((guild, index) => {
       const obj = { guild, rank: index + 1, iconStyle: globalGuildIcon.globalGuildIcon };
-      return metroRequire(GuildCard, obj, guild.id);
+      return React4(GuildCard, obj, guild.id);
     });
   }
-  const obj19 = { children: tmp7(View, obj12) };
-  items8[1] = closure_6(View, obj18);
-  tmp5Result = tmp5(tmp6, obj19);
+  tmp5Result = tmp5(tmp6, obj10);
 };

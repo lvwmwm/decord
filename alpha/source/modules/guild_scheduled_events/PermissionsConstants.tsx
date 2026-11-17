@@ -1,11 +1,11 @@
-// Module ID: 8029
-// Function ID: 8030
+// Module ID: 8040
+// Function ID: 8041
 // Name: PermissionsConstants
-// Dependencies: [1072, 1084, 5163, 2]
+// Dependencies: [1072, 1084, 5167, 2]
 
-// Module 8029 (PermissionsConstants)
+// Module 8040 (PermissionsConstants)
 import Constants from "Constants" /* 1072 */;
-import StageChannelPermissions from "StageChannelPermissions" /* 5163 */;
+import StageChannelPermissions from "StageChannelPermissions" /* 5167 */;
 import BigFlagUtils_mod from "BigFlagUtils" /* 1084 */;
 import size from "module_2" /* 2 */;
 

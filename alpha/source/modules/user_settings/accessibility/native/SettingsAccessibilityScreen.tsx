@@ -1,20 +1,20 @@
-// Module ID: 17952
-// Function ID: 17953
+// Module ID: 17993
+// Function ID: 17994
 // Name: SettingsAccessibilityScreen
-// Dependencies: [19, 5307, 5132, 9202, 1072, 21, 1113, 2188, 3125, 8604, 7587, 17953, 1502, 563, 12406, 17213, 2]
+// Dependencies: [19, 5311, 5136, 9213, 1072, 21, 1113, 2188, 3127, 8615, 7597, 17994, 1502, 563, 12612, 17250, 2]
 // Exports: default
 
-// Module 17952 (SettingsAccessibilityScreen)
+// Module 17993 (SettingsAccessibilityScreen)
 import Fragment from "Fragment" /* 21 */;
 import intl15 from "intl" /* 1113 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
-import _modDef3125 from "module_3125" /* 3125 */;
-import SettingsConstants from "SettingsConstants" /* 9202 */;
-import SettingBuilders from "SettingBuilders" /* 12406 */;
-import getSettingsOverrideReasonDefault from "getSettingsOverrideReason" /* 17953 */;
+import _modDef3127 from "module_3127" /* 3127 */;
+import SettingsConstants from "SettingsConstants" /* 9213 */;
+import SettingBuilders from "SettingBuilders" /* 12612 */;
+import getSettingsOverrideReasonDefault from "getSettingsOverrideReason" /* 17994 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
-import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 5132 */;
+import AccessibilityStore from "AccessibilityStore" /* 5311 */;
+import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 5136 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -96,7 +96,7 @@ export default function SettingsAccessibilityScreen() {
     items2 = [MobileUserSettings.OFFICIAL_MESSAGE_STYLE];
     intl2 = intl15.intl;
     items1[1] = obj4;
-    const obj5 = { settings: items3, subLabel: intl3.format(_modDef3125.L8U56h, obj6) };
+    const obj5 = { settings: items3, subLabel: intl3.format(_modDef3127.L8U56h, obj6) };
     items3 = [MobileUserSettings.DISPLAY_NAME_STYLES_ACCESSIBILITY];
     intl3 = intl15.intl;
     obj6 = {

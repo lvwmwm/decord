@@ -1,10 +1,10 @@
-// Module ID: 12088
-// Function ID: 12089
+// Module ID: 10820
+// Function ID: 10821
 // Name: WidgetAssetUtils
 // Dependencies: [1414, 2]
 // Exports: getWidgetAssetURL
 
-// Module 12088 (WidgetAssetUtils)
+// Module 10820 (WidgetAssetUtils)
 import AvatarUtils from "AvatarUtils" /* 1414 */;
 import size from "module_2" /* 2 */;
 

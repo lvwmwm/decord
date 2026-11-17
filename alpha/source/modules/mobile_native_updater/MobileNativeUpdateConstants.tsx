@@ -1,9 +1,9 @@
-// Module ID: 6039
-// Function ID: 6040
+// Module ID: 6043
+// Function ID: 6044
 // Name: MobileNativeUpdateConstants
 // Dependencies: [2169, 1380, 1381, 1379, 2]
 
-// Module 6039 (MobileNativeUpdateConstants)
+// Module 6043 (MobileNativeUpdateConstants)
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import URLUtilsDefault from "URLUtils" /* 1381 */;
 import module_2169 from "module_2169" /* 2169 */;

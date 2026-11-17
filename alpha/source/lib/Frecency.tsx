@@ -1,9 +1,9 @@
-// Module ID: 6077
-// Function ID: 6078
+// Module ID: 6084
+// Function ID: 6085
 // Name: Frecency
 // Dependencies: [12, 2169, 2]
 
-// Module 6077 (Frecency)
+// Module 6084 (Frecency)
 import _modDef12 from "module_12" /* 12 */;
 import _modDef2169 from "module_2169" /* 2169 */;
 import size from "module_2" /* 2 */;

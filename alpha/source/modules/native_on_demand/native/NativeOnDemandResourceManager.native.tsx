@@ -1,16 +1,16 @@
-// Module ID: 20320
-// Function ID: 20321
+// Module ID: 20368
+// Function ID: 20369
 // Name: NativeOnDemandResourceManager
-// Dependencies: [5, 2133, 2120, 1072, 7882, 20321, 510, 6215, 2]
+// Dependencies: [5, 2133, 2120, 1072, 7892, 20369, 510, 6223, 2]
 
-// Module 20320 (NativeOnDemandResourceManager)
+// Module 20368 (NativeOnDemandResourceManager)
 import Storage3 from "Storage" /* 510 */;
 import Constants from "Constants" /* 1072 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 6215 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 6223 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
 import AppStateStore from "AppStateStore" /* 2120 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7892 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3;

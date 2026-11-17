@@ -1,15 +1,16 @@
-// Module ID: 8643
-// Function ID: 8644
+// Module ID: 8654
+// Function ID: 8655
 // Name: SensitiveMediaGoreRedactionSettingsUtils
-// Dependencies: [19, 1388, 1072, 1196, 5985, 5993, 5131, 2]
+// Dependencies: [19, 1388, 1072, 1196, 5989, 5997, 6815, 5135, 2]
 // Exports: getGoreContentSettingOrDefault, resolveGoreSettingWithDefaultsForTeen, updateGoreContentSetting, useSensitiveContentFilterHelpArticle
 
-// Module 8643 (SensitiveMediaGoreRedactionSettingsUtils)
+// Module 8654 (SensitiveMediaGoreRedactionSettingsUtils)
 import Constants from "Constants" /* 1072 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
-import UserSettings from "UserSettings" /* 5131 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5985 */;
-import SettingsDefaultFeature from "SettingsDefaultFeature" /* 5993 */;
+import UserSettings from "UserSettings" /* 5135 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5989 */;
+import SettingsDefaultFeature from "SettingsDefaultFeature" /* 5997 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6815 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
@@ -34,6 +35,31 @@ function resolveGoreSettingWithDefaults(isFriend) {
   const currentUser = UserStore.getCurrentUser();
   const obj = RegionalFeatureConfigUtils;
   if (obj.isSettingTeenByDefault(SettingsDefaultFeature.SettingsDefaultFeature.SENSITIVE_CONTENT)) {
+    let BLUR;
+    const tmp4Result = AgeVerificationUtils;
+    if (!tmp4Result.isVerifiedAdult()) {
+      let flag2 = isDm;
+      if (isDm === undefined) {
+        flag2 = false;
+      }
+      let flag3 = flag;
+      if (flag === undefined) {
+        flag3 = false;
+      }
+      if (flag2) {
+        if (!flag3) {
+          BLUR = tmp4(1196).ExplicitContentRedaction.BLOCK;
+        }
+      }
+      BLUR = tmp4(1196).ExplicitContentRedaction.BLUR;
+    }
+    return BLUR;
+  }
+  let nsfwAllowed;
+  if (currentUser != null) {
+    nsfwAllowed = currentUser.nsfwAllowed;
+  }
+  if (false === nsfwAllowed) {
     if (isDm === undefined) {
       isDm = false;
     }
@@ -42,54 +68,31 @@ function resolveGoreSettingWithDefaults(isFriend) {
     }
     if (isDm) {
       let BLUR2;
-      if (!flag) {
-        BLUR2 = tmp4(1196).ExplicitContentRedaction.BLOCK;
+      if (flag) {
+        BLUR2 = tmp4(1196).ExplicitContentRedaction.BLUR;
       }
       SHOW = BLUR2;
     }
-    BLUR2 = tmp4(1196).ExplicitContentRedaction.BLUR;
+    const ExplicitContentRedaction2 = tmp4(1196).ExplicitContentRedaction;
+    BLUR2 = isDm ? ExplicitContentRedaction2.BLOCK : ExplicitContentRedaction2.BLUR;
   } else {
-    let nsfwAllowed;
-    if (currentUser != null) {
-      nsfwAllowed = currentUser.nsfwAllowed;
+    let flag4 = isDm;
+    if (isDm === undefined) {
+      flag4 = false;
     }
-    if (false === nsfwAllowed) {
-      let flag5 = isDm;
-      if (isDm === undefined) {
-        flag5 = false;
-      }
-      let flag6 = flag;
-      if (flag === undefined) {
-        flag6 = false;
-      }
+    let flag5 = flag;
+    if (flag === undefined) {
+      flag5 = false;
+    }
+    if (flag4) {
       if (flag5) {
-        let BLUR;
-        if (flag6) {
-          BLUR = tmp4(1196).ExplicitContentRedaction.BLUR;
-        }
-        SHOW = BLUR;
+        SHOW = tmp4(1196).ExplicitContentRedaction.SHOW;
       }
-      const ExplicitContentRedaction2 = tmp4(1196).ExplicitContentRedaction;
-      BLUR = flag5 ? ExplicitContentRedaction2.BLOCK : ExplicitContentRedaction2.BLUR;
-    } else {
-      let flag3 = isDm;
-      if (isDm === undefined) {
-        flag3 = false;
-      }
-      let flag4 = flag;
-      if (flag === undefined) {
-        flag4 = false;
-      }
-      if (flag3) {
-        if (flag4) {
-          SHOW = tmp4(1196).ExplicitContentRedaction.SHOW;
-        }
-      }
-      const ExplicitContentRedaction = tmp4(1196).ExplicitContentRedaction;
-      SHOW = flag3 ? ExplicitContentRedaction.BLOCK : ExplicitContentRedaction.SHOW;
     }
+    const ExplicitContentRedaction = tmp4(1196).ExplicitContentRedaction;
+    SHOW = flag4 ? ExplicitContentRedaction.BLOCK : ExplicitContentRedaction.SHOW;
   }
-  return SHOW;
+  BLUR = SHOW;
 }
 const HelpdeskArticles = Constants.HelpdeskArticles;
 const result = size.fileFinishedImporting("modules/explicit_media_redaction/SensitiveMediaGoreRedactionSettingsUtils.tsx");

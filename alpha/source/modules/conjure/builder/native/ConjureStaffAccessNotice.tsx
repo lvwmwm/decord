@@ -1,15 +1,15 @@
-// Module ID: 13998
-// Function ID: 13999
+// Module ID: 15018
+// Function ID: 15019
 // Name: ConjureStaffAccessNotice
-// Dependencies: [19, 1072, 21, 13999, 1099, 6002, 8159, 1113, 4131, 2]
+// Dependencies: [19, 1072, 21, 15019, 1099, 6006, 8170, 1113, 4133, 2]
 // Exports: default
 
-// Module 13998 (ConjureStaffAccessNotice)
+// Module 15018 (ConjureStaffAccessNotice)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import router_utils from "router_utils" /* 1099 */;
-import _modDef4131 from "module_4131" /* 4131 */;
-import LinkingDefault from "Linking" /* 6002 */;
+import _modDef4133 from "module_4133" /* 4133 */;
+import LinkingDefault from "Linking" /* 6006 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -19,16 +19,16 @@ const result = size.fileFinishedImporting("modules/conjure/builder/native/Conjur
 
 export default function ConjureStaffAccessNotice() {
   let conjureStaffAccessTarget;
-  let obj = conjureStaffAccessTarget(13999);
+  let obj = conjureStaffAccessTarget(15019);
   conjureStaffAccessTarget = obj.useConjureStaffAccessTarget();
   [][0] = conjureStaffAccessTarget;
   let tmp5 = null;
   if (null != conjureStaffAccessTarget) {
-    const InlineNotice = tmp(8159).InlineNotice;
+    const InlineNotice = tmp(8170).InlineNotice;
     const intl = tmp(1113).intl;
     const format = intl.format;
-    const obj3 = { channel: conjureStaffAccessTarget(13999).CONJURE_STAFF_ACCESS_CHANNEL_NAME, onNavigate: tmp4 };
-    const v6anmu1 = _modDef4131["6anmu1"];
+    const obj3 = { channel: conjureStaffAccessTarget(15019).CONJURE_STAFF_ACCESS_CHANNEL_NAME, onNavigate: tmp4 };
+    const v6anmu1 = _modDef4133["6anmu1"];
     tmp5 = <InlineNotice type="info" role="none" message={format(v6anmu1, obj3)} />;
   }
   return tmp5;

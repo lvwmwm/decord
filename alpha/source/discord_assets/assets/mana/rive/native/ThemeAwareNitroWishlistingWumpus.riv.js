@@ -1,8 +1,8 @@
-// Module ID: 5468
-// Function ID: 5469
+// Module ID: 5472
+// Function ID: 5473
 // Dependencies: [2]
 
-// Module 5468
+// Module 5472
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/rive/native/ThemeAwareNitroWishlistingWumpus.riv.js");

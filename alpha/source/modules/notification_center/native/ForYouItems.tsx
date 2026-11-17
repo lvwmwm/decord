@@ -1,44 +1,44 @@
-// Module ID: 19250
-// Function ID: 19251
+// Module ID: 19295
+// Function ID: 19296
 // Name: ForYouItems
-// Dependencies: [5, 32, 19, 17, 5307, 2165, 5155, 5177, 1388, 19244, 1072, 6837, 21, 5306, 5919, 575, 6331, 19249, 1113, 1406, 9282, 8861, 11857, 11392, 13072, 504, 8646, 1187, 14950, 19251, 1502, 6038, 16285, 7033, 1256, 15543, 11318, 12593, 6005, 12616, 2121, 5542, 19252, 6030, 19246, 7948, 19253, 19254, 11, 7428, 19255, 7034, 15873, 1503, 5131, 5984, 19265, 19266, 19267, 19268, 19269, 19275, 674, 19276, 19277, 1255, 19248, 7994, 7888, 19278, 2]
+// Dependencies: [5, 32, 19, 17, 5311, 2165, 5159, 5181, 1388, 19289, 1072, 6832, 21, 5310, 5923, 575, 6339, 19294, 1113, 1406, 9291, 8872, 12338, 12081, 11730, 504, 8657, 1187, 14162, 19296, 1502, 6042, 16321, 7041, 1256, 15577, 12014, 11228, 6009, 11251, 2121, 5546, 19297, 6034, 19291, 7958, 19298, 19299, 11, 7438, 19300, 7042, 15911, 1503, 5135, 5988, 19310, 19311, 19312, 19313, 19314, 19320, 674, 19321, 19322, 1255, 19293, 8005, 12445, 7898, 19323, 2]
 
-// Module 19250 (ForYouItems)
+// Module 19295 (ForYouItems)
 import nativeDefault from "native" /* 575 */;
 import _mod674 from "module_674" /* 674 */;
 import GlobalUtils from "GlobalUtils" /* 1255 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import Link from "Link" /* 1503 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import parseURLDefault from "parseURL" /* 6038 */;
-import CustomMarkupAll from "CustomMarkup" /* 6331 */;
-import PushNotificationConstants from "PushNotificationConstants" /* 6837 */;
-import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 7033 */;
-import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 14950 */;
-import handleSupportedURLDefault from "handleSupportedURL" /* 16285 */;
-import NotificationCenterStoreActions from "NotificationCenterStoreActions" /* 19248 */;
-import ForYouMentionPlaceholder from "ForYouMentionPlaceholder" /* 19249 */;
-import ForYouReadSectionHeader from "ForYouReadSectionHeader" /* 19265 */;
-import ForYouRecentActivitySectionHeader from "ForYouRecentActivitySectionHeader" /* 19266 */;
-import ForYouHoistedItemsHeader from "ForYouHoistedItemsHeader" /* 19267 */;
-import ForYouSuggestedFriendsSectionHeaderDefault from "ForYouSuggestedFriendsSectionHeader" /* 19268 */;
-import ForYouSuggestedFriendRowDefault from "ForYouSuggestedFriendRow" /* 19269 */;
-import ForYouShowAllRow from "ForYouShowAllRow" /* 19275 */;
-import ForYouUnreadClearedState from "ForYouUnreadClearedState" /* 19276 */;
-import ForYouLoadMore from "ForYouLoadMore" /* 19277 */;
+import Text_Text from "Text/Text" /* 5923 */;
+import parseURLDefault from "parseURL" /* 6042 */;
+import CustomMarkupAll from "CustomMarkup" /* 6339 */;
+import PushNotificationConstants from "PushNotificationConstants" /* 6832 */;
+import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 7041 */;
+import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 14162 */;
+import handleSupportedURLDefault from "handleSupportedURL" /* 16321 */;
+import NotificationCenterStoreActions from "NotificationCenterStoreActions" /* 19293 */;
+import ForYouMentionPlaceholder from "ForYouMentionPlaceholder" /* 19294 */;
+import ForYouReadSectionHeader from "ForYouReadSectionHeader" /* 19310 */;
+import ForYouRecentActivitySectionHeader from "ForYouRecentActivitySectionHeader" /* 19311 */;
+import ForYouHoistedItemsHeader from "ForYouHoistedItemsHeader" /* 19312 */;
+import ForYouSuggestedFriendsSectionHeaderDefault from "ForYouSuggestedFriendsSectionHeader" /* 19313 */;
+import ForYouSuggestedFriendRowDefault from "ForYouSuggestedFriendRow" /* 19314 */;
+import ForYouShowAllRow from "ForYouShowAllRow" /* 19320 */;
+import ForYouUnreadClearedState from "ForYouUnreadClearedState" /* 19321 */;
+import ForYouLoadMore from "ForYouLoadMore" /* 19322 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import AccessibilityStore from "AccessibilityStore" /* 5311 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import GuildStore from "GuildStore" /* 5177 */;
+import ChannelStore from "ChannelStore" /* 5159 */;
+import GuildStore from "GuildStore" /* 5181 */;
 import UserStore from "UserStore" /* 1388 */;
-import NotificationCenterStore from "NotificationCenterStore" /* 19244 */;
+import NotificationCenterStore from "NotificationCenterStore" /* 19289 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size_mod from "module_2" /* 2 */;
 
 let c1, c4, navigation;
@@ -115,7 +115,7 @@ function ForYouMessagePreviewV2(item) {
   let message_channel_id;
   ({ compactMode, roleStyle } = item);
   const tmp = closure_29();
-  const obj = message_channel_id(6331);
+  const obj = message_channel_id(6339);
   const notifCenterV2MessagePreviewParser = obj.getNotifCenterV2MessagePreviewParser(closure_27(), closure_28, roleStyle);
   const intl = item(1113).intl;
   const stringResult = intl.string(item(1113).t.BOi07B);
@@ -177,10 +177,10 @@ function ForYouMessagePreviewV2(item) {
         first = embeds[0];
       }
     }
-    const tmp19 = guild_id(9282)(first);
+    const tmp19 = guild_id(9291)(first);
     result = stringResult;
     if (null != tmp19) {
-      const tmp4Result = item(8861);
+      const tmp4Result = item(8872);
       result = tmp4Result.formatPollResultNotificationCenterText(tmp19);
     }
   } else if (length2 > 0) {
@@ -267,7 +267,7 @@ function ForYouMessagePreviewV2(item) {
   items3[0] = closure_21(closure_7, obj3);
   const items4 = [acked ? tmp.messagePreviewTextV2Acked : tmp.messagePreviewTextV2NotAcked, ];
   let prop;
-  const Text = tmp4(5919).Text;
+  const Text = tmp4(5923).Text;
   if (!(null != content && "" !== content)) {
     prop = tmp.messagePreviewSystemTextV2;
   }
@@ -280,8 +280,8 @@ function ForYouMessagePreviewV2(item) {
   const message10 = item.message;
   const obj5 = { content: result, guildId: guild_id, channelId: message_channel_id, messageId: message_id, authorId: id };
   id = undefined;
-  const renderMessageContentMarkup = item(8646).renderMessageContentMarkup;
-  item(8646);
+  const renderMessageContentMarkup = item(8657).renderMessageContentMarkup;
+  item(8657);
   if (message10 != null) {
     id = message10.author.id;
   }
@@ -296,13 +296,13 @@ function ForYouMessagePreviewV2(item) {
     const obj6 = { style: tmp.messagePreviewIconV2Container, children: closure_21(Icon, obj7) };
     Icon = tmp4(1187).Icon;
     if (constants4.ATTACHMENT === ATTACHMENT) {
-      tmp33 = guild_id(11857);
+      tmp33 = guild_id(12338);
     } else if (constants4.STICKER === ATTACHMENT) {
-      tmp33 = guild_id(11392);
+      tmp33 = guild_id(12081);
     } else {
       tmp33 = null;
       if (constants4.VOICE_MESSAGE === ATTACHMENT) {
-        tmp33 = guild_id(13072);
+        tmp33 = guild_id(11730);
       }
     }
     obj7 = { source: tmp33, size: item(1187).IconSizes.SMALL, style: tmp.messagePreviewIconV2 };
@@ -759,10 +759,10 @@ let closure_35 = react.memo(function ForYouRowWrapped(item) {
 });
 const memoResult = react.memo(function ForYouItemsWrapped(loadMore) {
   let items;
-  let items7;
+  let items8;
   let loadingMore;
   let nestedInLaunchPad;
-  let obj6;
+  let obj7;
   let onLayout;
   let onScroll;
   let ref;
@@ -781,6 +781,7 @@ const memoResult = react.memo(function ForYouItemsWrapped(loadMore) {
     flag = false;
   }
   let onPressLoad;
+  let chatDockHeight;
   let tmp = closure_29();
   let closure_9 = tmp;
   const NotificationCenterAckedBeforeId = loadMore(onSoftAckItem[54]).NotificationCenterAckedBeforeId;
@@ -795,6 +796,7 @@ const memoResult = react.memo(function ForYouItemsWrapped(loadMore) {
   const setting1 = ChannelListLayoutSetting.useSetting();
   const tmp8 = setting1 === loadMore(onSoftAckItem[55]).ChannelListLayoutTypes.COMPACT;
   const compactMode = tmp8;
+  let obj3 = suggestedFriendAdded;
   const items3 = [loadMore];
   onPressLoad = suggestedFriendAdded.useCallback(() => {
     loadMore(true);
@@ -891,20 +893,24 @@ const memoResult = react.memo(function ForYouItemsWrapped(loadMore) {
   if (undefined !== height) {
     num = height;
   }
-  let obj3 = { style: tmp.container, ref, onLayout, children: items7 };
-  let tmp17 = !nestedInLaunchPad;
-  const tmp15 = closure_22;
-  const tmp16 = onAddSuggestionAnimationFinish;
+  const tmp2Result = loadMore(onSoftAckItem[68]);
+  chatDockHeight = tmp2Result.useChatDockHeight();
+  const items7 = [chatDockHeight];
+  let obj4 = { style: tmp.container, ref, onLayout, children: items8 };
+  let tmp19 = !nestedInLaunchPad;
+  const memo = obj3.useMemo(() => ({ paddingBottom: chatDockHeight }), items7);
+  const tmp17 = closure_22;
+  const tmp18 = onAddSuggestionAnimationFinish;
   if (!nestedInLaunchPad) {
-    let obj4 = { scrollRef: ref1 };
-    tmp17 = closure_21(ScrollToTopRef, obj4);
+    let obj5 = { scrollRef: ref1 };
+    tmp19 = closure_21(ScrollToTopRef, obj5);
   }
-  items7 = [tmp17, ];
-  let obj5 = { ref: ref1, data: items, ListEmptyComponent: closure_21(tmp2(tmp3[69]).ForYouEmptyState, { height: num }), onScroll, refreshControl: closure_21(flag, obj6), keyExtractor: extractKey, renderItem: callback1, extraData: setting, onEndReached: loadMore, onEndReachedThreshold: 0.8, ListFooterComponent: closure_21(ForYouFooter, { loading: loadingMore }), viewabilityConfig };
-  const FlashList = tmp2(tmp3[68]).FlashList;
-  obj6 = { onRefresh: callback2, refreshing: stateFromStores1, tintColor: tmp.refreshSpinner.color };
-  items7[1] = closure_21(FlashList, obj5);
-  return tmp15(tmp16, obj3);
+  items8 = [tmp19, ];
+  let obj6 = { ref: ref1, data: items, ListEmptyComponent: closure_21(tmp2(tmp3[70]).ForYouEmptyState, { height: num }), onScroll, refreshControl: closure_21(flag, obj7), keyExtractor: extractKey, renderItem: callback1, extraData: setting, onEndReached: loadMore, onEndReachedThreshold: 0.8, ListFooterComponent: closure_21(ForYouFooter, { loading: loadingMore }), viewabilityConfig, contentContainerStyle: memo };
+  const FlashList = tmp2(tmp3[69]).FlashList;
+  obj7 = { onRefresh: callback2, refreshing: stateFromStores1, tintColor: tmp.refreshSpinner.color };
+  items8[1] = closure_21(FlashList, obj6);
+  return tmp17(tmp18, obj4);
 });
 size = size_mod;
 let result = size.fileFinishedImporting("modules/notification_center/native/ForYouItems.tsx");

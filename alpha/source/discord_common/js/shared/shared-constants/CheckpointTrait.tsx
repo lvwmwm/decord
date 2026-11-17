@@ -1,9 +1,9 @@
-// Module ID: 6412
-// Function ID: 6413
+// Module ID: 6420
+// Function ID: 6421
 // Name: CheckpointTrait
 // Dependencies: [2]
 
-// Module 6412 (CheckpointTrait)
+// Module 6420 (CheckpointTrait)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/CheckpointTrait.tsx");

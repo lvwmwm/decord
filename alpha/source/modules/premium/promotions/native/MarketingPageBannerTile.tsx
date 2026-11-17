@@ -1,19 +1,19 @@
-// Module ID: 10015
-// Function ID: 10016
+// Module ID: 10028
+// Function ID: 10029
 // Name: MarketingPageBannerTile
-// Dependencies: [19, 17, 21, 5306, 575, 7918, 10016, 6328, 1264, 10073, 6010, 5919, 6002, 10074, 2]
+// Dependencies: [19, 17, 21, 5310, 575, 7928, 10029, 6336, 1264, 15252, 6014, 5923, 6006, 11630, 2]
 // Exports: default
 
-// Module 10015 (MarketingPageBannerTile)
+// Module 10028 (MarketingPageBannerTile)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import LinkingDefault from "Linking" /* 6002 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 6328 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7918 */;
-import NitroUpsellButtonDefault from "NitroUpsellButton" /* 10074 */;
+import LinkingDefault from "Linking" /* 6006 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 6336 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7928 */;
+import NitroUpsellButtonDefault from "NitroUpsellButton" /* 11630 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -40,6 +40,7 @@ export default function MarketingPageBannerTile(bannerFields) {
   let cardStyle;
   let componentId;
   let componentType;
+  let giftModalDestination;
   let items;
   let items1;
   let items2;
@@ -60,11 +61,11 @@ export default function MarketingPageBannerTile(bannerFields) {
   const analyticsLocations = useAnalyticsLocationsDefault().analyticsLocations;
   const button = bannerFields.button;
   let buttonAction;
-  const getButtonActionHandler = helpArticleLinkProps(10016).getButtonActionHandler;
+  const getButtonActionHandler = helpArticleLinkProps(10029).getButtonActionHandler;
   if (button != null) {
     buttonAction = button.buttonAction;
   }
-  let obj = { buttonAction, applicationId: value, shopCollectionId: value2, analyticsLocations, analyticsPage, onPaymentSuccess, onPaymentDismiss };
+  let obj = { buttonAction, applicationId: value, shopCollectionId: value2, giftModalDestination, analyticsLocations, analyticsPage, onPaymentSuccess, onPaymentDismiss };
   const button2 = bannerFields.button;
   value = undefined;
   if (button2 != null) {
@@ -79,32 +80,37 @@ export default function MarketingPageBannerTile(bannerFields) {
       value2 = iter2.value;
     }
   }
+  const button4 = bannerFields.button;
+  giftModalDestination = undefined;
+  if (button4 != null) {
+    giftModalDestination = button4.giftModalDestination;
+  }
   const obj2 = { type: helpArticleLinkProps(1264).ImpressionTypes.VIEW, name: helpArticleLinkProps(1264).ImpressionNames.PREMIUM_MARKETING_COMPONENT, properties: { component_type: componentType, component_id: componentId, promotion_id: promotionId } };
   const buttonActionHandler = getButtonActionHandler(obj);
   const tmp2Result = useTrackImpressionDefault;
   tmp2Result(obj2);
-  const tmp4Result = helpArticleLinkProps(10073);
+  const tmp4Result = helpArticleLinkProps(15252);
   const formatStringWithCommonPremiumParams = tmp4Result.useFormatStringWithCommonPremiumParams(bannerFields.body);
-  const tmp4Result2 = helpArticleLinkProps(10073);
+  const tmp4Result2 = helpArticleLinkProps(15252);
   helpArticleLinkProps = tmp4Result2.getHelpArticleLinkProps(bannerFields.helpArticle, bannerFields.helpArticleId);
   const obj3 = { style: items, children: closure_5(View, obj4) };
   items = [tmp.container, style];
   obj4 = { style: items1, children: items2 };
   items1 = [tmp.card, cardStyle];
-  let tmp14Result = "" !== bannerFields.assetUrl;
-  if (tmp14Result) {
+  let tmp15Result = "" !== bannerFields.assetUrl;
+  if (tmp15Result) {
     const obj5 = { source: obj6, style: tmp.image, resizeMode: "contain" };
     obj6 = { uri: bannerFields.assetUrl };
-    tmp14Result = tmp14(tmp2(6010), obj5);
+    tmp15Result = tmp15(tmp2(6014), obj5);
   }
-  items2 = [tmp14Result, , , ];
+  items2 = [tmp15Result, , , ];
   const obj7 = { color: "mobile-text-heading-primary", variant: "body-lg/semibold", children: bannerFields.header };
-  items2[1] = closure_4(helpArticleLinkProps(5919).Text, obj7);
+  items2[1] = closure_4(helpArticleLinkProps(5923).Text, obj7);
   const obj8 = { color: "mobile-text-heading-primary", variant: "body-sm/medium", style: tmp.bodyText, children: items3 };
   items3 = [formatStringWithCommonPremiumParams, " ", ];
-  let tmp14Result3 = null != helpArticleLinkProps;
-  const Text = tmp4(5919).Text;
-  if (tmp14Result3) {
+  let tmp15Result3 = null != helpArticleLinkProps;
+  const Text = tmp4(5923).Text;
+  if (tmp15Result3) {
     const obj9 = {
       color: "text-link",
       variant: "body-sm/medium",
@@ -115,16 +121,16 @@ export default function MarketingPageBannerTile(bannerFields) {
         },
       children: helpArticleLinkProps.linkText
     };
-    tmp14Result3 = tmp14(tmp4(5919).Text, obj9);
+    tmp15Result3 = tmp15(tmp4(5923).Text, obj9);
   }
-  items3[2] = tmp14Result3;
+  items3[2] = tmp15Result3;
   items2[2] = closure_5(Text, obj8);
-  let tmp14Result4 = null != bannerFields.button;
-  if (tmp14Result4) {
+  let tmp15Result4 = null != bannerFields.button;
+  if (tmp15Result4) {
     const obj10 = { style: tmp.ctaButton, children: closure_4(NitroUpsellButtonDefault, obj11) };
     obj11 = { text: bannerFields.button.copy, onPress: buttonActionHandler };
-    tmp14Result4 = tmp14(tmp15, obj10);
+    tmp15Result4 = tmp15(tmp16, obj10);
   }
-  items2[3] = tmp14Result4;
+  items2[3] = tmp15Result4;
   return closure_4(View, obj3);
 };

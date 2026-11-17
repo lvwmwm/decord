@@ -1,11 +1,11 @@
-// Module ID: 6199
-// Function ID: 6200
+// Module ID: 6207
+// Function ID: 6208
 // Name: NetworkQuality
-// Dependencies: [6200, 1072, 6069, 2]
+// Dependencies: [6208, 1072, 6076, 2]
 
-// Module 6199 (NetworkQuality)
-import TimeUtils from "TimeUtils" /* 6069 */;
-import NetworkStore from "NetworkStore" /* 6200 */;
+// Module 6207 (NetworkQuality)
+import TimeUtils from "TimeUtils" /* 6076 */;
+import NetworkStore from "NetworkStore" /* 6208 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

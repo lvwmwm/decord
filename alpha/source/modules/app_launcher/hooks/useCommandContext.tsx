@@ -1,12 +1,12 @@
-// Module ID: 13437
-// Function ID: 13438
+// Module ID: 13517
+// Function ID: 13518
 // Name: useCommandContext
-// Dependencies: [19, 5177, 2]
+// Dependencies: [19, 5181, 2]
 // Exports: getCommandContext, useCommandContext
 
-// Module 13437 (useCommandContext)
+// Module 13517 (useCommandContext)
 import react_mod from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5177 */;
+import GuildStore from "GuildStore" /* 5181 */;
 import size from "module_2" /* 2 */;
 
 let react = react_mod;

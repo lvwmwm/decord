@@ -1,19 +1,19 @@
-// Module ID: 17970
-// Function ID: 17971
+// Module ID: 18011
+// Function ID: 18012
 // Name: DisplayNameStylesGummyCustomColorSheet
-// Dependencies: [19, 17, 1397, 21, 5306, 575, 1655, 1396, 1090, 5544, 5542, 5556, 17963, 1113, 5926, 17971, 17077, 2]
+// Dependencies: [19, 17, 1397, 21, 5310, 575, 1655, 1396, 1090, 5548, 5546, 5560, 18004, 1113, 5930, 18012, 17112, 2]
 // Exports: default
 
-// Module 17970 (DisplayNameStylesGummyCustomColorSheet)
+// Module 18011 (DisplayNameStylesGummyCustomColorSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1396 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import HapticUtils from "HapticUtils" /* 5544 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
+import HapticUtils from "HapticUtils" /* 5548 */;
 import react from "react" /* 19 */;
 import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1397 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -69,18 +69,18 @@ export default function DisplayNameStylesGummyCustomColorSheet(onSelect) {
     obj3.hideActionSheet();
   }, items);
   let obj2 = { header: closure_7(tmp7, obj3), children: closure_8(View, obj5) };
-  const BottomSheet = onSelect(5556).BottomSheet;
+  const BottomSheet = onSelect(5560).BottomSheet;
   obj3 = { title: intl.string(onSelect(1113).t.WTqQ5e), trailing: closure_7(Button, obj4) };
-  tmp7 = sharedValue(17963);
+  tmp7 = sharedValue(18004);
   intl = onSelect(1113).intl;
   obj4 = { variant: "primary", size: "sm", text: intl2.string(onSelect(1113).t.XqMe3N), onPress: callback1 };
-  Button = onSelect(5926).Button;
+  Button = onSelect(5930).Button;
   intl2 = onSelect(1113).intl;
   obj5 = { style: tmp.body, children: items1 };
   const obj6 = { style: tmp.previewWrapper, children: closure_7(View, obj7) };
-  obj7 = { style: tmp.preview, children: closure_7(sharedValue(17971), { hue: sharedValue }) };
+  obj7 = { style: tmp.preview, children: closure_7(sharedValue(18012), { hue: sharedValue }) };
   items1 = [closure_7(View, obj6), ];
-  const obj8 = { style: tmp.huePickerInset, children: closure_7(sharedValue(17077), obj9) };
+  const obj8 = { style: tmp.huePickerInset, children: closure_7(sharedValue(17112), obj9) };
   obj9 = { hue: sharedValue, onPanFinalize: callback, saturation, lightness, fullWidth: true };
   items1[1] = closure_7(View, obj8);
   return closure_7(BottomSheet, obj2);

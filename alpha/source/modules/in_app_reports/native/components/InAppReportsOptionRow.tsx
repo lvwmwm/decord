@@ -1,17 +1,17 @@
-// Module ID: 12072
-// Function ID: 12073
+// Module ID: 10803
+// Function ID: 10804
 // Name: InAppReportsOptionRow
-// Dependencies: [19, 17, 21, 5306, 575, 7428, 5919, 2]
+// Dependencies: [19, 17, 21, 5310, 575, 7438, 5923, 2]
 // Exports: default
 
-// Module 12072 (InAppReportsOptionRow)
+// Module 10803 (InAppReportsOptionRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import Pressables from "Pressables" /* 7428 */;
+import Text_Text from "Text/Text" /* 5923 */;
+import Pressables from "Pressables" /* 7438 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let c3;

@@ -1,17 +1,17 @@
-// Module ID: 15277
-// Function ID: 15278
+// Module ID: 15311
+// Function ID: 15312
 // Name: BadgeArtImage
-// Dependencies: [32, 5, 19, 17, 21, 5426, 1089, 6069, 8263, 6010, 2]
+// Dependencies: [32, 5, 19, 17, 21, 5430, 1089, 6076, 8274, 6014, 2]
 // Exports: default
 
-// Module 15277 (BadgeArtImage)
+// Module 15311 (BadgeArtImage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import utils_FunctionUtils from "utils/FunctionUtils" /* 5426 */;
-import FastImageDefault from "FastImage" /* 6010 */;
-import TimeUtils from "TimeUtils" /* 6069 */;
-import inlineStyles from "inlineStyles" /* 8263 */;
+import utils_FunctionUtils from "utils/FunctionUtils" /* 5430 */;
+import FastImageDefault from "FastImage" /* 6014 */;
+import TimeUtils from "TimeUtils" /* 6076 */;
+import inlineStyles from "inlineStyles" /* 8274 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -235,7 +235,7 @@ function SvgArt(url) {
       let tmp11 = url;
       let tmp12 = dependencyMap;
       size = { width, height };
-      tmp9 = jsx(url(8263).SvgAst, { ast: tmp2, override: size });
+      tmp9 = jsx(url(8274).SvgAst, { ast: tmp2, override: size });
     }
     fallback = tmp9;
   }

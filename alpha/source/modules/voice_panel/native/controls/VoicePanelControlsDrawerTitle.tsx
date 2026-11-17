@@ -1,18 +1,18 @@
-// Module ID: 14678
-// Function ID: 14679
+// Module ID: 13756
+// Function ID: 13757
 // Name: VoicePanelControlsDrawerTitle
-// Dependencies: [19, 17, 11983, 21, 5306, 575, 1655, 7722, 14679, 5919, 2]
+// Dependencies: [19, 17, 12426, 21, 5310, 575, 1655, 7732, 13757, 5923, 2]
 
-// Module 14678 (VoicePanelControlsDrawerTitle)
+// Module 13756 (VoicePanelControlsDrawerTitle)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import NativeViewDefault from "NativeView" /* 7722 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11983 */;
-import VoicePanelHeaderGlassBlurDefault from "VoicePanelHeaderGlassBlur" /* 14679 */;
+import NativeViewDefault from "NativeView" /* 7732 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 12426 */;
+import VoicePanelHeaderGlassBlurDefault from "VoicePanelHeaderGlassBlur" /* 13757 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let tmp3, value;
@@ -24,7 +24,7 @@ let obj3;
 let tmp12;
 let tmp2;
 const _modDef1655 = tmp12(1655);
-const Text_Text = tmp2(5919);
+const Text_Text = tmp2(5923);
 const StyleSheet = react_native.StyleSheet;
 const CONTROLS_DRAWER_HEADER_SIZE = VoicePanelControlsConstants.CONTROLS_DRAWER_HEADER_SIZE;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);

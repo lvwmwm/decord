@@ -1,17 +1,17 @@
-// Module ID: 15455
-// Function ID: 15456
+// Module ID: 15489
+// Function ID: 15490
 // Name: GiftPurchaseButton
-// Dependencies: [5, 19, 17, 2179, 9302, 1390, 21, 5933, 5919, 504, 8580, 9763, 10956, 7918, 11669, 6259, 1113, 2174, 11661, 5927, 15456, 2]
+// Dependencies: [5, 19, 17, 2179, 9311, 1390, 21, 5937, 5923, 504, 8591, 9776, 10115, 7928, 10094, 6267, 1113, 2174, 10086, 5931, 15490, 2]
 // Exports: default
 
-// Module 15455 (GiftPurchaseButton)
+// Module 15489 (GiftPurchaseButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import SubscriptionStore from "SubscriptionStore" /* 2179 */;
-import IAPStore from "IAPStore" /* 9302 */;
+import IAPStore from "IAPStore" /* 9311 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;

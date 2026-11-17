@@ -1,18 +1,18 @@
-// Module ID: 11802
-// Function ID: 11803
+// Module ID: 15215
+// Function ID: 15216
 // Name: UnifiedGiftModalSuccessScreen
-// Dependencies: [19, 1072, 21, 5306, 575, 11803, 11673, 6838, 11814, 2121, 8604, 6330, 6010, 5919, 1113, 5927, 2]
+// Dependencies: [19, 1072, 21, 5310, 575, 15216, 10098, 6833, 15227, 2121, 8615, 6338, 6014, 5923, 1113, 5931, 2]
 // Exports: default
 
-// Module 11802 (UnifiedGiftModalSuccessScreen)
+// Module 15215 (UnifiedGiftModalSuccessScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
-import openUserSettings from "openUserSettings" /* 8604 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6833 */;
+import openUserSettings from "openUserSettings" /* 8615 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -50,7 +50,7 @@ export default function UnifiedGiftModalSuccessScreen(giftBadgeProgress) {
     if (tmp2) {
       const obj2 = { giftBadgeProgress };
       const obj = ModalActionCreatorsDefault;
-      obj.pushLazy(asyncRequire(11814, dependencyMap.paths), obj2, "collectibles_shop_gift_badge_modal");
+      obj.pushLazy(asyncRequire(15227, dependencyMap.paths), obj2, "collectibles_shop_gift_badge_modal");
     }
   }, items);
   const items1 = [onClose];

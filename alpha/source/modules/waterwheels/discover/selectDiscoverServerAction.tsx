@@ -1,11 +1,11 @@
-// Module ID: 19022
-// Function ID: 19023
+// Module ID: 19063
+// Function ID: 19064
 // Name: selectDiscoverServerAction
-// Dependencies: [10225, 2]
+// Dependencies: [10668, 2]
 // Exports: selectDiscoverServerAction
 
-// Module 19022 (selectDiscoverServerAction)
-import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 10225 */;
+// Module 19063 (selectDiscoverServerAction)
+import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 10668 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/waterwheels/discover/selectDiscoverServerAction.tsx");

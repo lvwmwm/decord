@@ -1,16 +1,16 @@
-// Module ID: 11899
-// Function ID: 11900
+// Module ID: 10789
+// Function ID: 10790
 // Name: useReactionPermissions
-// Dependencies: [32, 5239, 5218, 6927, 5238, 1072, 504, 5244, 9204, 7287, 11900, 2]
+// Dependencies: [32, 5243, 5222, 6935, 5242, 1072, 504, 5248, 9215, 7297, 10790, 2]
 // Exports: default
 
-// Module 11899 (useReactionPermissions)
+// Module 10789 (useReactionPermissions)
 import Constants from "Constants" /* 1072 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import LurkingStore from "LurkingStore" /* 5239 */;
-import GuildMemberStore from "GuildMemberStore" /* 5218 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 6927 */;
-import PermissionStore from "PermissionStore" /* 5238 */;
+import LurkingStore from "LurkingStore" /* 5243 */;
+import GuildMemberStore from "GuildMemberStore" /* 5222 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 6935 */;
+import PermissionStore from "PermissionStore" /* 5242 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

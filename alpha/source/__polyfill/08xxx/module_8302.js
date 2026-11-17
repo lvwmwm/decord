@@ -1,14 +1,18 @@
 // Module ID: 8302
 // Function ID: 8303
-// Dependencies: [42, 41, 93, 95, 98, 19]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8289, 8303, 8298]
 
 // Module 8302
-import react from "react" /* 19 */;
-import _createClass from "_createClass" /* 42 */;
+import Fragment from "Fragment" /* 21 */;
+import extractProps from "extractProps" /* 8289 */;
+import multiplyMatricesDefault from "multiplyMatrices" /* 8298 */;
+import _modDef8303 from "module_8303" /* 8303 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
-import map from "_possibleConstructorReturn" /* 93 */;
+import _createClass from "_createClass" /* 42 */;
+import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
+import react from "react" /* 19 */;
 
 function _isNativeReflectConstruct() {
   try {
@@ -25,40 +29,47 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class FilterPrimitive {
+const jsx = Fragment.jsx;
+class Circle {
   constructor() {
     let constructResult;
     const self = this;
-    const items = [...arguments];
-    let closure_0;
-    _classCallCheck(this, FilterPrimitive);
-    const items1 = [...items];
-    const obj = _getPrototypeOf(FilterPrimitive);
+    _classCallCheck(this, Circle);
+    const obj = _getPrototypeOf(Circle);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = map;
+    const tmp3 = _possibleConstructorReturn;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      constructResult = obj.apply(self, items1);
+      constructResult = obj(...arguments);
     }
-    const tmp3Result = tmp3(self, constructResult);
-    closure_0 = tmp3Result;
-    tmp3Result.root = null;
-    tmp3Result.refMethod = (root) => {
-      root.root = root;
-    };
-    tmp3Result.setNativeProps = (arg0) => {
-      root = root.root;
-      if (root != null) {
-        root.setNativeProps(arg0);
-      }
-    };
-    return tmp3Result;
+    return tmp3(self, constructResult);
   }
 }
-_inherits(FilterPrimitive, react.Component);
-const importDefaultResultResult = _createClass(FilterPrimitive);
-importDefaultResultResult.defaultPrimitiveProps = {};
+_inherits(Circle, multiplyMatricesDefault);
+const entry = {
+  key: "render",
+  value: function render() {
+    let cx;
+    let cy;
+    let r;
+    const self = this;
+    const props = this.props;
+    const obj = { cx, cy, r };
+    ({ cx, cy, r } = props);
+    const obj2 = extractProps;
+    const merged = Object.assign(obj2.extract(this, props));
+    _modDef8303;
+    const merged1 = Object.assign(obj);
+    return <tmp2 ref={function ref(arg0) {
+      return self.refMethod(arg0);
+    }} />;
+  }
+};
+const items = [entry];
+const importDefaultResultResult = _createClass(Circle, items);
+importDefaultResultResult.displayName = "Circle";
+importDefaultResultResult.defaultProps = { cx: 0, cy: 0, r: 0 };
 
 export default importDefaultResultResult;

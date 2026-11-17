@@ -1,15 +1,15 @@
-// Module ID: 19480
-// Function ID: 19481
+// Module ID: 19525
+// Function ID: 19526
 // Name: GroupDMRow
-// Dependencies: [19, 21, 5944, 10891, 1187, 10892, 5919, 19464, 2]
+// Dependencies: [19, 21, 5948, 10742, 1187, 15144, 5923, 19509, 2]
 // Exports: default
 
-// Module 19480 (GroupDMRow)
+// Module 19525 (GroupDMRow)
 import Fragment from "Fragment" /* 21 */;
 import native from "native" /* 1187 */;
-import useChannelNameDefault from "useChannelName" /* 5944 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 10891 */;
-import useRecipientsLabel from "useRecipientsLabel" /* 10892 */;
+import useChannelNameDefault from "useChannelName" /* 5948 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 10742 */;
+import useRecipientsLabel from "useRecipientsLabel" /* 15144 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -35,10 +35,10 @@ export default function GroupDMRow(channel) {
   let tmp3Result;
   if (null != recipientsLabel) {
     const obj3 = { variant: "body-xs/medium", color: "text-muted", lineClamp: 1, children: recipientsLabel };
-    tmp3Result = tmp3(tmp5(5919).Text, obj3);
+    tmp3Result = tmp3(tmp5(5923).Text, obj3);
   }
   let str2 = str;
-  const SearchListRow = tmp5(19464).SearchListRow;
+  const SearchListRow = tmp5(19509).SearchListRow;
   if (str == null) {
     str2 = "";
   }

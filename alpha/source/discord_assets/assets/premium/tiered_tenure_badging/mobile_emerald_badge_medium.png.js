@@ -1,8 +1,8 @@
-// Module ID: 10102
-// Function ID: 10103
+// Module ID: 15280
+// Function ID: 15281
 // Dependencies: [2]
 
-// Module 10102
+// Module 15280
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/premium/tiered_tenure_badging/mobile_emerald_badge_medium.png.js");

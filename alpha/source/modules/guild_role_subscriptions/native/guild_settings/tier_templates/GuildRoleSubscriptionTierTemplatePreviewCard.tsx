@@ -1,25 +1,25 @@
-// Module ID: 20780
-// Function ID: 20781
+// Module ID: 20827
+// Function ID: 20828
 // Name: GuildRoleSubscriptionTierTemplatePreviewCard
-// Dependencies: [19, 17, 1072, 21, 5306, 575, 5919, 5542, 20781, 2121, 20785, 1187, 20784, 1113, 15459, 1502, 17846, 20786, 1256, 6057, 17852, 20782, 17857, 2]
+// Dependencies: [19, 17, 1072, 21, 5310, 575, 5923, 5546, 20828, 2121, 20832, 1187, 20831, 1113, 15493, 1502, 17887, 20833, 1256, 6064, 17893, 20829, 17898, 2]
 // Exports: default
 
-// Module 20780 (GuildRoleSubscriptionTierTemplatePreviewCard)
+// Module 20827 (GuildRoleSubscriptionTierTemplatePreviewCard)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import ChevronSmallUpIcon from "ChevronSmallUpIcon" /* 15459 */;
-import GuildRoleSubscriptionTierTemplateUtils from "GuildRoleSubscriptionTierTemplateUtils" /* 20784 */;
-import GuildRoleSubscriptionTierTemplateActionCreators from "GuildRoleSubscriptionTierTemplateActionCreators" /* 20786 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
+import Text_Text from "Text/Text" /* 5923 */;
+import ChevronSmallUpIcon from "ChevronSmallUpIcon" /* 15493 */;
+import GuildRoleSubscriptionTierTemplateUtils from "GuildRoleSubscriptionTierTemplateUtils" /* 20831 */;
+import GuildRoleSubscriptionTierTemplateActionCreators from "GuildRoleSubscriptionTierTemplateActionCreators" /* 20833 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size_mod from "module_2" /* 2 */;
 
 let navigation;
@@ -39,7 +39,7 @@ let obj7;
 let rect;
 let size;
 let tmp;
-const AppAnalyticsUtils = tmp(6057);
+const AppAnalyticsUtils = tmp(6064);
 function ContentHeader(arg0) {
   let count;
   let items;
@@ -178,7 +178,7 @@ export default function GuildRoleSubscriptionTierTemplatePreviewCard(template) {
     if (closure_7) {
       const obj2 = { selectedTemplate, handleCreateFromTemplate, newPricesToPick: suggestedUnusedPrices };
       const obj = ActionSheetActionCreatorsDefault;
-      obj.openLazy(asyncRequire(20785, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
+      obj.openLazy(asyncRequire(20832, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
     } else {
       handleCreateFromTemplate(selectedTemplate, arg1);
     }
@@ -192,7 +192,7 @@ export default function GuildRoleSubscriptionTierTemplatePreviewCard(template) {
     onPress: function handleViewEntireTemplate() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { template, guildId, handleSelectTemplateInPreview: callback1 };
-      obj.openLazy(asyncRequire(20781, dependencyMap.paths), "TierTemplateCard", obj2);
+      obj.openLazy(asyncRequire(20828, dependencyMap.paths), "TierTemplateCard", obj2);
     },
     children: items6
   };

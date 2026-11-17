@@ -1,13 +1,13 @@
-// Module ID: 10489
-// Function ID: 10490
+// Module ID: 10215
+// Function ID: 10216
 // Name: MobileWebHandoffLinking
-// Dependencies: [5, 502, 1072, 6838, 10490, 10492, 1256, 1254, 10493, 1381, 6002, 2]
+// Dependencies: [5, 502, 1072, 6833, 10216, 10218, 1256, 1254, 10219, 1381, 6006, 2]
 
-// Module 10489 (MobileWebHandoffLinking)
+// Module 10215 (MobileWebHandoffLinking)
 import FingerprintUtils from "FingerprintUtils" /* 1254 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
-import SimpleLoadingModal from "SimpleLoadingModal" /* 10490 */;
-import MobileWebHandoffUtilsDefault from "MobileWebHandoffUtils" /* 10492 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6833 */;
+import SimpleLoadingModal from "SimpleLoadingModal" /* 10216 */;
+import MobileWebHandoffUtilsDefault from "MobileWebHandoffUtils" /* 10218 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1072 */;

@@ -1,10 +1,10 @@
-// Module ID: 8520
-// Function ID: 8521
+// Module ID: 8531
+// Function ID: 8532
 // Name: GameServerHostingBannerBlockRecord
-// Dependencies: [5981, 2]
+// Dependencies: [5985, 2]
 
-// Module 8520 (GameServerHostingBannerBlockRecord)
-import ShopBlockType from "ShopBlockType" /* 5981 */;
+// Module 8531 (GameServerHostingBannerBlockRecord)
+import ShopBlockType from "ShopBlockType" /* 5985 */;
 import size from "module_2" /* 2 */;
 
 class GameServerHostingBannerBlockRecord {

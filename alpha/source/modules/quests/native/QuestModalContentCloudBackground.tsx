@@ -1,18 +1,18 @@
-// Module ID: 17733
-// Function ID: 17734
+// Module ID: 17773
+// Function ID: 17774
 // Name: QuestModalContentCloudBackground
-// Dependencies: [19, 17, 21, 5306, 5328, 5537, 5883, 6010, 17734, 17735, 2]
+// Dependencies: [19, 17, 21, 5310, 5332, 5541, 5887, 6014, 17774, 17775, 2]
 // Exports: default
 
-// Module 17733 (QuestModalContentCloudBackground)
-import themes from "themes" /* 5328 */;
-import useTheme from "useTheme" /* 5537 */;
-import LinearGradientDefault from "LinearGradient" /* 5883 */;
-import FastImageDefault from "FastImage" /* 6010 */;
+// Module 17773 (QuestModalContentCloudBackground)
+import themes from "themes" /* 5332 */;
+import useTheme from "useTheme" /* 5541 */;
+import LinearGradientDefault from "LinearGradient" /* 5887 */;
+import FastImageDefault from "FastImage" /* 6014 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -92,7 +92,7 @@ export default function QuestModalContentCloudBackground(align) {
     tmp9 = tmp7;
   }
   items1 = [tmp7Result, ];
-  const obj5 = { style: items2, source: importDefault(isThemeDarkResult ? 17734 : 17735), resizeMode: str2 };
+  const obj5 = { style: items2, source: importDefault(isThemeDarkResult ? 17774 : 17775), resizeMode: str2 };
   items2 = [isThemeDarkResult ? tmp.cloudsImage : tmp.cloudsImageLight, imgStyle];
   const tmp12 = FastImageDefault;
   items1[1] = tmp9(tmp12, obj5);

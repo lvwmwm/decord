@@ -1,20 +1,20 @@
-// Module ID: 20452
-// Function ID: 20453
+// Module ID: 20499
+// Function ID: 20500
 // Name: GuildSettingsAutoModeration
-// Dependencies: [32, 19, 20453, 20455, 1072, 21, 5306, 575, 20457, 1113, 1502, 20462, 20470, 8106, 6327, 5919, 2188, 7418, 7746, 5902, 2]
+// Dependencies: [32, 19, 20500, 20502, 1072, 21, 5310, 575, 20504, 1113, 1502, 20509, 20517, 8117, 6335, 5923, 2188, 7428, 7756, 5906, 2]
 // Exports: default
 
-// Module 20452 (GuildSettingsAutoModeration)
+// Module 20499 (GuildSettingsAutoModeration)
 import nativeDefault from "native" /* 575 */;
-import TableRowGroup2 from "TableRowGroup" /* 7746 */;
-import GuildSettingsAutomodRuleStore from "GuildSettingsAutomodRuleStore" /* 20455 */;
-import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 20457 */;
+import TableRowGroup2 from "TableRowGroup" /* 7756 */;
+import GuildSettingsAutomodRuleStore from "GuildSettingsAutomodRuleStore" /* 20502 */;
+import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 20504 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AutomodStore from "AutomodStore" /* 20453 */;
+import AutomodStore from "AutomodStore" /* 20500 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

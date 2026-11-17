@@ -1,9 +1,9 @@
-// Module ID: 18739
-// Function ID: 18740
+// Module ID: 18780
+// Function ID: 18781
 // Name: HomeDrawerAnimations
 // Dependencies: [1655, 2]
 
-// Module 18739 (HomeDrawerAnimations)
+// Module 18780 (HomeDrawerAnimations)
 import _mod1655 from "module_1655" /* 1655 */;
 import size from "module_2" /* 2 */;
 

@@ -1,17 +1,17 @@
-// Module ID: 14490
-// Function ID: 14491
+// Module ID: 13355
+// Function ID: 13356
 // Name: CheckpointButton
-// Dependencies: [19, 17, 6367, 21, 5306, 14491, 575, 2]
+// Dependencies: [19, 17, 6375, 21, 5310, 13356, 575, 2]
 // Exports: CheckpointButton, CheckpointShadowButton
 
-// Module 14490 (CheckpointButton)
+// Module 13355 (CheckpointButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import CheckpointPressable from "CheckpointPressable" /* 14491 */;
+import CheckpointPressable from "CheckpointPressable" /* 13356 */;
 import react from "react" /* 19 */;
-import CheckpointConstants from "CheckpointConstants" /* 6367 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import CheckpointConstants from "CheckpointConstants" /* 6375 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 const CheckpointPressableDefault = CheckpointPressable;

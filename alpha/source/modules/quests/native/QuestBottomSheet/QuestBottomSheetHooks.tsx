@@ -1,17 +1,17 @@
-// Module ID: 17729
-// Function ID: 17730
+// Module ID: 17769
+// Function ID: 17770
 // Name: QuestBottomSheetHooks
-// Dependencies: [5, 19, 6954, 17702, 17725, 5542, 10168, 17730, 10135, 10138, 6961, 8834, 6957, 2]
+// Dependencies: [5, 19, 6962, 17740, 17765, 5546, 10613, 17770, 10579, 10582, 6969, 8845, 6965, 2]
 // Exports: useMobileActivityPressHandler, useWatchTaskPressHandler
 
-// Module 17729 (QuestBottomSheetHooks)
-import QuestConstants from "QuestConstants" /* 6954 */;
-import QuestTypes from "QuestTypes" /* 6957 */;
-import AdCreativeType from "AdCreativeType" /* 6961 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 8834 */;
-import captureAdUserAction2 from "captureAdUserAction" /* 10135 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 10138 */;
-import openVideoQuestModalDefault from "openVideoQuestModal" /* 17730 */;
+// Module 17769 (QuestBottomSheetHooks)
+import QuestConstants from "QuestConstants" /* 6962 */;
+import QuestTypes from "QuestTypes" /* 6965 */;
+import AdCreativeType from "AdCreativeType" /* 6969 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8845 */;
+import captureAdUserAction2 from "captureAdUserAction" /* 10579 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 10582 */;
+import openVideoQuestModalDefault from "openVideoQuestModal" /* 17770 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

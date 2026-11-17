@@ -1,12 +1,12 @@
-// Module ID: 18724
-// Function ID: 18725
+// Module ID: 18765
+// Function ID: 18766
 // Name: isJankScreenReportingEnabled
-// Dependencies: [1380, 5181, 5263, 2]
+// Dependencies: [1380, 5185, 5267, 2]
 // Exports: isJankScreenReportingEnabled
 
-// Module 18724 (isJankScreenReportingEnabled)
+// Module 18765 (isJankScreenReportingEnabled)
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import DeviceUtils from "DeviceUtils" /* 5263 */;
+import DeviceUtils from "DeviceUtils" /* 5267 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/jank_stats/native/isJankScreenReportingEnabled.tsx");
@@ -15,7 +15,7 @@ export function isJankScreenReportingEnabled() {
   let cachedEnabled;
   const obj = PlatformUtils;
   if (obj.isAndroid()) {
-    const AndroidJankPerScreenExperiment = tmp(5181).AndroidJankPerScreenExperiment;
+    const AndroidJankPerScreenExperiment = tmp(5185).AndroidJankPerScreenExperiment;
     cachedEnabled = AndroidJankPerScreenExperiment.getCachedEnabled();
   } else {
     const tmpResult = PlatformUtils;
@@ -25,7 +25,7 @@ export function isJankScreenReportingEnabled() {
       cachedEnabled = tmpResult2.getSystemVersionMajor() >= 18;
     }
     if (cachedEnabled) {
-      const IOSJankPerScreenExperiment = tmp(5181).IOSJankPerScreenExperiment;
+      const IOSJankPerScreenExperiment = tmp(5185).IOSJankPerScreenExperiment;
       cachedEnabled = IOSJankPerScreenExperiment.getCachedEnabled();
     }
   }

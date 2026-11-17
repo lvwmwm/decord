@@ -1,15 +1,15 @@
-// Module ID: 5970
-// Function ID: 5971
+// Module ID: 5974
+// Function ID: 5975
 // Name: isVoiceEmbeddedActivity
-// Dependencies: [502, 5155, 5209, 5971, 1093, 2]
+// Dependencies: [502, 5159, 5213, 5975, 1093, 2]
 // Exports: default
 
-// Module 5970 (isVoiceEmbeddedActivity)
+// Module 5974 (isVoiceEmbeddedActivity)
 import ChannelTypes from "ChannelTypes" /* 1093 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
-import VoiceStateStore from "VoiceStateStore" /* 5971 */;
+import ChannelStore from "ChannelStore" /* 5159 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5213 */;
+import VoiceStateStore from "VoiceStateStore" /* 5975 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/utils/isVoiceEmbeddedActivity.tsx");

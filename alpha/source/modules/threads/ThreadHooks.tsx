@@ -1,26 +1,26 @@
-// Module ID: 7287
-// Function ID: 7288
+// Module ID: 7297
+// Function ID: 7298
 // Name: ThreadHooks
-// Dependencies: [32, 19, 5521, 5159, 502, 5155, 5238, 7014, 7288, 1072, 504, 1084, 7062, 11, 12, 12526, 12527, 12737, 14632, 6819, 6828, 2]
+// Dependencies: [32, 19, 5525, 5163, 502, 5159, 5242, 7022, 7298, 1072, 504, 1084, 7070, 11, 12, 12721, 12722, 11344, 13511, 6814, 6823, 2]
 // Exports: computeCanStartPrivateThread, computeCanStartPublicThread, computeIsReadOnlyThread, getIsActiveChannelOrUnarchivableThread, isNonModInLockedThread, isThreadModerator, useCanJoinThreadVoice, useCanManageThread, useCanRemoveThreadMember, useCanStartPublicThread, useCanStartThread, useCanViewThreadForMessage, useHasActiveThreads, useHasPermissionToJoinThreadVoice, useIsActiveChannelOrUnarchivableThread, useIsNonModInLockedThread, useIsThreadMember, useIsThreadModerator
 
-// Module 7287 (ThreadHooks)
+// Module 7297 (ThreadHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
-import ChannelRecord from "ChannelRecord" /* 5159 */;
-import isSystemMessageDefault from "isSystemMessage" /* 7062 */;
-import GuildSubscriptionsActionCreators from "GuildSubscriptionsActionCreators" /* 12526 */;
-import GuildChannelSubscriptions from "GuildChannelSubscriptions" /* 12527 */;
-import useIsRemoteDefault from "useIsRemote" /* 12737 */;
+import ChannelRecord from "ChannelRecord" /* 5163 */;
+import isSystemMessageDefault from "isSystemMessage" /* 7070 */;
+import useIsRemoteDefault from "useIsRemote" /* 11344 */;
+import GuildSubscriptionsActionCreators from "GuildSubscriptionsActionCreators" /* 12721 */;
+import GuildChannelSubscriptions from "GuildChannelSubscriptions" /* 12722 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createExperiment from "createExperiment" /* 5521 */;
+import createExperiment from "createExperiment" /* 5525 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import PermissionStore from "PermissionStore" /* 5238 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 7014 */;
-import ThreadMemberListStore from "ThreadMemberListStore" /* 7288 */;
+import ChannelStore from "ChannelStore" /* 5159 */;
+import PermissionStore from "PermissionStore" /* 5242 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 7022 */;
+import ThreadMemberListStore from "ThreadMemberListStore" /* 7298 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let closure_12;
 let closure_14;
 let items;
 let map1;
-const f93721 = () => {
+const f93924 = () => {
   let SEND_MESSAGES;
   const tmp = channel;
   if (channel.isForumLikeChannel()) {
@@ -42,7 +42,7 @@ const f93721 = () => {
   }
   return PermissionStore.can(SEND_MESSAGES, tmp);
 };
-const f93725 = () => {
+const f93928 = () => {
   const items = [PermissionStore];
   const first = _slicedToArray(items, 1)[0];
   let canResult = null != channel;
@@ -52,7 +52,7 @@ const f93725 = () => {
   }
   return canResult;
 };
-const f93726 = () => PermissionStore.can(constants.CONNECT, channel);
+const f93929 = () => PermissionStore.can(constants.CONNECT, channel);
 function useCanStartPrivateThread(type) {
   _require = type;
   let obj = require("get initialized");
@@ -101,7 +101,7 @@ function useCanUnarchiveThread(channel) {
   }, items2);
   const items3 = [PermissionStore];
   const obj3 = require("get initialized");
-  const stateFromStores2 = obj3.useStateFromStores(items3, f93725);
+  const stateFromStores2 = obj3.useStateFromStores(items3, f93928);
   if (stateFromStores) {
     stateFromStores = stateFromStores1;
   }
@@ -162,7 +162,7 @@ export function useCanStartPublicThread(type, arg1) {
   const items1 = [type];
   let flag = false;
   const obj = require("get initialized");
-  if (obj.useStateFromStores(items, f93721, items1)) {
+  if (obj.useStateFromStores(items, f93924, items1)) {
     flag = false;
     if (THREADED_CHANNEL_TYPES.has(type.type)) {
       flag = true;
@@ -239,7 +239,7 @@ export function useCanStartThread(channel) {
   const items = [PermissionStore];
   const items1 = [channel];
   let flag = false;
-  if (obj.useStateFromStores(items, f93721, items1)) {
+  if (obj.useStateFromStores(items, f93924, items1)) {
     let tmp = THREADED_CHANNEL_TYPES;
     flag = false;
     if (THREADED_CHANNEL_TYPES.has(channel.type)) {
@@ -405,7 +405,7 @@ export function useIsThreadModerator(channel) {
   _require = channel;
   const items = [PermissionStore];
   const obj = require("get initialized");
-  return obj.useStateFromStores(items, f93725);
+  return obj.useStateFromStores(items, f93928);
 }
 export function isThreadModerator(arg0) {
   let tmp = arg1;
@@ -480,7 +480,7 @@ export function useHasPermissionToJoinThreadVoice(isThread) {
   _require = isThread;
   const items = [PermissionStore];
   const obj = require("get initialized");
-  let stateFromStores = obj.useStateFromStores(items, f93726);
+  let stateFromStores = obj.useStateFromStores(items, f93929);
   let tmp3 = null != isThread;
   if (tmp3) {
     const isThreadResult = isThread.isThread();
@@ -515,7 +515,7 @@ export function useCanJoinThreadVoice(channel) {
   const items = [PermissionStore];
   const tmp2 = useIsRemoteDefault();
   const obj = require("get initialized");
-  let stateFromStores = obj.useStateFromStores(items, f93726);
+  let stateFromStores = obj.useStateFromStores(items, f93929);
   let tmp6 = null != channel;
   if (tmp6) {
     const isThreadResult = channel.isThread();
@@ -572,7 +572,7 @@ export function useIsNonModInLockedThread(channel) {
   _require = channel;
   let items = [PermissionStore];
   const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, f93725);
+  const stateFromStores = obj.useStateFromStores(items, f93928);
   const tmp2 = channel.isLockedThread() && !stateFromStores;
   return tmp2;
 }

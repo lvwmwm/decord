@@ -1,20 +1,20 @@
-// Module ID: 19354
-// Function ID: 19355
+// Module ID: 19399
+// Function ID: 19400
 // Name: NewContentPill
-// Dependencies: [32, 19, 17, 5177, 10205, 21, 5306, 575, 9503, 7720, 504, 5537, 10210, 10216, 1655, 5929, 1505, 7428, 14031, 5919, 1113, 5313, 2]
+// Dependencies: [32, 19, 17, 5181, 10650, 21, 5310, 575, 9515, 7730, 504, 5541, 10654, 10659, 1655, 5933, 1505, 7438, 15068, 5923, 1113, 5317, 2]
 // Exports: default
 
-// Module 19354 (NewContentPill)
+// Module 19399 (NewContentPill)
 import nativeDefault from "native" /* 575 */;
-import GuildIcon from "GuildIcon" /* 7720 */;
-import ClipView from "ClipView" /* 9503 */;
+import GuildIcon from "GuildIcon" /* 7730 */;
+import ClipView from "ClipView" /* 9515 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import ICYMIStore from "ICYMIStore" /* 10205 */;
+import GuildStore from "GuildStore" /* 5181 */;
+import ICYMIStore from "ICYMIStore" /* 10650 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size_mod from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;

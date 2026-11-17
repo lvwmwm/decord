@@ -1,9 +1,17 @@
 // Module ID: 16794
 // Function ID: 16795
-// Dependencies: [16795]
+// Dependencies: [16795, 16809]
 
 // Module 16794
 import _mod16795 from "module_16795" /* 16795 */;
+import _mod16809 from "module_16809" /* 16809 */;
 
 
-export default (arg0) => _mod16795(arg0.length);
+export default (arg0) => {
+  const tmp = _mod16795(arg0, "string");
+  let text = tmp;
+  if (!_mod16809(tmp)) {
+    text = `${tmp}`;
+  }
+  return text;
+};

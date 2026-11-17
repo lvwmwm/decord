@@ -1,14 +1,14 @@
-// Module ID: 8250
-// Function ID: 8251
+// Module ID: 8261
+// Function ID: 8262
 // Name: AppleNeutralIcon
-// Dependencies: [19, 21, 575, 6009, 8251, 2]
+// Dependencies: [19, 21, 575, 6013, 8262, 2]
 // Exports: AppleNeutralIcon
 
-// Module 8250 (AppleNeutralIcon)
+// Module 8261 (AppleNeutralIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6009 */;
-import AssetRegistry from "AssetRegistry" /* 8251 */;
+import BaseIconImage2 from "BaseIconImage" /* 6013 */;
+import AssetRegistry from "AssetRegistry" /* 8262 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

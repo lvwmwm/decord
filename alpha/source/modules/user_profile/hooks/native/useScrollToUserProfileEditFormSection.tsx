@@ -1,55 +1,68 @@
-// Module ID: 17090
-// Function ID: 17091
+// Module ID: 17126
+// Function ID: 17127
 // Name: useScrollToUserProfileEditFormSection
-// Dependencies: [19, 17, 5307, 10035, 504, 2]
+// Dependencies: [19, 5311, 10048, 504, 2]
 // Exports: default
 
-// Module 17090 (useScrollToUserProfileEditFormSection)
-import react_native from "react-native" /* 17 */;
+// Module 17126 (useScrollToUserProfileEditFormSection)
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 10035 */;
+import AccessibilityStore from "AccessibilityStore" /* 5311 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 10048 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, ref;
+let _require, dependencyMap;
 
 let react = react_mod;
-const findNodeHandle = react_native.findNodeHandle;
 const result = size.fileFinishedImporting("modules/user_profile/hooks/native/useScrollToUserProfileEditFormSection.tsx");
 
-export default function useScrollToUserProfileEditFormSection(arg0, arg1) {
+export default function useScrollToUserProfileEditFormSection(arg0, arg1, arg2) {
   let closure_0;
   let closure_1;
-  let stateFromStores;
+  let closure_2;
   _require = arg0;
   dependencyMap = arg1;
-  react = react.useRef({});
+  react = arg2;
+  let ref = react.useRef({});
   const ref2 = react.useRef(false);
-  const items = [stateFromStores];
-  const obj = require("get initialized");
-  stateFromStores = obj.useStateFromStores(items, () => stateFromStores.useReducedMotion);
-  const items1 = [arg0, stateFromStores];
+  let obj = require("get initialized");
+  const items = [ref];
+  const stateFromStores = obj.useStateFromStores(items, () => ref.useReducedMotion);
+  const items1 = [arg0, stateFromStores, arg2];
   const callback = react.useCallback((arg0) => {
     ref = arg0;
     let current = ref2.current;
-    let tmp = ref2;
+    const tmp = ref2;
     if (!current) {
       current = null == ref.current[arg0];
     }
     if (!current) {
       tmp.current = true;
       const _setTimeout = setTimeout;
+      let num = 0;
       const timerId = setTimeout(() => {
-        closure_3.current = false;
-        const tmp = findNodeHandle(ref.current);
-        if (null != tmp) {
-          if (ref2.current[ref] != null) {
-            ref2.current[ref].measureLayout(tmp, (x, y) => {
+        closure_4.current = false;
+        let obj = ref2.current[ref];
+        let current = ref.current;
+        let innerViewRef;
+        if (current != null) {
+          innerViewRef = current.getInnerViewRef();
+        }
+        if (null != innerViewRef) {
+          if (obj != null) {
+            obj.measureLayout(innerViewRef, (arg0, arg1) => {
+              let num;
+              const obj = closure_1_2;
+              if (closure_1_2 != null) {
+                num = obj.get();
+              }
+              if (num == null) {
+                num = 0;
+              }
               const current = ref.current;
               if (current != null) {
-                const point = { x, y, animated: !closure_1_4 };
-                current.scrollTo(point);
+                const obj2 = { y: tmp, animated: !closure_1_5 };
+                current.scrollTo(obj2);
               }
             });
           }

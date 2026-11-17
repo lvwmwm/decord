@@ -1,29 +1,29 @@
-// Module ID: 17961
-// Function ID: 17962
+// Module ID: 18002
+// Function ID: 18003
 // Name: DisplayNameStylesFontPickerSheet
-// Dependencies: [32, 19, 17, 5331, 1083, 21, 10066, 575, 5306, 8559, 17962, 17960, 5368, 1398, 1396, 5544, 5542, 5556, 17963, 1113, 3125, 5926, 5919, 4516, 17108, 5367, 17101, 17096, 17102, 6010, 17964, 7748, 17104, 6327, 6027, 2]
+// Dependencies: [32, 19, 17, 5335, 1083, 21, 10079, 575, 5310, 8570, 18003, 18001, 5372, 1398, 1396, 5548, 5546, 5560, 18004, 1113, 3127, 5930, 5923, 4520, 17144, 5371, 17137, 17132, 17138, 6014, 18005, 7758, 17140, 6335, 6031, 2]
 // Exports: default
 
-// Module 17961 (DisplayNameStylesFontPickerSheet)
+// Module 18002 (DisplayNameStylesFontPickerSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
-import _modDef3125 from "module_3125" /* 3125 */;
-import _modDef4516 from "module_4516" /* 4516 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import HapticUtils from "HapticUtils" /* 5544 */;
-import FastImageDefault from "FastImage" /* 6010 */;
-import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 10066 */;
-import getDisplayNameStylesFontNameDefault from "getDisplayNameStylesFontName" /* 17096 */;
-import HexagonCampaignPromoGradientDefault from "HexagonCampaignPromoGradient" /* 17102 */;
-import HexagonCampaignDaysLeftBadgeDefault from "HexagonCampaignDaysLeftBadge" /* 17108 */;
-import DisplayNameStylesSheetHeaderDefault from "DisplayNameStylesSheetHeader" /* 17963 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17964 */;
+import _modDef3127 from "module_3127" /* 3127 */;
+import _modDef4520 from "module_4520" /* 4520 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
+import HapticUtils from "HapticUtils" /* 5548 */;
+import FastImageDefault from "FastImage" /* 6014 */;
+import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 10079 */;
+import getDisplayNameStylesFontNameDefault from "getDisplayNameStylesFontName" /* 17132 */;
+import HexagonCampaignPromoGradientDefault from "HexagonCampaignPromoGradient" /* 17138 */;
+import HexagonCampaignDaysLeftBadgeDefault from "HexagonCampaignDaysLeftBadge" /* 17144 */;
+import DisplayNameStylesSheetHeaderDefault from "DisplayNameStylesSheetHeader" /* 18004 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18005 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5331 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5335 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;
@@ -120,18 +120,18 @@ export default function DisplayNameStylesFontPickerSheet(arg0) {
   importDefault = tmp;
   let tmp2 = onSelectFont;
   let tmp3 = dependencyMap;
-  let obj = onSelectFont(8559);
+  let obj = onSelectFont(8570);
   const bottomSheetRef = obj.useBottomSheetRef().bottomSheetRef;
-  let obj2 = onSelectFont(17962);
+  let obj2 = onSelectFont(18003);
   const hexagonCampaignFontPickerSection = obj2.useHexagonCampaignFontPickerSection("DisplayNameStylesFontPickerSheet", isTryItOut);
   ({ gridFontOrder, showCampaignSection, visibleFontOrder } = hexagonCampaignFontPickerSection);
-  let obj3 = onSelectFont(17960);
+  let obj3 = onSelectFont(18001);
   const displayNameStylesNewFonts = obj3.useDisplayNameStylesNewFonts(visibleFontOrder);
   ({ dotFontIds: c2, dismissFontDot: c3 } = displayNameStylesNewFonts);
   [first, closure_5] = first.useState(selectedFontId);
   let tmp9 = first === closure_7;
   const tmp8 = closure_7;
-  let obj4 = onSelectFont(5368);
+  let obj4 = onSelectFont(5372);
   const radioA11yNative = obj4.useRadioA11yNative({ selected: tmp9 });
   const DEFAULT = onSelectFont(1398).DisplayNameFont.DEFAULT;
   const tmp12 = first !== selectedFontId;
@@ -153,12 +153,12 @@ export default function DisplayNameStylesFontPickerSheet(arg0) {
     obj2.hideActionSheet();
   }, items);
   const obj6 = { ref: bottomSheetRef, startExpanded: showCampaignSection, header: closure_12(tmp16, obj7), children: closure_12(closure_5, obj9) };
-  const BottomSheet = onSelectFont(5556).BottomSheet;
-  obj7 = { title: intl.string(_modDef3125["0JCuGm"]), trailing: closure_12(Button, obj8) };
+  const BottomSheet = onSelectFont(5560).BottomSheet;
+  obj7 = { title: intl.string(_modDef3127["0JCuGm"]), trailing: closure_12(Button, obj8) };
   tmp16 = DisplayNameStylesSheetHeaderDefault;
   intl = onSelectFont(1113).intl;
   obj8 = { text: intl2.string(onSelectFont(1113).t.XqMe3N), onPress: callback, variant: "primary", size: "sm" };
-  Button = onSelectFont(5926).Button;
+  Button = onSelectFont(5930).Button;
   intl2 = onSelectFont(1113).intl;
   obj9 = { style: tmp.container, children: closure_13(closure_5, obj10) };
   obj10 = { style: tmp.contentContainer, children: items5 };
@@ -166,15 +166,15 @@ export default function DisplayNameStylesFontPickerSheet(arg0) {
     const obj11 = { style: tmp.campaignSection, children: closure_13(closure_5, obj12) };
     obj12 = { style: tmp.campaignContent, children: items2 };
     const obj13 = { style: tmp.campaignHeader, children: items1 };
-    const obj14 = { variant: "body-sm/semibold", color: "text-subtle", children: intl3.string(_modDef4516["2UCcmW"]) };
-    let Text = tmp2(5919).Text;
+    const obj14 = { variant: "body-sm/semibold", color: "text-subtle", children: intl3.string(_modDef4520["2UCcmW"]) };
+    let Text = tmp2(5923).Text;
     intl3 = tmp2(1113).intl;
     items1 = [closure_12(Text, obj14), ];
     const obj15 = { perk: constants.DISPLAY_NAME_STYLE };
     items1[1] = closure_12(HexagonCampaignDaysLeftBadgeDefault, obj15);
     items2 = [closure_13(closure_5, obj13), , ];
-    const obj16 = { theme: tmp2(17101).ThemeTypes.DARK, children: closure_12(closure_6, obj17) };
-    const ThemeContextProvider = tmp2(5367).ThemeContextProvider;
+    const obj16 = { theme: tmp2(17137).ThemeTypes.DARK, children: closure_12(closure_6, obj17) };
+    const ThemeContextProvider = tmp2(5371).ThemeContextProvider;
     obj17 = {
       onPress() {
           return closure_7(HEXAGON_CAMPAIGN_DISPLAY_NAME_FONT);
@@ -194,12 +194,12 @@ export default function DisplayNameStylesFontPickerSheet(arg0) {
     tmp15Result = FastImageDefault;
     items4[1] = closure_12(closure_5, obj19);
     const obj21 = { variant: "heading-xl/semibold", color: "text-default", style: tmp.campaignName, lineClamp: 1, children: displayName };
-    items4[2] = closure_12(tmp2(5919).Text, obj21);
+    items4[2] = closure_12(tmp2(5923).Text, obj21);
     const obj22 = { selected: tmp9 };
-    items4[3] = closure_12(tmp2(7748).FormRadio, obj22);
+    items4[3] = closure_12(tmp2(7758).FormRadio, obj22);
     items2[1] = closure_12(ThemeContextProvider, obj16);
-    const obj23 = { variant: "body-xs/medium", color: "text-muted", style: tmp.campaignLegal, children: intl5.format(_modDef4516.y2YmJv, obj24) };
-    const Text2 = tmp2(5919).Text;
+    const obj23 = { variant: "body-xs/medium", color: "text-muted", style: tmp.campaignLegal, children: intl5.format(_modDef4520.y2YmJv, obj24) };
+    const Text2 = tmp2(5923).Text;
     intl5 = tmp2(1113).intl;
     obj24 = {
       nonPremiumEndDate,
@@ -276,16 +276,16 @@ export default function DisplayNameStylesFontPickerSheet(arg0) {
       return closure_1_12(tmp9, obj, item);
     })
   };
-  const Stack = tmp2(6327).Stack;
+  const Stack = tmp2(6335).Stack;
   items5[1] = closure_12(Stack, obj25);
   if (tmp18Result) {
     tmp18Result = hasNonLatinLettersResult;
   }
   if (tmp18Result) {
     const obj26 = { style: tmp.nonLatinDisclaimer, children: items6 };
-    items6 = [closure_12(tmp2(6027).CircleInformationIcon, { size: "sm" }), ];
-    const obj27 = { variant: "body-xs/normal", color: "text-subtle", style: tmp.disclaimerText, children: intl6.string(_modDef3125["+O1xL2"]) };
-    const Text3 = tmp2(5919).Text;
+    items6 = [closure_12(tmp2(6031).CircleInformationIcon, { size: "sm" }), ];
+    const obj27 = { variant: "body-xs/normal", color: "text-subtle", style: tmp.disclaimerText, children: intl6.string(_modDef3127["+O1xL2"]) };
+    const Text3 = tmp2(5923).Text;
     intl6 = tmp2(1113).intl;
     items6[1] = closure_12(Text3, obj27);
     tmp18Result = tmp18(tmp17, obj26);

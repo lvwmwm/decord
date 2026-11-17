@@ -1,17 +1,17 @@
-// Module ID: 8419
-// Function ID: 8420
+// Module ID: 8430
+// Function ID: 8431
 // Name: utils
-// Dependencies: [1089, 11, 1113, 2169, 8420, 4731, 8421, 2]
+// Dependencies: [1089, 11, 1113, 2169, 8431, 4735, 8432, 2]
 // Exports: calculateActiveTimestampDurations, formatActiveA11yTimestamp, formatEntryTimestamp, getAggregateRange, getEntryDuration, getEpisodeBadgeA11yText, getEpisodeBadgeText, getFullResurrectedBadgeText, getMarathonDescription, getResurrectedEntryLastPlayTime, getRichGameStateBadgeText, getStreakCount, getTrait, getTrendingType, isEntryActive, isEntryExpired, isEntryLive, isEntryMarathon, isEntryNew, isEntryRecent, isEntryTopGame, isValidStreak
 
-// Module 8419 (utils)
+// Module 8430 (utils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import intl4 from "intl" /* 1113 */;
 import _modDef2169 from "module_2169" /* 2169 */;
-import _mod4731 from "module_4731" /* 4731 */;
-import ContentInventoryTraitType from "ContentInventoryTraitType" /* 8420 */;
-import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8421 */;
+import _mod4735 from "module_4735" /* 4735 */;
+import ContentInventoryTraitType from "ContentInventoryTraitType" /* 8431 */;
+import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8432 */;
 import size_mod from "module_2" /* 2 */;
 
 function calculateTimestampDurations(end, now) {
@@ -427,8 +427,8 @@ export function getFullResurrectedBadgeText(start) {
   let num4;
   let num5;
   const obj = { start, end: new Date() };
-  const intervalToDuration = _mod4731.intervalToDuration;
-  _mod4731;
+  const intervalToDuration = _mod4735.intervalToDuration;
+  _mod4735;
   new Date();
   const intervalToDurationResult = intervalToDuration(obj);
   const months = intervalToDurationResult.months;
@@ -466,13 +466,13 @@ export function getFullResurrectedBadgeText(start) {
 export function getEpisodeBadgeText(large_text) {
   if (null != large_text) {
     if ("" !== large_text) {
-      const obj2 = /\w+ (\d+), \w+ (\d+)/;
-      const match = obj2.exec(large_text);
+      const obj = /\w+ (\d+), \w+ (\d+)/;
+      const match = obj.exec(large_text);
       let formatToPlainStringResult = null;
       if (null != match) {
         const intl = intl4.intl;
-        const obj = { seasonNum: match[1], episodeNum: match[2] };
-        formatToPlainStringResult = intl.formatToPlainString(intl4.t.ijVm6y, obj);
+        const obj2 = { seasonNum: match[1], episodeNum: match[2] };
+        formatToPlainStringResult = intl.formatToPlainString(intl4.t.ijVm6y, obj2);
       }
       return formatToPlainStringResult;
     }

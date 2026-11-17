@@ -1,28 +1,29 @@
-// Module ID: 18497
-// Function ID: 18498
+// Module ID: 18538
+// Function ID: 18539
 // Name: HeroBlockOrbsArcadeHeader
-// Dependencies: [32, 19, 17, 5307, 1072, 21, 575, 10146, 18498, 5306, 10128, 6959, 8263, 5892, 671, 5303, 504, 17620, 1503, 5934, 9730, 6010, 18499, 5883, 5919, 1113, 5926, 5537, 5313, 5367, 2]
+// Dependencies: [32, 19, 17, 5311, 10574, 1072, 21, 575, 10590, 18539, 5310, 10573, 6967, 8274, 5896, 671, 5307, 504, 17658, 1503, 5938, 9743, 6014, 18540, 5887, 5923, 1113, 5930, 5541, 5317, 5371, 2]
 // Exports: default
 
-// Module 18497 (HeroBlockOrbsArcadeHeader)
+// Module 18538 (HeroBlockOrbsArcadeHeader)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
-import shared from "shared" /* 5313 */;
-import native from "native" /* 5367 */;
-import useThemeDefault from "useTheme" /* 5537 */;
-import useToken from "useToken" /* 5892 */;
-import QuestContent from "QuestContent" /* 6959 */;
-import inlineStyles from "inlineStyles" /* 8263 */;
-import QuestUtils from "QuestUtils" /* 10128 */;
-import _modDef18498 from "module_18498" /* 18498 */;
+import shared from "shared" /* 5317 */;
+import native from "native" /* 5371 */;
+import useThemeDefault from "useTheme" /* 5541 */;
+import useToken from "useToken" /* 5896 */;
+import QuestContent from "QuestContent" /* 6967 */;
+import inlineStyles from "inlineStyles" /* 8274 */;
+import QuestUtils from "QuestUtils" /* 10573 */;
+import QuestHomeNavigationStore from "QuestHomeNavigationStore" /* 10574 */;
+import _modDef18539 from "module_18539" /* 18539 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import AccessibilityStore from "AccessibilityStore" /* 5311 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import AssetUtils from "AssetUtils" /* 10146 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import AssetUtils from "AssetUtils" /* 10590 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -32,19 +33,19 @@ let _require, importDefault;
 let StyleSheet;
 let c10;
 let c9;
+let closure_12;
 let hasOwnProperty;
 let metroImportAll;
-let metroImportDefault;
 let obj3;
 let obj4;
 let obj5;
 let obj6;
 let tmp4;
 let unpackModuleId;
-const Text_Text = tmp4(5919);
-function handleTakeMeHere() {
+const Text_Text = tmp4(5923);
+function handleVisitArcade() {
   const obj = QuestUtils;
-  const obj2 = { mergeExistingRoutes: true, fromContent: QuestContent.QuestContent.ORBS_SHOP_HERO_CTA };
+  const obj2 = { mergeExistingRoutes: true, fromContent: QuestContent.QuestContent.ORBS_SHOP_HERO_CTA, scrollToSection: QuestHomeSection.ORBS_ARCADE };
   obj.openQuestHome(obj2);
 }
 function RadialGradientLayer(color) {
@@ -66,7 +67,7 @@ function RadialGradientLayer(color) {
   c0 = undefined;
   ({ rx, ry } = ellipse);
   ({ opacity, frameHeight } = color);
-  const tmp = closure_18();
+  const tmp = closure_19();
   [size, c0] = react.useState({ width: 0, height: 0 });
   _slicedToArray(react.useState({ width: 0, height: 0 }), 2);
   const obj = {
@@ -95,27 +96,27 @@ function RadialGradientLayer(color) {
         const _HermesInternal2 = HermesInternal;
         combined = "rotate(" + rotation + " " + cx + " " + cy + ")";
       }
-      const obj4 = { children: authStore(RadialGradient, obj3) };
+      const obj4 = { children: unpackModuleId(RadialGradient, obj3) };
       const obj5 = { offset: 0, stopColor: color, stopOpacity: opacity };
-      items = [React4(inlineStyles.Stop, obj5), ];
+      items = [authStore(inlineStyles.Stop, obj5), ];
       const obj6 = { offset: 1, stopColor: color, stopOpacity: 0 };
-      items[1] = React4(inlineStyles.Stop, obj6);
-      items1 = [React4(Defs, obj4), ];
+      items[1] = authStore(inlineStyles.Stop, obj6);
+      items1 = [authStore(Defs, obj4), ];
       const size2 = { width: "100%", height: "100%", fill: "url(#" + id + ")" };
       const _HermesInternal3 = HermesInternal;
-      const Rect = tmp11(8263).Rect;
-      items1[1] = React4(Rect, size2);
+      const Rect = tmp11(8274).Rect;
+      items1[1] = authStore(Rect, size2);
       tmp6Result = tmp6(tmp9, size1);
     }
   }
-  return React4(tmp4, obj);
+  return authStore(tmp4, obj);
 }
 function ArtScrim() {
   const obj = useToken;
   const token = obj.useToken(nativeDefault.colors.BACKGROUND_SCRIM_LIGHTBOX);
   const obj2 = _modDef671(token);
   const obj3 = { id: "orbsArcadeShopHeaderScrim", ellipse, color: obj2.hex("rgb"), opacity: obj2.alpha(), frameHeight };
-  return React4(RadialGradientLayer, obj3);
+  return authStore(RadialGradientLayer, obj3);
 }
 function HeroBlockOrbsArcadeHeaderContent(bleedsOntoPage) {
   let _undefined;
@@ -146,7 +147,7 @@ function HeroBlockOrbsArcadeHeaderContent(bleedsOntoPage) {
   _slicedToArray = undefined;
   react = undefined;
   let fontScale;
-  const tmp = closure_18();
+  const tmp = closure_19();
   _require = tmp;
   let obj = require("useToken");
   const token = obj.useToken(require("native").colors.BACKGROUND_BASE_LOWEST);
@@ -217,8 +218,8 @@ function HeroBlockOrbsArcadeHeaderContent(bleedsOntoPage) {
         preventsDisplaySleepDuringVideoPlayback: false,
         importantForAccessibility: "no-hide-descendants"
       };
-      obj9 = { uri: require("module_18498") };
-      const VideoComponent = tmp2(tmp3[20]).VideoComponent;
+      obj9 = { uri: require("module_18539") };
+      const VideoComponent = tmp2(tmp3[21]).VideoComponent;
       tmp28 = !isInView;
       if (isInView) {
         tmp28 = !isFocused;
@@ -226,69 +227,70 @@ function HeroBlockOrbsArcadeHeaderContent(bleedsOntoPage) {
       tmp26Result = tmp26(VideoComponent, obj8);
     }
     obj7.children = tmp26Result;
-    const items3 = [closure_9(fontScale, obj7), closure_9(ArtScrim, {}), ];
+    const items3 = [closure_10(fontScale, obj7), closure_10(ArtScrim, {}), ];
     const obj10 = { style: tmp.gradient, start: null, end: null, locations: memo1, colors: items4 };
-    ({ START: obj14.start, END: obj14.end } = closure_8);
+    ({ START: obj14.start, END: obj14.end } = closure_9);
     items4 = [hexToRgbaStringResult, token];
-    items3[2] = closure_9(require("LinearGradient"), obj10);
+    items3[2] = closure_10(require("LinearGradient"), obj10);
     obj6.children = items3;
-    const items5 = [closure_10(fontScale, obj6), , ];
+    const items5 = [closure_11(fontScale, obj6), , ];
     const items6 = [tmp.glow, ];
     const obj11 = { style: items6, pointerEvents: "none", children: items7 };
     const tmp33 = bleedsOntoPage && tmp.glowWithBleed;
     items6[1] = tmp33;
     const obj12 = { id: "orbsArcadeShopHeaderGlow", ellipse: ellipse2, color: "#5242a3", opacity: 0.55, frameHeight: sum1 };
     sum1 = tmp18;
-    const tmp32 = closure_8;
+    const tmp32 = closure_9;
     const tmp34 = RadialGradientLayer;
     if (bleedsOntoPage) {
       sum1 = tmp18 + PX_48;
     }
-    items7 = [closure_9(tmp34, obj12), ];
+    items7 = [closure_10(tmp34, obj12), ];
     let tmp26Result2 = null;
     if (bleedsOntoPage) {
       const obj13 = { style: tmp.bleedFade, start: null, end: null, colors: items8 };
       ({ START: obj17.start, END: obj17.end } = tmp32);
       items8 = [hexToRgbaStringResult, token];
-      tmp26Result2 = tmp26(tmp4(tmp3[23]), obj13);
+      tmp26Result2 = tmp26(tmp4(tmp3[24]), obj13);
     }
     items7[1] = tmp26Result2;
-    items5[1] = closure_10(fontScale, obj11);
+    items5[1] = closure_11(fontScale, obj11);
     const items9 = [tmp.content, ];
     const obj15 = { style: items9, children: items11 };
     const tmp39 = !bleedsOntoPage && tmp.contentWithPadding;
     items9[1] = tmp39;
     const obj16 = { style: tmp23, children: items10 };
     const obj18 = { variant: "display-sm", color: "text-strong", children: intl.string(require("intl").t["2L068F"]) };
-    const Heading = tmp2(tmp3[24]).Heading;
-    intl = tmp2(tmp3[25]).intl;
-    items10 = [closure_9(Heading, obj18), ];
+    const Heading = tmp2(tmp3[25]).Heading;
+    intl = tmp2(tmp3[26]).intl;
+    items10 = [closure_10(Heading, obj18), ];
     const obj19 = { variant: "body-sm/medium", color: "text-default", children: intl2.string(require("intl").t.BnpvVU) };
-    const Text = tmp2(tmp3[24]).Text;
-    intl2 = tmp2(tmp3[25]).intl;
-    items10[1] = closure_9(Text, obj19);
-    items11 = [closure_10(fontScale, obj16), ];
-    const obj20 = { variant: "primary-overlay", size: "sm", grow: false, shrink: true, text: intl3.string(require("intl").t.Yjyv5F), onPress: handleTakeMeHere };
-    const Button = tmp2(tmp3[26]).Button;
-    intl3 = tmp2(tmp3[25]).intl;
-    items11[1] = closure_9(Button, obj20);
-    items5[2] = closure_10(fontScale, obj15);
+    const Text = tmp2(tmp3[25]).Text;
+    intl2 = tmp2(tmp3[26]).intl;
+    items10[1] = closure_10(Text, obj19);
+    items11 = [closure_11(fontScale, obj16), ];
+    const obj20 = { variant: "primary-overlay", size: "sm", grow: false, shrink: true, text: intl3.string(require("intl").t.Yjyv5F), onPress: handleVisitArcade };
+    const Button = tmp2(tmp3[27]).Button;
+    intl3 = tmp2(tmp3[26]).intl;
+    items11[1] = closure_10(Button, obj20);
+    items5[2] = closure_11(fontScale, obj15);
     obj5.children = items5;
-    return closure_10(fontScale, obj5);
+    return closure_11(fontScale, obj5);
   }
   const obj21 = { source: obj22, style: tmp.image, accessible: false };
-  obj22 = { uri: require("module_18499") };
+  obj22 = { uri: require("module_18540") };
   const tmp4Result = require("FastImage");
   tmp26Result = tmp26(tmp4Result, obj21);
 }
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 ({ StyleSheet, View: hasOwnProperty } = react_native);
-({ ThemeTypes: metroImportDefault, VerticalGradient: metroImportAll } = Constants);
-({ jsx: c9, jsxs: c10, Fragment: unpackModuleId } = Fragment);
-let c12 = 289;
+const QuestHomeSection = QuestHomeNavigationStore.QuestHomeSection;
+({ ThemeTypes: metroImportAll, VerticalGradient: c9 } = Constants);
+({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = Fragment);
+let c13 = 289;
 const PX_16 = nativeDefault.space.PX_16;
-const metadata = AssetUtils.convertVideoToFirstFrameImageWithMediaProxy(_modDef18498);
+const metadata = AssetUtils.convertVideoToFirstFrameImageWithMediaProxy(_modDef18539);
 const PX_48 = nativeDefault.space.PX_48;
 const ellipse = { cx: 85.5, cy: 267.5, rx: 329, ry: 217, rotation: 63 };
 const ellipse2 = { cx: 67, cy: 231, rx: 185, ry: 155 };
@@ -302,26 +304,26 @@ const merged1 = Object.assign(StyleSheet.absoluteFillObject);
 ({ absoluteFillObject: obj2.video, absoluteFillObject: obj2.gradient, absoluteFillObject: obj2.glow } = StyleSheet);
 obj5 = { alignItems: "flex-start", gap: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_16 };
 obj6 = { paddingHorizontal: nativeDefault.space.PX_16, marginTop: nativeDefault.space.PX_32, marginBottom: nativeDefault.space.PX_16 };
-let closure_18 = createStyles(obj);
+let closure_19 = createStyles(obj);
 let size = size_mod;
 const result1 = size.fileFinishedImporting("modules/collectibles/native/HeroBlockOrbsArcadeHeader.tsx");
 
 export default function HeroBlockOrbsArcadeHeader(productsTitle) {
   productsTitle = productsTitle.productsTitle;
-  const tmp = closure_18();
+  const tmp = closure_19();
   const tmp3 = useThemeDefault();
   const obj = shared;
   const isThemeDarkResult = obj.isThemeDark(tmp3);
   let DARK = tmp3;
   const ThemeContextProvider = native.ThemeContextProvider;
-  const tmp6 = authStore;
-  const tmp7 = unpackModuleId;
+  const tmp6 = unpackModuleId;
+  const tmp7 = authStore2;
   if (!isThemeDarkResult) {
-    DARK = metroImportDefault.DARK;
+    DARK = metroImportAll.DARK;
   }
   const children = [, ];
-  const obj2 = { theme: DARK, children: React4(HeroBlockOrbsArcadeHeaderContent, { bleedsOntoPage: isThemeDarkResult }) };
-  children[0] = React4(ThemeContextProvider, obj2);
+  const obj2 = { theme: DARK, children: authStore(HeroBlockOrbsArcadeHeaderContent, { bleedsOntoPage: isThemeDarkResult }) };
+  children[0] = authStore(ThemeContextProvider, obj2);
   let tmp8Result = null;
   if (null != productsTitle) {
     tmp8Result = null;

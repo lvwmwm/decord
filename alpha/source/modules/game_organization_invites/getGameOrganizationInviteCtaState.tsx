@@ -1,10 +1,10 @@
-// Module ID: 15586
-// Function ID: 15587
+// Module ID: 15620
+// Function ID: 15621
 // Name: getGameOrganizationInviteCtaState
 // Dependencies: [1113, 2565, 2]
 // Exports: default
 
-// Module 15586 (getGameOrganizationInviteCtaState)
+// Module 15620 (getGameOrganizationInviteCtaState)
 import intl6 from "intl" /* 1113 */;
 import _modDef2565 from "module_2565" /* 2565 */;
 import size from "module_2" /* 2 */;

@@ -1,13 +1,13 @@
-// Module ID: 11930
-// Function ID: 11931
+// Module ID: 12381
+// Function ID: 12382
 // Name: ForLaterCardReminderHeader
-// Dependencies: [21, 11919, 11931, 6032, 2]
+// Dependencies: [21, 12372, 12382, 6036, 2]
 // Exports: ForLaterCardReminderHeader
 
-// Module 11930 (ForLaterCardReminderHeader)
+// Module 12381 (ForLaterCardReminderHeader)
 import Fragment from "Fragment" /* 21 */;
-import ClockIcon from "ClockIcon" /* 6032 */;
-import SavedMessageUtils from "SavedMessageUtils" /* 11919 */;
+import ClockIcon from "ClockIcon" /* 6036 */;
+import SavedMessageUtils from "SavedMessageUtils" /* 12372 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -28,7 +28,7 @@ export function ForLaterCardReminderHeader(savedMessage) {
   const dueInString = useDueInString(obj);
   let tmp8 = null;
   if (null != savedMessage.saveData.dueAt) {
-    const ForLaterCardStatusHeader = tmp(11931).ForLaterCardStatusHeader;
+    const ForLaterCardStatusHeader = tmp(12382).ForLaterCardStatusHeader;
     tmp8 = <ForLaterCardStatusHeader IconComponent={ClockIcon.ClockIcon} label={tmp6} isCritical={tmp7} actions={actions} />;
   }
   return tmp8;

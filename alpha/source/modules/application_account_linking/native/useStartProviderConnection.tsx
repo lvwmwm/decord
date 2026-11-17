@@ -1,11 +1,11 @@
-// Module ID: 7935
-// Function ID: 7936
+// Module ID: 7945
+// Function ID: 7946
 // Name: useStartProviderConnection
-// Dependencies: [5, 19, 7936, 6002, 2]
+// Dependencies: [5, 19, 7946, 6006, 2]
 // Exports: useStartProviderConnection
 
-// Module 7935 (useStartProviderConnection)
-import LinkingDefault from "Linking" /* 6002 */;
+// Module 7945 (useStartProviderConnection)
+import LinkingDefault from "Linking" /* 6006 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -20,7 +20,7 @@ export function useStartProviderConnection(provider_id) {
   let hasConnection;
   let loading;
   let startConnection;
-  let obj = startConnection(7936);
+  let obj = startConnection(7946);
   const providerConnection = obj.useProviderConnection(provider_id);
   startConnection = providerConnection.startConnection;
   ({ loading, hasConnection, canConnect, account } = providerConnection);

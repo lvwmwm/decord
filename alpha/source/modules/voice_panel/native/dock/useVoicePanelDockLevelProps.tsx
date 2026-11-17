@@ -1,17 +1,17 @@
-// Module ID: 14854
-// Function ID: 14855
+// Module ID: 13935
+// Function ID: 13936
 // Name: useVoicePanelDockLevelProps
-// Dependencies: [19, 5155, 2133, 5209, 6931, 14855, 1072, 14573, 504, 13046, 13022, 2]
+// Dependencies: [19, 5159, 2133, 5213, 6939, 13936, 1072, 13448, 504, 11687, 11663, 2]
 // Exports: useVoicePanelDockGlowLevelProps, useVoicePanelDockSpeakerLevelProps
 
-// Module 14854 (useVoicePanelDockLevelProps)
+// Module 13935 (useVoicePanelDockLevelProps)
 import Constants from "Constants" /* 1072 */;
 import MediaEngineStore2 from "MediaEngineStore" /* 2133 */;
-import VoicePanelDockSlotStore from "VoicePanelDockSlotStore" /* 14855 */;
+import VoicePanelDockSlotStore from "VoicePanelDockSlotStore" /* 13936 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
-import SpeakingStore from "SpeakingStore" /* 6931 */;
+import ChannelStore from "ChannelStore" /* 5159 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5213 */;
+import SpeakingStore from "SpeakingStore" /* 6939 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -33,13 +33,13 @@ export function useVoicePanelDockGlowLevelProps() {
   let voiceChannelId;
   let obj = react;
   const context = react.useContext(closure_9);
-  const obj2 = num2(14573);
+  const obj2 = num2(13448);
   const shouldAnimateSpeakerLevels = obj2.useShouldAnimateSpeakerLevels("VoicePanelDock");
   const items = [SelectedChannelStore, ChannelStore];
   const obj3 = num2(504);
   const stateFromStores = obj3.useStateFromStores(items, () => channel.getChannel(voiceChannelId.getVoiceChannelId()));
-  const obj4 = num2(13046);
-  const mute = obj4.createMuteHandler(floorDb(13022)(stateFromStores)).mute;
+  const obj4 = num2(11687);
+  const mute = obj4.createMuteHandler(floorDb(11663)(stateFromStores)).mute;
   const items1 = [MediaEngineStore, SpeakingStore];
   const obj5 = num2(504);
   const stateFromStoresObject = obj5.useStateFromStoresObject(items1, () => {

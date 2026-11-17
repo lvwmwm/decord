@@ -1,14 +1,14 @@
-// Module ID: 8582
-// Function ID: 8583
+// Module ID: 8593
+// Function ID: 8594
 // Name: getStorefrontNativeStoreQuery
-// Dependencies: [8578, 1072, 1380, 504, 2]
+// Dependencies: [8589, 1072, 1380, 504, 2]
 // Exports: getStorefrontNativeStoreQuery, getStorefrontPricingKey, useStorefrontPricingKey
 
-// Module 8582 (getStorefrontNativeStoreQuery)
+// Module 8593 (getStorefrontNativeStoreQuery)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import StorefrontProductStore from "StorefrontProductStore" /* 8578 */;
+import StorefrontProductStore from "StorefrontProductStore" /* 8589 */;
 import size from "module_2" /* 2 */;
 
 const PaymentGateways = Constants.PaymentGateways;

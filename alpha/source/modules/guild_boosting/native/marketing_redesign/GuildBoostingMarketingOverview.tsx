@@ -1,20 +1,20 @@
-// Module ID: 15998
-// Function ID: 15999
+// Module ID: 16035
+// Function ID: 16036
 // Name: GuildBoostingMarketingOverview
-// Dependencies: [32, 19, 17, 5177, 1388, 1072, 21, 5306, 15318, 504, 1502, 7918, 5907, 8529, 1401, 15078, 1256, 7272, 6757, 15999, 16000, 16007, 16012, 1655, 16022, 16027, 16031, 2]
+// Dependencies: [32, 19, 17, 5181, 1388, 1072, 21, 5310, 15352, 504, 1502, 7928, 5911, 8540, 1401, 14291, 1256, 7282, 6765, 16036, 16037, 16044, 16049, 1655, 16059, 16064, 16068, 2]
 // Exports: default
 
-// Module 15998 (GuildBoostingMarketingOverview)
+// Module 16035 (GuildBoostingMarketingOverview)
 import react_native from "react-native" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import GuildBoostingMarketingPersistentCta from "GuildBoostingMarketingPersistentCta" /* 15999 */;
+import GuildBoostingMarketingPersistentCta from "GuildBoostingMarketingPersistentCta" /* 16036 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5177 */;
+import GuildStore from "GuildStore" /* 5181 */;
 import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let constants, navigation;

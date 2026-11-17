@@ -1,23 +1,23 @@
 // Module ID: 2139
 // Function ID: 2140
 // Name: ClipsStore
-// Dependencies: [5, 2140, 502, 8845, 1072, 6161, 16498, 5116, 16499, 1406, 16500, 16502, 16503, 504, 572, 2]
+// Dependencies: [5, 2140, 502, 8856, 1072, 6168, 16534, 5120, 16535, 1406, 16536, 16538, 16539, 504, 572, 2]
 
 // Module 2139 (ClipsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import FlagUtils from "FlagUtils" /* 1406 */;
-import DiscordNativeDefault from "DiscordNative" /* 5116 */;
-import ClipsDefaultSettingsUtils from "ClipsDefaultSettingsUtils" /* 16498 */;
-import clipPOVOverlap from "clipPOVOverlap" /* 16500 */;
-import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 16502 */;
-import AutoclippingDefaultOverrideExperiment2 from "AutoclippingDefaultOverrideExperiment" /* 16503 */;
+import DiscordNativeDefault from "DiscordNative" /* 5120 */;
+import ClipsDefaultSettingsUtils from "ClipsDefaultSettingsUtils" /* 16534 */;
+import clipPOVOverlap from "clipPOVOverlap" /* 16536 */;
+import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 16538 */;
+import AutoclippingDefaultOverrideExperiment2 from "AutoclippingDefaultOverrideExperiment" /* 16539 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import RunningGameStore from "RunningGameStore" /* 2140 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ClipsConstants from "ClipsConstants" /* 8845 */;
+import ClipsConstants from "ClipsConstants" /* 8856 */;
 import Constants from "Constants" /* 1072 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 6161 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 6168 */;
 import size from "module_2" /* 2 */;
 
 let _null, c4, c5, closure_2;
@@ -819,7 +819,7 @@ let obj3 = {
   CLIPS_DELETE_CLIP: function handleClipsDelete(id) {
     const tmp2 = getKnownSessions();
     for (const item10011 of tmp2) {
-      let removeCandidateResult = item10011.removeCandidate(id.id);
+      let removeClipResult = item10011.removeClip(id.id);
       continue;
     }
     delete closure_20[id.id];

@@ -1,13 +1,13 @@
-// Module ID: 6009
-// Function ID: 6010
+// Module ID: 6013
+// Function ID: 6014
 // Name: BaseIconImage
-// Dependencies: [19, 21, 5892, 6010, 2]
+// Dependencies: [19, 21, 5896, 6014, 2]
 // Exports: BaseIconImage
 
-// Module 6009 (BaseIconImage)
+// Module 6013 (BaseIconImage)
 import Fragment from "Fragment" /* 21 */;
-import useToken from "useToken" /* 5892 */;
-import FastImageDefault from "FastImage" /* 6010 */;
+import useToken from "useToken" /* 5896 */;
+import FastImageDefault from "FastImage" /* 6014 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

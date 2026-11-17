@@ -1,12 +1,12 @@
-// Module ID: 9503
-// Function ID: 9504
+// Module ID: 9515
+// Function ID: 9516
 // Name: ClipView
-// Dependencies: [19, 17, 21, 9504, 9506, 1655, 2]
+// Dependencies: [19, 17, 21, 9516, 9518, 1655, 2]
 // Exports: default
 
-// Module 9503 (ClipView)
-import CutoutBackgroundContext from "CutoutBackgroundContext" /* 9504 */;
-import ClipViewNativeComponentDefault from "ClipViewNativeComponent" /* 9506 */;
+// Module 9515 (ClipView)
+import CutoutBackgroundContext from "CutoutBackgroundContext" /* 9516 */;
+import ClipViewNativeComponentDefault from "ClipViewNativeComponent" /* 9518 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

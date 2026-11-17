@@ -1,9 +1,9 @@
-// Module ID: 6390
-// Function ID: 6391
+// Module ID: 6398
+// Function ID: 6399
 // Name: CheckpointCardTypes
 // Dependencies: [2]
 
-// Module 6390 (CheckpointCardTypes)
+// Module 6398 (CheckpointCardTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/CheckpointCardTypes.tsx");

@@ -1,14 +1,14 @@
-// Module ID: 6373
-// Function ID: 6374
+// Module ID: 6381
+// Function ID: 6382
 // Name: MediaTypes
-// Dependencies: [1072, 1406, 2119, 6351, 1381, 2]
+// Dependencies: [1072, 1406, 2119, 6359, 1381, 2]
 // Exports: embedMediaToMediaItem, getMediaItemDisplayUrl, getUnfurledMediaItemType, isVisualUnfurledMediaItem, messageAttachmentToMediaItem, toContentScanMetadata, toUnfurledMediaItem
 
-// Module 6373 (MediaTypes)
+// Module 6381 (MediaTypes)
 import Constants from "Constants" /* 1072 */;
 import URLUtilsDefault from "URLUtils" /* 1381 */;
 import FlagUtils from "FlagUtils" /* 1406 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 6351 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 6359 */;
 import size_mod from "module_2" /* 2 */;
 
 function messageAttachmentToUnfurledMediaItem(flags) {

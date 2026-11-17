@@ -1,26 +1,26 @@
-// Module ID: 14178
-// Function ID: 14179
+// Module ID: 13052
+// Function ID: 13053
 // Name: ExplicitMediaLearnMoreActionSheet
-// Dependencies: [19, 17, 8637, 1072, 21, 5306, 575, 14179, 6820, 8853, 8604, 5542, 6002, 2188, 8190, 1113, 3417, 6823, 12649, 2121, 5556, 8211, 5919, 5926, 2]
+// Dependencies: [19, 17, 8648, 1072, 21, 5310, 575, 13053, 6815, 8864, 8615, 5546, 6006, 2188, 8201, 1113, 3419, 6818, 10746, 2121, 5560, 8222, 5923, 5930, 2]
 // Exports: default
 
-// Module 14178 (ExplicitMediaLearnMoreActionSheet)
+// Module 13052 (ExplicitMediaLearnMoreActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl11 from "intl" /* 1113 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
-import _modDef3417 from "module_3417" /* 3417 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import LinkingDefault from "Linking" /* 6002 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6823 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8190 */;
-import openUserSettings from "openUserSettings" /* 8604 */;
-import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 8637 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8853 */;
+import _modDef3419 from "module_3419" /* 3419 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
+import LinkingDefault from "Linking" /* 6006 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6818 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8201 */;
+import openUserSettings from "openUserSettings" /* 8615 */;
+import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 8648 */;
+import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8864 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -140,7 +140,7 @@ export default function ExplicitMediaLearnMoreActionSheet(channelId) {
       const getArticleURL = HelpdeskUtilsDefault.getArticleURL;
       HelpdeskUtilsDefault;
       const intl = intl11.intl;
-      openUrl(getArticleURL(intl.string(_modDef3417.agiNYw)));
+      openUrl(getArticleURL(intl.string(_modDef3419.agiNYw)));
     }
     const intl5 = tmp4(tmp2[15]).intl;
     const obj8 = { handleOnTeenAgeGroupHook: handleNavigateToTeenAgeGroupArticle };

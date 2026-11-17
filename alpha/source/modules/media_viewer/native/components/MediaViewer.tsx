@@ -1,18 +1,18 @@
-// Module ID: 15229
-// Function ID: 15230
+// Module ID: 11267
+// Function ID: 11268
 // Name: MediaViewer
-// Dependencies: [32, 19, 17, 21, 1380, 1655, 15230, 15231, 11253, 5588, 7847, 7918, 7937, 10195, 15236, 15237, 15213, 6322, 5538, 1708, 8630, 10041, 11827, 15238, 12717, 2]
+// Dependencies: [32, 19, 17, 21, 1380, 1655, 11268, 11269, 11276, 5592, 7857, 7928, 7947, 10640, 11277, 11278, 10788, 6330, 5542, 1708, 8641, 10054, 11279, 11281, 11284, 2]
 
-// Module 15229 (MediaViewer)
-import useVideoControls from "useVideoControls" /* 8630 */;
-import MediaViewerDimensionsContext from "MediaViewerDimensionsContext" /* 10195 */;
-import MediaViewerItem2 from "MediaViewerItem" /* 15231 */;
+// Module 11267 (MediaViewer)
+import useVideoControls from "useVideoControls" /* 8641 */;
+import MediaViewerDimensionsContext from "MediaViewerDimensionsContext" /* 10640 */;
+import MediaViewerItem2 from "MediaViewerItem" /* 11269 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import size from "module_2" /* 2 */;
+import size_mod from "module_2" /* 2 */;
 
 let _undefined, _undefined2;
 
@@ -415,7 +415,7 @@ let closure_13 = react.memo(function MediaViewer(entranceAnimationDriver) {
   class MediaViewerTsx1 {
     constructor() {
       const value = _undefined.get();
-      const tmp2 = !value && !_undefined2.get();
+      const tmp2 = !value && !uri.get();
       return tmp2;
     }
   }
@@ -473,6 +473,7 @@ const memoResult = react.memo(function MediaViewerWithProvider(arg0) {
   const merged = Object.assign(arg0);
   return metroImportDefault(MediaViewerDimensionsProvider, obj);
 });
+let size = size_mod;
 let result = size.fileFinishedImporting("modules/media_viewer/native/components/MediaViewer.tsx");
 
 export default memoResult;

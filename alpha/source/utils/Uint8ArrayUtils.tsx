@@ -1,10 +1,10 @@
-// Module ID: 5138
-// Function ID: 5139
+// Module ID: 5142
+// Function ID: 5143
 // Name: Uint8ArrayUtils
 // Dependencies: [2]
 // Exports: addBit, hasBit, isSerializedUint8Array, isUint8Array, removeBit
 
-// Module 5138 (Uint8ArrayUtils)
+// Module 5142 (Uint8ArrayUtils)
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("utils/Uint8ArrayUtils.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 10210
-// Function ID: 10211
+// Module ID: 10654
+// Function ID: 10655
 // Name: ICYMITypes
 // Dependencies: [1072, 2]
 // Exports: typeToString
 
-// Module 10210 (ICYMITypes)
+// Module 10654 (ICYMITypes)
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

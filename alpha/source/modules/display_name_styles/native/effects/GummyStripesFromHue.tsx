@@ -1,15 +1,15 @@
-// Module ID: 17971
-// Function ID: 17972
+// Module ID: 18012
+// Function ID: 18013
 // Name: GummyStripesFromHue
-// Dependencies: [32, 19, 21, 5306, 1396, 1655, 17074, 2]
+// Dependencies: [32, 19, 21, 5310, 1396, 1655, 17109, 2]
 // Exports: default
 
-// Module 17971 (GummyStripesFromHue)
+// Module 18012 (GummyStripesFromHue)
 import _modDef1655 from "module_1655" /* 1655 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

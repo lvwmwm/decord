@@ -1,13 +1,13 @@
-// Module ID: 11377
-// Function ID: 11378
+// Module ID: 12066
+// Function ID: 12067
 // Name: getStickerDiscoverableGuild
-// Dependencies: [1072, 1285, 7230, 2]
+// Dependencies: [1072, 1285, 7238, 2]
 // Exports: default
 
-// Module 11377 (getStickerDiscoverableGuild)
+// Module 12066 (getStickerDiscoverableGuild)
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
-import GuildDiscoveryUtils from "GuildDiscoveryUtils" /* 7230 */;
+import GuildDiscoveryUtils from "GuildDiscoveryUtils" /* 7238 */;
 import size from "module_2" /* 2 */;
 
 let body;

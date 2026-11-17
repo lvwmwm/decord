@@ -1,11 +1,11 @@
-// Module ID: 10417
-// Function ID: 10418
+// Module ID: 10167
+// Function ID: 10168
 // Name: useDefaultVariantIndex
-// Dependencies: [8500, 504, 8496, 2]
+// Dependencies: [8511, 504, 8507, 2]
 // Exports: useDefaultVariantIndex
 
-// Module 10417 (useDefaultVariantIndex)
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 8500 */;
+// Module 10167 (useDefaultVariantIndex)
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 8511 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -22,7 +22,7 @@ export function useDefaultVariantIndex(product) {
   let num = 0;
   if (null != product) {
     num = 0;
-    const tmpResult = tmp(8496);
+    const tmpResult = tmp(8507);
     if (tmpResult.getIsVariantProduct(product)) {
       const _Math = Math;
       const variants = product.variants;

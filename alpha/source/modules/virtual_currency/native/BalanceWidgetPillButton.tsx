@@ -1,16 +1,16 @@
-// Module ID: 10054
-// Function ID: 10055
+// Module ID: 10067
+// Function ID: 10068
 // Name: BalanceWidgetPillButton
-// Dependencies: [19, 17, 21, 5306, 5926, 9443, 1113, 9487, 2]
+// Dependencies: [19, 17, 21, 5310, 5930, 9453, 1113, 9499, 2]
 
-// Module 10054 (BalanceWidgetPillButton)
+// Module 10067 (BalanceWidgetPillButton)
 import react_native from "react-native" /* 17 */;
-import components_Button_Button from "components/Button/Button" /* 5926 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9443 */;
-import IndicatorDot from "IndicatorDot" /* 9487 */;
+import components_Button_Button from "components/Button/Button" /* 5930 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9453 */;
+import IndicatorDot from "IndicatorDot" /* 9499 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

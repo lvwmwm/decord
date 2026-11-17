@@ -1,21 +1,21 @@
-// Module ID: 20044
-// Function ID: 20045
+// Module ID: 20090
+// Function ID: 20091
 // Name: VoicePanelGamesSection
-// Dependencies: [19, 21, 9533, 10664, 10286, 1113, 10653, 7443, 20045, 10594, 2]
+// Dependencies: [19, 21, 9545, 10385, 10394, 1113, 10362, 7453, 20091, 10294, 2]
 
-// Module 20044 (VoicePanelGamesSection)
+// Module 20090 (VoicePanelGamesSection)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1113 */;
-import useGame from "useGame" /* 9533 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 10286 */;
-import FormComponents from "FormComponents" /* 10594 */;
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 10664 */;
-import useVoiceChannelGamesDefault from "useVoiceChannelGames" /* 20045 */;
+import useGame from "useGame" /* 9545 */;
+import FormComponents from "FormComponents" /* 10294 */;
+import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 10385 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 10394 */;
+import useVoiceChannelGamesDefault from "useVoiceChannelGames" /* 20091 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp3;
-const GameActivityIconDefault = tmp3(10653);
+const GameActivityIconDefault = tmp3(10362);
 function GameRow(gameId) {
   let intl2;
   let obj6;
@@ -38,7 +38,7 @@ function GameRow(gameId) {
       name = intl.string(tmp(1113).t.GIWFlF);
     }
     const tmp7 = jsx(GameActivityIconDefault, { game: data, size: 32, fallback: "placeholder" });
-    const TableRow = tmp(7443).TableRow;
+    const TableRow = tmp(7453).TableRow;
     const tmp6 = jsx;
     if (null == tmp4Result) {
       obj5 = { icon: tmp7, label: name, disabled: true };

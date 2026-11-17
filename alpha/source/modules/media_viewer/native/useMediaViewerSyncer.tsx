@@ -1,15 +1,15 @@
-// Module ID: 10193
-// Function ID: 10194
+// Module ID: 10638
+// Function ID: 10639
 // Name: useMediaViewerSyncer
-// Dependencies: [32, 19, 10194, 1380, 8629, 1655, 10195, 1630, 1708, 10196, 8633, 5929, 5930, 10197, 2]
+// Dependencies: [32, 19, 10639, 1380, 8640, 1655, 10640, 1630, 1708, 10641, 8644, 5933, 5934, 10642, 2]
 // Exports: useMediaViewerSyncer
 
-// Module 10193 (useMediaViewerSyncer)
+// Module 10638 (useMediaViewerSyncer)
 import _mod1655 from "module_1655" /* 1655 */;
-import MediaSourceUtil from "MediaSourceUtil" /* 8633 */;
+import MediaSourceUtil from "MediaSourceUtil" /* 8644 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 10194 */;
+import Constants from "Constants" /* 10639 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import size_mod from "module_2" /* 2 */;
 

@@ -1,14 +1,14 @@
-// Module ID: 18612
-// Function ID: 18613
+// Module ID: 18653
+// Function ID: 18654
 // Name: NotifyFriendsOnProfileUpdateUtils
-// Dependencies: [5251, 1072, 5131, 1256, 2]
+// Dependencies: [5255, 1072, 5135, 1256, 2]
 // Exports: onNotifyFriendsOnProfileUpdateSettingsChanged
 
-// Module 18612 (NotifyFriendsOnProfileUpdateUtils)
+// Module 18653 (NotifyFriendsOnProfileUpdateUtils)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import UserSettings from "UserSettings" /* 5131 */;
-import NotificationConstants from "NotificationConstants" /* 5251 */;
+import UserSettings from "UserSettings" /* 5135 */;
+import NotificationConstants from "NotificationConstants" /* 5255 */;
 import size from "module_2" /* 2 */;
 
 const constants = NotificationConstants.NotificationSettingsUpdateType;

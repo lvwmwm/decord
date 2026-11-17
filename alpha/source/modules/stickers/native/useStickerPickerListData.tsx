@@ -1,17 +1,17 @@
-// Module ID: 11387
-// Function ID: 11388
+// Module ID: 12076
+// Function ID: 12077
 // Name: useStickerPickerListData
-// Dependencies: [19, 11360, 11244, 1228, 11270, 11359, 12, 1113, 6783, 11259, 2]
+// Dependencies: [19, 12049, 11949, 1228, 11973, 12048, 12, 1113, 6791, 11963, 2]
 // Exports: default
 
-// Module 11387 (useStickerPickerListData)
+// Module 12076 (useStickerPickerListData)
 import _modDef12 from "module_12" /* 12 */;
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1228 */;
-import StickersTypes from "StickersTypes" /* 6783 */;
-import PremiumUpsellSectionDivider from "PremiumUpsellSectionDivider" /* 11270 */;
-import StickerPickerStore from "StickerPickerStore" /* 11360 */;
+import StickersTypes from "StickersTypes" /* 6791 */;
+import PremiumUpsellSectionDivider from "PremiumUpsellSectionDivider" /* 11973 */;
+import StickerPickerStore from "StickerPickerStore" /* 12049 */;
 import react from "react" /* 19 */;
-import StickerPickerConstants from "StickerPickerConstants" /* 11244 */;
+import StickerPickerConstants from "StickerPickerConstants" /* 11949 */;
 import size from "module_2" /* 2 */;
 
 let c5, packToScrollToIndex;
@@ -21,7 +21,7 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp2;
-const age_gate_AgeGateUtils = tmp2(11259);
+const age_gate_AgeGateUtils = tmp2(11963);
 let useStickerPickerStore = StickerPickerStore.useStickerPickerStore;
 ({ MIN_MARGIN: hasOwnProperty, ROW_HEIGHT: metroRequire, STICKER_SIZE: metroImportDefault, LABEL_HEIGHT } = StickerPickerConstants);
 const StickerPickerSectionType = { STICKERS: 0, [0]: "STICKERS", NSFW: 1, [1]: "NSFW" };
@@ -56,13 +56,13 @@ export default function useStickerPickerListData(containerWidth) {
         flag = false;
       }
       if (true === arg2) {
-        obj = { type: obj.NSFW, stickersByRow: [] };
-        items3.push(obj);
+        const obj2 = { type: obj.NSFW, stickersByRow: [] };
+        items3.push(obj2);
         items.push(1);
       } else {
         const found = nitroLocked.filter((format_type) => items1.includes(format_type.format_type));
-        const obj2 = _modDef12;
-        const chunkResult = obj2.chunk(found, rounded);
+        obj = _modDef12;
+        const chunkResult = obj.chunk(found, rounded);
         const obj3 = { type: obj.STICKERS, stickersByRow: chunkResult };
         items3.push(obj3);
         items.push(chunkResult.length);

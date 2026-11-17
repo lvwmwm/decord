@@ -1,12 +1,12 @@
-// Module ID: 8513
-// Function ID: 8514
+// Module ID: 8524
+// Function ID: 8525
 // Name: HeroBlockRecord
-// Dependencies: [5981, 8514, 8497, 2]
+// Dependencies: [5985, 8525, 8508, 2]
 
-// Module 8513 (HeroBlockRecord)
-import ShopBlockType from "ShopBlockType" /* 5981 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 8497 */;
-import ShopBlockRecordFactory from "ShopBlockRecordFactory" /* 8514 */;
+// Module 8524 (HeroBlockRecord)
+import ShopBlockType from "ShopBlockType" /* 5985 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 8508 */;
+import ShopBlockRecordFactory from "ShopBlockRecordFactory" /* 8525 */;
 import size from "module_2" /* 2 */;
 
 class HeroBlockRecord {

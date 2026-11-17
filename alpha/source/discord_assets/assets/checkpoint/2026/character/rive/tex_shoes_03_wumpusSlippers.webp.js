@@ -1,11 +1,11 @@
-// Module ID: 14439
-// Function ID: 14440
+// Module ID: 13304
+// Function ID: 13305
 // Dependencies: [2]
 
-// Module 14439
+// Module 13304
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_shoes_03_wumpusSlippers.webp.js");
 
-export default "https://cdn.discordapp.com/assets/content/8de8639167be0de097e03690139c0033392e1119de42158cbbdfc5778dba0a4d.webp";
-export const metadata = { fileBytes: 12408 };
+export default "https://cdn.discordapp.com/assets/content/63a62bd85b876037b8699ca488e2f19cd6364b1202509dc40accd8494235d512.webp";
+export const metadata = { fileBytes: 32518 };

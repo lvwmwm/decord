@@ -1,17 +1,17 @@
-// Module ID: 13481
-// Function ID: 13482
+// Module ID: 13637
+// Function ID: 13638
 // Name: BioMarkupUtils
-// Dependencies: [6333, 6334, 6048, 1456, 9216, 6047, 2070, 12, 2]
+// Dependencies: [6341, 6342, 6059, 1456, 9227, 6051, 2070, 12, 2]
 // Exports: getOrParseBioAST, parseBioReact, parseBioReactWithCachedAST
 
-// Module 13481 (BioMarkupUtils)
+// Module 13637 (BioMarkupUtils)
 import LRUCacheDefault from "LRUCache" /* 1456 */;
 import _modDef2070 from "module_2070" /* 2070 */;
-import MarkupReactRulesDefault from "MarkupReactRules" /* 6048 */;
-import MarkupRulesDefault from "MarkupRules" /* 6334 */;
-import combineMarkupRules_mod from "combineMarkupRules" /* 6333 */;
-import MarkupParser_mod from "MarkupParser" /* 9216 */;
-import MarkupUtils from "MarkupUtils" /* 6047 */;
+import MarkupReactRulesDefault from "MarkupReactRules" /* 6059 */;
+import MarkupRulesDefault from "MarkupRules" /* 6342 */;
+import combineMarkupRules_mod from "combineMarkupRules" /* 6341 */;
+import MarkupParser from "markup/MarkupParser" /* 9227 */;
+import MarkupUtils_mod from "MarkupUtils" /* 6051 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -25,11 +25,11 @@ let c2 = importDefaultResultResult;
 let tmp4 = new LRUCacheDefault({ max: 2000 });
 let closure_3 = tmp4;
 let closure_4 = { allowGameMentions: true };
-let MarkupParser = MarkupParser_mod;
 let closure_5 = MarkupParser.reactParserFor(importDefaultResultResult);
+let MarkupUtils = MarkupUtils_mod;
 let closure_6 = MarkupUtils.astParserFor(importDefaultResultResult);
-MarkupParser = MarkupParser_mod;
-const reactParserFor = MarkupParser.reactParserFor;
+MarkupUtils = MarkupUtils_mod;
+const reactParserFor = MarkupUtils.reactParserFor;
 combineMarkupRules = combineMarkupRules_mod;
 const items1 = [module_12.omit(importDefaultResultResult, ["link", "url", "autolink", "customEmoji", "emoji", "commandMention"]), ];
 let obj = {

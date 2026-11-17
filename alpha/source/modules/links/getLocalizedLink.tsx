@@ -1,10 +1,10 @@
-// Module ID: 5117
-// Function ID: 5118
+// Module ID: 5121
+// Function ID: 5122
 // Name: getLocalizedLink
 // Dependencies: [1113, 2]
 // Exports: default
 
-// Module 5117 (getLocalizedLink)
+// Module 5121 (getLocalizedLink)
 import intl from "intl" /* 1113 */;
 import size from "module_2" /* 2 */;
 

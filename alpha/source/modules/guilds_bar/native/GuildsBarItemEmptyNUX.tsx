@@ -1,24 +1,24 @@
-// Module ID: 19126
-// Function ID: 19127
+// Module ID: 19171
+// Function ID: 19172
 // Name: GuildsBarItemEmptyNUX
-// Dependencies: [19, 17, 5339, 19062, 1072, 10030, 21, 5306, 575, 7231, 5892, 504, 1655, 5929, 18744, 19075, 1113, 6010, 10325, 19074, 7722, 19086, 5919, 2]
+// Dependencies: [19, 17, 5343, 19103, 1072, 10043, 21, 5310, 575, 7239, 5896, 504, 1655, 5933, 18785, 19116, 1113, 6014, 10435, 19115, 7732, 19127, 5923, 2]
 
-// Module 19126 (GuildsBarItemEmptyNUX)
+// Module 19171 (GuildsBarItemEmptyNUX)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import _modDef1655 from "module_1655" /* 1655 */;
-import FastImageDefault from "FastImage" /* 6010 */;
-import transitionToGuild from "transitionToGuild" /* 7231 */;
-import NativeViewDefault from "NativeView" /* 7722 */;
-import MainTabsConstants from "MainTabsConstants" /* 10030 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10325 */;
-import usePressabilityDefault from "usePressability" /* 19075 */;
+import FastImageDefault from "FastImage" /* 6014 */;
+import transitionToGuild from "transitionToGuild" /* 7239 */;
+import NativeViewDefault from "NativeView" /* 7732 */;
+import MainTabsConstants from "MainTabsConstants" /* 10043 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10435 */;
+import usePressabilityDefault from "usePressability" /* 19116 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 19062 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5343 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 19103 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_12;
@@ -67,7 +67,7 @@ const memoResult = react.memo(function GuildsBarEmptyNUX() {
   let tmp16;
   let tmp17;
   let tmp18;
-  let obj = sharedValue(5892);
+  let obj = sharedValue(5896);
   const token = obj.useToken(nativeDefault.modules.mobile.GUILD_BAR_ITEM_SIZE);
   const tmp5 = closure_13(token, closure_8());
   const items = [SelectedGuildStore];
@@ -83,14 +83,14 @@ const memoResult = react.memo(function GuildsBarEmptyNUX() {
   const callback1 = react.useCallback(() => {
     const result = sharedValue.set(false);
   }, items2);
-  const obj5 = sharedValue(5892);
+  const obj5 = sharedValue(5896);
   const token1 = obj5.useToken(nativeDefault.colors.BACKGROUND_SURFACE_HIGH);
-  const obj6 = sharedValue(5892);
+  const obj6 = sharedValue(5896);
   const token2 = obj6.useToken(nativeDefault.colors.BACKGROUND_BRAND);
   const items3 = [closure_15, , , , , ];
   const useAnimatedStyle = sharedValue(1655).useAnimatedStyle;
   sharedValue(1655);
-  items3[1] = sharedValue(5929).withSpring;
+  items3[1] = sharedValue(5933).withSpring;
   items3[2] = stateFromStores;
   items3[3] = token2;
   items3[4] = token1;
@@ -113,7 +113,7 @@ const memoResult = react.memo(function GuildsBarEmptyNUX() {
   GuildsBarItemEmptyNUXTsx1.__workletHash = 11514219811718;
   GuildsBarItemEmptyNUXTsx1.__initData = tmp13;
   const animatedStyle = useAnimatedStyle(GuildsBarItemEmptyNUXTsx1);
-  const enableHome = obj4.useContext(tmp(18744).HomeDrawerStateContext).enableHome;
+  const enableHome = obj4.useContext(tmp(18785).HomeDrawerStateContext).enableHome;
   const obj7 = { onPress: handlePress };
   const tmp20 = usePressabilityDefault(obj7);
   const obj8 = { style: tmp5.container, onPressIn: callback, onPressOut: callback1, onPress: handlePress, accessible: true, accessibilityRole: "button", accessibilityLabel: intl.string(sharedValue(1113).t["3S2xmm"]), accessibilityState: { selected: stateFromStores }, hitSlop, children: items6 };
@@ -124,7 +124,7 @@ const memoResult = react.memo(function GuildsBarEmptyNUX() {
   const obj10 = { style: tmp5.icon, source: AssetRegistryDefault, resizeMode: "contain" };
   const tmp3Result = FastImageDefault;
   items6[1] = closure_11(tmp3Result, obj10);
-  const obj11 = { style: tmp5.guildIndicator, children: closure_11(sharedValue(19074).UnreadIndicator, obj12) };
+  const obj11 = { style: tmp5.guildIndicator, children: closure_11(sharedValue(19115).UnreadIndicator, obj12) };
   obj12 = { selected: true === stateFromStores };
   items6[2] = closure_11(closure_5, obj11);
   const obj13 = { style: tmp5.root, children: items7 };
@@ -138,9 +138,9 @@ const memoResult = react.memo(function GuildsBarEmptyNUX() {
     const tmp3Result4 = NativeViewDefault;
     const merged = Object.assign(tmp20);
     obj15 = { title: closure_11(Text, obj16) };
-    HomeDrawerSharedItem = tmp(19086).HomeDrawerSharedItem;
+    HomeDrawerSharedItem = tmp(19127).HomeDrawerSharedItem;
     obj16 = { variant: "body-md/medium", color: "text-default", lineClamp: 1, children: intl2.string(sharedValue(1113).t["3S2xmm"]) };
-    Text = tmp(5919).Text;
+    Text = tmp(5923).Text;
     intl2 = tmp(1113).intl;
     tmp22Result = tmp22(tmp3Result4, obj14);
   }

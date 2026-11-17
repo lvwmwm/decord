@@ -1,25 +1,25 @@
-// Module ID: 19961
-// Function ID: 19962
+// Module ID: 20007
+// Function ID: 20008
 // Name: VoicePanelFloatingCTAUtils
-// Dependencies: [32, 19, 17, 7016, 19962, 7029, 5155, 5161, 21, 5537, 11984, 19231, 8426, 563, 8030, 7972, 7968, 5542, 7989, 19963, 15564, 8108, 8457, 1113, 7549, 19185, 10981, 11951, 11949, 12912, 12924, 11952, 6327, 575, 7988, 6899, 7897, 11954, 12909, 8017, 6893, 19964, 9561, 11253, 5338, 7623, 5139, 19210, 10726, 5555, 2]
+// Dependencies: [32, 19, 17, 7024, 20008, 7037, 5159, 5165, 21, 5541, 12427, 19276, 8437, 563, 8041, 7983, 7979, 5546, 8000, 20009, 15598, 8119, 8468, 1113, 7559, 19230, 11734, 11533, 11528, 11526, 11544, 11602, 6335, 575, 7999, 6907, 7907, 12400, 11523, 8028, 6901, 20010, 9573, 11276, 5342, 7633, 5143, 19255, 14041, 5559, 2]
 // Exports: useShouldShowFloatingCTA
 
-// Module 19961 (VoicePanelFloatingCTAUtils)
+// Module 20007 (VoicePanelFloatingCTAUtils)
 import react_native from "react-native" /* 17 */;
 import intl6 from "intl" /* 1113 */;
-import dismissible_content from "dismissible_content" /* 5139 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 5161 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5338 */;
-import StageChannelActionCreators from "StageChannelActionCreators" /* 6899 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7029 */;
-import XSmallIcon from "XSmallIcon" /* 7549 */;
-import speakOnStageDefault from "speakOnStage" /* 11954 */;
-import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 19210 */;
+import dismissible_content from "dismissible_content" /* 5143 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 5165 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5342 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 6907 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7037 */;
+import XSmallIcon from "XSmallIcon" /* 7559 */;
+import speakOnStageDefault from "speakOnStage" /* 12400 */;
+import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 19255 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 7016 */;
-import EventBannerStore from "EventBannerStore" /* 19962 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 7024 */;
+import EventBannerStore from "EventBannerStore" /* 20008 */;
+import ChannelStore from "ChannelStore" /* 5159 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -29,8 +29,8 @@ let _require, dependencyMap;
 let closure_12;
 let tmp;
 let unpackModuleId;
-const getDeviceSpecificString2 = tmp(5555);
-const SoundboardIcon = tmp(10726);
+const getDeviceSpecificString2 = tmp(5559);
+const SoundboardIcon = tmp(14041);
 function useStageCTAProps(stateFromStores) {
   let Icon;
   let Icon2;
@@ -51,12 +51,12 @@ function useStageCTAProps(stateFromStores) {
   _require = stateFromStores;
   let obj = react;
   let tmp = showControls;
-  const context = react.useContext(showControls(11984));
+  const context = react.useContext(showControls(12427));
   showControls = context.showControls;
-  const tmp4 = showControls(19231)(context.channelId);
+  const tmp4 = showControls(19276)(context.channelId);
   const obj2 = require("StageChannelUnifiedCallExperiment");
   const isStageUnifiedCall = obj2.useIsStageUnifiedCall(stateFromStores, "VoicePanelFloatingCTA");
-  const tmp7 = showControls(11949)();
+  const tmp7 = showControls(11528)();
   let id;
   const useStageBlockedUsersCount = require("useStageBlockedUsersCount").useStageBlockedUsersCount;
   require("useStageBlockedUsersCount");
@@ -84,12 +84,12 @@ function useStageCTAProps(stateFromStores) {
     const obj3 = { label: intl.string(require("intl").t.Ul1RJQ), subLabel: tmp17, icon: closure_11(Icon, obj4), trailing: closure_12(Stack, obj5) };
     intl = tmp5(1113).intl;
     if (stageBlockedUsersCount > 0) {
-      tmp17 = tmp(12924)(stageBlockedUsersCount, stageIgnoredUsersCount);
+      tmp17 = tmp(11544)(stageBlockedUsersCount, stageIgnoredUsersCount);
     }
     obj4 = { IconComponent: require("HandRequestSpeakIcon").HandRequestSpeakIcon, variant: "translucent" };
-    Icon = tmp5(8108).RowButton.Icon;
+    Icon = tmp5(8119).RowButton.Icon;
     obj5 = { direction: "horizontal", spacing: tmp(575).space.PX_8, children: items1 };
-    Stack = tmp5(6327).Stack;
+    Stack = tmp5(6335).Stack;
     const obj6 = {
       size: "sm",
       variant: "secondary",
@@ -100,7 +100,7 @@ function useStageCTAProps(stateFromStores) {
           return obj.audienceAckRequestToSpeak(stateFromStores, true);
         }
     };
-    const IconButton = tmp5(7988).IconButton;
+    const IconButton = tmp5(7999).IconButton;
     intl2 = tmp5(1113).intl;
     items1 = [closure_11(IconButton, obj6), ];
     const obj7 = {
@@ -112,13 +112,13 @@ function useStageCTAProps(stateFromStores) {
           return speakOnStageDefault(stateFromStores);
         }
     };
-    const IconButton2 = tmp5(7988).IconButton;
+    const IconButton2 = tmp5(7999).IconButton;
     intl3 = tmp5(1113).intl;
     items1[1] = closure_11(IconButton2, obj7);
     tmp16 = obj3;
   }
   _require = stateFromStores;
-  const tmp20 = tmp(19231)(obj.useContext(tmp(11984)).channelId);
+  const tmp20 = tmp(19276)(obj.useContext(tmp(12427)).channelId);
   const tmp5Result3 = require("StageChannelUnifiedCallExperiment");
   const isStageUnifiedCall1 = tmp5Result3.useIsStageUnifiedCall(stateFromStores, "VoicePanelFloatingCTA");
   let id2;
@@ -145,7 +145,7 @@ function useStageCTAProps(stateFromStores) {
             intl4 = tmp5(1113).intl;
             intl5 = tmp5(1113).intl;
             obj9 = { IconComponent: require("StageIcon").StageIcon, variant: "translucent" };
-            Icon2 = tmp5(8108).RowButton.Icon;
+            Icon2 = tmp5(8119).RowButton.Icon;
             tmp27 = obj8;
           }
         }
@@ -182,10 +182,10 @@ function useFloatingCTAProps(stateFromStores) {
   let tmp7Result10;
   let obj = react;
   let tmp = setShowFloatingCTA;
-  let tmp3 = setShowFloatingCTA(11253)(react.useContext(setShowFloatingCTA(11984)).showFloatingCTA);
+  let tmp3 = setShowFloatingCTA(11276)(react.useContext(setShowFloatingCTA(12427)).showFloatingCTA);
   _require = tmp3;
   setShowFloatingCTA = undefined;
-  setShowFloatingCTA = react.useContext(setShowFloatingCTA(11984)).setShowFloatingCTA;
+  setShowFloatingCTA = react.useContext(setShowFloatingCTA(12427)).setShowFloatingCTA;
   const items = [setShowFloatingCTA, tmp3];
   let memo = react.useMemo(() => {
     let tmp = null;
@@ -197,9 +197,9 @@ function useFloatingCTAProps(stateFromStores) {
   let imminentUpcomingGuildEvents;
   stateFromStores = undefined;
   let nextRecurrenceIdInEvent;
-  const tmp5 = setShowFloatingCTA(5537)();
+  const tmp5 = setShowFloatingCTA(5541)();
   let id1;
-  const tmp6 = setShowFloatingCTA(19231)(react.useContext(setShowFloatingCTA(11984)).channelId);
+  const tmp6 = setShowFloatingCTA(19276)(react.useContext(setShowFloatingCTA(12427)).channelId);
   const useImminentUpcomingGuildEvents = require("useGuildScheduledEvents").useImminentUpcomingGuildEvents;
   require("useGuildScheduledEvents");
   if (stateFromStores != null) {
@@ -226,7 +226,7 @@ function useFloatingCTAProps(stateFromStores) {
   const tmp7Result8 = require("ScheduleUtils");
   nextRecurrenceIdInEvent = tmp7Result8.getNextRecurrenceIdInEvent(stateFromStores);
   let guild_id;
-  const tmpResult = tmp(7968);
+  const tmpResult = tmp(7979);
   if (stateFromStores != null) {
     guild_id = stateFromStores.guild_id;
   }
@@ -258,7 +258,7 @@ function useFloatingCTAProps(stateFromStores) {
           const obj3 = { onPress: callback, icon: closure_11(Icon, obj4), label: name, subLabel: "" + text + " \u2022 " + intl.formatToPlainString(require("intl").t.NywdIj, obj5), trailing: closure_11(Pressable, obj6) };
           text = getGuildScheduledEventHeaderProps(obj2).text;
           obj4 = { IconComponent: require("CalendarIcon").CalendarIcon, variant: "translucent" };
-          Icon = tmp7(8108).RowButton.Icon;
+          Icon = tmp7(8119).RowButton.Icon;
           intl = tmp7(1113).intl;
           const _HermesInternal = HermesInternal;
           obj5 = { count: tmpResultResult };
@@ -270,10 +270,10 @@ function useFloatingCTAProps(stateFromStores) {
     }
   }
   _require = stateFromStores;
-  const context = obj.useContext(tmp(11984));
+  const context = obj.useContext(tmp(12427));
   ({ channelId, isDockEnabled } = context);
   const items4 = [ChannelRTCStore];
-  const tmp29 = tmp(19231)(channelId);
+  const tmp29 = tmp(19276)(channelId);
   const tmp7Result11 = require("useStateFromStores");
   const stateFromStores1 = tmp7Result11.useStateFromStores(items4, () => {
     let id;
@@ -296,7 +296,7 @@ function useFloatingCTAProps(stateFromStores) {
             intl3 = tmp7(1113).intl;
             intl4 = tmp7(1113).intl;
             obj8 = { IconComponent: require("GroupPlusIcon").GroupPlusIcon, variant: "translucent" };
-            Icon2 = tmp7(8108).RowButton.Icon;
+            Icon2 = tmp7(8119).RowButton.Icon;
             tmp33 = obj7;
           }
         }

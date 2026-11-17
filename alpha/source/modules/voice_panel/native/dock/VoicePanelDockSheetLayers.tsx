@@ -1,22 +1,22 @@
-// Module ID: 19984
-// Function ID: 19985
+// Module ID: 20030
+// Function ID: 20031
 // Name: VoicePanelDockSheetLayers
-// Dependencies: [19, 17, 14855, 21, 5306, 11984, 1655, 19206, 575, 11253, 19985, 5498, 2]
+// Dependencies: [19, 17, 13936, 21, 5310, 12427, 1655, 19251, 575, 11276, 20031, 5502, 2]
 // Exports: default
 
-// Module 19984 (VoicePanelDockSheetLayers)
+// Module 20030 (VoicePanelDockSheetLayers)
 import native from "native" /* 575 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import Portal from "Portal" /* 5498 */;
-import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 11253 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11984 */;
-import useDockBoxShadowDefault from "useDockBoxShadow" /* 19206 */;
-import voicePanelLayoutTransitionDefault from "voicePanelLayoutTransition" /* 19985 */;
+import Portal from "Portal" /* 5502 */;
+import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 11276 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 12427 */;
+import useDockBoxShadowDefault from "useDockBoxShadow" /* 19251 */;
+import voicePanelLayoutTransitionDefault from "voicePanelLayoutTransition" /* 20031 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import VoicePanelDockSlotStore from "VoicePanelDockSlotStore" /* 14855 */;
+import VoicePanelDockSlotStore from "VoicePanelDockSlotStore" /* 13936 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size_mod from "module_2" /* 2 */;
 
 const _modDef1655 = _mod1655;
@@ -39,7 +39,7 @@ obj2 = { alignItems: "flex-start" };
 createStyles = createStyles.createStyles;
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 let closure_10 = createStyles(obj);
-let closure_11 = { code: "(function VoicePanelDockSheetLayersTsx1(){let[wrapperDimensions]=this.__closure;const{drawerWidth:drawerWidth,drawerHeight:drawerHeight}=wrapperDimensions.get();return{width:drawerWidth,height:drawerHeight};})" };
+let closure_11 = { code: "(function VoicePanelDockSheetLayersTsx1(){let[wrapperDimensions,dockSheetLeft]=this.__closure;const{drawerWidth:drawerWidth,drawerHeight:drawerHeight}=wrapperDimensions.get();return{width:drawerWidth,height:drawerHeight,transform:[{translateX:-dockSheetLeft.get()}]};})" };
 let closure_12 = { code: "(function VoicePanelDockSheetLayersTsx2(){let[isDockInLayout]=this.__closure;return{opacity:isDockInLayout.get()?0:1,pointerEvents:isDockInLayout.get()?'none':'box-none'};})" };
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/voice_panel/native/dock/VoicePanelDockSheetLayers.tsx");
@@ -51,6 +51,7 @@ export default function VoicePanelDockSheetLayers(wrapperTransformStyles) {
   let children;
   let dockPTTMeasureHostRef;
   let dockPTTPortalHostName;
+  let dockSheetLeft;
   let handleDockSheetLayout;
   let items4;
   let items5;
@@ -61,10 +62,11 @@ export default function VoicePanelDockSheetLayers(wrapperTransformStyles) {
   let obj7;
   let obj9;
   let str;
-  let tmp13;
   let tmp14;
+  let tmp15;
   let tmp7;
   let tmp8;
+  let tmp9;
   let wrapperDimensions;
   let wrapperSurfaceLayerStyles;
   let wrapperSurfaceStyles;
@@ -72,31 +74,36 @@ export default function VoicePanelDockSheetLayers(wrapperTransformStyles) {
   ({ wrapperSurfaceStyles, wrapperSurfaceLayerStyles, children } = wrapperTransformStyles);
   const context = react.useContext(VoicePanelStateContextDefault);
   const isDockInLayout = context.isDockInLayout;
-  ({ handleDockSheetLayout, dockPTTPortalHostName, dockPTTMeasureHostRef, wrapperDimensions } = context);
+  ({ handleDockSheetLayout, dockPTTPortalHostName, dockPTTMeasureHostRef, dockSheetLeft, wrapperDimensions } = context);
   const tmp4 = closure_10();
   metroRequire(context);
   let obj = _mod1655;
-  const items = [closure_11, wrapperDimensions];
+  let items = [closure_11, wrapperDimensions, dockSheetLeft];
   let c0;
-  [tmp7, tmp8] = items;
+  let c1;
+  [tmp7, tmp8, tmp9] = items;
   class VoicePanelDockSheetLayersTsx1 {
     constructor() {
       value = closure_0.get();
-      size = { width: value.drawerWidth, height: value.drawerHeight };
+      size = { width: value.drawerWidth, height: value.drawerHeight, transform: null };
+      obj1 = { translateX: -closure_1.get() };
+      items = [];
+      items[0] = obj1;
+      size.transform = items;
       return size;
     }
   }
-  const items1 = [tmp8];
+  const items1 = [tmp8, tmp9];
   VoicePanelDockSheetLayersTsx1.__closure = items1;
-  VoicePanelDockSheetLayersTsx1.__workletHash = 7716350336190;
+  VoicePanelDockSheetLayersTsx1.__workletHash = 3684693226456;
   VoicePanelDockSheetLayersTsx1.__initData = tmp7;
   const animatedStyle = obj.useAnimatedStyle(VoicePanelDockSheetLayersTsx1);
   const tmpResult = useDockBoxShadowDefault;
   const tmpResultResult = tmpResult(native.Shadow.SHADOW_TOP_HIGH);
-  const tmp12 = useStateFromSharedValueDefault(isDockInLayout);
+  const tmp13 = useStateFromSharedValueDefault(isDockInLayout);
   const items2 = [closure_12, isDockInLayout];
   c0 = undefined;
-  [tmp13, tmp14] = items2;
+  [tmp14, tmp15] = items2;
   const tmp6Result = _mod1655;
   class VoicePanelDockSheetLayersTsx2 {
     constructor() {
@@ -114,17 +121,17 @@ export default function VoicePanelDockSheetLayers(wrapperTransformStyles) {
       return obj1;
     }
   }
-  const items3 = [tmp14];
+  const items3 = [tmp15];
   VoicePanelDockSheetLayersTsx2.__closure = items3;
   VoicePanelDockSheetLayersTsx2.__workletHash = 4900754012109;
-  VoicePanelDockSheetLayersTsx2.__initData = tmp13;
+  VoicePanelDockSheetLayersTsx2.__initData = tmp14;
   const animatedStyle1 = tmp6Result.useAnimatedStyle(VoicePanelDockSheetLayersTsx2);
-  let obj2 = { style: items4, accessibilityElementsHidden: tmp12, importantForAccessibility: str, children: metroImportAll(View2, obj4) };
+  let obj2 = { style: items4, accessibilityElementsHidden: tmp13, importantForAccessibility: str, children: metroImportAll(View2, obj4) };
   items4 = [tmp4.dockSheetLayers, animatedStyle1];
   str = "auto";
   const View = tmp(1655).View;
-  const tmp17 = React4;
-  if (tmp12) {
+  const tmp18 = React4;
+  if (tmp13) {
     str = "no-hide-descendants";
   }
   const obj3 = { children: items8 };
@@ -136,7 +143,7 @@ export default function VoicePanelDockSheetLayers(wrapperTransformStyles) {
   const obj6 = { style: items7, layout: voicePanelLayoutTransitionDefault, children: metroImportDefault(View4, obj7) };
   items7 = [tmp4.dockSurfaceClip, wrapperSurfaceStyles];
   const View3 = tmp(1655).View;
-  obj7 = { style: animatedStyle, onLayout: handleDockSheetLayout, children: metroImportDefault(hasOwnProperty.Provider, { value: tmp12, children }) };
+  obj7 = { style: animatedStyle, onLayout: handleDockSheetLayout, children: metroImportDefault(hasOwnProperty.Provider, { value: tmp13, children }) };
   View4 = tmp(1655).View;
   items6[1] = metroImportDefault(View3, obj6);
   items8 = [metroImportDefault(View, obj2), ];
@@ -144,5 +151,5 @@ export default function VoicePanelDockSheetLayers(wrapperTransformStyles) {
   obj9 = { ref: dockPTTMeasureHostRef, style: wrapperTransformStyles, pointerEvents: "box-none", collapsable: false, children: metroImportDefault(Portal.PortalHost, { name: dockPTTPortalHostName }) };
   View5 = tmp(1655).View;
   items8[1] = metroImportDefault(React3, obj8);
-  return metroImportAll(tmp17, obj3);
+  return metroImportAll(tmp18, obj3);
 };

@@ -1,10 +1,10 @@
-// Module ID: 7243
-// Function ID: 7244
+// Module ID: 7252
+// Function ID: 7253
 // Name: GuildSpaceExperiment
 // Dependencies: [1072, 1452, 2]
 // Exports: getGuildSpaceExperimentEnabled, useGuildSpaceExperimentEnabled
 
-// Module 7243 (GuildSpaceExperiment)
+// Module 7252 (GuildSpaceExperiment)
 import Constants from "Constants" /* 1072 */;
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;

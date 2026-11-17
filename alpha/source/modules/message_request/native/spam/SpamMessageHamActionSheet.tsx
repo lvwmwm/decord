@@ -1,27 +1,27 @@
-// Module ID: 14877
-// Function ID: 14878
+// Module ID: 13958
+// Function ID: 13959
 // Name: SpamMessageHamActionSheet
-// Dependencies: [32, 19, 17, 1388, 21, 5306, 575, 504, 14872, 6005, 1113, 5542, 5556, 7913, 7952, 8106, 5926, 2]
+// Dependencies: [32, 19, 17, 1388, 21, 5310, 575, 504, 13953, 6009, 1113, 5546, 5560, 7923, 7962, 8117, 5930, 2]
 // Exports: default
 
-// Module 14877 (SpamMessageHamActionSheet)
+// Module 13958 (SpamMessageHamActionSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5556 */;
-import components_Button_Button from "components/Button/Button" /* 5926 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7913 */;
-import ActionSheetCloseButton from "ActionSheetCloseButton" /* 7952 */;
-import _mod8106 from "module_8106" /* 8106 */;
-import useMessageRequestActions from "useMessageRequestActions" /* 14872 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5560 */;
+import components_Button_Button from "components/Button/Button" /* 5930 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 6009 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7923 */;
+import ActionSheetCloseButton from "ActionSheetCloseButton" /* 7962 */;
+import _mod8117 from "module_8117" /* 8117 */;
+import useMessageRequestActions from "useMessageRequestActions" /* 13953 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -114,7 +114,7 @@ export default function SpamMessageRequestHamActionSheet(arg0) {
       return closure_4(arg0);
     }
   };
-  const FormSwitchRow = _mod8106.FormSwitchRow;
+  const FormSwitchRow = _mod8117.FormSwitchRow;
   intl2 = intl4.intl;
   items2 = [closure_7(FormSwitchRow, obj8), ];
   const obj9 = { style: tmp.buttonContainer, children: closure_7(Button, obj10) };

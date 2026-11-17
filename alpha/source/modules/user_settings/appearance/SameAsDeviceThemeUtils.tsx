@@ -1,16 +1,16 @@
-// Module ID: 17633
-// Function ID: 17634
+// Module ID: 17671
+// Function ID: 17672
 // Name: SameAsDeviceThemeUtils
-// Dependencies: [5330, 1192, 1195, 6232, 1239, 5313, 5334, 5366, 2]
+// Dependencies: [5334, 1192, 1195, 6240, 1239, 5317, 5338, 5370, 2]
 // Exports: disableSameAsDeviceTheme, enableSameAsDeviceTheme
 
-// Module 17633 (SameAsDeviceThemeUtils)
+// Module 17671 (SameAsDeviceThemeUtils)
 import ClientThemesUtils from "ClientThemesUtils" /* 1239 */;
-import shared from "shared" /* 5313 */;
-import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5334 */;
-import ThemeActionCreators from "ThemeActionCreators" /* 5366 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 6232 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5330 */;
+import shared from "shared" /* 5317 */;
+import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5338 */;
+import ThemeActionCreators from "ThemeActionCreators" /* 5370 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 6240 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5334 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
 import ThemeConstants from "ThemeConstants" /* 1195 */;
 import size from "module_2" /* 2 */;

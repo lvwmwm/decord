@@ -1,14 +1,14 @@
-// Module ID: 14651
-// Function ID: 14652
+// Module ID: 13725
+// Function ID: 13726
 // Name: AppLauncherButtonIcon
-// Dependencies: [19, 17, 21, 5493, 1628, 10941, 8101, 2]
+// Dependencies: [19, 17, 21, 5497, 1628, 10883, 8112, 2]
 // Exports: AppLauncherButtonIcon
 
-// Module 14651 (AppLauncherButtonIcon)
+// Module 13725 (AppLauncherButtonIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import KeyboardTypes from "KeyboardTypes" /* 1628 */;
-import useKeyboardTypeDefault from "useKeyboardType" /* 5493 */;
+import useKeyboardTypeDefault from "useKeyboardType" /* 5497 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ export function AppLauncherButtonIcon(style) {
   const tmp3 = useKeyboardTypeDefault();
   if (tmp3 === KeyboardTypes.KeyboardTypes.APP_LAUNCHER) {
     const obj2 = { style: items };
-    const PlusLargeIcon = tmp6(10941).PlusLargeIcon;
+    const PlusLargeIcon = tmp6(10883).PlusLargeIcon;
     const merged1 = Object.assign(merged);
     items = [style, ];
     const obj3 = { transform: items1 };
@@ -34,7 +34,7 @@ export function AppLauncherButtonIcon(style) {
     tmp4Result = tmp4(PlusLargeIcon, obj2);
   } else {
     const obj4 = { style };
-    const AppsIcon = tmp6(8101).AppsIcon;
+    const AppsIcon = tmp6(8112).AppsIcon;
     const merged2 = Object.assign(merged);
     tmp4Result = tmp4(AppsIcon, obj4);
   }

@@ -1,18 +1,18 @@
-// Module ID: 8189
-// Function ID: 8190
+// Module ID: 8200
+// Function ID: 8201
 // Name: StageChannelAgeVerificationNoticeForEvent
-// Dependencies: [19, 17, 1072, 21, 5306, 575, 6820, 1113, 5919, 5998, 2188, 8190, 6823, 6027, 8160, 8159, 6898, 2]
+// Dependencies: [19, 17, 1072, 21, 5310, 575, 6815, 1113, 5923, 6002, 2188, 8201, 6818, 6031, 8171, 8170, 6906, 2]
 // Exports: default
 
-// Module 8189 (StageChannelAgeVerificationNoticeForEvent)
+// Module 8200 (StageChannelAgeVerificationNoticeForEvent)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 6898 */;
+import Text_Text from "Text/Text" /* 5923 */;
+import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 6906 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -33,7 +33,7 @@ function StageChannelAgeVerificationNoticeWrapper(onConfirmPress) {
   const noBackground = onConfirmPress.noBackground;
   let tmp = closure_8();
   importDefault = tmp;
-  let obj = onConfirmPress(6820);
+  let obj = onConfirmPress(6815);
   const isVerifiedTeen = obj.useIsVerifiedTeen();
   const intl = onConfirmPress(1113).intl;
   const format = intl.format;
@@ -87,18 +87,18 @@ function StageChannelAgeVerificationNoticeWrapper(onConfirmPress) {
     const tmp8 = closure_6;
     const tmp9 = View;
     if (isVerifiedTeen) {
-      WarningIcon = tmp2(6027).CircleInformationIcon;
+      WarningIcon = tmp2(6031).CircleInformationIcon;
     } else {
-      WarningIcon = tmp2(8160).WarningIcon;
+      WarningIcon = tmp2(8171).WarningIcon;
     }
     const obj5 = { size: "refresh_sm", color: nativeDefault.colors.TEXT_DEFAULT, style: tmp.icon };
     items = [closure_5(WarningIcon, obj5), ];
     obj6 = { variant: "body-sm/medium", color: "text-subtle", style: tmp.contentText, children: formatResult };
-    items[1] = closure_5(onConfirmPress(5919).Text, obj6);
+    items[1] = closure_5(onConfirmPress(5923).Text, obj6);
     tmp6Result = tmp8(tmp9, obj4);
   } else {
     let str = "warning";
-    const InlineNotice = tmp2(8159).InlineNotice;
+    const InlineNotice = tmp2(8170).InlineNotice;
     const tmp6 = closure_5;
     if (isVerifiedTeen) {
       str = "info";

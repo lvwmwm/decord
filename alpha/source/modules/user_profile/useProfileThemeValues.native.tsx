@@ -1,14 +1,14 @@
-// Module ID: 7939
-// Function ID: 7940
+// Module ID: 7949
+// Function ID: 7950
 // Name: useProfileThemeValues
-// Dependencies: [19, 5307, 563, 575, 574, 2]
+// Dependencies: [19, 5311, 563, 575, 574, 2]
 // Exports: useProfileThemeValues
 
-// Module 7939 (useProfileThemeValues)
+// Module 7949 (useProfileThemeValues)
 import react from "react" /* 19 */;
 import shims from "shims" /* 574 */;
 import nativeDefault from "native" /* 575 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import AccessibilityStore from "AccessibilityStore" /* 5311 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

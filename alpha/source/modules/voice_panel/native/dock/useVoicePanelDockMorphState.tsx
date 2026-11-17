@@ -1,16 +1,16 @@
-// Module ID: 19966
-// Function ID: 19967
+// Module ID: 20012
+// Function ID: 20013
 // Name: useVoicePanelDockMorphState
-// Dependencies: [19, 11985, 12009, 1655, 5929, 12017, 19967, 5538, 1496, 2]
+// Dependencies: [19, 12428, 12446, 1655, 5933, 12453, 20013, 5542, 2]
 // Exports: default
 
-// Module 19966 (useVoicePanelDockMorphState)
-import spring_spring from "spring/spring" /* 5929 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11985 */;
-import VoicePanelSheetMorph from "VoicePanelSheetMorph" /* 12017 */;
-import useIsDockCoveredByActivityDefault from "useIsDockCoveredByActivity" /* 19967 */;
+// Module 20012 (useVoicePanelDockMorphState)
+import spring_spring from "spring/spring" /* 5933 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 12428 */;
+import VoicePanelSheetMorph from "VoicePanelSheetMorph" /* 12453 */;
+import useIsDockCoveredByActivityDefault from "useIsDockCoveredByActivity" /* 20013 */;
 import react from "react" /* 19 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 12009 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 12446 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault, set;
@@ -41,19 +41,22 @@ let closure_25 = { code: "(function useVoicePanelDockMorphStateTsx19(done){let[d
 let closure_26 = { code: "(function useVoicePanelDockMorphStateTsx20(){let[wrapperOffset,mode,VoicePanelModes,isDockExpanding,dockMinimizeProgress,SHEET_MORPH_PHYSICS]=this.__closure;const{gestureActive:gestureActive}=wrapperOffset.get();return mode.get()===VoicePanelModes.DISMISSED||gestureActive&&mode.get()===VoicePanelModes.PANEL||!gestureActive&&(!isDockExpanding.get()||dockMinimizeProgress.get()<=SHEET_MORPH_PHYSICS.restDisplacementThreshold);})" };
 let closure_27 = { code: "(function useVoicePanelDockMorphStateTsx21(released){let[dockContentSwap,withTiming,DOCK_CONTENT_SWAP_TIMING]=this.__closure;if(released&&dockContentSwap.get()!==0){dockContentSwap.set(withTiming(0,DOCK_CONTENT_SWAP_TIMING));}})" };
 let closure_28 = { code: "(function useVoicePanelDockMorphStateTsx22(){let[isDockConnected,dockTouched,wrapperOffset,isDockSlotEmpty,dockShapeTarget,SHEET_MORPH_PHYSICS,dockMinimizeProgress,dockPressProgress,dockContentSwap,dockJoinMorphOrigin]=this.__closure;if(!isDockConnected.get()||dockTouched.get()||wrapperOffset.get().gestureActive)return false;if(isDockSlotEmpty.get())return false;if(dockShapeTarget.get()!==1)return false;const restThreshold=SHEET_MORPH_PHYSICS.restDisplacementThreshold;return dockMinimizeProgress.get()>=1-restThreshold&&dockPressProgress.get()<=restThreshold&&dockContentSwap.get()===0&&dockJoinMorphOrigin.get()==null;})" };
-let closure_29 = { code: "(function useVoicePanelDockMorphStateTsx23(){let[isDockEnabled,wrapperDimensions,dockRestWidth,dockShapeTarget,dockContentSwap,dockJoinMorphOrigin]=this.__closure;if(!isDockEnabled)return null;const fullWidth=wrapperDimensions.get().drawerWidth;const restWidth=dockRestWidth.get();const isWide=restWidth<=0||restWidth>=fullWidth||dockShapeTarget.get()===0||dockContentSwap.get()>0||dockJoinMorphOrigin.get()!=null;return{width:isWide?fullWidth:restWidth,isWide:isWide,isMeasured:restWidth>0};})" };
-let closure_30 = { code: "(function useVoicePanelDockMorphStateTsx24(current,previous){let[dockSheetWidth,withSpring,SHEET_MORPH_PHYSICS]=this.__closure;if(current==null)return;if(previous!=null&&current.width===previous.width&&current.isWide===previous.isWide)return;const animates=previous!=null&&previous.isMeasured&&current.isWide!==previous.isWide;dockSheetWidth.set(animates?withSpring(current.width,SHEET_MORPH_PHYSICS):current.width);})" };
+let closure_29 = { code: "(function useVoicePanelDockMorphStateTsx23(){let[safeArea]=this.__closure;return safeArea.get().left;})" };
+let closure_30 = { code: "(function useVoicePanelDockMorphStateTsx24(){let[dockSlotWidth,dockRestLeft,wrapperDimensions]=this.__closure;const slotWidth=dockSlotWidth.get();return slotWidth>0?Math.min(dockRestLeft.get()+slotWidth,wrapperDimensions.get().drawerWidth):0;})" };
+let closure_31 = { code: "(function useVoicePanelDockMorphStateTsx25(){let[isDockEnabled,wrapperDimensions,dockRestWidth,dockJoinMorphOrigin,dockMinimizeProgress,dockShapeTarget,dockContentSwap]=this.__closure;if(!isDockEnabled)return null;const fullWidth=wrapperDimensions.get().drawerWidth;const restWidth=dockRestWidth.get();const isMeasured=restWidth>0;const isBesideChat=isMeasured&&restWidth<fullWidth;if(dockJoinMorphOrigin.get()!=null){const progress=dockMinimizeProgress.get();const width=isBesideChat?fullWidth+(restWidth-fullWidth)*progress:fullWidth;return{width:width,isWide:!isBesideChat,isMeasured:isMeasured,follows:true};}const isWide=!isBesideChat||dockShapeTarget.get()===0||dockContentSwap.get()>0;return{width:isWide?fullWidth:restWidth,isWide:isWide,isMeasured:isMeasured,follows:false};})" };
+let closure_32 = { code: "(function useVoicePanelDockMorphStateTsx26(current,previous){let[dockSheetWidth,withSpring,SHEET_MORPH_PHYSICS]=this.__closure;if(current==null)return;if(previous!=null&&current.width===previous.width&&current.isWide===previous.isWide)return;const animates=!current.follows&&previous!=null&&previous.isMeasured&&current.isWide!==previous.isWide;dockSheetWidth.set(animates?withSpring(current.width,SHEET_MORPH_PHYSICS):current.width);})" };
+let closure_33 = { code: "(function useVoicePanelDockMorphStateTsx27(){let[wrapperDimensions,dockRestLeft,dockRestWidth,clamp,dockSheetWidth]=this.__closure;const fullWidth=wrapperDimensions.get().drawerWidth;const restLeft=dockRestLeft.get();const restWidth=dockRestWidth.get();const narrowing=fullWidth-restWidth;if(restLeft<=0||restWidth<=0||narrowing<=0)return 0;return restLeft*clamp((fullWidth-dockSheetWidth.get())/narrowing,0,1);})" };
 let result = size.fileFinishedImporting("modules/voice_panel/native/dock/useVoicePanelDockMorphState.tsx");
 
 export default function useVoicePanelDockMorphState(arg0) {
   let connected;
-  let dockEntryProgress;
   let isDockEnabled;
   let mode;
   let mountsMinimized;
   let ref;
   let ref2;
   let safeArea;
+  let sharedValue4;
   let tmp10;
   let tmp103;
   let tmp104;
@@ -90,19 +93,32 @@ export default function useVoicePanelDockMorphState(arg0) {
   let tmp139;
   let tmp140;
   let tmp141;
+  let tmp144;
+  let tmp145;
   let tmp147;
   let tmp148;
   let tmp149;
   let tmp150;
-  let tmp151;
-  let tmp152;
-  let tmp153;
   let tmp154;
   let tmp155;
   let tmp156;
   let tmp157;
+  let tmp158;
+  let tmp159;
   let tmp16;
+  let tmp160;
+  let tmp161;
+  let tmp162;
+  let tmp163;
+  let tmp164;
+  let tmp165;
+  let tmp168;
+  let tmp169;
   let tmp17;
+  let tmp170;
+  let tmp171;
+  let tmp172;
+  let tmp173;
   let tmp19;
   let tmp20;
   let tmp21;
@@ -169,11 +185,11 @@ export default function useVoicePanelDockMorphState(arg0) {
   let tmp99;
   let wrapperDimensions;
   let wrapperOffset;
-  ({ isDockEnabled, mode, connected, wrapperDimensions } = arg0);
-  let tmp = dockEntryProgress;
+  ({ isDockEnabled, mode, connected, safeArea, wrapperDimensions } = arg0);
+  let tmp = sharedValue4;
   let tmp2 = dependencyMap;
-  ({ mountsMinimized, safeArea, wrapperOffset } = arg0);
-  let obj = dockEntryProgress(1655);
+  ({ mountsMinimized, wrapperOffset } = arg0);
+  let obj = sharedValue4(1655);
   let sharedValue = obj.useSharedValue({ gestureActive: false, x: 0, y: 0 });
   if (isDockEnabled) {
     sharedValue = wrapperOffset;
@@ -192,9 +208,9 @@ export default function useVoicePanelDockMorphState(arg0) {
   useVoicePanelDockMorphStateTsx1.__workletHash = 16574063931371;
   useVoicePanelDockMorphStateTsx1.__initData = tmp4;
   const tmpResult = tmp(1655);
-  const dockHeight = tmpResult.useDerivedValue(useVoicePanelDockMorphStateTsx1);
-  const tmpResult30 = tmp(1655);
-  const committedMode = tmpResult30.useSharedValue(null);
+  const derivedValue = tmpResult.useDerivedValue(useVoicePanelDockMorphStateTsx1);
+  const tmpResult32 = tmp(1655);
+  const sharedValue1 = tmpResult32.useSharedValue(null);
   const items2 = [closure_8, mode];
   [tmp10, tmp11] = items2;
   function useVoicePanelDockMorphStateTsx2() {
@@ -204,7 +220,7 @@ export default function useVoicePanelDockMorphState(arg0) {
   useVoicePanelDockMorphStateTsx2.__closure = items3;
   useVoicePanelDockMorphStateTsx2.__workletHash = 1130154786589;
   useVoicePanelDockMorphStateTsx2.__initData = tmp10;
-  const items4 = [closure_9, committedMode];
+  const items4 = [closure_9, sharedValue1];
   [tmp12, tmp13] = items4;
   function useVoicePanelDockMorphStateTsx3(arg0, arg1) {
     const tmp = arg0 !== arg1 && null != _undefined.get();
@@ -216,10 +232,10 @@ export default function useVoicePanelDockMorphState(arg0) {
   useVoicePanelDockMorphStateTsx3.__closure = items5;
   useVoicePanelDockMorphStateTsx3.__workletHash = 11294143921957;
   useVoicePanelDockMorphStateTsx3.__initData = tmp12;
-  const tmpResult31 = tmp(1655);
-  const animatedReaction = tmpResult31.useAnimatedReaction(useVoicePanelDockMorphStateTsx2, useVoicePanelDockMorphStateTsx3);
-  const tmpResult32 = tmp(1655);
-  const sharedValue2 = tmpResult32.useSharedValue(false);
+  const tmpResult33 = tmp(1655);
+  const animatedReaction = tmpResult33.useAnimatedReaction(useVoicePanelDockMorphStateTsx2, useVoicePanelDockMorphStateTsx3);
+  const tmpResult34 = tmp(1655);
+  const sharedValue2 = tmpResult34.useSharedValue(false);
   const items6 = [closure_10, mode];
   [tmp16, tmp17] = items6;
   function useVoicePanelDockMorphStateTsx4() {
@@ -245,10 +261,10 @@ export default function useVoicePanelDockMorphState(arg0) {
   useVoicePanelDockMorphStateTsx5.__closure = items9;
   useVoicePanelDockMorphStateTsx5.__workletHash = 16449264979544;
   useVoicePanelDockMorphStateTsx5.__initData = tmp19;
-  const tmpResult33 = tmp(1655);
-  const animatedReaction1 = tmpResult33.useAnimatedReaction(useVoicePanelDockMorphStateTsx4, useVoicePanelDockMorphStateTsx5);
-  const tmpResult34 = tmp(1655);
-  const sharedValue3 = tmpResult34.useSharedValue(false);
+  const tmpResult35 = tmp(1655);
+  const animatedReaction1 = tmpResult35.useAnimatedReaction(useVoicePanelDockMorphStateTsx4, useVoicePanelDockMorphStateTsx5);
+  const tmpResult36 = tmp(1655);
+  const sharedValue3 = tmpResult36.useSharedValue(false);
   const items10 = [closure_12, connected, mode];
   [tmp24, tmp25, tmp26] = items10;
   function useVoicePanelDockMorphStateTsx6() {
@@ -277,8 +293,8 @@ export default function useVoicePanelDockMorphState(arg0) {
   useVoicePanelDockMorphStateTsx7.__closure = items13;
   useVoicePanelDockMorphStateTsx7.__workletHash = 10331916200307;
   useVoicePanelDockMorphStateTsx7.__initData = tmp27;
-  const tmpResult35 = tmp(1655);
-  const animatedReaction2 = tmpResult35.useAnimatedReaction(useVoicePanelDockMorphStateTsx6, useVoicePanelDockMorphStateTsx7);
+  const tmpResult37 = tmp(1655);
+  const animatedReaction2 = tmpResult37.useAnimatedReaction(useVoicePanelDockMorphStateTsx6, useVoicePanelDockMorphStateTsx7);
   const items14 = [closure_14, isDockEnabled, mode, VoicePanelModes, sharedValue3, connected];
   [tmp31, tmp32, tmp33, tmp34, tmp35, tmp36] = items14;
   function useVoicePanelDockMorphStateTsx8() {
@@ -299,9 +315,9 @@ export default function useVoicePanelDockMorphState(arg0) {
   useVoicePanelDockMorphStateTsx8.__closure = items15;
   useVoicePanelDockMorphStateTsx8.__workletHash = 484957089417;
   useVoicePanelDockMorphStateTsx8.__initData = tmp31;
-  const tmpResult36 = tmp(1655);
-  const isDockConnected = tmpResult36.useDerivedValue(useVoicePanelDockMorphStateTsx8);
-  const items16 = [closure_15, mode, VoicePanelModes, sharedValue2, committedMode];
+  const tmpResult38 = tmp(1655);
+  const derivedValue1 = tmpResult38.useDerivedValue(useVoicePanelDockMorphStateTsx8);
+  const items16 = [closure_15, mode, VoicePanelModes, sharedValue2, sharedValue1];
   [tmp38, tmp39, tmp40, tmp41, tmp42] = items16;
   function useVoicePanelDockMorphStateTsx9() {
     let num;
@@ -328,8 +344,8 @@ export default function useVoicePanelDockMorphState(arg0) {
   useVoicePanelDockMorphStateTsx9.__closure = items17;
   useVoicePanelDockMorphStateTsx9.__workletHash = 11998655504610;
   useVoicePanelDockMorphStateTsx9.__initData = tmp38;
-  const tmpResult37 = tmp(1655);
-  const derivedValue2 = tmpResult37.useDerivedValue(useVoicePanelDockMorphStateTsx9);
+  const tmpResult39 = tmp(1655);
+  const derivedValue2 = tmpResult39.useDerivedValue(useVoicePanelDockMorphStateTsx9);
   const items18 = [closure_16, derivedValue2];
   [tmp44, tmp45] = items18;
   function useVoicePanelDockMorphStateTsx10() {
@@ -339,17 +355,17 @@ export default function useVoicePanelDockMorphState(arg0) {
   useVoicePanelDockMorphStateTsx10.__closure = items19;
   useVoicePanelDockMorphStateTsx10.__workletHash = 9313360300259;
   useVoicePanelDockMorphStateTsx10.__initData = tmp44;
-  const tmpResult38 = tmp(1655);
-  const isDockExpanding = tmpResult38.useDerivedValue(useVoicePanelDockMorphStateTsx10);
-  const tmpResult39 = tmp(1655);
-  dockEntryProgress = tmpResult39.useSharedValue(1);
+  const tmpResult40 = tmp(1655);
+  const derivedValue3 = tmpResult40.useDerivedValue(useVoicePanelDockMorphStateTsx10);
+  const tmpResult41 = tmp(1655);
+  sharedValue4 = tmpResult41.useSharedValue(1);
   importDefault = react.useRef(false);
   dependencyMap = react.useRef(false);
-  const items20 = [dockEntryProgress];
-  const items21 = [dockEntryProgress];
-  const beginDockEntry = react.useCallback(() => {
-    const result = dockEntryProgress.set(0);
-    const tmp = dockEntryProgress;
+  const items20 = [sharedValue4];
+  const items21 = [sharedValue4];
+  const callback = react.useCallback(() => {
+    const result = sharedValue4.set(0);
+    const tmp = sharedValue4;
     if (ref.current) {
       set = tmp.set;
       const obj = spring_spring;
@@ -358,18 +374,18 @@ export default function useVoicePanelDockMorphState(arg0) {
       ref2.current = true;
     }
   }, items20);
-  const handleDockSheetLayout = react.useCallback(() => {
+  const callback1 = react.useCallback(() => {
     ref.current = true;
     if (ref2.current) {
       tmp.current = false;
-      set = dockEntryProgress.set;
+      set = sharedValue4.set;
       const obj = spring_spring;
       const result = set(obj.withSpring(1, VoicePanelSheetMorph.DOCK_SPACE_SPRING_CONFIG));
     }
   }, items21);
-  const tmpResult40 = tmp(1655);
-  const dockPressed = tmpResult40.useSharedValue(false);
-  const items22 = [closure_17, dockPressed, sharedValue, mode, VoicePanelModes];
+  const tmpResult42 = tmp(1655);
+  const sharedValue5 = tmpResult42.useSharedValue(false);
+  const items22 = [closure_17, sharedValue5, sharedValue, mode, VoicePanelModes];
   [tmp51, tmp52, tmp53, tmp54, tmp55] = items22;
   function useVoicePanelDockMorphStateTsx11() {
     let value = _undefined.get();
@@ -383,12 +399,12 @@ export default function useVoicePanelDockMorphState(arg0) {
   useVoicePanelDockMorphStateTsx11.__closure = items23;
   useVoicePanelDockMorphStateTsx11.__workletHash = 2842369107004;
   useVoicePanelDockMorphStateTsx11.__initData = tmp51;
-  const tmpResult41 = tmp(1655);
-  const derivedValue4 = tmpResult41.useDerivedValue(useVoicePanelDockMorphStateTsx11);
+  const tmpResult43 = tmp(1655);
+  const derivedValue4 = tmpResult43.useDerivedValue(useVoicePanelDockMorphStateTsx11);
   const items24 = [closure_18, , , ];
   const useDerivedValue = tmp(1655).useDerivedValue;
   tmp(1655);
-  items24[1] = tmp(5929).withSpring;
+  items24[1] = tmp(5933).withSpring;
   items24[2] = derivedValue4;
   items24[3] = closure_5;
   [tmp58, tmp59, tmp60, tmp61] = items24;
@@ -404,15 +420,15 @@ export default function useVoicePanelDockMorphState(arg0) {
   useVoicePanelDockMorphStateTsx12.__closure = items25;
   useVoicePanelDockMorphStateTsx12.__workletHash = 4055713938309;
   useVoicePanelDockMorphStateTsx12.__initData = tmp58;
-  const dockPressProgress = useDerivedValue(useVoicePanelDockMorphStateTsx12);
+  const derivedValue5 = useDerivedValue(useVoicePanelDockMorphStateTsx12);
   const items26 = [closure_19, , , , , ];
   const useDerivedValue2 = tmp(1655).useDerivedValue;
   tmp(1655);
-  items26[1] = tmp(5929).withSpring;
+  items26[1] = tmp(5933).withSpring;
   items26[2] = mode;
   items26[3] = VoicePanelModes;
-  items26[4] = isDockConnected;
-  items26[5] = tmp(12017).DOCK_SPACE_SPRING_CONFIG;
+  items26[4] = derivedValue1;
+  items26[5] = tmp(12453).DOCK_SPACE_SPRING_CONFIG;
   [tmp64, tmp65, tmp66, tmp67, tmp68, tmp69] = items26;
   function useVoicePanelDockMorphStateTsx13() {
     let num = 0;
@@ -429,15 +445,15 @@ export default function useVoicePanelDockMorphState(arg0) {
   useVoicePanelDockMorphStateTsx13.__closure = items27;
   useVoicePanelDockMorphStateTsx13.__workletHash = 11884228837973;
   useVoicePanelDockMorphStateTsx13.__initData = tmp64;
-  const sheetExitProgress = useDerivedValue2(useVoicePanelDockMorphStateTsx13);
+  const derivedValue21 = useDerivedValue2(useVoicePanelDockMorphStateTsx13);
   const items28 = [closure_20, , , , ];
   const tmp71 = useIsDockCoveredByActivityDefault();
   const useDerivedValue3 = tmp(1655).useDerivedValue;
   tmp(1655);
-  items28[1] = tmp(5929).withSpring;
+  items28[1] = tmp(5933).withSpring;
   items28[2] = tmp71;
   items28[3] = derivedValue2;
-  items28[4] = tmp(12017).DOCK_SPACE_SPRING_CONFIG;
+  items28[4] = tmp(12453).DOCK_SPACE_SPRING_CONFIG;
   [tmp73, tmp74, tmp75, tmp76, tmp77] = items28;
   function useVoicePanelDockMorphStateTsx14() {
     let num = 0;
@@ -454,17 +470,17 @@ export default function useVoicePanelDockMorphState(arg0) {
   useVoicePanelDockMorphStateTsx14.__closure = items29;
   useVoicePanelDockMorphStateTsx14.__workletHash = 15444941422787;
   useVoicePanelDockMorphStateTsx14.__initData = tmp73;
-  const dockActivityHideProgress = useDerivedValue3(useVoicePanelDockMorphStateTsx14);
-  const tmpResult45 = tmp(1655);
-  const sharedValue6 = tmpResult45.useSharedValue(mountsMinimized);
-  const items30 = [closure_21, isDockConnected, sharedValue, mode, VoicePanelModes, wrapperDimensions, dockHeight, , , , , ];
+  const derivedValue31 = useDerivedValue3(useVoicePanelDockMorphStateTsx14);
+  const tmpResult47 = tmp(1655);
+  const sharedValue6 = tmpResult47.useSharedValue(mountsMinimized);
+  const items30 = [closure_21, derivedValue1, sharedValue, mode, VoicePanelModes, wrapperDimensions, derivedValue, , , , , ];
   const useDerivedValue4 = tmp(1655).useDerivedValue;
   tmp(1655);
   items30[7] = tmp(1655).clamp;
   items30[8] = derivedValue2;
   items30[9] = sharedValue6;
-  items30[10] = tmp(5929).withSpring;
-  items30[11] = tmp(12017).SHEET_MORPH_PHYSICS;
+  items30[10] = tmp(5933).withSpring;
+  items30[11] = tmp(12453).SHEET_MORPH_PHYSICS;
   let c10;
   [tmp81, tmp82, tmp83, tmp84, tmp85, tmp86, tmp87, tmp88, tmp89, tmp90, tmp91, tmp92] = items30;
   function useVoicePanelDockMorphStateTsx15() {
@@ -494,8 +510,8 @@ export default function useVoicePanelDockMorphState(arg0) {
   useVoicePanelDockMorphStateTsx15.__closure = items31;
   useVoicePanelDockMorphStateTsx15.__workletHash = 16670830062611;
   useVoicePanelDockMorphStateTsx15.__initData = tmp81;
-  const dockMinimizeProgress = useDerivedValue4(useVoicePanelDockMorphStateTsx15);
-  const items32 = [closure_22, sharedValue6, dockMinimizeProgress, derivedValue2];
+  const derivedValue41 = useDerivedValue4(useVoicePanelDockMorphStateTsx15);
+  const items32 = [closure_22, sharedValue6, derivedValue41, derivedValue2];
   [tmp94, tmp95, tmp96, tmp97] = items32;
   function useVoicePanelDockMorphStateTsx16() {
     let value = _undefined.get();
@@ -521,14 +537,14 @@ export default function useVoicePanelDockMorphState(arg0) {
   useVoicePanelDockMorphStateTsx17.__closure = items35;
   useVoicePanelDockMorphStateTsx17.__workletHash = 14577082908322;
   useVoicePanelDockMorphStateTsx17.__initData = tmp98;
-  const tmpResult47 = tmp(1655);
-  const animatedReaction3 = tmpResult47.useAnimatedReaction(useVoicePanelDockMorphStateTsx16, useVoicePanelDockMorphStateTsx17);
-  const tmpResult48 = tmp(1655);
-  const dockJoinMorphOrigin = tmpResult48.useSharedValue(null);
-  const items36 = [closure_24, dockJoinMorphOrigin, connected, dockMinimizeProgress, , , , ];
+  const tmpResult49 = tmp(1655);
+  const animatedReaction3 = tmpResult49.useAnimatedReaction(useVoicePanelDockMorphStateTsx16, useVoicePanelDockMorphStateTsx17);
+  const tmpResult50 = tmp(1655);
+  const sharedValue7 = tmpResult50.useSharedValue(null);
+  const items36 = [closure_24, sharedValue7, connected, derivedValue41, , , , ];
   const useAnimatedReaction = tmp(1655).useAnimatedReaction;
   tmp(1655);
-  items36[4] = tmp(12017).SHEET_MORPH_PHYSICS;
+  items36[4] = tmp(12453).SHEET_MORPH_PHYSICS;
   items36[5] = sharedValue;
   items36[6] = mode;
   items36[7] = VoicePanelModes;
@@ -545,7 +561,7 @@ export default function useVoicePanelDockMorphState(arg0) {
   useVoicePanelDockMorphStateTsx18.__closure = items37;
   useVoicePanelDockMorphStateTsx18.__workletHash = 7049638413356;
   useVoicePanelDockMorphStateTsx18.__initData = tmp103;
-  const items38 = [closure_25, dockJoinMorphOrigin];
+  const items38 = [closure_25, sharedValue7];
   [tmp111, tmp112] = items38;
   function useVoicePanelDockMorphStateTsx19(arg0) {
     const tmp = arg0;
@@ -558,12 +574,12 @@ export default function useVoicePanelDockMorphState(arg0) {
   useVoicePanelDockMorphStateTsx19.__workletHash = 11308110243690;
   useVoicePanelDockMorphStateTsx19.__initData = tmp111;
   const animatedReaction4 = useAnimatedReaction(useVoicePanelDockMorphStateTsx18, useVoicePanelDockMorphStateTsx19);
-  const tmpResult50 = tmp(1655);
-  const dockContentSwap = tmpResult50.useSharedValue(0);
-  const items40 = [closure_26, sharedValue, mode, VoicePanelModes, isDockExpanding, dockMinimizeProgress, ];
+  const tmpResult52 = tmp(1655);
+  const sharedValue8 = tmpResult52.useSharedValue(0);
+  const items40 = [closure_26, sharedValue, mode, VoicePanelModes, derivedValue3, derivedValue41, ];
   const useAnimatedReaction2 = tmp(1655).useAnimatedReaction;
   tmp(1655);
-  items40[6] = tmp(12017).SHEET_MORPH_PHYSICS;
+  items40[6] = tmp(12453).SHEET_MORPH_PHYSICS;
   [tmp116, tmp117, tmp118, tmp119, tmp120, tmp121, tmp122] = items40;
   function useVoicePanelDockMorphStateTsx20() {
     const gestureActive = _undefined.get().gestureActive;
@@ -590,7 +606,7 @@ export default function useVoicePanelDockMorphState(arg0) {
   useVoicePanelDockMorphStateTsx20.__closure = items41;
   useVoicePanelDockMorphStateTsx20.__workletHash = 9267373332542;
   useVoicePanelDockMorphStateTsx20.__initData = tmp116;
-  const items42 = [closure_27, dockContentSwap, tmp(5538).withTiming, tmp(12017).DOCK_CONTENT_SWAP_TIMING];
+  const items42 = [closure_27, sharedValue8, tmp(5542).withTiming, tmp(12453).DOCK_CONTENT_SWAP_TIMING];
   [tmp123, tmp124, tmp125, tmp126] = items42;
   function useVoicePanelDockMorphStateTsx21(arg0) {
     const tmp = arg0 && 0 !== _undefined.get();
@@ -603,19 +619,18 @@ export default function useVoicePanelDockMorphState(arg0) {
   useVoicePanelDockMorphStateTsx21.__workletHash = 9767573494832;
   useVoicePanelDockMorphStateTsx21.__initData = tmp123;
   const animatedReaction21 = useAnimatedReaction2(useVoicePanelDockMorphStateTsx20, useVoicePanelDockMorphStateTsx21);
-  const tmpResult52 = tmp(1655);
-  const dockTouched = tmpResult52.useSharedValue(false);
-  const tmpResult53 = tmp(1655);
-  const isDockSlotEmpty = tmpResult53.useSharedValue(false);
-  const items44 = [closure_28, isDockConnected, dockTouched, sharedValue, isDockSlotEmpty, derivedValue2, , , , , ];
+  const tmpResult54 = tmp(1655);
+  const sharedValue9 = tmpResult54.useSharedValue(false);
+  const tmpResult55 = tmp(1655);
+  const sharedValue10 = tmpResult55.useSharedValue(false);
+  const items44 = [closure_28, derivedValue1, sharedValue9, sharedValue, sharedValue10, derivedValue2, , , , , ];
   const useDerivedValue5 = tmp(1655).useDerivedValue;
   tmp(1655);
-  items44[6] = tmp(12017).SHEET_MORPH_PHYSICS;
-  items44[7] = dockMinimizeProgress;
-  items44[8] = dockPressProgress;
-  items44[9] = dockContentSwap;
-  items44[10] = dockJoinMorphOrigin;
-  let c6;
+  items44[6] = tmp(12453).SHEET_MORPH_PHYSICS;
+  items44[7] = derivedValue41;
+  items44[8] = derivedValue5;
+  items44[9] = sharedValue8;
+  items44[10] = sharedValue7;
   let c7;
   let c8;
   let c9;
@@ -642,51 +657,88 @@ export default function useVoicePanelDockMorphState(arg0) {
   useVoicePanelDockMorphStateTsx22.__closure = items45;
   useVoicePanelDockMorphStateTsx22.__workletHash = 14048220308711;
   useVoicePanelDockMorphStateTsx22.__initData = tmp131;
-  const isDockInLayout = useDerivedValue5(useVoicePanelDockMorphStateTsx22);
-  const tmpResult55 = tmp(1655);
-  const dockRestWidth = tmpResult55.useSharedValue(0);
-  const useSharedValue = tmp(1655).useSharedValue;
-  tmp(1655);
-  const tmpResult57 = tmp(1496);
-  const dockSheetWidth = useSharedValue(tmpResult57.getWindowDimensions().width);
-  const items46 = [closure_29, isDockEnabled, wrapperDimensions, dockRestWidth, derivedValue2, dockContentSwap, dockJoinMorphOrigin];
-  let c3;
-  let c4;
-  let c5;
-  [tmp147, tmp148, tmp149, tmp150, tmp151, tmp152, tmp153] = items46;
+  const derivedValue51 = useDerivedValue5(useVoicePanelDockMorphStateTsx22);
+  const tmpResult57 = tmp(1655);
+  const sharedValue11 = tmpResult57.useSharedValue(0);
+  const items46 = [closure_29, safeArea];
+  [tmp144, tmp145] = items46;
   function useVoicePanelDockMorphStateTsx23() {
+    return _undefined.get().left;
+  }
+  const items47 = [tmp145];
+  useVoicePanelDockMorphStateTsx23.__closure = items47;
+  useVoicePanelDockMorphStateTsx23.__workletHash = 6282712608507;
+  useVoicePanelDockMorphStateTsx23.__initData = tmp144;
+  const tmpResult58 = tmp(1655);
+  const derivedValue6 = tmpResult58.useDerivedValue(useVoicePanelDockMorphStateTsx23);
+  const items48 = [closure_30, sharedValue11, derivedValue6, wrapperDimensions];
+  [tmp147, tmp148, tmp149, tmp150] = items48;
+  function useVoicePanelDockMorphStateTsx24() {
+    const value = _undefined.get();
+    let num = 0;
+    if (value > 0) {
+      const _Math = Math;
+      const sum = _undefined2.get() + value;
+      num = min(sum, _undefined3.get().drawerWidth);
+    }
+    return num;
+  }
+  const items49 = [tmp148, tmp149, tmp150];
+  useVoicePanelDockMorphStateTsx24.__closure = items49;
+  useVoicePanelDockMorphStateTsx24.__workletHash = 11175662872542;
+  useVoicePanelDockMorphStateTsx24.__initData = tmp147;
+  const tmpResult59 = tmp(1655);
+  const derivedValue7 = tmpResult59.useDerivedValue(useVoicePanelDockMorphStateTsx24);
+  const tmpResult60 = tmp(1655);
+  const sharedValue12 = tmpResult60.useSharedValue(wrapperDimensions.get().drawerWidth);
+  const items50 = [closure_31, isDockEnabled, wrapperDimensions, derivedValue7, sharedValue7, derivedValue41, derivedValue2, sharedValue8];
+  let c5;
+  let c6;
+  [tmp154, tmp155, tmp156, tmp157, tmp158, tmp159, tmp160, tmp161] = items50;
+  function useVoicePanelDockMorphStateTsx25() {
     const tmp = c0;
     if (tmp) {
       const drawerWidth = _undefined.get().drawerWidth;
       const value = _undefined2.get();
-      const tmp6 = value <= 0 || value >= drawerWidth || 0 === _undefined3.get() || _undefined4.get() > 0 || null != _undefined5.get();
-      let tmp11 = value;
-      if (tmp6) {
-        tmp11 = drawerWidth;
+      if (null != _undefined3.get()) {
+        let sum = drawerWidth;
+        if (value > 0 && value < drawerWidth) {
+          sum = drawerWidth + (value - drawerWidth) * tmp15;
+        }
+        return { width: sum, isWide: !(value > 0 && value < drawerWidth), isMeasured: value > 0, follows: true };
+      } else {
+        let tmp10 = !tmp7;
+        if (value > 0 && value < drawerWidth) {
+          tmp10 = 0 === _undefined4.get();
+        }
+        if (!tmp10) {
+          tmp10 = _undefined5.get() > 0;
+        }
+        let tmp13 = value;
+        if (tmp10) {
+          tmp13 = drawerWidth;
+        }
+        return { width: tmp13, isWide: tmp10, isMeasured: value > 0, follows: false };
       }
-      return { width: tmp11, isWide: tmp6, isMeasured: value > 0 };
     } else {
       return null;
     }
   }
-  const items47 = [tmp148, tmp149, tmp150, tmp151, tmp152, tmp153];
-  useVoicePanelDockMorphStateTsx23.__closure = items47;
-  useVoicePanelDockMorphStateTsx23.__workletHash = 10495728454393;
-  useVoicePanelDockMorphStateTsx23.__initData = tmp147;
-  const items48 = [closure_30, dockSheetWidth, , ];
+  const items51 = [tmp155, tmp156, tmp157, tmp158, tmp159, tmp160, tmp161];
+  useVoicePanelDockMorphStateTsx25.__closure = items51;
+  useVoicePanelDockMorphStateTsx25.__workletHash = 4754367317170;
+  useVoicePanelDockMorphStateTsx25.__initData = tmp154;
+  const items52 = [closure_32, sharedValue12, , ];
   const useAnimatedReaction3 = tmp(1655).useAnimatedReaction;
   tmp(1655);
-  items48[2] = tmp(5929).withSpring;
-  items48[3] = tmp(12017).SHEET_MORPH_PHYSICS;
-  let c0;
-  let c1;
-  let c2;
-  [tmp154, tmp155, tmp156, tmp157] = items48;
-  function useVoicePanelDockMorphStateTsx24(width, width2) {
+  items52[2] = tmp(5933).withSpring;
+  items52[3] = tmp(12453).SHEET_MORPH_PHYSICS;
+  [tmp162, tmp163, tmp164, tmp165] = items52;
+  function useVoicePanelDockMorphStateTsx26(width, width2) {
     if (null != width) {
       set = _undefined.set;
-      const tmp2 = null != width2 && width2.isMeasured && width.isWide !== width2.isWide;
-      if (tmp2) {
+      const tmp = !width.follows && null != width2 && width2.isMeasured && width.isWide !== width2.isWide;
+      if (tmp) {
         width = _undefined2(width.width, c2);
       } else {
         width = width.width;
@@ -694,10 +746,43 @@ export default function useVoicePanelDockMorphState(arg0) {
       const result = set(width);
     }
   }
-  const items49 = [tmp155, tmp156, tmp157];
-  useVoicePanelDockMorphStateTsx24.__closure = items49;
-  useVoicePanelDockMorphStateTsx24.__workletHash = 5393014188634;
-  useVoicePanelDockMorphStateTsx24.__initData = tmp154;
-  const animatedReaction31 = useAnimatedReaction3(useVoicePanelDockMorphStateTsx23, useVoicePanelDockMorphStateTsx24);
-  return { beginDockEntry, committedMode, dockContentSwap, dockEntryProgress, dockHeight, dockJoinMorphOrigin, dockMinimizeProgress, dockPressProgress, dockPressed, dockRestWidth, dockSheetWidth, dockTouched, isDockInLayout, isDockSlotEmpty, handleDockSheetLayout, dockActivityHideProgress, isDockConnected, isDockExpanding, sheetExitProgress };
+  const items53 = [tmp163, tmp164, tmp165];
+  useVoicePanelDockMorphStateTsx26.__closure = items53;
+  useVoicePanelDockMorphStateTsx26.__workletHash = 5086911464732;
+  useVoicePanelDockMorphStateTsx26.__initData = tmp162;
+  const animatedReaction31 = useAnimatedReaction3(useVoicePanelDockMorphStateTsx25, useVoicePanelDockMorphStateTsx26);
+  const items54 = [closure_33, wrapperDimensions, derivedValue6, derivedValue7, , ];
+  const useDerivedValue6 = tmp(1655).useDerivedValue;
+  tmp(1655);
+  items54[4] = tmp(1655).clamp;
+  items54[5] = sharedValue12;
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  let c4;
+  [tmp168, tmp169, tmp170, tmp171, tmp172, tmp173] = items54;
+  function useVoicePanelDockMorphStateTsx27() {
+    const drawerWidth = _undefined.get().drawerWidth;
+    const value = _undefined2.get();
+    const value2 = _undefined3.get();
+    const diff = drawerWidth - value2;
+    let num = 0;
+    if (value > 0) {
+      num = 0;
+      if (value2 > 0) {
+        num = 0;
+        if (diff > 0) {
+          num = value * _undefined4((drawerWidth - _undefined5.get()) / diff, 0, 1);
+        }
+      }
+    }
+    return num;
+  }
+  const items55 = [tmp169, tmp170, tmp171, tmp172, tmp173];
+  useVoicePanelDockMorphStateTsx27.__closure = items55;
+  useVoicePanelDockMorphStateTsx27.__workletHash = 1534026483273;
+  useVoicePanelDockMorphStateTsx27.__initData = tmp168;
+  const obj2 = { beginDockEntry: callback, committedMode: sharedValue1, dockContentSwap: sharedValue8, dockEntryProgress: sharedValue4, dockHeight: derivedValue, dockJoinMorphOrigin: sharedValue7, dockMinimizeProgress: derivedValue41, dockPressProgress: derivedValue5, dockPressed: sharedValue5, dockRestLeft: derivedValue6, dockRestWidth: derivedValue7, dockSlotWidth: sharedValue11, dockSheetLeft: useDerivedValue6(useVoicePanelDockMorphStateTsx27), dockSheetWidth: sharedValue12, dockTouched: sharedValue9, isDockInLayout: derivedValue51, isDockSlotEmpty: sharedValue10, handleDockSheetLayout: callback1, dockActivityHideProgress: derivedValue31, isDockConnected: derivedValue1, isDockExpanding: derivedValue3, sheetExitProgress: derivedValue21 };
+  return obj2;
 };

@@ -1,10 +1,10 @@
-// Module ID: 8147
-// Function ID: 8148
+// Module ID: 8158
+// Function ID: 8159
 // Name: sanitizeThreadName
 // Dependencies: [2]
 // Exports: default
 
-// Module 8147 (sanitizeThreadName)
+// Module 8158 (sanitizeThreadName)
 import size from "module_2" /* 2 */;
 
 const re0 = /\r\n|[\r\n]/g;

@@ -1,25 +1,25 @@
-// Module ID: 11814
-// Function ID: 11815
+// Module ID: 15227
+// Function ID: 15228
 // Name: CollectiblesShopGiftBadgePostPurchaseModal
-// Dependencies: [19, 17, 21, 5306, 575, 1630, 6838, 8484, 7937, 8208, 1113, 7549, 5919, 2797, 11815, 2]
+// Dependencies: [19, 17, 21, 5310, 575, 1630, 6833, 8495, 7947, 8219, 1113, 7559, 5923, 2799, 15228, 2]
 // Exports: default
 
-// Module 11814 (CollectiblesShopGiftBadgePostPurchaseModal)
+// Module 15227 (CollectiblesShopGiftBadgePostPurchaseModal)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import _modDef2797 from "module_2797" /* 2797 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
-import XSmallIcon from "XSmallIcon" /* 7549 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
-import ModalScreen2 from "ModalScreen" /* 8208 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 8484 */;
-import GiftBadgePostPurchaseDefault from "GiftBadgePostPurchase" /* 11815 */;
+import _modDef2799 from "module_2799" /* 2799 */;
+import Text_Text from "Text/Text" /* 5923 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6833 */;
+import XSmallIcon from "XSmallIcon" /* 7559 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7947 */;
+import ModalScreen2 from "ModalScreen" /* 8219 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 8495 */;
+import GiftBadgePostPurchaseDefault from "GiftBadgePostPurchase" /* 15228 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -67,7 +67,7 @@ export default function CollectiblesShopGiftBadgePostPurchaseModal(giftBadgeProg
   intl = intl3.intl;
   obj4 = { size: "md", style: tmp.closeIcon };
   items = [metroRequire(React3, obj3), ];
-  const obj5 = { accessibilityRole: "header", "aria-level": "1", lineClamp: 1, variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: intl2.string(_modDef2797.roVAey) };
+  const obj5 = { accessibilityRole: "header", "aria-level": "1", lineClamp: 1, variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: intl2.string(_modDef2799.roVAey) };
   const Text = Text_Text.Text;
   intl2 = intl3.intl;
   items[1] = metroRequire(Text, obj5);

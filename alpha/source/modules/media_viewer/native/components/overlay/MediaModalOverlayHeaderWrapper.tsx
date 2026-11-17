@@ -1,16 +1,16 @@
-// Module ID: 10237
-// Function ID: 10238
+// Module ID: 10345
+// Function ID: 10346
 // Name: MediaModalOverlayHeaderWrapper
-// Dependencies: [19, 17, 21, 5306, 5882, 1630, 2]
+// Dependencies: [19, 17, 21, 5310, 5886, 1630, 2]
 // Exports: MediaModalOverlayHeaderWrapper
 
-// Module 10237 (MediaModalOverlayHeaderWrapper)
+// Module 10345 (MediaModalOverlayHeaderWrapper)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import NavigatorConstants from "NavigatorConstants" /* 5882 */;
+import NavigatorConstants from "NavigatorConstants" /* 5886 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;

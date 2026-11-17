@@ -1,18 +1,18 @@
-// Module ID: 14858
-// Function ID: 14859
+// Module ID: 13939
+// Function ID: 13940
 // Name: EmojiSuggestionBarSmall
-// Dependencies: [19, 9546, 21, 575, 5306, 14842, 1655, 11274, 11298, 5367, 2]
+// Dependencies: [19, 9558, 21, 575, 5310, 13922, 1655, 11977, 11996, 5371, 2]
 // Exports: EmojiSuggestionBarSmall
 
-// Module 14858 (EmojiSuggestionBarSmall)
+// Module 13939 (EmojiSuggestionBarSmall)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef1655 from "module_1655" /* 1655 */;
-import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9546 */;
-import EmojiPickerListRow from "EmojiPickerListRow" /* 11274 */;
-import EmojiSuggestionBarUtils from "EmojiSuggestionBarUtils" /* 14842 */;
+import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9558 */;
+import EmojiPickerListRow from "EmojiPickerListRow" /* 11977 */;
+import EmojiSuggestionBarUtils from "EmojiSuggestionBarUtils" /* 13922 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let locked;
@@ -31,7 +31,7 @@ function EmojiSuggestionBarSmallAnimated(displayEmojis) {
   ({ onOccupiedHeightChange, cleanUp } = displayEmojis);
   const tmp2 = dependencyMap;
   const tmp = closure_7(displayEmojis.anchorTop);
-  let obj = displayEmojis(14842);
+  let obj = displayEmojis(13922);
   const suggestionBarHeight = obj.useSuggestionBarHeight(transitionState, cleanUp, closure_6, onOccupiedHeightChange);
   let tmp4 = displayEmojis(1655);
   let items = [closure_8, , , ];
@@ -66,7 +66,7 @@ function EmojiSuggestionBarSmallAnimated(displayEmojis) {
     if (locked) {
       let openEmojiActionSheet = react;
     } else {
-      openEmojiActionSheet = tmp2(11298).openEmojiActionSheet;
+      openEmojiActionSheet = tmp2(11996).openEmojiActionSheet;
     }
     const tmp2Result = EmojiSuggestionBarUtils;
     return <EmojiEntranceAnimation key={tmp2Result.getEmojiEntranceKey(displayEmojis, arg1)} index={arg1} reducedMotion={importDefault}>{null}</EmojiEntranceAnimation>;

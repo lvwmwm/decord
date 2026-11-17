@@ -1,18 +1,18 @@
-// Module ID: 13207
-// Function ID: 13208
+// Module ID: 14442
+// Function ID: 14443
 // Name: openConjureRemoveAppAlert
-// Dependencies: [32, 5, 19, 21, 5306, 13208, 1113, 4131, 6005, 6264, 13209, 6327, 5919, 13206, 7329, 6260, 2]
+// Dependencies: [32, 5, 19, 21, 5310, 13022, 1113, 4133, 6009, 6272, 13020, 6335, 5923, 13025, 7339, 6268, 2]
 // Exports: default
 
-// Module 13207 (openConjureRemoveAppAlert)
-import useAlertStore from "useAlertStore" /* 6260 */;
-import conjureRemoveApp from "conjureRemoveApp" /* 13206 */;
-import useConjureRemoveFromServer from "useConjureRemoveFromServer" /* 13208 */;
+// Module 14442 (openConjureRemoveAppAlert)
+import useAlertStore from "useAlertStore" /* 6268 */;
+import useConjureRemoveFromServer from "useConjureRemoveFromServer" /* 13022 */;
+import conjureRemoveApp from "conjureRemoveApp" /* 13025 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -104,21 +104,21 @@ function ConjureRemoveFromServerAlert(target) {
     return obj(...arguments);
   };
   const tmp = obj;
-  const tmp3 = obj(13208)(target);
+  const tmp3 = obj(13022)(target);
   ({ optionalItems, notes, error, submit: c0 } = tmp3);
   const body = tmp3.body;
   const tmp4 = closure_9();
   obj = { title: obj3.conjureTitleWithAppTag(closure_6(require("Text/Text").Text, obj4)), content: body, extraContent: tmp8(Stack, { spacing: 12, children: items }), actions: tmp8(closure_8, obj7) };
   const AlertModal = require("AlertModal").AlertModal;
   let obj2 = require("ConjureRemovedItems");
-  const formatWithAppTagResult = obj2.formatWithAppTag(obj(4131).x6FvsZ, target.appName);
+  const formatWithAppTagResult = obj2.formatWithAppTag(obj(4133).x6FvsZ, target.appName);
   obj3 = require("conjureRemoveApp");
   obj4 = { variant: "heading-lg/semibold", color: "none", style: tmp4.title, children: formatWithAppTagResult };
   let tmp5Result = null;
   Stack = require("Stack/Stack").Stack;
   if (optionalItems.length > 0) {
     let obj5 = { items: [], optionalItems };
-    tmp5Result = tmp5(tmp(13209), obj5);
+    tmp5Result = tmp5(tmp(13020), obj5);
   }
   items = [
     tmp5Result,
@@ -131,22 +131,22 @@ function ConjureRemoveFromServerAlert(target) {
   let tmp5Result2 = null;
   if (null != error) {
     let obj6 = { variant: "body-sm/medium", color: "text-feedback-critical", children: error };
-    tmp5Result2 = tmp5(tmp6(5919).Text, obj6);
+    tmp5Result2 = tmp5(tmp6(5923).Text, obj6);
   }
   items[2] = tmp5Result2;
   obj7 = { children: items1 };
   const obj8 = {
     variant: "destructive",
-    text: intl.string(tmp(4131).BGF8VT),
+    text: intl.string(tmp(4133).BGF8VT),
     onPress: function remove() {
       return obj(...arguments);
     }
   };
-  const AlertActionButton = tmp6(6264).AlertActionButton;
+  const AlertActionButton = tmp6(6272).AlertActionButton;
   intl = tmp6(1113).intl;
   items1 = [tmp5(AlertActionButton, obj8), ];
   const obj9 = { variant: "secondary", text: intl2.string(require("intl").t["ETE/oC"]) };
-  const AlertActionButton2 = tmp6(6264).AlertActionButton;
+  const AlertActionButton2 = tmp6(6272).AlertActionButton;
   intl2 = tmp6(1113).intl;
   items1[1] = closure_6(AlertActionButton2, obj9);
   return closure_6(AlertModal, obj);
@@ -258,7 +258,7 @@ function ConjureDeleteProjectInServerAlert(arg0) {
   const AlertModal = require("AlertModal").AlertModal;
   let intl = require("intl").intl;
   let obj4 = { name: target.projectName };
-  const formatToPlainStringResult = intl.formatToPlainString(require("module_4131").CJBhb2, obj4);
+  const formatToPlainStringResult = intl.formatToPlainString(require("module_4133").CJBhb2, obj4);
   obj5 = require("conjureRemoveApp");
   obj6 = { variant: "heading-lg/semibold", color: "none", style: tmp.title, children: formatToPlainStringResult };
   obj7 = require("conjureRemoveApp");

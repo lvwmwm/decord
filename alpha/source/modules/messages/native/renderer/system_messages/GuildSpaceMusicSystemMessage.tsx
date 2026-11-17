@@ -1,23 +1,23 @@
-// Module ID: 9341
-// Function ID: 9342
+// Module ID: 9350
+// Function ID: 9351
 // Name: GuildSpaceMusicSystemMessage
-// Dependencies: [5155, 6934, 1388, 5306, 575, 9178, 9179, 6341, 9188, 1113, 9190, 8655, 9342, 9192, 2]
+// Dependencies: [5159, 6942, 1388, 5310, 575, 9189, 9190, 6349, 9199, 1113, 9201, 8666, 9351, 9203, 2]
 // Exports: createGuildSpaceMusicSystemMessage
 
-// Module 9341 (GuildSpaceMusicSystemMessage)
+// Module 9350 (GuildSpaceMusicSystemMessage)
 import nativeDefault from "native" /* 575 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6341 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8655 */;
-import PopularMusicSystemMessageTypes from "PopularMusicSystemMessageTypes" /* 9178 */;
-import PopularMusicSystemMessageCopy from "PopularMusicSystemMessageCopy" /* 9179 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 9188 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 9190 */;
-import createCommonMessageDefault from "createCommonMessage" /* 9192 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9342 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 6934 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6349 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8666 */;
+import PopularMusicSystemMessageTypes from "PopularMusicSystemMessageTypes" /* 9189 */;
+import PopularMusicSystemMessageCopy from "PopularMusicSystemMessageCopy" /* 9190 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 9199 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 9201 */;
+import createCommonMessageDefault from "createCommonMessage" /* 9203 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9351 */;
+import ChannelStore from "ChannelStore" /* 5159 */;
+import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 6942 */;
 import UserStore from "UserStore" /* 1388 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let obj = { iconTintColor: nativeDefault.colors.ICON_MUTED };

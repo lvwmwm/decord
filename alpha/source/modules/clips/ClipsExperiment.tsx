@@ -1,22 +1,22 @@
-// Module ID: 15812
-// Function ID: 15813
+// Module ID: 15846
+// Function ID: 15847
 // Name: ClipsExperiment
-// Dependencies: [5922, 8827, 2133, 1388, 1390, 6065, 504, 2174, 1380, 2]
-// Exports: areClipsAvailable, isClientClipsCapable, isScreenshotKeybindEnabled, isUserPremiumTypeForClipsEarlyAccess, useIsClipsAvailable, useIsClipsPlatformSupported, useScreenshotKeybindEnabled
+// Dependencies: [5926, 8838, 2133, 1388, 1390, 6072, 504, 2174, 1380, 2]
+// Exports: areClipsAvailable, isClientClipsCapable, isClipsPlatformRequirementIgnored, isScreenshotKeybindEnabled, isUserPremiumTypeForClipsEarlyAccess, useIsClipsAvailable, useIsClipsPlatformSupported, useIsUserPremiumTypeForClipsEarlyAccess, useScreenshotKeybindEnabled
 
-// Module 15812 (ClipsExperiment)
+// Module 15846 (ClipsExperiment)
 import get_initialized from "get initialized" /* 504 */;
 import PlatformUtilsAll from "PlatformUtils" /* 1380 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
-import Constants from "Constants" /* 6065 */;
-import DevSettingsStore from "DevSettingsStore" /* 5922 */;
-import DeveloperExperimentStore from "DeveloperExperimentStore" /* 8827 */;
+import Constants from "Constants" /* 6072 */;
+import DevSettingsStore from "DevSettingsStore" /* 5926 */;
+import DeveloperExperimentStore from "DeveloperExperimentStore" /* 8838 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
-const f112360 = () => {
+const f112598 = () => {
   isDeveloper = isDeveloper.isDeveloper && DevSettingsStore.get("clips_ignore_platform_requirement");
   return isDeveloper;
 };
@@ -53,7 +53,7 @@ export function useIsClipsPlatformSupported() {
   const items = [DevSettingsStore, DeveloperExperimentStore];
   const obj3 = get_initialized;
   if (!isDesktopResult) {
-    isDesktopResult = obj3.useStateFromStores(items, f112360);
+    isDesktopResult = obj3.useStateFromStores(items, f112598);
   }
   return isDesktopResult;
 }
@@ -65,7 +65,7 @@ export function useIsClipsAvailable() {
   const items = [DevSettingsStore, DeveloperExperimentStore];
   const obj3 = get_initialized;
   if (!isDesktopResult) {
-    isDesktopResult = obj3.useStateFromStores(items, f112360);
+    isDesktopResult = obj3.useStateFromStores(items, f112598);
   }
   const items1 = [UserStore];
   const tmp4Result = get_initialized;
@@ -81,6 +81,10 @@ export function useIsClipsAvailable() {
   }) && isDesktopResult;
   return tmp5;
 }
+export function isClipsPlatformRequirementIgnored() {
+  const isDeveloper = DeveloperExperimentStore.isDeveloper && DevSettingsStore.get("clips_ignore_platform_requirement");
+  return isDeveloper;
+}
 export function isUserPremiumTypeForClipsEarlyAccess(currentUser) {
   let premiumType;
   const isPremiumAtLeast = PremiumUtilsDefault.isPremiumAtLeast;
@@ -89,6 +93,21 @@ export function isUserPremiumTypeForClipsEarlyAccess(currentUser) {
     premiumType = currentUser.premiumType;
   }
   return isPremiumAtLeast(premiumType, PremiumTypes.TIER_2);
+}
+export function useIsUserPremiumTypeForClipsEarlyAccess() {
+  let TIER_2;
+  const items = [UserStore];
+  const obj = get_initialized;
+  return obj.useStateFromStores(items, () => {
+    currentUser = currentUser.getCurrentUser();
+    let premiumType;
+    const isPremiumAtLeast = PremiumUtilsDefault.isPremiumAtLeast;
+    PremiumUtilsDefault;
+    if (currentUser != null) {
+      premiumType = currentUser.premiumType;
+    }
+    return isPremiumAtLeast(premiumType, TIER_2.TIER_2);
+  });
 }
 export function isScreenshotKeybindEnabled() {
   return false;

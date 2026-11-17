@@ -1,18 +1,18 @@
-// Module ID: 11984
-// Function ID: 11985
+// Module ID: 12427
+// Function ID: 12428
 // Name: VoicePanelStateContext
-// Dependencies: [19, 11985, 11983, 11986, 7848, 11987, 1632, 11993, 2]
+// Dependencies: [19, 12428, 12426, 12429, 7858, 12430, 1632, 12435, 2]
 
-// Module 11984 (VoicePanelStateContext)
+// Module 12427 (VoicePanelStateContext)
 import SafeAreaConstants from "SafeAreaConstants" /* 1632 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11985 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 11986 */;
-import VoicePanelCardLayoutManagerDefault from "VoicePanelCardLayoutManager" /* 11987 */;
-import VoicePanelPIPHandoffDefault from "VoicePanelPIPHandoff" /* 11993 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 12428 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 12429 */;
+import VoicePanelCardLayoutManagerDefault from "VoicePanelCardLayoutManager" /* 12430 */;
+import VoicePanelPIPHandoffDefault from "VoicePanelPIPHandoff" /* 12435 */;
 import react from "react" /* 19 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11983 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 12426 */;
 import "ReanimatedHelperTypes";
-import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 7848 */;
+import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 7858 */;
 import size from "module_2" /* 2 */;
 
 let CONTROLS_HEIGHT;
@@ -25,7 +25,7 @@ const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
 ({ CONTROLS_HEIGHT, VoicePanelControlsModes } = VoicePanelControlsConstants);
 const obj = {
   channelId: "context-not-initialized",
-  channelType: "fileBytes",
+  channelType: "fileFinishedImporting",
   connected: ReanimatedHelperTypes.createFakeSharedValue(false),
   contentDimensions: ReanimatedHelperTypes.createFakeSharedValue({ width: 0, height: 0 }),
   controlsSpecs: ReanimatedHelperTypes.createFakeSharedValue(obj2),
@@ -35,8 +35,11 @@ const obj = {
     throw error;
   },
   dockContentSwap: ReanimatedHelperTypes.createFakeSharedValue(0),
+  dockRestLeft: ReanimatedHelperTypes.createFakeSharedValue(0),
   dockRestWidth: ReanimatedHelperTypes.createFakeSharedValue(0),
+  dockSlotWidth: ReanimatedHelperTypes.createFakeSharedValue(0),
   dockSheetWidth: ReanimatedHelperTypes.createFakeSharedValue(0),
+  dockSheetLeft: ReanimatedHelperTypes.createFakeSharedValue(0),
   dockTouched: ReanimatedHelperTypes.createFakeSharedValue(false),
   isDockInLayout: ReanimatedHelperTypes.createFakeSharedValue(false),
   isDockSlotEmpty: ReanimatedHelperTypes.createFakeSharedValue(false),

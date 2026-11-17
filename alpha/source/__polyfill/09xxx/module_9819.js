@@ -1,22 +1,151 @@
 // Module ID: 9819
 // Function ID: 9820
-// Dependencies: [9803]
-// Exports: _getSpanForScope, _setSpanForScope
+// Dependencies: [9817]
+// Exports: isMatchingPattern, safeJoin, snipLine, stringMatchesSomePattern, truncate
 
 // Module 9819
-import _mod9803 from "module_9803" /* 9803 */;
+import _mod9817 from "module_9817" /* 9817 */;
 
-const _sentrySpan = "_sentrySpan";
 
-export function _getSpanForScope(arg0) {
-  return arg0[_sentrySpan];
-}
-export function _setSpanForScope(arg0, arg1) {
-  const tmp2 = arg1;
-  if (tmp2) {
-    const obj = _mod9803;
-    const result = obj.addNonEnumerableProperty(arg0, _sentrySpan, arg1);
-  } else {
-    delete tmp[_sentrySpan];
+export function isMatchingPattern(arr, test) {
+  let flag = arg2;
+  if (arg2 === undefined) {
+    flag = false;
   }
+  const obj = _mod9817;
+  let isStringResult = obj.isString(arr);
+  if (isStringResult) {
+    let isMatch;
+    const tmpResult = _mod9817;
+    if (tmpResult.isRegExp(test)) {
+      isMatch = test.test(arr);
+    } else {
+      const tmpResult2 = _mod9817;
+      isMatch = tmpResult2.isString(test);
+      if (isMatch) {
+        let hasItem;
+        if (flag) {
+          hasItem = arr === test;
+        } else {
+          hasItem = arr.includes(test);
+        }
+        isMatch = hasItem;
+      }
+    }
+    isStringResult = isMatch;
+  }
+  return isStringResult;
+}
+export function safeJoin(arg0, arg1) {
+  if (Array.isArray(arg0)) {
+    const items = [];
+    let num = 0;
+    if (0 < arg0.length) {
+      try {
+        const push = items.push;
+        const obj = _mod9817;
+        if (obj.isVueViewModel(arg0[num])) {
+          push("[VueViewModel]");
+        } else {
+          const _String = String;
+          push(String(arg0[num]));
+        }
+      } catch (err) {
+        items.push("[value cannot be serialized]");
+      }
+      num = num + 1;
+    }
+    return items.join(arg1);
+  } else {
+    return "";
+  }
+}
+export function snipLine(arr, arg1) {
+  if (arr.length <= 150) {
+    return arr;
+  } else {
+    let tmp = arg1;
+    if (arg1 > arr.length) {
+      tmp = length;
+    }
+    const _Math = Math;
+    let num3 = Math.max(tmp - 60, 0);
+    if (num3 < 5) {
+      num3 = 0;
+    }
+    const _Math2 = Math;
+    let bound = Math.min(num3 + 140, length);
+    if (bound > arr.length - 5) {
+      bound = length;
+    }
+    if (bound === arr.length) {
+      const _Math3 = Math;
+      num3 = Math.max(bound - 140, 0);
+    }
+    const substr = arr.slice(num3, bound);
+    let combined = substr;
+    if (num3 > 0) {
+      const _HermesInternal = HermesInternal;
+      combined = "'{snip} " + substr;
+    }
+    let text = combined;
+    if (bound < arr.length) {
+      text = `${tmp6} {snip}`;
+    }
+    return text;
+  }
+}
+export function stringMatchesSomePattern(arg0) {
+  let closure_0 = arg0;
+  let items = arg1;
+  if (arg1 === undefined) {
+    items = [];
+  }
+  let flag = arg2;
+  if (arg2 === undefined) {
+    flag = false;
+  }
+  return items.some((test) => {
+    const obj2 = _mod9817;
+    let isStringResult = obj2.isString(obj);
+    if (isStringResult) {
+      let isMatch;
+      const tmpResult = _mod9817;
+      if (tmpResult.isRegExp(test)) {
+        isMatch = test.test(obj);
+      } else {
+        const tmpResult2 = _mod9817;
+        isMatch = tmpResult2.isString(test);
+        if (isMatch) {
+          let hasItem;
+          if (flag) {
+            hasItem = obj === test;
+          } else {
+            hasItem = obj.includes(test);
+          }
+          isMatch = hasItem;
+        }
+      }
+      isStringResult = isMatch;
+    }
+    return isStringResult;
+  });
+}
+export function truncate(str) {
+  let num = arg1;
+  if (arg1 === undefined) {
+    num = 0;
+  }
+  let combined = str;
+  if (typeof str === "string") {
+    combined = str;
+    if (0 !== num) {
+      combined = str;
+      if (str.length > num) {
+        const _HermesInternal = HermesInternal;
+        combined = "" + str.slice(0, num) + "...";
+      }
+    }
+  }
+  return combined;
 }

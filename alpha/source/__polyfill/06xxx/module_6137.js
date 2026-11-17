@@ -1,21 +1,18 @@
 // Module ID: 6137
 // Function ID: 6138
-// Dependencies: [668, 549, 6138]
+// Dependencies: [539, 540, 6138]
 
 // Module 6137
-import identity from "identity" /* 549 */;
-import getNative from "getNative" /* 668 */;
-import constant from "constant" /* 6138 */;
+import _mod539 from "module_539" /* 539 */;
+import baseUnary from "baseUnary" /* 540 */;
+import baseIsMap from "baseIsMap" /* 6138 */;
 
-let fn;
-if (getNative) {
-  fn = (arg0, arg1) => {
-    const obj = { configurable: true, enumerable: false, value: constant(arg1), writable: true };
-    const tmp = getNative;
-    return tmp(arg0, "toString", obj);
-  };
+let _module;
+const tmp = _mod539 && _mod539.isMap;
+if (tmp) {
+  _module = baseUnary(tmp);
 } else {
-  fn = identity;
+  _module = baseIsMap;
 }
 
-export default fn;
+export default _module;

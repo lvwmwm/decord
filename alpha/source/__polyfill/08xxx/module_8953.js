@@ -1,27 +1,26 @@
 // Module ID: 8953
 // Function ID: 8954
-// Dependencies: [8938]
+// Dependencies: [8954, 8952]
 
 // Module 8953
-import _mod8938 from "module_8938" /* 8938 */;
+import _modDef8952 from "module_8952" /* 8952 */;
+import _modDef8954 from "module_8954" /* 8954 */;
 
-let obj = {
-  isXMLFile(dataView) {
-    let tmp = dataView;
+
+export default {
+  isTiffFile(byteLength) {
+    let tmp = byteLength && byteLength.byteLength >= 4;
     if (tmp) {
-      const obj = _mod8938;
-      tmp = obj.getStringFromDataView(dataView, c2, length.length) === length;
+      const uint16 = byteLength.getUint16(0);
+      tmp = byteLength.getUint16(2, uint16 === _modDef8954.LITTLE_ENDIAN) === 42;
     }
     return tmp;
   },
-  findOffsets(byteLength) {
-    const xmpChunks = [];
-    const obj = { dataOffset, length: byteLength.byteLength };
-    xmpChunks.push(obj);
-    return { xmpChunks };
+  findTiffOffsets() {
+    if (_modDef8952.USE_EXIF) {
+      return { hasAppMarkers: true, tiffHeaderOffset: 0 };
+    } else {
+      return {};
+    }
   }
 };
-let c2 = 0;
-let c3 = "<?xpacket begin";
-
-export default obj;

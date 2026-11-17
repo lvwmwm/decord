@@ -1,42 +1,22 @@
 // Module ID: 9832
 // Function ID: 9833
-// Dependencies: [9804]
-// Exports: handleCallbackErrors
+// Dependencies: [9816]
+// Exports: _getSpanForScope, _setSpanForScope
 
 // Module 9832
-import _mod9804 from "module_9804" /* 9804 */;
+import _mod9816 from "module_9816" /* 9816 */;
 
+const _sentrySpan = "_sentrySpan";
 
-export function handleCallbackErrors(fn, fn2) {
-  function maybeHandlePromiseRejection(promise, fn2, fn) {
-    let closure_0 = fn2;
-    let closure_1 = fn;
-    const obj = _mod9804;
-    if (obj.isThenable(promise)) {
-      return promise.then((result) => {
-        closure_1();
-        return result;
-      }, (arg0) => {
-        closure_0(arg0);
-        closure_1();
-        throw arg0;
-      });
-    } else {
-      fn();
-      return promise;
-    }
-  }
-  fn = arg2;
-  if (arg2 === undefined) {
-    fn = function t() {
-
-    };
-  }
-  try {
-    return maybeHandlePromiseRejection(fn(), fn2, fn);
-  } catch (tmp2) {
-    fn2(tmp2);
-    fn();
-    throw tmp2;
+export function _getSpanForScope(arg0) {
+  return arg0[_sentrySpan];
+}
+export function _setSpanForScope(arg0, arg1) {
+  const tmp2 = arg1;
+  if (tmp2) {
+    const obj = _mod9816;
+    const result = obj.addNonEnumerableProperty(arg0, _sentrySpan, arg1);
+  } else {
+    delete tmp[_sentrySpan];
   }
 }

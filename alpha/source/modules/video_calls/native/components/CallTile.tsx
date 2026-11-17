@@ -1,33 +1,33 @@
-// Module ID: 13096
-// Function ID: 13097
+// Module ID: 11757
+// Function ID: 11758
 // Name: CallTile
-// Dependencies: [19, 17, 6810, 1388, 11003, 5973, 21, 5306, 5303, 575, 7918, 1630, 504, 6056, 8476, 12787, 13067, 12808, 12841, 13097, 13102, 13103, 7480, 10838, 13104, 1187, 12715, 1655, 5538, 13105, 2]
+// Dependencies: [19, 17, 6804, 1388, 11314, 5977, 21, 5310, 5307, 575, 7928, 1630, 504, 6063, 8487, 11397, 11725, 11418, 11451, 11758, 11763, 11764, 7490, 11765, 11766, 1187, 11322, 1655, 5542, 11767, 2]
 
-// Module 13096 (CallTile)
+// Module 11757 (CallTile)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5538 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6056 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7480 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 10838 */;
-import RevealProvider from "RevealProvider" /* 12715 */;
-import TouchableStreamPreviewDefault from "TouchableStreamPreview" /* 13097 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 13102 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 13103 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 13104 */;
-import ParticipantTitleDefault from "ParticipantTitle" /* 13105 */;
+import timing_timing from "timing/timing" /* 5542 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6063 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7490 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8487 */;
+import RevealProvider from "RevealProvider" /* 11322 */;
+import TouchableStreamPreviewDefault from "TouchableStreamPreview" /* 11758 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11763 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 11764 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 11765 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 11766 */;
+import ParticipantTitleDefault from "ParticipantTitle" /* 11767 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6810 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6804 */;
 import UserStore from "UserStore" /* 1388 */;
-import ChannelCallStore from "ChannelCallStore" /* 11003 */;
-import CallConstants from "CallConstants" /* 5973 */;
+import ChannelCallStore from "ChannelCallStore" /* 11314 */;
+import CallConstants from "CallConstants" /* 5977 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
-import ColorUtils_mod from "ColorUtils" /* 5303 */;
+import createStyles_mod from "createStyles" /* 5310 */;
+import ColorUtils_mod from "ColorUtils" /* 5307 */;
 import size from "module_2" /* 2 */;
 
 let obj1;
@@ -59,7 +59,7 @@ class StreamPreviewTile {
     obj2 = {
       guildId: participant.stream.guildId,
       userId: participant.user.id,
-      style: { aspectRatio: "description", borderRadius: false },
+      style: { aspectRatio: "ip", borderRadius: false },
       disableTransition: true,
       onPress() {
         return closure_1_8();
@@ -73,15 +73,15 @@ function ParticipantIcon(participant) {
   participant = participant.participant;
   const tmp = closure_16();
   if (participant.type === constants.STREAM) {
-    tmp3 = AssetRegistryDefault3;
+    tmp3 = AssetRegistryDefault2;
   } else if (participant.type === tmp2.USER) {
     const voicePlatform = participant.voicePlatform;
     if (constants2.MOBILE === voicePlatform) {
-      tmp3 = AssetRegistryDefault4;
+      tmp3 = AssetRegistryDefault3;
     } else if (constants2.XBOX === voicePlatform) {
       tmp3 = AssetRegistryDefault;
     } else if (constants2.PLAYSTATION === voicePlatform) {
-      tmp3 = AssetRegistryDefault2;
+      tmp3 = AssetRegistryDefault4;
     } else if (constants2.QUEST === voicePlatform) {
       tmp3 = AssetRegistryDefault5;
     }

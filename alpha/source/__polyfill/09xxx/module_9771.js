@@ -1,196 +1,22 @@
 // Module ID: 9771
 // Function ID: 9772
-// Dependencies: [17, 9772]
-// Exports: getAndroidModuleType, getIosModule, getNativeModule, isIosStorekit2, setAndroidNativeModule, setIosNativeModule, storekit1Mode, storekit2Mode, storekitHybridMode
+// Dependencies: [9762, 9755, 5351]
 
 // Module 9771
-import _createClass from "_createClass" /* 9772 */;
-import react_native from "react-native" /* 17 */;
+import normalizeColor from "normalizeColor" /* 9755 */;
+import _mod9762 from "module_9762" /* 9762 */;
+import "module_5351";
+import module_5351_mod from "module_5351" /* 5351 */;
 
-let NativeModules;
-let Platform;
-let RNIapModule;
-let c3;
-({ NativeModules, Platform } = react_native);
-let RNIapIos = NativeModules.RNIapIos;
-({ RNIapIosSk2: c3, RNIapModule } = NativeModules);
-const RNIapAmazonModule = NativeModules.RNIapAmazonModule;
-let c6 = false;
-function checkNativeAndroidAvailable() {
-  const tmp = RNIapModule;
-  if (!tmp) {
-    const tmp2 = RNIapAmazonModule;
-    if (!tmp2) {
-      const _Error = Error;
-      const self = this;
-      const self2 = this;
-      const error = new Error(_createClass.ErrorCode.E_IAP_NOT_AVAILABLE);
-      throw error;
-    }
-  }
-}
-function getAndroidModule() {
-  if (typeof checkNativeAndroidAvailable === "function") {
-    let tmp = RNIapModule;
-    if (!tmp) {
-      const tmp2 = RNIapAmazonModule;
-      if (!tmp2) {
-        const _Error = Error;
-        const self = this;
-        const self2 = this;
-        const error = new Error(_createClass.ErrorCode.E_IAP_NOT_AVAILABLE);
-        throw error;
-      }
-    }
-    let tmp8 = RNIapModule;
-    if (!tmp8) {
-      if (!tmp) {
-        tmp = RNIapAmazonModule;
-      }
-      tmp8 = tmp;
-    }
-    return tmp8;
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
-}
-function isStorekit2Available() {
-  return c6;
-}
+let arrayOf;
+let module_5351;
+let size;
+const obj = { color: normalizeColor, fontFamily: module_5351.string, fontSize: module_5351.number, fontStyle: module_5351.oneOf(["normal", "italic"]), fontWeight: module_5351.oneOf(["normal", "bold", "100", "200", "300", "400", "500", "600", "700", "800", "900"]), fontVariant: arrayOf(module_5351.oneOf(["small-caps", "oldstyle-nums", "lining-nums", "tabular-nums", "proportional-nums"])), textShadowOffset: module_5351.shape(size), textShadowRadius: module_5351.number, textShadowColor: normalizeColor, letterSpacing: module_5351.number, lineHeight: module_5351.number, textAlign: module_5351.oneOf(["auto", "left", "right", "center", "justify"]), textAlignVertical: module_5351.oneOf(["auto", "top", "bottom", "center"]), includeFontPadding: module_5351.bool, textDecorationLine: module_5351.oneOf(["none", "underline", "line-through", "underline line-through"]), textDecorationStyle: module_5351.oneOf(["solid", "double", "dotted", "dashed"]), textDecorationColor: normalizeColor, textTransform: module_5351.oneOf(["none", "capitalize", "uppercase", "lowercase"]), writingDirection: module_5351.oneOf(["auto", "ltr", "rtl"]) };
+const module_9762 = Object.assign(_mod9762);
+module_5351 = module_5351_mod;
+arrayOf = module_5351.arrayOf;
+module_5351 = module_5351_mod;
+size = { width: module_5351.number, height: module_5351.number };
+module_5351 = module_5351_mod;
 
-export const isIos = false;
-export const isAndroid = true;
-export const isAmazon = RNIapAmazonModule;
-export const isPlay = RNIapModule;
-export const setAndroidNativeModule = (arg0) => {
-  RNIapModule = arg0;
-};
-export { checkNativeAndroidAvailable };
-export { getAndroidModule };
-export const getAndroidModuleType = function() {
-  if (typeof getAndroidModule === "function") {
-    if (typeof checkNativeAndroidAvailable === "function") {
-      if (!RNIapModule) {
-        const tmp3 = RNIapAmazonModule;
-        if (!tmp3) {
-          const _Error = Error;
-          const self = this;
-          const self2 = this;
-          const error = new Error(_createClass.ErrorCode.E_IAP_NOT_AVAILABLE);
-          throw error;
-        }
-      }
-      let tmp9 = RNIapModule;
-      if (!tmp9) {
-        tmp9 = RNIapModule || RNIapAmazonModule;
-      }
-      if (RNIapModule === tmp9) {
-        return "android";
-      } else if (RNIapAmazonModule === tmp9) {
-        return "amazon";
-      } else {
-        return null;
-      }
-    } else {
-      throw new TypeError("Trying to call a non-function");
-    }
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
-};
-export const getNativeModule = function() {
-  if (typeof getAndroidModule === "function") {
-    if (typeof checkNativeAndroidAvailable === "function") {
-      let tmp2 = RNIapModule;
-      if (!tmp2) {
-        const tmp3 = RNIapAmazonModule;
-        if (!tmp3) {
-          const _Error = Error;
-          const self = this;
-          const self2 = this;
-          const error = new Error(_createClass.ErrorCode.E_IAP_NOT_AVAILABLE);
-          throw error;
-        }
-      }
-      let tmp9 = RNIapModule;
-      if (!tmp9) {
-        if (!tmp2) {
-          tmp2 = RNIapAmazonModule;
-        }
-        tmp9 = tmp2;
-      }
-      return tmp9;
-    } else {
-      throw new TypeError("Trying to call a non-function");
-    }
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
-};
-export { isStorekit2Available };
-export const isIosStorekit2 = () => c6;
-export const setIosNativeModule = (arg0) => {
-  RNIapIos = arg0;
-};
-export const storekit2Mode = () => {
-  RNIapIos = _false;
-  if (typeof isStorekit2Available === "function") {
-    let flag = !c6;
-    if (c6) {
-      RNIapIos.disable();
-      flag = true;
-    }
-    return flag;
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
-};
-export const storekit1Mode = () => {
-  if (typeof isStorekit2Available === "function") {
-    let flag = c6;
-    if (flag) {
-      _false.disable();
-      flag = true;
-    }
-    return flag;
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
-};
-export const storekitHybridMode = () => {
-  if (typeof isStorekit2Available === "function") {
-    const tmp = c6;
-    if (tmp) {
-      RNIapIos = _false;
-      const _console2 = console;
-      console.info("Using Storekit 2");
-    } else {
-      const _console = console;
-      console.info("Using Storekit 1");
-    }
-    return true;
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
-};
-export const getIosModule = function() {
-  if (!RNIapIos) {
-    if (typeof isStorekit2Available === "function") {
-      const tmp3 = c6;
-      if (!tmp3) {
-        const _Error = Error;
-        const self = this;
-        const self2 = this;
-        const error = new Error(_createClass.ErrorCode.E_IAP_NOT_AVAILABLE);
-        throw error;
-      }
-    } else {
-      throw new TypeError("Trying to call a non-function");
-    }
-  }
-  let tmp9 = RNIapIos;
-  if (!tmp9) {
-    tmp9 = _false || RNIapIos;
-  }
-  return tmp9;
-};
+export default obj;

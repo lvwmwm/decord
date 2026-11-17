@@ -1,10 +1,10 @@
-// Module ID: 8504
-// Function ID: 8505
+// Module ID: 8515
+// Function ID: 8516
 // Name: StorefrontProductRecord
-// Dependencies: [8503, 2167, 2]
+// Dependencies: [8514, 2167, 2]
 
-// Module 8504 (StorefrontProductRecord)
-import CollectiblesStoreListingStylesRecord from "CollectiblesStoreListingStylesRecord" /* 8503 */;
+// Module 8515 (StorefrontProductRecord)
+import CollectiblesStoreListingStylesRecord from "CollectiblesStoreListingStylesRecord" /* 8514 */;
 import SKURecord from "SKURecord" /* 2167 */;
 import size from "module_2" /* 2 */;
 

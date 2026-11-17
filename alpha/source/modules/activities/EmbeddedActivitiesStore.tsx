@@ -1,26 +1,26 @@
-// Module ID: 5154
-// Function ID: 5155
+// Module ID: 5158
+// Function ID: 5159
 // Name: EmbeddedActivitiesStore
-// Dependencies: [32, 502, 5155, 5209, 1388, 2145, 5949, 1072, 5950, 5951, 5227, 5964, 5968, 1108, 5969, 572, 5970, 5974, 1380, 2119, 5975, 504, 2]
+// Dependencies: [32, 502, 5159, 5213, 1388, 2145, 5953, 1072, 5954, 5955, 5231, 5968, 5972, 1108, 5973, 572, 5974, 5978, 1380, 2119, 5979, 504, 2]
 
-// Module 5154 (EmbeddedActivitiesStore)
+// Module 5158 (EmbeddedActivitiesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Server from "Server" /* 2119 */;
 import Constants2 from "Constants" /* 2145 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 5227 */;
-import ContentClassificationEmbeddedActivityFilterExperiment2 from "ContentClassificationEmbeddedActivityFilterExperiment" /* 5950 */;
-import ContentClassificationReference from "ContentClassificationReference" /* 5951 */;
-import getURLForApplicationDefault from "getURLForApplication" /* 5964 */;
-import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 5970 */;
-import getPlatformDefault from "getPlatform" /* 5974 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5975 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 5231 */;
+import ContentClassificationEmbeddedActivityFilterExperiment2 from "ContentClassificationEmbeddedActivityFilterExperiment" /* 5954 */;
+import ContentClassificationReference from "ContentClassificationReference" /* 5955 */;
+import getURLForApplicationDefault from "getURLForApplication" /* 5968 */;
+import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 5974 */;
+import getPlatformDefault from "getPlatform" /* 5978 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5979 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
+import ChannelStore from "ChannelStore" /* 5159 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5213 */;
 import UserStore from "UserStore" /* 1388 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5949 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5953 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let embeddedActivitiesForLocationIncludingHidden, importDefault, set3;
 let c10;
 let set1;
 let unpackModuleId;
-const f90314 = (item) => {
+const f90496 = (item) => {
   closure_1_34(item);
 };
 function participantFromServer(userId) {
@@ -57,7 +57,7 @@ function updateEmbeddedActivities(content_classification) {
     let arr2;
     let sessionId;
     let launchParams;
-    const obj19 = application_id(5227);
+    const obj19 = application_id(5231);
     const embeddedActivityLocationChannelId = obj19.getEmbeddedActivityLocationChannelId(_location);
     if (null != embeddedActivityLocationChannelId) {
       const value = map2.get(embeddedActivityLocationChannelId);
@@ -168,7 +168,7 @@ function updateEmbeddedActivities(content_classification) {
               }
             }
             value11.upsert(application_id, _location.id, tmp58);
-            const tmp70Result = application_id(5227);
+            const tmp70Result = application_id(5231);
             const embeddedActivityLocationChannelId1 = tmp70Result.getEmbeddedActivityLocationChannelId(_location);
             if (null != embeddedActivityLocationChannelId1) {
               let value12 = map2.get(embeddedActivityLocationChannelId1);
@@ -185,7 +185,7 @@ function updateEmbeddedActivities(content_classification) {
                 }
               }
               value12.upsert(application_id, _location.id, tmp58);
-              const tmp70Result4 = application_id(5227);
+              const tmp70Result4 = application_id(5231);
               let str5 = tmp70Result4.getEmbeddedActivityLocationGuildId(_location);
               if (str5 == null) {
                 str5 = "0";
@@ -238,7 +238,7 @@ function updateEmbeddedActivities(content_classification) {
             }
             if (id1 !== _location.id) {
               let guildId;
-              const tmp70Result5 = application_id(5227);
+              const tmp70Result5 = application_id(5231);
               const embeddedActivityLocationChannelId2 = tmp70Result5.getEmbeddedActivityLocationChannelId(_location);
               const channel = ChannelStore.getChannel(embeddedActivityLocationChannelId2);
               if (channel != null) {
@@ -257,7 +257,7 @@ function updateEmbeddedActivities(content_classification) {
                   const ComponentDispatch2 = tmp70(1108).ComponentDispatch;
                   const obj8 = { location: _location, applicationId: application_id, isFirstActivityInChannel: tmp39, isStart: tmp72, participants: mapped, embeddedActivity: obj7, inviterUserId };
                   ComponentDispatch2.dispatch(constants.OPEN_EMBEDDED_ACTIVITY, obj8);
-                  application_id(5969);
+                  application_id(5973);
                   if (true === renderInFramePool) {
                     let PIP = ActivityPanelModes.DISCONNECTED;
                   } else if (tmp46) {
@@ -750,7 +750,7 @@ const obj2 = {
     let item = guilds.forEach((activity_instances) => {
       activity_instances = activity_instances.activity_instances;
       if (activity_instances != null) {
-        const item = activity_instances.forEach(f90314);
+        const item = activity_instances.forEach(f90496);
       }
     });
     id = AuthenticationStore.getId();
@@ -780,7 +780,7 @@ const obj2 = {
   GUILD_CREATE: function handleGuildCreate(guild) {
     const activity_instances = guild.guild.activity_instances;
     if (activity_instances != null) {
-      const item = activity_instances.forEach(f90314);
+      const item = activity_instances.forEach(f90496);
     }
   },
   CHANNEL_DELETE: function handleChannelDelete(channel) {

@@ -1,20 +1,20 @@
-// Module ID: 10780
-// Function ID: 10781
+// Module ID: 14083
+// Function ID: 14084
 // Name: GuildPowerupsPerksSection
-// Dependencies: [17, 21, 5306, 575, 10759, 1113, 2733, 10781, 10783, 10785, 2]
+// Dependencies: [17, 21, 5310, 575, 14066, 1113, 2735, 14084, 14086, 14088, 2]
 // Exports: default
 
-// Module 10780 (GuildPowerupsPerksSection)
+// Module 14083 (GuildPowerupsPerksSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import _modDef2733 from "module_2733" /* 2733 */;
-import GuildPowerupsSectionHeaderDefault from "GuildPowerupsSectionHeader" /* 10759 */;
-import GuildPowerupsSinglePerkCardDefault from "GuildPowerupsSinglePerkCard" /* 10781 */;
-import GuildPowerupsMultiPerkCardDefault from "GuildPowerupsMultiPerkCard" /* 10783 */;
-import GuildPowerupsGameServerCardDefault from "GuildPowerupsGameServerCard" /* 10785 */;
+import _modDef2735 from "module_2735" /* 2735 */;
+import GuildPowerupsSectionHeaderDefault from "GuildPowerupsSectionHeader" /* 14066 */;
+import GuildPowerupsSinglePerkCardDefault from "GuildPowerupsSinglePerkCard" /* 14084 */;
+import GuildPowerupsMultiPerkCardDefault from "GuildPowerupsMultiPerkCard" /* 14086 */;
+import GuildPowerupsGameServerCardDefault from "GuildPowerupsGameServerCard" /* 14088 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let type;
@@ -39,7 +39,7 @@ export default function GuildPowerupPerksSection(arg0) {
   ({ guildId: require, listings } = arg0);
   let obj = { children: items };
   const tmp = closure_7();
-  let obj2 = { title: intl.string(_modDef2733.TV3Vm8), description: intl2.string(_modDef2733.STx9hp) };
+  let obj2 = { title: intl.string(_modDef2735.TV3Vm8), description: intl2.string(_modDef2735.STx9hp) };
   const tmp2 = GuildPowerupsSectionHeaderDefault;
   intl = intl3.intl;
   intl2 = intl3.intl;

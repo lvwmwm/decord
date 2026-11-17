@@ -1,35 +1,38 @@
-// Module ID: 19953
-// Function ID: 19954
+// Module ID: 19998
+// Function ID: 19999
 // Name: FramePanelFocusedView
-// Dependencies: [19, 7019, 7020, 5949, 21, 504, 19934, 19950, 19954, 12743, 19436, 13355, 13359, 2]
+// Dependencies: [19, 7027, 7028, 5953, 21, 504, 19979, 19995, 19999, 11300, 19481, 14595, 14599, 20001, 2]
 
-// Module 19953 (FramePanelFocusedView)
-import Fragment from "Fragment" /* 21 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5949 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 12743 */;
-import FrameRenderTargetDefault from "FrameRenderTarget" /* 13355 */;
-import ConjureFrameUpdateBarDefault from "ConjureFrameUpdateBar" /* 19436 */;
-import ActivityPanelFocusedView from "ActivityPanelFocusedView" /* 19934 */;
-import FramePanelStateContextDefault from "FramePanelStateContext" /* 19950 */;
+// Module 19998 (FramePanelFocusedView)
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5953 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 11300 */;
+import FrameRenderTargetDefault from "FrameRenderTarget" /* 14595 */;
+import ConjureFrameUpdateBarDefault from "ConjureFrameUpdateBar" /* 19481 */;
+import ActivityPanelFocusedView from "ActivityPanelFocusedView" /* 19979 */;
+import FramePanelStateContextDefault from "FramePanelStateContext" /* 19995 */;
+import PlayableFrameBannerDefault from "PlayableFrameBanner" /* 20001 */;
 import react from "react" /* 19 */;
-import FramesStore from "FramesStore" /* 7019 */;
-import FramesConstants from "FramesConstants" /* 7020 */;
+import FramesStore from "FramesStore" /* 7027 */;
+import FramesConstants from "FramesConstants" /* 7028 */;
+import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
+let c9;
 let hasOwnProperty;
+let metroImportAll;
 let metroRequire;
 let tmp2;
-const FrameStackLevel = tmp2(13359);
+const FrameStackLevel = tmp2(14599);
 ({ asLaunched: hasOwnProperty, FrameLayoutModes: metroRequire } = FramesConstants);
 const ActivityPanelModes = ActivityPanelConstants.ActivityPanelModes;
-const jsx = Fragment.jsx;
+({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 const memoResult = react.memo(function FramePanelFocusedView(transitionState) {
   transitionState = transitionState.transitionState;
   const transitionCleanUp = transitionState.transitionCleanUp;
   let stateFromStores;
   let landscapeSafeAreasConfig;
   let obj = transitionState(stateFromStores[5]);
-  const items = [landscapeSafeAreasConfig];
+  let items = [landscapeSafeAreasConfig];
   stateFromStores = obj.useStateFromStores(items, () => {
     const tmp = memo(landscapeSafeAreasConfig.getMainFrame());
     let id;
@@ -39,11 +42,11 @@ const memoResult = react.memo(function FramePanelFocusedView(transitionState) {
     return id;
   });
   let obj2 = transitionState(stateFromStores[6]);
-  const obj3 = { context: transitionCleanUp(stateFromStores[7]) };
+  let obj3 = { context: transitionCleanUp(stateFromStores[7]) };
   const baseActivityPanelFocusedView = obj2.useBaseActivityPanelFocusedView(obj3);
   const portraitSafeAreasConfig = baseActivityPanelFocusedView.portraitSafeAreasConfig;
   landscapeSafeAreasConfig = baseActivityPanelFocusedView.landscapeSafeAreasConfig;
-  const memo = portraitSafeAreasConfig.useMemo(() => jsx(transitionCleanUp(stateFromStores[8]), {}), []);
+  const memo = portraitSafeAreasConfig.useMemo(() => closure_1_8(transitionCleanUp(stateFromStores[8]), {}), []);
   const items1 = [stateFromStores];
   const updateActivityPanelModeToPIP = portraitSafeAreasConfig.useCallback(() => {
     if (null != stateFromStores) {
@@ -53,18 +56,24 @@ const memoResult = react.memo(function FramePanelFocusedView(transitionState) {
   }, items1);
   const items2 = [stateFromStores, memo, landscapeSafeAreasConfig, portraitSafeAreasConfig, transitionCleanUp, transitionState, updateActivityPanelModeToPIP];
   return portraitSafeAreasConfig.useMemo(() => {
+    let items;
     let obj4;
-    let tmpResult = null;
+    let tmp5;
+    const obj = { transitionState, transitionCleanUp, updateActivityPanelModeToPIP, hasActivity: null != stateFromStores, context: FramePanelStateContextDefault, header: memo, children: tmp5 };
+    tmp5 = null;
     const BaseActivityPanelFocusedView = ActivityPanelFocusedView.BaseActivityPanelFocusedView;
     if (null != stateFromStores) {
-      const obj2 = { frameId: stateFromStores, children: null };
-      ({ frameId: stateFromStores, level: FrameStackLevel.FrameStackLevel.AboveAppContent, presentation: obj4 });
+      const obj2 = { frameId: stateFromStores, children: items };
+      const obj3 = { frameId: stateFromStores, level: FrameStackLevel.FrameStackLevel.AboveAppContent, presentation: obj4 };
       const tmp6Result = ConjureFrameUpdateBarDefault;
-      FrameRenderTargetDefault;
       obj4 = { layoutMode: metroRequire.FOCUSED, portraitSafeAreasConfig, landscapeSafeAreasConfig };
-      tmpResult = tmp(tmp6Result, obj2);
+      const tmp6Result2 = FrameRenderTargetDefault;
+      items = [metroImportAll(tmp6Result2, obj3), ];
+      const obj5 = { frameId: stateFromStores };
+      items[1] = metroImportAll(PlayableFrameBannerDefault, obj5, stateFromStores);
+      tmp5 = React4(tmp6Result, obj2);
     }
-    return <BaseActivityPanelFocusedView transitionState={transitionState} transitionCleanUp={transitionCleanUp} updateActivityPanelModeToPIP={updateActivityPanelModeToPIP} hasActivity={null != stateFromStores} context={FramePanelStateContextDefault} header={memo}>{tmpResult}</BaseActivityPanelFocusedView>;
+    return metroImportAll(BaseActivityPanelFocusedView, obj);
   }, items2);
 });
 const result = size.fileFinishedImporting("modules/frames/panel/native/FramePanelFocusedView.tsx");

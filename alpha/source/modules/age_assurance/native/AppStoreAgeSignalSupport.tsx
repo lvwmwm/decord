@@ -1,13 +1,13 @@
-// Module ID: 8240
-// Function ID: 8241
+// Module ID: 8251
+// Function ID: 8252
 // Name: AppStoreAgeSignalSupport
-// Dependencies: [1627, 5263, 1380, 2]
+// Dependencies: [1627, 5267, 1380, 2]
 // Exports: isAppStoreAgeSignalSupported
 
-// Module 8240 (AppStoreAgeSignalSupport)
+// Module 8251 (AppStoreAgeSignalSupport)
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1627 */;
-import DeviceUtils from "DeviceUtils" /* 5263 */;
+import DeviceUtils from "DeviceUtils" /* 5267 */;
 import size from "module_2" /* 2 */;
 
 let c2 = 26;

@@ -1,202 +1,205 @@
 // Module ID: 9821
 // Function ID: 9822
-// Dependencies: [41, 42, 9804]
-// Exports: rejectedSyncPromise, resolvedSyncPromise
+// Dependencies: [9811, 9819, 9816]
+// Exports: addContextToFrame, addExceptionMechanism, addExceptionTypeValue, arrayify, checkOrSetAlreadyCaught, getEventDescription, parseSemver, uuid4
 
 // Module 9821
-import _mod9804 from "module_9804" /* 9804 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
+import _mod9811 from "module_9811" /* 9811 */;
+import _mod9816 from "module_9816" /* 9816 */;
+import _mod9819 from "module_9819" /* 9819 */;
 
-let c3;
+const re2 = /^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-((?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$/;
 
-let obj = { PENDING: 0, RESOLVED: 1, REJECTED: 2 };
-obj[0] = "PENDING";
-obj[1] = "RESOLVED";
-obj[2] = "REJECTED";
-class SyncPromise {
-  constructor(fn) {
-    const self = this;
-    _classCallCheck(this, SyncPromise);
-    const __init = SyncPromise.prototype.__init;
-    __init.call(self);
-    const __init2 = tmp.prototype.__init2;
-    __init2.call(self);
-    const __init3 = tmp.prototype.__init3;
-    __init3.call(self);
-    const __init4 = tmp.prototype.__init4;
-    __init4.call(self);
-    self._state = obj.PENDING;
-    self._handlers = [];
-    try {
-      fn(self._resolve, self._reject);
-    } catch (tmp5) {
-      self._reject(tmp5);
-    }
+export function addContextToFrame(arr, lineno) {
+  let num = arg2;
+  if (arg2 === undefined) {
+    num = 5;
   }
-}
-const entry = {
-  key: "then",
-  value: function then(arg0, arg1) {
-    const self = this;
-    let closure_1 = arg0;
-    let closure_0 = arg1;
-    obj = Object.create(SyncPromise.prototype);
-    SyncPromise((arg0, arg1) => {
-      closure_0 = arg0;
-      closure_1 = arg1;
-      const _handlers = self._handlers;
-      const items = [
-        false,
-        (arg0) => {
-          if (closure_1) {
-            try {
-              closure_0(tmp(arg0));
-            } catch (tmp6) {
-              closure_1(tmp6);
-            }
-          } else {
-            closure_0(arg0);
-          }
-        },
-        (arg0) => {
-          if (closure_0) {
-            try {
-              closure_0(tmp(arg0));
-            } catch (tmp6) {
-              closure_1(tmp6);
-            }
-          } else {
-            closure_1(arg0);
-          }
-        }
-      ];
-      _handlers.push(items);
-      self._executeHandlers();
+  if (undefined !== lineno.lineno) {
+    const _Math2 = Math;
+    const _Math3 = Math;
+    const bound = Math.max(Math.min(length - 1, lineno.lineno - 1), 0);
+    const _Math4 = Math;
+    const substr = arr.slice(Math.max(0, bound - num), bound);
+    lineno.pre_context = substr.map((item) => {
+      const obj = _mod9819;
+      return obj.snipLine(item, 0);
     });
-    return obj;
+    const _Math5 = Math;
+    const bound1 = Math.min(length - 1, bound);
+    let num2 = lineno.colno;
+    const snipLine = _mod9819.snipLine;
+    _mod9819;
+    const tmp8 = arr[bound1];
+    if (!num2) {
+      num2 = 0;
+    }
+    lineno.context_line = snipLine(tmp8, num2);
+    const _Math = Math;
+    const substr1 = arr.slice(Math.min(bound + 1, length), bound + 1 + num);
+    lineno.post_context = substr1.map((item) => {
+      const obj = _mod9819;
+      return obj.snipLine(item, 0);
+    });
   }
-};
-let items = [
-  entry,
-  {
-    key: "catch",
-    value: function _catch(arg0) {
-      return this.then((result) => result, arg0);
-    }
-  },
-  {
-    key: "finally",
-    value: function _finally(arg0) {
-      const self = this;
-      let closure_0 = arg0;
-      obj = Object.create(SyncPromise.prototype);
-      SyncPromise((arg0, arg1) => {
-        let closure_1;
-        closure_0 = arg0;
-        const nextPromise = arg1.then((result) => {
-          c3 = false;
-          let closure_1_2 = result;
-          if (closure_0) {
-            tmp();
-          }
-        }, (arg0) => {
-          c3 = true;
-          let closure_1_2 = arg0;
-          if (closure_0) {
-            tmp();
-          }
-        });
-        return nextPromise.then(() => {
-          const tmp = c3;
-          if (tmp) {
-            closure_1(closure_1_2);
-          } else {
-            closure_0(closure_1_2);
-          }
-        });
-      });
-      return obj;
-    }
-  },
-  {
-    key: "__init",
-    value: function __init() {
-      const self = this;
-      this._resolve = (arg0) => {
-        self._setResult(obj.RESOLVED, arg0);
-      };
-    }
-  },
-  {
-    key: "__init2",
-    value: function __init2() {
-      const self = this;
-      this._reject = (arg0) => {
-        self._setResult(obj.REJECTED, arg0);
-      };
-    }
-  },
-  {
-    key: "__init3",
-    value: function __init3() {
-      const self = this;
-      this._setResult = (_state, _value) => {
-        if (self._state === self.PENDING) {
-          const obj2 = _mod9804;
-          if (obj2.isThenable(_value)) {
-            _value.then(self._resolve, self._reject);
-          } else {
-            self._state = _state;
-            self._value = _value;
-            self._executeHandlers();
-          }
-        }
-      };
-    }
-  },
-  {
-    key: "__init4",
-    value: function __init4() {
-      const self = this;
-      this._executeHandlers = () => {
-        let _state;
-        if (self._state !== obj.PENDING) {
-          const _handlers = tmp._handlers;
-          const substr = _handlers.slice();
-          self._handlers = [];
-          const item = substr.forEach((item) => {
-            if (!item[0]) {
-              const tmp2 = constants;
-              if (_state._state === constants.RESOLVED) {
-                item[1](_state._value);
-              }
-              if (_state._state === tmp2.REJECTED) {
-                item[2](_state._value);
-              }
-              item[0] = true;
-            }
-          });
-        }
-      };
+}
+export function addExceptionMechanism(exception, data) {
+  let first;
+  if (exception.exception) {
+    if (exception.exception.values) {
+      first = exception.exception.values[0];
     }
   }
-];
-const _moduleResult = _createClass(SyncPromise, items);
-const SyncPromise_export = _moduleResult;
-
-export { SyncPromise_export as SyncPromise };
-export function rejectedSyncPromise(arg0) {
-  let closure_0 = arg0;
-  const tmp = new _moduleResult((arg0, fn) => {
-    fn(closure_0);
-  });
+  if (first) {
+    const mechanism = first.mechanism;
+    const obj = { type: "generic", handled: true };
+    const merged = Object.assign(mechanism);
+    const merged1 = Object.assign(data);
+    first.mechanism = obj;
+    if (data) {
+      if ("data" in data) {
+        const obj2 = {};
+        const merged2 = Object.assign(tmp9);
+        const merged3 = Object.assign(data.data);
+        first.mechanism.data = obj2;
+      }
+    }
+  }
+}
+export function addExceptionTypeValue(exception, arg1, arg2) {
+  const tmp = exception.exception || {};
+  exception.exception = tmp;
+  const tmp2 = tmp.values || [];
+  tmp.values = tmp2;
+  const iter = tmp2[0] || {};
+  tmp2[0] = iter;
+  if (!iter.value) {
+    iter.value = arg1 || "";
+  }
+  if (!iter.type) {
+    iter.type = arg2 || "Error";
+  }
+}
+export function arrayify(arg0) {
+  let tmp = arg0;
+  if (!Array.isArray(arg0)) {
+    const items = [arg0];
+    tmp = items;
+  }
   return tmp;
 }
-export function resolvedSyncPromise(arg0) {
-  let closure_0 = arg0;
-  const tmp = new _moduleResult((fn) => {
-    fn(closure_0);
-  });
-  return tmp;
+export function checkOrSetAlreadyCaught(__sentry_captured__) {
+  function isAlreadyCaptured(__sentry_captured__) {
+    try {
+      return __sentry_captured__.__sentry_captured__;
+    } catch (err) {
+    }
+  }
+  if (isAlreadyCaptured(__sentry_captured__)) {
+    return true;
+  } else {
+    try {
+      const obj = _mod9816;
+      const result = obj.addNonEnumerableProperty(__sentry_captured__, "__sentry_captured__", true);
+    } catch (err) {
+    }
+    return false;
+  }
+}
+export function getEventDescription(exception) {
+  let event_id;
+  let message;
+  ({ message, event_id } = exception);
+  if (message) {
+    return message;
+  } else {
+    let tmp2;
+    let first;
+    if (exception.exception) {
+      if (exception.exception.values) {
+        first = exception.exception.values[0];
+      }
+    }
+    if (first) {
+      if (first.type) {
+        let combined;
+        if (first.value) {
+          const _HermesInternal = HermesInternal;
+          combined = "" + first.type + ": " + first.value;
+        }
+        tmp2 = combined;
+      }
+      combined = first.type || first.value || event_id || "<unknown>";
+    } else {
+      tmp2 = event_id || "<unknown>";
+    }
+    return tmp2;
+  }
+}
+export function parseSemver(str) {
+  let tmp5;
+  let tmp6;
+  let tmp7;
+  const tmp = str.match(re2) || [];
+  str = tmp[1];
+  const _parseInt = parseInt;
+  if (!str) {
+    str = "";
+  }
+  const _parseIntResult = _parseInt(str, 10);
+  let str2 = tmp[2];
+  const _parseInt2 = parseInt;
+  if (!str2) {
+    str2 = "";
+  }
+  const _parseInt2Result = _parseInt2(str2, 10);
+  let str3 = tmp[3];
+  const _parseInt3 = parseInt;
+  if (!str3) {
+    str3 = "";
+  }
+  const _parseInt3Result = _parseInt3(str3, 10);
+  const obj = { buildmetadata: tmp[5], major: tmp5, minor: tmp6, patch: tmp7, prerelease: tmp[4] };
+  tmp5 = undefined;
+  if (!isNaN(_parseIntResult)) {
+    tmp5 = _parseIntResult;
+  }
+  tmp6 = undefined;
+  if (!isNaN(_parseInt2Result)) {
+    tmp6 = _parseInt2Result;
+  }
+  tmp7 = undefined;
+  if (!isNaN(_parseInt3Result)) {
+    tmp7 = _parseInt3Result;
+  }
+  return obj;
+}
+export function uuid4() {
+  const GLOBAL_OBJ = _mod9811.GLOBAL_OBJ;
+  const obj = GLOBAL_OBJ.crypto || GLOBAL_OBJ.msCrypto;
+  function getRandomByte() {
+    return 16 * Math.random();
+  }
+  try {
+    if (obj) {
+      if (obj.randomUUID) {
+        let str = obj.randomUUID();
+        return str.replace(/-/g, "");
+      }
+    }
+    const getRandomValues = obj && obj.getRandomValues;
+    if (getRandomValues) {
+      getRandomByte = function getRandomByte() {
+        const uint8Array = new Uint8Array(1);
+        const randomValues = obj.getRandomValues(uint8Array);
+        return uint8Array[0];
+      };
+    }
+    const replace = "10000000100040008000100000000000".replace;
+    return "10000000100040008000100000000000".replace(/[018]/g, (arg0) => {
+      const str = arg0 ^ (15 & getRandomByte()) >> arg0 / 4;
+      return str.toString(16);
+    });
+  } catch (err) {
+  }
 }

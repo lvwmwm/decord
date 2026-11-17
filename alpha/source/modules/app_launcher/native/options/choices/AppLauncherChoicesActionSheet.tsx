@@ -1,14 +1,14 @@
-// Module ID: 13500
-// Function ID: 13501
+// Module ID: 13656
+// Function ID: 13657
 // Name: AppLauncherChoicesActionSheet
-// Dependencies: [32, 19, 1501, 21, 7888, 1630, 1380, 6952, 7747, 5542, 7771, 13501, 13502, 2]
+// Dependencies: [32, 19, 1501, 21, 7898, 1630, 1380, 6960, 7757, 5546, 7781, 13657, 13658, 2]
 // Exports: default
 
-// Module 13500 (AppLauncherChoicesActionSheet)
+// Module 13656 (AppLauncherChoicesActionSheet)
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6952 */;
-import defaultMVCPConfig from "defaultMVCPConfig" /* 7888 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6960 */;
+import defaultMVCPConfig from "defaultMVCPConfig" /* 7898 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

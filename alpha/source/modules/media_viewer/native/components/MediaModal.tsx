@@ -1,31 +1,31 @@
-// Module ID: 10191
-// Function ID: 10192
+// Module ID: 10636
+// Function ID: 10637
 // Name: MediaModal
-// Dependencies: [19, 17, 10192, 2120, 1072, 21, 8628, 10193, 8630, 504, 1380, 8633, 10198, 10201, 10203, 9730, 2020, 10041, 5544, 5545, 5542, 10204, 2121, 15197, 8631, 15216, 15218, 15223, 15228, 15229, 2]
+// Dependencies: [19, 17, 10637, 2120, 1072, 21, 8639, 10638, 8641, 504, 1380, 8644, 10643, 10646, 10648, 9743, 2020, 10054, 5548, 5549, 5546, 10649, 2121, 10761, 8642, 11254, 11256, 11261, 11266, 11267, 2]
 // Exports: default
 
-// Module 10191 (MediaModal)
+// Module 10636 (MediaModal)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import HapticUtils from "HapticUtils" /* 5544 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5545 */;
-import useVideoControls from "useVideoControls" /* 8630 */;
-import MediaSourceUtil from "MediaSourceUtil" /* 8633 */;
-import common_Video from "common/Video" /* 9730 */;
-import MediaModalPortal from "MediaModalPortal" /* 10198 */;
-import MediaModalTiktok from "MediaModalTiktok" /* 10201 */;
-import MediaModalWebVideoFile from "MediaModalWebVideoFile" /* 10203 */;
-import MediaModalOverlayDefault from "MediaModalOverlay" /* 15197 */;
-import MediaModalYoutubeDefault from "MediaModalYoutube" /* 15216 */;
-import MediaModalWebEmbedDefault from "MediaModalWebEmbed" /* 15218 */;
-import MediaModalVideoDefault from "MediaModalVideo" /* 15223 */;
-import MediaModalImageDefault from "MediaModalImage" /* 15228 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
+import HapticUtils from "HapticUtils" /* 5548 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5549 */;
+import useVideoControls from "useVideoControls" /* 8641 */;
+import MediaSourceUtil from "MediaSourceUtil" /* 8644 */;
+import common_Video from "common/Video" /* 9743 */;
+import MediaModalPortal from "MediaModalPortal" /* 10643 */;
+import MediaModalTiktok from "MediaModalTiktok" /* 10646 */;
+import MediaModalWebVideoFile from "MediaModalWebVideoFile" /* 10648 */;
+import MediaModalOverlayDefault from "MediaModalOverlay" /* 10761 */;
+import MediaModalYoutubeDefault from "MediaModalYoutube" /* 11254 */;
+import MediaModalWebEmbedDefault from "MediaModalWebEmbed" /* 11256 */;
+import MediaModalVideoDefault from "MediaModalVideo" /* 11261 */;
+import MediaModalImageDefault from "MediaModalImage" /* 11266 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AppFreezeStore from "AppFreezeStore" /* 10192 */;
+import AppFreezeStore from "AppFreezeStore" /* 10637 */;
 import AppStateStore from "AppStateStore" /* 2120 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -152,7 +152,7 @@ export default function MediaModal(initialIndex) {
         portalControls = tmpResult5.createWebFileVideoControls();
       } else {
         const tmpResult6 = common_Video;
-        portalControls = tmpResult6.createVideoControls(tmp(8630).setPausedState);
+        portalControls = tmpResult6.createVideoControls(tmp(8641).setPausedState);
       }
       tmp5.current[combined] = portalControls;
       return portalControls;
@@ -210,7 +210,7 @@ export default function MediaModal(initialIndex) {
         const result = tmp2Result.triggerHapticFeedback(haptics_HapticFeedbackTypesDefault.IMPACT_LIGHT);
         const obj2 = { source: selectedMediaSource, disableDownload, shareable: tmp };
         const obj3 = ActionSheetActionCreatorsDefault;
-        obj3.openLazy(asyncRequire(10204, tmp3.paths), "MediaShareActionSheet", obj2);
+        obj3.openLazy(asyncRequire(10649, tmp3.paths), "MediaShareActionSheet", obj2);
       }
     }
   }, items5);

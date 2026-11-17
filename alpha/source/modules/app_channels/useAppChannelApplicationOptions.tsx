@@ -1,10 +1,10 @@
-// Module ID: 8149
-// Function ID: 8150
+// Module ID: 8160
+// Function ID: 8161
 // Name: useAppChannelApplicationOptions
-// Dependencies: [19, 8150, 5967, 7055, 2]
+// Dependencies: [19, 8161, 5971, 7063, 2]
 // Exports: useAppChannelApplicationOptions
 
-// Module 8149 (useAppChannelApplicationOptions)
+// Module 8160 (useAppChannelApplicationOptions)
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

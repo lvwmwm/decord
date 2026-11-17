@@ -1,19 +1,19 @@
-// Module ID: 18595
-// Function ID: 18596
+// Module ID: 18636
+// Function ID: 18637
 // Name: ParentalControlsExplicitMediaFiltersFriendsDMsSetting
-// Dependencies: [8740, 9202, 17346, 8853, 17350, 1113, 17356, 1196, 12406, 2]
+// Dependencies: [8751, 9213, 17383, 8864, 17387, 1113, 17393, 1196, 12612, 2]
 
-// Module 18595 (ParentalControlsExplicitMediaFiltersFriendsDMsSetting)
+// Module 18636 (ParentalControlsExplicitMediaFiltersFriendsDMsSetting)
 import intl3 from "intl" /* 1113 */;
-import SettingsConstants from "SettingsConstants" /* 9202 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 17346 */;
-import FamilyCenterControlledSettingsUtils from "FamilyCenterControlledSettingsUtils" /* 17350 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 8740 */;
-import SettingBuilders from "SettingBuilders" /* 12406 */;
+import SettingsConstants from "SettingsConstants" /* 9213 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 17383 */;
+import FamilyCenterControlledSettingsUtils from "FamilyCenterControlledSettingsUtils" /* 17387 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 8751 */;
+import SettingBuilders from "SettingBuilders" /* 12612 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ExplicitMediaRedactionUtils = tmp(8853);
+const ExplicitMediaRedactionUtils = tmp(8864);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 let obj = {
   useTitle: function getTitle() {
@@ -40,7 +40,7 @@ let obj = {
     let items;
     const selectedTeenId = FamilyCenterStore.getSelectedTeenId();
     if (null != selectedTeenId) {
-      let obj = selectedTeenId(17350);
+      let obj = selectedTeenId(17387);
       const explicitContentFriendDm = obj.getExplicitContentSettingOrDefault(selectedTeenId).explicitContentFriendDm;
       const intl = selectedTeenId(1113).intl;
       const stringResult = intl.string(selectedTeenId(1113).t.GYpoAq);
@@ -55,8 +55,8 @@ let obj = {
         currentValue: explicitContentFriendDm,
         excluded: items
       };
-      const handleSensitiveMediaFilterPress = selectedTeenId(17356).handleSensitiveMediaFilterPress;
-      selectedTeenId(17356);
+      const handleSensitiveMediaFilterPress = selectedTeenId(17393).handleSensitiveMediaFilterPress;
+      selectedTeenId(17393);
       intl2 = selectedTeenId(1113).intl;
       items = [selectedTeenId(1196).ExplicitContentRedaction.SHOW];
       const result = handleSensitiveMediaFilterPress(obj2);

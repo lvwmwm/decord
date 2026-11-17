@@ -1,10 +1,10 @@
-// Module ID: 10014
-// Function ID: 10015
+// Module ID: 10027
+// Function ID: 10028
 // Name: PremiumNitroHomeUtils
 // Dependencies: [1072, 1256, 2]
 // Exports: trackIfScrolledToBottom
 
-// Module 10014 (PremiumNitroHomeUtils)
+// Module 10027 (PremiumNitroHomeUtils)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import size from "module_2" /* 2 */;

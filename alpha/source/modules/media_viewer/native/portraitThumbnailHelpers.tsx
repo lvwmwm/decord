@@ -1,10 +1,10 @@
-// Module ID: 10196
-// Function ID: 10197
+// Module ID: 10641
+// Function ID: 10642
 // Name: portraitThumbnailHelpers
 // Dependencies: [2]
 // Exports: lerpVarWidthThumbnailScrollBounds
 
-// Module 10196 (portraitThumbnailHelpers)
+// Module 10641 (portraitThumbnailHelpers)
 import size from "module_2" /* 2 */;
 
 let tmp2;

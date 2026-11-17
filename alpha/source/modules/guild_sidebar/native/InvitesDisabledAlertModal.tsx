@@ -1,13 +1,13 @@
-// Module ID: 14695
-// Function ID: 14696
+// Module ID: 13773
+// Function ID: 13774
 // Name: InvitesDisabledAlertModal
-// Dependencies: [19, 21, 6264, 1113, 6264, 2]
+// Dependencies: [19, 21, 6272, 1113, 6272, 2]
 // Exports: default
 
-// Module 14695 (InvitesDisabledAlertModal)
+// Module 13773 (InvitesDisabledAlertModal)
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1113 */;
-import AlertModal2 from "AlertModal" /* 6264 */;
+import AlertModal2 from "AlertModal" /* 6272 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

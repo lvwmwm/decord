@@ -1,11 +1,11 @@
-// Module ID: 12725
-// Function ID: 12726
+// Module ID: 11331
+// Function ID: 11332
 // Name: usePipDimensions
-// Dependencies: [19, 12726, 1496, 10041, 2]
+// Dependencies: [19, 11332, 1496, 10054, 2]
 // Exports: default
 
-// Module 12725 (usePipDimensions)
-import DeviceOrientation from "DeviceOrientation" /* 10041 */;
+// Module 11331 (usePipDimensions)
+import DeviceOrientation from "DeviceOrientation" /* 10054 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export default function usePipDimensions(forcedOrientation) {
     let tmp3 = width > height;
     let tmp7 = forcedOrientation === DeviceOrientation.OrientationType.LANDSCAPE;
     if (!tmp7) {
-      tmp7 = tmp3 && tmp4 !== tmp5(10041).OrientationType.PORTRAIT;
+      tmp7 = tmp3 && tmp4 !== tmp5(10054).OrientationType.PORTRAIT;
       tmp3 && forcedOrientation !== DeviceOrientation.OrientationType.PORTRAIT;
     }
     height = 96;

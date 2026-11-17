@@ -1,28 +1,28 @@
-// Module ID: 13213
-// Function ID: 13214
+// Module ID: 14446
+// Function ID: 14447
 // Name: useConjureAppSettingsForm
-// Dependencies: [5, 32, 19, 17, 5236, 5177, 5248, 1388, 7379, 21, 5306, 575, 504, 13214, 13216, 13217, 1113, 4131, 13218, 13221, 7746, 13222, 7733, 7745, 7747, 13233, 7859, 7619, 5919, 5926, 7260, 7443, 7458, 5944, 5542, 11964, 13215, 13238, 2]
+// Dependencies: [5, 32, 19, 17, 5240, 5181, 5252, 1388, 7389, 21, 5310, 575, 504, 14447, 14449, 14450, 1113, 4133, 14451, 14454, 7756, 14455, 7743, 7755, 7757, 14466, 7869, 7629, 5923, 5930, 7270, 7453, 7468, 5948, 5546, 12409, 14448, 14470, 2]
 // Exports: default
 
-// Module 13213 (useConjureAppSettingsForm)
+// Module 14446 (useConjureAppSettingsForm)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl9 from "intl" /* 1113 */;
-import _modDef4131 from "module_4131" /* 4131 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5542 */;
-import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11964 */;
-import conjureSettingValues from "conjureSettingValues" /* 13216 */;
-import ConjureGuildPickerSheetDefault from "ConjureGuildPickerSheet" /* 13238 */;
+import _modDef4133 from "module_4133" /* 4133 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5546 */;
+import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 12409 */;
+import conjureSettingValues from "conjureSettingValues" /* 14449 */;
+import ConjureGuildPickerSheetDefault from "ConjureGuildPickerSheet" /* 14470 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildChannelStore from "GuildChannelStore" /* 5236 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import RelationshipStore from "RelationshipStore" /* 5248 */;
+import GuildChannelStore from "GuildChannelStore" /* 5240 */;
+import GuildStore from "GuildStore" /* 5181 */;
+import RelationshipStore from "RelationshipStore" /* 5252 */;
 import UserStore from "UserStore" /* 1388 */;
-import ConjureSettingsStore from "ConjureSettingsStore" /* 7379 */;
+import ConjureSettingsStore from "ConjureSettingsStore" /* 7389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let c5, channels, map;
@@ -35,7 +35,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp;
-const useConjureSettingPickerOptions = tmp(13214);
+const useConjureSettingPickerOptions = tmp(14447);
 function ConjureChannelSettingRow(guildId) {
   let TableRowTrailingText;
   let disabled;
@@ -65,14 +65,14 @@ function ConjureChannelSettingRow(guildId) {
   if (null != guildId) {
     if (null != stateFromStores) {
       let channelName;
-      const tmpResult = tmp(7260);
+      const tmpResult = tmp(7270);
       const result = tmpResult.conjureSettingChannels(stateFromStores, def.channel_filter);
       c4 = result;
       found = result.find((id) => id.id === dependencyMap);
       if (found == null) {
         found = null;
       }
-      const TableRowGroup = tmp(7746).TableRowGroup;
+      const TableRowGroup = tmp(7756).TableRowGroup;
       let obj2 = {
         label: def.label,
         subLabel: tmp5Result,
@@ -92,7 +92,7 @@ function ConjureChannelSettingRow(guildId) {
                 guild: GuildStore.getGuild(guildId),
                 channels,
                 selectedChannel: found,
-                noChannelOptionLabel: intl.string(_modDef4131["jtBVV+"]),
+                noChannelOptionLabel: intl.string(_modDef4133["jtBVV+"]),
                 onSelect(id) {
                   let str;
                   const tmp = closure_1_3;
@@ -112,21 +112,21 @@ function ConjureChannelSettingRow(guildId) {
             }
       };
       tmp5Result = undefined;
-      const TableRow = tmp(7443).TableRow;
+      const TableRow = tmp(7453).TableRow;
       if (null != hint) {
         let obj3 = { variant: "body-xs/medium", color: "text-subtle", children: tmpResult3.conjureLinkedNodes(hint, "body-xs/medium") };
-        const Text = tmp(5919).Text;
+        const Text = tmp(5923).Text;
         let str = "body-xs/medium";
-        tmpResult3 = tmp(13222);
+        tmpResult3 = tmp(14455);
         tmp5Result = tmp5(Text, obj3);
       }
-      TableRowTrailingText = tmp(7458).TableRowTrailingText;
+      TableRowTrailingText = tmp(7468).TableRowTrailingText;
       if (null != found) {
-        const tmpResult4 = tmp(5944);
+        const tmpResult4 = tmp(5948);
         channelName = tmpResult4.computeChannelName(found, UserStore, RelationshipStore, true);
       } else {
         let intl = tmp(1113).intl;
-        channelName = intl.string(def(4131).iZIF9m);
+        channelName = intl.string(def(4133).iZIF9m);
       }
       const obj4 = { hasIcons: false, children: closure_12(TableRow, obj2) };
       obj5 = { text: channelName };
@@ -153,12 +153,12 @@ function ConjurePickerSettingRow(guildId) {
   let tmp = def;
   let tmp2 = dependencyMap;
   ({ disabled, fallback } = guildId);
-  let tmp3 = def(13214)(guildId, def);
+  let tmp3 = def(14447)(guildId, def);
   let tmp4 = guildId;
-  let obj = guildId(13214);
+  let obj = guildId(14447);
   const result = obj.conjureSettingPickedIds(value);
   let c3 = result;
-  let tmp5 = guildId(13215);
+  let tmp5 = guildId(14448);
   let tmp6 = null;
   const useConjureMemberRequests = tmp5.useConjureMemberRequests;
   if ("user" === def.type) {
@@ -168,14 +168,14 @@ function ConjurePickerSettingRow(guildId) {
   if (null != guildId) {
     if (null != tmp3) {
       let formatToPlainStringResult;
-      const tmp4Result = tmp4(13214);
+      const tmp4Result = tmp4(14447);
       const withSavedPicksResult = tmp4Result.withSavedPicks(tmp3, value, (id) => ({ id, label: id }));
       c4 = withSavedPicksResult;
       closure_5 = tmp12;
       if (true === def.multiple) {
         const intl2 = tmp4(1113).intl;
         let obj2 = { count: result.length };
-        formatToPlainStringResult = intl2.formatToPlainString(tmp(4131)["LPs/Pv"], obj2);
+        formatToPlainStringResult = intl2.formatToPlainString(tmp(4133)["LPs/Pv"], obj2);
       } else {
         const found = withSavedPicksResult.find((id) => id.id === c3[0]);
         formatToPlainStringResult = undefined;
@@ -184,16 +184,16 @@ function ConjurePickerSettingRow(guildId) {
         }
         if (formatToPlainStringResult == null) {
           const intl = tmp4(1113).intl;
-          formatToPlainStringResult = intl.string(tmp(4131).rn7w7I);
+          formatToPlainStringResult = intl.string(tmp(4133).rn7w7I);
         }
       }
-      const TableRowGroup = tmp4(7746).TableRowGroup;
+      const TableRowGroup = tmp4(7756).TableRowGroup;
       const obj3 = {
         label: def.label,
         subLabel: tmp10Result,
         arrow: true,
         disabled,
-        trailing: closure_12(tmp4(7458).TableRowTrailingText, obj6),
+        trailing: closure_12(tmp4(7468).TableRowTrailingText, obj6),
         onPress() {
               let num;
               let tmp2 = dependencyMap;
@@ -231,12 +231,12 @@ function ConjurePickerSettingRow(guildId) {
             }
       };
       tmp10Result = undefined;
-      const TableRow = tmp4(7443).TableRow;
+      const TableRow = tmp4(7453).TableRow;
       if (null != hint) {
         const obj4 = { variant: "body-xs/medium", color: "text-subtle", children: tmp4Result2.conjureLinkedNodes(hint, "body-xs/medium") };
-        const Text = tmp4(5919).Text;
+        const Text = tmp4(5923).Text;
         let str = "body-xs/medium";
-        tmp4Result2 = tmp4(13222);
+        tmp4Result2 = tmp4(14455);
         tmp10Result = tmp10(Text, obj4);
       }
       const obj5 = { hasIcons: false, children: closure_12(TableRow, obj3) };

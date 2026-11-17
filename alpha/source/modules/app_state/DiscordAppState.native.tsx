@@ -1,9 +1,9 @@
-// Module ID: 7047
-// Function ID: 7048
+// Module ID: 7055
+// Function ID: 7056
 // Name: DiscordAppState
 // Dependencies: [2120, 504, 2]
 
-// Module 7047 (DiscordAppState)
+// Module 7055 (DiscordAppState)
 import get_initialized from "get initialized" /* 504 */;
 import AppStateStore from "AppStateStore" /* 2120 */;
 import size from "module_2" /* 2 */;
@@ -14,6 +14,12 @@ let obj = {
   },
   getState() {
     return AppStateStore.getState();
+  },
+  useState() {
+    let state;
+    const items = [AppStateStore];
+    const obj = get_initialized;
+    return obj.useStateFromStores(items, () => state.getState());
   },
   useCanUIRequestGatewaySocket() {
     let state;

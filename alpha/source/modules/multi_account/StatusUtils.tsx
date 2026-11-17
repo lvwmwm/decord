@@ -1,10 +1,10 @@
-// Module ID: 11023
-// Function ID: 11024
+// Module ID: 11789
+// Function ID: 11790
 // Name: StatusUtils
 // Dependencies: [1113, 2]
 // Exports: getStatusExpiryParts
 
-// Module 11023 (StatusUtils)
+// Module 11789 (StatusUtils)
 import intl from "intl" /* 1113 */;
 import size from "module_2" /* 2 */;
 

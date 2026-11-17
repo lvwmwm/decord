@@ -1,29 +1,29 @@
-// Module ID: 13164
-// Function ID: 13165
+// Module ID: 14405
+// Function ID: 14406
 // Name: conjurePublishEval
-// Dependencies: [32, 5, 19, 5177, 1388, 7321, 7377, 13165, 13166, 504, 572, 4131, 1113, 13167, 2]
+// Dependencies: [32, 5, 19, 5181, 1388, 7331, 7387, 14406, 14407, 504, 572, 4133, 1113, 14408, 2]
 // Exports: conjurePublishEvalDimensionLabel, conjurePublishEvalScoreLabel, getPendingConjurePublishEval, isConjurePublishEvalUser, requestConjurePublishEval, useConjurePublishEvalForm, useIsConjurePublishEvalUser, usePendingConjurePublishEval
 
-// Module 13164 (conjurePublishEval)
+// Module 14405 (conjurePublishEval)
 import get_initialized from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl3 from "intl" /* 1113 */;
-import _modDef4131 from "module_4131" /* 4131 */;
-import ConjurePublishEvalTypes from "ConjurePublishEvalTypes" /* 13166 */;
+import _modDef4133 from "module_4133" /* 4133 */;
+import ConjurePublishEvalTypes from "ConjurePublishEvalTypes" /* 14407 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5177 */;
+import GuildStore from "GuildStore" /* 5181 */;
 import UserStore from "UserStore" /* 1388 */;
-import ConjureChatStore from "ConjureChatStore" /* 7321 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 7377 */;
-import ConjurePublishEvalStore from "ConjurePublishEvalStore" /* 13165 */;
+import ConjureChatStore from "ConjureChatStore" /* 7331 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 7387 */;
+import ConjurePublishEvalStore from "ConjurePublishEvalStore" /* 14406 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, c1, c3, c6, c7, importDefault, publishStatus;
 
-const f106643 = (item) => null != guild.getGuild(item);
+const f109481 = (item) => null != guild.getGuild(item);
 let obj = function _submitConjurePublishEval() {
   obj = _asyncToGenerator(async function(arg0, value, arg2) {
     let published_revision;
@@ -119,13 +119,13 @@ let obj = function _submitConjurePublishEval() {
 let _asyncToGenerator = _asyncToGenerator_mod;
 let react = react_mod;
 let closure_11 = { quality: null, metExpectations: null, speed: null };
-obj = { quality: _modDef4131["N94/JU"], metExpectations: _modDef4131["7mnit0"], speed: _modDef4131["J/xftE"] };
+obj = { quality: _modDef4133["N94/JU"], metExpectations: _modDef4133["7mnit0"], speed: _modDef4133["J/xftE"] };
 const result = size.fileFinishedImporting("modules/conjure/publish_eval/conjurePublishEval.tsx");
 
 export function isConjurePublishEvalUser() {
   let closure_0 = GuildStore;
   const CONJURE_PUBLISH_EVAL_GUILD_IDS = ConjurePublishEvalTypes.CONJURE_PUBLISH_EVAL_GUILD_IDS;
-  return CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f106643);
+  return CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f109481);
 }
 export function useIsConjurePublishEvalUser() {
   const items = [GuildStore];
@@ -133,7 +133,7 @@ export function useIsConjurePublishEvalUser() {
   return obj.useStateFromStores(items, () => {
     let closure_0 = GuildStore;
     const CONJURE_PUBLISH_EVAL_GUILD_IDS = require("ConjurePublishEvalTypes").CONJURE_PUBLISH_EVAL_GUILD_IDS;
-    return CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f106643);
+    return CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f109481);
   });
 }
 export function getPendingConjurePublishEval() {
@@ -151,7 +151,7 @@ export function getPendingConjurePublishEval() {
       let closure_0 = GuildStore;
       const CONJURE_PUBLISH_EVAL_GUILD_IDS = ConjurePublishEvalTypes.CONJURE_PUBLISH_EVAL_GUILD_IDS;
       tmp2 = null;
-      if (CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f106643)) {
+      if (CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f109481)) {
         tmp2 = pending;
       }
     }
@@ -182,7 +182,7 @@ export function usePendingConjurePublishEval(projectId) {
         closure_0 = GuildStore;
         const CONJURE_PUBLISH_EVAL_GUILD_IDS = ConjurePublishEvalTypes.CONJURE_PUBLISH_EVAL_GUILD_IDS;
         tmp3 = null;
-        if (CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f106643)) {
+        if (CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f109481)) {
           tmp3 = pending;
         }
       }
@@ -201,7 +201,7 @@ export function requestConjurePublishEval(projectId) {
   if (someResult) {
     let closure_0 = GuildStore;
     const CONJURE_PUBLISH_EVAL_GUILD_IDS = ConjurePublishEvalTypes.CONJURE_PUBLISH_EVAL_GUILD_IDS;
-    someResult = CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f106643);
+    someResult = CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f109481);
   }
   if (someResult) {
     obj = { userId: id1, projectId, publishTurnId: null, createdAt: null };
@@ -243,7 +243,7 @@ export function conjurePublishEvalScoreLabel(dimension, score) {
   const intl = intl3.intl;
   const formatToPlainString = intl.formatToPlainString;
   obj = { score, dimension: intl2.string(obj[dimension]) };
-  const fML8aJ = _modDef4131.fML8aJ;
+  const fML8aJ = _modDef4133.fML8aJ;
   intl2 = intl3.intl;
   return formatToPlainString(fML8aJ, obj);
 }
@@ -369,7 +369,7 @@ export function useConjurePublishEvalForm(pending) {
   const tmp13 = _require;
   if (first2) {
     const intl = tmp13(tmp14[12]).intl;
-    stringResult = intl.string(require("module_4131").Nu6mEB);
+    stringResult = intl.string(require("module_4133").Nu6mEB);
   }
   return obj3;
 }

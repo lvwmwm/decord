@@ -1,25 +1,25 @@
-// Module ID: 11243
-// Function ID: 11244
+// Module ID: 11948
+// Function ID: 11949
 // Name: ExpressionPickerActionSheet
-// Dependencies: [19, 5155, 5557, 11244, 21, 1655, 5493, 1628, 504, 11245, 5542, 1496, 1630, 5882, 1380, 11246, 5556, 11247, 2]
+// Dependencies: [19, 5159, 5561, 11949, 21, 1655, 5497, 1628, 504, 11950, 5546, 1496, 1630, 5886, 1380, 11951, 5560, 11952, 2]
 // Exports: default
 
-// Module 11243 (ExpressionPickerActionSheet)
+// Module 11948 (ExpressionPickerActionSheet)
 import get_initialized from "get initialized" /* 504 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
 import KeyboardTypes from "KeyboardTypes" /* 1628 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import useKeyboardType from "useKeyboardType" /* 5493 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5557 */;
-import NavigatorConstants from "NavigatorConstants" /* 5882 */;
-import StickerPickerConstants from "StickerPickerConstants" /* 11244 */;
-import react_native from "react-native" /* 11245 */;
-import ExpressionPickerDefault from "ExpressionPicker" /* 11247 */;
+import useKeyboardType from "useKeyboardType" /* 5497 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5561 */;
+import NavigatorConstants from "NavigatorConstants" /* 5886 */;
+import StickerPickerConstants from "StickerPickerConstants" /* 11949 */;
+import react_native from "react-native" /* 11950 */;
+import ExpressionPickerDefault from "ExpressionPicker" /* 11952 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
+import ChannelStore from "ChannelStore" /* 5159 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -58,12 +58,12 @@ export default function ExpressionPickerActionSheet(arg0) {
     const tmp15 = closure_8;
     if (isIOSResult) {
       const obj4 = { animatedSheetIndex: sharedValue, followSystemKeyboard: true, constrainToActionSheet: true };
-      isIOSResult = closure_7(tmp6(11246), obj4);
+      isIOSResult = closure_7(tmp6(11951), obj4);
     }
     const obj5 = { children: items1 };
     items1 = [isIOSResult, ];
     const obj6 = { scrollable: true, animatedIndex: sharedValue, startHeight: height * closure_5, containerHeight: diff, onDismiss, children: closure_7(ExpressionPickerDefault, obj7) };
-    const BottomSheet = tmp2(5556).BottomSheet;
+    const BottomSheet = tmp2(5560).BottomSheet;
     obj7 = {
       bottomSheetRef: ref,
       bottomSheetIndex: sharedValue,

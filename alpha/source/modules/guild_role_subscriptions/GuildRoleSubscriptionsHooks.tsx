@@ -1,19 +1,19 @@
-// Module ID: 17833
-// Function ID: 17834
+// Module ID: 17874
+// Function ID: 17875
 // Name: GuildRoleSubscriptionsHooks
-// Dependencies: [5, 32, 19, 6790, 5231, 504, 7270, 7416, 17834, 17835, 13543, 1255, 2]
+// Dependencies: [5, 32, 19, 6798, 5235, 504, 7280, 7426, 17875, 17876, 13696, 1255, 2]
 // Exports: useArchiveSubscriptionListing, useCreateSubscriptionGroupListing, useDeleteSubscriptionGroupListing, useDeleteSubscriptionListing, useFetchListingsForSubscriptions, useFetchSubscriptionsSettings, useGroupListingsForGuild, usePublishSubscriptionListing, useSubscriptionGroupListing, useSubscriptionListing, useSubscriptionListingsForGroup, useSubscriptionListingsForGuild, useSubscriptionTrial, useSubscriptionTrialsForGroup, useSubscriptionTrialsForGuild, useSubscriptionsSettings, useUpdateSubscriptionGroupListing, useUpdateSubscriptionsSettings, useUpdateSubscriptionsTrial
 
-// Module 17833 (GuildRoleSubscriptionsHooks)
+// Module 17874 (GuildRoleSubscriptionsHooks)
 import GlobalUtils from "GlobalUtils" /* 1255 */;
-import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 5231 */;
-import GuildRoleSubscriptionsActionCreatorsAll from "GuildRoleSubscriptionsActionCreators" /* 7270 */;
-import useRequestDefault from "useRequest" /* 13543 */;
-import subscriptionUtils from "subscriptionUtils" /* 17835 */;
+import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 5235 */;
+import GuildRoleSubscriptionsActionCreatorsAll from "GuildRoleSubscriptionsActionCreators" /* 7280 */;
+import useRequestDefault from "useRequest" /* 13696 */;
+import subscriptionUtils from "subscriptionUtils" /* 17876 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6790 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6798 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

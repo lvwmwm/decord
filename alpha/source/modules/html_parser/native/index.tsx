@@ -1,10 +1,10 @@
-// Module ID: 10378
-// Function ID: 10379
+// Module ID: 10488
+// Function ID: 10489
 // Name: HTMLText
-// Dependencies: [2, 10379]
+// Dependencies: [2, 10489]
 
-// Module 10378 (HTMLText)
-import html_parser_HTMLText from "html_parser/HTMLText" /* 10379 */;
+// Module 10488 (HTMLText)
+import html_parser_HTMLText from "html_parser/HTMLText" /* 10489 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/html_parser/native/index.tsx");

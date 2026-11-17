@@ -1,12 +1,12 @@
-// Module ID: 5324
-// Function ID: 5325
+// Module ID: 5328
+// Function ID: 5329
 // Name: ThemeContextProvider
-// Dependencies: [19, 21, 5323, 2]
+// Dependencies: [19, 21, 5327, 2]
 // Exports: ThemeContextProvider
 
-// Module 5324 (ThemeContextProvider)
+// Module 5328 (ThemeContextProvider)
 import Fragment from "Fragment" /* 21 */;
-import ThemeContext from "ThemeContext" /* 5323 */;
+import ThemeContext from "ThemeContext" /* 5327 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

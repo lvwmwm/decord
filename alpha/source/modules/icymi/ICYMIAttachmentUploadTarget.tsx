@@ -1,10 +1,10 @@
-// Module ID: 8903
-// Function ID: 8904
+// Module ID: 8914
+// Function ID: 8915
 // Name: ICYMIAttachmentUploadTarget
-// Dependencies: [1072, 8846, 2]
+// Dependencies: [1072, 8857, 2]
 
-// Module 8903 (ICYMIAttachmentUploadTarget)
-import UploadUtils from "UploadUtils" /* 8846 */;
+// Module 8914 (ICYMIAttachmentUploadTarget)
+import UploadUtils from "UploadUtils" /* 8857 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

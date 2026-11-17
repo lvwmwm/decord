@@ -1,42 +1,76 @@
 // Module ID: 16781
 // Function ID: 16782
-// Dependencies: [16773, 16772, 16780]
+// Dependencies: [16782, 16783, 16784, 16821, 16822, 16838, 16839]
 
 // Module 16781
-import _mod16772 from "module_16772" /* 16772 */;
-import _mod16773 from "module_16773" /* 16773 */;
-import _mod16780 from "module_16780" /* 16780 */;
+import _mod16782 from "module_16782" /* 16782 */;
+import _mod16784 from "module_16784" /* 16784 */;
+import isForced from "isForced" /* 16821 */;
 
 
-export default (arg0, arg1) => {
-  if ("string" === arg1) {
-    const toString = arg0.toString;
-    if (_mod16773(toString)) {
-      const tmpResult = _mod16772;
-      const tmp4 = _mod16780(toString, arg0);
-      if (!tmpResult(tmp4)) {
-        return tmp4;
+export default (dontCallGetSet, obj) => {
+  let _global;
+  let stat;
+  let target;
+  let tmp5;
+  ({ target, global: _global, stat } = dontCallGetSet);
+  const tmp3 = _mod16782;
+  if (_global) {
+    tmp5 = tmp3;
+  } else {
+    let tmp4 = tmp3[target];
+    if (stat) {
+      if (!tmp4) {
+        tmp4 = tmp(16783)(target, {});
       }
+      tmp5 = tmp4;
+    } else {
+      tmp5 = tmp4 && tmp(16782)[target].prototype;
     }
   }
-  const valueOf = arg0.valueOf;
-  if (_mod16773(valueOf)) {
-    const tmp5Result = _mod16772;
-    const tmp8 = _mod16780(valueOf, arg0);
-    if (!tmp5Result(tmp8)) {
-      return tmp8;
-    }
-  }
-  if ("string" !== arg1) {
-    const toString2 = arg0.toString;
-    if (_mod16773(toString2)) {
-      const tmp5Result2 = _mod16772;
-      const tmp10 = _mod16780(toString2, arg0);
-      if (!tmp5Result2(tmp10)) {
-        return tmp10;
+  if (tmp5) {
+    for (const key10024 in obj) {
+      let tmp8;
+      let tmp22 = obj[key10024];
+      let tmp21 = key10024;
+      if (dontCallGetSet.dontCallGetSet) {
+        obj = _mod16784;
+        let iter = obj.f(tmp5, key10024);
+        let value = iter && iter.value;
+        tmp8 = value;
+      } else {
+        tmp8 = tmp5[key10024];
       }
+      let tmp11 = require;
+      let sum = key10024;
+      let tmp13 = isForced;
+      if (!_global) {
+        let str4 = "#";
+        if (stat) {
+          str4 = ".";
+        }
+        sum = target + str4 + key10024;
+      }
+      if (!tmp13(sum, dontCallGetSet.forced)) {
+        if (undefined !== tmp8) {
+          if (typeof tmp22 === typeof tmp8) {
+            continue;
+          } else {
+            let tmp23 = tmp11(16822)(tmp22, tmp8);
+          }
+        }
+        continue;
+      }
+      let sham = dontCallGetSet.sham;
+      if (!sham) {
+        let sham2 = tmp8 && tmp8.sham;
+        sham = sham2;
+      }
+      if (sham) {
+        let tmp15 = tmp11(16838)(tmp22, "sham", true);
+      }
+      let tmp20 = tmp11(16839)(tmp5, tmp21, tmp22, dontCallGetSet);
+      continue;
     }
   }
-  const tmp11 = new TypeError("Can't convert object to primitive value");
-  throw tmp11;
 };

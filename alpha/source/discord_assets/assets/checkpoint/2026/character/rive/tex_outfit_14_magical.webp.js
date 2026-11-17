@@ -1,11 +1,11 @@
-// Module ID: 14432
-// Function ID: 14433
+// Module ID: 13297
+// Function ID: 13298
 // Dependencies: [2]
 
-// Module 14432
+// Module 13297
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_outfit_14_magical.webp.js");
 
-export default "https://cdn.discordapp.com/assets/content/76aa1e996574709c012d7ff52df93a8c2d1e42fb39add8d34a09a170672c6796.webp";
-export const metadata = { fileBytes: 37586 };
+export default "https://cdn.discordapp.com/assets/content/11db8197785d9434c2651516d5284c1df6d21966c0c37943afe4a66eb40fa3fb.webp";
+export const metadata = { fileBytes: 88412 };

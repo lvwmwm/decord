@@ -1,15 +1,69 @@
 // Module ID: 5382
 // Function ID: 5383
-// Dependencies: []
+// Dependencies: [5383, 5388, 5389, 5390, 5391, 5392, 5393, 5384, 5394, 5395, 5396, 5397, 5398]
 
 // Module 5382
-const require = globalThis.__r;
+import installedNitro1 from "installedNitro1" /* 5384 */;
+import _mod5388 from "module_5388" /* 5388 */;
+import _mod5389 from "module_5389" /* 5389 */;
+import _mod5390 from "module_5390" /* 5390 */;
+import _mod5391 from "module_5391" /* 5391 */;
+import _mod5392 from "module_5392" /* 5392 */;
+import _mod5393 from "module_5393" /* 5393 */;
+import _mod5394 from "module_5394" /* 5394 */;
+import _mod5395 from "module_5395" /* 5395 */;
+import _mod5396 from "module_5396" /* 5396 */;
+import react_native from "react-native" /* 5397 */;
+import _mod5398 from "module_5398" /* 5398 */;
+import installWorkletsSupport_mod from "installWorkletsSupport" /* 5383 */;
 
-let items1;
-let obj2;
-const obj = { name: "react-native-nitro-modules", version: "0.37.1", description: "Fast, type-safe native modules for React Native with statically compiled JSI bindings.", main: "lib/commonjs/index", module: "lib/module/index", types: "lib/typescript/index.d.ts", "react-native": "src/index", source: "src/index", files: ["src", "!src/__tests__", "react-native.config.js", "lib", "android/build.gradle", "android/gradle.properties", "android/fix-prefab.gradle", "android/CMakeLists.txt", "android/src/", "ios/", "cpp/", "app.plugin.js", "*.podspec", "nitro_pod_utils.rb", "README.md"], keywords: ["react-native", "nitro", "ios", "android", "visionOS", "tvOS", "macOS", "cpp", "framework", "react", "swift", "native", "modules", "fast", "jsi", "turbo", "scaffold", "template", "views"], repository: { type: "git", url: "git+https://github.com/mrousavy/nitro.git" }, author: "Marc Rousavy <me@mrousavy.com> (https://github.com/mrousavy)", license: "MIT", bugs: { url: "https://github.com/mrousavy/nitro/issues" }, homepage: "https://nitro.margelo.com", publishConfig: { registry: "https://registry.npmjs.org/" }, scripts: { "write-native-version": "version=$(node -p \"require('./package.json').version\") && sed -i '' \"s/#define NITRO_VERSION \\\".*\\\"/#define NITRO_VERSION \\\"$version\\\"/\" ./cpp/utils/NitroDefines.hpp", postversion: "bun run write-native-version", build: "rm -rf lib && bun typecheck && bob build", typecheck: "tsc --noEmit", lint: "eslint \"**/*.{js,ts,tsx}\" --fix", "lint-ci": "eslint \"**/*.{js,ts,tsx}\" -f @jamesacarr/github-actions --max-warnings 0", test: "jest", clean: "rm -rf android/build node_modules/**/android/build lib", release: "release-it" }, devDependencies: { "@types/jest": "*", "@types/react": "^19.2.15", jest: "*", "@react-native/jest-preset": "0.85.3", react: "19.2.3", "react-native": "0.85.3", "react-native-builder-bob": "^0.41.0", "react-native-worklets": "^0.9.1" }, peerDependencies: { react: "*", "react-native": "*" }, codegenConfig: { name: "NitroModulesSpec", type: "modules", jsSrcsDir: "./src", android: { javaPackageName: "com.margelo.nitro" } }, jest: { preset: "@react-native/jest-preset", modulePathIgnorePatterns: ["<rootDir>/example/node_modules", "<rootDir>/lib/"] }, "release-it": { npm: { publish: true }, git: false, github: { release: false }, hooks: { "before:init": "bun typecheck && bun lint", "after:bump": "bun run build" } }, "react-native-builder-bob": obj2 };
-const items = ["typescript", { project: "tsconfig.build.json", tsc: "../../node_modules/typescript/bin/tsc" }];
-obj2 = { source: "src", output: "lib", targets: items1 };
-items1 = ["commonjs", "module", items];
-
-export default obj;
+let installWorkletsSupport = installWorkletsSupport_mod;
+installWorkletsSupport = installWorkletsSupport.installWorkletsSupport();
+for (const key10017 in _mod5388) {
+  exports[key10017] = _mod5388[key10017];
+  continue;
+}
+for (const key10021 in _mod5389) {
+  exports[key10021] = _mod5389[key10021];
+  continue;
+}
+for (const key10025 in _mod5390) {
+  exports[key10025] = _mod5390[key10025];
+  continue;
+}
+for (const key10029 in _mod5391) {
+  exports[key10029] = _mod5391[key10029];
+  continue;
+}
+for (const key10033 in _mod5392) {
+  exports[key10033] = _mod5392[key10033];
+  continue;
+}
+for (const key10037 in _mod5393) {
+  exports[key10037] = _mod5393[key10037];
+  continue;
+}
+for (const key10041 in installedNitro1) {
+  exports[key10041] = installedNitro1[key10041];
+  continue;
+}
+for (const key10045 in _mod5394) {
+  exports[key10045] = _mod5394[key10045];
+  continue;
+}
+for (const key10049 in _mod5395) {
+  exports[key10049] = _mod5395[key10049];
+  continue;
+}
+for (const key10053 in _mod5396) {
+  exports[key10053] = _mod5396[key10053];
+  continue;
+}
+for (const key10057 in react_native) {
+  exports[key10057] = react_native[key10057];
+  continue;
+}
+for (const key10061 in _mod5398) {
+  exports[key10061] = _mod5398[key10061];
+  continue;
+}

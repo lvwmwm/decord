@@ -1,18 +1,18 @@
-// Module ID: 12472
-// Function ID: 12473
+// Module ID: 12672
+// Function ID: 12673
 // Name: OptInOnboardingUtils
-// Dependencies: [1231, 5236, 5218, 6948, 5224, 7059, 1406, 7877, 7872, 1196, 2]
+// Dependencies: [1231, 5240, 5222, 6956, 5228, 7067, 1406, 7887, 7882, 1196, 2]
 // Exports: hasClearedGuildOnboardingNotice, hasNotSetUpChannelOptIn, toggleShowAllChannels
 
-// Module 12472 (OptInOnboardingUtils)
-import GuildMemberConstants from "GuildMemberConstants" /* 5224 */;
-import isOptInEnabled from "isOptInEnabled" /* 7059 */;
-import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 7872 */;
-import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7877 */;
+// Module 12672 (OptInOnboardingUtils)
+import GuildMemberConstants from "GuildMemberConstants" /* 5228 */;
+import isOptInEnabled from "isOptInEnabled" /* 7067 */;
+import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 7882 */;
+import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7887 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import GuildChannelStore_mod from "GuildChannelStore" /* 5236 */;
-import GuildMemberStore from "GuildMemberStore" /* 5218 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6948 */;
+import GuildChannelStore_mod from "GuildChannelStore" /* 5240 */;
+import GuildMemberStore from "GuildMemberStore" /* 5222 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6956 */;
 import size from "module_2" /* 2 */;
 
 let channel, set;

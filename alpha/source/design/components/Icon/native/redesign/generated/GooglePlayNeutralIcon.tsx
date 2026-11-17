@@ -1,14 +1,14 @@
-// Module ID: 10335
-// Function ID: 10336
+// Module ID: 10445
+// Function ID: 10446
 // Name: GooglePlayNeutralIcon
-// Dependencies: [19, 21, 575, 6009, 10336, 2]
+// Dependencies: [19, 21, 575, 6013, 10446, 2]
 // Exports: GooglePlayNeutralIcon
 
-// Module 10335 (GooglePlayNeutralIcon)
+// Module 10445 (GooglePlayNeutralIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6009 */;
-import AssetRegistry from "AssetRegistry" /* 10336 */;
+import BaseIconImage2 from "BaseIconImage" /* 6013 */;
+import AssetRegistry from "AssetRegistry" /* 10446 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

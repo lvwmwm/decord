@@ -1,18 +1,18 @@
-// Module ID: 18818
-// Function ID: 18819
+// Module ID: 18859
+// Function ID: 18860
 // Name: MessagesItemEmptyState
-// Dependencies: [19, 17, 21, 5306, 575, 5483, 5919, 1113, 5926, 2]
+// Dependencies: [19, 17, 21, 5310, 575, 5487, 5923, 1113, 5930, 2]
 
-// Module 18818 (MessagesItemEmptyState)
+// Module 18859 (MessagesItemEmptyState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import RootNavigationRef from "RootNavigationRef" /* 5483 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import components_Button_Button from "components/Button/Button" /* 5926 */;
+import RootNavigationRef from "RootNavigationRef" /* 5487 */;
+import Text_Text from "Text/Text" /* 5923 */;
+import components_Button_Button from "components/Button/Button" /* 5930 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

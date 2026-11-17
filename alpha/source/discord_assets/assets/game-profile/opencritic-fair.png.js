@@ -1,8 +1,8 @@
-// Module ID: 10344
-// Function ID: 10345
+// Module ID: 10454
+// Function ID: 10455
 // Dependencies: [2]
 
-// Module 10344
+// Module 10454
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/game-profile/opencritic-fair.png.js");

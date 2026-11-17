@@ -1,19 +1,19 @@
-// Module ID: 13458
-// Function ID: 13459
+// Module ID: 13613
+// Function ID: 13614
 // Name: AppLauncherApplicationViewScreen
-// Dependencies: [19, 17, 11406, 1501, 6335, 21, 5306, 12578, 13459, 12698, 1628, 13460, 7259, 1655, 13461, 2]
+// Dependencies: [19, 17, 11114, 1501, 6343, 21, 5310, 12773, 13614, 11352, 1628, 13615, 7269, 1655, 13616, 2]
 // Exports: default
 
-// Module 13458 (AppLauncherApplicationViewScreen)
+// Module 13613 (AppLauncherApplicationViewScreen)
 import Fragment from "Fragment" /* 21 */;
 import KeyboardTypes from "KeyboardTypes" /* 1628 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6335 */;
-import AppLauncherContext from "AppLauncherContext" /* 12578 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6343 */;
+import AppLauncherContext from "AppLauncherContext" /* 12773 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 11406 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 11114 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

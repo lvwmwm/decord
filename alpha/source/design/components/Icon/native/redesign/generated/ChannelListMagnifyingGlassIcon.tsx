@@ -1,14 +1,14 @@
-// Module ID: 16277
-// Function ID: 16278
+// Module ID: 16314
+// Function ID: 16315
 // Name: ChannelListMagnifyingGlassIcon
-// Dependencies: [19, 21, 575, 6009, 16278, 2]
+// Dependencies: [19, 21, 575, 6013, 16315, 2]
 // Exports: ChannelListMagnifyingGlassIcon
 
-// Module 16277 (ChannelListMagnifyingGlassIcon)
+// Module 16314 (ChannelListMagnifyingGlassIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6009 */;
-import AssetRegistry from "AssetRegistry" /* 16278 */;
+import BaseIconImage2 from "BaseIconImage" /* 6013 */;
+import AssetRegistry from "AssetRegistry" /* 16315 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

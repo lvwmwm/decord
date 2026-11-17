@@ -1,14 +1,14 @@
-// Module ID: 5497
-// Function ID: 5498
+// Module ID: 5501
+// Function ID: 5502
 // Name: PortalKeyboard
-// Dependencies: [19, 21, 5482, 1380, 5498, 2]
+// Dependencies: [19, 21, 5486, 1380, 5502, 2]
 // Exports: PortalKeyboard, PortalKeyboardHost
 
-// Module 5497 (PortalKeyboard)
+// Module 5501 (PortalKeyboard)
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5482 */;
-import Portal from "Portal" /* 5498 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5486 */;
+import Portal from "Portal" /* 5502 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

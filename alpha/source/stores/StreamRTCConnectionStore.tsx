@@ -1,23 +1,23 @@
-// Module ID: 6792
-// Function ID: 6793
+// Module ID: 6800
+// Function ID: 6801
 // Name: StreamRTCConnectionStore
-// Dependencies: [2140, 502, 2133, 6058, 6061, 1072, 6793, 38, 6795, 12, 6798, 8468, 572, 6086, 1380, 504, 6850, 2]
+// Dependencies: [2140, 502, 2133, 6065, 6068, 1072, 6801, 38, 6803, 12, 6805, 8479, 572, 6093, 1380, 504, 6845, 2]
 
-// Module 6792 (StreamRTCConnectionStore)
+// Module 6800 (StreamRTCConnectionStore)
 import _modDef12 from "module_12" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import Constants2 from "Constants" /* 6793 */;
-import StreamRTCConnectionDefault from "StreamRTCConnection" /* 6795 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6798 */;
-import canSpectateDefault from "canSpectate" /* 6850 */;
-import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 8468 */;
+import Constants2 from "Constants" /* 6801 */;
+import StreamRTCConnectionDefault from "StreamRTCConnection" /* 6803 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6805 */;
+import canSpectateDefault from "canSpectate" /* 6845 */;
+import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 8479 */;
 import RunningGameStore from "RunningGameStore" /* 2140 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import PresenceStore from "PresenceStore" /* 6058 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
+import PresenceStore from "PresenceStore" /* 6065 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6068 */;
 import Constants from "Constants" /* 1072 */;
 import Dispatcher from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
@@ -26,8 +26,8 @@ let StreamLayouts;
 let c9;
 let obj2;
 let tmp;
-const BaseConnectionEvent = tmp(6086);
-const f92795 = (destroy, arg1) => {
+const BaseConnectionEvent = tmp(6093);
+const f92994 = (destroy, arg1) => {
   let str = "receiver-disconnect";
   destroy = destroy.destroy;
   if (destroy.isOwner) {
@@ -206,12 +206,12 @@ if (MediaEngineStore.isSupported()) {
     CONNECTION_OPEN: function handleConnectionOpen(sessionId) {
         sessionId = sessionId.sessionId;
         const arr = _modDef12;
-        const item = arr.forEach(closure_18, f92795);
+        const item = arr.forEach(closure_18, f92994);
       },
     CONNECTION_CLOSED: function handleConnectionClosed() {
         let c3 = null;
         const arr = _modDef12;
-        const item = arr.forEach(closure_18, f92795);
+        const item = arr.forEach(closure_18, f92994);
       },
     RTC_CONNECTION_STATE: handleRtcAction,
     RTC_CONNECTION_PING: handleRtcAction,
@@ -314,7 +314,7 @@ if (MediaEngineStore.isSupported()) {
     STREAM_STOP: function handleStreamStop(appContext) {
         appContext = appContext.appContext;
         const streamKey = appContext.streamKey;
-        closure_11[streamKey] = { appContext, analyticsLocations: "y" };
+        closure_11[streamKey] = { appContext, analyticsLocations: "Array" };
         const arr = _modDef12;
         const item = arr.forEach(closure_18, (analyticsContext) => {
           analyticsContext = analyticsContext.analyticsContext;
@@ -374,7 +374,7 @@ if (MediaEngineStore.isSupported()) {
           }
           const obj3 = { streamRegion: region, streamApplication: closure_12[streamKey], streamSourceType: str2, actionContext: appContext, numViewers: num, goLiveModalDurationMs: closure_15[streamKey], analyticsLocations };
           str2 = "unknown";
-          const StreamRTCAnalyticsContext = tmp2(6795).StreamRTCAnalyticsContext;
+          const StreamRTCAnalyticsContext = tmp2(6803).StreamRTCAnalyticsContext;
           if (null != closure_14[streamKey]) {
             if (!PlatformUtils.isPlatformEmbedded) {
               let name;

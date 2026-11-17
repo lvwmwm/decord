@@ -1,15 +1,15 @@
-// Module ID: 14685
-// Function ID: 14686
+// Module ID: 13763
+// Function ID: 13764
 // Name: MemberActionUtils
-// Dependencies: [5218, 7080, 9001, 5224, 7082, 563, 1406, 2]
+// Dependencies: [5222, 7088, 9012, 5228, 7090, 563, 1406, 2]
 // Exports: useAllActionsCompleted, useMemberActionsForChannel, useNextMemberAction
 
-// Module 14685 (MemberActionUtils)
-import GuildMemberConstants from "GuildMemberConstants" /* 5224 */;
-import useIsNewMemberDefault from "useIsNewMember" /* 7082 */;
-import GuildMemberStore from "GuildMemberStore" /* 5218 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7080 */;
-import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 9001 */;
+// Module 13763 (MemberActionUtils)
+import GuildMemberConstants from "GuildMemberConstants" /* 5228 */;
+import useIsNewMemberDefault from "useIsNewMember" /* 7090 */;
+import GuildMemberStore from "GuildMemberStore" /* 5222 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7088 */;
+import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 9012 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

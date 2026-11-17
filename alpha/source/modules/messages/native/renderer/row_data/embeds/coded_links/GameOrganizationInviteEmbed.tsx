@@ -1,28 +1,28 @@
-// Module ID: 15585
-// Function ID: 15586
+// Module ID: 15619
+// Function ID: 15620
 // Name: GameOrganizationInviteEmbed
-// Dependencies: [12368, 5177, 11891, 12369, 8842, 9170, 1113, 2565, 12539, 9163, 575, 8655, 7856, 15586, 14063, 12538, 7437, 5303, 2]
+// Dependencies: [12572, 5181, 11091, 12573, 8853, 9181, 1113, 2565, 12734, 9174, 575, 8666, 7866, 15620, 12887, 12733, 7447, 5307, 2]
 // Exports: createGameOrganizationInviteEmbed
 
-// Module 15585 (GameOrganizationInviteEmbed)
+// Module 15619 (GameOrganizationInviteEmbed)
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
 import _modDef2565 from "module_2565" /* 2565 */;
-import ColorUtils from "ColorUtils" /* 5303 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7437 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 7856 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8655 */;
-import Constants from "Constants" /* 8842 */;
-import react_native from "react-native" /* 9163 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 9170 */;
-import CodedLinksConstants from "CodedLinksConstants" /* 11891 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 12369 */;
-import isGameOrganizationFullDefault from "isGameOrganizationFull" /* 12538 */;
-import getGameOrganizationDisplayNounDefault from "getGameOrganizationDisplayNoun" /* 12539 */;
-import canGoToGameOrganizationGuildDefault from "canGoToGameOrganizationGuild" /* 14063 */;
-import getGameOrganizationInviteCtaStateDefault from "getGameOrganizationInviteCtaState" /* 15586 */;
-import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 12368 */;
-import GuildStore from "GuildStore" /* 5177 */;
+import ColorUtils from "ColorUtils" /* 5307 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7447 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 7866 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8666 */;
+import Constants from "Constants" /* 8853 */;
+import react_native from "react-native" /* 9174 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 9181 */;
+import CodedLinksConstants from "CodedLinksConstants" /* 11091 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 12573 */;
+import isGameOrganizationFullDefault from "isGameOrganizationFull" /* 12733 */;
+import getGameOrganizationDisplayNounDefault from "getGameOrganizationDisplayNoun" /* 12734 */;
+import canGoToGameOrganizationGuildDefault from "canGoToGameOrganizationGuild" /* 12887 */;
+import getGameOrganizationInviteCtaStateDefault from "getGameOrganizationInviteCtaState" /* 15620 */;
+import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 12572 */;
+import GuildStore from "GuildStore" /* 5181 */;
 import size from "module_2" /* 2 */;
 
 const CodedLinkExtendedType = CodedLinksConstants.CodedLinkExtendedType;

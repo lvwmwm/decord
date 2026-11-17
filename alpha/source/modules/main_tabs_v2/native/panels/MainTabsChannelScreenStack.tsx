@@ -1,35 +1,35 @@
-// Module ID: 19362
-// Function ID: 19363
+// Module ID: 19407
+// Function ID: 19408
 // Name: MainTabsChannelScreenStack
-// Dependencies: [32, 19, 17, 19363, 9052, 1072, 1083, 21, 5306, 1655, 1708, 19364, 19366, 5889, 5537, 5485, 5487, 19367, 5367, 6289, 19368, 12422, 19369, 1503, 18720, 5491, 12011, 5588, 5478, 18717, 19581, 18719, 572, 5492, 2]
+// Dependencies: [32, 19, 17, 19408, 9063, 1072, 1083, 21, 5310, 1655, 1708, 19409, 19411, 5893, 5541, 5489, 5491, 19412, 5371, 6297, 19413, 12628, 19414, 1503, 18761, 5495, 12448, 5592, 5482, 18758, 19626, 18760, 572, 5496, 2]
 
-// Module 19362 (MainTabsChannelScreenStack)
+// Module 19407 (MainTabsChannelScreenStack)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants2 from "Constants" /* 1083 */;
 import Link from "Link" /* 1503 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import native from "native" /* 5367 */;
-import useChatLayoutDefault from "useChatLayout" /* 5485 */;
-import useBaseAppContainerDimensionsDefault from "useBaseAppContainerDimensions" /* 5487 */;
-import ChatInputUtils from "ChatInputUtils" /* 5491 */;
-import useThemeDefault from "useTheme" /* 5537 */;
-import react_native from "react-native" /* 9052 */;
-import MainTabsNavigatorPanelContextDefault from "MainTabsNavigatorPanelContext" /* 12011 */;
-import reactDefault from "react" /* 12422 */;
-import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 18717 */;
-import MainTabsBackgroundChat from "MainTabsBackgroundChat" /* 18719 */;
-import useMainTabsPanelsGestureDefault from "useMainTabsPanelsGesture" /* 18720 */;
-import VisibleChannelScreenStore from "VisibleChannelScreenStore" /* 19363 */;
-import navigationTTIEnabled from "navigationTTIEnabled" /* 19364 */;
-import HideCoveredChannelsExperimentDefault from "HideCoveredChannelsExperiment" /* 19366 */;
-import useMainTabsChannelScreenStyles from "useMainTabsChannelScreenStyles" /* 19367 */;
-import StandaloneChannelScreenDefault from "StandaloneChannelScreen" /* 19369 */;
+import native from "native" /* 5371 */;
+import useChatLayoutDefault from "useChatLayout" /* 5489 */;
+import useBaseAppContainerDimensionsDefault from "useBaseAppContainerDimensions" /* 5491 */;
+import ChatInputUtils from "ChatInputUtils" /* 5495 */;
+import useThemeDefault from "useTheme" /* 5541 */;
+import react_native from "react-native" /* 9063 */;
+import MainTabsNavigatorPanelContextDefault from "MainTabsNavigatorPanelContext" /* 12448 */;
+import reactDefault from "react" /* 12628 */;
+import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 18758 */;
+import MainTabsBackgroundChat from "MainTabsBackgroundChat" /* 18760 */;
+import useMainTabsPanelsGestureDefault from "useMainTabsPanelsGesture" /* 18761 */;
+import VisibleChannelScreenStore from "VisibleChannelScreenStore" /* 19408 */;
+import navigationTTIEnabled from "navigationTTIEnabled" /* 19409 */;
+import HideCoveredChannelsExperimentDefault from "HideCoveredChannelsExperiment" /* 19411 */;
+import useMainTabsChannelScreenStyles from "useMainTabsChannelScreenStyles" /* 19412 */;
+import StandaloneChannelScreenDefault from "StandaloneChannelScreen" /* 19414 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -49,11 +49,11 @@ let tmp5;
 let tmp6;
 let unpackModuleId;
 const _mod1708 = tmp4(1708);
-const LegacyBaseButton = tmp5(5588);
-const react2 = tmp6(6289);
-const MainTabsNavigatorPanelContext = tmp5(12011);
-const ChannelScreenFrameContainer = tmp5(19368);
-const ChannelScreenFrameContainerDefault = tmp(19368);
+const LegacyBaseButton = tmp5(5592);
+const react2 = tmp6(6297);
+const MainTabsNavigatorPanelContext = tmp5(12448);
+const ChannelScreenFrameContainer = tmp5(19413);
+const ChannelScreenFrameContainerDefault = tmp(19413);
 function EnabledChannelScreenNavigationTTIVisibility(children) {
   let alwaysVisible;
   let highestFullyRenderedScreenIndex;
@@ -200,7 +200,7 @@ function useIsCompletelyCovered(index, highestFullyRenderedScreenIndex, translat
   MainTabsChannelScreenStackTsx4.__workletHash = 15152975546238;
   MainTabsChannelScreenStackTsx4.__initData = tmp5;
   const animatedReaction = obj2.useAnimatedReaction(MainTabsChannelScreenStackTsx3, MainTabsChannelScreenStackTsx4);
-  const tmp2Result = tmp2(5889);
+  const tmp2Result = tmp2(5893);
   const unmountEffect = tmp2Result.useUnmountEffect(() => {
     let tmp;
     let tmp2;
@@ -704,7 +704,7 @@ const memoResult = react.memo(function MainTabsChannelScreenStack(screens) {
         let isChatLockedOpen = tmp.type !== useChannelScreensFromNavigation.ChannelScreenType.DEFAULT;
         const tmp7 = require;
         if (!isChatLockedOpen) {
-          const tmp7Result = tmp7(5485);
+          const tmp7Result = tmp7(5489);
           isChatLockedOpen = tmp7Result.getChatLayout().isChatLockedOpen;
         }
         if (!isChatLockedOpen) {

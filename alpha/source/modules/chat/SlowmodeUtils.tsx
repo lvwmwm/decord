@@ -1,15 +1,15 @@
-// Module ID: 8793
-// Function ID: 8794
+// Module ID: 8804
+// Function ID: 8805
 // Name: SlowmodeUtils
-// Dependencies: [5238, 1072, 504, 1113, 1089, 2169, 2]
+// Dependencies: [5242, 1072, 504, 1113, 1089, 2169, 2]
 // Exports: canBypassSlowmode, canBypassSlowmodeHelper, getSlowmodeDescription, getSlowmodeIndicatorText, getSlowmodeTooltipLabel, useCanBypassSlowmode
 
-// Module 8793 (SlowmodeUtils)
+// Module 8804 (SlowmodeUtils)
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import intl4 from "intl" /* 1113 */;
 import _modDef2169 from "module_2169" /* 2169 */;
-import PermissionStore from "PermissionStore" /* 5238 */;
+import PermissionStore from "PermissionStore" /* 5242 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

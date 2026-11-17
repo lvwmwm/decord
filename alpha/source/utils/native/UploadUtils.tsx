@@ -1,29 +1,29 @@
-// Module ID: 8879
-// Function ID: 8880
+// Module ID: 8890
+// Function ID: 8891
 // Name: utils/UploadUtils
-// Dependencies: [109, 5, 17, 1194, 6200, 1388, 1072, 6892, 3, 8880, 8192, 8846, 8886, 1380, 6004, 1113, 1444, 2174, 8850, 1149, 8887, 8889, 8890, 8875, 5263, 38, 8891, 8892, 8893, 1255, 8894, 8895, 8896, 6373, 8897, 2]
+// Dependencies: [109, 5, 17, 1194, 6208, 1388, 1072, 6900, 3, 8891, 8203, 8857, 8897, 1380, 6008, 1113, 1444, 2174, 8861, 1149, 8898, 8900, 8901, 8886, 5267, 38, 8902, 8903, 8904, 1255, 8905, 8906, 8907, 6381, 8908, 2]
 // Exports: cancelGetFileInfo, getAppDir, getCaptionLabel, getFileFromUploadItem, getFileInfo, getFileSize, getImageCompressionQuality, getImageDimensionsIfMissing, getType, openImagePicker, resolveModeToVideoQualityForFreeUser, resolveModeToVideoQualityForUserWithFeature, shouldResolveToMediaFilePath
 
-// Module 8879 (utils/UploadUtils)
+// Module 8890 (utils/UploadUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import react_nativeDefault from "react-native" /* 1149 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import react_nativeDefault2 from "react-native" /* 1444 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 6892 */;
-import NativePermissionUtilsDefault from "NativePermissionUtils" /* 8192 */;
-import UploadPlatform from "UploadPlatform" /* 8850 */;
-import FileUtils from "FileUtils" /* 8875 */;
-import ImagePickerDefault from "ImagePicker" /* 8880 */;
-import ImageConversionDecision from "ImageConversionDecision" /* 8887 */;
-import VideoUploadUtils from "VideoUploadUtils" /* 8889 */;
-import UploadLimits from "UploadLimits" /* 8890 */;
-import utils_TimeUtils from "utils/TimeUtils" /* 8897 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 6900 */;
+import NativePermissionUtilsDefault from "NativePermissionUtils" /* 8203 */;
+import UploadPlatform from "UploadPlatform" /* 8861 */;
+import FileUtils from "FileUtils" /* 8886 */;
+import ImagePickerDefault from "ImagePicker" /* 8891 */;
+import ImageConversionDecision from "ImageConversionDecision" /* 8898 */;
+import VideoUploadUtils from "VideoUploadUtils" /* 8900 */;
+import UploadLimits from "UploadLimits" /* 8901 */;
+import utils_TimeUtils from "utils/TimeUtils" /* 8908 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UnsyncedUserSettingsStore_mod from "UnsyncedUserSettingsStore" /* 1194 */;
-import NetworkStore from "NetworkStore" /* 6200 */;
+import NetworkStore from "NetworkStore" /* 6208 */;
 import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import size_mod from "module_2" /* 2 */;
@@ -41,8 +41,8 @@ let closure_17;
 let metroImportAll;
 let metroImportDefault;
 let tmp;
-const DeviceUtils = tmp(5263);
-const UploadUtils = tmp(8846);
+const DeviceUtils = tmp(5267);
+const UploadUtils = tmp(8857);
 function openImagePickerUnhandled() {
   return obj(...arguments);
 }
@@ -1324,7 +1324,7 @@ function convertVideo(videoMetadata) {
               } else {
                 isVideo = null != str3.match(/^assets-library:\/\/.+&ext=(mov|qt)$/i);
                 if (isVideo) {
-                  const obj4 = { uri: require, overrideType: "y" };
+                  const obj4 = { uri: require, overrideType: "Array" };
                   const tmp12Result8 = UploadUtils;
                   isVideo = tmp12Result8.getFile(obj4).isVideo;
                 }
@@ -1350,7 +1350,7 @@ function convertVideo(videoMetadata) {
                 } else {
                   isVideo2 = null != str3.match(/^assets-library:\/\/.+&ext=mp4$/i);
                   if (isVideo2) {
-                    obj6 = { uri: require, overrideType: "y" };
+                    obj6 = { uri: require, overrideType: "Array" };
                     const tmp12Result11 = UploadUtils;
                     isVideo2 = tmp12Result11.getFile(obj6).isVideo;
                   }

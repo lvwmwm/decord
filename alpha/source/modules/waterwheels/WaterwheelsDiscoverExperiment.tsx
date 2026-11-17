@@ -1,10 +1,10 @@
-// Module ID: 10215
-// Function ID: 10216
+// Module ID: 10658
+// Function ID: 10659
 // Name: WaterwheelsDiscoverExperiment
 // Dependencies: [1246, 502, 1388, 1452, 504, 2]
 // Exports: getWaterwheelsDiscoverEnabled, useWaterwheelsDiscoverEnabled
 
-// Module 10215 (WaterwheelsDiscoverExperiment)
+// Module 10658 (WaterwheelsDiscoverExperiment)
 import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import UserStore from "UserStore" /* 1388 */;

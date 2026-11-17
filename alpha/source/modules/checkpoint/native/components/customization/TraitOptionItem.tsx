@@ -1,22 +1,22 @@
-// Module ID: 14540
-// Function ID: 14541
+// Module ID: 13411
+// Function ID: 13412
 // Name: TraitOptionItem
-// Dependencies: [17, 6367, 21, 575, 6734, 5306, 6368, 9436, 8263, 6413, 6010, 5368, 2]
+// Dependencies: [17, 6375, 21, 575, 6742, 5310, 6376, 9446, 8274, 6421, 6014, 5372, 2]
 // Exports: default
 
-// Module 14540 (TraitOptionItem)
+// Module 13411 (TraitOptionItem)
 import nativeDefault from "native" /* 575 */;
-import react_native from "react-native" /* 5368 */;
-import FastImageDefault from "FastImage" /* 6010 */;
-import CheckpointTraitRarity from "CheckpointTraitRarity" /* 6368 */;
-import CheckpointCharacterAssets from "CheckpointCharacterAssets" /* 6413 */;
-import inlineStyles from "inlineStyles" /* 8263 */;
+import react_native from "react-native" /* 5372 */;
+import FastImageDefault from "FastImage" /* 6014 */;
+import CheckpointTraitRarity from "CheckpointTraitRarity" /* 6376 */;
+import CheckpointCharacterAssets from "CheckpointCharacterAssets" /* 6421 */;
+import inlineStyles from "inlineStyles" /* 8274 */;
 import react_native2 from "react-native" /* 17 */;
-import CheckpointConstants from "CheckpointConstants" /* 6367 */;
+import CheckpointConstants from "CheckpointConstants" /* 6375 */;
 import Fragment from "Fragment" /* 21 */;
 import "CheckpointCustomizationUtils";
-import CheckpointCustomizationUtils_mod from "CheckpointCustomizationUtils" /* 6734 */;
-import createStyles from "createStyles" /* 5306 */;
+import CheckpointCustomizationUtils_mod from "CheckpointCustomizationUtils" /* 6742 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 const inlineStylesDefault = inlineStyles;
@@ -32,7 +32,7 @@ let metroImportDefault;
 let metroRequire;
 let obj4;
 let tmp2;
-const NitroWheelIcon = tmp2(9436);
+const NitroWheelIcon = tmp2(9446);
 function RarityIndicator(rarity) {
   let tmp4Result;
   rarity = rarity.rarity;
@@ -120,14 +120,14 @@ function AssetShape(arg0) {
   num = 1;
   const Polygon = inlineStyles.Polygon;
   if (isSelected) {
-    num = tmp14(6734).TRAIT_OPTION_STROKE_WIDTH;
+    num = tmp14(6742).TRAIT_OPTION_STROKE_WIDTH;
   }
   items1[1] = metroImportAll(Polygon, obj5);
   let tmp13Result = !isNoneOption;
   if (tmp13Result) {
     const _HermesInternal = HermesInternal;
     const obj6 = { points: obj2[size], fill: "url(#" + checkpointTraitGradient + ")" };
-    const Polygon2 = tmp14(8263).Polygon;
+    const Polygon2 = tmp14(8274).Polygon;
     tmp13Result = tmp13(Polygon2, obj6);
   }
   items1[2] = tmp13Result;

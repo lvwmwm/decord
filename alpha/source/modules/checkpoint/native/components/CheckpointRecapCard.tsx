@@ -1,19 +1,19 @@
-// Module ID: 14532
-// Function ID: 14533
+// Module ID: 13403
+// Function ID: 13404
 // Name: CheckpointRecapCard
-// Dependencies: [19, 17, 21, 575, 14479, 5306, 14266, 6391, 6733, 14279, 2]
+// Dependencies: [19, 17, 21, 575, 13344, 5310, 13132, 6399, 6741, 13145, 2]
 // Exports: default
 
-// Module 14532 (CheckpointRecapCard)
+// Module 13403 (CheckpointRecapCard)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import CheckpointCharacterAccessibilityUtils from "CheckpointCharacterAccessibilityUtils" /* 6733 */;
-import CheckpointStepHeaderRefContextDefault from "CheckpointStepHeaderRefContext" /* 14266 */;
-import CheckpointCardFrameDefault from "CheckpointCardFrame" /* 14279 */;
+import CheckpointCharacterAccessibilityUtils from "CheckpointCharacterAccessibilityUtils" /* 6741 */;
+import CheckpointStepHeaderRefContextDefault from "CheckpointStepHeaderRefContext" /* 13132 */;
+import CheckpointCardFrameDefault from "CheckpointCardFrame" /* 13145 */;
 import react from "react" /* 19 */;
-import CheckpointStatNumber from "CheckpointStatNumber" /* 14479 */;
-import createStyles from "createStyles" /* 5306 */;
+import CheckpointStatNumber from "CheckpointStatNumber" /* 13344 */;
+import createStyles from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let items;
@@ -50,10 +50,10 @@ export default function CheckpointRecapCard(character) {
     const _Math2 = Math;
     bound = Math.min(Math.max(maxHeight / 268, 0.75), maxScale);
   }
-  const obj2 = character(6391);
+  const obj2 = character(6399);
   const characterCardColorPalette = obj2.getCharacterCardColorPalette(character);
   const items = [character];
-  const obj3 = character(6391);
+  const obj3 = character(6399);
   const primaryBackgroundColor = obj3.getCardColors(characterCardColorPalette).primaryBackgroundColor;
   const memo = obj.useMemo(() => {
     let checkpointCharacterAccessibilityLabel = null;
@@ -79,3 +79,5 @@ export default function CheckpointRecapCard(character) {
   }
   return tmp9(tmp11, obj7);
 };
+export const CARD_WIDTH = 200;
+export const CARD_HEIGHT = 268;

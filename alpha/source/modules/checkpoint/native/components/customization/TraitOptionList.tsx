@@ -1,22 +1,22 @@
-// Module ID: 14539
-// Function ID: 14540
+// Module ID: 13410
+// Function ID: 13411
 // Name: TraitOptionList
-// Dependencies: [32, 19, 17, 5307, 6367, 21, 575, 5306, 14540, 8263, 6734, 504, 14488, 14518, 5558, 5907, 1496, 5544, 2]
+// Dependencies: [32, 19, 17, 5311, 6375, 21, 575, 5310, 13411, 8274, 6742, 504, 13353, 13386, 5562, 5911, 1496, 5548, 2]
 // Exports: default
 
-// Module 14539 (TraitOptionList)
+// Module 13410 (TraitOptionList)
 import nativeDefault from "native" /* 575 */;
-import HapticUtils from "HapticUtils" /* 5544 */;
-import CheckpointConstants from "CheckpointConstants" /* 6367 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6734 */;
-import inlineStyles from "inlineStyles" /* 8263 */;
-import TraitOptionItem from "TraitOptionItem" /* 14540 */;
+import HapticUtils from "HapticUtils" /* 5548 */;
+import CheckpointConstants from "CheckpointConstants" /* 6375 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6742 */;
+import inlineStyles from "inlineStyles" /* 8274 */;
+import TraitOptionItem from "TraitOptionItem" /* 13411 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import AccessibilityStore from "AccessibilityStore" /* 5311 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 5310 */;
 import size_mod from "module_2" /* 2 */;
 
 const inlineStylesDefault = inlineStyles;
@@ -51,21 +51,21 @@ let result = size.fileFinishedImporting("modules/checkpoint/native/components/cu
 
 export default function TraitOptionList(size) {
   let _undefined;
-  let c12;
+  let c13;
   let closure_5;
   let disabled;
   let items2;
-  let obj4;
+  let items3;
+  let obj5;
   let tmp10;
-  let tmp18;
+  let tmp19;
   let tmp2Result;
   size = size.size;
   const options = size.options;
   ({ selectedOptionId: dependencyMap, disabled } = size);
   ({ hideRarity: react, onSelectOption: closure_5 } = size);
   let closure_7;
-  c12 = undefined;
-  let c13;
+  c13 = undefined;
   function handleScrollSettled(arg0) {
     const tmp = disabled;
     if (!tmp) {
@@ -74,7 +74,7 @@ export default function TraitOptionList(size) {
         const _Math = Math;
         const _Math2 = Math;
         const _Math3 = Math;
-        const tmp7 = options[Math.max(Math, 0, Math.min(Math, Math.round(Math, arg0 / c13), options.length - 1))];
+        const tmp7 = options[Math.max(Math, 0, Math.min(Math, Math.round(Math, arg0 / c15), options.length - 1))];
         if (null != tmp7) {
           if (tmp7.optionId !== dependencyMap) {
             closure_5(tmp7.trait, tmp7.optionId);
@@ -86,11 +86,32 @@ export default function TraitOptionList(size) {
       }
     }
   }
-  function cancelScrollSettle() {
+  function handlePressOption(optionId, arg1) {
     if (null != closure_11.current) {
       const _clearTimeout = clearTimeout;
       clearTimeout(closure_11.current);
       closure_11.current = null;
+    }
+    if (null != closure_18.current) {
+      const _clearTimeout2 = clearTimeout;
+      clearTimeout(closure_18.current);
+      closure_18.current = null;
+    }
+    closure_10.current = false;
+    ref5.current = true;
+    if (optionId.optionId !== dependencyMap) {
+      closure_5(optionId.trait, optionId.optionId);
+      const obj = HapticUtils;
+      const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_LIGHT);
+      closure_7();
+    }
+    const tmp14 = isScreenReaderEnabled;
+    if (!tmp14) {
+      const current = ref.current;
+      if (current != null) {
+        const obj2 = { x: arg1 * c15, animated: !closure_6 };
+        current.scrollTo(obj2);
+      }
     }
   }
   const customizationOption = size.customizationOption;
@@ -99,31 +120,49 @@ export default function TraitOptionList(size) {
   let obj = size(504);
   const items = [closure_7];
   let closure_6 = obj.useStateFromStores(items, () => closure_7.useReducedMotion);
-  const tmp4 = options(14488);
-  closure_7 = tmp4(options(14518));
-  let obj2 = size(5558);
+  const tmp4 = options(13353);
+  closure_7 = tmp4(options(13386));
+  let obj2 = size(5562);
   const isScreenReaderEnabled = obj2.useIsScreenReaderEnabled();
   react.useRef(null);
   const ref = react.useRef(false);
   let closure_11 = react.useRef(null);
   const bound = Math.max(options.findIndex((optionId) => optionId.optionId === dependencyMap), 0);
-  const tmp8 = options(5907)(bound);
-  [tmp10, c12] = disabled(react.useState(options(1496)().width), 2);
+  const tmp8 = options(5911)(bound);
   const tmp9 = disabled(react.useState(options(1496)().width), 2);
-  const width = size(14540).TRAIT_OPTION_SIZE_TO_DIMENSIONS[size].width;
+  [tmp10, c13] = tmp9;
+  const width = size(13411).TRAIT_OPTION_SIZE_TO_DIMENSIONS[size].width;
   const sum = width + closure_11;
-  c13 = sum;
+  let c15 = sum;
+  const ref1 = react.useRef(null);
+  const ref2 = react.useRef(tmp8 * sum);
+  let closure_18 = react.useRef(null);
+  const ref3 = react.useRef(0);
+  const ref4 = react.useRef(0);
+  const ref5 = react.useRef(false);
   const items1 = [disabled, isScreenReaderEnabled];
-  const bound1 = Math.max(c12, tmp10 - c12 - width);
-  const effect = react.useEffect(() => cancelScrollSettle, items1);
-  let obj3 = {
+  const bound1 = Math.max(bound, tmp10 - bound - width);
+  const effect = react.useEffect(() => () => {
+    if (null != ref.current) {
+      const _clearTimeout = clearTimeout;
+      clearTimeout(ref.current);
+      ref.current = null;
+    }
+    if (null != ref2.current) {
+      const _clearTimeout2 = clearTimeout;
+      clearTimeout(ref2.current);
+      ref2.current = null;
+    }
+  }, items1);
+  let obj3 = { ref: ref1, children: items3 };
+  const obj4 = {
     ref,
     horizontal: true,
     contentOffset: { x: tmp8 * sum, y: 0 },
     scrollEnabled: !disabled,
     showsHorizontalScrollIndicator: false,
     decelerationRate: "fast",
-    snapToInterval: tmp18,
+    snapToInterval: tmp19,
     onScrollBeginDrag: function handleScrollBeginDrag() {
       const tmp = isScreenReaderEnabled;
       if (!tmp) {
@@ -132,12 +171,18 @@ export default function TraitOptionList(size) {
           clearTimeout(closure_11.current);
           closure_11.current = null;
         }
+        if (null != closure_18.current) {
+          const _clearTimeout2 = clearTimeout;
+          clearTimeout(closure_18.current);
+          closure_18.current = null;
+        }
         ref.current = true;
       }
     },
     onScrollEndDrag: function scheduleScrollSettle(nativeEvent) {
-      let closure_0;
       const x = nativeEvent.nativeEvent.contentOffset.x;
+      let closure_0 = x;
+      closure_17.current = x;
       if (null != closure_11.current) {
         const _clearTimeout = clearTimeout;
         clearTimeout(closure_11.current);
@@ -149,8 +194,15 @@ export default function TraitOptionList(size) {
         handleScrollSettled(closure_0);
       }, 100);
     },
-    onMomentumScrollBegin: cancelScrollSettle,
+    onMomentumScrollBegin: function cancelScrollSettle() {
+      if (null != closure_11.current) {
+        const _clearTimeout = clearTimeout;
+        clearTimeout(closure_11.current);
+        closure_11.current = null;
+      }
+    },
     onMomentumScrollEnd: function handleMomentumScrollEnd(nativeEvent) {
+      ref2.current = nativeEvent.nativeEvent.contentOffset.x;
       if (null != closure_11.current) {
         const _clearTimeout = clearTimeout;
         clearTimeout(closure_11.current);
@@ -161,20 +213,69 @@ export default function TraitOptionList(size) {
         handleScrollSettled(nativeEvent.nativeEvent.contentOffset.x);
       }
     },
+    onScroll: function handleScroll(nativeEvent) {
+      ref2.current = nativeEvent.nativeEvent.contentOffset.x;
+    },
+    scrollEventThrottle: 16,
+    onTouchStart: function handleTouchStart(nativeEvent) {
+      if (null != closure_18.current) {
+        const _clearTimeout = clearTimeout;
+        clearTimeout(closure_18.current);
+        closure_18.current = null;
+      }
+      ref5.current = false;
+      ref3.current = nativeEvent.nativeEvent.pageX;
+      ref4.current = ref2.current;
+    },
+    onTouchEnd: function handleTouchEnd() {
+      const tmp = disabled;
+      if (!tmp) {
+        const tmp2 = isScreenReaderEnabled;
+        if (!tmp2) {
+          if (!ref.current) {
+            if (!ref5.current) {
+              let current = ref4.current;
+              if (null != closure_18.current) {
+                const _clearTimeout = clearTimeout;
+                clearTimeout(closure_18.current);
+                closure_18.current = null;
+              }
+              const _setTimeout = setTimeout;
+              closure_18.current = setTimeout(() => {
+                closure_18.current = null;
+                current = ref1.current;
+                if (current != null) {
+                  current.measureInWindow((arg0) => {
+                    const diff = closure_1_0 - arg0 + closure_1_1 - bound;
+                    let rounded = Math.floor(diff / closure_2_15);
+                    if (diff >= 0) {
+                      if (null != current[rounded]) {
+                        handlePressOption(current[rounded], rounded);
+                      }
+                    }
+                    rounded = closure_2_12;
+                  });
+                }
+              }, 100);
+            }
+          }
+        }
+      }
+    },
     onLayout: function handleLayout(nativeEvent) {
       _undefined(nativeEvent.nativeEvent.layout.width);
     },
     contentContainerStyle: items2,
-    children: tmp16(tmp15, obj4)
+    children: ref(closure_6, obj5)
   };
-  tmp18 = undefined;
-  const tmp14 = ref;
-  const tmp17 = closure_5;
+  tmp19 = undefined;
+  const tmp15 = ref;
+  const tmp18 = closure_5;
   if (!isScreenReaderEnabled) {
-    tmp18 = sum;
+    tmp19 = sum;
   }
   items2 = [tmp.assetList, { paddingRight: bound1 }];
-  obj4 = {
+  obj5 = {
     style: tmp.radioGroup,
     accessibilityRole: "radiogroup",
     accessibilityLabel: tmp2Result.getCustomizationOptionName(customizationOption),
@@ -183,7 +284,7 @@ export default function TraitOptionList(size) {
       let obj3;
       size = traitOption;
       let closure_1 = index;
-      let obj = {
+      const obj = {
         size,
         traitOption,
         accessibilityLabel: obj2.getAssetAccessibilityLabel(traitOption, obj3),
@@ -192,44 +293,24 @@ export default function TraitOptionList(size) {
         hideCornerFlag: skipDescription,
         disabled,
         onPress() {
-          const tmp2 = index;
-          if (null != ref.current) {
-            const _clearTimeout = clearTimeout;
-            clearTimeout(ref.current);
-            ref.current = null;
-          }
-          closure_10.current = false;
-          if (traitOption.optionId !== dependencyMap) {
-            closure_5(traitOption.trait, traitOption.optionId);
-            const obj = traitOption(closure_1_2[17]);
-            const result = obj.triggerHapticFeedback(traitOption(closure_1_2[17]).HapticFeedbackTypes.IMPACT_LIGHT);
-            closure_7();
-          }
-          const tmp13 = isScreenReaderEnabled;
-          if (!tmp13) {
-            const current = ref.current;
-            if (current != null) {
-              const obj2 = { x: tmp2 * c13, animated: !closure_6 };
-              current.scrollTo(obj2);
-            }
-          }
+          handlePressOption(traitOption, index);
         }
       };
-      let tmp2 = options(dependencyMap[8]);
+      const tmp2 = options(dependencyMap[8]);
       obj2 = size(dependencyMap[10]);
       obj3 = { skipRarity: skipDescription, skipDescription };
       return ref(tmp2, obj, traitOption.optionId);
     })
   };
-  tmp2Result = tmp2(6734);
-  const children = [tmp16(tmp17, obj3), ];
-  let tmp16Result = !isScreenReaderEnabled;
-  if (tmp16Result) {
-    const obj5 = { size };
-    tmp16Result = tmp16(handleScrollSettled, obj5);
+  tmp2Result = tmp2(6742);
+  items3 = [tmp17(tmp18, obj4), ];
+  let tmp17Result = !isScreenReaderEnabled;
+  if (tmp17Result) {
+    const obj6 = { size };
+    tmp17Result = tmp17(width, obj6);
   }
-  children[1] = tmp16Result;
-  return tmp14(closure_6, { children });
+  items3[1] = tmp17Result;
+  return tmp15(closure_6, obj3);
 };
 export const TRAIT_OPTION_SPACING = PX_12;
 export const CONTENT_INSET = PX_16;

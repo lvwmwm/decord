@@ -1,15 +1,15 @@
-// Module ID: 7256
-// Function ID: 7257
+// Module ID: 7265
+// Function ID: 7266
 // Name: OrbCheckoutUtils
-// Dependencies: [1072, 1074, 7257, 1113, 7258, 5126, 2]
+// Dependencies: [1072, 1074, 7266, 1113, 5130, 7267, 2]
 // Exports: getOrbCheckoutDisclaimerMessage, getOrbPriceFromPrices, resolveOrbCheckoutErrorMessage
 
-// Module 7256 (OrbCheckoutUtils)
+// Module 7265 (OrbCheckoutUtils)
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import intl10 from "intl" /* 1113 */;
-import BillingError from "BillingError" /* 5126 */;
-import OrderConstants from "OrderConstants" /* 7257 */;
-import OrderActionCreators from "OrderActionCreators" /* 7258 */;
+import BillingError from "BillingError" /* 5130 */;
+import OrderConstants from "OrderConstants" /* 7266 */;
+import OrderActionCreators from "OrderActionCreators" /* 7267 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -70,43 +70,47 @@ export function getOrbCheckoutDisclaimerMessage(skuId) {
 export function resolveOrbCheckoutErrorMessage(orbRedemptionError, result) {
   let tmp = null;
   if (null != orbRedemptionError) {
-    let stringResult1;
-    if (orbRedemptionError instanceof OrderActionCreators.OrderSigningFailedWithConstraintsError) {
-      if (null != result) {
-        let stringResult;
-        if (ConstraintReasonCode.INSUFFICIENT_ORB_BALANCE === result) {
-          const intl9 = tmp2(1113).intl;
-          stringResult = intl9.string(tmp2(1113).t.keFvXM);
-        } else if (ConstraintReasonCode.SKU_ALREADY_OWNED === result) {
-          const intl8 = tmp2(1113).intl;
-          stringResult = intl8.string(tmp2(1113).t.m371Mx);
-        } else if (ConstraintReasonCode.BUNDLE_PARTIALLY_OWNED === result) {
-          const intl7 = tmp2(1113).intl;
-          stringResult = intl7.string(tmp2(1113).t.v9oC0p);
-        } else {
-          const intl6 = tmp2(1113).intl;
-          stringResult = intl6.string(tmp2(1113).t.fqJZ11);
-        }
-        stringResult1 = stringResult;
-      }
-      tmp = stringResult1;
-    }
-    if (orbRedemptionError instanceof OrderActionCreators.OrderProcessingPendingError) {
-      const intl5 = tmp2(1113).intl;
-      stringResult1 = intl5.string(tmp2(1113).t["2BmwgV"]);
-    } else if (orbRedemptionError.code === BillingError.ErrorCodes.VIRTUAL_CURRENCY_INSUFFICIENT_BALANCE) {
-      const intl4 = tmp2(1113).intl;
-      stringResult1 = intl4.string(tmp2(1113).t.keFvXM);
-    } else if (orbRedemptionError.code === BillingError.ErrorCodes.ALREADY_PURCHASED) {
-      const intl3 = tmp2(1113).intl;
-      stringResult1 = intl3.string(tmp2(1113).t.m371Mx);
-    } else if (orbRedemptionError.code === BillingError.ErrorCodes.BILLING_ORDER_NOT_SIGNABLE) {
-      const intl2 = tmp2(1113).intl;
-      stringResult1 = intl2.string(tmp2(1113).t.ZHgEG7);
+    let message;
+    if (orbRedemptionError.code === BillingError.ErrorCodes.BILLING_PURCHASE_BLOCKED_BY_RESTRICTION) {
+      message = orbRedemptionError.message;
     } else {
-      const intl = tmp2(1113).intl;
-      stringResult1 = intl.string(tmp2(1113).t.fqJZ11);
+      if (orbRedemptionError instanceof OrderActionCreators.OrderSigningFailedWithConstraintsError) {
+        if (null != result) {
+          let stringResult;
+          if (ConstraintReasonCode.INSUFFICIENT_ORB_BALANCE === result) {
+            const intl9 = tmp2(1113).intl;
+            stringResult = intl9.string(tmp2(1113).t.keFvXM);
+          } else if (ConstraintReasonCode.SKU_ALREADY_OWNED === result) {
+            const intl8 = tmp2(1113).intl;
+            stringResult = intl8.string(tmp2(1113).t.m371Mx);
+          } else if (ConstraintReasonCode.BUNDLE_PARTIALLY_OWNED === result) {
+            const intl7 = tmp2(1113).intl;
+            stringResult = intl7.string(tmp2(1113).t.v9oC0p);
+          } else {
+            const intl6 = tmp2(1113).intl;
+            stringResult = intl6.string(tmp2(1113).t.fqJZ11);
+          }
+          message = stringResult;
+        }
+      }
+      if (orbRedemptionError instanceof OrderActionCreators.OrderProcessingPendingError) {
+        const intl5 = tmp2(1113).intl;
+        message = intl5.string(tmp2(1113).t["2BmwgV"]);
+      } else if (orbRedemptionError.code === BillingError.ErrorCodes.VIRTUAL_CURRENCY_INSUFFICIENT_BALANCE) {
+        const intl4 = tmp2(1113).intl;
+        message = intl4.string(tmp2(1113).t.keFvXM);
+      } else if (orbRedemptionError.code === BillingError.ErrorCodes.ALREADY_PURCHASED) {
+        const intl3 = tmp2(1113).intl;
+        message = intl3.string(tmp2(1113).t.m371Mx);
+      } else if (orbRedemptionError.code === BillingError.ErrorCodes.BILLING_ORDER_NOT_SIGNABLE) {
+        const intl2 = tmp2(1113).intl;
+        message = intl2.string(tmp2(1113).t.ZHgEG7);
+      } else {
+        const intl = tmp2(1113).intl;
+        message = intl.string(tmp2(1113).t.fqJZ11);
+      }
     }
+    tmp = message;
   }
   return tmp;
 }

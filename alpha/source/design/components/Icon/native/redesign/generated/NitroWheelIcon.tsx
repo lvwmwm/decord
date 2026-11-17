@@ -1,14 +1,14 @@
-// Module ID: 9436
-// Function ID: 9437
+// Module ID: 9446
+// Function ID: 9447
 // Name: NitroWheelIcon
-// Dependencies: [19, 21, 575, 6009, 9291, 2]
+// Dependencies: [19, 21, 575, 6013, 9300, 2]
 // Exports: NitroWheelIcon
 
-// Module 9436 (NitroWheelIcon)
+// Module 9446 (NitroWheelIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6009 */;
-import AssetRegistry from "AssetRegistry" /* 9291 */;
+import BaseIconImage2 from "BaseIconImage" /* 6013 */;
+import AssetRegistry from "AssetRegistry" /* 9300 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

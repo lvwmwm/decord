@@ -1,8 +1,8 @@
-// Module ID: 19633
-// Function ID: 19634
+// Module ID: 19678
+// Function ID: 19679
 // Dependencies: [2]
 
-// Module 19633
+// Module 19678
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/discovery/controller.png.js");

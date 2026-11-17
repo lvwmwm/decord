@@ -1,18 +1,18 @@
-// Module ID: 6785
-// Function ID: 6786
+// Module ID: 6793
+// Function ID: 6794
 // Name: ChannelMessages
-// Dependencies: [1072, 3, 6786, 11, 6364, 12, 5533, 6787, 6788, 6789, 2]
+// Dependencies: [1072, 3, 6794, 11, 6372, 12, 5537, 6795, 6796, 6797, 2]
 // Exports: flatMapChannelMessages
 
-// Module 6785 (ChannelMessages)
+// Module 6793 (ChannelMessages)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
-import flow_Client from "flow/Client" /* 5533 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 6364 */;
-import EnsureReceivedMessagesAddedInOrderExperimentDefault from "EnsureReceivedMessagesAddedInOrderExperiment" /* 6786 */;
-import IOSPushNotificationRawPayloadFixExperiment from "IOSPushNotificationRawPayloadFixExperiment" /* 6787 */;
-import SortedArrayUtilsAll from "SortedArrayUtils" /* 6789 */;
+import flow_Client from "flow/Client" /* 5537 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 6372 */;
+import EnsureReceivedMessagesAddedInOrderExperimentDefault from "EnsureReceivedMessagesAddedInOrderExperiment" /* 6794 */;
+import IOSPushNotificationRawPayloadFixExperiment from "IOSPushNotificationRawPayloadFixExperiment" /* 6795 */;
+import SortedArrayUtilsAll from "SortedArrayUtils" /* 6797 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -1514,7 +1514,7 @@ class ChannelMessages {
           jumpType = jump.jumpType;
         }
         if (jumpType == null) {
-          jumpType = id(5533).JumpType.ANIMATED;
+          jumpType = id(5537).JumpType.ANIMATED;
         }
         let obj2 = { ready: true, loadingMore: false, jumpType, jumpFlash: flag8, jumped: null != jump, jumpedToPresent: flag9, jumpTargetId: messageId, jumpTargetOffset: num, jumpSequenceId: null, jumpReturnTargetId: null, onJumpComplete: null, hasMoreBefore: null, hasMoreAfter: null, cached: null, hasFetched: null, error: false, initialScrollSequenceId: null, suppressRowAnimationSequenceId: null };
         flag8 = undefined;
@@ -1683,7 +1683,7 @@ class ChannelMessages {
     let reversed;
     let sum;
     const self = this;
-    let obj = reversed(6788);
+    let obj = reversed(6796);
     const result = obj.requireSortedDescending(messages);
     const mapped = messages.map((item) => mergeMessage(self, item));
     reversed = mapped.reverse();

@@ -1,156 +1,201 @@
 // Module ID: 9860
 // Function ID: 9861
-// Dependencies: [9861, 9841, 9862, 9821, 9825, 9797, 9854]
-// Exports: createTransport
+// Dependencies: [9835, 9816, 9815, 9846]
+// Exports: applyScopeDataToEvent, mergeAndOverwriteScopeData, mergeScopeData
 
 // Module 9860
-import _mod9821 from "module_9821" /* 9821 */;
-import _mod9825 from "module_9825" /* 9825 */;
-import _mod9841 from "module_9841" /* 9841 */;
-import _mod9854 from "module_9854" /* 9854 */;
-import _slicedToArray from "_slicedToArray" /* 9862 */;
-
-const require = globalThis.__r;
-let _require, dependencyMap;
+import _mod9815 from "module_9815" /* 9815 */;
+import _mod9816 from "module_9816" /* 9816 */;
+import _mod9835 from "module_9835" /* 9835 */;
+import _mod9846 from "module_9846" /* 9846 */;
 
 
-export const DEFAULT_TRANSPORT_BUFFER_SIZE = 64;
-export function createTransport(bufferSize, arg1) {
-  _require = bufferSize;
-  dependencyMap = arg1;
-  let promiseBuffer = arg2;
-  if (arg2 === undefined) {
-    let tmp2 = _require;
-    let tmp4 = require("module_9861");
-    let num = bufferSize.bufferSize;
-    const makePromiseBuffer = tmp4.makePromiseBuffer;
-    if (!num) {
-      num = 64;
-    }
-    promiseBuffer = makePromiseBuffer(num);
+export function applyScopeDataToEvent(extra, arg1) {
+  let breadcrumbs;
+  let contexts;
+  let fingerprint;
+  let items1;
+  let level;
+  let sdkProcessingMetadata;
+  let span;
+  let tags;
+  let tmpResult10;
+  let tmpResult9;
+  let transactionName;
+  let user;
+  ({ fingerprint, span, breadcrumbs, sdkProcessingMetadata, level, transactionName } = arg1);
+  ({ extra, tags, user, contexts } = arg1);
+  const obj = _mod9816;
+  const dropUndefinedKeysResult = obj.dropUndefinedKeys(extra);
+  let length = dropUndefinedKeysResult;
+  if (length) {
+    const _Object = Object;
+    length = Object.keys(dropUndefinedKeysResult).length;
   }
-  let closure_3 = {};
-  let obj = {
-    send(arg0) {
-      const items = [];
-      let tmp = bufferSize;
-      const tmp2 = closure_1;
-      let obj = bufferSize(closure_1[1]);
-      obj.forEachEnvelopeItem(arg0, (arg0, arg1) => {
-        const obj = _mod9841;
-        const result = obj.envelopeItemTypeToDataCategory(arg1);
-        const obj2 = _slicedToArray;
-        if (obj2.isRateLimited(closure_3, result)) {
-          let tmp4;
-          if ("event" === arg1) {
-            const _Array = Array;
-            let tmp6;
-            if (Array.isArray(arg0)) {
-              tmp6 = arg0[1];
-            }
-            tmp4 = tmp6;
-          }
-          items.recordDroppedEvent("ratelimit_backoff", result, tmp4);
-        } else {
-          items.push(arg0);
-        }
-      });
-      if (0 === items.length) {
-        let tmpResult = tmp(tmp2[3]);
-        return tmpResult.resolvedSyncPromise({});
-      } else {
-        let tmpResult2 = tmp(tmp2[1]);
-        closure_1 = tmpResult2.createEnvelope(arg0[0], items);
-        function recordEnvelopeLoss(arg0) {
-
-        }
-        let tmp4 = recordEnvelopeLoss;
-        const addResult = recordEnvelopeLoss.add(() => {
-          let obj2;
-          let obj = { body: obj2.serializeEnvelope(closure_1) };
-          obj2 = _mod9841;
-          const promise = closure_1(obj);
-          return promise.then((statusCode) => {
-            let DEBUG_BUILD = undefined !== statusCode.statusCode;
-            if (DEBUG_BUILD) {
-              DEBUG_BUILD = statusCode.statusCode < 200 || statusCode.statusCode >= 300;
-              const tmp = statusCode.statusCode < 200 || statusCode.statusCode >= 300;
-            }
-            if (DEBUG_BUILD) {
-              DEBUG_BUILD = items(closure_1[4]).DEBUG_BUILD;
-            }
-            if (DEBUG_BUILD) {
-              const logger = items(closure_1[5]).logger;
-              const _HermesInternal = HermesInternal;
-              logger.warn("Sentry responded with status code " + statusCode.statusCode + " to sent event.");
-            }
-            const obj = items(closure_1[2]);
-            closure_3 = obj.updateRateLimits(closure_3, statusCode);
-            return statusCode;
-          }, (arg0) => {
-            let recordDroppedEvent;
-            if (typeof recordEnvelopeLoss === "function") {
-              let tmp = arg0;
-              const network_error = "network_error";
-              let obj = recordDroppedEvent(closure_1[1]);
-              let tmp4 = closure_1_1;
-              obj.forEachEnvelopeItem(closure_1_1, (arg0, arg1) => {
-                let tmp;
-                if ("event" === arg1) {
-                  const _Array = Array;
-                  let tmp4;
-                  if (Array.isArray(arg0)) {
-                    tmp4 = arg0[1];
-                  }
-                  tmp = tmp4;
-                }
-                recordDroppedEvent = recordDroppedEvent.recordDroppedEvent;
-                const obj = items(closure_3_1[1]);
-                recordDroppedEvent(network_error, obj.envelopeItemTypeToDataCategory(arg1), tmp);
-              });
-              throw arg0;
-            } else {
-              throw new TypeError("Trying to call a non-function");
-            }
-          });
-        });
-        return addResult.then((result) => result, (arg0) => {
-          if (arg0 instanceof _mod9854.SentryError) {
-            if (_mod9825.DEBUG_BUILD) {
-              const logger = tmp(9797).logger;
-              logger.error("Skipped sending event because buffer is full.");
-            }
-            if (typeof recordEnvelopeLoss === "function") {
-              const queue_overflow = "queue_overflow";
-              const tmpResult = _mod9841;
-              tmpResult.forEachEnvelopeItem(closure_1, (arg0, arg1) => {
-                let tmp;
-                if ("event" === arg1) {
-                  const _Array = Array;
-                  let tmp4;
-                  if (Array.isArray(arg0)) {
-                    tmp4 = arg0[1];
-                  }
-                  tmp = tmp4;
-                }
-                recordDroppedEvent = recordDroppedEvent.recordDroppedEvent;
-                const obj = items(closure_3_1[1]);
-                recordDroppedEvent(network_error, obj.envelopeItemTypeToDataCategory(arg1), tmp);
-              });
-              const tmpResult2 = _mod9821;
-              return tmpResult2.resolvedSyncPromise({});
-            } else {
-              throw new TypeError("Trying to call a non-function");
-            }
-          } else {
-            throw arg0;
-          }
-        });
-      }
-    },
-    flush(arg0) {
-      return promiseBuffer.drain(arg0);
+  const tmp5 = extra;
+  if (length) {
+    const obj2 = {};
+    const merged = Object.assign(dropUndefinedKeysResult);
+    const merged1 = Object.assign(extra.extra);
+    extra.extra = obj2;
+  }
+  const tmpResult = _mod9816;
+  const dropUndefinedKeysResult1 = tmpResult.dropUndefinedKeys(tags);
+  let length2 = dropUndefinedKeysResult1;
+  if (length2) {
+    const _Object2 = Object;
+    length2 = Object.keys(dropUndefinedKeysResult1).length;
+  }
+  if (length2) {
+    const obj3 = {};
+    const merged2 = Object.assign(dropUndefinedKeysResult1);
+    const merged3 = Object.assign(extra.tags);
+    extra.tags = obj3;
+  }
+  const tmpResult7 = _mod9816;
+  const dropUndefinedKeysResult2 = tmpResult7.dropUndefinedKeys(user);
+  let length3 = dropUndefinedKeysResult2;
+  if (length3) {
+    const _Object3 = Object;
+    length3 = Object.keys(dropUndefinedKeysResult2).length;
+  }
+  if (length3) {
+    const obj4 = {};
+    const merged4 = Object.assign(dropUndefinedKeysResult2);
+    const merged5 = Object.assign(extra.user);
+    extra.user = obj4;
+  }
+  const tmpResult8 = _mod9816;
+  const dropUndefinedKeysResult3 = tmpResult8.dropUndefinedKeys(contexts);
+  let length4 = dropUndefinedKeysResult3;
+  if (length4) {
+    const _Object4 = Object;
+    length4 = Object.keys(dropUndefinedKeysResult3).length;
+  }
+  if (length4) {
+    const obj5 = {};
+    const merged6 = Object.assign(dropUndefinedKeysResult3);
+    const merged7 = Object.assign(extra.contexts);
+    extra.contexts = obj5;
+  }
+  if (level) {
+    extra.level = level;
+  }
+  const tmp32 = transactionName && "transaction" !== extra.type;
+  if (tmp32) {
+    extra.transaction = transactionName;
+  }
+  if (span) {
+    const obj6 = { trace: tmpResult9.spanToTraceContext(span) };
+    tmpResult9 = _mod9815;
+    const merged8 = Object.assign(extra.contexts);
+    extra.contexts = obj6;
+    const obj7 = { dynamicSamplingContext: tmpResult10.getDynamicSamplingContextFromSpan(span) };
+    tmpResult10 = _mod9846;
+    const merged9 = Object.assign(extra.sdkProcessingMetadata);
+    extra.sdkProcessingMetadata = obj7;
+    const tmpResult11 = _mod9815;
+    const rootSpan = tmpResult11.getRootSpan(span);
+    const tmpResult12 = _mod9815;
+    const description = tmpResult12.spanToJSON(rootSpan).description;
+    const tmp38 = description && !extra.transaction && "transaction" === extra.type;
+    if (tmp38) {
+      extra.transaction = description;
     }
-  };
-  return obj;
+  }
+  if (extra.fingerprint) {
+    let items;
+    const _Array = Array;
+    const fingerprint2 = extra.fingerprint;
+    if (Array.isArray(extra.fingerprint)) {
+      items = fingerprint2;
+    } else {
+      items = [fingerprint2];
+    }
+    items1 = items;
+  } else {
+    items1 = [];
+  }
+  extra.fingerprint = items1;
+  if (fingerprint) {
+    const fingerprint3 = extra.fingerprint;
+    extra.fingerprint = fingerprint3.concat(fingerprint);
+  }
+  const tmp40 = extra.fingerprint && !extra.fingerprint.length;
+  if (tmp40) {
+    delete tmp5["fingerprint"];
+  }
+  const items2 = [...breadcrumbs];
+  let tmp42;
+  if (items2.length) {
+    tmp42 = items2;
+  }
+  extra.breadcrumbs = tmp42;
+  const obj8 = {};
+  const merged10 = Object.assign(extra.sdkProcessingMetadata);
+  const merged11 = Object.assign(sdkProcessingMetadata);
+  extra.sdkProcessingMetadata = obj8;
+}
+export function mergeAndOverwriteScopeData(arg0, arg1, arg2) {
+  const obj = _mod9835;
+  arg0[arg1] = obj.merge(arg0[arg1], arg2, 1);
+}
+export function mergeScopeData(extra, arg1) {
+  let attachments;
+  let breadcrumbs;
+  let contexts;
+  let eventProcessors;
+  let fingerprint;
+  let level;
+  let propagationContext;
+  let sdkProcessingMetadata;
+  let span;
+  let tags;
+  let transactionName;
+  let user;
+  ({ level, breadcrumbs, fingerprint, eventProcessors, attachments, propagationContext, transactionName, span } = arg1);
+  ({ extra, tags, user, contexts, sdkProcessingMetadata } = arg1);
+  const obj = _mod9835;
+  extra.extra = obj.merge(extra.extra, extra, 1);
+  const obj2 = _mod9835;
+  extra.tags = obj2.merge(extra.tags, tags, 1);
+  const obj3 = _mod9835;
+  extra.user = obj3.merge(extra.user, user, 1);
+  const obj4 = _mod9835;
+  extra.contexts = obj4.merge(extra.contexts, contexts, 1);
+  const obj5 = _mod9835;
+  extra.sdkProcessingMetadata = obj5.merge(extra.sdkProcessingMetadata, sdkProcessingMetadata, 2);
+  if (level) {
+    extra.level = level;
+  }
+  if (transactionName) {
+    extra.transactionName = transactionName;
+  }
+  if (span) {
+    extra.span = span;
+  }
+  if (breadcrumbs.length) {
+    const items = [];
+    HermesBuiltin.arraySpread(items, breadcrumbs, HermesBuiltin.arraySpread(items, extra.breadcrumbs, 0));
+    extra.breadcrumbs = items;
+  }
+  if (fingerprint.length) {
+    const items1 = [];
+    HermesBuiltin.arraySpread(items1, fingerprint, HermesBuiltin.arraySpread(items1, extra.fingerprint, 0));
+    extra.fingerprint = items1;
+  }
+  if (eventProcessors.length) {
+    const items2 = [];
+    HermesBuiltin.arraySpread(items2, eventProcessors, HermesBuiltin.arraySpread(items2, extra.eventProcessors, 0));
+    extra.eventProcessors = items2;
+  }
+  if (attachments.length) {
+    const items3 = [];
+    HermesBuiltin.arraySpread(items3, attachments, HermesBuiltin.arraySpread(items3, extra.attachments, 0));
+    extra.attachments = items3;
+  }
+  const obj6 = {};
+  const merged = Object.assign(extra.propagationContext);
+  const merged1 = Object.assign(propagationContext);
+  extra.propagationContext = obj6;
 }

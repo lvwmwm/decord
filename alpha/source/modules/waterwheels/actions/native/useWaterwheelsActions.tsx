@@ -1,26 +1,26 @@
-// Module ID: 19004
-// Function ID: 19005
+// Module ID: 19045
+// Function ID: 19046
 // Name: useWaterwheelsActions
-// Dependencies: [5, 19, 2141, 502, 5177, 14825, 1072, 6892, 6005, 10225, 7230, 1113, 2569, 7653, 19005, 572, 10461, 9534, 10281, 10286, 7422, 6912, 8200, 14834, 5342, 6907, 7683, 10219, 1285, 19006, 6913, 2]
+// Dependencies: [5, 19, 2141, 502, 5181, 13905, 1072, 6900, 6009, 10668, 7238, 1113, 2571, 7663, 19046, 572, 10386, 9546, 10389, 10394, 7432, 6920, 8211, 13914, 5346, 6915, 7693, 10662, 1285, 19047, 6921, 2]
 // Exports: useWaterwheelsActions
 
-// Module 19004 (useWaterwheelsActions)
+// Module 19045 (useWaterwheelsActions)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 5342 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 6892 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6907 */;
-import react_nativeDefault from "react-native" /* 8200 */;
-import GameActionCreators from "GameActionCreators" /* 9534 */;
-import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 10225 */;
-import NotificationUtilsDefault from "NotificationUtils" /* 14834 */;
-import WaterwheelsDiscoverJoinAttribution from "WaterwheelsDiscoverJoinAttribution" /* 19005 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5346 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 6009 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 6900 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6915 */;
+import react_nativeDefault from "react-native" /* 8211 */;
+import GameActionCreators from "GameActionCreators" /* 9546 */;
+import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 10668 */;
+import NotificationUtilsDefault from "NotificationUtils" /* 13914 */;
+import WaterwheelsDiscoverJoinAttribution from "WaterwheelsDiscoverJoinAttribution" /* 19046 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import GameStore from "GameStore" /* 2141 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 14825 */;
+import GuildStore from "GuildStore" /* 5181 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13905 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

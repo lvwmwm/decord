@@ -1,21 +1,21 @@
-// Module ID: 16983
-// Function ID: 16984
+// Module ID: 17018
+// Function ID: 17019
 // Name: AuthCommandsFactory
-// Dependencies: [32, 5, 2165, 2143, 1388, 6751, 1072, 12872, 1089, 510, 7303, 2151, 5943, 12772, 7409, 7405, 7412, 5243, 1084, 1285, 572, 16922, 7307, 1490, 2]
+// Dependencies: [32, 5, 2165, 2143, 1388, 6759, 1072, 11485, 1089, 510, 7313, 2151, 5947, 11381, 7419, 7415, 7422, 5247, 1084, 1285, 572, 16957, 7317, 1490, 2]
 // Exports: default
 
-// Module 16983 (AuthCommandsFactory)
+// Module 17018 (AuthCommandsFactory)
 import Storage3 from "Storage" /* 510 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import RPCErrorDefault from "RPCError" /* 7303 */;
+import RPCErrorDefault from "RPCError" /* 7313 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
 import ApplicationRecord from "ApplicationRecord" /* 2143 */;
 import UserStore from "UserStore" /* 1388 */;
-import Constants_mod from "Constants" /* 6751 */;
+import Constants_mod from "Constants" /* 6759 */;
 import Constants_mod2 from "Constants" /* 1072 */;
-import LeakyBucket_mod from "LeakyBucket" /* 12872 */;
+import LeakyBucket_mod from "LeakyBucket" /* 11485 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -611,7 +611,7 @@ export default function createAuthCommandHandlers(arg0, arg1) {
   let obj2 = require("CONTEXT_MENU_ICON_NAMES");
   let obj3 = {
     handler(socket) {
-      const f143516 = function(result) {
+      const f143852 = function(result) {
         let access_token;
         let expires_in;
         let scope;
@@ -717,7 +717,7 @@ export default function createAuthCommandHandlers(arg0, arg1) {
                   let obj3 = { client_id: tmp, scope: IDENTIFY, response_type: "token", signal, isSocketRpcPrivateScope: false };
                   let tmp8 = signal;
                   const promise = authorizeWithPrompt(obj3, closure_0, closure_1);
-                  return promise.then(f143516);
+                  return promise.then(f143852);
                 } else {
                   let str = "Trying to call a non-function";
                   throw new TypeError("Trying to call a non-function");
@@ -726,7 +726,7 @@ export default function createAuthCommandHandlers(arg0, arg1) {
             } else {
               let obj3 = { client_id: id, scope: IDENTIFY, response_type: "token", signal, isSocketRpcPrivateScope: false };
               let promise = authorizeWithPrompt(obj3, socket, signal);
-              catchPromise = promise.then(f143516);
+              catchPromise = promise.then(f143852);
             }
             return catchPromise;
           }

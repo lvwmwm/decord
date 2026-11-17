@@ -1,16 +1,16 @@
-// Module ID: 18765
-// Function ID: 18766
+// Module ID: 18806
+// Function ID: 18807
 // Name: AddFriendsScreenUtils
-// Dependencies: [5, 5155, 1072, 5311, 10840, 8134, 6004, 1113, 14671, 8660, 8137, 2]
+// Dependencies: [5, 5159, 1072, 5315, 10863, 8145, 6008, 1113, 13749, 8671, 8148, 2]
 // Exports: acceptIncomingRequest, addContactSuggestion, dismissIncomingRequest, sendWave
 
-// Module 18765 (AddFriendsScreenUtils)
+// Module 18806 (AddFriendsScreenUtils)
 import Constants from "Constants" /* 1072 */;
-import MessageConstants from "MessageConstants" /* 5311 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 8137 */;
-import PeopleUtilsDefault from "PeopleUtils" /* 10840 */;
+import MessageConstants from "MessageConstants" /* 5315 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 8148 */;
+import PeopleUtilsDefault from "PeopleUtils" /* 10863 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
+import ChannelStore from "ChannelStore" /* 5159 */;
 import size from "module_2" /* 2 */;
 
 let channelId;

@@ -1,22 +1,22 @@
-// Module ID: 20127
-// Function ID: 20128
+// Module ID: 20175
+// Function ID: 20176
 // Name: MediaPlaybackPanelUI
-// Dependencies: [32, 19, 12904, 17020, 11986, 11985, 21, 5306, 575, 1630, 1496, 20126, 1655, 11333, 11989, 19930, 5538, 5541, 5929, 19932, 5906, 5588, 20128, 2]
+// Dependencies: [32, 19, 11518, 17055, 12429, 12428, 21, 5310, 575, 1630, 1496, 20174, 1655, 11334, 12432, 19975, 5542, 5545, 5933, 19977, 5910, 5592, 20176, 2]
 // Exports: default
 
-// Module 20127 (MediaPlaybackPanelUI)
+// Module 20175 (MediaPlaybackPanelUI)
 import react2 from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11985 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 11986 */;
-import MediaPlaybackPanelStateContextDefault from "MediaPlaybackPanelStateContext" /* 20126 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 12428 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 12429 */;
+import MediaPlaybackPanelStateContextDefault from "MediaPlaybackPanelStateContext" /* 20174 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 12904 */;
-import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 17020 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 11518 */;
+import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 17055 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size_mod from "module_2" /* 2 */;
 
 const react = react2;
@@ -31,16 +31,16 @@ let tmp3;
 let tmp7;
 const useSafeAreaInsetsDefault = tmp3(1630);
 const _modDef1655 = tmp3(1655);
-const timing_timing = tmp7(5538);
-const timingPresets = tmp7(5541);
-const LegacyBaseButton = tmp7(5588);
-const LayerScope2 = tmp7(5906);
-const spring_spring = tmp7(5929);
-const cheapWorkletShallowEqual = tmp7(11333);
-const updateSharedValueIfChangedDefault = tmp3(11989);
-const MorphablePanelUtils = tmp7(19930);
-const useMorphablePanelGesture = tmp7(19932);
-const useMorphablePanelGestureDefault = tmp3(19932);
+const timing_timing = tmp7(5542);
+const timingPresets = tmp7(5545);
+const LegacyBaseButton = tmp7(5592);
+const LayerScope2 = tmp7(5910);
+const spring_spring = tmp7(5933);
+const cheapWorkletShallowEqual = tmp7(11334);
+const updateSharedValueIfChangedDefault = tmp3(12432);
+const MorphablePanelUtils = tmp7(19975);
+const useMorphablePanelGesture = tmp7(19977);
+const useMorphablePanelGestureDefault = tmp3(19977);
 const useContext = react2.useContext;
 ({ MEDIA_PLAYBACK_PANEL_LAYOUT_PHYSICS: metroImportDefault, MediaPlaybackPanelModes: metroImportAll } = MediaPlaybackPanelConstants);
 const IS_IOS = MorphablePanelConstants.IS_IOS;

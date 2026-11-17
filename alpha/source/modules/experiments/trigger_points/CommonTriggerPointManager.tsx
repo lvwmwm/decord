@@ -1,12 +1,12 @@
-// Module ID: 20200
-// Function ID: 20201
+// Module ID: 20248
+// Function ID: 20249
 // Name: CommonTriggerPointManager
-// Dependencies: [7882, 20201, 19774, 2]
+// Dependencies: [7892, 20249, 19819, 2]
 
-// Module 20200 (CommonTriggerPointManager)
-import OpenUserSettingsTriggerPoint2 from "OpenUserSettingsTriggerPoint" /* 19774 */;
-import VoiceCallTriggerPoint2 from "VoiceCallTriggerPoint" /* 20201 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
+// Module 20248 (CommonTriggerPointManager)
+import OpenUserSettingsTriggerPoint2 from "OpenUserSettingsTriggerPoint" /* 19819 */;
+import VoiceCallTriggerPoint2 from "VoiceCallTriggerPoint" /* 20249 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7892 */;
 import size from "module_2" /* 2 */;
 
 class CommonTriggerPointManager extends AutomaticLifecycleManager {

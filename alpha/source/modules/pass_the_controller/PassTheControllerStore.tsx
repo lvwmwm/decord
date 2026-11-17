@@ -1,21 +1,21 @@
-// Module ID: 6791
-// Function ID: 6792
+// Module ID: 6799
+// Function ID: 6800
 // Name: PassTheControllerStore
-// Dependencies: [2140, 502, 6061, 6792, 16109, 1072, 6793, 6798, 1406, 6086, 16110, 16111, 572, 16113, 16116, 504, 2]
+// Dependencies: [2140, 502, 6068, 6800, 16146, 1072, 6801, 6805, 1406, 6093, 16147, 16148, 572, 16150, 16153, 504, 2]
 
-// Module 6791 (PassTheControllerStore)
+// Module 6799 (PassTheControllerStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 6086 */;
-import Constants2 from "Constants" /* 6793 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6798 */;
-import Constants3 from "Constants" /* 16109 */;
-import InputHostDefault from "InputHost" /* 16113 */;
-import InputGuestDefault from "InputGuest" /* 16116 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 6093 */;
+import Constants2 from "Constants" /* 6801 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6805 */;
+import Constants3 from "Constants" /* 16146 */;
+import InputHostDefault from "InputHost" /* 16150 */;
+import InputGuestDefault from "InputGuest" /* 16153 */;
 import RunningGameStore from "RunningGameStore" /* 2140 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 6792 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6068 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 6800 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -158,7 +158,7 @@ let obj = {
     let tmp2;
     let tmp27;
     let tmp552;
-    const f92794 = () => {
+    const f92993 = () => {
       if (inputConnection1 === inputConnection) {
         if (null != streamKey) {
           const obj = { type: "PASS_THE_CONTROLLER_UPDATE", streamKey: streamKey.streamKey, isHost: true, host: id.getId(), active: false };
@@ -197,8 +197,8 @@ let obj = {
                 if (null != rTCConnection) {
                   const self5 = this;
                   const self6 = this;
-                  const inputConnection = new inputConnection1(16110).InputConnection(rTCConnection, AuthenticationStore.getId());
-                  inputConnection.on(inputConnection1(16111).InputEvent.Disconnect, f92794);
+                  const inputConnection = new inputConnection1(16147).InputConnection(rTCConnection, AuthenticationStore.getId());
+                  inputConnection.on(inputConnection1(16148).InputEvent.Disconnect, f92993);
                   inputConnection.connect();
                   inputConnection1 = inputConnection;
                   tmp51 = inputConnection;
@@ -213,7 +213,7 @@ let obj = {
                 c15 = null;
                 let obj = { streamKey, inputHost: tmp552 };
                 const tmp55 = InputHostDefault;
-                const obj7 = inputConnection1(6798);
+                const obj7 = inputConnection1(6805);
                 let guildId = obj7.decodeStreamKey(streamKey).guildId;
                 if (guildId == null) {
                   guildId = null;
@@ -266,8 +266,8 @@ let obj = {
           if (null != rTCConnection1) {
             const self = this;
             const self2 = this;
-            inputConnection1 = new inputConnection1(16110).InputConnection(rTCConnection1, AuthenticationStore.getId());
-            inputConnection1.on(inputConnection1(16111).InputEvent.Disconnect, f92794);
+            inputConnection1 = new inputConnection1(16147).InputConnection(rTCConnection1, AuthenticationStore.getId());
+            inputConnection1.on(inputConnection1(16148).InputEvent.Disconnect, f92993);
             inputConnection1.connect();
             tmp12 = inputConnection1;
           }
@@ -450,7 +450,7 @@ let obj = {
         const inputHost = _null2.inputHost;
         inputHost.takeBackController();
       }
-      const encodeStreamKey = tmp(6798).encodeStreamKey;
+      const encodeStreamKey = tmp(6805).encodeStreamKey;
       StreamKeyUtils;
       if (null != guildId) {
         CALL = StreamTypes.GUILD;

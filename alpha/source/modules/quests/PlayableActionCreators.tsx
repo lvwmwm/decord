@@ -1,12 +1,13 @@
-// Module ID: 20891
-// Function ID: 20892
+// Module ID: 17861
+// Function ID: 17862
 // Name: PlayableActionCreators
-// Dependencies: [5, 1072, 8665, 8828, 8804, 1285, 572, 6748, 2]
-// Exports: claimPlayableReward
+// Dependencies: [5, 1072, 8676, 8839, 8815, 1285, 572, 6756, 2]
+// Exports: claimPlayableReward, recordPlayableLaunch
 
-// Module 20891 (PlayableActionCreators)
+// Module 17861 (PlayableActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 8665 */;
+import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 8676 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -135,4 +136,9 @@ const result = size.fileFinishedImporting("modules/quests/PlayableActionCreators
 
 export function claimPlayableReward() {
   return obj(...arguments);
+}
+export function recordPlayableLaunch(questDockPlayable) {
+  obj = DispatcherDefault;
+  const obj2 = { type: "PLAYABLE_LAUNCH", playable: questDockPlayable };
+  obj.dispatch(obj2);
 }

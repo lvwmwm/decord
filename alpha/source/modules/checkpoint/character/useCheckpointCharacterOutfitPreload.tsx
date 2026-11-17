@@ -1,10 +1,10 @@
-// Module ID: 14474
-// Function ID: 14475
+// Module ID: 13339
+// Function ID: 13340
 // Name: useCheckpointCharacterOutfitPreload
-// Dependencies: [32, 19, 14468, 2]
+// Dependencies: [32, 19, 13333, 2]
 // Exports: useCheckpointCharacterOutfitPreload
 
-// Module 14474 (useCheckpointCharacterOutfitPreload)
+// Module 13339 (useCheckpointCharacterOutfitPreload)
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

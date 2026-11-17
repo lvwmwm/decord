@@ -1,54 +1,78 @@
-// Module ID: 13327
-// Function ID: 13328
+// Module ID: 14559
+// Function ID: 14560
 // Name: ConjureProjectHeaderTitle
-// Dependencies: [19, 17, 21, 5306, 575, 7428, 1113, 4131, 10543, 5919, 2]
+// Dependencies: [19, 17, 21, 5310, 575, 7438, 1113, 4133, 14482, 5923, 7469, 2]
 // Exports: default
 
-// Module 13327 (ConjureProjectHeaderTitle)
+// Module 14559 (ConjureProjectHeaderTitle)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1113 */;
-import _modDef4131 from "module_4131" /* 4131 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import Pressables from "Pressables" /* 7428 */;
-import ConjureProjectIconDefault from "ConjureProjectIcon" /* 10543 */;
+import intl3 from "intl" /* 1113 */;
+import _modDef4133 from "module_4133" /* 4133 */;
+import Text_Text from "Text/Text" /* 5923 */;
+import Pressables from "Pressables" /* 7438 */;
+import ConjureProjectIconDefault from "ConjureProjectIcon" /* 14482 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
 let obj2;
+let obj3;
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 const hitSlop = { top: 12, bottom: 12, left: 12, right: 12 };
-let obj = { row: obj2, titles: { flex: 1, justifyContent: "center" } };
+let createStyles = createStyles_mod;
+let obj = { row: obj2, titles: obj3, titleText: { flexShrink: 1 } };
 obj2 = { flex: 1, flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12 };
-let closure_7 = createStyles.createStyles(obj);
+createStyles = createStyles.createStyles;
+obj3 = { flex: 1, flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
+let closure_7 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/conjure/projects/native/ConjureProjectHeaderTitle.tsx");
 
-export default function ConjureProjectHeaderTitle(project) {
+export default function ConjureProjectHeaderTitle(arg0) {
+  let draft;
   let intl;
+  let intl2;
   let items;
+  let items1;
   let obj3;
+  let obj7;
   let onPressIcon;
+  let project;
   let title;
-  project = project.project;
-  ({ title, onPressIcon } = project);
+  ({ project, draft } = arg0);
+  ({ title, onPressIcon } = arg0);
+  if (draft === undefined) {
+    draft = false;
+  }
   const tmp = closure_7();
   let tmp4 = null;
   const obj = { style: tmp.row, children: items };
-  const tmp2 = hasOwnProperty;
   if (null != project) {
-    const obj2 = { onPress: onPressIcon, hitSlop, accessibilityRole: "button", accessibilityLabel: intl.string(_modDef4131.FzfmQ8), children: React3(ConjureProjectIconDefault, obj3) };
+    const obj2 = { onPress: onPressIcon, hitSlop, accessibilityRole: "button", accessibilityLabel: intl.string(_modDef4133.FzfmQ8), children: React3(ConjureProjectIconDefault, obj3) };
     const PressableOpacity = Pressables.PressableOpacity;
-    intl = intl2.intl;
+    intl = intl3.intl;
     obj3 = { project, size: "list" };
     tmp4 = React3(PressableOpacity, obj2);
   }
   items = [tmp4, ];
-  const obj4 = { style: tmp.titles, children: React3(Text_Text.Text, { accessibilityRole: "header", "aria-level": "1", lineClamp: 1, maxFontSizeMultiplier: 2, variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: title }) };
-  items[1] = React3(View, obj4);
-  return tmp2(View, obj);
+  const obj4 = { style: tmp.titles, children: items1 };
+  items1 = [, ];
+  const obj5 = { accessibilityRole: "header", "aria-level": "1", lineClamp: 1, maxFontSizeMultiplier: 2, variant: "heading-md/semibold", color: "mobile-text-heading-primary", style: tmp.titleText, children: title };
+  items1[0] = React3(Text_Text.Text, obj5);
+  let tmp10Result = null;
+  const tmp10 = React3;
+  if (draft) {
+    const obj6 = { type: obj7, variant: "secondary" };
+    obj7 = { text: intl2.string(_modDef4133["2+GiMw"]) };
+    const Badge = tmp11(7469).Badge;
+    intl2 = tmp11(1113).intl;
+    tmp10Result = tmp10(Badge, obj6);
+  }
+  items1[1] = tmp10Result;
+  items[1] = hasOwnProperty(View, obj4);
+  return hasOwnProperty(View, obj);
 };

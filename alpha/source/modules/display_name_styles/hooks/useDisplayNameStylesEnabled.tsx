@@ -1,14 +1,14 @@
-// Module ID: 6741
-// Function ID: 6742
+// Module ID: 6749
+// Function ID: 6750
 // Name: useDisplayNameStylesEnabled
-// Dependencies: [19, 5307, 504, 6742, 2]
+// Dependencies: [19, 5311, 504, 6750, 2]
 // Exports: useDisplayNameStylesEnabled
 
-// Module 6741 (useDisplayNameStylesEnabled)
+// Module 6749 (useDisplayNameStylesEnabled)
 import react from "react" /* 19 */;
 import get_initialized from "get initialized" /* 504 */;
-import react2 from "react" /* 6742 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import react2 from "react" /* 6750 */;
+import AccessibilityStore from "AccessibilityStore" /* 5311 */;
 import size from "module_2" /* 2 */;
 
 const useContext = react.useContext;

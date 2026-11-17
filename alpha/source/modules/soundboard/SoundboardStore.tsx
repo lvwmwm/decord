@@ -1,9 +1,9 @@
-// Module ID: 6359
-// Function ID: 6360
+// Module ID: 6367
+// Function ID: 6368
 // Name: SoundboardStore
-// Dependencies: [32, 1231, 6061, 1388, 6360, 6361, 1072, 1082, 1089, 559, 6077, 2169, 12, 5131, 1256, 6223, 11, 504, 572, 2]
+// Dependencies: [32, 1231, 6068, 1388, 6368, 6369, 1072, 1082, 1089, 559, 6084, 2169, 12, 5135, 1256, 6231, 11, 504, 572, 2]
 
-// Module 6359 (SoundboardStore)
+// Module 6367 (SoundboardStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import BackoffDefault from "Backoff" /* 559 */;
@@ -13,15 +13,15 @@ import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import _modDef2169 from "module_2169" /* 2169 */;
-import UserSettings from "UserSettings" /* 5131 */;
-import FrecencyDefault from "Frecency" /* 6077 */;
-import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 6223 */;
+import UserSettings from "UserSettings" /* 5135 */;
+import FrecencyDefault from "Frecency" /* 6084 */;
+import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 6231 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6068 */;
 import UserStore from "UserStore" /* 1388 */;
-import TopSoundboardSoundStore from "TopSoundboardSoundStore" /* 6360 */;
-import SoundboardConstants from "SoundboardConstants" /* 6361 */;
+import TopSoundboardSoundStore from "TopSoundboardSoundStore" /* 6368 */;
+import SoundboardConstants from "SoundboardConstants" /* 6369 */;
 import module_12_mod from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
