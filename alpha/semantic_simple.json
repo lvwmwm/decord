@@ -2165,6 +2165,12 @@
         "onyx": "#101013",
         "dark": "#212125"
     },
+    "SLIDER_INDICATOR_BACKGROUND": {
+        "ash": "#5865f2",
+        "light": "#5865f2",
+        "onyx": "#5865f2",
+        "dark": "#5865f2"
+    },
     "SLIDER_TRACK_BACKGROUND": {
         "ash": "#595a63",
         "light": "#c5c6ca",
