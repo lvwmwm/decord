@@ -1,9 +1,9 @@
-// Module ID: 19447
-// Function ID: 19448
+// Module ID: 19448
+// Function ID: 19449
 // Name: ChannelDetailsSearchBar
-// Dependencies: [19, 14754, 9064, 10897, 21, 5306, 14780, 14696, 14761, 14765, 19448, 7428, 1113, 10772, 2]
+// Dependencies: [19, 14754, 9064, 10897, 21, 5306, 14780, 14696, 14761, 14765, 19449, 7428, 1113, 10772, 2]
 
-// Module 19447 (ChannelDetailsSearchBar)
+// Module 19448 (ChannelDetailsSearchBar)
 import Fragment from "Fragment" /* 21 */;
 import ChannelDetailsStore from "ChannelDetailsStore" /* 9064 */;
 import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10897 */;

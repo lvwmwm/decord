@@ -43,7 +43,7 @@ let obj = function _unpublishProject() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -136,7 +136,7 @@ obj = function _unpublishUserApp() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -224,7 +224,7 @@ obj = function _refreshPublishedProject() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -362,7 +362,7 @@ obj = function _refreshPublishedProject() {
             return obj;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp53) {
         c5 = 3;
@@ -391,7 +391,7 @@ obj = function _refreshPublishedApplication() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -433,7 +433,7 @@ obj = function _refreshPublishedApplication() {
               closure_132_14(applicationId, closure_1, closure_2);
             }
             c6 = 3;
-            return { value: "HermesInternal", done: "ulw" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp15) {
           c6 = 3;

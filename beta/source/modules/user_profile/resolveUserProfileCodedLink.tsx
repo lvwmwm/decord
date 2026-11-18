@@ -1,10 +1,10 @@
-// Module ID: 20308
-// Function ID: 20309
+// Module ID: 20311
+// Function ID: 20312
 // Name: resolveUserProfileCodedLink
-// Dependencies: [5, 5155, 15583, 20309, 20301, 8483, 2]
+// Dependencies: [5, 5155, 15583, 20312, 20304, 8483, 2]
 // Exports: default
 
-// Module 20308 (resolveUserProfileCodedLink)
+// Module 20311 (resolveUserProfileCodedLink)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import size from "module_2" /* 2 */;
@@ -48,7 +48,7 @@ export default function resolveUserProfileCodedLink(arg0, arg1) {
       tmp10 = guild_id;
     }
     guild_id = tmp10;
-    const tmp6Result = tmp6(20301);
+    const tmp6Result = tmp6(20304);
     const result = tmp6Result.queueMessageLinkFetch(_asyncToGenerator(async (arg0, value) => {
       let v1;
       if (c0 === 2) {
@@ -61,7 +61,7 @@ export default function resolveUserProfileCodedLink(arg0, arg1) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c2;
@@ -98,7 +98,7 @@ export default function resolveUserProfileCodedLink(arg0, arg1) {
               c2 = 0;
             }
             c0 = 3;
-            return { value: "HermesInternal", done: "ulw" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp8) {
           if (0 === c2) {

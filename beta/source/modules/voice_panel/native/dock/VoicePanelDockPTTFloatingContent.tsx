@@ -1,10 +1,10 @@
-// Module ID: 19233
-// Function ID: 19234
+// Module ID: 19234
+// Function ID: 19235
 // Name: VoicePanelDockPTTFloatingContent
 // Dependencies: [19, 17, 12009, 21, 575, 5306, 19206, 5537, 1655, 5896, 5313, 13048, 2]
 // Exports: default
 
-// Module 19233 (VoicePanelDockPTTFloatingContent)
+// Module 19234 (VoicePanelDockPTTFloatingContent)
 import native from "native" /* 575 */;
 import _mod1655 from "module_1655" /* 1655 */;
 import shared from "shared" /* 5313 */;

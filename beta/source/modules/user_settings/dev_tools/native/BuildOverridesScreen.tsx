@@ -73,7 +73,7 @@ const memoResult = react.memo(function BuildOverridesScreen() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c4;
@@ -113,7 +113,7 @@ const memoResult = react.memo(function BuildOverridesScreen() {
             c4 = 0;
             closure_129_5(false);
             c5 = 3;
-            return { value: "HermesInternal", done: "ulw" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp19) {
           closure_3 = tmp19;
@@ -143,7 +143,7 @@ const memoResult = react.memo(function BuildOverridesScreen() {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -229,7 +229,7 @@ const memoResult = react.memo(function BuildOverridesScreen() {
             closure_129_6(false);
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp52) {
           closure_2 = tmp52;
           if (0 === c3) {

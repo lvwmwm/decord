@@ -1,10 +1,10 @@
-// Module ID: 19836
-// Function ID: 19837
+// Module ID: 19837
+// Function ID: 19838
 // Name: IncentivizedAccountLinkConfirmationBottomSheet
-// Dependencies: [19, 1072, 21, 19837, 1113, 3579, 5926, 15195, 575, 5542, 6002, 2188, 2]
+// Dependencies: [19, 1072, 21, 19838, 1113, 3579, 5926, 15195, 575, 5542, 6002, 2188, 2]
 // Exports: default
 
-// Module 19836 (IncentivizedAccountLinkConfirmationBottomSheet)
+// Module 19837 (IncentivizedAccountLinkConfirmationBottomSheet)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -15,7 +15,7 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542
 import components_Button_Button from "components/Button/Button" /* 5926 */;
 import LinkingDefault from "Linking" /* 6002 */;
 import WindowLaunchIcon2 from "WindowLaunchIcon" /* 15195 */;
-import IncentivizedAccountLinkConfirmationPromoSheetDefault from "IncentivizedAccountLinkConfirmationPromoSheet" /* 19837 */;
+import IncentivizedAccountLinkConfirmationPromoSheetDefault from "IncentivizedAccountLinkConfirmationPromoSheet" /* 19838 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

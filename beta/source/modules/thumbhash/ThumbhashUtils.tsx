@@ -1,10 +1,10 @@
-// Module ID: 19332
-// Function ID: 19333
+// Module ID: 19333
+// Function ID: 19334
 // Name: ThumbhashUtils
 // Dependencies: [17802, 2]
 // Exports: createThumbhashImageFromPlaceholder
 
-// Module 19332 (ThumbhashUtils)
+// Module 19333 (ThumbhashUtils)
 import _slicedToArray from "_slicedToArray" /* 17802 */;
 import size from "module_2" /* 2 */;
 

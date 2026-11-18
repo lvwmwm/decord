@@ -1,9 +1,9 @@
-// Module ID: 20353
-// Function ID: 20354
+// Module ID: 20356
+// Function ID: 20357
 // Name: RedesignDiscoverabilityModal
-// Dependencies: [19, 17, 14994, 1388, 1072, 21, 5306, 575, 5882, 1502, 504, 15001, 1092, 20354, 15022, 15015, 1264, 15014, 7490, 1113, 2]
+// Dependencies: [19, 17, 14994, 1388, 1072, 21, 5306, 575, 5882, 1502, 504, 15001, 1092, 20357, 15022, 15015, 1264, 15014, 7490, 1113, 2]
 
-// Module 20353 (RedesignDiscoverabilityModal)
+// Module 20356 (RedesignDiscoverabilityModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

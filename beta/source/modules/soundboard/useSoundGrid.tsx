@@ -1,15 +1,15 @@
-// Module ID: 19214
-// Function ID: 19215
+// Module ID: 19215
+// Function ID: 19216
 // Name: useSoundGrid
-// Dependencies: [32, 19, 5155, 5177, 5238, 5209, 1388, 6359, 6361, 1390, 7227, 9235, 19215, 504, 2174, 19216, 8030, 5889, 19217, 2]
+// Dependencies: [32, 19, 5155, 5177, 5238, 5209, 1388, 6359, 6361, 1390, 7227, 9235, 19216, 504, 2174, 19217, 8030, 5889, 19218, 2]
 // Exports: default, useSearchCategories
 
-// Module 19214 (useSoundGrid)
+// Module 19215 (useSoundGrid)
 import PremiumConstants from "PremiumConstants" /* 1390 */;
 import SoundboardTypes from "SoundboardTypes" /* 7227 */;
 import useManageResourcePermissions from "useManageResourcePermissions" /* 8030 */;
-import useSoundOrganizer from "useSoundOrganizer" /* 19215 */;
-import TopSoundboardSoundsActionCreators from "TopSoundboardSoundsActionCreators" /* 19217 */;
+import useSoundOrganizer from "useSoundOrganizer" /* 19216 */;
+import TopSoundboardSoundsActionCreators from "TopSoundboardSoundsActionCreators" /* 19218 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
@@ -371,7 +371,7 @@ export default function useSoundGrid(guild_id) {
               })
         };
         obj11 = { type: tmp10(7227).SoundboardSoundGridSectionType.DEFAULTS };
-        const sortSoundsOldestToNewestCreationDate = tmp10(19215).sortSoundsOldestToNewestCreationDate;
+        const sortSoundsOldestToNewestCreationDate = tmp10(19216).sortSoundsOldestToNewestCreationDate;
         result1 = value7;
         if (null != sortSoundsOldestToNewestCreationDate) {
           result1 = sortSoundsOldestToNewestCreationDate(value7);
@@ -399,7 +399,7 @@ export default function useSoundGrid(guild_id) {
               })
         };
         obj14 = { type: tmp10(7227).SoundboardSoundGridSectionType.DEFAULTS };
-        const sortSoundsOldestToNewestCreationDate2 = tmp10(19215).sortSoundsOldestToNewestCreationDate;
+        const sortSoundsOldestToNewestCreationDate2 = tmp10(19216).sortSoundsOldestToNewestCreationDate;
         result2 = value8;
         if (null != sortSoundsOldestToNewestCreationDate2) {
           result2 = sortSoundsOldestToNewestCreationDate2(value8);

@@ -22,7 +22,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 function updateGiftCode(giftCode) {
-  const f104911 = () => {
+  const f104919 = () => {
     let closure_0 = code;
     const value = map.get(code);
     const obj = map;
@@ -38,7 +38,7 @@ function updateGiftCode(giftCode) {
           giftCodeStore.emitChange();
         } else if (null != closure_9[code]) {
           const _Math = Math;
-          closure_9[code].start(Math.min(metroRequire, diff), f104911);
+          closure_9[code].start(Math.min(metroRequire, diff), f104919);
         }
       }
     }
@@ -76,7 +76,7 @@ function updateGiftCode(giftCode) {
             let obj3 = tmp11[code];
             if (null != obj3) {
               let _Math = Math;
-              obj3.start(Math.min(closure_6, diff), f104911);
+              obj3.start(Math.min(closure_6, diff), f104919);
             }
           }
         }

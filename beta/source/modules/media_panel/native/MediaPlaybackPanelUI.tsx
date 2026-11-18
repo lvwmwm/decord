@@ -1,10 +1,10 @@
-// Module ID: 20127
-// Function ID: 20128
+// Module ID: 20130
+// Function ID: 20131
 // Name: MediaPlaybackPanelUI
-// Dependencies: [32, 19, 12904, 17020, 11986, 11985, 21, 5306, 575, 1630, 1496, 20126, 1655, 11333, 11989, 19930, 5538, 5541, 5929, 19932, 5906, 5588, 20128, 2]
+// Dependencies: [32, 19, 12904, 17020, 11986, 11985, 21, 5306, 575, 1630, 1496, 20129, 1655, 11333, 11989, 19931, 5538, 5541, 5929, 19933, 5906, 5588, 20131, 2]
 // Exports: default
 
-// Module 20127 (MediaPlaybackPanelUI)
+// Module 20130 (MediaPlaybackPanelUI)
 import react2 from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -12,7 +12,7 @@ import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
 import _mod1655 from "module_1655" /* 1655 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11985 */;
 import MorphablePanelConstants from "MorphablePanelConstants" /* 11986 */;
-import MediaPlaybackPanelStateContextDefault from "MediaPlaybackPanelStateContext" /* 20126 */;
+import MediaPlaybackPanelStateContextDefault from "MediaPlaybackPanelStateContext" /* 20129 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 12904 */;
 import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 17020 */;
@@ -38,9 +38,9 @@ const LayerScope2 = tmp7(5906);
 const spring_spring = tmp7(5929);
 const cheapWorkletShallowEqual = tmp7(11333);
 const updateSharedValueIfChangedDefault = tmp3(11989);
-const MorphablePanelUtils = tmp7(19930);
-const useMorphablePanelGesture = tmp7(19932);
-const useMorphablePanelGestureDefault = tmp3(19932);
+const MorphablePanelUtils = tmp7(19931);
+const useMorphablePanelGesture = tmp7(19933);
+const useMorphablePanelGestureDefault = tmp3(19933);
 const useContext = react2.useContext;
 ({ MEDIA_PLAYBACK_PANEL_LAYOUT_PHYSICS: metroImportDefault, MediaPlaybackPanelModes: metroImportAll } = MediaPlaybackPanelConstants);
 const IS_IOS = MorphablePanelConstants.IS_IOS;

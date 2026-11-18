@@ -158,7 +158,7 @@ let obj = {
     let tmp2;
     let tmp27;
     let tmp552;
-    const f92794 = () => {
+    const f92802 = () => {
       if (inputConnection1 === inputConnection) {
         if (null != streamKey) {
           const obj = { type: "PASS_THE_CONTROLLER_UPDATE", streamKey: streamKey.streamKey, isHost: true, host: id.getId(), active: false };
@@ -198,7 +198,7 @@ let obj = {
                   const self5 = this;
                   const self6 = this;
                   const inputConnection = new inputConnection1(16110).InputConnection(rTCConnection, AuthenticationStore.getId());
-                  inputConnection.on(inputConnection1(16111).InputEvent.Disconnect, f92794);
+                  inputConnection.on(inputConnection1(16111).InputEvent.Disconnect, f92802);
                   inputConnection.connect();
                   inputConnection1 = inputConnection;
                   tmp51 = inputConnection;
@@ -267,7 +267,7 @@ let obj = {
             const self = this;
             const self2 = this;
             inputConnection1 = new inputConnection1(16110).InputConnection(rTCConnection1, AuthenticationStore.getId());
-            inputConnection1.on(inputConnection1(16111).InputEvent.Disconnect, f92794);
+            inputConnection1.on(inputConnection1(16111).InputEvent.Disconnect, f92802);
             inputConnection1.connect();
             tmp12 = inputConnection1;
           }

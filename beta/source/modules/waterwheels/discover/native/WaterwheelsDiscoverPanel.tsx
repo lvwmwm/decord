@@ -110,7 +110,7 @@ function WaterwheelsDiscoverFeed(enabled) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -161,7 +161,7 @@ function WaterwheelsDiscoverFeed(enabled) {
               disposeResult.dispose();
             }
             c8 = 3;
-            return { value: "HermesInternal", done: "ulw" };
+            return { value: "HermesInternal", done: null };
           }
           c6 = 3;
           disposeResult = closure_0;

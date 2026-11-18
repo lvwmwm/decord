@@ -1,10 +1,10 @@
-// Module ID: 20351
-// Function ID: 20352
+// Module ID: 20354
+// Function ID: 20355
 // Name: InterestGuildRecommendations
-// Dependencies: [32, 19, 17, 5157, 1072, 21, 7493, 5306, 575, 5919, 1113, 19044, 5892, 1414, 7428, 2569, 5542, 19016, 9503, 7720, 6327, 10390, 5169, 7963, 19019, 504, 19041, 19042, 1256, 7499, 7415, 9051, 19020, 1655, 20352, 5926, 2]
+// Dependencies: [32, 19, 17, 5157, 1072, 21, 7493, 5306, 575, 5919, 1113, 19044, 5892, 1414, 7428, 2569, 5542, 19016, 9503, 7720, 6327, 10390, 5169, 7963, 19019, 504, 19041, 19042, 1256, 7499, 7415, 9051, 19020, 1655, 20355, 5926, 2]
 // Exports: default
 
-// Module 20351 (InterestGuildRecommendations)
+// Module 20354 (InterestGuildRecommendations)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;

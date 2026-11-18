@@ -1,16 +1,16 @@
-// Module ID: 20128
-// Function ID: 20129
+// Module ID: 20131
+// Function ID: 20132
 // Name: MediaPlaybackPip
-// Dependencies: [32, 19, 17, 5155, 6362, 5248, 1388, 1072, 19911, 21, 5306, 575, 5892, 504, 5944, 8645, 5919, 20129, 5883, 8660, 7262, 1655, 5538, 1113, 7997, 7497, 10866, 1256, 17019, 5223, 20126, 12318, 7606, 20130, 2]
+// Dependencies: [32, 19, 17, 5155, 6362, 5248, 1388, 1072, 19912, 21, 5306, 575, 5892, 504, 5944, 8645, 5919, 20132, 5883, 8660, 7262, 1655, 5538, 1113, 7997, 7497, 10866, 1256, 17019, 5223, 20129, 12318, 7606, 20133, 2]
 // Exports: default
 
-// Module 20128 (MediaPlaybackPip)
+// Module 20131 (MediaPlaybackPip)
 import nativeDefault from "native" /* 575 */;
 import _modDef1655 from "module_1655" /* 1655 */;
 import useChannelName from "useChannelName" /* 5944 */;
 import MessageActionCreatorsDefault from "MessageActionCreators" /* 8660 */;
 import MediaPlayerManagerDefault from "MediaPlayerManager" /* 17019 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19911 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19912 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -124,7 +124,7 @@ function MediaInfo(message) {
         if (memo) {
           const obj6 = { style: { flex: 1 }, children: items3 };
           const obj7 = { spacing: 20, speed: 0.2, children: tmp14 };
-          items3 = [closure_15(message(20129).Marquee, obj7), ];
+          items3 = [closure_15(message(20132).Marquee, obj7), ];
           const obj8 = { start: { x: 0, y: 0 }, end: { x: 1, y: 0 }, locations: [0, 0.1, 0.2, 0.8, 0.9, 1], colors: items4, style: tmp.infoContainerGradient };
           items4 = [token, `${tmp5}CC`, `${tmp5}00`, `${tmp5}00`, `${tmp5}CC`, token];
           items3[1] = closure_15(first(5883), obj8);

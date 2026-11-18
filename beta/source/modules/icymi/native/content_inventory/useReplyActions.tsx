@@ -1,10 +1,10 @@
-// Module ID: 19338
-// Function ID: 19339
+// Module ID: 19339
+// Function ID: 19340
 // Name: useReplyActions
-// Dependencies: [5, 19, 5155, 8725, 1388, 1391, 5311, 504, 8421, 11153, 8134, 19339, 5362, 8786, 8660, 19337, 5542, 6005, 1113, 17417, 10217, 9543, 5910, 19339, 2121, 2]
+// Dependencies: [5, 19, 5155, 8725, 1388, 1391, 5311, 504, 8421, 11153, 8134, 19340, 5362, 8786, 8660, 19338, 5542, 6005, 1113, 17417, 10217, 9543, 5910, 19340, 2121, 2]
 // Exports: useReplyActions
 
-// Module 19338 (useReplyActions)
+// Module 19339 (useReplyActions)
 import EmojiConstants from "EmojiConstants" /* 1391 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
 import MessageConstants from "MessageConstants" /* 5311 */;
@@ -101,7 +101,7 @@ export function useReplyActions(content) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -206,7 +206,7 @@ export function useReplyActions(content) {
             open("content_inventory_message_sent", obj18);
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp69) {
           c4 = 3;
           throw tmp69;
@@ -255,7 +255,7 @@ export function useReplyActions(content) {
             obj2.feedItemActioned(obj3);
             const obj5 = { content, author: tmp, sendMessage, onPressEmoji: callback1 };
             const obj4 = ActionSheetActionCreatorsDefault;
-            obj4.openLazy(asyncRequire(19339, tmp10.paths), "ReactActionSheet", obj5);
+            obj4.openLazy(asyncRequire(19340, tmp10.paths), "ReactActionSheet", obj5);
           }
         }, items6),
       openEmojiPicker: callback2

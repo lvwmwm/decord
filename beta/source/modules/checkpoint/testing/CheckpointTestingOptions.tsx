@@ -1,15 +1,15 @@
-// Module ID: 19659
-// Function ID: 19660
+// Module ID: 19660
+// Function ID: 19661
 // Name: CheckpointTestingOptions
-// Dependencies: [5, 19658, 14258, 3319, 14260, 19660, 1113, 18323, 2]
+// Dependencies: [5, 19659, 14258, 3319, 14260, 19661, 1113, 18323, 2]
 // Exports: getCheckpointTestingOptions
 
-// Module 19659 (CheckpointTestingOptions)
+// Module 19660 (CheckpointTestingOptions)
 import _modDef3319 from "module_3319" /* 3319 */;
 import openCheckpoint2 from "openCheckpoint" /* 14258 */;
 import CheckpointActionCreators from "CheckpointActionCreators" /* 14260 */;
 import CheckpointMockData from "CheckpointMockData" /* 18323 */;
-import CheckpointMitigationOverrideStore from "CheckpointMitigationOverrideStore" /* 19658 */;
+import CheckpointMitigationOverrideStore from "CheckpointMitigationOverrideStore" /* 19659 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -47,7 +47,7 @@ let closure_3 = _asyncToGenerator(async (arg0, value) => {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "HermesInternal", done: "ulw" };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -87,7 +87,7 @@ let closure_3 = _asyncToGenerator(async (arg0, value) => {
           const result1 = showCheckpointTestingToast(string(t.fEptJP), "failure");
         }
         c2 = 3;
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp8) {
       c2 = 3;

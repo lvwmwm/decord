@@ -1,10 +1,10 @@
-// Module ID: 20737
-// Function ID: 20738
+// Module ID: 20740
+// Function ID: 20741
 // Name: useArchiveOrDelete
 // Dependencies: [5, 32, 19, 17833, 17846, 1113, 6259, 1187, 38, 6004, 2]
 // Exports: default
 
-// Module 20737 (useArchiveOrDelete)
+// Module 20740 (useArchiveOrDelete)
 import intl13 from "intl" /* 1113 */;
 import ToastUtilsAll from "ToastUtils" /* 6004 */;
 import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17846 */;
@@ -52,7 +52,7 @@ export default function useArchiveOrDelete(guildId, groupListingId, editStateId,
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -125,7 +125,7 @@ export default function useArchiveOrDelete(guildId, groupListingId, editStateId,
               closure_128_3.goBack();
             }
             c2 = 3;
-            return { value: "HermesInternal", done: "ulw" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp30) {
           c2 = 3;

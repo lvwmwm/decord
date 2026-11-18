@@ -1,10 +1,10 @@
-// Module ID: 19732
-// Function ID: 19733
+// Module ID: 19733
+// Function ID: 19734
 // Name: ChannelSecondaryViewChatNavigator
 // Dependencies: [19, 21, 9128, 5306, 575, 9051, 1380, 11010, 11976, 13365, 5478, 7490, 15638, 9063, 5367, 2]
 // Exports: default
 
-// Module 19732 (ChannelSecondaryViewChatNavigator)
+// Module 19733 (ChannelSecondaryViewChatNavigator)
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import HeaderShared from "HeaderShared" /* 9051 */;

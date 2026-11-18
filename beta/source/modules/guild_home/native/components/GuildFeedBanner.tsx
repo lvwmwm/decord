@@ -1,9 +1,9 @@
-// Module ID: 19394
-// Function ID: 19395
+// Module ID: 19395
+// Function ID: 19396
 // Name: GuildFeedBanner
-// Dependencies: [19, 17, 16416, 5177, 19395, 1072, 21, 5306, 575, 1655, 1496, 5537, 16417, 1380, 1414, 7723, 504, 7771, 12423, 6010, 5313, 19396, 19397, 5538, 5541, 7720, 5919, 1187, 7428, 6005, 1113, 12342, 10393, 2]
+// Dependencies: [19, 17, 16416, 5177, 19396, 1072, 21, 5306, 575, 1655, 1496, 5537, 16417, 1380, 1414, 7723, 504, 7771, 12423, 6010, 5313, 19397, 19398, 5538, 5541, 7720, 5919, 1187, 7428, 6005, 1113, 12342, 10393, 2]
 
-// Module 19394 (GuildFeedBanner)
+// Module 19395 (GuildFeedBanner)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -15,7 +15,7 @@ import GuildPopoutActionCreators from "GuildPopoutActionCreators" /* 16417 */;
 import react from "react" /* 19 */;
 import GuildPopoutStore from "GuildPopoutStore" /* 16416 */;
 import GuildStore from "GuildStore" /* 5177 */;
-import GuildFeedConstants from "GuildFeedConstants" /* 19395 */;
+import GuildFeedConstants from "GuildFeedConstants" /* 19396 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
@@ -166,9 +166,9 @@ function GuildFeedBanner(guild) {
     let tmp8Result3;
     const tmp2Result6 = tmp2(5313);
     if (tmp2Result6.isThemeDark(tmp10)) {
-      tmp8Result3 = tmp8(19396);
-    } else {
       tmp8Result3 = tmp8(19397);
+    } else {
+      tmp8Result3 = tmp8(19398);
     }
     memo = tmp8Result3;
   }

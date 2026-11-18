@@ -1,10 +1,10 @@
-// Module ID: 19273
-// Function ID: 19274
+// Module ID: 19274
+// Function ID: 19275
 // Name: ContactSuggestionActions
-// Dependencies: [19, 17, 21, 1655, 5306, 575, 18765, 1708, 5538, 5929, 1187, 19274, 5926, 1113, 2]
+// Dependencies: [19, 17, 21, 1655, 5306, 575, 18765, 1708, 5538, 5929, 1187, 19275, 5926, 1113, 2]
 // Exports: ContactSuggestionActions
 
-// Module 19273 (ContactSuggestionActions)
+// Module 19274 (ContactSuggestionActions)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1655 from "module_1655" /* 1655 */;

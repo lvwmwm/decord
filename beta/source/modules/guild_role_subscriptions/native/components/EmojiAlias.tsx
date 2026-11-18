@@ -1,10 +1,10 @@
-// Module ID: 20745
-// Function ID: 20746
+// Module ID: 20748
+// Function ID: 20749
 // Name: EmojiAlias
 // Dependencies: [19, 17, 21, 5306, 5919, 2]
 // Exports: default
 
-// Module 20745 (EmojiAlias)
+// Module 20748 (EmojiAlias)
 import react_native from "react-native" /* 17 */;
 import Text_Text from "Text/Text" /* 5919 */;
 import react from "react" /* 19 */;

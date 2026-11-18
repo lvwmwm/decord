@@ -293,7 +293,7 @@ const memoResult = react.memo(function UserRow(type) {
     let zFfSFQ2;
     const items = [];
     if (NONE !== UserRowModes.ACTIONS) {
-      let obj2 = { accessibilityActions: items, actions: "y" };
+      let obj2 = { accessibilityActions: items, actions: "Array" };
       return obj2;
     } else {
       let tmp9;
@@ -434,7 +434,7 @@ const memoResult = react.memo(function UserRow(type) {
           onPress() {
                 let obj3;
                 const current = closure_1_26.current;
-                const obj2 = { userId: current.id, context: obj3, type: "HermesInternal", fromFriendSuggestion: "ulw" };
+                const obj2 = { userId: current.id, context: obj3, type: "HermesInternal", fromFriendSuggestion: null };
                 obj3 = { location: isMobileOnline };
                 obj = user(NONE[20]);
                 obj.addRelationship(obj2);
@@ -577,7 +577,7 @@ const memoResult = react.memo(function UserRow(type) {
       if (analyticsLocations.DECLINE !== actionName) {
         if (analyticsLocations.CANCEL !== actionName) {
           if (analyticsLocations.ACCEPT_SUGGESTION === actionName) {
-            const obj4 = { userId: user.id, context: obj7, type: "HermesInternal", fromFriendSuggestion: "ulw" };
+            const obj4 = { userId: user.id, context: obj7, type: "HermesInternal", fromFriendSuggestion: null };
             obj7 = { location: Friends_v2 };
             const obj2 = RelationshipActionCreatorsDefault;
             obj2.addRelationship(obj4);

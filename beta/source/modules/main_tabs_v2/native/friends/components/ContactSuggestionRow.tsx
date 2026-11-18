@@ -1,10 +1,10 @@
-// Module ID: 19609
-// Function ID: 19610
+// Module ID: 19610
+// Function ID: 19611
 // Name: ContactSuggestionRow
-// Dependencies: [19, 5307, 1072, 21, 5362, 1655, 1113, 563, 18765, 18764, 10581, 19272, 19273, 1256, 2]
+// Dependencies: [19, 5307, 1072, 21, 5362, 1655, 1113, 563, 18765, 18764, 10581, 19273, 19274, 1256, 2]
 // Exports: ContactSuggestionRow
 
-// Module 19609 (ContactSuggestionRow)
+// Module 19610 (ContactSuggestionRow)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;

@@ -1,17 +1,17 @@
-// Module ID: 19359
-// Function ID: 19360
+// Module ID: 19360
+// Function ID: 19361
 // Name: PostCallDisconnectNudge
-// Dependencies: [32, 19, 5209, 5971, 14825, 14826, 21, 19358, 1113, 18108, 14827, 504, 9560, 5139, 14828, 5542, 19359, 2121, 2]
+// Dependencies: [32, 19, 5209, 5971, 14825, 14826, 21, 19359, 1113, 18108, 14827, 504, 9560, 5139, 14828, 5542, 19360, 2121, 2]
 // Exports: default, usePostCallDisconnectNudge
 
-// Module 19359 (PostCallDisconnectNudge)
+// Module 19360 (PostCallDisconnectNudge)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 14825 */;
 import PushNotificationActionCreators from "PushNotificationActionCreators" /* 14828 */;
-import NotificationNudgeBottomSheetDefault from "NotificationNudgeBottomSheet" /* 19358 */;
+import NotificationNudgeBottomSheetDefault from "NotificationNudgeBottomSheet" /* 19359 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
@@ -101,7 +101,7 @@ export function usePostCallDisconnectNudge() {
       const result = obj.setPushPermissionReactivationSeen(PermissionPromptType.CALL_DISCONNECT_BOTTOM_SHEET);
       const obj3 = { markAsDismissed };
       const obj2 = ActionSheetActionCreatorsDefault;
-      obj2.openLazy(asyncRequire(19359, dependencyMap.paths), c11, obj3);
+      obj2.openLazy(asyncRequire(19360, dependencyMap.paths), c11, obj3);
     }
   }, items3);
 }

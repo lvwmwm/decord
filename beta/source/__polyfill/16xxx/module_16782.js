@@ -7,7 +7,7 @@ import _mod16751 from "module_16751" /* 16751 */;
 import _mod16783 from "module_16783" /* 16783 */;
 import getOwnPropertyDescriptor from "module_16750" /* 16750 */;
 
-const f70166 = () => {
+const f70169 = () => {
   const obj = {
     get() {
       return 7;
@@ -15,6 +15,6 @@ const f70166 = () => {
   };
   return 7 !== Object.defineProperty(_mod16783("div"), "a", obj).a;
 };
-!getOwnPropertyDescriptor && !_mod16751(f70166);
+!getOwnPropertyDescriptor && !_mod16751(f70169);
 
-export default !getOwnPropertyDescriptor && !_mod16751(f70166);
+export default !getOwnPropertyDescriptor && !_mod16751(f70169);

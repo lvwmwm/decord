@@ -418,7 +418,7 @@ let obj = function _openWithFreshTicket() {
         obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c6;
@@ -459,7 +459,7 @@ let obj = function _openWithFreshTicket() {
             c6 = 0;
             if (closure_1.disposed) {
               c8 = 3;
-              return { value: "HermesInternal", done: "ulw" };
+              return { value: "HermesInternal", done: null };
             } else {
               closure_132_13(closure_0, "failed");
               open = closure_1;
@@ -511,7 +511,7 @@ let obj = function _openWithFreshTicket() {
             if (closure_1.disposed) {
               c6 = 0;
               c8 = 3;
-              return { value: "HermesInternal", done: "ulw" };
+              return { value: "HermesInternal", done: null };
             } else {
               const ws = closure_1.ws;
               open = ws.open;
@@ -545,7 +545,7 @@ let obj = function _openWithFreshTicket() {
             }
           }
           c8 = 3;
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp70) {
         if (0 === c6) {

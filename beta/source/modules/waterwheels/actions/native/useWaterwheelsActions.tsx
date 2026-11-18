@@ -64,7 +64,7 @@ let obj = function _openWaterwheelsGame() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -142,7 +142,7 @@ let obj = function _openWaterwheelsGame() {
                       gamesWithSupplementalData = assert;
                       assert.dispose();
                       c13 = 3;
-                      return { value: "HermesInternal", done: "ulw" };
+                      return { value: "HermesInternal", done: null };
                     }
                   } else {
                     c10 = 9;
@@ -171,7 +171,7 @@ let obj = function _openWaterwheelsGame() {
                       c10 = 0;
                       gamesWithSupplementalData = assert.dispose();
                       c13 = 3;
-                      return { value: "HermesInternal", done: "ulw" };
+                      return { value: "HermesInternal", done: null };
                     }
                   }
                 }
@@ -679,7 +679,7 @@ obj = function _requestNotifications() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -710,7 +710,7 @@ obj = function _requestNotifications() {
           return obj;
         }
         c0 = 3;
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp9) {
         c0 = 3;
         throw tmp9;
@@ -752,7 +752,7 @@ obj = function _joinWaterwheelsGuild() {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "HermesInternal", done: "ulw" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             let c2;
@@ -794,7 +794,7 @@ obj = function _joinWaterwheelsGuild() {
                 return obj;
               }
               c0 = 3;
-              return { value: "HermesInternal", done: "ulw" };
+              return { value: "HermesInternal", done: null };
             } catch (tmp10) {
               if (0 === c2) {
                 c0 = 3;
@@ -892,7 +892,7 @@ obj = function _joinWaterwheelsGuild() {
             let obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "ulw" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c11;
@@ -975,7 +975,7 @@ obj = function _joinWaterwheelsGuild() {
                     }
                   }
                   c14 = 3;
-                  return { value: "HermesInternal", done: "ulw" };
+                  return { value: "HermesInternal", done: null };
                 }
                 break;
               }
@@ -1475,7 +1475,7 @@ obj = function _joinWaterwheelsGuild() {
                   return { value, done: true };
                 } else {
                   c14 = 3;
-                  return { value: "HermesInternal", done: "ulw" };
+                  return { value: "HermesInternal", done: null };
                 }
                 break;
               }
@@ -1731,7 +1731,7 @@ obj = function _joinWaterwheelsGuild() {
                   return { value, done: true };
                 } else {
                   c14 = 3;
-                  return { value: "HermesInternal", done: "ulw" };
+                  return { value: "HermesInternal", done: null };
                 }
                 break;
               }
@@ -1921,7 +1921,7 @@ obj = function _runGuarded() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -1961,7 +1961,7 @@ obj = function _runGuarded() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp13) {
         if (0 === c4) {

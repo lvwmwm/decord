@@ -39,9 +39,9 @@ export default function QuestHomeSetting() {
   let tmp4;
   let tmp6;
   let tmp7;
-  const f115433 = (item) => closure_1_7(item);
-  const f115434 = (item) => null != item;
-  const f115435 = () => {
+  const f115441 = (item) => closure_1_7(item);
+  const f115442 = (item) => null != item;
+  const f115443 = () => {
     let SUGGESTED = QuestHomeNavigationStore.getField("sort");
     if (null == SUGGESTED) {
       SUGGESTED = constants.SUGGESTED;
@@ -51,15 +51,15 @@ export default function QuestHomeSetting() {
     }
     return SUGGESTED;
   };
-  const f115436 = () => {
+  const f115444 = () => {
     let found;
     const str = QuestHomeNavigationStore.getField("filter");
     if (null == str) {
       found = closure_1_10;
     } else {
       const parts = str.split(",");
-      const mapped = parts.map(f115433);
-      found = mapped.filter(f115434);
+      const mapped = parts.map(f115441);
+      found = mapped.filter(f115442);
       if (found.length <= 0) {
         found = closure_1_10;
       }
@@ -67,12 +67,12 @@ export default function QuestHomeSetting() {
     return found;
   };
   let tmp = closure_9();
-  [tmp3, tmp4] = _slicedToArray(react.useState(f115435), 2);
+  [tmp3, tmp4] = _slicedToArray(react.useState(f115443), 2);
   require = tmp4;
-  const tmp2 = _slicedToArray(react.useState(f115435), 2);
-  [tmp6, tmp7] = _slicedToArray(react.useState(f115436), 2);
+  const tmp2 = _slicedToArray(react.useState(f115443), 2);
+  [tmp6, tmp7] = _slicedToArray(react.useState(f115444), 2);
   importDefault = tmp7;
-  const tmp5 = _slicedToArray(react.useState(f115436), 2);
+  const tmp5 = _slicedToArray(react.useState(f115444), 2);
   const effect = react.useEffect(() => {
     const obj = { equalityFn: _slicedToArray2.shallow, fireImmediately: true };
     return QuestHomeNavigationStore.subscribe((self) => ({ sort: self.sort, filter: self.filter }), (self, self2) => {
@@ -94,8 +94,8 @@ export default function QuestHomeSetting() {
           found = closure_2_10;
         } else {
           const parts = str.split(",");
-          const mapped = parts.map(f115433);
-          found = mapped.filter(f115434);
+          const mapped = parts.map(f115441);
+          found = mapped.filter(f115442);
           if (found.length <= 0) {
             found = closure_2_10;
           }

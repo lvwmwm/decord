@@ -643,7 +643,7 @@ export function createActivityRichPresenceInviteEmbed(message, channel, forcedTh
               return null;
             }
           }
-          obj = { displayType: obj.BLOCKED, headerText: intl.string(tmp4(1113).t.pkq6Vq), subtitle: stringResult5, ctaButtonEnabled: false, ctaButtonText: "Path", ctaButtonIsLoading: "Array", footerLabel: "Promise", gradientColors: [], iconSrc: null, isPlatformSupported: "Array", isSpotifyParty: "__d", maxPartySize: "paddingHorizontal", partyMemberAvatarURIs: "__initData", partySizeText: "ranked_sku_ids", platformIconKeys: [], coverImageUrl: "updateUsers", detailsText: "onprocessinginstruction", title: "ranked_sku_ids" };
+          obj = { displayType: obj.BLOCKED, headerText: intl.string(tmp4(1113).t.pkq6Vq), subtitle: stringResult5, ctaButtonEnabled: false, ctaButtonText: "Path", ctaButtonIsLoading: "Array", footerLabel: "Promise", gradientColors: [], iconSrc: null, isPlatformSupported: "Array", isSpotifyParty: "alignItems", maxPartySize: "jsxs", partyMemberAvatarURIs: "formatToPlainString", partySizeText: null, platformIconKeys: [], coverImageUrl: null, detailsText: null, title: 213 };
           intl = tmp4(1113).intl;
           if (contentClassificationVisibility === tmp4(14550).ContentClassificationVisibility.BLOCK_UNDERAGE) {
             const intl3 = tmp4(1113).intl;

@@ -1,10 +1,10 @@
-// Module ID: 19321
-// Function ID: 19322
+// Module ID: 19322
+// Function ID: 19323
 // Name: useICYMIReloadHandler
 // Dependencies: [5, 19, 16851, 10217, 2]
 // Exports: useICYMIReloadHandler
 
-// Module 19321 (useICYMIReloadHandler)
+// Module 19322 (useICYMIReloadHandler)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -29,7 +29,7 @@ export function useICYMIReloadHandler(showDot) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -98,7 +98,7 @@ export function useICYMIReloadHandler(showDot) {
           const obj = c1(c2[3]);
           const recommendedGuilds = obj.getRecommendedGuilds();
           c2 = 3;
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp18) {
         c2 = 3;

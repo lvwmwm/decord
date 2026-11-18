@@ -28,7 +28,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require;
 
-const f106754 = () => {
+const f106762 = () => {
   let guild;
   let tmp2;
   project = null;
@@ -169,7 +169,7 @@ export function useConjureRemoveTarget(id) {
   items = [ConjureProjectStore, ApplicationStore, GuildMemberStore, GuildStore];
   const items1 = [id];
   const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, f106754, items1, require("module_12").isEqual);
+  const stateFromStores = obj.useStateFromStores(items, f106762, items1, require("module_12").isEqual);
   const items2 = [stateFromStores];
   const effect = react.useEffect(() => {
     let botUserIds;
@@ -245,7 +245,7 @@ export function useConjureProjectServers(projectId) {
   let obj = require("get initialized");
   items = [ConjureProjectStore, ApplicationStore, GuildMemberStore, GuildStore];
   const items1 = [projectId];
-  const stateFromStores = obj.useStateFromStores(items, f106754, items1, require("module_12").isEqual);
+  const stateFromStores = obj.useStateFromStores(items, f106762, items1, require("module_12").isEqual);
   const items2 = [stateFromStores];
   const effect = react.useEffect(() => {
     let botUserIds;

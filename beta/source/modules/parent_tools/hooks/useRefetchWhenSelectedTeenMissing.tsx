@@ -50,7 +50,7 @@ export default function useRefetchWhenSelectedTeenMissing() {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "ulw" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c3;
@@ -91,7 +91,7 @@ export default function useRefetchWhenSelectedTeenMissing() {
                 c3 = 0;
               }
               c5 = 3;
-              return { value: "HermesInternal", done: "ulw" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp14) {
             closure_2 = tmp14;

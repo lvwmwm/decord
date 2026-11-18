@@ -1,16 +1,16 @@
-// Module ID: 19220
-// Function ID: 19221
+// Module ID: 19221
+// Function ID: 19222
 // Name: SoundboardHooks
-// Dependencies: [5, 19, 5307, 1192, 19213, 5556, 504, 5313, 5426, 5136, 7226, 2]
+// Dependencies: [5, 19, 5307, 1192, 19214, 5556, 504, 5313, 5426, 5136, 7226, 2]
 // Exports: useMaybeFetchSoundboardSounds, useSoundButtonStyleConfig
 
-// Module 19220 (SoundboardHooks)
+// Module 19221 (SoundboardHooks)
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5556 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
-import SoundboardStyleConstants from "SoundboardStyleConstants" /* 19213 */;
+import SoundboardStyleConstants from "SoundboardStyleConstants" /* 19214 */;
 import size from "module_2" /* 2 */;
 
 let c0, c1;
@@ -60,7 +60,7 @@ export function useMaybeFetchSoundboardSounds(shouldFetch) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "ulw" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -96,7 +96,7 @@ export function useMaybeFetchSoundboardSounds(shouldFetch) {
               return obj;
             }
             c0 = 3;
-            return { value: "HermesInternal", done: "ulw" };
+            return { value: "HermesInternal", done: null };
           } catch (tmp8) {
             c0 = 3;
             throw tmp8;

@@ -1,14 +1,14 @@
-// Module ID: 20500
-// Function ID: 20501
+// Module ID: 20503
+// Function ID: 20504
 // Name: HomeIcon
-// Dependencies: [19, 21, 575, 6009, 20501, 2]
+// Dependencies: [19, 21, 575, 6009, 20504, 2]
 // Exports: HomeIcon
 
-// Module 20500 (HomeIcon)
+// Module 20503 (HomeIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 6009 */;
-import AssetRegistry from "AssetRegistry" /* 20501 */;
+import AssetRegistry from "AssetRegistry" /* 20504 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

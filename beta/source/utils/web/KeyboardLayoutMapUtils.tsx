@@ -23,7 +23,7 @@ let WindowsKeyToCode;
 function createKeyboardMapper() {
   return obj(...arguments);
 }
-const f113714 = (item) => {
+const f113722 = (item) => {
   let tmp;
   [tmp, obj] = item;
   const items = [tmp, ];
@@ -56,7 +56,7 @@ let obj = function _syncKeyboardLayoutMap() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -174,7 +174,7 @@ obj = function _createKeyboardMapper() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -220,7 +220,7 @@ obj = function _createKeyboardMapper() {
             }
           });
           c3 = 3;
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp11) {
         c3 = 3;
@@ -255,7 +255,7 @@ obj = function _resetKeyboardMapper() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -288,7 +288,7 @@ obj = function _resetKeyboardMapper() {
             obj.reset();
           }
           c2 = 3;
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp9) {
         c2 = 3;
@@ -389,8 +389,8 @@ class DiscordKeyboardLayoutMap {
     }
     obj = Object.create(new.target.prototype);
     const entries = Object.entries(tmp);
-    obj.map = new Map(entries.map(f113714));
-    new Map(entries.map(f113714));
+    obj.map = new Map(entries.map(f113722));
+    new Map(entries.map(f113722));
     return obj;
   }
   get(arg0) {
@@ -430,7 +430,7 @@ Object.defineProperty(DiscordKeyboardLayoutMap.prototype, "size", {
 });
 obj = Object.create(DiscordKeyboardLayoutMap.prototype);
 let entries = Object.entries(frozen);
-let map = new Map(entries.map(f113714));
+let map = new Map(entries.map(f113722));
 obj.map = map;
 let c15 = "keyboard-layout-map";
 class BaseKeyboardMapper {

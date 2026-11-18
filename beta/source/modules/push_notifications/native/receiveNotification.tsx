@@ -1,10 +1,10 @@
-// Module ID: 20904
-// Function ID: 20905
+// Module ID: 20907
+// Function ID: 20908
 // Name: receiveNotification
-// Dependencies: [5, 7661, 7029, 502, 5155, 1388, 6837, 1072, 6793, 5161, 14830, 3, 6005, 1113, 6027, 5483, 1108, 7678, 6053, 7231, 7965, 5482, 19248, 7033, 8476, 7937, 8134, 8136, 1256, 6057, 1380, 14037, 11, 19246, 8678, 10, 8679, 6790, 16118, 14833, 504, 13114, 9069, 6038, 1092, 12597, 10217, 10210, 572, 6838, 1099, 6889, 16285, 2]
+// Dependencies: [5, 7661, 7029, 502, 5155, 1388, 6837, 1072, 6793, 5161, 14830, 3, 6005, 1113, 6027, 5483, 1108, 7678, 6053, 7231, 7965, 5482, 19249, 7033, 8476, 7937, 8134, 8136, 1256, 6057, 1380, 14037, 11, 19247, 8678, 10, 8679, 6790, 16118, 14833, 504, 13114, 9069, 6038, 1092, 12597, 10217, 10210, 572, 6838, 1099, 6889, 16285, 2]
 // Exports: default
 
-// Module 20904 (receiveNotification)
+// Module 20907 (receiveNotification)
 import LoggerDefault from "Logger" /* 3 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -36,7 +36,7 @@ let closure_12;
 let closure_14;
 let map1;
 let unpackModuleId;
-const f124163 = (arg0) => {
+const f124190 = (arg0) => {
   addPostConnectionCallback(arg0);
 };
 function onStageConnectionError() {
@@ -48,7 +48,7 @@ function onStageConnectionError() {
   open("STAGE_DISCOVERY_CONNECTION_ERROR_GENERIC", obj);
 }
 function waitForConnection() {
-  const promise = new Promise(f124163);
+  const promise = new Promise(f124190);
   return promise;
 }
 function waitForDataOrConnection() {
@@ -69,7 +69,7 @@ let obj = function _waitForDataOrConnection() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -124,7 +124,7 @@ let obj = function _waitForDataOrConnection() {
           c2 = true;
         }
         c4 = 3;
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp10) {
         c4 = 3;
         throw tmp10;
@@ -148,7 +148,7 @@ obj = function _waitForNavigationReady() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -190,7 +190,7 @@ obj = function _waitForNavigationReady() {
           return obj;
         }
         c0 = 3;
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp8) {
         c0 = 3;
         throw tmp8;
@@ -217,7 +217,7 @@ obj = function _connectToStage2() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c5;
@@ -275,7 +275,7 @@ obj = function _connectToStage2() {
             c5 = 0;
           }
           c7 = 3;
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp24) {
         let closure_4 = tmp24;
@@ -303,7 +303,7 @@ obj = function _handleStageNotification() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -331,7 +331,7 @@ obj = function _handleStageNotification() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp6) {
         c1 = 3;
@@ -362,7 +362,7 @@ obj = function _handleGuildEventNotification() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -434,7 +434,7 @@ obj = function _handleGuildEventNotification() {
             event = closure_130_6.getGuildScheduledEvent(guild_scheduled_event_id);
             if (null == event) {
               c4 = 3;
-              return { value: "HermesInternal", done: "ulw" };
+              return { value: "HermesInternal", done: null };
             } else {
               const obj12 = { eventId: event.id, event };
               const obj4 = closure_130_0(closure_130_3[20]);
@@ -462,7 +462,7 @@ obj = function _handleGuildEventNotification() {
           obj.transitionToChannel(channel_id);
         }
         c4 = 3;
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp32) {
         c4 = 3;
         throw tmp32;
@@ -486,7 +486,7 @@ obj = function _handleRelationshipAddNotification() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -546,7 +546,7 @@ obj = function _handleRelationshipAddNotification() {
                 obj4.openPrivateChannel(obj11);
               }
               c4 = 3;
-              return { value: "HermesInternal", done: "ulw" };
+              return { value: "HermesInternal", done: null };
             }
           }
         } else if (arg0 === 1) {
@@ -590,7 +590,7 @@ obj = function _handleCallRingNotification() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -620,7 +620,7 @@ obj = function _handleCallRingNotification() {
             obj = closure_130_0(closure_130_3[18]);
             obj.transitionToChannel(channel_id.channel_id);
             c4 = 3;
-            return { value: "HermesInternal", done: "ulw" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp14) {
           c4 = 3;
@@ -644,7 +644,7 @@ obj = function _handleCallConnectNotification() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -712,7 +712,7 @@ obj = function _handleCallConnectNotification() {
             closure_130_1(closure_130_3[31])(closure_0.channel_id);
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp50) {
         c4 = 3;
@@ -739,7 +739,7 @@ obj = function _handleFriendSuggestionCreateNotification() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -793,7 +793,7 @@ obj = function _handleFriendSuggestionCreateNotification() {
             items[0] = closure_130_1(closure_130_3[25]).PUSH_NOTIFICATION;
             tmp9(obj);
             c4 = 3;
-            return { value: "HermesInternal", done: "ulw" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp23) {
           c4 = 3;
@@ -817,7 +817,7 @@ obj = function _maybeAckNotificationCenter() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -897,7 +897,7 @@ obj = function _maybeAckNotificationCenter() {
           const result1 = obj.markNotificationCenterRemoteItemAcked(prop);
         }
         c4 = 3;
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp17) {
         c4 = 3;
         throw tmp17;
@@ -973,7 +973,7 @@ function receiveNotification_(data, isAppStartupNavigation) {
   const maybeAckNotificationCenter2 = function maybeAckNotificationCenter() {
     return obj(...arguments);
   };
-  const f139532 = () => {
+  const f139565 = () => {
     obj = router_utils;
     const obj2 = { navigationReplace: true, openChannel: true, isAppStartupNavigation };
     obj.transitionTo(gesture.CHANNEL(data.guild_id, data.channel_id), obj2);
@@ -1191,10 +1191,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f124163;
+          fn = f124190;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f139532;
+          fn2 = f139565;
           promise.then(fn2);
           break;
         }
@@ -1365,10 +1365,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f124163;
+          fn = f124190;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f139532;
+          fn2 = f139565;
           promise.then(fn2);
           break;
         }
@@ -1539,10 +1539,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f124163;
+          fn = f124190;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f139532;
+          fn2 = f139565;
           promise.then(fn2);
           break;
         }
@@ -1713,10 +1713,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f124163;
+          fn = f124190;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f139532;
+          fn2 = f139565;
           promise.then(fn2);
           break;
         }
@@ -1887,10 +1887,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f124163;
+          fn = f124190;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f139532;
+          fn2 = f139565;
           promise.then(fn2);
           break;
         }
@@ -2061,10 +2061,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f124163;
+          fn = f124190;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f139532;
+          fn2 = f139565;
           promise.then(fn2);
           break;
         }
@@ -2235,10 +2235,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f124163;
+          fn = f124190;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f139532;
+          fn2 = f139565;
           promise.then(fn2);
           break;
         }
@@ -2409,10 +2409,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f124163;
+          fn = f124190;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f139532;
+          fn2 = f139565;
           promise.then(fn2);
           break;
         }
@@ -2583,10 +2583,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f124163;
+          fn = f124190;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f139532;
+          fn2 = f139565;
           promise.then(fn2);
           break;
         }
@@ -2757,10 +2757,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f124163;
+          fn = f124190;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f139532;
+          fn2 = f139565;
           promise.then(fn2);
           break;
         }

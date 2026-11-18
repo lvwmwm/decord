@@ -1,9 +1,9 @@
-// Module ID: 20320
-// Function ID: 20321
+// Module ID: 20323
+// Function ID: 20324
 // Name: NativeOnDemandResourceManager
-// Dependencies: [5, 2133, 2120, 1072, 7882, 20321, 510, 6215, 2]
+// Dependencies: [5, 2133, 2120, 1072, 7882, 20324, 510, 6215, 2]
 
-// Module 20320 (NativeOnDemandResourceManager)
+// Module 20323 (NativeOnDemandResourceManager)
 import Storage3 from "Storage" /* 510 */;
 import Constants from "Constants" /* 1072 */;
 import AudioActionCreatorsDefault from "AudioActionCreators" /* 6215 */;
@@ -51,7 +51,7 @@ class NativeOnDemandResourceManager extends AutomaticLifecycleManager {
           const obj7 = { value, done: true };
           return obj7;
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -124,7 +124,7 @@ class NativeOnDemandResourceManager extends AutomaticLifecycleManager {
             closure_129_0.restoreAutoThreshold();
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp32) {
           c3 = 3;
           throw tmp32;

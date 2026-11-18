@@ -25,7 +25,7 @@ let obj = function _remove2FA() {
     let intl2;
     let intl3;
     let obj10;
-    const f143578 = () => closure_1_6.setState({ isCheckingLastFactor: false });
+    const f143611 = () => closure_1_6.setState({ isCheckingLastFactor: false });
     if (c5 === 2) {
       c5 = 3;
       const str = "Generator functions may not be called on executing generators";
@@ -37,7 +37,7 @@ let obj = function _remove2FA() {
         let obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -70,7 +70,7 @@ let obj = function _remove2FA() {
         } else if (1 === tmp4) {
           c3 = 0;
           let obj4 = closure_129_0(closure_129_2[6]);
-          const batchUpdatesResult1 = obj4.batchUpdates(f143578);
+          const batchUpdatesResult1 = obj4.batchUpdates(f143611);
           throw closure_2;
         } else if (arg0 === 1) {
           c5 = 3;
@@ -78,7 +78,7 @@ let obj = function _remove2FA() {
         } else if (arg0 === 2) {
           c3 = 0;
           let obj2 = closure_129_0(closure_129_2[6]);
-          const batchUpdatesResult2 = obj2.batchUpdates(f143578);
+          const batchUpdatesResult2 = obj2.batchUpdates(f143611);
           c5 = 3;
           let obj7 = { value, done: true };
           return obj7;
@@ -86,7 +86,7 @@ let obj = function _remove2FA() {
           closure_0 = value;
           c3 = 0;
           let obj8 = closure_129_0(closure_129_2[6]);
-          const batchUpdatesResult3 = obj8.batchUpdates(f143578);
+          const batchUpdatesResult3 = obj8.batchUpdates(f143611);
           const t = closure_129_0(closure_129_2[8]).t;
           if (closure_0) {
             EA4ZEk = t.xlA7Tl;
@@ -108,7 +108,7 @@ let obj = function _remove2FA() {
           intl3 = closure_129_0(closure_129_2[8]).intl;
           closure_1 = closure_129_3(async (arg0, value) => {
             let obj6;
-            const f146774 = () => closure_1_6.setState({ isCheckingLastFactor: false });
+            const f146806 = () => closure_1_6.setState({ isCheckingLastFactor: false });
             if (c5 === 2) {
               c5 = 3;
               throw new TypeError("Generator functions may not be called on executing generators");
@@ -119,7 +119,7 @@ let obj = function _remove2FA() {
                 const obj3 = { value, done: true };
                 return obj3;
               } else {
-                return { value: "HermesInternal", done: "ulw" };
+                return { value: "HermesInternal", done: null };
               }
             } else {
               try {
@@ -145,7 +145,7 @@ let obj = function _remove2FA() {
                 } else if (1 === tmp4) {
                   c3 = 0;
                   const obj4 = tmp(closure_2[6]);
-                  obj4.batchUpdates(f146774);
+                  obj4.batchUpdates(f146806);
                   throw closure_2;
                 } else if (arg0 === 1) {
                   c5 = 3;
@@ -153,16 +153,16 @@ let obj = function _remove2FA() {
                 } else if (arg0 === 2) {
                   c3 = 0;
                   const obj2 = tmp(closure_2[6]);
-                  obj2.batchUpdates(f146774);
+                  obj2.batchUpdates(f146806);
                   c5 = 3;
                   const obj9 = { value, done: true };
                   return obj9;
                 } else {
                   c3 = 0;
                   obj = tmp(closure_2[6]);
-                  obj.batchUpdates(f146774);
+                  obj.batchUpdates(f146806);
                   c5 = 3;
-                  return { value: "HermesInternal", done: "ulw" };
+                  return { value: "HermesInternal", done: null };
                 }
               } catch (tmp27) {
                 closure_2 = tmp27;
@@ -177,7 +177,7 @@ let obj = function _remove2FA() {
           });
           show(obj);
           c5 = 3;
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp35) {
         closure_2 = tmp35;

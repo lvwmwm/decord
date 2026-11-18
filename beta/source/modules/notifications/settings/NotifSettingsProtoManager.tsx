@@ -1,9 +1,9 @@
-// Module ID: 20364
-// Function ID: 20365
+// Module ID: 20367
+// Function ID: 20368
 // Name: NotifSettingsProtoManager
 // Dependencies: [16163, 16898, 18627, 16177, 18635, 16903, 572, 7882, 1452, 2]
 
-// Module 20364 (NotifSettingsProtoManager)
+// Module 20367 (NotifSettingsProtoManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import DeclarativeNotificationSettingsRedesignExperiment from "DeclarativeNotificationSettingsRedesignExperiment" /* 16177 */;
@@ -17,7 +17,7 @@ import size from "module_2" /* 2 */;
 
 let c3;
 
-const f122799 = () => {
+const f122826 = () => {
   c3 = undefined;
   const obj = closure_1_0(closure_1_2[2]);
   const effectiveNotifSettings = obj.fetchEffectiveNotifSettings();
@@ -37,7 +37,7 @@ function handleRemoteSettingsUpdate() {
         const _clearTimeout = clearTimeout;
         clearTimeout(timeout);
         const _setTimeout = setTimeout;
-        timeout = setTimeout(f122799, 250);
+        timeout = setTimeout(f122826, 250);
       }
     }
   }
@@ -55,7 +55,7 @@ function handleConnectionRestored() {
     const _clearTimeout = clearTimeout;
     clearTimeout(timeout);
     const _setTimeout = setTimeout;
-    timeout = setTimeout(f122799, 250);
+    timeout = setTimeout(f122826, 250);
   }
 }
 function handleAppStateUpdate(state) {
@@ -67,14 +67,14 @@ function handleAppStateUpdate(state) {
   }
 }
 function handleAssignmentChange() {
-  const f122801 = (item) => null != item;
+  const f122828 = (item) => null != item;
   let obj = DeclarativeNotificationSettingsRedesignExperiment;
   const result = obj.isDeclarativeNotificationSettingsRedesignEnabled("effectiveNotifSettingsAssignment");
   require = result;
   const mapped = NOTIF_SETTINGS.map((experiment) => experiment.experiment);
-  let items = [...new Set(mapped.filter(f122801))];
+  let items = [...new Set(mapped.filter(f122828))];
   const items1 = [result];
-  new Set(mapped.filter(f122801));
+  new Set(mapped.filter(f122828));
   const sorted = items.sort();
   HermesBuiltin.arraySpread(items1, sorted.map((item) => {
     const items = [item, ];
@@ -113,7 +113,7 @@ class NotifSettingsProtoManager extends AutomaticLifecycleManager {
             const _clearTimeout = clearTimeout;
             clearTimeout(timeout);
             const _setTimeout = setTimeout;
-            timeout = setTimeout(f122799, 250);
+            timeout = setTimeout(f122826, 250);
           }
         }
       },
@@ -132,7 +132,7 @@ class NotifSettingsProtoManager extends AutomaticLifecycleManager {
             const _clearTimeout = clearTimeout;
             clearTimeout(timeout);
             const _setTimeout = setTimeout;
-            timeout = setTimeout(f122799, 250);
+            timeout = setTimeout(f122826, 250);
           }
         }
       },
@@ -154,7 +154,7 @@ class NotifSettingsProtoManager extends AutomaticLifecycleManager {
               const _clearTimeout = clearTimeout;
               clearTimeout(timeout);
               const _setTimeout = setTimeout;
-              timeout = setTimeout(f122799, 250);
+              timeout = setTimeout(f122826, 250);
             }
           }
         }

@@ -1,10 +1,10 @@
-// Module ID: 20536
-// Function ID: 20537
+// Module ID: 20539
+// Function ID: 20540
 // Name: GuildSettingsServerTagUpsellCard
 // Dependencies: [19, 17, 5513, 1072, 21, 5306, 575, 504, 5517, 10718, 10688, 5367, 5883, 6327, 10721, 5919, 1113, 5926, 18938, 2]
 // Exports: default
 
-// Module 20536 (GuildSettingsServerTagUpsellCard)
+// Module 20539 (GuildSettingsServerTagUpsellCard)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import Powerups from "Powerups" /* 5517 */;

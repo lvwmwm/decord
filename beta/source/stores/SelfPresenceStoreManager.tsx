@@ -1,9 +1,9 @@
-// Module ID: 20395
-// Function ID: 20396
+// Module ID: 20398
+// Function ID: 20399
 // Name: SelfPresenceStoreManager
 // Dependencies: [7316, 7882, 572, 2]
 
-// Module 20395 (SelfPresenceStoreManager)
+// Module 20398 (SelfPresenceStoreManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 7316 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;

@@ -177,7 +177,7 @@ let closure_14 = _asyncToGenerator(async (arg0, value) => {
       const obj = { value, done: true };
       return obj;
     } else {
-      return { value: "HermesInternal", done: "ulw" };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -262,7 +262,7 @@ let closure_13 = _asyncToGenerator(async (arg0, value) => {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: "ulw" };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -281,7 +281,7 @@ let closure_13 = _asyncToGenerator(async (arg0, value) => {
         return obj;
       } else {
         c1 = 3;
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp5) {
       c1 = 3;

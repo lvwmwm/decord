@@ -28,7 +28,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let size;
-const f117598 = () => {
+const f117606 = () => {
   let obj11;
   let obj12;
   let obj14;
@@ -173,13 +173,13 @@ const f117598 = () => {
 };
 function DemoModal() {
   const obj = Navigator;
-  const navigatorScreens = obj.useNavigatorScreens(f117598, []);
+  const navigatorScreens = obj.useNavigatorScreens(f117606, []);
   const obj2 = { screens: navigatorScreens, initialRouteName: constants.START };
   return metroImportDefault(Modal.Modal, obj2);
 }
 function DemoStepModal() {
   const obj = Navigator;
-  const navigatorScreens = obj.useNavigatorScreens(f117598, []);
+  const navigatorScreens = obj.useNavigatorScreens(f117606, []);
   const memo = react.useMemo(() => {
     const items = [, , , , ];
     ({ START: arr[0], WHO_DAT: arr[1], EVERYBODY: arr[2], JOCKIN: arr[3], LIMIT: arr[4] } = constants);
@@ -190,7 +190,7 @@ function DemoStepModal() {
 }
 function DemoGradientStepModal() {
   const obj = Navigator;
-  const navigatorScreens = obj.useNavigatorScreens(f117598, []);
+  const navigatorScreens = obj.useNavigatorScreens(f117606, []);
   const memo = react.useMemo(() => {
     const items = [, , , , ];
     ({ START: arr[0], WHO_DAT: arr[1], EVERYBODY: arr[2], JOCKIN: arr[3], LIMIT: arr[4] } = constants);
@@ -201,7 +201,7 @@ function DemoGradientStepModal() {
 }
 function DemoGradientModal() {
   let obj = Navigator;
-  const navigatorScreens = obj.useNavigatorScreens(f117598, []);
+  const navigatorScreens = obj.useNavigatorScreens(f117606, []);
   let obj2 = { screens: navigatorScreens, initialRouteName: constants.START, gradientColor: "blue" };
   return metroImportDefault(Modal.Modal, obj2);
 }
@@ -268,15 +268,15 @@ function SwitchesScreen(onAction) {
   let items;
   let obj2;
   let obj4;
-  const f117601 = () => false;
+  const f117609 = () => false;
   c1 = undefined;
   onAction = onAction.onAction;
   let tmp = closure_9();
   let parts = "I said ooh ah fhqwhgads, I said ooh ah fhqhgads!".split(" ");
-  [arr2, c1] = react.useState(parts.map(f117601));
+  [arr2, c1] = react.useState(parts.map(f117609));
   let obj = { title: "Everybody come on fhqwhgads.", emoji: "\u{1F44F}", footer: closure_7(ModalFloatingAction, obj2), children: items };
   obj2 = { isVisible: arr2.some((item) => item), floatingBackgroundColor: tmp.screen.backgroundColor, text: "Come on fhqwhgads", onPress: onAction };
-  _slicedToArray(react.useState(parts.map(f117601)), 2);
+  _slicedToArray(react.useState(parts.map(f117609)), 2);
   ModalFloatingAction = parts(15158).ModalFloatingAction;
   const obj3 = { style: tmp.tableRows, children: closure_7(TableRowGroup, obj4) };
   obj4 = {

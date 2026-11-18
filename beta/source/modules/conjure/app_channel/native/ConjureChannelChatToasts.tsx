@@ -1,16 +1,16 @@
-// Module ID: 19437
-// Function ID: 19438
+// Module ID: 19438
+// Function ID: 19439
 // Name: ConjureChannelChatToasts
-// Dependencies: [19, 17, 21, 5306, 575, 1113, 5362, 7445, 1187, 5919, 19438, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 1113, 5362, 7445, 1187, 5919, 19439, 2]
 // Exports: default
 
-// Module 19437 (ConjureChannelChatToasts)
+// Module 19438 (ConjureChannelChatToasts)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import UserUtils from "UserUtils" /* 5362 */;
 import Text_Text from "Text/Text" /* 5919 */;
-import useConjureChatToastMessagesDefault from "useConjureChatToastMessages" /* 19438 */;
+import useConjureChatToastMessagesDefault from "useConjureChatToastMessages" /* 19439 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;

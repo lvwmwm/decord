@@ -1,9 +1,9 @@
-// Module ID: 19445
-// Function ID: 19446
+// Module ID: 19446
+// Function ID: 19447
 // Name: ChannelDetails
-// Dependencies: [19, 17, 14754, 5155, 9064, 10897, 21, 575, 5306, 504, 14696, 19446, 7918, 7937, 1502, 14850, 5558, 7771, 1630, 1380, 5263, 8678, 14765, 14740, 1655, 5538, 5541, 5929, 14772, 5491, 5588, 19447, 19457, 19574, 19576, 19577, 19578, 19579, 6289, 2]
+// Dependencies: [19, 17, 14754, 5155, 9064, 10897, 21, 575, 5306, 504, 14696, 19447, 7918, 7937, 1502, 14850, 5558, 7771, 1630, 1380, 5263, 8678, 14765, 14740, 1655, 5538, 5541, 5929, 14772, 5491, 5588, 19448, 19458, 19575, 19577, 19578, 19579, 19580, 6289, 2]
 
-// Module 19445 (ChannelDetails)
+// Module 19446 (ChannelDetails)
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 14740 */;

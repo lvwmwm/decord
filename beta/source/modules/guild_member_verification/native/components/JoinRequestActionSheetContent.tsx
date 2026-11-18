@@ -1,9 +1,9 @@
-// Module ID: 19422
-// Function ID: 19423
+// Module ID: 19423
+// Function ID: 19424
 // Name: JoinRequestActionSheetContent
-// Dependencies: [19, 17, 5155, 5557, 7962, 21, 5306, 575, 8607, 8593, 8590, 8601, 8476, 19420, 8612, 8622, 9530, 15779, 15870, 504, 14956, 5341, 5926, 8069, 1113, 5342, 12277, 5919, 7629, 5128, 11, 7930, 6941, 7988, 7738, 10866, 1630, 19423, 2]
+// Dependencies: [19, 17, 5155, 5557, 7962, 21, 5306, 575, 8607, 8593, 8590, 8601, 8476, 19421, 8612, 8622, 9530, 15779, 15870, 504, 14956, 5341, 5926, 8069, 1113, 5342, 12277, 5919, 7629, 5128, 11, 7930, 6941, 7988, 7738, 10866, 1630, 19424, 2]
 
-// Module 19422 (JoinRequestActionSheetContent)
+// Module 19423 (JoinRequestActionSheetContent)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -14,7 +14,7 @@ import ActionSheetConstants from "ActionSheetConstants" /* 5557 */;
 import Text_Text from "Text/Text" /* 5919 */;
 import Constants from "Constants" /* 7962 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;
-import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 19420 */;
+import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 19421 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import Fragment from "Fragment" /* 21 */;
@@ -523,7 +523,7 @@ const memoResult = react.memo(function JoinRequestActionSheetContent(displayProf
   items1[2] = closure_8(View, obj6);
   items1[3] = closure_8(closure_17, { joinRequest, user });
   const obj7 = { guildId: joinRequest.guildId, userId: joinRequest.userId, selectedJoinRequestId: joinRequest.joinRequestId };
-  items1[4] = closure_8(tmp2(19423), obj7);
+  items1[4] = closure_8(tmp2(19424), obj7);
   return closure_9(View, obj);
 });
 size = size_mod;

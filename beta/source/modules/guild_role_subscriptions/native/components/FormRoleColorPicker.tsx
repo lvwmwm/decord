@@ -1,10 +1,10 @@
-// Module ID: 20767
-// Function ID: 20768
+// Module ID: 20770
+// Function ID: 20771
 // Name: FormRoleColorPicker
 // Dependencies: [19, 1072, 21, 5306, 5542, 19071, 2121, 16335, 17073, 1090, 2]
 // Exports: default
 
-// Module 20767 (FormRoleColorPicker)
+// Module 20770 (FormRoleColorPicker)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import asyncRequire from "asyncRequire" /* 2121 */;

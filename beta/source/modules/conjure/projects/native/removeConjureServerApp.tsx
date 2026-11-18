@@ -1,10 +1,10 @@
-// Module ID: 19670
-// Function ID: 19671
+// Module ID: 19671
+// Function ID: 19672
 // Name: removeConjureServerApp
 // Dependencies: [5, 13158, 6005, 1113, 4131, 2]
 // Exports: default
 
-// Module 19670 (removeConjureServerApp)
+// Module 19671 (removeConjureServerApp)
 import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 13158 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -26,7 +26,7 @@ let obj = function _removeConjureServerApp() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

@@ -1,10 +1,10 @@
-// Module ID: 20526
-// Function ID: 20527
+// Module ID: 20529
+// Function ID: 20530
 // Name: useLoadGuildStickerWithCreator
 // Dependencies: [5, 32, 19, 1388, 7011, 504, 11358, 2]
 // Exports: default
 
-// Module 20526 (useLoadGuildStickerWithCreator)
+// Module 20529 (useLoadGuildStickerWithCreator)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -45,7 +45,7 @@ export default function useLoadGuildStickersWithCreator(arg0) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "ulw" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c3;
@@ -87,7 +87,7 @@ export default function useLoadGuildStickersWithCreator(arg0) {
                 c3 = 0;
               }
               c4 = 3;
-              return { value: "HermesInternal", done: "ulw" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp16) {
             let closure_2 = tmp16;

@@ -1,10 +1,10 @@
-// Module ID: 19441
-// Function ID: 19442
+// Module ID: 19442
+// Function ID: 19443
 // Name: useAppChannelClosed
 // Dependencies: [32, 19, 7020, 13297, 2]
 // Exports: default
 
-// Module 19441 (useAppChannelClosed)
+// Module 19442 (useAppChannelClosed)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import FramesConstants from "FramesConstants" /* 7020 */;

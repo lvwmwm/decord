@@ -1,9 +1,9 @@
-// Module ID: 19450
-// Function ID: 19451
+// Module ID: 19451
+// Function ID: 19452
 // Name: SearchBarActivityIcon
 // Dependencies: [19, 17, 7037, 14754, 9066, 21, 5306, 575, 563, 14747, 1655, 5538, 7826, 1380, 2]
 
-// Module 19450 (SearchBarActivityIcon)
+// Module 19451 (SearchBarActivityIcon)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import timing_timing from "timing/timing" /* 5538 */;

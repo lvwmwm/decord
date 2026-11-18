@@ -12,7 +12,7 @@ import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 
 let _undefined, c3, closure_4, closure_5, closure_6, closure_7, hasOwnProperty;
 
-const f104133 = (arg0) => {
+const f104141 = (arg0) => {
   closure_3 = arg0;
   let c1;
   c2 = undefined;
@@ -53,7 +53,7 @@ function failure(arg0, arg1, arg2) {
       }
       return tmp;
     },
-    set: f104133
+    set: f104141
   });
   return obj;
 }
@@ -156,7 +156,7 @@ let _exports = _asyncToGenerator(async (value, arg1, arg2) => {
       } else if (arg0 === 2) {
         return { value, done: true };
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -293,7 +293,7 @@ export const _parseAsync = (arg0) => {
     let c8 = 0;
     let c9 = 0;
     return (function*(arg0, value, arg2, arg3) {
-      const f145801 = (item) => closure_5.finalizeIssue(item, closure_1_1, closure_4.config());
+      const f145833 = (item) => closure_5.finalizeIssue(item, closure_1_1, closure_4.config());
       if (c9 === 2) {
         c9 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -303,7 +303,7 @@ export const _parseAsync = (arg0) => {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -359,10 +359,10 @@ export const _parseAsync = (arg0) => {
             const issues = value.issues;
             const self = this;
             const self2 = this;
-            closure_3 = new closure_4(issues.map(f145801));
+            closure_3 = new closure_4(issues.map(f145833));
             let callee;
             captureStackTrace = captureStackTrace.captureStackTrace;
-            const tmp22 = new closure_4(issues.map(f145801));
+            const tmp22 = new closure_4(issues.map(f145833));
             const tmp25 = closure_3;
             if (closure_0 != null) {
               callee = closure_0.callee;
@@ -431,7 +431,7 @@ export const _safeParse = (arg0) => {
                 }
                 return tmp;
               },
-          set: f104133
+          set: f104141
         });
         obj5 = obj4;
       } else {
@@ -458,7 +458,7 @@ export const _safeParseAsync = (arg0) => {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -701,7 +701,7 @@ export const _safeEncodeAsync = (arg0) => {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -754,7 +754,7 @@ export const _safeDecodeAsync = (arg0) => {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

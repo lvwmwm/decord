@@ -1,9 +1,9 @@
-// Module ID: 20925
-// Function ID: 20926
+// Module ID: 20928
+// Function ID: 20929
 // Name: DispatcherBridge
 // Dependencies: [5922, 6970, 7011, 15774, 502, 5212, 5177, 1072, 3, 5183, 5181, 1256, 572, 2120, 1242, 2]
 
-// Module 20925 (DispatcherBridge)
+// Module 20928 (DispatcherBridge)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1072 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;

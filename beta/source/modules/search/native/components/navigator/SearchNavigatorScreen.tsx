@@ -1,10 +1,10 @@
-// Module ID: 19734
-// Function ID: 19735
+// Module ID: 19735
+// Function ID: 19736
 // Name: SearchNavigatorScreen
-// Dependencies: [19, 17, 21, 5306, 575, 19446, 5487, 19735, 7428, 1113, 7497, 10271, 19138, 19448, 19457, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 19447, 5487, 19736, 7428, 1113, 7497, 10271, 19138, 19449, 19458, 2]
 // Exports: default
 
-// Module 19734 (SearchNavigatorScreen)
+// Module 19735 (SearchNavigatorScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
@@ -12,9 +12,9 @@ import useBaseAppContainerDimensionsDefault from "useBaseAppContainerDimensions"
 import Pressables from "Pressables" /* 7428 */;
 import ArrowLargeLeftIcon2 from "ArrowLargeLeftIcon" /* 7497 */;
 import ThemedGradientDefault from "ThemedGradient" /* 10271 */;
-import SearchScreenSearchBarDefault from "SearchScreenSearchBar" /* 19448 */;
-import SearchScreenLayoutDefault from "SearchScreenLayout" /* 19457 */;
-import useSearchLayoutInsetTopDefault from "useSearchLayoutInsetTop" /* 19735 */;
+import SearchScreenSearchBarDefault from "SearchScreenSearchBar" /* 19449 */;
+import SearchScreenLayoutDefault from "SearchScreenLayout" /* 19458 */;
+import useSearchLayoutInsetTopDefault from "useSearchLayoutInsetTop" /* 19736 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
@@ -53,7 +53,7 @@ export default function SearchNavigatorScreen(navigation) {
   const searchContext = navigation.route.params.searchContext;
   const tmp = closure_8();
   importDefault = tmp;
-  let obj = navigation(19446);
+  let obj = navigation(19447);
   const searchSuggestionsGesture = obj.useSearchSuggestionsGesture(searchContext);
   ({ gesture, detectorRef, suggestionsContext } = searchSuggestionsGesture);
   const width = useBaseAppContainerDimensionsDefault().width;
@@ -76,7 +76,7 @@ export default function SearchNavigatorScreen(navigation) {
   }, items);
   items1 = [closure_5(ThemedGradientDefault, { absolute: true, wide: true, tall: true }), ];
   let obj3 = { value: suggestionsContext, children: closure_5(NonCollapsableGestureDetector, obj4) };
-  const SearchSuggestionsProvider = navigation(19446).SearchSuggestionsProvider;
+  const SearchSuggestionsProvider = navigation(19447).SearchSuggestionsProvider;
   obj4 = { gesture, children: closure_6(View, obj5) };
   obj5 = { ref: detectorRef, style: items2, children: items3 };
   items2 = [tmp.wrapper, { paddingTop: tmp3 }];

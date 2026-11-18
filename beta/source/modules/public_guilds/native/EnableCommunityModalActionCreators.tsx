@@ -1,9 +1,9 @@
-// Module ID: 20615
-// Function ID: 20616
+// Module ID: 20618
+// Function ID: 20619
 // Name: EnableCommunityModalActionCreators
-// Dependencies: [8405, 8407, 8404, 6838, 20616, 2121, 2]
+// Dependencies: [8405, 8407, 8404, 6838, 20619, 2121, 2]
 
-// Module 20615 (EnableCommunityModalActionCreators)
+// Module 20618 (EnableCommunityModalActionCreators)
 import asyncRequire from "asyncRequire" /* 2121 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8404 */;
 import PublicGuildsConstants from "PublicGuildsConstants" /* 8407 */;
@@ -29,7 +29,7 @@ let obj = {
     }
     updateGuild({ rulesChannelId });
     const tmpResult = ModalActionCreatorsDefault;
-    tmpResult.pushLazy(asyncRequire(20616, tmp2.paths), undefined, ENABLED_COMMUNITY_MODAL_KEY);
+    tmpResult.pushLazy(asyncRequire(20619, tmp2.paths), undefined, ENABLED_COMMUNITY_MODAL_KEY);
   },
   close() {
     const obj = ModalActionCreatorsDefault;

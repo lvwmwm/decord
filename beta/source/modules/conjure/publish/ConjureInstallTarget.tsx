@@ -27,7 +27,7 @@ let obj = function _repairConjureGuildHints() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -58,7 +58,7 @@ let obj = function _repairConjureGuildHints() {
             return { value, done: true };
           }
           c2 = 3;
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp7) {
           c2 = 3;
           throw tmp7;

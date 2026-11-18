@@ -174,7 +174,7 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: "ulw" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -241,7 +241,7 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
               const obj2 = closure_0(closure_2[35]);
               obj2.closeForwardModal();
               c8 = 3;
-              return { value: "HermesInternal", done: "ulw" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp42) {
             tmp43 = c6;

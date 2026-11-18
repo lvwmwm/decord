@@ -63,7 +63,7 @@ export function useHexagonCampaignDisplayNameStyleToggle(user, showEnrollmentErr
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

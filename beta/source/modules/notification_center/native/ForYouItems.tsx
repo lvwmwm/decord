@@ -1,9 +1,9 @@
-// Module ID: 19250
-// Function ID: 19251
+// Module ID: 19251
+// Function ID: 19252
 // Name: ForYouItems
-// Dependencies: [5, 32, 19, 17, 5307, 2165, 5155, 5177, 1388, 19244, 1072, 6837, 21, 5306, 5919, 575, 6331, 19249, 1113, 1406, 9282, 8861, 11857, 11392, 13072, 504, 8646, 1187, 14950, 19251, 1502, 6038, 16285, 7033, 1256, 15543, 11318, 12593, 6005, 12616, 2121, 5542, 19252, 6030, 19246, 7948, 19253, 19254, 11, 7428, 19255, 7034, 15873, 1503, 5131, 5984, 19265, 19266, 19267, 19268, 19269, 19275, 674, 19276, 19277, 1255, 19248, 7994, 7888, 19278, 2]
+// Dependencies: [5, 32, 19, 17, 5307, 2165, 5155, 5177, 1388, 19245, 1072, 6837, 21, 5306, 5919, 575, 6331, 19250, 1113, 1406, 9282, 8861, 11857, 11392, 13072, 504, 8646, 1187, 14950, 19252, 1502, 6038, 16285, 7033, 1256, 15543, 11318, 12593, 6005, 12616, 2121, 5542, 19253, 6030, 19247, 7948, 19254, 19255, 11, 7428, 19256, 7034, 15873, 1503, 5131, 5984, 19266, 19267, 19268, 19269, 19270, 19276, 674, 19277, 19278, 1255, 19249, 7994, 12008, 7888, 19279, 2]
 
-// Module 19250 (ForYouItems)
+// Module 19251 (ForYouItems)
 import nativeDefault from "native" /* 575 */;
 import _mod674 from "module_674" /* 674 */;
 import GlobalUtils from "GlobalUtils" /* 1255 */;
@@ -16,16 +16,16 @@ import PushNotificationConstants from "PushNotificationConstants" /* 6837 */;
 import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 7033 */;
 import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 14950 */;
 import handleSupportedURLDefault from "handleSupportedURL" /* 16285 */;
-import NotificationCenterStoreActions from "NotificationCenterStoreActions" /* 19248 */;
-import ForYouMentionPlaceholder from "ForYouMentionPlaceholder" /* 19249 */;
-import ForYouReadSectionHeader from "ForYouReadSectionHeader" /* 19265 */;
-import ForYouRecentActivitySectionHeader from "ForYouRecentActivitySectionHeader" /* 19266 */;
-import ForYouHoistedItemsHeader from "ForYouHoistedItemsHeader" /* 19267 */;
-import ForYouSuggestedFriendsSectionHeaderDefault from "ForYouSuggestedFriendsSectionHeader" /* 19268 */;
-import ForYouSuggestedFriendRowDefault from "ForYouSuggestedFriendRow" /* 19269 */;
-import ForYouShowAllRow from "ForYouShowAllRow" /* 19275 */;
-import ForYouUnreadClearedState from "ForYouUnreadClearedState" /* 19276 */;
-import ForYouLoadMore from "ForYouLoadMore" /* 19277 */;
+import NotificationCenterStoreActions from "NotificationCenterStoreActions" /* 19249 */;
+import ForYouMentionPlaceholder from "ForYouMentionPlaceholder" /* 19250 */;
+import ForYouReadSectionHeader from "ForYouReadSectionHeader" /* 19266 */;
+import ForYouRecentActivitySectionHeader from "ForYouRecentActivitySectionHeader" /* 19267 */;
+import ForYouHoistedItemsHeader from "ForYouHoistedItemsHeader" /* 19268 */;
+import ForYouSuggestedFriendsSectionHeaderDefault from "ForYouSuggestedFriendsSectionHeader" /* 19269 */;
+import ForYouSuggestedFriendRowDefault from "ForYouSuggestedFriendRow" /* 19270 */;
+import ForYouShowAllRow from "ForYouShowAllRow" /* 19276 */;
+import ForYouUnreadClearedState from "ForYouUnreadClearedState" /* 19277 */;
+import ForYouLoadMore from "ForYouLoadMore" /* 19278 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -35,7 +35,7 @@ import ApplicationStore from "ApplicationStore" /* 2165 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import GuildStore from "GuildStore" /* 5177 */;
 import UserStore from "UserStore" /* 1388 */;
-import NotificationCenterStore from "NotificationCenterStore" /* 19244 */;
+import NotificationCenterStore from "NotificationCenterStore" /* 19245 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
@@ -565,7 +565,7 @@ let closure_35 = react.memo(function ForYouRowWrapped(item) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "ulw" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c3;
@@ -607,7 +607,7 @@ let closure_35 = react.memo(function ForYouRowWrapped(item) {
                 c3 = 0;
               }
               c4 = 3;
-              return { value: "HermesInternal", done: "ulw" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp18) {
             let closure_2 = tmp18;
@@ -759,10 +759,10 @@ let closure_35 = react.memo(function ForYouRowWrapped(item) {
 });
 const memoResult = react.memo(function ForYouItemsWrapped(loadMore) {
   let items;
-  let items7;
+  let items8;
   let loadingMore;
   let nestedInLaunchPad;
-  let obj6;
+  let obj7;
   let onLayout;
   let onScroll;
   let ref;
@@ -781,6 +781,7 @@ const memoResult = react.memo(function ForYouItemsWrapped(loadMore) {
     flag = false;
   }
   let onPressLoad;
+  let chatDockHeight;
   let tmp = closure_29();
   let closure_9 = tmp;
   const NotificationCenterAckedBeforeId = loadMore(onSoftAckItem[54]).NotificationCenterAckedBeforeId;
@@ -795,6 +796,7 @@ const memoResult = react.memo(function ForYouItemsWrapped(loadMore) {
   const setting1 = ChannelListLayoutSetting.useSetting();
   const tmp8 = setting1 === loadMore(onSoftAckItem[55]).ChannelListLayoutTypes.COMPACT;
   const compactMode = tmp8;
+  let obj3 = suggestedFriendAdded;
   const items3 = [loadMore];
   onPressLoad = suggestedFriendAdded.useCallback(() => {
     loadMore(true);
@@ -891,20 +893,24 @@ const memoResult = react.memo(function ForYouItemsWrapped(loadMore) {
   if (undefined !== height) {
     num = height;
   }
-  let obj3 = { style: tmp.container, ref, onLayout, children: items7 };
-  let tmp17 = !nestedInLaunchPad;
-  const tmp15 = closure_22;
-  const tmp16 = onAddSuggestionAnimationFinish;
+  const tmp2Result = loadMore(onSoftAckItem[68]);
+  chatDockHeight = tmp2Result.useChatDockHeight();
+  const items7 = [chatDockHeight];
+  let obj4 = { style: tmp.container, ref, onLayout, children: items8 };
+  let tmp19 = !nestedInLaunchPad;
+  const memo = obj3.useMemo(() => ({ paddingBottom: chatDockHeight }), items7);
+  const tmp17 = closure_22;
+  const tmp18 = onAddSuggestionAnimationFinish;
   if (!nestedInLaunchPad) {
-    let obj4 = { scrollRef: ref1 };
-    tmp17 = closure_21(ScrollToTopRef, obj4);
+    let obj5 = { scrollRef: ref1 };
+    tmp19 = closure_21(ScrollToTopRef, obj5);
   }
-  items7 = [tmp17, ];
-  let obj5 = { ref: ref1, data: items, ListEmptyComponent: closure_21(tmp2(tmp3[69]).ForYouEmptyState, { height: num }), onScroll, refreshControl: closure_21(flag, obj6), keyExtractor: extractKey, renderItem: callback1, extraData: setting, onEndReached: loadMore, onEndReachedThreshold: 0.8, ListFooterComponent: closure_21(ForYouFooter, { loading: loadingMore }), viewabilityConfig };
-  const FlashList = tmp2(tmp3[68]).FlashList;
-  obj6 = { onRefresh: callback2, refreshing: stateFromStores1, tintColor: tmp.refreshSpinner.color };
-  items7[1] = closure_21(FlashList, obj5);
-  return tmp15(tmp16, obj3);
+  items8 = [tmp19, ];
+  let obj6 = { ref: ref1, data: items, ListEmptyComponent: closure_21(tmp2(tmp3[70]).ForYouEmptyState, { height: num }), onScroll, refreshControl: closure_21(flag, obj7), keyExtractor: extractKey, renderItem: callback1, extraData: setting, onEndReached: loadMore, onEndReachedThreshold: 0.8, ListFooterComponent: closure_21(ForYouFooter, { loading: loadingMore }), viewabilityConfig, contentContainerStyle: memo };
+  const FlashList = tmp2(tmp3[69]).FlashList;
+  obj7 = { onRefresh: callback2, refreshing: stateFromStores1, tintColor: tmp.refreshSpinner.color };
+  items8[1] = closure_21(FlashList, obj6);
+  return tmp17(tmp18, obj4);
 });
 size = size_mod;
 let result = size.fileFinishedImporting("modules/notification_center/native/ForYouItems.tsx");

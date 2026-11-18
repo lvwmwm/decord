@@ -1,10 +1,10 @@
-// Module ID: 19944
-// Function ID: 19945
+// Module ID: 19945
+// Function ID: 19946
 // Name: QuestActivityUnenrolledModal
-// Dependencies: [5, 32, 19, 17, 8808, 19943, 6954, 21, 5306, 575, 1360, 5537, 5328, 504, 7259, 8831, 10131, 15261, 6957, 1414, 10133, 8834, 6838, 5368, 17621, 17723, 6327, 6010, 15257, 5919, 1113, 5926, 7734, 7427, 7430, 15264, 12523, 2]
+// Dependencies: [5, 32, 19, 17, 8808, 19944, 6954, 21, 5306, 575, 1360, 5537, 5328, 504, 7259, 8831, 10131, 15261, 6957, 1414, 10133, 8834, 6838, 5368, 17621, 17723, 6327, 6010, 15257, 5919, 1113, 5926, 7734, 7427, 7430, 15264, 12523, 2]
 // Exports: default
 
-// Module 19944 (QuestActivityUnenrolledModal)
+// Module 19945 (QuestActivityUnenrolledModal)
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1360 */;
@@ -23,7 +23,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import QuestStore from "QuestStore" /* 8808 */;
-import UnenrolledActivityQuestStore from "UnenrolledActivityQuestStore" /* 19943 */;
+import UnenrolledActivityQuestStore from "UnenrolledActivityQuestStore" /* 19944 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
@@ -104,7 +104,7 @@ function QuestActivityUnenrolledModalInner(quest) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -138,7 +138,7 @@ function QuestActivityUnenrolledModalInner(quest) {
           const arr = checked(c2[22]);
           arr.pop();
           c2 = 3;
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp8) {
         c2 = 3;

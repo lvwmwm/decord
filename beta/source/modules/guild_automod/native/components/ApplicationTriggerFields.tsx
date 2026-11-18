@@ -1,10 +1,10 @@
-// Module ID: 20478
-// Function ID: 20479
+// Module ID: 20481
+// Function ID: 20482
 // Name: ApplicationTriggerFields
-// Dependencies: [19, 21, 20479, 1113, 5919, 7746, 7443, 5939, 5542, 20481, 2121, 2]
+// Dependencies: [19, 21, 20482, 1113, 5919, 7746, 7443, 5939, 5542, 20484, 2121, 2]
 // Exports: default
 
-// Module 20478 (ApplicationTriggerFields)
+// Module 20481 (ApplicationTriggerFields)
 import Fragment from "Fragment" /* 21 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
@@ -76,7 +76,7 @@ export default function ApplicationTriggerFields(rule) {
               return tmp(obj);
             }
         };
-        obj.openLazy(asyncRequire(20481, dependencyMap.paths), "AutomodSelectApplication", obj2);
+        obj.openLazy(asyncRequire(20484, dependencyMap.paths), "AutomodSelectApplication", obj2);
       }
     }
   };

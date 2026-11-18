@@ -1,10 +1,10 @@
-// Module ID: 20370
-// Function ID: 20371
+// Module ID: 20373
+// Function ID: 20374
 // Name: ConnectGuardianShareModal
 // Dependencies: [19, 17, 8740, 21, 5306, 575, 1113, 2701, 6004, 6838, 14224, 563, 17410, 8208, 8210, 6327, 5919, 17411, 7418, 7493, 12523, 2]
 // Exports: default
 
-// Module 20370 (ConnectGuardianShareModal)
+// Module 20373 (ConnectGuardianShareModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;

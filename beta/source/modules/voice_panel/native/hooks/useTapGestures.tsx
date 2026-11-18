@@ -1,10 +1,10 @@
-// Module ID: 20017
-// Function ID: 20018
+// Module ID: 20018
+// Function ID: 20019
 // Name: useTapGestures
 // Dependencies: [19, 11984, 5588, 1708, 5538, 5929, 5544, 2]
 // Exports: default
 
-// Module 20017 (useTapGestures)
+// Module 20018 (useTapGestures)
 import _mod1708 from "module_1708" /* 1708 */;
 import timing_timing from "timing/timing" /* 5538 */;
 import HapticUtils from "HapticUtils" /* 5544 */;

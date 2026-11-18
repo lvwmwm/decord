@@ -1,10 +1,10 @@
-// Module ID: 20486
-// Function ID: 20487
+// Module ID: 20489
+// Function ID: 20490
 // Name: RuleExemptionRows
-// Dependencies: [19, 5155, 5212, 5248, 1388, 14166, 21, 1113, 504, 5944, 7746, 7443, 8173, 5542, 20487, 2121, 20434, 20489, 2]
+// Dependencies: [19, 5155, 5212, 5248, 1388, 14166, 21, 1113, 504, 5944, 7746, 7443, 8173, 5542, 20490, 2121, 20437, 20492, 2]
 // Exports: default
 
-// Module 20486 (RuleExemptionRows)
+// Module 20489 (RuleExemptionRows)
 import intl5 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
@@ -106,7 +106,7 @@ export default function RuleExemptionRows(rule) {
           return onChangeRule(obj);
         }
       };
-      obj.openLazy(asyncRequire(20487, dependencyMap.paths), "AutomodExemptRoles", obj2);
+      obj.openLazy(asyncRequire(20490, dependencyMap.paths), "AutomodExemptRoles", obj2);
     }
   };
   const TableRow = tmp2(tmp3[11]).TableRow;
@@ -133,7 +133,7 @@ export default function RuleExemptionRows(rule) {
               return onChangeRule(obj);
             }
           };
-          obj.openLazy(asyncRequire(20489, dependencyMap.paths), "AutomodExemptChannels", obj2);
+          obj.openLazy(asyncRequire(20492, dependencyMap.paths), "AutomodExemptChannels", obj2);
         }
     };
     const TableRow2 = tmp2(tmp3[11]).TableRow;

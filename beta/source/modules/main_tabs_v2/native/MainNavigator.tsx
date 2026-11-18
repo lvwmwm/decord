@@ -1,7 +1,7 @@
 // Module ID: 18644
 // Function ID: 18645
 // Name: MainNavigator
-// Dependencies: [32, 19, 17, 502, 18645, 1072, 21, 5306, 1380, 5263, 16492, 18646, 18647, 18714, 19585, 19592, 19625, 19662, 9127, 19732, 19733, 19736, 19740, 19742, 19771, 19777, 19778, 5491, 1500, 1628, 19779, 6057, 9051, 19783, 19857, 563, 12717, 5485, 7490, 12447, 19638, 19860, 19891, 12917, 19893, 10908, 2]
+// Dependencies: [32, 19, 17, 502, 18645, 1072, 21, 5306, 1380, 5263, 16492, 18646, 18647, 18714, 19586, 19593, 19626, 19663, 9127, 19733, 19734, 19737, 19741, 19743, 19772, 19778, 19779, 5491, 1500, 1628, 19780, 6057, 9051, 19784, 19858, 563, 12717, 5485, 7490, 12447, 19639, 19861, 19892, 12917, 19894, 10908, 2]
 // Exports: getChannelScreen
 
 // Module 18644 (MainNavigator)
@@ -15,10 +15,10 @@ import GlobalStatusIndicatorDefault from "GlobalStatusIndicator" /* 12917 */;
 import createAccessibleNativeStackNavigatorDefault from "createAccessibleNativeStackNavigator" /* 16492 */;
 import NavigationConstants from "NavigationConstants" /* 18645 */;
 import createChatPanelNativeStackNavigatorDefault from "createChatPanelNativeStackNavigator" /* 18646 */;
-import AutoAnalytics from "AutoAnalytics" /* 19585 */;
-import VisualEffectViewTargetDefault from "VisualEffectViewTarget" /* 19638 */;
-import LaunchPadContainerDefault from "LaunchPadContainer" /* 19860 */;
-import ParentalConsentWarningBannerDefault from "ParentalConsentWarningBanner" /* 19891 */;
+import AutoAnalytics from "AutoAnalytics" /* 19586 */;
+import VisualEffectViewTargetDefault from "VisualEffectViewTarget" /* 19639 */;
+import LaunchPadContainerDefault from "LaunchPadContainer" /* 19861 */;
+import ParentalConsentWarningBannerDefault from "ParentalConsentWarningBanner" /* 19892 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -471,7 +471,7 @@ const memoResult = react.memo(function StackNavigator() {
     };
     items1[14] = tmp(closure_16.Screen, obj25);
     items[1] = tmp(tmp2Result, obj3);
-    items2 = [tmp(tmp8, obj16), tmp5(19893).APP_EXTRA_COMPONENTS, tmp5(19893).APP_EXTRA_COMPONENTS_NEVER_FREEZE, tmp5(19893).APP_EXTRA_COMPONENTS_EXTERNAL_PIP];
+    items2 = [tmp(tmp8, obj16), tmp5(19894).APP_EXTRA_COMPONENTS, tmp5(19894).APP_EXTRA_COMPONENTS_NEVER_FREEZE, tmp5(19894).APP_EXTRA_COMPONENTS_EXTERNAL_PIP];
     return tmp(tmp4, obj);
   }, items1);
 });

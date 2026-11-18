@@ -1,10 +1,10 @@
-// Module ID: 20018
-// Function ID: 20019
+// Module ID: 20019
+// Function ID: 20020
 // Name: useCameraEncodeError
 // Dependencies: [502, 12789, 504, 6247, 2]
 // Exports: default
 
-// Module 20018 (useCameraEncodeError)
+// Module 20019 (useCameraEncodeError)
 import AVError from "AVError" /* 6247 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import AVErrorStore from "AVErrorStore" /* 12789 */;

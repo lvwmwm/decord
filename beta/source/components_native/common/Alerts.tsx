@@ -1,15 +1,15 @@
-// Module ID: 19790
-// Function ID: 19791
+// Module ID: 19791
+// Function ID: 19792
 // Name: Alerts
-// Dependencies: [19, 17, 5307, 16255, 16847, 12461, 21, 19791, 19792, 19796, 5306, 575, 504, 1655, 5367, 5538, 1708, 5929, 5930, 6259, 6322, 6317, 7474, 6265, 558, 19797, 2]
+// Dependencies: [19, 17, 5307, 16255, 16847, 12461, 21, 19792, 19793, 19797, 5306, 575, 504, 1655, 5367, 5538, 1708, 5929, 5930, 6259, 6322, 6317, 7474, 6265, 558, 19798, 2]
 
-// Module 19790 (Alerts)
+// Module 19791 (Alerts)
 import shallowEqualDefault from "shallowEqual" /* 558 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 5367 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6259 */;
 import OverlayViewDefault from "OverlayView" /* 6265 */;
-import ModalRegistryDefault from "ModalRegistry" /* 19791 */;
+import ModalRegistryDefault from "ModalRegistry" /* 19792 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5307 */;
@@ -300,7 +300,7 @@ function renderAlertItem(arg0, item, transitionState, cleanUp) {
   const obj = { item, transitionState, cleanUp };
   return unpackModuleId(AlertWrapper, obj, arg0);
 }
-let closure_23 = Object.freeze({ renderAlert: "a", renderKey: "isArray", props: "isArray" });
+let closure_23 = Object.freeze({ renderAlert: "ip", renderKey: "isArray", props: "isArray" });
 const memoResult = react.memo(function Alerts() {
   let alertDismissable;
   let ref;
@@ -337,7 +337,7 @@ const memoResult = react.memo(function Alerts() {
           return <component />;
         };
       } else {
-        return { renderAlert: "a", renderKey: "isArray", props: "isArray" };
+        return { renderAlert: "ip", renderKey: "isArray", props: "isArray" };
       }
     }
   });

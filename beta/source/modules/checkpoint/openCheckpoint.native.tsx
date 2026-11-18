@@ -32,7 +32,7 @@ let obj = function _openCheckpoint() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -117,7 +117,7 @@ let obj = function _openCheckpoint() {
             presentError(intl.string(closure_131_0(closure_131_2[8]).t.fEptJP));
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp49) {
         c5 = 3;

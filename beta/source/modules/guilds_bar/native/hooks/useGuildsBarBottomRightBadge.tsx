@@ -78,7 +78,7 @@ export default function useGuildsBarBottomRightBadge(mentionCount) {
         items2 = [tmp5];
         return obj8;
       } else {
-        return { badge: null, cutout: "Array", cutouts: "alignItems" };
+        return { badge: null, cutout: "Array", cutouts: "context" };
       }
     }
   }, items1);

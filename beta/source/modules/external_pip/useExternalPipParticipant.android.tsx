@@ -1,13 +1,13 @@
-// Module ID: 19909
-// Function ID: 19910
+// Module ID: 19910
+// Function ID: 19911
 // Name: useExternalPipParticipant
-// Dependencies: [19, 7016, 16245, 6810, 502, 2133, 6061, 5973, 11985, 19910, 11990, 504, 2]
+// Dependencies: [19, 7016, 16245, 6810, 502, 2133, 6061, 5973, 11985, 19911, 11990, 504, 2]
 // Exports: default
 
-// Module 19909 (useExternalPipParticipant)
+// Module 19910 (useExternalPipParticipant)
 import CallConstants from "CallConstants" /* 5973 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11985 */;
-import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 19910 */;
+import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 19911 */;
 import react from "react" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 7016 */;
 import PIPSpeakerStore from "PIPSpeakerStore" /* 16245 */;
@@ -54,7 +54,7 @@ function getExternalPipSelectedParticipant(batchedStoreListener, selectedPartici
 }
 const ParticipantTypes = CallConstants.ParticipantTypes;
 const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
-let closure_9 = { participantType: "Path", selectedParticipantId: "content", selectedParticipantSpeaking: null, selectedParticipantStreamId: null, selectedParticipantUserId: null };
+let closure_9 = { participantType: "Path", selectedParticipantId: "context", selectedParticipantSpeaking: null, selectedParticipantStreamId: null, selectedParticipantUserId: null };
 let items = [ChannelRTCStore, ApplicationStreamingStore, AuthenticationStore, MediaEngineStore];
 const result = size.fileFinishedImporting("modules/external_pip/useExternalPipParticipant.android.tsx");
 

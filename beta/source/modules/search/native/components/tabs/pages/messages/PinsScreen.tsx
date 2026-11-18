@@ -1,16 +1,16 @@
-// Module ID: 19561
-// Function ID: 19562
+// Module ID: 19562
+// Function ID: 19563
 // Name: messages/PinsScreen
-// Dependencies: [19, 12647, 7037, 14754, 9066, 9065, 1072, 21, 504, 19474, 12646, 19470, 14761, 19535, 19478, 19477, 19558, 2]
+// Dependencies: [19, 12647, 7037, 14754, 9066, 9065, 1072, 21, 504, 19475, 12646, 19471, 14761, 19536, 19479, 19478, 19559, 2]
 
-// Module 19561 (messages/PinsScreen)
+// Module 19562 (messages/PinsScreen)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import TrackingConstants from "TrackingConstants" /* 9065 */;
 import ChannelPinActionCreatorsDefault from "ChannelPinActionCreators" /* 12646 */;
 import ChannelPinsStore2 from "ChannelPinsStore" /* 12647 */;
 import TrackingDefault from "Tracking" /* 14761 */;
-import MessagesScreenDefault from "MessagesScreen" /* 19558 */;
+import MessagesScreenDefault from "MessagesScreen" /* 19559 */;
 import react from "react" /* 19 */;
 import SearchMessageStore from "SearchMessageStore" /* 7037 */;
 import SearchQueryStore from "SearchQueryStore" /* 14754 */;

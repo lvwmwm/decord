@@ -416,7 +416,7 @@ export function getRightWidgetSpecs(arg0, arg1, width) {
     point = { x: 0, y: 0 };
   }
   ({ width, height } = arg1);
-  const rect = { top: top + point.y, left: "Array", bottom: "alignItems", right: right - point.x };
+  const rect = { top: top + point.y, left: "Array", bottom: "context", right: right - point.x };
   ({ width: width2, height: height2 } = width);
   let num = 0;
   const tmp = getAnchorPercentageFromLayoutSize;
@@ -496,7 +496,7 @@ export function getRightWidgetSpecs(arg0, arg1, width) {
   return items;
 }
 export function convertFullCordsToMatchingOrientedCoords(top, top2) {
-  const rect = { top: "loadJsonAsset", bottom: "clearTimeout", left: "error", right: "__closure" };
+  const rect = { top: "Array", bottom: "s", left: "applicationId", right: "useMemo" };
   if (null != top2.top) {
     rect.top = top.top;
   }

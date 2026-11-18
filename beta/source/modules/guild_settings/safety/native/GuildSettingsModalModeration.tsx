@@ -1,10 +1,10 @@
-// Module ID: 20451
-// Function ID: 20452
+// Module ID: 20454
+// Function ID: 20455
 // Name: GuildSettingsModalModeration
 // Dependencies: [19, 5238, 8405, 1072, 21, 5306, 575, 12029, 8404, 7746, 1113, 2188, 7954, 5367, 7493, 7427, 7745, 17367, 7747, 5919, 8106, 6327, 5902, 1502, 504, 2]
 // Exports: default
 
-// Module 20451 (GuildSettingsModalModeration)
+// Module 20454 (GuildSettingsModalModeration)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;

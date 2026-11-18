@@ -1,10 +1,10 @@
-// Module ID: 19242
-// Function ID: 19243
+// Module ID: 19243
+// Function ID: 19244
 // Name: NotificationCenterPermissionNudge
 // Dependencies: [32, 19, 17, 1072, 5152, 14826, 21, 5306, 575, 1256, 10994, 5919, 1113, 5926, 14827, 7428, 7549, 18108, 9560, 5139, 2]
 // Exports: default
 
-// Module 19242 (NotificationCenterPermissionNudge)
+// Module 19243 (NotificationCenterPermissionNudge)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;

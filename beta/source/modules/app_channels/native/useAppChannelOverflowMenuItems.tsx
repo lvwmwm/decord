@@ -131,34 +131,34 @@ export default function useAppChannelOverflowMenuItems(channel) {
     } else {
       const items = [];
       if (null != reload) {
-        const push4 = items.push;
-        const obj2 = { label: intl4.string(intl6.t.kHie4V), IconComponent: RefreshIcon.RefreshIcon, action: tmp26 };
-        intl4 = intl6.intl;
-        push4(obj2);
-      }
-      if (null != close) {
         const push = items.push;
-        const obj = { label: intl.string(intl6.t.VkMnR2), IconComponent: DoorExitIcon.DoorExitIcon, action: tmp2 };
+        const obj = { label: intl.string(intl6.t.kHie4V), IconComponent: RefreshIcon.RefreshIcon, action: tmp40 };
         intl = intl6.intl;
         push(obj);
       }
+      if (null != close) {
+        const push2 = items.push;
+        const obj2 = { label: intl2.string(intl6.t.VkMnR2), IconComponent: DoorExitIcon.DoorExitIcon, action: tmp9 };
+        intl2 = intl6.intl;
+        push2(obj2);
+      }
       const items1 = [];
       if (null != devicePermissions) {
-        const push2 = items1.push;
-        const obj3 = { label: intl2.string(_modDef4131.wum6n2), IconComponent: ShieldIcon.ShieldIcon, action: tmp10 };
-        intl2 = intl6.intl;
-        push2(obj3);
+        const push3 = items1.push;
+        const obj3 = { label: intl3.string(_modDef4131.wum6n2), IconComponent: ShieldIcon.ShieldIcon, action: tmp17 };
+        intl3 = intl6.intl;
+        push3(obj3);
       }
       if (null != appInfo) {
-        const push5 = items1.push;
-        const obj4 = { label: intl5.string(intl6.t.Sh2z9g), IconComponent: CircleInformationIcon.CircleInformationIcon, action: tmp18 };
-        intl5 = intl6.intl;
-        push5(obj4);
+        const push4 = items1.push;
+        const obj4 = { label: intl4.string(intl6.t.Sh2z9g), IconComponent: CircleInformationIcon.CircleInformationIcon, action: tmp25 };
+        intl4 = intl6.intl;
+        push4(obj4);
       }
-      const push3 = items1.push;
-      const obj5 = { label: intl3.string(intl6.t.NgA5vp), IconComponent: FlagIcon.FlagIcon, variant: "destructive", action: tmp };
-      intl3 = intl6.intl;
-      push3(obj5);
+      const push5 = items1.push;
+      const obj5 = { label: intl5.string(intl6.t.NgA5vp), IconComponent: FlagIcon.FlagIcon, variant: "destructive", action: tmp };
+      intl5 = intl6.intl;
+      push5(obj5);
       const items2 = [items, items1];
       return items2.filter((item) => item.length > 0);
     }

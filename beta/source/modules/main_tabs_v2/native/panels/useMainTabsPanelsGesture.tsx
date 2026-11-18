@@ -495,6 +495,6 @@ export default function useMainTabsPanelsGesture(canDrag) {
     return onFinalize(useMainTabsPanelsGestureTsx10);
   }, items9);
   const items10 = [memo, sharedValue2, sharedValue3, sharedValue];
-  let obj = { gesture: memo, panelGestureContext: obj2.useMemo(() => ({ gesture: memo, disallowGesture: sharedValue2, edgeSwipeOnly: sharedValue3, translateX: sharedValue, isInMainTabs: true }), items10), isDragging: sharedValue1, translateX: sharedValue, movePanel: callback1, maxWidth: openWidth, isDraggingRef: ref };
+  let obj = { gesture: memo, panelGestureContext: obj2.useMemo(() => ({ gesture: memo, disallowGesture: sharedValue2, edgeSwipeOnly: sharedValue3, translateX: sharedValue }), items10), isDragging: sharedValue1, translateX: sharedValue, movePanel: callback1, maxWidth: openWidth, isDraggingRef: ref };
   return obj;
 };

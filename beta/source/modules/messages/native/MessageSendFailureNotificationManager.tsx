@@ -1,9 +1,9 @@
-// Module ID: 20815
-// Function ID: 20816
+// Module ID: 20818
+// Function ID: 20819
 // Name: MessageSendFailureNotificationManager
 // Dependencies: [5209, 5339, 1388, 2120, 1072, 7397, 11025, 11027, 12920, 1113, 7882, 2]
 
-// Module 20815 (MessageSendFailureNotificationManager)
+// Module 20818 (MessageSendFailureNotificationManager)
 import intl3 from "intl" /* 1113 */;
 import Constants2 from "Constants" /* 7397 */;
 import InAppNotificationUtils from "InAppNotificationUtils" /* 11025 */;

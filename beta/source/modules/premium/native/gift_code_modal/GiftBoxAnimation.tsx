@@ -23,7 +23,7 @@ const result = size.fileFinishedImporting("modules/premium/native/gift_code_moda
 
 export default function GiftBoxAnimation(giftStyle) {
   let useReducedMotion;
-  const f104972 = () => require("module_11755");
+  const f104980 = () => require("module_11755");
   giftStyle = giftStyle.giftStyle;
   get_initialized;
   [][0] = AccessibilityStore;
@@ -43,7 +43,7 @@ export default function GiftBoxAnimation(giftStyle) {
     const withResult8 = withResult7.with(PremiumGiftStyles.SEASONAL_CAKE, () => require("module_11770"));
     const withResult9 = withResult8.with(PremiumGiftStyles.SEASONAL_CHEST, () => require("module_11773"));
     const withResult10 = withResult9.with(PremiumGiftStyles.SEASONAL_COFFEE, () => require("module_11776"));
-    withResult10.otherwise(f104972);
-    return jsx(LottieAnimationViewDefault, { source: withResult10.otherwise(f104972), autoPlay: !tmp4, style: { width: 320, height: 212 } });
+    withResult10.otherwise(f104980);
+    return jsx(LottieAnimationViewDefault, { source: withResult10.otherwise(f104980), autoPlay: !tmp4, style: { width: 320, height: 212 } });
   }
 };

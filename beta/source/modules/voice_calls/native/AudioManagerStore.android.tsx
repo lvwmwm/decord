@@ -45,7 +45,7 @@ let obj = function _setCommunicationModeOn() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -92,7 +92,7 @@ let obj = function _setCommunicationModeOn() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp17) {
         closure_3 = tmp17;
@@ -126,7 +126,7 @@ obj = function _setActiveAudioDevice() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -180,7 +180,7 @@ obj = function _setActiveAudioDevice() {
           c4 = 0;
         }
         c6 = 3;
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp21) {
         closure_3 = tmp21;
         if (0 === c4) {

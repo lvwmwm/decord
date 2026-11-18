@@ -1,10 +1,10 @@
-// Module ID: 20145
-// Function ID: 20146
+// Module ID: 20148
+// Function ID: 20149
 // Name: CaptchaModal
-// Dependencies: [19, 17, 18650, 18651, 21, 5306, 7770, 1503, 20146, 5556, 6327, 20147, 5919, 1113, 5926, 6759, 20151, 18659, 2]
+// Dependencies: [19, 17, 18650, 18651, 21, 5306, 7770, 1503, 20149, 5556, 6327, 20150, 5919, 1113, 5926, 6759, 20154, 18659, 2]
 // Exports: default
 
-// Module 20145 (CaptchaModal)
+// Module 20148 (CaptchaModal)
 import intl4 from "intl" /* 1113 */;
 import Link from "Link" /* 1503 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5556 */;
@@ -13,8 +13,8 @@ import Stack_Stack from "Stack/Stack" /* 6327 */;
 import SharedCaptchaUtils from "SharedCaptchaUtils" /* 6759 */;
 import RegistrationUIStore from "RegistrationUIStore" /* 18650 */;
 import RegistrationUtils from "RegistrationUtils" /* 18659 */;
-import DisguiseSpotIllustration from "DisguiseSpotIllustration" /* 20147 */;
-import CaptchaUtilsDefault from "CaptchaUtils" /* 20151 */;
+import DisguiseSpotIllustration from "DisguiseSpotIllustration" /* 20150 */;
+import CaptchaUtilsDefault from "CaptchaUtils" /* 20154 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import RegistrationConstants from "RegistrationConstants" /* 18651 */;
@@ -78,7 +78,7 @@ export default function CaptchaModal(arg0) {
     }
     return str;
   }, items);
-  let closure_9 = onReject(20146)({ onReject, analyticsType: memo });
+  let closure_9 = onReject(20149)({ onReject, analyticsType: memo });
   const effect = react.useEffect(() => {
     closure_4.dismiss();
   }, []);

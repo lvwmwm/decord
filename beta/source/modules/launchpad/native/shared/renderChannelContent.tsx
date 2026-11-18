@@ -1,18 +1,18 @@
-// Module ID: 19493
-// Function ID: 19494
+// Module ID: 19494
+// Function ID: 19495
 // Name: renderChannelContent
-// Dependencies: [19, 17, 6050, 6949, 21, 5306, 1380, 19490, 7219, 19494, 5919, 8092, 8160, 18840, 2]
+// Dependencies: [19, 17, 6050, 6949, 21, 5306, 1380, 19491, 7219, 19495, 5919, 8092, 8160, 18840, 2]
 // Exports: default
 
-// Module 19493 (renderChannelContent)
+// Module 19494 (renderChannelContent)
 import react_native from "react-native" /* 17 */;
 import Text_Text from "Text/Text" /* 5919 */;
 import RedesignChannelListConstants from "RedesignChannelListConstants" /* 6050 */;
 import ReadStateConstants from "ReadStateConstants" /* 6949 */;
 import LockIcon from "LockIcon" /* 8092 */;
 import WarningIcon from "WarningIcon" /* 8160 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 19490 */;
-import ChannelTitleDefault from "ChannelTitle" /* 19494 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 19491 */;
+import ChannelTitleDefault from "ChannelTitle" /* 19495 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;

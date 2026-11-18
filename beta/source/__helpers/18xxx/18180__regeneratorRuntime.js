@@ -76,14 +76,14 @@ export default function _regeneratorRuntime() {
       const obj = {
         value(arg0, arg1) {
           let nextPromise;
-          const f146115 = (arg0, arg1) => {
+          const f146147 = (arg0, arg1) => {
             invoke(closure_1_0, closure_1_1, arg0, arg1);
           };
           closure_0 = arg0;
           closure_1 = arg1;
           if (nextPromise) {
             function callInvokeWithMethodAndArg() {
-              const tmp = new _Promise(f146115);
+              const tmp = new _Promise(f146147);
               return tmp;
             }
             nextPromise = promise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg);
@@ -91,7 +91,7 @@ export default function _regeneratorRuntime() {
             let tmp = closure_1;
             const self = this;
             const self2 = this;
-            nextPromise = new closure_1(f146115);
+            nextPromise = new closure_1(f146147);
           }
           return nextPromise;
         }
@@ -213,7 +213,7 @@ export default function _regeneratorRuntime() {
             if ("throw" === method) {
               throw arg;
             } else {
-              return { value: "HermesInternal", done: "ulw" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             obj.method = method;
@@ -341,7 +341,7 @@ export default function _regeneratorRuntime() {
             if ("throw" === method) {
               throw arg;
             } else {
-              return { value: "HermesInternal", done: "ulw" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             obj.method = method;
@@ -436,14 +436,14 @@ export default function _regeneratorRuntime() {
       const obj6 = {
         value(arg0, arg1) {
           let nextPromise;
-          const f146115 = (arg0, arg1) => {
+          const f146147 = (arg0, arg1) => {
             invoke(closure_1_0, closure_1_1, arg0, arg1);
           };
           closure_0 = arg0;
           closure_1 = arg1;
           if (nextPromise) {
             function callInvokeWithMethodAndArg() {
-              const tmp = new _Promise(f146115);
+              const tmp = new _Promise(f146147);
               return tmp;
             }
             nextPromise = promise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg);
@@ -451,7 +451,7 @@ export default function _regeneratorRuntime() {
             let tmp = closure_1;
             const self = this;
             const self2 = this;
-            nextPromise = new closure_1(f146115);
+            nextPromise = new closure_1(f146147);
           }
           return nextPromise;
         }

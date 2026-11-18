@@ -1,15 +1,15 @@
-// Module ID: 19834
-// Function ID: 19835
+// Module ID: 19835
+// Function ID: 19836
 // Name: AccountLinkManager
-// Dependencies: [32, 5, 7221, 19835, 1072, 1089, 1285, 7882, 2]
+// Dependencies: [32, 5, 7221, 19836, 1072, 1089, 1285, 7882, 2]
 // Exports: claimIncentivizedAccountLinkingReward
 
-// Module 19834 (AccountLinkManager)
+// Module 19835 (AccountLinkManager)
 import DurationsDefault from "Durations" /* 1089 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7221 */;
-import AccountLinkStore from "AccountLinkStore" /* 19835 */;
+import AccountLinkStore from "AccountLinkStore" /* 19836 */;
 import Constants from "Constants" /* 1072 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
 import size from "module_2" /* 2 */;
@@ -57,7 +57,7 @@ let obj = function _claimIncentivizedAccountLinkingReward() {
         if ("already_awarded" === status) {
           c4 = 0;
           c6 = 3;
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         } else {
           if (c1 != null) {
             c1();

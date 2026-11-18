@@ -100,7 +100,7 @@ closure_1 = _asyncToGenerator(async (arg0, value) => {
       const obj = { value, done: true };
       return obj;
     } else {
-      return { value: "HermesInternal", done: "ulw" };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     while (true) {

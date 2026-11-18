@@ -1,10 +1,10 @@
-// Module ID: 19599
-// Function ID: 19600
+// Module ID: 19600
+// Function ID: 19601
 // Name: NewMessageScreen
-// Dependencies: [5, 32, 19, 17, 5159, 5155, 5248, 7240, 10244, 1072, 21, 1655, 5919, 5306, 575, 1380, 8134, 7241, 572, 504, 1256, 19600, 5538, 19601, 9051, 1113, 11976, 13365, 7918, 7937, 5903, 5889, 12544, 12542, 12541, 9063, 1099, 12545, 6004, 10982, 10981, 6014, 6013, 11788, 5926, 14770, 19538, 2]
+// Dependencies: [5, 32, 19, 17, 5159, 5155, 5248, 7240, 10244, 1072, 21, 1655, 5919, 5306, 575, 1380, 8134, 7241, 572, 504, 1256, 19601, 5538, 19602, 9051, 1113, 11976, 13365, 7918, 7937, 5903, 5889, 12544, 12542, 12541, 9063, 1099, 12545, 6004, 10982, 10981, 6014, 6013, 11788, 5926, 14770, 19539, 2]
 // Exports: default
 
-// Module 19599 (NewMessageScreen)
+// Module 19600 (NewMessageScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import router_utils from "router_utils" /* 1099 */;
@@ -28,8 +28,8 @@ import GroupPlusIcon from "GroupPlusIcon" /* 10981 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 10982 */;
 import NoResultsDefault from "NoResults" /* 11788 */;
 import ChatViewDefault from "ChatView" /* 11976 */;
-import useOnMessageSendDefault from "useOnMessageSend" /* 19600 */;
-import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 19601 */;
+import useOnMessageSendDefault from "useOnMessageSend" /* 19601 */;
+import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 19602 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -60,7 +60,7 @@ let tmp2;
 const getGroupDMRecipientLimitDefault = tmp2(12542);
 const GroupDMNitroCapExperimentDefault = tmp2(12544);
 const NewMessageUserListDefault = tmp2(14770);
-const GroupDMNitroUpsellBannerDefault = tmp2(19538);
+const GroupDMNitroUpsellBannerDefault = tmp2(19539);
 function isPrivateChannelMatch(arr, channel) {
   const recipients = channel.recipients;
   if (recipients.length !== arr.length) {
@@ -127,7 +127,7 @@ let obj = function _findMatchingPrivateChannelId() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -436,7 +436,7 @@ export default function NewMessageScreen(navigation) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "ulw" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -475,7 +475,7 @@ export default function NewMessageScreen(navigation) {
               }
               tmp8(FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID);
               c3 = 3;
-              return { value: "HermesInternal", done: "ulw" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp17) {
             c3 = 3;
@@ -523,9 +523,9 @@ export default function NewMessageScreen(navigation) {
         tmp82 = new tmp8(obj);
         dispatch(obj2);
         return () => {
-          const obj2 = { type: "CHANNEL_DELETE", channel: { id: first(closure_1_2[17]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "Array", parent_id: "alignItems" } };
+          const obj2 = { type: "CHANNEL_DELETE", channel: { id: first(closure_1_2[17]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "Array", parent_id: "context" } };
           obj = FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(closure_1_2[18]);
-          ({ id: first(closure_1_2[17]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "Array", parent_id: "alignItems" });
+          ({ id: first(closure_1_2[17]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "Array", parent_id: "context" });
           obj.dispatch(obj2);
         };
       }
@@ -599,7 +599,7 @@ export default function NewMessageScreen(navigation) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -651,7 +651,7 @@ export default function NewMessageScreen(navigation) {
               closure_1_5(items);
               closure_1_7(false);
               c4 = 3;
-              return { value: "HermesInternal", done: "ulw" };
+              return { value: "HermesInternal", done: null };
             } else {
               c3 = 1;
               c4 = 1;

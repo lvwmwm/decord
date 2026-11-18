@@ -1,10 +1,10 @@
-// Module ID: 19389
-// Function ID: 19390
+// Module ID: 19390
+// Function ID: 19391
 // Name: SubscribeButton
-// Dependencies: [5, 32, 19, 17, 5209, 5231, 1072, 5162, 21, 17846, 504, 9723, 5919, 6259, 1113, 7684, 2169, 1187, 19383, 5542, 19390, 2121, 19379, 7683, 5926, 11264, 2]
+// Dependencies: [5, 32, 19, 17, 5209, 5231, 1072, 5162, 21, 17846, 504, 9723, 5919, 6259, 1113, 7684, 2169, 1187, 19384, 5542, 19391, 2121, 19380, 7683, 5926, 11264, 2]
 // Exports: default
 
-// Module 19389 (SubscribeButton)
+// Module 19390 (SubscribeButton)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
@@ -53,11 +53,11 @@ function SwitchTiersButton(activeSubscription) {
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
       ActionSheetActionCreatorsDefault;
       const obj = { activeSubscription, activeListingId, changeToListingId };
-      const tmp2 = asyncRequire(19390, dependencyMap.paths);
+      const tmp2 = asyncRequire(19391, dependencyMap.paths);
       openLazy(tmp2, "ChangeSubscriptionCard:" + changeToListingId, obj);
     }
   };
-  const ArrowButton = activeSubscription(19383).ArrowButton;
+  const ArrowButton = activeSubscription(19384).ArrowButton;
   intl2 = activeSubscription(1113).intl;
   items[2] = closure_12(ArrowButton, obj6);
   return closure_13(View, obj3);
@@ -129,7 +129,7 @@ export default function SubscribeButton(listingId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -169,7 +169,7 @@ export default function SubscribeButton(listingId) {
           c3 = 0;
           closure_128_1(false);
           c4 = 3;
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp19) {
         closure_2 = tmp19;

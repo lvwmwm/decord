@@ -203,7 +203,7 @@ export default function UserSettingsChangeUsername() {
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "HermesInternal", done: "ulw" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {

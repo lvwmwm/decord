@@ -1,9 +1,9 @@
-// Module ID: 20263
-// Function ID: 20264
+// Module ID: 20266
+// Function ID: 20267
 // Name: MessageSessionMetadataManager
 // Dependencies: [1072, 7882, 1256, 2]
 
-// Module 20263 (MessageSessionMetadataManager)
+// Module 20266 (MessageSessionMetadataManager)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;

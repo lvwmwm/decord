@@ -1,10 +1,10 @@
-// Module ID: 19607
-// Function ID: 19608
+// Module ID: 19608
+// Function ID: 19609
 // Name: IncomingRequestRow
-// Dependencies: [19, 5307, 2165, 10244, 1072, 21, 1655, 563, 1113, 5362, 18765, 14950, 10581, 19272, 19608, 2]
+// Dependencies: [19, 5307, 2165, 10244, 1072, 21, 1655, 563, 1113, 5362, 18765, 14950, 10581, 19273, 19609, 2]
 // Exports: ConnectedIncomingGameFriendRequestRow, IncomingFriendRequestRow
 
-// Module 19607 (IncomingRequestRow)
+// Module 19608 (IncomingRequestRow)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import intl6 from "intl" /* 1113 */;

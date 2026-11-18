@@ -1,12 +1,12 @@
-// Module ID: 19558
-// Function ID: 19559
+// Module ID: 19559
+// Function ID: 19560
 // Name: MessagesScreen
-// Dependencies: [19, 14754, 9066, 21, 19542, 504, 19470, 19544, 19521, 19543, 19559, 19548, 19535, 19477, 19560, 2]
+// Dependencies: [19, 14754, 9066, 21, 19543, 504, 19471, 19545, 19522, 19544, 19560, 19549, 19536, 19478, 19561, 2]
 
-// Module 19558 (MessagesScreen)
+// Module 19559 (MessagesScreen)
 import Fragment from "Fragment" /* 21 */;
-import MessageSearchResultParserDefault from "MessageSearchResultParser" /* 19521 */;
-import BaseMessagesScreen from "BaseMessagesScreen" /* 19544 */;
+import MessageSearchResultParserDefault from "MessageSearchResultParser" /* 19522 */;
+import BaseMessagesScreen from "BaseMessagesScreen" /* 19545 */;
 import react from "react" /* 19 */;
 import SearchQueryStore from "SearchQueryStore" /* 14754 */;
 import SearchConstants from "SearchConstants" /* 9066 */;

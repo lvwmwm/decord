@@ -29,7 +29,7 @@ let obj = function _fetchGameOrganization() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c5;
@@ -109,7 +109,7 @@ let obj = function _fetchGameOrganization() {
             c5 = 0;
           }
           c7 = 3;
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp29) {
           closure_4 = tmp29;
           if (0 === c5) {
@@ -137,7 +137,7 @@ obj = function _fetchLinkableGameOrganizations() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;

@@ -1,9 +1,9 @@
-// Module ID: 19481
-// Function ID: 19482
+// Module ID: 19482
+// Function ID: 19483
 // Name: SearchHistoryRow
-// Dependencies: [5, 19, 17, 5155, 7015, 1388, 9066, 21, 5306, 575, 14765, 7428, 7549, 19470, 14761, 19464, 5919, 7826, 563, 19480, 7350, 8134, 19479, 19482, 19495, 1113, 2]
+// Dependencies: [5, 19, 17, 5155, 7015, 1388, 9066, 21, 5306, 575, 14765, 7428, 7549, 19471, 14761, 19465, 5919, 7826, 563, 19481, 7350, 8134, 19480, 19483, 19496, 1113, 2]
 
-// Module 19481 (SearchHistoryRow)
+// Module 19482 (SearchHistoryRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5919 */;
@@ -46,7 +46,7 @@ function SearchHistoryTextRow(searchContext) {
   const searchHistoryItem = searchContext.searchHistoryItem;
   const tmp = closure_12();
   dependencyMap = tmp;
-  let obj = searchContext(19470);
+  let obj = searchContext(19471);
   const onPressSearchHistoryText = obj.useOnPressSearchHistoryText({ searchContext });
   const items = [onPressSearchHistoryText, searchContext, , , ];
   ({ tags: arr[2], text: arr[3], type: arr[4] } = searchHistoryItem);
@@ -59,7 +59,7 @@ function SearchHistoryTextRow(searchContext) {
   let obj2 = { style: tmp.textContainer, children: items1 };
   const tags = searchHistoryItem.tags;
   let mapped;
-  const SearchListRow = searchContext(19464).SearchListRow;
+  const SearchListRow = searchContext(19465).SearchListRow;
   const tmp7 = closure_11;
   if (tags != null) {
     mapped = tags.map((children) => {
@@ -153,7 +153,7 @@ function SearchHistoryDMRow(searchContext) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -186,7 +186,7 @@ function SearchHistoryDMRow(searchContext) {
             const result = obj6.trackSearchHistoryClicked(obj7);
             tmp4(searchContext, channelId);
             c4 = 3;
-            return { value: "HermesInternal", done: "ulw" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp8) {
           c4 = 3;

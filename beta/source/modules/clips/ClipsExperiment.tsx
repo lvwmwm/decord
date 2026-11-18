@@ -16,7 +16,7 @@ import MediaEngineStore from "MediaEngineStore" /* 2133 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
-const f112360 = () => {
+const f112368 = () => {
   isDeveloper = isDeveloper.isDeveloper && DevSettingsStore.get("clips_ignore_platform_requirement");
   return isDeveloper;
 };
@@ -53,7 +53,7 @@ export function useIsClipsPlatformSupported() {
   const items = [DevSettingsStore, DeveloperExperimentStore];
   const obj3 = get_initialized;
   if (!isDesktopResult) {
-    isDesktopResult = obj3.useStateFromStores(items, f112360);
+    isDesktopResult = obj3.useStateFromStores(items, f112368);
   }
   return isDesktopResult;
 }
@@ -65,7 +65,7 @@ export function useIsClipsAvailable() {
   const items = [DevSettingsStore, DeveloperExperimentStore];
   const obj3 = get_initialized;
   if (!isDesktopResult) {
-    isDesktopResult = obj3.useStateFromStores(items, f112360);
+    isDesktopResult = obj3.useStateFromStores(items, f112368);
   }
   const items1 = [UserStore];
   const tmp4Result = get_initialized;

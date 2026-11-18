@@ -1,9 +1,9 @@
-// Module ID: 19229
-// Function ID: 19230
+// Module ID: 19230
+// Function ID: 19231
 // Name: VoicePanelDockPTTButton
-// Dependencies: [19, 17, 5155, 2133, 12009, 21, 575, 5306, 11984, 1655, 19206, 504, 13046, 13022, 13061, 5538, 5929, 5544, 11975, 19230, 7790, 5588, 1708, 19232, 7988, 1113, 13049, 5498, 19233, 2]
+// Dependencies: [19, 17, 5155, 2133, 12009, 21, 575, 5306, 11984, 1655, 19206, 504, 13046, 13022, 13061, 5538, 5929, 5544, 11975, 19231, 7790, 5588, 1708, 19233, 7988, 1113, 13049, 5498, 19234, 2]
 
-// Module 19229 (VoicePanelDockPTTButton)
+// Module 19230 (VoicePanelDockPTTButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1708 from "module_1708" /* 1708 */;

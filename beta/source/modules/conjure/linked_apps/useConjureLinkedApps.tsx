@@ -73,10 +73,10 @@ export default function useConjureLinkedApps(projectId, arg1) {
   let items1 = [ConjureProjectStore];
   const items2 = [projectId];
   const stateFromStoresArray = obj2.useStateFromStoresArray(items1, () => {
-    const f132912 = (id) => id.id;
+    const f132939 = (id) => id.id;
     const items = [...ConjureProjectStore.getOwnedProjects(), ...ConjureProjectStore.getSharedWithMeProjects(), ...ConjureProjectStore.getRailProjects()];
-    const items1 = [...new Set(items.map(f132912))];
-    new Set(items.map(f132912));
+    const items1 = [...new Set(items.map(f132939))];
+    new Set(items.map(f132939));
     const found = items1.filter((item) => item !== current);
     return found.sort();
   }, items2);
@@ -100,7 +100,7 @@ export default function useConjureLinkedApps(projectId, arg1) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "ulw" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c2;
@@ -147,11 +147,11 @@ export default function useConjureLinkedApps(projectId, arg1) {
                 } else {
                   c2 = 0;
                   c4 = 3;
-                  return { value: "HermesInternal", done: "ulw" };
+                  return { value: "HermesInternal", done: null };
                 }
               }
               c4 = 3;
-              return { value: "HermesInternal", done: "ulw" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp15) {
             if (0 === c2) {
@@ -192,7 +192,7 @@ export default function useConjureLinkedApps(projectId, arg1) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "ulw" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c2;
@@ -237,7 +237,7 @@ export default function useConjureLinkedApps(projectId, arg1) {
                 c2 = 0;
               }
               c4 = 3;
-              return { value: "HermesInternal", done: "ulw" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp15) {
             if (0 === c2) {
@@ -317,7 +317,7 @@ export default function useConjureLinkedApps(projectId, arg1) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -371,7 +371,7 @@ export default function useConjureLinkedApps(projectId, arg1) {
               }));
             }
             c6 = 3;
-            return { value: "HermesInternal", done: "ulw" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp20) {
           if (0 === c4) {
@@ -403,7 +403,7 @@ export default function useConjureLinkedApps(projectId, arg1) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -452,7 +452,7 @@ export default function useConjureLinkedApps(projectId, arg1) {
             c3((arr) => arr.filter((project_id) => project_id.project_id !== closure_1_0));
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp28) {
         if (0 === c3) {

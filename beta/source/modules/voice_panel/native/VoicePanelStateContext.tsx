@@ -25,7 +25,7 @@ const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
 ({ CONTROLS_HEIGHT, VoicePanelControlsModes } = VoicePanelControlsConstants);
 const obj = {
   channelId: "context-not-initialized",
-  channelType: "fileBytes",
+  channelType: "fileFinishedImporting",
   connected: ReanimatedHelperTypes.createFakeSharedValue(false),
   contentDimensions: ReanimatedHelperTypes.createFakeSharedValue({ width: 0, height: 0 }),
   controlsSpecs: ReanimatedHelperTypes.createFakeSharedValue(obj2),
@@ -35,8 +35,11 @@ const obj = {
     throw error;
   },
   dockContentSwap: ReanimatedHelperTypes.createFakeSharedValue(0),
+  dockRestLeft: ReanimatedHelperTypes.createFakeSharedValue(0),
   dockRestWidth: ReanimatedHelperTypes.createFakeSharedValue(0),
+  dockSlotWidth: ReanimatedHelperTypes.createFakeSharedValue(0),
   dockSheetWidth: ReanimatedHelperTypes.createFakeSharedValue(0),
+  dockSheetLeft: ReanimatedHelperTypes.createFakeSharedValue(0),
   dockTouched: ReanimatedHelperTypes.createFakeSharedValue(false),
   isDockInLayout: ReanimatedHelperTypes.createFakeSharedValue(false),
   isDockSlotEmpty: ReanimatedHelperTypes.createFakeSharedValue(false),

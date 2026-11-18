@@ -1,9 +1,9 @@
-// Module ID: 20020
-// Function ID: 20021
+// Module ID: 20021
+// Function ID: 20022
 // Name: VoicePanelNoVideoParticipantsCard
 // Dependencies: [19, 17, 21, 5306, 575, 11984, 6056, 7722, 5919, 1113, 2]
 
-// Module 20020 (VoicePanelNoVideoParticipantsCard)
+// Module 20021 (VoicePanelNoVideoParticipantsCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6056 */;

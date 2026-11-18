@@ -1,10 +1,10 @@
-// Module ID: 19683
-// Function ID: 19684
+// Module ID: 19684
+// Function ID: 19685
 // Name: MessagePreview
-// Dependencies: [19, 10228, 1072, 21, 504, 1113, 19472, 15617, 2]
+// Dependencies: [19, 10228, 1072, 21, 504, 1113, 19473, 15617, 2]
 // Exports: default
 
-// Module 19683 (MessagePreview)
+// Module 19684 (MessagePreview)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
 import react from "react" /* 19 */;

@@ -1,10 +1,10 @@
-// Module ID: 19430
-// Function ID: 19431
+// Module ID: 19431
+// Function ID: 19432
 // Name: ThreadParentMessage
 // Dependencies: [19, 8744, 6362, 21, 9159, 504, 7428, 1099, 11065, 2]
 // Exports: ThreadChannelStarterMessage, ThreadCreationStarterMessage
 
-// Module 19430 (ThreadParentMessage)
+// Module 19431 (ThreadParentMessage)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import router_utils from "router_utils" /* 1099 */;

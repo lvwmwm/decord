@@ -1,10 +1,10 @@
-// Module ID: 19740
-// Function ID: 19741
+// Module ID: 19741
+// Function ID: 19742
 // Name: modal/ModalScreen
-// Dependencies: [109, 19, 17, 1072, 21, 5306, 575, 7771, 5263, 19741, 18715, 6838, 6328, 1264, 8678, 17055, 1380, 13365, 2]
+// Dependencies: [109, 19, 17, 1072, 21, 5306, 575, 7771, 5263, 19742, 18715, 6838, 6328, 1264, 8678, 17055, 1380, 13365, 2]
 // Exports: default
 
-// Module 19740 (modal/ModalScreen)
+// Module 19741 (modal/ModalScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import useIsWindowLargeDefault from "useIsWindowLarge" /* 7771 */;
@@ -62,7 +62,7 @@ export default function Modal(route) {
     isIpadOSResult = "modal" === presentation;
   }
   if (!isIpadOSResult) {
-    const obj2 = modal(19741);
+    const obj2 = modal(19742);
     isIpadOSResult = obj2.shouldExcludeSafeAreaForModalKey(modal.key);
   }
   const obj3 = { enabled: !isIpadOSResult };

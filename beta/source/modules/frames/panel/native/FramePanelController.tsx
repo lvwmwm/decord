@@ -1,16 +1,16 @@
-// Module ID: 19949
-// Function ID: 19950
+// Module ID: 19950
+// Function ID: 19951
 // Name: FramePanelController
-// Dependencies: [19, 2165, 7019, 7020, 5949, 21, 504, 16988, 12743, 19923, 19950, 2]
+// Dependencies: [19, 2165, 7019, 7020, 5949, 21, 504, 16988, 12743, 19924, 19951, 2]
 // Exports: default
 
-// Module 19949 (FramePanelController)
+// Module 19950 (FramePanelController)
 import Fragment from "Fragment" /* 21 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5949 */;
 import FramesConstants from "FramesConstants" /* 7020 */;
 import FramesActionCreatorsDefault from "FramesActionCreators" /* 12743 */;
 import conjureBackgroundFrames from "conjureBackgroundFrames" /* 16988 */;
-import FramePanelStateContextDefault from "FramePanelStateContext" /* 19950 */;
+import FramePanelStateContextDefault from "FramePanelStateContext" /* 19951 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
 import FramesStore from "FramesStore" /* 7019 */;
@@ -76,6 +76,6 @@ export default function FramePanelController(children) {
       }
     }
   }, items1);
-  const BaseActivityPanelController = mainFrameId(19923).BaseActivityPanelController;
+  const BaseActivityPanelController = mainFrameId(19924).BaseActivityPanelController;
   return <BaseActivityPanelController context={FramePanelStateContextDefault} orientationLockStateForApp={orientationLockStateForApp} mode={mode} hasConnectedActivity={null != mainFrameId} connectedActivityAppId={connectedActivityAppId} currentApp={currentApp} updateActivityPanelMode={callback}>{children}</BaseActivityPanelController>;
 };

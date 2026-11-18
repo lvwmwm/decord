@@ -60,7 +60,7 @@ export function AcceptStep(code) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c4;
@@ -154,7 +154,7 @@ export function AcceptStep(code) {
             c4 = 0;
             closure_130_4(false);
             constants = 3;
-            return { value: "HermesInternal", done: "ulw" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp57) {
           closure_3 = tmp57;

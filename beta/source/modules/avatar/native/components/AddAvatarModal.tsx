@@ -1,9 +1,9 @@
-// Module ID: 20325
-// Function ID: 20326
+// Module ID: 20328
+// Function ID: 20329
 // Name: AddAvatarModal
-// Dependencies: [5, 32, 19, 17, 8542, 1072, 21, 5306, 575, 5882, 6816, 1630, 504, 17069, 20326, 9401, 8614, 8879, 9398, 8541, 5919, 1113, 20335, 1187, 5926, 20323, 1264, 7427, 7493, 7490, 2]
+// Dependencies: [5, 32, 19, 17, 8542, 1072, 21, 5306, 575, 5882, 6816, 1630, 504, 17069, 20329, 9401, 8614, 8879, 9398, 8541, 5919, 1113, 20338, 1187, 5926, 20326, 1264, 7427, 7493, 7490, 2]
 
-// Module 20325 (AddAvatarModal)
+// Module 20328 (AddAvatarModal)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -15,7 +15,7 @@ import NavigatorHeader from "NavigatorHeader" /* 7493 */;
 import VideoBackground from "VideoBackground" /* 8614 */;
 import RecentAvatarUtils from "RecentAvatarUtils" /* 9401 */;
 import ProfilePendingImageUtils from "ProfilePendingImageUtils" /* 17069 */;
-import AddAvatarModalActionCreators from "AddAvatarModalActionCreators" /* 20323 */;
+import AddAvatarModalActionCreators from "AddAvatarModalActionCreators" /* 20326 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -66,7 +66,7 @@ function AddAvatarScreen() {
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -106,7 +106,7 @@ function AddAvatarScreen() {
                 closure_129_0(true);
               }
               c3 = 3;
-              return { value: "HermesInternal", done: "ulw" };
+              return { value: "HermesInternal", done: null };
             }
             pendingImage = undefined;
             if (null != base64) {
@@ -148,7 +148,7 @@ function AddAvatarScreen() {
   let pendingImage;
   const stateFromStores = obj.useStateFromStores(items, () => pendingChanges.getPendingChanges().pendingAvatar);
   if (null != selectedAvatar) {
-    let obj2 = { imageUri: tmp9(20326).DEFAULT_AVATARS[selectedAvatar], description: tmp9Result3.generateAvatarDescription() };
+    let obj2 = { imageUri: tmp9(20329).DEFAULT_AVATARS[selectedAvatar], description: tmp9Result3.generateAvatarDescription() };
     let createPendingImage = tmp9(17069).createPendingImage;
     ProfilePendingImageUtils;
     tmp9Result3 = RecentAvatarUtils;
@@ -190,7 +190,7 @@ function AddAvatarScreen() {
       return obj(...arguments);
     }
   };
-  items3[1] = closure_9(selectedAvatar(20335), obj8);
+  items3[1] = closure_9(selectedAvatar(20338), obj8);
   let obj9 = { style: tmp.errorContainer, children: tmp18(LegacyText, obj10) };
   obj10 = { style: tmp.errorText, children: stringResult };
   LegacyText = tmp9(1187).LegacyText;
@@ -199,7 +199,7 @@ function AddAvatarScreen() {
     stringResult = intl3.string(intl5.t.XyLlVm);
   }
   items3[2] = closure_9(tmp17, obj9);
-  items4 = [tmp16(tmp17, obj4), tmp18(tmp7(20326), { onAvatarSelect: tmp6, selectedAvatar }), ];
+  items4 = [tmp16(tmp17, obj4), tmp18(tmp7(20329), { onAvatarSelect: tmp6, selectedAvatar }), ];
   const obj11 = { style: tmp.buttonContainer, children: closure_9(Button, obj12) };
   obj12 = {
     text: intl4.string(intl5.t.PDTjLN),

@@ -24,7 +24,7 @@ const ConjureProjectStore = ConjureProjectStore2;
 let _require, c4, c5;
 
 function refreshUntilBotJoins(arg0, arg1) {
-  const f106684 = () => {
+  const f106692 = () => {
     const integrationStatus = ConjureProjectStore.getIntegrationStatus(closure_0);
     let prop;
     if (integrationStatus != null) {
@@ -37,13 +37,13 @@ function refreshUntilBotJoins(arg0, arg1) {
         closure_0 = tmp;
         let closure_1 = tmp7 - 1;
         const _setTimeout = setTimeout;
-        const timerId = setTimeout(f106684, 1500);
+        const timerId = setTimeout(f106692, 1500);
       }
     }
   };
   let closure_0 = arg0;
   let c1 = 6;
-  let timerId = setTimeout(f106684, 1500);
+  let timerId = setTimeout(f106692, 1500);
 }
 let obj = function _waitForPublishStatus() {
   obj = _asyncToGenerator(async function(arg0, value) {
@@ -58,7 +58,7 @@ let obj = function _waitForPublishStatus() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -240,7 +240,7 @@ export default function useConjureShareToServer(arg0, arg1, arg2) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -429,7 +429,7 @@ export default function useConjureShareToServer(arg0, arg1, arg2) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c2;
@@ -468,7 +468,7 @@ export default function useConjureShareToServer(arg0, arg1, arg2) {
           c2 = 0;
         }
         c0 = 3;
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp8) {
         if (0 === c2) {
           c0 = 3;

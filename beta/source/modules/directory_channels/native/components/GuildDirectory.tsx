@@ -420,7 +420,10 @@ export default function GuildDirectory(channel) {
         }
     };
     const obj15 = { data: memo };
-    items12 = [closure_18(directoryEntries, obj12), closure_18(tmp5(15122), {})];
+    items12 = [closure_18(directoryEntries, obj12), ];
+    const obj16 = { background: guildId(575).colors.BACKGROUND_BASE_LOW };
+    const tmp5Result = guildId(15122);
+    items12[1] = closure_18(tmp5Result, obj16);
     obj6 = obj11;
   }
   return tmp24Result;

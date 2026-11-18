@@ -1,10 +1,10 @@
-// Module ID: 20735
-// Function ID: 20736
+// Module ID: 20738
+// Function ID: 20739
 // Name: GuildSettingsRoleSubscriptionTiers
-// Dependencies: [32, 19, 17, 8405, 5177, 5231, 17826, 1072, 21, 5306, 575, 5542, 20736, 2121, 1113, 7253, 17850, 5919, 563, 17846, 7443, 6010, 11862, 1630, 1502, 17834, 20726, 16332, 17833, 12, 7493, 20738, 20739, 38, 7746, 13466, 20734, 2]
+// Dependencies: [32, 19, 17, 8405, 5177, 5231, 17826, 1072, 21, 5306, 575, 5542, 20739, 2121, 1113, 7253, 17850, 5919, 563, 17846, 7443, 6010, 11862, 1630, 1502, 17834, 20729, 16332, 17833, 12, 7493, 20741, 20742, 38, 7746, 13466, 20737, 2]
 // Exports: default
 
-// Module 20735 (GuildSettingsRoleSubscriptionTiers)
+// Module 20738 (GuildSettingsRoleSubscriptionTiers)
 import _mod12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
@@ -14,9 +14,9 @@ import Text_Text from "Text/Text" /* 5919 */;
 import FastImageDefault from "FastImage" /* 6010 */;
 import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17826 */;
 import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17846 */;
-import GuildSettingsRoleSubscriptionContainerDefault from "GuildSettingsRoleSubscriptionContainer" /* 20734 */;
-import GuildRoleSettingsActionCreatorsAll from "GuildRoleSettingsActionCreators" /* 20738 */;
-import GuildRoleSubscriptionsActionCreatorExtrasAll from "GuildRoleSubscriptionsActionCreatorExtras" /* 20739 */;
+import GuildSettingsRoleSubscriptionContainerDefault from "GuildSettingsRoleSubscriptionContainer" /* 20737 */;
+import GuildRoleSettingsActionCreatorsAll from "GuildRoleSettingsActionCreators" /* 20741 */;
+import GuildRoleSubscriptionsActionCreatorExtrasAll from "GuildRoleSubscriptionsActionCreatorExtras" /* 20742 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -145,7 +145,7 @@ function EditListingButton(editStateId) {
     onLongPress() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { editStateId, guildId: importDefault, groupListingId: importAll };
-      obj.openLazy(asyncRequire(20736, dependencyMap.paths), "TierArchiveOrDelete", obj2);
+      obj.openLazy(asyncRequire(20739, dependencyMap.paths), "TierArchiveOrDelete", obj2);
     }
   };
   let tmp11Result = tmp5;

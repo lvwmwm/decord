@@ -1,10 +1,10 @@
-// Module ID: 19336
-// Function ID: 19337
+// Module ID: 19337
+// Function ID: 19338
 // Name: ICYMIShareModal
-// Dependencies: [32, 5, 19, 17, 5155, 1072, 10244, 5311, 21, 5306, 575, 7987, 1113, 19337, 6005, 5903, 15180, 15192, 5926, 6838, 10245, 1255, 8786, 8660, 1630, 1496, 1380, 10270, 10272, 2]
+// Dependencies: [32, 5, 19, 17, 5155, 1072, 10244, 5311, 21, 5306, 575, 7987, 1113, 19338, 6005, 5903, 15180, 15192, 5926, 6838, 10245, 1255, 8786, 8660, 1630, 1496, 1380, 10270, 10272, 2]
 // Exports: GameShareModal, GuildEventShareModal
 
-// Module 19336 (ICYMIShareModal)
+// Module 19337 (ICYMIShareModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -119,7 +119,7 @@ class ICYMIShareModal {
               let obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "HermesInternal", done: "ulw" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -167,7 +167,7 @@ class ICYMIShareModal {
                         const obj3 = { value, done: true };
                         return obj3;
                       } else {
-                        return { value: "HermesInternal", done: "ulw" };
+                        return { value: "HermesInternal", done: null };
                       }
                     } else {
                       try {
@@ -213,7 +213,7 @@ class ICYMIShareModal {
                           return obj;
                         }
                         c1 = 3;
-                        return { value: "HermesInternal", done: "ulw" };
+                        return { value: "HermesInternal", done: null };
                       } catch (tmp16) {
                         c1 = 3;
                         throw tmp16;
@@ -228,7 +228,7 @@ class ICYMIShareModal {
                 const arr3 = tmp2(closure_2[19]);
                 arr3.pop();
                 c4 = 3;
-                return { value: "HermesInternal", done: "ulw" };
+                return { value: "HermesInternal", done: null };
               }
             } catch (tmp6) {
               c4 = 3;
@@ -334,7 +334,7 @@ export function GameShareModal(content) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -392,7 +392,7 @@ export function GameShareModal(content) {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp32) {
         closure_3 = tmp32;

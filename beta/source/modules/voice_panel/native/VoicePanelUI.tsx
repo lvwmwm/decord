@@ -1,9 +1,9 @@
-// Module ID: 19979
-// Function ID: 19980
+// Module ID: 19980
+// Function ID: 19981
 // Name: VoicePanelUI
-// Dependencies: [32, 19, 17, 7016, 10192, 6891, 11985, 11983, 5973, 11986, 21, 3, 5929, 5306, 575, 1655, 1627, 11984, 1630, 5588, 11333, 1708, 11989, 19980, 19981, 5544, 12017, 19910, 5892, 11991, 12914, 13809, 11995, 19965, 10576, 6171, 19982, 6762, 19984, 19985, 7918, 7937, 1263, 19986, 5906, 19987, 20009, 20043, 20047, 20050, 20051, 12744, 20052, 20054, 20063, 20071, 2]
+// Dependencies: [32, 19, 17, 7016, 10192, 6891, 11985, 11983, 5973, 11986, 21, 3, 5929, 5306, 575, 1655, 1627, 11984, 1630, 5588, 11333, 1708, 11989, 19981, 19982, 5544, 12017, 19911, 5892, 11991, 12914, 13809, 11995, 19966, 10576, 6171, 19983, 6762, 19985, 19986, 7918, 7937, 1263, 19987, 5906, 19988, 20010, 20044, 20048, 20051, 20052, 12744, 20053, 20055, 20065, 20073, 2]
 
-// Module 19979 (VoicePanelUI)
+// Module 19980 (VoicePanelUI)
 import LoggerDefault from "Logger" /* 3 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
@@ -73,20 +73,20 @@ const updateSharedValueIfChangedDefault = tmp(11989);
 const calculateVoicePanelHeaderSpecsDefault = tmp2(11991);
 const VoicePanelPIPStateContext = tmp3(11995);
 const closeVoicePanelsDefault = tmp2(12744);
-const PanelSizeUtils = tmp3(19965);
-const useControlsLockDefault = tmp2(19980);
-const VoicePanelDockSheet = tmp3(19982);
-const VoicePanelDockSheetLayersDefault = tmp(19984);
-const voicePanelLayoutTransitionDefault = tmp(19985);
-const useControlsHoverGestureDefault = tmp2(19986);
-const VoicePanelHeaderDefault = tmp2(19987);
-const VoicePanelCardViewDefault = tmp2(20009);
-const VoicePanelPreJoinContentDefault = tmp2(20043);
-const VoicePanelVoiceChannelAppDefault = tmp2(20047);
-const VoicePanelSystemUIManagerDefault = tmp2(20050);
-const VoicePanelAccessibilityViewDefault = tmp2(20051);
-const VoicePanelDismissableContentDefault = tmp2(20052);
-const VoicePanelControlsDefault = tmp2(20071);
+const PanelSizeUtils = tmp3(19966);
+const useControlsLockDefault = tmp2(19981);
+const VoicePanelDockSheet = tmp3(19983);
+const VoicePanelDockSheetLayersDefault = tmp(19985);
+const voicePanelLayoutTransitionDefault = tmp(19986);
+const useControlsHoverGestureDefault = tmp2(19987);
+const VoicePanelHeaderDefault = tmp2(19988);
+const VoicePanelCardViewDefault = tmp2(20010);
+const VoicePanelPreJoinContentDefault = tmp2(20044);
+const VoicePanelVoiceChannelAppDefault = tmp2(20048);
+const VoicePanelSystemUIManagerDefault = tmp2(20051);
+const VoicePanelAccessibilityViewDefault = tmp2(20052);
+const VoicePanelDismissableContentDefault = tmp2(20053);
+const VoicePanelControlsDefault = tmp2(20073);
 function NOOP() {
 
 }
@@ -104,6 +104,7 @@ function AnimatedWrapper(arg0) {
   let dockJoinMorphOrigin;
   let dockMinimizeProgress;
   let dockPressProgress;
+  let dockSheetLeft;
   let dockSheetWidth;
   let focused;
   let isDockConnected;
@@ -114,15 +115,15 @@ function AnimatedWrapper(arg0) {
   let preJoinContentSize;
   let safeArea;
   let sheetExitProgress;
-  let tmp102;
-  let tmp103;
+  let tmp100;
   let tmp104;
-  let tmp109;
-  let tmp110;
-  let tmp113;
+  let tmp105;
+  let tmp106;
+  let tmp111;
   let tmp114;
   let tmp115;
-  let tmp118Result;
+  let tmp116;
+  let tmp119Result;
   let tmp12;
   let tmp13;
   let tmp14;
@@ -181,7 +182,7 @@ function AnimatedWrapper(arg0) {
   let tmp72;
   let tmp73;
   let tmp74;
-  let tmp77;
+  let tmp75;
   let tmp78;
   let tmp79;
   let tmp8;
@@ -198,8 +199,9 @@ function AnimatedWrapper(arg0) {
   let tmp90;
   let tmp91;
   let tmp92;
-  let tmp97;
-  let tmp98;
+  let tmp93;
+  let tmp94;
+  let tmp99;
   let useReducedMotion;
   let windowDimensions;
   let wrapperDimensions;
@@ -220,7 +222,7 @@ function AnimatedWrapper(arg0) {
   const tmp4 = closure_27();
   _require = tmp4;
   const context = react.useContext(VoicePanelStateContextDefault);
-  ({ wrapperDimensions, connected, dockPressProgress, dockSheetWidth, isDockConnected, isDockEnabled: isDockEnabled2, dockJoinMorphOrigin, dockMinimizeProgress, mode, windowDimensions, controlsSpecs, dockEntryProgress, dockHeight, focused, preJoinContentSize, safeArea, sheetExitProgress, useReducedMotion } = context);
+  ({ wrapperDimensions, connected, dockPressProgress, dockSheetLeft, dockSheetWidth, isDockConnected, isDockEnabled: isDockEnabled2, dockJoinMorphOrigin, dockMinimizeProgress, mode, windowDimensions, controlsSpecs, dockEntryProgress, dockHeight, focused, preJoinContentSize, safeArea, sheetExitProgress, useReducedMotion } = context);
   let tmp6 = useWindowDimensionsSharedValueDefault({ ignoreKeyboard: true });
   let obj3 = _mod1655;
   let items = [closure_53, controlsSpecs];
@@ -506,7 +508,7 @@ function AnimatedWrapper(arg0) {
   animatedStyle = useAnimatedStyle(VoicePanelUITsx30);
   const tmp3Result10 = VoicePanelDockSheet;
   const dockSheetSurfaceFills = tmp3Result10.useDockSheetSurfaceFills();
-  const items8 = [closure_58, isDockEnabled2, , , , , , , , , , ];
+  const items8 = [closure_58, isDockEnabled2, , , , , , , , , , , ];
   const useAnimatedStyle2 = _mod1655.useAnimatedStyle;
   _mod1655;
   items8[2] = VoicePanelDockSheet.getDockSheetSurfaceStyle;
@@ -515,10 +517,11 @@ function AnimatedWrapper(arg0) {
   items8[5] = dockJoinMorphOrigin;
   items8[6] = mode;
   items8[7] = dockMinimizeProgress;
-  items8[8] = dockSheetWidth;
-  items8[9] = wrapperDimensions;
-  items8[10] = dockSheetSurfaceFills;
-  items8[11] = tmp22;
+  items8[8] = dockSheetLeft;
+  items8[9] = dockSheetWidth;
+  items8[10] = wrapperDimensions;
+  items8[11] = dockSheetSurfaceFills;
+  items8[12] = tmp22;
   c0 = undefined;
   c1 = undefined;
   c2 = undefined;
@@ -530,46 +533,48 @@ function AnimatedWrapper(arg0) {
   c8 = undefined;
   c9 = undefined;
   c10 = undefined;
-  [tmp63, tmp64, tmp65, tmp66, tmp67, tmp68, tmp69, tmp70, tmp71, tmp72, tmp73, tmp74] = items8;
+  c11 = undefined;
+  [tmp63, tmp64, tmp65, tmp66, tmp67, tmp68, tmp69, tmp70, tmp71, tmp72, tmp73, tmp74, tmp75] = items8;
   class VoicePanelUITsx31 {
     constructor() {
       let str;
       const tmp = c0;
       if (tmp) {
-        const obj = { connected: _undefined2.get(), dockPressProgress: _undefined3.get(), dockJoinMorphOrigin: _undefined4.get(), mode: _undefined5.get(), sheetMorphProgress: 1 - _undefined6.get(), sheetWidth: _undefined7.get(), wrapperDimensions: _undefined8.get() };
-        size = _undefined(obj, c9);
+        const obj = { connected: _undefined2.get(), dockPressProgress: _undefined3.get(), dockJoinMorphOrigin: _undefined4.get(), mode: _undefined5.get(), sheetMorphProgress: 1 - _undefined6.get(), sheetLeft: _undefined7.get(), sheetWidth: _undefined8.get(), wrapperDimensions: _undefined9.get() };
+        size = _undefined(obj, c10);
       } else {
-        size = { width: _undefined8.get().drawerWidth, height: _undefined8.get().drawerHeight, pointerEvents: str };
+        size = { width: _undefined9.get().drawerWidth, height: _undefined9.get().drawerHeight, pointerEvents: str };
         str = "none";
-        if (_undefined5.get() === _undefined9.PANEL) {
+        if (_undefined5.get() === _undefined10.PANEL) {
           str = "auto";
         }
       }
       return size;
     }
   }
-  const items9 = [tmp64, tmp65, tmp66, tmp67, tmp68, tmp69, tmp70, tmp71, tmp72, tmp73, tmp74];
+  const items9 = [tmp64, tmp65, tmp66, tmp67, tmp68, tmp69, tmp70, tmp71, tmp72, tmp73, tmp74, tmp75];
   VoicePanelUITsx31.__closure = items9;
-  VoicePanelUITsx31.__workletHash = 4012411141798;
+  VoicePanelUITsx31.__workletHash = 7192428607857;
   VoicePanelUITsx31.__initData = tmp63;
   animatedStyle2 = useAnimatedStyle2(VoicePanelUITsx31);
-  const items10 = [closure_59, isDockEnabled2, , , , , , , , , , , , , , ];
+  const items10 = [closure_59, isDockEnabled2, , , , , , , , , , , , , , , ];
   const useAnimatedStyle3 = _mod1655.useAnimatedStyle;
   _mod1655;
   items10[2] = VoicePanelDockSheet.getDockSheetShape;
   items10[3] = isDockConnected;
   items10[4] = dockJoinMorphOrigin;
   items10[5] = dockMinimizeProgress;
-  items10[6] = dockSheetWidth;
-  items10[7] = wrapperDimensions;
-  items10[8] = VoicePanelDockSheet.getDockSheetShadowOpacity;
-  items10[9] = dockPressProgress;
-  items10[10] = computeBorderRadii;
-  items10[11] = mode;
-  items10[12] = connected;
-  items10[13] = spring_spring.withSpring;
-  items10[14] = authStore;
-  items10[15] = tmp4;
+  items10[6] = dockSheetLeft;
+  items10[7] = dockSheetWidth;
+  items10[8] = wrapperDimensions;
+  items10[9] = VoicePanelDockSheet.getDockSheetShadowOpacity;
+  items10[10] = dockPressProgress;
+  items10[11] = computeBorderRadii;
+  items10[12] = mode;
+  items10[13] = connected;
+  items10[14] = spring_spring.withSpring;
+  items10[15] = authStore;
+  items10[16] = tmp4;
   c0 = undefined;
   c1 = undefined;
   c2 = undefined;
@@ -585,109 +590,110 @@ function AnimatedWrapper(arg0) {
   c12 = undefined;
   c13 = undefined;
   c14 = undefined;
-  [tmp77, tmp78, tmp79, tmp80, tmp81, tmp82, tmp83, tmp84, tmp85, tmp86, tmp87, tmp88, tmp89, tmp90, tmp91, tmp92] = items10;
+  c15 = undefined;
+  [tmp78, tmp79, tmp80, tmp81, tmp82, tmp83, tmp84, tmp85, tmp86, tmp87, tmp88, tmp89, tmp90, tmp91, tmp92, tmp93, tmp94] = items10;
   class VoicePanelUITsx32 {
     constructor() {
       let str;
       let value;
       const tmp = c0;
       if (tmp) {
-        obj2 = { opacity: _undefined7(value, 1 - _undefined4.get()) };
-        const obj3 = { connected: _undefined2.get(), dockJoinMorphOrigin: _undefined3.get(), sheetMorphProgress: 1 - _undefined4.get(), sheetWidth: _undefined5.get(), wrapperDimensions: _undefined6.get() };
+        obj2 = { opacity: _undefined8(value, 1 - _undefined4.get()) };
+        const obj3 = { connected: _undefined2.get(), dockJoinMorphOrigin: _undefined3.get(), sheetMorphProgress: 1 - _undefined4.get(), sheetLeft: _undefined5.get(), sheetWidth: _undefined6.get(), wrapperDimensions: _undefined7.get() };
         const merged = Object.assign(_undefined(obj3));
-        value = _undefined8.get();
+        value = _undefined9.get();
         return obj2;
       } else {
-        const obj = { mode: _undefined10.get(), connected: _undefined11.get() };
-        const obj4 = { borderRadius: _undefined12(_undefined9(obj), c13), backgroundColor: str };
+        const obj = { mode: _undefined11.get(), connected: _undefined12.get() };
+        const obj4 = { borderRadius: _undefined13(_undefined10(obj), c14), backgroundColor: str };
         str = "transparent";
-        if (!_undefined11.get()) {
-          str = _undefined13.maskDefaultBackground.backgroundColor;
+        if (!_undefined12.get()) {
+          str = _undefined14.maskDefaultBackground.backgroundColor;
         }
         return obj4;
       }
     }
   }
-  const items11 = [tmp78, tmp79, tmp80, tmp81, tmp82, tmp83, tmp84, tmp85, tmp86, tmp87, tmp88, tmp89, tmp90, tmp91, tmp92];
+  const items11 = [tmp79, tmp80, tmp81, tmp82, tmp83, tmp84, tmp85, tmp86, tmp87, tmp88, tmp89, tmp90, tmp91, tmp92, tmp93, tmp94];
   VoicePanelUITsx32.__closure = items11;
-  VoicePanelUITsx32.__workletHash = 3074738434583;
-  VoicePanelUITsx32.__initData = tmp77;
+  VoicePanelUITsx32.__workletHash = 2084017363392;
+  VoicePanelUITsx32.__initData = tmp78;
   animatedStyle3 = useAnimatedStyle3(VoicePanelUITsx32);
   if (!ReleaseChannelUtils.isStable) {
     const items12 = [closure_60, windowDimensions];
     c0 = undefined;
-    [tmp97, tmp98] = items12;
+    [tmp99, tmp100] = items12;
     const tmp3Result13 = _mod1655;
     class VoicePanelUITsx33 {
       constructor() {
         return _undefined.get();
       }
     }
-    const items13 = [tmp98];
+    const items13 = [tmp100];
     VoicePanelUITsx33.__closure = items13;
     VoicePanelUITsx33.__workletHash = 11289230546412;
-    VoicePanelUITsx33.__initData = tmp97;
+    VoicePanelUITsx33.__initData = tmp99;
     const items14 = [closure_61, , ];
     const useAnimatedReaction2 = tmp3Result13.useAnimatedReaction;
     items14[1] = _mod1708.scheduleOnRN;
     items14[2] = log;
     c0 = undefined;
     c1 = undefined;
-    [tmp102, tmp103, tmp104] = items14;
+    [tmp104, tmp105, tmp106] = items14;
     class VoicePanelUITsx34 {
       constructor(arg0) {
         _undefined(c1, "Window dimensions changed:", JSON.stringify(arg0));
       }
     }
-    const items15 = [tmp103, tmp104];
+    const items15 = [tmp105, tmp106];
     VoicePanelUITsx34.__closure = items15;
     VoicePanelUITsx34.__workletHash = 9854052507414;
-    VoicePanelUITsx34.__initData = tmp102;
+    VoicePanelUITsx34.__initData = tmp104;
     const animatedReaction2 = useAnimatedReaction2(VoicePanelUITsx33, VoicePanelUITsx34);
     const items16 = [closure_62, wrapperDimensions];
     c0 = undefined;
-    [tmp109, tmp110] = items16;
-    const tmp100 = log;
+    [r10598, tmp111] = items16;
+    const tmp102 = log;
     const tmp3Result14 = _mod1655;
     class VoicePanelUITsx35 {
       constructor() {
         return _undefined.get();
       }
     }
-    const items17 = [tmp110];
+    const items17 = [tmp111];
     VoicePanelUITsx35.__closure = items17;
+    VoicePanelUITsx35.__workletHash = 740820331178;
     class VoicePanelUITsx26 {
       constructor() {
         return _undefined.get().height;
       }
     }
-    VoicePanelUITsx35.__initData = tmp109;
     const items18 = [closure_63, , ];
     const useAnimatedReaction3 = tmp3Result14.useAnimatedReaction;
     items18[1] = _mod1708.scheduleOnRN;
-    items18[2] = tmp100;
+    items18[2] = tmp102;
     c0 = undefined;
     c1 = undefined;
-    [tmp113, tmp114, tmp115] = items18;
+    [tmp114, tmp115, tmp116] = items18;
     class VoicePanelUITsx36 {
       constructor(arg0) {
         _undefined(c1, "Wrapper dimensions changed:", JSON.stringify(arg0));
       }
     }
-    const items19 = [tmp114, tmp115];
+    const items19 = [tmp115, tmp116];
     VoicePanelUITsx36.__closure = items19;
     VoicePanelUITsx36.__workletHash = 13802443686923;
-    VoicePanelUITsx36.__initData = tmp113;
+    VoicePanelUITsx36.__initData = tmp114;
     const animatedReaction3 = useAnimatedReaction3(VoicePanelUITsx35, VoicePanelUITsx36);
   }
   const items20 = [tmp4.wrapper, animatedStyle2, animatedStyle3, animatedStyle];
   const memo = obj.useMemo(() => ({ wrapperRootStyles: wrapper.wrapper, wrapperTransformStyles: animatedStyle, wrapperSurfaceStyles: animatedStyle2, wrapperSurfaceLayerStyles: animatedStyle3 }), items20);
   ({ wrapperTransformStyles, wrapperSurfaceStyles, wrapperSurfaceLayerStyles } = memo);
-  let obj4 = { style: memo.wrapperRootStyles, pointerEvents: "box-none", children: tmp118Result };
+  let obj4 = { style: memo.wrapperRootStyles, pointerEvents: "box-none", children: tmp119Result };
   const View = module_1655.View;
   if (isDockEnabled) {
     let obj5 = { wrapperTransformStyles, wrapperSurfaceStyles, wrapperSurfaceLayerStyles, children };
-    tmp118Result = tmp118(VoicePanelDockSheetLayersDefault, obj5);
+    tmp119Result = tmp119(VoicePanelDockSheetLayersDefault, obj5);
   } else {
     let obj6 = { style: wrapperTransformStyles, pointerEvents: "box-none", children: closure_19(View3, obj7) };
     const View2 = module_1655.View;
@@ -699,9 +705,9 @@ function AnimatedWrapper(arg0) {
       }
     }
     const items21 = [StyleSheet.absoluteFill, wrapperSurfaceLayerStyles];
-    tmp120[0] = items21;
-    items22 = [authStore4(module_1655.View, tmp120), children];
-    tmp118Result = tmp118(View2, obj6);
+    tmp121[0] = items21;
+    items22 = [authStore4(module_1655.View, tmp121), children];
+    tmp119Result = tmp119(View2, obj6);
   }
   return authStore4(View, obj4);
 }
@@ -812,8 +818,8 @@ let closure_54 = { code: "(function VoicePanelUITsx27(){let[mode,connected,windo
 let closure_55 = { code: "(function VoicePanelUITsx28(props,previous){let[cheapWorkletShallowEqual,VoicePanelModes,isDockEnabled,wrapperDimensions,updateSharedValueIfChanged,wrapperOffset,getMaxPanelWidth,getPanelX,roundToNearestPixel,windowDimensions]=this.__closure;if(cheapWorkletShallowEqual(props,previous!==null&&previous!==void 0?previous:undefined))return;const{modeToSet:modeToSet,connected:connected,windowWidth:windowWidth,windowHeight:windowHeight,safeArea:safeArea,pipState:pipState,controlsHeight:controlsHeight,preJoinContentSize:preJoinContentSize,globalStatusIndicatorHeight:globalStatusIndicatorHeight}=props;if(modeToSet===VoicePanelModes.PIP&&!isDockEnabled&&pipState.id==null){return;}const animated=previous!=null?windowHeight===previous.windowHeight&&windowWidth===previous.windowWidth&&safeArea.top===previous.safeArea.top&&safeArea.bottom===previous.safeArea.bottom&&safeArea.left===previous.safeArea.left&&safeArea.right===previous.safeArea.right:true;let{drawerX:drawerX,drawerY:drawerY}=wrapperDimensions.get();const availableHeight=windowHeight-globalStatusIndicatorHeight;if(modeToSet===VoicePanelModes.PANEL){if(connected){drawerX=0;drawerY=0;updateSharedValueIfChanged(wrapperDimensions,{drawerWidth:windowWidth,drawerHeight:availableHeight,drawerX:drawerX,drawerY:drawerY,animated:animated,mode:modeToSet});updateSharedValueIfChanged(wrapperOffset,{gestureActive:false});}else{const drawerWidth=getMaxPanelWidth({windowWidth:windowWidth,connected:connected,safeAreaLeft:safeArea.left,safeAreaRight:safeArea.right});drawerX=getPanelX(windowWidth,drawerWidth);drawerY=roundToNearestPixel(Math.max(availableHeight-preJoinContentSize-controlsHeight-safeArea.bottom,availableHeight-0.8*availableHeight));updateSharedValueIfChanged(wrapperDimensions,{drawerWidth:drawerWidth,drawerHeight:availableHeight,drawerX:drawerX,drawerY:drawerY,animated:animated,mode:modeToSet});}}else if(modeToSet===VoicePanelModes.PIP&&isDockEnabled){updateSharedValueIfChanged(wrapperDimensions,{drawerWidth:windowWidth,drawerHeight:availableHeight,drawerX:0,drawerY:0,animated:animated,mode:modeToSet});}else if(modeToSet===VoicePanelModes.DISMISSED){const isLeavingDock=isDockEnabled&&wrapperDimensions.get().mode===VoicePanelModes.PIP;if(connected||isLeavingDock){updateSharedValueIfChanged(wrapperDimensions,{mode:modeToSet});}else{updateSharedValueIfChanged(wrapperDimensions,{drawerY:windowDimensions.get().height+60,mode:modeToSet});}updateSharedValueIfChanged(wrapperOffset,{gestureActive:false,x:0,y:0});}})" };
 let closure_56 = { code: "(function VoicePanelUITsx29(finished){let[mode,VoicePanelModes,scheduleOnRN,updateSourceTrackingView]=this.__closure;if(finished&&mode.get()!==VoicePanelModes.DISMISSED){scheduleOnRN(updateSourceTrackingView);}})" };
 let closure_57 = { code: "(function VoicePanelUITsx30(){let[useReducedMotion,wrapperDimensions,wrapperOffset,connected,_worklet_205591346044_init_data,mode,VoicePanelModes,scheduleOnRN,updateSourceTrackingView,isDockEnabled,getDockSheetTransform,isDockConnected,dockMinimizeProgress,dockHeight,windowDimensionsIgnoringKeyboard,globalStatusIndicatorHeight,dockJoinMorphOrigin,dockEntryProgress,sheetExitProgress,dockPressProgress,withSpring,DRAWER_SPRING_PHYSICS_GESTURE_ACTIVE,DRAWER_SIZE_PHYSICS]=this.__closure;const animateXY=!useReducedMotion.get()&&wrapperDimensions.get().animated||wrapperOffset.get().gestureActive;const{gestureActive:gestureActive,y:offsetY,x:offsetX}=wrapperOffset.get();let{drawerY:y,drawerX:x}=wrapperDimensions.get();const applyGestureOffset=!connected.get()&&(gestureActive||offsetY!==0);if(applyGestureOffset){y+=Math.max(offsetY,0);x+=offsetX;}const updateSourceTrackingViewHelper=function VoicePanelUITsx29Factory([_worklet_205591346044_init_data,mode,VoicePanelModes,scheduleOnRN,updateSourceTrackingView]){const VoicePanelUITsx29=function(finished){if(finished&&mode.get()!==VoicePanelModes.DISMISSED){scheduleOnRN(updateSourceTrackingView);}};VoicePanelUITsx29.__closure=[mode,VoicePanelModes,scheduleOnRN,updateSourceTrackingView];VoicePanelUITsx29.__workletHash=205591346044;VoicePanelUITsx29.__initData=_worklet_205591346044_init_data;return VoicePanelUITsx29;}([_worklet_205591346044_init_data,mode,VoicePanelModes,scheduleOnRN,updateSourceTrackingView]);const dockTransform=isDockEnabled?getDockSheetTransform({connected:isDockConnected.get(),progress:dockMinimizeProgress.get(),wrapperDimensions:wrapperDimensions.get(),dockHeight:dockHeight.get(),dockBottom:windowDimensionsIgnoringKeyboard.get().height-globalStatusIndicatorHeight,dockJoinMorphOrigin:dockJoinMorphOrigin.get(),dockEntryProgress:dockEntryProgress.get(),sheetExitProgress:sheetExitProgress.get(),dockPressProgress:dockPressProgress.get()}):null;if(dockTransform!=null){return{transform:[{translateX:dockTransform.translateX},{translateY:dockTransform.translateY},{scale:dockTransform.scale}]};}return{transform:[{translateX:withSpring(x,wrapperOffset.get().gestureActive?DRAWER_SPRING_PHYSICS_GESTURE_ACTIVE:DRAWER_SIZE_PHYSICS,animateXY?'animate-always':'animate-never',updateSourceTrackingViewHelper)},{translateY:withSpring(y,wrapperOffset.get().gestureActive?DRAWER_SPRING_PHYSICS_GESTURE_ACTIVE:DRAWER_SIZE_PHYSICS,animateXY?'animate-always':'animate-never',updateSourceTrackingViewHelper)},...(isDockEnabled?[{scale:1}]:[])]};})" };
-let closure_58 = { code: "(function VoicePanelUITsx31(){let[isDockEnabled,getDockSheetSurfaceStyle,isDockConnected,dockPressProgress,dockJoinMorphOrigin,mode,dockMinimizeProgress,dockSheetWidth,wrapperDimensions,dockSurfaceFills,VoicePanelModes]=this.__closure;if(isDockEnabled){return getDockSheetSurfaceStyle({connected:isDockConnected.get(),dockPressProgress:dockPressProgress.get(),dockJoinMorphOrigin:dockJoinMorphOrigin.get(),mode:mode.get(),sheetMorphProgress:1-dockMinimizeProgress.get(),sheetWidth:dockSheetWidth.get(),wrapperDimensions:wrapperDimensions.get()},dockSurfaceFills);}return{width:wrapperDimensions.get().drawerWidth,height:wrapperDimensions.get().drawerHeight,pointerEvents:mode.get()===VoicePanelModes.PANEL?'auto':'none'};})" };
-let closure_59 = { code: "(function VoicePanelUITsx32(){let[isDockEnabled,getDockSheetShape,isDockConnected,dockJoinMorphOrigin,dockMinimizeProgress,dockSheetWidth,wrapperDimensions,getDockSheetShadowOpacity,dockPressProgress,computeBorderRadii,mode,connected,withSpring,BORDER_RADIUS_PHYSICS,styles]=this.__closure;if(isDockEnabled){return{...getDockSheetShape({connected:isDockConnected.get(),dockJoinMorphOrigin:dockJoinMorphOrigin.get(),sheetMorphProgress:1-dockMinimizeProgress.get(),sheetWidth:dockSheetWidth.get(),wrapperDimensions:wrapperDimensions.get()}),opacity:getDockSheetShadowOpacity(dockPressProgress.get(),1-dockMinimizeProgress.get())};}const borderRadius=computeBorderRadii({mode:mode.get(),connected:connected.get()});return{borderRadius:withSpring(borderRadius,BORDER_RADIUS_PHYSICS),backgroundColor:connected.get()?'transparent':styles.maskDefaultBackground.backgroundColor};})" };
+let closure_58 = { code: "(function VoicePanelUITsx31(){let[isDockEnabled,getDockSheetSurfaceStyle,isDockConnected,dockPressProgress,dockJoinMorphOrigin,mode,dockMinimizeProgress,dockSheetLeft,dockSheetWidth,wrapperDimensions,dockSurfaceFills,VoicePanelModes]=this.__closure;if(isDockEnabled){return getDockSheetSurfaceStyle({connected:isDockConnected.get(),dockPressProgress:dockPressProgress.get(),dockJoinMorphOrigin:dockJoinMorphOrigin.get(),mode:mode.get(),sheetMorphProgress:1-dockMinimizeProgress.get(),sheetLeft:dockSheetLeft.get(),sheetWidth:dockSheetWidth.get(),wrapperDimensions:wrapperDimensions.get()},dockSurfaceFills);}return{width:wrapperDimensions.get().drawerWidth,height:wrapperDimensions.get().drawerHeight,pointerEvents:mode.get()===VoicePanelModes.PANEL?'auto':'none'};})" };
+let closure_59 = { code: "(function VoicePanelUITsx32(){let[isDockEnabled,getDockSheetShape,isDockConnected,dockJoinMorphOrigin,dockMinimizeProgress,dockSheetLeft,dockSheetWidth,wrapperDimensions,getDockSheetShadowOpacity,dockPressProgress,computeBorderRadii,mode,connected,withSpring,BORDER_RADIUS_PHYSICS,styles]=this.__closure;if(isDockEnabled){return{...getDockSheetShape({connected:isDockConnected.get(),dockJoinMorphOrigin:dockJoinMorphOrigin.get(),sheetMorphProgress:1-dockMinimizeProgress.get(),sheetLeft:dockSheetLeft.get(),sheetWidth:dockSheetWidth.get(),wrapperDimensions:wrapperDimensions.get()}),opacity:getDockSheetShadowOpacity(dockPressProgress.get(),1-dockMinimizeProgress.get())};}const borderRadius=computeBorderRadii({mode:mode.get(),connected:connected.get()});return{borderRadius:withSpring(borderRadius,BORDER_RADIUS_PHYSICS),backgroundColor:connected.get()?'transparent':styles.maskDefaultBackground.backgroundColor};})" };
 let closure_60 = { code: "(function VoicePanelUITsx33(){let[windowDimensions]=this.__closure;return windowDimensions.get();})" };
 let closure_61 = { code: "(function VoicePanelUITsx34(value){let[scheduleOnRN,log]=this.__closure;scheduleOnRN(log,'Window dimensions changed:',JSON.stringify(value));})" };
 let closure_62 = { code: "(function VoicePanelUITsx35(){let[wrapperDimensions]=this.__closure;return wrapperDimensions.get();})" };
@@ -2337,11 +2343,11 @@ const memoResult = react.memo(function VoicePanelUI() {
     const tmp119 = AnimatedWrapper;
     if (isDockEnabled) {
       const obj22 = { children: tmp113 };
-      tmp111Result = tmp111(tmp14(19982).VoicePanelContentWithDock, obj22);
+      tmp111Result = tmp111(tmp14(19983).VoicePanelContentWithDock, obj22);
     }
     items37[1] = tmp111(tmp119, obj21);
     obj23 = { children: items36 };
-    items37[2] = tmp111(tmp2(isDockEnabled ? 20054 : 20063), {});
+    items37[2] = tmp111(tmp2(isDockEnabled ? 20055 : 20065), {});
     const obj24 = { gestureState: sharedValue4 };
     items37[3] = tmp111(VoicePanelControlsDefault, obj24);
     items36[2] = tmp111(GestureDetector3, obj19);

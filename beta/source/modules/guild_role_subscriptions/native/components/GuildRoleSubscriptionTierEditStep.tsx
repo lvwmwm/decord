@@ -1,10 +1,10 @@
-// Module ID: 20733
-// Function ID: 20734
+// Module ID: 20736
+// Function ID: 20737
 // Name: GuildRoleSubscriptionTierEditStep
 // Dependencies: [19, 17, 21, 5306, 575, 7415, 5919, 17838, 1113, 1630, 5926, 1502, 2]
 // Exports: default
 
-// Module 20733 (GuildRoleSubscriptionTierEditStep)
+// Module 20736 (GuildRoleSubscriptionTierEditStep)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import useNavigation from "useNavigation" /* 1502 */;

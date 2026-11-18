@@ -1,10 +1,10 @@
-// Module ID: 19619
-// Function ID: 19620
+// Module ID: 19620
+// Function ID: 19621
 // Name: FriendRequestsScreen
-// Dependencies: [32, 19, 17, 7032, 5248, 1388, 10244, 1072, 10843, 21, 5306, 575, 19620, 2121, 6260, 563, 7033, 5131, 19246, 7034, 11, 7918, 7937, 1256, 15783, 7259, 19621, 1345, 8476, 1113, 1502, 7746, 7443, 5919, 7983, 10271, 11251, 7428, 11788, 17717, 10577, 2]
+// Dependencies: [32, 19, 17, 7032, 5248, 1388, 10244, 1072, 10843, 21, 5306, 575, 19621, 2121, 6260, 563, 7033, 5131, 19247, 7034, 11, 7918, 7937, 1256, 15783, 7259, 19622, 1345, 8476, 1113, 1502, 7746, 7443, 5919, 7983, 10271, 11251, 7428, 11788, 17717, 10577, 2]
 // Exports: default
 
-// Module 19619 (FriendRequestsScreen)
+// Module 19620 (FriendRequestsScreen)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -12,7 +12,7 @@ import useAlertStore from "useAlertStore" /* 6260 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;
 import UserRowConstants from "UserRowConstants" /* 10244 */;
 import Constants2 from "Constants" /* 10843 */;
-import getPendingRelationshipIds from "getPendingRelationshipIds" /* 19621 */;
+import getPendingRelationshipIds from "getPendingRelationshipIds" /* 19622 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 7032 */;

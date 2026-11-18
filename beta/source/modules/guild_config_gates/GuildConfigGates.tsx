@@ -1,14 +1,14 @@
-// Module ID: 20590
-// Function ID: 20591
+// Module ID: 20593
+// Function ID: 20594
 // Name: GuildConfigGates
-// Dependencies: [5, 20591, 1072, 504, 1285, 572, 2]
+// Dependencies: [5, 20594, 1072, 504, 1285, 572, 2]
 // Exports: useApplicationIdentityLinkedRolesEnabled, useGuildVerificationRoleEnabled
 
-// Module 20590 (GuildConfigGates)
+// Module 20593 (GuildConfigGates)
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildConfigGatesStore from "GuildConfigGatesStore" /* 20591 */;
+import GuildConfigGatesStore from "GuildConfigGatesStore" /* 20594 */;
 import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;
 
@@ -53,7 +53,7 @@ let closure_3 = _asyncToGenerator(async (guildId) => {
       } else if (arg0 === 2) {
         return { value, done: true };
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -102,7 +102,7 @@ let closure_3 = _asyncToGenerator(async (guildId) => {
           dispatch(obj5);
         }
         c6 = 3;
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp13) {
         c6 = 3;
         throw tmp13;

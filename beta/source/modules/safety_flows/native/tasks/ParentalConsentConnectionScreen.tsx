@@ -1,10 +1,10 @@
-// Module ID: 20876
-// Function ID: 20877
+// Module ID: 20879
+// Function ID: 20880
 // Name: ParentalConsentConnectionScreen
-// Dependencies: [5, 32, 19, 17, 8740, 1388, 8741, 21, 5306, 575, 20867, 20866, 14224, 5889, 20375, 17410, 9616, 504, 17408, 20877, 20861, 6005, 1113, 2997, 5542, 17409, 2121, 20870, 14079, 6327, 20878, 15159, 20879, 5919, 2701, 17411, 2]
+// Dependencies: [5, 32, 19, 17, 8740, 1388, 8741, 21, 5306, 575, 20870, 20869, 14224, 5889, 20378, 17410, 9616, 504, 17408, 20880, 20864, 6005, 1113, 2997, 5542, 17409, 2121, 20873, 14079, 6327, 20881, 15159, 20882, 5919, 2701, 17411, 2]
 // Exports: default
 
-// Module 20876 (ParentalConsentConnectionScreen)
+// Module 20879 (ParentalConsentConnectionScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
@@ -169,7 +169,7 @@ export default function ParentalConsentConnectionScreen() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -219,7 +219,7 @@ export default function ParentalConsentConnectionScreen() {
           c3 = 0;
           closure_128_5(false);
           c4 = 3;
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp30) {
         closure_2 = tmp30;

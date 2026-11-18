@@ -1,10 +1,10 @@
-// Module ID: 20195
-// Function ID: 20196
+// Module ID: 20198
+// Function ID: 20199
 // Name: openChangelog
 // Dependencies: [5208, 5482, 6838, 18176, 2121, 2]
 // Exports: openChangelog
 
-// Module 20195 (openChangelog)
+// Module 20198 (openChangelog)
 import asyncRequire from "asyncRequire" /* 2121 */;
 import ChangelogConstants from "ChangelogConstants" /* 5208 */;
 import NavigationRouteUtils from "NavigationRouteUtils" /* 5482 */;

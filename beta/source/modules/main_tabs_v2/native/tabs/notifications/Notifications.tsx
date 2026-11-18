@@ -1,10 +1,10 @@
-// Module ID: 19235
-// Function ID: 19236
+// Module ID: 19236
+// Function ID: 19237
 // Name: Notifications
-// Dependencies: [19, 17, 10030, 5152, 21, 5306, 575, 5483, 7771, 19236, 7415, 7428, 1113, 17199, 5919, 19237, 11905, 19238, 18715, 7918, 7937, 8678, 7499, 5906, 19242, 19243, 14204, 5478, 1630, 18735, 10271, 5367, 2]
+// Dependencies: [19, 17, 10030, 5152, 21, 5306, 575, 5483, 7771, 19237, 7415, 7428, 1113, 17199, 5919, 19238, 11905, 19239, 18715, 7918, 7937, 8678, 7499, 5906, 19243, 19244, 15122, 14204, 5478, 1630, 18735, 10271, 5367, 2]
 // Exports: ThemedNotificationsModal
 
-// Module 19235 (Notifications)
+// Module 19236 (Notifications)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
@@ -20,12 +20,14 @@ import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
 import MainTabsConstants from "MainTabsConstants" /* 10030 */;
 import ThemedGradientDefault from "ThemedGradient" /* 10271 */;
 import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 14204 */;
+import VoicePanelDockScrimDefault from "VoicePanelDockScrim" /* 15122 */;
 import useAppFrameDefault from "useAppFrame" /* 18715 */;
 import TabsPerformanceTracker from "TabsPerformanceTracker" /* 18735 */;
-import useForLaterCoachmarkDefault from "useForLaterCoachmark" /* 19236 */;
-import ForLaterOpenActionButtonDefault from "ForLaterOpenActionButton" /* 19237 */;
-import NotificationCenterActionButtonDefault from "NotificationCenterActionButton" /* 19238 */;
-import NotificationCenterForYou from "NotificationCenterForYou" /* 19243 */;
+import useForLaterCoachmarkDefault from "useForLaterCoachmark" /* 19237 */;
+import ForLaterOpenActionButtonDefault from "ForLaterOpenActionButton" /* 19238 */;
+import NotificationCenterActionButtonDefault from "NotificationCenterActionButton" /* 19239 */;
+import NotificationCenterPermissionNudgeDefault from "NotificationCenterPermissionNudge" /* 19243 */;
+import NotificationCenterForYou from "NotificationCenterForYou" /* 19244 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
@@ -42,8 +44,6 @@ let obj3;
 let obj4;
 let size;
 let size1;
-let tmp2;
-const NotificationCenterPermissionNudgeDefault = tmp2(19242);
 function goBack() {
   const obj = RootNavigationRef;
   navigation = obj.getRootNavigationRef();
@@ -108,7 +108,11 @@ class Notifications {
     items[2] = styles.topBorder;
     items[3] = style;
     const obj4 = { zIndex: 1, children: metroImportDefault(AnalyticsLocationProvider, obj3) };
-    items1 = [metroImportDefault(closure_11, { nestedInLaunchPad: flag, inNestedNavigator: flag2 }), metroImportDefault(NotificationCenterPermissionNudgeDefault, {}), metroImportDefault(NotificationCenterForYou.NotificationCenterForYou, { nestedInLaunchPad: flag }), metroImportDefault(TTIFirstContentfulPaint.TTIFirstContentfulPaint, { label: "notifications" })];
+    items1 = [metroImportDefault(closure_11, { nestedInLaunchPad: flag, inNestedNavigator: flag2 }), metroImportDefault(NotificationCenterPermissionNudgeDefault, {}), metroImportDefault(NotificationCenterForYou.NotificationCenterForYou, { nestedInLaunchPad: flag }), , ];
+    const obj6 = { background: nativeDefault.colors.BACKGROUND_BASE_LOW };
+    const tmp2Result = VoicePanelDockScrimDefault;
+    items1[3] = metroImportDefault(tmp2Result, obj6);
+    items1[4] = metroImportDefault(TTIFirstContentfulPaint.TTIFirstContentfulPaint, { label: "notifications" });
     return metroImportDefault(LayerScope, obj4);
   }
 }

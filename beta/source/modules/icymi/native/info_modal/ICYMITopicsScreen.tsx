@@ -1,10 +1,10 @@
-// Module ID: 19310
-// Function ID: 19311
+// Module ID: 19311
+// Function ID: 19312
 // Name: ICYMITopicsScreen
-// Dependencies: [5, 32, 19, 17, 19304, 19311, 21, 7438, 10851, 8086, 19312, 10856, 8073, 17883, 14230, 12682, 14117, 11322, 19313, 11324, 11855, 5306, 575, 5368, 5926, 1630, 1502, 19315, 2121, 10217, 6005, 1113, 504, 16851, 5919, 2]
+// Dependencies: [5, 32, 19, 17, 19305, 19312, 21, 7438, 10851, 8086, 19313, 10856, 8073, 17883, 14230, 12682, 14117, 11322, 19314, 11324, 11855, 5306, 575, 5368, 5926, 1630, 1502, 19316, 2121, 10217, 6005, 1113, 504, 16851, 5919, 2]
 // Exports: default
 
-// Module 19310 (ICYMITopicsScreen)
+// Module 19311 (ICYMITopicsScreen)
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
 import react_native from "react-native" /* 5368 */;
@@ -21,14 +21,14 @@ import MedalIcon from "MedalIcon" /* 14117 */;
 import PiggyBankIcon from "PiggyBankIcon" /* 14230 */;
 import ICYMIAnalytics2 from "ICYMIAnalytics" /* 16851 */;
 import PaintPaletteIcon from "PaintPaletteIcon" /* 17883 */;
-import GuildSettingsDiscoveryConstants from "GuildSettingsDiscoveryConstants" /* 19311 */;
-import ScienceIcon from "ScienceIcon" /* 19312 */;
-import PaintbrushThinIcon from "PaintbrushThinIcon" /* 19313 */;
+import GuildSettingsDiscoveryConstants from "GuildSettingsDiscoveryConstants" /* 19312 */;
+import ScienceIcon from "ScienceIcon" /* 19313 */;
+import PaintbrushThinIcon from "PaintbrushThinIcon" /* 19314 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import GuildDiscoveryCategoryStore from "GuildDiscoveryCategoryStore" /* 19304 */;
+import GuildDiscoveryCategoryStore from "GuildDiscoveryCategoryStore" /* 19305 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
@@ -167,7 +167,7 @@ export default function ICYMITopicsScreen() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -225,7 +225,7 @@ export default function ICYMITopicsScreen() {
           const _setTimeout = setTimeout;
           const timerId = setTimeout(() => v2(false), 500);
           c3 = 3;
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp28) {
         c3 = 3;

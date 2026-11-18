@@ -268,8 +268,8 @@ export default function InterestGamePicker(catalog) {
   let tmp66;
   let tmp67;
   let tmp6Result2;
-  const f118938 = (item, index) => item !== first4[index];
-  const f118955 = (arr, index) => {
+  const f118946 = (item, index) => item !== first4[index];
+  const f118963 = (arr, index) => {
     let items;
     let onPress;
     let radius;
@@ -639,8 +639,8 @@ export default function InterestGamePicker(catalog) {
   let tmp53 = memo6.length > 0;
   const tmp52 = tmpResult[1];
   if (tmp53) {
-    tmp53 = memo6.length !== first4.length || memo6.some(f118938);
-    memo6.length !== first4.length || memo6.some(f118938);
+    tmp53 = memo6.length !== first4.length || memo6.some(f118946);
+    memo6.length !== first4.length || memo6.some(f118946);
   }
   if (tmp53) {
     tmp52(memo6);
@@ -1029,8 +1029,8 @@ export default function InterestGamePicker(catalog) {
   let tmp79Result5 = !tmp43 && memo3.length > 0;
   if (tmp79Result5) {
     let str2 = "browse";
-    const obj28 = { style: tmp9.grid, children: roundToNearestPixel2Result > 0 && memo5.map(f118955) };
-    roundToNearestPixel2Result > 0 && memo5.map(f118955);
+    const obj28 = { style: tmp9.grid, children: roundToNearestPixel2Result > 0 && memo5.map(f118963) };
+    roundToNearestPixel2Result > 0 && memo5.map(f118963);
     if (tmp35) {
       str2 = "search";
     }

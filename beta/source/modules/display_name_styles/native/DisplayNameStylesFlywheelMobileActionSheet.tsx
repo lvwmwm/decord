@@ -1,10 +1,10 @@
-// Module ID: 19811
-// Function ID: 19812
+// Module ID: 19812
+// Function ID: 19813
 // Name: DisplayNameStylesFlywheelMobileActionSheet
-// Dependencies: [19, 17, 1388, 1072, 5152, 21, 5320, 5313, 5537, 504, 2174, 17088, 1113, 3125, 5338, 5139, 17171, 8604, 7587, 5556, 7415, 5891, 19812, 6010, 19816, 5919, 5926, 5306, 575, 2]
+// Dependencies: [19, 17, 1388, 1072, 5152, 21, 5320, 5313, 5537, 504, 2174, 17088, 1113, 3125, 5338, 5139, 17171, 8604, 7587, 5556, 7415, 5891, 19813, 6010, 19817, 5919, 5926, 5306, 575, 2]
 // Exports: default
 
-// Module 19811 (DisplayNameStylesFlywheelMobileActionSheet)
+// Module 19812 (DisplayNameStylesFlywheelMobileActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import dismissible_content from "dismissible_content" /* 5139 */;
@@ -134,12 +134,12 @@ export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismiss
   };
   items4[0] = closure_9(tmp2(5891).ActionSheetHeaderBar, obj8);
   const obj9 = { style: tmp6.imageContainer, children: items5 };
-  items5 = [enabled && tmp14(tmp2(19812).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" }), ];
+  items5 = [enabled && tmp14(tmp2(19813).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" }), ];
   let tmp14Result = !enabled;
-  enabled && closure_9(tmp2(19812).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" });
+  enabled && closure_9(tmp2(19813).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" });
   if (tmp14Result) {
     const obj10 = { source: obj11, style: tmp6.image, resizeMode: "contain" };
-    obj11 = { uri: ref(19816) };
+    obj11 = { uri: ref(19817) };
     const tmp4Result = ref(6010);
     tmp14Result = tmp14(tmp4Result, obj10);
   }

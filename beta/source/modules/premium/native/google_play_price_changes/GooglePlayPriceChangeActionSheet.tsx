@@ -1,10 +1,10 @@
-// Module ID: 19807
-// Function ID: 19808
+// Module ID: 19808
+// Function ID: 19809
 // Name: GooglePlayPriceChangeActionSheet
-// Dependencies: [19, 17, 2179, 19808, 1072, 5152, 21, 5306, 575, 504, 2174, 7253, 5556, 5919, 1113, 2188, 5926, 2]
+// Dependencies: [19, 17, 2179, 19809, 1072, 5152, 21, 5306, 575, 504, 2174, 7253, 5556, 5919, 1113, 2188, 5926, 2]
 // Exports: default
 
-// Module 19807 (GooglePlayPriceChangeActionSheet)
+// Module 19808 (GooglePlayPriceChangeActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -12,7 +12,7 @@ import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
 import react from "react" /* 19 */;
 import SubscriptionStore from "SubscriptionStore" /* 2179 */;
-import GooglePlayPriceChangeStore from "GooglePlayPriceChangeStore" /* 19808 */;
+import GooglePlayPriceChangeStore from "GooglePlayPriceChangeStore" /* 19809 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;

@@ -12,7 +12,7 @@ import size from "module_2" /* 2 */;
 
 let Gesture;
 let ReanimatedHelperTypes;
-const obj = { gesture: Gesture.Pan(), disallowGesture: ReanimatedHelperTypes.createFakeSharedValue(false), edgeSwipeOnly: ReanimatedHelperTypes.createFakeSharedValue(false), translateX: ReanimatedHelperTypes.createFakeSharedValue(0), isInMainTabs: false };
+const obj = { gesture: Gesture.Pan(), disallowGesture: ReanimatedHelperTypes.createFakeSharedValue(false), edgeSwipeOnly: ReanimatedHelperTypes.createFakeSharedValue(false), translateX: ReanimatedHelperTypes.createFakeSharedValue(0), isInMainTabs: false, isNavigatorPanelsBesideChannelList: false };
 Gesture = LegacyBaseButton.Gesture;
 ReanimatedHelperTypes = ReanimatedHelperTypes_mod;
 const context = react.createContext(obj);

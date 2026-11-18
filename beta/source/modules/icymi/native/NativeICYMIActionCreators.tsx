@@ -1,9 +1,9 @@
-// Module ID: 19297
-// Function ID: 19298
+// Module ID: 19298
+// Function ID: 19299
 // Name: NativeICYMIActionCreators
 // Dependencies: [5, 1072, 10220, 1285, 572, 6005, 1113, 2]
 
-// Module 19297 (NativeICYMIActionCreators)
+// Module 19298 (NativeICYMIActionCreators)
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -33,7 +33,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -93,7 +93,7 @@ let obj = {
             c3 = 0;
           }
           constants = 3;
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp21) {
           guild_score = tmp21;
           if (0 === c3) {

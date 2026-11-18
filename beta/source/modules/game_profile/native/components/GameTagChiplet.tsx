@@ -1,9 +1,9 @@
-// Module ID: 20042
-// Function ID: 20043
+// Module ID: 20043
+// Function ID: 20044
 // Name: GameTagChiplet
 // Dependencies: [19, 21, 5306, 10664, 10286, 10654, 6010, 2]
 
-// Module 20042 (GameTagChiplet)
+// Module 20043 (GameTagChiplet)
 import Fragment from "Fragment" /* 21 */;
 import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 10286 */;
 import GuildTag from "GuildTag" /* 10654 */;

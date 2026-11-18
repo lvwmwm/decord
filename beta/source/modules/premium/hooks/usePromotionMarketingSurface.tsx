@@ -13,7 +13,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, userTrialOffer;
 
-const f99429 = () => {
+const f99437 = () => {
   const obj = PREMIUM_TAB(dependencyMap[3]);
   const result = obj.maybeFetchActivePromotions();
 };
@@ -21,13 +21,13 @@ let result = size.fileFinishedImporting("modules/premium/hooks/usePromotionMarke
 
 export function usePromotionMarketingSurface(PREMIUM_TAB) {
   _require = PREMIUM_TAB;
-  const f99434 = () => PromotionsStore.getMarketingComponentBySurface(f99434);
+  const f99442 = () => PromotionsStore.getMarketingComponentBySurface(f99442);
   let obj = react;
-  const effect = react.useEffect(f99429, []);
+  const effect = react.useEffect(f99437, []);
   const items = [PromotionsStore, UserOfferStore];
   const obj2 = require("get initialized");
   const stateFromStores = obj2.useStateFromStores(items, () => {
-    const tmp = f99434();
+    const tmp = f99442();
     if (null == tmp) {
       return null;
     } else {
@@ -120,11 +120,11 @@ export function usePromotionMarketingComponentData(arg0) {
   let endDate;
   let stateFromStores;
   _require = arg0;
-  const effect = endDate.useEffect(f99429, []);
+  const effect = endDate.useEffect(f99437, []);
   const items = [PromotionsStore, UserOfferStore];
   const obj2 = require("get initialized");
   stateFromStores = obj2.useStateFromStores(items, () => {
-    const tmp = f99434();
+    const tmp = f99442();
     if (null == tmp) {
       return null;
     } else {

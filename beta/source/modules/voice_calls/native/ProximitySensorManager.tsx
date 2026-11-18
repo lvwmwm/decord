@@ -1,11 +1,11 @@
-// Module ID: 20381
-// Function ID: 20382
+// Module ID: 20384
+// Function ID: 20385
 // Name: ProximitySensorManager
-// Dependencies: [5154, 6810, 6061, 6081, 20382, 6082, 1380, 7882, 2]
+// Dependencies: [5154, 6810, 6061, 6081, 20385, 6082, 1380, 7882, 2]
 
-// Module 20381 (ProximitySensorManager)
+// Module 20384 (ProximitySensorManager)
 import VoiceCallTypes from "VoiceCallTypes" /* 6082 */;
-import react_nativeDefault from "react-native" /* 20382 */;
+import react_nativeDefault from "react-native" /* 20385 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6810 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;

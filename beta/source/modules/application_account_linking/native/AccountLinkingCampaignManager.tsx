@@ -1,16 +1,16 @@
-// Module ID: 20894
-// Function ID: 20895
+// Module ID: 20897
+// Function ID: 20898
 // Name: AccountLinkingCampaignManager
-// Dependencies: [5, 16216, 6836, 1388, 19833, 1072, 7882, 559, 1380, 19838, 16218, 2]
+// Dependencies: [5, 16216, 6836, 1388, 19834, 1072, 7882, 559, 1380, 19839, 16218, 2]
 
-// Module 20894 (AccountLinkingCampaignManager)
+// Module 20897 (AccountLinkingCampaignManager)
 import BackoffDefault from "Backoff" /* 559 */;
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import LocalAppDetectionStore from "LocalAppDetectionStore" /* 16216 */;
 import ConsentStore from "ConsentStore" /* 6836 */;
 import UserStore from "UserStore" /* 1388 */;
-import AccountLinkingCampaignStore from "AccountLinkingCampaignStore" /* 19833 */;
+import AccountLinkingCampaignStore from "AccountLinkingCampaignStore" /* 19834 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
 import size from "module_2" /* 2 */;
 
@@ -60,7 +60,7 @@ class AccountLinkingCampaignManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c5;
@@ -190,7 +190,7 @@ class AccountLinkingCampaignManager extends AutomaticLifecycleManager {
                           closure_131_0.pendingSession = null;
                         }
                         sessionGeneration = 3;
-                        return { value: "HermesInternal", done: "ulw" };
+                        return { value: "HermesInternal", done: null };
                       }
                     }
                   }
@@ -232,7 +232,7 @@ class AccountLinkingCampaignManager extends AutomaticLifecycleManager {
                       closure_131_0.pendingSession = null;
                     }
                     sessionGeneration = 3;
-                    return { value: "HermesInternal", done: "ulw" };
+                    return { value: "HermesInternal", done: null };
                   } else {
                     c5 = 3;
                     const obj3 = _self(pendingSession[10]);
@@ -248,7 +248,7 @@ class AccountLinkingCampaignManager extends AutomaticLifecycleManager {
                     closure_131_0.pendingSession = null;
                   }
                   sessionGeneration = 3;
-                  return { value: "HermesInternal", done: "ulw" };
+                  return { value: "HermesInternal", done: null };
                 }
               }
             } else if (4 === tmp4) {
@@ -282,7 +282,7 @@ class AccountLinkingCampaignManager extends AutomaticLifecycleManager {
                   closure_131_0.pendingSession = null;
                 }
                 sessionGeneration = 3;
-                return { value: "HermesInternal", done: "ulw" };
+                return { value: "HermesInternal", done: null };
               }
             } else if (6 === tmp4) {
               c5 = 3;
@@ -316,7 +316,7 @@ class AccountLinkingCampaignManager extends AutomaticLifecycleManager {
                   closure_131_0.pendingSession = null;
                 }
                 sessionGeneration = 3;
-                return { value: "HermesInternal", done: "ulw" };
+                return { value: "HermesInternal", done: null };
               }
             }
             c5 = 0;
@@ -326,7 +326,7 @@ class AccountLinkingCampaignManager extends AutomaticLifecycleManager {
             }
           }
           sessionGeneration = 3;
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp114) {
           appInstalled = tmp114;
           if (0 === c5) {

@@ -23,7 +23,7 @@ let _encode;
 let _encodeAsync;
 let _parse;
 let _parseAsync;
-const f104535 = (item) => {
+const f104543 = (item) => {
   const items = [item, item];
   return items;
 };
@@ -237,7 +237,7 @@ function _enum(arr, zodLazy) {
   let fromEntriesResult = arr;
   if (Array.isArray(arr)) {
     const _Object = Object;
-    fromEntriesResult = Object.fromEntries(arr.map(f104535));
+    fromEntriesResult = Object.fromEntries(arr.map(f104543));
   }
   const ZodEnum = exports.ZodEnum;
   const obj = { type: "enum", entries: fromEntriesResult };
@@ -588,7 +588,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -643,7 +643,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -682,7 +682,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -1186,7 +1186,7 @@ const obj7 = {
     let fromEntriesResult = keys;
     if (Array.isArray(keys)) {
       const _Object = Object;
-      fromEntriesResult = Object.fromEntries(keys.map(f104535));
+      fromEntriesResult = Object.fromEntries(keys.map(f104543));
     }
     const ZodEnum = exports.ZodEnum;
     const obj = { type: "enum", entries: fromEntriesResult };
@@ -1663,7 +1663,7 @@ export function keyof(_zod) {
   let fromEntriesResult = keys;
   if (Array.isArray(keys)) {
     const _Object = Object;
-    fromEntriesResult = Object.fromEntries(keys.map(f104535));
+    fromEntriesResult = Object.fromEntries(keys.map(f104543));
   }
   const ZodEnum = exports.ZodEnum;
   const obj = { type: "enum", entries: fromEntriesResult };

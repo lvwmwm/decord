@@ -73,8 +73,8 @@ let closure_42;
 let hasOwnProperty;
 let map1;
 let metroRequire;
-const f93144 = (author) => author.author.id;
-const f93145 = (author) => user.getUser(author.author.id);
+const f93152 = (author) => author.author.id;
+const f93153 = (author) => user.getUser(author.author.id);
 function NOOP() {
   return true;
 }
@@ -740,8 +740,8 @@ let obj = {
                   const messages = MessageStore.getMessages(id);
                   const tmp16Result = tmp16(messages.toArray());
                   const reversed = tmp16Result.reverse();
-                  const uniqByResult = reversed.uniqBy(f93144);
-                  const mapped1 = uniqByResult.map(f93145);
+                  const uniqByResult = reversed.uniqBy(f93152);
+                  const mapped1 = uniqByResult.map(f93153);
                   const found = mapped1.filter((isNonUserBot) => {
                     if (null == isNonUserBot) {
                       return false;
@@ -852,8 +852,8 @@ let obj = {
               const messages = MessageStore.getMessages(channelId);
               const tmp14Result = tmp14(messages.toArray());
               const reversed = tmp14Result.reverse();
-              const uniqByResult = reversed.uniqBy(f93144);
-              const mapped = uniqByResult.map(f93145);
+              const uniqByResult = reversed.uniqBy(f93152);
+              const mapped = uniqByResult.map(f93153);
               const found = mapped.filter((isNonUserBot) => {
                 if (null == isNonUserBot) {
                   return false;
@@ -1591,8 +1591,8 @@ let obj = {
         const messages = MessageStore.getMessages(channelId1);
         const tmp6Result = tmp6(messages.toArray());
         const reversed = tmp6Result.reverse();
-        const uniqByResult = reversed.uniqBy(f93144);
-        const mapped = uniqByResult.map(f93145);
+        const uniqByResult = reversed.uniqBy(f93152);
+        const mapped = uniqByResult.map(f93153);
         const found = mapped.filter((isNonUserBot) => {
           if (null == isNonUserBot) {
             return false;
@@ -2053,7 +2053,7 @@ let obj = {
         return hasItem;
       },
       type,
-      allowEmptyQueries: "(function pnpm_useGestureHandlerTs2(event){let[gestureSource,source,state,onChange]=this.__closure;if(gestureSource.value!==source){return;}state.value=event.state;onChange(source,event);})"
+      allowEmptyQueries: null
     };
     queryChannelsResult = this.queryChannels(obj2);
     return obj;

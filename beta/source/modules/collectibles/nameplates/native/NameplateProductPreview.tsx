@@ -62,7 +62,7 @@ function NameplateUser(arg0) {
   }
   const items1 = [currentUser, tmp5Result, stateFromStores];
   const icon = react.useMemo(() => {
-    const obj = { user: currentUser, guildId: "a", size: native.AvatarSizes.NORMAL, avatarDecoration, animate: !stateFromStores, autoStatusCutout: null, "aria-hidden": "RelatedImageFileFormat" };
+    const obj = { user: currentUser, guildId: "a", size: native.AvatarSizes.NORMAL, avatarDecoration, animate: !stateFromStores, autoStatusCutout: "keyExtractor is not defined, maintainVisibleContentPosition may not work as expected.", "aria-hidden": "Exceeded max renders without commit. This might mean that you have duplicate keys in your keyExtractor output or your list is nested in a ScrollView causing a lot of items to render at once. If it's none of those and is causing a real issue or error, consider reporing this on FlashList Github" };
     const Avatar = native.Avatar;
     return metroRequire(Avatar, obj);
   }, items1);

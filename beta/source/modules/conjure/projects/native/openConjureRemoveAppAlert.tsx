@@ -50,7 +50,7 @@ function ConjureRemoveFromServerAlert(target) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -92,7 +92,7 @@ function ConjureRemoveFromServerAlert(target) {
               obj = tmp4(c2[8]);
               obj.open("CONJURE_APP_REMOVED", obj6);
               c3 = 3;
-              return { value: "HermesInternal", done: "ulw" };
+              return { value: "HermesInternal", done: null };
             }
           }
         } catch (tmp20) {
@@ -185,7 +185,7 @@ function ConjureDeleteProjectInServerAlert(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -235,7 +235,7 @@ function ConjureDeleteProjectInServerAlert(arg0) {
               throw error;
             } else {
               c3 = 3;
-              return { value: "HermesInternal", done: "ulw" };
+              return { value: "HermesInternal", done: null };
             }
           }
         } catch (tmp20) {

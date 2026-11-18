@@ -1,21 +1,21 @@
-// Module ID: 19694
-// Function ID: 19695
+// Module ID: 19695
+// Function ID: 19696
 // Name: ChannelSettingsPermissionsOverrides
-// Dependencies: [32, 5, 19, 17, 19695, 5173, 5155, 5212, 5177, 5238, 5248, 1388, 1072, 21, 5306, 575, 504, 19697, 1502, 1630, 7261, 12560, 19696, 19700, 5243, 8133, 1084, 2119, 5362, 6258, 1113, 6002, 2188, 5163, 19701, 9051, 5919, 5944, 10929, 7443, 8159, 7746, 19705, 1380, 2]
+// Dependencies: [32, 5, 19, 17, 19696, 5173, 5155, 5212, 5177, 5238, 5248, 1388, 1072, 21, 5306, 575, 504, 19698, 1502, 1630, 7261, 12560, 19697, 19701, 5243, 8133, 1084, 2119, 5362, 6258, 1113, 6002, 2188, 5163, 19702, 9051, 5919, 5944, 10929, 7443, 8159, 7746, 19706, 1380, 2]
 // Exports: default
 
-// Module 19694 (ChannelSettingsPermissionsOverrides)
+// Module 19695 (ChannelSettingsPermissionsOverrides)
 import nativeDefault from "native" /* 575 */;
 import StageChannelPermissions from "StageChannelPermissions" /* 5163 */;
 import GuildRecord from "GuildRecord" /* 5173 */;
 import TableRowGroup2 from "TableRowGroup" /* 7746 */;
 import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 12560 */;
-import PermissionSpecUtilsDefault from "PermissionSpecUtils" /* 19701 */;
+import PermissionSpecUtilsDefault from "PermissionSpecUtils" /* 19702 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelPermissionOverwriteEditStore from "ChannelPermissionOverwriteEditStore" /* 19695 */;
+import ChannelPermissionOverwriteEditStore from "ChannelPermissionOverwriteEditStore" /* 19696 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import GuildRoleStore from "GuildRoleStore" /* 5212 */;
 import GuildStore from "GuildStore" /* 5177 */;
@@ -167,7 +167,7 @@ export default function ChannelSettingsPermissionsOverrides(channelId) {
                       const obj2 = { value, done: true };
                       return obj2;
                     } else {
-                      return { value: "HermesInternal", done: "ulw" };
+                      return { value: "HermesInternal", done: null };
                     }
                   } else {
                     try {

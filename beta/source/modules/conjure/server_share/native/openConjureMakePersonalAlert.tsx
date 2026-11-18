@@ -43,7 +43,7 @@ function ConjureMakePersonalAlert(project) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -84,7 +84,7 @@ function ConjureMakePersonalAlert(project) {
               obj = tmp4(c2[4]);
               obj.open("CONJURE_MADE_PERSONAL", obj6);
               c3 = 3;
-              return { value: "HermesInternal", done: "ulw" };
+              return { value: "HermesInternal", done: null };
             }
           }
         } catch (tmp15) {

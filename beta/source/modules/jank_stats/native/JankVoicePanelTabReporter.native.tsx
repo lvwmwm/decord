@@ -1,10 +1,10 @@
-// Module ID: 20107
-// Function ID: 20108
+// Module ID: 20110
+// Function ID: 20111
 // Name: JankVoicePanelTabReporter
 // Dependencies: [19, 11985, 11983, 18731, 1655, 1708, 2]
 // Exports: reportJankVoicePanelTabRequest
 
-// Module 20107 (JankVoicePanelTabReporter)
+// Module 20110 (JankVoicePanelTabReporter)
 import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11983 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11985 */;
 import getJankSurfaceName from "getJankSurfaceName" /* 18731 */;

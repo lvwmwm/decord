@@ -41,7 +41,7 @@ let obj = function _fetchEffectiveNotifSettings() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -113,7 +113,7 @@ let obj = function _fetchEffectiveNotifSettings() {
                 c3 = undefined;
               }
               c5 = 3;
-              return { value: "HermesInternal", done: "ulw" };
+              return { value: "HermesInternal", done: null };
             }
           } else if (arg0 === 1) {
             c5 = 3;
@@ -159,14 +159,14 @@ let obj = function _fetchEffectiveNotifSettings() {
                 c3 = undefined;
               }
               c5 = 3;
-              return { value: "HermesInternal", done: "ulw" };
+              return { value: "HermesInternal", done: null };
             } else {
               c3 = 0;
               if (c3 === requestId) {
                 c3 = undefined;
               }
               c5 = 3;
-              return { value: "HermesInternal", done: "ulw" };
+              return { value: "HermesInternal", done: null };
             }
           }
           c3 = 0;
@@ -175,7 +175,7 @@ let obj = function _fetchEffectiveNotifSettings() {
           }
         }
         c5 = 3;
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp82) {
         closure_2 = tmp82;
         if (0 === c3) {

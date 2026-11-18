@@ -1,9 +1,9 @@
-// Module ID: 20188
-// Function ID: 20189
+// Module ID: 20191
+// Function ID: 20192
 // Name: BlockedDomainManager
 // Dependencies: [7882, 1255, 1366, 2]
 
-// Module 20188 (BlockedDomainManager)
+// Module 20191 (BlockedDomainManager)
 import GlobalUtils from "GlobalUtils" /* 1255 */;
 import shim from "shim" /* 1366 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;

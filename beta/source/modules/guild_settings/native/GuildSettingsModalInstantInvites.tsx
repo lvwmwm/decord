@@ -1,10 +1,10 @@
-// Module ID: 20597
-// Function ID: 20598
+// Module ID: 20600
+// Function ID: 20601
 // Name: GuildSettingsModalInstantInvites
-// Dependencies: [32, 19, 17, 11013, 7664, 5155, 5177, 8405, 1072, 21, 5306, 575, 1113, 2188, 7733, 5919, 7455, 16034, 14781, 504, 12, 9257, 9255, 5542, 14129, 2121, 6005, 10916, 7588, 1187, 20598, 7888, 5902, 2]
+// Dependencies: [32, 19, 17, 11013, 7664, 5155, 5177, 8405, 1072, 21, 5306, 575, 1113, 2188, 7733, 5919, 7455, 16034, 14781, 504, 12, 9257, 9255, 5542, 14129, 2121, 6005, 10916, 7588, 1187, 20601, 7888, 5902, 2]
 // Exports: default
 
-// Module 20597 (GuildSettingsModalInstantInvites)
+// Module 20600 (GuildSettingsModalInstantInvites)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;

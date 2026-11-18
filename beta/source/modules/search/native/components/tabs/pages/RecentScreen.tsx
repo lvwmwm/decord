@@ -1,9 +1,9 @@
-// Module ID: 19468
-// Function ID: 19469
+// Module ID: 19469
+// Function ID: 19470
 // Name: RecentScreen
-// Dependencies: [32, 5, 19, 7037, 14767, 19469, 14754, 9066, 14756, 1072, 21, 7428, 14765, 1113, 5919, 11782, 19470, 8134, 14761, 14747, 504, 14743, 19462, 1503, 19473, 14740, 17356, 8190, 6823, 19474, 19475, 19478, 2]
+// Dependencies: [32, 5, 19, 7037, 14767, 19470, 14754, 9066, 14756, 1072, 21, 7428, 14765, 1113, 5919, 11782, 19471, 8134, 14761, 14747, 504, 14743, 19463, 1503, 19474, 14740, 17356, 8190, 6823, 19475, 19476, 19479, 2]
 
-// Module 19468 (RecentScreen)
+// Module 19469 (RecentScreen)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
@@ -22,7 +22,7 @@ import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import SearchMessageStore from "SearchMessageStore" /* 7037 */;
 import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 14767 */;
-import SearchHistoryStore from "SearchHistoryStore" /* 19469 */;
+import SearchHistoryStore from "SearchHistoryStore" /* 19470 */;
 import SearchQueryStore from "SearchQueryStore" /* 14754 */;
 import SearchConstants from "SearchConstants" /* 9066 */;
 import size from "module_2" /* 2 */;
@@ -66,7 +66,7 @@ let closure_19 = react.memo(function RecentScreen(searchContext) {
   let _undefined;
   let c1;
   let tmp4;
-  const f137853 = () => memo.getSearchHistory(searchContextId);
+  const f137880 = () => memo.getSearchHistory(searchContextId);
   searchContext = searchContext.searchContext;
   const onJumpToMedia = searchContext.onJumpToMedia;
   const suggestedData = searchContext.suggestedData;
@@ -89,8 +89,8 @@ let closure_19 = react.memo(function RecentScreen(searchContext) {
   let obj2 = searchContext(suggestedData[19]);
   const searchContextId = obj2.getSearchContextId(searchContext);
   c1 = undefined;
-  [tmp4, c1] = messages(isInitialSearchQuery.useState(f137853), 2);
-  const tmp3 = messages(isInitialSearchQuery.useState(f137853), 2);
+  [tmp4, c1] = messages(isInitialSearchQuery.useState(f137880), 2);
+  const tmp3 = messages(isInitialSearchQuery.useState(f137880), 2);
   const obj3 = searchContext(suggestedData[23]);
   let items1 = [searchContextId];
   const focusEffect = obj3.useFocusEffect(isInitialSearchQuery.useCallback(() => {
@@ -243,7 +243,7 @@ let closure_20 = react.memo(function RecentUserScreen(searchContext) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -276,7 +276,7 @@ let closure_20 = react.memo(function RecentUserScreen(searchContext) {
             const result = obj.trackSuggestedSearchClicked(obj7);
             tmp4(searchContext, channelId);
             c4 = 3;
-            return { value: "HermesInternal", done: "ulw" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp19) {
           c4 = 3;

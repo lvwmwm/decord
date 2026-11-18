@@ -52,7 +52,7 @@ export default function useGuildPowerupOnActivate(arg0, arg1) {
           if (closure_4 >= PERK.cost) {
             onToggle(true);
           } else {
-            const diff = tmp15.cost - tmp16;
+            const diff = tmp16.cost - tmp17;
             const obj5 = diff(onToggle[9]);
             let availableGuildBoostSlots = obj5.getAvailableGuildBoostSlots(analyticsLocations.boostSlots);
             if (PERK.type === handleMobileWebRedirectCheckout.LEVEL) {
@@ -60,7 +60,7 @@ export default function useGuildPowerupOnActivate(arg0, arg1) {
             } else {
               PERK = shouldUseMobileWebRedirectCheckout.PERK;
             }
-            let obj = PERK(tmp19[10]);
+            let obj = PERK(tmp20[10]);
             obj.hideActionSheet(diff(onToggle[11]).GUILD_POWERUPS_BOTTOM_SHEET_KEY);
             if (availableGuildBoostSlots.length > 0) {
               let obj2 = {
@@ -78,8 +78,8 @@ export default function useGuildPowerupOnActivate(arg0, arg1) {
               diff(onToggle[12]);
               openTransferModal(obj2);
             } else {
-              const tmp22 = shouldUseMobileWebRedirectCheckout;
-              if (tmp22) {
+              const tmp6 = shouldUseMobileWebRedirectCheckout;
+              if (tmp6) {
                 handleMobileWebRedirectCheckout(analyticsLocations, tmp.id);
               } else {
                 const obj3 = {
@@ -116,8 +116,8 @@ export default function useGuildPowerupOnActivate(arg0, arg1) {
                               return obj.popWithKey(diff(onToggle[15]).PREMIUM_KEY);
                             }
                 };
-                const tmp18Result2 = diff(onToggle[13]);
-                const result = tmp18Result2.launchGuildBoostFlowOrAlert(obj3);
+                const tmp19Result2 = diff(onToggle[13]);
+                const result = tmp19Result2.launchGuildBoostFlowOrAlert(obj3);
               }
             }
           }

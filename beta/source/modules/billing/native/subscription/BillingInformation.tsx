@@ -69,7 +69,7 @@ export function useBillingInformationNative(subscription, subscriptionPeriodStar
                   const obj3 = { value, done: true };
                   return obj3;
                 } else {
-                  return { value: "HermesInternal", done: "ulw" };
+                  return { value: "HermesInternal", done: null };
                 }
               } else {
                 try {
@@ -98,7 +98,7 @@ export function useBillingInformationNative(subscription, subscriptionPeriodStar
                     return obj;
                   } else {
                     c0 = 3;
-                    return { value: "HermesInternal", done: "ulw" };
+                    return { value: "HermesInternal", done: null };
                   }
                 } catch (tmp6) {
                   c0 = 3;

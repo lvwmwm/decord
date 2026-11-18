@@ -1,10 +1,10 @@
-// Module ID: 19253
-// Function ID: 19254
+// Module ID: 19254
+// Function ID: 19255
 // Name: ForYouItemActionButtons
 // Dependencies: [5, 19, 17, 5155, 1388, 1072, 21, 5306, 1108, 1655, 5538, 6327, 5926, 1113, 5919, 563, 9203, 18765, 6038, 16285, 10840, 7033, 8134, 8137, 6005, 12641, 1256, 2]
 // Exports: ForYouItemActionButtons, useItemActionButtonPropsV2
 
-// Module 19253 (ForYouItemActionButtons)
+// Module 19254 (ForYouItemActionButtons)
 import react_native from "react-native" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import _mod1655 from "module_1655" /* 1655 */;
@@ -550,7 +550,7 @@ export function useItemActionButtonPropsV2(other_user, callback, navigation, for
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -585,7 +585,7 @@ export function useItemActionButtonPropsV2(other_user, callback, navigation, for
         closure_128_1();
         focusChatInput(closure_128_0.message_channel_id);
         navigation = 3;
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp17) {
         navigation = 3;
         throw tmp17;

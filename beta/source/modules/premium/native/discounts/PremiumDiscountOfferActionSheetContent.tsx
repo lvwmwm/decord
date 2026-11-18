@@ -1,9 +1,9 @@
-// Module ID: 19810
-// Function ID: 19811
+// Module ID: 19811
+// Function ID: 19812
 // Name: PremiumDiscountOfferActionSheetContent
 // Dependencies: [19, 17, 1390, 21, 5306, 575, 10553, 1113, 15959, 8072, 8847, 2174, 18331, 5919, 18335, 5926, 9436, 2]
 
-// Module 19810 (PremiumDiscountOfferActionSheetContent)
+// Module 19811 (PremiumDiscountOfferActionSheetContent)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1113 */;

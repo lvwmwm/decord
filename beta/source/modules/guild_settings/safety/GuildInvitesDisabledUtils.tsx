@@ -15,11 +15,11 @@ let _require, guildIncident;
 
 let closure_4;
 let hasOwnProperty;
-const f110091 = () => {
+const f110099 = () => {
   const canResult = null != guild && PermissionStore.can(hasOwnProperty.MANAGE_GUILD, tmp);
   return canResult;
 };
-const f110092 = () => {
+const f110100 = () => {
   guildIncident = null;
   if (null != closure_0) {
     guildIncident = guildIncident.getGuildIncident(tmp.id);
@@ -34,13 +34,13 @@ export function useInvitesDisabledPermission(guild) {
   const items = [PermissionStore];
   const items1 = [guild];
   const obj = require("get initialized");
-  return obj.useStateFromStores(items, f110091, items1);
+  return obj.useStateFromStores(items, f110099, items1);
 }
 export function useInvitesDisabled(features) {
   _require = features;
   const items = [GuildIncidentsStore];
   const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, f110092);
+  const stateFromStores = obj.useStateFromStores(items, f110100);
   let hasItem;
   if (features != null) {
     features = features.features;
@@ -72,11 +72,11 @@ export function useShouldShowInvitesDisabledNotif(guild) {
   const items = [PermissionStore];
   const items1 = [guild];
   const obj = require("get initialized");
-  let stateFromStores = obj.useStateFromStores(items, f110091, items1);
+  let stateFromStores = obj.useStateFromStores(items, f110099, items1);
   _require = guild;
   const items2 = [GuildIncidentsStore];
   const obj2 = require("get initialized");
-  const stateFromStores1 = obj2.useStateFromStores(items2, f110092);
+  const stateFromStores1 = obj2.useStateFromStores(items2, f110100);
   let hasItem;
   if (guild != null) {
     const features = guild.features;

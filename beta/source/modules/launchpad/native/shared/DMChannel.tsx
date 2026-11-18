@@ -1,9 +1,9 @@
-// Module ID: 19885
-// Function ID: 19886
+// Module ID: 19886
+// Function ID: 19887
 // Name: shared/DMChannel
-// Dependencies: [19, 6949, 21, 6053, 10894, 5306, 575, 19490, 19119, 17940, 11, 5934, 19877, 7428, 19489, 19878, 11045, 5984, 5944, 2]
+// Dependencies: [19, 6949, 21, 6053, 10894, 5306, 575, 19491, 19119, 17940, 11, 5934, 19878, 7428, 19490, 19879, 11045, 5984, 5944, 2]
 
-// Module 19885 (shared/DMChannel)
+// Module 19886 (shared/DMChannel)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import transitionToChannel from "transitionToChannel" /* 6053 */;
@@ -36,7 +36,7 @@ const memoResult = react.memo(function DMChannel(navigationReplace) {
     flag = false;
   }
   const tmp = closure_6();
-  const tmp4 = flag(19490)();
+  const tmp4 = flag(19491)();
   let obj = channel(19119);
   const baseChannelUnreadBadgeState = obj.useBaseChannelUnreadBadgeState(channel, muted);
   ({ unread, mentionCount } = baseChannelUnreadBadgeState);
@@ -56,7 +56,7 @@ const memoResult = react.memo(function DMChannel(navigationReplace) {
   const tmp5Result = channel(5934);
   const fontScale = tmp5Result.useFontScale();
   const items = [tmp.pressable, { borderRadius: tmp4.container.borderRadius }];
-  const tmp2Result3 = flag(19877);
+  const tmp2Result3 = flag(19878);
   const obj3 = {
     onPress: react.useCallback(() => {
       const obj = transitionToChannel;
@@ -74,7 +74,7 @@ const memoResult = react.memo(function DMChannel(navigationReplace) {
   const merged = Object.assign(obj3);
   const obj4 = { channel, unread, resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES, muted, mentionCount, unreadBadge: null, subtitle: tmp11Result, latestMessageTimestamp: extractTimestampResult, channelName: flag(5944)(channel), fontScale };
   tmp11Result = null != tmp7;
-  const tmp2Result4 = flag(19489);
+  const tmp2Result4 = flag(19490);
   if (tmp11Result) {
     const obj6 = { channel, message: tmp7, color: str, muted, layout: channel(5984).ChannelListLayoutTypes.COMPACT };
     const ChannelRowPreview = tmp5(11045).ChannelRowPreview;

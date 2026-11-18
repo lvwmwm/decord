@@ -1,9 +1,9 @@
-// Module ID: 19479
-// Function ID: 19480
+// Module ID: 19480
+// Function ID: 19481
 // Name: DMRow
-// Dependencies: [5, 32, 19, 17, 5307, 6058, 5248, 1072, 21, 5306, 575, 5919, 5362, 10845, 504, 10870, 1187, 8175, 15375, 19464, 2]
+// Dependencies: [5, 32, 19, 17, 5307, 6058, 5248, 1072, 21, 5306, 575, 5919, 5362, 10845, 504, 10870, 1187, 8175, 15375, 19465, 2]
 
-// Module 19479 (DMRow)
+// Module 19480 (DMRow)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import UserUtils from "UserUtils" /* 5362 */;
@@ -117,7 +117,7 @@ const memoResult = react.memo(function DMRow(user) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -157,7 +157,7 @@ const memoResult = react.memo(function DMRow(user) {
           c3 = 0;
           closure_128_8(false);
           c4 = 3;
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp20) {
         closure_2 = tmp20;

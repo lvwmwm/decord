@@ -1,10 +1,10 @@
-// Module ID: 19470
-// Function ID: 19471
+// Module ID: 19471
+// Function ID: 19472
 // Name: useOnPressSearchItem
-// Dependencies: [5, 19, 8748, 5155, 14754, 9066, 19471, 9065, 1072, 5162, 14740, 14765, 1381, 6004, 1113, 7653, 6002, 1502, 14850, 19472, 14743, 9121, 9139, 1108, 6848, 8627, 8134, 6053, 6890, 2121, 6828, 15936, 6345, 7683, 7684, 1099, 14761, 2]
+// Dependencies: [5, 19, 8748, 5155, 14754, 9066, 19472, 9065, 1072, 5162, 14740, 14765, 1381, 6004, 1113, 7653, 6002, 1502, 14850, 19473, 14743, 9121, 9139, 1108, 6848, 8627, 8134, 6053, 6890, 2121, 6828, 15936, 6345, 7683, 7684, 1099, 14761, 2]
 // Exports: useOnPressConversationCitation, useOnPressDMItem, useOnPressGroupDMItem, useOnPressGuildTextChannel, useOnPressGuildVoiceChannel, useOnPressMediaItem, useOnPressMessageItem, useOnPressSearchHistoryText, useOnPressSearchLink
 
-// Module 19470 (useOnPressSearchItem)
+// Module 19471 (useOnPressSearchItem)
 import intl2 from "intl" /* 1113 */;
 import URLUtilsDefault from "URLUtils" /* 1381 */;
 import ChannelConstants from "ChannelConstants" /* 5162 */;
@@ -15,7 +15,7 @@ import TrackingConstants from "TrackingConstants" /* 9065 */;
 import SearchPlatformUtils from "SearchPlatformUtils" /* 14740 */;
 import TrackingDefault from "Tracking" /* 14761 */;
 import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 14765 */;
-import SearchNavigatorConstants from "SearchNavigatorConstants" /* 19471 */;
+import SearchNavigatorConstants from "SearchNavigatorConstants" /* 19472 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ConversationPreviewStore from "ConversationPreviewStore" /* 8748 */;
@@ -66,7 +66,7 @@ let obj = function _handleVoiceOrStageChannelConnectPress() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -96,7 +96,7 @@ let obj = function _handleVoiceOrStageChannelConnectPress() {
         } else {
           value.openGuildVoiceModal(closure_0, "Channel List");
           c3 = 3;
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp11) {
         c3 = 3;
@@ -234,7 +234,7 @@ export function useOnPressConversationCitation(searchContext) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -301,7 +301,7 @@ export function useOnPressConversationCitation(searchContext) {
               }
             });
             c4 = 3;
-            return { value: "HermesInternal", done: "ulw" };
+            return { value: "HermesInternal", done: null };
           }
         }
       } catch (tmp9) {
@@ -538,7 +538,7 @@ export function useOnPressGuildVoiceChannel(searchContext) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -583,7 +583,7 @@ export function useOnPressGuildVoiceChannel(searchContext) {
               }
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "ulw" };
+            return { value: "HermesInternal", done: null };
           }
         } else if (arg0 === 1) {
           c3 = 3;

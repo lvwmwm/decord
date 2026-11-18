@@ -1,7 +1,7 @@
 // Module ID: 19182
 // Function ID: 19183
 // Name: VoicePanelDock
-// Dependencies: [19, 17, 5155, 11985, 12009, 12010, 21, 5306, 575, 19183, 1655, 9148, 1113, 9150, 5544, 11984, 504, 1644, 1380, 13809, 1630, 12017, 1708, 6171, 11989, 5588, 5538, 19181, 19203, 19208, 2]
+// Dependencies: [19, 17, 5155, 11985, 12009, 12010, 21, 5306, 575, 19183, 1655, 9148, 1113, 9150, 5544, 11984, 504, 1644, 1380, 13809, 1630, 12017, 1708, 6171, 11989, 5588, 5538, 19181, 19203, 19209, 2]
 
 // Module 19182 (VoicePanelDock)
 import nativeDefault from "native" /* 575 */;
@@ -142,13 +142,14 @@ let closure_32 = { code: "(function VoicePanelDockTsx9(event){let[DOCK_PULL_SNAP
 let closure_33 = { code: "(function VoicePanelDockTsx10(event){let[contextMenuOpened,FLING_MIN_VELOCITY,FLING_MIN_DISTANCE,pullSnapped,scheduleOnRN,triggerHapticFeedback,HapticFeedbackTypes,committedMode,VoicePanelModes,handleExpand]=this.__closure;if(contextMenuOpened.get()){return;}const distance=Math.max(-event.translationY,0);const flungOpen=event.velocityY<-FLING_MIN_VELOCITY&&distance>FLING_MIN_DISTANCE;const flungClosed=event.velocityY>FLING_MIN_VELOCITY;const opens=flungOpen||!flungClosed&&pullSnapped.get();if(opens){if(!pullSnapped.get()){scheduleOnRN(triggerHapticFeedback,HapticFeedbackTypes.IMPACT_MEDIUM);}committedMode.set(VoicePanelModes.PANEL);scheduleOnRN(handleExpand);}else if(pullSnapped.get()){scheduleOnRN(triggerHapticFeedback,HapticFeedbackTypes.SOFT);}})" };
 let closure_34 = { code: "(function VoicePanelDockTsx11(){let[dockTouched,pullActive,pullSnapped,pullSnapOffset,updateSharedValueIfChanged,wrapperOffset]=this.__closure;dockTouched.set(false);pullActive.set(false);pullSnapped.set(false);pullSnapOffset.set(0);updateSharedValueIfChanged(wrapperOffset,{gestureActive:false,x:0,y:0});})" };
 let closure_35 = { code: "(function VoicePanelDockTsx12(){let[dockPressProgress]=this.__closure;return{opacity:dockPressProgress.get()};})" };
-let closure_36 = { code: "(function VoicePanelDockTsx13(){let[dockMinimizeProgress,wrapperDimensions,isDockConnected,getDockInset,dockPressProgress,safeArea,dockRestWidth,isInSlot,dockHeight,getDockRowOpacity,isDockExpanding,dockContentSwap,isDockRowTouchable]=this.__closure;const progress=1-dockMinimizeProgress.get();const{drawerWidth:drawerWidth,drawerHeight:drawerHeight}=wrapperDimensions.get();if(!isDockConnected.get()||drawerHeight<=0){return{opacity:0,pointerEvents:'none'};}const inset=getDockInset(dockPressProgress.get());const{left:left,right:right}=safeArea.get();const restWidth=dockRestWidth.get();const isBesideChat=restWidth>0&&restWidth<drawerWidth;return{width:isInSlot?'100%':isBesideChat?restWidth:drawerWidth,height:dockHeight.get(),opacity:getDockRowOpacity(progress,isDockExpanding.get(),dockContentSwap.get()),pointerEvents:isDockRowTouchable(progress)?'auto':'none',paddingLeft:left+inset,paddingRight:(isBesideChat?0:right)+inset};})" };
+let closure_36 = { code: "(function VoicePanelDockTsx13(){let[dockMinimizeProgress,wrapperDimensions,isDockConnected,getDockInset,dockPressProgress,safeArea,dockRestWidth,isInSlot,dockHeight,getDockRowOpacity,isDockExpanding,dockContentSwap,isDockRowTouchable,dockRestLeft]=this.__closure;const progress=1-dockMinimizeProgress.get();const{drawerWidth:drawerWidth,drawerHeight:drawerHeight}=wrapperDimensions.get();if(!isDockConnected.get()||drawerHeight<=0){return{opacity:0,pointerEvents:'none'};}const inset=getDockInset(dockPressProgress.get());const{left:left,right:right}=safeArea.get();const restWidth=dockRestWidth.get();const isBesideChat=restWidth>0&&restWidth<drawerWidth;return{width:isInSlot?'100%':isBesideChat?restWidth:drawerWidth,height:dockHeight.get(),opacity:getDockRowOpacity(progress,isDockExpanding.get(),dockContentSwap.get()),pointerEvents:isDockRowTouchable(progress)?'auto':'none',paddingLeft:(isBesideChat?dockRestLeft.get():left)+inset,paddingRight:(isBesideChat?0:right)+inset};})" };
 const memoResult = react.memo(function VoicePanelDock(isInSlot) {
   let View;
   let dockMinimizeProgress;
   let dockPressProgress;
   let dockPressed;
   let dockRef;
+  let dockRestLeft;
   let dockRestWidth;
   let handleDockLayout;
   let isDockConnected;
@@ -196,13 +197,14 @@ const memoResult = react.memo(function VoicePanelDock(isInSlot) {
   let tmp58;
   let tmp59;
   let tmp60;
-  let tmp66;
+  let tmp61;
   let tmp67;
   let tmp68;
   let tmp69;
   let tmp7;
   let tmp70;
   let tmp71;
+  let tmp72;
   let tmp8;
   let tmp9;
   let wrapperDimensions;
@@ -239,7 +241,7 @@ const memoResult = react.memo(function VoicePanelDock(isInSlot) {
   ({ dockMinimizeProgress, wrapperDimensions } = context);
   const wrapperOffset = context.wrapperOffset;
   let tmp5 = bottom;
-  ({ dockRestWidth, isDockConnected, isDockExpanding, safeArea, mode } = context);
+  ({ dockRestLeft, dockRestWidth, isDockConnected, isDockExpanding, safeArea, mode } = context);
   const tmp6 = bottom(dockContentSwap[10]);
   let items = [closure_25, dockMinimizeProgress, ];
   const useAnimatedReaction = tmp6.useAnimatedReaction;
@@ -717,13 +719,14 @@ const memoResult = react.memo(function VoicePanelDock(isInSlot) {
   VoicePanelDockTsx12.__workletHash = 16776422543157;
   VoicePanelDockTsx12.__initData = tmp43;
   const animatedStyle = tmp5Result21.useAnimatedStyle(VoicePanelDockTsx12);
-  const items16 = [closure_36, dockMinimizeProgress, wrapperDimensions, isDockConnected, sharedValue1, dockPressProgress, safeArea, dockRestWidth, flag, dockHeight, , , , ];
+  const items16 = [closure_36, dockMinimizeProgress, wrapperDimensions, isDockConnected, sharedValue1, dockPressProgress, safeArea, dockRestWidth, flag, dockHeight, , , , , ];
   const useAnimatedStyle = tmp5(tmp3[10]).useAnimatedStyle;
   tmp5(tmp3[10]);
   items16[10] = tmp5(tmp3[21]).getDockRowOpacity;
   items16[11] = isDockExpanding;
   items16[12] = dockContentSwap;
   items16[13] = tmp5(tmp3[21]).isDockRowTouchable;
+  items16[14] = dockRestLeft;
   c0 = undefined;
   c1 = undefined;
   c2 = undefined;
@@ -737,39 +740,42 @@ const memoResult = react.memo(function VoicePanelDock(isInSlot) {
   let c10;
   let c11;
   let c12;
-  [tmp47, tmp48, tmp49, tmp50, tmp51, tmp52, tmp53, tmp54, tmp55, tmp56, tmp57, tmp58, tmp59, tmp60] = items16;
+  let c13;
+  [tmp47, tmp48, tmp49, tmp50, tmp51, tmp52, tmp53, tmp54, tmp55, tmp56, tmp57, tmp58, tmp59, tmp60, tmp61] = items16;
   class VoicePanelDockTsx13 {
     constructor() {
-      let left;
       let num2;
-      let right;
       let str2;
-      let value6;
+      let value4;
       const diff = 1 - _undefined.get();
       const value = _undefined2.get();
       let drawerWidth = value.drawerWidth;
       const drawerHeight = value.drawerHeight;
       if (_undefined3.get()) {
         if (drawerHeight > 0) {
-          const tmp13 = _undefined4(_undefined5.get());
-          const value4 = _undefined6.get();
-          ({ left, right } = value4);
-          const value5 = _undefined7.get();
+          const tmp14 = _undefined4(_undefined5.get());
+          const rect = _undefined6.get();
+          let left = rect.left;
+          const right = rect.right;
+          const value3 = _undefined7.get();
           let str = "100%";
           if (!c7) {
-            if (value5 > 0 && value5 < drawerWidth) {
-              drawerWidth = value5;
+            if (value3 > 0 && value3 < drawerWidth) {
+              drawerWidth = value3;
             }
             str = drawerWidth;
           }
-          size = { width: str, height: _undefined8.get(), opacity: _undefined9(diff, value6, _undefined11.get()), pointerEvents: str2, paddingLeft: left + tmp13, paddingRight: num2 + tmp13 };
-          value6 = _undefined10.get();
+          size = { width: str, height: _undefined8.get(), opacity: _undefined9(diff, value4, _undefined11.get()), pointerEvents: str2, paddingLeft: left + tmp14, paddingRight: num2 + tmp14 };
+          value4 = _undefined10.get();
           str2 = "none";
           if (_undefined12(diff)) {
             str2 = "auto";
           }
+          if (value3 > 0 && value3 < drawerWidth) {
+            left = _undefined13.get();
+          }
           num2 = 0;
-          if (!(value5 > 0 && value5 < drawerWidth)) {
+          if (!(value3 > 0 && value3 < drawerWidth)) {
             num2 = right;
           }
           return size;
@@ -778,13 +784,13 @@ const memoResult = react.memo(function VoicePanelDock(isInSlot) {
       return { opacity: 0, pointerEvents: "none" };
     }
   }
-  const items17 = [tmp48, tmp49, tmp50, tmp51, tmp52, tmp53, tmp54, tmp55, tmp56, tmp57, tmp58, tmp59, tmp60];
+  const items17 = [tmp48, tmp49, tmp50, tmp51, tmp52, tmp53, tmp54, tmp55, tmp56, tmp57, tmp58, tmp59, tmp60, tmp61];
   VoicePanelDockTsx13.__closure = items17;
-  VoicePanelDockTsx13.__workletHash = 5034155994972;
+  VoicePanelDockTsx13.__workletHash = 7399426325973;
   VoicePanelDockTsx13.__initData = tmp47;
   const animatedStyle1 = useAnimatedStyle(VoicePanelDockTsx13);
-  const tmp62 = tmp2(tmp3[27])();
-  ({ dockRef, handleDockLayout, measureGlowOffset } = tmp62);
+  const tmp63 = tmp2(tmp3[27])();
+  ({ dockRef, handleDockLayout, measureGlowOffset } = tmp63);
   const tmp5Result23 = tmp5(tmp3[10]);
   const animatedRef = tmp5Result23.useAnimatedRef();
   const tmp5Result24 = tmp5(tmp3[17]);
@@ -802,7 +808,7 @@ const memoResult = react.memo(function VoicePanelDock(isInSlot) {
   c2 = undefined;
   c3 = undefined;
   c4 = undefined;
-  [tmp66, tmp67, tmp68, tmp69, tmp70, tmp71] = items18;
+  [tmp67, tmp68, tmp69, tmp70, tmp71, tmp72] = items18;
   class VoicePanelDockTsx1 {
     constructor() {
       let str;
@@ -833,10 +839,10 @@ const memoResult = react.memo(function VoicePanelDock(isInSlot) {
       return { opacity: 1, pointerEvents: "box-none" };
     }
   }
-  const items19 = [tmp67, tmp68, tmp69, tmp70, tmp71];
+  const items19 = [tmp68, tmp69, tmp70, tmp71, tmp72];
   VoicePanelDockTsx1.__closure = items19;
   VoicePanelDockTsx1.__workletHash = 17112345546547;
-  VoicePanelDockTsx1.__initData = tmp66;
+  VoicePanelDockTsx1.__initData = tmp67;
   const animatedStyle2 = useAnimatedStyle2(VoicePanelDockTsx1);
   const obj2 = { gesture: memo, children: closure_20(View, obj3) };
   const GestureDetector = tmp5(tmp3[25]).GestureDetector;

@@ -521,7 +521,7 @@ class GuildBasicChannels {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c7;
@@ -576,7 +576,7 @@ class GuildBasicChannels {
                           } else if (arg0 === 2) {
                             return { value, done: true };
                           } else {
-                            return { value: "HermesInternal", done: "ulw" };
+                            return { value: "HermesInternal", done: null };
                           }
                         } else {
                           try {
@@ -630,7 +630,7 @@ class GuildBasicChannels {
                                 return { value, done: true };
                               } else {
                                 c6 = 3;
-                                return { value: "HermesInternal", done: "ulw" };
+                                return { value: "HermesInternal", done: null };
                               }
                             } else if (3 === c5) {
                               if (arg0 === 1) {
@@ -688,7 +688,7 @@ class GuildBasicChannels {
                 }
               }
               c10 = 3;
-              return { value: "HermesInternal", done: "ulw" };
+              return { value: "HermesInternal", done: null };
             }
           } else if (1 === tmp3) {
             c7 = 0;

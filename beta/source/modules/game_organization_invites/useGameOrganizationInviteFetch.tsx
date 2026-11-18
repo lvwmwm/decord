@@ -1,9 +1,9 @@
-// Module ID: 20310
-// Function ID: 20311
+// Module ID: 20313
+// Function ID: 20314
 // Name: useGameOrganizationInviteFetch
 // Dependencies: [5, 12368, 12369, 1072, 504, 1089, 12535, 12536, 2]
 
-// Module 20310 (useGameOrganizationInviteFetch)
+// Module 20313 (useGameOrganizationInviteFetch)
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 12369 */;
@@ -55,7 +55,7 @@ let closure_2 = _asyncToGenerator(async (arg0, value) => {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "HermesInternal", done: "ulw" };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -84,7 +84,7 @@ let closure_2 = _asyncToGenerator(async (arg0, value) => {
         return obj;
       } else {
         c1 = 3;
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp7) {
       c1 = 3;

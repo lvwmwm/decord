@@ -1,10 +1,10 @@
-// Module ID: 19845
-// Function ID: 19846
+// Module ID: 19846
+// Function ID: 19847
 // Name: UnionOrbsIcon
 // Dependencies: [19, 17, 21, 5306, 575, 6327, 6010, 18522, 2]
 // Exports: UnionOrbsIcon
 
-// Module 19845 (UnionOrbsIcon)
+// Module 19846 (UnionOrbsIcon)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import FastImageDefault from "FastImage" /* 6010 */;

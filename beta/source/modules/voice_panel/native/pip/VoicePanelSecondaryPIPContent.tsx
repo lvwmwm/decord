@@ -1,10 +1,10 @@
-// Module ID: 20068
-// Function ID: 20069
+// Module ID: 20070
+// Function ID: 20071
 // Name: VoicePanelSecondaryPIPContent
-// Dependencies: [19, 5154, 7019, 5155, 5949, 7020, 12706, 21, 5306, 11984, 11995, 504, 5227, 1655, 10576, 5970, 19931, 13355, 13359, 12848, 2]
+// Dependencies: [19, 5154, 7019, 5155, 5949, 7020, 12706, 21, 5306, 11984, 11995, 504, 5227, 1655, 10576, 5970, 19932, 13355, 13359, 12848, 2]
 // Exports: default
 
-// Module 20068 (VoicePanelSecondaryPIPContent)
+// Module 20070 (VoicePanelSecondaryPIPContent)
 import Fragment from "Fragment" /* 21 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5949 */;
 import roundToNearestPixelDefault from "roundToNearestPixel" /* 10576 */;
@@ -26,7 +26,7 @@ const _modDef1655 = tmp(1655);
 const isVoiceEmbeddedActivityDefault = tmp(5970);
 const EmbeddedActivityViewDefault = tmp(12848);
 const FrameRenderTargetDefault = tmp(13355);
-const getActivityContainerPIPStylesSpecDefault = tmp(19931);
+const getActivityContainerPIPStylesSpecDefault = tmp(19932);
 const ActivityPanelModes = ActivityPanelConstants.ActivityPanelModes;
 ({ asLaunched: metroImportAll, FrameLayoutModes: c9, getPipOrientationLockStateForFrame: c10 } = FramesConstants);
 const ActivityLayoutMode = Constants.ActivityLayoutMode;

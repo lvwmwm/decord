@@ -850,7 +850,7 @@ export default function BadgeDetailsSheet(badgeId) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "ulw" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -881,7 +881,7 @@ export default function BadgeDetailsSheet(badgeId) {
             } else {
               closure_1_6(true);
               c2 = 3;
-              return { value: "HermesInternal", done: "ulw" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp10) {
             c2 = 3;

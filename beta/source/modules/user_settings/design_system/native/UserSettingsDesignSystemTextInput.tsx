@@ -38,7 +38,7 @@ let metroRequire;
 let obj2;
 let tmp6;
 const AtIcon = tmp6(8087);
-const f117581 = () => {
+const f117589 = () => {
   let tmp = closure_0((arg0) => {
     let tmp = closure_1_8[(closure_1_8.indexOf(closure_1_8, arg0) + 1) % closure_1_8.length];
     if (tmp == null) {
@@ -204,7 +204,7 @@ function CountryCodeExample(label) {
   label = label.label;
   const tmp = _slicedToArray(react.useState("US +1"), 2);
   _require = tmp[1];
-  const items = [tmp[0], react.useCallback(f117581, [])];
+  const items = [tmp[0], react.useCallback(f117589, [])];
   const tmp2 = _slicedToArray(items, 2);
   const first = tmp2[0];
   const obj = { label, description: "Tap the country code to cycle through a few examples.", placeholder: "Phone number", keyboardType: "phone-pad", leadingText: first, leadingPressableProps: obj2 };
@@ -222,7 +222,7 @@ function PhoneOrEmailExample() {
   let tmp7;
   let tmp = _slicedToArray(react.useState("US +1"), 2);
   _require = tmp[1];
-  const items = [tmp[0], react.useCallback(f117581, [])];
+  const items = [tmp[0], react.useCallback(f117589, [])];
   [first, tmp4] = items;
   [tmp6, tmp7] = react.useState("");
   _slicedToArray(react.useState(""), 2);

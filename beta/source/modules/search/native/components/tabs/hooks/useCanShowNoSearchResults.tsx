@@ -1,10 +1,10 @@
-// Module ID: 19466
-// Function ID: 19467
+// Module ID: 19467
+// Function ID: 19468
 // Name: useCanShowNoSearchResults
 // Dependencies: [14754, 504, 2]
 // Exports: useCanShowNoSearchResults
 
-// Module 19466 (useCanShowNoSearchResults)
+// Module 19467 (useCanShowNoSearchResults)
 import SearchQueryStore from "SearchQueryStore" /* 14754 */;
 import size from "module_2" /* 2 */;
 

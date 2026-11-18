@@ -1,10 +1,10 @@
-// Module ID: 20728
-// Function ID: 20729
+// Module ID: 20731
+// Function ID: 20732
 // Name: FormBigRadioBox
 // Dependencies: [19, 17, 21, 5306, 575, 5368, 8451, 7748, 5919, 2]
 // Exports: default
 
-// Module 20728 (FormBigRadioBox)
+// Module 20731 (FormBigRadioBox)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import react_native2 from "react-native" /* 5368 */;

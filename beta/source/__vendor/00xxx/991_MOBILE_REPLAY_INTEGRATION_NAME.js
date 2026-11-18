@@ -110,7 +110,7 @@ export const mobileReplayIntegration = () => {
                     const obj = { value, done: true };
                     return obj;
                   } else {
-                    return { value: "HermesInternal", done: "ulw" };
+                    return { value: "HermesInternal", done: null };
                   }
                 } else {
                   let c3;

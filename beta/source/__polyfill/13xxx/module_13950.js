@@ -6,7 +6,7 @@
 // Module 13950
 import SelectorType from "SelectorType" /* 13948 */;
 
-const f108552 = (arr) => {
+const f108560 = (arr) => {
   const mapped = arr.map(stringifyToken);
   return mapped.join("");
 };
@@ -226,7 +226,7 @@ function stringifyToken(type, arg1, arg2) {
         joined = sum9;
       } else {
         const data2 = type.data;
-        let mapped = data2.map(f108552);
+        let mapped = data2.map(f108560);
         joined = mapped.join(", ");
       }
       str30 = concat32(joined, ")");
@@ -502,7 +502,7 @@ const fn = this && this.__spreadArray || ((arg0, fnResult, arg2) => {
   return concat(callResult1);
 });
 function stringify(arr) {
-  const mapped = arr.map(f108552);
+  const mapped = arr.map(f108560);
   return mapped.join(", ");
 }
 const items = ["\\", "\""];

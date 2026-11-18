@@ -1,10 +1,10 @@
-// Module ID: 19349
-// Function ID: 19350
+// Module ID: 19350
+// Function ID: 19351
 // Name: ICYMIServerRecommendationRow
-// Dependencies: [32, 5, 19, 17, 5307, 5177, 10205, 1072, 21, 19286, 575, 504, 1414, 5169, 9503, 6010, 7720, 10217, 6005, 1113, 6907, 5919, 5926, 19325, 7830, 2]
+// Dependencies: [32, 5, 19, 17, 5307, 5177, 10205, 1072, 21, 19287, 575, 504, 1414, 5169, 9503, 6010, 7720, 10217, 6005, 1113, 6907, 5919, 5926, 19326, 7830, 2]
 // Exports: ICYMIServerRecommendationRow
 
-// Module 19349 (ICYMIServerRecommendationRow)
+// Module 19350 (ICYMIServerRecommendationRow)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -14,7 +14,7 @@ import GuildRecordUtils from "GuildRecordUtils" /* 5169 */;
 import GuildIconDefault from "GuildIcon" /* 7720 */;
 import FastestListDefault from "FastestList" /* 7830 */;
 import ClipViewDefault from "ClipView" /* 9503 */;
-import ICYMIShared from "ICYMIShared" /* 19325 */;
+import ICYMIShared from "ICYMIShared" /* 19326 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -23,7 +23,7 @@ import GuildStore from "GuildStore" /* 5177 */;
 import ICYMIStore from "ICYMIStore" /* 10205 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 19286 */;
+import createICYMIStyles from "createICYMIStyles" /* 19287 */;
 import size_mod from "module_2" /* 2 */;
 
 let c1, c2, c3, closure_0;
@@ -115,7 +115,7 @@ function FeaturedServer(guild) {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -174,7 +174,7 @@ function FeaturedServer(guild) {
                   const obj2 = { value, done: true };
                   return obj2;
                 } else {
-                  return { value: "HermesInternal", done: "ulw" };
+                  return { value: "HermesInternal", done: null };
                 }
               } else {
                 try {
@@ -221,7 +221,7 @@ function FeaturedServer(guild) {
                     const obj = c1(c2[17]);
                     const recommendedGuilds = obj.getRecommendedGuilds();
                     c2 = 3;
-                    return { value: "HermesInternal", done: "ulw" };
+                    return { value: "HermesInternal", done: null };
                   }
                 } catch (tmp13) {
                   c2 = 3;
@@ -260,7 +260,7 @@ function FeaturedServer(guild) {
         } else {
           closure_129_1(false);
           c3 = 3;
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp37) {
         c3 = 3;

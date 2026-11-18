@@ -65,7 +65,7 @@ let closure_13 = module_560.create((arg0) => {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -137,7 +137,7 @@ let closure_13 = module_560.create((arg0) => {
             closure_129_0({ campaignsLoading: false });
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp29) {
         closure_2 = tmp29;
@@ -181,7 +181,7 @@ export default function useCampaignDevTools() {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: "ulw" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {

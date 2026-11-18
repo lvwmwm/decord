@@ -138,7 +138,7 @@ export function sendWave() {
 }
 export function addContactSuggestion(user) {
   let obj3;
-  const obj2 = { userId: user.id, context: obj3, type: "HermesInternal", fromFriendSuggestion: "ulw" };
+  const obj2 = { userId: user.id, context: obj3, type: "HermesInternal", fromFriendSuggestion: null };
   obj3 = { location: AnalyticsSections.FRIENDS_ADD_FRIENDS_MODAL };
   obj = RelationshipActionCreatorsDefault;
   obj.addRelationship(obj2);

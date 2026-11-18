@@ -1,9 +1,9 @@
-// Module ID: 20166
-// Function ID: 20167
+// Module ID: 20169
+// Function ID: 20170
 // Name: AgeGateManager
-// Dependencies: [5, 5155, 5209, 5339, 1097, 1072, 7882, 6828, 6838, 20167, 2121, 20171, 1092, 2]
+// Dependencies: [5, 5155, 5209, 5339, 1097, 1072, 7882, 6828, 6838, 20170, 2121, 20174, 1092, 2]
 
-// Module 20166 (AgeGateManager)
+// Module 20169 (AgeGateManager)
 import AgeGateUtils from "AgeGateUtils" /* 6828 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -71,7 +71,7 @@ class AgeGateManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

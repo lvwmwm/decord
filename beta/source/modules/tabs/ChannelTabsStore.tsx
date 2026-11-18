@@ -20,20 +20,20 @@ import size from "module_2" /* 2 */;
 
 let _require, set, tabs;
 
-const f100084 = (item) => {
+const f100092 = (item) => {
   let closure_0 = item;
   return closure_10.some((id) => id.id === closure_0);
 };
-const f100090 = (pinned) => pinned.pinned;
-const f100091 = (pinned) => !pinned.pinned;
-const f100092 = (id) => id.id === activeTabId;
+const f100098 = (pinned) => pinned.pinned;
+const f100099 = (pinned) => !pinned.pinned;
+const f100100 = (id) => id.id === activeTabId;
 function activateTab(id) {
-  const f100083 = (item) => item !== closure_0;
+  const f100091 = (item) => item !== closure_0;
   const tmp2 = null != activeTabId && activeTabId !== id;
   if (tmp2) {
     let closure_0 = activeTabId;
     const items = [activeTabId];
-    HermesBuiltin.arraySpread(items, closure_12.filter(f100083), 1);
+    HermesBuiltin.arraySpread(items, closure_12.filter(f100091), 1);
     const slice = items.slice;
     const currentUser = UserStore.getCurrentUser();
     let isStaffResult;
@@ -48,7 +48,7 @@ function activateTab(id) {
   }
   activeTabId = id;
   closure_0 = id;
-  const items1 = [id, ...closure_12.filter(f100083)];
+  const items1 = [id, ...closure_12.filter(f100091)];
   const slice2 = items1.slice;
   const currentUser1 = UserStore.getCurrentUser();
   let isStaffResult1;
@@ -129,8 +129,8 @@ function landNavigationAroundPinnedTab(kind2) {
         return tmp;
       });
       const items = [];
-      const arraySpreadResult = HermesBuiltin.arraySpread(items, mapped.filter(f100090), 0);
-      HermesBuiltin.arraySpread(items, mapped.filter(f100091), arraySpreadResult);
+      const arraySpreadResult = HermesBuiltin.arraySpread(items, mapped.filter(f100098), 0);
+      HermesBuiltin.arraySpread(items, mapped.filter(f100099), arraySpreadResult);
       items1 = items;
       let closure_0 = kind2;
       if (c14 === activeTabId) {
@@ -217,7 +217,7 @@ function handleChannelDelete(channel) {
         }
         return tmp3;
       });
-      closure_12 = closure_12.filter(f100084);
+      closure_12 = closure_12.filter(f100092);
     }
   } else {
     return false;
@@ -283,7 +283,7 @@ class ChannelTabsStore extends PersistedStore {
       }
       return tmp2;
     });
-    const items = [...mapped.filter(f100090), ...mapped.filter(f100091)];
+    const items = [...mapped.filter(f100098), ...mapped.filter(f100099)];
     tabs = items;
     activeTabId = undefined;
     if (enabled != null) {
@@ -480,7 +480,7 @@ let obj = {
         c14 = null;
       }
       tabs = tabs.filter((id) => id.id !== tabId);
-      closure_12 = closure_12.filter(f100084);
+      closure_12 = closure_12.filter(f100092);
       if (id2 === tmp14) {
         const _Math = Math;
         activeTabId = null;
@@ -557,7 +557,7 @@ let obj = {
   },
   CHANNEL_TABS_BACK: function handleTabHistoryBack() {
     let closure_10;
-    const found = tabs.find(f100092);
+    const found = tabs.find(f100100);
     flag = false;
     if (null != found) {
       const sum = found.index + -1;
@@ -585,7 +585,7 @@ let obj = {
   },
   CHANNEL_TABS_FORWARD: function handleTabHistoryForward() {
     let closure_10;
-    const found = tabs.find(f100092);
+    const found = tabs.find(f100100);
     flag = false;
     if (null != found) {
       const sum = found.index + 1;
@@ -813,7 +813,7 @@ let obj = {
         const self2 = this;
         set = new Set(substr.map((id) => id.id));
         tabs = tabs.filter((id) => !set.has(id.id));
-        closure_12 = closure_12.filter(f100084);
+        closure_12 = closure_12.filter(f100092);
         flag2 = true;
       }
       if (tmp6) {
@@ -884,8 +884,8 @@ let obj = {
                 return tmp;
               });
               const items1 = [];
-              const arraySpreadResult = HermesBuiltin.arraySpread(items1, mapped.filter(f100090), 0);
-              HermesBuiltin.arraySpread(items1, mapped.filter(f100091), arraySpreadResult);
+              const arraySpreadResult = HermesBuiltin.arraySpread(items1, mapped.filter(f100098), 0);
+              HermesBuiltin.arraySpread(items1, mapped.filter(f100099), arraySpreadResult);
               tabs = items1;
             }
             flag3 = true;

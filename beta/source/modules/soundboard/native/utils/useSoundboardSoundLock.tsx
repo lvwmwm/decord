@@ -1,10 +1,10 @@
-// Module ID: 19223
-// Function ID: 19224
+// Module ID: 19224
+// Function ID: 19225
 // Name: useSoundboardSoundLock
 // Dependencies: [19, 1388, 6361, 504, 13021, 2174, 9035, 9037, 6005, 1113, 9981, 2]
 // Exports: useSoundboardSoundLock
 
-// Module 19223 (useSoundboardSoundLock)
+// Module 19224 (useSoundboardSoundLock)
 import intl3 from "intl" /* 1113 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;

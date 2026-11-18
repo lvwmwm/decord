@@ -1,10 +1,10 @@
-// Module ID: 20535
-// Function ID: 20536
+// Module ID: 20538
+// Function ID: 20539
 // Name: GuildSettingsModalServerTag
-// Dependencies: [5, 32, 19, 17, 8156, 5177, 8405, 1072, 8410, 21, 5306, 575, 1502, 8408, 504, 8157, 8409, 8158, 8404, 6004, 1113, 10679, 5517, 7493, 7427, 1503, 6259, 1187, 7588, 10672, 5919, 7746, 7954, 7443, 6327, 16355, 8106, 16352, 20536, 2]
+// Dependencies: [5, 32, 19, 17, 8156, 5177, 8405, 1072, 8410, 21, 5306, 575, 1502, 8408, 504, 8157, 8409, 8158, 8404, 6004, 1113, 10679, 5517, 7493, 7427, 1503, 6259, 1187, 7588, 10672, 5919, 7746, 7954, 7443, 6327, 16355, 8106, 16352, 20539, 2]
 // Exports: default
 
-// Module 20535 (GuildSettingsModalServerTag)
+// Module 20538 (GuildSettingsModalServerTag)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -197,7 +197,7 @@ export default function GuildSettingsModalServerTag(guildId) {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -264,7 +264,7 @@ export default function GuildSettingsModalServerTag(guildId) {
           }
         }
         c3 = 3;
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp27) {
         c3 = 3;
         throw tmp27;
@@ -457,7 +457,7 @@ export default function GuildSettingsModalServerTag(guildId) {
           tmp41 = obj16;
         } else {
           const obj20 = { guildId, onUnlockPress: callback2 };
-          const items15 = [tmp33(tmp40(20536), obj20), tmp32Result2];
+          const items15 = [tmp33(tmp40(20539), obj20), tmp32Result2];
           obj16.children = items15;
           tmp41 = obj16;
         }

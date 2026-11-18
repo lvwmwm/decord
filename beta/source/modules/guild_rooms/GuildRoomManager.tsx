@@ -1,9 +1,9 @@
-// Module ID: 20260
-// Function ID: 20261
+// Module ID: 20263
+// Function ID: 20264
 // Name: GuildRoomManager
 // Dependencies: [502, 6857, 7882, 6888, 6855, 2]
 
-// Module 20260 (GuildRoomManager)
+// Module 20263 (GuildRoomManager)
 import GuildRoomActionCreators from "GuildRoomActionCreators" /* 6855 */;
 import GuildRoomsExperiment from "GuildRoomsExperiment" /* 6888 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

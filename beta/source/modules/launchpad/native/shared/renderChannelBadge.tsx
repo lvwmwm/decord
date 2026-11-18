@@ -1,10 +1,10 @@
-// Module ID: 19879
-// Function ID: 19880
+// Module ID: 19880
+// Function ID: 19881
 // Name: renderChannelBadge
 // Dependencies: [19, 21, 1187, 14693, 5919, 1113, 2027, 2]
 // Exports: default
 
-// Module 19879 (renderChannelBadge)
+// Module 19880 (renderChannelBadge)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;

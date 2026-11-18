@@ -5,7 +5,7 @@
 // Exports: default
 
 // Module 79 (insetsDiffer)
-let closure_0 = { top: "loadJsonAsset", left: "clearTimeout", right: "error", bottom: "__closure" };
+let closure_0 = { top: "Array", left: "s", right: "applicationId", bottom: "useMemo" };
 
 export default function insetsDiffer(arg0, arg1) {
   const rect = arg0 || closure_0;

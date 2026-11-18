@@ -1,10 +1,10 @@
-// Module ID: 19778
-// Function ID: 19779
+// Module ID: 19779
+// Function ID: 19780
 // Name: SuspendedUserPage
 // Dependencies: [19, 17, 8231, 8206, 21, 5306, 575, 504, 7415, 7988, 1113, 6834, 7430, 5919, 6002, 17266, 2]
 // Exports: default
 
-// Module 19778 (SuspendedUserPage)
+// Module 19779 (SuspendedUserPage)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;

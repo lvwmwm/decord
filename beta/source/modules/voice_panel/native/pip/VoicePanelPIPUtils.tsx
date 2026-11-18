@@ -1,10 +1,10 @@
-// Module ID: 19910
-// Function ID: 19911
+// Module ID: 19911
+// Function ID: 19912
 // Name: VoicePanelPIPUtils
-// Dependencies: [7016, 6810, 502, 11985, 19911, 5973, 11986, 6798, 11990, 5968, 575, 2]
+// Dependencies: [7016, 6810, 502, 11985, 19912, 5973, 11986, 6798, 11990, 5968, 575, 2]
 // Exports: calculatePIPPositionFromVelocity, clampPIPScale, computePIPParticipantToShow, computePIPSize, createPIPBlockList, getClampedPIPPosition, getPIPMode, getPIPWindowDimensions, getScaledPIPContainerHeight, getVoicePanelPIPBorderRadius, pipXYtoAbsoluteXY
 
-// Module 19910 (VoicePanelPIPUtils)
+// Module 19911 (VoicePanelPIPUtils)
 import nativeDefault from "native" /* 575 */;
 import isActivityParticipantCurrentUserCurrentSession from "isActivityParticipantCurrentUserCurrentSession" /* 5968 */;
 import CallConstants from "CallConstants" /* 5973 */;
@@ -14,7 +14,7 @@ import ChannelRTCStore from "ChannelRTCStore" /* 7016 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6810 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11985 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19911 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19912 */;
 import MorphablePanelConstants from "MorphablePanelConstants" /* 11986 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -261,25 +261,28 @@ const items12 = [tmp21, tmp22, tmp23];
 calculatePIPPositionFromVelocity.__closure = items12;
 calculatePIPPositionFromVelocity.__workletHash = 7286102854830;
 calculatePIPPositionFromVelocity.__initData = tmp20;
+const items13 = [{ code: "(function getVoicePanelPIPBorderRadius_VoicePanelPIPUtilsTsx8(width,height,isDockEnabled){let[lg,SquareActivityPIPReferenceDimensions,xl]=this.__closure;if(isDockEnabled){return lg;}if(width<=SquareActivityPIPReferenceDimensions.width&&height<=SquareActivityPIPReferenceDimensions.height){return lg;}return xl;})" }, , , ];
 const xl = nativeDefault.radii.xl;
-const items13 = [{ code: "(function getVoicePanelPIPBorderRadius_VoicePanelPIPUtilsTsx8(width,height){let[SquareActivityPIPReferenceDimensions,lg,xl]=this.__closure;if(width<=SquareActivityPIPReferenceDimensions.width&&height<=SquareActivityPIPReferenceDimensions.height){return lg;}return xl;})" }, SquareActivityPIPReferenceDimensions, nativeDefault.radii.lg, xl];
+items13[1] = nativeDefault.radii.lg;
+items13[2] = SquareActivityPIPReferenceDimensions;
+items13[3] = xl;
 let c0;
 let c1;
 let c2;
 [tmp24, tmp25, tmp26, tmp27] = items13;
-function getVoicePanelPIPBorderRadius(width, height) {
-  if (width <= _undefined.width) {
-    let tmp3;
-    if (height <= tmp.height) {
-      tmp3 = c1;
-    }
-    return tmp3;
+function getVoicePanelPIPBorderRadius(width, height, isDockEnabled) {
+  let tmp5;
+  const tmp = isDockEnabled;
+  if (tmp) {
+    tmp5 = c0;
+  } else {
+    tmp5 = c2;
   }
-  tmp3 = c2;
+  return tmp5;
 }
 const items14 = [tmp25, tmp26, tmp27];
 getVoicePanelPIPBorderRadius.__closure = items14;
-getVoicePanelPIPBorderRadius.__workletHash = 5727386522170;
+getVoicePanelPIPBorderRadius.__workletHash = 6766928057092;
 getVoicePanelPIPBorderRadius.__initData = tmp24;
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/voice_panel/native/pip/VoicePanelPIPUtils.tsx");

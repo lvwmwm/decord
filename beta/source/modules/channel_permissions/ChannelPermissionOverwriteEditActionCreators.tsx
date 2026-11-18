@@ -1,15 +1,15 @@
-// Module ID: 19700
-// Function ID: 19701
+// Module ID: 19701
+// Function ID: 19702
 // Name: ChannelPermissionOverwriteEditActionCreators
-// Dependencies: [5, 5155, 19695, 572, 6005, 1113, 19696, 8134, 2]
+// Dependencies: [5, 5155, 19696, 572, 6005, 1113, 19697, 8134, 2]
 // Exports: updateChannelPermissionOverwrite
 
-// Module 19700 (ChannelPermissionOverwriteEditActionCreators)
+// Module 19701 (ChannelPermissionOverwriteEditActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl2 from "intl" /* 1113 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
-import ChannelPermissionOverwriteEditStore2 from "ChannelPermissionOverwriteEditStore" /* 19695 */;
-import ChannelPermissionOverwriteEditUtils from "ChannelPermissionOverwriteEditUtils" /* 19696 */;
+import ChannelPermissionOverwriteEditStore2 from "ChannelPermissionOverwriteEditStore" /* 19696 */;
+import ChannelPermissionOverwriteEditUtils from "ChannelPermissionOverwriteEditUtils" /* 19697 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import size from "module_2" /* 2 */;
@@ -47,7 +47,7 @@ let obj = function _runEditValidation() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -104,7 +104,7 @@ let obj = function _runEditValidation() {
                   closure_133_12(channelId, overwriteId);
                   c6 = 0;
                   c8 = 3;
-                  return { value: "HermesInternal", done: "ulw" };
+                  return { value: "HermesInternal", done: null };
                 }
               } else if (arg0 === 1) {
                 c8 = 3;
@@ -117,7 +117,7 @@ let obj = function _runEditValidation() {
                 c6 = 0;
               }
               c8 = 3;
-              return { value: "HermesInternal", done: "ulw" };
+              return { value: "HermesInternal", done: null };
             }
             c6 = 2;
             const items = [closure_2];
@@ -170,7 +170,7 @@ obj = function _runEditDrain() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c6;
@@ -269,7 +269,7 @@ obj = function _runEditDrain() {
             closure_132_12(closure_0, closure_1);
           }
           c8 = 3;
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp94) {
         closure_5 = tmp94;
@@ -302,7 +302,7 @@ obj = function _drainPendingEdits() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c7;
@@ -340,7 +340,7 @@ obj = function _drainPendingEdits() {
                   const obj2 = { value, done: true };
                   return obj2;
                 } else {
-                  return { value: "HermesInternal", done: "ulw" };
+                  return { value: "HermesInternal", done: null };
                 }
               } else {
                 try {
@@ -459,7 +459,7 @@ obj = function _drainPendingEdits() {
                       return obj14;
                     } else {
                       c7 = 3;
-                      return { value: "HermesInternal", done: "ulw" };
+                      return { value: "HermesInternal", done: null };
                     }
                   } else if (arg0 === 1) {
                     c7 = 3;

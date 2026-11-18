@@ -187,7 +187,7 @@ function CategoryItemsBySku(categorySkuId) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "ulw" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c2;
@@ -233,7 +233,7 @@ function CategoryItemsBySku(categorySkuId) {
                 c2 = 0;
               }
               c3 = 3;
-              return { value: "HermesInternal", done: "ulw" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp17) {
             if (0 === c2) {

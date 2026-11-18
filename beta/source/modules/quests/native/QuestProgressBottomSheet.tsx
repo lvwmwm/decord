@@ -1,10 +1,10 @@
-// Module ID: 19945
-// Function ID: 19946
+// Module ID: 19946
+// Function ID: 19947
 // Name: QuestProgressBottomSheet
 // Dependencies: [5, 19, 17, 7019, 8808, 6954, 5949, 21, 5306, 575, 504, 15264, 6957, 7988, 7421, 1113, 8560, 7259, 8831, 12898, 10131, 15261, 17728, 12743, 5542, 10128, 10230, 10156, 5556, 6010, 5883, 1092, 15257, 12290, 17756, 6327, 5919, 5926, 17723, 2]
 // Exports: default
 
-// Module 19945 (QuestProgressBottomSheet)
+// Module 19946 (QuestProgressBottomSheet)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
@@ -119,7 +119,7 @@ function QuestProgressBottomSheet(quest) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -156,7 +156,7 @@ function QuestProgressBottomSheet(quest) {
             }
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp18) {
         c3 = 3;

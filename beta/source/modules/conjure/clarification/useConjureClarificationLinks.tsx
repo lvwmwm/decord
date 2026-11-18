@@ -73,7 +73,7 @@ export default function useConjureClarificationLinks(arg0, arg1, arg2) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "ulw" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c5;
@@ -121,7 +121,7 @@ export default function useConjureClarificationLinks(arg0, arg1, arg2) {
                 c5 = 0;
               }
               c7 = 3;
-              return { value: "HermesInternal", done: "ulw" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp14) {
             if (0 === c5) {

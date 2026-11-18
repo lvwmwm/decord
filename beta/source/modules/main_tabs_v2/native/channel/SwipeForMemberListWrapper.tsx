@@ -1,10 +1,10 @@
-// Module ID: 19443
-// Function ID: 19444
+// Module ID: 19444
+// Function ID: 19445
 // Name: SwipeForMemberListWrapper
-// Dependencies: [32, 19, 17, 9064, 9052, 1072, 21, 3, 5306, 575, 6057, 12011, 5485, 1655, 5889, 5537, 7587, 5491, 12421, 1108, 18720, 11253, 18731, 13121, 5483, 5482, 6322, 1503, 19367, 14850, 18724, 18729, 18726, 5588, 19444, 14565, 19360, 10271, 5906, 19445, 15122, 2]
+// Dependencies: [32, 19, 17, 9064, 9052, 1072, 21, 3, 5306, 575, 6057, 12011, 5485, 1655, 5889, 5537, 7587, 5491, 12421, 1108, 18720, 11253, 18731, 13121, 5483, 5482, 6322, 1503, 19368, 14850, 18724, 18729, 18726, 5588, 19445, 14565, 19361, 10271, 5906, 19446, 15122, 2]
 // Exports: default
 
-// Module 19443 (SwipeForMemberListWrapper)
+// Module 19444 (SwipeForMemberListWrapper)
 import LoggerDefault from "Logger" /* 3 */;
 import nativeDefault from "native" /* 575 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
@@ -75,7 +75,7 @@ export default function _default(channelId) {
   let items34;
   let items35;
   let movePanel;
-  let obj11;
+  let obj12;
   let obj6;
   let panelGestureContext;
   let str;
@@ -562,12 +562,14 @@ export default function _default(channelId) {
   let obj9 = { children: navigation(tmp2(tmp3[39]), { isShowing: derivedStateFromSharedValue, channelId: first, isSearchLocked: false, onBackPress: callback5, componentWidth: tmp9, onChannelDeleted: callback4 }) };
   const LayerScope = tmp13(tmp3[38]).LayerScope;
   items34[1] = navigation(LayerScope, obj9);
-  items34[2] = navigation(tmp2(tmp3[40]), {});
-  const obj10 = { style: items35, children: navigation(panelGestureContext, obj11) };
+  const obj10 = { background: tmp2(tmp3[9]).colors.MOBILE_ACTIONSHEET_BACKGROUND, ignoreTheme: true };
+  const tmp2Result2 = tmp2(tmp3[40]);
+  items34[2] = navigation(tmp2Result2, obj10);
+  const obj11 = { style: items35, children: navigation(panelGestureContext, obj12) };
   items35 = [StyleSheet.absoluteFill, animatedStyle];
-  obj11 = { style: tmp.memberListPreview };
+  obj12 = { style: tmp.memberListPreview };
   const View2 = tmp2(tmp3[13]).View;
-  items34[3] = navigation(View2, obj10);
+  items34[3] = navigation(View2, obj11);
   items32[1] = closure_14(View, obj8);
   items30[1] = navigation(GestureDetector, obj5);
   return closure_14(Provider, obj3);

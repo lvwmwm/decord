@@ -1,10 +1,10 @@
-// Module ID: 20782
-// Function ID: 20783
+// Module ID: 20785
+// Function ID: 20786
 // Name: GuildRoleSubscriptionTierTemplateBasicInfo
 // Dependencies: [19, 17, 21, 5306, 575, 6010, 5919, 17850, 5926, 1113, 2]
 // Exports: GuildRoleSubscriptionTierTemplateBasicInfo
 
-// Module 20782 (GuildRoleSubscriptionTierTemplateBasicInfo)
+// Module 20785 (GuildRoleSubscriptionTierTemplateBasicInfo)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;

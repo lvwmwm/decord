@@ -254,7 +254,7 @@ function FinalizeCharacterSaveButton(blockedTrait) {
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -293,7 +293,7 @@ function FinalizeCharacterSaveButton(blockedTrait) {
               presentError(intl.string(tmp3(c2[14]).t.fEptJP));
             }
             c2 = 3;
-            return { value: "HermesInternal", done: "ulw" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp20) {
           c2 = 3;

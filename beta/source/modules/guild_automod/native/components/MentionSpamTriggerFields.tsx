@@ -1,12 +1,12 @@
-// Module ID: 20473
-// Function ID: 20474
+// Module ID: 20476
+// Function ID: 20477
 // Name: MentionSpamTriggerFields
-// Dependencies: [32, 19, 17, 14166, 21, 5306, 19704, 1113, 7746, 5919, 7443, 7626, 20456, 7733, 2]
+// Dependencies: [32, 19, 17, 14166, 21, 5306, 19705, 1113, 7746, 5919, 7443, 7626, 20459, 7733, 2]
 // Exports: default
 
-// Module 20473 (MentionSpamTriggerFields)
+// Module 20476 (MentionSpamTriggerFields)
 import react_native from "react-native" /* 17 */;
-import AutomodRuleUtils from "AutomodRuleUtils" /* 20456 */;
+import AutomodRuleUtils from "AutomodRuleUtils" /* 20459 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Constants from "Constants" /* 14166 */;
@@ -49,7 +49,7 @@ export default function MentionSpamTriggerFields(rule) {
   const triggerMetadata = rule.triggerMetadata;
   ({ mentionTotalLimit, mentionRaidProtectionEnabled } = triggerMetadata);
   const tmp = closure_9();
-  let obj = rule(19704);
+  let obj = rule(19705);
   let hasMentionRaidLimitAccess = obj.useHasMentionRaidLimitAccess(rule.guildId);
   const intl = rule(1113).intl;
   const stringResult = intl.string(rule(1113).t["s/26oQ"]);

@@ -23,7 +23,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, c1, c3, c6, c7, importDefault, publishStatus;
 
-const f106643 = (item) => null != guild.getGuild(item);
+const f106651 = (item) => null != guild.getGuild(item);
 let obj = function _submitConjurePublishEval() {
   obj = _asyncToGenerator(async function(arg0, value, arg2) {
     let published_revision;
@@ -42,7 +42,7 @@ let obj = function _submitConjurePublishEval() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -106,7 +106,7 @@ let obj = function _submitConjurePublishEval() {
           obj = closure_133_1(closure_133_2[10]);
           obj.dispatch(obj13);
           c7 = 3;
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp28) {
         c7 = 3;
@@ -125,7 +125,7 @@ const result = size.fileFinishedImporting("modules/conjure/publish_eval/conjureP
 export function isConjurePublishEvalUser() {
   let closure_0 = GuildStore;
   const CONJURE_PUBLISH_EVAL_GUILD_IDS = ConjurePublishEvalTypes.CONJURE_PUBLISH_EVAL_GUILD_IDS;
-  return CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f106643);
+  return CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f106651);
 }
 export function useIsConjurePublishEvalUser() {
   const items = [GuildStore];
@@ -133,7 +133,7 @@ export function useIsConjurePublishEvalUser() {
   return obj.useStateFromStores(items, () => {
     let closure_0 = GuildStore;
     const CONJURE_PUBLISH_EVAL_GUILD_IDS = require("ConjurePublishEvalTypes").CONJURE_PUBLISH_EVAL_GUILD_IDS;
-    return CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f106643);
+    return CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f106651);
   });
 }
 export function getPendingConjurePublishEval() {
@@ -151,7 +151,7 @@ export function getPendingConjurePublishEval() {
       let closure_0 = GuildStore;
       const CONJURE_PUBLISH_EVAL_GUILD_IDS = ConjurePublishEvalTypes.CONJURE_PUBLISH_EVAL_GUILD_IDS;
       tmp2 = null;
-      if (CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f106643)) {
+      if (CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f106651)) {
         tmp2 = pending;
       }
     }
@@ -182,7 +182,7 @@ export function usePendingConjurePublishEval(projectId) {
         closure_0 = GuildStore;
         const CONJURE_PUBLISH_EVAL_GUILD_IDS = ConjurePublishEvalTypes.CONJURE_PUBLISH_EVAL_GUILD_IDS;
         tmp3 = null;
-        if (CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f106643)) {
+        if (CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f106651)) {
           tmp3 = pending;
         }
       }
@@ -201,7 +201,7 @@ export function requestConjurePublishEval(projectId) {
   if (someResult) {
     let closure_0 = GuildStore;
     const CONJURE_PUBLISH_EVAL_GUILD_IDS = ConjurePublishEvalTypes.CONJURE_PUBLISH_EVAL_GUILD_IDS;
-    someResult = CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f106643);
+    someResult = CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f106651);
   }
   if (someResult) {
     obj = { userId: id1, projectId, publishTurnId: null, createdAt: null };
@@ -309,7 +309,7 @@ export function useConjurePublishEvalForm(pending) {
         obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c2;
@@ -354,7 +354,7 @@ export function useConjurePublishEvalForm(pending) {
           c2 = 0;
         }
         c3 = 3;
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp18) {
         if (0 === c2) {
           c3 = 3;

@@ -1,10 +1,10 @@
-// Module ID: 19690
-// Function ID: 19691
+// Module ID: 19691
+// Function ID: 19692
 // Name: ChannelSettingsPermissionsOverview
-// Dependencies: [32, 5, 19, 17, 5213, 5155, 5212, 5177, 5248, 1388, 1072, 21, 5306, 575, 6258, 1113, 5944, 5243, 12560, 8133, 10919, 12, 7746, 7443, 13308, 1502, 13997, 11241, 17935, 504, 2119, 10929, 19691, 15078, 9051, 8134, 1655, 2]
+// Dependencies: [32, 5, 19, 17, 5213, 5155, 5212, 5177, 5248, 1388, 1072, 21, 5306, 575, 6258, 1113, 5944, 5243, 12560, 8133, 10919, 12, 7746, 7443, 13308, 1502, 13997, 11241, 17935, 504, 2119, 10929, 19692, 15078, 9051, 8134, 1655, 2]
 // Exports: default
 
-// Module 19690 (ChannelSettingsPermissionsOverview)
+// Module 19691 (ChannelSettingsPermissionsOverview)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -17,7 +17,7 @@ import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 8134 */;
 import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 10929 */;
 import RoleLabel from "RoleLabel" /* 11241 */;
 import CircleMinusIcon2 from "CircleMinusIcon" /* 17935 */;
-import useGetOrFetchChannelOverwriteUsersDefault from "useGetOrFetchChannelOverwriteUsers" /* 19691 */;
+import useGetOrFetchChannelOverwriteUsersDefault from "useGetOrFetchChannelOverwriteUsers" /* 19692 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
@@ -96,7 +96,7 @@ function ChannelPermissionSyncModule(channel) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -139,7 +139,7 @@ function ChannelPermissionSyncModule(channel) {
               saveChannel(id, obj);
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "ulw" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp15) {
           c3 = 3;

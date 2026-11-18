@@ -1,10 +1,10 @@
-// Module ID: 19431
-// Function ID: 19432
+// Module ID: 19432
+// Function ID: 19433
 // Name: AppChannel
-// Dependencies: [19, 17, 19432, 21, 5306, 575, 2023, 5903, 13345, 19433, 16988, 13344, 13346, 7260, 6053, 13355, 13359, 19436, 7394, 19437, 19440, 1113, 7055, 6010, 1414, 10546, 5926, 5967, 19441, 9068, 7052, 19442, 11977, 2]
+// Dependencies: [19, 17, 19433, 21, 5306, 575, 2023, 5903, 13345, 19434, 16988, 13344, 13346, 7260, 6053, 13355, 13359, 19437, 7394, 19438, 19441, 1113, 7055, 6010, 1414, 10546, 5926, 5967, 19442, 9068, 7052, 19443, 11977, 2]
 // Exports: default
 
-// Module 19431 (AppChannel)
+// Module 19432 (AppChannel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
@@ -19,10 +19,10 @@ import openChannelSecondaryViewChat from "openChannelSecondaryViewChat" /* 9068 
 import ConjureAppIconTileDefault from "ConjureAppIconTile" /* 10546 */;
 import useChannelContentGate from "useChannelContentGate" /* 11977 */;
 import getInlineFramePresentationDefault from "getInlineFramePresentation" /* 13345 */;
-import ConjureFrameUpdateStore from "ConjureFrameUpdateStore" /* 19432 */;
-import FrameSurfaceState from "FrameSurfaceState" /* 19440 */;
-import useAppChannelClosedDefault from "useAppChannelClosed" /* 19441 */;
-import useChannelAppFrameTeardownDefault from "useChannelAppFrameTeardown" /* 19442 */;
+import ConjureFrameUpdateStore from "ConjureFrameUpdateStore" /* 19433 */;
+import FrameSurfaceState from "FrameSurfaceState" /* 19441 */;
+import useAppChannelClosedDefault from "useAppChannelClosed" /* 19442 */;
+import useChannelAppFrameTeardownDefault from "useChannelAppFrameTeardown" /* 19443 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
@@ -250,7 +250,7 @@ export default function ConnectedAppChannel(channel) {
     result = tmpResult2.renderChannelContentGate(channelContentGate);
   } else if (null == application_id) {
     const obj2 = { heading: intl.string(intl6.t.tU5fiM), description: intl2.string(intl6.t.E94mJf) };
-    const FrameSurfaceExplanation = tmp(19440).FrameSurfaceExplanation;
+    const FrameSurfaceExplanation = tmp(19441).FrameSurfaceExplanation;
     intl = tmp(1113).intl;
     intl2 = tmp(1113).intl;
     result = metroRequire(FrameSurfaceExplanation, obj2);

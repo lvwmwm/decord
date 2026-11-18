@@ -1,10 +1,10 @@
-// Module ID: 20659
-// Function ID: 20660
+// Module ID: 20662
+// Function ID: 20663
 // Name: WarningNotice
 // Dependencies: [19, 17, 21, 5306, 575, 7623, 5919, 5926, 2]
 // Exports: default
 
-// Module 20659 (WarningNotice)
+// Module 20662 (WarningNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5919 */;

@@ -1,10 +1,10 @@
-// Module ID: 19387
-// Function ID: 19388
+// Module ID: 19388
+// Function ID: 19389
 // Name: GuildRoleSubscriptionPurchasePreviewCard
-// Dependencies: [32, 19, 17, 5155, 21, 5306, 575, 5919, 5542, 19388, 2121, 17860, 1187, 504, 5944, 1113, 8033, 17846, 19383, 6010, 19389, 17857, 2]
+// Dependencies: [32, 19, 17, 5155, 21, 5306, 575, 5919, 5542, 19389, 2121, 17860, 1187, 504, 5944, 1113, 8033, 17846, 19384, 6010, 19390, 17857, 2]
 // Exports: default
 
-// Module 19387 (GuildRoleSubscriptionPurchasePreviewCard)
+// Module 19388 (GuildRoleSubscriptionPurchasePreviewCard)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
@@ -192,7 +192,7 @@ export default function GuildRoleSubscriptionPurchasePreviewCard(listingId) {
   size = first1.size;
   const obj7 = { style: tmp2.container, children: items2 };
   const obj8 = { style: tmp2.header, children: items };
-  const obj6 = listingId(19383);
+  const obj6 = listingId(19384);
   const formattedSubscriptionPlan = obj6.useFormattedSubscriptionPlan(listingId);
   const tmp13 = guildId;
   const tmp14 = guildId(6010);
@@ -205,7 +205,7 @@ export default function GuildRoleSubscriptionPurchasePreviewCard(listingId) {
   const obj10 = { children: items1 };
   items1 = [closure_8(listingId(5919).Text, { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: first }), closure_8(listingId(1187).Spacer, { size: 4 }), closure_8(listingId(5919).Text, { variant: "heading-sm/medium", color: "text-default", children: formattedSubscriptionPlan })];
   items[1] = closure_9(closure_6, obj10);
-  items2 = [closure_9(closure_6, obj8), closure_8(listingId(1187).Spacer, { size: 16 }), closure_8(tmp13(19389), { listingId }), ];
+  items2 = [closure_9(closure_6, obj8), closure_8(listingId(1187).Spacer, { size: 16 }), closure_8(tmp13(19390), { listingId }), ];
   let tmp10Result6 = length > 0 || size > 0 || length2 > 0;
   if (tmp10Result6) {
     const items3 = [closure_8(listingId(1187).Spacer, { size: 24 }), , ];
@@ -262,7 +262,7 @@ export default function GuildRoleSubscriptionPurchasePreviewCard(listingId) {
           const openLazy = ActionSheetActionCreatorsDefault.openLazy;
           ActionSheetActionCreatorsDefault;
           const obj = { listingId, guildId };
-          const tmp2 = asyncRequire(19388, dependencyMap.paths);
+          const tmp2 = asyncRequire(19389, dependencyMap.paths);
           openLazy(tmp2, "PurchaseCard:" + listingId, obj);
         }
     };

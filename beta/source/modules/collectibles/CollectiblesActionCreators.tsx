@@ -112,7 +112,7 @@ let obj = function _fetchCollectiblesCategories() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -249,7 +249,7 @@ let obj = function _fetchCollectiblesCategories() {
               c7 = 0;
             }
             c9 = 3;
-            return { value: "HermesInternal", done: "ulw" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp76) {
           closure_6 = tmp76;
@@ -283,7 +283,7 @@ obj = function _fetchCollectiblesPurchases() {
         obj = { value, done: true };
         return obj;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -372,7 +372,7 @@ obj = function _fetchCollectiblesPurchases() {
           c3 = 0;
         }
         c5 = 3;
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp51) {
         closure_2 = tmp51;
         if (0 === c3) {
@@ -406,7 +406,7 @@ obj = function _fetchCollectiblesProduct() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -493,7 +493,7 @@ obj = function _fetchCollectiblesProduct() {
               c5 = 0;
             }
             c7 = 3;
-            return { value: "HermesInternal", done: "ulw" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp40) {
           closure_4 = tmp40;
@@ -524,7 +524,7 @@ obj = function _maybeFetchCollectiblesProduct() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -560,7 +560,7 @@ obj = function _maybeFetchCollectiblesProduct() {
           return obj;
         }
         c2 = 3;
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp8) {
         c2 = 3;
         throw tmp8;
@@ -587,7 +587,7 @@ obj = function _claimPremiumCollectiblesProduct() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -649,7 +649,7 @@ obj = function _claimPremiumCollectiblesProduct() {
           dispatch(obj10);
           c4 = 0;
           c6 = 3;
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp24) {
         closure_3 = tmp24;
@@ -680,7 +680,7 @@ obj = function _validateCollectiblesRecipient() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -757,7 +757,7 @@ obj = function _validateCollectiblesRecipientsBatch() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -884,7 +884,7 @@ obj = function _fetchCollectiblesSequencedOffers() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -942,7 +942,7 @@ obj = function _fetchCollectiblesSequencedOffers() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp30) {
         closure_2 = tmp30;
@@ -979,7 +979,7 @@ obj = function _fetchCollectiblesShopHome() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -1096,7 +1096,7 @@ obj = function _fetchCollectiblesShopHome() {
               c7 = 0;
             }
             c9 = 3;
-            return { value: "HermesInternal", done: "ulw" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp68) {
           closure_6 = tmp68;

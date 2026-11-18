@@ -1,10 +1,10 @@
-// Module ID: 19231
-// Function ID: 19232
+// Module ID: 19232
+// Function ID: 19233
 // Name: useIsConnectedToVoiceChannel
 // Dependencies: [502, 6061, 5971, 1072, 504, 2]
 // Exports: default
 
-// Module 19231 (useIsConnectedToVoiceChannel)
+// Module 19232 (useIsConnectedToVoiceChannel)
 import Constants from "Constants" /* 1072 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;

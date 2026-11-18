@@ -1,10 +1,10 @@
-// Module ID: 19846
-// Function ID: 19847
+// Module ID: 19847
+// Function ID: 19848
 // Name: HexagonCampaignExpiredPromoSheet
 // Dependencies: [5, 32, 19, 5152, 21, 17085, 6957, 17635, 5889, 6005, 1113, 8834, 17104, 10713, 17642, 4516, 5919, 5926, 2]
 // Exports: default
 
-// Module 19846 (HexagonCampaignExpiredPromoSheet)
+// Module 19847 (HexagonCampaignExpiredPromoSheet)
 import Fragment from "Fragment" /* 21 */;
 import _modDef4516 from "module_4516" /* 4516 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
@@ -54,7 +54,7 @@ export default function HexagonCampaignExpiredPromoSheet(markAsDismissed) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -145,7 +145,7 @@ export default function HexagonCampaignExpiredPromoSheet(markAsDismissed) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -182,7 +182,7 @@ export default function HexagonCampaignExpiredPromoSheet(markAsDismissed) {
           open("HEXAGON_CAMPAIGN_RESTORE_ERROR", obj);
         }
         ref = 3;
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp14) {
         ref = 3;
         throw tmp14;

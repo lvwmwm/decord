@@ -1,13 +1,13 @@
-// Module ID: 19230
-// Function ID: 19231
+// Module ID: 19231
+// Function ID: 19232
 // Name: useAccessiblePTT
-// Dependencies: [32, 19, 5558, 19231, 7790, 2]
+// Dependencies: [32, 19, 5558, 19232, 7790, 2]
 // Exports: default
 
-// Module 19230 (useAccessiblePTT)
+// Module 19231 (useAccessiblePTT)
 import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5558 */;
 import useStableCallbackDefault from "useStableCallback" /* 7790 */;
-import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 19231 */;
+import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 19232 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

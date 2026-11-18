@@ -183,7 +183,7 @@ export default function OneTimeLoginModal(token) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -258,7 +258,7 @@ export default function OneTimeLoginModal(token) {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp41) {
         bottom = tmp41;

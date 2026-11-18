@@ -1,9 +1,9 @@
-// Module ID: 19476
-// Function ID: 19477
+// Module ID: 19477
+// Function ID: 19478
 // Name: GridItemPlaceholder
 // Dependencies: [19, 17, 21, 5306, 575, 2]
 
-// Module 19476 (GridItemPlaceholder)
+// Module 19477 (GridItemPlaceholder)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

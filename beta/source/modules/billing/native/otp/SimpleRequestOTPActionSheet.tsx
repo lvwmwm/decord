@@ -42,7 +42,7 @@ function GiftPurchaseSKUView(selectedSkuId) {
   let obj7;
   let tmp16;
   let tmp17;
-  const f117244 = () => {
+  const f117252 = () => {
     let items;
     if (null == c5) {
       items = ["Loading...", "Loading..."];
@@ -191,7 +191,7 @@ function GiftPurchaseSKUView(selectedSkuId) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "ulw" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c3;
@@ -245,7 +245,7 @@ function GiftPurchaseSKUView(selectedSkuId) {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: "ulw" };
+            return { value: "HermesInternal", done: null };
           } catch (tmp30) {
             if (0 === c3) {
               c5 = 3;
@@ -282,8 +282,8 @@ function GiftPurchaseSKUView(selectedSkuId) {
   obj7 = { isGift: true, options: { recipient_id: giftRecipientId, custom_message: giftMessage, gift_style: giftStyle } };
   closure_8 = tmp(11801)(obj6);
   const items5 = [product];
-  [tmp16, tmp17] = tmp3(obj.useMemo(f117244, items5), 2);
-  tmp3(obj.useMemo(f117244, items5), 2);
+  [tmp16, tmp17] = tmp3(obj.useMemo(f117252, items5), 2);
+  tmp3(obj.useMemo(f117252, items5), 2);
   if (!isFetching) {
     isFetching = first;
   }

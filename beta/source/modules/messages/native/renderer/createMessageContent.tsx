@@ -1253,7 +1253,7 @@ function createMessageContent(message) {
       }
       applicationIconSource = author.getAvatarSource(undefined);
     }
-    parseMessageMarkupResult = { content: "Promise", hasSpoilerEmbeds: "installation", hasBailedAst: "2026-11-apex-launch-latch" };
+    parseMessageMarkupResult = { content: "Promise", hasSpoilerEmbeds: "person_biking_tone5", hasBailedAst: "bicyclist_tone5" };
   }
 }
 const processColor = react_native.processColor;

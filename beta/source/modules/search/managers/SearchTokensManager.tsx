@@ -1,9 +1,9 @@
-// Module ID: 20393
-// Function ID: 20394
+// Module ID: 20396
+// Function ID: 20397
 // Name: SearchTokensManager
 // Dependencies: [2190, 7882, 14747, 2]
 
-// Module 20393 (SearchTokensManager)
+// Module 20396 (SearchTokensManager)
 import IntlLoaderStore from "IntlLoaderStore" /* 2190 */;
 import SearchUtils from "SearchUtils" /* 14747 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;

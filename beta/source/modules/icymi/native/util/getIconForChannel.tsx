@@ -1,10 +1,10 @@
-// Module ID: 19328
-// Function ID: 19329
+// Module ID: 19329
+// Function ID: 19330
 // Name: getIconForChannel
 // Dependencies: [1072, 8091, 7432, 8017, 8078, 8086, 8085, 2]
 // Exports: getIconForChannel
 
-// Module 19328 (getIconForChannel)
+// Module 19329 (getIconForChannel)
 import Constants from "Constants" /* 1072 */;
 import VoiceNormalIcon from "VoiceNormalIcon" /* 7432 */;
 import StageIcon from "StageIcon" /* 8017 */;

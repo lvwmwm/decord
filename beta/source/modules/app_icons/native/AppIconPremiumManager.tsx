@@ -1,9 +1,9 @@
-// Module ID: 20177
-// Function ID: 20178
+// Module ID: 20180
+// Function ID: 20181
 // Name: AppIconPremiumManager
 // Dependencies: [5, 16845, 1388, 11179, 1072, 5331, 3, 5332, 7882, 1380, 15314, 5334, 5336, 5338, 5139, 2174, 1256, 2]
 
-// Module 20177 (AppIconPremiumManager)
+// Module 20180 (AppIconPremiumManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
@@ -69,7 +69,7 @@ class AppIconPremiumManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -147,7 +147,7 @@ class AppIconPremiumManager extends AutomaticLifecycleManager {
                     id = _undefined2.id;
                   } else {
                     c7 = 3;
-                    return { value: "HermesInternal", done: "ulw" };
+                    return { value: "HermesInternal", done: null };
                   }
                 }
               }
@@ -191,7 +191,7 @@ class AppIconPremiumManager extends AutomaticLifecycleManager {
               }
             }
             c7 = 3;
-            return { value: "HermesInternal", done: "ulw" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp88) {
           c7 = 3;

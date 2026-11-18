@@ -1,15 +1,15 @@
-// Module ID: 19878
-// Function ID: 19879
+// Module ID: 19879
+// Function ID: 19880
 // Name: UnreadBadge
-// Dependencies: [19, 17, 6050, 6949, 21, 5306, 19490, 5934, 9057, 2]
+// Dependencies: [19, 17, 6050, 6949, 21, 5306, 19491, 5934, 9057, 2]
 
-// Module 19878 (UnreadBadge)
+// Module 19879 (UnreadBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import useFontScale from "useFontScale" /* 5934 */;
 import RedesignChannelListConstants from "RedesignChannelListConstants" /* 6050 */;
 import ReadStateConstants from "ReadStateConstants" /* 6949 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 19490 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 19491 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;

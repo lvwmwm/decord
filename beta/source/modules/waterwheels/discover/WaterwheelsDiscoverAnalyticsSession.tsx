@@ -375,7 +375,7 @@ class WaterwheelsDiscoverAnalyticsSession {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c2;
@@ -411,7 +411,7 @@ class WaterwheelsDiscoverAnalyticsSession {
               c2 = 0;
             }
             c0 = 3;
-            return { value: "HermesInternal", done: "ulw" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp5) {
           if (0 === c2) {

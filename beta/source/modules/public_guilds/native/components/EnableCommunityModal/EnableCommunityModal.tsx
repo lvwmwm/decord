@@ -1,17 +1,17 @@
-// Module ID: 20616
-// Function ID: 20617
+// Module ID: 20619
+// Function ID: 20620
 // Name: EnableCommunityModal
-// Dependencies: [19, 21, 20615, 7499, 7493, 1113, 7427, 7430, 20617, 20618, 20630, 20631, 7490, 2]
+// Dependencies: [19, 21, 20618, 7499, 7493, 1113, 7427, 7430, 20620, 20621, 20633, 20634, 7490, 2]
 // Exports: default
 
-// Module 20616 (EnableCommunityModal)
+// Module 20619 (EnableCommunityModal)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
 import Navigator2 from "Navigator" /* 7490 */;
 import NavigatorHeader from "NavigatorHeader" /* 7493 */;
 import useNavigatorBackPressHandler from "useNavigatorBackPressHandler" /* 7499 */;
-import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 20615 */;
-import EnableCommunitySharedNavigation from "EnableCommunitySharedNavigation" /* 20617 */;
+import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 20618 */;
+import EnableCommunitySharedNavigation from "EnableCommunitySharedNavigation" /* 20620 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

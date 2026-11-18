@@ -1,10 +1,10 @@
-// Module ID: 20757
-// Function ID: 20758
+// Module ID: 20760
+// Function ID: 20761
 // Name: GuildRoleSubscriptionEmojiEditorModal
-// Dependencies: [5, 32, 19, 17, 5261, 21, 5306, 575, 20749, 504, 6010, 1414, 20755, 1113, 6258, 6330, 7733, 20745, 5919, 2]
+// Dependencies: [5, 32, 19, 17, 5261, 21, 5306, 575, 20752, 504, 6010, 1414, 20758, 1113, 6258, 6330, 7733, 20748, 5919, 2]
 // Exports: default
 
-// Module 20757 (GuildRoleSubscriptionEmojiEditorModal)
+// Module 20760 (GuildRoleSubscriptionEmojiEditorModal)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 6258 */;
@@ -71,7 +71,7 @@ export default function GuildRoleSubscriptionEmojiEditorModal(guildId) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -109,7 +109,7 @@ export default function GuildRoleSubscriptionEmojiEditorModal(guildId) {
               c3 = 0;
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "ulw" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp11) {
           let closure_2 = tmp11;

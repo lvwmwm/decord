@@ -1,10 +1,10 @@
-// Module ID: 19376
-// Function ID: 19377
+// Module ID: 19377
+// Function ID: 19378
 // Name: UnavailableNotice
 // Dependencies: [19, 17, 21, 5306, 575, 6010, 18966, 5919, 2]
 // Exports: default
 
-// Module 19376 (UnavailableNotice)
+// Module 19377 (UnavailableNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5919 */;

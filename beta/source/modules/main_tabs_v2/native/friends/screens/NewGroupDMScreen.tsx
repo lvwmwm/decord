@@ -1,10 +1,10 @@
-// Module ID: 19602
-// Function ID: 19603
+// Module ID: 19603
+// Function ID: 19604
 // Name: NewGroupDMScreen
-// Dependencies: [32, 5, 19, 17, 5155, 16257, 6061, 1388, 10244, 1072, 21, 5306, 575, 8134, 6890, 8136, 14037, 5542, 504, 12542, 12544, 12541, 1256, 6005, 1113, 19601, 9051, 12545, 6004, 9061, 15892, 7660, 8475, 1187, 11781, 19538, 2]
+// Dependencies: [32, 5, 19, 17, 5155, 16257, 6061, 1388, 10244, 1072, 21, 5306, 575, 8134, 6890, 8136, 14037, 5542, 504, 12542, 12544, 12541, 1256, 6005, 1113, 19602, 9051, 12545, 6004, 9061, 15892, 7660, 8475, 1187, 11781, 19539, 2]
 // Exports: default
 
-// Module 19602 (NewGroupDMScreen)
+// Module 19603 (NewGroupDMScreen)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
@@ -13,7 +13,7 @@ import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 8134 */;
 import HeaderShared from "HeaderShared" /* 9051 */;
 import UserRowConstants from "UserRowConstants" /* 10244 */;
 import openGroupDMNitroCapLimitSheetDefault from "openGroupDMNitroCapLimitSheet" /* 12545 */;
-import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 19601 */;
+import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 19602 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -62,7 +62,7 @@ let obj = function _handleOneRecipientInDM() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -140,7 +140,7 @@ obj = function _handleInviteUsers() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -212,7 +212,7 @@ obj = function _handleInviteUsers() {
                             const obj2 = { value, done: true };
                             return obj2;
                           } else {
-                            return { value: "HermesInternal", done: "ulw" };
+                            return { value: "HermesInternal", done: null };
                           }
                         } else {
                           try {
@@ -271,7 +271,7 @@ obj = function _handleInviteUsers() {
                                 obj.call(closure_3, false, true);
                                 length(c2[16])(closure_3);
                                 c2 = 3;
-                                return { value: "HermesInternal", done: "ulw" };
+                                return { value: "HermesInternal", done: null };
                               }
                               closure_3 = value;
                               length = 3;
@@ -497,7 +497,7 @@ export default function NewGroupDMScreen(navigation) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -582,7 +582,7 @@ export default function NewGroupDMScreen(navigation) {
           c3 = 0;
           closure_129_11(false);
           c5 = 3;
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp48) {
         locationPage = tmp48;
@@ -817,7 +817,7 @@ export default function NewGroupDMScreen(navigation) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -864,7 +864,7 @@ export default function NewGroupDMScreen(navigation) {
             closure_1_25(false);
           }
           channel = 3;
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp14) {
           channel = 3;
           throw tmp14;

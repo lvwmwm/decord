@@ -1,9 +1,9 @@
-// Module ID: 19917
-// Function ID: 19918
+// Module ID: 19918
+// Function ID: 19919
 // Name: ConjureAppPictureInPicture
-// Dependencies: [19, 17, 7019, 5177, 1072, 19780, 7020, 11986, 21, 5263, 5306, 575, 19916, 7308, 504, 7720, 5919, 15619, 13018, 7432, 7259, 12881, 19918, 16993, 1655, 15149, 5544, 5588, 1708, 5538, 5929, 1113, 4131, 5367, 13355, 13359, 2]
+// Dependencies: [19, 17, 7019, 5177, 1072, 19781, 7020, 11986, 21, 5263, 5306, 575, 19917, 7308, 504, 7720, 5919, 15619, 13018, 7432, 7259, 12881, 19919, 16993, 1655, 15149, 5544, 5588, 1708, 5538, 5929, 1113, 4131, 5367, 13355, 13359, 2]
 
-// Module 19917 (ConjureAppPictureInPicture)
+// Module 19918 (ConjureAppPictureInPicture)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -11,9 +11,9 @@ import LegacyBaseButton from "LegacyBaseButton" /* 5588 */;
 import getGuildIdForEmbeddedSurfaceDefault from "getGuildIdForEmbeddedSurface" /* 7308 */;
 import MorphablePanelConstants from "MorphablePanelConstants" /* 11986 */;
 import conjureFrameSound from "conjureFrameSound" /* 15619 */;
-import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 19780 */;
-import conjureAppPictureInPictureLayout from "conjureAppPictureInPictureLayout" /* 19916 */;
-import conjureAppPictureInPictureActions2 from "conjureAppPictureInPictureActions" /* 19918 */;
+import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 19781 */;
+import conjureAppPictureInPictureLayout from "conjureAppPictureInPictureLayout" /* 19917 */;
+import conjureAppPictureInPictureActions2 from "conjureAppPictureInPictureActions" /* 19919 */;
 import react from "react" /* 19 */;
 import FramesStore from "FramesStore" /* 7019 */;
 import GuildStore from "GuildStore" /* 5177 */;

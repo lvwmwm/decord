@@ -1,10 +1,10 @@
-// Module ID: 19855
-// Function ID: 19856
+// Module ID: 19856
+// Function ID: 19857
 // Name: useHexagonCampaignExpirySheetEligibility
 // Dependencies: [32, 19, 5330, 6790, 1192, 1388, 16845, 5331, 1195, 5334, 5337, 504, 15314, 5365, 17635, 5338, 5139, 17629, 2]
 // Exports: useHexagonCampaignExpirySheetEligibility
 
-// Module 19855 (useHexagonCampaignExpirySheetEligibility)
+// Module 19856 (useHexagonCampaignExpirySheetEligibility)
 import ThemeConstants from "ThemeConstants" /* 1195 */;
 import restoreHexagonCampaignPerks from "restoreHexagonCampaignPerks" /* 17635 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

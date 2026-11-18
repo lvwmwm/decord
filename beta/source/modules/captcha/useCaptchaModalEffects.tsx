@@ -1,10 +1,10 @@
-// Module ID: 20146
-// Function ID: 20147
+// Module ID: 20149
+// Function ID: 20150
 // Name: useCaptchaModalEffects
 // Dependencies: [19, 1072, 5889, 6759, 1256, 2]
 // Exports: default
 
-// Module 20146 (useCaptchaModalEffects)
+// Module 20149 (useCaptchaModalEffects)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import react from "react" /* 19 */;

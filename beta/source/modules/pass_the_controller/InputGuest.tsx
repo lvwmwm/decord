@@ -110,7 +110,7 @@ class InputGuest {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -180,7 +180,7 @@ class InputGuest {
               closure_128_0.isMouseCaptured = true;
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "ulw" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp19) {
           let closure_2 = tmp19;

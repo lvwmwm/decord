@@ -97,7 +97,7 @@ export default function HubEmailConnectionContent(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c5;
@@ -225,7 +225,7 @@ export default function HubEmailConnectionContent(arg0) {
             c5 = 0;
             closure_131_5(false);
             c7 = 3;
-            return { value: "HermesInternal", done: "ulw" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp78) {
           closure_4 = tmp78;

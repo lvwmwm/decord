@@ -1,19 +1,19 @@
-// Module ID: 19245
-// Function ID: 19246
+// Module ID: 19246
+// Function ID: 19247
 // Name: useNotificationCenterItemsLoader
-// Dependencies: [5, 32, 19, 7061, 7032, 19244, 6949, 504, 19246, 7874, 8615, 2]
+// Dependencies: [5, 32, 19, 7061, 7032, 19245, 6949, 504, 19247, 7874, 8615, 2]
 // Exports: useNotificationCenterItemsLoader
 
-// Module 19245 (useNotificationCenterItemsLoader)
+// Module 19246 (useNotificationCenterItemsLoader)
 import ReadStateConstants from "ReadStateConstants" /* 6949 */;
 import ReadStateActionCreators from "ReadStateActionCreators" /* 7874 */;
-import NotificationCenterItemsActions from "NotificationCenterItemsActions" /* 19246 */;
+import NotificationCenterItemsActions from "NotificationCenterItemsActions" /* 19247 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import RecentMentionsStore from "RecentMentionsStore" /* 7061 */;
 import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 7032 */;
-import NotificationCenterStore from "NotificationCenterStore" /* 19244 */;
+import NotificationCenterStore from "NotificationCenterStore" /* 19245 */;
 import size from "module_2" /* 2 */;
 
 let c2, with_mentions;
@@ -132,7 +132,7 @@ export function useNotificationCenterItemsLoader(isFocused) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -197,7 +197,7 @@ export function useNotificationCenterItemsLoader(isFocused) {
           _undefined(false);
         }
         with_mentions = 3;
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp22) {
         with_mentions = 3;
         throw tmp22;

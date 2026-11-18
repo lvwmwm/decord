@@ -1,10 +1,10 @@
-// Module ID: 20341
-// Function ID: 20342
+// Module ID: 20344
+// Function ID: 20345
 // Name: NewUserUtils
-// Dependencies: [5, 18663, 7085, 1388, 14826, 1072, 14995, 6892, 18711, 14997, 1380, 8199, 18712, 14827, 1242, 19031, 8460, 572, 1503, 15000, 6838, 20340, 1099, 15111, 2]
+// Dependencies: [5, 18663, 7085, 1388, 14826, 1072, 14995, 6892, 18711, 14997, 1380, 8199, 18712, 14827, 1242, 19031, 8460, 572, 1503, 15000, 6838, 20343, 1099, 15111, 2]
 // Exports: continueToNextStep, getKeyForOnboardingStep
 
-// Module 20341 (NewUserUtils)
+// Module 20344 (NewUserUtils)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import router_utils from "router_utils" /* 1099 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
@@ -18,7 +18,7 @@ import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 15000 */;
 import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 15111 */;
 import MobileOnboardingFrictionExperimentDefault from "MobileOnboardingFrictionExperiment" /* 18711 */;
 import InterestPickerExperiment from "InterestPickerExperiment" /* 19031 */;
-import NewUserModalTypes from "NewUserModalTypes" /* 20340 */;
+import NewUserModalTypes from "NewUserModalTypes" /* 20343 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ParentalConsentStore from "ParentalConsentStore" /* 18663 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 7085 */;
@@ -51,7 +51,7 @@ let obj = function _shouldSkipContactSyncStep() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "ulw" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -133,7 +133,7 @@ obj = function _getNextOnboardingStep() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -299,7 +299,7 @@ let closure_16 = _asyncToGenerator(async (arg0, value) => {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "HermesInternal", done: "ulw" };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     let c3;
@@ -388,7 +388,7 @@ let closure_16 = _asyncToGenerator(async (arg0, value) => {
               } else {
                 c3 = 0;
                 c5 = 3;
-                return { value: "HermesInternal", done: "ulw" };
+                return { value: "HermesInternal", done: null };
               }
             }
           }
@@ -436,7 +436,7 @@ let closure_17 = _asyncToGenerator(async (arg0, value) => {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: "ulw" };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {

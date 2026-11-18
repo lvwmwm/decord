@@ -1,10 +1,10 @@
-// Module ID: 19368
-// Function ID: 19369
+// Module ID: 19369
+// Function ID: 19370
 // Name: ChannelScreenFrameContainer
 // Dependencies: [19, 17, 21, 5306, 575, 18715, 5892, 1655, 5263, 2]
 // Exports: ChannelScreenFrameTopBorder, default
 
-// Module 19368 (ChannelScreenFrameContainer)
+// Module 19369 (ChannelScreenFrameContainer)
 import nativeDefault from "native" /* 575 */;
 import _mod1655 from "module_1655" /* 1655 */;
 import DeviceUtils from "DeviceUtils" /* 5263 */;

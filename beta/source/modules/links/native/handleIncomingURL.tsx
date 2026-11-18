@@ -1,16 +1,16 @@
-// Module ID: 20897
-// Function ID: 20898
+// Module ID: 20900
+// Function ID: 20901
 // Name: handleIncomingURL
-// Dependencies: [5, 5155, 6061, 2120, 1072, 3, 8678, 20896, 6890, 1256, 16285, 6038, 15993, 6043, 1254, 7660, 18648, 20898, 2]
+// Dependencies: [5, 5155, 6061, 2120, 1072, 3, 8678, 20899, 6890, 1256, 16285, 6038, 15993, 6043, 1254, 7660, 18648, 20901, 2]
 // Exports: default
 
-// Module 20897 (handleIncomingURL)
+// Module 20900 (handleIncomingURL)
 import LoggerDefault from "Logger" /* 3 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6890 */;
 import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 8678 */;
 import handleSupportedURLDefault from "handleSupportedURL" /* 16285 */;
-import DeepLinkTypes from "DeepLinkTypes" /* 20896 */;
+import DeepLinkTypes from "DeepLinkTypes" /* 20899 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
@@ -53,7 +53,7 @@ let obj = function _handleIncomingURL() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -175,18 +175,18 @@ let obj = function _handleIncomingURL() {
                       }
                     }
                     c8 = 3;
-                    return { value: "HermesInternal", done: "ulw" };
+                    return { value: "HermesInternal", done: null };
                   } else {
                     const parts = url.split("voice/");
                     if (2 !== parts.length) {
                       c8 = 3;
-                      return { value: "HermesInternal", done: "ulw" };
+                      return { value: "HermesInternal", done: null };
                     } else {
                       const str36 = parts[1];
                       const parts1 = str36.split("/");
                       if (0 === parts1.length) {
                         c8 = 3;
-                        return { value: "HermesInternal", done: "ulw" };
+                        return { value: "HermesInternal", done: null };
                       } else if ("user" !== parts1[0]) {
                         if ("invite" === parts1[0]) {
                           const obj13 = { payload: obj14, isAppStartupNavigation };
@@ -226,7 +226,7 @@ let obj = function _handleIncomingURL() {
                 }
               }
               c8 = 3;
-              return { value: "HermesInternal", done: "ulw" };
+              return { value: "HermesInternal", done: null };
             }
           } else if (1 === tmp4) {
             c6 = 0;

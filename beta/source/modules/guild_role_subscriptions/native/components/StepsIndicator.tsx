@@ -1,10 +1,10 @@
-// Module ID: 20770
-// Function ID: 20771
+// Module ID: 20773
+// Function ID: 20774
 // Name: StepsIndicator
 // Dependencies: [19, 17, 5307, 21, 5306, 575, 1655, 5538, 5919, 504, 2]
 // Exports: default
 
-// Module 20770 (StepsIndicator)
+// Module 20773 (StepsIndicator)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

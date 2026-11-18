@@ -1,10 +1,10 @@
-// Module ID: 20885
-// Function ID: 20886
+// Module ID: 20888
+// Function ID: 20889
 // Name: ErrorScreen
-// Dependencies: [5, 32, 19, 17, 21, 5306, 575, 1502, 20863, 20867, 5919, 1113, 6327, 5926, 6834, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5306, 575, 1502, 20866, 20870, 5919, 1113, 6327, 5926, 6834, 2]
 // Exports: default
 
-// Module 20885 (ErrorScreen)
+// Module 20888 (ErrorScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -52,7 +52,7 @@ export default function ErrorScreen() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -99,7 +99,7 @@ export default function ErrorScreen() {
             c3 = 0;
             closure_129_0(false);
             c5 = 3;
-            return { value: "HermesInternal", done: "ulw" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp29) {
           closure_2 = tmp29;

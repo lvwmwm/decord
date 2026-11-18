@@ -1,10 +1,10 @@
-// Module ID: 19884
-// Function ID: 19885
+// Module ID: 19885
+// Function ID: 19886
 // Name: useTextChannelPressEvents
 // Dependencies: [19, 5155, 8134, 6053, 11147, 18836, 10894, 2]
 // Exports: useTextChannelPressEvents
 
-// Module 19884 (useTextChannelPressEvents)
+// Module 19885 (useTextChannelPressEvents)
 import transitionToChannel from "transitionToChannel" /* 6053 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 8134 */;
 import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10894 */;

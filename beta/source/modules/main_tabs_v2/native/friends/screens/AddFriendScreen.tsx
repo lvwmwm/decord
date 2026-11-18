@@ -1,10 +1,10 @@
-// Module ID: 19603
-// Function ID: 19604
+// Module ID: 19604
+// Function ID: 19605
 // Name: AddFriendScreen
 // Dependencies: [32, 19, 17, 1388, 1072, 14995, 21, 5306, 575, 14997, 5362, 1256, 1113, 10230, 9051, 1380, 10271, 5919, 16290, 16291, 2]
 // Exports: default
 
-// Module 19603 (AddFriendScreen)
+// Module 19604 (AddFriendScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import ContactSyncConstants from "ContactSyncConstants" /* 14995 */;

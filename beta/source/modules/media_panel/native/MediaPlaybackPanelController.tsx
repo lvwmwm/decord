@@ -1,10 +1,10 @@
-// Module ID: 20125
-// Function ID: 20126
+// Module ID: 20128
+// Function ID: 20129
 // Name: MediaPlaybackPanelController
-// Dependencies: [32, 19, 5307, 5154, 6891, 17020, 5949, 11986, 21, 1655, 1630, 19913, 17019, 504, 20126, 2]
+// Dependencies: [32, 19, 5307, 5154, 6891, 17020, 5949, 11986, 21, 1655, 1630, 19914, 17019, 504, 20129, 2]
 // Exports: default
 
-// Module 20125 (MediaPlaybackPanelController)
+// Module 20128 (MediaPlaybackPanelController)
 import Fragment from "Fragment" /* 21 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5949 */;
 import MorphablePanelConstants from "MorphablePanelConstants" /* 11986 */;

@@ -125,7 +125,7 @@ export default function UserProfileWishlistGrid(wishlistId) {
   let stringResult;
   let tmp31;
   let tmp5;
-  const f112477 = () => {
+  const f112485 = () => {
     set = new Set();
     return set;
   };
@@ -284,10 +284,10 @@ export default function UserProfileWishlistGrid(wishlistId) {
     userId1 = stateFromStores.userId;
   }
   closure_14 = tmp2Result3({ ownerId: userId1, wishlistId, isVisible });
-  [c15, c16] = analyticsLocations(obj12.useState(f112477), 2);
+  [c15, c16] = analyticsLocations(obj12.useState(f112485), 2);
   let obj4 = { wishlistId, onAction: trackUserProfileWishlistAction, productLines: tmp31, isVisible };
   tmp31 = null;
-  analyticsLocations(obj12.useState(f112477), 2);
+  analyticsLocations(obj12.useState(f112485), 2);
   const tmp2Result4 = tmp2(tmp3[34]);
   if (null != stateFromStores) {
     tmp31 = memo1(stateFromStores);
@@ -326,7 +326,7 @@ export default function UserProfileWishlistGrid(wishlistId) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -606,7 +606,7 @@ export default function UserProfileWishlistGrid(wishlistId) {
             openGiftModal(obj39);
           }
           c7 = 3;
-          return { value: "HermesInternal", done: "ulw" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp140) {
           closure_4 = tmp140;
           if (0 === v0) {

@@ -1,14 +1,14 @@
-// Module ID: 20828
-// Function ID: 20829
+// Module ID: 20831
+// Function ID: 20832
 // Name: AVErrorManager
-// Dependencies: [109, 6810, 5209, 5971, 12789, 3, 20829, 7882, 6247, 572, 20849, 2]
+// Dependencies: [109, 6810, 5209, 5971, 12789, 3, 20832, 7882, 6247, 572, 20852, 2]
 
-// Module 20828 (AVErrorManager)
+// Module 20831 (AVErrorManager)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import AVError from "AVError" /* 6247 */;
-import ErrorDefinitions from "ErrorDefinitions" /* 20829 */;
-import AVErrorAnalytics from "AVErrorAnalytics" /* 20849 */;
+import ErrorDefinitions from "ErrorDefinitions" /* 20832 */;
+import AVErrorAnalytics from "AVErrorAnalytics" /* 20852 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6810 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;

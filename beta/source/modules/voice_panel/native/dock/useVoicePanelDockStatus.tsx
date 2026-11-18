@@ -1,10 +1,10 @@
-// Module ID: 19983
-// Function ID: 19984
+// Module ID: 19984
+// Function ID: 19985
 // Name: useVoicePanelDockStatus
 // Dependencies: [32, 19, 7016, 6359, 502, 6061, 6931, 1388, 5971, 19204, 5973, 6361, 11984, 504, 1089, 572, 2]
 // Exports: default
 
-// Module 19983 (useVoicePanelDockStatus)
+// Module 19984 (useVoicePanelDockStatus)
 import DurationsDefault from "Durations" /* 1089 */;
 import CallConstants from "CallConstants" /* 5973 */;
 import SoundboardConstants from "SoundboardConstants" /* 6361 */;

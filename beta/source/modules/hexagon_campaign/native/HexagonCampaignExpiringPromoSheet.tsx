@@ -1,10 +1,10 @@
-// Module ID: 19847
-// Function ID: 19848
+// Module ID: 19848
+// Function ID: 19849
 // Name: HexagonCampaignExpiringPromoSheet
 // Dependencies: [19, 5331, 1072, 5152, 21, 17085, 6957, 5889, 8834, 9579, 10954, 17104, 10713, 17642, 1113, 4516, 5919, 10074, 2]
 // Exports: default
 
-// Module 19847 (HexagonCampaignExpiringPromoSheet)
+// Module 19848 (HexagonCampaignExpiringPromoSheet)
 import Fragment from "Fragment" /* 21 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
 import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5331 */;

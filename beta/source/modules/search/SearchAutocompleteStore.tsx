@@ -1,9 +1,9 @@
-// Module ID: 19570
-// Function ID: 19571
+// Module ID: 19571
+// Function ID: 19572
 // Name: SearchAutocompleteStore
 // Dependencies: [5155, 5218, 5177, 5209, 5363, 1388, 14750, 1072, 7071, 14747, 10250, 5362, 6151, 7075, 6952, 14751, 14748, 504, 572, 2]
 
-// Module 19570 (SearchAutocompleteStore)
+// Module 19571 (SearchAutocompleteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import UserUtilsDefault from "UserUtils" /* 5362 */;

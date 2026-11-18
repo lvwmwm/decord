@@ -1,10 +1,10 @@
-// Module ID: 20630
-// Function ID: 20631
+// Module ID: 20633
+// Function ID: 20634
 // Name: ChannelSetupScreen
-// Dependencies: [19, 17, 8405, 5155, 5236, 5248, 1388, 8407, 1072, 21, 5892, 575, 20619, 504, 5944, 1113, 20620, 5542, 8009, 2121, 8404, 20617, 5919, 6010, 6327, 7746, 7443, 2]
+// Dependencies: [19, 17, 8405, 5155, 5236, 5248, 1388, 8407, 1072, 21, 5892, 575, 20622, 504, 5944, 1113, 20623, 5542, 8009, 2121, 8404, 20620, 5919, 6010, 6327, 7746, 7443, 2]
 // Exports: default
 
-// Module 20630 (ChannelSetupScreen)
+// Module 20633 (ChannelSetupScreen)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl13 from "intl" /* 1113 */;
@@ -58,7 +58,7 @@ export default function ChannelSetupScreen() {
   const ref = react.useRef(null);
   let obj = guild(5892);
   const token = obj.useToken(callback(575).modules.mobile.TABLE_ROW_PADDING);
-  let obj2 = guild(20619);
+  let obj2 = guild(20622);
   const enableCommunitySharedStyles = obj2.useEnableCommunitySharedStyles();
   let obj3 = guild(504);
   let items = [GuildSettingsStore];
@@ -116,7 +116,7 @@ export default function ChannelSetupScreen() {
     tmp12 = stringResult1;
   }
   let id;
-  const tmp16 = callback(20620)();
+  const tmp16 = callback(20623)();
   const useCallback = tmp.useCallback;
   if (guild != null) {
     id = guild.id;
@@ -229,8 +229,8 @@ export default function ChannelSetupScreen() {
     }
     openLazy(tmp2, "SelectUpdatesChannel", obj);
   }, items4);
-  const obj5 = { headerRef: ref, disableNextStep: false, currentStep: guild(20617).EnableCommunityModalSteps.STEP_2, children: items6 };
-  const EnableCommunityModalScreen = tmp3(20617).EnableCommunityModalScreen;
+  const obj5 = { headerRef: ref, disableNextStep: false, currentStep: guild(20620).EnableCommunityModalSteps.STEP_2, children: items6 };
+  const EnableCommunityModalScreen = tmp3(20620).EnableCommunityModalScreen;
   const obj6 = { style: enableCommunitySharedStyles.content, children: items5 };
   const obj7 = { ref, accessibilityRole: "header", variant: "body-md/semibold", color: "text-subtle", children: intl4.formatToPlainString(guild(1113).t.tInpJj, { number: 2, total: 3 }) };
   const Text = tmp3(5919).Text;

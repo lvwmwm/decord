@@ -1,10 +1,10 @@
-// Module ID: 19859
-// Function ID: 19860
+// Module ID: 19860
+// Function ID: 19861
 // Name: react-native
 // Dependencies: [16891, 2]
 // Exports: updateTheme
 
-// Module 19859 (react-native)
+// Module 19860 (react-native)
 import react_nativeDefault from "react-native" /* 16891 */;
 import size from "module_2" /* 2 */;
 

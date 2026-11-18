@@ -1,9 +1,9 @@
-// Module ID: 20191
-// Function ID: 20192
+// Module ID: 20194
+// Function ID: 20195
 // Name: CacheManager
 // Dependencies: [6790, 8679, 3, 1089, 7882, 8761, 18208, 1380, 1092, 2]
 
-// Module 20191 (CacheManager)
+// Module 20194 (CacheManager)
 import LoggerDefault from "Logger" /* 3 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
