@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/mfa/native/images", width: 380, height: 290, scales: [1], hash: "e8d550faf4e256dff3cc4faddf07f107", name: "img_keychain", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "5ec77c8acc74b99b6106b4203580cb98", name: "BugIcon", type: "png" });

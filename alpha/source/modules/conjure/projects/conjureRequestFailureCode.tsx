@@ -1,10 +1,10 @@
-// Module ID: 7344
-// Function ID: 7345
+// Module ID: 6849
+// Function ID: 6850
 // Name: conjureRequestFailureCode
 // Dependencies: [2]
 // Exports: default
 
-// Module 7344 (conjureRequestFailureCode)
+// Module 6849 (conjureRequestFailureCode)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/projects/conjureRequestFailureCode.tsx");

@@ -1,25 +1,25 @@
-// Module ID: 13037
-// Function ID: 13038
+// Module ID: 12324
+// Function ID: 12325
 // Name: GuildRaidResolveActionSheet
-// Dependencies: [5, 32, 19, 17, 1072, 6908, 21, 5310, 575, 1113, 8732, 5546, 6064, 12997, 6913, 7961, 7484, 5923, 8117, 1187, 5930, 2]
+// Dependencies: [5, 32, 19, 17, 1072, 6412, 21, 4823, 575, 1113, 8223, 5037, 5560, 12284, 6417, 7464, 6987, 5414, 7620, 1187, 5421, 2]
 // Exports: default
 
-// Module 13037 (GuildRaidResolveActionSheet)
+// Module 12324 (GuildRaidResolveActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl9 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5923 */;
-import components_Button_Button from "components/Button/Button" /* 5930 */;
-import Constants2 from "Constants" /* 6908 */;
-import KeyboardAwareViewDefault from "KeyboardAwareView" /* 7484 */;
-import ActionSheet2 from "ActionSheet" /* 7961 */;
-import AutomodFeedback from "AutomodFeedback" /* 8732 */;
+import Text_Text from "Text/Text" /* 5414 */;
+import components_Button_Button from "components/Button/Button" /* 5421 */;
+import Constants2 from "Constants" /* 6412 */;
+import KeyboardAwareViewDefault from "KeyboardAwareView" /* 6987 */;
+import ActionSheet2 from "ActionSheet" /* 7464 */;
+import AutomodFeedback from "AutomodFeedback" /* 8223 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, dependencyMap, raid_alert_id;
@@ -223,7 +223,7 @@ export default function GuildRaidResolveActionSheet(arg0) {
       leading: handleTextInputChange(Checkbox, obj3),
       label: text
     };
-    const FormRow = require("module_8117").FormRow;
+    const FormRow = require("module_7620").FormRow;
     obj3 = { selected: _undefined.includes(value) };
     Checkbox = require("native").Checkbox;
     items = [handleTextInputChange(FormRow, obj2), ];

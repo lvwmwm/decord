@@ -1,15 +1,15 @@
-// Module ID: 10693
-// Function ID: 10694
+// Module ID: 9974
+// Function ID: 9975
 // Name: ForwardActionCreators
-// Dependencies: [32, 5, 5159, 5242, 1072, 5315, 10654, 8797, 1095, 8799, 1406, 8671, 10689, 2]
+// Dependencies: [32, 5, 4672, 4755, 1072, 4828, 9935, 8294, 1095, 8296, 1406, 8162, 9970, 2]
 
-// Module 10693 (ForwardActionCreators)
+// Module 9974 (ForwardActionCreators)
 import Constants from "Constants" /* 1072 */;
-import MessageConstants from "MessageConstants" /* 5315 */;
+import MessageConstants from "MessageConstants" /* 4828 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 5159 */;
-import PermissionStore from "PermissionStore" /* 5242 */;
+import ChannelStore from "ChannelStore" /* 4672 */;
+import PermissionStore from "PermissionStore" /* 4755 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3;

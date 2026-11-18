@@ -1,18 +1,18 @@
-// Module ID: 17596
-// Function ID: 17597
+// Module ID: 16398
+// Function ID: 16399
 // Name: useBountyPauseAppStoreSheet
-// Dependencies: [19, 6962, 1072, 10585, 10613, 17594, 1108, 6967, 8845, 10615, 8836, 6969, 11288, 17591, 2]
+// Dependencies: [19, 6466, 1072, 9866, 9894, 16396, 1108, 6471, 8342, 9896, 8333, 6473, 10570, 16393, 2]
 // Exports: useBountyPauseAppStoreSheet
 
-// Module 17596 (useBountyPauseAppStoreSheet)
+// Module 16398 (useBountyPauseAppStoreSheet)
 import Constants from "Constants" /* 1072 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
-import QuestConstants from "QuestConstants" /* 6962 */;
-import AdCreativeType from "AdCreativeType" /* 6969 */;
-import AnalyticsActions from "AnalyticsActions" /* 8836 */;
-import trackAppStoreOverlaySurfaceClicked from "trackAppStoreOverlaySurfaceClicked" /* 11288 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 17591 */;
-import QuestCustomAppStoreOverlayUtils from "QuestCustomAppStoreOverlayUtils" /* 17594 */;
+import QuestConstants from "QuestConstants" /* 6466 */;
+import AdCreativeType from "AdCreativeType" /* 6473 */;
+import AnalyticsActions from "AnalyticsActions" /* 8333 */;
+import trackAppStoreOverlaySurfaceClicked from "trackAppStoreOverlaySurfaceClicked" /* 10570 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 16393 */;
+import QuestCustomAppStoreOverlayUtils from "QuestCustomAppStoreOverlayUtils" /* 16396 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -137,7 +137,7 @@ export function useBountyPauseAppStoreSheet(bounty) {
         const tmp3 = require;
         if (arg0 === AdsVideoTypes.PlaybackTriggerSource.USER_INTERACTION) {
           if (null != c5) {
-            if (tmp5 === tmp3(10585).BountiesMobileQuestBarCtrVariant.FIRST_TAP_APP_STORE_OVERLAY) {
+            if (tmp5 === tmp3(9866).BountiesMobileQuestBarCtrVariant.FIRST_TAP_APP_STORE_OVERLAY) {
               if (!ref.current) {
                 tmp9.current = true;
                 const promise = callback1();

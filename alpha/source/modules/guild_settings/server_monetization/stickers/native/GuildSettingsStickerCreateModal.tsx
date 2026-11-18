@@ -1,14 +1,14 @@
-// Module ID: 20575
-// Function ID: 20576
+// Module ID: 19848
+// Function ID: 19849
 // Name: GuildSettingsStickerCreateModal
-// Dependencies: [19, 21, 11212, 1503, 6330, 11215, 1113, 20576, 2]
+// Dependencies: [19, 21, 10494, 1503, 5832, 10497, 1113, 19849, 2]
 // Exports: default
 
-// Module 20575 (GuildSettingsStickerCreateModal)
+// Module 19848 (GuildSettingsStickerCreateModal)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
 import Link from "Link" /* 1503 */;
-import GuildSettingsStickerCreateDefault from "GuildSettingsStickerCreate" /* 20576 */;
+import GuildSettingsStickerCreateDefault from "GuildSettingsStickerCreate" /* 19849 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -28,15 +28,15 @@ export default function GuildSettingsStickerCreateModal(arg0) {
   ({ guildId: require, stickerId } = arg0);
   dependencyMap = undefined;
   c3 = undefined;
-  ({ onGoBack: c2, ref: c3 } = stickerId(11212)());
-  stickerId(11212)();
+  ({ onGoBack: c2, ref: c3 } = stickerId(10494)());
+  stickerId(10494)();
   const obj = Link;
   const isFocused = obj.useIsFocused();
-  stickerId(6330)(() => {
+  stickerId(5832)(() => {
     onFinish(true);
     return true;
   }, isFocused);
-  const tmp7 = stickerId(11215);
+  const tmp7 = stickerId(10497);
   const intl = intl2.intl;
   const string = intl.string;
   const tmp6 = c3;

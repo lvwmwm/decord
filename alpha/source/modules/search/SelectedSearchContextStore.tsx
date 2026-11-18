@@ -1,12 +1,12 @@
-// Module ID: 13828
-// Function ID: 13829
+// Module ID: 13135
+// Function ID: 13136
 // Name: SelectedSearchContextStore
-// Dependencies: [6158, 504, 572, 2]
+// Dependencies: [5654, 504, 572, 2]
 
-// Module 13828 (SelectedSearchContextStore)
+// Module 13135 (SelectedSearchContextStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import isEqualDefault from "isEqual" /* 6158 */;
+import isEqualDefault from "isEqual" /* 5654 */;
 import size from "module_2" /* 2 */;
 
 function handleSearchContextUpdate(searchContext) {

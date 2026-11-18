@@ -1,25 +1,25 @@
-// Module ID: 16948
-// Function ID: 16949
+// Module ID: 15598
+// Function ID: 15599
 // Name: ConjureVoiceSessionCoordinator
-// Dependencies: [7027, 502, 2133, 6068, 1388, 5975, 1072, 6072, 6226, 7313, 16949, 1269, 572, 16951, 12, 6223, 16952, 16950, 7030, 2]
+// Dependencies: [6531, 502, 2133, 5564, 1388, 5471, 1072, 5568, 5722, 6818, 15599, 1269, 572, 15601, 12, 5719, 15602, 15600, 6534, 2]
 
-// Module 16948 (ConjureVoiceSessionCoordinator)
+// Module 15598 (ConjureVoiceSessionCoordinator)
 import _modDef12 from "module_12" /* 12 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants2 from "Constants" /* 1072 */;
-import SpatialAudioForVoiceExperimentDefault from "SpatialAudioForVoiceExperiment" /* 6226 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 7030 */;
-import RPCErrorDefault from "RPCError" /* 7313 */;
-import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 16950 */;
-import ConjureVoiceAcoustics from "ConjureVoiceAcoustics" /* 16951 */;
-import ConjureVoiceGeometry from "ConjureVoiceGeometry" /* 16952 */;
-import FramesStore from "FramesStore" /* 7027 */;
+import SpatialAudioForVoiceExperimentDefault from "SpatialAudioForVoiceExperiment" /* 5722 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6534 */;
+import RPCErrorDefault from "RPCError" /* 6818 */;
+import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 15600 */;
+import ConjureVoiceAcoustics from "ConjureVoiceAcoustics" /* 15601 */;
+import ConjureVoiceGeometry from "ConjureVoiceGeometry" /* 15602 */;
+import FramesStore from "FramesStore" /* 6531 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6068 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5564 */;
 import UserStore from "UserStore" /* 1388 */;
-import VoiceStateStore from "VoiceStateStore" /* 5975 */;
-import Constants from "Constants" /* 6072 */;
+import VoiceStateStore from "VoiceStateStore" /* 5471 */;
+import Constants from "Constants" /* 5568 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault, set, user, user_id;
@@ -27,7 +27,7 @@ let dependencyMap, importDefault, set, user, user_id;
 let c10;
 let tmp7;
 let unpackModuleId;
-const AudioActionCreatorsDefault = tmp7(6223);
+const AudioActionCreatorsDefault = tmp7(5719);
 const RPCErrors = Constants2.RPCErrors;
 ({ Features: c10, MediaEngineContextTypes: unpackModuleId } = Constants);
 let closure_12 = { x: 0, y: 0, z: -1 };
@@ -145,11 +145,11 @@ class ConjureVoiceSessionCoordinator {
     if (null != connectedRTCConnection) {
       if (null != mediaEngineConnectionId) {
         if (channelId !== connectedRTCConnection.channelId) {
-          const obj13 = handleFrameLifecycleChange(16949);
+          const obj13 = handleFrameLifecycleChange(15599);
           if (obj13.isConjureApplication(applicationId)) {
-            const tmp33Result = handleFrameLifecycleChange(16949);
+            const tmp33Result = handleFrameLifecycleChange(15599);
             if (!tmp33Result.isUserScopedConjureApplication(applicationId)) {
-              const tmp33Result2 = handleFrameLifecycleChange(16949);
+              const tmp33Result2 = handleFrameLifecycleChange(15599);
               if (!tmp33Result2.isVoiceChannelInFrameGuild(frame, connectedRTCConnection.channelId)) {
                 const self4 = this;
                 const self5 = this;
@@ -255,7 +255,7 @@ class ConjureVoiceSessionCoordinator {
         const tmp18 = new RPCErrorDefault(obj3, roomError);
         throw tmp18;
       } else {
-        const tmp9Result = tmp9(16951);
+        const tmp9Result = tmp9(15601);
         validateSessionResult.acoustics = tmp9Result.toSpatialAudioOverrides(acoustics);
         const result = self.syncSpatialAudioOverrides();
       }

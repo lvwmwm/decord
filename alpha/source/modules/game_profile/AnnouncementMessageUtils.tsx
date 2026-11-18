@@ -1,13 +1,14 @@
-// Module ID: 10503
-// Function ID: 10504
+// Module ID: 9784
+// Function ID: 9785
 // Name: AnnouncementMessageUtils
-// Dependencies: [5253, 2119, 6381, 6359, 1090, 10504, 6372, 10505, 1113, 1381, 2]
-// Exports: getPollExpiryLabel, getPosterUrl, toAnnouncementMessages
+// Dependencies: [4766, 2119, 5883, 5861, 1090, 9785, 5874, 9786, 1113, 1449, 1381, 2]
+// Exports: getAnnouncementMediaURL, getPollExpiryLabel, getPosterUrl, toAnnouncementMessages
 
-// Module 10503 (AnnouncementMessageUtils)
+// Module 9784 (AnnouncementMessageUtils)
 import URLUtilsDefault from "URLUtils" /* 1381 */;
-import MessageRecord from "MessageRecord" /* 5253 */;
-import useFormattedExpirationLabel from "useFormattedExpirationLabel" /* 10505 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1449 */;
+import MessageRecord from "MessageRecord" /* 4766 */;
+import useFormattedExpirationLabel from "useFormattedExpirationLabel" /* 9786 */;
 import size from "module_2" /* 2 */;
 
 let reactions;
@@ -262,6 +263,33 @@ export function getPollExpiryLabel(poll) {
     result = intl.string(tmp(1113).t["e+J3JZ"]);
   }
   return result;
+}
+export function getAnnouncementMediaURL(assetURL, arg1, arg2) {
+  const getBestMediaProxySize = ImageLoaderUtils.getBestMediaProxySize;
+  ImageLoaderUtils;
+  const obj = ImageLoaderUtils;
+  const str = getBestMediaProxySize(arg2 * obj.getDevicePixelRatio());
+  const str2 = Math.round(str / arg1);
+  const obj2 = URLUtilsDefault;
+  const str3 = obj2.toURLSafe(assetURL);
+  let str1 = null;
+  if (null != str3) {
+    const searchParams = str3.searchParams;
+    searchParams.append("format", "webp");
+    if (null != str) {
+      const searchParams2 = str3.searchParams;
+      searchParams2.append("width", str.toString());
+    }
+    if (null != str2) {
+      const searchParams3 = str3.searchParams;
+      searchParams3.append("height", str2.toString());
+    }
+    str1 = str3.toString();
+  }
+  if (str1 == null) {
+    str1 = assetURL;
+  }
+  return str1;
 }
 export function getPosterUrl(proxyUrl, arg1, arg2) {
   const obj = URLUtilsDefault;

@@ -1,18 +1,18 @@
-// Module ID: 12938
-// Function ID: 12939
+// Module ID: 12226
+// Function ID: 12227
 // Name: useGuildProfileCTA
-// Dependencies: [19, 502, 5222, 5181, 6046, 1388, 1072, 504, 1406, 7687, 12939, 8420, 7699, 2]
+// Dependencies: [19, 502, 4735, 4694, 5542, 1388, 1072, 504, 1406, 7190, 12227, 7910, 7202, 2]
 // Exports: default, getGuildProfileCTAType
 
-// Module 12938 (useGuildProfileCTA)
+// Module 12226 (useGuildProfileCTA)
 import FlagUtils from "FlagUtils" /* 1406 */;
-import GuildTagUtils from "GuildTagUtils" /* 8420 */;
-import usePendingFolderGuildIds from "usePendingFolderGuildIds" /* 12939 */;
+import GuildTagUtils from "GuildTagUtils" /* 7910 */;
+import usePendingFolderGuildIds from "usePendingFolderGuildIds" /* 12227 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 5222 */;
-import GuildStore from "GuildStore" /* 5181 */;
-import InviteStore from "InviteStore" /* 6046 */;
+import GuildMemberStore from "GuildMemberStore" /* 4735 */;
+import GuildStore from "GuildStore" /* 4694 */;
+import InviteStore from "InviteStore" /* 5542 */;
 import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -81,7 +81,7 @@ export default function useGuildProfileCTA(id, arg1, arg2) {
       if (invite.state !== validInviteKey.BANNED) {
         let obj;
         if (invite.state !== tmp9.EXPIRED) {
-          obj = { validInviteKey: inviteKeyForGuildId, isBypassInvite: hasFlag(num, tmp6(7687).GuildInviteFlags.IS_APPLICATION_BYPASS), inviteRoles: invite.roles };
+          obj = { validInviteKey: inviteKeyForGuildId, isBypassInvite: hasFlag(num, tmp6(7190).GuildInviteFlags.IS_APPLICATION_BYPASS), inviteRoles: invite.roles };
           num = invite.flags;
           hasFlag = FlagUtils.hasFlag;
           FlagUtils;
@@ -254,7 +254,7 @@ export function getGuildProfileCTAType(guildProfileFromInvite, code) {
         if (num == null) {
           num = 0;
         }
-        flag = hasFlag(num, tmp13(7687).GuildInviteFlags.IS_APPLICATION_BYPASS);
+        flag = hasFlag(num, tmp13(7190).GuildInviteFlags.IS_APPLICATION_BYPASS);
         tmp11 = inviteKeyForGuildId;
       }
     }

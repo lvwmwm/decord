@@ -1,18 +1,18 @@
-// Module ID: 16519
-// Function ID: 16520
+// Module ID: 15202
+// Function ID: 15203
 // Name: ToastEntity
-// Dependencies: [19, 17, 21, 5310, 575, 5923, 6014, 2154, 2]
+// Dependencies: [19, 17, 21, 4823, 575, 5414, 5510, 2154, 2]
 // Exports: ToastEntity
 
-// Module 16519 (ToastEntity)
+// Module 15202 (ToastEntity)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import utils_StringUtils from "utils/StringUtils" /* 2154 */;
-import Text_Text from "Text/Text" /* 5923 */;
-import FastImageDefault from "FastImage" /* 6014 */;
+import Text_Text from "Text/Text" /* 5414 */;
+import FastImageDefault from "FastImage" /* 5510 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

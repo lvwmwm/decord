@@ -1,14 +1,14 @@
-// Module ID: 10526
-// Function ID: 10527
+// Module ID: 9807
+// Function ID: 9808
 // Name: NintendoSwitchNeutralIcon
-// Dependencies: [19, 21, 575, 6013, 10527, 2]
+// Dependencies: [19, 21, 575, 5509, 9808, 2]
 // Exports: NintendoSwitchNeutralIcon
 
-// Module 10526 (NintendoSwitchNeutralIcon)
+// Module 9807 (NintendoSwitchNeutralIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6013 */;
-import AssetRegistry from "AssetRegistry" /* 10527 */;
+import BaseIconImage2 from "BaseIconImage" /* 5509 */;
+import AssetRegistry from "AssetRegistry" /* 9808 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

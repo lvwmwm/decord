@@ -1,14 +1,14 @@
-// Module ID: 14430
-// Function ID: 14431
+// Module ID: 18331
+// Function ID: 18332
 // Name: ConjureManagedCopyStatus
-// Dependencies: [19, 21, 14413, 6335, 575, 5923, 1113, 4133, 14431, 2]
+// Dependencies: [19, 21, 18315, 5837, 575, 5414, 1113, 4121, 18332, 2]
 // Exports: default
 
-// Module 14430 (ConjureManagedCopyStatus)
+// Module 18331 (ConjureManagedCopyStatus)
 import nativeDefault from "native" /* 575 */;
-import _modDef4133 from "module_4133" /* 4133 */;
-import useConjureManagedCopy from "useConjureManagedCopy" /* 14413 */;
-import conjureManagedCopyStatusText from "conjureManagedCopyStatusText" /* 14431 */;
+import _modDef4121 from "module_4121" /* 4121 */;
+import useConjureManagedCopy from "useConjureManagedCopy" /* 18315 */;
+import conjureManagedCopyStatusText from "conjureManagedCopyStatusText" /* 18332 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -35,16 +35,16 @@ export default function ConjureManagedCopyStatus(projectId) {
     let str;
     const updatesPaused = tmp3.updatesPaused;
     const obj2 = { spacing: nativeDefault.space.PX_4, children: items };
-    const Stack = tmp4(6335).Stack;
-    const obj3 = { variant: "body-md/medium", color: "text-default", children: intl.string(_modDef4133["+QBNDE"]) };
-    const Text = tmp4(5923).Text;
+    const Stack = tmp4(5837).Stack;
+    const obj3 = { variant: "body-md/medium", color: "text-default", children: intl.string(_modDef4121["+QBNDE"]) };
+    const Text = tmp4(5414).Text;
     intl = tmp4(1113).intl;
     items = [_false(Text, obj3), , ];
     const obj4 = { variant: "body-sm/normal", color: "text-subtle", children: tmp4Result.conjureCopySourceLine(tmp3, updatesPaused) };
-    const Text2 = tmp4(5923).Text;
+    const Text2 = tmp4(5414).Text;
     tmp4Result = conjureManagedCopyStatusText;
     items[1] = _false(Text2, obj4);
-    const Text3 = tmp4(5923).Text;
+    const Text3 = tmp4(5414).Text;
     const tmp7 = React3;
     const tmp8 = _false;
     if (updatesPaused) {

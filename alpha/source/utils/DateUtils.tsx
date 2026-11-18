@@ -1,18 +1,18 @@
-// Module ID: 5132
-// Function ID: 5133
+// Module ID: 4645
+// Function ID: 4646
 // Name: DateUtils
-// Dependencies: [2189, 3, 5133, 5135, 1196, 5998, 1113, 572, 6000, 2169, 2]
+// Dependencies: [2189, 3, 4646, 4648, 1196, 5494, 1113, 572, 5496, 2169, 2]
 // Exports: accessibilityLabelCalendarFormat, calendarFormat, calendarFormatCompact, dateStringToMoment, diffAsUnits, differenceInDays, formatDateForDatetimeLocal, getDaysRemainingInMonth, getESTDate, getMonthlyProgressPercentage, isSameDay, isSameHourMoment, isWithinInterval, unitsAsStrings
 
-// Module 5132 (DateUtils)
+// Module 4645 (DateUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import intl4 from "intl" /* 1113 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
 import _modDef2169 from "module_2169" /* 2169 */;
-import react_nativeDefault from "react-native" /* 5133 */;
-import UserSettings from "UserSettings" /* 5135 */;
-import SystemDateFormatter from "SystemDateFormatter" /* 5998 */;
-import makeDateFormatterDefault from "makeDateFormatter" /* 6000 */;
+import react_nativeDefault from "react-native" /* 4646 */;
+import UserSettings from "UserSettings" /* 4648 */;
+import SystemDateFormatter from "SystemDateFormatter" /* 5494 */;
+import makeDateFormatterDefault from "makeDateFormatter" /* 5496 */;
 import LocaleStore from "LocaleStore" /* 2189 */;
 import Dispatcher_mod from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
@@ -53,19 +53,18 @@ function syncHourCycleToIntlConfig() {
     continue;
   }
 }
-function differenceInCalendarDays(d, d2) {
-  let tmp = typeof d === "string";
+function differenceInCalendarDays(date, date2) {
+  let tmp = typeof date === "string";
   const _Math = Math;
-  if (typeof d !== "string") {
-    tmp = typeof d === "number";
+  if (typeof date !== "string") {
+    tmp = typeof date === "number";
   }
   if (!tmp) {
     const _Date = Date;
-    tmp = d instanceof Date;
+    tmp = date instanceof Date;
   }
-  let date = d;
   if (!tmp) {
-    const obj = { d };
+    const obj = { d: date };
     logger.error("Invalid date given to startOfDay", obj);
     const _Date2 = Date;
     const self = this;
@@ -74,18 +73,17 @@ function differenceInCalendarDays(d, d2) {
   }
   const date1 = new Date(date);
   const time = date1.getTime();
-  let tmp8 = typeof d2 === "string";
+  let tmp8 = typeof date2 === "string";
   const result = Math.floor((time - 60000 * date1.getTimezoneOffset()) / c4) * c4;
-  if (typeof d2 !== "string") {
-    tmp8 = typeof d2 === "number";
+  if (typeof date2 !== "string") {
+    tmp8 = typeof date2 === "number";
   }
   if (!tmp8) {
     const _Date3 = Date;
-    tmp8 = d2 instanceof Date;
+    tmp8 = date2 instanceof Date;
   }
-  let date2 = d2;
   if (!tmp8) {
-    const obj2 = { d: d2 };
+    const obj2 = { d: date2 };
     logger.error("Invalid date given to startOfDay", obj2);
     const _Date4 = Date;
     const self3 = this;
@@ -135,9 +133,9 @@ const items = [{ key: "days", millisecondsInUnit: 86400000 }, { key: "hours", mi
 let result = size.fileFinishedImporting("utils/DateUtils.tsx");
 
 export { differenceInCalendarDays };
-export function differenceInDays(getTime, getTime2) {
-  const time = getTime.getTime();
-  return (time - getTime2.getTime()) / c4;
+export function differenceInDays(date, date1) {
+  const time = date.getTime();
+  return (time - date1.getTime()) / c4;
 }
 export function isSameHourMoment(toDate, toDate2) {
   const toDateResult = toDate.toDate();
@@ -149,17 +147,17 @@ export function isSameHourMoment(toDate, toDate2) {
   }
   return tmp;
 }
-export function isSameDay(getDate, getDate2) {
-  let tmp = Math.abs(+getDate - +getDate2) <= c4;
+export function isSameDay(timestamp, timestamp2) {
+  let tmp = Math.abs(+timestamp - +timestamp2) <= c4;
   if (tmp) {
-    const date = getDate.getDate();
-    tmp = date === getDate2.getDate();
+    const date = timestamp.getDate();
+    tmp = date === timestamp2.getDate();
   }
   return tmp;
 }
-export function isWithinInterval(arg0, arg1, arg2) {
-  const valueOfResult = arg0.valueOf();
-  return abs(valueOfResult - arg1.valueOf()) < arg2;
+export function isWithinInterval(timestamp, timestamp2, arg2) {
+  const valueOfResult = timestamp.valueOf();
+  return abs(valueOfResult - timestamp2.valueOf()) < arg2;
 }
 export { dateFormat };
 export function calendarFormat(timestamp, arg1, setting) {

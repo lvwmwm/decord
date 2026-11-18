@@ -1,10 +1,10 @@
-// Module ID: 5332
-// Function ID: 5333
+// Module ID: 4845
+// Function ID: 4846
 // Name: themes
 // Dependencies: [1083, 2]
 // Exports: isThemeDark, isThemeLight
 
-// Module 5332 (themes)
+// Module 4845 (themes)
 import Constants from "Constants" /* 1083 */;
 import size from "module_2" /* 2 */;
 

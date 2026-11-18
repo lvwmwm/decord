@@ -1,72 +1,57 @@
-// Module ID: 12900
-// Function ID: 12901
+// Module ID: 12047
+// Function ID: 12048
 // Name: GameOrganizationIcon
-// Dependencies: [32, 19, 17, 21, 5310, 575, 6014, 2157, 2]
+// Dependencies: [32, 19, 17, 21, 12048, 12052, 4823, 575, 5510, 2157, 2]
 // Exports: default
 
-// Module 12900 (GameOrganizationIcon)
+// Module 12047 (GameOrganizationIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import ImageProxyUtils from "ImageProxyUtils" /* 2157 */;
-import FastImageDefault from "FastImage" /* 6014 */;
+import FastImageDefault from "FastImage" /* 5510 */;
+import GuildFallbackAbstractUI from "GuildFallbackAbstractUI" /* 12048 */;
+import CharacterFallbackAbstractUI from "CharacterFallbackAbstractUI" /* 12052 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size_mod from "module_2" /* 2 */;
 
 const View = react_native.View;
 const jsx = Fragment.jsx;
-let closure_7 = createStyles.createStyles((width, borderRadius) => {
-  const obj = { icon: size, placeholder: { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL } };
+let obj = { guild: GuildFallbackAbstractUI.GuildFallbackAbstractUI, character: CharacterFallbackAbstractUI.CharacterFallbackAbstractUI };
+let closure_8 = createStyles.createStyles((width, borderRadius) => {
+  obj = { icon: size };
   size = { width, height: width, borderRadius, overflow: "hidden" };
-  ({ backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL });
   return obj;
 });
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/game_organization_invites/native/GameOrganizationIcon.tsx");
 
 export default function GameOrganizationIcon(iconUrl) {
+  let borderRadius;
   let closure_1;
   let first;
-  let items;
   let obj3;
   let obj4;
-  let obj6;
   iconUrl = iconUrl.iconUrl;
-  let sm = iconUrl.borderRadius;
-  if (sm === undefined) {
-    sm = nativeDefault.radii.sm;
-  }
-  let num = iconUrl.size;
-  if (num === undefined) {
-    num = 48;
-  }
+  ({ size, borderRadius } = iconUrl);
   const fallback = iconUrl.fallback;
+  if (borderRadius === undefined) {
+    borderRadius = nativeDefault.radii.sm;
+  }
   closure_1 = undefined;
-  const tmp3 = closure_7(num, sm);
+  const tmp3 = closure_8(size, borderRadius);
   [first, closure_1] = react.useState(null);
   [][0] = iconUrl;
   if (null != iconUrl) {
-    let tmp13Result;
     if (iconUrl !== first) {
       const obj2 = { uri: obj3.getSizedImageAssetURL(iconUrl, obj4) };
       FastImageDefault;
-      obj4 = { size: num };
-      tmp13Result = <tmp10 source={obj2} style={tmp3.icon} resizeMode="cover" accessible={false} onError={tmp6} />;
+      obj4 = { size };
       obj3 = ImageProxyUtils;
+      return <tmp10 source={obj2} style={tmp3.icon} resizeMode="cover" accessible={false} onError={tmp6} />;
     }
-    return tmp13Result;
   }
-  const tmp13 = jsx;
-  const tmp14 = View;
-  if (null != fallback) {
-    obj6 = { style: tmp3.icon, children: fallback };
-    const obj5 = { style: tmp3.icon, children: fallback };
-  } else {
-    obj6 = { style: items };
-    items = [, ];
-    ({ icon: arr[0], placeholder: arr[1] } = tmp3);
-  }
-  tmp13Result = tmp13(tmp14, obj6);
+  return <View style={tmp3.icon}>{jsx(obj[fallback], { width: size, height: size, accessible: false })}</View>;
 };

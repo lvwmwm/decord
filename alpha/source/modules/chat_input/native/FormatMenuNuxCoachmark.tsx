@@ -1,19 +1,19 @@
-// Module ID: 13926
-// Function ID: 13927
+// Module ID: 13228
+// Function ID: 13229
 // Name: FormatMenuNuxCoachmark
-// Dependencies: [32, 19, 17, 5156, 21, 5310, 575, 1380, 13735, 7653, 9572, 5143, 13927, 1113, 5923, 9579, 2]
+// Dependencies: [32, 19, 17, 4669, 21, 4823, 575, 1380, 13042, 7156, 8986, 4656, 13229, 1113, 5414, 8993, 2]
 // Exports: default
 
-// Module 13926 (FormatMenuNuxCoachmark)
+// Module 13228 (FormatMenuNuxCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5156 */;
-import useKeyboardIsOpenDefault from "useKeyboardIsOpen" /* 7653 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4669 */;
+import useKeyboardIsOpenDefault from "useKeyboardIsOpen" /* 7156 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ let _require, dependencyMap, importDefault;
 
 let num;
 let tmp5;
-const useChatInputKeyboardOffsetDefault = tmp5(13927);
+const useChatInputKeyboardOffsetDefault = tmp5(13229);
 let _slicedToArray = _slicedToArray_mod;
 const View = react_native.View;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;

@@ -14,7 +14,7 @@ let _require, c2;
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 const re3 = /^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-((?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$/;
 
-export function addContextToFrame(arr, lineno) {
+export function addContextToFrame(arr, lineno, arg2) {
   let num = arg2;
   if (arg2 === undefined) {
     num = 5;
@@ -47,8 +47,8 @@ export function addContextToFrame(arr, lineno) {
     });
   }
 }
-export function addExceptionMechanism(exception, data) {
-  exception = exception.exception;
+export function addExceptionMechanism(tmpResult, mechanism) {
+  const exception = tmpResult.exception;
   let first;
   if (exception != null) {
     const values = exception.values;
@@ -57,26 +57,26 @@ export function addExceptionMechanism(exception, data) {
     }
   }
   if (first) {
-    const mechanism = first.mechanism;
+    mechanism = first.mechanism;
     const obj = { type: "generic", handled: true };
     const merged = Object.assign(mechanism);
-    const merged1 = Object.assign(data);
+    const merged1 = Object.assign(mechanism);
     first.mechanism = obj;
-    if (data) {
-      if ("data" in data) {
-        data = undefined;
+    if (mechanism) {
+      if ("data" in mechanism) {
+        let data;
         if (mechanism != null) {
           data = mechanism.data;
         }
         const obj2 = {};
         const merged2 = Object.assign(data);
-        const merged3 = Object.assign(data.data);
+        const merged3 = Object.assign(mechanism.data);
         first.mechanism.data = obj2;
       }
     }
   }
 }
-export function addExceptionTypeValue(exception, arg1, arg2) {
+export function addExceptionTypeValue(exception, combined1, arg2) {
   const tmp = exception.exception || {};
   exception.exception = tmp;
   const tmp2 = tmp.values || [];
@@ -84,25 +84,25 @@ export function addExceptionTypeValue(exception, arg1, arg2) {
   const iter = tmp2[0] || {};
   tmp2[0] = iter;
   if (!iter.value) {
-    iter.value = arg1 || "";
+    iter.value = combined1 || "";
   }
   if (!iter.type) {
     iter.type = arg2 || "Error";
   }
 }
-export function checkOrSetAlreadyCaught(__sentry_captured__) {
+export function checkOrSetAlreadyCaught(originalException) {
   function isAlreadyCaptured(__sentry_captured__) {
     try {
       return __sentry_captured__.__sentry_captured__;
     } catch (err) {
     }
   }
-  if (isAlreadyCaptured(__sentry_captured__)) {
+  if (isAlreadyCaptured(originalException)) {
     return true;
   } else {
     try {
       const obj = _mod686;
-      const result = obj.addNonEnumerableProperty(__sentry_captured__, "__sentry_captured__", true);
+      const result = obj.addNonEnumerableProperty(originalException, "__sentry_captured__", true);
     } catch (err) {
     }
     return false;

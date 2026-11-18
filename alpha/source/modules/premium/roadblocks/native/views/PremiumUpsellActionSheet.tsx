@@ -1,31 +1,31 @@
-// Module ID: 9047
-// Function ID: 9048
+// Module ID: 8458
+// Function ID: 8459
 // Name: PremiumUpsellActionSheet
-// Dependencies: [19, 17, 5311, 1192, 6068, 5343, 1388, 1390, 1072, 6168, 9042, 21, 5310, 575, 5896, 2174, 9048, 8901, 8886, 1113, 9049, 9053, 9057, 9058, 5546, 9046, 9059, 15695, 9978, 1092, 11627, 6014, 5887, 504, 7928, 11137, 9319, 9322, 15699, 1256, 11628, 5495, 7961, 15701, 5923, 5930, 9300, 2]
+// Dependencies: [19, 17, 4824, 1192, 5564, 4856, 1388, 1390, 1072, 5664, 8453, 21, 4823, 575, 5387, 2174, 8459, 8397, 8382, 1113, 8460, 8464, 8468, 8469, 5037, 8457, 8470, 14328, 9258, 1092, 10909, 5510, 5378, 504, 7431, 10419, 8730, 8733, 14332, 1256, 10910, 5008, 7464, 14334, 5414, 5421, 8711, 2]
 // Exports: default
 
-// Module 9047 (PremiumUpsellActionSheet)
+// Module 8458 (PremiumUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import PremiumUtils from "PremiumUtils" /* 2174 */;
-import ChatInputUtils from "ChatInputUtils" /* 5495 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
-import LinearGradientDefault from "LinearGradient" /* 5887 */;
-import FastImageDefault from "FastImage" /* 6014 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 6168 */;
-import ScheduledMessagesConstants from "ScheduledMessagesConstants" /* 9042 */;
-import openPremiumUpsellActionSheet from "openPremiumUpsellActionSheet" /* 9046 */;
+import ChatInputUtils from "ChatInputUtils" /* 5008 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
+import LinearGradientDefault from "LinearGradient" /* 5378 */;
+import FastImageDefault from "FastImage" /* 5510 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 5664 */;
+import ScheduledMessagesConstants from "ScheduledMessagesConstants" /* 8453 */;
+import openPremiumUpsellActionSheet from "openPremiumUpsellActionSheet" /* 8457 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5311 */;
+import AccessibilityStore from "AccessibilityStore" /* 4824 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6068 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5343 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5564 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4856 */;
 import UserStore from "UserStore" /* 1388 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let guildId;

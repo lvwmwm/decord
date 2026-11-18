@@ -1,18 +1,18 @@
-// Module ID: 8670
-// Function ID: 8671
+// Module ID: 8161
+// Function ID: 8162
 // Name: InteractionStore
-// Dependencies: [32, 502, 5159, 1089, 6380, 6379, 8671, 504, 572, 2]
+// Dependencies: [32, 502, 4672, 1089, 5882, 5881, 8162, 504, 572, 2]
 
-// Module 8670 (InteractionStore)
+// Module 8161 (InteractionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import InteractionTypes from "InteractionTypes" /* 6379 */;
-import interactions_InteractionTypes from "interactions/InteractionTypes" /* 6380 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 8671 */;
+import InteractionTypes from "InteractionTypes" /* 5881 */;
+import interactions_InteractionTypes from "interactions/InteractionTypes" /* 5882 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 8162 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 5159 */;
+import ChannelStore from "ChannelStore" /* 4672 */;
 import size from "module_2" /* 2 */;
 
 let closure_10, closure_12, closure_8, closure_9;
@@ -140,7 +140,7 @@ obj = {
       if (null != closure_8[nonce]) {
         const tmp4 = require;
         if (closure_8[nonce].state === interactions_InteractionTypes.InteractionState.QUEUED) {
-          closure_8[nonce].state = tmp4(6380).InteractionState.CREATED;
+          closure_8[nonce].state = tmp4(5882).InteractionState.CREATED;
           const onCreate = tmp3.onCreate;
           if (onCreate != null) {
             onCreate(tmp);
@@ -206,7 +206,7 @@ obj = {
           delete closure_12[nonce];
         }
       } else {
-        obj = { state: tmp7(6380).InteractionState.FAILED, errorCode, errorMessage, reasonCode };
+        obj = { state: tmp7(5882).InteractionState.FAILED, errorCode, errorMessage, reasonCode };
         const merged = Object.assign(tmp21);
         closure_8[nonce] = obj;
       }
@@ -258,7 +258,7 @@ obj = {
   },
   INTERACTION_IFRAME_MODAL_CREATE: function handleIFrameModalCreate(applicationId) {
     const nonce = applicationId.nonce;
-    obj = { applicationId: applicationId.application.id, interactionId: applicationId.id, customId: applicationId.customId, channelId: applicationId.channelId, modalKey: "fileFinishedImporting" };
+    obj = { applicationId: applicationId.application.id, interactionId: applicationId.id, customId: applicationId.customId, channelId: applicationId.channelId, modalKey: "Array" };
     if (null != nonce) {
       if (null != closure_8[nonce]) {
         const onSuccess = tmp10.onSuccess;

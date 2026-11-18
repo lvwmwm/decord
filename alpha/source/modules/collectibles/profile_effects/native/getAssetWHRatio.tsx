@@ -1,10 +1,10 @@
-// Module ID: 9509
-// Function ID: 9510
+// Module ID: 8923
+// Function ID: 8924
 // Name: getAssetWHRatio
 // Dependencies: [2]
 // Exports: getAssetWHRatio
 
-// Module 9509 (getAssetWHRatio)
+// Module 8923 (getAssetWHRatio)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/collectibles/profile_effects/native/getAssetWHRatio.tsx");

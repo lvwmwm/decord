@@ -1,18 +1,18 @@
-// Module ID: 20787
-// Function ID: 20788
+// Module ID: 20060
+// Function ID: 20061
 // Name: GuildRoleSubscriptionTierCreationModal
-// Dependencies: [5, 32, 19, 20777, 17867, 21, 17887, 6008, 1113, 20788, 20773, 20789, 2]
+// Dependencies: [5, 32, 19, 20050, 16670, 21, 16690, 5504, 1113, 20061, 20046, 20062, 2]
 // Exports: default
 
-// Module 20787 (GuildRoleSubscriptionTierCreationModal)
+// Module 20060 (GuildRoleSubscriptionTierCreationModal)
 import Fragment from "Fragment" /* 21 */;
-import ToastUtils from "ToastUtils" /* 6008 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17887 */;
+import ToastUtils from "ToastUtils" /* 5504 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16690 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 20777 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17867 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 20050 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16670 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2;
@@ -125,9 +125,9 @@ export default function GuildRoleSubscriptionTierCreationModal(guildId) {
     ({ DETAILS: arr[0], CHANNEL_BENEFITS: arr[1], INTANGIBLE_BENEFITS: arr[2], DESIGN: arr[3], CONFIRMATION: arr[4] } = obj);
     return items;
   }, []);
-  const EditStateContextProvider = guildId(20788).EditStateContextProvider;
+  const EditStateContextProvider = guildId(20061).EditStateContextProvider;
   let obj3 = { guildId, children: null };
-  const RoleSubscriptionSettingsDisabledContextProvider = guildId(20773).RoleSubscriptionSettingsDisabledContextProvider;
+  const RoleSubscriptionSettingsDisabledContextProvider = guildId(20046).RoleSubscriptionSettingsDisabledContextProvider;
   let obj4 = {
     guildId,
     modalKey,

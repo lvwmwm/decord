@@ -1,29 +1,30 @@
-// Module ID: 17486
-// Function ID: 17487
+// Module ID: 16143
+// Function ID: 16144
 // Name: FamilyCenterAcceptedLinks
-// Dependencies: [19, 17, 8752, 21, 5310, 575, 9629, 9628, 13090, 1113, 2703, 5923, 17487, 17488, 7438, 6833, 17491, 2121, 1187, 17493, 2]
+// Dependencies: [19, 17, 8248, 21, 4823, 575, 9043, 9042, 12388, 1113, 2723, 5414, 16144, 16145, 6941, 6337, 16148, 2121, 1187, 16150, 2]
 // Exports: default
 
-// Module 17486 (FamilyCenterAcceptedLinks)
+// Module 16143 (FamilyCenterAcceptedLinks)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import _modDef2703 from "module_2703" /* 2703 */;
-import Text_Text from "Text/Text" /* 5923 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6833 */;
-import useUserLinks from "useUserLinks" /* 9628 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 9629 */;
-import useAgeSpecificText2 from "useAgeSpecificText" /* 13090 */;
-import FamilyCenterEmptyDefault from "FamilyCenterEmpty" /* 17487 */;
-import FamilyCenterLinkRowDefault from "FamilyCenterLinkRow" /* 17488 */;
+import _modDef2723 from "module_2723" /* 2723 */;
+import Text_Text from "Text/Text" /* 5414 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6337 */;
+import useUserLinks from "useUserLinks" /* 9042 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 9043 */;
+import useAgeSpecificText2 from "useAgeSpecificText" /* 12388 */;
+import FamilyCenterEmptyDefault from "FamilyCenterEmpty" /* 16144 */;
+import FamilyCenterLinkRowDefault from "FamilyCenterLinkRow" /* 16145 */;
 import react from "react" /* 19 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 8752 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 8248 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
+let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let obj2;
@@ -37,13 +38,13 @@ function FamilyCenterAcceptedLinkRow(otherUser) {
   const str = otherUser.otherUser;
   let tmp4Result = null;
   if (undefined !== str) {
-    let obj2 = { otherUser: str, actions: closure_6(PressableOpacity, obj) };
+    let obj2 = { otherUser: str, status: constants.ACTIVE, actions: closure_7(PressableOpacity, obj) };
     const tmp7 = FamilyCenterLinkRowDefault;
-    PressableOpacity = str(7438).PressableOpacity;
+    PressableOpacity = str(6941).PressableOpacity;
     const intl = str(1113).intl;
     const formatToPlainString = intl.formatToPlainString;
     let str1;
-    const T7DUoU = _modDef2703.T7DUoU;
+    const T7DUoU = _modDef2723.T7DUoU;
     const tmp5 = importDefault;
     if (str != null) {
       str1 = str.toString();
@@ -54,29 +55,29 @@ function FamilyCenterAcceptedLinkRow(otherUser) {
       onPress: function handleDisconnect() {
           const obj = ModalActionCreatorsDefault;
           const obj2 = { otherUser: str };
-          obj.pushLazy(asyncRequire(17491, dependencyMap.paths), obj2);
+          obj.pushLazy(asyncRequire(16148, dependencyMap.paths), obj2);
         },
       style: tmp.actionButton,
-      children: closure_6(Icon, obj4)
+      children: closure_7(Icon, obj4)
     };
     obj3 = { name: str1 };
-    obj4 = { size: str(1187).Icon.Sizes.SMALL, disableColor: true, source: tmp5(17493) };
-    Icon = tmp8(1187).Icon;
+    obj4 = { size: str(1187).Icon.Sizes.SMALL, disableColor: true, source: tmp5(16150) };
+    Icon = tmp9(1187).Icon;
     tmp4Result = tmp4(tmp7, obj2);
   }
   return tmp4Result;
 }
 const View = react_native.View;
-({ MAX_PARENT_TO_TEEN_ACTIVE_CONNECTIONS: closure_4, MAX_TEEN_TO_PARENT_ACTIVE_CONNECTIONS: hasOwnProperty } = FamilyCenterConstants);
-({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+({ MAX_PARENT_TO_TEEN_ACTIVE_CONNECTIONS: closure_4, MAX_TEEN_TO_PARENT_ACTIVE_CONNECTIONS: hasOwnProperty, UserLinkStatus: metroRequire } = FamilyCenterConstants);
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { container: { marginTop: 24 }, content: obj2, empty: { padding: 20, alignSelf: "center" }, header: { marginBottom: 10 } };
 obj2 = { display: "flex", justifyContent: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderRadius: nativeDefault.radii.md };
-let closure_8 = createStyles.createStyles(obj);
+let closure_9 = createStyles.createStyles(obj);
 createStyles = createStyles_mod;
 let obj3 = { actionButton: size };
 size = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, borderRadius: nativeDefault.radii.round, alignItems: "center", justifyContent: "center", height: 32, width: 32 };
-let closure_9 = createStyles.createStyles(obj3);
+let closure_10 = createStyles.createStyles(obj3);
 size = size_mod;
 const result = size.fileFinishedImporting("modules/parent_tools/native/FamilyCenterAcceptedLinks.tsx");
 
@@ -86,7 +87,7 @@ export default function FamilyCenterAcceptedLinks() {
   let mapped;
   let obj7;
   let tmp2Result;
-  const tmp = closure_8();
+  const tmp = closure_9();
   const tmp4 = useIsInAdultAgeGroupDefault();
   let obj = useUserLinks;
   const activeLinkUsers = obj.useActiveLinkUsers();
@@ -94,27 +95,27 @@ export default function FamilyCenterAcceptedLinks() {
   const useAgeSpecificText = useAgeSpecificText2.useAgeSpecificText;
   useAgeSpecificText2;
   const intl = tmp5(1113).intl;
-  const formatToPlainStringResult = intl.formatToPlainString(_modDef2703["+tnO34"], obj2);
+  const formatToPlainStringResult = intl.formatToPlainString(_modDef2723["+tnO34"], obj2);
   const intl2 = tmp5(1113).intl;
   const obj3 = { style: tmp.container, children: items };
-  const ageSpecificText = useAgeSpecificText(formatToPlainStringResult, intl2.formatToPlainString(tmp2(2703)["pu6/U0"], obj2));
+  const ageSpecificText = useAgeSpecificText(formatToPlainStringResult, intl2.formatToPlainString(tmp2(2723)["pu6/U0"], obj2));
   items = [, ];
   const obj4 = { style: tmp.header, variant: "body-sm/medium", color: "text-default", children: ageSpecificText };
-  items[0] = metroRequire(Text_Text.Text, obj4);
+  items[0] = metroImportDefault(Text_Text.Text, obj4);
   const obj5 = { style: tmp.content, children: mapped };
-  const tmp9 = metroImportDefault;
+  const tmp9 = metroImportAll;
   if (0 === activeLinkUsers.length) {
-    const obj6 = { style: tmp.empty, children: metroRequire(tmp2Result, obj7) };
-    obj7 = { text: intl3.string(_modDef2703.C4ScLD) };
+    const obj6 = { style: tmp.empty, children: metroImportDefault(tmp2Result, obj7) };
+    obj7 = { text: intl3.string(_modDef2723.C4ScLD) };
     tmp2Result = FamilyCenterEmptyDefault;
     intl3 = tmp5(1113).intl;
     mapped = tmp11(tmp10, obj6);
   } else {
     mapped = activeLinkUsers.map((otherUser) => {
       const obj = { otherUser };
-      return closure_1_6(FamilyCenterAcceptedLinkRow, obj, "accepted-" + otherUser.id);
+      return closure_1_7(FamilyCenterAcceptedLinkRow, obj, "accepted-" + otherUser.id);
     });
   }
-  items[1] = metroRequire(View, obj5);
+  items[1] = metroImportDefault(View, obj5);
   return tmp9(View, obj3);
 };

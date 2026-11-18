@@ -1,11 +1,11 @@
-// Module ID: 12766
-// Function ID: 12767
+// Module ID: 12060
+// Function ID: 12061
 // Name: GameOrganizationInviteSendActionCreators
-// Dependencies: [5, 1072, 5315, 1285, 6756, 8145, 8671, 12767, 2]
+// Dependencies: [5, 1072, 4828, 1285, 6258, 7648, 8162, 12061, 2]
 
-// Module 12766 (GameOrganizationInviteSendActionCreators)
+// Module 12060 (GameOrganizationInviteSendActionCreators)
 import Constants from "Constants" /* 1072 */;
-import MessageConstants from "MessageConstants" /* 5315 */;
+import MessageConstants from "MessageConstants" /* 4828 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

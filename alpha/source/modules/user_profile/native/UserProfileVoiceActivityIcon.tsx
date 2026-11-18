@@ -1,15 +1,15 @@
-// Module ID: 14148
-// Function ID: 14149
+// Module ID: 13452
+// Function ID: 13453
 // Name: UserProfileVoiceActivityIcon
-// Dependencies: [19, 5242, 1083, 21, 504, 9113, 7227, 8104, 8028, 8106, 8105, 7442, 2]
+// Dependencies: [19, 4755, 1083, 21, 504, 8524, 6731, 7607, 7531, 7609, 7608, 6945, 2]
 // Exports: default
 
-// Module 14148 (UserProfileVoiceActivityIcon)
+// Module 13452 (UserProfileVoiceActivityIcon)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1083 */;
-import isRoleRequiredDefault from "isRoleRequired" /* 7227 */;
+import isRoleRequiredDefault from "isRoleRequired" /* 6731 */;
 import react from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 5242 */;
+import PermissionStore from "PermissionStore" /* 4755 */;
 import size from "module_2" /* 2 */;
 
 const Permissions = Constants.Permissions;
@@ -39,27 +39,27 @@ export default function UserProfileVoiceActivityIcon(channel) {
       }
       if (isGuildStageVoiceResult) {
         if (tmp6) {
-          const StageLockIcon = tmp2(8104).StageLockIcon;
+          const StageLockIcon = tmp2(7607).StageLockIcon;
           const merged1 = Object.assign(merged);
           tmp8Result = <StageLockIcon />;
         }
         return tmp8Result;
       }
       if (isGuildStageVoiceResult) {
-        const StageIcon = tmp2(8028).StageIcon;
+        const StageIcon = tmp2(7531).StageIcon;
         const merged2 = Object.assign(merged);
         tmp8Result = <StageIcon />;
       } else if (channel.isNSFW()) {
         const obj4 = {};
-        const VoiceWarningIcon = tmp2(8106).VoiceWarningIcon;
+        const VoiceWarningIcon = tmp2(7609).VoiceWarningIcon;
         const merged3 = Object.assign(merged);
         tmp8Result = tmp8(VoiceWarningIcon, obj4);
       } else {
         let VoiceNormalIcon;
         if (tmp6) {
-          VoiceNormalIcon = tmp2(8105).VoiceLockIcon;
+          VoiceNormalIcon = tmp2(7608).VoiceLockIcon;
         } else {
-          VoiceNormalIcon = tmp2(7442).VoiceNormalIcon;
+          VoiceNormalIcon = tmp2(6945).VoiceNormalIcon;
         }
         const obj5 = {};
         const merged4 = Object.assign(merged);
@@ -67,7 +67,7 @@ export default function UserProfileVoiceActivityIcon(channel) {
       }
     }
   }
-  const PhoneCallIcon = tmp2(9113).PhoneCallIcon;
+  const PhoneCallIcon = tmp2(8524).PhoneCallIcon;
   const merged5 = Object.assign(merged);
   return <PhoneCallIcon />;
 };

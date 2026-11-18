@@ -1,20 +1,20 @@
-// Module ID: 9465
-// Function ID: 9466
+// Module ID: 8879
+// Function ID: 8880
 // Name: WishlistButton
-// Dependencies: [5, 32, 19, 17, 502, 1388, 1074, 1083, 21, 1655, 5936, 5310, 575, 5371, 7648, 5317, 5324, 6009, 1113, 5542, 1708, 5933, 5934, 9466, 9468, 504, 9470, 9529, 9530, 9532, 2]
+// Dependencies: [5, 32, 19, 17, 502, 1388, 1074, 1083, 21, 1655, 5427, 4823, 575, 4884, 7151, 4830, 4837, 5505, 1113, 5033, 1708, 5424, 5425, 8880, 8882, 504, 8884, 8943, 8944, 8946, 2]
 // Exports: default
 
-// Module 9465 (WishlistButton)
+// Module 8879 (WishlistButton)
 import nativeDefault from "native" /* 575 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import Constants from "Constants" /* 1083 */;
 import intl3 from "intl" /* 1113 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import native from "native" /* 5371 */;
-import ButtonConstants from "ButtonConstants" /* 5936 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 6009 */;
-import useProductPurchaseState from "useProductPurchaseState" /* 9530 */;
-import CollectiblesWishlistUtils from "CollectiblesWishlistUtils" /* 9532 */;
+import native from "native" /* 4884 */;
+import ButtonConstants from "ButtonConstants" /* 5427 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5505 */;
+import useProductPurchaseState from "useProductPurchaseState" /* 8944 */;
+import CollectiblesWishlistUtils from "CollectiblesWishlistUtils" /* 8946 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -22,7 +22,7 @@ import react_native from "react-native" /* 17 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size_mod from "module_2" /* 2 */;
 
 let constants2, set;

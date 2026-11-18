@@ -1,8 +1,8 @@
-// Module ID: 13212
-// Function ID: 13213
+// Module ID: 12515
+// Function ID: 12516
 // Dependencies: [2]
 
-// Module 13212
+// Module 12515
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_face_11_spellbound_textureAtlas.webp.js");

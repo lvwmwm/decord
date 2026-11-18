@@ -1,53 +1,53 @@
-// Module ID: 7375
-// Function ID: 7376
+// Module ID: 6878
+// Function ID: 6879
 // Name: ConjureConnectionStore
-// Dependencies: [32, 5, 1388, 7331, 7376, 7025, 7379, 7380, 7381, 7383, 7384, 7385, 7386, 7387, 7388, 7389, 7390, 7391, 572, 7392, 7395, 7396, 7398, 7400, 7401, 7402, 7403, 14393, 14408, 14475, 12959, 14451, 14423, 16016, 16017, 16018, 7393, 16019, 16015, 7346, 14636, 559, 16020, 7345, 16021, 7406, 14828, 8863, 14453, 504, 2]
+// Dependencies: [32, 5, 1388, 6836, 6879, 6529, 6882, 6883, 6884, 6886, 6887, 6888, 6889, 6890, 6891, 6892, 6893, 6894, 572, 6895, 6898, 6899, 6901, 6903, 6904, 6905, 6906, 14669, 14675, 14676, 12246, 14678, 14680, 14681, 14682, 14683, 6896, 14684, 14665, 6851, 14685, 559, 14686, 6850, 14687, 6909, 14688, 8359, 14660, 504, 2]
 // Exports: closeConnection, ensureConnection, interruptTurn, loadOlderHistory, optimisticMessageId, prepareTemplate, resetHistoryPaging, sendUserMessage, showUserMessage, stageModelSettings, subscribeDebugBacklog, withdrawUserMessage
 
-// Module 7375 (ConjureConnectionStore)
+// Module 6878 (ConjureConnectionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ConjureChatStore2 from "ConjureChatStore" /* 7331 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 7345 */;
-import conjureChatConnection from "conjureChatConnection" /* 7392 */;
-import conjureBrowserSessionsConnection from "conjureBrowserSessionsConnection" /* 7395 */;
-import conjureDebugConnection from "conjureDebugConnection" /* 7396 */;
-import ConjureHostApproval from "ConjureHostApproval" /* 7398 */;
-import conjureLiveReloadConnection from "conjureLiveReloadConnection" /* 7400 */;
-import conjureManagedCopyConnection from "conjureManagedCopyConnection" /* 7401 */;
-import conjureModelSettingsConnection from "conjureModelSettingsConnection" /* 7402 */;
-import conjurePreviewConnection from "conjurePreviewConnection" /* 7403 */;
-import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 7406 */;
-import createNonce from "createNonce" /* 8863 */;
-import conjureRemixConnection from "conjureRemixConnection" /* 12959 */;
-import conjurePublishConnection from "conjurePublishConnection" /* 14393 */;
-import conjurePublishEvalConnection from "conjurePublishEvalConnection" /* 14408 */;
-import conjureSmartContextConnection from "conjureSmartContextConnection" /* 14423 */;
-import conjureSettingsConnection from "conjureSettingsConnection" /* 14451 */;
-import conjureMediaTickets from "conjureMediaTickets" /* 14453 */;
-import conjurePublishScheduleRequests from "conjurePublishScheduleRequests" /* 14475 */;
-import conjureLinkEmbeds from "conjureLinkEmbeds" /* 14828 */;
-import conjurePreviewClaims from "conjurePreviewClaims" /* 16015 */;
-import conjureAppBuildRequestConnection from "conjureAppBuildRequestConnection" /* 16016 */;
-import conjureProjectConnection from "conjureProjectConnection" /* 16017 */;
-import conjureUsageConnection from "conjureUsageConnection" /* 16018 */;
+import ConjureChatStore2 from "ConjureChatStore" /* 6836 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 6850 */;
+import conjureChatConnection from "conjureChatConnection" /* 6895 */;
+import conjureBrowserSessionsConnection from "conjureBrowserSessionsConnection" /* 6898 */;
+import conjureDebugConnection from "conjureDebugConnection" /* 6899 */;
+import ConjureHostApproval from "ConjureHostApproval" /* 6901 */;
+import conjureLiveReloadConnection from "conjureLiveReloadConnection" /* 6903 */;
+import conjureManagedCopyConnection from "conjureManagedCopyConnection" /* 6904 */;
+import conjureModelSettingsConnection from "conjureModelSettingsConnection" /* 6905 */;
+import conjurePreviewConnection from "conjurePreviewConnection" /* 6906 */;
+import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 6909 */;
+import createNonce from "createNonce" /* 8359 */;
+import conjureRemixConnection from "conjureRemixConnection" /* 12246 */;
+import conjureMediaTickets from "conjureMediaTickets" /* 14660 */;
+import conjurePreviewClaims from "conjurePreviewClaims" /* 14665 */;
+import conjurePublishConnection from "conjurePublishConnection" /* 14669 */;
+import conjurePublishEvalConnection from "conjurePublishEvalConnection" /* 14675 */;
+import conjurePublishScheduleRequests from "conjurePublishScheduleRequests" /* 14676 */;
+import conjureSettingsConnection from "conjureSettingsConnection" /* 14678 */;
+import conjureSmartContextConnection from "conjureSmartContextConnection" /* 14680 */;
+import conjureAppBuildRequestConnection from "conjureAppBuildRequestConnection" /* 14681 */;
+import conjureProjectConnection from "conjureProjectConnection" /* 14682 */;
+import conjureUsageConnection from "conjureUsageConnection" /* 14683 */;
+import conjureLinkEmbeds from "conjureLinkEmbeds" /* 14688 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1388 */;
-import ConjureDebugStore from "ConjureDebugStore" /* 7376 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 7025 */;
-import ConjureBrowserSessionsStore from "ConjureBrowserSessionsStore" /* 7379 */;
-import ConjureSmartContextStore from "ConjureSmartContextStore" /* 7380 */;
-import ConjureDebugLogStore from "ConjureDebugLogStore" /* 7381 */;
-import ConjureLiveReloadStore from "ConjureLiveReloadStore" /* 7383 */;
-import ConjureManagedCopyStore from "ConjureManagedCopyStore" /* 7384 */;
-import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 7385 */;
-import ConjureOverlayBackgroundStore from "ConjureOverlayBackgroundStore" /* 7386 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 7387 */;
-import ConjureRemixStore from "ConjureRemixStore" /* 7388 */;
-import ConjureSettingsStore from "ConjureSettingsStore" /* 7389 */;
-import ConjureSpendLimitStore from "ConjureSpendLimitStore" /* 7390 */;
-import ConjureVoiceChannelPinStore from "ConjureVoiceChannelPinStore" /* 7391 */;
+import ConjureDebugStore from "ConjureDebugStore" /* 6879 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6529 */;
+import ConjureBrowserSessionsStore from "ConjureBrowserSessionsStore" /* 6882 */;
+import ConjureSmartContextStore from "ConjureSmartContextStore" /* 6883 */;
+import ConjureDebugLogStore from "ConjureDebugLogStore" /* 6884 */;
+import ConjureLiveReloadStore from "ConjureLiveReloadStore" /* 6886 */;
+import ConjureManagedCopyStore from "ConjureManagedCopyStore" /* 6887 */;
+import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 6888 */;
+import ConjureOverlayBackgroundStore from "ConjureOverlayBackgroundStore" /* 6889 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 6890 */;
+import ConjureRemixStore from "ConjureRemixStore" /* 6891 */;
+import ConjureSettingsStore from "ConjureSettingsStore" /* 6892 */;
+import ConjureSpendLimitStore from "ConjureSpendLimitStore" /* 6893 */;
+import ConjureVoiceChannelPinStore from "ConjureVoiceChannelPinStore" /* 6894 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,26 +1,26 @@
-// Module ID: 17103
-// Function ID: 17104
+// Module ID: 15759
+// Function ID: 15760
 // Name: ChangeBannerActionSheet
-// Dependencies: [5, 19, 17, 8553, 1072, 21, 5310, 575, 7928, 2174, 5546, 8890, 17104, 7818, 7961, 7923, 1113, 9446, 7756, 7453, 8117, 17105, 504, 9410, 8493, 8625, 1090, 9407, 17106, 17108, 5923, 1187, 17113, 2]
+// Dependencies: [5, 19, 17, 8044, 1072, 21, 4823, 575, 7431, 2174, 5037, 8386, 15760, 7321, 7464, 7426, 1113, 8859, 7259, 6956, 7620, 15761, 504, 8823, 7984, 8116, 1090, 8820, 15762, 15764, 5414, 1187, 15769, 2]
 // Exports: default
 
-// Module 17103 (ChangeBannerActionSheet)
+// Module 15759 (ChangeBannerActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7923 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 7928 */;
-import ActionSheet2 from "ActionSheet" /* 7961 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 9407 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9446 */;
-import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 17106 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7426 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 7431 */;
+import ActionSheet2 from "ActionSheet" /* 7464 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8820 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 8859 */;
+import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 15762 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8553 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8044 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -61,7 +61,7 @@ function ChangeBannerColorRow(user) {
   const obj2 = require("RecentAvatarUtils");
   const obj3 = { userId: user.id, image: pendingAvatar };
   let pendingAvatarSrc = obj2.getPendingAvatarSrc(obj3);
-  const tmp7 = pendingAccentColor(8493)(user.id);
+  const tmp7 = pendingAccentColor(7984)(user.id);
   if (pendingAvatarSrc == null) {
     pendingAvatarSrc = user.getAvatarURL(undefined, 80);
   }
@@ -102,19 +102,19 @@ function ChangeBannerColorRow(user) {
       showCustomColorPickerActionSheetDefault(obj);
     }
   };
-  const TableRow = tmp2(7453).TableRow;
+  const TableRow = tmp2(6956).TableRow;
   obj5 = { style: tmp.label, text: intl.string(require("intl").t.xzNfPz) };
-  FormLabel = tmp2(8117).FormLabel;
+  FormLabel = tmp2(7620).FormLabel;
   intl = tmp2(1113).intl;
   obj6 = { style: tmp.selectedColor, children: items2 };
   items2 = [, , ];
   const obj7 = { style: tmp.bannerColor, color: pendingAccentColor };
-  items2[0] = closure_9(pendingAccentColor(17108), obj7);
+  items2[0] = closure_9(pendingAccentColor(15764), obj7);
   const obj8 = { style: tmp.selectedColorHex, variant: "body-md/medium", color: "interactive-text-default", children: tmp2Result6.int2hex(pendingAccentColor) };
-  const Text = tmp2(5923).Text;
+  const Text = tmp2(5414).Text;
   tmp2Result6 = require("utils/ColorUtils");
   items2[1] = closure_9(Text, obj8);
-  const obj9 = { style: tmp.rowArrow, size: require("native").Icon.Sizes.CUSTOM, source: pendingAccentColor(17113) };
+  const obj9 = { style: tmp.rowArrow, size: require("native").Icon.Sizes.CUSTOM, source: pendingAccentColor(15769) };
   const Icon = tmp2(1187).Icon;
   items2[2] = closure_9(Icon, obj9);
   return closure_9(TableRow, obj4);
@@ -234,7 +234,7 @@ export default function ChangeBannerActionSheet(analyticsLocations) {
   };
   let tmp = closure_12();
   const tmp3 = dependencyMap;
-  const analyticsLocations2 = obj(7928)(analyticsLocations).analyticsLocations;
+  const analyticsLocations2 = obj(7431)(analyticsLocations).analyticsLocations;
   if (!flag) {
     const tmp2Result = obj(2174);
     flag = tmp2Result.canUsePremiumProfileCustomization(user);
@@ -250,7 +250,7 @@ export default function ChangeBannerActionSheet(analyticsLocations) {
   tmp7 = flag && tmp4(NitroWheelIcon.NitroWheelIcon, {});
   const items = [tmp4(BottomSheetTitleHeader, obj2), ];
   let tmp4Result = null;
-  const TableRowGroup = tmp5(7756).TableRowGroup;
+  const TableRowGroup = tmp5(7259).TableRowGroup;
   if (!flag) {
     let obj4 = { user };
     tmp4Result = tmp4(ChangeBannerColorRow, obj4);
@@ -258,8 +258,8 @@ export default function ChangeBannerActionSheet(analyticsLocations) {
   const items1 = [tmp4Result, , , ];
   let tmp10 = View;
   let obj5 = { style: tmp.label, children: items2 };
-  const TableRow = tmp5(7453).TableRow;
-  const FormLabel = tmp5(8117).FormLabel;
+  const TableRow = tmp5(6956).TableRow;
+  const FormLabel = tmp5(7620).FormLabel;
   const intl2 = tmp5(1113).intl;
   const string = intl2.string;
   const t = tmp5(1113).t;
@@ -272,12 +272,12 @@ export default function ChangeBannerActionSheet(analyticsLocations) {
   let tmp4Result3 = !flag;
   if (tmp4Result3) {
     let obj6 = { style: tmp.nitroWheel, size: "sm" };
-    tmp4Result3 = tmp4(tmp5(9446).NitroWheelIcon, obj6);
+    tmp4Result3 = tmp4(tmp5(8859).NitroWheelIcon, obj6);
   }
   let obj7 = { label: tmp6(tmp10, obj5), subLabel: tmp6(tmp13, { children: items3 }), onPress: handleBannerUploadSelect };
   items2[1] = tmp4Result3;
   const obj8 = { style: tmp.sublabel, numberOfLines: 2, text: string2Result };
-  const FormSubLabel = tmp5(8117).FormSubLabel;
+  const FormSubLabel = tmp5(7620).FormSubLabel;
   const intl3 = tmp5(1113).intl;
   const string2 = intl3.string;
   const t2 = tmp5(1113).t;
@@ -290,7 +290,7 @@ export default function ChangeBannerActionSheet(analyticsLocations) {
   items3 = [tmp4(FormSubLabel, obj8), ];
   let tmp4Result4 = !flag;
   if (tmp4Result4) {
-    const obj9 = { style: tmp.upsellButton, children: tmp4(obj(17105), obj10) };
+    const obj9 = { style: tmp.upsellButton, children: tmp4(obj(15761), obj10) };
     obj10 = { analyticsObject: constants.EDIT_PROFILE_BANNER };
     tmp4Result4 = tmp4(tmp10, obj9);
   }
@@ -307,17 +307,17 @@ export default function ChangeBannerActionSheet(analyticsLocations) {
   }
   if (flag) {
     const obj11 = { label: intl4.string(intl6.t["xsC+/y"]), onPress: onGifBannerSelect };
-    const TableRow2 = tmp5(7453).TableRow;
+    const TableRow2 = tmp5(6956).TableRow;
     intl4 = tmp5(1113).intl;
     flag = tmp4(TableRow2, obj11);
   }
   items1[2] = flag;
   if (showRemoveBanner) {
-    const TableRow3 = tmp5(7453).TableRow;
+    const TableRow3 = tmp5(6956).TableRow;
     const obj12 = { style: items4, text: removeText };
     items4 = [, ];
     ({ label: arr5[0], remove: arr5[1] } = tmp);
-    const FormLabel2 = tmp5(8117).FormLabel;
+    const FormLabel2 = tmp5(7620).FormLabel;
     if (removeText == null) {
       const intl5 = tmp5(1113).intl;
       removeText = intl5.string(tmp5(1113).t.tT9n7D);

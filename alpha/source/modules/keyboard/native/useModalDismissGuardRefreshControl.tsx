@@ -1,10 +1,10 @@
-// Module ID: 11989
-// Function ID: 11990
+// Module ID: 11271
+// Function ID: 11272
 // Name: useModalDismissGuardRefreshControl
-// Dependencies: [19, 17, 21, 11990, 1380, 2]
+// Dependencies: [19, 17, 21, 11272, 1380, 2]
 // Exports: useModalDismissGuardRefreshControl
 
-// Module 11989 (useModalDismissGuardRefreshControl)
+// Module 11271 (useModalDismissGuardRefreshControl)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
@@ -20,7 +20,7 @@ const result = size.fileFinishedImporting("modules/keyboard/native/useModalDismi
 
 export function useModalDismissGuardRefreshControl() {
   let isPortalKeyboardInModal;
-  let obj = isPortalKeyboardInModal(11990);
+  let obj = isPortalKeyboardInModal(11272);
   isPortalKeyboardInModal = obj.useIsPortalKeyboardInModal();
   const items = [isPortalKeyboardInModal];
   return react.useMemo(() => {

@@ -1,14 +1,14 @@
-// Module ID: 6741
-// Function ID: 6742
+// Module ID: 6243
+// Function ID: 6244
 // Name: CheckpointCharacterAccessibilityUtils
-// Dependencies: [6742, 6419, 6744, 1113, 3319, 2]
+// Dependencies: [6244, 5921, 6245, 1113, 3339, 2]
 // Exports: getCheckpointCharacterAccessibilityLabel
 
-// Module 6741 (CheckpointCharacterAccessibilityUtils)
-import _modDef3319 from "module_3319" /* 3319 */;
-import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6419 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6742 */;
-import CheckpointTraitOptionNames from "CheckpointTraitOptionNames" /* 6744 */;
+// Module 6243 (CheckpointCharacterAccessibilityUtils)
+import _modDef3339 from "module_3339" /* 3339 */;
+import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 5921 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6244 */;
+import CheckpointTraitOptionNames from "CheckpointTraitOptionNames" /* 6245 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -43,7 +43,7 @@ export function getCheckpointCharacterAccessibilityLabel(character) {
         } else if (CheckpointCustomizationUtils.CheckpointCustomizationOption.OUTFIT_COLOR === item) {
           const tmpResult5 = CheckpointCharacterTraits;
           if (tmpResult5.getOutfitDefaultOptionId(tmp3) !== tmp3) {
-            tmp6 = tmp(6744).CHECKPOINT_OUTFIT_TO_COLOR_NAME[tmp3];
+            tmp6 = tmp(6245).CHECKPOINT_OUTFIT_TO_COLOR_NAME[tmp3];
           }
         } else {
           tmp6 = tmp7[tmp3];
@@ -56,7 +56,7 @@ export function getCheckpointCharacterAccessibilityLabel(character) {
       const intl = tmp(1113).intl;
       const formatToPlainString = intl.formatToPlainString;
       const obj = { category: tmpResult6.getCustomizationOptionName(item), name: intl2.string(tmp4) };
-      const prop = _modDef3319["Z+HdIo"];
+      const prop = _modDef3339["Z+HdIo"];
       tmpResult6 = CheckpointCustomizationUtils;
       intl2 = tmp(1113).intl;
       push(formatToPlainString(prop, obj));
@@ -65,7 +65,7 @@ export function getCheckpointCharacterAccessibilityLabel(character) {
   let intl = require("intl").intl;
   let formatToPlainString = intl.formatToPlainString;
   let obj = { traits: listFormat.format(items) };
-  const mQNR4x = items(3319).mQNR4x;
+  const mQNR4x = items(3339).mQNR4x;
   listFormat = new Intl.ListFormat(require("intl").intl.currentLocale, { type: "conjunction" });
   return formatToPlainString(mQNR4x, obj);
 }

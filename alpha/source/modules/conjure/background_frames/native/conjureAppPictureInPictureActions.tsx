@@ -1,19 +1,19 @@
-// Module ID: 19963
-// Function ID: 19964
+// Module ID: 19234
+// Function ID: 19235
 // Name: conjureAppPictureInPictureActions
-// Dependencies: [7027, 7025, 7028, 7349, 17023, 14118, 1113, 4133, 10757, 15175, 11046, 15176, 7959, 11495, 2]
+// Dependencies: [6531, 6529, 6532, 6854, 15673, 13422, 1113, 4121, 10038, 13803, 10328, 13804, 7462, 10777, 2]
 // Exports: openConjureAppPictureInPictureFrame, showConjureAppPictureInPictureActions
 
-// Module 19963 (conjureAppPictureInPictureActions)
-import _modDef4133 from "module_4133" /* 4133 */;
-import FramesConstants from "FramesConstants" /* 7028 */;
-import conjurePreviewSurface from "conjurePreviewSurface" /* 7349 */;
-import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7959 */;
-import EmbeddedAppShimExperiment from "EmbeddedAppShimExperiment" /* 11495 */;
-import openConjureProjectInBuilderDefault from "openConjureProjectInBuilder" /* 14118 */;
-import closeFrameDefault from "closeFrame" /* 15176 */;
-import FramesStore from "FramesStore" /* 7027 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 7025 */;
+// Module 19234 (conjureAppPictureInPictureActions)
+import _modDef4121 from "module_4121" /* 4121 */;
+import FramesConstants from "FramesConstants" /* 6532 */;
+import conjurePreviewSurface from "conjurePreviewSurface" /* 6854 */;
+import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7462 */;
+import EmbeddedAppShimExperiment from "EmbeddedAppShimExperiment" /* 10777 */;
+import openConjureProjectInBuilderDefault from "openConjureProjectInBuilder" /* 13422 */;
+import closeFrameDefault from "closeFrame" /* 13804 */;
+import FramesStore from "FramesStore" /* 6531 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6529 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -21,15 +21,15 @@ let _require;
 
 let tmp;
 let tmp3;
-const getConjureAppSoundButtonDefault = tmp3(15175);
-const conjureBackgroundFrames = tmp(17023);
+const getConjureAppSoundButtonDefault = tmp3(13803);
+const conjureBackgroundFrames = tmp(15673);
 function getConjureAppPictureInPictureActions(id, appName, arg2) {
   let intl;
   let intl2;
   let obj2;
   _require = id;
   let obj = {
-    label: intl.formatToPlainString(_modDef4133.dPf03z, obj2),
+    label: intl.formatToPlainString(_modDef4121.dPf03z, obj2),
     IconComponent: require("WindowLaunchIcon").WindowLaunchIcon,
     onPress() {
       const obj = conjurePreviewSurface;
@@ -56,7 +56,7 @@ function getConjureAppPictureInPictureActions(id, appName, arg2) {
   const push = items.push;
   const obj3 = {
     label: intl2.string(tmp(1113).t.VkMnR2),
-    IconComponent: tmp(11046).DoorExitIcon,
+    IconComponent: tmp(10328).DoorExitIcon,
     isDestructive: true,
     onPress() {
       return closeFrameDefault(id.id);

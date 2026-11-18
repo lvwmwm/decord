@@ -1,13 +1,13 @@
-// Module ID: 10786
-// Function ID: 10787
+// Module ID: 10067
+// Function ID: 10068
 // Name: useMediaModalFooterBackground
-// Dependencies: [32, 671, 5896, 575, 2]
+// Dependencies: [32, 671, 5387, 575, 2]
 // Exports: default
 
-// Module 10786 (useMediaModalFooterBackground)
+// Module 10067 (useMediaModalFooterBackground)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
-import useToken from "useToken" /* 5896 */;
+import useToken from "useToken" /* 5387 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

@@ -6,7 +6,7 @@
 
 // Module 716 (TRACING_DEFAULTS)
 import TRACE_FLAG_NONE from "TRACE_FLAG_NONE" /* 683 */;
-import _mod687 from "module_687" /* 687 */;
+import DEBUG_BUILD from "DEBUG_BUILD" /* 687 */;
 import CONSOLE_LEVELS from "CONSOLE_LEVELS" /* 688 */;
 import SPAN_STATUS_ERROR from "SPAN_STATUS_ERROR" /* 704 */;
 import _toArray from "_toArray" /* 717 */;
@@ -20,14 +20,14 @@ Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 const TRACING_DEFAULTS = { idleTimeout: 1000, finalTimeout: 30000, childSpanTimeout: 15000 };
 
 export { TRACING_DEFAULTS };
-export function startIdleSpan(arg0) {
+export function startIdleSpan(mcpServerSpanConfig) {
   let _false;
   let _undefined;
   let c9;
   let closure_12;
   let closure_13;
   let trimIdleSpanEndTimestamp;
-  const f125416 = () => {
+  const f122132 = () => {
     const tmp = !c2 && 0 === map.size && closure_4;
     if (tmp) {
       idleTimeout = "idleTimeout";
@@ -47,8 +47,8 @@ export function startIdleSpan(arg0) {
   let currentScope;
   let activeSpan;
   let c14;
-  function onIdleSpanEnded(arg0) {
-    closure_0 = arg0;
+  function onIdleSpanEnded(minResult) {
+    closure_0 = minResult;
     let c2 = true;
     map.clear();
     const item = items.forEach((fn) => fn());
@@ -83,7 +83,7 @@ export function startIdleSpan(arg0) {
           const obj = { code: SPAN_STATUS_ERROR.SPAN_STATUS_ERROR, message: "cancelled" };
           setStatus(obj);
           isRecording.end(closure_0);
-          if (_mod687.DEBUG_BUILD) {
+          if (DEBUG_BUILD.DEBUG_BUILD) {
             const debug = CONSOLE_LEVELS.debug;
             const _JSON = JSON;
             debug.log("[Tracing] Cancelling span since span ended early", JSON.stringify(isRecording, undefined, 2));
@@ -102,7 +102,7 @@ export function startIdleSpan(arg0) {
           num3 = start_timestamp;
         }
         let tmp14 = num2 - num3 <= (finalTimeout + idleTimeout) / 1000;
-        if (_mod687.DEBUG_BUILD) {
+        if (DEBUG_BUILD.DEBUG_BUILD) {
           const _JSON2 = JSON;
           const json = JSON.stringify(isRecording, undefined, 2);
           if (num3 <= closure_0) {
@@ -164,7 +164,7 @@ export function startIdleSpan(arg0) {
       const tmp5Result9 = tmp5(tmp6[5]);
       activeSpan = tmp5Result9.getActiveSpan();
       const tmp5Result10 = tmp5(tmp6[14]);
-      const startInactiveSpanResult = tmp5Result10.startInactiveSpan(arg0);
+      const startInactiveSpanResult = tmp5Result10.startInactiveSpan(mcpServerSpanConfig);
       const _setSpanForScope = tmp5(tmp6[8])._setSpanForScope;
       tmp5(tmp6[8]);
       const tmp5Result12 = tmp5(tmp6[1]);
@@ -318,7 +318,7 @@ export function startIdleSpan(arg0) {
               timeout = undefined;
             }
             const _setTimeout = setTimeout;
-            timeout = setTimeout(f125416, tmp6);
+            timeout = setTimeout(f122132, tmp6);
           }
         }
       }));
@@ -333,7 +333,7 @@ export function startIdleSpan(arg0) {
             timeout = undefined;
           }
           const _setTimeout = setTimeout;
-          timeout = setTimeout(f125416, idleTimeout);
+          timeout = setTimeout(f122132, idleTimeout);
           if (map.size) {
             const _setTimeout2 = setTimeout;
             timeout = setTimeout(() => {
@@ -354,7 +354,7 @@ export function startIdleSpan(arg0) {
           _require = undefined;
         }
         let _setTimeout = setTimeout;
-        _require = setTimeout(f125416, idleTimeout);
+        _require = setTimeout(f122132, idleTimeout);
       }
       let _setTimeout2 = setTimeout;
       const timerId = setTimeout(() => {

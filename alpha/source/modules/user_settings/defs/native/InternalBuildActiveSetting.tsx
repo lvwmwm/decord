@@ -1,13 +1,13 @@
-// Module ID: 18438
-// Function ID: 18439
+// Module ID: 17245
+// Function ID: 17246
 // Name: InternalBuildActiveSetting
-// Dependencies: [16879, 17409, 12612, 18234, 2]
+// Dependencies: [15562, 16066, 11897, 17038, 2]
 
-// Module 18438 (InternalBuildActiveSetting)
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 17409 */;
-import MobilePhoneSettingsIcon from "MobilePhoneSettingsIcon" /* 18234 */;
-import MobileNativeUpdateStore from "MobileNativeUpdateStore" /* 16879 */;
-import SettingBuilders from "SettingBuilders" /* 12612 */;
+// Module 17245 (InternalBuildActiveSetting)
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 16066 */;
+import MobilePhoneSettingsIcon from "MobilePhoneSettingsIcon" /* 17038 */;
+import MobileNativeUpdateStore from "MobileNativeUpdateStore" /* 15562 */;
+import SettingBuilders from "SettingBuilders" /* 11897 */;
 import size from "module_2" /* 2 */;
 
 let obj = {

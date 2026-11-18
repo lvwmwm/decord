@@ -1,16 +1,16 @@
-// Module ID: 11288
-// Function ID: 11289
+// Module ID: 10570
+// Function ID: 10571
 // Name: trackAppStoreOverlaySurfaceClicked
-// Dependencies: [8836, 10579, 10582, 8845, 6965, 6969, 2]
+// Dependencies: [8333, 9860, 9863, 8342, 6469, 6473, 2]
 // Exports: trackAppStoreOverlaySurfaceClickedForAdContent, trackAppStoreOverlaySurfaceClickedForQuest
 
-// Module 11288 (trackAppStoreOverlaySurfaceClicked)
-import QuestTypes from "QuestTypes" /* 6965 */;
-import AdCreativeType from "AdCreativeType" /* 6969 */;
-import AnalyticsActions from "AnalyticsActions" /* 8836 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 8845 */;
-import captureAdUserAction4 from "captureAdUserAction" /* 10579 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 10582 */;
+// Module 10570 (trackAppStoreOverlaySurfaceClicked)
+import QuestTypes from "QuestTypes" /* 6469 */;
+import AdCreativeType from "AdCreativeType" /* 6473 */;
+import AnalyticsActions from "AnalyticsActions" /* 8333 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8342 */;
+import captureAdUserAction4 from "captureAdUserAction" /* 9860 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9863 */;
 import size from "module_2" /* 2 */;
 
 function captureAppStoreOverlaySurfaceClick(overlaySurface, arg1, arg2) {

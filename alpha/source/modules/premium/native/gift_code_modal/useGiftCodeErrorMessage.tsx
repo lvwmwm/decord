@@ -1,19 +1,19 @@
-// Module ID: 12588
-// Function ID: 12589
+// Module ID: 11873
+// Function ID: 11874
 // Name: useGiftCodeErrorMessage
-// Dependencies: [32, 8511, 12582, 504, 1113, 6753, 2]
+// Dependencies: [32, 8002, 11865, 504, 11872, 1113, 11871, 6255, 2]
 // Exports: default
 
-// Module 12588 (useGiftCodeErrorMessage)
+// Module 11873 (useGiftCodeErrorMessage)
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 8511 */;
-import GiftCodeStore from "GiftCodeStore" /* 12582 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 8002 */;
+import GiftCodeStore from "GiftCodeStore" /* 11865 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const result = size.fileFinishedImporting("modules/premium/native/gift_code_modal/useGiftCodeErrorMessage.tsx");
+let result = size.fileFinishedImporting("modules/premium/native/gift_code_modal/useGiftCodeErrorMessage.tsx");
 
 export default function useGiftCodeErrorMessage(arg0, id) {
   let closure_0;
@@ -28,7 +28,7 @@ export default function useGiftCodeErrorMessage(arg0, id) {
   }), 2);
   first = tmp3[0];
   const items1 = [CollectiblesPurchaseStore];
-  let userId;
+  let result = null != first;
   const obj2 = require("get initialized");
   const stateFromStores = obj2.useStateFromStores(items1, () => {
     let skuId;
@@ -38,6 +38,11 @@ export default function useGiftCodeErrorMessage(arg0, id) {
     }
     return getPurchase(skuId);
   });
+  if (result) {
+    const tmpResult = require("useGiftSubscriptionAgreement");
+    result = tmpResult.needsGiftSubscriptionAgreement(first);
+  }
+  let userId;
   if (first != null) {
     userId = first.userId;
   }
@@ -46,26 +51,41 @@ export default function useGiftCodeErrorMessage(arg0, id) {
     id = id.id;
   }
   if (userId === id) {
-    const intl3 = tmp(tmp2[4]).intl;
-    stringResult = intl3.string(tmp(tmp2[4]).t.JZxgJX);
-  } else {
-    let isClaimed;
-    if (first != null) {
-      isClaimed = first.isClaimed;
+    let tmp10Result;
+    if (!result) {
+      const intl = tmp(tmp2[5]).intl;
+      if (null != first) {
+        let JZxgJX;
+        const tmpResult3 = require("GiftSubscriptionCodeUtils");
+        if (tmpResult3.isPendingGiftSubscriptionCode(first)) {
+          JZxgJX = tmp(tmp2[5]).t.wa9h7F;
+        }
+        tmp10Result = tmp10(JZxgJX);
+      }
+      JZxgJX = tmp(tmp2[5]).t.JZxgJX;
     }
-    if (isClaimed) {
-      const intl2 = tmp(tmp2[4]).intl;
-      stringResult = intl2.string(tmp(tmp2[4]).t.ilcBeX);
-    } else if (null != stateFromStores) {
-      const intl = tmp(tmp2[4]).intl;
-      stringResult = intl.string(tmp(tmp2[4]).t.mdLtb5);
-    } else {
-      stringResult = null;
-      if (null != tmp3[1]) {
-        const tmpResult = require("GiftCodeUtils");
-        stringResult = tmpResult.getGiftCodeRedeemError(tmp5);
+    return tmp10Result;
+  }
+  let isClaimed;
+  if (first != null) {
+    isClaimed = first.isClaimed;
+  }
+  if (isClaimed) {
+    const intl3 = tmp(tmp2[5]).intl;
+    stringResult = intl3.string(tmp(tmp2[5]).t.ilcBeX);
+  } else if (null != stateFromStores) {
+    const intl2 = tmp(tmp2[5]).intl;
+    stringResult = intl2.string(tmp(tmp2[5]).t.mdLtb5);
+  } else {
+    stringResult = null;
+    if (null != tmp3[1]) {
+      if (!result) {
+        const tmpResult4 = require("GiftCodeUtils");
+        stringResult = tmpResult4.getGiftCodeRedeemError(tmp5);
+      } else {
+        stringResult = null;
       }
     }
   }
-  return stringResult;
+  tmp10Result = stringResult;
 };

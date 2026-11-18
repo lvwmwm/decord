@@ -1,16 +1,16 @@
-// Module ID: 5335
-// Function ID: 5336
+// Module ID: 4848
+// Function ID: 4849
 // Name: HexagonCampaignConstants
-// Dependencies: [1390, 1398, 1399, 5336, 1401, 1196, 5337, 2]
+// Dependencies: [1390, 1398, 1399, 4849, 1401, 1196, 4850, 2]
 
-// Module 5335 (HexagonCampaignConstants)
+// Module 4848 (HexagonCampaignConstants)
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
 import DisplayNameFont from "DisplayNameFont" /* 1398 */;
 import DisplayNameEffect from "DisplayNameEffect" /* 1399 */;
 import user from "user" /* 1401 */;
-import AppIconTypes from "AppIconTypes" /* 5336 */;
-import HexagonCampaignDates from "HexagonCampaignDates" /* 5337 */;
+import AppIconTypes from "AppIconTypes" /* 4849 */;
+import HexagonCampaignDates from "HexagonCampaignDates" /* 4850 */;
 import size from "module_2" /* 2 */;
 
 const PremiumTypes = PremiumConstants.PremiumTypes;

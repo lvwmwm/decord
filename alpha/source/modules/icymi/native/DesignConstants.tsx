@@ -1,9 +1,9 @@
-// Module ID: 19369
-// Function ID: 19370
+// Module ID: 18183
+// Function ID: 18184
 // Name: DesignConstants
 // Dependencies: [575, 2]
 
-// Module 19369 (DesignConstants)
+// Module 18183 (DesignConstants)
 import nativeDefault from "native" /* 575 */;
 import size from "module_2" /* 2 */;
 

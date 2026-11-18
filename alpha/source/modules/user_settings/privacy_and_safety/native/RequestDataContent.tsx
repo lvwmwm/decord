@@ -1,18 +1,18 @@
-// Module ID: 17429
-// Function ID: 17430
+// Module ID: 16086
+// Function ID: 16087
 // Name: RequestDataContent
-// Dependencies: [32, 19, 17, 1072, 21, 5310, 1502, 1113, 7743, 5923, 2188, 7756, 5930, 6266, 17430, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 4823, 1502, 1113, 7246, 5414, 2188, 7259, 5421, 5768, 16087, 2]
 
-// Module 17429 (RequestDataContent)
+// Module 16086 (RequestDataContent)
 import Constants from "Constants" /* 1072 */;
 import intl11 from "intl" /* 1113 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6266 */;
-import DataHarvestActionCreators from "DataHarvestActionCreators" /* 17430 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5768 */;
+import DataHarvestActionCreators from "DataHarvestActionCreators" /* 16087 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,21 +1,21 @@
-// Module ID: 18937
-// Function ID: 18938
+// Module ID: 17747
+// Function ID: 17748
 // Name: ServerPreviewBannerControls
-// Dependencies: [19, 17, 1072, 21, 5310, 575, 7239, 7999, 7508, 1113, 18938, 2]
+// Dependencies: [19, 17, 1072, 21, 4823, 575, 6743, 7502, 7011, 1113, 17748, 2]
 // Exports: default
 
-// Module 18937 (ServerPreviewBannerControls)
+// Module 17747 (ServerPreviewBannerControls)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import transitionToGuild from "transitionToGuild" /* 7239 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7508 */;
-import IconButton2 from "IconButton" /* 7999 */;
-import ServerPreviewPillDefault from "ServerPreviewPill" /* 18938 */;
+import transitionToGuild from "transitionToGuild" /* 6743 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7011 */;
+import IconButton2 from "IconButton" /* 7502 */;
+import ServerPreviewPillDefault from "ServerPreviewPill" /* 17748 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;

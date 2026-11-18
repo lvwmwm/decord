@@ -1,27 +1,27 @@
-// Module ID: 18242
-// Function ID: 18243
+// Module ID: 17046
+// Function ID: 17047
 // Name: UserSettingsStartupTimings
-// Dependencies: [5, 32, 19, 17, 1362, 1072, 21, 5310, 575, 5923, 5493, 1630, 11855, 504, 9, 8689, 10338, 7898, 6335, 7756, 7743, 1363, 7453, 10755, 2]
+// Dependencies: [5, 32, 19, 17, 1362, 1072, 21, 4823, 575, 5414, 5006, 1630, 11137, 504, 9, 8180, 9619, 7401, 5837, 7259, 7246, 1363, 6956, 10036, 2]
 // Exports: default
 
-// Module 18242 (UserSettingsStartupTimings)
+// Module 17046 (UserSettingsStartupTimings)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import Text_Text from "Text/Text" /* 5923 */;
-import Stack_Stack from "Stack/Stack" /* 6335 */;
-import TableRow4 from "TableRow" /* 7453 */;
-import TableCheckboxRow from "TableCheckboxRow" /* 7743 */;
-import TableRowGroup6 from "TableRowGroup" /* 7756 */;
-import ShareIcon from "ShareIcon" /* 10755 */;
-import serializeAppStartLogsDefault from "serializeAppStartLogs" /* 11855 */;
+import Text_Text from "Text/Text" /* 5414 */;
+import Stack_Stack from "Stack/Stack" /* 5837 */;
+import TableRow4 from "TableRow" /* 6956 */;
+import TableCheckboxRow from "TableCheckboxRow" /* 7246 */;
+import TableRowGroup6 from "TableRowGroup" /* 7259 */;
+import ShareIcon from "ShareIcon" /* 10036 */;
+import serializeAppStartLogsDefault from "serializeAppStartLogs" /* 11137 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1362 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
-import react_native2 from "react-native" /* 5493 */;
+import createStyles_mod from "createStyles" /* 4823 */;
+import react_native2 from "react-native" /* 5006 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -166,6 +166,7 @@ export default function UserSettingsStartupTimings() {
       let items10;
       let items11;
       let items12;
+      let items13;
       let items3;
       let items4;
       let items5;
@@ -173,11 +174,11 @@ export default function UserSettingsStartupTimings() {
       let items7;
       let items8;
       let items9;
-      let obj18;
       let obj19;
-      let obj22;
+      let obj20;
       let obj23;
-      let obj28;
+      let obj24;
+      let obj29;
       let obj3;
       let result;
       let result1;
@@ -204,7 +205,7 @@ export default function UserSettingsStartupTimings() {
       result = alertStartupMetrics / 1000;
       const TableRow = TableRow4.TableRow;
       items1 = ["Native: ", metroImportAll(Code, obj5)];
-      const items2 = [React4(Code, obj4), , , , , , , ];
+      const items2 = [React4(Code, obj4), , , , , , , , ];
       const obj6 = { children: items3 };
       const obj7 = { color: "text-brand", children: "" + result1 + "s (" + Math.round(closure_11 / num * 100) + "%)" };
       result1 = closure_11 / 1000;
@@ -235,75 +236,90 @@ export default function UserSettingsStartupTimings() {
       const obj14 = { children: items7 };
       items7 = ["TTI (first contentful paint): ", metroImportAll(Code, { color: "text-brand", children: str })];
       items2[5] = React4(Code, obj14);
+      let did_background_app;
+      if (lastTrackedAppUiViewed2Properties != null) {
+        did_background_app = tmp13.did_background_app;
+      }
+      let str3 = "";
+      if (null != did_background_app) {
+        let str4 = "no";
+        if (did_background_app) {
+          str4 = "yes";
+        }
+        str3 = str4;
+      }
+      const obj15 = { children: items8 };
+      items8 = ["Backgrounded before TTI: ", metroImportAll(Code, { color: "text-brand", children: str3 })];
+      items2[6] = React4(Code, obj15);
       let prop;
       if (lastTrackedAppUiViewed2Properties != null) {
         prop = tmp13.time_display_messages_with_cache_end;
       }
-      let str3 = "";
+      let str5 = "";
       if (null != prop) {
-        str3 = "";
+        str5 = "";
         if (prop > 0) {
-          str3 = `${tmp14 / 1000}s`;
+          str5 = `${tmp15 / 1000}s`;
         }
       }
-      const obj15 = { children: items8 };
-      items8 = ["Cached Messages Render: ", metroImportAll(Code, { color: "text-brand", children: str3 })];
-      items2[6] = React4(Code, obj15);
+      const obj16 = { children: items9 };
+      items9 = ["Cached Messages Render: ", metroImportAll(Code, { color: "text-brand", children: str5 })];
+      items2[7] = React4(Code, obj16);
       let prop1;
       if (lastTrackedAppUiViewed2Properties != null) {
         prop1 = tmp13.time_display_latest_messages_end;
       }
-      let str5 = "";
+      let str7 = "";
       if (null != prop1) {
-        str5 = "";
+        str7 = "";
         if (prop1 > 0) {
-          str5 = `${tmp15 / 1000}s`;
+          str7 = `${tmp16 / 1000}s`;
         }
       }
-      const obj16 = { children: items12 };
-      const obj17 = { title: "Key Cold Start Times", hasIcons: false, children: metroImportAll(TableRow, obj18) };
-      obj18 = { label: React4(authStore, obj19) };
-      obj19 = { children: items2 };
-      const obj20 = { children: items9 };
-      items9 = ["Latest Messages Render: ", metroImportAll(Code, { color: "text-brand", children: str5 })];
-      items2[7] = React4(Code, obj20);
-      items[1] = metroImportAll(TableRowGroup2, obj17);
-      const obj21 = { title: "Legend", hasIcons: false, children: metroImportAll(TableRow2, obj22) };
-      const TableRowGroup3 = tmp3(7756).TableRowGroup;
-      obj22 = { label: React4(authStore, obj23) };
-      obj23 = { children: items10 };
-      TableRow2 = tmp3(7453).TableRow;
-      items10 = [metroImportAll(Code, { children: "\u2615 - Java / Kotlin" }), metroImportAll(Code, { children: "\u{1F3A8} - React render" }), metroImportAll(Code, { children: "\u{1F4BE} - CacheStore" }), metroImportAll(Code, { children: "\u{1F9A5} - Slow Store Update / Handler" }), metroImportAll(Code, { children: "\u{1F3C3} - Startup Event" }), metroImportAll(Code, { children: "\u{1F310} - Socket Event" })];
-      items[2] = metroImportAll(TableRowGroup3, obj21);
-      const obj24 = { title: "Detailed Times", hasIcons: false, children: items11 };
-      const TableRowGroup4 = tmp3(7756).TableRowGroup;
-      items11 = [, ];
-      const obj25 = {
+      const obj17 = { children: items13 };
+      const obj18 = { title: "Key Cold Start Times", hasIcons: false, children: metroImportAll(TableRow, obj19) };
+      obj19 = { label: React4(authStore, obj20) };
+      obj20 = { children: items2 };
+      const obj21 = { children: items10 };
+      items10 = ["Latest Messages Render: ", metroImportAll(Code, { color: "text-brand", children: str7 })];
+      items2[8] = React4(Code, obj21);
+      items[1] = metroImportAll(TableRowGroup2, obj18);
+      const obj22 = { title: "Legend", hasIcons: false, children: metroImportAll(TableRow2, obj23) };
+      const TableRowGroup3 = tmp3(7259).TableRowGroup;
+      obj23 = { label: React4(authStore, obj24) };
+      obj24 = { children: items11 };
+      TableRow2 = tmp3(6956).TableRow;
+      items11 = [metroImportAll(Code, { children: "\u2615 - Java / Kotlin" }), metroImportAll(Code, { children: "\u{1F3A8} - React render" }), metroImportAll(Code, { children: "\u{1F4BE} - CacheStore" }), metroImportAll(Code, { children: "\u{1F9A5} - Slow Store Update / Handler" }), metroImportAll(Code, { children: "\u{1F3C3} - Startup Event" }), metroImportAll(Code, { children: "\u{1F310} - Socket Event" })];
+      items[2] = metroImportAll(TableRowGroup3, obj22);
+      const obj25 = { title: "Detailed Times", hasIcons: false, children: items12 };
+      const TableRowGroup4 = tmp3(7259).TableRowGroup;
+      items12 = [, ];
+      const obj26 = {
         label: "Hide the Noise",
         onPress() {
           return closure_1_2((arg0) => !arg0);
         },
         checked
       };
-      items11[0] = metroImportAll(TableCheckboxRow.TableCheckboxRow, obj25);
-      const obj26 = {
+      items12[0] = metroImportAll(TableCheckboxRow.TableCheckboxRow, obj26);
+      const obj27 = {
         label: "Hide paints",
         onPress() {
           return closure_1_4((arg0) => !arg0);
         },
         checked: !first1
       };
-      items11[1] = metroImportAll(TableCheckboxRow.TableCheckboxRow, obj26);
-      items[3] = React4(TableRowGroup4, obj24);
-      const obj27 = { title: "Share Timings", hasIcons: true, children: metroImportAll(TableRow3, obj28) };
-      const TableRowGroup5 = tmp3(7756).TableRowGroup;
-      obj28 = { icon: metroImportAll(ShareIcon.ShareIcon, {}), label: "Copy timings to clipboard.", arrow: true, onPress };
-      TableRow3 = tmp3(7453).TableRow;
-      items[4] = metroImportAll(TableRowGroup5, obj27);
-      items12 = [React4(Stack, obj), ];
-      const obj29 = { style: border.border };
-      items12[1] = metroImportAll(View, obj29);
-      return React4(authStore, obj16);
+      items12[1] = metroImportAll(TableCheckboxRow.TableCheckboxRow, obj27);
+      items[3] = React4(TableRowGroup4, obj25);
+      const obj28 = { title: "Share Timings", hasIcons: true, children: metroImportAll(TableRow3, obj29) };
+      const TableRowGroup5 = tmp3(7259).TableRowGroup;
+      obj29 = { icon: metroImportAll(ShareIcon.ShareIcon, {}), label: "Copy timings to clipboard.", arrow: true, onPress };
+      TableRow3 = tmp3(6956).TableRow;
+      items[4] = metroImportAll(TableRowGroup5, obj28);
+      items13 = [React4(Stack, obj), ];
+      const obj30 = { style: border.border };
+      items13[1] = metroImportAll(View, obj30);
+      return React4(authStore, obj17);
     },
     data: memo,
     renderItem(children) {
@@ -312,6 +328,6 @@ export default function UserSettingsStartupTimings() {
     }
   };
   obj6 = { paddingBottom: bottom + tmp2(575).space.PX_16 };
-  FlashList = tmp10(7898).FlashList;
+  FlashList = tmp10(7401).FlashList;
   return closure_8(checked, obj4);
 };

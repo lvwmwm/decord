@@ -1,10 +1,10 @@
-// Module ID: 13051
-// Function ID: 13052
+// Module ID: 12338
+// Function ID: 12339
 // Name: MediaChannelActionCreators
-// Dependencies: [5, 1072, 572, 1285, 6755, 2]
+// Dependencies: [5, 1072, 572, 1285, 6257, 2]
 // Exports: dismissMediaPostSharePrompt, fetchMediaPostEmbed, unfurlEmbedUrl
 
-// Module 13051 (MediaChannelActionCreators)
+// Module 12338 (MediaChannelActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;

@@ -1,17 +1,11 @@
 // Module ID: 5699
 // Function ID: 5700
-// Dependencies: [19, 21, 5700, 5711]
-// Exports: default
+// Dependencies: [5700, 5702]
 
 // Module 5699
-import Fragment from "Fragment" /* 21 */;
-import react from "react" /* 19 */;
+import _mod5700 from "module_5700" /* 5700 */;
+import BinTree from "BinTree" /* 5702 */;
 
-const jsx = Fragment.jsx;
+({ RBTree: _mod5700, BinTree });
 
-export default function _default(simultaneousWith) {
-  const tmp = null != simultaneousWith.simultaneousWith || null != simultaneousWith.requireToFail || null != simultaneousWith.block;
-  importDefault(tmp ? 5700 : 5711);
-  const merged = Object.assign(simultaneousWith);
-  return <tmp4 />;
-};
+export default { RBTree: _mod5700, BinTree };

@@ -1,9 +1,9 @@
-// Module ID: 13954
-// Function ID: 13955
+// Module ID: 13256
+// Function ID: 13257
 // Name: MessageRequestConstants
 // Dependencies: [2]
 
-// Module 13954 (MessageRequestConstants)
+// Module 13256 (MessageRequestConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/message_request/MessageRequestConstants.tsx");

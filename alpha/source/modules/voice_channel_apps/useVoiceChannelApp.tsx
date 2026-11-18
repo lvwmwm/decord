@@ -1,12 +1,12 @@
-// Module ID: 19720
-// Function ID: 19721
+// Module ID: 18991
+// Function ID: 18992
 // Name: useVoiceChannelApp
-// Dependencies: [5181, 5242, 1072, 504, 7061, 2]
+// Dependencies: [4694, 4755, 1072, 504, 6565, 2]
 // Exports: useCanConfigureVoiceChannelApp, useIsVoiceChannelAppEnabled, useVoiceChannelApplicationId
 
-// Module 19720 (useVoiceChannelApp)
-import GuildStore from "GuildStore" /* 5181 */;
-import PermissionStore from "PermissionStore" /* 5242 */;
+// Module 18991 (useVoiceChannelApp)
+import GuildStore from "GuildStore" /* 4694 */;
+import PermissionStore from "PermissionStore" /* 4755 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ let _require, getGuild;
 let closure_4;
 let hasOwnProperty;
 let metroRequire;
-const f121206 = () => {
+const f117922 = () => {
   guild_id = undefined;
   getGuild = getGuild.getGuild;
   if (guild_id != null) {
@@ -31,7 +31,7 @@ export function useIsVoiceChannelAppEnabled(guild_id) {
   _require = guild_id;
   const items = [GuildStore];
   const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, f121206);
+  const stateFromStores = obj.useStateFromStores(items, f117922);
   guild_id = undefined;
   const useIsConjureGuildEnabled = require("ConjureGuildExperiment").useIsConjureGuildEnabled;
   require("ConjureGuildExperiment");
@@ -60,7 +60,7 @@ export function useVoiceChannelApplicationId(guild_id) {
   _require = guild_id;
   const items = [GuildStore];
   const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, f121206);
+  const stateFromStores = obj.useStateFromStores(items, f117922);
   guild_id = undefined;
   const useIsConjureGuildEnabled = require("ConjureGuildExperiment").useIsConjureGuildEnabled;
   require("ConjureGuildExperiment");
@@ -101,7 +101,7 @@ export function useCanConfigureVoiceChannelApp(channel) {
   const tmp = _require;
   const items = [GuildStore];
   const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, f121206);
+  const stateFromStores = obj.useStateFromStores(items, f117922);
   let guild_id;
   const useIsConjureGuildEnabled = require("ConjureGuildExperiment").useIsConjureGuildEnabled;
   const tmp4 = require("ConjureGuildExperiment");

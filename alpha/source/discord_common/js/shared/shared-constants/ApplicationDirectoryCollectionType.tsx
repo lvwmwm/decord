@@ -1,9 +1,9 @@
-// Module ID: 13609
-// Function ID: 13610
+// Module ID: 12916
+// Function ID: 12917
 // Name: ApplicationDirectoryCollectionType
 // Dependencies: [2]
 
-// Module 13609 (ApplicationDirectoryCollectionType)
+// Module 12916 (ApplicationDirectoryCollectionType)
 import size from "module_2" /* 2 */;
 
 const obj = { ALL: new Set([1, 2, 3, 4, 5, 6, 7]), APPLICATION_DIRECTORY: new Set([1, 2, 3]), APP_LAUNCHER_IN_TEXT: new Set([4, 5, 6]), APP_LAUNCHER_IN_VOICE_BANNER: new Set([7]) };

@@ -1,11 +1,11 @@
-// Module ID: 20521
-// Function ID: 20522
+// Module ID: 19794
+// Function ID: 19795
 // Name: DefaultKeywordListTriggerFields
-// Dependencies: [19, 13039, 21, 7756, 1113, 20522, 7743, 20523, 2]
+// Dependencies: [19, 12326, 21, 7259, 1113, 19795, 7246, 19796, 2]
 // Exports: default
 
-// Module 20521 (DefaultKeywordListTriggerFields)
-import Constants from "Constants" /* 13039 */;
+// Module 19794 (DefaultKeywordListTriggerFields)
+import Constants from "Constants" /* 12326 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

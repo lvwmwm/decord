@@ -1,19 +1,19 @@
-// Module ID: 16521
-// Function ID: 16522
+// Module ID: 15204
+// Function ID: 15205
 // Name: ToastContainer
-// Dependencies: [32, 19, 17, 21, 575, 1655, 5310, 5542, 5376, 1708, 16517, 16522, 6273, 2]
+// Dependencies: [32, 19, 17, 21, 575, 1655, 4823, 5033, 4889, 1708, 15200, 15205, 5775, 2]
 // Exports: ToastContainer
 
-// Module 16521 (ToastContainer)
+// Module 15204 (ToastContainer)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import TransitionGroup_TransitionGroup from "TransitionGroup/TransitionGroup" /* 5376 */;
-import OverlayViewDefault from "OverlayView" /* 6273 */;
+import TransitionGroup_TransitionGroup from "TransitionGroup/TransitionGroup" /* 4889 */;
+import OverlayViewDefault from "OverlayView" /* 5775 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let _undefined2, _undefined3, tmp4, tmp5, tmp6;
@@ -316,7 +316,7 @@ export function ToastContainer(surface) {
     let tmpResult = tmp2;
     const tmp = jsx;
     if (flag) {
-      const obj3 = { pointerEvents: "box-none", style: StyleSheet.absoluteFill, children: tmp2 };
+      const obj3 = { pointerEvents: "box-none", style: StyleSheet.absoluteFill, unstable_accessibilityContainerViewIsModal: false, children: tmp2 };
       tmpResult = tmp(OverlayViewDefault, obj3);
     }
     return tmpResult;

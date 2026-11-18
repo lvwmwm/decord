@@ -1,10 +1,10 @@
-// Module ID: 8006
-// Function ID: 8007
+// Module ID: 7509
+// Function ID: 7510
 // Name: GuildEventSchedule
-// Dependencies: [19, 21, 2169, 7983, 8007, 1113, 2]
+// Dependencies: [19, 21, 2169, 7486, 7510, 1113, 2]
 // Exports: default
 
-// Module 8006 (GuildEventSchedule)
+// Module 7509 (GuildEventSchedule)
 import _modDef2169 from "module_2169" /* 2169 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -28,17 +28,17 @@ export default function GuildEventSchedule(schedule) {
   ({ guildEvent, recurrenceId } = schedule);
   const tmp2 = onChange(2169)();
   let obj = onChange(2169)();
-  const addResult = obj.add(schedule(7983).MAX_DAYS_AHEAD_AN_EVENT_CAN_START, "days");
+  const addResult = obj.add(schedule(7486).MAX_DAYS_AHEAD_AN_EVENT_CAN_START, "days");
   const items = [schedule.startDate];
   const memo = react.useMemo(() => {
     const obj = _modDef2169(schedule.startDate);
     return obj.add(15, "minutes");
   }, items);
   const obj3 = onChange(2169)();
-  const addResult1 = obj3.add(schedule(7983).MAX_DAYS_AHEAD_AN_EVENT_CAN_END, "days");
+  const addResult1 = obj3.add(schedule(7486).MAX_DAYS_AHEAD_AN_EVENT_CAN_END, "days");
   if (null != recurrenceId) {
-    addResult.add(schedule(7983).MAX_YEARS_AHEAD_RECURRING_EVENT, "years");
-    addResult1.add(schedule(7983).MAX_YEARS_AHEAD_RECURRING_EVENT, "years");
+    addResult.add(schedule(7486).MAX_YEARS_AHEAD_RECURRING_EVENT, "years");
+    addResult1.add(schedule(7486).MAX_YEARS_AHEAD_RECURRING_EVENT, "years");
   }
   const obj2 = {
     date: schedule.startDate,
@@ -52,7 +52,7 @@ export default function GuildEventSchedule(schedule) {
     dateLabel: intl.string(schedule(1113).t.kKOIwJ),
     timeLabel: intl2.string(schedule(1113).t["6dGmCD"])
   };
-  const GuildEventDatetime = tmp3(8007).GuildEventDatetime;
+  const GuildEventDatetime = tmp3(7510).GuildEventDatetime;
   intl = tmp3(1113).intl;
   intl2 = tmp3(1113).intl;
   const children = [closure_4(GuildEventDatetime, obj2), ];
@@ -73,7 +73,7 @@ export default function GuildEventSchedule(schedule) {
       dateLabel: intl3.string(schedule(1113).t.CTLgZJ),
       timeLabel: intl4.string(schedule(1113).t.j2RuXF)
     };
-    const GuildEventDatetime2 = tmp3(8007).GuildEventDatetime;
+    const GuildEventDatetime2 = tmp3(7510).GuildEventDatetime;
     intl3 = tmp3(1113).intl;
     intl4 = tmp3(1113).intl;
     tmp9Result = tmp9(GuildEventDatetime2, obj4);

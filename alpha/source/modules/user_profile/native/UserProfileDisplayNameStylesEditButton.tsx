@@ -1,24 +1,24 @@
-// Module ID: 17128
-// Function ID: 17129
+// Module ID: 15784
+// Function ID: 15785
 // Name: UserProfileDisplayNameStylesEditButton
-// Dependencies: [32, 19, 17, 1072, 5156, 21, 5310, 575, 1502, 9572, 5143, 8552, 6748, 10081, 1399, 17129, 1256, 1113, 17132, 1187, 15562, 10077, 17133, 17135, 3127, 17136, 2]
+// Dependencies: [32, 19, 17, 1072, 4669, 21, 4823, 575, 1502, 8986, 4656, 8043, 6250, 9363, 1399, 15785, 1256, 1113, 15788, 1187, 14190, 9357, 15789, 15791, 3147, 15792, 2]
 // Exports: default
 
-// Module 17128 (UserProfileDisplayNameStylesEditButton)
+// Module 15784 (UserProfileDisplayNameStylesEditButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5156 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15562 */;
-import getDisplayNameStylesFontNameDefault from "getDisplayNameStylesFontName" /* 17132 */;
-import DisplayNameStylesColorSwatchDefault from "DisplayNameStylesColorSwatch" /* 17133 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4669 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14190 */;
+import getDisplayNameStylesFontNameDefault from "getDisplayNameStylesFontName" /* 15788 */;
+import DisplayNameStylesColorSwatchDefault from "DisplayNameStylesColorSwatch" /* 15789 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;

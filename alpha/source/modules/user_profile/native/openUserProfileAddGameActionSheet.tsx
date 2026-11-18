@@ -1,12 +1,12 @@
-// Module ID: 10873
-// Function ID: 10874
+// Module ID: 10104
+// Function ID: 10105
 // Name: openUserProfileAddGameActionSheet
-// Dependencies: [5546, 10874, 2121, 2]
+// Dependencies: [5037, 10105, 2121, 2]
 // Exports: default
 
-// Module 10873 (openUserProfileAddGameActionSheet)
+// Module 10104 (openUserProfileAddGameActionSheet)
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
 import size from "module_2" /* 2 */;
 
 const UserProfileAddGameActionSheet = "UserProfileAddGameActionSheet";
@@ -14,6 +14,6 @@ const result = size.fileFinishedImporting("modules/user_profile/native/openUserP
 
 export default function openUserProfileAddGameActionSheet(arg0) {
   const obj = ActionSheetActionCreatorsDefault;
-  obj.openLazy(asyncRequire(10874, dependencyMap.paths), UserProfileAddGameActionSheet, arg0);
+  obj.openLazy(asyncRequire(10105, dependencyMap.paths), UserProfileAddGameActionSheet, arg0);
 };
 export const USER_PROFILE_ADD_GAME_ACTION_SHEET_KEY = "UserProfileAddGameActionSheet";

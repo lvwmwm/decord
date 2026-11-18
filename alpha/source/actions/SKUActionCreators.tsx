@@ -1,24 +1,24 @@
-// Module ID: 9943
-// Function ID: 9944
+// Module ID: 9223
+// Function ID: 9224
 // Name: SKUActionCreators
-// Dependencies: [5, 9423, 7078, 1072, 572, 6764, 1285, 5131, 9944, 8539, 6755, 5130, 5122, 6765, 6783, 1255, 2]
+// Dependencies: [5, 8836, 6582, 1072, 572, 6266, 1285, 4644, 9224, 8030, 6257, 4643, 4635, 6267, 6286, 1255, 2]
 // Exports: clearPurchaseError, fetchPublicSKU, fetchPublishedSKU, fetchSKU, fetchTestSKUsForApplication, grantChannelBranchEntitlement, orderSKU, previewPurchaseSku, purchaseSKU, resendPaymentVerificationEmail, showPurchaseConfirmationStep, updateSKUPaymentIsGift
 
-// Module 9943 (SKUActionCreators)
+// Module 9223 (SKUActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
-import BillingUtils from "BillingUtils" /* 5122 */;
-import StoreUtils from "StoreUtils" /* 6764 */;
-import PurchaseTokenUtils from "PurchaseTokenUtils" /* 6783 */;
-import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 8539 */;
-import TestModeUtils from "TestModeUtils" /* 9944 */;
+import BillingUtils from "BillingUtils" /* 4635 */;
+import StoreUtils from "StoreUtils" /* 6266 */;
+import PurchaseTokenUtils from "PurchaseTokenUtils" /* 6286 */;
+import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 8030 */;
+import TestModeUtils from "TestModeUtils" /* 9224 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9423 */;
-import SKUStore from "SKUStore" /* 7078 */;
+import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 8836 */;
+import SKUStore from "SKUStore" /* 6582 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
-let _false, closure_6, closure_7, closure_8, country_code, expected_amount, gift_info_options, load_id, quantity;
+let _false, closure_4, closure_6, closure_8, country_code, expected_amount, gift_info_options, load_id, quantity;
 
 let metroImportDefault;
 let metroRequire;
@@ -645,19 +645,18 @@ obj = function _grantChannelBranchEntitlement() {
   return obj(...arguments);
 };
 obj = function _orderSKU() {
-  obj = _asyncToGenerator(async (sku_id, payment_source_id, request_gateway_country_code, arg3, arg4) => {
+  obj = _asyncToGenerator(async (sku_id, payment_source_id, arg2, arg3) => {
+    let closure_2 = arg2;
     let closure_3 = arg3;
-    let closure_4 = arg4;
-    let c9 = 0;
-    let c10 = 0;
     let c8 = 0;
-    return (async function(arg0, value, arg2, arg3, arg4) {
+    let c9 = 0;
+    let c7 = 0;
+    return (async function(arg0, value, arg2, arg3) {
       let items;
-      let obj10;
       let obj4;
-      let obj6;
-      if (c10 === 2) {
-        c10 = 3;
+      let obj8;
+      if (c9 === 2) {
+        c9 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
       } else if (tmp3 === 3) {
         if (arg0 === 1) {
@@ -671,76 +670,75 @@ obj = function _orderSKU() {
         try {
           let body;
           let id;
-          c10 = 2;
-          if (0 === c9) {
+          c9 = 2;
+          if (0 === c8) {
             if (arg0 === 1) {
-              c10 = 3;
+              c9 = 3;
               throw value;
             } else if (arg0 === 2) {
-              c10 = 3;
+              c9 = 3;
               return { value, done: true };
             } else {
-              closure_6 = tmp;
+              closure_5 = tmp;
               body = undefined;
               id = undefined;
               const obj13 = DispatcherDefault;
               obj13.dispatch({ type: "ORDER_CREATE_START" });
-              c8 = 1;
-              result = { order_line_items: items, billing_facet: obj4, location_facet: obj6 };
+              c7 = 1;
+              result = { order_line_items: items, billing_facet: obj4 };
               items = [{ sku_id, quantity: 1, purchase_type: 1 }];
               const obj3 = { sku_id, quantity: 1, purchase_type: 1 };
               obj4 = { payment_source_id };
-              obj6 = { request_gateway_country_code };
-              const tmp40 = closure_4;
-              if (closure_3) {
-                const obj8 = { is_gift: true, gift_customization: obj10 };
-                obj10 = { recipient_id: null, gift_style: null, emoji_id: null, emoji_name: null, sound_id: null, reward_sku_ids: null, custom_message_contents: null };
-                ({ recipient_id: obj7.recipient_id, gift_style: obj7.gift_style, emoji_id: obj7.emoji_id, emoji_name: obj7.emoji_name, sound_id: obj7.sound_id, reward_sku_ids: obj7.reward_sku_ids, custom_message: obj7.custom_message_contents } = tmp40);
-                result.gifting_facet = obj8;
+              const tmp39 = closure_3;
+              if (closure_2) {
+                const obj6 = { is_gift: true, gift_customization: obj8 };
+                obj8 = { recipient_id: null, gift_style: null, emoji_id: null, emoji_name: null, sound_id: null, reward_sku_ids: null, custom_message_contents: null };
+                ({ recipient_id: obj7.recipient_id, gift_style: obj7.gift_style, emoji_id: obj7.emoji_id, emoji_name: obj7.emoji_name, sound_id: obj7.sound_id, reward_sku_ids: obj7.reward_sku_ids, custom_message: obj7.custom_message_contents } = tmp39);
+                result.gifting_facet = obj6;
               }
               const HTTP = HTTPUtils.HTTP;
               const request = { url: constants.ORDER_CREATE, body: result, rejectWithError: result };
               const post = HTTP.post;
               const obj9 = HTTPUtils;
               result = obj9.rejectWithMigratedError();
-              c9 = 2;
-              c10 = 1;
-              const obj11 = { value: post(request), done: false };
-              return obj11;
+              c8 = 2;
+              c9 = 1;
+              const obj10 = { value: post(request), done: false };
+              return obj10;
             }
           } else if (1 === tmp4) {
-            c8 = 0;
-            request_gateway_country_code = closure_7;
-            const obj5 = closure_134_1(closure_134_2[4]);
+            c7 = 0;
+            closure_2 = closure_6;
+            const obj5 = closure_133_1(closure_133_2[4]);
             obj5.dispatch({ type: "ORDER_CREATE_FAIL" });
             const self = this;
             const self2 = this;
-            const billingError = new closure_134_0(closure_134_2[10]).BillingError(request_gateway_country_code);
+            const billingError = new closure_133_0(closure_133_2[10]).BillingError(closure_2);
             throw billingError;
           } else if (arg0 === 1) {
-            c10 = 3;
+            c9 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c8 = 0;
-            c10 = 3;
+            c7 = 0;
+            c9 = 3;
             return { value, done: true };
           } else {
             body = value.body;
             id = body.id;
-            result = closure_134_1(closure_134_2[4]);
-            const obj14 = { type: "ORDER_CREATE_SUCCESS", orderId: id, order: body };
-            result.dispatch(obj14);
-            c8 = 0;
-            c10 = 3;
+            result = closure_133_1(closure_133_2[4]);
+            const obj12 = { type: "ORDER_CREATE_SUCCESS", orderId: id, order: body };
+            result.dispatch(obj12);
+            c7 = 0;
+            c9 = 3;
             return { value: id, done: true };
           }
         } catch (tmp30) {
-          closure_7 = tmp30;
-          if (0 === c8) {
-            c10 = 3;
+          closure_6 = tmp30;
+          if (0 === c7) {
+            c9 = 3;
             throw tmp30;
           } else {
-            c9 = 1;
+            c8 = 1;
           }
         }
       }

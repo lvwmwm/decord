@@ -1,18 +1,18 @@
-// Module ID: 16327
-// Function ID: 16328
+// Module ID: 14994
+// Function ID: 14995
 // Name: ContactSyncUpsellCTA
-// Dependencies: [19, 14208, 1072, 21, 5310, 575, 8117, 1256, 14205, 7958, 1113, 16328, 2]
+// Dependencies: [19, 13512, 1072, 21, 4823, 575, 7620, 1256, 13509, 7461, 1113, 14995, 2]
 
-// Module 16327 (ContactSyncUpsellCTA)
+// Module 14994 (ContactSyncUpsellCTA)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 14205 */;
-import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 14208 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16328 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 13509 */;
+import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 13512 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14995 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -29,7 +29,7 @@ const memoResult = react.memo(function ContactSyncUpsellCTA(location) {
   const style = location.style;
   let tmp = closure_7();
   let items = [tmp.container, style];
-  const FormCTA = location(8117).FormCTA;
+  const FormCTA = location(7620).FormCTA;
   let intl = location(1113).intl;
   const intl2 = location(1113).intl;
   return <FormCTA onPress={function handleOpen() {

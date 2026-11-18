@@ -1,14 +1,14 @@
-// Module ID: 8081
-// Function ID: 8082
+// Module ID: 7584
+// Function ID: 7585
 // Name: ThreadLockIcon
-// Dependencies: [19, 21, 575, 6013, 8045, 2]
+// Dependencies: [19, 21, 575, 5509, 7548, 2]
 // Exports: ThreadLockIcon
 
-// Module 8081 (ThreadLockIcon)
+// Module 7584 (ThreadLockIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6013 */;
-import AssetRegistry from "AssetRegistry" /* 8045 */;
+import BaseIconImage2 from "BaseIconImage" /* 5509 */;
+import AssetRegistry from "AssetRegistry" /* 7548 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

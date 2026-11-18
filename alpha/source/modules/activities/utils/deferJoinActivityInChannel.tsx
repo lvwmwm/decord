@@ -1,10 +1,10 @@
-// Module ID: 7692
-// Function ID: 7693
+// Module ID: 7195
+// Function ID: 7196
 // Name: deferJoinActivityInChannel
 // Dependencies: [572, 2]
 // Exports: default
 
-// Module 7692 (deferJoinActivityInChannel)
+// Module 7195 (deferJoinActivityInChannel)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 

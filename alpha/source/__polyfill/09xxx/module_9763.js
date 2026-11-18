@@ -1,168 +1,190 @@
 // Module ID: 9763
 // Function ID: 9764
-// Dependencies: [5351]
+// Dependencies: [9750]
+// Exports: existsOne, filter, findAll, findOneChild
 
 // Module 9763
-import "module_5351";
-import module_5351_mod from "module_5351" /* 5351 */;
+import DomHandler from "DomHandler" /* 9750 */;
 
-let items;
-let items1;
-let items10;
-let items11;
-let items12;
-let items13;
-let items14;
-let items15;
-let items16;
-let items17;
-let items18;
-let items19;
-let items2;
-let items20;
-let items21;
-let items22;
-let items23;
-let items24;
-let items25;
-let items26;
-let items27;
-let items28;
-let items29;
-let items3;
-let items30;
-let items4;
-let items5;
-let items6;
-let items7;
-let items8;
-let items9;
-let module_5351;
-let oneOfType;
-let oneOfType10;
-let oneOfType11;
-let oneOfType12;
-let oneOfType13;
-let oneOfType14;
-let oneOfType15;
-let oneOfType16;
-let oneOfType17;
-let oneOfType18;
-let oneOfType19;
-let oneOfType2;
-let oneOfType20;
-let oneOfType21;
-let oneOfType22;
-let oneOfType23;
-let oneOfType24;
-let oneOfType25;
-let oneOfType26;
-let oneOfType27;
-let oneOfType28;
-let oneOfType29;
-let oneOfType3;
-let oneOfType30;
-let oneOfType31;
-let oneOfType4;
-let oneOfType5;
-let oneOfType6;
-let oneOfType7;
-let oneOfType8;
-let oneOfType9;
-const size = { display: module_5351.oneOf(["none", "flex"]), width: oneOfType(items), height: oneOfType2(items1), start: oneOfType3(items2), end: oneOfType4(items3), top: oneOfType5(items4), left: oneOfType6(items5), right: oneOfType7(items6), bottom: oneOfType8(items7), minWidth: oneOfType9(items8), maxWidth: oneOfType10(items9), minHeight: oneOfType11(items10), maxHeight: oneOfType12(items11), margin: oneOfType13(items12), marginVertical: oneOfType14(items13), marginHorizontal: oneOfType15(items14), marginTop: oneOfType16(items15), marginBottom: oneOfType17(items16), marginLeft: oneOfType18(items17), marginRight: oneOfType19(items18), marginStart: oneOfType20(items19), marginEnd: oneOfType21(items20), padding: oneOfType22(items21), paddingVertical: oneOfType23(items22), paddingHorizontal: oneOfType24(items23), paddingTop: oneOfType25(items24), paddingBottom: oneOfType26(items25), paddingLeft: oneOfType27(items26), paddingRight: oneOfType28(items27), paddingStart: oneOfType29(items28), paddingEnd: oneOfType30(items29), borderWidth: module_5351.number, borderTopWidth: module_5351.number, borderStartWidth: module_5351.number, borderEndWidth: module_5351.number, borderRightWidth: module_5351.number, borderBottomWidth: module_5351.number, borderLeftWidth: module_5351.number, position: module_5351.oneOf(["absolute", "relative"]), flexDirection: module_5351.oneOf(["row", "row-reverse", "column", "column-reverse"]), flexWrap: module_5351.oneOf(["wrap", "nowrap", "wrap-reverse"]), justifyContent: module_5351.oneOf(["flex-start", "flex-end", "center", "space-between", "space-around", "space-evenly"]), alignItems: module_5351.oneOf(["flex-start", "flex-end", "center", "stretch", "baseline"]), alignSelf: module_5351.oneOf(["auto", "flex-start", "flex-end", "center", "stretch", "baseline"]), alignContent: module_5351.oneOf(["flex-start", "flex-end", "center", "stretch", "space-between", "space-around"]), overflow: module_5351.oneOf(["visible", "hidden", "scroll"]), flex: module_5351.number, flexGrow: module_5351.number, flexShrink: module_5351.number, flexBasis: oneOfType31(items30), aspectRatio: module_5351.number, zIndex: module_5351.number, direction: module_5351.oneOf(["inherit", "ltr", "rtl"]) };
-module_5351 = module_5351_mod;
-oneOfType = module_5351.oneOfType;
-items = [module_5351.number, module_5351.string];
-module_5351 = module_5351_mod;
-oneOfType2 = module_5351.oneOfType;
-items1 = [module_5351.number, module_5351.string];
-module_5351 = module_5351_mod;
-oneOfType3 = module_5351.oneOfType;
-items2 = [module_5351.number, module_5351.string];
-module_5351 = module_5351_mod;
-oneOfType4 = module_5351.oneOfType;
-items3 = [module_5351.number, module_5351.string];
-module_5351 = module_5351_mod;
-oneOfType5 = module_5351.oneOfType;
-items4 = [module_5351.number, module_5351.string];
-module_5351 = module_5351_mod;
-oneOfType6 = module_5351.oneOfType;
-items5 = [module_5351.number, module_5351.string];
-module_5351 = module_5351_mod;
-oneOfType7 = module_5351.oneOfType;
-items6 = [module_5351.number, module_5351.string];
-module_5351 = module_5351_mod;
-oneOfType8 = module_5351.oneOfType;
-items7 = [module_5351.number, module_5351.string];
-module_5351 = module_5351_mod;
-oneOfType9 = module_5351.oneOfType;
-items8 = [module_5351.number, module_5351.string];
-module_5351 = module_5351_mod;
-oneOfType10 = module_5351.oneOfType;
-items9 = [module_5351.number, module_5351.string];
-module_5351 = module_5351_mod;
-oneOfType11 = module_5351.oneOfType;
-items10 = [module_5351.number, module_5351.string];
-module_5351 = module_5351_mod;
-oneOfType12 = module_5351.oneOfType;
-items11 = [module_5351.number, module_5351.string];
-module_5351 = module_5351_mod;
-oneOfType13 = module_5351.oneOfType;
-items12 = [module_5351.number, module_5351.string];
-module_5351 = module_5351_mod;
-oneOfType14 = module_5351.oneOfType;
-items13 = [module_5351.number, module_5351.string];
-module_5351 = module_5351_mod;
-oneOfType15 = module_5351.oneOfType;
-items14 = [module_5351.number, module_5351.string];
-module_5351 = module_5351_mod;
-oneOfType16 = module_5351.oneOfType;
-items15 = [module_5351.number, module_5351.string];
-module_5351 = module_5351_mod;
-oneOfType17 = module_5351.oneOfType;
-items16 = [module_5351.number, module_5351.string];
-module_5351 = module_5351_mod;
-oneOfType18 = module_5351.oneOfType;
-items17 = [module_5351.number, module_5351.string];
-module_5351 = module_5351_mod;
-oneOfType19 = module_5351.oneOfType;
-items18 = [module_5351.number, module_5351.string];
-module_5351 = module_5351_mod;
-oneOfType20 = module_5351.oneOfType;
-items19 = [module_5351.number, module_5351.string];
-module_5351 = module_5351_mod;
-oneOfType21 = module_5351.oneOfType;
-items20 = [module_5351.number, module_5351.string];
-module_5351 = module_5351_mod;
-oneOfType22 = module_5351.oneOfType;
-items21 = [module_5351.number, module_5351.string];
-module_5351 = module_5351_mod;
-oneOfType23 = module_5351.oneOfType;
-items22 = [module_5351.number, module_5351.string];
-module_5351 = module_5351_mod;
-oneOfType24 = module_5351.oneOfType;
-items23 = [module_5351.number, module_5351.string];
-module_5351 = module_5351_mod;
-oneOfType25 = module_5351.oneOfType;
-items24 = [module_5351.number, module_5351.string];
-module_5351 = module_5351_mod;
-oneOfType26 = module_5351.oneOfType;
-items25 = [module_5351.number, module_5351.string];
-module_5351 = module_5351_mod;
-oneOfType27 = module_5351.oneOfType;
-items26 = [module_5351.number, module_5351.string];
-module_5351 = module_5351_mod;
-oneOfType28 = module_5351.oneOfType;
-items27 = [module_5351.number, module_5351.string];
-module_5351 = module_5351_mod;
-oneOfType29 = module_5351.oneOfType;
-items28 = [module_5351.number, module_5351.string];
-module_5351 = module_5351_mod;
-oneOfType30 = module_5351.oneOfType;
-items29 = [module_5351.number, module_5351.string];
-module_5351 = module_5351_mod;
-oneOfType31 = module_5351.oneOfType;
-items30 = [module_5351.number, module_5351.string];
-module_5351 = module_5351_mod;
+function find(fn, arg1, arg2, arg3) {
+  const items = [];
+  let tmp = arg1;
+  if (!Array.isArray(arg1)) {
+    const items1 = [arg1];
+    tmp = items1;
+  }
+  let tmp2 = arg3;
+  const items2 = [tmp];
+  const items3 = [0];
+  while (true) {
+    if (items3[0] >= items2[0].length) {
+      if (1 === items3.length) {
+        return items;
+      } else {
+        let arr = items2.shift();
+        let arr2 = items3.shift();
+        continue;
+      }
+    } else {
+      let tmp13 = +items3[0];
+      items3[0] = tmp13 + 1;
+      let tmp14 = items2[0][tmp13];
+      let diff = tmp2;
+      if (fn(tmp14)) {
+        let arr3 = items.push(tmp14);
+        diff = tmp2 - 1;
+        if (diff <= 0) {
+          break;
+        }
+      }
+      let hasChildrenResult = arg2;
+      if (hasChildrenResult) {
+        hasChildrenResult = DomHandler.hasChildren(tmp14);
+      }
+      if (hasChildrenResult) {
+        hasChildrenResult = tmp14.children.length > 0;
+      }
+      tmp2 = diff;
+      if (!hasChildrenResult) {
+        continue;
+      } else {
+        let arr4 = items3.unshift(0);
+        let arr9 = items2.unshift(tmp14.children);
+        tmp2 = diff;
+        continue;
+      }
+      continue;
+    }
+  }
+  return items;
+}
+function findOne(fn, arg1, arg2) {
+  let tmp;
+  let flag = arg2;
+  if (undefined === arg2) {
+    flag = true;
+  }
+  let arr = arg1;
+  if (!Array.isArray(arg1)) {
+    const items = [arg1];
+    arr = items;
+  }
+  let num = 0;
+  if (0 < arr.length) {
+    while (true) {
+      tmp = arr[num];
+      let tmp2 = require;
+      if (DomHandler.isTag(tmp)) {
+        if (fn(tmp)) {
+          break;
+        }
+      }
+      if (flag) {
+        if (tmp2(9750).hasChildren(tmp)) {
+          if (tmp.children.length > 0) {
+            let tmp6 = findOne(fn, tmp.children, true);
+            if (tmp6) {
+              return tmp6;
+            }
+          }
+        }
+      }
+      num = num + 1;
+    }
+    return tmp;
+  }
+  return null;
+}
 
-export default size;
+export function filter(arg0, arg1, arg2, arg3) {
+  let flag = arg2;
+  if (undefined === arg2) {
+    flag = true;
+  }
+  let num = arg3;
+  if (undefined === arg3) {
+    num = Infinity;
+  }
+  let tmp2 = arg1;
+  const tmp = find;
+  if (!Array.isArray(arg1)) {
+    const items = [arg1];
+    tmp2 = items;
+  }
+  return tmp(arg0, tmp2, flag, num);
+}
+export { find };
+export function findOneChild(arg0, arr) {
+  return arr.find(arg0);
+}
+export { findOne };
+export function existsOne(arg0, arg1) {
+  const f97305 = (children) => {
+    let isTagResult = DomHandler.isTag(children);
+    if (isTagResult) {
+      isTagResult = closure_0(children);
+    }
+    if (!isTagResult) {
+      let hasChildrenResult = DomHandler.hasChildren(children);
+      if (hasChildrenResult) {
+        children = children.children;
+        const _Array = Array;
+        let obj = children;
+        if (!Array.isArray(children)) {
+          const items = [children];
+          obj = items;
+        }
+        hasChildrenResult = obj.some(f97305);
+      }
+      isTagResult = hasChildrenResult;
+    }
+    return isTagResult;
+  };
+  let closure_0 = arg0;
+  let obj = arg1;
+  if (!Array.isArray(arg1)) {
+    let items = [arg1];
+    obj = items;
+  }
+  return obj.some(f97305);
+}
+export function findAll(fn, arg1) {
+  const items = [];
+  let tmp = arg1;
+  if (!Array.isArray(arg1)) {
+    const items1 = [arg1];
+    tmp = items1;
+  }
+  const items2 = [tmp];
+  const items3 = [0];
+  while (true) {
+    if (items3[0] >= items2[0].length) {
+      if (1 === items2.length) {
+        break;
+      } else {
+        let arr = items2.shift();
+        let arr2 = items3.shift();
+        continue;
+      }
+    } else {
+      let tmp9 = +items3[0];
+      items3[0] = tmp9 + 1;
+      let tmp10 = items2[0][tmp9];
+      let tmp11 = require;
+      let tmp2 = DomHandler.isTag(tmp10) && fn(tmp10);
+      if (tmp2) {
+        let arr3 = items.push(tmp10);
+      }
+      let tmp4 = tmp11(9750).hasChildren(tmp10) && tmp10.children.length > 0;
+      if (!tmp4) {
+        continue;
+      } else {
+        let arr4 = items3.unshift(0);
+        let arr9 = items2.unshift(tmp10.children);
+        continue;
+      }
+      continue;
+    }
+  }
+  return items;
+}

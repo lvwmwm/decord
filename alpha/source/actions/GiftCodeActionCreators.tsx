@@ -1,20 +1,20 @@
-// Module ID: 12583
-// Function ID: 12584
+// Module ID: 11866
+// Function ID: 11867
 // Name: GiftCodeActionCreators
-// Dependencies: [5, 2165, 8496, 8504, 1072, 1390, 572, 6753, 7063, 8495, 6755, 5131, 1242, 1285, 12584, 12585, 2]
+// Dependencies: [5, 2165, 7987, 7995, 1072, 1390, 572, 6255, 6567, 7986, 6257, 4644, 1242, 1285, 11867, 11868, 2]
 // Exports: deliverGiftCodes, reportUnexpectedGiftCodeError, resolveGiftCode
 
-// Module 12583 (GiftCodeActionCreators)
+// Module 11866 (GiftCodeActionCreators)
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
-import errors_V6OrEarlierAPIErrorDefault from "errors/V6OrEarlierAPIError" /* 5131 */;
-import UnknownCollectiblesItemRecord from "UnknownCollectiblesItemRecord" /* 8504 */;
-import CodedLinkActionCreatorsDefault from "CodedLinkActionCreators" /* 12584 */;
-import actions_GiftCodeActionCreators from "actions/GiftCodeActionCreators" /* 12585 */;
+import errors_V6OrEarlierAPIErrorDefault from "errors/V6OrEarlierAPIError" /* 4644 */;
+import UnknownCollectiblesItemRecord from "UnknownCollectiblesItemRecord" /* 7995 */;
+import CodedLinkActionCreatorsDefault from "CodedLinkActionCreators" /* 11867 */;
+import actions_GiftCodeActionCreators from "actions/GiftCodeActionCreators" /* 11868 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 8496 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7987 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

@@ -1,14 +1,14 @@
-// Module ID: 11917
-// Function ID: 11918
+// Module ID: 11199
+// Function ID: 11200
 // Name: BellIcon
-// Dependencies: [19, 21, 575, 6013, 9184, 2]
+// Dependencies: [19, 21, 575, 5509, 8595, 2]
 // Exports: BellIcon
 
-// Module 11917 (BellIcon)
+// Module 11199 (BellIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6013 */;
-import AssetRegistry from "AssetRegistry" /* 9184 */;
+import BaseIconImage2 from "BaseIconImage" /* 5509 */;
+import AssetRegistry from "AssetRegistry" /* 8595 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

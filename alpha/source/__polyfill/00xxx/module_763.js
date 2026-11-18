@@ -8,17 +8,17 @@ import _mod764 from "module_764" /* 764 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export function isSentryRequestUrl(arr, getDsn) {
+export function isSentryRequestUrl(name, client) {
   let dsn;
   let tunnel;
-  if (getDsn != null) {
-    dsn = getDsn.getDsn();
+  if (client != null) {
+    dsn = client.getDsn();
   }
-  if (getDsn != null) {
-    tunnel = getDsn.getOptions().tunnel;
+  if (client != null) {
+    tunnel = client.getOptions().tunnel;
   }
   const obj = _mod764;
-  const result = obj.parseStringToURLObject(arr);
+  const result = obj.parseStringToURLObject(name);
   let flag = false;
   if (result) {
     flag = false;
@@ -40,9 +40,9 @@ export function isSentryRequestUrl(arr, getDsn) {
   if (!flag) {
     let flag2 = false;
     if (tunnel) {
-      let substr = arr;
-      if ("/" === arr[arr.length - 1]) {
-        substr = arr.slice(0, -1);
+      let substr = name;
+      if ("/" === name[name.length - 1]) {
+        substr = name.slice(0, -1);
       }
       let substr1 = tunnel;
       if ("/" === tunnel[tunnel.length - 1]) {

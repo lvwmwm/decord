@@ -1,15 +1,15 @@
-// Module ID: 8655
-// Function ID: 8656
+// Module ID: 8146
+// Function ID: 8147
 // Name: findComponentMedia
-// Dependencies: [2119, 6381, 2]
+// Dependencies: [2119, 5883, 2]
 
-// Module 8655 (findComponentMedia)
+// Module 8146 (findComponentMedia)
 import Server from "Server" /* 2119 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/explicit_media_redaction/findComponentMedia.tsx");
 function findComponentMedia(arg0) {
-  const f96637 = (type) => {
+  const f93785 = (type) => {
     type = type.type;
     if (Server.ComponentType.MEDIA_GALLERY === type) {
       const items = type.items;
@@ -29,8 +29,8 @@ function findComponentMedia(arg0) {
         const items2 = [accessory];
         obj = items2;
       }
-      const flatMapResult = obj.flatMap(f96637);
-      HermesBuiltin.arraySpread(items1, flatMapResult.map(f96638), arraySpreadResult);
+      const flatMapResult = obj.flatMap(f93785);
+      HermesBuiltin.arraySpread(items1, flatMapResult.map(f93786), arraySpreadResult);
       return items1;
     } else {
       if (Server.ComponentType.ACTION_ROW !== type) {
@@ -42,7 +42,7 @@ function findComponentMedia(arg0) {
       return components.flatMap(findComponentMedia);
     }
   };
-  const f96638 = (item) => {
+  const f93786 = (item) => {
     let toUnfurledMediaItemResult = item;
     if ("proxy_url" in item) {
       const obj = closure_1_0(closure_1_1[1]);
@@ -55,8 +55,8 @@ function findComponentMedia(arg0) {
     let items = [arg0];
     obj = items;
   }
-  let flatMapResult = obj.flatMap(f96637);
-  return flatMapResult.map(f96638);
+  let flatMapResult = obj.flatMap(f93785);
+  return flatMapResult.map(f93786);
 }
 
 export default findComponentMedia;

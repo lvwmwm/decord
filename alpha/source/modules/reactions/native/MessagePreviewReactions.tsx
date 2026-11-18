@@ -1,15 +1,15 @@
-// Module ID: 11078
-// Function ID: 11079
+// Module ID: 10360
+// Function ID: 10361
 // Name: MessagePreviewReactions
-// Dependencies: [19, 8756, 8759, 10671, 21, 504, 7928, 7947, 11063, 2]
+// Dependencies: [19, 8252, 8255, 9952, 21, 504, 7431, 7450, 10345, 2]
 // Exports: default
 
-// Module 11078 (MessagePreviewReactions)
+// Module 10360 (MessagePreviewReactions)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 8756 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 8759 */;
-import MessagePreviewStore from "MessagePreviewStore" /* 10671 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 8252 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 8255 */;
+import MessagePreviewStore from "MessagePreviewStore" /* 9952 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -36,14 +36,14 @@ export default function MessagePreviewReactions(emoji) {
     }
     return null != message ? message.reactions : closure_7;
   }, items1);
-  const tmp3 = messageId(7928);
-  const obj2 = { value: tmp3(messageId(7947).MESSAGE_PREVIEW_REACTIONS).analyticsLocations, children: tmp4Result };
-  const AnalyticsLocationProvider = channelId(7928).AnalyticsLocationProvider;
+  const tmp3 = messageId(7431);
+  const obj2 = { value: tmp3(messageId(7450).MESSAGE_PREVIEW_REACTIONS).analyticsLocations, children: tmp4Result };
+  const AnalyticsLocationProvider = channelId(7431).AnalyticsLocationProvider;
   if (stateFromStores.length > 0) {
     const obj3 = { channelId, messageId, emoji, reactions: stateFromStores };
-    tmp4Result = tmp4(tmp(11063).MessageReactionsContent, obj3);
+    tmp4Result = tmp4(tmp(10345).MessageReactionsContent, obj3);
   } else {
-    tmp4Result = tmp4(tmp(11063).MessageReactionsEmpty, {});
+    tmp4Result = tmp4(tmp(10345).MessageReactionsEmpty, {});
   }
   return jsx(AnalyticsLocationProvider, obj2);
 };

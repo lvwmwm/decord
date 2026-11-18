@@ -1,13 +1,14 @@
-// Module ID: 9459
-// Function ID: 9460
+// Module ID: 8874
+// Function ID: 8875
 // Name: CollectiblesPromotionUtils
-// Dependencies: [9426, 9460, 9462, 2]
+// Dependencies: [8839, 8875, 8877, 8872, 2]
 // Exports: getPromotionForCollectiblesProduct, hasFiatDiscountPromotion, isPromotionInInvoicePreview
 
-// Module 9459 (CollectiblesPromotionUtils)
-import StorefrontCollectiblesTypes from "StorefrontCollectiblesTypes" /* 9426 */;
-import CollectiblesCollectAndClaimPromotionUtils from "CollectiblesCollectAndClaimPromotionUtils" /* 9460 */;
-import CollectiblesTargetedOfferPromotionUtils from "CollectiblesTargetedOfferPromotionUtils" /* 9462 */;
+// Module 8874 (CollectiblesPromotionUtils)
+import StorefrontCollectiblesTypes from "StorefrontCollectiblesTypes" /* 8839 */;
+import CollectiblesSequencedOfferPromotionUtils from "CollectiblesSequencedOfferPromotionUtils" /* 8872 */;
+import CollectiblesCollectAndClaimPromotionUtils from "CollectiblesCollectAndClaimPromotionUtils" /* 8875 */;
+import CollectiblesTargetedOfferPromotionUtils from "CollectiblesTargetedOfferPromotionUtils" /* 8877 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/collectibles/utils/CollectiblesPromotionUtils.tsx");
@@ -34,8 +35,11 @@ export function getPromotionForCollectiblesProduct(selectedProduct, tenantMetada
       const tmp4Result = CollectiblesCollectAndClaimPromotionUtils;
       return tmp4Result.getCollectAndClaimPromotionForCollectiblesProduct(selectedProduct, tenantMetadata);
     } else if (StorefrontCollectiblesTypes.StorefrontPromotionCollectiblesType.TARGETED_OFFER === type) {
-      const tmp4Result2 = CollectiblesTargetedOfferPromotionUtils;
-      return tmp4Result2.getTargetedOfferPromotionForCollectiblesProduct(selectedProduct, tenantMetadata);
+      const tmp4Result3 = CollectiblesTargetedOfferPromotionUtils;
+      return tmp4Result3.getTargetedOfferPromotionForCollectiblesProduct(selectedProduct, tenantMetadata);
+    } else if (StorefrontCollectiblesTypes.StorefrontPromotionCollectiblesType.COLLECTION_SEQUENCED_OFFER === type) {
+      const tmp4Result4 = CollectiblesSequencedOfferPromotionUtils;
+      return tmp4Result4.getSequencedOfferPromotionForCollectiblesProduct(selectedProduct, tenantMetadata);
     } else {
       return null;
     }

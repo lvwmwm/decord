@@ -1,12 +1,12 @@
-// Module ID: 12703
-// Function ID: 12704
+// Module ID: 11988
+// Function ID: 11989
 // Name: openPlaintextFilePreview
-// Dependencies: [6833, 12704, 2121, 2]
+// Dependencies: [6337, 11989, 2121, 2]
 // Exports: openPlaintextFilePreview
 
-// Module 12703 (openPlaintextFilePreview)
+// Module 11988 (openPlaintextFilePreview)
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6833 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6337 */;
 import size from "module_2" /* 2 */;
 
 const PlaintextFilePreview = "PlaintextFilePreview";
@@ -15,5 +15,5 @@ const result = size.fileFinishedImporting("modules/media/native/openPlaintextFil
 export const PLAINTEXT_FILE_PREVIEW_MODAL_KEY = "PlaintextFilePreview";
 export function openPlaintextFilePreview(merged) {
   const obj = ModalActionCreatorsDefault;
-  return obj.pushLazy(asyncRequire(12704, dependencyMap.paths), merged, PlaintextFilePreview);
+  return obj.pushLazy(asyncRequire(11989, dependencyMap.paths), merged, PlaintextFilePreview);
 }

@@ -1,18 +1,18 @@
-// Module ID: 9301
-// Function ID: 9302
+// Module ID: 8712
+// Function ID: 8713
 // Name: ReferralSystemMessage
-// Dependencies: [9302, 502, 5310, 575, 9306, 9203, 8666, 9300, 9327, 2]
+// Dependencies: [8713, 502, 4823, 575, 8717, 8614, 8157, 8711, 8738, 2]
 // Exports: createReferralSystemMessage
 
-// Module 9301 (ReferralSystemMessage)
+// Module 8712 (ReferralSystemMessage)
 import nativeDefault from "native" /* 575 */;
-import createCommonMessageDefault from "createCommonMessage" /* 9203 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9300 */;
-import ReferralTrialEmbedRedesign from "ReferralTrialEmbedRedesign" /* 9306 */;
-import ReferralTrialEmbed from "ReferralTrialEmbed" /* 9327 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 9302 */;
+import createCommonMessageDefault from "createCommonMessage" /* 8614 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8711 */;
+import ReferralTrialEmbedRedesign from "ReferralTrialEmbedRedesign" /* 8717 */;
+import ReferralTrialEmbed from "ReferralTrialEmbed" /* 8738 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 8713 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let obj = { iconTintColor: nativeDefault.colors.ICON_STRONG, iconDividerColor: nativeDefault.colors.ICON_STRONG };
@@ -45,7 +45,7 @@ export function createReferralSystemMessage(message) {
         const tmp17 = closure_5(theme);
         const merged = Object.assign(createCommonMessageDefault(message));
         ({ iconTintColor: obj4.iconTintColor, iconDividerColor: obj4.iconDividerColor } = tmp17);
-        tmp8Result = tmp8(8666);
+        tmp8Result = tmp8(8157);
         return obj2;
       }
     } else {
@@ -59,7 +59,7 @@ export function createReferralSystemMessage(message) {
         const tmp4 = closure_5(theme);
         const merged1 = Object.assign(createCommonMessageDefault(message));
         ({ iconTintColor: obj.iconTintColor, iconDividerColor: obj.iconDividerColor } = tmp4);
-        tmp23Result = tmp23(8666);
+        tmp23Result = tmp23(8157);
         return obj;
       }
     }

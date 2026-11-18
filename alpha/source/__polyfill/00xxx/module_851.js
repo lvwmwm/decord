@@ -5,7 +5,7 @@
 
 // Module 851
 import _mod685 from "module_685" /* 685 */;
-import _mod687 from "module_687" /* 687 */;
+import DEBUG_BUILD from "DEBUG_BUILD" /* 687 */;
 
 function _isFetchSupported() {
   if ("fetch" in _mod685.GLOBAL_OBJ) {
@@ -99,7 +99,7 @@ export function supportsNativeFetch() {
             const head2 = _document.head;
             head2.removeChild(element);
           } catch (tmp11) {
-            if (_mod687.DEBUG_BUILD) {
+            if (DEBUG_BUILD.DEBUG_BUILD) {
               const debug = tmp2(688).debug;
               debug.warn("Could not create sandbox iframe for pure fetch check, bailing to window.fetch: ", tmp11);
             }

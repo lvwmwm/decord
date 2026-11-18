@@ -1,20 +1,20 @@
-// Module ID: 17420
-// Function ID: 17421
+// Module ID: 16077
+// Function ID: 16078
 // Name: BaseUpsellActionSheet
-// Dependencies: [19, 17, 5181, 21, 5310, 575, 504, 7730, 17418, 1113, 5923, 14160, 13850, 5546, 6009, 5560, 5930, 2]
+// Dependencies: [19, 17, 4694, 21, 4823, 575, 504, 7233, 16075, 1113, 5414, 13464, 13157, 5037, 5505, 5051, 5421, 2]
 // Exports: default
 
-// Module 17420 (BaseUpsellActionSheet)
+// Module 16077 (BaseUpsellActionSheet)
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 6009 */;
-import GuildIconDefault from "GuildIcon" /* 7730 */;
-import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 17418 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5505 */;
+import GuildIconDefault from "GuildIcon" /* 7233 */;
+import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 16075 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 5181 */;
+import GuildStore from "GuildStore" /* 4694 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let guild;
@@ -36,7 +36,7 @@ function StoreGuildIcon(guildId) {
   const items = [GuildStore];
   const obj = guildId(504);
   const stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(guildId));
-  const obj2 = { guild: stateFromStores, size: guildId(7730).GuildIconSizes.XSMALL };
+  const obj2 = { guild: stateFromStores, size: guildId(7233).GuildIconSizes.XSMALL };
   const tmp2 = GuildIconDefault;
   return closure_7(tmp2, obj2);
 }
@@ -189,16 +189,16 @@ export default function BaseUpsellActionSheet(toastContent) {
   }, []);
   let obj = { startExpanded: true, children: closure_8(closure_5, obj2) };
   obj2 = { style: tmp.container, children: items1 };
-  const BottomSheet = toastContent(5560).BottomSheet;
+  const BottomSheet = toastContent(5051).BottomSheet;
   let obj3 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "text-strong", children: title };
-  items1 = [closure_7(toastContent(5923).Text, obj3), , , ];
+  items1 = [closure_7(toastContent(5414).Text, obj3), , , ];
   const obj4 = { style: tmp.description, variant: "body-md/medium", color: "text-default", children: subtitle };
-  items1[1] = closure_7(toastContent(5923).Text, obj4);
+  items1[1] = closure_7(toastContent(5414).Text, obj4);
   items1[2] = closure_7(GuildCard, { guildIds: affectedGuildIds, direction, onPress: onCardPress });
   const obj5 = { style: tmp.buttonsContainer, children: items2 };
-  items2 = [closure_7(toastContent(5930).Button, { variant: "primary", size: "md", text: confirmText, onPress: callback }), ];
+  items2 = [closure_7(toastContent(5421).Button, { variant: "primary", size: "md", text: confirmText, onPress: callback }), ];
   const obj6 = { variant: "secondary", size: "md", text: intl.string(toastContent(1113).t.X1rGEm), onPress: callback1 };
-  const Button = toastContent(5930).Button;
+  const Button = toastContent(5421).Button;
   intl = toastContent(1113).intl;
   items2[1] = closure_7(Button, obj6);
   items1[3] = closure_8(closure_5, obj5);

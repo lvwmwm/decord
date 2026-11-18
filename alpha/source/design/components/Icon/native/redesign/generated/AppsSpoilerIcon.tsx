@@ -1,14 +1,14 @@
-// Module ID: 8110
-// Function ID: 8111
+// Module ID: 7613
+// Function ID: 7614
 // Name: AppsSpoilerIcon
-// Dependencies: [19, 21, 575, 6013, 8069, 2]
+// Dependencies: [19, 21, 575, 5509, 7572, 2]
 // Exports: AppsSpoilerIcon
 
-// Module 8110 (AppsSpoilerIcon)
+// Module 7613 (AppsSpoilerIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6013 */;
-import AssetRegistry from "AssetRegistry" /* 8069 */;
+import BaseIconImage2 from "BaseIconImage" /* 5509 */;
+import AssetRegistry from "AssetRegistry" /* 7572 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

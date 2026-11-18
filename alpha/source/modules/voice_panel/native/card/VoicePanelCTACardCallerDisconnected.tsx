@@ -1,18 +1,18 @@
-// Module ID: 20067
-// Function ID: 20068
+// Module ID: 19338
+// Function ID: 19339
 // Name: VoicePanelCTACardCallerDisconnected
-// Dependencies: [32, 19, 502, 5159, 1388, 21, 5310, 575, 12427, 504, 6349, 7732, 6014, 5923, 1113, 2]
+// Dependencies: [32, 19, 502, 4672, 1388, 21, 4823, 575, 11709, 504, 5851, 7235, 5510, 5414, 1113, 2]
 
-// Module 20067 (VoicePanelCTACardCallerDisconnected)
+// Module 19338 (VoicePanelCTACardCallerDisconnected)
 import nativeDefault from "native" /* 575 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6349 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5851 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 5159 */;
+import ChannelStore from "ChannelStore" /* 4672 */;
 import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size_mod from "module_2" /* 2 */;
 
 let c9;
@@ -43,7 +43,7 @@ const memoResult = react.memo(function VoicePanelCTACardCallerDisconnected() {
   let tmp9;
   let tmpResult11;
   let tmpResult9;
-  const f122214 = () => {
+  const f118930 = () => {
     const user = UserStore.getUser(id);
     const user1 = UserStore.getUser(first);
     let avatarURL;
@@ -75,9 +75,9 @@ const memoResult = react.memo(function VoicePanelCTACardCallerDisconnected() {
   let items = [UserStore];
   const items1 = [channelId, id, first];
   const obj = channelId(id[9]);
-  [tmp9, tmp10, tmp11] = obj.useStateFromStoresArray(items, f122214, items1);
+  [tmp9, tmp10, tmp11] = obj.useStateFromStoresArray(items, f118930, items1);
   const obj2 = { style: tmp3.container, children: items4 };
-  _slicedToArray(obj.useStateFromStoresArray(items, f122214, items1), 3);
+  _slicedToArray(obj.useStateFromStoresArray(items, f118930, items1), 3);
   let obj3 = { style: tmp3.avatarContainer, children: items2 };
   let tmp16Result = null != tmp9;
   const tmpResult = first(id[11]);

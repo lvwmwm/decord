@@ -1,18 +1,18 @@
-// Module ID: 18761
-// Function ID: 18762
+// Module ID: 17574
+// Function ID: 17575
 // Name: useMainTabsPanelsGesture
-// Dependencies: [19, 12608, 1380, 18762, 12609, 1630, 1496, 1655, 1708, 5542, 5545, 5933, 18763, 5592, 2]
+// Dependencies: [19, 11893, 1380, 17575, 11894, 1630, 1496, 1655, 1708, 5033, 5036, 5424, 17576, 5083, 2]
 // Exports: default
 
-// Module 18761 (useMainTabsPanelsGesture)
+// Module 17574 (useMainTabsPanelsGesture)
 import _mod1708 from "module_1708" /* 1708 */;
-import timing_timing from "timing/timing" /* 5542 */;
-import timingPresets from "timingPresets" /* 5545 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5592 */;
-import LaunchPadConstants from "LaunchPadConstants" /* 12608 */;
+import timing_timing from "timing/timing" /* 5033 */;
+import timingPresets from "timingPresets" /* 5036 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5083 */;
+import LaunchPadConstants from "LaunchPadConstants" /* 11893 */;
 import react from "react" /* 19 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1380 */;
-import PanelsConfig from "PanelsConfig" /* 18762 */;
+import PanelsConfig from "PanelsConfig" /* 17575 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -495,6 +495,6 @@ export default function useMainTabsPanelsGesture(canDrag) {
     return onFinalize(useMainTabsPanelsGestureTsx10);
   }, items9);
   const items10 = [memo, sharedValue2, sharedValue3, sharedValue];
-  let obj = { gesture: memo, panelGestureContext: obj2.useMemo(() => ({ gesture: memo, disallowGesture: sharedValue2, edgeSwipeOnly: sharedValue3, translateX: sharedValue, isInMainTabs: true }), items10), isDragging: sharedValue1, translateX: sharedValue, movePanel: callback1, maxWidth: openWidth, isDraggingRef: ref };
+  let obj = { gesture: memo, panelGestureContext: obj2.useMemo(() => ({ gesture: memo, disallowGesture: sharedValue2, edgeSwipeOnly: sharedValue3, translateX: sharedValue }), items10), isDragging: sharedValue1, translateX: sharedValue, movePanel: callback1, maxWidth: openWidth, isDraggingRef: ref };
   return obj;
 };

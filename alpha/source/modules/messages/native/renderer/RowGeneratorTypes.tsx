@@ -1,9 +1,9 @@
-// Module ID: 10717
-// Function ID: 10718
+// Module ID: 9998
+// Function ID: 9999
 // Name: RowGeneratorTypes
 // Dependencies: [2]
 
-// Module 10717 (RowGeneratorTypes)
+// Module 9998 (RowGeneratorTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/native/renderer/RowGeneratorTypes.tsx");

@@ -1,18 +1,18 @@
-// Module ID: 15610
-// Function ID: 15611
+// Module ID: 14238
+// Function ID: 14239
 // Name: createSocialLayerStorefrontMultiSkuEmbed
-// Dependencies: [2165, 7078, 7255, 1072, 8853, 11091, 12641, 12642, 14116, 12640, 15611, 9181, 15612, 6764, 7253, 2]
+// Dependencies: [2165, 6582, 6759, 1072, 8350, 10373, 11926, 11927, 13420, 11925, 14239, 8592, 14240, 6266, 6757, 2]
 // Exports: createSocialLayerStorefrontMultiSkuEmbed
 
-// Module 15610 (createSocialLayerStorefrontMultiSkuEmbed)
+// Module 14238 (createSocialLayerStorefrontMultiSkuEmbed)
 import Constants from "Constants" /* 1072 */;
-import Constants2 from "Constants" /* 8853 */;
-import CodedLinksConstants from "CodedLinksConstants" /* 11091 */;
-import isSocialLayerApplicationDefault from "isSocialLayerApplication" /* 14116 */;
-import getSocialLayerStorefrontSkuEmbedDetails from "getSocialLayerStorefrontSkuEmbedDetails" /* 15611 */;
+import Constants2 from "Constants" /* 8350 */;
+import CodedLinksConstants from "CodedLinksConstants" /* 10373 */;
+import isSocialLayerApplicationDefault from "isSocialLayerApplication" /* 13420 */;
+import getSocialLayerStorefrontSkuEmbedDetails from "getSocialLayerStorefrontSkuEmbedDetails" /* 14239 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
-import SKUStore from "SKUStore" /* 7078 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7255 */;
+import SKUStore from "SKUStore" /* 6582 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 6759 */;
 import size from "module_2" /* 2 */;
 
 const ThemeTypes = Constants.ThemeTypes;
@@ -29,9 +29,9 @@ export function createSocialLayerStorefrontMultiSkuEmbed(arg0) {
   let application;
   const tmp2 = dependencyMap;
   ({ skuIds, guildOrApplication } = arg0);
-  let obj = application(12641);
+  let obj = application(11926);
   const isEligibleForSocialLayerStorefrontMobileEmbed = obj.getIsEligibleForSocialLayerStorefrontMobileEmbed({ location: "create_coded_link_embeds", autoTrackExposure: true });
-  let obj2 = application(12642);
+  let obj2 = application(11927);
   if (isEligibleForSocialLayerStorefrontMobileEmbed) {
     if (obj2.getIsEligibleForSocialLayerStorefrontMobileMultiSkuEmbed({ location: "create_coded_link_embeds", autoTrackExposure: true })) {
       const storefrontFetchState = SocialLayerStorefrontStore.getStorefrontFetchState(guildOrApplication);
@@ -46,7 +46,7 @@ export function createSocialLayerStorefrontMultiSkuEmbed(arg0) {
         if (null != application) {
           const tmp18 = importDefault;
           if (isSocialLayerApplicationDefault(application)) {
-            const tmpResult = application(12640);
+            const tmpResult = application(11925);
             const result = tmpResult.normalizeStorefrontSkuIds(skuIds);
             const flatMapResult = result.flatMap((skuId) => {
               const value = SKUStore.get(skuId);
@@ -70,14 +70,14 @@ export function createSocialLayerStorefrontMultiSkuEmbed(arg0) {
                 lightThemeLogoAssetId = storefront.lightThemeLogoAssetId;
               }
               const obj3 = { backgroundColor: tmpResult4.getSocialLayerStorefrontEmbedColors(ThemeTypes.DARK).backgroundColor, extendedType: CodedLinkExtendedType.SOCIAL_LAYER_STOREFRONT_MULTI_SKU_EMBED, type: InviteTypes.GUILD, headerText: storefront.title, headerLogoUrl: assetURL, headerBackgroundImageUrl: socialLayerStorefrontBackgroundImageURL, headerAccessibilityLabel: "" + application.name + " " + storefront.title, firstItemFullWidth: flatMapResult.length % 2 === 1, items: flatMapResult, embedCanBeTapped: true };
-              let merged = Object.assign(tmp18(9181)(ThemeTypes.DARK).baseColors);
+              let merged = Object.assign(tmp18(8592)(ThemeTypes.DARK).baseColors);
               assetURL = undefined;
-              tmpResult4 = application(15612);
+              tmpResult4 = application(14240);
               if (null != lightThemeLogoAssetId) {
-                const tmpResult5 = application(6764);
+                const tmpResult5 = application(6266);
                 assetURL = tmpResult5.getAssetURL(application.id, lightThemeLogoAssetId, 128);
               }
-              const tmpResult6 = application(7253);
+              const tmpResult6 = application(6757);
               socialLayerStorefrontBackgroundImageURL = tmpResult6.getSocialLayerStorefrontBackgroundImageURL(storefront);
               const _HermesInternal = HermesInternal;
               return obj3;

@@ -1,18 +1,18 @@
-// Module ID: 12342
-// Function ID: 12343
+// Module ID: 11624
+// Function ID: 11625
 // Name: AvailableForumTag
-// Dependencies: [19, 6977, 1391, 21, 5310, 575, 504, 12293, 8008, 7904, 1414, 5923, 2]
+// Dependencies: [19, 6481, 1391, 21, 4823, 575, 504, 11575, 7511, 7407, 1414, 5414, 2]
 // Exports: default
 
-// Module 12342 (AvailableForumTag)
+// Module 11624 (AvailableForumTag)
 import nativeDefault from "native" /* 575 */;
 import EmojiConstants from "EmojiConstants" /* 1391 */;
-import EmojiDefault from "Emoji" /* 7904 */;
-import native from "native" /* 8008 */;
+import EmojiDefault from "Emoji" /* 7407 */;
+import native from "native" /* 7511 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6977 */;
+import EmojiStore from "EmojiStore" /* 6481 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -22,7 +22,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp3;
-const Text_Text = tmp3(5923);
+const Text_Text = tmp3(5414);
 const EMOJI_URL_BASE_SIZE = EmojiConstants.EMOJI_URL_BASE_SIZE;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;

@@ -1,21 +1,21 @@
-// Module ID: 12825
-// Function ID: 12826
+// Module ID: 12119
+// Function ID: 12120
 // Name: EmojiReactionRowButton
-// Dependencies: [19, 17, 1391, 21, 5310, 575, 5317, 7438, 1113, 10110, 7904, 1414, 5259, 2]
+// Dependencies: [19, 17, 1391, 21, 4823, 575, 4830, 6941, 1113, 9391, 7407, 1414, 4772, 2]
 // Exports: EmojiPickerRowButton, EmojiReactionRowButton, getEmojiKey
 
-// Module 12825 (EmojiReactionRowButton)
+// Module 12119 (EmojiReactionRowButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import EmojiConstants from "EmojiConstants" /* 1391 */;
-import EmojiTypes from "EmojiTypes" /* 5259 */;
-import shared from "shared" /* 5317 */;
-import Pressables from "Pressables" /* 7438 */;
-import EmojiDefault from "Emoji" /* 7904 */;
+import EmojiTypes from "EmojiTypes" /* 4772 */;
+import shared from "shared" /* 4830 */;
+import Pressables from "Pressables" /* 6941 */;
+import EmojiDefault from "Emoji" /* 7407 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size_mod from "module_2" /* 2 */;
 
 const Platform = react_native.Platform;
@@ -48,10 +48,10 @@ export function EmojiPickerRowButton(iconSize) {
   const isThemeLightResult = obj2.isThemeLight(theme);
   const unsafe_rawColors = nativeDefault.unsafe_rawColors;
   const tmp5 = isThemeLightResult ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_300;
-  const PressableOpacity = tmp2(7438).PressableOpacity;
+  const PressableOpacity = tmp2(6941).PressableOpacity;
   const intl = tmp2(1113).intl;
   const items = [tmp.emojiContainer, styles];
-  const ReactionIcon = tmp2(10110).ReactionIcon;
+  const ReactionIcon = tmp2(9391).ReactionIcon;
   if (str == null) {
     str = "md";
   }

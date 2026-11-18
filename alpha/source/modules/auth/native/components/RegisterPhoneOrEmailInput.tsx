@@ -1,16 +1,16 @@
-// Module ID: 18710
-// Function ID: 18711
+// Module ID: 17523
+// Function ID: 17524
 // Name: RegisterPhoneOrEmailInput
-// Dependencies: [19, 7778, 18691, 21, 1502, 16529, 504, 7799, 1092, 1113, 7798, 2]
+// Dependencies: [19, 7281, 17504, 21, 1502, 15212, 504, 7302, 1092, 1113, 7301, 2]
 // Exports: RegisterPhoneOrEmailInput
 
-// Module 18710 (RegisterPhoneOrEmailInput)
+// Module 17523 (RegisterPhoneOrEmailInput)
 import Fragment from "Fragment" /* 21 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
-import PhoneOrEmailUtils from "PhoneOrEmailUtils" /* 7799 */;
+import PhoneOrEmailUtils from "PhoneOrEmailUtils" /* 7302 */;
 import react from "react" /* 19 */;
-import PhoneStore from "PhoneStore" /* 7778 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 18691 */;
+import PhoneStore from "PhoneStore" /* 7281 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 17504 */;
 import size from "module_2" /* 2 */;
 
 let navigation;

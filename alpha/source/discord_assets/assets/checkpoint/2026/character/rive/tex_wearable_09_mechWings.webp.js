@@ -1,8 +1,8 @@
-// Module ID: 13324
-// Function ID: 13325
+// Module ID: 12627
+// Function ID: 12628
 // Dependencies: [2]
 
-// Module 13324
+// Module 12627
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_wearable_09_mechWings.webp.js");

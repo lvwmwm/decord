@@ -1,15 +1,15 @@
-// Module ID: 13119
-// Function ID: 13120
+// Module ID: 12417
+// Function ID: 12418
 // Name: CheckpointStore
-// Dependencies: [1388, 2110, 6420, 6419, 13120, 13121, 6743, 504, 572, 2]
+// Dependencies: [1388, 2110, 5922, 5921, 12418, 12419, 6246, 504, 572, 2]
 
-// Module 13119 (CheckpointStore)
+// Module 12417 (CheckpointStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 2110 */;
-import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6419 */;
-import CheckpointTrait from "CheckpointTrait" /* 6420 */;
-import CheckpointFlows from "CheckpointFlows" /* 13121 */;
+import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 5921 */;
+import CheckpointTrait from "CheckpointTrait" /* 5922 */;
+import CheckpointFlows from "CheckpointFlows" /* 12419 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
@@ -289,7 +289,7 @@ let obj4 = {
         if (progress != null) {
           stage1 = progress.stage;
         }
-        if (stage1 === tmp8(6743).CheckpointCharacterStage.SUMMARY) {
+        if (stage1 === tmp8(6246).CheckpointCharacterStage.SUMMARY) {
           return false;
         } else {
           let tmp3 = c13;

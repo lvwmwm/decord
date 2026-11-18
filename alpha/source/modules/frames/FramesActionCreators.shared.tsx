@@ -1,20 +1,20 @@
-// Module ID: 11302
-// Function ID: 11303
+// Module ID: 10584
+// Function ID: 10585
 // Name: launchFrame
-// Dependencies: [32, 5, 7027, 7028, 5953, 11303, 572, 7351, 7030, 7352, 11305, 11312, 7359, 2]
+// Dependencies: [32, 5, 6531, 6532, 5449, 10585, 572, 6856, 6534, 6857, 10587, 10594, 6864, 2]
 // Exports: attachFrameHostWindow, attachFrameIframe, detachFrameHostWindow, detachFrameIframe, launchFrame, refreshProxyTicket, resetFrameGuestClaims, resetFrameLayoutModes, setFramePictureInPictureInteractive, setFrameRunsInBackground, setFrameUserMuted, updateFramePanelMode
 
-// Module 11302 (launchFrame)
+// Module 10584 (launchFrame)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5953 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 7030 */;
-import createProxyTicket from "createProxyTicket" /* 7351 */;
-import leaveFrame from "leaveFrame" /* 7359 */;
-import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 11303 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5449 */;
+import getChannelIdForEmbeddedSurface from "getChannelIdForEmbeddedSurface" /* 6534 */;
+import createProxyTicket2 from "createProxyTicket" /* 6856 */;
+import leaveFrame from "leaveFrame" /* 6864 */;
+import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 10585 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import FramesStore from "FramesStore" /* 7027 */;
-import FramesConstants from "FramesConstants" /* 7028 */;
+import FramesStore from "FramesStore" /* 6531 */;
+import FramesConstants from "FramesConstants" /* 6532 */;
 import size from "module_2" /* 2 */;
 
 let analyticsContext, closure_1, error, hostWindowKey, intent, launch, launchRequestId, message, proxyTicket, type;
@@ -73,11 +73,11 @@ let obj = function _launchFrame() {
               showErrorModal = undefined;
               invite = undefined;
               ({ applicationId: c0, surface: c1, launch: c2, analyticsContext: c3, hostWindowKey: c4, showErrorModal } = closure_0);
-              const tmp120 = closure_0;
+              const tmp121 = closure_0;
               if (showErrorModal === undefined) {
                 showErrorModal = true;
               }
-              invite = tmp120.invite;
+              invite = tmp121.invite;
               frameId = undefined;
               intent = undefined;
               launchRequestId = undefined;
@@ -118,8 +118,12 @@ let obj = function _launchFrame() {
                 const obj9 = closure_131_1(closure_131_2[6]);
                 obj9.dispatch(obj12);
                 c5 = 1;
-                const obj11 = closure_131_0(closure_131_2[7]);
-                const items = [obj11.createProxyTicket(applicationId, closure_131_1(closure_131_2[8])(type), type.type, invite), closure_131_1(closure_131_2[9])(applicationId)];
+                const createProxyTicket = closure_131_0(closure_131_2[7]).createProxyTicket;
+                const items = [, ];
+                const tmp61 = closure_131_0(closure_131_2[7]);
+                const obj11 = closure_131_0(closure_131_2[8]);
+                items[0] = createProxyTicket(applicationId, obj11.getProxyTicketChannelId(type), type.type, invite);
+                items[1] = closure_131_1(closure_131_2[9])(applicationId);
                 c6 = 3;
                 c7 = 1;
                 const obj13 = { value: all(items), done: false };
@@ -176,11 +180,11 @@ let obj = function _launchFrame() {
             obj4.dispatch(obj18);
             throw error;
           }
-        } catch (tmp86) {
-          closure_4 = tmp86;
+        } catch (tmp87) {
+          closure_4 = tmp87;
           if (0 === c5) {
             c7 = 3;
-            throw tmp86;
+            throw tmp87;
           } else {
             c6 = 2;
           }
@@ -244,7 +248,7 @@ function promoteFrame(frameId) {
     const tmp4 = require;
     if (null != mainFrame1) {
       if (mainFrame1.intent === metroRequire.MAIN) {
-        const tmp4Result = tmp4(7359);
+        const tmp4Result = tmp4(6864);
         tmp4Result.leaveFrame(mainFrame1.id);
       } else {
         demoteMainFrame(mainFrame1.id);
@@ -271,6 +275,7 @@ obj = function _refreshProxyTicket() {
     let c6 = 0;
     let c4 = 0;
     return (async (arg0, value) => {
+      let obj13;
       let obj7;
       if (c6 === 2) {
         c6 = 3;
@@ -300,7 +305,7 @@ obj = function _refreshProxyTicket() {
               proxyTicket = undefined;
               message = undefined;
               frame = frame.getFrame(frameId);
-              const tmp81 = frameId;
+              const tmp82 = frameId;
               if (null == frame) {
                 c6 = 3;
                 return { value: false, done: true };
@@ -313,14 +318,15 @@ obj = function _refreshProxyTicket() {
                 } else {
                   invite = frame.invite;
                 }
-                const obj5 = { type: "FRAME_SET_PROXY_TICKET_REFRESHING", applicationId, frameId: tmp81, refreshing: true };
+                const obj5 = { type: "FRAME_SET_PROXY_TICKET_REFRESHING", applicationId, frameId: tmp82, refreshing: true };
                 const obj11 = DispatcherDefault;
                 obj11.dispatch(obj5);
                 c4 = 2;
+                const createProxyTicket = createProxyTicket2.createProxyTicket;
                 c5 = 4;
                 c6 = 1;
-                const obj13 = createProxyTicket;
-                const obj6 = { value: obj13.createProxyTicket(applicationId, getChannelIdForEmbeddedSurfaceDefault(surface), surface.type, invite), done: false };
+                const obj6 = { value: createProxyTicket(applicationId, obj13.getProxyTicketChannelId(surface), surface.type, invite), done: false };
+                obj13 = getChannelIdForEmbeddedSurface;
                 return obj6;
               }
             }
@@ -381,12 +387,12 @@ obj = function _refreshProxyTicket() {
             c6 = 3;
             return { value: true, done: true };
           }
-        } catch (tmp46) {
-          message = tmp46;
+        } catch (tmp47) {
+          message = tmp47;
           if (0 === c4) {
             c6 = 3;
-            throw tmp46;
-          } else if (1 === tmp48) {
+            throw tmp47;
+          } else if (1 === tmp49) {
             c5 = 1;
           } else {
             c5 = 2;

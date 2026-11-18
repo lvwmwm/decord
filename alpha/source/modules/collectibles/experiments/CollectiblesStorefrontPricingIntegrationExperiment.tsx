@@ -1,10 +1,10 @@
-// Module ID: 9458
-// Function ID: 9459
+// Module ID: 8871
+// Function ID: 8872
 // Name: CollectiblesStorefrontPricingIntegrationExperiment
 // Dependencies: [1452, 2]
 // Exports: getCollectiblesStorefrontPricingIntegrationEnabled, useCollectiblesStorefrontPricingIntegrationEnabled
 
-// Module 9458 (CollectiblesStorefrontPricingIntegrationExperiment)
+// Module 8871 (CollectiblesStorefrontPricingIntegrationExperiment)
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 

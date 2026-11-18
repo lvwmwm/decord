@@ -1,24 +1,24 @@
-// Module ID: 14233
-// Function ID: 14234
+// Module ID: 13537
+// Function ID: 13538
 // Name: AddPhoneScreens
-// Dependencies: [5, 32, 19, 17, 1388, 14206, 21, 5310, 5886, 575, 1502, 5923, 1113, 7829, 7830, 14205, 563, 7597, 38, 7862, 7821, 2]
+// Dependencies: [5, 32, 19, 17, 1388, 13510, 21, 4823, 5377, 575, 1502, 5414, 1113, 7332, 7333, 13509, 563, 7100, 38, 7365, 7324, 2]
 // Exports: AddPhoneScreen, VerifyPasswordScreen, VerifyPhoneScreen
 
-// Module 14233 (AddPhoneScreens)
+// Module 13537 (AddPhoneScreens)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import NavigatorConstants from "NavigatorConstants" /* 5886 */;
-import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7597 */;
-import AddPhoneDefault from "AddPhone" /* 7829 */;
-import PhoneActionCreators from "PhoneActionCreators" /* 7830 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 14205 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 14206 */;
+import NavigatorConstants from "NavigatorConstants" /* 5377 */;
+import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7100 */;
+import AddPhoneDefault from "AddPhone" /* 7332 */;
+import PhoneActionCreators from "PhoneActionCreators" /* 7333 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 13509 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 13510 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 const PhoneActionCreatorsDefault = PhoneActionCreators;

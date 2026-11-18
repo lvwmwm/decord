@@ -1,18 +1,18 @@
-// Module ID: 17326
-// Function ID: 17327
+// Module ID: 15983
+// Function ID: 15984
 // Name: TwoFASetupEnterCode
-// Dependencies: [32, 19, 2120, 17320, 21, 5310, 17323, 1502, 504, 7787, 17327, 1113, 17319, 7425, 1187, 17328, 7426, 2]
+// Dependencies: [32, 19, 2120, 15977, 21, 4823, 15980, 1502, 504, 7290, 15984, 1113, 15976, 6928, 1187, 15985, 6929, 2]
 // Exports: default
 
-// Module 17326 (TwoFASetupEnterCode)
-import MFAUtils from "MFAUtils" /* 7787 */;
-import TwoFAConstants from "TwoFAConstants" /* 17320 */;
-import MFAActionCreatorsDefault from "MFAActionCreators" /* 17327 */;
+// Module 15983 (TwoFASetupEnterCode)
+import MFAUtils from "MFAUtils" /* 7290 */;
+import TwoFAConstants from "TwoFAConstants" /* 15977 */;
+import MFAActionCreatorsDefault from "MFAActionCreators" /* 15984 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AppStateStore from "AppStateStore" /* 2120 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -25,7 +25,7 @@ const TwoFAModalSetupSections = TwoFAConstants.TwoFAModalSetupSections;
 let closure_9 = createStyles.createStyles({ container: { flex: 1, justifyContent: "center", alignItems: "center" } });
 const result = size.fileFinishedImporting("modules/user_settings/account/native/mfa_modal_flow/TwoFASetupEnterCode.tsx");
 
-export default function TwoFASetupEnterCode(set) {
+export default function TwoFASetupEnterCode(map) {
   let SafeAreaPaddingView;
   let closure_3;
   let first;
@@ -35,11 +35,11 @@ export default function TwoFASetupEnterCode(set) {
   let obj5;
   let ref;
   let ref1;
-  _require = set;
+  _require = map;
   let tmp = closure_9();
   let obj = require("TwoFASetupStyles");
   const twoFASetupStyles = obj.useTwoFASetupStyles();
-  importDefault = ref.useRef(set);
+  importDefault = ref.useRef(map);
   const effect = ref.useEffect(() => {
     ref.current = current;
   });

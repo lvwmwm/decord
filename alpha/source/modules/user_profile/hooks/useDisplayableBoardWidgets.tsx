@@ -1,11 +1,11 @@
-// Module ID: 11028
-// Function ID: 11029
+// Module ID: 10310
+// Function ID: 10311
 // Name: useDisplayableBoardWidgets
-// Dependencies: [19, 7367, 7368, 7364, 10856, 2]
+// Dependencies: [19, 6872, 6869, 10112, 2]
 // Exports: useDisplayableBoardWidgets
 
-// Module 11028 (useDisplayableBoardWidgets)
-import useUserProfileWidgetsDefault from "useUserProfileWidgets" /* 10856 */;
+// Module 10310 (useDisplayableBoardWidgets)
+import useUserProfileWidgetsDefault from "useUserProfileWidgets" /* 10112 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -24,9 +24,11 @@ export function useDisplayableBoardWidgets(id, isEditing) {
   const items = [tmp, flag];
   return react.useMemo(() => closure_1.filter((games) => {
     let tmp = closure_1_0;
-    let tmp4 = games instanceof flag(dependencyMap[1]).ApplicationWidget || games instanceof tmp2(tmp3[2]).UserProfilePersonalWidget;
+    let tmp4 = games instanceof flag(dependencyMap[1]).ApplicationWidget;
+    const tmp2 = flag;
+    const tmp3 = dependencyMap;
     if (!tmp4) {
-      const tmp2Result = flag(dependencyMap[3]);
+      const tmp2Result = tmp2(tmp3[2]);
       let isGameWidgetResult = tmp2Result.isGameWidget(games);
       if (isGameWidgetResult) {
         if (!tmp) {

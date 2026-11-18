@@ -1,10 +1,10 @@
-// Module ID: 10571
-// Function ID: 10572
+// Module ID: 9852
+// Function ID: 9853
 // Name: ConjureMobileExperiment
 // Dependencies: [1452, 504, 2]
 // Exports: isConjureMobileEnabled, useIsConjureMobileEnabled
 
-// Module 10571 (ConjureMobileExperiment)
+// Module 9852 (ConjureMobileExperiment)
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 

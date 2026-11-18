@@ -1,8 +1,8 @@
-// Module ID: 13294
-// Function ID: 13295
+// Module ID: 12597
+// Function ID: 12598
 // Dependencies: [2]
 
-// Module 13294
+// Module 12597
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_outfit_13_knight_iron.webp.js");

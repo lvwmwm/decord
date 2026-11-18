@@ -1,17 +1,17 @@
-// Module ID: 18870
-// Function ID: 18871
+// Module ID: 17683
+// Function ID: 17684
 // Name: useFavoritesGuildCategoryFullNotice
-// Dependencies: [5162, 5172, 1072, 504, 11898, 5184, 1113, 3681, 2]
+// Dependencies: [4675, 4685, 1072, 504, 11180, 4697, 1113, 3701, 2]
 // Exports: default
 
-// Module 18870 (useFavoritesGuildCategoryFullNotice)
+// Module 17683 (useFavoritesGuildCategoryFullNotice)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
-import _modDef3681 from "module_3681" /* 3681 */;
-import FavoritesUtils from "FavoritesUtils" /* 5184 */;
-import FavoritesHooks from "FavoritesHooks" /* 11898 */;
-import FavoriteStore from "FavoriteStore" /* 5162 */;
-import FavoritesConstants from "FavoritesConstants" /* 5172 */;
+import _modDef3701 from "module_3701" /* 3701 */;
+import FavoritesUtils from "FavoritesUtils" /* 4697 */;
+import FavoritesHooks from "FavoritesHooks" /* 11180 */;
+import FavoriteStore from "FavoriteStore" /* 4675 */;
+import FavoritesConstants from "FavoritesConstants" /* 4685 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -43,7 +43,7 @@ export default function useFavoritesGuildCategoryFullNotice(getGuildId, str) {
             const formatted = str.toLowerCase();
             tmp6 = null;
             if (formatted === hasOwnProperty.toLowerCase()) {
-              const obj2 = { label: intl.string(_modDef3681.WsUrMD), tooltip: intl2.string(_modDef3681.dW9Kov) };
+              const obj2 = { label: intl.string(_modDef3701.WsUrMD), tooltip: intl2.string(_modDef3701.dW9Kov) };
               intl = tmp(1113).intl;
               intl2 = tmp(1113).intl;
               tmp6 = obj2;

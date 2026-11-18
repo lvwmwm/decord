@@ -1,21 +1,21 @@
-// Module ID: 19287
-// Function ID: 19288
+// Module ID: 18101
+// Function ID: 18102
 // Name: NotificationCenterPermissionNudge
-// Dependencies: [32, 19, 17, 1072, 5156, 13906, 21, 5310, 575, 1256, 11042, 5923, 1113, 5930, 13907, 7438, 7559, 18149, 9572, 5143, 2]
+// Dependencies: [32, 19, 17, 1072, 4669, 13208, 21, 4823, 575, 1256, 10324, 5414, 1113, 5421, 13209, 6941, 7062, 16951, 8986, 4656, 2]
 // Exports: default
 
-// Module 19287 (NotificationCenterPermissionNudge)
+// Module 18101 (NotificationCenterPermissionNudge)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5156 */;
-import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 18149 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4669 */;
+import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 16951 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13906 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13208 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -58,16 +58,16 @@ function NotificationCenterBannerImpl(onDismiss) {
   let obj = { style: tmp.container, children: items };
   let obj2 = { style: tmp.iconContainer, children: closure_14(BellSlashIcon, obj3) };
   obj3 = { size: "md", color: nativeDefault.colors.ICON_STRONG };
-  BellSlashIcon = onDismiss(11042).BellSlashIcon;
+  BellSlashIcon = onDismiss(10324).BellSlashIcon;
   items = [closure_14(View, obj2), , ];
   const obj4 = { style: tmp.contentContainer, children: items1 };
   const obj5 = { variant: "body-md/semibold", color: "text-default", children: intl.string(onDismiss(1113).t.G6YBna) };
-  const Text = onDismiss(5923).Text;
+  const Text = onDismiss(5414).Text;
   intl = onDismiss(1113).intl;
   items1 = [closure_14(Text, obj5), , ];
   const obj6 = { variant: "body-md/medium", color: "text-muted", style: obj7, children: intl2.string(onDismiss(1113).t["9CoPDE"]) };
   obj7 = { marginTop: nativeDefault.space.PX_4 };
-  const Text2 = onDismiss(5923).Text;
+  const Text2 = onDismiss(5414).Text;
   intl2 = onDismiss(1113).intl;
   items1[1] = closure_14(Text2, obj6);
   const obj8 = { style: tmp.ctaButton, children: closure_14(Button, obj9) };
@@ -83,7 +83,7 @@ function NotificationCenterBannerImpl(onDismiss) {
       obj2.track(constants.CONTEXTUAL_REMINDER_ACTION, obj3);
     }
   };
-  Button = onDismiss(5930).Button;
+  Button = onDismiss(5421).Button;
   intl3 = onDismiss(1113).intl;
   items1[2] = closure_14(View, obj8);
   items[1] = closure_15(View, obj4);
@@ -97,9 +97,9 @@ function NotificationCenterBannerImpl(onDismiss) {
     hitSlop: 8,
     accessibilityRole: "button",
     accessibilityLabel: intl4.string(onDismiss(1113).t.WAI6xu),
-    children: closure_14(onDismiss(7559).XSmallIcon, { size: "sm", color: "icon-strong" })
+    children: closure_14(onDismiss(7062).XSmallIcon, { size: "sm", color: "icon-strong" })
   };
-  const PressableHighlight = onDismiss(7438).PressableHighlight;
+  const PressableHighlight = onDismiss(6941).PressableHighlight;
   intl4 = onDismiss(1113).intl;
   items[2] = closure_14(PressableHighlight, obj10);
   return closure_15(View, obj);
@@ -132,7 +132,7 @@ export default function NotificationCenterPermissionNudge() {
   if (!inHoldout) {
     prop = null;
     if (canSeePushNotificationNudge) {
-      prop = tmp2(5143).DismissibleContent.NOTIFICATION_NUDGE_NOTIFICATION_CENTER_BANNER;
+      prop = tmp2(4656).DismissibleContent.NOTIFICATION_NUDGE_NOTIFICATION_CENTER_BANNER;
     }
   }
   const tmp6 = _slicedToArray(useSelectedTimeRecurringDismissibleContent(prop, { cooldownDurationMs: 604800000 }), 2);

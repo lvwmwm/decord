@@ -1,27 +1,27 @@
-// Module ID: 20896
-// Function ID: 20897
+// Module ID: 20169
+// Function ID: 20170
 // Name: AVErrorAnalytics
-// Dependencies: [32, 6085, 6087, 6251, 5159, 2133, 6068, 6167, 5213, 6800, 1072, 6072, 6255, 6805, 6850, 12, 6258, 6178, 1374, 5316, 1256, 2]
+// Dependencies: [32, 5581, 5583, 5747, 4672, 2133, 5564, 5663, 4726, 6304, 1072, 5568, 5751, 6309, 6354, 12, 5754, 5674, 1374, 4829, 1256, 2]
 // Exports: sendAVErrorAnalyticsEvent
 
-// Module 20896 (AVErrorAnalytics)
+// Module 20169 (AVErrorAnalytics)
 import Constants2 from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import ProcessUtilsDefault from "ProcessUtils" /* 1374 */;
-import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 5316 */;
-import SystemAnalyticsStore from "SystemAnalyticsStore" /* 6087 */;
-import WindowVisibilityVideoManager2 from "WindowVisibilityVideoManager" /* 6178 */;
-import VideoQualityStats from "VideoQualityStats" /* 6258 */;
+import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 4829 */;
+import SystemAnalyticsStore from "SystemAnalyticsStore" /* 5583 */;
+import WindowVisibilityVideoManager2 from "WindowVisibilityVideoManager" /* 5674 */;
+import VideoQualityStats from "VideoQualityStats" /* 5754 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import MediaEngineStatsStore from "MediaEngineStatsStore" /* 6085 */;
-import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 6251 */;
-import ChannelStore from "ChannelStore" /* 5159 */;
+import MediaEngineStatsStore from "MediaEngineStatsStore" /* 5581 */;
+import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 5747 */;
+import ChannelStore from "ChannelStore" /* 4672 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6068 */;
-import RTCRegionStore from "RTCRegionStore" /* 6167 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5213 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 6800 */;
-import Constants from "Constants" /* 6072 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5564 */;
+import RTCRegionStore from "RTCRegionStore" /* 5663 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4726 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 6304 */;
+import Constants from "Constants" /* 5568 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -318,8 +318,8 @@ export function sendAVErrorAnalyticsEvent(error, context) {
       let tmp99;
       let type;
       let voiceVersion;
-      const f124333 = (type) => "video" === type.type;
-      const f124334 = (type) => "video" === type.type;
+      const f121049 = (type) => "video" === type.type;
+      const f121050 = (type) => "video" === type.type;
       const obj = { error_name: error.valueOf(), error_code: errorInfo.errorCode, error_severity: errorInfo.severity, error_category: errorInfo.category, underlying_error: tmp, error_message: tmp2, guild_id, channel_id: tmp5, channel_type: type, rtc_connection_id: tmp7, media_session_id: mediaSessionId, parent_media_session_id: parentMediaSessionId, context: tmp11, voice_backend_version: voiceVersion, rtc_worker_backend_version: rtcWorkerVersion, guild_region: region, hostname, duration: durationSeconds, participant_type: tmp17, num_frames: num, num_packets: num2, num_bytes: num3, num_packets_lost: num4, video_codec: parseCodecTypeResult, video_encoder: parseEncoderResult, video_decoder: parseDecoderResult, audio_capture_sample_rate_mismatch_percent: tmp58, audio_capture_processing_sample_rate: currentSampleRate, voice_processing_process_time_us: processTimeUs, voice_processing_frame_count: frameCount, voice_processing_sample_rate: sampleRate, voice_processing_setup_count: setupCount, incoming_video_stopped_for_occlusion: !WindowVisibilityVideoManager.isIncomingVideoEnabled(), bitrate, target_bitrate: tmp76, fps: frameRateDecode, target_fps: tmp91, sender_user_id: ownerId, stream_region: region1, stream_source_type: tmp94, num_stream_viewers: numViewers, video_input_resolution_height: tmp97, video_input_frame_rate: tmp99, screenshare_capture_method: getCurrentScreenshareCaptureMethod(mediaEngineConnectionId), share_application_name: tmp101, share_application_id: tmp102, share_application_executable: tmp103, share_application_distributor: tmp104, cpu_brand, cpu_vendor, cpu_memory, gpu_brand, gpu_count, gpu_memory, gpu_device_vendor_id, gpu_device_device_id, gpu_device_sub_sys_id: prop2, gpu_device_revision, gpu_driver_version, cpu_usage: currentCPUUsagePercent, memory_usage: currentMemoryUsageKB, outbound_bitrate_estimate: prop3, inbound_bitrate_estimate: prop4, hardware_enabled: MediaEngineStore.getHardwareEncoding(), audio_input_device_name: tmp123, audio_output_device_name: tmp127, video_device_name: tmp131, audio_subsystem: mediaEngine.getAudioSubsystem(), automatic_audio_subsystem: MediaEngineStore.getSettings().automaticAudioSubsystem, audio_layer: mediaEngine1.getAudioLayer(), audio_input_mode: MediaEngineStore.getSettings().mode, automatic_audio_input_sensitivity_enabled: MediaEngineStore.getSettings().modeOptions.autoThreshold, audio_input_sensitivity: MediaEngineStore.getSettings().modeOptions.threshold, echo_cancellation_enabled: MediaEngineStore.getEchoCancellation(), noise_suppression_enabled: MediaEngineStore.getNoiseSuppression(), noise_cancellation_enabled: MediaEngineStore.getNoiseCancellation(), automatic_gain_control_enabled: MediaEngineStore.getAutomaticGainControl(), sidechain_compression_enabled: MediaEngineStore.getSidechainCompression(), input_volume: MediaEngineStore.getInputVolume(), output_volume: MediaEngineStore.getOutputVolume(), audio_input_device_count: Object.keys(MediaEngineStore.getInputDevices()).length, audio_output_device_count: Object.keys(MediaEngineStore.getOutputDevices()).length, app_hardware_acceleration_enabled: tmp116Result3.getAppHardwareAccelerationEnabled(), input_device_os_muted: inputDeviceOSMuted, input_device_os_volume: inputDeviceOSVolume };
       tmp = underlyingError;
       if (underlyingError == null) {
@@ -430,7 +430,7 @@ export function sendAVErrorAnalyticsEvent(error, context) {
         let tmp29 = null;
         if (null != connectionStats) {
           const outbound = connectionStats.stats.rtp.outbound;
-          let found = outbound.find(f124333);
+          let found = outbound.find(f121049);
           if (found == null) {
             found = null;
           }
@@ -445,7 +445,7 @@ export function sendAVErrorAnalyticsEvent(error, context) {
           if (null != connectionStats1) {
             let tmp25 = null;
             if (null != connectionStats1.stats.rtp.inbound[userId]) {
-              let found1 = arr.find(f124334);
+              let found1 = arr.find(f121050);
               if (found1 == null) {
                 found1 = null;
               }
@@ -472,7 +472,7 @@ export function sendAVErrorAnalyticsEvent(error, context) {
           let tmp39 = null;
           if (null != connectionStats2) {
             const outbound1 = connectionStats2.stats.rtp.outbound;
-            let found2 = outbound1.find(f124333);
+            let found2 = outbound1.find(f121049);
             if (found2 == null) {
               found2 = null;
             }
@@ -487,7 +487,7 @@ export function sendAVErrorAnalyticsEvent(error, context) {
             if (null != connectionStats3) {
               let tmp35 = null;
               if (null != connectionStats3.stats.rtp.inbound[userId]) {
-                let found3 = arr3.find(f124334);
+                let found3 = arr3.find(f121050);
                 if (found3 == null) {
                   found3 = null;
                 }
@@ -514,7 +514,7 @@ export function sendAVErrorAnalyticsEvent(error, context) {
         let tmp48 = null;
         if (null != connectionStats4) {
           const outbound2 = connectionStats4.stats.rtp.outbound;
-          let found4 = outbound2.find(f124333);
+          let found4 = outbound2.find(f121049);
           if (found4 == null) {
             found4 = null;
           }
@@ -540,7 +540,7 @@ export function sendAVErrorAnalyticsEvent(error, context) {
           if (null != connectionStats5) {
             let tmp55 = null;
             if (null != connectionStats5.stats.rtp.inbound[userId]) {
-              let found5 = arr6.find(f124334);
+              let found5 = arr6.find(f121050);
               if (found5 == null) {
                 found5 = null;
               }
@@ -608,7 +608,7 @@ export function sendAVErrorAnalyticsEvent(error, context) {
         let tmp73 = null;
         if (null != connectionStats7) {
           const outbound4 = connectionStats7.stats.rtp.outbound;
-          let found7 = outbound4.find(f124333);
+          let found7 = outbound4.find(f121049);
           if (found7 == null) {
             found7 = null;
           }
@@ -623,7 +623,7 @@ export function sendAVErrorAnalyticsEvent(error, context) {
           if (null != connectionStats8) {
             let tmp70 = null;
             if (null != connectionStats8.stats.rtp.inbound[userId]) {
-              let found8 = arr8.find(f124334);
+              let found8 = arr8.find(f121050);
               if (found8 == null) {
                 found8 = null;
               }
@@ -646,7 +646,7 @@ export function sendAVErrorAnalyticsEvent(error, context) {
         let tmp78 = null;
         if (null != connectionStats9) {
           const outbound5 = connectionStats9.stats.rtp.outbound;
-          let found9 = outbound5.find(f124333);
+          let found9 = outbound5.find(f121049);
           if (found9 == null) {
             found9 = null;
           }
@@ -666,7 +666,7 @@ export function sendAVErrorAnalyticsEvent(error, context) {
         let tmp88 = null;
         if (null != connectionStats10) {
           const outbound6 = connectionStats10.stats.rtp.outbound;
-          let found10 = outbound6.find(f124333);
+          let found10 = outbound6.find(f121049);
           if (found10 == null) {
             found10 = null;
           }
@@ -688,7 +688,7 @@ export function sendAVErrorAnalyticsEvent(error, context) {
           if (null != connectionStats11) {
             let tmp84 = null;
             if (null != connectionStats11.stats.rtp.inbound[userId]) {
-              let found11 = arr11.find(f124334);
+              let found11 = arr11.find(f121050);
               if (found11 == null) {
                 found11 = null;
               }

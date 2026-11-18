@@ -1,18 +1,18 @@
-// Module ID: 20917
-// Function ID: 20918
+// Module ID: 20190
+// Function ID: 20191
 // Name: SafetyFlowTaskScreen
-// Dependencies: [19, 21, 5310, 8219, 8221, 6335, 5923, 12903, 20915, 10739, 2]
+// Dependencies: [19, 21, 4823, 7722, 7724, 5837, 5414, 12198, 20188, 10020, 2]
 // Exports: default
 
-// Module 20917 (SafetyFlowTaskScreen)
-import Text_Text from "Text/Text" /* 5923 */;
-import Stack_Stack from "Stack/Stack" /* 6335 */;
-import ModalScreen2 from "ModalScreen" /* 8219 */;
-import ModalContent2 from "ModalContent" /* 8221 */;
-import LogOutDisclaimerDefault from "LogOutDisclaimer" /* 20915 */;
+// Module 20190 (SafetyFlowTaskScreen)
+import Text_Text from "Text/Text" /* 5414 */;
+import Stack_Stack from "Stack/Stack" /* 5837 */;
+import ModalScreen2 from "ModalScreen" /* 7722 */;
+import ModalContent2 from "ModalContent" /* 7724 */;
+import LogOutDisclaimerDefault from "LogOutDisclaimer" /* 20188 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -58,14 +58,14 @@ export default function SafetyFlowTaskScreen(title) {
   let tmp7Result = null != subtitle;
   if (tmp7Result) {
     const obj2 = { variant: "body-md/medium", color: subtitleColor, style: tmp2.header, children: subtitle };
-    tmp7Result = tmp7(tmp4(5923).Text, obj2);
+    tmp7Result = tmp7(tmp4(5414).Text, obj2);
   }
   const obj3 = { children: items1 };
   items[2] = tmp7Result;
   items1 = [React3(Stack, { align: "center", justify: "center", spacing: 8, children: items }), children];
   const children1 = [React3(ModalContent, obj3), ];
   if (undefined === footer) {
-    const ModalFooter = tmp4(12903).ModalFooter;
+    const ModalFooter = tmp4(12198).ModalFooter;
     if (withLogout) {
       withLogout = tmp7(LogOutDisclaimerDefault, {});
     }
@@ -73,7 +73,7 @@ export default function SafetyFlowTaskScreen(title) {
     let tmp7Result2 = null != action;
     if (tmp7Result2) {
       const obj4 = { variant: "primary", text: action, onPress: onAction, loading: submitting };
-      tmp7Result2 = tmp7(tmp4(10739).ModalActionButton, obj4);
+      tmp7Result2 = tmp7(tmp4(10020).ModalActionButton, obj4);
     }
     const obj5 = { children: items3 };
     items3[1] = tmp7Result2;

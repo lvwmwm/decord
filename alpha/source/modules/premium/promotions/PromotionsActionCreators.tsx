@@ -1,20 +1,20 @@
-// Module ID: 10024
-// Function ID: 10025
+// Module ID: 9304
+// Function ID: 9305
 // Name: PromotionsActionCreators
-// Dependencies: [5, 2189, 1388, 9635, 1390, 1072, 572, 9684, 1285, 8544, 5140, 1227, 10025, 2]
+// Dependencies: [5, 2189, 1388, 9049, 1390, 1072, 572, 9099, 1285, 8035, 4653, 1227, 9305, 2]
 // Exports: addClaimedOutboundPromotionCode, clearActivePromotions, dismissOutboundPromotionNotice, fetchClaimedOutboundPromotionCodes, maybeFetchActivePromotions
 
-// Module 10024 (PromotionsActionCreators)
+// Module 9304 (PromotionsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import wrappers from "wrappers" /* 1227 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
-import MarketingComponentPlatform from "MarketingComponentPlatform" /* 9684 */;
+import MarketingComponentPlatform from "MarketingComponentPlatform" /* 9099 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import LocaleStore from "LocaleStore" /* 2189 */;
 import UserStore from "UserStore" /* 1388 */;
-import PromotionsStore from "PromotionsStore" /* 9635 */;
+import PromotionsStore from "PromotionsStore" /* 9049 */;
 import size from "module_2" /* 2 */;
 
 let c3, c5, c6;
@@ -146,12 +146,12 @@ function dismissOutboundPromotionNotice() {
   obj.dispatch({ type: "OUTBOUND_PROMOTION_NOTICE_DISMISS" });
   const lastDismissedOutboundPromotionStartDate = PromotionsStore.lastDismissedOutboundPromotionStartDate;
   if (null != lastDismissedOutboundPromotionStartDate) {
-    const PreloadedUserSettingsActionCreators = lastDismissedOutboundPromotionStartDate(5140).PreloadedUserSettingsActionCreators;
+    const PreloadedUserSettingsActionCreators = lastDismissedOutboundPromotionStartDate(4653).PreloadedUserSettingsActionCreators;
     PreloadedUserSettingsActionCreators.updateAsync("userContent", async (arg0) => {
       const StringValue = wrappers.StringValue;
       obj = { value: lastDismissedOutboundPromotionStartDate };
       arg0.lastDismissedOutboundPromotionStartDate = StringValue.create(obj);
-    }, lastDismissedOutboundPromotionStartDate(5140).UserSettingsDelay.INFREQUENT_USER_ACTION);
+    }, lastDismissedOutboundPromotionStartDate(4653).UserSettingsDelay.INFREQUENT_USER_ACTION);
   }
 }
 function fetchClaimedOutboundPromotionCodes() {

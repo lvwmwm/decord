@@ -1,19 +1,19 @@
-// Module ID: 5310
-// Function ID: 5311
+// Module ID: 4823
+// Function ID: 4824
 // Name: createStyles
-// Dependencies: [32, 17, 5311, 5334, 5371, 1380, 575, 5474, 1655, 5542, 5545, 5538, 2]
+// Dependencies: [32, 17, 4824, 4847, 4884, 1380, 575, 4987, 1655, 5033, 5036, 5029, 2]
 // Exports: createAnimatedThemedStyles, createLegacyClassComponentStyles, createNativeStyleProperties, createStyleProperties, createStyles, experimental_createToken, processColorOrThrow, useLegacyClassComponentStyles
 
-// Module 5310 (createStyles)
+// Module 4823 (createStyles)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import native from "native" /* 5371 */;
-import SemanticColorContext from "SemanticColorContext" /* 5474 */;
-import MobileThemesUtils from "MobileThemesUtils" /* 5538 */;
+import native from "native" /* 4884 */;
+import SemanticColorContext from "SemanticColorContext" /* 4987 */;
+import MobileThemesUtils from "MobileThemesUtils" /* 5029 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import AccessibilityStore from "AccessibilityStore" /* 5311 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5334 */;
+import AccessibilityStore from "AccessibilityStore" /* 4824 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4847 */;
 import size from "module_2" /* 2 */;
 
 let map;
@@ -275,14 +275,14 @@ export function createNativeStyleProperties(arg0) {
       const setThemeFlag = native.setThemeFlag;
       native;
       if ("light" === customBackgroundGradient.theme) {
-        MOBILE_DARK_GRADIENT_THEME_ENABLED = tmp3(5371).ThemeContextFlags.MOBILE_LIGHT_GRADIENT_THEME_ENABLED;
+        MOBILE_DARK_GRADIENT_THEME_ENABLED = tmp3(4884).ThemeContextFlags.MOBILE_LIGHT_GRADIENT_THEME_ENABLED;
       } else {
-        MOBILE_DARK_GRADIENT_THEME_ENABLED = tmp3(5371).ThemeContextFlags.MOBILE_DARK_GRADIENT_THEME_ENABLED;
+        MOBILE_DARK_GRADIENT_THEME_ENABLED = tmp3(4884).ThemeContextFlags.MOBILE_DARK_GRADIENT_THEME_ENABLED;
       }
       num = setThemeFlag(0, MOBILE_DARK_GRADIENT_THEME_ENABLED);
     }
     const obj2 = { flags: num, saturation, theme, enabledExperiments: ["mobile-visual-refresh"], gradient: customBackgroundGradient };
-    const merged = Object.assign(tmp3(5371).FALLBACK_THEME_CONTEXT_VALUE);
+    const merged = Object.assign(tmp3(4884).FALLBACK_THEME_CONTEXT_VALUE);
     const obj3 = { key: json };
     json = JSON.stringify(obj2);
     const merged1 = Object.assign(obj2);

@@ -1,23 +1,23 @@
-// Module ID: 10622
-// Function ID: 10623
+// Module ID: 9903
+// Function ID: 9904
 // Name: AppStoreOverlayBody
-// Dependencies: [19, 17, 1072, 5561, 21, 5310, 575, 8836, 6014, 5923, 10623, 1113, 10630, 11285, 1630, 5896, 671, 5887, 5930, 2]
+// Dependencies: [19, 17, 1072, 5052, 21, 4823, 575, 8333, 5510, 5414, 9904, 1113, 9911, 10567, 1630, 5387, 671, 5378, 5421, 2]
 // Exports: AppStoreOverlayBody, AppStoreOverlayFooter
 
-// Module 10622 (AppStoreOverlayBody)
+// Module 9903 (AppStoreOverlayBody)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import Constants from "Constants" /* 1072 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5561 */;
-import FastImageDefault from "FastImage" /* 6014 */;
-import AnalyticsActions from "AnalyticsActions" /* 8836 */;
-import AppStoreOverlayStatsCarouselDefault from "AppStoreOverlayStatsCarousel" /* 10623 */;
-import AppStoreOverlayMediaCarouselDefault from "AppStoreOverlayMediaCarousel" /* 10630 */;
-import AppStoreOverlayAboutSectionDefault from "AppStoreOverlayAboutSection" /* 11285 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5052 */;
+import FastImageDefault from "FastImage" /* 5510 */;
+import AnalyticsActions from "AnalyticsActions" /* 8333 */;
+import AppStoreOverlayStatsCarouselDefault from "AppStoreOverlayStatsCarousel" /* 9904 */;
+import AppStoreOverlayMediaCarouselDefault from "AppStoreOverlayMediaCarousel" /* 9911 */;
+import AppStoreOverlayAboutSectionDefault from "AppStoreOverlayAboutSection" /* 10567 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size_mod from "module_2" /* 2 */;
 
 let c9;
@@ -97,11 +97,11 @@ export function AppStoreOverlayBody(arg0) {
   const obj8 = { style: tmp.textBlock, children: items4 };
   items4 = [, ];
   const obj9 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: metadata.title };
-  items4[0] = closure_7(onOverlaySurfaceClick(5923).Text, obj9);
+  items4[0] = closure_7(onOverlaySurfaceClick(5414).Text, obj9);
   let tmp17Result = null != metadata.subtitle && "" !== metadata.subtitle;
   if (tmp17Result) {
     const obj10 = { variant: "body-sm/medium", color: "text-subtle", children: metadata.subtitle };
-    tmp17Result = tmp17(tmp18(5923).Text, obj10);
+    tmp17Result = tmp17(tmp18(5414).Text, obj10);
   }
   items4[1] = tmp17Result;
   items3[1] = closure_8(View, obj8);
@@ -115,7 +115,7 @@ export function AppStoreOverlayBody(arg0) {
   if (tmp4Result) {
     const obj12 = { style: tmp.mediaSection, children: items5 };
     const obj13 = { variant: "body-sm/semibold", color: "mobile-text-heading-primary", children: intl.string(onOverlaySurfaceClick(1113).t["EV1W/L"]) };
-    const Text = tmp18(5923).Text;
+    const Text = tmp18(5414).Text;
     intl = tmp18(1113).intl;
     items5 = [closure_7(Text, obj13), ];
     const obj14 = { media: metadata.media, onGetGamePress: onMediaGetGamePress, onCarouselScroll };
@@ -144,7 +144,7 @@ export function AppStoreOverlayFooter(arg0) {
   ({ onInstallPress, onLayout } = arg0);
   const tmp = closure_10();
   const bottom = token(1630)().bottom;
-  let obj = bottom(5896);
+  let obj = bottom(5387);
   token = obj.useToken(token(575).colors.MOBILE_ACTIONSHEET_BACKGROUND);
   let items = [token];
   const items1 = [bottom];
@@ -163,10 +163,10 @@ export function AppStoreOverlayFooter(arg0) {
   }, items1);
   items2 = [, ];
   const obj3 = { pointerEvents: "none", style: tmp.footerGradient, colors: memo, start: VerticalGradient.START, end: VerticalGradient.END };
-  items2[0] = closure_7(token(5887), obj3);
+  items2[0] = closure_7(token(5378), obj3);
   const obj4 = { style: memo1, children: closure_7(Button, obj5) };
   obj5 = { size: "lg", text: intl.string(bottom(1113).t.lwQdjB), onPress: onInstallPress };
-  Button = bottom(5930).Button;
+  Button = bottom(5421).Button;
   intl = bottom(1113).intl;
   items2[1] = closure_7(View, obj4);
   return closure_8(View, obj2);

@@ -1,62 +1,40 @@
-// Module ID: 20313
-// Function ID: 20314
+// Module ID: 19584
+// Function ID: 19585
 // Name: HolidayEventsConfig
-// Dependencies: [11563, 1113, 20314, 20315, 5143, 2]
+// Dependencies: [10845, 19585, 1113, 19586, 19587, 19588, 19589, 4656, 2]
 
-// Module 20313 (HolidayEventsConfig)
-import intl14 from "intl" /* 1113 */;
-import dismissible_content from "dismissible_content" /* 5143 */;
-import Constants from "Constants" /* 11563 */;
-import AssetRegistryDefault from "AssetRegistry" /* 20314 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 20315 */;
+// Module 19584 (HolidayEventsConfig)
+import intl from "intl" /* 1113 */;
+import dismissible_content from "dismissible_content" /* 4656 */;
+import Constants from "Constants" /* 10845 */;
+import HolidayRingtoneExperimentDefault from "HolidayRingtoneExperiment" /* 19585 */;
+import AssetRegistryDefault from "AssetRegistry" /* 19586 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 19587 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 19588 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 19589 */;
 import size from "module_2" /* 2 */;
 
-const obj = {
-  experiment: null,
+let Soundpacks;
+let obj = {
+  experiment: HolidayRingtoneExperimentDefault,
   useIsExperimentEligible() {
-    return false;
+    const obj = HolidayRingtoneExperimentDefault;
+    return obj.useConfig({ location: "holiday_events_use_eligible" }).enabled;
   },
   getIsExperimentEligible() {
-    return false;
+    const obj = HolidayRingtoneExperimentDefault;
+    return obj.getConfig({ location: "holiday_events_is_eligible" }).enabled;
   },
-  startTimeMs: 1791388800000,
-  endTimeMs: 1793638800000,
+  startTimeMs: 1797267600000,
+  endTimeMs: 1799082000000,
   isDesktopOnly: true,
-  soundpack: Constants.Soundpacks.HALLOWEEN,
-  soundpackLabel: intl14.t["+LasFV"],
-  appSpinnerSources: { webmDark: AssetRegistryDefault, webmLight: AssetRegistryDefault2 },
-  getLoadingTips() {
-    const intl = intl14.intl;
-    const items = [intl.string(intl14.t.ydMZ2o), , , , , , , , , , , , ];
-    const intl2 = intl14.intl;
-    items[1] = intl2.string(intl14.t["AL/SoZ"]);
-    const intl3 = intl14.intl;
-    items[2] = intl3.string(intl14.t.w2pMut);
-    const intl4 = intl14.intl;
-    items[3] = intl4.string(intl14.t.WB9eZl);
-    const intl5 = intl14.intl;
-    items[4] = intl5.string(intl14.t["rE+3z3"]);
-    const intl6 = intl14.intl;
-    items[5] = intl6.string(intl14.t.qvtjM4);
-    const intl7 = intl14.intl;
-    items[6] = intl7.string(intl14.t.irDT8W);
-    const intl8 = intl14.intl;
-    items[7] = intl8.string(intl14.t.TlJKIQ);
-    const intl9 = intl14.intl;
-    items[8] = intl9.string(intl14.t["m+xpaC"]);
-    const intl10 = intl14.intl;
-    items[9] = intl10.string(intl14.t.MElQEQ);
-    const intl11 = intl14.intl;
-    items[10] = intl11.string(intl14.t.aRr1um);
-    const intl12 = intl14.intl;
-    items[11] = intl12.string(intl14.t["7KOunu"]);
-    const intl13 = intl14.intl;
-    items[12] = intl13.string(intl14.t["1XGw3F"]);
-    return items;
-  },
-  coachmarkDismissibleContent: dismissible_content.DismissibleContent.HOLIDAY_COACHMARK_HALLOWEEN_2026
+  soundpack: Soundpacks.WINTER_HOLIDAY,
+  soundpackLabel: intl.t.Z5OQNp,
+  appSpinnerSources: { movDark: AssetRegistryDefault, movLight: AssetRegistryDefault2, webmDark: AssetRegistryDefault3, webmLight: AssetRegistryDefault4 },
+  coachmarkDismissibleContent: dismissible_content.DismissibleContent.HOLIDAY_COACHMARK_WINTER_2026
 };
-({ webmDark: AssetRegistryDefault, webmLight: AssetRegistryDefault2 });
+Soundpacks = Constants.Soundpacks;
+({ movDark: AssetRegistryDefault, movLight: AssetRegistryDefault2, webmDark: AssetRegistryDefault3, webmLight: AssetRegistryDefault4 });
 const result = size.fileFinishedImporting("modules/holidays/HolidayEventsConfig.tsx");
 
 export default obj;

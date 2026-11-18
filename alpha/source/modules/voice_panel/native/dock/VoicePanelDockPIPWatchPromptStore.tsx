@@ -1,15 +1,15 @@
-// Module ID: 20107
-// Function ID: 20108
+// Module ID: 19378
+// Function ID: 19379
 // Name: VoicePanelDockPIPWatchPromptStore
-// Dependencies: [6804, 502, 5213, 6805, 504, 572, 2]
+// Dependencies: [6308, 502, 4726, 6309, 504, 572, 2]
 
-// Module 20107 (VoicePanelDockPIPWatchPromptStore)
+// Module 19378 (VoicePanelDockPIPWatchPromptStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6805 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6804 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6309 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6308 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5213 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4726 */;
 import size from "module_2" /* 2 */;
 
 function markWatched(ownerId) {

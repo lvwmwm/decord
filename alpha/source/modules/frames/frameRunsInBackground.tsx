@@ -1,11 +1,11 @@
-// Module ID: 7358
-// Function ID: 7359
+// Module ID: 6863
+// Function ID: 6864
 // Name: frameRunsInBackground
-// Dependencies: [7028, 2]
+// Dependencies: [6532, 2]
 // Exports: default
 
-// Module 7358 (frameRunsInBackground)
-import FramesConstants from "FramesConstants" /* 7028 */;
+// Module 6863 (frameRunsInBackground)
+import FramesConstants from "FramesConstants" /* 6532 */;
 import size from "module_2" /* 2 */;
 
 const isLaunched = FramesConstants.isLaunched;

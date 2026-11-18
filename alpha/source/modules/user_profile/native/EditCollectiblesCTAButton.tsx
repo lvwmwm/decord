@@ -1,22 +1,22 @@
-// Module ID: 9412
-// Function ID: 9413
+// Module ID: 8825
+// Function ID: 8826
 // Name: EditCollectiblesCTAButton
-// Dependencies: [19, 5311, 1074, 1626, 21, 5310, 1630, 504, 9413, 1655, 5933, 2174, 8508, 9414, 1113, 5548, 9415, 9416, 8495, 5546, 5930, 2]
+// Dependencies: [19, 4824, 1074, 1626, 21, 4823, 1630, 504, 8826, 1655, 5424, 2174, 7999, 8827, 1113, 5039, 8828, 8829, 7986, 5037, 5421, 2]
 
-// Module 9412 (EditCollectiblesCTAButton)
+// Module 8825 (EditCollectiblesCTAButton)
 import Fragment from "Fragment" /* 21 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import intl4 from "intl" /* 1113 */;
 import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1626 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
-import HapticUtils from "HapticUtils" /* 5548 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 8495 */;
-import EditCollectiblesActionCreators from "EditCollectiblesActionCreators" /* 9415 */;
-import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 9416 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
+import HapticUtils from "HapticUtils" /* 5039 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7986 */;
+import EditCollectiblesActionCreators from "EditCollectiblesActionCreators" /* 8828 */;
+import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 8829 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5311 */;
-import createStyles from "createStyles" /* 5310 */;
+import AccessibilityStore from "AccessibilityStore" /* 4824 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let closure_5 = CollectiblesShopConstants.CollectiblesMobileShopScreen;

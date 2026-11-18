@@ -94,8 +94,8 @@ function sendIndexPath(arg0, pathname, basename) {
   const items = [substr1, "route"];
   return items;
 }
-function getNumberOfUrlSegments(str) {
-  const parts = str.split(/\\?\//);
+function getNumberOfUrlSegments(pathname) {
+  const parts = pathname.split(/\\?\//);
   return parts.filter((item) => item.length > 0 && "," !== item).length;
 }
 function stripBasenameFromPathname(pathname, basename) {

@@ -1,28 +1,28 @@
-// Module ID: 12676
-// Function ID: 12677
+// Module ID: 11961
+// Function ID: 11962
 // Name: OptInChannelsUtils
-// Dependencies: [19, 5159, 7885, 7023, 5252, 1388, 1072, 5166, 8748, 6957, 7087, 7081, 5948, 7886, 8742, 12677, 7884, 1099, 5342, 5143, 504, 1113, 2169, 11, 2]
+// Dependencies: [19, 4672, 7388, 6527, 4765, 1388, 1072, 4679, 8239, 6461, 6591, 6585, 5439, 7389, 8233, 11962, 7387, 1099, 4855, 4656, 504, 1113, 2169, 11, 2]
 // Exports: clearRecentChannels, getActiveAgoTimestamp, getFirstRouteFor, useChannelBrowserChannelCount, useChannelBrowserSections, useFilterCategoriesByQuery
 
-// Module 12676 (OptInChannelsUtils)
+// Module 11961 (OptInChannelsUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef2169 from "module_2169" /* 2169 */;
-import useChannelName from "useChannelName" /* 5948 */;
-import ReadStateConstants from "ReadStateConstants" /* 6957 */;
-import fuzzysearchDefault from "fuzzysearch" /* 7081 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 7884 */;
-import ChannelListState from "ChannelListState" /* 8742 */;
-import GuildSidebarConstants from "GuildSidebarConstants" /* 8748 */;
-import RecentChannelsActionCreators from "RecentChannelsActionCreators" /* 12677 */;
+import useChannelName from "useChannelName" /* 5439 */;
+import ReadStateConstants from "ReadStateConstants" /* 6461 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6585 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 7387 */;
+import ChannelListState from "ChannelListState" /* 8233 */;
+import GuildSidebarConstants from "GuildSidebarConstants" /* 8239 */;
+import RecentChannelsActionCreators from "RecentChannelsActionCreators" /* 11962 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5159 */;
-import GuildCategoryStore from "GuildCategoryStore" /* 7885 */;
-import ReadStateStore from "ReadStateStore" /* 7023 */;
-import RelationshipStore from "RelationshipStore" /* 5252 */;
+import ChannelStore from "ChannelStore" /* 4672 */;
+import GuildCategoryStore from "GuildCategoryStore" /* 7388 */;
+import ReadStateStore from "ReadStateStore" /* 6527 */;
+import RelationshipStore from "RelationshipStore" /* 4765 */;
 import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
-import ChannelConstants from "ChannelConstants" /* 5166 */;
+import ChannelConstants from "ChannelConstants" /* 4679 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

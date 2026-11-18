@@ -1,15 +1,15 @@
-// Module ID: 19312
-// Function ID: 19313
+// Module ID: 18126
+// Function ID: 18127
 // Name: ForYouHoistedItemsHeader
-// Dependencies: [19, 17, 21, 5310, 575, 2]
+// Dependencies: [19, 17, 21, 4823, 575, 2]
 // Exports: ForYouHoistedItemsHeader
 
-// Module 19312 (ForYouHoistedItemsHeader)
+// Module 18126 (ForYouHoistedItemsHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;

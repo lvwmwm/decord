@@ -1,0 +1,10 @@
+// Module ID: 17659
+// Function ID: 17660
+// Name: AssetRegistry
+// Dependencies: [1119]
+
+// Module 17659 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1119 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "1b172806bdf2366bf9d2dd1881f3c7ff", name: "SpotifyNeutralIcon", type: "png" });

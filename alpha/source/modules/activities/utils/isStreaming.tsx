@@ -1,12 +1,12 @@
-// Module ID: 8636
-// Function ID: 8637
+// Module ID: 8127
+// Function ID: 8128
 // Name: isStreaming
-// Dependencies: [2145, 6066, 2]
+// Dependencies: [2145, 5562, 2]
 // Exports: default
 
-// Module 8636 (isStreaming)
+// Module 8127 (isStreaming)
 import Constants from "Constants" /* 2145 */;
-import ActivityTypes from "ActivityTypes" /* 6066 */;
+import ActivityTypes from "ActivityTypes" /* 5562 */;
 import size from "module_2" /* 2 */;
 
 function _isStreaming(type) {

@@ -1,10 +1,10 @@
-// Module ID: 14502
-// Function ID: 14503
+// Module ID: 18391
+// Function ID: 18392
 // Name: conjureDatabaseLock
 // Dependencies: [5, 19, 2]
 // Exports: useConjureDatabaseBusy, withConjureDatabaseLock
 
-// Module 14502 (conjureDatabaseLock)
+// Module 18391 (conjureDatabaseLock)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

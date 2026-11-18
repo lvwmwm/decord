@@ -1,21 +1,21 @@
-// Module ID: 9079
-// Function ID: 9080
+// Module ID: 8490
+// Function ID: 8491
 // Name: openChannelSecondaryViewChat
-// Dependencies: [19, 1072, 5487, 5486, 9080, 1503, 572, 2]
+// Dependencies: [19, 1072, 5000, 4999, 8491, 1503, 572, 2]
 // Exports: default, getChannelSecondaryViewChatIndex, presentChannelSecondaryViewChat, useDismissChannelSecondaryViewChatOnFrameDeepLink
 
-// Module 9079 (openChannelSecondaryViewChat)
+// Module 8490 (openChannelSecondaryViewChat)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import RootNavigationRef from "RootNavigationRef" /* 5487 */;
-import MessageManagerDefault from "MessageManager" /* 9080 */;
+import RootNavigationRef from "RootNavigationRef" /* 5000 */;
+import MessageManagerDefault from "MessageManager" /* 8491 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, importDefault;
 
-const f97685 = () => {
+const f94744 = () => {
   const obj = RootNavigationRef;
   const rootNavigationRef = obj.getRootNavigationRef();
   if (rootNavigationRef != null) {
@@ -37,7 +37,7 @@ export default function openChannelSecondaryViewChat(guildId, channelId) {
   _require = guildId;
   importDefault = channelId;
   let obj2 = require("RootNavigationRef");
-  const result = obj2.runWhenRootNavigationReady(f97685);
+  const result = obj2.runWhenRootNavigationReady(f94744);
 };
 export function getChannelSecondaryViewChatIndex(channelId) {
   _require = channelId;
@@ -65,7 +65,7 @@ export function presentChannelSecondaryViewChat(guildId, channelId) {
   _require = guildId;
   let closure_1 = channelId;
   const obj = require("RootNavigationRef");
-  const result = obj.runWhenRootNavigationReady(f97685);
+  const result = obj.runWhenRootNavigationReady(f94744);
 }
 export function useDismissChannelSecondaryViewChatOnFrameDeepLink(channelId) {
   let closure_0 = channelId;

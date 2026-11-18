@@ -1,9 +1,9 @@
-// Module ID: 13827
-// Function ID: 13828
+// Module ID: 13134
+// Function ID: 13135
 // Name: SearchRecentMessageStore
-// Dependencies: [6372, 504, 572, 2]
+// Dependencies: [5874, 504, 572, 2]
 
-// Module 13827 (SearchRecentMessageStore)
+// Module 13134 (SearchRecentMessageStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

@@ -1,12 +1,12 @@
-// Module ID: 9551
-// Function ID: 9552
+// Module ID: 8965
+// Function ID: 8966
 // Name: computeInitialClearAfter
-// Dependencies: [9549, 5135, 2]
+// Dependencies: [8963, 4648, 2]
 // Exports: default
 
-// Module 9551 (computeInitialClearAfter)
-import UserSettings from "UserSettings" /* 5135 */;
-import Constants from "Constants" /* 9549 */;
+// Module 8965 (computeInitialClearAfter)
+import UserSettings from "UserSettings" /* 4648 */;
+import Constants from "Constants" /* 8963 */;
 import size from "module_2" /* 2 */;
 
 const ClearAfterValues = Constants.ClearAfterValues;

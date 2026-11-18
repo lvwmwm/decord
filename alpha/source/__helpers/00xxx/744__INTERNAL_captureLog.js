@@ -5,7 +5,7 @@
 // Exports: _INTERNAL_captureLog, _INTERNAL_getLogBuffer
 
 // Module 744 (_INTERNAL_captureLog)
-import _mod687 from "module_687" /* 687 */;
+import DEBUG_BUILD from "DEBUG_BUILD" /* 687 */;
 import CONSOLE_LEVELS from "CONSOLE_LEVELS" /* 688 */;
 import _mod689 from "module_689" /* 689 */;
 import _mod691 from "module_691" /* 691 */;
@@ -18,15 +18,15 @@ import _slicedToArray2 from "_slicedToArray" /* 747 */;
 import _mod748 from "module_748" /* 748 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 
-const f82708 = () => {
+const f80285 = () => {
   const weakMap = new WeakMap();
   return weakMap;
 };
 function _INTERNAL_captureSerializedLog(getOptions, arg1) {
   const obj = _mod689;
-  const globalSingleton = obj.getGlobalSingleton("clientToLogBufferMap", f82708);
+  const globalSingleton = obj.getGlobalSingleton("clientToLogBufferMap", f80285);
   const obj3 = _mod689;
-  const globalSingleton1 = obj3.getGlobalSingleton("clientToLogBufferMap", f82708);
+  const globalSingleton1 = obj3.getGlobalSingleton("clientToLogBufferMap", f80285);
   const value = globalSingleton1.get(getOptions);
   if (undefined === value) {
     const items = [arg1];
@@ -47,7 +47,7 @@ function _INTERNAL_flushLogsBuffer(getOptions, value) {
   let items = value;
   if (value == null) {
     const obj = _mod689;
-    const globalSingleton = obj.getGlobalSingleton("clientToLogBufferMap", f82708);
+    const globalSingleton = obj.getGlobalSingleton("clientToLogBufferMap", f80285);
     items = globalSingleton.get(getOptions);
   }
   if (items == null) {
@@ -59,7 +59,7 @@ function _INTERNAL_flushLogsBuffer(getOptions, value) {
     const obj3 = _mod748;
     const logEnvelope = obj3.createLogEnvelope(items, _metadata, tunnel, getOptions.getDsn());
     const obj4 = _mod689;
-    const globalSingleton1 = obj4.getGlobalSingleton("clientToLogBufferMap", f82708);
+    const globalSingleton1 = obj4.getGlobalSingleton("clientToLogBufferMap", f80285);
     const result = globalSingleton1.set(getOptions, []);
     getOptions.emit("flushLogs");
     getOptions.sendEnvelope(logEnvelope);
@@ -267,18 +267,18 @@ export function _INTERNAL_captureLog(attributes, scope) {
         client.emit("afterCaptureLog", obj4);
       } else {
         client.recordDroppedEvent("before_send", "log_item", 1);
-        if (_mod687.DEBUG_BUILD) {
+        if (DEBUG_BUILD.DEBUG_BUILD) {
           const debug3 = tmp12(688).debug;
           debug3.warn("beforeSendLog returned null, log will not be captured.");
         }
       }
-    } else if (_mod687.DEBUG_BUILD) {
+    } else if (DEBUG_BUILD.DEBUG_BUILD) {
       const debug2 = tmp12(688).debug;
       debug2.warn("logging option not enabled, log will not be captured.");
     }
   } else {
     const tmp7 = require;
-    if (_mod687.DEBUG_BUILD) {
+    if (DEBUG_BUILD.DEBUG_BUILD) {
       const debug = tmp7(688).debug;
       debug.warn("No client available to capture log.");
     }
@@ -288,6 +288,6 @@ export { _INTERNAL_captureSerializedLog };
 export { _INTERNAL_flushLogsBuffer };
 export function _INTERNAL_getLogBuffer(arg0) {
   const obj = _mod689;
-  const globalSingleton = obj.getGlobalSingleton("clientToLogBufferMap", f82708);
+  const globalSingleton = obj.getGlobalSingleton("clientToLogBufferMap", f80285);
   return globalSingleton.get(arg0);
 }

@@ -1,13 +1,13 @@
-// Module ID: 15180
-// Function ID: 15181
+// Module ID: 13808
+// Function ID: 13809
 // Name: useFavoritesGuildCategoryAddAction
-// Dependencies: [19, 1072, 15181, 5184, 1113, 3681, 2]
+// Dependencies: [19, 1072, 13809, 4697, 1113, 3701, 2]
 // Exports: default
 
-// Module 15180 (useFavoritesGuildCategoryAddAction)
+// Module 13808 (useFavoritesGuildCategoryAddAction)
 import Constants from "Constants" /* 1072 */;
-import _modDef3681 from "module_3681" /* 3681 */;
-import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 15181 */;
+import _modDef3701 from "module_3701" /* 3701 */;
+import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 13809 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ export default function useFavoritesGuildCategoryAddAction(id) {
   if (obj.isFavoritesGuildId(id.getGuildId())) {
     tmp4 = null;
     if (id.type === ChannelTypes.GUILD_CATEGORY) {
-      const obj2 = { label: intl.string(_modDef3681["1QJmIL"]), perform: callback };
+      const obj2 = { label: intl.string(_modDef3701["1QJmIL"]), perform: callback };
       intl = tmp2(1113).intl;
       tmp4 = obj2;
     }

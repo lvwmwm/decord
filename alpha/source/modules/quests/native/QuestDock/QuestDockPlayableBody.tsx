@@ -1,19 +1,19 @@
-// Module ID: 17860
-// Function ID: 17861
+// Module ID: 16663
+// Function ID: 16664
 // Name: QuestDockPlayableBody
-// Dependencies: [19, 6962, 21, 17823, 17767, 17733, 17740, 10613, 7928, 10579, 10582, 6969, 8845, 6965, 17861, 12855, 10615, 17846, 10602, 17857, 1113, 7999, 11054, 2]
+// Dependencies: [19, 6466, 21, 16627, 16571, 16535, 16542, 9894, 7431, 9860, 9863, 6473, 8342, 6469, 16664, 12149, 9896, 16649, 9883, 16660, 1113, 7502, 10336, 2]
 
-// Module 17860 (QuestDockPlayableBody)
+// Module 16663 (QuestDockPlayableBody)
 import Fragment from "Fragment" /* 21 */;
-import QuestConstants from "QuestConstants" /* 6962 */;
-import QuestTypes from "QuestTypes" /* 6965 */;
-import AdCreativeType from "AdCreativeType" /* 6969 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 8845 */;
-import captureAdUserAction from "captureAdUserAction" /* 10579 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 10582 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 10615 */;
-import GamesActionCreatorsDefault from "GamesActionCreators" /* 12855 */;
-import PlayableActionCreators from "PlayableActionCreators" /* 17861 */;
+import QuestConstants from "QuestConstants" /* 6466 */;
+import QuestTypes from "QuestTypes" /* 6469 */;
+import AdCreativeType from "AdCreativeType" /* 6473 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8342 */;
+import captureAdUserAction from "captureAdUserAction" /* 9860 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9863 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 9896 */;
+import GamesActionCreatorsDefault from "GamesActionCreators" /* 12149 */;
+import PlayableActionCreators from "PlayableActionCreators" /* 16664 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -68,9 +68,10 @@ const memoResult = react.memo(function QuestDockPlayableBody() {
   }
   const intl = tmp3(tmp2[20]).intl;
   const intl2 = tmp3(tmp2[20]).intl;
+  const obj6 = { seconds: questDockPlayable.rewardTimerSeconds };
   ({ variant: "secondary-overlay", size: "md", icon: tmp(getQuestImpressionId[22]), accessibilityLabel: questDockPlayable.cta.buttonLabel, onPress: callback1 });
   const IconButton = tmp3(tmp2[21]).IconButton;
-  return <tmp10 rewardTile={tmp9(QuestDockBodyRewardTile, obj4)} contentBadge={tmp9(tmp(tmp2[19]), {})} title={questDockPlayable.productName} description={intl.string(questDockPlayable(getQuestImpressionId[20]).t["1uzE2S"])} ctaText={intl2.string(questDockPlayable(getQuestImpressionId[20]).t.U7cCLU)} onCtaPress={callback} ctaButtonVariant="primary" secondaryCta={null} />;
+  return <tmp10 rewardTile={tmp9(QuestDockBodyRewardTile, obj4)} contentBadge={tmp9(tmp(tmp2[19]), {})} title={questDockPlayable.productName} description={intl.string(questDockPlayable(getQuestImpressionId[20]).t.vGP84Q)} ctaText={intl2.formatToPlainString(questDockPlayable(getQuestImpressionId[20]).t.dPT1o7, obj6)} onCtaPress={callback} ctaButtonVariant="primary" secondaryCta={null} />;
 });
 let result = size.fileFinishedImporting("modules/quests/native/QuestDock/QuestDockPlayableBody.tsx");
 

@@ -1,27 +1,27 @@
-// Module ID: 13138
-// Function ID: 13139
+// Module ID: 12436
+// Function ID: 12437
 // Name: CheckpointHeader
-// Dependencies: [17, 13119, 6375, 21, 5310, 575, 5548, 6833, 6404, 6405, 1630, 504, 11659, 7442, 13139, 13140, 13126, 1113, 7559, 2]
+// Dependencies: [17, 12417, 5877, 21, 4823, 575, 5039, 6337, 5906, 5907, 1630, 504, 10941, 6945, 12437, 12438, 12424, 1113, 7062, 2]
 // Exports: default
 
-// Module 13138 (CheckpointHeader)
+// Module 12436 (CheckpointHeader)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import HapticUtils from "HapticUtils" /* 5548 */;
-import _modDef6404 from "module_6404" /* 6404 */;
-import _modDef6405 from "module_6405" /* 6405 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6833 */;
-import XSmallIcon from "XSmallIcon" /* 7559 */;
-import CheckpointActionCreators from "CheckpointActionCreators" /* 13126 */;
-import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 13139 */;
-import CheckpointHeaderButtonDefault from "CheckpointHeaderButton" /* 13140 */;
-import CheckpointStore from "CheckpointStore" /* 13119 */;
-import CheckpointConstants from "CheckpointConstants" /* 6375 */;
+import HapticUtils from "HapticUtils" /* 5039 */;
+import _modDef5906 from "module_5906" /* 5906 */;
+import _modDef5907 from "module_5907" /* 5907 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6337 */;
+import XSmallIcon from "XSmallIcon" /* 7062 */;
+import CheckpointActionCreators from "CheckpointActionCreators" /* 12424 */;
+import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 12437 */;
+import CheckpointHeaderButtonDefault from "CheckpointHeaderButton" /* 12438 */;
+import CheckpointStore from "CheckpointStore" /* 12417 */;
+import CheckpointConstants from "CheckpointConstants" /* 5877 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size_mod from "module_2" /* 2 */;
 
 let CHECKPOINT_LOGO_SIZE;
@@ -62,11 +62,11 @@ export default function CheckpointHeader(logoAnimatedUri) {
   let t;
   logoAnimatedUri = logoAnimatedUri.logoAnimatedUri;
   if (logoAnimatedUri === undefined) {
-    logoAnimatedUri = _modDef6404;
+    logoAnimatedUri = _modDef5906;
   }
   let logoStaticUri = logoAnimatedUri.logoStaticUri;
   if (logoStaticUri === undefined) {
-    logoStaticUri = _modDef6405;
+    logoStaticUri = _modDef5907;
   }
   let color = logoAnimatedUri.color;
   if (color === undefined) {
@@ -78,9 +78,9 @@ export default function CheckpointHeader(logoAnimatedUri) {
   const obj = get_initialized;
   const stateFromStores = obj.useStateFromStores(items, () => isMuted.isMuted);
   if (stateFromStores) {
-    VoiceNormalIcon = tmp8(11659).VoiceXIcon;
+    VoiceNormalIcon = tmp8(10941).VoiceXIcon;
   } else {
-    VoiceNormalIcon = tmp8(7442).VoiceNormalIcon;
+    VoiceNormalIcon = tmp8(6945).VoiceNormalIcon;
   }
   const obj2 = { style: items1, children: items2 };
   items1 = [tmp5.nav, { marginTop: rect.top, marginLeft: rect.left, marginRight: rect.right }];

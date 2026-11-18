@@ -1,13 +1,13 @@
-// Module ID: 19504
-// Function ID: 19505
+// Module ID: 18780
+// Function ID: 18781
 // Name: useSmartSearchStatus
-// Dependencies: [13822, 504, 13823, 13821, 2]
+// Dependencies: [13129, 504, 13130, 13128, 2]
 // Exports: useSmartSearchStatus
 
-// Module 19504 (useSmartSearchStatus)
-import SmartSearchUtils from "SmartSearchUtils" /* 13821 */;
-import SmartSearchTypes from "SmartSearchTypes" /* 13823 */;
-import SmartSearchResultsStore from "SmartSearchResultsStore" /* 13822 */;
+// Module 18780 (useSmartSearchStatus)
+import SmartSearchUtils from "SmartSearchUtils" /* 13128 */;
+import SmartSearchTypes from "SmartSearchTypes" /* 13130 */;
+import SmartSearchResultsStore from "SmartSearchResultsStore" /* 13129 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

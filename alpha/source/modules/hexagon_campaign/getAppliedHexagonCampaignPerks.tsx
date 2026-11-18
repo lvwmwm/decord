@@ -1,14 +1,14 @@
-// Module ID: 17667
-// Function ID: 17668
+// Module ID: 16469
+// Function ID: 16470
 // Name: getAppliedHexagonCampaignPerks
-// Dependencies: [5334, 1192, 1388, 5335, 1195, 5338, 5369, 2]
+// Dependencies: [4847, 1192, 1388, 4848, 1195, 4851, 4882, 2]
 // Exports: getAppliedHexagonCampaignPerks, getHexagonCampaignClientThemeSystemThemes, isHexagonCampaignClientThemeApplied, isHexagonCampaignDisplayNameStyleApplied
 
-// Module 17667 (getAppliedHexagonCampaignPerks)
+// Module 16469 (getAppliedHexagonCampaignPerks)
 import ThemeConstants from "ThemeConstants" /* 1195 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5335 */;
-import isPerModeThemingActive from "isPerModeThemingActive" /* 5369 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5334 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4848 */;
+import isPerModeThemingActive from "isPerModeThemingActive" /* 4882 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4847 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
@@ -16,8 +16,8 @@ import size from "module_2" /* 2 */;
 let syncedClientTheme;
 
 let tmp;
-const HexagonCampaignUtils = tmp(5338);
-const f116032 = (item) => {
+const HexagonCampaignUtils = tmp(4851);
+const f111281 = (item) => {
   const isHexagonCampaignClientThemePreset = HexagonCampaignUtils.isHexagonCampaignClientThemePreset;
   HexagonCampaignUtils;
   syncedClientTheme = syncedClientTheme.getSyncedClientTheme(item);
@@ -34,7 +34,7 @@ const result = size.fileFinishedImporting("modules/hexagon_campaign/getAppliedHe
 export function getHexagonCampaignClientThemeSystemThemes() {
   const items = [, ];
   ({ LIGHT: arr[0], DARK: arr[1] } = SystemTheme);
-  return items.filter(f116032);
+  return items.filter(f111281);
 }
 export function isHexagonCampaignClientThemeApplied() {
   let tmp7;
@@ -42,7 +42,7 @@ export function isHexagonCampaignClientThemeApplied() {
   if (obj.isPerModeThemingActive()) {
     const items = [, ];
     ({ LIGHT: arr[0], DARK: arr[1] } = SystemTheme);
-    tmp7 = items.filter(f116032).length > 0;
+    tmp7 = items.filter(f111281).length > 0;
   } else {
     const gradientPreset = ClientThemesBackgroundStore.gradientPreset;
     let id;

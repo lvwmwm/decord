@@ -1,12 +1,12 @@
-// Module ID: 8164
-// Function ID: 8165
+// Module ID: 7667
+// Function ID: 7668
 // Name: getAppChannelApplicationUnsupportedText
-// Dependencies: [8165, 1113, 2]
+// Dependencies: [7668, 1113, 2]
 // Exports: default
 
-// Module 8164 (getAppChannelApplicationUnsupportedText)
+// Module 7667 (getAppChannelApplicationUnsupportedText)
 import intl4 from "intl" /* 1113 */;
-import GuildEmbeddedApplicationUnsupportedReason from "GuildEmbeddedApplicationUnsupportedReason" /* 8165 */;
+import GuildEmbeddedApplicationUnsupportedReason from "GuildEmbeddedApplicationUnsupportedReason" /* 7668 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/app_channels/getAppChannelApplicationUnsupportedText.tsx");

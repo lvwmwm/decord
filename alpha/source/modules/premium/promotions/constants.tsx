@@ -1,9 +1,9 @@
-// Module ID: 9682
-// Function ID: 9683
+// Module ID: 9097
+// Function ID: 9098
 // Name: promotions/constants
 // Dependencies: [2]
 
-// Module 9682 (promotions/constants)
+// Module 9097 (promotions/constants)
 import size from "module_2" /* 2 */;
 
 const items = ["logitech", "youtube", "best_buy", "call_of_duty"];
@@ -19,7 +19,6 @@ export const LOGITECH_PARTNER_ID = "logitech";
 export const XBOX_PARTNER_ID = "xbox";
 export const YOUTUBE_PARTNER_ID = "youtube";
 export const RUST_PARTNER_ID = "rust";
-export const BLOONS_PARTNER_ID = "bloons";
 export const BEST_BUY_PARTNER_ID = "best_buy";
 export const CALL_OF_DUTY_PARTNER_ID = "call_of_duty";
 export const VOICEMOD_PARTNER_ID = "voicemod";

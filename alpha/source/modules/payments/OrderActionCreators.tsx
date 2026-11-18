@@ -1,24 +1,101 @@
-// Module ID: 7267
-// Function ID: 7268
+// Module ID: 6771
+// Function ID: 6772
 // Name: OrderActionCreators
-// Dependencies: [5, 7266, 1072, 3, 5130, 7268, 1285, 5122, 2]
+// Dependencies: [5, 6770, 1072, 3, 4643, 6772, 1113, 2355, 1285, 4635, 2]
 // Exports: fetchOrderEntitlementsWithRetry, getOrder, signOrder
 
-// Module 7267 (OrderActionCreators)
+// Module 6771 (OrderActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1072 */;
+import intl2 from "intl" /* 1113 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
-import BillingError2 from "BillingError" /* 5130 */;
-import OrderConstants from "OrderConstants" /* 7266 */;
-import OrderSigningErrors from "OrderSigningErrors" /* 7268 */;
+import _modDef2355 from "module_2355" /* 2355 */;
+import BillingError2 from "BillingError" /* 4643 */;
+import OrderConstants from "OrderConstants" /* 6770 */;
+import OrderSigningErrors from "OrderSigningErrors" /* 6772 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
 const BillingError_mod = BillingError2;
-let c11, c12, closure_10;
+let c11, c12, c7, closure_10, closure_4;
 
 let SPENDING_LIMIT_REACHED;
 let SPENDING_LIMIT_WILL_EXCEED;
+const f91021 = (reason_code) => reason_code.reason_code === constants.PURCHASE_RESTRICTED;
+function isOrderShape(obj) {
+  return null != obj && typeof obj === "object" && "id" in obj && "status" in obj;
+}
+function getOrderSigningConstraintsError(status) {
+  let tmp = null;
+  if (null != status) {
+    tmp = null;
+    if (typeof status === "object") {
+      tmp = null;
+      if ("status" in status) {
+        tmp = null;
+        if (400 === status.status) {
+          tmp = null;
+          if ("body" in status) {
+            const body = status.body;
+            tmp = null;
+            const tmp2 = null != body && typeof body === "object" && "id" in body && "status" in body;
+            if (tmp2) {
+              const body2 = status.body;
+              const self = this;
+              if (typeof OrderSigningFailedWithConstraintsError === "function") {
+                const unsatisfied_constraints = body2.unsatisfied_constraints;
+                let someResult;
+                if (unsatisfied_constraints != null) {
+                  someResult = unsatisfied_constraints.some(f91021);
+                }
+                let orderSigningError = null;
+                if (someResult) {
+                  obj = OrderSigningErrors;
+                  orderSigningError = obj.getOrderSigningError(body2);
+                }
+                let str2;
+                if (orderSigningError != null) {
+                  str2 = orderSigningError.message;
+                }
+                if (str2 == null) {
+                  str2 = "Order signing failed due to unsatisfied constraints";
+                }
+                let code;
+                if (orderSigningError != null) {
+                  code = orderSigningError.code;
+                }
+                if (code == null) {
+                  code = (function getConstraintErrorCode(body2) {
+                    let prop = body2.unsatisfied_constraints;
+                    if (prop == null) {
+                      prop = [];
+                    }
+                    for (const item10008 of prop) {
+                      let tmp2 = closure_1_7[item10008.reason_code];
+                      if (null != tmp2) {
+                        obj.return();
+                        return tmp2;
+                      }
+                    }
+                    return null;
+                  })(body2);
+                }
+                const self2 = this;
+                const self3 = this;
+                const tmp52 = new tmp5(str2, code, orderSigningError, tmp3, tmp5, str2, this, body2, code);
+                tmp52.order = body2;
+                tmp = tmp52;
+              } else {
+                throw new TypeError("Trying to call a non-function");
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  return tmp;
+}
 let obj = function _signOrder() {
   obj = _asyncToGenerator(async function(arg0, value) {
     let c0;
@@ -26,14 +103,10 @@ let obj = function _signOrder() {
     let c2;
     let c3;
     let c4;
-    let tmp49;
-    function isOrderShape(body) {
-      return null != body && typeof body === "object" && "id" in body && "status" in body;
-    }
+    let tmp57;
     let closure_0 = arg0;
-    if (c6 === 2) {
-      c6 = 3;
-      const str2 = "Generator functions may not be called on executing generators";
+    if (c7 === 2) {
+      c7 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
     } else if (tmp3 === 3) {
       if (arg0 === 1) {
@@ -45,24 +118,26 @@ let obj = function _signOrder() {
         return { value: "HermesInternal", done: null };
       }
     } else {
-      let gateway_checkout_context;
+      let c5;
       try {
         let expected_revision;
         let load_id;
         let purchase_token;
+        let gateway_checkout_context;
+        let closure_5;
         let body;
-        c6 = 2;
-        if (0 === c5) {
+        c7 = 2;
+        if (0 === c6) {
           if (arg0 === 1) {
-            c6 = 3;
+            c7 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c6 = 3;
+            c7 = 3;
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            let closure_2 = tmp;
-            let closure_1 = tmp4;
+            let closure_3 = tmp;
+            let closure_2 = tmp4;
             c0 = undefined;
             expected_revision = undefined;
             load_id = undefined;
@@ -71,16 +146,16 @@ let obj = function _signOrder() {
             ({ orderId: c0, expectedRevision: c1, loadId: c2, purchaseToken: c3, gatewayCheckoutContext: c4 } = closure_0);
             closure_5 = undefined;
             body = undefined;
-            c5 = 1;
             c6 = 1;
+            c7 = 1;
             return { value: "Path", done: true };
           }
-        } else if (1 === c5) {
+        } else if (1 === c6) {
           if (arg0 === 1) {
-            c6 = 3;
+            c7 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c6 = 3;
+            c7 = 3;
             const obj4 = { value, done: true };
             return obj4;
           } else {
@@ -94,65 +169,69 @@ let obj = function _signOrder() {
             if (null != gateway_checkout_context) {
               body.gateway_checkout_context = gateway_checkout_context;
             }
-            gateway_checkout_context = 1;
-            const HTTP = closure_130_0(closure_130_1[6]).HTTP;
-            const request = { url: closure_130_4.ORDER_SIGN(c0), body, context: tmp49, rejectWithError: true };
+            c5 = 1;
+            const HTTP = closure_131_0(closure_131_2[8]).HTTP;
+            const request = { url: closure_131_5.ORDER_SIGN(c0), body, context: tmp57, rejectWithError: true };
             const post = HTTP.post;
-            tmp49 = undefined;
+            tmp57 = undefined;
             if (null != load_id) {
               if ("" !== load_id) {
                 const obj5 = { load_id };
-                tmp49 = obj5;
+                tmp57 = obj5;
               }
             }
-            c5 = 3;
-            c6 = 1;
+            c6 = 3;
+            c7 = 1;
             const obj6 = { value: post(request), done: false };
             return obj6;
           }
-        } else if (2 === c5) {
-          gateway_checkout_context = 0;
-          let closure_7 = closure_3;
-          if (closure_7 instanceof closure_130_0(closure_130_1[6]).HTTPResponseError) {
-            if (400 === closure_7.status) {
-              if (isOrderShape(closure_7.body)) {
+        } else if (2 === c6) {
+          c5 = 0;
+          let closure_7 = closure_4;
+          if (closure_7 instanceof closure_131_0(closure_131_2[8]).HTTPResponseError) {
+            if (409 === closure_7.status) {
+              if (closure_131_10(closure_7.body)) {
                 const self3 = this;
-                throw new closure_130_7(closure_7.body);
+                throw new closure_131_9(closure_7.body);
               }
             }
           }
-          throw closure_7;
+          const tmp28 = closure_131_11(closure_7);
+          let closure_1 = tmp28;
+          if (tmp28 == null) {
+            closure_1 = closure_7;
+          }
+          throw closure_1;
         } else if (arg0 === 1) {
-          c6 = 3;
+          c7 = 3;
           throw value;
         } else if (arg0 === 2) {
-          gateway_checkout_context = 0;
-          c6 = 3;
+          c5 = 0;
+          c7 = 3;
           const obj7 = { value, done: true };
           return obj7;
         } else {
           closure_5 = value;
-          gateway_checkout_context = 0;
+          c5 = 0;
           if (null == closure_5.body) {
             const _Error = Error;
             const self = this;
             const self2 = this;
-            const str = "Invalid sign order response";
             const error = new Error("Invalid sign order response");
             throw error;
           } else {
-            c6 = 3;
+            c7 = 3;
             obj = { value: closure_5.body, done: true };
             return obj;
           }
         }
-      } catch (tmp54) {
-        closure_3 = tmp54;
-        if (0 === gateway_checkout_context) {
-          c6 = 3;
-          throw tmp54;
+      } catch (tmp62) {
+        closure_4 = tmp62;
+        if (0 === c5) {
+          c7 = 3;
+          throw tmp62;
         } else {
-          c5 = 2;
+          c6 = 2;
         }
       }
     }
@@ -165,7 +244,7 @@ obj = function _getOrder() {
     let c6 = 0;
     let c4 = 0;
     return (async (arg0, value) => {
-      let obj9;
+      let obj10;
       if (c6 === 2) {
         c6 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -195,19 +274,22 @@ obj = function _getOrder() {
               const get = HTTP.get;
               c5 = 2;
               c6 = 1;
-              const obj5 = { url: Endpoints.ORDER_GET(orderId), rejectWithError: true };
-              const obj6 = { value: get(obj5), done: false };
-              return obj6;
+              const obj6 = { url: Endpoints.ORDER_GET(orderId), rejectWithError: true };
+              const obj7 = { value: get(obj6), done: false };
+              return obj7;
             }
           } else if (1 === c5) {
             c4 = 0;
             error = closure_3;
-            const obj7 = { error, orderId };
-            closure_130_5.error("failed to fetch order", obj7);
-            const obj8 = { tags: { source: "OrderActionCreators_getOrder" }, extra: obj9 };
-            obj9 = { orderId };
-            const obj4 = closure_130_0(closure_130_1[7]);
-            const result = obj4.captureBillingException(error, obj8);
+            const obj8 = { error, orderId };
+            closure_130_6.error("failed to fetch order", obj8);
+            const obj4 = closure_130_0(closure_130_2[9]);
+            if (!obj4.isExpectedHttpClientError(error)) {
+              const obj9 = { tags: { source: "OrderActionCreators_getOrder" }, extra: obj10 };
+              obj10 = { orderId };
+              const obj5 = closure_130_0(closure_130_2[9]);
+              const result = obj5.captureBillingException(error, obj9);
+            }
             c6 = 3;
             return { value: null, done: true };
           } else if (arg0 === 1) {
@@ -223,11 +305,11 @@ obj = function _getOrder() {
             c6 = 3;
             return { value: body, done: true };
           }
-        } catch (tmp23) {
-          closure_3 = tmp23;
+        } catch (tmp28) {
+          closure_3 = tmp28;
           if (0 === c4) {
             c6 = 3;
-            throw tmp23;
+            throw tmp28;
           } else {
             c5 = 1;
           }
@@ -424,7 +506,7 @@ obj = function _fetchOrderEntitlementsWithRetry() {
                       } else {
                         c2 = 2;
                         c3 = 1;
-                        const obj6 = { value: closure_1_10(closure_0), done: false };
+                        const obj6 = { value: closure_1_14(closure_0), done: false };
                         return obj6;
                       }
                     } else if (c3 === 1) {
@@ -445,8 +527,8 @@ obj = function _fetchOrderEntitlementsWithRetry() {
                   }
                 }
               };
-              let closure_2 = closure_136_12;
-              value = closure_136_12[Symbol.iterator]();
+              let closure_2 = closure_136_16;
+              value = closure_136_16[Symbol.iterator]();
               if (value !== undefined) {
                 c9 = 1;
                 c3 = tmp30;
@@ -557,30 +639,16 @@ obj = function _fetchOrderEntitlementsWithRetry() {
 const ConstraintReasonCode = OrderConstants.ConstraintReasonCode;
 const Endpoints = Constants.Endpoints;
 let tmp2 = new LoggerDefault("OrderActionCreators");
-let closure_5 = tmp2;
+let closure_6 = tmp2;
 obj = { [SPENDING_LIMIT_REACHED]: BillingError2.ErrorCodes.BILLING_SPENDING_LIMIT_REACHED, [SPENDING_LIMIT_WILL_EXCEED]: BillingError2.ErrorCodes.BILLING_SPENDING_LIMIT_WILL_EXCEED };
 ({ SPENDING_LIMIT_REACHED, SPENDING_LIMIT_WILL_EXCEED } = ConstraintReasonCode);
 let BillingError = BillingError_mod;
 class OrderSigningFailedWithConstraintsError extends BillingError {
   constructor(unsatisfied_constraints) {
-    function getConstraintErrorCode(unsatisfied_constraints) {
-      let prop = unsatisfied_constraints.unsatisfied_constraints;
-      if (prop == null) {
-        prop = [];
-      }
-      for (const item10008 of prop) {
-        let tmp2 = closure_1_6[item10008.reason_code];
-        if (null != tmp2) {
-          obj.return();
-          return tmp2;
-        }
-      }
-      return null;
-    }
     unsatisfied_constraints = unsatisfied_constraints.unsatisfied_constraints;
     let someResult;
     if (unsatisfied_constraints != null) {
-      someResult = unsatisfied_constraints.some((reason_code) => reason_code.reason_code === constants.PURCHASE_RESTRICTED);
+      someResult = unsatisfied_constraints.some(f91021);
     }
     let orderSigningError = null;
     if (someResult) {
@@ -601,11 +669,44 @@ class OrderSigningFailedWithConstraintsError extends BillingError {
       code = orderSigningError.code;
     }
     if (code == null) {
-      code = getConstraintErrorCode(unsatisfied_constraints);
+      code = (function getConstraintErrorCode(body2) {
+        let prop = body2.unsatisfied_constraints;
+        if (prop == null) {
+          prop = [];
+        }
+        for (const item10008 of prop) {
+          let tmp2 = closure_1_7[item10008.reason_code];
+          if (null != tmp2) {
+            obj.return();
+            return tmp2;
+          }
+        }
+        return null;
+      })(unsatisfied_constraints);
     }
     const unsatisfied_constraints1 = new unsatisfied_constraints(str, code, unsatisfied_constraints);
     unsatisfied_constraints1.order = unsatisfied_constraints;
     return unsatisfied_constraints1;
+  }
+}
+class OrderSigningOrderChangedError extends OrderSigningFailedWithConstraintsError {
+  constructor(unsatisfied_constraints) {
+    let vfMgld;
+    unsatisfied_constraints = unsatisfied_constraints.unsatisfied_constraints;
+    let someResult;
+    if (unsatisfied_constraints != null) {
+      someResult = unsatisfied_constraints.some((name) => "order_hydration_drift.storefront_promotions_unchanged" === name.name);
+    }
+    const tmp4 = new OrderSigningOrderChangedError(unsatisfied_constraints, tmp2, tmp);
+    const intl = intl2.intl;
+    const string = intl.string;
+    if (true === someResult) {
+      vfMgld = _modDef2355.vfMgld;
+    } else {
+      vfMgld = _modDef2355["Wq++Jf"];
+    }
+    tmp4.message = string(vfMgld);
+    return tmp4;
   }
 }
 BillingError = BillingError_mod;
@@ -615,11 +716,13 @@ class OrderProcessingPendingError extends BillingError {
     return tmp2;
   }
 }
-let closure_12 = [250, 500, 1000, 1500, 2500, 4250];
+let closure_16 = [250, 500, 1000, 1500, 2500, 4250];
 let result = size.fileFinishedImporting("modules/payments/OrderActionCreators.tsx");
 
 export { OrderSigningFailedWithConstraintsError };
+export { OrderSigningOrderChangedError };
 export { OrderProcessingPendingError };
+export { getOrderSigningConstraintsError };
 export function signOrder() {
   return obj(...arguments);
 }

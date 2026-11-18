@@ -1,24 +1,24 @@
-// Module ID: 13494
-// Function ID: 13495
+// Module ID: 12801
+// Function ID: 12802
 // Name: ForumPostGridBody
-// Dependencies: [32, 19, 17, 21, 5310, 575, 1187, 13495, 13496, 12338, 5923, 12627, 1255, 13497, 11925, 9122, 13501, 2]
+// Dependencies: [32, 19, 17, 21, 4823, 575, 1187, 12802, 12803, 11620, 5414, 11912, 1255, 12804, 11207, 8533, 12808, 2]
 // Exports: default
 
-// Module 13494 (ForumPostGridBody)
+// Module 12801 (ForumPostGridBody)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import GlobalUtils from "GlobalUtils" /* 1255 */;
-import Text_Text from "Text/Text" /* 5923 */;
-import ForumPostMediaUtils from "ForumPostMediaUtils" /* 9122 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12338 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13495 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 13496 */;
-import ForumPostMedia from "ForumPostMedia" /* 13497 */;
+import Text_Text from "Text/Text" /* 5414 */;
+import ForumPostMediaUtils from "ForumPostMediaUtils" /* 8533 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11620 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 12802 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 12803 */;
+import ForumPostMedia from "ForumPostMedia" /* 12804 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, length;
@@ -111,14 +111,14 @@ export default function ForumPostGridBody(thread) {
   const hasUnreads = thread.hasUnreads;
   let tmp = closure_8();
   let tmp2 = thread;
-  let obj = thread(11925);
+  let obj = thread(11207);
   [first, tmp5] = obj.useSomeAppliedTags(thread, 2);
   let tmp16Result = first.length > 0;
   items = [media];
   const memo = react.useMemo(() => media.slice(0, 4), items);
   const bound = Math.max(0, media.length - 4);
   const isMediaPostResult = thread.isMediaPost();
-  const tmp10 = media(12627)();
+  const tmp10 = media(11912)();
   dependencyMap = tmp10;
   const items1 = [memo];
   const memo1 = react.useMemo(() => {
@@ -186,7 +186,7 @@ export default function ForumPostGridBody(thread) {
   items5[1] = tmp17;
   items6 = [closure_6(View, obj3), , , ];
   if (tmp16Result) {
-    const obj4 = { style: tmp.footerLeftContainer, children: closure_6(tmp2(13501).ForumPostAppliedTagPills, obj5) };
+    const obj4 = { style: tmp.footerLeftContainer, children: closure_6(tmp2(12808).ForumPostAppliedTagPills, obj5) };
     obj5 = { appliedTags: first, additionalTagsCount: tmp5, hasUnreads };
     tmp16Result = tmp16(tmp14, obj4);
   }

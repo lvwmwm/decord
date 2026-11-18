@@ -1,14 +1,15 @@
-// Module ID: 14367
-// Function ID: 14368
+// Module ID: 13671
+// Function ID: 13672
 // Name: RouteManager
-// Dependencies: [6798, 14368, 1072, 1099, 14369, 9805, 2]
+// Dependencies: [6302, 13672, 1072, 1099, 13673, 673, 2]
 
-// Module 14367 (RouteManager)
+// Module 13671 (RouteManager)
+import addSentryBreadcrumbDefault from "addSentryBreadcrumb" /* 673 */;
 import Constants from "Constants" /* 1072 */;
 import router_utils from "router_utils" /* 1099 */;
-import convertRouteToNavigation from "convertRouteToNavigation" /* 14369 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6798 */;
-import KeybindRouterStore from "KeybindRouterStore" /* 14368 */;
+import convertRouteToNavigation from "convertRouteToNavigation" /* 13673 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6302 */;
+import KeybindRouterStore from "KeybindRouterStore" /* 13672 */;
 import size from "module_2" /* 2 */;
 
 function handleConnectionChange() {
@@ -107,12 +108,11 @@ class RouteManager {
         let pathname = obj2.getHistory().location.pathname;
         let tmp7Result = tmp7(location, REPLACE);
         if (null != tmp7Result) {
-          let tmp9Result = tmp9(9805);
           let obj3 = { message: "RouteManager.handleRouteChange: A route rewrite is replacing the current route", data: obj4 };
           obj4 = { replacePath: tmp7Result.path, previousPath: pathname };
-          let addBreadcrumbResult = tmp9Result.addBreadcrumb(obj3);
-          let tmp9Result2 = tmp9(1099);
-          let replaceWithResult = tmp9Result2.replaceWith(tmp7Result.path, tmp7Result.state);
+          let tmp14 = addSentryBreadcrumbDefault(obj3);
+          let tmp9Result = tmp9(1099);
+          let replaceWithResult = tmp9Result.replaceWith(tmp7Result.path, tmp7Result.state);
           obj.return();
           let flag = true;
           return true;

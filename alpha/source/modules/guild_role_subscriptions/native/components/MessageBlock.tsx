@@ -1,16 +1,16 @@
-// Module ID: 13705
-// Function ID: 13706
+// Module ID: 13012
+// Function ID: 13013
 // Name: MessageBlock
-// Dependencies: [19, 17, 21, 575, 5310, 5923, 2]
+// Dependencies: [19, 17, 21, 575, 4823, 5414, 2]
 // Exports: default
 
-// Module 13705 (MessageBlock)
+// Module 13012 (MessageBlock)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5923 */;
+import Text_Text from "Text/Text" /* 5414 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;

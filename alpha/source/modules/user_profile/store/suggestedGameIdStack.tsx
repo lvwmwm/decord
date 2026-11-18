@@ -1,11 +1,11 @@
-// Module ID: 10879
-// Function ID: 10880
+// Module ID: 10120
+// Function ID: 10121
 // Name: suggestedGameIdStack
-// Dependencies: [10366, 12, 560, 7363, 2]
+// Dependencies: [9647, 12, 560, 6868, 2]
 
-// Module 10879 (suggestedGameIdStack)
-import WidgetType from "WidgetType" /* 7363 */;
-import GuildProfileConstants from "GuildProfileConstants" /* 10366 */;
+// Module 10120 (suggestedGameIdStack)
+import WidgetType from "WidgetType" /* 6868 */;
+import GuildProfileConstants from "GuildProfileConstants" /* 9647 */;
 import module_12 from "module_12" /* 12 */;
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;

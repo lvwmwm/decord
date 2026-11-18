@@ -1,15 +1,15 @@
-// Module ID: 9462
-// Function ID: 9463
+// Module ID: 8877
+// Function ID: 8878
 // Name: CollectiblesTargetedOfferPromotionUtils
-// Dependencies: [9426, 7260, 8508, 8507, 9463, 1113, 2]
+// Dependencies: [8839, 6764, 7999, 7998, 8873, 1113, 2]
 // Exports: getTargetedOfferPromotionFlavorModalGradient, getTargetedOfferPromotionFlavorStyleOTPCheckout, getTargetedOfferPromotionForCollectiblesProduct, getTargetedOfferPromotionPurchaseCtaText, hasFiatExclusiveTargetedOfferPromotion, isCollectiblesTargetedOfferPromotion
 
-// Module 9462 (CollectiblesTargetedOfferPromotionUtils)
-import StorefrontTypes from "StorefrontTypes" /* 7260 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 8507 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 8508 */;
-import StorefrontCollectiblesTypes from "StorefrontCollectiblesTypes" /* 9426 */;
-import CollectiblesPromotionDiscountUtils from "CollectiblesPromotionDiscountUtils" /* 9463 */;
+// Module 8877 (CollectiblesTargetedOfferPromotionUtils)
+import StorefrontTypes from "StorefrontTypes" /* 6764 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7998 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7999 */;
+import StorefrontCollectiblesTypes from "StorefrontCollectiblesTypes" /* 8839 */;
+import CollectiblesPromotionDiscountUtils from "CollectiblesPromotionDiscountUtils" /* 8873 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/collectibles/utils/CollectiblesTargetedOfferPromotionUtils.tsx");

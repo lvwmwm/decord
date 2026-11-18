@@ -1,13 +1,13 @@
-// Module ID: 14425
-// Function ID: 14426
+// Module ID: 18326
+// Function ID: 18327
 // Name: useConjureSharingMode
-// Dependencies: [5, 32, 19, 7025, 1113, 4133, 504, 14424, 14426, 7339, 7026, 2]
+// Dependencies: [5, 32, 19, 6529, 1113, 4121, 504, 18325, 18327, 6844, 6530, 2]
 // Exports: conjureSharingOptions, default
 
-// Module 14425 (useConjureSharingMode)
+// Module 18326 (useConjureSharingMode)
 import intl4 from "intl" /* 1113 */;
-import _modDef4133 from "module_4133" /* 4133 */;
-import ConjureProjectStore2 from "ConjureProjectStore" /* 7025 */;
+import _modDef4121 from "module_4121" /* 4121 */;
+import ConjureProjectStore2 from "ConjureProjectStore" /* 6529 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -205,13 +205,13 @@ export function conjureSharingOptions() {
   let intl;
   let intl2;
   let intl3;
-  const obj = { value: "collaborators", label: intl.string(_modDef4133["a/Tlqf"]) };
+  const obj = { value: "collaborators", label: intl.string(_modDef4121["a/Tlqf"]) };
   intl = intl4.intl;
   const items = [obj, , ];
-  const obj2 = { value: "link", label: intl2.string(_modDef4133.e0VakN) };
+  const obj2 = { value: "link", label: intl2.string(_modDef4121.e0VakN) };
   intl2 = intl4.intl;
   items[1] = obj2;
-  const obj3 = { value: "public", label: intl3.string(_modDef4133["98MAcX"]) };
+  const obj3 = { value: "public", label: intl3.string(_modDef4121["98MAcX"]) };
   intl3 = intl4.intl;
   items[2] = obj3;
   return items;

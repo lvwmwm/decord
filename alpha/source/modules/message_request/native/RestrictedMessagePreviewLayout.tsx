@@ -1,9 +1,9 @@
-// Module ID: 19813
-// Function ID: 19814
+// Module ID: 19084
+// Function ID: 19085
 // Name: RestrictedMessagePreviewLayout
 // Dependencies: [1187, 2]
 
-// Module 19813 (RestrictedMessagePreviewLayout)
+// Module 19084 (RestrictedMessagePreviewLayout)
 import native from "native" /* 1187 */;
 import size from "module_2" /* 2 */;
 

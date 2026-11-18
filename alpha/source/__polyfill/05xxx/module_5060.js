@@ -1,31 +1,47 @@
 // Module ID: 5060
 // Function ID: 5061
-// Dependencies: []
+// Dependencies: [5061, 5063, 5065, 5070, 5071, 5080, 5081, 5235, 5236, 5239, 5240, 5241, 5242, 5243, 5244, 5245, 5246]
 
 // Module 5060
-let obj3;
-let obj4;
-let obj5;
-let obj6;
-let obj7;
-if (Intl.ListFormat) {
-  const _Intl = Intl;
-  if (typeof Intl.ListFormat.__addLocaleData === "function") {
-    const _Intl2 = Intl;
-    const obj2 = { data: obj3, locale: "bg" };
-    obj3 = { conjunction: obj4, disjunction: obj5, unit: obj6 };
-    obj4 = { long: { end: "{0} \u0438 {1}", middle: "{0}, {1}", pair: "{0} \u0438 {1}", start: "{0}, {1}" }, narrow: { end: "{0} \u0438 {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, short: { end: "{0} \u0438 {1}", middle: "{0}, {1}", pair: "{0} \u0438 {1}", start: "{0}, {1}" } };
-    obj5 = { long: { end: "{0} \u0438\u043B\u0438 {1}", middle: "{0}, {1}", pair: "{0} \u0438\u043B\u0438 {1}", start: "{0}, {1}" }, narrow: { end: "{0} \u0438\u043B\u0438 {1}", middle: "{0}, {1}", pair: "{0} \u0438\u043B\u0438 {1}", start: "{0}, {1}" }, short: { end: "{0} \u0438\u043B\u0438 {1}", middle: "{0}, {1}", pair: "{0} \u0438\u043B\u0438 {1}", start: "{0}, {1}" } };
-    obj6 = { long: { end: "{0} \u0438 {1}", middle: "{0}, {1}", pair: "{0} \u0438 {1}", start: "{0}, {1}" }, narrow: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0} \u0438 {1}", start: "{0}, {1}" }, short: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0} \u0438 {1}", start: "{0}, {1}" } };
-    ListFormat.__addLocaleData(obj2);
-  }
-}
-let prop = globalThis.__FORMATJS_LISTFORMAT_DATA__;
-const _globalThis = globalThis;
-if (!prop) {
-  prop = [];
-}
-_globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
-const obj = { data: obj7, locale: "bg" };
-obj7 = { conjunction: { long: { end: "{0} \u0438 {1}", middle: "{0}, {1}", pair: "{0} \u0438 {1}", start: "{0}, {1}" }, narrow: { end: "{0} \u0438 {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, short: { end: "{0} \u0438 {1}", middle: "{0}, {1}", pair: "{0} \u0438 {1}", start: "{0}, {1}" } }, disjunction: { long: { end: "{0} \u0438\u043B\u0438 {1}", middle: "{0}, {1}", pair: "{0} \u0438\u043B\u0438 {1}", start: "{0}, {1}" }, narrow: { end: "{0} \u0438\u043B\u0438 {1}", middle: "{0}, {1}", pair: "{0} \u0438\u043B\u0438 {1}", start: "{0}, {1}" }, short: { end: "{0} \u0438\u043B\u0438 {1}", middle: "{0}, {1}", pair: "{0} \u0438\u043B\u0438 {1}", start: "{0}, {1}" } }, unit: { long: { end: "{0} \u0438 {1}", middle: "{0}, {1}", pair: "{0} \u0438 {1}", start: "{0}, {1}" }, narrow: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0} \u0438 {1}", start: "{0}, {1}" }, short: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0} \u0438 {1}", start: "{0}, {1}" } } };
-prop.push(obj);
+import react from "react" /* 5061 */;
+import react2 from "react" /* 5063 */;
+import react3 from "react" /* 5065 */;
+import react4 from "react" /* 5070 */;
+import _mod5071 from "module_5071" /* 5071 */;
+import _mod5080 from "module_5080" /* 5080 */;
+import useScrollHandler from "useScrollHandler" /* 5081 */;
+import useGestureHandler from "useGestureHandler" /* 5235 */;
+import useGestureEventsHandlersDefault from "useGestureEventsHandlersDefault" /* 5236 */;
+import react5 from "react" /* 5239 */;
+import useKeyboard from "useKeyboard" /* 5240 */;
+import react6 from "react" /* 5241 */;
+import _mod5242 from "module_5242" /* 5242 */;
+import useAnimatedSnapPoints from "useAnimatedSnapPoints" /* 5243 */;
+import react7 from "react" /* 5244 */;
+import react8 from "react" /* 5245 */;
+import useBottomSheetContentContainerStyle from "useBottomSheetContentContainerStyle" /* 5246 */;
+
+const useScrollHandler_export = useScrollHandler.useScrollHandler;
+const useGestureHandler_export = useGestureHandler.useGestureHandler;
+const useGestureEventsHandlersDefault_export = useGestureEventsHandlersDefault.useGestureEventsHandlersDefault;
+const useKeyboard_export = useKeyboard.useKeyboard;
+const useAnimatedSnapPoints_export = useAnimatedSnapPoints.useAnimatedSnapPoints;
+const useBottomSheetContentContainerStyle_export = useBottomSheetContentContainerStyle.useBottomSheetContentContainerStyle;
+
+export const useBottomSheet = react.useBottomSheet;
+export const useBottomSheetInternal = react2.useBottomSheetInternal;
+export const useBottomSheetModal = react3.useBottomSheetModal;
+export const useBottomSheetModalInternal = react4.useBottomSheetModalInternal;
+export const useScrollable = _mod5071.useScrollable;
+export const useScrollableSetter = _mod5080.useScrollableSetter;
+export { useScrollHandler_export as useScrollHandler };
+export { useGestureHandler_export as useGestureHandler };
+export { useGestureEventsHandlersDefault_export as useGestureEventsHandlersDefault };
+export const useBottomSheetGestureHandlers = react5.useBottomSheetGestureHandlers;
+export { useKeyboard_export as useKeyboard };
+export const useStableCallback = react6.useStableCallback;
+export const usePropsValidator = _mod5242.usePropsValidator;
+export { useAnimatedSnapPoints_export as useAnimatedSnapPoints };
+export const useReactiveSharedValue = react7.useReactiveSharedValue;
+export const useBoundingClientRect = react8.useBoundingClientRect;
+export { useBottomSheetContentContainerStyle_export as useBottomSheetContentContainerStyle };

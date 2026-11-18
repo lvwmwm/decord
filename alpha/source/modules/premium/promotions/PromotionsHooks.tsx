@@ -1,17 +1,17 @@
-// Module ID: 10564
-// Function ID: 10565
+// Module ID: 9845
+// Function ID: 9846
 // Name: PromotionsHooks
-// Dependencies: [19, 1388, 9635, 1390, 504, 10025, 2174, 10024, 2]
+// Dependencies: [19, 1388, 9049, 1390, 504, 9305, 2174, 9304, 2]
 // Exports: useHasActiveBogoPromotion, useIsInPromotion, useOutboundPromotions, useUnseenOutboundPromotions
 
-// Module 10564 (PromotionsHooks)
+// Module 9845 (PromotionsHooks)
 import get_initialized from "get initialized" /* 504 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
-import PromotionsActionCreatorsDefault from "PromotionsActionCreators" /* 10024 */;
-import PromotionUtils from "PromotionUtils" /* 10025 */;
+import PromotionsActionCreatorsDefault from "PromotionsActionCreators" /* 9304 */;
+import PromotionUtils from "PromotionUtils" /* 9305 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;
-import PromotionsStore from "PromotionsStore" /* 9635 */;
+import PromotionsStore from "PromotionsStore" /* 9049 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -53,7 +53,7 @@ function useEligibleActiveOutboundPromotions(arg0) {
         let result1 = obj.shouldShowOutboundPromotionOnPlatform(id);
         const tmp2 = require;
         if (result1) {
-          const tmp2Result = tmp2(10025);
+          const tmp2Result = tmp2(9305);
           const result = tmp2Result.isDedicatedSurfacePromotion(id);
           flag = !result;
           if (flag) {

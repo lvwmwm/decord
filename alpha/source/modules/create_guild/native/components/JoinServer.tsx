@@ -1,18 +1,18 @@
-// Module ID: 14287
-// Function ID: 14288
+// Module ID: 13591
+// Function ID: 13592
 // Name: JoinServer
-// Dependencies: [32, 19, 7807, 21, 5310, 5886, 1502, 7503, 14212, 7425, 7806, 1113, 7670, 2]
+// Dependencies: [32, 19, 7310, 21, 4823, 5377, 1502, 7006, 13516, 6928, 7309, 1113, 7173, 2]
 // Exports: default
 
-// Module 14287 (JoinServer)
+// Module 13591 (JoinServer)
 import Fragment from "Fragment" /* 21 */;
-import NavigatorConstants from "NavigatorConstants" /* 5886 */;
-import NavigatorHeader from "NavigatorHeader" /* 7503 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 7670 */;
+import NavigatorConstants from "NavigatorConstants" /* 5377 */;
+import NavigatorHeader from "NavigatorHeader" /* 7006 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 7173 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import CreateGuildConstants from "CreateGuildConstants" /* 7807 */;
-import createStyles from "createStyles" /* 5310 */;
+import CreateGuildConstants from "CreateGuildConstants" /* 7310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let navigation;

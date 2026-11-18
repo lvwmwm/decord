@@ -17,10 +17,10 @@ export const linkedErrorsIntegration = registerSpanErrorInstrumentation.defineIn
   let closure_1 = obj.key || "cause";
   return {
     name: "LinkedErrors",
-    preprocessEvent(arg0, arg1, getOptions) {
+    preprocessEvent(exception, originalException, getOptions) {
       const options = getOptions.getOptions();
       const obj = registerSpanErrorInstrumentation;
-      const result = obj.applyAggregateErrorsToEvent(eventFromException.exceptionFromError, options.stackParser, closure_1, closure_0, arg0, arg1);
+      const result = obj.applyAggregateErrorsToEvent(eventFromException.exceptionFromError, options.stackParser, closure_1, closure_0, exception, originalException);
     }
   };
 });

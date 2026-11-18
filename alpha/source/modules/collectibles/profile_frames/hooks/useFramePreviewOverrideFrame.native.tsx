@@ -1,14 +1,14 @@
-// Module ID: 8573
-// Function ID: 8574
+// Module ID: 8064
+// Function ID: 8065
 // Name: useFramePreviewOverrideFrame
-// Dependencies: [19, 8503, 8574, 2114, 2]
+// Dependencies: [19, 7994, 8065, 2114, 2]
 // Exports: default
 
-// Module 8573 (useFramePreviewOverrideFrame)
+// Module 8064 (useFramePreviewOverrideFrame)
 import CollectiblesItemType from "CollectiblesItemType" /* 2114 */;
-import FramePreviewOverrideStore from "FramePreviewOverrideStore" /* 8574 */;
+import FramePreviewOverrideStore from "FramePreviewOverrideStore" /* 8065 */;
 import react from "react" /* 19 */;
-import ProfileFrameRecord from "ProfileFrameRecord" /* 8503 */;
+import ProfileFrameRecord from "ProfileFrameRecord" /* 7994 */;
 import size from "module_2" /* 2 */;
 
 let closure_4 = FramePreviewOverrideStore.useFramePreviewOverrideStore;

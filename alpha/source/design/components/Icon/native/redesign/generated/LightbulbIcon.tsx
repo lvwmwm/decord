@@ -1,14 +1,14 @@
-// Module ID: 12014
-// Function ID: 12015
+// Module ID: 11296
+// Function ID: 11297
 // Name: LightbulbIcon
-// Dependencies: [19, 21, 575, 6013, 12015, 2]
+// Dependencies: [19, 21, 575, 5509, 11297, 2]
 // Exports: LightbulbIcon
 
-// Module 12014 (LightbulbIcon)
+// Module 11296 (LightbulbIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6013 */;
-import AssetRegistry from "AssetRegistry" /* 12015 */;
+import BaseIconImage2 from "BaseIconImage" /* 5509 */;
+import AssetRegistry from "AssetRegistry" /* 11297 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

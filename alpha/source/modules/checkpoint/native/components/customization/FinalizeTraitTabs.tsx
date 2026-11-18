@@ -1,37 +1,41 @@
-// Module ID: 13415
-// Function ID: 13416
+// Module ID: 12722
+// Function ID: 12723
 // Name: FinalizeTraitTabs
-// Dependencies: [19, 17, 6375, 21, 5546, 13416, 2121, 5310, 575, 1380, 1113, 13356, 5923, 6742, 13417, 5896, 13363, 3319, 13418, 2]
+// Dependencies: [19, 17, 4824, 5877, 21, 575, 5037, 12723, 2121, 4823, 1380, 1113, 12659, 5414, 6244, 504, 5387, 12666, 3339, 12724, 2]
 // Exports: FinalizeTraitTabs
 
-// Module 13415 (FinalizeTraitTabs)
+// Module 12722 (FinalizeTraitTabs)
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
-import CheckpointPressable from "CheckpointPressable" /* 13356 */;
-import showNitroLockedToastDefault from "showNitroLockedToast" /* 13363 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
+import CheckpointPressable from "CheckpointPressable" /* 12659 */;
+import showNitroLockedToastDefault from "showNitroLockedToast" /* 12666 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CheckpointConstants from "CheckpointConstants" /* 6375 */;
+import AccessibilityStore from "AccessibilityStore" /* 4824 */;
+import CheckpointConstants from "CheckpointConstants" /* 5877 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 const CheckpointPressableDefault = CheckpointPressable;
+let map;
 
 let CHECKPOINT_PRIMARY;
-let c3;
+let c10;
+let c9;
 let closure_4;
 let hasOwnProperty;
-let metroImportAll;
 let metroImportDefault;
 let obj2;
 let obj3;
 let obj4;
 let obj5;
+let obj6;
 function TraitTab(arg0) {
   let accessibilityHint;
+  let accessibilityLabel;
   let disabled;
   let isActive;
   let isBlocked;
@@ -40,13 +44,17 @@ function TraitTab(arg0) {
   let items3;
   let label;
   let obj4;
+  let obj5;
+  let onLayout;
   let onPress;
   let position;
   let tabCount;
+  let tmp8;
+  let tmp9;
   let trailing;
-  ({ isActive, isBlocked } = arg0);
-  ({ label, position, tabCount, disabled, accessibilityHint, onPress, trailing } = arg0);
-  const tmp = closure_9();
+  ({ label, isActive, isBlocked } = arg0);
+  ({ accessibilityLabel, position, tabCount, disabled, accessibilityHint, onPress, onLayout, trailing } = arg0);
+  const tmp = closure_12();
   let formatToPlainStringResult;
   const obj = PlatformUtils;
   if (obj.isAndroid()) {
@@ -61,110 +69,245 @@ function TraitTab(arg0) {
     joined = found.join(", ");
   }
   let tabContainerActive = isActive;
-  const tmp6 = metroImportAll;
-  const tmp7 = CheckpointPressableDefault;
+  const obj3 = { onLayout, children: tmp8(tmp9, obj4) };
+  const tmp7 = hasOwnProperty;
+  tmp8 = authStore;
+  tmp9 = CheckpointPressableDefault;
   if (isActive) {
     tabContainerActive = tmp.tabContainerActive;
   }
-  const obj3 = { size: "sm", containerStyle: tabContainerActive, style: items1, disabled: isActive || isBlocked, onPress, accessibilityRole: "tab", accessibilityHint: joined, accessibilityState: obj4, shadowColor: hasOwnProperty, children: items3 };
+  obj4 = { size: "sm", containerStyle: tabContainerActive, style: items1, disabled: isActive || isBlocked, onPress, accessibilityRole: "tab", accessibilityLabel, accessibilityHint: joined, accessibilityState: obj5, shadowColor: metroImportDefault, children: items3 };
   items1 = [tmp.tab, isActive && tmp.tabActive, isBlocked && tmp.tabDisabled];
-  obj4 = { selected: isActive, disabled: isBlocked || disabled };
-  const obj5 = { variant: CheckpointPressable.CHECKPOINT_PRESSABLE_SIZES.sm.textVariant, style: items2, children: label };
-  const Text = tmp2(5923).Text;
-  items2 = [tmp.tabLabel, , ];
-  const tmp8 = metroImportDefault;
-  if (isActive) {
-    isActive = tmp.tabLabelActive;
+  let tmp6Result = null != label;
+  obj5 = { selected: isActive, disabled: isBlocked || disabled };
+  if (tmp6Result) {
+    const obj6 = { variant: CheckpointPressable.CHECKPOINT_PRESSABLE_SIZES.sm.textVariant, style: items2, children: label };
+    const Text = tmp2(5414).Text;
+    items2 = [tmp.tabLabel, , ];
+    if (isActive) {
+      isActive = tmp.tabLabelActive;
+    }
+    items2[1] = isActive;
+    if (isBlocked) {
+      isBlocked = tmp.tabLabelDisabled;
+    }
+    items2[2] = isBlocked;
+    tmp6Result = tmp6(Text, obj6);
   }
-  items2[1] = isActive;
-  if (isBlocked) {
-    isBlocked = tmp.tabLabelDisabled;
-  }
-  items2[2] = isBlocked;
-  items3 = [tmp8(Text, obj5), trailing];
-  return tmp6(tmp7, obj3);
+  items3 = [tmp6Result, trailing];
+  return React4(tmp7, obj3);
 }
-({ ScrollView: c3, View: closure_4 } = react_native);
-({ CHECKPOINT_DARK_CYAN: hasOwnProperty, CHECKPOINT_PRIMARY } = CheckpointConstants);
-({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+({ ScrollView: closure_4, View: hasOwnProperty } = react_native);
+({ CHECKPOINT_DARK_CYAN: metroImportDefault, CHECKPOINT_PRIMARY } = CheckpointConstants);
+({ jsx: c9, jsxs: c10 } = Fragment);
+const PX_16 = nativeDefault.space.PX_16;
 let createStyles = createStyles_mod;
-let obj = { scroll: { flexGrow: 0 }, scrollContent: obj2, row: obj3, tabContainerActive: { paddingRight: 0, paddingBottom: 0 }, tab: obj4, tabActive: obj5, tabDisabled: { backgroundColor: nativeDefault.colors.BLACK, borderColor: nativeDefault.colors.BORDER_NORMAL }, tabLabel: { color: nativeDefault.colors.BLACK, textTransform: "uppercase" }, tabLabelActive: { color: CHECKPOINT_PRIMARY, textTransform: "uppercase" }, tabLabelDisabled: { color: nativeDefault.colors.TEXT_SUBTLE } };
-obj2 = { paddingHorizontal: nativeDefault.space.PX_16 };
+let obj = { scroll: { flexGrow: 0 }, scrollContent: { paddingHorizontal: PX_16 }, row: obj2, tabContainerActive: { paddingRight: 0, paddingBottom: 0 }, tab: obj3, tabActive: obj4, tabDisabled: obj5, tabLabel: obj6, tabLabelActive: { color: CHECKPOINT_PRIMARY, textTransform: "uppercase" }, tabLabelDisabled: { color: nativeDefault.colors.TEXT_SUBTLE } };
+obj2 = { flexDirection: "row", gap: nativeDefault.space.PX_8 };
 createStyles = createStyles.createStyles;
-obj3 = { flexDirection: "row", gap: nativeDefault.space.PX_8 };
-obj4 = { backgroundColor: CHECKPOINT_PRIMARY, borderWidth: 1, borderColor: nativeDefault.colors.BLACK };
-obj5 = { backgroundColor: nativeDefault.colors.BLACK, borderWidth: 1, borderColor: CHECKPOINT_PRIMARY };
-({ backgroundColor: nativeDefault.colors.BLACK, borderColor: nativeDefault.colors.BORDER_NORMAL });
-({ color: nativeDefault.colors.BLACK, textTransform: "uppercase" });
+obj3 = { backgroundColor: CHECKPOINT_PRIMARY, borderWidth: 1, borderColor: nativeDefault.colors.BLACK };
+obj4 = { backgroundColor: nativeDefault.colors.BLACK, borderWidth: 1, borderColor: CHECKPOINT_PRIMARY };
+obj5 = { backgroundColor: nativeDefault.colors.BLACK, borderColor: nativeDefault.colors.BORDER_NORMAL };
+obj6 = { color: nativeDefault.colors.BLACK, textTransform: "uppercase" };
 ({ color: nativeDefault.colors.TEXT_SUBTLE });
-let closure_9 = createStyles(obj);
-const result = size.fileFinishedImporting("modules/checkpoint/native/components/customization/FinalizeTraitTabs.tsx");
+let closure_12 = createStyles(obj);
+let result = size.fileFinishedImporting("modules/checkpoint/native/components/customization/FinalizeTraitTabs.tsx");
 
 export function FinalizeTraitTabs(activeCustomizationOption) {
-  let items;
+  let formatToPlainStringResult;
+  let isCurrentTraitBlocked;
+  let items2;
   let obj2;
+  let onSelectOption;
   let str2;
-  let stringResult;
+  let str3;
   let tabCount;
-  let tmp13;
-  let tmp14;
+  let tmp18;
+  let tmp19;
+  let tmp21;
   activeCustomizationOption = activeCustomizationOption.activeCustomizationOption;
-  const onSelectOption = activeCustomizationOption.onSelectOption;
-  let flag = activeCustomizationOption.isCurrentTraitBlocked;
+  const moreTabOption = activeCustomizationOption.moreTabOption;
+  ({ onSelectOption: dependencyMap, isCurrentTraitBlocked } = activeCustomizationOption);
+  if (isCurrentTraitBlocked === undefined) {
+    isCurrentTraitBlocked = false;
+  }
+  let flag = activeCustomizationOption.disabled;
   if (flag === undefined) {
     flag = false;
   }
-  let flag2 = activeCustomizationOption.disabled;
-  if (flag2 === undefined) {
-    flag2 = false;
+  let c7;
+  let closure_8;
+  let str;
+  let stateFromStores;
+  let ref;
+  let ref2;
+  let ref3;
+  function handleTabLayout(more, nativeEvent) {
+    const layout = nativeEvent.nativeEvent.layout;
+    const current = ref.current;
+    const obj = { x: layout.x, width: layout.width };
+    const result = current.set(more, obj);
+    const tmp = ref;
+    if (more === str) {
+      const current3 = tmp.current;
+      const value = current3.get(tmp3);
+      const current4 = ref3.current;
+      if (null != value) {
+        if (0 !== current4) {
+          let x = value.x;
+          const diff = value.x + value.width + 2 * PX_16 - current4;
+          const current5 = ref2.current;
+          if (current5 <= x) {
+            let tmp4 = null;
+            if (current5 < diff) {
+              tmp4 = diff;
+            }
+            x = tmp4;
+          }
+          if (null != x) {
+            const current2 = ref.current;
+            if (current2 != null) {
+              const obj2 = { x, animated: !stateFromStores };
+              current2.scrollTo(obj2);
+            }
+          }
+        }
+      }
+    }
   }
-  let c6;
-  let tmp = closure_9();
+  let tmp = ref();
   let tmp2 = activeCustomizationOption;
-  let tmp3 = flag;
-  const tmp4 = activeCustomizationOption(flag[13]).CUSTOMIZATION_OPTION_TO_TRAIT[activeCustomizationOption];
-  let closure_4 = tmp4;
+  let tmp3 = dependencyMap;
+  let tmp4 = activeCustomizationOption(6244).CUSTOMIZATION_OPTION_TO_TRAIT[activeCustomizationOption];
+  let closure_5 = tmp4;
   let nitroLockedMessage;
-  if (flag) {
-    if (!flag2) {
-      const tmp2Result = tmp2(tmp3[13]);
+  if (isCurrentTraitBlocked) {
+    if (!flag) {
+      const tmp2Result = tmp2(6244);
       nitroLockedMessage = tmp2Result.getNitroLockedMessage(tmp4);
     }
   }
-  const arr = onSelectOption(tmp3[14])(activeCustomizationOption, onSelectOption);
-  const sum = arr.length + 1;
-  c6 = sum;
-  const FINALIZE_TRAIT_TAB_ITEMS = tmp2(tmp3[14]).FINALIZE_TRAIT_TAB_ITEMS;
-  const hasItem = FINALIZE_TRAIT_TAB_ITEMS.includes(activeCustomizationOption);
-  const tmp9 = !hasItem;
-  const tmp2Result5 = tmp2(tmp3[15]);
-  let token = tmp2Result5.useToken("text-subtle");
-  if (!flag) {
+  const sum = tmp2(6244).FINALIZE_TAB_OPTIONS.length + 1;
+  c7 = sum;
+  const FINALIZE_MORE_OPTIONS = tmp2(6244).FINALIZE_MORE_OPTIONS;
+  const hasItem = FINALIZE_MORE_OPTIONS.includes(activeCustomizationOption);
+  let customizationOptionName;
+  if (null != moreTabOption) {
+    const tmp2Result6 = tmp2(6244);
+    customizationOptionName = tmp2Result6.getCustomizationOptionName(moreTabOption);
+  }
+  closure_8 = tmp9;
+  str = "more";
+  if (!hasItem) {
+    str = activeCustomizationOption;
+  }
+  function scrollActiveTabIntoView() {
+    const current = ref.current;
+    const value = current.get(str);
+    const current2 = ref3.current;
+    if (null != value) {
+      if (0 !== current2) {
+        let x = value.x;
+        const diff = value.x + value.width + 2 * PX_16 - current2;
+        const current4 = ref2.current;
+        if (current4 <= x) {
+          let tmp2 = null;
+          if (current4 < diff) {
+            tmp2 = diff;
+          }
+          x = tmp2;
+        }
+        if (null != x) {
+          const current3 = ref.current;
+          if (current3 != null) {
+            const obj = { x, animated: !stateFromStores };
+            current3.scrollTo(obj);
+          }
+        }
+      }
+    }
+  }
+  const items = [nitroLockedMessage];
+  const tmp2Result7 = tmp2(504);
+  stateFromStores = tmp2Result7.useStateFromStores(items, () => nitroLockedMessage.useReducedMotion);
+  isCurrentTraitBlocked.useRef(null);
+  const useRef = isCurrentTraitBlocked.useRef;
+  map = new Map();
+  ref = useRef(map);
+  ref2 = isCurrentTraitBlocked.useRef(0);
+  ref3 = isCurrentTraitBlocked.useRef(0);
+  const items1 = [str, stateFromStores];
+  const effect = isCurrentTraitBlocked.useEffect(scrollActiveTabIntoView, items1);
+  const tmp2Result8 = tmp2(5387);
+  let token = tmp2Result8.useToken("text-subtle");
+  if (!isCurrentTraitBlocked) {
     let BLACK;
     if (hasItem) {
-      BLACK = tmp6(tmp3[8]).colors.BLACK;
+      BLACK = closure_8;
     } else {
-      BLACK = c6;
+      BLACK = moreTabOption(575).colors.BLACK;
     }
     token = BLACK;
   }
-  let str;
-  const tmp12 = flag2;
-  const tmp2Result6 = tmp2(tmp3[9]);
-  if (tmp2Result6.isIOS()) {
-    str = "tabbar";
-  }
-  let obj = { horizontal: true, accessibilityRole: str, alwaysBounceHorizontal: false, style: tmp.scroll, contentContainerStyle: tmp.scrollContent, children: tmp13(tmp14, obj2) };
-  obj2 = { style: tmp.row, accessibilityRole: str2, children: items };
+  let obj = {
+    ref,
+    horizontal: true,
+    onLayout: function handleLayout(nativeEvent) {
+      ref3.current = nativeEvent.nativeEvent.layout.width;
+      const current = ref.current;
+      const value = current.get(str);
+      const current2 = ref3.current;
+      if (null != value) {
+        if (0 !== current2) {
+          let x = value.x;
+          const diff = value.x + value.width + 2 * PX_16 - current2;
+          const current4 = ref2.current;
+          if (current4 <= x) {
+            let tmp2 = null;
+            if (current4 < diff) {
+              tmp2 = diff;
+            }
+            x = tmp2;
+          }
+          if (null != x) {
+            const current3 = ref.current;
+            if (current3 != null) {
+              const obj = { x, animated: !stateFromStores };
+              current3.scrollTo(obj);
+            }
+          }
+        }
+      }
+    },
+    onScroll: function handleScroll(nativeEvent) {
+      ref2.current = nativeEvent.nativeEvent.contentOffset.x;
+    },
+    scrollEventThrottle: 16,
+    accessibilityRole: str2,
+    alwaysBounceHorizontal: false,
+    showsHorizontalScrollIndicator: false,
+    style: null,
+    contentContainerStyle: null,
+    children: tmp18(tmp19, obj2)
+  };
   str2 = undefined;
-  tmp13 = closure_8;
-  tmp14 = closure_4;
-  const tmp2Result7 = tmp2(tmp3[9]);
-  if (tmp2Result7.isAndroid()) {
-    str2 = "tablist";
+  const tmp17 = flag;
+  const tmp2Result9 = tmp2(1380);
+  if (tmp2Result9.isIOS()) {
+    str2 = "tabbar";
   }
-  items = [
-    arr.map((item, index) => {
+  ({ scroll: obj5.style, scrollContent: obj5.contentContainerStyle } = tmp);
+  obj2 = { style: tmp.row, accessibilityRole: str3, children: items2 };
+  str3 = undefined;
+  tmp18 = stateFromStores;
+  tmp19 = closure_5;
+  const tmp2Result10 = tmp2(1380);
+  if (tmp2Result10.isAndroid()) {
+    str3 = "tablist";
+  }
+  const FINALIZE_TAB_OPTIONS = tmp2(6244).FINALIZE_TAB_OPTIONS;
+  items2 = [
+    FINALIZE_TAB_OPTIONS.map((item, index) => {
       let obj2;
       let closure_0 = item;
       const obj = {
@@ -172,61 +315,80 @@ export function FinalizeTraitTabs(activeCustomizationOption) {
         position: index + 1,
         tabCount,
         isActive: closure_0 === item,
-        isBlocked: flag,
-        disabled: flag2,
+        isBlocked: isCurrentTraitBlocked,
+        disabled: flag,
         accessibilityHint: nitroLockedMessage,
         onPress() {
-          const tmp2 = flag2;
+          const tmp2 = flag;
           if (!tmp2) {
-            const tmp3 = flag;
+            const tmp3 = isCurrentTraitBlocked;
             if (tmp3) {
-              showNitroLockedToastDefault(closure_4);
+              showNitroLockedToastDefault(closure_5);
             } else {
-              onSelectOption(tmp);
+              dependencyMap(tmp);
             }
           }
+        },
+        onLayout(nativeEvent) {
+          handleTabLayout(item, nativeEvent);
         }
       };
-      obj2 = activeCustomizationOption(flag[13]);
-      return closure_1_7(TraitTab, obj, item);
+      obj2 = activeCustomizationOption(dependencyMap[14]);
+      return str(ref2, obj, item);
     }),
 
   ];
   const obj3 = {
     position: sum,
     tabCount: sum,
-    label: stringResult,
-    isActive: tmp9,
-    isBlocked: flag,
-    disabled: flag2,
+    label: customizationOptionName,
+    accessibilityLabel: formatToPlainStringResult,
+    isActive: hasItem,
+    isBlocked: isCurrentTraitBlocked,
+    disabled: flag,
     accessibilityHint: nitroLockedMessage,
     onPress: function handleMorePress() {
-      const tmp = flag2;
+      const tmp = flag;
       if (!tmp) {
-        const tmp2 = flag;
+        const tmp2 = isCurrentTraitBlocked;
         if (tmp2) {
-          showNitroLockedToastDefault(closure_4);
+          showNitroLockedToastDefault(closure_5);
         } else {
-          const obj = { selectedOption: activeCustomizationOption, onSelectOption };
-          const obj2 = ActionSheetActionCreatorsDefault;
-          obj2.openLazy(asyncRequire(13416, dependencyMap.paths), "CheckpointFinalizeTraitPicker", obj);
+          const tmp3 = closure_8;
+          if (tmp3) {
+            const obj = { selectedOption: activeCustomizationOption, onSelectOption: dependencyMap };
+            const obj2 = ActionSheetActionCreatorsDefault;
+            obj2.openLazy(asyncRequire(12723, dependencyMap.paths), "CheckpointFinalizeTraitPicker", obj);
+          } else if (null != moreTabOption) {
+            dependencyMap(tmp4);
+          }
         }
       }
     },
-    trailing: closure_7(tmp2(tmp3[18]).ChevronSmallDownIcon, { color: token, size: "xs" })
+    onLayout(nativeEvent) {
+      handleTabLayout("more", nativeEvent);
+    },
+    trailing: str(tmp2(12724).ChevronSmallDownIcon, { color: token, size: "xs" })
   };
-  const tmp15 = TraitTab;
-  if (hasItem) {
-    const intl = tmp2(tmp3[10]).intl;
-    stringResult = intl.string(tmp6(tmp3[17])["iXpQc+"]);
+  const tmp20 = ref2;
+  if (null != customizationOptionName) {
+    const intl2 = tmp2(1113).intl;
+    const obj4 = { category: customizationOptionName };
+    formatToPlainStringResult = intl2.formatToPlainString(moreTabOption(3339).QX1VPx, obj4);
+    tmp21 = moreTabOption;
   } else {
-    const tmp2Result8 = tmp2(tmp3[13]);
-    stringResult = tmp2Result8.getCustomizationOptionName(activeCustomizationOption);
+    const intl = tmp2(1113).intl;
+    tmp21 = moreTabOption;
+    formatToPlainStringResult = intl.string(moreTabOption(3339).jepsQ6);
   }
   if (nitroLockedMessage == null) {
-    const intl2 = tmp2(tmp3[10]).intl;
-    nitroLockedMessage = intl2.string(tmp6(tmp3[17])["8cGmXF"]);
+    let stringResult;
+    if (null == moreTabOption || hasItem) {
+      const intl3 = tmp2(1113).intl;
+      stringResult = intl3.string(tmp21(3339)["8cGmXF"]);
+    }
+    nitroLockedMessage = stringResult;
   }
-  items[1] = closure_7(tmp15, obj3);
-  return closure_7(tmp12, obj);
+  items2[1] = str(tmp20, obj3);
+  return str(tmp17, obj);
 }

@@ -11,7 +11,7 @@ import baggageHeaderHasSentryValues from "baggageHeaderHasSentryValues" /* 953 *
 
 let name;
 
-function shouldAttachHeaders(url, arg1) {
+function shouldAttachHeaders(url, endpoints) {
   const obj = _mod681;
   const locationHref = obj.getLocationHref();
   if (locationHref) {
@@ -25,14 +25,14 @@ function shouldAttachHeaders(url, arg1) {
       const self4 = this;
       const uRL1 = new URL(locationHref);
       let tmp14 = tmp13;
-      if (arg1) {
+      if (endpoints) {
         const tmpResult = _mod681;
-        let result = tmpResult.stringMatchesSomePattern(str.toString(), arg1);
+        let result = tmpResult.stringMatchesSomePattern(str.toString(), endpoints);
         if (!result) {
           let result1 = tmp13;
           if (result1) {
             const tmpResult3 = _mod681;
-            result1 = tmpResult3.stringMatchesSomePattern(uRL.pathname, arg1);
+            result1 = tmpResult3.stringMatchesSomePattern(uRL.pathname, endpoints);
           }
           result = result1;
         }
@@ -44,9 +44,9 @@ function shouldAttachHeaders(url, arg1) {
     }
   } else {
     let result2 = url.match(/^\/(?!\/)/);
-    if (arg1) {
+    if (endpoints) {
       const tmpResult4 = _mod681;
-      result2 = tmpResult4.stringMatchesSomePattern(url, arg1);
+      result2 = tmpResult4.stringMatchesSomePattern(url, endpoints);
     }
     return result2;
   }

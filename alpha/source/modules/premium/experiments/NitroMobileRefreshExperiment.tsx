@@ -1,10 +1,10 @@
-// Module ID: 15366
-// Function ID: 15367
+// Module ID: 13994
+// Function ID: 13995
 // Name: NitroMobileRefreshExperiment
 // Dependencies: [1452, 2]
 // Exports: useIsNitroMobileRefreshEnabled
 
-// Module 15366 (NitroMobileRefreshExperiment)
+// Module 13994 (NitroMobileRefreshExperiment)
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 

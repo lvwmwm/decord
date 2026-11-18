@@ -1,19 +1,19 @@
-// Module ID: 18175
-// Function ID: 18176
+// Module ID: 16977
+// Function ID: 16978
 // Name: UserSettingsHighlightNotifications
-// Dependencies: [19, 5181, 6954, 6956, 1072, 21, 7893, 7888, 504, 7730, 7964, 8117, 2]
+// Dependencies: [19, 4694, 6458, 6460, 1072, 21, 7396, 7391, 504, 7233, 7467, 7620, 2]
 // Exports: default
 
-// Module 18175 (UserSettingsHighlightNotifications)
+// Module 16977 (UserSettingsHighlightNotifications)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import GuildIconDefault from "GuildIcon" /* 7730 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7888 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7893 */;
+import GuildIconDefault from "GuildIcon" /* 7233 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7391 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7396 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5181 */;
-import SortedGuildStore from "SortedGuildStore" /* 6954 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6956 */;
+import GuildStore from "GuildStore" /* 4694 */;
+import SortedGuildStore from "SortedGuildStore" /* 6458 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6460 */;
 import size from "module_2" /* 2 */;
 
 function Row(guildId) {
@@ -54,7 +54,7 @@ function Row(guildId) {
     }
     const tmp7 = !muted;
     jsx(GuildIconDefault, { guild });
-    return jsx(tmp2(7964).TableSwitchRow, { label: name, icon: jsx(GuildIconDefault, { guild }), value: tmp7, onValueChange: callback, start: isStart, end: isEnd });
+    return jsx(tmp2(7467).TableSwitchRow, { label: name, icon: jsx(GuildIconDefault, { guild }), value: tmp7, onValueChange: callback, start: isStart, end: isEnd });
   }
 }
 const HighlightSettings = Constants.HighlightSettings;
@@ -71,7 +71,7 @@ export default function UserSettingsHighlightNotifications() {
   [][0] = stateFromStoresArray;
   let tmp4 = null;
   if (0 !== stateFromStoresArray.length) {
-    tmp4 = jsx(tmp(8117).Form, { children: tmp3 });
+    tmp4 = jsx(tmp(7620).Form, { children: tmp3 });
   }
   return tmp4;
 };

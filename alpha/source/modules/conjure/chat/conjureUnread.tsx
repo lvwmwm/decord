@@ -1,18 +1,18 @@
-// Module ID: 7341
-// Function ID: 7342
+// Module ID: 6846
+// Function ID: 6847
 // Name: conjureUnread
-// Dependencies: [19, 1231, 7023, 7025, 6957, 572, 11, 504, 7342, 2]
+// Dependencies: [19, 1231, 6527, 6529, 6461, 572, 11, 504, 6847, 2]
 // Exports: ackConjureProject, getConjureProjectMentionCount, isConjureProjectUnread, useAckConjureProjectOnLeave, useAckConjureProjectWhileViewing, useConjureProjectBadge, useConjureUnreadSummary
 
-// Module 7341 (conjureUnread)
+// Module 6846 (conjureUnread)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ReadStateConstants from "ReadStateConstants" /* 6957 */;
-import conjureProjectMute from "conjureProjectMute" /* 7342 */;
+import ReadStateConstants from "ReadStateConstants" /* 6461 */;
+import conjureProjectMute from "conjureProjectMute" /* 6847 */;
 import react from "react" /* 19 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import ReadStateStore from "ReadStateStore" /* 7023 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 7025 */;
+import ReadStateStore from "ReadStateStore" /* 6527 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6529 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,10 +1,10 @@
-// Module ID: 12798
-// Function ID: 12799
+// Module ID: 12092
+// Function ID: 12093
 // Name: PendingReplyActionCreators
 // Dependencies: [572, 2]
 // Exports: createPendingReply, createShallowPendingReply, deletePendingReply, setPendingReplyShouldMention
 
-// Module 12798 (PendingReplyActionCreators)
+// Module 12092 (PendingReplyActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 

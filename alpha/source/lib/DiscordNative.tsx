@@ -1,9 +1,9 @@
-// Module ID: 5120
-// Function ID: 5121
+// Module ID: 4633
+// Function ID: 4634
 // Name: DiscordNative
 // Dependencies: [2]
 
-// Module 5120 (DiscordNative)
+// Module 4633 (DiscordNative)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("lib/DiscordNative.tsx");

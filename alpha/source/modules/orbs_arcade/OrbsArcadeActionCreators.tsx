@@ -1,18 +1,18 @@
-// Module ID: 17691
-// Function ID: 17692
+// Module ID: 16493
+// Function ID: 16494
 // Name: OrbsArcadeActionCreators
-// Dependencies: [5, 502, 17685, 1072, 1089, 559, 572, 1285, 17686, 6756, 17692, 2]
+// Dependencies: [5, 502, 16487, 1072, 1089, 559, 572, 1285, 16488, 6258, 16494, 2]
 // Exports: claimOrbsArcadeRewards, ensureOrbsArcadeEnrollment, fetchOrbsArcadeGamesIfStale, resetOrbsArcadeGame
 
-// Module 17691 (OrbsArcadeActionCreators)
+// Module 16493 (OrbsArcadeActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
-import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 17692 */;
+import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 16494 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 17685 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 16487 */;
 import Backoff from "Backoff" /* 559 */;
 import size from "module_2" /* 2 */;
 

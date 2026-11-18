@@ -1,11 +1,11 @@
-// Module ID: 9463
-// Function ID: 9464
+// Module ID: 8873
+// Function ID: 8874
 // Name: CollectiblesPromotionDiscountUtils
-// Dependencies: [7260, 2]
+// Dependencies: [6764, 2]
 // Exports: getPromotionPercentOff
 
-// Module 9463 (CollectiblesPromotionDiscountUtils)
-import StorefrontTypes from "StorefrontTypes" /* 7260 */;
+// Module 8873 (CollectiblesPromotionDiscountUtils)
+import StorefrontTypes from "StorefrontTypes" /* 6764 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/collectibles/utils/CollectiblesPromotionDiscountUtils.tsx");

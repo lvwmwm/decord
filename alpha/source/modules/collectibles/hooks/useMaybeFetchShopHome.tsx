@@ -1,17 +1,17 @@
-// Module ID: 18519
-// Function ID: 18520
+// Module ID: 17332
+// Function ID: 17333
 // Name: useMaybeFetchShopHome
-// Dependencies: [32, 19, 5526, 8496, 5984, 1074, 504, 8539, 8495, 18520, 2]
+// Dependencies: [32, 19, 5440, 7987, 5480, 1074, 504, 8030, 7986, 17333, 2]
 // Exports: useMaybeFetchCollectiblesShopHome
 
-// Module 18519 (useMaybeFetchShopHome)
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 8495 */;
-import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 8539 */;
+// Module 17332 (useMaybeFetchShopHome)
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7986 */;
+import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 8030 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ExperimentStore from "ExperimentStore" /* 5526 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 8496 */;
-import CollectiblesShopHomeStore from "CollectiblesShopHomeStore" /* 5984 */;
+import ExperimentStore from "ExperimentStore" /* 5440 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7987 */;
+import CollectiblesShopHomeStore from "CollectiblesShopHomeStore" /* 5480 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import size from "module_2" /* 2 */;
 

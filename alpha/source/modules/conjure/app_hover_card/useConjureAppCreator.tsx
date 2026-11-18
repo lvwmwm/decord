@@ -1,11 +1,11 @@
-// Module ID: 15195
-// Function ID: 15196
+// Module ID: 13823
+// Function ID: 13824
 // Name: useConjureAppCreator
-// Dependencies: [5, 32, 19, 1388, 15196, 12652, 504, 15197, 2]
+// Dependencies: [5, 32, 19, 1388, 13824, 11937, 504, 13825, 2]
 // Exports: default
 
-// Module 15195 (useConjureAppCreator)
-import react_native from "react-native" /* 15197 */;
+// Module 13823 (useConjureAppCreator)
+import react_native from "react-native" /* 13825 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

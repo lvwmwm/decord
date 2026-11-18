@@ -1,31 +1,54 @@
 // Module ID: 5080
 // Function ID: 5081
-// Dependencies: []
+// Dependencies: [19, 5063, 5072]
+// Exports: useScrollableSetter
 
 // Module 5080
-let obj3;
-let obj4;
-let obj5;
-let obj6;
-let obj7;
-if (Intl.ListFormat) {
-  const _Intl = Intl;
-  if (typeof Intl.ListFormat.__addLocaleData === "function") {
-    const _Intl2 = Intl;
-    const obj2 = { data: obj3, locale: "ro" };
-    obj3 = { conjunction: obj4, disjunction: obj5, unit: obj6 };
-    obj4 = { long: { end: "{0} \u0219i {1}", middle: "{0}, {1}", pair: "{0} \u0219i {1}", start: "{0}, {1}" }, narrow: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, short: { end: "{0} \u0219i {1}", middle: "{0}, {1}", pair: "{0} \u0219i {1}", start: "{0}, {1}" } };
-    obj5 = { long: { end: "{0} sau {1}", middle: "{0}, {1}", pair: "{0} sau {1}", start: "{0}, {1}" }, narrow: { end: "{0} sau {1}", middle: "{0}, {1}", pair: "{0} sau {1}", start: "{0}, {1}" }, short: { end: "{0} sau {1}", middle: "{0}, {1}", pair: "{0} sau {1}", start: "{0}, {1}" } };
-    obj6 = { long: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0} \u0219i {1}", start: "{0}, {1}" }, narrow: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, short: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" } };
-    ListFormat.__addLocaleData(obj2);
+import _mod5072 from "module_5072" /* 5072 */;
+import react from "react" /* 19 */;
+
+const require = globalThis.__r;
+let _require, dependencyMap;
+
+let c2;
+let c3;
+({ useCallback: c2, useEffect: c3 } = react);
+
+export const useScrollableSetter = (arg0, value, arg2, value3) => {
+  let ref;
+  _require = arg0;
+  dependencyMap = value;
+  const value2 = arg2;
+  let tmp = arg4;
+  if (arg4 === undefined) {
+    tmp = value3;
   }
-}
-let prop = globalThis.__FORMATJS_LISTFORMAT_DATA__;
-const _globalThis = globalThis;
-if (!prop) {
-  prop = [];
-}
-_globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
-const obj = { data: obj7, locale: "ro" };
-obj7 = { conjunction: { long: { end: "{0} \u0219i {1}", middle: "{0}, {1}", pair: "{0} \u0219i {1}", start: "{0}, {1}" }, narrow: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, short: { end: "{0} \u0219i {1}", middle: "{0}, {1}", pair: "{0} \u0219i {1}", start: "{0}, {1}" } }, disjunction: { long: { end: "{0} sau {1}", middle: "{0}, {1}", pair: "{0} sau {1}", start: "{0}, {1}" }, narrow: { end: "{0} sau {1}", middle: "{0}, {1}", pair: "{0} sau {1}", start: "{0}, {1}" }, short: { end: "{0} sau {1}", middle: "{0}, {1}", pair: "{0} sau {1}", start: "{0}, {1}" } }, unit: { long: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0} \u0219i {1}", start: "{0}, {1}" }, narrow: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, short: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" } } };
-prop.push(obj);
+  let obj = require("react");
+  const bottomSheetInternal = obj.useBottomSheetInternal();
+  const animatedScrollableType = bottomSheetInternal.animatedScrollableType;
+  const animatedScrollableContentOffsetY = bottomSheetInternal.animatedScrollableContentOffsetY;
+  const isContentHeightFixed = bottomSheetInternal.isContentHeightFixed;
+  const isScrollableRefreshable = bottomSheetInternal.isScrollableRefreshable;
+  const setScrollableRef = bottomSheetInternal.setScrollableRef;
+  const removeScrollableRef = bottomSheetInternal.removeScrollableRef;
+  const items = [arg0, value, value3, animatedScrollableType, animatedScrollableContentOffsetY, arg2, isScrollableRefreshable, isContentHeightFixed, setScrollableRef, removeScrollableRef];
+  tmp(value2(() => {
+    animatedScrollableContentOffsetY.value = value2.value;
+    animatedScrollableType.value = value;
+    isScrollableRefreshable.value = value3;
+    isContentHeightFixed.value = false;
+    const obj = _mod5072;
+    const findNodeHandleResult = obj.findNodeHandle(ref.current);
+    const tmp = ref;
+    if (findNodeHandleResult) {
+      const obj2 = { id: findNodeHandleResult, node: tmp };
+      setScrollableRef(obj2);
+    } else {
+      const _console = console;
+      console.warn("Couldn't find the scrollable node handle id!");
+    }
+    return () => {
+      removeScrollableRef(ref);
+    };
+  }, items));
+};

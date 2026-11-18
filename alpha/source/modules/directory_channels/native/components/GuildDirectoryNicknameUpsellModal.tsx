@@ -1,28 +1,28 @@
-// Module ID: 14196
-// Function ID: 14197
+// Module ID: 13500
+// Function ID: 13501
 // Name: GuildDirectoryNicknameUpsellModal
-// Dependencies: [5, 32, 19, 17, 5181, 14186, 21, 5310, 5886, 575, 504, 5907, 7894, 6755, 7730, 5923, 1113, 7627, 1187, 5930, 14187, 14195, 7503, 7500, 5911, 2]
+// Dependencies: [5, 32, 19, 17, 4694, 13490, 21, 4823, 5377, 575, 504, 5398, 7397, 6257, 7233, 5414, 1113, 7130, 1187, 5421, 13491, 13499, 7006, 7003, 5402, 2]
 // Exports: default
 
-// Module 14196 (GuildDirectoryNicknameUpsellModal)
+// Module 13500 (GuildDirectoryNicknameUpsellModal)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import NavigatorConstants from "NavigatorConstants" /* 5886 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5907 */;
-import reactDefault from "react" /* 5911 */;
-import Text_Text from "Text/Text" /* 5923 */;
-import NavigatorHeader from "NavigatorHeader" /* 7503 */;
-import GuildIcon from "GuildIcon" /* 7730 */;
-import Constants from "Constants" /* 14186 */;
+import NavigatorConstants from "NavigatorConstants" /* 5377 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5398 */;
+import reactDefault from "react" /* 5402 */;
+import Text_Text from "Text/Text" /* 5414 */;
+import NavigatorHeader from "NavigatorHeader" /* 7006 */;
+import GuildIcon from "GuildIcon" /* 7233 */;
+import Constants from "Constants" /* 13490 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 5181 */;
+import GuildStore from "GuildStore" /* 4694 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -38,7 +38,7 @@ let obj4;
 let obj5;
 let tmp5;
 let unpackModuleId;
-const FreeFormInputGroupDefault = tmp5(7627);
+const FreeFormInputGroupDefault = tmp5(7130);
 function GuildDirectoryNicknameUpsell(arg0) {
   let Button;
   let _undefined;
@@ -169,7 +169,7 @@ function GuildDirectoryNicknameUpsell(arg0) {
   }
   items3 = [tmp13(Text, obj7), ];
   const obj8 = { style: tmp.description, variant: "body-sm/medium", color: "text-default", children: intl2.string(intl6.t.b3L8yx) };
-  const Text2 = tmp2(5923).Text;
+  const Text2 = tmp2(5414).Text;
   intl2 = tmp2(1113).intl;
   items3[1] = closure_10(Text2, obj8);
   items2[1] = closure_11(closure_6, obj6);
@@ -218,7 +218,7 @@ function GuildDirectoryNicknameUpsell(arg0) {
       return obj(...arguments);
     }
   };
-  Button = tmp2(5930).Button;
+  Button = tmp2(5421).Button;
   intl5 = tmp2(1113).intl;
   items2[4] = closure_10(closure_6, obj12);
   return closure_11(tmp12, obj3);

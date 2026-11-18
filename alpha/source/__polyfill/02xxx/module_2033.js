@@ -187,6 +187,6 @@ defineProperty = defineProperty_mod;
 const obj5 = { value: _mod2036.default.parse };
 defineProperty.defineProperty(MessageFormat, "__parse", obj5);
 defineProperty = defineProperty_mod;
-defineProperty.defineProperty(MessageFormat, "defaultLocale", { enumerable: true, writable: true, value: "ip" });
+defineProperty.defineProperty(MessageFormat, "defaultLocale", { enumerable: true, writable: true, value: "__closure" });
 
 export default MessageFormat;

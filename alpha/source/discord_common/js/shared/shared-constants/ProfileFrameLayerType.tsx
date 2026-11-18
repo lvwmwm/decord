@@ -1,9 +1,9 @@
-// Module ID: 8579
-// Function ID: 8580
+// Module ID: 8070
+// Function ID: 8071
 // Name: ProfileFrameLayerType
 // Dependencies: [2]
 
-// Module 8579 (ProfileFrameLayerType)
+// Module 8070 (ProfileFrameLayerType)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/ProfileFrameLayerType.tsx");

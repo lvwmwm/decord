@@ -1,14 +1,14 @@
-// Module ID: 12396
-// Function ID: 12397
+// Module ID: 11678
+// Function ID: 11679
 // Name: ThemeDarkIcon
-// Dependencies: [19, 21, 575, 6013, 12397, 2]
+// Dependencies: [19, 21, 575, 5509, 11679, 2]
 // Exports: ThemeDarkIcon
 
-// Module 12396 (ThemeDarkIcon)
+// Module 11678 (ThemeDarkIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6013 */;
-import AssetRegistry from "AssetRegistry" /* 12397 */;
+import BaseIconImage2 from "BaseIconImage" /* 5509 */;
+import AssetRegistry from "AssetRegistry" /* 11679 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

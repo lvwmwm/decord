@@ -1,11 +1,11 @@
-// Module ID: 7953
-// Function ID: 7954
+// Module ID: 7456
+// Function ID: 7457
 // Name: ClipboardUtils
-// Dependencies: [5, 7954, 2]
+// Dependencies: [5, 7457, 2]
 // Exports: copy, getString
 
-// Module 7953 (ClipboardUtils)
-import _modDef7954 from "module_7954" /* 7954 */;
+// Module 7456 (ClipboardUtils)
+import _modDef7457 from "module_7457" /* 7457 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -39,7 +39,7 @@ let obj = function _copy() {
             const obj4 = { value, done: true };
             return obj4;
           } else {
-            const obj2 = _modDef7954;
+            const obj2 = _modDef7457;
             obj2.setString(closure_0);
             const tmp5 = closure_1;
             if (closure_1 != null) {
@@ -76,6 +76,6 @@ export function copy() {
   return obj(...arguments);
 }
 export function getString() {
-  obj = _modDef7954;
+  obj = _modDef7457;
   return obj.getString();
 }

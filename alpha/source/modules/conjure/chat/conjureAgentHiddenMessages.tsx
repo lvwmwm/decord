@@ -1,10 +1,10 @@
-// Module ID: 7336
-// Function ID: 7337
+// Module ID: 6841
+// Function ID: 6842
 // Name: conjureAgentHiddenMessages
 // Dependencies: [2]
 // Exports: isConjureAgentHiddenMessage
 
-// Module 7336 (conjureAgentHiddenMessages)
+// Module 6841 (conjureAgentHiddenMessages)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/chat/conjureAgentHiddenMessages.tsx");

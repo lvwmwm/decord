@@ -1,13 +1,13 @@
-// Module ID: 7263
-// Function ID: 7264
+// Module ID: 6767
+// Function ID: 6768
 // Name: utils/PriceUtils
-// Dependencies: [32, 109, 1083, 7264, 5993, 2]
+// Dependencies: [32, 109, 1083, 6768, 5489, 2]
 // Exports: convertToMinorCurrencyUnits, currencyCodeFromBCP47Locale, floorToWholeCurrencyUnits, formatPrice
 
-// Module 7263 (utils/PriceUtils)
+// Module 6767 (utils/PriceUtils)
 import Constants from "Constants" /* 1083 */;
-import CountryCodes from "CountryCodes" /* 5993 */;
-import _modDef7264 from "module_7264" /* 7264 */;
+import CountryCodes from "CountryCodes" /* 5489 */;
+import _modDef6768 from "module_6768" /* 6768 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import size from "module_2" /* 2 */;
@@ -28,7 +28,7 @@ function convertToMajorCurrencyUnits(diff1, USD) {
   } else {
     const self = this;
     const self2 = this;
-    obj = new _modDef7264(diff1);
+    obj = new _modDef6768(diff1);
     const dividedByResult = obj.dividedBy(10 ** obj[USD]);
     return dividedByResult.toNumber();
   }
@@ -84,7 +84,7 @@ export const formatPrice = function(arg0, currency, arg2) {
         } else {
           const self = this;
           const self2 = this;
-          const obj5 = new _modDef7264(arg0);
+          const obj5 = new _modDef6768(arg0);
           const dividedByResult = obj5.dividedBy(10 ** obj[currency]);
           toNumberResult = dividedByResult.toNumber();
         }
@@ -109,7 +109,7 @@ export const convertToMinorCurrencyUnits = function(arg0, arg1) {
   } else {
     const self = this;
     const self2 = this;
-    obj = new _modDef7264(arg0);
+    obj = new _modDef6768(arg0);
     const timesResult = obj.times(10 ** obj[arg1]);
     return timesResult.toNumber();
   }

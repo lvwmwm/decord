@@ -1,25 +1,25 @@
-// Module ID: 20783
-// Function ID: 20784
+// Module ID: 20056
+// Function ID: 20057
 // Name: GuildRoleSubscriptionTierArchiveOrDeleteActionSheet
-// Dependencies: [19, 17, 21, 5310, 575, 1630, 38, 20784, 5560, 5564, 5923, 1187, 5930, 5546, 1113, 2]
+// Dependencies: [19, 17, 21, 4823, 575, 1630, 38, 20057, 5051, 5055, 5414, 1187, 5421, 5037, 1113, 2]
 // Exports: default
 
-// Module 20783 (GuildRoleSubscriptionTierArchiveOrDeleteActionSheet)
+// Module 20056 (GuildRoleSubscriptionTierArchiveOrDeleteActionSheet)
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5560 */;
-import BottomSheetModal from "BottomSheetModal" /* 5564 */;
-import Text_Text from "Text/Text" /* 5923 */;
-import components_Button_Button from "components/Button/Button" /* 5930 */;
-import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 20784 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5051 */;
+import BottomSheetModal from "BottomSheetModal" /* 5055 */;
+import Text_Text from "Text/Text" /* 5414 */;
+import components_Button_Button from "components/Button/Button" /* 5421 */;
+import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 20057 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -82,7 +82,7 @@ export default function GuildRoleSubscriptionTierArchiveOrDeleteActionSheet(grou
     children: hasOwnProperty(Text, obj6)
   };
   obj6 = { variant: "body-sm/semibold", color: "interactive-text-active", children: intl.string(intl2.t["ETE/oC"]) };
-  Text = tmp6(5923).Text;
+  Text = tmp6(5414).Text;
   intl = tmp6(1113).intl;
   items[6] = hasOwnProperty(_false, obj5);
   return hasOwnProperty(BottomSheet, obj4);

@@ -1,12 +1,12 @@
-// Module ID: 20008
-// Function ID: 20009
+// Module ID: 19279
+// Function ID: 19280
 // Name: EventBannerStore
-// Dependencies: [5165, 504, 572, 2]
+// Dependencies: [4678, 504, 572, 2]
 
-// Module 20008 (EventBannerStore)
+// Module 19279 (EventBannerStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 5165 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4678 */;
 import size from "module_2" /* 2 */;
 
 const GuildScheduledEventStatus = GuildScheduledEventsConstants.GuildScheduledEventStatus;

@@ -1,9 +1,9 @@
-// Module ID: 6066
-// Function ID: 6067
+// Module ID: 5562
+// Function ID: 5563
 // Name: ActivityTypes
 // Dependencies: [2]
 
-// Module 6066 (ActivityTypes)
+// Module 5562 (ActivityTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/ActivityTypes.tsx");

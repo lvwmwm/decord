@@ -1,8 +1,8 @@
-// Module ID: 13223
-// Function ID: 13224
+// Module ID: 12526
+// Function ID: 12527
 // Dependencies: [2]
 
-// Module 13223
+// Module 12526
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_headwear_07_backwardHat.webp.js");

@@ -1,22 +1,22 @@
-// Module ID: 5538
-// Function ID: 5539
+// Module ID: 5029
+// Function ID: 5030
 // Name: MobileThemesUtils
-// Dependencies: [1192, 5334, 5539, 1238, 1240, 5335, 1241, 5338, 5340, 1113, 2935, 5540, 504, 2]
+// Dependencies: [1192, 4847, 5030, 1238, 1240, 4848, 1241, 4851, 4853, 1113, 2955, 5031, 504, 2]
 // Exports: getAllMobileThemes, getCustomBackgroundGradient, isHexagonCampaignMobileTheme, isNitroGatedMobileTheme, useAllMobileThemes, useCustomBackgroundGradient, usePerModeCustomBackgroundGradient, useSavedCustomTheme
 
-// Module 5538 (MobileThemesUtils)
+// Module 5029 (MobileThemesUtils)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
 import ClientThemesTypes from "ClientThemesTypes" /* 1241 */;
-import _modDef2935 from "module_2935" /* 2935 */;
-import HexagonCampaignPerkAvailability from "HexagonCampaignPerkAvailability" /* 5340 */;
-import useCustomThemeDisplaySettings from "useCustomThemeDisplaySettings" /* 5540 */;
+import _modDef2955 from "module_2955" /* 2955 */;
+import HexagonCampaignPerkAvailability from "HexagonCampaignPerkAvailability" /* 4853 */;
+import useCustomThemeDisplaySettings from "useCustomThemeDisplaySettings" /* 5031 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5334 */;
-import SavedCustomThemeStore from "SavedCustomThemeStore" /* 5539 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4847 */;
+import SavedCustomThemeStore from "SavedCustomThemeStore" /* 5030 */;
 import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1238 */;
 import ClientThemesConstants from "ClientThemesConstants" /* 1240 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5335 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4848 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -28,8 +28,8 @@ let metroImportAll;
 let metroImportDefault;
 let tmp;
 let unpackModuleId;
-const HexagonCampaignUtils = tmp(5338);
-const f91136 = () => {
+const HexagonCampaignUtils = tmp(4851);
+const f88277 = () => {
   if (null == closure_0) {
     return null;
   } else {
@@ -50,10 +50,10 @@ const f91136 = () => {
     return tmp3;
   }
 };
-const f91137 = () => savedCustomTheme.getSavedCustomTheme();
+const f88278 = () => savedCustomTheme.getSavedCustomTheme();
 function getCustomThemesName() {
   const intl = intl2.intl;
-  return intl.string(_modDef2935.yl1iMm);
+  return intl.string(_modDef2955.yl1iMm);
 }
 ({ BACKGROUND_GRADIENT_PRESETS_MOBILE: metroImportDefault, HEXAGON_GRADIENT_PRESET: metroImportAll, REFRESH_STANDARD_BACKGROUND_THEMES: c9 } = ClientThemesConstants);
 ({ HexagonCampaignPerk: c10, HexagonCampaignPerkAvailability: unpackModuleId } = HexagonCampaignConstants);
@@ -111,7 +111,7 @@ export function usePerModeCustomBackgroundGradient(arg0) {
   _require = arg0;
   const items = [ThemeStore];
   const obj = require("get initialized");
-  return obj.useStateFromStores(items, f91136);
+  return obj.useStateFromStores(items, f88277);
 }
 export function getAllMobileThemes() {
   let id;
@@ -168,7 +168,7 @@ export function useAllMobileThemes(mode) {
   let tmp3 = dependencyMap;
   let obj = require("get initialized");
   const items = [SavedCustomThemeStore];
-  const stateFromStores = obj.useStateFromStores(items, f91137);
+  const stateFromStores = obj.useStateFromStores(items, f88278);
   let tmp5 = null;
   if (null != stateFromStores) {
     tmp5 = stateFromStores;
@@ -186,7 +186,7 @@ export function useAllMobileThemes(mode) {
   const tmp2Result6 = require("get initialized");
   const tmp9 = ThemeStore;
   if (null != mode) {
-    stateFromStores1 = tmp2Result6.useStateFromStores(items1, f91136);
+    stateFromStores1 = tmp2Result6.useStateFromStores(items1, f88277);
   }
   const tmp2Result7 = require("HexagonCampaignPerkAvailability");
   const hexagonCampaignPerkAvailability = tmp2Result7.useHexagonCampaignPerkAvailability(constants.CLIENT_THEME, MobileThemesUtils);
@@ -224,7 +224,7 @@ export function useAllMobileThemes(mode) {
 export function useSavedCustomTheme() {
   const items = [SavedCustomThemeStore];
   const obj = get_initialized;
-  const stateFromStores = obj.useStateFromStores(items, f91137);
+  const stateFromStores = obj.useStateFromStores(items, f88278);
   let tmp2 = null;
   if (null != stateFromStores) {
     tmp2 = stateFromStores;

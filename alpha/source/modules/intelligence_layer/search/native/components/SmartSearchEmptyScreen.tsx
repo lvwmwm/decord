@@ -1,20 +1,20 @@
-// Module ID: 19505
-// Function ID: 19506
+// Module ID: 18781
+// Function ID: 18782
 // Name: SmartSearchEmptyScreen
-// Dependencies: [19, 17, 21, 5310, 575, 5907, 5319, 1113, 19506, 5923, 4356, 2]
+// Dependencies: [19, 17, 21, 4823, 575, 5398, 4832, 1113, 18782, 5414, 4344, 2]
 
-// Module 19505 (SmartSearchEmptyScreen)
+// Module 18781 (SmartSearchEmptyScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import _modDef4356 from "module_4356" /* 4356 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5319 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5907 */;
-import Text_Text from "Text/Text" /* 5923 */;
-import SuggestedSearchListDefault from "SuggestedSearchList" /* 19506 */;
+import _modDef4344 from "module_4344" /* 4344 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4832 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5398 */;
+import Text_Text from "Text/Text" /* 5414 */;
+import SuggestedSearchListDefault from "SuggestedSearchList" /* 18782 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -48,11 +48,11 @@ const memoResult = react.memo(function SmartSearchEmptyScreen(smartSearchQuery) 
   items = [tmp.container, { paddingBottom: insets.bottom }];
   items1 = [hasOwnProperty(SuggestedSearchListDefault, { smartSearchQuery, source: "error_screen" }), ];
   const obj2 = { style: tmp.copy, children: items2 };
-  const obj3 = { variant: "body-sm/semibold", color: "text-muted", accessibilityRole: "header", children: intl.string(_modDef4356["HX/WYf"]) };
+  const obj3 = { variant: "body-sm/semibold", color: "text-muted", accessibilityRole: "header", children: intl.string(_modDef4344["HX/WYf"]) };
   const Text = Text_Text.Text;
   intl = intl3.intl;
   items2 = [hasOwnProperty(Text, obj3), ];
-  const obj4 = { variant: "body-sm/semibold", color: "text-muted", accessibilityRole: "header", children: intl2.string(_modDef4356["0ySxbu"]) };
+  const obj4 = { variant: "body-sm/semibold", color: "text-muted", accessibilityRole: "header", children: intl2.string(_modDef4344["0ySxbu"]) };
   const Text2 = Text_Text.Text;
   intl2 = intl3.intl;
   items2[1] = hasOwnProperty(Text2, obj4);

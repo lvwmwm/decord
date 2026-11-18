@@ -1,24 +1,24 @@
-// Module ID: 18844
-// Function ID: 18845
+// Module ID: 17657
+// Function ID: 17658
 // Name: HappeningNowCardActivitySubtitle
-// Dependencies: [19, 17, 5159, 21, 5310, 504, 5948, 17959, 8429, 6066, 1113, 8636, 14145, 2]
+// Dependencies: [19, 17, 4672, 21, 4823, 504, 5439, 16762, 7920, 5562, 1113, 8127, 13449, 2]
 // Exports: HappeningNowActivityCardSubtitle, HappeningNowVoiceCardSubtitle
 
-// Module 18844 (HappeningNowCardActivitySubtitle)
+// Module 17657 (HappeningNowCardActivitySubtitle)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import useChannelNameDefault from "useChannelName" /* 5948 */;
-import ActivityTypes from "ActivityTypes" /* 6066 */;
-import isStreamingDefault from "isStreaming" /* 8636 */;
-import HappeningNowCard from "HappeningNowCard" /* 17959 */;
+import useChannelNameDefault from "useChannelName" /* 5439 */;
+import ActivityTypes from "ActivityTypes" /* 5562 */;
+import isStreamingDefault from "isStreaming" /* 8127 */;
+import HappeningNowCard from "HappeningNowCard" /* 16762 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5159 */;
-import createStyles from "createStyles" /* 5310 */;
+import ChannelStore from "ChannelStore" /* 4672 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let tmp4;
-const getChannelA11yLabelDefault = tmp4(8429);
+const getChannelA11yLabelDefault = tmp4(7920);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ cardDetails: { marginTop: 2, flexDirection: "row", alignItems: "center" } });
@@ -31,7 +31,7 @@ export function HappeningNowVoiceCardSubtitle(voiceState) {
   const obj = voiceState(504);
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(voiceState.channelId));
   useChannelNameDefault(stateFromStores);
-  const HappeningNowCardSubtitle = voiceState(17959).HappeningNowCardSubtitle;
+  const HappeningNowCardSubtitle = voiceState(16762).HappeningNowCardSubtitle;
   if (null != stateFromStores) {
     const obj3 = { channel: stateFromStores };
     getChannelA11yLabelDefault(obj3);
@@ -82,7 +82,7 @@ export function HappeningNowActivityCardSubtitle(activity) {
         }
         name2 = activity.name;
       } else {
-        if (tmp5(14145)(activity)) {
+        if (tmp5(13449)(activity)) {
           if (null != activity.details) {
             if (null != activity.state) {
               const _HermesInternal = HermesInternal;

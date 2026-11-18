@@ -1,9 +1,9 @@
-// Module ID: 9477
-// Function ID: 9478
+// Module ID: 8891
+// Function ID: 8892
 // Name: BaseWishlistItemRecord
 // Dependencies: [1408, 2167, 2]
 
-// Module 9477 (BaseWishlistItemRecord)
+// Module 8891 (BaseWishlistItemRecord)
 import Record from "Record" /* 1408 */;
 import SKURecord from "SKURecord" /* 2167 */;
 import size from "module_2" /* 2 */;

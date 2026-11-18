@@ -1,16 +1,16 @@
-// Module ID: 14312
-// Function ID: 14313
+// Module ID: 13616
+// Function ID: 13617
 // Name: HubEmailConnectionWaitlist
-// Dependencies: [19, 17, 1072, 21, 5310, 575, 1502, 7437, 1113, 6014, 14313, 1187, 5923, 5930, 2]
+// Dependencies: [19, 17, 1072, 21, 4823, 575, 1502, 6940, 1113, 5510, 13617, 1187, 5414, 5421, 2]
 // Exports: default
 
-// Module 14312 (HubEmailConnectionWaitlist)
+// Module 13616 (HubEmailConnectionWaitlist)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -53,20 +53,20 @@ export default function HubEmailConnectionWaitlist(onClose) {
     navigation.setOptions(obj);
   }, items);
   const obj2 = { style: tmp.container, children: items1 };
-  const obj3 = { source: navigation(14313), style: tmp.header };
-  const tmp4 = navigation(6014);
+  const obj3 = { source: navigation(13617), style: tmp.header };
+  const tmp4 = navigation(5510);
   items1 = [closure_5(tmp4, obj3), , , ];
   const obj4 = { style: tmp.title, accessibilityRole: "header", children: intl.string(onClose(1113).t.OaloU5) };
   const LegacyText = onClose(1187).LegacyText;
   intl = onClose(1113).intl;
   items1[1] = closure_5(LegacyText, obj4);
   const obj5 = { style: tmp.description, variant: "body-sm/medium", color: "text-default", children: intl2.format(onClose(1113).t.Rs7MXJ, { school }) };
-  const Text = onClose(5923).Text;
+  const Text = onClose(5414).Text;
   intl2 = onClose(1113).intl;
   items1[2] = closure_5(Text, obj5);
   const obj6 = { style: tmp.redesignButton, children: closure_5(Button, obj7) };
   obj7 = { size: "lg", text: intl3.string(onClose(1113).t.i4jeWR), onPress: onClose };
-  Button = onClose(5930).Button;
+  Button = onClose(5421).Button;
   intl3 = onClose(1113).intl;
   items1[3] = closure_5(View, obj6);
   return closure_6(View, obj2);

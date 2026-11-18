@@ -1,17 +1,17 @@
-// Module ID: 10867
-// Function ID: 10868
+// Module ID: 10154
+// Function ID: 10155
 // Name: AcceptRequestConfirmationModal
-// Dependencies: [19, 17, 21, 5310, 575, 6338, 1113, 6266, 5923, 2]
+// Dependencies: [19, 17, 21, 4823, 575, 5840, 1113, 5768, 5414, 2]
 // Exports: default
 
-// Module 10867 (AcceptRequestConfirmationModal)
+// Module 10154 (AcceptRequestConfirmationModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6266 */;
-import AlertDefault from "Alert" /* 6338 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5768 */;
+import AlertDefault from "Alert" /* 5840 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -50,11 +50,11 @@ export default function AcceptRequestConfirmationModal(onConfirm) {
   intl2 = onConfirm(1113).intl;
   obj2 = { style: tmp.bodyText, children: items };
   const obj3 = { variant: "heading-lg/semibold", color: "text-strong", style: tmp.text, children: intl3.string(onConfirm(1113).t.eJzSDT) };
-  const Text = onConfirm(5923).Text;
+  const Text = onConfirm(5414).Text;
   intl3 = onConfirm(1113).intl;
   items = [closure_4(Text, obj3), ];
   const obj4 = { variant: "body-md/medium", color: "text-subtle", style: tmp.text, children: intl4.string(onConfirm(1113).t.GB4jUw) };
-  const Text2 = onConfirm(5923).Text;
+  const Text2 = onConfirm(5414).Text;
   intl4 = onConfirm(1113).intl;
   items[1] = closure_4(Text2, obj4);
   return closure_4(tmp2, obj);

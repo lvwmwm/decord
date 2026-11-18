@@ -1,12 +1,12 @@
-// Module ID: 7401
-// Function ID: 7402
+// Module ID: 6904
+// Function ID: 6905
 // Name: conjureManagedCopyConnection
-// Dependencies: [572, 7345, 2]
+// Dependencies: [572, 6850, 2]
 // Exports: setConjureDownstreamUpdates
 
-// Module 7401 (conjureManagedCopyConnection)
+// Module 6904 (conjureManagedCopyConnection)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 7345 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 6850 */;
 import size from "module_2" /* 2 */;
 
 let obj = {

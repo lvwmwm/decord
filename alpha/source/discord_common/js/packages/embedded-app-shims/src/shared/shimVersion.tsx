@@ -1,9 +1,9 @@
-// Module ID: 11496
-// Function ID: 11497
+// Module ID: 10778
+// Function ID: 10779
 // Name: shimVersion
 // Dependencies: [2]
 
-// Module 11496 (shimVersion)
+// Module 10778 (shimVersion)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/embedded-app-shims/src/shared/shimVersion.tsx");

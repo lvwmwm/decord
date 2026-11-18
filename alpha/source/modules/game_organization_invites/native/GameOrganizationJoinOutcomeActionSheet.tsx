@@ -1,16 +1,16 @@
-// Module ID: 12918
-// Function ID: 12919
+// Module ID: 12206
+// Function ID: 12207
 // Name: GameOrganizationJoinOutcomeActionSheet
-// Dependencies: [19, 12573, 21, 5546, 12907, 11903, 7923, 5930, 2]
+// Dependencies: [19, 11856, 21, 5037, 12202, 11185, 7426, 5421, 2]
 // Exports: default
 
-// Module 12918 (GameOrganizationJoinOutcomeActionSheet)
+// Module 12206 (GameOrganizationJoinOutcomeActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
-import components_Button_Button from "components/Button/Button" /* 5930 */;
-import PromoSheet2 from "PromoSheet" /* 11903 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 12573 */;
-import useGameOrganizationJoinOutcome from "useGameOrganizationJoinOutcome" /* 12907 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
+import components_Button_Button from "components/Button/Button" /* 5421 */;
+import PromoSheet2 from "PromoSheet" /* 11185 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11856 */;
+import useGameOrganizationJoinOutcome from "useGameOrganizationJoinOutcome" /* 12202 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

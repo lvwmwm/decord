@@ -1,14 +1,14 @@
-// Module ID: 20871
-// Function ID: 20872
+// Module ID: 20144
+// Function ID: 20145
 // Name: GlobalDiscoveryServersFeaturedSearchManager
-// Dependencies: [5, 16247, 8417, 1072, 7892, 20872, 572, 1285, 1490, 20873, 7238, 2]
+// Dependencies: [5, 14914, 7907, 1072, 7395, 20145, 572, 1285, 1490, 20146, 6742, 2]
 
-// Module 20871 (GlobalDiscoveryServersFeaturedSearchManager)
+// Module 20144 (GlobalDiscoveryServersFeaturedSearchManager)
 import Constants from "Constants" /* 1072 */;
-import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 8417 */;
-import GlobalDiscoveryServersSearchResultsStoreDefault from "GlobalDiscoveryServersSearchResultsStore" /* 16247 */;
+import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 7907 */;
+import GlobalDiscoveryServersSearchResultsStoreDefault from "GlobalDiscoveryServersSearchResultsStore" /* 14914 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7892 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
 import size from "module_2" /* 2 */;
 
 let categoryId, closure_1, closure_4, constants;

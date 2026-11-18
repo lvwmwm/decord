@@ -1,17 +1,17 @@
-// Module ID: 7031
-// Function ID: 7032
+// Module ID: 6535
+// Function ID: 6536
 // Name: CallStore
-// Dependencies: [5159, 5213, 5343, 1072, 572, 1285, 12, 504, 2]
+// Dependencies: [4672, 4726, 4856, 1072, 572, 1285, 12, 504, 2]
 
-// Module 7031 (CallStore)
+// Module 6535 (CallStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
-import ChannelStore from "ChannelStore" /* 5159 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5213 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5343 */;
+import ChannelStore from "ChannelStore" /* 4672 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4726 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4856 */;
 import size from "module_2" /* 2 */;
 
 function callConnect() {

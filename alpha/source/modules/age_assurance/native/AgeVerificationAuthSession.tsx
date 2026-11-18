@@ -1,13 +1,13 @@
-// Module ID: 8237
-// Function ID: 8238
+// Module ID: 7740
+// Function ID: 7741
 // Name: AgeVerificationAuthSession
-// Dependencies: [5, 3, 560, 6040, 1380, 2]
+// Dependencies: [5, 3, 560, 5536, 1380, 2]
 // Exports: closeAgeVerificationAuthSession, getIsAgeVerificationAuthSessionAwaitingResult, getIsAgeVerificationAuthSessionOpen, openAgeVerificationAuthSession, useIsAgeVerificationAuthSessionOpen
 
-// Module 8237 (AgeVerificationAuthSession)
+// Module 7740 (AgeVerificationAuthSession)
 import LoggerDefault from "Logger" /* 3 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import react_nativeDefault from "react-native" /* 6040 */;
+import react_nativeDefault from "react-native" /* 5536 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;

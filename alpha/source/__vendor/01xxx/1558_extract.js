@@ -13,7 +13,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 
 let closure_1;
 
-const f85086 = (arg0, arg1) => {
+const f82663 = (arg0, arg1) => {
   const NumberResult = Number(arg0);
   return NumberResult - Number(arg1);
 };
@@ -38,7 +38,7 @@ function keysSorter(arr) {
     if (typeof arr === "object") {
       const _Object = Object;
       const obj = keysSorter(Object.keys(arr));
-      const sorted1 = obj.sort(f85086);
+      const sorted1 = obj.sort(f82663);
       sorted = sorted1.map((item) => obj[item]);
     }
   }
@@ -327,11 +327,11 @@ function parse(str, arg1) {
                       if (typeof keys === "object") {
                         const _Object2 = Object;
                         const obj4 = keysSorter(Object.keys(keys));
-                        const sorted2 = obj4.sort(f85086);
+                        const sorted2 = obj4.sort(f82663);
                         sorted1 = sorted2.map((item) => obj[item]);
                       }
                     }
-                    const sorted3 = sorted1.sort(f85086);
+                    const sorted3 = sorted1.sort(f82663);
                     sorted = sorted3.map((item) => obj[item]);
                   }
                 }
@@ -921,13 +921,13 @@ export const stringifyUrl = (url, arg1) => {
   }
   return "" + tmp4 + combined + str2;
 };
-export const pick = (arg0, arg1, arg2) => {
+export const pick = (fullURL, arg1, arg2) => {
   let fragmentIdentifier;
   let query;
   const obj = { parseFragmentIdentifier: true };
   obj[closure_4] = false;
   const merged = Object.assign(obj, arg2);
-  const parseUrlResult = exports.parseUrl(arg0, merged);
+  const parseUrlResult = exports.parseUrl(fullURL, merged);
   const request = { url: parseUrlResult.url, query: _mod1562(query, arg1), fragmentIdentifier };
   ({ query, fragmentIdentifier } = parseUrlResult);
   const stringifyUrl = exports.stringifyUrl;

@@ -1,24 +1,24 @@
-// Module ID: 18573
-// Function ID: 18574
+// Module ID: 17386
+// Function ID: 17387
 // Name: TwelveDaysNotice
-// Dependencies: [32, 19, 17, 1072, 5156, 21, 5924, 5310, 575, 5143, 9430, 7928, 6336, 1264, 5887, 1092, 1502, 18574, 9572, 7438, 1113, 9533, 5923, 7999, 7559, 2]
+// Dependencies: [32, 19, 17, 1072, 4669, 21, 5415, 4823, 575, 4656, 8843, 7431, 5838, 1264, 5378, 1092, 1502, 17387, 8986, 6941, 1113, 8947, 5414, 7502, 7062, 2]
 // Exports: TwelveDaysHomeNagbar, TwelveDaysIndexNotice
 
-// Module 18573 (TwelveDaysNotice)
+// Module 17386 (TwelveDaysNotice)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
-import dismissible_content from "dismissible_content" /* 5143 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5156 */;
-import LinearGradientDefault from "LinearGradient" /* 5887 */;
-import TextVariants from "TextVariants" /* 5924 */;
-import useTrackImpression from "useTrackImpression" /* 6336 */;
+import dismissible_content from "dismissible_content" /* 4656 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4669 */;
+import LinearGradientDefault from "LinearGradient" /* 5378 */;
+import TextVariants from "TextVariants" /* 5415 */;
+import useTrackImpression from "useTrackImpression" /* 5838 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let navigation;

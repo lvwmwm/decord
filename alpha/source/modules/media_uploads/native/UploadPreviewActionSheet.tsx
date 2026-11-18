@@ -1,25 +1,25 @@
-// Module ID: 12297
-// Function ID: 12298
+// Module ID: 11579
+// Function ID: 11580
 // Name: UploadPreviewActionSheet
-// Dependencies: [32, 19, 17, 8736, 1072, 5561, 21, 5310, 575, 38, 8861, 1496, 1630, 5893, 5546, 8891, 12298, 1256, 6009, 8890, 12325, 12326, 5560, 5564, 6335, 5923, 1380, 9743, 12314, 7756, 7453, 12327, 12329, 1113, 7743, 12334, 11131, 8096, 12336, 5930, 6034, 2]
+// Dependencies: [32, 19, 17, 8227, 1072, 5052, 21, 4823, 575, 38, 8357, 1496, 1630, 5384, 5037, 8387, 11580, 1256, 5505, 8386, 11607, 11608, 5051, 5055, 5837, 5414, 1380, 9158, 11596, 7259, 6956, 11609, 11611, 1113, 7246, 11616, 10413, 7599, 11618, 5421, 5530, 2]
 // Exports: default
 
-// Module 12297 (UploadPreviewActionSheet)
+// Module 11579 (UploadPreviewActionSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5561 */;
-import DraftStore from "DraftStore" /* 8736 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 8890 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 11131 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 12298 */;
-import AddImageDescriptionModalActionCreatorsDefault from "AddImageDescriptionModalActionCreators" /* 12329 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5052 */;
+import DraftStore from "DraftStore" /* 8227 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 8386 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 10413 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 11580 */;
+import AddImageDescriptionModalActionCreatorsDefault from "AddImageDescriptionModalActionCreators" /* 11611 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size_mod from "module_2" /* 2 */;
 
 let cropRect;

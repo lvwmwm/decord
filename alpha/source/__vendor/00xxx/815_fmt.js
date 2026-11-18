@@ -18,7 +18,7 @@ export function debug(message, attributes) {
   }
   const scope = obj.scope;
   const obj2 = _INTERNAL_captureLog;
-  const obj3 = { level: "debug", message, attributes, severityNumber: "alignItems" };
+  const obj3 = { level: "debug", message, attributes, severityNumber: "analyticsLocations" };
   obj2._INTERNAL_captureLog(obj3, scope);
 }
 export function error(message, attributes) {
@@ -48,7 +48,7 @@ export function info(message, attributes) {
   }
   const scope = obj.scope;
   const obj2 = _INTERNAL_captureLog;
-  const obj3 = { level: "info", message, attributes, severityNumber: "alignItems" };
+  const obj3 = { level: "info", message, attributes, severityNumber: "analyticsLocations" };
   obj2._INTERNAL_captureLog(obj3, scope);
 }
 export function trace(message, attributes) {
@@ -58,7 +58,7 @@ export function trace(message, attributes) {
   }
   const scope = obj.scope;
   const obj2 = _INTERNAL_captureLog;
-  const obj3 = { level: "trace", message, attributes, severityNumber: "alignItems" };
+  const obj3 = { level: "trace", message, attributes, severityNumber: "analyticsLocations" };
   obj2._INTERNAL_captureLog(obj3, scope);
 }
 export function warn(message, attributes) {

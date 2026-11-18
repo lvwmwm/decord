@@ -1,8 +1,8 @@
-// Module ID: 13220
-// Function ID: 13221
+// Module ID: 12523
+// Function ID: 12524
 // Dependencies: [2]
 
-// Module 13220
+// Module 12523
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_headwear_04_piercings.webp.js");

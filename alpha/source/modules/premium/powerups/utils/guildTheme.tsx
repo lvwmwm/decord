@@ -1,13 +1,13 @@
-// Module ID: 14014
-// Function ID: 14015
+// Module ID: 13318
+// Function ID: 13319
 // Name: guildTheme
-// Dependencies: [5517, 5518, 504, 5521, 14015, 5523, 2]
+// Dependencies: [8243, 8244, 504, 7912, 13319, 13314, 2]
 // Exports: shouldShowGuildThemeRollback, useShouldShowGuildThemeRollback
 
-// Module 14014 (guildTheme)
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5518 */;
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 14015 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 5517 */;
+// Module 13318 (guildTheme)
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 8244 */;
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 13319 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 8243 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -19,18 +19,18 @@ const result = size.fileFinishedImporting("modules/premium/powerups/utils/guildT
 export function shouldShowGuildThemeRollback(arg0, storeRemovalDate, arg2) {
   return arg0 && null != storeRemovalDate && null != storeRemovalDate.storeRemovalDate && arg2 === PowerupActiveStatusType.POWERUP_ACTIVATED;
 }
-export function useShouldShowGuildThemeRollback(guildId, useGuildPowerupNewPerkMarketingVersion) {
+export function useShouldShowGuildThemeRollback(guildId, useMarketablePowerupPerks) {
   _require = guildId;
   const items = [GuildPowerupsStore];
   const obj = require("get initialized");
   const stateFromStores = obj.useStateFromStores(items, () => GuildPowerupsStore.getStateForGuild(guildId));
   let tmp4;
   if (stateFromStores != null) {
-    tmp4 = stateFromStores.allPowerups[tmp(undefined, 5521).GUILD_POWERUP_GUILD_THEME_SKU_ID];
+    tmp4 = stateFromStores.allPowerups[tmp(undefined, 7912).GUILD_POWERUP_GUILD_THEME_SKU_ID];
   }
   const tmp5 = usePowerupActiveStatusDefault(guildId, tmp4);
   const tmpResult = require("ServerThemeExperiment");
-  let serverThemeRollbackEnabled = tmpResult.useServerThemeRollbackEnabled(guildId, useGuildPowerupNewPerkMarketingVersion);
+  let serverThemeRollbackEnabled = tmpResult.useServerThemeRollbackEnabled(guildId, useMarketablePowerupPerks);
   const type = tmp5.type;
   if (serverThemeRollbackEnabled) {
     serverThemeRollbackEnabled = null != tmp4;

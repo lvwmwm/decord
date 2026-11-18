@@ -1,15 +1,15 @@
-// Module ID: 20573
-// Function ID: 20574
+// Module ID: 19846
+// Function ID: 19847
 // Name: useLoadGuildStickerWithCreator
-// Dependencies: [5, 32, 19, 1388, 7019, 504, 12047, 2]
+// Dependencies: [5, 32, 19, 1388, 6523, 504, 11329, 2]
 // Exports: default
 
-// Module 20573 (useLoadGuildStickerWithCreator)
+// Module 19846 (useLoadGuildStickerWithCreator)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;
-import GuildStickersStore from "GuildStickersStore" /* 7019 */;
+import GuildStickersStore from "GuildStickersStore" /* 6523 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

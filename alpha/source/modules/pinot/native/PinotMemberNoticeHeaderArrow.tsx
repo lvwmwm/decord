@@ -1,22 +1,22 @@
-// Module ID: 12554
-// Function ID: 12555
+// Module ID: 11837
+// Function ID: 11838
 // Name: PinotMemberNoticeHeaderArrow
-// Dependencies: [19, 17, 5159, 21, 5310, 5896, 575, 504, 12555, 12530, 12539, 8274, 12557, 2]
+// Dependencies: [19, 17, 4672, 21, 4823, 5387, 575, 504, 11838, 11813, 11822, 7776, 11840, 2]
 // Exports: PinotMemberNoticeHeaderArrow
 
-// Module 12554 (PinotMemberNoticeHeaderArrow)
+// Module 11837 (PinotMemberNoticeHeaderArrow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5159 */;
+import ChannelStore from "ChannelStore" /* 4672 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportDefault;
 let metroRequire;
 let tmp4;
-const inlineStylesDefault = tmp4(8274);
+const inlineStylesDefault = tmp4(7776);
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles({ anchor: { position: "absolute", top: 0, right: 0, bottom: 0, left: 0, zIndex: 1, overflow: "visible" }, arrow: { position: "absolute", bottom: -1, width: 16, height: 10, overflow: "hidden" } });
@@ -30,22 +30,22 @@ export function PinotMemberNoticeHeaderArrow(channelId) {
   let tmp4Result;
   channelId = channelId.channelId;
   const tmp = closure_8();
-  const obj = channelId(5896);
+  const obj = channelId(5387);
   const token = obj.useToken(nativeDefault.colors.BACKGROUND_BASE_LOWER);
-  const obj2 = channelId(5896);
+  const obj2 = channelId(5387);
   const token1 = obj2.useToken(nativeDefault.colors.BACKGROUND_FEEDBACK_MOD_INFO);
-  const obj3 = channelId(5896);
+  const obj3 = channelId(5387);
   const token2 = obj3.useToken(nativeDefault.colors.BORDER_SUBTLE);
   const ref = react.useRef(null);
   const items = [ChannelStore];
   const items1 = [channelId];
   const obj4 = channelId(504);
   const stateFromStores = obj4.useStateFromStores(items, () => ChannelStore.getChannel(channelId), items1);
-  const obj5 = channelId(12555);
+  const obj5 = channelId(11838);
   const isForumChannelSearchActive = obj5.useIsForumChannelSearchActive(channelId);
-  const obj6 = channelId(12530);
+  const obj6 = channelId(11813);
   const visible = obj6.usePinotMemberNotice(stateFromStores, "mobile_channel_header").visible;
-  const obj7 = channelId(12539);
+  const obj7 = channelId(11822);
   const pinotChannelLabelCenter = obj7.usePinotChannelLabelCenter(channelId, ref);
   const center = pinotChannelLabelCenter.center;
   let tmp15Result2 = null;
@@ -62,15 +62,15 @@ export function PinotMemberNoticeHeaderArrow(channelId) {
           const obj10 = { left: center - 8 };
           items2[1] = obj10;
           size = { width: 16, height: 10, viewBox: "0 0 16 10", fill: "none", accessible: false, children: items3 };
-          const obj11 = { d: channelId(12557).PINOT_MEMBER_NOTICE_CARET_FILL, fill: token };
+          const obj11 = { d: channelId(11840).PINOT_MEMBER_NOTICE_CARET_FILL, fill: token };
           tmp4Result = inlineStylesDefault;
-          const Path = tmp2(8274).Path;
+          const Path = tmp2(7776).Path;
           items3 = [closure_6(Path, obj11), , ];
-          const obj12 = { d: channelId(12557).PINOT_MEMBER_NOTICE_CARET_FILL, fill: token1 };
-          const Path2 = tmp2(8274).Path;
+          const obj12 = { d: channelId(11840).PINOT_MEMBER_NOTICE_CARET_FILL, fill: token1 };
+          const Path2 = tmp2(7776).Path;
           items3[1] = closure_6(Path2, obj12);
-          const obj13 = { d: channelId(12557).PINOT_MEMBER_NOTICE_CARET_BORDER, fill: "none", stroke: token2 };
-          const Path3 = tmp2(8274).Path;
+          const obj13 = { d: channelId(11840).PINOT_MEMBER_NOTICE_CARET_BORDER, fill: "none", stroke: token2 };
+          const Path3 = tmp2(7776).Path;
           items3[2] = closure_6(Path3, obj13);
           tmp15Result = tmp15(tmp16, obj9);
         }

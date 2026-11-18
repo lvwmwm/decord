@@ -1,18 +1,18 @@
-// Module ID: 14798
-// Function ID: 14799
+// Module ID: 18652
+// Function ID: 18653
 // Name: ConjureSecretsSheet
-// Dependencies: [5, 32, 19, 17, 7375, 21, 5310, 575, 7953, 14625, 14799, 1113, 4133, 7961, 7923, 7962, 14455, 5923, 5930, 7629, 2]
+// Dependencies: [5, 32, 19, 17, 6878, 21, 4823, 575, 7456, 18481, 18653, 1113, 4121, 7464, 7426, 7465, 18349, 5414, 5421, 7132, 2]
 // Exports: default
 
-// Module 14798 (ConjureSecretsSheet)
+// Module 18652 (ConjureSecretsSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 7375 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 6878 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, closure_2, dependencyMap;
@@ -241,9 +241,9 @@ export default function ConjureSecretsSheet(projectId) {
     }
   }), items);
   let obj = { ref, startExpanded: true, keyboardShouldPersistTaps: "always", header: c8(BottomSheetTitleHeader, obj2), children: tmp17(tmp18, obj4) };
-  const ActionSheet = projectId(7961).ActionSheet;
-  obj2 = { title: intl.string(request(4133).TuMGZp), trailing: c8(projectId(7962).ActionSheetCloseButton, obj3) };
-  BottomSheetTitleHeader = projectId(7923).BottomSheetTitleHeader;
+  const ActionSheet = projectId(7464).ActionSheet;
+  obj2 = { title: intl.string(request(4121).TuMGZp), trailing: c8(projectId(7465).ActionSheetCloseButton, obj3) };
+  BottomSheetTitleHeader = projectId(7426).BottomSheetTitleHeader;
   intl = projectId(1113).intl;
   obj3 = {
     onPress() {
@@ -264,18 +264,18 @@ export default function ConjureSecretsSheet(projectId) {
     tmp13Result = null;
     if ("" !== request.note) {
       let obj5 = { text: request.note, variant: "body-sm/normal", color: "text-default" };
-      tmp13Result = tmp13(tmp16(14455), obj5);
+      tmp13Result = tmp13(tmp16(18349), obj5);
     }
   }
   items1 = [tmp13Result, , , , , , ];
-  let obj6 = { variant: "body-xs/normal", color: "text-muted", children: intl2.string(tmp16(4133).jgDBJZ) };
-  let Text = tmp14(5923).Text;
+  let obj6 = { variant: "body-xs/normal", color: "text-muted", children: intl2.string(tmp16(4121).jgDBJZ) };
+  let Text = tmp14(5414).Text;
   intl2 = tmp14(1113).intl;
   items1[1] = c8(Text, obj6);
   let tmp13Result3 = null;
   if (request.fields.length > 1) {
-    let obj7 = { variant: "body-xs/normal", color: "text-muted", children: intl3.string(tmp16(4133)["La+pe4"]) };
-    const Text2 = tmp14(5923).Text;
+    let obj7 = { variant: "body-xs/normal", color: "text-muted", children: intl3.string(tmp16(4121)["La+pe4"]) };
+    const Text2 = tmp14(5414).Text;
     intl3 = tmp14(1113).intl;
     tmp13Result3 = tmp13(Text2, obj7);
   }
@@ -376,14 +376,14 @@ export default function ConjureSecretsSheet(projectId) {
   });
   let tmp13Result4 = null;
   if (tmp8) {
-    let obj8 = { variant: "body-xs/normal", color: "text-feedback-critical", children: intl4.string(tmp16(4133).IrMuew) };
-    const Text3 = tmp14(5923).Text;
+    let obj8 = { variant: "body-xs/normal", color: "text-feedback-critical", children: intl4.string(tmp16(4121).IrMuew) };
+    const Text3 = tmp14(5414).Text;
     intl4 = tmp14(1113).intl;
     tmp13Result4 = tmp13(Text3, obj8);
   }
   items1[5] = tmp13Result4;
-  let obj9 = { text: intl5.string(tmp16(4133).DUdtms), variant: "primary", loading: first1, disabled: !tmp10, onPress: callback };
-  let Button = tmp14(5930).Button;
+  let obj9 = { text: intl5.string(tmp16(4121).DUdtms), variant: "primary", loading: first1, disabled: !tmp10, onPress: callback };
+  let Button = tmp14(5421).Button;
   intl5 = tmp14(1113).intl;
   items1[6] = c8(Button, obj9);
   return c8(ActionSheet, obj);

@@ -1,14 +1,14 @@
-// Module ID: 8082
-// Function ID: 8083
+// Module ID: 7585
+// Function ID: 7586
 // Name: ThreadIcon
-// Dependencies: [19, 21, 575, 6013, 8046, 2]
+// Dependencies: [19, 21, 575, 5509, 7549, 2]
 // Exports: ThreadIcon
 
-// Module 8082 (ThreadIcon)
+// Module 7585 (ThreadIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6013 */;
-import AssetRegistry from "AssetRegistry" /* 8046 */;
+import BaseIconImage2 from "BaseIconImage" /* 5509 */;
+import AssetRegistry from "AssetRegistry" /* 7549 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

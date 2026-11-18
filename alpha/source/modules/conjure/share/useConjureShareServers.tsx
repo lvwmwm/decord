@@ -1,16 +1,16 @@
-// Module ID: 14565
-// Function ID: 14566
+// Module ID: 18436
+// Function ID: 18437
 // Name: useConjureShareServers
-// Dependencies: [5, 32, 19, 5181, 7025, 504, 14532, 13025, 7026, 1113, 4133, 14548, 2]
+// Dependencies: [5, 32, 19, 4694, 6529, 504, 18414, 12312, 6530, 1113, 4121, 18423, 2]
 // Exports: default
 
-// Module 14565 (useConjureShareServers)
-import ConjureProjectTypes from "ConjureProjectTypes" /* 7026 */;
+// Module 18436 (useConjureShareServers)
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6530 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5181 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 7025 */;
+import GuildStore from "GuildStore" /* 4694 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6529 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -27,7 +27,7 @@ export default function useConjureShareServers(arg0, arg1, arg2) {
   let callback1;
   let items6;
   let tmp11;
-  const f109922 = () => {
+  const f116183 = () => {
     let tmp = null;
     if (flag) {
       let guild_id;
@@ -105,8 +105,8 @@ export default function useConjureShareServers(arg0, arg1, arg2) {
       return [];
     }
   }, items3);
-  [c3, c4] = _slicedToArray(obj2.useState(f109922), 2);
-  _slicedToArray(obj2.useState(f109922), 2);
+  [c3, c4] = _slicedToArray(obj2.useState(f116183), 2);
+  _slicedToArray(obj2.useState(f116183), 2);
   found = arr3.find((id) => id.id === c3);
   if (found == null) {
     found = null;

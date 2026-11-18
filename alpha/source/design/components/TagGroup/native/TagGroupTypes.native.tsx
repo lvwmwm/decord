@@ -1,12 +1,12 @@
-// Module ID: 14505
-// Function ID: 14506
+// Module ID: 15192
+// Function ID: 15193
 // Name: TagGroupTypes
-// Dependencies: [14506, 575, 2]
+// Dependencies: [15193, 575, 2]
 // Exports: getTagBorderRadius, getTagGap, getTagGraphicDimension, getTagHorizontalPadding, getTagIconSize, getTagMinHeight, getTagTextVariant, getTagVerticalPadding
 
-// Module 14505 (TagGroupTypes)
+// Module 15192 (TagGroupTypes)
 import nativeDefault from "native" /* 575 */;
-import TagGroupShared from "TagGroupShared" /* 14506 */;
+import TagGroupShared from "TagGroupShared" /* 15193 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("design/components/TagGroup/native/TagGroupTypes.native.tsx");

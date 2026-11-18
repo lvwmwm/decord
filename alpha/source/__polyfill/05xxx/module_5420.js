@@ -1,71 +1,15 @@
 // Module ID: 5420
 // Function ID: 5421
-// Dependencies: [32, 19, 5402, 5415, 5410]
-// Exports: useRiveColor
+// Dependencies: [17, 26, 65]
 
 // Module 5420
-import react from "react" /* 19 */;
-import react2 from "react" /* 5402 */;
-import _mod5415 from "module_5415" /* 5415 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import react_native from "react-native" /* 17 */;
+import _mod26 from "module_26" /* 26 */;
+import module_65 from "module_65" /* 65 */;
 
-let tmp;
-const RiveColor2 = tmp(5410);
-react.useCallback;
-const f35428 = (colorProperty, arg1) => colorProperty.colorProperty(arg1);
+const codegenNativeComponent = react_native.codegenNativeComponent;
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNPlainText", validAttributes: { text: true, color: _mod26.colorAttribute, fontSize: true, fontFamily: true, fontWeight: true, fontStyle: true, fontVariant: true, fontVariationSettings: true, lineHeight: true, letterSpacing: true, hasLetterSpacing: true, textAlign: true, textAlignVertical: true, textDecorationLine: true, textTransform: true, numberOfLines: true, ellipsizeMode: true, allowFontScaling: true, maxFontSizeMultiplier: true, experiment: true, lineHeightClippingIos: true, includeFontPadding: true } };
+({ text: true, color: _mod26.colorAttribute, fontSize: true, fontFamily: true, fontWeight: true, fontStyle: true, fontVariant: true, fontVariationSettings: true, lineHeight: true, letterSpacing: true, hasLetterSpacing: true, textAlign: true, textAlignVertical: true, textDecorationLine: true, textTransform: true, numberOfLines: true, ellipsizeMode: true, allowFontScaling: true, maxFontSizeMultiplier: true, experiment: true, lineHeightClippingIos: true, includeFontPadding: true });
 
-export function useRiveColor(FillColor, instance) {
-  let closure_0;
-  let tmp10;
-  let tmp5;
-  let tmp6;
-  let tmp8;
-  const obj = react2;
-  const cResult = obj.c(8);
-  const obj2 = _mod5415;
-  const tmp4 = _slicedToArray(obj2.useRiveProperty(instance, FillColor, f35428), 3);
-  [tmp5, tmp6] = tmp4;
-  require = tmp6;
-  if (cResult[0] !== tmp5) {
-    let fromIntResult;
-    if (undefined !== tmp5) {
-      let RiveColor = RiveColor2.RiveColor;
-      fromIntResult = RiveColor.fromInt(tmp5);
-    }
-    cResult[0] = tmp5;
-    cResult[1] = fromIntResult;
-    tmp8 = fromIntResult;
-  } else {
-    tmp8 = cResult[1];
-  }
-  if (cResult[2] !== tmp6) {
-    const fn = function p(str) {
-      let fromHexStringResult = str;
-      if (typeof str === "string") {
-        const RiveColor = RiveColor2.RiveColor;
-        fromHexStringResult = RiveColor.fromHexString(str);
-      }
-      tmp6(fromHexStringResult.toInt());
-    };
-    cResult[2] = tmp6;
-    cResult[3] = fn;
-    tmp10 = fn;
-  } else {
-    tmp10 = cResult[3];
-  }
-  if (cResult[4] === tmp4[2]) {
-    if (cResult[5] === tmp10) {
-      let tmp11;
-      if (cResult[6] === tmp8) {
-        tmp11 = cResult[7];
-      }
-      return tmp11;
-    }
-  }
-  const obj3 = { value: tmp8, setValue: tmp10, error: tmp4[2] };
-  cResult[4] = tmp4[2];
-  cResult[5] = tmp10;
-  cResult[6] = tmp8;
-  cResult[7] = obj3;
-  tmp11 = obj3;
-}
+export default module_65.get("RNPlainText", () => obj);
+export { __INTERNAL_VIEW_CONFIG };

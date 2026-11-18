@@ -1,338 +1,116 @@
 // Module ID: 11540
 // Function ID: 11541
-// Dependencies: [41, 42, 17, 38]
+// Dependencies: [41, 42, 93, 95, 98, 11375, 11529, 11378, 11531]
 
 // Module 11540
-import _modDef38 from "module_38" /* 38 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 11375 */;
+import _mod11529 from "module_11529" /* 11529 */;
+import _mod11531 from "module_11531" /* 11531 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import react_native from "react-native" /* 17 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-const RNCPushNotificationIOS = react_native.NativeModules.RNCPushNotificationIOS;
-const nativeEventEmitter = new react_native.NativeEventEmitter(RNCPushNotificationIOS);
-const map = new Map();
-class PushNotificationIOS {
-  constructor(remote) {
-    const self = this;
-    let closure_0 = remote;
-    _classCallCheck(this, PushNotificationIOS);
-    this._data = {};
-    this._remoteNotificationCompleteCallbackCalled = false;
-    this._isRemote = remote.remote;
-    if (this._isRemote) {
-      self._notificationId = remote.notificationId;
-    }
-    if (remote.remote) {
-      const _Object = Object;
-      const keys = Object.keys(remote);
-      const item = keys.forEach((item) => {
-        if ("aps" === item) {
-          ({ alert: obj._alert, sound: obj._sound, badge: obj._badgeCount, category: obj._category, "content-available": obj._contentAvailable, "thread-id": obj._threadID } = closure_0[item]);
-        } else {
-          obj._data[item] = closure_0[item];
-        }
-      });
-    } else {
-      ({ applicationIconBadgeNumber: self._badgeCount, soundName: self._sound, alertBody: self._alert, userInfo: self._data, category: self._category } = remote);
-    }
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
 }
-const entry = {
-  key: "finish",
-  value: function finish(arg0) {
+class UKRelativeDateFormatParser {
+  constructor() {
+    let constructResult;
     const self = this;
-    const tmp = this._isRemote && self._notificationId && !self._remoteNotificationCompleteCallbackCalled;
-    if (tmp) {
-      self._remoteNotificationCompleteCallbackCalled = true;
-      const result = RNCPushNotificationIOS.onFinishRemoteNotification(self._notificationId, arg0);
+    _classCallCheck(this, UKRelativeDateFormatParser);
+    const obj = _getPrototypeOf(UKRelativeDateFormatParser);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
     }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(UKRelativeDateFormatParser, _mod11531.AbstractParserWithLeftRightBoundaryChecking);
+const entry = {
+  key: "innerPatternString",
+  value: function innerPatternString(arg0) {
+    return "(\u0432 \u043C\u0438\u043D\u0443\u043B\u043E\u043C\u0443|\u0443 \u043C\u0438\u043D\u0443\u043B\u043E\u043C\u0443|\u043D\u0430 \u043C\u0438\u043D\u0443\u043B\u043E\u043C\u0443|\u043C\u0438\u043D\u0443\u043B\u043E\u0433\u043E|\u043D\u0430 \u043D\u0430\u0441\u0442\u0443\u043F\u043D\u043E\u043C\u0443|\u0432 \u043D\u0430\u0441\u0442\u0443\u043F\u043D\u043E\u043C\u0443|\u0443 \u043D\u0430\u0441\u0442\u0443\u043F\u043D\u043E\u043C\u0443|\u043D\u0430\u0441\u0442\u0443\u043F\u043D\u043E\u0433\u043E|\u043D\u0430 \u0446\u044C\u043E\u043C\u0443|\u0432 \u0446\u044C\u043E\u043C\u0443|\u0443 \u0446\u044C\u043E\u043C\u0443|\u0446\u044C\u043E\u0433\u043E)\\s*(" + repeatedTimeunitPattern.matchAnyPattern(_mod11529.TIME_UNIT_DICTIONARY) + ")(?=\\s*)";
   }
 };
 const items = [
   entry,
   {
-    key: "getMessage",
-    value: function getMessage() {
-      return this._alert;
-    }
-  },
-  {
-    key: "getSound",
-    value: function getSound() {
-      return this._sound;
-    }
-  },
-  {
-    key: "getCategory",
-    value: function getCategory() {
-      return this._category;
-    }
-  },
-  {
-    key: "getAlert",
-    value: function getAlert() {
-      return this._alert;
-    }
-  },
-  {
-    key: "getContentAvailable",
-    value: function getContentAvailable() {
-      return this._contentAvailable;
-    }
-  },
-  {
-    key: "getBadgeCount",
-    value: function getBadgeCount() {
-      return this._badgeCount;
-    }
-  },
-  {
-    key: "getData",
-    value: function getData() {
-      return this._data;
-    }
-  },
-  {
-    key: "getThreadID",
-    value: function getThreadID() {
-      return this._threadID;
-    }
-  }
-];
-const entry1 = {
-  key: "presentLocalNotification",
-  value: function presentLocalNotification(arg0) {
-    const result = RNCPushNotificationIOS.presentLocalNotification(arg0);
-  }
-};
-const items1 = [
-  entry1,
-  {
-    key: "scheduleLocalNotification",
-    value: function scheduleLocalNotification(arg0) {
-      const result = RNCPushNotificationIOS.scheduleLocalNotification(arg0);
-    }
-  },
-  {
-    key: "cancelAllLocalNotifications",
-    value: function cancelAllLocalNotifications() {
-      const result = RNCPushNotificationIOS.cancelAllLocalNotifications();
-    }
-  },
-  {
-    key: "removeAllDeliveredNotifications",
-    value: function removeAllDeliveredNotifications() {
-      const result = RNCPushNotificationIOS.removeAllDeliveredNotifications();
-    }
-  },
-  {
-    key: "getDeliveredNotifications",
-    value: function getDeliveredNotifications(arg0) {
-      const deliveredNotifications = RNCPushNotificationIOS.getDeliveredNotifications(arg0);
-    }
-  },
-  {
-    key: "removeDeliveredNotifications",
-    value: function removeDeliveredNotifications(arg0) {
-      const result = RNCPushNotificationIOS.removeDeliveredNotifications(arg0);
-    }
-  },
-  {
-    key: "setApplicationIconBadgeNumber",
-    value: function setApplicationIconBadgeNumber(arg0) {
-      const result = RNCPushNotificationIOS.setApplicationIconBadgeNumber(arg0);
-    }
-  },
-  {
-    key: "getApplicationIconBadgeNumber",
-    value: function getApplicationIconBadgeNumber(arg0) {
-      const applicationIconBadgeNumber = RNCPushNotificationIOS.getApplicationIconBadgeNumber(arg0);
-    }
-  },
-  {
-    key: "cancelLocalNotifications",
-    value: function cancelLocalNotifications(arg0) {
-      const result = RNCPushNotificationIOS.cancelLocalNotifications(arg0);
-    }
-  },
-  {
-    key: "getScheduledLocalNotifications",
-    value: function getScheduledLocalNotifications(arg0) {
-      const scheduledLocalNotifications = RNCPushNotificationIOS.getScheduledLocalNotifications(arg0);
-    }
-  },
-  {
-    key: "addEventListener",
-    value: function addEventListener(arg0, arg1) {
-      let addListenerResult;
-      let closure_0 = arg1;
-      const tmp2 = "notification" === arg0;
-      let tmp3 = tmp2;
-      let tmp = PushNotificationIOS(dependencyMap[3]);
-      if (!tmp2) {
-        tmp3 = "register" === arg0;
-      }
-      if (!tmp3) {
-        tmp3 = "registrationError" === arg0;
-      }
-      if (!tmp3) {
-        tmp3 = "localNotification" === arg0;
-      }
-      tmp(tmp3, "PushNotificationIOS only supports `notification`, `register`, `registrationError`, and `localNotification` events");
-      if (tmp2) {
-        addListenerResult = nativeEventEmitter.addListener("remoteNotificationReceived", (remote) => {
-          const obj = Object.create(PushNotificationIOS.prototype);
-          const tmp = closure_0;
-          closure_0 = remote;
-          closure_1_2(obj, PushNotificationIOS);
-          obj._data = {};
-          obj._remoteNotificationCompleteCallbackCalled = false;
-          obj._isRemote = remote.remote;
-          if (obj._isRemote) {
-            obj._notificationId = remote.notificationId;
-          }
-          if (remote.remote) {
-            const _Object = Object;
-            const keys = Object.keys(remote);
-            const item = keys.forEach((item) => {
-              if ("aps" === item) {
-                ({ alert: obj._alert, sound: obj._sound, badge: obj._badgeCount, category: obj._category, "content-available": obj._contentAvailable, "thread-id": obj._threadID } = closure_0[item]);
-              } else {
-                obj._data[item] = closure_0[item];
+    key: "innerExtract",
+    value: function innerExtract(createParsingComponents, arg1) {
+      const str = arg1[1];
+      const formatted = str.toLowerCase();
+      const str2 = arg1[2];
+      const formatted1 = str2.toLowerCase();
+      const str3 = _mod11529.TIME_UNIT_DICTIONARY[formatted1];
+      if ("\u043D\u0430 \u043D\u0430\u0441\u0442\u0443\u043F\u043D\u043E\u043C\u0443" != formatted) {
+        if ("\u0432 \u043D\u0430\u0441\u0442\u0443\u043F\u043D\u043E\u043C\u0443" != formatted) {
+          if ("\u0443 \u043D\u0430\u0441\u0442\u0443\u043F\u043D\u043E\u043C\u0443" != formatted) {
+            if ("\u043D\u0430\u0441\u0442\u0443\u043F\u043D\u043E\u0433\u043E" != formatted) {
+              if ("\u043D\u0430 \u043C\u0438\u043D\u0443\u043B\u043E\u043C\u0443" != formatted) {
+                if ("\u0432 \u043C\u0438\u043D\u0443\u043B\u043E\u043C\u0443" != formatted) {
+                  if ("\u0443 \u043C\u0438\u043D\u0443\u043B\u043E\u043C\u0443" != formatted) {
+                    if ("\u043C\u0438\u043D\u0443\u043B\u043E\u0433\u043E" != formatted) {
+                      const parsingComponents = createParsingComponents.createParsingComponents();
+                      const _Date = Date;
+                      const instant = createParsingComponents.reference.instant;
+                      const self = this;
+                      const self2 = this;
+                      const date = new Date(instant.getTime());
+                      if (str3.match(/week/i)) {
+                        const setDate = date.setDate;
+                        const date1 = date.getDate();
+                        setDate(date1 - date.getDay());
+                        parsingComponents.imply("day", date.getDate());
+                        parsingComponents.imply("month", date.getMonth() + 1);
+                        parsingComponents.imply("year", date.getFullYear());
+                      } else if (str3.match(/month/i)) {
+                        date.setDate(1);
+                        parsingComponents.imply("day", date.getDate());
+                        parsingComponents.assign("year", date.getFullYear());
+                        parsingComponents.assign("month", date.getMonth() + 1);
+                      } else if (str3.match(/year/i)) {
+                        date.setDate(1);
+                        date.setMonth(0);
+                        parsingComponents.imply("day", date.getDate());
+                        parsingComponents.imply("month", date.getMonth() + 1);
+                        parsingComponents.assign("year", date.getFullYear());
+                      }
+                      return parsingComponents;
+                    }
+                  }
+                }
               }
-            });
-          } else {
-            ({ applicationIconBadgeNumber: tmp2._badgeCount, soundName: tmp2._sound, alertBody: tmp2._alert, userInfo: tmp2._data, category: tmp2._category } = remote);
-          }
-          tmp(obj);
-        });
-      } else if ("localNotification" === arg0) {
-        addListenerResult = nativeEventEmitter.addListener("localNotificationReceived", (remote) => {
-          const obj = Object.create(PushNotificationIOS.prototype);
-          const tmp = closure_0;
-          closure_0 = remote;
-          closure_1_2(obj, PushNotificationIOS);
-          obj._data = {};
-          obj._remoteNotificationCompleteCallbackCalled = false;
-          obj._isRemote = remote.remote;
-          if (obj._isRemote) {
-            obj._notificationId = remote.notificationId;
-          }
-          if (remote.remote) {
-            const _Object = Object;
-            const keys = Object.keys(remote);
-            const item = keys.forEach((item) => {
-              if ("aps" === item) {
-                ({ alert: obj._alert, sound: obj._sound, badge: obj._badgeCount, category: obj._category, "content-available": obj._contentAvailable, "thread-id": obj._threadID } = closure_0[item]);
-              } else {
-                obj._data[item] = closure_0[item];
-              }
-            });
-          } else {
-            ({ applicationIconBadgeNumber: tmp2._badgeCount, soundName: tmp2._sound, alertBody: tmp2._alert, userInfo: tmp2._data, category: tmp2._category } = remote);
-          }
-          tmp(obj);
-        });
-      } else if ("register" === arg0) {
-        addListenerResult = nativeEventEmitter.addListener("remoteNotificationsRegistered", (deviceToken) => {
-          closure_0(deviceToken.deviceToken);
-        });
-      } else if ("registrationError" === arg0) {
-        addListenerResult = nativeEventEmitter.addListener("remoteNotificationRegistrationError", (arg0) => {
-          closure_0(arg0);
-        });
-      }
-      const result = map.set(arg0, addListenerResult);
-    }
-  },
-  {
-    key: "removeEventListener",
-    value: function removeEventListener(arg0, arg1) {
-      let tmp2 = "notification" === arg0;
-      const tmp = _modDef38;
-      if (!tmp2) {
-        tmp2 = "register" === arg0;
-      }
-      if (!tmp2) {
-        tmp2 = "registrationError" === arg0;
-      }
-      if (!tmp2) {
-        tmp2 = "localNotification" === arg0;
-      }
-      tmp(tmp2, "PushNotificationIOS only supports `notification`, `register`, `registrationError`, and `localNotification` events");
-      const value = map.get(arg0);
-      const obj = map;
-      if (value) {
-        value.remove();
-        obj.delete(arg0);
-      }
-    }
-  },
-  {
-    key: "requestPermissions",
-    value: function requestPermissions(alert) {
-      let obj;
-      const tmp = alert;
-      if (tmp) {
-        obj = { alert: alert.alert, badge: alert.badge, sound: alert.sound };
-        const obj2 = { alert: alert.alert, badge: alert.badge, sound: alert.sound };
-      } else {
-        obj = { alert: true, badge: true, sound: true };
-      }
-      return RNCPushNotificationIOS.requestPermissions(obj);
-    }
-  },
-  {
-    key: "abandonPermissions",
-    value: function abandonPermissions() {
-      RNCPushNotificationIOS.abandonPermissions();
-    }
-  },
-  {
-    key: "checkPermissions",
-    value: function checkPermissions(fn) {
-      _modDef38(typeof fn === "function", "Must provide a valid callback");
-      RNCPushNotificationIOS.checkPermissions(fn);
-    }
-  },
-  {
-    key: "getInitialNotification",
-    value: function getInitialNotification() {
-      const initialNotification = RNCPushNotificationIOS.getInitialNotification();
-      return initialNotification.then((remote) => {
-        let tmp = remote;
-        if (tmp) {
-          const obj = Object.create(PushNotificationIOS.prototype);
-          let closure_0 = remote;
-          _classCallCheck(obj, PushNotificationIOS);
-          obj._data = {};
-          obj._remoteNotificationCompleteCallbackCalled = false;
-          obj._isRemote = remote.remote;
-          if (obj._isRemote) {
-            obj._notificationId = remote.notificationId;
-          }
-          if (remote.remote) {
-            const _Object = Object;
-            const keys = Object.keys(remote);
-            const item = keys.forEach((item) => {
-              if ("aps" === item) {
-                ({ alert: obj._alert, sound: obj._sound, badge: obj._badgeCount, category: obj._category, "content-available": obj._contentAvailable, "thread-id": obj._threadID } = closure_0[item]);
-              } else {
-                obj._data[item] = closure_0[item];
-              }
-            });
-            tmp = obj;
-          } else {
-            ({ applicationIconBadgeNumber: tmp3._badgeCount, soundName: tmp3._sound, alertBody: tmp3._alert, userInfo: tmp3._data, category: tmp3._category } = remote);
-            tmp = obj;
+              const obj = {};
+              obj[str3] = -1;
+              const ParsingComponents = tmp3(11378).ParsingComponents;
+              return ParsingComponents.createRelativeFromReference(createParsingComponents.reference, obj);
+            }
           }
         }
-        return tmp;
-      });
+      }
+      const ParsingComponents2 = tmp3(11378).ParsingComponents;
+      return ParsingComponents2.createRelativeFromReference(createParsingComponents.reference, { [str3]: 1 });
     }
   }
 ];
-const importDefaultResultResult = _createClass(PushNotificationIOS, items, items1);
-importDefaultResultResult.FetchResult = { NewData: "UIBackgroundFetchResultNewData", NoData: "UIBackgroundFetchResultNoData", ResultFailed: "UIBackgroundFetchResultFailed" };
 
-export default importDefaultResultResult;
+export default _createClass(UKRelativeDateFormatParser, items);

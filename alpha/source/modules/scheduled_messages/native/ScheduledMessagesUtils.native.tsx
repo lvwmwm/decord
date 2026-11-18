@@ -1,17 +1,17 @@
-// Module ID: 9059
-// Function ID: 9060
+// Module ID: 8470
+// Function ID: 8471
 // Name: ScheduledMessagesUtils
-// Dependencies: [5, 9015, 5495, 1113, 2169, 9041, 6833, 9060, 2121, 15694, 9043, 9040, 9044, 7958, 5546, 12377, 2]
+// Dependencies: [5, 8426, 5008, 1113, 2169, 8452, 6337, 8471, 2121, 14327, 8454, 8451, 8455, 7461, 5037, 11659, 2]
 // Exports: cancelScheduledMessage, openRescheduleMessageActionSheet, openScheduleMessageActionSheet, openScheduledMessageEditContentModal, pickScheduledMessageTime, sendScheduledMessageNow, showScheduledMessagesModal
 
-// Module 9059 (ScheduledMessagesUtils)
+// Module 8470 (ScheduledMessagesUtils)
 import intl3 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
 import _modDef2169 from "module_2169" /* 2169 */;
-import ChatInputUtils from "ChatInputUtils" /* 5495 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6833 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 9015 */;
+import ChatInputUtils from "ChatInputUtils" /* 5008 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6337 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 8426 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ const require = globalThis.__r;
 let _require, closure_2, closure_3, closure_4;
 
 let tmp2;
-const ScheduledMessageUtils = tmp2(9041);
+const ScheduledMessageUtils = tmp2(8452);
 function onSelect(toISOString) {
   return id(toISOString.toISOString());
 }
@@ -266,12 +266,12 @@ function openSendTimeActionSheet(title) {
   const tmp2 = title;
   let tmp3 = dependencyMap;
   ({ key, entryPoint, isEditing, channelId } = title);
-  obj = title(9041);
+  obj = title(8452);
   const result = obj.trackScheduledMessageTimePickerOpened({ entryPoint, isEditing, channelId });
   let obj2 = { key, header: { title }, hasIcons: false, options: items };
-  const showSimpleActionSheet = title(7958).showSimpleActionSheet;
-  title(7958);
-  let obj3 = title(9041);
+  const showSimpleActionSheet = title(7461).showSimpleActionSheet;
+  title(7461);
+  let obj3 = title(8452);
   const presetScheduledTimes = obj3.getPresetScheduledTimes();
   items = [
     ...presetScheduledTimes.map((label) => {
@@ -308,7 +308,7 @@ function openSendTimeActionSheet(title) {
         },
         onClose: ModalActionCreatorsDefault.pop
       };
-      const tmp3 = asyncRequire(12377, dependencyMap.paths);
+      const tmp3 = asyncRequire(11659, dependencyMap.paths);
       obj3 = ScheduledMessageUtils;
       obj4 = ScheduledMessageUtils;
       pushLazy(tmp3, obj2, "scheduled-message-custom-time", { presentation: "modal" });
@@ -362,7 +362,7 @@ export function openScheduleMessageActionSheet(id, ATTACH_MENU, scheduledTimesta
   if (null != currentTimestamp) {
     defaultScheduledTime = _modDef2169(currentTimestamp);
   } else {
-    const tmp2Result = tmp2(9041);
+    const tmp2Result = tmp2(8452);
     defaultScheduledTime = tmp2Result.getDefaultScheduledTime();
   }
   tmp(obj2);
@@ -390,12 +390,12 @@ export function pickScheduledMessageTime(arg0) {
 }
 export function showScheduledMessagesModal() {
   obj = ModalActionCreatorsDefault;
-  obj.pushLazy(asyncRequire(9060, dependencyMap.paths), {}, "scheduled-messages-modal", { presentation: "modal" });
+  obj.pushLazy(asyncRequire(8471, dependencyMap.paths), {}, "scheduled-messages-modal", { presentation: "modal" });
 }
 export function openScheduledMessageEditContentModal(scheduledMessage) {
   obj = ModalActionCreatorsDefault;
   const obj2 = { scheduledMessage };
-  obj.pushLazy(asyncRequire(15694, dependencyMap.paths), obj2, "scheduled-message-edit-content", { presentation: "modal" });
+  obj.pushLazy(asyncRequire(14327, dependencyMap.paths), obj2, "scheduled-message-edit-content", { presentation: "modal" });
 }
 export function openRescheduleMessageActionSheet(scheduledMessageId, sendAtTimestamp, channelId) {
   let intl;

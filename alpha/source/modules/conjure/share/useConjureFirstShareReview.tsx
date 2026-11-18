@@ -1,27 +1,27 @@
-// Module ID: 14563
-// Function ID: 14564
+// Module ID: 18434
+// Function ID: 18435
 // Name: useConjureFirstShareReview
-// Dependencies: [5, 32, 19, 7387, 7026, 4133, 1113, 14420, 14564, 504, 14429, 7339, 2]
+// Dependencies: [5, 32, 19, 6890, 6530, 4121, 1113, 18322, 18435, 504, 18330, 6844, 2]
 // Exports: conjureReviewComponents, default
 
-// Module 14563 (useConjureFirstShareReview)
-import _modDef4133 from "module_4133" /* 4133 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 7026 */;
+// Module 18434 (useConjureFirstShareReview)
+import _modDef4121 from "module_4121" /* 4121 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6530 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 7387 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 6890 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, c1, c4, closure_2, importDefault;
 
-const f109912 = (item) => {
+const f116173 = (item) => {
   let tmp;
   [tmp] = item;
   return tmp === id(first[4]).ConjureSupportedSurface.BOT;
 };
-const f109913 = (item) => {
+const f116174 = (item) => {
   let intl;
   let tmp;
   let tmp2;
@@ -31,19 +31,19 @@ const f109913 = (item) => {
   return obj;
 };
 let react = react_mod;
-let items = [ConjureProjectTypes.ConjureSupportedSurface.BOT, _modDef4133.UnoAgo];
+let items = [ConjureProjectTypes.ConjureSupportedSurface.BOT, _modDef4121.UnoAgo];
 let items1 = [items, , , , , ];
-let items2 = [ConjureProjectTypes.ConjureSupportedSurface.ACTIVITY, _modDef4133["I88/iG"]];
+let items2 = [ConjureProjectTypes.ConjureSupportedSurface.ACTIVITY, _modDef4121["I88/iG"]];
 items1[1] = items2;
-let items3 = [ConjureProjectTypes.ConjureSupportedSurface.VOICE_CHANNEL, _modDef4133.skjf5I];
+let items3 = [ConjureProjectTypes.ConjureSupportedSurface.VOICE_CHANNEL, _modDef4121.skjf5I];
 items1[2] = items3;
-let items4 = [ConjureProjectTypes.ConjureSupportedSurface.PROFILE_WIDGET, _modDef4133.gXY1x1];
+let items4 = [ConjureProjectTypes.ConjureSupportedSurface.PROFILE_WIDGET, _modDef4121.gXY1x1];
 items1[3] = items4;
-let items5 = [ConjureProjectTypes.ConjureSupportedSurface.AUTOMOD, _modDef4133.Q9ruoM];
+let items5 = [ConjureProjectTypes.ConjureSupportedSurface.AUTOMOD, _modDef4121.Q9ruoM];
 items1[4] = items5;
-let items6 = [ConjureProjectTypes.ConjureSupportedSurface.OVERLAY, _modDef4133.KR5R34];
+let items6 = [ConjureProjectTypes.ConjureSupportedSurface.OVERLAY, _modDef4121.KR5R34];
 items1[5] = items6;
-let obj = { screen_capture: _modDef4133["8/7kE7"], connect_user_to_voice: _modDef4133.uvDWXa };
+let obj = { screen_capture: _modDef4121["8/7kE7"], connect_user_to_voice: _modDef4121.uvDWXa };
 let result = size.fileFinishedImporting("modules/conjure/share/useConjureFirstShareReview.tsx");
 
 export default function useConjureFirstShareReview(id) {
@@ -213,7 +213,7 @@ export default function useConjureFirstShareReview(id) {
     nameError: result,
     channelNames: arr8,
     appChannelsPrivate: tmp20,
-    components: found2.map(f109913),
+    components: found2.map(f116174),
     devicePermissions: tmp5,
     saving,
     save() {
@@ -235,7 +235,7 @@ export default function useConjureFirstShareReview(id) {
   if (0 === found1.length) {
     found2 = found1;
     if (found.includes(require("ConjureProjectTypes").ConjureSupportedSurface.APPLICATION_COMMANDS)) {
-      found2 = arr11.filter(f109912);
+      found2 = arr11.filter(f116173);
     }
   }
   return obj2;
@@ -253,9 +253,9 @@ export function conjureReviewComponents(arr) {
   if (0 === found.length) {
     found1 = found;
     if (arr.includes(require("ConjureProjectTypes").ConjureSupportedSurface.APPLICATION_COMMANDS)) {
-      found1 = arr.filter(f109912);
+      found1 = arr.filter(f116173);
     }
   }
-  return found1.map(f109913);
+  return found1.map(f116174);
 }
 export const CONJURE_REVIEW_PERMISSION_LABELS = obj;

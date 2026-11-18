@@ -1,17 +1,17 @@
-// Module ID: 7017
-// Function ID: 7018
+// Module ID: 6521
+// Function ID: 6522
 // Name: StickersPersistedStore
-// Dependencies: [1231, 7018, 1082, 1089, 6084, 12, 504, 572, 2]
+// Dependencies: [1231, 6522, 1082, 1089, 5580, 12, 504, 572, 2]
 
-// Module 7017 (StickersPersistedStore)
+// Module 6521 (StickersPersistedStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import FrecencyDefault from "Frecency" /* 6084 */;
+import FrecencyDefault from "Frecency" /* 5580 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import StickersStore from "StickersStore" /* 7018 */;
+import StickersStore from "StickersStore" /* 6522 */;
 import size from "module_2" /* 2 */;
 
 let closure_5, pendingUsages, recentUses;

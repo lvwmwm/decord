@@ -1,13 +1,13 @@
-// Module ID: 18350
-// Function ID: 18351
+// Module ID: 17156
+// Function ID: 17157
 // Name: BackButton
-// Dependencies: [21, 1502, 18351, 1113, 18345, 2]
+// Dependencies: [21, 1502, 17157, 1113, 17151, 2]
 // Exports: default
 
-// Module 18350 (BackButton)
+// Module 17156 (BackButton)
 import Fragment from "Fragment" /* 21 */;
-import MfaStepsTypes from "MfaStepsTypes" /* 18345 */;
-import buttonDefault from "button" /* 18351 */;
+import MfaStepsTypes from "MfaStepsTypes" /* 17151 */;
+import buttonDefault from "button" /* 17157 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;

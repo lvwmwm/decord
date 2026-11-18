@@ -1,12 +1,12 @@
-// Module ID: 19212
-// Function ID: 19213
+// Module ID: 18023
+// Function ID: 18024
 // Name: shouldShowActivityStatus
-// Dependencies: [1083, 6066, 2]
+// Dependencies: [1083, 5562, 2]
 // Exports: default
 
-// Module 19212 (shouldShowActivityStatus)
+// Module 18023 (shouldShowActivityStatus)
 import Constants from "Constants" /* 1083 */;
-import ActivityTypes from "ActivityTypes" /* 6066 */;
+import ActivityTypes from "ActivityTypes" /* 5562 */;
 import size from "module_2" /* 2 */;
 
 const StatusTypes = Constants.StatusTypes;

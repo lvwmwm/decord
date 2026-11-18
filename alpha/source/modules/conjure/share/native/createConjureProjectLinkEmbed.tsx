@@ -1,58 +1,76 @@
-// Module ID: 15618
-// Function ID: 15619
+// Module ID: 14245
+// Function ID: 14246
 // Name: createConjureProjectLinkEmbed
-// Dependencies: [11091, 5310, 575, 1113, 4133, 12647, 9181, 13424, 2]
+// Dependencies: [17, 10373, 4823, 575, 1113, 4121, 11833, 11931, 8592, 12731, 8603, 11932, 2]
 // Exports: default
 
-// Module 15618 (createConjureProjectLinkEmbed)
+// Module 14245 (createConjureProjectLinkEmbed)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef4133 from "module_4133" /* 4133 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 9181 */;
-import CodedLinksConstants from "CodedLinksConstants" /* 11091 */;
-import conjureProjectLinkCard2 from "conjureProjectLinkCard" /* 12647 */;
-import CodedLinksTypes from "CodedLinksTypes" /* 13424 */;
-import createStyles from "createStyles" /* 5310 */;
+import _modDef4121 from "module_4121" /* 4121 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8592 */;
+import CodedLinksConstants from "CodedLinksConstants" /* 10373 */;
+import conjureDefaultAppIcon2 from "conjureDefaultAppIcon" /* 11833 */;
+import conjureProjectLinkCard2 from "conjureProjectLinkCard" /* 11931 */;
+import conjureSharedProjectSurfaces from "conjureSharedProjectSurfaces" /* 11932 */;
+import CodedLinksTypes from "CodedLinksTypes" /* 12731 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
+const processColor = react_native.processColor;
 const CodedLinkExtendedType = CodedLinksConstants.CodedLinkExtendedType;
-let obj = { titleColor: nativeDefault.colors.TEXT_STRONG, bodyTextColor: nativeDefault.colors.TEXT_DEFAULT, headerColor: nativeDefault.colors.TEXT_MUTED, acceptLabelBackgroundColor: nativeDefault.colors.CONTROL_PRIMARY_BACKGROUND_DEFAULT, acceptLabelColor: nativeDefault.colors.CONTROL_PRIMARY_TEXT_DEFAULT, secondaryButtonBackgroundColor: nativeDefault.colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT, secondaryButtonTextColor: nativeDefault.colors.CONTROL_SECONDARY_TEXT_DEFAULT, coverBackgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGHEST };
-let closure_4 = createStyles.createNativeStyleProperties(obj);
+let obj = { titleColor: nativeDefault.colors.TEXT_STRONG, bodyTextColor: nativeDefault.colors.TEXT_SUBTLE, headerColor: nativeDefault.colors.TEXT_MUTED, coverBackgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGHEST, tagBackgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, tagCoverBackgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, tagTextColor: nativeDefault.colors.TEXT_DEFAULT };
+let closure_5 = createStyles.createNativeStyleProperties(obj);
 const result = size.fileFinishedImporting("modules/conjure/share/native/createConjureProjectLinkEmbed.tsx");
 
-export default function createConjureProjectLinkEmbed(applicationId, ticket, arg2, memo2) {
+export default function createConjureProjectLinkEmbed(applicationId, ticket, theme, memo2) {
   let ConjureProjectEmbedDisplayType;
+  let character;
+  let color;
   let coverImageURL;
-  let formatToPlainStringResult;
-  let iconURL;
+  let creatorAvatarUrl;
+  let defaultUsernameColor;
+  let formatToPartsResult;
+  let id;
   let intl7;
+  let mapped;
+  let name;
+  let obj6;
   let stringResult1;
   let stringResult2;
   let stringResult3;
   let stringResult4;
-  let tmp19;
-  const obj = conjureProjectLinkCard2;
+  let tmp21;
+  let tmp27;
+  let tmp30Result;
+  let tmp31;
+  let obj = conjureProjectLinkCard2;
   const conjureProjectLinkCard = obj.readConjureProjectLinkCard(applicationId, ticket, memo2);
   if (null == conjureProjectLinkCard) {
     return null;
   } else {
-    const obj2 = { extendedType: CodedLinkExtendedType.CONJURE_PROJECT_EMBED, type: null, headerText: null, applicationId, embedCanBeTapped: !("no_access" === conjureProjectLinkCard.type || "expired" === conjureProjectLinkCard.type) };
-    const merged = Object.assign(getEmbedThemeColorsDefault(arg2).baseColors);
-    const merged1 = Object.assign(closure_4(arg2));
+    let obj2 = { extendedType: CodedLinkExtendedType.CONJURE_PROJECT_EMBED, type: null, headerText: null, applicationId, embedCanBeTapped: !tmp4 };
+    const merged = Object.assign(getEmbedThemeColorsDefault(theme).baseColors);
+    const merged1 = Object.assign(closure_5(theme));
     if ("no_access" === conjureProjectLinkCard.type || "expired" === conjureProjectLinkCard.type) {
       let mQma36;
       const intl8 = tmp(1113).intl;
       const string = intl8.string;
       if ("expired" === conjureProjectLinkCard.type) {
-        mQma36 = tmp6(4133).wahvH2;
+        mQma36 = tmp6(4121).wahvH2;
       } else {
-        mQma36 = tmp6(4133).mQma36;
+        mQma36 = tmp6(4121).mQma36;
       }
       const stringResult = string(mQma36);
-      const obj3 = { displayType: CodedLinksTypes.ConjureProjectEmbedDisplayType.NO_ACCESS, title: null, description: null, creatorText: null, noticeText: stringResult, iconUrl: null, coverUrl: null, installLabel: null, remixLabel: null, coverAction: null, coverActionLabel: null, accessibilityLabel: stringResult };
+      const obj3 = { displayType: CodedLinksTypes.ConjureProjectEmbedDisplayType.NO_ACCESS, title: null, description: null, creatorContent: null, creatorAvatarUrl: null, projectTypes: [], noticeText: stringResult, iconUrl: null, iconFallback: null, coverUrl: null, installLabel: null, remixLabel: null, coverAction: null, coverActionLabel: null, accessibilityLabel: stringResult };
       const merged2 = Object.assign(obj2);
       return obj3;
     } else {
       const application = conjureProjectLinkCard.application;
+      let iconURL = application.getIconURL(80);
+      if (iconURL == null) {
+        iconURL = null;
+      }
       let str3;
       if (application.description != null) {
         str3 = str2.trim();
@@ -64,30 +82,72 @@ export default function createConjureProjectLinkEmbed(applicationId, ticket, arg
       if ("ready" === conjureProjectLinkCard.type) {
         coverAction = conjureProjectLinkCard.coverAction;
       }
-      const obj4 = { displayType: "ready" === conjureProjectLinkCard.type ? ConjureProjectEmbedDisplayType.READY : ConjureProjectEmbedDisplayType.INFO_ONLY, title: application.name, description: tmp19, creatorText: formatToPlainStringResult, noticeText: stringResult1, iconUrl: iconURL, coverUrl: coverImageURL, installLabel: stringResult2, remixLabel: stringResult3, coverAction, coverActionLabel: stringResult4, accessibilityLabel: intl7.formatToPlainString(_modDef4133.c8DqSD, obj6) };
-      const merged3 = Object.assign(obj2);
-      ConjureProjectEmbedDisplayType = tmp(13424).ConjureProjectEmbedDisplayType;
-      tmp19 = null;
-      if ("" !== str3) {
-        tmp19 = str3;
-      }
-      formatToPlainStringResult = null;
+      let creator = null;
       if ("ready" === conjureProjectLinkCard.type) {
-        formatToPlainStringResult = null;
-        if (null != conjureProjectLinkCard.creatorName) {
-          const intl = tmp(1113).intl;
-          const obj5 = { name: conjureProjectLinkCard.creatorName };
-          formatToPlainStringResult = intl.formatToPlainString(tmp6(4133)["6/x9LD"], obj5);
+        creator = conjureProjectLinkCard.creator;
+      }
+      const obj4 = { displayType: "ready" === conjureProjectLinkCard.type ? ConjureProjectEmbedDisplayType.READY : ConjureProjectEmbedDisplayType.INFO_ONLY, title: application.name, description: tmp21, creatorContent: formatToPartsResult, creatorAvatarUrl, projectTypes: mapped, noticeText: stringResult1, iconUrl: iconURL, iconFallback: tmp27, coverUrl: coverImageURL, installLabel: stringResult2, remixLabel: stringResult3, coverAction, coverActionLabel: stringResult4, accessibilityLabel: intl7.formatToPlainString(_modDef4121.c8DqSD, obj8) };
+      const merged3 = Object.assign(obj2);
+      ConjureProjectEmbedDisplayType = tmp(12731).ConjureProjectEmbedDisplayType;
+      tmp21 = null;
+      if ("" !== str3) {
+        tmp21 = str3;
+      }
+      formatToPartsResult = null;
+      if (null != creator) {
+        const intl = tmp(1113).intl;
+        const formatToParts = intl.formatToParts;
+        const obj5 = { name: creator.name, nameOnClick: obj6 };
+        obj6 = { linkColor: defaultUsernameColor };
+        const dMdop9 = tmp6(4121).dMdop9;
+        const merged4 = Object.assign(creator.onClick);
+        defaultUsernameColor = creator.onClick.linkColor;
+        if (defaultUsernameColor == null) {
+          defaultUsernameColor = tmp6(8603)(theme).defaultUsernameColor;
         }
+        formatToPartsResult = formatToParts(dMdop9, obj5);
+      }
+      creatorAvatarUrl = null;
+      if ("ready" === conjureProjectLinkCard.type) {
+        creatorAvatarUrl = conjureProjectLinkCard.creatorAvatarUrl;
+      }
+      if ("ready" === conjureProjectLinkCard.type) {
+        const projectTypes = conjureProjectLinkCard.projectTypes;
+        mapped = projectTypes.map((type) => {
+          let obj2;
+          const obj = { type, label: obj2.conjureSharedProjectTypeLabel(type) };
+          obj2 = conjureSharedProjectSurfaces;
+          return obj;
+        });
+      } else {
+        mapped = [];
       }
       stringResult1 = null;
       if ("ready" !== conjureProjectLinkCard.type) {
         const intl2 = tmp(1113).intl;
-        stringResult1 = intl2.string(tmp6(4133)["2DSRxV"]);
+        stringResult1 = intl2.string(tmp6(4121)["2DSRxV"]);
       }
-      iconURL = application.getIconURL(80);
-      if (iconURL == null) {
-        iconURL = null;
+      tmp27 = null;
+      if (null == iconURL) {
+        ({ id, name } = application);
+        const tmpResult = conjureDefaultAppIcon2;
+        const getConjureDefaultAppIconColors = tmpResult.getConjureDefaultAppIconColors;
+        const conjureDefaultAppIcon = tmpResult.getConjureDefaultAppIcon(id, name);
+        ({ color, character } = conjureDefaultAppIcon);
+        const internal = tmp6(575).internal;
+        const conjureDefaultAppIconColors = getConjureDefaultAppIconColors(color, internal.resolveSemanticColor(theme, tmp6(575).colors.BACKGROUND_BASE_LOWER));
+        const foregroundColor = conjureDefaultAppIconColors.foregroundColor;
+        const obj7 = { character, backgroundColor: tmp31, foregroundColor: tmp30Result };
+        tmp31 = processColor(conjureDefaultAppIconColors.backgroundColor);
+        const tmp30 = processColor;
+        if (tmp31 == null) {
+          tmp31 = null;
+        }
+        tmp30Result = tmp30(foregroundColor);
+        if (tmp30Result == null) {
+          tmp30Result = null;
+        }
+        tmp27 = obj7;
       }
       coverImageURL = application.getCoverImageURL(1024);
       if (coverImageURL == null) {
@@ -96,16 +156,16 @@ export default function createConjureProjectLinkEmbed(applicationId, ticket, arg
       stringResult2 = null;
       if ("ready" === conjureProjectLinkCard.type && conjureProjectLinkCard.canRemix) {
         const intl3 = tmp(1113).intl;
-        stringResult2 = intl3.string(tmp6(4133)["UsUa/c"]);
+        stringResult2 = intl3.string(tmp6(4121)["UsUa/c"]);
       }
       stringResult3 = null;
       if ("ready" === conjureProjectLinkCard.type && conjureProjectLinkCard.canRemix) {
         const intl4 = tmp(1113).intl;
-        stringResult3 = intl4.string(tmp6(4133)["6RGR3m"]);
+        stringResult3 = intl4.string(tmp6(4121)["6RGR3m"]);
       }
       if ("launch" === coverAction) {
         const intl6 = tmp(1113).intl;
-        stringResult4 = intl6.string(tmp6(4133)["1cF7L4"]);
+        stringResult4 = intl6.string(tmp6(4121)["1cF7L4"]);
       } else {
         stringResult4 = null;
         if ("open" === coverAction) {

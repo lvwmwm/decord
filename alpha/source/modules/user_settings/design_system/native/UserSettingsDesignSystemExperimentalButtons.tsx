@@ -1,25 +1,25 @@
-// Module ID: 18461
-// Function ID: 18462
+// Module ID: 17272
+// Function ID: 17273
 // Name: UserSettingsDesignSystemExperimentalButtons
-// Dependencies: [19, 17, 1072, 21, 5896, 575, 8008, 6335, 7756, 7467, 7837, 6028, 5930, 5923, 5371, 5887, 8119, 11050, 2]
+// Dependencies: [19, 17, 1072, 21, 5387, 575, 7511, 5837, 7259, 6970, 7340, 5524, 5421, 5414, 4884, 5378, 7622, 10332, 2]
 // Exports: default
 
-// Module 18461 (UserSettingsDesignSystemExperimentalButtons)
+// Module 17272 (UserSettingsDesignSystemExperimentalButtons)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import native from "native" /* 5371 */;
-import LinearGradientDefault from "LinearGradient" /* 5887 */;
-import useToken from "useToken" /* 5896 */;
-import Text_Text from "Text/Text" /* 5923 */;
-import components_Button_Button from "components/Button/Button" /* 5930 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6028 */;
-import Stack_Stack from "Stack/Stack" /* 6335 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 7467 */;
-import TableRowGroup7 from "TableRowGroup" /* 7756 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 7837 */;
-import native2 from "native" /* 8008 */;
-import RowButton2 from "RowButton" /* 8119 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 11050 */;
+import native from "native" /* 4884 */;
+import LinearGradientDefault from "LinearGradient" /* 5378 */;
+import useToken from "useToken" /* 5387 */;
+import Text_Text from "Text/Text" /* 5414 */;
+import components_Button_Button from "components/Button/Button" /* 5421 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5524 */;
+import Stack_Stack from "Stack/Stack" /* 5837 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 6970 */;
+import TableRowGroup7 from "TableRowGroup" /* 7259 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 7340 */;
+import native2 from "native" /* 7511 */;
+import RowButton2 from "RowButton" /* 7622 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 10332 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

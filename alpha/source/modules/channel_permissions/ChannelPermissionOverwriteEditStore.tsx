@@ -1,13 +1,13 @@
-// Module ID: 19740
-// Function ID: 19741
+// Module ID: 19011
+// Function ID: 19012
 // Name: ChannelPermissionOverwriteEditStore
-// Dependencies: [504, 19741, 572, 2]
+// Dependencies: [504, 19012, 572, 2]
 // Exports: getChannelPermissionOverwriteResourceKey
 
-// Module 19740 (ChannelPermissionOverwriteEditStore)
+// Module 19011 (ChannelPermissionOverwriteEditStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ChannelPermissionOverwriteEditUtils from "ChannelPermissionOverwriteEditUtils" /* 19741 */;
+import ChannelPermissionOverwriteEditUtils from "ChannelPermissionOverwriteEditUtils" /* 19012 */;
 import size from "module_2" /* 2 */;
 
 function getPendingEdits(arg0, arg1) {

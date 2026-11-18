@@ -1,18 +1,18 @@
-// Module ID: 20126
-// Function ID: 20127
+// Module ID: 19397
+// Function ID: 19398
 // Name: useControlsHiddenPresentation
-// Dependencies: [12428, 5371, 1655, 5933, 1708, 2]
+// Dependencies: [11710, 4884, 1655, 5424, 1708, 2]
 // Exports: default
 
-// Module 20126 (useControlsHiddenPresentation)
+// Module 19397 (useControlsHiddenPresentation)
 import _mod1655 from "module_1655" /* 1655 */;
-import native from "native" /* 5371 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 12428 */;
+import native from "native" /* 4884 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11710 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const _mod1708 = tmp(1708);
-const spring_spring = tmp(5933);
+const spring_spring = tmp(5424);
 const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
 let obj = { overshootClamping: true };
 const merged = Object.assign(VoicePanelConstants.MODE_CHANGE_PHYSICS);

@@ -1,15 +1,14 @@
-// Module ID: 16266
-// Function ID: 16267
+// Module ID: 14933
+// Function ID: 14934
 // Name: ProgramRewardsUtils
-// Dependencies: [1388, 1390, 4933, 16267, 16268, 2174, 2]
+// Dependencies: [1388, 1390, 14934, 14935, 2174, 2]
 // Exports: canFetchAnyProgramReward, canFetchNitroProgramReward, canFetchXboxProgramReward, hasNecessaryPremiumSubscriptionStatus, isProgramRewardStale
 
-// Module 16266 (ProgramRewardsUtils)
+// Module 14933 (ProgramRewardsUtils)
 import PremiumConstants from "PremiumConstants" /* 1390 */;
 import PremiumUtils from "PremiumUtils" /* 2174 */;
-import isPastDefault from "isPast" /* 4933 */;
-import useHasXboxMonthlyOrbsPerk from "useHasXboxMonthlyOrbsPerk" /* 16267 */;
-import ProgramRewardsTypes from "ProgramRewardsTypes" /* 16268 */;
+import useHasXboxMonthlyOrbsPerk from "useHasXboxMonthlyOrbsPerk" /* 14934 */;
+import ProgramRewardsTypes from "ProgramRewardsTypes" /* 14935 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +22,7 @@ function canFetchXboxProgramReward() {
   return obj.hasCrepeMonthlyOrbsPerk(UserStore.getCurrentUser());
 }
 const PremiumTypes = PremiumConstants.PremiumTypes;
-let closure_5 = { [ProgramRewardsTypes.RewardProgram.NITRO]: canFetchNitroProgramReward, [ProgramRewardsTypes.RewardProgram.XBOX]: canFetchXboxProgramReward };
+let closure_4 = { [ProgramRewardsTypes.RewardProgram.NITRO]: canFetchNitroProgramReward, [ProgramRewardsTypes.RewardProgram.XBOX]: canFetchXboxProgramReward };
 const result = size.fileFinishedImporting("modules/rewards/ProgramRewardsUtils.tsx");
 
 export function isProgramRewardStale(next_reward_date) {
@@ -36,9 +35,10 @@ export function isProgramRewardStale(next_reward_date) {
       const _Date = Date;
       const self = this;
       const self2 = this;
-      const tmp4 = isPastDefault;
+      const _Date2 = Date;
       const date = new Date(next_reward_date);
-      tmp = tmp4(date);
+      const time = date.getTime();
+      tmp = time < Date.now();
     }
     return tmp;
   }
@@ -49,7 +49,7 @@ export function canFetchAnyProgramReward() {
   const values = Object.values(ProgramRewardsTypes.RewardProgram);
   for (const item10014 of values) {
     if (typeof item10014 === "number") {
-      if (closure_5[tmp2]()) {
+      if (closure_4[tmp2]()) {
         obj.return();
         let flag = true;
         return true;

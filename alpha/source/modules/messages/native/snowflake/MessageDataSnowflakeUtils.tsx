@@ -1,10 +1,10 @@
-// Module ID: 11058
-// Function ID: 11059
+// Module ID: 10340
+// Function ID: 10341
 // Name: MessageDataSnowflakeUtils
 // Dependencies: [2]
 // Exports: castNativeSyntheticEventData, getNativeSyntheticEventData
 
-// Module 11058 (MessageDataSnowflakeUtils)
+// Module 10340 (MessageDataSnowflakeUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/native/snowflake/MessageDataSnowflakeUtils.tsx");

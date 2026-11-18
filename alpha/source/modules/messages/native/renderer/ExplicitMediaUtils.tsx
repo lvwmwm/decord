@@ -1,16 +1,16 @@
-// Module ID: 10672
-// Function ID: 10673
+// Module ID: 9953
+// Function ID: 9954
 // Name: ExplicitMediaUtils
-// Dependencies: [1072, 1406, 8645, 8651, 6815, 1113, 2]
+// Dependencies: [1072, 1406, 8136, 8142, 6319, 1113, 2]
 // Exports: getAttachmentObscurityDefaults, getAttachmentObscurityProps, getUnfurledMediaItemObscurityProps
 
-// Module 10672 (ExplicitMediaUtils)
+// Module 9953 (ExplicitMediaUtils)
 import Constants from "Constants" /* 1072 */;
 import intl6 from "intl" /* 1113 */;
 import FlagUtils from "FlagUtils" /* 1406 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6815 */;
-import ObscuredMediaUtils from "ObscuredMediaUtils" /* 8645 */;
-import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 8651 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6319 */;
+import ObscuredMediaUtils from "ObscuredMediaUtils" /* 8136 */;
+import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 8142 */;
 import size from "module_2" /* 2 */;
 
 const MessageAttachmentFlags = Constants.MessageAttachmentFlags;

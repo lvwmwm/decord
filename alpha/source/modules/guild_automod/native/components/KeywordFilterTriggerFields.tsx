@@ -1,17 +1,17 @@
-// Module ID: 20529
-// Function ID: 20530
+// Module ID: 19802
+// Function ID: 19803
 // Name: KeywordFilterTriggerFields
-// Dependencies: [19, 13039, 1072, 21, 7756, 20523, 1113, 2188, 2]
+// Dependencies: [19, 12326, 1072, 21, 7259, 19796, 1113, 2188, 2]
 // Exports: default
 
-// Module 20529 (KeywordFilterTriggerFields)
+// Module 19802 (KeywordFilterTriggerFields)
 import Constants2 from "Constants" /* 1072 */;
 import intl7 from "intl" /* 1113 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
-import TableRowGroup2 from "TableRowGroup" /* 7756 */;
-import KeywordsRowDefault from "KeywordsRow" /* 20523 */;
+import TableRowGroup2 from "TableRowGroup" /* 7259 */;
+import KeywordsRowDefault from "KeywordsRow" /* 19796 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 13039 */;
+import Constants from "Constants" /* 12326 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 

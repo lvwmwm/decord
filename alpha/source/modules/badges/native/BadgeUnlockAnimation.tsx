@@ -1,24 +1,24 @@
-// Module ID: 15313
-// Function ID: 15314
+// Module ID: 13941
+// Function ID: 13942
 // Name: BadgeUnlockAnimation
-// Dependencies: [32, 19, 17, 5311, 21, 1655, 5310, 15314, 1380, 5307, 15316, 5542, 15311, 7543, 504, 15291, 15317, 8491, 1708, 5317, 15306, 5433, 2]
+// Dependencies: [32, 19, 17, 4824, 21, 1655, 4823, 13942, 1380, 4820, 13944, 5033, 13939, 7046, 504, 13919, 13945, 7982, 1708, 4830, 13934, 4946, 2]
 // Exports: default
 
-// Module 15313 (BadgeUnlockAnimation)
+// Module 13941 (BadgeUnlockAnimation)
 import react_native from "react-native" /* 17 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import _mod1655 from "module_1655" /* 1655 */;
 import _mod1708 from "module_1708" /* 1708 */;
-import shared from "shared" /* 5317 */;
-import timing_timing from "timing/timing" /* 5542 */;
-import BadgeUtils from "BadgeUtils" /* 15291 */;
-import trackBadgeDirectoryActionDefault from "trackBadgeDirectoryAction" /* 15306 */;
-import reactDefault from "react" /* 15316 */;
+import shared from "shared" /* 4830 */;
+import timing_timing from "timing/timing" /* 5033 */;
+import BadgeUtils from "BadgeUtils" /* 13919 */;
+import trackBadgeDirectoryActionDefault from "trackBadgeDirectoryAction" /* 13934 */;
+import reactDefault from "react" /* 13944 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5311 */;
+import AccessibilityStore from "AccessibilityStore" /* 4824 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size_mod from "module_2" /* 2 */;
 
 let set, set2, set3;
@@ -26,7 +26,7 @@ let set, set2, set3;
 let metroImportAll;
 let metroImportDefault;
 let tmp;
-const ColorUtils = tmp(5307);
+const ColorUtils = tmp(4820);
 function BadgeLayer(onLoad) {
   let _undefined;
   let _undefined2;
@@ -341,15 +341,15 @@ export default function BadgeUnlockAnimation(badge) {
   let obj = badge(504);
   let items = [AccessibilityStore];
   const stateFromStores = obj.useStateFromStores(items, () => AccessibilityStore.useReducedMotion);
-  let obj2 = badge(15291);
+  let obj2 = badge(13919);
   const findTierResult = obj2.findTier(badge, previousTierKey);
-  const getBadgeUnlockArt = badge(15317).getBadgeUnlockArt;
-  badge(15317);
-  let obj3 = badge(15291);
+  const getBadgeUnlockArt = badge(13945).getBadgeUnlockArt;
+  badge(13945);
+  let obj3 = badge(13919);
   const badgeUnlockArt = getBadgeUnlockArt(badge, obj3.getDisplayTier(badge), false);
-  let obj4 = badge(15317);
+  let obj4 = badge(13945);
   const badgeUnlockArt1 = obj4.getBadgeUnlockArt(badge, findTierResult, true);
-  const tmp9 = badge.badge_id === badge(8491).BadgeId.PREMIUM_TENURE && !stateFromStores;
+  const tmp9 = badge.badge_id === badge(7982).BadgeId.PREMIUM_TENURE && !stateFromStores;
   let tmp61Result = null != findTierResult && !stateFromStores;
   let closure_8 = tmp61Result;
   let num = 0;
@@ -432,10 +432,10 @@ export default function BadgeUnlockAnimation(badge) {
   const animatedReaction = useAnimatedReaction(BadgeUnlockAnimationTsx3, BadgeUnlockAnimationTsx4);
   closure_18 = tmp32;
   ref = obj8.useRef(null);
-  const tmp2Result15 = tmp2(15314);
+  const tmp2Result15 = tmp2(13942);
   FALLBACK_BADGE_COLOR = tmp2Result15.useBadgeColor(badgeUnlockArt.rasterUrl);
   if (FALLBACK_BADGE_COLOR == null) {
-    FALLBACK_BADGE_COLOR = tmp2(15314).FALLBACK_BADGE_COLOR;
+    FALLBACK_BADGE_COLOR = tmp2(13942).FALLBACK_BADGE_COLOR;
   }
   const items5 = [FALLBACK_BADGE_COLOR];
   const memo = obj8.useMemo(() => ({ fill: FALLBACK_BADGE_COLOR }), items5);
@@ -671,7 +671,7 @@ export default function BadgeUnlockAnimation(badge) {
   if (!stateFromStores) {
     const items14 = [tmp.pulse, ];
     const tmp60 = !tmp44 && tmp.pulseHidden;
-    let obj6 = { style: items14, children: tmp59(tmp2(5433).BadgeUnlockPulseRive, obj7) };
+    let obj6 = { style: items14, children: tmp59(tmp2(4946).BadgeUnlockPulseRive, obj7) };
     items14[1] = tmp60;
     obj7 = { ref, artboard: "Mobile", dataBinding: memo };
     tmp59Result = tmp59(tmp57, obj6);

@@ -5,7 +5,7 @@
 
 // Module 733
 import _mod685 from "module_685" /* 685 */;
-import _mod687 from "module_687" /* 687 */;
+import DEBUG_BUILD from "DEBUG_BUILD" /* 687 */;
 import uuid4 from "uuid4" /* 694 */;
 import browserPerformanceTimeOrigin from "browserPerformanceTimeOrigin" /* 702 */;
 import closeSession from "closeSession" /* 709 */;
@@ -25,11 +25,11 @@ function captureCheckIn(arg0, arg1) {
   if (client) {
     if (client.captureCheckIn) {
       return client.captureCheckIn(arg0, arg1, currentScope);
-    } else if (_mod687.DEBUG_BUILD) {
+    } else if (DEBUG_BUILD.DEBUG_BUILD) {
       const debug2 = tmp(688).debug;
       debug2.warn("Cannot capture check-in. Client does not support sending check-ins.");
     }
-  } else if (_mod687.DEBUG_BUILD) {
+  } else if (DEBUG_BUILD.DEBUG_BUILD) {
     const debug = tmp(688).debug;
     debug.warn("Cannot capture check-in. No client defined.");
   }
@@ -69,7 +69,7 @@ let obj = function _flush() {
           if (client) {
             flushResult = client.flush(tmp10);
           } else {
-            if (require("module_687").DEBUG_BUILD) {
+            if (require("DEBUG_BUILD").DEBUG_BUILD) {
               const debug = tmp11(tmp12[4]).debug;
               debug.warn("Cannot flush events. No client defined.");
             }
@@ -120,7 +120,7 @@ obj = function _close() {
           if (client) {
             closeResult = client.close(tmp10);
           } else {
-            if (require("module_687").DEBUG_BUILD) {
+            if (require("DEBUG_BUILD").DEBUG_BUILD) {
               const debug = tmp11(tmp12[4]).debug;
               debug.warn("Cannot flush events and disable SDK. No client defined.");
             }
@@ -151,12 +151,12 @@ export function captureEvent(arg0, arg1) {
   const currentScope = obj.getCurrentScope();
   return currentScope.captureEvent(arg0, arg1);
 }
-export function captureException(arg0, arg1) {
+export function captureException(arg0, captureContext) {
   obj = _mod712;
   const currentScope = obj.getCurrentScope();
   const captureException = currentScope.captureException;
   const obj2 = applyClientOptions;
-  return captureException(arg0, obj2.parseEventHintOrCaptureContext(arg1));
+  return captureException(arg0, obj2.parseEventHintOrCaptureContext(captureContext));
 }
 export function captureMessage(arg0, captureContext) {
   let tmp;
@@ -360,11 +360,11 @@ export function withMonitor(monitorSlug, arg1, arg2) {
       if (client) {
         if (client.captureCheckIn) {
           client.captureCheckIn(obj, undefined, currentScope);
-        } else if (_mod687.DEBUG_BUILD) {
+        } else if (DEBUG_BUILD.DEBUG_BUILD) {
           const debug2 = tmp(688).debug;
           debug2.warn("Cannot capture check-in. Client does not support sending check-ins.");
         }
-      } else if (_mod687.DEBUG_BUILD) {
+      } else if (DEBUG_BUILD.DEBUG_BUILD) {
         const debug = tmp(688).debug;
         debug.warn("Cannot capture check-in. No client defined.");
       }

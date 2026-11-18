@@ -1,10 +1,10 @@
-// Module ID: 11466
-// Function ID: 11467
+// Module ID: 10748
+// Function ID: 10749
 // Name: makeIframeId
 // Dependencies: [1269, 2]
 // Exports: default
 
-// Module 11466 (makeIframeId)
+// Module 10748 (makeIframeId)
 import v1 from "v1" /* 1269 */;
 import size from "module_2" /* 2 */;
 

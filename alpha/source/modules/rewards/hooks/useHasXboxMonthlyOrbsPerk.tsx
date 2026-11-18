@@ -1,10 +1,10 @@
-// Module ID: 16267
-// Function ID: 16268
+// Module ID: 14934
+// Function ID: 14935
 // Name: useHasXboxMonthlyOrbsPerk
 // Dependencies: [1388, 1390, 2174, 1394, 1401, 504, 2]
 // Exports: hasCrepeMonthlyOrbsPerk, useHasXboxMonthlyOrbsPerk
 
-// Module 16267 (useHasXboxMonthlyOrbsPerk)
+// Module 14934 (useHasXboxMonthlyOrbsPerk)
 import get_initialized from "get initialized" /* 504 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
 import PerksStateUtils from "PerksStateUtils" /* 1394 */;
@@ -18,34 +18,43 @@ const PremiumTypes = PremiumConstants.PremiumTypes;
 const result = size.fileFinishedImporting("modules/rewards/hooks/useHasXboxMonthlyOrbsPerk.tsx");
 
 export function hasCrepeMonthlyOrbsPerk(currentUser) {
+  let flag = arg1;
+  if (arg1 === undefined) {
+    flag = true;
+  }
   const obj = PremiumUtilsDefault;
   if (obj.canUseMonthlyOrbs(currentUser)) {
-    const obj2 = PremiumUtils;
-    if (!obj2.isPremiumExactly(currentUser, PremiumTypes.TIER_2)) {
-      let perks;
-      const getPerkSource = PerksStateUtils.getPerkSource;
-      PerksStateUtils;
-      if (currentUser != null) {
-        perks = currentUser.perks;
-      }
-      const perkSource = getPerkSource(perks, tmp2(1401).Perk.MONTHLY_ORBS);
-      const hasItem = null != perkSource && perkSource.includes(tmp2(1401).PerkSource.SOURCE_THIRDPARTY_CROISSANT);
-      return hasItem;
+    if (flag) {
+      PremiumUtils;
     }
+    let perks;
+    const getPerkSource = PerksStateUtils.getPerkSource;
+    PerksStateUtils;
+    if (currentUser != null) {
+      perks = currentUser.perks;
+    }
+    const perkSource = getPerkSource(perks, tmp4(1401).Perk.MONTHLY_ORBS);
+    const hasItem = null != perkSource && perkSource.includes(tmp4(1401).PerkSource.SOURCE_THIRDPARTY_CROISSANT);
+    return hasItem;
   }
   return false;
 }
 export function useHasXboxMonthlyOrbsPerk() {
   let currentUser;
+  let flag = arg0;
+  if (arg0 === undefined) {
+    flag = true;
+  }
   const items = [UserStore];
   const obj = get_initialized;
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  let flag = false;
+  if (flag === undefined) {
+    flag = true;
+  }
+  let flag2 = false;
   const obj2 = PremiumUtilsDefault;
   if (obj2.canUseMonthlyOrbs(stateFromStores)) {
-    flag = false;
-    const tmpResult = PremiumUtils;
-    if (!tmpResult.isPremiumExactly(stateFromStores, PremiumTypes.TIER_2)) {
+    if (!flag) {
       let perks;
       const getPerkSource = PerksStateUtils.getPerkSource;
       PerksStateUtils;
@@ -54,8 +63,11 @@ export function useHasXboxMonthlyOrbsPerk() {
       }
       const perkSource = getPerkSource(perks, tmp(1401).Perk.MONTHLY_ORBS);
       const hasItem = null != perkSource && perkSource.includes(tmp(1401).PerkSource.SOURCE_THIRDPARTY_CROISSANT);
-      flag = hasItem;
+      flag2 = hasItem;
+    } else {
+      flag2 = false;
+      PremiumUtils;
     }
   }
-  return flag;
+  return flag2;
 }

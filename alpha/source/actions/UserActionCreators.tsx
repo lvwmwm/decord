@@ -1,10 +1,10 @@
-// Module ID: 7360
-// Function ID: 7361
+// Module ID: 6865
+// Function ID: 6866
 // Name: UserActionCreators
-// Dependencies: [5, 1407, 1388, 1072, 1073, 3, 1285, 572, 6836, 1349, 38, 6755, 2]
+// Dependencies: [5, 1407, 1388, 1072, 1073, 3, 1285, 572, 6340, 1349, 38, 6257, 2]
 // Exports: acceptAgreements, fetchCurrentUser, fetchMutualFriends, fetchProfile, getUser, insertStaticUser, setFlag
 
-// Module 7360 (UserActionCreators)
+// Module 6865 (UserActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -12,7 +12,7 @@ import Constants from "Constants" /* 1072 */;
 import RouteConstants from "RouteConstants" /* 1073 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
 import AnalyticsSchema from "AnalyticsSchema" /* 1349 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6836 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6340 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserRecord from "UserRecord" /* 1407 */;
 import UserStore from "UserStore" /* 1388 */;

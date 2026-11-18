@@ -1,28 +1,28 @@
-// Module ID: 13739
-// Function ID: 13740
+// Module ID: 13046
+// Function ID: 13047
 // Name: VoiceMessageButton
-// Dependencies: [5, 32, 19, 17, 5547, 8795, 5159, 8736, 13444, 13445, 1072, 5315, 6900, 21, 5486, 6898, 13740, 1655, 13448, 12627, 1496, 13049, 8884, 8861, 8671, 11133, 12798, 1108, 6009, 1113, 7056, 5487, 8203, 6008, 1708, 8192, 5592, 13742, 13720, 11824, 11689, 2]
+// Dependencies: [5, 32, 19, 17, 5038, 8292, 4672, 8227, 12751, 12752, 1072, 4828, 6404, 21, 4999, 6402, 13047, 1655, 12755, 11912, 1496, 12336, 8380, 8357, 8162, 10415, 12092, 1108, 5505, 1113, 6560, 5000, 7706, 5504, 1708, 7695, 5083, 13049, 13027, 11106, 10971, 2]
 
-// Module 13739 (VoiceMessageButton)
+// Module 13046 (VoiceMessageButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import _mod1708 from "module_1708" /* 1708 */;
-import MessageConstants from "MessageConstants" /* 5315 */;
-import RootNavigationRef from "RootNavigationRef" /* 5487 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5592 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 6900 */;
-import isChannelFocused from "isChannelFocused" /* 7056 */;
-import VoiceMessageUtils from "VoiceMessageUtils" /* 13740 */;
+import MessageConstants from "MessageConstants" /* 4828 */;
+import RootNavigationRef from "RootNavigationRef" /* 5000 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5083 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 6404 */;
+import isChannelFocused from "isChannelFocused" /* 6560 */;
+import VoiceMessageUtils from "VoiceMessageUtils" /* 13047 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ActionSheetStore from "ActionSheetStore" /* 5547 */;
-import PendingReplyStore from "PendingReplyStore" /* 8795 */;
-import ChannelStore from "ChannelStore" /* 5159 */;
-import DraftStore from "DraftStore" /* 8736 */;
-import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 13444 */;
-import VoiceMessageConstants from "VoiceMessageConstants" /* 13445 */;
+import ActionSheetStore from "ActionSheetStore" /* 5038 */;
+import PendingReplyStore from "PendingReplyStore" /* 8292 */;
+import ChannelStore from "ChannelStore" /* 4672 */;
+import DraftStore from "DraftStore" /* 8227 */;
+import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 12751 */;
+import VoiceMessageConstants from "VoiceMessageConstants" /* 12752 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -82,7 +82,7 @@ const memoResult = react.memo(function VoiceMessageButton(disabled) {
   let c14;
   let tmp = disabled;
   let tmp2 = dependencyMap;
-  let obj = disabled(13448);
+  let obj = disabled(12755);
   const isMobileRTCV2Enabled = obj.useIsMobileRTCV2Enabled("VoiceMessageButton");
   let tmp4 = state((voiceMessageAnimationState) => voiceMessageAnimationState.voiceMessageAnimationState);
   dependencyMap = tmp4;
@@ -111,7 +111,7 @@ const memoResult = react.memo(function VoiceMessageButton(disabled) {
   let closure_8 = react.useRef(AppState.currentState);
   let closure_9 = react.useRef(null);
   const tmp12 = channelId;
-  const tmp13 = channelId(12627)();
+  const tmp13 = channelId(11912)();
   const width = channelId(1496)().width;
   const tmp14 = sharedValue;
   const useCallback = react.useCallback;
@@ -327,7 +327,7 @@ const memoResult = react.memo(function VoiceMessageButton(disabled) {
       }
     };
   }, items4);
-  let obj5 = disabled(5486);
+  let obj5 = disabled(4999);
   let items5 = [first, tmp11, channelId];
   const isModalOpen = obj5.useIsModalOpen();
   const effect4 = react.useEffect(() => {
@@ -622,7 +622,7 @@ const memoResult = react.memo(function VoiceMessageButton(disabled) {
       obj.endAudioRecording();
     }
   }, items11);
-  const tmp12Result = tmp12(8192);
+  const tmp12Result = tmp12(7695);
   const tmp14Result = tmp14(function*(arg0, value) {
     if (c2 === 2) {
       c2 = 3;
@@ -805,15 +805,15 @@ const memoResult = react.memo(function VoiceMessageButton(disabled) {
     VoiceMessageButtonTsx4.__initData = tmp20;
     return onFinalize(VoiceMessageButtonTsx4);
   }, items12);
-  const tooltipTargetRef = tmp12(13742)().tooltipTargetRef;
+  const tooltipTargetRef = tmp12(13049)().tooltipTargetRef;
   let obj6 = { gesture: memo, children: tmp35(tmp12Result2, obj7) };
-  const GestureDetector = tmp(5592).GestureDetector;
+  const GestureDetector = tmp(5083).GestureDetector;
   obj7 = { ref: tooltipTargetRef, IconComponent: MicrophoneIcon, active: false, accessibilityLabel: intl2.string(tmp(1113).t.lwy6aX), accessibilityActions, onAccessibilityAction, disabled };
-  tmp12Result2 = tmp12(13720);
+  tmp12Result2 = tmp12(13027);
   if (isMobileRTCV2Enabled) {
-    MicrophoneIcon = tmp(11824).WaveformIcon;
+    MicrophoneIcon = tmp(11106).WaveformIcon;
   } else {
-    MicrophoneIcon = tmp(11689).MicrophoneIcon;
+    MicrophoneIcon = tmp(10971).MicrophoneIcon;
   }
   intl2 = tmp(1113).intl;
   return jsx(GestureDetector, obj6);

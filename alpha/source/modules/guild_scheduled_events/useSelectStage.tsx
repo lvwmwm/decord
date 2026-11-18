@@ -1,15 +1,15 @@
-// Module ID: 15966
-// Function ID: 15967
+// Module ID: 14609
+// Function ID: 14610
 // Name: useSelectStage
-// Dependencies: [5, 32, 19, 5159, 5213, 504, 7688, 2]
+// Dependencies: [5, 32, 19, 4672, 4726, 504, 7191, 2]
 // Exports: default
 
-// Module 15966 (useSelectStage)
+// Module 14609 (useSelectStage)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5159 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5213 */;
+import ChannelStore from "ChannelStore" /* 4672 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4726 */;
 import size from "module_2" /* 2 */;
 
 let c3, c6, channel;

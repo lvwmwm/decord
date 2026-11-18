@@ -1,16 +1,16 @@
-// Module ID: 15162
-// Function ID: 15163
+// Module ID: 13788
+// Function ID: 13789
 // Name: InviteRolesDisplay
-// Dependencies: [19, 17, 5216, 21, 5310, 504, 5923, 1113, 12881, 2]
+// Dependencies: [19, 17, 4729, 21, 4823, 504, 5414, 1113, 12175, 2]
 // Exports: default
 
-// Module 15162 (InviteRolesDisplay)
+// Module 13788 (InviteRolesDisplay)
 import react_native from "react-native" /* 17 */;
-import RolePillDefault from "RolePill" /* 12881 */;
+import RolePillDefault from "RolePill" /* 12175 */;
 import react from "react" /* 19 */;
-import GuildRoleStore from "GuildRoleStore" /* 5216 */;
+import GuildRoleStore from "GuildRoleStore" /* 4729 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -38,7 +38,7 @@ export default function InviteRolesDisplay(roleIds) {
   if (0 !== stateFromStoresArray.length) {
     const obj2 = { style: tmp.container, children: items2 };
     const obj3 = { variant: "body-xs/semibold", color: "text-muted", style: tmp.label, children: intl.string(roleIds(1113).t.stcSfI) };
-    const Text = tmp2(5923).Text;
+    const Text = tmp2(5414).Text;
     intl = tmp2(1113).intl;
     items2 = [closure_5(Text, obj3), ];
     const obj4 = {

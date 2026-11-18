@@ -1,10 +1,10 @@
-// Module ID: 17070
-// Function ID: 17071
+// Module ID: 15724
+// Function ID: 15725
 // Name: MutexUtils
 // Dependencies: [2]
 // Exports: createLock, createObservableLock
 
-// Module 17070 (MutexUtils)
+// Module 15724 (MutexUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/utils/MutexUtils.tsx");

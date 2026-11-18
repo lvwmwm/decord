@@ -1,20 +1,20 @@
-// Module ID: 11308
-// Function ID: 11309
+// Module ID: 10590
+// Function ID: 10591
 // Name: InteractionUtils
-// Dependencies: [5, 502, 8670, 1072, 11, 8875, 11227, 6379, 1285, 2119, 8671, 11309, 572, 6380, 2, 6377]
+// Dependencies: [5, 502, 8161, 1072, 11, 8371, 10509, 5881, 1285, 2119, 8162, 10591, 572, 5882, 2, 5879]
 // Exports: canRetryInteractionData, executeMessageComponentInteraction, getInteractionInitialResponseDeadlineTimestamp, getInteractionStatusViewState, getInteractionTimeoutTimestamp
 
-// Module 11308 (InteractionUtils)
+// Module 10590 (InteractionUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Server from "Server" /* 2119 */;
-import interactionCallbackErrorReason from "interactionCallbackErrorReason" /* 6377 */;
-import InteractionTypes from "InteractionTypes" /* 6379 */;
-import InteractionActionCreators from "InteractionActionCreators" /* 11227 */;
-import _slicedToArray from "_slicedToArray" /* 11309 */;
+import interactionCallbackErrorReason from "interactionCallbackErrorReason" /* 5879 */;
+import InteractionTypes from "InteractionTypes" /* 5881 */;
+import InteractionActionCreators from "InteractionActionCreators" /* 10509 */;
+import _slicedToArray from "_slicedToArray" /* 10591 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import InteractionStore from "InteractionStore" /* 8670 */;
+import InteractionStore from "InteractionStore" /* 8161 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -203,7 +203,7 @@ function handleInteractionResponse(nonce, ok, applicationId, channelId, guildId)
                   dispatch2(obj2);
                 }
                 let message;
-                const setFailed2 = tmp26(11227).setFailed;
+                const setFailed2 = tmp26(10509).setFailed;
                 InteractionActionCreators;
                 if (firstSkemaError != null) {
                   message = firstSkemaError.message;

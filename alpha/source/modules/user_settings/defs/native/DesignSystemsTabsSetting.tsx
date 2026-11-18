@@ -1,12 +1,12 @@
-// Module ID: 18470
-// Function ID: 18471
+// Module ID: 17281
+// Function ID: 17282
 // Name: DesignSystemsTabsSetting
-// Dependencies: [9213, 1072, 12612, 18471, 2]
+// Dependencies: [8624, 1072, 11897, 17282, 2]
 
-// Module 18470 (DesignSystemsTabsSetting)
+// Module 17281 (DesignSystemsTabsSetting)
 import Constants from "Constants" /* 1072 */;
-import SettingsConstants from "SettingsConstants" /* 9213 */;
-import SettingBuilders from "SettingBuilders" /* 12612 */;
+import SettingsConstants from "SettingsConstants" /* 8624 */;
+import SettingBuilders from "SettingBuilders" /* 11897 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

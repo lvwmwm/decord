@@ -1,14 +1,14 @@
-// Module ID: 17499
-// Function ID: 17500
+// Module ID: 16156
+// Function ID: 16157
 // Name: FamilyCenterSettingParentalControlsSetting
-// Dependencies: [9213, 1072, 12612, 1113, 2703, 17500, 2]
+// Dependencies: [8624, 1072, 11897, 1113, 2723, 16157, 2]
 
-// Module 17499 (FamilyCenterSettingParentalControlsSetting)
+// Module 16156 (FamilyCenterSettingParentalControlsSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import _modDef2703 from "module_2703" /* 2703 */;
-import SettingsConstants from "SettingsConstants" /* 9213 */;
-import SettingBuilders from "SettingBuilders" /* 12612 */;
+import _modDef2723 from "module_2723" /* 2723 */;
+import SettingsConstants from "SettingsConstants" /* 8624 */;
+import SettingBuilders from "SettingBuilders" /* 11897 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -18,7 +18,7 @@ const UserSettingsSections = Constants.UserSettingsSections;
 const obj = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef2703.ahKIJO);
+    return intl.string(_modDef2723.ahKIJO);
   },
   parent: MobileUserSettings.FAMILY_CENTER,
   unsearchable: true,

@@ -1,24 +1,24 @@
-// Module ID: 18006
-// Function ID: 18007
+// Module ID: 16808
+// Function ID: 16809
 // Name: DisplayNameStylesEffectPickerSheet
-// Dependencies: [32, 19, 17, 1397, 21, 5310, 575, 8570, 18001, 5548, 5546, 5560, 18004, 1113, 3127, 5930, 6335, 10081, 10077, 10078, 2]
+// Dependencies: [32, 19, 17, 1397, 21, 4823, 575, 8061, 16803, 5039, 5037, 5051, 16806, 1113, 3147, 5421, 5837, 9363, 9357, 9358, 2]
 // Exports: default
 
-// Module 18006 (DisplayNameStylesEffectPickerSheet)
+// Module 16808 (DisplayNameStylesEffectPickerSheet)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1397 */;
-import _modDef3127 from "module_3127" /* 3127 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
-import HapticUtils from "HapticUtils" /* 5548 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10077 */;
-import types from "types" /* 10078 */;
-import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 10081 */;
+import _modDef3147 from "module_3147" /* 3147 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
+import HapticUtils from "HapticUtils" /* 5039 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 9357 */;
+import types from "types" /* 9358 */;
+import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 9363 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -47,7 +47,7 @@ function EffectTile(arg0) {
   const string = intl.string;
   let OpWJ3f = useDisplayNameStylesEffectConfigs.DISPLAY_NAME_STYLES_EFFECT_NAMES[effectId];
   if (OpWJ3f == null) {
-    OpWJ3f = _modDef3127.OpWJ3f;
+    OpWJ3f = _modDef3147.OpWJ3f;
   }
   const stringResult = string(OpWJ3f);
   const items = [tmp.effectCard, ];
@@ -113,9 +113,9 @@ export default function DisplayNameStylesEffectPickerSheet(userId) {
   let closure_7;
   let tmp = closure_10();
   let tmp3 = dependencyMap;
-  let obj = userId(8570);
+  let obj = userId(8061);
   const bottomSheetRef = obj.useBottomSheetRef().bottomSheetRef;
-  let obj2 = userId(18001);
+  let obj2 = userId(16803);
   const displayNameStylesNewEffects = obj2.useDisplayNameStylesNewEffects(closure_7);
   ({ dotEffectIds: c2, dismissEffectDot: c3 } = displayNameStylesNewEffects);
   [first, closure_5] = first.useState(selectedEffectId);
@@ -128,12 +128,12 @@ export default function DisplayNameStylesEffectPickerSheet(userId) {
   let tmp9 = null;
   if (null != userId) {
     const obj3 = { ref: bottomSheetRef, header: closure_8(tmp12, obj4), children: closure_8(closure_5, obj6) };
-    const BottomSheet = tmp2(5560).BottomSheet;
-    obj4 = { title: intl.string(onSelectEffect(3127).RVtMxT), trailing: closure_8(Button, obj5) };
-    tmp12 = onSelectEffect(18004);
+    const BottomSheet = tmp2(5051).BottomSheet;
+    obj4 = { title: intl.string(onSelectEffect(3147).RVtMxT), trailing: closure_8(Button, obj5) };
+    tmp12 = onSelectEffect(16806);
     intl = tmp2(1113).intl;
     obj5 = { text: intl2.string(userId(1113).t.XqMe3N), onPress: tmp8, variant: "primary", size: "sm" };
-    Button = tmp2(5930).Button;
+    Button = tmp2(5421).Button;
     intl2 = tmp2(1113).intl;
     obj6 = { style: tmp.container, children: closure_8(closure_5, obj7) };
     obj7 = { style: tmp.contentContainer, children: closure_8(Stack, obj8) };
@@ -159,7 +159,7 @@ export default function DisplayNameStylesEffectPickerSheet(userId) {
           return closure_1_8(EffectTile, obj, effectId);
         })
     };
-    Stack = tmp2(6335).Stack;
+    Stack = tmp2(5837).Stack;
     tmp9 = closure_8(BottomSheet, obj3);
   }
   return tmp9;

@@ -1,16 +1,15 @@
-// Module ID: 16265
-// Function ID: 16266
+// Module ID: 14932
+// Function ID: 14933
 // Name: ProgramRewardsStore
-// Dependencies: [32, 1388, 16263, 4754, 4782, 4737, 504, 1089, 16266, 16268, 572, 2]
+// Dependencies: [32, 1388, 14930, 1089, 504, 14933, 14935, 572, 2]
 
-// Module 16265 (ProgramRewardsStore)
+// Module 14932 (ProgramRewardsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import addMinutesDefault from "addMinutes" /* 4754 */;
-import NetworkTtlCache from "NetworkTtlCache" /* 16263 */;
-import ProgramRewardsUtils from "ProgramRewardsUtils" /* 16266 */;
-import ProgramRewardsTypes from "ProgramRewardsTypes" /* 16268 */;
+import NetworkTtlCache from "NetworkTtlCache" /* 14930 */;
+import ProgramRewardsUtils from "ProgramRewardsUtils" /* 14933 */;
+import ProgramRewardsTypes from "ProgramRewardsTypes" /* 14935 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
@@ -22,36 +21,48 @@ function getCacheTtlState() {
   if (null == value) {
     return { state: closure_1_8.MORE_THAN_24H_BEFORE_REWARD };
   } else {
-    const _Date2 = Date;
-    const self3 = this;
-    const self4 = this;
+    const _Date3 = Date;
+    const self5 = this;
+    const self6 = this;
     const date = new Date();
     const values = value.values();
-    const obj7 = values[Symbol.iterator]();
-    while (obj7 !== undefined) {
+    const obj10 = values[Symbol.iterator]();
+    while (obj10 !== undefined) {
       let _Date = Date;
       let self = this;
       let self2 = this;
       let date1 = new Date(tmp2.next_reward_date);
-      let tmp5 = date1;
+      let tmp4 = date1;
+      let obj3 = date1;
       let _isNaN = isNaN;
       if (!isNaN(date1.getTime())) {
-        let tmp6 = importDefault;
-        let tmp7 = dependencyMap;
-        let tmp9 = addMinutesDefault(tmp5, 10);
-        let tmp10 = tmp9;
-        if (date >= tmp9) {
+        let _Date2 = Date;
+        let time = obj3.getTime();
+        let self3 = this;
+        let self4 = this;
+        let date2 = new Date(time + 10 * DurationsDefault.Millis.MINUTE);
+        let obj4 = date2;
+        if (date >= date2) {
           let obj2 = { state: closure_1_8.PAST_REWARD_DATE };
-          obj7.return();
+          obj10.return();
           return obj2;
-        } else if (date >= tmp5) {
-          let obj3 = { state: closure_1_8.LESS_THAN_24H_BEFORE_REWARD, msUntilReward: tmp6(tmp7[4])(tmp10, date) };
-          obj7.return();
-          return obj3;
-        } else if (date >= tmp6(tmp7[5])(tmp5, -1)) {
-          let obj4 = { state: closure_1_8.LESS_THAN_24H_BEFORE_REWARD, msUntilReward: tmp6(tmp7[4])(tmp10, date) };
-          obj7.return();
-          return obj4;
+        } else if (date >= obj3) {
+          let time1 = obj4.getTime();
+          let obj5 = { state: closure_1_8.LESS_THAN_24H_BEFORE_REWARD, msUntilReward: time1 - date.getTime() };
+          obj10.return();
+          return obj5;
+        } else {
+          let _Date4 = Date;
+          let self7 = this;
+          let self8 = this;
+          let date3 = new Date(tmp4);
+          let setDateResult = date3.setDate(obj3.getDate() - 1);
+          if (date >= date3) {
+            let time2 = obj4.getTime();
+            let obj6 = { state: closure_1_8.LESS_THAN_24H_BEFORE_REWARD, msUntilReward: time2 - date.getTime() };
+            obj10.return();
+            return obj6;
+          }
         }
       }
       continue;
@@ -154,7 +165,7 @@ class ProgramRewardsStore extends PersistedStore {
                       [tmp, tmp2] = item;
                       const obj = { reward_program: NumberResult };
                       const merged = Object.assign(tmp2);
-                      NumberResult = closure_1_0(closure_1_2[9]).RewardProgram[tmp];
+                      NumberResult = closure_1_0(closure_1_2[6]).RewardProgram[tmp];
                       if (NumberResult == null) {
                         const _Number = Number;
                         NumberResult = Number(tmp);
@@ -325,12 +336,11 @@ let obj2 = {
         const result = map.set(reward_program.reward_program, reward_program);
       });
       obj.setValue(map);
-      let tmp6 = getCacheTtlState();
-      ({ state, msUntilReward } = tmp6);
+      ({ state, msUntilReward } = getCacheTtlState());
       let tmp7 = closure_8;
       const setTtl = obj.setTtl;
+      getCacheTtlState();
       if (closure_8.LESS_THAN_24H_BEFORE_REWARD === state) {
-        let tmp9 = null;
         if (msUntilReward == null) {
           msUntilReward = c6;
         }

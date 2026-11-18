@@ -1,16 +1,16 @@
-// Module ID: 17119
-// Function ID: 17120
+// Module ID: 15775
+// Function ID: 15776
 // Name: HexagonActionCreators
-// Dependencies: [5, 1388, 5335, 3, 1089, 1285, 5338, 572, 2]
+// Dependencies: [5, 1388, 4848, 3, 1089, 1285, 4851, 572, 2]
 // Exports: clearHexagonCampaignAppliedPerks, ensureHexagonCampaignEnrollment, getPendingHexagonCampaignEnrollment, markHexagonCampaignDisplayNameStylesVisited, markHexagonCampaignExpiredClientThemeRestored, markHexagonCampaignPerkApplied, saveHexagonCampaignPreviousAppIcon, saveHexagonCampaignPreviousDisplayNameStyles, saveHexagonCampaignPreviousPerkValues
 
-// Module 17119 (HexagonActionCreators)
+// Module 15775 (HexagonActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5335 */;
-import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5338 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4848 */;
+import HexagonCampaignUtils from "HexagonCampaignUtils" /* 4851 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;

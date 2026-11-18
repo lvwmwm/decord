@@ -1,9 +1,9 @@
-// Module ID: 10218
-// Function ID: 10219
+// Module ID: 9499
+// Function ID: 9500
 // Name: MobileWebHandoffUtils
 // Dependencies: [5, 1072, 1269, 1285, 2]
 
-// Module 10218 (MobileWebHandoffUtils)
+// Module 9499 (MobileWebHandoffUtils)
 import Constants from "Constants" /* 1072 */;
 import v1 from "v1" /* 1269 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
@@ -70,9 +70,9 @@ let obj = function _createHandoffToken() {
               throw error;
             }
           }
-        } catch (tmp15) {
+        } catch (tmp11) {
           c3 = 3;
-          throw tmp15;
+          throw tmp11;
         }
       }
     })();

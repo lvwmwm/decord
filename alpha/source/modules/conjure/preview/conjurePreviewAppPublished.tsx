@@ -1,10 +1,10 @@
-// Module ID: 14534
-// Function ID: 14535
+// Module ID: 14666
+// Function ID: 14667
 // Name: conjurePreviewAppPublished
 // Dependencies: [2]
 // Exports: nextConjurePreviewAppPublished, notifyConjurePreviewAppPublished
 
-// Module 14534 (conjurePreviewAppPublished)
+// Module 14666 (conjurePreviewAppPublished)
 import size from "module_2" /* 2 */;
 
 let set;
@@ -13,7 +13,7 @@ const map = new Map();
 let result = size.fileFinishedImporting("modules/conjure/preview/conjurePreviewAppPublished.tsx");
 
 export function nextConjurePreviewAppPublished(arg0, arg1) {
-  const f109858 = function(arg0) {
+  const f107919 = function(arg0) {
     closure_0 = arg0;
     function onPublished() {
       finish(true);
@@ -51,12 +51,12 @@ export function nextConjurePreviewAppPublished(arg0, arg1) {
 
   }
   let obj = {
-    published: new Promise(f109858),
+    published: new Promise(f107919),
     cancel() {
       return finish(false);
     }
   };
-  new Promise(f109858);
+  new Promise(f107919);
   return obj;
 }
 export function notifyConjurePreviewAppPublished(projectId) {

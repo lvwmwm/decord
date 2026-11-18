@@ -1,11 +1,11 @@
-// Module ID: 12549
-// Function ID: 12550
+// Module ID: 11832
+// Function ID: 11833
 // Name: useConjureDefaultAppIcon
-// Dependencies: [19, 5896, 575, 12550, 2]
+// Dependencies: [19, 5387, 575, 11833, 2]
 // Exports: default
 
-// Module 12549 (useConjureDefaultAppIcon)
-import conjureDefaultAppIcon2 from "conjureDefaultAppIcon" /* 12550 */;
+// Module 11832 (useConjureDefaultAppIcon)
+import conjureDefaultAppIcon2 from "conjureDefaultAppIcon" /* 11833 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

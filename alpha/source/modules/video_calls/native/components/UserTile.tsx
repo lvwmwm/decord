@@ -1,34 +1,34 @@
-// Module ID: 11418
-// Function ID: 11419
+// Module ID: 10700
+// Function ID: 10701
 // Name: UserTile
-// Dependencies: [32, 19, 17, 6367, 11419, 502, 5159, 2133, 1072, 5977, 6072, 21, 5310, 575, 5307, 504, 8625, 1187, 11444, 5923, 1113, 11405, 11407, 11445, 11446, 11447, 11448, 10297, 7034, 11417, 11449, 11392, 11395, 5592, 11450, 2]
+// Dependencies: [32, 19, 17, 5869, 10701, 502, 4672, 2133, 1072, 5473, 5568, 21, 4823, 575, 4820, 504, 8116, 1187, 10726, 5414, 1113, 10687, 10689, 10727, 10728, 10729, 10730, 9578, 6538, 10699, 10731, 10674, 10677, 5083, 10732, 2]
 // Exports: default
 
-// Module 11418 (UserTile)
+// Module 10700 (UserTile)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5923 */;
-import CallConstants from "CallConstants" /* 5977 */;
-import Constants2 from "Constants" /* 6072 */;
-import VoiceChannelEffectsStore2 from "VoiceChannelEffectsStore" /* 11419 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11444 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11445 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 11446 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 11447 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 11448 */;
-import mediaEngineContextFromParticipantTypeDefault from "mediaEngineContextFromParticipantType" /* 11449 */;
+import Text_Text from "Text/Text" /* 5414 */;
+import CallConstants from "CallConstants" /* 5473 */;
+import Constants2 from "Constants" /* 5568 */;
+import VoiceChannelEffectsStore2 from "VoiceChannelEffectsStore" /* 10701 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10726 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10727 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 10728 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 10729 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 10730 */;
+import mediaEngineContextFromParticipantTypeDefault from "mediaEngineContextFromParticipantType" /* 10731 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SoundboardStore from "SoundboardStore" /* 6367 */;
+import SoundboardStore from "SoundboardStore" /* 5869 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 5159 */;
+import ChannelStore from "ChannelStore" /* 4672 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
-import ColorUtils_mod from "ColorUtils" /* 5307 */;
+import createStyles_mod from "createStyles" /* 4823 */;
+import ColorUtils_mod from "ColorUtils" /* 4820 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

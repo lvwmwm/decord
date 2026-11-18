@@ -1,13 +1,13 @@
-// Module ID: 18431
-// Function ID: 18432
+// Module ID: 17236
+// Function ID: 17237
 // Name: ScrollBenchmark
-// Dependencies: [19, 21, 18428, 7453, 2]
+// Dependencies: [19, 21, 17233, 6956, 2]
 // Exports: default
 
-// Module 18431 (ScrollBenchmark)
+// Module 17236 (ScrollBenchmark)
 import Fragment from "Fragment" /* 21 */;
-import TableRow2 from "TableRow" /* 7453 */;
-import useFrameMonitorDefault from "useFrameMonitor" /* 18428 */;
+import TableRow2 from "TableRow" /* 6956 */;
+import useFrameMonitorDefault from "useFrameMonitor" /* 17233 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

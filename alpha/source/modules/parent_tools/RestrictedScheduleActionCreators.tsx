@@ -1,10 +1,10 @@
-// Module ID: 17507
-// Function ID: 17508
+// Module ID: 16164
+// Function ID: 16165
 // Name: RestrictedScheduleActionCreators
 // Dependencies: [5, 1072, 1285, 572, 2]
 // Exports: addRestrictedScheduleRule, deleteRestrictedScheduleRule, updateRestrictedScheduleRule
 
-// Module 17507 (RestrictedScheduleActionCreators)
+// Module 16164 (RestrictedScheduleActionCreators)
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

@@ -1,14 +1,14 @@
-// Module ID: 15333
-// Function ID: 15334
+// Module ID: 13961
+// Function ID: 13962
 // Name: useReferralProgramEligibleUsers
-// Dependencies: [5, 32, 19, 9302, 504, 38, 9303, 7360, 2]
+// Dependencies: [5, 32, 19, 8713, 504, 38, 8714, 6865, 2]
 // Exports: useReferralProgramEligibleUsers
 
-// Module 15333 (useReferralProgramEligibleUsers)
+// Module 13961 (useReferralProgramEligibleUsers)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 9302 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 8713 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,9 +1,9 @@
-// Module ID: 5198
-// Function ID: 5199
+// Module ID: 4711
+// Function ID: 4712
 // Name: Runtime
-// Dependencies: [4, 5190, 2]
+// Dependencies: [4, 4703, 2]
 
-// Module 5198 (Runtime)
+// Module 4711 (Runtime)
 import logger_Logger from "logger/Logger" /* 4 */;
 import size from "module_2" /* 2 */;
 
@@ -108,7 +108,7 @@ class Runtime {
   static initialize() {
     const self = this;
     if (!this.initialized) {
-      const KV_RAW = self(5190).KV_RAW;
+      const KV_RAW = self(4703).KV_RAW;
       const obj = {
         status(handle) {
             return self.onStatus(handle);

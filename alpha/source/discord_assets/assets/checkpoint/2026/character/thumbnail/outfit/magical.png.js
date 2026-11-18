@@ -1,8 +1,8 @@
-// Module ID: 6510
-// Function ID: 6511
+// Module ID: 6012
+// Function ID: 6013
 // Dependencies: [2]
 
-// Module 6510
+// Module 6012
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/thumbnail/outfit/magical.png.js");

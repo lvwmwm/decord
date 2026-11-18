@@ -1,14 +1,14 @@
-// Module ID: 16249
-// Function ID: 16250
+// Module ID: 14916
+// Function ID: 14917
 // Name: GuildProductsStore
-// Dependencies: [1089, 11, 5237, 504, 572, 2]
+// Dependencies: [1089, 11, 4750, 504, 572, 2]
 
-// Module 16249 (GuildProductsStore)
+// Module 14916 (GuildProductsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import SecondaryIndexMap from "SecondaryIndexMap" /* 5237 */;
+import SecondaryIndexMap from "SecondaryIndexMap" /* 4750 */;
 import size from "module_2" /* 2 */;
 
 let closure_3, closure_4, closure_5;

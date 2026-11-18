@@ -1,14 +1,14 @@
-// Module ID: 14086
-// Function ID: 14087
+// Module ID: 13390
+// Function ID: 13391
 // Name: GuildPowerupsMultiPerkCard
-// Dependencies: [19, 5311, 21, 14063, 504, 14087, 14060, 14085, 2]
+// Dependencies: [19, 4824, 21, 13367, 504, 13391, 13364, 13389, 2]
 // Exports: default
 
-// Module 14086 (GuildPowerupsMultiPerkCard)
+// Module 13390 (GuildPowerupsMultiPerkCard)
 import Fragment from "Fragment" /* 21 */;
-import openGuildPowerupsMultiPerkBottomSheetDefault from "openGuildPowerupsMultiPerkBottomSheet" /* 14060 */;
+import openGuildPowerupsMultiPerkBottomSheetDefault from "openGuildPowerupsMultiPerkBottomSheet" /* 13364 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5311 */;
+import AccessibilityStore from "AccessibilityStore" /* 4824 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -18,12 +18,12 @@ export default function GuildPowerupsMultiPerkCard(guildId) {
   let useReducedMotion;
   guildId = guildId.guildId;
   const listing = guildId.listing;
-  const tmp3 = listing(14063)(guildId, listing);
+  const tmp3 = listing(13367)(guildId, listing);
   let obj = guildId(504);
   const items = [AccessibilityStore];
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   const obj2 = { guildId, powerups: listing.powerups };
-  const tmp5 = listing(14087)(obj2);
+  const tmp5 = listing(13391)(obj2);
   const items1 = [guildId, listing];
   let tmp8Result = null;
   const tmp = listing;
@@ -33,7 +33,7 @@ export default function GuildPowerupsMultiPerkCard(guildId) {
       ({ title: obj3.title, description: obj3.description } = tmp3);
       const image = tmp3.image;
       ({ status: obj3.status, costDecorator: obj3.costDecorator } = tmp5);
-      tmp8Result = jsx(tmp(14085), { title: null, description: null, cost: tmp5.cost, imageUrl: stateFromStores ? image.staticUrl : image.animatedUrl, status: null, costDecorator: null, onPress: tmp6, badge: tmp3.badge });
+      tmp8Result = jsx(tmp(13389), { title: null, description: null, cost: tmp5.cost, imageUrl: stateFromStores ? image.staticUrl : image.animatedUrl, status: null, costDecorator: null, onPress: tmp6, badge: tmp3.badge });
     }
   }
   return tmp8Result;

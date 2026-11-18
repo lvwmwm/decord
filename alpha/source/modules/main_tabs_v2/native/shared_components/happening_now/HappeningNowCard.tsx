@@ -1,18 +1,18 @@
-// Module ID: 17959
-// Function ID: 17960
+// Module ID: 16762
+// Function ID: 16763
 // Name: HappeningNowCard
-// Dependencies: [19, 17, 17958, 21, 5310, 7781, 5482, 7455, 5923, 2]
+// Dependencies: [19, 17, 16761, 21, 4823, 7284, 4995, 6958, 5414, 2]
 // Exports: HappeningNowCardHeader, HappeningNowCardSubtitle, default
 
-// Module 17959 (HappeningNowCard)
+// Module 16762 (HappeningNowCard)
 import react_native from "react-native" /* 17 */;
-import Text_Text from "Text/Text" /* 5923 */;
-import Card_Card from "Card/Card" /* 7455 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7781 */;
+import Text_Text from "Text/Text" /* 5414 */;
+import Card_Card from "Card/Card" /* 6958 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7284 */;
 import react from "react" /* 19 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 17958 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 16761 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size_mod from "module_2" /* 2 */;
 
 let HAPPENING_NOW_BADGE_SIZE;
@@ -33,7 +33,7 @@ let metroRequire;
 let obj2;
 let tmp;
 let unpackModuleId;
-const useColorThemeBackgroundDefault = tmp(5482);
+const useColorThemeBackgroundDefault = tmp(4995);
 const View = react_native.View;
 const HAPPENING_NOW_CARD_MARGIN_RIGHT = HappeningNowConstants.HAPPENING_NOW_CARD_MARGIN_RIGHT;
 ({ HAPPENING_NOW_CARD_PADDING: hasOwnProperty, HAPPENING_NOW_CARD_HEIGHT: metroRequire, HAPPENING_NOW_BADGE_SIZE } = HappeningNowConstants);

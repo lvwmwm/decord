@@ -1,23 +1,23 @@
-// Module ID: 15919
-// Function ID: 15920
+// Module ID: 14562
+// Function ID: 14563
 // Name: WishlistViewerCoachmark
-// Dependencies: [19, 17, 5156, 21, 5310, 6014, 15920, 1113, 9579, 2]
+// Dependencies: [19, 17, 4669, 21, 4823, 5510, 14563, 1113, 8993, 2]
 // Exports: default
 
-// Module 15919 (WishlistViewerCoachmark)
+// Module 14562 (WishlistViewerCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1113 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5156 */;
-import FastImageDefault from "FastImage" /* 6014 */;
-import _modDef15920 from "module_15920" /* 15920 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4669 */;
+import FastImageDefault from "FastImage" /* 5510 */;
+import _modDef14563 from "module_14563" /* 14563 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 function CoachmarkImage() {
   const tmp = closure_7();
-  const obj3 = { uri: _modDef15920 };
+  const obj3 = { uri: _modDef14563 };
   FastImageDefault;
   return <View style={tmp.imageContainer}>{null}</View>;
 }

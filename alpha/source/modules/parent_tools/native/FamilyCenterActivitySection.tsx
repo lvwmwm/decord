@@ -1,21 +1,21 @@
-// Module ID: 17466
-// Function ID: 17467
+// Module ID: 16123
+// Function ID: 16124
 // Name: FamilyCenterActivitySection
-// Dependencies: [32, 19, 17, 8752, 21, 5310, 575, 9629, 9631, 17461, 5923, 6008, 1113, 2703, 13087, 17467, 7438, 2]
+// Dependencies: [32, 19, 17, 8248, 21, 4823, 575, 9043, 9045, 16118, 5414, 5504, 1113, 2723, 12385, 16124, 6941, 2]
 // Exports: default
 
-// Module 17466 (FamilyCenterActivitySection)
+// Module 16123 (FamilyCenterActivitySection)
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5923 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 9629 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 9631 */;
-import useFamilyCenterActivities from "useFamilyCenterActivities" /* 17461 */;
+import Text_Text from "Text/Text" /* 5414 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 9043 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 9045 */;
+import useFamilyCenterActivities from "useFamilyCenterActivities" /* 16118 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 8752 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 8248 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -70,7 +70,7 @@ function FamilyCenterActivitySectionHeader(displayType) {
     const tmp14 = React4;
     if (null !== tmp10) {
       const obj3 = { variant: "body-sm/medium", color: "text-muted", style: tmp.description, children: tmp10 };
-      tmp14Result = tmp14(tmp3(5923).Text, obj3);
+      tmp14Result = tmp14(tmp3(5414).Text, obj3);
     }
     const obj6 = { children: items };
     items[1] = tmp14Result;
@@ -101,9 +101,9 @@ export default function FamilyCenterActivitySection(displayType) {
   let tmp20Result;
   displayType = displayType.displayType;
   const tmp = closure_13();
-  let obj = displayType(17461);
+  let obj = displayType(16118);
   const actionsForDisplayType = obj.useActionsForDisplayType(displayType);
-  const obj2 = displayType(17461);
+  const obj2 = displayType(16118);
   const actionTotalsForDisplayType = obj2.useActionTotalsForDisplayType(displayType);
   const callback = react.useCallback(() => {
     const presentFailedToast = displayType(closure_2[11]).presentFailedToast;
@@ -111,7 +111,7 @@ export default function FamilyCenterActivitySection(displayType) {
     const intl = displayType(closure_2[12]).intl;
     presentFailedToast(intl.string(loadMore(closure_2[13]).Wu8BK2));
   }, []);
-  const obj3 = displayType(13087);
+  const obj3 = displayType(12385);
   const familyCenterActions = obj3.useFamilyCenterActions({ onError: callback });
   const loadMore = familyCenterActions.loadMore;
   const isMoreLoading = familyCenterActions.isMoreLoading;
@@ -127,7 +127,7 @@ export default function FamilyCenterActivitySection(displayType) {
     const formatToPlainString = intl.formatToPlainString;
     const _Math = Math;
     const obj4 = { pageSize: Math.min(actionTotalsForDisplayType - substr.length, tmp7) };
-    const v7dMmJY = loadMore(2703)["7dMmJY"];
+    const v7dMmJY = loadMore(2723)["7dMmJY"];
     const formatToPlainStringResult = formatToPlainString(v7dMmJY, obj4);
     const obj5 = { style: tmp.container, children: items1 };
     const obj6 = { displayType };
@@ -148,8 +148,8 @@ export default function FamilyCenterActivitySection(displayType) {
         obj9 = { style: tmp.loadMoreButton, animating: true, color: "#fff", size: "small" };
         tmp20Result = tmp20(tmp19, obj8);
       } else {
-        const obj10 = { style: tmp.loadMore, accessibilityLabel: formatToPlainStringResult, accessibilityRole: "button", onPress: tmp9, children: closure_9(displayType(5923).Text, obj11) };
-        const PressableOpacity = tmp2(7438).PressableOpacity;
+        const obj10 = { style: tmp.loadMore, accessibilityLabel: formatToPlainStringResult, accessibilityRole: "button", onPress: tmp9, children: closure_9(displayType(5414).Text, obj11) };
+        const PressableOpacity = tmp2(6941).PressableOpacity;
         obj11 = { style: tmp.loadMoreButton, variant: "body-xs/semibold", color: "text-overlay-light", children: formatToPlainStringResult };
         tmp20Result = tmp20(PressableOpacity, obj10);
       }

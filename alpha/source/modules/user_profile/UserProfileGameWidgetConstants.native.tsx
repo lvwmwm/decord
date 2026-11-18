@@ -1,16 +1,16 @@
-// Module ID: 10838
-// Function ID: 10839
+// Module ID: 10099
+// Function ID: 10100
 // Name: UserProfileGameWidgetConstants
-// Dependencies: [575, 10839, 10840, 9153, 9155, 6012, 2]
+// Dependencies: [575, 10100, 10102, 8564, 8566, 5508, 2]
 // Exports: getWidgetGameTagMetadata
 
-// Module 10838 (UserProfileGameWidgetConstants)
+// Module 10099 (UserProfileGameWidgetConstants)
 import nativeDefault from "native" /* 575 */;
-import FriendsIcon from "FriendsIcon" /* 6012 */;
-import ThumbsUpIcon from "ThumbsUpIcon" /* 9153 */;
-import ThumbsDownIcon from "ThumbsDownIcon" /* 9155 */;
-import RibbonIcon from "RibbonIcon" /* 10840 */;
-import UserProfileGameWidgetTagMetadata from "UserProfileGameWidgetTagMetadata" /* 10839 */;
+import FriendsIcon from "FriendsIcon" /* 5508 */;
+import ThumbsUpIcon from "ThumbsUpIcon" /* 8564 */;
+import ThumbsDownIcon from "ThumbsDownIcon" /* 8566 */;
+import RibbonIcon from "RibbonIcon" /* 10102 */;
+import UserProfileGameWidgetTagMetadata from "UserProfileGameWidgetTagMetadata" /* 10100 */;
 import size from "module_2" /* 2 */;
 
 const sm = nativeDefault.radii.sm;

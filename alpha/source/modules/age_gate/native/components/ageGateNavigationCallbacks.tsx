@@ -1,16 +1,16 @@
-// Module ID: 20217
-// Function ID: 20218
+// Module ID: 19488
+// Function ID: 19489
 // Name: ageGateNavigationCallbacks
-// Dependencies: [5343, 1097, 1072, 6828, 6915, 6833, 1256, 2]
+// Dependencies: [4856, 1097, 1072, 6332, 6419, 6337, 1256, 2]
 // Exports: generateOnBack, onGateClose, renderHeaderTitle
 
-// Module 20217 (ageGateNavigationCallbacks)
+// Module 19488 (ageGateNavigationCallbacks)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import AgeGateModalActionCreators from "AgeGateModalActionCreators" /* 6828 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6833 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6915 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5343 */;
+import AgeGateModalActionCreators from "AgeGateModalActionCreators" /* 6332 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6337 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6419 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4856 */;
 import AgeGateConstants from "AgeGateConstants" /* 1097 */;
 import size from "module_2" /* 2 */;
 

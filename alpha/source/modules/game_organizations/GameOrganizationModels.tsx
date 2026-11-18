@@ -1,10 +1,10 @@
-// Module ID: 12574
-// Function ID: 12575
+// Module ID: 11857
+// Function ID: 11858
 // Name: GameOrganizationModels
 // Dependencies: [2]
 // Exports: gameOrganizationFromServer, linkableGameOrganizationFromServer
 
-// Module 12574 (GameOrganizationModels)
+// Module 11857 (GameOrganizationModels)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_organizations/GameOrganizationModels.tsx");

@@ -1,18 +1,18 @@
-// Module ID: 13412
-// Function ID: 13413
+// Module ID: 12714
+// Function ID: 12715
 // Name: TraitOptionDetails
-// Dependencies: [19, 17, 21, 5310, 575, 6421, 1113, 3319, 5923, 9591, 7947, 6742, 13413, 2]
+// Dependencies: [19, 17, 21, 4823, 575, 5923, 1113, 3339, 5414, 9005, 7450, 6244, 12715, 2]
 // Exports: default
 
-// Module 13412 (TraitOptionDetails)
+// Module 12714 (TraitOptionDetails)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef3319 from "module_3319" /* 3319 */;
-import Text_Text from "Text/Text" /* 5923 */;
-import RarityBadgeDefault from "RarityBadge" /* 13413 */;
+import _modDef3339 from "module_3339" /* 3339 */;
+import Text_Text from "Text/Text" /* 5414 */;
+import RarityBadgeDefault from "RarityBadge" /* 12715 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -23,13 +23,13 @@ let hasOwnProperty;
 let metroRequire;
 let obj2;
 let obj3;
-function AssetDescription(asset) {
+function OptionDescription(option) {
   let formatResult;
   let subscribeLink;
-  asset = asset.asset;
+  option = option.option;
   let tmp = closure_7();
   _require = tmp;
-  if (asset.status === require("CheckpointCharacterAssets").CheckpointTraitOptionStatus.NITRO_LOCKED) {
+  if (option.status === require("CheckpointCharacterAssets").CheckpointTraitOptionStatus.NITRO_LOCKED) {
     const intl = tmp2(1113).intl;
     let obj = {
       subscribeHook(children, arg1) {
@@ -52,10 +52,10 @@ function AssetDescription(asset) {
           return React3(Text_Text.Text, obj, arg1);
         }
     };
-    formatResult = intl.format(_modDef3319.E6AfCb, obj);
+    formatResult = intl.format(_modDef3339.E6AfCb, obj);
   } else {
     const tmp2Result = require("CheckpointCustomizationUtils");
-    formatResult = tmp2Result.getPlaintextAssetDescription(asset);
+    formatResult = tmp2Result.getPlaintextAssetDescription(option);
   }
   const obj2 = { variant: "body-md/medium", color: "text-subtle", style: tmp.description, accessibilityElementsHidden: null == formatResult, children: formatResult };
   return closure_4(require("Text/Text").Text, obj2);
@@ -70,29 +70,31 @@ obj3 = { marginTop: nativeDefault.space.PX_4 };
 let closure_7 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/checkpoint/native/components/customization/TraitOptionDetails.tsx");
 
-export default function TraitOptionDetails(arg0) {
-  let asset;
+export default function TraitOptionDetails(titleAccessibilityLabel) {
   let hideRarity;
   let items;
   let items1;
-  ({ asset, hideRarity } = arg0);
+  let option;
+  let title;
+  ({ option, hideRarity, title } = titleAccessibilityLabel);
+  titleAccessibilityLabel = titleAccessibilityLabel.titleAccessibilityLabel;
   const tmp = closure_7();
   const obj = { style: tmp.titleRow, children: items };
-  const obj2 = { variant: "body-lg/medium", color: "text-default", style: tmp.title, children: asset.getName() };
+  const obj2 = { variant: "body-lg/medium", color: "text-default", style: tmp.title, accessibilityLabel: titleAccessibilityLabel, children: title };
   const Text = Text_Text.Text;
-  items = [React3(Text, obj2), ];
-  let tmp5Result = !hideRarity;
   const tmp3 = metroRequire;
   const tmp4 = View;
-  if (tmp5Result) {
-    tmp5Result = null != asset.rarity;
+  if (title == null) {
+    title = option.getName();
   }
+  items = [React3(Text, obj2), ];
+  let tmp5Result = !hideRarity && null != option.rarity;
   if (tmp5Result) {
-    const obj3 = { rarity: asset.rarity };
+    const obj3 = { rarity: option.rarity };
     tmp5Result = tmp5(RarityBadgeDefault, obj3);
   }
   const obj4 = { children: items1 };
   items[1] = tmp5Result;
-  items1 = [hasOwnProperty(tmp4, obj), React3(AssetDescription, { asset })];
+  items1 = [hasOwnProperty(tmp4, obj), React3(OptionDescription, { option })];
   return hasOwnProperty(tmp3, obj4);
 };

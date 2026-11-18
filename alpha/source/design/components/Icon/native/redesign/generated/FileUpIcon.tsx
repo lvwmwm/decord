@@ -1,14 +1,14 @@
-// Module ID: 14549
-// Function ID: 14550
+// Module ID: 17017
+// Function ID: 17018
 // Name: FileUpIcon
-// Dependencies: [19, 21, 575, 6013, 14550, 2]
+// Dependencies: [19, 21, 575, 5509, 17018, 2]
 // Exports: FileUpIcon
 
-// Module 14549 (FileUpIcon)
+// Module 17017 (FileUpIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6013 */;
-import AssetRegistry from "AssetRegistry" /* 14550 */;
+import BaseIconImage2 from "BaseIconImage" /* 5509 */;
+import AssetRegistry from "AssetRegistry" /* 17018 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

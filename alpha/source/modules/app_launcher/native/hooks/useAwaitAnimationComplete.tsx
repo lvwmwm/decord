@@ -1,10 +1,10 @@
-// Module ID: 13653
-// Function ID: 13654
+// Module ID: 12960
+// Function ID: 12961
 // Name: useAwaitAnimationComplete
 // Dependencies: [19, 21, 2]
 // Exports: AwaitAnimationContext, useAwaitAnimationCompletion
 
-// Module 13653 (useAwaitAnimationComplete)
+// Module 12960 (useAwaitAnimationComplete)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

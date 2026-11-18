@@ -1,26 +1,26 @@
-// Module ID: 20542
-// Function ID: 20543
+// Module ID: 19815
+// Function ID: 19816
 // Name: GuildSettingsModalAuditLogFilter
-// Dependencies: [32, 19, 17, 1388, 20538, 1072, 21, 5310, 575, 1113, 5366, 20540, 5372, 15158, 7758, 1630, 1502, 7081, 20543, 1187, 11731, 20544, 7757, 7835, 8607, 7898, 5906, 2]
+// Dependencies: [32, 19, 17, 1388, 19811, 1072, 21, 4823, 575, 1113, 4879, 19813, 4885, 13784, 7261, 1630, 1502, 6585, 19816, 1187, 11013, 19817, 7260, 7338, 8098, 7401, 5397, 2]
 // Exports: createAuditLogFilterActionData, createAuditLogFilterUserData, default
 
-// Module 20542 (GuildSettingsModalAuditLogFilter)
+// Module 19815 (GuildSettingsModalAuditLogFilter)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl6 from "intl" /* 1113 */;
-import UserUtilsDefault from "UserUtils" /* 5366 */;
-import react_native2 from "react-native" /* 5372 */;
-import FormRadio from "FormRadio" /* 7758 */;
-import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 15158 */;
-import AuditLogUtils from "AuditLogUtils" /* 20540 */;
-import AuditLogActionCreators from "AuditLogActionCreators" /* 20543 */;
+import UserUtilsDefault from "UserUtils" /* 4879 */;
+import react_native2 from "react-native" /* 4885 */;
+import FormRadio from "FormRadio" /* 7261 */;
+import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 13784 */;
+import AuditLogUtils from "AuditLogUtils" /* 19813 */;
+import AuditLogActionCreators from "AuditLogActionCreators" /* 19816 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;
-import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 20538 */;
+import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 19811 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

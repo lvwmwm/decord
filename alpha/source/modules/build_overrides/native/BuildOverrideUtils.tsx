@@ -1,15 +1,15 @@
-// Module ID: 12883
-// Function ID: 12884
+// Module ID: 12177
+// Function ID: 12178
 // Name: build_overrides/BuildOverrideUtils
-// Dependencies: [5, 12571, 1380, 12884, 12886, 12885, 6267, 1377, 2]
+// Dependencies: [5, 11854, 1380, 12178, 12180, 12179, 5769, 1377, 2]
 // Exports: refreshBuildOverride, setBuildOverrideFromLink, toggleOverride
 
-// Module 12883 (build_overrides/BuildOverrideUtils)
+// Module 12177 (build_overrides/BuildOverrideUtils)
 import BuildOverrideUtils from "BuildOverrideUtils" /* 1377 */;
-import ApplyBuildOverrideUtils from "ApplyBuildOverrideUtils" /* 12884 */;
-import BundleUpdaterDefault from "BundleUpdater" /* 12885 */;
+import ApplyBuildOverrideUtils from "ApplyBuildOverrideUtils" /* 12178 */;
+import BundleUpdaterDefault from "BundleUpdater" /* 12179 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 12571 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 11854 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import size from "module_2" /* 2 */;
 

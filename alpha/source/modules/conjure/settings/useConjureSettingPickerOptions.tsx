@@ -1,20 +1,20 @@
-// Module ID: 14447
-// Function ID: 14448
+// Module ID: 18345
+// Function ID: 18346
 // Name: useConjureSettingPickerOptions
-// Dependencies: [32, 19, 5240, 5181, 5252, 5367, 1388, 7025, 504, 7270, 7026, 1113, 4133, 12, 14448, 5948, 6349, 2]
+// Dependencies: [32, 19, 4753, 4694, 4765, 4880, 1388, 6529, 504, 6774, 6530, 1113, 4121, 12, 18346, 5439, 5851, 2]
 // Exports: conjureSettingPickedIds, default, useConjureSettingsGuildId, useConjureSettingsServers, withPickCap, withSavedPicks
 
-// Module 14447 (useConjureSettingPickerOptions)
-import ConjureProjectTypes from "ConjureProjectTypes" /* 7026 */;
-import ConjureUtils from "ConjureUtils" /* 7270 */;
+// Module 18345 (useConjureSettingPickerOptions)
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6530 */;
+import ConjureUtils from "ConjureUtils" /* 6774 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildChannelStore from "GuildChannelStore" /* 5240 */;
-import GuildStore from "GuildStore" /* 5181 */;
-import RelationshipStore from "RelationshipStore" /* 5252 */;
-import StreamerModeStore from "StreamerModeStore" /* 5367 */;
+import GuildChannelStore from "GuildChannelStore" /* 4753 */;
+import GuildStore from "GuildStore" /* 4694 */;
+import RelationshipStore from "RelationshipStore" /* 4765 */;
+import StreamerModeStore from "StreamerModeStore" /* 4880 */;
 import UserStore from "UserStore" /* 1388 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 7025 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6529 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1826,17 +1826,17 @@ let obj3 = {
     }
     throw "The input is not a PNG file!";
   },
-  toRGBA8(img) {
+  toRGBA8(size) {
     let height;
     let width;
-    ({ width, height } = img);
-    if (null == img.tabs.acTL) {
-      const items = [decodeImage(img.data, width, height, img).buffer];
+    ({ width, height } = size);
+    if (null == size.tabs.acTL) {
+      const items = [decodeImage(size.data, width, height, size).buffer];
       return items;
     } else {
       let num5;
-      if (null == img.frames[0].data) {
-        img.frames[0].data = img.data;
+      if (null == size.frames[0].data) {
+        size.frames[0].data = size.data;
       }
       const items1 = [];
       const result = width * height * 4;
@@ -1853,13 +1853,13 @@ let obj3 = {
       const self6 = this;
       const uint8Array2 = new Uint8Array(result);
       const tmp8 = uint8Array1;
-      for (let num5 = 0; num5 < img.frames.length; num5 = num5 + 1) {
-        let tmp12 = img.frames[num5];
+      for (let num5 = 0; num5 < size.frames.length; num5 = num5 + 1) {
+        let tmp12 = size.frames[num5];
         let x = tmp12.rect.x;
         let y = tmp12.rect.y;
         let width2 = tmp12.rect.width;
         let height2 = tmp12.rect.height;
-        let tmp17 = decodeImage(tmp12.data, width2, height2, img);
+        let tmp17 = decodeImage(tmp12.data, width2, height2, size);
         if (0 !== num5) {
           let num6 = 0;
           if (0 < result) {

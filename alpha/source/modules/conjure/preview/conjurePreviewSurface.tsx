@@ -1,14 +1,14 @@
-// Module ID: 7349
-// Function ID: 7350
+// Module ID: 6854
+// Function ID: 6855
 // Name: conjurePreviewSurface
-// Dependencies: [7027, 7028, 5971, 7350, 2]
+// Dependencies: [6531, 6532, 5467, 6855, 2]
 // Exports: getConjureBuilderPreviewFrame, getConjureBuilderPreviewFrames, getConjureBuilderPreviewOverlayFrame, getConjurePreviewGuildId, getConjurePreviewSurface, isConjurePreviewOverlayFrame, isConjurePreviewSurface
 
-// Module 7349 (conjurePreviewSurface)
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5971 */;
-import conjurePreviewFrameSurfaces from "conjurePreviewFrameSurfaces" /* 7350 */;
-import FramesStore from "FramesStore" /* 7027 */;
-import FramesConstants from "FramesConstants" /* 7028 */;
+// Module 6854 (conjurePreviewSurface)
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5467 */;
+import conjurePreviewFrameSurfaces from "conjurePreviewFrameSurfaces" /* 6855 */;
+import FramesStore from "FramesStore" /* 6531 */;
+import FramesConstants from "FramesConstants" /* 6532 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -18,14 +18,16 @@ let c3;
 let closure_4;
 let hasOwnProperty;
 let metroRequire;
-const f94193 = (item) => null != item;
+const f91368 = (item) => null != item;
 ({ getFrameHostWindowKey: c3, isLaunched: closure_4, makeFrameId: hasOwnProperty, OVERLAY_SURFACE: metroRequire } = FramesConstants);
 let c7 = "0";
 const CONJURE_PREVIEW_SURFACE = { type: EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL, channelId: "0" };
+let obj2 = { type: EmbeddedSurfaceType.EmbeddedSurfaceType.OVERLAY, ticketChannelId: "0" };
 let result = size.fileFinishedImporting("modules/conjure/preview/conjurePreviewSurface.tsx");
 
 export const CONJURE_UNKNOWN_CHANNEL = "0";
 export { CONJURE_PREVIEW_SURFACE };
+export const CONJURE_PREVIEW_OVERLAY_SURFACE = obj2;
 export function isConjurePreviewSurface(surface) {
   let tmp3 = surface.type === EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL;
   if (!tmp3) {
@@ -90,7 +92,7 @@ export function getConjureBuilderPreviewFrames(arg0) {
     }
     return getFrame(tmp2(tmp3, obj2));
   });
-  return mapped.filter(f94193);
+  return mapped.filter(f91368);
 }
 export function getConjureBuilderPreviewFrame(prop) {
   _require = prop;
@@ -113,7 +115,7 @@ export function getConjureBuilderPreviewFrame(prop) {
     }
     return getFrame(tmp2(tmp3, obj2));
   });
-  const found = mapped.filter(f94193);
+  const found = mapped.filter(f91368);
   let found1 = found.find(closure_4);
   if (found1 == null) {
     found1 = found[0];

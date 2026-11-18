@@ -1,22 +1,22 @@
-// Module ID: 19746
-// Function ID: 19747
+// Module ID: 19017
+// Function ID: 19018
 // Name: PermissionSpecUtils
-// Dependencies: [5163, 5181, 1072, 6910, 19747, 7276, 13110, 19748, 1113, 2188, 7297, 6937, 19749, 7296, 19750, 8415, 8877, 2]
+// Dependencies: [4676, 4694, 1072, 6414, 19018, 6780, 12408, 19019, 1113, 2188, 6802, 6441, 19020, 6801, 19021, 7905, 8373, 2]
 
-// Module 19746 (PermissionSpecUtils)
+// Module 19017 (PermissionSpecUtils)
 import intl34 from "intl" /* 1113 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
-import ChannelRecord from "ChannelRecord" /* 5163 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 6910 */;
-import useIsCreatorMonetizationEnabledGuild from "useIsCreatorMonetizationEnabledGuild" /* 7276 */;
-import GuildOfficialMessagesExperimentDefault from "GuildOfficialMessagesExperiment" /* 7296 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8415 */;
-import Tracking from "Tracking" /* 8877 */;
-import SoundmojiRenderingExperiment from "SoundmojiRenderingExperiment" /* 13110 */;
-import useGuildEligibleForStageChannels from "useGuildEligibleForStageChannels" /* 19747 */;
-import HangoutWindowExperiment from "HangoutWindowExperiment" /* 19748 */;
-import permissions_PermissionUtilsAll from "permissions/PermissionUtils" /* 19750 */;
-import GuildStore from "GuildStore" /* 5181 */;
+import ChannelRecord from "ChannelRecord" /* 4676 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 6414 */;
+import useIsCreatorMonetizationEnabledGuild from "useIsCreatorMonetizationEnabledGuild" /* 6780 */;
+import GuildOfficialMessagesExperimentDefault from "GuildOfficialMessagesExperiment" /* 6801 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 7905 */;
+import Tracking from "Tracking" /* 8373 */;
+import SoundmojiRenderingExperiment from "SoundmojiRenderingExperiment" /* 12408 */;
+import useGuildEligibleForStageChannels from "useGuildEligibleForStageChannels" /* 19018 */;
+import HangoutWindowExperiment from "HangoutWindowExperiment" /* 19019 */;
+import permissions_PermissionUtilsAll from "permissions/PermissionUtils" /* 19021 */;
+import GuildStore from "GuildStore" /* 4694 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -79,9 +79,9 @@ let obj = {
     const VoiceInThreadsExperiment = require("ThreadHooks").VoiceInThreadsExperiment;
     let obj2 = { guildId: guild_id, location: "3ad37d_1" };
     const enabled = VoiceInThreadsExperiment.getCurrentConfig(obj2).enabled && set.has(stateFromStores.type);
-    const tmp4Result = tmp4(6937);
+    const tmp4Result = tmp4(6441);
     const isStageVideoEnabledResult = tmp4Result.isStageVideoEnabled(guild_id);
-    const tmp4Result2 = tmp4(19749);
+    const tmp4Result2 = tmp4(19020);
     let result = tmp4Result2.canCurrentUserManageMessageFilters(guild_id);
     const isMediaChannelResult = stateFromStores.isMediaChannel();
     importDefault = isMediaChannelResult;
@@ -219,7 +219,7 @@ let obj = {
       }
       const obj9 = { sectionDescription: formatResult1, inSoundmojiExperiment };
       items4[5] = generateChannelVoiceChatSection(tmp3, stringResult1, obj9);
-      const generateChannelAppsSection2 = tmp33(19750).generateChannelAppsSection;
+      const generateChannelAppsSection2 = tmp33(19021).generateChannelAppsSection;
       permissions_PermissionUtilsAll;
       const intl15 = tmp4(1113).intl;
       items4[6] = generateChannelAppsSection2(tmp3, intl15.string(tmp4(1113).t["rrh/W6"]), { showActivities: false });
@@ -248,7 +248,7 @@ let obj = {
           const intl33 = tmp4(1113).intl;
           items5[3] = generateChannelAppsSection5(tmp3, intl33.string(tmp4(1113).t["rrh/W6"]));
           if (enabled) {
-            const generateChannelVoiceSection = tmp64(19750).generateChannelVoiceSection;
+            const generateChannelVoiceSection = tmp64(19021).generateChannelVoiceSection;
             permissions_PermissionUtilsAll;
             const intl = tmp4(1113).intl;
             const items6 = [generateChannelVoiceSection(tmp3, intl.string(tmp4(1113).t["46Ra1b"]))];

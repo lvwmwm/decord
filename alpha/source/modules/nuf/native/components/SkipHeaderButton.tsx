@@ -1,16 +1,16 @@
-// Module ID: 14226
-// Function ID: 14227
+// Module ID: 13530
+// Function ID: 13531
 // Name: SkipHeaderButton
-// Dependencies: [19, 21, 5310, 575, 1113, 9062, 2]
+// Dependencies: [19, 21, 4823, 575, 1113, 8473, 2]
 // Exports: default
 
-// Module 14226 (SkipHeaderButton)
+// Module 13530 (SkipHeaderButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import HeaderShared from "HeaderShared" /* 9062 */;
+import HeaderShared from "HeaderShared" /* 8473 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;

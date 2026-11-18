@@ -1,14 +1,14 @@
-// Module ID: 15755
-// Function ID: 15756
+// Module ID: 14388
+// Function ID: 14389
 // Name: NewUserIcon
-// Dependencies: [19, 21, 575, 6013, 15756, 2]
+// Dependencies: [19, 21, 575, 5509, 14389, 2]
 // Exports: NewUserIcon
 
-// Module 15755 (NewUserIcon)
+// Module 14388 (NewUserIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6013 */;
-import AssetRegistry from "AssetRegistry" /* 15756 */;
+import BaseIconImage2 from "BaseIconImage" /* 5509 */;
+import AssetRegistry from "AssetRegistry" /* 14389 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

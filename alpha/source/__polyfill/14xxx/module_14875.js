@@ -1,175 +1,224 @@
 // Module ID: 14875
 // Function ID: 14876
-// Dependencies: [14846, 14868]
+// Dependencies: [41, 42, 93, 95, 98, 158, 14876]
+// Exports: quotelessJson
 
 // Module 14875
-import _mod14846 from "module_14846" /* 14846 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
+import _wrapNativeSuper from "_wrapNativeSuper" /* 158 */;
+import { util } from "module_14876" /* 14876 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap;
 
-function isCommaContextStart(type) {
-  let tmp = null === type;
-  if (!tmp) {
-    let tmp4 = type.type === _mod14846.TYPE.Comma || type.type === tmp2(14846).TYPE.Function || type.type === tmp2(14846).TYPE.LeftParenthesis || type.type === tmp2(14846).TYPE.LeftSquareBracket || type.type === tmp2(14846).TYPE.LeftCurlyBracket;
-    if (!tmp4) {
-      tmp4 = type.type === tmp2(14846).TYPE.Delim && "?" !== type.value;
-      const tmp5 = type.type === tmp2(14846).TYPE.Delim && "?" !== type.value;
-    }
-    tmp = tmp4;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
-  return tmp;
 }
-function internalMatch(arg0, arg1, arg2) {
-  let closure_0;
-  let syntax;
-  _require = arg0;
-  dependencyMap = arg1;
-  let c2 = null;
-  Match = null;
-  c4 = -1;
-  let closure_5 = 0;
-  let prev = { type: 0, syntax: null, token: null, prev: null };
-  while (true) {
-    let tmp = c4;
-    let sum = c4 + 1;
-    c4 = sum;
-    let tmp3 = null;
-    if (sum < arg0.length) {
-      let tmp4 = c4;
-      tmp3 = arg0[c4];
-    }
-    Match = tmp3;
-    let tmp5 = null;
-    let tmp6 = null;
-    let tmp7 = null;
-    let tmp8 = null;
-    if (null === tmp3) {
-      break;
+class ZodError {
+  constructor(issues) {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, ZodError);
+    const obj = _getPrototypeOf(ZodError);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
     } else {
-      let tmp10 = _require;
-      if (tmp3.type === require("module_14846").TYPE.WhiteSpace) {
-        continue;
-      } else {
-        tmp5 = null;
-        tmp6 = null;
-        tmp7 = null;
-        tmp8 = null;
-        if (Match.type !== tmp10(14846).TYPE.Comment) {
-          break;
-        }
-      }
-      continue;
+      constructResult = obj.apply(self, undefined);
     }
+    const tmp3Result = tmp3(self, constructResult);
+    let closure_0 = tmp3Result;
+    tmp3Result.issues = [];
+    tmp3Result.addIssue = (arg0) => {
+      const items = [];
+      items[HermesBuiltin.arraySpread(items, issues.issues, 0)] = arg0;
+      issues.issues = items;
+    };
+    tmp3Result.addIssues = () => {
+      let items = arg0;
+      if (arg0 === undefined) {
+        items = [];
+      }
+      const items1 = [...items];
+      issues.issues = items1;
+    };
+    const prototype = new.target.prototype;
+    if (Object.setPrototypeOf) {
+      const _Object = Object;
+      Object.setPrototypeOf(tmp3Result, prototype);
+    } else {
+      tmp3Result.__proto__ = prototype;
+    }
+    tmp3Result.name = "ZodError";
+    tmp3Result.issues = issues;
+    return tmp3Result;
   }
 }
-let Match = "Match";
-let c4 = 0;
+_inherits(ZodError, _wrapNativeSuper(Error));
 let obj = {
-  matchAsList(arg0, arg1, arg2) {
-    let obj = arg2;
-    const tmp = internalMatch;
-    if (!arg2) {
-      obj = {};
-    }
-    const str = tmp(arg0, arg1, obj);
-    if (null !== str.match) {
-      let prev = str.match;
-      let tmp3 = null;
-      let tmp4 = null;
-      if (null !== prev) {
-        do {
-          prev.prev = tmp3;
-          tmp3 = prev;
-          tmp4 = prev;
-          prev = prev.prev;
-        } while (null !== tmp2);
-      }
-      let prev2 = tmp4.prev;
-      str.match = [];
-      if (null !== prev2) {
-        do {
-          let type = prev2.type;
-          if (0 !== type) {
-            if (2 !== type) {
-              if (3 !== type) {
-                let match = str.match;
-                let obj2 = { token: prev2.token.value, node: prev2.token.node };
-                let arr = match.push(obj2);
-              }
-            }
-            let match1 = str.match;
-            let obj5 = { type: null, syntax: null };
-            ({ type: obj3.type, syntax: obj3.syntax } = prev2);
-            let arr2 = match1.push(obj5);
-          }
-          prev2 = prev2.prev;
-        } while (null !== prev2);
-      }
-    }
-    return str;
-  },
-  matchAsTree(arr, match, self) {
-    let tmp2;
-    let obj = self;
-    const tmp = internalMatch;
-    if (!self) {
-      obj = {};
-    }
-    const str = tmp(arr, match, obj);
-    if (null === str.match) {
-      return str;
-    } else {
-      let prev = str.match;
-      let obj2 = { syntax: tmp2, match: [] };
-      tmp2 = match.syntax || null;
-      str.match = obj2;
-      const items = [obj2];
-      let tmp3 = null;
-      let tmp4 = null;
-      if (null !== prev) {
-        do {
-          prev.prev = tmp3;
-          tmp3 = prev;
-          tmp4 = prev;
-          prev = prev.prev;
-        } while (null !== tmp5);
-      }
-      let prev2 = tmp4.prev;
-      if (null !== prev2) {
-        do {
-          let tmp10;
-          let type = prev2.type;
-          if (2 === type) {
-            match = obj2.match;
-            let obj3 = { syntax: prev2.syntax, match: [] };
-            arr = match.push(obj3);
-            let arr2 = items.push(obj3);
-            tmp10 = obj3;
-          } else if (3 === type) {
-            let arr3 = items.pop();
-            tmp10 = items[items.length - 1];
-          } else {
-            let match1 = obj2.match;
-            let syntax = prev2.syntax;
-            let push = match1.push;
-            if (!syntax) {
-              syntax = null;
-            }
-            let obj4 = { syntax, token: prev2.token.value, node: prev2.token.node };
-            let arr7 = push(obj4);
-            tmp10 = obj2;
-          }
-          prev2 = prev2.prev;
-          obj2 = tmp10;
-        } while (null !== prev2);
-      }
-      return str;
-    }
-  },
-  getTotalIterationCount() {
-    return c4;
+  key: "errors",
+  get() {
+    return this.issues;
   }
 };
+let items = [
+  obj,
+  {
+    key: "format",
+    value: function format(arg0) {
+      const fn = arg0 || ((message) => message.message);
+      let obj = { _errors: [] };
+      function processError(arg0) {
+        let sum;
+        const iter = arg0.issues[Symbol.iterator]();
+        const nextResult = iter.next();
+        while (iter !== undefined) {
+          let tmp2 = nextResult;
+          if ("invalid_union" === nextResult.code) {
+            let unionErrors = tmp2.unionErrors;
+            let mapped = unionErrors.map(processError);
+          } else if ("invalid_return_type" === tmp2.code) {
+            let tmp32 = processError(tmp2.returnTypeError);
+          } else if ("invalid_arguments" === tmp2.code) {
+            let tmp29 = processError(tmp2.argumentsError);
+          } else if (0 === tmp2.path.length) {
+            let _errors = obj._errors;
+            let arr = _errors.push(fn(tmp2));
+          } else {
+            let tmp19 = obj;
+            let num = 0;
+            if (0 < tmp2.path.length) {
+              do {
+                let tmp5 = tmp2.path[num];
+                if (num === tmp2.path.length - 1) {
+                  let tmp11 = tmp19[tmp5];
+                  if (!tmp11) {
+                    let obj2 = { _errors: [] };
+                    tmp11 = obj2;
+                  }
+                  tmp19[tmp5] = tmp11;
+                  let _errors1 = tmp19[tmp5]._errors;
+                  let arr2 = _errors1.push(fn(tmp2));
+                } else {
+                  let tmp8 = tmp19[tmp5];
+                  if (!tmp8) {
+                    obj = { _errors: [] };
+                    tmp8 = obj;
+                  }
+                  tmp19[tmp5] = tmp8;
+                }
+                tmp19 = tmp19[tmp5];
+                sum = num + 1;
+                num = sum;
+              } while (sum < tmp2.path.length);
+            }
+          }
+          continue;
+        }
+      }
+      processError(this);
+      return obj;
+    }
+  },
+  {
+    key: "toString",
+    value: function toString() {
+      return this.message;
+    }
+  },
+  {
+    key: "message",
+    get() {
+      return JSON.stringify(this.issues, require("module_14876").util.jsonStringifyReplacer, 2);
+    }
+  },
+  {
+    key: "isEmpty",
+    get() {
+      return 0 === this.issues.length;
+    }
+  },
+  {
+    key: "flatten",
+    value: function flatten() {
+      let fn = arg0;
+      if (arg0 === undefined) {
+        fn = function e(message) {
+          return message.message;
+        };
+      }
+      const fieldErrors = {};
+      const formErrors = [];
+      const iter = this.issues[Symbol.iterator]();
+      const nextResult = iter.next();
+      while (iter !== undefined) {
+        let tmp2 = nextResult;
+        if (nextResult.path.length > 0) {
+          let items1 = fieldErrors[tmp2.path[0]];
+          let first = tmp2.path[0];
+          if (!items1) {
+            items1 = [];
+          }
+          fieldErrors[first] = items1;
+          let arr3 = fieldErrors[tmp2.path[0]];
+          let arr = arr3.push(fn(tmp2));
+        } else {
+          let arr2 = formErrors.push(fn(tmp2));
+        }
+        continue;
+      }
+      return { formErrors, fieldErrors };
+    }
+  },
+  {
+    key: "formErrors",
+    get() {
+      return this.flatten();
+    }
+  }
+];
+const entry = {
+  key: "assert",
+  value: function assert(arg0) {
+    if (!(arg0 instanceof ZodError)) {
+      const _Error = Error;
+      const _HermesInternal = HermesInternal;
+      const self = this;
+      const self2 = this;
+      const error = new Error("Not a ZodError: " + arg0);
+      throw error;
+    }
+  }
+};
+let items1 = [entry];
+const _moduleResult = _createClass(ZodError, items, items1);
+const metroRequire = _moduleResult;
+_moduleResult.create = (arg0) => {
+  const tmp = new metroRequire(arg0);
+  return tmp;
+};
+const ZodError_export = _moduleResult;
 
-export default obj;
+export const ZodIssueCode = util.arrayToEnum(["invalid_type", "invalid_literal", "custom", "invalid_union", "invalid_union_discriminator", "invalid_enum_value", "unrecognized_keys", "invalid_arguments", "invalid_return_type", "invalid_date", "invalid_string", "too_small", "too_big", "invalid_intersection_types", "not_multiple_of", "not_finite"]);
+export const quotelessJson = (arg0) => {
+  const str = JSON.stringify(arg0, null, 2);
+  return str.replace(/"([^"]+)":/g, "$1:");
+};
+export { ZodError_export as ZodError };

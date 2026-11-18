@@ -14,9 +14,9 @@ const forResult = Symbol.for("SentryBufferFullError");
 let c2 = forResult;
 
 export const SENTRY_BUFFER_FULL_ERROR = forResult;
-export function makePromiseBuffer() {
-  let num = arg0;
-  if (arg0 === undefined) {
+export function makePromiseBuffer(bufferSize) {
+  let num = bufferSize;
+  if (bufferSize === undefined) {
     num = 100;
   }
   set = new Set();
@@ -39,7 +39,7 @@ export function makePromiseBuffer() {
       }
     },
     drain(arg0) {
-      const f125475 = (arg0) => {
+      const f122191 = (arg0) => {
         closure_0 = arg0;
         return setTimeout(() => closure_0(false), closure_0);
       };
@@ -52,8 +52,8 @@ export function makePromiseBuffer() {
           const items = [nextPromise, ];
           const self = this;
           const self2 = this;
-          items[1] = new Promise(f125475);
-          const promise = new Promise(f125475);
+          items[1] = new Promise(f122191);
+          const promise = new Promise(f122191);
           return Promise.race(items);
         } else {
           return nextPromise;

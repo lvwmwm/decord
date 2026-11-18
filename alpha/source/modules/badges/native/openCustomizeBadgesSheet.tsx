@@ -1,12 +1,12 @@
-// Module ID: 17147
-// Function ID: 17148
+// Module ID: 15803
+// Function ID: 15804
 // Name: openCustomizeBadgesSheet
-// Dependencies: [5546, 17148, 2121, 2]
+// Dependencies: [5037, 15804, 2121, 2]
 // Exports: openCustomizeBadgesSheet
 
-// Module 17147 (openCustomizeBadgesSheet)
+// Module 15803 (openCustomizeBadgesSheet)
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/badges/native/openCustomizeBadgesSheet.tsx");
@@ -14,5 +14,5 @@ const result = size.fileFinishedImporting("modules/badges/native/openCustomizeBa
 export function openCustomizeBadgesSheet(analyticsLocations) {
   analyticsLocations = analyticsLocations.analyticsLocations;
   const obj = ActionSheetActionCreatorsDefault;
-  obj.openLazy(asyncRequire(17148, dependencyMap.paths), "Customize Badges", { analyticsLocations });
+  obj.openLazy(asyncRequire(15804, dependencyMap.paths), "Customize Badges", { analyticsLocations });
 }

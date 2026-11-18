@@ -1,21 +1,21 @@
-// Module ID: 16004
-// Function ID: 16005
+// Module ID: 14648
+// Function ID: 14649
 // Name: ApplicationDetails
-// Dependencies: [19, 17, 21, 5310, 575, 7415, 8174, 16005, 11, 7413, 6023, 1113, 8103, 7417, 13032, 6036, 7317, 12837, 10751, 5923, 2]
+// Dependencies: [19, 17, 21, 4823, 575, 6918, 7677, 14649, 11, 6916, 5519, 1113, 7606, 6920, 12319, 5532, 6822, 12131, 10032, 5414, 2]
 // Exports: default
 
-// Module 16004 (ApplicationDetails)
+// Module 14648 (ApplicationDetails)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5923 */;
-import scopes from "scopes" /* 7413 */;
-import disclosures from "disclosures" /* 7415 */;
-import GlobeEarthIcon from "GlobeEarthIcon" /* 8174 */;
-import EmbedIcon from "EmbedIcon" /* 16005 */;
+import Text_Text from "Text/Text" /* 5414 */;
+import scopes from "scopes" /* 6916 */;
+import disclosures from "disclosures" /* 6918 */;
+import GlobeEarthIcon from "GlobeEarthIcon" /* 7677 */;
+import EmbedIcon from "EmbedIcon" /* 14649 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -23,14 +23,14 @@ let hasOwnProperty;
 let size;
 let tmp4;
 const intl5 = tmp4(1113);
-const LinkIcon = tmp4(6023);
-const ClockIcon = tmp4(6036);
-const OAuth2Scopes = tmp4(7317);
-const Utils = tmp4(7417);
-const LockIcon = tmp4(8103);
-const ShieldIcon = tmp4(10751);
-const RobotIcon = tmp4(12837);
-const HammerIcon = tmp4(13032);
+const LinkIcon = tmp4(5519);
+const ClockIcon = tmp4(5532);
+const OAuth2Scopes = tmp4(6822);
+const Utils = tmp4(6920);
+const LockIcon = tmp4(7606);
+const ShieldIcon = tmp4(10032);
+const RobotIcon = tmp4(12131);
+const HammerIcon = tmp4(12319);
 function ApplicationDetailsEntry(iconComponent) {
   let items;
   iconComponent = iconComponent.iconComponent;

@@ -36,8 +36,8 @@ function flattenIssue(path) {
   }
   return obj;
 }
-function flattenIssuePath(arr) {
-  const mapped = arr.map((item) => {
+function flattenIssuePath(path) {
+  const mapped = path.map((item) => {
     let str = "<array>";
     if (typeof item !== "number") {
       str = item;
@@ -46,9 +46,9 @@ function flattenIssuePath(arr) {
   });
   return mapped.join(".");
 }
-function formatIssueMessage(issues) {
+function formatIssueMessage(originalException) {
   set = new Set();
-  const tmp = issues.issues[Symbol.iterator]();
+  const tmp = originalException.issues[Symbol.iterator]();
   while (tmp !== undefined) {
     let arr = flattenIssuePath(tmp2.path);
     if (arr.length > 0) {
@@ -59,8 +59,8 @@ function formatIssueMessage(issues) {
   const arr2 = Array.from(set);
   if (0 === arr2.length) {
     let str4 = "variable";
-    if (issues.issues.length > 0) {
-      const first = issues.issues[0];
+    if (originalException.issues.length > 0) {
+      const first = originalException.issues[0];
       str4 = "variable";
       const tmp10 = undefined !== first && "expected" in first && typeof first.expected === "string";
       if (tmp10) {
@@ -75,7 +75,7 @@ function formatIssueMessage(issues) {
     return "Failed to validate keys: " + obj2.truncate(arr2.join(", "), 100);
   }
 }
-function applyZodErrorsToEvent(arg0, arg1, exception, originalException) {
+function applyZodErrorsToEvent(arg0, saveZodIssuesAsAttachment, exception, originalException) {
   let items;
   let obj2;
   let obj4;
@@ -90,8 +90,8 @@ function applyZodErrorsToEvent(arg0, arg1, exception, originalException) {
     }
     return isErrorResult;
   }
-  let flag = arg1;
-  if (arg1 === undefined) {
+  let flag = saveZodIssuesAsAttachment;
+  if (saveZodIssuesAsAttachment === undefined) {
     flag = false;
   }
   exception = exception.exception;
@@ -172,8 +172,8 @@ export const zodErrorsIntegration = module_751.defineIntegration(() => {
   }
   return {
     name: "ZodErrors",
-    processEvent(arg0, arg1) {
-      return applyZodErrorsToEvent(num, obj.saveZodIssuesAsAttachment, arg0, arg1);
+    processEvent(exception, originalException) {
+      return applyZodErrorsToEvent(num, obj.saveZodIssuesAsAttachment, exception, originalException);
     }
   };
 });

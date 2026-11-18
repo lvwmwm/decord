@@ -1,14 +1,14 @@
-// Module ID: 14307
-// Function ID: 14308
+// Module ID: 13611
+// Function ID: 13612
 // Name: HubActionCreators
-// Dependencies: [5, 1072, 6836, 1264, 5171, 1285, 572, 2]
+// Dependencies: [5, 1072, 6340, 1264, 4684, 1285, 572, 2]
 
-// Module 14307 (HubActionCreators)
+// Module 13611 (HubActionCreators)
 import Constants from "Constants" /* 1072 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
-import TypeUtils from "TypeUtils" /* 5171 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6836 */;
+import TypeUtils from "TypeUtils" /* 4684 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6340 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

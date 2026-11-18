@@ -1,16 +1,16 @@
-// Module ID: 15894
-// Function ID: 15895
+// Module ID: 14537
+// Function ID: 14538
 // Name: usePrioritizedWishlistItems
-// Dependencies: [32, 19, 9495, 2]
+// Dependencies: [32, 19, 8909, 2]
 // Exports: default, doesWishlistReorderChangePreview, prioritizeSoonToUnpublishWishlistItems
 
-// Module 15894 (usePrioritizedWishlistItems)
-import WishlistShopUnpublishUtils from "WishlistShopUnpublishUtils" /* 9495 */;
+// Module 14537 (usePrioritizedWishlistItems)
+import WishlistShopUnpublishUtils from "WishlistShopUnpublishUtils" /* 8909 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-const f112726 = (deadline, deadline2) => {
+const f107742 = (deadline, deadline2) => {
   let diff = deadline.deadline - deadline2.deadline;
   if (0 === diff) {
     diff = deadline.index - deadline2.index;
@@ -182,7 +182,7 @@ export default function usePrioritizedWishlistItems(arg0, arg1) {
         }
         items1.push(shopUnpublishedAt);
       });
-      const sorted = items.sort(f112726);
+      const sorted = items.sort(f107742);
       const items2 = [];
       let tmp7 = items2;
       let tmp8 = items2;
@@ -236,7 +236,7 @@ export function prioritizeSoonToUnpublishWishlistItems(arr) {
     }
     items1.push(shopUnpublishedAt);
   });
-  const sorted = items.sort(f112726);
+  const sorted = items.sort(f107742);
   const items2 = [...items1];
   return items2;
 }

@@ -1,10 +1,10 @@
-// Module ID: 14022
-// Function ID: 14023
+// Module ID: 13326
+// Function ID: 13327
 // Name: ExpiringPowerupCoachmarkExperiment
 // Dependencies: [1453, 2]
 // Exports: useExpiringPowerupCoachmarkEnabled
 
-// Module 14022 (ExpiringPowerupCoachmarkExperiment)
+// Module 13326 (ExpiringPowerupCoachmarkExperiment)
 import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1453 */;
 import size from "module_2" /* 2 */;
 

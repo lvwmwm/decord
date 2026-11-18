@@ -1,12 +1,12 @@
-// Module ID: 11523
-// Function ID: 11524
+// Module ID: 10805
+// Function ID: 10806
 // Name: useStageChannelConnectAction
-// Dependencies: [6903, 11522, 2]
+// Dependencies: [6407, 10804, 2]
 // Exports: default, useStageChannelStartEvent
 
-// Module 11523 (useStageChannelConnectAction)
-import useStateChannelIsLiveDefault from "useStateChannelIsLive" /* 6903 */;
-import useCurrentUserStageRolesDefault from "useCurrentUserStageRoles" /* 11522 */;
+// Module 10805 (useStageChannelConnectAction)
+import useStateChannelIsLiveDefault from "useStateChannelIsLive" /* 6407 */;
+import useCurrentUserStageRolesDefault from "useCurrentUserStageRoles" /* 10804 */;
 import size from "module_2" /* 2 */;
 
 const ChannelConnectAction = { NORMAL: 0, [0]: "NORMAL", START_EVENT: 1, [1]: "START_EVENT" };

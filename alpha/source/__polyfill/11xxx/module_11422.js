@@ -1,49 +1,147 @@
 // Module ID: 11422
 // Function ID: 11423
-// Dependencies: []
+// Dependencies: [41, 42, 11380]
 
 // Module 11422
-let items;
-let items1;
-let items2;
-let items3;
-let items4;
-let obj4;
-let obj6;
-let obj7;
-let obj8;
-const obj = { v: "4.8.0", meta: { g: "LottieFiles AE 3.0.2", a: "", k: "", d: "", tc: "" }, fr: 60, ip: 2, op: 81, w: 1280, h: 720, nm: "FrameEffect_10-1_Out", ddd: 0, assets: items, layers: items4, markers: [] };
-items = [{ id: "image_0", w: 35, h: 35, u: "", p: "", e: 1 }, ];
-const obj3 = { ddd: 0, ind: 3, ty: 2, nm: "smile", refId: "image_0", sr: 1, ks: obj4, ao: 0, ip: 0, op: 914, st: 0, bm: 0 };
-const obj2 = { id: "comp_0", layers: items1 };
-items1 = [obj3];
-obj4 = { o: { a: 0, k: 100, ix: 11 }, r: { a: 0, k: 0, ix: 10 }, p: { a: 0, k: [19.875, 20.125, 0], ix: 2 }, a: { a: 0, k: [17.25, 17.25, 0], ix: 1 }, s: { a: 0, k: [108.7, 108.7, 100], ix: 6 } };
-items[1] = obj2;
-const obj5 = { ddd: 0, ind: 1, ty: 0, nm: "particle", refId: "comp_0", sr: 1, ks: obj6, ao: 0, w: 40, h: 40, ip: 3, op: 80, st: -2, bm: 0 };
-obj6 = { o: { a: 0, k: 100, ix: 11 }, r: { a: 0, k: 0, ix: 10 }, p: obj7, a: { a: 0, k: [20, 20, 0], ix: 1 }, s: obj8 };
-obj7 = { a: 1, k: items2, ix: 2 };
-items2 = [{ i: { x: 0.487, y: 1 }, o: { x: 0, y: 0 }, t: 2, s: [640, 883.838, 0], to: [0, 0, 0], ti: [0, 0, 0] }, { i: { x: 0.667, y: 1 }, o: { x: 0.333, y: 0 }, t: 16, s: [640, 296, 0], to: [0, 0, 0], ti: [0, 0, 0] }, { i: { x: 0.667, y: 1 }, o: { x: 0.333, y: 0 }, t: 28, s: [640, 392, 0], to: [0, 0, 0], ti: [0, 0, 0] }, { i: { x: 0.667, y: 1 }, o: { x: 0.333, y: 0 }, t: 40, s: [640, 347.2, 0], to: [0, 0, 0], ti: [0, 0, 0] }, { i: { x: 0.667, y: 0.667 }, o: { x: 0.167, y: 0.167 }, t: 51, s: [640, 360, 0], to: [0, 0, 0], ti: [0, 0, 0] }, { i: { x: 0.397, y: 1 }, o: { x: 0.442, y: 0 }, t: 61, s: [640, 360, 0], to: [0, 0, 0], ti: [0, 0, 0] }, { i: { x: 0.667, y: 1 }, o: { x: 0.641, y: 0 }, t: 69, s: [640, 433.6, 0], to: [0, 0, 0], ti: [0, 0, 0] }, { t: 81, s: [640, -156.8, 0] }];
-obj8 = { a: 1, k: items3, ix: 6 };
-items3 = [, , , , , , , , , ];
-const obj9 = { i: { x: [0.667, 0.667, 0.667], y: [1, 1, 1] }, o: { x: [0.333, 0.333, 0.333], y: [0, 0, 0] }, t: 9, s: [543.68, 704, 100] };
-items3[0] = obj9;
-const obj10 = { i: { x: [0.667, 0.667, 0.667], y: [1, 1, 1] }, o: { x: [0.333, 0.333, 0.333], y: [0, 0, 0] }, t: 19, s: [634.72, 532.16, 100] };
-items3[1] = obj10;
-const obj11 = { i: { x: [0.667, 0.667, 0.667], y: [1, 1, 1] }, o: { x: [0.333, 0.333, 0.333], y: [0, 0, 0] }, t: 25, s: [571.68, 617.6, 100] };
-items3[2] = obj11;
-const obj12 = { i: { x: [0.667, 0.667, 0.667], y: [1, 1, 1] }, o: { x: [0.333, 0.333, 0.333], y: [0, 0, 0] }, t: 31, s: [603.84, 561.76, 100] };
-items3[3] = obj12;
-const obj13 = { i: { x: [0.667, 0.667, 0.667], y: [1, 1, 1] }, o: { x: [0.333, 0.333, 0.333], y: [0, 0, 0] }, t: 38, s: [581.44, 604.16, 100] };
-items3[4] = obj13;
-const obj14 = { i: { x: [0.833, 0.833, 0.833], y: [1, 1, 1] }, o: { x: [0.333, 0.333, 0.333], y: [0, 0, 0] }, t: 43, s: [592, 592, 100] };
-items3[5] = obj14;
-const obj15 = { i: { x: [0.833, 0.833, 0.833], y: [1, 1, 1] }, o: { x: [0.167, 0.167, 0.167], y: [0, 0, 0] }, t: 61, s: [592, 592, 100] };
-items3[6] = obj15;
-const obj16 = { i: { x: [0.667, 0.667, 0.667], y: [1, 1, 1] }, o: { x: [0.167, 0.167, 0.167], y: [0, 0, 0] }, t: 67, s: [552.32, 624.32, 100] };
-items3[7] = obj16;
-const obj17 = { i: { x: [0.667, 0.667, 0.667], y: [1, 1, 1] }, o: { x: [0.167, 0.167, 0.167], y: [0, 0, 0] }, t: 71, s: [634.72, 532.16, 100] };
-items3[8] = obj17;
-items3[9] = { t: 74, s: [560, 704, 100] };
-items4 = [obj5];
+import Meridiem from "Meridiem" /* 11380 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
 
-export default obj;
+const regExp = new RegExp("(^|\\s|T)(?:(?:um|von)\\s*)?(\\d{1,2})(?:h|:)?(?:(\\d{1,2})(?:m|:)?)?(?:(\\d{1,2})(?:s)?)?(?:\\s*Uhr)?(?:\\s*(morgens|vormittags|nachmittags|abends|nachts|am\\s+(?:Morgen|Vormittag|Nachmittag|Abend)|in\\s+der\\s+Nacht))?(?=\\W|$)", "i");
+const regExp1 = new RegExp("^\\s*(\\-|\\\u2013|\\~|\\\u301C|bis(?:\\s+um)?|\\?)\\s*(\\d{1,2})(?:h|:)?(?:(\\d{1,2})(?:m|:)?)?(?:(\\d{1,2})(?:s)?)?(?:\\s*Uhr)?(?:\\s*(morgens|vormittags|nachmittags|abends|nachts|am\\s+(?:Morgen|Vormittag|Nachmittag|Abend)|in\\s+der\\s+Nacht))?(?=\\W|$)", "i");
+class DESpecificTimeExpressionParser {
+  constructor() {
+    _classCallCheck(this, DESpecificTimeExpressionParser);
+  }
+}
+const entry = {
+  key: "pattern",
+  value: function pattern(arg0) {
+    return regExp;
+  }
+};
+const items = [
+  entry,
+  {
+    key: "extract",
+    value: function extract(createParsingResult, index) {
+      const sum = index.index + index[1].length;
+      const str = index[0];
+      const parsingResult = createParsingResult.createParsingResult(sum, str.substring(index[1].length));
+      const str2 = parsingResult.text;
+      if (str2.match(/^\d{4}$/)) {
+        index.index = index.index + index[0].length;
+        return null;
+      } else {
+        const start = parsingResult.start;
+        parsingResult.start = DESpecificTimeExpressionParser.extractTimeComponent(start.clone(), index);
+        const obj = DESpecificTimeExpressionParser;
+        if (parsingResult.start) {
+          const str3 = createParsingResult.text;
+          const match = regExp1.exec(str3.substring(index.index + index[0].length));
+          if (match) {
+            const start2 = parsingResult.start;
+            parsingResult.end = obj.extractTimeComponent(start2.clone(), match);
+            if (parsingResult.end) {
+              parsingResult.text = parsingResult.text + match[0];
+            }
+          }
+          return parsingResult;
+        } else {
+          index.index = index.index + index[0].length;
+          return null;
+        }
+      }
+    }
+  }
+];
+const entry1 = {
+  key: "extractTimeComponent",
+  value: function extractTimeComponent(assign, arg1) {
+    const parsed = parseInt(arg1[2]);
+    let num = 0;
+    if (null != arg1[3]) {
+      const _parseInt = parseInt;
+      num = parseInt(arg1[3]);
+    }
+    if (num < 60) {
+      if (parsed <= 24) {
+        let PM1 = null;
+        if (parsed >= 12) {
+          PM1 = Meridiem.Meridiem.PM;
+        }
+        let tmp5 = PM1;
+        let tmp6 = parsed;
+        if (null != arg1[5]) {
+          if (parsed > 12) {
+            return null;
+          } else {
+            const str7 = arg1[5];
+            const str8 = str7.toLowerCase();
+            let tmp9 = parsed;
+            if (str8.match(/morgen|vormittag/)) {
+              let num2 = parsed;
+              const AM = Meridiem.Meridiem.AM;
+              if (12 == parsed) {
+                num2 = 0;
+              }
+              tmp9 = num2;
+              PM1 = AM;
+            }
+            let tmp10 = tmp9;
+            if (str8.match(/nachmittag|abend/)) {
+              let sum = tmp9;
+              const PM = Meridiem.Meridiem.PM;
+              if (12 != tmp9) {
+                sum = tmp9 + 12;
+              }
+              tmp10 = sum;
+              PM1 = PM;
+            }
+            tmp5 = PM1;
+            tmp6 = tmp10;
+            if (str8.match(/nacht/)) {
+              let PM2;
+              let num4;
+              if (12 == tmp10) {
+                PM2 = Meridiem.Meridiem.AM;
+                num4 = 0;
+              } else if (tmp10 < 6) {
+                PM2 = Meridiem.Meridiem.AM;
+                num4 = tmp10;
+              } else {
+                PM2 = Meridiem.Meridiem.PM;
+                num4 = tmp10 + 12;
+              }
+              tmp5 = PM2;
+              tmp6 = num4;
+            }
+          }
+        }
+        assign.assign("hour", tmp6);
+        assign.assign("minute", num);
+        if (null !== tmp5) {
+          assign.assign("meridiem", tmp5);
+        } else if (tmp6 < 12) {
+          assign.imply("meridiem", Meridiem.Meridiem.AM);
+        } else {
+          assign.imply("meridiem", Meridiem.Meridiem.PM);
+        }
+        if (null != arg1[4]) {
+          const _parseInt2 = parseInt;
+          const parsed1 = parseInt(arg1[4]);
+          if (parsed1 >= 60) {
+            return null;
+          } else {
+            assign.assign("second", parsed1);
+          }
+        }
+        return assign;
+      }
+    }
+    return null;
+  }
+};
+const items1 = [entry1];
+
+export default _createClass(DESpecificTimeExpressionParser, items, items1);

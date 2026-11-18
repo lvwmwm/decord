@@ -1,13 +1,13 @@
-// Module ID: 18430
-// Function ID: 18431
+// Module ID: 17235
+// Function ID: 17236
 // Name: BenchmarkResultsList
-// Dependencies: [19, 21, 7756, 7453, 18426, 2]
+// Dependencies: [19, 21, 7259, 6956, 17231, 2]
 // Exports: default
 
-// Module 18430 (BenchmarkResultsList)
-import TableRow3 from "TableRow" /* 7453 */;
-import TableRowGroup2 from "TableRowGroup" /* 7756 */;
-import startFrameMonitor from "startFrameMonitor" /* 18426 */;
+// Module 17235 (BenchmarkResultsList)
+import TableRow3 from "TableRow" /* 6956 */;
+import TableRowGroup2 from "TableRowGroup" /* 7259 */;
+import startFrameMonitor from "startFrameMonitor" /* 17231 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

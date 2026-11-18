@@ -1,17 +1,17 @@
-// Module ID: 9334
-// Function ID: 9335
+// Module ID: 8745
+// Function ID: 8746
 // Name: FriendRequestAcceptedSystemMessage
-// Dependencies: [5159, 1388, 9199, 9201, 5310, 575, 1113, 8666, 9335, 9203, 2]
+// Dependencies: [4672, 1388, 8610, 8612, 4823, 575, 1113, 8157, 8746, 8614, 2]
 // Exports: createFriendRequestAcceptedSystemMessage
 
-// Module 9334 (FriendRequestAcceptedSystemMessage)
+// Module 8745 (FriendRequestAcceptedSystemMessage)
 import nativeDefault from "native" /* 575 */;
-import createStyles from "createStyles" /* 5310 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8666 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 9199 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 9201 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9335 */;
-import ChannelStore from "ChannelStore" /* 5159 */;
+import createStyles from "createStyles" /* 4823 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8157 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8610 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8612 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8746 */;
+import ChannelStore from "ChannelStore" /* 4672 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
@@ -66,7 +66,7 @@ export function createFriendRequestAcceptedSystemMessage(message) {
             }
             const obj8 = { content: formatToPartsResult, iconUrl: tmp18Result2.getAssetUriForEmbed(AssetRegistryDefault), textColor: tmp6 };
             tmp18Result2 = renderer_EmbedUtils;
-            const merged2 = Object.assign(tmp21(9203)(message));
+            const merged2 = Object.assign(tmp21(8614)(message));
             return obj8;
           }
           const intl = tmp18(1113).intl;

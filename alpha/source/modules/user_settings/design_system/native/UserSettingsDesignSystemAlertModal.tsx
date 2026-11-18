@@ -1,17 +1,17 @@
-// Module ID: 18465
-// Function ID: 18466
+// Module ID: 17276
+// Function ID: 17277
 // Name: UserSettingsDesignSystemAlertModal
-// Dependencies: [5, 19, 17, 21, 6272, 6268, 5310, 5930, 2]
+// Dependencies: [5, 19, 17, 21, 5774, 5770, 4823, 5421, 2]
 // Exports: default
 
-// Module 18465 (UserSettingsDesignSystemAlertModal)
+// Module 17276 (UserSettingsDesignSystemAlertModal)
 import Fragment from "Fragment" /* 21 */;
-import useAlertStore from "useAlertStore" /* 6268 */;
-import AlertModal2 from "AlertModal" /* 6272 */;
+import useAlertStore from "useAlertStore" /* 5770 */;
+import AlertModal2 from "AlertModal" /* 5774 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let c0, c1;

@@ -1,18 +1,18 @@
-// Module ID: 15035
-// Function ID: 15036
+// Module ID: 13723
+// Function ID: 13724
 // Name: conjureRailActivity
-// Dependencies: [32, 19, 1231, 7023, 7331, 7025, 7387, 7342, 7341, 504, 2]
+// Dependencies: [32, 19, 1231, 6527, 6836, 6529, 6890, 6847, 6846, 504, 2]
 // Exports: useConjureRailTabActivity
 
-// Module 15035 (conjureRailActivity)
-import conjureProjectMute from "conjureProjectMute" /* 7342 */;
+// Module 13723 (conjureRailActivity)
+import conjureProjectMute from "conjureProjectMute" /* 6847 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import ReadStateStore from "ReadStateStore" /* 7023 */;
-import ConjureChatStore from "ConjureChatStore" /* 7331 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 7025 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 7387 */;
+import ReadStateStore from "ReadStateStore" /* 6527 */;
+import ConjureChatStore from "ConjureChatStore" /* 6836 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6529 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 6890 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -43,7 +43,7 @@ function readConjureRailActivity(id, arg1) {
           str2 = "working";
           if (true !== publishing) {
             let str3 = "unread";
-            const tmp2Result = tmp2(7341);
+            const tmp2Result = tmp2(6846);
             if (!tmp2Result.isConjureProjectUnread(id)) {
               let str4 = null;
               if (flag) {

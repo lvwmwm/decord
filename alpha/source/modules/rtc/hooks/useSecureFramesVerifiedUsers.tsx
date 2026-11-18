@@ -1,12 +1,12 @@
-// Module ID: 18583
-// Function ID: 18584
+// Module ID: 17396
+// Function ID: 17397
 // Name: useSecureFramesVerifiedUsers
-// Dependencies: [10311, 504, 2]
+// Dependencies: [9592, 504, 2]
 // Exports: useSecureFramesVerifiedUserIds
 
-// Module 18583 (useSecureFramesVerifiedUsers)
+// Module 17396 (useSecureFramesVerifiedUsers)
 import get_initialized from "get initialized" /* 504 */;
-import VerifiedKeyStore from "VerifiedKeyStore" /* 10311 */;
+import VerifiedKeyStore from "VerifiedKeyStore" /* 9592 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/rtc/hooks/useSecureFramesVerifiedUsers.tsx");

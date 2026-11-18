@@ -1,16 +1,16 @@
-// Module ID: 15841
-// Function ID: 15842
+// Module ID: 14473
+// Function ID: 14474
 // Name: useConjureServerWidgetUpsell
-// Dependencies: [32, 19, 5181, 7025, 510, 15842, 504, 7269, 12652, 11010, 2]
+// Dependencies: [32, 19, 4694, 14474, 510, 14475, 504, 6773, 11937, 10292, 2]
 // Exports: useConjureServerWidgetUpsellDetails, useConjureServerWidgetUpsellOffer
 
-// Module 15841 (useConjureServerWidgetUpsell)
+// Module 14473 (useConjureServerWidgetUpsell)
 import Storage3 from "Storage" /* 510 */;
-import useConjureServerWidgetOffersDefault from "useConjureServerWidgetOffers" /* 15842 */;
+import useConjureServerWidgetOffersDefault from "useConjureServerWidgetOffers" /* 14475 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5181 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 7025 */;
+import GuildStore from "GuildStore" /* 4694 */;
+import ConjureServerWidgetStore from "ConjureServerWidgetStore" /* 14474 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -67,20 +67,20 @@ export function useConjureServerWidgetUpsellDetails(userId, widget, guildId) {
   const stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(guildId));
   const obj2 = require("useGetOrFetchApplications");
   const getOrFetchApplication = obj2.useGetOrFetchApplication(applicationId);
-  const items1 = [ConjureProjectStore];
+  const items1 = [ConjureServerWidgetStore];
   const items2 = [applicationId];
   const obj3 = require("get initialized");
   const stateFromStores1 = obj3.useStateFromStores(items1, () => {
-    const result = ConjureProjectStore.findProjectByApplicationId(applicationId);
+    const project = ConjureServerWidgetStore.getProject(applicationId);
     let owner_user_id;
-    if (result != null) {
-      owner_user_id = result.owner_user_id;
+    if (project != null) {
+      owner_user_id = project.owner_user_id;
     }
     return owner_user_id;
   }, items2);
   const obj4 = require("conjureMessageAuthors");
   const messageAuthorUser = obj4.useMessageAuthorUser(stateFromStores1);
-  const tmp5 = applicationId(11010)(userId, applicationId);
+  const tmp5 = applicationId(10292)(userId, applicationId);
   dependencyMap = tmp5;
   [][0] = tmp5;
   let tmp7 = null;

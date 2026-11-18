@@ -1,16 +1,16 @@
-// Module ID: 9296
-// Function ID: 9297
+// Module ID: 8707
+// Function ID: 8708
 // Name: PremiumGroupInviteEmbed
-// Dependencies: [2187, 5310, 575, 8666, 9297, 9298, 1113, 3515, 2]
+// Dependencies: [2187, 4823, 575, 8157, 8708, 8709, 1113, 3535, 2]
 // Exports: createPremiumGroupInviteEmbed
 
-// Module 9296 (PremiumGroupInviteEmbed)
+// Module 8707 (PremiumGroupInviteEmbed)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import createStyles from "createStyles" /* 5310 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8666 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9297 */;
-import PremiumGroupUtils from "PremiumGroupUtils" /* 9298 */;
+import createStyles from "createStyles" /* 4823 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8157 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8708 */;
+import PremiumGroupUtils from "PremiumGroupUtils" /* 8709 */;
 import PremiumGroupConstants from "PremiumGroupConstants" /* 2187 */;
 import size from "module_2" /* 2 */;
 
@@ -51,7 +51,7 @@ export function createPremiumGroupInviteEmbed(message, theme, id, channel) {
       const obj = { learnMoreLinkOnClick: obj4 };
       obj4 = { action: "bindOpenUrl", url, linkColor: linkTextColor };
       const obj7 = { headerText: header, headerColor: headerTextColor, backgroundColor, borderColor: backgroundColor, headerImageUrl: assetUriForEmbed, betaPillText: str.toUpperCase(), betaPillTextColor, betaPillBackgroundColor, bodyText: body, bodyTextColor, learnMoreLink: formatToPartsResult };
-      formatToPartsResult = intl.formatToParts(tmp9(3515)["9VTnfI"], obj);
+      formatToPartsResult = intl.formatToParts(tmp9(3535)["9VTnfI"], obj);
       const intl2 = tmp6(1113).intl;
       str = intl2.string(intl3.t.oW0eUd);
       return obj7;

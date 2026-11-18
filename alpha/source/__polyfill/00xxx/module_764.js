@@ -183,10 +183,10 @@ export function parseStringToURLObject(to, arg1) {
   } catch (err) {
   }
 }
-export function parseUrl(str) {
-  const tmp = str;
+export function parseUrl(fullURL) {
+  const tmp = fullURL;
   if (tmp) {
-    const match = str.match(/^(([^:/?#]+):)?(\/\/([^/?#]*))?([^?#]*)(\?([^#]*))?(#(.*))?$/);
+    const match = fullURL.match(/^(([^:/?#]+):)?(\/\/([^/?#]*))?([^?#]*)(\?([^#]*))?(#(.*))?$/);
     if (match) {
       const url = { host: match[4], path: match[5], protocol: match[2], search: match[6] || "", hash: match[8] || "", relative: match[5] + (match[6] || "") + (match[8] || "") };
       return url;
@@ -238,6 +238,6 @@ export function stripDataUrlContent(url, arg1) {
     return url;
   }
 }
-export function stripUrlQueryAndFragment(arg0) {
-  return arg0.split(/[?#]/, 1)[0];
+export function stripUrlQueryAndFragment(href) {
+  return href.split(/[?#]/, 1)[0];
 }

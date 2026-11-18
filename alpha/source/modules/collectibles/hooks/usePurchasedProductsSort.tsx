@@ -1,12 +1,12 @@
-// Module ID: 17653
-// Function ID: 17654
+// Module ID: 16455
+// Function ID: 16456
 // Name: usePurchasedProductsSort
-// Dependencies: [19, 8511, 2114, 8507, 563, 2]
+// Dependencies: [19, 8002, 2114, 7998, 563, 2]
 // Exports: usePurchasedProductsSort
 
-// Module 17653 (usePurchasedProductsSort)
+// Module 16455 (usePurchasedProductsSort)
 import react from "react" /* 19 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 8511 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 8002 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -40,20 +40,20 @@ export function usePurchasedProductsSort(memo) {
     return items.sort((type, type2) => {
       let NOT_PURCHASED;
       let tmp4;
-      const f115971 = (skuId) => obj.includes(skuId.skuId);
-      const f115972 = (skuId) => obj.includes(skuId.skuId);
+      const f111220 = (skuId) => obj.includes(skuId.skuId);
+      const f111221 = (skuId) => obj.includes(skuId.skuId);
       const obj = closure_1_2;
       let closure_0 = closure_1_2;
       if (type.type === closure_0(stateFromStores[2]).CollectiblesItemType.BUNDLE) {
         let PARTIAL_OWNED_BUNDLE;
         const items = type.items;
-        if (items.some(f115971)) {
+        if (items.some(f111220)) {
           NOT_PURCHASED = constants.PARTIAL_OWNED_BUNDLE;
           tmp4 = constants;
         }
         if (type2.type === closure_0(stateFromStores[2]).CollectiblesItemType.BUNDLE) {
           const items2 = type2.items;
-          if (items2.some(f115971)) {
+          if (items2.some(f111220)) {
             PARTIAL_OWNED_BUNDLE = tmp4.PARTIAL_OWNED_BUNDLE;
           }
           return NOT_PURCHASED - PARTIAL_OWNED_BUNDLE;
@@ -61,7 +61,7 @@ export function usePurchasedProductsSort(memo) {
         const tmpResult = closure_0(stateFromStores[3]);
         if (tmpResult.getIsVariantProduct(type2)) {
           const variants2 = type2.variants;
-          PARTIAL_OWNED_BUNDLE = variants2.every(f115972) ? tmp4.PURCHASED : tmp4.NOT_PURCHASED;
+          PARTIAL_OWNED_BUNDLE = variants2.every(f111221) ? tmp4.PURCHASED : tmp4.NOT_PURCHASED;
         } else {
           PARTIAL_OWNED_BUNDLE = obj.includes(type2.skuId) ? tmp4.PURCHASED : tmp4.NOT_PURCHASED;
         }
@@ -71,7 +71,7 @@ export function usePurchasedProductsSort(memo) {
         let NOT_PURCHASED2;
         let tmp6;
         const variants = type.variants;
-        if (variants.every(f115972)) {
+        if (variants.every(f111221)) {
           NOT_PURCHASED2 = tmp5.PURCHASED;
           tmp6 = tmp5;
         } else {

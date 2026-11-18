@@ -1,18 +1,18 @@
-// Module ID: 9482
-// Function ID: 9483
+// Module ID: 8896
+// Function ID: 8897
 // Name: WishlistActionCreators
-// Dependencies: [5, 7362, 1388, 2175, 7254, 9476, 1072, 1360, 1255, 572, 7258, 1285, 9481, 1242, 6755, 1256, 7360, 2]
+// Dependencies: [5, 6867, 1388, 2175, 6758, 8890, 1072, 1360, 1255, 572, 6762, 1285, 8895, 1242, 6257, 1256, 6865, 2]
 
-// Module 9482 (WishlistActionCreators)
+// Module 8896 (WishlistActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import GlobalUtils from "GlobalUtils" /* 1255 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1360 */;
-import WishlistRecord2 from "WishlistRecord" /* 9476 */;
+import WishlistRecord2 from "WishlistRecord" /* 8890 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import UserProfileStore from "UserProfileStore" /* 7362 */;
+import UserProfileStore from "UserProfileStore" /* 6867 */;
 import UserStore from "UserStore" /* 1388 */;
 import BillingInfoStore from "BillingInfoStore" /* 2175 */;
-import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 7254 */;
+import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 6758 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -23,8 +23,8 @@ let c10;
 let closure_12;
 let tmp;
 let unpackModuleId;
-const StorefrontUtils = tmp(7258);
-const f98445 = (id) => id.id;
+const StorefrontUtils = tmp(6762);
+const f95504 = (id) => id.id;
 function extraWishlistParams() {
   const obj = {};
   if (null != BillingInfoStore.ipCountryCode) {
@@ -52,7 +52,7 @@ function maybeDispatchAdditionalActions(wishlist_items) {
   const storefront_pricing = wishlist_items.storefront_pricing;
   if (null != storefront_pricing) {
     const obj2 = { type: "SKUS_PRICING_FETCH_SUCCESS", priceId: obj3, data: tmpResult.transformStorefrontPricesServer(storefront_pricing) };
-    obj3 = { type: "skus", skuIds: found.map(f98445) };
+    obj3 = { type: "skus", skuIds: found.map(f95504) };
     const dispatch = tmp3(572).dispatch;
     DispatcherDefault;
     tmpResult = StorefrontUtils;
@@ -679,7 +679,7 @@ let obj = {
         ({ storefront_pricing, skus: skus2 } = body);
         if (null != storefront_pricing) {
           const obj2 = { type: "SKUS_PRICING_FETCH_SUCCESS", priceId: obj3, data: obj4.transformStorefrontPricesServer(storefront_pricing) };
-          obj3 = { type: "skus", skuIds: skus2.map(f98445) };
+          obj3 = { type: "skus", skuIds: skus2.map(f95504) };
           const dispatch = tmp(closure_1_2[9]).dispatch;
           closure_1_1(closure_1_2[9]);
           obj4 = closure_1_0(closure_1_2[10]);

@@ -1,11 +1,11 @@
-// Module ID: 13775
-// Function ID: 13776
+// Module ID: 13082
+// Function ID: 13083
 // Name: GuildDirectorySearchModalActionCreators
-// Dependencies: [6833, 13776, 2121, 2]
+// Dependencies: [6337, 13083, 2121, 2]
 
-// Module 13775 (GuildDirectorySearchModalActionCreators)
+// Module 13082 (GuildDirectorySearchModalActionCreators)
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6833 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6337 */;
 import size from "module_2" /* 2 */;
 
 const GUILD_DIRECTORY_SEARCH_MODAL_KEY = "GUILD_DIRECTORY_SEARCH_MODAL_KEY";
@@ -13,7 +13,7 @@ let obj = {
   open(channel) {
     channel = channel.channel;
     const obj = ModalActionCreatorsDefault;
-    obj.pushLazy(asyncRequire(13776, dependencyMap.paths), { channel }, GUILD_DIRECTORY_SEARCH_MODAL_KEY);
+    obj.pushLazy(asyncRequire(13083, dependencyMap.paths), { channel }, GUILD_DIRECTORY_SEARCH_MODAL_KEY);
   },
   close() {
     const obj = ModalActionCreatorsDefault;

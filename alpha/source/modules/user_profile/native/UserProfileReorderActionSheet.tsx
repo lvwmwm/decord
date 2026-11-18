@@ -1,15 +1,15 @@
-// Module ID: 10857
-// Function ID: 10858
+// Module ID: 10144
+// Function ID: 10145
 // Name: UserProfileReorderActionSheet
-// Dependencies: [19, 21, 5310, 575, 1630, 6329, 7961, 5564, 5923, 1113, 2]
+// Dependencies: [19, 21, 4823, 575, 1630, 5831, 7464, 5055, 5414, 1113, 2]
 // Exports: default
 
-// Module 10857 (UserProfileReorderActionSheet)
+// Module 10144 (UserProfileReorderActionSheet)
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -43,12 +43,12 @@ export default function UserProfileReorderActionSheet(returnFocusRef) {
     };
   }, items);
   let obj = { scrollable: true, startExpanded: true, dismissAccessibilityLabel, children: closure_5(BottomSheetScrollView, obj2) };
-  const ActionSheet = returnFocusRef(7961).ActionSheet;
+  const ActionSheet = returnFocusRef(7464).ActionSheet;
   obj2 = { contentContainerStyle: items1, children: items2 };
   items1 = [tmp.content, { paddingBottom: bottom }];
-  BottomSheetScrollView = returnFocusRef(5564).BottomSheetScrollView;
+  BottomSheetScrollView = returnFocusRef(5055).BottomSheetScrollView;
   const obj3 = { variant: "body-sm/medium", color: "text-subtle", children: intl.string(returnFocusRef(1113).t["S7X7/T"]) };
-  const Text = returnFocusRef(5923).Text;
+  const Text = returnFocusRef(5414).Text;
   intl = returnFocusRef(1113).intl;
   items2 = [closure_4(Text, obj3), children];
   return closure_4(ActionSheet, obj);

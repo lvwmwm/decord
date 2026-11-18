@@ -1,15 +1,15 @@
-// Module ID: 13903
-// Function ID: 13904
+// Module ID: 13205
+// Function ID: 13206
 // Name: FloatingChatInputContainer
-// Dependencies: [32, 19, 21, 1655, 5896, 575, 1644, 5497, 1628, 5542, 5545, 2]
+// Dependencies: [32, 19, 21, 1655, 5387, 575, 1644, 5010, 1628, 5033, 5036, 2]
 // Exports: default
 
-// Module 13903 (FloatingChatInputContainer)
+// Module 13205 (FloatingChatInputContainer)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import useKeyboardTypeDefault from "useKeyboardType" /* 5497 */;
-import timing_timing from "timing/timing" /* 5542 */;
+import useKeyboardTypeDefault from "useKeyboardType" /* 5010 */;
+import timing_timing from "timing/timing" /* 5033 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -18,7 +18,7 @@ const _modDef1655 = _mod1655;
 let closure_2, dependencyMap, set;
 
 let tmp2;
-const timingPresets = tmp2(5545);
+const timingPresets = tmp2(5036);
 function useKeyboardOpenPaddingStyle() {
   let easing;
   let sharedValue;
@@ -27,7 +27,7 @@ function useKeyboardOpenPaddingStyle() {
   let tmp5;
   let token;
   let tmp2 = dependencyMap;
-  let obj = token(5896);
+  let obj = token(5387);
   token = obj.useToken(nativeDefault.modules.mobile.CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL);
   const tmp4 = sharedValue(react.useState(() => {
     const KeyboardController = token(closure_2[6]).KeyboardController;
@@ -58,7 +58,7 @@ function useKeyboardOpenPaddingStyle() {
       closure_3.remove();
     };
   }, []);
-  const obj3 = token(5497);
+  const obj3 = token(5010);
   const keyboardWillOpen = obj3.useKeyboardContextForType(token(1628).KeyboardTypes.SYSTEM).keyboardWillOpen;
   const tmp7 = useKeyboardTypeDefault();
   const SYSTEM = token(1628).KeyboardTypes.SYSTEM;

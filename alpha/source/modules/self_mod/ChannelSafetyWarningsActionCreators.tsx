@@ -1,14 +1,14 @@
-// Module ID: 12475
-// Function ID: 12476
+// Module ID: 11757
+// Function ID: 11758
 // Name: ChannelSafetyWarningsActionCreators
-// Dependencies: [12462, 1072, 572, 1285, 2]
+// Dependencies: [11744, 1072, 572, 1285, 2]
 // Exports: acknowledgeChannelSafetyWarningTooltip, clearChannelSafetyWarnings, dismissChannelSafetyWarnings, markAsStrangerDanger, reportFalsePositive, setChannelSafetyWarningFeedback
 
-// Module 12475 (ChannelSafetyWarningsActionCreators)
+// Module 11757 (ChannelSafetyWarningsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 12462 */;
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 11744 */;
 import size from "module_2" /* 2 */;
 
 const SafetyWarningTypes = ChannelSafetyWarningsStore.SafetyWarningTypes;

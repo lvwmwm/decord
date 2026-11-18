@@ -1,22 +1,20 @@
-// Module ID: 20307
-// Function ID: 20308
+// Module ID: 19578
+// Function ID: 19579
 // Name: GuildPowerupsManager
-// Dependencies: [5181, 5242, 5343, 5517, 7892, 5184, 5536, 5523, 5535, 14026, 18926, 6260, 5522, 14003, 9247, 2]
+// Dependencies: [4694, 4755, 4856, 8243, 7395, 4697, 6799, 13314, 13315, 13330, 17737, 5756, 13305, 8658, 2]
 
-// Module 20307 (GuildPowerupsManager)
-import FavoritesUtils from "FavoritesUtils" /* 5184 */;
-import ServerThemeUserExperiment from "ServerThemeUserExperiment" /* 5522 */;
-import ServerThemeExperiment2 from "ServerThemeExperiment" /* 5523 */;
-import shared_PlatformUtils from "shared/PlatformUtils" /* 6260 */;
-import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 9247 */;
-import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 14003 */;
-import useHasAllocateBoostPermission from "useHasAllocateBoostPermission" /* 14026 */;
-import useIsCurrentUserEligibleForPowerupUpsells from "useIsCurrentUserEligibleForPowerupUpsells" /* 18926 */;
-import GuildStore from "GuildStore" /* 5181 */;
-import PermissionStore from "PermissionStore" /* 5242 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5343 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 5517 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7892 */;
+// Module 19578 (GuildPowerupsManager)
+import FavoritesUtils from "FavoritesUtils" /* 4697 */;
+import shared_PlatformUtils from "shared/PlatformUtils" /* 5756 */;
+import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 8658 */;
+import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 13305 */;
+import useHasAllocateBoostPermission from "useHasAllocateBoostPermission" /* 13330 */;
+import useIsCurrentUserEligibleForPowerupUpsells from "useIsCurrentUserEligibleForPowerupUpsells" /* 17737 */;
+import GuildStore from "GuildStore" /* 4694 */;
+import PermissionStore from "PermissionStore" /* 4755 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4856 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 8243 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
 import size from "module_2" /* 2 */;
 
 let map;
@@ -39,60 +37,40 @@ class GuildPowerupsManager extends AutomaticLifecycleManager {
   handleSelectedGuildChange() {
     const guildId = SelectedGuildStore.getGuildId();
     if (null != guildId) {
-      const obj10 = FavoritesUtils;
-      if (!obj10.isFavoritesGuildId(guildId)) {
+      const obj6 = FavoritesUtils;
+      if (!obj6.isFavoritesGuildId(guildId)) {
         const guild = GuildStore.getGuild(guildId);
         if (null != guild) {
-          const GameServerExperiment = tmp7(5536).GameServerExperiment;
+          const GameServerExperiment = tmp7(6799).GameServerExperiment;
           const obj = { guildId: guild.id, location: "GuildPowerupsManager" };
           GameServerExperiment.trackExposure(obj);
-          const ServerThemeExperiment = tmp7(5523).ServerThemeExperiment;
+          const ServerThemeExperiment = tmp7(13314).ServerThemeExperiment;
           const obj2 = { guildId: guild.id, location: "GuildPowerupsManager" };
           ServerThemeExperiment.trackExposure(obj2);
-          const ServerThemeApexShadowExperiment = tmp7(5535).ServerThemeApexShadowExperiment;
-          const obj3 = { guildId: guild.id, location: "GuildPowerupsManager" };
-          const config = ServerThemeApexShadowExperiment.getConfig(obj3);
+          const ServerThemeApexShadowExperiment = tmp7(13315).ServerThemeApexShadowExperiment;
+          const obj4 = { guildId: guild.id, location: "GuildPowerupsManager" };
+          const config = ServerThemeApexShadowExperiment.getConfig(obj4);
           const tmp7Result = useHasAllocateBoostPermission;
           if (!tmp7Result.getHasAllocateBoostPermission(PermissionStore, guild)) {
-            const tmp7Result9 = useIsCurrentUserEligibleForPowerupUpsells;
-            let isCurrentUserEligibleForPowerupUpsells = tmp7Result9.getIsCurrentUserEligibleForPowerupUpsells();
-            let isMobile = tmp7(6260).isMobile;
+            const tmp7Result5 = useIsCurrentUserEligibleForPowerupUpsells;
+            let isCurrentUserEligibleForPowerupUpsells = tmp7Result5.getIsCurrentUserEligibleForPowerupUpsells();
+            let isMobile = tmp7(5756).isMobile;
             if (isMobile) {
-              const tmp7Result10 = ServerThemeExperiment2;
-              isMobile = tmp7Result10.getServerThemeEnabled(guildId, "GuildPowerupsManager");
-            }
-            if (isMobile) {
-              const tmp7Result11 = ServerThemeExperiment2;
-              isMobile = !tmp7Result11.getServerThemeRollbackEnabled(guildId, "GuildPowerupsManager");
-            }
-            if (isMobile) {
-              const tmp7Result12 = useIsCurrentUserEligibleForPowerupUpsells;
-              isMobile = tmp7Result12.getIsCurrentUserEligibleForPowerupUpsells();
-            }
-            if (isMobile) {
-              const tmp7Result13 = ServerThemeUserExperiment;
-              isMobile = tmp7Result13.getServerThemeUserEnabled("GuildPowerupsManager");
-            }
-            let isMobile2 = tmp7(6260).isMobile;
-            if (isMobile2) {
-              const tmp7Result14 = useIsCurrentUserEligibleForPowerupUpsells;
-              isMobile2 = tmp7Result14.getIsCurrentUserEligibleForPowerupUpsells();
+              const tmp7Result6 = useIsCurrentUserEligibleForPowerupUpsells;
+              isMobile = tmp7Result6.getIsCurrentUserEligibleForPowerupUpsells();
             }
             if (shared_PlatformUtils.isMobile) {
-              if (!isMobile) {
-                isMobile = isMobile2;
-              }
               isCurrentUserEligibleForPowerupUpsells = isMobile;
             }
           }
-          const obj7 = GuildPowerupsStore;
+          const obj3 = GuildPowerupsStore;
           if (GuildPowerupsStore.shouldFetchCatalogForGuild(guildId)) {
-            const tmp7Result15 = GuildPowerupsActionCreators;
-            const powerupCatalogForGuild = tmp7Result15.fetchPowerupCatalogForGuild(guildId);
+            const tmp7Result7 = GuildPowerupsActionCreators;
+            const powerupCatalogForGuild = tmp7Result7.fetchPowerupCatalogForGuild(guildId);
           }
-          if (obj7.shouldFetchPowerupsForGuild(guildId)) {
-            const tmp7Result16 = GuildPowerupsActionCreators;
-            const guildBoostEntitlements = tmp7Result16.fetchGuildBoostEntitlements(guildId);
+          if (obj3.shouldFetchPowerupsForGuild(guildId)) {
+            const tmp7Result8 = GuildPowerupsActionCreators;
+            const guildBoostEntitlements = tmp7Result8.fetchGuildBoostEntitlements(guildId);
           }
         }
       }

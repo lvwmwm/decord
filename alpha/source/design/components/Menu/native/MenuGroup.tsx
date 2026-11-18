@@ -1,15 +1,15 @@
-// Module ID: 16478
-// Function ID: 16479
+// Module ID: 15145
+// Function ID: 15146
 // Name: MenuGroup
-// Dependencies: [19, 17, 21, 5310, 575, 2]
+// Dependencies: [19, 17, 21, 4823, 575, 2]
 // Exports: MenuGroup
 
-// Module 16478 (MenuGroup)
+// Module 15145 (MenuGroup)
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;

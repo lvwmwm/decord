@@ -1,10 +1,10 @@
-// Module ID: 5333
-// Function ID: 5334
+// Module ID: 4846
+// Function ID: 4847
 // Name: shared/Colors
 // Dependencies: [32, 671, 2]
 // Exports: brightenColor, darkenColor, getContrastingColor, setColorOpacity
 
-// Module 5333 (shared/Colors)
+// Module 4846 (shared/Colors)
 import _modDef671 from "module_671" /* 671 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;

@@ -5,18 +5,18 @@
 
 // Module 688 (CONSOLE_LEVELS)
 import _mod685 from "module_685" /* 685 */;
-import _mod687 from "module_687" /* 687 */;
+import DEBUG_BUILD from "DEBUG_BUILD" /* 687 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap;
 
 let tmp;
 const _mod689 = tmp(689);
-const f82498 = () => ({ enabled: false });
+const f80075 = () => ({ enabled: false });
 function consoleSandbox(fn) {
   let closure_1;
   let console;
-  const f82496 = (item) => {
+  const f80073 = (item) => {
     console[item] = closure_1[item];
   };
   const tmp = console;
@@ -31,10 +31,10 @@ function consoleSandbox(fn) {
     });
     try {
       const tmp6 = fn();
-      const item1 = keys.forEach(f82496);
+      const item1 = keys.forEach(f80073);
       return tmp6;
     } catch (tmp8) {
-      const item2 = keys.forEach(f82496);
+      const item2 = keys.forEach(f80073);
       throw tmp8;
     }
   } else {
@@ -46,12 +46,12 @@ function _maybeLog(arg0) {
   let closure_0;
   _require = arg0;
   dependencyMap = [...arguments].slice();
-  let enabled = require("module_687").DEBUG_BUILD;
+  let enabled = require("DEBUG_BUILD").DEBUG_BUILD;
   if (enabled) {
     let globalSingleton;
-    if (require("module_687").DEBUG_BUILD) {
+    if (require("DEBUG_BUILD").DEBUG_BUILD) {
       const tmpResult = require("module_689");
-      globalSingleton = tmpResult.getGlobalSingleton("loggerSettings", f82498);
+      globalSingleton = tmpResult.getGlobalSingleton("loggerSettings", f80075);
     } else {
       globalSingleton = { enabled: false };
     }
@@ -71,9 +71,9 @@ const originalConsoleMethods = {};
 const obj2 = {
   enable() {
     let globalSingleton;
-    if (_mod687.DEBUG_BUILD) {
+    if (DEBUG_BUILD.DEBUG_BUILD) {
       const tmpResult = _mod689;
-      globalSingleton = tmpResult.getGlobalSingleton("loggerSettings", f82498);
+      globalSingleton = tmpResult.getGlobalSingleton("loggerSettings", f80075);
     } else {
       globalSingleton = { enabled: false };
     }
@@ -81,9 +81,9 @@ const obj2 = {
   },
   disable() {
     let globalSingleton;
-    if (_mod687.DEBUG_BUILD) {
+    if (DEBUG_BUILD.DEBUG_BUILD) {
       const tmpResult = _mod689;
-      globalSingleton = tmpResult.getGlobalSingleton("loggerSettings", f82498);
+      globalSingleton = tmpResult.getGlobalSingleton("loggerSettings", f80075);
     } else {
       globalSingleton = { enabled: false };
     }
@@ -91,9 +91,9 @@ const obj2 = {
   },
   isEnabled() {
     let globalSingleton;
-    if (_mod687.DEBUG_BUILD) {
+    if (DEBUG_BUILD.DEBUG_BUILD) {
       const tmpResult = _mod689;
-      globalSingleton = tmpResult.getGlobalSingleton("loggerSettings", f82498);
+      globalSingleton = tmpResult.getGlobalSingleton("loggerSettings", f80075);
     } else {
       globalSingleton = { enabled: false };
     }

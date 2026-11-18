@@ -1,18 +1,18 @@
-// Module ID: 13550
-// Function ID: 13551
+// Module ID: 12857
+// Function ID: 12858
 // Name: BannerBase
-// Dependencies: [32, 19, 17, 5311, 21, 575, 5310, 13539, 1655, 1496, 5307, 504, 5933, 5887, 5917, 13551, 5923, 2]
+// Dependencies: [32, 19, 17, 4824, 21, 575, 4823, 12846, 1655, 1496, 4820, 504, 5424, 5378, 5408, 12858, 5414, 2]
 // Exports: default
 
-// Module 13550 (BannerBase)
+// Module 12857 (BannerBase)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ApplicationsImage from "ApplicationsImage" /* 13539 */;
+import ApplicationsImage from "ApplicationsImage" /* 12846 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5311 */;
+import AccessibilityStore from "AccessibilityStore" /* 4824 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -127,12 +127,12 @@ export default function BannerBase(image) {
   items4[2] = animatedStyle;
   const obj6 = { start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, colors: items, style: items5 };
   items5 = [tmp.bannerBackgroundGradient, { height: tmp3, width: diff }];
-  items6 = [closure_7(sharedValue(5887), obj6), , ];
+  items6 = [closure_7(sharedValue(5378), obj6), , ];
   let tmp17Result = null != image;
   if (tmp17Result) {
     const obj7 = { style: tmp.imageContainer, children: items7 };
-    const obj8 = { style: tmp.trinketsLottie, source: require("module_13551"), autoPlay: !stateFromStores };
-    const tmp7Result = sharedValue(5917);
+    const obj8 = { style: tmp.trinketsLottie, source: require("module_12858"), autoPlay: !stateFromStores };
+    const tmp7Result = sharedValue(5408);
     items7 = [closure_7(tmp7Result, obj8), image];
     tmp17Result = tmp17(View, obj7);
   }
@@ -142,7 +142,7 @@ export default function BannerBase(image) {
   const obj9 = { style: items8, children: closure_7(Text, { variant: "body-md/semibold", color: "text-overlay-light", style: items9, children: text }) };
   items9 = [tmp.bannerText, ];
   let bannerTextCentered = null == image;
-  Text = tmp4(5923).Text;
+  Text = tmp4(5414).Text;
   const tmp22 = View;
   if (bannerTextCentered) {
     bannerTextCentered = tmp.bannerTextCentered;

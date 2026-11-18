@@ -1,10 +1,10 @@
-// Module ID: 9685
-// Function ID: 9686
+// Module ID: 9100
+// Function ID: 9101
 // Name: resolveLocalizedProperties
 // Dependencies: [32, 2]
 // Exports: resolveLocalizedProperties
 
-// Module 9685 (resolveLocalizedProperties)
+// Module 9100 (resolveLocalizedProperties)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -20,75 +20,123 @@ function isLocalizedStringLike(localizations) {
   }
   return false;
 }
+function isHeroVideoStorageLike(storage) {
+  if (typeof storage === "object") {
+    if (null != storage) {
+      const heroArtLocalizedVideoLinksDarkTheme = storage.heroArtLocalizedVideoLinksDarkTheme;
+      let tmp = typeof heroArtLocalizedVideoLinksDarkTheme === "object";
+      if (typeof heroArtLocalizedVideoLinksDarkTheme === "object") {
+        tmp = typeof storage.heroArtLocalizedVideoLinksLightTheme === "object";
+      }
+      if (tmp) {
+        tmp = typeof storage.heroArtVideoSubtitleLinks === "object";
+      }
+      return tmp;
+    }
+  }
+  return false;
+}
 function deepClone(arr) {
   if (Array.isArray(arr)) {
     return arr.map((item) => deepClone(item));
   } else {
     if (null != arr) {
       if (typeof arr === "object") {
-        const _Object2 = Object;
-        const prototypeOf = Object.getPrototypeOf(arr);
-        const _Object3 = Object;
-        if (prototypeOf !== Object.prototype) {
-          if (null !== prototypeOf) {
-            return arr;
+        const _ArrayBuffer = ArrayBuffer;
+        if (!ArrayBuffer.isView(arr)) {
+          const _Object = Object;
+          const _Object2 = Object;
+          const obj = Object.create(Object.getPrototypeOf(arr));
+          const _Object3 = Object;
+          const entries = Object.entries(arr);
+          const tmp5 = entries[Symbol.iterator]();
+          while (tmp5 !== undefined) {
+            let tmp10 = _slicedToArray(tmp7, 2);
+            obj[tmp10[0]] = deepClone(tmp10[1]);
+            continue;
           }
+          return obj;
         }
-        const obj = {};
-        const _Object = Object;
-        const entries = Object.entries(arr);
-        const tmp4 = entries[Symbol.iterator]();
-        while (tmp4 !== undefined) {
-          let tmp9 = _slicedToArray(tmp6, 2);
-          obj[tmp9[0]] = deepClone(tmp9[1]);
-          continue;
-        }
-        return obj;
       }
     }
     return arr;
   }
 }
-function resolveInPlace(obj, arg1) {
+function resolveInPlace(storage, arg1) {
   let first;
-  let tmp6;
-  if (Array.isArray(obj)) {
-    const tmp26 = obj[Symbol.iterator]();
-    while (tmp26 !== undefined) {
-      let tmp31 = resolveInPlace(tmp28, arg1);
+  let tmp10;
+  function resolveHeroVideo(storage, storage2, arg2) {
+    let closure_0 = arg2;
+    let tmp = storage.heroArtLocalizedVideoLinksDarkTheme[arg2];
+    let tmp2 = null != tmp;
+    if (tmp2) {
+      tmp2 = "" !== tmp;
+    }
+    if (tmp2) {
+      storage.videoLink = tmp;
+    }
+    const tmp4 = null != storage.heroArtLocalizedVideoLinksLightTheme[arg2] && "" !== storage.heroArtLocalizedVideoLinksLightTheme[arg2];
+    if (tmp4) {
+      storage.heroArtVideoLinkLightTheme = storage.heroArtLocalizedVideoLinksLightTheme[arg2];
+    }
+    const heroArtVideoSubtitleLinks = storage.heroArtVideoSubtitleLinks;
+    const keys = Object.keys(heroArtVideoSubtitleLinks);
+    if (keys.length > 0) {
+      let closure_2 = null != heroArtVideoSubtitleLinks[arg2];
+      storage.heroArtVideoSubtitles = keys.map((locale) => {
+        let tmp;
+        const obj = { link: heroArtVideoSubtitleLinks[locale], locale, isDefault: tmp };
+        tmp = locale === closure_0;
+        if (!tmp) {
+          tmp = "en-US" === locale && !closure_2;
+          const tmp2 = "en-US" === locale && !closure_2;
+        }
+        return obj;
+      });
+    }
+    storage.storage = undefined;
+  }
+  if (Array.isArray(storage)) {
+    const tmp30 = storage[Symbol.iterator]();
+    while (tmp30 !== undefined) {
+      let tmp35 = resolveInPlace(tmp32, arg1);
       continue;
     }
-  } else if (typeof obj === "object") {
-    if (null != obj) {
+  } else if (typeof storage === "object") {
+    if (null != storage) {
+      if (isHeroVideoStorageLike(storage.storage)) {
+        let tmp = resolveHeroVideo(storage, storage.storage, arg1);
+      }
       const _Object = Object;
-      const entries = Object.entries(obj);
-      const tmp35 = entries[Symbol.iterator]();
-      while (tmp35 !== undefined) {
-        [first, tmp6] = tmp2;
+      const entries = Object.entries(storage);
+      let tmp4 = entries[Symbol.iterator]();
+      const str = "";
+      while (tmp4 !== undefined) {
+        [first, tmp10] = tmp6;
         let arr = first;
         if (first.endsWith(Localized)) {
-          if (isLocalizedStringLike(tmp6)) {
+          if (isLocalizedStringLike(tmp10)) {
             let substr = arr.slice(0, -9);
-            let tmp16 = tmp6.localizations[arg1];
-            if (tmp16 == null) {
+            let tmp20 = tmp10.localizations[arg1];
+            if (tmp20 == null) {
               let _default = null;
-              if ("" !== tmp6.default) {
-                _default = tmp6.default;
+              if ("" !== tmp10.default) {
+                _default = tmp10.default;
               }
-              tmp16 = _default;
+              tmp20 = _default;
             }
-            let tmp21 = null != tmp16;
-            let tmp20 = tmp16;
-            if (tmp21) {
-              tmp21 = substr in obj;
+            let tmp25 = null != tmp20;
+            let tmp24 = tmp20;
+            if (tmp25) {
+              tmp25 = substr in storage;
             }
-            if (tmp21) {
-              obj[substr] = tmp20;
+            if (tmp25) {
+              storage[substr] = tmp24;
             }
             continue;
           }
         }
-        let tmp12 = resolveInPlace(tmp6, arg1);
+        let tmp16 = resolveInPlace(tmp10, arg1);
       }
     }
   }
@@ -98,31 +146,53 @@ const result = size.fileFinishedImporting("modules/premium/promotions/resolveLoc
 function collectLocalizationLocales(obj, add) {
   let tmp6;
   if (Array.isArray(obj)) {
-    const tmp19 = obj[Symbol.iterator]();
-    while (tmp19 !== undefined) {
-      let tmp24 = collectLocalizationLocales(tmp21, add);
+    const tmp37 = obj[Symbol.iterator]();
+    while (tmp37 !== undefined) {
+      let tmp42 = collectLocalizationLocales(tmp39, add);
       continue;
     }
   } else if (typeof obj === "object") {
     if (null != obj) {
-      const _Object2 = Object;
+      const _Object5 = Object;
       const entries = Object.entries(obj);
-      const tmp28 = entries[Symbol.iterator]();
-      while (tmp28 !== undefined) {
+      const tmp46 = entries[Symbol.iterator]();
+      while (tmp46 !== undefined) {
         let tmp5 = _slicedToArray(tmp2, 2);
         [obj, tmp6] = tmp5;
-        if (obj.endsWith(Localized)) {
-          if (isLocalizedStringLike(tmp6)) {
-            let _Object = Object;
-            let keys = Object.keys(tmp6.localizations);
-            for (const item10032 of keys) {
-              let addResult = add.add(item10032);
-              continue;
-            }
+        let tmp7 = tmp6;
+        if (isHeroVideoStorageLike(tmp6)) {
+          let _Object2 = Object;
+          let keys = Object.keys(tmp7.heroArtLocalizedVideoLinksDarkTheme);
+          for (const item10050 of keys) {
+            let addResult = add.add(item10050);
             continue;
           }
+          let _Object3 = Object;
+          let keys1 = Object.keys(tmp7.heroArtLocalizedVideoLinksLightTheme);
+          for (const item10063 of keys1) {
+            let addResult1 = add.add(item10063);
+            continue;
+          }
+          let _Object4 = Object;
+          let keys2 = Object.keys(tmp7.heroArtVideoSubtitleLinks);
+          for (const item10076 of keys2) {
+            let addResult2 = add.add(item10076);
+            continue;
+          }
+        } else {
+          if (obj.endsWith(Localized)) {
+            if (isLocalizedStringLike(tmp7)) {
+              let _Object = Object;
+              let keys3 = Object.keys(tmp7.localizations);
+              for (const item10037 of keys3) {
+                let addResult3 = add.add(item10037);
+                continue;
+              }
+            }
+          }
+          let tmp15 = collectLocalizationLocales(tmp7, add);
         }
-        let tmp12 = collectLocalizationLocales(tmp6, add);
+        continue;
       }
     }
   }

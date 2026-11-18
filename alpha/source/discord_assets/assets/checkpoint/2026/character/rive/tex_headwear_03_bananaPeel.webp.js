@@ -1,8 +1,8 @@
-// Module ID: 13219
-// Function ID: 13220
+// Module ID: 12522
+// Function ID: 12523
 // Dependencies: [2]
 
-// Module 13219
+// Module 12522
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_headwear_03_bananaPeel.webp.js");

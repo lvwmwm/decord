@@ -324,7 +324,7 @@ function enrichWithThreadInformation(samples) {
   }
   return tmp;
 }
-function applyDebugMetadata(arg0) {
+function applyDebugMetadata(resources) {
   let debugImagesForResources;
   const obj = _mod681;
   const client = obj.getClient();
@@ -338,7 +338,7 @@ function applyDebugMetadata(arg0) {
   }
   if (stackParser) {
     const tmpResult = _mod681;
-    debugImagesForResources = tmpResult.getDebugImagesForResources(stackParser, arg0);
+    debugImagesForResources = tmpResult.getDebugImagesForResources(stackParser, resources);
   } else {
     debugImagesForResources = [];
   }

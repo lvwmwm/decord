@@ -1,17 +1,17 @@
-// Module ID: 11967
-// Function ID: 11968
+// Module ID: 11249
+// Function ID: 11250
 // Name: ShinyButton
-// Dependencies: [19, 21, 5310, 575, 5931, 1187, 11968, 2]
+// Dependencies: [19, 21, 4823, 575, 5422, 1187, 11250, 2]
 // Exports: default
 
-// Module 11967 (ShinyButton)
+// Module 11249 (ShinyButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import BaseTextButton2 from "BaseTextButton" /* 5931 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11968 */;
+import BaseTextButton2 from "BaseTextButton" /* 5422 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11250 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

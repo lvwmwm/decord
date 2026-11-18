@@ -1,13 +1,13 @@
-// Module ID: 8583
-// Function ID: 8584
+// Module ID: 8074
+// Function ID: 8075
 // Name: useProfileFrame
-// Dependencies: [8496, 8511, 8503, 504, 2]
+// Dependencies: [7987, 8002, 7994, 504, 2]
 // Exports: default
 
-// Module 8583 (useProfileFrame)
-import ProfileFrameRecord from "ProfileFrameRecord" /* 8503 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 8496 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 8511 */;
+// Module 8074 (useProfileFrame)
+import ProfileFrameRecord from "ProfileFrameRecord" /* 7994 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7987 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 8002 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

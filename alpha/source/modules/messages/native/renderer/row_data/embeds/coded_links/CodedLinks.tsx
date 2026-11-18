@@ -1,41 +1,42 @@
-// Module ID: 15585
-// Function ID: 15586
+// Module ID: 14213
+// Function ID: 14214
 // Name: CodedLinks
-// Dependencies: [32, 5243, 5181, 1388, 8806, 13422, 6049, 15586, 15591, 15605, 15607, 15597, 15609, 15602, 12621, 12961, 12640, 15610, 15613, 15614, 15616, 15618, 12646, 12726, 15619, 1255, 2]
+// Dependencies: [32, 4756, 4694, 1388, 8303, 12729, 5545, 14214, 14219, 14233, 14235, 14225, 14237, 14230, 11906, 12248, 11925, 14238, 14241, 14242, 14244, 14245, 8810, 12011, 14246, 1255, 2]
 // Exports: createCodedLinkEmbeds
 
-// Module 15585 (CodedLinks)
+// Module 14213 (CodedLinks)
 import GlobalUtils from "GlobalUtils" /* 1255 */;
-import CodedLink from "CodedLink" /* 6049 */;
-import ApplicationCodedLink from "ApplicationCodedLink" /* 8806 */;
-import useCodedLinksExperimentEmbeds from "useCodedLinksExperimentEmbeds" /* 12621 */;
-import storefrontCodedLink from "storefrontCodedLink" /* 12640 */;
-import conjureProjectLink from "conjureProjectLink" /* 12646 */;
-import LinkedGameOrgInvitesExperiment from "LinkedGameOrgInvitesExperiment" /* 12726 */;
-import ExperimentEmbed from "ExperimentEmbed" /* 12961 */;
-import createAppMessageEmbed from "createAppMessageEmbed" /* 13422 */;
-import createActivityMessageEmbed from "createActivityMessageEmbed" /* 15586 */;
-import InviteEmbed from "InviteEmbed" /* 15591 */;
-import GuildScheduledEventEmbed from "GuildScheduledEventEmbed" /* 15597 */;
-import EmbeddedActivityInviteEmbed from "EmbeddedActivityInviteEmbed" /* 15602 */;
-import GuildTemplateEmbed from "GuildTemplateEmbed" /* 15605 */;
-import BuildOverrideEmbed from "BuildOverrideEmbed" /* 15607 */;
-import VoiceChannelLinkEmbed from "VoiceChannelLinkEmbed" /* 15609 */;
-import createSocialLayerStorefrontMultiSkuEmbed2 from "createSocialLayerStorefrontMultiSkuEmbed" /* 15610 */;
-import createSocialLayerStorefrontProductDetailsEmbed2 from "createSocialLayerStorefrontProductDetailsEmbed" /* 15613 */;
-import QuestEmbed from "QuestEmbed" /* 15614 */;
-import UserProfileEmbed from "UserProfileEmbed" /* 15616 */;
-import createConjureProjectLinkEmbedDefault from "createConjureProjectLinkEmbed" /* 15618 */;
-import GameOrganizationInviteEmbed from "GameOrganizationInviteEmbed" /* 15619 */;
+import CodedLink from "CodedLink" /* 5545 */;
+import ApplicationCodedLink from "ApplicationCodedLink" /* 8303 */;
+import conjureProjectLink from "conjureProjectLink" /* 8810 */;
+import useCodedLinksExperimentEmbeds from "useCodedLinksExperimentEmbeds" /* 11906 */;
+import storefrontCodedLink from "storefrontCodedLink" /* 11925 */;
+import LinkedGameOrgInvitesExperiment from "LinkedGameOrgInvitesExperiment" /* 12011 */;
+import ExperimentEmbed from "ExperimentEmbed" /* 12248 */;
+import createAppMessageEmbed from "createAppMessageEmbed" /* 12729 */;
+import createActivityMessageEmbed from "createActivityMessageEmbed" /* 14214 */;
+import InviteEmbed from "InviteEmbed" /* 14219 */;
+import GuildScheduledEventEmbed from "GuildScheduledEventEmbed" /* 14225 */;
+import EmbeddedActivityInviteEmbed from "EmbeddedActivityInviteEmbed" /* 14230 */;
+import GuildTemplateEmbed from "GuildTemplateEmbed" /* 14233 */;
+import BuildOverrideEmbed from "BuildOverrideEmbed" /* 14235 */;
+import VoiceChannelLinkEmbed from "VoiceChannelLinkEmbed" /* 14237 */;
+import createSocialLayerStorefrontMultiSkuEmbed2 from "createSocialLayerStorefrontMultiSkuEmbed" /* 14238 */;
+import createSocialLayerStorefrontProductDetailsEmbed2 from "createSocialLayerStorefrontProductDetailsEmbed" /* 14241 */;
+import QuestEmbed from "QuestEmbed" /* 14242 */;
+import UserProfileEmbed from "UserProfileEmbed" /* 14244 */;
+import createConjureProjectLinkEmbedDefault from "createConjureProjectLinkEmbed" /* 14245 */;
+import GameOrganizationInviteEmbed from "GameOrganizationInviteEmbed" /* 14246 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import LurkingStore from "LurkingStore" /* 5243 */;
-import GuildStore from "GuildStore" /* 5181 */;
+import LurkingStore from "LurkingStore" /* 4756 */;
+import GuildStore from "GuildStore" /* 4694 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/CodedLinks.tsx");
 
 export function createCodedLinkEmbeds(message, message2, channel, forcedTheme) {
+  let closure_1 = channel;
   const theme = forcedTheme;
   if (null != message.author) {
     if (0 !== message2.codedLinks.length) {
@@ -62,7 +63,7 @@ export function createCodedLinkEmbeds(message, message2, channel, forcedTheme) {
                 return null;
               } else {
                 const applicationId = applicationCodedLinkData.applicationId;
-                const obj2 = { appId: applicationId, channel: tmp49, message, theme };
+                const obj2 = { appId: applicationId, channel: tmp47, message, theme };
                 const tmpResult24 = createAppMessageEmbed;
                 const appLinkGateResult = tmpResult24.getAppLinkGateResult(obj2);
                 if ("unavailable" === appLinkGateResult.state) {
@@ -105,12 +106,12 @@ export function createCodedLinkEmbeds(message, message2, channel, forcedTheme) {
         } else if (CodedLink.CodedLinkType.MANUAL_BUILD_OVERRIDE === type) {
           currentUser = UserStore.getCurrentUser();
           let isStaffResult;
-          const obj20 = UserStore;
+          const obj21 = UserStore;
           if (currentUser != null) {
             isStaffResult = currentUser.isStaff();
           }
           if (!isStaffResult) {
-            const currentUser1 = obj20.getCurrentUser();
+            const currentUser1 = obj21.getCurrentUser();
             let isStaffPersonalResult;
             if (currentUser1 != null) {
               isStaffPersonalResult = currentUser1.isStaffPersonal();
@@ -119,7 +120,7 @@ export function createCodedLinkEmbeds(message, message2, channel, forcedTheme) {
           }
           if (!isStaffResult) {
             isStaffResult = null != GuildStore.getGuild("943265993613008967") && !LurkingStore.isLurking("943265993613008967");
-            const tmp41 = null != GuildStore.getGuild("943265993613008967") && !LurkingStore.isLurking("943265993613008967");
+            const tmp39 = null != GuildStore.getGuild("943265993613008967") && !LurkingStore.isLurking("943265993613008967");
           }
           let buildOverrideEmbed = null;
           if (isStaffResult) {
@@ -160,25 +161,20 @@ export function createCodedLinkEmbeds(message, message2, channel, forcedTheme) {
                         if (CodedLink.CodedLinkType.GAME_SERVER_SHARE !== type) {
                           if (CodedLink.CodedLinkType.USER_WISHLIST !== type) {
                             if (CodedLink.CodedLinkType.USER_PROFILE === type) {
-                              let guild_id;
-                              const createUserProfileEmbed = UserProfileEmbed.createUserProfileEmbed;
-                              UserProfileEmbed;
-                              if (channel != null) {
-                                guild_id = channel.guild_id;
-                              }
-                              return createUserProfileEmbed(code, guild_id, theme);
+                              const tmpResult37 = UserProfileEmbed;
+                              return tmpResult37.createUserProfileEmbed(code, channel, theme);
                             } else if (CodedLink.CodedLinkType.CONJURE_PROJECT === type) {
                               const tmp9 = createConjureProjectLinkEmbedDefault;
                               const tmpResult38 = conjureProjectLink;
                               const result = tmpResult38.conjureProjectLinkTicket(url);
-                              let guild_id1;
+                              let guild_id;
                               if (channel != null) {
-                                guild_id1 = tmp12.guild_id;
+                                guild_id = tmp12.guild_id;
                               }
-                              if (guild_id1 == null) {
-                                guild_id1 = null;
+                              if (guild_id == null) {
+                                guild_id = null;
                               }
-                              const obj7 = { guildId: guild_id1, channelId: id };
+                              const obj7 = { guildId: guild_id, channelId: id };
                               id = undefined;
                               if (channel != null) {
                                 id = tmp12.id;

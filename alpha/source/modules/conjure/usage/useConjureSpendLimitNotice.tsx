@@ -1,13 +1,13 @@
-// Module ID: 14616
-// Function ID: 14617
+// Module ID: 18472
+// Function ID: 18473
 // Name: useConjureSpendLimitNotice
-// Dependencies: [7390, 504, 2188, 1113, 4133, 2]
+// Dependencies: [6893, 504, 2188, 1113, 4121, 2]
 // Exports: default
 
-// Module 14616 (useConjureSpendLimitNotice)
+// Module 18472 (useConjureSpendLimitNotice)
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
-import _modDef4133 from "module_4133" /* 4133 */;
-import ConjureSpendLimitStore from "ConjureSpendLimitStore" /* 7390 */;
+import _modDef4121 from "module_4121" /* 4121 */;
+import ConjureSpendLimitStore from "ConjureSpendLimitStore" /* 6893 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -38,11 +38,11 @@ export default function useConjureSpendLimitNotice(arg0) {
       if (null == formatResult) {
         const intl2 = tmp(1113).intl;
         const obj3 = { helpdeskURL: submitRequestURL };
-        formatResult1 = intl2.format(tmp6(4133)["bw/n4C"], obj3);
+        formatResult1 = intl2.format(tmp6(4121)["bw/n4C"], obj3);
       } else {
         const intl = tmp(1113).intl;
         const obj4 = { limit: formatResult, helpdeskURL: submitRequestURL };
-        formatResult1 = intl.format(tmp6(4133).GYqJXH, obj4);
+        formatResult1 = intl.format(tmp6(4121).GYqJXH, obj4);
       }
       return { blocked: true, message: formatResult1 };
     } else {
@@ -51,7 +51,7 @@ export default function useConjureSpendLimitNotice(arg0) {
           if (stateFromStores.limitUsd > 0) {
             const _Math = Math;
             const _Math2 = Math;
-            const obj6 = { blocked: false, message: intl3.formatToPlainString(_modDef4133.GHgG2B, obj7) };
+            const obj6 = { blocked: false, message: intl3.formatToPlainString(_modDef4121.GHgG2B, obj7) };
             const bound = Math.min(99, Math.floor(stateFromStores.spentUsd / stateFromStores.limitUsd * 100));
             intl3 = tmp(1113).intl;
             return obj6;

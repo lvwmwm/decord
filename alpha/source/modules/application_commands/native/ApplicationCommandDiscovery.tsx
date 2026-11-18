@@ -1,31 +1,31 @@
-// Module ID: 13890
-// Function ID: 13891
+// Module ID: 13192
+// Function ID: 13193
 // Name: ApplicationCommandDiscovery
-// Dependencies: [32, 19, 17, 6343, 13891, 11939, 1072, 21, 13892, 5310, 575, 5938, 13893, 11360, 2119, 11122, 5319, 1113, 6064, 12, 13894, 5979, 13895, 13896, 1187, 12079, 2]
+// Dependencies: [32, 19, 17, 5845, 13193, 11221, 1072, 21, 13194, 4823, 575, 5429, 13195, 10642, 2119, 10404, 4832, 1113, 5560, 12, 13196, 5475, 13197, 13198, 1187, 11361, 2]
 // Exports: default
 
-// Module 13890 (ApplicationCommandDiscovery)
+// Module 13192 (ApplicationCommandDiscovery)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import Server from "Server" /* 2119 */;
-import useFontScale from "useFontScale" /* 5938 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6064 */;
-import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 11122 */;
-import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 11939 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12079 */;
-import ApplicationCommandsCategoriesConstants from "ApplicationCommandsCategoriesConstants" /* 13891 */;
-import ApplicationSectionHeader from "ApplicationSectionHeader" /* 13892 */;
-import ApplicationCommandDiscoveryManager from "ApplicationCommandDiscoveryManager" /* 13893 */;
-import ApplicationCommandsCategoriesDefault from "ApplicationCommandsCategories" /* 13894 */;
+import useFontScale from "useFontScale" /* 5429 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5560 */;
+import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 10404 */;
+import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 11221 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11361 */;
+import ApplicationCommandsCategoriesConstants from "ApplicationCommandsCategoriesConstants" /* 13193 */;
+import ApplicationSectionHeader from "ApplicationSectionHeader" /* 13194 */;
+import ApplicationCommandDiscoveryManager from "ApplicationCommandDiscoveryManager" /* 13195 */;
+import ApplicationCommandsCategoriesDefault from "ApplicationCommandsCategories" /* 13196 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6343 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5845 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -96,7 +96,7 @@ export default function ApplicationCommandDiscovery(channel) {
   ref = ref.useRef(false);
   let obj3 = ApplicationCommandDiscoveryManager;
   const commandDiscoveryManager = obj3.useCommandDiscoveryManager((initialSectionId) => initialSectionId.initialSectionId);
-  let tmp8 = channel(11360);
+  let tmp8 = channel(10642);
   const obj4 = { context: { channel, type: "channel" }, filters: obj5, options: obj6, allowFetch: true };
   obj5 = { commandTypes: items, builtIns: canOnlyUseTextCommands ? BuiltInCommandFilter.ONLY_TEXT : BuiltInCommandFilter.ALLOW, applicationCommands: !canOnlyUseTextCommands };
   const useDiscovery = tmp8.useDiscovery;

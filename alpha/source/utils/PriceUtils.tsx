@@ -1,15 +1,15 @@
-// Module ID: 7262
-// Function ID: 7263
+// Module ID: 6766
+// Function ID: 6767
 // Name: PriceUtils
-// Dependencies: [2189, 1390, 1083, 1380, 7263, 1113, 2]
+// Dependencies: [2189, 1390, 1083, 1380, 6767, 1113, 2]
 // Exports: formatDualPriceForBG, formatPercent, formatPrice, formatRate, maybeShortenPrice, shortenAndFormatPrice
 
-// Module 7262 (PriceUtils)
+// Module 6766 (PriceUtils)
 import Constants from "Constants" /* 1083 */;
 import intl4 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
-import utils_PriceUtils from "utils/PriceUtils" /* 7263 */;
+import utils_PriceUtils from "utils/PriceUtils" /* 6767 */;
 import LocaleStore from "LocaleStore" /* 2189 */;
 import size from "module_2" /* 2 */;
 

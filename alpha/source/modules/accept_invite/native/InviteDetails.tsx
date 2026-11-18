@@ -1,31 +1,31 @@
-// Module ID: 14292
-// Function ID: 14293
+// Module ID: 13596
+// Function ID: 13597
 // Name: InviteDetails
-// Dependencies: [32, 19, 17, 13909, 1407, 1388, 1072, 14293, 21, 5310, 575, 6959, 8852, 1187, 14194, 5366, 1113, 7733, 5923, 1414, 6014, 1256, 504, 14294, 7995, 5930, 6949, 2]
+// Dependencies: [32, 19, 17, 13211, 1407, 1388, 1072, 13597, 21, 4823, 575, 6463, 8349, 1187, 13498, 4879, 1113, 7236, 5414, 1414, 5510, 1256, 504, 13598, 7498, 5421, 6453, 2]
 // Exports: default
 
-// Module 14292 (InviteDetails)
+// Module 13596 (InviteDetails)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl8 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import UserUtilsDefault from "UserUtils" /* 5366 */;
-import Text_Text from "Text/Text" /* 5923 */;
-import LegacyTokens from "LegacyTokens" /* 6959 */;
-import GuildBadgeDefault from "GuildBadge" /* 7733 */;
-import InviteTypeUtils from "InviteTypeUtils" /* 8852 */;
-import GuildInviteIconDefault from "GuildInviteIcon" /* 14194 */;
-import HubConstants from "HubConstants" /* 14293 */;
-import InviteRolesListDefault from "InviteRolesList" /* 14294 */;
+import UserUtilsDefault from "UserUtils" /* 4879 */;
+import Text_Text from "Text/Text" /* 5414 */;
+import LegacyTokens from "LegacyTokens" /* 6463 */;
+import GuildBadgeDefault from "GuildBadge" /* 7236 */;
+import InviteTypeUtils from "InviteTypeUtils" /* 8349 */;
+import GuildInviteIconDefault from "GuildInviteIcon" /* 13498 */;
+import HubConstants from "HubConstants" /* 13597 */;
+import InviteRolesListDefault from "InviteRolesList" /* 13598 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import MultiAccountStore from "MultiAccountStore" /* 13909 */;
+import MultiAccountStore from "MultiAccountStore" /* 13211 */;
 import UserRecord from "UserRecord" /* 1407 */;
 import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;
@@ -184,16 +184,16 @@ function InviteJoinContext(invite) {
   }, items);
   const intl = invite(1113).intl;
   const stringResult = intl.string(invite(1113).t["3rE1P8"]);
-  let obj = invite(8852);
+  let obj = invite(8349);
   if (obj.isFriendInvite(invite)) {
     const intl7 = tmp3(1113).intl;
     const format3 = intl7.format;
     let obj2 = { username: obj11.getFormattedName(invite.inviter) };
     const Quj7HX = tmp3(1113).t.Quj7HX;
-    obj11 = isGuildMember(5366);
+    obj11 = isGuildMember(4879);
     format3Result = format3(Quj7HX, obj2);
   } else {
-    const tmp3Result = invite(8852);
+    const tmp3Result = invite(8349);
     if (tmp3Result.isGroupDMInvite(invite)) {
       if (null != invite.channel) {
         let format2Result;
@@ -202,7 +202,7 @@ function InviteJoinContext(invite) {
           const format2 = intl6.format;
           let obj3 = { username: obj9.getFormattedName(invite.inviter) };
           const Lu4h18 = tmp3(1113).t.Lu4h18;
-          obj9 = isGuildMember(5366);
+          obj9 = isGuildMember(4879);
           format2Result = format2(Lu4h18, obj3);
         }
         format3Result = format2Result;
@@ -210,14 +210,14 @@ function InviteJoinContext(invite) {
       const intl5 = tmp3(1113).intl;
       format2Result = intl5.string(tmp3(1113).t.OsdY8B);
     } else {
-      const tmp3Result3 = invite(8852);
+      const tmp3Result3 = invite(8349);
       if (tmp3Result3.isStreamInvite(invite)) {
         if (null != invite.target_user) {
           const intl4 = tmp3(1113).intl;
           const formatToPlainString = intl4.formatToPlainString;
           const obj4 = { username: obj7.getFormattedName(invite.target_user) };
           const x2L32Q = tmp3(1113).t.x2L32Q;
-          obj7 = isGuildMember(5366);
+          obj7 = isGuildMember(4879);
           format3Result = formatToPlainString(x2L32Q, obj4);
         }
       }
@@ -241,7 +241,7 @@ function InviteJoinContext(invite) {
           const format = intl2.format;
           const obj6 = { username: obj5.getFormattedName(invite.inviter) };
           const spU2mI = tmp3(1113).t.spU2mI;
-          obj5 = isGuildMember(5366);
+          obj5 = isGuildMember(4879);
           format3Result = format(spU2mI, obj6);
         }
       }
@@ -252,16 +252,16 @@ function InviteJoinContext(invite) {
   const tmp20 = closure_13;
   if (null != memo) {
     tmp22 = null;
-    const tmp3Result4 = invite(8852);
+    const tmp3Result4 = invite(8349);
     if (!tmp3Result4.isFriendInvite(invite)) {
-      const obj10 = { style: tmp.inviterIconWrapper, children: closure_12(isGuildMember(6014), obj12) };
+      const obj10 = { style: tmp.inviterIconWrapper, children: closure_12(isGuildMember(5510), obj12) };
       obj12 = { source: memo, style: tmp.inviterIcon };
       tmp22 = closure_12(tmp21, obj10);
     }
   }
   items1 = [tmp22, ];
   const obj13 = { style: tmp.inviteJoinText, variant: "body-sm/normal", color: "text-default", children: format3Result };
-  items1[1] = closure_12(invite(5923).Text, obj13);
+  items1[1] = closure_12(invite(5414).Text, obj13);
   return tmp20(View, obj8);
 }
 function InviteMemberCounts(invite) {
@@ -403,11 +403,11 @@ export default function InviteDetails(invite) {
   if (tmp8Result) {
     const obj10 = { event: guild_scheduled_event };
     const obj9 = { style: tmp.embedDetailsCard, children: items3 };
-    items3 = [closure_12(invite(7995).GuildEventCardHeader, obj10), , ];
+    items3 = [closure_12(invite(7498).GuildEventCardHeader, obj10), , ];
     const obj11 = { event: guild_scheduled_event };
-    items3[1] = closure_12(invite(7995).GuildEventCardMetaInfo, obj11);
+    items3[1] = closure_12(invite(7498).GuildEventCardMetaInfo, obj11);
     const obj12 = { event: guild_scheduled_event };
-    items3[2] = closure_12(invite(7995).GuildEventCardGuildInfo, obj12);
+    items3[2] = closure_12(invite(7498).GuildEventCardGuildInfo, obj12);
     tmp8Result = tmp8(View, obj9);
   }
   items2[5] = tmp8Result;
@@ -422,7 +422,7 @@ export default function InviteDetails(invite) {
   let tmp10Result;
   if (null != userAvatarSource) {
     const obj13 = { source: userAvatarSource, variant: "entity" };
-    tmp10Result = tmp10(tmp4(5930).Button.Icon, obj13);
+    tmp10Result = tmp10(tmp4(5421).Button.Icon, obj13);
   }
   if (null != stateFromStores) {
     const intl = tmp4(1113).intl;
@@ -460,11 +460,11 @@ export default function InviteDetails(invite) {
     _undefined(constants.ACCEPT);
     importDefault();
   }
-  const ButtonGroup = tmp4(6949).ButtonGroup;
+  const ButtonGroup = tmp4(6453).ButtonGroup;
   const items4 = [, ];
   const obj15 = { icon: tmp10Result, variant: "primary", size: "lg", text: tmp24, accessibilityLabel: stringResult, onPress: handleAcceptInvitePress, loading: tmp3 === constants3.ACCEPT, disabled: tmp3 === constants3.ACCEPT };
-  items4[0] = closure_12(invite(5930).Button, obj15);
-  const Button = tmp4(5930).Button;
+  items4[0] = closure_12(invite(5421).Button, obj15);
+  const Button = tmp4(5421).Button;
   const intl4 = tmp4(1113).intl;
   const string = intl4.string;
   const t = tmp4(1113).t;

@@ -1,21 +1,21 @@
-// Module ID: 7268
-// Function ID: 7269
+// Module ID: 6772
+// Function ID: 6773
 // Name: OrderSigningErrors
-// Dependencies: [7266, 6044, 5130, 2]
+// Dependencies: [6770, 5540, 4643, 2]
 // Exports: getOrderSigningError
 
-// Module 7268 (OrderSigningErrors)
-import BillingErrorDefault from "BillingError" /* 5130 */;
-import PaymentConstants from "PaymentConstants" /* 6044 */;
-import OrderConstants from "OrderConstants" /* 7266 */;
+// Module 6772 (OrderSigningErrors)
+import BillingErrorDefault from "BillingError" /* 4643 */;
+import PaymentConstants from "PaymentConstants" /* 5540 */;
+import OrderConstants from "OrderConstants" /* 6770 */;
 import size from "module_2" /* 2 */;
 
 const ConstraintReasonCode = OrderConstants.ConstraintReasonCode;
 const OrderClientErrorCode = PaymentConstants.OrderClientErrorCode;
 const result = size.fileFinishedImporting("modules/payments/OrderSigningErrors.tsx");
 
-export function getOrderSigningError(unsatisfied_constraints) {
-  unsatisfied_constraints = unsatisfied_constraints.unsatisfied_constraints;
+export function getOrderSigningError(body2) {
+  const unsatisfied_constraints = body2.unsatisfied_constraints;
   let someResult;
   if (unsatisfied_constraints != null) {
     someResult = unsatisfied_constraints.some((reason_code) => reason_code.reason_code === constants.PURCHASE_RESTRICTED);
@@ -27,7 +27,7 @@ export function getOrderSigningError(unsatisfied_constraints) {
     const tmp82 = new tmp8("", BillingErrorDefault.ErrorCodes.BILLING_PURCHASE_BLOCKED_BY_RESTRICTION);
     return tmp82;
   } else {
-    const error = unsatisfied_constraints.error;
+    const error = body2.error;
     let tmp2 = null;
     if (null != error) {
       tmp2 = null;

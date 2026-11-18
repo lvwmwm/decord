@@ -1,10 +1,10 @@
-// Module ID: 14380
-// Function ID: 14381
+// Module ID: 14668
+// Function ID: 14669
 // Name: conjurePreviewModeRequests
 // Dependencies: [19, 2]
 // Exports: requestConjurePreviewMode, useConjurePreviewModeRequests
 
-// Module 14380 (conjurePreviewModeRequests)
+// Module 14668 (conjurePreviewModeRequests)
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -18,10 +18,10 @@ export function requestConjurePreviewMode(arg0, widget) {
     continue;
   }
 }
-export function useConjurePreviewModeRequests(projectId, set) {
+export function useConjurePreviewModeRequests(projectId, map) {
   react = projectId;
-  const current = set;
-  let closure_2 = react.useRef(set);
+  const current = map;
+  let closure_2 = react.useRef(map);
   const layoutEffect = react.useLayoutEffect(() => {
     closure_2.current = current;
   });

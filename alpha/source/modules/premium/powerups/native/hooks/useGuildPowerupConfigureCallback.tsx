@@ -1,16 +1,16 @@
-// Module ID: 14058
-// Function ID: 14059
+// Module ID: 13362
+// Function ID: 13363
 // Name: useGuildPowerupConfigureCallback
-// Dependencies: [19, 1072, 5546, 14030, 5521, 8415, 8419, 38, 2]
+// Dependencies: [19, 1072, 5037, 13334, 7912, 7905, 7909, 38, 2]
 // Exports: default
 
-// Module 14058 (useGuildPowerupConfigureCallback)
+// Module 13362 (useGuildPowerupConfigureCallback)
 import _modDef38 from "module_38" /* 38 */;
-import Powerups from "Powerups" /* 5521 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8415 */;
-import GuildSettingsServerTagUtils from "GuildSettingsServerTagUtils" /* 8419 */;
-import openGuildPowerupsBottomSheet from "openGuildPowerupsBottomSheet" /* 14030 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 7905 */;
+import GuildSettingsServerTagUtils from "GuildSettingsServerTagUtils" /* 7909 */;
+import Powerups from "Powerups" /* 7912 */;
+import openGuildPowerupsBottomSheet from "openGuildPowerupsBottomSheet" /* 13334 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;

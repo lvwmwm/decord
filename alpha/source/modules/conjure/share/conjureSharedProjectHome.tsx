@@ -1,11 +1,11 @@
-// Module ID: 12649
-// Function ID: 12650
+// Module ID: 11934
+// Function ID: 11935
 // Name: conjureSharedProjectHome
-// Dependencies: [7026, 2]
+// Dependencies: [6530, 2]
 // Exports: canLaunchSharedProject, isSharedProjectHomeServer
 
-// Module 12649 (conjureSharedProjectHome)
-import ConjureProjectTypes from "ConjureProjectTypes" /* 7026 */;
+// Module 11934 (conjureSharedProjectHome)
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6530 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/share/conjureSharedProjectHome.tsx");

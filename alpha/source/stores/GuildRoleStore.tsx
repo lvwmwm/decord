@@ -1,17 +1,17 @@
-// Module ID: 5216
-// Function ID: 5217
+// Module ID: 4729
+// Function ID: 4730
 // Name: GuildRoleStore
-// Dependencies: [5174, 5182, 5177, 5217, 1084, 5218, 5220, 5185, 2]
+// Dependencies: [4687, 4695, 4690, 4730, 1084, 4731, 4733, 4698, 2]
 
-// Module 5216 (GuildRoleStore)
+// Module 4729 (GuildRoleStore)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
-import PlainRecord from "PlainRecord" /* 5174 */;
-import GuildRecord from "GuildRecord" /* 5177 */;
-import LibdiscoreStore2 from "LibdiscoreStore" /* 5182 */;
-import libdiscoreExperiments from "libdiscoreExperiments" /* 5185 */;
-import GuildRoleRecord from "GuildRoleRecord" /* 5217 */;
-import GuildRoleRecordUtilsAll from "GuildRoleRecordUtils" /* 5218 */;
-import GuildRoleUtilsAll from "GuildRoleUtils" /* 5220 */;
+import PlainRecord from "PlainRecord" /* 4687 */;
+import GuildRecord from "GuildRecord" /* 4690 */;
+import LibdiscoreStore2 from "LibdiscoreStore" /* 4695 */;
+import libdiscoreExperiments from "libdiscoreExperiments" /* 4698 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 4730 */;
+import GuildRoleRecordUtilsAll from "GuildRoleRecordUtils" /* 4731 */;
+import GuildRoleUtilsAll from "GuildRoleUtils" /* 4733 */;
 import size from "module_2" /* 2 */;
 
 let set;

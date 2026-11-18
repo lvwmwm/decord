@@ -1,13 +1,13 @@
-// Module ID: 8247
-// Function ID: 8248
+// Module ID: 7744
+// Function ID: 7745
 // Name: ManualReviewFallbackGate
-// Dependencies: [5, 8248, 8216, 8249, 572, 8250, 2]
+// Dependencies: [5, 7745, 7719, 7751, 572, 7752, 2]
 // Exports: shouldShowManualReviewFallback
 
-// Module 8247 (ManualReviewFallbackGate)
-import SafetyHubUtils from "SafetyHubUtils" /* 8216 */;
-import ManualAgeAssuranceFallbackExperiment from "ManualAgeAssuranceFallbackExperiment" /* 8248 */;
-import AgeVerificationMethodsV2 from "AgeVerificationMethodsV2" /* 8249 */;
+// Module 7744 (ManualReviewFallbackGate)
+import SafetyHubUtils from "SafetyHubUtils" /* 7719 */;
+import ManualAgeAssuranceFallbackExperiment from "ManualAgeAssuranceFallbackExperiment" /* 7745 */;
+import AgeVerificationMethodsV2 from "AgeVerificationMethodsV2" /* 7751 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

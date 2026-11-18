@@ -1,15 +1,15 @@
-// Module ID: 20581
-// Function ID: 20582
+// Module ID: 19854
+// Function ID: 19855
 // Name: GuildSettingsModalStickerInfoActionSheet
-// Dependencies: [5, 32, 19, 17, 7018, 21, 504, 12047, 6009, 1113, 5560, 7923, 575, 7756, 7453, 11920, 20574, 6034, 2]
+// Dependencies: [5, 32, 19, 17, 6522, 21, 504, 11329, 5505, 1113, 5051, 7426, 575, 7259, 6956, 11202, 19847, 5530, 2]
 
-// Module 20581 (GuildSettingsModalStickerInfoActionSheet)
-import showGuildSettingsStickerCreateModalDefault from "showGuildSettingsStickerCreateModal" /* 20574 */;
+// Module 19854 (GuildSettingsModalStickerInfoActionSheet)
+import showGuildSettingsStickerCreateModalDefault from "showGuildSettingsStickerCreateModal" /* 19847 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import StickersStore from "StickersStore" /* 7018 */;
+import StickersStore from "StickersStore" /* 6522 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 

@@ -1,25 +1,25 @@
-// Module ID: 15570
-// Function ID: 15571
+// Module ID: 14198
+// Function ID: 14199
 // Name: transformMessageAttachments
-// Dependencies: [9171, 1072, 1406, 11085, 6359, 9396, 6361, 1380, 9395, 1113, 10724, 12705, 8656, 8887, 10672, 2]
+// Dependencies: [8582, 1072, 1406, 10367, 5861, 8807, 5863, 1380, 8806, 1113, 10005, 11990, 8147, 8383, 9953, 2]
 // Exports: default
 
-// Module 15570 (transformMessageAttachments)
+// Module 14198 (transformMessageAttachments)
 import Constants from "Constants" /* 1072 */;
 import intl8 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import FlagUtils from "FlagUtils" /* 1406 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 6359 */;
-import MediaFormatParamUtils from "MediaFormatParamUtils" /* 6361 */;
-import getDisplayFilenameDefault from "getDisplayFilename" /* 8656 */;
-import _modDef8887 from "module_8887" /* 8887 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 9171 */;
-import sanitizeMediaDimension3 from "sanitizeMediaDimension" /* 9395 */;
-import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 9396 */;
-import ExplicitMediaUtils from "ExplicitMediaUtils" /* 10672 */;
-import PlaintextFilePreviewHelpers from "PlaintextFilePreviewHelpers" /* 10724 */;
-import MediaPlaybackFacts from "MediaPlaybackFacts" /* 11085 */;
-import SuspiciousDownloadUtils from "SuspiciousDownloadUtils" /* 12705 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 5861 */;
+import MediaFormatParamUtils from "MediaFormatParamUtils" /* 5863 */;
+import getDisplayFilenameDefault from "getDisplayFilename" /* 8147 */;
+import _modDef8383 from "module_8383" /* 8383 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 8582 */;
+import sanitizeMediaDimension3 from "sanitizeMediaDimension" /* 8806 */;
+import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 8807 */;
+import ExplicitMediaUtils from "ExplicitMediaUtils" /* 9953 */;
+import PlaintextFilePreviewHelpers from "PlaintextFilePreviewHelpers" /* 10005 */;
+import MediaPlaybackFacts from "MediaPlaybackFacts" /* 10367 */;
+import SuspiciousDownloadUtils from "SuspiciousDownloadUtils" /* 11990 */;
 import size from "module_2" /* 2 */;
 
 const AttachmentType = RowGeneratorConstants.AttachmentType;
@@ -204,7 +204,7 @@ export default function transformMessageAttachments(arg0) {
           const intl3 = tmp(1113).intl;
           stringResult1 = intl3.string(tmp(1113).t["0PQYk3"]);
         }
-        obj13 = _modDef8887;
+        obj13 = _modDef8383;
         const intl4 = tmp(1113).intl;
         str6 = intl4.string(intl8.t.jCV1Tz);
         intl5 = tmp(1113).intl;

@@ -1,24 +1,24 @@
-// Module ID: 7950
-// Function ID: 7951
+// Module ID: 7453
+// Function ID: 7454
 // Name: UserProfileRolesCard
-// Dependencies: [19, 17, 5222, 5216, 1072, 21, 5310, 575, 7951, 5135, 5989, 7953, 6008, 1113, 7952, 7958, 7967, 5923, 7969, 7438, 504, 7970, 7971, 2]
+// Dependencies: [19, 17, 4735, 4729, 1072, 21, 4823, 575, 7454, 4648, 5485, 7456, 5504, 1113, 7455, 7461, 7470, 5414, 7472, 6941, 504, 7473, 7474, 2]
 // Exports: default
 
-// Module 7950 (UserProfileRolesCard)
+// Module 7453 (UserProfileRolesCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5923 */;
-import ToastUtils from "ToastUtils" /* 6008 */;
-import ClipboardUtils from "ClipboardUtils" /* 7953 */;
-import VerifiedRoleIconDefault from "VerifiedRoleIcon" /* 7967 */;
-import RoleIconDefault from "RoleIcon" /* 7969 */;
-import UserProfileRoleUtils from "UserProfileRoleUtils" /* 7970 */;
+import Text_Text from "Text/Text" /* 5414 */;
+import ToastUtils from "ToastUtils" /* 5504 */;
+import ClipboardUtils from "ClipboardUtils" /* 7456 */;
+import VerifiedRoleIconDefault from "VerifiedRoleIcon" /* 7470 */;
+import RoleIconDefault from "RoleIcon" /* 7472 */;
+import UserProfileRoleUtils from "UserProfileRoleUtils" /* 7473 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 5222 */;
-import GuildRoleStore from "GuildRoleStore" /* 5216 */;
+import GuildMemberStore from "GuildMemberStore" /* 4735 */;
+import GuildRoleStore from "GuildRoleStore" /* 4729 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;
@@ -98,7 +98,7 @@ class RoleItem {
       children[1] = tmp8(Text_Text.Text, obj3);
       let tmp8Result = null;
       if (null != roleIconProps) {
-        const obj4 = {};
+        const obj4 = { layout: "pill" };
         const tmp19 = RoleIconDefault;
         const merged = Object.assign(tmp16);
         tmp8Result = tmp8(tmp19, obj4);
@@ -193,7 +193,7 @@ export default function UserProfileRolesCard(userId) {
   let tmp4 = null;
   if (0 !== roles.length) {
     const obj2 = { title: intl.string(userId(1113).t["LPJmL/"]), style, children: closure_9(RolesList, obj3) };
-    const tmp7 = guildId(7971);
+    const tmp7 = guildId(7474);
     intl = tmp(1113).intl;
     obj3 = { guildId, guildMemberRoleIds: roles };
     tmp4 = closure_9(tmp7, obj2);

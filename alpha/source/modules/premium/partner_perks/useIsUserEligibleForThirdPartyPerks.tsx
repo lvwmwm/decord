@@ -1,13 +1,13 @@
-// Module ID: 10001
-// Function ID: 10002
+// Module ID: 9281
+// Function ID: 9282
 // Name: useIsUserEligibleForThirdPartyPerks
-// Dependencies: [1388, 2179, 504, 2110, 10002, 2]
+// Dependencies: [1388, 2179, 504, 2110, 9282, 2]
 // Exports: useIsUserEligibleForThirdPartyPerks
 
-// Module 10001 (useIsUserEligibleForThirdPartyPerks)
+// Module 9281 (useIsUserEligibleForThirdPartyPerks)
 import get_initialized from "get initialized" /* 504 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 2110 */;
-import ThirdPartyPerkUtils from "ThirdPartyPerkUtils" /* 10002 */;
+import ThirdPartyPerkUtils from "ThirdPartyPerkUtils" /* 9282 */;
 import UserStore from "UserStore" /* 1388 */;
 import SubscriptionStore from "SubscriptionStore" /* 2179 */;
 import size from "module_2" /* 2 */;

@@ -1,17 +1,17 @@
-// Module ID: 14800
-// Function ID: 14801
+// Module ID: 18654
+// Function ID: 18655
 // Name: ConjurePublishCtaCard
-// Dependencies: [19, 21, 14412, 6335, 5930, 14403, 14405, 14618, 14801, 5923, 14802, 2]
+// Dependencies: [19, 21, 18314, 5837, 5421, 18306, 18308, 18474, 18655, 5414, 18656, 2]
 // Exports: default
 
-// Module 14800 (ConjurePublishCtaCard)
-import components_Button_Button from "components/Button/Button" /* 5930 */;
-import Stack_Stack from "Stack/Stack" /* 6335 */;
-import useConjurePublishActionDefault from "useConjurePublishAction" /* 14403 */;
-import conjurePublishEval from "conjurePublishEval" /* 14405 */;
-import useConjureStartPublishDefault from "useConjureStartPublish" /* 14412 */;
-import conjurePublishCard from "conjurePublishCard" /* 14618 */;
-import ConjureTipInlineCalloutDefault from "ConjureTipInlineCallout" /* 14801 */;
+// Module 18654 (ConjurePublishCtaCard)
+import components_Button_Button from "components/Button/Button" /* 5421 */;
+import Stack_Stack from "Stack/Stack" /* 5837 */;
+import useConjurePublishActionDefault from "useConjurePublishAction" /* 18306 */;
+import conjurePublishEval from "conjurePublishEval" /* 18308 */;
+import useConjureStartPublishDefault from "useConjureStartPublish" /* 18314 */;
+import conjurePublishCard from "conjurePublishCard" /* 18474 */;
+import ConjureTipInlineCalloutDefault from "ConjureTipInlineCallout" /* 18655 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -58,13 +58,13 @@ export default function ConjurePublishCtaCard(arg0) {
     if (tmp4Result.isConjurePublishCtaVisible(tmp3, cta)) {
       const obj = { projectId, publish: tmp3 };
       const tmpResult = ConjureTipInlineCalloutDefault;
-      const Stack = tmp4(6335).Stack;
+      const Stack = tmp4(5837).Stack;
       const items = [_false(PublishCta, obj), , ];
       let tmp8Result = null;
       const tmp10 = React3;
       if (null != tmp3.failure) {
         const obj2 = { variant: "body-sm/normal", color: "text-feedback-critical", accessibilityRole: "alert", children: tmp3.failure };
-        tmp8Result = tmp8(tmp4(5923).Text, obj2);
+        tmp8Result = tmp8(tmp4(5414).Text, obj2);
       }
       items[1] = tmp8Result;
       let tmp8Result3 = null;
@@ -72,7 +72,7 @@ export default function ConjurePublishCtaCard(arg0) {
         tmp8Result3 = null;
         if (!tmp6) {
           const obj3 = { projectId, turnId, cta, status: tmp3.status, placement: "publish_card" };
-          tmp8Result3 = tmp8(tmp(14802), obj3, turnId);
+          tmp8Result3 = tmp8(tmp(18656), obj3, turnId);
         }
       }
       const obj4 = { children: tmp10(Stack, obj5) };

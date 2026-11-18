@@ -1,18 +1,18 @@
-// Module ID: 20920
-// Function ID: 20921
+// Module ID: 20193
+// Function ID: 20194
 // Name: UpdateAppScreen
-// Dependencies: [17, 21, 5310, 575, 5923, 1113, 2999, 5930, 2]
+// Dependencies: [17, 21, 4823, 575, 5414, 1113, 3019, 5421, 2]
 // Exports: default
 
-// Module 20920 (UpdateAppScreen)
+// Module 20193 (UpdateAppScreen)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import _modDef2999 from "module_2999" /* 2999 */;
-import Text_Text from "Text/Text" /* 5923 */;
-import components_Button_Button from "components/Button/Button" /* 5930 */;
+import _modDef3019 from "module_3019" /* 3019 */;
+import Text_Text from "Text/Text" /* 5414 */;
+import components_Button_Button from "components/Button/Button" /* 5421 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let BundleUpdaterManager;
@@ -42,11 +42,11 @@ export default function UpdateAppScreen() {
   let obj5;
   const tmp = closure_7();
   const obj = { style: tmp.container, children: items };
-  const obj2 = { variant: "heading-lg/semibold", children: intl.string(_modDef2999.yxqMCD) };
+  const obj2 = { variant: "heading-lg/semibold", children: intl.string(_modDef3019.yxqMCD) };
   const Text = Text_Text.Text;
   intl = intl4.intl;
   items = [hasOwnProperty(Text, obj2), , ];
-  const obj3 = { variant: "body-md/normal", color: "text-muted", children: intl2.string(_modDef2999.VBZJJg) };
+  const obj3 = { variant: "body-md/normal", color: "text-muted", children: intl2.string(_modDef3019.VBZJJg) };
   const Text2 = Text_Text.Text;
   intl2 = intl4.intl;
   items[1] = hasOwnProperty(Text2, obj3);
@@ -56,7 +56,7 @@ export default function UpdateAppScreen() {
       BundleUpdaterManager = BundleUpdaterManager.BundleUpdaterManager;
       BundleUpdaterManager.reload();
     },
-    text: intl3.string(_modDef2999.o4D6fm),
+    text: intl3.string(_modDef3019.o4D6fm),
     variant: "primary",
     size: "md"
   };

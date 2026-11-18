@@ -1,10 +1,10 @@
-// Module ID: 5428
-// Function ID: 5429
+// Module ID: 4941
+// Function ID: 4942
 // Name: useRivePlayback
 // Dependencies: [19, 17, 2]
 // Exports: useRivePlayback
 
-// Module 5428 (useRivePlayback)
+// Module 4941 (useRivePlayback)
 import react_native from "react-native" /* 17 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;

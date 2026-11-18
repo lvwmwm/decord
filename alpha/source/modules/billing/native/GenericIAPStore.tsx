@@ -1,13 +1,13 @@
-// Module ID: 8590
-// Function ID: 8591
+// Module ID: 8081
+// Function ID: 8082
 // Name: GenericIAPStore
-// Dependencies: [504, 12, 8591, 572, 2]
+// Dependencies: [504, 12, 8082, 572, 2]
 
-// Module 8590 (GenericIAPStore)
+// Module 8081 (GenericIAPStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ProductIds from "ProductIds" /* 8591 */;
+import ProductIds from "ProductIds" /* 8082 */;
 import size from "module_2" /* 2 */;
 
 let c3 = null;

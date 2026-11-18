@@ -1,18 +1,18 @@
-// Module ID: 19584
-// Function ID: 19585
+// Module ID: 18860
+// Function ID: 18861
 // Name: GroupDMNitroCapBanner
-// Dependencies: [19, 17, 21, 5310, 575, 5896, 10022, 5887, 9446, 2]
+// Dependencies: [19, 17, 21, 4823, 575, 5387, 9302, 5378, 8859, 2]
 // Exports: default
 
-// Module 19584 (GroupDMNitroCapBanner)
+// Module 18860 (GroupDMNitroCapBanner)
 import nativeDefault from "native" /* 575 */;
-import LinearGradientDefault from "LinearGradient" /* 5887 */;
-import useToken from "useToken" /* 5896 */;
-import usePremiumPrimaryGradientColorsDefault from "usePremiumPrimaryGradientColors" /* 10022 */;
+import LinearGradientDefault from "LinearGradient" /* 5378 */;
+import useToken from "useToken" /* 5387 */;
+import usePremiumPrimaryGradientColorsDefault from "usePremiumPrimaryGradientColors" /* 9302 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -25,7 +25,7 @@ let obj4;
 let obj5;
 let obj6;
 let tmp2;
-const NitroWheelIcon2 = tmp2(9446);
+const NitroWheelIcon2 = tmp2(8859);
 ({ StyleSheet: c3, View: closure_4 } = react_native);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 const locations = [0.0065, 0.5046, 0.9196];

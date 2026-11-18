@@ -1,14 +1,14 @@
-// Module ID: 18040
-// Function ID: 18041
+// Module ID: 16842
+// Function ID: 16843
 // Name: EmojiFaceWithMonocleIcon
-// Dependencies: [19, 21, 575, 6013, 18041, 2]
+// Dependencies: [19, 21, 575, 5509, 16843, 2]
 // Exports: EmojiFaceWithMonocleIcon
 
-// Module 18040 (EmojiFaceWithMonocleIcon)
+// Module 16842 (EmojiFaceWithMonocleIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6013 */;
-import AssetRegistry from "AssetRegistry" /* 18041 */;
+import BaseIconImage2 from "BaseIconImage" /* 5509 */;
+import AssetRegistry from "AssetRegistry" /* 16843 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

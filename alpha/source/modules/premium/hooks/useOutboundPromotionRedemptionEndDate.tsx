@@ -1,11 +1,11 @@
-// Module ID: 15468
-// Function ID: 15469
+// Module ID: 14096
+// Function ID: 14097
 // Name: useOutboundPromotionRedemptionEndDate
-// Dependencies: [19, 2169, 5132, 2]
+// Dependencies: [19, 2169, 4645, 2]
 // Exports: default
 
-// Module 15468 (useOutboundPromotionRedemptionEndDate)
-import DateUtils from "DateUtils" /* 5132 */;
+// Module 14096 (useOutboundPromotionRedemptionEndDate)
+import DateUtils from "DateUtils" /* 4645 */;
 import react from "react" /* 19 */;
 import module_2169 from "module_2169" /* 2169 */;
 import size from "module_2" /* 2 */;

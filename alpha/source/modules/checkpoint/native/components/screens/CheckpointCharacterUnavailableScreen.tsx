@@ -1,15 +1,15 @@
-// Module ID: 13366
-// Function ID: 13367
+// Module ID: 12669
+// Function ID: 12670
 // Name: CheckpointCharacterUnavailableScreen
-// Dependencies: [21, 13343, 13135, 13137, 1113, 3319, 2]
+// Dependencies: [21, 12647, 12433, 12435, 1113, 3339, 2]
 // Exports: default
 
-// Module 13366 (CheckpointCharacterUnavailableScreen)
+// Module 12669 (CheckpointCharacterUnavailableScreen)
 import intl3 from "intl" /* 1113 */;
-import _modDef3319 from "module_3319" /* 3319 */;
-import CheckpointUnavailableScreenDefault from "CheckpointUnavailableScreen" /* 13135 */;
-import CheckpointTextDefault from "CheckpointText" /* 13137 */;
-import useCheckpointHasUserStatsDefault from "useCheckpointHasUserStats" /* 13343 */;
+import _modDef3339 from "module_3339" /* 3339 */;
+import CheckpointUnavailableScreenDefault from "CheckpointUnavailableScreen" /* 12433 */;
+import CheckpointTextDefault from "CheckpointText" /* 12435 */;
+import useCheckpointHasUserStatsDefault from "useCheckpointHasUserStats" /* 12647 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -25,14 +25,14 @@ export default function CheckpointCharacterUnavailableScreen() {
   const tmp7 = CheckpointTextDefault;
   const intl = intl3.intl;
   const string = intl.string;
-  const tmp9 = _modDef3319;
+  const tmp9 = _modDef3339;
   const children = [, ];
   const obj = { isStepHeading: true, variant: "heading-lg/medium", children: string(tmp3 ? tmp9.vcRnnQ : tmp9.crKDpM) };
   children[0] = _false(tmp7, obj);
   let tmp6Result = !tmp3;
   const tmp4 = React3;
   if (tmp6Result) {
-    const obj2 = { variant: "heading-lg/medium", children: intl2.string(_modDef3319["2GRr6H"]) };
+    const obj2 = { variant: "heading-lg/medium", children: intl2.string(_modDef3339["2GRr6H"]) };
     const tmpResult = CheckpointTextDefault;
     intl2 = intl3.intl;
     tmp6Result = tmp6(tmpResult, obj2);

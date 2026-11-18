@@ -1,75 +1,109 @@
 // Module ID: 5106
 // Function ID: 5107
-// Dependencies: [2169]
+// Dependencies: [19, 21, 5107, 5130, 5136, 5132, 5137, 5138, 5119, 5131, 5134, 5133, 5139, 5140]
+// Exports: GestureDetector
 
 // Module 5106
-import _mod2169 from "module_2169" /* 2169 */;
+import Fragment from "Fragment" /* 21 */;
+import react_nativeDefault from "react-native" /* 5119 */;
+import assignRef from "assignRef" /* 5131 */;
+import attachHandlers from "attachHandlers" /* 5134 */;
+import react_mod from "react" /* 19 */;
 
-const fn = function t(moment) {
-  let closure_0 = "jan._feb._mrt._apr._mei_jun._jul._aug._sep._okt._nov._dec.".split("_");
-  let closure_1 = "jan_feb_mrt_apr_mei_jun_jul_aug_sep_okt_nov_dec".split("_");
-  const items = [/^jan/i, /^feb/i, /^(maart|mrt\.?)$/i, /^apr/i, /^mei$/i, /^jun[i.]?$/i, /^jul[i.]?$/i, /^aug/i, /^sep/i, /^okt/i, /^nov/i, /^dec/i];
-  let tmp = /^(januari|februari|maart|april|mei|ju[nl]i|augustus|september|oktober|november|december|jan\.?|feb\.?|mrt\.?|apr\.?|ju[nl]\.?|aug\.?|sep\.?|okt\.?|nov\.?|dec\.?)/i;
-  let obj = {
-    months: "januari_februari_maart_april_mei_juni_juli_augustus_september_oktober_november_december".split("_"),
-    monthsShort(arg0, arg1) {
-      let tmp2;
-      const tmp = arg0;
-      if (tmp) {
-        let tmp5;
-        const obj = /-MMM-/;
-        if (obj.test(arg1)) {
-          tmp5 = closure_1[arg0.month(arg0)];
-        } else {
-          tmp5 = closure_0[arg0.month(arg0)];
+let c3;
+let closure_4;
+let hasOwnProperty;
+let react = react_mod;
+({ useEffect: c3, useMemo: closure_4, useRef: hasOwnProperty } = react);
+react = react_mod;
+const jsx = Fragment.jsx;
+
+export const GestureDetector = function(gesture) {
+  let current2;
+  let detectorUpdater;
+  let webEventHandlers;
+  function propagateDetectorConfig(gesture, gesture2) {
+    const items = ["userSelect", "enableContextMenu", "touchAction"];
+    for (const item10008 of items) {
+      let tmp2 = gesture[item10008];
+      if (undefined !== tmp2) {
+        let toGestureArrayResult = gesture.toGestureArray();
+        for (const item10018 of toGestureArrayResult) {
+          item10018.config[tmp] = tmp3;
+          continue;
         }
-        tmp2 = tmp5;
-      } else {
-        tmp2 = closure_0;
       }
-      return tmp2;
-    },
-    monthsRegex: tmp,
-    monthsShortRegex: tmp,
-    monthsStrictRegex: /^(januari|februari|maart|april|mei|ju[nl]i|augustus|september|oktober|november|december)/i,
-    monthsShortStrictRegex: /^(jan\.?|feb\.?|mrt\.?|apr\.?|mei|ju[nl]\.?|aug\.?|sep\.?|okt\.?|nov\.?|dec\.?)/i,
-    monthsParse: items,
-    longMonthsParse: items,
-    shortMonthsParse: items,
-    weekdays: "zondag_maandag_dinsdag_woensdag_donderdag_vrijdag_zaterdag".split("_"),
-    weekdaysShort: "zo._ma._di._wo._do._vr._za.".split("_"),
-    weekdaysMin: "zo_ma_di_wo_do_vr_za".split("_"),
-    weekdaysParseExact: true,
-    longDateFormat: { LT: "HH:mm", LTS: "HH:mm:ss", L: "DD-MM-YYYY", LL: "D MMMM YYYY", LLL: "D MMMM YYYY HH:mm", LLLL: "dddd D MMMM YYYY HH:mm" },
-    calendar: { sameDay: "[vandaag om] LT", nextDay: "[morgen om] LT", nextWeek: "dddd [om] LT", lastDay: "[gisteren om] LT", lastWeek: "[afgelopen] dddd [om] LT", sameElse: "L" },
-    relativeTime: { future: "over %s", past: "%s geleden", s: "een paar seconden", ss: "%d seconden", m: "\u00E9\u00E9n minuut", mm: "%d minuten", h: "\u00E9\u00E9n uur", hh: "%d uur", d: "\u00E9\u00E9n dag", dd: "%d dagen", w: "\u00E9\u00E9n week", ww: "%d weken", M: "\u00E9\u00E9n maand", MM: "%d maanden", y: "\u00E9\u00E9n jaar", yy: "%d jaar" },
-    dayOfMonthOrdinalParse: /\d{1,2}(ste|de)/,
-    ordinal(arg0) {
-      if (1 !== arg0) {
-        let str;
-        if (8 !== arg0) {
-          str = "de";
-        }
-        return arg0 + str;
-      }
-      str = "ste";
-    },
-    week: { dow: 1, doy: 4 }
-  };
-  return moment.defineLocale("nl", obj);
-};
-if (typeof exports === "object") {
-  if (undefined !== module) {
-    let tmp = require;
-    if (typeof require === "function") {
-      fn(_mod2169);
+      continue;
     }
   }
-}
-if (typeof globalThis.define === "function") {
-  const define2 = globalThis.define;
-  if (globalThis.define.amd) {
-    globalThis.define(["../moment"], fn);
+  if (gesture.gesture) {
+    let tmp26Result;
+    gesture = gesture.gesture;
+    propagateDetectorConfig(gesture, gesture);
+    let tmp5 = current2;
+    let items = [gesture];
+    let gesturesToAttach = current2(() => gesture.toGestureArray(), items);
+    const someResult = gesturesToAttach.some((shouldUseReanimated) => shouldUseReanimated.shouldUseReanimated);
+    let tmp7 = gesture;
+    let tmp8 = webEventHandlers;
+    let obj2 = gesture(webEventHandlers[2]);
+    webEventHandlers = obj2.useWebEventHandlers();
+    const current = detectorUpdater({ firstRender: true, viewRef: null, previousViewTag: -1, forceRebuildReanimatedEvent: false }).current;
+    let obj3 = { attachedGestures: [], animatedEventHandler: null, animatedHandlers: null, shouldUseReanimated: someResult, isMounted: false, hasExternalRelations: true };
+    current2 = react.useRef(obj3).current;
+    const obj4 = gesture(webEventHandlers[3]);
+    detectorUpdater = obj4.useDetectorUpdater(current, current2, gesturesToAttach, gesture, webEventHandlers);
+    const obj5 = gesture(webEventHandlers[4]);
+    const viewRefHandler = obj5.useViewRefHandler(current, detectorUpdater);
+    let needsToReattachResult = current.firstRender || current.forceRebuildReanimatedEvent;
+    if (!needsToReattachResult) {
+      const tmp7Result = tmp7(tmp8[5]);
+      needsToReattachResult = tmp7Result.needsToReattach(current2, gesturesToAttach);
+    }
+    current.forceRebuildReanimatedEvent = false;
+    const tmp7Result5 = tmp7(tmp8[6]);
+    const animatedGesture = tmp7Result5.useAnimatedGesture(current2, needsToReattachResult);
+    const tmp7Result6 = tmp7(tmp8[7]);
+    const isomorphicLayoutEffect = tmp7Result6.useIsomorphicLayoutEffect(() => {
+      const tmp = react_nativeDefault;
+      gesturesToAttach = assignRef;
+      current2.isMounted = true;
+      const tmpResult = tmp(gesturesToAttach.resolveHostInstance(current.viewRef));
+      const obj2 = attachHandlers;
+      const obj3 = { preparedGesture: current2, gestureConfig: gesture, gesturesToAttach, webEventHandlersRef: webEventHandlers, viewTag: tmpResult };
+      obj2.attachHandlers(obj3);
+      return () => {
+        current2.isMounted = false;
+        const obj = gesture(webEventHandlers[11]);
+        obj.dropHandlers(current2);
+      };
+    }, []);
+    const items1 = [gesture];
+    current(() => {
+      if (current.firstRender) {
+        tmp.firstRender = false;
+      } else {
+        detectorUpdater();
+      }
+    }, items1);
+    const tmp7Result7 = tmp7(tmp8[12]);
+    const mountReactions = tmp7Result7.useMountReactions(detectorUpdater, current2);
+    const tmp7Result8 = tmp7(tmp8[13]);
+    if (someResult) {
+      const obj6 = { ref: viewRefHandler, onGestureHandlerEvent: current2.animatedEventHandler, children: gesture.children };
+      tmp26Result = tmp26(tmp7Result8.AnimatedWrap, obj6);
+    } else {
+      const obj7 = { ref: viewRefHandler, children: gesture.children };
+      tmp26Result = tmp26(tmp7Result8.Wrap, obj7);
+    }
+    return tmp26Result;
+  } else {
+    let tmp = globalThis;
+    const _Error = Error;
+    const self = this;
+    const self2 = this;
+    const error = new Error("GestureDetector must have a gesture prop provided.");
+    const tmp3 = error;
+    throw error;
   }
-}
-fn(this.moment);
+};

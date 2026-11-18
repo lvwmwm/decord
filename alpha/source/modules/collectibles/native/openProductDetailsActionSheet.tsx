@@ -1,14 +1,14 @@
-// Module ID: 9416
-// Function ID: 9417
+// Module ID: 8829
+// Function ID: 8830
 // Name: openProductDetailsActionSheet
-// Dependencies: [8507, 8495, 5546, 9417, 2121, 2]
+// Dependencies: [7998, 7986, 5037, 8830, 2121, 2]
 // Exports: openProductDetailsActionSheet, openProductDetailsActionSheetForSku
 
-// Module 9416 (openProductDetailsActionSheet)
+// Module 8829 (openProductDetailsActionSheet)
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 8495 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 8507 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7986 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7998 */;
 import size from "module_2" /* 2 */;
 
 let c3 = "Shop Product Preview";
@@ -45,7 +45,7 @@ export function openProductDetailsActionSheet(arg0, stack) {
   tmpResult.productDetailsOpened(skuId);
   const obj2 = { product, initialVariantIndex: num, analyticsLocations, shopAnalyticsContext };
   const obj3 = ActionSheetActionCreatorsDefault;
-  obj3.openLazy(asyncRequire(9417, tmp2.paths), c3, obj2, stack);
+  obj3.openLazy(asyncRequire(8830, tmp2.paths), c3, obj2, stack);
 }
 export function openProductDetailsActionSheetForSku(skuId, stack) {
   let analyticsLocations;
@@ -58,5 +58,5 @@ export function openProductDetailsActionSheetForSku(skuId, stack) {
   obj.productDetailsOpened(skuId);
   const obj2 = ActionSheetActionCreatorsDefault;
   const obj3 = { skuId, initialVariantIndex, analyticsLocations, shopAnalyticsContext, stageCollectibleChangeForEditProfile };
-  obj2.openLazy(asyncRequire(9417, dependencyMap.paths), c3, obj3, stack);
+  obj2.openLazy(asyncRequire(8830, dependencyMap.paths), c3, obj3, stack);
 }

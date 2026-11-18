@@ -1,12 +1,12 @@
-// Module ID: 7724
-// Function ID: 7725
+// Module ID: 7227
+// Function ID: 7228
 // Name: BackgroundImage
-// Dependencies: [19, 17, 21, 5541, 5317, 7725, 7726, 6014, 2]
+// Dependencies: [19, 17, 21, 5032, 4830, 7228, 7229, 5510, 2]
 // Exports: default
 
-// Module 7724 (BackgroundImage)
+// Module 7227 (BackgroundImage)
 import Fragment from "Fragment" /* 21 */;
-import shared from "shared" /* 5317 */;
+import shared from "shared" /* 4830 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
@@ -26,7 +26,7 @@ export default function BackgroundImage(backgroundImageSource) {
   if (flag === undefined) {
     flag = false;
   }
-  let tmp = flag(5541)();
+  let tmp = flag(5032)();
   dependencyMap = tmp;
   let items = [backgroundImageSource, flag, tmp];
   const memo = react.useMemo(() => {
@@ -39,16 +39,16 @@ export default function BackgroundImage(backgroundImageSource) {
       let tmp5Result;
       const obj2 = shared;
       if (obj2.isThemeDark(closure_2)) {
-        tmp5Result = tmp5(7725);
+        tmp5Result = tmp5(7228);
       } else {
-        tmp5Result = tmp5(7726);
+        tmp5Result = tmp5(7229);
       }
       tmp = tmp5Result;
     }
     return obj;
   }, items);
   let obj2 = {};
-  flag(6014);
+  flag(5510);
   const merged = Object.assign(memo);
   return <closure_4 style={closure_5.absoluteFill}>{null}</closure_4>;
 };

@@ -1,10 +1,10 @@
-// Module ID: 10737
-// Function ID: 10738
+// Module ID: 10018
+// Function ID: 10019
 // Name: useMessageMaxLength
 // Dependencies: [1388, 1072, 2174, 504, 2]
 // Exports: default, getMaxMessageLength
 
-// Module 10737 (useMessageMaxLength)
+// Module 10018 (useMessageMaxLength)
 import get_initialized from "get initialized" /* 504 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
 import UserStore from "UserStore" /* 1388 */;

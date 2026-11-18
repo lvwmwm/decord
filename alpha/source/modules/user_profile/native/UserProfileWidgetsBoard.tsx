@@ -1,26 +1,25 @@
-// Module ID: 10872
-// Function ID: 10873
+// Module ID: 10098
+// Function ID: 10099
 // Name: UserProfileWidgetsBoard
-// Dependencies: [19, 17, 8490, 7365, 21, 5310, 575, 10838, 8556, 7999, 10198, 1113, 10873, 10837, 10822, 10880, 6329, 10831, 10882, 10885, 7363, 10886, 10843, 10888, 10845, 10821, 10889, 7367, 10892, 7368, 10817, 11028, 2]
+// Dependencies: [19, 17, 7981, 6870, 21, 4823, 575, 10099, 8047, 7502, 9479, 1113, 10104, 10121, 10116, 10122, 5831, 10124, 10159, 10162, 6868, 10163, 10131, 10165, 10133, 10166, 10171, 6872, 10174, 10310, 2]
 // Exports: default
 
-// Module 10872 (UserProfileWidgetsBoard)
+// Module 10098 (UserProfileWidgetsBoard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import react_native2 from "react-native" /* 6329 */;
-import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7367 */;
-import Constants from "Constants" /* 8490 */;
-import UserProfilePersonalWidgetCardDefault from "UserProfilePersonalWidgetCard" /* 10817 */;
-import WidgetUtils from "WidgetUtils" /* 10822 */;
-import UserProfileGameWidgetConstants from "UserProfileGameWidgetConstants" /* 10838 */;
-import UserProfileGameDetailsRowDefault from "UserProfileGameDetailsRow" /* 10843 */;
-import UserProfileWidgetGameCoverDefault from "UserProfileWidgetGameCover" /* 10845 */;
-import openUserProfileAddGameActionSheetDefault from "openUserProfileAddGameActionSheet" /* 10873 */;
-import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 10892 */;
+import react_native2 from "react-native" /* 5831 */;
+import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 6872 */;
+import Constants from "Constants" /* 7981 */;
+import UserProfileGameWidgetConstants from "UserProfileGameWidgetConstants" /* 10099 */;
+import openUserProfileAddGameActionSheetDefault from "openUserProfileAddGameActionSheet" /* 10104 */;
+import WidgetUtils from "WidgetUtils" /* 10116 */;
+import UserProfileGameDetailsRowDefault from "UserProfileGameDetailsRow" /* 10131 */;
+import UserProfileWidgetGameCoverDefault from "UserProfileWidgetGameCover" /* 10133 */;
+import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 10174 */;
 import react from "react" /* 19 */;
-import UserProfileWidgetConstants from "UserProfileWidgetConstants" /* 7365 */;
+import UserProfileWidgetConstants from "UserProfileWidgetConstants" /* 6870 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let map;
@@ -32,8 +31,6 @@ let metroRequire;
 let obj2;
 let obj3;
 let obj4;
-let tmp;
-const UserProfilePersonalWidget = tmp(7368);
 function AddGameButton(ref) {
   let PlusSmallIcon;
   let intl;
@@ -53,30 +50,27 @@ function AddGameButton(ref) {
       return openUserProfileAddGameActionSheetDefault(obj);
     }
   };
-  const IconButton = ref(7999).IconButton;
+  const IconButton = ref(7502).IconButton;
   obj2 = { size: "sm", color: widgetType(575).colors.ICON_DEFAULT };
-  PlusSmallIcon = ref(10198).PlusSmallIcon;
+  PlusSmallIcon = ref(9479).PlusSmallIcon;
   intl = ref(1113).intl;
   return closure_8(IconButton, obj);
 }
 function WidgetRenderer(arg0) {
   let cardStyle;
   let isEditing;
-  let tmp3Result;
+  let tmp2Result;
   let userId;
   let widget;
   ({ userId, widget, cardStyle, isEditing } = arg0);
   if (widget instanceof UserProfileApplicationWidgetTypes.ApplicationWidget) {
     const obj2 = { userId, widget, cardStyle, isEditing };
-    tmp3Result = metroImportAll(UserProfileApplicationWidgetCardDefault, obj2);
-  } else if (widget instanceof UserProfilePersonalWidget.UserProfilePersonalWidget) {
-    const obj3 = { userId, widget, cardStyle, isEditing };
-    tmp3Result = tmp3(UserProfilePersonalWidgetCardDefault, obj3);
+    tmp2Result = tmp2(UserProfileApplicationWidgetCardDefault, obj2);
   } else {
     const obj = { userId, widget, cardStyle, isEditing };
-    tmp3Result = tmp3(memoResult, obj);
+    tmp2Result = tmp2(memoResult, obj);
   }
-  return tmp3Result;
+  return tmp2Result;
 }
 const View = react_native.View;
 const UserProfileSections = Constants.UserProfileSections;
@@ -333,7 +327,7 @@ export default function UserProfileWidgetsBoard(userId) {
   }
   ({ cardStyle: importDefault, isEditing } = userId);
   let tmp = closure_10();
-  let obj = userId(isEditing[31]);
+  let obj = userId(isEditing[29]);
   const displayableBoardWidgets = obj.useDisplayableBoardWidgets(userId, isEditing);
   const cardStyle = tmp2;
   const obj2 = userId(isEditing[8]);

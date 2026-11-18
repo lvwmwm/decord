@@ -1,9 +1,9 @@
-// Module ID: 14769
-// Function ID: 14770
+// Module ID: 18623
+// Function ID: 18624
 // Name: ApplicationAssetType
 // Dependencies: [2]
 
-// Module 14769 (ApplicationAssetType)
+// Module 18623 (ApplicationAssetType)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/ApplicationAssetType.tsx");

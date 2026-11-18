@@ -1,17 +1,17 @@
-// Module ID: 17502
-// Function ID: 17503
+// Module ID: 16159
+// Function ID: 16160
 // Name: FamilyCenterParentalControlsDataAndPrivacy
-// Dependencies: [19, 1072, 9213, 21, 1113, 2703, 2188, 12612, 17250, 2]
+// Dependencies: [19, 1072, 8624, 21, 1113, 2723, 2188, 11897, 15907, 2]
 // Exports: default
 
-// Module 17502 (FamilyCenterParentalControlsDataAndPrivacy)
+// Module 16159 (FamilyCenterParentalControlsDataAndPrivacy)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
-import _modDef2703 from "module_2703" /* 2703 */;
-import SettingsConstants from "SettingsConstants" /* 9213 */;
-import SettingBuilders from "SettingBuilders" /* 12612 */;
-import SettingLayoutDefault from "SettingLayout" /* 17250 */;
+import _modDef2723 from "module_2723" /* 2723 */;
+import SettingsConstants from "SettingsConstants" /* 8624 */;
+import SettingBuilders from "SettingBuilders" /* 11897 */;
+import SettingLayoutDefault from "SettingLayout" /* 15907 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -47,7 +47,7 @@ export default function FamilyCenterParentalControlsDataAndPrivacy() {
     const intl = memo(dependencyMap[4]).intl;
     format = intl.format;
     obj2 = { helpdeskArticle: obj3.getArticleURL(constants.DATA_PRIVACY_CONTROLS) };
-    Z5yJZy = _modDef2703.Z5yJZy;
+    Z5yJZy = _modDef2723.Z5yJZy;
     const items1 = [obj, , , ];
     obj3 = HelpdeskUtilsDefault;
     const obj4 = { settings: items2, subLabel: format2(Imp6Ns, obj5) };
@@ -55,7 +55,7 @@ export default function FamilyCenterParentalControlsDataAndPrivacy() {
     const intl2 = memo(dependencyMap[4]).intl;
     format2 = intl2.format;
     obj5 = { helpdeskArticle: obj6.getArticleURL(constants.DATA_USED_FOR_RECOMMENDED) };
-    Imp6Ns = _modDef2703.Imp6Ns;
+    Imp6Ns = _modDef2723.Imp6Ns;
     items1[1] = obj4;
     obj6 = HelpdeskUtilsDefault;
     const obj7 = { settings: items3, subLabel: format3(cnCK6b, obj8) };
@@ -63,7 +63,7 @@ export default function FamilyCenterParentalControlsDataAndPrivacy() {
     const intl3 = memo(dependencyMap[4]).intl;
     format3 = intl3.format;
     obj8 = { helpdeskArticle: obj9.getArticleURL(constants.QUESTS_PRIVACY_CONTROLS) };
-    cnCK6b = _modDef2703.cnCK6b;
+    cnCK6b = _modDef2723.cnCK6b;
     items1[2] = obj7;
     obj9 = HelpdeskUtilsDefault;
     const obj10 = { settings: items4, subLabel: format4(v6mK5Pz, obj11) };
@@ -71,7 +71,7 @@ export default function FamilyCenterParentalControlsDataAndPrivacy() {
     const intl4 = memo(dependencyMap[4]).intl;
     format4 = intl4.format;
     obj11 = { helpdeskArticle: obj12.getArticleURL(constants.QUESTS_PRIVACY_CONTROLS) };
-    v6mK5Pz = _modDef2703["6mK5Pz"];
+    v6mK5Pz = _modDef2723["6mK5Pz"];
     items1[3] = obj10;
     obj12 = HelpdeskUtilsDefault;
     return items1;

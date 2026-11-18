@@ -1,0 +1,44 @@
+// Module ID: 15478
+// Function ID: 15479
+// Dependencies: [15479, 15490, 15492, 15495, 15498, 15499]
+
+// Module 15478
+import _mod15479 from "module_15479" /* 15479 */;
+import _mod15490 from "module_15490" /* 15490 */;
+import _mod15492 from "module_15492" /* 15492 */;
+import _mod15495 from "module_15495" /* 15495 */;
+import _mod15498 from "module_15498" /* 15498 */;
+import _mod15499 from "module_15499" /* 15499 */;
+
+let closure_3 = _mod15479("toPrimitive");
+
+export default function(arg0, arg1) {
+  if (_mod15490(arg0)) {
+    if (!_mod15492(arg0)) {
+      let str = arg1;
+      const tmp4 = _mod15495(arg0, closure_3);
+      if (tmp4) {
+        if (undefined === str) {
+          str = "default";
+        }
+        const tmp5 = _mod15498(tmp4, arg0, str);
+        if (_mod15490(tmp5)) {
+          if (!_mod15492(tmp5)) {
+            const self = this;
+            const self2 = this;
+            const tmp7 = new TypeError("Can't convert object to primitive value");
+            throw tmp7;
+          }
+        }
+        return tmp5;
+      } else {
+        let str2 = str;
+        if (undefined === str) {
+          str2 = "number";
+        }
+        return _mod15499(arg0, str2);
+      }
+    }
+  }
+  return arg0;
+};

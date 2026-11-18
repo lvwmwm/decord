@@ -1,25 +1,25 @@
-// Module ID: 14689
-// Function ID: 14690
+// Module ID: 18543
+// Function ID: 18544
 // Name: ConjureVoiceChannelPinCard
-// Dependencies: [19, 17, 5181, 5252, 1388, 21, 5310, 575, 14690, 5923, 1113, 4133, 14444, 8044, 7756, 7453, 5948, 7465, 5546, 12409, 5930, 2]
+// Dependencies: [19, 17, 4694, 4765, 1388, 21, 4823, 575, 18544, 5414, 1113, 4121, 18342, 7547, 7259, 6956, 5439, 6968, 5037, 11691, 5421, 2]
 // Exports: default
 
-// Module 14689 (ConjureVoiceChannelPinCard)
+// Module 18543 (ConjureVoiceChannelPinCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
-import _modDef4133 from "module_4133" /* 4133 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5546 */;
-import Text_Text from "Text/Text" /* 5923 */;
-import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 12409 */;
-import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 14444 */;
-import useConjureVoiceChannelPin from "useConjureVoiceChannelPin" /* 14690 */;
+import _modDef4121 from "module_4121" /* 4121 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5037 */;
+import Text_Text from "Text/Text" /* 5414 */;
+import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11691 */;
+import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 18342 */;
+import useConjureVoiceChannelPin from "useConjureVoiceChannelPin" /* 18544 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5181 */;
-import RelationshipStore from "RelationshipStore" /* 5252 */;
+import GuildStore from "GuildStore" /* 4694 */;
+import RelationshipStore from "RelationshipStore" /* 4765 */;
 import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -52,7 +52,7 @@ function ConjureVoiceChannelPinForm(projectId) {
   projectId = projectId.projectId;
   let tmp2 = channels;
   const tmp = closure_10();
-  let obj = channels(14690);
+  let obj = channels(18544);
   const conjureVoiceChannelPinForm = obj.useConjureVoiceChannelPinForm(projectId);
   ({ guildId, channels } = conjureVoiceChannelPinForm);
   const selected = conjureVoiceChannelPinForm.selected;
@@ -64,24 +64,24 @@ function ConjureVoiceChannelPinForm(projectId) {
   }
   let channelIconWithGuild = null;
   if (null != selected) {
-    const tmp2Result = tmp2(8044);
+    const tmp2Result = tmp2(7547);
     channelIconWithGuild = tmp2Result.getChannelIconWithGuild(selected, guild);
   }
-  let obj2 = { variant: "body-sm/normal", color: "text-default", children: intl.string(selected(4133)["1vVBAw"]) };
-  const Text = tmp2(5923).Text;
+  let obj2 = { variant: "body-sm/normal", color: "text-default", children: intl.string(selected(4121)["1vVBAw"]) };
+  const Text = tmp2(5414).Text;
   intl = tmp2(1113).intl;
   const items = [closure_7(Text, obj2), , , ];
   const tmp9 = closure_9;
   if (channels.length > 0) {
     let stringResult;
     let obj3 = { hasIcons: null != channelIconWithGuild, children: closure_7(TableRow, obj4) };
-    const TableRowGroup = tmp2(7756).TableRowGroup;
-    TableRow = tmp2(7453).TableRow;
+    const TableRowGroup = tmp2(7259).TableRowGroup;
+    TableRow = tmp2(6956).TableRow;
     if (null == selected) {
       const intl3 = tmp2(1113).intl;
-      stringResult = intl3.string(tmp11(4133)["9+dfPT"]);
+      stringResult = intl3.string(tmp11(4121)["9+dfPT"]);
     } else {
-      const tmp2Result2 = tmp2(5948);
+      const tmp2Result2 = tmp2(5439);
       stringResult = tmp2Result2.computeChannelName(selected, UserStore, RelationshipStore);
     }
     obj4 = {
@@ -105,7 +105,7 @@ function ConjureVoiceChannelPinForm(projectId) {
               return closure_1_2(id.id);
             }
           };
-          obj3 = { title: intl.string(_modDef4133.peOi1H) };
+          obj3 = { title: intl.string(_modDef4121.peOi1H) };
           ActionSheetActionCreators;
           tmp2 = ChannelPickerActionSheetDefault;
           intl = intl7.intl;
@@ -115,34 +115,34 @@ function ConjureVoiceChannelPinForm(projectId) {
     tmp10Result = undefined;
     if (null != channelIconWithGuild) {
       const obj5 = { source: channelIconWithGuild };
-      tmp10Result = tmp10(tmp2(7465).TableRowIcon, obj5);
+      tmp10Result = tmp10(tmp2(6968).TableRowIcon, obj5);
     }
     tmp10Result4 = tmp10(TableRowGroup, obj3);
   } else {
-    const obj6 = { variant: "body-sm/normal", color: "text-muted", children: intl2.string(selected(4133).JVUsIY) };
-    const Text2 = tmp2(5923).Text;
+    const obj6 = { variant: "body-sm/normal", color: "text-muted", children: intl2.string(selected(4121).JVUsIY) };
+    const Text2 = tmp2(5414).Text;
     intl2 = tmp2(1113).intl;
     tmp10Result4 = tmp10(Text2, obj6);
   }
   items[1] = tmp10Result4;
   let tmp10Result5 = null;
   if (failed) {
-    const obj7 = { variant: "body-sm/normal", color: "text-feedback-critical", children: intl4.string(selected(4133).d7EeAm) };
-    const Text3 = tmp2(5923).Text;
+    const obj7 = { variant: "body-sm/normal", color: "text-feedback-critical", children: intl4.string(selected(4121).d7EeAm) };
+    const Text3 = tmp2(5414).Text;
     intl4 = tmp2(1113).intl;
     tmp10Result5 = tmp10(Text3, obj7);
   }
   items[2] = tmp10Result5;
   const obj8 = { style: tmp.actions, children: items1 };
-  const obj9 = { variant: "secondary", size: "sm", text: intl5.string(selected(4133).Iw0l8o), disabled: pinning, onPress: skip };
-  const Button = tmp2(5930).Button;
+  const obj9 = { variant: "secondary", size: "sm", text: intl5.string(selected(4121).Iw0l8o), disabled: pinning, onPress: skip };
+  const Button = tmp2(5421).Button;
   intl5 = tmp2(1113).intl;
   items1 = [closure_7(Button, obj9), ];
   let tmp10Result6 = null;
   const tmp18 = guild;
   if (channels.length > 0) {
-    const obj10 = { variant: "primary", size: "sm", text: intl6.string(selected(4133).FYI3qr), disabled: null == selected, loading: pinning, onPress: pin };
-    const Button2 = tmp2(5930).Button;
+    const obj10 = { variant: "primary", size: "sm", text: intl6.string(selected(4121).FYI3qr), disabled: null == selected, loading: pinning, onPress: pin };
+    const Button2 = tmp2(5421).Button;
     intl6 = tmp2(1113).intl;
     tmp10Result6 = tmp10(Button2, obj10);
   }
@@ -173,7 +173,7 @@ export default function ConjureVoiceChannelPinCard(projectId) {
   const obj = useConjureVoiceChannelPin;
   const conjureVoiceChannelPinOutcome = obj.useConjureVoiceChannelPinOutcome(projectId);
   ({ outcome, pinnedName } = conjureVoiceChannelPinOutcome);
-  const obj2 = { variant: "body-xs/semibold", color: "text-muted", children: intl.string(_modDef4133.UGAfl9) };
+  const obj2 = { variant: "body-xs/semibold", color: "text-muted", children: intl.string(_modDef4121.UGAfl9) };
   const Text = Text_Text.Text;
   intl = intl7.intl;
   const tmp7 = metroImportDefault(Text, obj2);
@@ -183,11 +183,11 @@ export default function ConjureVoiceChannelPinCard(projectId) {
     let formatToPlainStringResult;
     const obj3 = { style: tmp.card, children: items };
     items = [tmp7, ];
-    const Text2 = tmp2(5923).Text;
+    const Text2 = tmp2(5414).Text;
     if ("pinned" === outcome.status) {
       const intl3 = tmp2(1113).intl;
       const formatToPlainString = intl3.formatToPlainString;
-      const gKe6Lw = tmp6(4133).gKe6Lw;
+      const gKe6Lw = tmp6(4121).gKe6Lw;
       if (pinnedName == null) {
         pinnedName = "";
       }
@@ -195,7 +195,7 @@ export default function ConjureVoiceChannelPinCard(projectId) {
       formatToPlainStringResult = formatToPlainString(gKe6Lw, obj4);
     } else {
       const intl2 = tmp2(1113).intl;
-      formatToPlainStringResult = intl2.string(tmp6(4133)["+kpQ3v"]);
+      formatToPlainStringResult = intl2.string(tmp6(4121)["+kpQ3v"]);
     }
     const obj5 = { variant: "body-sm/normal", color: "text-default", children: formatToPlainStringResult };
     items[1] = metroImportDefault(Text2, obj5);

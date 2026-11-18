@@ -1,19 +1,19 @@
-// Module ID: 10190
-// Function ID: 10191
+// Module ID: 9471
+// Function ID: 9472
 // Name: useOrderSigning
-// Dependencies: [5, 32, 19, 6044, 5130, 5122, 7267, 10191, 1113, 7268, 2]
+// Dependencies: [5, 32, 19, 5540, 4643, 4635, 6771, 9472, 1113, 6772, 2]
 // Exports: useOrderSigning
 
-// Module 10190 (useOrderSigning)
-import BillingUtils from "BillingUtils" /* 5122 */;
-import BillingErrorDefault from "BillingError" /* 5130 */;
-import PaymentConstants from "PaymentConstants" /* 6044 */;
+// Module 9471 (useOrderSigning)
+import BillingUtils from "BillingUtils" /* 4635 */;
+import BillingErrorDefault from "BillingError" /* 4643 */;
+import PaymentConstants from "PaymentConstants" /* 5540 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-let closure_3, gatewayCheckoutContext, loadId, purchaseToken;
+let closure_3, gatewayCheckoutContext, loadId, order2, purchaseToken;
 
 let hasOwnProperty;
 let metroRequire;
@@ -49,13 +49,13 @@ export function useOrderSigning(order) {
     if (!(error instanceof BillingErrorDefault)) {
       const self = this;
       const self2 = this;
-      tmp3 = new tmp(5130)(error);
+      tmp3 = new tmp(4643)(error);
     }
     const obj = BillingUtils;
     if (!obj.isExpectedHttpClientError(error)) {
       const _Error = Error;
       let tmp8 = tmp3;
-      const captureBillingException = tmp5(5122).captureBillingException;
+      const captureBillingException = tmp5(4635).captureBillingException;
       BillingUtils;
       if (error instanceof Error) {
         tmp8 = error;
@@ -67,7 +67,7 @@ export function useOrderSigning(order) {
     if (null != arg2) {
       const self3 = this;
       const self4 = this;
-      tmp3 = new tmp(5130)(arg2);
+      tmp3 = new tmp(4643)(arg2);
     }
     closure_5(tmp3);
     return tmp3;
@@ -84,7 +84,8 @@ export function useOrderSigning(order) {
         let c1;
         let c2;
         let c3;
-        let obj21;
+        let obj22;
+        let obj7;
         if (c6 === 2) {
           c6 = 3;
           throw new TypeError("Generator functions may not be called on executing generators");
@@ -100,6 +101,7 @@ export function useOrderSigning(order) {
           let c4;
           try {
             let billing_facet;
+            let prop;
             let orderSigningError;
             c6 = 2;
             if (0 === c5) {
@@ -121,6 +123,7 @@ export function useOrderSigning(order) {
                 ({ loadId: c0, purchaseToken: c1, gatewayCheckoutContext: c2, errorExtra: c3 } = obj4);
                 order = undefined;
                 billing_facet = undefined;
+                prop = undefined;
                 orderSigningError = undefined;
                 c5 = 1;
                 c6 = 1;
@@ -136,8 +139,8 @@ export function useOrderSigning(order) {
               } else if (null == closure_130_0) {
                 const self5 = this;
                 const self6 = this;
-                const tmp77 = new purchaseToken(gatewayCheckoutContext[4])("Order not created yet");
-                closure_130_5(tmp77);
+                const tmp79 = new purchaseToken(gatewayCheckoutContext[4])("Order not created yet");
+                closure_130_5(tmp79);
                 c6 = 3;
                 return { value: { type: "failed" }, done: true };
               } else {
@@ -145,31 +148,92 @@ export function useOrderSigning(order) {
                 c4 = 1;
                 c5 = 3;
                 c6 = 1;
-                const obj7 = { orderId: closure_130_0.id, loadId, purchaseToken, gatewayCheckoutContext };
-                const obj8 = { value: obj21.signOrder(obj7), done: false };
-                obj21 = loadId(gatewayCheckoutContext[6]);
-                return obj8;
+                const obj8 = { orderId: closure_130_0.id, loadId, purchaseToken, gatewayCheckoutContext };
+                const obj9 = { value: obj22.signOrder(obj8), done: false };
+                obj22 = loadId(gatewayCheckoutContext[6]);
+                return obj9;
               }
             } else if (2 === c5) {
-              let obj9;
+              let obj10;
               c4 = 0;
-              let closure_7 = closure_3;
-              if (closure_7 instanceof loadId(gatewayCheckoutContext[6]).OrderSigningFailedWithConstraintsError) {
+              order2 = closure_3;
+              if (order2 instanceof loadId(gatewayCheckoutContext[6]).OrderSigningFailedWithConstraintsError) {
                 if (closure_130_2 != null) {
-                  tmp64(closure_7.order);
+                  tmp66(order2.order);
                 }
-                closure_130_5(closure_7);
-                obj9 = { type: "failed" };
+                closure_130_5(order2);
+                obj10 = { type: "failed" };
               } else {
-                const obj10 = { orderId: closure_130_0.id };
+                const obj11 = { orderId: closure_130_0.id };
                 const merged = Object.assign(c3);
-                closure_130_6(closure_7, obj10);
-                obj9 = { type: "failed" };
+                closure_130_6(order2, obj11);
+                obj10 = { type: "failed" };
               }
               c6 = 3;
-              return { value: obj9, done: true };
-            } else if (3 === c5) {
-              if (arg0 === 1) {
+              return { value: obj10, done: true };
+            } else {
+              if (3 === c5) {
+                if (arg0 === 1) {
+                  c6 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c4 = 0;
+                  c6 = 3;
+                  return { value, done: true };
+                } else {
+                  order = value;
+                  if (order.status === constants.SIGNED) {
+                    c4 = 0;
+                    c6 = 3;
+                    return { value: { type: "signed", order }, done: true };
+                  } else if (order.status === constants.SIGNING_IN_PROGRESS) {
+                    billing_facet = order.billing_facet;
+                    prop = null;
+                    if (null != billing_facet) {
+                      prop = billing_facet.order_signing_deferral_context;
+                    }
+                    if (null != prop) {
+                      c4 = 2;
+                      c5 = 5;
+                      c6 = 1;
+                      const obj16 = { value: obj7.performSigningDeferralAction(prop), done: false };
+                      obj7 = loadId(gatewayCheckoutContext[7]);
+                      return obj16;
+                    }
+                  } else {
+                    const obj21 = loadId(gatewayCheckoutContext[9]);
+                    orderSigningError = obj21.getOrderSigningError(order);
+                    if (null != orderSigningError) {
+                      closure_130_5(orderSigningError);
+                      c4 = 0;
+                      c6 = 3;
+                      return { value: { type: "failed" }, done: true };
+                    } else if (null != order.error) {
+                      const _Error2 = Error;
+                      const _HermesInternal2 = HermesInternal;
+                      const self3 = this;
+                      const self4 = this;
+                      const error = new Error("Order signing failed with error: " + order.error.code);
+                      throw error;
+                    } else {
+                      const _Error = Error;
+                      const _HermesInternal = HermesInternal;
+                      const self = this;
+                      const self2 = this;
+                      const error1 = new Error("Unexpected order status: " + order.status);
+                      throw error1;
+                    }
+                  }
+                }
+              } else if (4 === c5) {
+                const obj18 = { orderId: closure_130_0.id };
+                const merged1 = Object.assign(c3);
+                const intl = loadId(gatewayCheckoutContext[8]).intl;
+                closure_130_6(closure_3, obj18, intl.string(loadId(gatewayCheckoutContext[8]).t.khEaRI));
+                c4 = 0;
+                c6 = 3;
+                return { value: { type: "failed" }, done: true };
+              } else if (arg0 === 1) {
                 c6 = 3;
                 throw value;
               } else if (arg0 === 2) {
@@ -177,75 +241,18 @@ export function useOrderSigning(order) {
                 c6 = 3;
                 return { value, done: true };
               } else {
-                order = value;
-                if (order.status === closure_1_7.SIGNED) {
-                  c4 = 0;
-                  c6 = 3;
-                  return { value: { type: "signed", order }, done: true };
-                } else if (order.status === closure_1_7.SIGNING_IN_PROGRESS) {
-                  billing_facet = order.billing_facet;
-                  c4 = 2;
-                  let prop = null;
-                  const performSigningDeferralAction = loadId(gatewayCheckoutContext[7]).performSigningDeferralAction;
-                  loadId(gatewayCheckoutContext[7]);
-                  if (null != billing_facet) {
-                    prop = billing_facet.order_signing_deferral_context;
-                  }
-                  c5 = 5;
-                  c6 = 1;
-                  const obj15 = { value: performSigningDeferralAction(prop), done: false };
-                  return obj15;
-                } else {
-                  const obj20 = loadId(gatewayCheckoutContext[9]);
-                  orderSigningError = obj20.getOrderSigningError(order);
-                  if (null != orderSigningError) {
-                    closure_130_5(orderSigningError);
-                    c4 = 0;
-                    c6 = 3;
-                    return { value: { type: "failed" }, done: true };
-                  } else if (null != order.error) {
-                    const _Error2 = Error;
-                    const _HermesInternal2 = HermesInternal;
-                    const self3 = this;
-                    const self4 = this;
-                    const error = new Error("Order signing failed with error: " + order.error.code);
-                    throw error;
-                  } else {
-                    const _Error = Error;
-                    const _HermesInternal = HermesInternal;
-                    const self = this;
-                    const self2 = this;
-                    const error1 = new Error("Unexpected order status: " + order.status);
-                    throw error1;
-                  }
-                }
+                c4 = 1;
               }
-            } else if (4 === c5) {
-              const obj17 = { orderId: closure_130_0.id };
-              const merged1 = Object.assign(c3);
-              const intl = loadId(gatewayCheckoutContext[8]).intl;
-              closure_130_6(closure_3, obj17, intl.string(loadId(gatewayCheckoutContext[8]).t.khEaRI));
-              c4 = 0;
-              c6 = 3;
-              return { value: { type: "failed" }, done: true };
-            } else if (arg0 === 1) {
-              c6 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 0;
-              c6 = 3;
-              return { value, done: true };
-            } else {
               c4 = 0;
               c6 = 3;
               return { value: { type: "pending", order }, done: true };
             }
-          } catch (tmp80) {
-            closure_3 = tmp80;
+          } catch (tmp82) {
+            closure_3 = tmp82;
             if (0 === c4) {
               c6 = 3;
-              throw tmp80;
-            } else if (1 === tmp82) {
+              throw tmp82;
+            } else if (1 === tmp84) {
               c5 = 2;
             } else {
               c5 = 4;

@@ -1,18 +1,18 @@
-// Module ID: 8147
-// Function ID: 8148
+// Module ID: 7650
+// Function ID: 7651
 // Name: CallActionCreators
-// Dependencies: [5159, 5252, 1388, 1072, 6933, 1285, 1256, 6266, 1113, 8148, 8153, 572, 2]
+// Dependencies: [4672, 4765, 1388, 1072, 6437, 1285, 1256, 5768, 1113, 7651, 7656, 572, 2]
 
-// Module 8147 (CallActionCreators)
+// Module 7650 (CallActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl5 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6266 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6933 */;
-import useCanRing from "useCanRing" /* 8153 */;
-import ChannelStore from "ChannelStore" /* 5159 */;
-import RelationshipStore_mod from "RelationshipStore" /* 5252 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5768 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6437 */;
+import useCanRing from "useCanRing" /* 7656 */;
+import ChannelStore from "ChannelStore" /* 4672 */;
+import RelationshipStore_mod from "RelationshipStore" /* 4765 */;
 import UserStore_mod from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -122,10 +122,13 @@ let obj = {
     }
   },
   stopRinging(channelId, items) {
-    let obj;
+    if (null == items) {
+      const obj2 = { type: "CALL_STOP_RINGING_SELF", channelId };
+      const obj = DispatcherDefault;
+      obj.dispatch(obj2);
+    }
     const HTTP = HTTPUtils.HTTP;
-    const request = { url: metroRequire.CALL_STOP_RINGING(channelId), body: obj, oldFormErrors: true, rejectWithError: true };
-    obj = { recipients: items };
+    const request = { url: metroRequire.CALL_STOP_RINGING(channelId), body: { recipients: items }, oldFormErrors: true, rejectWithError: true };
     return HTTP.post(request);
   }
 };

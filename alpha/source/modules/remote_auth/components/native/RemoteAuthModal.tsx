@@ -1,10 +1,10 @@
-// Module ID: 16334
-// Function ID: 16335
+// Module ID: 15001
+// Function ID: 15002
 // Name: RemoteAuthModal
-// Dependencies: [32, 19, 17, 1072, 21, 5310, 575, 1630, 14291, 7722, 6014, 16333, 1655, 1285, 12, 16335, 5923, 1113, 1187, 6949, 5930, 6833, 16339, 7428, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 4823, 575, 1630, 13595, 7225, 5510, 15000, 1655, 1285, 12, 15002, 5414, 1113, 1187, 6453, 5421, 6337, 15006, 6931, 2]
 // Exports: default
 
-// Module 16334 (RemoteAuthModal)
+// Module 15001 (RemoteAuthModal)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -14,21 +14,21 @@ import native from "native" /* 1187 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import Text_Text from "Text/Text" /* 5923 */;
-import components_Button_Button from "components/Button/Button" /* 5930 */;
-import FastImageDefault from "FastImage" /* 6014 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6833 */;
-import ButtonGroup2 from "ButtonGroup" /* 6949 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7428 */;
-import AuthBackgroundArtDefault from "AuthBackgroundArt" /* 7722 */;
-import useEaseInEaseOutLayoutAnimationsDefault from "useEaseInEaseOutLayoutAnimations" /* 14291 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16333 */;
-import QrLoginSpotIllustration from "QrLoginSpotIllustration" /* 16335 */;
-import QrSuccessSpotIllustration from "QrSuccessSpotIllustration" /* 16339 */;
+import Text_Text from "Text/Text" /* 5414 */;
+import components_Button_Button from "components/Button/Button" /* 5421 */;
+import FastImageDefault from "FastImage" /* 5510 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6337 */;
+import ButtonGroup2 from "ButtonGroup" /* 6453 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6931 */;
+import AuthBackgroundArtDefault from "AuthBackgroundArt" /* 7225 */;
+import useEaseInEaseOutLayoutAnimationsDefault from "useEaseInEaseOutLayoutAnimations" /* 13595 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15000 */;
+import QrLoginSpotIllustration from "QrLoginSpotIllustration" /* 15002 */;
+import QrSuccessSpotIllustration from "QrSuccessSpotIllustration" /* 15006 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;

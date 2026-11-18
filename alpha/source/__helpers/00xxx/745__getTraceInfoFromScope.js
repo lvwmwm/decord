@@ -14,15 +14,13 @@ let _require, dependencyMap;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export function _getTraceInfoFromScope(arg0, arg1) {
-  let closure_0;
-  let closure_1;
+export function _getTraceInfoFromScope(client, currentScope) {
   let withScopeResult;
-  _require = arg0;
-  dependencyMap = arg1;
+  _require = client;
+  dependencyMap = currentScope;
   if (dependencyMap) {
     let obj = require("module_712");
-    withScopeResult = obj.withScope(arg1, () => {
+    withScopeResult = obj.withScope(currentScope, () => {
       let dynamicSamplingContextFromSpan;
       let spanToTraceContextResult;
       const obj = TRACE_FLAG_NONE;
@@ -32,13 +30,13 @@ export function _getTraceInfoFromScope(arg0, arg1) {
         spanToTraceContextResult = tmpResult.spanToTraceContext(activeSpan);
       } else {
         const tmpResult3 = _mod712;
-        spanToTraceContextResult = tmpResult3.getTraceContextFromScope(closure_1);
+        spanToTraceContextResult = tmpResult3.getTraceContextFromScope(currentScope);
       }
       const tmpResult4 = freezeDscOnSpan;
       if (activeSpan) {
         dynamicSamplingContextFromSpan = tmpResult4.getDynamicSamplingContextFromSpan(activeSpan);
       } else {
-        dynamicSamplingContextFromSpan = tmpResult4.getDynamicSamplingContextFromScope(closure_0, closure_1);
+        dynamicSamplingContextFromSpan = tmpResult4.getDynamicSamplingContextFromScope(client, currentScope);
       }
       const items = [dynamicSamplingContextFromSpan, spanToTraceContextResult];
       return items;

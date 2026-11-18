@@ -1,9 +1,9 @@
-// Module ID: 5175
-// Function ID: 5176
+// Module ID: 4688
+// Function ID: 4689
 // Name: js_shim/PlainRecord
 // Dependencies: [2]
 
-// Module 5175 (js_shim/PlainRecord)
+// Module 4688 (js_shim/PlainRecord)
 import size from "module_2" /* 2 */;
 
 const forResult = Symbol.for("PlainRecord.TypeTag");

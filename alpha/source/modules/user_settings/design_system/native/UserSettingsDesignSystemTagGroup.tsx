@@ -1,20 +1,20 @@
-// Module ID: 18496
-// Function ID: 18497
+// Module ID: 17309
+// Function ID: 17310
 // Name: UserSettingsDesignSystemTagGroup
-// Dependencies: [19, 17, 21, 5310, 575, 5896, 6335, 5923, 7455, 14504, 2]
+// Dependencies: [19, 17, 21, 4823, 575, 5387, 5837, 5414, 6958, 15191, 2]
 // Exports: default
 
-// Module 18496 (UserSettingsDesignSystemTagGroup)
+// Module 17309 (UserSettingsDesignSystemTagGroup)
 import nativeDefault from "native" /* 575 */;
-import useToken from "useToken" /* 5896 */;
-import Text_Text from "Text/Text" /* 5923 */;
-import Stack_Stack from "Stack/Stack" /* 6335 */;
-import Card_Card from "Card/Card" /* 7455 */;
-import TagGroup from "TagGroup" /* 14504 */;
+import useToken from "useToken" /* 5387 */;
+import Text_Text from "Text/Text" /* 5414 */;
+import Stack_Stack from "Stack/Stack" /* 5837 */;
+import Card_Card from "Card/Card" /* 6958 */;
+import TagGroup from "TagGroup" /* 15191 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let c3;

@@ -1,12 +1,12 @@
-// Module ID: 15734
-// Function ID: 15735
+// Module ID: 14367
+// Function ID: 14368
 // Name: useShouldShowMutualInfo
-// Dependencies: [1388, 504, 15735, 2]
+// Dependencies: [1388, 504, 14368, 2]
 // Exports: default
 
-// Module 15734 (useShouldShowMutualInfo)
+// Module 14367 (useShouldShowMutualInfo)
 import get_initialized from "get initialized" /* 504 */;
-import useIsUserProfileObfuscatedDefault from "useIsUserProfileObfuscated" /* 15735 */;
+import useIsUserProfileObfuscatedDefault from "useIsUserProfileObfuscated" /* 14368 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 

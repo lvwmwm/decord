@@ -1,16 +1,16 @@
-// Module ID: 17027
-// Function ID: 17028
+// Module ID: 15677
+// Function ID: 15678
 // Name: isConjureAppChannelFrame
-// Dependencies: [5971, 7349, 7036, 2]
+// Dependencies: [5467, 6854, 6540, 2]
 // Exports: default
 
-// Module 17027 (isConjureAppChannelFrame)
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5971 */;
-import isConjureApplicationDefault from "isConjureApplication" /* 7036 */;
+// Module 15677 (isConjureAppChannelFrame)
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5467 */;
+import isConjureApplicationDefault from "isConjureApplication" /* 6540 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const conjurePreviewSurface = tmp(7349);
+const conjurePreviewSurface = tmp(6854);
 const result = size.fileFinishedImporting("modules/conjure/background_frames/isConjureAppChannelFrame.tsx");
 
 export default function isConjureAppChannelFrame(surface) {

@@ -1,16 +1,16 @@
-// Module ID: 20358
-// Function ID: 20359
+// Module ID: 19632
+// Function ID: 19633
 // Name: useGameOrganizationInviteFetch
-// Dependencies: [5, 12572, 12573, 1072, 504, 1089, 12730, 12731, 2]
+// Dependencies: [5, 11855, 11856, 1072, 504, 1089, 12015, 12016, 2]
 
-// Module 20358 (useGameOrganizationInviteFetch)
+// Module 19632 (useGameOrganizationInviteFetch)
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 12573 */;
-import isRetryableFetchErrorDefault from "isRetryableFetchError" /* 12730 */;
-import GameOrganizationInviteActionCreatorsDefault from "GameOrganizationInviteActionCreators" /* 12731 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11856 */;
+import isRetryableFetchErrorDefault from "isRetryableFetchError" /* 12015 */;
+import GameOrganizationInviteActionCreatorsDefault from "GameOrganizationInviteActionCreators" /* 12016 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 12572 */;
+import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11855 */;
 import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;
 

@@ -1,26 +1,26 @@
-// Module ID: 15725
-// Function ID: 15726
+// Module ID: 14358
+// Function ID: 14359
 // Name: UserProfileOverflowMenuItems
-// Dependencies: [1072, 12490, 1113, 8148, 5546, 12492, 2121, 1264, 6913, 12491, 15726, 15726, 10794, 1380, 10859, 1256, 7953, 6008, 5366, 7959, 2]
+// Dependencies: [1072, 11773, 1113, 7651, 5037, 11775, 2121, 1264, 6417, 11774, 14359, 14359, 10075, 1380, 10146, 1256, 7456, 5504, 4879, 7462, 2]
 // Exports: getBlockMenuItem, getDeveloperCopyMenuItem, getIgnoreMenuItem, getReportMenuItem
 
-// Module 15725 (UserProfileOverflowMenuItems)
+// Module 14358 (UserProfileOverflowMenuItems)
 import intl6 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import UserUtilsDefault from "UserUtils" /* 5366 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
-import ToastUtils from "ToastUtils" /* 6008 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 6913 */;
-import ClipboardUtils from "ClipboardUtils" /* 7953 */;
-import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7959 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 8148 */;
-import ReportModals from "ReportModals" /* 10794 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 10859 */;
-import BotReportChooser from "BotReportChooser" /* 15726 */;
+import UserUtilsDefault from "UserUtils" /* 4879 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
+import ToastUtils from "ToastUtils" /* 5504 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 6417 */;
+import ClipboardUtils from "ClipboardUtils" /* 7456 */;
+import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7462 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7651 */;
+import ReportModals from "ReportModals" /* 10075 */;
+import UserProfileAlertUtils from "UserProfileAlertUtils" /* 10146 */;
+import BotReportChooser from "BotReportChooser" /* 14359 */;
 import Constants from "Constants" /* 1072 */;
-import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 12490 */;
+import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 11773 */;
 import size from "module_2" /* 2 */;
 
 let avatarURL;
@@ -64,7 +64,7 @@ export function getIgnoreMenuItem(arg0, isBlocked) {
       obj.action = function action() {
         const openLazy = ActionSheetActionCreatorsDefault.openLazy;
         ActionSheetActionCreatorsDefault;
-        const tmp2 = asyncRequire(12492, dependencyMap.paths);
+        const tmp2 = asyncRequire(11775, dependencyMap.paths);
         let obj = {
           userId: require.id,
           channelId: importDefault,
@@ -122,7 +122,7 @@ export function getBlockMenuItem(arg0, isBlocked) {
       action() {
           const openLazy = ActionSheetActionCreatorsDefault.openLazy;
           ActionSheetActionCreatorsDefault;
-          const tmp2 = asyncRequire(12491, dependencyMap.paths);
+          const tmp2 = asyncRequire(11774, dependencyMap.paths);
           let obj = {
             userId: require.id,
             channelId: importDefault,
@@ -171,7 +171,7 @@ export function getReportMenuItem(user, isInIarUserReportingExperiment) {
           if (user.bot) {
             const openLazy = ActionSheetActionCreatorsDefault.openLazy;
             const obj4 = { user, entrypoint, contextualGuildId: tmp3, contextualChannelId: importDefault };
-            const tmp19 = asyncRequire(15726, dependencyMap.paths);
+            const tmp19 = asyncRequire(14359, dependencyMap.paths);
             openLazy(tmp19, BotReportChooser.BOT_REPORT_CHOOSER_KEY, obj4, "replaceAll");
           } else {
             const obj2 = ReportModals;
@@ -296,7 +296,7 @@ export function getDeveloperCopyMenuItem(arg0, isTidaRegion) {
       }
       const obj6 = { options: items, key: "copy-info", header: obj7, stackingBehavior: "stack", hasIcons: false };
       obj7 = { title: intl5.string(intl6.t.QvQeLv) };
-      const showSimpleActionSheet = tmp(7959).showSimpleActionSheet;
+      const showSimpleActionSheet = tmp(7462).showSimpleActionSheet;
       Sheet_showSimpleActionSheet;
       intl5 = tmp(1113).intl;
       let result = showSimpleActionSheet(obj6);

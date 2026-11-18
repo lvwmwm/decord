@@ -1,14 +1,14 @@
-// Module ID: 19478
-// Function ID: 19479
+// Module ID: 18754
+// Function ID: 18755
 // Name: useFrameLifecycle
-// Dependencies: [32, 5, 19, 7028, 11300, 19479, 19480, 7063, 2151, 5968, 2]
+// Dependencies: [32, 5, 19, 6532, 10582, 18755, 18756, 6567, 2151, 5464, 2]
 // Exports: default
 
-// Module 19478 (useFrameLifecycle)
+// Module 18754 (useFrameLifecycle)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import FramesConstants from "FramesConstants" /* 7028 */;
+import FramesConstants from "FramesConstants" /* 6532 */;
 import size from "module_2" /* 2 */;
 
 let c3;

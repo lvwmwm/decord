@@ -1,15 +1,15 @@
-// Module ID: 6769
-// Function ID: 6770
+// Module ID: 6272
+// Function ID: 6273
 // Name: MonitoringAgent
-// Dependencies: [1072, 1380, 6770, 6771, 17, 6772, 6773, 1285, 2]
+// Dependencies: [1072, 1380, 6273, 6274, 17, 6275, 6276, 1285, 2]
 
-// Module 6769 (MonitoringAgent)
+// Module 6272 (MonitoringAgent)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import react_native2 from "react-native" /* 6772 */;
-import MonitoringAgentUtils from "MonitoringAgentUtils" /* 6773 */;
+import react_native2 from "react-native" /* 6275 */;
+import MonitoringAgentUtils from "MonitoringAgentUtils" /* 6276 */;
 import size from "module_2" /* 2 */;
 
 let obj;
@@ -25,8 +25,8 @@ class MonitoringAgent {
       obj._flush();
     }, 120000);
     const nativeEventEmitter = new react_native.NativeEventEmitter(react_native2.default);
-    nativeEventEmitter.addListener("logMetric", (arg0) => {
-      obj.increment(arg0, false);
+    nativeEventEmitter.addListener("logMetric", (name) => {
+      obj.increment(name, false);
     });
     return obj;
   }
@@ -57,10 +57,10 @@ class MonitoringAgent {
       const _HermesInternal = HermesInternal;
       tags1.push("platform:" + str);
     }
-    const CurrentReleaseChannel = tmp(6770).CurrentReleaseChannel;
+    const CurrentReleaseChannel = tmp(6273).CurrentReleaseChannel;
     let tmp9 = null;
     if (null != CurrentReleaseChannel) {
-      const ALL = tmp(6771).ReleaseChannelsSets.ALL;
+      const ALL = tmp(6274).ReleaseChannelsSets.ALL;
       tmp9 = null;
       if (ALL.has(CurrentReleaseChannel)) {
         tmp9 = CurrentReleaseChannel;
@@ -73,7 +73,7 @@ class MonitoringAgent {
     }
     return obj;
   }
-  increment(name) {
+  increment(name, arg1) {
     let flag = arg1;
     if (arg1 === undefined) {
       flag = false;
@@ -113,7 +113,7 @@ class MonitoringAgent {
       HermesBuiltin.arraySpread(items, self._metrics, 0);
       const HTTP = HTTPUtils.HTTP;
       const request = { url: Endpoints.METRICS_V2, body, retries: 1, rejectWithError: true };
-      body = { metrics: items, client_info: { built_at: "1794896344513", build_number: "35620100000000" } };
+      body = { metrics: items, client_info: { built_at: "1794982764797", build_number: "35620200000000" } };
       const postResult = HTTP.post(request);
       postResult.catch(() => {
         if (self._metrics.length + items.length < 100) {
@@ -133,8 +133,8 @@ obj2._intervalId = setInterval(() => {
   obj._flush();
 }, 120000);
 let nativeEventEmitter = new react_native.NativeEventEmitter(react_native2.default);
-nativeEventEmitter.addListener("logMetric", (arg0) => {
-  obj.increment(arg0, false);
+nativeEventEmitter.addListener("logMetric", (name) => {
+  obj.increment(name, false);
 });
 const result = size.fileFinishedImporting("modules/monitoring/MonitoringAgent.tsx");
 

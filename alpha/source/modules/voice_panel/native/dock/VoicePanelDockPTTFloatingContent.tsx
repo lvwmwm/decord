@@ -1,21 +1,21 @@
-// Module ID: 19278
-// Function ID: 19279
+// Module ID: 18092
+// Function ID: 18093
 // Name: VoicePanelDockPTTFloatingContent
-// Dependencies: [19, 17, 12446, 21, 575, 5310, 19251, 5541, 1655, 5900, 5317, 11689, 2]
+// Dependencies: [19, 17, 11728, 21, 575, 4823, 18064, 5032, 1655, 5391, 4830, 10971, 2]
 // Exports: default
 
-// Module 19278 (VoicePanelDockPTTFloatingContent)
+// Module 18092 (VoicePanelDockPTTFloatingContent)
 import native from "native" /* 575 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import shared from "shared" /* 5317 */;
-import useThemeDefault from "useTheme" /* 5541 */;
-import VisualEffectViewDefault from "VisualEffectView" /* 5900 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 12446 */;
-import useDockBoxShadowDefault from "useDockBoxShadow" /* 19251 */;
+import shared from "shared" /* 4830 */;
+import useThemeDefault from "useTheme" /* 5032 */;
+import VisualEffectViewDefault from "VisualEffectView" /* 5391 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11728 */;
+import useDockBoxShadowDefault from "useDockBoxShadow" /* 18064 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size_mod from "module_2" /* 2 */;
 
 const nativeDefault = native;
@@ -232,7 +232,7 @@ export default function VoicePanelDockPTTFloatingContent(arg0) {
   items7 = [tmp.tile, { boxShadow: tmp4Result }, animatedStyle2];
   const View2 = tmp2(1655).View;
   obj6 = { size: "md", color: nativeDefault.colors.CONTROL_OVERLAY_PRIMARY_TEXT_DEFAULT };
-  MicrophoneIcon = tmp5(11689).MicrophoneIcon;
+  MicrophoneIcon = tmp5(10971).MicrophoneIcon;
   items6[1] = hasOwnProperty(View2, obj5);
   return metroRequire(View, obj);
 };

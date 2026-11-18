@@ -1,29 +1,29 @@
-// Module ID: 18382
-// Function ID: 18383
+// Module ID: 17187
+// Function ID: 17188
 // Name: BalanceWidgetMenu
-// Dependencies: [19, 17, 1072, 1074, 5156, 6962, 21, 7453, 5923, 1113, 12290, 5143, 1256, 10573, 6965, 18383, 10187, 17563, 7947, 5546, 8495, 5342, 18384, 10067, 5943, 2]
+// Dependencies: [19, 17, 1072, 1074, 4669, 6466, 21, 6956, 5414, 1113, 11572, 4656, 1256, 9854, 6469, 17188, 9468, 16220, 7450, 5037, 7986, 4855, 17189, 9347, 5434, 2]
 // Exports: default, useIsOrbWalletEntryRowShown, useOpenOrbWalletFromYouScreen
 
-// Module 18382 (BalanceWidgetMenu)
+// Module 17187 (BalanceWidgetMenu)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import intl3 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import dismissible_content from "dismissible_content" /* 5143 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5342 */;
-import Text_Text from "Text/Text" /* 5923 */;
-import QuestConstants from "QuestConstants" /* 6962 */;
-import QuestTypes from "QuestTypes" /* 6965 */;
-import TableRow2 from "TableRow" /* 7453 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7947 */;
-import _mod10187 from "module_10187" /* 10187 */;
-import QuestUtils from "QuestUtils" /* 10573 */;
-import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 12290 */;
-import useOrbBalanceEntrypoint from "useOrbBalanceEntrypoint" /* 17563 */;
+import dismissible_content from "dismissible_content" /* 4656 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4855 */;
+import Text_Text from "Text/Text" /* 5414 */;
+import QuestConstants from "QuestConstants" /* 6466 */;
+import QuestTypes from "QuestTypes" /* 6469 */;
+import TableRow2 from "TableRow" /* 6956 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7450 */;
+import _mod9468 from "module_9468" /* 9468 */;
+import QuestUtils from "QuestUtils" /* 9854 */;
+import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 11572 */;
+import useOrbBalanceEntrypoint from "useOrbBalanceEntrypoint" /* 16220 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5156 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4669 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -86,9 +86,9 @@ function BalanceWidgetMenu(orbWalletEntryRowRef) {
   let tmp7Result;
   let str;
   orbWalletEntryRowRef = orbWalletEntryRowRef.orbWalletEntryRowRef;
-  let obj = str(10187);
+  let obj = str(9468);
   str = obj.useFetchVirtualCurrencyBalance({ disableFetch: true }).balance;
-  let obj2 = str(17563);
+  let obj2 = str(16220);
   const isOrbWalletEntrypointEnabled = obj2.useIsOrbWalletEntrypointEnabled({ location: "MobileBalanceWidgetMenu" });
   let items = [str, isOrbWalletEntrypointEnabled];
   const callback = react.useCallback(() => {
@@ -136,7 +136,7 @@ function BalanceWidgetMenu(orbWalletEntryRowRef) {
     intl2 = intl3.intl;
     let result = openBalanceWidgetActionSheet(isOrbWalletEntrypointEnabled, obj2);
   }, items);
-  str(17563);
+  str(16220);
   if (isOrbWalletEntrypointEnabled) {
     let obj3 = { ref: orbWalletEntryRowRef, collapsable: false, children: null };
     let obj4 = { balance: str, notificationType: tmp6, onPress: callback };
@@ -170,7 +170,7 @@ let result = size.fileFinishedImporting("modules/virtual_currency/native/Balance
 export default function BalanceWidgetMenuWrapper(orbWalletEntryRowRef) {
   let tmp4Result;
   orbWalletEntryRowRef = orbWalletEntryRowRef.orbWalletEntryRowRef;
-  const obj = _mod10187;
+  const obj = _mod9468;
   const balance = obj.useFetchVirtualCurrencyBalance().balance;
   if (null == balance) {
     const intl = tmp(1113).intl;
@@ -179,7 +179,7 @@ export default function BalanceWidgetMenuWrapper(orbWalletEntryRowRef) {
     let result = balance > 0;
     if (!result) {
       const tmpResult = DismissibleContentUnsafeUtils;
-      result = tmpResult.UNSAFE_isDismissibleContentDismissed(tmp(5143).DismissibleContent.VIRTUAL_CURRENCY_MOBILE_ONBOARDING_PILL);
+      result = tmpResult.UNSAFE_isDismissibleContentDismissed(tmp(4656).DismissibleContent.VIRTUAL_CURRENCY_MOBILE_ONBOARDING_PILL);
     }
     if (result) {
       const obj3 = { orbWalletEntryRowRef };
@@ -193,9 +193,9 @@ export default function BalanceWidgetMenuWrapper(orbWalletEntryRowRef) {
 export { OrbsOnboardingMenuDismissibleContent };
 export function useOpenOrbWalletFromYouScreen() {
   let balance;
-  const obj = balance(10187);
+  const obj = balance(9468);
   balance = obj.useFetchVirtualCurrencyBalance({ disableFetch: true }).balance;
-  const obj2 = balance(17563);
+  const obj2 = balance(16220);
   const isOrbWalletEntrypointEnabled = obj2.useIsOrbWalletEntrypointEnabled({ location: "MobileBalanceWidgetMenu" });
   const items = [balance, isOrbWalletEntrypointEnabled];
   const obj3 = {
@@ -252,7 +252,7 @@ export function useOpenOrbWalletFromYouScreen() {
 export function useIsOrbWalletEntryRowShown() {
   const obj = useOrbBalanceEntrypoint;
   let isOrbWalletEntrypointEnabled = obj.useIsOrbWalletEntrypointEnabled({ location: "MobileBalanceWidgetMenu" });
-  const obj2 = _mod10187;
+  const obj2 = _mod9468;
   const balance = obj2.useFetchVirtualCurrencyBalance({ disableFetch: true }).balance;
   if (isOrbWalletEntrypointEnabled) {
     isOrbWalletEntrypointEnabled = null != balance;
@@ -261,7 +261,7 @@ export function useIsOrbWalletEntryRowShown() {
     let result = balance > 0;
     if (!result) {
       const tmpResult = DismissibleContentUnsafeUtils;
-      result = tmpResult.UNSAFE_isDismissibleContentDismissed(tmp(5143).DismissibleContent.VIRTUAL_CURRENCY_MOBILE_ONBOARDING_PILL);
+      result = tmpResult.UNSAFE_isDismissibleContentDismissed(tmp(4656).DismissibleContent.VIRTUAL_CURRENCY_MOBILE_ONBOARDING_PILL);
     }
     isOrbWalletEntrypointEnabled = result;
   }

@@ -1,15 +1,15 @@
-// Module ID: 9664
-// Function ID: 9665
+// Module ID: 9078
+// Function ID: 9079
 // Name: admin_editor_test_component
-// Dependencies: [32, 1197, 9642, 9652, 9643, 9644, 9650, 2]
+// Dependencies: [32, 1197, 9056, 9066, 9057, 9058, 9064, 2]
 
-// Module 9664 (admin_editor_test_component)
+// Module 9078 (admin_editor_test_component)
 import _mod1197 from "module_1197" /* 1197 */;
-import localized_string from "localized_string" /* 9642 */;
-import help_article from "help_article" /* 9643 */;
-import cta_button from "cta_button" /* 9644 */;
-import gradient from "gradient" /* 9650 */;
-import theme_aware_asset from "theme_aware_asset" /* 9652 */;
+import localized_string from "localized_string" /* 9056 */;
+import help_article from "help_article" /* 9057 */;
+import cta_button from "cta_button" /* 9058 */;
+import gradient from "gradient" /* 9064 */;
+import theme_aware_asset from "theme_aware_asset" /* 9066 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

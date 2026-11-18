@@ -1,25 +1,25 @@
-// Module ID: 12061
-// Function ID: 12062
+// Module ID: 11343
+// Function ID: 11344
 // Name: StickerPickerListRow
-// Dependencies: [19, 17, 1388, 5138, 11949, 1228, 21, 5310, 575, 671, 8103, 1380, 5135, 5548, 5549, 6790, 7233, 6791, 11843, 12062, 1242, 7438, 2]
+// Dependencies: [19, 17, 1388, 4651, 11231, 1228, 21, 4823, 575, 671, 7606, 1380, 4648, 5039, 5040, 6293, 6737, 6294, 11125, 11344, 1242, 6941, 2]
 // Exports: default
 
-// Module 12061 (StickerPickerListRow)
+// Module 11343 (StickerPickerListRow)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1228 */;
-import UserSettings from "UserSettings" /* 5135 */;
-import StickersConstants from "StickersConstants" /* 5138 */;
-import HapticUtils from "HapticUtils" /* 5548 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5549 */;
-import StickersUtils from "StickersUtils" /* 6790 */;
-import LockIcon from "LockIcon" /* 8103 */;
+import UserSettings from "UserSettings" /* 4648 */;
+import StickersConstants from "StickersConstants" /* 4651 */;
+import HapticUtils from "HapticUtils" /* 5039 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5040 */;
+import StickersUtils from "StickersUtils" /* 6293 */;
+import LockIcon from "LockIcon" /* 7606 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1388 */;
-import StickerPickerConstants from "StickerPickerConstants" /* 11949 */;
+import StickerPickerConstants from "StickerPickerConstants" /* 11231 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let rowContentPaddingVertical;
@@ -32,7 +32,7 @@ let metroImportAll;
 let obj2;
 let obj3;
 let tmp;
-const StickerSendability = tmp(7233);
+const StickerSendability = tmp(6737);
 function StickerItemLockedOverlay() {
   let obj2;
   const tmp = closure_10();
@@ -192,7 +192,7 @@ export default function StickerPickerListRow(stickers) {
   const tmp3 = items();
   rowContentPaddingVertical = tmp3;
   let tmp4 = dependencyMap;
-  let AnimateStickers = stickers(5135).AnimateStickers;
+  let AnimateStickers = stickers(4648).AnimateStickers;
   let closure_8 = AnimateStickers.useSetting();
   items = [];
   if (nativeRow) {
@@ -210,11 +210,11 @@ export default function StickerPickerListRow(stickers) {
           let tmp16 = dependencyMap;
           ({ isOpaque, isDisabled, isLocked } = rowTraitsResult);
           let push2 = items.push;
-          obj5 = stickers(11843);
+          obj5 = stickers(11125);
           let push2Result = push2(obj2);
           tmp12 = dependencyMap;
         } else {
-          let obj3 = { stickerId: "", stickerName: "", stickerType: stickers(6791).StickerFormat.PNG, stickerUrl: "", stickerAnimated: false, stickerDisabled: true, stickerOpaque: false, stickerLocked: false };
+          let obj3 = { stickerId: "", stickerName: "", stickerType: stickers(6294).StickerFormat.PNG, stickerUrl: "", stickerAnimated: false, stickerDisabled: true, stickerOpaque: false, stickerLocked: false };
           tmp12 = dependencyMap;
           let push = items.push;
           let arr = push(obj3);
@@ -247,7 +247,7 @@ export default function StickerPickerListRow(stickers) {
             }
       };
       obj7 = { rowContentWidth: containerWidth, rowContentPaddingVertical, itemSize: STICKER_SIZE, items };
-      return closure_8(isSectionNitroLocked(12062), obj6);
+      return closure_8(isSectionNitroLocked(11344), obj6);
     } catch (tmp23) {
       const tmp25 = isSectionNitroLocked(1242);
       const obj8 = { message: "Error in StickerPickerListRowNativeComponent", category: "sticker", data: obj9 };

@@ -20,7 +20,7 @@ function _addTracingHeadersToFetchRequest(headers, headers2, span, propagateTrac
   let joined;
   let tmp6;
   let traceparent;
-  const f82793 = (item) => {
+  const f80370 = (item) => {
     const trimmed = item.trim();
     return trimmed.startsWith(closure_1_0(closure_1_1[8]).SENTRY_BAGGAGE_KEY_PREFIX);
   };
@@ -68,7 +68,7 @@ function _addTracingHeadersToFetchRequest(headers, headers2, span, propagateTrac
           const str10 = headers2.get("baggage");
           if (str10) {
             let parts = str10.split(",");
-            if (!parts.some(f82793)) {
+            if (!parts.some(f80370)) {
               const _HermesInternal = HermesInternal;
               const result2 = headers2.set("baggage", "" + str10 + "," + baggage);
             }
@@ -96,7 +96,7 @@ function _addTracingHeadersToFetchRequest(headers, headers2, span, propagateTrac
             if (someResult) {
               const str = item[1];
               const parts = str.split(",");
-              someResult = parts.some(f82793);
+              someResult = parts.some(f80370);
             }
             return someResult;
           });
@@ -141,11 +141,11 @@ function _addTracingHeadersToFetchRequest(headers, headers2, span, propagateTrac
             if (Array.isArray(baggage1)) {
               found = baggage1.find((item) => {
                 const parts = item.split(",");
-                return parts.some(f82793);
+                return parts.some(f80370);
               });
             } else {
               const parts1 = baggage1.split(",");
-              found = parts1.some(f82793);
+              found = parts1.some(f80370);
             }
             tmp21 = found;
           }
@@ -196,7 +196,7 @@ export function _callOnRequestSpanEnd(arg0, response, onRequestSpanEnd) {
     onRequestSpanEnd(arg0, obj);
   }
 }
-export function instrumentFetchRequest(fetchData, fn, fn2, arg3, onRequestSpanEnd) {
+export function instrumentFetchRequest(fetchData, shouldCreateSpanForRequest, shouldAttachHeadersWithTargets, setAttribute, onRequestSpanEnd) {
   let method;
   let obj6;
   let obj8;
@@ -206,15 +206,15 @@ export function instrumentFetchRequest(fetchData, fn, fn2, arg3, onRequestSpanEn
   if (fetchData.fetchData) {
     ({ method, url } = fetchData.fetchData);
     const obj = _mod719;
-    const hasSpansEnabledResult = obj.hasSpansEnabled() && fn(url);
+    const hasSpansEnabledResult = obj.hasSpansEnabled() && shouldCreateSpanForRequest(url);
     if (fetchData.endTimestamp) {
       if (hasSpansEnabledResult) {
         const __span = fetchData.fetchData.__span;
         if (__span) {
-          if (arg3[__span]) {
+          if (setAttribute[__span]) {
             if (fetchData.response) {
               const tmpResult = SPAN_STATUS_ERROR;
-              tmpResult.setHttpStatus(arg3[__span], fetchData.response.status);
+              tmpResult.setHttpStatus(setAttribute[__span], fetchData.response.status);
               const response = fetchData.response;
               let value;
               if (response != null) {
@@ -235,7 +235,7 @@ export function instrumentFetchRequest(fetchData, fn, fn2, arg3, onRequestSpanEn
               const obj2 = { code: SPAN_STATUS_ERROR.SPAN_STATUS_ERROR, message: "internal_error" };
               setStatus(obj2);
             }
-            arg3[__span].end();
+            setAttribute[__span].end();
             onRequestSpanEnd = undefined;
             if (typeof onRequestSpanEnd === "object") {
               if (null !== onRequestSpanEnd) {
@@ -249,7 +249,7 @@ export function instrumentFetchRequest(fetchData, fn, fn2, arg3, onRequestSpanEn
                 headers1 = response2.headers;
               }
               const obj3 = { headers: headers1, error: fetchData.error };
-              onRequestSpanEnd(arg3[__span], obj3);
+              onRequestSpanEnd(setAttribute[__span], obj3);
             }
             delete tmp5[__span];
           }
@@ -316,8 +316,8 @@ export function instrumentFetchRequest(fetchData, fn, fn2, arg3, onRequestSpanEn
         startInactiveSpanResult = startInactiveSpan(obj7);
       }
       fetchData.fetchData.__span = startInactiveSpanResult.spanContext().spanId;
-      arg3[startInactiveSpanResult.spanContext().spanId] = startInactiveSpanResult;
-      if (fn2(fetchData.fetchData.url)) {
+      setAttribute[startInactiveSpanResult.spanContext().spanId] = startInactiveSpanResult;
+      if (shouldAttachHeadersWithTargets(fetchData.fetchData.url)) {
         const first = fetchData.args[0];
         const obj9 = {};
         const tmp18 = fetchData.args[1] || {};

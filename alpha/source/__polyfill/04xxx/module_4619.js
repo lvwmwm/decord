@@ -1,65 +1,75 @@
 // Module ID: 4619
 // Function ID: 4620
-// Dependencies: [2197]
+// Dependencies: [2169]
 
 // Module 4619
-import buildLocalizeFn from "buildLocalizeFn" /* 2197 */;
+import _mod2169 from "module_2169" /* 2169 */;
 
-let obj;
-let obj3;
-let obj4;
-let obj5;
-let obj6;
-let obj7;
-if (!buildLocalizeFn) {
-  obj = { default: buildLocalizeFn };
-  const obj2 = { default: buildLocalizeFn };
-} else {
-  obj = buildLocalizeFn;
-}
-const date = {
-  ordinalNumber(arg0, unit) {
-    unit = undefined;
-    const NumberResult = Number(arg0);
-    if (null != unit) {
-      unit = unit.unit;
-    }
-    let str = "\u03BF\u03C2";
-    if ("year" !== unit) {
-      str = "\u03BF\u03C2";
-      if ("month" !== unit) {
-        if ("week" !== unit) {
-          if ("dayOfYear" !== unit) {
-            if ("day" !== unit) {
-              let str7;
-              if ("hour" !== unit) {
-                str7 = "\u03BF";
-              }
-              str = str7;
-            }
-          }
+const fn = function t(moment) {
+  let closure_0 = "jan._feb._mrt._apr._mei_jun._jul._aug._sep._okt._nov._dec.".split("_");
+  let closure_1 = "jan_feb_mrt_apr_mei_jun_jul_aug_sep_okt_nov_dec".split("_");
+  const items = [/^jan/i, /^feb/i, /^(maart|mrt\.?)$/i, /^apr/i, /^mei$/i, /^jun[i.]?$/i, /^jul[i.]?$/i, /^aug/i, /^sep/i, /^okt/i, /^nov/i, /^dec/i];
+  let tmp = /^(januari|februari|maart|april|mei|ju[nl]i|augustus|september|oktober|november|december|jan\.?|feb\.?|mrt\.?|apr\.?|ju[nl]\.?|aug\.?|sep\.?|okt\.?|nov\.?|dec\.?)/i;
+  let obj = {
+    months: "januari_februari_maart_april_mei_juni_juli_augustus_september_oktober_november_december".split("_"),
+    monthsShort(arg0, arg1) {
+      let tmp2;
+      const tmp = arg0;
+      if (tmp) {
+        let tmp5;
+        const obj = /-MMM-/;
+        if (obj.test(arg1)) {
+          tmp5 = closure_1[arg0.month(arg0)];
+        } else {
+          tmp5 = closure_0[arg0.month(arg0)];
         }
-        str7 = "\u03B7";
+        tmp2 = tmp5;
+      } else {
+        tmp2 = closure_0;
       }
+      return tmp2;
+    },
+    monthsRegex: tmp,
+    monthsShortRegex: tmp,
+    monthsStrictRegex: /^(januari|februari|maart|april|mei|ju[nl]i|augustus|september|oktober|november|december)/i,
+    monthsShortStrictRegex: /^(jan\.?|feb\.?|mrt\.?|apr\.?|mei|ju[nl]\.?|aug\.?|sep\.?|okt\.?|nov\.?|dec\.?)/i,
+    monthsParse: items,
+    longMonthsParse: items,
+    shortMonthsParse: items,
+    weekdays: "zondag_maandag_dinsdag_woensdag_donderdag_vrijdag_zaterdag".split("_"),
+    weekdaysShort: "zo._ma._di._wo._do._vr._za.".split("_"),
+    weekdaysMin: "zo_ma_di_wo_do_vr_za".split("_"),
+    weekdaysParseExact: true,
+    longDateFormat: { LT: "HH:mm", LTS: "HH:mm:ss", L: "DD-MM-YYYY", LL: "D MMMM YYYY", LLL: "D MMMM YYYY HH:mm", LLLL: "dddd D MMMM YYYY HH:mm" },
+    calendar: { sameDay: "[vandaag om] LT", nextDay: "[morgen om] LT", nextWeek: "dddd [om] LT", lastDay: "[gisteren om] LT", lastWeek: "[afgelopen] dddd [om] LT", sameElse: "L" },
+    relativeTime: { future: "over %s", past: "%s geleden", s: "een paar seconden", ss: "%d seconden", m: "\u00E9\u00E9n minuut", mm: "%d minuten", h: "\u00E9\u00E9n uur", hh: "%d uur", d: "\u00E9\u00E9n dag", dd: "%d dagen", w: "\u00E9\u00E9n week", ww: "%d weken", M: "\u00E9\u00E9n maand", MM: "%d maanden", y: "\u00E9\u00E9n jaar", yy: "%d jaar" },
+    dayOfMonthOrdinalParse: /\d{1,2}(ste|de)/,
+    ordinal(arg0) {
+      if (1 !== arg0) {
+        let str;
+        if (8 !== arg0) {
+          str = "de";
+        }
+        return arg0 + str;
+      }
+      str = "ste";
+    },
+    week: { dow: 1, doy: 4 }
+  };
+  return moment.defineLocale("nl", obj);
+};
+if (typeof exports === "object") {
+  if (undefined !== module) {
+    let tmp = require;
+    if (typeof require === "function") {
+      fn(_mod2169);
     }
-    return NumberResult + str;
-  },
-  era: obj.default(obj3),
-  quarter: obj.default(obj4),
-  month: obj.default(obj5),
-  day: obj.default(obj6),
-  dayPeriod: obj.default(obj7)
-};
-obj3 = { values: { narrow: ["\u03C0\u03A7", "\u03BC\u03A7"], abbreviated: ["\u03C0.\u03A7.", "\u03BC.\u03A7."], wide: ["\u03C0\u03C1\u03BF \u03A7\u03C1\u03B9\u03C3\u03C4\u03BF\u03CD", "\u03BC\u03B5\u03C4\u03AC \u03A7\u03C1\u03B9\u03C3\u03C4\u03CC\u03BD"] }, defaultWidth: "wide" };
-obj4 = {
-  values: { narrow: ["1", "2", "3", "4"], abbreviated: ["\u03A41", "\u03A42", "\u03A43", "\u03A44"], wide: ["1\u03BF \u03C4\u03C1\u03AF\u03BC\u03B7\u03BD\u03BF", "2\u03BF \u03C4\u03C1\u03AF\u03BC\u03B7\u03BD\u03BF", "3\u03BF \u03C4\u03C1\u03AF\u03BC\u03B7\u03BD\u03BF", "4\u03BF \u03C4\u03C1\u03AF\u03BC\u03B7\u03BD\u03BF"] },
-  defaultWidth: "wide",
-  argumentCallback(arg0) {
-    return arg0 - 1;
   }
-};
-obj5 = { values: { narrow: ["\u0399", "\u03A6", "\u039C", "\u0391", "\u039C", "\u0399", "\u0399", "\u0391", "\u03A3", "\u039F", "\u039D", "\u0394"], abbreviated: ["\u0399\u03B1\u03BD", "\u03A6\u03B5\u03B2", "\u039C\u03AC\u03C1", "\u0391\u03C0\u03C1", "\u039C\u03AC\u03B9", "\u0399\u03BF\u03CD\u03BD", "\u0399\u03BF\u03CD\u03BB", "\u0391\u03CD\u03B3", "\u03A3\u03B5\u03C0", "\u039F\u03BA\u03C4", "\u039D\u03BF\u03AD", "\u0394\u03B5\u03BA"], wide: ["\u0399\u03B1\u03BD\u03BF\u03C5\u03AC\u03C1\u03B9\u03BF\u03C2", "\u03A6\u03B5\u03B2\u03C1\u03BF\u03C5\u03AC\u03C1\u03B9\u03BF\u03C2", "\u039C\u03AC\u03C1\u03C4\u03B9\u03BF\u03C2", "\u0391\u03C0\u03C1\u03AF\u03BB\u03B9\u03BF\u03C2", "\u039C\u03AC\u03B9\u03BF\u03C2", "\u0399\u03BF\u03CD\u03BD\u03B9\u03BF\u03C2", "\u0399\u03BF\u03CD\u03BB\u03B9\u03BF\u03C2", "\u0391\u03CD\u03B3\u03BF\u03C5\u03C3\u03C4\u03BF\u03C2", "\u03A3\u03B5\u03C0\u03C4\u03AD\u03BC\u03B2\u03C1\u03B9\u03BF\u03C2", "\u039F\u03BA\u03C4\u03CE\u03B2\u03C1\u03B9\u03BF\u03C2", "\u039D\u03BF\u03AD\u03BC\u03B2\u03C1\u03B9\u03BF\u03C2", "\u0394\u03B5\u03BA\u03AD\u03BC\u03B2\u03C1\u03B9\u03BF\u03C2"] }, defaultWidth: "wide", formattingValues: { narrow: ["\u0399", "\u03A6", "\u039C", "\u0391", "\u039C", "\u0399", "\u0399", "\u0391", "\u03A3", "\u039F", "\u039D", "\u0394"], abbreviated: ["\u0399\u03B1\u03BD", "\u03A6\u03B5\u03B2", "\u039C\u03B1\u03C1", "\u0391\u03C0\u03C1", "\u039C\u03B1\u0390", "\u0399\u03BF\u03C5\u03BD", "\u0399\u03BF\u03C5\u03BB", "\u0391\u03C5\u03B3", "\u03A3\u03B5\u03C0", "\u039F\u03BA\u03C4", "\u039D\u03BF\u03B5", "\u0394\u03B5\u03BA"], wide: ["\u0399\u03B1\u03BD\u03BF\u03C5\u03B1\u03C1\u03AF\u03BF\u03C5", "\u03A6\u03B5\u03B2\u03C1\u03BF\u03C5\u03B1\u03C1\u03AF\u03BF\u03C5", "\u039C\u03B1\u03C1\u03C4\u03AF\u03BF\u03C5", "\u0391\u03C0\u03C1\u03B9\u03BB\u03AF\u03BF\u03C5", "\u039C\u03B1\u0390\u03BF\u03C5", "\u0399\u03BF\u03C5\u03BD\u03AF\u03BF\u03C5", "\u0399\u03BF\u03C5\u03BB\u03AF\u03BF\u03C5", "\u0391\u03C5\u03B3\u03BF\u03CD\u03C3\u03C4\u03BF\u03C5", "\u03A3\u03B5\u03C0\u03C4\u03B5\u03BC\u03B2\u03C1\u03AF\u03BF\u03C5", "\u039F\u03BA\u03C4\u03C9\u03B2\u03C1\u03AF\u03BF\u03C5", "\u039D\u03BF\u03B5\u03BC\u03B2\u03C1\u03AF\u03BF\u03C5", "\u0394\u03B5\u03BA\u03B5\u03BC\u03B2\u03C1\u03AF\u03BF\u03C5"] }, defaultFormattingWidth: "wide" };
-obj6 = { values: { narrow: ["\u039A", "\u0394", "T", "\u03A4", "\u03A0", "\u03A0", "\u03A3"], short: ["\u039A\u03C5", "\u0394\u03B5", "\u03A4\u03C1", "\u03A4\u03B5", "\u03A0\u03AD", "\u03A0\u03B1", "\u03A3\u03AC"], abbreviated: ["\u039A\u03C5\u03C1", "\u0394\u03B5\u03C5", "\u03A4\u03C1\u03AF", "\u03A4\u03B5\u03C4", "\u03A0\u03AD\u03BC", "\u03A0\u03B1\u03C1", "\u03A3\u03AC\u03B2"], wide: ["\u039A\u03C5\u03C1\u03B9\u03B1\u03BA\u03AE", "\u0394\u03B5\u03C5\u03C4\u03AD\u03C1\u03B1", "\u03A4\u03C1\u03AF\u03C4\u03B7", "\u03A4\u03B5\u03C4\u03AC\u03C1\u03C4\u03B7", "\u03A0\u03AD\u03BC\u03C0\u03C4\u03B7", "\u03A0\u03B1\u03C1\u03B1\u03C3\u03BA\u03B5\u03C5\u03AE", "\u03A3\u03AC\u03B2\u03B2\u03B1\u03C4\u03BF"] }, defaultWidth: "wide" };
-obj7 = { values: { narrow: { am: "\u03C0\u03BC", pm: "\u03BC\u03BC", midnight: "\u03BC\u03B5\u03C3\u03AC\u03BD\u03C5\u03C7\u03C4\u03B1", noon: "\u03BC\u03B5\u03C3\u03B7\u03BC\u03AD\u03C1\u03B9", morning: "\u03C0\u03C1\u03C9\u03AF", afternoon: "\u03B1\u03C0\u03CC\u03B3\u03B5\u03C5\u03BC\u03B1", evening: "\u03B2\u03C1\u03AC\u03B4\u03C5", night: "\u03BD\u03CD\u03C7\u03C4\u03B1" }, abbreviated: { am: "\u03C0.\u03BC.", pm: "\u03BC.\u03BC.", midnight: "\u03BC\u03B5\u03C3\u03AC\u03BD\u03C5\u03C7\u03C4\u03B1", noon: "\u03BC\u03B5\u03C3\u03B7\u03BC\u03AD\u03C1\u03B9", morning: "\u03C0\u03C1\u03C9\u03AF", afternoon: "\u03B1\u03C0\u03CC\u03B3\u03B5\u03C5\u03BC\u03B1", evening: "\u03B2\u03C1\u03AC\u03B4\u03C5", night: "\u03BD\u03CD\u03C7\u03C4\u03B1" }, wide: { am: "\u03C0.\u03BC.", pm: "\u03BC.\u03BC.", midnight: "\u03BC\u03B5\u03C3\u03AC\u03BD\u03C5\u03C7\u03C4\u03B1", noon: "\u03BC\u03B5\u03C3\u03B7\u03BC\u03AD\u03C1\u03B9", morning: "\u03C0\u03C1\u03C9\u03AF", afternoon: "\u03B1\u03C0\u03CC\u03B3\u03B5\u03C5\u03BC\u03B1", evening: "\u03B2\u03C1\u03AC\u03B4\u03C5", night: "\u03BD\u03CD\u03C7\u03C4\u03B1" } }, defaultWidth: "wide" };
-
-export default date;
+}
+if (typeof globalThis.define === "function") {
+  const define2 = globalThis.define;
+  if (globalThis.define.amd) {
+    globalThis.define(["../moment"], fn);
+  }
+}
+fn(this.moment);

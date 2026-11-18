@@ -1,36 +1,37 @@
-// Module ID: 8495
-// Function ID: 8496
+// Module ID: 7986
+// Function ID: 7987
 // Name: CollectiblesActionCreators
-// Dependencies: [5, 5926, 2189, 1388, 8496, 8510, 5980, 8511, 8512, 8516, 8498, 8522, 8523, 1074, 1072, 5984, 8536, 5487, 572, 8537, 8538, 8545, 1285, 6755, 7236, 8539, 8508, 8546, 8547, 8548, 2]
+// Dependencies: [5, 5417, 2189, 1388, 7987, 8001, 5476, 8002, 8003, 8007, 7989, 8013, 8014, 1074, 1072, 5480, 8027, 5000, 572, 8028, 8029, 8036, 1285, 6257, 6740, 8030, 7999, 8037, 8038, 1089, 8039, 2]
 // Exports: areRequestOptionsEqual, claimPremiumCollectiblesProduct, closeCollectiblesShop, dispatchOpenCollectiblesShop, fetchCollectiblesCategories, fetchCollectiblesMarketings, fetchCollectiblesPurchases, fetchCollectiblesSequencedOffers, fetchCollectiblesShopHome, isCollectiblesShopOpen, maybeFetchCollectiblesProduct, openCollectiblesShop, productDetailsOpened, restoreCollectiblesMarketingsFromCache, revealCollectiblesSequencedOffer, seedCollectiblesProductFromStandaloneLoad, setShopHomeConfigOverride, setSkipNumCategories, validateCollectiblesRecipient, validateCollectiblesRecipientsBatch
 
-// Module 8495 (CollectiblesActionCreators)
+// Module 7986 (CollectiblesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
+import DurationsDefault from "Durations" /* 1089 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
-import RootNavigationRef from "RootNavigationRef" /* 5487 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 8508 */;
-import CollectiblesDebugStore from "CollectiblesDebugStore" /* 8510 */;
-import CollectiblesCategoriesRecord from "CollectiblesCategoriesRecord" /* 8512 */;
-import CollectiblesShopHomeRecord from "CollectiblesShopHomeRecord" /* 8523 */;
-import LayerActionCreators from "LayerActionCreators" /* 8537 */;
-import utils_CollectiblesUtils from "utils/CollectiblesUtils" /* 8538 */;
-import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 8539 */;
-import CollectiblesPerfLogging from "CollectiblesPerfLogging" /* 8545 */;
-import CollectiblesMarketingReleaseType from "CollectiblesMarketingReleaseType" /* 8546 */;
+import RootNavigationRef from "RootNavigationRef" /* 5000 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7999 */;
+import CollectiblesDebugStore from "CollectiblesDebugStore" /* 8001 */;
+import CollectiblesCategoriesRecord from "CollectiblesCategoriesRecord" /* 8003 */;
+import CollectiblesShopHomeRecord from "CollectiblesShopHomeRecord" /* 8014 */;
+import LayerActionCreators from "LayerActionCreators" /* 8028 */;
+import utils_CollectiblesUtils from "utils/CollectiblesUtils" /* 8029 */;
+import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 8030 */;
+import CollectiblesPerfLogging from "CollectiblesPerfLogging" /* 8036 */;
+import CollectiblesMarketingReleaseType from "CollectiblesMarketingReleaseType" /* 8037 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import DevSettingsStore from "DevSettingsStore" /* 5926 */;
+import DevSettingsStore from "DevSettingsStore" /* 5417 */;
 import LocaleStore from "LocaleStore" /* 2189 */;
 import UserStore from "UserStore" /* 1388 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 8496 */;
-import CollectiblesMarketingsStore from "CollectiblesMarketingsStore" /* 5980 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 8511 */;
-import CollectiblesMarketingRecord from "CollectiblesMarketingRecord" /* 8516 */;
-import CollectiblesProductRecord from "CollectiblesProductRecord" /* 8498 */;
-import CollectiblesPurchaseRecord from "CollectiblesPurchaseRecord" /* 8522 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7987 */;
+import CollectiblesMarketingsStore from "CollectiblesMarketingsStore" /* 5476 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 8002 */;
+import CollectiblesMarketingRecord from "CollectiblesMarketingRecord" /* 8007 */;
+import CollectiblesProductRecord from "CollectiblesProductRecord" /* 7989 */;
+import CollectiblesPurchaseRecord from "CollectiblesPurchaseRecord" /* 8013 */;
 import Constants from "Constants" /* 1072 */;
-import CollectiblesShopHomeStore from "CollectiblesShopHomeStore" /* 5984 */;
-import CollectiblesShopStore from "CollectiblesShopStore" /* 8536 */;
+import CollectiblesShopHomeStore from "CollectiblesShopHomeStore" /* 5480 */;
+import CollectiblesShopStore from "CollectiblesShopStore" /* 8027 */;
 import size from "module_2" /* 2 */;
 
 let c2, closure_4, closure_5, closure_6, options, recipient_id;
@@ -191,7 +192,7 @@ let obj = function _fetchCollectiblesCategories() {
               const self2 = this;
               aPIError = new closure_133_0(closure_133_2[23]).APIError(closure_6);
               const obj5 = closure_133_0(closure_133_2[24]);
-              const result = obj5.captureOrIgnoreApiError(aPIError);
+              result = obj5.captureOrIgnoreApiError(aPIError);
               const obj7 = { type: "COLLECTIBLES_CATEGORIES_FETCH_FAILURE", error: aPIError };
               const obj6 = closure_133_1(closure_133_2[18]);
               logPerf = obj6.dispatch(obj7);
@@ -470,7 +471,7 @@ obj = function _fetchCollectiblesProduct() {
               const self2 = this;
               aPIError = new closure_131_0(closure_131_2[23]).APIError(closure_3);
               const obj3 = closure_131_0(closure_131_2[24]);
-              const result = obj3.captureOrIgnoreApiError(aPIError);
+              result = obj3.captureOrIgnoreApiError(aPIError);
               const _Date2 = Date;
               const obj8 = { type: "COLLECTIBLES_PRODUCT_FETCH_FAILURE", skuId, error: aPIError, endedAt: Date.now() };
               const dispatch2 = closure_131_1(closure_131_2[18]).dispatch;
@@ -712,7 +713,7 @@ obj = function _validateCollectiblesRecipient() {
             const self2 = this;
             closure_131_0(closure_131_2[24]);
             const aPIError = new closure_131_0(closure_131_2[23]).APIError(recipient_id);
-            const result = captureOrIgnoreApiError(aPIError);
+            result = captureOrIgnoreApiError(aPIError);
             c7 = 3;
             return { value: false, done: true };
           } else if (arg0 === 1) {
@@ -789,7 +790,7 @@ obj = function _validateCollectiblesRecipientsBatch() {
             const self2 = this;
             closure_131_0(closure_131_2[24]);
             const aPIError = new closure_131_0(closure_131_2[23]).APIError(recipient_id);
-            const result = captureOrIgnoreApiError(aPIError);
+            result = captureOrIgnoreApiError(aPIError);
             c7 = 3;
             return { value: {}, done: true };
           } else if (arg0 === 1) {
@@ -844,7 +845,7 @@ obj = function _fetchCollectiblesMarketings() {
         const self2 = this;
         closure_130_0(closure_130_2[24]);
         const aPIError = new closure_130_0(closure_130_2[23]).APIError(closure_3);
-        const result = captureOrIgnoreApiError(aPIError);
+        result = captureOrIgnoreApiError(aPIError);
         const obj3 = closure_130_1(closure_130_2[18]);
         obj3.dispatch({ type: "COLLECTIBLES_MARKETING_FETCH_FAILURE" });
       } else if (arg0 === 1) {
@@ -873,6 +874,7 @@ obj = function _fetchCollectiblesMarketings() {
   return obj(...arguments);
 };
 obj = function _fetchCollectiblesSequencedOffers() {
+  let timeout;
   obj = _asyncToGenerator(async function(arg0, value) {
     if (c5 === 2) {
       c5 = 3;
@@ -907,7 +909,7 @@ obj = function _fetchCollectiblesSequencedOffers() {
             obj7.dispatch({ type: "COLLECTIBLES_SEQUENCED_OFFERS_FETCH" });
             c3 = 1;
             const HTTP = HTTPUtils.HTTP;
-            const obj5 = { url: constants.COLLECTIBLES_COLLECTION_SEQUENCED_OFFERS, rejectWithError: true };
+            const obj5 = { url: constants.COLLECTIBLES_COLLECTION_SEQUENCED_OFFERS, timeout, rejectWithError: true };
             c4 = 2;
             c5 = 1;
             const obj6 = { value: HTTP.get(obj5), done: false };
@@ -922,7 +924,7 @@ obj = function _fetchCollectiblesSequencedOffers() {
             const self2 = this;
             const tmp20 = closure_129_0(closure_129_2[24]);
             const aPIError = new closure_129_0(closure_129_2[23]).APIError(closure_1);
-            const result = captureOrIgnoreApiError(aPIError);
+            result = captureOrIgnoreApiError(aPIError);
             const obj3 = closure_129_1(closure_129_2[18]);
             obj3.dispatch({ type: "COLLECTIBLES_SEQUENCED_OFFERS_FETCH_FAILURE" });
           } else if (arg0 === 1) {
@@ -935,7 +937,7 @@ obj = function _fetchCollectiblesSequencedOffers() {
             return obj8;
           } else {
             body = value;
-            obj = { type: "COLLECTIBLES_SEQUENCED_OFFERS_FETCH_SUCCESS", sequencedOffers: closure_129_1(closure_129_2[29])(body.body) };
+            obj = { type: "COLLECTIBLES_SEQUENCED_OFFERS_FETCH_SUCCESS", sequencedOffers: closure_129_1(closure_129_2[30])(body.body) };
             const dispatch = closure_129_1(closure_129_2[18]).dispatch;
             const tmp9 = closure_129_1(closure_129_2[18]);
             dispatch(obj);
@@ -1050,7 +1052,7 @@ obj = function _fetchCollectiblesShopHome() {
               const self2 = this;
               aPIError = new closure_133_0(closure_133_2[23]).APIError(closure_5);
               const obj4 = closure_133_0(closure_133_2[24]);
-              const result = obj4.captureOrIgnoreApiError(aPIError);
+              result = obj4.captureOrIgnoreApiError(aPIError);
               const obj10 = { type: "COLLECTIBLES_SHOP_HOME_FETCH_FAILURE", tab, error: aPIError };
               const obj5 = closure_133_1(closure_133_2[18]);
               obj5.dispatch(obj10);
@@ -1118,14 +1120,15 @@ let closure_11 = CollectiblesCategoriesRecord.CollectiblesCategoriesRecord;
 let closure_16 = CollectiblesShopHomeRecord.CollectiblesShopHomeRecord;
 const constants = CollectiblesShopConstants.CollectiblesMobileShopScreen;
 ({ Endpoints: closure_18, Routes, UserSettingsSections: closure_19 } = Constants);
-let result = size.fileFinishedImporting("modules/collectibles/CollectiblesActionCreators.tsx");
+let result = 10 * DurationsDefault.Millis.SECOND;
+const result1 = size.fileFinishedImporting("modules/collectibles/CollectiblesActionCreators.tsx");
 
 export default { openCollectiblesShop, closeCollectiblesShop, fetchCollectiblesPurchases, fetchCollectiblesProduct, claimPremiumCollectiblesProduct };
 export { openCollectiblesShop };
 export { openCollectiblesShopMobile };
 export function isCollectiblesShopOpen() {
   let isCollectiblesShopRoute;
-  obj = isCollectiblesShopRoute(5487);
+  obj = isCollectiblesShopRoute(5000);
   const rootNavigationRef = obj.getRootNavigationRef();
   let tmp2 = !(null == rootNavigationRef || !rootNavigationRef.isReady());
   const tmp = null == rootNavigationRef || !rootNavigationRef.isReady();
@@ -1309,7 +1312,7 @@ export function seedCollectiblesProductFromStandaloneLoad(memo) {
   const timestamp = Date.now();
   const items = [memo];
   obj = CollectiblesUtils;
-  const result = obj.extendVariantsProducts(items);
+  result = obj.extendVariantsProducts(items);
   const iter = result[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
@@ -1332,6 +1335,7 @@ export function validateCollectiblesRecipientsBatch() {
 export function fetchCollectiblesMarketings() {
   return obj(...arguments);
 }
+export const COLLECTIBLES_SEQUENCED_OFFERS_FETCH_TIMEOUT_MS = result;
 export function fetchCollectiblesSequencedOffers() {
   return obj(...arguments);
 }

@@ -1,9 +1,9 @@
-// Module ID: 17239
-// Function ID: 17240
+// Module ID: 15896
+// Function ID: 15897
 // Name: ProfileSelectorActionSheetConstants
 // Dependencies: [2]
 
-// Module 17239 (ProfileSelectorActionSheetConstants)
+// Module 15896 (ProfileSelectorActionSheetConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_settings/profiles/native/ProfileSelectorActionSheetConstants.tsx");

@@ -1,26 +1,26 @@
-// Module ID: 20931
-// Function ID: 20932
+// Module ID: 20204
+// Function ID: 20205
 // Name: AppStoreParentalRevocationScreen
-// Dependencies: [19, 17, 21, 5310, 575, 6006, 8219, 8221, 6335, 5923, 1113, 2999, 12903, 20915, 10739, 8404, 2]
+// Dependencies: [19, 17, 21, 4823, 575, 5502, 7722, 7724, 5837, 5414, 1113, 3019, 12198, 20188, 10020, 12352, 2]
 // Exports: default
 
-// Module 20931 (AppStoreParentalRevocationScreen)
+// Module 20204 (AppStoreParentalRevocationScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
-import _modDef2999 from "module_2999" /* 2999 */;
-import Text_Text from "Text/Text" /* 5923 */;
-import LinkingDefault from "Linking" /* 6006 */;
-import Stack_Stack from "Stack/Stack" /* 6335 */;
-import ModalScreen2 from "ModalScreen" /* 8219 */;
-import ModalContent2 from "ModalContent" /* 8221 */;
-import LinkExternalSmallIcon2 from "LinkExternalSmallIcon" /* 8404 */;
-import ModalActionButton2 from "ModalActionButton" /* 10739 */;
-import ModalFooter2 from "ModalFooter" /* 12903 */;
-import LogOutDisclaimerDefault from "LogOutDisclaimer" /* 20915 */;
+import _modDef3019 from "module_3019" /* 3019 */;
+import Text_Text from "Text/Text" /* 5414 */;
+import LinkingDefault from "Linking" /* 5502 */;
+import Stack_Stack from "Stack/Stack" /* 5837 */;
+import ModalScreen2 from "ModalScreen" /* 7722 */;
+import ModalContent2 from "ModalContent" /* 7724 */;
+import ModalActionButton2 from "ModalActionButton" /* 10020 */;
+import ModalFooter2 from "ModalFooter" /* 12198 */;
+import LinkExternalSmallIcon2 from "LinkExternalSmallIcon" /* 12352 */;
+import LogOutDisclaimerDefault from "LogOutDisclaimer" /* 20188 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -61,17 +61,17 @@ export default function AppStoreParentalRevocationScreen() {
   const ModalContent = ModalContent2.ModalContent;
   obj5 = { align: "center", spacing: nativeDefault.space.PX_16, children: items };
   Stack = Stack_Stack.Stack;
-  const obj6 = { accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp.text, children: intl.string(_modDef2999.Z87TFb) };
+  const obj6 = { accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp.text, children: intl.string(_modDef3019.Z87TFb) };
   const Text = Text_Text.Text;
   intl = intl5.intl;
   items = [hasOwnProperty(Text, obj6), ];
   const obj7 = { align: "center", spacing: nativeDefault.space.PX_16, style: tmp.body, children: items1 };
   const Stack2 = Stack_Stack.Stack;
-  const obj8 = { variant: "body-md/medium", color: "text-subtle", style: tmp.text, children: intl2.string(_modDef2999.VS98dM) };
+  const obj8 = { variant: "body-md/medium", color: "text-subtle", style: tmp.text, children: intl2.string(_modDef3019.VS98dM) };
   const Text2 = Text_Text.Text;
   intl2 = intl5.intl;
   items1 = [hasOwnProperty(Text2, obj8), ];
-  const obj9 = { variant: "body-md/medium", color: "text-subtle", style: tmp.text, children: intl3.string(_modDef2999.BaI6L4) };
+  const obj9 = { variant: "body-md/medium", color: "text-subtle", style: tmp.text, children: intl3.string(_modDef3019.BaI6L4) };
   const Text3 = Text_Text.Text;
   intl3 = intl5.intl;
   items1[1] = hasOwnProperty(Text3, obj9);
@@ -83,7 +83,7 @@ export default function AppStoreParentalRevocationScreen() {
   const obj11 = { children: items4 };
   const ModalFooter = ModalFooter2.ModalFooter;
   items4 = [hasOwnProperty(LogOutDisclaimerDefault, {}), ];
-  const obj12 = { variant: "primary", text: intl4.string(_modDef2999["6FXIU6"]), icon: hasOwnProperty(LinkExternalSmallIcon, obj13), iconPosition: "end", onPress: callback };
+  const obj12 = { variant: "primary", text: intl4.string(_modDef3019["6FXIU6"]), icon: hasOwnProperty(LinkExternalSmallIcon, obj13), iconPosition: "end", onPress: callback };
   const ModalActionButton = ModalActionButton2.ModalActionButton;
   intl4 = intl5.intl;
   obj13 = { color: nativeDefault.colors.WHITE };

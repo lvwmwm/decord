@@ -1,14 +1,14 @@
-// Module ID: 13117
-// Function ID: 13118
+// Module ID: 12415
+// Function ID: 12416
 // Name: Tracking
-// Dependencies: [1072, 1256, 6064, 13118, 2]
+// Dependencies: [1072, 1256, 5560, 12416, 2]
 // Exports: trackCheckpoint2026CardClicked, trackCheckpoint2026CardShared, trackCheckpoint2026CharacterChoiceSelected, trackCheckpoint2026Closed, trackCheckpoint2026Completed, trackCheckpoint2026GiftCtaClicked, trackCheckpoint2026MuteToggled, trackCheckpoint2026SidekickMessageSent, trackCheckpoint2026Started, trackCheckpoint2026StepViewed
 
-// Module 13117 (Tracking)
+// Module 12415 (Tracking)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6064 */;
-import CheckpointSessionAnalyticsManagerDefault from "CheckpointSessionAnalyticsManager" /* 13118 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5560 */;
+import CheckpointSessionAnalyticsManagerDefault from "CheckpointSessionAnalyticsManager" /* 12416 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

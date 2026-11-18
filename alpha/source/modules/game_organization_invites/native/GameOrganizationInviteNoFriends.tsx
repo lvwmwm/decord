@@ -1,21 +1,21 @@
-// Module ID: 16443
-// Function ID: 16444
+// Module ID: 15110
+// Function ID: 15111
 // Name: GameOrganizationInviteNoFriends
-// Dependencies: [19, 21, 5310, 575, 5546, 5487, 6335, 5923, 1113, 2565, 5930, 2]
+// Dependencies: [19, 21, 4823, 575, 5037, 5000, 5837, 5414, 1113, 2555, 5421, 2]
 // Exports: default
 
-// Module 16443 (GameOrganizationInviteNoFriends)
+// Module 15110 (GameOrganizationInviteNoFriends)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import _modDef2565 from "module_2565" /* 2565 */;
-import RootNavigationRef from "RootNavigationRef" /* 5487 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
-import Text_Text from "Text/Text" /* 5923 */;
-import components_Button_Button from "components/Button/Button" /* 5930 */;
-import Stack_Stack from "Stack/Stack" /* 6335 */;
+import _modDef2555 from "module_2555" /* 2555 */;
+import RootNavigationRef from "RootNavigationRef" /* 5000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
+import Text_Text from "Text/Text" /* 5414 */;
+import components_Button_Button from "components/Button/Button" /* 5421 */;
+import Stack_Stack from "Stack/Stack" /* 5837 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -49,16 +49,16 @@ export default function GameOrganizationInviteNoFriends(noun) {
   const Stack = Stack_Stack.Stack;
   const obj2 = { spacing: nativeDefault.space.PX_8, children: items };
   const Stack2 = Stack_Stack.Stack;
-  const obj3 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: tmp.centeredText, children: intl.string(_modDef2565["3qrm/9"]) };
+  const obj3 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: tmp.centeredText, children: intl.string(_modDef2555["3qrm/9"]) };
   const Heading = Text_Text.Heading;
   intl = intl4.intl;
   items = [_false(Heading, obj3), ];
-  const obj4 = { variant: "body-md/medium", color: "text-muted", style: tmp.centeredText, children: intl2.formatToPlainString(_modDef2565["NyR+6P"], { noun }) };
+  const obj4 = { variant: "body-md/medium", color: "text-muted", style: tmp.centeredText, children: intl2.formatToPlainString(_modDef2555["NyR+6P"], { noun }) };
   const Text = Text_Text.Text;
   intl2 = intl4.intl;
   items[1] = _false(Text, obj4);
   items1 = [React3(Stack2, obj2), ];
-  const obj5 = { text: intl3.string(_modDef2565.kdLF2T), onPress: handleAddFriends };
+  const obj5 = { text: intl3.string(_modDef2555.kdLF2T), onPress: handleAddFriends };
   const Button = components_Button_Button.Button;
   intl3 = intl4.intl;
   items1[1] = _false(Button, obj5);

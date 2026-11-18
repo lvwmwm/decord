@@ -1,11 +1,11 @@
-// Module ID: 6101
-// Function ID: 6102
+// Module ID: 5597
+// Function ID: 5598
 // Name: Camera
-// Dependencies: [19, 21, 6097, 2]
+// Dependencies: [19, 21, 5593, 2]
 
-// Module 6101 (Camera)
+// Module 5597 (Camera)
 import Fragment from "Fragment" /* 21 */;
-import VideoDefault from "Video" /* 6097 */;
+import VideoDefault from "Video" /* 5593 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 

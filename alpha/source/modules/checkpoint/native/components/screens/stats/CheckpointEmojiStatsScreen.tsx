@@ -1,20 +1,20 @@
-// Module ID: 13385
-// Function ID: 13386
+// Module ID: 12688
+// Function ID: 12689
 // Name: CheckpointEmojiStatsScreen
-// Dependencies: [32, 19, 17, 5311, 13119, 6375, 21, 5310, 575, 1380, 13350, 1496, 13136, 504, 6745, 13353, 13386, 1113, 3287, 3319, 13387, 13147, 13389, 13137, 13371, 13373, 13372, 13374, 1414, 1345, 13356, 7904, 2]
+// Dependencies: [32, 19, 17, 4824, 12417, 5877, 21, 4823, 575, 1380, 12654, 1496, 12434, 504, 6247, 12464, 12689, 1113, 3307, 3339, 12690, 12445, 12692, 12435, 12674, 12676, 12675, 12677, 1414, 1345, 12659, 7407, 2]
 // Exports: default
 
-// Module 13385 (CheckpointEmojiStatsScreen)
+// Module 12688 (CheckpointEmojiStatsScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useIsCheckpointWide from "useIsCheckpointWide" /* 13350 */;
+import useIsCheckpointWide from "useIsCheckpointWide" /* 12654 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5311 */;
-import CheckpointStore from "CheckpointStore" /* 13119 */;
-import CheckpointConstants from "CheckpointConstants" /* 6375 */;
+import AccessibilityStore from "AccessibilityStore" /* 4824 */;
+import CheckpointStore from "CheckpointStore" /* 12417 */;
+import CheckpointConstants from "CheckpointConstants" /* 5877 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1380 */;
 import size from "module_2" /* 2 */;
 

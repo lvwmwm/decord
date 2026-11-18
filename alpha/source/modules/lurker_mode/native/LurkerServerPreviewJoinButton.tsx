@@ -1,16 +1,16 @@
-// Module ID: 18915
-// Function ID: 18916
+// Module ID: 17728
+// Function ID: 17729
 // Name: LurkerServerPreviewJoinButton
-// Dependencies: [5, 32, 19, 5159, 5243, 1072, 21, 13813, 1196, 6915, 6920, 5930, 1113, 2]
+// Dependencies: [5, 32, 19, 4672, 4756, 1072, 21, 13120, 1196, 6419, 6424, 5421, 1113, 2]
 
-// Module 18915 (LurkerServerPreviewJoinButton)
+// Module 17728 (LurkerServerPreviewJoinButton)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5159 */;
-import LurkingStore from "LurkingStore" /* 5243 */;
+import ChannelStore from "ChannelStore" /* 4672 */;
+import LurkingStore from "LurkingStore" /* 4756 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;

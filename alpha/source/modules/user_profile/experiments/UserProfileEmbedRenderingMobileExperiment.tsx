@@ -1,10 +1,10 @@
-// Module ID: 15617
-// Function ID: 15618
+// Module ID: 12182
+// Function ID: 12183
 // Name: UserProfileEmbedRenderingMobileExperiment
 // Dependencies: [1452, 2]
 // Exports: getIsUserProfileEmbedRenderingMobileEnabled
 
-// Module 15617 (UserProfileEmbedRenderingMobileExperiment)
+// Module 12182 (UserProfileEmbedRenderingMobileExperiment)
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 

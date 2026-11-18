@@ -1,37 +1,37 @@
-// Module ID: 20039
-// Function ID: 20040
+// Module ID: 19310
+// Function ID: 19311
 // Name: VoicePanelTitleButton
-// Dependencies: [19, 17, 2165, 5164, 5159, 5977, 21, 5310, 575, 15120, 1113, 5931, 7916, 504, 5948, 10308, 8008, 12427, 6349, 20040, 6335, 8049, 19987, 20037, 6947, 6941, 11689, 5923, 7446, 11533, 11586, 8029, 11276, 1093, 20036, 19239, 2]
+// Dependencies: [19, 17, 2165, 4677, 4672, 5473, 21, 4823, 575, 13746, 1113, 5422, 7419, 504, 5439, 9589, 7511, 11709, 5851, 19311, 5837, 7552, 19258, 19308, 6451, 6445, 10971, 5414, 6949, 10815, 10868, 7532, 10558, 1093, 19307, 18052, 2]
 
-// Module 20039 (VoicePanelTitleButton)
+// Module 19310 (VoicePanelTitleButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5923 */;
-import BaseTextButton from "BaseTextButton" /* 5931 */;
-import useChannelNameDefault from "useChannelName" /* 5948 */;
-import CallConstants from "CallConstants" /* 5977 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6349 */;
-import StageChannelParticipants from "StageChannelParticipants" /* 6941 */;
-import StageChannelParticipantStoreHooks from "StageChannelParticipantStoreHooks" /* 6947 */;
-import GroupIcon2 from "GroupIcon" /* 7446 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7916 */;
-import native from "native" /* 8008 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 8049 */;
-import useStageSummaryDefault from "useStageSummary" /* 11586 */;
-import MicrophoneIcon2 from "MicrophoneIcon" /* 11689 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 12427 */;
-import ShieldLockIcon2 from "ShieldLockIcon" /* 15120 */;
-import VoicePanelSettingsActionCreators from "VoicePanelSettingsActionCreators" /* 19239 */;
-import QuestActivityButtonDefault from "QuestActivityButton" /* 19987 */;
-import VoicePanelHeaderUserState from "VoicePanelHeaderUserState" /* 20037 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 20040 */;
+import Text_Text from "Text/Text" /* 5414 */;
+import BaseTextButton from "BaseTextButton" /* 5422 */;
+import useChannelNameDefault from "useChannelName" /* 5439 */;
+import CallConstants from "CallConstants" /* 5473 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5851 */;
+import StageChannelParticipants from "StageChannelParticipants" /* 6445 */;
+import StageChannelParticipantStoreHooks from "StageChannelParticipantStoreHooks" /* 6451 */;
+import GroupIcon2 from "GroupIcon" /* 6949 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7419 */;
+import native from "native" /* 7511 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 7552 */;
+import useStageSummaryDefault from "useStageSummary" /* 10868 */;
+import MicrophoneIcon2 from "MicrophoneIcon" /* 10971 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11709 */;
+import ShieldLockIcon2 from "ShieldLockIcon" /* 13746 */;
+import VoicePanelSettingsActionCreators from "VoicePanelSettingsActionCreators" /* 18052 */;
+import QuestActivityButtonDefault from "QuestActivityButton" /* 19258 */;
+import VoicePanelHeaderUserState from "VoicePanelHeaderUserState" /* 19308 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 19311 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
-import StageInstanceStore from "StageInstanceStore" /* 5164 */;
-import ChannelStore from "ChannelStore" /* 5159 */;
+import StageInstanceStore from "StageInstanceStore" /* 4677 */;
+import ChannelStore from "ChannelStore" /* 4672 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let id;
@@ -42,7 +42,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp5;
-const AssetRegistryDefault2 = tmp5(8029);
+const AssetRegistryDefault2 = tmp5(7532);
 function ChannelButtonIcons() {
   let intl;
   let items;
@@ -65,10 +65,10 @@ function ChannelButton(channelId) {
   const obj = channelId(504);
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channelId));
   let str = useChannelNameDefault(stateFromStores);
-  const obj2 = channelId(10308);
+  const obj2 = channelId(9589);
   const isCallSecureFramesVerified = obj2.useIsCallSecureFramesVerified({ channelId });
   const obj3 = { accessibilityRole: "button", accessibilityHint: intl.string(channelId(1113).t["Y2b7+e"]), text: str, icon: tmp3Result, iconOpticalOffsetMargin: -nativeDefault.space.PX_4, iconPosition: "end", onPress, maxFontSizeMultiplier: 2 };
-  const HeaderButton = channelId(8008).HeaderButton;
+  const HeaderButton = channelId(7511).HeaderButton;
   intl = channelId(1113).intl;
   if (str == null) {
     str = "???";
@@ -76,7 +76,7 @@ function ChannelButton(channelId) {
   if (isCallSecureFramesVerified) {
     tmp3Result = tmp5(ChannelButtonIcons, {});
   } else {
-    tmp3Result = tmp3(7916);
+    tmp3Result = tmp3(7419);
   }
   return closure_9(HeaderButton, obj3);
 }
@@ -108,9 +108,9 @@ function ActivityButton(participant) {
   const obj = participant(504);
   const stateFromStores = obj.useStateFromStores(items, () => ApplicationStore.getApplication(participant.applicationId));
   const obj2 = { direction: "horizontal", spacing: nativeDefault.space.PX_8, children: items1 };
-  const Stack = participant(6335).Stack;
+  const Stack = participant(5837).Stack;
   const obj3 = { accessibilityRole: "button", accessibilityHint: intl.string(participant(1113).t["Y2b7+e"]), text: str, icon: AssetRegistryDefault3, iconPosition: "start", onPress, shrink: true };
-  const HeaderButton = participant(8008).HeaderButton;
+  const HeaderButton = participant(7511).HeaderButton;
   intl = participant(1113).intl;
   str = undefined;
   const tmp3 = closure_10;
@@ -185,7 +185,7 @@ function StageButton(channelId) {
   const obj2 = channelId(504);
   const stateFromStores1 = obj2.useStateFromStores(items2, () => ChannelStore.getChannel(channelId));
   const tmp6 = useChannelNameDefault(stateFromStores1);
-  const obj3 = channelId(11533);
+  const obj3 = channelId(10815);
   const isStageUnifiedCall = obj3.useIsStageUnifiedCall(stateFromStores1, "VoicePanelTitleButton");
   let topic;
   const tmp8 = useStageSummaryDefault(channelId);
@@ -199,7 +199,7 @@ function StageButton(channelId) {
     const intl = tmp(1113).intl;
     topic = intl.string(tmp(1113).t.zLZPmk);
   }
-  const HeaderButton = tmp(8008).HeaderButton;
+  const HeaderButton = tmp(7511).HeaderButton;
   if (isStageUnifiedCall) {
     const obj4 = { accessibilityRole: "button", accessibilityHint: intl3.string(channelId(1113).t["Y2b7+e"]), accessibilityLabel: "" + topic + ", " + tmp8, text: topic, icon: closure_9(StageCounts, obj5), iconPosition: "end", onPress, shrink: true };
     intl3 = tmp(1113).intl;
@@ -226,11 +226,11 @@ const memoResult = react.memo(function VoicePanelTitleButton() {
   let channelId;
   let channelType;
   let focused;
-  const context = react.useContext(channelId(12427));
+  const context = react.useContext(channelId(11709));
   const guildId = context.guildId;
   channelId = context.channelId;
   ({ channelType, focused } = context);
-  let obj = guildId(11276);
+  let obj = guildId(10558);
   const derivedStateFromSharedValue = obj.useDerivedStateFromSharedValue(focused, (id) => {
     id = undefined;
     if (id != null) {
@@ -239,7 +239,7 @@ const memoResult = react.memo(function VoicePanelTitleButton() {
     return id;
   });
   const GUILD_STAGE_VOICE = guildId(1093).ChannelTypes.GUILD_STAGE_VOICE;
-  const tmp3 = channelId(20036)(derivedStateFromSharedValue, channelId, guildId);
+  const tmp3 = channelId(19307)(derivedStateFromSharedValue, channelId, guildId);
   const items = [guildId, channelId];
   const onPress = react.useCallback(() => {
     const obj = VoicePanelSettingsActionCreators;

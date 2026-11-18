@@ -1,16 +1,15 @@
-// Module ID: 5518
-// Function ID: 5519
+// Module ID: 8244
+// Function ID: 8245
 // Name: GuildPowerupsConstants
-// Dependencies: [1390, 1072, 5519, 5521, 5143, 1113, 5522, 5523, 5536, 2]
+// Dependencies: [1390, 1072, 8245, 7912, 4656, 1113, 6799, 2]
 // Exports: GUILD_FEATURE_TO_PERK
 
-// Module 5518 (GuildPowerupsConstants)
+// Module 8244 (GuildPowerupsConstants)
 import intl15 from "intl" /* 1113 */;
-import dismissible_content from "dismissible_content" /* 5143 */;
-import GameServerConstants from "GameServerConstants" /* 5519 */;
-import Powerups from "Powerups" /* 5521 */;
-import ServerThemeUserExperiment from "ServerThemeUserExperiment" /* 5522 */;
-import GameServerExperiment from "GameServerExperiment" /* 5536 */;
+import dismissible_content from "dismissible_content" /* 4656 */;
+import GameServerExperiment from "GameServerExperiment" /* 6799 */;
+import Powerups from "Powerups" /* 7912 */;
+import GameServerConstants from "GameServerConstants" /* 8245 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -23,8 +22,6 @@ let TIER_3;
 let TIER_32;
 let c2;
 let c3;
-let tmp;
-const ServerThemeExperiment = tmp(5523);
 ({ BoostedGuildFeatures: c2, PerkIcons: c3 } = PremiumConstants);
 const BoostedGuildTiers = Constants.BoostedGuildTiers;
 const GuildFeatures = Constants.GuildFeatures;
@@ -61,14 +58,8 @@ items11[1] = Powerups.GUILD_POWERUP_TAG_SKU_ID;
 let obj4 = { boostPrice: 5, includedInLevel: BoostedGuildTiers.TIER_3 };
 let obj5 = {
   boostPrice: 3,
-  isEnabled(guildId) {
-    const obj = ServerThemeUserExperiment;
-    let serverThemeUserEnabled = obj.getServerThemeUserEnabled("GuildPowerupsConstants");
-    if (serverThemeUserEnabled) {
-      const tmpResult = ServerThemeExperiment;
-      serverThemeUserEnabled = tmpResult.getServerThemeEnabled(guildId, "GuildPowerupsConstants");
-    }
-    return serverThemeUserEnabled;
+  isEnabled() {
+    return false;
   }
 };
 let obj6 = {

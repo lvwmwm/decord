@@ -1,15 +1,15 @@
-// Module ID: 12582
-// Function ID: 12583
+// Module ID: 11865
+// Function ID: 11866
 // Name: GiftCodeStore
-// Dependencies: [10090, 502, 1072, 5154, 2169, 6753, 12583, 504, 572, 2]
+// Dependencies: [9372, 502, 1072, 4667, 2169, 6255, 11866, 504, 572, 2]
 
-// Module 12582 (GiftCodeStore)
+// Module 11865 (GiftCodeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import _modDef2169 from "module_2169" /* 2169 */;
-import GiftCodeUtils from "GiftCodeUtils" /* 6753 */;
-import GiftCodeActionCreatorsDefault from "GiftCodeActionCreators" /* 12583 */;
-import GiftCodeRecord from "GiftCodeRecord" /* 10090 */;
+import GiftCodeUtils from "GiftCodeUtils" /* 6255 */;
+import GiftCodeActionCreatorsDefault from "GiftCodeActionCreators" /* 11866 */;
+import GiftCodeRecord from "GiftCodeRecord" /* 9372 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -22,7 +22,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 function updateGiftCode(giftCode) {
-  const f105511 = () => {
+  const f102223 = () => {
     let closure_0 = code;
     const value = map.get(code);
     const obj = map;
@@ -38,7 +38,7 @@ function updateGiftCode(giftCode) {
           giftCodeStore.emitChange();
         } else if (null != closure_9[code]) {
           const _Math = Math;
-          closure_9[code].start(Math.min(metroRequire, diff), f105511);
+          closure_9[code].start(Math.min(metroRequire, diff), f102223);
         }
       }
     }
@@ -59,7 +59,7 @@ function updateGiftCode(giftCode) {
     if (null != fromServer.expiresAt) {
       const self = this;
       const self2 = this;
-      const timeout = new code(5154).Timeout();
+      const timeout = new code(4667).Timeout();
       closure_9[code] = timeout;
       const value2 = obj2.get(code);
       if (null != value2) {
@@ -76,7 +76,7 @@ function updateGiftCode(giftCode) {
             let obj3 = tmp11[code];
             if (null != obj3) {
               let _Math = Math;
-              obj3.start(Math.min(closure_6, diff), f105511);
+              obj3.start(Math.min(closure_6, diff), f102223);
             }
           }
         }
@@ -271,6 +271,7 @@ let obj = {
       items = [];
       items[HermesBuiltin.arraySpread(items, items, 0)] = giftCode.code;
     }
+    delete closure_16[giftCode.code];
     updateGiftCode(giftCode);
   },
   GIFT_CODE_RESOLVE_FAILURE: function handleGiftCodeResolveFailure(code) {

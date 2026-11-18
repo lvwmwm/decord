@@ -17,7 +17,7 @@ let c3, sourceLocationStack;
 let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
-function transitionTo(CHANNELResult, source) {
+function transitionTo(CHANNELResult, transitionExtras) {
   let closure_0 = CHANNELResult;
   let flag = !(typeof CHANNELResult !== "string" || !items.some((item) => closure_0.startsWith(item)));
   const tmp = typeof CHANNELResult !== "string" || !items.some((item) => closure_0.startsWith(item));
@@ -44,16 +44,16 @@ function transitionTo(CHANNELResult, source) {
     const uRL = new URL(CHANNELResult, "https:" + window.GLOBAL_ENV.WEBAPP_ENDPOINT);
     const obj = { pathname: null, search: null, hash: null };
     ({ pathname: obj.pathname, search: obj.search, hash: obj.hash } = uRL);
-    const merged = Object.assign(source);
+    const merged = Object.assign(transitionExtras);
     const _HermesInternal3 = HermesInternal;
     logger.log("transitionTo - Transitioning to " + CHANNELResult);
-    source = undefined;
-    if (source != null) {
-      source = source.source;
+    let source;
+    if (transitionExtras != null) {
+      source = transitionExtras.source;
     }
     sourceLocationStack = undefined;
-    if (source != null) {
-      sourceLocationStack = source.sourceLocationStack;
+    if (transitionExtras != null) {
+      sourceLocationStack = transitionExtras.sourceLocationStack;
     }
     const _location2 = module_1100.location;
     let tmp22 = _location2.pathname === obj.pathname;
@@ -97,7 +97,7 @@ function transitionTo(CHANNELResult, source) {
     }
     if (tmp22) {
       const replaced = str7.replace(obj);
-    } else if (null == source) {
+    } else if (null == transitionExtras) {
       module_1100.push(CHANNELResult);
     } else {
       module_1100.push(obj);
@@ -132,10 +132,10 @@ export function shouldNavigate() {
   return !ComponentDispatch.hasSubscribers(metroImportDefault.MODAL_CLOSE);
 }
 export { transitionTo };
-export function transitionToGuild(guildId, channelId, messageId, source) {
+export function transitionToGuild(guildId, channelId, messageId, transitionExtras) {
   const obj = { guildId, channelId, messageId };
   logger.log("transitionToGuild - Transitioning to " + JSON.stringify(obj));
-  transitionTo(hasOwnProperty.CHANNEL(guildId, channelId, messageId), source);
+  transitionTo(hasOwnProperty.CHANNEL(guildId, channelId, messageId), transitionExtras);
 }
 export function currentRouteHasBackNavigation() {
   let hasItem = null != c3;

@@ -1,24 +1,24 @@
-// Module ID: 8043
-// Function ID: 8044
+// Module ID: 7546
+// Function ID: 7547
 // Name: EditGuildEventChannelSelection
-// Dependencies: [19, 17, 5242, 5252, 1388, 7037, 1072, 21, 5310, 8039, 8022, 5948, 504, 8044, 8024, 8025, 1113, 5923, 7453, 2020, 8113, 8000, 5546, 8020, 2121, 1187, 8021, 2]
+// Dependencies: [19, 17, 4755, 4765, 1388, 6541, 1072, 21, 4823, 7542, 7525, 5439, 504, 7547, 7527, 7528, 1113, 5414, 6956, 2020, 7616, 7503, 5037, 7523, 2121, 1187, 7524, 2]
 // Exports: default
 
-// Module 8043 (EditGuildEventChannelSelection)
+// Module 7546 (EditGuildEventChannelSelection)
 import react_native from "react-native" /* 17 */;
 import intl3 from "intl" /* 1113 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 2020 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
-import StageChannelUpsellDefault from "StageChannelUpsell" /* 8113 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
+import StageChannelUpsellDefault from "StageChannelUpsell" /* 7616 */;
 import react from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 5242 */;
-import RelationshipStore from "RelationshipStore" /* 5252 */;
+import PermissionStore from "PermissionStore" /* 4755 */;
+import RelationshipStore from "RelationshipStore" /* 4765 */;
 import UserStore from "UserStore" /* 1388 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7037 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6541 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let constants;
@@ -58,11 +58,11 @@ export default function EditGuildEventChannelSelection(guild) {
   let closure_5 = tmp2;
   let tmp3 = guild;
   let tmp4 = dependencyMap;
-  let obj = guild(8039);
+  let obj = guild(7542);
   let closure_6 = obj.useGetEventChannelsByType(guild.id, channelType);
-  let obj2 = guild(8022);
+  let obj2 = guild(7525);
   const length = obj2.useChannelsUserCanStartStageIn(guild);
-  const tmp6 = channel(5948)(channel);
+  const tmp6 = channel(5439)(channel);
   let obj3 = guild(504);
   const items = [closure_5];
   let closure_8 = obj3.useStateFromStores(items, () => PermissionStore.can(constants.MANAGE_CHANNELS, guild));
@@ -71,16 +71,16 @@ export default function EditGuildEventChannelSelection(guild) {
   const obj4 = guild(504);
   constants = obj4.useStateFromStores(items1, () => GuildScheduledEventStore.getGuildScheduledEvent(guildEventId), items2);
   if (null != channel) {
-    const tmp3Result = tmp3(8044);
+    const tmp3Result = tmp3(7547);
     channelIcon = tmp3Result.getChannelIcon(channel);
   } else {
-    channelIcon = tmp5(8024);
+    channelIcon = tmp5(7527);
   }
   if (null != channel) {
-    const tmp3Result2 = tmp3(8044);
+    const tmp3Result2 = tmp3(7547);
     LocationIcon = tmp3Result2.getChannelIconComponent(channel);
   } else {
-    LocationIcon = tmp3(8025).LocationIcon;
+    LocationIcon = tmp3(7528).LocationIcon;
   }
   let intl = tmp3(1113).intl;
   let string = intl.string;
@@ -96,7 +96,7 @@ export default function EditGuildEventChannelSelection(guild) {
   let tmp10 = View;
   items4 = [, ];
   const obj6 = { style: tmp.channelTypeText, variant: "body-sm/semibold", color: "text-subtle", children: stringResult };
-  items4[0] = closure_11(tmp3(5923).Heading, obj6);
+  items4[0] = closure_11(tmp3(5414).Heading, obj6);
   const obj7 = {
     start: true,
     end: true,
@@ -137,7 +137,7 @@ export default function EditGuildEventChannelSelection(guild) {
       }
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
       ActionSheetActionCreatorsDefault;
-      const tmp10 = asyncRequire(8020, tmp.paths);
+      const tmp10 = asyncRequire(7523, tmp.paths);
       const intl = intl3.intl;
       const string = intl.string;
       const t = intl3.t;
@@ -169,11 +169,11 @@ export default function EditGuildEventChannelSelection(guild) {
       openLazy(tmp10, "SelectUpdatesChannel", obj3);
     },
     icon: tmp11Result,
-    label: closure_11(tmp3(5923).Text, { variant: "body-md/medium", color: "interactive-text-active", children: tmp6 }),
+    label: closure_11(tmp3(5414).Text, { variant: "body-md/medium", color: "interactive-text-active", children: tmp6 }),
     trailing: closure_11(Icon, obj9),
     arrow: false
   };
-  const TableRow = tmp3(7453).TableRow;
+  const TableRow = tmp3(6956).TableRow;
   intl2 = tmp3(1113).intl;
   tmp12 = tmp6;
   if (null != LocationIcon) {
@@ -182,7 +182,7 @@ export default function EditGuildEventChannelSelection(guild) {
     const obj8 = { source: channelIcon };
     tmp11Result = tmp11(tmp3(1187).Icon, obj8);
   }
-  obj9 = { source: channel(8021) };
+  obj9 = { source: channel(7524) };
   Icon = tmp3(1187).Icon;
   items4[1] = closure_11(TableRow, obj7);
   return tmp9(tmp10, obj5);

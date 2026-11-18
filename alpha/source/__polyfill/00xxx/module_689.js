@@ -9,7 +9,7 @@ import SDK_VERSION3 from "SDK_VERSION" /* 690 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export function getGlobalSingleton(arg0, fn) {
+export function getGlobalSingleton(clientToLogBufferMap, fn) {
   let GLOBAL_OBJ = arg2;
   if (arg2 === undefined) {
     GLOBAL_OBJ = _mod685.GLOBAL_OBJ;
@@ -19,10 +19,10 @@ export function getGlobalSingleton(arg0, fn) {
   const SDK_VERSION = SDK_VERSION3.SDK_VERSION;
   const tmp4 = tmp3[SDK_VERSION3.SDK_VERSION] || {};
   tmp3[SDK_VERSION] = tmp4;
-  let tmp5 = tmp4[arg0];
+  let tmp5 = tmp4[clientToLogBufferMap];
   if (!tmp5) {
     const tmp7 = fn();
-    tmp4[arg0] = tmp7;
+    tmp4[clientToLogBufferMap] = tmp7;
     tmp5 = tmp7;
   }
   return tmp5;
@@ -38,9 +38,9 @@ export function getMainCarrier() {
   tmp3[SDK_VERSION3.SDK_VERSION] || {};
   return _mod685.GLOBAL_OBJ;
 }
-export function getSentryCarrier(__SENTRY__) {
-  const tmp = __SENTRY__.__SENTRY__ || {};
-  __SENTRY__.__SENTRY__ = tmp;
+export function getSentryCarrier(mainCarrier) {
+  const tmp = mainCarrier.__SENTRY__ || {};
+  mainCarrier.__SENTRY__ = tmp;
   const SDK_VERSION = tmp.version || SDK_VERSION3.SDK_VERSION;
   tmp.version = SDK_VERSION;
   const SDK_VERSION2 = SDK_VERSION3.SDK_VERSION;

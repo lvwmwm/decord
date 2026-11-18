@@ -1,35 +1,35 @@
-// Module ID: 15051
-// Function ID: 15052
+// Module ID: 18732
+// Function ID: 18733
 // Name: ConjureDebugLabels
-// Dependencies: [1113, 4133, 15052, 2]
+// Dependencies: [1113, 4121, 18733, 2]
 // Exports: analyticsMemoryValue, analyticsRoleLabel, analyticsUnavailableReason, debugEnvLabel, debugLogFilterLabel, debugYesNo, filterDebugLogs, forceCompactionStatus, isRenderableLog, sandboxRestartStatus
 
-// Module 15051 (ConjureDebugLabels)
+// Module 18732 (ConjureDebugLabels)
 import intl6 from "intl" /* 1113 */;
-import _modDef4133 from "module_4133" /* 4133 */;
-import ConjureDebugFormat from "ConjureDebugFormat" /* 15052 */;
+import _modDef4121 from "module_4121" /* 4121 */;
+import ConjureDebugFormat from "ConjureDebugFormat" /* 18733 */;
 import size from "module_2" /* 2 */;
 
 let log;
 
 let closure_3 = {
   db() {
-    return _modDef4133["7l+DFG"];
+    return _modDef4121["7l+DFG"];
   },
   db_preview() {
-    return _modDef4133.FAuffi;
+    return _modDef4121.FAuffi;
   },
   runtime() {
-    return _modDef4133["Gkl+ab"];
+    return _modDef4121["Gkl+ab"];
   },
   runtime_preview() {
-    return _modDef4133.ynpJzv;
+    return _modDef4121.ynpJzv;
   },
   bot() {
-    return _modDef4133["5/i0cj"];
+    return _modDef4121["5/i0cj"];
   },
   bot_preview() {
-    return _modDef4133.m2jsnw;
+    return _modDef4121.m2jsnw;
   }
 };
 const result = size.fileFinishedImporting("modules/conjure/debug/ConjureDebugLabels.tsx");
@@ -39,16 +39,16 @@ export function debugEnvLabel(env) {
   const intl = intl6.intl;
   const string = intl.string;
   if ("preview" === env) {
-    eiAi57 = _modDef4133["2yLYlG"];
+    eiAi57 = _modDef4121["2yLYlG"];
   } else {
-    eiAi57 = _modDef4133.eiAi57;
+    eiAi57 = _modDef4121.eiAi57;
   }
   return string(eiAi57);
 }
 export function debugYesNo(connected) {
   const intl = intl6.intl;
   const string = intl.string;
-  const tmp = _modDef4133;
+  const tmp = _modDef4121;
   return string(connected ? tmp.Wv025I : tmp["7/lsFY"]);
 }
 export const DEBUG_LOG_FILTERS = ["all", "preview", "stable", "web"];
@@ -58,19 +58,19 @@ export function debugLogFilterLabel(id) {
     if ("stable" !== id) {
       if ("web" === id) {
         const intl2 = intl6.intl;
-        return intl2.string(_modDef4133.IVzfVV);
+        return intl2.string(_modDef4121.IVzfVV);
       } else {
         const intl = intl6.intl;
-        return intl.string(_modDef4133["Um1/8L"]);
+        return intl.string(_modDef4121["Um1/8L"]);
       }
     }
   }
   const intl3 = intl6.intl;
   const string = intl3.string;
   if ("preview" === id) {
-    eiAi57 = _modDef4133["2yLYlG"];
+    eiAi57 = _modDef4121["2yLYlG"];
   } else {
-    eiAi57 = _modDef4133.eiAi57;
+    eiAi57 = _modDef4121.eiAi57;
   }
   return string(eiAi57);
 }
@@ -139,25 +139,25 @@ export function filterDebugLogs(stateFromStores, arg1, first1) {
 export function forceCompactionStatus(forceState) {
   if ("idle" === forceState) {
     const intl4 = intl6.intl;
-    return intl4.string(_modDef4133.wox6Ev);
+    return intl4.string(_modDef4121.wox6Ev);
   } else if ("pending" === forceState) {
     const intl3 = intl6.intl;
-    return intl3.string(_modDef4133.OcPHQ1);
+    return intl3.string(_modDef4121.OcPHQ1);
   } else {
     const obj3 = ConjureDebugFormat;
     const formatObservedAtResult = obj3.formatObservedAt(forceState.observedAt);
     if ("compacted" === forceState.outcome) {
       const intl2 = tmp12(1113).intl;
       const obj2 = { time: formatObservedAtResult };
-      return intl2.formatToPlainString(_modDef4133.BhRjZZ, obj2);
+      return intl2.formatToPlainString(_modDef4121.BhRjZZ, obj2);
     } else {
       let ZoUSVK;
       if ("declined" === forceState.outcome) {
-        ZoUSVK = _modDef4133["o/FKzF"];
+        ZoUSVK = _modDef4121["o/FKzF"];
       } else if ("busy" === forceState.outcome) {
-        ZoUSVK = _modDef4133.YZb4hK;
+        ZoUSVK = _modDef4121.YZb4hK;
       } else {
-        ZoUSVK = _modDef4133.ZoUSVK;
+        ZoUSVK = _modDef4121.ZoUSVK;
       }
       const intl = tmp12(1113).intl;
       let str2 = forceState.reason;
@@ -174,22 +174,22 @@ export function analyticsUnavailableReason(analytics) {
   const reason = analytics.reason;
   if ("local" === reason) {
     const intl5 = intl6.intl;
-    return intl5.string(_modDef4133.mUeKML);
+    return intl5.string(_modDef4121.mUeKML);
   } else if ("unconfigured" === reason) {
     const intl4 = intl6.intl;
-    return intl4.string(_modDef4133.bGefb5);
+    return intl4.string(_modDef4121.bGefb5);
   } else if ("unauthorized" === reason) {
     const intl3 = intl6.intl;
-    return intl3.string(_modDef4133.KLx6Bb);
+    return intl3.string(_modDef4121.KLx6Bb);
   } else {
     let formatToPlainStringResult;
     if (null != analytics.detail) {
       const intl2 = intl6.intl;
       const obj = { detail: analytics.detail };
-      formatToPlainStringResult = intl2.formatToPlainString(_modDef4133.t09Q6q, obj);
+      formatToPlainStringResult = intl2.formatToPlainString(_modDef4121.t09Q6q, obj);
     } else {
       const intl = intl6.intl;
-      formatToPlainStringResult = intl.string(_modDef4133["t+tG59"]);
+      formatToPlainStringResult = intl.string(_modDef4121["t+tG59"]);
     }
     return formatToPlainStringResult;
   }
@@ -201,7 +201,7 @@ export function analyticsMemoryValue(found) {
   if (null != found.memory_p50_bytes) {
     const intl = intl6.intl;
     const formatToPlainString = intl.formatToPlainString;
-    const prop = _modDef4133["XO/bN4"];
+    const prop = _modDef4121["XO/bN4"];
     let num = found.memory_p50_bytes;
     const formatBytes = ConjureDebugFormat.formatBytes;
     ConjureDebugFormat;
@@ -210,7 +210,7 @@ export function analyticsMemoryValue(found) {
     }
     const obj = { p50: formatBytes(num), p999: formatBytes2(num2) };
     num2 = found.memory_p999_bytes;
-    formatBytes2 = tmp2(15052).formatBytes;
+    formatBytes2 = tmp2(18733).formatBytes;
     ConjureDebugFormat;
     if (num2 == null) {
       num2 = found.memory_p50_bytes;
@@ -239,10 +239,10 @@ export function analyticsRoleLabel(role) {
 export function sandboxRestartStatus(restartState) {
   if ("idle" === restartState) {
     const intl2 = intl6.intl;
-    return intl2.string(_modDef4133.mlok8D);
+    return intl2.string(_modDef4121.mlok8D);
   } else if ("pending" === restartState) {
     const intl = intl6.intl;
-    return intl.string(_modDef4133["1ugSyK"]);
+    return intl.string(_modDef4121["1ugSyK"]);
   } else {
     let FiVRoT;
     const obj2 = ConjureDebugFormat;
@@ -250,9 +250,9 @@ export function sandboxRestartStatus(restartState) {
     const intl3 = intl6.intl;
     const formatToPlainString = intl3.formatToPlainString;
     if ("restarted" === restartState.outcome) {
-      FiVRoT = _modDef4133["76mfqO"];
+      FiVRoT = _modDef4121["76mfqO"];
     } else {
-      FiVRoT = _modDef4133.FiVRoT;
+      FiVRoT = _modDef4121.FiVRoT;
     }
     let str = restartState.reason;
     if (str == null) {

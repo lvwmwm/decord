@@ -1,10 +1,10 @@
-// Module ID: 11512
-// Function ID: 11513
+// Module ID: 10794
+// Function ID: 10795
 // Name: useEmbeddedActivityBackground
-// Dependencies: [32, 19, 7323, 2]
+// Dependencies: [32, 19, 6828, 2]
 // Exports: default
 
-// Module 11512 (useEmbeddedActivityBackground)
+// Module 10794 (useEmbeddedActivityBackground)
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;

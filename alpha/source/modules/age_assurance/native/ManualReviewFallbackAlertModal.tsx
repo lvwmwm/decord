@@ -1,15 +1,15 @@
-// Module ID: 8413
-// Function ID: 8414
+// Module ID: 7903
+// Function ID: 7904
 // Name: ManualReviewFallbackAlertModal
-// Dependencies: [19, 21, 6272, 1113, 3419, 6272, 8414, 1264, 2]
+// Dependencies: [19, 21, 5774, 1113, 3439, 5774, 7904, 1264, 2]
 // Exports: default
 
-// Module 8413 (ManualReviewFallbackAlertModal)
+// Module 7903 (ManualReviewFallbackAlertModal)
 import intl5 from "intl" /* 1113 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
-import _modDef3419 from "module_3419" /* 3419 */;
-import AlertModal2 from "AlertModal" /* 6272 */;
-import ManualReviewActionCreators from "ManualReviewActionCreators" /* 8414 */;
+import _modDef3439 from "module_3439" /* 3439 */;
+import AlertModal2 from "AlertModal" /* 5774 */;
+import ManualReviewActionCreators from "ManualReviewActionCreators" /* 7904 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -28,7 +28,7 @@ export default function ManualReviewFallbackAlertModal() {
   let items;
   let obj2;
   let obj5;
-  let obj = { title: intl.string(_modDef3419["+c5sxg"]), content: intl2.string(_modDef3419["RFLH++"]), actions: React3(AlertActions, obj2), trackingProps: obj5 };
+  let obj = { title: intl.string(_modDef3439["+c5sxg"]), content: intl2.string(_modDef3439["RFLH++"]), actions: React3(AlertActions, obj2), trackingProps: obj5 };
   const AlertModal = AlertModal2.AlertModal;
   intl = intl5.intl;
   intl2 = intl5.intl;
@@ -40,7 +40,7 @@ export default function ManualReviewFallbackAlertModal() {
   items = [_false(AlertActionButton, obj3, "got-it"), ];
   const obj4 = {
     variant: "secondary",
-    text: intl4.string(_modDef3419.Z61nkt),
+    text: intl4.string(_modDef3439.Z61nkt),
     onPress() {
       const obj = ManualReviewActionCreators;
       return obj.handleManualReviewCta();

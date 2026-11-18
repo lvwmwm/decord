@@ -1,19 +1,19 @@
-// Module ID: 11475
-// Function ID: 11476
+// Module ID: 10757
+// Function ID: 10758
 // Name: PostMessageTransport
-// Dependencies: [5, 32, 5158, 7027, 6759, 1072, 7028, 1089, 11476, 568, 1108, 1256, 5231, 7313, 7029, 11477, 7351, 7030, 7309, 2121, 11479, 11480, 2]
+// Dependencies: [5, 32, 4671, 6531, 6261, 1072, 6532, 1089, 10758, 568, 1108, 1256, 4744, 6818, 6533, 10759, 6856, 6534, 6814, 2121, 10761, 10762, 2]
 
-// Module 11475 (PostMessageTransport)
+// Module 10757 (PostMessageTransport)
 import _mod568 from "module_568" /* 568 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import Constants2 from "Constants" /* 6759 */;
-import FramesConstants from "FramesConstants" /* 7028 */;
-import RPCErrorDefault from "RPCError" /* 7313 */;
-import RPCOpcodesDefault from "RPCOpcodes" /* 11476 */;
+import Constants2 from "Constants" /* 6261 */;
+import FramesConstants from "FramesConstants" /* 6532 */;
+import RPCErrorDefault from "RPCError" /* 6818 */;
+import RPCOpcodesDefault from "RPCOpcodes" /* 10758 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5158 */;
-import FramesStore from "FramesStore" /* 7027 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4671 */;
+import FramesStore from "FramesStore" /* 6531 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -634,10 +634,13 @@ class PostMessageTransport extends EventEmitter {
                                           const obj9 = { value, done: true };
                                           return obj9;
                                         } else if (constants()) {
+                                          const createProxyTicket = ticket(self[16]).createProxyTicket;
+                                          const applicationId = c3.applicationId;
+                                          const tmp26 = ticket(self[16]);
                                           context = 4;
                                           c5 = 1;
-                                          const obj10 = { value: obj4.createProxyTicket(c3.applicationId, postMessageToRPCClient(self[17])(context.surface), context.surface.type), done: false };
-                                          obj4 = ticket(self[16]);
+                                          const obj10 = { value: createProxyTicket(applicationId, obj4.getProxyTicketChannelId(context.surface), context.surface.type), done: false };
+                                          obj4 = ticket(self[17]);
                                           return obj10;
                                         } else {
                                           c3 = 0;

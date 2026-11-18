@@ -1,20 +1,20 @@
-// Module ID: 19224
-// Function ID: 19225
+// Module ID: 18035
+// Function ID: 18036
 // Name: VoicePanelDockSlot
-// Dependencies: [19, 17, 17734, 13936, 21, 12453, 1655, 11276, 12427, 19225, 19227, 19279, 5933, 13448, 12629, 5491, 12448, 504, 2]
+// Dependencies: [19, 17, 16536, 13238, 21, 11735, 1655, 10558, 11709, 18036, 18038, 18093, 5424, 12755, 11914, 5004, 11730, 504, 2]
 
-// Module 19224 (VoicePanelDockSlot)
+// Module 18035 (VoicePanelDockSlot)
 import react_native from "react-native" /* 17 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import useBaseAppContainerDimensionsDefault from "useBaseAppContainerDimensions" /* 5491 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 12427 */;
-import MainTabsNavigatorPanelContextDefault from "MainTabsNavigatorPanelContext" /* 12448 */;
-import VoicePanelSheetMorph from "VoicePanelSheetMorph" /* 12453 */;
-import VoicePanelDockSlotStore from "VoicePanelDockSlotStore" /* 13936 */;
-import VoicePanelDockGlow from "VoicePanelDockGlow" /* 19225 */;
-import useVoicePanelDockMicLiveDefault from "useVoicePanelDockMicLive" /* 19279 */;
+import useBaseAppContainerDimensionsDefault from "useBaseAppContainerDimensions" /* 5004 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11709 */;
+import MainTabsNavigatorPanelContextDefault from "MainTabsNavigatorPanelContext" /* 11730 */;
+import VoicePanelSheetMorph from "VoicePanelSheetMorph" /* 11735 */;
+import VoicePanelDockSlotStore from "VoicePanelDockSlotStore" /* 13238 */;
+import VoicePanelDockGlow from "VoicePanelDockGlow" /* 18036 */;
+import useVoicePanelDockMicLiveDefault from "useVoicePanelDockMicLive" /* 18093 */;
 import react from "react" /* 19 */;
-import QuestDockStore from "QuestDockStore" /* 17734 */;
+import QuestDockStore from "QuestDockStore" /* 16536 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -28,9 +28,9 @@ let tmp3;
 let tmp4;
 let tmp5;
 const _modDef1655 = tmp(1655);
-const spring_spring = tmp(5933);
-const useStateFromSharedValueDefault = tmp(11276);
-const VoicePanelDockDefault = tmp(19227);
+const spring_spring = tmp(5424);
+const useStateFromSharedValueDefault = tmp(10558);
+const VoicePanelDockDefault = tmp(18038);
 function VoicePanelDockSlotDock(micLive) {
   let dockMinimizeProgress;
   let dockTouched;
@@ -344,7 +344,7 @@ function VoicePanelDockSlotContent(width) {
   VoicePanelDockSlotTsx9.__initData = tmp23;
   const animatedStyle = tmpResult4.useAnimatedStyle(VoicePanelDockSlotTsx9);
   const obj4 = { value: memo, children: metroImportDefault(View, obj5) };
-  const Provider = tmp13(12427).Provider;
+  const Provider = tmp13(11709).Provider;
   obj5 = { style: items10, onLayout: callback, accessibilityElementsHidden: !tmp22, importantForAccessibility: str, children: metroImportDefault(VoicePanelDockSlotDock, { micLive: tmp14 }) };
   items10 = [slot.slot, { width }, animatedStyle];
   str = "no-hide-descendants";
@@ -388,33 +388,32 @@ let closure_19 = { code: "(function VoicePanelDockSlotTsx8(){let[withSpring,isQu
 let closure_20 = { code: "(function VoicePanelDockSlotTsx9(){let[dockHeight,sheetExitProgress,questBarHideProgress,dockEntryProgress,isQuestBarExpanded,isDockInLayout,dockTouched]=this.__closure;const height=dockHeight.get();const isLeaving=sheetExitProgress.get()>0;return{height:height,opacity:1-questBarHideProgress.get(),transform:[{translateY:(1-dockEntryProgress.get()+sheetExitProgress.get())*height}],pointerEvents:!isLeaving&&!isQuestBarExpanded&&(isDockInLayout.get()||dockTouched.get())?'box-none':'none'};})" };
 const memoResult = react.memo(function VoicePanelDockSlot(placement) {
   placement = placement.placement;
-  const obj = placement(13448);
+  const obj = placement(12755);
   const isMobileRTCV2Enabled = obj.useIsMobileRTCV2Enabled("VoicePanelDockSlot");
-  const tmp4 = useVoicePanelDockState();
-  const obj2 = placement(12629);
+  const tmp2 = useVoicePanelDockState();
+  const obj2 = placement(11914);
   const drawerWidth = obj2.useDrawerWidth({ whileSliding: "wider" });
   let width = useBaseAppContainerDimensionsDefault().width;
   const isNavigatorPanelsBesideChannelList = react.useContext(MainTabsNavigatorPanelContextDefault).isNavigatorPanelsBesideChannelList;
-  const tmp6 = undefined !== isNavigatorPanelsBesideChannelList && isNavigatorPanelsBesideChannelList;
   placement(504);
   [][0] = placement;
-  let tmp11Result = null;
+  let tmp8Result = null;
   if (isMobileRTCV2Enabled) {
-    tmp11Result = null;
-    if (null != tmp4) {
-      tmp11Result = null;
-      if (tmp6 === "channel-list" === placement) {
-        const obj3 = { dockState: tmp4, width, isQuestBarExpanded: tmp8 };
-        const tmp11 = closure_7;
-        const tmp12 = VoicePanelDockSlotContent;
+    tmp8Result = null;
+    if (null != tmp2) {
+      tmp8Result = null;
+      if (isNavigatorPanelsBesideChannelList === "channel-list" === placement) {
+        const obj3 = { dockState: tmp2, width, isQuestBarExpanded: tmp5 };
+        const tmp8 = closure_7;
+        const tmp9 = VoicePanelDockSlotContent;
         if ("channel-list" === placement) {
           width = drawerWidth;
         }
-        tmp11Result = tmp11(tmp12, obj3, tmp4.channelId);
+        tmp8Result = tmp8(tmp9, obj3, tmp2.channelId);
       }
     }
   }
-  return tmp11Result;
+  return tmp8Result;
 });
 let result = size.fileFinishedImporting("modules/voice_panel/native/dock/VoicePanelDockSlot.tsx");
 

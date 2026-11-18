@@ -1,19 +1,19 @@
-// Module ID: 13898
-// Function ID: 13899
+// Module ID: 13200
+// Function ID: 13201
 // Name: GameMentionSearchBar
-// Dependencies: [19, 17, 21, 5310, 575, 13884, 7448, 5923, 1113, 8117, 2]
+// Dependencies: [19, 17, 21, 4823, 575, 13186, 6951, 5414, 1113, 7620, 2]
 
-// Module 13898 (GameMentionSearchBar)
+// Module 13200 (GameMentionSearchBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5923 */;
-import GameControllerIcon from "GameControllerIcon" /* 7448 */;
-import _mod8117 from "module_8117" /* 8117 */;
-import useGameMentionSearchBarHeight from "useGameMentionSearchBarHeight" /* 13884 */;
+import Text_Text from "Text/Text" /* 5414 */;
+import GameControllerIcon from "GameControllerIcon" /* 6951 */;
+import _mod7620 from "module_7620" /* 7620 */;
+import useGameMentionSearchBarHeight from "useGameMentionSearchBarHeight" /* 13186 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -54,7 +54,7 @@ const memoResult = react.memo(function GameMentionSearchBar() {
   items1[1] = _false(Text2, obj6);
   items2 = [React3(View, obj2), ];
   const obj7 = { style: tmp.divider };
-  items2[1] = _false(_mod8117.FormDivider, obj7);
+  items2[1] = _false(_mod7620.FormDivider, obj7);
   return React3(View, obj);
 });
 const result = size.fileFinishedImporting("modules/game_mentions/native/GameMentionSearchBar.tsx");

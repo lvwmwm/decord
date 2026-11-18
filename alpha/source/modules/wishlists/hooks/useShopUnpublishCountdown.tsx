@@ -1,10 +1,10 @@
-// Module ID: 15891
-// Function ID: 15892
+// Module ID: 14535
+// Function ID: 14536
 // Name: useShopUnpublishCountdown
-// Dependencies: [32, 19, 9495, 2]
+// Dependencies: [32, 19, 8909, 2]
 // Exports: default, useHasShopUnpublishCountdown
 
-// Module 15891 (useShopUnpublishCountdown)
+// Module 14535 (useShopUnpublishCountdown)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -12,7 +12,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-const f112721 = (arg0) => arg0 + 1;
+const f107738 = (arg0) => arg0 + 1;
 let c4 = 2147483647;
 const result = size.fileFinishedImporting("modules/wishlists/hooks/useShopUnpublishCountdown.tsx");
 
@@ -23,7 +23,7 @@ export default function useShopUnpublishCountdown(getTime) {
     flag = true;
   }
   let time;
-  dependencyMap = time(react.useReducer(f112721, 0), 2)[1];
+  dependencyMap = time(react.useReducer(f107738, 0), 2)[1];
   time = undefined;
   const obj = react;
   if (getTime != null) {
@@ -80,7 +80,7 @@ export default function useShopUnpublishCountdown(getTime) {
       return () => clearTimeout(closure_0);
     }
   }, items);
-  const obj2 = flag(9495);
+  const obj2 = flag(8909);
   return obj2.getShopUnpublishCountdown(getTime);
 };
 export function useHasShopUnpublishCountdown(memo1) {
@@ -92,7 +92,7 @@ export function useHasShopUnpublishCountdown(memo1) {
   const nextFutureShopUnpublishedAt = obj.getNextFutureShopUnpublishedAt(memo1);
   _require = false;
   let time;
-  dependencyMap = time(react.useReducer(f112721, 0), 2)[1];
+  dependencyMap = time(react.useReducer(f107738, 0), 2)[1];
   time = undefined;
   const obj3 = react;
   if (nextFutureShopUnpublishedAt != null) {
@@ -149,6 +149,6 @@ export function useHasShopUnpublishCountdown(memo1) {
       return () => clearTimeout(closure_0);
     }
   }, items);
-  const tmpResult = tmp(9495);
+  const tmpResult = tmp(8909);
   return null != tmpResult.getShopUnpublishCountdown(nextFutureShopUnpublishedAt);
 }

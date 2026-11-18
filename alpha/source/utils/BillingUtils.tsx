@@ -1,16 +1,16 @@
-// Module ID: 5122
-// Function ID: 5123
+// Module ID: 4635
+// Function ID: 4636
 // Name: BillingUtils
-// Dependencies: [5, 5123, 1083, 5124, 1242, 1285, 5130, 2]
-// Exports: calculateStandardizedUnits, captureBillingException, captureBillingMessage, createGatewayCheckoutContext, getLocalizedDisplayMonth, isExpectedHttpClientError, isOfTypeStripeError, shouldReportExpressCheckoutError
+// Dependencies: [5, 4636, 1083, 4637, 1242, 1285, 4643, 2]
+// Exports: calculateStandardizedUnits, captureBillingException, captureBillingMessage, createGatewayCheckoutContext, getLocalizedDisplayMonth, isExpectedHttpClientError, isOfTypeStripeError
 
-// Module 5122 (BillingUtils)
+// Module 4635 (BillingUtils)
 import Constants from "Constants" /* 1083 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
-import Constants2 from "Constants" /* 5123 */;
-import BraintreeUtils from "BraintreeUtils" /* 5124 */;
-import BillingErrorDefault from "BillingError" /* 5130 */;
+import Constants2 from "Constants" /* 4636 */;
+import BraintreeUtils from "BraintreeUtils" /* 4637 */;
+import BillingErrorDefault from "BillingError" /* 4643 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -83,7 +83,6 @@ let obj = function _createGatewayCheckoutContext() {
 };
 const StripeErrorTypes = Constants2.StripeErrorTypes;
 const PaymentGateways = Constants.PaymentGateways;
-const set = new Set(["card_error", "api_connection_error", "validation_error"]);
 const result = size.fileFinishedImporting("utils/BillingUtils.tsx");
 
 export function getLocalizedDisplayMonth(arg0, arg1) {
@@ -108,39 +107,17 @@ export function captureBillingException(error, options) {
   const merged1 = Object.assign(tags);
   captureException(error, obj);
 }
-export function isExpectedHttpClientError(status) {
-  let tmp2 = status instanceof HTTPUtils.HTTPResponseError && status.status >= 400 && status.status < 500;
+export function isExpectedHttpClientError(error) {
+  let tmp2 = error instanceof HTTPUtils.HTTPResponseError && error.status >= 400 && error.status < 500;
   if (!tmp2) {
-    tmp2 = status instanceof BillingErrorDefault && null != status.status && status.status >= 400 && status.status < 500;
-    const tmp4 = status instanceof BillingErrorDefault && null != status.status && status.status >= 400 && status.status < 500;
+    tmp2 = error instanceof BillingErrorDefault && null != error.status && error.status >= 400 && error.status < 500;
+    const tmp4 = error instanceof BillingErrorDefault && null != error.status && error.status >= 400 && error.status < 500;
   }
   return tmp2;
 }
 export function isOfTypeStripeError(type) {
   const hasItem = null != type && StripeErrorTypes.includes(type.type);
   return hasItem;
-}
-export function shouldReportExpressCheckoutError(code) {
-  let tmp6;
-  if (code instanceof BillingErrorDefault) {
-    let tmp8 = code.code !== tmp(5130).ErrorCodes.INVALID_PAYMENT_SOURCE;
-    if (tmp8) {
-      let tmp10 = code instanceof HTTPUtils.HTTPResponseError && code.status >= 400 && code.status < 500;
-      if (!tmp10) {
-        tmp10 = code instanceof tmp(5130) && null != code.status && code.status >= 400 && code.status < 500;
-        const tmp11 = code instanceof tmp(5130) && null != code.status && code.status >= 400 && code.status < 500;
-      }
-      tmp8 = !tmp10;
-    }
-    tmp6 = tmp8;
-  } else {
-    const hasItem = null != code && StripeErrorTypes.includes(code.type);
-    tmp6 = !hasItem;
-    if (hasItem) {
-      tmp6 = !set.has(code.type);
-    }
-  }
-  return tmp6;
 }
 export function captureBillingMessage(arg0, tags) {
   let obj2;

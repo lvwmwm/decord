@@ -1,16 +1,16 @@
-// Module ID: 13871
-// Function ID: 13872
+// Module ID: 13178
+// Function ID: 13179
 // Name: TouchableBackground
-// Dependencies: [32, 19, 17, 21, 5310, 575, 2]
+// Dependencies: [32, 19, 17, 21, 4823, 575, 2]
 // Exports: default
 
-// Module 13871 (TouchableBackground)
+// Module 13178 (TouchableBackground)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let c2;

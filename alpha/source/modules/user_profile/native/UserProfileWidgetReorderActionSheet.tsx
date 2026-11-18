@@ -1,31 +1,29 @@
-// Module ID: 17221
-// Function ID: 17222
+// Module ID: 15878
+// Function ID: 15879
 // Name: UserProfileWidgetReorderActionSheet
-// Dependencies: [19, 17, 502, 7365, 21, 5310, 575, 10822, 10885, 10843, 10888, 10845, 10837, 10842, 7269, 11025, 7364, 7367, 504, 11028, 10857, 1113, 2]
+// Dependencies: [19, 17, 502, 6870, 21, 4823, 575, 10116, 10162, 10131, 10165, 10133, 10121, 10130, 6773, 10307, 6869, 504, 10310, 10144, 1113, 2]
 // Exports: default
 
-// Module 17221 (UserProfileWidgetReorderActionSheet)
+// Module 15878 (UserProfileWidgetReorderActionSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7269 */;
-import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7364 */;
-import UserProfileWidgetConstants from "UserProfileWidgetConstants" /* 7365 */;
-import WidgetUtils from "WidgetUtils" /* 10822 */;
-import useGameCoverLayoutDefault from "useGameCoverLayout" /* 10837 */;
-import UserProfileWidgetDraggableCardDefault from "UserProfileWidgetDraggableCard" /* 10842 */;
-import UserProfileWidgetGameCoverDefault from "UserProfileWidgetGameCover" /* 10845 */;
-import UserProfileReorderActionSheetDefault from "UserProfileReorderActionSheet" /* 10857 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 6773 */;
+import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 6869 */;
+import UserProfileWidgetConstants from "UserProfileWidgetConstants" /* 6870 */;
+import WidgetUtils from "WidgetUtils" /* 10116 */;
+import useGameCoverLayoutDefault from "useGameCoverLayout" /* 10121 */;
+import UserProfileWidgetDraggableCardDefault from "UserProfileWidgetDraggableCard" /* 10130 */;
+import UserProfileWidgetGameCoverDefault from "UserProfileWidgetGameCover" /* 10133 */;
+import UserProfileReorderActionSheetDefault from "UserProfileReorderActionSheet" /* 10144 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
-let tmp;
 let tmp4;
-const UserProfileApplicationWidgetTypes = tmp(7367);
-const UserProfileApplicationWidgetIconDefault = tmp4(11025);
+const UserProfileApplicationWidgetIconDefault = tmp4(10307);
 function CompactGameWidgetContent(userId) {
   let columns;
   let coverWidth;
@@ -97,20 +95,18 @@ let obj = { list: obj2 };
 obj2 = { gap: nativeDefault.space.PX_16 };
 let closure_8 = createStyles.createStyles(obj);
 let closure_12 = react.memo(function CompactWidgetRenderer(widget) {
-  let tmp3Result;
+  let tmpResult;
   widget = widget.widget;
   const userId = widget.userId;
   const obj = UserProfileGameWidgetTypes;
   if (obj.isGameWidget(widget)) {
-    tmp3Result = <CompactGameWidget userId={userId} widget={widget} />;
-  } else if (widget instanceof UserProfileApplicationWidgetTypes.ApplicationWidget) {
-    const obj3 = { widget };
-    tmp3Result = tmp3(CompactApplicationWidget, obj3);
+    const obj2 = { userId, widget };
+    tmpResult = tmp(CompactGameWidget, obj2);
   } else {
-    const obj4 = { title: widget.header };
-    tmp3Result = tmp3(UserProfileWidgetDraggableCardDefault, obj4);
+    const obj3 = { widget };
+    tmpResult = tmp(CompactApplicationWidget, obj3);
   }
-  return tmp3Result;
+  return tmpResult;
 });
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileWidgetReorderActionSheet.tsx");
 
@@ -122,7 +118,7 @@ export default function UserProfileWidgetReorderActionSheet(returnFocusRef) {
   const items = [AuthenticationStore];
   const obj = stateFromStores(504);
   stateFromStores = obj.useStateFromStores(items, () => id.getId());
-  const obj2 = stateFromStores(11028);
+  const obj2 = stateFromStores(10310);
   const displayableBoardWidgets = obj2.useDisplayableBoardWidgets(stateFromStores, true);
   UserProfileReorderActionSheetDefault;
   const intl = stateFromStores(1113).intl;

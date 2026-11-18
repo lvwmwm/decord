@@ -1,17 +1,17 @@
-// Module ID: 13084
-// Function ID: 13085
+// Module ID: 12382
+// Function ID: 12383
 // Name: FamilyCenterNativeUtils
-// Dependencies: [12579, 8752, 1072, 1256, 8753, 6833, 13085, 2121, 2]
+// Dependencies: [11862, 8248, 1072, 1256, 8249, 6337, 12383, 2121, 2]
 // Exports: handleFamilyCenterQRCodeScan, resumeFamilyCenterConnection
 
-// Module 13084 (FamilyCenterNativeUtils)
+// Module 12382 (FamilyCenterNativeUtils)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6833 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 8753 */;
-import FamilyCenterPendingConnectionStore from "FamilyCenterPendingConnectionStore" /* 12579 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 8752 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6337 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 8249 */;
+import FamilyCenterPendingConnectionStore from "FamilyCenterPendingConnectionStore" /* 11862 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 8248 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -34,7 +34,7 @@ export function handleFamilyCenterQRCodeScan(pathname, FamilyCenterQRCodeScan) {
     obj3.setPendingConnection(match[1], match[2]);
     const obj5 = { userId: match[1], linkCode: match[2] };
     const obj4 = ModalActionCreatorsDefault;
-    obj4.pushLazy(asyncRequire(13085, dependencyMap.paths), obj5, c7);
+    obj4.pushLazy(asyncRequire(12383, dependencyMap.paths), obj5, c7);
   }
 }
 export function resumeFamilyCenterConnection() {
@@ -46,7 +46,7 @@ export function resumeFamilyCenterConnection() {
     const obj4 = { userId: null, linkCode: null };
     ({ teenId: obj3.userId, linkCode: obj3.linkCode } = pendingConnection);
     const obj2 = ModalActionCreatorsDefault;
-    obj2.pushLazy(asyncRequire(13085, dependencyMap.paths), obj4, c7);
+    obj2.pushLazy(asyncRequire(12383, dependencyMap.paths), obj4, c7);
     flag = true;
   }
   return flag;

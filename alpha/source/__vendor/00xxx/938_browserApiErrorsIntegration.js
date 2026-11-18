@@ -53,23 +53,23 @@ function _wrapXHR(arg0) {
       const tmp2 = item in self && typeof self[item] === "function";
       if (tmp2) {
         let obj = closure_2_0(closure_2_1[0]);
-        obj.fill(self, item, (arg0) => {
+        obj.fill(self, item, (__sentry_original__) => {
           let obj2;
           let obj3;
           let obj4;
           const obj = { mechanism: obj2 };
           obj2 = { data: obj3, handled: false, type: "auto.browser.browserapierrors.xhr." + closure_0 };
-          obj3 = { handler: obj4.getFunctionName(arg0) };
+          obj3 = { handler: obj4.getFunctionName(__sentry_original__) };
           obj4 = self(closure_2_1[0]);
           const obj5 = self(closure_2_1[0]);
-          const originalFunction = obj5.getOriginalFunction(arg0);
+          const originalFunction = obj5.getOriginalFunction(__sentry_original__);
           if (originalFunction) {
             const data = obj.mechanism.data;
             const tmpResult = self(closure_2_1[0]);
             data.handler = tmpResult.getFunctionName(originalFunction);
           }
           const tmpResult2 = self(closure_2_1[1]);
-          return tmpResult2.wrap(arg0, obj);
+          return tmpResult2.wrap(__sentry_original__, obj);
         });
       }
     });

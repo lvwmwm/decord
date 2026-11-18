@@ -1,18 +1,18 @@
-// Module ID: 11006
-// Function ID: 11007
+// Module ID: 10288
+// Function ID: 10289
 // Name: UserProfileApplicationWidgetTopContainedLayout
-// Dependencies: [19, 17, 21, 5310, 575, 10895, 11001, 6014, 11002, 2]
+// Dependencies: [19, 17, 21, 4823, 575, 10177, 10283, 5510, 10284, 2]
 // Exports: default
 
-// Module 11006 (UserProfileApplicationWidgetTopContainedLayout)
+// Module 10288 (UserProfileApplicationWidgetTopContainedLayout)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import FastImageDefault from "FastImage" /* 6014 */;
-import _mod10895 from "module_10895" /* 10895 */;
-import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 11001 */;
+import FastImageDefault from "FastImage" /* 5510 */;
+import _mod10177 from "module_10177" /* 10177 */;
+import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 10283 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -46,20 +46,20 @@ export default function UserProfileApplicationWidgetTopContainedLayout(header) {
   ({ topConfig, resolveFieldValue, numberFormat } = header);
   header = header.header;
   const tmp = closure_6();
-  const obj = _mod10895;
+  const obj = _mod10177;
   const textComponentValues = obj.resolveTextComponentValues(topConfig.components.title, resolveFieldValue, numberFormat, true);
-  const obj2 = _mod10895;
+  const obj2 = _mod10177;
   const textComponentValues1 = obj2.resolveTextComponentValues(topConfig.components.subtitle_1, resolveFieldValue, numberFormat);
-  const obj3 = _mod10895;
+  const obj3 = _mod10177;
   const textComponentValues2 = obj3.resolveTextComponentValues(topConfig.components.subtitle_2, resolveFieldValue, numberFormat);
   const contained_image = topConfig.components.contained_image;
   let image;
-  const obj4 = _mod10895;
+  const obj4 = _mod10177;
   const textComponentValues3 = obj4.resolveTextComponentValues(topConfig.components.subtitle_3, resolveFieldValue, numberFormat);
   if (contained_image != null) {
     image = contained_image.fields.image;
   }
-  const items = [_mod10895.ResolvedValueType.MEDIA];
+  const items = [_mod10177.ResolvedValueType.MEDIA];
   const fieldValue = resolveFieldValue(image, items);
   const items1 = [header, ];
   const obj5 = { style: tmp.contentRow, children: items3 };
@@ -73,7 +73,7 @@ export default function UserProfileApplicationWidgetTopContainedLayout(header) {
     tmp12Result = tmp12(tmp11, obj7);
   } else {
     const obj10 = { style: tmp.imageSkeleton };
-    tmp12Result = tmp12(tmp2(11002).ImageSkeleton, obj10);
+    tmp12Result = tmp12(tmp2(10284).ImageSkeleton, obj10);
   }
   const obj11 = { children: items1 };
   items3[1] = tmp12Result;

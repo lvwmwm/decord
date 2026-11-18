@@ -1,18 +1,18 @@
-// Module ID: 12055
-// Function ID: 12056
+// Module ID: 11337
+// Function ID: 11338
 // Name: StickerPackDetailActionSheet
-// Dependencies: [32, 19, 11949, 1072, 5561, 21, 5310, 1496, 1630, 12, 1256, 5560, 12056, 12060, 5895, 5564, 12061, 7438, 11843, 2]
+// Dependencies: [32, 19, 11231, 1072, 5052, 21, 4823, 1496, 1630, 12, 1256, 5051, 11338, 11342, 5386, 5055, 11343, 6941, 11125, 2]
 
-// Module 12055 (StickerPackDetailActionSheet)
+// Module 11337 (StickerPackDetailActionSheet)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5561 */;
-import StickerPickerListRowDefault from "StickerPickerListRow" /* 12061 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5052 */;
+import StickerPickerListRowDefault from "StickerPickerListRow" /* 11343 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import StickerPickerConstants from "StickerPickerConstants" /* 11949 */;
+import StickerPickerConstants from "StickerPickerConstants" /* 11231 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -25,7 +25,7 @@ let _slicedToArray = _slicedToArray_mod;
 const AnalyticEvents = Constants.AnalyticEvents;
 const ACTION_SHEET_MAX_WIDTH = ActionSheetConstants.ACTION_SHEET_MAX_WIDTH;
 ({ jsx: c9, Fragment: c10, jsxs: unpackModuleId } = Fragment);
-let closure_12 = createStyles.createStyles({ focusedStickerPreviewContainer: { position: "absolute", left: 0, top: 0, height: "100%", width: "100%", alignItems: "center", justifyContent: "center", backgroundColor: "rgba(0, 0, 0, 0.85)" }, header: { marginHorizontal: 16, marginVertical: 8, backgroundColor: "transparent", height: "channel_id" }, stickers: { paddingHorizontal: 16, marginBottom: 16 }, popoutContainer: { position: "absolute", bottom: 50 } });
+let closure_12 = createStyles.createStyles({ focusedStickerPreviewContainer: { position: "absolute", left: 0, top: 0, height: "100%", width: "100%", alignItems: "center", justifyContent: "center", backgroundColor: "rgba(0, 0, 0, 0.85)" }, header: { marginHorizontal: 16, marginVertical: 8, backgroundColor: "transparent", height: "ip" }, stickers: { paddingHorizontal: 16, marginBottom: 16 }, popoutContainer: { position: "absolute", bottom: 50 } });
 const memoResult = react.memo(function StickerPackDetailActionSheet(stickerPack) {
   let BottomSheetScrollView;
   let _undefined;

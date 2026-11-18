@@ -1,16 +1,16 @@
-// Module ID: 9199
-// Function ID: 9200
+// Module ID: 8610
+// Function ID: 8611
 // Name: useAuthorWithProcessedColor
-// Dependencies: [17, 6747, 9200, 2]
+// Dependencies: [17, 6249, 8611, 2]
 // Exports: getMessageAuthorWithProcessedColor, getUserAuthorWithProcessedColor
 
-// Module 9199 (useAuthorWithProcessedColor)
+// Module 8610 (useAuthorWithProcessedColor)
 import react_native from "react-native" /* 17 */;
-import useMessageAuthor from "useMessageAuthor" /* 6747 */;
+import useMessageAuthor from "useMessageAuthor" /* 6249 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const enhanced_role_colors_EnhancedRoleColorUtils = tmp(9200);
+const enhanced_role_colors_EnhancedRoleColorUtils = tmp(8611);
 const processColor = react_native.processColor;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/useAuthorWithProcessedColor.tsx");
 

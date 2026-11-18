@@ -1,16 +1,16 @@
-// Module ID: 10842
-// Function ID: 10843
+// Module ID: 10130
+// Function ID: 10131
 // Name: UserProfileWidgetDraggableCard
-// Dependencies: [19, 17, 21, 5310, 575, 7455, 7974, 2]
+// Dependencies: [19, 17, 21, 4823, 575, 6958, 7477, 2]
 
-// Module 10842 (UserProfileWidgetDraggableCard)
+// Module 10130 (UserProfileWidgetDraggableCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Card_Card from "Card/Card" /* 7455 */;
-import UserProfileCardTitleDefault from "UserProfileCardTitle" /* 7974 */;
+import Card_Card from "Card/Card" /* 6958 */;
+import UserProfileCardTitleDefault from "UserProfileCardTitle" /* 7477 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -39,7 +39,7 @@ const memoResult = react.memo(function UserProfileWidgetDraggableCard(title) {
     tmp2Result = tmp2(UserProfileCardTitleDefault, obj2);
   }
   items = [tmp2Result, children];
-  const obj3 = { radius: 12, children: tmp4(tmp5, obj) };
+  const obj3 = { radius: 12, draggable: true, children: tmp4(tmp5, obj) };
   return React3(Card, obj3);
 });
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileWidgetDraggableCard.tsx");

@@ -1,13 +1,13 @@
-// Module ID: 14700
-// Function ID: 14701
+// Module ID: 18554
+// Function ID: 18555
 // Name: ConjurePatchNotesChannel
-// Dependencies: [1113, 4133, 510, 2]
+// Dependencies: [1113, 4121, 510, 2]
 // Exports: formatPlaySuffix, lastPatchNotesChannel, rememberPatchNotesChannel
 
-// Module 14700 (ConjurePatchNotesChannel)
+// Module 18554 (ConjurePatchNotesChannel)
 import Storage3 from "Storage" /* 510 */;
 import intl2 from "intl" /* 1113 */;
-import _modDef4133 from "module_4133" /* 4133 */;
+import _modDef4121 from "module_4121" /* 4121 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -20,7 +20,7 @@ export const PLAY_LINE_CHANNEL_PLACEHOLDER = combined;
 export function formatPlaySuffix(PLAY_LINE_CHANNEL_PLACEHOLDER) {
   const intl = intl2.intl;
   const obj = { channel: PLAY_LINE_CHANNEL_PLACEHOLDER };
-  return "\n\n" + intl.formatToPlainString(_modDef4133["2ECgBx"], obj);
+  return "\n\n" + intl.formatToPlainString(_modDef4121["2ECgBx"], obj);
 }
 export function lastPatchNotesChannel(applicationId) {
   const Storage = Storage3.Storage;

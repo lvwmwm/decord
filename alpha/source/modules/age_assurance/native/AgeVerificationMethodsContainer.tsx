@@ -1,18 +1,18 @@
-// Module ID: 8410
-// Function ID: 8411
+// Module ID: 12358
+// Function ID: 12359
 // Name: AgeVerificationMethodsContainer
-// Dependencies: [19, 6817, 8217, 21, 5310, 575, 8216, 6769, 6774, 6335, 8170, 1113, 7756, 5923, 3323, 6949, 5930, 8215, 7453, 8201, 2]
+// Dependencies: [19, 6321, 7720, 21, 4823, 575, 7719, 6272, 6277, 5837, 7673, 1113, 7259, 5414, 3343, 6453, 5421, 7718, 6956, 7704, 2]
 // Exports: AgeVerificationMethodsContainer
 
-// Module 8410 (AgeVerificationMethodsContainer)
+// Module 12358 (AgeVerificationMethodsContainer)
 import nativeDefault from "native" /* 575 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 6769 */;
-import MetricEvents from "MetricEvents" /* 6774 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 6817 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 8217 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 6272 */;
+import MetricEvents from "MetricEvents" /* 6277 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 6321 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7720 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -44,7 +44,7 @@ export function AgeVerificationMethodsContainer(ageVerificationMethods) {
   const prop = ageVerificationMethods.ageVerificationMethods;
   const modalSessionId = ageVerificationMethods.modalSessionId;
   const tmp = closure_8();
-  let obj = prop(8216);
+  let obj = prop(7719);
   const isSuspendedUser = obj.useIsSuspendedUser();
   const items = [prop];
   const effect = react.useEffect(() => {
@@ -60,11 +60,11 @@ export function AgeVerificationMethodsContainer(ageVerificationMethods) {
       increment(obj2);
     }
   }, items);
-  const Stack = prop(6335).Stack;
+  const Stack = prop(5837).Stack;
   let obj2 = { spacing: 16, style: tmp.content, children: null };
-  const Stack2 = prop(6335).Stack;
+  const Stack2 = prop(5837).Stack;
   const obj3 = { type: "info", message: intl.string(prop(1113).t.El4aXl), role: "none" };
-  const InlineNotice = prop(8170).InlineNotice;
+  const InlineNotice = prop(7673).InlineNotice;
   intl = prop(1113).intl;
   const items1 = [closure_6(InlineNotice, obj3), ];
   if (null != prop) {
@@ -88,8 +88,8 @@ export function AgeVerificationMethodsContainer(ageVerificationMethods) {
     const items2 = [closure_7(Stack2, obj2), ];
     let tmp7Result = isSuspendedUser;
     if (tmp7Result) {
-      const obj5 = { variant: "body-xs/medium", children: intl4.format(modalSessionId(3323).htWh1G, obj6) };
-      const Text2 = tmp2(5923).Text;
+      const obj5 = { variant: "body-xs/medium", children: intl4.format(modalSessionId(3343).htWh1G, obj6) };
+      const Text2 = tmp2(5414).Text;
       intl4 = tmp2(1113).intl;
       obj6 = {
         handleOnHelpUrlHook() {
@@ -104,15 +104,15 @@ export function AgeVerificationMethodsContainer(ageVerificationMethods) {
     return closure_7(Stack, obj7);
   }
   const obj8 = { direction: "vertical", align: "center", spacing: 16, style: tmp.errorContainer, children: items3 };
-  const Stack3 = tmp2(6335).Stack;
-  const obj9 = { variant: "body-sm/medium", color: "text-subtle", style: tmp.noMethodsText, children: intl2.string(modalSessionId(3323).cR6336) };
-  const Text = tmp2(5923).Text;
+  const Stack3 = tmp2(5837).Stack;
+  const obj9 = { variant: "body-sm/medium", color: "text-subtle", style: tmp.noMethodsText, children: intl2.string(modalSessionId(3343).cR6336) };
+  const Text = tmp2(5414).Text;
   intl2 = tmp2(1113).intl;
   items3 = [closure_6(Text, obj9), ];
   const obj10 = { style: tmp.buttonGroup, children: closure_6(Button, obj11) };
-  const ButtonGroup = tmp2(6949).ButtonGroup;
-  obj11 = { variant: "primary", size: "lg", text: intl3.string(modalSessionId(3323).hDvmYP), onPress: prop(8215).getAgeVerificationMethods };
-  Button = tmp2(5930).Button;
+  const ButtonGroup = tmp2(6453).ButtonGroup;
+  obj11 = { variant: "primary", size: "lg", text: intl3.string(modalSessionId(3343).hDvmYP), onPress: prop(7718).getAgeVerificationMethods };
+  Button = tmp2(5421).Button;
   intl3 = tmp2(1113).intl;
   items3[1] = closure_6(ButtonGroup, obj10);
   mapped = tmp6(Stack3, obj8);

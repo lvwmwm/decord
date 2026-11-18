@@ -1,14 +1,14 @@
-// Module ID: 14496
-// Function ID: 14497
+// Module ID: 16552
+// Function ID: 16553
 // Name: UndoIcon
-// Dependencies: [19, 21, 575, 6013, 14497, 2]
+// Dependencies: [19, 21, 575, 5509, 16553, 2]
 // Exports: UndoIcon
 
-// Module 14496 (UndoIcon)
+// Module 16552 (UndoIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6013 */;
-import AssetRegistry from "AssetRegistry" /* 14497 */;
+import BaseIconImage2 from "BaseIconImage" /* 5509 */;
+import AssetRegistry from "AssetRegistry" /* 16553 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

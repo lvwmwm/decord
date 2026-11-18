@@ -1,14 +1,14 @@
-// Module ID: 14417
-// Function ID: 14418
+// Module ID: 18319
+// Function ID: 18320
 // Name: useConjureProjectSettingsDraft
-// Dependencies: [5, 32, 19, 7025, 504, 14418, 14420, 14422, 7398, 14424, 14425, 7026, 7270, 14428, 7361, 14403, 1113, 4133, 14429, 7339, 2]
+// Dependencies: [5, 32, 19, 6529, 504, 18320, 18322, 18324, 6901, 18325, 18326, 6530, 6774, 18329, 6866, 18306, 1113, 4121, 18330, 6844, 2]
 // Exports: default
 
-// Module 14417 (useConjureProjectSettingsDraft)
+// Module 18319 (useConjureProjectSettingsDraft)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 7025 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6529 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -238,8 +238,9 @@ export default function useConjureProjectSettingsDraft(arg0, arg1) {
   if (flag == null) {
     flag = false;
   }
+  let tmp72 = tmp71 && null != tmp42;
   let closure_36 = tmp72;
-  const tmp73 = null != stateFromStores && trimmed !== tmp12 || tmp66 || result && null != first2 && first2 !== tmp23.shareLinksEnabled || tmp68 || null != uses_preview_app && null != tmp42 || tmp7.changed;
+  const tmp73 = null != stateFromStores && trimmed !== tmp12 || tmp66 || result && null != first2 && first2 !== tmp23.shareLinksEnabled || tmp68 || tmp72 || tmp7.changed;
   let closure_37 = tmp73;
   let tmp74 = tmp73 || conjureLiveReloadSetting.changed || conjureSmartContextSetting.changed || conjureRequireHostApprovalSetting.changed;
   let closure_38 = tmp74;
@@ -557,7 +558,7 @@ export default function useConjureProjectSettingsDraft(arg0, arg1) {
     let closure_2;
     let guild_id;
     let items1;
-    let obj5;
+    let obj4;
     if (c4 === 2) {
       c4 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
@@ -565,8 +566,8 @@ export default function useConjureProjectSettingsDraft(arg0, arg1) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
+        const obj3 = { value, done: true };
+        return obj3;
       } else {
         return { value: "HermesInternal", done: null };
       }
@@ -581,18 +582,18 @@ export default function useConjureProjectSettingsDraft(arg0, arg1) {
             throw value;
           } else if (arg0 === 2) {
             c4 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
+            const obj5 = { value, done: true };
+            return obj5;
           } else {
             if (null != stateFromStores) {
               const tmp107 = closure_38;
               if (tmp107) {
-                const tmp44 = first3;
-                if (!tmp44) {
+                const tmp33 = first3;
+                if (!tmp33) {
                   let result = null;
                   if (closure_32) {
-                    const obj3 = tmp(stateFromStores[18]);
-                    result = obj3.conjureProjectNameError(trimmed);
+                    const obj2 = tmp(stateFromStores[18]);
+                    result = obj2.conjureProjectNameError(trimmed);
                   }
                   if (null != result) {
                     closure_22(result);
@@ -604,47 +605,47 @@ export default function useConjureProjectSettingsDraft(arg0, arg1) {
                     if (closure_32) {
                       obj6.name = trimmed;
                     }
-                    let tmp51 = closure_33;
-                    if (tmp51) {
+                    let tmp40 = closure_33;
+                    if (tmp40) {
                       obj6.flags = flags;
                     }
-                    const tmp53 = closure_31;
-                    if (tmp53) {
+                    const tmp42 = closure_31;
+                    if (tmp42) {
                       obj6.share_links_enabled = first2;
                     }
-                    let tmp55 = closure_34;
-                    if (tmp55) {
+                    let tmp44 = closure_34;
+                    if (tmp44) {
                       const items = [];
                       HermesBuiltin.arraySpread(items, first1, 0);
                       obj6.collaborator_role_ids = items.sort();
                     }
-                    const tmp59 = closure_36;
-                    if (tmp59) {
+                    const tmp48 = closure_36;
+                    if (tmp48) {
                       obj6.uses_preview_app = false;
                     }
-                    let tmp61 = null == tmp106.guild_id && null != guild_id;
-                    if (tmp61) {
-                      if (!tmp55) {
-                        if (tmp51) {
-                          tmp51 = isGuildCollaboration;
+                    let tmp50 = null == tmp106.guild_id && null != guild_id;
+                    if (tmp50) {
+                      if (!tmp44) {
+                        if (tmp40) {
+                          tmp40 = isGuildCollaboration;
                         }
-                        tmp55 = tmp51;
+                        tmp44 = tmp40;
                       }
-                      tmp61 = tmp55;
+                      tmp50 = tmp44;
                     }
-                    if (tmp61) {
+                    if (tmp50) {
                       obj6.guild_id = guild_id;
                     }
                     closure_21(true);
                     closure_24(null);
                     closure_25(null);
                     c3 = 2;
-                    const tmp70 = closure_37;
-                    if (tmp70) {
+                    const tmp59 = closure_37;
+                    if (tmp59) {
                       guild_id = 3;
                       c4 = 1;
-                      const obj7 = { value: obj5.updateProjectSettings(tmp, obj6), done: false };
-                      obj5 = tmp(stateFromStores[19]);
+                      const obj7 = { value: obj4.updateProjectSettings(tmp, obj6), done: false };
+                      obj4 = tmp(stateFromStores[19]);
                       return obj7;
                     }
                   }
@@ -672,14 +673,14 @@ export default function useConjureProjectSettingsDraft(arg0, arg1) {
           c3 = 0;
           closure_128_21(false);
           c4 = 3;
-          const obj8 = { value, done: true };
-          return obj8;
+          const obj = { value, done: true };
+          return obj;
         } else {
           closure_128_9(closure_128_29);
-          const obj = { flags: closure_128_12, roleIds: items1 };
+          const obj8 = { flags: closure_128_12, roleIds: items1 };
           items1 = [];
           HermesBuiltin.arraySpread(items1, closure_128_14, 0);
-          closure_128_10(obj);
+          closure_128_10(obj8);
           if (null != closure_128_17) {
             closure_128_16.setShareLinksEnabled(closure_128_17);
           }
@@ -687,15 +688,15 @@ export default function useConjureProjectSettingsDraft(arg0, arg1) {
           closure_128_5();
         }
         if (closure_128_3()) {
-          let tmp83;
+          let tmp72;
           if (!closure_128_6()) {
             const intl3 = tmp(stateFromStores[16]).intl;
             closure_128_25(intl3.string(guild_id(stateFromStores[17])["9JPr8h"]));
-            tmp83 = "experimental";
+            tmp72 = "experimental";
           } else {
-            tmp83 = null;
+            tmp72 = null;
           }
-          str = tmp83;
+          str = tmp72;
         } else {
           const intl2 = tmp(stateFromStores[16]).intl;
           closure_128_24(intl2.string(guild_id(stateFromStores[17]).XzkNBw));
@@ -706,12 +707,12 @@ export default function useConjureProjectSettingsDraft(arg0, arg1) {
         c4 = 3;
         const obj9 = { value: str, done: true };
         return obj9;
-      } catch (tmp99) {
-        stateFromStores = tmp99;
+      } catch (tmp88) {
+        stateFromStores = tmp88;
         if (0 === c3) {
           c4 = 3;
-          throw tmp99;
-        } else if (1 === tmp101) {
+          throw tmp88;
+        } else if (1 === tmp90) {
           guild_id = 1;
         } else {
           guild_id = 2;
@@ -720,8 +721,8 @@ export default function useConjureProjectSettingsDraft(arg0, arg1) {
     }
   }), items10);
   if (result) {
-    tmp87 = null != tmp23.shareLinksEnabled || tmp23.loadFailed;
     const tmp88 = null != tmp23.shareLinksEnabled || tmp23.loadFailed;
+    tmp87 = tmp88;
   }
   if (tmp74) {
     tmp74 = "" !== trimmed;

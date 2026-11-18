@@ -1,11 +1,11 @@
-// Module ID: 20024
-// Function ID: 20025
+// Module ID: 19295
+// Function ID: 19296
 // Name: useExternalPIPModeRestore
-// Dependencies: [19, 12428, 6179, 2]
+// Dependencies: [19, 11710, 5675, 2]
 // Exports: default
 
-// Module 20024 (useExternalPIPModeRestore)
-import VoicePanelConstants from "VoicePanelConstants" /* 12428 */;
+// Module 19295 (useExternalPIPModeRestore)
+import VoicePanelConstants from "VoicePanelConstants" /* 11710 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

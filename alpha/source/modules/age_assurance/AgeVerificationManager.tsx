@@ -1,23 +1,23 @@
-// Module ID: 20223
-// Function ID: 20224
+// Module ID: 19494
+// Function ID: 19495
 // Name: AgeVerificationManager
-// Dependencies: [7044, 5159, 6370, 5213, 1388, 1072, 3, 1094, 13083, 8414, 8671, 12351, 7892, 6815, 6793, 2]
+// Dependencies: [6548, 4672, 5872, 4726, 1388, 1072, 3, 1094, 12381, 7904, 8162, 11633, 7395, 6319, 6296, 2]
 
-// Module 20223 (AgeVerificationManager)
+// Module 19494 (AgeVerificationManager)
 import LoggerDefault from "Logger" /* 3 */;
 import MessageEmbedTypes from "MessageEmbedTypes" /* 1094 */;
 import UserStore2 from "UserStore" /* 1388 */;
-import ChannelMessagesDefault from "ChannelMessages" /* 6793 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6815 */;
-import ManualReviewActionCreators from "ManualReviewActionCreators" /* 8414 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 8671 */;
-import AgeVerificationSystemNotificationUtils from "AgeVerificationSystemNotificationUtils" /* 13083 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 7044 */;
-import ChannelStore from "ChannelStore" /* 5159 */;
-import MessageStore from "MessageStore" /* 6370 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5213 */;
+import ChannelMessagesDefault from "ChannelMessages" /* 6296 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6319 */;
+import ManualReviewActionCreators from "ManualReviewActionCreators" /* 7904 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 8162 */;
+import AgeVerificationSystemNotificationUtils from "AgeVerificationSystemNotificationUtils" /* 12381 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 6548 */;
+import ChannelStore from "ChannelStore" /* 4672 */;
+import MessageStore from "MessageStore" /* 5872 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4726 */;
 import Constants from "Constants" /* 1072 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7892 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
 import size from "module_2" /* 2 */;
 
 const UserStore = UserStore2;

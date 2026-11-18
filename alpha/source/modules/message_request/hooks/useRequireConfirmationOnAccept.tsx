@@ -1,11 +1,11 @@
-// Module ID: 13955
-// Function ID: 13956
+// Module ID: 13257
+// Function ID: 13258
 // Name: useRequireConfirmationOnAccept
-// Dependencies: [13956, 2]
+// Dependencies: [13258, 2]
 // Exports: default
 
-// Module 13955 (useRequireConfirmationOnAccept)
-import useIsStricterMessageRequestsDefault from "useIsStricterMessageRequests" /* 13956 */;
+// Module 13257 (useRequireConfirmationOnAccept)
+import useIsStricterMessageRequestsDefault from "useIsStricterMessageRequests" /* 13258 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/message_request/hooks/useRequireConfirmationOnAccept.tsx");

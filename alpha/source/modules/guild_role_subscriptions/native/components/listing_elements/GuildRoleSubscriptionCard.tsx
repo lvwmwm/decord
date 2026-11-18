@@ -1,20 +1,20 @@
-// Module ID: 17897
-// Function ID: 17898
+// Module ID: 16700
+// Function ID: 16701
 // Name: GuildRoleSubscriptionCard
-// Dependencies: [32, 19, 17, 21, 5310, 575, 5923, 17887, 17898, 1113, 1187, 17899, 17900, 17903, 2]
+// Dependencies: [32, 19, 17, 21, 4823, 575, 5414, 16690, 16701, 1113, 1187, 16702, 16703, 16706, 2]
 // Exports: Content
 
-// Module 17897 (GuildRoleSubscriptionCard)
+// Module 16700 (GuildRoleSubscriptionCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5923 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17887 */;
-import GuildRoleSubscriptionEmojiGalleryDefault from "GuildRoleSubscriptionEmojiGallery" /* 17900 */;
-import GuildRoleSubscriptionBenefitRow from "GuildRoleSubscriptionBenefitRow" /* 17903 */;
+import Text_Text from "Text/Text" /* 5414 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16690 */;
+import GuildRoleSubscriptionEmojiGalleryDefault from "GuildRoleSubscriptionEmojiGallery" /* 16703 */;
+import GuildRoleSubscriptionBenefitRow from "GuildRoleSubscriptionBenefitRow" /* 16706 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -70,11 +70,11 @@ export function Content(arg0) {
   const role = obj4.useRole(listingId, guildId);
   size = first.size;
   const obj5 = { separator: closure_6(Separator, {}), children: items1 };
-  const SeparatedList = guildId(17898).SeparatedList;
+  const SeparatedList = guildId(16701).SeparatedList;
   const obj6 = { children: items };
   const obj7 = { children: intl.string(guildId(1113).t["DJ+bGu"]) };
   intl = guildId(1113).intl;
-  items = [closure_6(SectionTitle, obj7), closure_6(guildId(1187).Spacer, { size: 8 }), closure_6(guildId(17899).GuildRoleSubscriptionMemberPreview, { guildId, role })];
+  items = [closure_6(SectionTitle, obj7), closure_6(guildId(1187).Spacer, { size: 8 }), closure_6(guildId(16702).GuildRoleSubscriptionMemberPreview, { guildId, role })];
   items1 = [closure_8(closure_7, obj6), , , ];
   let tmp6Result = null;
   if (size > 0) {

@@ -1,10 +1,10 @@
-// Module ID: 8672
-// Function ID: 8673
+// Module ID: 8163
+// Function ID: 8164
 // Name: useClipMessageNoticeStore
 // Dependencies: [560, 572, 2]
 // Exports: claimClipMessageNotice, markClipMessageNoticeShown, releaseClipMessageNotice, useClipMessageNoticeOwner, useClipMessageNoticeOwners, useShownClipMessageNotice
 
-// Module 8672 (useClipMessageNoticeStore)
+// Module 8163 (useClipMessageNoticeStore)
 import module_560_mod from "module_560" /* 560 */;
 import Dispatcher from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 15022
-// Function ID: 15023
+// Module ID: 13710
+// Function ID: 13711
 // Name: conjureProjectGroups
-// Dependencies: [7244, 2]
+// Dependencies: [6748, 2]
 // Exports: groupConjureProjects
 
-// Module 15022 (conjureProjectGroups)
+// Module 13710 (conjureProjectGroups)
 import size from "module_2" /* 2 */;
 
 let map1;

@@ -1,10 +1,10 @@
-// Module ID: 8785
-// Function ID: 8786
+// Module ID: 8281
+// Function ID: 8282
 // Name: callOnce
 // Dependencies: [2]
 // Exports: callOnce
 
-// Module 8785 (callOnce)
+// Module 8281 (callOnce)
 import size from "module_2" /* 2 */;
 
 let closure_1;

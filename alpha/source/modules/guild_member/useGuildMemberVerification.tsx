@@ -1,10 +1,10 @@
-// Module ID: 12286
-// Function ID: 12287
+// Module ID: 11568
+// Function ID: 11569
 // Name: useGuildMemberVerification
-// Dependencies: [19, 12, 12287, 2]
+// Dependencies: [19, 12, 11569, 2]
 // Exports: default
 
-// Module 12286 (useGuildMemberVerification)
+// Module 11568 (useGuildMemberVerification)
 import _mod12 from "module_12" /* 12 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

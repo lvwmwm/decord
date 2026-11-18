@@ -1,23 +1,23 @@
-// Module ID: 19676
-// Function ID: 19677
+// Module ID: 18952
+// Function ID: 18953
 // Name: ConsoleConnectionActionSheet
-// Dependencies: [19, 19677, 1072, 21, 5546, 7601, 7434, 1113, 7961, 7923, 7756, 7453, 7095, 10524, 10418, 2]
+// Dependencies: [19, 18953, 1072, 21, 5037, 7104, 6937, 1113, 7464, 7426, 7259, 6956, 6599, 9805, 9699, 2]
 // Exports: default
 
-// Module 19676 (ConsoleConnectionActionSheet)
+// Module 18952 (ConsoleConnectionActionSheet)
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
-import PlatformsDefault from "Platforms" /* 7095 */;
-import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 7434 */;
-import TableRow3 from "TableRow" /* 7453 */;
-import PlayStationLinkModalActionCreatorsDefault from "PlayStationLinkModalActionCreators" /* 7601 */;
-import TableRowGroup2 from "TableRowGroup" /* 7756 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7923 */;
-import ActionSheet2 from "ActionSheet" /* 7961 */;
-import XboxNeutralIcon from "XboxNeutralIcon" /* 10418 */;
-import PlaystationNeutralIcon from "PlaystationNeutralIcon" /* 10524 */;
-import ConsoleConnectionCoachmarkConstants from "ConsoleConnectionCoachmarkConstants" /* 19677 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
+import PlatformsDefault from "Platforms" /* 6599 */;
+import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 6937 */;
+import TableRow3 from "TableRow" /* 6956 */;
+import PlayStationLinkModalActionCreatorsDefault from "PlayStationLinkModalActionCreators" /* 7104 */;
+import TableRowGroup2 from "TableRowGroup" /* 7259 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7426 */;
+import ActionSheet2 from "ActionSheet" /* 7464 */;
+import XboxNeutralIcon from "XboxNeutralIcon" /* 9699 */;
+import PlaystationNeutralIcon from "PlaystationNeutralIcon" /* 9805 */;
+import ConsoleConnectionCoachmarkConstants from "ConsoleConnectionCoachmarkConstants" /* 18953 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

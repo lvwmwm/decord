@@ -1,20 +1,20 @@
-// Module ID: 13382
-// Function ID: 13383
+// Module ID: 12685
+// Function ID: 12686
 // Name: CheckpointTag
-// Dependencies: [32, 19, 17, 6375, 21, 5310, 575, 8274, 6742, 5923, 2]
+// Dependencies: [32, 19, 17, 5877, 21, 4823, 575, 7776, 6244, 5414, 2]
 // Exports: default
 
-// Module 13382 (CheckpointTag)
+// Module 12685 (CheckpointTag)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5923 */;
-import CheckpointConstants from "CheckpointConstants" /* 6375 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6742 */;
-import inlineStyles from "inlineStyles" /* 8274 */;
+import Text_Text from "Text/Text" /* 5414 */;
+import CheckpointConstants from "CheckpointConstants" /* 5877 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6244 */;
+import inlineStyles from "inlineStyles" /* 7776 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size_mod from "module_2" /* 2 */;
 
 const inlineStylesDefault = inlineStyles;

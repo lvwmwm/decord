@@ -1,19 +1,19 @@
-// Module ID: 15795
-// Function ID: 15796
+// Module ID: 14427
+// Function ID: 14428
 // Name: Slider
-// Dependencies: [32, 19, 17, 21, 5310, 575, 11648, 5548, 5549, 1380, 2]
+// Dependencies: [32, 19, 17, 21, 4823, 575, 10930, 5039, 5040, 1380, 2]
 // Exports: Slider, useLatestSliderValue
 
-// Module 15795 (Slider)
+// Module 14427 (Slider)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import HapticUtils from "HapticUtils" /* 5548 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5549 */;
-import _modDef11648 from "module_11648" /* 11648 */;
+import HapticUtils from "HapticUtils" /* 5039 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5040 */;
+import _modDef10930 from "module_10930" /* 10930 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -28,7 +28,7 @@ const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { container: { flexGrow: 1, flexDirection: "row", alignItems: "center" }, slider: { flex: 1 }, minimumTrackTintColor: obj2, maximumTrackTintColor: obj3, startIcon: obj4, endIcon: obj5 };
-obj2 = { backgroundColor: nativeDefault.colors.REDESIGN_INPUT_CONTROL_SELECTED };
+obj2 = { backgroundColor: nativeDefault.colors.SLIDER_INDICATOR_BACKGROUND };
 createStyles = createStyles.createStyles;
 obj3 = { backgroundColor: nativeDefault.colors.SLIDER_TRACK_BACKGROUND };
 obj4 = { marginRight: nativeDefault.space.PX_8 };
@@ -154,7 +154,7 @@ export function Slider(maxValue) {
     testID,
     onResponderGrant: fn
   };
-  const tmp20 = _modDef11648;
+  const tmp20 = _modDef10930;
   if (value == null) {
     value = first;
   }

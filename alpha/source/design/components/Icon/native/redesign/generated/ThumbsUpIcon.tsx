@@ -1,14 +1,14 @@
-// Module ID: 9153
-// Function ID: 9154
+// Module ID: 8564
+// Function ID: 8565
 // Name: ThumbsUpIcon
-// Dependencies: [19, 21, 575, 6013, 9154, 2]
+// Dependencies: [19, 21, 575, 5509, 8565, 2]
 // Exports: ThumbsUpIcon
 
-// Module 9153 (ThumbsUpIcon)
+// Module 8564 (ThumbsUpIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6013 */;
-import AssetRegistry from "AssetRegistry" /* 9154 */;
+import BaseIconImage2 from "BaseIconImage" /* 5509 */;
+import AssetRegistry from "AssetRegistry" /* 8565 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

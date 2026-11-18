@@ -1,20 +1,20 @@
-// Module ID: 11524
-// Function ID: 11525
+// Module ID: 10806
+// Function ID: 10807
 // Name: StageViewWithPrompts
-// Dependencies: [19, 17, 21, 11525, 5310, 575, 1630, 11527, 11551, 5923, 2]
+// Dependencies: [19, 17, 21, 10807, 4823, 575, 1630, 10809, 10833, 5414, 2]
 // Exports: default
 
-// Module 11524 (StageViewWithPrompts)
+// Module 10806 (StageViewWithPrompts)
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import Text_Text from "Text/Text" /* 5923 */;
-import StageChannelHeightHooks from "StageChannelHeightHooks" /* 11525 */;
-import FocusedControls from "FocusedControls" /* 11527 */;
-import MicrophoneSpotIllustration from "MicrophoneSpotIllustration" /* 11551 */;
+import Text_Text from "Text/Text" /* 5414 */;
+import StageChannelHeightHooks from "StageChannelHeightHooks" /* 10807 */;
+import FocusedControls from "FocusedControls" /* 10809 */;
+import MicrophoneSpotIllustration from "MicrophoneSpotIllustration" /* 10833 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let c3;

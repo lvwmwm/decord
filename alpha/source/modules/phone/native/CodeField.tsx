@@ -1,19 +1,19 @@
-// Module ID: 7864
-// Function ID: 7865
+// Module ID: 7367
+// Function ID: 7368
 // Name: CodeField
-// Dependencies: [32, 19, 17, 21, 5310, 575, 1187, 7629, 1113, 5930, 5923, 7484, 2]
+// Dependencies: [32, 19, 17, 21, 4823, 575, 1187, 7132, 1113, 5421, 5414, 6987, 2]
 // Exports: CodeBlocks, default
 
-// Module 7864 (CodeField)
+// Module 7367 (CodeField)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5923 */;
-import KeyboardAwareViewDefault from "KeyboardAwareView" /* 7484 */;
+import Text_Text from "Text/Text" /* 5414 */;
+import KeyboardAwareViewDefault from "KeyboardAwareView" /* 6987 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;

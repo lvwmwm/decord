@@ -11,7 +11,7 @@ import _mod183 from "module_183" /* 183 */;
 
 const require = globalThis.__r;
 
-const f81130 = () => _mod183.default[cancelIdleCallback_str];
+const f78707 = () => _mod183.default[cancelIdleCallback_str];
 if (true === global.RN$Bridgeless) {
   global.RN$enableMicrotasksInReact = true;
   const _module = defineLazyObjectProperty;
@@ -27,27 +27,27 @@ if (true === global.RN$Bridgeless) {
 } else {
   const setTimeout_str = "setTimeout";
   const _module5 = defineLazyObjectProperty;
-  _module5.polyfillGlobal("setTimeout", f81130);
+  _module5.polyfillGlobal("setTimeout", f78707);
   const clearTimeout_str = "clearTimeout";
   const _module6 = defineLazyObjectProperty;
-  _module6.polyfillGlobal("clearTimeout", f81130);
+  _module6.polyfillGlobal("clearTimeout", f78707);
   const setInterval_str = "setInterval";
   const _module7 = defineLazyObjectProperty;
-  _module7.polyfillGlobal("setInterval", f81130);
+  _module7.polyfillGlobal("setInterval", f78707);
   const clearInterval_str = "clearInterval";
   const _module8 = defineLazyObjectProperty;
-  _module8.polyfillGlobal("clearInterval", f81130);
+  _module8.polyfillGlobal("clearInterval", f78707);
   const requestAnimationFrame_str = "requestAnimationFrame";
   const _module9 = defineLazyObjectProperty;
-  _module9.polyfillGlobal("requestAnimationFrame", f81130);
+  _module9.polyfillGlobal("requestAnimationFrame", f78707);
   const cancelAnimationFrame_str = "cancelAnimationFrame";
   const _module10 = defineLazyObjectProperty;
-  _module10.polyfillGlobal("cancelAnimationFrame", f81130);
+  _module10.polyfillGlobal("cancelAnimationFrame", f78707);
   const _module11 = defineLazyObjectProperty;
-  _module11.polyfillGlobal("requestIdleCallback", f81130);
+  _module11.polyfillGlobal("requestIdleCallback", f78707);
   const cancelIdleCallback_str = "cancelIdleCallback";
   const _module12 = defineLazyObjectProperty;
-  _module12.polyfillGlobal("cancelIdleCallback", f81130);
+  _module12.polyfillGlobal("cancelIdleCallback", f78707);
   const _module13 = defineLazyObjectProperty;
   _module13.polyfillGlobal("queueMicrotask", () => require("queueMicrotask").default);
   const _module14 = defineLazyObjectProperty;

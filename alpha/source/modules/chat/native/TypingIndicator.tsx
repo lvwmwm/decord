@@ -1,28 +1,28 @@
-// Module ID: 13449
-// Function ID: 13450
+// Module ID: 12756
+// Function ID: 12757
 // Name: TypingIndicator
-// Dependencies: [19, 17, 11060, 5926, 6978, 8803, 13450, 1388, 1072, 21, 13451, 504, 5310, 575, 13452, 13453, 13454, 6349, 1256, 7928, 7947, 13455, 13456, 1655, 5896, 5371, 5933, 5934, 13466, 1187, 5923, 13470, 2]
+// Dependencies: [19, 17, 10342, 5417, 6482, 8300, 12757, 1388, 1072, 21, 12758, 504, 4823, 575, 12759, 12760, 12761, 5851, 1256, 7431, 7450, 12762, 12763, 1655, 5387, 4884, 5424, 5425, 12773, 1187, 5414, 12777, 2]
 // Exports: hasTypingIndicatorContent, useTypingUserIdsForDisplay
 
-// Module 13449 (TypingIndicator)
+// Module 12756 (TypingIndicator)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import native from "native" /* 5371 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6349 */;
-import SlowmodeStore from "SlowmodeStore" /* 8803 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 11060 */;
-import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 13454 */;
-import CustomTypingIndicatorAnalytics from "CustomTypingIndicatorAnalytics" /* 13455 */;
-import openCustomTypingIndicatorAnnounceActionSheet from "openCustomTypingIndicatorAnnounceActionSheet" /* 13456 */;
+import native from "native" /* 4884 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5851 */;
+import SlowmodeStore from "SlowmodeStore" /* 8300 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 10342 */;
+import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 12761 */;
+import CustomTypingIndicatorAnalytics from "CustomTypingIndicatorAnalytics" /* 12762 */;
+import openCustomTypingIndicatorAnnounceActionSheet from "openCustomTypingIndicatorAnnounceActionSheet" /* 12763 */;
 import react from "react" /* 19 */;
-import DevSettingsStore from "DevSettingsStore" /* 5926 */;
-import RawGuildEmojiStore from "RawGuildEmojiStore" /* 6978 */;
-import TypingStore from "TypingStore" /* 13450 */;
+import DevSettingsStore from "DevSettingsStore" /* 5417 */;
+import RawGuildEmojiStore from "RawGuildEmojiStore" /* 6482 */;
+import TypingStore from "TypingStore" /* 12757 */;
 import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let currentUser;
@@ -30,8 +30,8 @@ let currentUser;
 let closure_12;
 let closure_14;
 let map1;
-const f107174 = () => DevSettingsStore.get("preview_own_typing_indicator");
-const f107175 = () => {
+const f103930 = () => DevSettingsStore.get("preview_own_typing_indicator");
+const f103931 = () => {
   currentUser = currentUser.getCurrentUser();
   let id;
   if (currentUser != null) {
@@ -315,10 +315,10 @@ const memoResult = react.memo(function TypingIndicator(channel) {
   typingUserIds = obj.useTypingUserIds(id, 4);
   let items = [DevSettingsStore];
   const obj2 = typingUserIds(stateFromStores1[11]);
-  const stateFromStores = obj2.useStateFromStores(items, f107174);
+  const stateFromStores = obj2.useStateFromStores(items, f103930);
   const items1 = [UserStore];
   const obj3 = typingUserIds(stateFromStores1[11]);
-  stateFromStores1 = obj3.useStateFromStores(items1, f107175);
+  stateFromStores1 = obj3.useStateFromStores(items1, f103931);
   const items2 = [stateFromStores, stateFromStores1, typingUserIds];
   const memo = react.useMemo(() => {
     const tmp = stateFromStores;
@@ -366,10 +366,10 @@ export function useTypingUserIdsForDisplay(id, arg1) {
   typingUserIds = obj.useTypingUserIds(id, arg1);
   const items = [DevSettingsStore];
   const obj2 = typingUserIds(stateFromStores1[11]);
-  const stateFromStores = obj2.useStateFromStores(items, f107174);
+  const stateFromStores = obj2.useStateFromStores(items, f103930);
   const items1 = [UserStore];
   const obj3 = typingUserIds(stateFromStores1[11]);
-  stateFromStores1 = obj3.useStateFromStores(items1, f107175);
+  stateFromStores1 = obj3.useStateFromStores(items1, f103931);
   const items2 = [stateFromStores, stateFromStores1, typingUserIds];
   return react.useMemo(() => {
     const tmp = stateFromStores;

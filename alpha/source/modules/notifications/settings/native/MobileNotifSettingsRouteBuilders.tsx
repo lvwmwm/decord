@@ -1,13 +1,13 @@
-// Module ID: 18661
-// Function ID: 18662
+// Module ID: 17474
+// Function ID: 17475
 // Name: MobileNotifSettingsRouteBuilders
-// Dependencies: [1113, 3031, 18154, 2]
+// Dependencies: [1113, 3051, 16956, 2]
 // Exports: buildCategoryCallsMessagesSettingsSection, buildCategoryDiscoveryHighlightsSettingsSection, buildCategoryFriendsActivitySettingsSection, buildCategoryServersSettingsSection, buildFriendActivityTitleSettingsSection, buildOverviewCategoriesSection, buildReactionsChoiceSettingsSection
 
-// Module 18661 (MobileNotifSettingsRouteBuilders)
+// Module 17474 (MobileNotifSettingsRouteBuilders)
 import intl2 from "intl" /* 1113 */;
-import _modDef3031 from "module_3031" /* 3031 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 18154 */;
+import _modDef3051 from "module_3051" /* 3051 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 16956 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/notifications/settings/native/MobileNotifSettingsRouteBuilders.tsx");
@@ -15,7 +15,7 @@ const result = size.fileFinishedImporting("modules/notifications/settings/native
 export function buildOverviewCategoriesSection() {
   let intl;
   let items;
-  const obj = { label: intl.string(_modDef3031["/UdAvP"]), settings: items };
+  const obj = { label: intl.string(_modDef3051["/UdAvP"]), settings: items };
   intl = intl2.intl;
   items = [MobileNotifSettings.MobileNotifSettings.NOTIF_CATEGORY_CALLS_MESSAGES, MobileNotifSettings.MobileNotifSettings.NOTIF_CATEGORY_DISCOVERY_HIGHLIGHTS, MobileNotifSettings.MobileNotifSettings.NOTIF_CATEGORY_FRIENDS_ACTIVITY, MobileNotifSettings.MobileNotifSettings.NOTIF_CATEGORY_SERVERS];
   return obj;

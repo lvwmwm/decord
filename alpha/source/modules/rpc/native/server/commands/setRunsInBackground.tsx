@@ -1,17 +1,17 @@
-// Module ID: 17020
-// Function ID: 17021
+// Module ID: 15670
+// Function ID: 15671
 // Name: setRunsInBackground
-// Dependencies: [7027, 6759, 1072, 5953, 7028, 16957, 16949, 11300, 2]
+// Dependencies: [6531, 6261, 1072, 5449, 6532, 15607, 15599, 10582, 2]
 
-// Module 17020 (setRunsInBackground)
+// Module 15670 (setRunsInBackground)
 import Constants2 from "Constants" /* 1072 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5953 */;
-import FramesConstants from "FramesConstants" /* 7028 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 11300 */;
-import validateConjureAppFrameDefault from "validateConjureAppFrame" /* 16949 */;
-import FramesStore from "FramesStore" /* 7027 */;
-import Constants from "Constants" /* 6759 */;
-import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 16957 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5449 */;
+import FramesConstants from "FramesConstants" /* 6532 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 10582 */;
+import validateConjureAppFrameDefault from "validateConjureAppFrame" /* 15599 */;
+import FramesStore from "FramesStore" /* 6531 */;
+import Constants from "Constants" /* 6261 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 15607 */;
 import size from "module_2" /* 2 */;
 
 let RPC_AUTHENTICATED_SCOPE;

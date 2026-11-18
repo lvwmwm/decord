@@ -1,30 +1,30 @@
-// Module ID: 18688
-// Function ID: 18689
+// Module ID: 17501
+// Function ID: 17502
 // Name: Auth
-// Dependencies: [32, 19, 17, 13909, 1072, 21, 18689, 18690, 7503, 18700, 7561, 7787, 5310, 575, 18743, 7780, 18695, 1644, 7724, 18744, 7722, 7803, 7500, 1360, 1113, 18745, 8689, 18754, 2]
+// Dependencies: [32, 19, 17, 13211, 1072, 21, 17502, 17503, 7006, 17513, 7064, 7290, 4823, 575, 17556, 7283, 17508, 1644, 7227, 17557, 7225, 7306, 7003, 1360, 1113, 17558, 8180, 17567, 2]
 
-// Module 18688 (Auth)
+// Module 17501 (Auth)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import KeyboardChatScrollView from "KeyboardChatScrollView" /* 1644 */;
-import _mod7561 from "module_7561" /* 7561 */;
-import BackgroundImageDefault from "BackgroundImage" /* 7724 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 7780 */;
-import MFAUtils from "MFAUtils" /* 7787 */;
-import RegistrationHandoff from "RegistrationHandoff" /* 18689 */;
-import useShouldShowChooseAccountDefault from "useShouldShowChooseAccount" /* 18695 */;
-import RegistrationUtils from "RegistrationUtils" /* 18700 */;
-import useIsHCaptchaModalOpenTracking from "useIsHCaptchaModalOpenTracking" /* 18743 */;
-import AssetRegistry from "AssetRegistry" /* 18744 */;
-import AuthManagerDefault from "AuthManager" /* 18745 */;
-import useOrientationLockDefault from "useOrientationLock" /* 18754 */;
+import _mod7064 from "module_7064" /* 7064 */;
+import BackgroundImageDefault from "BackgroundImage" /* 7227 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 7283 */;
+import MFAUtils from "MFAUtils" /* 7290 */;
+import RegistrationHandoff from "RegistrationHandoff" /* 17502 */;
+import useShouldShowChooseAccountDefault from "useShouldShowChooseAccount" /* 17508 */;
+import RegistrationUtils from "RegistrationUtils" /* 17513 */;
+import useIsHCaptchaModalOpenTracking from "useIsHCaptchaModalOpenTracking" /* 17556 */;
+import AssetRegistry from "AssetRegistry" /* 17557 */;
+import AuthManagerDefault from "AuthManager" /* 17558 */;
+import useOrientationLockDefault from "useOrientationLock" /* 17567 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import MultiAccountStore from "MultiAccountStore" /* 13909 */;
+import MultiAccountStore from "MultiAccountStore" /* 13211 */;
 import Fragment from "Fragment" /* 21 */;
-import RegistrationStepsUtils_mod from "RegistrationStepsUtils" /* 18690 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import RegistrationStepsUtils_mod from "RegistrationStepsUtils" /* 17503 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size_mod from "module_2" /* 2 */;
 
 let importDefault, set;
@@ -41,8 +41,8 @@ let tmp;
 let unpackModuleId;
 const intl2 = tmp(1113);
 const utils_PlatformUtils = tmp(1360);
-const Navigator3 = tmp(7500);
-const react2 = tmp(7803);
+const Navigator3 = tmp(7003);
+const react2 = tmp(7306);
 function getInitialAuthRouteStack() {
   let items1;
   obj = RegistrationHandoff;
@@ -112,7 +112,7 @@ function NavigatorWithCaptchaHook() {
     if (tmp9 === AuthStates.WELCOME) {
       tmp19Result = null;
       if (tmp7) {
-        tmp19Result = tmp19(tmp4(7722), {});
+        tmp19Result = tmp19(tmp4(7225), {});
       }
     }
   }
@@ -219,8 +219,8 @@ const screens = fromEntries(RegistrationStepsUtils.map((item) => {
   let tmp8 = null;
   set = new Set(items1);
   if (set.has(tmp)) {
-    tmp8 = { cardStyleInterpolator: _mod7561.CardStyleInterpolators.forFadeFromCenter };
-    const obj4 = { cardStyleInterpolator: _mod7561.CardStyleInterpolators.forFadeFromCenter };
+    tmp8 = { cardStyleInterpolator: _mod7064.CardStyleInterpolators.forFadeFromCenter };
+    const obj4 = { cardStyleInterpolator: _mod7064.CardStyleInterpolators.forFadeFromCenter };
   }
   const merged3 = Object.assign(tmp8);
   items[1] = obj;

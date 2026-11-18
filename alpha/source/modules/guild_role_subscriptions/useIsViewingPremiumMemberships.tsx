@@ -1,14 +1,14 @@
-// Module ID: 14354
-// Function ID: 14355
+// Module ID: 13658
+// Function ID: 13659
 // Name: useIsViewingPremiumMemberships
-// Dependencies: [1072, 5166, 5354, 5361, 2]
+// Dependencies: [1072, 4679, 4867, 4874, 2]
 // Exports: default
 
-// Module 14354 (useIsViewingPremiumMemberships)
+// Module 13658 (useIsViewingPremiumMemberships)
 import Constants from "Constants" /* 1072 */;
-import ChannelConstants from "ChannelConstants" /* 5166 */;
-import MemoryRouter from "MemoryRouter" /* 5354 */;
-import RouteUtils from "RouteUtils" /* 5361 */;
+import ChannelConstants from "ChannelConstants" /* 4679 */;
+import MemoryRouter from "MemoryRouter" /* 4867 */;
+import RouteUtils from "RouteUtils" /* 4874 */;
 import size from "module_2" /* 2 */;
 
 const Routes = Constants.Routes;

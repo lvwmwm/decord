@@ -1,23 +1,23 @@
-// Module ID: 16114
-// Function ID: 16115
+// Module ID: 14781
+// Function ID: 14782
 // Name: NUFChannelsManager
-// Dependencies: [5222, 5181, 5343, 1388, 1072, 5228, 510, 5366, 7892, 5487, 5486, 1406, 5546, 16115, 2121, 2]
+// Dependencies: [4735, 4694, 4856, 1388, 1072, 4741, 510, 4879, 7395, 5000, 4999, 1406, 5037, 14782, 2121, 2]
 
-// Module 16114 (NUFChannelsManager)
+// Module 14781 (NUFChannelsManager)
 import Storage3 from "Storage" /* 510 */;
 import Constants from "Constants" /* 1072 */;
 import FlagUtils from "FlagUtils" /* 1406 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 5228 */;
-import UserUtils from "UserUtils" /* 5366 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5486 */;
-import RootNavigationRef from "RootNavigationRef" /* 5487 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
-import GuildMemberStore from "GuildMemberStore" /* 5222 */;
-import GuildStore from "GuildStore" /* 5181 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5343 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4741 */;
+import UserUtils from "UserUtils" /* 4879 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4999 */;
+import RootNavigationRef from "RootNavigationRef" /* 5000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
+import GuildMemberStore from "GuildMemberStore" /* 4735 */;
+import GuildStore from "GuildStore" /* 4694 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4856 */;
 import UserStore from "UserStore" /* 1388 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7892 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
 import size from "module_2" /* 2 */;
 
 const GuildFeatures = Constants.GuildFeatures;
@@ -96,7 +96,7 @@ class NUFChannelsManager extends AutomaticLifecycleManager {
           }
           if (isNewUserResult) {
             const obj3 = ActionSheetActionCreatorsDefault;
-            obj3.openLazy(asyncRequire(16115, tmp2.paths), "NUFChannelsActionSheet");
+            obj3.openLazy(asyncRequire(14782, tmp2.paths), "NUFChannelsActionSheet");
             const Storage2 = tmp(510).Storage;
             const result = Storage2.set(tmp14, true);
           }

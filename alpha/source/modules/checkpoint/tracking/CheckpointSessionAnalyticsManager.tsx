@@ -1,28 +1,25 @@
-// Module ID: 13118
-// Function ID: 13119
+// Module ID: 12416
+// Function ID: 12417
 // Name: CheckpointSessionAnalyticsManager
-// Dependencies: [13119, 1269, 6743, 2]
+// Dependencies: [12417, 1269, 6246, 2]
 
-// Module 13118 (CheckpointSessionAnalyticsManager)
+// Module 12416 (CheckpointSessionAnalyticsManager)
 import v1 from "v1" /* 1269 */;
-import CheckpointNavigation from "CheckpointNavigation" /* 6743 */;
-import CheckpointStore from "CheckpointStore" /* 13119 */;
+import CheckpointNavigation from "CheckpointNavigation" /* 6246 */;
+import CheckpointStore from "CheckpointStore" /* 12417 */;
 import size from "module_2" /* 2 */;
 
 class CheckpointSessionAnalyticsManager {
   constructor() {
-    const merged = Object.assign({ sessionId: null, didPlayerShareDataWithDiscord: false, stepName: null, isForeground: true, isStopped: true, sessionTimer: null, customizationTimer: null });
+    const merged = Object.assign({ sessionId: null, stepName: null, isForeground: true, isStopped: true, sessionTimer: null, customizationTimer: null });
+    merged[4] = { completedMs: 0, startedAt: null };
     merged[5] = { completedMs: 0, startedAt: null };
-    merged[6] = { completedMs: 0, startedAt: null };
     return merged;
   }
-  initialize(arg0) {
-    let didPlayerShareDataWithDiscord;
-    let isForeground;
-    ({ didPlayerShareDataWithDiscord, isForeground } = arg0);
+  initialize(isForeground) {
+    isForeground = isForeground.isForeground;
     const obj = v1;
     this.sessionId = obj.v4();
-    this.didPlayerShareDataWithDiscord = didPlayerShareDataWithDiscord;
     this.stepName = null;
     this.isForeground = isForeground;
     this.isStopped = false;
@@ -48,19 +45,15 @@ class CheckpointSessionAnalyticsManager {
   getAnalyticsProperties() {
     let completedMs;
     let completedMs2;
-    let didPlayerShareDataWithDiscord;
-    const self = this;
-    const obj = { checkpoint_session_id: this.sessionId, has_personalized_data: didPlayerShareDataWithDiscord, checkpoint_availability: null, checkpoint_compact_assets: null, time_spent_ms: completedMs, customization_time_spent_ms: completedMs2 };
-    didPlayerShareDataWithDiscord = this.didPlayerShareDataWithDiscord && null != CheckpointStore.stats;
-    ({ availability: obj.checkpoint_availability, compactAssets: obj.checkpoint_compact_assets } = CheckpointStore);
-    const sessionTimer = self.sessionTimer;
+    const sessionTimer = this.sessionTimer;
+    const obj = { checkpoint_session_id: this.sessionId, has_personalized_data: null != CheckpointStore.stats, checkpoint_availability: CheckpointStore.availability, checkpoint_compact_assets: CheckpointStore.compactAssets, time_spent_ms: completedMs, customization_time_spent_ms: completedMs2 };
     if (null != sessionTimer.startedAt) {
       const _Date = Date;
       completedMs = sessionTimer.completedMs + Date.now() - sessionTimer.startedAt;
     } else {
       completedMs = sessionTimer.completedMs;
     }
-    const customizationTimer = self.customizationTimer;
+    const customizationTimer = this.customizationTimer;
     if (null != customizationTimer.startedAt) {
       const _Date2 = Date;
       completedMs2 = customizationTimer.completedMs + Date.now() - customizationTimer.startedAt;
@@ -110,9 +103,9 @@ class CheckpointSessionAnalyticsManager {
   }
 }
 const prototype = CheckpointSessionAnalyticsManager.prototype;
-let merged = Object.assign({ sessionId: null, didPlayerShareDataWithDiscord: false, stepName: null, isForeground: true, isStopped: true, sessionTimer: null, customizationTimer: null });
+let merged = Object.assign({ sessionId: null, stepName: null, isForeground: true, isStopped: true, sessionTimer: null, customizationTimer: null });
+merged[4] = { completedMs: 0, startedAt: null };
 merged[5] = { completedMs: 0, startedAt: null };
-merged[6] = { completedMs: 0, startedAt: null };
 let result = size.fileFinishedImporting("modules/checkpoint/tracking/CheckpointSessionAnalyticsManager.tsx");
 
 export default merged;

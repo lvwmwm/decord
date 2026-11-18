@@ -1,39 +1,39 @@
-// Module ID: 18517
-// Function ID: 18518
+// Module ID: 17330
+// Function ID: 17331
 // Name: CollectiblesShopV2
-// Dependencies: [32, 19, 17, 5926, 1192, 1388, 8496, 5984, 8530, 1074, 1072, 5156, 21, 5310, 7947, 15350, 18518, 9420, 9421, 504, 5911, 1269, 10096, 18519, 18521, 18522, 10516, 1380, 10183, 9736, 9418, 9474, 5317, 7928, 1502, 18524, 2186, 18526, 5342, 5143, 2174, 18527, 1256, 8545, 8494, 18528, 18529, 18531, 18532, 18568, 1242, 9430, 10228, 10195, 18571, 18572, 18541, 18573, 18575, 6770, 1627, 2]
+// Dependencies: [32, 19, 17, 5417, 1192, 1388, 7987, 5480, 8021, 1074, 1072, 4669, 21, 4823, 7450, 13978, 17331, 8833, 8834, 504, 5402, 1269, 9378, 17332, 17334, 17335, 9797, 1380, 9464, 9151, 8831, 8888, 4830, 7431, 1502, 17337, 2186, 17339, 4855, 4656, 2174, 17340, 1256, 8036, 7985, 17341, 17342, 17344, 17345, 17381, 1242, 8843, 9509, 9476, 17384, 17385, 17354, 17386, 17388, 6273, 1627, 2]
 
-// Module 18517 (CollectiblesShopV2)
+// Module 17330 (CollectiblesShopV2)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
 import BillingPlatformUtils from "BillingPlatformUtils" /* 2186 */;
-import dismissible_content from "dismissible_content" /* 5143 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5156 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5342 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8494 */;
-import FeedBlockRecord2 from "FeedBlockRecord" /* 8530 */;
-import CollectiblesPerfLogging from "CollectiblesPerfLogging" /* 8545 */;
-import NativePaymentHooksDefault from "NativePaymentHooks" /* 9736 */;
-import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 10183 */;
-import ImprovedMobileShopLoadingExperiment from "ImprovedMobileShopLoadingExperiment" /* 10195 */;
-import CollectiblesShopManager2 from "CollectiblesShopManager" /* 10516 */;
-import takeWhileDefault from "takeWhile" /* 18524 */;
-import ShopCategory from "ShopCategory" /* 18529 */;
-import ShopNitroUpsellBanner2 from "ShopNitroUpsellBanner" /* 18531 */;
-import CollectiblesShopFeaturedPageDefault from "CollectiblesShopFeaturedPage" /* 18532 */;
+import dismissible_content from "dismissible_content" /* 4656 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4669 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4855 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7985 */;
+import FeedBlockRecord2 from "FeedBlockRecord" /* 8021 */;
+import CollectiblesPerfLogging from "CollectiblesPerfLogging" /* 8036 */;
+import NativePaymentHooksDefault from "NativePaymentHooks" /* 9151 */;
+import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9464 */;
+import ImprovedMobileShopLoadingExperiment from "ImprovedMobileShopLoadingExperiment" /* 9476 */;
+import CollectiblesShopManager2 from "CollectiblesShopManager" /* 9797 */;
+import takeWhileDefault from "takeWhile" /* 17337 */;
+import ShopCategory from "ShopCategory" /* 17342 */;
+import ShopNitroUpsellBanner2 from "ShopNitroUpsellBanner" /* 17344 */;
+import CollectiblesShopFeaturedPageDefault from "CollectiblesShopFeaturedPage" /* 17345 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import DevSettingsStore from "DevSettingsStore" /* 5926 */;
+import DevSettingsStore from "DevSettingsStore" /* 5417 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
 import UserStore from "UserStore" /* 1388 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 8496 */;
-import CollectiblesShopHomeStore from "CollectiblesShopHomeStore" /* 5984 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7987 */;
+import CollectiblesShopHomeStore from "CollectiblesShopHomeStore" /* 5480 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let kind, map, navigation;
@@ -51,7 +51,7 @@ let map1;
 let metroRequire;
 let tmp;
 const SentryUtilsDefault = tmp(1242);
-const MobileNitroUpsellInShopFeedExperimentDefault = tmp(18527);
+const MobileNitroUpsellInShopFeedExperimentDefault = tmp(17340);
 function ImprovedLoadingCollectiblesShopInternal(arg0) {
   let isImprovedMobileShopLoadingEnabled;
   const obj2 = { improvedLoading: isImprovedMobileShopLoadingEnabled };
@@ -99,7 +99,7 @@ class CollectiblesShopV2 {
       }
     }, items1);
     const tmp5Result = nativePaymentsConnected(1380);
-    const tmp11 = tmp5Result.isIOS() && !nativePaymentsConnected(6770).isStable && isStaffResult;
+    const tmp11 = tmp5Result.isIOS() && !nativePaymentsConnected(6273).isStable && isStaffResult;
     if (!nativePaymentsConnected) {
       if (!tmp11) {
         if (!tmp9) {
@@ -114,7 +114,7 @@ class CollectiblesShopV2 {
       SentryUtilsDefault;
       nativePaymentsConnected(1380);
       const text = `collectibles mobile shop failed to connect to native payments isIOS: ${obj6.isIOS()}`;
-      captureMessage(`${`collectibles mobile shop failed to connect to native payments isIOS: ${obj6.isIOS()}`} isStable: ${nativePaymentsConnected(6770).isStable}`);
+      captureMessage(`${`collectibles mobile shop failed to connect to native payments isIOS: ${obj6.isIOS()}`} isStable: ${nativePaymentsConnected(6273).isStable}`);
     }
     if (screen.screen !== constants.ORBS) {
       let tmp23;
@@ -317,7 +317,7 @@ function CollectiblesShopInternal(analyticsSource) {
       if (true !== isFetchingCategories) {
         const obj = PlatformUtils;
         if (false !== obj.isAndroid()) {
-          const getGoogleSkuIds = tmp4(10183).getGoogleSkuIds;
+          const getGoogleSkuIds = tmp4(9464).getGoogleSkuIds;
           const items = [];
           collectibles_CollectiblesUtils;
           HermesBuiltin.arraySpread(items, categories.values(), 0);
@@ -541,7 +541,7 @@ function CollectiblesShopInternal(analyticsSource) {
       const tmp19 = authStore5;
       const tmp20 = require;
       if (closure_31 == null) {
-        GET_NITRO = tmp20(18527).NitroUpsellBannerButtonVariant.GET_NITRO;
+        GET_NITRO = tmp20(17340).NitroUpsellBannerButtonVariant.GET_NITRO;
       }
       tmp19Result = tmp19(ShopNitroUpsellBanner, obj2);
     } else {

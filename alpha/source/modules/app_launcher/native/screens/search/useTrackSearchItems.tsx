@@ -1,10 +1,10 @@
-// Module ID: 13594
-// Function ID: 13595
+// Module ID: 12901
+// Function ID: 12902
 // Name: useTrackSearchItems
-// Dependencies: [19, 12773, 6336, 1264, 5979, 2]
+// Dependencies: [19, 12067, 5838, 1264, 5475, 2]
 // Exports: useTrackSearchItems
 
-// Module 13594 (useTrackSearchItems)
+// Module 12901 (useTrackSearchItems)
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -14,16 +14,16 @@ let _require, dependencyMap, viewableItems;
 let react = react_mod;
 const result = size.fileFinishedImporting("modules/app_launcher/native/screens/search/useTrackSearchItems.tsx");
 
-export function useTrackSearchItems(callback3, memo1, set) {
+export function useTrackSearchItems(callback3, memo1, map) {
   let current;
   let items;
   _require = callback3;
   dependencyMap = memo1;
-  react = set;
+  react = map;
   let obj = require("AppLauncherContext");
   const entrypoint = obj.useAppLauncherContext().entrypoint;
   let closure_4 = react.useRef({});
-  const ref = react.useRef(set);
+  const ref = react.useRef(map);
   let obj2 = {
     handleViewableItemsChanged: react.useCallback((viewableItems) => {
       let query;
@@ -55,6 +55,6 @@ export function useTrackSearchItems(callback3, memo1, set) {
       });
     }, items)
   };
-  items = [entrypoint, callback3, memo1, set];
+  items = [entrypoint, callback3, memo1, map];
   return obj2;
 }

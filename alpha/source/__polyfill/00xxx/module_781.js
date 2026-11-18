@@ -6,26 +6,26 @@
 // Module 781
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export function parseCookie(arr) {
+export function parseCookie(cookie) {
   const obj = {};
   let num = 0;
-  if (0 < arr.length) {
-    const index = arr.indexOf("=", num);
+  if (0 < cookie.length) {
+    const index = cookie.indexOf("=", num);
     if (-1 !== index) {
-      let length = arr.indexOf(";", num);
+      let length = cookie.indexOf(";", num);
       if (-1 === length) {
-        length = arr.length;
+        length = cookie.length;
       } else {
         let sum;
         if (length < index) {
-          sum = arr.lastIndexOf(";", index - 1) + 1;
+          sum = cookie.lastIndexOf(";", index - 1) + 1;
         }
         num = sum;
       }
-      const str = arr.slice(num, index);
+      const str = cookie.slice(num, index);
       const trimmed = str.trim();
       if (undefined === obj[trimmed]) {
-        const str2 = arr.slice(index + 1, length);
+        const str2 = cookie.slice(index + 1, length);
         const trimmed1 = str2.trim();
         let substr = trimmed1;
         if (34 === trimmed1.charCodeAt(0)) {

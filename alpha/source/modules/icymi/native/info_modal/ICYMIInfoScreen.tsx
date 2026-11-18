@@ -1,19 +1,19 @@
-// Module ID: 19347
-// Function ID: 19348
+// Module ID: 18161
+// Function ID: 18162
 // Name: ICYMIInfoScreen
-// Dependencies: [32, 5, 19, 17, 1083, 21, 5310, 575, 5886, 1630, 5541, 1502, 16886, 19348, 6833, 9062, 9070, 1113, 6014, 19350, 19351, 19352, 19353, 5923, 13091, 15755, 7940, 5546, 19354, 2121, 5930, 2]
+// Dependencies: [32, 5, 19, 17, 1083, 21, 4823, 575, 5377, 1630, 5032, 1502, 15569, 18162, 6337, 8473, 8481, 1113, 5510, 18164, 18165, 18166, 18167, 5414, 12389, 14388, 7443, 5037, 18168, 2121, 5421, 2]
 // Exports: default
 
-// Module 19347 (ICYMIInfoScreen)
+// Module 18161 (ICYMIInfoScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
-import NavigatorConstants from "NavigatorConstants" /* 5886 */;
+import NavigatorConstants from "NavigatorConstants" /* 5377 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size_mod from "module_2" /* 2 */;
 
 let c2, dependencyMap, navigation;
@@ -86,7 +86,7 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
   const tmp3 = dependencyMap;
   ({ top, bottom } = navigation(1630)());
   const tmp4 = navigation(1630)();
-  const tmp5 = navigation(5541)();
+  const tmp5 = navigation(5032)();
   let obj = extendedOnboarding(1502);
   navigation = obj.useNavigation();
   const items = [extendedOnboarding, navigation];
@@ -167,7 +167,7 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
   let obj2 = { style: items2, children: closure_9(HeaderIconButton, obj3) };
   items2 = [{ marginTop: top }, tmp.closeIcon];
   obj3 = {
-    source: navigation(9070),
+    source: navigation(8481),
     onPress() {
       const arr = navigation(closure_2[14]);
       return arr.pop();
@@ -175,14 +175,14 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
     accessibilityLabel: intl.string(extendedOnboarding(1113).t.cpT0Cq),
     color: tmp.closeIconColor.backgroundColor
   };
-  HeaderIconButton = extendedOnboarding(9062).HeaderIconButton;
+  HeaderIconButton = extendedOnboarding(8473).HeaderIconButton;
   intl = extendedOnboarding(1113).intl;
   const items3 = [closure_9(closure_6, obj2), , ];
   let obj4 = { style: items4, children: items5 };
   items4 = [tmp.container, { marginBottom: bottom }];
   let obj5 = { source: obj6, style: tmp.bgImage };
-  obj6 = { uri: navigation(19350) };
-  const tmp17 = navigation(6014);
+  obj6 = { uri: navigation(18164) };
+  const tmp17 = navigation(5510);
   items5 = [closure_9(tmp17, obj5), ];
   const obj7 = { style: items6, children: items8 };
   items6 = [tmp.subContainer, { marginTop: top + navigation(575).space.PX_12 }];
@@ -190,24 +190,24 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
   ({ marginTop: top + navigation(575).space.PX_12 });
   const tmp13 = closure_11;
   const tmp16 = closure_7;
-  const tmp18 = navigation(6014);
+  const tmp18 = navigation(5510);
   if (tmp5 === ThemeTypes.LIGHT) {
-    tmp2Result = tmp2(19351);
+    tmp2Result = tmp2(18165);
   } else {
-    tmp2Result = tmp2(19352);
+    tmp2Result = tmp2(18166);
   }
   items7 = [, , , ];
   const obj10 = { source: { uri: tmp2Result }, style: tmp.headerImg };
   items7[0] = closure_9(tmp18, obj10);
-  const obj11 = { source: navigation(19353), style: tmp.flashIcon };
-  const tmp2Result2 = navigation(6014);
+  const obj11 = { source: navigation(18167), style: tmp.flashIcon };
+  const tmp2Result2 = navigation(5510);
   items7[1] = closure_9(tmp2Result2, obj11);
   const obj12 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl2.string(extendedOnboarding(1113).t["jnXV/V"]) };
-  const Text = tmp6(5923).Text;
+  const Text = tmp6(5414).Text;
   intl2 = tmp6(1113).intl;
   items7[2] = closure_9(Text, obj12);
   const obj13 = { variant: "body-md/normal", color: "text-default", style: tmp.headerText, children: intl3.string(extendedOnboarding(1113).t["9SjvoK"]) };
-  const Text2 = tmp6(5923).Text;
+  const Text2 = tmp6(5414).Text;
   intl3 = tmp6(1113).intl;
   items7[3] = closure_9(Text2, obj13);
   items8 = [tmp12(tmp15, obj9), ];
@@ -215,10 +215,10 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
   items9 = [, ];
   const obj14 = { children: items13 };
   const obj15 = { style: tmp.body, children: items10 };
-  const obj17 = { style: tmp.infoIcon, children: closure_9(extendedOnboarding(13091).ServerIcon, { size: "sm", color: "interactive-text-active" }) };
+  const obj17 = { style: tmp.infoIcon, children: closure_9(extendedOnboarding(12389).ServerIcon, { size: "sm", color: "interactive-text-active" }) };
   items9[0] = closure_9(closure_6, obj17);
   const obj18 = { variant: "body-md/medium", color: "mobile-text-heading-primary", style: tmp.infoText, children: intl4.string(extendedOnboarding(1113).t.knxfqR) };
-  const Text3 = tmp6(5923).Text;
+  const Text3 = tmp6(5414).Text;
   intl4 = tmp6(1113).intl;
   items9[1] = closure_9(Text3, obj18);
   items10 = [tmp12(tmp15, obj16), , , , ];
@@ -226,10 +226,10 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
   items10[1] = closure_9(closure_6, obj19);
   const obj20 = { style: tmp.infoRow, children: items11 };
   items11 = [, ];
-  const obj21 = { style: tmp.infoIcon, children: closure_9(extendedOnboarding(15755).NewUserIcon, { size: "sm", color: "interactive-text-active" }) };
+  const obj21 = { style: tmp.infoIcon, children: closure_9(extendedOnboarding(14388).NewUserIcon, { size: "sm", color: "interactive-text-active" }) };
   items11[0] = closure_9(closure_6, obj21);
   const obj22 = { variant: "body-md/medium", color: "mobile-text-heading-primary", style: tmp.infoText, children: intl5.string(extendedOnboarding(1113).t.BnUXZi) };
-  const Text4 = tmp6(5923).Text;
+  const Text4 = tmp6(5414).Text;
   intl5 = tmp6(1113).intl;
   items11[1] = closure_9(Text4, obj22);
   items10[2] = closure_10(closure_6, obj20);
@@ -237,16 +237,16 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
   items10[3] = closure_9(closure_6, obj23);
   const obj24 = { style: tmp.infoRow, children: items12 };
   items12 = [, ];
-  const obj25 = { style: tmp.infoIcon, children: closure_9(extendedOnboarding(7940).CircleCheckIcon, { size: "sm", color: "interactive-text-active" }) };
+  const obj25 = { style: tmp.infoIcon, children: closure_9(extendedOnboarding(7443).CircleCheckIcon, { size: "sm", color: "interactive-text-active" }) };
   items12[0] = closure_9(closure_6, obj25);
   const obj26 = { variant: "body-md/medium", color: "mobile-text-heading-primary", style: tmp.infoText, children: intl6.string(extendedOnboarding(1113).t.itb1rh) };
-  const Text5 = tmp6(5923).Text;
+  const Text5 = tmp6(5414).Text;
   intl6 = tmp6(1113).intl;
   items12[1] = closure_9(Text5, obj26);
   items10[4] = closure_10(closure_6, obj24);
   items13 = [tmp12(tmp15, obj15), ];
   const obj27 = { variant: "body-xs/medium", color: "text-muted", style: tmp.hint, children: intl7.format(extendedOnboarding(1113).t["jVS/hc"], obj28) };
-  const Text6 = tmp6(5923).Text;
+  const Text6 = tmp6(5414).Text;
   intl7 = tmp6(1113).intl;
   obj28 = {
     feedbackHook(children, arg1) {
@@ -269,7 +269,7 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
   const obj29 = { style: items14, children: closure_9(Button, obj30) };
   items14 = [{ marginBottom: bottom }, tmp.footer];
   obj30 = { size: "lg", loading: first, text: stringResult, onPress: callback };
-  Button = tmp6(5930).Button;
+  Button = tmp6(5421).Button;
   const intl8 = tmp6(1113).intl;
   const string = intl8.string;
   const t = tmp6(1113).t;

@@ -1,19 +1,19 @@
-// Module ID: 7438
-// Function ID: 7439
+// Module ID: 6941
+// Function ID: 6942
 // Name: Pressables
-// Dependencies: [19, 17, 5940, 1191, 21, 5310, 575, 1380, 7439, 2]
+// Dependencies: [19, 17, 5431, 1191, 21, 4823, 575, 1380, 6942, 2]
 // Exports: PressableHighlight, PressableOpacity
 
-// Module 7438 (Pressables)
+// Module 6941 (Pressables)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import FormConstants from "FormConstants" /* 1191 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import react_native2 from "react-native" /* 5940 */;
-import StyleSheetUtilsDefault from "StyleSheetUtils" /* 7439 */;
+import react_native2 from "react-native" /* 5431 */;
+import StyleSheetUtilsDefault from "StyleSheetUtils" /* 6942 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

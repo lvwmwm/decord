@@ -1,16 +1,16 @@
-// Module ID: 14101
-// Function ID: 14102
+// Module ID: 13405
+// Function ID: 13406
 // Name: GuildPowerupsBoostButton
-// Dependencies: [19, 5181, 1388, 9245, 1072, 21, 504, 8540, 1401, 6950, 14102, 2]
+// Dependencies: [19, 4694, 1388, 8656, 1072, 21, 504, 8031, 1401, 6454, 13406, 2]
 // Exports: GuildPowerupsBoostButton
 
-// Module 14101 (GuildPowerupsBoostButton)
+// Module 13405 (GuildPowerupsBoostButton)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5181 */;
+import GuildStore from "GuildStore" /* 4694 */;
 import UserStore from "UserStore" /* 1388 */;
-import GuildBoostSlotStore from "GuildBoostSlotStore" /* 9245 */;
+import GuildBoostSlotStore from "GuildBoostSlotStore" /* 8656 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticsSections = Constants.AnalyticsSections;
@@ -29,7 +29,7 @@ export function GuildPowerupsBoostButton(guildId) {
   const items1 = [GuildBoostSlotStore];
   const stateFromStores1 = obj2.useStateFromStores(items1, () => boostSlots.boostSlots);
   const items2 = [UserStore];
-  const tmp6 = stateFromStores1(8540)({ forceFetch: true });
+  const tmp6 = stateFromStores1(8031)({ forceFetch: true });
   const obj3 = guildId(504);
   const stateFromStores2 = obj3.useStateFromStores(items2, () => currentUser.getCurrentUser());
   const tmp = guildId;
@@ -46,7 +46,7 @@ export function GuildPowerupsBoostButton(guildId) {
   }, items3);
   let tmp10 = null;
   if (null != stateFromStores) {
-    tmp10 = jsx(tmp5(14102), { guild: stateFromStores, previousGuildSubscriptionSlot: memo, analyticsSection: AnalyticsSections.GUILD_POWERUPS_OVERVIEW_SIDEBAR, fractionalPremiumState: tmp6.fractionalState, onAvailableSlotPress: tmp9, premiumGroupRole: UNSPECIFIED });
+    tmp10 = jsx(tmp5(13406), { guild: stateFromStores, previousGuildSubscriptionSlot: memo, analyticsSection: AnalyticsSections.GUILD_POWERUPS_OVERVIEW_SIDEBAR, fractionalPremiumState: tmp6.fractionalState, onAvailableSlotPress: tmp9, premiumGroupRole: UNSPECIFIED });
   }
   return tmp10;
 }

@@ -1,0 +1,8 @@
+// Module ID: 5090
+// Function ID: 5091
+// Name: TouchEventType
+// Dependencies: []
+
+// Module 5090 (TouchEventType)
+
+export const TouchEventType = { UNDETERMINED: 0, TOUCHES_DOWN: 1, TOUCHES_MOVE: 2, TOUCHES_UP: 3, TOUCHES_CANCEL: 4 };

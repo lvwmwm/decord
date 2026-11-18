@@ -1,17 +1,17 @@
-// Module ID: 14173
-// Function ID: 14174
+// Module ID: 13477
+// Function ID: 13478
 // Name: ChatPlaceholder
-// Dependencies: [19, 17, 11060, 21, 5310, 575, 1630, 5907, 1496, 7485, 1655, 14174, 14175, 14176, 2]
+// Dependencies: [19, 17, 10342, 21, 4823, 575, 1630, 5398, 1496, 6988, 1655, 13478, 13479, 13480, 2]
 
-// Module 14173 (ChatPlaceholder)
+// Module 13477 (ChatPlaceholder)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 11060 */;
-import getChatPlaceholderRowHeightDefault from "getChatPlaceholderRowHeight" /* 14175 */;
-import ChatPlaceholderRowDefault from "ChatPlaceholderRow" /* 14176 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 10342 */;
+import getChatPlaceholderRowHeightDefault from "getChatPlaceholderRowHeight" /* 13479 */;
+import ChatPlaceholderRowDefault from "ChatPlaceholderRow" /* 13480 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -47,8 +47,8 @@ const memoResult = react.memo(function ChatPlaceholder(screenIndex) {
   const rect = height(1630)();
   let sum = rect.top + rect.bottom;
   dependencyMap = sum;
-  let diff = height(5907)({ isKeyboardAwareOnAndroid: false, includeKeyboardHeight: true }).insets.bottom - rect.bottom;
-  const tmp7 = height(7485)(diff);
+  let diff = height(5398)({ isKeyboardAwareOnAndroid: false, includeKeyboardHeight: true }).insets.bottom - rect.bottom;
+  const tmp7 = height(6988)(diff);
   let obj = require("module_1655");
   let items = [closure_7, tmp2, tmp7];
   let c0;
@@ -78,7 +78,7 @@ const memoResult = react.memo(function ChatPlaceholder(screenIndex) {
     return tmp2;
   }, []);
   const items2 = [height, sum, tmp2, callback];
-  const tmp13 = tmp3(14174)({ visible: true, animated: true });
+  const tmp13 = tmp3(13478)({ visible: true, animated: true });
   const memo = callback.useMemo(() => {
     let diff;
     const items = [];

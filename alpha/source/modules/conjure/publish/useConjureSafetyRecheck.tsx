@@ -1,13 +1,13 @@
-// Module ID: 14392
-// Function ID: 14393
+// Module ID: 18303
+// Function ID: 18304
 // Name: useConjureSafetyRecheck
-// Dependencies: [7387, 1113, 4133, 504, 2]
+// Dependencies: [6890, 1113, 4121, 504, 2]
 // Exports: default, getConjureSafetyHoldCopy, getConjureSafetyRecheckNotice
 
-// Module 14392 (useConjureSafetyRecheck)
+// Module 18303 (useConjureSafetyRecheck)
 import intl5 from "intl" /* 1113 */;
-import _modDef4133 from "module_4133" /* 4133 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 7387 */;
+import _modDef4121 from "module_4121" /* 4121 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 6890 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -34,12 +34,12 @@ export function getConjureSafetyHoldCopy(status) {
     status = status.status;
   }
   if ("cleared" === status) {
-    const obj2 = { title: intl3.string(_modDef4133.vVnbEq), body: intl4.string(_modDef4133["qY/RLI"]) };
+    const obj2 = { title: intl3.string(_modDef4121.vVnbEq), body: intl4.string(_modDef4121["qY/RLI"]) };
     intl3 = intl5.intl;
     intl4 = intl5.intl;
     obj = obj2;
   } else {
-    obj = { title: intl.string(_modDef4133.ebqlWe), body: intl2.string(_modDef4133.UOr0cK) };
+    obj = { title: intl.string(_modDef4121.ebqlWe), body: intl2.string(_modDef4121.UOr0cK) };
     intl = intl5.intl;
     intl2 = intl5.intl;
   }
@@ -56,11 +56,11 @@ export function getConjureSafetyRecheckNotice(status) {
   if (undefined !== status) {
     if ("cleared" !== status) {
       if ("pending" === status) {
-        const obj2 = { message: intl4.string(_modDef4133.HsOGKK), type: "info" };
+        const obj2 = { message: intl4.string(_modDef4121.HsOGKK), type: "info" };
         intl4 = intl5.intl;
         return obj2;
       } else if ("held" === status) {
-        const obj3 = { message: intl3.formatToPlainString(_modDef4133.t8GlRz, obj4), type: "critical" };
+        const obj3 = { message: intl3.formatToPlainString(_modDef4121.t8GlRz, obj4), type: "critical" };
         intl3 = intl5.intl;
         return obj3;
       } else if ("limited" === status) {
@@ -68,14 +68,14 @@ export function getConjureSafetyRecheckNotice(status) {
         const intl2 = intl5.intl;
         const string = intl2.string;
         if ("daily" === status.limit) {
-          ikIoxj = _modDef4133["TtE+rz"];
+          ikIoxj = _modDef4121["TtE+rz"];
         } else {
-          ikIoxj = _modDef4133.ikIoxj;
+          ikIoxj = _modDef4121.ikIoxj;
         }
         const obj5 = { message: string(ikIoxj), type: "warning" };
         return obj5;
       } else if ("unavailable" === status) {
-        const obj = { message: intl.string(_modDef4133.FxilA2), type: "warning" };
+        const obj = { message: intl.string(_modDef4121.FxilA2), type: "warning" };
         intl = intl5.intl;
         return obj;
       }

@@ -1,25 +1,25 @@
-// Module ID: 12306
-// Function ID: 12307
+// Module ID: 11588
+// Function ID: 11589
 // Name: MediaKeyboardList
-// Dependencies: [32, 19, 17, 1497, 1626, 5561, 6900, 21, 5310, 575, 1655, 1708, 12307, 12310, 8210, 1499, 1630, 1496, 5886, 5564, 11334, 8892, 12, 12311, 12318, 12320, 11989, 12321, 8211, 7857, 1113, 2]
+// Dependencies: [32, 19, 17, 1497, 1626, 5052, 6404, 21, 4823, 575, 1655, 1708, 11589, 11592, 7713, 1499, 1630, 1496, 5377, 5055, 10616, 8388, 12, 11593, 11600, 11602, 11271, 11603, 7714, 7360, 1113, 2]
 
-// Module 12306 (MediaKeyboardList)
+// Module 11588 (MediaKeyboardList)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1626 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5561 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 6900 */;
-import react_nativeDefault from "react-native" /* 8210 */;
-import DeviceMediaDefault from "DeviceMedia" /* 12307 */;
-import MediaKeyboardItem from "MediaKeyboardItem" /* 12311 */;
-import MediaKeyboardFooterDefault from "MediaKeyboardFooter" /* 12318 */;
-import MediaKeyboardLimitedPickerNoticeDefault from "MediaKeyboardLimitedPickerNotice" /* 12320 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5052 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 6404 */;
+import react_nativeDefault from "react-native" /* 7713 */;
+import DeviceMediaDefault from "DeviceMedia" /* 11589 */;
+import MediaKeyboardItem from "MediaKeyboardItem" /* 11593 */;
+import MediaKeyboardFooterDefault from "MediaKeyboardFooter" /* 11600 */;
+import MediaKeyboardLimitedPickerNoticeDefault from "MediaKeyboardLimitedPickerNotice" /* 11602 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import DimensionsStore from "DimensionsStore" /* 1497 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 const MediaKeyboardItemDefault = MediaKeyboardItem;

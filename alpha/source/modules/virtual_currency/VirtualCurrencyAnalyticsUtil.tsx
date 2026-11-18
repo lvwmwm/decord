@@ -1,10 +1,10 @@
-// Module ID: 17565
-// Function ID: 17566
+// Module ID: 16222
+// Function ID: 16223
 // Name: VirtualCurrencyAnalyticsUtil
 // Dependencies: [1072, 1256, 2]
 // Exports: trackOrbsClick
 
-// Module 17565 (VirtualCurrencyAnalyticsUtil)
+// Module 16222 (VirtualCurrencyAnalyticsUtil)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import size from "module_2" /* 2 */;

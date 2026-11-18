@@ -222,7 +222,7 @@ export function truncateGenAiMessages(filteredMessages) {
       }
     }
   }
-  const f82813 = (content) => {
+  const f80390 = (content) => {
     let parts;
     let tmp2;
     const tmp = content && typeof content === "object";
@@ -236,7 +236,7 @@ export function truncateGenAiMessages(filteredMessages) {
         isArray = Array.isArray(content.content);
       }
       if (isArray) {
-        const obj2 = { content: content.map(f82813) };
+        const obj2 = { content: content.map(f80390) };
         const merged = Object.assign(content);
         content = content.content;
         tmp9 = obj2;
@@ -267,7 +267,7 @@ export function truncateGenAiMessages(filteredMessages) {
         if (tmp9 == null) {
           tmp19 = content;
         }
-        const obj3 = { parts: parts.map(f82813) };
+        const obj3 = { parts: parts.map(f80390) };
         const merged2 = Object.assign(tmp19);
         parts = content.parts;
         tmp18 = obj3;
@@ -294,7 +294,7 @@ export function truncateGenAiMessages(filteredMessages) {
     tmp2 = filteredMessages;
     if (0 !== filteredMessages.length) {
       let items = [filteredMessages[filteredMessages.length - 1]];
-      let mapped = items.map(f82813);
+      let mapped = items.map(f80390);
       const first = mapped[0];
       if (typeof jsonBytes === "function") {
         const _JSON = JSON;

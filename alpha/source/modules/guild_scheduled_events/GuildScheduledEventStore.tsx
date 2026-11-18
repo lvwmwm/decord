@@ -1,17 +1,17 @@
-// Module ID: 7037
-// Function ID: 7038
+// Module ID: 6541
+// Function ID: 6542
 // Name: GuildScheduledEventStore
-// Dependencies: [502, 5222, 5165, 5237, 12, 11, 504, 572, 2]
+// Dependencies: [502, 4735, 4678, 4750, 12, 11, 504, 572, 2]
 // Exports: eventScheduledToStartWithin, isEventUpcoming, isGuildEventEnded, isGuildScheduledEventActive, scheduledEventSort
 
-// Module 7037 (GuildScheduledEventStore)
+// Module 6541 (GuildScheduledEventStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import SecondaryIndexMap from "SecondaryIndexMap" /* 5237 */;
+import SecondaryIndexMap from "SecondaryIndexMap" /* 4750 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 5222 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 5165 */;
+import GuildMemberStore from "GuildMemberStore" /* 4735 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4678 */;
 import size from "module_2" /* 2 */;
 
 let closure_12, closure_13;

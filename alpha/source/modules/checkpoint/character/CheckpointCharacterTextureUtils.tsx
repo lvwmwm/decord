@@ -1,12 +1,12 @@
-// Module ID: 13167
-// Function ID: 13168
+// Module ID: 12470
+// Function ID: 12471
 // Name: CheckpointCharacterTextureUtils
-// Dependencies: [2024, 13168, 2]
+// Dependencies: [2024, 12471, 2]
 // Exports: getCheckpointCharacterTextureRole, getCheckpointCharacterTextureScale, getCheckpointCharacterTextureUrl
 
-// Module 13167 (CheckpointCharacterTextureUtils)
+// Module 12470 (CheckpointCharacterTextureUtils)
 import react_nativeDefault from "react-native" /* 2024 */;
-import CheckpointCharacterTextureAssets from "CheckpointCharacterTextureAssets" /* 13168 */;
+import CheckpointCharacterTextureAssets from "CheckpointCharacterTextureAssets" /* 12471 */;
 import size from "module_2" /* 2 */;
 
 const CheckpointCharacterTextureType = { SLOT: "slot", TRAIT: "trait", LAYOUT: "layout", ALWAYS: "always" };
@@ -56,7 +56,7 @@ export function getCheckpointCharacterTextureRole(name) {
     }
   }
 }
-export function getCheckpointCharacterTextureScale(c3, height, arg2) {
+export function getCheckpointCharacterTextureScale(c4, height, arg2) {
   let flag = arg2;
   if (arg2 === undefined) {
     flag = false;
@@ -66,7 +66,7 @@ export function getCheckpointCharacterTextureScale(c3, height, arg2) {
     return closure_12;
   } else {
     const _Math = Math;
-    const result = Math.max(c3, height) / 1440;
+    const result = Math.max(c4, height) / 1440;
     closure_0 = result * react_nativeDefault();
     let found = items.find((item) => item >= closure_0);
     if (found == null) {

@@ -1,16 +1,16 @@
-// Module ID: 17334
-// Function ID: 17335
+// Module ID: 15991
+// Function ID: 15992
 // Name: AccountViewBackupCodesSetting
-// Dependencies: [19, 9213, 1072, 17327, 1113, 1187, 17335, 12612, 17245, 17337, 2]
+// Dependencies: [19, 8624, 1072, 15984, 1113, 1187, 15992, 11897, 15902, 15994, 2]
 
-// Module 17334 (AccountViewBackupCodesSetting)
+// Module 15991 (AccountViewBackupCodesSetting)
 import intl5 from "intl" /* 1113 */;
-import SettingsConstants from "SettingsConstants" /* 9213 */;
-import SettingsAccountUtils from "SettingsAccountUtils" /* 17245 */;
-import MFAActionCreatorsDefault from "MFAActionCreators" /* 17327 */;
+import SettingsConstants from "SettingsConstants" /* 8624 */;
+import SettingsAccountUtils from "SettingsAccountUtils" /* 15902 */;
+import MFAActionCreatorsDefault from "MFAActionCreators" /* 15984 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
-import SettingBuilders from "SettingBuilders" /* 12612 */;
+import SettingBuilders from "SettingBuilders" /* 11897 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

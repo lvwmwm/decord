@@ -1,14 +1,14 @@
-// Module ID: 19174
-// Function ID: 19175
+// Module ID: 17985
+// Function ID: 17986
 // Name: HomeDrawerAddServerRow
-// Dependencies: [19, 21, 19127, 5923, 1113, 2]
+// Dependencies: [19, 21, 17938, 5414, 1113, 2]
 // Exports: HomeDrawerAddServerRowExpandedChildren
 
-// Module 19174 (HomeDrawerAddServerRow)
+// Module 17985 (HomeDrawerAddServerRow)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5923 */;
-import HomeDrawerShared from "HomeDrawerShared" /* 19127 */;
+import Text_Text from "Text/Text" /* 5414 */;
+import HomeDrawerShared from "HomeDrawerShared" /* 17938 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

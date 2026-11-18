@@ -1,20 +1,20 @@
-// Module ID: 9009
-// Function ID: 9010
+// Module ID: 8420
+// Function ID: 8421
 // Name: getChannelOpenedMetadata
-// Dependencies: [5159, 5181, 5242, 7023, 6956, 1388, 1072, 5166, 6064, 1089, 9010, 9011, 2]
+// Dependencies: [4672, 4694, 4755, 6527, 6460, 1388, 1072, 4679, 5560, 1089, 8421, 8422, 2]
 // Exports: getChannelOpenedMetadata
 
-// Module 9009 (getChannelOpenedMetadata)
+// Module 8420 (getChannelOpenedMetadata)
 import DurationsDefault from "Durations" /* 1089 */;
-import ChannelConstants from "ChannelConstants" /* 5166 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6064 */;
-import notificationSettingsPresetUtils from "notificationSettingsPresetUtils" /* 9010 */;
-import hasPendingMemberAction from "hasPendingMemberAction" /* 9011 */;
-import ChannelStore from "ChannelStore" /* 5159 */;
-import GuildStore from "GuildStore" /* 5181 */;
-import PermissionStore from "PermissionStore" /* 5242 */;
-import ReadStateStore from "ReadStateStore" /* 7023 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6956 */;
+import ChannelConstants from "ChannelConstants" /* 4679 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5560 */;
+import notificationSettingsPresetUtils from "notificationSettingsPresetUtils" /* 8421 */;
+import hasPendingMemberAction from "hasPendingMemberAction" /* 8422 */;
+import ChannelStore from "ChannelStore" /* 4672 */;
+import GuildStore from "GuildStore" /* 4694 */;
+import PermissionStore from "PermissionStore" /* 4755 */;
+import ReadStateStore from "ReadStateStore" /* 6527 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6460 */;
 import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;

@@ -1,17 +1,17 @@
-// Module ID: 7027
-// Function ID: 7028
+// Module ID: 6531
+// Function ID: 6532
 // Name: FramesStore
-// Dependencies: [7028, 5953, 1083, 5968, 1381, 504, 7029, 7030, 572, 2]
+// Dependencies: [6532, 5449, 1083, 5464, 1381, 504, 6533, 6534, 572, 2]
 
-// Module 7027 (FramesStore)
+// Module 6531 (FramesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1083 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5953 */;
-import getURLForApplicationDefault from "getURLForApplication" /* 5968 */;
-import EmbeddedAppTypes from "EmbeddedAppTypes" /* 7029 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 7030 */;
-import FramesConstants from "FramesConstants" /* 7028 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5449 */;
+import getURLForApplicationDefault from "getURLForApplication" /* 5464 */;
+import EmbeddedAppTypes from "EmbeddedAppTypes" /* 6533 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6534 */;
+import FramesConstants from "FramesConstants" /* 6532 */;
 import size from "module_2" /* 2 */;
 
 let set;

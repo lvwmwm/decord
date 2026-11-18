@@ -1,17 +1,17 @@
-// Module ID: 12664
-// Function ID: 12665
+// Module ID: 11949
+// Function ID: 11950
 // Name: handleMessagesTapChannel
-// Dependencies: [5, 5163, 5177, 5159, 5181, 5242, 1072, 7238, 6920, 7667, 9364, 12665, 7272, 6042, 11101, 5950, 6898, 6933, 2]
+// Dependencies: [5, 4676, 4690, 4672, 4694, 4755, 1072, 6742, 6424, 7170, 8775, 11950, 6776, 5538, 10383, 5446, 6402, 6437, 2]
 // Exports: handleMessagesTapChannel
 
-// Module 12664 (handleMessagesTapChannel)
-import ChannelRecord from "ChannelRecord" /* 5163 */;
-import GuildRecord from "GuildRecord" /* 5177 */;
-import GuildDiscoveryUtilsAll from "GuildDiscoveryUtils" /* 7238 */;
+// Module 11949 (handleMessagesTapChannel)
+import ChannelRecord from "ChannelRecord" /* 4676 */;
+import GuildRecord from "GuildRecord" /* 4690 */;
+import GuildDiscoveryUtilsAll from "GuildDiscoveryUtils" /* 6742 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 5159 */;
-import GuildStore from "GuildStore" /* 5181 */;
-import PermissionStore from "PermissionStore" /* 5242 */;
+import ChannelStore from "ChannelStore" /* 4672 */;
+import GuildStore from "GuildStore" /* 4694 */;
+import PermissionStore from "PermissionStore" /* 4755 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

@@ -1,22 +1,22 @@
-// Module ID: 12902
-// Function ID: 12903
+// Module ID: 12197
+// Function ID: 12198
 // Name: GameOrganizationCharacterList
-// Dependencies: [19, 17, 21, 5310, 575, 1113, 2565, 5923, 6335, 7633, 5896, 5372, 7455, 12900, 7756, 2]
+// Dependencies: [19, 17, 21, 4823, 575, 1113, 2555, 5414, 5837, 7136, 5387, 4885, 6958, 12047, 7259, 2]
 // Exports: default
 
-// Module 12902 (GameOrganizationCharacterList)
+// Module 12197 (GameOrganizationCharacterList)
 import nativeDefault from "native" /* 575 */;
-import _modDef2565 from "module_2565" /* 2565 */;
-import react_native from "react-native" /* 5372 */;
-import useToken from "useToken" /* 5896 */;
-import Text_Text from "Text/Text" /* 5923 */;
-import Stack_Stack from "Stack/Stack" /* 6335 */;
-import CircleErrorIcon2 from "CircleErrorIcon" /* 7633 */;
-import GameOrganizationIconDefault from "GameOrganizationIcon" /* 12900 */;
+import _modDef2555 from "module_2555" /* 2555 */;
+import react_native from "react-native" /* 4885 */;
+import useToken from "useToken" /* 5387 */;
+import Text_Text from "Text/Text" /* 5414 */;
+import Stack_Stack from "Stack/Stack" /* 5837 */;
+import CircleErrorIcon2 from "CircleErrorIcon" /* 7136 */;
+import GameOrganizationIconDefault from "GameOrganizationIcon" /* 12047 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -95,7 +95,7 @@ let closure_9 = react.memo(function CharacterCard(character) {
     if (description == null) {
       const intl = tmp2(1113).intl;
       const obj3 = { noun };
-      formatToPlainStringResult = intl.formatToPlainString(tmp4(2565).VNY3C1, obj3);
+      formatToPlainStringResult = intl.formatToPlainString(tmp4(2555).VNY3C1, obj3);
     }
   }
   const obj4 = {
@@ -110,7 +110,7 @@ let closure_9 = react.memo(function CharacterCard(character) {
     accessibilityLabel: name,
     children: metroRequire(Stack, obj5)
   };
-  const Card = tmp2(7455).Card;
+  const Card = tmp2(6958).Card;
   if (null != formatToPlainStringResult) {
     const _HermesInternal = HermesInternal;
     name = "" + character.name + ", " + formatToPlainStringResult;
@@ -118,7 +118,7 @@ let closure_9 = react.memo(function CharacterCard(character) {
     name = character.name;
   }
   obj5 = { direction: "horizontal", spacing: nativeDefault.space.PX_16, align: "center", style: items, children: items1 };
-  Stack = tmp2(6335).Stack;
+  Stack = tmp2(5837).Stack;
   items = [tmp.cardContent, selected && tmp.selectedCardContent];
   let tmp10Result = selected;
   if (tmp10Result) {
@@ -126,14 +126,14 @@ let closure_9 = react.memo(function CharacterCard(character) {
     tmp10Result = tmp10(React3, obj6);
   }
   items1 = [tmp10Result, , , ];
-  const obj7 = { iconUrl: character.iconUrl, size: 48, borderRadius: nativeDefault.radii.md };
+  const obj7 = { iconUrl: character.iconUrl, size: 48, borderRadius: nativeDefault.radii.md, fallback: "character" };
   const tmp4Result = GameOrganizationIconDefault;
   items1[1] = hasOwnProperty(tmp4Result, obj7);
   const obj8 = { spacing: nativeDefault.space.PX_4, style: tmp.labels, children: items2 };
-  const Stack2 = tmp2(6335).Stack;
+  const Stack2 = tmp2(5837).Stack;
   const obj9 = { variant: token, color: str3, children: character.name };
   str3 = "text-default";
-  const Text = tmp2(5923).Text;
+  const Text = tmp2(5414).Text;
   if (!eligible) {
     str3 = "text-muted";
   }
@@ -176,9 +176,9 @@ export default function GameOrganizationCharacterList(characters) {
   }, items);
   let someResult = characters.some((eligible) => !eligible.eligible);
   let obj = { spacing: nativeDefault.space.PX_12, children: items1 };
-  const Stack = characters(6335).Stack;
-  const obj2 = { style: tmp.title, title: intl.formatToPlainString(_modDef2565["Xm+emB"], { noun }) };
-  const TableRowGroupTitle = characters(7756).TableRowGroupTitle;
+  const Stack = characters(5837).Stack;
+  const obj2 = { style: tmp.title, title: intl.formatToPlainString(_modDef2555["Xm+emB"], { noun }) };
+  const TableRowGroupTitle = characters(7259).TableRowGroupTitle;
   intl = characters(1113).intl;
   items1 = [closure_5(TableRowGroupTitle, obj2), , ];
   const obj3 = {
@@ -193,8 +193,8 @@ export default function GameOrganizationCharacterList(characters) {
   const tmp3 = closure_6;
   const tmp7 = closure_5;
   if (someResult) {
-    const obj4 = { variant: "body-md/medium", color: "text-subtle", children: intl2.formatToPlainString(_modDef2565.ybJIQJ, obj5) };
-    const Text = tmp4(5923).Text;
+    const obj4 = { variant: "body-md/medium", color: "text-subtle", children: intl2.formatToPlainString(_modDef2555.ybJIQJ, obj5) };
+    const Text = tmp4(5414).Text;
     intl2 = tmp4(1113).intl;
     obj5 = { noun };
     someResult = tmp7(Text, obj4);

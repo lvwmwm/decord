@@ -1,8 +1,8 @@
-// Module ID: 6644
-// Function ID: 6645
+// Module ID: 6146
+// Function ID: 6147
 // Dependencies: [2]
 
-// Module 6644
+// Module 6146
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/face/spellbound.png.js");

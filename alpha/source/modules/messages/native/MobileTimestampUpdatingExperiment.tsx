@@ -1,10 +1,10 @@
-// Module ID: 12660
-// Function ID: 12661
+// Module ID: 11945
+// Function ID: 11946
 // Name: MobileTimestampUpdatingExperiment
 // Dependencies: [1452, 2]
 // Exports: useIsMobileTimestampUpdatingEnabled
 
-// Module 12660 (MobileTimestampUpdatingExperiment)
+// Module 11945 (MobileTimestampUpdatingExperiment)
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 

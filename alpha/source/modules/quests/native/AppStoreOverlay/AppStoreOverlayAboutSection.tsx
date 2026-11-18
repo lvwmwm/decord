@@ -1,17 +1,17 @@
-// Module ID: 11285
-// Function ID: 11286
+// Module ID: 10567
+// Function ID: 10568
 // Name: AppStoreOverlayAboutSection
-// Dependencies: [32, 19, 17, 21, 575, 5310, 10460, 1113, 5923, 10488, 2]
+// Dependencies: [32, 19, 17, 21, 575, 4823, 9741, 1113, 5414, 9769, 2]
 // Exports: default
 
-// Module 11285 (AppStoreOverlayAboutSection)
+// Module 10567 (AppStoreOverlayAboutSection)
 import nativeDefault from "native" /* 575 */;
-import DEFAULT_MAX_HTML_LENGTH from "DEFAULT_MAX_HTML_LENGTH" /* 10460 */;
+import DEFAULT_MAX_HTML_LENGTH from "DEFAULT_MAX_HTML_LENGTH" /* 9741 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

@@ -1,12 +1,12 @@
-// Module ID: 15723
-// Function ID: 15724
+// Module ID: 14356
+// Function ID: 14357
 // Name: useCardGridLayout
-// Dependencies: [7972, 1496, 2]
+// Dependencies: [7475, 1496, 2]
 // Exports: default
 
-// Module 15723 (useCardGridLayout)
+// Module 14356 (useCardGridLayout)
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
-import Constants from "Constants" /* 7972 */;
+import Constants from "Constants" /* 7475 */;
 import size from "module_2" /* 2 */;
 
 const PROFILE_SIDE_PADDING = Constants.PROFILE_SIDE_PADDING;
@@ -71,8 +71,8 @@ export default function useCardGridLayout() {
   const bound1 = Math.min(Math.max(tmp4, num), num2);
   const diff2 = num4 - 1;
   if (diff < bound1 * num4 + num3 * diff2) {
-    obj3 = { columns: 1, cardWidth: "Array", rowWidth: "sa", gap: num3 };
-    const obj2 = { columns: 1, cardWidth: "Array", rowWidth: "sa", gap: num3 };
+    obj3 = { columns: 1, cardWidth: "Array", rowWidth: "container", gap: num3 };
+    const obj2 = { columns: 1, cardWidth: "Array", rowWidth: "container", gap: num3 };
   } else {
     obj3 = { columns: num4, cardWidth: bound1, rowWidth: bound1 * num4 + num3 * diff2, gap: num3 };
   }

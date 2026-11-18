@@ -1,10 +1,10 @@
-// Module ID: 14214
-// Function ID: 14215
+// Module ID: 13518
+// Function ID: 13519
 // Name: RedesignContactSyncModal
-// Dependencies: [5, 32, 19, 17, 1388, 2120, 14206, 14207, 1072, 6900, 21, 5310, 575, 5886, 14205, 5923, 1113, 14209, 14215, 1630, 1502, 504, 14213, 1380, 1092, 1256, 5546, 14216, 2121, 8203, 10279, 14217, 14218, 14222, 14225, 14226, 14227, 14228, 14230, 1264, 7503, 14232, 14233, 7500, 2]
+// Dependencies: [5, 32, 19, 17, 1388, 2120, 13510, 13511, 1072, 6404, 21, 4823, 575, 5377, 13509, 5414, 1113, 13513, 13519, 1630, 1502, 504, 13517, 1380, 1092, 1256, 5037, 13520, 2121, 7706, 9560, 13521, 13522, 13526, 13529, 13530, 13531, 13532, 13534, 1264, 7006, 13536, 13537, 7003, 2]
 // Exports: ContactSyncOnboardingModal
 
-// Module 14214 (RedesignContactSyncModal)
+// Module 13518 (RedesignContactSyncModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -13,23 +13,23 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
-import NavigatorConstants from "NavigatorConstants" /* 5886 */;
-import Text_Text from "Text/Text" /* 5923 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 6900 */;
-import NavigatorHeader from "NavigatorHeader" /* 7503 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 14205 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 14209 */;
-import RedesignContactSyncDiscoverabilityFooterDefault from "RedesignContactSyncDiscoverabilityFooter" /* 14215 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
+import NavigatorConstants from "NavigatorConstants" /* 5377 */;
+import Text_Text from "Text/Text" /* 5414 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 6404 */;
+import NavigatorHeader from "NavigatorHeader" /* 7006 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 13509 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 13513 */;
+import RedesignContactSyncDiscoverabilityFooterDefault from "RedesignContactSyncDiscoverabilityFooter" /* 13519 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;
 import AppStateStore from "AppStateStore" /* 2120 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 14206 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 14207 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 13510 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 13511 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let c3, dependencyMap, navigation;
@@ -221,7 +221,7 @@ function ContactSyncLandingScreen(openSettingsSheet) {
       const obj = AnalyticsUtilsDefault;
       obj.track(AnalyticEvents.OPEN_POPOUT, obj2);
       const obj3 = ActionSheetActionCreatorsDefault;
-      obj3.openLazy(asyncRequire(14216, dependencyMap.paths), "Contact Sync Info Settings");
+      obj3.openLazy(asyncRequire(13520, dependencyMap.paths), "Contact Sync Info Settings");
     }
   }, items4);
   const items5 = [onNext, onComplete];
@@ -346,7 +346,7 @@ function ContactSyncNameInputScreen(navigateToLandingPage) {
   const tmp5 = closure_10();
   const name = tmp5.name;
   ({ isNameFromContactBook, error } = tmp5);
-  loading(14225)(navigation, navigateToLandingPage);
+  loading(13529)(navigation, navigateToLandingPage);
   const useCallback = react.useCallback;
   let closure_0 = onNext(function*(arg0, value) {
     let obj2;
@@ -429,7 +429,7 @@ function ContactSyncNameInputScreen(navigateToLandingPage) {
   obj3 = { onNext, error, loading, initialName: str, prefilledFromContactBook: tmp12 };
   str = name;
   const tmp10 = View;
-  tmp11 = loading(14227);
+  tmp11 = loading(13531);
   if (name == null) {
     str = "";
   }

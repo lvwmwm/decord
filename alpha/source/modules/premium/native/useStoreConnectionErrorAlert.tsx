@@ -1,14 +1,14 @@
-// Module ID: 9594
-// Function ID: 9595
+// Module ID: 9008
+// Function ID: 9009
 // Name: useStoreConnectionErrorAlert
-// Dependencies: [19, 9311, 504, 6266, 1113, 2]
+// Dependencies: [19, 8722, 504, 5768, 1113, 2]
 // Exports: default
 
-// Module 9594 (useStoreConnectionErrorAlert)
+// Module 9008 (useStoreConnectionErrorAlert)
 import intl3 from "intl" /* 1113 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6266 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5768 */;
 import react from "react" /* 19 */;
-import IAPStore from "IAPStore" /* 9311 */;
+import IAPStore from "IAPStore" /* 8722 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/native/useStoreConnectionErrorAlert.tsx");

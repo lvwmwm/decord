@@ -10,7 +10,7 @@ import registerSpanErrorInstrumentation from "module_681" /* 681 */;
 
 let closure_2;
 
-const f83479 = (description) => {
+const f81056 = (description) => {
   description = description.description;
   let hasItem;
   if (description != null) {
@@ -41,7 +41,7 @@ export function isSpotlightInteraction(type) {
   }
   if (spans) {
     const spans2 = type.spans;
-    spans = spans2.some(f83479);
+    spans = spans2.some(f81056);
   }
   return _Boolean(spans);
 }
@@ -78,7 +78,7 @@ export const spotlightBrowserIntegration = registerSpanErrorInstrumentation.defi
       }
       if (spans) {
         const spans2 = type.spans;
-        spans = spans2.some(f83479);
+        spans = spans2.some(f81056);
       }
       let tmp3 = null;
       if (!_Boolean(spans)) {
@@ -90,14 +90,14 @@ export const spotlightBrowserIntegration = registerSpanErrorInstrumentation.defi
       const obj = _addMeasureSpans;
       const nativeImplementation = obj.getNativeImplementation("fetch");
       let c2 = 0;
-      on.on("beforeEnvelope", (arg0) => {
+      on.on("beforeEnvelope", (items) => {
         let obj2;
         if (c2 > 3) {
           let debug = closure_2_0(closure_2_1[1]).debug;
           debug.warn("[Spotlight] Disabled Sentry -> Spotlight integration due to too many failed requests:", c2);
         } else {
-          let tmp = arg0;
-          const request = { method: "POST", body: obj2.serializeEnvelope(arg0), headers: { "Content-Type": "application/x-sentry-envelope" }, mode: "cors" };
+          let tmp = items;
+          const request = { method: "POST", body: obj2.serializeEnvelope(items), headers: { "Content-Type": "application/x-sentry-envelope" }, mode: "cors" };
           obj2 = closure_2_0(closure_2_1[1]);
           const promise = closure_1(closure_0, request);
           promise.then((status) => {

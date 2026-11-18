@@ -1,19 +1,19 @@
-// Module ID: 7825
-// Function ID: 7826
+// Module ID: 7328
+// Function ID: 7329
 // Name: UserSettingsAccountUnverifiedHeader
-// Dependencies: [19, 1388, 21, 5310, 575, 7750, 1113, 504, 7438, 5923, 2]
+// Dependencies: [19, 1388, 21, 4823, 575, 7253, 1113, 504, 6941, 5414, 2]
 // Exports: default
 
-// Module 7825 (UserSettingsAccountUnverifiedHeader)
+// Module 7328 (UserSettingsAccountUnverifiedHeader)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5923 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 7750 */;
+import Text_Text from "Text/Text" /* 5414 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 7253 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -69,7 +69,7 @@ export default function UserSettingsAccountUnverifiedHeader() {
   let tmp5 = null;
   if (null != tmp4) {
     const obj2 = { accessibilityRole: "button", style: tmp.accountWarning, onPress: handleOpenEmailVerification, children: items1 };
-    const PressableOpacity = tmp2(7438).PressableOpacity;
+    const PressableOpacity = tmp2(6941).PressableOpacity;
     const obj3 = { style: tmp.accountWarningText, variant: "body-xs/semibold", color: "text-overlay-light", children: tmp4.title };
     items1 = [React3(Text_Text.Text, obj3), ];
     const obj4 = { style: tmp.accountWarningButton, variant: "body-xs/medium", color: "text-overlay-light", children: tmp4.button };

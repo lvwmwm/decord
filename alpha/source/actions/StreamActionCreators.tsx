@@ -1,32 +1,32 @@
-// Module ID: 6860
-// Function ID: 6861
+// Module ID: 6364
+// Function ID: 6365
 // Name: StreamActionCreators
-// Dependencies: [5, 6069, 6861, 6862, 6804, 502, 5159, 5181, 5213, 5975, 1072, 6801, 572, 6805, 38, 6354, 6863, 6063, 6897, 1285, 1089, 6836, 1264, 6250, 6933, 8145, 8147, 2]
+// Dependencies: [5, 5565, 6365, 6366, 6308, 502, 4672, 4694, 4726, 5471, 1072, 6305, 572, 6309, 38, 5856, 6367, 5559, 6401, 1285, 1089, 6340, 1264, 5746, 6437, 7648, 7650, 2]
 // Exports: changeStreamRegion, closeStream, fetchStreamPreview, joinPrivateChannelAndWatchStream, notifyStreamStart, setLayout, setStreamPaused, startStream, stopOwnStream, stopStream, toggleSelfStreamHidden, updateStreamSettings, watchStreamAndTransitionToStream
 
-// Module 6860 (StreamActionCreators)
+// Module 6364 (StreamActionCreators)
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
-import StreamQualityUtils from "StreamQualityUtils" /* 6250 */;
-import ChannelUtils from "ChannelUtils" /* 6354 */;
-import Constants2 from "Constants" /* 6801 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6805 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6836 */;
-import transitionToStreamDefault from "transitionToStream" /* 6897 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6933 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 8145 */;
-import CallActionCreatorsDefault from "CallActionCreators" /* 8147 */;
+import StreamQualityUtils from "StreamQualityUtils" /* 5746 */;
+import ChannelUtils from "ChannelUtils" /* 5856 */;
+import Constants2 from "Constants" /* 6305 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6309 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6340 */;
+import transitionToStreamDefault from "transitionToStream" /* 6401 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6437 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7648 */;
+import CallActionCreatorsDefault from "CallActionCreators" /* 7650 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GameConsoleStore from "GameConsoleStore" /* 6069 */;
-import PopoutWindowStore from "PopoutWindowStore" /* 6861 */;
-import ApplicationStreamPreviewStore from "ApplicationStreamPreviewStore" /* 6862 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6804 */;
+import GameConsoleStore from "GameConsoleStore" /* 5565 */;
+import PopoutWindowStore from "PopoutWindowStore" /* 6365 */;
+import ApplicationStreamPreviewStore from "ApplicationStreamPreviewStore" /* 6366 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6308 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 5159 */;
-import GuildStore from "GuildStore" /* 5181 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5213 */;
-import VoiceStateStore from "VoiceStateStore" /* 5975 */;
+import ChannelStore from "ChannelStore" /* 4672 */;
+import GuildStore from "GuildStore" /* 4694 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4726 */;
+import VoiceStateStore from "VoiceStateStore" /* 5471 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -65,7 +65,7 @@ function watchStream(stream, forceMultiple) {
       }
       dispatch(obj3);
       if (null != guildId) {
-        const tmp12Result = tmp12(6863);
+        const tmp12Result = tmp12(6367);
         const result = tmp12Result.maybeSetGuildRoomVideoOverlay(true, guildId, channelId);
       }
       let forceFocus;
@@ -84,7 +84,7 @@ function watchStream(stream, forceMultiple) {
         tmp24 = forceMultiple;
       }
       if (!tmp24) {
-        const tmp18Result = tmp18(6063);
+        const tmp18Result = tmp18(5559);
         const participant = tmp18Result.selectParticipant(stream.channelId, encodeStreamKeyResult);
       }
     } else {

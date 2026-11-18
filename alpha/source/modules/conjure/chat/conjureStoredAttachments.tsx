@@ -1,23 +1,23 @@
-// Module ID: 14459
-// Function ID: 14460
+// Module ID: 18353
+// Function ID: 18354
 // Name: conjureStoredAttachments
-// Dependencies: [19, 14460, 14461, 572, 504, 2]
+// Dependencies: [19, 18354, 18355, 572, 504, 2]
 // Exports: fetchConjureStoredAttachments, useConjureStoredAttachment, useConjureStoredAttachments
 
-// Module 14459 (conjureStoredAttachments)
+// Module 18353 (conjureStoredAttachments)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import conjureAttachmentRequests from "conjureAttachmentRequests" /* 14461 */;
+import conjureAttachmentRequests from "conjureAttachmentRequests" /* 18355 */;
 import react from "react" /* 19 */;
-import ConjureStoredAttachmentStore from "ConjureStoredAttachmentStore" /* 14460 */;
+import ConjureStoredAttachmentStore from "ConjureStoredAttachmentStore" /* 18354 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-const f109641 = () => {
+const f115909 = () => {
 
 };
-const f109642 = () => set.delete(projectId);
+const f115910 = () => set.delete(projectId);
 let closure_5 = [];
 const set = new Set();
 let result = size.fileFinishedImporting("modules/conjure/chat/conjureStoredAttachments.tsx");
@@ -37,8 +37,8 @@ export function fetchConjureStoredAttachments(projectId) {
       attachmentId(closure_2_2[3]);
       dispatch(obj);
     });
-    const catchPromise = nextPromise.catch(f109641);
-    catchPromise.finally(f109642);
+    const catchPromise = nextPromise.catch(f115909);
+    catchPromise.finally(f115910);
   }
 }
 export function useConjureStoredAttachments(projectId) {
@@ -82,8 +82,8 @@ export function useConjureStoredAttachment(context, attachmentId) {
           attachmentId(closure_2_2[3]);
           dispatch(obj);
         });
-        const catchPromise = nextPromise.catch(f109641);
-        catchPromise.finally(f109642);
+        const catchPromise = nextPromise.catch(f115909);
+        catchPromise.finally(f115910);
       }
     }
   }, items2);

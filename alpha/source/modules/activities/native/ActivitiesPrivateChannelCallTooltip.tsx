@@ -1,18 +1,18 @@
-// Module ID: 14358
-// Function ID: 14359
+// Module ID: 13662
+// Function ID: 13663
 // Name: ActivitiesPrivateChannelCallTooltip
-// Dependencies: [19, 17, 5311, 2145, 21, 5310, 504, 1655, 5542, 1187, 1113, 5930, 2]
+// Dependencies: [19, 17, 4824, 2145, 21, 4823, 504, 1655, 5033, 1187, 1113, 5421, 2]
 // Exports: default
 
-// Module 14358 (ActivitiesPrivateChannelCallTooltip)
+// Module 13662 (ActivitiesPrivateChannelCallTooltip)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import _modDef1655 from "module_1655" /* 1655 */;
 import Constants from "Constants" /* 2145 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5311 */;
-import createStyles from "createStyles" /* 5310 */;
+import AccessibilityStore from "AccessibilityStore" /* 4824 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let items;
@@ -21,8 +21,8 @@ let tmp2;
 const intl4 = tmp2(1113);
 const native = tmp2(1187);
 const _mod1655 = tmp2(1655);
-const timing_timing = tmp2(5542);
-const components_Button_Button = tmp2(5930);
+const timing_timing = tmp2(5033);
+const components_Button_Button = tmp2(5421);
 let View = react_native.View;
 const helpdeskUrl = Constants.EMBEDDED_ACTIVITIES_BLOG_POST_URL;
 const jsx = Fragment.jsx;

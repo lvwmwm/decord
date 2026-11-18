@@ -1,9 +1,9 @@
-// Module ID: 8805
-// Function ID: 8806
+// Module ID: 8302
+// Function ID: 8303
 // Name: MessageEmbedConstants
 // Dependencies: [2]
 
-// Module 8805 (MessageEmbedConstants)
+// Module 8302 (MessageEmbedConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/applications/message_embed/MessageEmbedConstants.tsx");

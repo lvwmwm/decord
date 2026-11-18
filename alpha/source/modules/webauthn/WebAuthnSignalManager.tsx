@@ -1,12 +1,12 @@
-// Module ID: 20870
-// Function ID: 20871
+// Module ID: 20143
+// Function ID: 20144
 // Name: WebAuthnSignalManager
-// Dependencies: [5, 502, 7892, 6839, 2]
+// Dependencies: [5, 502, 7395, 6343, 2]
 
-// Module 20870 (WebAuthnSignalManager)
+// Module 20143 (WebAuthnSignalManager)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7892 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
 import size from "module_2" /* 2 */;
 
 let c1;

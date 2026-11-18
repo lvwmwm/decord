@@ -1,17 +1,17 @@
-// Module ID: 9006
-// Function ID: 9007
+// Module ID: 8417
+// Function ID: 8418
 // Name: ForumUtils
-// Dependencies: [5159, 5181, 7023, 9007, 5166, 1113, 5168, 2]
+// Dependencies: [4672, 4694, 6527, 8418, 4679, 1113, 4681, 2]
 // Exports: canDisplayPostUnreadMessageCount, getForumPostReadStates, getForumPostReadStatesById, getForumTimestampFormatter, isForumPostPinned
 
-// Module 9006 (ForumUtils)
+// Module 8417 (ForumUtils)
 import intl2 from "intl" /* 1113 */;
-import ChannelConstants from "ChannelConstants" /* 5166 */;
-import ThreadSortOrder from "ThreadSortOrder" /* 5168 */;
-import ForumConstants from "ForumConstants" /* 9007 */;
-import ChannelStore from "ChannelStore" /* 5159 */;
-import GuildStore from "GuildStore" /* 5181 */;
-import ReadStateStore from "ReadStateStore" /* 7023 */;
+import ChannelConstants from "ChannelConstants" /* 4679 */;
+import ThreadSortOrder from "ThreadSortOrder" /* 4681 */;
+import ForumConstants from "ForumConstants" /* 8418 */;
+import ChannelStore from "ChannelStore" /* 4672 */;
+import GuildStore from "GuildStore" /* 4694 */;
+import ReadStateStore from "ReadStateStore" /* 6527 */;
 import size from "module_2" /* 2 */;
 
 function getCreationDefaultFormatter() {

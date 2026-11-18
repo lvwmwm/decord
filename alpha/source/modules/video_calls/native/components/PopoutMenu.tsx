@@ -1,23 +1,23 @@
-// Module ID: 11390
-// Function ID: 11391
+// Module ID: 10672
+// Function ID: 10673
 // Name: PopoutMenu
-// Dependencies: [32, 19, 17, 21, 5310, 575, 7911, 1187, 8117, 1496, 1630, 12, 1655, 5542, 1708, 5550, 5592, 2]
+// Dependencies: [32, 19, 17, 21, 4823, 575, 7414, 1187, 7620, 1496, 1630, 12, 1655, 5033, 1708, 5041, 5083, 2]
 // Exports: default
 
-// Module 11390 (PopoutMenu)
+// Module 10672 (PopoutMenu)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import _mod1708 from "module_1708" /* 1708 */;
-import Patterns from "Patterns" /* 5550 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5592 */;
-import FormRowDefault from "FormRow" /* 7911 */;
-import _mod8117 from "module_8117" /* 8117 */;
+import Patterns from "Patterns" /* 5041 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5083 */;
+import FormRowDefault from "FormRow" /* 7414 */;
+import _mod7620 from "module_7620" /* 7620 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -48,7 +48,7 @@ function PopoutMenuRow(onClose) {
     const obj = { source: icon };
     tmp3Result = tmp3(native.Icon, obj);
   }
-  const obj2 = { leading: tmp3Result, label: tmp3(_mod8117.FormLabel, obj3), style: tmp.popoutMenuRow, onPress: callback };
+  const obj2 = { leading: tmp3Result, label: tmp3(_mod7620.FormLabel, obj3), style: tmp.popoutMenuRow, onPress: callback };
   obj3 = { style: tmp.popoutMenuRowLabel, text };
   return tmp3(tmp5, obj2);
 }

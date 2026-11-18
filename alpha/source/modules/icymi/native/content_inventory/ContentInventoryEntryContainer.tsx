@@ -1,19 +1,19 @@
-// Module ID: 19385
-// Function ID: 19386
+// Module ID: 18199
+// Function ID: 18200
 // Name: ContentInventoryEntryContainer
-// Dependencies: [19, 17, 1388, 21, 19331, 575, 1380, 10660, 8487, 504, 7438, 19370, 1187, 2]
+// Dependencies: [19, 17, 1388, 21, 18145, 575, 1380, 9941, 7978, 504, 6941, 18184, 1187, 2]
 // Exports: default
 
-// Module 19385 (ContentInventoryEntryContainer)
+// Module 18199 (ContentInventoryEntryContainer)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8487 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 10660 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7978 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 9941 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 19331 */;
+import createICYMIStyles from "createICYMIStyles" /* 18145 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;

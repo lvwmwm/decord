@@ -1,15 +1,15 @@
-// Module ID: 12907
-// Function ID: 12908
+// Module ID: 12202
+// Function ID: 12203
 // Name: useGameOrganizationJoinOutcome
-// Dependencies: [32, 19, 5181, 12573, 1113, 2565, 12896, 504, 12734, 7239, 2]
+// Dependencies: [32, 19, 4694, 11856, 1113, 2555, 12192, 504, 12019, 6743, 2]
 // Exports: default
 
-// Module 12907 (useGameOrganizationJoinOutcome)
-import transitionToGuild from "transitionToGuild" /* 7239 */;
+// Module 12202 (useGameOrganizationJoinOutcome)
+import transitionToGuild from "transitionToGuild" /* 6743 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5181 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 12573 */;
+import GuildStore from "GuildStore" /* 4694 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11856 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

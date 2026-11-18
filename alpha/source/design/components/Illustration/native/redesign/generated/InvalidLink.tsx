@@ -1,14 +1,14 @@
-// Module ID: 12872
-// Function ID: 12873
+// Module ID: 12166
+// Function ID: 12167
 // Name: InvalidLink
-// Dependencies: [19, 21, 8194, 12604, 12873, 12605, 5317, 6014, 2]
+// Dependencies: [19, 21, 7697, 11889, 12167, 11890, 4830, 5510, 2]
 // Exports: InvalidLink, getInvalidLinkSource, useInvalidLinkSource
 
-// Module 12872 (InvalidLink)
+// Module 12166 (InvalidLink)
 import Fragment from "Fragment" /* 21 */;
-import shared from "shared" /* 5317 */;
-import FastImageDefault from "FastImage" /* 6014 */;
-import _mod8194 from "module_8194" /* 8194 */;
+import shared from "shared" /* 4830 */;
+import FastImageDefault from "FastImage" /* 5510 */;
+import _mod7697 from "module_7697" /* 7697 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -27,21 +27,21 @@ const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("design/components/Illustration/native/redesign/generated/InvalidLink.tsx");
 
 export function getInvalidLinkSource(theme) {
-  const obj = _mod8194;
+  const obj = _mod7697;
   const obj2 = { dark, darker, light };
   return obj.getIllustrationSource(theme, obj2);
 }
 export function useInvalidLinkSource() {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8194;
+  const obj2 = _mod7697;
   const obj3 = { dark, darker, light };
   return obj2.getIllustrationSource(theme, obj3);
 }
 export function InvalidLink(arg0) {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8194;
+  const obj2 = _mod7697;
   const obj3 = { dark, darker, light };
   const illustrationSource = obj2.getIllustrationSource(theme, obj3);
   FastImageDefault;

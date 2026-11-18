@@ -1,10 +1,10 @@
-// Module ID: 14761
-// Function ID: 14762
+// Module ID: 18615
+// Function ID: 18616
 // Name: conjurePlanTags
 // Dependencies: [2]
 // Exports: planDeclaresSurface
 
-// Module 14761 (conjurePlanTags)
+// Module 18615 (conjurePlanTags)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/plan/conjurePlanTags.tsx");

@@ -1,20 +1,20 @@
-// Module ID: 18954
-// Function ID: 18955
+// Module ID: 17764
+// Function ID: 17765
 // Name: AccountLinkBanner
-// Dependencies: [19, 17, 1388, 5156, 21, 575, 7934, 6057, 5936, 5310, 563, 7928, 7947, 7455, 7438, 7559, 1187, 5923, 1113, 5930, 10496, 2]
+// Dependencies: [19, 17, 1388, 4669, 21, 575, 7437, 5553, 5427, 4823, 563, 7431, 7450, 6958, 6941, 7062, 1187, 5414, 1113, 5421, 9777, 2]
 // Exports: getScaledAccountLinkBannerHeight
 
-// Module 18954 (AccountLinkBanner)
+// Module 17764 (AccountLinkBanner)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5156 */;
-import ButtonConstants from "ButtonConstants" /* 5936 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 6057 */;
-import GameIcon from "GameIcon" /* 7934 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4669 */;
+import ButtonConstants from "ButtonConstants" /* 5427 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 5553 */;
+import GameIcon from "GameIcon" /* 7437 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -77,7 +77,7 @@ function AccountLinkLargeBanner(arg0) {
     const obj9 = { style: tmp.ellipsisDot };
     items3[2] = closure_6(View, obj9);
     items2[1] = closure_7(View, obj6);
-    const obj10 = { user: stateFromStores, size: require("native").AvatarSizes.LARGE_48, guildId: "Array" };
+    const obj10 = { user: stateFromStores, size: require("native").AvatarSizes.LARGE_48, guildId: "r" };
     const Avatar = tmp2(tmp3[16]).Avatar;
     items2[2] = closure_6(Avatar, obj10);
     items1[1] = closure_7(View, obj4);

@@ -1,16 +1,16 @@
-// Module ID: 13145
-// Function ID: 13146
+// Module ID: 12443
+// Function ID: 12444
 // Name: CheckpointCardFrame
-// Dependencies: [32, 19, 17, 21, 5310, 6399, 6396, 1655, 5542, 8274, 13146, 10224, 575, 6014, 2]
+// Dependencies: [32, 19, 17, 21, 4823, 5901, 5898, 1655, 5033, 7776, 12444, 9505, 575, 5510, 2]
 // Exports: default
 
-// Module 13145 (CheckpointCardFrame)
-import checkpoint_CheckpointMessageComponentUtils from "checkpoint/CheckpointMessageComponentUtils" /* 6396 */;
+// Module 12443 (CheckpointCardFrame)
+import checkpoint_CheckpointMessageComponentUtils from "checkpoint/CheckpointMessageComponentUtils" /* 5898 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size_mod from "module_2" /* 2 */;
 
 let set;

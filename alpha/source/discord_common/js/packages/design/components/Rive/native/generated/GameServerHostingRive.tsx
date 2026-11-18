@@ -1,13 +1,13 @@
-// Module ID: 5457
-// Function ID: 5458
+// Module ID: 4970
+// Function ID: 4971
 // Name: GameServerHostingRive
-// Dependencies: [109, 19, 21, 5379, 5458, 5432, 2]
+// Dependencies: [109, 19, 21, 4892, 4971, 4945, 2]
 // Exports: GameServerHostingRive
 
-// Module 5457 (GameServerHostingRive)
+// Module 4970 (GameServerHostingRive)
 import Fragment from "Fragment" /* 21 */;
-import BaseRive2 from "BaseRive" /* 5379 */;
-import RiveErrorBoundary2 from "RiveErrorBoundary" /* 5432 */;
+import BaseRive2 from "BaseRive" /* 4892 */;
+import RiveErrorBoundary2 from "RiveErrorBoundary" /* 4945 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

@@ -1,20 +1,20 @@
-// Module ID: 14771
-// Function ID: 14772
+// Module ID: 18625
+// Function ID: 18626
 // Name: useConjurePlanBotPreviewItems
-// Dependencies: [19, 2165, 5163, 1407, 1388, 7025, 1072, 504, 7360, 6372, 8862, 6379, 14772, 1113, 4133, 5366, 2]
+// Dependencies: [19, 2165, 4676, 1407, 1388, 6529, 1072, 504, 6865, 5874, 8358, 5881, 18626, 1113, 4121, 4879, 2]
 // Exports: useConjurePlanBotExchanges, useConjurePlanBotPreviewItems, useConjurePlanCommandExchanges
 
-// Module 14771 (useConjurePlanBotPreviewItems)
+// Module 18625 (useConjurePlanBotPreviewItems)
 import intl4 from "intl" /* 1113 */;
-import _modDef4133 from "module_4133" /* 4133 */;
-import ChannelRecord from "ChannelRecord" /* 5163 */;
-import UserActionCreators from "UserActionCreators" /* 7360 */;
-import conjurePlanBot from "conjurePlanBot" /* 14772 */;
+import _modDef4121 from "module_4121" /* 4121 */;
+import ChannelRecord from "ChannelRecord" /* 4676 */;
+import UserActionCreators from "UserActionCreators" /* 6865 */;
+import conjurePlanBot from "conjurePlanBot" /* 18626 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
 import UserRecord from "UserRecord" /* 1407 */;
 import UserStore from "UserStore" /* 1388 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 7025 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6529 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -96,7 +96,7 @@ export function useConjurePlanBotExchanges(proposal) {
       if (null == conjurePlanBotInteraction) {
         items = [];
       } else {
-        const obj = { message: intl.string(_modDef4133.J7qggf), reply: intl2.string(_modDef4133.nqYtiy), event: intl3.string(_modDef4133["05lU9W"]) };
+        const obj = { message: intl.string(_modDef4121.J7qggf), reply: intl2.string(_modDef4121.nqYtiy), event: intl3.string(_modDef4121["05lU9W"]) };
         const getConjurePlanBotExchanges = conjurePlanBot.getConjurePlanBotExchanges;
         conjurePlanBot;
         intl = intl4.intl;
@@ -122,7 +122,7 @@ export function useConjurePlanCommandExchanges(proposal) {
       const getConjurePlanBotExchanges = conjurePlanBot.getConjurePlanBotExchanges;
       conjurePlanBot;
       const merged = Object.assign(tmp);
-      const obj2 = { message: intl.string(_modDef4133.J7qggf), reply: intl2.string(_modDef4133.nqYtiy), event: intl3.string(_modDef4133["05lU9W"]) };
+      const obj2 = { message: intl.string(_modDef4121.J7qggf), reply: intl2.string(_modDef4121.nqYtiy), event: intl3.string(_modDef4121["05lU9W"]) };
       intl = tmp2(1113).intl;
       intl2 = tmp2(1113).intl;
       intl3 = tmp2(1113).intl;
@@ -180,7 +180,7 @@ export function useConjurePlanBotPreviewItems(projectId, exchanges) {
   }
   if (name == null) {
     let intl = tmp(tmp2[13]).intl;
-    name = intl.string(require("module_4133").JEYq8M);
+    name = intl.string(require("module_4121").JEYq8M);
   }
   const items4 = [tmp3];
   const items5 = [prop];
@@ -204,7 +204,7 @@ export function useConjurePlanBotPreviewItems(projectId, exchanges) {
     obj6 = stateFromStores3;
   }
   let intl2 = tmp(tmp2[13]).intl;
-  const tmp14Result = tmp14("31338", intl2.string(require("module_4133")["9iAOsw"]), { discriminator: "0003" });
+  const tmp14Result = tmp14("31338", intl2.string(require("module_4121")["9iAOsw"]), { discriminator: "0003" });
   let closure_5 = tmp14Result;
   const tmpResult4 = tmp(tmp2[15]);
   let str = tmpResult4.getName(stateFromStores);
@@ -330,7 +330,7 @@ export function useConjurePlanBotPreviewItems(projectId, exchanges) {
             if (null != closure_5) {
               let tmp6 = exchanges;
               let obj = { bot: tmp4, currentUser: tmp, viewer: tmp3, member: tmp5 };
-              let obj2 = { targetMessage: intl.string(_modDef4133["y+QYes"]), memberMessage: intl2.string(_modDef4133.BUTRDc) };
+              let obj2 = { targetMessage: intl.string(_modDef4121["y+QYes"]), memberMessage: intl2.string(_modDef4121.BUTRDc) };
               let tmp7 = require;
               let tmp8 = dependencyMap;
               intl = intl4.intl;

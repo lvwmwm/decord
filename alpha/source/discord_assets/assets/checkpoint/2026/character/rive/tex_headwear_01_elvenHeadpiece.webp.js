@@ -1,8 +1,8 @@
-// Module ID: 13217
-// Function ID: 13218
+// Module ID: 12520
+// Function ID: 12521
 // Dependencies: [2]
 
-// Module 13217
+// Module 12520
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_headwear_01_elvenHeadpiece.webp.js");

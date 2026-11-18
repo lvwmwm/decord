@@ -1,18 +1,18 @@
-// Module ID: 12372
-// Function ID: 12373
+// Module ID: 11654
+// Function ID: 11655
 // Name: SavedMessageUtils
-// Dependencies: [5, 19, 5163, 502, 5159, 1072, 1113, 2169, 504, 8145, 7272, 5486, 2]
+// Dependencies: [5, 19, 4676, 502, 4672, 1072, 1113, 2169, 504, 7648, 6776, 4999, 2]
 // Exports: savedMessageJumpToMessage, useDueInString, useSavedMessageChannel
 
-// Module 12372 (SavedMessageUtils)
+// Module 11654 (SavedMessageUtils)
 import intl2 from "intl" /* 1113 */;
 import _modDef2169 from "module_2169" /* 2169 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 8145 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7648 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelRecord from "ChannelRecord" /* 5163 */;
+import ChannelRecord from "ChannelRecord" /* 4676 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 5159 */;
+import ChannelStore from "ChannelStore" /* 4672 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

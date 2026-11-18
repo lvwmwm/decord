@@ -1,14 +1,14 @@
-// Module ID: 15120
-// Function ID: 15121
+// Module ID: 13746
+// Function ID: 13747
 // Name: ShieldLockIcon
-// Dependencies: [19, 21, 575, 6013, 15121, 2]
+// Dependencies: [19, 21, 575, 5509, 13747, 2]
 // Exports: ShieldLockIcon
 
-// Module 15120 (ShieldLockIcon)
+// Module 13746 (ShieldLockIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6013 */;
-import AssetRegistry from "AssetRegistry" /* 15121 */;
+import BaseIconImage2 from "BaseIconImage" /* 5509 */;
+import AssetRegistry from "AssetRegistry" /* 13747 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

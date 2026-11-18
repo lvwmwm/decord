@@ -1,25 +1,25 @@
-// Module ID: 11451
-// Function ID: 11452
+// Module ID: 10733
+// Function ID: 10734
 // Name: ActivityTile
-// Dependencies: [5, 32, 19, 17, 5158, 1388, 1072, 1191, 11452, 21, 1187, 5310, 575, 504, 1255, 7269, 6349, 5366, 11453, 7928, 7947, 11414, 1113, 11455, 11457, 11459, 11460, 7438, 11461, 11511, 5923, 5931, 5371, 2]
+// Dependencies: [5, 32, 19, 17, 4671, 1388, 1072, 1191, 10734, 21, 1187, 4823, 575, 504, 1255, 6773, 5851, 4879, 10735, 7431, 7450, 10696, 1113, 10737, 10739, 10741, 10742, 6941, 10743, 10793, 5414, 5422, 4884, 2]
 // Exports: default
 
-// Module 11451 (ActivityTile)
+// Module 10733 (ActivityTile)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import FormConstants from "FormConstants" /* 1191 */;
-import native2 from "native" /* 5371 */;
-import Constants2 from "Constants" /* 11452 */;
-import handlePressJoinActivityDefault from "handlePressJoinActivity" /* 11460 */;
+import native2 from "native" /* 4884 */;
+import Constants2 from "Constants" /* 10734 */;
+import handlePressJoinActivityDefault from "handlePressJoinActivity" /* 10742 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5158 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4671 */;
 import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size_mod from "module_2" /* 2 */;
 
 let applicationId, c2;

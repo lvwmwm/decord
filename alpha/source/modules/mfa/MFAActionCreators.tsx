@@ -1,12 +1,12 @@
-// Module ID: 18342
-// Function ID: 18343
+// Module ID: 17148
+// Function ID: 17149
 // Name: mfa/MFAActionCreators
-// Dependencies: [18343, 18344, 18353, 2]
+// Dependencies: [17149, 17150, 17159, 2]
 // Exports: openMFAModal
 
-// Module 18342 (mfa/MFAActionCreators)
-import MFAConstants from "MFAConstants" /* 18343 */;
-import MFA from "MFA" /* 18353 */;
+// Module 17148 (mfa/MFAActionCreators)
+import MFAConstants from "MFAConstants" /* 17149 */;
+import MFA from "MFA" /* 17159 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

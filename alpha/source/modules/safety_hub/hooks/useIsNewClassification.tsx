@@ -1,10 +1,10 @@
-// Module ID: 17311
-// Function ID: 17312
+// Module ID: 15968
+// Function ID: 15969
 // Name: useIsNewClassification
 // Dependencies: [11, 2]
 // Exports: useIsNewClassification
 
-// Module 17311 (useIsNewClassification)
+// Module 15968 (useIsNewClassification)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import size from "module_2" /* 2 */;
 

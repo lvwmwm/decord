@@ -1,21 +1,21 @@
-// Module ID: 19955
-// Function ID: 19956
+// Module ID: 19226
+// Function ID: 19227
 // Name: VoicePanelPIPUtils
-// Dependencies: [7024, 6804, 502, 12428, 19956, 5977, 12429, 6805, 11417, 5972, 575, 2]
+// Dependencies: [6528, 6308, 502, 11710, 19227, 5473, 11711, 6309, 10699, 5468, 575, 2]
 // Exports: calculatePIPPositionFromVelocity, clampPIPScale, computePIPParticipantToShow, computePIPSize, createPIPBlockList, getClampedPIPPosition, getPIPMode, getPIPWindowDimensions, getScaledPIPContainerHeight, getVoicePanelPIPBorderRadius, pipXYtoAbsoluteXY
 
-// Module 19955 (VoicePanelPIPUtils)
+// Module 19226 (VoicePanelPIPUtils)
 import nativeDefault from "native" /* 575 */;
-import isActivityParticipantCurrentUserCurrentSession from "isActivityParticipantCurrentUserCurrentSession" /* 5972 */;
-import CallConstants from "CallConstants" /* 5977 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6805 */;
-import participantHasVideo from "participantHasVideo" /* 11417 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 7024 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6804 */;
+import isActivityParticipantCurrentUserCurrentSession from "isActivityParticipantCurrentUserCurrentSession" /* 5468 */;
+import CallConstants from "CallConstants" /* 5473 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6309 */;
+import participantHasVideo from "participantHasVideo" /* 10699 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6528 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6308 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 12428 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19956 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 12429 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11710 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19227 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 11711 */;
 import size_mod from "module_2" /* 2 */;
 
 let MIN_PIP_TOSS_VELOCITY;

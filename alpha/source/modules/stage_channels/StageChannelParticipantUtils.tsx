@@ -1,13 +1,13 @@
-// Module ID: 11588
-// Function ID: 11589
+// Module ID: 10870
+// Function ID: 10871
 // Name: StageChannelParticipantUtils
-// Dependencies: [1089, 5366, 1113, 2]
+// Dependencies: [1089, 4879, 1113, 2]
 // Exports: participantMemberInfo
 
-// Module 11588 (StageChannelParticipantUtils)
+// Module 10870 (StageChannelParticipantUtils)
 import DurationsDefault from "Durations" /* 1089 */;
 import intl6 from "intl" /* 1113 */;
-import UserUtils from "UserUtils" /* 5366 */;
+import UserUtils from "UserUtils" /* 4879 */;
 import size from "module_2" /* 2 */;
 
 const DAY = DurationsDefault.Millis.DAY;

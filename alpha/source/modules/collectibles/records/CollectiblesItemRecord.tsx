@@ -1,16 +1,16 @@
-// Module ID: 8500
-// Function ID: 8501
+// Module ID: 7991
+// Function ID: 7992
 // Name: CollectiblesItemRecord
-// Dependencies: [8501, 2112, 8502, 8503, 8504, 1072, 2114, 2]
+// Dependencies: [7992, 2112, 7993, 7994, 7995, 1072, 2114, 2]
 // Exports: createCollectiblesItemsFromServerResponse, transformProductToCollectiblesItem
 
-// Module 8500 (CollectiblesItemRecord)
+// Module 7991 (CollectiblesItemRecord)
 import CollectiblesItemType from "CollectiblesItemType" /* 2114 */;
-import AvatarDecorationRecord from "AvatarDecorationRecord" /* 8501 */;
+import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7992 */;
 import NameplateRecord from "NameplateRecord" /* 2112 */;
-import ProfileEffectRecord from "ProfileEffectRecord" /* 8502 */;
-import ProfileFrameRecord from "ProfileFrameRecord" /* 8503 */;
-import UnknownCollectiblesItemRecord from "UnknownCollectiblesItemRecord" /* 8504 */;
+import ProfileEffectRecord from "ProfileEffectRecord" /* 7993 */;
+import ProfileFrameRecord from "ProfileFrameRecord" /* 7994 */;
+import UnknownCollectiblesItemRecord from "UnknownCollectiblesItemRecord" /* 7995 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

@@ -1,12 +1,12 @@
-// Module ID: 17281
-// Function ID: 17282
+// Module ID: 15938
+// Function ID: 15939
 // Name: openAgeNoticePromoSheet
-// Dependencies: [5546, 17282, 2121, 2]
+// Dependencies: [5037, 15939, 2121, 2]
 // Exports: default
 
-// Module 17281 (openAgeNoticePromoSheet)
+// Module 15938 (openAgeNoticePromoSheet)
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
 import size from "module_2" /* 2 */;
 
 const AGE_NOTICE_PROMO_SHEET_KEY = "AGE_NOTICE_PROMO_SHEET_KEY";
@@ -15,6 +15,6 @@ const AGE_NOTICE_PROMO_SHEET_KEY_export = "AGE_NOTICE_PROMO_SHEET_KEY";
 
 export default function openAgeNoticePromoSheet(arg0) {
   const obj = ActionSheetActionCreatorsDefault;
-  obj.openLazy(asyncRequire(17282, dependencyMap.paths), AGE_NOTICE_PROMO_SHEET_KEY, arg0);
+  obj.openLazy(asyncRequire(15939, dependencyMap.paths), AGE_NOTICE_PROMO_SHEET_KEY, arg0);
 };
 export { AGE_NOTICE_PROMO_SHEET_KEY_export as AGE_NOTICE_PROMO_SHEET_KEY };

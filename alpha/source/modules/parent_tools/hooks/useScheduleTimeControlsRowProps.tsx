@@ -1,14 +1,14 @@
-// Module ID: 17478
-// Function ID: 17479
+// Module ID: 16135
+// Function ID: 16136
 // Name: useScheduleTimeControlsRowProps
-// Dependencies: [21, 5923, 1113, 2703, 2]
+// Dependencies: [21, 5414, 1113, 2723, 2]
 // Exports: default
 
-// Module 17478 (useScheduleTimeControlsRowProps)
+// Module 16135 (useScheduleTimeControlsRowProps)
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1113 */;
-import _modDef2703 from "module_2703" /* 2703 */;
-import Text_Text from "Text/Text" /* 5923 */;
+import _modDef2723 from "module_2723" /* 2723 */;
+import Text_Text from "Text/Text" /* 5414 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -22,19 +22,19 @@ export default function useScheduleTimeControlsRowProps(arr) {
   let tmp10;
   if (0 === arr.length) {
     const obj2 = { subLabel: null, trailing: "Array" };
-    ({ variant: "body-xs/medium", color: "text-muted", children: intl.string(_modDef2703.fOBIZH) });
+    ({ variant: "body-xs/medium", color: "text-muted", children: intl.string(_modDef2723.fOBIZH) });
     const Text = Text_Text.Text;
     intl = intl4.intl;
     return obj2;
   } else {
-    const obj4 = { subLabel: intl2.formatToPlainString(_modDef2703.XfwcpX, obj5), trailing: tmp10(Text2, obj) };
+    const obj4 = { subLabel: intl2.formatToPlainString(_modDef2723.XfwcpX, obj5), trailing: tmp10(Text2, obj) };
     const someResult = arr.some((enabled) => enabled.enabled);
     intl2 = intl4.intl;
     obj5 = { count: arr.length };
     Text2 = Text_Text.Text;
     const intl3 = intl4.intl;
     const string = intl3.string;
-    const tmp11 = _modDef2703;
+    const tmp11 = _modDef2723;
     tmp10 = jsx;
     if (someResult) {
       let stringResult = string(tmp11["8vDHRq"]);

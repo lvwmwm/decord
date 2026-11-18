@@ -1,10 +1,10 @@
-// Module ID: 12653
-// Function ID: 12654
+// Module ID: 11938
+// Function ID: 11939
 // Name: StartupProfiler
 // Dependencies: [19, 21, 10, 2]
 // Exports: default
 
-// Module 12653 (StartupProfiler)
+// Module 11938 (StartupProfiler)
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;

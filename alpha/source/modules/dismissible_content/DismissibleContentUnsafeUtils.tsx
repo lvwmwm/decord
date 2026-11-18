@@ -1,19 +1,19 @@
-// Module ID: 5342
-// Function ID: 5343
+// Module ID: 4855
+// Function ID: 4856
 // Name: DismissibleContentUnsafeUtils
-// Dependencies: [5, 1231, 5343, 1089, 5364, 5150, 5144, 11, 5142, 504, 5140, 2]
+// Dependencies: [5, 1231, 4856, 1089, 4877, 4663, 4657, 11, 4655, 504, 4653, 2]
 // Exports: UNSAFE_isSnowflakeBoundDismissibleContentDismissed, UNSAFE_markDismissibleContentAsDismissed, UNSAFE_markSingleUseGuildDismissibleContentAsDismissed, UNSAFE_markSnowflakeBoundGuildDismissibleContentAsDismissed, UNSAFE_markTimeRecurringGuildDismissibleContentAsDismissed, useIsDismissibleContentDismissed_UNSAFE
 
-// Module 5342 (DismissibleContentUnsafeUtils)
+// Module 4855 (DismissibleContentUnsafeUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import Uint8ArrayUtils from "Uint8ArrayUtils" /* 5142 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 5144 */;
-import DismissibleContentTypes from "DismissibleContentTypes" /* 5150 */;
-import NewUserDismissibleContentRegistry from "NewUserDismissibleContentRegistry" /* 5364 */;
+import Uint8ArrayUtils from "Uint8ArrayUtils" /* 4655 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 4657 */;
+import DismissibleContentTypes from "DismissibleContentTypes" /* 4663 */;
+import NewUserDismissibleContentRegistry from "NewUserDismissibleContentRegistry" /* 4877 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5343 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4856 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

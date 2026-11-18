@@ -114,9 +114,9 @@ function pnpm_decayTs3(arg0, arg1) {
       callback,
       velocity: num,
       initialVelocity: 0,
-      current: "disabled",
+      current: "ip",
       lastTimestamp: null,
-      startTimestamp: 27,
+      startTimestamp: "(function useFastestListPropsScrollReportingNativeTsx1(event){let[scrollPosition,horizontal]=this.__closure;if(scrollPosition!=null){scrollPosition.set(horizontal?event.contentOffset.x:event.contentOffset.y);}})",
       reduceMotion: closure_6(obj.reduceMotion)
     };
     num = obj.velocity;

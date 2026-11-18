@@ -1,15 +1,15 @@
-// Module ID: 7265
-// Function ID: 7266
+// Module ID: 6769
+// Function ID: 6770
 // Name: OrbCheckoutUtils
-// Dependencies: [1072, 1074, 7266, 1113, 5130, 7267, 2]
+// Dependencies: [1072, 1074, 6770, 1113, 4643, 6771, 2]
 // Exports: getOrbCheckoutDisclaimerMessage, getOrbPriceFromPrices, resolveOrbCheckoutErrorMessage
 
-// Module 7265 (OrbCheckoutUtils)
+// Module 6769 (OrbCheckoutUtils)
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import intl10 from "intl" /* 1113 */;
-import BillingError from "BillingError" /* 5130 */;
-import OrderConstants from "OrderConstants" /* 7266 */;
-import OrderActionCreators from "OrderActionCreators" /* 7267 */;
+import BillingError from "BillingError" /* 4643 */;
+import OrderConstants from "OrderConstants" /* 6770 */;
+import OrderActionCreators from "OrderActionCreators" /* 6771 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

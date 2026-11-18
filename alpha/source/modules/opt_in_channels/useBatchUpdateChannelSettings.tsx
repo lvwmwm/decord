@@ -1,16 +1,16 @@
-// Module ID: 12674
-// Function ID: 12675
+// Module ID: 11959
+// Function ID: 11960
 // Name: useBatchUpdateChannelSettings
-// Dependencies: [19, 7891, 6956, 1072, 572, 504, 7887, 12675, 12672, 2]
+// Dependencies: [19, 7394, 6460, 1072, 572, 504, 7390, 11960, 11957, 2]
 // Exports: default
 
-// Module 12674 (useBatchUpdateChannelSettings)
+// Module 11959 (useBatchUpdateChannelSettings)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7887 */;
+import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7390 */;
 import react from "react" /* 19 */;
-import CategoryCollapseStore from "CategoryCollapseStore" /* 7891 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6956 */;
+import CategoryCollapseStore from "CategoryCollapseStore" /* 7394 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6460 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

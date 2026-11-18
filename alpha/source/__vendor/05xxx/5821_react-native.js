@@ -1,23 +1,14 @@
 // Module ID: 5821
 // Function ID: 5822
 // Name: react-native
-// Dependencies: [17]
-// Exports: isRN083OrAbove
+// Dependencies: [17, 65]
 
 // Module 5821 (react-native)
 import react_native from "react-native" /* 17 */;
+import module_65 from "module_65" /* 65 */;
 
-const constants = react_native.Platform.constants;
-let reactNativeVersion;
-if (constants != null) {
-  reactNativeVersion = constants.reactNativeVersion;
-}
+const codegenNativeComponent = react_native.codegenNativeComponent;
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSSafeAreaView", validAttributes: { edges: true, insetType: true } };
 
-export const isRN083OrAbove = () => {
-  let tmp2 = reactNativeVersion;
-  if (tmp2) {
-    tmp2 = tmp.major > 0 || tmp.minor >= 83;
-    const tmp3 = tmp.major > 0 || tmp.minor >= 83;
-  }
-  return tmp2;
-};
+export default module_65.get("RNSSafeAreaView", () => obj);
+export { __INTERNAL_VIEW_CONFIG };

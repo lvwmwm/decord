@@ -1,16 +1,16 @@
-// Module ID: 9209
-// Function ID: 9210
+// Module ID: 8620
+// Function ID: 8621
 // Name: canReactToMessage
-// Dependencies: [5222, 6935, 5242, 1388, 1072, 9210, 1406, 5229, 504, 2]
+// Dependencies: [4735, 6439, 4755, 1388, 1072, 8621, 1406, 4742, 504, 2]
 // Exports: canReactToMessage, useCanReactToMessage
 
-// Module 9209 (canReactToMessage)
+// Module 8620 (canReactToMessage)
 import FlagUtils from "FlagUtils" /* 1406 */;
-import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 5229 */;
-import canAddNewReactionsDefault from "canAddNewReactions" /* 9210 */;
-import GuildMemberStore from "GuildMemberStore" /* 5222 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 6935 */;
-import PermissionStore from "PermissionStore" /* 5242 */;
+import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4742 */;
+import canAddNewReactionsDefault from "canAddNewReactions" /* 8621 */;
+import GuildMemberStore from "GuildMemberStore" /* 4735 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 6439 */;
+import PermissionStore from "PermissionStore" /* 4755 */;
 import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;

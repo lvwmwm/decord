@@ -1,10 +1,10 @@
-// Module ID: 5128
-// Function ID: 5129
+// Module ID: 4641
+// Function ID: 4642
 // Name: importWithRetry
 // Dependencies: [5, 2]
 // Exports: awaitOnline, importWithRetry, setAwaitOnline
 
-// Module 5128 (importWithRetry)
+// Module 4641 (importWithRetry)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

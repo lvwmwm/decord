@@ -1,9 +1,9 @@
-// Module ID: 5914
-// Function ID: 5915
+// Module ID: 5405
+// Function ID: 5406
 // Name: MessageReactionsTypes
 // Dependencies: [2]
 
-// Module 5914 (MessageReactionsTypes)
+// Module 5405 (MessageReactionsTypes)
 import size from "module_2" /* 2 */;
 
 const obj = { NORMAL: 0, [0]: "NORMAL", BURST: 1, [1]: "BURST", VOTE: 2, [2]: "VOTE" };

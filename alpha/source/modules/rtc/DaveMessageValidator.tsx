@@ -1,10 +1,10 @@
-// Module ID: 6265
-// Function ID: 6266
+// Module ID: 5767
+// Function ID: 5768
 // Name: DaveMessageValidator
 // Dependencies: [2]
 // Exports: isDaveProtocolVersionAllowed, parseDaveExecuteTransition, parseDaveInit, parseDavePrepareEpoch, parseDavePrepareTransition, parseDaveProtocolVersion, parseMLSFrameHeader, parseMLSTransitionFrame
 
-// Module 6265 (DaveMessageValidator)
+// Module 5767 (DaveMessageValidator)
 import size from "module_2" /* 2 */;
 
 const DaveSignal = { INIT: "init", EPOCH: "epoch", TRANSITION: "transition" };

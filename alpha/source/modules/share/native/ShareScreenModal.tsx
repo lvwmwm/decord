@@ -1,19 +1,19 @@
-// Module ID: 16372
-// Function ID: 16373
+// Module ID: 15039
+// Function ID: 15040
 // Name: ShareScreenModal
-// Dependencies: [5, 32, 19, 5159, 16322, 21, 3, 6833, 10339, 504, 8145, 1093, 16373, 2]
+// Dependencies: [5, 32, 19, 4672, 14989, 21, 3, 6337, 9620, 504, 7648, 1093, 15040, 2]
 // Exports: default
 
-// Module 16372 (ShareScreenModal)
+// Module 15039 (ShareScreenModal)
 import LoggerDefault from "Logger" /* 3 */;
 import Fragment from "Fragment" /* 21 */;
 import ChannelTypes from "ChannelTypes" /* 1093 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6833 */;
-import ShareScreenConstants from "ShareScreenConstants" /* 16322 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6337 */;
+import ShareScreenConstants from "ShareScreenConstants" /* 14989 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5159 */;
+import ChannelStore from "ChannelStore" /* 4672 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, closure_2;

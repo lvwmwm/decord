@@ -1,22 +1,22 @@
-// Module ID: 19274
-// Function ID: 19275
+// Module ID: 18088
+// Function ID: 18089
 // Name: VoicePanelDockPTTButton
-// Dependencies: [19, 17, 5159, 2133, 12446, 21, 575, 5310, 12427, 1655, 19251, 504, 11687, 11663, 11719, 5542, 5933, 5548, 11550, 19275, 7800, 5592, 1708, 19277, 7999, 1113, 11690, 5502, 19278, 2]
+// Dependencies: [19, 17, 4672, 2133, 11728, 21, 575, 4823, 11709, 1655, 18064, 504, 10969, 10945, 11001, 5033, 5424, 5039, 10832, 18089, 7303, 5083, 1708, 18091, 7502, 1113, 10972, 5015, 18092, 2]
 
-// Module 19274 (VoicePanelDockPTTButton)
+// Module 18088 (VoicePanelDockPTTButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1708 from "module_1708" /* 1708 */;
-import timing_timing from "timing/timing" /* 5542 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5592 */;
-import spring_spring from "spring/spring" /* 5933 */;
-import MediaEngineActionCreators from "MediaEngineActionCreators" /* 11550 */;
+import timing_timing from "timing/timing" /* 5033 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5083 */;
+import spring_spring from "spring/spring" /* 5424 */;
+import MediaEngineActionCreators from "MediaEngineActionCreators" /* 10832 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5159 */;
+import ChannelStore from "ChannelStore" /* 4672 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 12446 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11728 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size_mod from "module_2" /* 2 */;
 
 let activateResult, first, num, num2, point2, result2, set, set2, set3, tmp3, tmp7;

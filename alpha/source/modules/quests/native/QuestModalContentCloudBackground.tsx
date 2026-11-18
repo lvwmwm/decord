@@ -1,18 +1,18 @@
-// Module ID: 17773
-// Function ID: 17774
+// Module ID: 16577
+// Function ID: 16578
 // Name: QuestModalContentCloudBackground
-// Dependencies: [19, 17, 21, 5310, 5332, 5541, 5887, 6014, 17774, 17775, 2]
+// Dependencies: [19, 17, 21, 4823, 4845, 5032, 5378, 5510, 16578, 16579, 2]
 // Exports: default
 
-// Module 17773 (QuestModalContentCloudBackground)
-import themes from "themes" /* 5332 */;
-import useTheme from "useTheme" /* 5541 */;
-import LinearGradientDefault from "LinearGradient" /* 5887 */;
-import FastImageDefault from "FastImage" /* 6014 */;
+// Module 16577 (QuestModalContentCloudBackground)
+import themes from "themes" /* 4845 */;
+import useTheme from "useTheme" /* 5032 */;
+import LinearGradientDefault from "LinearGradient" /* 5378 */;
+import FastImageDefault from "FastImage" /* 5510 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -30,11 +30,11 @@ let closure_7 = createStyles.createStyles((arg0) => {
   const obj = { height: 380, zIndex: 1 };
   const merged = Object.assign(absoluteFillObject.absoluteFillObject);
   const obj2 = { wrapper: obj, cloudsImage: obj3, cloudsImageLight: obj5, gradient: obj6, solidBackground: obj7 };
-  const tmp3 = arg0 ? { top: "r" } : { bottom: "r" };
+  const tmp3 = arg0 ? { top: "find" } : { bottom: "find" };
   const merged1 = Object.assign(tmp3);
   obj3 = { width: "100%" };
   const merged2 = Object.assign(tmp.absoluteFillObject);
-  const tmp6 = arg0 ? { top: "r" } : { bottom: "r" };
+  const tmp6 = arg0 ? { top: "find" } : { bottom: "find" };
   const merged3 = Object.assign(tmp6);
   if (arg0) {
     obj4 = {};
@@ -92,7 +92,7 @@ export default function QuestModalContentCloudBackground(align) {
     tmp9 = tmp7;
   }
   items1 = [tmp7Result, ];
-  const obj5 = { style: items2, source: importDefault(isThemeDarkResult ? 17774 : 17775), resizeMode: str2 };
+  const obj5 = { style: items2, source: importDefault(isThemeDarkResult ? 16578 : 16579), resizeMode: str2 };
   items2 = [isThemeDarkResult ? tmp.cloudsImage : tmp.cloudsImageLight, imgStyle];
   const tmp12 = FastImageDefault;
   items1[1] = tmp9(tmp12, obj5);

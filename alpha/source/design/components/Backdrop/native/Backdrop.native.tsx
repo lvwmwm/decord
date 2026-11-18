@@ -1,19 +1,19 @@
-// Module ID: 5898
-// Function ID: 5899
+// Module ID: 5389
+// Function ID: 5390
 // Name: Backdrop
-// Dependencies: [19, 17, 21, 5310, 575, 1113, 5371, 1630, 1655, 5899, 2]
+// Dependencies: [19, 17, 21, 4823, 575, 1113, 4884, 1630, 1655, 5390, 2]
 // Exports: Backdrop
 
-// Module 5898 (Backdrop)
+// Module 5389 (Backdrop)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
 import _modDef1655 from "module_1655" /* 1655 */;
-import native from "native" /* 5371 */;
+import native from "native" /* 4884 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -23,7 +23,7 @@ let hasOwnProperty;
 let obj2;
 let obj3;
 let tmp6;
-const VisualEffectViewAnimatedDefault = tmp6(5899);
+const VisualEffectViewAnimatedDefault = tmp6(5390);
 ({ Pressable: c3, StyleSheet } = react_native);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = {};

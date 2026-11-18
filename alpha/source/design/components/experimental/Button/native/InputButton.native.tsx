@@ -1,24 +1,24 @@
-// Module ID: 8012
-// Function ID: 8013
+// Module ID: 7515
+// Function ID: 7516
 // Name: InputButton
-// Dependencies: [109, 19, 17, 21, 5310, 575, 5936, 7649, 5931, 2]
+// Dependencies: [109, 19, 17, 21, 4823, 575, 5427, 7152, 5422, 2]
 // Exports: InputButton
 
-// Module 8012 (InputButton)
+// Module 7515 (InputButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ButtonConstants from "ButtonConstants" /* 5936 */;
-import InputFieldContainer from "InputFieldContainer" /* 7649 */;
+import ButtonConstants from "ButtonConstants" /* 5427 */;
+import InputFieldContainer from "InputFieldContainer" /* 7152 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size_mod from "module_2" /* 2 */;
 
 let obj2;
 let obj3;
 let tmp6;
-const BaseTextButton2 = tmp6(5931);
+const BaseTextButton2 = tmp6(5422);
 let closure_2 = ["size", "round", "text", "value", "icon", "iconPosition", "accessibilityLabel", "accessibilityValue", "maxFontSizeMultiplier"];
 const Text = react_native.Text;
 const jsx = Fragment.jsx;

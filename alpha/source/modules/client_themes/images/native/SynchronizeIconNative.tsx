@@ -1,11 +1,11 @@
-// Module ID: 17939
-// Function ID: 17940
+// Module ID: 16742
+// Function ID: 16743
 // Name: SynchronizeIconNative
-// Dependencies: [19, 21, 8274, 2]
+// Dependencies: [19, 21, 7776, 2]
 // Exports: default
 
-// Module 17939 (SynchronizeIconNative)
-import inlineStyles from "inlineStyles" /* 8274 */;
+// Module 16742 (SynchronizeIconNative)
+import inlineStyles from "inlineStyles" /* 7776 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size_mod from "module_2" /* 2 */;

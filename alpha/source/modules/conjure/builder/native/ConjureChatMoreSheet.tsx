@@ -1,18 +1,18 @@
-// Module ID: 14529
-// Function ID: 14530
+// Module ID: 18411
+// Function ID: 18412
 // Name: ConjureChatMoreSheet
-// Dependencies: [19, 5181, 5242, 1388, 14530, 21, 5546, 7964, 7465, 7453, 7342, 14385, 13025, 504, 1452, 14532, 14535, 7961, 1113, 4133, 7756, 2]
+// Dependencies: [19, 4694, 4755, 1388, 18412, 21, 5037, 7467, 6968, 6956, 6847, 14655, 12312, 504, 1452, 18414, 18416, 7464, 1113, 4121, 7259, 2]
 // Exports: default
 
-// Module 14529 (ConjureChatMoreSheet)
+// Module 18411 (ConjureChatMoreSheet)
 import Fragment from "Fragment" /* 21 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
-import useConjureShareToServer from "useConjureShareToServer" /* 14532 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
+import useConjureShareToServer from "useConjureShareToServer" /* 18414 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5181 */;
-import PermissionStore from "PermissionStore" /* 5242 */;
+import GuildStore from "GuildStore" /* 4694 */;
+import PermissionStore from "PermissionStore" /* 4755 */;
 import UserStore from "UserStore" /* 1388 */;
-import conjureDesignFeedbackStore from "conjureDesignFeedbackStore" /* 14530 */;
+import conjureDesignFeedbackStore from "conjureDesignFeedbackStore" /* 18412 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -22,7 +22,7 @@ function MoreRow(row) {
   row = row.row;
   if ("switch" === row.kind) {
     ({ label: obj3.label, subLabel: obj3.subLabel } = row);
-    const TableSwitchRow = row(7964).TableSwitchRow;
+    const TableSwitchRow = row(7467).TableSwitchRow;
     ({ value: obj3.value, disabled: obj3.disabled } = row);
     return <TableSwitchRow label={null} subLabel={null} icon={null} value={null} disabled={null} onValueChange={function onValueChange(arg0) {
       const tmp = arg0 && true === row.closesOnEnable;
@@ -38,7 +38,7 @@ function MoreRow(row) {
       str = "danger";
     }
     let tmp = jsx;
-    const TableRow = row(7453).TableRow;
+    const TableRow = row(6956).TableRow;
     return <TableRow label={row.label} variant={str} icon={null} onPress={function onPress() {
       const obj = ActionSheetActionCreatorsDefault;
       obj.hideActionSheet(ConjureChatMoreSheet_str);

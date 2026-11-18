@@ -1,28 +1,28 @@
-// Module ID: 8449
-// Function ID: 8450
+// Module ID: 7940
+// Function ID: 7941
 // Name: StartEventModal
-// Dependencies: [5, 32, 19, 17, 5159, 5181, 5165, 7977, 21, 5310, 575, 6833, 7438, 1113, 1187, 7873, 5923, 8442, 504, 8041, 8450, 7425, 8443, 8454, 5930, 2]
+// Dependencies: [5, 32, 19, 17, 4672, 4694, 4678, 7480, 21, 4823, 575, 6337, 6941, 1113, 1187, 7376, 5414, 7933, 504, 7544, 7941, 6928, 7934, 7945, 5421, 2]
 // Exports: default
 
-// Module 8449 (StartEventModal)
+// Module 7940 (StartEventModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5923 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6833 */;
-import Pressables from "Pressables" /* 7438 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7873 */;
-import GuildEventModalConstants from "GuildEventModalConstants" /* 7977 */;
-import GuildEventCardDefault from "GuildEventCard" /* 8442 */;
+import Text_Text from "Text/Text" /* 5414 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6337 */;
+import Pressables from "Pressables" /* 6941 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7376 */;
+import GuildEventModalConstants from "GuildEventModalConstants" /* 7480 */;
+import GuildEventCardDefault from "GuildEventCard" /* 7933 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5159 */;
-import GuildStore from "GuildStore" /* 5181 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 5165 */;
+import ChannelStore from "ChannelStore" /* 4672 */;
+import GuildStore from "GuildStore" /* 4694 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4678 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let c0, c1;

@@ -1,12 +1,12 @@
-// Module ID: 14383
-// Function ID: 14384
+// Module ID: 18297
+// Function ID: 18298
 // Name: ConjureInstallTarget
-// Dependencies: [5, 7026, 7339, 2]
+// Dependencies: [5, 6530, 6844, 2]
 // Exports: conjureInstallGuildId, repairConjureGuildHints
 
-// Module 14383 (ConjureInstallTarget)
-import ConjureProjectTypes from "ConjureProjectTypes" /* 7026 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 7339 */;
+// Module 18297 (ConjureInstallTarget)
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6530 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 6844 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

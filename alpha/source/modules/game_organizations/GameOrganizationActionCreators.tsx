@@ -1,10 +1,10 @@
-// Module ID: 16439
-// Function ID: 16440
+// Module ID: 15106
+// Function ID: 15107
 // Name: GameOrganizationActionCreators
-// Dependencies: [5, 2143, 1072, 572, 1285, 12574, 6755, 2]
+// Dependencies: [5, 2143, 1072, 572, 1285, 11857, 6257, 2]
 // Exports: fetchGameOrganization, fetchLinkableGameOrganizations
 
-// Module 16439 (GameOrganizationActionCreators)
+// Module 15106 (GameOrganizationActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;

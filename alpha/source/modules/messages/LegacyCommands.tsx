@@ -1,19 +1,19 @@
-// Module ID: 13484
-// Function ID: 13485
+// Module ID: 12791
+// Function ID: 12792
 // Name: LegacyCommands
-// Dependencies: [32, 6977, 6370, 1072, 5135, 11128, 2070, 8874, 5254, 8671, 6064, 2]
+// Dependencies: [32, 6481, 5872, 1072, 4648, 10410, 2070, 8370, 4767, 8162, 5560, 2]
 // Exports: handleLegacyCommands
 
-// Module 13484 (LegacyCommands)
-import UserSettings from "UserSettings" /* 5135 */;
-import ReactionUtils from "ReactionUtils" /* 5254 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6064 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 8671 */;
-import ReactionActionCreators from "ReactionActionCreators" /* 8874 */;
-import ChangeNicknameActionCreatorsDefault from "ChangeNicknameActionCreators" /* 11128 */;
+// Module 12791 (LegacyCommands)
+import UserSettings from "UserSettings" /* 4648 */;
+import ReactionUtils from "ReactionUtils" /* 4767 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5560 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 8162 */;
+import ReactionActionCreators from "ReactionActionCreators" /* 8370 */;
+import ChangeNicknameActionCreatorsDefault from "ChangeNicknameActionCreators" /* 10410 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import EmojiStore from "EmojiStore" /* 6977 */;
-import MessageStore from "MessageStore" /* 6370 */;
+import EmojiStore from "EmojiStore" /* 6481 */;
+import MessageStore from "MessageStore" /* 5872 */;
 import Constants from "Constants" /* 1072 */;
 import module_2070_mod from "module_2070" /* 2070 */;
 import size from "module_2" /* 2 */;

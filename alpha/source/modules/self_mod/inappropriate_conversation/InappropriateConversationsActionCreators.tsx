@@ -1,10 +1,10 @@
-// Module ID: 12514
-// Function ID: 12515
+// Module ID: 11797
+// Function ID: 11798
 // Name: InappropriateConversationsActionCreators
 // Dependencies: [1072, 572, 1285, 1285, 2]
 // Exports: deleteAllSafetyWarnings, markAsInappropriateConversation, pauseVibingWumpusMusic, playVibingWumpusMusic, stopVibingWumpusMusic
 
-// Module 12514 (InappropriateConversationsActionCreators)
+// Module 11797 (InappropriateConversationsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;

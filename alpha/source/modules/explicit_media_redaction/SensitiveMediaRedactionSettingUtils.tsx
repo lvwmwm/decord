@@ -1,10 +1,10 @@
-// Module ID: 8653
-// Function ID: 8654
+// Module ID: 8144
+// Function ID: 8145
 // Name: SensitiveMediaRedactionSettingUtils
 // Dependencies: [1196, 12, 2]
 // Exports: areSettingsEqual, getShouldObscureForSetting
 
-// Module 8653 (SensitiveMediaRedactionSettingUtils)
+// Module 8144 (SensitiveMediaRedactionSettingUtils)
 import _mod12 from "module_12" /* 12 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
 import size from "module_2" /* 2 */;

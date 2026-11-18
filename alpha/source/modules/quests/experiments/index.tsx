@@ -1,13 +1,13 @@
-// Module ID: 10611
-// Function ID: 10612
+// Module ID: 9892
+// Function ID: 9893
 // Name: apexExperiment
-// Dependencies: [1452, 10597, 10598, 10612, 2]
+// Dependencies: [1452, 9878, 9879, 9893, 2]
 // Exports: useQuestOrbsMultiplierMarketing
 
-// Module 10611 (apexExperiment)
-import QuestOrbMultiplierHooks from "QuestOrbMultiplierHooks" /* 10597 */;
-import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 10598 */;
-import QuestOrbsMultiplier from "QuestOrbsMultiplier" /* 10612 */;
+// Module 9892 (apexExperiment)
+import QuestOrbMultiplierHooks from "QuestOrbMultiplierHooks" /* 9878 */;
+import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 9879 */;
+import QuestOrbsMultiplier from "QuestOrbsMultiplier" /* 9893 */;
 import ApexExperiment_mod from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 

@@ -1,24 +1,24 @@
-// Module ID: 18415
-// Function ID: 18416
+// Module ID: 17220
+// Function ID: 17221
 // Name: TakeActionScreen
-// Dependencies: [5, 32, 19, 17, 5252, 1388, 12460, 21, 5310, 575, 504, 12498, 12501, 1502, 8148, 6913, 12474, 10794, 6009, 1113, 6008, 5930, 12511, 10829, 8061, 8405, 6006, 5923, 2]
+// Dependencies: [5, 32, 19, 17, 4765, 1388, 11742, 21, 4823, 575, 504, 11781, 11784, 1502, 7651, 6417, 11756, 10075, 5505, 1113, 5504, 5421, 11794, 10169, 7564, 12353, 5502, 5414, 2]
 // Exports: default
 
-// Module 18415 (TakeActionScreen)
+// Module 17220 (TakeActionScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 19 */;
 import nativeDefault from "native" /* 575 */;
-import LinkingDefault from "Linking" /* 6006 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 6913 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 8148 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 12474 */;
+import LinkingDefault from "Linking" /* 5502 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 6417 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7651 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 11756 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import RelationshipStore from "RelationshipStore" /* 5252 */;
+import RelationshipStore from "RelationshipStore" /* 4765 */;
 import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 12460 */;
+import Constants from "Constants" /* 11742 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 const react_mod = react2;

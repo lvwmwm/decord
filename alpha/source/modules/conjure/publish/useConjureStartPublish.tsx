@@ -1,11 +1,11 @@
-// Module ID: 14412
-// Function ID: 14413
+// Module ID: 18314
+// Function ID: 18315
 // Name: useConjureStartPublish
-// Dependencies: [19, 14403, 2]
+// Dependencies: [19, 18306, 2]
 // Exports: default
 
-// Module 14412 (useConjureStartPublish)
-import useConjurePublishAction from "useConjurePublishAction" /* 14403 */;
+// Module 18314 (useConjureStartPublish)
+import useConjurePublishAction from "useConjurePublishAction" /* 18306 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

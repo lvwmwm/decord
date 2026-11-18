@@ -1,11 +1,11 @@
-// Module ID: 15462
-// Function ID: 15463
+// Module ID: 14090
+// Function ID: 14091
 // Name: BoostGemPixel
-// Dependencies: [19, 21, 8274, 2]
+// Dependencies: [19, 21, 7776, 2]
 // Exports: default
 
-// Module 15462 (BoostGemPixel)
-import inlineStyles from "inlineStyles" /* 8274 */;
+// Module 14090 (BoostGemPixel)
+import inlineStyles from "inlineStyles" /* 7776 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size_mod from "module_2" /* 2 */;

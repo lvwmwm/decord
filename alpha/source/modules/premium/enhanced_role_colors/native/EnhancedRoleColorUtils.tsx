@@ -1,15 +1,15 @@
-// Module ID: 9200
-// Function ID: 9201
+// Module ID: 8611
+// Function ID: 8612
 // Name: enhanced_role_colors/EnhancedRoleColorUtils
-// Dependencies: [32, 19, 17, 1192, 1083, 671, 1255, 6348, 2]
+// Dependencies: [32, 19, 17, 1192, 1083, 671, 1255, 5850, 2]
 // Exports: isNativeMessageEligibleForEnhancedRoleColors, processColorStringsArray, useIsRoleStyleAndRoleColorsEligibleForERC, useProcessColorStringsArray
 
-// Module 9200 (enhanced_role_colors/EnhancedRoleColorUtils)
+// Module 8611 (enhanced_role_colors/EnhancedRoleColorUtils)
 import react_native from "react-native" /* 17 */;
 import _modDef671 from "module_671" /* 671 */;
 import Constants from "Constants" /* 1083 */;
 import GlobalUtils from "GlobalUtils" /* 1255 */;
-import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 6348 */;
+import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 5850 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
@@ -123,9 +123,9 @@ export function useProcessColorStringsArray(colorStrings) {
     return items;
   }, items);
 }
-export function isNativeMessageEligibleForEnhancedRoleColors(guildId1, id) {
+export function isNativeMessageEligibleForEnhancedRoleColors(guildId, id) {
   const obj = useHasEnhancedRoleColors;
-  return obj.getHasEnhancedRoleColors(guildId1, id);
+  return obj.getHasEnhancedRoleColors(guildId, id);
 }
 export function useIsRoleStyleAndRoleColorsEligibleForERC(guildId, id, stateFromStores, processColorStringsArray) {
   const tmp = useHasEnhancedRoleColorsDefault(guildId, id) && "username" === stateFromStores && processColorStringsArray.length > 1;

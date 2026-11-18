@@ -1,18 +1,18 @@
-// Module ID: 20001
-// Function ID: 20002
+// Module ID: 19272
+// Function ID: 19273
 // Name: PlayableFrameBanner
-// Dependencies: [19, 17732, 21, 5310, 1630, 504, 10615, 6969, 6965, 8845, 17623, 17622, 2]
+// Dependencies: [19, 16534, 21, 4823, 1630, 504, 9896, 6473, 6469, 8342, 16425, 16424, 2]
 // Exports: default
 
-// Module 20001 (PlayableFrameBanner)
+// Module 19272 (PlayableFrameBanner)
 import Fragment from "Fragment" /* 21 */;
-import QuestTypes from "QuestTypes" /* 6965 */;
-import AdCreativeType from "AdCreativeType" /* 6969 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 8845 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 10615 */;
+import QuestTypes from "QuestTypes" /* 6469 */;
+import AdCreativeType from "AdCreativeType" /* 6473 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8342 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 9896 */;
 import react from "react" /* 19 */;
-import PlayableStore from "PlayableStore" /* 17732 */;
-import createStyles from "createStyles" /* 5310 */;
+import PlayableStore from "PlayableStore" /* 16534 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -44,9 +44,9 @@ export default function PlayableFrameBanner(frameId) {
   }, items2);
   let tmp7 = null;
   if (null != stateFromStores) {
-    tmp(17623);
-    tmp7 = <tmpResult style={tmp3.banner} ctaInfo={tmp4(17622).getAdvertiserCtaInfo(stateFromStores)} onContainerPress={callback} onButtonPress={callback} />;
-    const tmp4Result = tmp4(17622);
+    tmp(16425);
+    tmp7 = <tmpResult style={tmp3.banner} ctaInfo={tmp4(16424).getAdvertiserCtaInfo(stateFromStores)} onContainerPress={callback} onButtonPress={callback} />;
+    const tmp4Result = tmp4(16424);
   }
   return tmp7;
 };

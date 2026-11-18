@@ -1,21 +1,21 @@
-// Module ID: 7976
-// Function ID: 7977
+// Module ID: 7479
+// Function ID: 7480
 // Name: GuildScheduledEventModalActionCreators
-// Dependencies: [5, 5165, 7977, 5546, 7978, 2121, 7983, 15971, 2]
+// Dependencies: [5, 4678, 7480, 5037, 7481, 2121, 7486, 14614, 2]
 // Exports: openEndEventModal, transitionToEventDetailsFromInvite
 
-// Module 7976 (GuildScheduledEventModalActionCreators)
+// Module 7479 (GuildScheduledEventModalActionCreators)
 import asyncRequire from "asyncRequire" /* 2121 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 5165 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
-import GuildEventModalConstants from "GuildEventModalConstants" /* 7977 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4678 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
+import GuildEventModalConstants from "GuildEventModalConstants" /* 7480 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, closure_3;
 
 let tmp3;
-const ScheduleUtils = tmp3(7983);
+const ScheduleUtils = tmp3(7486);
 function openGuildEventDetails(arg0) {
   let event;
   let eventId;
@@ -26,7 +26,7 @@ function openGuildEventDetails(arg0) {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
   obj = { eventId, event, onCloseActionSheet: onClose, recurrenceId };
-  const tmp4 = asyncRequire(7978, dependencyMap.paths);
+  const tmp4 = asyncRequire(7481, dependencyMap.paths);
   const tmp5 = closure_5;
   if (recurrenceId == null) {
     const tmp3Result = ScheduleUtils;
@@ -106,5 +106,5 @@ export function transitionToEventDetailsFromInvite() {
 export function openEndEventModal(channel) {
   obj = ActionSheetActionCreatorsDefault;
   const obj2 = { channel };
-  obj.openLazy(asyncRequire(15971, dependencyMap.paths), closure_4, obj2);
+  obj.openLazy(asyncRequire(14614, dependencyMap.paths), closure_4, obj2);
 }

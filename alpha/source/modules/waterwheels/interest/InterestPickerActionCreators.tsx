@@ -1,10 +1,10 @@
-// Module ID: 19070
-// Function ID: 19071
+// Module ID: 17881
+// Function ID: 17882
 // Name: InterestPickerActionCreators
 // Dependencies: [572, 2]
 // Exports: markInterestPickerSeen, setInterestPickerOpen, setInterestPickerPicks
 
-// Module 19070 (InterestPickerActionCreators)
+// Module 17881 (InterestPickerActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 

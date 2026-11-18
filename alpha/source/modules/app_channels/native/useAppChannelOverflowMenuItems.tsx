@@ -1,21 +1,21 @@
-// Module ID: 15656
-// Function ID: 15657
+// Module ID: 14284
+// Function ID: 14285
 // Name: useAppChannelOverflowMenuItems
-// Dependencies: [19, 7028, 5971, 14524, 7271, 15657, 15658, 14525, 15176, 15659, 8487, 15662, 1113, 14540, 11046, 4133, 10751, 6031, 10828, 2]
+// Dependencies: [19, 6532, 5467, 14280, 6775, 14285, 14286, 14289, 13804, 14290, 7978, 14293, 1113, 14295, 10328, 4121, 10032, 5527, 10168, 2]
 // Exports: default
 
-// Module 15656 (useAppChannelOverflowMenuItems)
+// Module 14284 (useAppChannelOverflowMenuItems)
 import intl6 from "intl" /* 1113 */;
-import _modDef4133 from "module_4133" /* 4133 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5971 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 6031 */;
-import FramesConstants from "FramesConstants" /* 7028 */;
-import ShieldIcon from "ShieldIcon" /* 10751 */;
-import FlagIcon from "FlagIcon" /* 10828 */;
-import DoorExitIcon from "DoorExitIcon" /* 11046 */;
-import restartFrames from "restartFrames" /* 14525 */;
-import RefreshIcon from "RefreshIcon" /* 14540 */;
-import closeFrameDefault from "closeFrame" /* 15176 */;
+import _modDef4121 from "module_4121" /* 4121 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5467 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5527 */;
+import FramesConstants from "FramesConstants" /* 6532 */;
+import ShieldIcon from "ShieldIcon" /* 10032 */;
+import FlagIcon from "FlagIcon" /* 10168 */;
+import DoorExitIcon from "DoorExitIcon" /* 10328 */;
+import closeFrameDefault from "closeFrame" /* 13804 */;
+import restartFrames from "restartFrames" /* 14289 */;
+import RefreshIcon from "RefreshIcon" /* 14295 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ function useAppChannelAppActions(channel) {
     const obj = { type: EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL, channelId: channel.id, guildId: channel.guild_id };
     return obj;
   }, items);
-  const tmp5 = application_id(14524)(application_id, memo);
+  const tmp5 = application_id(14280)(application_id, memo);
   dependencyMap = tmp5;
   const obj2 = require("useAppChannelApplication");
   const appChannelApplication = obj2.useAppChannelApplication(channel);
@@ -46,9 +46,9 @@ function useAppChannelAppActions(channel) {
   if (appChannelApplication != null) {
     bot = appChannelApplication.bot;
   }
-  const tmp8 = application_id(15657)(application_id);
+  const tmp8 = application_id(14285)(application_id);
   let closure_4 = tmp8;
-  const tmp9 = application_id(15658)(application_id).length > 0;
+  const tmp9 = application_id(14286)(application_id).length > 0;
   let closure_5 = tmp9;
   const items1 = [application_id, bot, channel, tmp8, tmp5, tmp9];
   return obj.useMemo(() => {
@@ -145,7 +145,7 @@ export default function useAppChannelOverflowMenuItems(channel) {
       const items1 = [];
       if (null != devicePermissions) {
         const push2 = items1.push;
-        const obj3 = { label: intl2.string(_modDef4133.wum6n2), IconComponent: ShieldIcon.ShieldIcon, action: tmp10 };
+        const obj3 = { label: intl2.string(_modDef4121.wum6n2), IconComponent: ShieldIcon.ShieldIcon, action: tmp10 };
         intl2 = intl6.intl;
         push2(obj3);
       }

@@ -1,13 +1,13 @@
-// Module ID: 18433
-// Function ID: 18434
+// Module ID: 17238
+// Function ID: 17239
 // Name: BuildOverridesSetting
-// Dependencies: [9213, 12612, 14540, 17409, 18434, 2]
+// Dependencies: [8624, 11897, 14295, 16066, 17239, 2]
 
-// Module 18433 (BuildOverridesSetting)
-import SettingsConstants from "SettingsConstants" /* 9213 */;
-import RefreshIcon from "RefreshIcon" /* 14540 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 17409 */;
-import SettingBuilders from "SettingBuilders" /* 12612 */;
+// Module 17238 (BuildOverridesSetting)
+import SettingsConstants from "SettingsConstants" /* 8624 */;
+import RefreshIcon from "RefreshIcon" /* 14295 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 16066 */;
+import SettingBuilders from "SettingBuilders" /* 11897 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

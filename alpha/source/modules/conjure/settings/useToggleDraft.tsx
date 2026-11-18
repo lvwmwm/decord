@@ -1,10 +1,10 @@
-// Module ID: 7399
-// Function ID: 7400
+// Module ID: 6902
+// Function ID: 6903
 // Name: useToggleDraft
 // Dependencies: [32, 19, 2]
 // Exports: useToggleDraft
 
-// Module 7399 (useToggleDraft)
+// Module 6902 (useToggleDraft)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

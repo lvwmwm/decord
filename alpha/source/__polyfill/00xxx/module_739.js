@@ -8,36 +8,36 @@ import _mod701 from "module_701" /* 701 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export function getEnvelopeEndpointWithUrlEncodedAuth(protocol, arg1, name) {
-  let combined1 = arg1;
+export function getEnvelopeEndpointWithUrlEncodedAuth(_dsn, tunnel, sdk) {
+  let combined1 = tunnel;
   if (!combined1) {
     let str2 = "";
-    if (protocol.protocol) {
+    if (_dsn.protocol) {
       const _HermesInternal = HermesInternal;
-      str2 = "" + protocol.protocol + ":";
+      str2 = "" + _dsn.protocol + ":";
     }
     let str4 = "";
-    if (protocol.port) {
+    if (_dsn.port) {
       const _HermesInternal2 = HermesInternal;
-      str4 = ":" + protocol.port;
+      str4 = ":" + _dsn.port;
     }
-    const host = protocol.host;
+    const host = _dsn.host;
     let str6 = "";
-    if (protocol.path) {
+    if (_dsn.path) {
       const _HermesInternal3 = HermesInternal;
-      str6 = "/" + protocol.path;
+      str6 = "/" + _dsn.path;
     }
     const _HermesInternal4 = HermesInternal;
     const _HermesInternal5 = HermesInternal;
     const obj = { sentry_version: "7" };
-    const combined = "" + "" + str2 + "//" + host + str4 + str6 + "/api/" + protocol.projectId + "/envelope/";
-    if (protocol.publicKey) {
-      obj.sentry_key = protocol.publicKey;
+    const combined = "" + "" + str2 + "//" + host + str4 + str6 + "/api/" + _dsn.projectId + "/envelope/";
+    if (_dsn.publicKey) {
+      obj.sentry_key = _dsn.publicKey;
     }
-    const tmp12 = name;
+    const tmp12 = sdk;
     if (tmp12) {
       const _HermesInternal6 = HermesInternal;
-      obj.sentry_client = "" + name.name + "/" + name.version;
+      obj.sentry_client = "" + sdk.name + "/" + sdk.version;
     }
     const _URLSearchParams = URLSearchParams;
     const self = this;
@@ -48,9 +48,9 @@ export function getEnvelopeEndpointWithUrlEncodedAuth(protocol, arg1, name) {
   }
   return combined1;
 }
-export function getReportDialogEndpoint(arg0, user) {
+export function getReportDialogEndpoint(dsn, user) {
   const obj = _mod701;
-  const url = obj.makeDsn(arg0);
+  const url = obj.makeDsn(dsn);
   if (url) {
     let str = "";
     if (url.protocol) {

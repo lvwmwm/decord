@@ -1,12 +1,12 @@
-// Module ID: 14419
-// Function ID: 14420
+// Module ID: 18321
+// Function ID: 18322
 // Name: conjureLiveReloadStatus
-// Dependencies: [4133, 1113, 2]
+// Dependencies: [4121, 1113, 2]
 // Exports: liveReloadDescription, liveReloadDirection, liveReloadSettledDirection
 
-// Module 14419 (conjureLiveReloadStatus)
+// Module 18321 (conjureLiveReloadStatus)
 import intl4 from "intl" /* 1113 */;
-import _modDef4133 from "module_4133" /* 4133 */;
+import _modDef4121 from "module_4121" /* 4121 */;
 import size from "module_2" /* 2 */;
 
 function liveReloadProgress(phase, step) {
@@ -52,9 +52,9 @@ function liveReloadProgress(phase, step) {
     string = intl.string;
     const tmp7 = require;
     if ("enable" === tmp4) {
-      NeoP8L = _modDef4133.NeoP8L;
+      NeoP8L = _modDef4121.NeoP8L;
     } else {
-      NeoP8L = _modDef4133["3+DCLs"];
+      NeoP8L = _modDef4121["3+DCLs"];
     }
     stringResult = null;
     if (null != str6) {
@@ -70,7 +70,7 @@ function liveReloadProgress(phase, step) {
   }
 }
 let closure_3 = { enable: ["sandbox", "files", "packages", "prepare", "build", "server", "reload"], disable: ["snapshot", "stopping", "reload"] };
-let obj = { sandbox: _modDef4133.wYBwzU, files: _modDef4133["5hvVF1"], packages: _modDef4133.DKR23W, prepare: _modDef4133.qc4VkW, build: _modDef4133.ZcJIE6, server: _modDef4133.mAXkyS, stopping: _modDef4133.dI8HGD, snapshot: _modDef4133.E3ZRQo, reload: _modDef4133.ZWcCXh };
+let obj = { sandbox: _modDef4121.wYBwzU, files: _modDef4121["5hvVF1"], packages: _modDef4121.DKR23W, prepare: _modDef4121.qc4VkW, build: _modDef4121.ZcJIE6, server: _modDef4121.mAXkyS, stopping: _modDef4121.dI8HGD, snapshot: _modDef4121.E3ZRQo, reload: _modDef4121.ZWcCXh };
 const result = size.fileFinishedImporting("modules/conjure/live_reload/conjureLiveReloadStatus.tsx");
 
 export function liveReloadDirection(arg0) {
@@ -105,7 +105,7 @@ export function liveReloadSettledDirection(arg0, arg1) {
 export { liveReloadProgress };
 export function liveReloadDescription(stateFromStores) {
   const intl = intl4.intl;
-  const stringResult = intl.string(_modDef4133.xjblZt);
+  const stringResult = intl.string(_modDef4121.xjblZt);
   if ("error" !== stateFromStores.phase) {
     let combined;
     const tmp6 = liveReloadProgress(stateFromStores.phase, stateFromStores.step);
@@ -125,7 +125,7 @@ export function liveReloadDescription(stateFromStores) {
         if (stateFromStores.enabled) {
           const intl2 = tmp(1113).intl;
           const _HermesInternal = HermesInternal;
-          combined = "" + intl2.string(tmp3(4133).gCey7s) + " \u00B7 " + stringResult;
+          combined = "" + intl2.string(tmp3(4121).gCey7s) + " \u00B7 " + stringResult;
         }
       }
     }
@@ -134,7 +134,7 @@ export function liveReloadDescription(stateFromStores) {
   const intl3 = tmp(1113).intl;
   const formatToPlainString = intl3.formatToPlainString;
   const enabled = stateFromStores.enabled;
-  const tmp3Result = _modDef4133;
+  const tmp3Result = _modDef4121;
   let error = stateFromStores.error;
   const tmp11 = enabled ? tmp3Result["9YJAIN"] : tmp3Result.JUqlqE;
   if (error == null) {

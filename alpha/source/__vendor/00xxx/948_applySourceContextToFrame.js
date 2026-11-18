@@ -11,12 +11,12 @@ let stacktrace;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export function applySourceContextToFrame(filename, arg1, arg2, arg3) {
+export function applySourceContextToFrame(filename, arr, arg2, arg3) {
   if (filename.filename === arg2) {
     if (filename.lineno) {
-      if (arg1.length) {
+      if (arr.length) {
         const obj = registerSpanErrorInstrumentation;
-        obj.addContextToFrame(arg1, filename, arg3);
+        obj.addContextToFrame(arr, filename, arg3);
       }
     }
   }

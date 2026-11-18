@@ -1,14 +1,14 @@
-// Module ID: 18266
-// Function ID: 18267
+// Module ID: 17072
+// Function ID: 17073
 // Name: TreehouseIcon
-// Dependencies: [19, 21, 575, 6013, 18267, 2]
+// Dependencies: [19, 21, 575, 5509, 17073, 2]
 // Exports: TreehouseIcon
 
-// Module 18266 (TreehouseIcon)
+// Module 17072 (TreehouseIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6013 */;
-import AssetRegistry from "AssetRegistry" /* 18267 */;
+import BaseIconImage2 from "BaseIconImage" /* 5509 */;
+import AssetRegistry from "AssetRegistry" /* 17073 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

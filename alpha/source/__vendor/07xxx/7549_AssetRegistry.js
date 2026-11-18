@@ -1,0 +1,10 @@
+// Module ID: 7549
+// Function ID: 7550
+// Name: AssetRegistry
+// Dependencies: [1119]
+
+// Module 7549 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1119 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "f5152f59510615cd9a196a52f24801ee", name: "ThreadIcon", type: "png" });

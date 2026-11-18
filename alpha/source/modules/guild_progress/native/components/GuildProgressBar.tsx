@@ -1,18 +1,18 @@
-// Module ID: 16464
-// Function ID: 16465
+// Module ID: 15131
+// Function ID: 15132
 // Name: GuildProgressBar
-// Dependencies: [19, 17, 21, 5310, 13986, 575, 1655, 5542, 5545, 2]
+// Dependencies: [19, 17, 21, 4823, 13288, 575, 1655, 5033, 5036, 2]
 // Exports: default
 
-// Module 16464 (GuildProgressBar)
+// Module 15131 (GuildProgressBar)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import timing_timing from "timing/timing" /* 5542 */;
-import timingPresets from "timingPresets" /* 5545 */;
-import GuildProgressUtils from "GuildProgressUtils" /* 13986 */;
+import timing_timing from "timing/timing" /* 5033 */;
+import timingPresets from "timingPresets" /* 5036 */;
+import GuildProgressUtils from "GuildProgressUtils" /* 13288 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let set;

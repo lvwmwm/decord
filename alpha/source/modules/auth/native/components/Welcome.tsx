@@ -1,38 +1,38 @@
-// Module ID: 18693
-// Function ID: 18694
+// Module ID: 17506
+// Function ID: 17507
 // Name: Welcome
-// Dependencies: [19, 17, 18694, 5526, 8472, 1407, 6046, 8477, 1072, 8141, 8853, 21, 5310, 575, 14194, 1113, 38, 1187, 5366, 5923, 6014, 15606, 7781, 16333, 1502, 1630, 504, 18695, 5893, 8689, 1256, 510, 6829, 5911, 18696, 18690, 1503, 6949, 5930, 5371, 5886, 11110, 2]
+// Dependencies: [19, 17, 17507, 5440, 7963, 1407, 5542, 7968, 1072, 7644, 8350, 21, 4823, 575, 13498, 1113, 38, 1187, 4879, 5414, 5510, 14234, 7284, 15000, 1502, 1630, 504, 17508, 5384, 8180, 1256, 510, 6333, 5402, 17509, 17503, 1503, 6453, 5421, 4884, 5377, 10392, 2]
 // Exports: default
 
-// Module 18693 (Welcome)
+// Module 17506 (Welcome)
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import Link from "Link" /* 1503 */;
-import UserUtilsDefault from "UserUtils" /* 5366 */;
-import Text_Text from "Text/Text" /* 5923 */;
-import FastImageDefault from "FastImage" /* 6014 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7781 */;
-import GuildTemplatesConstants from "GuildTemplatesConstants" /* 8141 */;
-import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 8689 */;
-import Constants2 from "Constants" /* 8853 */;
-import GuildInviteIconDefault from "GuildInviteIcon" /* 14194 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15606 */;
-import AssetRegistry from "AssetRegistry" /* 16333 */;
-import RegistrationStepsUtils from "RegistrationStepsUtils" /* 18690 */;
+import UserUtilsDefault from "UserUtils" /* 4879 */;
+import Text_Text from "Text/Text" /* 5414 */;
+import FastImageDefault from "FastImage" /* 5510 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7284 */;
+import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7644 */;
+import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 8180 */;
+import Constants2 from "Constants" /* 8350 */;
+import GuildInviteIconDefault from "GuildInviteIcon" /* 13498 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14234 */;
+import AssetRegistry from "AssetRegistry" /* 15000 */;
+import RegistrationStepsUtils from "RegistrationStepsUtils" /* 17503 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AgeGateStore from "AgeGateStore" /* 18694 */;
-import ExperimentStore from "ExperimentStore" /* 5526 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 8472 */;
+import AgeGateStore from "AgeGateStore" /* 17507 */;
+import ExperimentStore from "ExperimentStore" /* 5440 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 7963 */;
 import UserRecord from "UserRecord" /* 1407 */;
-import InviteStore from "InviteStore" /* 6046 */;
-import DisplayedInviteStore from "DisplayedInviteStore" /* 8477 */;
+import InviteStore from "InviteStore" /* 5542 */;
+import DisplayedInviteStore from "DisplayedInviteStore" /* 7968 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -114,9 +114,9 @@ function InviteCard(invite) {
     items1 = [tmp12, ];
     const obj6 = { style: tmp.text, children: items2 };
     const obj7 = { variant: "body-sm/medium", color: "text-subtle", children: stringResult };
-    items2 = [tmp16(tmp15(5923).Text, obj7), ];
+    items2 = [tmp16(tmp15(5414).Text, obj7), ];
     const obj8 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", children: name };
-    items2[1] = tmp16(tmp15(5923).Text, obj8);
+    items2[1] = tmp16(tmp15(5414).Text, obj8);
     items1[1] = closure_20(React3, obj6);
     return closure_20(React3, obj5);
   }
@@ -171,7 +171,7 @@ function Centerpiece(inlineButtons) {
   items[0] = closure_19(FastImageDefault, obj3);
   const obj4 = { style: tmp4.header, lineClamp: num, variant: "display-md", color: "text-overlay-light", maxFontSizeMultiplier: 1, children: intl.string(intl4.t["3S2xmm"]) };
   num = 2;
-  const Heading = tmp5(5923).Heading;
+  const Heading = tmp5(5414).Heading;
   tmp13 = hasOwnProperty;
   if (tmp3) {
     num = 1;
@@ -179,7 +179,7 @@ function Centerpiece(inlineButtons) {
   intl = tmp5(1113).intl;
   const items1 = [closure_19(Heading, obj4), , , ];
   const items2 = [tmp4.subHeader, ];
-  const Text = tmp5(5923).Text;
+  const Text = tmp5(5414).Text;
   if (null != invite) {
     subHeaderWithInvite = tmp4.subHeaderWithInvite;
   } else {

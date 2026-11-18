@@ -1,19 +1,19 @@
-// Module ID: 19413
-// Function ID: 19414
+// Module ID: 18227
+// Function ID: 18228
 // Name: ChannelScreenFrameContainer
-// Dependencies: [19, 17, 21, 5310, 575, 18756, 5896, 1655, 5267, 2]
+// Dependencies: [19, 17, 21, 4823, 575, 17569, 5387, 1655, 4780, 2]
 // Exports: ChannelScreenFrameTopBorder, default
 
-// Module 19413 (ChannelScreenFrameContainer)
+// Module 18227 (ChannelScreenFrameContainer)
 import nativeDefault from "native" /* 575 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import DeviceUtils from "DeviceUtils" /* 5267 */;
-import useToken from "useToken" /* 5896 */;
-import useAppFrameDefault from "useAppFrame" /* 18756 */;
+import DeviceUtils from "DeviceUtils" /* 4780 */;
+import useToken from "useToken" /* 5387 */;
+import useAppFrameDefault from "useAppFrame" /* 17569 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let _Math, _Math2, borderRadius, num, tmp3;

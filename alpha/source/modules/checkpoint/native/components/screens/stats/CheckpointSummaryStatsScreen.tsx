@@ -1,36 +1,36 @@
-// Module ID: 13402
-// Function ID: 13403
+// Module ID: 12706
+// Function ID: 12707
 // Name: CheckpointSummaryStatsScreen
-// Dependencies: [19, 17, 5311, 13119, 6375, 21, 575, 5310, 1360, 13350, 504, 13136, 6399, 8005, 13403, 13137, 1113, 3319, 1496, 1414, 8386, 3287, 7730, 5923, 6745, 10828, 13379, 5256, 7904, 6014, 13373, 13344, 2]
+// Dependencies: [19, 17, 4824, 12417, 5877, 21, 575, 4823, 1360, 12654, 504, 12434, 5901, 7508, 12707, 12435, 1113, 3339, 1496, 1414, 7888, 3307, 7233, 5414, 6247, 10168, 12682, 4769, 7407, 5510, 12676, 12648, 2]
 // Exports: default
 
-// Module 13402 (CheckpointSummaryStatsScreen)
+// Module 12706 (CheckpointSummaryStatsScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import _modDef3287 from "module_3287" /* 3287 */;
-import _modDef3319 from "module_3319" /* 3319 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 5256 */;
-import CheckpointCardColors from "CheckpointCardColors" /* 6399 */;
-import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6745 */;
-import GuildIcon from "GuildIcon" /* 7730 */;
-import EmojiDefault from "Emoji" /* 7904 */;
-import useMeasuredLayoutDefault from "useMeasuredLayout" /* 8005 */;
-import FlagIcon from "FlagIcon" /* 10828 */;
-import CheckpointScreen from "CheckpointScreen" /* 13136 */;
-import CheckpointTextDefault from "CheckpointText" /* 13137 */;
-import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 13344 */;
-import useIsCheckpointWideDefault from "useIsCheckpointWide" /* 13350 */;
-import CheckpointNumberUtils from "CheckpointNumberUtils" /* 13373 */;
-import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 13379 */;
-import CheckpointRecapCard from "CheckpointRecapCard" /* 13403 */;
+import _modDef3307 from "module_3307" /* 3307 */;
+import _modDef3339 from "module_3339" /* 3339 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4769 */;
+import CheckpointCardColors from "CheckpointCardColors" /* 5901 */;
+import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6247 */;
+import GuildIcon from "GuildIcon" /* 7233 */;
+import EmojiDefault from "Emoji" /* 7407 */;
+import useMeasuredLayoutDefault from "useMeasuredLayout" /* 7508 */;
+import FlagIcon from "FlagIcon" /* 10168 */;
+import CheckpointScreen from "CheckpointScreen" /* 12434 */;
+import CheckpointTextDefault from "CheckpointText" /* 12435 */;
+import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 12648 */;
+import useIsCheckpointWideDefault from "useIsCheckpointWide" /* 12654 */;
+import CheckpointNumberUtils from "CheckpointNumberUtils" /* 12676 */;
+import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 12682 */;
+import CheckpointRecapCard from "CheckpointRecapCard" /* 12707 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5311 */;
-import CheckpointStore from "CheckpointStore" /* 13119 */;
-import CheckpointConstants from "CheckpointConstants" /* 6375 */;
+import AccessibilityStore from "AccessibilityStore" /* 4824 */;
+import CheckpointStore from "CheckpointStore" /* 12417 */;
+import CheckpointConstants from "CheckpointConstants" /* 5877 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1360 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -106,7 +106,7 @@ function GlobalSummaryStats() {
   if (!tmp7) {
     noDataDescriptionText = tmp.noDataDescriptionText;
   }
-  obj6 = { variant: "body-md/medium", style: items3, children: intl.string(_modDef3319["GL+yOs"]) };
+  obj6 = { variant: "body-md/medium", style: items3, children: intl.string(_modDef3339["GL+yOs"]) };
   items3 = [noDataDescriptionText, { color: primaryBackgroundColor }];
   intl = intl14.intl;
   items2[1] = metroImportAll(View, obj5);
@@ -202,14 +202,14 @@ function UserSummaryStats(stats) {
     let num2 = 240;
     const _Math = Math;
     if (1 < num) {
-      num2 = tmp5(13403).CARD_HEIGHT * num;
+      num2 = tmp5(12707).CARD_HEIGHT * num;
     }
     minResult = min(num2, checkpointScreenContentHeight);
   }
   if (null != diff) {
     const _Math2 = Math;
     const _Math3 = Math;
-    map1 = PX_16 + Math.min(Math.max(diff - tmp5(13403).CARD_HEIGHT * num, 0), PX_48 - PX_16);
+    map1 = PX_16 + Math.min(Math.max(diff - tmp5(12707).CARD_HEIGHT * num, 0), PX_48 - PX_16);
   } else {
     map1 = PX_16;
   }
@@ -246,13 +246,13 @@ function UserSummaryStats(stats) {
     const tmp2Result6 = AvatarUtilsDefault;
     applicationIconURL = tmp2Result6.getApplicationIconURL(obj3);
   }
-  let tmp28Result6 = metroImportAll(tmp5(8386).UnknownGameIcon, { size: "md", color: primaryBackgroundColor });
+  let tmp28Result6 = metroImportAll(tmp5(7888).UnknownGameIcon, { size: "md", color: primaryBackgroundColor });
   const intl = tmp5(1113).intl;
-  const stringResult = intl.string(_modDef3319.s4qVni);
+  const stringResult = intl.string(_modDef3339.s4qVni);
   const toLocaleUpperCaseResult = stringResult.toLocaleUpperCase();
   const intl2 = tmp5(1113).intl;
   let icon;
-  const stringResult1 = intl2.string(_modDef3287.y4M1na);
+  const stringResult1 = intl2.string(_modDef3307.y4M1na);
   const toLocaleUpperCaseResult1 = stringResult1.toLocaleUpperCase();
   if (first != null) {
     icon = first.guild.icon;
@@ -268,7 +268,7 @@ function UserSummaryStats(stats) {
       items2 = [, ];
       ({ itemIcon: arr14[0], guildAcronym: arr14[1] } = tmp);
       obj6 = { variant: "body-md/semibold", color: "text-overlay-light", allowFontScaling: false, children: tmp5Result8.getGuildAcronymCharacter(first.guild.name) };
-      Text = tmp5(5923).Text;
+      Text = tmp5(5414).Text;
       tmp5Result8 = CheckpointStatsUtils;
       tmp28Result = tmp28(View, obj5);
     }
@@ -305,9 +305,9 @@ function UserSummaryStats(stats) {
     let tmp39 = tmp4;
     if (tmp39) {
       let CARD_HEIGHT = minResult;
-      const CARD_WIDTH = tmp5(13403).CARD_WIDTH;
+      const CARD_WIDTH = tmp5(12707).CARD_WIDTH;
       if (minResult == null) {
-        CARD_HEIGHT = tmp5(13403).CARD_HEIGHT;
+        CARD_HEIGHT = tmp5(12707).CARD_HEIGHT;
       }
       const obj12 = { width: result / CheckpointRecapCard.CARD_HEIGHT };
       result = CARD_WIDTH * CARD_HEIGHT;
@@ -338,7 +338,7 @@ function UserSummaryStats(stats) {
   const obj18 = { style: items8, ref, onLayout, children: items10 };
   items8[2] = wideStatsExpanded;
   const obj19 = { style: items3, children: items9 };
-  const obj20 = { style: wideLeftStat, label: intl3.string(_modDef3319.MSrV9z), statType: "voice", value: round(num6), color: primaryBackgroundColor };
+  const obj20 = { style: wideLeftStat, label: intl3.string(_modDef3339.MSrV9z), statType: "voice", value: round(num6), color: primaryBackgroundColor };
   intl3 = tmp5(1113).intl;
   num6 = undefined;
   const _Math4 = Math;
@@ -350,7 +350,7 @@ function UserSummaryStats(stats) {
     num6 = 0;
   }
   items9 = [metroImportAll(NumberStat, obj20), ];
-  const obj21 = { style: wideRightStat, label: intl4.string(_modDef3319.hhh11L), statType: "messages", value: round2(num7), color: primaryBackgroundColor };
+  const obj21 = { style: wideRightStat, label: intl4.string(_modDef3339.hhh11L), statType: "messages", value: round2(num7), color: primaryBackgroundColor };
   intl4 = tmp5(1113).intl;
   num7 = undefined;
   const _Math5 = Math;
@@ -364,7 +364,7 @@ function UserSummaryStats(stats) {
   items9[1] = metroImportAll(NumberStat, obj21);
   items10 = [React4(View, obj19), , , ];
   const obj22 = { style: items3, children: items11 };
-  const obj23 = { style: wideLeftStat, label: intl5.string(_modDef3319["f5S+pt"]), statType: "topServerDays", value: round3(num8), color: primaryBackgroundColor };
+  const obj23 = { style: wideLeftStat, label: intl5.string(_modDef3339["f5S+pt"]), statType: "topServerDays", value: round3(num8), color: primaryBackgroundColor };
   intl5 = tmp5(1113).intl;
   num8 = undefined;
   const _Math6 = Math;
@@ -376,18 +376,18 @@ function UserSummaryStats(stats) {
     num8 = 0;
   }
   items11 = [metroImportAll(NumberStat, obj23), ];
-  const obj24 = { style: wideRightStat, singleLine: tmp4, label: intl6.string(_modDef3287["8XPMJj"]), name, color: primaryBackgroundColor, icon: tmp28Result };
+  const obj24 = { style: wideRightStat, singleLine: tmp4, label: intl6.string(_modDef3307["8XPMJj"]), name, color: primaryBackgroundColor, icon: tmp28Result };
   intl6 = tmp5(1113).intl;
   if (null != first) {
     name = first.guild.name;
   } else {
     const intl7 = tmp5(1113).intl;
-    name = intl7.string(tmp2(3319).GultYJ);
+    name = intl7.string(tmp2(3339).GultYJ);
   }
   items11[1] = metroImportAll(ItemStat, obj24);
   items10[1] = React4(View, obj22);
   const obj25 = { style: items3, children: items12 };
-  const obj26 = { style: wideLeftStat, label: intl8.string(_modDef3319.xVSlv3), statType: "emoji", value: round4(num9), color: primaryBackgroundColor };
+  const obj26 = { style: wideLeftStat, label: intl8.string(_modDef3339.xVSlv3), statType: "emoji", value: round4(num9), color: primaryBackgroundColor };
   intl8 = tmp5(1113).intl;
   num9 = undefined;
   const _Math7 = Math;
@@ -399,7 +399,7 @@ function UserSummaryStats(stats) {
     num9 = 0;
   }
   items12 = [metroImportAll(NumberStat, obj26), ];
-  const obj27 = { style: wideRightStat, singleLine: tmp4, label: intl9.string(_modDef3287["3sARW7"]), name: stringResult2, color: primaryBackgroundColor, icon: tmp28Result5 };
+  const obj27 = { style: wideRightStat, singleLine: tmp4, label: intl9.string(_modDef3307["3sARW7"]), name: stringResult2, color: primaryBackgroundColor, icon: tmp28Result5 };
   intl9 = tmp5(1113).intl;
   if (null == first1) {
     const intl10 = tmp5(1113).intl;
@@ -425,7 +425,7 @@ function UserSummaryStats(stats) {
   items12[1] = metroImportAll(ItemStat, obj27);
   items10[2] = React4(View, obj25);
   const obj29 = { style: items3, children: items13 };
-  const obj30 = { style: wideLeftStat, label: intl11.string(_modDef3319.y2Y1DD), statType: "gameDays", value: round5(num10), color: primaryBackgroundColor };
+  const obj30 = { style: wideLeftStat, label: intl11.string(_modDef3339.y2Y1DD), statType: "gameDays", value: round5(num10), color: primaryBackgroundColor };
   intl11 = tmp5(1113).intl;
   num10 = undefined;
   const _Math8 = Math;
@@ -437,7 +437,7 @@ function UserSummaryStats(stats) {
     num10 = 0;
   }
   items13 = [metroImportAll(NumberStat, obj30), ];
-  const obj31 = { style: wideRightStat, singleLine: tmp4, label: intl12.string(_modDef3287.RbT4Zq), name: name2, color: primaryBackgroundColor, icon: tmp28Result6 };
+  const obj31 = { style: wideRightStat, singleLine: tmp4, label: intl12.string(_modDef3307.RbT4Zq), name: name2, color: primaryBackgroundColor, icon: tmp28Result6 };
   intl12 = tmp5(1113).intl;
   if (null != game) {
     name2 = game.name;
@@ -448,7 +448,7 @@ function UserSummaryStats(stats) {
   if (null != applicationIconURL) {
     const obj32 = { source: obj34, style: tmp.itemIcon };
     obj34 = { uri: applicationIconURL };
-    tmp28Result6 = tmp28(tmp2(6014), obj32);
+    tmp28Result6 = tmp28(tmp2(5510), obj32);
   }
   items13[1] = metroImportAll(ItemStat, obj31);
   items10[3] = React4(View, obj29);

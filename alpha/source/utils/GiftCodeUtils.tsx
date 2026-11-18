@@ -1,23 +1,23 @@
-// Module ID: 6753
-// Function ID: 6754
+// Module ID: 6255
+// Function ID: 6256
 // Name: GiftCodeUtils
-// Dependencies: [5, 32, 6754, 1388, 1072, 1390, 5952, 6260, 6764, 1256, 5131, 6785, 1113, 6786, 1255, 504, 2174, 2]
+// Dependencies: [5, 32, 6256, 1388, 1072, 1390, 5448, 5756, 6266, 1256, 4644, 6288, 1113, 6289, 1255, 504, 2174, 2]
 // Exports: cleanCode, findGiftCodes, firstLibraryApplicationForGiftCode, getBodyText, getButtonText, getErrorMessage, getGiftCodeURL, getGiftExperience, getHeaderText, getStep, getSubscriptionGiftStartHeaderText, getSubscriptionGiftSuccessText, isGiftCodeEmbed, makeComboId, parseComboId, processGiftCodeInput, resolveGiftCode, shouldShowCustomGiftExperience, trackGiftCodeCopy, trackStep, useGetGiftCode
 
-// Module 6753 (GiftCodeUtils)
+// Module 6255 (GiftCodeUtils)
 import intl12 from "intl" /* 1113 */;
 import GlobalUtils from "GlobalUtils" /* 1255 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import PremiumUtils from "PremiumUtils" /* 2174 */;
-import shared_PlatformUtils from "shared/PlatformUtils" /* 6260 */;
-import getAnalyticsDataForSKUDefault from "getAnalyticsDataForSKU" /* 6785 */;
+import shared_PlatformUtils from "shared/PlatformUtils" /* 5756 */;
+import getAnalyticsDataForSKUDefault from "getAnalyticsDataForSKU" /* 6288 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import PremiumPaymentModalStore from "PremiumPaymentModalStore" /* 6754 */;
+import PremiumPaymentModalStore from "PremiumPaymentModalStore" /* 6256 */;
 import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
-import RegexUtils from "RegexUtils" /* 5952 */;
+import RegexUtils from "RegexUtils" /* 5448 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -32,7 +32,7 @@ let map1;
 let metroImportAll;
 let metroImportDefault;
 let unpackModuleId;
-const f92763 = () => "[abcdefghjkmnpqrstuvwxyzABCDEFGHJKMNPQRSTUVWXYZ23456789]{" + c0 + "}";
+const f89934 = () => "[abcdefghjkmnpqrstuvwxyzABCDEFGHJKMNPQRSTUVWXYZ23456789]{" + c0 + "}";
 let obj = function _resolveGiftCode() {
   obj = _asyncToGenerator(async (gift_code) => {
     let closure_1 = arg1;
@@ -146,51 +146,54 @@ let obj = function _resolveGiftCode() {
 };
 function getGiftCodeRedeemError(error, currentUser) {
   const code = error.code;
-  if (constants2.INVALID_GIFT_SELF_REDEMPTION === code) {
-    const intl11 = intl12.intl;
-    return intl11.string(intl12.t.wa9h7F);
-  } else if (constants2.INVALID_GIFT_REDEMPTION_EXHAUSTED === code) {
-    const intl10 = intl12.intl;
-    return intl10.string(intl12.t.Iw2TUW);
-  } else if (constants2.INVALID_GIFT_REDEMPTION_OWNED === code) {
-    const intl9 = intl12.intl;
-    return intl9.string(intl12.t.mdLtb5);
-  } else if (constants2.UNKNOWN_GIFT_CODE === code) {
-    const intl8 = intl12.intl;
-    return intl8.string(intl12.t.roztIr);
-  } else if (constants2.INVALID_GIFT_REDEMPTION_SUBSCRIPTION_INCOMPATIBLE === code) {
-    let stringResult;
-    const intl6 = intl12.intl;
-    const formatToPlainString = intl6.formatToPlainString;
-    const v4YTHKw = intl12.t["4YTHKw"];
-    obj = PremiumUtils;
-    const isPremiumExactlyResult = obj.isPremiumExactly(currentUser, map1.TIER_2);
-    const intl7 = intl12.intl;
-    const string = intl7.string;
-    const t = intl12.t;
-    if (isPremiumExactlyResult) {
-      stringResult = string(t.lG6a5x);
-    } else {
-      stringResult = string(t.FSOz78);
+  if (constants2.INVALID_GIFT_SELF_REDEMPTION !== code) {
+    if (constants2.INVALID_GIFT_SUBSCRIPTION_SELF_REDEMPTION !== code) {
+      if (constants2.INVALID_GIFT_REDEMPTION_EXHAUSTED === code) {
+        const intl10 = intl12.intl;
+        return intl10.string(intl12.t.Iw2TUW);
+      } else if (constants2.INVALID_GIFT_REDEMPTION_OWNED === code) {
+        const intl9 = intl12.intl;
+        return intl9.string(intl12.t.mdLtb5);
+      } else if (constants2.UNKNOWN_GIFT_CODE === code) {
+        const intl8 = intl12.intl;
+        return intl8.string(intl12.t.roztIr);
+      } else if (constants2.INVALID_GIFT_REDEMPTION_SUBSCRIPTION_INCOMPATIBLE === code) {
+        let stringResult;
+        const intl6 = intl12.intl;
+        const formatToPlainString = intl6.formatToPlainString;
+        const v4YTHKw = intl12.t["4YTHKw"];
+        obj = PremiumUtils;
+        const isPremiumExactlyResult = obj.isPremiumExactly(currentUser, map1.TIER_2);
+        const intl7 = intl12.intl;
+        const string = intl7.string;
+        const t = intl12.t;
+        if (isPremiumExactlyResult) {
+          stringResult = string(t.lG6a5x);
+        } else {
+          stringResult = string(t.FSOz78);
+        }
+        const obj2 = { planName: stringResult };
+        return formatToPlainString(v4YTHKw, obj2);
+      } else if (constants2.INVALID_GIFT_REDEMPTION_SUBSCRIPTION_MANAGED === code) {
+        const intl5 = intl12.intl;
+        return intl5.string(intl12.t["9i1J30"]);
+      } else if (constants2.INVALID_GIFT_REDEMPTION_INVOICE_OPEN === code) {
+        const intl4 = intl12.intl;
+        return intl4.string(intl12.t["U26WX+"]);
+      } else if (constants2.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED === code) {
+        const intl3 = intl12.intl;
+        return intl3.string(intl12.t.ypuSd8);
+      } else if (constants2.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE === code) {
+        const intl2 = intl12.intl;
+        return intl2.string(intl12.t.mXMmWE);
+      } else {
+        const intl = intl12.intl;
+        return intl.string(intl12.t["s9+XlB"]);
+      }
     }
-    const obj2 = { planName: stringResult };
-    return formatToPlainString(v4YTHKw, obj2);
-  } else if (constants2.INVALID_GIFT_REDEMPTION_SUBSCRIPTION_MANAGED === code) {
-    const intl5 = intl12.intl;
-    return intl5.string(intl12.t["9i1J30"]);
-  } else if (constants2.INVALID_GIFT_REDEMPTION_INVOICE_OPEN === code) {
-    const intl4 = intl12.intl;
-    return intl4.string(intl12.t["U26WX+"]);
-  } else if (constants2.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED === code) {
-    const intl3 = intl12.intl;
-    return intl3.string(intl12.t.ypuSd8);
-  } else if (constants2.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE === code) {
-    const intl2 = intl12.intl;
-    return intl2.string(intl12.t.mXMmWE);
-  } else {
-    const intl = intl12.intl;
-    return intl.string(intl12.t["s9+XlB"]);
   }
+  const intl11 = intl12.intl;
+  return intl11.string(intl12.t.wa9h7F);
 }
 ({ Endpoints: metroImportDefault, AnalyticEvents: metroImportAll, AbortCodes: c9, GiftCodeModalStates: c10, MessageEmbedTypes: unpackModuleId, MessageTypes: closure_12 } = Constants);
 ({ PremiumTypes: map1, SubscriptionIntervalTypes: closure_14 } = PremiumConstants);
@@ -213,16 +216,16 @@ const items3 = [
 const regExp1 = new RegExp("(?: |^|https?://)(?:" + items3.join("|") + ")(/|(/)?\\?code=)([a-z0-9-]+)", "gi");
 const ArrayResult = Array(4);
 const fillResult = ArrayResult.fill(undefined);
-let mapped = fillResult.map(f92763);
+let mapped = fillResult.map(f89934);
 const items4 = [mapped.join("-?"), , , ];
 const ArrayResult1 = Array(6);
 const fillResult1 = ArrayResult1.fill(undefined);
-const mapped1 = fillResult1.map(f92763);
+const mapped1 = fillResult1.map(f89934);
 items4[1] = mapped1.join("-?");
 let c0 = 5;
 const ArrayResult2 = Array(3);
 const fillResult2 = ArrayResult2.fill(undefined);
-const mapped2 = fillResult2.map(f92763);
+const mapped2 = fillResult2.map(f89934);
 items4[2] = mapped2.join("-?");
 items4[3] = "[a-zA-Z]{4}-?[0-9a-zA-Z]{4}-?[a-zA-Z]{4}";
 const regExp2 = new RegExp("^(WUMP-?)?(" + items4.join("|") + ")$");
@@ -615,7 +618,7 @@ export function getBodyText(arg0) {
   } else if (constants3.SUCCESS === step) {
     let otherwiseResult;
     if (null != subscriptionPlan) {
-      const str = subscriptionPlan(6786);
+      const str = subscriptionPlan(6289);
       const match = str.match(subscriptionPlan);
       const obj3 = { interval: constants6.MONTH, premiumSubscriptionType: closure_13.TIER_2 };
       const obj4 = { interval: constants6.YEAR, premiumSubscriptionType: closure_13.TIER_2 };

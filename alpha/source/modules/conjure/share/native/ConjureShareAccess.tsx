@@ -1,25 +1,25 @@
-// Module ID: 14573
-// Function ID: 14574
+// Module ID: 18441
+// Function ID: 18442
 // Name: ConjureShareAccess
-// Dependencies: [19, 17, 21, 5310, 575, 5546, 14439, 2121, 14439, 7756, 14574, 7453, 1113, 4133, 6335, 5923, 5930, 7730, 7755, 7757, 7465, 7639, 14545, 14577, 7953, 6008, 6023, 2]
+// Dependencies: [19, 17, 21, 4823, 575, 5037, 18337, 2121, 18337, 7259, 18442, 6956, 1113, 4121, 5837, 5414, 5421, 7233, 7258, 7260, 6968, 7142, 18422, 18445, 7456, 5504, 5519, 2]
 // Exports: default
 
-// Module 14573 (ConjureShareAccess)
+// Module 18441 (ConjureShareAccess)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import _modDef4133 from "module_4133" /* 4133 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
-import ToastUtils from "ToastUtils" /* 6008 */;
-import GuildIcon from "GuildIcon" /* 7730 */;
-import TableRadioRow2 from "TableRadioRow" /* 7757 */;
-import ClipboardUtils from "ClipboardUtils" /* 7953 */;
-import ConjureSharingModeSheet from "ConjureSharingModeSheet" /* 14439 */;
-import ConjureChangeListDefault from "ConjureChangeList" /* 14545 */;
-import buildConjureProjectLinkDefault from "buildConjureProjectLink" /* 14577 */;
+import _modDef4121 from "module_4121" /* 4121 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
+import ToastUtils from "ToastUtils" /* 5504 */;
+import GuildIcon from "GuildIcon" /* 7233 */;
+import TableRadioRow2 from "TableRadioRow" /* 7260 */;
+import ClipboardUtils from "ClipboardUtils" /* 7456 */;
+import ConjureSharingModeSheet from "ConjureSharingModeSheet" /* 18337 */;
+import ConjureChangeListDefault from "ConjureChangeList" /* 18422 */;
+import buildConjureProjectLinkDefault from "buildConjureProjectLink" /* 18445 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -63,16 +63,16 @@ function ConjureShareServersSection(servers) {
               return closure_1_5(TableRow, obj, guild.id);
             })
       };
-      const TableRowGroup = servers(7756).TableRowGroup;
+      const TableRowGroup = servers(7259).TableRowGroup;
       tmp5 = closure_5(TableRowGroup, obj);
     }
     const items = [tmp5, , , ];
     let tmp2Result = null;
     if (candidates.length > 0) {
-      const TableRadioGroup = servers(7755).TableRadioGroup;
+      const TableRadioGroup = servers(7258).TableRadioGroup;
       if (current.length > 0) {
         const intl = tmp10(1113).intl;
-        title = intl.string(_modDef4133["7SD3ul"]);
+        title = intl.string(_modDef4121["7SD3ul"]);
       }
       let obj2 = {
         title,
@@ -96,10 +96,10 @@ function ConjureShareServersSection(servers) {
         str = "";
       }
       const obj3 = { value: "", label: intl2.string(servers(1113).t.PoWNfe), icon: closure_5(TableRowIcon, obj4), disabled: servers.sharing };
-      let TableRadioRow = tmp10(7757).TableRadioRow;
+      let TableRadioRow = tmp10(7260).TableRadioRow;
       intl2 = tmp10(1113).intl;
-      obj4 = { IconComponent: servers(7639).CircleXIcon };
-      TableRowIcon = tmp10(7465).TableRowIcon;
+      obj4 = { IconComponent: servers(7142).CircleXIcon };
+      TableRowIcon = tmp10(6968).TableRowIcon;
       items1 = [
         closure_5(TableRadioRow, obj3),
         candidates.map((guild) => {
@@ -124,7 +124,7 @@ function ConjureShareServersSection(servers) {
     let tmp18 = null;
     if (null != servers.error) {
       const obj6 = { variant: "body-sm/medium", color: "text-feedback-critical", accessibilityRole: "alert", children: servers.error };
-      tmp18 = closure_5(servers(5923).Text, obj6);
+      tmp18 = closure_5(servers(5414).Text, obj6);
     }
     const obj7 = { children: items };
     items[3] = tmp18;
@@ -225,7 +225,7 @@ export default function ConjureShareAccess(arg0) {
         return ref.current(AUTO_DISMISS);
       }
     };
-    const tmp2 = asyncRequire(14439, dependencyMap.paths);
+    const tmp2 = asyncRequire(18337, dependencyMap.paths);
     openLazy(tmp2, ConjureSharingModeSheet.CONJURE_SHARING_MODE_SHEET_KEY, obj, "stack");
   }, items1);
   items2 = [closure_5(ConjureShareServersSection, { servers, title: serversLabel }), , , , , ];

@@ -1,22 +1,22 @@
-// Module ID: 17600
-// Function ID: 17601
+// Module ID: 16402
+// Function ID: 16403
 // Name: useBountiesModalVideoAnalytics
-// Dependencies: [5, 32, 19, 6208, 1072, 10613, 1269, 8846, 8845, 6967, 17601, 8836, 6969, 8792, 1380, 8827, 11293, 17591, 17602, 6769, 6774, 2]
+// Dependencies: [5, 32, 19, 5704, 1072, 9894, 1269, 8343, 8342, 6471, 16403, 8333, 6473, 8289, 1380, 8324, 10575, 16393, 16404, 6272, 6277, 2]
 // Exports: useBountiesModalVideoAnalytics
 
-// Module 17600 (useBountiesModalVideoAnalytics)
+// Module 16402 (useBountiesModalVideoAnalytics)
 import Constants from "Constants" /* 1072 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 6769 */;
-import MetricEvents from "MetricEvents" /* 6774 */;
-import AdCreativeType from "AdCreativeType" /* 6969 */;
-import AnalyticsActions from "AnalyticsActions" /* 8836 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 11293 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 17591 */;
-import AdsVideoUtils from "AdsVideoUtils" /* 17602 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 6272 */;
+import MetricEvents from "MetricEvents" /* 6277 */;
+import AdCreativeType from "AdCreativeType" /* 6473 */;
+import AnalyticsActions from "AnalyticsActions" /* 8333 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 10575 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 16393 */;
+import AdsVideoUtils from "AdsVideoUtils" /* 16404 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import NetworkStore from "NetworkStore" /* 6208 */;
+import NetworkStore from "NetworkStore" /* 5704 */;
 import size_mod from "module_2" /* 2 */;
 
 let c5, c6, closure_3, set;

@@ -1,14 +1,14 @@
-// Module ID: 8181
-// Function ID: 8182
+// Module ID: 7684
+// Function ID: 7685
 // Name: useIsPinotNewChannelPrivate
-// Dependencies: [5159, 5216, 5181, 504, 8178, 2]
+// Dependencies: [4672, 4729, 4694, 504, 7681, 2]
 // Exports: useIsPinotNewChannelPrivate
 
-// Module 8181 (useIsPinotNewChannelPrivate)
-import PinotEligibility from "PinotEligibility" /* 8178 */;
-import ChannelStore from "ChannelStore" /* 5159 */;
-import GuildRoleStore from "GuildRoleStore" /* 5216 */;
-import GuildStore from "GuildStore" /* 5181 */;
+// Module 7684 (useIsPinotNewChannelPrivate)
+import PinotEligibility from "PinotEligibility" /* 7681 */;
+import ChannelStore from "ChannelStore" /* 4672 */;
+import GuildRoleStore from "GuildRoleStore" /* 4729 */;
+import GuildStore from "GuildStore" /* 4694 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

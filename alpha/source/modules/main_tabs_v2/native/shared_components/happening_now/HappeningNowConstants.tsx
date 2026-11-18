@@ -1,9 +1,9 @@
-// Module ID: 17958
-// Function ID: 17959
+// Module ID: 16761
+// Function ID: 16762
 // Name: HappeningNowConstants
 // Dependencies: [1187, 2]
 
-// Module 17958 (HappeningNowConstants)
+// Module 16761 (HappeningNowConstants)
 import native from "native" /* 1187 */;
 import size from "module_2" /* 2 */;
 

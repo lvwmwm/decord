@@ -1,10 +1,10 @@
-// Module ID: 5368
-// Function ID: 5369
+// Module ID: 4881
+// Function ID: 4882
 // Name: OverlayV3Experiment
 // Dependencies: [1452, 2]
 // Exports: getOverlayChatConfig, getOverlayDefaultKeybind, getOverlayNativeWindowRenderingConfig, getOverlayStreamerModeConfig, trackOverlayInitializedExperiments, useOverlayChat, useOverlayStreamerMode
 
-// Module 5368 (OverlayV3Experiment)
+// Module 4881 (OverlayV3Experiment)
 import ApexExperiment_mod from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
@@ -13,7 +13,7 @@ let obj4;
 let obj6;
 let obj8;
 let ApexExperiment = ApexExperiment_mod;
-let obj = { name: "2026-03-overlay-default-keybind", kind: "user", defaultConfig: { keybindOverride: "r" }, variations: obj2 };
+let obj = { name: "2026-03-overlay-default-keybind", kind: "user", defaultConfig: { keybindOverride: "find" }, variations: obj2 };
 obj2 = { 1: null, 2: { keybindOverride: "ctrl+tab" }, 3: { keybindOverride: "alt+x" } };
 obj2[3] = { keybindOverride: "ctrl+l" };
 const apexExperiment = ApexExperiment.createApexExperiment(obj);

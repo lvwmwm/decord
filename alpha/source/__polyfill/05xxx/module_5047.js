@@ -1,50 +1,13 @@
 // Module ID: 5047
 // Function ID: 5048
-// Dependencies: [5048, 5049, 5050, 5051, 5052]
+// Dependencies: [5048]
 
 // Module 5047
-import formatDistance from "formatDistance" /* 5048 */;
-import buildFormatLongFn from "buildFormatLongFn" /* 5049 */;
-import formatRelative from "formatRelative" /* 5050 */;
-import date_mod from "module_5051" /* 5051 */;
-import date_mod2 from "module_5052" /* 5052 */;
+import "PATTERN_CHARS";
+import PATTERN_CHARS_mod from "PATTERN_CHARS" /* 5048 */;
 
-let tmp11;
-let tmp3;
-let tmp5;
-let tmp7;
-let tmp9;
-if (!formatDistance) {
-  tmp3 = { default: formatDistance };
-  const obj = { default: formatDistance };
-} else {
-  tmp3 = formatDistance;
-}
-if (!buildFormatLongFn) {
-  tmp5 = { default: buildFormatLongFn };
-  const obj2 = { default: buildFormatLongFn };
-} else {
-  tmp5 = buildFormatLongFn;
-}
-if (!formatRelative) {
-  tmp7 = { default: formatRelative };
-  const obj3 = { default: formatRelative };
-} else {
-  tmp7 = formatRelative;
-}
-let date = date_mod2;
-if (!date) {
-  tmp9 = { default: date };
-  const obj4 = { default: date };
-} else {
-  tmp9 = date;
-}
-date = date_mod2;
-if (!date) {
-  tmp11 = { default: date };
-  const obj5 = { default: date };
-} else {
-  tmp11 = date;
-}
+let PATTERN_CHARS;
+const obj = { success: PATTERN_CHARS.pattern("oO.O"), error: PATTERN_CHARS.pattern("OO.OO"), warning: PATTERN_CHARS.pattern("O.O"), heartbeat: PATTERN_CHARS.pattern("oO--oO"), tripleClick: PATTERN_CHARS.pattern("o.o.o"), notification: PATTERN_CHARS.pattern("o-O=o") };
+PATTERN_CHARS = PATTERN_CHARS_mod;
 
-export default { code: "zh-TW", formatDistance: tmp3.default, formatLong: tmp5.default, formatRelative: tmp7.default, localize: tmp9.default, match: tmp11.default, options: { weekStartsOn: 1, firstWeekContainsDate: 4 } };
+export const Patterns = obj;

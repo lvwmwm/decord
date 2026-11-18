@@ -1,0 +1,47 @@
+// Module ID: 10937
+// Function ID: 10938
+// Name: SliderTrackMark
+// Dependencies: [10931, 19, 17, 21, 10935]
+// Exports: SliderTrackMark
+
+// Module 10937 (SliderTrackMark)
+import react2 from "react" /* 19 */;
+import styles from "styles" /* 10935 */;
+import module_10931 from "module_10931" /* 10931 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+
+const react = module_10931(react2);
+
+export function SliderTrackMark(arg0) {
+  let StepMarker;
+  let currentValue;
+  let index;
+  let isTrue;
+  let max;
+  let min;
+  let thumbImage;
+  ({ isTrue, thumbImage, StepMarker } = arg0);
+  ({ index, currentValue, min, max } = arg0);
+  const jsxs = Fragment.jsxs;
+  const View = react_native.View;
+  let jsxResult = null;
+  if (StepMarker) {
+    jsxResult = <StepMarker stepMarked={isTrue} index={index} currentValue={currentValue} min={min} max={max} />;
+  }
+  const items = [jsxResult, ];
+  let jsxResult1 = null;
+  if (thumbImage) {
+    jsxResult1 = null;
+    if (isTrue) {
+      const jsx = obj.jsx;
+      const View2 = tmp.View;
+      const jsx2 = obj.jsx;
+      const Image = tmp.Image;
+      jsxResult1 = <View2 style={styles.styles.thumbImageContainer} testID="sliderTrackMark-thumbImage">{jsx2(Image, { source: thumbImage, style: styles.styles.thumbImage })}</View2>;
+      const obj4 = { source: thumbImage, style: styles.styles.thumbImage };
+    }
+  }
+  items[1] = jsxResult1;
+  return <View style={styles.styles.trackMarkContainer}>{items}</View>;
+}

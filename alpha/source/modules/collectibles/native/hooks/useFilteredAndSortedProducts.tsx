@@ -1,10 +1,10 @@
-// Module ID: 17650
-// Function ID: 17651
+// Module ID: 16452
+// Function ID: 16453
 // Name: useFilteredAndSortedProducts
-// Dependencies: [19, 1388, 1074, 17651, 17652, 17653, 504, 2174, 8507, 2]
+// Dependencies: [19, 1388, 1074, 16453, 16454, 16455, 504, 2174, 7998, 2]
 // Exports: useFilteredAndSortedProducts
 
-// Module 17650 (useFilteredAndSortedProducts)
+// Module 16452 (useFilteredAndSortedProducts)
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;

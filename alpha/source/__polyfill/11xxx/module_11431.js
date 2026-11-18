@@ -1,98 +1,190 @@
 // Module ID: 11431
 // Function ID: 11432
-// Dependencies: []
+// Dependencies: [41, 42, 93, 95, 98, 11399, 11381, 11380, 11382]
 
 // Module 11431
-let items;
-let items1;
-let items10;
-let items11;
-let items12;
-let items2;
-let items3;
-let items4;
-let items5;
-let items6;
-let items7;
-let items8;
-let items9;
-let obj10;
-let obj12;
-let obj13;
-let obj15;
-let obj16;
-let obj18;
-let obj19;
-let obj21;
-let obj22;
-let obj24;
-let obj25;
-let obj27;
-let obj28;
-let obj30;
-let obj31;
-let obj33;
-let obj34;
-let obj4;
-let obj6;
-let obj7;
-let obj9;
-const obj = { v: "4.8.0", meta: { g: "LottieFiles AE 3.0.0", a: "", k: "", d: "", tc: "" }, fr: 60, ip: 3, op: 102, w: 1280, h: 720, nm: "FrameEffect_02-4_Out", ddd: 0, assets: items, layers: items3, markers: [] };
-items = [{ id: "image_0", w: 35, h: 35, u: "", p: "", e: 1 }, ];
-const obj3 = { ddd: 0, ind: 3, ty: 2, nm: "smile", refId: "image_0", sr: 1, ks: obj4, ao: 0, ip: 0, op: 914, st: 0, bm: 0 };
-const obj2 = { id: "comp_0", layers: items1 };
-items1 = [obj3];
-obj4 = { o: { a: 0, k: 100, ix: 11 }, r: { a: 0, k: 0, ix: 10 }, p: { a: 0, k: [19.875, 20.125, 0], ix: 2 }, a: { a: 0, k: [17.25, 17.25, 0], ix: 1 }, s: { a: 0, k: [108.7, 108.7, 100], ix: 6 } };
-items[1] = obj2;
-const obj5 = { ddd: 0, ind: 1, ty: 4, nm: "Shape Layer 2", sr: 1, ks: obj6, ao: 0, shapes: [], ip: 0, op: 310, st: -50, bm: 0 };
-obj6 = { o: { a: 0, k: 0, ix: 11 }, r: { a: 0, k: 0, ix: 10 }, p: obj7, a: { a: 0, k: [0, 0, 0], ix: 1 }, s: { a: 0, k: [130.88, 130.88, 100], ix: 6 } };
-obj7 = { a: 1, k: items2, ix: 2 };
-items2 = [{ i: { x: 0.833, y: 0.833 }, o: { x: 0.167, y: 0.167 }, t: 0, s: [784, 720, 0], to: [-73.6, 0, 0], ti: [73.6, 0, 0] }, { t: 54, s: [342.4, 720, 0] }];
-items3 = [obj5, , , , , , , , , ];
-const obj8 = { ddd: 0, ind: 2, ty: 0, nm: "particle", parent: 1, refId: "comp_0", sr: 1, ks: obj9, ao: 0, w: 40, h: 40, ip: 0, op: 55, st: -15, bm: 0 };
-obj9 = { o: { a: 0, k: 100, ix: 11 }, r: { a: 0, k: 0, ix: 10 }, p: obj10, a: { a: 0, k: [20, 40, 0], ix: 1 }, s: { a: 0, k: [341.7, 341.7, 100], ix: 6 } };
-obj10 = { a: 1, k: items4, ix: 2 };
-items4 = [{ i: { x: 0.575, y: 1 }, o: { x: 0.699, y: 0 }, t: 9, s: [465.988, -410, 0], to: [-138.328, 0, 0], ti: [138.328, 0, 0] }, { t: 54, s: [-363.982, -410, 0] }];
-items3[1] = obj8;
-const obj11 = { ddd: 0, ind: 3, ty: 0, nm: "particle", parent: 1, refId: "comp_0", sr: 1, ks: obj12, ao: 0, w: 40, h: 40, ip: 0, op: 55, st: -18, bm: 0 };
-obj12 = { o: { a: 0, k: 100, ix: 11 }, r: { a: 0, k: 0, ix: 10 }, p: obj13, a: { a: 0, k: [20, 40, 0], ix: 1 }, s: { a: 0, k: [341.7, 341.7, 100], ix: 6 } };
-obj13 = { a: 1, k: items5, ix: 2 };
-items5 = [{ i: { x: 0.575, y: 1 }, o: { x: 0.699, y: 0 }, t: 6, s: [465.988, -272, 0], to: [-138.328, 0, 0], ti: [138.328, 0, 0] }, { t: 51, s: [-363.982, -272, 0] }];
-items3[2] = obj11;
-const obj14 = { ddd: 0, ind: 4, ty: 0, nm: "particle", parent: 1, refId: "comp_0", sr: 1, ks: obj15, ao: 0, w: 40, h: 40, ip: 0, op: 55, st: -21, bm: 0 };
-obj15 = { o: { a: 0, k: 100, ix: 11 }, r: { a: 0, k: 0, ix: 10 }, p: obj16, a: { a: 0, k: [20, 40, 0], ix: 1 }, s: { a: 0, k: [341.7, 341.7, 100], ix: 6 } };
-obj16 = { a: 1, k: items6, ix: 2 };
-items6 = [{ i: { x: 0.575, y: 1 }, o: { x: 0.699, y: 0 }, t: 3, s: [465.988, -136, 0], to: [-138.328, 0, 0], ti: [138.328, 0, 0] }, { t: 48, s: [-363.982, -136, 0] }];
-items3[3] = obj14;
-const obj17 = { ddd: 0, ind: 5, ty: 0, nm: "particle", parent: 1, refId: "comp_0", sr: 1, ks: obj18, ao: 0, w: 40, h: 40, ip: 0, op: 55, st: -24, bm: 0 };
-obj18 = { o: { a: 0, k: 100, ix: 11 }, r: { a: 0, k: 0, ix: 10 }, p: obj19, a: { a: 0, k: [20, 40, 0], ix: 1 }, s: { a: 0, k: [341.7, 341.7, 100], ix: 6 } };
-obj19 = { a: 1, k: items7, ix: 2 };
-items7 = [{ i: { x: 0.575, y: 1 }, o: { x: 0.699, y: 0 }, t: 0, s: [465.988, 0, 0], to: [-138.328, 0, 0], ti: [138.328, 0, 0] }, { t: 45, s: [-363.982, 0, 0] }];
-items3[4] = obj17;
-const obj20 = { ddd: 0, ind: 6, ty: 4, nm: "Shape Layer 1", sr: 1, ks: obj21, ao: 0, shapes: [], ip: 50, op: 410, st: 50, bm: 0 };
-obj21 = { o: { a: 0, k: 0, ix: 11 }, r: { a: 0, k: 0, ix: 10 }, p: obj22, a: { a: 0, k: [0, 0, 0], ix: 1 }, s: { a: 0, k: [130.88, 130.88, 100], ix: 6 } };
-obj22 = { a: 1, k: items8, ix: 2 };
-items8 = [{ i: { x: 0.833, y: 0.833 }, o: { x: 0.167, y: 0.167 }, t: 50, s: [342.4, 720, 0], to: [73.6, 0, 0], ti: [-73.6, 0, 0] }, { t: 104, s: [784, 720, 0] }];
-items3[5] = obj20;
-const obj23 = { ddd: 0, ind: 7, ty: 0, nm: "particle", parent: 6, refId: "comp_0", sr: 1, ks: obj24, ao: 0, w: 40, h: 40, ip: 50, op: 105, st: 42, bm: 0 };
-obj24 = { o: { a: 0, k: 100, ix: 11 }, r: { a: 0, k: 0, ix: 10 }, p: obj25, a: { a: 0, k: [20, 40, 0], ix: 1 }, s: { a: 0, k: [341.7, 341.7, 100], ix: 6 } };
-obj25 = { a: 1, k: items9, ix: 2 };
-items9 = [{ i: { x: 0.301, y: 1 }, o: { x: 0.425, y: 0 }, t: 59, s: [-363.982, -410, 0], to: [138.328, 0, 0], ti: [-138.328, 0, 0] }, { t: 104, s: [465.988, -410, 0] }];
-items3[6] = obj23;
-const obj26 = { ddd: 0, ind: 8, ty: 0, nm: "particle", parent: 6, refId: "comp_0", sr: 1, ks: obj27, ao: 0, w: 40, h: 40, ip: 50, op: 105, st: 39, bm: 0 };
-obj27 = { o: { a: 0, k: 100, ix: 11 }, r: { a: 0, k: 0, ix: 10 }, p: obj28, a: { a: 0, k: [20, 40, 0], ix: 1 }, s: { a: 0, k: [341.7, 341.7, 100], ix: 6 } };
-obj28 = { a: 1, k: items10, ix: 2 };
-items10 = [{ i: { x: 0.301, y: 1 }, o: { x: 0.425, y: 0 }, t: 56, s: [-363.982, -272, 0], to: [138.328, 0, 0], ti: [-138.328, 0, 0] }, { t: 101, s: [465.988, -272, 0] }];
-items3[7] = obj26;
-const obj29 = { ddd: 0, ind: 9, ty: 0, nm: "particle", parent: 6, refId: "comp_0", sr: 1, ks: obj30, ao: 0, w: 40, h: 40, ip: 50, op: 105, st: 36, bm: 0 };
-obj30 = { o: { a: 0, k: 100, ix: 11 }, r: { a: 0, k: 0, ix: 10 }, p: obj31, a: { a: 0, k: [20, 40, 0], ix: 1 }, s: { a: 0, k: [341.7, 341.7, 100], ix: 6 } };
-obj31 = { a: 1, k: items11, ix: 2 };
-items11 = [{ i: { x: 0.301, y: 1 }, o: { x: 0.425, y: 0 }, t: 53, s: [-363.982, -136, 0], to: [138.328, 0, 0], ti: [-138.328, 0, 0] }, { t: 98, s: [465.988, -136, 0] }];
-items3[8] = obj29;
-const obj32 = { ddd: 0, ind: 10, ty: 0, nm: "particle", parent: 6, refId: "comp_0", sr: 1, ks: obj33, ao: 0, w: 40, h: 40, ip: 50, op: 105, st: 33, bm: 0 };
-obj33 = { o: { a: 0, k: 100, ix: 11 }, r: { a: 0, k: 0, ix: 10 }, p: obj34, a: { a: 0, k: [20, 40, 0], ix: 1 }, s: { a: 0, k: [341.7, 341.7, 100], ix: 6 } };
-obj34 = { a: 1, k: items12, ix: 2 };
-items12 = [{ i: { x: 0.301, y: 1 }, o: { x: 0.425, y: 0 }, t: 50, s: [-363.982, 0, 0], to: [138.328, 0, 0], ti: [-138.328, 0, 0] }, { t: 95, s: [465.988, 0, 0] }];
-items3[9] = obj32;
+import Meridiem from "Meridiem" /* 11380 */;
+import assignSimilarDate from "assignSimilarDate" /* 11381 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11382 */;
+import now2 from "now" /* 11399 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-export default obj;
+let hasOwnProperty;
+
+let self = this;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
+  }
+}
+let self2 = this;
+if (this) {
+  self2 = self.__createBinding;
+}
+if (!self2) {
+  let tmp3 = globalThis;
+  let _Object = Object;
+  self2 = Object.create ? ((arg0, __esModule, arg2, arg3) => {
+    function get() {
+      return __esModule[closure_1];
+    }
+    let closure_0 = __esModule;
+    let closure_1 = arg2;
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
+    let tmp3 = ownPropertyDescriptor;
+    if (tmp3) {
+      let tmp4;
+      if ("get" in ownPropertyDescriptor) {
+        tmp4 = !__esModule.__esModule;
+      } else {
+        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
+      }
+      tmp3 = !tmp4;
+    }
+    if (!tmp3) {
+      ownPropertyDescriptor = { enumerable: true, get };
+      const obj = { enumerable: true, get };
+    }
+    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
+  }) : ((arg0, arg1, arg2, arg3) => {
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    arg0[tmp] = arg1[arg2];
+  });
+}
+let tmp4 = self && self.__setModuleDefault;
+if (!tmp4) {
+  let tmp5 = globalThis;
+  const _Object2 = Object;
+  tmp4 = Object.create ? ((arg0, value) => {
+    const obj = { enumerable: true, value };
+    Object.defineProperty(arg0, "default", obj);
+  }) : ((arg0, arg1) => {
+    arg0.default = arg1;
+  });
+}
+let closure_8 = tmp4;
+let fn = self && self.__importStar;
+if (!fn) {
+  fn = function c(arg0) {
+    fn = Object.getOwnPropertyNames || ((obj) => {
+      const items = [];
+      for (const key10005 in obj) {
+        let _Object = Object;
+        hasOwnProperty = Object.prototype.hasOwnProperty;
+        if (!hasOwnProperty.call(obj, key10005)) {
+          continue;
+        } else {
+          items[items.length] = key10005;
+          continue;
+        }
+        continue;
+      }
+      return items;
+    });
+    return fn(arg0);
+  };
+  fn = (__esModule) => {
+    const tmp = __esModule;
+    if (tmp) {
+      if (__esModule.__esModule) {
+        return __esModule;
+      }
+    }
+    const obj = {};
+    if (null != __esModule) {
+      let num;
+      const arr = fn(__esModule);
+      for (let num = 0; num < arr.length; num = num + 1) {
+        if ("default" !== arr[num]) {
+          let tmp5 = self2(obj, __esModule, arr[num]);
+        }
+      }
+    }
+    closure_8(obj, __esModule);
+    return obj;
+  };
+}
+const now = fn(now2);
+class FRCasualDateParser {
+  constructor() {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, FRCasualDateParser);
+    const obj = _getPrototypeOf(FRCasualDateParser);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(FRCasualDateParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+const entry = {
+  key: "innerPattern",
+  value: function innerPattern(arg0) {
+    return /(maintenant|aujourd'hui|demain|hier|cette\s*nuit|la\s*veille)(?=\W|$)/i;
+  }
+};
+let items = [
+  entry,
+  {
+    key: "innerExtract",
+    value: function innerExtract(refDate, arg1) {
+      refDate = refDate.refDate;
+      const str = arg1[0];
+      const str2 = str.toLowerCase();
+      const parsingComponents = refDate.createParsingComponents();
+      if ("maintenant" === str2) {
+        return now.now(refDate.reference);
+      } else if ("aujourd'hui" === str2) {
+        return now.today(refDate.reference);
+      } else if ("hier" === str2) {
+        return now.yesterday(refDate.reference);
+      } else if ("demain" === str2) {
+        return now.tomorrow(refDate.reference);
+      } else {
+        if (str2.match(/cette\s*nuit/)) {
+          assignSimilarDate.assignSimilarDate(parsingComponents, refDate);
+          parsingComponents.imply("hour", 22);
+          parsingComponents.imply("meridiem", Meridiem.Meridiem.PM);
+        } else if (str2.match(/la\s*veille/)) {
+          const _Date = Date;
+          const self = this;
+          self2 = this;
+          const date = new Date(refDate.getTime());
+          date.setDate(date.getDate() - 1);
+          assignSimilarDate.assignSimilarDate(parsingComponents, date);
+          parsingComponents.imply("hour", 0);
+        }
+        return parsingComponents;
+      }
+    }
+  }
+];
+
+export default _createClass(FRCasualDateParser, items);

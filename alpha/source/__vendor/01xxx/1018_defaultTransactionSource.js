@@ -51,12 +51,12 @@ export function isNearToNow(timestamp2) {
   }
   return tmp;
 }
-export function setSpanDurationAsMeasurement(time_to_full_display, arg1) {
+export function setSpanDurationAsMeasurement(time_to_full_display, activeSpan) {
   let start_timestamp;
   let timestamp;
   const obj = _mod681;
-  ({ timestamp, start_timestamp } = obj.spanToJSON(arg1));
-  obj.spanToJSON(arg1);
+  ({ timestamp, start_timestamp } = obj.spanToJSON(activeSpan));
+  obj.spanToJSON(activeSpan);
   const tmp4 = timestamp && start_timestamp;
   if (tmp4) {
     const tmpResult = _mod681;

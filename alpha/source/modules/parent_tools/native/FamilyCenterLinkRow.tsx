@@ -1,38 +1,37 @@
-// Module ID: 17488
-// Function ID: 17489
+// Module ID: 16145
+// Function ID: 16146
 // Name: FamilyCenterLinkRow
-// Dependencies: [19, 17, 8752, 21, 5310, 17489, 17490, 2]
+// Dependencies: [19, 17, 21, 4823, 16146, 16147, 2]
 // Exports: default
 
-// Module 17488 (FamilyCenterLinkRow)
+// Module 16145 (FamilyCenterLinkRow)
 import react_native from "react-native" /* 17 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 8752 */;
-import FamilyCenterLinkWrapperDefault from "FamilyCenterLinkWrapper" /* 17489 */;
-import FamilyCenterRequestorDetailsDefault from "FamilyCenterRequestorDetails" /* 17490 */;
+import FamilyCenterLinkWrapperDefault from "FamilyCenterLinkWrapper" /* 16146 */;
+import FamilyCenterRequestorDetailsDefault from "FamilyCenterRequestorDetails" /* 16147 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
+let c3;
 let closure_4;
-let hasOwnProperty;
 const View = react_native.View;
-const UserLinkStatus = FamilyCenterConstants.UserLinkStatus;
-({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
-let closure_6 = createStyles.createStyles({ actionContainer: { flexDirection: "row", alignItems: "center", justifyContent: "flex-end", height: "100%" } });
+({ jsx: c3, jsxs: closure_4 } = Fragment);
+let closure_5 = createStyles.createStyles({ actionContainer: { flexDirection: "row", alignItems: "center", justifyContent: "flex-end", height: "100%" } });
 const result = size.fileFinishedImporting("modules/parent_tools/native/FamilyCenterLinkRow.tsx");
 
 export default function FamilyCenterLinkRow(otherUser) {
+  let actions;
   let items;
+  let status;
   otherUser = otherUser.otherUser;
-  const actions = otherUser.actions;
+  ({ status, actions } = otherUser);
   const obj = { userId: otherUser.id, children: items };
   items = [, ];
-  const obj2 = { otherUser, status: UserLinkStatus.PENDING };
-  const tmp = closure_6();
+  const tmp = closure_5();
   const tmp2 = FamilyCenterLinkWrapperDefault;
-  items[0] = React3(FamilyCenterRequestorDetailsDefault, obj2);
-  const obj3 = { style: tmp.actionContainer, children: actions };
-  items[1] = React3(View, obj3);
-  return hasOwnProperty(tmp2, obj);
+  items[0] = _false(FamilyCenterRequestorDetailsDefault, { otherUser, status });
+  const obj2 = { style: tmp.actionContainer, children: actions };
+  items[1] = _false(View, obj2);
+  return React3(tmp2, obj);
 };

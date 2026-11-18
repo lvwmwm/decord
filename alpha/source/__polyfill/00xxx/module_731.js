@@ -8,7 +8,7 @@ import _mod691 from "module_691" /* 691 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export function handleCallbackErrors(fn, fn2) {
+export function handleCallbackErrors(fn, fn2, arg2, arg3) {
   function maybeHandlePromiseRejection(promise, fn2, fn, fn22) {
     let closure_0 = fn2;
     let closure_1 = fn;

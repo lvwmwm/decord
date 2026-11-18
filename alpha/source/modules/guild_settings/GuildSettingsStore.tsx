@@ -1,9 +1,9 @@
-// Module ID: 8416
-// Function ID: 8417
+// Module ID: 7906
+// Function ID: 7907
 // Name: GuildSettingsStore
-// Dependencies: [5174, 8167, 5163, 5177, 7674, 1407, 5181, 1388, 1072, 8417, 8418, 11, 8419, 1285, 572, 8422, 5173, 8423, 2169, 8424, 504, 12, 510, 2]
+// Dependencies: [4687, 7670, 4676, 4690, 7177, 1407, 4694, 1388, 1072, 7907, 7908, 11, 7909, 1285, 572, 7913, 4686, 7914, 2169, 7915, 504, 12, 510, 2]
 
-// Module 8416 (GuildSettingsStore)
+// Module 7906 (GuildSettingsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -11,22 +11,22 @@ import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
 import _modDef2169 from "module_2169" /* 2169 */;
-import ChannelRecord from "ChannelRecord" /* 5163 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 5173 */;
-import PlainRecord from "PlainRecord" /* 5174 */;
-import GuildRecord from "GuildRecord" /* 5177 */;
-import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 8417 */;
-import GuildSettingsServerTagUtils from "GuildSettingsServerTagUtils" /* 8419 */;
-import GuildSettingsVanityURLActionCreators from "GuildSettingsVanityURLActionCreators" /* 8422 */;
-import getDefaultGuildSettingsSection from "getDefaultGuildSettingsSection" /* 8423 */;
-import GuildSettingsFetchActionCreators from "GuildSettingsFetchActionCreators" /* 8424 */;
-import GuildProfileStore from "GuildProfileStore" /* 8167 */;
-import InviteRecord from "InviteRecord" /* 7674 */;
+import ChannelRecord from "ChannelRecord" /* 4676 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 4686 */;
+import PlainRecord from "PlainRecord" /* 4687 */;
+import GuildRecord from "GuildRecord" /* 4690 */;
+import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 7907 */;
+import GuildSettingsServerTagUtils from "GuildSettingsServerTagUtils" /* 7909 */;
+import GuildSettingsVanityURLActionCreators from "GuildSettingsVanityURLActionCreators" /* 7913 */;
+import getDefaultGuildSettingsSection from "getDefaultGuildSettingsSection" /* 7914 */;
+import GuildSettingsFetchActionCreators from "GuildSettingsFetchActionCreators" /* 7915 */;
+import GuildProfileStore from "GuildProfileStore" /* 7670 */;
+import InviteRecord from "InviteRecord" /* 7177 */;
 import UserRecord from "UserRecord" /* 1407 */;
-import GuildStore from "GuildStore" /* 5181 */;
+import GuildStore from "GuildStore" /* 4694 */;
 import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
-import PublicGuildsConstants from "PublicGuildsConstants" /* 8418 */;
+import PublicGuildsConstants from "PublicGuildsConstants" /* 7908 */;
 import size from "module_2" /* 2 */;
 
 let c11, c12, closure_56, closure_9, defaultGuildSettingsSection, map;
@@ -70,8 +70,8 @@ function handleFormInit(type) {
     CLOSED = FormStates.OPEN;
     errors = {};
     c38 = null;
-    const obj6 = SnowflakeUtilsDefault;
-    roleId = obj6.castGuildIdAsEveryoneGuildRoleId(guildId);
+    const obj5 = SnowflakeUtilsDefault;
+    roleId = obj5.castGuildIdAsEveryoneGuildRoleId(guildId);
     NONE = guild.mfaLevel;
     obj = obj2;
     c12 = null;
@@ -83,15 +83,15 @@ function handleFormInit(type) {
       }
     }
     if (null != section) {
-      obj2 = { key: "landing", name: constants.LANDING };
-      const items = [obj2];
+      const items = [{ key: "landing", name: constants.LANDING }];
+      const obj3 = { key: "landing", name: constants.LANDING };
       if (section === constants.TAG_CUSTOMIZE) {
         const obj4 = { key: null, name: null };
-        ({ TAG: obj3.key, TAG: obj3.name } = constants);
+        ({ TAG: obj2.key, TAG: obj2.name } = constants);
         items.push(obj4);
       }
-      const obj5 = { key: section, name: section };
-      items.push(obj5);
+      const obj6 = { key: section, name: section };
+      items.push(obj6);
       c11 = { type: "stack", routes: items };
       const obj10 = { type: "stack", routes: items };
     }

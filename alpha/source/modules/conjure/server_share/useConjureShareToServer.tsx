@@ -1,22 +1,22 @@
-// Module ID: 14532
-// Function ID: 14533
+// Module ID: 18414
+// Function ID: 18415
 // Name: useConjureShareToServer
-// Dependencies: [5, 32, 19, 5181, 5242, 7025, 7387, 1072, 7026, 7270, 504, 14533, 1113, 4133, 14534, 7339, 14403, 7394, 2]
+// Dependencies: [5, 32, 19, 4694, 4755, 6529, 6890, 1072, 6530, 6774, 504, 18415, 1113, 4121, 14666, 6844, 18306, 6897, 2]
 // Exports: canAddConjureProjectToAnotherServer, default
 
-// Module 14532 (useConjureShareToServer)
+// Module 18414 (useConjureShareToServer)
 import Constants from "Constants" /* 1072 */;
-import ConjureProjectStore2 from "ConjureProjectStore" /* 7025 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 7026 */;
-import ConjureUtils from "ConjureUtils" /* 7270 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 7339 */;
-import ConjurePublishTypes from "ConjurePublishTypes" /* 7394 */;
+import ConjureProjectStore2 from "ConjureProjectStore" /* 6529 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6530 */;
+import ConjureUtils from "ConjureUtils" /* 6774 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 6844 */;
+import ConjurePublishTypes from "ConjurePublishTypes" /* 6897 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5181 */;
-import PermissionStore from "PermissionStore" /* 5242 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 7387 */;
+import GuildStore from "GuildStore" /* 4694 */;
+import PermissionStore from "PermissionStore" /* 4755 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 6890 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -24,7 +24,7 @@ const ConjureProjectStore = ConjureProjectStore2;
 let _require, c4;
 
 function refreshUntilBotJoins(arg0, arg1) {
-  const f109840 = () => {
+  const f116104 = () => {
     const integrationStatus = ConjureProjectStore.getIntegrationStatus(closure_0);
     let prop;
     if (integrationStatus != null) {
@@ -37,13 +37,13 @@ function refreshUntilBotJoins(arg0, arg1) {
         closure_0 = tmp;
         let closure_1 = tmp7 - 1;
         const _setTimeout = setTimeout;
-        const timerId = setTimeout(f109840, 1500);
+        const timerId = setTimeout(f116104, 1500);
       }
     }
   };
   let closure_0 = arg0;
   let c1 = 6;
-  let timerId = setTimeout(f109840, 1500);
+  let timerId = setTimeout(f116104, 1500);
 }
 let obj = function _waitForPublishStatus() {
   obj = _asyncToGenerator(async function(arg0, value) {

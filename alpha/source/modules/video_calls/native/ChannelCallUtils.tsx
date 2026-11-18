@@ -1,25 +1,25 @@
-// Module ID: 20164
-// Function ID: 20165
+// Module ID: 19435
+// Function ID: 19436
 // Name: ChannelCallUtils
-// Dependencies: [19, 6800, 1072, 21, 1113, 20165, 8615, 5546, 6063, 6267, 20162, 2121, 20166, 6805, 20167, 8471, 12735, 11685, 16109, 7, 6009, 10338, 2]
+// Dependencies: [19, 6304, 1072, 21, 1113, 19436, 8106, 5037, 5559, 5769, 19433, 2121, 19437, 6309, 19438, 7962, 12020, 10967, 14776, 7, 5505, 9619, 2]
 // Exports: invite, openHideSelfStreamAndVideoConfirmDialog, reportStreamIssue, rtcDebugPanel, selfVideoHidden, shareActivityLogs, videoParticipantsHidden, voiceSettings
 
-// Module 20164 (ChannelCallUtils)
+// Module 19435 (ChannelCallUtils)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 6009 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6063 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6267 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6805 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8471 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11685 */;
-import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 12735 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 16109 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 20165 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 20166 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5505 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5559 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5769 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6309 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 7962 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10967 */;
+import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 12020 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14776 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 19436 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 19437 */;
 import react from "react" /* 19 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 6800 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 6304 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -77,7 +77,7 @@ export function openHideSelfStreamAndVideoConfirmDialog(arg0, arg1) {
     importer() {
       let onConfirm;
       let type;
-      const promise = asyncRequire(20162, dependencyMap.paths);
+      const promise = asyncRequire(19433, dependencyMap.paths);
       return promise.then((result) => {
         closure_0 = result.default;
         return (arg0) => {
@@ -121,7 +121,7 @@ export function reportStreamIssue(stream) {
       const merged = Object.assign(videoStats);
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
       ActionSheetActionCreatorsDefault;
-      const tmp7 = asyncRequire(20167, tmp2.paths);
+      const tmp7 = asyncRequire(19438, tmp2.paths);
       openLazy(tmp7, "StreamReportProblem" + stream.ownerId, { stream, analyticsData: obj3 });
     }
   };

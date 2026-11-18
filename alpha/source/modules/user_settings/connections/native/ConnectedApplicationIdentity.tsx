@@ -1,19 +1,19 @@
-// Module ID: 17510
-// Function ID: 17511
+// Module ID: 16167
+// Function ID: 16168
 // Name: ConnectedApplicationIdentity
-// Dependencies: [5, 32, 19, 17, 21, 5310, 17511, 1113, 1187, 5923, 11708, 6266, 17518, 6338, 1414, 5932, 11014, 7999, 10356, 7454, 7453, 7964, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4823, 16168, 1113, 1187, 5414, 10990, 5768, 16175, 5840, 1414, 5423, 10296, 7502, 9637, 6957, 6956, 7467, 2]
 // Exports: default
 
-// Module 17510 (ConnectedApplicationIdentity)
+// Module 16167 (ConnectedApplicationIdentity)
 import react_native from "react-native" /* 17 */;
 import intl6 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import Text_Text from "Text/Text" /* 5923 */;
-import Icon from "Icon" /* 5932 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6266 */;
-import AlertDefault from "Alert" /* 6338 */;
-import InfoBoxDefault from "InfoBox" /* 11708 */;
+import Text_Text from "Text/Text" /* 5414 */;
+import Icon from "Icon" /* 5423 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5768 */;
+import AlertDefault from "Alert" /* 5840 */;
+import InfoBoxDefault from "InfoBox" /* 10990 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -25,7 +25,7 @@ let closure_1, v3;
 let metroImportAll;
 let metroImportDefault;
 let tmp;
-const IconDefault = tmp(5932);
+const IconDefault = tmp(5423);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 const View = react_native.View;

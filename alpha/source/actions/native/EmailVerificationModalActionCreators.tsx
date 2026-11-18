@@ -1,13 +1,13 @@
-// Module ID: 7750
-// Function ID: 7751
+// Module ID: 7253
+// Function ID: 7254
 // Name: EmailVerificationModalActionCreators
-// Dependencies: [1072, 1256, 6833, 7751, 2121, 2]
+// Dependencies: [1072, 1256, 6337, 7254, 2121, 2]
 
-// Module 7750 (EmailVerificationModalActionCreators)
+// Module 7253 (EmailVerificationModalActionCreators)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6833 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6337 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -23,7 +23,7 @@ let obj = {
       obj.track(AnalyticEvents.USER_ACCOUNT_EMAIL_CHANGE_ATTEMPTED);
     }
     const obj2 = ModalActionCreatorsDefault;
-    obj2.pushLazy(asyncRequire(7751, dependencyMap.paths), { isChangeEmail: flag }, EMAIL_VERIFICATION_MODAL_KEY);
+    obj2.pushLazy(asyncRequire(7254, dependencyMap.paths), { isChangeEmail: flag }, EMAIL_VERIFICATION_MODAL_KEY);
   },
   close() {
     const obj = ModalActionCreatorsDefault;

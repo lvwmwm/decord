@@ -1,17 +1,17 @@
-// Module ID: 12904
-// Function ID: 12905
+// Module ID: 12199
+// Function ID: 12200
 // Name: AcceptStep
-// Dependencies: [5, 32, 19, 12573, 12898, 21, 5310, 12896, 1502, 7503, 12731, 12905, 12917, 6009, 1113, 8219, 8221, 6335, 575, 5923, 2565, 12919, 12920, 12734, 12903, 6949, 5930, 2]
+// Dependencies: [5, 32, 19, 11856, 12194, 21, 4823, 12192, 1502, 7006, 12016, 12200, 12205, 5505, 1113, 7722, 7724, 5837, 575, 5414, 2555, 12207, 12208, 12019, 12198, 6453, 5421, 2]
 // Exports: AcceptStep
 
-// Module 12904 (AcceptStep)
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 12573 */;
-import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 12898 */;
+// Module 12199 (AcceptStep)
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11856 */;
+import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 12194 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let c5, closure_3, constants, id, navigation;

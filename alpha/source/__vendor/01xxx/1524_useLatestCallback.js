@@ -16,9 +16,9 @@ if (typeof document !== "undefined") {
   useEffect = react.useEffect;
 }
 
-export default function useLatestCallback(set) {
-  let closure_0 = set;
-  let closure_1 = react.useRef(set);
+export default function useLatestCallback(map) {
+  let closure_0 = map;
+  let closure_1 = react.useRef(map);
   let current = react.useRef(function latestCallback() {
     let length;
     const items = [];

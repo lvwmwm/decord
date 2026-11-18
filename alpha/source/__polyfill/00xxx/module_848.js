@@ -6,13 +6,13 @@
 // Module 848
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export function getBreadcrumbLogLevelFromHttpStatusCode(arg0) {
+export function getBreadcrumbLogLevelFromHttpStatusCode(status_code) {
   let tmp;
-  if (undefined !== arg0) {
+  if (undefined !== status_code) {
     let str;
-    if (arg0 < 400) {
+    if (status_code < 400) {
       let str2;
-      if (arg0 >= 500) {
+      if (status_code >= 500) {
         str2 = "error";
       }
       str = str2;

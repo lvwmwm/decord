@@ -1,22 +1,22 @@
-// Module ID: 13740
-// Function ID: 13741
+// Module ID: 13047
+// Function ID: 13048
 // Name: VoiceMessageUtils
-// Dependencies: [5, 2133, 13444, 13445, 1072, 3, 13741, 206, 12, 6093, 1256, 5548, 1380, 2]
+// Dependencies: [5, 2133, 12751, 12752, 1072, 3, 13048, 206, 12, 5589, 1256, 5039, 1380, 2]
 // Exports: emitVoiceMessageRecorded, endAudioRecording, generateBase64EncodedWaveform, startAudioRecording, triggerHaptic
 
-// Module 13740 (VoiceMessageUtils)
+// Module 13047 (VoiceMessageUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import byteLengthDefault from "byteLength" /* 206 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import HapticUtils from "HapticUtils" /* 5548 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 6093 */;
-import downsampleWaveformDefault from "downsampleWaveform" /* 13741 */;
+import HapticUtils from "HapticUtils" /* 5039 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5589 */;
+import downsampleWaveformDefault from "downsampleWaveform" /* 13048 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 13444 */;
-import VoiceMessageConstants from "VoiceMessageConstants" /* 13445 */;
+import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 12751 */;
+import VoiceMessageConstants from "VoiceMessageConstants" /* 12752 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let unpackModuleId;
-const f107882 = (item) => Math.min(item, closure_1_13);
+const f104638 = (item) => Math.min(item, closure_1_13);
 let obj = function _startAudioRecording() {
   obj = _asyncToGenerator(async (arg0, value) => {
     let obj5;
@@ -159,7 +159,7 @@ function stopAndGetAudioRecording() {
   if (mapped.length > closure_16) {
     arr3 = downsampleWaveformDefault(mapped, tmp5);
   }
-  const mapped1 = arr3.map(f107882);
+  const mapped1 = arr3.map(f104638);
   const fromByteArray = byteLengthDefault.fromByteArray;
   byteLengthDefault;
   const uint8Array = new Uint8Array(mapped1);
@@ -327,7 +327,7 @@ export function generateBase64EncodedWaveform(arg0) {
   if (arg0.length > authStore3) {
     arr = downsampleWaveformDefault(arg0, tmp);
   }
-  const mapped = arr.map(f107882);
+  const mapped = arr.map(f104638);
   const fromByteArray = byteLengthDefault.fromByteArray;
   byteLengthDefault;
   const uint8Array = new Uint8Array(mapped);

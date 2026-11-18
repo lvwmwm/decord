@@ -1,10 +1,10 @@
-// Module ID: 11297
-// Function ID: 11298
+// Module ID: 10579
+// Function ID: 10580
 // Name: getApplicationIdsForGame
 // Dependencies: [2165, 2141, 504, 2]
 // Exports: default, useApplicationIdsForGame
 
-// Module 11297 (getApplicationIdsForGame)
+// Module 10579 (getApplicationIdsForGame)
 import ApplicationStore from "ApplicationStore" /* 2165 */;
 import GameStore from "GameStore" /* 2141 */;
 import size from "module_2" /* 2 */;

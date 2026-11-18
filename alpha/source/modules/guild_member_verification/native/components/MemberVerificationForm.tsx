@@ -1,19 +1,19 @@
-// Module ID: 7739
-// Function ID: 7740
+// Module ID: 7242
+// Function ID: 7243
 // Name: MemberVerificationForm
-// Dependencies: [5, 32, 19, 17, 7717, 1072, 21, 5310, 6009, 1113, 7719, 5911, 5346, 504, 7290, 7696, 7740, 7659, 5930, 2]
+// Dependencies: [5, 32, 19, 17, 7220, 1072, 21, 4823, 5505, 1113, 7222, 5402, 4859, 504, 6794, 7199, 7243, 7162, 5421, 2]
 // Exports: default
 
-// Module 7739 (MemberVerificationForm)
+// Module 7242 (MemberVerificationForm)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 5346 */;
-import MemberVerificationFormStore2 from "MemberVerificationFormStore" /* 7717 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4859 */;
+import MemberVerificationFormStore2 from "MemberVerificationFormStore" /* 7220 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

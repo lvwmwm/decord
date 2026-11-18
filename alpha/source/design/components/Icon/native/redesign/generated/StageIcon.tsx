@@ -1,14 +1,14 @@
-// Module ID: 8028
-// Function ID: 8029
+// Module ID: 7531
+// Function ID: 7532
 // Name: StageIcon
-// Dependencies: [19, 21, 575, 6013, 8029, 2]
+// Dependencies: [19, 21, 575, 5509, 7532, 2]
 // Exports: StageIcon
 
-// Module 8028 (StageIcon)
+// Module 7531 (StageIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6013 */;
-import AssetRegistry from "AssetRegistry" /* 8029 */;
+import BaseIconImage2 from "BaseIconImage" /* 5509 */;
+import AssetRegistry from "AssetRegistry" /* 7532 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

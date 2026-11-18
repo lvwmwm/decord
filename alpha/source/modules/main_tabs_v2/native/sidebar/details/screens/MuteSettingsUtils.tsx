@@ -1,22 +1,22 @@
-// Module ID: 11040
-// Function ID: 11041
+// Module ID: 10322
+// Function ID: 10323
 // Name: MuteSettingsUtils
-// Dependencies: [5244, 5159, 5181, 5252, 6956, 1388, 1072, 1082, 1113, 5948, 8875, 7893, 7888, 11041, 2]
+// Dependencies: [4757, 4672, 4694, 4765, 6460, 1388, 1072, 1082, 1113, 5439, 8371, 7396, 7391, 10323, 2]
 // Exports: getMessageNotificationsText, getMuteOptions, getMuteSettingLabel, getMuteSettingSublabel, getMuteSettings, handleMuteSettingPress, handleUnmutePress
 
-// Module 11040 (MuteSettingsUtils)
+// Module 10322 (MuteSettingsUtils)
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import intl7 from "intl" /* 1113 */;
-import useChannelName from "useChannelName" /* 5948 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7888 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7893 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8875 */;
-import ChannelMuteUtilsAll from "ChannelMuteUtils" /* 11041 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 5244 */;
-import ChannelStore from "ChannelStore" /* 5159 */;
-import GuildStore from "GuildStore" /* 5181 */;
-import RelationshipStore from "RelationshipStore" /* 5252 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6956 */;
+import useChannelName from "useChannelName" /* 5439 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7391 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7396 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8371 */;
+import ChannelMuteUtilsAll from "ChannelMuteUtils" /* 10323 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4757 */;
+import ChannelStore from "ChannelStore" /* 4672 */;
+import GuildStore from "GuildStore" /* 4694 */;
+import RelationshipStore from "RelationshipStore" /* 4765 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6460 */;
 import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;

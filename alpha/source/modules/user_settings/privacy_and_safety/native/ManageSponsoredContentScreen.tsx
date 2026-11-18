@@ -1,22 +1,22 @@
-// Module ID: 18599
-// Function ID: 18600
+// Module ID: 17412
+// Function ID: 17413
 // Name: ManageSponsoredContentScreen
-// Dependencies: [19, 17, 1072, 21, 1196, 2236, 5135, 7964, 1113, 5310, 575, 7756, 2188, 2]
+// Dependencies: [19, 17, 1072, 21, 1196, 2226, 4648, 7467, 1113, 4823, 575, 7259, 2188, 2]
 // Exports: default
 
-// Module 18599 (ManageSponsoredContentScreen)
+// Module 17412 (ManageSponsoredContentScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
-import _modDef2236 from "module_2236" /* 2236 */;
-import UserSettings from "UserSettings" /* 5135 */;
-import TableRowGroup3 from "TableRowGroup" /* 7756 */;
+import _modDef2226 from "module_2226" /* 2226 */;
+import UserSettings from "UserSettings" /* 4648 */;
+import TableRowGroup3 from "TableRowGroup" /* 7259 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -29,7 +29,7 @@ function AdTopicRow(adTopic) {
   let string;
   let tmp4;
   adTopic = adTopic.adTopic;
-  let AdTopicOptOuts = adTopic(5135).AdTopicOptOuts;
+  let AdTopicOptOuts = adTopic(4648).AdTopicOptOuts;
   const setting = AdTopicOptOuts.useSetting();
   const hasItem = setting.includes(adTopic);
   const tmp2 = obj[adTopic];
@@ -50,18 +50,18 @@ function AdTopicRow(adTopic) {
       AdTopicOptOuts2.updateSetting(items);
     }
   };
-  const TableSwitchRow = adTopic(7964).TableSwitchRow;
+  const TableSwitchRow = adTopic(7467).TableSwitchRow;
   intl = adTopic(1113).intl;
   const intl2 = adTopic(1113).intl;
   string = intl2.string;
-  tmp4 = _modDef2236;
+  tmp4 = _modDef2226;
   return closure_5(TableSwitchRow, obj);
 }
 const View = react_native.View;
 const HelpdeskArticles = Constants.HelpdeskArticles;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let obj = {};
-obj[preloaded_user_settings.AdTopic.REAL_MONEY_GAMING] = _modDef2236.pmIitA;
+obj[preloaded_user_settings.AdTopic.REAL_MONEY_GAMING] = _modDef2226.pmIitA;
 const keys = Object.keys(obj);
 let closure_8 = keys.map(Number);
 let obj2 = { content: obj3 };
@@ -82,12 +82,12 @@ export default function ManageSponsoredContentScreen() {
   const intl = intl3.intl;
   format = intl.format;
   obj3 = { helpdeskArticle: obj4.getArticleURL(HelpdeskArticles.MANAGE_SPONSORED_CONTENT) };
-  prop = _modDef2236["z/MfaY"];
+  prop = _modDef2226["z/MfaY"];
   obj4 = HelpdeskUtilsDefault;
   items = [hasOwnProperty(TableRowGroup, obj2), ];
   const obj5 = {
     hasIcons: false,
-    title: intl2.string(_modDef2236.OkmBx0),
+    title: intl2.string(_modDef2226.OkmBx0),
     children: closure_8.map((adTopic) => {
       obj = { adTopic };
       return closure_1_5(AdTopicRow, obj, adTopic);

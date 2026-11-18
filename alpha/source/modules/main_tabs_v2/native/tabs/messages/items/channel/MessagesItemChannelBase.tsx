@@ -1,24 +1,24 @@
-// Module ID: 18794
-// Function ID: 18795
+// Module ID: 17607
+// Function ID: 17608
 // Name: MessagesItemChannelBase
-// Dependencies: [19, 17, 6065, 7023, 5252, 5213, 6956, 1388, 21, 5310, 575, 504, 18795, 8587, 1380, 8145, 6060, 15146, 7438, 8429, 1113, 9520, 18796, 5988, 9516, 18797, 8636, 18798, 6066, 2]
+// Dependencies: [19, 17, 5561, 6527, 4765, 4726, 6460, 1388, 21, 4823, 575, 504, 17608, 8078, 1380, 7648, 5556, 13772, 6941, 7920, 1113, 8934, 17609, 5484, 8930, 17610, 8127, 17611, 5562, 2]
 
-// Module 18794 (MessagesItemChannelBase)
+// Module 17607 (MessagesItemChannelBase)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import transitionToChannel from "transitionToChannel" /* 6060 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 8145 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 15146 */;
+import transitionToChannel from "transitionToChannel" /* 5556 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7648 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 13772 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 6065 */;
-import ReadStateStore from "ReadStateStore" /* 7023 */;
-import RelationshipStore from "RelationshipStore" /* 5252 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5213 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6956 */;
+import PresenceStore from "PresenceStore" /* 5561 */;
+import ReadStateStore from "ReadStateStore" /* 6527 */;
+import RelationshipStore from "RelationshipStore" /* 4765 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4726 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6460 */;
 import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let closure_12;
@@ -99,7 +99,7 @@ const memoResult = react.memo(function MessagesItemChannelBase(channel) {
       obj3 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
       const obj2 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
     } else {
-      obj3 = { status: "Array", activities: "Path" };
+      obj3 = { status: "__d", activities: "enabled" };
     }
     return obj3;
   });

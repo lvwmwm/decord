@@ -1,15 +1,15 @@
-// Module ID: 17919
-// Function ID: 17920
+// Module ID: 16722
+// Function ID: 16723
 // Name: EchoCancellationSetting
-// Dependencies: [2133, 9213, 504, 12612, 1113, 11673, 2]
+// Dependencies: [2133, 8624, 504, 11897, 1113, 10955, 2]
 
-// Module 17919 (EchoCancellationSetting)
+// Module 16722 (EchoCancellationSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
-import SettingsConstants from "SettingsConstants" /* 9213 */;
-import UserSettingsVoiceUtils from "UserSettingsVoiceUtils" /* 11673 */;
+import SettingsConstants from "SettingsConstants" /* 8624 */;
+import UserSettingsVoiceUtils from "UserSettingsVoiceUtils" /* 10955 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import SettingBuilders from "SettingBuilders" /* 12612 */;
+import SettingBuilders from "SettingBuilders" /* 11897 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

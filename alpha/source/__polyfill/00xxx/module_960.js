@@ -8,7 +8,7 @@ import _mod890 from "module_890" /* 890 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 
 const require = globalThis.__r;
-let _require, c0, c1, c4, c5, closure_2, dependencyMap, f83487, getAllKeys;
+let _require, c0, c1, c4, c5, closure_2, dependencyMap, f81064, getAllKeys;
 
 function _push(fn, arg1, arg2) {
   let closure_0 = arg1;
@@ -142,7 +142,7 @@ function _shift(fn) {
 function createIndexedDbStore(arg0) {
   let dbName = arg0;
   function getStore() {
-    if (null == f83487) {
+    if (null == f81064) {
       let str = dbName.dbName;
       const tmp5 = dbName;
       if (!str) {
@@ -166,7 +166,7 @@ function createIndexedDbStore(arg0) {
         closure_0.onerror = fn2;
         closure_0.onabort = fn2;
       });
-      f83487 = (arg0) => {
+      f81064 = (arg0) => {
         closure_0 = arg0;
         return promise.then((transaction) => {
           const transactionResult = transaction.transaction(closure_0, "readwrite");
@@ -174,7 +174,7 @@ function createIndexedDbStore(arg0) {
         });
       };
     }
-    return f83487;
+    return f81064;
   }
   let obj = {
     push(arg0) {
@@ -470,9 +470,8 @@ export function createStore(arg0, arg1) {
     });
   };
 }
-export function makeBrowserOfflineTransport() {
-  let makeFetchTransport = arg0;
-  if (arg0 === undefined) {
+export function makeBrowserOfflineTransport(makeFetchTransport) {
+  if (makeFetchTransport === undefined) {
     let tmp2 = dependencyMap;
     makeFetchTransport = require("module_894").makeFetchTransport;
   }

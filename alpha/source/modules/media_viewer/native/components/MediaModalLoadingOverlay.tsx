@@ -1,16 +1,16 @@
-// Module ID: 11264
-// Function ID: 11265
+// Module ID: 10546
+// Function ID: 10547
 // Name: MediaModalLoadingOverlay
-// Dependencies: [19, 17, 21, 5310, 575, 5923, 1113, 2]
+// Dependencies: [19, 17, 21, 4823, 575, 5414, 1113, 2]
 
-// Module 11264 (MediaModalLoadingOverlay)
+// Module 10546 (MediaModalLoadingOverlay)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5923 */;
+import Text_Text from "Text/Text" /* 5414 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;

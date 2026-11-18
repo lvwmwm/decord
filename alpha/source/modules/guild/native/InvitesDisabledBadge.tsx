@@ -1,16 +1,16 @@
-// Module ID: 19124
-// Function ID: 19125
+// Module ID: 17935
+// Function ID: 17936
 // Name: InvitesDisabledBadge
-// Dependencies: [19, 17, 21, 5310, 575, 1187, 14299, 2]
+// Dependencies: [19, 17, 21, 4823, 575, 1187, 13603, 2]
 
-// Module 19124 (InvitesDisabledBadge)
+// Module 17935 (InvitesDisabledBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14299 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13603 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size_mod from "module_2" /* 2 */;
 
 let size;

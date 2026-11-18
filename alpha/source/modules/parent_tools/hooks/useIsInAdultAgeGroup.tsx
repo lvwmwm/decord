@@ -1,12 +1,12 @@
-// Module ID: 9629
-// Function ID: 9630
+// Module ID: 9043
+// Function ID: 9044
 // Name: useIsInAdultAgeGroup
-// Dependencies: [8751, 504, 2]
+// Dependencies: [8247, 504, 2]
 // Exports: default
 
-// Module 9629 (useIsInAdultAgeGroup)
+// Module 9043 (useIsInAdultAgeGroup)
 import get_initialized from "get initialized" /* 504 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 8751 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 8247 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/parent_tools/hooks/useIsInAdultAgeGroup.tsx");

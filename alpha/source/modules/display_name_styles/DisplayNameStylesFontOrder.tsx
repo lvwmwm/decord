@@ -1,13 +1,13 @@
-// Module ID: 18000
-// Function ID: 18001
+// Module ID: 16802
+// Function ID: 16803
 // Name: DisplayNameStylesFontOrder
-// Dependencies: [19, 1397, 5335, 5340, 2]
+// Dependencies: [19, 1397, 4848, 4853, 2]
 // Exports: useVisibleFontOrder
 
-// Module 18000 (DisplayNameStylesFontOrder)
+// Module 16802 (DisplayNameStylesFontOrder)
 import react from "react" /* 19 */;
 import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1397 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5335 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4848 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -28,7 +28,7 @@ export function useVisibleFontOrder(arg0) {
     flag = false;
   }
   flag = undefined;
-  flag(5340);
+  flag(4853);
   if (flag) {
     let tmp3 = constants;
     flag = tmp2 !== constants.HIDDEN;

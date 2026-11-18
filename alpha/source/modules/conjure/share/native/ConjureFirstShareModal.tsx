@@ -1,22 +1,22 @@
-// Module ID: 14562
-// Function ID: 14563
+// Module ID: 18433
+// Function ID: 18434
 // Name: ConjureFirstShareModal
-// Dependencies: [5, 19, 21, 6833, 6009, 14425, 14563, 14565, 7500, 7503, 12934, 1113, 6335, 575, 5923, 1502, 4133, 14566, 8219, 8221, 14567, 12903, 5930, 14573, 2]
+// Dependencies: [5, 19, 21, 6337, 5505, 18326, 18434, 18436, 7003, 7006, 12222, 1113, 5837, 575, 5414, 1502, 4121, 18437, 7722, 7724, 18438, 12198, 5421, 18441, 2]
 // Exports: default
 
-// Module 14562 (ConjureFirstShareModal)
+// Module 18433 (ConjureFirstShareModal)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import useNavigation from "useNavigation" /* 1502 */;
-import Text_Text from "Text/Text" /* 5923 */;
-import components_Button_Button from "components/Button/Button" /* 5930 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 6009 */;
-import Stack_Stack from "Stack/Stack" /* 6335 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6833 */;
-import ModalScreen2 from "ModalScreen" /* 8219 */;
-import ModalContent2 from "ModalContent" /* 8221 */;
-import ModalFooter2 from "ModalFooter" /* 12903 */;
-import useConjureSharingModeDefault from "useConjureSharingMode" /* 14425 */;
+import Text_Text from "Text/Text" /* 5414 */;
+import components_Button_Button from "components/Button/Button" /* 5421 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5505 */;
+import Stack_Stack from "Stack/Stack" /* 5837 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6337 */;
+import ModalScreen2 from "ModalScreen" /* 7722 */;
+import ModalContent2 from "ModalContent" /* 7724 */;
+import ModalFooter2 from "ModalFooter" /* 12198 */;
+import useConjureSharingModeDefault from "useConjureSharingMode" /* 18326 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -45,11 +45,11 @@ function FirstShareFlow(project) {
   project = project.project;
   const sharing = project.sharing;
   ({ guildId, publishOptions } = project);
-  const tmp = sharing(14563)(project);
+  const tmp = sharing(18434)(project);
   dependencyMap = tmp;
-  const tmp2 = sharing(14565)(project.id, guildId, publishOptions, true);
+  const tmp2 = sharing(18436)(project.id, guildId, publishOptions, true);
   const servers = tmp2;
-  obj = project(7500);
+  obj = project(7003);
   items = [project, tmp, sharing, tmp2];
   const navigatorScreens = obj.useNavigatorScreens(() => {
     let obj3;
@@ -78,7 +78,7 @@ function FirstShareFlow(project) {
   let obj2 = { value: react.useMemo(() => ({ project, review, sharing, servers }), items), children: closure_5(StepModal, obj3) };
   const Provider = redux.Provider;
   obj3 = { screens: navigatorScreens, initialRouteName: obj.REVIEW, steps: items, headerBackTitle: intl.string(project(1113).t["13/7kX"]), gradientColor: "blue" };
-  StepModal = project(12934).StepModal;
+  StepModal = project(12222).StepModal;
   intl = project(1113).intl;
   return closure_5(Provider, obj2);
 }
@@ -288,7 +288,7 @@ function ReviewStep() {
     const ModalContent = ModalContent2.ModalContent;
     obj5 = { spacing: review(575).space.PX_16, children: items };
     Stack = Stack_Stack.Stack;
-    const obj6 = { title: intl.string(review(4133)["Vay+ld"]), description: intl2.string(review(4133)["N2HM8/"]) };
+    const obj6 = { title: intl.string(review(4121)["Vay+ld"]), description: intl2.string(review(4121)["N2HM8/"]) };
     intl = intl5.intl;
     intl2 = intl5.intl;
     items = [obj(StepHeading, obj6), ];
@@ -298,7 +298,7 @@ function ReviewStep() {
           return obj(...arguments);
         }
     };
-    items[1] = obj(review(14567), obj7);
+    items[1] = obj(review(18438), obj7);
     items1 = [obj(ModalContent, obj4), ];
     const obj8 = { children: obj(Button, obj9) };
     const ModalFooter = ModalFooter2.ModalFooter;
@@ -345,12 +345,12 @@ function AccessStep() {
     const ModalContent = ModalContent2.ModalContent;
     obj3 = { spacing: servers(575).space.PX_16, children: items };
     Stack = Stack_Stack.Stack;
-    const obj4 = { title: intl.string(servers(4133).IN5vt4), description: intl2.string(servers(4133).mbybxl) };
+    const obj4 = { title: intl.string(servers(4121).IN5vt4), description: intl2.string(servers(4121).mbybxl) };
     intl = intl5.intl;
     intl2 = intl5.intl;
     items = [closure_5(StepHeading, obj4), ];
-    const obj5 = { project, sharing, servers, serversLabel: intl3.string(servers(4133).BPxXfh) };
-    const tmp11 = servers(14573);
+    const obj5 = { project, sharing, servers, serversLabel: intl3.string(servers(4121).BPxXfh) };
+    const tmp11 = servers(18441);
     intl3 = intl5.intl;
     items[1] = closure_5(tmp11, obj5);
     const items1 = [closure_5(ModalContent, obj2), ];
@@ -362,7 +362,7 @@ function AccessStep() {
     const tmp6 = require;
     const tmp9 = servers;
     if (null != servers.picked) {
-      i4jeWR = tmp9(4133)["+uQwxA"];
+      i4jeWR = tmp9(4121)["+uQwxA"];
     } else {
       i4jeWR = tmp6(1113).t.i4jeWR;
     }

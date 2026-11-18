@@ -1,10 +1,10 @@
-// Module ID: 5232
-// Function ID: 5233
+// Module ID: 4745
+// Function ID: 4746
 // Name: PremiumRoleUtils
 // Dependencies: [2]
 // Exports: isSubscriptionRole, isSubscriptionRoleAvailableForPurchase
 
-// Module 5232 (PremiumRoleUtils)
+// Module 4745 (PremiumRoleUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/PremiumRoleUtils.tsx");

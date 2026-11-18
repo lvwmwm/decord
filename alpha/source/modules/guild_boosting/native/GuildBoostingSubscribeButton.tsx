@@ -1,18 +1,18 @@
-// Module ID: 14102
-// Function ID: 14103
+// Module ID: 13406
+// Function ID: 13407
 // Name: GuildBoostingSubscribeButton
-// Dependencies: [5, 19, 17, 9245, 1072, 6952, 1390, 21, 14052, 6833, 6950, 14103, 1502, 7928, 563, 1401, 14051, 5930, 1113, 8103, 2]
+// Dependencies: [5, 19, 17, 8656, 6456, 1072, 1390, 21, 13356, 6337, 6454, 13407, 1502, 7431, 563, 1401, 13355, 5421, 1113, 7606, 2]
 // Exports: default
 
-// Module 14102 (GuildBoostingSubscribeButton)
+// Module 13406 (GuildBoostingSubscribeButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
-import PremiumGuildSubscribeConstants from "PremiumGuildSubscribeConstants" /* 6952 */;
-import GuildBoostPurchasingUtils from "GuildBoostPurchasingUtils" /* 14052 */;
+import PremiumGuildSubscribeConstants from "PremiumGuildSubscribeConstants" /* 6456 */;
+import GuildBoostPurchasingUtils from "GuildBoostPurchasingUtils" /* 13356 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildBoostSlotStore from "GuildBoostSlotStore" /* 9245 */;
+import GuildBoostSlotStore from "GuildBoostSlotStore" /* 8656 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ let closure_3, navigation;
 let c10;
 let c9;
 let metroImportAll;
-let metroImportDefault;
+let unpackModuleId;
 let location = function _handleBoostPress() {
   let obj = _asyncToGenerator(async (analyticsLocations, guildId, section) => {
     let c4 = 0;
@@ -90,8 +90,8 @@ let location = function _handleBoostPress() {
   return obj(...arguments);
 };
 let View = react_native.View;
-({ AnalyticsObjects: metroImportDefault, AnalyticsObjectTypes: metroImportAll, AnalyticsPages: c9, NOOP: c10 } = Constants);
-let closure_11 = PremiumGuildSubscribeConstants.PremiumGuildSubscribeModalScenes;
+let closure_7 = PremiumGuildSubscribeConstants.PremiumGuildSubscribeModalScenes;
+({ AnalyticsObjects: metroImportAll, AnalyticsObjectTypes: c9, AnalyticsPages: c10, NOOP: unpackModuleId } = Constants);
 const FractionalPremiumStates = PremiumConstants.FractionalPremiumStates;
 let jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/guild_boosting/native/GuildBoostingSubscribeButton.tsx");
@@ -140,12 +140,12 @@ export default function GuildBoostingSubscribeButton(guild) {
       const obj2 = { guildId, guildBoostSlots: tmp2, location, intent, onResult: View };
       tmp2 = undefined;
       const push = navigation.push;
-      const CONFIRMATION = shouldUseMobileWebRedirectCheckout.CONFIRMATION;
+      const CONFIRMATION = navigation.CONFIRMATION;
       if (null != arg1) {
         const items = [arg1];
         tmp2 = items;
       }
-      location = { page: stateFromStores.PREMIUM_GUILD_USER_MODAL, section: analyticsSection, object: metroImportDefault.BUTTON_CTA, objectType: metroImportAll.BUY };
+      location = { page: c10.PREMIUM_GUILD_USER_MODAL, section: analyticsSection, object: metroImportAll.BUTTON_CTA, objectType: stateFromStores.BUY };
       push(CONFIRMATION, obj2);
     }
   }, items1);
@@ -167,7 +167,7 @@ export default function GuildBoostingSubscribeButton(guild) {
     }
     const tmp = boostSlots;
     if (tmp) {
-      tmp9 = authStore;
+      tmp9 = unpackModuleId;
     } else {
       const tmp2 = stateFromStores;
       if (tmp2) {

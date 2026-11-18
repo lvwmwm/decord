@@ -1,10 +1,10 @@
-// Module ID: 5262
-// Function ID: 5263
+// Module ID: 4775
+// Function ID: 4776
 // Name: DefaultEmojisExperiment
 // Dependencies: [1452, 2]
 // Exports: useDefaultEmojisEnabled
 
-// Module 5262 (DefaultEmojisExperiment)
+// Module 4775 (DefaultEmojisExperiment)
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 

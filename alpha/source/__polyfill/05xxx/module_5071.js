@@ -1,31 +1,75 @@
 // Module ID: 5071
 // Function ID: 5072
-// Dependencies: []
+// Dependencies: [19, 1655, 5056, 5072]
+// Exports: useScrollable
 
 // Module 5071
-let obj3;
-let obj4;
-let obj5;
-let obj6;
-let obj7;
-if (Intl.ListFormat) {
-  const _Intl = Intl;
-  if (typeof Intl.ListFormat.__addLocaleData === "function") {
-    const _Intl2 = Intl;
-    const obj2 = { data: obj3, locale: "hu" };
-    obj3 = { conjunction: obj4, disjunction: obj5, unit: obj6 };
-    obj4 = { long: { end: "{0} \u00E9s {1}", middle: "{0}, {1}", pair: "{0} \u00E9s {1}", start: "{0}, {1}" }, narrow: { end: "{0} \u00E9s {1}", middle: "{0}, {1}", pair: "{0} \u00E9s {1}", start: "{0}, {1}" }, short: { end: "{0} \u00E9s {1}", middle: "{0}, {1}", pair: "{0} \u00E9s {1}", start: "{0}, {1}" } };
-    obj5 = { long: { end: "{0} vagy {1}", middle: "{0}, {1}", pair: "{0} vagy {1}", start: "{0}, {1}" }, narrow: { end: "{0} vagy {1}", middle: "{0}, {1}", pair: "{0} vagy {1}", start: "{0}, {1}" }, short: { end: "{0} vagy {1}", middle: "{0}, {1}", pair: "{0} vagy {1}", start: "{0}, {1}" } };
-    obj6 = { long: { end: "{0} \u00E9s {1}", middle: "{0}, {1}", pair: "{0} \u00E9s {1}", start: "{0}, {1}" }, narrow: { end: "{0} \u00E9s {1}", middle: "{0}, {1}", pair: "{0} \u00E9s {1}", start: "{0}, {1}" }, short: { end: "{0} \u00E9s {1}", middle: "{0}, {1}", pair: "{0} \u00E9s {1}", start: "{0}, {1}" } };
-    ListFormat.__addLocaleData(obj2);
-  }
-}
-let prop = globalThis.__FORMATJS_LISTFORMAT_DATA__;
-const _globalThis = globalThis;
-if (!prop) {
-  prop = [];
-}
-_globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
-const obj = { data: obj7, locale: "hu" };
-obj7 = { conjunction: { long: { end: "{0} \u00E9s {1}", middle: "{0}, {1}", pair: "{0} \u00E9s {1}", start: "{0}, {1}" }, narrow: { end: "{0} \u00E9s {1}", middle: "{0}, {1}", pair: "{0} \u00E9s {1}", start: "{0}, {1}" }, short: { end: "{0} \u00E9s {1}", middle: "{0}, {1}", pair: "{0} \u00E9s {1}", start: "{0}, {1}" } }, disjunction: { long: { end: "{0} vagy {1}", middle: "{0}, {1}", pair: "{0} vagy {1}", start: "{0}, {1}" }, narrow: { end: "{0} vagy {1}", middle: "{0}, {1}", pair: "{0} vagy {1}", start: "{0}, {1}" }, short: { end: "{0} vagy {1}", middle: "{0}, {1}", pair: "{0} vagy {1}", start: "{0}, {1}" } }, unit: { long: { end: "{0} \u00E9s {1}", middle: "{0}, {1}", pair: "{0} \u00E9s {1}", start: "{0}, {1}" }, narrow: { end: "{0} \u00E9s {1}", middle: "{0}, {1}", pair: "{0} \u00E9s {1}", start: "{0}, {1}" }, short: { end: "{0} \u00E9s {1}", middle: "{0}, {1}", pair: "{0} \u00E9s {1}", start: "{0}, {1}" } } };
-prop.push(obj);
+import _mod5072 from "module_5072" /* 5072 */;
+import react from "react" /* 19 */;
+
+const require = globalThis.__r;
+let _require, dependencyMap;
+
+let c2;
+let c3;
+({ useCallback: c2, useRef: c3 } = react);
+
+export const useScrollable = () => {
+  let ref;
+  let ref2;
+  const tmp = closure_3(null);
+  _require = tmp;
+  dependencyMap = closure_3(null);
+  let obj = require("module_1655");
+  const sharedValue = obj.useSharedValue(require("GESTURE_SOURCE").SCROLLABLE_TYPE.UNDETERMINED);
+  const obj2 = require("module_1655");
+  const sharedValue1 = obj2.useSharedValue(0);
+  const obj3 = require("module_1655");
+  const sharedValue2 = obj3.useSharedValue(require("GESTURE_SOURCE").SCROLLABLE_STATE.UNDETERMINED);
+  const obj4 = require("module_1655");
+  const sharedValue3 = obj4.useSharedValue(false);
+  let tmp6 = closure_2((id) => {
+    const current = ref.current;
+    id = undefined;
+    if (current != null) {
+      id = current.id;
+    }
+    if (id == null) {
+      id = null;
+    }
+    if (id !== id.id) {
+      if (ref.current) {
+        ref2.current = ref.current;
+      }
+      ref.current = id;
+    }
+  }, []);
+  const obj5 = {
+    scrollableRef: tmp,
+    animatedScrollableType: sharedValue,
+    animatedScrollableContentOffsetY: sharedValue1,
+    animatedScrollableOverrideState: sharedValue2,
+    isScrollableRefreshable: sharedValue3,
+    setScrollableRef: tmp6,
+    removeScrollableRef: closure_2((current) => {
+      try {
+        const obj = _mod5072;
+        current = ref.current;
+        let id;
+        const findNodeHandleResult = obj.findNodeHandle(current.current);
+        const tmp6 = ref;
+        if (current != null) {
+          id = current.id;
+        }
+        if (id == null) {
+          id = null;
+        }
+        if (findNodeHandleResult === id) {
+          tmp6.current = ref2.current;
+        }
+      } catch (err) {
+      }
+    }, [])
+  };
+  return obj5;
+};

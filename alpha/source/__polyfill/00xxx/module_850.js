@@ -267,9 +267,9 @@ function getHeadersFromFetchArgs(arg0) {
 }
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export function addFetchEndInstrumentationHandler(arg0) {
+export function addFetchEndInstrumentationHandler(errorCallback) {
   obj = _mod714;
-  obj.addHandler("fetch-body-resolved", arg0);
+  obj.addHandler("fetch-body-resolved", errorCallback);
   const obj2 = _mod714;
   obj2.maybeInstrument("fetch-body-resolved", () => {
     let closure_0 = closure_5;
@@ -394,10 +394,10 @@ export function addFetchEndInstrumentationHandler(arg0) {
     }
   });
 }
-export function addFetchInstrumentationHandler(arg0, arg1) {
+export function addFetchInstrumentationHandler(errorCallback, arg1) {
   _require = arg1;
   obj = require("module_714");
-  obj.addHandler("fetch", arg0);
+  obj.addHandler("fetch", errorCallback);
   let obj2 = require("module_714");
   obj2.maybeInstrument("fetch", () => {
     let flag = closure_0;

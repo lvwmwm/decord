@@ -1,11 +1,11 @@
-// Module ID: 14564
-// Function ID: 14565
+// Module ID: 18435
+// Function ID: 18436
 // Name: useConjurePreviewDevicePermissions
-// Dependencies: [7387, 504, 2]
+// Dependencies: [6890, 504, 2]
 // Exports: default
 
-// Module 14564 (useConjurePreviewDevicePermissions)
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 7387 */;
+// Module 18435 (useConjurePreviewDevicePermissions)
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 6890 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

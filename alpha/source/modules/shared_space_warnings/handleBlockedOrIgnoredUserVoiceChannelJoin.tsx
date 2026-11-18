@@ -1,14 +1,14 @@
-// Module ID: 16272
-// Function ID: 16273
+// Module ID: 14939
+// Function ID: 14940
 // Name: handleBlockedOrIgnoredUserVoiceChannelJoin
-// Dependencies: [5159, 6068, 16273, 16274, 2]
+// Dependencies: [4672, 5564, 14940, 14941, 2]
 // Exports: default
 
-// Module 16272 (handleBlockedOrIgnoredUserVoiceChannelJoin)
-import SharedSpacesWarningStore from "SharedSpacesWarningStore" /* 16273 */;
-import showVoiceChannelBlockedUserWarning from "showVoiceChannelBlockedUserWarning" /* 16274 */;
-import ChannelStore from "ChannelStore" /* 5159 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6068 */;
+// Module 14939 (handleBlockedOrIgnoredUserVoiceChannelJoin)
+import SharedSpacesWarningStore from "SharedSpacesWarningStore" /* 14940 */;
+import showVoiceChannelBlockedUserWarning from "showVoiceChannelBlockedUserWarning" /* 14941 */;
+import ChannelStore from "ChannelStore" /* 4672 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5564 */;
 import size from "module_2" /* 2 */;
 
 let closure_4 = SharedSpacesWarningStore.userBlockedWarningInCooldown;

@@ -1,13 +1,13 @@
-// Module ID: 18666
-// Function ID: 18667
+// Module ID: 17479
+// Function ID: 17480
 // Name: DeclarativeSystemNotifPermissionActionCreators
-// Dependencies: [18663, 18664, 572, 18665, 2]
+// Dependencies: [17476, 17477, 572, 17478, 2]
 // Exports: refreshSystemNotifPermissionsAsync
 
-// Module 18666 (DeclarativeSystemNotifPermissionActionCreators)
-import DeclarativeSystemNotifPermissionHelpersDefault from "DeclarativeSystemNotifPermissionHelpers" /* 18664 */;
-import DeclarativeSystemNotifPermissionAnalytics from "DeclarativeSystemNotifPermissionAnalytics" /* 18665 */;
-import DeclarativeSystemNotifPermissionStore from "DeclarativeSystemNotifPermissionStore" /* 18663 */;
+// Module 17479 (DeclarativeSystemNotifPermissionActionCreators)
+import DeclarativeSystemNotifPermissionHelpersDefault from "DeclarativeSystemNotifPermissionHelpers" /* 17477 */;
+import DeclarativeSystemNotifPermissionAnalytics from "DeclarativeSystemNotifPermissionAnalytics" /* 17478 */;
+import DeclarativeSystemNotifPermissionStore from "DeclarativeSystemNotifPermissionStore" /* 17476 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

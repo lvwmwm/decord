@@ -1,20 +1,20 @@
-// Module ID: 20225
-// Function ID: 20226
+// Module ID: 19496
+// Function ID: 19497
 // Name: AppIconPremiumManager
-// Dependencies: [5, 16880, 1388, 11146, 1072, 5335, 3, 5336, 7892, 1380, 15348, 5338, 5340, 5342, 5143, 2174, 1256, 2]
+// Dependencies: [5, 15563, 1388, 10428, 1072, 4848, 3, 4849, 7395, 1380, 13976, 4851, 4853, 4855, 4656, 2174, 1256, 2]
 
-// Module 20225 (AppIconPremiumManager)
+// Module 19496 (AppIconPremiumManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5335 */;
-import AppIconTypes from "AppIconTypes" /* 5336 */;
-import AppIconConstants from "AppIconConstants" /* 11146 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4848 */;
+import AppIconTypes from "AppIconTypes" /* 4849 */;
+import AppIconConstants from "AppIconConstants" /* 10428 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 16880 */;
+import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 15563 */;
 import UserStore from "UserStore" /* 1388 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7892 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,11 +1,11 @@
-// Module ID: 12498
-// Function ID: 12499
+// Module ID: 11781
+// Function ID: 11782
 // Name: useLastChannelMessage
-// Dependencies: [6370, 504, 2]
+// Dependencies: [5872, 504, 2]
 // Exports: useLastChannelMessage
 
-// Module 12498 (useLastChannelMessage)
-import MessageStore from "MessageStore" /* 6370 */;
+// Module 11781 (useLastChannelMessage)
+import MessageStore from "MessageStore" /* 5872 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

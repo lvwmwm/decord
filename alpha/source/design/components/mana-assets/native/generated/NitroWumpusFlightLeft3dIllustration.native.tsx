@@ -1,26 +1,26 @@
-// Module ID: 15374
-// Function ID: 15375
+// Module ID: 14002
+// Function ID: 14003
 // Name: NitroWumpusFlightLeft3dIllustration
-// Dependencies: [19, 21, 15375, 15376, 15377, 7765, 6014, 2]
+// Dependencies: [19, 21, 14003, 14004, 14005, 7268, 5510, 2]
 // Exports: NitroWumpusFlightLeft3dIllustration
 
-// Module 15374 (NitroWumpusFlightLeft3dIllustration)
+// Module 14002 (NitroWumpusFlightLeft3dIllustration)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 7765 */;
-import _modDef15375 from "module_15375" /* 15375 */;
-import _modDef15376 from "module_15376" /* 15376 */;
-import _modDef15377 from "module_15377" /* 15377 */;
+import react_native from "react-native" /* 7268 */;
+import _modDef14003 from "module_14003" /* 14003 */;
+import _modDef14004 from "module_14004" /* 14004 */;
+import _modDef14005 from "module_14005" /* 14005 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef15375 };
+let obj2 = { uri: _modDef14003 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef15376 };
+let obj3 = { uri: _modDef14004 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef15377 };
-({ uri: _modDef15377 });
+obj[3] = { uri: _modDef14005 };
+({ uri: _modDef14005 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/NitroWumpusFlightLeft3dIllustration.native.tsx");
 

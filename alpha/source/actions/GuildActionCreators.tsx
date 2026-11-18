@@ -1,9 +1,9 @@
-// Module ID: 6915
-// Function ID: 6916
+// Module ID: 6419
+// Function ID: 6420
 // Name: GuildActionCreators
-// Dependencies: [109, 5, 6916, 502, 6917, 5240, 5181, 5213, 5343, 1388, 1072, 1097, 6266, 1113, 572, 6918, 6920, 1285, 6921, 7875, 2121, 6828, 12969, 15976, 7240, 7272, 7689, 6836, 1264, 5247, 1084, 8138, 5131, 1256, 16104, 1099, 6823, 6843, 2]
+// Dependencies: [109, 5, 6420, 502, 6421, 4753, 4694, 4726, 4856, 1388, 1072, 1097, 5768, 1113, 572, 6422, 6424, 1285, 6425, 7378, 2121, 6332, 12256, 14619, 6744, 6776, 7192, 6340, 1264, 4760, 1084, 7641, 4644, 1256, 14771, 1099, 6327, 6347, 2]
 
-// Module 6915 (GuildActionCreators)
+// Module 6419 (GuildActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import AgeGateConstants from "AgeGateConstants" /* 1097 */;
 import router_utils from "router_utils" /* 1099 */;
@@ -11,22 +11,22 @@ import intl3 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6266 */;
-import AgeGateUtils from "AgeGateUtils" /* 6823 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6836 */;
-import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6843 */;
-import LurkerActionCreators from "LurkerActionCreators" /* 7689 */;
-import GuildTemplateTooltipActionCreatorsDefault from "GuildTemplateTooltipActionCreators" /* 8138 */;
-import getPreviousSafeRouteForNsfwReturnDefault from "getPreviousSafeRouteForNsfwReturn" /* 16104 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5768 */;
+import AgeGateUtils from "AgeGateUtils" /* 6327 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6340 */;
+import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6347 */;
+import LurkerActionCreators from "LurkerActionCreators" /* 7192 */;
+import GuildTemplateTooltipActionCreatorsDefault from "GuildTemplateTooltipActionCreators" /* 7641 */;
+import getPreviousSafeRouteForNsfwReturnDefault from "getPreviousSafeRouteForNsfwReturn" /* 14771 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import BulkBanStore from "BulkBanStore" /* 6916 */;
+import BulkBanStore from "BulkBanStore" /* 6420 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 6917 */;
-import GuildChannelStore from "GuildChannelStore" /* 5240 */;
-import GuildStore from "GuildStore" /* 5181 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5213 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5343 */;
+import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 6421 */;
+import GuildChannelStore from "GuildChannelStore" /* 4753 */;
+import GuildStore from "GuildStore" /* 4694 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4726 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4856 */;
 import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;

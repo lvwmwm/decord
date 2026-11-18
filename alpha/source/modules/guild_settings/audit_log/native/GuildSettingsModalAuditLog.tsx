@@ -1,27 +1,27 @@
-// Module ID: 20537
-// Function ID: 20538
+// Module ID: 19810
+// Function ID: 19811
 // Name: GuildSettingsModalAuditLog
-// Dependencies: [32, 19, 17, 5159, 5181, 5213, 1388, 20538, 1072, 21, 5310, 575, 1502, 504, 20540, 5366, 1113, 7958, 20542, 20552, 7437, 20543, 7428, 7453, 5923, 7466, 1187, 20553, 7898, 5906, 2]
+// Dependencies: [32, 19, 17, 4672, 4694, 4726, 1388, 19811, 1072, 21, 4823, 575, 1502, 504, 19813, 4879, 1113, 7461, 19815, 19825, 6940, 19816, 6931, 6956, 5414, 6969, 1187, 19826, 7401, 5397, 2]
 // Exports: default
 
-// Module 20537 (GuildSettingsModalAuditLog)
+// Module 19810 (GuildSettingsModalAuditLog)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import showSimpleActionSheet2 from "showSimpleActionSheet" /* 7958 */;
-import AuditLogUtilsAll from "AuditLogUtils" /* 20540 */;
-import AuditLogActionCreators from "AuditLogActionCreators" /* 20543 */;
-import AuditLogDefault from "AuditLog" /* 20552 */;
+import showSimpleActionSheet2 from "showSimpleActionSheet" /* 7461 */;
+import AuditLogUtilsAll from "AuditLogUtils" /* 19813 */;
+import AuditLogActionCreators from "AuditLogActionCreators" /* 19816 */;
+import AuditLogDefault from "AuditLog" /* 19825 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5159 */;
-import GuildStore from "GuildStore" /* 5181 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5213 */;
+import ChannelStore from "ChannelStore" /* 4672 */;
+import GuildStore from "GuildStore" /* 4694 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4726 */;
 import UserStore from "UserStore" /* 1388 */;
-import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 20538 */;
+import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 19811 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let navigation;

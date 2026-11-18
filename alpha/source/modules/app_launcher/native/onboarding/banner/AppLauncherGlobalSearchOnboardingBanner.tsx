@@ -1,18 +1,18 @@
-// Module ID: 13603
-// Function ID: 13604
+// Module ID: 12910
+// Function ID: 12911
 // Name: AppLauncherGlobalSearchOnboardingBanner
-// Dependencies: [19, 17, 1501, 5156, 21, 5310, 575, 8112, 9581, 1113, 2]
+// Dependencies: [19, 17, 1501, 4669, 21, 4823, 575, 7615, 8995, 1113, 2]
 // Exports: default
 
-// Module 13603 (AppLauncherGlobalSearchOnboardingBanner)
+// Module 12910 (AppLauncherGlobalSearchOnboardingBanner)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5156 */;
-import AppsIcon2 from "AppsIcon" /* 8112 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4669 */;
+import AppsIcon2 from "AppsIcon" /* 7615 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -49,7 +49,7 @@ export default function GlobalSearchCoachmark(markAsDismissed) {
   }, items);
   let tmp3 = null;
   if (visible) {
-    const Coachmark = markAsDismissed(9581).Coachmark;
+    const Coachmark = markAsDismissed(8995).Coachmark;
     const intl = markAsDismissed(1113).intl;
     const intl2 = markAsDismissed(1113).intl;
     size = { x: 0, y: -40, width: diff, height: 40 };

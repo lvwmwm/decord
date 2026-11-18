@@ -1,19 +1,19 @@
-// Module ID: 14544
-// Function ID: 14545
+// Module ID: 18421
+// Function ID: 18422
 // Name: showConjureShareToServerSheet
-// Dependencies: [5, 19, 17, 7025, 21, 5310, 575, 504, 14532, 5546, 6009, 1113, 4133, 7961, 7923, 7755, 7757, 14545, 14548, 5923, 5930, 2]
+// Dependencies: [5, 19, 17, 6529, 21, 4823, 575, 504, 18414, 5037, 5505, 1113, 4121, 7464, 7426, 7258, 7260, 18422, 18423, 5414, 5421, 2]
 // Exports: default
 
-// Module 14544 (showConjureShareToServerSheet)
+// Module 18421 (showConjureShareToServerSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5546 */;
-import TableRadioRow from "TableRadioRow" /* 7757 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5037 */;
+import TableRadioRow from "TableRadioRow" /* 7260 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 7025 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6529 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, dependencyMap;
@@ -128,15 +128,15 @@ function AddToAnotherServerSheet(projectId) {
   if (str == null) {
     str = "";
   }
-  const tmp6 = str(14532)(projectId, guildId, null, true);
+  const tmp6 = str(18414)(projectId, guildId, null, true);
   dependencyMap = tmp6;
   ({ guilds, guild } = tmp6);
   sharing = tmp6.sharing;
   const error = tmp6.error;
   let obj2 = { header: closure_6(BottomSheetTitleHeader, obj3), children: tmp8(tmp9, obj4) };
-  const ActionSheet = tmp2(7961).ActionSheet;
-  obj3 = { title: intl.formatToPlainString(str(4133)["Aet9+Z"], { app: str }) };
-  BottomSheetTitleHeader = tmp2(7923).BottomSheetTitleHeader;
+  const ActionSheet = tmp2(7464).ActionSheet;
+  obj3 = { title: intl.formatToPlainString(str(4121)["Aet9+Z"], { app: str }) };
+  BottomSheetTitleHeader = tmp2(7426).BottomSheetTitleHeader;
   intl = tmp2(1113).intl;
   obj4 = { style: tmp.content, children: items2 };
   let tmp7Result = null;
@@ -144,7 +144,7 @@ function AddToAnotherServerSheet(projectId) {
   tmp9 = sharing;
   if (null != guild) {
     let obj5 = {
-      title: intl2.string(tmp5(4133).Uq5hU9),
+      title: intl2.string(tmp5(4121).Uq5hU9),
       hasIcons: false,
       value: guild.id,
       onChange: tmp6.pickGuild,
@@ -153,40 +153,40 @@ function AddToAnotherServerSheet(projectId) {
           return metroRequire(TableRadioRow.TableRadioRow, obj, id.id);
         })
     };
-    const TableRadioGroup = tmp2(7755).TableRadioGroup;
+    const TableRadioGroup = tmp2(7258).TableRadioGroup;
     intl2 = tmp2(1113).intl;
     tmp7Result = tmp7(TableRadioGroup, obj5);
   }
   items2 = [tmp7Result, , , , , ];
   let tmp13 = stateFromStores;
-  const tmp5Result = str(14545);
-  const conjureAddToAnotherServerRows = tmp2(14548).conjureAddToAnotherServerRows;
-  tmp2(14548);
+  const tmp5Result = str(18422);
+  const conjureAddToAnotherServerRows = tmp2(18423).conjureAddToAnotherServerRows;
+  tmp2(18423);
   if (stateFromStores == null) {
     tmp13 = null;
   }
   let obj6 = { rows: conjureAddToAnotherServerRows(tmp13) };
   items2[1] = closure_6(tmp5Result, obj6);
-  let obj7 = { variant: "body-sm/normal", color: "text-muted", children: intl3.string(tmp5(4133).Ewprwt) };
-  const Text = tmp2(5923).Text;
+  let obj7 = { variant: "body-sm/normal", color: "text-muted", children: intl3.string(tmp5(4121).Ewprwt) };
+  const Text = tmp2(5414).Text;
   intl3 = tmp2(1113).intl;
   items2[2] = closure_6(Text, obj7);
   let tmp7Result2 = null;
   if (null != error) {
     const obj8 = { variant: "body-sm/medium", color: "text-feedback-critical", accessibilityRole: "alert", children: error };
-    tmp7Result2 = tmp7(tmp2(5923).Text, obj8);
+    tmp7Result2 = tmp7(tmp2(5414).Text, obj8);
   }
   items2[3] = tmp7Result2;
   const obj9 = {
     variant: "primary",
-    text: intl4.string(str(4133)["+uQwxA"]),
+    text: intl4.string(str(4121)["+uQwxA"]),
     loading: sharing,
     disabled: null == guild,
     onPress: function confirm() {
       return obj(...arguments);
     }
   };
-  const Button = tmp2(5930).Button;
+  const Button = tmp2(5421).Button;
   intl4 = tmp2(1113).intl;
   items2[4] = closure_6(Button, obj9);
   const obj10 = {
@@ -198,7 +198,7 @@ function AddToAnotherServerSheet(projectId) {
       return obj.hideActionSheet(ConjureShareToServerSheet);
     }
   };
-  const Button2 = tmp2(5930).Button;
+  const Button2 = tmp2(5421).Button;
   intl5 = tmp2(1113).intl;
   items2[5] = closure_6(Button2, obj10);
   return closure_6(ActionSheet, obj2);

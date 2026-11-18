@@ -1,24 +1,24 @@
-// Module ID: 20125
-// Function ID: 20126
+// Module ID: 19396
+// Function ID: 19397
 // Name: VoicePanelFloatingCTAContainer
-// Dependencies: [32, 19, 5159, 12428, 12431, 1083, 21, 13680, 575, 5310, 6335, 8119, 5371, 12427, 20010, 9573, 563, 20007, 20126, 1655, 13755, 10711, 5933, 12290, 2]
+// Dependencies: [32, 19, 4672, 11710, 11713, 1083, 21, 12987, 575, 4823, 5837, 7622, 4884, 11709, 19281, 8987, 563, 19278, 19397, 1655, 13062, 9992, 5424, 11572, 2]
 // Exports: getFloatingCTATotalViewHeight, renderVoicePanelFloatingCTA
 
-// Module 20125 (VoicePanelFloatingCTAContainer)
+// Module 19396 (VoicePanelFloatingCTAContainer)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
-import native from "native" /* 5371 */;
-import Stack_Stack from "Stack/Stack" /* 6335 */;
-import RowButton2 from "RowButton" /* 8119 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 12428 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 12431 */;
-import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 13680 */;
-import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 20007 */;
+import native from "native" /* 4884 */;
+import Stack_Stack from "Stack/Stack" /* 5837 */;
+import RowButton2 from "RowButton" /* 7622 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11710 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11713 */;
+import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 12987 */;
+import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 19278 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5159 */;
-import createStyles from "createStyles" /* 5310 */;
+import ChannelStore from "ChannelStore" /* 4672 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let rect;

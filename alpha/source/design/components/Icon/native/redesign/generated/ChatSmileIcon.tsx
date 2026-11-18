@@ -1,14 +1,14 @@
-// Module ID: 15997
-// Function ID: 15998
+// Module ID: 14640
+// Function ID: 14641
 // Name: ChatSmileIcon
-// Dependencies: [19, 21, 575, 6013, 15998, 2]
+// Dependencies: [19, 21, 575, 5509, 14641, 2]
 // Exports: ChatSmileIcon
 
-// Module 15997 (ChatSmileIcon)
+// Module 14640 (ChatSmileIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6013 */;
-import AssetRegistry from "AssetRegistry" /* 15998 */;
+import BaseIconImage2 from "BaseIconImage" /* 5509 */;
+import AssetRegistry from "AssetRegistry" /* 14641 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

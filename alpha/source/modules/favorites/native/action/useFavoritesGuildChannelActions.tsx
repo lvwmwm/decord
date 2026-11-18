@@ -1,13 +1,13 @@
-// Module ID: 12352
-// Function ID: 12353
+// Module ID: 11634
+// Function ID: 11635
 // Name: useFavoritesGuildChannelActions
-// Dependencies: [502, 5222, 5162, 5184, 504, 11898, 2]
+// Dependencies: [502, 4735, 4675, 4697, 504, 11180, 2]
 // Exports: default
 
-// Module 12352 (useFavoritesGuildChannelActions)
+// Module 11634 (useFavoritesGuildChannelActions)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 5222 */;
-import FavoriteStore from "FavoriteStore" /* 5162 */;
+import GuildMemberStore from "GuildMemberStore" /* 4735 */;
+import FavoriteStore from "FavoriteStore" /* 4675 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

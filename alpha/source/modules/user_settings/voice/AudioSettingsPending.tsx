@@ -1,10 +1,10 @@
-// Module ID: 16609
-// Function ID: 16610
+// Module ID: 15292
+// Function ID: 15293
 // Name: AudioSettingsPending
 // Dependencies: [32, 2]
 // Exports: drainPendingAudioSettings, getPendingAudioSettings, updatePendingSettings
 
-// Module 16609 (AudioSettingsPending)
+// Module 15292 (AudioSettingsPending)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

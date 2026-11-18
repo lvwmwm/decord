@@ -12,7 +12,7 @@ import _mod738 from "module_738" /* 738 */;
 
 let data, integrations;
 
-const f82648 = (stacktrace) => {
+const f80225 = (stacktrace) => {
   stacktrace = stacktrace.stacktrace;
   if (stacktrace != null) {
     const frames = stacktrace.frames;
@@ -74,14 +74,14 @@ Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 let closure_3 = ["user", "level", "extra", "contexts", "tags", "fingerprint", "propagationContext"];
 
 export { applyClientOptions };
-export function applyDebugIds(exception, arg1) {
+export function applyDebugIds(exception, stackParser) {
   const obj = _mod738;
-  const filenameToDebugIdMap = obj.getFilenameToDebugIdMap(arg1);
+  const filenameToDebugIdMap = obj.getFilenameToDebugIdMap(stackParser);
   exception = exception.exception;
   if (exception != null) {
     const values = exception.values;
     if (values != null) {
-      const item = values.forEach(f82648);
+      const item = values.forEach(f80225);
     }
   }
 }
@@ -145,27 +145,27 @@ export function parseEventHintOrCaptureContext(captureContext) {
     return tmp5;
   }
 }
-export function prepareEvent(normalizeDepth, event_id, event_id2, clone, emit, isolationScope) {
+export function prepareEvent(options, c3, event_id2, c1, c0, isolationScope) {
   let timestamp;
   let uuid4Result;
-  normalizeDepth = normalizeDepth.normalizeDepth;
+  const normalizeDepth = options.normalizeDepth;
   let num = 3;
   if (undefined !== normalizeDepth) {
     num = normalizeDepth;
   }
-  const normalizeMaxBreadth = normalizeDepth.normalizeMaxBreadth;
+  const normalizeMaxBreadth = options.normalizeMaxBreadth;
   let num2 = 1000;
   if (undefined !== normalizeMaxBreadth) {
     num2 = normalizeMaxBreadth;
   }
   let obj = { event_id: uuid4Result, timestamp };
-  let merged = Object.assign(event_id);
-  uuid4Result = event_id.event_id || event_id2.event_id;
+  let merged = Object.assign(c3);
+  uuid4Result = c3.event_id || event_id2.event_id;
   if (!uuid4Result) {
     let obj2 = num(num2[0]);
     uuid4Result = obj2.uuid4();
   }
-  timestamp = event_id.timestamp;
+  timestamp = c3.timestamp;
   if (!timestamp) {
     const tmp6 = num;
     let tmp7 = num2;
@@ -174,10 +174,10 @@ export function prepareEvent(normalizeDepth, event_id, event_id2, clone, emit, i
   }
   integrations = event_id2.integrations;
   if (!integrations) {
-    const integrations1 = normalizeDepth.integrations;
+    const integrations1 = options.integrations;
     integrations = integrations1.map((name) => name.name);
   }
-  applyClientOptions(obj, normalizeDepth);
+  applyClientOptions(obj, options);
   if (integrations.length > 0) {
     obj.sdk = obj.sdk || {};
     let integrations2 = obj.sdk.integrations;
@@ -189,28 +189,28 @@ export function prepareEvent(normalizeDepth, event_id, event_id2, clone, emit, i
     HermesBuiltin.arraySpread(items, integrations, HermesBuiltin.arraySpread(items, integrations2, 0));
     sdk.integrations = items;
   }
-  const tmp14 = emit;
+  const tmp14 = c0;
   if (tmp14) {
-    emit.emit("applyFrameMetadata", event_id);
+    c0.emit("applyFrameMetadata", c3);
   }
-  if (undefined === event_id.type) {
-    const stackParser = normalizeDepth.stackParser;
+  if (undefined === c3.type) {
+    const stackParser = options.stackParser;
     let obj4 = num(num2[6]);
     const filenameToDebugIdMap = obj4.getFilenameToDebugIdMap(stackParser);
     let exception = obj.exception;
     if (exception != null) {
       let values = exception.values;
       if (values != null) {
-        let item = values.forEach(f82648);
+        let item = values.forEach(f80225);
       }
     }
   }
   const captureContext = event_id2.captureContext;
-  let tmp20 = clone;
+  let tmp20 = c1;
   if (captureContext) {
     let cloneResult;
-    if (clone) {
-      cloneResult = clone.clone();
+    if (c1) {
+      cloneResult = c1.clone();
     } else {
       const self = this;
       const self2 = this;
@@ -223,8 +223,8 @@ export function prepareEvent(normalizeDepth, event_id, event_id2, clone, emit, i
     let obj6 = num(num2[0]);
     const result = obj6.addExceptionMechanism(obj, event_id2.mechanism);
   }
-  if (emit) {
-    let eventProcessors = emit.getEventProcessors();
+  if (c0) {
+    let eventProcessors = c0.getEventProcessors();
   } else {
     eventProcessors = [];
   }

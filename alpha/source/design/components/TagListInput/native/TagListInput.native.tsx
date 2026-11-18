@@ -1,18 +1,18 @@
-// Module ID: 8188
-// Function ID: 8189
+// Module ID: 7691
+// Function ID: 7692
 // Name: TagListInput
-// Dependencies: [32, 19, 17, 21, 5310, 575, 5923, 1655, 5933, 5934, 7543, 5887, 7638, 5938, 7650, 7652, 5478, 7654, 5911, 5564, 8189, 8190, 1113, 8191, 5319, 7649, 7836, 2]
+// Dependencies: [32, 19, 17, 21, 4823, 575, 5414, 1655, 5424, 5425, 7046, 5378, 7141, 5429, 7153, 7155, 4991, 7157, 5402, 5055, 7692, 7693, 1113, 7694, 4832, 7152, 7339, 2]
 
-// Module 8188 (TagListInput)
+// Module 7691 (TagListInput)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5319 */;
-import Text_Text from "Text/Text" /* 5923 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4832 */;
+import Text_Text from "Text/Text" /* 5414 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -142,12 +142,12 @@ const memoResult = react.memo(function TagListInput(accessibilityHint) {
   let tmp = c10();
   let tmp2 = tags;
   const tmp3 = dependencyMap;
-  let obj = tags(5938);
+  let obj = tags(5429);
   const bound = Math.min(2, obj.useFontScale());
   let ref1;
   onChangeText = undefined;
   let obj2 = ref1;
-  let result = tags(7650).InputHeights.MD * bound;
+  let result = tags(7153).InputHeights.MD * bound;
   ref1 = ref1.useRef(null);
   const ref2 = ref1.useRef("");
   const ref3 = ref1.useRef(false);
@@ -240,22 +240,22 @@ const memoResult = react.memo(function TagListInput(accessibilityHint) {
     return obj;
   }, items1);
   ({ clearProps, clearState } = memo);
-  let obj3 = tags(7638);
+  let obj3 = tags(7141);
   const inputClearButton = obj3.useInputClearButton(clearProps, clearState);
   ref = ref1.useRef({ start: 0, end: 0 });
-  let obj4 = tags(7652);
+  let obj4 = tags(7155);
   const keyboardBlurring = obj4.useKeyboardBlurring(ref1);
-  let obj5 = tags(5478);
+  let obj5 = tags(4991);
   const focus = obj5.useFocus();
   ({ focusProps: c8, isFocused } = focus);
-  ({ onFocus: c9, onBlur: c10 } = focusOnAdd(7654)({ onFocus, onBlur }));
-  const tmp19 = focusOnAdd(7654)({ onFocus, onBlur });
+  ({ onFocus: c9, onBlur: c10 } = focusOnAdd(7157)({ onFocus, onBlur }));
+  const tmp19 = focusOnAdd(7157)({ onFocus, onBlur });
   const ref4 = ref1.useRef(null);
   [c12, c13] = autoClearInputOnTagAdd(ref1.useState(null), 2);
   const tmp21 = autoClearInputOnTagAdd(ref1.useState(null), 2);
   [tmp23, c14] = autoClearInputOnTagAdd(ref1.useState(false), 2);
   autoClearInputOnTagAdd(ref1.useState(false), 2);
-  const tmp24 = focusOnAdd(5911)(tags);
+  const tmp24 = focusOnAdd(5402)(tags);
   const length = tmp24;
   const ref5 = ref1.useRef(tags);
   let items2 = [focusOnAdd, onChangeText, ref5, tags, ref1, ref2, autoClearInputOnTagAdd];
@@ -312,14 +312,14 @@ const memoResult = react.memo(function TagListInput(accessibilityHint) {
   }, items3);
   const tmp18 = focusOnAdd;
   if (inActionSheet) {
-    BottomSheetScrollView = tmp2(5564).BottomSheetScrollView;
+    BottomSheetScrollView = tmp2(5055).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = onChangeText;
   }
   if (inActionSheet) {
-    BottomSheetTextInput = tmp2(8189).BottomSheetTextInput;
+    BottomSheetTextInput = tmp2(7692).BottomSheetTextInput;
   } else {
-    BottomSheetTextInput = tmp18(8190);
+    BottomSheetTextInput = tmp18(7693);
   }
   const result1 = 33 * bound;
   [tmp30, c17] = tmp9(obj2.useState(0), 2);
@@ -353,9 +353,9 @@ const memoResult = react.memo(function TagListInput(accessibilityHint) {
   const items5 = [length, , , ];
   const useAnimatedStyle = tmp2(1655).useAnimatedStyle;
   tmp2(1655);
-  items5[1] = tmp2(5933).withSpring;
+  items5[1] = tmp2(5424).withSpring;
   items5[2] = sharedValue;
-  items5[3] = tmp2(5934).springStandard;
+  items5[3] = tmp2(5425).springStandard;
   let c0;
   let c1;
   let c2;
@@ -584,10 +584,10 @@ const memoResult = react.memo(function TagListInput(accessibilityHint) {
   items13 = [{ minHeight: result, overflow: "hidden" }, style];
   obj13 = { size: "sm", disabled, isFocused, children: items14 };
   const tmp47Result = c8(BottomSheetScrollView, obj7);
-  InputFieldContainer = tmp2(7649).InputFieldContainer;
+  InputFieldContainer = tmp2(7152).InputFieldContainer;
   if (null == icon) {
     const obj14 = { style: tmp.iconLeft, size: "xs", color: "interactive-text-default" };
-    icon = tmp47(tmp2(7836).MagnifyingGlassIcon, obj14);
+    icon = tmp47(tmp2(7339).MagnifyingGlassIcon, obj14);
   }
   items14 = [icon, obj6.wrap(tmp47Result), ];
   if (null == footer) {

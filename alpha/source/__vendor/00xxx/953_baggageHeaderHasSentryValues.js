@@ -26,12 +26,12 @@ export function createHeadersSafely(headers) {
   } catch (err) {
   }
 }
-export function getFullURL(arg0) {
+export function getFullURL(url) {
   try {
     const _URL = URL;
     const self = this;
     const self2 = this;
-    const uRL = new URL(arg0, _mod890.WINDOW.location.origin);
+    const uRL = new URL(url, _mod890.WINDOW.location.origin);
     return uRL.href;
   } catch (err) {
   }

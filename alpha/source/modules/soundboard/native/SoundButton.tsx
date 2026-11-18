@@ -1,21 +1,21 @@
-// Module ID: 19264
-// Function ID: 19265
+// Module ID: 18078
+// Function ID: 18079
 // Name: SoundButton
-// Dependencies: [19, 17, 19258, 21, 1655, 5310, 575, 1380, 7438, 5933, 7904, 13112, 19265, 19266, 7928, 7947, 19268, 19269, 5923, 8103, 2]
+// Dependencies: [19, 17, 18072, 21, 1655, 4823, 575, 1380, 6941, 5424, 7407, 12410, 18079, 18080, 7431, 7450, 18082, 18083, 5414, 7606, 2]
 
-// Module 19264 (SoundButton)
+// Module 18078 (SoundButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import spring_spring from "spring/spring" /* 5933 */;
-import Pressables from "Pressables" /* 7438 */;
-import EmojiDefault from "Emoji" /* 7904 */;
-import getSoundboardEmojiUrlDefault from "getSoundboardEmojiUrl" /* 13112 */;
-import SoundboardStyleConstants from "SoundboardStyleConstants" /* 19258 */;
-import openSoundboardSoundPreviewActionSheetDefault from "openSoundboardSoundPreviewActionSheet" /* 19269 */;
+import spring_spring from "spring/spring" /* 5424 */;
+import Pressables from "Pressables" /* 6941 */;
+import EmojiDefault from "Emoji" /* 7407 */;
+import getSoundboardEmojiUrlDefault from "getSoundboardEmojiUrl" /* 12410 */;
+import SoundboardStyleConstants from "SoundboardStyleConstants" /* 18072 */;
+import openSoundboardSoundPreviewActionSheetDefault from "openSoundboardSoundPreviewActionSheet" /* 18083 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import size_mod from "module_2" /* 2 */;
 

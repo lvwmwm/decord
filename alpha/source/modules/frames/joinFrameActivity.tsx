@@ -1,18 +1,18 @@
-// Module ID: 12860
-// Function ID: 12861
+// Module ID: 12154
+// Function ID: 12155
 // Name: joinFrameActivity
-// Dependencies: [5, 2165, 5159, 5975, 7028, 1072, 11452, 572, 11351, 5971, 11367, 11312, 1113, 11389, 12861, 12616, 11305, 6756, 12863, 11366, 7304, 8145, 7320, 2]
+// Dependencies: [5, 2165, 4672, 5471, 6532, 1072, 10734, 572, 10633, 5467, 10649, 10594, 1113, 10671, 12155, 11901, 10587, 6258, 12157, 10648, 6809, 7648, 6825, 2]
 // Exports: default
 
-// Module 12860 (joinFrameActivity)
-import FramesConstants from "FramesConstants" /* 7028 */;
-import UserActivityActionCreators from "UserActivityActionCreators" /* 7320 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 8145 */;
-import Constants2 from "Constants" /* 11452 */;
+// Module 12154 (joinFrameActivity)
+import FramesConstants from "FramesConstants" /* 6532 */;
+import UserActivityActionCreators from "UserActivityActionCreators" /* 6825 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7648 */;
+import Constants2 from "Constants" /* 10734 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
-import ChannelStore from "ChannelStore" /* 5159 */;
-import VoiceStateStore from "VoiceStateStore" /* 5975 */;
+import ChannelStore from "ChannelStore" /* 4672 */;
+import VoiceStateStore from "VoiceStateStore" /* 5471 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

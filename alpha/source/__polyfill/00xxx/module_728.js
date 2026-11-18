@@ -26,19 +26,19 @@ function forEachEnvelopeItem(arg0, fn) {
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 let closure_4 = { session: "session", sessions: "session", attachment: "attachment", transaction: "transaction", event: "error", client_report: "internal", user_report: "default", profile: "profile", profile_chunk: "profile", replay_event: "replay", replay_recording: "replay", check_in: "monitor", feedback: "feedback", span: "span", raw_security: "security", log: "log_item", metric: "metric", trace_metric: "metric" };
 
-export function addItemToEnvelope(arg0, arg1) {
-  const tmp2 = _slicedToArray(arg0, 2);
+export function addItemToEnvelope(eventEnvelope, attachmentEnvelopeItem) {
+  const tmp2 = _slicedToArray(eventEnvelope, 2);
   const items = [tmp2[0], ];
   const items1 = [];
-  items1[HermesBuiltin.arraySpread(items1, tmp2[1], 0)] = arg1;
+  items1[HermesBuiltin.arraySpread(items1, tmp2[1], 0)] = attachmentEnvelopeItem;
   items[1] = items1;
   return items;
 }
-export function createAttachmentEnvelopeItem(data) {
+export function createAttachmentEnvelopeItem(item10025) {
   let data1;
-  if (typeof data.data === "string") {
+  if (typeof item10025.data === "string") {
     let encodePolyfillResult;
-    data = data.data;
+    const data = item10025.data;
     const obj = _mod689;
     const sentryCarrier = obj.getSentryCarrier(_mod685.GLOBAL_OBJ);
     if (sentryCarrier.encodePolyfill) {
@@ -52,23 +52,23 @@ export function createAttachmentEnvelopeItem(data) {
     }
     data1 = encodePolyfillResult;
   } else {
-    data1 = data.data;
+    data1 = item10025.data;
   }
   const items = [, ];
-  const obj2 = { type: "attachment", length: data1.length, filename: data.filename, content_type: data.contentType, attachment_type: data.attachmentType };
+  const obj2 = { type: "attachment", length: data1.length, filename: item10025.filename, content_type: item10025.contentType, attachment_type: item10025.attachmentType };
   items[0] = obj2;
   items[1] = data1;
   return items;
 }
-export function createEnvelope(arg0) {
-  let items = arg1;
-  if (arg1 === undefined) {
+export function createEnvelope(eventEnvelopeHeaders, items1) {
+  let items = items1;
+  if (items1 === undefined) {
     items = [];
   }
-  const items1 = [arg0, items];
+  items1 = [eventEnvelopeHeaders, items];
   return items1;
 }
-export function createEventEnvelopeHeaders(event_id, sdk, arg2, arg3) {
+export function createEventEnvelopeHeaders(event_id, sdkMetadataForEnvelopeHeader, tunnel, dsn) {
   let date;
   let obj5;
   const sdkProcessingMetadata = event_id.sdkProcessingMetadata;
@@ -77,16 +77,16 @@ export function createEventEnvelopeHeaders(event_id, sdk, arg2, arg3) {
     prop = sdkProcessingMetadata.dynamicSamplingContext;
   }
   const obj = { event_id: event_id.event_id, sent_at: date.toISOString() };
-  let tmp2 = sdk;
+  let tmp2 = sdkMetadataForEnvelopeHeader;
   date = new Date();
   if (tmp2) {
-    tmp2 = { sdk };
-    const obj2 = { sdk };
+    tmp2 = { sdk: sdkMetadataForEnvelopeHeader };
+    const obj2 = { sdk: sdkMetadataForEnvelopeHeader };
   }
   const merged = Object.assign(tmp2);
-  let tmp4 = arg2 && arg3;
+  let tmp4 = tunnel && dsn;
   if (tmp4) {
-    const obj3 = { dsn: obj5.dsnToString(arg3) };
+    const obj3 = { dsn: obj5.dsnToString(dsn) };
     tmp4 = obj3;
     obj5 = _mod701;
   }
@@ -111,31 +111,31 @@ export function envelopeItemTypeToDataCategory(arg0) {
   return closure_4[arg0];
 }
 export { forEachEnvelopeItem };
-export function getSdkMetadataForEnvelopeHeader(sdk) {
-  sdk = undefined;
-  if (sdk != null) {
-    sdk = sdk.sdk;
+export function getSdkMetadataForEnvelopeHeader(sdkMetadata) {
+  let sdk;
+  if (sdkMetadata != null) {
+    sdk = sdkMetadata.sdk;
   }
   if (sdk) {
     const obj = { name: null, version: null };
-    ({ name: obj.name, version: obj.version } = sdk.sdk);
+    ({ name: obj.name, version: obj.version } = sdkMetadata.sdk);
     return obj;
   }
 }
-export function parseEnvelope(arr) {
-  let tmp = arr;
-  if (typeof arr === "string") {
+export function parseEnvelope(value) {
+  let tmp = value;
+  if (typeof value === "string") {
     let encodePolyfillResult;
     let obj = require("module_689");
     let sentryCarrier = obj.getSentryCarrier(require("module_685").GLOBAL_OBJ);
     if (sentryCarrier.encodePolyfill) {
-      encodePolyfillResult = sentryCarrier.encodePolyfill(arr);
+      encodePolyfillResult = sentryCarrier.encodePolyfill(value);
     } else {
       const _TextEncoder = TextEncoder;
       let self = this;
       let self2 = this;
       const encoder = new TextEncoder();
-      encodePolyfillResult = encoder.encode(arr);
+      encodePolyfillResult = encoder.encode(value);
     }
     tmp = encodePolyfillResult;
   }
@@ -180,12 +180,12 @@ export function parseEnvelope(arr) {
       subarrayResult = readJson();
     }
     items1[1] = subarrayResult;
-    arr = push(items1);
+    let arr = push(items1);
   }
   const items2 = [json, items];
   return items2;
 }
-export function serializeEnvelope(arg0) {
+export function serializeEnvelope(items) {
   let sum;
   let tmp4;
   function concatBuffers(arr) {
@@ -241,7 +241,7 @@ export function serializeEnvelope(arg0) {
       push(tmp4);
     }
   }
-  let tmp = _slicedToArray(arg0, 2);
+  let tmp = _slicedToArray(items, 2);
   const tmp2 = tmp[1];
   let require = JSON.stringify(tmp[0]);
   const tmp3 = tmp2[Symbol.iterator]();

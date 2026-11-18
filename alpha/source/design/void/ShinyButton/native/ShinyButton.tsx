@@ -1,17 +1,17 @@
-// Module ID: 16624
-// Function ID: 16625
+// Module ID: 15307
+// Function ID: 15308
 // Name: ShinyButton
-// Dependencies: [32, 19, 17, 5311, 21, 5310, 504, 1655, 5542, 1190, 2]
+// Dependencies: [32, 19, 17, 4824, 21, 4823, 504, 1655, 5033, 1190, 2]
 // Exports: default
 
-// Module 16624 (ShinyButton)
+// Module 15307 (ShinyButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import _modDef1655 from "module_1655" /* 1655 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5311 */;
-import createStyles from "createStyles" /* 5310 */;
+import AccessibilityStore from "AccessibilityStore" /* 4824 */;
+import createStyles from "createStyles" /* 4823 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

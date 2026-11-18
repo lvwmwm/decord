@@ -1,9 +1,9 @@
-// Module ID: 8913
-// Function ID: 8914
+// Module ID: 8409
+// Function ID: 8410
 // Name: GuildProductConstants
 // Dependencies: [2]
 
-// Module 8913 (GuildProductConstants)
+// Module 8409 (GuildProductConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_products/GuildProductConstants.tsx");

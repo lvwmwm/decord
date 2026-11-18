@@ -1,52 +1,52 @@
-// Module ID: 19685
-// Function ID: 19686
+// Module ID: 18961
+// Function ID: 18962
 // Name: YouScreenUserProfileContent
-// Dependencies: [32, 19, 17, 5151, 7326, 7362, 8490, 7972, 5156, 17100, 21, 10572, 19192, 1380, 8633, 8618, 15838, 15866, 5896, 575, 8556, 5143, 15736, 5930, 11920, 7428, 1113, 19686, 19691, 19682, 15256, 19693, 19694, 15818, 15507, 15819, 13452, 18382, 9572, 15821, 15501, 19695, 15822, 19696, 1503, 8493, 9541, 8619, 504, 8601, 8612, 15986, 19698, 11028, 15859, 15839, 15879, 8005, 9550, 19699, 15882, 19701, 15738, 15512, 15885, 19706, 15806, 15890, 15900, 15906, 7994, 1655, 5910, 9543, 8429, 14155, 2]
+// Dependencies: [32, 19, 17, 4664, 6831, 6867, 7981, 7475, 4669, 15756, 21, 9853, 18003, 1380, 8124, 8109, 14470, 14504, 5387, 575, 8047, 4656, 14369, 5421, 11202, 6931, 1113, 18962, 18967, 18958, 13884, 18969, 18970, 14450, 14135, 14451, 12759, 17187, 8986, 14453, 14129, 18971, 14454, 18972, 1503, 7984, 8955, 8110, 504, 8092, 8103, 14629, 18974, 10310, 14496, 14471, 14517, 7508, 8964, 18975, 14520, 14528, 14371, 14140, 14523, 18977, 14438, 14534, 14543, 14549, 7497, 1655, 5401, 8957, 7920, 13459, 2]
 // Exports: default
 
-// Module 19685 (YouScreenUserProfileContent)
+// Module 18961 (YouScreenUserProfileContent)
 import react_native from "react-native" /* 17 */;
 import intl5 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import dismissible_content from "dismissible_content" /* 5143 */;
-import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 5151 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5156 */;
-import Constants from "Constants" /* 7972 */;
-import Constants2 from "Constants" /* 8490 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8618 */;
-import UserProfileAvatarDefault from "UserProfileAvatar" /* 8633 */;
-import getRandomCustomStatusPromptDefault from "getRandomCustomStatusPrompt" /* 9550 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 9572 */;
-import Tracking from "Tracking" /* 10572 */;
-import CustomTypingIndicatorExperiment from "CustomTypingIndicatorExperiment" /* 13452 */;
-import BadgeManagementExperiment from "BadgeManagementExperiment" /* 15256 */;
-import UserProfilePrimaryInfoDefault from "UserProfilePrimaryInfo" /* 15501 */;
-import useCanOpenBadgeDirectoryFromProfile from "useCanOpenBadgeDirectoryFromProfile" /* 15507 */;
-import UserProfileAboutMeCardDefault from "UserProfileAboutMeCard" /* 15512 */;
-import UserProfileActivityDefault from "UserProfileActivity" /* 15738 */;
-import UserProfileNoteDefault from "UserProfileNote" /* 15806 */;
-import useBadgeDirectoryNuxCoachmarkVariant from "useBadgeDirectoryNuxCoachmarkVariant" /* 15818 */;
-import useBadgeDirectoryNuxPopoverVariant from "useBadgeDirectoryNuxPopoverVariant" /* 15819 */;
-import useBadgeDirectoryNuxEntryPoint from "useBadgeDirectoryNuxEntryPoint" /* 15821 */;
-import UserProfileWidgetsBoardTabDefault from "UserProfileWidgetsBoardTab" /* 15838 */;
-import UserProfileActivityTabDefault from "UserProfileActivityTab" /* 15866 */;
-import UserProfileConnections from "UserProfileConnections" /* 15885 */;
-import UserProfileWishlistGrid from "UserProfileWishlistGrid" /* 15890 */;
-import UserProfileWishlistSuggestionsGridDefault from "UserProfileWishlistSuggestionsGrid" /* 15900 */;
-import UserProfileEditConstants from "UserProfileEditConstants" /* 17100 */;
-import BalanceWidgetMenu from "BalanceWidgetMenu" /* 18382 */;
-import showYouAccountActionSheet from "showYouAccountActionSheet" /* 19192 */;
-import useOwnsAnyBadgeDefault from "useOwnsAnyBadge" /* 19693 */;
-import useIsNitroBadgeAutoUnhiddenDefault from "useIsNitroBadgeAutoUnhidden" /* 19694 */;
-import NitroBadgeUnhiddenCoachmarkDefault from "NitroBadgeUnhiddenCoachmark" /* 19695 */;
-import OrbWalletProfileIntroductionCoachmarkDefault from "OrbWalletProfileIntroductionCoachmark" /* 19696 */;
-import YouExpiringTrialOfferCardDefault from "YouExpiringTrialOfferCard" /* 19699 */;
-import CheckpointProfileEntrypointDefault from "CheckpointProfileEntrypoint" /* 19701 */;
-import UserProfileYourFriendsCardDefault from "UserProfileYourFriendsCard" /* 19706 */;
+import dismissible_content from "dismissible_content" /* 4656 */;
+import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 4664 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4669 */;
+import Constants from "Constants" /* 7475 */;
+import Constants2 from "Constants" /* 7981 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8109 */;
+import UserProfileAvatarDefault from "UserProfileAvatar" /* 8124 */;
+import getRandomCustomStatusPromptDefault from "getRandomCustomStatusPrompt" /* 8964 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 8986 */;
+import Tracking from "Tracking" /* 9853 */;
+import CustomTypingIndicatorExperiment from "CustomTypingIndicatorExperiment" /* 12759 */;
+import BadgeManagementExperiment from "BadgeManagementExperiment" /* 13884 */;
+import UserProfilePrimaryInfoDefault from "UserProfilePrimaryInfo" /* 14129 */;
+import useCanOpenBadgeDirectoryFromProfile from "useCanOpenBadgeDirectoryFromProfile" /* 14135 */;
+import UserProfileAboutMeCardDefault from "UserProfileAboutMeCard" /* 14140 */;
+import UserProfileActivityDefault from "UserProfileActivity" /* 14371 */;
+import UserProfileNoteDefault from "UserProfileNote" /* 14438 */;
+import useBadgeDirectoryNuxCoachmarkVariant from "useBadgeDirectoryNuxCoachmarkVariant" /* 14450 */;
+import useBadgeDirectoryNuxPopoverVariant from "useBadgeDirectoryNuxPopoverVariant" /* 14451 */;
+import useBadgeDirectoryNuxEntryPoint from "useBadgeDirectoryNuxEntryPoint" /* 14453 */;
+import UserProfileWidgetsBoardTabDefault from "UserProfileWidgetsBoardTab" /* 14470 */;
+import UserProfileActivityTabDefault from "UserProfileActivityTab" /* 14504 */;
+import UserProfileConnections from "UserProfileConnections" /* 14523 */;
+import CheckpointProfileEntrypointDefault from "CheckpointProfileEntrypoint" /* 14528 */;
+import UserProfileWishlistGrid from "UserProfileWishlistGrid" /* 14534 */;
+import UserProfileWishlistSuggestionsGridDefault from "UserProfileWishlistSuggestionsGrid" /* 14543 */;
+import UserProfileEditConstants from "UserProfileEditConstants" /* 15756 */;
+import BalanceWidgetMenu from "BalanceWidgetMenu" /* 17187 */;
+import showYouAccountActionSheet from "showYouAccountActionSheet" /* 18003 */;
+import useOwnsAnyBadgeDefault from "useOwnsAnyBadge" /* 18969 */;
+import useIsNitroBadgeAutoUnhiddenDefault from "useIsNitroBadgeAutoUnhidden" /* 18970 */;
+import NitroBadgeUnhiddenCoachmarkDefault from "NitroBadgeUnhiddenCoachmark" /* 18971 */;
+import OrbWalletProfileIntroductionCoachmarkDefault from "OrbWalletProfileIntroductionCoachmark" /* 18972 */;
+import YouExpiringTrialOfferCardDefault from "YouExpiringTrialOfferCard" /* 18975 */;
+import UserProfileYourFriendsCardDefault from "UserProfileYourFriendsCard" /* 18977 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 7326 */;
-import UserProfileStore from "UserProfileStore" /* 7362 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6831 */;
+import UserProfileStore from "UserProfileStore" /* 6867 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -258,7 +258,7 @@ function YouScreenPrimaryInfoSection(arg0) {
   const tmp33 = View;
   if (tmp34Result) {
     const obj9 = { targetRef: entryPointRef, userId: id, variantProps: badgeDirectoryNuxCoachmarkVariant.variantProps, visible: tmp30, markAsDismissed: tmp29 };
-    tmp34Result = tmp34(tmp(15822), obj9);
+    tmp34Result = tmp34(tmp(14454), obj9);
   }
   items2[2] = tmp34Result;
   items2[3] = map1(EditSection, { navigateToProfileCustomization, initialEditingTab, isProfileLoaded, visibleContent: tmp28, markAsDismissed: tmp29 });
@@ -471,14 +471,14 @@ export default function YouScreenUserProfileContent(user) {
     const tmp6 = navigateToPremium;
     if (tmp3Result) {
       const obj4 = { navigateToPremium: tmp6, navigateToShop, hasCustomProfileTheme };
-      tmp3Result = tmp3(tmp4(15882), obj4);
+      tmp3Result = tmp3(tmp4(14520), obj4);
     }
     items2[1] = tmp3Result;
-    items2[2] = map1(CheckpointProfileEntrypointDefault, {});
+    items2[2] = map1(CheckpointProfileEntrypointDefault, { source: "user_profile" });
     let tmp3Result2 = enabled;
     if (tmp3Result2) {
       const obj5 = { orbWalletEntryRowRef: ref2 };
-      tmp3Result2 = tmp3(tmp4(18382), obj5);
+      tmp3Result2 = tmp3(tmp4(17187), obj5);
     }
     items2[3] = tmp3Result2;
     const obj6 = { user, currentUser: user, style: items };

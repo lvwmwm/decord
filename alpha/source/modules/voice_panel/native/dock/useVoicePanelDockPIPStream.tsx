@@ -1,17 +1,18 @@
-// Module ID: 20106
-// Function ID: 20107
+// Module ID: 19377
+// Function ID: 19378
 // Name: useVoicePanelDockPIPStream
-// Dependencies: [7024, 6804, 502, 20107, 1072, 5977, 504, 6805, 2]
+// Dependencies: [6528, 6308, 502, 4672, 19378, 1072, 5473, 504, 6309, 2]
 // Exports: default
 
-// Module 20106 (useVoicePanelDockPIPStream)
+// Module 19377 (useVoicePanelDockPIPStream)
 import Constants from "Constants" /* 1072 */;
-import CallConstants from "CallConstants" /* 5977 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6805 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 7024 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6804 */;
+import CallConstants from "CallConstants" /* 5473 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6309 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6528 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6308 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import VoicePanelDockPIPWatchPromptStore from "VoicePanelDockPIPWatchPromptStore" /* 20107 */;
+import ChannelStore from "ChannelStore" /* 4672 */;
+import VoicePanelDockPIPWatchPromptStore from "VoicePanelDockPIPWatchPromptStore" /* 19378 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -24,44 +25,59 @@ const result = size.fileFinishedImporting("modules/voice_panel/native/dock/useVo
 export default function useVoicePanelDockPIPStream(arg0) {
   let closure_0;
   _require = arg0;
-  let obj = require("get initialized");
-  const items = [ApplicationStreamingStore, AuthenticationStore, ChannelRTCStore, VoicePanelDockPIPWatchPromptStore];
+  const obj = require("get initialized");
+  const items = [ApplicationStreamingStore, AuthenticationStore, ChannelRTCStore, ChannelStore, VoicePanelDockPIPWatchPromptStore];
   return obj.useStateFromStoresObject(items, () => {
     let ownerId;
     const id = AuthenticationStore.getId();
     let tmp = id;
-    const allActiveStreamsForChannel = ApplicationStreamingStore.getAllActiveStreamsForChannel(id);
+    const channel = ChannelStore.getChannel(id);
+    let isDMResult;
+    if (channel != null) {
+      isDMResult = channel.isDM();
+    }
+    let tmp3 = true === isDMResult;
+    if (!tmp3) {
+      let isGuildStageVoiceResult;
+      if (channel != null) {
+        isGuildStageVoiceResult = channel.isGuildStageVoice();
+      }
+      tmp3 = true === isGuildStageVoiceResult;
+    }
+    const allActiveStreamsForChannel = ApplicationStreamingStore.getAllActiveStreamsForChannel(tmp);
     const found = allActiveStreamsForChannel.find((ownerId) => ownerId.ownerId !== closure_0);
-    const obj = ApplicationStreamingStore;
+    const obj2 = ApplicationStreamingStore;
     if (null != found) {
-      const obj4 = StreamKeyUtils;
-      const encodeStreamKeyResult = obj4.encodeStreamKey(found);
+      const obj5 = StreamKeyUtils;
+      const encodeStreamKeyResult = obj5.encodeStreamKey(found);
       const participant = ChannelRTCStore.getParticipant(tmp, encodeStreamKeyResult);
       let type;
       if (participant != null) {
         type = participant.type;
       }
-      return { streamKey: encodeStreamKeyResult, ownerId: found.ownerId, isWatching: type === ParticipantTypes.STREAM && null != participant.streamId || tmp17, isConnecting: !(type === ParticipantTypes.STREAM && null != participant.streamId || tmp17), hasEnded: found.state === ApplicationStreamStates.ENDED || found.state === tmp16.FAILED };
+      return { streamKey: encodeStreamKeyResult, ownerId: found.ownerId, isWatching: type === ParticipantTypes.STREAM && null != participant.streamId || tmp21, isConnecting: !(type === ParticipantTypes.STREAM && null != participant.streamId || tmp21), hasEnded: found.state === ApplicationStreamStates.ENDED || found.state === tmp20.FAILED, isAutoWatchChannel: tmp3 };
     } else {
       let found1;
-      if (!VoicePanelDockPIPWatchPromptStore.isDismissed()) {
-        const allApplicationStreamsForChannel = obj.getAllApplicationStreamsForChannel(tmp);
-        found1 = allApplicationStreamsForChannel.find((ownerId) => {
-          const tmp = ownerId.ownerId !== closure_0 && !closure_2_5.hasWatched(ownerId.ownerId);
-          return tmp;
-        });
+      if (!tmp3) {
+        if (!VoicePanelDockPIPWatchPromptStore.isDismissed()) {
+          const allApplicationStreamsForChannel = obj2.getAllApplicationStreamsForChannel(tmp);
+          found1 = allApplicationStreamsForChannel.find((ownerId) => {
+            const tmp = ownerId.ownerId !== closure_0 && !closure_2_6.hasWatched(ownerId.ownerId);
+            return tmp;
+          });
+        }
       }
       let encodeStreamKeyResult1;
       if (null != found1) {
-        const obj2 = StreamKeyUtils;
-        encodeStreamKeyResult1 = obj2.encodeStreamKey(found1);
+        const obj3 = StreamKeyUtils;
+        encodeStreamKeyResult1 = obj3.encodeStreamKey(found1);
       }
-      const obj5 = { streamKey: encodeStreamKeyResult1, ownerId, isWatching: false, isConnecting: false, hasEnded: false };
+      const obj4 = { streamKey: encodeStreamKeyResult1, ownerId, isWatching: false, isConnecting: false, hasEnded: false, isAutoWatchChannel: tmp3 };
       ownerId = undefined;
       if (found1 != null) {
         ownerId = found1.ownerId;
       }
-      return obj5;
+      return obj4;
     }
   });
 };

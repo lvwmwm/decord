@@ -1,25 +1,25 @@
-// Module ID: 15609
-// Function ID: 15610
+// Module ID: 14237
+// Function ID: 14238
 // Name: VoiceChannelLinkEmbed
-// Dependencies: [32, 17, 5177, 5159, 5181, 5242, 5252, 1388, 1072, 8853, 9181, 1414, 1380, 1113, 8044, 5948, 2]
+// Dependencies: [32, 17, 4690, 4672, 4694, 4755, 4765, 1388, 1072, 8350, 8592, 1414, 1380, 1113, 7547, 5439, 2]
 // Exports: createVoiceChannelLinkEmbed
 
-// Module 15609 (VoiceChannelLinkEmbed)
+// Module 14237 (VoiceChannelLinkEmbed)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import GuildRecord from "GuildRecord" /* 5177 */;
-import useChannelName from "useChannelName" /* 5948 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8044 */;
-import Constants2 from "Constants" /* 8853 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 9181 */;
+import GuildRecord from "GuildRecord" /* 4690 */;
+import useChannelName from "useChannelName" /* 5439 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 7547 */;
+import Constants2 from "Constants" /* 8350 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8592 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelStore from "ChannelStore" /* 5159 */;
-import GuildStore from "GuildStore" /* 5181 */;
-import PermissionStore from "PermissionStore" /* 5242 */;
-import RelationshipStore from "RelationshipStore" /* 5252 */;
+import ChannelStore from "ChannelStore" /* 4672 */;
+import GuildStore from "GuildStore" /* 4694 */;
+import PermissionStore from "PermissionStore" /* 4755 */;
+import RelationshipStore from "RelationshipStore" /* 4765 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 

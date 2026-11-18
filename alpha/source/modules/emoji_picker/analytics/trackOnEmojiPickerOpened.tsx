@@ -1,26 +1,26 @@
-// Module ID: 11954
-// Function ID: 11955
+// Module ID: 11236
+// Function ID: 11237
 // Name: trackOnEmojiPickerOpened
-// Dependencies: [19, 6977, 5159, 5213, 1072, 1391, 1228, 9563, 9564, 6064, 5260, 2]
+// Dependencies: [19, 6481, 4672, 4726, 1072, 1391, 1228, 8977, 8978, 5560, 4773, 2]
 // Exports: useTrackOnEmojiPickerOpenedForReactions
 
-// Module 11954 (trackOnEmojiPickerOpened)
+// Module 11236 (trackOnEmojiPickerOpened)
 import Constants from "Constants" /* 1072 */;
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1228 */;
 import EmojiConstants from "EmojiConstants" /* 1391 */;
-import EmojiUtilsDefault from "EmojiUtils" /* 5260 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6064 */;
-import useTopAndNewlyAddedEmojis from "useTopAndNewlyAddedEmojis" /* 9563 */;
+import EmojiUtilsDefault from "EmojiUtils" /* 4773 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5560 */;
+import useTopAndNewlyAddedEmojis from "useTopAndNewlyAddedEmojis" /* 8977 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6977 */;
-import ChannelStore from "ChannelStore" /* 5159 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5213 */;
+import EmojiStore from "EmojiStore" /* 6481 */;
+import ChannelStore from "ChannelStore" /* 4672 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4726 */;
 import size from "module_2" /* 2 */;
 
 let animated;
 
 let tmp6;
-const useEmojiHotrail = tmp6(9564);
+const useEmojiHotrail = tmp6(8978);
 function trackOnEmojiPickerOpened(current) {
   let EXPRESSION_PICKER_OPENED;
   let analyticsObject;
@@ -145,8 +145,8 @@ const ExpressionPickerViewType = ExpressionPickerConstants.ExpressionPickerViewT
 const result = size.fileFinishedImporting("modules/emoji_picker/analytics/trackOnEmojiPickerOpened.tsx");
 
 export default trackOnEmojiPickerOpened;
-export function useTrackOnEmojiPickerOpenedForReactions(set) {
-  const ref = react.useRef(set);
+export function useTrackOnEmojiPickerOpenedForReactions(map) {
+  const ref = react.useRef(map);
   const effect = react.useEffect(() => {
     if (ref.current.intention === EmojiIntention.REACTION) {
       trackOnEmojiPickerOpened(tmp.current);

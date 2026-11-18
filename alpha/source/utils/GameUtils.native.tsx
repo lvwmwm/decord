@@ -1,11 +1,11 @@
-// Module ID: 7304
-// Function ID: 7305
+// Module ID: 6809
+// Function ID: 6810
 // Name: GameUtils
-// Dependencies: [7305, 7308, 2]
+// Dependencies: [6810, 6813, 2]
 
-// Module 7304 (GameUtils)
-import waitForFrameSubscriptionDefault from "waitForFrameSubscription" /* 7305 */;
-import NativeRPCServerDefault from "NativeRPCServer" /* 7308 */;
+// Module 6809 (GameUtils)
+import waitForFrameSubscriptionDefault from "waitForFrameSubscription" /* 6810 */;
+import NativeRPCServerDefault from "NativeRPCServer" /* 6813 */;
 import size from "module_2" /* 2 */;
 
 let c2 = "not supported";

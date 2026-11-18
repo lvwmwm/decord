@@ -1,14 +1,14 @@
-// Module ID: 7794
-// Function ID: 7795
+// Module ID: 7297
+// Function ID: 7298
 // Name: KeyIcon
-// Dependencies: [19, 21, 575, 6013, 7795, 2]
+// Dependencies: [19, 21, 575, 5509, 7298, 2]
 // Exports: KeyIcon
 
-// Module 7794 (KeyIcon)
+// Module 7297 (KeyIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6013 */;
-import AssetRegistry from "AssetRegistry" /* 7795 */;
+import BaseIconImage2 from "BaseIconImage" /* 5509 */;
+import AssetRegistry from "AssetRegistry" /* 7298 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

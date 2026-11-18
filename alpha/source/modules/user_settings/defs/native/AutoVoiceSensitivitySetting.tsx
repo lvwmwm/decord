@@ -1,15 +1,15 @@
-// Module ID: 17911
-// Function ID: 17912
+// Module ID: 16714
+// Function ID: 16715
 // Name: AutoVoiceSensitivitySetting
-// Dependencies: [2133, 9213, 504, 6223, 12612, 1113, 2]
+// Dependencies: [2133, 8624, 504, 5719, 11897, 1113, 2]
 
-// Module 17911 (AutoVoiceSensitivitySetting)
+// Module 16714 (AutoVoiceSensitivitySetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 6223 */;
-import SettingsConstants from "SettingsConstants" /* 9213 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5719 */;
+import SettingsConstants from "SettingsConstants" /* 8624 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import SettingBuilders from "SettingBuilders" /* 12612 */;
+import SettingBuilders from "SettingBuilders" /* 11897 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

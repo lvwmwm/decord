@@ -1,9 +1,9 @@
-// Module ID: 10272
-// Function ID: 10273
+// Module ID: 9553
+// Function ID: 9554
 // Name: UserAffinitiesTypes
 // Dependencies: [2]
 
-// Module 10272 (UserAffinitiesTypes)
+// Module 9553 (UserAffinitiesTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_affinities/UserAffinitiesTypes.tsx");

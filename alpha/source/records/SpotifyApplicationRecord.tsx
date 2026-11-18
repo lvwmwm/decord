@@ -1,11 +1,11 @@
-// Module ID: 15624
-// Function ID: 15625
+// Module ID: 14251
+// Function ID: 14252
 // Name: SpotifyApplicationRecord
-// Dependencies: [2143, 7095, 2]
+// Dependencies: [2143, 6599, 2]
 
-// Module 15624 (SpotifyApplicationRecord)
+// Module 14251 (SpotifyApplicationRecord)
 import ApplicationRecord from "ApplicationRecord" /* 2143 */;
-import Platforms from "Platforms" /* 7095 */;
+import Platforms from "Platforms" /* 6599 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;

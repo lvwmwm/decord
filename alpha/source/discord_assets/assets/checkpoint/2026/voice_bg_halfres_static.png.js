@@ -1,8 +1,8 @@
-// Module ID: 13370
-// Function ID: 13371
+// Module ID: 12673
+// Function ID: 12674
 // Dependencies: [2]
 
-// Module 13370
+// Module 12673
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/voice_bg_halfres_static.png.js");

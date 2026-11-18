@@ -1,9 +1,9 @@
-// Module ID: 13435
-// Function ID: 13436
+// Module ID: 12742
+// Function ID: 12743
 // Name: ChannelRecipientPrivateUserDataFlags
 // Dependencies: [2]
 
-// Module 13435 (ChannelRecipientPrivateUserDataFlags)
+// Module 12742 (ChannelRecipientPrivateUserDataFlags)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/ChannelRecipientPrivateUserDataFlags.tsx");

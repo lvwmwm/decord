@@ -1,11 +1,11 @@
-// Module ID: 15797
-// Function ID: 15798
+// Module ID: 14429
+// Function ID: 14430
 // Name: StreamVolumeMovedStore
-// Dependencies: [5499, 2]
+// Dependencies: [5012, 2]
 // Exports: clearScrollToStreamVolume, clearStreamVolumeMovedHint, consumeStreamVolumeMovedHint, hideStreamVolumeCoachmark, showStreamVolumeCoachmark, showStreamVolumeMovedHint
 
-// Module 15797 (StreamVolumeMovedStore)
-import ZustandStore from "ZustandStore" /* 5499 */;
+// Module 14429 (StreamVolumeMovedStore)
+import ZustandStore from "ZustandStore" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const zustandStore = ZustandStore.createZustandStore(() => ({ hintStreamKey: null, scrollToStreamVolumeUserId: null, coachmarkUserId: null }));

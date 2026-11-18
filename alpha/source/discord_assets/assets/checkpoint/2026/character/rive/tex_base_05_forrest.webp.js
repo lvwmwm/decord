@@ -1,8 +1,8 @@
-// Module ID: 13187
-// Function ID: 13188
+// Module ID: 12490
+// Function ID: 12491
 // Dependencies: [2]
 
-// Module 13187
+// Module 12490
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_base_05_forrest.webp.js");

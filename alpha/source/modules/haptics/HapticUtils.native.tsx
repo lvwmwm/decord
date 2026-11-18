@@ -1,13 +1,13 @@
-// Module ID: 5548
-// Function ID: 5549
+// Module ID: 5039
+// Function ID: 5040
 // Name: HapticUtils
-// Dependencies: [5549, 5550, 1380, 5267, 2]
+// Dependencies: [5040, 5041, 1380, 4780, 2]
 // Exports: triggerHapticFeedback
 
-// Module 5548 (HapticUtils)
+// Module 5039 (HapticUtils)
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5549 */;
-import Patterns from "Patterns" /* 5550 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5040 */;
+import Patterns from "Patterns" /* 5041 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/haptics/HapticUtils.native.tsx");
@@ -23,7 +23,7 @@ export function triggerHapticFeedback(IMPACT_LIGHT) {
     if (obj36.isAndroid()) {
       const _parseInt5 = parseInt;
       let str37 = "effectTick";
-      const tmp74Result = tmp74(5267);
+      const tmp74Result = tmp74(4780);
       if (parseInt(tmp74Result.getSystemVersion()) < 29) {
         str37 = "impactLight";
       }
@@ -39,7 +39,7 @@ export function triggerHapticFeedback(IMPACT_LIGHT) {
     if (obj34.isAndroid()) {
       const _parseInt4 = parseInt;
       let str35 = "effectTick";
-      const tmp70Result = tmp70(5267);
+      const tmp70Result = tmp70(4780);
       if (parseInt(tmp70Result.getSystemVersion()) < 29) {
         str35 = "impactLight";
       }
@@ -70,7 +70,7 @@ export function triggerHapticFeedback(IMPACT_LIGHT) {
     if (obj29.isAndroid()) {
       const _parseInt3 = parseInt;
       let str30 = "effectTick";
-      const tmp59Result = tmp59(5267);
+      const tmp59Result = tmp59(4780);
       if (parseInt(tmp59Result.getSystemVersion()) < 29) {
         str30 = "impactLight";
       }
@@ -86,7 +86,7 @@ export function triggerHapticFeedback(IMPACT_LIGHT) {
     if (obj27.isAndroid()) {
       const _parseInt2 = parseInt;
       let str28 = "effectTick";
-      const tmp55Result = tmp55(5267);
+      const tmp55Result = tmp55(4780);
       if (parseInt(tmp55Result.getSystemVersion()) < 29) {
         str28 = "impactLight";
       }
@@ -105,7 +105,7 @@ export function triggerHapticFeedback(IMPACT_LIGHT) {
     if (obj24.isAndroid()) {
       const _parseInt = parseInt;
       let str25 = "effectTick";
-      const tmp49Result = tmp49(5267);
+      const tmp49Result = tmp49(4780);
       if (parseInt(tmp49Result.getSystemVersion()) < 29) {
         str25 = "impactLight";
       }

@@ -1,9 +1,9 @@
-// Module ID: 6966
-// Function ID: 6967
+// Module ID: 6470
+// Function ID: 6471
 // Name: QuestRewardCodePlatforms
 // Dependencies: [2]
 
-// Module 6966 (QuestRewardCodePlatforms)
+// Module 6470 (QuestRewardCodePlatforms)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/QuestRewardCodePlatforms.tsx");

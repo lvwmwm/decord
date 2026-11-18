@@ -1,23 +1,23 @@
-// Module ID: 19481
-// Function ID: 19482
+// Module ID: 18757
+// Function ID: 18758
 // Name: ConjureFrameUpdateBar
-// Dependencies: [19, 17, 7027, 19477, 21, 5310, 575, 7438, 5923, 1113, 4133, 14540, 14525, 2]
+// Dependencies: [19, 17, 6531, 18753, 21, 4823, 575, 6941, 5414, 1113, 4121, 14295, 14289, 2]
 // Exports: default
 
-// Module 19481 (ConjureFrameUpdateBar)
+// Module 18757 (ConjureFrameUpdateBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import _modDef4133 from "module_4133" /* 4133 */;
-import Text_Text from "Text/Text" /* 5923 */;
-import Pressables from "Pressables" /* 7438 */;
-import restartFrames from "restartFrames" /* 14525 */;
-import RefreshIcon2 from "RefreshIcon" /* 14540 */;
-import ConjureFrameUpdateStore from "ConjureFrameUpdateStore" /* 19477 */;
+import _modDef4121 from "module_4121" /* 4121 */;
+import Text_Text from "Text/Text" /* 5414 */;
+import Pressables from "Pressables" /* 6941 */;
+import restartFrames from "restartFrames" /* 14289 */;
+import RefreshIcon2 from "RefreshIcon" /* 14295 */;
+import ConjureFrameUpdateStore from "ConjureFrameUpdateStore" /* 18753 */;
 import react from "react" /* 19 */;
-import FramesStore from "FramesStore" /* 7027 */;
+import FramesStore from "FramesStore" /* 6531 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -32,11 +32,11 @@ class ConjureFrameUpdateBarContent {
     const tmp = closure_9();
     const obj = { accessibilityRole: "button", style: tmp.bar, onPress: onReload, children: items };
     const PressableOpacity = Pressables.PressableOpacity;
-    const obj2 = { variant: "body-sm/semibold", color: "text-overlay-light", style: tmp.text, children: intl.string(_modDef4133["93nLLM"]) };
+    const obj2 = { variant: "body-sm/semibold", color: "text-overlay-light", style: tmp.text, children: intl.string(_modDef4121["93nLLM"]) };
     const Text = Text_Text.Text;
     intl = intl3.intl;
     items = [metroImportDefault(Text, obj2), , ];
-    const obj3 = { variant: "body-sm/semibold", color: "text-overlay-light", children: intl2.string(_modDef4133["9091U0"]) };
+    const obj3 = { variant: "body-sm/semibold", color: "text-overlay-light", children: intl2.string(_modDef4121["9091U0"]) };
     const Text2 = Text_Text.Text;
     intl2 = intl3.intl;
     items[1] = metroImportDefault(Text2, obj3);

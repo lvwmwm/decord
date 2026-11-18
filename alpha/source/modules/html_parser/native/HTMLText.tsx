@@ -1,16 +1,16 @@
-// Module ID: 10489
-// Function ID: 10490
+// Module ID: 9770
+// Function ID: 9771
 // Name: html_parser/HTMLText
-// Dependencies: [19, 21, 5310, 5923, 7663, 10490, 10491, 2]
+// Dependencies: [19, 21, 4823, 5414, 7166, 9771, 9772, 2]
 // Exports: HTMLText
 
-// Module 10489 (html_parser/HTMLText)
+// Module 9770 (html_parser/HTMLText)
 import Fragment from "Fragment" /* 21 */;
-import Text_Text from "Text/Text" /* 5923 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 7663 */;
-import groupHTMLTextRuns from "groupHTMLTextRuns" /* 10491 */;
+import Text_Text from "Text/Text" /* 5414 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 7166 */;
+import groupHTMLTextRuns from "groupHTMLTextRuns" /* 9772 */;
 import react_mod from "react" /* 19 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -123,23 +123,23 @@ export function HTMLText(runs) {
   runs = runs.runs;
   let DEFAULT_TEXT_VARIANT = runs.textVariant;
   if (DEFAULT_TEXT_VARIANT === undefined) {
-    DEFAULT_TEXT_VARIANT = runs(10490).DEFAULT_TEXT_VARIANT;
+    DEFAULT_TEXT_VARIANT = runs(9771).DEFAULT_TEXT_VARIANT;
   }
   let DEFAULT_BOLD_TEXT_VARIANT = runs.boldTextVariant;
   if (DEFAULT_BOLD_TEXT_VARIANT === undefined) {
-    DEFAULT_BOLD_TEXT_VARIANT = runs(10490).DEFAULT_BOLD_TEXT_VARIANT;
+    DEFAULT_BOLD_TEXT_VARIANT = runs(9771).DEFAULT_BOLD_TEXT_VARIANT;
   }
   let DEFAULT_HEADING_VARIANTS = runs.headingVariants;
   if (DEFAULT_HEADING_VARIANTS === undefined) {
-    DEFAULT_HEADING_VARIANTS = runs(10490).DEFAULT_HEADING_VARIANTS;
+    DEFAULT_HEADING_VARIANTS = runs(9771).DEFAULT_HEADING_VARIANTS;
   }
   let native = runs.headingColor;
   if (native === undefined) {
-    native = runs(10490).DEFAULT_HEADING_COLORS.native;
+    native = runs(9771).DEFAULT_HEADING_COLORS.native;
   }
   let DEFAULT_LINK_COLOR = runs.linkColor;
   if (DEFAULT_LINK_COLOR === undefined) {
-    DEFAULT_LINK_COLOR = runs(10490).DEFAULT_LINK_COLOR;
+    DEFAULT_LINK_COLOR = runs(9771).DEFAULT_LINK_COLOR;
   }
   react = undefined;
   const onLinkPress = runs.onLinkPress;

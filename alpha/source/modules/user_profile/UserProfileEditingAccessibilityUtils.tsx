@@ -1,14 +1,14 @@
-// Module ID: 17206
-// Function ID: 17207
+// Module ID: 15862
+// Function ID: 15863
 // Name: UserProfileEditingAccessibilityUtils
-// Dependencies: [1113, 17132, 10081, 3127, 7818, 2]
+// Dependencies: [1113, 15788, 9363, 3147, 7321, 2]
 // Exports: getAvatarAccessibleValue, getBannerAccessibleValue, getDisplayNameStyleAccessibleValue
 
-// Module 17206 (UserProfileEditingAccessibilityUtils)
+// Module 15862 (UserProfileEditingAccessibilityUtils)
 import intl5 from "intl" /* 1113 */;
-import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 7818 */;
-import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 10081 */;
-import getDisplayNameStylesFontNameDefault from "getDisplayNameStylesFontName" /* 17132 */;
+import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 7321 */;
+import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 9363 */;
+import getDisplayNameStylesFontNameDefault from "getDisplayNameStylesFontName" /* 15788 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_profile/UserProfileEditingAccessibilityUtils.tsx");
@@ -25,7 +25,7 @@ export function getDisplayNameStyleAccessibleValue(displayNameStyles) {
     let OpWJ3f = useDisplayNameStylesEffectConfigs.DISPLAY_NAME_STYLES_EFFECT_NAMES[displayNameStyles.effectId];
     const tmp7 = importDefault;
     if (OpWJ3f == null) {
-      OpWJ3f = tmp7(3127).OpWJ3f;
+      OpWJ3f = tmp7(3147).OpWJ3f;
     }
     const colors = displayNameStyles.colors;
     const stringResult1 = string(OpWJ3f);

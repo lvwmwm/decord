@@ -1,13 +1,13 @@
-// Module ID: 16454
-// Function ID: 16455
+// Module ID: 15121
+// Function ID: 15122
 // Name: useGuildHeaderCounts
-// Dependencies: [19, 5530, 16455, 12, 572, 504, 2]
+// Dependencies: [19, 5444, 15122, 12, 572, 504, 2]
 // Exports: useGuildHeaderCounts
 
-// Module 16454 (useGuildHeaderCounts)
+// Module 15121 (useGuildHeaderCounts)
 import react from "react" /* 19 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5530 */;
-import GuildHeaderCountsStore from "GuildHeaderCountsStore" /* 16455 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5444 */;
+import GuildHeaderCountsStore from "GuildHeaderCountsStore" /* 15122 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -18,7 +18,7 @@ const result = size.fileFinishedImporting("modules/guild_action_sheet/native/use
 export function useGuildHeaderCounts(id) {
   let items10;
   let obj6;
-  const f113833 = () => {
+  const f108907 = () => {
     let guildId;
     let type;
     let obj = GUILD_HEADER_ONLINE_COUNT(dependencyMap[3]);
@@ -28,8 +28,8 @@ export function useGuildHeaderCounts(id) {
       obj.dispatch(obj2);
     }, 3000);
   };
-  const f113834 = () => () => memo1.cancel();
-  const f113835 = () => {
+  const f108908 = () => () => memo1.cancel();
+  const f108909 = () => {
     if (stateFromStores2 > 0) {
       memo1(tmp);
     }
@@ -46,11 +46,11 @@ export function useGuildHeaderCounts(id) {
   });
   const GUILD_HEADER_MEMBER_COUNT = "GUILD_HEADER_MEMBER_COUNT";
   const items1 = ["GUILD_HEADER_MEMBER_COUNT", id];
-  const memo = react.useMemo(f113833, items1);
+  const memo = react.useMemo(f108907, items1);
   const items2 = [memo];
-  const effect = react.useEffect(f113834, items2);
+  const effect = react.useEffect(f108908, items2);
   const items3 = [memo, stateFromStores];
-  const effect1 = react.useEffect(f113835, items3);
+  const effect1 = react.useEffect(f108909, items3);
   let obj2 = require("get initialized");
   const items4 = [GuildHeaderCountsStore];
   _require = id;
@@ -67,11 +67,11 @@ export function useGuildHeaderCounts(id) {
   const GUILD_HEADER_ONLINE_COUNT = "GUILD_HEADER_ONLINE_COUNT";
   let closure_1 = id;
   const items6 = ["GUILD_HEADER_ONLINE_COUNT", id];
-  const memo1 = react.useMemo(f113833, items6);
+  const memo1 = react.useMemo(f108907, items6);
   const items7 = [memo1];
-  const effect2 = react.useEffect(f113834, items7);
+  const effect2 = react.useEffect(f108908, items7);
   const items8 = [memo1, stateFromStores2];
-  const effect3 = react.useEffect(f113835, items8);
+  const effect3 = react.useEffect(f108909, items8);
   const items9 = [GuildHeaderCountsStore];
   const obj4 = require("get initialized");
   const obj5 = { memberCount: stateFromStores1, onlineCount: obj4.useStateFromStores(items9, () => GuildHeaderCountsStore.getOnlineCount(closure_0)), activeChannelsCount: obj6.useStateFromStores(items10, () => GuildHeaderCountsStore.getActiveChannelsCount(id)) };

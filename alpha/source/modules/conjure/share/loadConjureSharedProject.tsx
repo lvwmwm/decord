@@ -1,18 +1,18 @@
-// Module ID: 12651
-// Function ID: 12652
+// Module ID: 11936
+// Function ID: 11937
 // Name: loadConjureSharedProject
-// Dependencies: [5, 2165, 7025, 12645, 1072, 7339, 572, 12646, 559, 7063, 7344, 2]
+// Dependencies: [5, 2165, 6529, 11930, 1072, 6844, 572, 8810, 559, 6567, 6849, 2]
 // Exports: default
 
-// Module 12651 (loadConjureSharedProject)
+// Module 11936 (loadConjureSharedProject)
 import Constants from "Constants" /* 1072 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 7063 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 7339 */;
-import conjureProjectLink from "conjureProjectLink" /* 12646 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6567 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 6844 */;
+import conjureProjectLink from "conjureProjectLink" /* 8810 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 7025 */;
-import ConjureSharedProjectStore from "ConjureSharedProjectStore" /* 12645 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6529 */;
+import ConjureSharedProjectStore from "ConjureSharedProjectStore" /* 11930 */;
 import Dispatcher from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 

@@ -1,13 +1,13 @@
-// Module ID: 20523
-// Function ID: 20524
+// Module ID: 19796
+// Function ID: 19797
 // Name: KeywordsRow
-// Dependencies: [19, 21, 7453, 5923, 1113, 5546, 20524, 2121, 2]
+// Dependencies: [19, 21, 6956, 5414, 1113, 5037, 19797, 2121, 2]
 // Exports: default
 
-// Module 20523 (KeywordsRow)
+// Module 19796 (KeywordsRow)
 import Fragment from "Fragment" /* 21 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ export default function KeywordsRow(label) {
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
       const obj = { title: label, description: importDefault, keywords, onSave };
       ActionSheetActionCreatorsDefault;
-      const tmp2 = asyncRequire(20524, dependencyMap.paths);
+      const tmp2 = asyncRequire(19797, dependencyMap.paths);
       if ("regex" === dependencyMap) {
         obj3 = { type: dependencyMap };
         const obj2 = { type: dependencyMap };
@@ -53,8 +53,8 @@ export default function KeywordsRow(label) {
       openLazy(tmp2, "AutomodKeywords", obj);
     }
   };
-  const TableRow = label(7453).TableRow;
-  Text = label(5923).Text;
+  const TableRow = label(6956).TableRow;
+  Text = label(5414).Text;
   if (keywords.length > 0) {
     const _String = String;
     StringResult = String(keywords.length);

@@ -1,16 +1,16 @@
-// Module ID: 19061
-// Function ID: 19062
+// Module ID: 17872
+// Function ID: 17873
 // Name: InterestGuildActions
-// Dependencies: [5, 5344, 5161, 1072, 5346, 6915, 6920, 6008, 1113, 2571, 2]
+// Dependencies: [5, 4857, 4674, 1072, 4859, 6419, 6424, 5504, 1113, 2591, 2]
 // Exports: getInterestGuildJoinsInFlight, joinInterestGuild
 
-// Module 19061 (InterestGuildActions)
+// Module 17872 (InterestGuildActions)
 import Constants from "Constants" /* 1072 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 5346 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6915 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4859 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6419 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5344 */;
-import GuildMembershipStore from "GuildMembershipStore" /* 5161 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4857 */;
+import GuildMembershipStore from "GuildMembershipStore" /* 4674 */;
 import size from "module_2" /* 2 */;
 
 let c7, c8, closure_5, request;

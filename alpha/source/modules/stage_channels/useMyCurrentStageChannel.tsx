@@ -1,13 +1,13 @@
-// Module ID: 11534
-// Function ID: 11535
+// Module ID: 10816
+// Function ID: 10817
 // Name: useMyCurrentStageChannel
-// Dependencies: [5159, 5213, 504, 2]
+// Dependencies: [4672, 4726, 504, 2]
 // Exports: default
 
-// Module 11534 (useMyCurrentStageChannel)
+// Module 10816 (useMyCurrentStageChannel)
 import get_initialized from "get initialized" /* 504 */;
-import ChannelStore from "ChannelStore" /* 5159 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5213 */;
+import ChannelStore from "ChannelStore" /* 4672 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4726 */;
 import size from "module_2" /* 2 */;
 
 let channel, voiceChannelId;

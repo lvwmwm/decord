@@ -1,18 +1,18 @@
-// Module ID: 9159
-// Function ID: 9160
+// Module ID: 8570
+// Function ID: 8571
 // Name: ContextMenu
-// Dependencies: [19, 21, 1380, 1655, 6057, 9160, 5923, 1496, 9161, 5938, 6329, 9162, 5317, 1113, 9163, 1708, 5592, 5548, 5562, 2]
+// Dependencies: [19, 21, 1380, 1655, 5553, 8571, 5414, 1496, 8572, 5429, 5831, 8573, 4830, 1113, 8574, 1708, 5083, 5039, 5053, 2]
 // Exports: ContextMenu
 
-// Module 9159 (ContextMenu)
+// Module 8570 (ContextMenu)
 import intl2 from "intl" /* 1113 */;
 import _mod1708 from "module_1708" /* 1708 */;
-import HapticUtils from "HapticUtils" /* 5548 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5562 */;
-import react_native from "react-native" /* 6329 */;
-import ContextMenuConstants from "ContextMenuConstants" /* 9160 */;
-import ContextMenuState from "ContextMenuState" /* 9161 */;
-import UID from "UID" /* 9162 */;
+import HapticUtils from "HapticUtils" /* 5039 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5053 */;
+import react_native from "react-native" /* 5831 */;
+import ContextMenuConstants from "ContextMenuConstants" /* 8571 */;
+import ContextMenuState from "ContextMenuState" /* 8572 */;
+import UID from "UID" /* 8573 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
@@ -161,17 +161,17 @@ export function ContextMenu(triggerOnLongPress) {
         const result = 2 * ContextMenuConstants.CONTEXT_MENU_ITEM_PADDING;
         const sum = result + ContextMenuConstants.CONTEXT_MENU_ITEM_GAP;
         if (null != tmp) {
-          num = tmp11(9160).CONTEXT_MENU_ITEM_ICON_SIZE;
+          num = tmp11(8571).CONTEXT_MENU_ITEM_ICON_SIZE;
         } else {
           num = 0;
         }
         let num2 = 0;
         const sum1 = sum + num;
         if (null != tmp3) {
-          num2 = tmp11(9160).CONTEXT_MENU_ITEM_GAP + tmp11(9160).CONTEXT_MENU_ITEM_ICON_SIZE;
+          num2 = tmp11(8571).CONTEXT_MENU_ITEM_GAP + tmp11(8571).CONTEXT_MENU_ITEM_ICON_SIZE;
         }
         const sum2 = sum1 + num2;
-        const match = str.match(tmp11(9160).CONTEXT_MENU_ITEM_SUB_LABEL_FULL_WIDTH_CHARACTERS);
+        const match = str.match(tmp11(8571).CONTEXT_MENU_ITEM_SUB_LABEL_FULL_WIDTH_CHARACTERS);
         let num3;
         if (match != null) {
           num3 = match.length;
@@ -249,7 +249,7 @@ export function ContextMenu(triggerOnLongPress) {
     obj3.showContextMenu(size);
     const obj4 = PlatformUtils;
     if (obj4.isAndroid()) {
-      const AccessibilityAnnouncer = tmp3(5317).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = tmp3(4830).AccessibilityAnnouncer;
       const announce = AccessibilityAnnouncer.announce;
       const intl = tmp3(1113).intl;
       announce(intl.string(intl2.t.ZqK0uI));
@@ -606,7 +606,7 @@ export function ContextMenu(triggerOnLongPress) {
     onPanGestureEnd.__initData = tmp4;
     const tmp8 = flag;
     if (tmp8) {
-      const Gesture2 = tmp2(5592).Gesture;
+      const Gesture2 = tmp2(5083).Gesture;
       const PanResult = Gesture2.Pan();
       const items2 = [closure_12, , ];
       const onUpdate2 = PanResult.enabled(flag5).onUpdate;
@@ -628,7 +628,7 @@ export function ContextMenu(triggerOnLongPress) {
       ContextMenuNativeTsx6.__initData = tmp36;
       const onUpdate2Result = onUpdate2(ContextMenuNativeTsx6);
       const onEndResult = onUpdate2Result.onEnd(onPanGestureEnd);
-      const Gesture3 = tmp2(5592).Gesture;
+      const Gesture3 = tmp2(5083).Gesture;
       const LongPressResult = Gesture3.LongPress();
       const enabledResult1 = LongPressResult.enabled(tmp32);
       const minDurationResult = enabledResult1.minDuration(ContextMenuConstants.CONTEXT_MENU_LONG_PRESS_DURATION_MS);
@@ -655,11 +655,11 @@ export function ContextMenu(triggerOnLongPress) {
       ContextMenuNativeTsx7.__workletHash = 8112947832354;
       ContextMenuNativeTsx7.__initData = tmp44;
       const onStartResult = onStart(ContextMenuNativeTsx7);
-      const Gesture4 = tmp2(5592).Gesture;
+      const Gesture4 = tmp2(5083).Gesture;
       return Gesture4.Simultaneous(onStartResult, onEndResult);
     } else {
       let onStartResult1;
-      const Gesture = tmp2(5592).Gesture;
+      const Gesture = tmp2(5083).Gesture;
       if (flag2) {
         const items6 = [length, callback3];
         c0 = undefined;

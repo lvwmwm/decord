@@ -1,29 +1,29 @@
-// Module ID: 14567
-// Function ID: 14568
+// Module ID: 18438
+// Function ID: 18439
 // Name: ConjureFirstShareReview
-// Dependencies: [19, 17, 21, 10522, 7442, 7026, 12837, 14568, 14570, 10751, 7448, 5310, 575, 6009, 8111, 8112, 14432, 7629, 1113, 4133, 7869, 14572, 14563, 5923, 5372, 7438, 7744, 2]
+// Dependencies: [19, 17, 21, 9803, 6945, 6530, 12131, 18050, 18439, 10032, 6951, 4823, 575, 5505, 7614, 7615, 18333, 7132, 1113, 4121, 7372, 14647, 18434, 5414, 4885, 6941, 7247, 2]
 // Exports: default
 
-// Module 14567 (ConjureFirstShareReview)
+// Module 18438 (ConjureFirstShareReview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
-import _modDef4133 from "module_4133" /* 4133 */;
-import react_native2 from "react-native" /* 5372 */;
-import Text_Text from "Text/Text" /* 5923 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 7026 */;
-import Pressables from "Pressables" /* 7438 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 7442 */;
-import GameControllerIcon from "GameControllerIcon" /* 7448 */;
-import FormCheckbox from "FormCheckbox" /* 7744 */;
-import ScreenIcon from "ScreenIcon" /* 10522 */;
-import ShieldIcon from "ShieldIcon" /* 10751 */;
-import RobotIcon from "RobotIcon" /* 12837 */;
-import ActivitiesIcon from "ActivitiesIcon" /* 14568 */;
-import BadgeIcon from "BadgeIcon" /* 14570 */;
+import _modDef4121 from "module_4121" /* 4121 */;
+import react_native2 from "react-native" /* 4885 */;
+import Text_Text from "Text/Text" /* 5414 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6530 */;
+import Pressables from "Pressables" /* 6941 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 6945 */;
+import GameControllerIcon from "GameControllerIcon" /* 6951 */;
+import FormCheckbox from "FormCheckbox" /* 7247 */;
+import ScreenIcon from "ScreenIcon" /* 9803 */;
+import ShieldIcon from "ShieldIcon" /* 10032 */;
+import RobotIcon from "RobotIcon" /* 12131 */;
+import ActivitiesIcon from "ActivitiesIcon" /* 18050 */;
+import BadgeIcon from "BadgeIcon" /* 18439 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -84,7 +84,7 @@ function PrivateCheckbox(appChannelsPrivate) {
   };
   const PressableOpacity = Pressables.PressableOpacity;
   items = [React3(FormCheckbox.FormCheckbox, { checked: isPrivate }), ];
-  const obj3 = { variant: "body-md/medium", color: "text-subtle", children: intl.string(_modDef4133.RSyIc9) };
+  const obj3 = { variant: "body-md/medium", color: "text-subtle", children: intl.string(_modDef4121.RSyIc9) };
   const Text = Text_Text.Text;
   intl = intl7.intl;
   items[1] = React3(Text, obj3);
@@ -152,13 +152,13 @@ export default function ConjureFirstShareReview(review) {
     isPrivate = appChannelsPrivate.isPrivate;
   }
   if (true === isPrivate) {
-    AppsIcon = AppsIcon(8111).AppsLockIcon;
+    AppsIcon = AppsIcon(7614).AppsLockIcon;
     let tmp3 = dependencyMap;
     tmp4 = AppsIcon;
   } else {
     let tmp2 = AppsIcon;
     tmp3 = dependencyMap;
-    AppsIcon = AppsIcon(8112).AppsIcon;
+    AppsIcon = AppsIcon(7615).AppsIcon;
     tmp4 = AppsIcon;
   }
   let tmp8 = null;
@@ -201,20 +201,20 @@ export default function ConjureFirstShareReview(review) {
     },
     onConjure: onConjureIcon
   };
-  const items1 = [closure_4(tmp4(14432).ConjureAppIconTile, obj), , , , , ];
-  const obj4 = { label: intl.string(appChannelsPrivate(4133).knevPu), value: null, onChange: null, maxLength: tmp4(7026).MAX_PROJECT_NAME_LENGTH, disabled: null, errorMessage: nameError };
-  const TextInput = tmp4(7629).TextInput;
+  const items1 = [closure_4(tmp4(18333).ConjureAppIconTile, obj), , , , , ];
+  const obj4 = { label: intl.string(appChannelsPrivate(4121).knevPu), value: null, onChange: null, maxLength: tmp4(6530).MAX_PROJECT_NAME_LENGTH, disabled: null, errorMessage: nameError };
+  const TextInput = tmp4(7132).TextInput;
   intl = tmp4(1113).intl;
   ({ name: obj2.value, setName: obj2.onChange } = review);
   ({ saving: obj2.disabled, nameError } = review);
   items1[1] = closure_4(TextInput, obj4);
-  const obj6 = { label: intl2.string(appChannelsPrivate(4133).ynaGa1), placeholder: intl3.string(appChannelsPrivate(4133)["I+3UTL"]), value: null, onChange: null, maxLength: tmp4(7026).MAX_APP_DESCRIPTION_LENGTH, disabled: review.saving };
-  const TextArea = tmp4(7869).TextArea;
+  const obj6 = { label: intl2.string(appChannelsPrivate(4121).ynaGa1), placeholder: intl3.string(appChannelsPrivate(4121)["I+3UTL"]), value: null, onChange: null, maxLength: tmp4(6530).MAX_APP_DESCRIPTION_LENGTH, disabled: review.saving };
+  const TextArea = tmp4(7372).TextArea;
   intl2 = tmp4(1113).intl;
   intl3 = tmp4(1113).intl;
   ({ description: obj3.value, setDescription: obj3.onChange } = identity);
   items1[2] = closure_4(TextArea, obj6);
-  const obj7 = { title: intl4.string(appChannelsPrivate(4133).BqNMms), rows: items };
+  const obj7 = { title: intl4.string(appChannelsPrivate(4121).BqNMms), rows: items };
   intl4 = tmp4(1113).intl;
   items1[3] = closure_4(RowSection, obj7);
   let tmp11Result = null;
@@ -224,8 +224,8 @@ export default function ConjureFirstShareReview(review) {
   if (review.channelNames.length > 1) {
     tmp11Result = null;
     if (null != appChannelsPrivate) {
-      const obj13 = { label: intl5.string(appChannelsPrivate(4133).Td1mlg), checked: null, onToggle: null };
-      const Checkbox = tmp4(14572).Checkbox;
+      const obj13 = { label: intl5.string(appChannelsPrivate(4121).Td1mlg), checked: null, onToggle: null };
+      const Checkbox = tmp4(14647).Checkbox;
       intl5 = tmp4(1113).intl;
       ({ isPrivate: obj5.checked, setPrivate: obj5.onToggle } = appChannelsPrivate);
       tmp11Result = tmp11(Checkbox, obj13);
@@ -234,7 +234,7 @@ export default function ConjureFirstShareReview(review) {
   const obj14 = { children: items1 };
   items1[4] = tmp11Result;
   const obj15 = {
-    title: intl6.string(appChannelsPrivate(4133).LnqeFd),
+    title: intl6.string(appChannelsPrivate(4121).LnqeFd),
     following: items.length > 0,
     rows: devicePermissions.map((item) => {
       let intl;

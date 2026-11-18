@@ -1,10 +1,10 @@
-// Module ID: 8591
-// Function ID: 8592
+// Module ID: 8082
+// Function ID: 8083
 // Name: ProductIds
 // Dependencies: [1390, 1627, 2]
 // Exports: getPlanIdForGift, getProductIdForGift
 
-// Module 8591 (ProductIds)
+// Module 8082 (ProductIds)
 import PremiumConstants from "PremiumConstants" /* 1390 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1627 */;
 import size from "module_2" /* 2 */;

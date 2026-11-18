@@ -6,7 +6,7 @@
 // Module 1456 (LRUCache)
 import PseudoMap from "PseudoMap" /* 1457 */;
 import Yallist from "Yallist" /* 1459 */;
-import _mod1460 from "module_1460" /* 1460 */;
+import format from "format" /* 1460 */;
 
 const require = globalThis.__r;
 let _require, c5, closure_1, dependencyMap;
@@ -183,7 +183,7 @@ class LRUCache {
       }
       let tmp6 = dependencyMap;
       const tmp8 = dependencyMap;
-      let obj = require("module_1460");
+      let obj = require("format");
       dependencyMap = `${closure_1}
       max: ${obj.inspect(tmp3, arg1)}`;
       c2 = true;
@@ -198,7 +198,7 @@ class LRUCache {
         dependencyMap = `${closure_1},`;
       }
       let tmp13 = dependencyMap;
-      let obj2 = require("module_1460");
+      let obj2 = require("format");
       dependencyMap = `${closure_1}
       maxAge: ${obj2.inspect(tmp9, arg1)}`;
       c2 = true;
@@ -213,8 +213,8 @@ class LRUCache {
         dependencyMap = `${closure_1},`;
       }
       let str7 = "length";
-      const inspect = require("module_1460").inspect;
-      require("module_1460");
+      const inspect = require("format").inspect;
+      require("format");
       dependencyMap = `${closure_1}
       length: ${inspect(tmp(self, "length"), arg1)}`;
       c2 = true;
@@ -237,7 +237,7 @@ class LRUCache {
         closure_1 = `${closure_1}
         `;
       }
-      const obj = _mod1460;
+      const obj = format;
       const str4 = obj.inspect(key.key);
       const parts = str4.split("\n");
       const obj2 = { value: key.value };
@@ -268,7 +268,7 @@ class LRUCache {
       if (flag2) {
         obj2.stale = true;
       }
-      const tmp6Result = _mod1460;
+      const tmp6Result = format;
       const str7 = tmp6Result.inspect(obj2, closure_0);
       const parts1 = str7.split("\n");
       closure_1 = `${closure_1}${tmp8} => ${obj5.join("\n  ")}`;

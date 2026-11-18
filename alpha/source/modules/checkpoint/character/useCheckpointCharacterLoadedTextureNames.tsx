@@ -1,10 +1,10 @@
-// Module ID: 13336
-// Function ID: 13337
+// Module ID: 12640
+// Function ID: 12641
 // Name: useCheckpointCharacterLoadedTextureNames
 // Dependencies: [32, 19, 2]
 // Exports: useCheckpointCharacterLoadedTextureNames
 
-// Module 13336 (useCheckpointCharacterLoadedTextureNames)
+// Module 12640 (useCheckpointCharacterLoadedTextureNames)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

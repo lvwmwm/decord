@@ -1,16 +1,16 @@
-// Module ID: 17066
-// Function ID: 17067
+// Module ID: 15720
+// Function ID: 15721
 // Name: SessionAdManager
-// Dependencies: [502, 1072, 2123, 8677, 5154, 572, 1089, 1242, 8839, 1256, 2]
+// Dependencies: [502, 1072, 2123, 8168, 4667, 572, 1089, 1242, 8336, 1256, 2]
 
-// Module 17066 (SessionAdManager)
+// Module 15720 (SessionAdManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import Timers from "Timers" /* 5154 */;
-import react_native from "react-native" /* 8677 */;
-import SessionAdGenerator from "SessionAdGenerator" /* 8839 */;
+import Timers from "Timers" /* 4667 */;
+import react_native from "react-native" /* 8168 */;
+import SessionAdGenerator from "SessionAdGenerator" /* 8336 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1072 */;
 import LifecycleManager from "LifecycleManager" /* 2123 */;

@@ -1,20 +1,20 @@
-// Module ID: 18667
-// Function ID: 18668
+// Module ID: 17480
+// Function ID: 17481
 // Name: EffectiveNotifSettingsLayout
-// Dependencies: [19, 1231, 502, 16200, 21, 5310, 575, 18668, 6335, 8170, 1113, 3031, 16214, 504, 572, 17250, 7598, 2]
+// Dependencies: [19, 1231, 502, 14867, 21, 4823, 575, 17481, 5837, 7673, 1113, 3051, 14881, 504, 572, 15907, 7101, 2]
 // Exports: default
 
-// Module 18667 (EffectiveNotifSettingsLayout)
+// Module 17480 (EffectiveNotifSettingsLayout)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef3031 from "module_3031" /* 3031 */;
-import EffectiveNotifSettingsActionCreators from "EffectiveNotifSettingsActionCreators" /* 18668 */;
+import _modDef3051 from "module_3051" /* 3051 */;
+import EffectiveNotifSettingsActionCreators from "EffectiveNotifSettingsActionCreators" /* 17481 */;
 import react from "react" /* 19 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 16200 */;
+import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 14867 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -51,9 +51,9 @@ function EffectiveSettingsHeader() {
   let tmp8 = null;
   if (unavailable) {
     let obj = { style: tmp.notice, children: closure_7(InlineNotice, obj2) };
-    const Stack = loading(6335).Stack;
-    obj2 = { type: "warning", role: "status", message: intl.string(_modDef3031.Nu2TMI), action: obj3 };
-    InlineNotice = loading(8170).InlineNotice;
+    const Stack = loading(5837).Stack;
+    obj2 = { type: "warning", role: "status", message: intl.string(_modDef3051.Nu2TMI), action: obj3 };
+    InlineNotice = loading(7673).InlineNotice;
     intl = loading(1113).intl;
     obj3 = { text: intl2.string(loading(1113).t["5911Lb"]), onPress: callback, loading };
     intl2 = loading(1113).intl;

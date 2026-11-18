@@ -1,10 +1,10 @@
-// Module ID: 15354
-// Function ID: 15355
+// Module ID: 13982
+// Function ID: 13983
 // Name: GiftCardsExperiment
 // Dependencies: [1452, 2]
 // Exports: useGiftCardsExperimentConfig
 
-// Module 15354 (GiftCardsExperiment)
+// Module 13982 (GiftCardsExperiment)
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 

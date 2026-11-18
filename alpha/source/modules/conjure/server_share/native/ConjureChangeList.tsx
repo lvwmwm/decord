@@ -1,26 +1,26 @@
-// Module ID: 14545
-// Function ID: 14546
+// Module ID: 18422
+// Function ID: 18423
 // Name: ConjureChangeList
-// Dependencies: [19, 17, 21, 12837, 8112, 14546, 8257, 7448, 10751, 7446, 12990, 5310, 575, 6335, 5923, 1113, 4133, 2]
+// Dependencies: [19, 17, 21, 12131, 7615, 17064, 7759, 6951, 10032, 6949, 12277, 4823, 575, 5837, 5414, 1113, 4121, 2]
 // Exports: default
 
-// Module 14545 (ConjureChangeList)
+// Module 18422 (ConjureChangeList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef4133 from "module_4133" /* 4133 */;
-import Text_Text from "Text/Text" /* 5923 */;
-import Stack_Stack from "Stack/Stack" /* 6335 */;
-import GroupIcon from "GroupIcon" /* 7446 */;
-import GameControllerIcon from "GameControllerIcon" /* 7448 */;
-import AppsIcon from "AppsIcon" /* 8112 */;
-import IdCardIcon from "IdCardIcon" /* 8257 */;
-import ShieldIcon from "ShieldIcon" /* 10751 */;
-import RobotIcon from "RobotIcon" /* 12837 */;
-import UserIcon from "UserIcon" /* 12990 */;
-import BeakerIcon from "BeakerIcon" /* 14546 */;
+import _modDef4121 from "module_4121" /* 4121 */;
+import Text_Text from "Text/Text" /* 5414 */;
+import Stack_Stack from "Stack/Stack" /* 5837 */;
+import GroupIcon from "GroupIcon" /* 6949 */;
+import GameControllerIcon from "GameControllerIcon" /* 6951 */;
+import AppsIcon from "AppsIcon" /* 7615 */;
+import IdCardIcon from "IdCardIcon" /* 7759 */;
+import ShieldIcon from "ShieldIcon" /* 10032 */;
+import RobotIcon from "RobotIcon" /* 12131 */;
+import UserIcon from "UserIcon" /* 12277 */;
+import BeakerIcon from "BeakerIcon" /* 17064 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -48,7 +48,7 @@ export default function ConjureChangeList(rows) {
   _require = tmp;
   obj = { spacing: 8, children: items };
   let Stack = require("Stack/Stack").Stack;
-  let obj2 = { variant: "body-md/semibold", color: "text-strong", children: intl.string(_modDef4133["kG/2e8"]) };
+  let obj2 = { variant: "body-md/semibold", color: "text-strong", children: intl.string(_modDef4121["kG/2e8"]) };
   const Text = require("Text/Text").Text;
   intl = require("intl").intl;
   items = [closure_4(Text, obj2), ];

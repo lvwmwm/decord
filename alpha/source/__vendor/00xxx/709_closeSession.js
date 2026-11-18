@@ -91,12 +91,12 @@ function updateSession(ipAddress) {
 }
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export function closeSession(status, status2) {
+export function closeSession(status, arg1) {
   let obj;
-  const tmp = status2;
+  const tmp = arg1;
   if (tmp) {
-    obj = { status: status2 };
-    const obj2 = { status: status2 };
+    obj = { status: arg1 };
+    const obj2 = { status: arg1 };
   } else {
     obj = {};
     if ("ok" === status.status) {

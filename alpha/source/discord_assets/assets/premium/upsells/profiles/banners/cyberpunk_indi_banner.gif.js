@@ -1,8 +1,8 @@
-// Module ID: 17185
-// Function ID: 17186
+// Module ID: 15841
+// Function ID: 15842
 // Dependencies: [2]
 
-// Module 17185
+// Module 15841
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/premium/upsells/profiles/banners/cyberpunk_indi_banner.gif.js");

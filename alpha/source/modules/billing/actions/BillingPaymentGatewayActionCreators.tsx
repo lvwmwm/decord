@@ -1,18 +1,18 @@
-// Module ID: 6776
-// Function ID: 6777
+// Module ID: 6279
+// Function ID: 6280
 // Name: BillingPaymentGatewayActionCreators
-// Dependencies: [5, 1072, 1083, 3, 1113, 6766, 6777, 572, 38, 6778, 6779, 1285, 5130, 6755, 2]
+// Dependencies: [5, 1072, 1083, 3, 1113, 6268, 6280, 572, 38, 6281, 6282, 1285, 4643, 6257, 2]
 // Exports: confirmCardPaymentSource, confirmEPS, confirmPaymentElementSource, confirmPrzelewy24, createAdyenPaymentSourceToken, createAdyenPrepaidPaymentSource, createAdyenVaultablePaymentSource, createBraintreePaymentSource, createCardToken, createExpressCheckoutPaymentMethod, createPaymentSourceToken, createStripePaymentSource, paymentIntentSucceeded, submitElementsAndCreateStripePaymentMethod
 
-// Module 6776 (BillingPaymentGatewayActionCreators)
+// Module 6279 (BillingPaymentGatewayActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl2 from "intl" /* 1113 */;
-import BillingSharedActionCreators from "BillingSharedActionCreators" /* 6766 */;
-import react from "react" /* 6777 */;
-import StripeActionCreators from "StripeActionCreators" /* 6778 */;
-import StripeUtilsAll from "StripeUtils" /* 6779 */;
+import BillingSharedActionCreators from "BillingSharedActionCreators" /* 6268 */;
+import react from "react" /* 6280 */;
+import StripeActionCreators from "StripeActionCreators" /* 6281 */;
+import StripeUtilsAll from "StripeUtils" /* 6282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants_mod from "Constants" /* 1072 */;
 import Constants_mod2 from "Constants" /* 1083 */;
@@ -27,18 +27,21 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 function dispatchPaymentElementsConfirmationError(error) {
-  let flag = arg1;
+  let captureException = arg1;
   if (arg1 === undefined) {
-    flag = true;
+    captureException = true;
   }
-  let stringResult = arg2;
+  let selectedElementType = arg2;
   if (arg2 === undefined) {
+    selectedElementType = null;
+  }
+  let defaultErrorMessage = arg3;
+  if (arg3 === undefined) {
     const intl = intl2.intl;
-    stringResult = intl.string(intl2.t.khEaRI);
+    defaultErrorMessage = intl.string(intl2.t.khEaRI);
   }
   obj = BillingSharedActionCreators;
-  const obj2 = { captureException: flag, defaultErrorMessage: stringResult, captureExceptionOptions: { tags: { source: "payment_elements" } } };
-  return obj.dispatchConfirmationError(error, obj2);
+  return obj.dispatchConfirmationError(error, { captureException, defaultErrorMessage, selectedElementType, tags: { flow: "payment_elements" } });
 }
 let obj = function _createCardToken() {
   obj = _asyncToGenerator(async (arg0, value) => {
@@ -403,24 +406,86 @@ function submitElementsForPaymentElement() {
   return obj(...arguments);
 }
 obj = function _submitElementsForPaymentElement() {
-  obj = _asyncToGenerator(async (value) => {
-    let c2;
-    let closure_1;
-    let c3 = 0;
-    let c4 = 0;
-    return (async (arg0) => {
-      const obj3 = value;
-      if (null == value) {
-        throw dispatchPaymentElementsConfirmationError("Stripe Elements not loaded", true);
+  obj = _asyncToGenerator(async (arg0, value) => {
+    let closure_0 = arg0;
+    let closure_1 = value;
+    if (c5 === 2) {
+      c5 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "HermesInternal", done: null };
       }
-      value = await obj3.submit();
-      closure_130_11.info("Stripe Elements submit response: ", value);
-      if (null != value.error) {
-        closure_130_11.error("Stripe Elements submit error: ", value.error);
-        throw closure_130_12(value.error, true);
+    } else {
+      try {
+        let c1;
+        c5 = 2;
+        if (0 === c4) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            let closure_3 = tmp4;
+            value = tmp;
+            c1 = undefined;
+            let tmp24 = closure_1;
+            if (closure_1 === undefined) {
+              tmp24 = null;
+            }
+            c1 = tmp24;
+            value = undefined;
+            c4 = 1;
+            c5 = 1;
+            return { value: "Path", done: true };
+          }
+        } else if (1 === c4) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            const obj4 = { value, done: true };
+            return obj4;
+          } else if (null == closure_0) {
+            throw closure_131_12("Stripe Elements not loaded", true, c1);
+          } else {
+            c4 = 2;
+            c5 = 1;
+            const obj5 = { value: closure_0.submit(), done: false };
+            return obj5;
+          }
+        } else if (arg0 === 1) {
+          c5 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c5 = 3;
+          const obj6 = { value, done: true };
+          return obj6;
+        } else {
+          closure_131_11.info("Stripe Elements submit response: ", value);
+          if (null != value.error) {
+            closure_131_11.error("Stripe Elements submit error: ", value.error);
+            throw closure_131_12(value.error, true, c1);
+          } else {
+            c5 = 3;
+            obj = { value, done: true };
+            return obj;
+          }
+        }
+      } catch (tmp25) {
+        c5 = 3;
+        throw tmp25;
       }
-      return value;
-    })();
+    }
   });
   return obj(...arguments);
 };
@@ -429,28 +494,97 @@ function createStripePaymentMethodWithElements() {
 }
 obj = function _createStripePaymentMethodWithElements() {
   obj = _asyncToGenerator(async (arg0, elements) => {
-    let closure_2;
     let closure_3;
     let closure_0 = arg0;
-    let c4 = 0;
+    let closure_2 = arg2;
     let c5 = 0;
-    return (async (arg0, value) => {
-      const obj4 = { elements };
-      closure_0 = await closure_0.createPaymentMethod(obj4);
-      const paymentMethod = closure_0.paymentMethod;
-      const error = closure_0.error;
-      if (null != error) {
-        closure_131_11.error("Stripe createPaymentMethod error: ", error);
-        throw closure_131_12(error, true);
+    let c6 = 0;
+    const iter = (async (arg0, value) => {
+      if (c6 === 2) {
+        c6 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          let c2;
+          let tmp;
+          let paymentMethod;
+          let error;
+          c6 = 2;
+          if (0 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              return { value, done: true };
+            } else {
+              closure_4 = tmp4;
+              c2 = undefined;
+              let tmp31 = closure_2;
+              if (closure_2 === undefined) {
+                tmp31 = null;
+              }
+              c2 = tmp31;
+              tmp = undefined;
+              paymentMethod = undefined;
+              error = undefined;
+              c5 = 1;
+              c6 = 1;
+              return { value: "Path", done: true };
+            }
+          } else if (1 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              return { value, done: true };
+            } else {
+              c5 = 2;
+              c6 = 1;
+              const obj5 = { elements };
+              const obj6 = { value: closure_0.createPaymentMethod(obj5), done: false };
+              return obj6;
+            }
+          } else if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c6 = 3;
+            return { value, done: true };
+          } else {
+            tmp = value;
+            paymentMethod = tmp.paymentMethod;
+            error = tmp.error;
+            if (null != error) {
+              closure_132_11.error("Stripe createPaymentMethod error: ", error);
+              throw closure_132_12(error, true, c2);
+            } else if (null == paymentMethod) {
+              const obj8 = { paymentMethod, error };
+              closure_132_11.warn("Stripe createPaymentMethod failed to return payment method: ", obj8);
+              throw closure_132_12("paymentMethod not available with successful stripe call", true, c2);
+            } else {
+              closure_132_19.hasCreatedPaymentMethod = true;
+              c6 = 3;
+              return { value: { paymentMethod, error }, done: true };
+            }
+          }
+        } catch (tmp32) {
+          c6 = 3;
+          throw tmp32;
+        }
       }
-      if (null == paymentMethod) {
-        const obj7 = { paymentMethod, error };
-        closure_131_11.warn("Stripe createPaymentMethod failed to return payment method: ", obj7);
-        throw closure_131_12("paymentMethod not available with successful stripe call", true);
-      }
-      closure_131_19.hasCreatedPaymentMethod = true;
-      return { paymentMethod, error };
     })();
+    iter.next();
+    return iter;
   });
   return obj(...arguments);
 };
@@ -468,8 +602,8 @@ obj = function _submitElementsAndCreateStripePaymentMethod() {
     if (null == closure_1) {
       throw dispatchPaymentElementsConfirmationError("Stripe Elements not loaded", true);
     }
-    await submitElementsForPaymentElement(closure_1);
-    const tmp = await closure_131_20(closure_0, closure_1);
+    await submitElementsForPaymentElement(closure_1, constants.PAYMENT_REQUEST);
+    const tmp = await closure_131_20(closure_0, closure_1, closure_131_10.PAYMENT_REQUEST);
     obj = { paymentMethod: tmp.paymentMethod, error: tmp.error };
     return obj;
   });
@@ -583,13 +717,12 @@ obj = function _confirmPaymentElementSource() {
         if (arg0 === 1) {
           throw value;
         } else if (arg0 === 2) {
-          let obj2 = { value, done: true };
-          return obj2;
+          return { value, done: true };
         } else {
           return { value: "HermesInternal", done: null };
         }
       } else {
-        let tmp121;
+        let tmp127;
         try {
           let c2;
           let c3;
@@ -623,31 +756,31 @@ obj = function _confirmPaymentElementSource() {
                 closure_2 = closure_0;
                 let closure_4;
                 elements = iter2;
-                let tmp89 = iter2 === undefined;
-                closure_3 = tmp89;
+                let tmp95 = iter2 === undefined;
+                closure_3 = tmp95;
                 if (!closure_3) {
                   closure_4 = iter2.next();
                 }
                 closure_0 = closure_4;
                 closure_4 = undefined;
-                let iter = tmp148;
-                if (!tmp89) {
+                let iter = tmp154;
+                if (!tmp95) {
                   elements = iter3;
-                  closure_3 = tmp88;
-                  tmp89 = tmp88;
+                  closure_3 = tmp94;
+                  tmp95 = tmp94;
                   iter = iter3;
                   if (iter2 !== undefined) {
                     closure_4 = iter3.next();
-                    tmp89 = tmp88;
+                    tmp95 = tmp94;
                     iter = iter3;
                   }
                 }
                 elements = closure_4;
                 c11 = 0;
                 closure_4 = undefined;
-                if (!tmp89) {
+                if (!tmp95) {
                   elements = iter;
-                  closure_3 = tmp93;
+                  closure_3 = tmp99;
                   if (iter !== undefined) {
                     closure_4 = iter.next();
                   }
@@ -655,23 +788,23 @@ obj = function _confirmPaymentElementSource() {
                 ({ billingAddress: c2, paymentSourceType: c3, lastConfirmedSetupIntentRef: c4, createSetupIntent: c5 } = closure_4);
                 c11 = 0;
                 closure_4 = undefined;
-                let tmp95 = closure_3;
-                if (!tmp95) {
-                  closure_3 = tmp98;
-                  tmp95 = tmp98;
-                  if (!tmp95) {
+                let tmp101 = closure_3;
+                if (!tmp101) {
+                  closure_3 = tmp104;
+                  tmp101 = tmp104;
+                  if (!tmp101) {
                     closure_4 = elements.next();
-                    tmp95 = tmp98;
+                    tmp101 = tmp104;
                   }
                 }
                 analyticsLocation = closure_4;
-                if (!tmp95) {
+                if (!tmp101) {
                   elements.return();
                 }
                 _undefined = undefined;
                 obj18 = undefined;
                 id = undefined;
-                tmp121 = undefined;
+                tmp127 = undefined;
                 closure_11 = undefined;
                 client_secret = undefined;
                 setupIntent = undefined;
@@ -686,9 +819,9 @@ obj = function _confirmPaymentElementSource() {
             case 1:
             {
               c11 = 0;
-              closure_5 = tmp121;
-              const tmp82 = closure_3;
-              if (!tmp82) {
+              closure_5 = tmp127;
+              const tmp88 = closure_3;
+              if (!tmp88) {
                 elements.return();
               }
               throw closure_5;
@@ -696,7 +829,7 @@ obj = function _confirmPaymentElementSource() {
             case 2:
             {
               c11 = 0;
-              closure_5 = tmp121;
+              closure_5 = tmp127;
               break;
             }
             case 3:
@@ -735,7 +868,7 @@ obj = function _confirmPaymentElementSource() {
                 if (c3 !== closure_137_10.PAYMENT_REQUEST) {
                   c12 = 5;
                   c13 = 1;
-                  const obj7 = { value: closure_137_17(elements), done: false };
+                  const obj7 = { value: closure_137_17(elements, c3), done: false };
                   return obj7;
                 } else {
                   id = null;
@@ -752,9 +885,9 @@ obj = function _confirmPaymentElementSource() {
                         if (closure_11 == null) {
                           _undefined = undefined;
                         }
-                        tmp121 = { setupIntent: _undefined, error: "Array" };
+                        tmp127 = { setupIntent: _undefined, error: "Array" };
                         const obj8 = { setupIntent: _undefined, error: "Array" };
-                        if (shouldRecreateSetupIntentForPaymentElement(tmp121.error)) {
+                        if (shouldRecreateSetupIntentForPaymentElement(tmp127.error)) {
                           if (c3 !== closure_137_10.PAYMENT_REQUEST) {
                             c12 = 7;
                             c13 = 1;
@@ -762,12 +895,15 @@ obj = function _confirmPaymentElementSource() {
                             return obj9;
                           }
                         }
-                        setupIntent = closure_137_16(tmp121.setupIntent, tmp121.error, (error) => {
-                          const intl = closure_1_0(closure_1_3[4]).intl;
-                          const stringResult = intl.string(closure_1_0(closure_1_3[4]).t.khEaRI);
-                          obj = closure_1_0(closure_1_3[5]);
-                          const obj2 = { captureException: true, defaultErrorMessage: stringResult, captureExceptionOptions: { tags: { source: "payment_elements" } } };
-                          return obj.dispatchConfirmationError(error, obj2);
+                        setupIntent = closure_137_16(tmp127.setupIntent, tmp127.error, (error) => {
+                          let selectedElementType = closure_1_3;
+                          if (closure_1_3 === undefined) {
+                            selectedElementType = null;
+                          }
+                          const intl = closure_0(closure_3[4]).intl;
+                          const defaultErrorMessage = intl.string(closure_0(closure_3[4]).t.khEaRI);
+                          obj = closure_0(closure_3[5]);
+                          return obj.dispatchConfirmationError(error, { captureException: true, defaultErrorMessage, selectedElementType, tags: { flow: "payment_elements" } });
                         }).setupIntent;
                         ref.current = setupIntent;
                         id = setupIntent.payment_method;
@@ -782,7 +918,7 @@ obj = function _confirmPaymentElementSource() {
                     if (hasCreatedPaymentMethod) {
                       c12 = 8;
                       c13 = 1;
-                      const obj12 = { value: closure_137_20(closure_0, elements), done: false };
+                      const obj12 = { value: closure_137_20(closure_0, elements, c3), done: false };
                       return obj12;
                     } else {
                       c12 = 9;
@@ -794,7 +930,7 @@ obj = function _confirmPaymentElementSource() {
                   } else {
                     c12 = 6;
                     c13 = 1;
-                    const obj15 = { value: closure_137_20(closure_0, elements), done: false };
+                    const obj15 = { value: closure_137_20(closure_0, elements, c3), done: false };
                     return obj15;
                   }
                 }
@@ -834,7 +970,7 @@ obj = function _confirmPaymentElementSource() {
                       obj18 = { taxId: billing_details.tax_id };
                     }
                   }
-                  throw closure_137_12("Missing PIX tax_id from Payment Element", true);
+                  throw closure_137_12("Missing PIX tax_id from Payment Element", true, c3);
                 }
               }
               break;
@@ -851,7 +987,7 @@ obj = function _confirmPaymentElementSource() {
                 client_secret = value.client_secret;
                 c12 = 10;
                 c13 = 1;
-                const obj22 = { value: closure_137_17(elements), done: false };
+                const obj22 = { value: closure_137_17(elements, c3), done: false };
                 return obj22;
               }
               break;
@@ -876,7 +1012,7 @@ obj = function _confirmPaymentElementSource() {
                 c13 = 3;
                 return { value, done: true };
               } else {
-                tmp121 = value;
+                tmp127 = value;
               }
               break;
             }
@@ -906,16 +1042,16 @@ obj = function _confirmPaymentElementSource() {
                 c13 = 3;
                 return { value, done: true };
               } else {
-                tmp121 = value;
+                tmp127 = value;
               }
               break;
             }
           }
-        } catch (tmp121) {
+        } catch (tmp127) {
           if (0 === c11) {
             c13 = 3;
-            throw tmp121;
-          } else if (1 === tmp123) {
+            throw tmp127;
+          } else if (1 === tmp129) {
             c12 = 1;
           } else {
             c12 = 2;

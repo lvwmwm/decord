@@ -1,16 +1,16 @@
-// Module ID: 11997
-// Function ID: 11998
+// Module ID: 11279
+// Function ID: 11280
 // Name: MessageEmojiActionSheet
-// Dependencies: [19, 17, 1072, 21, 5310, 1380, 1269, 5560, 1256, 11998, 11071, 12003, 2]
+// Dependencies: [19, 17, 1072, 21, 4823, 1380, 1269, 5051, 1256, 11280, 10353, 11285, 2]
 // Exports: default
 
-// Module 11997 (MessageEmojiActionSheet)
+// Module 11279 (MessageEmojiActionSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import size from "module_2" /* 2 */;
 
@@ -46,7 +46,7 @@ function MessageCustomEmojiActionSheet(emojiNode) {
     const tmp2Result = require("v1");
     const v4Result = tmp2Result.v4();
     _require = v4Result;
-    const BottomSheet = tmp2(5560).BottomSheet;
+    const BottomSheet = tmp2(5051).BottomSheet;
     return <BottomSheet startExpanded onDismiss={function onDismiss() {
       const obj = AnalyticsUtilsDefault;
       const obj2 = { nonce };

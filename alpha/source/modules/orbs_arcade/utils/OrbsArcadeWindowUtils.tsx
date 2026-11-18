@@ -1,10 +1,10 @@
-// Module ID: 17713
-// Function ID: 17714
+// Module ID: 16515
+// Function ID: 16516
 // Name: OrbsArcadeWindowUtils
 // Dependencies: [1113, 2]
 // Exports: formatOrbsArcadeTimeUntil
 
-// Module 17713 (OrbsArcadeWindowUtils)
+// Module 16515 (OrbsArcadeWindowUtils)
 import intl4 from "intl" /* 1113 */;
 import size from "module_2" /* 2 */;
 

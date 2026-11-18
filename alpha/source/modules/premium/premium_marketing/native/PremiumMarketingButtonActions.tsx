@@ -1,21 +1,21 @@
-// Module ID: 10029
-// Function ID: 10030
+// Module ID: 9309
+// Function ID: 9310
 // Name: PremiumMarketingButtonActions
-// Dependencies: [9635, 1390, 1072, 9644, 10030, 9602, 8591, 10032, 10086, 7947, 8495, 8615, 2]
+// Dependencies: [9049, 1390, 1072, 9058, 9310, 9016, 8082, 9312, 9368, 7450, 7986, 8106, 2]
 // Exports: getButtonActionHandler
 
-// Module 10029 (PremiumMarketingButtonActions)
+// Module 9309 (PremiumMarketingButtonActions)
 import PremiumConstants from "PremiumConstants" /* 1390 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7947 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 8495 */;
-import ProductIds from "ProductIds" /* 8591 */;
-import openUserSettings from "openUserSettings" /* 8615 */;
-import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 9602 */;
-import cta_button from "cta_button" /* 9644 */;
-import navigateToSocialLayerStorefrontDefault from "navigateToSocialLayerStorefront" /* 10030 */;
-import showMarketingMomentRewardScreen from "showMarketingMomentRewardScreen" /* 10032 */;
-import utils_openGiftModal from "utils/openGiftModal" /* 10086 */;
-import PromotionsStore from "PromotionsStore" /* 9635 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7450 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7986 */;
+import ProductIds from "ProductIds" /* 8082 */;
+import openUserSettings from "openUserSettings" /* 8106 */;
+import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 9016 */;
+import cta_button from "cta_button" /* 9058 */;
+import navigateToSocialLayerStorefrontDefault from "navigateToSocialLayerStorefront" /* 9310 */;
+import showMarketingMomentRewardScreen from "showMarketingMomentRewardScreen" /* 9312 */;
+import utils_openGiftModal from "utils/openGiftModal" /* 9368 */;
+import PromotionsStore from "PromotionsStore" /* 9049 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

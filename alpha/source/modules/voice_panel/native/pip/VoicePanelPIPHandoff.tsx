@@ -1,11 +1,11 @@
-// Module ID: 12435
-// Function ID: 12436
+// Module ID: 11717
+// Function ID: 11718
 // Name: VoicePanelPIPHandoff
-// Dependencies: [19, 12436, 2]
+// Dependencies: [19, 11718, 2]
 // Exports: usePIPCardsSettled, usePIPPanelLayoutCommitted
 
-// Module 12435 (VoicePanelPIPHandoff)
-import VoicePanelPIPCardThawDefault from "VoicePanelPIPCardThaw" /* 12436 */;
+// Module 11717 (VoicePanelPIPHandoff)
+import VoicePanelPIPCardThawDefault from "VoicePanelPIPCardThaw" /* 11718 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

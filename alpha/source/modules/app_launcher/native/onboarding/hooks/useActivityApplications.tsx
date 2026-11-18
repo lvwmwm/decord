@@ -1,11 +1,11 @@
-// Module ID: 13527
-// Function ID: 13528
+// Module ID: 12834
+// Function ID: 12835
 // Name: useActivityApplications
-// Dependencies: [19, 13528, 11343, 2]
+// Dependencies: [19, 12835, 10625, 2]
 // Exports: useActivityApplications
 
-// Module 13527 (useActivityApplications)
-import fetchShelf from "fetchShelf" /* 11343 */;
+// Module 12834 (useActivityApplications)
+import fetchShelf from "fetchShelf" /* 10625 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ export function useActivityApplications(guildId) {
   guildId = guildId.guildId;
   const fetchesShelf = guildId.fetchesShelf;
   const items = [fetchesShelf, guildId];
-  const arr = fetchesShelf(13528)({ guildId });
+  const arr = fetchesShelf(12835)({ guildId });
   const mapped = arr.map((application) => application.application);
   const effect = react.useEffect(() => {
     const tmp = fetchesShelf;

@@ -1,23 +1,23 @@
-// Module ID: 12972
-// Function ID: 12973
+// Module ID: 12259
+// Function ID: 12260
 // Name: GiftIntentGifModal
-// Dependencies: [32, 5, 19, 17, 5159, 1072, 5315, 21, 5310, 575, 8671, 8797, 1256, 7947, 5907, 504, 7869, 1113, 12973, 12030, 5930, 6833, 5911, 7503, 7500, 2]
+// Dependencies: [32, 5, 19, 17, 4672, 1072, 4828, 21, 4823, 575, 8162, 8294, 1256, 7450, 5398, 504, 7372, 1113, 12260, 11312, 5421, 6337, 5402, 7006, 7003, 2]
 // Exports: default
 
-// Module 12972 (GiftIntentGifModal)
+// Module 12259 (GiftIntentGifModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
-import MessageConstants from "MessageConstants" /* 5315 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6833 */;
-import NavigatorHeader from "NavigatorHeader" /* 7503 */;
+import MessageConstants from "MessageConstants" /* 4828 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6337 */;
+import NavigatorHeader from "NavigatorHeader" /* 7006 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5159 */;
+import ChannelStore from "ChannelStore" /* 4672 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -264,7 +264,7 @@ const result = size.fileFinishedImporting("modules/premium/gifting/native/GiftIn
 
 export default function GiftIntentGifModal(arg0) {
   let onDismiss;
-  const f106514 = () => {
+  const f103231 = () => {
     let channelId;
     let giftIntentType;
     let intl;
@@ -293,7 +293,7 @@ export default function GiftIntentGifModal(arg0) {
       onDismiss();
     }
   }, items);
-  obj = { initialRouteName: constants.GIFT_INTENT_GIF, screens: require("react")(f106514) };
-  require("react")(f106514);
+  obj = { initialRouteName: constants.GIFT_INTENT_GIF, screens: require("react")(f103231) };
+  require("react")(f103231);
   return closure_10(require("Navigator").Navigator, obj);
 };

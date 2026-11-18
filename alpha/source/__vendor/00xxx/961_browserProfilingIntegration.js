@@ -61,16 +61,16 @@ export const browserProfilingIntegration = registerSpanErrorInstrumentation.defi
           const tmp2Result15 = tmp2(tmp3[5]);
           tmp2Result15.startProfileForSpan(rootSpan);
         }
-        getOptions.on("spanStart", (rootSpan) => {
+        getOptions.on("spanStart", (activeSpan) => {
           const obj = uIProfiler(closure_1_1[3]);
-          let result = rootSpan === obj.getRootSpan(rootSpan);
+          let result = activeSpan === obj.getRootSpan(activeSpan);
           if (result) {
             const tmpResult = uIProfiler(closure_1_1[1]);
-            result = tmpResult.shouldProfileSpanLegacy(rootSpan);
+            result = tmpResult.shouldProfileSpanLegacy(activeSpan);
           }
           if (result) {
             const tmpResult2 = uIProfiler(closure_1_1[5]);
-            tmpResult2.startProfileForSpan(rootSpan);
+            tmpResult2.startProfileForSpan(activeSpan);
           }
         });
         getOptions.on("beforeEnvelope", (arg0) => {

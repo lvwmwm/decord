@@ -1,19 +1,19 @@
-// Module ID: 10367
-// Function ID: 10368
+// Module ID: 9648
+// Function ID: 9649
 // Name: RestrictedGuildProfileView
-// Dependencies: [19, 17, 21, 10368, 5541, 5896, 575, 5887, 7730, 5923, 1113, 2]
+// Dependencies: [19, 17, 21, 9649, 5032, 5387, 575, 5378, 7233, 5414, 1113, 2]
 // Exports: default
 
-// Module 10367 (RestrictedGuildProfileView)
+// Module 9648 (RestrictedGuildProfileView)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import useThemeDefault from "useTheme" /* 5541 */;
-import LinearGradientDefault from "LinearGradient" /* 5887 */;
-import useToken from "useToken" /* 5896 */;
-import Text_Text from "Text/Text" /* 5923 */;
-import GuildIcon from "GuildIcon" /* 7730 */;
-import GuildProfileView from "GuildProfileView" /* 10368 */;
+import useThemeDefault from "useTheme" /* 5032 */;
+import LinearGradientDefault from "LinearGradient" /* 5378 */;
+import useToken from "useToken" /* 5387 */;
+import Text_Text from "Text/Text" /* 5414 */;
+import GuildIcon from "GuildIcon" /* 7233 */;
+import GuildProfileView from "GuildProfileView" /* 9649 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

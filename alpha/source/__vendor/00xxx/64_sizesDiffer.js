@@ -7,7 +7,7 @@
 // Module 64 (sizesDiffer)
 let size;
 
-let closure_0 = { width: "Array", height: "Path" };
+let closure_0 = { width: "__d", height: "enabled" };
 
 export default function sizesDiffer(arg0, arg1) {
   size = arg0 || closure_0;

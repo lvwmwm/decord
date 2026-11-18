@@ -1,9 +1,9 @@
-// Module ID: 13560
-// Function ID: 13561
+// Module ID: 12867
+// Function ID: 12868
 // Name: ApplicationDirectoryCategoriesStore
 // Dependencies: [504, 572, 2]
 
-// Module 13560 (ApplicationDirectoryCategoriesStore)
+// Module 12867 (ApplicationDirectoryCategoriesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

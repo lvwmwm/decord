@@ -1,20 +1,20 @@
-// Module ID: 19209
-// Function ID: 19210
+// Module ID: 18020
+// Function ID: 18021
 // Name: YouBarAvatarDefault
-// Dependencies: [19, 17, 17739, 1072, 21, 5310, 575, 5896, 1187, 9515, 10110, 2]
+// Dependencies: [19, 17, 16541, 1072, 21, 4823, 575, 5387, 1187, 8929, 9391, 2]
 
-// Module 19209 (YouBarAvatarDefault)
+// Module 18020 (YouBarAvatarDefault)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
-import useToken from "useToken" /* 5896 */;
-import ClipView from "ClipView" /* 9515 */;
-import ReactionIcon2 from "ReactionIcon" /* 10110 */;
+import useToken from "useToken" /* 5387 */;
+import ClipView from "ClipView" /* 8929 */;
+import ReactionIcon2 from "ReactionIcon" /* 9391 */;
 import react from "react" /* 19 */;
-import YouBarConstants from "YouBarConstants" /* 17739 */;
+import YouBarConstants from "YouBarConstants" /* 16541 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;
@@ -30,7 +30,7 @@ let obj2;
 let obj3;
 let rect;
 let tmp4;
-const ClipViewDefault = tmp4(9515);
+const ClipViewDefault = tmp4(8929);
 function AvatarDefault() {
   let items;
   let items1;
@@ -50,7 +50,7 @@ function AvatarDefault() {
   const result = num / 2;
   const sum = result + tmp2(1187).STATUS_PADDING;
   const diff = tmp7 - sum - num / 4 * 2;
-  const point = { shape: tmp2(9515).CutoutShape.Circle, x: diff, y: diff, size: 2 * sum };
+  const point = { shape: tmp2(8929).CutoutShape.Circle, x: diff, y: diff, size: 2 * sum };
   const obj3 = { style: size, children: items3 };
   size = { height: tmp2(1187).AVATAR_SIZE_MAP[tmp6], width: tmp2(1187).AVATAR_SIZE_MAP[tmp6], position: "relative" };
   const obj4 = { cutouts: items, children: map1(View, obj5) };

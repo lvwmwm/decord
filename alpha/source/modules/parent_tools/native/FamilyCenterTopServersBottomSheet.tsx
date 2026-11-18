@@ -1,20 +1,20 @@
-// Module ID: 17465
-// Function ID: 17466
+// Module ID: 16122
+// Function ID: 16123
 // Name: FamilyCenterTopServersBottomSheet
-// Dependencies: [8751, 21, 5310, 575, 504, 9631, 7453, 7730, 7961, 5923, 1113, 2703, 7756, 2]
+// Dependencies: [8247, 21, 4823, 575, 504, 9045, 6956, 7233, 7464, 5414, 1113, 2723, 7259, 2]
 // Exports: default
 
-// Module 17465 (FamilyCenterTopServersBottomSheet)
+// Module 16122 (FamilyCenterTopServersBottomSheet)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import _modDef2703 from "module_2703" /* 2703 */;
-import Text_Text from "Text/Text" /* 5923 */;
-import GuildIconDefault from "GuildIcon" /* 7730 */;
-import TableRowGroup2 from "TableRowGroup" /* 7756 */;
-import ActionSheet2 from "ActionSheet" /* 7961 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 8751 */;
+import _modDef2723 from "module_2723" /* 2723 */;
+import Text_Text from "Text/Text" /* 5414 */;
+import GuildIconDefault from "GuildIcon" /* 7233 */;
+import TableRowGroup2 from "TableRowGroup" /* 7259 */;
+import ActionSheet2 from "ActionSheet" /* 7464 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 8247 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -30,10 +30,10 @@ function GuildRow(guildActivity) {
   if (null == stateFromStores) {
     return null;
   } else {
-    const tmp2Result = guildActivity(9631);
+    const tmp2Result = guildActivity(9045);
     const topUserOrGuildDescription = tmp2Result.getTopUserOrGuildDescription(guildActivity.messages_sent, guildActivity.call_count);
     const obj2 = { label: stateFromStores.name, subLabel: topUserOrGuildDescription, icon: closure_4(GuildIconDefault, obj3) };
-    const TableRow = tmp2(7453).TableRow;
+    const TableRow = tmp2(6956).TableRow;
     obj3 = { guild: stateFromStores, style: tmp.guildIcon };
     return closure_4(TableRow, obj2);
   }
@@ -51,7 +51,7 @@ export default function FamilyCenterTopGuildsBottomSheet(topGuildActivities) {
   let obj = { children: items };
   const tmp = closure_6();
   const ActionSheet = ActionSheet2.ActionSheet;
-  const obj2 = { variant: "body-md/semibold", style: tmp.header, children: intl.string(_modDef2703.Lq9Set) };
+  const obj2 = { variant: "body-md/semibold", style: tmp.header, children: intl.string(_modDef2723.Lq9Set) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   items = [React3(Text, obj2), ];

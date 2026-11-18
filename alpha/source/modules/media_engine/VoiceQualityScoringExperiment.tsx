@@ -1,9 +1,9 @@
-// Module ID: 6190
-// Function ID: 6191
+// Module ID: 5686
+// Function ID: 5687
 // Name: VoiceQualityScoringExperiment
 // Dependencies: [1452, 2]
 
-// Module 6190 (VoiceQualityScoringExperiment)
+// Module 5686 (VoiceQualityScoringExperiment)
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 

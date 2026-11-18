@@ -1,10 +1,10 @@
-// Module ID: 19058
-// Function ID: 19059
+// Module ID: 17869
+// Function ID: 17870
 // Name: InterestGuildProfileSheetLayout
 // Dependencies: [2]
 // Exports: getInterestGuildProfileSheetLayout
 
-// Module 19058 (InterestGuildProfileSheetLayout)
+// Module 17869 (InterestGuildProfileSheetLayout)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/waterwheels/interest/native/InterestGuildProfileSheetLayout.tsx");

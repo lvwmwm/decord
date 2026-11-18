@@ -1,8 +1,8 @@
-// Module ID: 13176
-// Function ID: 13177
+// Module ID: 12479
+// Function ID: 12480
 // Dependencies: [2]
 
-// Module 13176
+// Module 12479
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_aura_08_spooky.webp.js");

@@ -1,10 +1,10 @@
-// Module ID: 5496
-// Function ID: 5497
+// Module ID: 5009
+// Function ID: 5010
 // Name: ScreenIndexFrozen
 // Dependencies: [19, 1655, 2]
 // Exports: addFrozenScreenIndexesChangedListener, freezeScreenIndex, isScreenIndexFrozen, removeFrozenScreenIndexesChangedListener, useIsScreenIndexFrozenSharedValue
 
-// Module 5496 (ScreenIndexFrozen)
+// Module 5009 (ScreenIndexFrozen)
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

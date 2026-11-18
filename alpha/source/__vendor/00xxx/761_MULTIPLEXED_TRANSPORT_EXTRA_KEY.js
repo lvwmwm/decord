@@ -38,19 +38,19 @@ export function makeMultiplexedTransport(arg0, arg1) {
   let closure_1 = arg1;
   return (arg0) => {
     let tunnel = arg0;
-    function getTransport(arg0, arg1) {
-      let combined = arg0;
+    function getTransport(dsn, arg1) {
+      let combined = dsn;
       if (arg1) {
         const tmp2 = globalThis;
         const _HermesInternal = HermesInternal;
-        combined = "" + arg0 + ":" + arg1;
+        combined = "" + dsn + ":" + arg1;
       }
       obj = map;
       let value = map.get(combined);
       if (!value) {
         let tmp5 = dependencyMap;
         const obj2 = _mod701;
-        const dsnFromStringResult = obj2.dsnFromString(arg0);
+        const dsnFromStringResult = obj2.dsnFromString(dsn);
         const tmp4 = require;
         if (dsnFromStringResult) {
           let tmp9Result2;
@@ -119,7 +119,7 @@ export function makeMultiplexedTransport(arg0, arg1) {
           value = tmp9Result2;
         }
       }
-      const items = [arg0, value];
+      const items = [dsn, value];
       return items;
     }
     let obj = function _send() {

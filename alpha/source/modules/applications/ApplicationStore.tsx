@@ -303,15 +303,26 @@ let obj = {
     return flag;
   },
   APPLICATIONS_FETCH_SUCCESS: function handleApplicationsFetchSuccess(isHydrated) {
+    let applications;
+    let unknownApplicationIds;
+    ({ applications, unknownApplicationIds } = isHydrated);
     isHydrated = isHydrated.isHydrated;
-    const iter = isHydrated.applications[Symbol.iterator]();
+    if (unknownApplicationIds == null) {
+      unknownApplicationIds = [];
+    }
+    const tmp = unknownApplicationIds[Symbol.iterator]();
+    while (tmp !== undefined) {
+      let result = map5.set(tmp2, false);
+      continue;
+    }
+    const iter = applications[Symbol.iterator]();
     const nextResult = iter.next();
     while (iter !== undefined) {
-      let tmp2 = nextResult;
+      let tmp6 = nextResult;
       if (true === isHydrated) {
-        let addResult = set.add(tmp2.id);
+        let addResult = set.add(tmp6.id);
       }
-      let tmp9 = addApplication(ApplicationRecord.createFromServer(tmp2));
+      let tmp13 = addApplication(ApplicationRecord.createFromServer(tmp6));
       continue;
     }
   },

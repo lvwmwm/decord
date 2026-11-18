@@ -1,19 +1,19 @@
-// Module ID: 15928
-// Function ID: 15929
+// Module ID: 14571
+// Function ID: 14572
 // Name: InstantInviteEmptyState
-// Dependencies: [19, 17, 8473, 21, 5310, 575, 504, 1187, 15929, 1113, 7657, 7438, 11049, 5923, 8474, 5930, 2]
+// Dependencies: [19, 17, 7964, 21, 4823, 575, 504, 1187, 14572, 1113, 7160, 6941, 10331, 5414, 7965, 5421, 2]
 // Exports: default
 
-// Module 15928 (InstantInviteEmptyState)
+// Module 14571 (InstantInviteEmptyState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import FreeFormTextInputDefault from "FreeFormTextInput" /* 7657 */;
-import InstantInviteUtilsDefault from "InstantInviteUtils" /* 8474 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15929 */;
+import FreeFormTextInputDefault from "FreeFormTextInput" /* 7160 */;
+import InstantInviteUtilsDefault from "InstantInviteUtils" /* 7965 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14572 */;
 import react from "react" /* 19 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 8473 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 7964 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -59,14 +59,14 @@ export default function InstantInviteEmptyState(link) {
     str = "";
   }
   items2 = [closure_5(tmp9, obj5), ];
-  const obj6 = { accessibilityLabel: intl3.string(stateFromStores(1113).t["3D5yo/"]), accessibilityRole: "button", onPress: onPressSettings, style: tmp.settingsButton, children: closure_5(stateFromStores(11049).SettingsIcon, {}) };
-  const PressableOpacity = tmp2(7438).PressableOpacity;
+  const obj6 = { accessibilityLabel: intl3.string(stateFromStores(1113).t["3D5yo/"]), accessibilityRole: "button", onPress: onPressSettings, style: tmp.settingsButton, children: closure_5(stateFromStores(10331).SettingsIcon, {}) };
+  const PressableOpacity = tmp2(6941).PressableOpacity;
   intl3 = tmp2(1113).intl;
   items2[1] = closure_5(PressableOpacity, obj6);
   items1[1] = closure_6(View, obj4);
   const obj7 = { style: tmp.expireCaption, variant: "body-xs/medium", color: "text-muted", children: formatResult };
   formatResult = null;
-  const Text = tmp2(5923).Text;
+  const Text = tmp2(5414).Text;
   if (null != stateFromStores) {
     let dqPWMN;
     const tmp8Result = InstantInviteUtilsDefault;
@@ -79,7 +79,7 @@ export default function InstantInviteEmptyState(link) {
       }
       str3 = str4;
     }
-    const getMaxUsesOptions = tmp8(8474).getMaxUsesOptions;
+    const getMaxUsesOptions = tmp8(7965).getMaxUsesOptions;
     const found = getMaxUsesOptions.find((value) => value.value === stateFromStores.maxUses);
     let str5 = "";
     if (null != found) {
@@ -100,7 +100,7 @@ export default function InstantInviteEmptyState(link) {
   }
   items1[2] = closure_5(Text, obj7);
   const obj9 = { text: intl5.string(stateFromStores(1113).t.Ej3B3Y), onPress: onShare };
-  const Button = tmp2(5930).Button;
+  const Button = tmp2(5421).Button;
   intl5 = tmp2(1113).intl;
   items1[3] = closure_5(Button, obj9);
   return closure_6(View, obj2);

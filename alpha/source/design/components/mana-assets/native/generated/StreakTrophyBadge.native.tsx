@@ -1,26 +1,26 @@
-// Module ID: 15134
-// Function ID: 15135
+// Module ID: 13760
+// Function ID: 13761
 // Name: StreakTrophyBadge
-// Dependencies: [19, 21, 15135, 15136, 15137, 7765, 6014, 2]
+// Dependencies: [19, 21, 13761, 13762, 13763, 7268, 5510, 2]
 // Exports: StreakTrophyBadge
 
-// Module 15134 (StreakTrophyBadge)
+// Module 13760 (StreakTrophyBadge)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 7765 */;
-import _modDef15135 from "module_15135" /* 15135 */;
-import _modDef15136 from "module_15136" /* 15136 */;
-import _modDef15137 from "module_15137" /* 15137 */;
+import react_native from "react-native" /* 7268 */;
+import _modDef13761 from "module_13761" /* 13761 */;
+import _modDef13762 from "module_13762" /* 13762 */;
+import _modDef13763 from "module_13763" /* 13763 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef15135 };
+let obj2 = { uri: _modDef13761 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef15136 };
+let obj3 = { uri: _modDef13762 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef15137 };
-({ uri: _modDef15137 });
+obj[3] = { uri: _modDef13763 };
+({ uri: _modDef13763 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/StreakTrophyBadge.native.tsx");
 

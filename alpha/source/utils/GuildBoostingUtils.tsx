@@ -1,23 +1,23 @@
-// Module ID: 9244
-// Function ID: 9245
+// Module ID: 8655
+// Function ID: 8656
 // Name: GuildBoostingUtils
-// Dependencies: [32, 5181, 1388, 9245, 2179, 1072, 1391, 1390, 2187, 9246, 1113, 1255, 6760, 2188, 12, 2169, 9247, 3515, 2174, 1242, 9250, 9254, 2]
+// Dependencies: [32, 4694, 1388, 8656, 2179, 1072, 1391, 1390, 2187, 8657, 1113, 1255, 6262, 2188, 12, 2169, 8658, 3535, 2174, 1242, 8661, 8665, 2]
 // Exports: appliedGuildBoostsRequiredForPerks, boostedGuildTierToAnalyticsObjectType, generateBlockGuildSubscriptionPurchasesNode, getAppliedGuildBoostMonths, getAvailableGuildBoostSlots, getAvailableSoundboardSoundCount, getAvailableStickerSlotCount, getGracePeriodEndingDate, getGuildBoostingProgressBarFillFactor, getIncrementalSoundboardSoundCountForTier, getIncrementalStickerCountForTier, getMaxEmojiSlots, getMaxSoundboardSlots, getNextGuildTierFromGuild, getNextPremiumTierForSubscriberCount, getNextTier, getNumberOfAppliedBoostsNeededForTier, getShortenedTierName, getTheoreticalPremiumTierForSubscriberCount, getTierName, getTiers, getTotalSoundboardSoundCountForTier, getTotalStickerCountForTier, getUserLevel, isAppliedGuildBoostActive, isGuildBoostSlotCanceled, isGuildBoostedAtLeast, isInGracePeriod, isTierUnlocked
 
-// Module 9244 (GuildBoostingUtils)
+// Module 8655 (GuildBoostingUtils)
 import intl52 from "intl" /* 1113 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import _modDef2169 from "module_2169" /* 2169 */;
 import PremiumUtilsAll from "PremiumUtils" /* 2174 */;
 import PremiumGroupConstants from "PremiumGroupConstants" /* 2187 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
-import PremiumGuildOverrides from "PremiumGuildOverrides" /* 9246 */;
-import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 9247 */;
-import useGuildPowerupsBoostCount from "useGuildPowerupsBoostCount" /* 9250 */;
+import PremiumGuildOverrides from "PremiumGuildOverrides" /* 8657 */;
+import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 8658 */;
+import useGuildPowerupsBoostCount from "useGuildPowerupsBoostCount" /* 8661 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GuildStore from "GuildStore" /* 5181 */;
+import GuildStore from "GuildStore" /* 4694 */;
 import UserStore from "UserStore" /* 1388 */;
-import GuildBoostSlotStore from "GuildBoostSlotStore" /* 9245 */;
+import GuildBoostSlotStore from "GuildBoostSlotStore" /* 8656 */;
 import SubscriptionStore from "SubscriptionStore" /* 2179 */;
 import Constants from "Constants" /* 1072 */;
 import EmojiConstants from "EmojiConstants" /* 1391 */;
@@ -45,10 +45,10 @@ let map1;
 let tmp2;
 let tmp7;
 const GlobalUtils = tmp2(1255);
-const _modDef3515 = tmp7(3515);
-const FileSizeUtils = tmp2(6760);
-const f98142 = (isAvailable) => isAvailable.isAvailable();
-const f98143 = (endsAt) => null != endsAt.endsAt;
+const _modDef3535 = tmp7(3535);
+const FileSizeUtils = tmp2(6262);
+const f95201 = (isAvailable) => isAvailable.isAvailable();
+const f95202 = (endsAt) => null != endsAt.endsAt;
 function getGuildTierFromGuild(arg0) {
   const guild = GuildStore.getGuild(arg0);
   let premiumTier;
@@ -516,7 +516,7 @@ export function isTierUnlocked(dependencyMap, arg1) {
 export function getAvailableGuildBoostSlots(boostSlots) {
   const obj = module_12;
   const values = obj.values(boostSlots);
-  return values.filter(f98142);
+  return values.filter(f95201);
 }
 export function generateBlockGuildSubscriptionPurchasesNode(fractionalState) {
   fractionalState = fractionalState.fractionalState;
@@ -532,7 +532,7 @@ export function generateBlockGuildSubscriptionPurchasesNode(fractionalState) {
   obj3 = module_12;
   const values = obj3.values(boostSlots);
   let prop;
-  const found = values.filter(f98142);
+  const found = values.filter(f95201);
   if (premiumTypeSubscription != null) {
     prop = premiumTypeSubscription.isPausedOrPausePending;
   }
@@ -552,7 +552,7 @@ export function generateBlockGuildSubscriptionPurchasesNode(fractionalState) {
     const intl7 = intl52.intl;
     const formatToPlainString = intl7.formatToPlainString;
     const obj = { premiumGroupProductName: closure_27() };
-    const prop1 = _modDef3515["5xN/C1"];
+    const prop1 = _modDef3535["5xN/C1"];
     return formatToPlainString(prop1, obj);
   } else {
     const _Object = Object;
@@ -636,7 +636,7 @@ export function isInGracePeriod(arr, arg1) {
     if (premiumTier == null) {
       premiumTier = BoostedGuildTiers.NONE;
     }
-    num = AppliedGuildBoostsRequiredForBoostedGuildTier[premiumTier] - (arr.length - arr.filter(f98143).length);
+    num = AppliedGuildBoostsRequiredForBoostedGuildTier[premiumTier] - (arr.length - arr.filter(f95202).length);
   }
   return num > 0;
 }
@@ -659,7 +659,7 @@ export function appliedGuildBoostsRequiredForPerks(arr, arg1) {
     if (premiumTier == null) {
       premiumTier = BoostedGuildTiers.NONE;
     }
-    return AppliedGuildBoostsRequiredForBoostedGuildTier[premiumTier] - (arr.length - arr.filter(f98143).length);
+    return AppliedGuildBoostsRequiredForBoostedGuildTier[premiumTier] - (arr.length - arr.filter(f95202).length);
   }
 }
 export const GuildTierSubscriptionsOrdered = items1;
@@ -682,7 +682,7 @@ export function getGracePeriodEndingDate(arr, arg1) {
     if (premiumTier == null) {
       premiumTier = BoostedGuildTiers.NONE;
     }
-    num = AppliedGuildBoostsRequiredForBoostedGuildTier[premiumTier] - (arr.length - arr.filter(f98143).length);
+    num = AppliedGuildBoostsRequiredForBoostedGuildTier[premiumTier] - (arr.length - arr.filter(f95202).length);
   }
   if (num > 0) {
     const sorted = arr.sort((endsAt, endsAt2) => {
@@ -832,7 +832,7 @@ export function getNextPremiumTierForSubscriberCount(arg0) {
 export const TierMarkerPositions = obj3;
 export function getGuildBoostingProgressBarFillFactor(guild) {
   let totalAvailableBoostsCount;
-  const obj = totalAvailableBoostsCount(9254);
+  const obj = totalAvailableBoostsCount(8665);
   totalAvailableBoostsCount = obj.getGuildPowerupBoostLevelProgress(guild.id);
   let NONE = reversed.find((item) => totalAvailableBoostsCount >= AppliedGuildBoostsRequiredForBoostedGuildTier[item]);
   if (NONE == null) {

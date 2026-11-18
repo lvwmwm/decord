@@ -39,9 +39,9 @@ export function createLangChainCallbackHandler() {
     lc_serializable: false,
     lc_namespace: ["langchain_core", "callbacks", "sentry"],
     lc_secrets: "r",
-    lc_attributes: "alignItems",
-    lc_aliases: "code",
-    lc_serializable_keys: "nm",
+    lc_attributes: "analyticsLocations",
+    lc_aliases: "no",
+    lc_serializable_keys: "__workletHash",
     lc_id: ["langchain_core", "callbacks", "sentry"],
     lc_kwargs: {},
     name: false,
@@ -49,8 +49,8 @@ export function createLangChainCallbackHandler() {
     ignoreChain: false,
     ignoreAgent: false,
     ignoreRetriever: false,
-    ignoreCustomEvent: true,
-    raiseError: null,
+    ignoreCustomEvent: false,
+    raiseError: true,
     awaitHandlers: null,
     handleLLMStart(arg0, arr, arg2, arg3, arg4, invocation_params, ls_provider, arg7) {
       let obj4;

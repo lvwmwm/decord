@@ -1,18 +1,18 @@
-// Module ID: 18951
-// Function ID: 18952
+// Module ID: 17761
+// Function ID: 17762
 // Name: GameClaimCardStack
-// Dependencies: [19, 17, 21, 575, 671, 5310, 6014, 10198, 2]
+// Dependencies: [19, 17, 21, 575, 671, 4823, 5510, 9479, 2]
 // Exports: default
 
-// Module 18951 (GameClaimCardStack)
+// Module 17761 (GameClaimCardStack)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import FastImageDefault from "FastImage" /* 6014 */;
-import PlusSmallIcon from "PlusSmallIcon" /* 10198 */;
+import FastImageDefault from "FastImage" /* 5510 */;
+import PlusSmallIcon from "PlusSmallIcon" /* 9479 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import module_671_mod from "module_671" /* 671 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;

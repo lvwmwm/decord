@@ -1,14 +1,14 @@
-// Module ID: 12020
-// Function ID: 12021
+// Module ID: 11302
+// Function ID: 11303
 // Name: BicycleIcon
-// Dependencies: [19, 21, 575, 6013, 12021, 2]
+// Dependencies: [19, 21, 575, 5509, 11303, 2]
 // Exports: BicycleIcon
 
-// Module 12020 (BicycleIcon)
+// Module 11302 (BicycleIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6013 */;
-import AssetRegistry from "AssetRegistry" /* 12021 */;
+import BaseIconImage2 from "BaseIconImage" /* 5509 */;
+import AssetRegistry from "AssetRegistry" /* 11303 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

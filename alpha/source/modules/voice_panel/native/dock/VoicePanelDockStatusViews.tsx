@@ -1,29 +1,30 @@
-// Module ID: 19250
-// Function ID: 19251
+// Module ID: 18063
+// Function ID: 18064
 // Name: VoicePanelDockStatusViews
-// Dependencies: [19, 17, 6367, 5159, 5181, 5252, 6939, 1388, 19249, 12446, 21, 5310, 575, 1380, 19251, 12427, 504, 19252, 7730, 1187, 7227, 5948, 1113, 8105, 7442, 5923, 6349, 1655, 5542, 7904, 13112, 5896, 5933, 13935, 13937, 6014, 2]
+// Dependencies: [19, 17, 4824, 5869, 4672, 4694, 4765, 6443, 1388, 18062, 11728, 21, 4823, 575, 1380, 18064, 11709, 504, 18065, 7233, 1187, 6731, 5439, 1113, 7608, 6945, 5414, 5851, 1655, 5033, 18066, 7407, 12410, 5387, 5424, 13237, 13239, 5510, 2]
 // Exports: DockChannelIcon, DockChannelTitle, DockFace, DockUserTitle
 
-// Module 19250 (VoicePanelDockStatusViews)
+// Module 18063 (VoicePanelDockStatusViews)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import timing_timing from "timing/timing" /* 5542 */;
-import spring_spring from "spring/spring" /* 5933 */;
-import useChannelName from "useChannelName" /* 5948 */;
-import isRoleRequiredDefault from "isRoleRequired" /* 7227 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 12427 */;
-import VoicePanelDockStatusStore from "VoicePanelDockStatusStore" /* 19249 */;
+import timing_timing from "timing/timing" /* 5033 */;
+import spring_spring from "spring/spring" /* 5424 */;
+import useChannelName from "useChannelName" /* 5439 */;
+import isRoleRequiredDefault from "isRoleRequired" /* 6731 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11709 */;
+import VoicePanelDockStatusStore from "VoicePanelDockStatusStore" /* 18062 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SoundboardStore from "SoundboardStore" /* 6367 */;
-import ChannelStore from "ChannelStore" /* 5159 */;
-import GuildStore from "GuildStore" /* 5181 */;
-import RelationshipStore from "RelationshipStore" /* 5252 */;
-import SpeakingStore from "SpeakingStore" /* 6939 */;
+import AccessibilityStore from "AccessibilityStore" /* 4824 */;
+import SoundboardStore from "SoundboardStore" /* 5869 */;
+import ChannelStore from "ChannelStore" /* 4672 */;
+import GuildStore from "GuildStore" /* 4694 */;
+import RelationshipStore from "RelationshipStore" /* 4765 */;
+import SpeakingStore from "SpeakingStore" /* 6443 */;
 import UserStore from "UserStore" /* 1388 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 12446 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11728 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -32,9 +33,9 @@ let importDefault, set;
 
 let DOCK_TILE_RADIUS;
 let DOCK_TILE_SIZE;
-let closure_15;
+let closure_14;
 let closure_16;
-let map1;
+let closure_17;
 let num;
 let obj2;
 let obj3;
@@ -46,10 +47,10 @@ let size3;
 let react = react_mod;
 const StyleSheet = react_native.StyleSheet;
 let View = react_native.View;
-let closure_12 = VoicePanelDockStatusStore.useDockUserPlayingSoundboardId;
-({ DOCK_FADE_TIMING: map1, DOCK_TILE_RADIUS, DOCK_TILE_SIZE } = VoicePanelDockConstants);
+let closure_13 = VoicePanelDockStatusStore.useDockUserPlayingSoundboardId;
+({ DOCK_FADE_TIMING: closure_14, DOCK_TILE_RADIUS, DOCK_TILE_SIZE } = VoicePanelDockConstants);
 const DOCK_GLYPH_GAP = VoicePanelDockConstants.DOCK_GLYPH_GAP;
-({ jsx: closure_15, jsxs: closure_16 } = Fragment);
+({ jsx: closure_16, jsxs: closure_17 } = Fragment);
 const sum = DOCK_TILE_SIZE + 4;
 let createStyles = createStyles_mod;
 let obj = { face: obj2, avatar: size, avatarImage: { width: "100%", height: "100%" }, ring: size1, halo: { position: "absolute", top: "50%", left: "50%", width: 50, height: 50, marginTop: -25, marginLeft: -25 }, haloDisc: obj3, guildIcon: size2, guildIconAsset: { width: DOCK_TILE_SIZE, height: DOCK_TILE_SIZE, borderRadius: DOCK_TILE_RADIUS }, avatarShadow: size3, titleRow: { flexDirection: "row", alignItems: "center", gap: DOCK_GLYPH_GAP }, title: { flexShrink: 1 }, soundboardEmoji: { width: 16, height: 16 }, soundboardEmojiText: { height: 16, fontSize: num, lineHeight: 20 } };
@@ -67,10 +68,10 @@ num = undefined;
 if (PlatformUtils.isIOS()) {
   num = 16;
 }
-let closure_18 = createStyles(obj);
-let closure_19 = { code: "(function VoicePanelDockStatusViewsTsx1(){let[contentFade]=this.__closure;return{opacity:contentFade.get()};})" };
-let closure_20 = { code: "(function VoicePanelDockStatusViewsTsx2(){let[progress,DOCK_TILE_SIZE,RING_BOX]=this.__closure;const value=progress.get();const startScale=DOCK_TILE_SIZE/RING_BOX;return{opacity:Math.min(value*2,1),transform:[{scale:startScale+(1-startScale)*value}]};})" };
-let closure_21 = react.memo(function DockSpeakingRing(speaking) {
+let closure_19 = createStyles(obj);
+let closure_20 = { code: "(function VoicePanelDockStatusViewsTsx1(){let[contentFade,ringingOpacity]=this.__closure;return{opacity:contentFade.get()*ringingOpacity.get()};})" };
+let closure_21 = { code: "(function VoicePanelDockStatusViewsTsx2(){let[progress,DOCK_TILE_SIZE,RING_BOX]=this.__closure;const value=progress.get();const startScale=DOCK_TILE_SIZE/RING_BOX;return{opacity:Math.min(value*2,1),transform:[{scale:startScale+(1-startScale)*value}]};})" };
+let closure_22 = react.memo(function DockSpeakingRing(speaking) {
   let items3;
   let sharedValue;
   let tmp10;
@@ -82,8 +83,8 @@ let closure_21 = react.memo(function DockSpeakingRing(speaking) {
   if (ICON_VOICE_SPEAKING === undefined) {
     ICON_VOICE_SPEAKING = sharedValue(575).colors.ICON_VOICE_SPEAKING;
   }
-  const tmp3 = closure_18();
-  let obj = speaking(5896);
+  const tmp3 = closure_19();
+  let obj = speaking(5387);
   const token = obj.useToken(ICON_VOICE_SPEAKING);
   let obj2 = speaking(1655);
   sharedValue = obj2.useSharedValue(0);
@@ -98,7 +99,7 @@ let closure_21 = react.memo(function DockSpeakingRing(speaking) {
     }
     const result = set(withSpring(num, { mass: 0.3, damping: 16, stiffness: 400 }));
   }, items);
-  const items1 = [closure_20, sharedValue, DOCK_TILE_SIZE, closure_17];
+  const items1 = [closure_21, sharedValue, DOCK_TILE_SIZE, closure_18];
   let c0;
   let c1;
   let c2;
@@ -123,10 +124,10 @@ let closure_21 = react.memo(function DockSpeakingRing(speaking) {
   const animatedStyle = obj3.useAnimatedStyle(VoicePanelDockStatusViewsTsx2);
   const obj4 = { style: items3, pointerEvents: "none" };
   items3 = [tmp3.ring, { borderColor: token }, animatedStyle];
-  return closure_15(sharedValue(1655).View, obj4);
+  return closure_16(sharedValue(1655).View, obj4);
 });
-let closure_22 = { code: "(function VoicePanelDockStatusViewsTsx3(){let[progress,RING_BOX,HALO_SPEAKING_SIZE]=this.__closure;const value=progress.get();const startScale=RING_BOX/HALO_SPEAKING_SIZE;return{opacity:0.15*Math.min(value*2,1),transform:[{scale:startScale+(1-startScale)*value}]};})" };
-let closure_23 = react.memo(function DockSpeakerHalo(isSpeaking) {
+let closure_23 = { code: "(function VoicePanelDockStatusViewsTsx3(){let[progress,RING_BOX,HALO_SPEAKING_SIZE]=this.__closure;const value=progress.get();const startScale=RING_BOX/HALO_SPEAKING_SIZE;return{opacity:0.15*Math.min(value*2,1),transform:[{scale:startScale+(1-startScale)*value}]};})" };
+let closure_24 = react.memo(function DockSpeakerHalo(isSpeaking) {
   let items3;
   let items4;
   let obj6;
@@ -143,10 +144,10 @@ let closure_23 = react.memo(function DockSpeakerHalo(isSpeaking) {
   if (ICON_VOICE_SPEAKING === undefined) {
     ICON_VOICE_SPEAKING = sharedValue(575).colors.ICON_VOICE_SPEAKING;
   }
-  const tmp3 = closure_18();
-  let obj = isSpeaking(5896);
+  const tmp3 = closure_19();
+  let obj = isSpeaking(5387);
   const token = obj.useToken(ICON_VOICE_SPEAKING);
-  let obj2 = isSpeaking(13935);
+  let obj2 = isSpeaking(13237);
   const voicePanelDockSpeakerLevelProps = obj2.useVoicePanelDockSpeakerLevelProps();
   const obj3 = isSpeaking(1655);
   sharedValue = obj3.useSharedValue(0);
@@ -161,7 +162,7 @@ let closure_23 = react.memo(function DockSpeakerHalo(isSpeaking) {
     }
     const result = set(withSpring(num, { mass: 0.3, damping: 16, stiffness: 400 }));
   }, items);
-  const items1 = [closure_22, sharedValue, closure_17, 42];
+  const items1 = [closure_23, sharedValue, closure_18, 42];
   let c0;
   let c1;
   let c2;
@@ -184,17 +185,17 @@ let closure_23 = react.memo(function DockSpeakerHalo(isSpeaking) {
   VoicePanelDockStatusViewsTsx3.__workletHash = 4795763946999;
   VoicePanelDockStatusViewsTsx3.__initData = tmp9;
   const animatedStyle = obj4.useAnimatedStyle(VoicePanelDockStatusViewsTsx3);
-  const obj5 = { style: items3, pointerEvents: "none", children: closure_15(tmp14, obj6) };
+  const obj5 = { style: items3, pointerEvents: "none", children: closure_16(tmp14, obj6) };
   items3 = [tmp3.halo, animatedStyle];
   View = sharedValue(1655).View;
-  obj6 = { style: StyleSheet.absoluteFill, userId, minScale: 0.84, maxScale: 1, children: closure_15(View, obj7) };
-  tmp14 = sharedValue(13937);
+  obj6 = { style: StyleSheet.absoluteFill, userId, minScale: 0.84, maxScale: 1, children: closure_16(View, obj7) };
+  tmp14 = sharedValue(13239);
   const merged = Object.assign(voicePanelDockSpeakerLevelProps);
   obj7 = { style: items4 };
   items4 = [tmp3.haloDisc, { backgroundColor: token }];
-  return closure_15(View, obj5);
+  return closure_16(View, obj5);
 });
-let closure_24 = { code: "(function VoicePanelDockStatusViewsTsx4(){let[interpolate,dim,dimmedOpacity]=this.__closure;return{opacity:interpolate(dim.get(),[0,1],[1,dimmedOpacity])};})" };
+let closure_25 = { code: "(function VoicePanelDockStatusViewsTsx4(){let[interpolate,dim,dimmedOpacity]=this.__closure;return{opacity:interpolate(dim.get(),[0,1],[1,dimmedOpacity])};})" };
 size = size_mod;
 let result1 = size.fileFinishedImporting("modules/voice_panel/native/dock/VoicePanelDockStatusViews.tsx");
 
@@ -213,10 +214,10 @@ export function DockChannelIcon(streaming) {
   streaming = streaming.streaming;
   let channelId;
   let guildId;
-  const tmp = closure_18();
-  const tmp4 = guildId(19251);
+  const tmp = closure_19();
+  const tmp4 = guildId(18064);
   const tmp4Result = tmp4(channelId(575).Shadow.SHADOW_MEDIUM);
-  const context = react.useContext(guildId(12427));
+  const context = react.useContext(guildId(11709));
   channelId = context.channelId;
   guildId = context.guildId;
   const items = [GuildStore];
@@ -246,27 +247,27 @@ export function DockChannelIcon(streaming) {
     }
   }, items3);
   if (null != stateFromStores) {
-    const obj3 = { style: items4, children: closure_15(tmp2Result, obj5) };
+    const obj3 = { style: items4, children: closure_16(tmp2Result, obj5) };
     items4 = [tmp.guildIcon, ];
     const obj4 = { boxShadow: tmp4Result };
     items4[1] = obj4;
-    obj5 = { streaming, children: closure_15(tmp2Result3, obj6) };
-    obj6 = { guild: stateFromStores, size: channelId(7730).GuildIconSizes.SMALL_32, style: tmp.guildIconAsset };
-    tmp2Result = guildId(19252);
-    tmp2Result3 = guildId(7730);
-    tmp13 = closure_15(View, obj3);
+    obj5 = { streaming, children: closure_16(tmp2Result3, obj6) };
+    obj6 = { guild: stateFromStores, size: channelId(7233).GuildIconSizes.SMALL_32, style: tmp.guildIconAsset };
+    tmp2Result = guildId(18065);
+    tmp2Result3 = guildId(7233);
+    tmp13 = closure_16(View, obj3);
   } else {
     tmp13 = null;
     if (null != stateFromStores1) {
-      const obj7 = { style: items5, children: closure_15(tmp2Result4, obj9) };
+      const obj7 = { style: items5, children: closure_16(tmp2Result4, obj9) };
       items5 = [tmp.avatarShadow, ];
       const obj8 = { boxShadow: tmp4Result };
       items5[1] = obj8;
-      obj9 = { streaming, children: closure_15(Avatar, obj10) };
+      obj9 = { streaming, children: closure_16(Avatar, obj10) };
       obj10 = { user: stateFromStores1, guildId: "Array", size: channelId(1187).AvatarSizes.REFRESH_MEDIUM_32 };
-      tmp2Result4 = guildId(19252);
+      tmp2Result4 = guildId(18065);
       Avatar = tmp5(1187).Avatar;
-      tmp13 = closure_15(View, obj7);
+      tmp13 = closure_16(View, obj7);
     }
   }
   return tmp13;
@@ -274,7 +275,7 @@ export function DockChannelIcon(streaming) {
 export function DockChannelTitle() {
   let VoiceNormalIcon;
   let items4;
-  let tmp = closure_18();
+  let tmp = closure_19();
   const channelId = react.useContext(VoicePanelStateContextDefault).channelId;
   let obj = channelId(504);
   const items = [ChannelStore];
@@ -299,49 +300,55 @@ export function DockChannelTitle() {
     }
     return channelName;
   }, items3);
-  const tmp7 = closure_16;
+  const tmp7 = closure_17;
   const tmp8 = View;
   if (stateFromStores) {
-    VoiceNormalIcon = tmp4(8105).VoiceLockIcon;
+    VoiceNormalIcon = tmp4(7608).VoiceLockIcon;
   } else {
-    VoiceNormalIcon = tmp4(7442).VoiceNormalIcon;
+    VoiceNormalIcon = tmp4(6945).VoiceNormalIcon;
   }
   items4 = [, ];
   const obj4 = { size: "sm", color: nativeDefault.colors.ICON_DEFAULT };
-  items4[0] = closure_15(VoiceNormalIcon, obj4);
+  items4[0] = closure_16(VoiceNormalIcon, obj4);
   const obj5 = { variant: "body-md/medium", color: "text-default", lineClamp: 1, style: tmp.title, children: stateFromStores1 };
-  items4[1] = closure_15(channelId(5923).Text, obj5);
+  items4[1] = closure_16(channelId(5414).Text, obj5);
   return tmp7(tmp8, obj3);
 }
 export function DockUserTitle(userId) {
   let closure_1;
-  let items7;
   let items8;
+  let items9;
   let ref;
-  let str;
-  let tmp12;
-  let tmp13;
+  let str2;
+  let tmp15;
+  let tmp16;
+  let tmp17;
+  let useReducedMotion;
   userId = userId.userId;
+  let flag = userId.ringing;
+  const dimmed = userId.dimmed;
+  if (flag === undefined) {
+    flag = false;
+  }
   importDefault = undefined;
   let sharedValue;
   react = undefined;
-  const dimmed = userId.dimmed;
-  const tmp = closure_18();
+  const tmp = closure_19();
   let obj = react;
   const context = react.useContext(require("VoicePanelStateContext"));
   const channelId = context.channelId;
   const guildId = context.guildId;
   const items = [UserStore];
   const items1 = [userId];
-  const obj2 = userId(sharedValue[16]);
+  const obj2 = userId(sharedValue[17]);
   const stateFromStores = obj2.useStateFromStores(items, () => UserStore.getUser(userId), items1);
-  const obj3 = userId(sharedValue[26]);
+  const obj3 = userId(sharedValue[27]);
   let name = obj3.useName(guildId, channelId, stateFromStores);
-  const tmp7 = closure_12(channelId, userId);
+  const tmp7 = closure_13(channelId, userId);
   importDefault = tmp7;
   const items2 = [SoundboardStore];
   const items3 = [tmp7];
-  const obj4 = userId(sharedValue[16]);
+  const obj4 = userId(sharedValue[17]);
   const stateFromStores1 = obj4.useStateFromStores(items2, () => {
     let soundById;
     if (null != closure_1) {
@@ -356,7 +363,7 @@ export function DockUserTitle(userId) {
   if (soundId == null) {
     soundId = null;
   }
-  const tmp5Result = userId(sharedValue[27]);
+  const tmp5Result = userId(sharedValue[28]);
   sharedValue = tmp5Result.useSharedValue(1);
   react = obj.useRef(true);
   const items4 = [sharedValue, soundId];
@@ -367,63 +374,75 @@ export function DockUserTitle(userId) {
       const result = sharedValue.set(0);
       set = sharedValue.set;
       const obj = timing_timing;
-      const result1 = set(obj.withTiming(1, map1));
+      const result1 = set(obj.withTiming(1, gesture));
     }
   }, items4);
-  const items5 = [closure_19, sharedValue];
+  const items5 = [AccessibilityStore];
+  const tmp5Result3 = userId(sharedValue[17]);
+  const stateFromStores2 = tmp5Result3.useStateFromStores(items5, () => useReducedMotion.useReducedMotion);
+  const tmp2Result = require("useRingingOpacity");
+  if (flag) {
+    flag = !stateFromStores2;
+  }
+  const obj5 = { initialOpacity: 1, pulseOpacity: userId(sharedValue[30]).RINGING_LOW_OPACITY, startDelay: 0 };
+  const items6 = [closure_20, sharedValue, tmp2Result(flag, obj5)];
   let c0;
-  [tmp12, tmp13] = items5;
-  const tmp5Result2 = userId(sharedValue[27]);
+  let c1;
+  [tmp15, tmp16, tmp17] = items6;
+  const tmp2ResultResult = tmp2Result(flag, obj5);
+  const tmp5Result4 = userId(sharedValue[28]);
   class VoicePanelDockStatusViewsTsx1 {
     constructor() {
-      const obj = { opacity: _undefined.get() };
+      let value;
+      const obj = { opacity: value * _undefined2.get() };
+      value = _undefined.get();
       return obj;
     }
   }
-  const items6 = [tmp13];
-  VoicePanelDockStatusViewsTsx1.__closure = items6;
-  VoicePanelDockStatusViewsTsx1.__workletHash = 9926830297549;
-  VoicePanelDockStatusViewsTsx1.__initData = tmp12;
-  let tmp15 = null != stateFromStores1;
-  const animatedStyle = tmp5Result2.useAnimatedStyle(VoicePanelDockStatusViewsTsx1);
-  if (tmp15) {
-    tmp15 = null != stateFromStores1.emojiId || null != stateFromStores1.emojiName;
+  const items7 = [tmp16, tmp17];
+  VoicePanelDockStatusViewsTsx1.__closure = items7;
+  VoicePanelDockStatusViewsTsx1.__workletHash = 6072831087442;
+  VoicePanelDockStatusViewsTsx1.__initData = tmp15;
+  let str = "text-default";
+  const animatedStyle = tmp5Result4.useAnimatedStyle(VoicePanelDockStatusViewsTsx1);
+  if (null == stateFromStores1) {
+    str = "text-default";
+    if (dimmed) {
+      str = "text-subtle";
+    }
   }
-  const obj5 = { style: items7, children: items8 };
-  items7 = [tmp.titleRow, animatedStyle];
-  let tmp19Result = null;
-  View = tmp2(tmp3[27]).View;
-  const tmp17 = closure_16;
+  let tmp19 = null != stateFromStores1;
+  if (tmp19) {
+    tmp19 = null != stateFromStores1.emojiId || null != stateFromStores1.emojiName;
+  }
+  const obj6 = { style: items8, children: items9 };
+  items8 = [tmp.titleRow, animatedStyle];
+  let tmp23Result = null;
+  View = tmp2(tmp3[28]).View;
+  const tmp21 = closure_17;
   if (null != stateFromStores1) {
-    tmp19Result = null;
-    if (tmp15) {
-      ({ soundboardEmoji: obj8.fastImageStyle, soundboardEmojiText: obj8.textEmojiStyle } = tmp);
-      const obj6 = { fastImageStyle: null, textEmojiStyle: null, src: require("getSoundboardEmojiUrl")(stateFromStores1, 16), name: str };
-      str = stateFromStores1.emojiName;
-      const tmp19 = closure_15;
-      const tmp2Result = require("Emoji");
-      if (str == null) {
-        str = "";
+    tmp23Result = null;
+    if (tmp19) {
+      ({ soundboardEmoji: obj10.fastImageStyle, soundboardEmojiText: obj10.textEmojiStyle } = tmp);
+      const obj7 = { fastImageStyle: null, textEmojiStyle: null, src: require("getSoundboardEmojiUrl")(stateFromStores1, 16), name: str2 };
+      str2 = stateFromStores1.emojiName;
+      const tmp23 = closure_16;
+      const tmp2Result2 = require("Emoji");
+      if (str2 == null) {
+        str2 = "";
       }
-      tmp19Result = tmp19(tmp2Result, obj6);
+      tmp23Result = tmp23(tmp2Result2, obj7);
     }
   }
-  items8 = [tmp19Result, ];
-  let str2 = "text-default";
-  const Text = tmp5(tmp3[25]).Text;
-  const tmp21 = closure_15;
-  if (dimmed) {
-    str2 = "text-default";
-    if (null == stateFromStores1) {
-      str2 = "text-subtle";
-    }
-  }
-  const obj7 = { variant: "body-md/medium", color: str2, lineClamp: 1, style: tmp.title, children: name };
+  items9 = [tmp23Result, ];
+  const obj8 = { variant: "body-md/medium", color: str, lineClamp: 1, style: tmp.title, children: name };
+  const Text = tmp5(tmp3[26]).Text;
+  const tmp25 = closure_16;
   if (null != stateFromStores1) {
     name = stateFromStores1.name;
   }
-  items8[1] = tmp21(Text, obj7);
-  return tmp17(View, obj5);
+  items9[1] = tmp25(Text, obj8);
+  return tmp21(View, obj6);
 }
 export function DockFace(userId) {
   let REDESIGN_INPUT_CONTROL_SELECTED;
@@ -440,23 +459,23 @@ export function DockFace(userId) {
   let guildId;
   let stateFromStores;
   let sharedValue;
-  const tmp = closure_18();
+  const tmp = closure_19();
   let obj = stateFromStores;
   const tmp2 = dimmed;
-  const context = stateFromStores.useContext(dimmed(guildId[15]));
+  const context = stateFromStores.useContext(dimmed(guildId[16]));
   guildId = context.guildId;
   const channelId = context.channelId;
   let items = [UserStore];
   const items1 = [userId];
-  const obj2 = userId(guildId[16]);
+  const obj2 = userId(guildId[17]);
   stateFromStores = obj2.useStateFromStores(items, () => UserStore.getUser(userId), items1);
   const items2 = [SpeakingStore];
   const items3 = [userId];
-  const obj3 = userId(guildId[16]);
+  const obj3 = userId(guildId[17]);
   const stateFromStores1 = obj3.useStateFromStores(items2, () => SpeakingStore.isSpeaking(userId), items3);
-  const tmp8 = null != closure_12(channelId, userId);
+  const tmp8 = null != closure_13(channelId, userId);
   if (tmp8) {
-    REDESIGN_INPUT_CONTROL_SELECTED = tmp2(tmp3[12]).colors.REDESIGN_INPUT_CONTROL_SELECTED;
+    REDESIGN_INPUT_CONTROL_SELECTED = tmp2(tmp3[13]).colors.REDESIGN_INPUT_CONTROL_SELECTED;
   }
   const items4 = [stateFromStores, guildId];
   const memo = obj.useMemo(() => {
@@ -468,8 +487,8 @@ export function DockFace(userId) {
     return avatarSource;
   }, items4);
   let num = 0;
-  const useSharedValue = userId(tmp3[27]).useSharedValue;
-  userId(guildId[27]);
+  const useSharedValue = userId(tmp3[28]).useSharedValue;
+  userId(guildId[28]);
   if (dimmed) {
     num = 1;
   }
@@ -483,12 +502,12 @@ export function DockFace(userId) {
     if (dimmed) {
       num = 1;
     }
-    const result = set(withTiming(num, map1));
+    const result = set(withTiming(num, gesture));
   }, items5);
-  const items6 = [closure_24, , , ];
-  const useAnimatedStyle = userId(tmp3[27]).useAnimatedStyle;
-  userId(guildId[27]);
-  items6[1] = userId(guildId[27]).interpolate;
+  const items6 = [closure_25, , , ];
+  const useAnimatedStyle = userId(tmp3[28]).useAnimatedStyle;
+  userId(guildId[28]);
+  items6[1] = userId(guildId[28]).interpolate;
   items6[2] = sharedValue;
   items6[3] = 0.5;
   let c0;
@@ -511,23 +530,23 @@ export function DockFace(userId) {
   const obj4 = { style: items8, pointerEvents: "none", children: items9 };
   items8 = [tmp.face, animatedStyle];
   let tmp21 = entered;
-  View = tmp2(tmp3[27]).View;
-  const tmp20 = closure_16;
+  View = tmp2(tmp3[28]).View;
+  const tmp20 = closure_17;
   if (entered) {
     const obj5 = { userId, isSpeaking: stateFromStores1 || tmp8, color: REDESIGN_INPUT_CONTROL_SELECTED };
-    tmp21 = closure_15(closure_23, obj5);
+    tmp21 = closure_16(closure_24, obj5);
   }
   items9 = [tmp21, , ];
   if (entered) {
     const obj6 = { speaking: stateFromStores1 || tmp8, color: REDESIGN_INPUT_CONTROL_SELECTED };
-    entered = closure_15(closure_21, obj6);
+    entered = closure_16(closure_22, obj6);
   }
   items9[1] = entered;
   let tmp26 = null;
   if (null != memo) {
-    const obj7 = { style: tmp.avatar, children: closure_15(tmp2(guildId[35]), obj8) };
+    const obj7 = { style: tmp.avatar, children: closure_16(tmp2(guildId[37]), obj8) };
     obj8 = { style: tmp.avatarImage, source: memo };
-    tmp26 = closure_15(View, obj7);
+    tmp26 = closure_16(View, obj7);
   }
   items9[2] = tmp26;
   return tmp20(View, obj4);

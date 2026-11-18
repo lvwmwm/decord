@@ -1,10 +1,10 @@
-// Module ID: 11990
-// Function ID: 11991
+// Module ID: 11272
+// Function ID: 11273
 // Name: PortalKeyboardModalContext
 // Dependencies: [19, 2]
 // Exports: useIsPortalKeyboardInModal
 
-// Module 11990 (PortalKeyboardModalContext)
+// Module 11272 (PortalKeyboardModalContext)
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

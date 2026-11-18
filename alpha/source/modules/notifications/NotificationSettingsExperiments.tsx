@@ -1,9 +1,9 @@
-// Module ID: 16938
-// Function ID: 16939
+// Module ID: 15588
+// Function ID: 15589
 // Name: NotificationSettingsExperiments
 // Dependencies: [1452, 2]
 
-// Module 16938 (NotificationSettingsExperiments)
+// Module 15588 (NotificationSettingsExperiments)
 import ApexExperiment_mod from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 

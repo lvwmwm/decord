@@ -1,10 +1,10 @@
-// Module ID: 16281
-// Function ID: 16282
+// Module ID: 14948
+// Function ID: 14949
 // Name: OrbChallengeActionCreators
-// Dependencies: [5, 1072, 572, 1285, 6755, 1242, 2]
+// Dependencies: [5, 1072, 572, 1285, 6257, 1242, 2]
 // Exports: ackOrbChallengesUnread, claimOrbChallenge, fetchOrbChallenges, fetchOrbChallengesUnread
 
-// Module 16281 (OrbChallengeActionCreators)
+// Module 14948 (OrbChallengeActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;

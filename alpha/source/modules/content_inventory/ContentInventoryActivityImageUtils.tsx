@@ -1,26 +1,26 @@
-// Module ID: 15741
-// Function ID: 15742
+// Module ID: 14374
+// Function ID: 14375
 // Name: ContentInventoryActivityImageUtils
-// Dependencies: [19, 2165, 1072, 2145, 9488, 7323, 1113, 15742, 9545, 15744, 14146, 1414, 15748, 7095, 15749, 7338, 7269, 504, 1256, 9491, 2]
+// Dependencies: [19, 2165, 1072, 2145, 8902, 6828, 1113, 14375, 8959, 14377, 13450, 1414, 14381, 6599, 14382, 6843, 6773, 504, 1256, 8905, 2]
 // Exports: getApplicationImage, useImageForActivity, useImageForContentEntry
 
-// Module 15741 (ContentInventoryActivityImageUtils)
+// Module 14374 (ContentInventoryActivityImageUtils)
 import react from "react" /* 19 */;
 import intl5 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
 import Constants2 from "Constants" /* 2145 */;
-import PlatformsDefault from "Platforms" /* 7095 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7269 */;
-import ApplicationAssetUtils from "ApplicationAssetUtils" /* 7323 */;
-import conjurePresenceActivity from "conjurePresenceActivity" /* 7338 */;
-import ContentInventoryTypes from "ContentInventoryTypes" /* 9488 */;
-import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 9491 */;
-import useGame2 from "useGame" /* 9545 */;
-import StageChannelRichPresenceUtils from "StageChannelRichPresenceUtils" /* 14146 */;
-import useEntryActivityAndApplicationDefault from "useEntryActivityAndApplication" /* 15742 */;
-import isOnXboxDefault from "isOnXbox" /* 15748 */;
-import isOnPlayStationDefault from "isOnPlayStation" /* 15749 */;
+import PlatformsDefault from "Platforms" /* 6599 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 6773 */;
+import ApplicationAssetUtils from "ApplicationAssetUtils" /* 6828 */;
+import conjurePresenceActivity from "conjurePresenceActivity" /* 6843 */;
+import ContentInventoryTypes from "ContentInventoryTypes" /* 8902 */;
+import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 8905 */;
+import useGame2 from "useGame" /* 8959 */;
+import StageChannelRichPresenceUtils from "StageChannelRichPresenceUtils" /* 13450 */;
+import useEntryActivityAndApplicationDefault from "useEntryActivityAndApplication" /* 14375 */;
+import isOnXboxDefault from "isOnXbox" /* 14381 */;
+import isOnPlayStationDefault from "isOnPlayStation" /* 14382 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -239,7 +239,7 @@ function useRichImageForActivity(activity, activityApplication) {
   }
   const data = useGame(canonicalGameId).data;
   if (null == activity) {
-    return { largeImage: "Array", smallImage: "Path" };
+    return { largeImage: "__d", smallImage: "enabled" };
   } else {
     let large_image;
     if (activity != null) {

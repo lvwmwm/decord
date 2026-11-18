@@ -1,17 +1,17 @@
-// Module ID: 19562
-// Function ID: 19563
+// Module ID: 18838
+// Function ID: 18839
 // Name: SmartSearchSkeleton
-// Dependencies: [19, 17, 14590, 21, 4356, 5310, 575, 5324, 1113, 14589, 14815, 19550, 2]
+// Dependencies: [19, 17, 15149, 21, 4344, 4823, 575, 4837, 1113, 15148, 15152, 18826, 2]
 
-// Module 19562 (SmartSearchSkeleton)
+// Module 18838 (SmartSearchSkeleton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef4356 from "module_4356" /* 4356 */;
-import FormRowPlaceholderDefault from "FormRowPlaceholder" /* 19550 */;
+import _modDef4344 from "module_4344" /* 4344 */;
+import FormRowPlaceholderDefault from "FormRowPlaceholder" /* 18826 */;
 import react from "react" /* 19 */;
-import AILoaderConstants from "AILoaderConstants" /* 14590 */;
+import AILoaderConstants from "AILoaderConstants" /* 15149 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -21,7 +21,7 @@ let metroRequire;
 const View = react_native.View;
 ({ AI_LOADER_CYCLE_MS: hasOwnProperty, AI_LOADER_REDUCED_MOTION_CYCLE_MS: metroRequire } = AILoaderConstants);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
-let items = [_modDef4356.Sb2fo2, _modDef4356.rXNe0Z, _modDef4356["22g6Ju"], _modDef4356.IogGZY, _modDef4356.UEnMJF, _modDef4356.kk7BVL, _modDef4356.UVa49v];
+let items = [_modDef4344.Sb2fo2, _modDef4344.rXNe0Z, _modDef4344["22g6Ju"], _modDef4344.IogGZY, _modDef4344.UEnMJF, _modDef4344.kk7BVL, _modDef4344.UVa49v];
 let closure_10 = createStyles.createStyles((arg0) => {
   let num2;
   let num3;
@@ -49,10 +49,10 @@ const memoResult = react.memo(function SmartSearchSkeleton(isCollapsed) {
   isCollapsed = isCollapsed.isCollapsed;
   let reducedMotion;
   let tmp = closure_10(isCollapsed);
-  reducedMotion = react.useContext(reducedMotion(5324).AccessibilityPreferencesContext).reducedMotion;
+  reducedMotion = react.useContext(reducedMotion(4837).AccessibilityPreferencesContext).reducedMotion;
   items = [reducedMotion.enabled];
   const memo = react.useMemo(() => {
-    items = [_modDef4356.ffCCEe, ...closure_1_9.sort(() => Math.random() - 0.5)];
+    items = [_modDef4344.ffCCEe, ...closure_1_9.sort(() => Math.random() - 0.5)];
     return items.map((item) => {
       const intl = reducedMotion(closure_1_2[8]).intl;
       return intl.string(item);
@@ -70,9 +70,9 @@ const memoResult = react.memo(function SmartSearchSkeleton(isCollapsed) {
   }, items);
   let obj = { style: tmp.block, children: items2 };
   let obj2 = { style: tmp.header, children: items1 };
-  items1 = [closure_7(reducedMotion(14589).AILoader, { size: 12, color: "interactive-text-default" }), ];
+  items1 = [closure_7(reducedMotion(15148).AILoader, { size: 12, color: "interactive-text-default" }), ];
   const obj3 = { text: memo, variant: "body-sm/semibold", color: "interactive-text-default", delay: memo1.shimmerDelayMs, initialDelay: memo1.shimmerInitialDelayMs, duration: memo1.shimmerDurationMs, style: tmp.label };
-  items1[1] = closure_7(reducedMotion(14815).AIShimmer, obj3);
+  items1[1] = closure_7(reducedMotion(15152).AIShimmer, obj3);
   items2 = [closure_8(View, obj2), ];
   let num = 6;
   const _Array = Array;

@@ -1,18 +1,18 @@
-// Module ID: 5987
-// Function ID: 5988
+// Module ID: 5483
+// Function ID: 5484
 // Name: trackDismissibleContentActioned
-// Dependencies: [32, 5146, 5151, 1072, 5986, 1256, 5143, 5147, 2]
+// Dependencies: [32, 4659, 4664, 1072, 5482, 1256, 4656, 4660, 2]
 // Exports: trackDismissibleContentActioned
 
-// Module 5987 (trackDismissibleContentActioned)
+// Module 5483 (trackDismissibleContentActioned)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import dismissible_content from "dismissible_content" /* 5143 */;
-import DismissibleContentFatigueConfig from "DismissibleContentFatigueConfig" /* 5147 */;
-import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 5151 */;
-import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 5986 */;
+import dismissible_content from "dismissible_content" /* 4656 */;
+import DismissibleContentFatigueConfig from "DismissibleContentFatigueConfig" /* 4660 */;
+import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 4664 */;
+import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 5482 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 5146 */;
+import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 4659 */;
 import size from "module_2" /* 2 */;
 
 const getCurrentlyShownCounts = DismissibleContentShownStateStore.getCurrentlyShownCounts;

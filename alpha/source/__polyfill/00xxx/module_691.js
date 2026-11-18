@@ -4,38 +4,38 @@
 // Exports: isDOMError, isDOMException, isElement, isError, isErrorEvent, isEvent, isParameterizedString, isPlainObject, isPrimitive, isRegExp, isRequest, isString, isSyntheticEvent, isThenable, isVueViewModel
 
 // Module 691
-function isInstanceOf(arg0, arg1) {
+function isInstanceOf(originalException, Error) {
   try {
-    return arg0 instanceof arg1;
+    return originalException instanceof Error;
   } catch (err) {
     return false;
   }
 }
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export function isDOMError(arg0) {
-  const callResult = toString.call(arg0);
+export function isDOMError(error) {
+  const callResult = toString.call(error);
   return callResult === "[object " + "DOMError" + "]";
 }
-export function isDOMException(arg0) {
-  const callResult = toString.call(arg0);
+export function isDOMException(error) {
+  const callResult = toString.call(error);
   return callResult === "[object " + "DOMException" + "]";
 }
-export function isElement(arg0) {
+export function isElement(originalException) {
   let tmp = typeof globalThis.Element !== "undefined";
   if (typeof globalThis.Element !== "undefined") {
-    tmp = isInstanceOf(arg0, globalThis.Element);
+    tmp = isInstanceOf(originalException, globalThis.Element);
   }
   return tmp;
 }
-export function isError(arg0) {
-  const callResult = toString.call(arg0);
+export function isError(originalException) {
+  const callResult = toString.call(originalException);
   if ("[object Error]" !== callResult) {
     if ("[object Exception]" !== callResult) {
       if ("[object DOMException]" !== callResult) {
         if ("[object WebAssembly.Exception]" !== callResult) {
           const _Error = Error;
-          return isInstanceOf(arg0, Error);
+          return isInstanceOf(originalException, Error);
         }
       }
     }
@@ -46,25 +46,25 @@ export function isErrorEvent(arg0) {
   const callResult = toString.call(arg0);
   return callResult === "[object " + "ErrorEvent" + "]";
 }
-export function isEvent(arg0) {
+export function isEvent(error) {
   let tmp = typeof Event !== "undefined";
   if (typeof Event !== "undefined") {
     const _Event = Event;
-    tmp = isInstanceOf(arg0, Event);
+    tmp = isInstanceOf(error, Event);
   }
   return tmp;
 }
 export { isInstanceOf };
-export function isParameterizedString(obj) {
-  let tmp = typeof obj === "object";
-  if (typeof obj === "object") {
-    tmp = null !== obj;
+export function isParameterizedString(combined1) {
+  let tmp = typeof combined1 === "object";
+  if (typeof combined1 === "object") {
+    tmp = null !== combined1;
   }
   if (tmp) {
-    tmp = "__sentry_template_string__" in obj;
+    tmp = "__sentry_template_string__" in combined1;
   }
   if (tmp) {
-    tmp = "__sentry_template_values__" in obj;
+    tmp = "__sentry_template_values__" in combined1;
   }
   return tmp;
 }
@@ -112,19 +112,19 @@ export function isString(arg0) {
   const callResult = toString.call(arg0);
   return callResult === "[object " + "String" + "]";
 }
-export function isSyntheticEvent(arg0) {
-  const callResult = toString.call(arg0);
-  const tmp2 = callResult === "[object " + "Object" + "]" && "nativeEvent" in arg0 && "preventDefault" in arg0 && "stopPropagation" in arg0;
+export function isSyntheticEvent(_events) {
+  const callResult = toString.call(_events);
+  const tmp2 = callResult === "[object " + "Object" + "]" && "nativeEvent" in _events && "preventDefault" in _events && "stopPropagation" in _events;
   return tmp2;
 }
-export function isThenable(arg0) {
+export function isThenable(promise) {
   let then;
   const _Boolean = Boolean;
-  if (arg0 != null) {
-    then = arg0.then;
+  if (promise != null) {
+    then = promise.then;
   }
   if (then) {
-    then = typeof arg0.then === "function";
+    then = typeof promise.then === "function";
   }
   return _Boolean(then);
 }

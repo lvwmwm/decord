@@ -1,9 +1,9 @@
-// Module ID: 8539
-// Function ID: 8540
+// Module ID: 8030
+// Function ID: 8031
 // Name: ShopVariantsReturnStyle
 // Dependencies: [2]
 
-// Module 8539 (ShopVariantsReturnStyle)
+// Module 8030 (ShopVariantsReturnStyle)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/ShopVariantsReturnStyle.tsx");

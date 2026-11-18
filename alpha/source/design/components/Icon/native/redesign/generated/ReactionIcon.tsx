@@ -1,14 +1,14 @@
-// Module ID: 10110
-// Function ID: 10111
+// Module ID: 9391
+// Function ID: 9392
 // Name: ReactionIcon
-// Dependencies: [19, 21, 575, 6013, 10111, 2]
+// Dependencies: [19, 21, 575, 5509, 9392, 2]
 // Exports: ReactionIcon
 
-// Module 10110 (ReactionIcon)
+// Module 9391 (ReactionIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6013 */;
-import AssetRegistry from "AssetRegistry" /* 10111 */;
+import BaseIconImage2 from "BaseIconImage" /* 5509 */;
+import AssetRegistry from "AssetRegistry" /* 9392 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

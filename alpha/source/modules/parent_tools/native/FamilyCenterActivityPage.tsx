@@ -1,21 +1,21 @@
-// Module ID: 17439
-// Function ID: 17440
+// Module ID: 16096
+// Function ID: 16097
 // Name: FamilyCenterActivityPage
-// Dependencies: [19, 17, 21, 5310, 575, 9628, 7425, 17440, 17442, 17452, 13089, 17456, 2]
+// Dependencies: [19, 17, 21, 4823, 575, 9042, 6928, 16097, 16099, 16109, 12387, 16113, 2]
 // Exports: default
 
-// Module 17439 (FamilyCenterActivityPage)
+// Module 16096 (FamilyCenterActivityPage)
 import nativeDefault from "native" /* 575 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7425 */;
-import useUserLinks from "useUserLinks" /* 9628 */;
-import FamilyCenterDataConfirmationDefault from "FamilyCenterDataConfirmation" /* 13089 */;
-import FamilyCenterParentalConsentNoticeDefault from "FamilyCenterParentalConsentNotice" /* 17440 */;
-import FamilyCenterActivityBannerDefault from "FamilyCenterActivityBanner" /* 17442 */;
-import FamilyCenterFeatureRowDefault from "FamilyCenterFeatureRow" /* 17452 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6928 */;
+import useUserLinks from "useUserLinks" /* 9042 */;
+import FamilyCenterDataConfirmationDefault from "FamilyCenterDataConfirmation" /* 12387 */;
+import FamilyCenterParentalConsentNoticeDefault from "FamilyCenterParentalConsentNotice" /* 16097 */;
+import FamilyCenterActivityBannerDefault from "FamilyCenterActivityBanner" /* 16099 */;
+import FamilyCenterFeatureRowDefault from "FamilyCenterFeatureRow" /* 16109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5310 */;
+import createStyles_mod from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -56,7 +56,7 @@ export default function FamilyCenterActivityPage() {
     items1[2] = hasOwnProperty(_false, obj5);
     tmp3Result = tmp5(metroRequire, obj4);
   } else {
-    tmp3Result = tmp3(tmp7(17456), {});
+    tmp3Result = tmp3(tmp7(16113), {});
   }
   items[1] = tmp3Result;
   obj6 = { bottom: true, children: metroImportDefault(_false, obj3) };

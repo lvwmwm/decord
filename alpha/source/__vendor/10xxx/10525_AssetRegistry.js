@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "36a084fbace40e0af86aab037df7e8b7", name: "PlaystationNeutralIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/stream_feedback/dark-theme-desaturated", width: 64, height: 64, scales: [2, 3], hash: "1d768d013d08088f2871c4fa8e2d9604", name: "feedback-modal-neutral-desaturated", type: "png" });

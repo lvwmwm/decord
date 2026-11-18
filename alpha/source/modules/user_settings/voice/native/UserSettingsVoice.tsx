@@ -1,27 +1,27 @@
-// Module ID: 11640
-// Function ID: 11641
+// Module ID: 10922
+// Function ID: 10923
 // Name: UserSettingsVoice
-// Dependencies: [19, 17, 11641, 11642, 21, 5310, 7756, 11643, 11644, 6335, 11646, 11657, 5923, 1113, 11661, 11670, 11672, 11680, 7425, 2]
+// Dependencies: [19, 17, 10923, 10924, 21, 4823, 7259, 10925, 10926, 5837, 10928, 10939, 5414, 1113, 10943, 10952, 10954, 10962, 6928, 2]
 // Exports: UserSettingsTableRowGroup, default
 
-// Module 11640 (UserSettingsVoice)
+// Module 10922 (UserSettingsVoice)
 import react_native from "react-native" /* 17 */;
 import intl3 from "intl" /* 1113 */;
-import Stack_Stack from "Stack/Stack" /* 6335 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7425 */;
-import TableRowGroup2 from "TableRowGroup" /* 7756 */;
-import MobileVoiceOverlayStore from "MobileVoiceOverlayStore" /* 11641 */;
-import UserSettingsVoiceConstants from "UserSettingsVoiceConstants" /* 11642 */;
-import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 11643 */;
-import useIsVideoBackgroundEnabledDefault from "useIsVideoBackgroundEnabled" /* 11644 */;
-import UserSettingsVoiceInputOptionsDefault from "UserSettingsVoiceInputOptions" /* 11646 */;
-import UserSettingsSoundboardVolumeDefault from "UserSettingsSoundboardVolume" /* 11661 */;
-import UserSettingsVoiceOverlayDefault from "UserSettingsVoiceOverlay" /* 11670 */;
-import UserSettingsVoiceProcessingDefault from "UserSettingsVoiceProcessing" /* 11672 */;
-import VideoBackgroundOptionsRadioGroupDefault from "VideoBackgroundOptionsRadioGroup" /* 11680 */;
+import Stack_Stack from "Stack/Stack" /* 5837 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6928 */;
+import TableRowGroup2 from "TableRowGroup" /* 7259 */;
+import MobileVoiceOverlayStore from "MobileVoiceOverlayStore" /* 10923 */;
+import UserSettingsVoiceConstants from "UserSettingsVoiceConstants" /* 10924 */;
+import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 10925 */;
+import useIsVideoBackgroundEnabledDefault from "useIsVideoBackgroundEnabled" /* 10926 */;
+import UserSettingsVoiceInputOptionsDefault from "UserSettingsVoiceInputOptions" /* 10928 */;
+import UserSettingsSoundboardVolumeDefault from "UserSettingsSoundboardVolume" /* 10943 */;
+import UserSettingsVoiceOverlayDefault from "UserSettingsVoiceOverlay" /* 10952 */;
+import UserSettingsVoiceProcessingDefault from "UserSettingsVoiceProcessing" /* 10954 */;
+import VideoBackgroundOptionsRadioGroupDefault from "VideoBackgroundOptionsRadioGroup" /* 10962 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -50,11 +50,11 @@ export default function UserSettingsVoice() {
   const tmp6 = View;
   tmp7 = metroImportDefault;
   if (nonContextualStreamOutputPresent) {
-    nonContextualStreamOutputPresent = tmp5(tmp2(11657), {});
+    nonContextualStreamOutputPresent = tmp5(tmp2(10939), {});
   }
   items[1] = nonContextualStreamOutputPresent;
   const obj3 = { style: tmp.tableRow, variant: "body-sm/medium", children: intl.format(intl3.t["V+B3FH"], obj4) };
-  const Text = tmp8(5923).Text;
+  const Text = tmp8(5414).Text;
   intl = tmp8(1113).intl;
   obj4 = { guideURL };
   items[2] = metroRequire(Text, obj3);

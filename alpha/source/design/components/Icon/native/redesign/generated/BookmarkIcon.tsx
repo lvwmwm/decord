@@ -1,14 +1,14 @@
-// Module ID: 12370
-// Function ID: 12371
+// Module ID: 11652
+// Function ID: 11653
 // Name: BookmarkIcon
-// Dependencies: [19, 21, 575, 6013, 12371, 2]
+// Dependencies: [19, 21, 575, 5509, 11653, 2]
 // Exports: BookmarkIcon
 
-// Module 12370 (BookmarkIcon)
+// Module 11652 (BookmarkIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6013 */;
-import AssetRegistry from "AssetRegistry" /* 12371 */;
+import BaseIconImage2 from "BaseIconImage" /* 5509 */;
+import AssetRegistry from "AssetRegistry" /* 11653 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

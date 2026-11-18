@@ -1,14 +1,14 @@
-// Module ID: 12316
-// Function ID: 12317
+// Module ID: 11598
+// Function ID: 11599
 // Name: CameraIcon
-// Dependencies: [19, 21, 575, 6013, 12317, 2]
+// Dependencies: [19, 21, 575, 5509, 11599, 2]
 // Exports: CameraIcon
 
-// Module 12316 (CameraIcon)
+// Module 11598 (CameraIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6013 */;
-import AssetRegistry from "AssetRegistry" /* 12317 */;
+import BaseIconImage2 from "BaseIconImage" /* 5509 */;
+import AssetRegistry from "AssetRegistry" /* 11599 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

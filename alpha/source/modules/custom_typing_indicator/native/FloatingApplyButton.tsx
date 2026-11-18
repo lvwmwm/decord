@@ -1,17 +1,17 @@
-// Module ID: 18072
-// Function ID: 18073
+// Module ID: 16874
+// Function ID: 16875
 // Name: FloatingApplyButton
-// Dependencies: [19, 5311, 1626, 21, 504, 1630, 1655, 575, 5933, 5548, 5930, 2]
+// Dependencies: [19, 4824, 1626, 21, 504, 1630, 1655, 575, 5424, 5039, 5421, 2]
 // Exports: default
 
-// Module 18072 (FloatingApplyButton)
+// Module 16874 (FloatingApplyButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1626 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import HapticUtils from "HapticUtils" /* 5548 */;
+import HapticUtils from "HapticUtils" /* 5039 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5311 */;
+import AccessibilityStore from "AccessibilityStore" /* 4824 */;
 import size from "module_2" /* 2 */;
 
 let closure_5 = MediaKeyboardConstants.MEDIA_PICKER_SEND_BUTTON_SPRING;
@@ -64,7 +64,7 @@ export default function FloatingApplyButton(renderButton) {
   onPress(1655);
   items3[2] = nativeDefault;
   items3[3] = stateFromStores;
-  items3[4] = onPress(5933).withSpring;
+  items3[4] = onPress(5424).withSpring;
   items3[5] = closure_5;
   c0 = undefined;
   let c1;
@@ -126,7 +126,7 @@ export default function FloatingApplyButton(renderButton) {
   }
   if (renderButtonResult == null) {
     const obj6 = { variant: "primary", size: "lg", disabled, onPress: callback, text, loading };
-    renderButtonResult = tmp17(tmp(5930).Button, obj6);
+    renderButtonResult = tmp17(tmp(5421).Button, obj6);
   }
   return <View style={animatedStyle}>{null}</View>;
 };

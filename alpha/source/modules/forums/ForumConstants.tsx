@@ -1,9 +1,9 @@
-// Module ID: 9007
-// Function ID: 9008
+// Module ID: 8418
+// Function ID: 8419
 // Name: ForumConstants
 // Dependencies: [2]
 
-// Module 9007 (ForumConstants)
+// Module 8418 (ForumConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/forums/ForumConstants.tsx");

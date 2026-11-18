@@ -1,10 +1,10 @@
-// Module ID: 12792
-// Function ID: 12793
+// Module ID: 12086
+// Function ID: 12087
 // Name: usePollMessageContextItemTypes
 // Dependencies: [502, 504, 2]
 // Exports: default
 
-// Module 12792 (usePollMessageContextItemTypes)
+// Module 12086 (usePollMessageContextItemTypes)
 import get_initialized from "get initialized" /* 504 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;

@@ -1,13 +1,13 @@
-// Module ID: 5989
-// Function ID: 5990
+// Module ID: 5485
+// Function ID: 5486
 // Name: RegionalFeatureConfigUtils
-// Dependencies: [5990, 504, 5996, 2]
+// Dependencies: [5486, 504, 5492, 2]
 // Exports: hasAgeGatedFeatures, hasTeenDefaults, isFeatureAgeGated, isSettingTeenByDefault, isTidaMediaTakedownRegion, shouldCollectAppStoreSignal, useHasAgeGatedFeatures, useHasTeenDefaults, useIsFeatureAgeGated, useIsSettingTeenByDefault, useIsTidaMediaTakedownRegion
 
-// Module 5989 (RegionalFeatureConfigUtils)
+// Module 5485 (RegionalFeatureConfigUtils)
 import get_initialized from "get initialized" /* 504 */;
-import MediaTakedownRegulation from "MediaTakedownRegulation" /* 5996 */;
-import RegionalFeatureConfigStore from "RegionalFeatureConfigStore" /* 5990 */;
+import MediaTakedownRegulation from "MediaTakedownRegulation" /* 5492 */;
+import RegionalFeatureConfigStore from "RegionalFeatureConfigStore" /* 5486 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

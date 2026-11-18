@@ -1,16 +1,16 @@
-// Module ID: 12643
-// Function ID: 12644
+// Module ID: 11928
+// Function ID: 11929
 // Name: useFetchSocialLayerStorefrontEmbedWishlist
-// Dependencies: [19, 7362, 9475, 502, 1388, 504, 8494, 9482, 9481, 2]
+// Dependencies: [19, 6867, 8889, 502, 1388, 504, 7985, 8896, 8895, 2]
 // Exports: useFetchSocialLayerStorefrontEmbedWishlist
 
-// Module 12643 (useFetchSocialLayerStorefrontEmbedWishlist)
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8494 */;
-import WishlistFetchSource from "WishlistFetchSource" /* 9481 */;
-import WishlistActionCreatorsDefault from "WishlistActionCreators" /* 9482 */;
+// Module 11928 (useFetchSocialLayerStorefrontEmbedWishlist)
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7985 */;
+import WishlistFetchSource from "WishlistFetchSource" /* 8895 */;
+import WishlistActionCreatorsDefault from "WishlistActionCreators" /* 8896 */;
 import react from "react" /* 19 */;
-import UserProfileStore from "UserProfileStore" /* 7362 */;
-import WishlistStore from "WishlistStore" /* 9475 */;
+import UserProfileStore from "UserProfileStore" /* 6867 */;
+import WishlistStore from "WishlistStore" /* 8889 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
@@ -18,7 +18,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require;
 
-let closure_8 = { user: "a", profile: "Path", wishlistId: "content", wishlist: "conjure.town", updatedAt: "conjure.city", storedUpdatedAt: "messageId", fetching: "(function CustomizeCommunityTsx1(){let[isNew,brandColor,withSequence,withTiming,Easing,withDelay]=this.__closure;const rawBorderColor=isNew?brandColor+\"FF\":brandColor+\"00\";const borderColor=withSequence(withTiming(rawBorderColor,{duration:1,easing:Easing.in(Easing.ease)}),withDelay(500,withTiming(brandColor+\"00\",{duration:300,easing:Easing.out(Easing.ease)})));return{borderColor:borderColor};})", error: "(function CustomizeCommunityTsx2(){let[isNew,brandColor,withSequence,withTiming,Easing,withDelay]=this.__closure;const rawBorderColor=isNew?brandColor+\"FF\":brandColor+\"00\";const borderColor=withSequence(withTiming(rawBorderColor,{duration:1,easing:Easing.in(Easing.ease)}),withDelay(500,withTiming(brandColor+\"00\",{duration:300,easing:Easing.out(Easing.ease)})));return{borderColor:borderColor};})" };
+let closure_8 = { user: "a", profile: "Path", wishlistId: "container", wishlist: "(function EmojiSuggestionChatButtonTsx3(){let[emojiAnimationProgress]=this.__closure;return{opacity:1-emojiAnimationProgress.get()};})", updatedAt: "profile_widget", storedUpdatedAt: null, fetching: "messageId", error: "(function CustomizeCommunityTsx1(){let[isNew,brandColor,withSequence,withTiming,Easing,withDelay]=this.__closure;const rawBorderColor=isNew?brandColor+\"FF\":brandColor+\"00\";const borderColor=withSequence(withTiming(rawBorderColor,{duration:1,easing:Easing.in(Easing.ease)}),withDelay(500,withTiming(brandColor+\"00\",{duration:300,easing:Easing.out(Easing.ease)})));return{borderColor:borderColor};})" };
 const result = size.fileFinishedImporting("modules/slayer_storefront/native/useFetchSocialLayerStorefrontEmbedWishlist.tsx");
 
 export function useFetchSocialLayerStorefrontEmbedWishlist(arg0) {

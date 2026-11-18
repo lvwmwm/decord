@@ -1,26 +1,26 @@
-// Module ID: 13706
-// Function ID: 13707
+// Module ID: 13013
+// Function ID: 13014
 // Name: PollAnswerInput
-// Dependencies: [32, 19, 17, 5159, 8736, 9022, 1391, 21, 5310, 575, 13707, 1113, 8872, 7438, 1187, 9555, 11131, 7649, 5546, 13708, 2121, 10111, 8117, 6035, 13711, 2]
+// Dependencies: [32, 19, 17, 4672, 8227, 8433, 1391, 21, 4823, 575, 13014, 1113, 8368, 6941, 1187, 8969, 10413, 7152, 5037, 13015, 2121, 9392, 7620, 5531, 13018, 2]
 // Exports: default
 
-// Module 13706 (PollAnswerInput)
+// Module 13013 (PollAnswerInput)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import EmojiConstants from "EmojiConstants" /* 1391 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5546 */;
-import DraftStore from "DraftStore" /* 8736 */;
-import PollsUtils from "PollsUtils" /* 8872 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9555 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 11131 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
+import DraftStore from "DraftStore" /* 8227 */;
+import PollsUtils from "PollsUtils" /* 8368 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 8969 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 10413 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 5159 */;
-import PollsConstants from "PollsConstants" /* 9022 */;
+import ChannelStore from "ChannelStore" /* 4672 */;
+import PollsConstants from "PollsConstants" /* 8433 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5310 */;
+import createStyles from "createStyles" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let maxLength;
@@ -211,7 +211,7 @@ export default function PollAnswerInput(answer) {
     openImageInputActionSheet() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { channelId, index, answer, onSaveAltText: handleSaveAltText, onRemoveAnswerImage, openExpressionPicker };
-      obj.openLazy(asyncRequire(13708, dependencyMap.paths), unpackModuleId, obj2);
+      obj.openLazy(asyncRequire(13015, dependencyMap.paths), unpackModuleId, obj2);
     },
     iconSrc: index(channelId[21]),
     containerStyle: tmp.defaultImageContainer,
@@ -238,14 +238,14 @@ export default function PollAnswerInput(answer) {
     },
     blurOnSubmit: false,
     style: tmp.pollAnswerTextInput,
-    selectionColor: "channel_id",
-    textContentType: "TOPICAL_NAV_TOPICS_UNIT_CLICKED",
+    selectionColor: "channelId",
+    textContentType: false,
     accessibilityLabel: intl2.formatToPlainString(answer(channelId[11]).t["3+V8G9"], obj6),
     accessibilityHint: formatToPlainStringResult,
     maxLength,
-    returnKeyType: "asset",
-    required: "isArrayBuffer",
-    autoCorrect: "hand_with_index_and_middle_finger_crossed",
+    returnKeyType: false,
+    required: false,
+    autoCorrect: false,
     "aria-invalid": error
   };
   const FormInput = tmp9(tmp10[22]).FormInput;

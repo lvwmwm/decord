@@ -1,23 +1,23 @@
-// Module ID: 18595
-// Function ID: 18596
+// Module ID: 17408
+// Function ID: 17409
 // Name: PinotMemberSetting
-// Dependencies: [17, 1072, 9213, 21, 5310, 575, 12612, 1113, 3387, 8180, 12535, 2188, 5923, 8170, 2]
+// Dependencies: [17, 1072, 8624, 21, 4823, 575, 11897, 1113, 3407, 7683, 11818, 2188, 5414, 7673, 2]
 // Exports: usePinotDataPrivacySections
 
-// Module 18595 (PinotMemberSetting)
+// Module 17408 (PinotMemberSetting)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
-import _modDef3387 from "module_3387" /* 3387 */;
-import Text_Text from "Text/Text" /* 5923 */;
-import PinotExperiment from "PinotExperiment" /* 8180 */;
-import SettingsConstants from "SettingsConstants" /* 9213 */;
-import PinotMemberSettingState from "PinotMemberSettingState" /* 12535 */;
+import _modDef3407 from "module_3407" /* 3407 */;
+import Text_Text from "Text/Text" /* 5414 */;
+import PinotExperiment from "PinotExperiment" /* 7683 */;
+import SettingsConstants from "SettingsConstants" /* 8624 */;
+import PinotMemberSettingState from "PinotMemberSettingState" /* 11818 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5310 */;
-import SettingBuilders from "SettingBuilders" /* 12612 */;
+import createStyles from "createStyles" /* 4823 */;
+import SettingBuilders from "SettingBuilders" /* 11897 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -34,7 +34,7 @@ function PinotMemberSettingFooter() {
   const obj2 = HelpdeskUtilsDefault;
   const articleURL = obj2.getArticleURL(HelpdeskArticles.DISCOVERABLE_CONTENT_ON_THE_WEB);
   const obj3 = { style: tmp.footer, children: items };
-  const obj4 = { variant: "body-xs/normal", color: "text-muted", children: intl.format(_modDef3387.V0EPTo, { learnMoreURL: articleURL }) };
+  const obj4 = { variant: "body-xs/normal", color: "text-muted", children: intl.format(_modDef3407.V0EPTo, { learnMoreURL: articleURL }) };
   const Text = Text_Text.Text;
   intl = intl3.intl;
   items = [metroRequire(Text, obj4), ];
@@ -43,8 +43,8 @@ function PinotMemberSettingFooter() {
   const tmp7 = View;
   const tmp8 = metroRequire;
   if (locked) {
-    const obj5 = { type: "info", message: intl2.format(_modDef3387.Z9bKIJ, obj6), role: "none" };
-    const InlineNotice = tmp2(8170).InlineNotice;
+    const obj5 = { type: "info", message: intl2.format(_modDef3407.Z9bKIJ, obj6), role: "none" };
+    const InlineNotice = tmp2(7673).InlineNotice;
     intl2 = tmp2(1113).intl;
     obj6 = { learnMoreURL: articleURL };
     tmp8Result = tmp8(InlineNotice, obj5);
@@ -63,7 +63,7 @@ let closure_9 = createStyles.createStyles(obj);
 let obj3 = {
   useTitle() {
     const intl = intl3.intl;
-    return intl.string(_modDef3387.M33rl6);
+    return intl.string(_modDef3407.M33rl6);
   },
   parent: MobileUserSettings.DATA_AND_PRIVACY,
   usePredicate() {

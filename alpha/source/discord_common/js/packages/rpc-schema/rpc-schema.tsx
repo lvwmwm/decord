@@ -1,12 +1,12 @@
-// Module ID: 16957
-// Function ID: 16958
+// Module ID: 15607
+// Function ID: 15608
 // Name: CONTEXT_MENU_ICON_NAMES
-// Dependencies: [16958, 16960, 2, 16961]
+// Dependencies: [15608, 15610, 2, 15611]
 // Exports: createRPCCommand, createRPCEvent
 
-// Module 16957 (CONTEXT_MENU_ICON_NAMES)
-import discord_common_helpers from "discord_common/helpers" /* 16960 */;
-import contextMenuIcons from "contextMenuIcons" /* 16961 */;
+// Module 15607 (CONTEXT_MENU_ICON_NAMES)
+import discord_common_helpers from "discord_common/helpers" /* 15610 */;
+import contextMenuIcons from "contextMenuIcons" /* 15611 */;
 import size from "module_2" /* 2 */;
 
 let closure_1, dependencyMap;
@@ -18,7 +18,7 @@ export function createRPCCommand(AUTHENTICATE, scope) {
   let request;
   dependencyMap = undefined;
   let obj = { scope: scope.scope, validateAccess: scope.validateAccess, handler: scope.handler };
-  const tmp = request(16958).RPCCommandSchemas[AUTHENTICATE];
+  const tmp = request(15608).RPCCommandSchemas[AUTHENTICATE];
   request = undefined;
   if (tmp != null) {
     request = tmp.request;
@@ -39,7 +39,7 @@ export function createRPCEvent(ACTIVITY_INSTANCE_PARTICIPANTS_UPDATE, scope) {
   let subscribeArgs;
   dependencyMap = undefined;
   let obj = { scope: scope.scope, handler: scope.handler };
-  const tmp = subscribeArgs(16958).RPCEventSchemas[ACTIVITY_INSTANCE_PARTICIPANTS_UPDATE];
+  const tmp = subscribeArgs(15608).RPCEventSchemas[ACTIVITY_INSTANCE_PARTICIPANTS_UPDATE];
   subscribeArgs = undefined;
   if (tmp != null) {
     subscribeArgs = tmp.subscribeArgs;

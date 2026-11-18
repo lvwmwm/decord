@@ -1,14 +1,14 @@
-// Module ID: 19106
-// Function ID: 19107
+// Module ID: 17917
+// Function ID: 17918
 // Name: GuildsBarDnDStore
-// Dependencies: [6954, 1258, 1655, 1263, 1242, 5225, 2]
+// Dependencies: [6458, 1258, 1655, 1263, 1242, 4738, 2]
 // Exports: useFolderBGHeightOffset, useItemDragState
 
-// Module 19106 (GuildsBarDnDStore)
+// Module 17917 (GuildsBarDnDStore)
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import react_native from "react-native" /* 1263 */;
-import _slicedToArray from "_slicedToArray" /* 5225 */;
-import SortedGuildStore from "SortedGuildStore" /* 6954 */;
+import _slicedToArray from "_slicedToArray" /* 4738 */;
+import SortedGuildStore from "SortedGuildStore" /* 6458 */;
 import module_1258 from "module_1258" /* 1258 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ const withEqualityFn = module_1258.createWithEqualityFn((arg0, arg1) => {
   let closure_1 = arg1;
   obj = {
     dragSpecs: "Boolean",
-    overSpecs: "ip",
+    overSpecs: "description",
     dropSpecs: "isArray",
     dragRegion: obj2.makeMutable({ min: 0, max: 0 }),
     gestureState: obj3.makeMutable(obj),
@@ -108,7 +108,7 @@ const withEqualityFn = module_1258.createWithEqualityFn((arg0, arg1) => {
       obj.addBreadcrumb(obj2);
       if (null != dropSpecs) {
         const obj4 = react_native;
-        obj4.batchUpdates(() => closure_1_0({ dropSpecs: "r" }));
+        obj4.batchUpdates(() => closure_1_0({ dropSpecs: "find" }));
         const _clearTimeout = clearTimeout;
         clearTimeout(c5);
         if (null == dragSpecs) {
@@ -149,7 +149,7 @@ export function useItemDragState(guildId, flag) {
     ({ dragSpecs, overSpecs, dropSpecs, dragDropInProgress } = arg0);
     if (null == dragSpecs) {
       if (null == dropSpecs) {
-        return { isDragTarget: false, dragState: "ip", overState: "isArray", itemSize: null, dragDropInProgress };
+        return { isDragTarget: false, dragState: "description", overState: "isArray", itemSize: null, dragDropInProgress };
       }
     }
     let tmp2 = !closure_1;

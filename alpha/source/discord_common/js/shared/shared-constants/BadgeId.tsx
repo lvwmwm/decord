@@ -1,9 +1,9 @@
-// Module ID: 8491
-// Function ID: 8492
+// Module ID: 7982
+// Function ID: 7983
 // Name: BadgeId
 // Dependencies: [2]
 
-// Module 8491 (BadgeId)
+// Module 7982 (BadgeId)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/BadgeId.tsx");

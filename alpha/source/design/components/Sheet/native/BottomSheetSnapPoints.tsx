@@ -1,10 +1,10 @@
-// Module ID: 5563
-// Function ID: 5564
+// Module ID: 5054
+// Function ID: 5055
 // Name: BottomSheetSnapPoints
 // Dependencies: [2]
 // Exports: getContentSizeSnapPoints, getRotationResyncIndex, resolveDroppedStartHeight
 
-// Module 5563 (BottomSheetSnapPoints)
+// Module 5054 (BottomSheetSnapPoints)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("design/components/Sheet/native/BottomSheetSnapPoints.tsx");

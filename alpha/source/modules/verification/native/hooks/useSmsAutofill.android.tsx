@@ -1,10 +1,10 @@
-// Module ID: 7863
-// Function ID: 7864
+// Module ID: 7366
+// Function ID: 7367
 // Name: useSmsAutofill
 // Dependencies: [19, 17, 2]
 // Exports: default
 
-// Module 7863 (useSmsAutofill)
+// Module 7366 (useSmsAutofill)
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;

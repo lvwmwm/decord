@@ -6,7 +6,7 @@
 // Module 724 (SentrySpan)
 import TRACE_FLAG_NONE from "TRACE_FLAG_NONE" /* 683 */;
 import _mod684 from "module_684" /* 684 */;
-import _mod687 from "module_687" /* 687 */;
+import DEBUG_BUILD from "DEBUG_BUILD" /* 687 */;
 import generateSpanId from "generateSpanId" /* 693 */;
 import browserPerformanceTimeOrigin from "browserPerformanceTimeOrigin" /* 702 */;
 import GEN_AI_CONVERSATION_ID_ATTRIBUTE from "GEN_AI_CONVERSATION_ID_ATTRIBUTE" /* 703 */;
@@ -24,7 +24,7 @@ function isFullFinishedSpan(start_timestamp) {
 }
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 class SentrySpan {
-  constructor() {
+  constructor(arg0) {
     let obj = arg0;
     if (arg0 === undefined) {
       obj = {};
@@ -146,9 +146,9 @@ let items = [
   },
   {
     key: "updateStartTime",
-    value: function updateStartTime(arg0) {
+    value: function updateStartTime(sum) {
       const obj = TRACE_FLAG_NONE;
-      this._startTime = obj.spanTimeInputToSeconds(arg0);
+      this._startTime = obj.spanTimeInputToSeconds(sum);
     }
   },
   {
@@ -168,11 +168,11 @@ let items = [
   },
   {
     key: "end",
-    value: function end(arg0) {
+    value: function end(startTime) {
       const self = this;
       if (!this._endTime) {
         const obj = TRACE_FLAG_NONE;
-        self._endTime = obj.spanTimeInputToSeconds(arg0);
+        self._endTime = obj.spanTimeInputToSeconds(startTime);
         const obj2 = logSpanEnd;
         obj2.logSpanEnd(self);
         self._onSpanEnded();
@@ -216,23 +216,23 @@ let items = [
   },
   {
     key: "addEvent",
-    value: function addEvent(name, num, arg2) {
+    value: function addEvent(name, startTime, arg2) {
       let obj;
       let tmpResult2;
-      if (_mod687.DEBUG_BUILD) {
+      if (DEBUG_BUILD.DEBUG_BUILD) {
         const debug = tmp(688).debug;
         debug.log("[Tracing] Adding an event to span:", name);
       }
-      let isArray = num && typeof num === "number";
+      let isArray = startTime && typeof startTime === "number";
       if (!isArray) {
         const _Date = Date;
-        isArray = num instanceof Date;
+        isArray = startTime instanceof Date;
       }
       if (!isArray) {
         const _Array = Array;
-        isArray = Array.isArray(num);
+        isArray = Array.isArray(startTime);
       }
-      let tmp7 = num;
+      let tmp7 = startTime;
       if (!isArray) {
         let timestampInSecondsResult = arg2;
         if (!timestampInSecondsResult) {
@@ -241,19 +241,19 @@ let items = [
         }
         tmp7 = timestampInSecondsResult;
       }
-      let isArray1 = num && typeof num === "number";
+      let isArray1 = startTime && typeof startTime === "number";
       if (!isArray1) {
         const _Date2 = Date;
-        isArray1 = num instanceof Date;
+        isArray1 = startTime instanceof Date;
       }
       if (!isArray1) {
         const _Array2 = Array;
-        isArray1 = Array.isArray(num);
+        isArray1 = Array.isArray(startTime);
       }
       if (isArray1) {
         obj = {};
       } else {
-        obj = num || {};
+        obj = startTime || {};
       }
       const obj2 = { name, time: tmpResult2.spanTimeInputToSeconds(tmp7), attributes: obj };
       const _events = this._events;
@@ -294,7 +294,7 @@ let items = [
               client1.recordDroppedEvent("before_send", "span");
             }
           } else {
-            if (_mod687.DEBUG_BUILD) {
+            if (DEBUG_BUILD.DEBUG_BUILD) {
               const debug = tmp(688).debug;
               debug.log("[Tracing] Discarding standalone span because its trace was not chosen to be sampled.");
             }

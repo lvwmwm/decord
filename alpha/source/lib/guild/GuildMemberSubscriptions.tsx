@@ -1,14 +1,14 @@
-// Module ID: 16028
-// Function ID: 16029
+// Module ID: 14695
+// Function ID: 14696
 // Name: GuildMemberSubscriptions
-// Dependencies: [1089, 5154, 11, 3, 12, 2]
+// Dependencies: [1089, 4667, 11, 3, 12, 2]
 
-// Module 16028 (GuildMemberSubscriptions)
+// Module 14695 (GuildMemberSubscriptions)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import Timers from "Timers" /* 5154 */;
+import Timers from "Timers" /* 4667 */;
 import size from "module_2" /* 2 */;
 
 const MINUTE = DurationsDefault.Millis.MINUTE;

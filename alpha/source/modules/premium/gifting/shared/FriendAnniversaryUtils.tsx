@@ -1,11 +1,11 @@
-// Module ID: 9339
-// Function ID: 9340
+// Module ID: 8750
+// Function ID: 8751
 // Name: FriendAnniversaryUtils
-// Dependencies: [4735, 2]
+// Dependencies: [2169, 2]
 // Exports: categorizeFriendAnniversariesByAffinity, isFriendAnniversary, pruneTimestampMap, yearsSince
 
-// Module 9339 (FriendAnniversaryUtils)
-import _mod4735 from "module_4735" /* 4735 */;
+// Module 8750 (FriendAnniversaryUtils)
+import _modDef2169 from "module_2169" /* 2169 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/gifting/shared/FriendAnniversaryUtils.tsx");
@@ -17,15 +17,18 @@ export function isFriendAnniversary(date) {
   const fullYear = date.getFullYear();
   const obj2 = items[Symbol.iterator]();
   while (obj2 !== undefined) {
-    let tmp3 = require;
-    let obj3 = _mod4735;
-    let setYearResult = obj3.setYear(date, fullYear + tmp2);
-    let tmp6 = setYearResult;
-    let obj4 = _mod4735;
-    if (!obj4.isSameDay(setYearResult, date)) {
+    let _Date = Date;
+    let self = this;
+    let self2 = this;
+    let date1 = new Date(date);
+    let tmp5 = date1;
+    let setFullYearResult = date1.setFullYear(fullYear + tmp2);
+    let tmp7 = importDefault;
+    let obj4 = _modDef2169(date1);
+    if (!obj4.isSame(date, "day")) {
       let _Math = Math;
-      let tmp3Result = tmp3(4735);
-      if (abs(tmp3Result.differenceInDays(date, tmp6)) <= 7) {
+      let obj5 = tmp7(2169)(date);
+      if (abs(obj5.diff(tmp5, "days")) <= 7) {
         obj2.return();
         let flag = true;
         return true;
@@ -36,10 +39,8 @@ export function isFriendAnniversary(date) {
   return false;
 }
 export function yearsSince(friendsSince) {
-  const differenceInMonths = _mod4735.differenceInMonths;
-  _mod4735;
-  const date = new Date();
-  return round(differenceInMonths(date, friendsSince) / 12);
+  const obj = _modDef2169();
+  return round(obj.diff(friendsSince, "months") / 12);
 }
 export function categorizeFriendAnniversariesByAffinity(arr, fn, flag) {
   const highestAffinity = new Set();

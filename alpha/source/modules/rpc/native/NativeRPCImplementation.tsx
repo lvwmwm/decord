@@ -1,32 +1,32 @@
-// Module ID: 16962
-// Function ID: 16963
+// Module ID: 15612
+// Function ID: 15613
 // Name: NativeRPCImplementation
-// Dependencies: [5311, 5334, 1238, 1192, 1231, 5367, 16963, 17015, 17016, 17017, 17019, 17020, 17021, 17022, 17030, 17031, 17033, 17035, 17036, 17037, 17038, 7308, 11473, 2]
+// Dependencies: [4824, 4847, 1238, 1192, 1231, 4880, 15613, 15665, 15666, 15667, 15669, 15670, 15671, 15672, 15684, 15685, 15687, 15689, 15690, 15691, 15692, 6813, 10755, 2]
 
-// Module 16962 (NativeRPCImplementation)
-import NativeRPCServerDefault from "NativeRPCServer" /* 7308 */;
-import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 11473 */;
-import crossPlatformRPCCommands from "crossPlatformRPCCommands" /* 16963 */;
-import commands_activitiesDefault from "commands/activities" /* 17015 */;
-import audioSessionDefault from "audioSession" /* 17016 */;
-import authDefault from "auth" /* 17017 */;
-import screenCaptureDefault from "screenCapture" /* 17019 */;
-import setRunsInBackgroundDefault from "setRunsInBackground" /* 17020 */;
-import frameRelaunchDeepLinkDefault from "frameRelaunchDeepLink" /* 17021 */;
-import pictureInPictureInteractiveDefault from "pictureInPictureInteractive" /* 17022 */;
-import voiceSettingsDefault from "voiceSettings" /* 17030 */;
-import unsupportedDefault from "unsupported" /* 17031 */;
-import crossPlatformRPCEventHandlersDefault from "crossPlatformRPCEventHandlers" /* 17033 */;
-import getNativeDiscordCustomThemeDefault from "getNativeDiscordCustomTheme" /* 17036 */;
-import screenCaptureEvents from "screenCaptureEvents" /* 17037 */;
-import voiceSettingsEventHandlers from "voiceSettingsEventHandlers" /* 17038 */;
-import AccessibilityStore from "AccessibilityStore" /* 5311 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5334 */;
+// Module 15612 (NativeRPCImplementation)
+import NativeRPCServerDefault from "NativeRPCServer" /* 6813 */;
+import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 10755 */;
+import crossPlatformRPCCommands from "crossPlatformRPCCommands" /* 15613 */;
+import commands_activitiesDefault from "commands/activities" /* 15665 */;
+import audioSessionDefault from "audioSession" /* 15666 */;
+import authDefault from "auth" /* 15667 */;
+import screenCaptureDefault from "screenCapture" /* 15669 */;
+import setRunsInBackgroundDefault from "setRunsInBackground" /* 15670 */;
+import frameRelaunchDeepLinkDefault from "frameRelaunchDeepLink" /* 15671 */;
+import pictureInPictureInteractiveDefault from "pictureInPictureInteractive" /* 15672 */;
+import voiceSettingsDefault from "voiceSettings" /* 15684 */;
+import unsupportedDefault from "unsupported" /* 15685 */;
+import crossPlatformRPCEventHandlersDefault from "crossPlatformRPCEventHandlers" /* 15687 */;
+import getNativeDiscordCustomThemeDefault from "getNativeDiscordCustomTheme" /* 15690 */;
+import screenCaptureEvents from "screenCaptureEvents" /* 15691 */;
+import voiceSettingsEventHandlers from "voiceSettingsEventHandlers" /* 15692 */;
+import AccessibilityStore from "AccessibilityStore" /* 4824 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4847 */;
 import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1238 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import StreamerModeStore from "StreamerModeStore" /* 5367 */;
-import discordEnvironmentEvents from "discordEnvironmentEvents" /* 17035 */;
+import StreamerModeStore from "StreamerModeStore" /* 4880 */;
+import discordEnvironmentEvents from "discordEnvironmentEvents" /* 15689 */;
 import size from "module_2" /* 2 */;
 
 let items;

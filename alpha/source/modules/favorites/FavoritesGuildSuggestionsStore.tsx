@@ -1,15 +1,15 @@
-// Module ID: 18962
-// Function ID: 18963
+// Module ID: 17772
+// Function ID: 17773
 // Name: FavoritesGuildSuggestionsStore
-// Dependencies: [32, 19, 5151, 1072, 5156, 560, 9572, 5143, 2]
+// Dependencies: [32, 19, 4664, 1072, 4669, 560, 8986, 4656, 2]
 // Exports: setFavoritesGuildSuggestions, useFavoritesGuildSuggestionCount, useFavoritesGuildSuggestions, useFavoritesGuildSuggestionsDismissal, useFavoritesGuildSuggestionsVisibility, useHasFavoritesGuildSuggestions
 
-// Module 18962 (FavoritesGuildSuggestionsStore)
+// Module 17772 (FavoritesGuildSuggestionsStore)
 import Constants from "Constants" /* 1072 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5156 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4669 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 5151 */;
+import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 4664 */;
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
@@ -53,7 +53,7 @@ export function useFavoritesGuildSuggestionsVisibility() {
   _require = tmp7;
   const first = tmp5[0];
   const items2 = [tmp5[1]];
-  const FAVORITES_GUILD_SUGGESTIONS = tmp2(5143).DismissibleContent.FAVORITES_GUILD_SUGGESTIONS;
+  const FAVORITES_GUILD_SUGGESTIONS = tmp2(4656).DismissibleContent.FAVORITES_GUILD_SUGGESTIONS;
   const layoutEffect = react.useLayoutEffect(() => {
     let obj = {
       dismiss() {
