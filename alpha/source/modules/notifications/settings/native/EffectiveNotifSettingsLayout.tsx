@@ -1,20 +1,20 @@
-// Module ID: 17480
-// Function ID: 17481
+// Module ID: 17473
+// Function ID: 17474
 // Name: EffectiveNotifSettingsLayout
-// Dependencies: [19, 1231, 502, 14867, 21, 4823, 575, 17481, 5837, 7673, 1113, 3051, 14881, 504, 572, 15907, 7101, 2]
+// Dependencies: [19, 1231, 502, 14853, 21, 4792, 575, 17474, 5808, 7643, 1113, 3051, 14867, 504, 572, 15898, 7071, 2]
 // Exports: default
 
-// Module 17480 (EffectiveNotifSettingsLayout)
+// Module 17473 (EffectiveNotifSettingsLayout)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef3051 from "module_3051" /* 3051 */;
-import EffectiveNotifSettingsActionCreators from "EffectiveNotifSettingsActionCreators" /* 17481 */;
+import EffectiveNotifSettingsActionCreators from "EffectiveNotifSettingsActionCreators" /* 17474 */;
 import react from "react" /* 19 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 14867 */;
+import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 14853 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -51,9 +51,9 @@ function EffectiveSettingsHeader() {
   let tmp8 = null;
   if (unavailable) {
     let obj = { style: tmp.notice, children: closure_7(InlineNotice, obj2) };
-    const Stack = loading(5837).Stack;
+    const Stack = loading(5808).Stack;
     obj2 = { type: "warning", role: "status", message: intl.string(_modDef3051.Nu2TMI), action: obj3 };
-    InlineNotice = loading(7673).InlineNotice;
+    InlineNotice = loading(7643).InlineNotice;
     intl = loading(1113).intl;
     obj3 = { text: intl2.string(loading(1113).t["5911Lb"]), onPress: callback, loading };
     intl2 = loading(1113).intl;

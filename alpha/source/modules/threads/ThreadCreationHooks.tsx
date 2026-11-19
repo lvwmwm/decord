@@ -1,23 +1,23 @@
-// Module ID: 10411
-// Function ID: 10412
+// Module ID: 10389
+// Function ID: 10390
 // Name: ThreadCreationHooks
-// Dependencies: [32, 5, 19, 8530, 502, 4672, 8227, 5872, 8300, 1112, 1072, 4828, 6802, 8294, 7661, 1113, 10412, 11, 1285, 8426, 10413, 8296, 1406, 8354, 10415, 8373, 5560, 8162, 5768, 572, 4830, 1089, 8359, 10470, 2]
+// Dependencies: [32, 5, 19, 8499, 502, 4641, 8196, 5843, 8269, 1112, 1072, 4797, 6774, 8263, 7631, 1113, 10390, 11, 1285, 8395, 10391, 8265, 1406, 8323, 10393, 8342, 5529, 8131, 5739, 572, 4799, 1089, 8328, 10448, 2]
 // Exports: createThread, useCreateForumPostCommon, useCreateThreadCommon, usePrivateThreadMode
 
-// Module 10411 (ThreadCreationHooks)
+// Module 10389 (ThreadCreationHooks)
 import HTTPUtils from "HTTPUtils" /* 1285 */;
-import MessageConstants from "MessageConstants" /* 4828 */;
-import ThreadHooks from "ThreadHooks" /* 6802 */;
-import DraftStore from "DraftStore" /* 8227 */;
-import MessageParserDefault from "MessageParser" /* 8294 */;
-import SlowmodeStore from "SlowmodeStore" /* 8300 */;
+import MessageConstants from "MessageConstants" /* 4797 */;
+import ThreadHooks from "ThreadHooks" /* 6774 */;
+import DraftStore from "DraftStore" /* 8196 */;
+import MessageParserDefault from "MessageParser" /* 8263 */;
+import SlowmodeStore from "SlowmodeStore" /* 8269 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ForumActivePostStore from "ForumActivePostStore" /* 8530 */;
+import ForumActivePostStore from "ForumActivePostStore" /* 8499 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4672 */;
-import MessageStore from "MessageStore" /* 5872 */;
+import ChannelStore from "ChannelStore" /* 4641 */;
+import MessageStore from "MessageStore" /* 5843 */;
 import ThreadConstants from "ThreadConstants" /* 1112 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -103,7 +103,7 @@ function getDefaultThreadName(stateFromStores, parentMessageId) {
       str3 = "";
     }
     const str4 = unparse(str3, stateFromStores.id, true);
-    const tmp17Result = tmp17(7661);
+    const tmp17Result = tmp17(7631);
     const str6 = tmp17Result(str4.split("\n")[0], true);
     let str7 = str6.replace(/^[ #-]+/, "");
     const items = [];
@@ -174,7 +174,7 @@ let obj = function _createThread_() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -587,7 +587,7 @@ export function useCreateThreadCommon(parentChannel) {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -687,7 +687,7 @@ export function useCreateThreadCommon(parentChannel) {
             obj = parentMessageId(threadSettings[20]);
             obj.clearAll(user.id, closure_2_9.FirstThreadMessage);
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp41) {
           c7 = 3;
@@ -706,7 +706,7 @@ export function createThread(arg0, name, type, auto_archive_duration, _location)
   return createThread_(arg0, [], undefined, () => {
     let obj3;
     const HTTP = HTTPUtils.HTTP;
-    const request = { url: closure_17.CHANNEL_THREADS(id.id), body: obj, rejectWithError: obj3.rejectWithMigratedError() };
+    const request = { url: authStore4.CHANNEL_THREADS(id.id), body: obj, rejectWithError: obj3.rejectWithMigratedError() };
     const post = HTTP.post;
     obj = { name, type, auto_archive_duration, location: _location };
     obj3 = HTTPUtils;
@@ -772,7 +772,7 @@ export function useCreateForumPostCommon(parentChannel) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         let tmp90;

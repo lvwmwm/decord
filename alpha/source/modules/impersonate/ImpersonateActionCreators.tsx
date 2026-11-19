@@ -1,23 +1,23 @@
-// Module ID: 7204
-// Function ID: 7205
+// Module ID: 7174
+// Function ID: 7175
 // Name: ImpersonateActionCreators
-// Dependencies: [4672, 4753, 4735, 4729, 4755, 4726, 6460, 4728, 1072, 4679, 1256, 5560, 4734, 572, 1099, 2]
+// Dependencies: [4641, 4722, 4704, 4698, 4724, 4695, 6431, 4697, 1072, 4648, 1256, 5529, 4703, 572, 1099, 2]
 // Exports: startImpersonating, stopImpersonating, updateImpersonatedChannels, updateImpersonatedData, updateImpersonatedRoles
 
-// Module 7204 (ImpersonateActionCreators)
+// Module 7174 (ImpersonateActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import ChannelConstants from "ChannelConstants" /* 4679 */;
-import ImpersonateTypes from "ImpersonateTypes" /* 4734 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5560 */;
-import ChannelStore from "ChannelStore" /* 4672 */;
-import GuildChannelStore from "GuildChannelStore" /* 4753 */;
-import GuildMemberStore from "GuildMemberStore" /* 4735 */;
-import GuildRoleStore from "GuildRoleStore" /* 4729 */;
-import PermissionStore from "PermissionStore" /* 4755 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4726 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6460 */;
-import ImpersonateStore from "ImpersonateStore" /* 4728 */;
+import ChannelConstants from "ChannelConstants" /* 4648 */;
+import ImpersonateTypes from "ImpersonateTypes" /* 4703 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5529 */;
+import ChannelStore from "ChannelStore" /* 4641 */;
+import GuildChannelStore from "GuildChannelStore" /* 4722 */;
+import GuildMemberStore from "GuildMemberStore" /* 4704 */;
+import GuildRoleStore from "GuildRoleStore" /* 4698 */;
+import PermissionStore from "PermissionStore" /* 4724 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4695 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6431 */;
+import ImpersonateStore from "ImpersonateStore" /* 4697 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

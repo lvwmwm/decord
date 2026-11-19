@@ -1,22 +1,22 @@
-// Module ID: 11931
-// Function ID: 11932
+// Module ID: 11909
+// Function ID: 11910
 // Name: conjureProjectLinkCard
-// Dependencies: [109, 4824, 2165, 4672, 1388, 6529, 11930, 11932, 9852, 11933, 8610, 8611, 8613, 2]
+// Dependencies: [109, 4793, 2165, 4641, 1388, 6500, 11908, 11910, 9831, 11911, 8579, 8580, 8582, 2]
 // Exports: conjureProjectLinkCardKey
 
-// Module 11931 (conjureProjectLinkCard)
-import ConjureProjectStore2 from "ConjureProjectStore" /* 6529 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8610 */;
-import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8611 */;
-import createDisplayNameStylesMobile from "createDisplayNameStylesMobile" /* 8613 */;
-import conjureSharedProjectSurfaces from "conjureSharedProjectSurfaces" /* 11932 */;
-import conjureSharedProjectCoverTargetDefault from "conjureSharedProjectCoverTarget" /* 11933 */;
+// Module 11909 (conjureProjectLinkCard)
+import ConjureProjectStore2 from "ConjureProjectStore" /* 6500 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8579 */;
+import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8580 */;
+import createDisplayNameStylesMobile from "createDisplayNameStylesMobile" /* 8582 */;
+import conjureSharedProjectSurfaces from "conjureSharedProjectSurfaces" /* 11910 */;
+import conjureSharedProjectCoverTargetDefault from "conjureSharedProjectCoverTarget" /* 11911 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import AccessibilityStore from "AccessibilityStore" /* 4824 */;
+import AccessibilityStore from "AccessibilityStore" /* 4793 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
-import ChannelStore from "ChannelStore" /* 4672 */;
+import ChannelStore from "ChannelStore" /* 4641 */;
 import UserStore from "UserStore" /* 1388 */;
-import ConjureSharedProjectStore from "ConjureSharedProjectStore" /* 11930 */;
+import ConjureSharedProjectStore from "ConjureSharedProjectStore" /* 11908 */;
 import size from "module_2" /* 2 */;
 
 const ConjureProjectStore = ConjureProjectStore2;
@@ -90,7 +90,7 @@ function readConjureProjectLinkCard(applicationId, ticket, memo2) {
                 }
                 ticketValid = status.ticketValid || canRemixProject(project);
                 if (ticketValid) {
-                  const tmp11Result = tmp11(9852);
+                  const tmp11Result = tmp11(9831);
                   ticketValid = tmp11Result.isConjureMobileEnabled("ConjureProjectLinkCard");
                 }
                 const tmp16 = conjureSharedProjectCoverTargetDefault(applicationId, project, memo2);

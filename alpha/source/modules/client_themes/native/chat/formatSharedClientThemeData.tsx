@@ -1,14 +1,14 @@
-// Module ID: 14199
-// Function ID: 14200
+// Module ID: 14182
+// Function ID: 14183
 // Name: formatSharedClientThemeData
-// Dependencies: [17, 8711, 1113, 2955, 2]
+// Dependencies: [17, 8680, 1113, 2955, 2]
 // Exports: formatSharedClientThemeData
 
-// Module 14199 (formatSharedClientThemeData)
+// Module 14182 (formatSharedClientThemeData)
 import react_native from "react-native" /* 17 */;
 import intl4 from "intl" /* 1113 */;
 import _modDef2955 from "module_2955" /* 2955 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8711 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8680 */;
 import size from "module_2" /* 2 */;
 
 const Image = react_native.Image;

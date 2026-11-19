@@ -1,11 +1,11 @@
-// Module ID: 6937
-// Function ID: 6938
+// Module ID: 6907
+// Function ID: 6908
 // Name: XboxLinkModalActionCreators
-// Dependencies: [6337, 6938, 2121, 2]
+// Dependencies: [6308, 6908, 2121, 2]
 
-// Module 6937 (XboxLinkModalActionCreators)
+// Module 6907 (XboxLinkModalActionCreators)
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6337 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6308 */;
 import size from "module_2" /* 2 */;
 
 const USER_SETTINGS_CONNECTIONS_XBOX_LINK_MODAL_KEY = "USER_SETTINGS_CONNECTIONS_XBOX_LINK_MODAL_KEY";
@@ -21,7 +21,7 @@ let obj = {
     }
     const obj2 = ModalActionCreatorsDefault;
     const obj3 = { locationStack, startAtSignIn: flag };
-    obj2.pushLazy(asyncRequire(6938, dependencyMap.paths), obj3, USER_SETTINGS_CONNECTIONS_XBOX_LINK_MODAL_KEY);
+    obj2.pushLazy(asyncRequire(6908, dependencyMap.paths), obj3, USER_SETTINGS_CONNECTIONS_XBOX_LINK_MODAL_KEY);
   },
   hideModal() {
     const obj = ModalActionCreatorsDefault;

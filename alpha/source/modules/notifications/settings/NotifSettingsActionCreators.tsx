@@ -1,17 +1,17 @@
-// Module ID: 17489
-// Function ID: 17490
+// Module ID: 17482
+// Function ID: 17483
 // Name: NotifSettingsActionCreators
-// Dependencies: [5, 14867, 1072, 3, 572, 1233, 14868, 1285, 14870, 1089, 14881, 14866, 2]
+// Dependencies: [5, 14853, 1072, 3, 572, 1233, 14854, 1285, 14856, 1089, 14867, 14852, 2]
 // Exports: schedulePersistPendingEditsIfNeeded, updateNotifSettingRadioValue, updateNotifSettingToggleValue
 
-// Module 17489 (NotifSettingsActionCreators)
+// Module 17482 (NotifSettingsActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import settings_NotifSettingsUtils from "settings/NotifSettingsUtils" /* 14866 */;
-import notification_settings from "notification_settings" /* 14868 */;
-import DeclarativeNotificationSettingsRedesignExperiment from "DeclarativeNotificationSettingsRedesignExperiment" /* 14881 */;
+import settings_NotifSettingsUtils from "settings/NotifSettingsUtils" /* 14852 */;
+import notification_settings from "notification_settings" /* 14854 */;
+import DeclarativeNotificationSettingsRedesignExperiment from "DeclarativeNotificationSettingsRedesignExperiment" /* 14867 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 14867 */;
+import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 14853 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -45,7 +45,7 @@ let obj = function _persistPendingEdit() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c7;
@@ -91,7 +91,7 @@ let obj = function _persistPendingEdit() {
                 logger.log("Unable to take ownership of notification settings apply");
                 skipEdit(pendingEdit);
                 c9 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "+60" };
               } else {
                 const obj13 = require("user_settings/UserSettingsUtils");
                 const protoToB64Result = obj13.protoToB64(require("notification_settings").DeclarativeSettings, pendingEdit.partialSettings);
@@ -113,7 +113,7 @@ let obj = function _persistPendingEdit() {
                 logger.log("Not persisting proto because there is nothing to change");
                 skipEdit(pendingEdit);
                 c9 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "+60" };
               }
             }
           }
@@ -124,7 +124,7 @@ let obj = function _persistPendingEdit() {
             let body = versions;
             if (closure_133_4.applyingEdit !== pendingEdit) {
               c9 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             } else {
               status = closure_133_0;
               let tmp45;
@@ -190,7 +190,7 @@ let obj = function _persistPendingEdit() {
             if (closure_133_4.applyingEdit !== pendingEdit) {
               c7 = 0;
               c9 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             } else {
               resetAnyPending = status.declarative_settings_out_of_date;
               const tmp114 = resetAnyPending;
@@ -247,7 +247,7 @@ let obj = function _persistPendingEdit() {
           }
         }
         c9 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       } catch (tmp100) {
         versions = tmp100;
         if (0 === c7) {
@@ -273,7 +273,7 @@ obj = function _reload() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c4;

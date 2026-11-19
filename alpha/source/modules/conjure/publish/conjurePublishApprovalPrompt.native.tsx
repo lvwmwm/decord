@@ -1,12 +1,12 @@
-// Module ID: 14671
-// Function ID: 14672
+// Module ID: 14657
+// Function ID: 14658
 // Name: conjurePublishApprovalPrompt
-// Dependencies: [14670, 14672, 14673, 5502, 2]
+// Dependencies: [14656, 14658, 14659, 5471, 2]
 // Exports: promptPublishApproval
 
-// Module 14671 (conjurePublishApprovalPrompt)
-import LinkingDefault from "Linking" /* 5502 */;
-import ConjurePublishBlockedSheetDefault from "ConjurePublishBlockedSheet" /* 14672 */;
+// Module 14657 (conjurePublishApprovalPrompt)
+import LinkingDefault from "Linking" /* 5471 */;
+import ConjurePublishBlockedSheetDefault from "ConjurePublishBlockedSheet" /* 14658 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -24,7 +24,7 @@ export function promptPublishApproval(approval_url) {
   const tmp = _require;
   if (obj.validPublishApproval(approval_url, str)) {
     const tmp4 = ConjurePublishBlockedSheetDefault;
-    tmp4(tmp(14673).ConjurePublishBlockedReason.PUBLISH_APPROVAL_REQUIRED, undefined, () => {
+    tmp4(tmp(14659).ConjurePublishBlockedReason.PUBLISH_APPROVAL_REQUIRED, undefined, () => {
       const obj = LinkingDefault;
       obj.openURL(approval_url);
     });

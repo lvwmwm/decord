@@ -1,18 +1,18 @@
-// Module ID: 19161
-// Function ID: 19162
+// Module ID: 19153
+// Function ID: 19154
 // Name: UnionOrbsIcon
-// Dependencies: [19, 17, 21, 4823, 575, 5837, 5510, 17376, 2]
+// Dependencies: [19, 17, 21, 4792, 575, 5808, 5479, 17369, 2]
 // Exports: UnionOrbsIcon
 
-// Module 19161 (UnionOrbsIcon)
+// Module 19153 (UnionOrbsIcon)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import FastImageDefault from "FastImage" /* 5510 */;
-import Stack_Stack from "Stack/Stack" /* 5837 */;
-import _modDef17376 from "module_17376" /* 17376 */;
+import FastImageDefault from "FastImage" /* 5479 */;
+import Stack_Stack from "Stack/Stack" /* 5808 */;
+import _modDef17369 from "module_17369" /* 17369 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -39,7 +39,7 @@ export function UnionOrbsIcon() {
   const Stack = Stack_Stack.Stack;
   items = [React3(View, obj2), , ];
   const obj3 = { source: obj4, style: tmp.orb };
-  obj4 = { uri: _modDef17376 };
+  obj4 = { uri: _modDef17369 };
   const tmp2 = FastImageDefault;
   items[1] = React3(tmp2, obj3);
   const obj5 = { style: tmp.dot };

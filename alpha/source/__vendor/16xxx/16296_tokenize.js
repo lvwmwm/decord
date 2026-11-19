@@ -1,60 +1,75 @@
 // Module ID: 16296
 // Function ID: 16297
 // Name: tokenize
-// Dependencies: [16244]
+// Dependencies: [16235]
 
 // Module 16296 (tokenize)
-import tokenize from "tokenize" /* 16244 */;
+import tokenize from "tokenize" /* 16235 */;
 
 let obj2;
 const Ident = tokenize.TYPE.Ident;
+const Number = tokenize.TYPE.Number;
+const Dimension = tokenize.TYPE.Dimension;
+const LeftParenthesis = tokenize.TYPE.LeftParenthesis;
+const RightParenthesis = tokenize.TYPE.RightParenthesis;
+const Colon = tokenize.TYPE.Colon;
+const Delim = tokenize.TYPE.Delim;
 let obj = {
-  name: "Combinator",
+  name: "MediaFeature",
   structure: obj2,
   parse() {
-    let scanner3;
     const self = this;
     const tokenStart = this.scanner.tokenStart;
-    const source = this.scanner.source;
-    const charCodeAtResult = source.charCodeAt(this.scanner.tokenStart);
-    if (62 !== charCodeAtResult) {
-      if (43 !== charCodeAtResult) {
-        if (126 !== charCodeAtResult) {
-          if (47 === charCodeAtResult) {
-            const iter = self.scanner;
-            iter.next();
-            let tmp5 = self.scanner.tokenType === Ident;
-            if (tmp5) {
-              const scanner = self.scanner;
-              tmp5 = false !== scanner.lookupValue(0, "deep");
-            }
-            if (!tmp5) {
-              self.error("Identifier `deep` is expected");
-            }
-            const iter2 = self.scanner;
-            iter2.next();
-            const scanner2 = self.scanner;
-            if (!scanner2.isDelim(47)) {
-              self.error("Solidus is expected");
-            }
-            const iter3 = self.scanner;
-            iter3.next();
-          } else {
-            self.error("Combinator is expected");
-          }
+    this.eat(LeftParenthesis);
+    const scanner = this.scanner;
+    scanner.skipSC();
+    const scanner2 = this.scanner;
+    const consumeResult = this.consume(Ident);
+    scanner2.skipSC();
+    let tmp7 = null;
+    const tmp3 = Ident;
+    const tmp6 = RightParenthesis;
+    if (this.scanner.tokenType !== RightParenthesis) {
+      let DimensionResult;
+      self.eat(Colon);
+      const scanner4 = self.scanner;
+      scanner4.skipSC();
+      const tokenType = self.scanner.tokenType;
+      if (Number === tokenType) {
+        let RatioResult;
+        if (self.lookupNonWSType(1) === Delim) {
+          RatioResult = self.Ratio();
+        } else {
+          RatioResult = self.Number();
         }
-        const obj = { type: "Combinator", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: scanner3.substrToCursor(tokenStart) };
-        scanner3 = self.scanner;
-        return obj;
+        DimensionResult = RatioResult;
+      } else if (Dimension === tokenType) {
+        DimensionResult = self.Dimension();
+      } else if (tmp3 === tokenType) {
+        DimensionResult = self.Identifier();
+      } else {
+        self.error("Number, dimension, ratio or identifier is expected");
+        DimensionResult = null;
       }
+      const scanner3 = self.scanner;
+      scanner3.skipSC();
+      tmp7 = DimensionResult;
     }
-    const iter4 = self.scanner;
-    iter4.next();
+    self.eat(tmp6);
+    const obj = { type: "MediaFeature", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: consumeResult, value: tmp7 };
+    return obj;
   },
   generate(name) {
+    const self = this;
+    this.chunk("(");
     this.chunk(name.name);
+    if (null !== name.value) {
+      self.chunk(":");
+      self.node(name.value);
+    }
+    self.chunk(")");
   }
 };
-obj2 = { name: String };
+obj2 = { name: String, value: ["Identifier", "Number", "Dimension", "Ratio", null] };
 
 export default obj;

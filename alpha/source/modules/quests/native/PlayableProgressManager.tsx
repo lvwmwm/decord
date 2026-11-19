@@ -1,13 +1,13 @@
-// Module ID: 20210
-// Function ID: 20211
+// Module ID: 20221
+// Function ID: 20222
 // Name: PlayableProgressManager
-// Dependencies: [5, 16534, 3, 7395, 572, 16664, 6469, 5505, 16400, 2]
+// Dependencies: [5, 16525, 3, 7365, 572, 16657, 6440, 5474, 16391, 2]
 
-// Module 20210 (PlayableProgressManager)
+// Module 20221 (PlayableProgressManager)
 import LoggerDefault from "Logger" /* 3 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import PlayableStore from "PlayableStore" /* 16534 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
+import PlayableStore from "PlayableStore" /* 16525 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
 import size from "module_2" /* 2 */;
 
 let c4, closure_2, logger;
@@ -51,7 +51,7 @@ class PlayableProgressManager extends AutomaticLifecycleManager {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "+60" };
                   }
                 } else {
                   let c3;
@@ -101,7 +101,7 @@ class PlayableProgressManager extends AutomaticLifecycleManager {
                         c3 = 0;
                       }
                       logger = 3;
-                      return { value: "HermesInternal", done: null };
+                      return { value: "HermesInternal", done: "+60" };
                     }
                   } catch (tmp16) {
                     closure_2 = tmp16;

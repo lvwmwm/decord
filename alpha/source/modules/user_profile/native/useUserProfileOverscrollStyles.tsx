@@ -1,16 +1,16 @@
-// Module ID: 8111
-// Function ID: 8112
+// Module ID: 8080
+// Function ID: 8081
 // Name: useUserProfileOverscrollStyles
-// Dependencies: [32, 19, 4824, 1496, 504, 1655, 1708, 2]
+// Dependencies: [32, 19, 4793, 1496, 504, 1655, 1708, 2]
 // Exports: default
 
-// Module 8111 (useUserProfileOverscrollStyles)
+// Module 8080 (useUserProfileOverscrollStyles)
 import get_initialized from "get initialized" /* 504 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
 import _mod1655 from "module_1655" /* 1655 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4824 */;
+import AccessibilityStore from "AccessibilityStore" /* 4793 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;

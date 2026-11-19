@@ -1,11 +1,11 @@
-// Module ID: 10624
-// Function ID: 10625
+// Module ID: 10602
+// Function ID: 10603
 // Name: useIsPrivateChannelWithEnabledActivities
-// Dependencies: [4672, 563, 2]
+// Dependencies: [4641, 563, 2]
 // Exports: default, isPrivateChannelWithEnabledActivities
 
-// Module 10624 (useIsPrivateChannelWithEnabledActivities)
-import ChannelStore from "ChannelStore" /* 4672 */;
+// Module 10602 (useIsPrivateChannelWithEnabledActivities)
+import ChannelStore from "ChannelStore" /* 4641 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

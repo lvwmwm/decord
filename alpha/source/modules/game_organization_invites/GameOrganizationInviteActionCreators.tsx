@@ -1,11 +1,11 @@
-// Module ID: 12016
-// Function ID: 12017
+// Module ID: 11994
+// Function ID: 11995
 // Name: GameOrganizationInviteActionCreators
-// Dependencies: [5, 11856, 1072, 572, 1285, 6258, 2]
+// Dependencies: [5, 11834, 1072, 572, 1285, 6229, 2]
 
-// Module 12016 (GameOrganizationInviteActionCreators)
+// Module 11994 (GameOrganizationInviteActionCreators)
 import Constants from "Constants" /* 1072 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11856 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11834 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         let c3;
@@ -108,7 +108,7 @@ let obj = {
             obj.dispatch(obj15);
             c3 = 0;
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp39) {
           closure_2 = tmp39;
@@ -137,7 +137,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -175,7 +175,7 @@ let obj = {
             obj = tmp(c2[3]);
             obj.dispatch(obj7);
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp12) {
           c3 = 3;
@@ -198,7 +198,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -235,7 +235,7 @@ let obj = {
             obj = tmp(c2[3]);
             obj.dispatch(obj7);
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp16) {
           c3 = 3;
@@ -259,7 +259,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         let c3;

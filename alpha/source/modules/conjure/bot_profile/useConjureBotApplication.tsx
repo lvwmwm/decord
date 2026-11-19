@@ -1,10 +1,10 @@
-// Module ID: 14340
-// Function ID: 14341
+// Module ID: 14327
+// Function ID: 14328
 // Name: useConjureBotApplication
-// Dependencies: [2165, 6565, 504, 6567, 2]
+// Dependencies: [2165, 6536, 504, 6538, 2]
 // Exports: default
 
-// Module 14340 (useConjureBotApplication)
+// Module 14327 (useConjureBotApplication)
 import ApplicationStore from "ApplicationStore" /* 2165 */;
 import size from "module_2" /* 2 */;
 

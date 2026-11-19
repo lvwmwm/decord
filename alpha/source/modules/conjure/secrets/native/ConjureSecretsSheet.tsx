@@ -1,18 +1,18 @@
-// Module ID: 18652
-// Function ID: 18653
+// Module ID: 18645
+// Function ID: 18646
 // Name: ConjureSecretsSheet
-// Dependencies: [5, 32, 19, 17, 6878, 21, 4823, 575, 7456, 18481, 18653, 1113, 4121, 7464, 7426, 7465, 18349, 5414, 5421, 7132, 2]
+// Dependencies: [5, 32, 19, 17, 6848, 21, 4792, 575, 7426, 18474, 18646, 1113, 4089, 7434, 7396, 7435, 18349, 5383, 5390, 7102, 2]
 // Exports: default
 
-// Module 18652 (ConjureSecretsSheet)
+// Module 18645 (ConjureSecretsSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 6878 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 6848 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, closure_2, dependencyMap;
@@ -123,7 +123,7 @@ export default function ConjureSecretsSheet(projectId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c3;
@@ -228,7 +228,7 @@ export default function ConjureSecretsSheet(projectId) {
           }
         }
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       } catch (tmp67) {
         closure_2 = tmp67;
         if (0 === c3) {
@@ -241,9 +241,9 @@ export default function ConjureSecretsSheet(projectId) {
     }
   }), items);
   let obj = { ref, startExpanded: true, keyboardShouldPersistTaps: "always", header: c8(BottomSheetTitleHeader, obj2), children: tmp17(tmp18, obj4) };
-  const ActionSheet = projectId(7464).ActionSheet;
-  obj2 = { title: intl.string(request(4121).TuMGZp), trailing: c8(projectId(7465).ActionSheetCloseButton, obj3) };
-  BottomSheetTitleHeader = projectId(7426).BottomSheetTitleHeader;
+  const ActionSheet = projectId(7434).ActionSheet;
+  obj2 = { title: intl.string(request(4089).TuMGZp), trailing: c8(projectId(7435).ActionSheetCloseButton, obj3) };
+  BottomSheetTitleHeader = projectId(7396).BottomSheetTitleHeader;
   intl = projectId(1113).intl;
   obj3 = {
     onPress() {
@@ -268,14 +268,14 @@ export default function ConjureSecretsSheet(projectId) {
     }
   }
   items1 = [tmp13Result, , , , , , ];
-  let obj6 = { variant: "body-xs/normal", color: "text-muted", children: intl2.string(tmp16(4121).jgDBJZ) };
-  let Text = tmp14(5414).Text;
+  let obj6 = { variant: "body-xs/normal", color: "text-muted", children: intl2.string(tmp16(4089).jgDBJZ) };
+  let Text = tmp14(5383).Text;
   intl2 = tmp14(1113).intl;
   items1[1] = c8(Text, obj6);
   let tmp13Result3 = null;
   if (request.fields.length > 1) {
-    let obj7 = { variant: "body-xs/normal", color: "text-muted", children: intl3.string(tmp16(4121)["La+pe4"]) };
-    const Text2 = tmp14(5414).Text;
+    let obj7 = { variant: "body-xs/normal", color: "text-muted", children: intl3.string(tmp16(4089)["La+pe4"]) };
+    const Text2 = tmp14(5383).Text;
     intl3 = tmp14(1113).intl;
     tmp13Result3 = tmp13(Text2, obj7);
   }
@@ -376,14 +376,14 @@ export default function ConjureSecretsSheet(projectId) {
   });
   let tmp13Result4 = null;
   if (tmp8) {
-    let obj8 = { variant: "body-xs/normal", color: "text-feedback-critical", children: intl4.string(tmp16(4121).IrMuew) };
-    const Text3 = tmp14(5414).Text;
+    let obj8 = { variant: "body-xs/normal", color: "text-feedback-critical", children: intl4.string(tmp16(4089).IrMuew) };
+    const Text3 = tmp14(5383).Text;
     intl4 = tmp14(1113).intl;
     tmp13Result4 = tmp13(Text3, obj8);
   }
   items1[5] = tmp13Result4;
-  let obj9 = { text: intl5.string(tmp16(4121).DUdtms), variant: "primary", loading: first1, disabled: !tmp10, onPress: callback };
-  let Button = tmp14(5421).Button;
+  let obj9 = { text: intl5.string(tmp16(4089).DUdtms), variant: "primary", loading: first1, disabled: !tmp10, onPress: callback };
+  let Button = tmp14(5390).Button;
   intl5 = tmp14(1113).intl;
   items1[6] = c8(Button, obj9);
   return c8(ActionSheet, obj);

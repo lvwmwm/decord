@@ -1,9 +1,9 @@
-// Module ID: 18984
-// Function ID: 18985
+// Module ID: 18976
+// Function ID: 18977
 // Name: RegionActionCreators
 // Dependencies: [1072, 1285, 572, 2]
 
-// Module 18984 (RegionActionCreators)
+// Module 18976 (RegionActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;

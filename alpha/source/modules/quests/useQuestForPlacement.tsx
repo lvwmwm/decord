@@ -1,17 +1,17 @@
-// Module ID: 16563
-// Function ID: 16564
+// Module ID: 16554
+// Function ID: 16555
 // Name: useQuestForPlacement
-// Dependencies: [19, 8313, 8316, 16564, 9858, 504, 16565, 8314, 8323, 6473, 2]
+// Dependencies: [19, 8282, 8285, 16555, 9837, 504, 16556, 8283, 8292, 6444, 2]
 // Exports: default, useAdDecisionForPlacement, useAdRefreshLoop, useDeliveredCreativeForPlacement
 
-// Module 16563 (useQuestForPlacement)
+// Module 16554 (useQuestForPlacement)
 import react from "react" /* 19 */;
-import AdCreativeType from "AdCreativeType" /* 6473 */;
-import QuestActionCreators from "QuestActionCreators" /* 9858 */;
-import ReturnFullQuestStatusInDecisionExperiment from "ReturnFullQuestStatusInDecisionExperiment" /* 16564 */;
-import useAdRefreshLoop2 from "useAdRefreshLoop" /* 16565 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 8313 */;
-import QuestStore from "QuestStore" /* 8316 */;
+import AdCreativeType from "AdCreativeType" /* 6444 */;
+import QuestActionCreators from "QuestActionCreators" /* 9837 */;
+import ReturnFullQuestStatusInDecisionExperiment from "ReturnFullQuestStatusInDecisionExperiment" /* 16555 */;
+import useAdRefreshLoop2 from "useAdRefreshLoop" /* 16556 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 8282 */;
+import QuestStore from "QuestStore" /* 8285 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -72,7 +72,7 @@ export default function useFetchQuestForAdPlacement(arg0) {
   let tmp8 = null;
   if (null != stateFromStores1) {
     tmp8 = null;
-    const tmpResult2 = tmp(8323);
+    const tmpResult2 = tmp(8292);
     if (!tmpResult2.isQuestExpired(stateFromStores1)) {
       tmp8 = stateFromStores1;
     }

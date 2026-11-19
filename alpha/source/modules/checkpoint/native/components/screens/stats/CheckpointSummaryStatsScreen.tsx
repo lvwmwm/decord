@@ -1,36 +1,36 @@
-// Module ID: 12706
-// Function ID: 12707
+// Module ID: 12689
+// Function ID: 12690
 // Name: CheckpointSummaryStatsScreen
-// Dependencies: [19, 17, 4824, 12417, 5877, 21, 575, 4823, 1360, 12654, 504, 12434, 5901, 7508, 12707, 12435, 1113, 3339, 1496, 1414, 7888, 3307, 7233, 5414, 6247, 10168, 12682, 4769, 7407, 5510, 12676, 12648, 2]
+// Dependencies: [19, 17, 4793, 12400, 5848, 21, 575, 4792, 1360, 12637, 504, 12417, 5872, 7478, 12690, 12418, 1113, 3339, 1496, 1414, 7858, 3307, 7203, 5383, 6218, 10146, 12665, 4738, 7377, 5479, 12659, 12631, 2]
 // Exports: default
 
-// Module 12706 (CheckpointSummaryStatsScreen)
+// Module 12689 (CheckpointSummaryStatsScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
 import _modDef3307 from "module_3307" /* 3307 */;
 import _modDef3339 from "module_3339" /* 3339 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4769 */;
-import CheckpointCardColors from "CheckpointCardColors" /* 5901 */;
-import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6247 */;
-import GuildIcon from "GuildIcon" /* 7233 */;
-import EmojiDefault from "Emoji" /* 7407 */;
-import useMeasuredLayoutDefault from "useMeasuredLayout" /* 7508 */;
-import FlagIcon from "FlagIcon" /* 10168 */;
-import CheckpointScreen from "CheckpointScreen" /* 12434 */;
-import CheckpointTextDefault from "CheckpointText" /* 12435 */;
-import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 12648 */;
-import useIsCheckpointWideDefault from "useIsCheckpointWide" /* 12654 */;
-import CheckpointNumberUtils from "CheckpointNumberUtils" /* 12676 */;
-import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 12682 */;
-import CheckpointRecapCard from "CheckpointRecapCard" /* 12707 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4738 */;
+import CheckpointCardColors from "CheckpointCardColors" /* 5872 */;
+import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6218 */;
+import GuildIcon from "GuildIcon" /* 7203 */;
+import EmojiDefault from "Emoji" /* 7377 */;
+import useMeasuredLayoutDefault from "useMeasuredLayout" /* 7478 */;
+import FlagIcon from "FlagIcon" /* 10146 */;
+import CheckpointScreen from "CheckpointScreen" /* 12417 */;
+import CheckpointTextDefault from "CheckpointText" /* 12418 */;
+import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 12631 */;
+import useIsCheckpointWideDefault from "useIsCheckpointWide" /* 12637 */;
+import CheckpointNumberUtils from "CheckpointNumberUtils" /* 12659 */;
+import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 12665 */;
+import CheckpointRecapCard from "CheckpointRecapCard" /* 12690 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4824 */;
-import CheckpointStore from "CheckpointStore" /* 12417 */;
-import CheckpointConstants from "CheckpointConstants" /* 5877 */;
+import AccessibilityStore from "AccessibilityStore" /* 4793 */;
+import CheckpointStore from "CheckpointStore" /* 12400 */;
+import CheckpointConstants from "CheckpointConstants" /* 5848 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1360 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -202,14 +202,14 @@ function UserSummaryStats(stats) {
     let num2 = 240;
     const _Math = Math;
     if (1 < num) {
-      num2 = tmp5(12707).CARD_HEIGHT * num;
+      num2 = tmp5(12690).CARD_HEIGHT * num;
     }
     minResult = min(num2, checkpointScreenContentHeight);
   }
   if (null != diff) {
     const _Math2 = Math;
     const _Math3 = Math;
-    map1 = PX_16 + Math.min(Math.max(diff - tmp5(12707).CARD_HEIGHT * num, 0), PX_48 - PX_16);
+    map1 = PX_16 + Math.min(Math.max(diff - tmp5(12690).CARD_HEIGHT * num, 0), PX_48 - PX_16);
   } else {
     map1 = PX_16;
   }
@@ -246,7 +246,7 @@ function UserSummaryStats(stats) {
     const tmp2Result6 = AvatarUtilsDefault;
     applicationIconURL = tmp2Result6.getApplicationIconURL(obj3);
   }
-  let tmp28Result6 = metroImportAll(tmp5(7888).UnknownGameIcon, { size: "md", color: primaryBackgroundColor });
+  let tmp28Result6 = metroImportAll(tmp5(7858).UnknownGameIcon, { size: "md", color: primaryBackgroundColor });
   const intl = tmp5(1113).intl;
   const stringResult = intl.string(_modDef3339.s4qVni);
   const toLocaleUpperCaseResult = stringResult.toLocaleUpperCase();
@@ -268,7 +268,7 @@ function UserSummaryStats(stats) {
       items2 = [, ];
       ({ itemIcon: arr14[0], guildAcronym: arr14[1] } = tmp);
       obj6 = { variant: "body-md/semibold", color: "text-overlay-light", allowFontScaling: false, children: tmp5Result8.getGuildAcronymCharacter(first.guild.name) };
-      Text = tmp5(5414).Text;
+      Text = tmp5(5383).Text;
       tmp5Result8 = CheckpointStatsUtils;
       tmp28Result = tmp28(View, obj5);
     }
@@ -305,9 +305,9 @@ function UserSummaryStats(stats) {
     let tmp39 = tmp4;
     if (tmp39) {
       let CARD_HEIGHT = minResult;
-      const CARD_WIDTH = tmp5(12707).CARD_WIDTH;
+      const CARD_WIDTH = tmp5(12690).CARD_WIDTH;
       if (minResult == null) {
-        CARD_HEIGHT = tmp5(12707).CARD_HEIGHT;
+        CARD_HEIGHT = tmp5(12690).CARD_HEIGHT;
       }
       const obj12 = { width: result / CheckpointRecapCard.CARD_HEIGHT };
       result = CARD_WIDTH * CARD_HEIGHT;
@@ -448,7 +448,7 @@ function UserSummaryStats(stats) {
   if (null != applicationIconURL) {
     const obj32 = { source: obj34, style: tmp.itemIcon };
     obj34 = { uri: applicationIconURL };
-    tmp28Result6 = tmp28(tmp2(5510), obj32);
+    tmp28Result6 = tmp28(tmp2(5479), obj32);
   }
   items13[1] = metroImportAll(ItemStat, obj31);
   items10[3] = React4(View, obj29);

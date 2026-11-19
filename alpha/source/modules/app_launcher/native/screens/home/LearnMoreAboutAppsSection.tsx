@@ -1,23 +1,23 @@
-// Module ID: 12890
-// Function ID: 12891
+// Module ID: 12872
+// Function ID: 12873
 // Name: LearnMoreAboutAppsSection
-// Dependencies: [19, 17, 1072, 21, 4823, 575, 5502, 2188, 1113, 12891, 10636, 5414, 6941, 2]
+// Dependencies: [19, 17, 1072, 21, 4792, 575, 5471, 2188, 1113, 12873, 10614, 5383, 6911, 2]
 // Exports: default
 
-// Module 12890 (LearnMoreAboutAppsSection)
+// Module 12872 (LearnMoreAboutAppsSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
-import Text_Text from "Text/Text" /* 5414 */;
-import LinkingDefault from "Linking" /* 5502 */;
-import Pressables from "Pressables" /* 6941 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 10636 */;
-import TrackSectionHeaderDefault from "TrackSectionHeader" /* 12891 */;
+import Text_Text from "Text/Text" /* 5383 */;
+import LinkingDefault from "Linking" /* 5471 */;
+import Pressables from "Pressables" /* 6911 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 10614 */;
+import TrackSectionHeaderDefault from "TrackSectionHeader" /* 12873 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;

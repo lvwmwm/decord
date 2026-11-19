@@ -1,16 +1,16 @@
-// Module ID: 20094
-// Function ID: 20095
+// Module ID: 20105
+// Function ID: 20106
 // Name: GuildRoleSubscriptionTierTemplateSelectedActionSheet
-// Dependencies: [19, 17, 4669, 21, 4823, 575, 5051, 5837, 5414, 1113, 5421, 2]
+// Dependencies: [19, 17, 4638, 21, 4792, 575, 5020, 5808, 5383, 1113, 5390, 2]
 // Exports: default
 
-// Module 20094 (GuildRoleSubscriptionTierTemplateSelectedActionSheet)
+// Module 20105 (GuildRoleSubscriptionTierTemplateSelectedActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4669 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4638 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -40,15 +40,15 @@ export default function GuildRoleSubscriptionTierTemplateSelectedActionSheet(mar
     children: closure_6(View, obj2)
   };
   obj2 = { style: closure_7().content, children: items1 };
-  const BottomSheet = markAsDismissed(5051).BottomSheet;
+  const BottomSheet = markAsDismissed(5020).BottomSheet;
   const obj3 = { spacing: nativeDefault.space.PX_8, children: items };
-  const Stack = markAsDismissed(5837).Stack;
+  const Stack = markAsDismissed(5808).Stack;
   const obj4 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl.string(markAsDismissed(1113).t.Y0PTc0) };
-  const Text = markAsDismissed(5414).Text;
+  const Text = markAsDismissed(5383).Text;
   intl = markAsDismissed(1113).intl;
   items = [closure_5(Text, obj4), ];
   const obj5 = { variant: "body-sm/normal", color: "text-default", children: intl2.string(markAsDismissed(1113).t["YSI/1/"]) };
-  const Text2 = markAsDismissed(5414).Text;
+  const Text2 = markAsDismissed(5383).Text;
   intl2 = markAsDismissed(1113).intl;
   items[1] = closure_5(Text2, obj5);
   items1 = [closure_6(Stack, obj3), ];
@@ -59,7 +59,7 @@ export default function GuildRoleSubscriptionTierTemplateSelectedActionSheet(mar
     },
     grow: true
   };
-  const Button = markAsDismissed(5421).Button;
+  const Button = markAsDismissed(5390).Button;
   intl3 = markAsDismissed(1113).intl;
   items1[1] = closure_5(Button, obj6);
   return closure_5(BottomSheet, obj);

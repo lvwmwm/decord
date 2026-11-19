@@ -1,14 +1,14 @@
-// Module ID: 13449
-// Function ID: 13450
+// Module ID: 13431
+// Function ID: 13432
 // Name: isListeningOnSpotify
-// Dependencies: [1072, 6806, 5562, 6599, 2]
+// Dependencies: [1072, 6778, 5531, 6570, 2]
 // Exports: default
 
-// Module 13449 (isListeningOnSpotify)
+// Module 13431 (isListeningOnSpotify)
 import Constants from "Constants" /* 1072 */;
-import ActivityTypes from "ActivityTypes" /* 5562 */;
-import PlatformsDefault from "Platforms" /* 6599 */;
-import SpotifyConstants from "SpotifyConstants" /* 6806 */;
+import ActivityTypes from "ActivityTypes" /* 5531 */;
+import PlatformsDefault from "Platforms" /* 6570 */;
+import SpotifyConstants from "SpotifyConstants" /* 6778 */;
 import size from "module_2" /* 2 */;
 
 const PlatformTypes = Constants.PlatformTypes;

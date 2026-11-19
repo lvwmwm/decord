@@ -1,23 +1,23 @@
-// Module ID: 19347
-// Function ID: 19348
+// Module ID: 19343
+// Function ID: 19344
 // Name: ActivityShelfItemSummary
-// Dependencies: [32, 19, 17, 21, 4823, 575, 4820, 19348, 11036, 1187, 5432, 5414, 1655, 5434, 2]
+// Dependencies: [32, 19, 17, 21, 4792, 575, 4789, 19344, 11014, 1187, 5401, 5383, 1655, 5403, 2]
 // Exports: default
 
-// Module 19347 (ActivityShelfItemSummary)
+// Module 19343 (ActivityShelfItemSummary)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import _modDef1655 from "module_1655" /* 1655 */;
-import Text_Text from "Text/Text" /* 5414 */;
-import ButtonPill from "ButtonPill" /* 5432 */;
-import UserSummaryItemDefault from "UserSummaryItem" /* 11036 */;
-import useActivityUsersDefault from "useActivityUsers" /* 19348 */;
+import Text_Text from "Text/Text" /* 5383 */;
+import ButtonPill from "ButtonPill" /* 5401 */;
+import UserSummaryItemDefault from "UserSummaryItem" /* 11014 */;
+import useActivityUsersDefault from "useActivityUsers" /* 19344 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
-import ColorUtils_mod from "ColorUtils" /* 4820 */;
+import createStyles_mod from "createStyles" /* 4792 */;
+import ColorUtils_mod from "ColorUtils" /* 4789 */;
 import size from "module_2" /* 2 */;
 
 let ColorUtils;
@@ -26,7 +26,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp2;
-const ButtonEllipsis = tmp2(5434);
+const ButtonEllipsis = tmp2(5403);
 function ParticipantsSummary(arg0) {
   let applicationId;
   let channelId;

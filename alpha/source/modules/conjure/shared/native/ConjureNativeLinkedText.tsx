@@ -1,12 +1,12 @@
 // Module ID: 18349
 // Function ID: 18350
 // Name: ConjureNativeLinkedText
-// Dependencies: [19, 21, 18350, 18359, 5414, 2]
+// Dependencies: [19, 21, 18350, 18359, 5383, 2]
 // Exports: conjureLinkedNodes, default
 
 // Module 18349 (ConjureNativeLinkedText)
 import Fragment from "Fragment" /* 21 */;
-import Text_Text from "Text/Text" /* 5414 */;
+import Text_Text from "Text/Text" /* 5383 */;
 import conjureMarkup from "conjureMarkup" /* 18350 */;
 import conjureLinkifyBareDomains from "conjureLinkifyBareDomains" /* 18359 */;
 import react from "react" /* 19 */;

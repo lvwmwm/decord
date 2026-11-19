@@ -1,10 +1,10 @@
-// Module ID: 10827
-// Function ID: 10828
+// Module ID: 10805
+// Function ID: 10806
 // Name: FocusedControlsBottomControls
-// Dependencies: [32, 19, 17, 10596, 10597, 1072, 21, 1380, 4823, 575, 6315, 1187, 1630, 1655, 10828, 1092, 1113, 5386, 5033, 5083, 1708, 10830, 1496, 10619, 1108, 4884, 5391, 4830, 10831, 2]
+// Dependencies: [32, 19, 17, 10574, 10575, 1072, 21, 1380, 4792, 575, 6286, 1187, 1630, 1655, 10806, 1092, 1113, 5355, 5002, 5052, 1708, 10808, 1496, 10597, 1108, 4853, 5360, 4799, 10809, 2]
 // Exports: default
 
-// Module 10827 (FocusedControlsBottomControls)
+// Module 10805 (FocusedControlsBottomControls)
 import nativeDefault from "native" /* 575 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
@@ -12,18 +12,18 @@ import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5033 */;
-import useCanShowTooltip from "useCanShowTooltip" /* 10828 */;
-import CallPTTButton from "CallPTTButton" /* 10831 */;
+import timing_timing from "timing/timing" /* 5002 */;
+import useCanShowTooltip from "useCanShowTooltip" /* 10806 */;
+import CallPTTButton from "CallPTTButton" /* 10809 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelCallStore from "ChannelCallStore" /* 10596 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 10597 */;
+import ChannelCallStore from "ChannelCallStore" /* 10574 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 10575 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
-import TextStyles from "TextStyles" /* 6315 */;
+import createStyles_mod from "createStyles" /* 4792 */;
+import TextStyles from "TextStyles" /* 6286 */;
 import size_mod from "module_2" /* 2 */;
 
 const CallPTTButtonDefault = CallPTTButton;
@@ -46,7 +46,7 @@ let rect;
 let tmp2;
 let unpackModuleId;
 const _modDef1655 = tmp2(1655);
-const ActionSheetHeaderBar = tmp2(5386);
+const ActionSheetHeaderBar = tmp2(5355);
 function FocusedControlsExpanded(availableHeight) {
   let closure_3;
   let expandedControls;
@@ -683,7 +683,7 @@ const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj3 = {};
 const DISPLAY_EXTRABOLD = Fonts.DISPLAY_EXTRABOLD;
 const merged1 = Object.assign(TextStyles(DISPLAY_EXTRABOLD, nativeDefault.unsafe_rawColors.WHITE, 12, { uppercase: true }));
-let closure_17 = createStyles(obj);
+const authStore4 = createStyles(obj);
 let obj4 = { easing: native.STANDARD_EASING, duration: 250 };
 let obj5 = { easing: native.STANDARD_EASING, duration: 400 };
 let closure_20 = { code: "(function FocusedControlsBottomControlsTsx1(){let[positionY,EXPANDED_DRAWER_SHOW_POSITION]=this.__closure;const opacity=Math.min(positionY.get()*-1/EXPANDED_DRAWER_SHOW_POSITION,1);return{opacity:opacity,pointerEvents:opacity===0?'none':'auto'};})" };

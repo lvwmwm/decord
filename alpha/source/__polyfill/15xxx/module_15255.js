@@ -1,12 +1,19 @@
 // Module ID: 15255
 // Function ID: 15256
-// Dependencies: [15254]
+// Dependencies: [15252]
 
 // Module 15255
-import _mod15254 from "module_15254" /* 15254 */;
+import _mod15252 from "module_15252" /* 15252 */;
+
+let set;
 
 
-export default (arr, arg1) => {
-  let closure_0 = arg1;
-  return arr.sort((arg0, arg1) => _mod15254(arg0, arg1, closure_0));
+export default (arg0, arg1) => {
+  set = new _mod15252(arg0, arg1).set;
+  return set.map((arr) => {
+    const mapped = arr.map((value) => value.value);
+    const str = mapped.join(" ");
+    const str2 = str.trim();
+    return str2.split(" ");
+  });
 };

@@ -1,15 +1,15 @@
-// Module ID: 10019
-// Function ID: 10020
+// Module ID: 9997
+// Function ID: 9998
 // Name: ModalFloatingAction
-// Dependencies: [19, 17, 21, 4823, 1655, 4837, 1630, 5424, 5425, 5378, 671, 10020, 2]
+// Dependencies: [19, 17, 21, 4792, 1655, 4806, 1630, 5393, 5394, 5347, 671, 9998, 2]
 // Exports: ModalFloatingAction, ModalFloatingActionSpacer
 
-// Module 10019 (ModalFloatingAction)
-import spring_spring from "spring/spring" /* 5424 */;
+// Module 9997 (ModalFloatingAction)
+import spring_spring from "spring/spring" /* 5393 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -19,7 +19,7 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp2;
-const springPresets = tmp2(5425);
+const springPresets = tmp2(5394);
 ({ StyleSheet: closure_4, View: hasOwnProperty } = react_native);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles({ floating: { position: "absolute", bottom: 0, width: "100%", paddingHorizontal: 16 }, spacer: { height: 96 } });
@@ -48,7 +48,7 @@ export function ModalFloatingAction(isVisible) {
     num = 1;
   }
   sharedValue = useSharedValue(num);
-  const enabled = react.useContext(tmp3(4837).AccessibilityPreferencesContext).reducedMotion.enabled;
+  const enabled = react.useContext(tmp3(4806).AccessibilityPreferencesContext).reducedMotion.enabled;
   let items = [isVisible, sharedValue];
   const tmp8 = sharedValue(1630)();
   const effect = react.useEffect(() => {
@@ -104,7 +104,7 @@ export function ModalFloatingAction(isVisible) {
     str = "auto";
   }
   let obj2 = { colors: items4, locations: [0, 0.5], style: absoluteFill.absoluteFill };
-  const tmp7Result = sharedValue(5378);
+  const tmp7Result = sharedValue(5347);
   items4 = [, ];
   const obj3 = sharedValue(671)(floatingBackgroundColor);
   const alphaResult = obj3.alpha(0);
@@ -112,7 +112,7 @@ export function ModalFloatingAction(isVisible) {
   items4[1] = floatingBackgroundColor;
   items5 = [closure_6(tmp7Result, obj2), ];
   const obj4 = { variant: "primary" };
-  const ModalActionButton = tmp3(10020).ModalActionButton;
+  const ModalActionButton = tmp3(9998).ModalActionButton;
   const merged1 = Object.assign(merged);
   items5[1] = closure_6(ModalActionButton, obj4);
   return tmp17(View, obj);

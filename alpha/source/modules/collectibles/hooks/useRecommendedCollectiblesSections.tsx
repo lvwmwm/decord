@@ -1,13 +1,13 @@
-// Module ID: 14182
-// Function ID: 14183
+// Module ID: 14165
+// Function ID: 14166
 // Name: useRecommendedCollectiblesSections
-// Dependencies: [19, 14183, 14184, 5402, 14185, 2]
+// Dependencies: [19, 14166, 14167, 5371, 14168, 2]
 // Exports: default
 
-// Module 14182 (useRecommendedCollectiblesSections)
+// Module 14165 (useRecommendedCollectiblesSections)
 import react from "react" /* 19 */;
-import reactDefault from "react" /* 5402 */;
-import CollectiblesRecommendationStore from "CollectiblesRecommendationStore" /* 14183 */;
+import reactDefault from "react" /* 5371 */;
+import CollectiblesRecommendationStore from "CollectiblesRecommendationStore" /* 14166 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

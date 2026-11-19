@@ -1,16 +1,16 @@
-// Module ID: 6922
-// Function ID: 6923
+// Module ID: 6892
+// Function ID: 6893
 // Name: oauth2/actions
-// Dependencies: [5, 4672, 4726, 1072, 1285, 6333, 1081, 2]
+// Dependencies: [5, 4641, 4695, 1072, 1285, 6304, 1081, 2]
 // Exports: acceptWhitelist, authorize, fetchAuthorization, fetchChannels, finishUserCode, finishUserCodeTwoWayLinkError, logoutWithRedirect, startSamsungAuthorization, verifyUserCode
 
-// Module 6922 (oauth2/actions)
+// Module 6892 (oauth2/actions)
 import utils_PathUtils from "utils/PathUtils" /* 1081 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6333 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6304 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4672 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4726 */;
+import ChannelStore from "ChannelStore" /* 4641 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4695 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -79,7 +79,7 @@ let obj = function _authorize() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -190,7 +190,7 @@ obj = function _fetchAuthorization() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -274,7 +274,7 @@ obj = function _startSamsungAuthorization() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -305,7 +305,7 @@ obj = function _startSamsungAuthorization() {
             return { value, done: true };
           } else {
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp4) {
           c5 = 3;

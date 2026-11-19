@@ -1,17 +1,17 @@
-// Module ID: 19594
-// Function ID: 19595
+// Module ID: 19590
+// Function ID: 19591
 // Name: InteractionModalManager
-// Dependencies: [5, 2165, 8161, 1072, 5881, 19595, 2121, 1256, 4698, 1242, 19606, 15707, 5467, 19609, 7395, 2]
+// Dependencies: [5, 2165, 8130, 1072, 5852, 19591, 2121, 1256, 4667, 1242, 19602, 15695, 5436, 19605, 7365, 2]
 
-// Module 19594 (InteractionModalManager)
+// Module 19590 (InteractionModalManager)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import isPostMessageDisconnectDefault from "isPostMessageDisconnect" /* 15707 */;
-import openInteractionIframeModalDefault from "openInteractionIframeModal" /* 19606 */;
+import isPostMessageDisconnectDefault from "isPostMessageDisconnect" /* 15695 */;
+import openInteractionIframeModalDefault from "openInteractionIframeModal" /* 19602 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
-import InteractionStore from "InteractionStore" /* 8161 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
+import InteractionStore from "InteractionStore" /* 8130 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, data, iFrameModal, interactionDebugContext;
@@ -78,7 +78,7 @@ let obj = function _handleInteractionModalCreate() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -121,7 +121,7 @@ let obj = function _handleInteractionModalCreate() {
               obj.addBreadcrumb(obj8);
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp18) {
           c4 = 3;

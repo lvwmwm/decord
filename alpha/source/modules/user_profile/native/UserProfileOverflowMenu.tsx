@@ -1,35 +1,35 @@
-// Module ID: 14341
-// Function ID: 14342
+// Module ID: 14328
+// Function ID: 14329
 // Name: UserProfileOverflowMenu
-// Dependencies: [32, 19, 17, 6528, 4672, 4765, 4726, 7475, 1072, 5473, 21, 504, 12009, 14342, 12702, 12010, 12013, 12017, 14348, 8047, 7431, 7450, 7984, 8076, 8077, 14349, 14350, 14351, 7656, 5485, 7978, 1113, 7648, 5037, 6337, 14357, 2121, 14358, 2555, 12042, 7650, 4648, 7456, 4879, 5504, 2151, 5467, 10634, 12925, 14360, 1655, 8570, 14355, 7502, 6933, 575, 14361, 2]
+// Dependencies: [32, 19, 17, 6499, 4641, 4734, 4695, 7445, 1072, 5442, 21, 504, 11987, 14329, 12685, 11988, 11991, 11995, 14335, 8016, 7401, 7420, 7953, 8045, 8046, 14336, 14337, 14338, 7626, 5454, 7948, 1113, 7618, 5006, 6308, 14344, 2121, 14345, 2557, 12019, 7620, 4617, 7426, 4848, 5473, 2151, 5436, 10612, 12907, 14347, 1655, 8539, 14342, 7472, 6903, 575, 14348, 2]
 // Exports: default
 
-// Module 14341 (UserProfileOverflowMenu)
+// Module 14328 (UserProfileOverflowMenu)
 import react_native from "react-native" /* 17 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import UserUtilsDefault from "UserUtils" /* 4879 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
-import CallConstants from "CallConstants" /* 5473 */;
-import ToastUtils from "ToastUtils" /* 5504 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6337 */;
-import ClipboardUtils from "ClipboardUtils" /* 7456 */;
-import Constants2 from "Constants" /* 7475 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7648 */;
-import CallActionCreatorsDefault from "CallActionCreators" /* 7650 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7978 */;
-import isGameOrganizationInviteRecipientDefault from "isGameOrganizationInviteRecipient" /* 12009 */;
-import openGameOrganizationInvitePickerDefault from "openGameOrganizationInvitePicker" /* 12042 */;
-import getApplicationInstallURL2 from "getApplicationInstallURL" /* 12925 */;
-import GuildInviteUtils from "GuildInviteUtils" /* 14342 */;
-import openShopThisLookActionSheet from "openShopThisLookActionSheet" /* 14351 */;
-import ShopThisLookAnalyticsUtils from "ShopThisLookAnalyticsUtils" /* 14355 */;
-import openUserContextMenuCommandsDefault from "openUserContextMenuCommands" /* 14360 */;
+import UserUtilsDefault from "UserUtils" /* 4848 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
+import CallConstants from "CallConstants" /* 5442 */;
+import ToastUtils from "ToastUtils" /* 5473 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6308 */;
+import ClipboardUtils from "ClipboardUtils" /* 7426 */;
+import Constants2 from "Constants" /* 7445 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7618 */;
+import CallActionCreatorsDefault from "CallActionCreators" /* 7620 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7948 */;
+import isGameOrganizationInviteRecipientDefault from "isGameOrganizationInviteRecipient" /* 11987 */;
+import openGameOrganizationInvitePickerDefault from "openGameOrganizationInvitePicker" /* 12019 */;
+import getApplicationInstallURL2 from "getApplicationInstallURL" /* 12907 */;
+import GuildInviteUtils from "GuildInviteUtils" /* 14329 */;
+import openShopThisLookActionSheet from "openShopThisLookActionSheet" /* 14338 */;
+import ShopThisLookAnalyticsUtils from "ShopThisLookAnalyticsUtils" /* 14342 */;
+import openUserContextMenuCommandsDefault from "openUserContextMenuCommands" /* 14347 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6528 */;
-import ChannelStore from "ChannelStore" /* 4672 */;
-import RelationshipStore from "RelationshipStore" /* 4765 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4726 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6499 */;
+import ChannelStore from "ChannelStore" /* 4641 */;
+import RelationshipStore from "RelationshipStore" /* 4734 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4695 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -304,7 +304,7 @@ export default function UserProfileOverflowMenu(user) {
               trackUserProfileAction(obj);
               const obj2 = ModalActionCreatorsDefault;
               const obj3 = { userId: id2, showUserProfile: callback1 };
-              obj2.pushLazy(asyncRequire(14357, dependencyMap.paths), obj3);
+              obj2.pushLazy(asyncRequire(14344, dependencyMap.paths), obj3);
               const obj4 = ActionSheetActionCreatorsDefault;
               obj4.hideActionSheet();
             }

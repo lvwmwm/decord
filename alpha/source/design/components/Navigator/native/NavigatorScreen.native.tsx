@@ -1,10 +1,10 @@
-// Module ID: 7097
-// Function ID: 7098
+// Module ID: 7067
+// Function ID: 7068
 // Name: NavigatorScreen
-// Dependencies: [19, 21, 7098, 7099, 7102, 2]
+// Dependencies: [19, 21, 7068, 7069, 7072, 2]
 
-// Module 7097 (NavigatorScreen)
-import config from "config" /* 7098 */;
+// Module 7067 (NavigatorScreen)
+import config from "config" /* 7068 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -29,13 +29,13 @@ const memoResult = react.memo(function NavigatorScreen(arg0) {
   }
   const obj = { postpone: screen.postponeRender, ignoreKeyboard: screen.ignoreKeyboard, viewStyle, children: items };
   items = [customNavbarResult, ];
-  const PostponeRender = tmp(7099).PostponeRender;
+  const PostponeRender = tmp(7069).PostponeRender;
   items[1] = screen.render(route.params, navigation);
   const tmp5 = React2(PostponeRender, obj);
   let tmp6 = tmp5;
   if (null != gradientColor) {
     const obj2 = { color: gradientColor, children: tmp5 };
-    tmp6 = _false(tmp(7102).NavigatorGradientProvider, obj2);
+    tmp6 = _false(tmp(7072).NavigatorGradientProvider, obj2);
   }
   return tmp6;
 });

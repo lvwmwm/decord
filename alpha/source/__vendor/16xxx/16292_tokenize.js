@@ -1,36 +1,44 @@
 // Module ID: 16292
 // Function ID: 16293
 // Name: tokenize
-// Dependencies: [16244]
+// Dependencies: [16235]
 
 // Module 16292 (tokenize)
-import tokenize from "tokenize" /* 16244 */;
+import tokenize from "tokenize" /* 16235 */;
 
 let items;
 let obj2;
-const LeftSquareBracket = tokenize.TYPE.LeftSquareBracket;
-const RightSquareBracket = tokenize.TYPE.RightSquareBracket;
-const obj = {
-  name: "Brackets",
+const RightParenthesis = tokenize.TYPE.RightParenthesis;
+let obj = {
+  name: "Function",
   structure: obj2,
   parse(call, arg1) {
+    let callResult;
     const self = this;
     const tokenStart = this.scanner.tokenStart;
-    this.eat(LeftSquareBracket);
-    const callResult = call.call(self, arg1);
-    if (!self.scanner.eof) {
-      self.eat(RightSquareBracket);
+    const str = this.consumeFunctionName();
+    const formatted = str.toLowerCase();
+    if (arg1.hasOwnProperty(formatted)) {
+      const obj = arg1[formatted];
+      callResult = obj.call(self, arg1);
+    } else {
+      callResult = call.call(self, arg1);
     }
-    const element = { type: "Brackets", loc: self.getLocation(tokenStart, self.scanner.tokenStart), children: callResult };
+    if (!self.scanner.eof) {
+      self.eat(RightParenthesis);
+    }
+    const element = { type: "Function", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: str, children: callResult };
     return element;
   },
-  generate(arg0) {
-    this.chunk("[");
-    this.children(arg0);
-    this.chunk("]");
-  }
+  generate(name) {
+    this.chunk(name.name);
+    this.chunk("(");
+    this.children(name);
+    this.chunk(")");
+  },
+  walkContext: "function"
 };
-obj2 = { children: items };
+obj2 = { name: String, children: items };
 items = [[]];
 
 export default obj;

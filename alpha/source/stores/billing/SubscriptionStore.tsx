@@ -32,8 +32,8 @@ function reset() {
 const isNoneSubscription = SubscriptionPlanRecord.isNoneSubscription;
 const SubscriptionRecord = SubscriptionRecord2.SubscriptionRecord;
 ({ SubscriptionStatusTypes: closure_4, SubscriptionTypes: hasOwnProperty } = Constants);
-let obj2 = null;
 let obj = null;
+let obj2 = null;
 let closure_8 = null;
 let items3 = null;
 let c10 = null;
@@ -50,7 +50,7 @@ class SubscriptionStore extends Store {
     this.waitFor(AuthenticationStore, OverridePremiumTypeStore);
   }
   hasFetchedSubscriptions() {
-    return null != obj2;
+    return null != obj;
   }
   hasFetchedMostRecentPremiumTypeSubscription() {
     return c11;
@@ -70,7 +70,7 @@ class SubscriptionStore extends Store {
       flag = true;
     }
     if (PREMIUM !== tmp2.PREMIUM) {
-      const tmp5 = flag ? obj : obj2;
+      const tmp5 = flag ? obj2 : obj;
       tmp4 = null;
       if (null != tmp5) {
         tmp4 = null;
@@ -115,7 +115,7 @@ class SubscriptionStore extends Store {
       flag = true;
     }
     if (PREMIUM !== tmp2.PREMIUM) {
-      const tmp5 = flag ? obj : obj2;
+      const tmp5 = flag ? obj2 : obj;
       tmp4 = null;
       if (null != tmp5) {
         tmp4 = null;
@@ -146,11 +146,11 @@ class SubscriptionStore extends Store {
     if (arg0 === undefined) {
       flag = true;
     }
-    return flag ? obj : obj2;
+    return flag ? obj2 : obj;
   }
   getSubscriptionById(subscription_id) {
     let tmp2;
-    if (obj2 != null) {
+    if (obj != null) {
       tmp2 = tmp[subscription_id];
     }
     return tmp2;
@@ -167,7 +167,7 @@ class SubscriptionStore extends Store {
       flag = true;
     }
     set = new Set(items);
-    const tmp2 = flag ? obj : obj2;
+    const tmp2 = flag ? obj2 : obj;
     let tmp3 = null;
     if (null != tmp2) {
       const _Object = Object;
@@ -206,7 +206,7 @@ class SubscriptionStore extends Store {
     const PREMIUM = hasOwnProperty.PREMIUM;
     if (PREMIUM !== hasOwnProperty.PREMIUM) {
       tmp3 = null;
-      if (null != obj) {
+      if (null != obj2) {
         tmp3 = null;
         const keys = Object.keys();
         if (keys !== undefined) {
@@ -271,61 +271,68 @@ obj = {
     });
   },
   BILLING_SUBSCRIPTION_UPDATE_SUCCESS: function handleSubscriptionUpdate(subscription) {
-    const f84632 = (id) => id.id === fromServer.id;
+    const f84613 = (id) => id.id === result.id;
     subscription = subscription.subscription;
     if (subscription.user_id === AuthenticationStore.getId()) {
       const fromServer = SubscriptionRecord.createFromServer(subscription);
-      obj2 = {};
-      const merged = Object.assign(obj2);
-      obj2[fromServer.id] = fromServer;
-      if (fromServer.status !== constants.UNPAID) {
-        obj = {};
-        const merged1 = Object.assign(obj);
-        obj[fromServer.id] = fromServer;
+      let result = fromServer;
+      if (undefined === fromServer.giftSubscription) {
+        result = fromServer;
+        if (null != tmp2) {
+          result = fromServer.set("giftSubscription", tmp2.giftSubscription);
+        }
       }
-      const tmp7 = null != items3 && fromServer.type === hasOwnProperty.GUILD;
-      if (tmp7) {
-        let tmp15;
-        const findIndexResult = items3.findIndex(f84632);
+      obj = {};
+      const merged = Object.assign(obj);
+      obj[result.id] = result;
+      if (result.status !== constants.UNPAID) {
+        obj2 = {};
+        const merged1 = Object.assign(obj2);
+        obj2[result.id] = result;
+      }
+      const tmp12 = null != items3 && result.type === hasOwnProperty.GUILD;
+      if (tmp12) {
+        let tmp20;
+        const findIndexResult = items3.findIndex(f84613);
         if (-1 === findIndexResult) {
-          const items = [fromServer];
+          const items = [result];
           HermesBuiltin.arraySpread(items, items3, 1);
-          tmp15 = items;
+          tmp20 = items;
         } else {
           const items1 = [];
           HermesBuiltin.arraySpread(items1, items3, 0);
-          if (fromServer.status !== constants.UNPAID) {
-            if (fromServer.status !== constants.ENDED) {
-              items1[findIndexResult] = fromServer;
-              tmp15 = items1;
+          if (result.status !== constants.UNPAID) {
+            if (result.status !== constants.ENDED) {
+              items1[findIndexResult] = result;
+              tmp20 = items1;
             }
           }
           items1.splice(findIndexResult, 1);
-          tmp15 = items1;
+          tmp20 = items1;
         }
-        items3 = tmp15;
+        items3 = tmp20;
       }
-      const tmp20 = null != _null && fromServer.type === hasOwnProperty.APPLICATION;
-      if (tmp20) {
-        let tmp28;
-        const findIndexResult1 = _null.findIndex(f84632);
+      const tmp25 = null != _null && result.type === hasOwnProperty.APPLICATION;
+      if (tmp25) {
+        let tmp33;
+        const findIndexResult1 = _null.findIndex(f84613);
         if (-1 === findIndexResult1) {
-          const items2 = [fromServer];
+          const items2 = [result];
           HermesBuiltin.arraySpread(items2, _null, 1);
-          tmp28 = items2;
+          tmp33 = items2;
         } else {
           items3 = [];
           HermesBuiltin.arraySpread(items3, _null, 0);
-          if (fromServer.status !== constants.UNPAID) {
-            if (fromServer.status !== constants.ENDED) {
-              items3[findIndexResult1] = fromServer;
-              tmp28 = items3;
+          if (result.status !== constants.UNPAID) {
+            if (result.status !== constants.ENDED) {
+              items3[findIndexResult1] = result;
+              tmp33 = items3;
             }
           }
           items3.splice(findIndexResult1, 1);
-          tmp28 = items3;
+          tmp33 = items3;
         }
-        items3 = tmp28;
+        items3 = tmp33;
       }
     }
   },
@@ -380,7 +387,7 @@ obj = {
   LOGOUT: reset
 };
 const subscriptionStore = new SubscriptionStore(DispatcherDefault, obj);
-const result = size.fileFinishedImporting("stores/billing/SubscriptionStore.tsx");
+let result = size.fileFinishedImporting("stores/billing/SubscriptionStore.tsx");
 
 export default subscriptionStore;
 export function getSubscriptionOfType(arg0, fn) {
@@ -393,7 +400,7 @@ export function getSubscriptionOfType(arg0, fn) {
       return null;
     }
   }
-  const tmp3 = flag ? obj : obj2;
+  const tmp3 = flag ? obj2 : obj;
   if (null == tmp3) {
     return null;
   } else {

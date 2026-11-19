@@ -1,28 +1,28 @@
-// Module ID: 10427
-// Function ID: 10428
+// Module ID: 10405
+// Function ID: 10406
 // Name: PremiumUpsellAlert
-// Dependencies: [32, 19, 17, 1194, 1388, 1390, 1072, 10428, 21, 4823, 575, 4884, 5510, 5414, 8730, 1113, 2174, 10420, 10421, 5032, 4830, 10455, 10456, 10457, 10018, 10458, 10459, 10460, 10461, 504, 7467, 5736, 10419, 1496, 7431, 7450, 5384, 1256, 10462, 6262, 5840, 1187, 10463, 10464, 10423, 2]
+// Dependencies: [32, 19, 17, 1194, 1388, 1390, 1072, 10406, 21, 4792, 575, 4853, 5479, 5383, 8699, 1113, 2174, 10398, 10399, 5001, 4799, 10433, 10434, 10435, 9996, 10436, 10437, 10438, 10439, 504, 7437, 5705, 10397, 1496, 7401, 7420, 5353, 1256, 10440, 6234, 5811, 1187, 10441, 10442, 10401, 2]
 
-// Module 10427 (PremiumUpsellAlert)
+// Module 10405 (PremiumUpsellAlert)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import PremiumUtils from "PremiumUtils" /* 2174 */;
-import shared from "shared" /* 4830 */;
-import native from "native" /* 4884 */;
-import useThemeDefault from "useTheme" /* 5032 */;
-import Text_Text from "Text/Text" /* 5414 */;
-import FastImageDefault from "FastImage" /* 5510 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5736 */;
-import usePremiumTrialOffer from "usePremiumTrialOffer" /* 8730 */;
-import useMessageMaxLengthDefault from "useMessageMaxLength" /* 10018 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10420 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 10421 */;
-import AppIconConstants from "AppIconConstants" /* 10428 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 10457 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 10463 */;
+import shared from "shared" /* 4799 */;
+import native from "native" /* 4853 */;
+import useThemeDefault from "useTheme" /* 5001 */;
+import Text_Text from "Text/Text" /* 5383 */;
+import FastImageDefault from "FastImage" /* 5479 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5705 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 8699 */;
+import useMessageMaxLengthDefault from "useMessageMaxLength" /* 9996 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10398 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10399 */;
+import AppIconConstants from "AppIconConstants" /* 10406 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 10435 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 10441 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1194 */;
@@ -30,7 +30,7 @@ import UserStore from "UserStore" /* 1388 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;
@@ -165,9 +165,9 @@ function PremiumGuildIdentityUpsell(alertWidth) {
   const tmp6 = map1;
   const tmp7 = PremiumUpsellItem;
   if (obj3.isThemeDark(tmp5)) {
-    tmp4Result = tmp4(10455);
+    tmp4Result = tmp4(10433);
   } else {
-    tmp4Result = tmp4(10456);
+    tmp4Result = tmp4(10434);
   }
   obj4 = { image: tmp4Result, title: intl.string(intl6.t.OVN9la), description: intl2.string(intl6.t.j0dyAG) };
   intl = tmp(1113).intl;
@@ -231,9 +231,9 @@ function LongerMessageUpsell(alertWidth) {
   const tmp7 = map1;
   const tmp8 = PremiumUpsellItem;
   if (obj3.isThemeDark(tmp5)) {
-    tmp4Result = tmp4(10458);
+    tmp4Result = tmp4(10436);
   } else {
-    tmp4Result = tmp4(10459);
+    tmp4Result = tmp4(10437);
   }
   obj4 = { image: tmp4Result, title: intl.string(intl6.t["8cjmTj"]), description: intl2.formatToPlainString(intl6.t.moN9wh, { maxLength: tmp6 }) };
   intl = tmp(1113).intl;
@@ -254,9 +254,9 @@ function GuildCapUpsell(alertWidth) {
   const tmp6 = map1;
   const tmp7 = PremiumUpsellItem;
   if (obj3.isThemeDark(tmp5)) {
-    tmp4Result = tmp4(10460);
+    tmp4Result = tmp4(10438);
   } else {
-    tmp4Result = tmp4(10461);
+    tmp4Result = tmp4(10439);
   }
   obj4 = { image: tmp4Result, title: intl.string(intl6.t["CoNXB+"]), description: intl2.format(intl6.t.mkXb2F, {}) };
   intl = tmp(1113).intl;
@@ -292,7 +292,7 @@ function UploadUpsell(arg0) {
           const result = obj.updatedUnsyncedSettings(obj2);
         }
     };
-    const TableSwitchRow = tmp(7467).TableSwitchRow;
+    const TableSwitchRow = tmp(7437).TableSwitchRow;
     intl = tmp(1113).intl;
     intl2 = tmp(1113).intl;
     tmp7Result = tmp7(TableSwitchRow, obj2);

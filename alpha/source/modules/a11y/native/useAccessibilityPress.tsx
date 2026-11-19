@@ -1,20 +1,20 @@
-// Module ID: 7695
-// Function ID: 7696
+// Module ID: 7665
+// Function ID: 7666
 // Name: react
 // Dependencies: [19, 2]
 // Exports: default
 
-// Module 7695 (react)
+// Module 7665 (react)
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/a11y/native/useAccessibilityPress.tsx");
 
-export default function useAccessibilityPress(map, arg1) {
-  let closure_0 = map;
+export default function useAccessibilityPress(set, arg1) {
+  let closure_0 = set;
   let closure_1 = arg1;
-  let closure_2 = react.useRef(map);
-  let items = [map];
+  let closure_2 = react.useRef(set);
+  let items = [set];
   const effect = react.useEffect(() => {
     closure_2.current = current;
   }, items);

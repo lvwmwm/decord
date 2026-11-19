@@ -1,10 +1,10 @@
-// Module ID: 9767
-// Function ID: 9768
+// Module ID: 9746
+// Function ID: 9747
 // Name: HTMLParserRunUtils
 // Dependencies: [2]
 // Exports: mergeRun
 
-// Module 9767 (HTMLParserRunUtils)
+// Module 9746 (HTMLParserRunUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/html_parser/HTMLParserRunUtils.tsx");

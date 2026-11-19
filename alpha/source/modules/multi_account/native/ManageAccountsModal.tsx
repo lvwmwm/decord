@@ -1,30 +1,30 @@
-// Module ID: 18009
-// Function ID: 18010
+// Module ID: 18002
+// Function ID: 18003
 // Name: ManageAccountsModal
-// Dependencies: [32, 5, 19, 17, 502, 4880, 1388, 13211, 13212, 18010, 1072, 21, 8550, 4823, 575, 504, 1187, 5769, 1113, 13215, 6941, 16778, 17510, 1655, 5033, 6325, 1256, 6928, 18011, 17511, 13221, 18012, 6962, 7620, 12928, 7003, 8473, 10498, 17536, 6333, 7280, 17535, 2]
+// Dependencies: [32, 5, 19, 17, 502, 4849, 1388, 13193, 13194, 18003, 1072, 21, 8519, 4792, 575, 504, 1187, 5740, 1113, 13197, 6911, 16771, 17503, 1655, 5002, 6296, 1256, 6898, 18004, 17504, 13203, 18005, 6932, 7590, 12910, 6973, 8442, 10476, 17529, 6304, 7250, 17528, 2]
 
-// Module 18009 (ManageAccountsModal)
+// Module 18002 (ManageAccountsModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5769 */;
-import HeaderShared from "HeaderShared" /* 8473 */;
-import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10498 */;
-import MultiAccountStore from "MultiAccountStore" /* 13211 */;
-import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 13215 */;
-import ManageAccountsConstants from "ManageAccountsConstants" /* 18010 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5740 */;
+import HeaderShared from "HeaderShared" /* 8442 */;
+import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10476 */;
+import MultiAccountStore from "MultiAccountStore" /* 13193 */;
+import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 13197 */;
+import ManageAccountsConstants from "ManageAccountsConstants" /* 18003 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import StreamerModeStore from "StreamerModeStore" /* 4880 */;
+import StreamerModeStore from "StreamerModeStore" /* 4849 */;
 import UserStore from "UserStore" /* 1388 */;
-import Constants_mod from "Constants" /* 13212 */;
+import Constants_mod from "Constants" /* 13194 */;
 import Constants_mod2 from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 8550 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import NativeStackView from "NativeStackView" /* 8519 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -68,7 +68,7 @@ function RemoveMultiAccountUserButton(user) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -108,7 +108,7 @@ function RemoveMultiAccountUserButton(user) {
               obj.removeAccount(closure_128_0.id);
             }
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp10) {
           c2 = 3;
@@ -149,10 +149,10 @@ function RemoveMultiAccountUserButton(user) {
         },
       children: closure_18(CircleMinusIcon, obj4)
     };
-    const PressableOpacity = tmp(6941).PressableOpacity;
+    const PressableOpacity = tmp(6911).PressableOpacity;
     intl = tmp(1113).intl;
     obj4 = { color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
-    CircleMinusIcon = tmp(16778).CircleMinusIcon;
+    CircleMinusIcon = tmp(16771).CircleMinusIcon;
     return closure_18(PressableOpacity, obj3);
   }
 }
@@ -435,7 +435,7 @@ const memoResult = react.memo(function ManageAccountsModal(initialRouteName) {
     },
     children(navigation) {
       const obj = { isEditing, navigation: navigation.navigation };
-      return authStore4(ManageAccounts, obj);
+      return closure_18(ManageAccounts, obj);
     }
   };
   _slicedToArray(react.useState(false), 2);

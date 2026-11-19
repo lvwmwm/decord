@@ -1,13 +1,13 @@
-// Module ID: 18967
-// Function ID: 18968
+// Module ID: 18959
+// Function ID: 18960
 // Name: BadgeCustomizationProfileCoachmark
-// Dependencies: [19, 1388, 4669, 504, 2174, 4837, 18968, 1113, 4891, 8993, 2]
+// Dependencies: [19, 1388, 4638, 504, 2174, 4806, 18960, 1113, 4860, 8967, 2]
 // Exports: default
 
-// Module 18967 (BadgeCustomizationProfileCoachmark)
+// Module 18959 (BadgeCustomizationProfileCoachmark)
 import intl4 from "intl" /* 1113 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4669 */;
-import BadgesCoachmarkRive from "BadgesCoachmarkRive" /* 4891 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4638 */;
+import BadgesCoachmarkRive from "BadgesCoachmarkRive" /* 4860 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;

@@ -1,13 +1,13 @@
-// Module ID: 20057
-// Function ID: 20058
+// Module ID: 20068
+// Function ID: 20069
 // Name: useArchiveOrDelete
-// Dependencies: [5, 32, 19, 16677, 16690, 1113, 5769, 1187, 38, 5504, 2]
+// Dependencies: [5, 32, 19, 16670, 16683, 1113, 5740, 1187, 38, 5473, 2]
 // Exports: default
 
-// Module 20057 (useArchiveOrDelete)
+// Module 20068 (useArchiveOrDelete)
 import intl13 from "intl" /* 1113 */;
-import ToastUtilsAll from "ToastUtils" /* 5504 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16690 */;
+import ToastUtilsAll from "ToastUtils" /* 5473 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16683 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -52,7 +52,7 @@ export default function useArchiveOrDelete(guildId, groupListingId, editStateId,
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -125,7 +125,7 @@ export default function useArchiveOrDelete(guildId, groupListingId, editStateId,
               closure_128_3.goBack();
             }
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp30) {
           c2 = 3;

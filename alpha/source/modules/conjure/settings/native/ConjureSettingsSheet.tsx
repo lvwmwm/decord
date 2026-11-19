@@ -1,21 +1,21 @@
-// Module ID: 18317
-// Function ID: 18318
+// Module ID: 18310
+// Function ID: 18311
 // Name: ConjureSettingsSheet
-// Dependencies: [5, 32, 19, 17, 6878, 6888, 6529, 21, 4121, 4823, 575, 5037, 504, 18318, 18344, 18365, 7464, 1113, 7426, 7465, 5837, 18367, 18370, 18377, 5414, 6931, 5421, 7508, 7497, 13459, 11238, 2]
+// Dependencies: [5, 32, 19, 17, 6848, 6858, 6500, 21, 4089, 4792, 575, 5006, 504, 18311, 18344, 18365, 7434, 1113, 7396, 7435, 5808, 18367, 18370, 18377, 5383, 6901, 5390, 7478, 7467, 13441, 11216, 2]
 
-// Module 18317 (ConjureSettingsSheet)
+// Module 18310 (ConjureSettingsSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef4121 from "module_4121" /* 4121 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5037 */;
+import _modDef4089 from "module_4089" /* 4089 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5006 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 6878 */;
-import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 6888 */;
-import ConjureProjectStore_mod from "ConjureProjectStore" /* 6529 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 6848 */;
+import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 6858 */;
+import ConjureProjectStore_mod from "ConjureProjectStore" /* 6500 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -195,7 +195,7 @@ class ConjureSettingsSheet {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -285,7 +285,7 @@ class ConjureSettingsSheet {
             }
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         } catch (tmp30) {
           c3 = 3;
           throw tmp30;
@@ -482,7 +482,7 @@ let ConjureProjectStore = ConjureProjectStore_mod;
 ConjureProjectStore = ConjureProjectStore_mod;
 ({ jsx: closure_12, jsxs: map1 } = Fragment);
 const ConjureSettingsSheet_str = "ConjureSettingsSheet";
-let obj = { project: _modDef4121.W0eQfN, app: _modDef4121.lFaJYF, secrets: _modDef4121.vDpCPU, model: _modDef4121.Rs3qc9, linked: _modDef4121.fBEHdq, experimental: _modDef4121["0Pe9uw"] };
+let obj = { project: _modDef4089.W0eQfN, app: _modDef4089.lFaJYF, secrets: _modDef4089.vDpCPU, model: _modDef4089.Rs3qc9, linked: _modDef4089.fBEHdq, experimental: _modDef4089["0Pe9uw"] };
 let obj2 = { container: obj3 };
 obj3 = { gap: nativeDefault.space.PX_16 };
 const authStore3 = createStyles.createStyles(obj2);

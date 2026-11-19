@@ -1,12 +1,12 @@
-// Module ID: 15019
-// Function ID: 15020
+// Module ID: 15005
+// Function ID: 15006
 // Name: ActivateDeviceUtils
-// Dependencies: [1072, 6990, 2]
+// Dependencies: [1072, 6960, 2]
 // Exports: clientIdToActivateDevicePlatform
 
-// Module 15019 (ActivateDeviceUtils)
+// Module 15005 (ActivateDeviceUtils)
 import Constants from "Constants" /* 1072 */;
-import ConsoleOAuthApplications from "ConsoleOAuthApplications" /* 6990 */;
+import ConsoleOAuthApplications from "ConsoleOAuthApplications" /* 6960 */;
 import size from "module_2" /* 2 */;
 
 const PlatformTypes = Constants.PlatformTypes;

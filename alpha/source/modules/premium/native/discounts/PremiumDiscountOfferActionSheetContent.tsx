@@ -1,26 +1,26 @@
-// Module ID: 19126
-// Function ID: 19127
+// Module ID: 19118
+// Function ID: 19119
 // Name: PremiumDiscountOfferActionSheetContent
-// Dependencies: [19, 17, 1390, 21, 4823, 575, 12277, 1113, 14640, 7586, 8355, 2174, 17177, 5414, 17181, 5421, 8859, 2]
+// Dependencies: [19, 17, 1390, 21, 4792, 575, 12260, 1113, 14627, 7556, 8324, 2174, 17170, 5383, 17174, 5390, 8832, 2]
 
-// Module 19126 (PremiumDiscountOfferActionSheetContent)
+// Module 19118 (PremiumDiscountOfferActionSheetContent)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1113 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
 import PremiumUtils from "PremiumUtils" /* 2174 */;
-import Text_Text from "Text/Text" /* 5414 */;
-import components_Button_Button from "components/Button/Button" /* 5421 */;
-import FolderIcon from "FolderIcon" /* 7586 */;
-import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 8355 */;
-import NitroWheelIcon2 from "NitroWheelIcon" /* 8859 */;
-import UserIcon from "UserIcon" /* 12277 */;
-import ChatSmileIcon from "ChatSmileIcon" /* 14640 */;
-import NitroWumpusFlightRight3dIllustration from "NitroWumpusFlightRight3dIllustration" /* 17177 */;
-import PremiumPerksListDefault from "PremiumPerksList" /* 17181 */;
+import Text_Text from "Text/Text" /* 5383 */;
+import components_Button_Button from "components/Button/Button" /* 5390 */;
+import FolderIcon from "FolderIcon" /* 7556 */;
+import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 8324 */;
+import NitroWheelIcon2 from "NitroWheelIcon" /* 8832 */;
+import UserIcon from "UserIcon" /* 12260 */;
+import ChatSmileIcon from "ChatSmileIcon" /* 14627 */;
+import NitroWumpusFlightRight3dIllustration from "NitroWumpusFlightRight3dIllustration" /* 17170 */;
+import PremiumPerksListDefault from "PremiumPerksList" /* 17174 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

@@ -1,24 +1,24 @@
-// Module ID: 19038
-// Function ID: 19039
+// Module ID: 19030
+// Function ID: 19031
 // Name: ChannelSettingsChangeRTCRegion
-// Dependencies: [717, 19, 4672, 18981, 21, 4823, 575, 4884, 1113, 11211, 7260, 7258, 7620, 504, 38, 2]
+// Dependencies: [717, 19, 4641, 18973, 21, 4792, 575, 4853, 1113, 11189, 7230, 7228, 7590, 504, 38, 2]
 // Exports: default
 
-// Module 19038 (ChannelSettingsChangeRTCRegion)
+// Module 19030 (ChannelSettingsChangeRTCRegion)
 import Fragment from "Fragment" /* 21 */;
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import native from "native" /* 4884 */;
-import TableRadioGroup from "TableRadioGroup" /* 7258 */;
-import TableRadioRow from "TableRadioRow" /* 7260 */;
-import _mod7620 from "module_7620" /* 7620 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 11211 */;
+import native from "native" /* 4853 */;
+import TableRadioGroup from "TableRadioGroup" /* 7228 */;
+import TableRadioRow from "TableRadioRow" /* 7230 */;
+import _mod7590 from "module_7590" /* 7590 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 11189 */;
 import _toArray from "_toArray" /* 717 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4672 */;
-import RegionStore from "RegionStore" /* 18981 */;
-import createStyles from "createStyles" /* 4823 */;
+import ChannelStore from "ChannelStore" /* 4641 */;
+import RegionStore from "RegionStore" /* 18973 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -73,7 +73,7 @@ class ChannelSettingsChangeRTCRegion extends PureComponent {
       c0 = null;
       tmp = null;
     }
-    let obj = self(11211);
+    let obj = self(11189);
     obj.updateChannel({ rtcRegion: tmp });
     self.setState({ submitting: true }, () => {
       const obj = ChannelSettingsActionCreatorsDefault;
@@ -99,7 +99,7 @@ class ChannelSettingsChangeRTCRegion extends PureComponent {
     });
   }
   render() {
-    const Form = _mod7620.Form;
+    const Form = _mod7590.Form;
     return <Form style={closure_8(this.context).form}>{this.renderRegions()}</Form>;
   }
 }

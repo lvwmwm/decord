@@ -1,17 +1,17 @@
-// Module ID: 7978
-// Function ID: 7979
+// Module ID: 7948
+// Function ID: 7949
 // Name: showUserProfileActionSheet
-// Dependencies: [5, 7174, 4765, 3, 1388, 2121, 7979, 6865, 4648, 7980, 5037, 8060, 2]
+// Dependencies: [5, 7144, 4734, 3, 1388, 2121, 6835, 4617, 7949, 5006, 8029, 2]
 // Exports: getUserProfileActionSheetKey, getUserProfileBlockedSpeedBumpActionSheetKey, getUserProfileIgnoredSpeedBumpActionSheetKey, showUserProfileActionSheetPostConnection
 
-// Module 7978 (showUserProfileActionSheet)
+// Module 7948 (showUserProfileActionSheet)
 import LoggerDefault from "Logger" /* 3 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import UserSettings from "UserSettings" /* 4648 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
-import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 7174 */;
+import UserSettings from "UserSettings" /* 4617 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
+import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 7144 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import RelationshipStore from "RelationshipStore" /* 4765 */;
+import RelationshipStore from "RelationshipStore" /* 4734 */;
 import size from "module_2" /* 2 */;
 
 let authStore, c4, c5;
@@ -25,7 +25,7 @@ function showUserProfileActionSheet(ignoreBlockedSpeedBump, arg1) {
     const isBlockedResult = RelationshipStore.isBlocked(ignoreBlockedSpeedBump.userId);
     const isIgnoredResult = RelationshipStore.isIgnored(ignoreBlockedSpeedBump.userId);
     if (isIgnoredResult) {
-      const tmp8 = asyncRequire(7980, dependencyMap.paths);
+      const tmp8 = asyncRequire(7949, dependencyMap.paths);
       const _HermesInternal = HermesInternal;
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
       const combined = "" + UserProfile + "IgnoredSpeedBump" + ignoreBlockedSpeedBump.userId;
@@ -38,7 +38,7 @@ function showUserProfileActionSheet(ignoreBlockedSpeedBump, arg1) {
       return openLazy(tmp8, combined, obj, str);
     }
   }
-  const tmp21 = asyncRequire(8060, dependencyMap.paths);
+  const tmp21 = asyncRequire(8029, dependencyMap.paths);
   const openLazy2 = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
   const combined1 = "" + UserProfile + ignoreBlockedSpeedBump.userId;
@@ -80,7 +80,7 @@ export function showUserProfileActionSheetPostConnection(arg0) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c3;
@@ -101,8 +101,8 @@ export function showUserProfileActionSheetPostConnection(arg0) {
             getUser = undefined;
             c4 = 1;
             c5 = 1;
-            const obj5 = { value: authStore(tmp37[5])(tmp37[4], tmp37.paths), done: false };
-            return obj5;
+            const obj4 = { value: authStore(tmp34[5])(tmp34[4], tmp34.paths), done: false };
+            return obj4;
           }
         } else {
           if (1 === c4) {
@@ -111,25 +111,22 @@ export function showUserProfileActionSheetPostConnection(arg0) {
               throw value;
             } else if (arg0 === 2) {
               c5 = 3;
-              const obj6 = { value, done: true };
-              return obj6;
+              const obj5 = { value, done: true };
+              return obj5;
             } else {
               authStore = value.default;
               if (null == authStore.getUser(closure_129_0.userId)) {
-                const obj4 = authStore(tmp37[6]);
-                if (obj4.getIsUserProfileLinkFetchEnabled("showUserProfileActionSheet")) {
-                  c3 = 1;
-                  c4 = 3;
-                  c5 = 1;
-                  const obj7 = { value: authStore(tmp37[5])(tmp37[7], tmp37.paths), done: false };
-                  return obj7;
-                }
+                c3 = 1;
+                c4 = 3;
+                c5 = 1;
+                const obj6 = { value: authStore(tmp34[5])(tmp34[6], tmp34.paths), done: false };
+                return obj6;
               }
             }
           } else if (2 === c4) {
             c3 = 0;
             const _HermesInternal = HermesInternal;
-            logger.log("Failed to fetch user " + closure_129_0.userId + ":", tmp37);
+            logger.log("Failed to fetch user " + closure_129_0.userId + ":", tmp34);
           } else if (3 === c4) {
             if (arg0 === 1) {
               c5 = 3;
@@ -137,14 +134,14 @@ export function showUserProfileActionSheetPostConnection(arg0) {
             } else if (arg0 === 2) {
               c3 = 0;
               c5 = 3;
-              const obj8 = { value, done: true };
-              return obj8;
+              const obj7 = { value, done: true };
+              return obj7;
             } else {
               getUser = value.getUser;
               c4 = 4;
               c5 = 1;
-              const obj9 = { value: getUser(closure_129_0.userId), done: false };
-              return obj9;
+              const obj8 = { value: getUser(closure_129_0.userId), done: false };
+              return obj8;
             }
           } else if (arg0 === 1) {
             c5 = 3;
@@ -161,12 +158,12 @@ export function showUserProfileActionSheetPostConnection(arg0) {
             showUserProfileActionSheet(closure_129_0);
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
-      } catch (tmp37) {
+      } catch (tmp34) {
         if (0 === c3) {
           c5 = 3;
-          throw tmp37;
+          throw tmp34;
         } else {
           c4 = 2;
         }

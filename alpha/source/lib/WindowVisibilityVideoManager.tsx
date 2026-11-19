@@ -1,16 +1,16 @@
-// Module ID: 5674
-// Function ID: 5675
+// Module ID: 5643
+// Function ID: 5644
 // Name: WindowVisibilityVideoManager
-// Dependencies: [5592, 4667, 3, 1089, 572, 5675, 5678, 5679, 2]
+// Dependencies: [5561, 4636, 3, 1089, 572, 5644, 5647, 5648, 2]
 
-// Module 5674 (WindowVisibilityVideoManager)
+// Module 5643 (WindowVisibilityVideoManager)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import ExternalPipDefault from "ExternalPip" /* 5675 */;
-import WindowVisibilityUtilsDefault from "WindowVisibilityUtils" /* 5678 */;
-import DesktopGamePerfExperiment from "DesktopGamePerfExperiment" /* 5679 */;
-import TypedEventEmitter from "TypedEventEmitter" /* 5592 */;
+import ExternalPipDefault from "ExternalPip" /* 5644 */;
+import WindowVisibilityUtilsDefault from "WindowVisibilityUtils" /* 5647 */;
+import DesktopGamePerfExperiment from "DesktopGamePerfExperiment" /* 5648 */;
+import TypedEventEmitter from "TypedEventEmitter" /* 5561 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

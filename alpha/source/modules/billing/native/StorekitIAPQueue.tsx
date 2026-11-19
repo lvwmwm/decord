@@ -1,12 +1,12 @@
-// Module ID: 9212
-// Function ID: 9213
+// Module ID: 9188
+// Function ID: 9189
 // Name: StorekitIAPQueue
-// Dependencies: [5, 17, 5487, 6767, 9193, 2]
+// Dependencies: [5, 17, 5456, 6738, 9169, 2]
 
-// Module 9212 (StorekitIAPQueue)
+// Module 9188 (StorekitIAPQueue)
 import react_native from "react-native" /* 17 */;
-import CountryCodeUtils from "CountryCodeUtils" /* 5487 */;
-import utils_PriceUtils from "utils/PriceUtils" /* 6767 */;
+import CountryCodeUtils from "CountryCodeUtils" /* 5456 */;
+import utils_PriceUtils from "utils/PriceUtils" /* 6738 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -91,7 +91,7 @@ class StorekitIAPQueueClass {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } else {
           let c3;
@@ -133,7 +133,7 @@ class StorekitIAPQueueClass {
                 c3 = 0;
               }
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             }
           } catch (tmp18) {
             closure_2 = tmp18;
@@ -169,7 +169,7 @@ class StorekitIAPQueueClass {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } else {
           let c3;
@@ -248,7 +248,7 @@ class StorekitIAPQueueClass {
                 c3 = 0;
               }
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             }
           } catch (tmp18) {
             closure_2 = tmp18;
@@ -279,7 +279,7 @@ class StorekitIAPQueueClass {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         let c3;
@@ -305,7 +305,7 @@ class StorekitIAPQueueClass {
                 }
               }
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             }
           } else if (1 === c4) {
             c3 = 0;

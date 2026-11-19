@@ -1,11 +1,11 @@
-// Module ID: 6525
-// Function ID: 6526
+// Module ID: 6496
+// Function ID: 6497
 // Name: GuildStickers
-// Dependencies: [5, 3, 4701, 2]
+// Dependencies: [5, 3, 4670, 2]
 
-// Module 6525 (GuildStickers)
+// Module 6496 (GuildStickers)
 import LoggerDefault from "Logger" /* 3 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 4701 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 4670 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -52,7 +52,7 @@ class GuildStickers {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {

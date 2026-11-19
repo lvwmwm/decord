@@ -1,13 +1,13 @@
-// Module ID: 7664
-// Function ID: 7665
+// Module ID: 7634
+// Function ID: 7635
 // Name: useGuildEmbeddedApplications
-// Dependencies: [5, 19, 2165, 1072, 504, 1089, 1255, 6567, 2]
+// Dependencies: [5, 19, 2165, 1072, 504, 1089, 1255, 6538, 2]
 // Exports: useGuildEmbeddedApplications
 
-// Module 7664 (useGuildEmbeddedApplications)
+// Module 7634 (useGuildEmbeddedApplications)
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6567 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6538 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
@@ -61,7 +61,7 @@ let closure_3 = _asyncToGenerator(async (arg0, value, arg2) => {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "HermesInternal", done: "+60" };
     }
   } else {
     try {
@@ -90,7 +90,7 @@ let closure_3 = _asyncToGenerator(async (arg0, value, arg2) => {
         return obj;
       }
       c3 = 3;
-      return { value: "HermesInternal", done: null };
+      return { value: "HermesInternal", done: "+60" };
     } catch (tmp10) {
       c3 = 3;
       throw tmp10;

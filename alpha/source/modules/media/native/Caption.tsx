@@ -1,16 +1,16 @@
-// Module ID: 11596
-// Function ID: 11597
+// Module ID: 11574
+// Function ID: 11575
 // Name: Caption
-// Dependencies: [17, 1072, 21, 4823, 575, 4820, 1187, 2]
+// Dependencies: [17, 1072, 21, 4792, 575, 4789, 1187, 2]
 // Exports: Caption
 
-// Module 11596 (Caption)
+// Module 11574 (Caption)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import createStyles_mod from "createStyles" /* 4823 */;
-import ColorUtils_mod from "ColorUtils" /* 4820 */;
+import createStyles_mod from "createStyles" /* 4792 */;
+import ColorUtils_mod from "ColorUtils" /* 4789 */;
 import size from "module_2" /* 2 */;
 
 let ColorUtils;

@@ -1,14 +1,14 @@
-// Module ID: 19162
-// Function ID: 19163
+// Module ID: 19154
+// Function ID: 19155
 // Name: HexagonCampaignExpiredPromoSheet
-// Dependencies: [5, 32, 19, 4669, 21, 15776, 6469, 16475, 5384, 5505, 1113, 8342, 15796, 11185, 16482, 4508, 5414, 5421, 2]
+// Dependencies: [5, 32, 19, 4638, 21, 15767, 6440, 16466, 5353, 5474, 1113, 8311, 15787, 11163, 16473, 4476, 5383, 5390, 2]
 // Exports: default
 
-// Module 19162 (HexagonCampaignExpiredPromoSheet)
+// Module 19154 (HexagonCampaignExpiredPromoSheet)
 import Fragment from "Fragment" /* 21 */;
-import _modDef4508 from "module_4508" /* 4508 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4669 */;
-import Text_Text from "Text/Text" /* 5414 */;
+import _modDef4476 from "module_4476" /* 4476 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4638 */;
+import Text_Text from "Text/Text" /* 5383 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -32,9 +32,9 @@ export default function HexagonCampaignExpiredPromoSheet(markAsDismissed) {
   importDefault = undefined;
   let callback;
   react = undefined;
-  const tmp = markAsDismissed(15776);
+  const tmp = markAsDismissed(15767);
   const useTrackHexagonCampaignContentViewed = tmp.useTrackHexagonCampaignContentViewed;
-  const trackHexagonCampaignContentViewed = useTrackHexagonCampaignContentViewed(markAsDismissed(6469).QuestContent.AD_PERK_MODAL, markAsDismissed(15776).HexagonCampaignContentSurface.EXPIRED_SHEET, true);
+  const trackHexagonCampaignContentViewed = useTrackHexagonCampaignContentViewed(markAsDismissed(6440).QuestContent.AD_PERK_MODAL, markAsDismissed(15767).HexagonCampaignContentSurface.EXPIRED_SHEET, true);
   const tmp3 = callback(react.useState(false), 2);
   [tmp4, c1] = tmp3;
   dependencyMap = react.useRef(false);
@@ -54,7 +54,7 @@ export default function HexagonCampaignExpiredPromoSheet(markAsDismissed) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -125,7 +125,7 @@ export default function HexagonCampaignExpiredPromoSheet(markAsDismissed) {
   callback = useCallback(function() {
     return closure_0(...arguments);
   }, items);
-  let obj = markAsDismissed(5384);
+  let obj = markAsDismissed(5353);
   const unmountEffect = obj.useUnmountEffect(() => {
     callback(ContentDismissActionType.AUTO_DISMISS);
   });
@@ -145,7 +145,7 @@ export default function HexagonCampaignExpiredPromoSheet(markAsDismissed) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -182,7 +182,7 @@ export default function HexagonCampaignExpiredPromoSheet(markAsDismissed) {
           open("HEXAGON_CAMPAIGN_RESTORE_ERROR", obj);
         }
         ref = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       } catch (tmp14) {
         ref = 3;
         throw tmp14;
@@ -199,7 +199,7 @@ export default function HexagonCampaignExpiredPromoSheet(markAsDismissed) {
     const obj3 = markAsDismissed(ref[12]);
     const result1 = obj3.openHexagonCampaignLearnMore();
   }, []);
-  const PromoSheet = markAsDismissed(11185).PromoSheet;
+  const PromoSheet = markAsDismissed(11163).PromoSheet;
   let intl = markAsDismissed(1113).intl;
   const intl2 = markAsDismissed(1113).intl;
   let obj3 = {
@@ -208,7 +208,7 @@ export default function HexagonCampaignExpiredPromoSheet(markAsDismissed) {
     }
   };
   let obj4 = { size: "lg", grow: true, text: intl3.string(markAsDismissed(1113).t.i4jeWR), loading: tmp4, onPress: callback1 };
-  const Button = markAsDismissed(5421).Button;
+  const Button = markAsDismissed(5390).Button;
   intl3 = markAsDismissed(1113).intl;
-  return <PromoSheet illustration={null} title={intl.string(_modDef4508.bZTNDw)} description={intl2.format(_modDef4508.uL0TOA, obj3)} onDismiss={callback2} actions={null} />;
+  return <PromoSheet illustration={null} title={intl.string(_modDef4476.bZTNDw)} description={intl2.format(_modDef4476.uL0TOA, obj3)} onDismiss={callback2} actions={null} />;
 };

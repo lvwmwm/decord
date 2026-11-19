@@ -1,55 +1,29 @@
 // Module ID: 15511
 // Function ID: 15512
-// Dependencies: [15470, 15512, 15516]
+// Dependencies: [15454, 15474]
 
 // Module 15511
-import _mod15470 from "module_15470" /* 15470 */;
-import _mod15512 from "module_15512" /* 15512 */;
+import _mod15474 from "module_15474" /* 15474 */;
+import getOwnPropertyDescriptor_mod from "module_15454" /* 15454 */;
 
-let tmp;
-const _mod15516 = tmp(15516);
-const f109345 = (arg0, arg1, arg2) => {
-  const tmp3 = _mod15470(arg0);
-  const tmp4 = _mod15512(tmp3);
-  if (0 === tmp4) {
-    return !c0 && -1;
-  } else {
-    let sum = _mod15516(arg2, tmp4);
-    const tmp16 = c0;
-    if (tmp16) {
-      if (arg1 != arg1) {
-        if (tmp4 > sum) {
-          while (tmp3[+sum] == tmp3[+sum]) {
-            sum = tmp7 + 1;
-          }
-          return true;
-        }
-      }
-      return !c0 && -1;
-    }
-    let sum1 = sum;
-    if (tmp4 > sum) {
-      let num;
-      while (true) {
-        num = c0;
-        if (c0) {
-          if (tmp3[sum1] === arg1) {
-            break;
-          }
-        }
-        sum1 = sum1 + 1;
-      }
-      if (!num) {
-        num = sum1;
-      }
-      if (!num) {
-        num = 0;
-      }
-      return num;
-    }
+let getOwnPropertyDescriptor = getOwnPropertyDescriptor_mod;
+if (getOwnPropertyDescriptor) {
+  const _Object = Object;
+  getOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
+}
+const tmp = _mod15474(prototype, "name");
+let tmp3 = tmp;
+const tmp2 = tmp && "something" === (function something() {
+
+}).name;
+if (tmp3) {
+  const _module = getOwnPropertyDescriptor;
+  let tmp5 = !_module;
+  if (_module) {
+    tmp5 = getOwnPropertyDescriptor && getOwnPropertyDescriptor(prototype, "name").configurable;
+    getOwnPropertyDescriptor && getOwnPropertyDescriptor(prototype, "name").configurable;
   }
-};
-let c0 = false;
-const obj = { includes: f109345, indexOf: f109345 };
+  tmp3 = tmp5;
+}
 
-export default obj;
+export default { EXISTS: tmp, PROPER: tmp2, CONFIGURABLE: tmp3 };

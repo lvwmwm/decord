@@ -1,20 +1,20 @@
-// Module ID: 16632
-// Function ID: 16633
+// Module ID: 16623
+// Function ID: 16624
 // Name: QuestDockContentExpanded
-// Dependencies: [19, 17, 6466, 16538, 21, 4823, 16539, 11731, 1655, 16537, 5424, 2]
+// Dependencies: [19, 17, 6437, 16529, 21, 4792, 16530, 11709, 1655, 16528, 5393, 2]
 
-// Module 16632 (QuestDockContentExpanded)
+// Module 16623 (QuestDockContentExpanded)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import spring_spring from "spring/spring" /* 5424 */;
-import QuestConstants from "QuestConstants" /* 6466 */;
-import useSafeAreaInsetsSharedValueDefault from "useSafeAreaInsetsSharedValue" /* 11731 */;
-import QuestDockUtils from "QuestDockUtils" /* 16537 */;
-import QuestDockConstants from "QuestDockConstants" /* 16538 */;
-import QuestDockGestureContext from "QuestDockGestureContext" /* 16539 */;
+import spring_spring from "spring/spring" /* 5393 */;
+import QuestConstants from "QuestConstants" /* 6437 */;
+import useSafeAreaInsetsSharedValueDefault from "useSafeAreaInsetsSharedValue" /* 11709 */;
+import QuestDockUtils from "QuestDockUtils" /* 16528 */;
+import QuestDockConstants from "QuestDockConstants" /* 16529 */;
+import QuestDockGestureContext from "QuestDockGestureContext" /* 16530 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size_mod from "module_2" /* 2 */;
 
 let maxHeight, num, obj1, obj3, tmp2, tmp3, width, width2, width3;
@@ -120,7 +120,7 @@ const memoResult = react.memo(function QuestDockContentExpanded(arg0) {
   QuestDockContentExpandedTsx1.__initData = tmp7;
   const animatedStyle = useAnimatedStyle(QuestDockContentExpandedTsx1);
   const items2 = [tmp.wrapper, animatedStyle];
-  return jsx(_modDef1655.View, { style: items2, children });
+  return jsx(_modDef1655.View, { pointerEvents: "box-none", style: items2, children });
 });
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/quests/native/QuestDock/QuestDockContentExpanded.tsx");

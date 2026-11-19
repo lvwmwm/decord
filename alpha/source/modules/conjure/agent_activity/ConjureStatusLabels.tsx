@@ -1,13 +1,13 @@
-// Module ID: 18496
-// Function ID: 18497
+// Module ID: 18489
+// Function ID: 18490
 // Name: ConjureStatusLabels
-// Dependencies: [4121, 1113, 6881, 2]
+// Dependencies: [4089, 1113, 6851, 2]
 // Exports: connectionLabel, isPublishLineSwitch, isRecallingLine, recallingLine, runesUsedLabels, thinkingLine
 
-// Module 18496 (ConjureStatusLabels)
+// Module 18489 (ConjureStatusLabels)
 import intl5 from "intl" /* 1113 */;
-import _modDef4121 from "module_4121" /* 4121 */;
-import ConjureUsageTypes from "ConjureUsageTypes" /* 6881 */;
+import _modDef4089 from "module_4089" /* 4089 */;
+import ConjureUsageTypes from "ConjureUsageTypes" /* 6851 */;
 import size from "module_2" /* 2 */;
 
 function thinkingLabel(saving) {
@@ -48,19 +48,19 @@ function thinkingLabel(saving) {
   }
   const tmp = null != activity && "end" !== activity.phase;
   if (flag5) {
-    xnCAaP = _modDef4121["1jqaAc"];
+    xnCAaP = _modDef4089["1jqaAc"];
   } else if (flag6) {
-    xnCAaP = _modDef4121.xCdlEF;
+    xnCAaP = _modDef4089.xCdlEF;
   } else if (flag7) {
-    xnCAaP = _modDef4121.Rhx0rn;
+    xnCAaP = _modDef4089.Rhx0rn;
   } else if (flag2) {
-    xnCAaP = _modDef4121.M4KI5F;
+    xnCAaP = _modDef4089.M4KI5F;
   } else if (flag3) {
-    xnCAaP = _modDef4121.j8tmjK;
+    xnCAaP = _modDef4089.j8tmjK;
   } else if (flag4) {
     xnCAaP = items[0];
   } else {
-    const tmp4 = _modDef4121;
+    const tmp4 = _modDef4089;
     if (flag) {
       xnCAaP = tmp4.mKK6wB;
     } else if (compacting) {
@@ -71,7 +71,7 @@ function thinkingLabel(saving) {
   }
   return xnCAaP;
 }
-const items = [_modDef4121["AX+5lk"], _modDef4121.VAU6A7, _modDef4121["1emysd"], _modDef4121.EXHX3L, _modDef4121.ChslmX];
+const items = [_modDef4089["AX+5lk"], _modDef4089.VAU6A7, _modDef4089["1emysd"], _modDef4089.EXHX3L, _modDef4089.ChslmX];
 const result = size.fileFinishedImporting("modules/conjure/agent_activity/ConjureStatusLabels.tsx");
 
 export const INDICATOR_PASS_MS = 1000;
@@ -79,16 +79,16 @@ export const INDICATOR_PASS_STAGGER_MS = 1800;
 export const RECALLING_LINES = items;
 export function isPublishLineSwitch(line, arg1) {
   const intl = intl5.intl;
-  let tmp4 = line === intl.string(_modDef4121.xCdlEF);
+  let tmp4 = line === intl.string(_modDef4089.xCdlEF);
   if (!tmp4) {
     const intl2 = tmp(1113).intl;
-    tmp4 = line === intl2.string(tmp3(4121).Rhx0rn);
+    tmp4 = line === intl2.string(tmp3(4089).Rhx0rn);
   }
   const intl3 = tmp(1113).intl;
-  let tmp5 = arg1 === intl3.string(tmp3(4121).xCdlEF);
+  let tmp5 = arg1 === intl3.string(tmp3(4089).xCdlEF);
   if (!tmp5) {
     const intl4 = tmp(1113).intl;
-    tmp5 = arg1 === intl4.string(tmp3(4121).Rhx0rn);
+    tmp5 = arg1 === intl4.string(tmp3(4089).Rhx0rn);
   }
   return tmp4 !== tmp5;
 }
@@ -106,13 +106,13 @@ export function isRecallingLine(current) {
 export function connectionLabel(stateFromStores8) {
   if ("connecting" === stateFromStores8) {
     const intl3 = intl5.intl;
-    return intl3.string(_modDef4121["ECl+Dx"]);
+    return intl3.string(_modDef4089["ECl+Dx"]);
   } else if ("closed" === stateFromStores8) {
     const intl2 = intl5.intl;
-    return intl2.string(_modDef4121.mQZSp1);
+    return intl2.string(_modDef4089.mQZSp1);
   } else if ("failed" === stateFromStores8) {
     const intl = intl5.intl;
-    return intl.string(_modDef4121.xzJSZ6);
+    return intl.string(_modDef4089.xzJSZ6);
   }
 }
 export { thinkingLabel };
@@ -127,11 +127,11 @@ export function runesUsedLabels(projectUsage) {
   let obj3;
   const obj = ConjureUsageTypes;
   const runesFromUsdResult = obj.runesFromUsd(projectUsage.cost_usd);
-  const obj2 = { text: formatToPlainString(gMuw5d, obj3), aria: intl2.formatToPlainString(_modDef4121.Z4LvGa, obj4) };
+  const obj2 = { text: formatToPlainString(gMuw5d, obj3), aria: intl2.formatToPlainString(_modDef4089.Z4LvGa, obj4) };
   const intl = intl5.intl;
   formatToPlainString = intl.formatToPlainString;
   obj3 = { runes: runesFromUsdResult.toLocaleString() };
-  gMuw5d = _modDef4121.gMuw5d;
+  gMuw5d = _modDef4089.gMuw5d;
   intl2 = intl5.intl;
   return obj2;
 }

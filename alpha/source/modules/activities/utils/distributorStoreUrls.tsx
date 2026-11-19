@@ -1,10 +1,10 @@
-// Module ID: 9674
-// Function ID: 9675
+// Module ID: 9653
+// Function ID: 9654
 // Name: distributorStoreUrls
 // Dependencies: [2]
 // Exports: buildXboxGamePassStoreDeepLinkUrl, buildXboxGamePassStoreUrl
 
-// Module 9674 (distributorStoreUrls)
+// Module 9653 (distributorStoreUrls)
 import size from "module_2" /* 2 */;
 
 const discord7937464 = "discord7937464";

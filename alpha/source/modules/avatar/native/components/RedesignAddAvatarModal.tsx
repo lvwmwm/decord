@@ -1,20 +1,20 @@
-// Module ID: 19666
-// Function ID: 19667
+// Module ID: 19662
+// Function ID: 19663
 // Name: RedesignAddAvatarModal
-// Dependencies: [5, 32, 19, 17, 8044, 1072, 21, 4823, 575, 1630, 504, 15760, 19647, 8823, 8116, 8386, 8820, 8043, 5414, 1113, 19656, 5421, 19644, 2]
+// Dependencies: [5, 32, 19, 17, 8013, 1072, 21, 4792, 575, 1630, 504, 15749, 19643, 8792, 8085, 8355, 8789, 8012, 5383, 1113, 19652, 5390, 19640, 2]
 // Exports: default
 
-// Module 19666 (RedesignAddAvatarModal)
+// Module 19662 (RedesignAddAvatarModal)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import AddAvatarModalActionCreators from "AddAvatarModalActionCreators" /* 19644 */;
+import AddAvatarModalActionCreators from "AddAvatarModalActionCreators" /* 19640 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8044 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8013 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -75,7 +75,7 @@ export default function RedesignAddAvatarModal(route) {
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -115,7 +115,7 @@ export default function RedesignAddAvatarModal(route) {
                 closure_129_1(true);
               }
               c3 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             }
             pendingImage = undefined;
             if (null != base64) {

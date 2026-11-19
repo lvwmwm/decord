@@ -1,10 +1,10 @@
-// Module ID: 9484
-// Function ID: 9485
+// Module ID: 9463
+// Function ID: 9464
 // Name: FractionalNitroPricingExperiment
 // Dependencies: [1452, 1075, 2]
 // Exports: FractionalNitroPricingExposure, isFractionalNitroPricingSku
 
-// Module 9484 (FractionalNitroPricingExperiment)
+// Module 9463 (FractionalNitroPricingExperiment)
 import FractionalPremiumSKUs from "FractionalPremiumSKUs" /* 1075 */;
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;

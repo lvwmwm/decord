@@ -1,11 +1,11 @@
-// Module ID: 16512
-// Function ID: 16513
+// Module ID: 16503
+// Function ID: 16504
 // Name: useOrbsArcadePlayButtonLabel
-// Dependencies: [16487, 504, 14168, 1113, 2]
+// Dependencies: [16478, 504, 14150, 1113, 2]
 // Exports: default
 
-// Module 16512 (useOrbsArcadePlayButtonLabel)
-import OrbsArcadeStore from "OrbsArcadeStore" /* 16487 */;
+// Module 16503 (useOrbsArcadePlayButtonLabel)
+import OrbsArcadeStore from "OrbsArcadeStore" /* 16478 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

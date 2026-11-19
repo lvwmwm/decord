@@ -1,10 +1,10 @@
-// Module ID: 9270
-// Function ID: 9271
+// Module ID: 9246
+// Function ID: 9247
 // Name: BillingInformation
-// Dependencies: [5, 1072, 9262, 2174, 1360, 1113, 9191, 2]
+// Dependencies: [5, 1072, 9238, 2174, 1360, 1113, 9167, 2]
 // Exports: useBillingInformationNative
 
-// Module 9270 (BillingInformation)
+// Module 9246 (BillingInformation)
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -69,7 +69,7 @@ export function useBillingInformationNative(subscription, subscriptionPeriodStar
                   const obj3 = { value, done: true };
                   return obj3;
                 } else {
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "+60" };
                 }
               } else {
                 try {
@@ -98,7 +98,7 @@ export function useBillingInformationNative(subscription, subscriptionPeriodStar
                     return obj;
                   } else {
                     c0 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "+60" };
                   }
                 } catch (tmp6) {
                   c0 = 3;

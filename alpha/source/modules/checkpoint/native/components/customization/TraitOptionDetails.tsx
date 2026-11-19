@@ -1,18 +1,18 @@
-// Module ID: 12714
-// Function ID: 12715
+// Module ID: 12697
+// Function ID: 12698
 // Name: TraitOptionDetails
-// Dependencies: [19, 17, 21, 4823, 575, 5923, 1113, 3339, 5414, 9005, 7450, 6244, 12715, 2]
+// Dependencies: [19, 17, 21, 4792, 575, 5894, 1113, 3339, 5383, 8979, 7420, 6215, 12698, 2]
 // Exports: default
 
-// Module 12714 (TraitOptionDetails)
+// Module 12697 (TraitOptionDetails)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef3339 from "module_3339" /* 3339 */;
-import Text_Text from "Text/Text" /* 5414 */;
-import RarityBadgeDefault from "RarityBadge" /* 12715 */;
+import Text_Text from "Text/Text" /* 5383 */;
+import RarityBadgeDefault from "RarityBadge" /* 12698 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,14 +1,14 @@
-// Module ID: 9092
-// Function ID: 9093
+// Module ID: 9067
+// Function ID: 9068
 // Name: announcement_modal_video_led
-// Dependencies: [32, 1197, 9066, 9056, 9093, 9058, 2]
+// Dependencies: [32, 1197, 9034, 9030, 9068, 9032, 2]
 
-// Module 9092 (announcement_modal_video_led)
+// Module 9067 (announcement_modal_video_led)
 import _mod1197 from "module_1197" /* 1197 */;
-import localized_string from "localized_string" /* 9056 */;
-import cta_button from "cta_button" /* 9058 */;
-import theme_aware_asset from "theme_aware_asset" /* 9066 */;
-import announcement_modal_perk_card from "announcement_modal_perk_card" /* 9093 */;
+import localized_string from "localized_string" /* 9030 */;
+import cta_button from "cta_button" /* 9032 */;
+import theme_aware_asset from "theme_aware_asset" /* 9034 */;
+import announcement_modal_perk_card from "announcement_modal_perk_card" /* 9068 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

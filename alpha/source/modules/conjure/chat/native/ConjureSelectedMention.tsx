@@ -1,15 +1,15 @@
-// Module ID: 18533
-// Function ID: 18534
+// Module ID: 18526
+// Function ID: 18527
 // Name: ConjureSelectedMention
-// Dependencies: [19, 21, 4823, 575, 5414, 2]
+// Dependencies: [19, 21, 4792, 575, 5383, 2]
 // Exports: default
 
-// Module 18533 (ConjureSelectedMention)
+// Module 18526 (ConjureSelectedMention)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5414 */;
+import Text_Text from "Text/Text" /* 5383 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;

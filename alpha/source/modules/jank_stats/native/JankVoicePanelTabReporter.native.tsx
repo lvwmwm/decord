@@ -1,13 +1,13 @@
-// Module ID: 19426
-// Function ID: 19427
+// Module ID: 19422
+// Function ID: 19423
 // Name: JankVoicePanelTabReporter
-// Dependencies: [19, 11710, 11708, 17585, 1655, 1708, 2]
+// Dependencies: [19, 11688, 11686, 17578, 1655, 1708, 2]
 // Exports: reportJankVoicePanelTabRequest
 
-// Module 19426 (JankVoicePanelTabReporter)
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11708 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11710 */;
-import getJankSurfaceName from "getJankSurfaceName" /* 17585 */;
+// Module 19422 (JankVoicePanelTabReporter)
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11686 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11688 */;
+import getJankSurfaceName from "getJankSurfaceName" /* 17578 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

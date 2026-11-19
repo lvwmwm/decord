@@ -1,8 +1,8 @@
-// Module ID: 5991
-// Function ID: 5992
+// Module ID: 5962
+// Function ID: 5963
 // Dependencies: [2]
 
-// Module 5991
+// Module 5962
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/outfit/camper.png.js");

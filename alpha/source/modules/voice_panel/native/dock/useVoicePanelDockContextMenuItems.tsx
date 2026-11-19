@@ -1,19 +1,19 @@
-// Module ID: 18039
-// Function ID: 18040
+// Module ID: 18032
+// Function ID: 18033
 // Name: useVoicePanelDockContextMenuItems
-// Dependencies: [19, 1072, 11709, 18040, 10886, 18041, 18042, 18043, 10627, 6441, 1108, 18045, 1113, 5513, 18046, 18048, 3275, 14433, 11086, 18050, 7583, 10331, 18052, 2]
+// Dependencies: [19, 1072, 11687, 18033, 10864, 18034, 18035, 18036, 10605, 6412, 1108, 18038, 1113, 5482, 18039, 18041, 3275, 14420, 11064, 18043, 7553, 10309, 18045, 2]
 // Exports: default
 
-// Module 18039 (useVoicePanelDockContextMenuItems)
+// Module 18032 (useVoicePanelDockContextMenuItems)
 import Constants from "Constants" /* 1072 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import intl6 from "intl" /* 1113 */;
 import _modDef3275 from "module_3275" /* 3275 */;
-import UserPlusIcon from "UserPlusIcon" /* 5513 */;
-import ChatIcon from "ChatIcon" /* 7583 */;
-import SettingsIcon from "SettingsIcon" /* 10331 */;
-import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 18045 */;
-import ActivitiesIcon from "ActivitiesIcon" /* 18050 */;
+import UserPlusIcon from "UserPlusIcon" /* 5482 */;
+import ChatIcon from "ChatIcon" /* 7553 */;
+import SettingsIcon from "SettingsIcon" /* 10309 */;
+import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 18038 */;
+import ActivitiesIcon from "ActivitiesIcon" /* 18043 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -89,9 +89,9 @@ export default function useVoicePanelDockContextMenuItems(id, arg1) {
       const obj2 = { label: closure_6.text, IconComponent: MobilePhoneShareIcon, action: tmp14.onPress };
       tmp14 = closure_6;
       if (closure_6.isActive) {
-        MobilePhoneShareIcon = tmp15(18046).MobilePhoneXIcon;
+        MobilePhoneShareIcon = tmp15(18039).MobilePhoneXIcon;
       } else {
-        MobilePhoneShareIcon = tmp15(18048).MobilePhoneShareIcon;
+        MobilePhoneShareIcon = tmp15(18041).MobilePhoneShareIcon;
       }
       push2(obj2);
     }
@@ -116,9 +116,9 @@ export default function useVoicePanelDockContextMenuItems(id, arg1) {
       }
       const obj3 = { label: stringResult, IconComponent: VideoIcon, action: closure_7.onPress };
       if (closure_7.isVideoEnabled) {
-        VideoIcon = tmp28(14433).VideoSlashIcon;
+        VideoIcon = tmp28(14420).VideoSlashIcon;
       } else {
-        VideoIcon = tmp28(11086).VideoIcon;
+        VideoIcon = tmp28(11064).VideoIcon;
       }
       push3(obj3);
     }

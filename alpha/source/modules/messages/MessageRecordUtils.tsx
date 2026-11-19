@@ -1,42 +1,42 @@
-// Module ID: 5874
-// Function ID: 5875
+// Module ID: 5845
+// Function ID: 5846
 // Name: MessageRecordUtils
-// Dependencies: [5875, 4766, 1407, 502, 4765, 1388, 1072, 5876, 5541, 6249, 11, 6254, 6255, 6290, 2169, 6291, 6293, 2]
+// Dependencies: [5846, 4735, 1407, 502, 4734, 1388, 1072, 5847, 5510, 6220, 11, 6225, 6226, 6262, 2169, 6263, 6265, 2]
 // Exports: canEditMessageWithStickers, hasEphemeralAppearance, updateMessageRecord, updateServerMessage
 
-// Module 5874 (MessageRecordUtils)
+// Module 5845 (MessageRecordUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef2169 from "module_2169" /* 2169 */;
-import findCodedLinksDefault from "findCodedLinks" /* 5541 */;
-import useMessageAuthor from "useMessageAuthor" /* 6249 */;
-import isMessageMentioned from "isMessageMentioned" /* 6254 */;
-import GiftCodeUtils from "GiftCodeUtils" /* 6255 */;
-import transformMessagPollDefault from "transformMessagPoll" /* 6290 */;
-import EmbedUtils from "EmbedUtils" /* 6291 */;
-import StickersUtils from "StickersUtils" /* 6293 */;
-import InteractionRecord from "InteractionRecord" /* 5875 */;
-import MessageRecord_mod from "MessageRecord" /* 4766 */;
+import findCodedLinksDefault from "findCodedLinks" /* 5510 */;
+import useMessageAuthor from "useMessageAuthor" /* 6220 */;
+import isMessageMentioned from "isMessageMentioned" /* 6225 */;
+import GiftCodeUtils from "GiftCodeUtils" /* 6226 */;
+import transformMessagPollDefault from "transformMessagPoll" /* 6262 */;
+import EmbedUtils from "EmbedUtils" /* 6263 */;
+import StickersUtils from "StickersUtils" /* 6265 */;
+import InteractionRecord from "InteractionRecord" /* 5846 */;
+import MessageRecord_mod from "MessageRecord" /* 4735 */;
 import UserRecord from "UserRecord" /* 1407 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RelationshipStore from "RelationshipStore" /* 4765 */;
+import RelationshipStore from "RelationshipStore" /* 4734 */;
 import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const isMessageMentionedDefault = isMessageMentioned;
-let _require, results, set, set2, set3;
+let _require, results, set, set2, set3, set4;
 
 let closure_12;
 let closure_4;
 let hasOwnProperty;
 let map1;
 let unpackModuleId;
-const f89878 = (item) => {
+const f89831 = (item) => {
   const obj = EmbedUtils;
   return obj.sanitizeEmbed(message2.channel_id, message2.id, item);
 };
-const f89880 = (item) => {
+const f89833 = (item) => {
   const obj = {};
   const merged = Object.assign(item);
   if (null != obj.count_details) {
@@ -59,7 +59,7 @@ const f89880 = (item) => {
   }
   return obj;
 };
-const f89881 = (message) => {
+const f89834 = (message) => {
   const obj = { message: createMinimalMessageRecord(message.message), moderator_report: message.moderator_report };
   const tmp = new closure_1_4(obj);
   return tmp;
@@ -91,7 +91,7 @@ function createMinimalMessageRecord(timestamp) {
     items = [];
   } else {
     const embeds = timestamp.embeds;
-    const mapped = embeds.map(f89878);
+    const mapped = embeds.map(f89831);
     const obj2 = require("EmbedUtils");
     items = obj2.mergeEmbedsOnURL(mapped);
   }
@@ -274,7 +274,7 @@ function createMessageRecord(message, arg1) {
     items = [];
   } else {
     const message_snapshots = message.message_snapshots;
-    items = message_snapshots.map(f89881);
+    items = message_snapshots.map(f89834);
   }
   if (reactions == null) {
     reactions = message.reactions;
@@ -330,12 +330,32 @@ function createMessageRecord(message, arg1) {
   if (reactions == null) {
     reactions = [];
   }
-  const items2 = [...reactions];
+  const items2 = [...reactions.filter(isCurrentReactionType)];
   if (mapped1 == null) {
     mapped1 = [];
   }
   HermesBuiltin.arraySpread(items2, mapped1, tmp49);
-  items1 = items2.map(f89880);
+  items1 = items2.map(f89833);
+}
+function isCurrentReactionType(count_details) {
+  count_details = count_details.count_details;
+  let tmp = null == count_details;
+  if (!tmp) {
+    let tmp2 = null != count_details.vote;
+    if (!tmp2) {
+      let num = count_details.normal;
+      if (num == null) {
+        num = 0;
+      }
+      let num2 = count_details.burst;
+      if (num2 == null) {
+        num2 = 0;
+      }
+      tmp2 = num + num2 > 0;
+    }
+    tmp = tmp2;
+  }
+  return tmp;
 }
 let MessageRecord = MessageRecord_mod;
 ({ MessageSnapshotRecord: closure_4, MinimalMessageRecord: hasOwnProperty } = MessageRecord);
@@ -416,7 +436,7 @@ export function updateMessageRecord(message, message2) {
         items = [];
       } else {
         const embeds = message2.embeds;
-        const mapped = embeds.map(f89878);
+        const mapped = embeds.map(f89831);
         const obj7 = require("EmbedUtils");
         items = obj7.mergeEmbedsOnURL(mapped);
       }
@@ -430,7 +450,7 @@ export function updateMessageRecord(message, message2) {
         items1 = [];
       } else {
         const message_snapshots = message2.message_snapshots;
-        items1 = message_snapshots.map(f89881);
+        items1 = message_snapshots.map(f89834);
       }
       set2Result = set2("messageSnapshots", items1);
     }
@@ -454,7 +474,7 @@ export function updateMessageRecord(message, message2) {
     }
     let set4Result = result6;
     if (null != message2.components) {
-      const set4 = result6.set;
+      set4 = result6.set;
       const obj11 = require("InteractionComponentUtils");
       set4Result = set4("components", obj11.transformComponents(message2.components));
     }
@@ -478,9 +498,9 @@ export function updateMessageRecord(message, message2) {
         }
         const items3 = [];
         let num = 0;
-        const arraySpreadResult = HermesBuiltin.arraySpread(items3, reactions, 0);
+        const arraySpreadResult = HermesBuiltin.arraySpread(items3, reactions.filter(isCurrentReactionType), 0);
         HermesBuiltin.arraySpread(items3, [], arraySpreadResult);
-        items2 = items3.map(f89880);
+        items2 = items3.map(f89833);
       }
       set5Result = set5("reactions", items2);
     }

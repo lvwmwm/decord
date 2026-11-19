@@ -1,11 +1,11 @@
-// Module ID: 6429
-// Function ID: 6430
+// Module ID: 6400
+// Function ID: 6401
 // Name: MemberVerificationAlertPending
-// Dependencies: [19, 21, 6426, 6430, 6431, 1113, 5421, 2]
+// Dependencies: [19, 21, 6397, 6401, 6402, 1113, 5390, 2]
 // Exports: default
 
-// Module 6429 (MemberVerificationAlertPending)
-import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6426 */;
+// Module 6400 (MemberVerificationAlertPending)
+import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6397 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -35,18 +35,18 @@ export default function MemberVerificationAlertPending(guildId) {
     const obj2 = { guildId };
     const result = obj.openMemberVerificationCancelPendingAlert(obj2);
   }, items);
-  let obj = { icon: guildId(6431).ClipboardListIcon, header: intl.string(guildId(1113).t.zhfXbs), subtitle: intl2.string(guildId(1113).t["SRM/e/"]), buttons: closure_6(closure_5, obj2) };
-  const tmp3 = onClose(6430);
+  let obj = { icon: guildId(6402).ClipboardListIcon, header: intl.string(guildId(1113).t.zhfXbs), subtitle: intl2.string(guildId(1113).t["SRM/e/"]), buttons: closure_6(closure_5, obj2) };
+  const tmp3 = onClose(6401);
   const merged1 = Object.assign(merged);
   intl = guildId(1113).intl;
   intl2 = guildId(1113).intl;
   obj2 = { children: items1 };
   const obj3 = { variant: "secondary", text: intl3.string(guildId(1113).t.f293OM), onPress: onClose };
-  const Button = guildId(5421).Button;
+  const Button = guildId(5390).Button;
   intl3 = guildId(1113).intl;
   items1 = [closure_4(Button, obj3), ];
   const obj4 = { text: intl4.string(guildId(1113).t.mqtdmQ), variant: "destructive", onPress: callback };
-  const Button2 = guildId(5421).Button;
+  const Button2 = guildId(5390).Button;
   intl4 = guildId(1113).intl;
   items1[1] = closure_4(Button2, obj4);
   return closure_4(tmp3, obj);

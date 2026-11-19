@@ -1,10 +1,10 @@
-// Module ID: 7683
-// Function ID: 7684
+// Module ID: 7653
+// Function ID: 7654
 // Name: PinotExperiment
 // Dependencies: [1246, 1452, 504, 2]
 // Exports: isPinotAdminEnabled, isPinotMemberEnabled, useIsPinotAdminEnabled, useIsPinotChannelDiscoverableEnabled, useIsPinotMemberEnabled, useIsPinotMemberEnabledWithoutExposure, useIsPinotMemberNoticeEnabled, useIsPinotSummaryManagementEnabled
 
-// Module 7683 (PinotExperiment)
+// Module 7653 (PinotExperiment)
 import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
 import ApexExperiment_mod from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;

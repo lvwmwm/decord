@@ -1,23 +1,23 @@
-// Module ID: 7704
-// Function ID: 7705
+// Module ID: 7674
+// Function ID: 7675
 // Name: AgeVerificationActionCreators
-// Dependencies: [5, 1388, 6321, 7705, 6404, 6412, 21, 7706, 6337, 7716, 2121, 6417, 7739, 7740, 1627, 5770, 7741, 1401, 1380, 7742, 7743, 572, 7744, 7756, 5502, 6322, 7901, 7902, 7903, 2]
+// Dependencies: [5, 1388, 6292, 7675, 6375, 6383, 21, 7676, 6308, 7686, 2121, 6388, 7709, 7710, 1627, 5741, 7711, 1401, 1380, 7712, 7713, 572, 7714, 7726, 5471, 6293, 7871, 7872, 7873, 2]
 
-// Module 7704 (AgeVerificationActionCreators)
+// Module 7674 (AgeVerificationActionCreators)
 import Fragment from "Fragment" /* 21 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import LinkingDefault from "Linking" /* 5502 */;
-import useAlertStore from "useAlertStore" /* 5770 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6322 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 6404 */;
-import Constants from "Constants" /* 6412 */;
-import AgeVerificationIncodeWebViewConstants from "AgeVerificationIncodeWebViewConstants" /* 7705 */;
-import ManualReviewDecidedTeenAlertModalDefault from "ManualReviewDecidedTeenAlertModal" /* 7901 */;
-import ManualReviewPendingAlertModalDefault from "ManualReviewPendingAlertModal" /* 7902 */;
-import ManualReviewFallbackAlertModalDefault from "ManualReviewFallbackAlertModal" /* 7903 */;
+import LinkingDefault from "Linking" /* 5471 */;
+import useAlertStore from "useAlertStore" /* 5741 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6293 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 6375 */;
+import Constants from "Constants" /* 6383 */;
+import AgeVerificationIncodeWebViewConstants from "AgeVerificationIncodeWebViewConstants" /* 7675 */;
+import ManualReviewDecidedTeenAlertModalDefault from "ManualReviewDecidedTeenAlertModal" /* 7871 */;
+import ManualReviewPendingAlertModalDefault from "ManualReviewPendingAlertModal" /* 7872 */;
+import ManualReviewFallbackAlertModalDefault from "ManualReviewFallbackAlertModal" /* 7873 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1388 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 6321 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 6292 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -82,7 +82,7 @@ function openIncodeAgeVerificationModal(arg0) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -151,7 +151,7 @@ function openIncodeAgeVerificationModal(arg0) {
               combined = 0;
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp21) {
           if (0 === combined) {
@@ -356,7 +356,7 @@ let obj = {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             }
           } else {
             try {
@@ -412,7 +412,7 @@ let obj = {
                   }), {}, closure_1_6);
                 }
                 c3 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "+60" };
               }
             } catch (tmp19) {
               c3 = 3;

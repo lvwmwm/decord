@@ -1,26 +1,26 @@
-// Module ID: 14362
-// Function ID: 14363
+// Module ID: 14349
+// Function ID: 14350
 // Name: BumpingFistsSpotIllustration
-// Dependencies: [19, 21, 14363, 14364, 14365, 7268, 5510, 2]
+// Dependencies: [19, 21, 14350, 14351, 14352, 7238, 5479, 2]
 // Exports: BumpingFistsSpotIllustration
 
-// Module 14362 (BumpingFistsSpotIllustration)
+// Module 14349 (BumpingFistsSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 7268 */;
-import _modDef14363 from "module_14363" /* 14363 */;
-import _modDef14364 from "module_14364" /* 14364 */;
-import _modDef14365 from "module_14365" /* 14365 */;
+import react_native from "react-native" /* 7238 */;
+import _modDef14350 from "module_14350" /* 14350 */;
+import _modDef14351 from "module_14351" /* 14351 */;
+import _modDef14352 from "module_14352" /* 14352 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef14363 };
+let obj2 = { uri: _modDef14350 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef14364 };
+let obj3 = { uri: _modDef14351 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef14365 };
-({ uri: _modDef14365 });
+obj[3] = { uri: _modDef14352 };
+({ uri: _modDef14352 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/BumpingFistsSpotIllustration.native.tsx");
 

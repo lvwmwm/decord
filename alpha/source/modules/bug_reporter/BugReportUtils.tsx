@@ -1,15 +1,15 @@
-// Module ID: 11132
-// Function ID: 11133
+// Module ID: 11110
+// Function ID: 11111
 // Name: bug_reporter/BugReportUtils
-// Dependencies: [5, 1192, 1072, 1285, 1113, 11133, 1380, 6340, 1264, 2]
+// Dependencies: [5, 1192, 1072, 1285, 1113, 11111, 1380, 6311, 1264, 2]
 // Exports: fetchBugReportConfig, getFeatureId, getPriorities, submitReport
 
-// Module 11132 (bug_reporter/BugReportUtils)
+// Module 11110 (bug_reporter/BugReportUtils)
 import intl9 from "intl" /* 1113 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6340 */;
-import DebugUploadManager from "DebugUploadManager" /* 11133 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6311 */;
+import DebugUploadManager from "DebugUploadManager" /* 11111 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
 import Constants from "Constants" /* 1072 */;
@@ -49,7 +49,7 @@ obj = function _submitReport() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c6;

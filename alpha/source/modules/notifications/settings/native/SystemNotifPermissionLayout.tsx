@@ -1,24 +1,24 @@
-// Module ID: 17475
-// Function ID: 17476
+// Module ID: 17468
+// Function ID: 17469
 // Name: SystemNotifPermissionLayout
-// Dependencies: [5, 32, 19, 13207, 17476, 1072, 6404, 13208, 21, 3051, 4823, 575, 13217, 16951, 504, 1380, 1256, 13209, 10825, 5837, 6958, 10324, 5414, 1113, 5421, 17479, 7713, 13210, 17480, 2]
+// Dependencies: [5, 32, 19, 13189, 17469, 1072, 6375, 13190, 21, 3051, 4792, 575, 13199, 16944, 504, 1380, 1256, 13191, 10803, 5808, 6928, 10302, 5383, 1113, 5390, 17472, 7683, 13192, 17473, 2]
 // Exports: default
 
-// Module 17475 (SystemNotifPermissionLayout)
+// Module 17468 (SystemNotifPermissionLayout)
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import _modDef3051 from "module_3051" /* 3051 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 6404 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 13209 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 6375 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 13191 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13207 */;
-import DeclarativeSystemNotifPermissionStore from "DeclarativeSystemNotifPermissionStore" /* 17476 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13189 */;
+import DeclarativeSystemNotifPermissionStore from "DeclarativeSystemNotifPermissionStore" /* 17469 */;
 import Constants from "Constants" /* 1072 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13208 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13190 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -37,7 +37,7 @@ let obj6;
 let size;
 let tmp;
 let unpackModuleId;
-const react_nativeDefault = tmp(10825);
+const react_nativeDefault = tmp(10803);
 function SystemNotifPermissionHeader() {
   let BellSlashIcon;
   let Button;
@@ -207,7 +207,7 @@ export default function SystemNotifPermissionLayout(node) {
             obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } else {
           let c2;
@@ -260,11 +260,11 @@ export default function SystemNotifPermissionLayout(node) {
                 } else {
                   c2 = 0;
                   c4 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "+60" };
                 }
               }
               c4 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             }
           } catch (tmp24) {
             if (0 === c2) {

@@ -1,10 +1,10 @@
-// Module ID: 4943
-// Function ID: 4944
+// Module ID: 4912
+// Function ID: 4913
 // Name: utils/FunctionUtils
 // Dependencies: [32, 5, 2]
 // Exports: areArraysShallowlyEqual, cachedFunction, clearObject, ignoreErrors, isPlainObjectEmpty, promiseThrottle
 
-// Module 4943 (utils/FunctionUtils)
+// Module 4912 (utils/FunctionUtils)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -26,7 +26,7 @@ let obj = function _ignoreErrors() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -58,7 +58,7 @@ let obj = function _ignoreErrors() {
               c3 = 0;
             }
             c1 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp4) {
           if (0 === c3) {

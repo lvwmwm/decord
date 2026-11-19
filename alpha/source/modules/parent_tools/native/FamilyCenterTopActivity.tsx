@@ -1,20 +1,20 @@
-// Module ID: 16120
-// Function ID: 16121
+// Module ID: 16111
+// Function ID: 16112
 // Name: FamilyCenterTopActivity
-// Dependencies: [19, 17, 1388, 8247, 21, 4823, 575, 563, 5037, 16121, 2121, 16122, 7953, 1113, 2723, 5414, 1187, 7233, 2]
+// Dependencies: [19, 17, 1388, 8216, 21, 4792, 575, 563, 5006, 16112, 2121, 16113, 7923, 1113, 2723, 5383, 1187, 7203, 2]
 // Exports: default
 
-// Module 16120 (FamilyCenterTopActivity)
+// Module 16111 (FamilyCenterTopActivity)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
-import GuildIcon from "GuildIcon" /* 7233 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
+import GuildIcon from "GuildIcon" /* 7203 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 8247 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 8216 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -66,7 +66,7 @@ export default function FamilyCenterTopActivity() {
   const callback = react.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { topUserActivities: stateFromStores };
-    obj.openLazy(asyncRequire(16121, dependencyMap.paths), "FamilyCenterTopUsers", obj2);
+    obj.openLazy(asyncRequire(16112, dependencyMap.paths), "FamilyCenterTopUsers", obj2);
   }, items2);
   if (0 !== stateFromStores.length) {
     let tmp9 = stateFromStores.length > 0;
@@ -86,7 +86,7 @@ export default function FamilyCenterTopActivity() {
               user = user.getUser(user_id.user_id);
               let tmp2 = null;
               if (null != user) {
-                const obj = { user, size: closure_0(stateFromStores1[16]).AvatarSizes.SMALL, guildId: "r" };
+                const obj = { user, size: closure_0(stateFromStores1[16]).AvatarSizes.SMALL, guildId: "Array" };
                 const Avatar = closure_0(stateFromStores1[16]).Avatar;
                 tmp2 = closure_1_7(Avatar, obj, user.id);
               }

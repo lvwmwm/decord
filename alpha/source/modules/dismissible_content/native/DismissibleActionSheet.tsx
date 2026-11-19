@@ -1,12 +1,12 @@
-// Module ID: 11573
-// Function ID: 11574
+// Module ID: 11551
+// Function ID: 11552
 // Name: DismissibleActionSheet
-// Dependencies: [19, 5384, 5037, 2]
+// Dependencies: [19, 5353, 5006, 2]
 // Exports: DismissibleActionSheet
 
-// Module 11573 (DismissibleActionSheet)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
-import useMountEffectDefault from "useMountEffect" /* 5384 */;
+// Module 11551 (DismissibleActionSheet)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
+import useMountEffectDefault from "useMountEffect" /* 5353 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -19,7 +19,7 @@ import PlatformUtils from "PlatformUtils" /* 1380 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, closure_18;
+let _require, blocklistExecutables;
 
 function gameFromServer(id) {
   let aliases;
@@ -114,8 +114,8 @@ let c13 = false;
 let closure_14 = null;
 let c15 = false;
 etag = "";
-let blocklistExecutables = [];
 const authStore4 = [];
+let closure_18 = [];
 const map2 = new Map();
 const HOUR = DurationsDefault.Millis.HOUR;
 const set = new Set();
@@ -165,11 +165,11 @@ class DetectableGameStore extends PersistedStore {
   }
   getState() {
     let obj3;
-    const f84301 = (source) => source.source;
+    const f84282 = (source) => source.source;
     const obj = PlatformUtils;
     if (obj.isDesktop()) {
-      obj3 = { detectableGamesEtag: etag, detectableGames: closure_7.values(), blocklistEtag: etag, blocklistExecutables, blocklistPatterns: closure_18.map(f84301) };
-      const obj2 = { detectableGamesEtag: etag, detectableGames: closure_7.values(), blocklistEtag: etag, blocklistExecutables, blocklistPatterns: closure_18.map(f84301) };
+      obj3 = { detectableGamesEtag: etag, detectableGames: closure_7.values(), blocklistEtag: etag, blocklistExecutables, blocklistPatterns: closure_18.map(f84282) };
+      const obj2 = { detectableGamesEtag: etag, detectableGames: closure_7.values(), blocklistEtag: etag, blocklistExecutables, blocklistPatterns: closure_18.map(f84282) };
     } else {
       obj3 = { detectableGamesEtag: "", detectableGames: [], blocklistEtag: "", blocklistExecutables: [], blocklistPatterns: [] };
     }

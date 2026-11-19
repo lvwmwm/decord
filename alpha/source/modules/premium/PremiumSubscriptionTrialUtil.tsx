@@ -1,14 +1,14 @@
-// Module ID: 8732
-// Function ID: 8733
+// Module ID: 8701
+// Function ID: 8702
 // Name: PremiumSubscriptionTrialUtil
-// Dependencies: [1388, 2179, 8718, 1390, 504, 2]
+// Dependencies: [1388, 2179, 8687, 1390, 504, 2]
 // Exports: getPremiumTrialOffer, hasActiveTrial, isEligibleTrialSub, useCurrentPremiumTrialTier, useHasActiveTrial
 
-// Module 8732 (PremiumSubscriptionTrialUtil)
+// Module 8701 (PremiumSubscriptionTrialUtil)
 import get_initialized from "get initialized" /* 504 */;
 import UserStore from "UserStore" /* 1388 */;
 import SubscriptionStore from "SubscriptionStore" /* 2179 */;
-import UserOfferStore from "UserOfferStore" /* 8718 */;
+import UserOfferStore from "UserOfferStore" /* 8687 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
 import size from "module_2" /* 2 */;
 

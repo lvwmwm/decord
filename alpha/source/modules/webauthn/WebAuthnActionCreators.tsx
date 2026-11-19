@@ -1,15 +1,15 @@
-// Module ID: 6341
-// Function ID: 6342
+// Module ID: 6312
+// Function ID: 6313
 // Name: WebAuthnActionCreators
-// Dependencies: [5, 1072, 1285, 572, 6340, 1349, 2]
+// Dependencies: [5, 1072, 1285, 572, 6311, 1349, 2]
 // Exports: clearWebAuthnRegisterTrigger, deleteWebAuthnCredential, editWebAuthnCredential, fetchWebAuthnConditionalChallenge, fetchWebAuthnCredentials, fetchWebAuthnPasswordlessChallenge, finishRegisterWebAuthnCredential, startRegisterWebAuthnCredential, triggerWebAuthnRegister
 
-// Module 6341 (WebAuthnActionCreators)
+// Module 6312 (WebAuthnActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
 import AnalyticsSchema from "AnalyticsSchema" /* 1349 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6340 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6311 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -60,7 +60,7 @@ obj = function _deleteWebAuthnCredential() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -125,7 +125,7 @@ obj = function _editWebAuthnCredential() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -179,7 +179,7 @@ obj = function _editWebAuthnCredential() {
               obj2.dispatch(obj8);
             }
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp19) {
           c5 = 3;
@@ -220,7 +220,7 @@ obj = function _finishRegisterWebAuthnCredential() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -261,7 +261,7 @@ obj = function _finishRegisterWebAuthnCredential() {
             const obj7 = closure_132_1(closure_132_2[3]);
             obj7.dispatch(obj10);
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp5) {
           c6 = 3;

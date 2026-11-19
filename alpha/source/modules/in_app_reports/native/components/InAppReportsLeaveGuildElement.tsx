@@ -1,21 +1,21 @@
-// Module ID: 10327
-// Function ID: 10328
+// Module ID: 10305
+// Function ID: 10306
 // Name: InAppReportsLeaveGuildElement
-// Dependencies: [32, 19, 1072, 21, 7905, 5560, 10318, 1113, 5769, 5840, 10328, 2]
+// Dependencies: [32, 19, 1072, 21, 7875, 5529, 10296, 1113, 5740, 5811, 10306, 2]
 // Exports: default
 
-// Module 10327 (InAppReportsLeaveGuildElement)
+// Module 10305 (InAppReportsLeaveGuildElement)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5560 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5769 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5529 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5740 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const AlertDefault = tmp(5840);
+const AlertDefault = tmp(5811);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 const AnalyticEvents = Constants.AnalyticEvents;

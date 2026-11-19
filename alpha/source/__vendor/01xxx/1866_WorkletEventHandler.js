@@ -18,8 +18,8 @@ let closure_5 = _classPrivateFieldKey("registrations");
 class WorkletEventHandler {
   constructor(worklet, items) {
     _classCallCheck(this, WorkletEventHandler);
-    Object.defineProperty(this, closure_4, { writable: true, value: "a" });
-    Object.defineProperty(this, closure_5, { writable: true, value: "a" });
+    Object.defineProperty(this, closure_4, { writable: true, value: "Array" });
+    Object.defineProperty(this, closure_5, { writable: true, value: "Array" });
     this.worklet = worklet;
     this.eventNames = items;
     const tmp4 = _classPrivateFieldBase(this, closure_4);

@@ -1,10 +1,10 @@
-// Module ID: 8871
-// Function ID: 8872
+// Module ID: 8844
+// Function ID: 8845
 // Name: CollectiblesStorefrontPricingIntegrationExperiment
 // Dependencies: [1452, 2]
 // Exports: getCollectiblesStorefrontPricingIntegrationEnabled, useCollectiblesStorefrontPricingIntegrationEnabled
 
-// Module 8871 (CollectiblesStorefrontPricingIntegrationExperiment)
+// Module 8844 (CollectiblesStorefrontPricingIntegrationExperiment)
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ export function getCollectiblesStorefrontPricingIntegrationEnabled(location) {
   const obj = { location };
   return closure_0.getConfig(obj).enabled;
 }
-export function useCollectiblesStorefrontPricingIntegrationEnabled(collectibles_pricing_promotion_eligibility) {
-  const obj = { location: collectibles_pricing_promotion_eligibility };
+export function useCollectiblesStorefrontPricingIntegrationEnabled(collectibles_discount_promotion_purchase_cta) {
+  const obj = { location: collectibles_discount_promotion_purchase_cta };
   return closure_0.useConfig(obj).enabled;
 }

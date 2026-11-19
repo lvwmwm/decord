@@ -1,19 +1,19 @@
-// Module ID: 7944
-// Function ID: 7945
+// Module ID: 7914
+// Function ID: 7915
 // Name: StartEventPlatformUtils
-// Dependencies: [5, 4672, 5564, 4856, 4678, 1072, 38, 7191, 6411, 6437, 1099, 2]
+// Dependencies: [5, 4641, 5533, 4825, 4647, 1072, 38, 7161, 6382, 6408, 1099, 2]
 // Exports: navigateToEvent, postStartActions
 
-// Module 7944 (StartEventPlatformUtils)
+// Module 7914 (StartEventPlatformUtils)
 import _modDef38 from "module_38" /* 38 */;
 import Constants from "Constants" /* 1072 */;
 import router_utils from "router_utils" /* 1099 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4678 */;
-import StageChannelModalActionCreatorsAll from "StageChannelModalActionCreators" /* 7191 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4647 */;
+import StageChannelModalActionCreatorsAll from "StageChannelModalActionCreators" /* 7161 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4672 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5564 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4856 */;
+import ChannelStore from "ChannelStore" /* 4641 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5533 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4825 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;
@@ -38,7 +38,7 @@ let obj = function _navigateToEvent() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -92,7 +92,7 @@ let obj = function _navigateToEvent() {
                 }
               }
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             }
           }
         } else if (1 === c4) {

@@ -1,16 +1,16 @@
-// Module ID: 7406
-// Function ID: 7407
+// Module ID: 7376
+// Function ID: 7377
 // Name: GuildRoleMemberActionCreators
-// Dependencies: [5, 7405, 1072, 572, 1285, 1456, 6419, 2]
+// Dependencies: [5, 7375, 1072, 572, 1285, 1456, 6390, 2]
 // Exports: fetchMemberCounts, requestMembersForRole
 
-// Module 7406 (GuildRoleMemberActionCreators)
+// Module 7376 (GuildRoleMemberActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import LRUCacheDefault from "LRUCache" /* 1456 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6419 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6390 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 7405 */;
+import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 7375 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -31,7 +31,7 @@ let obj = function _fetchMemberCountsFromBackend() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -81,7 +81,7 @@ let obj = function _fetchMemberCountsFromBackend() {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp19) {
           closure_3 = tmp19;
@@ -113,7 +113,7 @@ obj = function _fetchMemberCounts() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -144,7 +144,7 @@ obj = function _fetchMemberCounts() {
           return obj;
         }
         c1 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       } catch (tmp6) {
         c1 = 3;
         throw tmp6;

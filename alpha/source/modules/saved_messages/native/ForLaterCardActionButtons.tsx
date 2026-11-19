@@ -1,21 +1,21 @@
-// Module ID: 11656
-// Function ID: 11657
+// Module ID: 11634
+// Function ID: 11635
 // Name: ForLaterCardActionButtons
-// Dependencies: [19, 17, 21, 4823, 5037, 11657, 2121, 11650, 11660, 1113, 10040, 7062, 11661, 11202, 8570, 7502, 6934, 2]
+// Dependencies: [19, 17, 21, 4792, 5006, 11635, 2121, 11628, 11638, 1113, 10018, 7032, 11639, 11180, 8539, 7472, 6904, 2]
 // Exports: default, useForLaterCardMenuItems
 
-// Module 11656 (ForLaterCardActionButtons)
+// Module 11634 (ForLaterCardActionButtons)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6934 */;
-import IconButton2 from "IconButton" /* 7502 */;
-import ContextMenu from "ContextMenu" /* 8570 */;
-import SavedMessageHelpers from "SavedMessageHelpers" /* 11650 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6904 */;
+import IconButton2 from "IconButton" /* 7472 */;
+import ContextMenu from "ContextMenu" /* 8539 */;
+import SavedMessageHelpers from "SavedMessageHelpers" /* 11628 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;
@@ -51,7 +51,7 @@ export function useForLaterCardMenuItems(savedMessage) {
   const throttledNow = savedMessage.throttledNow;
   let obj = {
     label: intl.string(savedMessage(1113).t["+TSRGD"]),
-    IconComponent: savedMessage(10040).ChatArrowRightIcon,
+    IconComponent: savedMessage(10018).ChatArrowRightIcon,
     action() {
       return jumpToMessage();
     }
@@ -74,7 +74,7 @@ export function useForLaterCardMenuItems(savedMessage) {
       channelId: savedMessage.saveData.channelId,
       messageId: savedMessage.saveData.messageId
     };
-    return obj.openLazy(asyncRequire(11657, dependencyMap.paths), "MessageReminderDurationActionSheet", obj2);
+    return obj.openLazy(asyncRequire(11635, dependencyMap.paths), "MessageReminderDurationActionSheet", obj2);
   }, items);
   intl = savedMessage(1113).intl;
   const items1 = [obj, ];
@@ -87,7 +87,7 @@ export function useForLaterCardMenuItems(savedMessage) {
   }
   let obj2 = {
     label: string(SvXS1Z),
-    IconComponent: tmp2(7062).XSmallIcon,
+    IconComponent: tmp2(7032).XSmallIcon,
     action() {
       const obj = SavedMessageHelpers;
       return obj.removeSavedMessage(savedMessage.saveData);
@@ -102,9 +102,9 @@ export function useForLaterCardMenuItems(savedMessage) {
     const t = tmp2(1113).t;
     const obj3 = { label: string2(throttledNow > savedMessage.saveData.dueAt ? t.GtBCnz : t.vrbqs1), IconComponent: PencilIcon, action: callback };
     if (throttledNow > savedMessage.saveData.dueAt) {
-      PencilIcon = tmp2(11661).BellZIcon;
+      PencilIcon = tmp2(11639).BellZIcon;
     } else {
-      PencilIcon = tmp2(11202).PencilIcon;
+      PencilIcon = tmp2(11180).PencilIcon;
     }
     unshift(obj3);
   }

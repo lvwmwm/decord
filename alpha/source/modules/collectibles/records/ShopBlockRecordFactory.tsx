@@ -1,19 +1,19 @@
-// Module ID: 8016
-// Function ID: 8017
+// Module ID: 7985
+// Function ID: 7986
 // Name: ShopBlockRecordFactory
-// Dependencies: [8017, 8018, 8021, 8022, 8023, 8024, 8025, 8026, 5481, 2]
+// Dependencies: [7986, 7987, 7990, 7991, 7992, 7993, 7994, 7995, 5450, 2]
 // Exports: parseNonHeroShopBlock
 
-// Module 8016 (ShopBlockRecordFactory)
-import ShopBlockType from "ShopBlockType" /* 5481 */;
-import CountdownTimerBlockRecord2 from "CountdownTimerBlockRecord" /* 8017 */;
-import FeaturedBlockRecord2 from "FeaturedBlockRecord" /* 8018 */;
-import FeedBlockRecord2 from "FeedBlockRecord" /* 8021 */;
-import GameServerHostingBannerBlockRecord from "GameServerHostingBannerBlockRecord" /* 8022 */;
-import ImmersiveBannerBlockRecord from "ImmersiveBannerBlockRecord" /* 8023 */;
-import ShelfBlockRecord2 from "ShelfBlockRecord" /* 8024 */;
-import SocialLayerStorefrontPromotionalBannerBlockRecord from "SocialLayerStorefrontPromotionalBannerBlockRecord" /* 8025 */;
-import WideBannerBlockRecord2 from "WideBannerBlockRecord" /* 8026 */;
+// Module 7985 (ShopBlockRecordFactory)
+import ShopBlockType from "ShopBlockType" /* 5450 */;
+import CountdownTimerBlockRecord2 from "CountdownTimerBlockRecord" /* 7986 */;
+import FeaturedBlockRecord2 from "FeaturedBlockRecord" /* 7987 */;
+import FeedBlockRecord2 from "FeedBlockRecord" /* 7990 */;
+import GameServerHostingBannerBlockRecord from "GameServerHostingBannerBlockRecord" /* 7991 */;
+import ImmersiveBannerBlockRecord from "ImmersiveBannerBlockRecord" /* 7992 */;
+import ShelfBlockRecord2 from "ShelfBlockRecord" /* 7993 */;
+import SocialLayerStorefrontPromotionalBannerBlockRecord from "SocialLayerStorefrontPromotionalBannerBlockRecord" /* 7994 */;
+import WideBannerBlockRecord2 from "WideBannerBlockRecord" /* 7995 */;
 import size from "module_2" /* 2 */;
 
 const CountdownTimerBlockRecord = CountdownTimerBlockRecord2.CountdownTimerBlockRecord;

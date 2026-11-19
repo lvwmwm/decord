@@ -1,25 +1,25 @@
-// Module ID: 18043
-// Function ID: 18044
+// Module ID: 18036
+// Function ID: 18037
 // Name: useVoicePanelVideoToggle
-// Dependencies: [19, 10607, 4672, 4694, 2133, 4755, 5568, 21, 504, 6316, 14301, 5770, 14304, 1113, 18044, 9564, 10629, 2]
+// Dependencies: [19, 10585, 4641, 4663, 2133, 4724, 5537, 21, 504, 6287, 14284, 5741, 14287, 1113, 18037, 9543, 10607, 2]
 // Exports: default
 
-// Module 18043 (useVoicePanelVideoToggle)
+// Module 18036 (useVoicePanelVideoToggle)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import Constants from "Constants" /* 5568 */;
-import useAlertStore from "useAlertStore" /* 5770 */;
-import StreamPermissionUtils from "StreamPermissionUtils" /* 6316 */;
-import CallsUtils from "CallsUtils" /* 9564 */;
-import openIgnoreThermalStateAlert from "openIgnoreThermalStateAlert" /* 10629 */;
-import VoicePanelVideoGuardErrorAlert from "VoicePanelVideoGuardErrorAlert" /* 14304 */;
-import VoicePanelNoVideoPermissionsAlert from "VoicePanelNoVideoPermissionsAlert" /* 18044 */;
+import Constants from "Constants" /* 5537 */;
+import useAlertStore from "useAlertStore" /* 5741 */;
+import StreamPermissionUtils from "StreamPermissionUtils" /* 6287 */;
+import CallsUtils from "CallsUtils" /* 9543 */;
+import openIgnoreThermalStateAlert from "openIgnoreThermalStateAlert" /* 10607 */;
+import VoicePanelVideoGuardErrorAlert from "VoicePanelVideoGuardErrorAlert" /* 14287 */;
+import VoicePanelNoVideoPermissionsAlert from "VoicePanelNoVideoPermissionsAlert" /* 18037 */;
 import react from "react" /* 19 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 10607 */;
-import ChannelStore from "ChannelStore" /* 4672 */;
-import GuildStore from "GuildStore" /* 4694 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 10585 */;
+import ChannelStore from "ChannelStore" /* 4641 */;
+import GuildStore from "GuildStore" /* 4663 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import PermissionStore from "PermissionStore" /* 4755 */;
+import PermissionStore from "PermissionStore" /* 4724 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

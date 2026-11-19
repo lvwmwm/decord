@@ -1,17 +1,17 @@
-// Module ID: 5736
-// Function ID: 5737
+// Module ID: 5705
+// Function ID: 5706
 // Name: UserSettingsActionCreators
-// Dependencies: [5, 4847, 1193, 1192, 1072, 1195, 4653, 1196, 1227, 572, 4883, 4648, 2]
+// Dependencies: [5, 4816, 1193, 1192, 1072, 1195, 4622, 1196, 1227, 572, 4852, 4617, 2]
 // Exports: saveClientTheme, saveGuildFolders
 
-// Module 5736 (UserSettingsActionCreators)
+// Module 5705 (UserSettingsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
 import wrappers from "wrappers" /* 1227 */;
-import UserSettings from "UserSettings" /* 4648 */;
+import UserSettings from "UserSettings" /* 4617 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4847 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4816 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1193 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
 import ThemeConstants from "ThemeConstants" /* 1195 */;
@@ -86,7 +86,7 @@ let obj = {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         let c2;
@@ -170,7 +170,7 @@ let obj = {
           } else if (1 === tmp4) {
             c2 = 0;
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           } else if (arg0 === 1) {
             c3 = 3;
             throw value;
@@ -203,7 +203,7 @@ let obj = {
           obj9 = { appearance: obj5 };
           dispatch(obj8);
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         } catch (tmp25) {
           if (0 === c2) {
             c3 = 3;

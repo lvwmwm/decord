@@ -1,10 +1,10 @@
-// Module ID: 11141
-// Function ID: 11142
+// Module ID: 11119
+// Function ID: 11120
 // Name: FilePickerUtils
-// Dependencies: [5, 1072, 11142, 1380, 5769, 1113, 5560, 2]
+// Dependencies: [5, 1072, 11120, 1380, 5740, 1113, 5529, 2]
 // Exports: handleDocumentSelection
 
-// Module 11141 (FilePickerUtils)
+// Module 11119 (FilePickerUtils)
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -67,7 +67,7 @@ let obj = function _handleDocumentSelection() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -144,7 +144,7 @@ let obj = function _handleDocumentSelection() {
             if (obj4.isErrorWithCode(code)) {
               if (code.code === closure_130_0(closure_130_2[2]).errorCodes.OPERATION_CANCELED) {
                 c6 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "+60" };
               }
             }
             const _JSON = JSON;
@@ -160,7 +160,7 @@ let obj = function _handleDocumentSelection() {
             intl4 = closure_130_0(closure_130_2[5]).intl;
             show2(obj12);
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           } else if (arg0 === 1) {
             c6 = 3;
             throw value;

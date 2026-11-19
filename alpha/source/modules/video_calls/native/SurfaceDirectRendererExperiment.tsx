@@ -1,10 +1,10 @@
-// Module ID: 5691
-// Function ID: 5692
+// Module ID: 5660
+// Function ID: 5661
 // Name: SurfaceDirectRendererExperiment
 // Dependencies: [502, 1452, 504, 2]
 // Exports: isSurfaceDirectRendererExperimentEnabled, useSurfaceDirectRendererExperiment
 
-// Module 5691 (SurfaceDirectRendererExperiment)
+// Module 5660 (SurfaceDirectRendererExperiment)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;

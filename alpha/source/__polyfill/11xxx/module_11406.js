@@ -1,11 +1,11 @@
 // Module ID: 11406
 // Function ID: 11407
-// Dependencies: [41, 42, 93, 95, 98, 11374, 11377, 11378, 11394]
+// Dependencies: [41, 42, 93, 95, 98, 11399, 11353, 11355, 11356, 11360]
 
 // Module 11406
-import _mod11374 from "module_11374" /* 11374 */;
-import ReferenceWithTimezone2 from "ReferenceWithTimezone" /* 11378 */;
-import _mod11394 from "module_11394" /* 11394 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 11353 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11360 */;
+import _mod11399 from "module_11399" /* 11399 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -27,63 +27,65 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class ENMergeRelativeAfterDateRefiner {
+class DETimeUnitAgoFormatParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ENMergeRelativeAfterDateRefiner);
-    const obj = _getPrototypeOf(ENMergeRelativeAfterDateRefiner);
+    _classCallCheck(this, DETimeUnitAgoFormatParser);
+    const obj = _getPrototypeOf(DETimeUnitAgoFormatParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
     } else {
-      constructResult = obj(...arguments);
+      constructResult = obj.apply(self, undefined);
     }
     return tmp3(self, constructResult);
   }
 }
-_inherits(ENMergeRelativeAfterDateRefiner, _mod11394.MergingRefiner);
+_inherits(DETimeUnitAgoFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "shouldMergeResults",
-  value: function shouldMergeResults(str, arg1, text) {
-    let match = str.match(/^\s*$/i);
-    if (match) {
-      str = text.text;
-      let tmp4 = null != str.match(/^[+-]/i);
-      if (!tmp4) {
-        const str2 = text.text;
-        tmp4 = null != str2.match(/^-/i);
-      }
-      match = tmp4;
-    }
-    return match;
+  key: "innerPattern",
+  value: function innerPattern() {
+    const NUMBER_PATTERN = _mod11399.NUMBER_PATTERN;
+    const regExp = new RegExp("(?:\\s*((?:n\u00E4chste|kommende|folgende|letzte|vergangene|vorige|vor(?:her|an)gegangene)(?:s|n|m|r)?|vor|in)\\s*)?(" + NUMBER_PATTERN + ")?(?:\\s*(n\u00E4chste|kommende|folgende|letzte|vergangene|vorige|vor(?:her|an)gegangene)(?:s|n|m|r)?)?\\s*(" + repeatedTimeunitPattern.matchAnyPattern(_mod11399.TIME_UNIT_DICTIONARY) + ")", "i");
+    return regExp;
   }
 };
 const items = [
   entry,
   {
-    key: "mergeResults",
-    value: function mergeResults(arg0, start, text, arg3) {
-      let index;
-      let reference;
-      const parseDurationResult = _mod11374.parseDuration(text.text);
-      let reverseDurationResult = parseDurationResult;
-      const str = text.text;
-      if (null != str.match(/^-/i)) {
-        reverseDurationResult = tmp(11377).reverseDuration(parseDurationResult);
+    key: "innerExtract",
+    value: function innerExtract(reference, arg1) {
+      let num = 1;
+      if (arg1[2]) {
+        num = _mod11399.parseNumberPattern(arg1[2]);
       }
-      const ParsingComponents = tmp(11378).ParsingComponents;
-      const createRelativeFromReference = ParsingComponents.createRelativeFromReference;
-      const ReferenceWithTimezone = tmp(11378).ReferenceWithTimezone;
-      start = start.start;
-      const relativeFromReference = createRelativeFromReference(ReferenceWithTimezone.fromDate(start.date()), reverseDurationResult);
-      ({ reference, index } = start);
-      const parsingResult = new ReferenceWithTimezone2.ParsingResult(reference, index, "" + start.text + arg0 + text.text, relativeFromReference);
-      return parsingResult;
+      const obj = {};
+      obj[_mod11399.TIME_UNIT_DICTIONARY[arg1[4].toLowerCase(arg1[4])]] = num;
+      const str2 = arg1[1] || arg1[3] || "";
+      const formatted = str2.toLowerCase();
+      if (formatted) {
+        const obj2 = /vor/;
+        let isMatch = obj2.test(formatted);
+        if (!isMatch) {
+          const obj3 = /letzte/;
+          isMatch = obj3.test(formatted);
+        }
+        if (!isMatch) {
+          const obj4 = /vergangen/;
+          isMatch = obj4.test(formatted);
+        }
+        let reverseDurationResult = obj;
+        if (isMatch) {
+          reverseDurationResult = tmp3(11355).reverseDuration(obj);
+        }
+        const ParsingComponents = tmp3(11356).ParsingComponents;
+        return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
+      }
     }
   }
 ];
 
-export default _createClass(ENMergeRelativeAfterDateRefiner, items);
+export default _createClass(DETimeUnitAgoFormatParser, items);

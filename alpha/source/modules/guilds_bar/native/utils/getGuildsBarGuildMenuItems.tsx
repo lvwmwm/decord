@@ -1,15 +1,15 @@
-// Module ID: 17918
-// Function ID: 17919
+// Module ID: 17911
+// Function ID: 17912
 // Name: getGuildsBarGuildMenuItems
-// Dependencies: [5, 4694, 1072, 7368, 1113, 15103, 2121, 11199, 7396, 10331, 15048, 2]
+// Dependencies: [5, 4663, 1072, 7338, 1113, 15089, 2121, 11177, 7366, 10309, 15034, 2]
 // Exports: default
 
-// Module 17918 (getGuildsBarGuildMenuItems)
+// Module 17911 (getGuildsBarGuildMenuItems)
 import Constants from "Constants" /* 1072 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7396 */;
-import openGuildActionSheetDefault from "openGuildActionSheet" /* 15048 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7366 */;
+import openGuildActionSheetDefault from "openGuildActionSheet" /* 15034 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildStore from "GuildStore" /* 4694 */;
+import GuildStore from "GuildStore" /* 4663 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -39,7 +39,7 @@ export default function getGuildsBarGuildMenuItems(arg0) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } else {
           try {
@@ -69,7 +69,7 @@ export default function getGuildsBarGuildMenuItems(arg0) {
               const items = [closure_128_0];
               value.default(items, constants.GUILD_LIST);
               paths = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             }
           } catch (tmp10) {
             paths = 3;

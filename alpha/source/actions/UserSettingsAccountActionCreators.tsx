@@ -1,19 +1,19 @@
-// Module ID: 7313
-// Function ID: 7314
+// Module ID: 7283
+// Function ID: 7284
 // Name: UserSettingsAccountActionCreators
-// Dependencies: [5, 1072, 6336, 572, 1285, 6333, 1099, 1410, 510, 7314, 7318, 7320, 7322, 2]
+// Dependencies: [5, 1072, 6307, 572, 1285, 6304, 1099, 1410, 510, 7284, 7288, 7290, 7292, 2]
 // Exports: accountDetailsClose, accountDetailsInit, clearErrors, disableAccount, getHarvestStatus, requestHarvest, resetAccount, resetAllPending, resetAllTryItOut, resetAndCloseUserProfileForm, resetPendingAccountChanges, resetPendingLegacyUsernameDisabled, resetPendingPrimaryGuildChanges, saveAccountChanges, saveProfileAndAccountChanges, updateAccount
 
-// Module 7313 (UserSettingsAccountActionCreators)
+// Module 7283 (UserSettingsAccountActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import router_utils from "router_utils" /* 1099 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6333 */;
-import trackUserAvatarUpdated from "trackUserAvatarUpdated" /* 7320 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7322 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6304 */;
+import trackUserAvatarUpdated from "trackUserAvatarUpdated" /* 7290 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7292 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1072 */;
-import PushNotificationConstants from "PushNotificationConstants" /* 6336 */;
+import PushNotificationConstants from "PushNotificationConstants" /* 6307 */;
 import size from "module_2" /* 2 */;
 
 let closure_3;
@@ -43,7 +43,7 @@ let body = function _saveProfileAndAccountRequest() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -248,8 +248,8 @@ export function saveProfileAndAccountChanges(avatar) {
     user.push_voip_provider = tmp15;
     user.push_voip_token = value2;
   }
-  const obj4 = { headers: tmpResult.buildHeadersForMd5({ [avatar(7318).SafetyScannedUploadSurface.USER_DEFAULT_PROFILE_AVATAR]: avatarOriginalMd5 }) };
-  tmpResult = tmp(7314);
+  const obj4 = { headers: tmpResult.buildHeadersForMd5({ [avatar(7288).SafetyScannedUploadSurface.USER_DEFAULT_PROFILE_AVATAR]: avatarOriginalMd5 }) };
+  tmpResult = tmp(7284);
   const promise = saveProfileAndAccountRequest(user, obj4);
   return promise.then((result) => {
     const obj = DispatcherDefault;

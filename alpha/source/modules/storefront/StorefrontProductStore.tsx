@@ -1,12 +1,12 @@
-// Module ID: 8080
-// Function ID: 8081
+// Module ID: 8049
+// Function ID: 8050
 // Name: StorefrontProductStore
-// Dependencies: [8081, 504, 572, 2]
+// Dependencies: [8050, 504, 572, 2]
 
-// Module 8080 (StorefrontProductStore)
+// Module 8049 (StorefrontProductStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import GenericIAPStore from "GenericIAPStore" /* 8081 */;
+import GenericIAPStore from "GenericIAPStore" /* 8050 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, closure_3, id, set;

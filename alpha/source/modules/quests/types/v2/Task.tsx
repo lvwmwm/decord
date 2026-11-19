@@ -1,14 +1,14 @@
-// Module ID: 8327
-// Function ID: 8328
+// Module ID: 8296
+// Function ID: 8297
 // Name: Task
-// Dependencies: [8328, 6474, 8329, 8330, 2]
+// Dependencies: [8297, 6445, 8298, 8299, 2]
 // Exports: questTaskConfigFromServer, questTaskConfigV2FromServer
 
-// Module 8327 (Task)
-import FirstPartyQuestTaskTypes from "FirstPartyQuestTaskTypes" /* 6474 */;
-import QuestTaskConfigTypes from "QuestTaskConfigTypes" /* 8328 */;
-import v2_Video from "v2/Video" /* 8329 */;
-import QuestTaskJoinOperator from "QuestTaskJoinOperator" /* 8330 */;
+// Module 8296 (Task)
+import FirstPartyQuestTaskTypes from "FirstPartyQuestTaskTypes" /* 6445 */;
+import QuestTaskConfigTypes from "QuestTaskConfigTypes" /* 8297 */;
+import v2_Video from "v2/Video" /* 8298 */;
+import QuestTaskJoinOperator from "QuestTaskJoinOperator" /* 8299 */;
 import size from "module_2" /* 2 */;
 
 function _firstPartyTasksFromServer(tasks) {

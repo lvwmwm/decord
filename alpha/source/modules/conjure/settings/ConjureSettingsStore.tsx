@@ -1,9 +1,9 @@
-// Module ID: 6892
-// Function ID: 6893
+// Module ID: 6862
+// Function ID: 6863
 // Name: ConjureSettingsStore
 // Dependencies: [504, 572, 2]
 
-// Module 6892 (ConjureSettingsStore)
+// Module 6862 (ConjureSettingsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

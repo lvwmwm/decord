@@ -1,17 +1,17 @@
-// Module ID: 14450
-// Function ID: 14451
+// Module ID: 14437
+// Function ID: 14438
 // Name: useBadgeDirectoryNuxCoachmarkVariant
-// Dependencies: [32, 19, 14135, 14451, 2]
+// Dependencies: [32, 19, 14117, 14438, 2]
 // Exports: useBadgeDirectoryNuxCoachmarkVariant
 
-// Module 14450 (useBadgeDirectoryNuxCoachmarkVariant)
-import useCanOpenBadgeDirectoryFromProfile from "useCanOpenBadgeDirectoryFromProfile" /* 14135 */;
+// Module 14437 (useBadgeDirectoryNuxCoachmarkVariant)
+import useCanOpenBadgeDirectoryFromProfile from "useCanOpenBadgeDirectoryFromProfile" /* 14117 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const useBadgeDirectoryNuxPopoverVariant = tmp(14451);
+const useBadgeDirectoryNuxPopoverVariant = tmp(14438);
 let closure_4 = { variantProps: null, isPending: false };
 let closure_5 = { variantProps: null, isPending: true };
 const result = size.fileFinishedImporting("modules/badges/native/useBadgeDirectoryNuxCoachmarkVariant.tsx");

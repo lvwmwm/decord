@@ -1,14 +1,14 @@
-// Module ID: 8479
-// Function ID: 8480
+// Module ID: 8448
+// Function ID: 8449
 // Name: shared_components/Badge
-// Dependencies: [19, 17, 21, 4823, 575, 2]
+// Dependencies: [19, 17, 21, 4792, 575, 2]
 
-// Module 8479 (shared_components/Badge)
+// Module 8448 (shared_components/Badge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size_mod from "module_2" /* 2 */;
 
 let obj2;

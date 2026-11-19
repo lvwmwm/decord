@@ -1,20 +1,20 @@
-// Module ID: 12369
-// Function ID: 12370
+// Module ID: 12352
+// Function ID: 12353
 // Name: AppealIngestionExternalLink
-// Dependencies: [19, 17, 21, 4823, 575, 6941, 5502, 5414, 1187, 10086, 2]
+// Dependencies: [19, 17, 21, 4792, 575, 6911, 5471, 5383, 1187, 10064, 2]
 // Exports: default
 
-// Module 12369 (AppealIngestionExternalLink)
+// Module 12352 (AppealIngestionExternalLink)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5414 */;
-import LinkingDefault from "Linking" /* 5502 */;
-import Pressables from "Pressables" /* 6941 */;
-import AssetRegistry from "AssetRegistry" /* 10086 */;
+import Text_Text from "Text/Text" /* 5383 */;
+import LinkingDefault from "Linking" /* 5471 */;
+import Pressables from "Pressables" /* 6911 */;
+import AssetRegistry from "AssetRegistry" /* 10064 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

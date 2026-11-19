@@ -1,11 +1,11 @@
-// Module ID: 8185
-// Function ID: 8186
+// Module ID: 8154
+// Function ID: 8155
 // Name: ExtendedMemoryLru
-// Dependencies: [32, 8186, 8187, 2]
+// Dependencies: [32, 8155, 8156, 2]
 
-// Module 8185 (ExtendedMemoryLru)
-import Lru from "Lru" /* 8186 */;
-import IterableAll from "Iterable" /* 8187 */;
+// Module 8154 (ExtendedMemoryLru)
+import Lru from "Lru" /* 8155 */;
+import IterableAll from "Iterable" /* 8156 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

@@ -1,17 +1,21 @@
 // Module ID: 15466
 // Function ID: 15467
-// Dependencies: [15465]
+// Dependencies: [15467]
 
 // Module 15466
-import _mod15465 from "module_15465" /* 15465 */;
+import _mod15467 from "module_15467" /* 15467 */;
 
 
-export default (arg0, value) => {
-  try {
-    const obj = { value, configurable: true, writable: true };
-    defineProperty(_mod15465, arg0, obj);
-  } catch (err) {
-    _mod15465[arg0] = value;
+export default (arg0, arg1) => {
+  let tmp3 = _mod15467[arg0];
+  if (!tmp3) {
+    let obj = arg1;
+    const tmpResult = _mod15467;
+    if (!arg1) {
+      obj = {};
+    }
+    tmpResult[arg0] = obj;
+    tmp3 = obj;
   }
-  return value;
+  return tmp3;
 };

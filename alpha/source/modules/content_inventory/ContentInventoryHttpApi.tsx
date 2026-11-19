@@ -1,14 +1,14 @@
-// Module ID: 14507
-// Function ID: 14508
+// Module ID: 14494
+// Function ID: 14495
 // Name: ContentInventoryHttpApi
-// Dependencies: [5, 9677, 1072, 1285, 6257, 572, 1113, 2]
+// Dependencies: [5, 9656, 1072, 1285, 6228, 572, 1113, 2]
 // Exports: deleteContentInventoryEntryHistory, getContentInventoryOutbox, getMyContentInventory, postTrackToContentInventory
 
-// Module 14507 (ContentInventoryHttpApi)
+// Module 14494 (ContentInventoryHttpApi)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
-import ContentInventoryConstants from "ContentInventoryConstants" /* 9677 */;
+import ContentInventoryConstants from "ContentInventoryConstants" /* 9656 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let obj = function _getMyContentInventory() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c4;
@@ -144,7 +144,7 @@ obj = function _getContentInventoryOutbox() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -231,7 +231,7 @@ obj = function _deleteContentInventoryEntryHistory() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -294,7 +294,7 @@ obj = function _deleteContentInventoryEntryHistory() {
               c7 = 0;
             }
             c9 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp27) {
           body = tmp27;
@@ -329,7 +329,7 @@ obj = function _postTrackToContentInventory() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -373,7 +373,7 @@ obj = function _postTrackToContentInventory() {
           } else {
             c5 = 0;
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp14) {
           closure_4 = tmp14;

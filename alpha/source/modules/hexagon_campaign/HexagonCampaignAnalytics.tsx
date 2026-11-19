@@ -1,19 +1,19 @@
-// Module ID: 15776
-// Function ID: 15777
+// Module ID: 15767
+// Function ID: 15768
 // Name: HexagonCampaignAnalytics
-// Dependencies: [5, 19, 4848, 1072, 8333, 6473, 8342, 8289, 1256, 2]
+// Dependencies: [5, 19, 4817, 1072, 8302, 6444, 8311, 8258, 1256, 2]
 // Exports: trackHexagonCampaignContentClicked, trackHexagonCampaignContentViewed, trackHexagonCampaignPerkAction, useTrackHexagonCampaignContentViewed
 
-// Module 15776 (HexagonCampaignAnalytics)
+// Module 15767 (HexagonCampaignAnalytics)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import AdCreativeType from "AdCreativeType" /* 6473 */;
-import getDeviceMetadataDefault from "getDeviceMetadata" /* 8289 */;
-import AnalyticsActions from "AnalyticsActions" /* 8333 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 8342 */;
+import AdCreativeType from "AdCreativeType" /* 6444 */;
+import getDeviceMetadataDefault from "getDeviceMetadata" /* 8258 */;
+import AnalyticsActions from "AnalyticsActions" /* 8302 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8311 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4848 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4817 */;
 import size from "module_2" /* 2 */;
 
 let closure_3, closure_4, closure_5, questContentCTA;
@@ -38,7 +38,7 @@ let obj = function _trackHexagonCampaignContentClicked() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -97,7 +97,7 @@ let obj = function _trackHexagonCampaignContentClicked() {
               obj5.sourceQuestContent = sourceQuestContent;
               trackAdContentEvent(obj5);
               c7 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             }
           }
         } catch (tmp12) {

@@ -1,20 +1,20 @@
-// Module ID: 7381
-// Function ID: 7382
+// Module ID: 7351
+// Function ID: 7352
 // Name: GuildOnboardingPromptsActionCreators
-// Dependencies: [5, 502, 4735, 4694, 7382, 6730, 1072, 4741, 1256, 5560, 572, 1285, 1406, 2]
+// Dependencies: [5, 502, 4704, 4663, 7352, 6701, 1072, 4710, 1256, 5529, 572, 1285, 1406, 2]
 // Exports: loadOnboardingPrompts, maybeFetchOnboardingPrompts
 
-// Module 7381 (GuildOnboardingPromptsActionCreators)
+// Module 7351 (GuildOnboardingPromptsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4741 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5560 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 6730 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4710 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5529 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 6701 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 4735 */;
-import GuildStore from "GuildStore" /* 4694 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7382 */;
+import GuildMemberStore from "GuildMemberStore" /* 4704 */;
+import GuildStore from "GuildStore" /* 4663 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7352 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -63,7 +63,7 @@ let obj = function _maybeFetchOnboardingPrompts() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {

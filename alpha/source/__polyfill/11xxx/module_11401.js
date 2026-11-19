@@ -1,16 +1,12 @@
 // Module ID: 11401
 // Function ID: 11402
-// Dependencies: [41, 42, 93, 95, 98, 11375, 11374, 11380, 11402, 11382]
+// Dependencies: [41, 42, 93, 95, 98, 11371]
 
 // Module 11401
-import _mod11374 from "module_11374" /* 11374 */;
-import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 11375 */;
-import Meridiem from "Meridiem" /* 11380 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11382 */;
-import _mod11402 from "module_11402" /* 11402 */;
+import _mod11371 from "module_11371" /* 11371 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
+import map from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
@@ -29,15 +25,31 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const regExp = new RegExp("(?:(?:\\,|\\(|\\\uFF08)\\s*)?(?:on\\s*?)?(?:(this|last|past|next)\\s*)?(" + repeatedTimeunitPattern.matchAnyPattern(_mod11374.WEEKDAY_DICTIONARY) + "|weekend|weekday)(?:\\s*(?:\\,|\\)|\\\uFF09))?(?:\\s*(this|last|past|next)\\s*week)?(?=\\W|$)", "i");
-class ENWeekdayParser {
+let fn = this;
+if (this) {
+  fn = this.__importDefault;
+}
+if (!fn) {
+  fn = (__esModule) => {
+    let tmp2;
+    const tmp = __esModule;
+    if (!tmp) {
+      tmp2 = { default: __esModule };
+      const obj = { default: __esModule };
+    } else {
+      tmp2 = __esModule;
+    }
+    return tmp2;
+  };
+}
+class DEMergeDateRangeRefiner {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ENWeekdayParser);
-    const obj = _getPrototypeOf(ENWeekdayParser);
+    _classCallCheck(this, DEMergeDateRangeRefiner);
+    const obj = _getPrototypeOf(DEMergeDateRangeRefiner);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
+    const tmp3 = map;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
@@ -47,69 +59,13 @@ class ENWeekdayParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(ENWeekdayParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(DEMergeDateRangeRefiner, fn(_mod11371).default);
 const entry = {
-  key: "innerPattern",
-  value: function innerPattern() {
-    return regExp;
+  key: "patternBetween",
+  value: function patternBetween() {
+    return /^\s*(bis(?:\s*(?:am|zum))?|-)\s*$/i;
   }
 };
-const items = [
-  entry,
-  {
-    key: "innerExtract",
-    value: function innerExtract(reference, arg1) {
-      let sum;
-      const str = arg1[1] || arg1[3] || "";
-      const formatted = str.toLowerCase();
-      let str2 = "last";
-      if ("last" != formatted) {
-        str2 = "last";
-        if ("past" != formatted) {
-          str2 = "next";
-          if ("next" != formatted) {
-            str2 = null;
-            if ("this" == formatted) {
-              str2 = "this";
-            }
-          }
-        }
-      }
-      const str6 = arg1[2];
-      const formatted1 = str6.toLowerCase();
-      if (undefined !== _mod11374.WEEKDAY_DICTIONARY[formatted1]) {
-        sum = tmp3(11374).WEEKDAY_DICTIONARY[formatted1];
-      } else if ("weekend" == formatted1) {
-        let SATURDAY;
-        if ("last" == str2) {
-          SATURDAY = tmp3(11380).Weekday.SUNDAY;
-        } else {
-          SATURDAY = tmp3(11380).Weekday.SATURDAY;
-        }
-        sum = SATURDAY;
-      } else if ("weekday" != formatted1) {
-        return null;
-      } else {
-        let MONDAY;
-        reference = reference.reference;
-        const dateWithAdjustedTimezone = reference.getDateWithAdjustedTimezone();
-        const day = dateWithAdjustedTimezone.getDay();
-        if (day != Meridiem.Weekday.SUNDAY) {
-          if (day != Meridiem.Weekday.SATURDAY) {
-            const diff = day - 1;
-            sum = ("last" == str2 ? diff - 1 : diff + 1) % 5 + 1;
-          }
-        }
-        if ("last" == str2) {
-          MONDAY = tmp3(11380).Weekday.FRIDAY;
-        } else {
-          MONDAY = tmp3(11380).Weekday.MONDAY;
-        }
-        sum = MONDAY;
-      }
-      return _mod11402.createParsingComponentsAtWeekday(reference.reference, sum, str2);
-    }
-  }
-];
+const items = [entry];
 
-export default _createClass(ENWeekdayParser, items);
+export default _createClass(DEMergeDateRangeRefiner, items);

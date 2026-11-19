@@ -1,21 +1,21 @@
-// Module ID: 12224
-// Function ID: 12225
+// Module ID: 12207
+// Function ID: 12208
 // Name: GameOrganizationJoinActionSheet
-// Dependencies: [19, 17, 2165, 1388, 11856, 21, 4823, 575, 12192, 504, 12184, 7432, 12225, 5037, 12185, 5051, 7426, 11185, 1113, 2555, 12019, 5837, 7437, 6933, 1187, 5421, 6951, 2]
+// Dependencies: [19, 17, 2165, 1388, 11834, 21, 4792, 575, 12171, 504, 12163, 7402, 12208, 5006, 12164, 5020, 7396, 11163, 1113, 2557, 5808, 7407, 6903, 1187, 5390, 6921, 2]
 // Exports: default
 
-// Module 12224 (GameOrganizationJoinActionSheet)
+// Module 12207 (GameOrganizationJoinActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11856 */;
-import openGameOrganizationJoinModalDefault from "openGameOrganizationJoinModal" /* 12185 */;
-import prefetchGameOrganizationAccountLinkStateDefault from "prefetchGameOrganizationAccountLinkState" /* 12225 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11834 */;
+import openGameOrganizationJoinModalDefault from "openGameOrganizationJoinModal" /* 12164 */;
+import prefetchGameOrganizationAccountLinkStateDefault from "prefetchGameOrganizationAccountLinkState" /* 12208 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
 import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -43,10 +43,10 @@ export default function GameOrganizationJoinActionSheet(code) {
   let obj10;
   let obj11;
   let obj12;
-  let obj13;
-  let obj17;
-  let obj6;
-  let tmp14;
+  let obj16;
+  let obj5;
+  let obj9;
+  let tmp13;
   code = code.code;
   const analyticsLocations = code.analyticsLocations;
   let id;
@@ -88,58 +88,60 @@ export default function GameOrganizationJoinActionSheet(code) {
         if ("error" !== gameOrganizationAccountLinkStatus) {
           if ("link_unavailable" !== gameOrganizationAccountLinkStatus) {
             if ("needs_link" === gameOrganizationAccountLinkStatus) {
-              const obj3 = { displayNoun: tmp4.displayNoun, lowercase: true };
-              const tmp12 = analyticsLocations(id[20])(obj3);
-              const obj5 = { header: closure_8(code(id[16]).BottomSheetTitleHeader, { title: null }), illustration: tmp14(Stack, obj6), title: intl.formatToPlainString(analyticsLocations(id[19]).a1DdcF, obj10), description: intl2.formatToPlainString(analyticsLocations(id[19])["xd+PSv"], obj11), actions: closure_8(Button, obj12) };
+              let str = tmp4.displayNoun;
+              if (str == null) {
+                str = "other";
+              }
+              const obj3 = { header: closure_8(code(id[16]).BottomSheetTitleHeader, { title: null }), illustration: tmp13(Stack, obj5), title: intl.formatToPlainString(analyticsLocations(id[19]).a1DdcF, obj9), description: intl2.formatToPlainString(analyticsLocations(id[19])["xd+PSv"], obj10), actions: closure_8(Button, obj11) };
               const PromoSheet = tmp6(tmp3[17]).PromoSheet;
-              obj6 = { direction: "horizontal", justify: "center", align: "center", spacing: analyticsLocations(id[7]).space.PX_16, children: items5 };
-              Stack = tmp6(tmp3[21]).Stack;
-              const obj7 = { game: stateFromStores, size: code(id[22]).GameIconSizes.LARGE };
-              const tmp2Result = analyticsLocations(id[22]);
-              items5 = [closure_8(tmp2Result, obj7), , ];
-              const obj8 = { size: "md", color: analyticsLocations(id[7]).colors.INTERACTIVE_TEXT_DEFAULT };
-              const MoreHorizontalIcon = tmp6(tmp3[23]).MoreHorizontalIcon;
-              items5[1] = closure_8(MoreHorizontalIcon, obj8);
+              obj5 = { direction: "horizontal", justify: "center", align: "center", spacing: analyticsLocations(id[7]).space.PX_16, children: items5 };
+              Stack = tmp6(tmp3[20]).Stack;
+              const obj6 = { game: stateFromStores, size: code(id[21]).GameIconSizes.LARGE };
+              const tmp2Result = analyticsLocations(id[21]);
+              items5 = [closure_8(tmp2Result, obj6), , ];
+              const obj7 = { size: "md", color: analyticsLocations(id[7]).colors.INTERACTIVE_TEXT_DEFAULT };
+              const MoreHorizontalIcon = tmp6(tmp3[22]).MoreHorizontalIcon;
+              items5[1] = closure_8(MoreHorizontalIcon, obj7);
               let avatarSource;
-              const Avatar = tmp6(tmp3[24]).Avatar;
-              tmp14 = closure_9;
+              const Avatar = tmp6(tmp3[23]).Avatar;
+              tmp13 = closure_9;
               if (stateFromStores1 != null) {
                 avatarSource = stateFromStores1.getAvatarSource(undefined);
               }
               if (avatarSource == null) {
                 avatarSource = null;
               }
-              const obj9 = { source: avatarSource, size: code(id[24]).AvatarSizes.XXLARGE };
-              items5[2] = closure_8(Avatar, obj9);
+              const obj8 = { source: avatarSource, size: code(id[23]).AvatarSizes.XXLARGE };
+              items5[2] = closure_8(Avatar, obj8);
               intl = tmp6(tmp3[18]).intl;
-              obj10 = { gameName: tmp4.application.name, noun: tmp12 };
+              obj9 = { gameName: tmp4.application.name, displayNoun: str };
               intl2 = tmp6(tmp3[18]).intl;
-              obj11 = { noun: tmp12 };
-              obj12 = { text: intl3.string(analyticsLocations(id[19]).qD9GKX), icon: closure_8(GameControllerIcon, obj13), iconPosition: "start", size: "lg", onPress: tmp11 };
-              Button = tmp6(tmp3[25]).Button;
+              obj10 = { displayNoun: str };
+              obj11 = { text: intl3.string(analyticsLocations(id[19]).qD9GKX), icon: closure_8(GameControllerIcon, obj12), iconPosition: "start", size: "lg", onPress: tmp11 };
+              Button = tmp6(tmp3[24]).Button;
               intl3 = tmp6(tmp3[18]).intl;
-              obj13 = { size: "sm", color: analyticsLocations(id[7]).colors.WHITE };
-              GameControllerIcon = tmp6(tmp3[26]).GameControllerIcon;
-              return closure_8(PromoSheet, obj5);
+              obj12 = { size: "sm", color: analyticsLocations(id[7]).colors.WHITE };
+              GameControllerIcon = tmp6(tmp3[25]).GameControllerIcon;
+              return closure_8(PromoSheet, obj3);
             }
           }
         }
-        const obj14 = { header: closure_8(code(id[16]).BottomSheetTitleHeader, { title: null }), title: intl4.string(code(id[18]).t.R0RpRX), description: formatToPlainStringResult };
+        const obj13 = { header: closure_8(code(id[16]).BottomSheetTitleHeader, { title: null }), title: intl4.string(code(id[18]).t.R0RpRX), description: formatToPlainStringResult };
         const PromoSheet2 = tmp6(tmp3[17]).PromoSheet;
         intl4 = tmp6(tmp3[18]).intl;
         formatToPlainStringResult = undefined;
-        const tmp17 = closure_8;
+        const tmp16 = closure_8;
         if ("link_unavailable" === gameOrganizationAccountLinkStatus) {
           const intl5 = tmp6(tmp3[18]).intl;
-          const obj15 = { gameName: tmp4.application.name };
-          formatToPlainStringResult = intl5.formatToPlainString(tmp2(tmp3[19]).yoPvEj, obj15);
+          const obj14 = { gameName: tmp4.application.name };
+          formatToPlainStringResult = intl5.formatToPlainString(tmp2(tmp3[19]).yoPvEj, obj14);
         }
-        return tmp17(PromoSheet2, obj14);
+        return tmp16(PromoSheet2, obj13);
       }
     }
-    const obj16 = { startExpanded: true, header: closure_8(code(id[16]).BottomSheetTitleHeader, { title: null }), children: closure_8(startAuthorization, obj17) };
+    const obj15 = { startExpanded: true, header: closure_8(code(id[16]).BottomSheetTitleHeader, { title: null }), children: closure_8(startAuthorization, obj16) };
     const BottomSheet = tmp6(tmp3[15]).BottomSheet;
-    obj17 = { style: tmp.loading };
-    return closure_8(BottomSheet, obj16);
+    obj16 = { style: tmp.loading };
+    return closure_8(BottomSheet, obj15);
   }
 };

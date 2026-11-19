@@ -1,13 +1,13 @@
-// Module ID: 7930
-// Function ID: 7931
+// Module ID: 7900
+// Function ID: 7901
 // Name: GuildScheduledEventUtils
-// Dependencies: [4678, 2169, 11, 2]
+// Dependencies: [4647, 2169, 11, 2]
 // Exports: getNextShownUpcomingEventNoticeType
 
-// Module 7930 (GuildScheduledEventUtils)
+// Module 7900 (GuildScheduledEventUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef2169 from "module_2169" /* 2169 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4678 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4647 */;
 import size from "module_2" /* 2 */;
 
 let c2;

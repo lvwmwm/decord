@@ -1,9 +1,9 @@
-// Module ID: 7106
-// Function ID: 7107
+// Module ID: 7076
+// Function ID: 7077
 // Name: PlayStationLinkConstants
 // Dependencies: [2]
 
-// Module 7106 (PlayStationLinkConstants)
+// Module 7076 (PlayStationLinkConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/playstation/PlayStationLinkConstants.tsx");

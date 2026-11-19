@@ -1,15 +1,15 @@
-// Module ID: 8531
-// Function ID: 8532
+// Module ID: 8500
+// Function ID: 8501
 // Name: ForumPostUnreadCountStore
-// Dependencies: [6547, 4672, 6527, 504, 38, 572, 2]
+// Dependencies: [6518, 4641, 6498, 504, 38, 572, 2]
 
-// Module 8531 (ForumPostUnreadCountStore)
+// Module 8500 (ForumPostUnreadCountStore)
 import _modDef38 from "module_38" /* 38 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ActiveThreadsStore from "ActiveThreadsStore" /* 6547 */;
-import ChannelStore from "ChannelStore" /* 4672 */;
-import ReadStateStore from "ReadStateStore" /* 6527 */;
+import ActiveThreadsStore from "ActiveThreadsStore" /* 6518 */;
+import ChannelStore from "ChannelStore" /* 4641 */;
+import ReadStateStore from "ReadStateStore" /* 6498 */;
 import size from "module_2" /* 2 */;
 
 let closure_5;

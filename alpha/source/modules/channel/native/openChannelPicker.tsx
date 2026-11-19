@@ -1,15 +1,15 @@
-// Module ID: 11690
-// Function ID: 11691
+// Module ID: 11668
+// Function ID: 11669
 // Name: openChannelPicker
-// Dependencies: [4753, 4694, 5037, 11691, 2121, 1113, 2]
+// Dependencies: [4722, 4663, 5006, 11669, 2121, 1113, 2]
 // Exports: default
 
-// Module 11690 (openChannelPicker)
+// Module 11668 (openChannelPicker)
 import intl2 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
-import GuildChannelStore from "GuildChannelStore" /* 4753 */;
-import GuildStore from "GuildStore" /* 4694 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
+import GuildChannelStore from "GuildChannelStore" /* 4722 */;
+import GuildStore from "GuildStore" /* 4663 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/channel/native/openChannelPicker.tsx");
@@ -40,7 +40,7 @@ export default function openChannelPicker(onClose) {
   const obj = { header: obj2, guild, channels: found.map((channel) => channel.channel), selectedChannel };
   obj2 = { title: intl.string(intl2.t.r2ptsz), onClose };
   ActionSheetActionCreatorsDefault;
-  const tmp4 = asyncRequire(11691, dependencyMap.paths);
+  const tmp4 = asyncRequire(11669, dependencyMap.paths);
   intl = intl2.intl;
   found = items.filter(filterFn);
   const merged1 = Object.assign(merged);

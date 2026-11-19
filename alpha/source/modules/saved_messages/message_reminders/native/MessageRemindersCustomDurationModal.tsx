@@ -1,22 +1,22 @@
-// Module ID: 11659
-// Function ID: 11660
+// Module ID: 11637
+// Function ID: 11638
 // Name: MessageRemindersCustomDurationModal
-// Dependencies: [32, 19, 17, 21, 4823, 575, 1630, 4832, 2020, 5037, 7533, 2121, 1113, 7013, 8473, 1380, 7006, 6940, 7259, 6956, 5414, 2]
+// Dependencies: [32, 19, 17, 21, 4792, 575, 1630, 4801, 2020, 5006, 7503, 2121, 1113, 6983, 8442, 1380, 6976, 6910, 7229, 6926, 5383, 2]
 
-// Module 11659 (MessageRemindersCustomDurationModal)
+// Module 11637 (MessageRemindersCustomDurationModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 2020 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4832 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 6940 */;
-import HeaderShared from "HeaderShared" /* 8473 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4801 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 6910 */;
+import HeaderShared from "HeaderShared" /* 8442 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -77,7 +77,7 @@ const memoResult = react.memo(function MessageRemindersCustomDurationScreen(onCl
     const result = obj.dismissGlobalKeyboard();
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     ActionSheetActionCreatorsDefault;
-    const tmp4 = asyncRequire(7533, dependencyMap.paths);
+    const tmp4 = asyncRequire(7503, dependencyMap.paths);
     const intl = intl5.intl;
     const string = intl.string;
     const t = intl5.t;
@@ -139,18 +139,18 @@ const memoResult = react.memo(function MessageRemindersCustomDurationScreen(onCl
       return metroImportDefault(HeaderActionButton, obj);
     }
   };
-  const Header = onClose(7013).Header;
+  const Header = onClose(6983).Header;
   num = 0;
   const obj5 = onClose(1380);
   if (!obj5.isIOS()) {
     num = top;
   }
   ({ headerLeftContainer: obj4.headerLeftContainerStyle, headerRightContainer: obj4.headerRightContainerStyle } = tmp);
-  tmp11Result = onClose(7006);
+  tmp11Result = onClose(6976);
   items1 = [closure_7(Header, obj3), ];
   const obj6 = { style: tmp.container, children: items2 };
   const obj7 = { title: intl.string(onClose(1113).t.pSZKvM), hasIcons: false, children: closure_7(TableRow, obj8) };
-  const TableRowGroup = tmp11(7259).TableRowGroup;
+  const TableRowGroup = tmp11(7229).TableRowGroup;
   intl = tmp11(1113).intl;
   obj8 = {
     label: formatResult,
@@ -160,11 +160,11 @@ const memoResult = react.memo(function MessageRemindersCustomDurationScreen(onCl
       handleOpenDatePicker("date");
     }
   };
-  TableRow = tmp11(6956).TableRow;
+  TableRow = tmp11(6926).TableRow;
   intl2 = tmp11(1113).intl;
   items2 = [closure_7(TableRowGroup, obj7), ];
   const obj9 = { title: intl3.string(onClose(1113).t.GOmEb8), hasIcons: false, children: closure_7(TableRow2, obj10) };
-  const TableRowGroup2 = tmp11(7259).TableRowGroup;
+  const TableRowGroup2 = tmp11(7229).TableRowGroup;
   intl3 = tmp11(1113).intl;
   obj10 = {
     label: formatResult1,
@@ -174,13 +174,13 @@ const memoResult = react.memo(function MessageRemindersCustomDurationScreen(onCl
       handleOpenDatePicker("time");
     }
   };
-  TableRow2 = tmp11(6956).TableRow;
+  TableRow2 = tmp11(6926).TableRow;
   intl4 = tmp11(1113).intl;
   const items3 = [closure_7(TableRowGroup2, obj9), ];
   let tmp10Result = null != error;
   if (tmp10Result) {
     const obj11 = { style: tmp.error, variant: "body-sm/medium", color: "text-feedback-critical", accessibilityRole: "alert", children: error };
-    tmp10Result = tmp10(tmp11(5414).Text, obj11);
+    tmp10Result = tmp10(tmp11(5383).Text, obj11);
   }
   items3[1] = tmp10Result;
   items2[1] = error(first, { children: items3 });

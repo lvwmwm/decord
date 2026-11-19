@@ -1,10 +1,10 @@
-// Module ID: 18517
-// Function ID: 18518
+// Module ID: 18510
+// Function ID: 18511
 // Name: conjureBotPermissionsTip
 // Dependencies: [2]
 // Exports: isBotPermissionsReviewPending, resolveBotPermissionsTip
 
-// Module 18517 (conjureBotPermissionsTip)
+// Module 18510 (conjureBotPermissionsTip)
 import size from "module_2" /* 2 */;
 
 function resolveBotPermissionsTip(publish) {

@@ -1,13 +1,13 @@
-// Module ID: 12241
-// Function ID: 12242
+// Module ID: 12224
+// Function ID: 12225
 // Name: conjureCreatorByline
-// Dependencies: [1113, 4121, 4879, 2]
+// Dependencies: [1113, 4089, 4848, 2]
 // Exports: formatConjureCreatorByline
 
-// Module 12241 (conjureCreatorByline)
+// Module 12224 (conjureCreatorByline)
 import intl2 from "intl" /* 1113 */;
-import _modDef4121 from "module_4121" /* 4121 */;
-import UserUtils from "UserUtils" /* 4879 */;
+import _modDef4089 from "module_4089" /* 4089 */;
+import UserUtils from "UserUtils" /* 4848 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/app_hover_card/conjureCreatorByline.tsx");
@@ -18,7 +18,7 @@ export function formatConjureCreatorByline(creator) {
   const intl = intl2.intl;
   const format = intl.format;
   const obj = { name: obj2.getName(creator) };
-  const prop = _modDef4121["6/x9LD"];
+  const prop = _modDef4089["6/x9LD"];
   obj2 = UserUtils;
   return format(prop, obj);
 }

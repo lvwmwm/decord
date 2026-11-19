@@ -1,10 +1,10 @@
-// Module ID: 7952
-// Function ID: 7953
+// Module ID: 7922
+// Function ID: 7923
 // Name: HotspotActionCreators
 // Dependencies: [1072, 1256, 572, 2]
 // Exports: clearHotspotOverride, hideHotspot, setHotspotOverride
 
-// Module 7952 (HotspotActionCreators)
+// Module 7922 (HotspotActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;

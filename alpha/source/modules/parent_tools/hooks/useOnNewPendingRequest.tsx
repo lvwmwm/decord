@@ -1,12 +1,12 @@
-// Module ID: 16104
-// Function ID: 16105
+// Module ID: 16095
+// Function ID: 16096
 // Name: useOnNewPendingRequest
-// Dependencies: [19, 8247, 9042, 504, 5384, 8249, 2]
+// Dependencies: [19, 8216, 9016, 504, 5353, 8218, 2]
 // Exports: default
 
-// Module 16104 (useOnNewPendingRequest)
+// Module 16095 (useOnNewPendingRequest)
 import react_mod from "react" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 8247 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 8216 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -15,12 +15,12 @@ let _require;
 let react = react_mod;
 const result = size.fileFinishedImporting("modules/parent_tools/hooks/useOnNewPendingRequest.tsx");
 
-export default function useOnNewPendingRequest(map) {
+export default function useOnNewPendingRequest(set) {
   let current;
   let ref;
   let ref2;
   let stateFromStores;
-  _require = map;
+  _require = set;
   let obj = require("useUserLinks");
   const pendingRequestCount = obj.usePendingRequestCount();
   const items = [ref2];
@@ -35,8 +35,8 @@ export default function useOnNewPendingRequest(map) {
       });
     }
   });
-  react = react.useRef(map);
-  const items1 = [map];
+  react = react.useRef(set);
+  const items1 = [set];
   const effect = react.useEffect(() => {
     ref.current = current;
   }, items1);

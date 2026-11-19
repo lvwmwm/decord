@@ -1,29 +1,29 @@
-// Module ID: 15995
-// Function ID: 15996
+// Module ID: 15986
+// Function ID: 15987
 // Name: AccountSmsBackupSetting
-// Dependencies: [1388, 8624, 1072, 7331, 504, 15989, 1113, 15984, 15992, 5769, 6337, 7330, 2121, 7333, 12, 11897, 15902, 2]
+// Dependencies: [1388, 8593, 1072, 7301, 504, 15980, 1113, 15975, 15983, 5740, 6308, 7300, 2121, 7303, 12, 11875, 15893, 2]
 
-// Module 15995 (AccountSmsBackupSetting)
+// Module 15986 (AccountSmsBackupSetting)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5769 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6337 */;
-import PhoneConstants from "PhoneConstants" /* 7331 */;
-import PhoneActionCreators from "PhoneActionCreators" /* 7333 */;
-import SettingsConstants from "SettingsConstants" /* 8624 */;
-import SettingsAccountUtils from "SettingsAccountUtils" /* 15902 */;
-import MFAActionCreatorsDefault from "MFAActionCreators" /* 15984 */;
-import showUserSettingsInputAlertDefault from "showUserSettingsInputAlert" /* 15992 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5740 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6308 */;
+import PhoneConstants from "PhoneConstants" /* 7301 */;
+import PhoneActionCreators from "PhoneActionCreators" /* 7303 */;
+import SettingsConstants from "SettingsConstants" /* 8593 */;
+import SettingsAccountUtils from "SettingsAccountUtils" /* 15893 */;
+import MFAActionCreatorsDefault from "MFAActionCreators" /* 15975 */;
+import showUserSettingsInputAlertDefault from "showUserSettingsInputAlert" /* 15983 */;
 import UserStore from "UserStore" /* 1388 */;
 import module_12 from "module_12" /* 12 */;
-import SettingBuilders from "SettingBuilders" /* 11897 */;
+import SettingBuilders from "SettingBuilders" /* 11875 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const account_MFAUtils = tmp(15989);
-const f110393 = () => currentUser.getCurrentUser();
+const account_MFAUtils = tmp(15980);
+const f110369 = () => currentUser.getCurrentUser();
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const UserFlags = Constants.UserFlags;
 let closure_5 = PhoneConstants.PHONE_VERIFICATION_MODAL_KEY;
@@ -61,7 +61,7 @@ let closure_6 = module_12.debounce(function toggleSMS(user) {
     const pushLazy = ModalActionCreatorsDefault.pushLazy;
     let obj = { reason: PhoneActionCreators.ChangePhoneReason.USER_SETTINGS_UPDATE };
     ModalActionCreatorsDefault;
-    const tmp6 = asyncRequire(7330, dependencyMap.paths);
+    const tmp6 = asyncRequire(7300, dependencyMap.paths);
     pushLazy(tmp6, obj, closure_5);
   }
 }, 200);
@@ -75,7 +75,7 @@ let obj = {
     let currentUser;
     const items = [UserStore];
     const obj = get_initialized;
-    const stateFromStores = obj.useStateFromStores(items, f110393);
+    const stateFromStores = obj.useStateFromStores(items, f110369);
     let sMSBackupDisabledMessage = null;
     if (null != stateFromStores) {
       const tmpResult = account_MFAUtils;
@@ -107,7 +107,7 @@ let obj = {
   useDescription: function useAccountSMSBackupSettingDescription() {
     const items = [UserStore];
     const obj = get_initialized;
-    const stateFromStores = obj.useStateFromStores(items, f110393);
+    const stateFromStores = obj.useStateFromStores(items, f110369);
     let sMSBackupDisabledMessage = null;
     if (null != stateFromStores) {
       const tmpResult = account_MFAUtils;

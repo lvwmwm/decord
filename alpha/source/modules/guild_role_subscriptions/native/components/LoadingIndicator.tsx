@@ -1,14 +1,14 @@
-// Module ID: 16680
-// Function ID: 16681
+// Module ID: 16673
+// Function ID: 16674
 // Name: LoadingIndicator
-// Dependencies: [19, 17, 21, 4823, 2]
+// Dependencies: [19, 17, 21, 4792, 2]
 // Exports: default
 
-// Module 16680 (LoadingIndicator)
+// Module 16673 (LoadingIndicator)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const ActivityIndicator = react_native.ActivityIndicator;

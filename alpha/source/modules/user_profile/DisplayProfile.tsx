@@ -1,12 +1,12 @@
-// Module ID: 8042
-// Function ID: 8043
+// Module ID: 8011
+// Function ID: 8012
 // Name: DisplayProfile
-// Dependencies: [1390, 6869, 2174, 1414, 8043, 2]
+// Dependencies: [1390, 6839, 2174, 1414, 8012, 2]
 
-// Module 8042 (DisplayProfile)
+// Module 8011 (DisplayProfile)
 import PremiumConstants from "PremiumConstants" /* 1390 */;
 import AvatarUtils from "AvatarUtils" /* 1414 */;
-import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8043 */;
+import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8012 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

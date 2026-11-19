@@ -1,15 +1,15 @@
-// Module ID: 15208
-// Function ID: 15209
+// Module ID: 15194
+// Function ID: 15195
 // Name: SplitTextField
-// Dependencies: [19, 17, 21, 7152, 7140, 7141, 7150, 7154, 2]
+// Dependencies: [19, 17, 21, 7122, 7110, 7111, 7120, 7124, 2]
 // Exports: SplitTextField
 
-// Module 15208 (SplitTextField)
+// Module 15194 (SplitTextField)
 import Fragment from "Fragment" /* 21 */;
-import useTextField from "useTextField" /* 7140 */;
-import useInputClearButton from "useInputClearButton" /* 7141 */;
-import useInputAttachments from "useInputAttachments" /* 7150 */;
-import InputFieldContainer from "InputFieldContainer" /* 7152 */;
+import useTextField from "useTextField" /* 7110 */;
+import useInputClearButton from "useInputClearButton" /* 7111 */;
+import useInputAttachments from "useInputAttachments" /* 7120 */;
+import InputFieldContainer from "InputFieldContainer" /* 7122 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
@@ -66,7 +66,7 @@ export function SplitTextField(ref) {
       tmp2Result2 = useInputAttachments;
     }
   }
-  const BaseTextField = tmp2(7154).BaseTextField;
+  const BaseTextField = tmp2(7124).BaseTextField;
   const merged2 = Object.assign(inputProps);
   return <BaseTextField ref={innerRef} leading={tmp9} trailing={trailing} inputStyle={inputStyle} />;
 }

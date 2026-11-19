@@ -1,21 +1,21 @@
-// Module ID: 18992
-// Function ID: 18993
+// Module ID: 18984
+// Function ID: 18985
 // Name: useVoiceChannelAppOptions
-// Dependencies: [32, 19, 6529, 1414, 6774, 2151, 5467, 6844, 504, 6773, 6567, 18993, 2]
+// Dependencies: [32, 19, 6500, 1414, 6746, 2151, 5436, 6814, 504, 6745, 6538, 18985, 2]
 // Exports: useVoiceChannelAppSettingOptions, voiceChannelAppIdsToFetch, voiceChannelAppRows
 
-// Module 18992 (useVoiceChannelAppOptions)
+// Module 18984 (useVoiceChannelAppOptions)
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import ConjureUtils from "ConjureUtils" /* 6774 */;
+import ConjureUtils from "ConjureUtils" /* 6746 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6529 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6500 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap, map, name, set;
 
-const f117927 = (application_id) => application_id.application_id;
+const f117803 = (application_id) => application_id.application_id;
 function voiceChannelAppCandidates(arg0, arg1, arg2) {
   map = new Map();
   const items = [...arg1];
@@ -52,7 +52,7 @@ export function voiceChannelAppIdsToFetch(arr, arg1) {
     const obj = closure_2_0(stateFromStoresArray1[5]);
     return !obj.supportsEmbeddedSurface(tmp, closure_2_0(stateFromStoresArray1[6]).EmbeddedSurfaceType.VOICE_CHANNEL);
   });
-  return found.map(f117927);
+  return found.map(f117803);
 }
 export function useVoiceChannelAppSettingOptions(guildId, application_id) {
   let closure_129_6;
@@ -82,7 +82,7 @@ export function useVoiceChannelAppSettingOptions(guildId, application_id) {
   const memo = getOrFetchApplication.useMemo(() => voiceChannelAppCandidates(stateFromStoresArray, stateFromStoresArray1, closure_0), items4);
   const items5 = [memo];
   const memo1 = getOrFetchApplication.useMemo(() => memo.map((application_id) => application_id.application_id), items5);
-  const tmp9 = memo5(6773)(memo1, false);
+  const tmp9 = memo5(6745)(memo1, false);
   let closure_4 = tmp9;
   const useRef = getOrFetchApplication.useRef;
   set = new Set();
@@ -100,7 +100,7 @@ export function useVoiceChannelAppSettingOptions(guildId, application_id) {
       const obj = closure_2_0(stateFromStoresArray1[5]);
       return !obj.supportsEmbeddedSurface(tmp, closure_2_0(stateFromStoresArray1[6]).EmbeddedSurfaceType.VOICE_CHANNEL);
     });
-    return found.map(f117927);
+    return found.map(f117803);
   }, items6);
   const items7 = [memo2];
   const effect1 = getOrFetchApplication.useEffect(() => {
@@ -153,8 +153,8 @@ export function useVoiceChannelAppSettingOptions(guildId, application_id) {
   }
   let obj5 = { hasRows: memo3.length > 0, loadFailed: tmp20, fetchPhase: str };
   tmp20 = "error" === stateFromStores;
-  const voiceChannelAppListState = tmp2(18993).voiceChannelAppListState;
-  tmp2(18993);
+  const voiceChannelAppListState = tmp2(18985).voiceChannelAppListState;
+  tmp2(18985);
   if (!tmp20) {
     tmp20 = first;
   }
@@ -167,7 +167,7 @@ export function useVoiceChannelAppSettingOptions(guildId, application_id) {
     }
     return application_id;
   }), items11);
-  const tmp23 = tmp8(6773)(memo4);
+  const tmp23 = tmp8(6745)(memo4);
   let closure_11 = tmp23;
   const items12 = [memo3, tmp23];
   memo5 = obj.useMemo(() => memo3.map((application_id, index) => {
@@ -206,7 +206,7 @@ export function useVoiceChannelAppSettingOptions(guildId, application_id) {
     }
   }
   _slicedToArray = tmp24;
-  const tmp2Result2 = tmp2(6773);
+  const tmp2Result2 = tmp2(6745);
   getOrFetchApplication = tmp2Result2.useGetOrFetchApplication(tmp24);
   const items13 = [memo5, result, tmp24, getOrFetchApplication];
   return obj.useMemo(() => {

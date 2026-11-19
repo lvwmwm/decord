@@ -1,16 +1,16 @@
-// Module ID: 14410
-// Function ID: 14411
+// Module ID: 14397
+// Function ID: 14398
 // Name: UserProfileActivityVoiceChannelUsers
-// Dependencies: [19, 5561, 21, 6539, 504, 6956, 5851, 1187, 13428, 1113, 2]
+// Dependencies: [19, 5530, 21, 6510, 504, 6926, 5822, 1187, 13410, 1113, 2]
 // Exports: default
 
-// Module 14410 (UserProfileActivityVoiceChannelUsers)
+// Module 14397 (UserProfileActivityVoiceChannelUsers)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5851 */;
-import UserProfileStackedActionSheetDefault from "UserProfileStackedActionSheet" /* 13428 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5822 */;
+import UserProfileStackedActionSheetDefault from "UserProfileStackedActionSheet" /* 13410 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 5561 */;
+import PresenceStore from "PresenceStore" /* 5530 */;
 import size from "module_2" /* 2 */;
 
 function UserRow(user) {
@@ -23,7 +23,7 @@ function UserRow(user) {
   user = user.user;
   const channel = user.channel;
   ({ onPress, start, end } = user);
-  let obj = user(6539);
+  let obj = user(6510);
   const avatarDecoration = obj.useAvatarDecoration(user, channel.guild_id);
   const items = [PresenceStore];
   const obj2 = user(504);
@@ -32,7 +32,7 @@ function UserRow(user) {
     return obj;
   });
   ({ status, isMobileOnline, isVROnline } = stateFromStoresObject);
-  const TableRow = user(6956).TableRow;
+  const TableRow = user(6926).TableRow;
   const obj4 = NicknameUtilsDefault;
   ({ user, avatarDecoration, size: user(1187).AvatarSizes.REFRESH_MEDIUM_32, guildId: channel.guild_id, status, isMobileOnline, isVROnline, autoStatusCutout: true });
   const Avatar = user(1187).Avatar;

@@ -1,10 +1,10 @@
-// Module ID: 8039
-// Function ID: 8040
+// Module ID: 8008
+// Function ID: 8009
 // Name: parseCollectiblesSequencedOffers
 // Dependencies: [2]
 // Exports: default
 
-// Module 8039 (parseCollectiblesSequencedOffers)
+// Module 8008 (parseCollectiblesSequencedOffers)
 import size from "module_2" /* 2 */;
 
 function parseSequencedOffer(assets) {

@@ -1,9 +1,9 @@
-// Module ID: 8051
-// Function ID: 8052
+// Module ID: 8020
+// Function ID: 8021
 // Name: Constants
 // Dependencies: [2]
 
-// Module 8051 (Constants)
+// Module 8020 (Constants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/tiered_tenure_badging/Constants.tsx");

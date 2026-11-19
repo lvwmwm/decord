@@ -1,12 +1,12 @@
-// Module ID: 17257
-// Function ID: 17258
+// Module ID: 17250
+// Function ID: 17251
 // Name: useDesignSystemsSettingPredicate
-// Dependencies: [16066, 9988, 2]
+// Dependencies: [16057, 9966, 2]
 // Exports: useDesignSystemsSettingPredicate
 
-// Module 17257 (useDesignSystemsSettingPredicate)
-import PlaygroundAccessExperiment from "PlaygroundAccessExperiment" /* 9988 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 16066 */;
+// Module 17250 (useDesignSystemsSettingPredicate)
+import PlaygroundAccessExperiment from "PlaygroundAccessExperiment" /* 9966 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 16057 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_settings/design_system/native/useDesignSystemsSettingPredicate.tsx");

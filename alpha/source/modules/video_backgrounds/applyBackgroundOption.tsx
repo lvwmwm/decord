@@ -1,22 +1,22 @@
-// Module ID: 5729
-// Function ID: 5730
+// Module ID: 5698
+// Function ID: 5699
 // Name: applyBackgroundOption
-// Dependencies: [5, 1388, 5730, 5731, 1072, 5732, 5589, 5737, 1414, 5742, 5735, 5734, 5743, 2]
+// Dependencies: [5, 1388, 5699, 5700, 1072, 5701, 5558, 5706, 1414, 5711, 5704, 5703, 5712, 2]
 // Exports: applyBackgroundOptionPreview, applyInitialVideoBackgroundOption
 
-// Module 5729 (applyBackgroundOption)
+// Module 5698 (applyBackgroundOption)
 import Constants from "Constants" /* 1072 */;
 import AvatarUtils from "AvatarUtils" /* 1414 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 5589 */;
-import VideoBackgroundActionCreators from "VideoBackgroundActionCreators" /* 5732 */;
-import LastUsedVideoBackgroundOption from "LastUsedVideoBackgroundOption" /* 5734 */;
-import getDefaultBackgroundDataDefault from "getDefaultBackgroundData" /* 5737 */;
-import getFilterImageDefault from "getFilterImage" /* 5742 */;
-import isVideoBackgroundEnabledDefault from "isVideoBackgroundEnabled" /* 5743 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5558 */;
+import VideoBackgroundActionCreators from "VideoBackgroundActionCreators" /* 5701 */;
+import LastUsedVideoBackgroundOption from "LastUsedVideoBackgroundOption" /* 5703 */;
+import getDefaultBackgroundDataDefault from "getDefaultBackgroundData" /* 5706 */;
+import getFilterImageDefault from "getFilterImage" /* 5711 */;
+import isVideoBackgroundEnabledDefault from "isVideoBackgroundEnabled" /* 5712 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1388 */;
-import VideoBackgroundStore from "VideoBackgroundStore" /* 5730 */;
-import VideoBackgroundConstants from "VideoBackgroundConstants" /* 5731 */;
+import VideoBackgroundStore from "VideoBackgroundStore" /* 5699 */;
+import VideoBackgroundConstants from "VideoBackgroundConstants" /* 5700 */;
 import size from "module_2" /* 2 */;
 
 let c8, c9;
@@ -71,7 +71,7 @@ obj = function _applyBackgroundOption() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c7;
@@ -95,11 +95,11 @@ obj = function _applyBackgroundOption() {
             if (null == closure_2) {
               applyBackgroundMediaFilterSettings(closure_0, closure_1, BaseConnectionEvent.FilterSettingsGraph.NONE);
               c9 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             } else if (closure_2 === metroImportDefault) {
               applyBackgroundMediaFilterSettings(closure_0, closure_1, BaseConnectionEvent.FilterSettingsGraph.BACKGROUND_BLUR);
               c9 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             } else {
               if (typeof closure_2 !== "string") {
                 let isAnimatedIconHashResult;
@@ -184,7 +184,7 @@ obj = function _applyBackgroundOption() {
           }
         }
         c9 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       } catch (tmp47) {
         let closure_6 = tmp47;
         if (0 === c7) {

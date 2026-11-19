@@ -1,9 +1,9 @@
-// Module ID: 8804
-// Function ID: 8805
+// Module ID: 8773
+// Function ID: 8774
 // Name: redactRestrictedContent
 // Dependencies: [2]
 
-// Module 8804 (redactRestrictedContent)
+// Module 8773 (redactRestrictedContent)
 import size from "module_2" /* 2 */;
 
 function nodeToText(content) {

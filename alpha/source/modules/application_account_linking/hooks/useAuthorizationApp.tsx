@@ -1,10 +1,10 @@
-// Module ID: 7434
-// Function ID: 7435
+// Module ID: 7404
+// Function ID: 7405
 // Name: useAuthorizationApp
-// Dependencies: [19, 2165, 2143, 1365, 2119, 6773, 2]
+// Dependencies: [19, 2165, 2143, 1365, 2119, 6745, 2]
 // Exports: getAuthorizationApp, useAuthorizationApp
 
-// Module 7434 (useAuthorizationApp)
+// Module 7404 (useAuthorizationApp)
 import ApplicationConstants from "ApplicationConstants" /* 1365 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;

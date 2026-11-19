@@ -1,10 +1,10 @@
-// Module ID: 19709
-// Function ID: 19710
+// Module ID: 19705
+// Function ID: 19706
 // Name: RTCLatencyTestActionCreators
 // Dependencies: [1285, 572, 2]
 // Exports: completeRTCLatencyTest, fetchRTCLatencyTestRegions
 
-// Module 19709 (RTCLatencyTestActionCreators)
+// Module 19705 (RTCLatencyTestActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
 import size from "module_2" /* 2 */;

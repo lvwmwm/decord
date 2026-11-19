@@ -1,13 +1,13 @@
-// Module ID: 7150
-// Function ID: 7151
+// Module ID: 7120
+// Function ID: 7121
 // Name: useInputAttachments
-// Dependencies: [32, 19, 17, 21, 7151, 5414, 7152, 2]
+// Dependencies: [32, 19, 17, 21, 7121, 5383, 7122, 2]
 // Exports: estimateAttachmentWidth, renderInputAttachment, useInputAttachments
 
-// Module 7150 (useInputAttachments)
+// Module 7120 (useInputAttachments)
 import Fragment from "Fragment" /* 21 */;
-import Text_Text from "Text/Text" /* 5414 */;
-import IconSize from "IconSize" /* 7151 */;
+import Text_Text from "Text/Text" /* 5383 */;
+import IconSize from "IconSize" /* 7121 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -92,14 +92,14 @@ export function useInputAttachments(merged, leadingPressableProps) {
   let tmp28;
   let tmp29;
   let trailingIcon;
-  const f91815 = () => {
+  const f91759 = () => {
     let num = 0;
     if (null != leadingIcon) {
       num = IconSize.ICON_SIZE.xs + tmp;
     }
     return num;
   };
-  const f91816 = () => {
+  const f91760 = () => {
     let num = 0;
     if (null != trailingIcon) {
       num = IconSize.ICON_SIZE.xs + tmp;
@@ -197,11 +197,11 @@ export function useInputAttachments(merged, leadingPressableProps) {
       let trailingIcon2 = inputStyles.trailingText;
     }
     let num = 2;
-    [tmp25, tmp26] = trailingIcon(react.useState(f91815), 2);
-    trailingIcon(react.useState(f91815), 2);
+    [tmp25, tmp26] = trailingIcon(react.useState(f91759), 2);
+    trailingIcon(react.useState(f91759), 2);
     let num3 = 0;
-    [tmp28, tmp29] = trailingIcon(react.useState(f91816), 2);
-    trailingIcon(react.useState(f91816), 2);
+    [tmp28, tmp29] = trailingIcon(react.useState(f91760), 2);
+    trailingIcon(react.useState(f91760), 2);
     if (null != prop && tmp6 && null != leadingText) {
       num3 = inputStyles.padding.paddingHorizontal;
     }

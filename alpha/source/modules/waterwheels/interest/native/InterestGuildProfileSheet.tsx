@@ -1,33 +1,33 @@
-// Module ID: 17868
-// Function ID: 17869
+// Module ID: 17861
+// Function ID: 17862
 // Name: InterestGuildProfileSheet
-// Dependencies: [32, 19, 17, 1072, 21, 4823, 575, 5032, 5387, 8061, 1496, 1630, 17869, 671, 9646, 17870, 17871, 5051, 5378, 5055, 5386, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 4792, 575, 5001, 5356, 8030, 1496, 1630, 17862, 671, 9625, 17863, 17864, 5020, 5347, 5024, 5355, 2]
 // Exports: default
 
-// Module 17868 (InterestGuildProfileSheet)
+// Module 17861 (InterestGuildProfileSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import Constants from "Constants" /* 1072 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import useThemeDefault from "useTheme" /* 5032 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5051 */;
-import BottomSheetModal from "BottomSheetModal" /* 5055 */;
-import LinearGradientDefault from "LinearGradient" /* 5378 */;
-import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 5386 */;
-import InterestGuildProfileBannerDefault from "InterestGuildProfileBanner" /* 17870 */;
-import InterestGuildJoinButtonDefault from "InterestGuildJoinButton" /* 17871 */;
+import useThemeDefault from "useTheme" /* 5001 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5020 */;
+import BottomSheetModal from "BottomSheetModal" /* 5024 */;
+import LinearGradientDefault from "LinearGradient" /* 5347 */;
+import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 5355 */;
+import InterestGuildProfileBannerDefault from "InterestGuildProfileBanner" /* 17863 */;
+import InterestGuildJoinButtonDefault from "InterestGuildJoinButton" /* 17864 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
 let metroImportDefault;
 let tmp;
-const GuildProfileSheetBodyDefault = tmp(9646);
+const GuildProfileSheetBodyDefault = tmp(9625);
 const View = react_native.View;
 const VerticalGradient = Constants.VerticalGradient;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
@@ -68,11 +68,11 @@ export default function InterestGuildProfileSheet(guildId) {
   let tmp = importDefault;
   let tmp2 = dependencyMap;
   const tmp3 = useThemeDefault();
-  let obj = guildId(5387);
+  let obj = guildId(5356);
   const backgroundColor = obj.useToken(nativeDefault.colors.INTERACTIVE_TEXT_HOVER, tmp3);
-  let obj2 = guildId(5387);
+  let obj2 = guildId(5356);
   const token = obj2.useToken(nativeDefault.colors.BACKGROUND_BASE_LOW);
-  let obj3 = guildId(8061);
+  let obj3 = guildId(8030);
   const bottomSheetRef1 = obj3.useBottomSheetRef();
   const bottomSheetRef = bottomSheetRef1.bottomSheetRef;
   const bottomSheetClose = bottomSheetRef1.bottomSheetClose;
@@ -84,8 +84,8 @@ export default function InterestGuildProfileSheet(guildId) {
   [tmp9, c10] = _slicedToArray(react.useState(0), 2);
   let obj5 = { windowHeight: height, contentHeight: tmp7, footerHeight: sum, safeAreaBottom: bottom };
   const tmp8 = _slicedToArray(react.useState(0), 2);
-  const getInterestGuildProfileSheetLayout = guildId(17869).getInterestGuildProfileSheetLayout;
-  guildId(17869);
+  const getInterestGuildProfileSheetLayout = guildId(17862).getInterestGuildProfileSheetLayout;
+  guildId(17862);
   if (sum <= 0) {
     sum = nativeDefault.space.PX_48 + nativeDefault.space.PX_32;
   }

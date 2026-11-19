@@ -1,13 +1,13 @@
-// Module ID: 7973
-// Function ID: 7974
+// Module ID: 7943
+// Function ID: 7944
 // Name: CreateInviteModalActionCreators
-// Dependencies: [7964, 1072, 572, 1256, 7173, 1113, 2]
+// Dependencies: [7934, 1072, 572, 1256, 7143, 1113, 2]
 
-// Module 7973 (CreateInviteModalActionCreators)
+// Module 7943 (CreateInviteModalActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 7964 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 7934 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -78,7 +78,7 @@ let obj = {
         }
       }
       let obj2 = { temporary, validate: code, max_age: maxAge, max_uses: maxUses, target_type: targetType, target_user_id: targetUserId, target_application_id: targetApplicationId, flags, role_ids: roleIds };
-      const tmp6Result = tmp6(7173);
+      const tmp6Result = tmp6(7143);
       const invite1 = tmp6Result.createInvite(channelId, obj2, arg0);
       invite1.then(() => {
         const obj = DispatcherDefault;

@@ -1,17 +1,17 @@
-// Module ID: 7233
-// Function ID: 7234
+// Module ID: 7203
+// Function ID: 7204
 // Name: GuildIcon
-// Dependencies: [32, 19, 7234, 4690, 1072, 21, 4823, 575, 2153, 6929, 2025, 5510, 7235, 299, 2]
+// Dependencies: [32, 19, 7204, 4659, 1072, 21, 4792, 575, 2153, 6899, 2025, 5479, 7205, 299, 2]
 
-// Module 7233 (GuildIcon)
+// Module 7203 (GuildIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import ExpressionSourceRecord from "ExpressionSourceRecord" /* 7234 */;
+import ExpressionSourceRecord from "ExpressionSourceRecord" /* 7204 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildRecord from "GuildRecord" /* 4690 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import GuildRecord from "GuildRecord" /* 4659 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportDefault;

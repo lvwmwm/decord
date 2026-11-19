@@ -1,10 +1,10 @@
-// Module ID: 10589
-// Function ID: 10590
+// Module ID: 10567
+// Function ID: 10568
 // Name: fetchDeveloperApplications
 // Dependencies: [5, 2143, 1072, 572, 1285, 2]
 // Exports: fetchDeveloperApplications
 
-// Module 10589 (fetchDeveloperApplications)
+// Module 10567 (fetchDeveloperApplications)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
@@ -26,7 +26,7 @@ let obj = function _fetchDeveloperApplications() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c3;
@@ -82,7 +82,7 @@ let obj = function _fetchDeveloperApplications() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp10) {
         applications = tmp10;

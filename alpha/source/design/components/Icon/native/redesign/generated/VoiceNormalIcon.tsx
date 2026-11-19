@@ -1,14 +1,14 @@
-// Module ID: 6945
-// Function ID: 6946
+// Module ID: 6915
+// Function ID: 6916
 // Name: VoiceNormalIcon
-// Dependencies: [19, 21, 575, 5509, 6946, 2]
+// Dependencies: [19, 21, 575, 5478, 6916, 2]
 // Exports: VoiceNormalIcon
 
-// Module 6945 (VoiceNormalIcon)
+// Module 6915 (VoiceNormalIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5509 */;
-import AssetRegistry from "AssetRegistry" /* 6946 */;
+import BaseIconImage2 from "BaseIconImage" /* 5478 */;
+import AssetRegistry from "AssetRegistry" /* 6916 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

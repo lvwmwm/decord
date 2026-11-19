@@ -1,9 +1,9 @@
-// Module ID: 11693
-// Function ID: 11694
+// Module ID: 11671
+// Function ID: 11672
 // Name: ChannelFollowerActionCreators
 // Dependencies: [5, 1072, 1285, 572, 2]
 
-// Module 11693 (ChannelFollowerActionCreators)
+// Module 11671 (ChannelFollowerActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
@@ -39,7 +39,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         let c3;
@@ -90,7 +90,7 @@ let obj = {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp18) {
           closure_2 = tmp18;

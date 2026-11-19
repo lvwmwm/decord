@@ -1,21 +1,21 @@
-// Module ID: 14448
-// Function ID: 14449
+// Module ID: 14435
+// Function ID: 14436
 // Name: UserProfileGameFriendActionSheet
-// Dependencies: [5, 32, 19, 17, 4765, 1072, 21, 4823, 575, 10146, 7466, 7062, 1187, 5414, 14449, 6773, 5851, 7651, 5504, 5037, 7464, 7426, 1113, 2]
+// Dependencies: [5, 32, 19, 17, 4734, 1072, 21, 4792, 575, 10124, 7436, 7032, 1187, 5383, 14436, 6745, 5822, 7621, 5473, 5006, 7434, 7396, 1113, 2]
 // Exports: default
 
-// Module 14448 (UserProfileGameFriendActionSheet)
+// Module 14435 (UserProfileGameFriendActionSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 10146 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
+import UserProfileAlertUtils from "UserProfileAlertUtils" /* 10124 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RelationshipStore from "RelationshipStore" /* 4765 */;
+import RelationshipStore from "RelationshipStore" /* 4734 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size_mod from "module_2" /* 2 */;
 
 let _undefined;
@@ -135,7 +135,7 @@ export default function UserProfileGameFriendActionSheet(user) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c3;
@@ -185,7 +185,7 @@ export default function UserProfileGameFriendActionSheet(user) {
           c3 = 0;
           closure_128_5(false);
           _undefined = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp30) {
         memo = tmp30;

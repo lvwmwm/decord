@@ -1,17 +1,17 @@
-// Module ID: 15638
-// Function ID: 15639
+// Module ID: 15625
+// Function ID: 15626
 // Name: providers
-// Dependencies: [5, 6597, 6261, 1072, 2145, 1083, 6979, 6818, 10761, 10764, 6599, 572, 1108, 6935, 2]
+// Dependencies: [5, 6568, 6233, 1072, 2145, 1083, 6949, 6790, 10739, 10742, 6570, 572, 1108, 6905, 2]
 
-// Module 15638 (providers)
+// Module 15625 (providers)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
-import RPCErrorDefault from "RPCError" /* 6818 */;
-import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 6979 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 10761 */;
+import RPCErrorDefault from "RPCError" /* 6790 */;
+import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 6949 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 10739 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6597 */;
-import Constants_mod from "Constants" /* 6261 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6568 */;
+import Constants_mod from "Constants" /* 6233 */;
 import Constants_mod2 from "Constants" /* 1072 */;
 import Constants_mod3 from "Constants" /* 2145 */;
 import Constants_mod4 from "Constants" /* 1083 */;
@@ -47,7 +47,7 @@ let value = function _refreshProviderAccessToken() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -266,7 +266,7 @@ let closure_11 = _asyncToGenerator(async function(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "HermesInternal", done: "+60" };
     }
   } else {
     try {

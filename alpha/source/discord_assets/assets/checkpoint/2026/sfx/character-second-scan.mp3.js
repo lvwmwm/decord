@@ -1,8 +1,8 @@
-// Module ID: 12458
-// Function ID: 12459
+// Module ID: 12441
+// Function ID: 12442
 // Dependencies: [2]
 
-// Module 12458
+// Module 12441
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/sfx/character-second-scan.mp3.js");

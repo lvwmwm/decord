@@ -1,69 +1,98 @@
 // Module ID: 4895
 // Function ID: 4896
-// Dependencies: [4896, 4901, 4902, 4903, 4904, 4905, 4906, 4897, 4907, 4908, 4909, 4910, 4911]
+// Dependencies: [32, 19, 4884]
+// Exports: useRive
 
 // Module 4895
-import installedNitro1 from "installedNitro1" /* 4897 */;
-import _mod4901 from "module_4901" /* 4901 */;
-import _mod4902 from "module_4902" /* 4902 */;
-import _mod4903 from "module_4903" /* 4903 */;
-import _mod4904 from "module_4904" /* 4904 */;
-import _mod4905 from "module_4905" /* 4905 */;
-import _mod4906 from "module_4906" /* 4906 */;
-import _mod4907 from "module_4907" /* 4907 */;
-import _mod4908 from "module_4908" /* 4908 */;
-import _mod4909 from "module_4909" /* 4909 */;
-import react_native from "react-native" /* 4910 */;
-import _mod4911 from "module_4911" /* 4911 */;
-import installWorkletsSupport_mod from "installWorkletsSupport" /* 4896 */;
+import react2 from "react" /* 4884 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 
-let installWorkletsSupport = installWorkletsSupport_mod;
-installWorkletsSupport = installWorkletsSupport.installWorkletsSupport();
-for (const key10017 in _mod4901) {
-  exports[key10017] = _mod4901[key10017];
-  continue;
-}
-for (const key10021 in _mod4902) {
-  exports[key10021] = _mod4902[key10021];
-  continue;
-}
-for (const key10025 in _mod4903) {
-  exports[key10025] = _mod4903[key10025];
-  continue;
-}
-for (const key10029 in _mod4904) {
-  exports[key10029] = _mod4904[key10029];
-  continue;
-}
-for (const key10033 in _mod4905) {
-  exports[key10033] = _mod4905[key10033];
-  continue;
-}
-for (const key10037 in _mod4906) {
-  exports[key10037] = _mod4906[key10037];
-  continue;
-}
-for (const key10041 in installedNitro1) {
-  exports[key10041] = installedNitro1[key10041];
-  continue;
-}
-for (const key10045 in _mod4907) {
-  exports[key10045] = _mod4907[key10045];
-  continue;
-}
-for (const key10049 in _mod4908) {
-  exports[key10049] = _mod4908[key10049];
-  continue;
-}
-for (const key10053 in _mod4909) {
-  exports[key10053] = _mod4909[key10053];
-  continue;
-}
-for (const key10057 in react_native) {
-  exports[key10057] = react_native[key10057];
-  continue;
-}
-for (const key10061 in _mod4911) {
-  exports[key10061] = _mod4911[key10061];
-  continue;
+let ref;
+
+let c3;
+let closure_4;
+let useCallback;
+({ useRef: c3, useCallback, useState: closure_4 } = react);
+
+export function useRive() {
+  let closure_129_1;
+  let first;
+  let tmp4;
+  let tmp6;
+  let tmp7;
+  const obj = react2;
+  const cResult = obj.c(4);
+  const tmp2 = _false(null);
+  let closure_0 = tmp2;
+  const tmp3 = _slicedToArray(React3(null), 2);
+  [tmp4, closure_129_1] = tmp3;
+  let closure_2 = _false(null);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function t(current) {
+      ref = current;
+      if (ref.current !== current) {
+        ref.current = current;
+        if (ref2.current) {
+          let _clearTimeout = clearTimeout;
+          clearTimeout(tmp9.current);
+        }
+        const self = this;
+        const self2 = this;
+        const promise = new Promise((arg0, arg1) => {
+          let closure_0 = arg1;
+          ref.current = setTimeout(() => {
+            const error = new Error("Rive view ready timeout");
+            closure_0(error);
+          }, 5000);
+        });
+        let awaitViewReadyResult;
+        if (current != null) {
+          awaitViewReadyResult = current.awaitViewReady();
+        }
+        const items = [awaitViewReadyResult, promise];
+        const raceResult = race(items);
+        const nextPromise = raceResult.then((result) => {
+          if (true === result) {
+            closure_2_1(current);
+          } else {
+            const _console = console;
+            console.warn("Rive view ready check returned false");
+            closure_2_1(null);
+          }
+        });
+        const catchPromise = nextPromise.catch((error) => {
+          console.warn("Failed to initialize Rive view:", error);
+          closure_1_1(null);
+        });
+        catchPromise.finally(() => {
+          if (ref.current) {
+            const _clearTimeout = clearTimeout;
+            clearTimeout(ref.current);
+            ref.current = null;
+          }
+        });
+      }
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { f: first };
+    cResult[1] = obj2;
+    tmp6 = obj2;
+  } else {
+    tmp6 = cResult[1];
+  }
+  if (cResult[2] !== tmp4) {
+    const obj3 = { riveRef: tmp2, riveViewRef: tmp4, setHybridRef: tmp6 };
+    cResult[2] = tmp4;
+    cResult[3] = obj3;
+    tmp7 = obj3;
+  } else {
+    tmp7 = cResult[3];
+  }
+  return tmp7;
 }

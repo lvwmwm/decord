@@ -1,25 +1,25 @@
-// Module ID: 7722
-// Function ID: 7723
+// Module ID: 7692
+// Function ID: 7693
 // Name: ModalScreen
-// Dependencies: [19, 17, 21, 575, 4823, 5398, 7102, 7005, 7723, 2]
+// Dependencies: [19, 17, 21, 575, 4792, 5367, 7072, 6975, 7693, 2]
 // Exports: ModalScreen
 
-// Module 7722 (ModalScreen)
+// Module 7692 (ModalScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5398 */;
-import react2 from "react" /* 7005 */;
-import NavigatorGradientContext from "NavigatorGradientContext" /* 7102 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5367 */;
+import react2 from "react" /* 6975 */;
+import NavigatorGradientContext from "NavigatorGradientContext" /* 7072 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
 let metroRequire;
 let obj3;
 let tmp3;
-const ExpressiveGradient = tmp3(7723);
+const ExpressiveGradient = tmp3(7693);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let obj = { navigator: nativeDefault.colors.BACKGROUND_BASE_LOW, modal: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };

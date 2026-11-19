@@ -1,47 +1,25 @@
 // Module ID: 16316
 // Function ID: 16317
 // Name: tokenize
-// Dependencies: [16244, 16288]
+// Dependencies: [16235]
 
 // Module 16316 (tokenize)
-import tokenize from "tokenize" /* 16244 */;
-import tokenize2 from "tokenize" /* 16288 */;
+import tokenize from "tokenize" /* 16235 */;
 
-function consumeRaw(arg0) {
-  return this.Raw(arg0, tokenize2.mode.leftCurlyBracket, true);
-}
-function consumePrelude() {
-  const self = this;
-  const SelectorListResult = this.SelectorList();
-  const tmp2 = "Raw" !== SelectorListResult.type && false === self.scanner.eof && self.scanner.tokenType !== LeftCurlyBracket;
-  if (tmp2) {
-    self.error();
-  }
-  return SelectorListResult;
-}
-const LeftCurlyBracket = tokenize.TYPE.LeftCurlyBracket;
-let obj = {
-  name: "Rule",
-  structure: { prelude: ["SelectorList", "Raw"], block: ["Block"] },
+let obj2;
+const WhiteSpace = tokenize.TYPE.WhiteSpace;
+let closure_1 = Object.freeze({ type: "WhiteSpace", loc: null, value: " " });
+const obj = {
+  name: "WhiteSpace",
+  structure: obj2,
   parse() {
-    let BlockResult;
-    let parseWithFallbackResult;
-    const self = this;
-    const tokenStart = this.scanner.tokenStart;
-    if (this.parseRulePrelude) {
-      parseWithFallbackResult = self.parseWithFallback(consumePrelude, consumeRaw);
-    } else {
-      parseWithFallbackResult = consumeRaw.call(self, tmp);
-    }
-    const obj = { type: "Rule", loc: self.getLocation(tokenStart, self.scanner.tokenStart), prelude: parseWithFallbackResult, block: BlockResult };
-    BlockResult = self.Block(true);
-    return obj;
+    this.eat(WhiteSpace);
+    return closure_1;
   },
-  generate(prelude) {
-    this.node(prelude.prelude);
-    this.node(prelude.block);
-  },
-  walkContext: "rule"
+  generate(value) {
+    this.chunk(value.value);
+  }
 };
+obj2 = { value: String };
 
 export default obj;

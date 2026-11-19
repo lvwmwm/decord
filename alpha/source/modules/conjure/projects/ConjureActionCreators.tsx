@@ -1,27 +1,27 @@
-// Module ID: 6844
-// Function ID: 6845
+// Module ID: 6814
+// Function ID: 6815
 // Name: ConjureActionCreators
-// Dependencies: [109, 5, 6527, 1388, 6845, 6529, 1072, 6461, 4, 572, 1285, 6846, 5572, 6848, 559, 6849, 6850, 6851, 6853, 6856, 6854, 5467, 6530, 6567, 6862, 6865, 6866, 2]
-// Exports: applyPublishedPreview, applyRemixPreview, clearGlobalChatProject, createProject, createRemix, deleteProjectInBackground, fetchApplicationChannels, fetchMissingConjureProjectNow, fetchProjectLimit, installConjureProjectForOwner, isConjureProjectUnavailable, loadMissingConjureProjects, makeConjureProjectPersonal, prefetchProject, refetchProjectsAfterReconnect, refreshPreviewApplication, selectGlobalChatProject, setGuildHints, setSelectedProjectForGuild, shareConjureProject, takePrefetchedRead, updateProjectSettings
+// Dependencies: [109, 5, 6498, 1388, 6815, 6500, 1072, 6432, 4, 572, 1285, 6816, 5541, 6818, 559, 6819, 6820, 6821, 6823, 6826, 6824, 5436, 6501, 6538, 6832, 6835, 6836, 2]
+// Exports: applyPublishedPreview, applyRemixPreview, clearGlobalChatProject, createProject, createRemix, deleteProjectInBackground, fetchApplicationChannels, fetchMissingConjureProjectNow, fetchProjectLimit, installConjureProjectForOwner, isConjureProjectUnavailable, loadMissingConjureProjects, makeConjureProjectPersonal, prefetchProject, refetchProjectsAfterReconnect, refreshPreviewApplication, selectGlobalChatProject, setConjureProjectServer, setSelectedProjectForGuild, takePrefetchedRead
 
-// Module 6844 (ConjureActionCreators)
+// Module 6814 (ConjureActionCreators)
 import logger_Logger from "logger/Logger" /* 4 */;
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5467 */;
-import ReadStateConstants from "ReadStateConstants" /* 6461 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 6850 */;
-import ConjureWorkerTickets from "ConjureWorkerTickets" /* 6851 */;
-import prefetchConjurePreviewFrame from "prefetchConjurePreviewFrame" /* 6853 */;
-import conjurePreviewSurface from "conjurePreviewSurface" /* 6854 */;
-import createProxyTicket from "createProxyTicket" /* 6856 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5436 */;
+import ReadStateConstants from "ReadStateConstants" /* 6432 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 6820 */;
+import ConjureWorkerTickets from "ConjureWorkerTickets" /* 6821 */;
+import prefetchConjurePreviewFrame from "prefetchConjurePreviewFrame" /* 6823 */;
+import conjurePreviewSurface from "conjurePreviewSurface" /* 6824 */;
+import createProxyTicket from "createProxyTicket" /* 6826 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ReadStateStore from "ReadStateStore" /* 6527 */;
+import ReadStateStore from "ReadStateStore" /* 6498 */;
 import UserStore from "UserStore" /* 1388 */;
-import ConjureLastIntegrationStatusStore from "ConjureLastIntegrationStatusStore" /* 6845 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6529 */;
+import ConjureLastIntegrationStatusStore from "ConjureLastIntegrationStatusStore" /* 6815 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6500 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -49,7 +49,7 @@ let obj = function _listProjects() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -152,7 +152,7 @@ let obj = function _listProjects() {
             }
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         } catch (tmp53) {
           if (0 === c4) {
             c6 = 3;
@@ -188,7 +188,7 @@ obj = function _forgetMissingProjects() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       while (true) {
@@ -239,7 +239,7 @@ obj = function _forgetMissingProjects() {
               }
             }
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } else if (1 === tmp5) {
           c5 = 0;
@@ -268,7 +268,7 @@ obj = function _forgetMissingProjects() {
             c5 = 0;
             closure_0.return();
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } else {
           if (3 === tmp5) {
@@ -305,7 +305,7 @@ obj = function _forgetMissingProjects() {
             c5 = 0;
             closure_0.return();
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         }
         c5 = 0;
@@ -445,7 +445,7 @@ obj = function _fetchMissingConjureProjectNow() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -491,7 +491,7 @@ obj = function _fetchMissingConjureProjectNow() {
             dispatch(obj);
           }
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         } catch (tmp24) {
           c4 = 3;
           throw tmp24;
@@ -517,7 +517,7 @@ obj = function _drainMissingProjects() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       while (true) {
@@ -558,7 +558,7 @@ obj = function _drainMissingProjects() {
                 let succeedResult = closure_132_24.succeed();
               }
               c8 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             } else {
               let c6 = 1;
               c1 = tmp12;
@@ -616,7 +616,7 @@ obj = function _requestProjectLimit() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c4;
@@ -678,7 +678,7 @@ obj = function _requestProjectLimit() {
             obj2.dispatch(obj7);
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp34) {
         closure_3 = tmp34;
@@ -715,7 +715,7 @@ obj = function _getProject() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -883,7 +883,7 @@ obj = function _postProject() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -958,9 +958,6 @@ obj = function _postProject() {
   });
   return obj(...arguments);
 };
-function patchProject() {
-  return obj(...arguments);
-}
 obj = function _patchProject() {
   obj = _asyncToGenerator(async (value, body) => {
     let closure_2;
@@ -996,7 +993,7 @@ obj = function _fetchConjureApplication() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -1035,7 +1032,7 @@ obj = function _fetchConjureApplication() {
             obj.dispatch(obj7);
           }
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp17) {
         c4 = 3;
@@ -1058,7 +1055,7 @@ obj = function _refreshPreviewApplication() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -1093,7 +1090,7 @@ obj = function _refreshPreviewApplication() {
           return obj;
         }
         c1 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       } catch (tmp10) {
         c1 = 3;
         throw tmp10;
@@ -1102,11 +1099,17 @@ obj = function _refreshPreviewApplication() {
   });
   return obj(...arguments);
 };
+function updateProjectSettings() {
+  return obj(...arguments);
+}
 obj = function _updateProjectSettings() {
   obj = _asyncToGenerator(async (arg0, arg1) => {
     let c4;
     let c5;
     let prop;
+    function patchProject() {
+      return closure_1_50(...arguments);
+    }
     let closure_1 = arg1;
     let value = tmp;
     let closure_0 = closure_1;
@@ -1128,7 +1131,7 @@ obj = function _updateProjectSettings() {
       tmp17 = tmp20;
     }
     if (!tmp17) {
-      const promise = closure_131_52(preview_application_id);
+      const promise = closure_131_51(preview_application_id);
       promise.catch(() => {
 
       });
@@ -1137,11 +1140,10 @@ obj = function _updateProjectSettings() {
   });
   return obj(...arguments);
 };
-obj = function _shareConjureProject() {
+obj = function _setConjureProjectServer() {
   obj = _asyncToGenerator(async (arg0, value) => {
-    let obj4;
+    let closure_1;
     let closure_0 = arg0;
-    let closure_1 = value;
     if (c5 === 2) {
       c5 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
@@ -1152,12 +1154,11 @@ obj = function _shareConjureProject() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
-        let body;
-        let prop;
+        let preview_guild_id;
         c5 = 2;
         if (0 === c4) {
           if (arg0 === 1) {
@@ -1168,24 +1169,13 @@ obj = function _shareConjureProject() {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            closure_3 = tmp2;
-            let closure_2 = tmp;
-            body = undefined;
-            project = project.getProject(closure_0);
-            prop = undefined;
-            const tmp36 = closure_0;
-            const tmp37 = closure_1;
-            if (project != null) {
-              prop = project.preview_application_id;
-            }
-            const HTTP = require("HTTPUtils").HTTP;
-            const request = { url: "" + Endpoints.CONJURE_PROJECT(tmp36) + "/server", body: obj4, rejectWithError: true };
-            const put = HTTP.put;
-            const _HermesInternal = HermesInternal;
-            obj4 = { guild_id: tmp37, uses_preview_app: true };
+            closure_3 = tmp;
+            let closure_2 = tmp2;
+            preview_guild_id = undefined;
+            const obj4 = { guild_id: preview_guild_id, preview_guild_id };
             c4 = 1;
             c5 = 1;
-            const obj5 = { value: put(request), done: false };
+            const obj5 = { value: updateProjectSettings(closure_0, obj4), done: false };
             return obj5;
           }
         } else if (arg0 === 1) {
@@ -1196,21 +1186,17 @@ obj = function _shareConjureProject() {
           obj = { value, done: true };
           return obj;
         } else {
-          body = value.body;
-          const obj6 = { type: "CONJURE_PROJECT_UPDATE_SUCCESS", project: body };
-          const obj7 = closure_131_1(closure_131_2[9]);
-          obj7.dispatch(obj6);
-          closure_131_62(closure_0);
-          const tmp9 = null != prop && prop !== body.preview_application_id;
-          if (tmp9) {
-            closure_131_1(closure_131_2[24])(prop);
+          preview_guild_id = closure_131_42.get(closure_0);
+          if (null != preview_guild_id) {
+            preview_guild_id.applied = closure_131_43(closure_0);
           }
+          closure_131_62(closure_0);
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
-      } catch (tmp21) {
+      } catch (tmp25) {
         c5 = 3;
-        throw tmp21;
+        throw tmp25;
       }
     }
   });
@@ -1229,7 +1215,7 @@ obj = function _fetchApplicationChannels() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c3;
@@ -1302,7 +1288,7 @@ obj = function _deleteProject() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -1378,7 +1364,7 @@ obj = function _makeConjureProjectPersonal() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -1427,7 +1413,7 @@ obj = function _makeConjureProjectPersonal() {
             closure_130_1(closure_130_2[24])(prop);
           }
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp20) {
         c4 = 3;
@@ -1450,7 +1436,7 @@ obj = function _installConjureProjectForOwner() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -1487,7 +1473,7 @@ obj = function _installConjureProjectForOwner() {
         } else {
           closure_2(closure_1, value.body);
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp7) {
         c4 = 3;
@@ -1745,14 +1731,9 @@ export { fetchConjureApplication };
 export function refreshPreviewApplication() {
   return obj(...arguments);
 }
-export function updateProjectSettings() {
+export { updateProjectSettings };
+export function setConjureProjectServer() {
   return obj(...arguments);
-}
-export function shareConjureProject() {
-  return obj(...arguments);
-}
-export function setGuildHints(first2, arg1) {
-  return patchProject(first2, arg1);
 }
 export function fetchApplicationChannels() {
   return obj(...arguments);

@@ -1,30 +1,30 @@
-// Module ID: 18905
-// Function ID: 18906
+// Module ID: 18897
+// Function ID: 18898
 // Name: AccountSwitcherRail
-// Dependencies: [19, 17, 1407, 4880, 1388, 13211, 14822, 13212, 1072, 21, 575, 4823, 4885, 4879, 1113, 5510, 1414, 7410, 5527, 1630, 5387, 17510, 504, 18008, 1256, 7450, 13215, 5513, 10331, 8570, 2]
+// Dependencies: [19, 17, 1407, 4849, 1388, 13193, 14808, 13194, 1072, 21, 575, 4792, 4854, 4848, 1113, 5479, 1414, 7380, 5496, 1630, 5356, 17503, 504, 18001, 1256, 7420, 13197, 5482, 10309, 8539, 2]
 
-// Module 18905 (AccountSwitcherRail)
+// Module 18897 (AccountSwitcherRail)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import FastImageDefault from "FastImage" /* 5510 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7450 */;
-import SettingsIcon2 from "SettingsIcon" /* 10331 */;
-import MultiAccountStore2 from "MultiAccountStore" /* 13211 */;
-import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 13215 */;
-import openManageAccountsModalDefault from "openManageAccountsModal" /* 18008 */;
+import FastImageDefault from "FastImage" /* 5479 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7420 */;
+import SettingsIcon2 from "SettingsIcon" /* 10309 */;
+import MultiAccountStore2 from "MultiAccountStore" /* 13193 */;
+import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 13197 */;
+import openManageAccountsModalDefault from "openManageAccountsModal" /* 18001 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserRecord from "UserRecord" /* 1407 */;
-import StreamerModeStore from "StreamerModeStore" /* 4880 */;
+import StreamerModeStore from "StreamerModeStore" /* 4849 */;
 import UserStore from "UserStore" /* 1388 */;
-import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 14822 */;
-import Constants_mod from "Constants" /* 13212 */;
+import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 14808 */;
+import Constants_mod from "Constants" /* 13194 */;
 import Constants_mod2 from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -65,7 +65,7 @@ function RailButton(arg0) {
     }
   };
   const merged = Object.assign(arg0);
-  return closure_17(hasOwnProperty, obj);
+  return authStore4(hasOwnProperty, obj);
 }
 function AccountButton(user) {
   let accessibilityRole;
@@ -82,7 +82,7 @@ function AccountButton(user) {
   dependencyMap = closure_22();
   let tmp = user;
   let tmp2 = dependencyMap;
-  let obj = user(4885);
+  let obj = user(4854);
   const radioA11yNative = obj.useRadioA11yNative({ selected, disabled });
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
   const tmp4 = new UserRecord(user);
@@ -105,7 +105,7 @@ function AccountButton(user) {
       ({ circle: arr[0], accountRing: arr[1] } = closure_3);
       let activeRing = selected;
       const tmp = closure_19;
-      const tmp2 = authStore4;
+      const tmp2 = closure_18;
       if (!selected) {
         activeRing = pressed.pressed;
       }
@@ -113,11 +113,11 @@ function AccountButton(user) {
         activeRing = tmp5.activeRing;
       }
       items[2] = activeRing;
-      const children = [closure_17(metroRequire, { style: items, pointerEvents: "none" }), , ];
+      const children = [authStore4(metroRequire, { style: items, pointerEvents: "none" }), , ];
       const obj = { accessible: false, source: obj2.getUserAvatarSource(user, false, diff), style: closure_3.avatar, resizeMode: "cover", fadeDuration: 0 };
       const tmp9 = FastImageDefault;
       obj2 = AvatarUtilsDefault;
-      children[1] = closure_17(tmp9, obj);
+      children[1] = authStore4(tmp9, obj);
       if (selected) {
         const items2 = [closure_3.indicator, ];
         const obj3 = { style: items2, pointerEvents: "none", children: tmp3Result };
@@ -125,11 +125,11 @@ function AccountButton(user) {
         items2[1] = tmp12;
         if (selected) {
           const obj4 = { size: "xxs", color: nativeDefault.colors.ICON_OVERLAY_LIGHT, accessible: false };
-          const CheckmarkSmallIcon = tmp13(7410).CheckmarkSmallIcon;
+          const CheckmarkSmallIcon = tmp13(7380).CheckmarkSmallIcon;
           tmp3Result = tmp3(CheckmarkSmallIcon, obj4);
         } else {
           const obj5 = { size: "xxs", color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, accessible: false };
-          const CircleInformationIcon = tmp13(5527).CircleInformationIcon;
+          const CircleInformationIcon = tmp13(5496).CircleInformationIcon;
           tmp3Result = tmp3(CircleInformationIcon, obj5);
         }
         tmp3Result2 = tmp3(tmp4, obj3);
@@ -141,10 +141,10 @@ function AccountButton(user) {
     }
   };
   str = "always";
-  getUserTag = selected(4879).getUserTag;
+  getUserTag = selected(4848).getUserTag;
   const tmp6 = closure_17;
   const tmp7 = RailButton;
-  const tmp8 = selected(4879);
+  const tmp8 = selected(4848);
   if (hidePersonalInformation) {
     str = "never";
   }
@@ -271,7 +271,7 @@ function AccountSwitcherRailContent() {
         accessibilityLabel: intl3.string(require("intl").t.oMNyYN),
         children: memo.map((user) => {
               const obj = { user, selected: user.id === stateFromStores, disabled: stateFromStores1, hidePersonalInformation, onSelect: handleSelect };
-              return closure_17(AccountButton, obj, user.id);
+              return authStore4(AccountButton, obj, user.id);
             })
       };
       intl3 = tmp5(tmp3[14]).intl;
@@ -291,10 +291,10 @@ function AccountSwitcherRailContent() {
               const obj2 = { style: items, pointerEvents: "none" };
               items = [, ];
               ({ circle: arr[0], neutralCircle: arr[1] } = manageIcon);
-              items1 = [closure_17(metroRequire, obj2), ];
+              items1 = [authStore4(metroRequire, obj2), ];
               const obj3 = { size: "custom", style: manageIcon.manageIcon, color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT, accessible: false };
               const SettingsIcon = SettingsIcon2.SettingsIcon;
-              items1[1] = closure_17(SettingsIcon, obj3);
+              items1[1] = authStore4(SettingsIcon, obj3);
               return closure_19(RailButton, obj);
             }
       };
@@ -341,7 +341,7 @@ const memoResult = react.memo(function AccountSwitcherRail() {
   let tmp = null;
   const obj = get_initialized;
   if (obj.useStateFromStores(items, () => canUseMultiAccountMobile.getCanUseMultiAccountMobile())) {
-    tmp = closure_17(AccountSwitcherRailContent, {});
+    tmp = authStore4(AccountSwitcherRailContent, {});
   }
   return tmp;
 });

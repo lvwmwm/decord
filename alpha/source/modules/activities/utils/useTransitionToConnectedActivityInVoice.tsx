@@ -1,16 +1,16 @@
-// Module ID: 19276
-// Function ID: 19277
+// Module ID: 19272
+// Function ID: 19273
 // Name: useTransitionToConnectedActivityInVoice
-// Dependencies: [5, 19, 4672, 4726, 1072, 4744, 5470, 10671, 10595, 1108, 2]
+// Dependencies: [5, 19, 4641, 4695, 1072, 4713, 5439, 10649, 10573, 1108, 2]
 // Exports: default
 
-// Module 19276 (useTransitionToConnectedActivityInVoice)
+// Module 19272 (useTransitionToConnectedActivityInVoice)
 import Constants from "Constants" /* 1072 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4672 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4726 */;
+import ChannelStore from "ChannelStore" /* 4641 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4695 */;
 import size from "module_2" /* 2 */;
 
 let channelId, guild_id;
@@ -42,7 +42,7 @@ export default function useTransitionToConnectedActivityInVoice(onTransition) {
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             }
           } else {
             try {
@@ -86,7 +86,7 @@ export default function useTransitionToConnectedActivityInVoice(onTransition) {
                       }
                     }
                     c4 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "+60" };
                   }
                 } else if (arg0 === 1) {
                   c4 = 3;

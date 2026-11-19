@@ -1,15 +1,15 @@
-// Module ID: 10630
-// Function ID: 10631
+// Module ID: 10608
+// Function ID: 10609
 // Name: IgnoreThermalStateAlert
-// Dependencies: [19, 21, 4823, 5840, 1113, 10631, 5414, 2]
+// Dependencies: [19, 21, 4792, 5811, 1113, 10609, 5383, 2]
 // Exports: IgnoreThermalStateAlert
 
-// Module 10630 (IgnoreThermalStateAlert)
-import AlertDefault from "Alert" /* 5840 */;
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 10631 */;
+// Module 10608 (IgnoreThermalStateAlert)
+import AlertDefault from "Alert" /* 5811 */;
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 10609 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -44,11 +44,11 @@ export function IgnoreThermalStateAlert(onConfirm) {
   intl = onConfirm(1113).intl;
   intl2 = onConfirm(1113).intl;
   const obj2 = { style: tmp2.header, variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl3.string(onConfirm(1113).t.v5X4fZ) };
-  const Text = onConfirm(5414).Text;
+  const Text = onConfirm(5383).Text;
   intl3 = onConfirm(1113).intl;
   items = [closure_3(Text, obj2), ];
   const obj3 = { style: tmp2.text, variant: "body-md/medium", children: intl4.string(onConfirm(1113).t.VOgTjy) };
-  const Text2 = onConfirm(5414).Text;
+  const Text2 = onConfirm(5383).Text;
   intl4 = onConfirm(1113).intl;
   items[1] = closure_3(Text2, obj3);
   return closure_4(tmp3, obj);

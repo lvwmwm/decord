@@ -1,13 +1,13 @@
-// Module ID: 9471
-// Function ID: 9472
+// Module ID: 9449
+// Function ID: 9450
 // Name: useOrderSigning
-// Dependencies: [5, 32, 19, 5540, 4643, 4635, 6771, 9472, 1113, 6772, 2]
+// Dependencies: [5, 32, 19, 5509, 6230, 4605, 6743, 9450, 1113, 6744, 2]
 // Exports: useOrderSigning
 
-// Module 9471 (useOrderSigning)
-import BillingUtils from "BillingUtils" /* 4635 */;
-import BillingErrorDefault from "BillingError" /* 4643 */;
-import PaymentConstants from "PaymentConstants" /* 5540 */;
+// Module 9449 (useOrderSigning)
+import BillingUtils from "BillingUtils" /* 4605 */;
+import PaymentConstants from "PaymentConstants" /* 5509 */;
+import BillingErrorDefault from "BillingError" /* 6230 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -49,13 +49,13 @@ export function useOrderSigning(order) {
     if (!(error instanceof BillingErrorDefault)) {
       const self = this;
       const self2 = this;
-      tmp3 = new tmp(4643)(error);
+      tmp3 = new tmp(6230)(error);
     }
     const obj = BillingUtils;
     if (!obj.isExpectedHttpClientError(error)) {
       const _Error = Error;
       let tmp8 = tmp3;
-      const captureBillingException = tmp5(4635).captureBillingException;
+      const captureBillingException = tmp5(4605).captureBillingException;
       BillingUtils;
       if (error instanceof Error) {
         tmp8 = error;
@@ -67,7 +67,7 @@ export function useOrderSigning(order) {
     if (null != arg2) {
       const self3 = this;
       const self4 = this;
-      tmp3 = new tmp(4643)(arg2);
+      tmp3 = new tmp(6230)(arg2);
     }
     closure_5(tmp3);
     return tmp3;
@@ -95,10 +95,9 @@ export function useOrderSigning(order) {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } else {
-          let c4;
           try {
             let billing_facet;
             let prop;
@@ -116,11 +115,12 @@ export function useOrderSigning(order) {
                 purchaseToken = undefined;
                 gatewayCheckoutContext = undefined;
                 c3 = undefined;
+                c4 = undefined;
                 let obj4 = loadId;
                 if (loadId === undefined) {
                   obj4 = {};
                 }
-                ({ loadId: c0, purchaseToken: c1, gatewayCheckoutContext: c2, errorExtra: c3 } = obj4);
+                ({ loadId: c0, purchaseToken: c1, gatewayCheckoutContext: c2, errorExtra: c3, onSigningDeferred: c4 } = obj4);
                 order = undefined;
                 billing_facet = undefined;
                 prop = undefined;
@@ -139,8 +139,8 @@ export function useOrderSigning(order) {
               } else if (null == closure_130_0) {
                 const self5 = this;
                 const self6 = this;
-                const tmp79 = new purchaseToken(gatewayCheckoutContext[4])("Order not created yet");
-                closure_130_5(tmp79);
+                const tmp84 = new purchaseToken(gatewayCheckoutContext[4])("Order not created yet");
+                closure_130_5(tmp84);
                 c6 = 3;
                 return { value: { type: "failed" }, done: true };
               } else {
@@ -159,7 +159,7 @@ export function useOrderSigning(order) {
               order2 = closure_3;
               if (order2 instanceof loadId(gatewayCheckoutContext[6]).OrderSigningFailedWithConstraintsError) {
                 if (closure_130_2 != null) {
-                  tmp66(order2.order);
+                  tmp71(order2.order);
                 }
                 closure_130_5(order2);
                 obj10 = { type: "failed" };
@@ -191,6 +191,9 @@ export function useOrderSigning(order) {
                     prop = null;
                     if (null != billing_facet) {
                       prop = billing_facet.order_signing_deferral_context;
+                    }
+                    if (c4 != null) {
+                      tmp39(order);
                     }
                     if (null != prop) {
                       c4 = 2;
@@ -247,12 +250,12 @@ export function useOrderSigning(order) {
               c6 = 3;
               return { value: { type: "pending", order }, done: true };
             }
-          } catch (tmp82) {
-            closure_3 = tmp82;
+          } catch (tmp87) {
+            closure_3 = tmp87;
             if (0 === c4) {
               c6 = 3;
-              throw tmp82;
-            } else if (1 === tmp84) {
+              throw tmp87;
+            } else if (1 === tmp89) {
               c5 = 2;
             } else {
               c5 = 4;

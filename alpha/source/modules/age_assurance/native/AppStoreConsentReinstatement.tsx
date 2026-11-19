@@ -1,16 +1,16 @@
-// Module ID: 19687
-// Function ID: 19688
+// Module ID: 19683
+// Function ID: 19684
 // Name: AppStoreConsentReinstatement
-// Dependencies: [5, 5486, 1388, 3, 19688, 7900, 1380, 7892, 7893, 2]
+// Dependencies: [5, 5455, 1388, 3, 19684, 7870, 1380, 7862, 7863, 2]
 // Exports: beginAppStoreConsentReinstatement, cancelAppStoreConsentReinstatement, isAppStoreConsentReinstatementEnabledForSession, settleAppStoreConsentReinstatement
 
-// Module 19687 (AppStoreConsentReinstatement)
+// Module 19683 (AppStoreConsentReinstatement)
 import LoggerDefault from "Logger" /* 3 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import AppStoreAgeSignalReport from "AppStoreAgeSignalReport" /* 7900 */;
-import AppStoreConsentReinstateEndpointExperiment from "AppStoreConsentReinstateEndpointExperiment" /* 19688 */;
+import AppStoreAgeSignalReport from "AppStoreAgeSignalReport" /* 7870 */;
+import AppStoreConsentReinstateEndpointExperiment from "AppStoreConsentReinstateEndpointExperiment" /* 19684 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import RegionalFeatureConfigStore from "RegionalFeatureConfigStore" /* 5486 */;
+import RegionalFeatureConfigStore from "RegionalFeatureConfigStore" /* 5455 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
@@ -103,7 +103,7 @@ let obj = function _settleAppStoreConsentReinstatement() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c3;
@@ -187,7 +187,7 @@ let obj = function _settleAppStoreConsentReinstatement() {
                             const obj2 = { value, done: true };
                             return obj2;
                           } else {
-                            return { value: "HermesInternal", done: null };
+                            return { value: "HermesInternal", done: "+60" };
                           }
                         } else {
                           try {
@@ -238,7 +238,7 @@ let obj = function _settleAppStoreConsentReinstatement() {
                                 return obj;
                               }
                               c3 = 3;
-                              return { value: "HermesInternal", done: null };
+                              return { value: "HermesInternal", done: "+60" };
                             }
                           } catch (tmp14) {
                             c3 = 3;
@@ -386,7 +386,7 @@ export function beginAppStoreConsentReinstatement() {
                     let obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "+60" };
                   }
                 } else {
                   let c3;
@@ -426,7 +426,7 @@ export function beginAppStoreConsentReinstatement() {
                                           const obj2 = { value, done: true };
                                           return obj2;
                                         } else {
-                                          return { value: "HermesInternal", done: null };
+                                          return { value: "HermesInternal", done: "+60" };
                                         }
                                       } else {
                                         try {
@@ -502,7 +502,7 @@ export function beginAppStoreConsentReinstatement() {
                                             logger.info("Consent reinstatement completed", obj13);
                                           }
                                           c3 = 3;
-                                          return { value: "HermesInternal", done: null };
+                                          return { value: "HermesInternal", done: "+60" };
                                         } catch (tmp36) {
                                           c3 = 3;
                                           throw tmp36;
@@ -547,7 +547,7 @@ export function beginAppStoreConsentReinstatement() {
                       c3 = 0;
                       closure_129_0.settled = true;
                       c5 = 3;
-                      return { value: "HermesInternal", done: null };
+                      return { value: "HermesInternal", done: "+60" };
                     }
                   } catch (tmp28) {
                     if (0 === c3) {

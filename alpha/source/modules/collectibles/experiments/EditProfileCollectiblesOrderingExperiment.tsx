@@ -1,10 +1,10 @@
-// Module ID: 14184
-// Function ID: 14185
+// Module ID: 14167
+// Function ID: 14168
 // Name: EditProfileCollectiblesOrderingExperiment
 // Dependencies: [1452, 2]
 // Exports: useIsEditProfileCollectiblesOrderingEnabled
 
-// Module 14184 (EditProfileCollectiblesOrderingExperiment)
+// Module 14167 (EditProfileCollectiblesOrderingExperiment)
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 

@@ -1,82 +1,62 @@
 // Module ID: 16306
 // Function ID: 16307
 // Name: tokenize
-// Dependencies: [16244]
+// Dependencies: [16235]
 
 // Module 16306 (tokenize)
-import tokenize from "tokenize" /* 16244 */;
+import tokenize from "tokenize" /* 16235 */;
 
-let items;
-let obj2;
-const WhiteSpace = tokenize.TYPE.WhiteSpace;
-const Comment = tokenize.TYPE.Comment;
-const Ident = tokenize.TYPE.Ident;
-const LeftParenthesis = tokenize.TYPE.LeftParenthesis;
-const obj = {
-  name: "MediaQuery",
-  structure: obj2,
+let rect;
+function consumeNumber() {
+  let num;
+  const self = this;
+  const scanner = this.scanner;
+  scanner.skipWS();
+  const consumeResult = this.consume(Number);
+  for (let num = 0; num < consumeResult.length; num = num + 1) {
+    let charCodeAtResult = consumeResult.charCodeAt(num);
+    let obj = tokenize;
+    let isDigitResult = obj.isDigit(charCodeAtResult);
+    if (!isDigitResult) {
+      isDigitResult = 46 === charCodeAtResult;
+    }
+    if (!isDigitResult) {
+      let errorResult = self.error("Unsigned number is expected", self.scanner.tokenStart - consumeResult.length + num);
+    }
+  }
+  if (0 === Number(consumeResult)) {
+    self.error("Zero number is not allowed", self.scanner.tokenStart - consumeResult.length);
+  }
+  return consumeResult;
+}
+const Number = tokenize.TYPE.Number;
+const Delim = tokenize.TYPE.Delim;
+let obj = {
+  name: "Ratio",
+  structure: rect,
   parse() {
+    let callResult1;
     const self = this;
-    const scanner = this.scanner;
-    scanner.skipSC();
-    const list = this.createList();
-    let tmp2 = null;
-    let tmp3 = null;
-    let tmp4 = null;
-    if (!this.scanner.eof) {
-      while (true) {
-        let WhiteSpaceResult;
-        let IdentifierResult;
-        let tokenType = self.scanner.tokenType;
-        if (Comment === tokenType) {
-          let iter = self.scanner;
-          let nextResult = iter.next();
-          WhiteSpaceResult = tmp2;
-          IdentifierResult = tmp3;
-        } else {
-          if (WhiteSpace === tokenType) {
-            WhiteSpaceResult = self.WhiteSpace();
-            IdentifierResult = tmp3;
-          } else {
-            if (Ident === tokenType) {
-              IdentifierResult = self.Identifier();
-              WhiteSpaceResult = tmp2;
-              if (null !== tmp2) {
-                let arr = list.push(tmp2);
-                WhiteSpaceResult = null;
-              }
-              let arr3 = list.push(IdentifierResult);
-            } else {
-              tmp4 = tmp3;
-              if (LeftParenthesis !== tokenType) {
-                break;
-              } else {
-                IdentifierResult = self.MediaFeature();
-              }
-            }
-            break;
-          }
-          break;
-        }
-        tmp2 = WhiteSpaceResult;
-        tmp3 = IdentifierResult;
-        tmp4 = IdentifierResult;
-        if (self.scanner.eof) {
-          break;
-        }
-      }
+    const tokenStart = this.scanner.tokenStart;
+    const scanner = self.scanner;
+    const callResult = consumeNumber.call(self);
+    scanner.skipWS();
+    const scanner2 = self.scanner;
+    const obj = consumeNumber;
+    if (!scanner2.isDelim(47)) {
+      self.error("Solidus is expected");
     }
-    if (null === tmp4) {
-      self.error("Identifier or parenthesis is expected");
-    }
-    const element = { type: "MediaQuery", loc: self.getLocationFromList(list), children: list };
-    return element;
+    self.eat(Delim);
+    const rect = { type: "Ratio", loc: self.getLocation(tokenStart, self.scanner.tokenStart), left: callResult, right: callResult1 };
+    callResult1 = obj.call(self);
+    return rect;
   },
-  generate(arg0) {
-    this.children(arg0);
+  generate(left) {
+    this.chunk(left.left);
+    this.chunk("/");
+    this.chunk(left.right);
   }
 };
-obj2 = { children: items };
-items = [["Identifier", "MediaFeature", "WhiteSpace"]];
+rect = { left: String, right: String };
 
 export default obj;

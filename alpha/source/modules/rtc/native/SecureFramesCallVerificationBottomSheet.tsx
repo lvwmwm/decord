@@ -1,17 +1,17 @@
-// Module ID: 18056
-// Function ID: 18057
+// Module ID: 18049
+// Function ID: 18050
 // Name: SecureFramesCallVerificationBottomSheet
-// Dependencies: [19, 5564, 1072, 21, 504, 9611, 9619, 9633, 1113, 9608, 2]
+// Dependencies: [19, 5533, 1072, 21, 504, 9590, 9598, 9612, 1113, 9587, 2]
 // Exports: default
 
-// Module 18056 (SecureFramesCallVerificationBottomSheet)
+// Module 18049 (SecureFramesCallVerificationBottomSheet)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import SecureFramesTracking from "SecureFramesTracking" /* 9611 */;
-import showShareActionSheet from "showShareActionSheet" /* 9619 */;
-import SecureFramesVerificationBottomSheetDefault from "SecureFramesVerificationBottomSheet" /* 9633 */;
+import SecureFramesTracking from "SecureFramesTracking" /* 9590 */;
+import showShareActionSheet from "showShareActionSheet" /* 9598 */;
+import SecureFramesVerificationBottomSheetDefault from "SecureFramesVerificationBottomSheet" /* 9612 */;
 import react from "react" /* 19 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5564 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5533 */;
 import size from "module_2" /* 2 */;
 
 let secureFramesState;
@@ -49,6 +49,6 @@ export default function SecureFramesCallVerificationBottomSheet(channelId) {
   const format = intl3.format;
   let obj3 = { helpArticle: obj4.getSecureFramesHelpdeskArticle() };
   const wKxADe = channelId(1113).t.wKxADe;
-  obj4 = channelId(9608);
+  obj4 = channelId(9587);
   return <tmp3 title={intl.string(channelId(1113).t.cTQI5t)} subtitle={intl2.string(channelId(1113).t["MPp7+C"])} footer={format(wKxADe, obj3)} epochAuthenticator={stateFromStores} onShareClick={callback} />;
 };

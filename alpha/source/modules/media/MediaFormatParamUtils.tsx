@@ -1,10 +1,10 @@
-// Module ID: 5863
-// Function ID: 5864
+// Module ID: 5834
+// Function ID: 5835
 // Name: MediaFormatParamUtils
 // Dependencies: [1381, 2]
 // Exports: withMediaFormat
 
-// Module 5863 (MediaFormatParamUtils)
+// Module 5834 (MediaFormatParamUtils)
 import URLUtilsDefault from "URLUtils" /* 1381 */;
 import size from "module_2" /* 2 */;
 

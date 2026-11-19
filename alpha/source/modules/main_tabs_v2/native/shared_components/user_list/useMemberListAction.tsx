@@ -1,23 +1,23 @@
-// Module ID: 12008
-// Function ID: 12009
+// Module ID: 11986
+// Function ID: 11987
 // Name: useMemberListAction
-// Dependencies: [32, 19, 17, 4672, 4755, 4765, 1388, 9558, 1072, 21, 4823, 563, 12009, 12010, 7645, 12013, 12017, 7337, 12020, 12029, 12030, 1113, 11015, 11016, 4855, 4656, 12032, 12037, 10331, 12038, 2020, 7962, 5837, 7622, 6951, 12042, 2555, 2]
+// Dependencies: [32, 19, 17, 4641, 4724, 4734, 1388, 9537, 1072, 21, 4792, 563, 11987, 11988, 7615, 11991, 11995, 7307, 11997, 12006, 12007, 1113, 10993, 10994, 4824, 4625, 12009, 12014, 10309, 12015, 2020, 7932, 5808, 7592, 6921, 12019, 2557, 2]
 // Exports: default
 
-// Module 12008 (useMemberListAction)
+// Module 11986 (useMemberListAction)
 import react_native from "react-native" /* 17 */;
-import UsersFastListConstants from "UsersFastListConstants" /* 9558 */;
-import isGameOrganizationInviteRecipientDefault from "isGameOrganizationInviteRecipient" /* 12009 */;
-import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 12020 */;
+import UsersFastListConstants from "UsersFastListConstants" /* 9537 */;
+import isGameOrganizationInviteRecipientDefault from "isGameOrganizationInviteRecipient" /* 11987 */;
+import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11997 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4672 */;
-import PermissionStore from "PermissionStore" /* 4755 */;
-import RelationshipStore from "RelationshipStore" /* 4765 */;
+import ChannelStore from "ChannelStore" /* 4641 */;
+import PermissionStore from "PermissionStore" /* 4724 */;
+import RelationshipStore from "RelationshipStore" /* 4734 */;
 import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -33,7 +33,7 @@ const View = react_native.View;
 const USERS_LIST_PADDING_BETWEEN_SECTIONS = UsersFastListConstants.USERS_LIST_PADDING_BETWEEN_SECTIONS;
 ({ Permissions: unpackModuleId, AnalyticsSections: closure_12, InstantInviteSources: map1 } = Constants);
 ({ jsx: closure_14, jsxs: closure_15 } = Fragment);
-let closure_16 = { listActionRenderer: "__d", listActionHeight: "enabled" };
+let closure_16 = { listActionRenderer: "Array", listActionHeight: "Path" };
 let closure_17 = [];
 let obj = { wrapper: { paddingTop: USERS_LIST_PADDING_BETWEEN_SECTIONS } };
 let closure_18 = createStyles.createStyles(obj);

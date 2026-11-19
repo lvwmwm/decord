@@ -1,28 +1,28 @@
-// Module ID: 12671
-// Function ID: 12672
+// Module ID: 12654
+// Function ID: 12655
 // Name: CheckpointVoiceStatsScreen
-// Dependencies: [19, 17, 12417, 5877, 21, 4823, 575, 12654, 1496, 504, 6247, 1113, 3339, 12437, 12672, 12673, 12434, 10971, 12435, 12674, 12675, 12677, 2]
+// Dependencies: [19, 17, 12400, 5848, 21, 4792, 575, 12637, 1496, 504, 6218, 1113, 3339, 12420, 12655, 12656, 12417, 10949, 12418, 12657, 12658, 12660, 2]
 // Exports: default
 
-// Module 12671 (CheckpointVoiceStatsScreen)
+// Module 12654 (CheckpointVoiceStatsScreen)
 import nativeDefault from "native" /* 575 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
 import _modDef3339 from "module_3339" /* 3339 */;
-import CheckpointConstants from "CheckpointConstants" /* 5877 */;
-import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6247 */;
-import CheckpointScreenDefault from "CheckpointScreen" /* 12434 */;
-import CheckpointTextDefault from "CheckpointText" /* 12435 */;
-import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 12437 */;
-import useIsCheckpointWideDefault from "useIsCheckpointWide" /* 12654 */;
-import _modDef12672 from "module_12672" /* 12672 */;
-import _modDef12673 from "module_12673" /* 12673 */;
-import CheckpointCountUpStatNumberDefault from "CheckpointCountUpStatNumber" /* 12675 */;
-import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 12677 */;
+import CheckpointConstants from "CheckpointConstants" /* 5848 */;
+import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6218 */;
+import CheckpointScreenDefault from "CheckpointScreen" /* 12417 */;
+import CheckpointTextDefault from "CheckpointText" /* 12418 */;
+import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 12420 */;
+import useIsCheckpointWideDefault from "useIsCheckpointWide" /* 12637 */;
+import _modDef12655 from "module_12655" /* 12655 */;
+import _modDef12656 from "module_12656" /* 12656 */;
+import CheckpointCountUpStatNumberDefault from "CheckpointCountUpStatNumber" /* 12658 */;
+import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 12660 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CheckpointStore from "CheckpointStore" /* 12417 */;
+import CheckpointStore from "CheckpointStore" /* 12400 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -106,8 +106,8 @@ export default function CheckpointVoiceStatsScreen() {
     return obj.formatCheckpointPeakHour(stateFromStores1);
   }, items2);
   let prop;
-  const getCheckpointTopPercent = stateFromStores1(6247).getCheckpointTopPercent;
-  stateFromStores1(6247);
+  const getCheckpointTopPercent = stateFromStores1(6218).getCheckpointTopPercent;
+  stateFromStores1(6218);
   if (stateFromStores != null) {
     prop = stateFromStores.totalVoiceMinutesPercentile;
   }
@@ -128,7 +128,7 @@ export default function CheckpointVoiceStatsScreen() {
       formatToPlainStringResult = intl2.formatToPlainString(tmp2(3339)["5vpcvA"], obj3);
     }
   }
-  const obj4 = { animatedUri: _modDef12672, staticUri: _modDef12673, style: items3 };
+  const obj4 = { animatedUri: _modDef12655, staticUri: _modDef12656, style: items3 };
   items3 = [tmp.image, ];
   let tmp17 = wideText;
   const tmp2Result5 = CheckpointApngPlayerDefault;
@@ -163,7 +163,7 @@ export default function CheckpointVoiceStatsScreen() {
   items7[1] = tmp26;
   items8 = [, ];
   const obj12 = { size: "xs", color: CHECKPOINT_PRIMARY };
-  items8[0] = closure_7(stateFromStores1(10971).MicrophoneIcon, obj12);
+  items8[0] = closure_7(stateFromStores1(10949).MicrophoneIcon, obj12);
   const obj13 = { isStepHeading: true, variant: "heading-sm/semibold", style: tmp.titleText, children: stringResult.toLocaleUpperCase() };
   const tmp2Result7 = CheckpointTextDefault;
   items8[1] = closure_7(tmp2Result7, obj13);
@@ -172,7 +172,7 @@ export default function CheckpointVoiceStatsScreen() {
   if (tmp15Result7) {
     const obj14 = { value: null, accessibilityLabel: null };
     ({ value: obj15.value, label: obj15.accessibilityLabel } = memo);
-    tmp15Result7 = tmp15(tmp2(12674), obj14);
+    tmp15Result7 = tmp15(tmp2(12657), obj14);
   }
   items9[1] = tmp15Result7;
   let tmp15Result8 = !tmp8;

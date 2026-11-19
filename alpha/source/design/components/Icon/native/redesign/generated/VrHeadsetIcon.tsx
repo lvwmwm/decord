@@ -1,14 +1,14 @@
-// Module ID: 16191
-// Function ID: 16192
+// Module ID: 16182
+// Function ID: 16183
 // Name: VrHeadsetIcon
-// Dependencies: [19, 21, 575, 5509, 16192, 2]
+// Dependencies: [19, 21, 575, 5478, 16183, 2]
 // Exports: VrHeadsetIcon
 
-// Module 16191 (VrHeadsetIcon)
+// Module 16182 (VrHeadsetIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5509 */;
-import AssetRegistry from "AssetRegistry" /* 16192 */;
+import BaseIconImage2 from "BaseIconImage" /* 5478 */;
+import AssetRegistry from "AssetRegistry" /* 16183 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

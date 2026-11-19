@@ -1,25 +1,25 @@
-// Module ID: 13924
-// Function ID: 13925
+// Module ID: 13906
+// Function ID: 13907
 // Name: BadgeRarityPill
-// Dependencies: [19, 17, 21, 575, 1392, 13925, 1113, 13927, 4820, 13929, 13931, 4823, 4830, 5032, 5414, 2]
+// Dependencies: [19, 17, 21, 575, 1392, 13907, 1113, 13909, 4789, 13911, 13913, 4792, 4799, 5001, 5383, 2]
 // Exports: default
 
-// Module 13924 (BadgeRarityPill)
+// Module 13906 (BadgeRarityPill)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import BadgeRarity from "BadgeRarity" /* 1392 */;
-import ColorUtils from "ColorUtils" /* 4820 */;
-import shared from "shared" /* 4830 */;
-import useThemeDefault from "useTheme" /* 5032 */;
-import Text_Text from "Text/Text" /* 5414 */;
-import ExperimentalCommonIcon from "ExperimentalCommonIcon" /* 13925 */;
-import ExperimentalRareIcon from "ExperimentalRareIcon" /* 13927 */;
-import ExperimentalEpicIcon from "ExperimentalEpicIcon" /* 13929 */;
-import ExperimentalMythicIcon from "ExperimentalMythicIcon" /* 13931 */;
+import ColorUtils from "ColorUtils" /* 4789 */;
+import shared from "shared" /* 4799 */;
+import useThemeDefault from "useTheme" /* 5001 */;
+import Text_Text from "Text/Text" /* 5383 */;
+import ExperimentalCommonIcon from "ExperimentalCommonIcon" /* 13907 */;
+import ExperimentalRareIcon from "ExperimentalRareIcon" /* 13909 */;
+import ExperimentalEpicIcon from "ExperimentalEpicIcon" /* 13911 */;
+import ExperimentalMythicIcon from "ExperimentalMythicIcon" /* 13913 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

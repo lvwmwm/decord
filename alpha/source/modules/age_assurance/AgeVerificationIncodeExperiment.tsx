@@ -1,10 +1,10 @@
-// Module ID: 7742
-// Function ID: 7743
+// Module ID: 7712
+// Function ID: 7713
 // Name: AgeVerificationIncodeExperiment
 // Dependencies: [1452, 2]
 // Exports: isAgeVerificationIncodeEnabled, useIsAgeVerificationIncodeEnabled
 
-// Module 7742 (AgeVerificationIncodeExperiment)
+// Module 7712 (AgeVerificationIncodeExperiment)
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 

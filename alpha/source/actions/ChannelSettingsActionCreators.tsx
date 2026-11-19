@@ -1,16 +1,16 @@
-// Module ID: 11211
-// Function ID: 11212
+// Module ID: 11189
+// Function ID: 11190
 // Name: ChannelSettingsActionCreators
-// Dependencies: [5, 11212, 4672, 1072, 572, 5000, 8371, 1285, 7641, 2]
+// Dependencies: [5, 11190, 4641, 1072, 572, 4969, 8340, 1285, 7611, 2]
 // Exports: deleteChannel, init, open, removeLinkedLobby, saveChannel, selectPermissionOverwrite, setSection, updateChannel, updateVoiceChannelStatus
 
-// Module 11211 (ChannelSettingsActionCreators)
+// Module 11189 (ChannelSettingsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
-import RootNavigationRef from "RootNavigationRef" /* 5000 */;
+import RootNavigationRef from "RootNavigationRef" /* 4969 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelSettingsStore from "ChannelSettingsStore" /* 11212 */;
-import ChannelStore from "ChannelStore" /* 4672 */;
+import ChannelSettingsStore from "ChannelSettingsStore" /* 11190 */;
+import ChannelStore from "ChannelStore" /* 4641 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -138,7 +138,7 @@ let obj = function _saveChannel() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -317,7 +317,7 @@ obj = function _deleteChannel() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -374,7 +374,7 @@ obj = function _deleteChannel() {
           }
           closure_130_8();
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp21) {
         c4 = 3;

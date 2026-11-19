@@ -1,17 +1,17 @@
-// Module ID: 16965
-// Function ID: 16966
+// Module ID: 16958
+// Function ID: 16959
 // Name: EmailSettingsActionCreators
-// Dependencies: [5, 14945, 16966, 1072, 572, 6340, 1264, 4684, 16967, 2]
+// Dependencies: [5, 14931, 16959, 1072, 572, 6311, 1264, 4653, 16960, 2]
 // Exports: fetchEmailSettings, updateEmailSetting, updateMarketingEmailSettings
 
-// Module 16965 (EmailSettingsActionCreators)
+// Module 16958 (EmailSettingsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6340 */;
-import EmailSettingsConstants from "EmailSettingsConstants" /* 16966 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6311 */;
+import EmailSettingsConstants from "EmailSettingsConstants" /* 16959 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import EmailSettingsStore from "EmailSettingsStore" /* 14945 */;
+import EmailSettingsStore from "EmailSettingsStore" /* 14931 */;
 import size from "module_2" /* 2 */;
 
 let c4, closure_3, closure_4;
@@ -30,7 +30,7 @@ let obj = function _fetchEmailSettings() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c2;
@@ -97,7 +97,7 @@ let obj = function _fetchEmailSettings() {
           return obj11;
         }
         c4 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       } catch (tmp25) {
         if (0 === c2) {
           c4 = 3;
@@ -143,7 +143,7 @@ obj = function _updateEmailSetting() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -206,7 +206,7 @@ obj = function _updateEmailSetting() {
               c5 = 0;
             }
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp21) {
           closure_4 = tmp21;
@@ -237,7 +237,7 @@ obj = function _updateMarketingEmailSettings() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c3;
@@ -299,7 +299,7 @@ obj = function _updateMarketingEmailSettings() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp21) {
         let closure_2 = tmp21;

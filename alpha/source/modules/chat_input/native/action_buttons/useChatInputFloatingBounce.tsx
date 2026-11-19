@@ -1,20 +1,20 @@
-// Module ID: 13035
-// Function ID: 13036
+// Module ID: 13017
+// Function ID: 13018
 // Name: useChatInputFloatingBounce
-// Dependencies: [32, 19, 12753, 1655, 5033, 1708, 5424, 2]
+// Dependencies: [32, 19, 12735, 1655, 5002, 1708, 5393, 2]
 // Exports: default
 
-// Module 13035 (useChatInputFloatingBounce)
+// Module 13017 (useChatInputFloatingBounce)
 import _mod1655 from "module_1655" /* 1655 */;
 import _mod1708 from "module_1708" /* 1708 */;
-import timing_timing from "timing/timing" /* 5033 */;
-import spring_spring from "spring/spring" /* 5424 */;
+import timing_timing from "timing/timing" /* 5002 */;
+import spring_spring from "spring/spring" /* 5393 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChatInputConstants from "ChatInputConstants" /* 12753 */;
+import ChatInputConstants from "ChatInputConstants" /* 12735 */;
 import size from "module_2" /* 2 */;
 
-let set, set2, set3;
+let set, set2, set3, set4;
 
 let closure_4;
 let hasOwnProperty;
@@ -123,7 +123,7 @@ export default function useChatInputFloatingBounce(visible) {
       const obj3 = spring_spring;
       const withSpringResult = obj3.withSpring(1, React3, "respect-motion-settings");
       let withDelayResult1 = withSpringResult;
-      const set4 = sharedValue2.set;
+      set4 = sharedValue2.set;
       if (num > 0) {
         const obj4 = _mod1655;
         withDelayResult1 = obj4.withDelay(tmp40, withSpringResult);

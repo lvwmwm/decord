@@ -1,14 +1,14 @@
-// Module ID: 10905
-// Function ID: 10906
+// Module ID: 10883
+// Function ID: 10884
 // Name: ImageSparkleIcon
-// Dependencies: [19, 21, 575, 5509, 10906, 2]
+// Dependencies: [19, 21, 575, 5478, 10884, 2]
 // Exports: ImageSparkleIcon
 
-// Module 10905 (ImageSparkleIcon)
+// Module 10883 (ImageSparkleIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5509 */;
-import AssetRegistry from "AssetRegistry" /* 10906 */;
+import BaseIconImage2 from "BaseIconImage" /* 5478 */;
+import AssetRegistry from "AssetRegistry" /* 10884 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

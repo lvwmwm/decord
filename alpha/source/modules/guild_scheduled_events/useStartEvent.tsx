@@ -1,10 +1,10 @@
-// Module ID: 7941
-// Function ID: 7942
+// Module ID: 7911
+// Function ID: 7912
 // Name: useStartEvent
-// Dependencies: [5, 32, 19, 7942, 7944, 6257, 2]
+// Dependencies: [5, 32, 19, 7912, 7914, 6228, 2]
 // Exports: default
 
-// Module 7941 (useStartEvent)
+// Module 7911 (useStartEvent)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -42,7 +42,7 @@ export default function useStartEvent() {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -161,7 +161,7 @@ export default function useStartEvent() {
             }
             closure_132_0(false);
             c8 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp55) {
           closure_5 = tmp55;

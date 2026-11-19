@@ -1,18 +1,18 @@
-// Module ID: 17577
-// Function ID: 17578
+// Module ID: 17570
+// Function ID: 17571
 // Name: ChannelScreenAnimatedFrame
-// Dependencies: [19, 17, 21, 4823, 575, 1630, 1655, 8482, 2]
+// Dependencies: [19, 17, 21, 4792, 575, 1630, 1655, 8451, 2]
 // Exports: default
 
-// Module 17577 (ChannelScreenAnimatedFrame)
+// Module 17570 (ChannelScreenAnimatedFrame)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import ClientThemesOverrides from "ClientThemesOverrides" /* 8482 */;
+import ClientThemesOverrides from "ClientThemesOverrides" /* 8451 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const _modDef1655 = _mod1655;

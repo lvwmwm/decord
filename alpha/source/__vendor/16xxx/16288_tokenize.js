@@ -1,100 +1,42 @@
 // Module ID: 16288
 // Function ID: 16289
 // Name: tokenize
-// Dependencies: [16244]
+// Dependencies: [16235]
 
 // Module 16288 (tokenize)
-import tokenize from "tokenize" /* 16244 */;
+import tokenize from "tokenize" /* 16235 */;
 
 let obj2;
-function getOffsetExcludeWS() {
-  const self = this;
-  if (this.scanner.tokenIndex > 0) {
-    let tokenStart;
-    const scanner = self.scanner;
-    if (scanner.lookupType(-1) === WhiteSpace) {
-      let firstCharOffset;
-      if (self.scanner.tokenIndex > 1) {
-        const scanner2 = self.scanner;
-        firstCharOffset = scanner2.getTokenStart(self.scanner.tokenIndex - 1);
-      } else {
-        firstCharOffset = self.scanner.firstCharOffset;
-      }
-      tokenStart = firstCharOffset;
-    }
-    return tokenStart;
-  }
-  tokenStart = self.scanner.tokenStart;
-}
-function balanceEnd() {
-  return 0;
-}
-const WhiteSpace = tokenize.TYPE.WhiteSpace;
-const Semicolon = tokenize.TYPE.Semicolon;
-const LeftCurlyBracket = tokenize.TYPE.LeftCurlyBracket;
-const Delim = tokenize.TYPE.Delim;
+const Comment = tokenize.TYPE.Comment;
 let obj = {
-  name: "Raw",
+  name: "Comment",
   structure: obj2,
-  parse(arg0, balanceEnd, arg2) {
-    let scanner2;
-    let scanner3;
+  parse() {
     const self = this;
-    let tmp = balanceEnd;
-    const scanner = this.scanner;
-    const tokenStart1 = scanner.getTokenStart(arg0);
-    ({ scanner: scanner2, scanner: scanner3 } = this);
-    const skip = scanner2.skip;
-    const getRawLength = scanner3.getRawLength;
-    if (!balanceEnd) {
-      tmp = balanceEnd;
+    const tokenStart = this.scanner.tokenStart;
+    const tokenEnd = this.scanner.tokenEnd;
+    this.eat(Comment);
+    const sum = tokenEnd - tokenStart + 2;
+    let tmp3 = sum >= 2;
+    if (2 <= sum) {
+      const source = self.scanner.source;
+      tmp3 = 42 === source.charCodeAt(tokenEnd - 2);
     }
-    skip(getRawLength(arg0, tmp));
-    if (arg2) {
-      let tokenStart;
-      if (self.scanner.tokenStart > tokenStart1) {
-        tokenStart = getOffsetExcludeWS.call(self);
-      }
-      const obj = { type: "Raw", loc: self.getLocation(tokenStart1, tokenStart), value: str.substring(tokenStart1, tokenStart) };
-      return obj;
+    if (tmp3) {
+      const source2 = self.scanner.source;
+      tmp3 = 47 === source2.charCodeAt(tokenEnd - 1);
     }
-    tokenStart = self.scanner.tokenStart;
+    let diff = tokenEnd;
+    if (tmp3) {
+      diff = tokenEnd - 2;
+    }
+    const obj = { type: "Comment", loc: self.getLocation(tokenStart, self.scanner.tokenStart), value: str.substring(tokenStart + 2, diff) };
+    return obj;
   },
   generate(value) {
+    this.chunk("/*");
     this.chunk(value.value);
-  },
-  mode: {
-    default: balanceEnd,
-    leftCurlyBracket(arg0) {
-      let num = 0;
-      if (arg0 === LeftCurlyBracket) {
-        num = 1;
-      }
-      return num;
-    },
-    leftCurlyBracketOrSemicolon(arg0) {
-      let num;
-      if (arg0 === LeftCurlyBracket) {
-        num = 1;
-      } else {
-        num = 0;
-      }
-      return num;
-    },
-    exclamationMarkOrSemicolon(arg0, str, sum) {
-      if (arg0 !== Delim) {
-        let num2 = 0;
-        return num2;
-      }
-      num2 = 1;
-    },
-    semicolonIncluded(arg0) {
-      let num = 0;
-      if (arg0 === Semicolon) {
-        num = 2;
-      }
-      return num;
-    }
+    this.chunk("*/");
   }
 };
 obj2 = { value: String };

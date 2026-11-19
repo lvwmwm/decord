@@ -1,0 +1,10 @@
+// Module ID: 16401
+// Function ID: 16402
+// Name: AssetRegistry
+// Dependencies: [1119]
+
+// Module 16401 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1119 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "67084cd4f72fc46263204ba0954f5f2f", name: "ClosedCaptionsIcon", type: "png" });

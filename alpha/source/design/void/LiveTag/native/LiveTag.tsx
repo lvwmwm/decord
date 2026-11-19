@@ -1,17 +1,17 @@
-// Module ID: 15340
-// Function ID: 15341
+// Module ID: 15326
+// Function ID: 15327
 // Name: LiveTag
-// Dependencies: [19, 17, 21, 4823, 575, 1380, 5414, 1113, 2]
+// Dependencies: [19, 17, 21, 4792, 575, 1380, 5383, 1113, 2]
 // Exports: default
 
-// Module 15340 (LiveTag)
+// Module 15326 (LiveTag)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5414 */;
+import Text_Text from "Text/Text" /* 5383 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import size from "module_2" /* 2 */;
 

@@ -1,20 +1,20 @@
-// Module ID: 13187
-// Function ID: 13188
+// Module ID: 13169
+// Function ID: 13170
 // Name: TimestampSearchHeader
-// Dependencies: [19, 17, 21, 5553, 4823, 575, 5532, 5414, 1113, 7620, 2]
+// Dependencies: [19, 17, 21, 5522, 4792, 575, 5501, 5383, 1113, 7590, 2]
 // Exports: useTimestampSearchHeaderHeight
 
-// Module 13187 (TimestampSearchHeader)
+// Module 13169 (TimestampSearchHeader)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5414 */;
-import ClockIcon from "ClockIcon" /* 5532 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 5553 */;
-import _mod7620 from "module_7620" /* 7620 */;
+import Text_Text from "Text/Text" /* 5383 */;
+import ClockIcon from "ClockIcon" /* 5501 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 5522 */;
+import _mod7590 from "module_7590" /* 7590 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -54,7 +54,7 @@ const memoResult = react.memo(function TimestampSearchHeader() {
   items1[1] = React3(Text, obj6);
   items2 = [hasOwnProperty(_false, obj2), ];
   const obj7 = { style: tmp.divider };
-  items2[1] = React3(_mod7620.FormDivider, obj7);
+  items2[1] = React3(_mod7590.FormDivider, obj7);
   return hasOwnProperty(_false, obj);
 });
 const result = size.fileFinishedImporting("modules/timestamp_autocomplete/native/TimestampSearchHeader.tsx");

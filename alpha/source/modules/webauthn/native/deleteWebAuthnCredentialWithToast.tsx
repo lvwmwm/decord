@@ -1,11 +1,11 @@
-// Module ID: 16002
-// Function ID: 16003
+// Module ID: 15993
+// Function ID: 15994
 // Name: deleteWebAuthnCredentialWithToast
-// Dependencies: [5, 6341, 5505, 1113, 2]
+// Dependencies: [5, 6312, 5474, 1113, 2]
 // Exports: deleteWebAuthnCredentialWithToast
 
-// Module 16002 (deleteWebAuthnCredentialWithToast)
-import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6341 */;
+// Module 15993 (deleteWebAuthnCredentialWithToast)
+import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6312 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let obj = function _deleteWebAuthnCredentialWithToast() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -74,7 +74,7 @@ let obj = function _deleteWebAuthnCredentialWithToast() {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp25) {
           closure_3 = tmp25;

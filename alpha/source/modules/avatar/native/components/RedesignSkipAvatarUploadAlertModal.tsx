@@ -1,12 +1,12 @@
-// Module ID: 19664
-// Function ID: 19665
+// Module ID: 19660
+// Function ID: 19661
 // Name: RedesignSkipAvatarUploadAlertModal
-// Dependencies: [19, 21, 5774, 1113, 5774, 2]
+// Dependencies: [19, 21, 5745, 1113, 5745, 2]
 // Exports: default
 
-// Module 19664 (RedesignSkipAvatarUploadAlertModal)
+// Module 19660 (RedesignSkipAvatarUploadAlertModal)
 import intl5 from "intl" /* 1113 */;
-import AlertModal2 from "AlertModal" /* 5774 */;
+import AlertModal2 from "AlertModal" /* 5745 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

@@ -1,12 +1,12 @@
-// Module ID: 11868
-// Function ID: 11869
+// Module ID: 11846
+// Function ID: 11847
 // Name: actions/GiftCodeActionCreators
-// Dependencies: [5, 1072, 9011, 9216, 572, 1285, 1256, 6257, 6337, 11869, 2121, 2]
+// Dependencies: [5, 1072, 8985, 9192, 572, 1285, 1256, 6228, 6308, 11847, 2121, 2]
 // Exports: openGiftCodeRedeemModal, redeemGiftCode
 
-// Module 11868 (actions/GiftCodeActionCreators)
+// Module 11846 (actions/GiftCodeActionCreators)
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6337 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6308 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -38,7 +38,7 @@ let value = function _redeemGiftCode() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -87,7 +87,7 @@ let value = function _redeemGiftCode() {
               if (obj18.getIsPaymentsBlocked()) {
                 closure_130_1(closure_130_2[3])();
                 c6 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "+60" };
               } else {
                 channelId = options.channelId;
                 let tmp36 = null;
@@ -175,7 +175,7 @@ let value = function _redeemGiftCode() {
 function openGiftCodeRedeemModal(c0, fromServer) {
   const obj = ModalActionCreatorsDefault;
   const obj2 = { code: c0, giftCodeDebugOverride: fromServer };
-  obj.pushLazy(asyncRequire(11869, dependencyMap.paths), obj2, "GIFT_CODE_REDEEM_MODAL_KEY");
+  obj.pushLazy(asyncRequire(11847, dependencyMap.paths), obj2, "GIFT_CODE_REDEEM_MODAL_KEY");
 }
 ({ Endpoints: closure_4, AnalyticEvents: hasOwnProperty } = Constants);
 let closure_6 = Object.freeze({});

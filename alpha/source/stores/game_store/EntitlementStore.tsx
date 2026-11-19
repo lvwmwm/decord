@@ -1,20 +1,20 @@
-// Module ID: 8032
-// Function ID: 8033
+// Module ID: 8001
+// Function ID: 8002
 // Name: EntitlementStore
-// Dependencies: [2166, 2163, 6582, 1390, 504, 12, 8033, 8034, 2173, 1075, 572, 2]
+// Dependencies: [2166, 2163, 6553, 1390, 504, 12, 8002, 8003, 2173, 1075, 572, 2]
 
-// Module 8032 (EntitlementStore)
+// Module 8001 (EntitlementStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedAll from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import FractionalPremiumSKUs from "FractionalPremiumSKUs" /* 1075 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
 import EntitlementTypes from "EntitlementTypes" /* 2173 */;
-import LibraryApplicationUtils from "LibraryApplicationUtils" /* 8033 */;
-import EntitlementSourceTypes from "EntitlementSourceTypes" /* 8034 */;
+import LibraryApplicationUtils from "LibraryApplicationUtils" /* 8002 */;
+import EntitlementSourceTypes from "EntitlementSourceTypes" /* 8003 */;
 import EntitlementRecord from "EntitlementRecord" /* 2166 */;
 import LibraryApplicationStore from "LibraryApplicationStore" /* 2163 */;
-import SKUStore from "SKUStore" /* 6582 */;
+import SKUStore from "SKUStore" /* 6553 */;
 import size from "module_2" /* 2 */;
 
 let closure_10, closure_7, closure_9, set2;

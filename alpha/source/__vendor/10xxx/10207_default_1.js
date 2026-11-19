@@ -1,11 +1,11 @@
 // Module ID: 10207
 // Function ID: 10208
 // Name: default_1
-// Dependencies: [10188]
+// Dependencies: [10166]
 // Exports: default
 
 // Module 10207 (default_1)
-import captureStackTrace2 from "captureStackTrace" /* 10188 */;
+import captureStackTrace2 from "captureStackTrace" /* 10166 */;
 
 let hasOwnProperty;
 
@@ -95,148 +95,155 @@ function error() {
 
 export default function default_1() {
   if (typeof error === "function") {
-    let obj = {
+    const obj2 = { string: { unit: "\u0C85\u0C95\u0CCD\u0CB7\u0CB0\u0C97\u0CB3\u0CC1", verb: "\u0CB9\u0CCA\u0C82\u0CA6\u0CB2\u0CC1" }, file: { unit: "\u0CAC\u0CC8\u0C9F\u0CCD\u200C\u0C97\u0CB3\u0CC1", verb: "\u0CB9\u0CCA\u0C82\u0CA6\u0CB2\u0CC1" }, array: { unit: "\u0CB5\u0CB8\u0CCD\u0CA4\u0CC1\u0C97\u0CB3\u0CC1", verb: "\u0CB9\u0CCA\u0C82\u0CA6\u0CB2\u0CC1" }, set: { unit: "\u0CB5\u0CB8\u0CCD\u0CA4\u0CC1\u0C97\u0CB3\u0CC1", verb: "\u0CB9\u0CCA\u0C82\u0CA6\u0CB2\u0CC1" }, map: { unit: "entries", verb: "\u0CB9\u0CCA\u0C82\u0CA6\u0CB2\u0CC1" } };
+    closure_1 = { regex: "\u0C87\u0CA8\u0CCD\u0CAA\u0CC1\u0C9F\u0CCD", email: "email \u0CB5\u0CBF\u0CB3\u0CBE\u0CB8", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "ISO \u0CA6\u0CBF\u0CA8\u0CBE\u0C82\u0C95\u0CA6 \u0CB8\u0CAE\u0CAF", date: "ISO \u0CA6\u0CBF\u0CA8\u0CBE\u0C82\u0C95", time: "ISO \u0CB8\u0CAE\u0CAF", duration: "ISO \u0C85\u0CB5\u0CA7\u0CBF", ipv4: "IPv4 \u0CB5\u0CBF\u0CB3\u0CBE\u0CB8", ipv6: "IPv6 \u0CB5\u0CBF\u0CB3\u0CBE\u0CB8", mac: "MAC \u0CB5\u0CBF\u0CB3\u0CBE\u0CB8", cidrv4: "IPv4 \u0CB5\u0CCD\u0CAF\u0CBE\u0CAA\u0CCD\u0CA4\u0CBF\u0CAF", cidrv6: "IPv6 \u0CB5\u0CCD\u0CAF\u0CBE\u0CAA\u0CCD\u0CA4\u0CBF\u0CAF", base64: "base64-encoded\u0CB8\u0CCD\u0C9F\u0CCD\u0CB0\u0CBF\u0C82\u0C97\u0CCD", base64url: "base64url-encoded\u0CB8\u0CCD\u0C9F\u0CCD\u0CB0\u0CBF\u0C82\u0C97\u0CCD", json_string: "JSON\u0CB8\u0CCD\u0C9F\u0CCD\u0CB0\u0CBF\u0C82\u0C97\u0CCD", e164: "E.164 \u0CB8\u0C82\u0C96\u0CCD\u0CAF\u0CC6", credit_card: "\u0C95\u0CCD\u0CB0\u0CC6\u0CA1\u0CBF\u0C9F\u0CCD \u0C95\u0CBE\u0CB0\u0CCD\u0CA1\u0CCD \u0CB8\u0C82\u0C96\u0CCD\u0CAF\u0CC6", currency_code: "\u0C95\u0CB0\u0CC6\u0CA8\u0CCD\u0CB8\u0CBF \u0C95\u0CCB\u0CA1\u0CCD", iban: "IBAN", jwt: "JWT", template_literal: "\u0C87\u0CA8\u0CCD\u0CAA\u0CC1\u0C9F\u0CCD" };
+    let closure_2 = { nan: "NaN" };
+    return {
       localeError: (code) => {
           switch (code.code) {
             case "invalid_type":
             {
-              let combined;
               let expected = closure_2[code.expected];
+              const tmp45 = closure_2;
               if (expected == null) {
                 expected = code.expected;
               }
               const parsedTypeResult = captureStackTrace.parsedType(code.input);
-              const obj = /^[A-Z]/;
-              if (obj.test(code.expected)) {
-                const _HermesInternal17 = HermesInternal;
-                combined = "Ung\u00FCltige Eingabe: erwartet instanceof " + code.expected + ", erhalten " + tmp48;
-              } else {
-                const _HermesInternal16 = HermesInternal;
-                combined = "Ung\u00FCltige Eingabe: erwartet " + expected + ", erhalten " + tmp48;
-              }
-              return combined;
+              const _HermesInternal17 = HermesInternal;
+              const tmp49 = tmp45[parsedTypeResult] ?? parsedTypeResult;
+              return "\u0C85\u0CAE\u0CBE\u0CA8\u0CCD\u0CAF \u0C87\u0CA8\u0CCD\u200C\u0CAA\u0CC1\u0C9F\u0CCD: \u0CA8\u0CBF\u0CB0\u0CC0\u0C95\u0CCD\u0CB7\u0CBF\u0CB8\u0CB2\u0CBE\u0C97\u0CBF\u0CA6\u0CC6 " + expected + ", \u0CB8\u0CCD\u0CB5\u0CC0\u0C95\u0CB0\u0CBF\u0CB8\u0CBF\u0CA6\u0CA8\u0CC1 " + tmp49;
             }
             case "invalid_value":
             {
-              let combined1;
+              let combined;
               if (1 === code.values.length) {
-                const _HermesInternal15 = HermesInternal;
-                combined1 = "Ung\u00FCltige Eingabe: erwartet " + captureStackTrace.stringifyPrimitive(code.values[0]);
+                const _HermesInternal16 = HermesInternal;
+                combined = "\u0C85\u0CAE\u0CBE\u0CA8\u0CCD\u0CAF \u0C87\u0CA8\u0CCD\u200C\u0CAA\u0CC1\u0C9F\u0CCD: \u0CA8\u0CBF\u0CB0\u0CC0\u0C95\u0CCD\u0CB7\u0CBF\u0CB8\u0CB2\u0CBE\u0C97\u0CBF\u0CA6\u0CC6 " + captureStackTrace.stringifyPrimitive(code.values[0]);
               } else {
-                const _HermesInternal14 = HermesInternal;
-                combined1 = "Ung\u00FCltige Option: erwartet eine von " + captureStackTrace.joinValues(code.values, "|");
+                const _HermesInternal15 = HermesInternal;
+                combined = "\u0C85\u0CAE\u0CBE\u0CA8\u0CCD\u0CAF \u0C86\u0CAF\u0CCD\u0C95\u0CC6: \u0C87\u0CB5\u0CC1\u0C97\u0CB3\u0CB2\u0CCD\u0CB2\u0CBF \u0C92\u0C82\u0CA6\u0CA8\u0CCD\u0CA8\u0CC1 \u0CA8\u0CBF\u0CB0\u0CC0\u0C95\u0CCD\u0CB7\u0CBF\u0CB8\u0CB2\u0CBE\u0C97\u0CBF\u0CA6\u0CC6 " + captureStackTrace.joinValues(code.values, "|");
               }
-              return combined1;
+              return combined;
             }
             case "too_big":
             {
-              let combined2;
-              let str29 = "<";
+              let combined1;
+              let str28 = "<";
               if (code.inclusive) {
-                str29 = "<=";
+                str28 = "<=";
               }
-              let str30 = code.origin;
+              let str29 = code.origin;
               if (obj2[code.origin] ?? null) {
-                if (str30 == null) {
-                  str30 = "Wert";
+                if (str29 == null) {
+                  str29 = "value";
                 }
-                const str36 = code.maximum;
-                const _HermesInternal13 = HermesInternal;
-                const str1 = str36.toString();
-                const str37 = (obj2[code.origin] ?? null).unit ?? "Elemente";
-                combined2 = "Zu gro\u00DF: erwartet, dass " + str30 + " " + str29 + str1 + " " + str37 + " hat";
+                const str34 = code.maximum;
+                const _HermesInternal14 = HermesInternal;
+                const str1 = str34.toString();
+                const str35 = (obj2[code.origin] ?? null).unit ?? "\u0C85\u0C82\u0CB6\u0C97\u0CB3\u0CC1";
+                combined1 = "\u0CA4\u0CC1\u0C82\u0CAC\u0CBE \u0CA6\u0CCA\u0CA1\u0CCD\u0CA1\u0CA6\u0CC1: \u0CA8\u0CBF\u0CB0\u0CC0\u0C95\u0CCD\u0CB7\u0CBF\u0CB8\u0CB2\u0CBE\u0C97\u0CBF\u0CA6\u0CC6 " + str29 + " \u0CB9\u0CCA\u0C82\u0CA6\u0CB2\u0CC1 " + str28 + str1 + " " + str35;
               } else {
-                let str31 = str30;
-                if (str30 == null) {
-                  str31 = "Wert";
+                let str30 = str29;
+                if (str29 == null) {
+                  str30 = "value";
                 }
-                const _HermesInternal12 = HermesInternal;
-                const str32 = code.maximum;
-                combined2 = "Zu gro\u00DF: erwartet, dass " + str31 + " " + str29 + str32.toString() + " ist";
+                const _HermesInternal13 = HermesInternal;
+                const str31 = code.maximum;
+                combined1 = "\u0CA4\u0CC1\u0C82\u0CAC\u0CBE \u0CA6\u0CCA\u0CA1\u0CCD\u0CA1\u0CA6\u0CC1: \u0CA8\u0CBF\u0CB0\u0CC0\u0C95\u0CCD\u0CB7\u0CBF\u0CB8\u0CB2\u0CBE\u0C97\u0CBF\u0CA6\u0CC6 " + str30 + " \u0C8E\u0C82\u0CA6\u0CC1 " + str28 + str31.toString();
               }
-              return combined2;
+              return combined1;
             }
             case "too_small":
             {
-              let combined3;
+              let combined2;
               let minimum;
               let origin;
-              let str20 = ">";
+              let str22 = ">";
               if (code.inclusive) {
-                str20 = ">=";
+                str22 = ">=";
               }
               ({ origin, minimum } = code);
-              const str53 = minimum.toString();
+              const str47 = minimum.toString();
               if (obj2[code.origin] ?? null) {
-                const _HermesInternal11 = HermesInternal;
-                combined3 = "Zu klein: erwartet, dass " + origin + " " + str20 + str53 + " " + tmp15.unit + " hat";
+                const _HermesInternal12 = HermesInternal;
+                combined2 = "\u0CA4\u0CC1\u0C82\u0CAC\u0CBE \u0C9A\u0CBF\u0C95\u0CCD\u0C95\u0CA6\u0CC1: \u0CA8\u0CBF\u0CB0\u0CC0\u0C95\u0CCD\u0CB7\u0CBF\u0CB8\u0CB2\u0CBE\u0C97\u0CBF\u0CA6\u0CC6 " + origin + " \u0CB9\u0CCA\u0C82\u0CA6\u0CB2\u0CC1 " + str22 + str47 + " " + tmp16.unit;
               } else {
-                const _HermesInternal10 = HermesInternal;
-                combined3 = "Zu klein: erwartet, dass " + origin + " " + str20 + str53 + " ist";
+                const _HermesInternal11 = HermesInternal;
+                combined2 = "\u0CA4\u0CC1\u0C82\u0CAC\u0CBE \u0C9A\u0CBF\u0C95\u0CCD\u0C95\u0CA6\u0CC1: \u0CA8\u0CBF\u0CB0\u0CC0\u0C95\u0CCD\u0CB7\u0CBF\u0CB8\u0CB2\u0CBE\u0C97\u0CBF\u0CA6\u0CC6 " + origin + " \u0C8E\u0C82\u0CA6\u0CC1 " + str22 + str47;
               }
-              return combined3;
+              return combined2;
             }
             case "invalid_format":
             {
-              let combined4;
+              let combined3;
               if ("starts_with" === code.format) {
-                const _HermesInternal9 = HermesInternal;
-                combined4 = "Ung\u00FCltiger String: muss mit \"" + code.prefix + "\" beginnen";
+                const _HermesInternal10 = HermesInternal;
+                combined3 = "\u0C85\u0CAE\u0CBE\u0CA8\u0CCD\u0CAF\u0CB5\u0CBE\u0CA6 \u0CB8\u0CCD\u0C9F\u0CCD\u0CB0\u0CBF\u0C82\u0C97\u0CCD: \u0C87\u0CA6\u0CB0\u0CCA\u0C82\u0CA6\u0CBF\u0C97\u0CC6 \u0CAA\u0CCD\u0CB0\u0CBE\u0CB0\u0C82\u0CAD\u0CBF\u0CB8\u0CAC\u0CC7\u0C95\u0CC1 \"" + code.prefix + "\"";
               } else if ("ends_with" === code.format) {
-                const _HermesInternal8 = HermesInternal;
-                combined4 = "Ung\u00FCltiger String: muss mit \"" + code.suffix + "\" enden";
+                const _HermesInternal9 = HermesInternal;
+                combined3 = "\u0C85\u0CAE\u0CBE\u0CA8\u0CCD\u0CAF\u0CB5\u0CBE\u0CA6 \u0CB8\u0CCD\u0C9F\u0CCD\u0CB0\u0CBF\u0C82\u0C97\u0CCD: \u0C87\u0CA6\u0CB0\u0CCA\u0C82\u0CA6\u0CBF\u0C97\u0CC6 \u0C95\u0CCA\u0CA8\u0CC6\u0C97\u0CCA\u0CB3\u0CCD\u0CB3\u0CAC\u0CC7\u0C95\u0CC1 \"" + code.suffix + "\"";
               } else if ("includes" === code.format) {
-                const _HermesInternal7 = HermesInternal;
-                combined4 = "Ung\u00FCltiger String: muss \"" + code.includes + "\" enthalten";
+                const _HermesInternal8 = HermesInternal;
+                combined3 = "\u0C85\u0CAE\u0CBE\u0CA8\u0CCD\u0CAF \u0CB8\u0CCD\u0C9F\u0CCD\u0CB0\u0CBF\u0C82\u0C97\u0CCD: \u0C92\u0CB3\u0C97\u0CCA\u0C82\u0CA1\u0CBF\u0CB0\u0CAC\u0CC7\u0C95\u0CC1 \"" + code.includes + "\"";
               } else if ("regex" === code.format) {
-                const _HermesInternal6 = HermesInternal;
-                combined4 = "Ung\u00FCltiger String: muss dem Muster " + code.pattern + " entsprechen";
+                const _HermesInternal7 = HermesInternal;
+                combined3 = "\u0C85\u0CAE\u0CBE\u0CA8\u0CCD\u0CAF\u0CB5\u0CBE\u0CA6 \u0CB8\u0CCD\u0C9F\u0CCD\u0CB0\u0CBF\u0C82\u0C97\u0CCD: \u0CAE\u0CBE\u0CA6\u0CB0\u0CBF\u0C97\u0CC6 \u0CB9\u0CCA\u0C82\u0CA6\u0CBF\u0C95\u0CC6\u0CAF\u0CBE\u0C97\u0CAC\u0CC7\u0C95\u0CC1 " + code.pattern;
               } else {
                 const format = closure_1[code.format] ?? code.format;
-                const _HermesInternal5 = HermesInternal;
-                combined4 = "Ung\u00FCltig: " + format;
+                const _HermesInternal6 = HermesInternal;
+                combined3 = "\u0C85\u0CAE\u0CBE\u0CA8\u0CCD\u0CAF " + format;
               }
-              return combined4;
+              return combined3;
             }
             case "not_multiple_of":
             {
-              const _HermesInternal4 = HermesInternal;
-              return "Ung\u00FCltige Zahl: muss ein Vielfaches von " + code.divisor + " sein";
+              const _HermesInternal5 = HermesInternal;
+              return "\u0C85\u0CAE\u0CBE\u0CA8\u0CCD\u0CAF \u0CB8\u0C82\u0C96\u0CCD\u0CAF\u0CC6: \u0CAC\u0CB9\u0CC1\u0CB8\u0C82\u0C96\u0CCD\u0CAF\u0CC6\u0CAF\u0CBE\u0C97\u0CBF\u0CB0\u0CAC\u0CC7\u0C95\u0CC1 " + code.divisor;
             }
             case "unrecognized_keys":
             {
-              let str3 = "Unbekannter Schl\u00FCssel";
+              let str7 = "";
               if (code.keys.length > 1) {
-                str3 = "Unbekannte Schl\u00FCssel";
+                str7 = "s";
               }
-              const _HermesInternal3 = HermesInternal;
-              return "" + str3 + ": " + captureStackTrace.joinValues(code.keys, ", ");
+              const _HermesInternal4 = HermesInternal;
+              return "\u0C97\u0CC1\u0CB0\u0CC1\u0CA4\u0CBF\u0CB8\u0CB2\u0CBE\u0C97\u0CA6 \u0C95\u0CC0 " + str7 + ": " + captureStackTrace.joinValues(code.keys, ", ");
             }
             case "invalid_key":
             {
-              const _HermesInternal2 = HermesInternal;
-              return "Ung\u00FCltiger Schl\u00FCssel in " + code.origin;
+              const _HermesInternal3 = HermesInternal;
+              return "\u0C85\u0CAE\u0CBE\u0CA8\u0CCD\u0CAF\u0CB5\u0CBE\u0CA6 \u0C95\u0CC0 \u0C87\u0CA8\u0CCD " + code.origin;
             }
             case "invalid_union":
             {
-              return "Ung\u00FCltige Eingabe";
+              let str3 = "\u0C85\u0CAE\u0CBE\u0CA8\u0CCD\u0CAF \u0C87\u0CA8\u0CCD\u200C\u0CAA\u0CC1\u0C9F\u0CCD";
+              if (code.options) {
+                const _Array = Array;
+                str3 = "\u0C85\u0CAE\u0CBE\u0CA8\u0CCD\u0CAF \u0C87\u0CA8\u0CCD\u200C\u0CAA\u0CC1\u0C9F\u0CCD";
+                if (Array.isArray(code.options)) {
+                  str3 = "\u0C85\u0CAE\u0CBE\u0CA8\u0CCD\u0CAF \u0C87\u0CA8\u0CCD\u200C\u0CAA\u0CC1\u0C9F\u0CCD";
+                  if (code.options.length > 0) {
+                    const options = code.options;
+                    const mapped = options.map((item) => "'" + item + "'");
+                    const _HermesInternal2 = HermesInternal;
+                    str3 = "\u0C85\u0CAE\u0CBE\u0CA8\u0CCD\u0CAF \u0CA4\u0CBE\u0CB0\u0CA4\u0CAE\u0CCD\u0CAF \u0CAE\u0CCC\u0CB2\u0CCD\u0CAF. \u0CA8\u0CBF\u0CB0\u0CC0\u0C95\u0CCD\u0CB7\u0CBF\u0CB8\u0CB2\u0CBE\u0C97\u0CBF\u0CA6\u0CC6 " + mapped.join(" | ");
+                  }
+                }
+              }
+              return str3;
             }
             case "invalid_element":
             {
               const _HermesInternal = HermesInternal;
-              return "Ung\u00FCltiger Wert in " + code.origin;
+              return "\u0CB0\u0CB2\u0CCD\u0CB2\u0CBF \u0C85\u0CAE\u0CBE\u0CA8\u0CCD\u0CAF \u0CAE\u0CCC\u0CB2\u0CCD\u0CAF " + code.origin;
             }
             default:
             {
-              return "Ung\u00FCltige Eingabe";
+              return "\u0C85\u0CAE\u0CBE\u0CA8\u0CCD\u0CAF \u0C87\u0CA8\u0CCD\u200C\u0CAA\u0CC1\u0C9F\u0CCD";
             }
           }
         }
     };
-    const obj2 = { string: { unit: "Zeichen", verb: "zu haben" }, file: { unit: "Bytes", verb: "zu haben" }, array: { unit: "Elemente", verb: "zu haben" }, set: { unit: "Elemente", verb: "zu haben" }, map: { unit: "Elemente", verb: "zu haben" } };
-    closure_1 = { regex: "Eingabe", email: "E-Mail-Adresse", url: "URL", emoji: "Emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "ISO-Datum und -Uhrzeit", date: "ISO-Datum", time: "ISO-Uhrzeit", duration: "ISO-Dauer", ipv4: "IPv4-Adresse", ipv6: "IPv6-Adresse", mac: "MAC-Adresse", cidrv4: "IPv4-Bereich", cidrv6: "IPv6-Bereich", base64: "Base64-codierter String", base64url: "Base64-URL-codierter String", json_string: "JSON-String", e164: "E.164-Nummer", credit_card: "Kreditkartennummer", currency_code: "W\u00E4hrungscode", iban: "IBAN", jwt: "JWT", template_literal: "Eingabe" };
-    let closure_2 = { nan: "NaN", number: "Zahl", array: "Array" };
-    return obj;
   } else {
     throw new TypeError("Trying to call a non-function");
   }

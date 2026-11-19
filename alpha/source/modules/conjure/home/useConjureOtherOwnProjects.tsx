@@ -1,11 +1,11 @@
-// Module ID: 18703
-// Function ID: 18704
+// Module ID: 18697
+// Function ID: 18698
 // Name: useConjureOtherOwnProjects
-// Dependencies: [6529, 504, 18702, 2]
+// Dependencies: [6500, 504, 6719, 2]
 // Exports: default
 
-// Module 18703 (useConjureOtherOwnProjects)
-import ConjureProjectStore from "ConjureProjectStore" /* 6529 */;
+// Module 18697 (useConjureOtherOwnProjects)
+import ConjureProjectStore from "ConjureProjectStore" /* 6500 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -23,7 +23,7 @@ export default function useConjureOtherOwnProjects(arg0) {
     const ownedProjects = ConjureProjectStore.getOwnedProjects();
     return ownedProjects.filter((item) => {
       const obj = closure_0(dependencyMap[2]);
-      return !obj.conjureProjectPointsAtGuild(item, closure_1_0);
+      return obj.conjureServerProjectGuildId(item) !== closure_1_0;
     });
   }, items1);
 };

@@ -1,103 +1,231 @@
 // Module ID: 16266
 // Function ID: 16267
-// Dependencies: [16239, 16244]
+// Dependencies: []
 
 // Module 16266
-import TokenStream from "TokenStream" /* 16239 */;
-import tokenize from "tokenize" /* 16244 */;
+function noop() {
 
-function prepareTokens(arg0, items) {
-  let node1 = null;
-  if (items) {
-    node1 = items[0].node;
+}
+
+export default function(type, enter, arg2) {
+  let obj;
+  let obj2;
+  let obj3;
+  let obj4;
+  let tmp4;
+  let tmp5;
+  let closure_0 = arg2;
+  enter = noop;
+  let leave = noop;
+  if (typeof enter === "function") {
+    obj = tmp;
+    obj2 = enter;
+    obj3 = tmp;
+    obj4 = enter;
+    tmp4 = tmp;
+    tmp5 = enter;
+  } else {
+    obj = tmp;
+    obj2 = tmp;
+    obj3 = tmp;
+    obj4 = tmp;
+    tmp4 = tmp;
+    tmp5 = tmp;
+    if (enter) {
+      enter = enter.enter;
+      let tmp2 = tmp;
+      if (typeof enter === "function") {
+        tmp2 = enter;
+      }
+      enter = tmp2;
+      leave = enter.leave;
+      let tmp3 = tmp;
+      if (typeof leave === "function") {
+        tmp3 = leave;
+      }
+      leave = tmp3;
+      obj = tmp3;
+      obj2 = tmp2;
+      obj3 = tmp3;
+      obj4 = tmp2;
+      tmp4 = tmp3;
+      tmp5 = tmp2;
+    }
   }
-  items = [];
-  tokenize(arg0, closure_2);
-  let num = 0;
-  let num2 = 0;
-  while (!closure_2.eof) {
-    let tmp6 = node1;
-    let tmp7 = num;
-    let tmp8 = num2;
-    if (items) {
-      tmp6 = node1;
-      tmp7 = num;
-      tmp8 = num2;
-      if (num < items.length) {
-        let tmp12 = num;
-        let tmp13 = num2;
-        tmp6 = node1;
-        tmp7 = num;
-        tmp8 = num2;
-        if (num2 + items[num].len <= closure_2.tokenStart) {
-          let sum = tmp12 + 1;
-          let sum1 = tmp13 + items[tmp12].len;
-          let node = items[sum].node;
-          tmp6 = node;
-          tmp8 = sum1;
-          tmp7 = sum;
-          while (sum < items.length) {
-            tmp12 = sum;
-            tmp13 = sum1;
-            tmp6 = node;
-            tmp7 = sum;
-            tmp8 = sum1;
-            if (sum1 + items[sum].len > closure_2.tokenStart) {
-              break;
-            }
-          }
-        }
+  if (tmp5 === noop) {
+    if (tmp4 === noop) {
+      const _Error3 = Error;
+      const self5 = this;
+      const self6 = this;
+      let error = new Error("Neither `enter` nor `leave` walker handler is set or both aren't a function");
+      throw error;
+    }
+  }
+  function walk(term) {
+    enter.call(closure_0, term);
+    switch (term.type) {
+      case "Group":
+      {
+        const terms = term.terms;
+        const item = terms.forEach(walk);
+        leave.call(closure_0, term);
+        break;
+      }
+      case "Multiplier":
+      {
+        walk(term.term);
+        break;
+      }
+      case "Type":
+      {
+        break;
+      }
+      case "Property":
+      {
+        break;
+      }
+      case "Keyword":
+      {
+        break;
+      }
+      case "AtKeyword":
+      {
+        break;
+      }
+      case "Function":
+      {
+        break;
+      }
+      case "String":
+      {
+        break;
+      }
+      case "Token":
+      {
+        break;
+      }
+      case "Comma":
+      {
+        break;
+      }
+      default:
+      {
+        const _Error = Error;
+        const self = this;
+        const self2 = this;
+        const error = new Error("Unknown type: " + term.type);
+        throw error;
       }
     }
-    let obj = { type: closure_2.tokenType, value: closure_2.getTokenValue(), index: closure_2.tokenIndex, balance: closure_2.balance[closure_2.tokenIndex], node: tmp6 };
-    let push = items.push;
-    let arr = push(obj);
-    let nextResult = closure_2.next();
-    node1 = tmp6;
-    num = tmp7;
-    num2 = tmp8;
   }
-  return items;
-}
-let tmp = new TokenStream();
-let closure_2 = tmp;
-let closure_3 = {
-  decorator(children) {
-    let node = null;
-    let obj = { len: 0, node: null };
-    const items = [obj];
-    let closure_4 = "";
-    return {
-      children: children.children,
-      node(arg0) {
-        let closure_1 = arg0;
-        node = children.node;
-        node.call(this, arg0);
-        const tmp = closure_1;
-        closure_1 = tmp;
-      },
-      chunk(arg0) {
-        closure_4 = closure_4 + arg0;
-        if (obj.node !== node) {
-          obj = { len: arg0.length, node };
-          items.push(obj);
-        } else {
-          obj.len = obj.len + arg0.length;
+  obj4.call(arg2, type);
+  switch (type.type) {
+    case "Group":
+    {
+      let terms = type.terms;
+      let item = terms.forEach(walk);
+      obj3.call(arg2, type);
+      break;
+    }
+    case "Multiplier":
+    {
+      const term = type.term;
+      obj2.call(arg2, term);
+      switch (term.type) {
+        case "Group":
+        {
+          const terms1 = term.terms;
+          const item1 = terms1.forEach(walk);
+          obj.call(arg2, term);
+          break;
         }
-      },
-      result() {
-        return prepareTokens(closure_4, items);
+        case "Multiplier":
+        {
+          walk(term.term);
+          break;
+        }
+        case "Type":
+        {
+          break;
+        }
+        case "Property":
+        {
+          break;
+        }
+        case "Keyword":
+        {
+          break;
+        }
+        case "AtKeyword":
+        {
+          break;
+        }
+        case "Function":
+        {
+          break;
+        }
+        case "String":
+        {
+          break;
+        }
+        case "Token":
+        {
+          break;
+        }
+        case "Comma":
+        {
+          break;
+        }
+        default:
+        {
+          let _Error = Error;
+          let self = this;
+          let self2 = this;
+          const error1 = new Error("Unknown type: " + term.type);
+          throw error1;
+        }
       }
-    };
+      break;
+    }
+    case "Type":
+    {
+      break;
+    }
+    case "Property":
+    {
+      break;
+    }
+    case "Keyword":
+    {
+      break;
+    }
+    case "AtKeyword":
+    {
+      break;
+    }
+    case "Function":
+    {
+      break;
+    }
+    case "String":
+    {
+      break;
+    }
+    case "Token":
+    {
+      break;
+    }
+    case "Comma":
+    {
+      break;
+    }
+    default:
+    {
+      const _Error2 = Error;
+      const self3 = this;
+      const self4 = this;
+      const error2 = new Error("Unknown type: " + type.type);
+      throw error2;
+    }
   }
-};
-
-export default (str, generate) => {
-  let generateResult;
-  if (typeof str === "string") {
-    generateResult = prepareTokens(str, null);
-  } else {
-    generateResult = generate.generate(str, closure_3);
-  }
-  return generateResult;
 };

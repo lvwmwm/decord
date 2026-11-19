@@ -1,23 +1,23 @@
-// Module ID: 19559
-// Function ID: 19560
+// Module ID: 19555
+// Function ID: 19556
 // Name: FeedbackActionSheetV2
-// Dependencies: [32, 19, 17, 10513, 21, 4823, 575, 5037, 12, 6325, 5384, 6337, 10535, 2121, 1113, 5414, 10517, 7246, 7259, 6956, 5421, 1630, 5051, 7426, 7465, 5055, 2]
+// Dependencies: [32, 19, 17, 10491, 21, 4792, 575, 5006, 12, 6296, 5353, 6308, 10513, 2121, 1113, 5383, 10495, 7216, 7229, 6926, 5390, 1630, 5020, 7396, 7435, 5024, 2]
 // Exports: default
 
-// Module 19559 (FeedbackActionSheetV2)
+// Module 19555 (FeedbackActionSheetV2)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
-import usePreviousDefault from "usePrevious" /* 6325 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6337 */;
-import Constants from "Constants" /* 10513 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
+import usePreviousDefault from "usePrevious" /* 6296 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6308 */;
+import Constants from "Constants" /* 10491 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let onPress;
@@ -29,8 +29,8 @@ let obj2;
 let obj3;
 let tmp3;
 const useSafeAreaInsetsDefault = tmp3(1630);
-const useMountEffectDefault = tmp3(5384);
-const RatingSelectorDefault = tmp3(10517);
+const useMountEffectDefault = tmp3(5353);
+const RatingSelectorDefault = tmp3(10495);
 function closeActionSheet() {
   const obj = ActionSheetActionCreatorsDefault;
   obj.hideActionSheet();
@@ -81,7 +81,7 @@ export default function FeedbackActionSheetV2(optionsTree) {
   let tmp33Result;
   let tmp40Result;
   let tmp41;
-  const f119476 = (problemOptions) => {
+  const f119359 = (problemOptions) => {
     let concat;
     let freeformConfig;
     const obj = { problemOptions: concat(freeformConfig) };
@@ -125,14 +125,14 @@ export default function FeedbackActionSheetV2(optionsTree) {
   let closure_5 = tmp5;
   const useState = ref.useState;
   let obj2 = _modDef12;
-  [first, closure_7] = useState(obj2.shuffle(optionsTree.map(f119476)));
+  [first, closure_7] = useState(obj2.shuffle(optionsTree.map(f119359)));
   const items = [optionsTree, tmp5];
   const effect = ref.useEffect(() => {
     let obj = _modDef12;
     const arr = optionsTree;
     if (!obj.isEqual(closure_5, optionsTree)) {
       const tmpResult = _modDef12;
-      closure_7(tmpResult.shuffle(arr.map(f119476)));
+      closure_7(tmpResult.shuffle(arr.map(f119359)));
     }
   }, items);
   [first1, closure_9] = ref.useState(false);
@@ -156,7 +156,7 @@ export default function FeedbackActionSheetV2(optionsTree) {
     }
     dependencyMap();
   });
-  let obj3 = optionsTree(5384);
+  let obj3 = optionsTree(5353);
   const unmountEffect = obj3.useUnmountEffect(() => {
     let hideHelpdeskLink;
     let intl;
@@ -169,7 +169,7 @@ export default function FeedbackActionSheetV2(optionsTree) {
       const obj2 = { rating: first2, category: value, reason: first5, dontShowAgain: first1 };
       value = undefined;
       ModalActionCreatorsDefault;
-      const tmp13 = asyncRequire(10535, dependencyMap.paths);
+      const tmp13 = asyncRequire(10513, dependencyMap.paths);
       if (first4 != null) {
         value = iter.value;
       }
@@ -262,7 +262,7 @@ export default function FeedbackActionSheetV2(optionsTree) {
     const tmp34 = first1;
     if (null != ratingBody) {
       const obj4 = { style: tmp.ratingsBody, variant: "body-md/medium", color: "text-default", children: ratingBody };
-      tmp35 = closure_7(tmp20(5414).Text, obj4);
+      tmp35 = closure_7(tmp20(5383).Text, obj4);
     }
     const items2 = [tmp35, , ];
     const obj5 = { ratingOptions, selectedRating: first2, onChangeRating: callback };
@@ -279,7 +279,7 @@ export default function FeedbackActionSheetV2(optionsTree) {
               return closure_9(!first1);
             }
       };
-      const TableCheckboxRow = tmp20(7246).TableCheckboxRow;
+      const TableCheckboxRow = tmp20(7216).TableCheckboxRow;
       intl3 = tmp20(1113).intl;
       tmp37Result = tmp37(TableCheckboxRow, obj6);
     }
@@ -306,7 +306,7 @@ export default function FeedbackActionSheetV2(optionsTree) {
                   return closure_7(optionsTree(dependencyMap[19]).TableRow, obj, index);
                 })
         };
-        TableRowGroup2 = tmp20(7259).TableRowGroup;
+        TableRowGroup2 = tmp20(7229).TableRowGroup;
         items3 = [closure_7(closure_5, obj9), ];
         const obj11 = {
           variant: "secondary",
@@ -316,7 +316,7 @@ export default function FeedbackActionSheetV2(optionsTree) {
                   return closure_11(null);
                 }
         };
-        const Button2 = tmp20(5421).Button;
+        const Button2 = tmp20(5390).Button;
         intl2 = tmp20(1113).intl;
         items3[1] = closure_7(Button2, obj11);
         tmp33Result = closure_9(first1, obj8);
@@ -344,7 +344,7 @@ export default function FeedbackActionSheetV2(optionsTree) {
             })
       };
       problemOptions = first4.problemOptions;
-      TableRowGroup = tmp20(7259).TableRowGroup;
+      TableRowGroup = tmp20(7229).TableRowGroup;
       items4 = [closure_7(closure_5, obj13), ];
       const obj15 = {
         variant: "secondary",
@@ -360,7 +360,7 @@ export default function FeedbackActionSheetV2(optionsTree) {
               return tmp3;
             }
       };
-      const Button = tmp20(5421).Button;
+      const Button = tmp20(5390).Button;
       intl = tmp20(1113).intl;
       items4[1] = closure_7(Button, obj15);
       tmp33Result = closure_9(first1, obj12);
@@ -372,18 +372,18 @@ export default function FeedbackActionSheetV2(optionsTree) {
     num = 0;
   }
   const sum = 232 + num + bottom;
-  const obj16 = { scrollable: true, ref, startHeight: sum, maxHeight: tmp41, header: closure_7(BottomSheetTitleHeader, obj17), children: closure_7(optionsTree(5055).BottomSheetScrollView, obj19) };
+  const obj16 = { scrollable: true, ref, startHeight: sum, maxHeight: tmp41, header: closure_7(BottomSheetTitleHeader, obj17), children: closure_7(optionsTree(5024).BottomSheetScrollView, obj19) };
   tmp41 = undefined;
-  const BottomSheet = tmp20(5051).BottomSheet;
+  const BottomSheet = tmp20(5020).BottomSheet;
   if (null == first2) {
     tmp41 = sum;
   }
   obj17 = { title: problemsHeader, trailing: tmp40Result };
   tmp40Result = null;
-  BottomSheetTitleHeader = tmp20(7426).BottomSheetTitleHeader;
+  BottomSheetTitleHeader = tmp20(7396).BottomSheetTitleHeader;
   if (showHeaderCloseButton) {
     const obj18 = { onPress };
-    tmp40Result = tmp40(tmp20(7465).ActionSheetCloseButton, obj18);
+    tmp40Result = tmp40(tmp20(7435).ActionSheetCloseButton, obj18);
   }
   obj19 = { contentContainerStyle: items5, children: tmp33Result };
   items5 = [tmp.container, { paddingBottom: tmp.container.padding + bottom }];

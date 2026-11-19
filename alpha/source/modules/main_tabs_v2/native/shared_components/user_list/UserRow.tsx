@@ -1,44 +1,44 @@
-// Module ID: 9562
-// Function ID: 9563
+// Module ID: 9541
+// Function ID: 9542
 // Name: UserRow
-// Dependencies: [19, 17, 4824, 2165, 8274, 4672, 5561, 4765, 9547, 1072, 21, 1360, 4823, 575, 7648, 38, 9563, 10150, 5504, 10151, 7651, 8275, 504, 1187, 5414, 4879, 13435, 7431, 6539, 1113, 13750, 10172, 7251, 5421, 2154, 8524, 7583, 7978, 2121, 8078, 13751, 9274, 5850, 8611, 6250, 9359, 9357, 10347, 13753, 9644, 13754, 7246, 13768, 6956, 2]
+// Dependencies: [19, 17, 4793, 2165, 8243, 4641, 5530, 4734, 9526, 1072, 21, 1360, 4792, 575, 7618, 38, 9542, 10128, 5473, 10129, 7621, 8244, 504, 1187, 5383, 4848, 13417, 7401, 6510, 1113, 13732, 10150, 7221, 5390, 2154, 8493, 7553, 7948, 2121, 8047, 13733, 9250, 5821, 8580, 6221, 9336, 9334, 10325, 13735, 9623, 13736, 7216, 13750, 6926, 2]
 
-// Module 9562 (UserRow)
+// Module 9541 (UserRow)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl14 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
 import utils_StringUtils from "utils/StringUtils" /* 2154 */;
-import UserUtils from "UserUtils" /* 4879 */;
-import Text_Text from "Text/Text" /* 5414 */;
-import components_Button_Button from "components/Button/Button" /* 5421 */;
-import ToastUtils from "ToastUtils" /* 5504 */;
-import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 7251 */;
-import ChatIcon from "ChatIcon" /* 7583 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7648 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7651 */;
-import FriendSuggestionActionCreatorsDefault from "FriendSuggestionActionCreators" /* 8275 */;
-import PhoneCallIcon from "PhoneCallIcon" /* 8524 */;
-import BoostGemIcon2 from "BoostGemIcon" /* 9274 */;
-import UserRowConstants from "UserRowConstants" /* 9547 */;
-import PeopleUtilsDefault from "PeopleUtils" /* 10150 */;
-import GameRelationshipActionCreatorsDefault from "GameRelationshipActionCreators" /* 10151 */;
-import XLargeIcon from "XLargeIcon" /* 10172 */;
-import ActivityStatusDefault from "ActivityStatus" /* 13435 */;
-import ActionButtonDefault from "ActionButton" /* 13750 */;
-import CrownIcon2 from "CrownIcon" /* 13751 */;
+import UserUtils from "UserUtils" /* 4848 */;
+import Text_Text from "Text/Text" /* 5383 */;
+import components_Button_Button from "components/Button/Button" /* 5390 */;
+import ToastUtils from "ToastUtils" /* 5473 */;
+import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 7221 */;
+import ChatIcon from "ChatIcon" /* 7553 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7618 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7621 */;
+import FriendSuggestionActionCreatorsDefault from "FriendSuggestionActionCreators" /* 8244 */;
+import PhoneCallIcon from "PhoneCallIcon" /* 8493 */;
+import BoostGemIcon2 from "BoostGemIcon" /* 9250 */;
+import UserRowConstants from "UserRowConstants" /* 9526 */;
+import PeopleUtilsDefault from "PeopleUtils" /* 10128 */;
+import GameRelationshipActionCreatorsDefault from "GameRelationshipActionCreators" /* 10129 */;
+import XLargeIcon from "XLargeIcon" /* 10150 */;
+import ActivityStatusDefault from "ActivityStatus" /* 13417 */;
+import ActionButtonDefault from "ActionButton" /* 13732 */;
+import CrownIcon2 from "CrownIcon" /* 13733 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4824 */;
+import AccessibilityStore from "AccessibilityStore" /* 4793 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
-import FriendSuggestionStore from "FriendSuggestionStore" /* 8274 */;
-import ChannelStore from "ChannelStore" /* 4672 */;
-import PresenceStore from "PresenceStore" /* 5561 */;
-import RelationshipStore from "RelationshipStore" /* 4765 */;
+import FriendSuggestionStore from "FriendSuggestionStore" /* 8243 */;
+import ChannelStore from "ChannelStore" /* 4641 */;
+import PresenceStore from "PresenceStore" /* 5530 */;
+import RelationshipStore from "RelationshipStore" /* 4734 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1360 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const UserUtilsDefault = UserUtils;
@@ -103,7 +103,7 @@ function UserRowSubLabel(arg0) {
     tmp9 = tmp14Result;
   } else {
     const obj8 = { lineClamp: 1, variant: "body-xs/medium", color: "text-muted", children: tmp2Result.getUserTag(user) };
-    const Text = tmp2(5414).Text;
+    const Text = tmp2(5383).Text;
     tmp2Result = UserUtils;
     tmp9 = closure_14(Text, obj8);
   }
@@ -115,7 +115,7 @@ const UserRowModes = UserRowConstants.UserRowModes;
 ({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = Fragment);
 let obj;
 if (PlatformUtils.isIOS()) {
-  obj = { lineHeight: "find" };
+  obj = { lineHeight: "r" };
 }
 let closure_18 = { CALL: "call", MESSAGE: "message", ACCEPT: "accept", DECLINE: "decline", CANCEL: "cancel", ACCEPT_SUGGESTION: "accept-suggestion", IGNORE_SUGGESTION: "ignore-suggestion", TOGGLE: "toggle" };
 let createStyles = createStyles_mod;
@@ -293,7 +293,7 @@ const memoResult = react.memo(function UserRow(type) {
     let zFfSFQ2;
     const items = [];
     if (NONE !== UserRowModes.ACTIONS) {
-      let obj2 = { accessibilityActions: items, actions: "Array" };
+      let obj2 = { accessibilityActions: items, actions: "r" };
       return obj2;
     } else {
       let tmp9;
@@ -608,7 +608,7 @@ const memoResult = react.memo(function UserRow(type) {
     let localUser;
     let sourceAnalyticsLocations;
     if (null == onLongPress) {
-      const promise = asyncRequire(7978, dependencyMap.paths);
+      const promise = asyncRequire(7948, dependencyMap.paths);
       promise.then((result) => {
         obj = { userId: localUser.id, localUser, sourceAnalyticsLocations };
         return result.default(obj);

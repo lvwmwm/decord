@@ -1,22 +1,22 @@
-// Module ID: 8207
-// Function ID: 8208
+// Module ID: 8176
+// Function ID: 8177
 // Name: MemberSafetySupplementalUtils
-// Dependencies: [5, 1072, 1113, 6599, 8208, 5032, 4830, 1285, 2]
+// Dependencies: [5, 1072, 1113, 6570, 8177, 5001, 4799, 1285, 2]
 // Exports: fetchMemberSupplemental, getIntegrationLabel, getJoinSourceTypeLabel, registerFetchedSupplementals, useGetIntegrationIconString
 
-// Module 8207 (MemberSafetySupplementalUtils)
+// Module 8176 (MemberSafetySupplementalUtils)
 import Constants from "Constants" /* 1072 */;
 import intl11 from "intl" /* 1113 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
-import PlatformsDefault from "Platforms" /* 6599 */;
-import ConnectionsHooks from "ConnectionsHooks" /* 8208 */;
+import PlatformsDefault from "Platforms" /* 6570 */;
+import ConnectionsHooks from "ConnectionsHooks" /* 8177 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
 let c6, c7;
 
 let tmp3;
-const shared = tmp3(4830);
+const shared = tmp3(4799);
 function createFetchKeys(arg0, arr) {
   let closure_0 = arg0;
   return arr.map((item) => closure_0 + item);
@@ -53,7 +53,7 @@ let obj = function _fetchMemberSupplemental() {
         obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c5;

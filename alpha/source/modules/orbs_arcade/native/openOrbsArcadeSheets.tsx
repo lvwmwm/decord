@@ -1,12 +1,12 @@
-// Module ID: 16498
-// Function ID: 16499
+// Module ID: 16489
+// Function ID: 16490
 // Name: openOrbsArcadeSheets
-// Dependencies: [5037, 16499, 2121, 16516, 16518, 2]
+// Dependencies: [5006, 16490, 2121, 16507, 16509, 2]
 // Exports: openOrbsArcadeInfoSheet, openOrbsArcadeRewardUnlockedSheet, openOrbsArcadeRewardsSheet
 
-// Module 16498 (openOrbsArcadeSheets)
+// Module 16489 (openOrbsArcadeSheets)
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/orbs_arcade/native/openOrbsArcadeSheets.tsx");
@@ -14,12 +14,12 @@ const result = size.fileFinishedImporting("modules/orbs_arcade/native/openOrbsAr
 export function openOrbsArcadeRewardsSheet(id, surface) {
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { gameId: id, surface };
-  obj.openLazy(asyncRequire(16499, dependencyMap.paths), "OrbsArcadeRewardsSheet", obj2);
+  obj.openLazy(asyncRequire(16490, dependencyMap.paths), "OrbsArcadeRewardsSheet", obj2);
 }
 export function openOrbsArcadeInfoSheet(id, surface) {
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { gameId: id, surface };
-  obj.openLazy(asyncRequire(16516, dependencyMap.paths), "OrbsArcadeInfoSheet", obj2);
+  obj.openLazy(asyncRequire(16507, dependencyMap.paths), "OrbsArcadeInfoSheet", obj2);
 }
 export function openOrbsArcadeRewardUnlockedSheet(id, surface, set) {
   if (set === undefined) {
@@ -30,5 +30,5 @@ export function openOrbsArcadeRewardUnlockedSheet(id, surface, set) {
   }
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { gameId: id, surface, unlockedRewardIds: set };
-  obj.openLazy(asyncRequire(16518, dependencyMap.paths), "OrbsArcadeRewardUnlockedSheet", obj2);
+  obj.openLazy(asyncRequire(16509, dependencyMap.paths), "OrbsArcadeRewardUnlockedSheet", obj2);
 }

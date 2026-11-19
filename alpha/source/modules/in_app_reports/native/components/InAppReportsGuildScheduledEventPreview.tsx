@@ -1,17 +1,17 @@
-// Module ID: 10313
-// Function ID: 10314
+// Module ID: 10291
+// Function ID: 10292
 // Name: InAppReportsGuildScheduledEventPreview
-// Dependencies: [19, 17, 4694, 21, 4823, 575, 504, 4820, 5414, 1113, 7233, 2]
+// Dependencies: [19, 17, 4663, 21, 4792, 575, 504, 4789, 5383, 1113, 7203, 2]
 // Exports: default
 
-// Module 10313 (InAppReportsGuildScheduledEventPreview)
+// Module 10291 (InAppReportsGuildScheduledEventPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import GuildIconDefault from "GuildIcon" /* 7233 */;
+import GuildIconDefault from "GuildIcon" /* 7203 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4694 */;
+import GuildStore from "GuildStore" /* 4663 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -43,10 +43,10 @@ export default function GuildScheduledEventPreview(event) {
     return null;
   } else {
     const obj2 = { style: tmp.container, children: items1 };
-    const tmp2Result = event(4820);
+    const tmp2Result = event(4789);
     const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "body-xs/semibold", children: intl.string(event(1113).t.SDTOL7) };
     const hexWithOpacityResult = tmp2Result.hexWithOpacity(tmp.borderColor.color, 0.08);
-    const Text = tmp2(5414).Text;
+    const Text = tmp2(5383).Text;
     intl = tmp2(1113).intl;
     items1 = [closure_5(Text, obj3), ];
     const obj4 = { style: items2, children: items4 };
@@ -54,14 +54,14 @@ export default function GuildScheduledEventPreview(event) {
     const obj5 = { borderColor: hexWithOpacityResult };
     items2[1] = obj5;
     const obj6 = { style: tmp.guildInfo, children: items3 };
-    const obj7 = { guild: stateFromStores, size: event(7233).GuildIconSizes.XXSMALL, selected: false };
+    const obj7 = { guild: stateFromStores, size: event(7203).GuildIconSizes.XXSMALL, selected: false };
     const tmp10 = GuildIconDefault;
     items3 = [closure_5(tmp10, obj7), ];
     const obj8 = { style: tmp.guildName, variant: "body-sm/medium", color: "text-default", children: stateFromStores.name };
-    items3[1] = closure_5(event(5414).Text, obj8);
+    items3[1] = closure_5(event(5383).Text, obj8);
     items4 = [closure_6(View, obj6), ];
     const obj9 = { style: tmp.eventName, variant: "body-md/semibold", color: "mobile-text-heading-primary", children: event.name };
-    items4[1] = closure_5(event(5414).Text, obj9);
+    items4[1] = closure_5(event(5383).Text, obj9);
     items1[1] = closure_6(View, obj4);
     return closure_6(View, obj2);
   }

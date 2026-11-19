@@ -1,15 +1,15 @@
-// Module ID: 13680
-// Function ID: 13681
+// Module ID: 13662
+// Function ID: 13663
 // Name: RewardCodeClaimHooks
-// Dependencies: [5, 32, 19, 9858, 6469, 9894, 9860, 9863, 6473, 8342, 5498, 2]
+// Dependencies: [5, 32, 19, 9837, 6440, 9873, 9839, 9842, 6444, 8311, 5467, 2]
 // Exports: useClaimOrFetchRewardCode, useClaimRewardCodePrimaryCtaClickHandler, useHandleRedemptionLinkClick
 
-// Module 13680 (RewardCodeClaimHooks)
-import QuestTypes from "QuestTypes" /* 6469 */;
-import AdCreativeType from "AdCreativeType" /* 6473 */;
-import QuestActionCreators from "QuestActionCreators" /* 9858 */;
-import captureAdUserAction3 from "captureAdUserAction" /* 9860 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9863 */;
+// Module 13662 (RewardCodeClaimHooks)
+import QuestTypes from "QuestTypes" /* 6440 */;
+import AdCreativeType from "AdCreativeType" /* 6444 */;
+import QuestActionCreators from "QuestActionCreators" /* 9837 */;
+import captureAdUserAction3 from "captureAdUserAction" /* 9839 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9842 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -49,7 +49,7 @@ export function useClaimOrFetchRewardCode(isClaimingReward) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c6;
@@ -92,7 +92,7 @@ export function useClaimOrFetchRewardCode(isClaimingReward) {
             c6 = 0;
           }
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp23) {
         let closure_5 = tmp23;

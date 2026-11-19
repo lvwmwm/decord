@@ -1,29 +1,32 @@
-// Module ID: 18438
-// Function ID: 18439
+// Module ID: 18431
+// Function ID: 18432
 // Name: ConjureFirstShareReview
-// Dependencies: [19, 17, 21, 9803, 6945, 6530, 12131, 18050, 18439, 10032, 6951, 4823, 575, 5505, 7614, 7615, 18333, 7132, 1113, 4121, 7372, 14647, 18434, 5414, 4885, 6941, 7247, 2]
+// Dependencies: [19, 17, 21, 9782, 6915, 6501, 12108, 18043, 18432, 10010, 6921, 4792, 575, 5474, 7585, 18325, 18327, 7102, 1113, 4089, 7342, 18428, 5383, 2]
 // Exports: default
 
-// Module 18438 (ConjureFirstShareReview)
+// Module 18431 (ConjureFirstShareReview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl7 from "intl" /* 1113 */;
-import _modDef4121 from "module_4121" /* 4121 */;
-import react_native2 from "react-native" /* 4885 */;
-import Text_Text from "Text/Text" /* 5414 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6530 */;
-import Pressables from "Pressables" /* 6941 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 6945 */;
-import GameControllerIcon from "GameControllerIcon" /* 6951 */;
-import FormCheckbox from "FormCheckbox" /* 7247 */;
-import ScreenIcon from "ScreenIcon" /* 9803 */;
-import ShieldIcon from "ShieldIcon" /* 10032 */;
-import RobotIcon from "RobotIcon" /* 12131 */;
-import ActivitiesIcon from "ActivitiesIcon" /* 18050 */;
-import BadgeIcon from "BadgeIcon" /* 18439 */;
+import intl6 from "intl" /* 1113 */;
+import _modDef4089 from "module_4089" /* 4089 */;
+import Text_Text from "Text/Text" /* 5383 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5474 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6501 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 6915 */;
+import GameControllerIcon from "GameControllerIcon" /* 6921 */;
+import TextInput_TextInput from "TextInput/TextInput" /* 7102 */;
+import AppsIcon from "AppsIcon" /* 7585 */;
+import ScreenIcon from "ScreenIcon" /* 9782 */;
+import ShieldIcon from "ShieldIcon" /* 10010 */;
+import RobotIcon from "RobotIcon" /* 12108 */;
+import ActivitiesIcon from "ActivitiesIcon" /* 18043 */;
+import ConjureManagedCopyStatusDefault from "ConjureManagedCopyStatus" /* 18325 */;
+import ConjureAppIdentity from "ConjureAppIdentity" /* 18327 */;
+import useConjureFirstShareReview from "useConjureFirstShareReview" /* 18428 */;
+import BadgeIcon from "BadgeIcon" /* 18432 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -32,7 +35,6 @@ let metroRequire;
 let obj4;
 let obj5;
 let obj6;
-let obj7;
 function SectionTitle(title) {
   title = title.title;
   obj = { variant: "body-sm/semibold", color: "text-subtle", accessibilityRole: "header", style: closure_9().sectionTitle, children: title };
@@ -61,52 +63,18 @@ function RowSection(title) {
   }
   return tmp3Result;
 }
-function PrivateCheckbox(appChannelsPrivate) {
-  let accessibilityRole;
-  let accessibilityState;
-  let intl;
-  let items;
-  appChannelsPrivate = appChannelsPrivate.appChannelsPrivate;
-  const isPrivate = appChannelsPrivate.isPrivate;
-  const setPrivate = appChannelsPrivate.setPrivate;
-  const tmp = closure_9();
-  obj = react_native2;
-  const checkboxA11yNative = obj.useCheckboxA11yNative({ checked: isPrivate });
-  ({ accessibilityRole, accessibilityState } = checkboxA11yNative);
-  obj2 = {
-    style: tmp.privateCheckbox,
-    accessibilityRole,
-    accessibilityState,
-    onPress() {
-      return setPrivate(!isPrivate);
-    },
-    children: items
-  };
-  const PressableOpacity = Pressables.PressableOpacity;
-  items = [React3(FormCheckbox.FormCheckbox, { checked: isPrivate }), ];
-  const obj3 = { variant: "body-md/medium", color: "text-subtle", children: intl.string(_modDef4121.RSyIc9) };
-  const Text = Text_Text.Text;
-  intl = intl7.intl;
-  items[1] = React3(Text, obj3);
-  return metroRequire(PressableOpacity, obj2);
-}
-function ContentRow(trailing) {
+function ContentRow(arg0) {
   let icon;
   let items;
   let label;
-  trailing = trailing.trailing;
-  ({ icon, label } = trailing);
-  if (trailing === undefined) {
-    trailing = null;
-  }
-  const tmp2 = closure_9();
-  obj = { style: tmp2.row, children: items };
-  items = [, , ];
+  ({ icon, label } = arg0);
+  const tmp = closure_9();
+  obj = { style: tmp.row, children: items };
+  items = [, ];
   obj2 = { size: "sm", color: nativeDefault.colors.ICON_MUTED };
   items[0] = React3(icon, obj2);
-  const obj3 = { variant: "body-md/semibold", color: "text-strong", lineClamp: 1, style: tmp2.rowLabel, children: label };
+  const obj3 = { variant: "body-md/semibold", color: "text-strong", lineClamp: 1, style: tmp.rowLabel, children: label };
   items[1] = React3(Text_Text.Text, obj3);
-  items[2] = trailing;
   return metroRequire(View, obj);
 }
 const View = react_native.View;
@@ -120,17 +88,16 @@ obj2[ConjureProjectTypes.ConjureSupportedSurface.PROFILE_WIDGET] = BadgeIcon.Bad
 obj2[ConjureProjectTypes.ConjureSupportedSurface.AUTOMOD] = ShieldIcon.ShieldIcon;
 obj2[ConjureProjectTypes.ConjureSupportedSurface.OVERLAY] = GameControllerIcon.GameControllerIcon;
 let createStyles = createStyles_mod;
-let obj3 = { sectionTitle: obj4, followingSection: obj5, row: obj6, rowLabel: { flex: 1 }, privateCheckbox: obj7 };
+let obj3 = { sectionTitle: obj4, followingSection: obj5, row: obj6, rowLabel: { flex: 1 } };
 obj4 = { marginBottom: nativeDefault.space.PX_4 };
 createStyles = createStyles.createStyles;
 obj5 = { marginTop: -nativeDefault.space.PX_8 };
 obj6 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, minHeight: nativeDefault.space.PX_32 + nativeDefault.space.PX_4 };
-obj7 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
 let closure_9 = createStyles(obj3);
 const result = size.fileFinishedImporting("modules/conjure/share/native/ConjureFirstShareReview.tsx");
 
 export default function ConjureFirstShareReview(review) {
-  let appChannelsPrivate;
+  let channelNames;
   let components;
   let devicePermissions;
   let identity;
@@ -139,45 +106,18 @@ export default function ConjureFirstShareReview(review) {
   let intl3;
   let intl4;
   let intl5;
-  let intl6;
+  let items2;
   let nameError;
-  let tmp4;
+  let tmp8;
+  let tmp9;
+  let tmpResult;
   review = review.review;
-  let AppsIcon;
-  appChannelsPrivate = undefined;
-  ({ identity, appChannelsPrivate } = review);
-  let isPrivate;
+  ({ identity, channelNames } = review);
   const onConjureIcon = review.onConjureIcon;
-  if (appChannelsPrivate != null) {
-    isPrivate = appChannelsPrivate.isPrivate;
-  }
-  if (true === isPrivate) {
-    AppsIcon = AppsIcon(7614).AppsLockIcon;
-    let tmp3 = dependencyMap;
-    tmp4 = AppsIcon;
-  } else {
-    let tmp2 = AppsIcon;
-    tmp3 = dependencyMap;
-    AppsIcon = AppsIcon(7615).AppsIcon;
-    tmp4 = AppsIcon;
-  }
-  let tmp8 = null;
-  if (review.channelNames.length <= 1) {
-    tmp8 = appChannelsPrivate;
-  }
-  appChannelsPrivate = tmp8;
-  const channelNames = review.channelNames;
   const items = [
     ...channelNames.map((label) => {
-      let tmpResult;
-      obj = { icon: AppsIcon, label, trailing: tmpResult };
-      tmpResult = null;
-      const tmp2 = ContentRow;
-      if (null != appChannelsPrivate) {
-        obj2 = { appChannelsPrivate: tmp3 };
-        tmpResult = tmp(PrivateCheckbox, obj2);
-      }
-      return React3(tmp2, obj, "channel:" + label);
+      obj = { icon: AppsIcon.AppsIcon, label };
+      return closure_1_4(ContentRow, obj, "channel:" + label);
     }),
     ...components.map((label) => {
       const surface = label.surface;
@@ -186,65 +126,62 @@ export default function ConjureFirstShareReview(review) {
     })
   ];
   components = review.components;
-  obj = {
-    iconURL: identity.iconURL,
-    size: 48,
-    radius: 12,
-    disabled: review.saving,
-    onChange: identity.setIcon,
-    onError(text) {
-      if (null != text) {
-        obj2 = { text, variant: "critical" };
-        obj = appChannelsPrivate(dependencyMap[13]);
-        obj.open("CONJURE_PUBLISH_SHEET_ERROR", obj2);
-      }
-    },
-    onConjure: onConjureIcon
-  };
-  const items1 = [closure_4(tmp4(18333).ConjureAppIconTile, obj), , , , , ];
-  const obj4 = { label: intl.string(appChannelsPrivate(4121).knevPu), value: null, onChange: null, maxLength: tmp4(6530).MAX_PROJECT_NAME_LENGTH, disabled: null, errorMessage: nameError };
-  const TextInput = tmp4(7132).TextInput;
-  intl = tmp4(1113).intl;
-  ({ name: obj2.value, setName: obj2.onChange } = review);
-  ({ saving: obj2.disabled, nameError } = review);
-  items1[1] = closure_4(TextInput, obj4);
-  const obj6 = { label: intl2.string(appChannelsPrivate(4121).ynaGa1), placeholder: intl3.string(appChannelsPrivate(4121)["I+3UTL"]), value: null, onChange: null, maxLength: tmp4(6530).MAX_APP_DESCRIPTION_LENGTH, disabled: review.saving };
-  const TextArea = tmp4(7372).TextArea;
-  intl2 = tmp4(1113).intl;
-  intl3 = tmp4(1113).intl;
-  ({ description: obj3.value, setDescription: obj3.onChange } = identity);
-  items1[2] = closure_4(TextArea, obj6);
-  const obj7 = { title: intl4.string(appChannelsPrivate(4121).BqNMms), rows: items };
-  intl4 = tmp4(1113).intl;
-  items1[3] = closure_4(RowSection, obj7);
-  let tmp11Result = null;
-  const tmp10 = closure_5;
-  const tmp13 = RowSection;
-  const tmp9 = closure_6;
-  if (review.channelNames.length > 1) {
-    tmp11Result = null;
-    if (null != appChannelsPrivate) {
-      const obj13 = { label: intl5.string(appChannelsPrivate(4121).Td1mlg), checked: null, onToggle: null };
-      const Checkbox = tmp4(14647).Checkbox;
-      intl5 = tmp4(1113).intl;
-      ({ isPrivate: obj5.checked, setPrivate: obj5.onToggle } = appChannelsPrivate);
-      tmp11Result = tmp11(Checkbox, obj13);
-    }
+  if (review.managedCopy) {
+    const obj3 = { projectId: review.projectId };
+    tmpResult = tmp3(ConjureManagedCopyStatusDefault, obj3);
+    tmp8 = importDefault;
+    tmp9 = tmp3;
+  } else {
+    obj = {
+      iconURL: identity.iconURL,
+      size: 48,
+      radius: 12,
+      disabled: review.saving,
+      onChange: identity.setIcon,
+      onError(text) {
+          if (null != text) {
+            obj2 = { text, variant: "critical" };
+            obj = ToastActionCreatorsDefault;
+            obj.open("CONJURE_PUBLISH_SHEET_ERROR", obj2);
+          }
+        },
+      onConjure: onConjureIcon
+    };
+    const items1 = [React3(ConjureAppIdentity.ConjureAppIconTile, obj), , ];
+    const obj5 = { label: intl.string(_modDef4089.knevPu), value: null, onChange: null, maxLength: ConjureProjectTypes.MAX_PROJECT_NAME_LENGTH, disabled: null, errorMessage: nameError };
+    const TextInput = TextInput_TextInput.TextInput;
+    intl = intl6.intl;
+    ({ name: obj2.value, setName: obj2.onChange } = review);
+    ({ saving: obj2.disabled, nameError } = review);
+    const obj6 = { children: items1 };
+    items1[1] = React3(TextInput, obj5);
+    const obj7 = { label: intl2.string(_modDef4089.ynaGa1), placeholder: intl3.string(_modDef4089["I+3UTL"]), value: null, onChange: null, maxLength: ConjureProjectTypes.MAX_APP_DESCRIPTION_LENGTH, disabled: review.saving };
+    const TextArea = tmp4(7342).TextArea;
+    intl2 = tmp4(1113).intl;
+    intl3 = tmp4(1113).intl;
+    ({ description: obj4.value, setDescription: obj4.onChange } = identity);
+    items1[2] = React3(TextArea, obj7);
+    tmp8 = tmp6;
+    tmp9 = tmp3;
+    tmpResult = tmp(tmp2, obj6);
   }
-  const obj14 = { children: items1 };
-  items1[4] = tmp11Result;
-  const obj15 = {
-    title: intl6.string(appChannelsPrivate(4121).LnqeFd),
+  const obj8 = { children: items2 };
+  items2 = [tmpResult, , ];
+  const obj15 = { title: intl4.string(tmp8(4089).BqNMms), rows: items };
+  intl4 = intl6.intl;
+  items2[1] = tmp9(RowSection, obj15);
+  const obj16 = {
+    title: intl5.string(tmp8(4089).LnqeFd),
     following: items.length > 0,
     rows: devicePermissions.map((item) => {
       let intl;
-      obj = { icon: closure_1_7[item], label: intl.string(AppsIcon(dependencyMap[22]).CONJURE_REVIEW_PERMISSION_LABELS[item]) };
-      intl = AppsIcon(dependencyMap[18]).intl;
+      obj = { icon: closure_1_7[item], label: intl.string(useConjureFirstShareReview.CONJURE_REVIEW_PERMISSION_LABELS[item]) };
+      intl = intl6.intl;
       return closure_1_4(ContentRow, obj, item);
     })
   };
-  intl6 = tmp4(1113).intl;
+  intl5 = intl6.intl;
   devicePermissions = review.devicePermissions;
-  items1[5] = closure_4(tmp13, obj15);
-  return tmp9(tmp10, obj14);
+  items2[2] = tmp9(RowSection, obj16);
+  return metroRequire(hasOwnProperty, obj8);
 };

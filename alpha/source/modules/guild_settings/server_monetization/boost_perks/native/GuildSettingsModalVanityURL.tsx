@@ -1,28 +1,28 @@
-// Module ID: 19913
-// Function ID: 19914
+// Module ID: 19924
+// Function ID: 19925
 // Name: GuildSettingsModalVanityURL
-// Dependencies: [19, 17, 19914, 4694, 7906, 1072, 21, 4823, 575, 7006, 6940, 1113, 19915, 7977, 5414, 19757, 7132, 5510, 19916, 1502, 504, 5397, 2]
+// Dependencies: [19, 17, 19925, 4663, 7876, 1072, 21, 4792, 575, 6976, 6910, 1113, 19926, 7947, 5383, 19753, 7102, 5479, 19927, 1502, 504, 5366, 2]
 // Exports: default
 
-// Module 19913 (GuildSettingsModalVanityURL)
+// Module 19924 (GuildSettingsModalVanityURL)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl7 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5414 */;
-import FastImageDefault from "FastImage" /* 5510 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 6940 */;
-import TextInput_TextInput from "TextInput/TextInput" /* 7132 */;
-import getInviteURLDefault from "getInviteURL" /* 7977 */;
-import GuildSettingsVanityURLUtils from "GuildSettingsVanityURLUtils" /* 19757 */;
-import ChangeVanityURLActionCreatorsDefault from "ChangeVanityURLActionCreators" /* 19915 */;
-import AssetRegistryDefault from "AssetRegistry" /* 19916 */;
+import Text_Text from "Text/Text" /* 5383 */;
+import FastImageDefault from "FastImage" /* 5479 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 6910 */;
+import TextInput_TextInput from "TextInput/TextInput" /* 7102 */;
+import getInviteURLDefault from "getInviteURL" /* 7947 */;
+import GuildSettingsVanityURLUtils from "GuildSettingsVanityURLUtils" /* 19753 */;
+import ChangeVanityURLActionCreatorsDefault from "ChangeVanityURLActionCreators" /* 19926 */;
+import AssetRegistryDefault from "AssetRegistry" /* 19927 */;
 import react from "react" /* 19 */;
-import ChangeVanityURLModalStore from "ChangeVanityURLModalStore" /* 19914 */;
-import GuildStore from "GuildStore" /* 4694 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 7906 */;
+import ChangeVanityURLModalStore from "ChangeVanityURLModalStore" /* 19925 */;
+import GuildStore from "GuildStore" /* 4663 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 7876 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let navigation, props;
@@ -107,7 +107,7 @@ class GuildSettingsModalVanityURL extends PureComponent {
       if (submitting) {
         fn = () => null;
       } else if (isEditing) {
-        let obj = self(7006);
+        let obj = self(6976);
         fn = obj.getHeaderConditionalBackButton(this.handleCancel);
       }
       const obj2 = { headerLeft: fn, headerRight: fn2 };
@@ -219,7 +219,7 @@ class GuildSettingsModalVanityURL extends PureComponent {
     items2[2] = metroImportAll(Text3, obj10);
     if (tmp17Result) {
       const obj11 = { variant: "body-sm/medium", color: "text-muted", children: intl5.string(intl7.t.o3kmm3) };
-      const Text4 = tmp18(5414).Text;
+      const Text4 = tmp18(5383).Text;
       intl5 = tmp18(1113).intl;
       tmp17Result = tmp17(Text4, obj11);
     }
@@ -262,7 +262,7 @@ export default function ConnectedGuildSettingsModalVanityURL(guildId) {
   if (null != stateFromStores) {
     const obj5 = { children: items3 };
     const obj6 = { guild: stateFromStores, vanityURLCode: stateFromStores1, submitting: tmp8, errorDetails: tmp9, navigation, styles: tmp, contentContainerStyle };
-    items3 = [closure_8(GuildSettingsModalVanityURL, obj6), closure_8(tmp2(5397).NavScrim, {})];
+    items3 = [closure_8(GuildSettingsModalVanityURL, obj6), closure_8(tmp2(5366).NavScrim, {})];
     tmp10 = closure_9(closure_10, obj5);
   }
   return tmp10;

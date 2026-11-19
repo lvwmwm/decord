@@ -1,19 +1,19 @@
-// Module ID: 18178
-// Function ID: 18179
+// Module ID: 18171
+// Function ID: 18172
 // Name: useSharedICYMILogic
-// Dependencies: [32, 19, 9931, 18144, 9950, 9935, 18179, 504, 15569, 18177, 7937, 9941, 18176, 9940, 18180, 2]
+// Dependencies: [32, 19, 9910, 18137, 9929, 9914, 18172, 504, 15555, 18170, 7907, 9920, 18169, 9919, 18173, 2]
 // Exports: useSharedICYMILogic
 
-// Module 18178 (useSharedICYMILogic)
-import ICYMITypes from "ICYMITypes" /* 9935 */;
-import ICYMIUtils from "ICYMIUtils" /* 9940 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 9941 */;
-import ICYMIAnalytics2 from "ICYMIAnalytics" /* 15569 */;
-import ICYMIConstants from "ICYMIConstants" /* 18144 */;
-import ICYMIStoreUtils from "ICYMIStoreUtils" /* 18176 */;
+// Module 18171 (useSharedICYMILogic)
+import ICYMITypes from "ICYMITypes" /* 9914 */;
+import ICYMIUtils from "ICYMIUtils" /* 9919 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 9920 */;
+import ICYMIAnalytics2 from "ICYMIAnalytics" /* 15555 */;
+import ICYMIConstants from "ICYMIConstants" /* 18137 */;
+import ICYMIStoreUtils from "ICYMIStoreUtils" /* 18169 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ICYMIStore from "ICYMIStore" /* 9931 */;
+import ICYMIStore from "ICYMIStore" /* 9910 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -29,7 +29,7 @@ export function useSharedICYMILogic(notificationItem) {
   let closure_1;
   let isWaterwheelsCardEligible;
   let showDot;
-  const f115274 = (item) => {
+  const f115252 = (item) => {
     let items;
     let tmpResult;
     const obj = notificationItem(unreadItems[4]);
@@ -162,7 +162,7 @@ export function useSharedICYMILogic(notificationItem) {
         obj3.ackGravityItems(items, true);
       }
       const ICYMIAnalytics = ICYMIAnalytics2.ICYMIAnalytics;
-      const result = ICYMIAnalytics.trackItemShortImpression(viewableItems, viewableFeedItemsArray.flatMap(f115274), stateFromStores);
+      const result = ICYMIAnalytics.trackItemShortImpression(viewableItems, viewableFeedItemsArray.flatMap(f115252), stateFromStores);
     }
   }, items7);
   const items8 = [stateFromStores];
@@ -174,7 +174,7 @@ export function useSharedICYMILogic(notificationItem) {
       let obj = ICYMIStoreUtils;
       const viewableFeedItemsArray = obj.getViewableFeedItemsArray(viewableItems);
       const ICYMIAnalytics = ICYMIAnalytics2.ICYMIAnalytics;
-      const result = ICYMIAnalytics.trackItemLongImpression(viewableItems, viewableFeedItemsArray.flatMap(f115274), stateFromStores);
+      const result = ICYMIAnalytics.trackItemLongImpression(viewableItems, viewableFeedItemsArray.flatMap(f115252), stateFromStores);
       const triggerItemsLongImpression = ICYMIActionCreatorsDefault.triggerItemsLongImpression;
       ICYMIActionCreatorsDefault;
       const found = viewableItems.filter((item) => {

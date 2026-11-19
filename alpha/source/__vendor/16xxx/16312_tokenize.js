@@ -1,30 +1,56 @@
 // Module ID: 16312
 // Function ID: 16313
 // Name: tokenize
-// Dependencies: [16244, 16240]
+// Dependencies: [16235]
 
 // Module 16312 (tokenize)
-import keys2 from "keys2" /* 16240 */;
-import tokenize from "tokenize" /* 16244 */;
+import tokenize from "tokenize" /* 16235 */;
 
 let obj2;
-const Percentage = tokenize.TYPE.Percentage;
+function eatIdentifierOrAsterisk() {
+  const self = this;
+  let tmp = this.scanner.tokenType !== Ident;
+  if (tmp) {
+    const scanner = self.scanner;
+    tmp = false === scanner.isDelim(42);
+  }
+  if (tmp) {
+    self.error("Identifier or asterisk is expected");
+  }
+  const iter = self.scanner;
+  iter.next();
+}
+const Ident = tokenize.TYPE.Ident;
 let obj = {
-  name: "Percentage",
+  name: "TypeSelector",
   structure: obj2,
   parse() {
+    let scanner3;
+    const self = this;
     const tokenStart = this.scanner.tokenStart;
-    const obj = keys2;
-    const consumeNumberResult = obj.consumeNumber(this.scanner.source, tokenStart);
-    this.eat(Percentage);
-    const obj2 = { type: "Percentage", loc: this.getLocation(tokenStart, this.scanner.tokenStart), value: str.substring(tokenStart, consumeNumberResult) };
+    const scanner = this.scanner;
+    if (scanner.isDelim(124)) {
+      const iter2 = self.scanner;
+      iter2.next();
+      eatIdentifierOrAsterisk.call(self);
+    } else {
+      eatIdentifierOrAsterisk.call(self);
+      const scanner2 = self.scanner;
+      const obj = eatIdentifierOrAsterisk;
+      if (scanner2.isDelim(124)) {
+        const iter = self.scanner;
+        iter.next();
+        obj.call(self);
+      }
+    }
+    const obj2 = { type: "TypeSelector", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: scanner3.substrToCursor(tokenStart) };
+    scanner3 = self.scanner;
     return obj2;
   },
-  generate(value) {
-    this.chunk(value.value);
-    this.chunk("%");
+  generate(name) {
+    this.chunk(name.name);
   }
 };
-obj2 = { value: String };
+obj2 = { name: String };
 
 export default obj;

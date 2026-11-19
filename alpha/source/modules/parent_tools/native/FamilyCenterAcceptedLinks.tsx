@@ -1,25 +1,25 @@
-// Module ID: 16143
-// Function ID: 16144
+// Module ID: 16134
+// Function ID: 16135
 // Name: FamilyCenterAcceptedLinks
-// Dependencies: [19, 17, 8248, 21, 4823, 575, 9043, 9042, 12388, 1113, 2723, 5414, 16144, 16145, 6941, 6337, 16148, 2121, 1187, 16150, 2]
+// Dependencies: [19, 17, 8217, 21, 4792, 575, 9017, 9016, 12371, 1113, 2723, 5383, 16135, 16136, 6911, 6308, 16139, 2121, 1187, 16141, 2]
 // Exports: default
 
-// Module 16143 (FamilyCenterAcceptedLinks)
+// Module 16134 (FamilyCenterAcceptedLinks)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
 import _modDef2723 from "module_2723" /* 2723 */;
-import Text_Text from "Text/Text" /* 5414 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6337 */;
-import useUserLinks from "useUserLinks" /* 9042 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 9043 */;
-import useAgeSpecificText2 from "useAgeSpecificText" /* 12388 */;
-import FamilyCenterEmptyDefault from "FamilyCenterEmpty" /* 16144 */;
-import FamilyCenterLinkRowDefault from "FamilyCenterLinkRow" /* 16145 */;
+import Text_Text from "Text/Text" /* 5383 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6308 */;
+import useUserLinks from "useUserLinks" /* 9016 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 9017 */;
+import useAgeSpecificText2 from "useAgeSpecificText" /* 12371 */;
+import FamilyCenterEmptyDefault from "FamilyCenterEmpty" /* 16135 */;
+import FamilyCenterLinkRowDefault from "FamilyCenterLinkRow" /* 16136 */;
 import react from "react" /* 19 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 8248 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 8217 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -40,7 +40,7 @@ function FamilyCenterAcceptedLinkRow(otherUser) {
   if (undefined !== str) {
     let obj2 = { otherUser: str, status: constants.ACTIVE, actions: closure_7(PressableOpacity, obj) };
     const tmp7 = FamilyCenterLinkRowDefault;
-    PressableOpacity = str(6941).PressableOpacity;
+    PressableOpacity = str(6911).PressableOpacity;
     const intl = str(1113).intl;
     const formatToPlainString = intl.formatToPlainString;
     let str1;
@@ -55,13 +55,13 @@ function FamilyCenterAcceptedLinkRow(otherUser) {
       onPress: function handleDisconnect() {
           const obj = ModalActionCreatorsDefault;
           const obj2 = { otherUser: str };
-          obj.pushLazy(asyncRequire(16148, dependencyMap.paths), obj2);
+          obj.pushLazy(asyncRequire(16139, dependencyMap.paths), obj2);
         },
       style: tmp.actionButton,
       children: closure_7(Icon, obj4)
     };
     obj3 = { name: str1 };
-    obj4 = { size: str(1187).Icon.Sizes.SMALL, disableColor: true, source: tmp5(16150) };
+    obj4 = { size: str(1187).Icon.Sizes.SMALL, disableColor: true, source: tmp5(16141) };
     Icon = tmp9(1187).Icon;
     tmp4Result = tmp4(tmp7, obj2);
   }

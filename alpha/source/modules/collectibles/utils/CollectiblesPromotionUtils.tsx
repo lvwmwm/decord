@@ -1,14 +1,15 @@
-// Module ID: 8874
-// Function ID: 8875
+// Module ID: 8847
+// Function ID: 8848
 // Name: CollectiblesPromotionUtils
-// Dependencies: [8839, 8875, 8877, 8872, 2]
+// Dependencies: [8808, 8848, 8850, 8851, 8845, 2]
 // Exports: getPromotionForCollectiblesProduct, hasFiatDiscountPromotion, isPromotionInInvoicePreview
 
-// Module 8874 (CollectiblesPromotionUtils)
-import StorefrontCollectiblesTypes from "StorefrontCollectiblesTypes" /* 8839 */;
-import CollectiblesSequencedOfferPromotionUtils from "CollectiblesSequencedOfferPromotionUtils" /* 8872 */;
-import CollectiblesCollectAndClaimPromotionUtils from "CollectiblesCollectAndClaimPromotionUtils" /* 8875 */;
-import CollectiblesTargetedOfferPromotionUtils from "CollectiblesTargetedOfferPromotionUtils" /* 8877 */;
+// Module 8847 (CollectiblesPromotionUtils)
+import StorefrontCollectiblesTypes from "StorefrontCollectiblesTypes" /* 8808 */;
+import CollectiblesSequencedOfferPromotionUtils from "CollectiblesSequencedOfferPromotionUtils" /* 8845 */;
+import CollectiblesCollectAndClaimPromotionUtils from "CollectiblesCollectAndClaimPromotionUtils" /* 8848 */;
+import CollectiblesTargetedOfferPromotionUtils from "CollectiblesTargetedOfferPromotionUtils" /* 8850 */;
+import CollectiblesCollectionSalePromotionUtils from "CollectiblesCollectionSalePromotionUtils" /* 8851 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/collectibles/utils/CollectiblesPromotionUtils.tsx");
@@ -35,11 +36,14 @@ export function getPromotionForCollectiblesProduct(selectedProduct, tenantMetada
       const tmp4Result = CollectiblesCollectAndClaimPromotionUtils;
       return tmp4Result.getCollectAndClaimPromotionForCollectiblesProduct(selectedProduct, tenantMetadata);
     } else if (StorefrontCollectiblesTypes.StorefrontPromotionCollectiblesType.TARGETED_OFFER === type) {
-      const tmp4Result3 = CollectiblesTargetedOfferPromotionUtils;
-      return tmp4Result3.getTargetedOfferPromotionForCollectiblesProduct(selectedProduct, tenantMetadata);
+      const tmp4Result4 = CollectiblesTargetedOfferPromotionUtils;
+      return tmp4Result4.getTargetedOfferPromotionForCollectiblesProduct(selectedProduct, tenantMetadata);
+    } else if (StorefrontCollectiblesTypes.StorefrontPromotionCollectiblesType.COLLECTION_SALE === type) {
+      const tmp4Result5 = CollectiblesCollectionSalePromotionUtils;
+      return tmp4Result5.getCollectionSalePromotionForCollectiblesProduct(selectedProduct, tenantMetadata);
     } else if (StorefrontCollectiblesTypes.StorefrontPromotionCollectiblesType.COLLECTION_SEQUENCED_OFFER === type) {
-      const tmp4Result4 = CollectiblesSequencedOfferPromotionUtils;
-      return tmp4Result4.getSequencedOfferPromotionForCollectiblesProduct(selectedProduct, tenantMetadata);
+      const tmp4Result6 = CollectiblesSequencedOfferPromotionUtils;
+      return tmp4Result6.getSequencedOfferPromotionForCollectiblesProduct(selectedProduct, tenantMetadata);
     } else {
       return null;
     }

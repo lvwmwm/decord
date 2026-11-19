@@ -1,9 +1,9 @@
-// Module ID: 5417
-// Function ID: 5418
+// Module ID: 5386
+// Function ID: 5387
 // Name: DevSettingsStore
 // Dependencies: [504, 572, 2]
 
-// Module 5417 (DevSettingsStore)
+// Module 5386 (DevSettingsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

@@ -1,20 +1,20 @@
-// Module ID: 17714
-// Function ID: 17715
+// Module ID: 17707
+// Function ID: 17708
 // Name: FavoritesGuildCleanupModal
-// Dependencies: [19, 17, 4685, 21, 4823, 575, 6337, 1630, 17715, 5837, 7258, 1113, 3701, 7260, 5414, 5421, 7006, 12003, 2]
+// Dependencies: [19, 17, 4654, 21, 4792, 575, 6308, 1630, 17708, 5808, 7228, 1113, 3701, 7230, 5383, 5390, 6976, 11981, 2]
 // Exports: default
 
-// Module 17714 (FavoritesGuildCleanupModal)
+// Module 17707 (FavoritesGuildCleanupModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef3701 from "module_3701" /* 3701 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6337 */;
-import TableRadioRow7 from "TableRadioRow" /* 7260 */;
-import Modal from "Modal" /* 12003 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6308 */;
+import TableRadioRow7 from "TableRadioRow" /* 7230 */;
+import Modal from "Modal" /* 11981 */;
 import react from "react" /* 19 */;
-import FavoritesConstants from "FavoritesConstants" /* 4685 */;
+import FavoritesConstants from "FavoritesConstants" /* 4654 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -62,7 +62,7 @@ function CleanupScreen() {
   let tmp = loading;
   const tmp2 = dependencyMap;
   const tmp3 = closure_14(loading(1630)().bottom);
-  const tmp4 = loading(17715)(closeCleanup);
+  const tmp4 = loading(17708)(closeCleanup);
   _require = tmp4;
   loading = tmp4.loading;
   let obj = { style: tmp3.container, spacing: 0, children: items4 };
@@ -140,7 +140,7 @@ function CleanupScreen() {
   intl11 = require("intl").intl;
   items3 = [closure_12(TableRadioRow5, obj12), ];
   const obj13 = { label: intl12.string(tmp(3701)["gOUr+P"]), value: value4, disabled: loading || !tmp4.prune };
-  const TableRadioRow6 = tmp6(7260).TableRadioRow;
+  const TableRadioRow6 = tmp6(7230).TableRadioRow;
   intl12 = tmp6(1113).intl;
   items3[1] = closure_12(TableRadioRow6, obj13);
   items1[2] = closure_13(TableRadioGroup3, obj11);
@@ -148,16 +148,16 @@ function CleanupScreen() {
   const tmp8 = ScrollView;
   if (tmp4.error) {
     const obj14 = { variant: "body-sm/normal", color: "text-feedback-critical", accessibilityRole: "alert", children: intl13.string(tmp(3701).toOYQw) };
-    const Text = tmp6(5414).Text;
+    const Text = tmp6(5383).Text;
     intl13 = tmp6(1113).intl;
     tmp7Result = tmp7(Text, obj14);
   }
   items1[3] = tmp7Result;
   items4 = [closure_12(tmp8, obj2), ];
   const obj15 = { style: tmp3.actions, spacing: tmp(575).space.PX_8, children: closure_12(Button, obj29) };
-  const Stack3 = tmp6(5837).Stack;
+  const Stack3 = tmp6(5808).Stack;
   obj29 = { text: intl14.string(require("intl").t["R3BPH+"]), disabled: loading || !tmp4.canSave, loading, onPress: tmp4.save };
-  Button = tmp6(5421).Button;
+  Button = tmp6(5390).Button;
   intl14 = tmp6(1113).intl;
   items4[1] = closure_12(Stack3, obj15);
   return closure_13(Stack, obj);

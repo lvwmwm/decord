@@ -1,24 +1,24 @@
-// Module ID: 7280
-// Function ID: 7281
+// Module ID: 7250
+// Function ID: 7251
 // Name: Login
-// Dependencies: [5, 32, 19, 17, 7281, 502, 1072, 21, 4823, 6941, 5414, 5769, 1113, 1380, 7282, 7283, 1502, 504, 1505, 6333, 7285, 5770, 7286, 7287, 7288, 6257, 7289, 7293, 7294, 7296, 7290, 5421, 7297, 1627, 7299, 7301, 7132, 7305, 5837, 7309, 7162, 2]
+// Dependencies: [5, 32, 19, 17, 7251, 502, 1072, 21, 4792, 6911, 5383, 5740, 1113, 1380, 7252, 7253, 1502, 504, 1505, 6304, 7255, 5741, 7256, 7257, 7258, 6228, 7259, 7263, 7264, 7266, 7260, 5390, 7267, 1627, 7269, 7271, 7102, 7275, 5808, 7279, 7132, 2]
 // Exports: default
 
-// Module 7280 (Login)
+// Module 7250 (Login)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl10 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import Text_Text from "Text/Text" /* 5414 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5769 */;
-import Pressables from "Pressables" /* 6941 */;
+import Text_Text from "Text/Text" /* 5383 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5740 */;
+import Pressables from "Pressables" /* 6911 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PhoneStore from "PhoneStore" /* 7281 */;
+import PhoneStore from "PhoneStore" /* 7251 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -190,7 +190,7 @@ export default function Login(isMultiAccount) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -242,7 +242,7 @@ export default function Login(isMultiAccount) {
               v0 = 0;
               closure_129_3(false);
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             } else {
               if (closure_0 === closure_0(ref[20]).PasswordResetMethods.ONE_TIME_LOGIN) {
                 const obj = closure_0(ref[21]);
@@ -262,7 +262,7 @@ export default function Login(isMultiAccount) {
           v0 = 0;
           closure_129_3(false);
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp43) {
         ref = tmp43;
@@ -297,7 +297,7 @@ export default function Login(isMultiAccount) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -357,7 +357,7 @@ export default function Login(isMultiAccount) {
               c6 = 0;
             }
             c8 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp19) {
           closure_5 = tmp19;
@@ -396,7 +396,7 @@ export default function Login(isMultiAccount) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -461,7 +461,7 @@ export default function Login(isMultiAccount) {
           closure_129_3(false);
         }
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       } catch (tmp48) {
         ref = tmp48;
         if (0 === v0) {

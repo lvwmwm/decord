@@ -1,12 +1,28 @@
 // Module ID: 5105
 // Function ID: 5106
-// Dependencies: []
-// Exports: getNextHandlerTag
+// Dependencies: [19, 5088, 5100]
+// Exports: useViewRefHandler
 
 // Module 5105
-let closure_0 = 1;
+import react from "react" /* 19 */;
+import react_nativeDefault from "react-native" /* 5088 */;
+import assignRef from "assignRef" /* 5100 */;
 
-export function getNextHandlerTag() {
-  closure_0 = tmp + 1;
-  return +closure_0;
+const useCallback = react.useCallback;
+
+export function useViewRefHandler(current, detectorUpdater) {
+  const items = [current, detectorUpdater];
+  return useCallback((viewRef) => {
+    if (null !== viewRef) {
+      current.viewRef = viewRef;
+      if (-1 === current.previousViewTag) {
+        const tmp4 = react_nativeDefault;
+        const obj = assignRef;
+        current.previousViewTag = tmp4(obj.resolveHostInstance(current.viewRef));
+      }
+      if (!current.firstRender) {
+        detectorUpdater(true);
+      }
+    }
+  }, items);
 }

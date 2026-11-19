@@ -1,35 +1,35 @@
-// Module ID: 13582
-// Function ID: 13583
+// Module ID: 13564
+// Function ID: 13565
 // Name: GuildInvite
-// Dependencies: [32, 19, 17, 12045, 4672, 7964, 4753, 13117, 7310, 1072, 21, 4823, 5377, 575, 1256, 6956, 6949, 1113, 7401, 13583, 1502, 5053, 504, 5831, 5384, 13116, 7006, 4830, 7977, 13542, 7962, 5560, 6928, 5414, 13585, 6941, 1187, 13589, 13590, 5421, 2]
+// Dependencies: [32, 19, 17, 12022, 4641, 7934, 4722, 13099, 7280, 1072, 21, 4792, 5346, 575, 1256, 6926, 6919, 1113, 7371, 13565, 1502, 5022, 504, 5802, 5353, 13098, 6976, 4799, 7947, 13524, 7932, 5529, 6898, 5383, 13567, 6911, 1187, 13571, 13572, 5390, 2]
 // Exports: default
 
-// Module 13582 (GuildInvite)
+// Module 13564 (GuildInvite)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
-import NavigatorConstants from "NavigatorConstants" /* 5377 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5560 */;
-import react_native from "react-native" /* 5831 */;
-import GroupIcon from "GroupIcon" /* 6949 */;
-import TableRow2 from "TableRow" /* 6956 */;
-import NavigatorHeader from "NavigatorHeader" /* 7006 */;
-import CreateGuildConstants from "CreateGuildConstants" /* 7310 */;
-import defaultMVCPConfig from "defaultMVCPConfig" /* 7401 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 7962 */;
-import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 12045 */;
-import InviteSuggestionsActionCreators from "InviteSuggestionsActionCreators" /* 13116 */;
-import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 13542 */;
-import InstantInviteRowDefault from "InstantInviteRow" /* 13583 */;
+import NavigatorConstants from "NavigatorConstants" /* 5346 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5529 */;
+import react_native from "react-native" /* 5802 */;
+import GroupIcon from "GroupIcon" /* 6919 */;
+import TableRow2 from "TableRow" /* 6926 */;
+import NavigatorHeader from "NavigatorHeader" /* 6976 */;
+import CreateGuildConstants from "CreateGuildConstants" /* 7280 */;
+import defaultMVCPConfig from "defaultMVCPConfig" /* 7371 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 7932 */;
+import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 12022 */;
+import InviteSuggestionsActionCreators from "InviteSuggestionsActionCreators" /* 13098 */;
+import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 13524 */;
+import InstantInviteRowDefault from "InstantInviteRow" /* 13565 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 4672 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 7964 */;
-import GuildChannelStore from "GuildChannelStore" /* 4753 */;
-import InviteSuggestionsStore from "InviteSuggestionsStore" /* 13117 */;
+import ChannelStore from "ChannelStore" /* 4641 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 7934 */;
+import GuildChannelStore from "GuildChannelStore" /* 4722 */;
+import InviteSuggestionsStore from "InviteSuggestionsStore" /* 13099 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, navigation;
@@ -53,11 +53,11 @@ function SeeMoreFooter(openInviteSheet) {
   let intl;
   let obj2;
   openInviteSheet = openInviteSheet.openInviteSheet;
-  const obj = { icon: closure_17(hasOwnProperty, obj2), onPress: openInviteSheet, label: intl.string(intl5.t.zrLIIz), end: true };
-  obj2 = { style: closure_19().friendIcon, children: closure_17(GroupIcon.GroupIcon, { size: "sm" }) };
+  const obj = { icon: authStore4(hasOwnProperty, obj2), onPress: openInviteSheet, label: intl.string(intl5.t.zrLIIz), end: true };
+  obj2 = { style: closure_19().friendIcon, children: authStore4(GroupIcon.GroupIcon, { size: "sm" }) };
   const TableRow = TableRow2.TableRow;
   intl = intl5.intl;
-  return closure_17(TableRow, obj);
+  return authStore4(TableRow, obj);
 }
 function GuildInviteSuggestionRows(openInviteSheet) {
   let FlashList;
@@ -81,13 +81,13 @@ function GuildInviteSuggestionRows(openInviteSheet) {
           let item;
           ({ item, index } = arg0);
           const obj = { row: item, code: require.code, start: 0 === index };
-          return closure_17(InstantInviteRowDefault, obj);
+          return authStore4(InstantInviteRowDefault, obj);
         },
       contentContainerStyle: tmp.suggestionRowsContainer,
       ListFooterComponent: tmp6Result,
       ItemSeparatorComponent() {
           const obj = { style: separator.separator };
-          return closure_17(hasOwnProperty, obj);
+          return authStore4(hasOwnProperty, obj);
         },
       keyExtractor(type) {
           return "" + type.type + ":" + type.item.id;
@@ -272,7 +272,7 @@ export default function GuildInvite(closeOnEditInviteLink) {
       if (stateFromStores != null) {
         code = stateFromStores.code;
       }
-      const tmp2Result = tmp2(7962);
+      const tmp2Result = tmp2(7932);
       handleOpenShareSheet(code, tmp, tmp2Result.getShareMessage(inviteSuggestionRows));
       closure_6(true);
     }

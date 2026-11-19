@@ -1,9 +1,9 @@
-// Module ID: 9499
-// Function ID: 9500
+// Module ID: 9478
+// Function ID: 9479
 // Name: MobileWebHandoffUtils
 // Dependencies: [5, 1072, 1269, 1285, 2]
 
-// Module 9499 (MobileWebHandoffUtils)
+// Module 9478 (MobileWebHandoffUtils)
 import Constants from "Constants" /* 1072 */;
 import v1 from "v1" /* 1269 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
@@ -27,7 +27,7 @@ let obj = function _createHandoffToken() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {

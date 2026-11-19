@@ -1,18 +1,18 @@
-// Module ID: 17371
-// Function ID: 17372
+// Module ID: 17364
+// Function ID: 17365
 // Name: CollectiblesShopCardsGrid
-// Dependencies: [19, 17, 7987, 21, 4823, 9447, 8843, 17370, 12, 2]
+// Dependencies: [19, 17, 7956, 21, 4792, 9425, 8816, 17363, 12, 2]
 // Exports: default
 
-// Module 17371 (CollectiblesShopCardsGrid)
+// Module 17364 (CollectiblesShopCardsGrid)
 import _modDef12 from "module_12" /* 12 */;
-import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 8843 */;
-import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 9447 */;
+import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 8816 */;
+import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 9425 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7987 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7956 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const CollectiblesShopCardV2Default = CollectiblesShopCardV2;
@@ -67,7 +67,7 @@ export default function CollectiblesShopCardsGrid(products) {
   ({ disableBundleStaticBackground: react, muteBundleStaticBackground: closure_4 } = products);
   ({ onScroll, paddingTop, paddingBottom, header } = products);
   const rowContainer = closure_9();
-  let obj = products(17370);
+  let obj = products(17363);
   const cardLayout = obj.useCardLayout();
   const columns = cardLayout.columns;
   const cardWidth = cardLayout.cardWidth;
@@ -77,9 +77,9 @@ export default function CollectiblesShopCardsGrid(products) {
     const obj = _modDef12;
     return obj.chunk(products, columns);
   }, items);
-  const obj2 = { accessibilityLabel, accessibilityRole: "list", scrollEnabled, showsVerticalScrollIndicator: false, onScroll, ref, onLayout, contentContainerStyle: { gap: products(9447).COLLECTIBLES_SHOP_CARD_GAP, paddingTop, paddingBottom, width: rowWidth, alignSelf: "center" }, children: items1 };
+  const obj2 = { accessibilityLabel, accessibilityRole: "list", scrollEnabled, showsVerticalScrollIndicator: false, onScroll, ref, onLayout, contentContainerStyle: { gap: products(9425).COLLECTIBLES_SHOP_CARD_GAP, paddingTop, paddingBottom, width: rowWidth, alignSelf: "center" }, children: items1 };
   items1 = [header, ];
-  ({ gap: products(9447).COLLECTIBLES_SHOP_CARD_GAP, paddingTop, paddingBottom, width: rowWidth, alignSelf: "center" });
+  ({ gap: products(9425).COLLECTIBLES_SHOP_CARD_GAP, paddingTop, paddingBottom, width: rowWidth, alignSelf: "center" });
   items1[1] = memo.map((arr, index) => {
     let closure_0 = index;
     let obj = {

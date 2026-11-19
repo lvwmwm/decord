@@ -1,12 +1,12 @@
-// Module ID: 9975
-// Function ID: 9976
+// Module ID: 9954
+// Function ID: 9955
 // Name: ForwardingIcon
-// Dependencies: [21, 9976, 2]
+// Dependencies: [21, 9955, 2]
 // Exports: default
 
-// Module 9975 (ForwardingIcon)
+// Module 9954 (ForwardingIcon)
 import Fragment from "Fragment" /* 21 */;
-import ArrowAngleRightUpIcon2 from "ArrowAngleRightUpIcon" /* 9976 */;
+import ArrowAngleRightUpIcon2 from "ArrowAngleRightUpIcon" /* 9955 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;

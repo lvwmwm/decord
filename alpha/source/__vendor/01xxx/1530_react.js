@@ -10,10 +10,10 @@ import react from "react" /* 19 */;
 let canPreventDefault, current, current2;
 
 
-export function useEventEmitter(map, onEmitEvent) {
-  let closure_0 = map;
+export function useEventEmitter(set, onEmitEvent) {
+  let closure_0 = set;
   let closure_1 = onEmitEvent;
-  let closure_2 = react.useRef(map);
+  let closure_2 = react.useRef(set);
   let closure_3 = react.useRef(onEmitEvent);
   const insertionEffect = react.useInsertionEffect(() => {
     ref.current = current;

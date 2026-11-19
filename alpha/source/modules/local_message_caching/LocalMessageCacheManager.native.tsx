@@ -1,27 +1,27 @@
-// Module ID: 15723
-// Function ID: 15724
+// Module ID: 15711
+// Function ID: 15712
 // Name: LocalMessageCacheManager
-// Dependencies: [5, 32, 4766, 502, 4672, 5872, 12091, 1072, 15724, 3, 1089, 510, 2169, 4645, 8358, 8162, 12134, 12099, 2121, 2123, 572, 6296, 8491, 2]
+// Dependencies: [5, 32, 4735, 502, 4641, 5843, 12068, 1072, 15712, 3, 1089, 510, 2169, 4614, 8327, 8131, 12111, 12076, 2121, 2123, 572, 6268, 8460, 2]
 
-// Module 15723 (LocalMessageCacheManager)
+// Module 15711 (LocalMessageCacheManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage3 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import _modDef2169 from "module_2169" /* 2169 */;
-import DateUtils from "DateUtils" /* 4645 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 8162 */;
-import createMessageDefault from "createMessage" /* 8358 */;
-import UploadActionCreatorsDefault from "UploadActionCreators" /* 12134 */;
+import DateUtils from "DateUtils" /* 4614 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 8131 */;
+import createMessageDefault from "createMessage" /* 8327 */;
+import UploadActionCreatorsDefault from "UploadActionCreators" /* 12111 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import MessageRecord from "MessageRecord" /* 4766 */;
+import MessageRecord from "MessageRecord" /* 4735 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4672 */;
-import MessageStore from "MessageStore" /* 5872 */;
-import SendMessageOptionsStore from "SendMessageOptionsStore" /* 12091 */;
+import ChannelStore from "ChannelStore" /* 4641 */;
+import MessageStore from "MessageStore" /* 5843 */;
+import SendMessageOptionsStore from "SendMessageOptionsStore" /* 12068 */;
 import Constants from "Constants" /* 1072 */;
-import MutexUtils from "MutexUtils" /* 15724 */;
+import MutexUtils from "MutexUtils" /* 15712 */;
 import LifecycleManager from "LifecycleManager" /* 2123 */;
 import size from "module_2" /* 2 */;
 
@@ -152,7 +152,7 @@ obj = function _rehydrateFailedMessages() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -212,7 +212,7 @@ obj = function _rehydrateFailedMessages() {
                 closure_1 = keys;
               }
               c9 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             }
           } else if (arg0 === 1) {
             c9 = 3;
@@ -369,7 +369,7 @@ class LocalMessageCacheManager extends LifecycleManager {
             let obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } else {
           let c7;
@@ -425,7 +425,7 @@ class LocalMessageCacheManager extends LifecycleManager {
                         let obj2 = { value, done: true };
                         return obj2;
                       } else {
-                        return { value: "HermesInternal", done: null };
+                        return { value: "HermesInternal", done: "+60" };
                       }
                     } else {
                       try {
@@ -447,7 +447,7 @@ class LocalMessageCacheManager extends LifecycleManager {
                             }, 0);
                           }
                           c1 = 3;
-                          return { value: "HermesInternal", done: null };
+                          return { value: "HermesInternal", done: "+60" };
                         }
                       } catch (tmp8) {
                         c1 = 3;
@@ -460,7 +460,7 @@ class LocalMessageCacheManager extends LifecycleManager {
                   applyArgumentsResult = values[Symbol.iterator]();
                   if (applyArgumentsResult === undefined) {
                     c10 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "+60" };
                   } else {
                     c7 = 1;
                     _undefined = tmp29;
@@ -720,7 +720,7 @@ class LocalMessageCacheManager extends LifecycleManager {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } else {
           try {
@@ -749,7 +749,7 @@ class LocalMessageCacheManager extends LifecycleManager {
               return obj;
             }
             c1 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           } catch (tmp8) {
             c1 = 3;
             throw tmp8;
@@ -1001,7 +1001,7 @@ class LocalMessageCacheManager extends LifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         while (true) {
@@ -1056,7 +1056,7 @@ class LocalMessageCacheManager extends LifecycleManager {
                   let obj4 = values(closure_2[20]);
                   let subscription1 = obj4.subscribe("CACHE_LOADED", closure_132_0.handleCacheLoaded);
                   c8 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "+60" };
                 } else {
                   let c6 = 1;
                   values = tmp10;

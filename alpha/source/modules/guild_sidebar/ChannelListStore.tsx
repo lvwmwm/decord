@@ -1,30 +1,30 @@
-// Module ID: 8231
-// Function ID: 8232
+// Module ID: 8200
+// Function ID: 8201
 // Name: ChannelListStore
-// Dependencies: [4671, 4727, 6541, 6526, 4757, 1231, 502, 7394, 4672, 8232, 4755, 6527, 4726, 6460, 1082, 8233, 12, 1255, 4744, 11, 504, 572, 2]
+// Dependencies: [4640, 4696, 6512, 6497, 4726, 1231, 502, 7364, 4641, 8201, 4724, 6498, 4695, 6431, 1082, 8202, 12, 1255, 4713, 11, 504, 572, 2]
 
-// Module 8231 (ChannelListStore)
+// Module 8200 (ChannelListStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4744 */;
-import ChannelListStateDefault from "ChannelListState" /* 8233 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4671 */;
-import GatedChannelStore from "GatedChannelStore" /* 4727 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6541 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6526 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4757 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4713 */;
+import ChannelListStateDefault from "ChannelListState" /* 8202 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4640 */;
+import GatedChannelStore from "GatedChannelStore" /* 4696 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6512 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6497 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4726 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CategoryCollapseStore from "CategoryCollapseStore" /* 7394 */;
-import ChannelStore from "ChannelStore" /* 4672 */;
-import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 8232 */;
-import PermissionStore from "PermissionStore" /* 4755 */;
-import ReadStateStore from "ReadStateStore" /* 6527 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4726 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6460 */;
+import CategoryCollapseStore from "CategoryCollapseStore" /* 7364 */;
+import ChannelStore from "ChannelStore" /* 4641 */;
+import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 8201 */;
+import PermissionStore from "PermissionStore" /* 4724 */;
+import ReadStateStore from "ReadStateStore" /* 6498 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4695 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6431 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

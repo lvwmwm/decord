@@ -533,7 +533,7 @@ let closure_5 = {
     let obj;
     data = data.data;
     if (null == data) {
-      obj = { message_identity: "unknown", socket_kind: "analyticsLocations" };
+      obj = { message_identity: "unknown", socket_kind: "ao" };
     } else {
       const url = data.url;
       let tmp58 = null;

@@ -1,20 +1,20 @@
-// Module ID: 17092
-// Function ID: 17093
+// Module ID: 17085
+// Function ID: 17086
 // Name: GeneratedTestUserActionCreators
-// Dependencies: [5, 1407, 17069, 1072, 6412, 6333, 6417, 6340, 1264, 572, 17093, 2]
+// Dependencies: [5, 1407, 17062, 1072, 6383, 6304, 6388, 6311, 1264, 572, 17086, 2]
 // Exports: getGeneratedPoolById, loginAsGeneratedUser, removeGeneratedPoolFromList
 
-// Module 17092 (GeneratedTestUserActionCreators)
+// Module 17085 (GeneratedTestUserActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6333 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6340 */;
-import Constants2 from "Constants" /* 6412 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 6417 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6304 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6311 */;
+import Constants2 from "Constants" /* 6383 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 6388 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserRecord from "UserRecord" /* 1407 */;
-import GeneratedTestUsersStore from "GeneratedTestUsersStore" /* 17069 */;
+import GeneratedTestUsersStore from "GeneratedTestUsersStore" /* 17062 */;
 import size from "module_2" /* 2 */;
 
 let body, c2, c3;
@@ -35,7 +35,7 @@ let obj = function _getGeneratedPoolById() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {

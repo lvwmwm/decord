@@ -1,17 +1,17 @@
-// Module ID: 19584
-// Function ID: 19585
+// Module ID: 19580
+// Function ID: 19581
 // Name: HolidayEventsConfig
-// Dependencies: [10845, 19585, 1113, 19586, 19587, 19588, 19589, 4656, 2]
+// Dependencies: [10823, 19581, 1113, 19582, 19583, 19584, 19585, 4625, 2]
 
-// Module 19584 (HolidayEventsConfig)
+// Module 19580 (HolidayEventsConfig)
 import intl from "intl" /* 1113 */;
-import dismissible_content from "dismissible_content" /* 4656 */;
-import Constants from "Constants" /* 10845 */;
-import HolidayRingtoneExperimentDefault from "HolidayRingtoneExperiment" /* 19585 */;
-import AssetRegistryDefault from "AssetRegistry" /* 19586 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 19587 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 19588 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 19589 */;
+import dismissible_content from "dismissible_content" /* 4625 */;
+import Constants from "Constants" /* 10823 */;
+import HolidayRingtoneExperimentDefault from "HolidayRingtoneExperiment" /* 19581 */;
+import AssetRegistryDefault from "AssetRegistry" /* 19582 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 19583 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 19584 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 19585 */;
 import size from "module_2" /* 2 */;
 
 let Soundpacks;

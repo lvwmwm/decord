@@ -1,17 +1,17 @@
-// Module ID: 18639
-// Function ID: 18640
+// Module ID: 18632
+// Function ID: 18633
 // Name: ConjureImageOptions
-// Dependencies: [32, 1113, 4121, 7169, 2]
+// Dependencies: [32, 1113, 4089, 7139, 2]
 // Exports: answeredOptionIds, hasTypedAnswer, imageOptionCaption, imageOptionViewerSize, imageOptionsLayout, isImageQuestion, noImageAnswer, ownImageOption, ownImageUploadText, registrableDomain, uploadHint, viewableImageOptions
 
-// Module 18639 (ConjureImageOptions)
+// Module 18632 (ConjureImageOptions)
 import intl3 from "intl" /* 1113 */;
-import _modDef4121 from "module_4121" /* 4121 */;
-import MaskedLinkStoreMethodsAdditional from "MaskedLinkStoreMethodsAdditional" /* 7169 */;
+import _modDef4089 from "module_4089" /* 4089 */;
+import MaskedLinkStoreMethodsAdditional from "MaskedLinkStoreMethodsAdditional" /* 7139 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size_mod from "module_2" /* 2 */;
 
-const f116719 = (image) => null != image.image;
+const f116679 = (image) => null != image.image;
 let closure_4 = [];
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/conjure/clarification/ConjureImageOptions.tsx");
@@ -20,7 +20,7 @@ export function isImageQuestion(upload) {
   let someResult = true === upload.upload;
   if (!someResult) {
     const options = upload.options;
-    someResult = options.some(f116719);
+    someResult = options.some(f116679);
   }
   return someResult;
 }
@@ -32,7 +32,7 @@ export function hasTypedAnswer(allow_custom) {
       let someResult = true === allow_custom.upload;
       if (!someResult) {
         const options = allow_custom.options;
-        someResult = options.some(f116719);
+        someResult = options.some(f116679);
       }
       tmp2 = !someResult;
     }
@@ -86,7 +86,7 @@ export function imageOptionViewerSize(value) {
 }
 export function ownImageOption(image) {
   let intl;
-  const obj = { id: "own:" + image.attachment.id, label: intl.string(_modDef4121.SUdqCQ), image: { attachment_id: image.attachment.id } };
+  const obj = { id: "own:" + image.attachment.id, label: intl.string(_modDef4089.SUdqCQ), image: { attachment_id: image.attachment.id } };
   intl = intl3.intl;
   return obj;
 }
@@ -178,7 +178,7 @@ export function ownImageUploadText(question) {
   const string = intl.string;
   const obj = /\bicons?\b/i;
   const isMatch = obj.test(question.question);
-  const tmp2 = _modDef4121;
+  const tmp2 = _modDef4089;
   return string(isMatch ? tmp2.qU4WN6 : tmp2.cbMDDB);
 }
 export function uploadHint(upload) {
@@ -187,15 +187,15 @@ export function uploadHint(upload) {
     let stringResult;
     if (0 === upload.options.length) {
       const intl2 = intl3.intl;
-      stringResult = intl2.string(_modDef4121.ZZ641e);
+      stringResult = intl2.string(_modDef4089.ZZ641e);
     } else {
       let dkzChE;
       const intl = intl3.intl;
       const string = intl.string;
       if (1 === upload.options.length) {
-        dkzChE = _modDef4121["2g3gk9"];
+        dkzChE = _modDef4089["2g3gk9"];
       } else {
-        dkzChE = _modDef4121.dkzChE;
+        dkzChE = _modDef4089.dkzChE;
       }
       stringResult = string(dkzChE);
     }
@@ -205,7 +205,7 @@ export function uploadHint(upload) {
 }
 export function noImageAnswer() {
   let intl;
-  const obj = { kind: "custom", text: intl.string(_modDef4121.zxSq2q) };
+  const obj = { kind: "custom", text: intl.string(_modDef4089.zxSq2q) };
   intl = intl3.intl;
   return obj;
 }

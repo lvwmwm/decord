@@ -1,72 +1,15 @@
 // Module ID: 5045
 // Function ID: 5046
-// Dependencies: [19, 5042, 5046]
-// Exports: useHaptics
+// Dependencies: []
+// Exports: enableLogging, print
 
 // Module 5045
-import react from "react" /* 19 */;
-import _modDef5042 from "module_5042" /* 5042 */;
+function print() {
 
-const useMemo = react.useMemo;
-
-export function useHaptics(enableVibrateFallback) {
-  let closure_0 = enableVibrateFallback;
-  let prop;
-  if (enableVibrateFallback != null) {
-    prop = enableVibrateFallback.enableVibrateFallback;
-  }
-  let prop1;
-  if (enableVibrateFallback != null) {
-    prop1 = enableVibrateFallback.ignoreAndroidSystemSettings;
-  }
-  const items = [prop, prop1];
-  return useMemo(() => {
-    let obj = {
-      trigger(arg0, arg1) {
-        const trigger = _modDef5042.trigger;
-        const obj = {};
-        _modDef5042;
-        const merged = Object.assign(enableVibrateFallback);
-        const merged1 = Object.assign(arg1);
-        trigger(arg0, obj);
-      },
-      triggerPattern(arg0, arg1) {
-        const triggerPattern = _modDef5042.triggerPattern;
-        const obj = {};
-        _modDef5042;
-        const merged = Object.assign(enableVibrateFallback);
-        const merged1 = Object.assign(arg1);
-        triggerPattern(arg0, obj);
-      },
-      stop() {
-        const obj = closure_1_1(closure_1_2[1]);
-        obj.stop();
-      },
-      isSupported() {
-        const obj = closure_1_1(closure_1_2[1]);
-        return obj.isSupported();
-      },
-      playHaptic(arg0, arg1, arg2) {
-        const playHaptic = closure_0(dependencyMap[2]).playHaptic;
-        const obj = {};
-        closure_0(dependencyMap[2]);
-        const merged = Object.assign(closure_1_0);
-        const merged1 = Object.assign(arg2);
-        return playHaptic(arg0, arg1, obj);
-      },
-      impact(arg0, arg1, arg2) {
-        const impact = _modDef5042.impact;
-        const obj = {};
-        _modDef5042;
-        const merged = Object.assign(enableVibrateFallback);
-        const merged1 = Object.assign(arg2);
-        impact(arg0, arg1, obj);
-      },
-      setEnabled: _modDef5042.setEnabled,
-      isEnabled: _modDef5042.isEnabled,
-      getSystemHapticStatus: _modDef5042.getSystemHapticStatus,
-      playAHAP: _modDef5042.playAHAP
-    };
-    return obj;
-  }, items);
 }
+const frozen = Object.freeze(print);
+
+export { print };
+export const enableLogging = (arg0) => {
+  console.warn("[BottomSheet] could not enable logging on production!");
+};

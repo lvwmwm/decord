@@ -1,36 +1,36 @@
-// Module ID: 5422
-// Function ID: 5423
+// Module ID: 5391
+// Function ID: 5392
 // Name: BaseTextButton
-// Dependencies: [32, 19, 17, 21, 4823, 575, 1655, 5423, 5424, 5425, 5427, 1380, 5428, 5414, 4837, 5039, 5430, 4988, 5432, 2]
+// Dependencies: [32, 19, 17, 21, 4792, 575, 1655, 5392, 5393, 5394, 5396, 1380, 5397, 5383, 4806, 5008, 5399, 4957, 5401, 2]
 
-// Module 5422 (BaseTextButton)
+// Module 5391 (BaseTextButton)
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import HapticUtils from "HapticUtils" /* 5039 */;
-import IconDefault from "Icon" /* 5423 */;
-import spring_spring from "spring/spring" /* 5424 */;
-import springPresets from "springPresets" /* 5425 */;
-import ButtonConstants from "ButtonConstants" /* 5427 */;
-import ButtonHooks from "ButtonHooks" /* 5428 */;
+import HapticUtils from "HapticUtils" /* 5008 */;
+import IconDefault from "Icon" /* 5392 */;
+import spring_spring from "spring/spring" /* 5393 */;
+import springPresets from "springPresets" /* 5394 */;
+import ButtonConstants from "ButtonConstants" /* 5396 */;
+import ButtonHooks from "ButtonHooks" /* 5397 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size_mod from "module_2" /* 2 */;
 
 const module_1655 = _mod1655;
 let nativeEvent, num2, obj1;
 
+let bound;
+let bound1;
+let bound2;
 let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let obj2;
-let rect;
-let rect1;
-let rect2;
 function CollapsingText(collapseText) {
   let items7;
   let tmp10;
@@ -441,15 +441,12 @@ let closure_18 = createStyles.createStyles((arg0, marginLeft) => {
     return { offset: {} };
   }
 });
-let obj3 = { sm: rect, md: rect1, lg: rect2 };
+let obj3 = { sm: { top: bound, left: "Array", right: "analyticsLocations", bottom: bound }, md: { top: bound1, left: "Array", right: "analyticsLocations", bottom: bound1 }, lg: { top: bound2, left: "Array", right: "analyticsLocations", bottom: bound2 } };
 const LARGE_BUTTON_HEIGHT = ButtonConstants.LARGE_BUTTON_HEIGHT;
-const bound = Math.max((ButtonConstants.MINIMUM_HIT_AREA - ButtonConstants.SMALL_BUTTON_HEIGHT) / 2, 0);
-rect = { top: bound, left: "Array", right: "isArray", bottom: bound };
+bound = Math.max((ButtonConstants.MINIMUM_HIT_AREA - ButtonConstants.SMALL_BUTTON_HEIGHT) / 2, 0);
 const LARGE_BUTTON_HEIGHT2 = ButtonConstants.LARGE_BUTTON_HEIGHT;
-const bound1 = Math.max((ButtonConstants.MINIMUM_HIT_AREA - ButtonConstants.MEDIUM_BUTTON_HEIGHT) / 2, 0);
-rect1 = { top: bound1, left: "Array", right: "isArray", bottom: bound1 };
-const bound2 = Math.max((ButtonConstants.MINIMUM_HIT_AREA - ButtonConstants.LARGE_BUTTON_HEIGHT) / 2, 0);
-rect2 = { top: bound2, left: "Array", right: "isArray", bottom: bound2 };
+bound1 = Math.max((ButtonConstants.MINIMUM_HIT_AREA - ButtonConstants.MEDIUM_BUTTON_HEIGHT) / 2, 0);
+bound2 = Math.max((ButtonConstants.MINIMUM_HIT_AREA - ButtonConstants.LARGE_BUTTON_HEIGHT) / 2, 0);
 function getTextPlatformLineHeight(arg0, arg1) {
 
 }

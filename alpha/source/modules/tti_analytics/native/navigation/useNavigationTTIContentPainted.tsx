@@ -1,11 +1,11 @@
-// Module ID: 10385
-// Function ID: 10386
+// Module ID: 10363
+// Function ID: 10364
 // Name: useNavigationTTIContentPainted
-// Dependencies: [19, 10386, 10387, 2]
+// Dependencies: [19, 10364, 10365, 2]
 // Exports: useNavigationTTIContentPainted
 
-// Module 10385 (useNavigationTTIContentPainted)
-import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 10387 */;
+// Module 10363 (useNavigationTTIContentPainted)
+import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 10365 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ export function useNavigationTTIContentPainted() {
   let navTTISurface;
   let ref2;
   let ref3;
-  let obj = navTTISurface(10386);
+  let obj = navTTISurface(10364);
   navTTISurface = obj.useNavTTISurface();
   let obj2 = react;
   const ref = react.useRef(null);

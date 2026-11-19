@@ -1,23 +1,26 @@
-// Module ID: 19272
-// Function ID: 19273
+// Module ID: 19268
+// Function ID: 19269
 // Name: PlayableFrameBanner
-// Dependencies: [19, 16534, 21, 4823, 1630, 504, 9896, 6473, 6469, 8342, 16425, 16424, 2]
+// Dependencies: [19, 16525, 21, 575, 4792, 1630, 504, 9873, 9875, 6444, 6440, 8311, 16416, 16415, 2]
 // Exports: default
 
-// Module 19272 (PlayableFrameBanner)
+// Module 19268 (PlayableFrameBanner)
 import Fragment from "Fragment" /* 21 */;
-import QuestTypes from "QuestTypes" /* 6469 */;
-import AdCreativeType from "AdCreativeType" /* 6473 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 8342 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 9896 */;
+import nativeDefault from "native" /* 575 */;
+import QuestTypes from "QuestTypes" /* 6440 */;
+import AdCreativeType from "AdCreativeType" /* 6444 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8311 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 9875 */;
 import react from "react" /* 19 */;
-import PlayableStore from "PlayableStore" /* 16534 */;
-import createStyles from "createStyles" /* 4823 */;
+import PlayableStore from "PlayableStore" /* 16525 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-let closure_6 = createStyles.createStyles((bottom) => {
-  const obj = { banner: obj2 };
+const PX_32 = nativeDefault.space.PX_32;
+let closure_7 = createStyles.createStyles((arg0) => {
+  const obj = { banner: { bottom: Math.max(arg0, PX_32), paddingBottom: nativeDefault.space.PX_0, paddingHorizontal: nativeDefault.space.PX_24 } };
+  ({ bottom: Math.max(arg0, PX_32), paddingBottom: nativeDefault.space.PX_0, paddingHorizontal: nativeDefault.space.PX_24 });
   return obj;
 });
 let result = size.fileFinishedImporting("modules/quests/native/PlayableFrameBanner.tsx");
@@ -25,28 +28,31 @@ let result = size.fileFinishedImporting("modules/quests/native/PlayableFrameBann
 export default function PlayableFrameBanner(frameId) {
   frameId = frameId.frameId;
   let stateFromStores;
+  let getQuestImpressionId;
   const tmp4 = frameId;
-  const tmp3 = closure_6(stateFromStores(1630)().bottom);
-  let obj = frameId(504);
+  const tmp3 = closure_7(stateFromStores(getQuestImpressionId[5])().bottom);
+  let obj = frameId(getQuestImpressionId[6]);
   const items = [PlayableStore];
   const items1 = [frameId];
   const tmp = stateFromStores;
   stateFromStores = obj.useStateFromStores(items, () => PlayableStore.getPlayableForFrame(frameId), items1);
-  const items2 = [stateFromStores];
+  let obj2 = frameId(getQuestImpressionId[7]);
+  getQuestImpressionId = obj2.useGetQuestImpressionId();
+  const items2 = [stateFromStores, getQuestImpressionId];
   const callback = react.useCallback(() => {
     if (null != stateFromStores) {
       const obj = { adContentId: stateFromStores.id, adCreativeType: AdCreativeType.AdCreativeType.PLAYABLE, cta: stateFromStores.cta };
       const openAdGameLinkDirectly = QuestPlatformUtils.openAdGameLinkDirectly;
       QuestPlatformUtils;
-      const obj2 = { content: QuestTypes.QuestContent.RUNNING_ACTIVITY, ctaContent: AnalyticsTypes.QuestContentCTA.OPEN_GAME_LINK, sourceQuestContent: QuestTypes.QuestContent.QUEST_BAR_MOBILE };
+      const obj2 = { content: QuestTypes.QuestContent.RUNNING_ACTIVITY, ctaContent: AnalyticsTypes.QuestContentCTA.OPEN_GAME_LINK, impressionId: getQuestImpressionId(), sourceQuestContent: QuestTypes.QuestContent.QUEST_BAR_MOBILE };
       const result = openAdGameLinkDirectly(obj, obj2);
     }
   }, items2);
-  let tmp7 = null;
+  let tmp8 = null;
   if (null != stateFromStores) {
-    tmp(16425);
-    tmp7 = <tmpResult style={tmp3.banner} ctaInfo={tmp4(16424).getAdvertiserCtaInfo(stateFromStores)} onContainerPress={callback} onButtonPress={callback} />;
-    const tmp4Result = tmp4(16424);
+    tmp(getQuestImpressionId[12]);
+    tmp8 = <tmpResult style={tmp3.banner} ctaInfo={tmp4(getQuestImpressionId[13]).getAdvertiserCtaInfo(stateFromStores)} onContainerPress={callback} onButtonPress={callback} />;
+    const tmp4Result = tmp4(getQuestImpressionId[13]);
   }
-  return tmp7;
+  return tmp8;
 };

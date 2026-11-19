@@ -1,8 +1,8 @@
-// Module ID: 12513
-// Function ID: 12514
+// Module ID: 12496
+// Function ID: 12497
 // Dependencies: [2]
 
-// Module 12513
+// Module 12496
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_face_07_anxious_textureAtlas.webp.js");

@@ -1,9 +1,9 @@
-// Module ID: 10000
-// Function ID: 10001
+// Module ID: 9978
+// Function ID: 9979
 // Name: AutoModerationSystemMessageViewNativeComponent
 // Dependencies: [65, 2]
 
-// Module 10000 (AutoModerationSystemMessageViewNativeComponent)
+// Module 9978 (AutoModerationSystemMessageViewNativeComponent)
 import module_65 from "module_65" /* 65 */;
 import size from "module_2" /* 2 */;
 

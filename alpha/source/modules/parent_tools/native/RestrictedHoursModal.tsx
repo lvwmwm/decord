@@ -1,29 +1,29 @@
-// Module ID: 19476
-// Function ID: 19477
+// Module ID: 19472
+// Function ID: 19473
 // Name: RestrictedHoursModal
-// Dependencies: [32, 19, 17, 1388, 21, 4823, 575, 6931, 1630, 19477, 504, 1655, 5033, 1113, 2723, 7722, 5510, 19478, 4982, 5414, 7003, 19479, 6333, 19475, 5832, 12003, 2]
+// Dependencies: [32, 19, 17, 1388, 21, 4792, 575, 6901, 1630, 19473, 504, 1655, 5002, 1113, 2723, 7692, 5479, 19474, 4951, 5383, 6973, 19475, 6304, 19471, 5803, 11981, 2]
 // Exports: default
 
-// Module 19476 (RestrictedHoursModal)
+// Module 19472 (RestrictedHoursModal)
 import nativeDefault from "native" /* 575 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5033 */;
-import Text_Text from "Text/Text" /* 5414 */;
-import useBackPressHandlerDefault from "useBackPressHandler" /* 5832 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6333 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6931 */;
-import RestrictedHoursActionCreators from "RestrictedHoursActionCreators" /* 19475 */;
-import useIsInRestrictedHoursDefault from "useIsInRestrictedHours" /* 19479 */;
+import timing_timing from "timing/timing" /* 5002 */;
+import Text_Text from "Text/Text" /* 5383 */;
+import useBackPressHandlerDefault from "useBackPressHandler" /* 5803 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6304 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6901 */;
+import RestrictedHoursActionCreators from "RestrictedHoursActionCreators" /* 19471 */;
+import useIsInRestrictedHoursDefault from "useIsInRestrictedHours" /* 19475 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, currentUser, dependencyMap, importDefault, set, set2, set3;
+let _require, currentUser, dependencyMap, importDefault, set, set2, set3, set4;
 
 let StyleSheet;
 let hasOwnProperty;
@@ -126,7 +126,7 @@ function RestrictedHoursScreen(onLogin) {
     timing_timing;
     Easing3 = _mod1655.Easing;
     set3(withDelay2(2000, withTiming3(1, obj3)));
-    const set4 = sharedValue3.set;
+    set4 = sharedValue3.set;
     const withDelay3 = _mod1655.withDelay;
     _mod1655;
     const obj4 = { duration: 1000, easing: Easing4.bezier(0.1, 0.24, 0.32, 1) };

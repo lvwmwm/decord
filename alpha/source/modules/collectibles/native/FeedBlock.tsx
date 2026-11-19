@@ -1,21 +1,21 @@
-// Module ID: 17374
-// Function ID: 17375
+// Module ID: 17367
+// Function ID: 17368
 // Name: FeedBlock
-// Dependencies: [19, 17, 4824, 1192, 1074, 21, 4823, 575, 504, 4830, 9476, 17356, 17335, 9796, 17357, 7986, 9464, 9151, 16452, 7450, 7431, 1113, 5414, 6941, 5037, 17375, 2121, 5527, 5421, 17369, 5510, 17376, 17377, 17378, 17379, 2]
+// Dependencies: [19, 17, 4793, 1192, 1074, 21, 4792, 575, 504, 4799, 9455, 17349, 17328, 9775, 17350, 7955, 9442, 9127, 16443, 7420, 7401, 1113, 5383, 6911, 5006, 17368, 2121, 5496, 5390, 17362, 5479, 17369, 17370, 17371, 17372, 2]
 // Exports: default
 
-// Module 17374 (FeedBlock)
+// Module 17367 (FeedBlock)
 import react_native from "react-native" /* 17 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
-import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9464 */;
-import uniqByDefault from "uniqBy" /* 17357 */;
+import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9442 */;
+import uniqByDefault from "uniqBy" /* 17350 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4824 */;
+import AccessibilityStore from "AccessibilityStore" /* 4793 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

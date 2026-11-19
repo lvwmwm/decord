@@ -1,16 +1,16 @@
-// Module ID: 15581
-// Function ID: 15582
+// Module ID: 15567
+// Function ID: 15568
 // Name: AccessibilityCallManager
-// Dependencies: [502, 4672, 4765, 1388, 1380, 4648, 5439, 4830, 1113, 2123, 572, 2]
+// Dependencies: [502, 4641, 4734, 1388, 1380, 4617, 5408, 4799, 1113, 2123, 572, 2]
 
-// Module 15581 (AccessibilityCallManager)
+// Module 15567 (AccessibilityCallManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl2 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import useChannelName from "useChannelName" /* 5439 */;
+import useChannelName from "useChannelName" /* 5408 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4672 */;
-import RelationshipStore from "RelationshipStore" /* 4765 */;
+import ChannelStore from "ChannelStore" /* 4641 */;
+import RelationshipStore from "RelationshipStore" /* 4734 */;
 import UserStore from "UserStore" /* 1388 */;
 import LifecycleManager from "LifecycleManager" /* 2123 */;
 import size from "module_2" /* 2 */;

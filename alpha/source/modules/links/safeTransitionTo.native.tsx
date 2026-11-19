@@ -1,17 +1,17 @@
-// Module ID: 6776
-// Function ID: 6777
+// Module ID: 6748
+// Function ID: 6749
 // Name: safeTransitionTo
-// Dependencies: [5, 4694, 1072, 5446, 6777, 1099, 6778, 5769, 1113, 11208, 2857, 13593, 14697, 2]
+// Dependencies: [5, 4663, 1072, 5415, 6749, 1099, 6750, 5740, 1113, 11186, 2857, 13575, 14683, 2]
 // Exports: default
 
-// Module 6776 (safeTransitionTo)
+// Module 6748 (safeTransitionTo)
 import Constants from "Constants" /* 1072 */;
 import router_utils from "router_utils" /* 1099 */;
-import LinkUtils from "LinkUtils" /* 5446 */;
-import DiceRollActionCreators from "DiceRollActionCreators" /* 6777 */;
-import isAccessibleChannelOrThreadPathDefault from "isAccessibleChannelOrThreadPath" /* 6778 */;
+import LinkUtils from "LinkUtils" /* 5415 */;
+import DiceRollActionCreators from "DiceRollActionCreators" /* 6749 */;
+import isAccessibleChannelOrThreadPathDefault from "isAccessibleChannelOrThreadPath" /* 6750 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildStore from "GuildStore" /* 4694 */;
+import GuildStore from "GuildStore" /* 4663 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6;
@@ -40,7 +40,7 @@ let obj = function _safeTransitionTo() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -139,7 +139,7 @@ let obj = function _safeTransitionTo() {
             obj2.transitionTo(closure_0, closure_1);
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
         if (null != c2) {
           if (null != c2.guildId) {
@@ -166,7 +166,7 @@ let obj = function _safeTransitionTo() {
         const maybePerformRoleSubscriptionUpsellRedirect = closure_132_1(closure_132_2[11]).maybePerformRoleSubscriptionUpsellRedirect;
         const tmp68 = closure_132_1(closure_132_2[11]);
         if (c2 == null) {
-          closure_2 = { guildId: "find" };
+          closure_2 = { guildId: "r" };
         }
         c5 = 2;
         c6 = 1;

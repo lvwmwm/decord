@@ -1,19 +1,19 @@
-// Module ID: 12268
-// Function ID: 12269
+// Module ID: 12251
+// Function ID: 12252
 // Name: StringSelectComponentActionSheet
-// Dependencies: [32, 19, 21, 4823, 575, 12269, 2119, 5037, 12270, 7407, 5414, 1113, 2]
+// Dependencies: [32, 19, 21, 4792, 575, 12252, 2119, 5006, 12253, 7377, 5383, 1113, 2]
 // Exports: default
 
-// Module 12268 (StringSelectComponentActionSheet)
+// Module 12251 (StringSelectComponentActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Server from "Server" /* 2119 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
-import Text_Text from "Text/Text" /* 5414 */;
-import EmojiDefault from "Emoji" /* 7407 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
+import Text_Text from "Text/Text" /* 5383 */;
+import EmojiDefault from "Emoji" /* 7377 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, set;
@@ -41,7 +41,7 @@ export default function StringSelectComponentActionSheet(selectionActionComponen
   ({ labelComponent, channelId, containerId, allowEmpty } = selectionActionComponent);
   let tmp = callback();
   dependencyMap = tmp;
-  let obj = selectionActionComponent(12269);
+  let obj = selectionActionComponent(12252);
   const useState = react.useState;
   set = new Set(obj.getInitialStringSelectOptions(selectionActionComponent, containerId));
   let tmp3 = first(useState(set), 2);
@@ -150,7 +150,7 @@ export default function StringSelectComponentActionSheet(selectionActionComponen
     channelId,
     allowEmpty
   };
-  const tmp10 = onSubmit(12270);
+  const tmp10 = onSubmit(12253);
   const tmp9 = memo;
   if (selectionOptionItemWithDescription) {
     selectionOptionItemWithDescription = tmp.selectionOptionItemWithDescription;

@@ -1,18 +1,18 @@
-// Module ID: 13358
-// Function ID: 13359
+// Module ID: 13340
+// Function ID: 13341
 // Name: GuildPowerupsDeactivateAlert
-// Dependencies: [17, 21, 4823, 575, 13359, 13360, 13361, 5774, 7136, 1113, 2755, 5774, 5414, 2]
+// Dependencies: [17, 21, 4792, 575, 13341, 13342, 13343, 5745, 7106, 1113, 2755, 5745, 5383, 2]
 // Exports: default
 
-// Module 13358 (GuildPowerupsDeactivateAlert)
+// Module 13340 (GuildPowerupsDeactivateAlert)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef2755 from "module_2755" /* 2755 */;
-import Text_Text from "Text/Text" /* 5414 */;
-import useGuildPowerupOnDeactivateDefault from "useGuildPowerupOnDeactivate" /* 13359 */;
-import useDeactivateWarningTextDefault from "useDeactivateWarningText" /* 13360 */;
+import Text_Text from "Text/Text" /* 5383 */;
+import useGuildPowerupOnDeactivateDefault from "useGuildPowerupOnDeactivate" /* 13341 */;
+import useDeactivateWarningTextDefault from "useDeactivateWarningText" /* 13342 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -79,7 +79,7 @@ export default function GuildPowerupsDeactivateAlert(arg0) {
   tmp9 = closure_5;
   if (tmp7Result) {
     const obj7 = { style: tmp.warningText, variant: "body-xs/semibold", color: "text-feedback-critical", children: error };
-    tmp7Result = tmp7(tmp5(5414).Text, obj7);
+    tmp7Result = tmp7(tmp5(5383).Text, obj7);
   }
   obj8 = { children: items };
   items = [tmp7Result, , ];
@@ -91,7 +91,7 @@ export default function GuildPowerupsDeactivateAlert(arg0) {
     },
     text: intl3.string(_modDef2755.PYPdl4)
   };
-  const AlertActionButton = tmp5(5774).AlertActionButton;
+  const AlertActionButton = tmp5(5745).AlertActionButton;
   intl3 = tmp5(1113).intl;
   items[1] = closure_4(AlertActionButton, obj9, "deactivate");
   const obj10 = {
@@ -101,7 +101,7 @@ export default function GuildPowerupsDeactivateAlert(arg0) {
     variant: "secondary",
     text: intl4.string(require("intl").t["ETE/oC"])
   };
-  const AlertActionButton2 = tmp5(5774).AlertActionButton;
+  const AlertActionButton2 = tmp5(5745).AlertActionButton;
   intl4 = tmp5(1113).intl;
   items[2] = closure_4(AlertActionButton2, obj10, "cancel");
   obj11 = {

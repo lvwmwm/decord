@@ -1,30 +1,30 @@
-// Module ID: 18923
-// Function ID: 18924
+// Module ID: 18915
+// Function ID: 18916
 // Name: NewGroupDMScreen
-// Dependencies: [32, 5, 19, 17, 4672, 14961, 5564, 1388, 9547, 1072, 21, 4823, 575, 7648, 6402, 7650, 12156, 5037, 504, 12022, 12024, 12021, 1256, 5505, 1113, 18922, 8473, 12025, 5504, 8483, 14573, 7173, 7977, 1187, 9548, 18859, 2]
+// Dependencies: [32, 5, 19, 17, 4641, 14947, 5533, 1388, 9526, 1072, 21, 4792, 575, 7618, 6373, 7620, 12135, 5006, 504, 11999, 12001, 11998, 1256, 5474, 1113, 18914, 8442, 12002, 5473, 8452, 14560, 7143, 7947, 1187, 9527, 18851, 2]
 // Exports: default
 
-// Module 18923 (NewGroupDMScreen)
+// Module 18915 (NewGroupDMScreen)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import ToastUtils from "ToastUtils" /* 5504 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7648 */;
-import HeaderShared from "HeaderShared" /* 8473 */;
-import UserRowConstants from "UserRowConstants" /* 9547 */;
-import openGroupDMNitroCapLimitSheetDefault from "openGroupDMNitroCapLimitSheet" /* 12025 */;
-import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 18922 */;
+import ToastUtils from "ToastUtils" /* 5473 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7618 */;
+import HeaderShared from "HeaderShared" /* 8442 */;
+import UserRowConstants from "UserRowConstants" /* 9526 */;
+import openGroupDMNitroCapLimitSheetDefault from "openGroupDMNitroCapLimitSheet" /* 12002 */;
+import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 18914 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 4672 */;
-import PrivateChannelRecipientsInviteStore from "PrivateChannelRecipientsInviteStore" /* 14961 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5564 */;
+import ChannelStore from "ChannelStore" /* 4641 */;
+import PrivateChannelRecipientsInviteStore from "PrivateChannelRecipientsInviteStore" /* 14947 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5533 */;
 import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -62,7 +62,7 @@ let obj = function _handleOneRecipientInDM() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -140,7 +140,7 @@ obj = function _handleInviteUsers() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -212,7 +212,7 @@ obj = function _handleInviteUsers() {
                             const obj2 = { value, done: true };
                             return obj2;
                           } else {
-                            return { value: "HermesInternal", done: null };
+                            return { value: "HermesInternal", done: "+60" };
                           }
                         } else {
                           try {
@@ -271,7 +271,7 @@ obj = function _handleInviteUsers() {
                                 obj.call(closure_3, false, true);
                                 length(c2[16])(closure_3);
                                 c2 = 3;
-                                return { value: "HermesInternal", done: null };
+                                return { value: "HermesInternal", done: "+60" };
                               }
                               closure_3 = value;
                               length = 3;
@@ -497,7 +497,7 @@ export default function NewGroupDMScreen(navigation) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c3;
@@ -582,7 +582,7 @@ export default function NewGroupDMScreen(navigation) {
           c3 = 0;
           closure_129_11(false);
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp48) {
         locationPage = tmp48;
@@ -635,7 +635,7 @@ export default function NewGroupDMScreen(navigation) {
       title: "" + stringResult + " (" + formatToPlainStringResult + ")",
       headerTitle: tmp6 ? (() => {
         obj = { title: stringResult, memberCount, recipientLimit };
-        return memberCount(GroupDMRecipientLimitTitleDefault, obj);
+        return authStore4(GroupDMRecipientLimitTitleDefault, obj);
       }) : ((arg0) => {
         let str;
         if (arg0 == null) {
@@ -646,7 +646,7 @@ export default function NewGroupDMScreen(navigation) {
           const GenericHeaderTitle = HeaderShared.GenericHeaderTitle;
           const merged1 = Object.assign(merged);
           str = "mobile-text-heading-primary";
-          const tmp3 = closure_17;
+          const tmp3 = authStore4;
           if (closure_2) {
             str = "text-feedback-critical";
           }
@@ -659,7 +659,7 @@ export default function NewGroupDMScreen(navigation) {
         const tmp = first1;
         if (tmp) {
           const obj2 = { color: button.button.color, size: "small" };
-          result = memberCount(metroRequire, obj2);
+          result = authStore4(metroRequire, obj2);
         } else {
           obj = stateFromStores;
           let isGroupDMResult;
@@ -817,7 +817,7 @@ export default function NewGroupDMScreen(navigation) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -864,7 +864,7 @@ export default function NewGroupDMScreen(navigation) {
             closure_1_25(false);
           }
           channel = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         } catch (tmp14) {
           channel = 3;
           throw tmp14;

@@ -1,13 +1,13 @@
-// Module ID: 9932
-// Function ID: 9933
+// Module ID: 9911
+// Function ID: 9912
 // Name: GuildAffinitiesStore
-// Dependencies: [4694, 9933, 504, 572, 2]
+// Dependencies: [4663, 9912, 504, 572, 2]
 
-// Module 9932 (GuildAffinitiesStore)
+// Module 9911 (GuildAffinitiesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import GuildAffinitiesActionCreators from "GuildAffinitiesActionCreators" /* 9933 */;
-import GuildStore from "GuildStore" /* 4694 */;
+import GuildAffinitiesActionCreators from "GuildAffinitiesActionCreators" /* 9912 */;
+import GuildStore from "GuildStore" /* 4663 */;
 import size from "module_2" /* 2 */;
 
 let closure_3;

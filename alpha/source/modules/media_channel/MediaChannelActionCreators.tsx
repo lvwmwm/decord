@@ -1,10 +1,10 @@
-// Module ID: 12338
-// Function ID: 12339
+// Module ID: 12321
+// Function ID: 12322
 // Name: MediaChannelActionCreators
-// Dependencies: [5, 1072, 572, 1285, 6257, 2]
+// Dependencies: [5, 1072, 572, 1285, 6228, 2]
 // Exports: dismissMediaPostSharePrompt, fetchMediaPostEmbed, unfurlEmbedUrl
 
-// Module 12338 (MediaChannelActionCreators)
+// Module 12321 (MediaChannelActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
@@ -28,7 +28,7 @@ let obj = function _fetchMediaPostEmbed() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -78,7 +78,7 @@ let obj = function _fetchMediaPostEmbed() {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp19) {
           closure_3 = tmp19;
@@ -110,7 +110,7 @@ obj = function _unfurlEmbedUrl() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {

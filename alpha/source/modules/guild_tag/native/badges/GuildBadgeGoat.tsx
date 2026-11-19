@@ -1,12 +1,12 @@
-// Module ID: 15085
-// Function ID: 15086
+// Module ID: 15071
+// Function ID: 15072
 // Name: GuildBadgeGoat
-// Dependencies: [19, 21, 15060, 7776, 2]
+// Dependencies: [19, 21, 15046, 7746, 2]
 // Exports: GuildBadgeGoat
 
-// Module 15085 (GuildBadgeGoat)
-import inlineStyles from "inlineStyles" /* 7776 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 15060 */;
+// Module 15071 (GuildBadgeGoat)
+import inlineStyles from "inlineStyles" /* 7746 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 15046 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

@@ -1,22 +1,22 @@
-// Module ID: 12197
-// Function ID: 12198
+// Module ID: 12177
+// Function ID: 12178
 // Name: GameOrganizationCharacterList
-// Dependencies: [19, 17, 21, 4823, 575, 1113, 2555, 5414, 5837, 7136, 5387, 4885, 6958, 12047, 7259, 2]
+// Dependencies: [19, 17, 21, 4792, 575, 1113, 2557, 5383, 5808, 7106, 5356, 4854, 6928, 12024, 7229, 2]
 // Exports: default
 
-// Module 12197 (GameOrganizationCharacterList)
+// Module 12177 (GameOrganizationCharacterList)
 import nativeDefault from "native" /* 575 */;
-import _modDef2555 from "module_2555" /* 2555 */;
-import react_native from "react-native" /* 4885 */;
-import useToken from "useToken" /* 5387 */;
-import Text_Text from "Text/Text" /* 5414 */;
-import Stack_Stack from "Stack/Stack" /* 5837 */;
-import CircleErrorIcon2 from "CircleErrorIcon" /* 7136 */;
-import GameOrganizationIconDefault from "GameOrganizationIcon" /* 12047 */;
+import _modDef2557 from "module_2557" /* 2557 */;
+import react_native from "react-native" /* 4854 */;
+import useToken from "useToken" /* 5356 */;
+import Text_Text from "Text/Text" /* 5383 */;
+import Stack_Stack from "Stack/Stack" /* 5808 */;
+import CircleErrorIcon2 from "CircleErrorIcon" /* 7106 */;
+import GameOrganizationIconDefault from "GameOrganizationIcon" /* 12024 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -69,6 +69,7 @@ let closure_9 = react.memo(function CharacterCard(character) {
   let accessibilityRole;
   let accessibilityState;
   let closure_129_1;
+  let displayNoun;
   let formatToPlainStringResult;
   let items;
   let items1;
@@ -78,8 +79,7 @@ let closure_9 = react.memo(function CharacterCard(character) {
   let selected;
   let str3;
   character = character.character;
-  ({ selected, onSelect: closure_129_1 } = character);
-  const noun = character.noun;
+  ({ selected, onSelect: closure_129_1, displayNoun } = character);
   const tmp = closure_7();
   const eligible = character.eligible;
   const obj = useToken;
@@ -94,8 +94,13 @@ let closure_9 = react.memo(function CharacterCard(character) {
     formatToPlainStringResult = description;
     if (description == null) {
       const intl = tmp2(1113).intl;
-      const obj3 = { noun };
-      formatToPlainStringResult = intl.formatToPlainString(tmp4(2555).VNY3C1, obj3);
+      const formatToPlainString = intl.formatToPlainString;
+      const VNY3C1 = tmp4(2557).VNY3C1;
+      if (displayNoun == null) {
+        displayNoun = "other";
+      }
+      const obj3 = { displayNoun };
+      formatToPlainStringResult = formatToPlainString(VNY3C1, obj3);
     }
   }
   const obj4 = {
@@ -110,7 +115,7 @@ let closure_9 = react.memo(function CharacterCard(character) {
     accessibilityLabel: name,
     children: metroRequire(Stack, obj5)
   };
-  const Card = tmp2(6958).Card;
+  const Card = tmp2(6928).Card;
   if (null != formatToPlainStringResult) {
     const _HermesInternal = HermesInternal;
     name = "" + character.name + ", " + formatToPlainStringResult;
@@ -118,7 +123,7 @@ let closure_9 = react.memo(function CharacterCard(character) {
     name = character.name;
   }
   obj5 = { direction: "horizontal", spacing: nativeDefault.space.PX_16, align: "center", style: items, children: items1 };
-  Stack = tmp2(5837).Stack;
+  Stack = tmp2(5808).Stack;
   items = [tmp.cardContent, selected && tmp.selectedCardContent];
   let tmp10Result = selected;
   if (tmp10Result) {
@@ -130,10 +135,10 @@ let closure_9 = react.memo(function CharacterCard(character) {
   const tmp4Result = GameOrganizationIconDefault;
   items1[1] = hasOwnProperty(tmp4Result, obj7);
   const obj8 = { spacing: nativeDefault.space.PX_4, style: tmp.labels, children: items2 };
-  const Stack2 = tmp2(5837).Stack;
+  const Stack2 = tmp2(5808).Stack;
   const obj9 = { variant: token, color: str3, children: character.name };
   str3 = "text-default";
-  const Text = tmp2(5414).Text;
+  const Text = tmp2(5383).Text;
   if (!eligible) {
     str3 = "text-muted";
   }
@@ -157,17 +162,18 @@ let closure_9 = react.memo(function CharacterCard(character) {
 const result = size.fileFinishedImporting("modules/game_organization_invites/native/GameOrganizationJoinModal/GameOrganizationCharacterList.tsx");
 
 export default function GameOrganizationCharacterList(characters) {
-  let intl;
-  let intl2;
+  let displayNoun;
+  let formatToPlainString;
   let items1;
-  let noun;
   let obj5;
   let onSelect;
+  let prop;
+  let str;
   characters = characters.characters;
-  ({ selectedCharacterId: importDefault, onSelect: dependencyMap, noun } = characters);
+  ({ selectedCharacterId: importDefault, onSelect: dependencyMap, displayNoun } = characters);
   const tmp = closure_7();
   let items = [characters];
-  const memo = noun.useMemo(() => {
+  const memo = displayNoun.useMemo(() => {
     const items = [...characters];
     return items.sort((eligible, eligible2) => {
       const NumberResult = Number(eligible2.eligible);
@@ -176,27 +182,37 @@ export default function GameOrganizationCharacterList(characters) {
   }, items);
   let someResult = characters.some((eligible) => !eligible.eligible);
   let obj = { spacing: nativeDefault.space.PX_12, children: items1 };
-  const Stack = characters(5837).Stack;
-  const obj2 = { style: tmp.title, title: intl.formatToPlainString(_modDef2555["Xm+emB"], { noun }) };
-  const TableRowGroupTitle = characters(7259).TableRowGroupTitle;
-  intl = characters(1113).intl;
+  const Stack = characters(5808).Stack;
+  const obj2 = { style: tmp.title, title: formatToPlainString(prop, { displayNoun: str }) };
+  const TableRowGroupTitle = characters(7229).TableRowGroupTitle;
+  const intl = characters(1113).intl;
+  formatToPlainString = intl.formatToPlainString;
+  str = displayNoun;
+  prop = _modDef2557["Xm+emB"];
+  const tmp3 = closure_6;
+  if (displayNoun == null) {
+    str = "other";
+  }
   items1 = [closure_5(TableRowGroupTitle, obj2), , ];
   const obj3 = {
     accessibilityRole: "radiogroup",
     style: tmp.cards,
     children: memo.map((character) => {
-      const obj = { character, selected: character.id === importDefault, onSelect: dependencyMap, noun };
+      const obj = { character, selected: character.id === importDefault, onSelect: dependencyMap, displayNoun };
       return hasOwnProperty(closure_9, obj, character.id);
     })
   };
   items1[1] = closure_5(closure_4, obj3);
-  const tmp3 = closure_6;
-  const tmp7 = closure_5;
   if (someResult) {
-    const obj4 = { variant: "body-md/medium", color: "text-subtle", children: intl2.formatToPlainString(_modDef2555.ybJIQJ, obj5) };
-    const Text = tmp4(5414).Text;
-    intl2 = tmp4(1113).intl;
-    obj5 = { noun };
+    const Text = tmp4(5383).Text;
+    const intl2 = tmp4(1113).intl;
+    const formatToPlainString2 = intl2.formatToPlainString;
+    const ybJIQJ = _modDef2557.ybJIQJ;
+    if (displayNoun == null) {
+      displayNoun = "other";
+    }
+    const obj4 = { variant: "body-md/medium", color: "text-subtle", children: formatToPlainString2(ybJIQJ, obj5) };
+    obj5 = { displayNoun };
     someResult = tmp7(Text, obj4);
   }
   items1[2] = someResult;

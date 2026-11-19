@@ -1,24 +1,29 @@
 // Module ID: 16293
 // Function ID: 16294
 // Name: tokenize
-// Dependencies: [16244]
+// Dependencies: [16235]
 
 // Module 16293 (tokenize)
-import tokenize from "tokenize" /* 16244 */;
+import tokenize from "tokenize" /* 16235 */;
 
-const CDC = tokenize.TYPE.CDC;
+let obj2;
+const Hash = tokenize.TYPE.Hash;
 let obj = {
-  name: "CDC",
-  structure: [],
+  name: "Hash",
+  structure: obj2,
   parse() {
+    let scanner;
     const tokenStart = this.scanner.tokenStart;
-    this.eat(CDC);
-    const obj = { type: "CDC", loc: this.getLocation(tokenStart, this.scanner.tokenStart) };
+    this.eat(Hash);
+    const obj = { type: "Hash", loc: this.getLocation(tokenStart, this.scanner.tokenStart), value: scanner.substrToCursor(tokenStart + 1) };
+    scanner = this.scanner;
     return obj;
   },
-  generate() {
-    this.chunk("-->");
+  generate(value) {
+    this.chunk("#");
+    this.chunk(value.value);
   }
 };
+obj2 = { value: String };
 
 export default obj;

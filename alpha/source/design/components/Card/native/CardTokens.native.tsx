@@ -1,10 +1,10 @@
-// Module ID: 6959
-// Function ID: 6960
+// Module ID: 6929
+// Function ID: 6930
 // Name: CardTokens
-// Dependencies: [4823, 575, 2]
+// Dependencies: [4792, 575, 2]
 // Exports: createCardShadowToken
 
-// Module 6959 (CardTokens)
+// Module 6929 (CardTokens)
 import nativeDefault from "native" /* 575 */;
 import size from "module_2" /* 2 */;
 

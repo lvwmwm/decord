@@ -1,18 +1,18 @@
-// Module ID: 9646
-// Function ID: 9647
+// Module ID: 9625
+// Function ID: 9626
 // Name: GuildProfileSheetBody
-// Dependencies: [19, 17, 7670, 9647, 21, 4823, 575, 7671, 504, 7431, 7450, 7672, 9648, 13737, 5421, 1113, 13738, 9649, 2]
+// Dependencies: [19, 17, 7640, 9626, 21, 4792, 575, 7641, 504, 7401, 7420, 7642, 9627, 13719, 5390, 1113, 13720, 9628, 2]
 // Exports: default
 
-// Module 9646 (GuildProfileSheetBody)
+// Module 9625 (GuildProfileSheetBody)
 import nativeDefault from "native" /* 575 */;
-import GuildProfileStore2 from "GuildProfileStore" /* 7670 */;
-import GuildProfileActionCreators from "GuildProfileActionCreators" /* 7672 */;
-import GuildProfileConstants from "GuildProfileConstants" /* 9647 */;
+import GuildProfileStore2 from "GuildProfileStore" /* 7640 */;
+import GuildProfileActionCreators from "GuildProfileActionCreators" /* 7642 */;
+import GuildProfileConstants from "GuildProfileConstants" /* 9626 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const GuildProfileStore = GuildProfileStore2;

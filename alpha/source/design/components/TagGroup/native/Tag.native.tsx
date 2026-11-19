@@ -1,18 +1,18 @@
-// Module ID: 15194
-// Function ID: 15195
+// Module ID: 15180
+// Function ID: 15181
 // Name: Tag
-// Dependencies: [19, 17, 21, 4823, 15192, 575, 15195, 5414, 2]
+// Dependencies: [19, 17, 21, 4792, 15178, 575, 15181, 5383, 2]
 // Exports: Tag
 
-// Module 15194 (Tag)
+// Module 15180 (Tag)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5414 */;
-import TagGroupTypes from "TagGroupTypes" /* 15192 */;
-import TagGraphic from "TagGraphic" /* 15195 */;
+import Text_Text from "Text/Text" /* 5383 */;
+import TagGroupTypes from "TagGroupTypes" /* 15178 */;
+import TagGraphic from "TagGraphic" /* 15181 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

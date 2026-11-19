@@ -1,17 +1,17 @@
-// Module ID: 7891
-// Function ID: 7892
+// Module ID: 7861
+// Function ID: 7862
 // Name: AppStoreAgeVerificationScreen
-// Dependencies: [32, 5, 19, 17, 21, 6272, 6277, 7892, 7896, 7753, 7893, 1502, 6319, 7900, 7722, 7724, 5837, 5414, 1113, 3343, 6453, 5421, 6322, 2]
+// Dependencies: [32, 5, 19, 17, 21, 6244, 6249, 7862, 7866, 7723, 7863, 1502, 6290, 7870, 7692, 7694, 5808, 5383, 1113, 3343, 6424, 5390, 6293, 2]
 // Exports: default
 
-// Module 7891 (AppStoreAgeVerificationScreen)
+// Module 7861 (AppStoreAgeVerificationScreen)
 import react_native from "react-native" /* 17 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 6272 */;
-import MetricEvents from "MetricEvents" /* 6277 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6322 */;
-import AppStoreAgeSignalSupport from "AppStoreAgeSignalSupport" /* 7753 */;
-import AppStoreAgeSignalAttestation from "AppStoreAgeSignalAttestation" /* 7892 */;
-import AppStoreAgeAssuranceDefault from "AppStoreAgeAssurance" /* 7896 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 6244 */;
+import MetricEvents from "MetricEvents" /* 6249 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6293 */;
+import AppStoreAgeSignalSupport from "AppStoreAgeSignalSupport" /* 7723 */;
+import AppStoreAgeSignalAttestation from "AppStoreAgeSignalAttestation" /* 7862 */;
+import AppStoreAgeAssuranceDefault from "AppStoreAgeAssurance" /* 7866 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
@@ -48,7 +48,7 @@ let obj = function _submitUserInitiatedAgeSignal() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -191,7 +191,7 @@ export default function AppStoreAgeVerificationScreen(modalSessionId) {
   navigation = obj.useNavigation();
   const tmp4 = callback(react.useState({ type: "loading" }), 2);
   [tmp5, c2] = tmp4;
-  let obj2 = modalSessionId(6319);
+  let obj2 = modalSessionId(6290);
   const watchAgeVerificationStatusChange = obj2.useWatchAgeVerificationStatusChange(onClose);
   const items = [navigation];
   callback = react.useCallback(() => {
@@ -211,7 +211,7 @@ export default function AppStoreAgeVerificationScreen(modalSessionId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c4;
@@ -273,7 +273,7 @@ export default function AppStoreAgeVerificationScreen(modalSessionId) {
             } else if ("accepted" === unknown_str.result) {
               c4 = 0;
               c6 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             } else {
               const reason = unknown_str.reason;
               unknown_str = reason;
@@ -287,7 +287,7 @@ export default function AppStoreAgeVerificationScreen(modalSessionId) {
             }
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp33) {
         status = tmp33;
@@ -327,25 +327,25 @@ export default function AppStoreAgeVerificationScreen(modalSessionId) {
       clearTimeout(closure_1);
     };
   }, items2);
-  const ModalScreen = modalSessionId(7722).ModalScreen;
-  const ModalContent = modalSessionId(7724).ModalContent;
-  const Stack = modalSessionId(5837).Stack;
+  const ModalScreen = modalSessionId(7692).ModalScreen;
+  const ModalContent = modalSessionId(7694).ModalContent;
+  const Stack = modalSessionId(5808).Stack;
   if ("loading" === tmp5.type) {
     let obj3 = { children: items3 };
     items3 = [tmp10(ActivityIndicator, { size: "large" }), ];
     let obj4 = { variant: "body-md/medium", color: "text-strong", children: intl.string(navigation(3343).MN6I4Y) };
-    const Text = tmp(5414).Text;
+    const Text = tmp(5383).Text;
     intl = tmp(1113).intl;
     items3[1] = closure_7(Text, obj4);
     tmp15 = closure_9(closure_8, obj3);
   } else {
     let obj5 = { children: items4 };
     let obj6 = { variant: "body-md/medium", color: "text-strong", accessibilityRole: "alert", children: intl2.string(navigation(3343).tBwanH) };
-    const Text2 = tmp(5414).Text;
+    const Text2 = tmp(5383).Text;
     intl2 = tmp(1113).intl;
     items4 = [tmp10(Text2, obj6), ];
     const obj7 = { children: closure_7(Button, obj8) };
-    const ButtonGroup = tmp(6453).ButtonGroup;
+    const ButtonGroup = tmp(6424).ButtonGroup;
     obj8 = {
       variant: "primary",
       size: "lg",
@@ -357,7 +357,7 @@ export default function AppStoreAgeVerificationScreen(modalSessionId) {
           callback();
         }
     };
-    Button = tmp(5421).Button;
+    Button = tmp(5390).Button;
     intl3 = tmp(1113).intl;
     items4[1] = closure_7(ButtonGroup, obj7);
     tmp15 = closure_9(closure_8, obj5);

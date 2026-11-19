@@ -1,18 +1,18 @@
-// Module ID: 13406
-// Function ID: 13407
+// Module ID: 13388
+// Function ID: 13389
 // Name: GuildBoostingSubscribeButton
-// Dependencies: [5, 19, 17, 8656, 6456, 1072, 1390, 21, 13356, 6337, 6454, 13407, 1502, 7431, 563, 1401, 13355, 5421, 1113, 7606, 2]
+// Dependencies: [5, 19, 17, 8625, 6427, 1072, 1390, 21, 13338, 6308, 6425, 13389, 1502, 7401, 563, 1401, 13337, 5390, 1113, 7576, 2]
 // Exports: default
 
-// Module 13406 (GuildBoostingSubscribeButton)
+// Module 13388 (GuildBoostingSubscribeButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
-import PremiumGuildSubscribeConstants from "PremiumGuildSubscribeConstants" /* 6456 */;
-import GuildBoostPurchasingUtils from "GuildBoostPurchasingUtils" /* 13356 */;
+import PremiumGuildSubscribeConstants from "PremiumGuildSubscribeConstants" /* 6427 */;
+import GuildBoostPurchasingUtils from "GuildBoostPurchasingUtils" /* 13338 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildBoostSlotStore from "GuildBoostSlotStore" /* 8656 */;
+import GuildBoostSlotStore from "GuildBoostSlotStore" /* 8625 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ let location = function _handleBoostPress() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -78,7 +78,7 @@ let location = function _handleBoostPress() {
             const obj = closure_131_0(closure_131_2[10]);
             obj.closeApplyBoostModal();
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp9) {
           c5 = 3;

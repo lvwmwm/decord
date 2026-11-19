@@ -1,10 +1,10 @@
-// Module ID: 17387
-// Function ID: 17388
+// Module ID: 17380
+// Function ID: 17381
 // Name: ShopTwelveDaysPromoExperiment
 // Dependencies: [1452, 2]
 // Exports: useShopTwelveDaysPromoConfig
 
-// Module 17387 (ShopTwelveDaysPromoExperiment)
+// Module 17380 (ShopTwelveDaysPromoExperiment)
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 

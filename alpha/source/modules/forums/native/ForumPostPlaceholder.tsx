@@ -1,18 +1,18 @@
-// Module ID: 12823
-// Function ID: 12824
+// Module ID: 12805
+// Function ID: 12806
 // Name: ForumPostPlaceholder
-// Dependencies: [32, 19, 4824, 21, 4823, 575, 504, 1655, 5033, 6958, 2]
+// Dependencies: [32, 19, 4793, 21, 4792, 575, 504, 1655, 5002, 6928, 2]
 
-// Module 12823 (ForumPostPlaceholder)
+// Module 12805 (ForumPostPlaceholder)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5033 */;
+import timing_timing from "timing/timing" /* 5002 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4824 */;
-import createStyles from "createStyles" /* 4823 */;
+import AccessibilityStore from "AccessibilityStore" /* 4793 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const _modDef1655 = _mod1655;

@@ -1,8 +1,8 @@
-// Module ID: 12492
-// Function ID: 12493
+// Module ID: 12475
+// Function ID: 12476
 // Dependencies: [2]
 
-// Module 12492
+// Module 12475
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_base_07_glacier.webp.js");

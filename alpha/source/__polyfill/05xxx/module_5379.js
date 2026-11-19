@@ -1,26 +1,24 @@
 // Module ID: 5379
 // Function ID: 5380
-// Dependencies: [109, 41, 42, 93, 95, 98, 19, 17, 21, 5380]
+// Dependencies: [109, 41, 42, 93, 95, 98, 19, 17, 21, 5380, 5381]
 
 // Module 5379
-import _modDef5380 from "module_5380" /* 5380 */;
+import Fragment from "Fragment" /* 21 */;
+import _mod5380 from "module_5380" /* 5380 */;
+import react_native from "react-native" /* 5381 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import metroRequire from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
-import react_mod from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
-import Fragment from "Fragment" /* 21 */;
+import react from "react" /* 19 */;
+import react_native2 from "react-native" /* 17 */;
 
-let Component;
-let c10;
+const _modDef5380 = _mod5380;
+
 let c9;
-let closure_12;
-let map1;
 let metroImportAll;
-let unpackModuleId;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -36,188 +34,183 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-let closure_3 = ["children", "colors", "end", "locations", "useAngle", "angleCenter", "angle", "start", "style"];
-let react = react_mod;
-({ createRef: metroImportAll, Component } = react);
-react = react_mod;
-({ processColor: c9, StyleSheet: c10, View: unpackModuleId } = react_native);
-({ jsx: closure_12, jsxs: map1 } = Fragment);
-function convertPoint(arg0, arg1) {
-
-}
-class LinearGradient {
-  constructor() {
+let closure_3 = ["style", "source", "autoPlay", "duration", "textFiltersAndroid", "textFiltersIOS", "resizeMode", "containerStyle"];
+({ View: metroImportAll, processColor: c9 } = react_native2);
+const jsx = Fragment.jsx;
+let obj = { source: "disabled", progress: null, speed: true, loop: false, autoPlay: false, enableMergePathsAndroidForKitKatAndAbove: false, enableSafeModeAndroid: true, cacheComposition: false, useNativeLooping: "contain", resizeMode: null, colorFilters: [], textFiltersAndroid: [], textFiltersIOS: [] };
+class LottieView {
+  constructor(arg0) {
     let constructResult;
     const self = this;
-    const items = [...arguments];
-    _classCallCheck(this, LinearGradient);
-    const items1 = [...items];
-    const obj = _getPrototypeOf(LinearGradient);
+    _classCallCheck(this, LottieView);
+    const items = [arg0];
+    const obj = _getPrototypeOf(LottieView);
     const tmp2 = _getPrototypeOf;
     const tmp3 = metroRequire;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
+      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
     } else {
-      constructResult = obj.apply(self, items1);
+      constructResult = obj.apply(self, items);
     }
     const tmp3Result = tmp3(self, constructResult);
-    tmp3Result.gradientRef = metroImportAll();
+    let closure_0 = tmp3Result;
+    tmp3Result.onAnimationFinish = (nativeEvent) => {
+      const props = closure_0.props;
+      const onAnimationFinish = props.onAnimationFinish;
+      if (onAnimationFinish != null) {
+        onAnimationFinish(nativeEvent.nativeEvent.isCancelled);
+      }
+    };
+    tmp3Result.onAnimationFailure = (nativeEvent) => {
+      const props = closure_0.props;
+      const onAnimationFailure = props.onAnimationFailure;
+      if (onAnimationFailure != null) {
+        onAnimationFailure(nativeEvent.nativeEvent.error);
+      }
+    };
+    tmp3Result.onAnimationLoaded = () => {
+      const props = closure_0.props;
+      const onAnimationLoaded = props.onAnimationLoaded;
+      if (onAnimationLoaded != null) {
+        onAnimationLoaded();
+      }
+    };
+    const play = tmp3Result.play;
+    tmp3Result.play = play.bind(tmp3Result);
+    const reset = tmp3Result.reset;
+    tmp3Result.reset = reset.bind(tmp3Result);
+    const pause = tmp3Result.pause;
+    tmp3Result.pause = pause.bind(tmp3Result);
+    const resume = tmp3Result.resume;
+    tmp3Result.resume = resume.bind(tmp3Result);
+    let onAnimationFinish = tmp3Result.onAnimationFinish;
+    tmp3Result.onAnimationFinish = onAnimationFinish.bind(tmp3Result);
+    const captureRef = tmp3Result.captureRef;
+    tmp3Result.captureRef = captureRef.bind(tmp3Result);
     return tmp3Result;
   }
 }
-_inherits(LinearGradient, Component);
+_inherits(LottieView, react.PureComponent);
 const entry = {
-  key: "setNativeProps",
-  value: function setNativeProps(arg0) {
-    const current = this.gradientRef.current;
-    current.setNativeProps(arg0);
+  key: "play",
+  value: function play(arg0, arg1) {
+    let num = arg0;
+    const Commands = _mod5380.Commands;
+    const play = Commands.play;
+    const lottieAnimationViewRef = this.lottieAnimationViewRef;
+    if (arg0 == null) {
+      num = -1;
+    }
+    let num2 = arg1;
+    if (arg1 == null) {
+      num2 = -1;
+    }
+    play(lottieAnimationViewRef, num, num2);
   }
 };
 let items = [
   entry,
   {
+    key: "reset",
+    value: function reset() {
+      const Commands = _mod5380.Commands;
+      Commands.reset(this.lottieAnimationViewRef);
+    }
+  },
+  {
+    key: "pause",
+    value: function pause() {
+      const Commands = _mod5380.Commands;
+      Commands.pause(this.lottieAnimationViewRef);
+    }
+  },
+  {
+    key: "resume",
+    value: function resume() {
+      const Commands = _mod5380.Commands;
+      Commands.resume(this.lottieAnimationViewRef);
+    }
+  },
+  {
+    key: "captureRef",
+    value: function captureRef(lottieAnimationViewRef) {
+      if (null !== lottieAnimationViewRef) {
+        const self = this;
+        this.lottieAnimationViewRef = lottieAnimationViewRef;
+        if (true === this.props.autoPlay) {
+          self.play();
+        }
+      }
+    }
+  },
+  {
+    key: "renderLottieView",
+    value: function renderLottieView() {
+      let autoPlay;
+      let containerStyle;
+      let duration;
+      let resizeMode;
+      let source;
+      let style;
+      let textFiltersAndroid;
+      let textFiltersIOS;
+      const self = this;
+      const props = this.props;
+      ({ source, duration, containerStyle } = props);
+      ({ style, autoPlay, textFiltersAndroid, textFiltersIOS, resizeMode } = props);
+      const tmp = _objectWithoutProperties(props, closure_3);
+      let obj = react_native;
+      const parsePossibleSourcesResult = obj.parsePossibleSources(source);
+      if (duration) {
+        if (parsePossibleSourcesResult.sourceJson) {
+          let speed;
+          if (source.fr) {
+            const _Math = Math;
+            speed = Math.round(source.op / source.fr * 1000 / duration);
+          }
+          const colorFilters = self.props.colorFilters;
+          let mapped;
+          if (colorFilters != null) {
+            mapped = colorFilters.map((color) => {
+              const obj = { color: closure_1_9(color.color) };
+              const merged = Object.assign(color);
+              return obj;
+            });
+          }
+          _modDef5380;
+          let merged = Object.assign(tmp);
+          ({ onAnimationFinish: obj2.onAnimationFinish, onAnimationFailure: obj2.onAnimationFailure, onAnimationLoaded: obj2.onAnimationLoaded } = self);
+          const merged1 = Object.assign(parsePossibleSourcesResult);
+          return <tmp9 ref={self.captureRef} colorFilters={mapped} textFiltersAndroid={textFiltersAndroid} textFiltersIOS={textFiltersIOS} speed={speed} style={style} autoPlay={autoPlay} resizeMode={resizeMode} />;
+        }
+      }
+      speed = self.props.speed;
+    }
+  },
+  {
     key: "render",
     value: function render() {
-      let angle;
-      let angleCenter;
-      let children;
-      let colors;
-      let end;
-      let locations;
-      let mapped;
-      let start;
-      let style;
-      let useAngle;
-      const props = this.props;
-      ({ colors, end, locations, angleCenter, start, style } = props);
-      ({ children, useAngle, angle } = props);
-      const tmp = _objectWithoutProperties(props, closure_3);
-      const tmp2 = colors && locations && colors.length !== locations.length;
-      if (tmp2) {
+      let containerStyle;
+      let renderLottieViewResult;
+      let source;
+      const self = this;
+      ({ source, containerStyle } = this.props);
+      if (null == source) {
         const _console = console;
-        console.warn("LinearGradient colors and locations props should be arrays of the same length");
-      }
-      const tmp5 = authStore.flatten(style) || {};
-      let tmp6 = tmp5.borderRadius || 0;
-      const borderTopLeftRadius = tmp5.borderTopLeftRadius;
-      let tmp7 = tmp6;
-      if (typeof borderTopLeftRadius === "number") {
-        tmp7 = borderTopLeftRadius;
-      }
-      const items = [tmp7, , , , , , , ];
-      const borderTopLeftRadius2 = tmp5.borderTopLeftRadius;
-      let tmp8 = tmp6;
-      if (typeof borderTopLeftRadius2 === "number") {
-        tmp8 = borderTopLeftRadius2;
-      }
-      items[1] = tmp8;
-      const borderTopRightRadius = tmp5.borderTopRightRadius;
-      let tmp9 = tmp6;
-      if (typeof borderTopRightRadius === "number") {
-        tmp9 = borderTopRightRadius;
-      }
-      items[2] = tmp9;
-      const borderTopRightRadius2 = tmp5.borderTopRightRadius;
-      let tmp10 = tmp6;
-      if (typeof borderTopRightRadius2 === "number") {
-        tmp10 = borderTopRightRadius2;
-      }
-      items[3] = tmp10;
-      const borderBottomRightRadius = tmp5.borderBottomRightRadius;
-      let tmp11 = tmp6;
-      if (typeof borderBottomRightRadius === "number") {
-        tmp11 = borderBottomRightRadius;
-      }
-      items[4] = tmp11;
-      const borderBottomRightRadius2 = tmp5.borderBottomRightRadius;
-      let tmp12 = tmp6;
-      if (typeof borderBottomRightRadius2 === "number") {
-        tmp12 = borderBottomRightRadius2;
-      }
-      items[5] = tmp12;
-      const borderBottomLeftRadius = tmp5.borderBottomLeftRadius;
-      let tmp13 = tmp6;
-      if (typeof borderBottomLeftRadius === "number") {
-        tmp13 = borderBottomLeftRadius;
-      }
-      items[6] = tmp13;
-      const borderBottomLeftRadius2 = tmp5.borderBottomLeftRadius;
-      if (typeof borderBottomLeftRadius2 === "number") {
-        tmp6 = borderBottomLeftRadius2;
-      }
-      items[7] = tmp6;
-      const obj = { ref: this.gradientRef, style };
-      const merged = Object.assign(tmp);
-      const obj2 = { style: { position: "absolute", top: 0, left: 0, bottom: 0, right: 0 }, colors: mapped, startPoint: null, endPoint: null, locations: null, useAngle: null, angleCenter: null, angle: null, borderRadii: null };
-      mapped = colors;
-      const tmp14 = map1;
-      const tmp15 = unpackModuleId;
-      const tmp17 = authStore2;
-      const tmp18 = _modDef5380;
-      if (!global.RN$Bridgeless) {
-        mapped = colors.map(React4);
-      }
-      if (typeof convertPoint === "function") {
-        const _Array = Array;
-        let tmp23 = start;
-        if (Array.isArray(start)) {
-          const _console2 = console;
-          const _HermesInternal = HermesInternal;
-          console.warn("LinearGradient '" + "start" + "' property should be an object with fields 'x' and 'y', Array type is deprecated.");
-          const point = { x: null, y: null };
-          [obj3.x, obj3.y] = start;
-          tmp23 = point;
-        }
-        obj2.startPoint = tmp23;
-        if (typeof convertPoint === "function") {
-          const _Array2 = Array;
-          let tmp25 = end;
-          if (Array.isArray(end)) {
-            const _console3 = console;
-            const _HermesInternal2 = HermesInternal;
-            console.warn("LinearGradient '" + "end" + "' property should be an object with fields 'x' and 'y', Array type is deprecated.");
-            const point1 = { x: null, y: null };
-            [obj4.x, obj4.y] = end;
-            tmp25 = point1;
-          }
-          obj2.endPoint = tmp25;
-          let substr = null;
-          if (locations) {
-            substr = locations.slice(0, colors.length);
-          }
-          obj2.locations = substr;
-          obj2.useAngle = useAngle;
-          if (typeof convertPoint === "function") {
-            const _Array3 = Array;
-            let tmp28 = angleCenter;
-            if (Array.isArray(angleCenter)) {
-              const _console4 = console;
-              const _HermesInternal3 = HermesInternal;
-              console.warn("LinearGradient '" + "angleCenter" + "' property should be an object with fields 'x' and 'y', Array type is deprecated.");
-              const point2 = { x: null, y: null };
-              [obj5.x, obj5.y] = angleCenter;
-              tmp28 = point2;
-            }
-            obj2.angleCenter = tmp28;
-            obj2.angle = angle;
-            obj2.borderRadii = items;
-            const items1 = [tmp17(tmp18, obj2), children];
-            obj.children = items1;
-            return tmp14(tmp15, obj);
-          } else {
-            throw new TypeError("Trying to call a non-function");
-          }
-        } else {
-          throw new TypeError("Trying to call a non-function");
-        }
+        console.warn("LottieView needs `source` parameter, provided value for source:", source);
+        renderLottieViewResult = null;
+      } else if (containerStyle) {
+        renderLottieViewResult = <metroImportAll style={containerStyle} collapsable={false}>{self.renderLottieView()}</metroImportAll>;
       } else {
-        throw new TypeError("Trying to call a non-function");
+        renderLottieViewResult = self.renderLottieView();
       }
+      return renderLottieViewResult;
     }
   }
 ];
-const importDefaultResultResult = _createClass(LinearGradient, items);
-importDefaultResultResult.defaultProps = { start: { x: 0.5, y: 0 }, end: { x: 0.5, y: 1 } };
+const importDefaultResultResult = _createClass(LottieView, items);
+importDefaultResultResult.defaultProps = obj;
+const LottieView_export = importDefaultResultResult;
 
-export default importDefaultResultResult;
+export { LottieView_export as LottieView };

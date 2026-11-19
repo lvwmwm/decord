@@ -1,12 +1,12 @@
-// Module ID: 7974
-// Function ID: 7975
+// Module ID: 7944
+// Function ID: 7945
 // Name: openInstantInviteActionSheet
-// Dependencies: [5037, 7975, 2121, 1264, 2]
+// Dependencies: [5006, 7945, 2121, 1264, 2]
 // Exports: default
 
-// Module 7974 (openInstantInviteActionSheet)
+// Module 7944 (openInstantInviteActionSheet)
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
 import size from "module_2" /* 2 */;
 
 let tmp3;
@@ -17,7 +17,7 @@ export default function openInstantInviteActionSheet(invite_channel_id) {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
   let id = invite_channel_id.vanityURLCode;
-  const tmp4 = asyncRequire(7975, dependencyMap.paths);
+  const tmp4 = asyncRequire(7945, dependencyMap.paths);
   if (id == null) {
     id = invite_channel_id.channel.id;
   }

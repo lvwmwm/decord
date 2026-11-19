@@ -1,24 +1,23 @@
-// Module ID: 20136
-// Function ID: 20137
+// Module ID: 20147
+// Function ID: 20148
 // Name: NativeExperimentBridgeManager
-// Dependencies: [17, 2189, 502, 9160, 1380, 11683, 6299, 8287, 1256, 20137, 1285, 7395, 2]
+// Dependencies: [17, 2189, 502, 9136, 1380, 11661, 8256, 1256, 20148, 1285, 7365, 2]
 
-// Module 20136 (NativeExperimentBridgeManager)
+// Module 20147 (NativeExperimentBridgeManager)
 import react_native from "react-native" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import IOSPushNotificationRawPayloadFixExperiment from "IOSPushNotificationRawPayloadFixExperiment" /* 6299 */;
-import IOSAnchoredChatScrollerExperiment from "IOSAnchoredChatScrollerExperiment" /* 8287 */;
-import NotificationLoadMessagesExperimentDefault from "NotificationLoadMessagesExperiment" /* 20137 */;
+import IOSAnchoredChatScrollerExperiment from "IOSAnchoredChatScrollerExperiment" /* 8256 */;
+import NotificationLoadMessagesExperimentDefault from "NotificationLoadMessagesExperiment" /* 20148 */;
 import LocaleStore from "LocaleStore" /* 2189 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaPlaybackExperiment_mod from "MediaPlaybackExperiment" /* 9160 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
+import MediaPlaybackExperiment_mod from "MediaPlaybackExperiment" /* 9136 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const YYTextReplacementExperiment = tmp(11683);
+const YYTextReplacementExperiment = tmp(11661);
 function syncYYTextReplacementExperiment() {
   const obj = PlatformUtils;
   if (obj.isIOS()) {
@@ -46,27 +45,19 @@ function updateIOSExperiments() {
   }
   const NSUserDefaultsBridge2 = NativeModules.NSUserDefaultsBridge;
   if (NSUserDefaultsBridge2 != null) {
-    const setShouldFixPushNotificationRawPayload = NSUserDefaultsBridge2.setShouldFixPushNotificationRawPayload;
-    if (setShouldFixPushNotificationRawPayload != null) {
-      const tmpResult3 = IOSPushNotificationRawPayloadFixExperiment;
-      const result1 = setShouldFixPushNotificationRawPayload(tmpResult3.isIOSPushNotificationRawPayloadFixExperimentEnabled());
-    }
-  }
-  const NSUserDefaultsBridge3 = tmp6.NSUserDefaultsBridge;
-  if (NSUserDefaultsBridge3 != null) {
-    const setShouldUseAnchoredChatScroller = NSUserDefaultsBridge3.setShouldUseAnchoredChatScroller;
+    const setShouldUseAnchoredChatScroller = NSUserDefaultsBridge2.setShouldUseAnchoredChatScroller;
     if (setShouldUseAnchoredChatScroller != null) {
-      const tmpResult4 = IOSAnchoredChatScrollerExperiment;
-      const result2 = setShouldUseAnchoredChatScroller(tmpResult4.shouldUseIOSAnchoredChatScroller({ location: "NativeExperimentBridgeManager" }));
+      const tmpResult2 = IOSAnchoredChatScrollerExperiment;
+      const result1 = setShouldUseAnchoredChatScroller(tmpResult2.shouldUseIOSAnchoredChatScroller({ location: "NativeExperimentBridgeManager" }));
     }
   }
   const RNVVideo = tmp6.RNVVideo;
   if (RNVVideo != null) {
-    const result3 = RNVVideo.setOptimizeConfigureAudio(true);
+    const result2 = RNVVideo.setOptimizeConfigureAudio(true);
   }
   const RNVVideo2 = tmp6.RNVVideo;
   if (RNVVideo2 != null) {
-    const result4 = RNVVideo2.setUseBackgroundProgressQueue(true);
+    const result3 = RNVVideo2.setUseBackgroundProgressQueue(true);
   }
 }
 function updateAndroidExperiments() {

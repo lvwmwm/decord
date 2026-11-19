@@ -1,10 +1,10 @@
-// Module ID: 4667
-// Function ID: 4668
+// Module ID: 4636
+// Function ID: 4637
 // Name: Timers
 // Dependencies: [5, 2]
 // Exports: timeoutPromise
 
-// Module 4667 (Timers)
+// Module 4636 (Timers)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -237,7 +237,7 @@ class BatchInvocationManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         let c6;
@@ -317,7 +317,7 @@ class BatchInvocationManager {
             closure_132_0._flush();
           }
           c8 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         } catch (tmp34) {
           closure_5 = tmp34;
           if (0 === c6) {

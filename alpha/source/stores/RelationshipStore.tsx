@@ -1,15 +1,15 @@
-// Module ID: 4765
-// Function ID: 4766
+// Module ID: 4734
+// Function ID: 4735
 // Name: RelationshipStore
-// Dependencies: [32, 4766, 1388, 1072, 572, 504, 4743, 2]
+// Dependencies: [32, 4735, 1388, 1072, 572, 504, 4712, 2]
 
-// Module 4765 (RelationshipStore)
+// Module 4734 (RelationshipStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4743 */;
+import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4712 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import MessageRecord from "MessageRecord" /* 4766 */;
+import MessageRecord from "MessageRecord" /* 4735 */;
 import UserStore from "UserStore" /* 1388 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -113,7 +113,7 @@ let closure_15 = 0;
 const authStore3 = {};
 let closure_17 = 0;
 let size = 0;
-let closure_20 = { friends: "Array", blocked: "s", ignored: "channel_id", blockedOrIgnored: "formatToPlainString" };
+let closure_20 = { friends: "Array", blocked: "s", ignored: "channel_id", blockedOrIgnored: "window" };
 const set3 = new Set();
 const map1 = new Map();
 const Store = get_initializedDefault.Store;
@@ -394,7 +394,6 @@ const prototype = RelationshipStore.prototype;
 RelationshipStore.displayName = "RelationshipStore";
 let obj = {
   CONNECTION_OPEN: function handleConnectionOpen(relationships) {
-    let set4;
     map.clear();
     map1.clear();
     obj6 = {};

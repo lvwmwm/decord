@@ -1,12 +1,12 @@
-// Module ID: 16407
-// Function ID: 16408
+// Module ID: 16398
+// Function ID: 16399
 // Name: pickBountyVideoRendition
-// Dependencies: [9870, 38, 2]
-// Exports: pickBountyVideoRenditionWithFallback
+// Dependencies: [9849, 38, 2]
+// Exports: pickBountyPreviewUrl, pickBountyVideoRenditionWithFallback
 
-// Module 16407 (pickBountyVideoRendition)
+// Module 16398 (pickBountyVideoRendition)
 import _modDef38 from "module_38" /* 38 */;
-import BountyAspectRatio from "BountyAspectRatio" /* 9870 */;
+import BountyAspectRatio from "BountyAspectRatio" /* 9849 */;
 import size from "module_2" /* 2 */;
 
 let items;
@@ -75,10 +75,28 @@ export function pickBountyVideoRenditionWithFallback(videoRenditions, BOUNTY_MOB
     let tmp5 = null;
     const tmp3 = require;
     if (supported.includes(BountyAspectRatio.BountyAspectRatio.PORTRAIT)) {
-      tmp5 = { url: videoRenditions.videoHls, aspectRatio: tmp3(9870).BountyAspectRatio.PORTRAIT };
-      const obj = { url: videoRenditions.videoHls, aspectRatio: tmp3(9870).BountyAspectRatio.PORTRAIT };
+      tmp5 = { url: videoRenditions.videoHls, aspectRatio: tmp3(9849).BountyAspectRatio.PORTRAIT };
+      const obj = { url: videoRenditions.videoHls, aspectRatio: tmp3(9849).BountyAspectRatio.PORTRAIT };
     }
     tmp = tmp5;
+  }
+  return tmp;
+}
+export function pickBountyPreviewUrl(questDockBounty, PORTRAIT) {
+  const videoPreviewRenditions = questDockBounty.videoPreviewRenditions;
+  let tmp;
+  if (videoPreviewRenditions != null) {
+    tmp = videoPreviewRenditions[PORTRAIT];
+  }
+  if (null == tmp) {
+    let tmp4;
+    if (null == questDockBounty.videoPreviewRenditions) {
+      const videoPreview = questDockBounty.videoPreview;
+      tmp4 = videoPreview;
+    } else {
+      const _Object = Object;
+    }
+    tmp = tmp4;
   }
   return tmp;
 }

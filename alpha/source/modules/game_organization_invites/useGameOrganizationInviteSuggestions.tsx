@@ -1,17 +1,17 @@
-// Module ID: 15108
-// Function ID: 15109
+// Module ID: 15094
+// Function ID: 15095
 // Name: useGameOrganizationInviteSuggestions
-// Dependencies: [5, 32, 19, 13117, 4765, 1388, 7965, 12009, 504, 13116, 2]
+// Dependencies: [5, 32, 19, 13099, 4734, 1388, 7935, 11987, 504, 13098, 2]
 // Exports: default
 
-// Module 15108 (useGameOrganizationInviteSuggestions)
-import InstantInviteUtils from "InstantInviteUtils" /* 7965 */;
-import InviteSuggestionsActionCreators from "InviteSuggestionsActionCreators" /* 13116 */;
+// Module 15094 (useGameOrganizationInviteSuggestions)
+import InstantInviteUtils from "InstantInviteUtils" /* 7935 */;
+import InviteSuggestionsActionCreators from "InviteSuggestionsActionCreators" /* 13098 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import InviteSuggestionsStore from "InviteSuggestionsStore" /* 13117 */;
-import RelationshipStore from "RelationshipStore" /* 4765 */;
+import InviteSuggestionsStore from "InviteSuggestionsStore" /* 13099 */;
+import RelationshipStore from "RelationshipStore" /* 4734 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ export default function useGameOrganizationInviteSuggestions() {
   let closure_2;
   let hasNoFriends;
   let isLoading;
-  const f108882 = (item) => item.item;
+  const f108852 = (item) => item.item;
   let obj = require("get initialized");
   const items = [InviteSuggestionsStore, RelationshipStore, UserStore];
   const users = obj.useStateFromStoresArray(items, () => {
@@ -45,7 +45,7 @@ export default function useGameOrganizationInviteSuggestions() {
     }
     closure_1 = closure_7;
     const found = inviteSuggestionRows.filter(closure_9);
-    const mapped = found.map(f108882);
+    const mapped = found.map(f108852);
     return mapped.filter((item) => closure_2_1(ref[7])(item, id, closure_1));
   });
   [isLoading, _require] = react.useState(true);
@@ -72,7 +72,7 @@ export default function useGameOrganizationInviteSuggestions() {
           }
           closure_1 = closure_7;
           const found = inviteSuggestionRows.filter(closure_9);
-          const mapped = found.map(f108882);
+          const mapped = found.map(f108852);
           return mapped.filter((item) => closure_2_1(ref[7])(item, id, closure_1));
         }
         if (c5 === 2) {
@@ -85,7 +85,7 @@ export default function useGameOrganizationInviteSuggestions() {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } else {
           let c3;
@@ -121,7 +121,7 @@ export default function useGameOrganizationInviteSuggestions() {
               c3 = 0;
               tmp(false);
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             } else if (arg0 === 1) {
               c5 = 3;
               throw value;
@@ -140,7 +140,7 @@ export default function useGameOrganizationInviteSuggestions() {
                 const result = obj.searchInviteSuggestions(ref.current);
               }
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             }
           } catch (tmp26) {
             ref = tmp26;

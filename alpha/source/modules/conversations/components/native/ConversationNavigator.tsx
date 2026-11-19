@@ -1,18 +1,18 @@
-// Module ID: 8549
-// Function ID: 8550
+// Module ID: 8518
+// Function ID: 8519
 // Name: ConversationNavigator
-// Dependencies: [32, 19, 8544, 21, 8550, 7003, 8560, 8561, 8562, 575, 8575, 14276, 5000, 8543, 2]
+// Dependencies: [32, 19, 8513, 21, 8519, 6973, 8529, 8530, 8531, 575, 8544, 14259, 4969, 8512, 2]
 // Exports: default, openConversationNavigator
 
-// Module 8549 (ConversationNavigator)
+// Module 8518 (ConversationNavigator)
 import nativeDefault from "native" /* 575 */;
-import RootNavigationRef from "RootNavigationRef" /* 5000 */;
-import useSelectedConversationDefault from "useSelectedConversation" /* 8560 */;
+import RootNavigationRef from "RootNavigationRef" /* 4969 */;
+import useSelectedConversationDefault from "useSelectedConversation" /* 8529 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SelectedConversationStore from "SelectedConversationStore" /* 8544 */;
+import SelectedConversationStore from "SelectedConversationStore" /* 8513 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 8550 */;
+import NativeStackView from "NativeStackView" /* 8519 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -21,7 +21,7 @@ let _require;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const ConversationsActionCreators = tmp(8543);
+const ConversationsActionCreators = tmp(8512);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let Navigator = NativeStackView.createNativeStackNavigator();
 const result = size.fileFinishedImporting("modules/conversations/components/native/ConversationNavigator.tsx");
@@ -58,14 +58,14 @@ export default function ConversationNavigator(route) {
   Navigator = Navigator.Navigator;
   const tmp5 = closure_7;
   if (null != first) {
-    LIST = tmp(8561).ConversationNavigatorScreens.FOCUS;
+    LIST = tmp(8530).ConversationNavigatorScreens.FOCUS;
   } else {
-    LIST = tmp(8561).ConversationNavigatorScreens.LIST;
+    LIST = tmp(8530).ConversationNavigatorScreens.LIST;
   }
   items = [, ];
   const obj3 = {
     initialParams: { channelId, guildId },
-    name: tmp(8561).ConversationNavigatorScreens.LIST,
+    name: tmp(8530).ConversationNavigatorScreens.LIST,
     options(arg0) {
       let route;
       ({ route, navigation } = arg0);
@@ -80,7 +80,7 @@ export default function ConversationNavigator(route) {
   items[0] = closure_6(Navigator.Screen, obj3);
   const Screen = tmp6.Screen;
   const obj4 = {
-    name: tmp(8561).ConversationNavigatorScreens.FOCUS,
+    name: tmp(8530).ConversationNavigatorScreens.FOCUS,
     initialParams: tmp8,
     options(arg0) {
       let route;

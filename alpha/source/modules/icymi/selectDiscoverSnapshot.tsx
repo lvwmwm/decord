@@ -1,11 +1,11 @@
-// Module ID: 9947
-// Function ID: 9948
+// Module ID: 9926
+// Function ID: 9927
 // Name: selectDiscoverSnapshot
-// Dependencies: [32, 9935, 9948, 2]
+// Dependencies: [32, 9914, 9927, 2]
 // Exports: selectDiscoverSnapshot
 
-// Module 9947 (selectDiscoverSnapshot)
-import ICYMITypes from "ICYMITypes" /* 9935 */;
+// Module 9926 (selectDiscoverSnapshot)
+import ICYMITypes from "ICYMITypes" /* 9914 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ export function selectDiscoverSnapshot(items, fn) {
     let tmp8 = tmp7;
     let tmp9 = require;
     if (tmp7.type === ICYMITypes.ICYMIItemTypes.DISCOVER_ITEM) {
-      let tmp9Result = tmp9(9948);
+      let tmp9Result = tmp9(9927);
       let data = tmp8.data;
       let item;
       let parseWaterwheelsCard = tmp9Result.parseWaterwheelsCard;

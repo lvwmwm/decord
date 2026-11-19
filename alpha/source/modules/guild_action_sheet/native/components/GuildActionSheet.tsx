@@ -1,25 +1,25 @@
-// Module ID: 15123
-// Function ID: 15124
+// Module ID: 15109
+// Function ID: 15110
 // Name: GuildActionSheet
-// Dependencies: [19, 17, 21, 4823, 575, 1630, 8061, 5051, 5055, 1380, 15118, 15124, 15051, 15129, 15132, 5386, 2]
+// Dependencies: [19, 17, 21, 4792, 575, 1630, 8030, 5020, 5024, 1380, 15104, 15110, 15037, 15115, 15118, 5355, 2]
 
-// Module 15123 (GuildActionSheet)
+// Module 15109 (GuildActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5051 */;
-import BottomSheetModal from "BottomSheetModal" /* 5055 */;
-import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 5386 */;
-import react2 from "react" /* 8061 */;
-import GuildActionSheetActions from "GuildActionSheetActions" /* 15051 */;
-import GuildActionSheetHeaderDefault from "GuildActionSheetHeader" /* 15118 */;
-import GuildActionSheetTabItemsDefault from "GuildActionSheetTabItems" /* 15124 */;
-import GuildActionSheetProgressDefault from "GuildActionSheetProgress" /* 15129 */;
-import GuildActionSheetEmojiSectionDefault from "GuildActionSheetEmojiSection" /* 15132 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5020 */;
+import BottomSheetModal from "BottomSheetModal" /* 5024 */;
+import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 5355 */;
+import react2 from "react" /* 8030 */;
+import GuildActionSheetActions from "GuildActionSheetActions" /* 15037 */;
+import GuildActionSheetHeaderDefault from "GuildActionSheetHeader" /* 15104 */;
+import GuildActionSheetTabItemsDefault from "GuildActionSheetTabItems" /* 15110 */;
+import GuildActionSheetProgressDefault from "GuildActionSheetProgress" /* 15115 */;
+import GuildActionSheetEmojiSectionDefault from "GuildActionSheetEmojiSection" /* 15118 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

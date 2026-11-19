@@ -1,20 +1,20 @@
-// Module ID: 10928
-// Function ID: 10929
+// Module ID: 10906
+// Function ID: 10907
 // Name: UserSettingsVoiceInputOptions
-// Dependencies: [19, 17, 2133, 1072, 21, 4823, 7461, 1113, 5719, 504, 10922, 6956, 5414, 7467, 10929, 2]
+// Dependencies: [19, 17, 2133, 1072, 21, 4792, 7431, 1113, 5688, 504, 10900, 6926, 5383, 7437, 10907, 2]
 // Exports: default
 
-// Module 10928 (UserSettingsVoiceInputOptions)
+// Module 10906 (UserSettingsVoiceInputOptions)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl7 from "intl" /* 1113 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 5719 */;
-import showSimpleActionSheet2 from "showSimpleActionSheet" /* 7461 */;
-import VoiceSensitivityDefault from "VoiceSensitivity" /* 10929 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5688 */;
+import showSimpleActionSheet2 from "showSimpleActionSheet" /* 7431 */;
+import VoiceSensitivityDefault from "VoiceSensitivity" /* 10907 */;
 import react from "react" /* 19 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -81,13 +81,13 @@ export default function UserSettingsVoiceInputOptions() {
   const vadAutoThreshold = stateFromStoresObject.vadAutoThreshold;
   const vadThreshold = stateFromStoresObject.vadThreshold;
   let obj2 = { title: intl.string(inputMode(1113).t.LKCupB), hasIcons: false, children: items1 };
-  const UserSettingsTableRowGroup = inputMode(10922).UserSettingsTableRowGroup;
+  const UserSettingsTableRowGroup = inputMode(10900).UserSettingsTableRowGroup;
   intl = inputMode(1113).intl;
   const obj3 = { label: intl2.string(inputMode(1113).t["pS+K2L"]), trailing: closure_6(Text, obj4), onPress: handleInputModePress };
-  const TableRow = inputMode(6956).TableRow;
+  const TableRow = inputMode(6926).TableRow;
   intl2 = inputMode(1113).intl;
   obj4 = { style: iter.value, variant: "body-md/medium", color: "text-muted", children: stringResult };
-  Text = inputMode(5414).Text;
+  Text = inputMode(5383).Text;
   const tmp6 = InputModes;
   if (inputMode === InputModes.PUSH_TO_TALK) {
     const intl4 = tmp(1113).intl;
@@ -109,11 +109,11 @@ export default function UserSettingsVoiceInputOptions() {
           return obj.setMode(inputMode, obj2);
         }
     };
-    const TableSwitchRow = tmp(7467).TableSwitchRow;
+    const TableSwitchRow = tmp(7437).TableSwitchRow;
     intl5 = tmp(1113).intl;
     items2 = [closure_6(TableSwitchRow, obj6), ];
     const obj7 = { label: intl6.string(inputMode(1113).t["o+2oMK"]), subLabel: closure_6(View, obj8) };
-    const TableRow2 = tmp(6956).TableRow;
+    const TableRow2 = tmp(6926).TableRow;
     intl6 = tmp(1113).intl;
     obj8 = { style: iter.slider, children: closure_6(VoiceSensitivityDefault, obj9) };
     obj9 = {

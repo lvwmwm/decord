@@ -1,10 +1,10 @@
-// Module ID: 13179
-// Function ID: 13180
+// Module ID: 13161
+// Function ID: 13162
 // Name: DoubleTapToReactActionSheet
-// Dependencies: [5, 32, 19, 17, 4824, 6481, 1072, 1391, 21, 4823, 1380, 575, 1655, 5033, 5384, 504, 5424, 4648, 4769, 8618, 1414, 7407, 1256, 7450, 8981, 1708, 5037, 7464, 5414, 1113, 13073, 13180, 5421, 2]
+// Dependencies: [5, 32, 19, 17, 4793, 6452, 1072, 1391, 21, 4792, 1380, 575, 1655, 5002, 5353, 504, 5393, 4617, 4738, 8587, 1414, 7377, 1256, 7420, 8955, 1708, 5006, 7434, 5383, 1113, 13055, 13162, 5390, 2]
 // Exports: default
 
-// Module 13179 (DoubleTapToReactActionSheet)
+// Module 13161 (DoubleTapToReactActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -12,21 +12,21 @@ import EmojiConstants from "EmojiConstants" /* 1391 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
 import _mod1655 from "module_1655" /* 1655 */;
 import _mod1708 from "module_1708" /* 1708 */;
-import UserSettings from "UserSettings" /* 4648 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4769 */;
-import timing_timing from "timing/timing" /* 5033 */;
+import UserSettings from "UserSettings" /* 4617 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4738 */;
+import timing_timing from "timing/timing" /* 5002 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4824 */;
-import EmojiStore from "EmojiStore" /* 6481 */;
+import AccessibilityStore from "AccessibilityStore" /* 4793 */;
+import EmojiStore from "EmojiStore" /* 6452 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1380 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, closure_0, set, set2, set3;
+let _require, closure_0, set, set2, set3, set4;
 
 let closure_12;
 let num2;
@@ -40,7 +40,7 @@ let obj7;
 let obj8;
 let tmp;
 let unpackModuleId;
-const DoubleTapToReactUtils = tmp(8618);
+const DoubleTapToReactUtils = tmp(8587);
 function EmojiConfetti(arg0) {
   let bottom;
   let emojiComponent;
@@ -109,7 +109,7 @@ function EmojiConfetti(arg0) {
     const withTimingResult3 = obj6.withTiming(0.3 * Math.random() + 0.5, { duration: 240 });
     const obj7 = timing_timing;
     set3(withSequence3(withTimingResult2, withTimingResult3, obj7.withTiming(0.5, { duration: 360 })));
-    const set4 = tmp4.set;
+    set4 = tmp4.set;
     const withSequence4 = _mod1655.withSequence;
     _mod1655;
     const obj8 = timing_timing;
@@ -395,7 +395,7 @@ export default function DoubleTapToReactActionSheet(emoji) {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -439,7 +439,7 @@ export default function DoubleTapToReactActionSheet(emoji) {
           return obj.showDoubleTapEmojiUpdatedToast(obj2);
         }, 500);
         c3 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       } catch (tmp24) {
         c3 = 3;
         throw tmp24;
@@ -483,7 +483,7 @@ export default function DoubleTapToReactActionSheet(emoji) {
       DoubleTapToReactActionSheetTsx4.__workletHash = 601184467601;
       DoubleTapToReactActionSheetTsx4.__initData = tmp14;
       const withTiming2Result = withTiming2(1, { duration: 100 }, undefined, DoubleTapToReactActionSheetTsx4);
-      const tmp4Result = tmp4(5424);
+      const tmp4Result = tmp4(5393);
       const result1 = set(withSequence(withTimingResult, withTimingResult1, withTiming2Result, tmp4Result.withSpring(0, { stiffness: 2000, damping: 70, mass: 3 })));
     }
     if (null != ref.current) {

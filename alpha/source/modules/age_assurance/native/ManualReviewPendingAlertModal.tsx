@@ -1,15 +1,15 @@
-// Module ID: 7902
-// Function ID: 7903
+// Module ID: 7872
+// Function ID: 7873
 // Name: ManualReviewPendingAlertModal
-// Dependencies: [19, 21, 5774, 1113, 3439, 5774, 1264, 2]
+// Dependencies: [19, 21, 5745, 1113, 3439, 5745, 1264, 2]
 // Exports: default
 
-// Module 7902 (ManualReviewPendingAlertModal)
+// Module 7872 (ManualReviewPendingAlertModal)
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1113 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
 import _modDef3439 from "module_3439" /* 3439 */;
-import AlertModal2 from "AlertModal" /* 5774 */;
+import AlertModal2 from "AlertModal" /* 5745 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

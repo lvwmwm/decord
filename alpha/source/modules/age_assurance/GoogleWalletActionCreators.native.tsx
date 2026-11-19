@@ -1,14 +1,14 @@
-// Module ID: 7754
-// Function ID: 7755
+// Module ID: 7724
+// Function ID: 7725
 // Name: GoogleWalletActionCreators
-// Dependencies: [5, 502, 1072, 7719, 1285, 7755, 2]
+// Dependencies: [5, 502, 1072, 7689, 1285, 7725, 2]
 // Exports: checkGoogleWalletAvailable, getGoogleWalletCredential, requestGoogleWalletVerification, verifyGoogleWalletCredential
 
-// Module 7754 (GoogleWalletActionCreators)
+// Module 7724 (GoogleWalletActionCreators)
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 7719 */;
-import react_nativeDefault from "react-native" /* 7755 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 7689 */;
+import react_nativeDefault from "react-native" /* 7725 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
@@ -28,7 +28,7 @@ let obj = function _requestGoogleWalletVerification() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -114,7 +114,7 @@ obj = function _verifyGoogleWalletCredential() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -170,7 +170,7 @@ obj = function _verifyGoogleWalletCredential() {
             return obj;
           }
           c1 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp5) {
         c1 = 3;
@@ -193,7 +193,7 @@ obj = function _checkGoogleWalletAvailable() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c2;
@@ -267,7 +267,7 @@ obj = function _getGoogleWalletCredential() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {

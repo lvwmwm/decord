@@ -1,9 +1,9 @@
-// Module ID: 7395
-// Function ID: 7396
+// Module ID: 7365
+// Function ID: 7366
 // Name: AutomaticLifecycleManager
 // Dependencies: [572, 2]
 
-// Module 7395 (AutomaticLifecycleManager)
+// Module 7365 (AutomaticLifecycleManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 

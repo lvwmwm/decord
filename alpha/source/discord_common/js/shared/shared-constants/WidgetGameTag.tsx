@@ -1,9 +1,9 @@
-// Module ID: 10101
-// Function ID: 10102
+// Module ID: 10079
+// Function ID: 10080
 // Name: WidgetGameTag
 // Dependencies: [2]
 
-// Module 10101 (WidgetGameTag)
+// Module 10079 (WidgetGameTag)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/WidgetGameTag.tsx");

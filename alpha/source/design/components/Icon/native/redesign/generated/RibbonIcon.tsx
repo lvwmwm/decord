@@ -1,14 +1,14 @@
-// Module ID: 10102
-// Function ID: 10103
+// Module ID: 10080
+// Function ID: 10081
 // Name: RibbonIcon
-// Dependencies: [19, 21, 575, 5509, 10103, 2]
+// Dependencies: [19, 21, 575, 5478, 10081, 2]
 // Exports: RibbonIcon
 
-// Module 10102 (RibbonIcon)
+// Module 10080 (RibbonIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5509 */;
-import AssetRegistry from "AssetRegistry" /* 10103 */;
+import BaseIconImage2 from "BaseIconImage" /* 5478 */;
+import AssetRegistry from "AssetRegistry" /* 10081 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

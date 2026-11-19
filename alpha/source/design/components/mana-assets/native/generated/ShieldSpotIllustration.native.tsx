@@ -1,26 +1,26 @@
-// Module ID: 7725
-// Function ID: 7726
+// Module ID: 7695
+// Function ID: 7696
 // Name: ShieldSpotIllustration
-// Dependencies: [19, 21, 7726, 7727, 7728, 7268, 5510, 2]
+// Dependencies: [19, 21, 7696, 7697, 7698, 7238, 5479, 2]
 // Exports: ShieldSpotIllustration
 
-// Module 7725 (ShieldSpotIllustration)
+// Module 7695 (ShieldSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 7268 */;
-import _modDef7726 from "module_7726" /* 7726 */;
-import _modDef7727 from "module_7727" /* 7727 */;
-import _modDef7728 from "module_7728" /* 7728 */;
+import react_native from "react-native" /* 7238 */;
+import _modDef7696 from "module_7696" /* 7696 */;
+import _modDef7697 from "module_7697" /* 7697 */;
+import _modDef7698 from "module_7698" /* 7698 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef7726 };
+let obj2 = { uri: _modDef7696 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef7727 };
+let obj3 = { uri: _modDef7697 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef7728 };
-({ uri: _modDef7728 });
+obj[3] = { uri: _modDef7698 };
+({ uri: _modDef7698 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/ShieldSpotIllustration.native.tsx");
 

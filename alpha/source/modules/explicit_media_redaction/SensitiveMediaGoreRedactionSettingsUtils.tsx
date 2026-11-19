@@ -1,16 +1,16 @@
-// Module ID: 8145
-// Function ID: 8146
+// Module ID: 8114
+// Function ID: 8115
 // Name: SensitiveMediaGoreRedactionSettingsUtils
-// Dependencies: [19, 1388, 1072, 1196, 5485, 5493, 6319, 4648, 2]
+// Dependencies: [19, 1388, 1072, 1196, 5454, 5462, 6290, 4617, 2]
 // Exports: getGoreContentSettingOrDefault, resolveGoreSettingWithDefaultsForTeen, updateGoreContentSetting, useSensitiveContentFilterHelpArticle
 
-// Module 8145 (SensitiveMediaGoreRedactionSettingsUtils)
+// Module 8114 (SensitiveMediaGoreRedactionSettingsUtils)
 import Constants from "Constants" /* 1072 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
-import UserSettings from "UserSettings" /* 4648 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5485 */;
-import SettingsDefaultFeature from "SettingsDefaultFeature" /* 5493 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6319 */;
+import UserSettings from "UserSettings" /* 4617 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5454 */;
+import SettingsDefaultFeature from "SettingsDefaultFeature" /* 5462 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6290 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;

@@ -1,17 +1,17 @@
-// Module ID: 15860
-// Function ID: 15861
+// Module ID: 15851
+// Function ID: 15852
 // Name: EditableTileGroup
-// Dependencies: [19, 17, 21, 4823, 575, 5414, 8859, 1113, 2]
+// Dependencies: [19, 17, 21, 4792, 575, 5383, 8832, 1113, 2]
 // Exports: EditableTileGroup
 
-// Module 15860 (EditableTileGroup)
+// Module 15851 (EditableTileGroup)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5414 */;
+import Text_Text from "Text/Text" /* 5383 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -45,7 +45,7 @@ export function EditableTileGroup(showNitroIcon) {
   const tmp4 = React3;
   if (flag) {
     const obj3 = { size: "xs", color: nativeDefault.colors.TEXT_STRONG, accessibilityLabel: intl.string(intl2.t["5AFxuK"]) };
-    const NitroWheelIcon = tmp5(8859).NitroWheelIcon;
+    const NitroWheelIcon = tmp5(8832).NitroWheelIcon;
     intl = tmp5(1113).intl;
     flag = tmp4(NitroWheelIcon, obj3);
   }

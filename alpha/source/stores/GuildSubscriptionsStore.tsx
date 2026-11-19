@@ -1,28 +1,28 @@
-// Module ID: 6804
-// Function ID: 6805
+// Module ID: 6776
+// Function ID: 6777
 // Name: GuildSubscriptionsStore
-// Dependencies: [32, 5440, 4756, 6805, 502, 6830, 6548, 4672, 6459, 4735, 4694, 5564, 4765, 4726, 4856, 1072, 14694, 572, 12, 4697, 504, 2]
+// Dependencies: [32, 5409, 4725, 6777, 502, 6800, 6519, 4641, 6430, 4704, 4663, 5533, 4734, 4695, 4825, 1072, 14680, 572, 12, 4666, 504, 2]
 
-// Module 6804 (GuildSubscriptionsStore)
+// Module 6776 (GuildSubscriptionsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import FavoritesUtils from "FavoritesUtils" /* 4697 */;
-import ChannelMemberStore from "ChannelMemberStore" /* 6830 */;
-import GuildSubscriptionsDefault from "GuildSubscriptions" /* 14694 */;
+import FavoritesUtils from "FavoritesUtils" /* 4666 */;
+import ChannelMemberStore from "ChannelMemberStore" /* 6800 */;
+import GuildSubscriptionsDefault from "GuildSubscriptions" /* 14680 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ExperimentStore from "ExperimentStore" /* 5440 */;
-import LurkingStore from "LurkingStore" /* 4756 */;
-import SpotifyStore from "SpotifyStore" /* 6805 */;
+import ExperimentStore from "ExperimentStore" /* 5409 */;
+import LurkingStore from "LurkingStore" /* 4725 */;
+import SpotifyStore from "SpotifyStore" /* 6777 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 6548 */;
-import ChannelStore from "ChannelStore" /* 4672 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6459 */;
-import GuildMemberStore from "GuildMemberStore" /* 4735 */;
-import GuildStore from "GuildStore" /* 4694 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5564 */;
-import RelationshipStore from "RelationshipStore" /* 4765 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4726 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4856 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 6519 */;
+import ChannelStore from "ChannelStore" /* 4641 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6430 */;
+import GuildMemberStore from "GuildMemberStore" /* 4704 */;
+import GuildStore from "GuildStore" /* 4663 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5533 */;
+import RelationshipStore from "RelationshipStore" /* 4734 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4695 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4825 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -75,7 +75,7 @@ function handleConnectionOpenOrResumed(type) {
   if (null != guildId) {
     const channelId = SelectedChannelStore.getChannelId(guildId);
     let tmp11 = guildId;
-    const obj5 = obj4(4697);
+    const obj5 = obj4(4666);
     if (obj5.isFavoritesGuildId(guildId)) {
       tmp11 = guildId;
       if (null != channelId) {

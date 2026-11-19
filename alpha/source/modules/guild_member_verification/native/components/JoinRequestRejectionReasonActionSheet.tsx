@@ -1,14 +1,14 @@
-// Module ID: 13473
-// Function ID: 13474
+// Module ID: 13455
+// Function ID: 13456
 // Name: JoinRequestRejectionReasonActionSheet
-// Dependencies: [5, 32, 19, 21, 4823, 8061, 6434, 4859, 5505, 1113, 5037, 5051, 6928, 7372, 6453, 5421, 2]
+// Dependencies: [5, 32, 19, 21, 4792, 8030, 6405, 4828, 5474, 1113, 5006, 5020, 6898, 7342, 6424, 5390, 2]
 
-// Module 13473 (JoinRequestRejectionReasonActionSheet)
+// Module 13455 (JoinRequestRejectionReasonActionSheet)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let c4;
@@ -63,7 +63,7 @@ class JoinRequestRejectionReasonActionSheet {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         let c3;
@@ -116,7 +116,7 @@ class JoinRequestRejectionReasonActionSheet {
             c3 = 0;
             closure_128_5(false);
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp20) {
           guildId = tmp20;

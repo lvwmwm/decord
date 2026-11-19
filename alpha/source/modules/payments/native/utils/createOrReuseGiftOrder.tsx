@@ -1,14 +1,14 @@
-// Module ID: 9376
-// Function ID: 9377
+// Module ID: 9353
+// Function ID: 9354
 // Name: createOrReuseGiftOrder
-// Dependencies: [5, 19, 5540, 1390, 1083, 3, 1380, 8832, 9151, 9023, 2169, 4635, 2]
+// Dependencies: [5, 19, 5509, 1390, 1083, 3, 1380, 8801, 9127, 8997, 2169, 4605, 2]
 // Exports: useCreateOrReuseGiftOrder
 
-// Module 9376 (createOrReuseGiftOrder)
+// Module 9353 (createOrReuseGiftOrder)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1083 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
-import PaymentConstants from "PaymentConstants" /* 5540 */;
+import PaymentConstants from "PaymentConstants" /* 5509 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -24,7 +24,7 @@ let result = size.fileFinishedImporting("modules/payments/native/utils/createOrR
 
 export function useCreateOrReuseGiftOrder(GiftPurchaseButton) {
   let mobileStoreFront;
-  let obj = mobileStoreFront(9151);
+  let obj = mobileStoreFront(9127);
   mobileStoreFront = obj.useMobileStoreFront();
   const useCallback = react.useCallback;
   let closure_0 = _asyncToGenerator(async function(arg0, value) {
@@ -61,7 +61,7 @@ export function useCreateOrReuseGiftOrder(GiftPurchaseButton) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c4;

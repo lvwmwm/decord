@@ -1,20 +1,20 @@
-// Module ID: 18619
-// Function ID: 18620
+// Module ID: 18612
+// Function ID: 18613
 // Name: useConjurePlanOverlaySlides
-// Dependencies: [32, 19, 4824, 4121, 504, 1113, 2]
+// Dependencies: [32, 19, 4793, 4089, 504, 1113, 2]
 // Exports: useConjurePlanOverlaySlides
 
-// Module 18619 (useConjurePlanOverlaySlides)
-import _modDef4121 from "module_4121" /* 4121 */;
+// Module 18612 (useConjurePlanOverlaySlides)
+import _modDef4089 from "module_4089" /* 4089 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4824 */;
+import AccessibilityStore from "AccessibilityStore" /* 4793 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-let items = [_modDef4121["3eTjcV"], _modDef4121.l3j5nS];
+let items = [_modDef4089["3eTjcV"], _modDef4089.l3j5nS];
 const result = size.fileFinishedImporting("modules/conjure/plan/useConjurePlanOverlaySlides.tsx");
 
 export function useConjurePlanOverlaySlides(arg0) {

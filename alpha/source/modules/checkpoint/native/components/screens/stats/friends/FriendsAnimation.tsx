@@ -1,15 +1,15 @@
-// Module ID: 12703
-// Function ID: 12704
+// Module ID: 12686
+// Function ID: 12687
 // Name: FriendsAnimation
-// Dependencies: [1388, 5877, 21, 1360, 1414, 504, 4879, 4960, 2]
+// Dependencies: [1388, 5848, 21, 1360, 1414, 504, 4848, 4929, 2]
 // Exports: default
 
-// Module 12703 (FriendsAnimation)
+// Module 12686 (FriendsAnimation)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import UserUtils from "UserUtils" /* 4879 */;
-import CheckpointConstants from "CheckpointConstants" /* 5877 */;
+import UserUtils from "UserUtils" /* 4848 */;
+import CheckpointConstants from "CheckpointConstants" /* 5848 */;
 import UserStore from "UserStore" /* 1388 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1360 */;
 import size from "module_2" /* 2 */;
@@ -78,7 +78,7 @@ export default function FriendsAnimation(animationState) {
   }
   const obj3 = { referencedAssets, defaultViewModelInstance: str4, dataBinding: obj4 };
   obj4 = { AnimationState: animationState, "Avatar01/img": userAvatarURL, "Avatar02/img": userAvatarURL1, "Avatar03/img": userAvatarURL2, "Avatar04/img": userAvatarURL3, "Avatar05/img": userAvatarURL4, "Avatar01/Username": toLocaleUpperCaseResult, "Avatar02/Username": toLocaleUpperCaseResult2, "Avatar03/Username": toLocaleUpperCaseResult1, "Avatar04/Username": toLocaleUpperCaseResult, twoFriends };
-  const CheckpointFriendsRive = tmp(4960).CheckpointFriendsRive;
+  const CheckpointFriendsRive = tmp(4929).CheckpointFriendsRive;
   const merged = Object.assign(closure_5);
   userAvatarURL = undefined;
   const tmp7 = jsx;

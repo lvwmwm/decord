@@ -1,12 +1,12 @@
-// Module ID: 8680
-// Function ID: 8681
+// Module ID: 8649
+// Function ID: 8650
 // Name: getRoleIcon
-// Dependencies: [7454, 1113, 2]
+// Dependencies: [7424, 1113, 2]
 // Exports: getRoleIcon
 
-// Module 8680 (getRoleIcon)
+// Module 8649 (getRoleIcon)
 import intl2 from "intl" /* 1113 */;
-import useRoleIconProps from "useRoleIconProps" /* 7454 */;
+import useRoleIconProps from "useRoleIconProps" /* 7424 */;
 import size_mod from "module_2" /* 2 */;
 
 let size = size_mod;

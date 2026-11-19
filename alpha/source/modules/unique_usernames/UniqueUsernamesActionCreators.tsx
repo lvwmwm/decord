@@ -1,9 +1,9 @@
-// Module ID: 15929
-// Function ID: 15930
+// Module ID: 15920
+// Function ID: 15921
 // Name: UniqueUsernamesActionCreators
-// Dependencies: [5, 1072, 1113, 572, 1285, 1256, 6340, 1264, 6257, 2]
+// Dependencies: [5, 1072, 1113, 572, 1285, 1256, 6311, 1264, 6228, 2]
 
-// Module 15929 (UniqueUsernamesActionCreators)
+// Module 15920 (UniqueUsernamesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1072 */;
@@ -36,7 +36,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         let c3;
@@ -99,7 +99,7 @@ let obj = {
               }
             }
             constants = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp16) {
           closure_2 = tmp16;
@@ -160,7 +160,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -260,7 +260,7 @@ let obj = {
               constants = 0;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp68) {
           closure_3 = tmp68;

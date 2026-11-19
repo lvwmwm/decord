@@ -1,11 +1,11 @@
-// Module ID: 10688
-// Function ID: 10689
+// Module ID: 10666
+// Function ID: 10667
 // Name: useVideoSpinnerTimer
-// Dependencies: [32, 19, 10689, 2]
+// Dependencies: [32, 19, 10667, 2]
 // Exports: default
 
-// Module 10688 (useVideoSpinnerTimer)
-import VideoSpinnerTimer from "VideoSpinnerTimer" /* 10689 */;
+// Module 10666 (useVideoSpinnerTimer)
+import VideoSpinnerTimer from "VideoSpinnerTimer" /* 10667 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

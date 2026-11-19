@@ -1,17 +1,17 @@
-// Module ID: 17712
-// Function ID: 17713
+// Module ID: 17705
+// Function ID: 17706
 // Name: useFavoritesGuildHideAction
-// Dependencies: [19, 4856, 1072, 11179, 4697, 1099, 1113, 3701, 2]
+// Dependencies: [19, 4825, 1072, 11157, 4666, 1099, 1113, 3701, 2]
 // Exports: default
 
-// Module 17712 (useFavoritesGuildHideAction)
+// Module 17705 (useFavoritesGuildHideAction)
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import _modDef3701 from "module_3701" /* 3701 */;
-import FavoritesUtils from "FavoritesUtils" /* 4697 */;
-import FavoritesActionCreators from "FavoritesActionCreators" /* 11179 */;
+import FavoritesUtils from "FavoritesUtils" /* 4666 */;
+import FavoritesActionCreators from "FavoritesActionCreators" /* 11157 */;
 import react from "react" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4856 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4825 */;
 import size from "module_2" /* 2 */;
 
 const Routes = Constants.Routes;

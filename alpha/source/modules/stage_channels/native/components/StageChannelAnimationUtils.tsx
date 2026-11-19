@@ -1,15 +1,15 @@
-// Module ID: 11024
-// Function ID: 11025
+// Module ID: 11002
+// Function ID: 11003
 // Name: StageChannelAnimationUtils
-// Dependencies: [1655, 10810, 10807, 1630, 5033, 2]
+// Dependencies: [1655, 10788, 10785, 1630, 5002, 2]
 // Exports: useStageActionBarAnimation
 
-// Module 11024 (StageChannelAnimationUtils)
+// Module 11002 (StageChannelAnimationUtils)
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5033 */;
-import StageChannelHeightHooks from "StageChannelHeightHooks" /* 10807 */;
-import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 10810 */;
+import timing_timing from "timing/timing" /* 5002 */;
+import StageChannelHeightHooks from "StageChannelHeightHooks" /* 10785 */;
+import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 10788 */;
 import size from "module_2" /* 2 */;
 
 let sum, tmp3, tmp4;

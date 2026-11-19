@@ -1,13 +1,13 @@
-// Module ID: 6287
-// Function ID: 6288
+// Module ID: 6259
+// Function ID: 6260
 // Name: HandleConfirmPaymentRegistry
-// Dependencies: [5, 1072, 1083, 6268, 6282, 1285, 2]
+// Dependencies: [5, 1072, 1083, 6240, 6254, 1285, 2]
 // Exports: getIsStripeDirectConfirmationPaymentSource, getIsStripeRedirectedPaymentSource
 
-// Module 6287 (HandleConfirmPaymentRegistry)
+// Module 6259 (HandleConfirmPaymentRegistry)
 import Constants2 from "Constants" /* 1083 */;
-import BillingSharedActionCreators from "BillingSharedActionCreators" /* 6268 */;
-import StripeUtilsAll from "StripeUtils" /* 6282 */;
+import BillingSharedActionCreators from "BillingSharedActionCreators" /* 6240 */;
+import StripeUtilsAll from "StripeUtils" /* 6254 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -253,7 +253,7 @@ class StripePaymentConfirmationHandler extends PaymentConfirmationHandler {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -304,7 +304,7 @@ class StripePaymentConfirmationHandler extends PaymentConfirmationHandler {
             closure_1 = value;
             closure_129_3.performRedirect(closure_1);
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp20) {
           c3 = 3;
@@ -355,7 +355,7 @@ class StripePaymentConfirmationHandler extends PaymentConfirmationHandler {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {

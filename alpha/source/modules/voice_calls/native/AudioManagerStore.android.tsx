@@ -1,9 +1,9 @@
-// Module ID: 9565
-// Function ID: 9566
+// Module ID: 9544
+// Function ID: 9545
 // Name: AudioManagerStore
-// Dependencies: [5, 17, 4726, 1072, 5568, 9566, 3, 12, 1242, 504, 572, 2]
+// Dependencies: [5, 17, 4695, 1072, 5537, 9545, 3, 12, 1242, 504, 572, 2]
 
-// Module 9565 (AudioManagerStore)
+// Module 9544 (AudioManagerStore)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
@@ -11,10 +11,10 @@ import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import Constants2 from "Constants" /* 5568 */;
-import NativeAudioManagerModuleDefault from "NativeAudioManagerModule" /* 9566 */;
+import Constants2 from "Constants" /* 5537 */;
+import NativeAudioManagerModuleDefault from "NativeAudioManagerModule" /* 9545 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4726 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4695 */;
 import size from "module_2" /* 2 */;
 
 const NativeAudioManagerModule_mod = NativeAudioManagerModuleDefault;
@@ -45,7 +45,7 @@ let obj = function _setCommunicationModeOn() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c4;
@@ -92,7 +92,7 @@ let obj = function _setCommunicationModeOn() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp17) {
         closure_3 = tmp17;
@@ -126,7 +126,7 @@ obj = function _setActiveAudioDevice() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c4;
@@ -180,7 +180,7 @@ obj = function _setActiveAudioDevice() {
           c4 = 0;
         }
         c6 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       } catch (tmp21) {
         closure_3 = tmp21;
         if (0 === c4) {

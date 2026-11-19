@@ -1,14 +1,14 @@
-// Module ID: 12315
-// Function ID: 12316
+// Module ID: 12298
+// Function ID: 12299
 // Name: ClockWarningIcon
-// Dependencies: [19, 21, 575, 5509, 12316, 2]
+// Dependencies: [19, 21, 575, 5478, 12299, 2]
 // Exports: ClockWarningIcon
 
-// Module 12315 (ClockWarningIcon)
+// Module 12298 (ClockWarningIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5509 */;
-import AssetRegistry from "AssetRegistry" /* 12316 */;
+import BaseIconImage2 from "BaseIconImage" /* 5478 */;
+import AssetRegistry from "AssetRegistry" /* 12299 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

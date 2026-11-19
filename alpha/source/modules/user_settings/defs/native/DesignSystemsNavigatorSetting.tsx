@@ -1,12 +1,12 @@
-// Module ID: 17302
-// Function ID: 17303
+// Module ID: 17295
+// Function ID: 17296
 // Name: DesignSystemsNavigatorSetting
-// Dependencies: [8624, 1072, 11897, 17303, 2]
+// Dependencies: [8593, 1072, 11875, 17296, 2]
 
-// Module 17302 (DesignSystemsNavigatorSetting)
+// Module 17295 (DesignSystemsNavigatorSetting)
 import Constants from "Constants" /* 1072 */;
-import SettingsConstants from "SettingsConstants" /* 8624 */;
-import SettingBuilders from "SettingBuilders" /* 11897 */;
+import SettingsConstants from "SettingsConstants" /* 8593 */;
+import SettingBuilders from "SettingBuilders" /* 11875 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

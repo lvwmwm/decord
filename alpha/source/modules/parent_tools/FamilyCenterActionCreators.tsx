@@ -1,16 +1,16 @@
-// Module ID: 8249
-// Function ID: 8250
+// Module ID: 8218
+// Function ID: 8219
 // Name: FamilyCenterActionCreators
-// Dependencies: [5, 8250, 8248, 1072, 6412, 7986, 6417, 1285, 572, 1256, 4654, 1196, 1233, 2]
+// Dependencies: [5, 8219, 8217, 1072, 6383, 7955, 6388, 1285, 572, 1256, 4623, 1196, 1233, 2]
 // Exports: getLinkCodeForCurrentUser, removeLinkForUserId, shareIarWithParents, updateLinkForUserId
 
-// Module 8249 (FamilyCenterActionCreators)
+// Module 8218 (FamilyCenterActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import Constants2 from "Constants" /* 6412 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 6417 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 8248 */;
+import Constants2 from "Constants" /* 6383 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 6388 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 8217 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 8250 */;
+import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 8219 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ let obj = function _maybeFetchCollectiblesForInvoices() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -86,7 +86,7 @@ let obj = function _maybeFetchCollectiblesForInvoices() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp4) {
         c1 = 3;
@@ -113,7 +113,7 @@ obj = function _maybeFetchCollectiblesForGifts() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -158,7 +158,7 @@ obj = function _maybeFetchCollectiblesForGifts() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp4) {
         c1 = 3;
@@ -188,7 +188,7 @@ obj = function _requestTeenSettingsAndConsents() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -248,7 +248,7 @@ obj = function _requestTeenSettingsAndConsents() {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp28) {
           if (0 === c3) {
@@ -280,7 +280,7 @@ obj = function _updateLinkForUserId() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -321,7 +321,7 @@ obj = function _updateLinkForUserId() {
             return obj;
           } else {
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp4) {
           c2 = 3;
@@ -350,7 +350,7 @@ obj = function _removeLinkForUserId() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -392,7 +392,7 @@ obj = function _removeLinkForUserId() {
             return obj;
           } else {
             c1 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp4) {
           c1 = 3;
@@ -416,7 +416,7 @@ obj = function _getLinkCodeForCurrentUser() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -459,7 +459,7 @@ obj = function _getLinkCodeForCurrentUser() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp4) {
         c0 = 3;
@@ -481,7 +481,7 @@ obj = function _shareIarWithParents() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -511,7 +511,7 @@ obj = function _shareIarWithParents() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp7) {
         c0 = 3;
@@ -560,7 +560,7 @@ obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         let c14;
@@ -877,7 +877,7 @@ obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         let c11;
@@ -1150,7 +1150,7 @@ obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         let c3;
@@ -1198,7 +1198,7 @@ obj = {
             c3 = 0;
             map.delete(closure_128_0);
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp27) {
           closure_2 = tmp27;
@@ -1251,7 +1251,7 @@ obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -1303,7 +1303,7 @@ obj = {
             obj.dispatch(obj7);
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         } catch (tmp27) {
           c3 = 3;
           throw tmp27;

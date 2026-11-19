@@ -1,10 +1,10 @@
-// Module ID: 17343
-// Function ID: 17344
+// Module ID: 17336
+// Function ID: 17337
 // Name: react
 // Dependencies: [19, 2]
 // Exports: useScrollToInitialIndexOnce
 
-// Module 17343 (react)
+// Module 17336 (react)
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

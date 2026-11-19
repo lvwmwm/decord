@@ -1,10 +1,10 @@
-// Module ID: 5653
-// Function ID: 5654
+// Module ID: 5622
+// Function ID: 5623
 // Name: transformStatsUtils
 // Dependencies: [2]
 // Exports: formatSinkWantAsInt, formatSinkWantStat
 
-// Module 5653 (transformStatsUtils)
+// Module 5622 (transformStatsUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/media-engine/utils/transformStatsUtils.tsx");

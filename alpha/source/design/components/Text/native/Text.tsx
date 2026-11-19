@@ -1,25 +1,25 @@
-// Module ID: 5414
-// Function ID: 5415
+// Module ID: 5383
+// Function ID: 5384
 // Name: Text/Text
-// Dependencies: [109, 19, 17, 1083, 21, 1655, 575, 12, 5415, 5416, 4823, 5418, 5419, 1360, 5420, 299, 2]
+// Dependencies: [109, 19, 17, 1083, 21, 1655, 575, 12, 5384, 5385, 4792, 5387, 5388, 1360, 5389, 299, 2]
 // Exports: Heading
 
-// Module 5414 (Text/Text)
+// Module 5383 (Text/Text)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1360 */;
-import TextVariants from "TextVariants" /* 5415 */;
-import PlainTextExperimentContext from "PlainTextExperimentContext" /* 5418 */;
-import PlainTextEligibility from "PlainTextEligibility" /* 5419 */;
-import _modDef5420 from "module_5420" /* 5420 */;
+import TextVariants from "TextVariants" /* 5384 */;
+import PlainTextExperimentContext from "PlainTextExperimentContext" /* 5387 */;
+import PlainTextEligibility from "PlainTextEligibility" /* 5388 */;
+import _modDef5389 from "module_5389" /* 5389 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import module_1655 from "module_1655" /* 1655 */;
-import useManaTextMigrationHighlight from "useManaTextMigrationHighlight" /* 5416 */;
-import createStyles from "createStyles" /* 4823 */;
+import useManaTextMigrationHighlight from "useManaTextMigrationHighlight" /* 5385 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 class Text {
@@ -92,7 +92,7 @@ class Text {
       StringResult = undefined;
       tmp20 = _objectWithoutProperties(plainTextEligibility, closure_3);
       const tmp21 = jsx;
-      const tmp23 = _modDef5420;
+      const tmp23 = _modDef5389;
       if (null != fontWeight) {
         const _String = String;
         StringResult = String(fontWeight);

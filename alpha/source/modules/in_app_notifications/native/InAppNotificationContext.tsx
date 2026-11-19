@@ -1,10 +1,10 @@
-// Module ID: 11112
-// Function ID: 11113
+// Module ID: 11090
+// Function ID: 11091
 // Name: InAppNotificationContext
 // Dependencies: [19, 2]
 // Exports: useInAppNotificationContext
 
-// Module 11112 (InAppNotificationContext)
+// Module 11090 (InAppNotificationContext)
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

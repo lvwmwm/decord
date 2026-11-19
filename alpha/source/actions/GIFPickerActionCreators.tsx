@@ -1,23 +1,23 @@
-// Module ID: 10054
-// Function ID: 10055
+// Module ID: 10032
+// Function ID: 10033
 // Name: GIFPickerActionCreators
-// Dependencies: [2189, 10055, 1072, 1082, 5560, 10056, 10057, 1285, 572, 12, 1269, 1381, 8522, 4653, 1232, 5768, 1113, 1256, 2]
+// Dependencies: [2189, 10033, 1072, 1082, 5529, 10034, 10035, 1285, 572, 12, 1269, 1381, 8491, 4622, 1232, 5739, 1113, 1256, 2]
 // Exports: addFavoriteGIF, fetchSuggestions, fetchTrending, fetchTrendingGIFs, fetchTrendingSearchTerms, gifUrlKey, initializeSearch, removeFavoriteGIF, resetSearch, search, trackSearchResultViewed, trackSearchStart, trackSelectGIF
 
-// Module 10054 (GIFPickerActionCreators)
+// Module 10032 (GIFPickerActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl3 from "intl" /* 1113 */;
 import frecency_user_settings from "frecency_user_settings" /* 1232 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import v1 from "v1" /* 1269 */;
 import URLUtilsDefault from "URLUtils" /* 1381 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5560 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5768 */;
-import AttachmentUrlUtilsAll from "AttachmentUrlUtils" /* 8522 */;
-import GifProvider from "GifProvider" /* 10056 */;
-import GIFPickerUtils from "GIFPickerUtils" /* 10057 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5529 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5739 */;
+import AttachmentUrlUtilsAll from "AttachmentUrlUtils" /* 8491 */;
+import GifProvider from "GifProvider" /* 10034 */;
+import GIFPickerUtils from "GIFPickerUtils" /* 10035 */;
 import LocaleStore from "LocaleStore" /* 2189 */;
-import GIFPickerViewStore from "GIFPickerViewStore" /* 10055 */;
+import GIFPickerViewStore from "GIFPickerViewStore" /* 10033 */;
 import Constants from "Constants" /* 1072 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import module_12 from "module_12" /* 12 */;
@@ -298,7 +298,7 @@ export function gifUrlKey(uri) {
     const obj2 = AttachmentUrlUtilsAll;
     const tmp5 = importAll;
     if (obj2.isAttachmentPathUrl(toURLSafeResult)) {
-      const tmp5Result = tmp5(8522);
+      const tmp5Result = tmp5(8491);
       const str = tmp5Result.removeSignedUrlParameters(toURLSafeResult);
       str1 = str.toString();
     }
@@ -333,7 +333,7 @@ export function addFavoriteGIF(size) {
             let result = obj6.isExternalProxiedAttachmentUrl(toURLSafeResult);
             const tmp11 = importAll;
             if (!result) {
-              const tmp11Result = tmp11(8522);
+              const tmp11Result = tmp11(8491);
               result = tmp11Result.isAttachmentPathUrl(toURLSafeResult);
             }
             tmp10 = result;
@@ -387,7 +387,7 @@ export function addFavoriteGIF(size) {
             const obj11 = AttachmentUrlUtilsAll;
             const tmp25 = importAll;
             if (obj11.isAttachmentPathUrl(toURLSafeResult1)) {
-              const tmp25Result = tmp25(8522);
+              const tmp25Result = tmp25(8491);
               const str9 = tmp25Result.removeSignedUrlParameters(toURLSafeResult1);
               url = str9.toString();
             }
@@ -427,7 +427,7 @@ export function addFavoriteGIF(size) {
       let result3 = obj3.isExternalProxiedAttachmentUrl(toURLSafeResult2);
       const tmp7 = importAll;
       if (!result3) {
-        const tmp7Result = tmp7(8522);
+        const tmp7Result = tmp7(8491);
         result3 = tmp7Result.isAttachmentPathUrl(toURLSafeResult2);
       }
       tmp6 = result3;
@@ -452,7 +452,7 @@ export function removeFavoriteGIF(uri) {
         const obj2 = AttachmentUrlUtilsAll;
         const tmp7 = importAll;
         if (obj2.isAttachmentPathUrl(toURLSafeResult)) {
-          const tmp7Result = tmp7(8522);
+          const tmp7Result = tmp7(8491);
           const str = tmp7Result.removeSignedUrlParameters(toURLSafeResult);
           str1 = str.toString();
         }

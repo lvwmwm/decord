@@ -1,13 +1,13 @@
-// Module ID: 13162
-// Function ID: 13163
+// Module ID: 13144
+// Function ID: 13145
 // Name: SearchFetcher
-// Dependencies: [5, 4672, 1072, 1089, 3, 1285, 1490, 2]
+// Dependencies: [5, 4641, 1072, 1089, 3, 1285, 1490, 2]
 
-// Module 13162 (SearchFetcher)
+// Module 13144 (SearchFetcher)
 import HTTPUtils from "HTTPUtils" /* 1285 */;
 import _modDef1490 from "module_1490" /* 1490 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4672 */;
+import ChannelStore from "ChannelStore" /* 4641 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -40,7 +40,7 @@ class SearchFetcher {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         let c4;
@@ -88,11 +88,11 @@ class SearchFetcher {
             if (null == config) {
               c4 = 0;
               c6 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             } else if (closure_130_3.isCanceled) {
               c4 = 0;
               c6 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             } else {
               if (200 === config.status) {
                 closure_130_0(config);
@@ -107,7 +107,7 @@ class SearchFetcher {
                 if (closure_130_3.query.attempts > 5) {
                   c4 = 0;
                   c6 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "+60" };
                 } else {
                   const _parseInt = parseInt;
                   closure_1 = parseInt(config.headers["retry-after"]);
@@ -129,7 +129,7 @@ class SearchFetcher {
             }
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         } catch (tmp44) {
           closure_3 = tmp44;
           if (0 === c4) {

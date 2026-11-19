@@ -1,7 +1,7 @@
 // Module ID: 18390
 // Function ID: 18391
 // Name: conjureHistoryRestore
-// Dependencies: [5, 18391, 18387, 1113, 4121, 2]
+// Dependencies: [5, 18391, 18387, 1113, 4089, 2]
 // Exports: rewindDataAfterVersionRestore
 
 // Module 18390 (conjureHistoryRestore)
@@ -30,7 +30,7 @@ let obj = function _runConjureDataRewind() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {

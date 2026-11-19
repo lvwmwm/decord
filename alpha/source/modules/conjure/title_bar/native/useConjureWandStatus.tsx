@@ -1,15 +1,15 @@
-// Module ID: 13695
-// Function ID: 13696
+// Module ID: 13677
+// Function ID: 13678
 // Name: useConjureWandStatus
-// Dependencies: [6529, 13696, 5384, 6844, 1113, 4121, 2]
+// Dependencies: [6500, 13678, 5353, 6814, 1113, 4089, 2]
 // Exports: default
 
-// Module 13695 (useConjureWandStatus)
+// Module 13677 (useConjureWandStatus)
 import intl5 from "intl" /* 1113 */;
-import useMountEffectDefault from "useMountEffect" /* 5384 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 6844 */;
-import useConjureTitleBarStatusDefault from "useConjureTitleBarStatus" /* 13696 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6529 */;
+import useMountEffectDefault from "useMountEffect" /* 5353 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 6814 */;
+import useConjureTitleBarStatusDefault from "useConjureTitleBarStatus" /* 13678 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6500 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/title_bar/native/useConjureWandStatus.tsx");
@@ -32,11 +32,11 @@ export default function useConjureWandStatus() {
   });
   let obj = { working: tmp5, hasBadge: !tmp5 && hasUnread, accessibilityLabel: found.join(", ") };
   const intl = intl5.intl;
-  const items = [intl.string(tmp(4121).uk6jhJ), , , ];
+  const items = [intl.string(tmp(4089).uk6jhJ), , , ];
   let stringResult = null;
   if ("working" === kind) {
     const intl2 = tmp7(1113).intl;
-    stringResult = intl2.string(tmp(4121)["Y8pS+n"]);
+    stringResult = intl2.string(tmp(4089)["Y8pS+n"]);
   }
   items[1] = stringResult;
   let kind1;
@@ -46,7 +46,7 @@ export default function useConjureWandStatus() {
   let stringResult1 = null;
   if ("needs_input" === kind1) {
     const intl3 = tmp7(1113).intl;
-    stringResult1 = intl3.string(tmp(4121).hfIuc7);
+    stringResult1 = intl3.string(tmp(4089).hfIuc7);
   }
   items[2] = stringResult1;
   let kind2;
@@ -56,7 +56,7 @@ export default function useConjureWandStatus() {
   let stringResult2 = null;
   if ("unread" === kind2) {
     const intl4 = tmp7(1113).intl;
-    stringResult2 = intl4.string(tmp(4121)["6XGnHJ"]);
+    stringResult2 = intl4.string(tmp(4089)["6XGnHJ"]);
   }
   items[3] = stringResult2;
   found = items.filter((item) => null != item);

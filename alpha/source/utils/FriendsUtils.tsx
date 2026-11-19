@@ -1,14 +1,14 @@
-// Module ID: 7655
-// Function ID: 7656
+// Module ID: 7625
+// Function ID: 7626
 // Name: FriendsUtils
-// Dependencies: [32, 1072, 1113, 38, 1256, 7171, 2]
+// Dependencies: [32, 1072, 1113, 38, 1256, 7141, 2]
 // Exports: humanizeAbortCodeForA11y, isValidDiscordTag
 
-// Module 7655 (FriendsUtils)
+// Module 7625 (FriendsUtils)
 import _modDef38 from "module_38" /* 38 */;
 import intl8 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import ValidationUtilsDefault from "ValidationUtils" /* 7171 */;
+import ValidationUtilsDefault from "ValidationUtils" /* 7141 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;

@@ -1,18 +1,18 @@
-// Module ID: 11882
-// Function ID: 11883
+// Module ID: 11860
+// Function ID: 11861
 // Name: SlayerStorefrontGiftPreview
-// Dependencies: [19, 17, 21, 4823, 8941, 5414, 1113, 10990, 4021, 2]
+// Dependencies: [19, 17, 21, 4792, 8915, 5383, 1113, 10968, 3989, 2]
 // Exports: default
 
-// Module 11882 (SlayerStorefrontGiftPreview)
+// Module 11860 (SlayerStorefrontGiftPreview)
 import react_native from "react-native" /* 17 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5414 */;
-import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 8941 */;
-import InfoBox from "InfoBox" /* 10990 */;
+import Text_Text from "Text/Text" /* 5383 */;
+import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 8915 */;
+import InfoBox from "InfoBox" /* 10968 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const InfoBoxDefault = InfoBox;
@@ -38,7 +38,7 @@ function WarningBox(application) {
     if (mobileAccountLinkingDisabled) {
       const formatToPlainString2 = intl.formatToPlainString;
       let name;
-      const BMMo2K = tmp4(4021).BMMo2K;
+      const BMMo2K = tmp4(3989).BMMo2K;
       if (application != null) {
         name = application.name;
       }

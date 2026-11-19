@@ -1,26 +1,26 @@
-// Module ID: 18087
-// Function ID: 18088
+// Module ID: 18080
+// Function ID: 18081
 // Name: SoundboardSoundPickerCategories
-// Dependencies: [19, 17, 18071, 1388, 1072, 21, 4823, 575, 6739, 7233, 1113, 11333, 5532, 18085, 9715, 6941, 1187, 7606, 5083, 5039, 5040, 504, 2174, 10909, 1630, 5015, 8113, 7401, 2]
+// Dependencies: [19, 17, 18064, 1388, 1072, 21, 4792, 575, 6710, 7203, 1113, 11311, 5501, 18078, 9694, 6911, 1187, 7576, 5052, 5008, 5009, 504, 2174, 10887, 1630, 4984, 8082, 7371, 2]
 
-// Module 18087 (SoundboardSoundPickerCategories)
+// Module 18080 (SoundboardSoundPickerCategories)
 import nativeDefault from "native" /* 575 */;
-import HapticUtils from "HapticUtils" /* 5039 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5040 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5083 */;
-import SoundboardTypes from "SoundboardTypes" /* 6739 */;
-import GuildIconDefault from "GuildIcon" /* 7233 */;
-import LockIcon from "LockIcon" /* 7606 */;
-import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 10909 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11333 */;
-import ExpressionPickerStore from "ExpressionPickerStore" /* 18071 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 18085 */;
+import HapticUtils from "HapticUtils" /* 5008 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5009 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5052 */;
+import SoundboardTypes from "SoundboardTypes" /* 6710 */;
+import GuildIconDefault from "GuildIcon" /* 7203 */;
+import LockIcon from "LockIcon" /* 7576 */;
+import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 10887 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11311 */;
+import ExpressionPickerStore from "ExpressionPickerStore" /* 18064 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 18078 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size_mod from "module_2" /* 2 */;
 
 let nativeEvent;
@@ -76,7 +76,7 @@ function SoundCategoryItem(style) {
     const intl3 = tmp2(1113).intl;
     name = intl3.string(tmp2(1113).t["+cGVV6"]);
     const obj = { style: tmp.keyboardItem };
-    tmp7 = authStore(tmp2(5532).ClockIcon, obj);
+    tmp7 = authStore(tmp2(5501).ClockIcon, obj);
     tmp6 = null;
     tmp14Result = null;
   } else if (SoundboardTypes.SoundboardSoundGridSectionType.DEFAULTS === type) {
@@ -101,7 +101,7 @@ function SoundCategoryItem(style) {
       const obj3 = { guildName: category.categoryInfo.guild.name };
       name = intl5.formatToPlainString(tmp2(1113).t.GXs41w, obj3);
       const obj4 = { style: tmp.keyboardItem };
-      tmp7 = authStore(tmp2(9715).TrophyIcon, obj4);
+      tmp7 = authStore(tmp2(9694).TrophyIcon, obj4);
       tmp6 = null;
       tmp14Result = null;
     }
@@ -116,7 +116,7 @@ function SoundCategoryItem(style) {
   };
   obj6 = { style: items, children: items1 };
   items = [tmp.item, style];
-  const PressableOpacity = tmp2(6941).PressableOpacity;
+  const PressableOpacity = tmp2(6911).PressableOpacity;
   tmp15 = unpackModuleId;
   if (tmp14Result == null) {
     tmp14Result = tmp7;

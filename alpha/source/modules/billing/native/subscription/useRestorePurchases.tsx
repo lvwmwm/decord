@@ -1,10 +1,10 @@
-// Module ID: 16675
-// Function ID: 16676
+// Module ID: 16668
+// Function ID: 16669
 // Name: useRestorePurchases
-// Dependencies: [5, 32, 19, 3, 9013, 2]
+// Dependencies: [5, 32, 19, 3, 8987, 2]
 // Exports: default
 
-// Module 16675 (useRestorePurchases)
+// Module 16668 (useRestorePurchases)
 import LoggerDefault from "Logger" /* 3 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -39,7 +39,7 @@ export default function useRestorePurchases() {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         let c3;
@@ -95,7 +95,7 @@ export default function useRestorePurchases() {
             closure_129_2(false);
             logger.log("isRestoring false");
             logger = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp39) {
           closure_2 = tmp39;

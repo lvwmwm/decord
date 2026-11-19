@@ -1,23 +1,23 @@
-// Module ID: 20195
-// Function ID: 20196
+// Module ID: 20206
+// Function ID: 20207
 // Name: ParentalConsentConnectionHeader
-// Dependencies: [19, 17, 1388, 21, 4823, 5377, 575, 1630, 504, 5414, 6333, 1113, 3019, 2]
+// Dependencies: [19, 17, 1388, 21, 4792, 5346, 575, 1630, 504, 5383, 6304, 1113, 3019, 2]
 // Exports: ParentalConsentConnectionNavbar
 
-// Module 20195 (ParentalConsentConnectionHeader)
+// Module 20206 (ParentalConsentConnectionHeader)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
 import _modDef3019 from "module_3019" /* 3019 */;
-import NavigatorConstants from "NavigatorConstants" /* 5377 */;
-import Text_Text from "Text/Text" /* 5414 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6333 */;
+import NavigatorConstants from "NavigatorConstants" /* 5346 */;
+import Text_Text from "Text/Text" /* 5383 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6304 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let currentUser;

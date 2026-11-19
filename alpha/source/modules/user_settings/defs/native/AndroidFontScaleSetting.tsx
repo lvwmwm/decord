@@ -1,19 +1,19 @@
-// Module ID: 16777
-// Function ID: 16778
+// Module ID: 16770
+// Function ID: 16771
 // Name: AndroidFontScaleSetting
-// Dependencies: [19, 16730, 1082, 8624, 21, 1263, 16778, 12928, 11897, 1113, 1380, 2]
+// Dependencies: [19, 16723, 1082, 8593, 21, 1263, 16771, 12910, 11875, 1113, 1380, 2]
 
-// Module 16777 (AndroidFontScaleSetting)
+// Module 16770 (AndroidFontScaleSetting)
 import Fragment from "Fragment" /* 21 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import intl2 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import SettingsConstants from "SettingsConstants" /* 8624 */;
-import CirclePlusIcon from "CirclePlusIcon" /* 12928 */;
-import FontScaleStore from "FontScaleStore" /* 16730 */;
-import CircleMinusIcon from "CircleMinusIcon" /* 16778 */;
+import SettingsConstants from "SettingsConstants" /* 8593 */;
+import CirclePlusIcon from "CirclePlusIcon" /* 12910 */;
+import FontScaleStore from "FontScaleStore" /* 16723 */;
+import CircleMinusIcon from "CircleMinusIcon" /* 16771 */;
 import react from "react" /* 19 */;
-import SettingBuilders from "SettingBuilders" /* 11897 */;
+import SettingBuilders from "SettingBuilders" /* 11875 */;
 import size from "module_2" /* 2 */;
 
 function formatFontScale(arg0) {

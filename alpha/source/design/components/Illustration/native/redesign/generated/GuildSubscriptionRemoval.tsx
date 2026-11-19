@@ -1,14 +1,14 @@
-// Module ID: 14749
-// Function ID: 14750
+// Module ID: 14735
+// Function ID: 14736
 // Name: GuildSubscriptionRemoval
-// Dependencies: [19, 21, 7697, 14750, 14751, 14752, 4830, 5510, 2]
+// Dependencies: [19, 21, 7667, 14736, 14737, 14738, 4799, 5479, 2]
 // Exports: GuildSubscriptionRemoval, getGuildSubscriptionRemovalSource, useGuildSubscriptionRemovalSource
 
-// Module 14749 (GuildSubscriptionRemoval)
+// Module 14735 (GuildSubscriptionRemoval)
 import Fragment from "Fragment" /* 21 */;
-import shared from "shared" /* 4830 */;
-import FastImageDefault from "FastImage" /* 5510 */;
-import _mod7697 from "module_7697" /* 7697 */;
+import shared from "shared" /* 4799 */;
+import FastImageDefault from "FastImage" /* 5479 */;
+import _mod7667 from "module_7667" /* 7667 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -27,21 +27,21 @@ const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("design/components/Illustration/native/redesign/generated/GuildSubscriptionRemoval.tsx");
 
 export function getGuildSubscriptionRemovalSource(theme) {
-  const obj = _mod7697;
+  const obj = _mod7667;
   const obj2 = { dark, darker, light };
   return obj.getIllustrationSource(theme, obj2);
 }
 export function useGuildSubscriptionRemovalSource() {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod7697;
+  const obj2 = _mod7667;
   const obj3 = { dark, darker, light };
   return obj2.getIllustrationSource(theme, obj3);
 }
 export function GuildSubscriptionRemoval(arg0) {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod7697;
+  const obj2 = _mod7667;
   const obj3 = { dark, darker, light };
   const illustrationSource = obj2.getIllustrationSource(theme, obj3);
   FastImageDefault;

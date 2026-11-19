@@ -1,13 +1,13 @@
-// Module ID: 13165
-// Function ID: 13166
+// Module ID: 13147
+// Function ID: 13148
 // Name: SmartSearchExperiments
-// Dependencies: [4694, 1072, 1452, 8541, 504, 2]
+// Dependencies: [4663, 1072, 1452, 8510, 504, 2]
 // Exports: isNlpSearchEnabled, useIsNlpSearchEnabled
 
-// Module 13165 (SmartSearchExperiments)
+// Module 13147 (SmartSearchExperiments)
 import Constants from "Constants" /* 1072 */;
-import ConversationExperiments from "ConversationExperiments" /* 8541 */;
-import GuildStore from "GuildStore" /* 4694 */;
+import ConversationExperiments from "ConversationExperiments" /* 8510 */;
+import GuildStore from "GuildStore" /* 4663 */;
 import ApexExperiment_mod from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 

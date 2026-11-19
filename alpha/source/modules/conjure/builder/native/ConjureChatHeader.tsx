@@ -1,18 +1,18 @@
-// Module ID: 18429
-// Function ID: 18430
+// Module ID: 18423
+// Function ID: 18424
 // Name: ConjureChatHeader
-// Dependencies: [19, 17, 8474, 21, 4823, 575, 1630, 8482, 8475, 2]
+// Dependencies: [19, 17, 8443, 21, 4792, 575, 1630, 8451, 8444, 2]
 // Exports: default
 
-// Module 18429 (ConjureChatHeader)
+// Module 18423 (ConjureChatHeader)
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import react_native from "react-native" /* 8474 */;
-import ClientThemesOverrides from "ClientThemesOverrides" /* 8482 */;
+import react_native from "react-native" /* 8443 */;
+import ClientThemesOverrides from "ClientThemesOverrides" /* 8451 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -20,7 +20,7 @@ let closure_4;
 let metroImportDefault;
 let metroRequire;
 let tmp3;
-const PressableNavigatorBackIcon = tmp3(8475);
+const PressableNavigatorBackIcon = tmp3(8444);
 ({ StyleSheet: c3, View: closure_4 } = react_native2);
 const MIN_HEADER_HEIGHT = react_native.MIN_HEADER_HEIGHT;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);

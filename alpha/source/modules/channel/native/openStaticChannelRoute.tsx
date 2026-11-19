@@ -1,21 +1,21 @@
-// Module ID: 11950
-// Function ID: 11951
+// Module ID: 11928
+// Function ID: 11929
 // Name: openStaticChannelRoute
-// Dependencies: [4735, 4729, 4694, 4679, 1072, 6730, 7379, 6337, 11951, 2121, 6776, 5037, 11964, 11973, 1255, 2]
+// Dependencies: [4704, 4698, 4663, 4648, 1072, 6701, 7349, 6308, 11929, 2121, 6748, 5006, 11942, 11951, 1255, 2]
 // Exports: default
 
-// Module 11950 (openStaticChannelRoute)
+// Module 11928 (openStaticChannelRoute)
 import GlobalUtils from "GlobalUtils" /* 1255 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ChannelConstants from "ChannelConstants" /* 4679 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6337 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 6730 */;
-import safeTransitionToDefault from "safeTransitionTo" /* 6776 */;
-import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7379 */;
-import GuildMemberStore from "GuildMemberStore" /* 4735 */;
-import GuildRoleStore from "GuildRoleStore" /* 4729 */;
-import GuildStore from "GuildStore" /* 4694 */;
+import ChannelConstants from "ChannelConstants" /* 4648 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6308 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 6701 */;
+import safeTransitionToDefault from "safeTransitionTo" /* 6748 */;
+import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7349 */;
+import GuildMemberStore from "GuildMemberStore" /* 4704 */;
+import GuildRoleStore from "GuildRoleStore" /* 4698 */;
+import GuildStore from "GuildStore" /* 4663 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -44,14 +44,14 @@ export default function openStaticChannelRoute(arg0) {
         if (features3.has(metroImportDefault.COMMUNITY)) {
           const obj2 = { guildId, defaultTab: GuildOnboardingTab.BROWSE };
           const obj8 = ModalActionCreatorsDefault;
-          obj8.pushLazy(asyncRequire(11951, dependencyMap.paths), obj2, closure_10);
+          obj8.pushLazy(asyncRequire(11929, dependencyMap.paths), obj2, closure_10);
         }
       } else if ("customize" === staticRoute) {
         const features2 = guild.features;
         if (features2.has(metroImportDefault.COMMUNITY)) {
           const obj4 = { guildId, defaultTab: GuildOnboardingTab.CUSTOMIZE };
           const obj6 = ModalActionCreatorsDefault;
-          obj6.pushLazy(asyncRequire(11951, dependencyMap.paths), obj4, closure_10);
+          obj6.pushLazy(asyncRequire(11929, dependencyMap.paths), obj4, closure_10);
         }
       } else {
         if ("home" !== staticRoute) {
@@ -68,7 +68,7 @@ export default function openStaticChannelRoute(arg0) {
                       const _HermesInternal = HermesInternal;
                       ActionSheetActionCreatorsDefault;
                       const obj5 = { role, guildId };
-                      const tmp10 = asyncRequire(11964, dependencyMap.paths);
+                      const tmp10 = asyncRequire(11942, dependencyMap.paths);
                       openLazy(tmp10, "GuildRoleConnectionsConnectAccountsActionSheet-" + role.id, obj5);
                     }
                   }
@@ -76,7 +76,7 @@ export default function openStaticChannelRoute(arg0) {
               }
               const obj7 = { guildId };
               const obj3 = ModalActionCreatorsDefault;
-              obj3.pushLazy(asyncRequire(11973, dependencyMap.paths), obj7);
+              obj3.pushLazy(asyncRequire(11951, dependencyMap.paths), obj7);
             } else {
               const obj = GlobalUtils;
               obj.assertNever(staticRoute);

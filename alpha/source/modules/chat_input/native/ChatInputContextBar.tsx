@@ -1,26 +1,26 @@
-// Module ID: 13219
-// Function ID: 13220
+// Module ID: 13201
+// Function ID: 13202
 // Name: ChatInputContextBar
-// Dependencies: [19, 17, 4824, 8227, 1388, 1072, 21, 1187, 4823, 575, 5387, 5414, 1113, 6941, 7161, 504, 4885, 6250, 9359, 8611, 13220, 4993, 1655, 5033, 1708, 12092, 1256, 12090, 1099, 6249, 13221, 8426, 8470, 8454, 2]
+// Dependencies: [19, 17, 4793, 8196, 1388, 1072, 21, 1187, 4792, 575, 5356, 5383, 1113, 6911, 7131, 504, 4854, 6221, 9336, 8580, 13202, 4962, 1655, 5002, 1708, 12069, 1256, 12067, 1099, 6220, 13203, 8395, 8439, 8423, 2]
 
-// Module 13219 (ChatInputContextBar)
+// Module 13201 (ChatInputContextBar)
 import nativeDefault from "native" /* 575 */;
 import intl9 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import useToken from "useToken" /* 5387 */;
-import Text_Text from "Text/Text" /* 5414 */;
-import Pressables from "Pressables" /* 6941 */;
-import DraftStore2 from "DraftStore" /* 8227 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 8426 */;
-import ScheduledMessageTypes from "ScheduledMessageTypes" /* 8454 */;
-import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 8470 */;
+import useToken from "useToken" /* 5356 */;
+import Text_Text from "Text/Text" /* 5383 */;
+import Pressables from "Pressables" /* 6911 */;
+import DraftStore2 from "DraftStore" /* 8196 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 8395 */;
+import ScheduledMessageTypes from "ScheduledMessageTypes" /* 8423 */;
+import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 8439 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4824 */;
+import AccessibilityStore from "AccessibilityStore" /* 4793 */;
 import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size_mod from "module_2" /* 2 */;
 
 const DraftStore = DraftStore2;
@@ -34,7 +34,7 @@ let hasOwnProperty;
 let map1;
 let tmp4;
 let unpackModuleId;
-const AssetRegistryDefault = tmp4(7161);
+const AssetRegistryDefault = tmp4(7131);
 function ChatInputReplyBarNoAuthor(onCancelReplying) {
   let Icon;
   let PressableOpacity;
@@ -376,8 +376,8 @@ function ContextBarItem(arg0) {
   dependencyMap = undefined;
   ({ children, ref } = arg0);
   let tmp = dependencyMap;
-  obj = sharedValue(4993);
-  backgroundColor = closure_16(obj.useGradientValue(sharedValue(4993).GradientPercentage.END)).contextBar.backgroundColor;
+  obj = sharedValue(4962);
+  backgroundColor = closure_16(obj.useGradientValue(sharedValue(4962).GradientPercentage.END)).contextBar.backgroundColor;
   let tmp2 = closure_17();
   const obj2 = sharedValue(1655);
   sharedValue = obj2.useSharedValue(0);
@@ -471,7 +471,7 @@ let closure_16 = createStyles.createStyles((arg0) => {
   return { contextBar: { backgroundColor: MOBILE_FLOATING_ACCESSORY_BACKGROUND } };
 });
 createStyles = createStyles_mod;
-let closure_17 = createStyles.createStyles(() => {
+const authStore4 = createStyles.createStyles(() => {
   let size1;
   obj = { contextBarRow: { overflow: "hidden", flexDirection: "row", alignItems: "center", paddingHorizontal: nativeDefault.modules.mobile.CHAT_INPUT_CONTEXT_BAR_PADDING_HORIZONTAL, paddingVertical: nativeDefault.modules.mobile.CHAT_INPUT_CONTEXT_BAR_PADDING_VERTICAL, gap: nativeDefault.modules.mobile.CHAT_INPUT_CONTEXT_BAR_GAP }, floatingReplyTextWrapper: { flexShrink: 1, minWidth: 0 }, floatingContextBar: { borderBottomWidth: React3.hairlineWidth, borderBottomColor: nativeDefault.colors.BORDER_MUTED, overflow: "hidden" }, replyMentionButtonActive: { color: nativeDefault.colors.CONTROL_BRAND_FOREGROUND }, replyMentionIcon: size, replyMentionIconActive: { tintColor: nativeDefault.colors.CONTROL_BRAND_FOREGROUND }, floatingRightActions: { flexGrow: 1, flexShrink: 0, flexDirection: "row", alignItems: "center", justifyContent: "flex-end", gap: 8 }, floatingMentionGroup: { flexDirection: "row", alignItems: "center", gap: 2 }, floatingDivider: { width: React3.hairlineWidth, alignSelf: "stretch", backgroundColor: nativeDefault.colors.BORDER_SUBTLE }, floatingCloseIcon: size1 };
   ({ overflow: "hidden", flexDirection: "row", alignItems: "center", paddingHorizontal: nativeDefault.modules.mobile.CHAT_INPUT_CONTEXT_BAR_PADDING_HORIZONTAL, paddingVertical: nativeDefault.modules.mobile.CHAT_INPUT_CONTEXT_BAR_PADDING_VERTICAL, gap: nativeDefault.modules.mobile.CHAT_INPUT_CONTEXT_BAR_GAP });

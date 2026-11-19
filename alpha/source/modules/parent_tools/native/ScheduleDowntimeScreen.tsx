@@ -1,25 +1,25 @@
-// Module ID: 16162
-// Function ID: 16163
+// Module ID: 16153
+// Function ID: 16154
 // Name: ScheduleDowntimeScreen
-// Dependencies: [5, 32, 19, 17, 1388, 1072, 21, 5037, 7533, 2121, 4823, 575, 7673, 1113, 2723, 1502, 7325, 11064, 563, 16163, 16164, 5504, 5530, 5414, 7259, 7467, 6956, 6928, 5421, 2]
+// Dependencies: [5, 32, 19, 17, 1388, 1072, 21, 5006, 7503, 2121, 4792, 575, 7643, 1113, 2723, 1502, 7295, 11042, 563, 16154, 16155, 5473, 5499, 5383, 7229, 7437, 6926, 6898, 5390, 2]
 // Exports: default
 
-// Module 16162 (ScheduleDowntimeScreen)
+// Module 16153 (ScheduleDowntimeScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl11 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
 import _modDef2723 from "module_2723" /* 2723 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
-import InlineNotice2 from "InlineNotice" /* 7673 */;
-import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 11064 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
+import InlineNotice2 from "InlineNotice" /* 7643 */;
+import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 11042 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -118,7 +118,7 @@ export default function ScheduleDowntimeScreen() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         let c3;
@@ -199,7 +199,7 @@ export default function ScheduleDowntimeScreen() {
             closure_128_18(false);
           }
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         } catch (tmp48) {
           closure_2 = tmp48;
           if (0 === c3) {
@@ -370,7 +370,7 @@ export default function ScheduleDowntimeScreen() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c4;
@@ -443,7 +443,7 @@ export default function ScheduleDowntimeScreen() {
           closure_129_18(false);
         }
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       } catch (tmp41) {
         closure_3 = tmp41;
         if (0 === c4) {
@@ -546,7 +546,7 @@ export default function ScheduleDowntimeScreen() {
       arrow: true,
       onPress: function handleStartTimePress() {
           const intl = intl11.intl;
-          const f132185 = (first1) => {
+          const f132137 = (first1) => {
             closure_1_12(first1);
             obj = closure_2_0(rule[17]);
             const result = (obj.timeToMinutes(first1) + 540) % 1440;
@@ -565,7 +565,7 @@ export default function ScheduleDowntimeScreen() {
             }
           };
           ActionSheetActionCreatorsDefault;
-          const tmp3 = asyncRequire(7533, dependencyMap.paths);
+          const tmp3 = asyncRequire(7503, dependencyMap.paths);
           new Date(2025, 0, 1, first1.hours, first1.minutes, 0, 0);
           openLazy(tmp3, "ScheduleDowntimeStartTimePicker", obj);
         }
@@ -595,7 +595,7 @@ export default function ScheduleDowntimeScreen() {
             }
           };
           ActionSheetActionCreatorsDefault;
-          const tmp3 = asyncRequire(7533, dependencyMap.paths);
+          const tmp3 = asyncRequire(7503, dependencyMap.paths);
           new Date(2025, 0, 1, first2.hours, first2.minutes, 0, 0);
           openLazy(tmp3, "ScheduleDowntimeEndTimePicker", obj);
         }

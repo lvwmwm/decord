@@ -1,10 +1,10 @@
-// Module ID: 13495
-// Function ID: 13496
+// Module ID: 13477
+// Function ID: 13478
 // Name: WelcomeScreenActionCreators
 // Dependencies: [5, 1072, 572, 1285, 2]
 // Exports: clearWelcomeScreenSettings, fetchWelcomeScreen, resetWelcomeScreen, saveWelcomeScreen, updateSettings, welcomeScreenViewed
 
-// Module 13495 (WelcomeScreenActionCreators)
+// Module 13477 (WelcomeScreenActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
@@ -55,7 +55,7 @@ obj = function _saveWelcomeScreen() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -104,7 +104,7 @@ obj = function _saveWelcomeScreen() {
               c5 = 0;
             }
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp17) {
           closure_4 = tmp17;

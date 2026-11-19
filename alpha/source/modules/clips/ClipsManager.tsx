@@ -1,32 +1,32 @@
-// Module ID: 20120
-// Function ID: 20121
+// Module ID: 20131
+// Function ID: 20132
 // Name: clips/ClipsManager
-// Dependencies: [32, 5, 5583, 1231, 502, 4672, 2133, 5564, 6304, 1388, 2139, 8353, 1072, 6305, 5568, 20121, 7395, 14479, 5589, 6309, 1256, 4648, 572, 20122, 20123, 14812, 2]
+// Dependencies: [32, 5, 5552, 1231, 502, 4641, 2133, 5533, 6275, 1388, 2139, 8322, 1072, 6276, 5537, 20132, 7365, 14466, 5558, 6280, 1256, 4617, 572, 20133, 20134, 14798, 2]
 
-// Module 20120 (clips/ClipsManager)
+// Module 20131 (clips/ClipsManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import UserSettings from "UserSettings" /* 4648 */;
-import Constants2 from "Constants" /* 5568 */;
-import SystemAnalyticsStore from "SystemAnalyticsStore" /* 5583 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 5589 */;
-import Constants3 from "Constants" /* 6305 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6309 */;
-import ClipsExperiment from "ClipsExperiment" /* 14479 */;
-import AutoclipsExperimentDefault from "AutoclipsExperiment" /* 20122 */;
+import UserSettings from "UserSettings" /* 4617 */;
+import Constants2 from "Constants" /* 5537 */;
+import SystemAnalyticsStore from "SystemAnalyticsStore" /* 5552 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5558 */;
+import Constants3 from "Constants" /* 6276 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6280 */;
+import ClipsExperiment from "ClipsExperiment" /* 14466 */;
+import AutoclipsExperimentDefault from "AutoclipsExperiment" /* 20133 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4672 */;
+import ChannelStore from "ChannelStore" /* 4641 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5564 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 6304 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5533 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 6275 */;
 import UserStore from "UserStore" /* 1388 */;
 import ClipsStore from "ClipsStore" /* 2139 */;
-import ClipsConstants from "ClipsConstants" /* 8353 */;
+import ClipsConstants from "ClipsConstants" /* 8322 */;
 import Constants from "Constants" /* 1072 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
 import size from "module_2" /* 2 */;
 
 const StreamKeyUtilsAll = StreamKeyUtils;
@@ -40,7 +40,7 @@ let closure_19;
 let closure_20;
 let closure_21;
 let tmp;
-const isClipsEnabled = tmp(14812);
+const isClipsEnabled = tmp(14798);
 function getCodecSurvey() {
   return obj(...arguments);
 }
@@ -57,7 +57,7 @@ let obj = function _getCodecSurvey() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c4;
@@ -296,23 +296,30 @@ class ClipsManager extends AutomaticLifecycleManager {
   maybeShowClipsWarning(userId) {
     const channelId = RTCConnectionStore.getChannelId();
     if (null != channelId) {
-      const obj3 = ClipsStore;
-      if (!ClipsStore.getClipsWarningShown(channelId)) {
-        if (userId !== AuthenticationStore.getId()) {
-          if (obj3.isClipsEnabledForUser(userId)) {
-            const self = this;
-            const result = this.shouldUseClipsInUseNotice();
-            let setting = result;
-            if (!setting) {
-              const ClipsAllowVoiceRecording = UserSettings.ClipsAllowVoiceRecording;
-              setting = ClipsAllowVoiceRecording.getSetting();
-            }
-            if (setting) {
-              const obj2 = { type: "CLIPS_SHOW_CALL_WARNING", channelId };
-              obj = DispatcherDefault;
-              obj.dispatch(obj2);
-              if (!result) {
-                self.showClipsToast();
+      const channel = ChannelStore.getChannel(channelId);
+      let isGuildStageVoiceResult;
+      if (channel != null) {
+        isGuildStageVoiceResult = channel.isGuildStageVoice();
+      }
+      if (!isGuildStageVoiceResult) {
+        obj = ClipsStore;
+        if (!ClipsStore.getClipsWarningShown(channelId)) {
+          if (userId !== AuthenticationStore.getId()) {
+            if (obj.isClipsEnabledForUser(userId)) {
+              const self = this;
+              const result = this.shouldUseClipsInUseNotice();
+              let setting = result;
+              if (!setting) {
+                const ClipsAllowVoiceRecording = UserSettings.ClipsAllowVoiceRecording;
+                setting = ClipsAllowVoiceRecording.getSetting();
+              }
+              if (setting) {
+                const obj3 = { type: "CLIPS_SHOW_CALL_WARNING", channelId };
+                const obj2 = DispatcherDefault;
+                obj2.dispatch(obj3);
+                if (!result) {
+                  self.showClipsToast();
+                }
               }
             }
           }
@@ -362,7 +369,7 @@ class ClipsManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -428,7 +435,7 @@ class ClipsManager extends AutomaticLifecycleManager {
               track(CLIPS_DEFAULT_SETTINGS_APPLIED, obj);
             }
             was_hardware_classified = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp42) {
           was_hardware_classified = 3;
@@ -451,7 +458,7 @@ class ClipsManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -482,7 +489,7 @@ class ClipsManager extends AutomaticLifecycleManager {
             obj = c1(dependencyMap[22]);
             obj.dispatch({ type: "CLIPS_ALLOW_VOICE_RECORDING_UPDATE" });
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp11) {
           c2 = 3;
@@ -513,7 +520,7 @@ class ClipsManager extends AutomaticLifecycleManager {
           let tmp7 = tmp6 && classification === tmp.MEETS_AUTO_ENABLE;
           let allowDefaultOn = null;
           if (true === nsfwAllowed) {
-            const tmp2Result = tmp2(20123);
+            const tmp2Result = tmp2(20134);
             allowDefaultOn = tmp2Result.getConfig({ location: "getClipsDefaultSettingsDecision" }).allowDefaultOn;
           }
           const obj2 = { clipsEnabled: tmp7, enableAutoclipping: tmp7, allowVoiceRecording: true === allowDefaultOn, nsfwAllowed, geoAllowed: allowDefaultOn };
@@ -572,7 +579,7 @@ class ClipsManager extends AutomaticLifecycleManager {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         let c3;
@@ -641,7 +648,7 @@ class ClipsManager extends AutomaticLifecycleManager {
             const obj2 = tmp(c3[22]);
             obj2.dispatch({ type: "CLIPS_APPLY_DEFAULT_SETTINGS_COMPLETE" });
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp33) {
           closure_2 = tmp33;
@@ -668,7 +675,7 @@ class ClipsManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         let c3;
@@ -709,7 +716,7 @@ class ClipsManager extends AutomaticLifecycleManager {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp13) {
           closure_2 = tmp13;
@@ -740,7 +747,7 @@ class ClipsManager extends AutomaticLifecycleManager {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -810,7 +817,7 @@ class ClipsManager extends AutomaticLifecycleManager {
               return obj;
             }
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp34) {
           c3 = 3;

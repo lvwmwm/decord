@@ -1,15 +1,15 @@
-// Module ID: 8013
-// Function ID: 8014
+// Module ID: 7982
+// Function ID: 7983
 // Name: CollectiblesPurchaseRecord
-// Dependencies: [7990, 7991, 7989, 1074, 1072, 2170, 2]
+// Dependencies: [7959, 7960, 7958, 1074, 1072, 2170, 2]
 
-// Module 8013 (CollectiblesPurchaseRecord)
+// Module 7982 (CollectiblesPurchaseRecord)
 import Constants from "Constants" /* 1072 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import getPricesFromServerDefault from "getPricesFromServer" /* 2170 */;
-import CollectiblesProductRecord from "CollectiblesProductRecord" /* 7989 */;
-import CollectiblesItemRecord from "CollectiblesItemRecord" /* 7991 */;
-import CollectiblesBundledProductRecord from "CollectiblesBundledProductRecord" /* 7990 */;
+import CollectiblesProductRecord from "CollectiblesProductRecord" /* 7958 */;
+import CollectiblesItemRecord from "CollectiblesItemRecord" /* 7960 */;
+import CollectiblesBundledProductRecord from "CollectiblesBundledProductRecord" /* 7959 */;
 import size from "module_2" /* 2 */;
 
 let sku_id;

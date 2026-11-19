@@ -1,17 +1,17 @@
-// Module ID: 14244
-// Function ID: 14245
+// Module ID: 14227
+// Function ID: 14228
 // Name: UserProfileEmbed
-// Dependencies: [6867, 1388, 8350, 8592, 1113, 7984, 8157, 5851, 12182, 2]
+// Dependencies: [6837, 1388, 8319, 8561, 1113, 7953, 8126, 5822, 12161, 2]
 // Exports: createUserProfileEmbed
 
-// Module 14244 (UserProfileEmbed)
+// Module 14227 (UserProfileEmbed)
 import intl5 from "intl" /* 1113 */;
-import useDisplayProfile from "useDisplayProfile" /* 7984 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8157 */;
-import Constants from "Constants" /* 8350 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8592 */;
-import UserProfileEmbedRenderingMobileExperiment from "UserProfileEmbedRenderingMobileExperiment" /* 12182 */;
-import UserProfileStore from "UserProfileStore" /* 6867 */;
+import useDisplayProfile from "useDisplayProfile" /* 7953 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8126 */;
+import Constants from "Constants" /* 8319 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8561 */;
+import UserProfileEmbedRenderingMobileExperiment from "UserProfileEmbedRenderingMobileExperiment" /* 12161 */;
+import UserProfileStore from "UserProfileStore" /* 6837 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
@@ -96,7 +96,7 @@ export function createUserProfileEmbed(code, guild_id, arg2) {
       tmpResult2 = renderer_EmbedUtils;
       const intl2 = tmp(1113).intl;
       str3 = intl2.string(intl5.t.JxM9jQ);
-      tmp9Result = tmp9(5851);
+      tmp9Result = tmp9(5822);
       intl3 = tmp(1113).intl;
       ({ acceptLabelGreenColor: obj5.acceptLabelColor, acceptLabelGreenBackgroundColor: obj5.acceptLabelBackgroundColor } = colors);
     }

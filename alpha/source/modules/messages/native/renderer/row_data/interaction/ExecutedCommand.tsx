@@ -1,24 +1,24 @@
-// Module ID: 14206
-// Function ID: 14207
+// Module ID: 14189
+// Function ID: 14190
 // Name: ExecutedCommand
-// Dependencies: [17, 1407, 4672, 1388, 1072, 1417, 1414, 6249, 10505, 575, 8226, 5881, 8611, 8613, 7377, 1113, 10634, 2]
+// Dependencies: [17, 1407, 4641, 1388, 1072, 1417, 1414, 6220, 10483, 575, 8195, 5852, 8580, 8582, 7347, 1113, 10612, 2]
 // Exports: createExecutedCommand
 
-// Module 14206 (ExecutedCommand)
+// Module 14189 (ExecutedCommand)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import InteractionTypes from "InteractionTypes" /* 5881 */;
-import useMessageAuthor from "useMessageAuthor" /* 6249 */;
-import ActivitiesInTextUtils from "ActivitiesInTextUtils" /* 7377 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8226 */;
-import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8611 */;
-import createDisplayNameStylesMobile from "createDisplayNameStylesMobile" /* 8613 */;
-import ApplicationInteractionInfoUtils from "ApplicationInteractionInfoUtils" /* 10505 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 10634 */;
+import InteractionTypes from "InteractionTypes" /* 5852 */;
+import useMessageAuthor from "useMessageAuthor" /* 6220 */;
+import ActivitiesInTextUtils from "ActivitiesInTextUtils" /* 7347 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8195 */;
+import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8580 */;
+import createDisplayNameStylesMobile from "createDisplayNameStylesMobile" /* 8582 */;
+import ApplicationInteractionInfoUtils from "ApplicationInteractionInfoUtils" /* 10483 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 10612 */;
 import UserRecord from "UserRecord" /* 1407 */;
-import ChannelStore from "ChannelStore" /* 4672 */;
+import ChannelStore from "ChannelStore" /* 4641 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 

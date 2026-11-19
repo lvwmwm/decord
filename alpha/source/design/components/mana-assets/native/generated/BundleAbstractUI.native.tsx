@@ -1,26 +1,26 @@
-// Module ID: 16482
-// Function ID: 16483
+// Module ID: 16473
+// Function ID: 16474
 // Name: BundleAbstractUI
-// Dependencies: [19, 21, 16483, 16484, 16485, 7268, 5510, 2]
+// Dependencies: [19, 21, 16474, 16475, 16476, 7238, 5479, 2]
 // Exports: BundleAbstractUI
 
-// Module 16482 (BundleAbstractUI)
+// Module 16473 (BundleAbstractUI)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 7268 */;
-import _modDef16483 from "module_16483" /* 16483 */;
-import _modDef16484 from "module_16484" /* 16484 */;
-import _modDef16485 from "module_16485" /* 16485 */;
+import react_native from "react-native" /* 7238 */;
+import _modDef16474 from "module_16474" /* 16474 */;
+import _modDef16475 from "module_16475" /* 16475 */;
+import _modDef16476 from "module_16476" /* 16476 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef16483 };
+let obj2 = { uri: _modDef16474 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef16484 };
+let obj3 = { uri: _modDef16475 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef16485 };
-({ uri: _modDef16485 });
+obj[3] = { uri: _modDef16476 };
+({ uri: _modDef16476 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/BundleAbstractUI.native.tsx");
 

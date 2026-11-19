@@ -1,9 +1,9 @@
-// Module ID: 5869
-// Function ID: 5870
+// Module ID: 5840
+// Function ID: 5841
 // Name: SoundboardStore
-// Dependencies: [32, 1231, 5564, 1388, 5870, 5871, 1072, 1082, 1089, 559, 5580, 2169, 12, 4648, 1256, 5727, 11, 504, 572, 2]
+// Dependencies: [32, 1231, 5533, 1388, 5841, 5842, 1072, 1082, 1089, 559, 5549, 2169, 12, 4617, 1256, 5696, 11, 504, 572, 2]
 
-// Module 5869 (SoundboardStore)
+// Module 5840 (SoundboardStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import BackoffDefault from "Backoff" /* 559 */;
@@ -13,15 +13,15 @@ import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import _modDef2169 from "module_2169" /* 2169 */;
-import UserSettings from "UserSettings" /* 4648 */;
-import FrecencyDefault from "Frecency" /* 5580 */;
-import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 5727 */;
+import UserSettings from "UserSettings" /* 4617 */;
+import FrecencyDefault from "Frecency" /* 5549 */;
+import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 5696 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5564 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5533 */;
 import UserStore from "UserStore" /* 1388 */;
-import TopSoundboardSoundStore from "TopSoundboardSoundStore" /* 5870 */;
-import SoundboardConstants from "SoundboardConstants" /* 5871 */;
+import TopSoundboardSoundStore from "TopSoundboardSoundStore" /* 5841 */;
+import SoundboardConstants from "SoundboardConstants" /* 5842 */;
 import module_12_mod from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -193,8 +193,8 @@ class SoundboardStore extends Store {
   getSounds() {
     return map;
   }
-  getSoundsForGuild(arg0) {
-    return map.get(arg0);
+  getSoundsForGuild(guildId) {
+    return map.get(guildId);
   }
   getSound(arg0, arg1) {
     let closure_0 = arg1;

@@ -1,15 +1,15 @@
-// Module ID: 15111
-// Function ID: 15112
+// Module ID: 15097
+// Function ID: 15098
 // Name: GameOrganizationInviteList
-// Dependencies: [19, 21, 4823, 575, 5398, 15112, 7401, 1187, 1113, 2]
+// Dependencies: [19, 21, 4792, 575, 5367, 15098, 7371, 1187, 1113, 2]
 // Exports: default
 
-// Module 15111 (GameOrganizationInviteList)
+// Module 15097 (GameOrganizationInviteList)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import GameOrganizationInviteRowDefault from "GameOrganizationInviteRow" /* 15112 */;
+import GameOrganizationInviteRowDefault from "GameOrganizationInviteRow" /* 15098 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 function keyExtractor(id) {

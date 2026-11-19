@@ -1,29 +1,29 @@
-// Module ID: 8333
-// Function ID: 8334
+// Module ID: 8302
+// Function ID: 8303
 // Name: AnalyticsActions
-// Dependencies: [5, 8334, 1362, 8316, 1072, 8167, 8336, 8312, 8337, 8339, 8342, 6473, 5560, 1256, 8343, 8289, 1380, 1269, 8348, 6469, 2]
+// Dependencies: [5, 8303, 1362, 8285, 1072, 8136, 8305, 8281, 8306, 8308, 8311, 6444, 5529, 1256, 8312, 8258, 1380, 1269, 8317, 6440, 2]
 // Exports: createAppStoreOverlayCarouselScrollTracker, getAdSessionProperties, getAppStoreOverlayStoreAppIds, trackAdContentAppStoreOverlayEvent, trackAdContentClicked, trackAdContentQuestBarOrDockModeChange, trackAdContentRenderingFailure, trackAppStoreOverlayCarouselScroll, trackAppStoreOverlayEvent, trackBountyCarouselEmptyStateViewed, trackBountyVerticalScroll, trackQuestContentClicked, trackQuestContentQuestBarOrDockModeChange, trackQuestContentRenderingFailure, trackQuestEmbedFallbackViewed, trackQuestHomeCarouselScroll, trackQuestHomeOrbShopCarouselScroll, trackQuestHomeOrbShopCarouselViewed, trackQuestHomeSearchClosed, trackQuestHomeSearchEntered, trackQuestHomeSearchQuerySubmitted
 
-// Module 8333 (AnalyticsActions)
+// Module 8302 (AnalyticsActions)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5560 */;
-import QuestTypes from "QuestTypes" /* 6469 */;
-import QuestDataUtils from "QuestDataUtils" /* 8312 */;
-import SessionAdGenerator from "SessionAdGenerator" /* 8336 */;
-import utils_QuestUtils from "utils/QuestUtils" /* 8337 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 8339 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 8342 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5529 */;
+import QuestTypes from "QuestTypes" /* 6440 */;
+import QuestDataUtils from "QuestDataUtils" /* 8281 */;
+import SessionAdGenerator from "SessionAdGenerator" /* 8305 */;
+import utils_QuestUtils from "utils/QuestUtils" /* 8306 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 8308 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8311 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import DevToolsSettingsStore from "DevToolsSettingsStore" /* 8334 */;
+import DevToolsSettingsStore from "DevToolsSettingsStore" /* 8303 */;
 import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1362 */;
-import QuestStore from "QuestStore" /* 8316 */;
+import QuestStore from "QuestStore" /* 8285 */;
 import size from "module_2" /* 2 */;
 
 let _null, _null2, _null3;
 
 let tmp;
-const SessionHeartbeatScheduler = tmp(8167);
+const SessionHeartbeatScheduler = tmp(8136);
 function getCommonProperties(adContentId, sourceQuestContent, QUEST, shouldExtendSession) {
   let creative_type;
   obj = SessionAdGenerator;
@@ -80,7 +80,7 @@ function trackQuestEvent(questId) {
     obj = {};
     const id = value.id;
     tmp21Result = AnalyticsTypes;
-    const merged = Object.assign(getCommonProperties(id, sourceQuestContent, tmp21(6473).AdCreativeType.QUEST, shouldExtendSession));
+    const merged = Object.assign(getCommonProperties(id, sourceQuestContent, tmp21(6444).AdCreativeType.QUEST, shouldExtendSession));
     const merged1 = Object.assign(obj2);
     const merged2 = Object.assign(properties);
     const preview = value.preview;
@@ -213,7 +213,7 @@ let obj = function _getCommonClickEventProperties() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {

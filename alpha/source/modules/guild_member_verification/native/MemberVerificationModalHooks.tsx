@@ -1,12 +1,12 @@
-// Module ID: 7222
-// Function ID: 7223
+// Module ID: 7192
+// Function ID: 7193
 // Name: MemberVerificationModalHooks
-// Dependencies: [19, 1388, 7223, 504, 4859, 2]
+// Dependencies: [19, 1388, 7193, 504, 4828, 2]
 // Exports: useInitialVerification, useSetInitialVerificationEffect, useUserVerificationState
 
-// Module 7222 (MemberVerificationModalHooks)
+// Module 7192 (MemberVerificationModalHooks)
 import get_initialized from "get initialized" /* 504 */;
-import InitialMemberVerificationStore2 from "InitialMemberVerificationStore" /* 7223 */;
+import InitialMemberVerificationStore2 from "InitialMemberVerificationStore" /* 7193 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
@@ -15,7 +15,7 @@ const require = globalThis.__r;
 const InitialMemberVerificationStore = InitialMemberVerificationStore2;
 let _require, currentUser;
 
-const f91963 = () => {
+const f91907 = () => {
   let obj;
   currentUser = currentUser.getCurrentUser();
   let flag;
@@ -41,7 +41,7 @@ const f91963 = () => {
   obj[PHONE] = flag2;
   return obj;
 };
-const f91964 = () => initialVerificationState.getInitialVerificationState(closure_0);
+const f91908 = () => initialVerificationState.getInitialVerificationState(closure_0);
 let react = react_mod;
 const setInitialVerification = InitialMemberVerificationStore2.setInitialVerification;
 const result = size.fileFinishedImporting("modules/guild_member_verification/native/MemberVerificationModalHooks.tsx");
@@ -54,7 +54,7 @@ export function useSetInitialVerificationEffect(guildId) {
   let obj2;
   let obj3;
   let ref;
-  const current = { initial: obj2.useStateFromStores(items, f91964, items1), current: obj3.useStateFromStoresObject(items2, f91963) };
+  const current = { initial: obj2.useStateFromStores(items, f91908, items1), current: obj3.useStateFromStoresObject(items2, f91907) };
   _require = guildId;
   items = [InitialMemberVerificationStore];
   items1 = [guildId];
@@ -76,12 +76,12 @@ export function useSetInitialVerificationEffect(guildId) {
 export function useUserVerificationState() {
   const items = [UserStore];
   const obj = get_initialized;
-  return obj.useStateFromStoresObject(items, f91963);
+  return obj.useStateFromStoresObject(items, f91907);
 }
 export function useInitialVerification(id) {
   _require = id;
   const items = [InitialMemberVerificationStore];
   const items1 = [id];
   const obj = require("get initialized");
-  return obj.useStateFromStores(items, f91964, items1);
+  return obj.useStateFromStores(items, f91908, items1);
 }

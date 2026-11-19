@@ -1,10 +1,10 @@
-// Module ID: 14818
-// Function ID: 14819
+// Module ID: 14804
+// Function ID: 14805
 // Name: Hook
 // Dependencies: [2]
 // Exports: attachToProcess, cancelAttachToProcess, connectToHook, findSteamProcess
 
-// Module 14818 (Hook)
+// Module 14804 (Hook)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("lib/hook/Hook.native.tsx");

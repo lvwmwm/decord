@@ -1,14 +1,14 @@
-// Module ID: 8629
-// Function ID: 8630
+// Module ID: 8598
+// Function ID: 8599
 // Name: RemoveRecipientSystemMessage
-// Dependencies: [4676, 4672, 1388, 8610, 8612, 1113, 8614, 2]
+// Dependencies: [4645, 4641, 1388, 8579, 8581, 1113, 8583, 2]
 // Exports: createRemoveRecipientSystemMessage
 
-// Module 8629 (RemoveRecipientSystemMessage)
-import ChannelRecord from "ChannelRecord" /* 4676 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8610 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8612 */;
-import ChannelStore from "ChannelStore" /* 4672 */;
+// Module 8598 (RemoveRecipientSystemMessage)
+import ChannelRecord from "ChannelRecord" /* 4645 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8579 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8581 */;
+import ChannelStore from "ChannelStore" /* 4641 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ export function createRemoveRecipientSystemMessage(message) {
       formatToPartsResult = formatToParts(t["Qn5+Lf"], obj2);
     }
     const obj3 = { content: formatToPartsResult };
-    const merged = Object.assign(tmp8(8614)(message));
+    const merged = Object.assign(tmp8(8583)(message));
     return obj3;
   } else {
     let formatToParts2Result;
@@ -56,7 +56,7 @@ export function createRemoveRecipientSystemMessage(message) {
       formatToParts2Result = formatToParts2(t2.QtZ0RD, obj4);
     }
     const obj6 = { content: formatToParts2Result };
-    const merged2 = Object.assign(tmp8(8614)(message));
+    const merged2 = Object.assign(tmp8(8583)(message));
     return obj6;
   }
 }

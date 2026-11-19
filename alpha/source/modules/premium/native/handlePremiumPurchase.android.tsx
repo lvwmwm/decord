@@ -1,18 +1,18 @@
-// Module ID: 9038
-// Function ID: 9039
+// Module ID: 9012
+// Function ID: 9013
 // Name: handlePremiumPurchase
-// Dependencies: [109, 5, 19, 9039, 502, 2179, 8722, 1072, 1083, 1285, 9040, 6257, 9041, 1113, 4643, 5768, 8082, 504, 8730, 9047, 9048, 9112, 9113, 6767, 4635, 9114, 1256, 2]
+// Dependencies: [109, 5, 19, 9013, 502, 2179, 8691, 1072, 1083, 1285, 9014, 6228, 9015, 1113, 6230, 5739, 8051, 504, 8699, 9021, 9022, 9088, 9089, 6738, 4605, 9090, 1256, 2]
 // Exports: useHandlePremiumPurchase
 
-// Module 9038 (handlePremiumPurchase)
+// Module 9012 (handlePremiumPurchase)
 import Constants2 from "Constants" /* 1083 */;
-import GPlayAnalyticsStore from "GPlayAnalyticsStore" /* 9039 */;
+import GPlayAnalyticsStore from "GPlayAnalyticsStore" /* 9013 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import SubscriptionStore from "SubscriptionStore" /* 2179 */;
-import IAPStore from "IAPStore" /* 8722 */;
+import IAPStore from "IAPStore" /* 8691 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -45,7 +45,7 @@ let obj = function _validatePurchase() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -110,7 +110,7 @@ let obj = function _validatePurchase() {
             } else {
               price = 0;
               c6 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             }
           }
         } catch (tmp19) {

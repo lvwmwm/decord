@@ -1,18 +1,18 @@
-// Module ID: 19153
-// Function ID: 19154
+// Module ID: 19145
+// Function ID: 19146
 // Name: IncentivizedAccountLinkConfirmationPromoSheet
-// Dependencies: [19, 4824, 21, 4823, 504, 5510, 17376, 17377, 11185, 5037, 2]
+// Dependencies: [19, 4793, 21, 4792, 504, 5479, 17369, 17370, 11163, 5006, 2]
 // Exports: default
 
-// Module 19153 (IncentivizedAccountLinkConfirmationPromoSheet)
+// Module 19145 (IncentivizedAccountLinkConfirmationPromoSheet)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
-import FastImageDefault from "FastImage" /* 5510 */;
-import PromoSheet from "PromoSheet" /* 11185 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
+import FastImageDefault from "FastImage" /* 5479 */;
+import PromoSheet from "PromoSheet" /* 11163 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4824 */;
-import createStyles from "createStyles" /* 4823 */;
+import AccessibilityStore from "AccessibilityStore" /* 4793 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -29,7 +29,7 @@ export default function IncentivizedAccountLinkConfirmationPromoSheet(arg0) {
   let obj = get_initialized;
   const items = [AccessibilityStore];
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  const obj3 = { uri: importDefault(stateFromStores ? 17376 : 17377) };
+  const obj3 = { uri: importDefault(stateFromStores ? 17369 : 17370) };
   FastImageDefault;
   return jsx(PromoSheet.PromoSheet, {
     title,

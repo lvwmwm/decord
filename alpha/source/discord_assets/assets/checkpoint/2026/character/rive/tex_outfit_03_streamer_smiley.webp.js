@@ -1,8 +1,8 @@
-// Module ID: 12547
-// Function ID: 12548
+// Module ID: 12530
+// Function ID: 12531
 // Dependencies: [2]
 
-// Module 12547
+// Module 12530
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_outfit_03_streamer_smiley.webp.js");

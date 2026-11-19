@@ -1,11 +1,11 @@
-// Module ID: 19671
-// Function ID: 19672
+// Module ID: 19667
+// Function ID: 19668
 // Name: InterestGuildsResource
-// Dependencies: [5, 17879, 2]
+// Dependencies: [5, 17872, 2]
 // Exports: interestGuildsKey
 
-// Module 19671 (InterestGuildsResource)
-import InterestGamePickerConstants from "InterestGamePickerConstants" /* 17879 */;
+// Module 19667 (InterestGuildsResource)
+import InterestGamePickerConstants from "InterestGamePickerConstants" /* 17872 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -132,7 +132,7 @@ class InterestGuildsResource {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -185,7 +185,7 @@ class InterestGuildsResource {
               closure_129_3.publish(obj);
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp29) {
           if (0 === guilds) {

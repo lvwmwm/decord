@@ -1,12 +1,12 @@
-// Module ID: 19069
-// Function ID: 19070
+// Module ID: 19061
+// Function ID: 19062
 // Name: useMessageRequestsCount
-// Dependencies: [6542, 504, 2]
+// Dependencies: [6513, 504, 2]
 // Exports: useMessageRequestsCount
 
-// Module 19069 (useMessageRequestsCount)
+// Module 19061 (useMessageRequestsCount)
 import get_initialized from "get initialized" /* 504 */;
-import MessageRequestStore from "MessageRequestStore" /* 6542 */;
+import MessageRequestStore from "MessageRequestStore" /* 6513 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/message_request/hooks/useMessageRequestsCount.tsx");

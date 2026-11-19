@@ -1,11 +1,11 @@
-// Module ID: 4719
-// Function ID: 4720
+// Module ID: 4688
+// Function ID: 4689
 // Name: react-native
-// Dependencies: [4720, 2]
+// Dependencies: [4689, 2]
 // Exports: getUserId, setUserId
 
-// Module 4719 (react-native)
-import react_nativeDefault from "react-native" /* 4720 */;
+// Module 4688 (react-native)
+import react_nativeDefault from "react-native" /* 4689 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/app_database/system/StartupData.native.tsx");

@@ -1,16 +1,16 @@
-// Module ID: 6759
-// Function ID: 6760
+// Module ID: 6730
+// Function ID: 6731
 // Name: SocialLayerStorefrontStore
 // Dependencies: [2189, 502, 504, 572, 2]
 
-// Module 6759 (SocialLayerStorefrontStore)
+// Module 6730 (SocialLayerStorefrontStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import LocaleStore from "LocaleStore" /* 2189 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
 
-let closure_18, locale;
+let closure_17, locale;
 
 function handleUserSettingsStoreUpdate() {
   if (locale === LocaleStore.locale) {
@@ -34,8 +34,8 @@ new Set();
 obj = { state: "idle" };
 let set1 = new Set();
 let set = set1;
-let closure_17 = {};
 const authStore4 = {};
+let closure_18 = {};
 let closure_19 = {};
 let closure_20 = {};
 const set2 = new Set();

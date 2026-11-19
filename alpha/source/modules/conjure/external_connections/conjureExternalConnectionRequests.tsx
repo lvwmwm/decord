@@ -1,11 +1,11 @@
 // Module ID: 18385
 // Function ID: 18386
 // Name: conjureExternalConnectionRequests
-// Dependencies: [5, 14667, 18386, 2]
+// Dependencies: [5, 14653, 18386, 2]
 // Exports: fetchProjectMcpConnection, formatMcpConnectionExpiry, requestExternalAuthorizeUrl
 
 // Module 18385 (conjureExternalConnectionRequests)
-import conjureWorkerFetch from "conjureWorkerFetch" /* 14667 */;
+import conjureWorkerFetch from "conjureWorkerFetch" /* 14653 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let obj = function _fetchProjectMcpConnection() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -152,7 +152,7 @@ obj = function _requestExternalAuthorizeUrl() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {

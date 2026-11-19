@@ -1,13 +1,13 @@
-// Module ID: 7660
-// Function ID: 7661
+// Module ID: 7630
+// Function ID: 7631
 // Name: sanitizeChannelName
-// Dependencies: [1093, 7661, 5864, 2]
+// Dependencies: [1093, 7631, 5835, 2]
 // Exports: default
 
-// Module 7660 (sanitizeChannelName)
+// Module 7630 (sanitizeChannelName)
 import ChannelTypes from "ChannelTypes" /* 1093 */;
-import sanitizeGuildTextChannelNameDefault from "sanitizeGuildTextChannelName" /* 5864 */;
-import sanitizeThreadNameDefault from "sanitizeThreadName" /* 7661 */;
+import sanitizeGuildTextChannelNameDefault from "sanitizeGuildTextChannelName" /* 5835 */;
+import sanitizeThreadNameDefault from "sanitizeThreadName" /* 7631 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/channel/sanitizeChannelName.tsx");

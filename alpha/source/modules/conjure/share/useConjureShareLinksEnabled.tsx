@@ -1,11 +1,11 @@
-// Module ID: 18325
-// Function ID: 18326
+// Module ID: 18318
+// Function ID: 18319
 // Name: useConjureShareLinksEnabled
-// Dependencies: [32, 5, 19, 6844, 2]
+// Dependencies: [32, 5, 19, 6814, 2]
 // Exports: default
 
-// Module 18325 (useConjureShareLinksEnabled)
-import ConjureActionCreators from "ConjureActionCreators" /* 6844 */;
+// Module 18318 (useConjureShareLinksEnabled)
+import ConjureActionCreators from "ConjureActionCreators" /* 6814 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -31,7 +31,7 @@ let obj = function _readShareLinksEnabled() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c4;
@@ -125,7 +125,7 @@ export default function useConjureShareLinksEnabled(arg0) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } else {
           try {
@@ -163,7 +163,7 @@ export default function useConjureShareLinksEnabled(arg0) {
                 }
               }
               c3 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             }
           } catch (tmp22) {
             c3 = 3;
@@ -193,7 +193,7 @@ export default function useConjureShareLinksEnabled(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -229,7 +229,7 @@ export default function useConjureShareLinksEnabled(arg0) {
               closure_129_3(closure_0);
             }
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp18) {
           c3 = 3;

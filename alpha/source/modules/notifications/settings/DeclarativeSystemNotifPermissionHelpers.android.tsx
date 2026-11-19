@@ -1,16 +1,16 @@
-// Module ID: 17477
-// Function ID: 17478
+// Module ID: 17470
+// Function ID: 17471
 // Name: DeclarativeSystemNotifPermissionHelpers
-// Dependencies: [17, 15583, 15584, 15590, 15587, 4780, 1379, 7282, 2]
+// Dependencies: [17, 15569, 15570, 15576, 15573, 4749, 1379, 7252, 2]
 // Exports: openSystemNotifSettings, refreshSystemNotifPermissions
 
-// Module 17477 (DeclarativeSystemNotifPermissionHelpers)
+// Module 17470 (DeclarativeSystemNotifPermissionHelpers)
 import react_native from "react-native" /* 17 */;
 import react_nativeAll from "react-native" /* 1379 */;
-import DeviceUtils from "DeviceUtils" /* 4780 */;
-import react_nativeDefault from "react-native" /* 7282 */;
-import NotificationSettingsConstants from "NotificationSettingsConstants" /* 15583 */;
-import NotifSettings from "NotifSettings" /* 15584 */;
+import DeviceUtils from "DeviceUtils" /* 4749 */;
+import react_nativeDefault from "react-native" /* 7252 */;
+import NotificationSettingsConstants from "NotificationSettingsConstants" /* 15569 */;
+import NotifSettings from "NotifSettings" /* 15570 */;
 import size from "module_2" /* 2 */;
 
 let map, set;
@@ -21,7 +21,7 @@ let items2;
 let items3;
 function refreshSystemNotifPermissions() {
   let settings;
-  const tmp = settings(15590);
+  const tmp = settings(15576);
   let androidNotifChannelStates;
   if (tmp != null) {
     const getAndroidNotifChannelStates = tmp.getAndroidNotifChannelStates;
@@ -51,7 +51,7 @@ function refreshSystemNotifPermissions() {
       }
       continue;
     }
-    const obj2 = androidNotifChannelStates(15587);
+    const obj2 = androidNotifChannelStates(15573);
     settings = obj2.getAssignedNotifSettingsAndMappings().settings;
     const _Map = Map;
     const self3 = this;

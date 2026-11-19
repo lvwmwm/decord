@@ -1,12 +1,12 @@
-// Module ID: 19713
-// Function ID: 19714
+// Module ID: 19709
+// Function ID: 19710
 // Name: MessageRemindersNotificationManager
-// Dependencies: [11644, 572, 1089, 7395, 2]
+// Dependencies: [11622, 572, 1089, 7365, 2]
 
-// Module 19713 (MessageRemindersNotificationManager)
+// Module 19709 (MessageRemindersNotificationManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 11644 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 11622 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;

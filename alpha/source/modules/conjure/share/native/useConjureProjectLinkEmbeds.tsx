@@ -1,26 +1,29 @@
-// Module ID: 11929
-// Function ID: 11930
+// Module ID: 11907
+// Function ID: 11908
 // Name: useConjureProjectLinkEmbeds
-// Dependencies: [19, 4824, 2165, 4672, 4735, 4755, 1388, 6529, 11930, 5545, 8810, 504, 1452, 11931, 11936, 11937, 2]
+// Dependencies: [19, 4793, 2165, 4641, 4704, 4663, 4724, 1388, 6500, 11908, 5514, 8779, 504, 1452, 11909, 11914, 11915, 11912, 2]
 // Exports: default
 
-// Module 11929 (useConjureProjectLinkEmbeds)
-import conjureProjectLinkCard2 from "conjureProjectLinkCard" /* 11931 */;
-import loadConjureSharedProjectDefault from "loadConjureSharedProject" /* 11936 */;
+// Module 11907 (useConjureProjectLinkEmbeds)
+import ChannelStore2 from "ChannelStore" /* 4641 */;
+import conjureProjectLinkCard2 from "conjureProjectLinkCard" /* 11909 */;
+import loadConjureSharedProjectDefault from "loadConjureSharedProject" /* 11914 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4824 */;
+import AccessibilityStore from "AccessibilityStore" /* 4793 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
-import ChannelStore from "ChannelStore" /* 4672 */;
-import GuildMemberStore from "GuildMemberStore" /* 4735 */;
-import PermissionStore from "PermissionStore" /* 4755 */;
+import GuildMemberStore from "GuildMemberStore" /* 4704 */;
+import GuildStore from "GuildStore" /* 4663 */;
+import PermissionStore from "PermissionStore" /* 4724 */;
 import UserStore from "UserStore" /* 1388 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6529 */;
-import ConjureSharedProjectStore from "ConjureSharedProjectStore" /* 11930 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6500 */;
+import ConjureSharedProjectStore from "ConjureSharedProjectStore" /* 11908 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+const ChannelStore = ChannelStore2;
 let _require, currentUser, map, set;
 
+const ChannelLoader = ChannelStore2.ChannelLoader;
 let result = size.fileFinishedImporting("modules/conjure/share/native/useConjureProjectLinkEmbeds.tsx");
 
 export default function useConjureProjectLinkEmbeds(channelId) {
@@ -40,8 +43,8 @@ export default function useConjureProjectLinkEmbeds(channelId) {
         ({ code, url, type } = nextResult);
         let tmp2 = channelId;
         let tmp3 = memo1;
-        if (type === channelId(memo1[9]).CodedLinkType.CONJURE_PROJECT) {
-          let tmp2Result = tmp2(tmp3[10]);
+        if (type === channelId(memo1[10]).CodedLinkType.CONJURE_PROJECT) {
+          let tmp2Result = tmp2(tmp3[11]);
           let result = tmp2Result.conjureProjectLinkTicket(url);
           let str = result;
           let tmp6 = result;
@@ -92,12 +95,13 @@ export default function useConjureProjectLinkEmbeds(channelId) {
   const items5 = [stateFromStores1, channelId];
   memo2 = stateFromStores.useMemo(() => ({ guildId: stateFromStores1, channelId }), items5);
   let tmp6 = require("get initialized");
-  const items6 = [channelId, ConjureSharedProjectStore, stateFromStores1, ConjureProjectStore, UserStore, , , , ];
+  const items6 = [channelId, ConjureSharedProjectStore, stateFromStores1, ConjureProjectStore, UserStore, , , , , ];
   const useStateFromStoresObject = tmp6.useStateFromStoresObject;
   items6[5] = require("ApexExperiment").ApexExperimentStore;
   items6[6] = memo2;
   items6[7] = GuildMemberStore;
-  items6[8] = PermissionStore;
+  items6[8] = GuildStore;
+  items6[9] = PermissionStore;
   const items7 = [memo1, memo2];
   const stateFromStoresObject = useStateFromStoresObject(items6, () => {
     const obj = {};
@@ -126,29 +130,51 @@ export default function useConjureProjectLinkEmbeds(channelId) {
     let applicationId;
     let ticket;
     if (null != stateFromStores) {
+      const items = [];
       const iter = memo1[Symbol.iterator]();
       const nextResult = iter.next();
       while (iter !== undefined) {
         ({ applicationId, ticket } = nextResult);
-        let tmp6 = loadConjureSharedProjectDefault(applicationId, ticket);
-        let tmp7 = require;
+        let tmp4 = applicationId;
+        let tmp5 = ticket;
+        let tmp8 = loadConjureSharedProjectDefault(applicationId, ticket);
+        let tmp9 = require;
         let obj = conjureProjectLinkCard2;
         let conjureProjectLinkCard = obj.readConjureProjectLinkCard(applicationId, ticket, memo2);
-        let tmp10 = conjureProjectLinkCard;
+        let tmp12 = conjureProjectLinkCard;
         let type;
         if (conjureProjectLinkCard != null) {
           type = conjureProjectLinkCard.type;
         }
-        let tmp12 = "ready" === type;
-        if (tmp12) {
-          tmp12 = null == tmp10.creator;
+        let tmp14 = "ready" === type;
+        if (tmp14) {
+          tmp14 = null == tmp12.creator;
         }
-        if (tmp12) {
-          let tmp7Result = tmp7(11937);
-          let messageAuthor = tmp7Result.requestMessageAuthor(tmp10.ownerId);
+        if (tmp14) {
+          let tmp9Result = tmp9(11915);
+          let messageAuthor = tmp9Result.requestMessageAuthor(tmp12.ownerId);
+        }
+        let status = ConjureSharedProjectStore.getStatus(tmp4, tmp5);
+        let type1;
+        let tmp22 = status;
+        if (status != null) {
+          type1 = status.type;
+        }
+        let project = null;
+        if ("ready" === type1) {
+          project = ConjureProjectStore.getProject(tmp22.projectId);
+        }
+        let sharedProjectHomeGuildId = null;
+        if (null != project) {
+          let tmp9Result2 = tmp9(11912);
+          sharedProjectHomeGuildId = tmp9Result2.getSharedProjectHomeGuildId(tmp27);
+        }
+        if (null != sharedProjectHomeGuildId) {
+          let arr = items.push(tmp30);
         }
         continue;
       }
+      const guildIds = ChannelLoader.loadGuildIds(items);
     }
   }, items8);
   return stateFromStoresObject;

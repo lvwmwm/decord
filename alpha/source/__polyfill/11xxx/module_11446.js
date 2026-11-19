@@ -1,12 +1,14 @@
 // Module ID: 11446
 // Function ID: 11447
-// Dependencies: [41, 42, 93, 95, 98, 11393]
+// Dependencies: [41, 42, 93, 95, 98, 11447, 11356, 11360]
 
 // Module 11446
-import _mod11393 from "module_11393" /* 11393 */;
+import ReferenceWithTimezone from "ReferenceWithTimezone" /* 11356 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11360 */;
+import _mod11447 from "module_11447" /* 11447 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import map from "_possibleConstructorReturn" /* 93 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
@@ -25,31 +27,14 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-let fn = this;
-if (this) {
-  fn = this.__importDefault;
-}
-if (!fn) {
-  fn = (__esModule) => {
-    let tmp2;
-    const tmp = __esModule;
-    if (!tmp) {
-      tmp2 = { default: __esModule };
-      const obj = { default: __esModule };
-    } else {
-      tmp2 = __esModule;
-    }
-    return tmp2;
-  };
-}
-class JPMergeDateRangeRefiner {
+class NLTimeUnitWithinFormatParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, JPMergeDateRangeRefiner);
-    const obj = _getPrototypeOf(JPMergeDateRangeRefiner);
+    _classCallCheck(this, NLTimeUnitWithinFormatParser);
+    const obj = _getPrototypeOf(NLTimeUnitWithinFormatParser);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = map;
+    const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
@@ -59,13 +44,24 @@ class JPMergeDateRangeRefiner {
     return tmp3(self, constructResult);
   }
 }
-_inherits(JPMergeDateRangeRefiner, fn(_mod11393).default);
+_inherits(NLTimeUnitWithinFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "patternBetween",
-  value: function patternBetween() {
-    return /^\s*(から|－|ー|-|～|~)\s*$/i;
+  key: "innerPattern",
+  value: function innerPattern() {
+    const regExp = new RegExp("(?:binnen|in|binnen de|voor)\\s*(" + _mod11447.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
+    return regExp;
   }
 };
-const items = [entry];
+const items = [
+  entry,
+  {
+    key: "innerExtract",
+    value: function innerExtract(reference, arg1) {
+      const parseDurationResult = _mod11447.parseDuration(arg1[1]);
+      const ParsingComponents = ReferenceWithTimezone.ParsingComponents;
+      return ParsingComponents.createRelativeFromReference(reference.reference, parseDurationResult);
+    }
+  }
+];
 
-export default _createClass(JPMergeDateRangeRefiner, items);
+export default _createClass(NLTimeUnitWithinFormatParser, items);

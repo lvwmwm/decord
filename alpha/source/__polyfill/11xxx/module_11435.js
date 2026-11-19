@@ -1,9 +1,9 @@
 // Module ID: 11435
 // Function ID: 11436
-// Dependencies: [41, 42, 93, 95, 98, 11393]
+// Dependencies: [41, 42, 93, 95, 98, 11367]
 
 // Module 11435
-import _mod11393 from "module_11393" /* 11393 */;
+import AbstractTimeExpressionParser from "AbstractTimeExpressionParser" /* 11367 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import map from "_possibleConstructorReturn" /* 93 */;
@@ -25,29 +25,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-let fn = this;
-if (this) {
-  fn = this.__importDefault;
-}
-if (!fn) {
-  fn = (__esModule) => {
-    let tmp2;
-    const tmp = __esModule;
-    if (!tmp) {
-      tmp2 = { default: __esModule };
-      const obj = { default: __esModule };
-    } else {
-      tmp2 = __esModule;
-    }
-    return tmp2;
-  };
-}
-class FRMergeDateRangeRefiner {
+class PTTimeExpressionParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, FRMergeDateRangeRefiner);
-    const obj = _getPrototypeOf(FRMergeDateRangeRefiner);
+    _classCallCheck(this, PTTimeExpressionParser);
+    const obj = _getPrototypeOf(PTTimeExpressionParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = map;
     if (_isNativeReflectConstruct()) {
@@ -59,13 +42,21 @@ class FRMergeDateRangeRefiner {
     return tmp3(self, constructResult);
   }
 }
-_inherits(FRMergeDateRangeRefiner, fn(_mod11393).default);
+_inherits(PTTimeExpressionParser, AbstractTimeExpressionParser.AbstractTimeExpressionParser);
 const entry = {
-  key: "patternBetween",
-  value: function patternBetween() {
-    return /^\s*(à|a|au|-)\s*$/i;
+  key: "primaryPrefix",
+  value: function primaryPrefix() {
+    return "(?:(?:ao?|\u00E0s?|das|da|de|do)\\s*)?";
   }
 };
-const items = [entry];
+const items = [
+  entry,
+  {
+    key: "followingPhase",
+    value: function followingPhase() {
+      return "\\s*(?:\\-|\\\u2013|\\~|\\\u301C|a(?:o)?|\\?)\\s*";
+    }
+  }
+];
 
-export default _createClass(FRMergeDateRangeRefiner, items);
+export default _createClass(PTTimeExpressionParser, items);

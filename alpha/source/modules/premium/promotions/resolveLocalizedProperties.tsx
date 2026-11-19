@@ -1,10 +1,10 @@
-// Module ID: 9100
-// Function ID: 9101
+// Module ID: 9075
+// Function ID: 9076
 // Name: resolveLocalizedProperties
 // Dependencies: [32, 2]
 // Exports: resolveLocalizedProperties
 
-// Module 9100 (resolveLocalizedProperties)
+// Module 9075 (resolveLocalizedProperties)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

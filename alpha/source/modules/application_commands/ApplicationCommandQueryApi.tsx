@@ -1,22 +1,22 @@
-// Module ID: 10642
-// Function ID: 10643
+// Module ID: 10620
+// Function ID: 10621
 // Name: ApplicationCommandQueryApi
-// Dependencies: [32, 19, 4694, 10396, 5845, 1072, 8226, 10404, 504, 10406, 1255, 2119, 10401, 10477, 5475, 2]
+// Dependencies: [32, 19, 4663, 10374, 5816, 1072, 8195, 10382, 504, 10384, 1255, 2119, 10379, 10455, 5444, 2]
 // Exports: executeQuery, getCachedApplicationSection, getCachedCommand, getCachedResults, getChangeKeys, useAccessibleCommandsForApplication, useCachedResults, useCommand, useCommandsForApplication, useDiscovery, useQuery
 
-// Module 10642 (ApplicationCommandQueryApi)
+// Module 10620 (ApplicationCommandQueryApi)
 import Constants from "Constants" /* 1072 */;
 import Server from "Server" /* 2119 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5475 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5845 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8226 */;
-import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 10404 */;
-import ApplicationCommandBuiltIns from "ApplicationCommandBuiltIns" /* 10406 */;
-import CommandPermissionUtils from "CommandPermissionUtils" /* 10477 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5444 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5816 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8195 */;
+import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 10382 */;
+import ApplicationCommandBuiltIns from "ApplicationCommandBuiltIns" /* 10384 */;
+import CommandPermissionUtils from "CommandPermissionUtils" /* 10455 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4694 */;
-import ApplicationCommandIndexStore_mod from "ApplicationCommandIndexStore" /* 10396 */;
+import GuildStore from "GuildStore" /* 4663 */;
+import ApplicationCommandIndexStore_mod from "ApplicationCommandIndexStore" /* 10374 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -79,7 +79,7 @@ let result = size.fileFinishedImporting("modules/application_commands/Applicatio
 export function getCachedCommand(type, commandId, applicationId) {
   let closure_0 = applicationId;
   if (null == commandId) {
-    return { application: "Array", command: "channelId", section: "useRef" };
+    return { application: "ip", command: "isArray", section: "isArray" };
   } else {
     const userState = ApplicationCommandIndexStore.getUserState();
     const result2 = userState.result;
@@ -130,7 +130,7 @@ export function getCachedCommand(type, commandId, applicationId) {
         }
       }
     }
-    return { application: "Array", command: "channelId", section: "useRef" };
+    return { application: "ip", command: "isArray", section: "isArray" };
   }
 }
 export function getCachedApplicationSection(type, CHAT, applicationId) {
@@ -448,7 +448,7 @@ export function useCommand(arg0, commandId) {
         }
       }
     }
-    return { command: "__d", application: "enabled" };
+    return { command: "Array", application: "Path" };
   }, items);
 }
 export function useCommandsForApplication(arg0, arg1, arg2) {

@@ -1,16 +1,16 @@
-// Module ID: 12341
-// Function ID: 12342
+// Module ID: 12324
+// Function ID: 12325
 // Name: ClassificationDetailModal
-// Dependencies: [19, 21, 4823, 575, 6337, 7006, 12342, 12377, 12378, 12344, 1503, 7003, 1113, 2]
+// Dependencies: [19, 21, 4792, 575, 6308, 6976, 12325, 12360, 12361, 12327, 1503, 6973, 1113, 2]
 // Exports: default
 
-// Module 12341 (ClassificationDetailModal)
+// Module 12324 (ClassificationDetailModal)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import NavigatorHeader from "NavigatorHeader" /* 7006 */;
-import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 12344 */;
+import NavigatorHeader from "NavigatorHeader" /* 6976 */;
+import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 12327 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -33,7 +33,7 @@ export default function ClassificationDetailModal(classificationId) {
   }
   let tmp = closure_7();
   dependencyMap = tmp;
-  let obj = classificationId(12378);
+  let obj = classificationId(12361);
   const safetyHubInitialized = obj.useSafetyHubInitialized();
   const items = [safetyHubInitialized];
   const effect = safetyHubInitialized.useEffect(() => {
@@ -90,7 +90,7 @@ export default function ClassificationDetailModal(classificationId) {
     obj3 = NavigatorHeader;
     return obj;
   }, items1);
-  const Navigator = classificationId(7003).Navigator;
+  const Navigator = classificationId(6973).Navigator;
   const intl = classificationId(1113).intl;
   return <Navigator screens={memo} initialRouteName={constants.CLASSIFICATION_DETAIL} headerBackTitle={intl.string(classificationId(1113).t["13/7kX"])} />;
 };

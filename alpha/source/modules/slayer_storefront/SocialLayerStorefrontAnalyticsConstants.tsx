@@ -1,9 +1,9 @@
-// Module ID: 9492
-// Function ID: 9493
+// Module ID: 9471
+// Function ID: 9472
 // Name: SocialLayerStorefrontAnalyticsConstants
 // Dependencies: [2]
 
-// Module 9492 (SocialLayerStorefrontAnalyticsConstants)
+// Module 9471 (SocialLayerStorefrontAnalyticsConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/slayer_storefront/SocialLayerStorefrontAnalyticsConstants.tsx");

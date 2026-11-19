@@ -1,14 +1,14 @@
-// Module ID: 10660
-// Function ID: 10661
+// Module ID: 10638
+// Function ID: 10639
 // Name: confirmActivityLaunchChecks
-// Dependencies: [5, 4672, 4671, 1072, 10661, 10651, 572, 6257, 4744, 10664, 10586, 10665, 6569, 10667, 2]
+// Dependencies: [5, 4641, 4640, 1072, 10639, 10629, 572, 6228, 4713, 10642, 10564, 10643, 6540, 10645, 2]
 // Exports: confirmActivityLaunchChecks
 
-// Module 10660 (confirmActivityLaunchChecks)
+// Module 10638 (confirmActivityLaunchChecks)
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4672 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4671 */;
+import ChannelStore from "ChannelStore" /* 4641 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4640 */;
 import size from "module_2" /* 2 */;
 
 let c5, channelId, closure_5, selfEmbeddedActivities;
@@ -35,7 +35,7 @@ let obj = function _getOrFetchApplicationForLaunch() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -96,7 +96,7 @@ let obj = function _getOrFetchApplicationForLaunch() {
             aPIError = new closure_132_0(closure_132_2[7]).APIError(closure_4);
             dispatch(obj6);
             c8 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           } else if (arg0 === 1) {
             c8 = 3;
             throw value;
@@ -143,7 +143,7 @@ obj = function _confirmActivityChange() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -252,7 +252,7 @@ obj = function _confirmActivityAgeGate() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -413,7 +413,7 @@ obj = function _confirmExternalAppLaunch() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {

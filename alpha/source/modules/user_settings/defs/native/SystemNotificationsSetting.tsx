@@ -1,18 +1,17 @@
-// Module ID: 16957
-// Function ID: 16958
+// Module ID: 16950
+// Function ID: 16951
 // Name: SystemNotificationsSetting
-// Dependencies: [5, 8624, 1072, 6404, 13208, 7713, 13216, 1256, 10821, 11897, 1113, 16956, 2]
+// Dependencies: [5, 8593, 1072, 6375, 13190, 7683, 13198, 1256, 10799, 11875, 1113, 2]
 
-// Module 16957 (SystemNotificationsSetting)
+// Module 16950 (SystemNotificationsSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 6404 */;
-import react_nativeDefault from "react-native" /* 7713 */;
-import SettingsConstants from "SettingsConstants" /* 8624 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 16956 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 6375 */;
+import react_nativeDefault from "react-native" /* 7683 */;
+import SettingsConstants from "SettingsConstants" /* 8593 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13208 */;
-import SettingBuilders_mod from "SettingBuilders" /* 11897 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13190 */;
+import SettingBuilders from "SettingBuilders" /* 11875 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3;
@@ -33,7 +32,7 @@ let obj = function _handleEnableSystemNotification() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -92,7 +91,7 @@ let obj = function _handleEnableSystemNotification() {
             let result = obj2.openNotificationSettings();
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp26) {
         c3 = 3;
@@ -106,7 +105,6 @@ const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const AnalyticEvents = Constants.AnalyticEvents;
 let closure_5 = NativePermissionConstants.NotificationAuthorizationStatus;
 ({ EventActionType: metroRequire, EventActionLocation: metroImportDefault } = NotificationPermissionConstants);
-let SettingBuilders = SettingBuilders_mod;
 obj = {
   useTitle() {
     const intl = intl2.intl;
@@ -119,12 +117,6 @@ obj = {
   withArrow: true
 };
 const pressable = SettingBuilders.createPressable(obj);
-SettingBuilders = SettingBuilders_mod;
-let obj2 = { parent: MobileNotifSettings.MobileNotifSettings.NOTIFICATIONS_REDESIGN };
-const createPressable = SettingBuilders.createPressable;
-const merged = Object.assign(pressable);
-const pressable1 = createPressable(obj2);
 let result = size.fileFinishedImporting("modules/user_settings/defs/native/SystemNotificationsSetting.tsx");
 
 export default pressable;
-export const RedesignSystemNotificationsSetting = pressable1;

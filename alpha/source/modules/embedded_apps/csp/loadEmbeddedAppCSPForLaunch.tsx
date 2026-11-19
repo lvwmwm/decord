@@ -1,15 +1,15 @@
-// Module ID: 6857
-// Function ID: 6858
+// Module ID: 6827
+// Function ID: 6828
 // Name: loadEmbeddedAppCSPForLaunch
-// Dependencies: [5, 6858, 6859, 5464, 6860, 6861, 2]
+// Dependencies: [5, 6828, 6829, 5433, 6830, 6831, 2]
 // Exports: default
 
-// Module 6857 (loadEmbeddedAppCSPForLaunch)
-import getURLForApplication from "getURLForApplication" /* 5464 */;
-import EmbeddedAppFramePolicyExperiment from "EmbeddedAppFramePolicyExperiment" /* 6859 */;
-import EmbeddedAppCSPActionCreators from "EmbeddedAppCSPActionCreators" /* 6860 */;
+// Module 6827 (loadEmbeddedAppCSPForLaunch)
+import getURLForApplication from "getURLForApplication" /* 5433 */;
+import EmbeddedAppFramePolicyExperiment from "EmbeddedAppFramePolicyExperiment" /* 6829 */;
+import EmbeddedAppCSPActionCreators from "EmbeddedAppCSPActionCreators" /* 6830 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import EmbeddedAppCSPStore from "EmbeddedAppCSPStore" /* 6858 */;
+import EmbeddedAppCSPStore from "EmbeddedAppCSPStore" /* 6828 */;
 import size from "module_2" /* 2 */;
 
 const getURLForApplicationDefault = getURLForApplication;
@@ -30,7 +30,7 @@ let obj = function _loadEmbeddedAppCSPForLaunch() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c3;
@@ -86,7 +86,7 @@ let obj = function _loadEmbeddedAppCSPForLaunch() {
           c3 = 0;
         }
         c4 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       } catch (tmp20) {
         if (0 === c3) {
           c4 = 3;

@@ -1,10 +1,10 @@
-// Module ID: 7893
-// Function ID: 7894
+// Module ID: 7863
+// Function ID: 7864
 // Name: AppStoreAgeSignalActionCreators
 // Dependencies: [5, 1072, 1285, 2]
 // Exports: registerAgeSignalAttestKey, reinstateAppStoreConsent, requestAgeSignalChallenge, submitAgeSignal
 
-// Module 7893 (AppStoreAgeSignalActionCreators)
+// Module 7863 (AppStoreAgeSignalActionCreators)
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -44,7 +44,7 @@ obj = function _requestAgeSignalChallenge() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -95,7 +95,7 @@ obj = function _requestAgeSignalChallenge() {
               }
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp11) {
           c4 = 3;
@@ -147,7 +147,7 @@ obj = function _submitAgeSignal() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {

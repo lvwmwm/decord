@@ -1,27 +1,27 @@
-// Module ID: 17046
-// Function ID: 17047
+// Module ID: 17039
+// Function ID: 17040
 // Name: UserSettingsStartupTimings
-// Dependencies: [5, 32, 19, 17, 1362, 1072, 21, 4823, 575, 5414, 5006, 1630, 11137, 504, 9, 8180, 9619, 7401, 5837, 7259, 7246, 1363, 6956, 10036, 2]
+// Dependencies: [5, 32, 19, 17, 1362, 1072, 21, 4792, 575, 5383, 4975, 1630, 11115, 504, 9, 8149, 9598, 7371, 5808, 7229, 7216, 1363, 6926, 10014, 2]
 // Exports: default
 
-// Module 17046 (UserSettingsStartupTimings)
+// Module 17039 (UserSettingsStartupTimings)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import Text_Text from "Text/Text" /* 5414 */;
-import Stack_Stack from "Stack/Stack" /* 5837 */;
-import TableRow4 from "TableRow" /* 6956 */;
-import TableCheckboxRow from "TableCheckboxRow" /* 7246 */;
-import TableRowGroup6 from "TableRowGroup" /* 7259 */;
-import ShareIcon from "ShareIcon" /* 10036 */;
-import serializeAppStartLogsDefault from "serializeAppStartLogs" /* 11137 */;
+import Text_Text from "Text/Text" /* 5383 */;
+import Stack_Stack from "Stack/Stack" /* 5808 */;
+import TableRow4 from "TableRow" /* 6926 */;
+import TableCheckboxRow from "TableCheckboxRow" /* 7216 */;
+import TableRowGroup6 from "TableRowGroup" /* 7229 */;
+import ShareIcon from "ShareIcon" /* 10014 */;
+import serializeAppStartLogsDefault from "serializeAppStartLogs" /* 11115 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1362 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
-import react_native2 from "react-native" /* 5006 */;
+import createStyles_mod from "createStyles" /* 4792 */;
+import react_native2 from "react-native" /* 4975 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -109,7 +109,7 @@ export default function UserSettingsStartupTimings() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -147,7 +147,7 @@ export default function UserSettingsStartupTimings() {
           const obj = tmp(c2[16]);
           obj.showShareActionSheet(obj7, "Startup Timing");
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp16) {
         c3 = 3;
@@ -285,14 +285,14 @@ export default function UserSettingsStartupTimings() {
       items2[8] = React4(Code, obj21);
       items[1] = metroImportAll(TableRowGroup2, obj18);
       const obj22 = { title: "Legend", hasIcons: false, children: metroImportAll(TableRow2, obj23) };
-      const TableRowGroup3 = tmp3(7259).TableRowGroup;
+      const TableRowGroup3 = tmp3(7229).TableRowGroup;
       obj23 = { label: React4(authStore, obj24) };
       obj24 = { children: items11 };
-      TableRow2 = tmp3(6956).TableRow;
+      TableRow2 = tmp3(6926).TableRow;
       items11 = [metroImportAll(Code, { children: "\u2615 - Java / Kotlin" }), metroImportAll(Code, { children: "\u{1F3A8} - React render" }), metroImportAll(Code, { children: "\u{1F4BE} - CacheStore" }), metroImportAll(Code, { children: "\u{1F9A5} - Slow Store Update / Handler" }), metroImportAll(Code, { children: "\u{1F3C3} - Startup Event" }), metroImportAll(Code, { children: "\u{1F310} - Socket Event" })];
       items[2] = metroImportAll(TableRowGroup3, obj22);
       const obj25 = { title: "Detailed Times", hasIcons: false, children: items12 };
-      const TableRowGroup4 = tmp3(7259).TableRowGroup;
+      const TableRowGroup4 = tmp3(7229).TableRowGroup;
       items12 = [, ];
       const obj26 = {
         label: "Hide the Noise",
@@ -312,9 +312,9 @@ export default function UserSettingsStartupTimings() {
       items12[1] = metroImportAll(TableCheckboxRow.TableCheckboxRow, obj27);
       items[3] = React4(TableRowGroup4, obj25);
       const obj28 = { title: "Share Timings", hasIcons: true, children: metroImportAll(TableRow3, obj29) };
-      const TableRowGroup5 = tmp3(7259).TableRowGroup;
+      const TableRowGroup5 = tmp3(7229).TableRowGroup;
       obj29 = { icon: metroImportAll(ShareIcon.ShareIcon, {}), label: "Copy timings to clipboard.", arrow: true, onPress };
-      TableRow3 = tmp3(6956).TableRow;
+      TableRow3 = tmp3(6926).TableRow;
       items[4] = metroImportAll(TableRowGroup5, obj28);
       items13 = [React4(Stack, obj), ];
       const obj30 = { style: border.border };
@@ -328,6 +328,6 @@ export default function UserSettingsStartupTimings() {
     }
   };
   obj6 = { paddingBottom: bottom + tmp2(575).space.PX_16 };
-  FlashList = tmp10(7401).FlashList;
+  FlashList = tmp10(7371).FlashList;
   return closure_8(checked, obj4);
 };

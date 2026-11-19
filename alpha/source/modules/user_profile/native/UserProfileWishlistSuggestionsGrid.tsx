@@ -1,29 +1,29 @@
-// Module ID: 14543
-// Function ID: 14544
+// Module ID: 14530
+// Function ID: 14531
 // Name: UserProfileWishlistSuggestionsGrid
-// Dependencies: [19, 17, 4824, 8889, 7981, 7475, 1072, 1074, 21, 575, 4823, 504, 14544, 8047, 14356, 7431, 5402, 1269, 14545, 8895, 5037, 7986, 7450, 5421, 12935, 1113, 14546, 1655, 5414, 7502, 7062, 14547, 2]
+// Dependencies: [19, 17, 4793, 8863, 7950, 7445, 1072, 1074, 21, 575, 4792, 504, 14531, 8016, 14343, 7401, 5371, 1269, 14532, 8869, 5006, 7955, 7420, 5390, 12917, 1113, 14533, 1655, 5383, 7472, 7032, 14534, 2]
 // Exports: default
 
-// Module 14543 (UserProfileWishlistSuggestionsGrid)
+// Module 14530 (UserProfileWishlistSuggestionsGrid)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants2 from "Constants" /* 1072 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
-import reactDefault from "react" /* 5402 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7431 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7450 */;
-import Constants3 from "Constants" /* 7981 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7986 */;
-import useCardGridLayoutDefault from "useCardGridLayout" /* 14356 */;
-import useWishlistSuggestionsDismissibleContentDefault from "useWishlistSuggestionsDismissibleContent" /* 14544 */;
-import AddToWishlistGridDefault from "AddToWishlistGrid" /* 14547 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
+import reactDefault from "react" /* 5371 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7401 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7420 */;
+import Constants3 from "Constants" /* 7950 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7955 */;
+import useCardGridLayoutDefault from "useCardGridLayout" /* 14343 */;
+import useWishlistSuggestionsDismissibleContentDefault from "useWishlistSuggestionsDismissibleContent" /* 14531 */;
+import AddToWishlistGridDefault from "AddToWishlistGrid" /* 14534 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4824 */;
-import WishlistStore from "WishlistStore" /* 8889 */;
-import Constants from "Constants" /* 7475 */;
+import AccessibilityStore from "AccessibilityStore" /* 4793 */;
+import WishlistStore from "WishlistStore" /* 8863 */;
+import Constants from "Constants" /* 7445 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -107,7 +107,7 @@ function WishlistSuggestionsGridContents(arg0) {
   let trackUserProfileWishlistAction;
   let tmp = trackUserProfileWishlistAction;
   ({ wishlistId, containerWidth, maxWidth, markAsDismissed } = arg0);
-  let obj = trackUserProfileWishlistAction(8047);
+  let obj = trackUserProfileWishlistAction(8016);
   trackUserProfileWishlistAction = obj.useUserProfileAnalyticsContext().trackUserProfileWishlistAction;
   const tmp3 = closure_15();
   let obj2 = trackUserProfileWishlistAction(504);
@@ -137,8 +137,8 @@ function WishlistSuggestionsGridContents(arg0) {
     const obj = trackUserProfileWishlistAction(dependencyMap[17]);
     return obj.v4();
   });
-  const obj4 = trackUserProfileWishlistAction(14545);
-  const obj5 = { userId, wishlist, numWishlistItemsToRecommend: 15, maxWishlistItemsToShow: 9, source: trackUserProfileWishlistAction(8895).WishlistFetchSource.USER_PROFILE };
+  const obj4 = trackUserProfileWishlistAction(14532);
+  const obj5 = { userId, wishlist, numWishlistItemsToRecommend: 15, maxWishlistItemsToShow: 9, source: trackUserProfileWishlistAction(8869).WishlistFetchSource.USER_PROFILE };
   const items2 = obj4.useAddToWishlistGridItems(obj5).items;
   const items3 = [trackUserProfileWishlistAction];
   const callback = react.useCallback(() => {
@@ -158,20 +158,20 @@ function WishlistSuggestionsGridContents(arg0) {
   }, items3);
   if (0 === items2.length) {
     const obj6 = { style: tmp3.shopButtonContainer, children: closure_12(Button2, obj7) };
-    obj7 = { size: "md", variant: "secondary", icon: closure_12(tmp(12935).ShopIcon, { size: "sm" }), text: intl3.string(tmp(1113).t.RSyoZu), onPress: callback };
-    Button2 = tmp(5421).Button;
+    obj7 = { size: "md", variant: "secondary", icon: closure_12(tmp(12917).ShopIcon, { size: "sm" }), text: intl3.string(tmp(1113).t.RSyoZu), onPress: callback };
+    Button2 = tmp(5390).Button;
     intl3 = tmp(1113).intl;
     tmp13Result = closure_12(View, obj6);
   } else {
     const obj8 = { newValue: obj9, children: closure_13(View, obj10) };
     obj9 = { impressionSessionId: tmp7, surface: "user_profile_wishlist_suggestions_grid", wishlistOwnerId: userId, wishlistId, analyticsLocations };
-    const WishlistAnalyticsProvider = tmp(14546).WishlistAnalyticsProvider;
+    const WishlistAnalyticsProvider = tmp(14533).WishlistAnalyticsProvider;
     obj10 = { style: tmp3.container, entering: null, exiting: null, layout: null, children: items6 };
     ({ entering: obj16.entering, exiting: obj16.exiting, layout: obj16.layout } = memo);
     const obj11 = { style: tmp3.headerRow, children: items4 };
     View = tmp6(1655).View;
     const obj12 = { accessibilityRole: "header", variant: "body-sm/medium", color: "text-strong", lineClamp: 1, children: intl4.string(tmp(1113).t["+GB8Kt"]) };
-    const Text = tmp(5414).Text;
+    const Text = tmp(5383).Text;
     intl4 = tmp(1113).intl;
     items4 = [closure_12(Text, obj12), ];
     const items5 = [tmp3.dismissButton, ];
@@ -187,17 +187,17 @@ function WishlistSuggestionsGridContents(arg0) {
       str2 = "auto";
     }
     obj14 = { size: "sm", variant: "icon-only", icon: closure_12(XSmallIcon, obj15), onPress: markAsDismissed, accessibilityLabel: intl.string(tmp(1113).t.WAI6xu) };
-    IconButton = tmp(7502).IconButton;
+    IconButton = tmp(7472).IconButton;
     obj15 = { size: "sm", color: nativeDefault.colors.CONTROL_ICON_ONLY_ICON_DEFAULT };
-    XSmallIcon = tmp(7062).XSmallIcon;
+    XSmallIcon = tmp(7032).XSmallIcon;
     intl = tmp(1113).intl;
     items4[1] = closure_12(View, obj13);
     items6 = [closure_13(View, obj11), , ];
     const obj17 = { items: items2, wishlist, analyticsLocations, cardSize: cardWidth };
     items6[1] = closure_12(AddToWishlistGridDefault, obj17);
     const obj18 = { style: tmp3.shopButtonContainer, children: closure_12(Button, obj33) };
-    obj33 = { size: "md", variant: "secondary", icon: closure_12(tmp(12935).ShopIcon, { size: "sm" }), text: intl2.string(tmp(1113).t.RSyoZu), onPress: callback };
-    Button = tmp(5421).Button;
+    obj33 = { size: "md", variant: "secondary", icon: closure_12(tmp(12917).ShopIcon, { size: "sm" }), text: intl2.string(tmp(1113).t.RSyoZu), onPress: callback };
+    Button = tmp(5390).Button;
     intl2 = tmp(1113).intl;
     items6[2] = closure_12(View, obj18);
     tmp13Result = tmp13(WishlistAnalyticsProvider, obj8);

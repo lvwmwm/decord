@@ -1,14 +1,14 @@
-// Module ID: 8385
-// Function ID: 8386
+// Module ID: 8354
+// Function ID: 8355
 // Name: AttachmentFile
-// Dependencies: [5, 3, 38, 8357, 8386, 8354, 2]
+// Dependencies: [5, 3, 38, 8326, 8355, 8323, 2]
 // Exports: cancelGetAttachmentFile, fileIsInAppDir, getAttachmentFile
 
-// Module 8385 (AttachmentFile)
+// Module 8354 (AttachmentFile)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
-import UploadPlatform from "UploadPlatform" /* 8357 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 8386 */;
+import UploadPlatform from "UploadPlatform" /* 8326 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 8355 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ let obj = function _getAttachmentFile() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -136,7 +136,7 @@ obj = function _cancelGetAttachmentFile() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -165,7 +165,7 @@ obj = function _cancelGetAttachmentFile() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp7) {
         c1 = 3;
@@ -193,7 +193,7 @@ export function fileIsInAppDir(uri) {
     const tmp2 = require;
     if (startsWithResult) {
       const startsWith = replaced.startsWith;
-      const tmp2Result = tmp2(8386);
+      const tmp2Result = tmp2(8355);
       startsWithResult = startsWith(tmp2Result.getAppDir());
     }
     return startsWithResult;

@@ -1,22 +1,22 @@
-// Module ID: 11887
-// Function ID: 11888
+// Module ID: 11865
+// Function ID: 11866
 // Name: GiftCodeRedeemSuccess
-// Dependencies: [32, 19, 17, 6582, 21, 4823, 575, 504, 11874, 6773, 11878, 7999, 2114, 8824, 9322, 6928, 6757, 8941, 7437, 8915, 6289, 1187, 8953, 9355, 9356, 11883, 5414, 1113, 11871, 2787, 6255, 5421, 6337, 2]
+// Dependencies: [32, 19, 17, 6553, 21, 4792, 575, 504, 11852, 6745, 11856, 7968, 2114, 8793, 9299, 6898, 6728, 8915, 7407, 8889, 6261, 1187, 8927, 9332, 9333, 11861, 5383, 1113, 11849, 2787, 6226, 5390, 6308, 2]
 // Exports: default
 
-// Module 11887 (GiftCodeRedeemSuccess)
+// Module 11865 (GiftCodeRedeemSuccess)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 8953 */;
-import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 9355 */;
-import NameplatePreview from "NameplatePreview" /* 9356 */;
-import GiftBoxAnimationDefault from "GiftBoxAnimation" /* 11883 */;
+import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 8927 */;
+import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 9332 */;
+import NameplatePreview from "NameplatePreview" /* 9333 */;
+import GiftBoxAnimationDefault from "GiftBoxAnimation" /* 11861 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SKUStore from "SKUStore" /* 6582 */;
+import SKUStore from "SKUStore" /* 6553 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -76,14 +76,14 @@ export default function GiftCodeRedeemSuccess(giftCode) {
   let obj = giftCode(504);
   const items = [SKUStore];
   const stateFromStores = obj.useStateFromStores(items, () => SKUStore.get(giftCode.skuId));
-  let obj2 = giftCode(11874);
+  let obj2 = giftCode(11852);
   const getOrFetchSubscriptionPlan = obj2.useGetOrFetchSubscriptionPlan(giftCode.subscriptionPlanId);
-  const obj3 = giftCode(6773);
+  const obj3 = giftCode(6745);
   const getOrFetchApplication = obj3.useGetOrFetchApplication(giftCode.applicationId);
-  const useFetchCollectiblesProduct = giftCode(11878).useFetchCollectiblesProduct;
-  giftCode(11878);
+  const useFetchCollectiblesProduct = giftCode(11856).useFetchCollectiblesProduct;
+  giftCode(11856);
   let skuId = null;
-  const obj4 = giftCode(7999);
+  const obj4 = giftCode(7968);
   if (obj4.isCollectiblesGiftCode(giftCode)) {
     skuId = giftCode.skuId;
   }
@@ -98,8 +98,8 @@ export default function GiftCodeRedeemSuccess(giftCode) {
   }
   const BUNDLE = tmp2(2114).CollectiblesItemType.BUNDLE;
   let tmp12 = product;
-  const useShopProductItems = tmp2(8824).useShopProductItems;
-  tmp2(8824);
+  const useShopProductItems = tmp2(8793).useShopProductItems;
+  tmp2(8793);
   if (product == null) {
     tmp12 = { items: [] };
     const obj5 = { items: [] };
@@ -107,8 +107,8 @@ export default function GiftCodeRedeemSuccess(giftCode) {
   const shopProductItems = useShopProductItems(tmp12);
   ({ firstAvatarDecoration, firstProfileEffect, firstNameplate } = shopProductItems);
   let tmp15 = product;
-  const useHandleUseNow = tmp2(9322).useHandleUseNow;
-  tmp2(9322);
+  const useHandleUseNow = tmp2(9299).useHandleUseNow;
+  tmp2(9299);
   if (product == null) {
     tmp15 = { skuId: "", type: tmp2(2114).CollectiblesItemType.BUNDLE, items: [] };
     const obj6 = { skuId: "", type: tmp2(2114).CollectiblesItemType.BUNDLE, items: [] };
@@ -139,14 +139,14 @@ export default function GiftCodeRedeemSuccess(giftCode) {
     let tmp39Result;
     if (null != getOrFetchApplication) {
       let tmp28Result;
-      const tmp2Result8 = tmp2(6757);
+      const tmp2Result8 = tmp2(6728);
       if (tmp2Result8.isGameItemSKU(stateFromStores)) {
-        const obj9 = { style: tmp.gameItemCard, children: closure_8(user(8941), obj10) };
+        const obj9 = { style: tmp.gameItemCard, children: closure_8(user(8915), obj10) };
         obj10 = { sku: stateFromStores };
         tmp28Result = tmp28(closure_5, obj9);
       } else {
-        const obj11 = { game: getOrFetchApplication, size: tmp2(7437).GameIconSizes.LARGE, skuId: giftCode.skuId };
-        const tmp30 = user(7437);
+        const obj11 = { game: getOrFetchApplication, size: tmp2(7407).GameIconSizes.LARGE, skuId: giftCode.skuId };
+        const tmp30 = user(7407);
         tmp28Result = tmp28(tmp30, obj11);
       }
       tmp24Result2 = tmp28Result;
@@ -154,21 +154,21 @@ export default function GiftCodeRedeemSuccess(giftCode) {
     const items1 = [tmp24Result2, , ];
     if (null == stateFromStores) {
       const obj12 = { variant: "heading-xl/semibold", style: tmp.header, accessibilityRole: "header", children: intl4.string(tmp2(1113).t["+BNMcF"]) };
-      const Text4 = tmp2(5414).Text;
+      const Text4 = tmp2(5383).Text;
       intl4 = tmp2(1113).intl;
       tmp34 = closure_8(Text4, obj12);
     } else {
-      const tmp2Result9 = tmp2(6757);
+      const tmp2Result9 = tmp2(6728);
       if (tmp2Result9.isGameItemSKU(stateFromStores)) {
         const obj13 = { variant: "heading-xl/semibold", style: tmp.header, accessibilityRole: "header", children: intl3.string(tmp2(1113).t["5glWta"]) };
-        const Text3 = tmp2(5414).Text;
+        const Text3 = tmp2(5383).Text;
         intl3 = tmp2(1113).intl;
         tmp34 = closure_8(Text3, obj13);
       } else {
         if (giftCode.isSubscription) {
           if (null != getOrFetchSubscriptionPlan) {
             const obj14 = { variant: "heading-xl/semibold", style: tmp.header, accessibilityRole: "header", children: intl2.format(tmp2(1113).t["1C2BG/"], obj15) };
-            const Text2 = tmp2(5414).Text;
+            const Text2 = tmp2(5383).Text;
             intl2 = tmp2(1113).intl;
             obj15 = { skuName: stateFromStores.name };
             tmp34 = closure_8(Text2, obj14);
@@ -176,18 +176,18 @@ export default function GiftCodeRedeemSuccess(giftCode) {
         }
         if (null != first) {
           const obj16 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp.header, accessibilityRole: "header", children: intl.string(tmp2(1113).t.IMffmm) };
-          const Text = tmp2(5414).Text;
+          const Text = tmp2(5383).Text;
           intl = tmp2(1113).intl;
           tmp34 = closure_8(Text, obj16);
         }
       }
     }
     items1[1] = tmp34;
-    const tmp2Result10 = tmp2(6757);
+    const tmp2Result10 = tmp2(6728);
     if (tmp2Result10.isGameItemSKU(stateFromStores)) {
       if (null != getOrFetchApplication) {
         const obj17 = { variant: "body-md/medium", style: tmp.message, children: formatToPlainString(W2znvX, obj18) };
-        const Text7 = tmp2(5414).Text;
+        const Text7 = tmp2(5383).Text;
         const intl8 = tmp2(1113).intl;
         formatToPlainString = intl8.formatToPlainString;
         let str2;
@@ -219,13 +219,13 @@ export default function GiftCodeRedeemSuccess(giftCode) {
         obj7.children = items2;
         return closure_9(tmp21, obj7);
       }
-      obj21 = { text: intl9.string(tmp2(1113).t["NX+WJN"]), size: "md", onPress: user(6337).pop };
+      obj21 = { text: intl9.string(tmp2(1113).t["NX+WJN"]), size: "md", onPress: user(6308).pop };
       intl9 = tmp2(1113).intl;
     }
-    const tmp2Result11 = tmp2(11871);
+    const tmp2Result11 = tmp2(11849);
     if (tmp2Result11.isPendingGiftSubscriptionCode(giftCode)) {
       const obj22 = { variant: "body-md/medium", style: tmp.message, children: intl7.string(user(2787).fdrOGN) };
-      const Text6 = tmp2(5414).Text;
+      const Text6 = tmp2(5383).Text;
       intl7 = tmp2(1113).intl;
       tmp39Result = closure_8(Text6, obj22);
       tmp39 = closure_8;
@@ -233,8 +233,8 @@ export default function GiftCodeRedeemSuccess(giftCode) {
       if (giftCode.isSubscription) {
         if (null != getOrFetchSubscriptionPlan) {
           const obj23 = { variant: "body-md/medium", style: tmp.message, children: tmp2Result12.getSubscriptionGiftSuccessText(getOrFetchSubscriptionPlan) };
-          const Text5 = tmp2(5414).Text;
-          tmp2Result12 = tmp2(6255);
+          const Text5 = tmp2(5383).Text;
+          tmp2Result12 = tmp2(6226);
           tmp39Result = closure_8(Text5, obj23);
           tmp39 = closure_8;
         }
@@ -266,12 +266,12 @@ export default function GiftCodeRedeemSuccess(giftCode) {
       tmp24Result = null != tmp18;
       if (tmp24Result) {
         const obj28 = { deco: firstAvatarDecoration, pfx: firstProfileEffect, nameplate: firstNameplate, previewAssets: product.previewAssets, disableStaticBackground: true, size: "large", targetSize: tmp18 };
-        tmp24Result = tmp24(user(8915), obj28);
+        tmp24Result = tmp24(user(8889), obj28);
       }
       tmp24Result2 = tmp24(tmp25, obj26);
     }
   }
-  const str = tmp2(6289);
+  const str = tmp2(6261);
   const match = str.match(first);
   const obj29 = { type: tmp2(2114).CollectiblesItemType.AVATAR_DECORATION };
   const withResult = match.with(obj29, (avatarDecoration) => {

@@ -1,11 +1,17 @@
 // Module ID: 15463
 // Function ID: 15464
-// Dependencies: [15464, 15529]
+// Dependencies: [15464, 15478]
 
 // Module 15463
-import _mod15529 from "module_15529" /* 15529 */;
-import module_15464 from "module_15464" /* 15464 */;
+import _mod15464 from "module_15464" /* 15464 */;
+import _mod15478 from "module_15478" /* 15478 */;
 
-const obj = { target: "Object", stat: true, arity: 2, forced: Object.assign !== _mod15529 };
-const obj2 = { assign: _mod15529 };
-module_15464(obj, obj2);
+
+export default (arg0) => {
+  const tmp = _mod15464(arg0, "string");
+  let text = tmp;
+  if (!_mod15478(tmp)) {
+    text = `${tmp}`;
+  }
+  return text;
+};

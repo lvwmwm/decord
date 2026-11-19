@@ -1,20 +1,20 @@
-// Module ID: 19080
-// Function ID: 19081
+// Module ID: 19072
+// Function ID: 19073
 // Name: RestrictedMessageRequestPreview
-// Dependencies: [32, 19, 17, 4672, 5872, 1388, 21, 4823, 575, 1630, 504, 13425, 19081, 19083, 13469, 13253, 2]
+// Dependencies: [32, 19, 17, 4641, 5843, 1388, 21, 4792, 575, 1630, 504, 13407, 19073, 19075, 13451, 13235, 2]
 // Exports: default
 
-// Module 19080 (RestrictedMessageRequestPreview)
+// Module 19072 (RestrictedMessageRequestPreview)
 import nativeDefault from "native" /* 575 */;
-import useIsEmptyMessageRequestChat from "useIsEmptyMessageRequestChat" /* 13425 */;
+import useIsEmptyMessageRequestChat from "useIsEmptyMessageRequestChat" /* 13407 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 4672 */;
-import MessageStore from "MessageStore" /* 5872 */;
+import ChannelStore from "ChannelStore" /* 4641 */;
+import MessageStore from "MessageStore" /* 5843 */;
 import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -153,17 +153,17 @@ export default function RestrictedMessageRequestPreview(channelId) {
       }
       items8[1] = scrollContentEmpty;
       const obj6 = { channel: stateFromStores, user: stateFromStores1 };
-      items9 = [closure_10(tmp2(19081), obj6), , ];
+      items9 = [closure_10(tmp2(19073), obj6), , ];
       const obj7 = { channelId };
-      items9[1] = closure_10(ref(19083), obj7);
+      items9[1] = closure_10(ref(19075), obj7);
       let tmp19Result = null;
       if (isEmpty) {
         const obj8 = { style: tmp.emptyChat };
-        tmp19Result = tmp19(tmp2(13469), obj8);
+        tmp19Result = tmp19(tmp2(13451), obj8);
       }
       items9[2] = tmp19Result;
       items10 = [closure_11(tmp16, obj5), ];
-      const obj9 = { style: items11, children: closure_10(ref(13253), obj11) };
+      const obj9 = { style: items11, children: closure_10(ref(13235), obj11) };
       items11 = [tmp.footer, ];
       items11[1] = { paddingBottom: ref(575).space.PX_8 + bottom };
       const obj10 = { paddingBottom: ref(575).space.PX_8 + bottom };

@@ -1,20 +1,20 @@
-// Module ID: 16717
-// Function ID: 16718
+// Module ID: 16710
+// Function ID: 16711
 // Name: StreamOutputVolumeSetting
-// Dependencies: [6308, 502, 2133, 8624, 504, 5589, 38, 5719, 10925, 11897, 1113, 2]
+// Dependencies: [6279, 502, 2133, 8593, 504, 5558, 38, 5688, 10903, 11875, 1113, 2]
 
-// Module 16717 (StreamOutputVolumeSetting)
+// Module 16710 (StreamOutputVolumeSetting)
 import _modDef38 from "module_38" /* 38 */;
 import get_initialized from "get initialized" /* 504 */;
 import intl3 from "intl" /* 1113 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 5589 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 5719 */;
-import SettingsConstants from "SettingsConstants" /* 8624 */;
-import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 10925 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6308 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5558 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5688 */;
+import SettingsConstants from "SettingsConstants" /* 8593 */;
+import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 10903 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6279 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import SettingBuilders from "SettingBuilders" /* 11897 */;
+import SettingBuilders from "SettingBuilders" /* 11875 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

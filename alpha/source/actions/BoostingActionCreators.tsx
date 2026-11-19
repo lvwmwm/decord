@@ -1,16 +1,16 @@
-// Module ID: 8658
-// Function ID: 8659
+// Module ID: 8627
+// Function ID: 8628
 // Name: actions/BoostingActionCreators
-// Dependencies: [5, 8659, 8660, 2179, 1072, 1285, 572, 6257, 2]
+// Dependencies: [5, 8628, 8629, 2179, 1072, 1285, 572, 6228, 2]
 // Exports: applyToGuild, cancelGuildBoostSlot, fetchAppliedBoostsCooldown, fetchAppliedGuildBoostsForGuild, fetchAppliedGuildBoostsForUser, unapplyFromGuild, uncancelGuildBoostSlot
 
-// Module 8658 (actions/BoostingActionCreators)
+// Module 8627 (actions/BoostingActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import AppliedGuildBoostRecord from "AppliedGuildBoostRecord" /* 8659 */;
-import GuildBoostSlotRecord from "GuildBoostSlotRecord" /* 8660 */;
+import AppliedGuildBoostRecord from "AppliedGuildBoostRecord" /* 8628 */;
+import GuildBoostSlotRecord from "GuildBoostSlotRecord" /* 8629 */;
 import SubscriptionStore from "SubscriptionStore" /* 2179 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let obj = function _fetchAppliedGuildBoostsForGuild() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -121,7 +121,7 @@ obj = function _fetchAppliedGuildBoostsForUser() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -228,7 +228,7 @@ obj = function _fetchAppliedBoostsCooldown() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c3;
@@ -322,7 +322,7 @@ obj = function _applyToGuild() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -441,7 +441,7 @@ obj = function _unapplyFromGuild() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -495,7 +495,7 @@ obj = function _unapplyFromGuild() {
             obj = closure_131_1(closure_131_2[6]);
             obj.dispatch(obj10);
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp28) {
           closure_4 = tmp28;

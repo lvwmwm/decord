@@ -1,12 +1,12 @@
-// Module ID: 18912
-// Function ID: 18913
+// Module ID: 18904
+// Function ID: 18905
 // Name: getGamePlatform
-// Dependencies: [5562, 14381, 6985, 2]
+// Dependencies: [5531, 14368, 6955, 2]
 // Exports: default
 
-// Module 18912 (getGamePlatform)
-import ActivityTypes from "ActivityTypes" /* 5562 */;
-import isOnXboxDefault from "isOnXbox" /* 14381 */;
+// Module 18904 (getGamePlatform)
+import ActivityTypes from "ActivityTypes" /* 5531 */;
+import isOnXboxDefault from "isOnXbox" /* 14368 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/utils/getGamePlatform.tsx");
@@ -20,11 +20,11 @@ export default function getGamePlatform(type) {
       if (type.type === ActivityTypes.ActivityTypes.PLAYING) {
         let DESKTOP;
         if (isOnXboxDefault(type)) {
-          DESKTOP = tmp2(6985).ActivityGamePlatforms.XBOX;
+          DESKTOP = tmp2(6955).ActivityGamePlatforms.XBOX;
         } else if (null != type.platform) {
           DESKTOP = type.platform;
         } else {
-          DESKTOP = tmp2(6985).ActivityGamePlatforms.DESKTOP;
+          DESKTOP = tmp2(6955).ActivityGamePlatforms.DESKTOP;
         }
         tmp = DESKTOP;
       }

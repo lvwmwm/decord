@@ -413,11 +413,11 @@ class BaseApexExperimentStore extends PersistedStore {
   getRegisteredExperiments() {
     return closure_10;
   }
-  getAssignment(installation, id, name) {
+  getAssignment(user, id, name) {
     const self = this;
     let override = this.getOverride(name);
     if (null == override) {
-      override = self.getServerAssignment(installation, id, name);
+      override = self.getServerAssignment(user, id, name);
     }
     return override;
   }

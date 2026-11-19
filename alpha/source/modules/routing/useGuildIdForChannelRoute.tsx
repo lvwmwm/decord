@@ -1,15 +1,15 @@
-// Module ID: 5557
-// Function ID: 5558
+// Module ID: 5526
+// Function ID: 5527
 // Name: useGuildIdForChannelRoute
-// Dependencies: [4675, 4856, 1072, 504, 4697, 2]
+// Dependencies: [4644, 4825, 1072, 504, 4666, 2]
 // Exports: default, getGuildIdForGenericRedirect
 
-// Module 5557 (useGuildIdForChannelRoute)
+// Module 5526 (useGuildIdForChannelRoute)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
-import FavoritesUtils from "FavoritesUtils" /* 4697 */;
-import FavoriteStore from "FavoriteStore" /* 4675 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4856 */;
+import FavoritesUtils from "FavoritesUtils" /* 4666 */;
+import FavoriteStore from "FavoriteStore" /* 4644 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4825 */;
 import size from "module_2" /* 2 */;
 
 const FAVORITES = Constants.FAVORITES;

@@ -1,17 +1,17 @@
-// Module ID: 13015
-// Function ID: 13016
+// Module ID: 12997
+// Function ID: 12998
 // Name: ImageInputActionSheet
-// Dependencies: [19, 17, 8433, 21, 4823, 575, 13014, 5008, 5037, 7464, 5414, 1187, 7466, 1113, 13016, 2]
+// Dependencies: [19, 17, 8402, 21, 4792, 575, 12996, 4977, 5006, 7434, 5383, 1187, 7436, 1113, 12998, 2]
 // Exports: default
 
-// Module 13015 (ImageInputActionSheet)
+// Module 12997 (ImageInputActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import PollsConstants from "PollsConstants" /* 8433 */;
-import EditPollCreationImageAltTextModalActionCreators from "EditPollCreationImageAltTextModalActionCreators" /* 13016 */;
+import PollsConstants from "PollsConstants" /* 8402 */;
+import EditPollCreationImageAltTextModalActionCreators from "EditPollCreationImageAltTextModalActionCreators" /* 12998 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

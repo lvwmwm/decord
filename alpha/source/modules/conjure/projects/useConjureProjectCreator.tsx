@@ -1,18 +1,18 @@
-// Module ID: 12238
-// Function ID: 12239
+// Module ID: 12221
+// Function ID: 12222
 // Name: useConjureProjectCreator
-// Dependencies: [19, 1388, 6836, 1113, 4121, 12239, 504, 11937, 4879, 2]
+// Dependencies: [19, 1388, 6806, 1113, 4089, 12222, 504, 11915, 4848, 2]
 // Exports: default, getConjureProjectCreatorLabel
 
-// Module 12238 (useConjureProjectCreator)
+// Module 12221 (useConjureProjectCreator)
 import intl3 from "intl" /* 1113 */;
-import _modDef4121 from "module_4121" /* 4121 */;
-import UserUtils from "UserUtils" /* 4879 */;
-import conjureMessageAuthors from "conjureMessageAuthors" /* 11937 */;
-import ListUtils from "ListUtils" /* 12239 */;
+import _modDef4089 from "module_4089" /* 4089 */;
+import UserUtils from "UserUtils" /* 4848 */;
+import conjureMessageAuthors from "conjureMessageAuthors" /* 11915 */;
+import ListUtils from "ListUtils" /* 12222 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;
-import ConjureChatStore from "ConjureChatStore" /* 6836 */;
+import ConjureChatStore from "ConjureChatStore" /* 6806 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -111,12 +111,12 @@ export default function useConjureProjectCreator(project) {
       if (0 === mapped.length) {
         const intl2 = tmp4(1113).intl;
         const obj3 = { creator: name };
-        formatToPlainStringResult = intl2.formatToPlainString(_modDef4121.t5RWBS, obj3);
+        formatToPlainStringResult = intl2.formatToPlainString(_modDef4089.t5RWBS, obj3);
       } else {
         const intl = tmp4(1113).intl;
         const formatToPlainString = intl.formatToPlainString;
         const obj4 = { creator: name, collaborators: tmp4Result.getListSummaryLabel(mapped) };
-        const prop = _modDef4121["b5uCe/"];
+        const prop = _modDef4089["b5uCe/"];
         tmp4Result = ListUtils;
         formatToPlainStringResult = formatToPlainString(prop, obj4);
       }
@@ -131,12 +131,12 @@ export function getConjureProjectCreatorLabel(creator, names) {
   if (0 === names.length) {
     const intl2 = intl3.intl;
     const obj3 = { creator };
-    formatToPlainStringResult = intl2.formatToPlainString(_modDef4121.t5RWBS, obj3);
+    formatToPlainStringResult = intl2.formatToPlainString(_modDef4089.t5RWBS, obj3);
   } else {
     const intl = intl3.intl;
     const formatToPlainString = intl.formatToPlainString;
     const obj = { creator, collaborators: obj2.getListSummaryLabel(names) };
-    const prop = _modDef4121["b5uCe/"];
+    const prop = _modDef4089["b5uCe/"];
     obj2 = ListUtils;
     formatToPlainStringResult = formatToPlainString(prop, obj);
   }

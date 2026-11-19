@@ -1,12 +1,12 @@
-// Module ID: 14541
-// Function ID: 14542
+// Module ID: 14528
+// Function ID: 14529
 // Name: useTrackUserProfileWishlistView
-// Dependencies: [19, 8889, 504, 2]
+// Dependencies: [19, 8863, 504, 2]
 // Exports: default
 
-// Module 14541 (useTrackUserProfileWishlistView)
+// Module 14528 (useTrackUserProfileWishlistView)
 import react from "react" /* 19 */;
-import WishlistStore from "WishlistStore" /* 8889 */;
+import WishlistStore from "WishlistStore" /* 8863 */;
 import size from "module_2" /* 2 */;
 
 let c2;

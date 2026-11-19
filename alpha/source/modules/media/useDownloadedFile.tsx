@@ -1,12 +1,12 @@
-// Module ID: 11994
-// Function ID: 11995
+// Module ID: 11972
+// Function ID: 11973
 // Name: useDownloadedFile
-// Dependencies: [5, 32, 19, 1113, 6262, 5848, 2]
+// Dependencies: [5, 32, 19, 1113, 6234, 5819, 2]
 // Exports: getBytesLeftNotice, useDownloadedFile
 
-// Module 11994 (useDownloadedFile)
+// Module 11972 (useDownloadedFile)
 import intl2 from "intl" /* 1113 */;
-import FileSizeUtils from "FileSizeUtils" /* 6262 */;
+import FileSizeUtils from "FileSizeUtils" /* 6234 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -95,7 +95,7 @@ export function useDownloadedFile(url, arg1) {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             }
           } else {
             let c6;
@@ -201,7 +201,7 @@ export function useDownloadedFile(url, arg1) {
                   c6 = 0;
                 }
                 c9 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "+60" };
               }
             } catch (tmp44) {
               let closure_7 = tmp44;

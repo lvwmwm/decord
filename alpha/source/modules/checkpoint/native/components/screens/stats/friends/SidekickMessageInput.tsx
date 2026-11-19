@@ -1,24 +1,24 @@
-// Module ID: 12701
-// Function ID: 12702
+// Module ID: 12684
+// Function ID: 12685
 // Name: SidekickMessageInput
-// Dependencies: [5, 32, 19, 17, 5877, 21, 575, 4823, 1496, 5003, 12702, 12424, 5504, 1113, 1187, 12415, 9368, 7450, 12393, 5521, 2]
+// Dependencies: [5, 32, 19, 17, 5848, 21, 575, 4792, 1496, 4972, 12685, 12408, 5473, 1113, 1187, 12398, 9345, 7420, 12376, 5490, 2]
 // Exports: default, useSidekickMessageInputKeyboardOffset
 
-// Module 12701 (SidekickMessageInput)
+// Module 12684 (SidekickMessageInput)
 import nativeDefault from "native" /* 575 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
-import useWindowSizeClassifier from "useWindowSizeClassifier" /* 5003 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7450 */;
-import utils_openGiftModal from "utils/openGiftModal" /* 9368 */;
-import Tracking from "Tracking" /* 12415 */;
-import useCanDMDefault from "useCanDM" /* 12702 */;
+import useWindowSizeClassifier from "useWindowSizeClassifier" /* 4972 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7420 */;
+import utils_openGiftModal from "utils/openGiftModal" /* 9345 */;
+import Tracking from "Tracking" /* 12398 */;
+import useCanDMDefault from "useCanDM" /* 12685 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CheckpointConstants from "CheckpointConstants" /* 5877 */;
+import CheckpointConstants from "CheckpointConstants" /* 5848 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size_mod from "module_2" /* 2 */;
 
 let c1, c4, closure_2, dependencyMap, importDefault;
@@ -90,7 +90,7 @@ export default function SidekickMessageInput(user) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         let c3;
@@ -145,7 +145,7 @@ export default function SidekickMessageInput(user) {
             closure_128_3(false);
           }
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         } catch (tmp37) {
           closure_2 = tmp37;
           if (0 === c3) {
@@ -172,7 +172,7 @@ export default function SidekickMessageInput(user) {
   const tmp6 = str2(react.useState(false), 2);
   size = useWindowDimensionsDefault({ ignoreKeyboard: true });
   const bound = Math.min(size.width, size.height);
-  let messageInputContainerLarge = bound > user(5003).WINDOW_SIZE_THRESHOLD_LARGE;
+  let messageInputContainerLarge = bound > user(4972).WINDOW_SIZE_THRESHOLD_LARGE;
   str2 = undefined;
   const tmp11 = useCanDMDefault(user.id);
   if (str != null) {
@@ -233,7 +233,7 @@ export default function SidekickMessageInput(user) {
       style: items2,
       accessibilityRole: "button",
       accessibilityLabel: intl2.string(tmp10(1113).t.Ve9Ge6),
-      children: tmp16(tmp10(12393).GiftIcon, obj6)
+      children: tmp16(tmp10(12376).GiftIcon, obj6)
     };
     items2 = [, ];
     ({ messageInputAction: arr3[0], giftAction: arr3[1] } = tmp);
@@ -249,7 +249,7 @@ export default function SidekickMessageInput(user) {
       accessibilityRole: "button",
       accessibilityLabel: intl3.string(user(1113).t.oeb1vg),
       accessibilityState: obj8,
-      children: tmp16(user(5521).SendMessageIcon, obj9)
+      children: tmp16(user(5490).SendMessageIcon, obj9)
     };
     items4 = [, , ];
     ({ messageInputAction: arr5[0], sendAction: arr5[1] } = tmp);

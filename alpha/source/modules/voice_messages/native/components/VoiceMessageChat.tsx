@@ -1,23 +1,23 @@
-// Module ID: 13486
-// Function ID: 13487
+// Module ID: 13468
+// Function ID: 13469
 // Name: VoiceMessageChat
-// Dependencies: [32, 19, 17, 4824, 12751, 12752, 21, 1655, 4823, 575, 1380, 5424, 5425, 5033, 5387, 8404, 5414, 2]
+// Dependencies: [32, 19, 17, 4793, 12733, 12734, 21, 1655, 4792, 575, 1380, 5393, 5394, 5002, 5356, 8373, 5383, 2]
 
-// Module 13486 (VoiceMessageChat)
+// Module 13468 (VoiceMessageChat)
 import nativeDefault from "native" /* 575 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5033 */;
-import spring_spring from "spring/spring" /* 5424 */;
-import springPresets from "springPresets" /* 5425 */;
-import utils_TimeUtils from "utils/TimeUtils" /* 8404 */;
-import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 12751 */;
+import timing_timing from "timing/timing" /* 5002 */;
+import spring_spring from "spring/spring" /* 5393 */;
+import springPresets from "springPresets" /* 5394 */;
+import utils_TimeUtils from "utils/TimeUtils" /* 8373 */;
+import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 12733 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4824 */;
-import VoiceMessageConstants from "VoiceMessageConstants" /* 12752 */;
+import AccessibilityStore from "AccessibilityStore" /* 4793 */;
+import VoiceMessageConstants from "VoiceMessageConstants" /* 12734 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1380 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -186,7 +186,7 @@ function Duration(animationValue) {
   const items2 = [first1];
   const first2 = tmp14[0];
   const effect1 = react.useEffect(() => {
-    const f139769 = (arg0) => !arg0;
+    const f139730 = (arg0) => !arg0;
     if (null != first1) {
       if (first1 !== constants.ENDED) {
         let num = 1000;
@@ -198,10 +198,10 @@ function Duration(animationValue) {
           num = num2;
         }
         function flash() {
-          closure_6(f139769);
+          closure_6(f139730);
           const timeout = setTimeout(flash, num);
         }
-        closure_6(f139769);
+        closure_6(f139730);
         const _setTimeout = setTimeout;
         let timeout = setTimeout(flash, num);
         return () => {
@@ -244,7 +244,7 @@ function Duration(animationValue) {
   items7 = [closure_13(tmp22, { style: items6 }), ];
   const obj4 = { style: tmp.duration, variant: token, color: str, tabularNumbers: true, children: memo };
   str = "text-default";
-  const Text = tmp8(5414).Text;
+  const Text = tmp8(5383).Text;
   if (first2) {
     str = "text-feedback-critical";
   }
@@ -305,7 +305,7 @@ const memoResult = react.memo(function VoiceMessageChat(isRecording) {
   let sharedValue;
   ({ initialAnimation, backgroundColor, leftAccessory, rightAccessory } = isRecording);
   let tmp = closure_16();
-  let obj = isRecording(5387);
+  let obj = isRecording(5356);
   const token = obj.useToken(sharedValue(575).colors.MOBILE_VOICE_MESSAGE_RECORDING_SPINNER_COLOR);
   let obj2 = isRecording(1655);
   const tmp4 = sharedValue;
@@ -345,7 +345,7 @@ const memoResult = react.memo(function VoiceMessageChat(isRecording) {
   VoiceMessageChatTsx3.__initData = tmp10;
   const items3 = [closure_24, sharedValue1, , , ];
   const useAnimatedReaction = tmp9.useAnimatedReaction;
-  items3[2] = isRecording(5033).withTiming;
+  items3[2] = isRecording(5002).withTiming;
   items3[3] = isRecording(1655).Easing;
   items3[4] = sharedValue;
   c0 = undefined;

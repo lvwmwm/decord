@@ -1,9 +1,9 @@
-// Module ID: 9385
-// Function ID: 9386
+// Module ID: 9363
+// Function ID: 9364
 // Name: GiftingBadgeCoachmarkAudienceExperiment
 // Dependencies: [1452, 2]
 
-// Module 9385 (GiftingBadgeCoachmarkAudienceExperiment)
+// Module 9363 (GiftingBadgeCoachmarkAudienceExperiment)
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 

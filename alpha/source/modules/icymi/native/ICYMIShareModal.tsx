@@ -1,27 +1,27 @@
-// Module ID: 18195
-// Function ID: 18196
+// Module ID: 18188
+// Function ID: 18189
 // Name: ICYMIShareModal
-// Dependencies: [32, 5, 19, 17, 4672, 1072, 9547, 4828, 21, 4823, 575, 7501, 1113, 18196, 5505, 5398, 9995, 10017, 5421, 6337, 9959, 1255, 8294, 8162, 1630, 1496, 1380, 9978, 9979, 2]
+// Dependencies: [32, 5, 19, 17, 4641, 1072, 9526, 4797, 21, 4792, 575, 7471, 1113, 18189, 5474, 5367, 9973, 9995, 5390, 6308, 9938, 1255, 8263, 8131, 1630, 1496, 1380, 9957, 9958, 2]
 // Exports: GameShareModal, GuildEventShareModal
 
-// Module 18195 (ICYMIShareModal)
+// Module 18188 (ICYMIShareModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import MessageConstants from "MessageConstants" /* 4828 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5398 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5505 */;
-import ShareEventUtils from "ShareEventUtils" /* 7501 */;
-import UserRowConstants from "UserRowConstants" /* 9547 */;
-import useShareChatInputActions from "useShareChatInputActions" /* 9995 */;
+import MessageConstants from "MessageConstants" /* 4797 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5367 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5474 */;
+import ShareEventUtils from "ShareEventUtils" /* 7471 */;
+import UserRowConstants from "UserRowConstants" /* 9526 */;
+import useShareChatInputActions from "useShareChatInputActions" /* 9973 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4672 */;
+import ChannelStore from "ChannelStore" /* 4641 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -31,7 +31,7 @@ let closure_12;
 let obj2;
 let tmp5;
 let unpackModuleId;
-const ShareChatInputDefault = tmp5(10017);
+const ShareChatInputDefault = tmp5(9995);
 function GravityShareFooter(arg0) {
   let count;
   let handleMessageBlur;
@@ -73,7 +73,7 @@ function GravityShareFooter(arg0) {
     items2 = [unpackModuleId(ShareChatInputDefault, obj4), ];
     const obj5 = { variant: "primary", size: "md", text: stringResult, disabled: 0 === count, onPress: tmp17, loading: isSending };
     tmp17 = undefined;
-    const Button = tmp7(5421).Button;
+    const Button = tmp7(5390).Button;
     const tmp14 = authStore2;
     const tmp15 = View;
     const tmp16 = unpackModuleId;
@@ -119,7 +119,7 @@ class ICYMIShareModal {
               let obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             }
           } else {
             try {
@@ -167,7 +167,7 @@ class ICYMIShareModal {
                         const obj3 = { value, done: true };
                         return obj3;
                       } else {
-                        return { value: "HermesInternal", done: null };
+                        return { value: "HermesInternal", done: "+60" };
                       }
                     } else {
                       try {
@@ -213,7 +213,7 @@ class ICYMIShareModal {
                           return obj;
                         }
                         c1 = 3;
-                        return { value: "HermesInternal", done: null };
+                        return { value: "HermesInternal", done: "+60" };
                       } catch (tmp16) {
                         c1 = 3;
                         throw tmp16;
@@ -228,7 +228,7 @@ class ICYMIShareModal {
                 const arr3 = tmp2(closure_2[19]);
                 arr3.pop();
                 c4 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "+60" };
               }
             } catch (tmp6) {
               c4 = 3;
@@ -334,7 +334,7 @@ export function GameShareModal(content) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c4;
@@ -392,7 +392,7 @@ export function GameShareModal(content) {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp32) {
         closure_3 = tmp32;

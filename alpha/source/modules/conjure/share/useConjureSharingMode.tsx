@@ -1,13 +1,13 @@
-// Module ID: 18326
-// Function ID: 18327
+// Module ID: 18319
+// Function ID: 18320
 // Name: useConjureSharingMode
-// Dependencies: [5, 32, 19, 6529, 1113, 4121, 504, 18325, 18327, 6844, 6530, 2]
+// Dependencies: [5, 32, 19, 6500, 1113, 4089, 504, 18318, 18320, 6814, 6501, 2]
 // Exports: conjureSharingOptions, default
 
-// Module 18326 (useConjureSharingMode)
+// Module 18319 (useConjureSharingMode)
 import intl4 from "intl" /* 1113 */;
-import _modDef4121 from "module_4121" /* 4121 */;
-import ConjureProjectStore2 from "ConjureProjectStore" /* 6529 */;
+import _modDef4089 from "module_4089" /* 4089 */;
+import ConjureProjectStore2 from "ConjureProjectStore" /* 6500 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -66,7 +66,7 @@ export default function useConjureSharingMode(arg0) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c3;
@@ -145,7 +145,7 @@ export default function useConjureSharingMode(arg0) {
           closure_1_6(null);
         }
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       } catch (tmp30) {
         tmp31 = c3;
         if (0 === c3) {
@@ -205,13 +205,13 @@ export function conjureSharingOptions() {
   let intl;
   let intl2;
   let intl3;
-  const obj = { value: "collaborators", label: intl.string(_modDef4121["a/Tlqf"]) };
+  const obj = { value: "collaborators", label: intl.string(_modDef4089["a/Tlqf"]) };
   intl = intl4.intl;
   const items = [obj, , ];
-  const obj2 = { value: "link", label: intl2.string(_modDef4121.e0VakN) };
+  const obj2 = { value: "link", label: intl2.string(_modDef4089.e0VakN) };
   intl2 = intl4.intl;
   items[1] = obj2;
-  const obj3 = { value: "public", label: intl3.string(_modDef4121["98MAcX"]) };
+  const obj3 = { value: "public", label: intl3.string(_modDef4089["98MAcX"]) };
   intl3 = intl4.intl;
   items[2] = obj3;
   return items;

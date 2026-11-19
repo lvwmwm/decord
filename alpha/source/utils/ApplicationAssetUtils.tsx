@@ -1,16 +1,16 @@
-// Module ID: 6828
-// Function ID: 6829
+// Module ID: 6798
+// Function ID: 6799
 // Name: ApplicationAssetUtils
-// Dependencies: [32, 5, 6829, 1072, 38, 3, 1285, 572, 1449, 2]
+// Dependencies: [32, 5, 6799, 1072, 38, 3, 1285, 572, 1449, 2]
 // Exports: getAssetFromImageURL, getAssetIds, getAssetImage
 
-// Module 6828 (ApplicationAssetUtils)
+// Module 6798 (ApplicationAssetUtils)
 import _modDef38 from "module_38" /* 38 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1449 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationAssetsStore from "ApplicationAssetsStore" /* 6829 */;
+import ApplicationAssetsStore from "ApplicationAssetsStore" /* 6799 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ let PlatformTypes;
 let metroRequire;
 let tmp;
 const LoggerDefault = tmp(3);
-const f91249 = (item) => {
+const f91193 = (item) => {
   let startsWithResult;
   if (item != null) {
     startsWithResult = item.startsWith("http:");
@@ -104,7 +104,7 @@ obj = function _resolveExternalAssets() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       while (true) {
@@ -175,7 +175,7 @@ obj = function _resolveExternalAssets() {
           }
         }
         c9 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     }
   });
@@ -183,7 +183,7 @@ obj = function _resolveExternalAssets() {
 };
 function updateUrlAssetIds(arr, arg1) {
   let num = 0;
-  if (arr.filter(f91249).length > 0) {
+  if (arr.filter(f91193).length > 0) {
     let num3 = 0;
     let num4 = 0;
     num = 0;
@@ -522,7 +522,7 @@ export { fetchAssetIds };
 export function getAssetIds(id, arr) {
   const items = [];
   let num = 0;
-  if (arr.filter(f91249).length > 0) {
+  if (arr.filter(f91193).length > 0) {
     let num3 = 0;
     let num4 = 0;
     num = 0;

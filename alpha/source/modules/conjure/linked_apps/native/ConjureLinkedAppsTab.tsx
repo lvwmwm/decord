@@ -1,15 +1,15 @@
 // Module ID: 18370
 // Function ID: 18371
 // Name: ConjureLinkedAppsTab
-// Dependencies: [19, 6529, 21, 6956, 5037, 18371, 5774, 1113, 4121, 5837, 575, 5414, 18372, 18373, 7259, 2]
+// Dependencies: [19, 6500, 21, 6926, 5006, 18371, 5745, 1113, 4089, 5808, 575, 5383, 18372, 18373, 7229, 2]
 // Exports: default
 
 // Module 18370 (ConjureLinkedAppsTab)
 import intl4 from "intl" /* 1113 */;
-import _modDef4121 from "module_4121" /* 4121 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5037 */;
-import AlertModal from "AlertModal" /* 5774 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6529 */;
+import _modDef4089 from "module_4089" /* 4089 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5006 */;
+import AlertModal from "AlertModal" /* 5745 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6500 */;
 import ConjureLinkedAppBuildSheetDefault from "ConjureLinkedAppBuildSheet" /* 18371 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -104,13 +104,13 @@ export default function ConjureLinkedAppsTab(linkedApps) {
   const saved = linkedApps.saved;
   let obj = { spacing: onOpenSettings(575).space.PX_24, children: items1 };
   const tmp4 = onOpenSettings;
-  let Stack = linkedApps(5837).Stack;
+  let Stack = linkedApps(5808).Stack;
   let tmpResult = null;
   if (callers.length > 0) {
     let obj2 = { spacing: tmp4(575).space.PX_16, children: items };
-    const Stack2 = tmp2(5837).Stack;
-    let obj3 = { variant: "body-xs/semibold", color: "text-muted", accessibilityRole: "header", children: intl.formatToPlainString(tmp4(4121).uLPdNT, obj4) };
-    const Text = tmp2(5414).Text;
+    const Stack2 = tmp2(5808).Stack;
+    let obj3 = { variant: "body-xs/semibold", color: "text-muted", accessibilityRole: "header", children: intl.formatToPlainString(tmp4(4089).uLPdNT, obj4) };
+    const Text = tmp2(5383).Text;
     intl = tmp2(1113).intl;
     obj4 = { name: linkedApps.name };
     items = [
@@ -179,9 +179,9 @@ export default function ConjureLinkedAppsTab(linkedApps) {
               const showConfirmModal = tmp.showConfirmModal;
               const obj = {
                 key: "ConjureRemoveLinkedApp-" + project_id,
-                title: intl.formatToPlainString(_modDef4121.zSfIvv, obj2),
-                content: intl2.formatToPlainString(_modDef4121["7TX+mR"], obj3),
-                confirmText: intl3.string(_modDef4121.vDZEGQ),
+                title: intl.formatToPlainString(_modDef4089.zSfIvv, obj2),
+                content: intl2.formatToPlainString(_modDef4089["7TX+mR"], obj3),
+                confirmText: intl3.string(_modDef4089.vDZEGQ),
                 variant: "destructive",
                 onConfirm() {
                   return closure_2_5(closure_0);
@@ -218,10 +218,10 @@ export default function ConjureLinkedAppsTab(linkedApps) {
   let tmpResult2 = null;
   if (targets.length > 0) {
     let obj5 = { spacing: tmp4(575).space.PX_16, children: items2 };
-    const Stack3 = tmp2(5837).Stack;
+    const Stack3 = tmp2(5808).Stack;
     let tmp8 = c4;
-    let obj6 = { variant: "body-xs/semibold", color: "text-muted", accessibilityRole: "header", children: intl2.formatToPlainString(tmp4(4121).L3Bf1s, obj7) };
-    const Text2 = tmp2(5414).Text;
+    let obj6 = { variant: "body-xs/semibold", color: "text-muted", accessibilityRole: "header", children: intl2.formatToPlainString(tmp4(4089).L3Bf1s, obj7) };
+    const Text2 = tmp2(5383).Text;
     intl2 = tmp2(1113).intl;
     obj7 = { name: linkedApps.name };
     items2 = [
@@ -292,7 +292,7 @@ export default function ConjureLinkedAppsTab(linkedApps) {
   if (failed) {
     let tmp10 = c4;
     let str = "text-muted";
-    const Text3 = tmp2(5414).Text;
+    const Text3 = tmp2(5383).Text;
     if (failed) {
       str = "text-feedback-critical";
     }
@@ -307,7 +307,7 @@ export default function ConjureLinkedAppsTab(linkedApps) {
     }
     let intl3 = tmp2(1113).intl;
     string = intl3.string;
-    tmp4Result = tmp4(4121);
+    tmp4Result = tmp4(4089);
     tmp10Result = tmp10(Text3, obj8);
   } else {
     tmp10Result = null;

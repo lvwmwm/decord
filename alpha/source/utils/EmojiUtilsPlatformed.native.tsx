@@ -1,21 +1,21 @@
-// Module ID: 4779
-// Function ID: 4780
+// Module ID: 4748
+// Function ID: 4749
 // Name: EmojiUtilsPlatformed
-// Dependencies: [32, 5, 17, 4770, 4780, 1380, 12, 1414, 2025, 4781, 1493, 4820, 4822, 5435, 2]
+// Dependencies: [32, 5, 17, 4739, 4749, 1380, 12, 1414, 2025, 4750, 1493, 4789, 4791, 5404, 2]
 
-// Module 4779 (EmojiUtilsPlatformed)
+// Module 4748 (EmojiUtilsPlatformed)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
 import react_nativeDefault from "react-native" /* 2025 */;
-import DeviceUtils from "DeviceUtils" /* 4780 */;
-import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 4781 */;
-import BurstReactionFirstSendActionSheet from "BurstReactionFirstSendActionSheet" /* 4822 */;
+import DeviceUtils from "DeviceUtils" /* 4749 */;
+import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 4750 */;
+import BurstReactionFirstSendActionSheet from "BurstReactionFirstSendActionSheet" /* 4791 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import module_4770 from "module_4770" /* 4770 */;
-import MemoizerUtils_mod from "MemoizerUtils" /* 5435 */;
+import module_4739 from "module_4739" /* 4739 */;
+import MemoizerUtils_mod from "MemoizerUtils" /* 5404 */;
 import size from "module_2" /* 2 */;
 
 let closure_1, closure_2, unicodeVersion;
@@ -24,7 +24,7 @@ let MemoizerUtils;
 function getURL(name) {
   let str;
   if (null == name) {
-    const convert = module_4770.convert;
+    const convert = module_4739.convert;
     const _HermesInternal = HermesInternal;
     str = "asset:/emoji-" + convert.toCodePoint(name) + ".png";
   } else {
@@ -50,7 +50,7 @@ let LIGHT = function _getEmojiColors() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {

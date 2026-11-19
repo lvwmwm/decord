@@ -1,15 +1,15 @@
-// Module ID: 8534
-// Function ID: 8535
+// Module ID: 8503
+// Function ID: 8504
 // Name: ForumActionCreators
-// Dependencies: [5, 1072, 5768, 1113, 572, 1285, 8371, 8535, 8536, 8537, 8373, 2]
+// Dependencies: [5, 1072, 5739, 1113, 572, 1285, 8340, 8504, 8505, 8506, 8342, 2]
 
-// Module 8534 (ForumActionCreators)
+// Module 8503 (ForumActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl3 from "intl" /* 1113 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
-import AnalyticsFeedItemSeenActionCreators from "AnalyticsFeedItemSeenActionCreators" /* 8535 */;
-import ForumChannelSeenManager from "ForumChannelSeenManager" /* 8536 */;
-import AnalyticsFeedItemSeenManager from "AnalyticsFeedItemSeenManager" /* 8537 */;
+import AnalyticsFeedItemSeenActionCreators from "AnalyticsFeedItemSeenActionCreators" /* 8504 */;
+import ForumChannelSeenManager from "ForumChannelSeenManager" /* 8505 */;
+import AnalyticsFeedItemSeenManager from "AnalyticsFeedItemSeenManager" /* 8506 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -190,7 +190,7 @@ body = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -243,7 +243,7 @@ body = {
               c2 = 0;
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp10) {
           if (0 === c2) {

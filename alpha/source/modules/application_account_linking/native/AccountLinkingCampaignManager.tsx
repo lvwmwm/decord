@@ -1,17 +1,17 @@
-// Module ID: 20213
-// Function ID: 20214
+// Module ID: 20224
+// Function ID: 20225
 // Name: AccountLinkingCampaignManager
-// Dependencies: [5, 14920, 6335, 1388, 19149, 1072, 7395, 559, 1380, 19154, 14922, 2]
+// Dependencies: [5, 14906, 6306, 1388, 19141, 1072, 7365, 559, 1380, 19146, 14908, 2]
 
-// Module 20213 (AccountLinkingCampaignManager)
+// Module 20224 (AccountLinkingCampaignManager)
 import BackoffDefault from "Backoff" /* 559 */;
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LocalAppDetectionStore from "LocalAppDetectionStore" /* 14920 */;
-import ConsentStore from "ConsentStore" /* 6335 */;
+import LocalAppDetectionStore from "LocalAppDetectionStore" /* 14906 */;
+import ConsentStore from "ConsentStore" /* 6306 */;
 import UserStore from "UserStore" /* 1388 */;
-import AccountLinkingCampaignStore from "AccountLinkingCampaignStore" /* 19149 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
+import AccountLinkingCampaignStore from "AccountLinkingCampaignStore" /* 19141 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
 import size from "module_2" /* 2 */;
 
 let _self, closure_4, currentUser, sessionGeneration;
@@ -60,7 +60,7 @@ class AccountLinkingCampaignManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         let c5;
@@ -190,7 +190,7 @@ class AccountLinkingCampaignManager extends AutomaticLifecycleManager {
                           closure_131_0.pendingSession = null;
                         }
                         sessionGeneration = 3;
-                        return { value: "HermesInternal", done: null };
+                        return { value: "HermesInternal", done: "+60" };
                       }
                     }
                   }
@@ -232,7 +232,7 @@ class AccountLinkingCampaignManager extends AutomaticLifecycleManager {
                       closure_131_0.pendingSession = null;
                     }
                     sessionGeneration = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "+60" };
                   } else {
                     c5 = 3;
                     const obj3 = _self(pendingSession[10]);
@@ -248,7 +248,7 @@ class AccountLinkingCampaignManager extends AutomaticLifecycleManager {
                     closure_131_0.pendingSession = null;
                   }
                   sessionGeneration = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "+60" };
                 }
               }
             } else if (4 === tmp4) {
@@ -282,7 +282,7 @@ class AccountLinkingCampaignManager extends AutomaticLifecycleManager {
                   closure_131_0.pendingSession = null;
                 }
                 sessionGeneration = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "+60" };
               }
             } else if (6 === tmp4) {
               c5 = 3;
@@ -316,7 +316,7 @@ class AccountLinkingCampaignManager extends AutomaticLifecycleManager {
                   closure_131_0.pendingSession = null;
                 }
                 sessionGeneration = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "+60" };
               }
             }
             c5 = 0;
@@ -326,7 +326,7 @@ class AccountLinkingCampaignManager extends AutomaticLifecycleManager {
             }
           }
           sessionGeneration = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         } catch (tmp114) {
           appInstalled = tmp114;
           if (0 === c5) {

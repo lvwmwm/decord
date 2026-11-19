@@ -1,17 +1,17 @@
-// Module ID: 17282
-// Function ID: 17283
+// Module ID: 17275
+// Function ID: 17276
 // Name: UserSettingsDesignSystemTabs
-// Dependencies: [32, 19, 17, 21, 4823, 575, 5414, 5387, 4820, 7508, 7497, 5837, 13459, 13642, 13462, 5421, 7467, 2]
+// Dependencies: [32, 19, 17, 21, 4792, 575, 5383, 5356, 4789, 7478, 7467, 5808, 13441, 13624, 13444, 5390, 7437, 2]
 // Exports: default
 
-// Module 17282 (UserSettingsDesignSystemTabs)
+// Module 17275 (UserSettingsDesignSystemTabs)
 import nativeDefault from "native" /* 575 */;
-import useMeasuredLayoutDefault from "useMeasuredLayout" /* 7508 */;
+import useMeasuredLayoutDefault from "useMeasuredLayout" /* 7478 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -92,28 +92,28 @@ export default function UserSettingsDesignSystemTabs() {
     }
     return items;
   }, items);
-  let obj = first(7497);
+  let obj = first(7467);
   const segmentedControlState = obj.useSegmentedControlState({ items: memo, pageWidth: num, defaultIndex: 1 });
-  let obj2 = first(5387);
+  let obj2 = first(5356);
   const token = obj2.useToken(tmp(575).colors.BACKGROUND_BASE_LOW);
   let items1 = [token, ];
-  let obj3 = first(4820);
+  let obj3 = first(4789);
   items1[1] = obj3.hexWithOpacity(token, 0);
   const obj4 = { style: tmp15.container, ref, onLayout, children: closure_7(Stack, obj7) };
-  Stack = first(5837).Stack;
-  const items2 = [closure_8(first(13459).Tabs, { state: segmentedControlState, grow: first1 }), ];
+  Stack = first(5808).Stack;
+  const items2 = [closure_8(first(13441).Tabs, { state: segmentedControlState, grow: first1 }), ];
   let tmp21Result = first2;
   const tmp22 = closure_6;
   if (tmp21Result) {
     const obj5 = { state: segmentedControlState, colors: items1 };
-    tmp21Result = tmp21(tmp(13642), obj5);
+    tmp21Result = tmp21(tmp(13624), obj5);
   }
   obj7 = { spacing: 24, children: items3 };
   items2[1] = tmp21Result;
   const obj6 = { children: closure_8(closure_5, obj4) };
-  items3 = [closure_7(closure_5, { children: items2 }), closure_8(first(13462).SegmentedControlPages, { state: segmentedControlState }), , ];
+  items3 = [closure_7(closure_5, { children: items2 }), closure_8(first(13444).SegmentedControlPages, { state: segmentedControlState }), , ];
   const obj8 = { spacing: 8, direction: "horizontal", children: items4 };
-  const Stack2 = tmp18(5837).Stack;
+  const Stack2 = tmp18(5808).Stack;
   items4 = [, ];
   const obj9 = {
     text: "Add Tab",
@@ -124,7 +124,7 @@ export default function UserSettingsDesignSystemTabs() {
       return closure_1(first + 1);
     }
   };
-  items4[0] = closure_8(first(5421).Button, obj9);
+  items4[0] = closure_8(first(5390).Button, obj9);
   const obj10 = {
     text: "Remove Tab",
     variant: "destructive",
@@ -134,10 +134,10 @@ export default function UserSettingsDesignSystemTabs() {
       return closure_1(first - 1);
     }
   };
-  items4[1] = closure_8(first(5421).Button, obj10);
+  items4[1] = closure_8(first(5390).Button, obj10);
   items3[2] = closure_7(Stack2, obj8);
   const obj11 = { children: items5 };
-  items5 = [closure_8(first(7467).TableSwitchRow, { start: true, label: "Enable Grow", value: first1, onValueChange: tmp8 }), closure_8(first(7467).TableSwitchRow, { label: "Enable Counts", value: tmp10, onValueChange: tmp11 }), closure_8(first(7467).TableSwitchRow, { end: true, label: "Enable Overflow Gradient", value: first2, onValueChange: tmp14 })];
+  items5 = [closure_8(first(7437).TableSwitchRow, { start: true, label: "Enable Grow", value: first1, onValueChange: tmp8 }), closure_8(first(7437).TableSwitchRow, { label: "Enable Counts", value: tmp10, onValueChange: tmp11 }), closure_8(first(7437).TableSwitchRow, { end: true, label: "Enable Overflow Gradient", value: first2, onValueChange: tmp14 })];
   items3[3] = closure_7(closure_5, obj11);
   return closure_8(tmp22, obj6);
 };

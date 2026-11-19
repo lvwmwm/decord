@@ -1,10 +1,10 @@
-// Module ID: 10867
-// Function ID: 10868
+// Module ID: 10845
+// Function ID: 10846
 // Name: useThrottle
 // Dependencies: [19, 12, 2]
 // Exports: useThrottledState
 
-// Module 10867 (useThrottle)
+// Module 10845 (useThrottle)
 import _mod12 from "module_12" /* 12 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -43,12 +43,12 @@ function useThrottledFunction(callback4, arg1, items4, sharedValue) {
 }
 const result = size.fileFinishedImporting("hooks/useThrottle.tsx");
 
-export const useThrottledState = (map, arg1) => {
+export const useThrottledState = (set, arg1) => {
   let closure_0;
   let closure_1;
   let closure_2;
-  let current = map;
-  _require = map;
+  let current = set;
+  _require = set;
   let items = arg2;
   if (arg2 === undefined) {
     items = [];

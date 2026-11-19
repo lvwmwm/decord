@@ -1,23 +1,23 @@
-// Module ID: 15650
-// Function ID: 15651
+// Module ID: 15637
+// Function ID: 15638
 // Name: subscriptionHelpers
-// Dependencies: [4671, 14658, 8316, 1072, 2145, 6532, 10734, 6811, 15604, 15605, 8062, 15606, 8339, 2]
+// Dependencies: [4640, 14645, 8285, 1072, 2145, 6503, 10712, 6783, 15590, 15591, 8031, 15592, 8308, 2]
 // Exports: getInitialSubscriptionPayload
 
-// Module 15650 (subscriptionHelpers)
+// Module 15637 (subscriptionHelpers)
 import Constants from "Constants" /* 1072 */;
 import Constants2 from "Constants" /* 2145 */;
-import FramesConstants from "FramesConstants" /* 6532 */;
-import getSocketFrameDefault from "getSocketFrame" /* 6811 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 8062 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 8339 */;
-import Constants3 from "Constants" /* 10734 */;
-import useThermalState from "useThermalState" /* 15604 */;
-import ThermalStates from "ThermalStates" /* 15605 */;
-import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 15606 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4671 */;
-import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 14658 */;
-import QuestStore from "QuestStore" /* 8316 */;
+import FramesConstants from "FramesConstants" /* 6503 */;
+import getSocketFrameDefault from "getSocketFrame" /* 6783 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 8031 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 8308 */;
+import Constants3 from "Constants" /* 10712 */;
+import useThermalState from "useThermalState" /* 15590 */;
+import ThermalStates from "ThermalStates" /* 15591 */;
+import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 15592 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4640 */;
+import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 14645 */;
+import QuestStore from "QuestStore" /* 8285 */;
 import size from "module_2" /* 2 */;
 
 const RPCEvents = Constants.RPCEvents;

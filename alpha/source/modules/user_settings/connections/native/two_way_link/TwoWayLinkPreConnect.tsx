@@ -1,21 +1,21 @@
-// Module ID: 6978
-// Function ID: 6979
+// Module ID: 6948
+// Function ID: 6949
 // Name: TwoWayLinkPreConnect
-// Dependencies: [32, 5, 19, 17, 1072, 21, 3, 4823, 6979, 6982, 6955, 5502, 1380, 6980, 38, 5385, 572, 5510, 5414, 1113, 6928, 5421, 2]
+// Dependencies: [32, 5, 19, 17, 1072, 21, 3, 4792, 6949, 6952, 6925, 5471, 1380, 6950, 38, 5354, 572, 5479, 5383, 1113, 6898, 5390, 2]
 // Exports: TwoWayLinkPreConnect
 
-// Module 6978 (TwoWayLinkPreConnect)
+// Module 6948 (TwoWayLinkPreConnect)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 6979 */;
-import TwoWayLinkType from "TwoWayLinkType" /* 6982 */;
+import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 6949 */;
+import TwoWayLinkType from "TwoWayLinkType" /* 6952 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let _undefined, c5, callbackState;
@@ -107,7 +107,7 @@ export function TwoWayLinkPreConnect(platformType) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c3;
@@ -142,7 +142,7 @@ export function TwoWayLinkPreConnect(platformType) {
             return obj6;
           } else {
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } else if (arg0 === 1) {
           c5 = 3;
@@ -174,7 +174,7 @@ export function TwoWayLinkPreConnect(platformType) {
             closure_129_5.current = state;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp40) {
         onNext = tmp40;

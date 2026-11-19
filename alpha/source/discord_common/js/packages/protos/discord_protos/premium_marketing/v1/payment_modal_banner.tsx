@@ -1,11 +1,11 @@
-// Module ID: 9061
-// Function ID: 9062
+// Module ID: 9037
+// Function ID: 9038
 // Name: payment_modal_banner
-// Dependencies: [32, 1197, 9056, 2]
+// Dependencies: [32, 1197, 9030, 2]
 
-// Module 9061 (payment_modal_banner)
+// Module 9037 (payment_modal_banner)
 import _mod1197 from "module_1197" /* 1197 */;
-import localized_string from "localized_string" /* 9056 */;
+import localized_string from "localized_string" /* 9030 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -16,23 +16,28 @@ let tmp;
 const T2 = function T() {
   return require("localized_string").LocalizedString;
 };
+const T3 = function T() {
+  const items = ["discord_protos.premium_marketing.v1.PaymentModalBannerGradient", PaymentModalBannerGradient, "PAYMENT_MODAL_BANNER_GRADIENT_"];
+  return items;
+};
+const PaymentModalBannerGradient = { UNSPECIFIED: 0, [0]: "UNSPECIFIED", BLURPLE: 1, [1]: "BLURPLE", NITRO_PINK: 2, [2]: "NITRO_PINK" };
 const MessageType = _mod1197.MessageType;
 class PaymentModalBanner$Type extends MessageType {
   constructor() {
-    const items = [{ no: 1, name: "asset_url", kind: "scalar", T: 9 }, { no: 2, name: "header", kind: "scalar", T: 9 }, { no: 3, name: "body", kind: "scalar", T: 9 }, , ];
-    const obj = { no: 4, name: "header_localized", kind: "message", T };
+    let items = [{ no: 1, name: "asset_url", kind: "scalar", T: 9 }, { no: 2, name: "header", kind: "scalar", T: 9 }, { no: 3, name: "body", kind: "scalar", T: 9 }, { no: 4, name: "header_localized", kind: "message", T: T2 }, , ];
+    const obj = { no: 5, name: "body_localized", kind: "message", T };
     class T {
       constructor() {
         return closure_1_0(closure_1_1[2]).LocalizedString;
       }
     }
-    items[3] = obj;
-    items[4] = { no: 5, name: "body_localized", kind: "message", T: T2 };
+    items[4] = obj;
+    items[5] = { no: 6, name: "gradient", kind: "enum", T: T3 };
     const tmp2 = new tmp("discord_protos.premium_marketing.v1.PaymentModalBanner", items, T);
     return tmp2;
   }
   create(partialSettings) {
-    const obj = { assetUrl: "", header: "", body: "" };
+    const obj = { assetUrl: "", header: "", body: "", gradient: 0 };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
@@ -67,6 +72,8 @@ class PaymentModalBanner$Type extends MessageType {
         } else if (5 === tmp5) {
           let LocalizedString = localized_string.LocalizedString;
           obj.bodyLocalized = LocalizedString.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.bodyLocalized);
+        } else if (6 === tmp5) {
+          obj.gradient = pos.int32();
         } else {
           let onRead = readUnknownField.readUnknownField;
           if ("throw" === onRead) {
@@ -123,6 +130,10 @@ class PaymentModalBanner$Type extends MessageType {
       const internalBinaryWrite2Result = internalBinaryWrite2(bodyLocalized, tagResult4.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
+    if (0 !== assetUrl.gradient) {
+      const tagResult5 = tag.tag(6, _mod1197.WireType.Varint);
+      tagResult5.int32(assetUrl.gradient);
+    }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
@@ -135,16 +146,17 @@ class PaymentModalBanner$Type extends MessageType {
   }
 }
 const prototype = PaymentModalBanner$Type.prototype;
-let items = [{ no: 1, name: "asset_url", kind: "scalar", T: 9 }, { no: 2, name: "header", kind: "scalar", T: 9 }, { no: 3, name: "body", kind: "scalar", T: 9 }, , ];
-let obj = { no: 4, name: "header_localized", kind: "message", T };
+let items = [{ no: 1, name: "asset_url", kind: "scalar", T: 9 }, { no: 2, name: "header", kind: "scalar", T: 9 }, { no: 3, name: "body", kind: "scalar", T: 9 }, { no: 4, name: "header_localized", kind: "message", T: T2 }, , ];
+let obj2 = { no: 5, name: "body_localized", kind: "message", T };
 class T {
   constructor() {
     return require("localized_string").LocalizedString;
   }
 }
-items[3] = obj;
-items[4] = { no: 5, name: "body_localized", kind: "message", T: T2 };
-const prototype1 = new prototype("discord_protos.premium_marketing.v1.PaymentModalBanner", items, tmp, T, PaymentModalBanner$Type, prototype, items);
+items[4] = obj2;
+items[5] = { no: 6, name: "gradient", kind: "enum", T: T3 };
+const prototype1 = new prototype("discord_protos.premium_marketing.v1.PaymentModalBanner", items, tmp, T, PaymentModalBanner$Type, prototype, items, require, dependencyMap);
 let result = size.fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/premium_marketing/v1/payment_modal_banner.tsx");
 
+export { PaymentModalBannerGradient };
 export const PaymentModalBanner = prototype1;

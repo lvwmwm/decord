@@ -1,7 +1,7 @@
 // Module ID: 18409
 // Function ID: 18410
 // Name: useConjureConnectActions
-// Dependencies: [5, 32, 19, 18386, 18385, 7166, 1113, 4121, 2]
+// Dependencies: [5, 32, 19, 18386, 18385, 7136, 1113, 4089, 2]
 // Exports: useConjureConnectActions
 
 // Module 18409 (useConjureConnectActions)
@@ -50,7 +50,7 @@ export function useConjureConnectActions(projectId, presentError) {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             }
           } else {
             try {
@@ -102,7 +102,7 @@ export function useConjureConnectActions(projectId, presentError) {
                   obj.handleClick(obj8);
                 }
                 c3 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "+60" };
               }
             } catch (tmp33) {
               c3 = 3;

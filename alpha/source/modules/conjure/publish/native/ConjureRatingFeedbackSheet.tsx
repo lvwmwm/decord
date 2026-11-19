@@ -1,17 +1,17 @@
-// Module ID: 18658
-// Function ID: 18659
+// Module ID: 18651
+// Function ID: 18652
 // Name: ConjureRatingFeedbackSheet
-// Dependencies: [19, 17, 21, 4823, 575, 8061, 18657, 1113, 4121, 7464, 7426, 7372, 5421, 2020, 2]
+// Dependencies: [19, 17, 21, 4792, 575, 8030, 18650, 1113, 4089, 7434, 7396, 7342, 5390, 2020, 2]
 // Exports: default
 
-// Module 18658 (ConjureRatingFeedbackSheet)
+// Module 18651 (ConjureRatingFeedbackSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 2020 */;
-import _modDef4121 from "module_4121" /* 4121 */;
+import _modDef4089 from "module_4089" /* 4089 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -51,17 +51,17 @@ export default function ConjureRatingFeedbackSheet(rating) {
   const conjureRatingFeedback = obj2.useConjureRatingFeedback(rating);
   ({ send: c1, text, setText, canSend } = conjureRatingFeedback);
   const intl = require("intl").intl;
-  const stringResult = intl.string(_modDef4121.IqkF07);
+  const stringResult = intl.string(_modDef4089.IqkF07);
   const obj3 = { ref: bottomSheetRef, startExpanded: true, keyboardShouldPersistTaps: "handled", header: closure_4(require("BottomSheetTitleHeader").BottomSheetTitleHeader, { title: stringResult }), children: closure_5(View, obj4) };
   const ActionSheet = require("ActionSheet").ActionSheet;
   obj4 = { style: tmp.content, children: items };
-  const obj5 = { accessibilityLabel: stringResult, placeholder: intl2.string(_modDef4121.HMGKAV), maxLength: require("conjurePublishRatings").CONJURE_RATING_FEEDBACK_MAX_LENGTH, value: text, onChange: setText };
+  const obj5 = { accessibilityLabel: stringResult, placeholder: intl2.string(_modDef4089.HMGKAV), maxLength: require("conjurePublishRatings").CONJURE_RATING_FEEDBACK_MAX_LENGTH, value: text, onChange: setText };
   const TextArea = require("TextArea").TextArea;
   intl2 = require("intl").intl;
   items = [closure_4(TextArea, obj5), ];
   const obj6 = {
     variant: "primary",
-    text: intl3.string(_modDef4121["sr+mUC"]),
+    text: intl3.string(_modDef4089["sr+mUC"]),
     disabled: !canSend,
     onPress: function handleSend() {
       _undefined2();

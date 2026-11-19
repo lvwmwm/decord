@@ -1,9 +1,9 @@
-// Module ID: 19779
-// Function ID: 19780
+// Module ID: 19776
+// Function ID: 19777
 // Name: AutomodExperiment
 // Dependencies: [1452, 2]
 
-// Module 19779 (AutomodExperiment)
+// Module 19776 (AutomodExperiment)
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 

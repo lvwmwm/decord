@@ -1,16 +1,16 @@
-// Module ID: 10749
-// Function ID: 10750
+// Module ID: 10727
+// Function ID: 10728
 // Name: createWebViewController
-// Dependencies: [5, 10750, 1072, 6261, 7730, 10751, 1242, 10752, 10755, 1108, 2]
+// Dependencies: [5, 10728, 1072, 6233, 7700, 10729, 1242, 10730, 10733, 1108, 2]
 // Exports: default
 
-// Module 10749 (createWebViewController)
+// Module 10727 (createWebViewController)
 import Constants from "Constants" /* 1072 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import Constants2 from "Constants" /* 6261 */;
-import EmbeddedAppConstants from "EmbeddedAppConstants" /* 10750 */;
-import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 10755 */;
+import Constants2 from "Constants" /* 6233 */;
+import EmbeddedAppConstants from "EmbeddedAppConstants" /* 10728 */;
+import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 10733 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -43,7 +43,7 @@ export default function createWebViewController(id, contextSource) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         let c5;
@@ -85,7 +85,7 @@ export default function createWebViewController(id, contextSource) {
               c5 = 0;
             }
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp18) {
           closure_4 = tmp18;
@@ -118,7 +118,7 @@ export default function createWebViewController(id, contextSource) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c4;
@@ -159,7 +159,7 @@ export default function createWebViewController(id, contextSource) {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp15) {
         if (0 === c4) {

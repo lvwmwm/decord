@@ -1,14 +1,14 @@
-// Module ID: 5532
-// Function ID: 5533
+// Module ID: 5501
+// Function ID: 5502
 // Name: ClockIcon
-// Dependencies: [19, 21, 575, 5509, 5533, 2]
+// Dependencies: [19, 21, 575, 5478, 5502, 2]
 // Exports: ClockIcon
 
-// Module 5532 (ClockIcon)
+// Module 5501 (ClockIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5509 */;
-import AssetRegistry from "AssetRegistry" /* 5533 */;
+import BaseIconImage2 from "BaseIconImage" /* 5478 */;
+import AssetRegistry from "AssetRegistry" /* 5502 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

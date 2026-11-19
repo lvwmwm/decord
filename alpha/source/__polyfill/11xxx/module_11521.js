@@ -1,12 +1,14 @@
 // Module ID: 11521
 // Function ID: 11522
-// Dependencies: [41, 42, 93, 95, 98, 11396]
+// Dependencies: [41, 42, 93, 95, 98, 11522, 11356, 11360]
 
 // Module 11521
-import _mod11396 from "module_11396" /* 11396 */;
+import ReferenceWithTimezone from "ReferenceWithTimezone" /* 11356 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11360 */;
+import _mod11522 from "module_11522" /* 11522 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import map from "_possibleConstructorReturn" /* 93 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
@@ -25,31 +27,16 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-let fn = this;
-if (this) {
-  fn = this.__importDefault;
-}
-if (!fn) {
-  fn = (__esModule) => {
-    let tmp2;
-    const tmp = __esModule;
-    if (!tmp) {
-      tmp2 = { default: __esModule };
-      const obj = { default: __esModule };
-    } else {
-      tmp2 = __esModule;
-    }
-    return tmp2;
-  };
-}
-class ESMergeDateTimeRefiner {
+const regExp = new RegExp("(?:within|in|for)\\s*(?:(?:pi\u00F9 o meno|intorno|approssimativamente|verso|verso le)\\s*(?:~\\s*)?)?(" + _mod11522.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
+const regExp1 = new RegExp("(?:(?:pi\u00F9 o meno|intorno|approssimativamente|verso|verso le)\\s*(?:~\\s*)?)?(" + _mod11522.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
+class ENTimeUnitWithinFormatParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ESMergeDateTimeRefiner);
-    const obj = _getPrototypeOf(ESMergeDateTimeRefiner);
+    _classCallCheck(this, ENTimeUnitWithinFormatParser);
+    const obj = _getPrototypeOf(ENTimeUnitWithinFormatParser);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = map;
+    const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
@@ -59,14 +46,23 @@ class ESMergeDateTimeRefiner {
     return tmp3(self, constructResult);
   }
 }
-_inherits(ESMergeDateTimeRefiner, fn(_mod11396).default);
+_inherits(ENTimeUnitWithinFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "patternBetween",
-  value: function patternBetween() {
-    const regExp = new RegExp("^\\s*(?:,|de|aslas|a)?\\s*$");
-    return regExp;
+  key: "innerPattern",
+  value: function innerPattern(option) {
+    return option.option.forwardDate ? regExp1 : regExp;
   }
 };
-const items = [entry];
+const items = [
+  entry,
+  {
+    key: "innerExtract",
+    value: function innerExtract(reference, arg1) {
+      const parseDurationResult = _mod11522.parseDuration(arg1[1]);
+      const ParsingComponents = ReferenceWithTimezone.ParsingComponents;
+      return ParsingComponents.createRelativeFromReference(reference.reference, parseDurationResult);
+    }
+  }
+];
 
-export default _createClass(ESMergeDateTimeRefiner, items);
+export default _createClass(ENTimeUnitWithinFormatParser, items);

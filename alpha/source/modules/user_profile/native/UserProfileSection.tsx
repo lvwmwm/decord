@@ -1,19 +1,19 @@
-// Module ID: 11985
-// Function ID: 11986
+// Module ID: 11963
+// Function ID: 11964
 // Name: UserProfileSection
-// Dependencies: [19, 17, 21, 4823, 575, 4884, 7452, 4820, 7624, 5414, 2]
+// Dependencies: [19, 17, 21, 4792, 575, 4853, 7422, 4789, 7594, 5383, 2]
 // Exports: default
 
-// Module 11985 (UserProfileSection)
+// Module 11963 (UserProfileSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ColorUtils from "ColorUtils" /* 4820 */;
-import native from "native" /* 4884 */;
-import Text_Text from "Text/Text" /* 5414 */;
-import useProfileThemeValues from "useProfileThemeValues" /* 7452 */;
+import ColorUtils from "ColorUtils" /* 4789 */;
+import native from "native" /* 4853 */;
+import Text_Text from "Text/Text" /* 5383 */;
+import useProfileThemeValues from "useProfileThemeValues" /* 7422 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -53,7 +53,7 @@ export default function UserProfileSection(title) {
     let borderColor;
     if (null != profileThemeValues) {
       const tmp3Result = ColorUtils;
-      borderColor = tmp3Result.hexOpacityToRgba(tmp3(7624).DIVIDER_COLORS[theme], profileThemeValues.dividerOpacity);
+      borderColor = tmp3Result.hexOpacityToRgba(tmp3(7594).DIVIDER_COLORS[theme], profileThemeValues.dividerOpacity);
     }
     obj3.borderColor = borderColor;
     const obj4 = { style: items, children: items3 };

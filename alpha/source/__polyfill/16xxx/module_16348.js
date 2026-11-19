@@ -4,8 +4,11 @@
 
 // Module 16348
 const obj = {
-  parse: function nthWithOfClause() {
-    return this.createSingleNodeList(this.Nth(true));
+  trueFunc() {
+    return true;
+  },
+  falseFunc() {
+    return false;
   }
 };
 

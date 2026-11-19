@@ -1,20 +1,20 @@
-// Module ID: 18312
-// Function ID: 18313
+// Module ID: 18306
+// Function ID: 18307
 // Name: useConjurePublishProgressLabel
-// Dependencies: [32, 19, 6890, 4121, 504, 1113, 18313, 2]
+// Dependencies: [32, 19, 6860, 4089, 504, 1113, 18307, 2]
 // Exports: default
 
-// Module 18312 (useConjurePublishProgressLabel)
-import _modDef4121 from "module_4121" /* 4121 */;
+// Module 18306 (useConjurePublishProgressLabel)
+import _modDef4089 from "module_4089" /* 4089 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 6890 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 6860 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-let obj = { preparing: _modDef4121.GQeas1, approval: _modDef4121["TkHHD+"], approved_by_grant: _modDef4121["9+kNt8"], setup: _modDef4121["F+AxgM"], build: _modDef4121.oQeMIy, deploy: _modDef4121.LqZvZ2, discord: _modDef4121.LFcGAT, activating: _modDef4121.ff1Fq1 };
+let obj = { preparing: _modDef4089.GQeas1, approval: _modDef4089["TkHHD+"], approved_by_grant: _modDef4089["9+kNt8"], setup: _modDef4089["F+AxgM"], build: _modDef4089.oQeMIy, deploy: _modDef4089.LqZvZ2, discord: _modDef4089.LFcGAT, activating: _modDef4089.ff1Fq1 };
 const result = size.fileFinishedImporting("modules/conjure/publish/useConjurePublishProgressLabel.tsx");
 
 export default function useConjurePublishProgressLabel(arg0) {
@@ -50,9 +50,9 @@ export default function useConjurePublishProgressLabel(arg0) {
     const intl = tmp(1113).intl;
     const formatToPlainString = intl.formatToPlainString;
     const obj2 = { action: intl2.string(obj[stateFromStores.stage]), detail: tmpResult.formatElapsed(first - stateFromStores.stageStartedAt) };
-    const prop = stateFromStores(4121)["ndkR+x"];
+    const prop = stateFromStores(4089)["ndkR+x"];
     intl2 = tmp(1113).intl;
-    tmpResult = tmp(18313);
+    tmpResult = tmp(18307);
     formatToPlainStringResult = formatToPlainString(prop, obj2);
   }
   return formatToPlainStringResult;

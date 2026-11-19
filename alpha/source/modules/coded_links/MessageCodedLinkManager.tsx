@@ -1,16 +1,16 @@
-// Module ID: 19622
-// Function ID: 19623
+// Module ID: 19618
+// Function ID: 19619
 // Name: MessageCodedLinkManager
-// Dependencies: [5, 7963, 5542, 1083, 5541, 5545, 19623, 7173, 7642, 19630, 12011, 19632, 12225, 19633, 12866, 7395, 19634, 2]
+// Dependencies: [5, 7933, 5511, 1083, 5510, 5514, 19619, 7143, 7612, 19626, 11989, 19628, 12208, 19629, 12848, 7365, 19630, 2]
 
-// Module 19622 (MessageCodedLinkManager)
+// Module 19618 (MessageCodedLinkManager)
 import Constants from "Constants" /* 1083 */;
-import findCodedLinksDefault from "findCodedLinks" /* 5541 */;
-import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 19634 */;
+import findCodedLinksDefault from "findCodedLinks" /* 5510 */;
+import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 19630 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 7963 */;
-import InviteStore from "InviteStore" /* 5542 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 7933 */;
+import InviteStore from "InviteStore" /* 5511 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
 import size from "module_2" /* 2 */;
 
 let c0, c1, c2;
@@ -49,7 +49,7 @@ function resolveMessageCodedLinks(content) {
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             }
           } else {
             try {
@@ -81,7 +81,7 @@ function resolveMessageCodedLinks(content) {
                 return obj;
               }
               c0 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             } catch (tmp9) {
               c0 = 3;
               throw tmp9;
@@ -102,7 +102,7 @@ function resolveMessageCodedLinks(content) {
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             }
           } else {
             try {
@@ -134,7 +134,7 @@ function resolveMessageCodedLinks(content) {
                 return obj;
               }
               c0 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             } catch (tmp9) {
               c0 = 3;
               throw tmp9;
@@ -179,7 +179,7 @@ function resolveMessageCodedLinks(content) {
                                                     const obj2 = { value, done: true };
                                                     return obj2;
                                                   } else {
-                                                    return { value: "HermesInternal", done: null };
+                                                    return { value: "HermesInternal", done: "+60" };
                                                   }
                                                 } else {
                                                   try {
@@ -211,7 +211,7 @@ function resolveMessageCodedLinks(content) {
                                                       const promise = c1(c2[12])(closure_128_0);
                                                       promise.catch(closure_1_6);
                                                       c2 = 3;
-                                                      return { value: "HermesInternal", done: null };
+                                                      return { value: "HermesInternal", done: "+60" };
                                                     }
                                                   } catch (tmp13) {
                                                     c2 = 3;
@@ -286,7 +286,7 @@ function resolveMessageCodedLinks(content) {
                   const obj3 = { value, done: true };
                   return obj3;
                 } else {
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "+60" };
                 }
               } else {
                 try {
@@ -318,7 +318,7 @@ function resolveMessageCodedLinks(content) {
                     return obj;
                   }
                   c0 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "+60" };
                 } catch (tmp9) {
                   c0 = 3;
                   throw tmp9;
@@ -339,7 +339,7 @@ function resolveMessageCodedLinks(content) {
                   const obj3 = { value, done: true };
                   return obj3;
                 } else {
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "+60" };
                 }
               } else {
                 try {
@@ -371,7 +371,7 @@ function resolveMessageCodedLinks(content) {
                     return obj;
                   }
                   c0 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "+60" };
                 } catch (tmp9) {
                   c0 = 3;
                   throw tmp9;
@@ -416,7 +416,7 @@ function resolveMessageCodedLinks(content) {
                                                         const obj2 = { value, done: true };
                                                         return obj2;
                                                       } else {
-                                                        return { value: "HermesInternal", done: null };
+                                                        return { value: "HermesInternal", done: "+60" };
                                                       }
                                                     } else {
                                                       try {
@@ -448,7 +448,7 @@ function resolveMessageCodedLinks(content) {
                                                           const promise = c1(c2[12])(closure_128_0);
                                                           promise.catch(closure_1_6);
                                                           c2 = 3;
-                                                          return { value: "HermesInternal", done: null };
+                                                          return { value: "HermesInternal", done: "+60" };
                                                         }
                                                       } catch (tmp13) {
                                                         c2 = 3;

@@ -1,25 +1,25 @@
-// Module ID: 6333
-// Function ID: 6334
+// Module ID: 6304
+// Function ID: 6305
 // Name: AuthenticationActionCreators
-// Dependencies: [5, 6334, 502, 6335, 1072, 6336, 3, 4829, 572, 5000, 1099, 6337, 6340, 1264, 1285, 6257, 6341, 6342, 6343, 510, 1098, 2]
+// Dependencies: [5, 6305, 502, 6306, 1072, 6307, 3, 4798, 572, 4969, 1099, 6308, 6311, 1264, 1285, 6228, 6312, 6313, 6314, 510, 1098, 2]
 
-// Module 6333 (AuthenticationActionCreators)
+// Module 6304 (AuthenticationActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import TokenManagerAll from "TokenManager" /* 1098 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
-import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 4829 */;
-import RootNavigationRef from "RootNavigationRef" /* 5000 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 6257 */;
-import PromoEmailConsentStore from "PromoEmailConsentStore" /* 6334 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6337 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6340 */;
+import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 4798 */;
+import RootNavigationRef from "RootNavigationRef" /* 4969 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 6228 */;
+import PromoEmailConsentStore from "PromoEmailConsentStore" /* 6305 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6308 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6311 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ConsentStore from "ConsentStore" /* 6335 */;
+import ConsentStore from "ConsentStore" /* 6306 */;
 import Constants from "Constants" /* 1072 */;
-import PushNotificationConstants from "PushNotificationConstants" /* 6336 */;
+import PushNotificationConstants from "PushNotificationConstants" /* 6307 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -32,7 +32,7 @@ let closure_14;
 let closure_15;
 let map1;
 let unpackModuleId;
-const f90225 = (error) => {
+const f90178 = (error) => {
   logger.error("Error while dispatching LOGOUT", error);
   if (DiscordErrors != null) {
     DiscordErrors.softCrash(error);
@@ -52,7 +52,7 @@ function handleLogout(source, CHANNELResult) {
   const merged = Object.assign(undefined);
   const tmp2Result = DispatcherDefault;
   const dispatchResult = tmp2Result.dispatch(obj2);
-  dispatchResult.catch(f90225);
+  dispatchResult.catch(f90178);
   if (null != DEFAULT_LOGGED_OUT) {
     const obj8 = RootNavigationRef;
     const rootNavigationRef = obj8.getRootNavigationRef();
@@ -168,7 +168,7 @@ let obj2 = {
             const merged = Object.assign({ isSwitchingAccount: true });
             const tmp21Result = DispatcherDefault;
             const dispatchResult = tmp21Result.dispatch(obj2);
-            dispatchResult.catch(f90225);
+            dispatchResult.catch(f90178);
           }
           const body3 = body.body;
           let suspended_user_token1;
@@ -234,7 +234,7 @@ let obj2 = {
     ({ isMultiAccount: require, loginInstanceId } = arg0);
     ({ code, ticket, source, giftCodeSKUId, mfaType } = arg0);
     let tmp = dependencyMap;
-    const tmp2 = self(6340);
+    const tmp2 = self(6311);
     const request = { url: closure_9.LOGIN_MFA(mfaType), body, retries: 2, oldFormErrors: true, trackedActionData: obj2, rejectWithError: true };
     const post = tmp2.post;
     body = { code, ticket, login_source: source, gift_code_sku_id: giftCodeSKUId, login_instance_id: loginInstanceId };
@@ -295,7 +295,7 @@ let obj2 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -395,7 +395,7 @@ let obj2 = {
               } else {
                 credential = 0;
                 c5 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "+60" };
               }
             } else if (arg0 === 1) {
               c5 = 3;
@@ -431,7 +431,7 @@ let obj2 = {
     let self = this;
     isMultiAccount = isMultiAccount.isMultiAccount;
     ({ ticket, credential, source, giftCodeSKUId } = isMultiAccount);
-    obj = self(6340);
+    obj = self(6311);
     const request = { url: closure_9.WEBAUTHN_CONDITIONAL_UI_LOGIN, body: { credential, ticket, source, giftCodeSKUId }, retries: 1, trackedActionData: obj2, rejectWithError: true };
     obj2 = { event: isMultiAccount(1264).NetworkActionNames.USER_LOGIN_PASSWORDLESS };
     const postResult = obj.post(request);
@@ -513,7 +513,7 @@ let obj2 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -623,7 +623,7 @@ let obj2 = {
     const merged = Object.assign(arg0);
     const tmpResult = DispatcherDefault;
     const dispatchResult = tmpResult.dispatch(obj2);
-    dispatchResult.catch(f90225);
+    dispatchResult.catch(f90178);
   },
   logout(logout_source) {
     let Storage;
@@ -640,7 +640,7 @@ let obj2 = {
     }
     importAll = arg2;
     let tmp2 = dependencyMap;
-    const tmp3 = DEFAULT_LOGGED_OUT(6340);
+    const tmp3 = DEFAULT_LOGGED_OUT(6311);
     const request = { url: closure_9.LOGOUT, body, oldFormErrors: true, trackedActionData: { event: require("discord_common/AnalyticsUtils").NetworkActionNames.USER_LOGOUT, properties: { logout_source } }, rejectWithError: tmp4Result.rejectWithMigratedError() };
     body = { provider: closure_15(), token: Storage.get(closure_10), voip_provider, voip_token: Storage2.get(closure_11) };
     const post = tmp3.post;
@@ -686,7 +686,7 @@ let obj2 = {
     const merged = Object.assign(obj2);
     const tmp3Result = DispatcherDefault;
     const dispatchResult = tmp3Result.dispatch(obj4);
-    dispatchResult.catch(f90225);
+    dispatchResult.catch(f90178);
     const loginTokenResult = this.loginToken(token, true);
     return loginTokenResult.then(() => {
       const tmp = token === AuthenticationStore.getToken();
@@ -780,7 +780,7 @@ let obj2 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         let c4;
@@ -950,7 +950,7 @@ let obj2 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {

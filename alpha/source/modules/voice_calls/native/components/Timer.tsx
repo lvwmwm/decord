@@ -1,9 +1,9 @@
-// Module ID: 14809
-// Function ID: 14810
+// Module ID: 14795
+// Function ID: 14796
 // Name: Timer
 // Dependencies: [19, 21, 12, 1187, 2]
 
-// Module 14809 (Timer)
+// Module 14795 (Timer)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import native from "native" /* 1187 */;

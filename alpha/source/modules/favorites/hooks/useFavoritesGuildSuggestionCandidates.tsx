@@ -1,18 +1,18 @@
-// Module ID: 17907
-// Function ID: 17908
+// Module ID: 17900
+// Function ID: 17901
 // Name: useFavoritesGuildSuggestionCandidates
-// Dependencies: [19, 17908, 8055, 4672, 17772, 9969, 17910, 504, 9552, 13811, 9980, 9967, 9961, 2]
+// Dependencies: [19, 17901, 8024, 4641, 17765, 9948, 17903, 504, 9531, 13793, 9959, 9946, 9940, 2]
 // Exports: default
 
-// Module 17907 (useFavoritesGuildSuggestionCandidates)
-import _mod9961 from "module_9961" /* 9961 */;
-import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 9967 */;
-import ShareConstants from "ShareConstants" /* 9969 */;
-import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 17772 */;
+// Module 17900 (useFavoritesGuildSuggestionCandidates)
+import _mod9940 from "module_9940" /* 9940 */;
+import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 9946 */;
+import ShareConstants from "ShareConstants" /* 9948 */;
+import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 17765 */;
 import react from "react" /* 19 */;
-import ChannelAffinitiesV2Store from "ChannelAffinitiesV2Store" /* 17908 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 8055 */;
-import ChannelStore from "ChannelStore" /* 4672 */;
+import ChannelAffinitiesV2Store from "ChannelAffinitiesV2Store" /* 17901 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 8024 */;
+import ChannelStore from "ChannelStore" /* 4641 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -154,7 +154,7 @@ export default function useFavoritesGuildSuggestionCandidates(arg0) {
               let sum = tmp25 + 1;
               if (null != tmp20) {
                 let tmp24;
-                if (tmp20.type !== _mod9961.AutocompleterResultTypes.HEADER) {
+                if (tmp20.type !== _mod9940.AutocompleterResultTypes.HEADER) {
                   tmp24 = sum;
                   if (!set.has(tmp20.record.id)) {
                     break;

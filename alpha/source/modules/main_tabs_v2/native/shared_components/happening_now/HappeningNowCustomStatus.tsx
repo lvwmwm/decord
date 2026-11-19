@@ -1,23 +1,23 @@
-// Module ID: 17654
-// Function ID: 17655
+// Module ID: 17647
+// Function ID: 17648
 // Name: HappeningNowCustomStatus
-// Dependencies: [5, 32, 19, 17, 5561, 16761, 1083, 21, 4823, 575, 563, 6250, 9359, 17655, 17656, 8958, 7920, 16762, 1380, 5510, 13453, 1187, 5414, 2]
+// Dependencies: [5, 32, 19, 17, 5530, 16754, 1083, 21, 4792, 575, 563, 6221, 9336, 17648, 17649, 8932, 7890, 16755, 1380, 5479, 13435, 1187, 5383, 2]
 // Exports: CustomStatusActivityCard
 
-// Module 17654 (HappeningNowCustomStatus)
+// Module 17647 (HappeningNowCustomStatus)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import FastImageDefault from "FastImage" /* 5510 */;
-import ActivityEmojiDefault from "ActivityEmoji" /* 13453 */;
+import FastImageDefault from "FastImage" /* 5479 */;
+import ActivityEmojiDefault from "ActivityEmoji" /* 13435 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 5561 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 16761 */;
+import PresenceStore from "PresenceStore" /* 5530 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 16754 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size_mod from "module_2" /* 2 */;
 
 let c2, closure_2, dependencyMap;
@@ -127,8 +127,8 @@ export function CustomStatusActivityCard(user) {
   });
   ({ status, isMobileOnline, isVROnline } = stateFromStoresObject);
   let obj2 = { userId: user.id, guildId };
-  let tmp10 = activity(6250)(obj2);
-  let obj3 = user(9359);
+  let tmp10 = activity(6221)(obj2);
+  let obj3 = user(9336);
   const displayNameStylesFont = obj3.useDisplayNameStylesFont({ displayNameStyles: tmp10 });
   items1 = [activity.emoji];
   const effect = react.useEffect(() => {
@@ -150,7 +150,7 @@ export function CustomStatusActivityCard(user) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } else {
           try {
@@ -213,7 +213,7 @@ export function CustomStatusActivityCard(user) {
               closure_1_5(emojiSource);
             }
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           } catch (tmp27) {
             c3 = 3;
             throw tmp27;
@@ -227,16 +227,16 @@ export function CustomStatusActivityCard(user) {
   if (null != activity.emoji) {
     num = 1;
   }
-  const tmp6Result = user(8958);
+  const tmp6Result = user(8932);
   const gameMentionsAsPlainText = tmp6Result.useGameMentionsAsPlainText(activity.state);
   const items2 = [userTitle, , ];
-  const tmp6Result3 = user(7920);
+  const tmp6Result3 = user(7890);
   items2[1] = tmp6Result3.getStatusLabel(status);
   items2[2] = gameMentionsAsPlainText;
   const joined = items2.join(", ");
   let obj4 = { onPress, width: str, style: tmp.cardContainer, accessibilityLabel: joined, panelVariant, children: tmp15(tmp17, obj5) };
   str = "stretchy";
-  const tmp9Result = activity(16762);
+  const tmp9Result = activity(16755);
   if (fullwidth) {
     str = "full";
   }
@@ -253,12 +253,12 @@ export function CustomStatusActivityCard(user) {
       let tmp15Result = null != source;
       if (tmp15Result) {
         let obj8 = { source, style: tmp.largeEmoji };
-        tmp15Result = tmp15(tmp9(5510), obj8);
+        tmp15Result = tmp15(tmp9(5479), obj8);
       }
       tmp15Result3 = tmp15Result;
     } else {
       let obj9 = { emoji: activity.emoji, size: v32, style: tmp.largeEmoji, animate: false };
-      tmp15Result3 = tmp15(tmp9(13453), obj9);
+      tmp15Result3 = tmp15(tmp9(13435), obj9);
     }
     items4 = [tmp15Result3, ];
     items4[1] = items1.map((item, index) => {
@@ -286,7 +286,7 @@ export function CustomStatusActivityCard(user) {
     const Avatar = tmp6(1187).Avatar;
     items6 = [tmp15(Avatar, obj11), , ];
     const obj12 = { noMargin: true, displayNameFont: displayNameStylesFont, children: userTitle };
-    items6[1] = closure_11(user(16762).HappeningNowCardHeader, obj12);
+    items6[1] = closure_11(user(16755).HappeningNowCardHeader, obj12);
     const state = activity.state;
     let num2;
     if (state != null) {
@@ -298,7 +298,7 @@ export function CustomStatusActivityCard(user) {
     let tmp15Result4 = num2 > 0;
     if (tmp15Result4) {
       const obj13 = { ellipsizeMode: "tail", variant: "body-xs/medium", color: "text-default", lineClamp: num, maxFontSizeMultiplier: 2, children: gameMentionsAsPlainText };
-      tmp15Result4 = tmp15(tmp6(5414).Text, obj13);
+      tmp15Result4 = tmp15(tmp6(5383).Text, obj13);
     }
     const obj14 = { children: items5 };
     items6[2] = tmp15Result4;
@@ -312,9 +312,9 @@ export function CustomStatusActivityCard(user) {
     items7 = [tmp15(Avatar2, obj16), ];
     const obj17 = { style: tmp.customStatusContextContainer, children: items8 };
     const obj18 = { noMargin: true, displayNameFont: displayNameStylesFont, children: userTitle };
-    items8 = [tmp15(tmp6(16762).HappeningNowCardHeader, obj18), ];
+    items8 = [tmp15(tmp6(16755).HappeningNowCardHeader, obj18), ];
     const obj19 = { ellipsizeMode: "tail", variant: "body-xs/medium", color: "text-default", lineClamp: num, maxFontSizeMultiplier: 2, children: gameMentionsAsPlainText };
-    items8[1] = closure_11(user(5414).Text, obj19);
+    items8[1] = closure_11(user(5383).Text, obj19);
     items7[1] = closure_12(View, obj17);
     tmp18Result = closure_12(closure_13, obj15);
   }

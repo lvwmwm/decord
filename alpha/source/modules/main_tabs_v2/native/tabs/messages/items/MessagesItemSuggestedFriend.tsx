@@ -1,27 +1,27 @@
-// Module ID: 17617
-// Function ID: 17618
+// Module ID: 17610
+// Function ID: 17611
 // Name: MessagesItemSuggestedFriend
-// Dependencies: [32, 19, 17, 4765, 1072, 21, 4823, 575, 5553, 7978, 2121, 563, 1113, 4879, 17618, 17619, 1256, 6941, 1187, 5414, 5421, 5521, 7401, 13830, 2]
+// Dependencies: [32, 19, 17, 4734, 1072, 21, 4792, 575, 5522, 7948, 2121, 563, 1113, 4848, 17611, 17612, 1256, 6911, 1187, 5383, 5390, 5490, 7371, 13812, 2]
 // Exports: getMessagesItemSuggestedFriendHeight
 
-// Module 17617 (MessagesItemSuggestedFriend)
+// Module 17610 (MessagesItemSuggestedFriend)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import UserUtilsDefault from "UserUtils" /* 4879 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 5553 */;
-import defaultMVCPConfig from "defaultMVCPConfig" /* 7401 */;
-import LegendList from "LegendList" /* 13830 */;
-import FriendSuggestionUtils from "FriendSuggestionUtils" /* 17618 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 17619 */;
+import UserUtilsDefault from "UserUtils" /* 4848 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 5522 */;
+import defaultMVCPConfig from "defaultMVCPConfig" /* 7371 */;
+import LegendList from "LegendList" /* 13812 */;
+import FriendSuggestionUtils from "FriendSuggestionUtils" /* 17611 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 17612 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4765 */;
+import RelationshipStore from "RelationshipStore" /* 4734 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -69,7 +69,7 @@ let closure_12 = react.memo(function MessagesItemSuggestedFriendView(height) {
     return items;
   }, items);
   const callback = react.useCallback(() => {
-    const promise = asyncRequire(7978, dependencyMap.paths);
+    const promise = asyncRequire(7948, dependencyMap.paths);
     promise.then((result) => {
       const obj = { userId: suggestedFriend.user.id, localUser: suggestedFriend.user, location: "Messages Tab User Profile" };
       return result.default(obj);

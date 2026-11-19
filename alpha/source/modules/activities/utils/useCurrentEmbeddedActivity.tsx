@@ -1,12 +1,12 @@
-// Module ID: 10736
-// Function ID: 10737
+// Module ID: 10714
+// Function ID: 10715
 // Name: useCurrentEmbeddedActivity
-// Dependencies: [4671, 504, 2]
+// Dependencies: [4640, 504, 2]
 // Exports: default
 
-// Module 10736 (useCurrentEmbeddedActivity)
+// Module 10714 (useCurrentEmbeddedActivity)
 import get_initialized from "get initialized" /* 504 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4671 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4640 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/utils/useCurrentEmbeddedActivity.tsx");

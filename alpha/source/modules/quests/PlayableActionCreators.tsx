@@ -1,13 +1,13 @@
-// Module ID: 16664
-// Function ID: 16665
+// Module ID: 16657
+// Function ID: 16658
 // Name: PlayableActionCreators
-// Dependencies: [5, 1072, 8167, 8336, 8312, 1285, 572, 6258, 2]
-// Exports: claimPlayableReward, recordPlayableLaunch
+// Dependencies: [5, 1072, 8136, 8305, 8281, 1285, 572, 6229, 2]
+// Exports: claimPlayableReward, completePlayableLaunch, recordPlayableLaunch
 
-// Module 16664 (PlayableActionCreators)
+// Module 16657 (PlayableActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 8167 */;
+import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 8136 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ let obj = function _claimPlayableReward() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -115,7 +115,7 @@ let obj = function _claimPlayableReward() {
             obj.dispatch(obj10);
             c7 = 0;
             c9 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp31) {
           closure_6 = tmp31;
@@ -132,13 +132,21 @@ let obj = function _claimPlayableReward() {
   return obj(...arguments);
 };
 const Endpoints = Constants.Endpoints;
+let metroRequire = 0;
 const result = size.fileFinishedImporting("modules/quests/PlayableActionCreators.tsx");
 
 export function claimPlayableReward() {
   return obj(...arguments);
 }
 export function recordPlayableLaunch(questDockPlayable) {
+  metroRequire = metroRequire + 1;
   obj = DispatcherDefault;
-  const obj2 = { type: "PLAYABLE_LAUNCH", playable: questDockPlayable };
+  const obj2 = { type: "PLAYABLE_LAUNCH", playable: questDockPlayable, launchId: metroRequire };
+  obj.dispatch(obj2);
+  return metroRequire;
+}
+export function completePlayableLaunch(c0, success) {
+  obj = DispatcherDefault;
+  const obj2 = { type: "PLAYABLE_LAUNCH_COMPLETE", launchId: c0, success };
   obj.dispatch(obj2);
 }

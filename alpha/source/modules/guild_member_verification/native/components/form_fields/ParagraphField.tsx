@@ -1,17 +1,17 @@
-// Module ID: 7371
-// Function ID: 7372
+// Module ID: 7341
+// Function ID: 7342
 // Name: ParagraphField
-// Dependencies: [19, 17, 6795, 21, 4823, 7372, 5414, 1113, 2]
+// Dependencies: [19, 17, 6767, 21, 4792, 7342, 5383, 1113, 2]
 // Exports: default
 
-// Module 7371 (ParagraphField)
+// Module 7341 (ParagraphField)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import MemberVerificationConstants from "MemberVerificationConstants" /* 6795 */;
-import TextArea2 from "TextArea" /* 7372 */;
+import MemberVerificationConstants from "MemberVerificationConstants" /* 6767 */;
+import TextArea2 from "TextArea" /* 7342 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;

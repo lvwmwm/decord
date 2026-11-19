@@ -1,15 +1,15 @@
-// Module ID: 13343
-// Function ID: 13344
+// Module ID: 13325
+// Function ID: 13326
 // Name: useGuildPowerupLevelPerks
-// Dependencies: [19, 1390, 8244, 1113, 2755, 1255, 2]
+// Dependencies: [19, 1390, 8213, 1113, 2755, 1255, 2]
 // Exports: default
 
-// Module 13343 (useGuildPowerupLevelPerks)
+// Module 13325 (useGuildPowerupLevelPerks)
 import intl4 from "intl" /* 1113 */;
 import GlobalUtils from "GlobalUtils" /* 1255 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
 import _modDef2755 from "module_2755" /* 2755 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 8244 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 8213 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,29 +1,27 @@
-// Module ID: 12228
-// Function ID: 12229
+// Module ID: 12211
+// Function ID: 12212
 // Name: handleTapConjureProjectEmbed
-// Dependencies: [5, 6529, 11930, 11933, 10648, 12229, 5504, 1113, 4121, 9852, 12230, 12242, 2121, 2]
+// Dependencies: [5, 6500, 11908, 11911, 10626, 12212, 5473, 1113, 4089, 9831, 12213, 12225, 2121, 2]
 // Exports: default
 
-// Module 12228 (handleTapConjureProjectEmbed)
-import ConjureProjectStore2 from "ConjureProjectStore" /* 6529 */;
-import conjureSharedProjectCoverTargetDefault from "conjureSharedProjectCoverTarget" /* 11933 */;
-import launchConjureSharedProjectDefault from "launchConjureSharedProject" /* 12229 */;
+// Module 12211 (handleTapConjureProjectEmbed)
+import ConjureProjectStore2 from "ConjureProjectStore" /* 6500 */;
+import conjureSharedProjectCoverTargetDefault from "conjureSharedProjectCoverTarget" /* 11911 */;
+import launchConjureSharedProjectDefault from "launchConjureSharedProject" /* 12212 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureSharedProjectStore from "ConjureSharedProjectStore" /* 11930 */;
+import ConjureSharedProjectStore from "ConjureSharedProjectStore" /* 11908 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let closure_4, project, status;
 
 let tmp;
-const openFrameDefault = tmp(10648);
-function runConjureSharedProjectCoverAction(applicationId, arg1, arg2) {
-  let channelId;
-  let guildId;
+const openFrameDefault = tmp(10626);
+function runConjureSharedProjectCoverAction(applicationId, arg1, channelId) {
   function launchOrReport() {
     return obj(...arguments);
   }
-  const tmp3 = conjureSharedProjectCoverTargetDefault(applicationId, arg1, arg2);
+  const tmp3 = conjureSharedProjectCoverTargetDefault(applicationId, arg1, channelId);
   if (null == tmp3) {
     return false;
   } else if ("open" === tmp3.type) {
@@ -31,10 +29,10 @@ function runConjureSharedProjectCoverAction(applicationId, arg1, arg2) {
     openFrameDefault(obj);
     return true;
   } else {
-    ({ guildId, channelId } = arg2);
-    let flag = null != guildId && null != channelId;
+    channelId = channelId.channelId;
+    let flag = null != channelId;
     if (flag) {
-      launchOrReport(applicationId, guildId, channelId);
+      launchOrReport(applicationId, tmp4, channelId);
       flag = true;
     }
     return flag;
@@ -55,7 +53,7 @@ let obj = function _launchOrReport() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -94,7 +92,7 @@ let obj = function _launchOrReport() {
               c5 = 0;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp18) {
           if (0 === c5) {
@@ -128,7 +126,7 @@ obj = function _handleTapConjureProjectEmbed() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -211,7 +209,7 @@ obj = function _handleTapConjureProjectEmbed() {
             _default(project, guildId, str, closure_0);
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         } catch (tmp32) {
           c6 = 3;
           throw tmp32;

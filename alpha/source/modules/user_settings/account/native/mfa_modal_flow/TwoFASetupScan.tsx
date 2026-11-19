@@ -1,16 +1,16 @@
-// Module ID: 15982
-// Function ID: 15983
+// Module ID: 15973
+// Function ID: 15974
 // Name: TwoFASetupScan
-// Dependencies: [32, 19, 21, 4823, 575, 7456, 15980, 15976, 6928, 1187, 1113, 5414, 6941, 2]
+// Dependencies: [32, 19, 21, 4792, 575, 7426, 15971, 15967, 6898, 1187, 1113, 5383, 6911, 2]
 // Exports: default
 
-// Module 15982 (TwoFASetupScan)
+// Module 15973 (TwoFASetupScan)
 import nativeDefault from "native" /* 575 */;
-import ClipboardUtils from "ClipboardUtils" /* 7456 */;
+import ClipboardUtils from "ClipboardUtils" /* 7426 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -45,11 +45,11 @@ export default function TwoFASetupScan(totpSecret) {
     const obj = ClipboardUtils;
     obj.copy(totpSecret.replace(/[^a-zA-Z0-9]/g, ""));
   }, items);
-  let obj = totpSecret(15980);
+  let obj = totpSecret(15971);
   const twoFASetupStyles = obj.useTwoFASetupStyles();
-  const TwoFASetupModalScreen = totpSecret(15976).TwoFASetupModalScreen;
+  const TwoFASetupModalScreen = totpSecret(15967).TwoFASetupModalScreen;
   const obj2 = { bottom: true, style: tmp.container, children: items2 };
-  const SafeAreaPaddingView = totpSecret(6928).SafeAreaPaddingView;
+  const SafeAreaPaddingView = totpSecret(6898).SafeAreaPaddingView;
   const obj3 = { style: items1, children: intl.string(totpSecret(1113).t["hg/+aT"]) };
   items1 = [, ];
   ({ modalHeader: arr2[0], text: arr2[1] } = twoFASetupStyles);
@@ -62,9 +62,9 @@ export default function TwoFASetupScan(totpSecret) {
   const LegacyText2 = totpSecret(1187).LegacyText;
   intl2 = totpSecret(1113).intl;
   items2[1] = closure_4(LegacyText2, obj4);
-  items2[2] = closure_4(totpSecret(5414).Text, { variant: "body-md/semibold", style: { textAlign: "center" }, children: totpSecret });
+  items2[2] = closure_4(totpSecret(5383).Text, { variant: "body-md/semibold", style: { textAlign: "center" }, children: totpSecret });
   const obj5 = { accessibilityRole: "button", onPress: callback, children: closure_4(LegacyText3, obj6) };
-  const PressableOpacity = totpSecret(6941).PressableOpacity;
+  const PressableOpacity = totpSecret(6911).PressableOpacity;
   obj6 = { style: tmp.copy, children: stringResult };
   LegacyText3 = totpSecret(1187).LegacyText;
   const intl3 = totpSecret(1113).intl;

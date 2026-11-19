@@ -1,21 +1,21 @@
-// Module ID: 12331
-// Function ID: 12332
+// Module ID: 12314
+// Function ID: 12315
 // Name: GuildAutomodActionCreators
-// Dependencies: [5, 4729, 4694, 4755, 1072, 12332, 1255, 11, 1285, 12325, 5560, 8223, 572, 2]
+// Dependencies: [5, 4698, 4663, 4724, 1072, 12315, 1255, 11, 1285, 12308, 5529, 8192, 572, 2]
 // Exports: clearMentionRaidDetected, createAutomodRule, deleteAutomodRule, executeAlertAction, fetchAutomodRules, removeMentionRaidRestrictionWithFeedback, updateAutomodRule, validateAutomodRule
 
-// Module 12331 (GuildAutomodActionCreators)
+// Module 12314 (GuildAutomodActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import GlobalUtils from "GlobalUtils" /* 1255 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5560 */;
-import AutomodFeedback from "AutomodFeedback" /* 8223 */;
-import DataUtils from "DataUtils" /* 12332 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5529 */;
+import AutomodFeedback from "AutomodFeedback" /* 8192 */;
+import DataUtils from "DataUtils" /* 12315 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildRoleStore from "GuildRoleStore" /* 4729 */;
-import GuildStore from "GuildStore" /* 4694 */;
-import PermissionStore from "PermissionStore" /* 4755 */;
+import GuildRoleStore from "GuildRoleStore" /* 4698 */;
+import GuildStore from "GuildStore" /* 4663 */;
+import PermissionStore from "PermissionStore" /* 4724 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -116,7 +116,7 @@ let obj = function _validateAutomodRule() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -260,7 +260,7 @@ obj = function _executeAlertAction() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -297,7 +297,7 @@ obj = function _executeAlertAction() {
           return obj;
         }
         c3 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       } catch (tmp7) {
         c3 = 3;
         throw tmp7;

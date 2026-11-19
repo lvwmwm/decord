@@ -1,13 +1,13 @@
-// Module ID: 15635
-// Function ID: 15636
+// Module ID: 15622
+// Function ID: 15623
 // Name: getFrameChannelId
-// Dependencies: [4672, 1072, 6534, 2]
+// Dependencies: [4641, 1072, 6505, 2]
 // Exports: default
 
-// Module 15635 (getFrameChannelId)
+// Module 15622 (getFrameChannelId)
 import Constants from "Constants" /* 1072 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6534 */;
-import ChannelStore from "ChannelStore" /* 4672 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6505 */;
+import ChannelStore from "ChannelStore" /* 4641 */;
 import size from "module_2" /* 2 */;
 
 const ChannelTypes = Constants.ChannelTypes;

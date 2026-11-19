@@ -1,29 +1,29 @@
-// Module ID: 9802
-// Function ID: 9803
+// Module ID: 9781
+// Function ID: 9782
 // Name: GameProfileDetails
-// Dependencies: [19, 17, 9677, 21, 8903, 9803, 7299, 9699, 9805, 9807, 9689, 4823, 575, 5502, 9809, 9810, 9710, 1113, 2119, 4645, 9811, 5414, 2]
+// Dependencies: [19, 17, 9656, 21, 8877, 9782, 7269, 9678, 9784, 9786, 9668, 4792, 575, 5471, 9788, 9789, 9689, 1113, 2119, 4614, 9790, 5383, 2]
 // Exports: default
 
-// Module 9802 (GameProfileDetails)
+// Module 9781 (GameProfileDetails)
 import nativeDefault from "native" /* 575 */;
 import intl13 from "intl" /* 1113 */;
 import Server from "Server" /* 2119 */;
-import DateUtilsAll from "DateUtils" /* 4645 */;
-import Text_Text from "Text/Text" /* 5414 */;
-import LinkingDefault from "Linking" /* 5502 */;
-import MobilePhoneIcon from "MobilePhoneIcon" /* 7299 */;
-import PlatformType from "PlatformType" /* 8903 */;
-import ContentInventoryConstants from "ContentInventoryConstants" /* 9677 */;
-import RobloxNeutralIcon from "RobloxNeutralIcon" /* 9689 */;
-import XboxNeutralIcon from "XboxNeutralIcon" /* 9699 */;
-import SKUUtils from "SKUUtils" /* 9710 */;
-import ScreenIcon from "ScreenIcon" /* 9803 */;
-import PlaystationNeutralIcon from "PlaystationNeutralIcon" /* 9805 */;
-import NintendoSwitchNeutralIcon from "NintendoSwitchNeutralIcon" /* 9807 */;
+import DateUtilsAll from "DateUtils" /* 4614 */;
+import Text_Text from "Text/Text" /* 5383 */;
+import LinkingDefault from "Linking" /* 5471 */;
+import MobilePhoneIcon from "MobilePhoneIcon" /* 7269 */;
+import PlatformType from "PlatformType" /* 8877 */;
+import ContentInventoryConstants from "ContentInventoryConstants" /* 9656 */;
+import RobloxNeutralIcon from "RobloxNeutralIcon" /* 9668 */;
+import XboxNeutralIcon from "XboxNeutralIcon" /* 9678 */;
+import SKUUtils from "SKUUtils" /* 9689 */;
+import ScreenIcon from "ScreenIcon" /* 9782 */;
+import PlaystationNeutralIcon from "PlaystationNeutralIcon" /* 9784 */;
+import NintendoSwitchNeutralIcon from "NintendoSwitchNeutralIcon" /* 9786 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let c9;

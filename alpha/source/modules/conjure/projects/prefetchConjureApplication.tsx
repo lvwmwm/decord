@@ -1,11 +1,11 @@
-// Module ID: 11835
-// Function ID: 11836
+// Module ID: 11813
+// Function ID: 11814
 // Name: prefetchConjureApplication
-// Dependencies: [5, 2165, 6567, 2]
+// Dependencies: [5, 2165, 6538, 2]
 // Exports: default
 
-// Module 11835 (prefetchConjureApplication)
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6567 */;
+// Module 11813 (prefetchConjureApplication)
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6538 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
 import size from "module_2" /* 2 */;
@@ -29,7 +29,7 @@ let obj = function _fetchBatch() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c3;
@@ -66,7 +66,7 @@ let obj = function _fetchBatch() {
             c3 = 0;
           }
           c1 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp7) {
         if (0 === c3) {

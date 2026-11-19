@@ -1,9 +1,9 @@
-// Module ID: 8583
-// Function ID: 8584
+// Module ID: 8552
+// Function ID: 8553
 // Name: RenderMessageOptionsContext
 // Dependencies: [2]
 
-// Module 8583 (RenderMessageOptionsContext)
+// Module 8552 (RenderMessageOptionsContext)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/native/renderer/RenderMessageOptionsContext.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 16449
-// Function ID: 16450
+// Module ID: 16440
+// Function ID: 16441
 // Name: usePopularOrbShopProducts
-// Dependencies: [5, 32, 19, 1074, 1089, 1077, 16450, 16451, 1078, 9796, 16452, 2]
+// Dependencies: [5, 32, 19, 1074, 1089, 1077, 16441, 16442, 1078, 9775, 16443, 2]
 // Exports: usePopularOrbShopProducts
 
-// Module 16449 (usePopularOrbShopProducts)
+// Module 16440 (usePopularOrbShopProducts)
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -73,7 +73,7 @@ export function usePopularOrbShopProducts(enabled) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } else {
           let c4;
@@ -146,7 +146,7 @@ export function usePopularOrbShopProducts(enabled) {
                 c4(true);
               }
               sort_type = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             }
           } catch (tmp30) {
             closure_3 = tmp30;

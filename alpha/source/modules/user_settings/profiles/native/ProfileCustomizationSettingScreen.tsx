@@ -1,33 +1,33 @@
-// Module ID: 15753
-// Function ID: 15754
+// Module ID: 15741
+// Function ID: 15742
 // Name: ProfileCustomizationSettingScreen
-// Dependencies: [5, 109, 32, 19, 17, 9328, 8044, 10106, 6458, 1082, 1072, 9323, 7981, 21, 4823, 575, 1113, 15754, 15881, 7313, 10118, 5000, 1503, 15890, 14471, 5387, 4884, 7508, 1502, 7325, 7497, 14124, 15774, 15882, 504, 5560, 9330, 15892, 7006, 6940, 11056, 15895, 13459, 13462, 2]
+// Dependencies: [5, 109, 32, 19, 17, 9305, 8013, 10084, 6429, 1082, 1072, 9300, 7950, 21, 4792, 575, 1113, 15742, 15872, 7283, 10096, 4969, 1503, 15881, 14458, 5356, 4853, 7478, 1502, 7295, 7467, 14106, 15765, 15873, 504, 5529, 9307, 15883, 6976, 6910, 11034, 15886, 13441, 13444, 2]
 
-// Module 15753 (ProfileCustomizationSettingScreen)
+// Module 15741 (ProfileCustomizationSettingScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import intl2 from "intl" /* 1113 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5560 */;
-import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7313 */;
-import Constants2 from "Constants" /* 7981 */;
-import MainTabsConstants from "MainTabsConstants" /* 9323 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9330 */;
-import WidgetActionCreatorsDefault from "WidgetActionCreators" /* 10118 */;
-import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 14124 */;
-import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 15754 */;
-import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 15881 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5529 */;
+import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7283 */;
+import Constants2 from "Constants" /* 7950 */;
+import MainTabsConstants from "MainTabsConstants" /* 9300 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9307 */;
+import WidgetActionCreatorsDefault from "WidgetActionCreators" /* 10096 */;
+import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 14106 */;
+import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 15742 */;
+import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 15872 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9328 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8044 */;
-import WidgetStore from "WidgetStore" /* 10106 */;
-import SortedGuildStore from "SortedGuildStore" /* 6458 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9305 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8013 */;
+import WidgetStore from "WidgetStore" /* 10084 */;
+import SortedGuildStore from "SortedGuildStore" /* 6429 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let c1, closure_12, state;
@@ -322,7 +322,7 @@ const memoResult = react.memo(function ProfileCustomizationSettingScreen() {
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "+60" };
               }
             } else {
               try {
@@ -354,7 +354,7 @@ const memoResult = react.memo(function ProfileCustomizationSettingScreen() {
                     closure_128_3(true);
                   }
                   c2 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "+60" };
                 }
               } catch (tmp8) {
                 c2 = 3;

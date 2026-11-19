@@ -1,14 +1,14 @@
-// Module ID: 8154
-// Function ID: 8155
+// Module ID: 8123
+// Function ID: 8124
 // Name: experiment
-// Dependencies: [32, 1197, 1226, 1227, 8155, 8156, 2]
+// Dependencies: [32, 1197, 1226, 1227, 8124, 8125, 2]
 
-// Module 8154 (experiment)
+// Module 8123 (experiment)
 import _mod1197 from "module_1197" /* 1197 */;
 import timestamp from "timestamp" /* 1226 */;
 import wrappers from "wrappers" /* 1227 */;
-import rules from "rules" /* 8155 */;
-import duration from "duration" /* 8156 */;
+import rules from "rules" /* 8124 */;
+import duration from "duration" /* 8125 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -2093,6 +2093,7 @@ const items10 = [{ no: 1, name: "variation_id", kind: "scalar", T: 5 }, ];
 const obj30 = { no: 2, name: "buckets", kind: "message", repeat: 1, T: T20 };
 items10[1] = obj30;
 let tmp21 = new "internalBinaryRead"("discord_protos.discord_experimentation.v1.LifecyclePlan.VariationBuckets", items10, tmp6, LifecyclePlan_RampStep$Type, "create", LifecyclePlan_VariationBuckets$Type, "internalBinaryRead", items10, this, undefined, tmp, require, dependencyMap, Experiment_NumberLineSettings_Mode, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10, obj11, obj12, obj13, obj14, obj15, obj16, obj17, obj18, obj19, experimentType, tmp9, tmp10, tmp11, tmp12, tmp13, this, items41, this, items42, bucket_AllocationExposureModeType, bucket_AllocationExposureModeType1, bucket_AllocationExposureModeType2, lifecyclePlan_MeasurementPlanType, lifecyclePlan_RolloutPlanType, exports, obj30, undefined, 8, 7, 6);
+let closure_32 = tmp21;
 let result = size.fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/discord_experimentation/v1/experiment.tsx");
 
 export { Experiment_NumberLineSettings_Mode };

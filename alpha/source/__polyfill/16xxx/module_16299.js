@@ -1,55 +1,60 @@
 // Module ID: 16299
 // Function ID: 16300
-// Dependencies: [16244, 16288]
+// Dependencies: []
 
 // Module 16299
-import tokenize from "tokenize" /* 16244 */;
-import tokenize2 from "tokenize" /* 16288 */;
-
-let items;
-let obj2;
-function consumeRaw(arg0) {
-  return this.Raw(arg0, tokenize2.mode.semicolonIncluded, true);
-}
-const WhiteSpace = tokenize.TYPE.WhiteSpace;
-const Comment = tokenize.TYPE.Comment;
-const Semicolon = tokenize.TYPE.Semicolon;
-const obj = {
-  name: "DeclarationList",
-  structure: obj2,
-  parse() {
+let obj = {
+  name: "Nth",
+  structure: { nth: ["AnPlusB", "Identifier"], selector: ["SelectorList", null] },
+  parse(arg0) {
     const self = this;
-    const list = this.createList();
-    if (!this.scanner.eof) {
-      while (true) {
-        let tokenType = self.scanner.tokenType;
-        if (WhiteSpace !== tokenType) {
-          if (Comment !== tokenType) {
-            if (Semicolon !== tokenType) {
-              let arr = list.push(self.parseWithFallback(self.Declaration, consumeRaw));
-            }
-            if (self.scanner.eof) {
-              break;
-            }
+    const scanner = this.scanner;
+    scanner.skipSC();
+    const tokenStart = this.scanner.tokenStart;
+    const scanner2 = this.scanner;
+    if (!scanner2.lookupValue(0, "odd")) {
+      let AnPlusBResult;
+      let offset;
+      let tmp5;
+      const scanner3 = self.scanner;
+      if (!scanner3.lookupValue(0, "even")) {
+        AnPlusBResult = self.AnPlusB();
+      }
+      const scanner4 = self.scanner;
+      scanner4.skipSC();
+      if (arg0) {
+        const scanner5 = self.scanner;
+        if (scanner5.lookupValue(0, "of")) {
+          const iter = self.scanner;
+          iter.next();
+          const SelectorListResult = self.SelectorList();
+          tmp5 = SelectorListResult;
+          offset = tokenStart;
+          if (self.needPositions) {
+            offset = self.getLastListNode(SelectorListResult.children).loc.end.offset;
+            tmp5 = SelectorListResult;
           }
         }
-        let iter = self.scanner;
-        let nextResult = iter.next();
+        const obj = { type: "Nth", loc: self.getLocation(tokenStart, offset), nth: AnPlusBResult, selector: tmp5 };
+        return obj;
+      }
+      tmp5 = null;
+      offset = tokenStart;
+      if (self.needPositions) {
+        offset = AnPlusBResult.loc.end.offset;
+        tmp5 = null;
       }
     }
-    const element = { type: "DeclarationList", loc: self.getLocationFromList(list), children: list };
-    return element;
+    AnPlusBResult = self.Identifier();
   },
-  generate(arg0) {
-    this.children(arg0, function(type) {
-      if ("Declaration" === type.type) {
-        const self = this;
-        this.chunk(";");
-      }
-    });
+  generate(nth) {
+    const self = this;
+    this.node(nth.nth);
+    if (null !== nth.selector) {
+      self.chunk(" of ");
+      self.node(nth.selector);
+    }
   }
 };
-obj2 = { children: items };
-items = [["Declaration"]];
 
 export default obj;

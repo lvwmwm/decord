@@ -1,14 +1,14 @@
-// Module ID: 13235
-// Function ID: 13236
+// Module ID: 13217
+// Function ID: 13218
 // Name: VoicePanelDockRim
-// Dependencies: [19, 17, 21, 4823, 5387, 575, 4820, 1655, 13236, 5378, 2]
+// Dependencies: [19, 17, 21, 4792, 5356, 575, 4789, 1655, 13218, 5347, 2]
 
-// Module 13235 (VoicePanelDockRim)
+// Module 13217 (VoicePanelDockRim)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const StyleSheet = react_native.StyleSheet;
@@ -21,7 +21,7 @@ const memoResult = react.memo(function VoicePanelDockRim(style) {
   let token;
   style = style.style;
   const tmp = closure_6();
-  let obj = token(5387);
+  let obj = token(5356);
   const tmp2 = token;
   token = obj.useToken(nativeDefault.colors.ICON_VOICE_SPEAKING);
   let items = [token];
@@ -35,7 +35,7 @@ const memoResult = react.memo(function VoicePanelDockRim(style) {
   const items1 = [closure_7, ];
   const useAnimatedStyle = token(1655).useAnimatedStyle;
   token(1655);
-  items1[1] = token(13236).voicePanelDockRimOpacity;
+  items1[1] = token(13218).voicePanelDockRimOpacity;
   let c0;
   [tmp8, tmp9] = items1;
   class VoicePanelDockRimTsx1 {
@@ -51,7 +51,7 @@ const memoResult = react.memo(function VoicePanelDockRim(style) {
   const animatedStyle = useAnimatedStyle(VoicePanelDockRimTsx1);
   const items3 = [tmp.rim, style, animatedStyle];
   const View = tmp4(1655).View;
-  const VoicePanelDockRimLevel = tmp2(13236).VoicePanelDockRimLevel;
+  const VoicePanelDockRimLevel = tmp2(13218).VoicePanelDockRimLevel;
   return <View style={items3} pointerEvents="none">{null}</View>;
 });
 const result = size.fileFinishedImporting("modules/voice_panel/native/dock/VoicePanelDockRim.tsx");

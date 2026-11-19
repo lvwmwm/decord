@@ -1,16 +1,16 @@
-// Module ID: 10843
-// Function ID: 10844
+// Module ID: 10821
+// Function ID: 10822
 // Name: SoundUtils
-// Dependencies: [10844, 4880, 5724, 3, 10846, 10847, 2]
+// Dependencies: [10822, 4849, 5693, 3, 10824, 10825, 2]
 // Exports: createSound, createSoundForPack, playSound
 
-// Module 10843 (SoundUtils)
+// Module 10821 (SoundUtils)
 import LoggerDefault from "Logger" /* 3 */;
-import Constants from "Constants" /* 5724 */;
-import getSoundsForPackDefault from "getSoundsForPack" /* 10846 */;
-import sound_playback_SoundUtils from "sound_playback/SoundUtils" /* 10847 */;
-import SoundpackStore from "SoundpackStore" /* 10844 */;
-import StreamerModeStore from "StreamerModeStore" /* 4880 */;
+import Constants from "Constants" /* 5693 */;
+import getSoundsForPackDefault from "getSoundsForPack" /* 10824 */;
+import sound_playback_SoundUtils from "sound_playback/SoundUtils" /* 10825 */;
+import SoundpackStore from "SoundpackStore" /* 10822 */;
+import StreamerModeStore from "StreamerModeStore" /* 4849 */;
 import size from "module_2" /* 2 */;
 
 const SoundOutputChannel = Constants.SoundOutputChannel;

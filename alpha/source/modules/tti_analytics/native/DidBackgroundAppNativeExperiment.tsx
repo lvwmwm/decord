@@ -1,9 +1,9 @@
-// Module ID: 8286
-// Function ID: 8287
+// Module ID: 8255
+// Function ID: 8256
 // Name: DidBackgroundAppNativeExperiment
 // Dependencies: [1452, 2]
 
-// Module 8286 (DidBackgroundAppNativeExperiment)
+// Module 8255 (DidBackgroundAppNativeExperiment)
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 

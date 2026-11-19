@@ -1,11 +1,11 @@
-// Module ID: 17428
-// Function ID: 17429
+// Module ID: 17421
+// Function ID: 17422
 // Name: useAllowFriendsFromMutualGuildsOnly
-// Dependencies: [19, 4648, 7326, 2]
+// Dependencies: [19, 4617, 7296, 2]
 // Exports: useAllowFriendsFromMutualGuildsOnly
 
-// Module 17428 (useAllowFriendsFromMutualGuildsOnly)
-import UserSettingsUtils from "UserSettingsUtils" /* 7326 */;
+// Module 17421 (useAllowFriendsFromMutualGuildsOnly)
+import UserSettingsUtils from "UserSettingsUtils" /* 7296 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -13,7 +13,7 @@ const result = size.fileFinishedImporting("modules/user_settings/content_and_soc
 
 export function useAllowFriendsFromMutualGuildsOnly() {
   let setting;
-  const FriendSourceFlagsSetting = setting(4648).FriendSourceFlagsSetting;
+  const FriendSourceFlagsSetting = setting(4617).FriendSourceFlagsSetting;
   setting = FriendSourceFlagsSetting.useSetting();
   const items = [setting];
   const memo = react.useMemo(() => {

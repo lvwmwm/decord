@@ -1,22 +1,22 @@
-// Module ID: 10587
-// Function ID: 10588
+// Module ID: 10565
+// Function ID: 10566
 // Name: activityLaunchErrorUtils
-// Dependencies: [5, 19, 10588, 5466, 1072, 21, 1113, 6861, 4648, 10589, 5880, 10590, 6333, 2188, 10592, 2]
+// Dependencies: [5, 19, 10566, 5435, 1072, 21, 1113, 6831, 4617, 10567, 5851, 10568, 6304, 2188, 10570, 2]
 // Exports: getActivityLaunchErrorInfo
 
-// Module 10587 (activityLaunchErrorUtils)
+// Module 10565 (activityLaunchErrorUtils)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import intl12 from "intl" /* 1113 */;
-import UserSettings from "UserSettings" /* 4648 */;
-import DeveloperActivityShelfStore2 from "DeveloperActivityShelfStore" /* 5466 */;
-import InteractionCallbackErrorDefault from "InteractionCallbackError" /* 5880 */;
-import EmbeddedActivityClientErrorDefault from "EmbeddedActivityClientError" /* 6861 */;
-import fetchDeveloperApplications from "fetchDeveloperApplications" /* 10589 */;
-import InteractionUtils from "InteractionUtils" /* 10590 */;
+import UserSettings from "UserSettings" /* 4617 */;
+import DeveloperActivityShelfStore2 from "DeveloperActivityShelfStore" /* 5435 */;
+import InteractionCallbackErrorDefault from "InteractionCallbackError" /* 5851 */;
+import EmbeddedActivityClientErrorDefault from "EmbeddedActivityClientError" /* 6831 */;
+import fetchDeveloperApplications from "fetchDeveloperApplications" /* 10567 */;
+import InteractionUtils from "InteractionUtils" /* 10568 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import LocationMetadataStore from "LocationMetadataStore" /* 10588 */;
+import LocationMetadataStore from "LocationMetadataStore" /* 10566 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6, fetchState;
@@ -43,7 +43,7 @@ let obj = function _getActivityLaunchErrorInfo() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {

@@ -1,11 +1,11 @@
-// Module ID: 18640
-// Function ID: 18641
+// Module ID: 18633
+// Function ID: 18634
 // Name: useConjureOwnImages
-// Dependencies: [109, 32, 19, 1113, 4121, 18355, 2]
+// Dependencies: [109, 32, 19, 1113, 4089, 18355, 2]
 // Exports: inertOwnImageControls, useConjureOwnImages
 
-// Module 18640 (useConjureOwnImages)
-import _modDef4121 from "module_4121" /* 4121 */;
+// Module 18633 (useConjureOwnImages)
+import _modDef4089 from "module_4089" /* 4089 */;
 import conjureAttachmentRequests from "conjureAttachmentRequests" /* 18355 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -75,7 +75,7 @@ export function useConjureOwnImages(projectId, arg1, arg2) {
   [first1, closure_6] = first1.useState({});
   [first2, closure_8] = first1.useState({});
   let intl = require("intl").intl;
-  const stringResult = intl.string(_modDef4121.wTsP5l);
+  const stringResult = intl.string(_modDef4089.wTsP5l);
   const text = stringResult;
   let items = [first];
   const items1 = [arg1, first, first2];
@@ -131,7 +131,7 @@ export function useConjureOwnImages(projectId, arg1, arg2) {
       let busy;
       let closure_3;
       let error;
-      const f140776 = (arg0) => {
+      const f140737 = (arg0) => {
         obj = {};
         const merged = Object.assign(arg0);
         obj[obj] = true;
@@ -264,7 +264,7 @@ export function useConjureOwnImages(projectId, arg1, arg2) {
                   });
                   const tmp5 = closure_1;
                   if (tmp5) {
-                    closure_1_8(f140776);
+                    closure_1_8(f140737);
                   } else {
                     _null((arg0) => {
                       let tmp2 = arg0;
@@ -327,7 +327,7 @@ export function useConjureOwnImages(projectId, arg1, arg2) {
                 });
                 const tmp3 = closure_1;
                 if (tmp3) {
-                  closure_1_8(f140776);
+                  closure_1_8(f140737);
                 } else {
                   _null((arg0) => {
                     let tmp2 = arg0;

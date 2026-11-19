@@ -1,9 +1,9 @@
-// Module ID: 17810
-// Function ID: 17811
+// Module ID: 17803
+// Function ID: 17804
 // Name: VoiceConnectFeedbackExperiment
 // Dependencies: [1453, 2]
 
-// Module 17810 (VoiceConnectFeedbackExperiment)
+// Module 17803 (VoiceConnectFeedbackExperiment)
 import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1453 */;
 import size from "module_2" /* 2 */;
 

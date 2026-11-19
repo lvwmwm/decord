@@ -1,21 +1,21 @@
-// Module ID: 13172
-// Function ID: 13173
+// Module ID: 13154
+// Function ID: 13155
 // Name: UpcomingEventsLongPressActionSheet
-// Dependencies: [19, 17, 4694, 6460, 6461, 21, 4823, 504, 7464, 7426, 7233, 1113, 7620, 1187, 13173, 7387, 5037, 13174, 13175, 7396, 7391, 2]
+// Dependencies: [19, 17, 4663, 6431, 6432, 21, 4792, 504, 7434, 7396, 7203, 1113, 7590, 1187, 13155, 7357, 5006, 13156, 13157, 7366, 7361, 2]
 // Exports: default
 
-// Module 13172 (UpcomingEventsLongPressActionSheet)
+// Module 13154 (UpcomingEventsLongPressActionSheet)
 import react_native from "react-native" /* 17 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
-import ReadStateConstants from "ReadStateConstants" /* 6461 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 7387 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7391 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7396 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
+import ReadStateConstants from "ReadStateConstants" /* 6432 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 7357 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7361 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7366 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4694 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6460 */;
+import GuildStore from "GuildStore" /* 4663 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6431 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -48,12 +48,12 @@ export default function UpcomingEventsLongPressActionSheet(guildId) {
   let obj2 = guildId(504);
   const items1 = [UserGuildSettingsStore];
   const stateFromStores1 = obj2.useStateFromStores(items1, () => UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId));
-  const ActionSheet = guildId(7464).ActionSheet;
+  const ActionSheet = guildId(7434).ActionSheet;
   const obj3 = { leading: closure_7(View, obj4), title: intl.string(guildId(1113).t.tlopTM) };
   obj4 = { style: tmp.headerIcon, children: closure_7(tmp9, obj5) };
-  const BottomSheetTitleHeader = guildId(7426).BottomSheetTitleHeader;
-  obj5 = { guild: stateFromStores, size: guildId(7233).GuildIconSizes.LARGE };
-  tmp9 = stateFromStores1(7233);
+  const BottomSheetTitleHeader = guildId(7396).BottomSheetTitleHeader;
+  obj5 = { guild: stateFromStores, size: guildId(7203).GuildIconSizes.LARGE };
+  tmp9 = stateFromStores1(7203);
   intl = guildId(1113).intl;
   const items2 = [closure_7(BottomSheetTitleHeader, obj3), , ];
   const obj6 = {
@@ -66,14 +66,14 @@ export default function UpcomingEventsLongPressActionSheet(guildId) {
       obj2.hideActionSheet();
     }
   };
-  const FormRow = guildId(7620).FormRow;
-  obj7 = { source: stateFromStores1(13173) };
+  const FormRow = guildId(7590).FormRow;
+  obj7 = { source: stateFromStores1(13155) };
   Icon = guildId(1187).Icon;
   obj8 = { text: intl2.string(guildId(1113).t.e6RscS) };
-  FormLabel = guildId(7620).FormLabel;
+  FormLabel = guildId(7590).FormLabel;
   intl2 = guildId(1113).intl;
   items2[1] = closure_7(FormRow, obj6);
-  const FormRow2 = guildId(7620).FormRow;
+  const FormRow2 = guildId(7590).FormRow;
   const obj9 = {
     leading: closure_7(Icon2, obj10),
     label: closure_7(FormLabel2, { text: stringResult }),
@@ -85,9 +85,9 @@ export default function UpcomingEventsLongPressActionSheet(guildId) {
       const result = updateGuildNotificationSettings(guildId, obj, NotificationLabel.mutedEvents(!stateFromStores1));
     }
   };
-  obj10 = { source: stateFromStores1(stateFromStores1 ? 13174 : 13175) };
+  obj10 = { source: stateFromStores1(stateFromStores1 ? 13156 : 13157) };
   Icon2 = guildId(1187).Icon;
-  FormLabel2 = tmp2(7620).FormLabel;
+  FormLabel2 = tmp2(7590).FormLabel;
   const intl3 = tmp2(1113).intl;
   const string = intl3.string;
   const t = tmp2(1113).t;

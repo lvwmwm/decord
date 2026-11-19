@@ -1,18 +1,18 @@
-// Module ID: 5832
-// Function ID: 5833
+// Module ID: 5803
+// Function ID: 5804
 // Name: useBackPressHandler
-// Dependencies: [19, 17, 5833, 1380, 5835, 2]
+// Dependencies: [19, 17, 5804, 1380, 5806, 2]
 // Exports: default, subscribeToBackPress
 
-// Module 5832 (useBackPressHandler)
+// Module 5803 (useBackPressHandler)
 import react_native from "react-native" /* 17 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import KeyCommands from "KeyCommands" /* 5833 */;
+import KeyCommands from "KeyCommands" /* 5804 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const BackPressTracking = tmp(5835);
+const BackPressTracking = tmp(5806);
 let react = react_mod;
 const NativeModules = react_native.NativeModules;
 let obj = {
@@ -24,15 +24,15 @@ let obj = {
 };
 const result = size.fileFinishedImporting("modules/routing/native/useBackPressHandler.tsx");
 
-export default function useBackPressHandler(map) {
+export default function useBackPressHandler(set) {
   let closure_2;
-  const current = map;
+  const current = set;
   let flag = arg1;
   if (arg1 === undefined) {
     flag = true;
   }
   react = undefined;
-  react = react.useRef(map);
+  react = react.useRef(set);
   const layoutEffect = react.useLayoutEffect(() => {
     closure_2.current = current;
   });
@@ -49,7 +49,7 @@ export default function useBackPressHandler(map) {
       const obj2 = PlatformUtils;
       const tmp2 = require;
       if (!obj2.isIOS()) {
-        const tmp2Result = tmp2(5835);
+        const tmp2Result = tmp2(5806);
         let closure_1 = tmp2Result.addBackPressListener(fn);
         fn2 = () => {
           closure_1.remove();

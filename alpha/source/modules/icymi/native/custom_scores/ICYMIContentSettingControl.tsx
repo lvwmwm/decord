@@ -1,27 +1,27 @@
-// Module ID: 18152
-// Function ID: 18153
+// Module ID: 18145
+// Function ID: 18146
 // Name: ICYMIContentSettingControl
-// Dependencies: [32, 19, 17, 6460, 9931, 21, 4823, 575, 9940, 1113, 1187, 18153, 18154, 18155, 7497, 11238, 504, 18156, 5414, 7467, 5439, 2]
+// Dependencies: [32, 19, 17, 6431, 9910, 21, 4792, 575, 9919, 1113, 1187, 18146, 18147, 18148, 7467, 11216, 504, 18149, 5383, 7437, 5408, 2]
 // Exports: ChannelScoreSettings, GuildScoreSettings
 
-// Module 18152 (ICYMIContentSettingControl)
+// Module 18145 (ICYMIContentSettingControl)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import SegmentedControlState from "SegmentedControlState" /* 7497 */;
-import ICYMIUtils from "ICYMIUtils" /* 9940 */;
-import SegmentedControl from "SegmentedControl" /* 11238 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18153 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 18154 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 18155 */;
-import NativeICYMIActionCreatorsDefault from "NativeICYMIActionCreators" /* 18156 */;
+import SegmentedControlState from "SegmentedControlState" /* 7467 */;
+import ICYMIUtils from "ICYMIUtils" /* 9919 */;
+import SegmentedControl from "SegmentedControl" /* 11216 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18146 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 18147 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 18148 */;
+import NativeICYMIActionCreatorsDefault from "NativeICYMIActionCreators" /* 18149 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6460 */;
-import ICYMIStore from "ICYMIStore" /* 9931 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6431 */;
+import ICYMIStore from "ICYMIStore" /* 9910 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -97,9 +97,9 @@ function ContentSettingsControl(initialValue) {
     onSetActiveIndex(arg0) {
       let MORE = ICYMIUtils.ICYMICustomScore.DEFAULT;
       if (0 === arg0) {
-        MORE = tmp(9940).ICYMICustomScore.LESS;
+        MORE = tmp(9919).ICYMICustomScore.LESS;
       } else if (2 === arg0) {
-        MORE = tmp(9940).ICYMICustomScore.MORE;
+        MORE = tmp(9919).ICYMICustomScore.MORE;
       }
       _undefined(MORE);
       require(MORE);
@@ -107,7 +107,7 @@ function ContentSettingsControl(initialValue) {
     items: items1,
     defaultIndex: num
   };
-  const useSegmentedControlState = tmp4(7497).useSegmentedControlState;
+  const useSegmentedControlState = tmp4(7467).useSegmentedControlState;
   num = 0;
   SegmentedControlState;
   if (ICYMIUtils.ICYMICustomScore.LESS !== tmp3) {
@@ -158,10 +158,10 @@ export function GuildScoreSettings(guild) {
   let obj = id(504);
   const items = [ICYMIStore];
   const stateFromStores = obj.useStateFromStores(items, () => ICYMIStore.getCustomGuildScore(id));
-  let obj2 = id(9940);
+  let obj2 = id(9919);
   const numberToCustomScoreResult = obj2.numberToCustomScore(stateFromStores);
   let c1 = numberToCustomScoreResult;
-  const tmp5 = numberToCustomScoreResult === id(9940).ICYMICustomScore.MUTED;
+  const tmp5 = numberToCustomScoreResult === id(9919).ICYMICustomScore.MUTED;
   const items1 = [id];
   const items2 = [numberToCustomScoreResult, id];
   const callback = react.useCallback((arg0) => {
@@ -192,11 +192,11 @@ export function GuildScoreSettings(guild) {
   }, items2);
   const tmp8 = closure_10();
   const obj3 = { variant: "body-sm/semibold", color: "text-default", children: intl.string(id(1113).t.Clq6km) };
-  const Text = id(5414).Text;
+  const Text = id(5383).Text;
   intl = id(1113).intl;
   const items3 = [closure_8(Text, obj3), , , , ];
   const obj4 = { variant: "body-xs/normal", color: "text-default", children: intl2.format(id(1113).t["0DhU2P"], obj5) };
-  const Text2 = id(5414).Text;
+  const Text2 = id(5383).Text;
   intl2 = id(1113).intl;
   obj5 = { guildName: guild.name };
   items3[1] = closure_8(Text2, obj4);
@@ -211,11 +211,11 @@ export function GuildScoreSettings(guild) {
   const obj8 = { children: items3 };
   const obj9 = { style: tmp5 && tmp8.muted, children: closure_8(TableSwitchRow, obj10) };
   obj10 = { value: !tmp5, onValueChange: callback, label: intl3.string(tmp(1113).t.oujX73), start: true, end: true };
-  TableSwitchRow = tmp(7467).TableSwitchRow;
+  TableSwitchRow = tmp(7437).TableSwitchRow;
   intl3 = tmp(1113).intl;
   items3[3] = closure_8(View, obj9);
   const obj11 = { variant: "body-xs/normal", color: "text-muted", style: tmp8.warningText, children: intl4.string(tmp(1113).t.vRVs07) };
-  const Text3 = tmp(5414).Text;
+  const Text3 = tmp(5383).Text;
   intl4 = tmp(1113).intl;
   items3[4] = closure_8(Text3, obj11);
   return tmp9(View, obj8);

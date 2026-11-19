@@ -1,14 +1,14 @@
-// Module ID: 10971
-// Function ID: 10972
+// Module ID: 10949
+// Function ID: 10950
 // Name: MicrophoneIcon
-// Dependencies: [19, 21, 575, 5509, 10972, 2]
+// Dependencies: [19, 21, 575, 5478, 10950, 2]
 // Exports: MicrophoneIcon
 
-// Module 10971 (MicrophoneIcon)
+// Module 10949 (MicrophoneIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5509 */;
-import AssetRegistry from "AssetRegistry" /* 10972 */;
+import BaseIconImage2 from "BaseIconImage" /* 5478 */;
+import AssetRegistry from "AssetRegistry" /* 10950 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

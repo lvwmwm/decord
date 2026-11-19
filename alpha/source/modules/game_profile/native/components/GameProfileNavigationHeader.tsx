@@ -1,17 +1,17 @@
-// Module ID: 9842
-// Function ID: 9843
+// Module ID: 9821
+// Function ID: 9822
 // Name: GameProfileNavigationHeader
-// Dependencies: [19, 17, 21, 4823, 575, 5387, 1655, 5033, 1414, 7511, 5510, 5414, 9714, 2]
+// Dependencies: [19, 17, 21, 4792, 575, 5356, 1655, 5002, 1414, 7481, 5479, 5383, 9693, 2]
 // Exports: default
 
-// Module 9842 (GameProfileNavigationHeader)
+// Module 9821 (GameProfileNavigationHeader)
 import nativeDefault from "native" /* 575 */;
 import AvatarUtils from "AvatarUtils" /* 1414 */;
-import timing_timing from "timing/timing" /* 5033 */;
+import timing_timing from "timing/timing" /* 5002 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, set;
@@ -47,8 +47,11 @@ export default function GameProfileNavigationHeader(game) {
   let items7;
   let items8;
   let items9;
-  let obj13;
+  let obj12;
+  let obj14;
   let obj7;
+  let str2;
+  let str3;
   let tmp10;
   let tmp11;
   let tmp13;
@@ -59,7 +62,7 @@ export default function GameProfileNavigationHeader(game) {
   let sharedValue;
   let tmp = closure_8();
   const tmp2 = game;
-  let obj = game(5387);
+  let obj = game(5356);
   dependencyMap = tmp6;
   const token = obj.useToken(application(575).colors.LEGACY_BLUR_FALLBACK_ULTRA_THIN);
   let num = 0;
@@ -156,18 +159,18 @@ export default function GameProfileNavigationHeader(game) {
   if (null != name) {
     const obj3 = { style: tmp.headerContainer, children: items6 };
     const obj4 = { android_fallbackColor: token };
-    items6 = [closure_6(tmp2(7511).BackgroundBlurFill, obj4), ];
+    items6 = [closure_6(tmp2(7481).BackgroundBlurFill, obj4), ];
     let tmp22Result = null != memo;
     const obj5 = { style: tmp.headerRow, children: items7 };
     if (tmp22Result) {
       const obj6 = { source: obj7, style: tmp.icon };
       obj7 = { uri: memo };
-      tmp22Result = tmp22(tmp4(5510), obj6);
+      tmp22Result = tmp22(tmp4(5479), obj6);
     }
     items7 = [tmp22Result, , ];
     const obj8 = { style: tmp.titleContainer, children: items8 };
     const obj9 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: name };
-    items8 = [closure_6(tmp2(5414).Heading, obj9), ];
+    items8 = [closure_6(tmp2(5383).Heading, obj9), ];
     let l30Rank;
     if (game != null) {
       l30Rank = game.l30Rank;
@@ -175,23 +178,33 @@ export default function GameProfileNavigationHeader(game) {
     let tmp20Result = null != l30Rank;
     if (tmp20Result) {
       const obj10 = { style: tmp.rankPillContainer, children: items9 };
-      const obj11 = { rank: game.l30Rank, compact: true };
-      items9 = [closure_6(tmp4(9714), obj11), ];
-      const obj12 = { style: items10, children: closure_6(application(9714), obj13) };
+      let str = "no-hide-descendants";
+      const obj11 = { style: tmp.rankPillContainer, accessibilityElementsHidden: null == headerRight, importantForAccessibility: str2, children: closure_6(application(9693), obj12) };
+      str2 = "no-hide-descendants";
+      if (null != headerRight) {
+        str2 = "auto";
+      }
+      obj12 = { rank: game.l30Rank, compact: true };
+      items9 = [closure_6(closure_4, obj11), ];
+      const obj13 = { style: items10, accessibilityElementsHidden: null != headerRight, importantForAccessibility: str3, children: closure_6(application(9693), obj14) };
       items10 = [StyleSheet.absoluteFill, animatedStyle1];
+      str3 = "auto";
       const View = tmp4(1655).View;
-      obj13 = { rank: game.l30Rank };
-      items9[1] = closure_6(View, obj12);
+      if (null != headerRight) {
+        str3 = "no-hide-descendants";
+      }
+      obj14 = { rank: game.l30Rank };
+      items9[1] = closure_6(View, obj13);
       tmp20Result = tmp20(tmp21, obj10);
     }
     items8[1] = tmp20Result;
     items7[1] = closure_7(closure_4, obj8);
     let tmp22Result2 = null != headerRight;
     if (tmp22Result2) {
-      const obj14 = { style: items11, children: headerRight() };
+      const obj15 = { style: items11, children: headerRight() };
       items11 = [tmp.headerRight, animatedStyle];
       const View2 = tmp4(1655).View;
-      tmp22Result2 = tmp22(View2, obj14);
+      tmp22Result2 = tmp22(View2, obj15);
     }
     items7[2] = tmp22Result2;
     items6[1] = closure_7(closure_4, obj5);

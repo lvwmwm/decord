@@ -1,13 +1,13 @@
-// Module ID: 17919
-// Function ID: 17920
+// Module ID: 17912
+// Function ID: 17913
 // Name: GuildsBarFolderMenuItems
-// Dependencies: [5, 6458, 1072, 7368, 1113, 15103, 2121, 10331, 17920, 2]
+// Dependencies: [5, 6429, 1072, 7338, 1113, 15089, 2121, 10309, 17913, 2]
 // Exports: getGuildFolderMenuItems
 
-// Module 17919 (GuildsBarFolderMenuItems)
+// Module 17912 (GuildsBarFolderMenuItems)
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SortedGuildStore from "SortedGuildStore" /* 6458 */;
+import SortedGuildStore from "SortedGuildStore" /* 6429 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -36,7 +36,7 @@ export function getGuildFolderMenuItems(id) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } else {
           try {
@@ -71,7 +71,7 @@ export function getGuildFolderMenuItems(id) {
               value.default(guildFolderById.guildIds, constants.GUILD_LIST);
             }
             guildFolderById = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           } catch (tmp13) {
             guildFolderById = 3;
             throw tmp13;
@@ -98,7 +98,7 @@ export function getGuildFolderMenuItems(id) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } else {
           try {
@@ -127,7 +127,7 @@ export function getGuildFolderMenuItems(id) {
             } else {
               const result = value.showGuildsBarFolderModal(closure_128_0);
               c2 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             }
           } catch (tmp9) {
             c2 = 3;

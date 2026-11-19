@@ -1,16 +1,16 @@
-// Module ID: 11762
-// Function ID: 11763
+// Module ID: 11740
+// Function ID: 11741
 // Name: SafetyTipsSection
-// Dependencies: [19, 17, 21, 4823, 575, 5837, 11763, 5414, 1113, 11767, 2]
+// Dependencies: [19, 17, 21, 4792, 575, 5808, 11741, 5383, 1113, 11745, 2]
 // Exports: default
 
-// Module 11762 (SafetyTipsSection)
+// Module 11740 (SafetyTipsSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import SafetyTipsRowDefault from "SafetyTipsRow" /* 11767 */;
+import SafetyTipsRowDefault from "SafetyTipsRow" /* 11745 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -30,14 +30,14 @@ export default function SafetyTipsContainer(safetyTips) {
   let showHeader = safetyTips.showHeader;
   const description = safetyTips.description;
   const tmp = closure_6();
-  let obj = { style: tmp.image, children: closure_4(safetyTips(11763).SafetyBookletSpotIllustration, {}) };
-  const Stack = safetyTips(5837).Stack;
+  let obj = { style: tmp.image, children: closure_4(safetyTips(11741).SafetyBookletSpotIllustration, {}) };
+  const Stack = safetyTips(5808).Stack;
   const items = [closure_4(View, obj), , ];
-  const Stack2 = safetyTips(5837).Stack;
+  const Stack2 = safetyTips(5808).Stack;
   const tmp6 = View;
   if (showHeader) {
     const obj2 = { style: tmp.text, variant: "heading-xl/semibold", children: intl.string(safetyTips(1113).t.eAbVfS) };
-    const Text = tmp3(5414).Text;
+    const Text = tmp3(5383).Text;
     intl = tmp3(1113).intl;
     showHeader = tmp5(Text, obj2);
   }
@@ -45,7 +45,7 @@ export default function SafetyTipsContainer(safetyTips) {
   items1 = [showHeader, ];
   const obj3 = { spacing: 16, children: items };
   const obj5 = { style: tmp.text, accessibilityRole: "header", variant: "body-md/medium", color: "text-default", children: description };
-  items1[1] = closure_4(safetyTips(5414).Text, obj5);
+  items1[1] = closure_4(safetyTips(5383).Text, obj5);
   items[1] = closure_5(Stack2, obj4);
   const obj6 = {
     style: tmp.tips,

@@ -1,20 +1,20 @@
-// Module ID: 15997
-// Function ID: 15998
+// Module ID: 15988
+// Function ID: 15989
 // Name: PasskeyInitStep
-// Dependencies: [5, 32, 19, 17, 15900, 1072, 21, 4823, 575, 504, 15998, 5414, 1113, 6453, 7502, 5530, 15990, 5768, 1187, 16002, 5037, 16003, 2121, 11202, 7259, 6956, 16004, 1502, 6341, 7290, 6940, 7620, 2]
+// Dependencies: [5, 32, 19, 17, 15891, 1072, 21, 4792, 575, 504, 15989, 5383, 1113, 6424, 7472, 5499, 15981, 5739, 1187, 15993, 5006, 15994, 2121, 11180, 7229, 6926, 15995, 1502, 6312, 7260, 6910, 7590, 2]
 // Exports: default
 
-// Module 15997 (PasskeyInitStep)
+// Module 15988 (PasskeyInitStep)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6341 */;
+import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6312 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import WebAuthnStore from "WebAuthnStore" /* 15900 */;
+import WebAuthnStore from "WebAuthnStore" /* 15891 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let c1, c4, closure_2, deleting, dependencyMap, setDeleting;
@@ -53,9 +53,9 @@ function CredentialList(navigation) {
     let tmp7 = View;
     let obj2 = { style: tmp3.upsellContainer, children: items1 };
     let tmp8 = closure_9;
-    items1 = [closure_9(tmp(15998).PasskeysSpotIllustration, { scale: 0.6 }), ];
+    items1 = [closure_9(tmp(15989).PasskeysSpotIllustration, { scale: 0.6 }), ];
     let obj3 = { variant: "body-md/normal", style: tmp3.upsellText, children: intl2.string(tmp(1113).t.FSNwFW) };
-    const Text = tmp(5414).Text;
+    const Text = tmp(5383).Text;
     intl2 = tmp(1113).intl;
     items1[1] = closure_9(Text, obj3);
     return closure_10(View, obj2);
@@ -104,7 +104,7 @@ function CredentialList(navigation) {
                   let obj2 = { value, done: true };
                   return obj2;
                 } else {
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "+60" };
                 }
               } else {
                 try {
@@ -171,7 +171,7 @@ function CredentialList(navigation) {
                             const obj3 = { value, done: true };
                             return obj3;
                           } else {
-                            return { value: "HermesInternal", done: null };
+                            return { value: "HermesInternal", done: "+60" };
                           }
                         } else {
                           let c3;
@@ -211,7 +211,7 @@ function CredentialList(navigation) {
                               c3 = 0;
                               setDeleting(false);
                               c4 = 3;
-                              return { value: "HermesInternal", done: null };
+                              return { value: "HermesInternal", done: "+60" };
                             }
                           } catch (tmp21) {
                             closure_2 = tmp21;
@@ -232,7 +232,7 @@ function CredentialList(navigation) {
                       obj.openLazy(tmp(paths[22])(paths[21], paths.paths), "WEBAUTHN_DELETE_SHEET_KEY", obj8);
                     }
                     setDeleting = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "+60" };
                   }
                 } catch (tmp45) {
                   setDeleting = 3;
@@ -273,7 +273,7 @@ function CredentialList(navigation) {
           return tmp(TableRow, obj, label.id);
         })
     };
-    const TableRowGroup = tmp(7259).TableRowGroup;
+    const TableRowGroup = tmp(7229).TableRowGroup;
     intl = tmp(1113).intl;
     return closure_9(TableRowGroup, obj4);
   }

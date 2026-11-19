@@ -1,16 +1,16 @@
-// Module ID: 18898
-// Function ID: 18899
+// Module ID: 18890
+// Function ID: 18891
 // Name: PinotChannelDetailsLabel
-// Dependencies: [19, 21, 4823, 575, 11811, 1113, 3407, 6941, 5505, 5414, 2]
+// Dependencies: [19, 21, 4792, 575, 11789, 1113, 3407, 6911, 5474, 5383, 2]
 // Exports: PinotChannelDetailsLabel
 
-// Module 18898 (PinotChannelDetailsLabel)
+// Module 18890 (PinotChannelDetailsLabel)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef3407 from "module_3407" /* 3407 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5505 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5474 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -29,13 +29,13 @@ export function PinotChannelDetailsLabel(channel) {
   let stringResult1;
   channel = channel.channel;
   const tmp = closure_5();
-  let obj = stringResult1(11811);
+  let obj = stringResult1(11789);
   if (obj.useIsPinotChannelLabelVisible(channel, "mobile_channel_details_label")) {
     const intl = tmp2(1113).intl;
     const stringResult = intl.string(_modDef3407.uneDIi);
     const intl2 = tmp2(1113).intl;
     stringResult1 = intl2.string(_modDef3407["01KOls"]);
-    const PressableOpacity = tmp2(6941).PressableOpacity;
+    const PressableOpacity = tmp2(6911).PressableOpacity;
     return <PressableOpacity onPress={function handlePress() {
       const obj = ToastActionCreatorsDefault;
       const obj2 = { text: stringResult1 };

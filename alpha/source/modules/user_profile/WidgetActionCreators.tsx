@@ -1,9 +1,9 @@
-// Module ID: 10118
-// Function ID: 10119
+// Module ID: 10096
+// Function ID: 10097
 // Name: WidgetActionCreators
-// Dependencies: [5, 1388, 1072, 572, 1285, 6873, 1242, 2]
+// Dependencies: [5, 1388, 1072, 572, 1285, 6843, 1242, 2]
 
-// Module 10118 (WidgetActionCreators)
+// Module 10096 (WidgetActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
@@ -36,7 +36,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         let c3;
@@ -74,7 +74,7 @@ let obj = {
                 return obj7;
               } else {
                 constants = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "+60" };
               }
             }
           } else if (1 === tmp4) {
@@ -170,7 +170,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         let c5;
@@ -261,7 +261,7 @@ let obj = {
               dispatch(obj10);
               c5 = 0;
               c7 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             }
           }
         } catch (tmp39) {

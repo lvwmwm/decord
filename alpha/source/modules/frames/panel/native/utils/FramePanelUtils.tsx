@@ -1,14 +1,14 @@
-// Module ID: 19616
-// Function ID: 19617
+// Module ID: 19612
+// Function ID: 19613
 // Name: FramePanelUtils
-// Dependencies: [6531, 6532, 5449, 504, 2]
+// Dependencies: [6502, 6503, 5418, 504, 2]
 // Exports: isFramePanelFullscreen, useIsActivityPanelFullscreen
 
-// Module 19616 (FramePanelUtils)
+// Module 19612 (FramePanelUtils)
 import get_initialized from "get initialized" /* 504 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5449 */;
-import FramesConstants from "FramesConstants" /* 6532 */;
-import FramesStore from "FramesStore" /* 6531 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5418 */;
+import FramesConstants from "FramesConstants" /* 6503 */;
+import FramesStore from "FramesStore" /* 6502 */;
 import size from "module_2" /* 2 */;
 
 const asLaunched = FramesConstants.asLaunched;

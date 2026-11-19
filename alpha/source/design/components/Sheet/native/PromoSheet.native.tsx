@@ -1,16 +1,16 @@
-// Module ID: 11185
-// Function ID: 11186
+// Module ID: 11163
+// Function ID: 11164
 // Name: PromoSheet
-// Dependencies: [109, 19, 17, 21, 4823, 575, 7723, 5051, 5837, 8996, 5414, 2]
+// Dependencies: [109, 19, 17, 21, 4792, 575, 7693, 5020, 5808, 8970, 5383, 2]
 // Exports: PromoSheet
 
-// Module 11185 (PromoSheet)
+// Module 11163 (PromoSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -52,12 +52,12 @@ export function PromoSheet(arg0) {
     }) : undefined;
   }, items);
   let obj = { startExpanded: true, contentStyles: tmp2.content, backgroundComponent: memo, children: closure_8(Stack, obj6) };
-  const BottomSheet = gradientColor(5051).BottomSheet;
+  const BottomSheet = gradientColor(5020).BottomSheet;
   let merged = Object.assign(tmp);
-  Stack = gradientColor(5837).Stack;
+  Stack = gradientColor(5808).Stack;
   if (null != graphic) {
     let obj2 = { style: tmp2.graphic };
-    const Graphic = tmp5(8996).Graphic;
+    const Graphic = tmp5(8970).Graphic;
     const merged1 = Object.assign(graphic);
     tmp4Result = tmp4(Graphic, obj2);
   } else {
@@ -68,14 +68,14 @@ export function PromoSheet(arg0) {
     }
   }
   const items1 = [tmp4Result, , ];
-  const Stack2 = tmp5(5837).Stack;
+  const Stack2 = tmp5(5808).Stack;
   const items2 = [, ];
   const obj4 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp2.title, children: title };
-  items2[0] = closure_7(gradientColor(5414).Text, obj4);
+  items2[0] = closure_7(gradientColor(5383).Text, obj4);
   let tmp4Result2 = null;
   if (null != description) {
     const obj5 = { variant: "heading-md/medium", color: "text-subtle", style: tmp2.description, children: description };
-    tmp4Result2 = tmp4(tmp5(5414).Text, obj5);
+    tmp4Result2 = tmp4(tmp5(5383).Text, obj5);
   }
   obj6 = { spacing: 24, children: items1 };
   items2[1] = tmp4Result2;

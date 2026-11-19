@@ -1,10 +1,10 @@
-// Module ID: 13355
-// Function ID: 13356
+// Module ID: 13337
+// Function ID: 13338
 // Name: useGuildBoostPurchaseHandler
-// Dependencies: [5, 19, 1072, 3, 9141, 9112, 9144, 1256, 5769, 1113, 6454, 2]
+// Dependencies: [5, 19, 1072, 3, 9117, 9088, 9120, 1256, 5740, 1113, 6425, 2]
 // Exports: default
 
-// Module 13355 (useGuildBoostPurchaseHandler)
+// Module 13337 (useGuildBoostPurchaseHandler)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -37,7 +37,7 @@ export default function useGuildBoostPurchaseHandler(arg0) {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -95,7 +95,7 @@ export default function useGuildBoostPurchaseHandler(arg0) {
           let obj = closure_0(dependencyMap[10]);
           obj.closeApplyBoostModal();
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp9) {
         c4 = 3;

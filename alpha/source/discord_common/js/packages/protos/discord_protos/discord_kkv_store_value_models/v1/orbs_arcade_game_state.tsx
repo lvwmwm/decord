@@ -1,9 +1,9 @@
-// Module ID: 16489
-// Function ID: 16490
+// Module ID: 16480
+// Function ID: 16481
 // Name: orbs_arcade_game_state
 // Dependencies: [32, 1197, 1226, 1227, 2]
 
-// Module 16489 (orbs_arcade_game_state)
+// Module 16480 (orbs_arcade_game_state)
 import _mod1197 from "module_1197" /* 1197 */;
 import timestamp from "timestamp" /* 1226 */;
 import wrappers from "wrappers" /* 1227 */;

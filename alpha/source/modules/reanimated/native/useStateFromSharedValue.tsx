@@ -1,16 +1,16 @@
-// Module ID: 10558
-// Function ID: 10559
+// Module ID: 10536
+// Function ID: 10537
 // Name: useStateFromSharedValue
 // Dependencies: [32, 19, 1263, 1708, 2]
 // Exports: default, useDerivedStateFromSharedValue
 
-// Module 10558 (useStateFromSharedValue)
+// Module 10536 (useStateFromSharedValue)
 import _mod1708 from "module_1708" /* 1708 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-let set, sum;
+let sum;
 
 let c4 = 9999999;
 const map = new Map();
@@ -96,13 +96,13 @@ export default function useStateFromSharedValue(arg0) {
   }, items);
   return first;
 };
-export function useDerivedStateFromSharedValue(activeIndex, map) {
+export function useDerivedStateFromSharedValue(activeIndex, set) {
   let closure_129_2;
   let tmp2;
-  let closure_1 = map;
+  let closure_1 = set;
   let tmp = _slicedToArray(react.useState(() => current(closure_0.get(), undefined)), 2);
   [tmp2, closure_129_2] = tmp;
-  let closure_3 = react.useRef(map);
+  let closure_3 = react.useRef(set);
   const layoutEffect = react.useLayoutEffect(() => {
     closure_3.current = current;
   });

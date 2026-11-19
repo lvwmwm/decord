@@ -1,10 +1,10 @@
-// Module ID: 6860
-// Function ID: 6861
+// Module ID: 6830
+// Function ID: 6831
 // Name: EmbeddedAppCSPActionCreators
 // Dependencies: [5, 1285, 572, 1242, 2]
 // Exports: fetchEmbeddedAppCSP
 
-// Module 6860 (EmbeddedAppCSPActionCreators)
+// Module 6830 (EmbeddedAppCSPActionCreators)
 import HTTPUtils from "HTTPUtils" /* 1285 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -26,7 +26,7 @@ let obj = function _readPolicy() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -79,7 +79,7 @@ let obj = function _readPolicy() {
             c4 = 0;
             closure_130_4.delete(routerOrigin);
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp41) {
           closure_3 = tmp41;

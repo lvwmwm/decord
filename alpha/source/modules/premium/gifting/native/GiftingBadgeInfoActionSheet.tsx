@@ -1,23 +1,23 @@
-// Module ID: 9383
-// Function ID: 9384
+// Module ID: 9361
+// Function ID: 9362
 // Name: GiftingBadgeInfoActionSheet
-// Dependencies: [19, 17, 4824, 8049, 1072, 21, 4823, 575, 1630, 504, 7982, 1256, 5051, 5414, 1113, 2819, 9384, 9386, 2]
+// Dependencies: [19, 17, 4793, 8018, 1072, 21, 4792, 575, 1630, 504, 7951, 1256, 5020, 5383, 1113, 2819, 9362, 9364, 2]
 // Exports: default
 
-// Module 9383 (GiftingBadgeInfoActionSheet)
+// Module 9361 (GiftingBadgeInfoActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
 import _modDef2819 from "module_2819" /* 2819 */;
-import Text_Text from "Text/Text" /* 5414 */;
-import BadgeDirectoryStore2 from "BadgeDirectoryStore" /* 8049 */;
-import GiftingBadgesUtils from "GiftingBadgesUtils" /* 9384 */;
-import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 9386 */;
+import Text_Text from "Text/Text" /* 5383 */;
+import BadgeDirectoryStore2 from "BadgeDirectoryStore" /* 8018 */;
+import GiftingBadgesUtils from "GiftingBadgesUtils" /* 9362 */;
+import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 9364 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4824 */;
+import AccessibilityStore from "AccessibilityStore" /* 4793 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -138,7 +138,7 @@ export default function GiftingBadgeInfoActionSheet() {
         const tmp13 = React4;
         if (tmp13Result) {
           const obj6 = { variant: "body-md/normal", color: "text-subtle", children: intl.formatToPlainString(_modDef2819.qvx9E4, obj7) };
-          const Text = tmp8(5414).Text;
+          const Text = tmp8(5383).Text;
           intl = tmp8(1113).intl;
           obj7 = { count: tmp4 };
           tmp13Result = tmp13(Text, obj6);

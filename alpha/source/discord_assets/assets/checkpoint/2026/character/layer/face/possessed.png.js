@@ -1,8 +1,8 @@
-// Module ID: 6152
-// Function ID: 6153
+// Module ID: 6123
+// Function ID: 6124
 // Dependencies: [2]
 
-// Module 6152
+// Module 6123
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/face/possessed.png.js");

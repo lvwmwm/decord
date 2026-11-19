@@ -1,10 +1,10 @@
-// Module ID: 8810
-// Function ID: 8811
+// Module ID: 8779
+// Function ID: 8780
 // Name: conjureProjectLink
 // Dependencies: [2]
 // Exports: conjureProjectLinkCode, conjureProjectLinkTicket, isConjureShareTicketExpired
 
-// Module 8810 (conjureProjectLink)
+// Module 8779 (conjureProjectLink)
 import size from "module_2" /* 2 */;
 
 function parseConjureProjectLink(uRL) {

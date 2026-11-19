@@ -1,20 +1,20 @@
-// Module ID: 13784
-// Function ID: 13785
+// Module ID: 13766
+// Function ID: 13767
 // Name: DetailedGuildIdentityUserRow
-// Dependencies: [19, 17, 1388, 21, 4823, 575, 5851, 4879, 10346, 1187, 504, 7620, 6956, 2]
+// Dependencies: [19, 17, 1388, 21, 4792, 575, 5822, 4848, 10324, 1187, 504, 7590, 6926, 2]
 
-// Module 13784 (DetailedGuildIdentityUserRow)
+// Module 13766 (DetailedGuildIdentityUserRow)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import UserUtilsDefault from "UserUtils" /* 4879 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5851 */;
-import DiscordTagDefault from "DiscordTag" /* 10346 */;
+import UserUtilsDefault from "UserUtils" /* 4848 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5822 */;
+import DiscordTagDefault from "DiscordTag" /* 10324 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -51,7 +51,7 @@ const memoResult = react.memo(function DetailedGuildIdentityUser(contentHeight) 
     let tmp8Result = null;
     const obj3 = { style: tmp.mainIdentity, children: items1 };
     if (hasAvatarForGuildResult) {
-      const obj4 = { size: native.AvatarSizes.SIZE_16, style: tmp.primaryAvatar, user, guildId: "Array" };
+      const obj4 = { size: native.AvatarSizes.SIZE_16, style: tmp.primaryAvatar, user, guildId: "a" };
       const Avatar = native.Avatar;
       tmp8Result = tmp8(Avatar, obj4);
     }
@@ -98,7 +98,7 @@ const memoResult1 = react.memo(function DetailedGuildIdentityUserRow(arrow) {
     let tmp4Result;
     if (deprecatedFormRow) {
       const obj2 = { accessibilityLabel, disabled, leading, label: closure_5(closure_8, obj4), onPress, subLabel, trailing, accessibilityRole, accessibilityState };
-      const FormRow = tmp(7620).FormRow;
+      const FormRow = tmp(7590).FormRow;
       if (leading == null) {
         const obj3 = { source: stateFromStores.getAvatarSource(guildId), size: native.AvatarSizes.SMALL };
         const Avatar2 = tmp(1187).Avatar;
@@ -109,7 +109,7 @@ const memoResult1 = react.memo(function DetailedGuildIdentityUserRow(arrow) {
     } else {
       const obj5 = { accessibilityLabel, arrow, disabled, end, icon: tmp4Result2, label: closure_5(closure_8, obj7), onPress, start, subLabel, trailing, accessibilityRole, accessibilityState };
       tmp4Result2 = leading;
-      const TableRow = tmp(6956).TableRow;
+      const TableRow = tmp(6926).TableRow;
       if (leading == null) {
         const obj6 = { source: stateFromStores.getAvatarSource(guildId), size: native.AvatarSizes.SMALL };
         const Avatar = tmp(1187).Avatar;

@@ -1,15 +1,15 @@
-// Module ID: 16769
-// Function ID: 16770
+// Module ID: 16762
+// Function ID: 16763
 // Name: SameAsDeviceThemeSetting
-// Dependencies: [1192, 8624, 504, 16471, 11897, 1113, 2]
+// Dependencies: [1192, 8593, 504, 16462, 11875, 1113, 2]
 
-// Module 16769 (SameAsDeviceThemeSetting)
+// Module 16762 (SameAsDeviceThemeSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
-import SettingsConstants from "SettingsConstants" /* 8624 */;
-import UserSettingsAppearanceThemeUtils from "UserSettingsAppearanceThemeUtils" /* 16471 */;
+import SettingsConstants from "SettingsConstants" /* 8593 */;
+import UserSettingsAppearanceThemeUtils from "UserSettingsAppearanceThemeUtils" /* 16462 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
-import SettingBuilders from "SettingBuilders" /* 11897 */;
+import SettingBuilders from "SettingBuilders" /* 11875 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

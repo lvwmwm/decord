@@ -1,19 +1,19 @@
-// Module ID: 10757
-// Function ID: 10758
+// Module ID: 10735
+// Function ID: 10736
 // Name: PostMessageTransport
-// Dependencies: [5, 32, 4671, 6531, 6261, 1072, 6532, 1089, 10758, 568, 1108, 1256, 4744, 6818, 6533, 10759, 6856, 6534, 6814, 2121, 10761, 10762, 2]
+// Dependencies: [5, 32, 4640, 6502, 6233, 1072, 6503, 1089, 10736, 568, 1108, 1256, 4713, 6790, 6504, 10737, 6826, 6505, 6786, 2121, 10739, 10740, 2]
 
-// Module 10757 (PostMessageTransport)
+// Module 10735 (PostMessageTransport)
 import _mod568 from "module_568" /* 568 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import Constants2 from "Constants" /* 6261 */;
-import FramesConstants from "FramesConstants" /* 6532 */;
-import RPCErrorDefault from "RPCError" /* 6818 */;
-import RPCOpcodesDefault from "RPCOpcodes" /* 10758 */;
+import Constants2 from "Constants" /* 6233 */;
+import FramesConstants from "FramesConstants" /* 6503 */;
+import RPCErrorDefault from "RPCError" /* 6790 */;
+import RPCOpcodesDefault from "RPCOpcodes" /* 10736 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4671 */;
-import FramesStore from "FramesStore" /* 6531 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4640 */;
+import FramesStore from "FramesStore" /* 6502 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -172,7 +172,7 @@ class PostMessageTransport extends EventEmitter {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } else {
           let c7;
@@ -323,7 +323,7 @@ class PostMessageTransport extends EventEmitter {
               logger2.info("Socket Validated: " + user.id);
               c7 = 0;
               c9 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             } else {
               const logger = closure_133_1.logger;
               const _HermesInternal = HermesInternal;
@@ -371,7 +371,7 @@ class PostMessageTransport extends EventEmitter {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         let c5;
@@ -418,7 +418,7 @@ class PostMessageTransport extends EventEmitter {
               c5 = 0;
               closure_131_1.disconnectSocket(closure_0, closure_1);
               c7 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             }
           } else {
             c5 = 0;
@@ -582,7 +582,7 @@ class PostMessageTransport extends EventEmitter {
                                     const obj2 = { value, done: true };
                                     return obj2;
                                   } else {
-                                    return { value: "HermesInternal", done: null };
+                                    return { value: "HermesInternal", done: "+60" };
                                   }
                                 } else {
                                   let c3;
@@ -647,7 +647,7 @@ class PostMessageTransport extends EventEmitter {
                                           const pendingTicketRefreshes2 = tmp56.pendingTicketRefreshes;
                                           pendingTicketRefreshes2.delete(ticket.iframeId);
                                           c5 = 3;
-                                          return { value: "HermesInternal", done: null };
+                                          return { value: "HermesInternal", done: "+60" };
                                         }
                                       } else if (arg0 === 1) {
                                         c5 = 3;
@@ -674,7 +674,7 @@ class PostMessageTransport extends EventEmitter {
                                       const pendingTicketRefreshes4 = tmp56.pendingTicketRefreshes;
                                       pendingTicketRefreshes4.delete(ticket.iframeId);
                                       c5 = 3;
-                                      return { value: "HermesInternal", done: null };
+                                      return { value: "HermesInternal", done: "+60" };
                                     }
                                   } catch (tmp56) {
                                     if (0 === c3) {

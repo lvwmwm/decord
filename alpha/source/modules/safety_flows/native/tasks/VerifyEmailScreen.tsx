@@ -1,10 +1,10 @@
-// Module ID: 20191
-// Function ID: 20192
+// Module ID: 20202
+// Function ID: 20203
 // Name: VerifyEmailScreen
-// Dependencies: [5, 32, 19, 21, 20186, 20187, 20181, 5505, 1113, 3019, 20190, 5837, 575, 5414, 7132, 20192, 2]
+// Dependencies: [5, 32, 19, 21, 20197, 20198, 20192, 5474, 1113, 3019, 20201, 5808, 575, 5383, 7102, 20203, 2]
 // Exports: default
 
-// Module 20191 (VerifyEmailScreen)
+// Module 20202 (VerifyEmailScreen)
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -65,7 +65,7 @@ export default function _default() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c3;
@@ -116,7 +116,7 @@ export default function _default() {
           c3 = 0;
         }
         c4 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       } catch (tmp28) {
         first = tmp28;
         if (0 === c3) {

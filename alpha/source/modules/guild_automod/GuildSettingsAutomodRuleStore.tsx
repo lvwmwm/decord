@@ -1,13 +1,13 @@
-// Module ID: 19775
-// Function ID: 19776
+// Module ID: 19772
+// Function ID: 19773
 // Name: GuildSettingsAutomodRuleStore
-// Dependencies: [5, 1072, 1113, 1258, 12, 1255, 1263, 19776, 19781, 19777, 8588, 19774, 12331, 6257, 4738, 2]
+// Dependencies: [5, 1072, 1113, 1258, 12, 1255, 1263, 19773, 19778, 19774, 8557, 19771, 12314, 6228, 4707, 2]
 // Exports: useAutomodEditingRuleActions, useAutomodEditingRuleState
 
-// Module 19775 (GuildSettingsAutomodRuleStore)
+// Module 19772 (GuildSettingsAutomodRuleStore)
 import Constants from "Constants" /* 1072 */;
 import react_native from "react-native" /* 1263 */;
-import _slicedToArray from "_slicedToArray" /* 4738 */;
+import _slicedToArray from "_slicedToArray" /* 4707 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_1258 from "module_1258" /* 1258 */;
 import size from "module_2" /* 2 */;
@@ -91,7 +91,7 @@ let closure_6 = module_1258.createWithEqualityFn((arg0, arg1) => {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c8;

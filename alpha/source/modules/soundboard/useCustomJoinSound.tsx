@@ -1,11 +1,11 @@
-// Module ID: 10950
-// Function ID: 10951
+// Module ID: 10928
+// Function ID: 10929
 // Name: useCustomJoinSound
-// Dependencies: [1231, 5871, 504, 2]
+// Dependencies: [1231, 5842, 504, 2]
 // Exports: getCustomJoinSound, useCustomJoinSound
 
-// Module 10950 (useCustomJoinSound)
-import SoundboardConstants from "SoundboardConstants" /* 5871 */;
+// Module 10928 (useCustomJoinSound)
+import SoundboardConstants from "SoundboardConstants" /* 5842 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import size from "module_2" /* 2 */;
 

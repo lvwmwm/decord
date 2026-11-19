@@ -1,18 +1,18 @@
-// Module ID: 15665
-// Function ID: 15666
+// Module ID: 15652
+// Function ID: 15653
 // Name: commands/activities
-// Dependencies: [5, 6261, 1072, 6404, 15607, 6822, 15626, 6818, 7962, 6812, 6534, 6854, 8387, 7706, 10631, 6258, 2]
+// Dependencies: [5, 6233, 1072, 6375, 15593, 6794, 15612, 6790, 7932, 6784, 6505, 6824, 8356, 7676, 10609, 6229, 2]
 
-// Module 15665 (commands/activities)
-import NativePermissionConstants from "NativePermissionConstants" /* 6404 */;
-import RPCErrorDefault from "RPCError" /* 6818 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 6822 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 7962 */;
-import validateOpenInviteDialog from "validateOpenInviteDialog" /* 15626 */;
+// Module 15652 (commands/activities)
+import NativePermissionConstants from "NativePermissionConstants" /* 6375 */;
+import RPCErrorDefault from "RPCError" /* 6790 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 6794 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 7932 */;
+import validateOpenInviteDialog from "validateOpenInviteDialog" /* 15612 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants_mod from "Constants" /* 6261 */;
+import Constants_mod from "Constants" /* 6233 */;
 import Constants_mod2 from "Constants" /* 1072 */;
-import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 15607 */;
+import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 15593 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, c4;
@@ -49,7 +49,7 @@ let obj2 = {
     } else {
       const obj3 = { source: constants.ACTIVITY_INVITE, targetApplicationId: id };
       id = socket.application.id;
-      const showInstantInviteActionSheet = tmp(7962).showInstantInviteActionSheet;
+      const showInstantInviteActionSheet = tmp(7932).showInstantInviteActionSheet;
       instant_invite_InstantInviteUtils;
       const result1 = showInstantInviteActionSheet(tmp4, obj3);
     }
@@ -84,7 +84,7 @@ let obj4 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {

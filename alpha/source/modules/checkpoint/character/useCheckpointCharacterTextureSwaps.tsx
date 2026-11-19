@@ -1,16 +1,16 @@
-// Module ID: 12642
-// Function ID: 12643
+// Module ID: 12625
+// Function ID: 12626
 // Name: useCheckpointCharacterTextureSwaps
 // Dependencies: [32, 5, 19, 2]
 // Exports: useCheckpointCharacterTextureSwaps
 
-// Module 12642 (useCheckpointCharacterTextureSwaps)
+// Module 12625 (useCheckpointCharacterTextureSwaps)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-let c4, map, map1, map2, set;
+let c4, map, map1, set;
 
 let obj = function _swapTextures() {
   obj = _asyncToGenerator(async function(arg0, value) {
@@ -68,7 +68,7 @@ let obj = function _swapTextures() {
                           const obj2 = { value, done: true };
                           return obj2;
                         } else {
-                          return { value: "HermesInternal", done: null };
+                          return { value: "HermesInternal", done: "+60" };
                         }
                       } else {
                         try {
@@ -102,7 +102,7 @@ let obj = function _swapTextures() {
                               const result = closure_1_5.set(closure_0, closure_1);
                             }
                             c4 = 3;
-                            return { value: "HermesInternal", done: null };
+                            return { value: "HermesInternal", done: "+60" };
                           }
                         } catch (tmp16) {
                           c4 = 3;
@@ -132,7 +132,7 @@ let obj = function _swapTextures() {
         const _Map = Map;
         const self = this;
         const self2 = this;
-        map2 = new Map();
+        const map2 = new Map();
         const item1 = map.forEach((item, index) => {
           const value = closure_1_5.get(item);
           if (null != value) {
@@ -210,7 +210,7 @@ export function useCheckpointCharacterTextureSwaps(textureManager) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } else {
           try {
@@ -251,7 +251,7 @@ export function useCheckpointCharacterTextureSwaps(textureManager) {
                 closure_2_4(referencedAssets);
               }
               c2 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             }
           } catch (tmp12) {
             c2 = 3;

@@ -1,10 +1,10 @@
-// Module ID: 15746
-// Function ID: 15747
+// Module ID: 15734
+// Function ID: 15735
 // Name: SafeAreaProvider
 // Dependencies: [19, 17, 21, 1627, 1632, 1380, 1631, 1642, 1263, 1633, 1499, 2]
 // Exports: SafeAreaProvider, SafeAreaReporter
 
-// Module 15746 (SafeAreaProvider)
+// Module 15734 (SafeAreaProvider)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react_native2 from "react-native" /* 1263 */;

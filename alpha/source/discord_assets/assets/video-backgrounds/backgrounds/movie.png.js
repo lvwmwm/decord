@@ -1,8 +1,8 @@
-// Module ID: 5739
-// Function ID: 5740
+// Module ID: 5708
+// Function ID: 5709
 // Dependencies: [2]
 
-// Module 5739
+// Module 5708
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/video-backgrounds/backgrounds/movie.png.js");

@@ -1,21 +1,21 @@
-// Module ID: 10939
-// Function ID: 10940
+// Module ID: 10917
+// Function ID: 10918
 // Name: UserSettingsVoiceOutputOptions
-// Dependencies: [19, 17, 6308, 502, 2133, 5568, 21, 4823, 504, 38, 5719, 10922, 1113, 6956, 10940, 2]
+// Dependencies: [19, 17, 6279, 502, 2133, 5537, 21, 4792, 504, 38, 5688, 10900, 1113, 6926, 10918, 2]
 // Exports: default
 
-// Module 10939 (UserSettingsVoiceOutputOptions)
+// Module 10917 (UserSettingsVoiceOutputOptions)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
-import Constants from "Constants" /* 5568 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 5719 */;
-import VolumeSliderDefault from "VolumeSlider" /* 10940 */;
+import Constants from "Constants" /* 5537 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5688 */;
+import VolumeSliderDefault from "VolumeSlider" /* 10918 */;
 import react from "react" /* 19 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6308 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6279 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let lastActiveStream;
@@ -78,10 +78,10 @@ export default function UserSettingsVoiceOutputOptions() {
     obj.setLocalVolume(stateFromStores1.ownerId, arg0, MediaEngineContextTypes.STREAM);
   }, items3);
   const obj4 = { title: intl.string(stateFromStores1(1113).t.UXxPGB), hasIcons: false, children: items4 };
-  const UserSettingsTableRowGroup = stateFromStores1(10922).UserSettingsTableRowGroup;
+  const UserSettingsTableRowGroup = stateFromStores1(10900).UserSettingsTableRowGroup;
   intl = stateFromStores1(1113).intl;
   const obj5 = { label: intl2.string(stateFromStores1(1113).t.xPHVBs), subLabel: closure_9(View, obj6) };
-  const TableRow = stateFromStores1(6956).TableRow;
+  const TableRow = stateFromStores1(6926).TableRow;
   intl2 = stateFromStores1(1113).intl;
   obj6 = { style: tmp.slider, children: closure_9(tmp12, obj7) };
   obj7 = {
@@ -101,7 +101,7 @@ export default function UserSettingsVoiceOutputOptions() {
   const tmp8 = closure_10;
   if (tmp9Result) {
     const obj8 = { label: intl4.string(tmp2(1113).t.pEAl4b), subLabel: closure_9(tmp10, obj9) };
-    const TableRow2 = tmp2(6956).TableRow;
+    const TableRow2 = tmp2(6926).TableRow;
     intl4 = tmp2(1113).intl;
     obj9 = { style: tmp.slider, children: closure_9(tmp11Result, obj10) };
     obj10 = { value: stateFromStores2, onValueChange: callback, accessibilityLabel: intl5.string(tmp2(1113).t.pEAl4b) };

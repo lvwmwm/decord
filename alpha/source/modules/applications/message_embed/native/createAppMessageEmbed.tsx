@@ -1,35 +1,35 @@
-// Module ID: 12729
-// Function ID: 12730
+// Module ID: 12711
+// Function ID: 12712
 // Name: createAppMessageEmbed
-// Dependencies: [32, 1388, 6829, 2165, 1501, 10373, 6567, 12730, 8592, 1113, 12731, 10634, 6828, 10633, 12732, 12733, 1414, 1381, 8305, 12149, 7450, 5475, 5008, 1628, 10655, 7456, 5504, 1255, 2]
+// Dependencies: [32, 1388, 6799, 2165, 1501, 10351, 6538, 12712, 8561, 1113, 12713, 10612, 6798, 10611, 12714, 12715, 1414, 1381, 8274, 12128, 7420, 5444, 4977, 1628, 10633, 7426, 5473, 1255, 2]
 // Exports: createAppMessageEmbed, getAppLinkGateResult, handleTapAppMessageEmbed
 
-// Module 12729 (createAppMessageEmbed)
+// Module 12711 (createAppMessageEmbed)
 import intl7 from "intl" /* 1113 */;
 import GlobalUtils from "GlobalUtils" /* 1255 */;
 import URLUtilsDefault from "URLUtils" /* 1381 */;
 import AvatarUtils from "AvatarUtils" /* 1414 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
 import KeyboardTypes from "KeyboardTypes" /* 1628 */;
-import ChatInputUtils from "ChatInputUtils" /* 5008 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5475 */;
-import ToastUtils from "ToastUtils" /* 5504 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6567 */;
-import ApplicationAssetUtils from "ApplicationAssetUtils" /* 6828 */;
-import ApplicationAssetsStore2 from "ApplicationAssetsStore" /* 6829 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7450 */;
-import ClipboardUtils from "ClipboardUtils" /* 7456 */;
-import activityBookmarkUtils from "activityBookmarkUtils" /* 8305 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8592 */;
-import CodedLinksConstants from "CodedLinksConstants" /* 10373 */;
-import getFrameSurfaces from "getFrameSurfaces" /* 10633 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 10634 */;
-import ApplicationUtils from "ApplicationUtils" /* 10655 */;
-import GamesActionCreatorsDefault from "GamesActionCreators" /* 12149 */;
-import ContentClassificationVisibility from "ContentClassificationVisibility" /* 12730 */;
-import CodedLinksTypes from "CodedLinksTypes" /* 12731 */;
-import getPlayInContext from "getPlayInContext" /* 12732 */;
-import nativeAppMessageEmbedUtil from "nativeAppMessageEmbedUtil" /* 12733 */;
+import ChatInputUtils from "ChatInputUtils" /* 4977 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5444 */;
+import ToastUtils from "ToastUtils" /* 5473 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6538 */;
+import ApplicationAssetUtils from "ApplicationAssetUtils" /* 6798 */;
+import ApplicationAssetsStore2 from "ApplicationAssetsStore" /* 6799 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7420 */;
+import ClipboardUtils from "ClipboardUtils" /* 7426 */;
+import activityBookmarkUtils from "activityBookmarkUtils" /* 8274 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8561 */;
+import CodedLinksConstants from "CodedLinksConstants" /* 10351 */;
+import getFrameSurfaces from "getFrameSurfaces" /* 10611 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 10612 */;
+import ApplicationUtils from "ApplicationUtils" /* 10633 */;
+import GamesActionCreatorsDefault from "GamesActionCreators" /* 12128 */;
+import ContentClassificationVisibility from "ContentClassificationVisibility" /* 12712 */;
+import CodedLinksTypes from "CodedLinksTypes" /* 12713 */;
+import getPlayInContext from "getPlayInContext" /* 12714 */;
+import nativeAppMessageEmbedUtil from "nativeAppMessageEmbedUtil" /* 12715 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import UserStore from "UserStore" /* 1388 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;

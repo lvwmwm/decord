@@ -1,37 +1,37 @@
-// Module ID: 17174
-// Function ID: 17175
+// Module ID: 17167
+// Function ID: 17168
 // Name: DevToolsRevenuePlaygroundScreen
-// Dependencies: [5, 32, 19, 17, 8749, 8055, 1231, 4672, 4726, 1388, 5417, 1390, 21, 572, 563, 1285, 5505, 6956, 6969, 7259, 7462, 8162, 1187, 575, 9380, 4823, 8730, 5037, 17175, 2121, 7467, 17182, 9191, 12179, 6337, 17183, 17186, 17191, 17193, 17196, 2]
+// Dependencies: [5, 32, 19, 17, 8718, 8024, 1231, 4641, 4695, 1388, 5386, 1390, 21, 572, 563, 1285, 5474, 6926, 6939, 7229, 7432, 8131, 1187, 575, 9358, 4792, 8699, 5006, 17168, 2121, 7437, 17175, 9167, 12158, 6308, 17176, 17179, 17184, 17186, 17189, 2]
 // Exports: default
 
-// Module 17174 (DevToolsRevenuePlaygroundScreen)
+// Module 17167 (DevToolsRevenuePlaygroundScreen)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
-import DevSettingsStore2 from "DevSettingsStore" /* 5417 */;
-import TableRow6 from "TableRow" /* 6956 */;
-import TableRowArrow from "TableRowArrow" /* 6969 */;
-import TableRowGroup4 from "TableRowGroup" /* 7259 */;
-import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7462 */;
-import TableSwitchRow2 from "TableSwitchRow" /* 7467 */;
-import IAPUtils from "IAPUtils" /* 9191 */;
-import BundleUpdaterDefault from "BundleUpdater" /* 12179 */;
-import DevSettingsActions from "DevSettingsActions" /* 17182 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
+import DevSettingsStore2 from "DevSettingsStore" /* 5386 */;
+import TableRow6 from "TableRow" /* 6926 */;
+import TableRowArrow from "TableRowArrow" /* 6939 */;
+import TableRowGroup4 from "TableRowGroup" /* 7229 */;
+import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7432 */;
+import TableSwitchRow2 from "TableSwitchRow" /* 7437 */;
+import IAPUtils from "IAPUtils" /* 9167 */;
+import BundleUpdaterDefault from "BundleUpdater" /* 12158 */;
+import DevSettingsActions from "DevSettingsActions" /* 17175 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 8749 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 8055 */;
+import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 8718 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 8024 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import ChannelStore from "ChannelStore" /* 4672 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4726 */;
+import ChannelStore from "ChannelStore" /* 4641 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4695 */;
 import UserStore from "UserStore" /* 1388 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const DevSettingsStore = DevSettingsStore2;
@@ -244,7 +244,7 @@ function FriendAnniversary() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c4;
@@ -315,7 +315,7 @@ function FriendAnniversary() {
           c4 = 0;
           closure_130_7(false);
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp49) {
         closure_3 = tmp49;
@@ -351,7 +351,7 @@ function FriendAnniversary() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -418,7 +418,7 @@ function FriendAnniversary() {
             c5 = 0;
             closure_1_8(false);
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp40) {
           closure_4 = tmp40;
@@ -687,10 +687,10 @@ function TrialOfferSheetExample() {
   }
   const tmp = premiumTrialOffer;
   const tmp2 = dependencyMap;
-  let obj = premiumTrialOffer(8730);
+  let obj = premiumTrialOffer(8699);
   premiumTrialOffer = obj.usePremiumTrialOffer();
-  const TableRowGroup = premiumTrialOffer(7259).TableRowGroup;
-  const TableRow = premiumTrialOffer(6956).TableRow;
+  const TableRowGroup = premiumTrialOffer(7229).TableRowGroup;
+  const TableRow = premiumTrialOffer(6926).TableRow;
   let obj2 = {
     label: "Trial Offer Nitro Basic",
     subLabel: str2,
@@ -699,12 +699,12 @@ function TrialOfferSheetExample() {
       if (null != premiumTrialOffer) {
         const obj2 = { fallbackPremiumType: tmp, userTrialOffer: tmp2, markAsDismissed };
         const obj = ActionSheetActionCreatorsDefault;
-        obj.openLazy(asyncRequire(17175, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
+        obj.openLazy(asyncRequire(17168, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
       }
     }
   };
   items = [closure_17(TableRow, obj2), ];
-  const TableRow2 = tmp(6956).TableRow;
+  const TableRow2 = tmp(6926).TableRow;
   const obj3 = { title: "Trial Offers", hasIcons: false, children: items };
   const obj4 = {
     label: "Trial Offer Nitro",
@@ -714,7 +714,7 @@ function TrialOfferSheetExample() {
       if (null != premiumTrialOffer) {
         const obj2 = { fallbackPremiumType: tmp, userTrialOffer: tmp2, markAsDismissed };
         const obj = ActionSheetActionCreatorsDefault;
-        obj.openLazy(asyncRequire(17175, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
+        obj.openLazy(asyncRequire(17168, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
       }
     }
   };
@@ -752,7 +752,7 @@ function PremiumToggles() {
     })
   };
   const TableRowGroup = TableRowGroup4.TableRowGroup;
-  return closure_17(TableRowGroup, obj2);
+  return authStore4(TableRowGroup, obj2);
 }
 function ForceMockIAP() {
   let tmp4;
@@ -781,14 +781,14 @@ function ForceMockIAP() {
     }
   };
   tmp4 = result || stateFromStores;
-  const obj4 = { title: "iOS IAP Mock", hasIcons: false, children: closure_17(TableSwitchRow, obj3) };
-  return closure_17(TableRowGroup, obj4);
+  const obj4 = { title: "iOS IAP Mock", hasIcons: false, children: authStore4(TableSwitchRow, obj3) };
+  return authStore4(TableRowGroup, obj4);
 }
 function PaymentFlowTest() {
   let TableRow;
   let obj2;
   let paths;
-  let obj = { title: "Payment Flow Test", hasIcons: false, children: closure_17(TableRow, obj2) };
+  let obj = { title: "Payment Flow Test", hasIcons: false, children: authStore4(TableRow, obj2) };
   const TableRowGroup = TableRowGroup4.TableRowGroup;
   obj2 = {
     label: "Test Payment Flow",
@@ -796,16 +796,16 @@ function PaymentFlowTest() {
       const obj = require("ModalActionCreators");
       obj.pushLazy(require("asyncRequire")(paths[35], paths.paths));
     },
-    trailing: closure_17(TableRowArrow.TableRowArrow, {})
+    trailing: authStore4(TableRowArrow.TableRowArrow, {})
   };
   TableRow = TableRow6.TableRow;
-  return closure_17(TableRowGroup, obj);
+  return authStore4(TableRowGroup, obj);
 }
 function Orbs() {
   let TableRow;
   let obj2;
   let paths;
-  let obj = { title: "Orbs", hasIcons: false, children: closure_17(TableRow, obj2) };
+  let obj = { title: "Orbs", hasIcons: false, children: authStore4(TableRow, obj2) };
   const TableRowGroup = TableRowGroup4.TableRowGroup;
   obj2 = {
     label: "Test Orbs Flow",
@@ -813,16 +813,16 @@ function Orbs() {
       const obj = require("ModalActionCreators");
       obj.pushLazy(require("asyncRequire")(paths[36], paths.paths));
     },
-    trailing: closure_17(TableRowArrow.TableRowArrow, {})
+    trailing: authStore4(TableRowArrow.TableRowArrow, {})
   };
   TableRow = TableRow6.TableRow;
-  return closure_17(TableRowGroup, obj);
+  return authStore4(TableRowGroup, obj);
 }
 function RevenueSmokeTests() {
   let TableRow;
   let obj2;
   let paths;
-  let obj = { title: "Revenue Smoke Tests", hasIcons: false, children: closure_17(TableRow, obj2) };
+  let obj = { title: "Revenue Smoke Tests", hasIcons: false, children: authStore4(TableRow, obj2) };
   const TableRowGroup = TableRowGroup4.TableRowGroup;
   obj2 = {
     label: "Test all purchasing flows",
@@ -830,16 +830,16 @@ function RevenueSmokeTests() {
       const obj = require("ModalActionCreators");
       obj.pushLazy(require("asyncRequire")(paths[37], paths.paths));
     },
-    trailing: closure_17(TableRowArrow.TableRowArrow, {})
+    trailing: authStore4(TableRowArrow.TableRowArrow, {})
   };
   TableRow = TableRow6.TableRow;
-  return closure_17(TableRowGroup, obj);
+  return authStore4(TableRowGroup, obj);
 }
 function GuildPowerups() {
   let TableRow;
   let obj2;
   let paths;
-  let obj = { title: "Guild Powerups", hasIcons: false, children: closure_17(TableRow, obj2) };
+  let obj = { title: "Guild Powerups", hasIcons: false, children: authStore4(TableRow, obj2) };
   const TableRowGroup = TableRowGroup4.TableRowGroup;
   obj2 = {
     label: "Guild Powerups",
@@ -847,16 +847,16 @@ function GuildPowerups() {
       const obj = require("ModalActionCreators");
       obj.pushLazy(require("asyncRequire")(paths[38], paths.paths));
     },
-    trailing: closure_17(TableRowArrow.TableRowArrow, {})
+    trailing: authStore4(TableRowArrow.TableRowArrow, {})
   };
   TableRow = TableRow6.TableRow;
-  return closure_17(TableRowGroup, obj);
+  return authStore4(TableRowGroup, obj);
 }
 function GuildTagBadges() {
   let TableRow;
   let obj2;
   let paths;
-  let obj = { title: "Guild Tag Badges", hasIcons: false, children: closure_17(TableRow, obj2) };
+  let obj = { title: "Guild Tag Badges", hasIcons: false, children: authStore4(TableRow, obj2) };
   const TableRowGroup = TableRowGroup4.TableRowGroup;
   obj2 = {
     label: "Badge gallery",
@@ -865,10 +865,10 @@ function GuildTagBadges() {
       const obj = require("ModalActionCreators");
       obj.pushLazy(require("asyncRequire")(paths[39], paths.paths));
     },
-    trailing: closure_17(TableRowArrow.TableRowArrow, {})
+    trailing: authStore4(TableRowArrow.TableRowArrow, {})
   };
   TableRow = TableRow6.TableRow;
-  return closure_17(TableRowGroup, obj);
+  return authStore4(TableRowGroup, obj);
 }
 const ScrollView = react_native.ScrollView;
 let DevSettingsCategory = DevSettingsStore2.DevSettingsCategory;
@@ -888,38 +888,38 @@ let result = size.fileFinishedImporting("modules/devtools/native/components/scre
 export default function DevToolsRevenuePlaygroundScreen() {
   const tmp = closure_25();
   const obj = { style: tmp.container, contentContainerStyle: tmp.scrollContainer, children: items };
-  items = [closure_17(TrialOfferSheetExample, {}), , , , , , , , , , , , , , , , ];
+  items = [authStore4(TrialOfferSheetExample, {}), , , , , , , , , , , , , , , , ];
   const obj2 = { size: nativeDefault.space.PX_16 };
   const Spacer = native.Spacer;
-  items[1] = closure_17(Spacer, obj2);
-  items[2] = closure_17(PremiumToggles, {});
+  items[1] = authStore4(Spacer, obj2);
+  items[2] = authStore4(PremiumToggles, {});
   const obj3 = { size: nativeDefault.space.PX_16 };
   const Spacer2 = native.Spacer;
-  items[3] = closure_17(Spacer2, obj3);
-  items[4] = closure_17(ForceMockIAP, {});
+  items[3] = authStore4(Spacer2, obj3);
+  items[4] = authStore4(ForceMockIAP, {});
   const obj4 = { size: nativeDefault.space.PX_16 };
   const Spacer3 = native.Spacer;
-  items[5] = closure_17(Spacer3, obj4);
-  items[6] = closure_17(PaymentFlowTest, {});
+  items[5] = authStore4(Spacer3, obj4);
+  items[6] = authStore4(PaymentFlowTest, {});
   const obj5 = { size: nativeDefault.space.PX_16 };
   const Spacer4 = native.Spacer;
-  items[7] = closure_17(Spacer4, obj5);
-  items[8] = closure_17(Orbs, {});
+  items[7] = authStore4(Spacer4, obj5);
+  items[8] = authStore4(Orbs, {});
   const obj6 = { size: nativeDefault.space.PX_16 };
   const Spacer5 = native.Spacer;
-  items[9] = closure_17(Spacer5, obj6);
-  items[10] = closure_17(RevenueSmokeTests, {});
+  items[9] = authStore4(Spacer5, obj6);
+  items[10] = authStore4(RevenueSmokeTests, {});
   const obj7 = { size: nativeDefault.space.PX_16 };
   const Spacer6 = native.Spacer;
-  items[11] = closure_17(Spacer6, obj7);
-  items[12] = closure_17(GuildPowerups, {});
+  items[11] = authStore4(Spacer6, obj7);
+  items[12] = authStore4(GuildPowerups, {});
   const obj8 = { size: nativeDefault.space.PX_16 };
   const Spacer7 = native.Spacer;
-  items[13] = closure_17(Spacer7, obj8);
-  items[14] = closure_17(GuildTagBadges, {});
+  items[13] = authStore4(Spacer7, obj8);
+  items[14] = authStore4(GuildTagBadges, {});
   const obj9 = { size: nativeDefault.space.PX_16 };
   const Spacer8 = native.Spacer;
-  items[15] = closure_17(Spacer8, obj9);
-  items[16] = closure_17(FriendAnniversary, {});
-  return authStore4(ScrollView, obj);
+  items[15] = authStore4(Spacer8, obj9);
+  items[16] = authStore4(FriendAnniversary, {});
+  return closure_18(ScrollView, obj);
 };

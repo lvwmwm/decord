@@ -1,10 +1,10 @@
-// Module ID: 19660
-// Function ID: 19661
+// Module ID: 19656
+// Function ID: 19657
 // Name: SafetyFlowsExperiment
 // Dependencies: [1453, 2]
 // Exports: isEligibleForSafetyFlowsExperiment, useIsEligibleForSafetyFlowsExperiment
 
-// Module 19660 (SafetyFlowsExperiment)
+// Module 19656 (SafetyFlowsExperiment)
 import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1453 */;
 import size from "module_2" /* 2 */;
 

@@ -1,21 +1,21 @@
-// Module ID: 13627
-// Function ID: 13628
+// Module ID: 13609
+// Function ID: 13610
 // Name: ChannelPrompt
-// Dependencies: [5, 32, 19, 17, 4753, 4694, 21, 4823, 5377, 504, 1502, 7006, 1113, 7648, 6257, 6928, 7233, 1414, 5414, 7130, 5421, 7162, 2]
+// Dependencies: [5, 32, 19, 17, 4722, 4663, 21, 4792, 5346, 504, 1502, 6976, 1113, 7618, 6228, 6898, 7203, 1414, 5383, 7100, 5390, 7132, 2]
 // Exports: default
 
-// Module 13627 (ChannelPrompt)
+// Module 13609 (ChannelPrompt)
 import intl5 from "intl" /* 1113 */;
-import NavigatorConstants from "NavigatorConstants" /* 5377 */;
-import NavigatorHeader from "NavigatorHeader" /* 7006 */;
+import NavigatorConstants from "NavigatorConstants" /* 5346 */;
+import NavigatorHeader from "NavigatorHeader" /* 6976 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildChannelStore from "GuildChannelStore" /* 4753 */;
-import GuildStore from "GuildStore" /* 4694 */;
+import GuildChannelStore from "GuildChannelStore" /* 4722 */;
+import GuildStore from "GuildStore" /* 4663 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, navigation;
@@ -114,7 +114,7 @@ export default function ChannelPrompt(guildId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c3;
@@ -170,7 +170,7 @@ export default function ChannelPrompt(guildId) {
           }
           closure_129_6(false);
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp28) {
         hasSkip = tmp28;

@@ -1,21 +1,21 @@
-// Module ID: 11312
-// Function ID: 11313
+// Module ID: 11290
+// Function ID: 11291
 // Name: GIFPicker
-// Dependencies: [32, 19, 17, 10055, 1072, 21, 4823, 10054, 1256, 7284, 7508, 11313, 12, 11314, 504, 10830, 11315, 11316, 11319, 11320, 11323, 2]
+// Dependencies: [32, 19, 17, 10033, 1072, 21, 4792, 10032, 1256, 7254, 7478, 11291, 12, 11292, 504, 10808, 11293, 11294, 11297, 11298, 11301, 2]
 
-// Module 11312 (GIFPicker)
+// Module 11290 (GIFPicker)
 import react_native from "react-native" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import GIFPickerActionCreatorsAll from "GIFPickerActionCreators" /* 10054 */;
-import gif_picker_GIFPickerUtils from "gif_picker/GIFPickerUtils" /* 11313 */;
-import GifPickerUtils from "GifPickerUtils" /* 11314 */;
-import GIFPickerSearchSuggestionsDefault from "GIFPickerSearchSuggestions" /* 11315 */;
+import GIFPickerActionCreatorsAll from "GIFPickerActionCreators" /* 10032 */;
+import gif_picker_GIFPickerUtils from "gif_picker/GIFPickerUtils" /* 11291 */;
+import GifPickerUtils from "GifPickerUtils" /* 11292 */;
+import GIFPickerSearchSuggestionsDefault from "GIFPickerSearchSuggestions" /* 11293 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GIFPickerViewStore from "GIFPickerViewStore" /* 10055 */;
+import GIFPickerViewStore from "GIFPickerViewStore" /* 10033 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let constants3;

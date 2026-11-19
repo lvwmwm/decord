@@ -1,16 +1,16 @@
-// Module ID: 6266
-// Function ID: 6267
+// Module ID: 6238
+// Function ID: 6239
 // Name: StoreUtils
-// Dependencies: [5, 502, 2175, 2176, 2179, 1072, 5756, 5672, 1449, 6267, 5572, 1285, 1380, 1113, 2]
+// Dependencies: [5, 502, 2175, 2176, 2179, 1072, 5727, 5641, 1449, 6239, 5541, 1285, 1380, 1113, 2]
 // Exports: getAssetURL, getPrimarySKUForApplication, httpGetWithCountryCodeQuery, nativePlatformTypeToSKUOperatingSystem, skuOperatingSystemToText
 
-// Module 6266 (StoreUtils)
+// Module 6238 (StoreUtils)
 import intl4 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1449 */;
-import BrowserUtils from "BrowserUtils" /* 5672 */;
-import shared_PlatformUtils from "shared/PlatformUtils" /* 5756 */;
-import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6267 */;
+import BrowserUtils from "BrowserUtils" /* 5641 */;
+import shared_PlatformUtils from "shared/PlatformUtils" /* 5727 */;
+import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6239 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import BillingInfoStore from "BillingInfoStore" /* 2175 */;
@@ -37,7 +37,7 @@ let obj = function _waitForSubscriptionsToBeFetched() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -88,7 +88,7 @@ let obj = function _waitForSubscriptionsToBeFetched() {
           return obj;
         }
         c2 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       } catch (tmp13) {
         c2 = 3;
         throw tmp13;
@@ -134,7 +134,7 @@ obj = function _httpGetWithCountryCodeQuery() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {

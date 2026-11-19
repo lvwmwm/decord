@@ -1,17 +1,17 @@
-// Module ID: 16134
-// Function ID: 16135
+// Module ID: 16125
+// Function ID: 16126
 // Name: SpendingLimitDisplay
-// Dependencies: [1231, 8247, 1390, 504, 16043, 6766, 6767, 1113, 2723, 2]
+// Dependencies: [1231, 8216, 1390, 504, 16034, 6737, 6738, 1113, 2723, 2]
 // Exports: useSpendingLimitDisplayState, useSpendingLimitFromUserSettings
 
-// Module 16134 (SpendingLimitDisplay)
+// Module 16125 (SpendingLimitDisplay)
 import get_initialized from "get initialized" /* 504 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
 import _modDef2723 from "module_2723" /* 2723 */;
-import PriceUtils from "PriceUtils" /* 6766 */;
-import SpendingLimitUtils from "SpendingLimitUtils" /* 16043 */;
+import PriceUtils from "PriceUtils" /* 6737 */;
+import SpendingLimitUtils from "SpendingLimitUtils" /* 16034 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 8247 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 8216 */;
 import size from "module_2" /* 2 */;
 
 function getSpendingLimitDisplayState(amount, arg1) {
@@ -33,7 +33,7 @@ function getSpendingLimitDisplayState(amount, arg1) {
       return { kind: "spent", monthlyText: formatRateResult };
     } else {
       let obj;
-      let num = tmp6(6767).CurrencyExponents[amount.currency];
+      let num = tmp6(6738).CurrencyExponents[amount.currency];
       if (num == null) {
         num = 2;
       }

@@ -1,14 +1,14 @@
-// Module ID: 7454
-// Function ID: 7455
+// Module ID: 7424
+// Function ID: 7425
 // Name: useRoleIconProps
-// Dependencies: [19, 4729, 4694, 504, 7455, 2]
+// Dependencies: [19, 4698, 4663, 504, 7425, 2]
 // Exports: computeRoleIconRole, getRoleIconProps, useRoleIconProps, useRoleIconPropsForPreview
 
-// Module 7454 (useRoleIconProps)
-import RoleIconUtils from "RoleIconUtils" /* 7455 */;
+// Module 7424 (useRoleIconProps)
+import RoleIconUtils from "RoleIconUtils" /* 7425 */;
 import react from "react" /* 19 */;
-import GuildRoleStore from "GuildRoleStore" /* 4729 */;
-import GuildStore from "GuildStore" /* 4694 */;
+import GuildRoleStore from "GuildRoleStore" /* 4698 */;
+import GuildStore from "GuildStore" /* 4663 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

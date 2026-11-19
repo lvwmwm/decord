@@ -1,11 +1,11 @@
-// Module ID: 14892
-// Function ID: 14893
+// Module ID: 14878
+// Function ID: 14879
 // Name: conjureOverlayApps
-// Dependencies: [6530, 2]
+// Dependencies: [6501, 2]
 // Exports: isConjureOverlayApp, isConjureServerOverlayApp
 
-// Module 14892 (conjureOverlayApps)
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6530 */;
+// Module 14878 (conjureOverlayApps)
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6501 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/overlay/conjureOverlayApps.tsx");

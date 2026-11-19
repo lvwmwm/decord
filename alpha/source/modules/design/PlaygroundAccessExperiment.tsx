@@ -1,10 +1,10 @@
-// Module ID: 9988
-// Function ID: 9989
+// Module ID: 9966
+// Function ID: 9967
 // Name: PlaygroundAccessExperiment
 // Dependencies: [1388, 1452, 504, 2]
 // Exports: getHasPlaygroundAccess, getPlaygroundAccessExperiment, useHasPlaygroundAccess, usePlaygroundAccessExperiment
 
-// Module 9988 (PlaygroundAccessExperiment)
+// Module 9966 (PlaygroundAccessExperiment)
 import get_initialized from "get initialized" /* 504 */;
 import UserStore from "UserStore" /* 1388 */;
 import ApexExperiment from "ApexExperiment" /* 1452 */;

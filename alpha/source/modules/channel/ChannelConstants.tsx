@@ -1,10 +1,10 @@
-// Module ID: 4679
-// Function ID: 4680
+// Module ID: 4648
+// Function ID: 4649
 // Name: ChannelConstants
 // Dependencies: [2]
 // Exports: buildGuildStaticChannelId, isGuildHomeChannel, isStaticChannelRoute
 
-// Module 4679 (ChannelConstants)
+// Module 4648 (ChannelConstants)
 import size from "module_2" /* 2 */;
 
 const StaticChannelRoute = { CONJURE: "conjuring", CONJURE_PROJECT: "conjure", ROLE_SUBSCRIPTIONS: "role-subscriptions", SERVER_MONETIZATION_ONBOARDING: "server-monetization-onboarding", GAME_SHOP: "game-shop", GUILD_SHOP: "shop", MEMBER_APPLICATIONS: "member-applications", GUILD_HOME: "@home", CHANNEL_BROWSER: "channel-browser", GUILD_ONBOARDING: "onboarding", CUSTOMIZE_COMMUNITY: "customize-community", MEMBER_SAFETY: "member-safety", GUILD_BOOSTS: "boosts", GAME_SERVERS: "game-servers", REPORT_TO_MOD: "report-to-mod", GUILD_OFFICIAL_MESSAGES: "official-messages", GUILD_SPACE: "guild-space" };

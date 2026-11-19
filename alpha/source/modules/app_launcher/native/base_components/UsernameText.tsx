@@ -1,11 +1,11 @@
-// Module ID: 12982
-// Function ID: 12983
+// Module ID: 12964
+// Function ID: 12965
 // Name: UsernameText
-// Dependencies: [19, 21, 5851, 5414, 2]
+// Dependencies: [19, 21, 5822, 5383, 2]
 // Exports: default
 
-// Module 12982 (UsernameText)
-import NicknameUtils from "NicknameUtils" /* 5851 */;
+// Module 12964 (UsernameText)
+import NicknameUtils from "NicknameUtils" /* 5822 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -44,14 +44,14 @@ export default function UsernameText(guildId) {
     const obj3 = { children: items };
     items = [user.toString(), ];
     const obj4 = { color: "text-muted", children: items1 };
-    const Text = tmp(5414).Text;
+    const Text = tmp(5383).Text;
     const merged = Object.assign(obj);
     items1 = ["#", user.discriminator];
     items[1] = React2(Text, obj4);
     str1 = React2(_false, obj3);
   }
   const obj5 = { children: tmp13 };
-  const Text2 = tmp(5414).Text;
+  const Text2 = tmp(5383).Text;
   const merged1 = Object.assign(obj);
   tmp13 = str1;
   const tmp11 = React3;
@@ -59,7 +59,7 @@ export default function UsernameText(guildId) {
     const obj6 = { children: items2 };
     items2 = [name, " ", ];
     const obj7 = { color: "text-muted", children: items3 };
-    const Text3 = tmp(5414).Text;
+    const Text3 = tmp(5383).Text;
     const merged2 = Object.assign(obj);
     items3 = ["(", str1, ")"];
     items2[2] = React2(Text3, obj7);

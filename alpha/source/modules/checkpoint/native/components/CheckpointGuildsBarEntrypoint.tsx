@@ -1,24 +1,24 @@
-// Module ID: 17972
-// Function ID: 17973
+// Module ID: 17965
+// Function ID: 17966
 // Name: CheckpointGuildsBarEntrypoint
-// Dependencies: [5, 19, 17, 17917, 5877, 4669, 17914, 21, 1655, 1708, 4823, 575, 17938, 5414, 1113, 3339, 5387, 17926, 12422, 17973, 4999, 17975, 8993, 5378, 10015, 2]
+// Dependencies: [5, 19, 17, 17910, 5848, 4638, 17907, 21, 1655, 1708, 4792, 575, 17931, 5383, 1113, 3339, 5356, 17919, 12405, 17966, 4968, 17968, 8967, 5347, 9993, 2]
 
-// Module 17972 (CheckpointGuildsBarEntrypoint)
+// Module 17965 (CheckpointGuildsBarEntrypoint)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import _modDef3339 from "module_3339" /* 3339 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4669 */;
-import Text_Text from "Text/Text" /* 5414 */;
-import CheckpointConstants from "CheckpointConstants" /* 5877 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 17914 */;
-import HomeDrawerShared from "HomeDrawerShared" /* 17938 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17975 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4638 */;
+import Text_Text from "Text/Text" /* 5383 */;
+import CheckpointConstants from "CheckpointConstants" /* 5848 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 17907 */;
+import HomeDrawerShared from "HomeDrawerShared" /* 17931 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17968 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 17917 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 17910 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -107,7 +107,7 @@ const memoResult = react.memo(function CheckpointGuildsBarEntrypoint(markAsDismi
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -139,7 +139,7 @@ const memoResult = react.memo(function CheckpointGuildsBarEntrypoint(markAsDismi
             closure_128_0(constants.TAKE_ACTION);
           }
           guildsBarAnimatedWrapperStyles = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp10) {
         guildsBarAnimatedWrapperStyles = 3;

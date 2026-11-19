@@ -1,21 +1,21 @@
-// Module ID: 14420
-// Function ID: 14421
+// Module ID: 14407
+// Function ID: 14408
 // Name: VoicePanelStreamPreview
-// Dependencies: [19, 17, 6308, 502, 21, 1655, 5421, 4823, 575, 11044, 504, 6309, 5033, 5510, 5414, 1113, 2]
+// Dependencies: [19, 17, 6279, 502, 21, 1655, 5390, 4792, 575, 11022, 504, 6280, 5002, 5479, 5383, 1113, 2]
 // Exports: VoicePanelStreamPreview
 
-// Module 14420 (VoicePanelStreamPreview)
+// Module 14407 (VoicePanelStreamPreview)
 import nativeDefault from "native" /* 575 */;
-import components_Button_Button from "components/Button/Button" /* 5421 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6309 */;
-import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 11044 */;
+import components_Button_Button from "components/Button/Button" /* 5390 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6280 */;
+import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 11022 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6308 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6279 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
 import module_1655_mod from "module_1655" /* 1655 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size_mod from "module_2" /* 2 */;
 
 let Pressable;
@@ -27,7 +27,7 @@ let obj2;
 let obj3;
 let size;
 let tmp2;
-const FastImageDefault = tmp2(5510);
+const FastImageDefault = tmp2(5479);
 ({ StyleSheet: c3, View: closure_4, Pressable } = react_native);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let module_1655 = module_1655_mod;
@@ -99,7 +99,7 @@ export function VoicePanelStreamPreview(stream) {
   const items2 = [closure_13, mode, , ];
   const useAnimatedStyle = stream(1655).useAnimatedStyle;
   stream(1655);
-  items2[2] = stream(5033).withTiming;
+  items2[2] = stream(5002).withTiming;
   items2[3] = closure_11;
   let c0;
   let c1;
@@ -150,7 +150,7 @@ export function VoicePanelStreamPreview(stream) {
   if (stateFromStores) {
     const obj8 = { style: tmp.ownStreamTextContainer, children: closure_7(Text, obj9) };
     obj9 = { variant: "body-sm/semibold", color: "text-overlay-light", style: tmp.ownStreamText, children: intl2.string(stream(1113).t["ro/HN8"]) };
-    Text = tmp8(5414).Text;
+    Text = tmp8(5383).Text;
     intl2 = tmp8(1113).intl;
     tmp22Result = tmp22(closure_4, obj8);
   } else {

@@ -1,14 +1,14 @@
-// Module ID: 6933
-// Function ID: 6934
+// Module ID: 6903
+// Function ID: 6904
 // Name: MoreHorizontalIcon
-// Dependencies: [19, 21, 575, 5509, 6934, 2]
+// Dependencies: [19, 21, 575, 5478, 6904, 2]
 // Exports: MoreHorizontalIcon
 
-// Module 6933 (MoreHorizontalIcon)
+// Module 6903 (MoreHorizontalIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5509 */;
-import AssetRegistry from "AssetRegistry" /* 6934 */;
+import BaseIconImage2 from "BaseIconImage" /* 5478 */;
+import AssetRegistry from "AssetRegistry" /* 6904 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,22 +1,22 @@
-// Module ID: 17984
-// Function ID: 17985
+// Module ID: 17977
+// Function ID: 17978
 // Name: GuildsBarCreateJoinButton
-// Dependencies: [5, 19, 17, 4856, 1072, 1390, 21, 4823, 10830, 2121, 13542, 12256, 10419, 7450, 17926, 504, 17877, 1113, 17985, 12928, 575, 2]
+// Dependencies: [5, 19, 17, 4825, 1072, 1390, 21, 4792, 10808, 2121, 13524, 12239, 10397, 7420, 17919, 504, 17870, 1113, 17978, 12910, 575, 2]
 
-// Module 17984 (GuildsBarCreateJoinButton)
+// Module 17977 (GuildsBarCreateJoinButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
-import CirclePlusIcon2 from "CirclePlusIcon" /* 12928 */;
-import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 17926 */;
+import CirclePlusIcon2 from "CirclePlusIcon" /* 12910 */;
+import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 17919 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4856 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4825 */;
 import Constants from "Constants" /* 1072 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -44,7 +44,7 @@ let obj = function _handleCreateJoinGuildPress() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -106,7 +106,7 @@ let obj = function _handleCreateJoinGuildPress() {
             closure_1.openCreateGuildModal();
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp27) {
         c3 = 3;

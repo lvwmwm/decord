@@ -1,22 +1,22 @@
-// Module ID: 9856
-// Function ID: 9857
+// Module ID: 9835
+// Function ID: 9836
 // Name: QuestRewardDetailsBottomSheet
-// Dependencies: [19, 17, 1388, 21, 4823, 575, 9854, 5037, 9857, 9876, 8321, 1113, 504, 5051, 5837, 13677, 5414, 2]
+// Dependencies: [19, 17, 1388, 21, 4792, 575, 9833, 5006, 9836, 9855, 8290, 1113, 504, 5020, 5808, 13659, 5383, 2]
 // Exports: default
 
-// Module 9856 (QuestRewardDetailsBottomSheet)
+// Module 9835 (QuestRewardDetailsBottomSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
-import QuestRewardTypes from "QuestRewardTypes" /* 8321 */;
-import QuestUtils from "QuestUtils" /* 9854 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 9857 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 9876 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
+import QuestRewardTypes from "QuestRewardTypes" /* 8290 */;
+import QuestUtils from "QuestUtils" /* 9833 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 9836 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 9855 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -57,20 +57,20 @@ function QuestRewardDetailsBottomSheet(quest) {
   let obj = quest(504);
   const items2 = [UserStore];
   const stateFromStores = obj.useStateFromStores(items2, () => currentUser.getCurrentUser());
-  const obj2 = quest(9876);
+  const obj2 = quest(9855);
   const defaultRewardName = obj2.getDefaultRewardName(quest.config, stateFromStores);
-  const BottomSheet = quest(5051).BottomSheet;
+  const BottomSheet = quest(5020).BottomSheet;
   const obj3 = { direction: "vertical", spacing: memo(575).space.PX_16, style: tmp.wrapper, children: items5 };
-  const Stack = quest(5837).Stack;
+  const Stack = quest(5808).Stack;
   const obj4 = { align: "center", direction: "horizontal", spacing: memo(575).space.PX_16, children: items3 };
-  const Stack2 = quest(5837).Stack;
-  items3 = [closure_6(memo(13677), { quest, height: 56, width: 56, withAnimation: true }), ];
+  const Stack2 = quest(5808).Stack;
+  items3 = [closure_6(memo(13659), { quest, height: 56, width: 56, withAnimation: true }), ];
   const obj5 = { direction: "vertical", spacing: memo(575).space.PX_4, style: tmp.rewardDetailsCopy, children: items4 };
-  const Stack3 = quest(5837).Stack;
+  const Stack3 = quest(5808).Stack;
   const obj6 = { variant: "body-sm/medium", color: "text-subtle", children: intl.string(quest(1113).t["jyYgZ+"]) };
-  const Text = quest(5414).Text;
+  const Text = quest(5383).Text;
   intl = quest(1113).intl;
-  items4 = [closure_6(Text, obj6), closure_6(quest(5414).Text, { variant: "heading-lg/semibold", color: "text-strong", children: defaultRewardName })];
+  items4 = [closure_6(Text, obj6), closure_6(quest(5383).Text, { variant: "heading-lg/semibold", color: "text-strong", children: defaultRewardName })];
   items3[1] = closure_7(Stack3, obj5);
   items5 = [closure_7(Stack2, obj4), ];
   let tmp9Result = null != memo1;
@@ -80,7 +80,7 @@ function QuestRewardDetailsBottomSheet(quest) {
     const obj8 = { style: tmp.separator };
     items6 = [closure_6(View, obj8), ];
     const obj9 = { variant: "body-md/normal", color: "text-subtle", children: memo1 };
-    items6[1] = closure_6(tmp4(5414).Text, obj9);
+    items6[1] = closure_6(tmp4(5383).Text, obj9);
     tmp9Result = tmp9(closure_8, obj7);
   }
   items5[1] = tmp9Result;

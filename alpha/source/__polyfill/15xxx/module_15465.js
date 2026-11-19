@@ -1,85 +1,37 @@
 // Module ID: 15465
 // Function ID: 15466
-// Dependencies: []
+// Dependencies: [15466, 15469, 15451, 15473, 15474, 15470]
 
 // Module 15465
-let _globalThis = typeof globalThis === "object";
-if (typeof globalThis === "object") {
-  _globalThis = globalThis;
-}
-let tmp = _globalThis;
-if (tmp) {
-  const _Math = Math;
-  tmp = _globalThis.Math === Math;
-}
-if (tmp) {
-  tmp = _globalThis;
-}
-if (!tmp) {
-  const _window = window;
-  let _window2 = typeof window === "object";
-  if (typeof window === "object") {
-    _window2 = window;
-  }
-  let tmp2 = _window2;
-  if (tmp2) {
-    const _Math2 = Math;
-    tmp2 = _window2.Math === Math;
-  }
-  if (tmp2) {
-    tmp2 = _window2;
-  }
-  tmp = tmp2;
-}
-if (!tmp) {
-  const _self = self;
-  let _self2 = typeof self === "object";
-  if (typeof self === "object") {
-    _self2 = self;
-  }
-  let tmp3 = _self2;
-  if (tmp3) {
-    const _Math3 = Math;
-    tmp3 = _self2.Math === Math;
-  }
-  if (tmp3) {
-    tmp3 = _self2;
-  }
-  tmp = tmp3;
-}
-if (!tmp) {
-  let tmp5 = typeof global === "object";
-  if (typeof global === "object") {
-    tmp5 = global;
-  }
-  let tmp6 = tmp5;
-  if (tmp6) {
-    const _Math4 = Math;
-    tmp6 = tmp5.Math === Math;
-  }
-  if (tmp6) {
-    tmp6 = tmp5;
-  }
-  tmp = tmp6;
-}
-if (!tmp) {
-  let self = typeof this === "object";
-  if (typeof this === "object") {
-    self = this;
-  }
-  let tmp7 = self;
-  if (tmp7) {
-    const _Math5 = Math;
-    tmp7 = self.Math === Math;
-  }
-  if (tmp7) {
-    tmp7 = self;
-  }
-  tmp = tmp7;
-}
-if (!tmp) {
-  const _Function = Function;
-  tmp = Function("return this")();
-}
+import _mod15451 from "module_15451" /* 15451 */;
+import _mod15466 from "module_15466" /* 15466 */;
+import _mod15470 from "module_15470" /* 15470 */;
+import _mod15473 from "module_15473" /* 15473 */;
+import _mod15474 from "module_15474" /* 15474 */;
+import prop from "module_15469" /* 15469 */;
 
-export default tmp;
+let tmp2;
+let closure_2 = _mod15466("wks");
+const _Symbol = _mod15451.Symbol;
+if (prop) {
+  tmp2 = _Symbol.for || _mod15451.Symbol;
+  const tmp3 = _Symbol.for || _mod15451.Symbol;
+} else {
+  tmp2 = _Symbol && _mod15451.Symbol.withoutSetter || _mod15473;
+}
+let closure_3 = tmp2;
+
+export default (arg0) => {
+  if (!_mod15474(closure_2, arg0)) {
+    if (_mod15470) {
+      let tmp6;
+      const tmpResult = _mod15474;
+      if (tmpResult(_mod15451.Symbol, arg0)) {
+        tmp6 = tmp(15451).Symbol[arg0];
+      }
+      closure_2[arg0] = tmp6;
+    }
+    tmp6 = closure_3(`Symbol.${arg0}`);
+  }
+  return closure_2[arg0];
+};

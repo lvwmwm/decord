@@ -1,9 +1,9 @@
-// Module ID: 11860
-// Function ID: 11861
+// Module ID: 11838
+// Function ID: 11839
 // Name: LimitedMap
 // Dependencies: [2]
 
-// Module 11860 (LimitedMap)
+// Module 11838 (LimitedMap)
 import size from "module_2" /* 2 */;
 
 class LimitedMap extends Map {

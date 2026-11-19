@@ -1,24 +1,24 @@
-// Module ID: 12713
-// Function ID: 12714
+// Module ID: 12696
+// Function ID: 12697
 // Name: TraitPicker
-// Dependencies: [19, 17, 21, 4823, 12711, 575, 6244, 1113, 3339, 5414, 12435, 1496, 5003, 12714, 12716, 2]
+// Dependencies: [19, 17, 21, 4792, 12694, 575, 6215, 1113, 3339, 5383, 12418, 1496, 4972, 12697, 12699, 2]
 // Exports: default, useTraitOptionSize
 
-// Module 12713 (TraitPicker)
+// Module 12696 (TraitPicker)
 import react2 from "react" /* 19 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import _modDef3339 from "module_3339" /* 3339 */;
-import useWindowSizeClassifier from "useWindowSizeClassifier" /* 5003 */;
-import Text_Text from "Text/Text" /* 5414 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6244 */;
-import CheckpointTextDefault from "CheckpointText" /* 12435 */;
-import TraitOptionList from "TraitOptionList" /* 12711 */;
-import TraitOptionDetailsDefault from "TraitOptionDetails" /* 12714 */;
-import useTraitPicker from "useTraitPicker" /* 12716 */;
+import useWindowSizeClassifier from "useWindowSizeClassifier" /* 4972 */;
+import Text_Text from "Text/Text" /* 5383 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6215 */;
+import CheckpointTextDefault from "CheckpointText" /* 12418 */;
+import TraitOptionList from "TraitOptionList" /* 12694 */;
+import TraitOptionDetailsDefault from "TraitOptionDetails" /* 12697 */;
+import useTraitPicker from "useTraitPicker" /* 12699 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const TraitOptionListDefault = TraitOptionList;

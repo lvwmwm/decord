@@ -1,24 +1,24 @@
-// Module ID: 12102
-// Function ID: 12103
+// Module ID: 12079
+// Function ID: 12080
 // Name: PollsActionCreators
-// Dependencies: [5, 4756, 8251, 502, 4672, 8227, 6439, 5872, 8379, 11863, 1072, 38, 5768, 1113, 6419, 6424, 12103, 12105, 5560, 12, 504, 572, 5405, 12114, 4830, 12108, 8162, 10415, 6257, 2]
+// Dependencies: [5, 4725, 8220, 502, 4641, 8196, 6410, 5843, 8348, 11841, 1072, 38, 5739, 1113, 6390, 6395, 12080, 12082, 5529, 12, 504, 572, 5374, 12091, 4799, 12085, 8131, 10393, 6228, 2]
 
-// Module 12102 (PollsActionCreators)
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5560 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5768 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6419 */;
-import JoinGuildRefusedError from "JoinGuildRefusedError" /* 6424 */;
-import DraftStore from "DraftStore" /* 8227 */;
-import PollInteractionUtilsAll from "PollInteractionUtils" /* 12103 */;
+// Module 12079 (PollsActionCreators)
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5529 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5739 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6390 */;
+import JoinGuildRefusedError from "JoinGuildRefusedError" /* 6395 */;
+import DraftStore from "DraftStore" /* 8196 */;
+import PollInteractionUtilsAll from "PollInteractionUtils" /* 12080 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LurkingStore from "LurkingStore" /* 4756 */;
-import ReferencedMessageStore from "ReferencedMessageStore" /* 8251 */;
+import LurkingStore from "LurkingStore" /* 4725 */;
+import ReferencedMessageStore from "ReferencedMessageStore" /* 8220 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4672 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 6439 */;
-import MessageStore from "MessageStore" /* 5872 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8379 */;
-import PollsInteractionStore from "PollsInteractionStore" /* 11863 */;
+import ChannelStore from "ChannelStore" /* 4641 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 6410 */;
+import MessageStore from "MessageStore" /* 5843 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8348 */;
+import PollsInteractionStore from "PollsInteractionStore" /* 11841 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -426,7 +426,7 @@ obj = function _handleClearPollVote() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -485,7 +485,7 @@ obj = function _handleClearPollVote() {
                 }
               }
               c4 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             }
           } else if (arg0 === 1) {
             c4 = 3;
@@ -653,7 +653,7 @@ obj = function _createPoll() {
             let obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } else {
           try {
@@ -786,7 +786,7 @@ obj = function _createPoll() {
                 duration = 0;
               }
               c6 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             }
           } catch (tmp33) {
             closure_3 = tmp33;

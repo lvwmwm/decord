@@ -1,21 +1,21 @@
-// Module ID: 12705
-// Function ID: 12706
+// Module ID: 12688
+// Function ID: 12689
 // Name: SidekickStats
-// Dependencies: [17, 5877, 21, 4823, 575, 12676, 1113, 3339, 7583, 12648, 10971, 2]
+// Dependencies: [17, 5848, 21, 4792, 575, 12659, 1113, 3339, 7553, 12631, 10949, 2]
 // Exports: default
 
-// Module 12705 (SidekickStats)
+// Module 12688 (SidekickStats)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import _modDef3339 from "module_3339" /* 3339 */;
-import CheckpointConstants from "CheckpointConstants" /* 5877 */;
-import ChatIcon from "ChatIcon" /* 7583 */;
-import MicrophoneIcon from "MicrophoneIcon" /* 10971 */;
-import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 12648 */;
-import CheckpointNumberUtils from "CheckpointNumberUtils" /* 12676 */;
+import CheckpointConstants from "CheckpointConstants" /* 5848 */;
+import ChatIcon from "ChatIcon" /* 7553 */;
+import MicrophoneIcon from "MicrophoneIcon" /* 10949 */;
+import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 12631 */;
+import CheckpointNumberUtils from "CheckpointNumberUtils" /* 12659 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

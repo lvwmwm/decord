@@ -1,25 +1,25 @@
-// Module ID: 5854
-// Function ID: 5855
+// Module ID: 5825
+// Function ID: 5826
 // Name: MarkupChannelMentionRule
-// Dependencies: [4727, 4672, 4694, 4755, 4765, 1388, 1072, 2153, 1414, 1113, 5855, 5856, 5439, 5865, 5446, 5853, 2070, 2]
+// Dependencies: [4696, 4641, 4663, 4724, 4734, 1388, 1072, 2153, 1414, 1113, 5826, 5827, 5408, 5836, 5415, 5824, 2070, 2]
 // Exports: getGuildIdFromChannelId
 
-// Module 5854 (MarkupChannelMentionRule)
+// Module 5825 (MarkupChannelMentionRule)
 import intl3 from "intl" /* 1113 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
 import _modDef2070 from "module_2070" /* 2070 */;
 import StringUtils from "StringUtils" /* 2153 */;
-import useChannelName from "useChannelName" /* 5439 */;
-import LinkUtils from "LinkUtils" /* 5446 */;
-import MarkupTextRuleDefault from "MarkupTextRule" /* 5853 */;
-import useChannelRoleSubscriptionStatus from "useChannelRoleSubscriptionStatus" /* 5855 */;
-import ChannelUtils from "ChannelUtils" /* 5856 */;
-import markup_ChannelUtils from "markup/ChannelUtils" /* 5865 */;
-import GatedChannelStore from "GatedChannelStore" /* 4727 */;
-import ChannelStore from "ChannelStore" /* 4672 */;
-import GuildStore from "GuildStore" /* 4694 */;
-import PermissionStore from "PermissionStore" /* 4755 */;
-import RelationshipStore from "RelationshipStore" /* 4765 */;
+import useChannelName from "useChannelName" /* 5408 */;
+import LinkUtils from "LinkUtils" /* 5415 */;
+import MarkupTextRuleDefault from "MarkupTextRule" /* 5824 */;
+import useChannelRoleSubscriptionStatus from "useChannelRoleSubscriptionStatus" /* 5826 */;
+import ChannelUtils from "ChannelUtils" /* 5827 */;
+import markup_ChannelUtils from "markup/ChannelUtils" /* 5836 */;
+import GatedChannelStore from "GatedChannelStore" /* 4696 */;
+import ChannelStore from "ChannelStore" /* 4641 */;
+import GuildStore from "GuildStore" /* 4663 */;
+import PermissionStore from "PermissionStore" /* 4724 */;
+import RelationshipStore from "RelationshipStore" /* 4734 */;
 import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -157,7 +157,7 @@ function parseChannel(channel, messageId, guildIdFromChannelId, url) {
           obj11 = obj4;
           obj20 = StringUtils;
         } else if (null != url) {
-          const obj9 = { type: "link", content: items4, target: url, title: "channelId" };
+          const obj9 = { type: "link", content: items4, target: url, title: "channel_id" };
           items4 = [{ type: "text", content: url }];
           obj11 = obj9;
           const obj10 = { type: "text", content: url };
@@ -343,7 +343,7 @@ obj3 = {
     [tmp, tmp2, tmp3, tmp4] = arg0;
     LinkUtils;
     if (null == tmp3) {
-      const obj = { type: "link", content: items, target: tmp, title: "channelId" };
+      const obj = { type: "link", content: items, target: tmp, title: "channel_id" };
       items = [{ type: "text", content: tmp }];
       return obj;
     } else {
@@ -427,7 +427,7 @@ obj4 = {
         }
       }
     }
-    const obj = { type: "link", content: items, target: tmp, title: "channelId" };
+    const obj = { type: "link", content: items, target: tmp, title: "channel_id" };
     items = [{ type: "text", content: tmp }];
     return obj;
   }

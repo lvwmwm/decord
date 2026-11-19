@@ -1,12 +1,12 @@
-// Module ID: 6567
-// Function ID: 6568
+// Module ID: 6538
+// Function ID: 6539
 // Name: ApplicationActionCreators
-// Dependencies: [5, 6568, 2143, 2165, 1072, 572, 1285, 504, 2]
+// Dependencies: [5, 6539, 2143, 2165, 1072, 572, 1285, 504, 2]
 // Exports: useApplicationWithLoggedOutContext
 
-// Module 6567 (ApplicationActionCreators)
+// Module 6538 (ApplicationActionCreators)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationDirectoryApplicationsStore from "ApplicationDirectoryApplicationsStore" /* 6568 */;
+import ApplicationDirectoryApplicationsStore from "ApplicationDirectoryApplicationsStore" /* 6539 */;
 import ApplicationRecord from "ApplicationRecord" /* 2143 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
 import Constants from "Constants" /* 1072 */;
@@ -39,7 +39,7 @@ let obj = function _fetchApplication() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -249,7 +249,7 @@ obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         let c3;
@@ -338,7 +338,7 @@ obj = {
             obj11.dispatch(obj10);
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         } catch (tmp26) {
           closure_2 = tmp26;
           if (0 === c3) {

@@ -1,12 +1,12 @@
-// Module ID: 13313
-// Function ID: 13314
+// Module ID: 13295
+// Function ID: 13296
 // Name: useGuildPowerupRollbackEnabled
-// Dependencies: [7912, 13314, 2]
+// Dependencies: [7882, 13296, 2]
 // Exports: default, isGuildPowerupRollbackEnabled, isGuildPowerupRollbackEnabledForSku
 
-// Module 13313 (useGuildPowerupRollbackEnabled)
-import Powerups from "Powerups" /* 7912 */;
-import ServerThemeExperiment from "ServerThemeExperiment" /* 13314 */;
+// Module 13295 (useGuildPowerupRollbackEnabled)
+import Powerups from "Powerups" /* 7882 */;
+import ServerThemeExperiment from "ServerThemeExperiment" /* 13296 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupRollbackEnabled.tsx");

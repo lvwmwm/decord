@@ -1,8 +1,8 @@
-// Module ID: 5917
-// Function ID: 5918
+// Module ID: 5888
+// Function ID: 5889
 // Dependencies: [2]
 
-// Module 5917
+// Module 5888
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/recap-card-background-yellow.png.js");

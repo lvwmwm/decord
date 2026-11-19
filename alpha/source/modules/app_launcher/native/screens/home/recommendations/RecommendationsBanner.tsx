@@ -1,19 +1,19 @@
-// Module ID: 12887
-// Function ID: 12888
+// Module ID: 12869
+// Function ID: 12870
 // Name: RecommendationsBanner
-// Dependencies: [19, 17, 1407, 1072, 21, 4823, 12067, 12879, 10794, 5510, 7984, 8114, 1414, 8040, 2]
+// Dependencies: [19, 17, 1407, 1072, 21, 4792, 12044, 12861, 10772, 5479, 7953, 8083, 1414, 8009, 2]
 
-// Module 12887 (RecommendationsBanner)
+// Module 12869 (RecommendationsBanner)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import useDisplayProfileDefault from "useDisplayProfile" /* 7984 */;
-import useAvatarColorDefault from "useAvatarColor" /* 8040 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 10794 */;
+import useDisplayProfileDefault from "useDisplayProfile" /* 7953 */;
+import useAvatarColorDefault from "useAvatarColor" /* 8009 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 10772 */;
 import react from "react" /* 19 */;
 import UserRecord from "UserRecord" /* 1407 */;
 import Constants from "Constants" /* 1072 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size_mod from "module_2" /* 2 */;
 
 let importDefault;
@@ -22,8 +22,8 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 let tmp3;
-const FastImageDefault = tmp3(5510);
-const UserProfileBannerDefault = tmp(8114);
+const FastImageDefault = tmp3(5479);
+const UserProfileBannerDefault = tmp(8083);
 const View = react_native.View;
 ({ BANNER_HEIGHT: metroRequire, EMPTY_STRING_SNOWFLAKE_ID: metroImportDefault } = Constants);
 const jsx = Fragment.jsx;
@@ -37,9 +37,9 @@ let closure_10 = react.memo(function RecommendationBannerEmbedded(applicationId)
   importDefault = undefined;
   applicationId = applicationId.applicationId;
   const tmp = dependencyMap;
-  let obj = heroMediaDimensions(12067);
+  let obj = heroMediaDimensions(12044);
   const width = obj.useRequiredAppLauncherContext().width;
-  let obj2 = heroMediaDimensions(12879);
+  let obj2 = heroMediaDimensions(12861);
   heroMediaDimensions = obj2.useHeroMediaDimensions({ width });
   let obj3 = { applicationId, size: heroMediaDimensions.width, names: ["embedded_cover"] };
   const tmp4 = useEmbeddedActivityBackgroundDefault(obj3);

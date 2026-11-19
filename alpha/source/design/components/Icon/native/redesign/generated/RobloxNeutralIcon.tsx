@@ -1,14 +1,14 @@
-// Module ID: 9689
-// Function ID: 9690
+// Module ID: 9668
+// Function ID: 9669
 // Name: RobloxNeutralIcon
-// Dependencies: [19, 21, 575, 5509, 9690, 2]
+// Dependencies: [19, 21, 575, 5478, 9669, 2]
 // Exports: RobloxNeutralIcon
 
-// Module 9689 (RobloxNeutralIcon)
+// Module 9668 (RobloxNeutralIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5509 */;
-import AssetRegistry from "AssetRegistry" /* 9690 */;
+import BaseIconImage2 from "BaseIconImage" /* 5478 */;
+import AssetRegistry from "AssetRegistry" /* 9669 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

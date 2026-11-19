@@ -1,11 +1,11 @@
-// Module ID: 18505
-// Function ID: 18506
+// Module ID: 18498
+// Function ID: 18499
 // Name: conjureTipTurn
-// Dependencies: [6837, 2]
+// Dependencies: [6807, 2]
 // Exports: entryActivityAt, hasNoTurns, hasOpenAsk, hasRunningTurn, newestPublish, newestSettledTurn
 
-// Module 18505 (conjureTipTurn)
-import conjureChatTurns from "conjureChatTurns" /* 6837 */;
+// Module 18498 (conjureTipTurn)
+import conjureChatTurns from "conjureChatTurns" /* 6807 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/tips/conjureTipTurn.tsx");
@@ -26,7 +26,7 @@ export function newestSettledTurn(arr) {
               if (obj.turnSettled(tmp2)) {
                 return tmp2;
               } else {
-                let tmp4Result = tmp4(6837);
+                let tmp4Result = tmp4(6807);
                 if (!tmp4Result.isStrandedSegment(arr, diff)) {
                   return null;
                 }
@@ -97,6 +97,9 @@ export function hasOpenAsk(newestSettledTurnResult) {
   }
   if (!tmp) {
     tmp = null != newestSettledTurnResult.restoreProposal;
+  }
+  if (!tmp) {
+    tmp = null != newestSettledTurnResult.serverChange;
   }
   if (!tmp) {
     tmp = null != newestSettledTurnResult.publishScheduleProposal;

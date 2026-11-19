@@ -1,56 +1,78 @@
 // Module ID: 16321
 // Function ID: 16322
 // Name: tokenize
-// Dependencies: [16244]
+// Dependencies: [16235]
 
 // Module 16321 (tokenize)
-import tokenize from "tokenize" /* 16244 */;
+import tokenize from "tokenize" /* 16235 */;
 
-let obj2;
-function eatIdentifierOrAsterisk() {
-  const self = this;
-  let tmp = this.scanner.tokenType !== Ident;
-  if (tmp) {
-    const scanner = self.scanner;
-    tmp = false === scanner.isDelim(42);
-  }
-  if (tmp) {
-    self.error("Identifier or asterisk is expected");
-  }
-  const iter = self.scanner;
-  iter.next();
-}
+const Delim = tokenize.TYPE.Delim;
 const Ident = tokenize.TYPE.Ident;
-let obj = {
-  name: "TypeSelector",
-  structure: obj2,
-  parse() {
-    let scanner3;
+const Dimension = tokenize.TYPE.Dimension;
+const Percentage = tokenize.TYPE.Percentage;
+const Number = tokenize.TYPE.Number;
+const Hash = tokenize.TYPE.Hash;
+const Colon = tokenize.TYPE.Colon;
+const LeftSquareBracket = tokenize.TYPE.LeftSquareBracket;
+const obj = {
+  getNode(arg0) {
     const self = this;
-    const tokenStart = this.scanner.tokenStart;
-    const scanner = this.scanner;
-    if (scanner.isDelim(124)) {
-      const iter2 = self.scanner;
-      iter2.next();
-      eatIdentifierOrAsterisk.call(self);
-    } else {
-      eatIdentifierOrAsterisk.call(self);
-      const scanner2 = self.scanner;
-      const obj = eatIdentifierOrAsterisk;
-      if (scanner2.isDelim(124)) {
-        const iter = self.scanner;
-        iter.next();
-        obj.call(self);
+    const tokenType = this.scanner.tokenType;
+    if (LeftSquareBracket === tokenType) {
+      return self.AttributeSelector();
+    } else if (Hash === tokenType) {
+      return self.IdSelector();
+    } else if (Colon === tokenType) {
+      let result;
+      const scanner = self.scanner;
+      if (scanner.lookupType(1) === tmp6) {
+        result = self.PseudoElementSelector();
+      } else {
+        result = self.PseudoClassSelector();
       }
+      return result;
+    } else if (Ident === tokenType) {
+      return self.TypeSelector();
+    } else {
+      if (Number !== tokenType) {
+        if (Percentage !== tokenType) {
+          if (Dimension === tokenType) {
+            const source = self.scanner.source;
+            if (46 === source.charCodeAt(self.scanner.tokenStart)) {
+              self.error("Identifier is expected", self.scanner.tokenStart + 1);
+            }
+          } else if (Delim === tokenType) {
+            const source2 = self.scanner.source;
+            const charCodeAtResult = source2.charCodeAt(self.scanner.tokenStart);
+            if (43 !== charCodeAtResult) {
+              if (62 !== charCodeAtResult) {
+                if (126 !== charCodeAtResult) {
+                  if (47 === charCodeAtResult) {
+                    return self.Combinator();
+                  } else if (46 === charCodeAtResult) {
+                    return self.ClassSelector();
+                  } else {
+                    if (42 !== charCodeAtResult) {
+                      if (124 !== charCodeAtResult) {
+                        if (35 === charCodeAtResult) {
+                          return self.IdSelector();
+                        }
+                      }
+                    }
+                    return self.TypeSelector();
+                  }
+                }
+              }
+            }
+            arg0.space = null;
+            arg0.ignoreWSAfter = true;
+            return self.Combinator();
+          }
+        }
+      }
+      return self.Percentage();
     }
-    const obj2 = { type: "TypeSelector", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: scanner3.substrToCursor(tokenStart) };
-    scanner3 = self.scanner;
-    return obj2;
-  },
-  generate(name) {
-    this.chunk(name.name);
   }
 };
-obj2 = { name: String };
 
 export default obj;

@@ -1,18 +1,18 @@
-// Module ID: 7717
-// Function ID: 7718
+// Module ID: 7687
+// Function ID: 7688
 // Name: AgeVerificationIncodeMethodSelectScreen
-// Dependencies: [5, 32, 19, 1192, 6321, 7705, 21, 4823, 7718, 7722, 7724, 5837, 6931, 7725, 5414, 1113, 3343, 7259, 6956, 2]
+// Dependencies: [5, 32, 19, 1192, 6292, 7675, 21, 4792, 7688, 7692, 7694, 5808, 6901, 7695, 5383, 1113, 3343, 7229, 6926, 2]
 // Exports: default
 
-// Module 7717 (AgeVerificationIncodeMethodSelectScreen)
-import AgeVerificationConstants from "AgeVerificationConstants" /* 6321 */;
-import AgeVerificationIncodeWebViewConstants from "AgeVerificationIncodeWebViewConstants" /* 7705 */;
+// Module 7687 (AgeVerificationIncodeMethodSelectScreen)
+import AgeVerificationConstants from "AgeVerificationConstants" /* 6292 */;
+import AgeVerificationIncodeWebViewConstants from "AgeVerificationIncodeWebViewConstants" /* 7675 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let closure_1, dependencyMap;
@@ -74,7 +74,7 @@ export default function AgeVerificationIncodeMethodSelectScreen(onMethodSelected
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -133,7 +133,7 @@ export default function AgeVerificationIncodeMethodSelectScreen(onMethodSelected
             c4 = 0;
             tmp(false);
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp32) {
           if (0 === c4) {
@@ -153,42 +153,42 @@ export default function AgeVerificationIncodeMethodSelectScreen(onMethodSelected
     return closure_0(...arguments);
   }, items);
   const obj = { children: null };
-  const ModalScreen = onMethodSelected(7722).ModalScreen;
-  const ModalContent = onMethodSelected(7724).ModalContent;
+  const ModalScreen = onMethodSelected(7692).ModalScreen;
+  const ModalContent = onMethodSelected(7694).ModalContent;
   const obj2 = { children: null };
   if (tmp2) {
-    let obj3 = { align: "center", justify: "center", spacing: 16, style: tmp5.loadingContainer, children: tmp6(tmp7(6931).ActivityIndicator, { size: "large" }) };
-    const Stack4 = tmp7(5837).Stack;
+    let obj3 = { align: "center", justify: "center", spacing: 16, style: tmp5.loadingContainer, children: tmp6(tmp7(6901).ActivityIndicator, { size: "large" }) };
+    const Stack4 = tmp7(5808).Stack;
     obj2.children = closure_9(Stack4, obj3);
     obj.children = closure_9(ModalContent, obj2);
     tmp11 = obj;
   } else {
     const obj4 = { align: "stretch", spacing: 24, style: tmp5.container, children: items3 };
-    const Stack = tmp7(5837).Stack;
+    const Stack = tmp7(5808).Stack;
     let obj5 = { align: "center", justify: "center", spacing: 16, children: items1 };
-    const Stack2 = tmp7(5837).Stack;
-    items1 = [tmp6(tmp7(7725).ShieldSpotIllustration, { height: 100, width: 177 }), ];
+    const Stack2 = tmp7(5808).Stack;
+    items1 = [tmp6(tmp7(7695).ShieldSpotIllustration, { height: 100, width: 177 }), ];
     const obj6 = { align: "center", justify: "center", spacing: 8, children: items2 };
-    const Stack3 = tmp7(5837).Stack;
+    const Stack3 = tmp7(5808).Stack;
     let obj7 = { accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp5.header, children: intl.string(trustedOrigin(3343).eZvwAe) };
-    const Text = tmp7(5414).Text;
+    const Text = tmp7(5383).Text;
     intl = tmp7(1113).intl;
     items2 = [tmp6(Text, obj7), ];
     const obj8 = { variant: "body-md/medium", color: "text-strong", style: tmp5.header, children: intl2.string(trustedOrigin(3343)["5yWXmT"]) };
-    const Text2 = tmp7(5414).Text;
+    const Text2 = tmp7(5383).Text;
     intl2 = tmp7(1113).intl;
     items2[1] = closure_9(Text2, obj8);
     items1[1] = closure_10(Stack3, obj6);
     items3 = [closure_10(Stack2, obj5), , ];
     if (tmp6Result) {
       const obj9 = { variant: "body-sm/medium", color: "text-feedback-critical", style: tmp5.header, children: intl3.string(onMethodSelected(1113).t.c6kn6F) };
-      const Text3 = tmp7(5414).Text;
+      const Text3 = tmp7(5383).Text;
       intl3 = tmp7(1113).intl;
       tmp6Result = closure_9(Text3, obj9);
     }
     items3[1] = tmp6Result;
     const obj10 = { hasIcons: false, children: items4 };
-    const TableRowGroup = tmp7(7259).TableRowGroup;
+    const TableRowGroup = tmp7(7229).TableRowGroup;
     const obj11 = {
       arrow: true,
       label: intl4.string(trustedOrigin(3343).rgXXcW),
@@ -197,7 +197,7 @@ export default function AgeVerificationIncodeMethodSelectScreen(onMethodSelected
           closure_4(VerificationMethod.FACIAL_AGE_ESTIMATION);
         }
     };
-    const TableRow = tmp7(6956).TableRow;
+    const TableRow = tmp7(6926).TableRow;
     intl4 = tmp7(1113).intl;
     intl5 = tmp7(1113).intl;
     items4 = [tmp6(TableRow, obj11), ];
@@ -209,7 +209,7 @@ export default function AgeVerificationIncodeMethodSelectScreen(onMethodSelected
           closure_4(VerificationMethod.ID_VERIFICATION);
         }
     };
-    const TableRow2 = tmp7(6956).TableRow;
+    const TableRow2 = tmp7(6926).TableRow;
     intl6 = tmp7(1113).intl;
     intl7 = tmp7(1113).intl;
     items4[1] = closure_9(TableRow2, obj12);

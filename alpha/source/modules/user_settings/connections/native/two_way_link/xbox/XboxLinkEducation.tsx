@@ -1,23 +1,23 @@
-// Module ID: 6996
-// Function ID: 6997
+// Module ID: 6966
+// Function ID: 6967
 // Name: XboxLinkEducation
-// Dependencies: [19, 17, 1072, 21, 4823, 6955, 2188, 6997, 5510, 5414, 1113, 6928, 5421, 2]
+// Dependencies: [19, 17, 1072, 21, 4792, 6925, 2188, 6967, 5479, 5383, 1113, 6898, 5390, 2]
 // Exports: default
 
-// Module 6996 (XboxLinkEducation)
+// Module 6966 (XboxLinkEducation)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
-import Text_Text from "Text/Text" /* 5414 */;
-import components_Button_Button from "components/Button/Button" /* 5421 */;
-import FastImageDefault from "FastImage" /* 5510 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6928 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 6955 */;
-import _modDef6997 from "module_6997" /* 6997 */;
+import Text_Text from "Text/Text" /* 5383 */;
+import components_Button_Button from "components/Button/Button" /* 5390 */;
+import FastImageDefault from "FastImage" /* 5479 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6898 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 6925 */;
+import _modDef6967 from "module_6967" /* 6967 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -46,7 +46,7 @@ export default function XboxLinkEducation(onClose) {
   const obj3 = { style: twoWayLinkStyles.container, children: items1 };
   const obj4 = { style: twoWayLinkStyles.content, children: items };
   const memo = react.useMemo(() => {
-    const obj = { uri: _modDef6997 };
+    const obj = { uri: _modDef6967 };
     return obj;
   }, []);
   items = [, , ];

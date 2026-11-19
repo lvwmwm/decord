@@ -1,15 +1,15 @@
-// Module ID: 12003
-// Function ID: 12004
+// Module ID: 11981
+// Function ID: 11982
 // Name: Modal
-// Dependencies: [19, 21, 1630, 7006, 7005, 7003, 2]
+// Dependencies: [19, 21, 1630, 6976, 6975, 6973, 2]
 // Exports: Modal
 
-// Module 12003 (Modal)
+// Module 11981 (Modal)
 import Fragment from "Fragment" /* 21 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import Navigator2 from "Navigator" /* 7003 */;
-import react2 from "react" /* 7005 */;
-import NavigatorHeader from "NavigatorHeader" /* 7006 */;
+import Navigator2 from "Navigator" /* 6973 */;
+import react2 from "react" /* 6975 */;
+import NavigatorHeader from "NavigatorHeader" /* 6976 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

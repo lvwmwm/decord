@@ -1,12 +1,12 @@
-// Module ID: 7752
-// Function ID: 7753
+// Module ID: 7722
+// Function ID: 7723
 // Name: AgeVerificationMethodAvailability
-// Dependencies: [5, 32, 19, 1401, 1380, 7753, 7754, 2]
+// Dependencies: [5, 32, 19, 1401, 1380, 7723, 7724, 2]
 // Exports: getAvailableMethodsV2, useAvailableMethodsV2
 
-// Module 7752 (AgeVerificationMethodAvailability)
+// Module 7722 (AgeVerificationMethodAvailability)
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import GoogleWalletActionCreators from "GoogleWalletActionCreators" /* 7754 */;
+import GoogleWalletActionCreators from "GoogleWalletActionCreators" /* 7724 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -15,7 +15,7 @@ import size from "module_2" /* 2 */;
 let c5, c6, method;
 
 let tmp;
-const AppStoreAgeSignalSupport = tmp(7753);
+const AppStoreAgeSignalSupport = tmp(7723);
 function filterByAvailability(arr, arg1) {
   ({ googleWallet: require, appStoreSignal: dependencyMap } = arg1);
   return arr.filter((method) => {
@@ -54,7 +54,7 @@ let obj = function _getAvailableMethodsV() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {

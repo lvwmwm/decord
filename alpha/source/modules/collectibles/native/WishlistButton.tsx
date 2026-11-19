@@ -1,20 +1,20 @@
-// Module ID: 8879
-// Function ID: 8880
+// Module ID: 8853
+// Function ID: 8854
 // Name: WishlistButton
-// Dependencies: [5, 32, 19, 17, 502, 1388, 1074, 1083, 21, 1655, 5427, 4823, 575, 4884, 7151, 4830, 4837, 5505, 1113, 5033, 1708, 5424, 5425, 8880, 8882, 504, 8884, 8943, 8944, 8946, 2]
+// Dependencies: [5, 32, 19, 17, 502, 1388, 1074, 1083, 21, 1655, 5396, 4792, 575, 4853, 7121, 4799, 4806, 5474, 1113, 5002, 1708, 5393, 5394, 8854, 8856, 504, 8858, 8917, 8918, 8920, 2]
 // Exports: default
 
-// Module 8879 (WishlistButton)
+// Module 8853 (WishlistButton)
 import nativeDefault from "native" /* 575 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import Constants from "Constants" /* 1083 */;
 import intl3 from "intl" /* 1113 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import native from "native" /* 4884 */;
-import ButtonConstants from "ButtonConstants" /* 5427 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5505 */;
-import useProductPurchaseState from "useProductPurchaseState" /* 8944 */;
-import CollectiblesWishlistUtils from "CollectiblesWishlistUtils" /* 8946 */;
+import native from "native" /* 4853 */;
+import ButtonConstants from "ButtonConstants" /* 5396 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5474 */;
+import useProductPurchaseState from "useProductPurchaseState" /* 8918 */;
+import CollectiblesWishlistUtils from "CollectiblesWishlistUtils" /* 8920 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -22,7 +22,7 @@ import react_native from "react-native" /* 17 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size_mod from "module_2" /* 2 */;
 
 let constants2, set;
@@ -430,7 +430,7 @@ let obj = { duration: 400, easing: Easing.bezier(0.67, 0, 0.26, 1) };
 Easing = _mod1655.Easing;
 let obj2 = { sm: ButtonConstants.SMALL_BUTTON_HEIGHT, md: ButtonConstants.MEDIUM_BUTTON_HEIGHT };
 const authStore3 = { sm: "sm", md: "md" };
-let closure_17 = createStyles.createStyles((arg0) => {
+const authStore4 = createStyles.createStyles((arg0) => {
   let obj3;
   let obj4;
   let obj6;

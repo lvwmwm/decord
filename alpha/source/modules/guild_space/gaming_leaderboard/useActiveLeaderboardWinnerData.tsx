@@ -1,14 +1,14 @@
-// Module ID: 13755
-// Function ID: 13756
+// Module ID: 13737
+// Function ID: 13738
 // Name: useActiveLeaderboardWinnerData
-// Dependencies: [4735, 4694, 1089, 504, 6754, 2]
+// Dependencies: [4704, 4663, 1089, 504, 6725, 2]
 // Exports: default, getActiveLeaderboardLeaderData, getActiveLeaderboardWinnerData, useActiveLeaderboardLeaderData, useHasActiveLeaderboardBadge
 
-// Module 13755 (useActiveLeaderboardWinnerData)
+// Module 13737 (useActiveLeaderboardWinnerData)
 import DurationsDefault from "Durations" /* 1089 */;
-import canUseGuildSpace from "canUseGuildSpace" /* 6754 */;
-import GuildMemberStore from "GuildMemberStore" /* 4735 */;
-import GuildStore from "GuildStore" /* 4694 */;
+import canUseGuildSpace from "canUseGuildSpace" /* 6725 */;
+import GuildMemberStore from "GuildMemberStore" /* 4704 */;
+import GuildStore from "GuildStore" /* 4663 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,40 +1,14 @@
 // Module ID: 5792
 // Function ID: 5793
 // Name: react-native
-// Dependencies: [17]
-// Exports: enableFreeze, enableScreens, freezeEnabled, screensEnabled
+// Dependencies: [17, 65]
 
 // Module 5792 (react-native)
 import react_native from "react-native" /* 17 */;
+import module_65 from "module_65" /* 65 */;
 
-let Platform;
-let _window;
-({ Platform, UIManager: _window } = react_native);
-let flag = false;
+const codegenNativeComponent = react_native.codegenNativeComponent;
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSSafeAreaView", validAttributes: { edges: true, insetType: true } };
 
-export const isNativePlatformSupported = true;
-export function enableScreens() {
-  flag = arg0;
-  if (arg0 === undefined) {
-    flag = true;
-  }
-  if (flag) {
-    flag = !_window.getViewManagerConfig("RNSScreen");
-  }
-  if (flag) {
-    const _console = console;
-    console.error("Screen native module hasn't been linked. Please check the react-native-screens README for more details");
-  }
-}
-export function enableFreeze() {
-  flag = arg0;
-  if (arg0 === undefined) {
-    flag = true;
-  }
-}
-export function screensEnabled() {
-  return flag;
-}
-export function freezeEnabled() {
-  return flag;
-}
+export default module_65.get("RNSSafeAreaView", () => obj);
+export { __INTERNAL_VIEW_CONFIG };

@@ -1,14 +1,14 @@
-// Module ID: 15018
-// Function ID: 15019
+// Module ID: 15004
+// Function ID: 15005
 // Name: useActivateDeviceStepTracking
-// Dependencies: [19, 1072, 6325, 15019, 1256, 2]
+// Dependencies: [19, 1072, 6296, 15005, 1256, 2]
 // Exports: useActivateDeviceStepTracking
 
-// Module 15018 (useActivateDeviceStepTracking)
+// Module 15004 (useActivateDeviceStepTracking)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import usePreviousDefault from "usePrevious" /* 6325 */;
-import ActivateDeviceUtils from "ActivateDeviceUtils" /* 15019 */;
+import usePreviousDefault from "usePrevious" /* 6296 */;
+import ActivateDeviceUtils from "ActivateDeviceUtils" /* 15005 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

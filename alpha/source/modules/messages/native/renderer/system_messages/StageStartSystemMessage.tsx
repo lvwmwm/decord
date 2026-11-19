@@ -1,14 +1,14 @@
-// Module ID: 8686
-// Function ID: 8687
+// Module ID: 8655
+// Function ID: 8656
 // Name: StageStartSystemMessage
-// Dependencies: [8610, 1113, 8612, 8614, 2]
+// Dependencies: [8579, 1113, 8581, 8583, 2]
 // Exports: createStageStartSystemMessage
 
-// Module 8686 (StageStartSystemMessage)
+// Module 8655 (StageStartSystemMessage)
 import intl2 from "intl" /* 1113 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8610 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8612 */;
-import createCommonMessageDefault from "createCommonMessage" /* 8614 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8579 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8581 */;
+import createCommonMessageDefault from "createCommonMessage" /* 8583 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/StageStartSystemMessage.tsx");

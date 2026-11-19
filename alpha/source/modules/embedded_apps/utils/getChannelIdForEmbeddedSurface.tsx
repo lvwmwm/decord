@@ -1,11 +1,11 @@
-// Module ID: 6534
-// Function ID: 6535
+// Module ID: 6505
+// Function ID: 6506
 // Name: getChannelIdForEmbeddedSurface
-// Dependencies: [5467, 2]
+// Dependencies: [5436, 2]
 // Exports: default, getProxyTicketChannelId
 
-// Module 6534 (getChannelIdForEmbeddedSurface)
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5467 */;
+// Module 6505 (getChannelIdForEmbeddedSurface)
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5436 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/embedded_apps/utils/getChannelIdForEmbeddedSurface.tsx");
@@ -17,7 +17,7 @@ export default function getChannelIdForEmbeddedSurface(type) {
       if (EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL !== type) {
         if (EmbeddedSurfaceType.EmbeddedSurfaceType.VOICE_CHANNEL !== type) {
           if (EmbeddedSurfaceType.EmbeddedSurfaceType.INTERACTION_MODAL !== type) {
-            const OVERLAY = tmp(5467).EmbeddedSurfaceType.OVERLAY;
+            const OVERLAY = tmp(5436).EmbeddedSurfaceType.OVERLAY;
           }
         }
       }
@@ -35,7 +35,7 @@ export function getProxyTicketChannelId(surface) {
       if (EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL !== type) {
         if (EmbeddedSurfaceType.EmbeddedSurfaceType.VOICE_CHANNEL !== type) {
           if (EmbeddedSurfaceType.EmbeddedSurfaceType.INTERACTION_MODAL !== type) {
-            const OVERLAY = tmp(5467).EmbeddedSurfaceType.OVERLAY;
+            const OVERLAY = tmp(5436).EmbeddedSurfaceType.OVERLAY;
           }
         }
       }

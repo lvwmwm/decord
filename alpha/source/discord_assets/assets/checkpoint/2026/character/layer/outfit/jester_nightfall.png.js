@@ -1,8 +1,8 @@
-// Module ID: 6083
-// Function ID: 6084
+// Module ID: 6054
+// Function ID: 6055
 // Dependencies: [2]
 
-// Module 6083
+// Module 6054
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/outfit/jester_nightfall.png.js");

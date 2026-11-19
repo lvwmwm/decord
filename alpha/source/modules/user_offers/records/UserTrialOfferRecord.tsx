@@ -1,12 +1,12 @@
-// Module ID: 8715
-// Function ID: 8716
+// Module ID: 8684
+// Function ID: 8685
 // Name: UserTrialOfferRecord
-// Dependencies: [1408, 8716, 1390, 2]
+// Dependencies: [1408, 8685, 1390, 2]
 
-// Module 8715 (UserTrialOfferRecord)
+// Module 8684 (UserTrialOfferRecord)
 import PremiumConstants from "PremiumConstants" /* 1390 */;
 import Record from "Record" /* 1408 */;
-import SubscriptionTrialRecord from "SubscriptionTrialRecord" /* 8716 */;
+import SubscriptionTrialRecord from "SubscriptionTrialRecord" /* 8685 */;
 import size from "module_2" /* 2 */;
 
 let closure_1 = PremiumConstants.PREMIUM_TIER_2_REFERRAL_TRIAL_ID;

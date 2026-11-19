@@ -1,22 +1,22 @@
-// Module ID: 17062
-// Function ID: 17063
+// Module ID: 17055
+// Function ID: 17056
 // Name: DevToolsAnalyticsScreen
-// Dependencies: [32, 19, 17, 1388, 15567, 1072, 21, 4823, 575, 5414, 6956, 11325, 2169, 10346, 6941, 7456, 5523, 504, 7401, 5837, 7259, 7467, 10127, 5530, 17057, 7338, 2]
+// Dependencies: [32, 19, 17, 1388, 15553, 1072, 21, 4792, 575, 5383, 6926, 11303, 2169, 10324, 6911, 7426, 5492, 504, 7371, 5808, 7229, 7437, 10105, 5499, 17050, 7308, 2]
 // Exports: default
 
-// Module 17062 (DevToolsAnalyticsScreen)
+// Module 17055 (DevToolsAnalyticsScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import _modDef2169 from "module_2169" /* 2169 */;
-import Text_Text from "Text/Text" /* 5414 */;
-import ClipboardUtils from "ClipboardUtils" /* 7456 */;
+import Text_Text from "Text/Text" /* 5383 */;
+import ClipboardUtils from "ClipboardUtils" /* 7426 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;
-import AnalyticsLogStore from "AnalyticsLogStore" /* 15567 */;
+import AnalyticsLogStore from "AnalyticsLogStore" /* 15553 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;
@@ -70,7 +70,7 @@ function LoggedEvent(arg0) {
   let tmp6 = View;
   let obj = {
     arrow: !tmp5Result2,
-    icon: closure_8(fingerprint(11325).AnalyticsIcon, {}),
+    icon: closure_8(fingerprint(11303).AnalyticsIcon, {}),
     label: event,
     subLabel: str2,
     onPress() {
@@ -79,7 +79,7 @@ function LoggedEvent(arg0) {
     start,
     end
   };
-  const TableRow = fingerprint(6956).TableRow;
+  const TableRow = fingerprint(6926).TableRow;
   if ("name" in properties) {
     str2 = properties.name;
   } else {
@@ -98,13 +98,13 @@ function LoggedEvent(arg0) {
     let obj3 = { style: tmp.commonPropertiesContainer, children: items1 };
     let obj4 = { name: "Timestamp (local)", children: tmp7(Text, obj5) };
     obj5 = { variant: "body-sm/semibold", color: "mobile-text-heading-primary", children: obj6.calendar() };
-    Text = tmp8(5414).Text;
+    Text = tmp8(5383).Text;
     obj6 = _modDef2169(timestamp);
     items1 = [tmp7(CommonProperty, obj4), , ];
     let tmp7Result = null != user;
     const tmp12 = importDefault;
     if (tmp7Result) {
-      const obj7 = { name: "User ", children: closure_8(tmp12(10346), obj8) };
+      const obj7 = { name: "User ", children: closure_8(tmp12(10324), obj8) };
       obj8 = { user };
       tmp7Result = tmp7(tmp11, obj7);
     }
@@ -120,14 +120,14 @@ function LoggedEvent(arg0) {
             },
         children: items3
       };
-      const PressableOpacity = tmp8(6941).PressableOpacity;
+      const PressableOpacity = tmp8(6911).PressableOpacity;
       const obj10 = { variant: "body-sm/medium", color: "mobile-text-heading-primary", style: items2, children: fingerprint };
       items2 = [tmp.monospace, { marginRight: 4 }];
-      items3 = [tmp7(fingerprint(5414).Text, obj10), tmp7(fingerprint(5523).CopyIcon, { size: "sm" })];
+      items3 = [tmp7(fingerprint(5383).Text, obj10), tmp7(fingerprint(5492).CopyIcon, { size: "sm" })];
       tmp7Result1 = tmp5(PressableOpacity, obj9);
     } else {
       const obj11 = { variant: "body-sm/medium", color: "text-muted", style: tmp.monospace, children: "null" };
-      tmp7Result1 = tmp7(tmp8(5414).Text, obj11);
+      tmp7Result1 = tmp7(tmp8(5383).Text, obj11);
     }
     const obj12 = { name: "Fingerprint", children: tmp7Result1 };
     items1[2] = closure_8(CommonProperty, obj12);
@@ -220,30 +220,30 @@ export default function DevToolsAnalyticsScreen() {
     reversed = items1;
   }
   const obj2 = { style: tmp.analyticsContainer, children: closure_8(FlashList, obj8) };
-  FlashList = tmp2(7401).FlashList;
-  const Stack = tmp2(5837).Stack;
+  FlashList = tmp2(7371).FlashList;
+  const Stack = tmp2(5808).Stack;
   const obj3 = { title: "Actions", hasIcons: true, children: items2 };
-  const TableRowGroup = tmp2(7259).TableRowGroup;
-  const obj4 = { icon: closure_8(trimmed(10127).ArrowsUpDownIcon, {}), label: "Reverse Events", value: first, onValueChange: tmp7 };
-  const TableSwitchRow = tmp2(7467).TableSwitchRow;
+  const TableRowGroup = tmp2(7229).TableRowGroup;
+  const obj4 = { icon: closure_8(trimmed(10105).ArrowsUpDownIcon, {}), label: "Reverse Events", value: first, onValueChange: tmp7 };
+  const TableSwitchRow = tmp2(7437).TableSwitchRow;
   items2 = [closure_8(TableSwitchRow, obj4), ];
-  const obj5 = { arrow: true, variant: "danger", icon: closure_8(trimmed(5530).TrashIcon, { color: "text-feedback-critical" }), label: "Clear Analytics Log", onPress: trimmed(17057).clearAnalyticsLog };
-  const TableRow = tmp2(6956).TableRow;
+  const obj5 = { arrow: true, variant: "danger", icon: closure_8(trimmed(5499).TrashIcon, { color: "text-feedback-critical" }), label: "Clear Analytics Log", onPress: trimmed(17050).clearAnalyticsLog };
+  const TableRow = tmp2(6926).TableRow;
   items2[1] = closure_8(TableRow, obj5);
   const items3 = [closure_9(TableRowGroup, obj3), , ];
-  const obj6 = { style: tmp.searchFieldContainer, children: closure_8(trimmed(7338).SearchBar, { placeholder: "Search by event name", onChange: tmp9 }) };
+  const obj6 = { style: tmp.searchFieldContainer, children: closure_8(trimmed(7308).SearchBar, { placeholder: "Search by event name", onChange: tmp9 }) };
   items3[1] = closure_8(View, obj6);
-  const TableRowGroup2 = tmp2(7259).TableRowGroup;
+  const TableRowGroup2 = tmp2(7229).TableRowGroup;
   const tmp13 = View;
   const tmp14 = closure_9;
   if (0 === loggedEvents.length) {
-    tmp12Result = tmp12(tmp2(6956).TableRow, { label: "No events logged." });
+    tmp12Result = tmp12(tmp2(6926).TableRow, { label: "No events logged." });
   } else {
     tmp12Result = null;
     if (0 === found.length) {
       const _HermesInternal = HermesInternal;
       const obj7 = { label: "No events match \"" + str + "\"" };
-      const TableRow2 = tmp2(6956).TableRow;
+      const TableRow2 = tmp2(6926).TableRow;
       tmp12Result = tmp12(TableRow2, obj7);
     }
   }

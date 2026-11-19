@@ -1,9 +1,9 @@
-// Module ID: 6350
-// Function ID: 6351
+// Module ID: 6321
+// Function ID: 6322
 // Name: HookErrorStore
 // Dependencies: [1072, 504, 572, 2]
 
-// Module 6350 (HookErrorStore)
+// Module 6321 (HookErrorStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;

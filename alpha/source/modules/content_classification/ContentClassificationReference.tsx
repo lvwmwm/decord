@@ -1,11 +1,11 @@
-// Module ID: 5451
-// Function ID: 5452
+// Module ID: 5420
+// Function ID: 5421
 // Name: ContentClassificationReference
-// Dependencies: [5452, 2]
+// Dependencies: [5421, 2]
 // Exports: isAgeRestrictedClassificationReference
 
-// Module 5451 (ContentClassificationReference)
-import utils from "utils" /* 5452 */;
+// Module 5420 (ContentClassificationReference)
+import utils from "utils" /* 5421 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/content_classification/ContentClassificationReference.tsx");

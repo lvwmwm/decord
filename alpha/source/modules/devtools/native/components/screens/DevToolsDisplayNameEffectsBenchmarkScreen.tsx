@@ -1,27 +1,27 @@
-// Module ID: 17228
-// Function ID: 17229
+// Module ID: 17221
+// Function ID: 17222
 // Name: DevToolsDisplayNameEffectsBenchmarkScreen
-// Dependencies: [32, 19, 17, 1388, 1397, 21, 1399, 9367, 1113, 9363, 3147, 4823, 575, 5837, 5414, 5421, 9357, 9358, 504, 17229, 7259, 6956, 14647, 6252, 2]
+// Dependencies: [32, 19, 17, 1388, 1397, 21, 1399, 9344, 1113, 9340, 3147, 4792, 575, 5808, 5383, 5390, 9334, 9335, 504, 17222, 7229, 6926, 14634, 6223, 2]
 // Exports: default
 
-// Module 17228 (DevToolsDisplayNameEffectsBenchmarkScreen)
+// Module 17221 (DevToolsDisplayNameEffectsBenchmarkScreen)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1397 */;
 import DisplayNameEffect from "DisplayNameEffect" /* 1399 */;
 import _modDef3147 from "module_3147" /* 3147 */;
-import Text_Text from "Text/Text" /* 5414 */;
-import Stack_Stack from "Stack/Stack" /* 5837 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 9357 */;
-import types from "types" /* 9358 */;
-import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 9363 */;
-import _mod9367 from "module_9367" /* 9367 */;
+import Text_Text from "Text/Text" /* 5383 */;
+import Stack_Stack from "Stack/Stack" /* 5808 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 9334 */;
+import types from "types" /* 9335 */;
+import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 9340 */;
+import _mod9344 from "module_9344" /* 9344 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -169,7 +169,7 @@ export default function DevToolsDisplayNameEffectsBenchmarkScreen() {
   const memo = first1.useMemo(() => items.find((key) => key.key === first2).name, items2);
   const items3 = [memo];
   const memo1 = first1.useMemo(() => {
-    const obj = _mod9367;
+    const obj = _mod9344;
     return obj.splitGraphemes(memo).length;
   }, items3);
   const items4 = [first];
@@ -296,7 +296,7 @@ export default function DevToolsDisplayNameEffectsBenchmarkScreen() {
               const length = String(Math.max(run.params.rowCount - 1, 0)).length;
               const StringResult = String(arg1);
               const padStartResult = StringResult.padStart(length, "0");
-              const obj3 = _mod9367;
+              const obj3 = _mod9344;
               const splitGraphemesResult = obj3.splitGraphemes(name);
               sum = padStartResult;
               const tmp = metroImportAll;

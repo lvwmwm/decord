@@ -1,20 +1,20 @@
-// Module ID: 8671
-// Function ID: 8672
+// Module ID: 8640
+// Function ID: 8641
 // Name: NewThreadSystemMessage
-// Dependencies: [4672, 4765, 1388, 8610, 1113, 8612, 5439, 8614, 2]
+// Dependencies: [4641, 4734, 1388, 8579, 1113, 8581, 5408, 8583, 2]
 // Exports: createNewThreadSystemMessage
 
-// Module 8671 (NewThreadSystemMessage)
-import useChannelName from "useChannelName" /* 5439 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8610 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8612 */;
-import ChannelStore from "ChannelStore" /* 4672 */;
-import RelationshipStore from "RelationshipStore" /* 4765 */;
+// Module 8640 (NewThreadSystemMessage)
+import useChannelName from "useChannelName" /* 5408 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8579 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8581 */;
+import ChannelStore from "ChannelStore" /* 4641 */;
+import RelationshipStore from "RelationshipStore" /* 4734 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 let tmp7;
-const createCommonMessageDefault = tmp7(8614);
+const createCommonMessageDefault = tmp7(8583);
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/NewThreadSystemMessage.tsx");
 
 export function createNewThreadSystemMessage(message) {

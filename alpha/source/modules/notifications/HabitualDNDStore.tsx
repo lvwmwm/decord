@@ -1,18 +1,18 @@
-// Module ID: 14927
-// Function ID: 14928
+// Module ID: 14913
+// Function ID: 14914
 // Name: HabitualDNDStore
-// Dependencies: [6831, 1072, 1089, 4648, 572, 504, 2]
+// Dependencies: [6801, 1072, 1089, 4617, 572, 504, 2]
 
-// Module 14927 (HabitualDNDStore)
+// Module 14913 (HabitualDNDStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import UserSettings from "UserSettings" /* 4648 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6831 */;
+import UserSettings from "UserSettings" /* 4617 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6801 */;
 import size from "module_2" /* 2 */;
 
-const f108659 = (item) => {
+const f108629 = (item) => {
   const timestamp = Date.now();
   return item < timestamp - 3 * DurationsDefault.Millis.DAY;
 };
@@ -60,7 +60,7 @@ let obj = {
           return item > timestamp - 5 * DurationsDefault.Millis.DAY;
         });
         sessionStartsWithDND = found;
-        const someResult = found.length >= 4 && sessionStartsWithDND.some(f108659);
+        const someResult = found.length >= 4 && sessionStartsWithDND.some(f108629);
         if (someResult) {
           const _setTimeout = setTimeout;
           const timerId = setTimeout(() => {
@@ -73,8 +73,8 @@ let obj = {
     sessionStartsWithDND = [];
   },
   HABITUAL_DND_CLEAR: function handleDNDClear() {
-    c6 = sessionStartsWithDND.length >= 4 && sessionStartsWithDND.some(f108659);
-    const someResult = sessionStartsWithDND.length >= 4 && sessionStartsWithDND.some(f108659);
+    c6 = sessionStartsWithDND.length >= 4 && sessionStartsWithDND.some(f108629);
+    const someResult = sessionStartsWithDND.length >= 4 && sessionStartsWithDND.some(f108629);
     sessionStartsWithDND = [];
   }
 };

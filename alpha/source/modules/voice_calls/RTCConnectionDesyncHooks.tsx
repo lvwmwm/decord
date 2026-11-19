@@ -1,24 +1,24 @@
-// Module ID: 17809
-// Function ID: 17810
+// Module ID: 17802
+// Function ID: 17803
 // Name: RTCConnectionDesyncHooks
-// Dependencies: [32, 19, 502, 14962, 5564, 5471, 1072, 12, 504, 6537, 17810, 2]
+// Dependencies: [32, 19, 502, 14948, 5533, 5440, 1072, 12, 504, 6508, 17803, 2]
 // Exports: useDesyncedChannelParticipants, useEnsureSyncedChannelParticipants, useEnsureSyncedChannelVoiceStates, useIsRTCDisconnectedUIVisible, useIsSelfDisconnectedUIVisible
 
-// Module 17809 (RTCConnectionDesyncHooks)
+// Module 17802 (RTCConnectionDesyncHooks)
 import Constants from "Constants" /* 1072 */;
-import VoiceConnectFeedbackExperimentDefault from "VoiceConnectFeedbackExperiment" /* 17810 */;
+import VoiceConnectFeedbackExperimentDefault from "VoiceConnectFeedbackExperiment" /* 17803 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RTCConnectionDesyncStore from "RTCConnectionDesyncStore" /* 14962 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5564 */;
-import VoiceStateStore from "VoiceStateStore" /* 5471 */;
+import RTCConnectionDesyncStore from "RTCConnectionDesyncStore" /* 14948 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5533 */;
+import VoiceStateStore from "VoiceStateStore" /* 5440 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, desyncedParticipants, set;
 
-const f114224 = () => {
+const f114202 = () => {
   desyncedParticipants = null;
   if (closure_0 === channelId.getChannelId()) {
     desyncedParticipants = desyncedParticipants.getDesyncedParticipants();
@@ -79,7 +79,7 @@ export function useDesyncedChannelParticipants(arg0) {
   _require = arg0;
   const items = [RTCConnectionDesyncStore, RTCConnectionStore];
   const obj = require("get initialized");
-  return obj.useStateFromStores(items, f114224);
+  return obj.useStateFromStores(items, f114202);
 }
 export function useEnsureSyncedChannelParticipants(arg0, arg1) {
   let channelId;
@@ -87,7 +87,7 @@ export function useEnsureSyncedChannelParticipants(arg0, arg1) {
   _require = arg0;
   let obj = require("get initialized");
   let items = [RTCConnectionDesyncStore, RTCConnectionStore];
-  const stateFromStores = obj.useStateFromStores(items, f114224);
+  const stateFromStores = obj.useStateFromStores(items, f114202);
   const items1 = [stateFromStores, arg1];
   return react.useMemo(() => {
     let tmp3 = closure_0;

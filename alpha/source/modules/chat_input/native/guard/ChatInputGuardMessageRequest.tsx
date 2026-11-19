@@ -1,11 +1,11 @@
-// Module ID: 13253
-// Function ID: 13254
+// Module ID: 13235
+// Function ID: 13236
 // Name: ChatInputGuardMessageRequest
-// Dependencies: [5, 19, 1388, 21, 1502, 13254, 504, 13255, 5505, 1113, 5556, 13261, 2]
+// Dependencies: [5, 19, 1388, 21, 1502, 13236, 504, 13237, 5474, 1113, 5525, 13243, 2]
 
-// Module 13253 (ChatInputGuardMessageRequest)
+// Module 13235 (ChatInputGuardMessageRequest)
 import Fragment from "Fragment" /* 21 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 13261 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 13243 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;
@@ -46,7 +46,7 @@ const memoResult = react.memo(function ChatInputGuardMessageRequest(channel) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -78,7 +78,7 @@ const memoResult = react.memo(function ChatInputGuardMessageRequest(channel) {
             obj = id(c2[10]);
             obj.transitionToChannel(closure_129_0.id, { navigationReplace: true });
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp13) {
           c3 = 3;
@@ -102,7 +102,7 @@ const memoResult = react.memo(function ChatInputGuardMessageRequest(channel) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -131,7 +131,7 @@ const memoResult = react.memo(function ChatInputGuardMessageRequest(channel) {
             return obj;
           } else {
             c1 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp8) {
           c1 = 3;
@@ -145,12 +145,12 @@ const memoResult = react.memo(function ChatInputGuardMessageRequest(channel) {
   const tmp2 = dependencyMap;
   obj = channel(1502);
   importDefault = obj.useNavigation();
-  let obj2 = channel(13254);
+  let obj2 = channel(13236);
   const isMessageRequestRestrictedViewer = obj2.useIsMessageRequestRestrictedViewer();
   let obj3 = channel(504);
   const items = [obj];
   const stateFromStores = obj3.useStateFromStores(items, () => UserStore.getUser(channel.getRecipientId()));
-  let obj4 = channel(13255);
+  let obj4 = channel(13237);
   let obj5 = {
     user: stateFromStores,
     onError: function handleRequestError() {

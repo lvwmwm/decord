@@ -1,26 +1,26 @@
-// Module ID: 19879
-// Function ID: 19880
+// Module ID: 19890
+// Function ID: 19891
 // Name: GuildSettingsRolesStore
-// Dependencies: [4687, 19880, 4730, 4729, 7906, 19874, 1072, 19881, 13214, 5850, 1255, 1084, 4760, 1090, 4732, 12, 504, 572, 2]
+// Dependencies: [4656, 19891, 4699, 4698, 7876, 19885, 1072, 19892, 13196, 5821, 1255, 1084, 4729, 1090, 4701, 12, 504, 572, 2]
 
-// Module 19879 (GuildSettingsRolesStore)
+// Module 19890 (GuildSettingsRolesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
 import GlobalUtils from "GlobalUtils" /* 1255 */;
-import PlainRecord from "PlainRecord" /* 4687 */;
-import GuildRoleRecord from "GuildRoleRecord" /* 4730 */;
-import EnhancedRoleColorUtils from "EnhancedRoleColorUtils" /* 4732 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4760 */;
-import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 5850 */;
-import DragAndDropUtilsDefault from "DragAndDropUtils" /* 13214 */;
-import GuildSettingsConstants from "GuildSettingsConstants" /* 19874 */;
-import GuildRoleConnectionsConfigurationStore from "GuildRoleConnectionsConfigurationStore" /* 19880 */;
-import GuildRoleStore from "GuildRoleStore" /* 4729 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 7906 */;
+import PlainRecord from "PlainRecord" /* 4656 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 4699 */;
+import EnhancedRoleColorUtils from "EnhancedRoleColorUtils" /* 4701 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4729 */;
+import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 5821 */;
+import DragAndDropUtilsDefault from "DragAndDropUtils" /* 13196 */;
+import GuildSettingsConstants from "GuildSettingsConstants" /* 19885 */;
+import GuildRoleConnectionsConfigurationStore from "GuildRoleConnectionsConfigurationStore" /* 19891 */;
+import GuildRoleStore from "GuildRoleStore" /* 4698 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 7876 */;
 import Constants from "Constants" /* 1072 */;
-import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 19881 */;
+import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 19892 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -92,8 +92,8 @@ function handleInit() {
     }
     const obj2 = { [obj.SOLID]: obj3, [obj.GRADIENT]: obj4, [obj.HOLOGRAPHIC]: obj5 };
     obj3 = { primary_color, secondary_color: null, tertiary_color: null };
-    obj4 = { primary_color: closure_17.primary_color, secondary_color: closure_17.secondary_color, tertiary_color: null };
-    obj5 = { primary_color: authStore4.primary_color, secondary_color: authStore4.secondary_color, tertiary_color: authStore4.tertiary_color };
+    obj4 = { primary_color: authStore4.primary_color, secondary_color: authStore4.secondary_color, tertiary_color: null };
+    obj5 = { primary_color: closure_18.primary_color, secondary_color: closure_18.secondary_color, tertiary_color: closure_18.tertiary_color };
     if (null != colors.colors) {
       primary_color = colors.colors.primary_color;
       if (primary_color == null) {
@@ -184,8 +184,8 @@ function syncGuildChanges(guildId) {
           }
           const obj2 = { [obj.SOLID]: obj3, [obj.GRADIENT]: obj4, [obj.HOLOGRAPHIC]: obj5 };
           obj3 = { primary_color, secondary_color: null, tertiary_color: null };
-          obj4 = { primary_color: closure_17.primary_color, secondary_color: closure_17.secondary_color, tertiary_color: null };
-          obj5 = { primary_color: authStore4.primary_color, secondary_color: authStore4.secondary_color, tertiary_color: authStore4.tertiary_color };
+          obj4 = { primary_color: authStore4.primary_color, secondary_color: authStore4.secondary_color, tertiary_color: null };
+          obj5 = { primary_color: closure_18.primary_color, secondary_color: closure_18.secondary_color, tertiary_color: closure_18.tertiary_color };
           if (null != colors.colors) {
             primary_color = colors.colors.primary_color;
             if (primary_color == null) {
@@ -753,8 +753,8 @@ let obj2 = {
           }
           const obj2 = { [obj.SOLID]: obj3, [obj.GRADIENT]: obj4, [obj.HOLOGRAPHIC]: obj5 };
           obj3 = { primary_color, secondary_color: null, tertiary_color: null };
-          obj4 = { primary_color: closure_17.primary_color, secondary_color: closure_17.secondary_color, tertiary_color: null };
-          obj5 = { primary_color: authStore4.primary_color, secondary_color: authStore4.secondary_color, tertiary_color: authStore4.tertiary_color };
+          obj4 = { primary_color: authStore4.primary_color, secondary_color: authStore4.secondary_color, tertiary_color: null };
+          obj5 = { primary_color: closure_18.primary_color, secondary_color: closure_18.secondary_color, tertiary_color: closure_18.tertiary_color };
           if (null != colors.colors) {
             primary_color = colors.colors.primary_color;
             if (primary_color == null) {
@@ -868,13 +868,13 @@ let obj2 = {
     let id;
     let role;
     let roles;
-    const f120400 = (item) => map1.get(item);
-    const f120401 = (item, index) => {
+    const f120355 = (item) => map1.get(item);
+    const f120356 = (item, index) => {
       if (!set1.has(index)) {
         found1.push(item);
       }
     };
-    const f120402 = (item, index) => {
+    const f120357 = (item, index) => {
       const obj = { position: length - 1 - index };
       const merged = Object.assign(item);
       return obj;
@@ -885,22 +885,22 @@ let obj2 = {
       return items;
     }));
     let result = map.set(role.id, role);
-    const mapped = roles.map(f120400);
+    const mapped = roles.map(f120355);
     const found = mapped.filter(id(1255).isNotNullish);
     set = new Set(roles);
-    const item = map.forEach(f120401);
-    items = found.map(f120402);
+    const item = map.forEach(f120356);
+    items = found.map(f120357);
     map1 = new Map(items2.map((id) => {
       items = [id.id, id];
       return items;
     }));
     const result1 = map1.set(role.id, role);
-    const mapped1 = roles.map(f120400);
+    const mapped1 = roles.map(f120355);
     const found1 = mapped1.filter(id(1255).isNotNullish);
     const set1 = new Set(roles);
-    const item1 = map1.forEach(f120401);
+    const item1 = map1.forEach(f120356);
     const length = found1.length;
-    items2 = found1.map(f120402);
+    items2 = found1.map(f120357);
     id = undefined;
     if (user != null) {
       id = user.id;
@@ -927,8 +927,8 @@ let obj2 = {
       }
       const obj2 = { [obj.SOLID]: obj3, [obj.GRADIENT]: obj4, [obj.HOLOGRAPHIC]: obj5 };
       obj3 = { primary_color, secondary_color: null, tertiary_color: null };
-      obj4 = { primary_color: closure_17.primary_color, secondary_color: closure_17.secondary_color, tertiary_color: null };
-      obj5 = { primary_color: authStore4.primary_color, secondary_color: authStore4.secondary_color, tertiary_color: authStore4.tertiary_color };
+      obj4 = { primary_color: authStore4.primary_color, secondary_color: authStore4.secondary_color, tertiary_color: null };
+      obj5 = { primary_color: closure_18.primary_color, secondary_color: closure_18.secondary_color, tertiary_color: closure_18.tertiary_color };
       if (null != colors.colors) {
         primary_color = colors.colors.primary_color;
         if (primary_color == null) {

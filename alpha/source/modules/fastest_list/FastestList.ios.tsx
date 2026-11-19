@@ -1,14 +1,14 @@
-// Module ID: 7359
-// Function ID: 7360
+// Module ID: 7329
+// Function ID: 7330
 // Name: FastestList
-// Dependencies: [19, 17, 21, 7354, 7348, 7360, 7352, 2]
+// Dependencies: [19, 17, 21, 7324, 7318, 7330, 7322, 2]
 // Exports: default
 
-// Module 7359 (FastestList)
+// Module 7329 (FastestList)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import FastestListItemTypeDefault from "FastestListItemType" /* 7352 */;
-import FastList from "FastList" /* 7360 */;
+import FastestListItemTypeDefault from "FastestListItemType" /* 7322 */;
+import FastList from "FastList" /* 7330 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

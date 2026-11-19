@@ -1,18 +1,18 @@
-// Module ID: 16493
-// Function ID: 16494
+// Module ID: 16484
+// Function ID: 16485
 // Name: OrbsArcadeActionCreators
-// Dependencies: [5, 502, 16487, 1072, 1089, 559, 572, 1285, 16488, 6258, 16494, 2]
+// Dependencies: [5, 502, 16478, 1072, 1089, 559, 572, 1285, 16479, 6229, 16485, 2]
 // Exports: claimOrbsArcadeRewards, ensureOrbsArcadeEnrollment, fetchOrbsArcadeGamesIfStale, resetOrbsArcadeGame
 
-// Module 16493 (OrbsArcadeActionCreators)
+// Module 16484 (OrbsArcadeActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
-import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 16494 */;
+import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 16485 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 16487 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 16478 */;
 import Backoff from "Backoff" /* 559 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ let obj = function _fetchOrbsArcadeGames() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let tmp28;
@@ -116,7 +116,7 @@ let obj = function _fetchOrbsArcadeGames() {
           c3 = 0;
         }
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       } catch (tmp28) {
         if (0 === c3) {
           c5 = 3;
@@ -142,7 +142,7 @@ obj = function _resetOrbsArcadeGame() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c4;
@@ -185,7 +185,7 @@ obj = function _resetOrbsArcadeGame() {
             return obj6;
           } else {
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } else if (arg0 === 1) {
           c6 = 3;
@@ -232,7 +232,7 @@ obj = function _ensureOrbsArcadeEnrollment() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -280,7 +280,7 @@ obj = function _ensureOrbsArcadeEnrollment() {
             obj = closure_130_1(closure_130_2[6]);
             obj.dispatch(obj7);
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp22) {
           closure_3 = tmp22;
@@ -314,7 +314,7 @@ obj = function _postOrbsArcadeClaimRewards() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -380,7 +380,7 @@ obj = function _postOrbsArcadeClaimRewardsWithRetry() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c6;
@@ -542,7 +542,7 @@ obj = function _claimOrbsArcadeRewards() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {

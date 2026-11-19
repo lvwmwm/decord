@@ -1,19 +1,19 @@
-// Module ID: 12284
-// Function ID: 12285
+// Module ID: 12267
+// Function ID: 12268
 // Name: GuildAntiRaidActionCreators
-// Dependencies: [5, 4694, 8676, 1072, 1256, 5560, 7905, 2169, 1285, 11078, 2]
+// Dependencies: [5, 4663, 8645, 1072, 1256, 5529, 7875, 2169, 1285, 11056, 2]
 // Exports: handleReportRaid, handleResolveRaid, setGuildIncidentActions, setGuildRaidAlerts, trackReportRaidViewed
 
-// Module 12284 (GuildAntiRaidActionCreators)
+// Module 12267 (GuildAntiRaidActionCreators)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
 import _modDef2169 from "module_2169" /* 2169 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5560 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 7905 */;
-import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 8676 */;
-import getGuildSafetyAlertsChannelIdDefault from "getGuildSafetyAlertsChannelId" /* 11078 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5529 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 7875 */;
+import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 8645 */;
+import getGuildSafetyAlertsChannelIdDefault from "getGuildSafetyAlertsChannelId" /* 11056 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildStore from "GuildStore" /* 4694 */;
+import GuildStore from "GuildStore" /* 4663 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -39,7 +39,7 @@ let obj = function _setGuildRaidAlerts() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -83,7 +83,7 @@ let obj = function _setGuildRaidAlerts() {
             return { value, done: true };
           } else {
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp10) {
           c2 = 3;
@@ -175,7 +175,7 @@ obj = function _handleReportRaid() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {

@@ -1,19 +1,19 @@
-// Module ID: 18131
-// Function ID: 18132
+// Module ID: 18124
+// Function ID: 18125
 // Name: ActionStatusSubLabel
-// Dependencies: [19, 21, 4823, 4832, 1655, 5414, 5429, 5033, 1708, 2]
+// Dependencies: [19, 21, 4792, 4801, 1655, 5383, 5398, 5002, 1708, 2]
 // Exports: ActionStatusSubLabel
 
-// Module 18131 (ActionStatusSubLabel)
+// Module 18124 (ActionStatusSubLabel)
 import _mod1655 from "module_1655" /* 1655 */;
 import _mod1708 from "module_1708" /* 1708 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4832 */;
-import timing_timing from "timing/timing" /* 5033 */;
-import Text_Text from "Text/Text" /* 5414 */;
-import useFontScale from "useFontScale" /* 5429 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4801 */;
+import timing_timing from "timing/timing" /* 5002 */;
+import Text_Text from "Text/Text" /* 5383 */;
+import useFontScale from "useFontScale" /* 5398 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const module_1655 = _mod1655;

@@ -1,243 +1,370 @@
 // Module ID: 15265
 // Function ID: 15266
-// Dependencies: [41, 42, 15238, 15240, 15241, 15237, 15263, 15266]
+// Dependencies: [15252, 15251, 15237, 15254]
 
 // Module 15265
-import _mod15238 from "module_15238" /* 15238 */;
-import _mod15240 from "module_15240" /* 15240 */;
-import _mod15241 from "module_15241" /* 15241 */;
-import _mod15263 from "module_15263" /* 15263 */;
-import _mod15266 from "module_15266" /* 15266 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
+import _mod15237 from "module_15237" /* 15237 */;
+import _mod15251 from "module_15251" /* 15251 */;
+import _mod15252 from "module_15252" /* 15252 */;
+import _mod15254 from "module_15254" /* 15254 */;
 
-const semver = Symbol("SemVer ANY");
-class Comparator {
-  constructor(loose, arg1) {
-    const self = this;
-    _classCallCheck(this, Comparator);
-    const tmp4 = _mod15238(arg1);
-    let str = loose;
-    if (loose instanceof Comparator) {
-      if (loose.loose === tmp4.loose) {
-        return loose;
-      } else {
-        str = loose.value;
+let set;
+
+let tmp = new _mod15251(">=0.0.0-0");
+const items = [tmp];
+let tmp2 = new _mod15251(">=0.0.0");
+const items1 = [tmp2];
+function simpleSubset(arg0, item10015, includePrerelease) {
+  let tmp;
+  let tmp2;
+  let tmp3;
+  let tmp4;
+  if (arg0 === item10015) {
+    return true;
+  } else {
+    let tmp9 = arg0;
+    if (1 === arg0.length) {
+      tmp9 = arg0;
+      const tmp6 = require;
+      if (arg0[0].semver === _mod15251.ANY) {
+        if (1 === item10015.length) {
+          if (item10015[0].semver === tmp6(15251).ANY) {
+            return true;
+          }
+        }
+        tmp9 = includePrerelease.includePrerelease ? items : items1;
       }
     }
-    const str2 = str.trim();
-    const parts = str2.split(/\s+/);
-    const joined = parts.join(" ");
-    _mod15240("comparator", joined, tmp4);
-    self.options = tmp4;
-    self.loose = tmp4.loose;
-    const parsed = self.parse(joined);
-    if (self.semver === semver) {
-      self.value = "";
-    } else {
-      self.value = self.operator + self.semver.version;
+    let tmp12 = item10015;
+    if (1 === item10015.length) {
+      tmp12 = item10015;
+      if (item10015[0].semver === _mod15251.ANY) {
+        if (includePrerelease.includePrerelease) {
+          return true;
+        } else {
+          tmp12 = items1;
+        }
+      }
     }
-    _mod15240("comp", self);
+    const _Set = Set;
+    const self = this;
+    const self2 = this;
+    set = new Set();
+    const iter = tmp9[Symbol.iterator]();
+    const nextResult = iter.next();
+    const tmp18 = set;
+    while (iter !== undefined) {
+      let tmp23 = nextResult;
+      if (">" !== nextResult.operator) {
+        if (">=" !== tmp23.operator) {
+          if ("<" !== tmp23.operator) {
+            if ("<=" !== tmp23.operator) {
+              let addResult = set.add(tmp23.semver);
+            }
+          }
+          tmp2 = lowerLT(tmp2, tmp23, includePrerelease);
+        }
+        continue;
+      }
+      tmp = higherGT(tmp, tmp23, includePrerelease);
+    }
+    if (set.size > 1) {
+      return null;
+    } else {
+      let tmp36;
+      if (tmp) {
+        if (tmp2) {
+          const tmp43 = _mod15237(tmp.semver, tmp2.semver, includePrerelease);
+          if (tmp43 > 0) {
+            return null;
+          } else {
+            tmp36 = tmp43;
+            if (0 === tmp43) {
+              if (">=" === tmp.operator) {
+                tmp36 = tmp43;
+              }
+              return null;
+            }
+          }
+        }
+      }
+      const iter2 = tmp18[Symbol.iterator]();
+      const nextResult1 = iter2.next();
+      if (iter2 === undefined) {
+        includePrerelease = !tmp2;
+        if (tmp2) {
+          includePrerelease = includePrerelease.includePrerelease;
+        }
+        if (!includePrerelease) {
+          includePrerelease = !tmp2.semver.prerelease.length;
+        }
+        const semver = !includePrerelease && tmp2.semver;
+        let flag3 = semver;
+        let includePrerelease2 = !tmp;
+        if (tmp) {
+          includePrerelease2 = includePrerelease.includePrerelease;
+        }
+        if (!includePrerelease2) {
+          includePrerelease2 = !tmp.semver.prerelease.length;
+        }
+        const semver2 = !includePrerelease2 && tmp.semver;
+        let flag4 = semver2;
+        const tmp86 = flag3 && 1 === flag3.prerelease.length && "<" === tmp2.operator && 0 === flag3.prerelease[0];
+        if (tmp86) {
+          flag3 = false;
+        }
+        const iter3 = tmp12[Symbol.iterator]();
+        const nextResult2 = iter3.next();
+        while (iter3 !== undefined) {
+          let tmp94 = nextResult2;
+          let tmp95 = tmp4;
+          if (!tmp95) {
+            tmp95 = ">" === tmp94.operator;
+          }
+          if (!tmp95) {
+            tmp95 = ">=" === tmp94.operator;
+          }
+          tmp4 = tmp95;
+          let tmp98 = tmp3;
+          if (!tmp98) {
+            tmp98 = "<" === tmp94.operator;
+          }
+          if (!tmp98) {
+            tmp98 = "<=" === tmp94.operator;
+          }
+          tmp3 = tmp98;
+          let tmp101 = tmp;
+          if (tmp101) {
+            let length = flag4;
+            if (length) {
+              length = tmp94.semver.prerelease;
+            }
+            if (length) {
+              length = tmp94.semver.prerelease.length;
+            }
+            if (length) {
+              length = tmp94.semver.major === flag4.major;
+            }
+            if (length) {
+              length = tmp94.semver.minor === flag4.minor;
+            }
+            if (length) {
+              length = tmp94.semver.patch === flag4.patch;
+            }
+            if (length) {
+              flag4 = false;
+            }
+            if (">" !== tmp94.operator) {
+              if (">=" !== tmp94.operator) {
+                if (">=" === tmp.operator) {
+                  let _String4 = String;
+                  let tmp117 = _mod15254;
+                  if (!tmp117(tmp.semver, String(tmp94), includePrerelease)) {
+                    iter3.return();
+                    return false;
+                  }
+                }
+              }
+            }
+            let tmp124 = higherGT(tmp, tmp94, includePrerelease);
+            if (tmp124 === tmp94) {
+              if (tmp125 !== tmp) {
+                iter3.return();
+                return false;
+              }
+            }
+          }
+          let tmp128 = tmp2;
+          if (tmp128) {
+            let length2 = flag3;
+            if (length2) {
+              length2 = tmp94.semver.prerelease;
+            }
+            if (length2) {
+              length2 = tmp94.semver.prerelease.length;
+            }
+            if (length2) {
+              length2 = tmp94.semver.major === flag3.major;
+            }
+            if (length2) {
+              length2 = tmp94.semver.minor === flag3.minor;
+            }
+            if (length2) {
+              length2 = tmp94.semver.patch === flag3.patch;
+            }
+            if (length2) {
+              flag3 = false;
+            }
+            if ("<" !== tmp94.operator) {
+              if ("<=" !== tmp94.operator) {
+                if ("<=" === tmp2.operator) {
+                  let _String5 = String;
+                  let tmp144 = _mod15254;
+                  if (!tmp144(tmp2.semver, String(tmp94), includePrerelease)) {
+                    iter3.return();
+                    return false;
+                  }
+                }
+              }
+            }
+            let tmp151 = lowerLT(tmp2, tmp94, includePrerelease);
+            if (tmp151 === tmp94) {
+              if (tmp152 !== tmp2) {
+                iter3.return();
+                return false;
+              }
+            }
+          }
+          if (!tmp94.operator) {
+            let tmp156 = tmp2;
+            if (tmp156) {
+              if (0 !== tmp36) {
+                iter3.return();
+                return false;
+              }
+            }
+          }
+          continue;
+        }
+        let tmp163 = !(tmp && tmp3 && !tmp2 && 0 !== tmp36);
+        const tmp161 = tmp && tmp3 && !tmp2 && 0 !== tmp36;
+        if (tmp163) {
+          if (tmp2) {
+            tmp2 = tmp4;
+          }
+          if (tmp2) {
+            tmp2 = !tmp;
+          }
+          if (tmp2) {
+            tmp2 = 0 !== tmp36;
+          }
+          let tmp164 = !tmp2;
+          if (tmp164) {
+            tmp164 = !flag4 && !flag3;
+          }
+          tmp163 = tmp164;
+        }
+        return tmp163;
+      } else {
+        const tmp49 = tmp;
+        if (tmp49) {
+          const _String = String;
+          const tmp54 = _mod15254;
+          if (!tmp54(nextResult1, String(tmp), includePrerelease)) {
+            iter2.return();
+            return null;
+          }
+        }
+        const tmp59 = tmp2;
+        if (tmp59) {
+          const _String2 = String;
+          const tmp64 = _mod15254;
+          if (!tmp64(nextResult1, String(tmp2), includePrerelease)) {
+            iter2.return();
+            return null;
+          }
+        }
+        for (const item10133 of tmp12) {
+          let _String3 = String;
+          let tmp75 = _mod15254;
+          if (tmp75(tmp48, String(item10133), includePrerelease)) {
+            continue;
+          } else {
+            obj2.return();
+            iter2.return();
+            let flag = false;
+            return false;
+          }
+        }
+        iter2.return();
+        return true;
+      }
+    }
   }
 }
-const entry = {
-  key: "parse",
-  value: function parse(str) {
-    let tmp3;
-    let tmp5;
-    const self = this;
-    const loose = this.options.loose;
-    const safeRe = _mod15241.safeRe;
-    const t = _mod15241.t;
-    if (loose) {
-      tmp3 = safeRe[t.COMPARATORLOOSE];
-      tmp5 = tmp;
-    } else {
-      tmp3 = safeRe[t.COMPARATOR];
-      tmp5 = tmp;
-    }
-    const match = str.match(tmp3);
-    if (match) {
-      let str3 = "";
-      if (undefined !== match[1]) {
-        str3 = match[1];
-      }
-      self.operator = str3;
-      if ("=" === self.operator) {
-        self.operator = "";
-      }
-      if (match[2]) {
-        const self4 = this;
-        const self5 = this;
-        self.semver = new tmp5(15237)(match[2], self.options.loose);
-        const tmp11 = new tmp5(15237)(match[2], self.options.loose);
+function higherGT(semver, semver2, includePrerelease) {
+  if (semver) {
+    const tmp4 = _mod15237(semver.semver, semver2.semver, includePrerelease);
+    let tmp5 = semver;
+    if (tmp4 <= 0) {
+      let tmp6;
+      if (tmp4 < 0) {
+        tmp6 = semver2;
       } else {
-        self.semver = semver;
-      }
-    } else {
-      const _TypeError = TypeError;
-      const _HermesInternal = HermesInternal;
-      const self2 = this;
-      const self3 = this;
-      const typeError = new TypeError("Invalid comparator: " + str);
-      throw typeError;
-    }
-  }
-};
-const items = [
-  entry,
-  {
-    key: "toString",
-    value: function toString() {
-      return this.value;
-    }
-  },
-  {
-    key: "test",
-    value: function test(arg0) {
-      const self = this;
-      let tmp = arg0;
-      _mod15240("Comparator.test", arg0, this.options.loose);
-      if (this.semver !== semver) {
-        if (tmp !== tmp5) {
-          if (typeof tmp === "string") {
-            try {
-              const self2 = this;
-              const self3 = this;
-              tmp = new tmp2(15237)(tmp, self.options);
-            } catch (err) {
-              return false;
-            }
-          }
-          return _mod15263(tmp, self.operator, self.semver, self.options);
+        tmp6 = semver;
+        if (">" === semver2.operator) {
+          tmp6 = semver;
         }
       }
-      return true;
+      tmp5 = tmp6;
     }
-  },
-  {
-    key: "intersects",
-    value: function intersects(value, arg1) {
-      if (value instanceof Comparator) {
-        let tmp6;
-        const self3 = this;
-        if ("" === this.operator) {
-          let isMatch = "" === self3.value;
-          if (!isMatch) {
-            const self6 = this;
-            const self7 = this;
-            const obj2 = new _mod15266(value.value, arg1);
-            isMatch = obj2.test(self3.value);
-          }
-          tmp6 = isMatch;
-        } else if ("" === value.operator) {
-          let isMatch1 = "" === value.value;
-          if (!isMatch1) {
-            const self4 = this;
-            const self5 = this;
-            const obj = new _mod15266(self3.value, arg1);
-            isMatch1 = obj.test(value.semver);
-          }
-          tmp6 = isMatch1;
-        } else {
-          const tmp39 = _mod15238(arg1);
-          const includePrerelease = tmp39.includePrerelease;
-          tmp6 = !includePrerelease;
-          if (includePrerelease) {
-            tmp6 = "<0.0.0-0" !== self3.value && "<0.0.0-0" !== value.value;
-          }
-          if (tmp6) {
-            let tmp7 = !tmp39.includePrerelease;
-            if (tmp7) {
-              value = self3.value;
-              let startsWithResult = value.startsWith("<0.0.0");
-              if (!startsWithResult) {
-                const value2 = value.value;
-                startsWithResult = value2.startsWith("<0.0.0");
-              }
-              tmp7 = startsWithResult;
-            }
-            let tmp9 = !tmp7;
-            if (tmp9) {
-              const operator = self3.operator;
-              const startsWithResult1 = operator.startsWith(">");
-              let tmp11 = !startsWithResult1;
-              if (startsWithResult1) {
-                const operator2 = value.operator;
-                tmp11 = !operator2.startsWith(">");
-              }
-              let tmp12 = !tmp11;
-              if (tmp11) {
-                const operator3 = self3.operator;
-                const startsWithResult2 = operator3.startsWith("<");
-                let tmp14 = !startsWithResult2;
-                if (startsWithResult2) {
-                  const operator4 = value.operator;
-                  tmp14 = !operator4.startsWith("<");
-                }
-                let tmp15 = !tmp14;
-                if (tmp14) {
-                  let tmp16 = self3.semver.version !== value.semver.version;
-                  if (!tmp16) {
-                    const operator5 = self3.operator;
-                    tmp16 = !operator5.includes("=");
-                  }
-                  if (!tmp16) {
-                    const operator6 = value.operator;
-                    tmp16 = !operator6.includes("=");
-                  }
-                  let tmp17 = !tmp16;
-                  if (tmp16) {
-                    let startsWithResult3 = _mod15263(self3.semver, "<", value.semver, tmp39);
-                    if (startsWithResult3) {
-                      const operator7 = self3.operator;
-                      startsWithResult3 = operator7.startsWith(">");
-                    }
-                    if (startsWithResult3) {
-                      const operator8 = value.operator;
-                      startsWithResult3 = operator8.startsWith("<");
-                    }
-                    let tmp22 = startsWithResult3;
-                    if (!tmp22) {
-                      let startsWithResult4 = _mod15263(self3.semver, ">", value.semver, tmp39);
-                      if (startsWithResult4) {
-                        const operator9 = self3.operator;
-                        startsWithResult4 = operator9.startsWith("<");
-                      }
-                      if (startsWithResult4) {
-                        const operator10 = value.operator;
-                        startsWithResult4 = operator10.startsWith(">");
-                      }
-                      tmp22 = startsWithResult4;
-                    }
-                    tmp17 = tmp22;
-                  }
-                  tmp15 = tmp17;
-                }
-                tmp12 = tmp15;
-              }
-              tmp9 = tmp12;
-            }
-            tmp6 = tmp9;
-          }
-        }
-        return tmp6;
+    return tmp5;
+  } else {
+    return semver2;
+  }
+}
+function lowerLT(semver, semver2, includePrerelease) {
+  if (semver) {
+    const tmp4 = _mod15237(semver.semver, semver2.semver, includePrerelease);
+    let tmp5 = semver;
+    if (tmp4 >= 0) {
+      let tmp6;
+      if (tmp4 > 0) {
+        tmp6 = semver2;
       } else {
-        const _TypeError = TypeError;
-        const self = this;
-        const self2 = this;
-        const typeError = new TypeError("a Comparator is required");
-        throw typeError;
+        tmp6 = semver;
+        if ("<" === semver2.operator) {
+          tmp6 = semver;
+        }
       }
+      tmp5 = tmp6;
     }
+    return tmp5;
+  } else {
+    return semver2;
   }
-];
-let obj = {
-  key: "ANY",
-  get() {
-    return semver;
-  }
-};
-const items1 = [obj];
+}
 
-export default _createClass(Comparator, items, items1);
+export default function(arg0, arg1, includePrerelease) {
+  let obj = includePrerelease;
+  if (includePrerelease === undefined) {
+    obj = {};
+  }
+  if (arg0 === arg1) {
+    return true;
+  } else {
+    const self = this;
+    const self2 = this;
+    const self3 = this;
+    const self4 = this;
+    const tmp20 = new _mod15252(arg0, obj);
+    let flag = false;
+    const tmp23 = new _mod15252(arg1, obj);
+    const iter = tmp20.set[Symbol.iterator]();
+    const nextResult = iter.next();
+    label0:
+    while (iter !== undefined) {
+      set = tmp23.set;
+      for (const item10015 of set) {
+        let tmp9 = simpleSubset(tmp4, item10015, obj);
+        let tmp10 = flag;
+        if (!tmp10) {
+          tmp10 = null !== tmp9;
+        }
+        flag = tmp10;
+        let tmp12 = tmp9;
+        if (tmp12) {
+          obj2.return();
+          continue label0;
+        }
+        continue;
+      }
+      let tmp14 = flag;
+      if (tmp14) {
+        iter.return();
+        return false;
+      }
+    }
+    return true;
+  }
+};

@@ -1,23 +1,23 @@
-// Module ID: 7673
-// Function ID: 7674
+// Module ID: 7643
+// Function ID: 7644
 // Name: InlineNotice
-// Dependencies: [19, 17, 21, 7136, 575, 2192, 7674, 5527, 7443, 5415, 4823, 5414, 5429, 1113, 4887, 1360, 4832, 5421, 7502, 7062, 2]
+// Dependencies: [19, 17, 21, 7106, 575, 2192, 7644, 5496, 7413, 5384, 4792, 5383, 5398, 1113, 4856, 1360, 4801, 5390, 7472, 7032, 2]
 // Exports: InlineNotice
 
-// Module 7673 (InlineNotice)
+// Module 7643 (InlineNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1360 */;
 import _modDef2192 from "module_2192" /* 2192 */;
-import Text_Text from "Text/Text" /* 5414 */;
-import TextVariants from "TextVariants" /* 5415 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5527 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 7136 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 7443 */;
-import WarningIcon from "WarningIcon" /* 7674 */;
+import Text_Text from "Text/Text" /* 5383 */;
+import TextVariants from "TextVariants" /* 5384 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5496 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 7106 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 7413 */;
+import WarningIcon from "WarningIcon" /* 7644 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -31,7 +31,7 @@ let obj5;
 let obj7;
 let obj8;
 let tmp;
-const AccessibilityAnnouncer2 = tmp(4832);
+const AccessibilityAnnouncer2 = tmp(4801);
 function NoticeMessageList(color) {
   let closure_2;
   let items;
@@ -43,7 +43,7 @@ function NoticeMessageList(color) {
   const tmp = closure_10();
   dependencyMap = tmp;
   obj = { style: tmp.stack, children: items1 };
-  items1 = [closure_5(variant(5414).Text, { variant, color, children: intro }), ];
+  items1 = [closure_5(variant(5383).Text, { variant, color, children: intro }), ];
   let obj2 = {
     accessibilityRole: "list",
     style: tmp.stack,

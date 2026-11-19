@@ -1,20 +1,20 @@
-// Module ID: 9223
-// Function ID: 9224
+// Module ID: 9199
+// Function ID: 9200
 // Name: SKUActionCreators
-// Dependencies: [5, 8836, 6582, 1072, 572, 6266, 1285, 4644, 9224, 8030, 6257, 4643, 4635, 6267, 6286, 1255, 2]
+// Dependencies: [5, 8805, 6553, 1072, 572, 6238, 1285, 4613, 9200, 7999, 6228, 6230, 4605, 6239, 6258, 1255, 2]
 // Exports: clearPurchaseError, fetchPublicSKU, fetchPublishedSKU, fetchSKU, fetchTestSKUsForApplication, grantChannelBranchEntitlement, orderSKU, previewPurchaseSku, purchaseSKU, resendPaymentVerificationEmail, showPurchaseConfirmationStep, updateSKUPaymentIsGift
 
-// Module 9223 (SKUActionCreators)
+// Module 9199 (SKUActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
-import BillingUtils from "BillingUtils" /* 4635 */;
-import StoreUtils from "StoreUtils" /* 6266 */;
-import PurchaseTokenUtils from "PurchaseTokenUtils" /* 6286 */;
-import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 8030 */;
-import TestModeUtils from "TestModeUtils" /* 9224 */;
+import BillingUtils from "BillingUtils" /* 4605 */;
+import StoreUtils from "StoreUtils" /* 6238 */;
+import PurchaseTokenUtils from "PurchaseTokenUtils" /* 6258 */;
+import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7999 */;
+import TestModeUtils from "TestModeUtils" /* 9200 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 8836 */;
-import SKUStore from "SKUStore" /* 6582 */;
+import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 8805 */;
+import SKUStore from "SKUStore" /* 6553 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ let obj = function _fetchSKU() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -94,7 +94,7 @@ let obj = function _fetchSKU() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         } catch (tmp32) {
           closure_3 = tmp32;
           if (0 === c4) {
@@ -125,7 +125,7 @@ obj = function _fetchPublicSKU() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -181,7 +181,7 @@ obj = function _fetchPublicSKU() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         } catch (tmp32) {
           closure_3 = tmp32;
           if (0 === c4) {
@@ -215,7 +215,7 @@ obj = function _fetchPublishedSKU() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -308,7 +308,7 @@ obj = function _fetchPublishedSKU() {
             c7 = 0;
           }
           c9 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         } catch (tmp36) {
           closure_6 = tmp36;
           if (0 === c7) {
@@ -338,7 +338,7 @@ obj = function _fetchTestSKUsForApplication() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -441,7 +441,7 @@ obj = function _previewPurchaseSku() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let currency;
@@ -572,7 +572,7 @@ obj = function _grantChannelBranchEntitlement() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -664,7 +664,7 @@ obj = function _orderSKU() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -759,6 +759,7 @@ obj = function _purchaseSKU() {
       let c5;
       let c7;
       let c9;
+      let found;
       let isGift;
       let loadId;
       let obj18;
@@ -775,7 +776,7 @@ obj = function _purchaseSKU() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -828,7 +829,7 @@ obj = function _purchaseSKU() {
               return obj10;
             }
           } else {
-            let prop;
+            let BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX;
             if (1 === c11) {
               country_code = 0;
               let closure_19 = closure_10;
@@ -839,16 +840,16 @@ obj = function _purchaseSKU() {
                 const self2 = this;
                 billingError = new closure_136_0(closure_136_2[10]).BillingError(closure_19);
               }
-              const tmp110 = billingError.code !== closure_136_0(closure_136_2[11]).ErrorCodes.CONFIRMATION_REQUIRED && billingError.code !== closure_136_0(closure_136_2[11]).ErrorCodes.AUTHENTICATION_REQUIRED;
-              if (!tmp110) {
-                prop = skuId;
+              const tmp111 = billingError.code !== closure_136_0(closure_136_2[11]).ErrorCodes.CONFIRMATION_REQUIRED && billingError.code !== closure_136_0(closure_136_2[11]).ErrorCodes.AUTHENTICATION_REQUIRED;
+              if (!tmp111) {
+                BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX = skuId;
                 const obj12 = { type: "SKU_PURCHASE_AWAIT_CONFIRMATION", skuId, isGift };
                 const obj16 = closure_136_1(closure_136_2[4]);
                 obj16.dispatch(obj12);
               }
-              prop = closure_136_1(closure_136_2[4]);
+              BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX = closure_136_1(closure_136_2[4]);
               const obj13 = { type: "SKU_PURCHASE_FAIL", loadId, applicationId, skuId, error: billingError };
-              prop.dispatch(obj13);
+              BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX.dispatch(obj13);
               if (billingError.code !== closure_136_0(closure_136_2[11]).ErrorCodes.CONFIRMATION_REQUIRED) {
                 throw billingError;
               } else if (closure_19.body.payment_id) {
@@ -879,11 +880,11 @@ obj = function _purchaseSKU() {
                   if (null != promotion_id_override) {
                     body.promotion_id_override = promotion_id_override;
                   }
-                  const tmp42 = closure_13;
-                  if (tmp42) {
+                  const tmp43 = closure_13;
+                  if (tmp43) {
                     body.test_mode = true;
                   } else if (null != paymentSource) {
-                    prop = body;
+                    BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX = body;
                     body.payment_source_id = paymentSource.id;
                     closure_5 = body;
                     c11 = 4;
@@ -904,19 +905,19 @@ obj = function _purchaseSKU() {
                     body.quantity = quantity;
                   }
                   _false = c11;
-                  const tmp74 = body;
+                  const tmp75 = body;
                   if (c11 == null) {
                     _false = false;
                   }
-                  tmp74.apply_wallet_balance = _false;
+                  tmp75.apply_wallet_balance = _false;
                   if (null != c12) {
                     body.expected_payment_legs = c12.map((payment_gateway) => ({ payment_gateway: payment_gateway.payment_gateway, amount: payment_gateway.amount }));
                   }
                   const HTTP = closure_136_0(closure_136_2[6]).HTTP;
-                  const request = { url: closure_136_7.STORE_SKU_PURCHASE(skuId), body, context: obj18, oldFormErrors: true, rejectWithError: prop.rejectWithMigratedError() };
+                  const request = { url: closure_136_7.STORE_SKU_PURCHASE(skuId), body, context: obj18, oldFormErrors: true, rejectWithError: BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX.rejectWithMigratedError() };
                   const post = HTTP.post;
                   obj18 = { load_id };
-                  prop = closure_136_0(closure_136_2[6]);
+                  BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX = closure_136_0(closure_136_2[6]);
                   c11 = 5;
                   c12 = 1;
                   const obj21 = { value: post(request), done: false };
@@ -932,16 +933,16 @@ obj = function _purchaseSKU() {
                   return { value, done: true };
                 } else {
                   closure_16 = value;
-                  prop = closure_136_7.BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX;
+                  BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX = closure_136_7.BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX;
                   expected_amount = closure_16;
                   const obj7 = closure_136_0(closure_136_2[6]);
                   const aPIBaseURL = obj7.getAPIBaseURL();
                   const type = paymentSource.type;
-                  const tmp30 = body;
+                  const tmp31 = body;
                   if (closure_16 == null) {
                     expected_amount = "";
                   }
-                  tmp30.return_url = aPIBaseURL + prop(type, expected_amount, "success");
+                  tmp31.return_url = aPIBaseURL + BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX(type, expected_amount, "success");
                 }
               } else if (4 === c11) {
                 if (arg0 === 1) {
@@ -970,18 +971,15 @@ obj = function _purchaseSKU() {
                 return { value, done: true };
               } else {
                 closure_17 = value;
-                const obj26 = { type: "SKU_PURCHASE_SUCCESS", skuId, libraryApplications: prop, entitlements: closure_17.body.entitlements, giftCode: closure_17.body.gift_code, loadId };
-                prop = skuId;
-                const dispatch = closure_136_1(closure_136_2[4]).dispatch;
-                closure_136_1(closure_136_2[4]);
+                const obj26 = { skuId, libraryApplications: found, entitlements: closure_17.body.entitlements, giftCode: closure_17.body.gift_code, loadId };
+                const tmp155 = closure_136_17;
                 if (null != closure_17.body.library_applications) {
                   const library_applications = closure_17.body.library_applications;
-                  prop = library_applications.filter(closure_136_0(closure_136_2[15]).isNotNullish);
+                  found = library_applications.filter(closure_136_0(closure_136_2[15]).isNotNullish);
                 } else {
-                  prop = [];
+                  found = [];
                 }
-                prop = loadId;
-                dispatch(obj26);
+                tmp155(obj26);
                 obj = { appliedUserDiscounts: closure_17.body.applied_user_discounts, redirectConfirmation: false };
                 const merged2 = Object.assign(closure_17.body);
                 country_code = 0;
@@ -993,11 +991,11 @@ obj = function _purchaseSKU() {
               }
             }
           }
-        } catch (tmp145) {
-          closure_10 = tmp145;
+        } catch (tmp146) {
+          closure_10 = tmp146;
           if (0 === country_code) {
             c12 = 3;
-            throw tmp145;
+            throw tmp146;
           } else {
             c11 = 1;
           }
@@ -1007,6 +1005,13 @@ obj = function _purchaseSKU() {
   });
   return obj(...arguments);
 };
+function dispatchSKUPurchaseSuccess(arg0) {
+  const dispatch = DispatcherDefault.dispatch;
+  obj = { type: "SKU_PURCHASE_SUCCESS" };
+  DispatcherDefault;
+  const merged = Object.assign(arg0);
+  dispatch(obj);
+}
 obj = function _resendPaymentVerificationEmail() {
   obj = _asyncToGenerator(async function(arg0, value) {
     let obj7;
@@ -1021,7 +1026,7 @@ obj = function _resendPaymentVerificationEmail() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c3;
@@ -1119,6 +1124,7 @@ export function orderSKU() {
 export function purchaseSKU() {
   return obj(...arguments);
 }
+export { dispatchSKUPurchaseSuccess };
 export function resendPaymentVerificationEmail() {
   return obj(...arguments);
 }

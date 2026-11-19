@@ -1,10 +1,10 @@
-// Module ID: 10982
-// Function ID: 10983
+// Module ID: 10960
+// Function ID: 10961
 // Name: GameConsoleAlertUtils
-// Dependencies: [2, 10983]
+// Dependencies: [2, 10961]
 
-// Module 10982 (GameConsoleAlertUtils)
-import game_console_GameConsoleAlertUtils from "game_console/GameConsoleAlertUtils" /* 10983 */;
+// Module 10960 (GameConsoleAlertUtils)
+import game_console_GameConsoleAlertUtils from "game_console/GameConsoleAlertUtils" /* 10961 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_console/GameConsoleAlertUtils.tsx");

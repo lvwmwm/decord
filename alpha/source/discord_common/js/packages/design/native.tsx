@@ -1,27 +1,27 @@
-// Module ID: 4884
-// Function ID: 4885
+// Module ID: 4853
+// Function ID: 4854
 // Name: native
-// Dependencies: [2, 4832, 4885, 4886, 4837, 4838, 4833, 4839, 4888, 4889, 4840, 4841, 4842, 4843, 4890, 4846, 4940, 4986]
+// Dependencies: [2, 4801, 4854, 4855, 4806, 4807, 4802, 4808, 4857, 4858, 4809, 4810, 4811, 4812, 4859, 4815, 4909, 4955]
 
-// Module 4884 (native)
-import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 4832 */;
-import AccessibilityAnnouncerLiveRegion from "AccessibilityAnnouncerLiveRegion" /* 4833 */;
-import react from "react" /* 4837 */;
-import ThemeUtils from "ThemeUtils" /* 4839 */;
-import ThemeContext from "ThemeContext" /* 4840 */;
-import ThemeContextProvider from "ThemeContextProvider" /* 4841 */;
-import ThemeContextProvider_ThemeTypes from "ThemeContextProvider/ThemeTypes" /* 4842 */;
-import ThemeContextFlags from "ThemeContextFlags" /* 4843 */;
-import shared_Colors from "shared/Colors" /* 4846 */;
-import react_native from "react-native" /* 4885 */;
-import useFieldLabelA11yNative from "useFieldLabelA11yNative" /* 4886 */;
-import MotionTypes from "MotionTypes" /* 4888 */;
-import TransitionGroup_TransitionGroup from "TransitionGroup/TransitionGroup" /* 4889 */;
-import _mod4890 from "module_4890" /* 4890 */;
-import ManaContext from "ManaContext" /* 4940 */;
-import GraphicTypes from "GraphicTypes" /* 4986 */;
+// Module 4853 (native)
+import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 4801 */;
+import AccessibilityAnnouncerLiveRegion from "AccessibilityAnnouncerLiveRegion" /* 4802 */;
+import react from "react" /* 4806 */;
+import ThemeUtils from "ThemeUtils" /* 4808 */;
+import ThemeContext from "ThemeContext" /* 4809 */;
+import ThemeContextProvider from "ThemeContextProvider" /* 4810 */;
+import ThemeContextProvider_ThemeTypes from "ThemeContextProvider/ThemeTypes" /* 4811 */;
+import ThemeContextFlags from "ThemeContextFlags" /* 4812 */;
+import shared_Colors from "shared/Colors" /* 4815 */;
+import react_native from "react-native" /* 4854 */;
+import useFieldLabelA11yNative from "useFieldLabelA11yNative" /* 4855 */;
+import MotionTypes from "MotionTypes" /* 4857 */;
+import TransitionGroup_TransitionGroup from "TransitionGroup/TransitionGroup" /* 4858 */;
+import _mod4859 from "module_4859" /* 4859 */;
+import ManaContext from "ManaContext" /* 4909 */;
+import GraphicTypes from "GraphicTypes" /* 4955 */;
 import size from "module_2" /* 2 */;
-import AccessibilityConstants from "AccessibilityPreferencesContext/AccessibilityConstants" /* 4838 */;
+import AccessibilityConstants from "AccessibilityPreferencesContext/AccessibilityConstants" /* 4807 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/design/native.tsx");
 for (const key10018 in AccessibilityAnnouncer) {
@@ -76,8 +76,8 @@ for (const key10067 in ThemeContextFlags) {
   exports[key10067] = ThemeContextFlags[key10067];
   continue;
 }
-for (const key10071 in _mod4890) {
-  exports[key10071] = _mod4890[key10071];
+for (const key10071 in _mod4859) {
+  exports[key10071] = _mod4859[key10071];
   continue;
 }
 for (const key10075 in shared_Colors) {

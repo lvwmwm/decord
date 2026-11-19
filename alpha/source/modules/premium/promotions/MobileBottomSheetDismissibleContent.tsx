@@ -1,12 +1,12 @@
-// Module ID: 9105
-// Function ID: 9106
+// Module ID: 9080
+// Function ID: 9081
 // Name: MobileBottomSheetDismissibleContent
-// Dependencies: [4663, 4656, 2]
+// Dependencies: [4632, 4625, 2]
 // Exports: getMobileBottomSheetDismissibleContent
 
-// Module 9105 (MobileBottomSheetDismissibleContent)
-import dismissible_content from "dismissible_content" /* 4656 */;
-import DismissibleContentTypes from "DismissibleContentTypes" /* 4663 */;
+// Module 9080 (MobileBottomSheetDismissibleContent)
+import dismissible_content from "dismissible_content" /* 4625 */;
+import DismissibleContentTypes from "DismissibleContentTypes" /* 4632 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/promotions/MobileBottomSheetDismissibleContent.tsx");

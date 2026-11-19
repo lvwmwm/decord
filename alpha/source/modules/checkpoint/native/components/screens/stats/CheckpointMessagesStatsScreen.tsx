@@ -1,28 +1,28 @@
-// Module ID: 12678
-// Function ID: 12679
+// Module ID: 12661
+// Function ID: 12662
 // Name: CheckpointMessagesStatsScreen
-// Dependencies: [17, 12417, 5877, 21, 4823, 575, 12654, 504, 6247, 1113, 3339, 3307, 12434, 12437, 12679, 12680, 7583, 12435, 12674, 12676, 12675, 12677, 2]
+// Dependencies: [17, 12400, 5848, 21, 4792, 575, 12637, 504, 6218, 1113, 3339, 3307, 12417, 12420, 12662, 12663, 7553, 12418, 12657, 12659, 12658, 12660, 2]
 // Exports: default
 
-// Module 12678 (CheckpointMessagesStatsScreen)
+// Module 12661 (CheckpointMessagesStatsScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import CheckpointConstants from "CheckpointConstants" /* 5877 */;
-import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6247 */;
-import ChatIcon from "ChatIcon" /* 7583 */;
-import CheckpointScreenDefault from "CheckpointScreen" /* 12434 */;
-import CheckpointTextDefault from "CheckpointText" /* 12435 */;
-import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 12437 */;
-import useIsCheckpointWide from "useIsCheckpointWide" /* 12654 */;
-import CheckpointCountUpStatNumberDefault from "CheckpointCountUpStatNumber" /* 12675 */;
-import CheckpointNumberUtils from "CheckpointNumberUtils" /* 12676 */;
-import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 12677 */;
-import _modDef12679 from "module_12679" /* 12679 */;
-import _modDef12680 from "module_12680" /* 12680 */;
-import CheckpointStore from "CheckpointStore" /* 12417 */;
+import CheckpointConstants from "CheckpointConstants" /* 5848 */;
+import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6218 */;
+import ChatIcon from "ChatIcon" /* 7553 */;
+import CheckpointScreenDefault from "CheckpointScreen" /* 12417 */;
+import CheckpointTextDefault from "CheckpointText" /* 12418 */;
+import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 12420 */;
+import useIsCheckpointWide from "useIsCheckpointWide" /* 12637 */;
+import CheckpointCountUpStatNumberDefault from "CheckpointCountUpStatNumber" /* 12658 */;
+import CheckpointNumberUtils from "CheckpointNumberUtils" /* 12659 */;
+import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 12660 */;
+import _modDef12662 from "module_12662" /* 12662 */;
+import _modDef12663 from "module_12663" /* 12663 */;
+import CheckpointStore from "CheckpointStore" /* 12400 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const useIsCheckpointWideDefault = useIsCheckpointWide;
@@ -126,7 +126,7 @@ export default function CheckpointMessagesStatsScreen() {
   const obj4 = { centered: tmp4, children: metroImportDefault(View, obj5) };
   obj5 = { style: tmp4 ? tmp.wideContainer : tmp.container, children: items3 };
   const obj6 = { style: tmp4 ? tmp.wideImageContainer : tmp.imageContainer, children: metroRequire(tmp2Result4, obj7) };
-  obj7 = { animatedUri: _modDef12679, staticUri: _modDef12680, style: items2 };
+  obj7 = { animatedUri: _modDef12662, staticUri: _modDef12663, style: items2 };
   const tmp2Result = CheckpointScreenDefault;
   items2 = [tmp.image, tmp4 && tmp.wideImage];
   tmp2Result4 = CheckpointApngPlayerDefault;
@@ -142,7 +142,7 @@ export default function CheckpointMessagesStatsScreen() {
   items5 = [metroImportDefault(View, obj9), , ];
   if (roundResult <= 0 && null != stateFromStores1) {
     const obj12 = { value: stateFromStores1 };
-    tmp14Result = tmp14(tmp2(12674), obj12);
+    tmp14Result = tmp14(tmp2(12657), obj12);
   } else {
     const obj13 = { accessible: true, accessibilityLabel: tmp5Result5.formatCheckpointStatAccessibilityLabel("messages", roundResult), style: tmp.number, children: metroRequire(CheckpointCountUpStatNumberDefault, obj14) };
     obj14 = { end: roundResult };

@@ -1,14 +1,14 @@
-// Module ID: 19023
-// Function ID: 19024
+// Module ID: 19015
+// Function ID: 19016
 // Name: ChannelsFollowedIcon
-// Dependencies: [19, 21, 575, 5509, 19024, 2]
+// Dependencies: [19, 21, 575, 5478, 19016, 2]
 // Exports: ChannelsFollowedIcon
 
-// Module 19023 (ChannelsFollowedIcon)
+// Module 19015 (ChannelsFollowedIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5509 */;
-import AssetRegistry from "AssetRegistry" /* 19024 */;
+import BaseIconImage2 from "BaseIconImage" /* 5478 */;
+import AssetRegistry from "AssetRegistry" /* 19016 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

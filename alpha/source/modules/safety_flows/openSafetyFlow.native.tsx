@@ -1,13 +1,13 @@
-// Module ID: 20180
-// Function ID: 20181
+// Module ID: 20191
+// Function ID: 20192
 // Name: openSafetyFlow
-// Dependencies: [5, 4666, 1072, 20181, 6337, 20182, 19687, 20183, 7900, 20184, 2121, 2]
+// Dependencies: [5, 4635, 1072, 20192, 6308, 20193, 19683, 20194, 7870, 20195, 2121, 2]
 // Exports: openSafetyFlow
 
-// Module 20180 (openSafetyFlow)
+// Module 20191 (openSafetyFlow)
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 4666 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 4635 */;
 import size from "module_2" /* 2 */;
 
 let c6;
@@ -88,7 +88,7 @@ let obj = function _openSafetyFlow() {
       } else {
         c5 = 0;
         c7 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       if (4 === c6) {
@@ -105,7 +105,7 @@ let obj = function _openSafetyFlow() {
           if (null == task) {
             c5 = 0;
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           } else {
             const obj20 = closure_131_0(closure_131_2[6]);
             if (!obj20.isAppStoreConsentReinstatementEnabledForSession()) {
@@ -148,7 +148,7 @@ let obj = function _openSafetyFlow() {
         if (null == value) {
           c5 = 0;
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       }
       let initialScreen = getInitialScreenForTask(task);

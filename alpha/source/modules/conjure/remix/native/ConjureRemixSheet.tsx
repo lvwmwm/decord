@@ -1,21 +1,21 @@
-// Module ID: 12244
-// Function ID: 12245
+// Module ID: 12227
+// Function ID: 12228
 // Name: ConjureRemixSheet
-// Dependencies: [5, 32, 19, 17, 4694, 6458, 21, 4823, 575, 12245, 7508, 504, 6774, 1113, 4121, 5037, 7464, 7426, 6928, 5414, 5421, 5055, 7372, 7132, 6530, 7258, 7260, 2]
+// Dependencies: [5, 32, 19, 17, 4663, 6429, 21, 4792, 575, 12228, 7478, 504, 6746, 1113, 4089, 5006, 7434, 7396, 6898, 5383, 5390, 5024, 7342, 7102, 6501, 7228, 7230, 2]
 // Exports: default
 
-// Module 12244 (ConjureRemixSheet)
+// Module 12227 (ConjureRemixSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import TableRadioRow from "TableRadioRow" /* 7260 */;
-import ConjureRemix from "ConjureRemix" /* 12245 */;
+import TableRadioRow from "TableRadioRow" /* 7230 */;
+import ConjureRemix from "ConjureRemix" /* 12228 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4694 */;
-import SortedGuildStore from "SortedGuildStore" /* 6458 */;
+import GuildStore from "GuildStore" /* 4663 */;
+import SortedGuildStore from "SortedGuildStore" /* 6429 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -174,7 +174,7 @@ export default function ConjureRemixSheet(project) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -234,7 +234,7 @@ export default function ConjureRemixSheet(project) {
           }
         }
         c3 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       } catch (tmp29) {
         c3 = 3;
         throw tmp29;

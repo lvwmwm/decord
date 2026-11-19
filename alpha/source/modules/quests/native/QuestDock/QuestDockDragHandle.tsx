@@ -1,18 +1,18 @@
-// Module ID: 16633
-// Function ID: 16634
+// Module ID: 16624
+// Function ID: 16625
 // Name: QuestDockDragHandle
-// Dependencies: [19, 17, 6466, 16538, 21, 4823, 575, 16539, 1655, 5424, 16537, 5386, 1113, 2]
+// Dependencies: [19, 17, 6437, 16529, 21, 4792, 575, 16530, 1655, 5393, 16528, 5355, 1113, 2]
 
-// Module 16633 (QuestDockDragHandle)
+// Module 16624 (QuestDockDragHandle)
 import nativeDefault from "native" /* 575 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import QuestConstants from "QuestConstants" /* 6466 */;
-import QuestDockConstants from "QuestDockConstants" /* 16538 */;
-import QuestDockGestureContext from "QuestDockGestureContext" /* 16539 */;
+import QuestConstants from "QuestConstants" /* 6437 */;
+import QuestDockConstants from "QuestDockConstants" /* 16529 */;
+import QuestDockGestureContext from "QuestDockGestureContext" /* 16530 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const _modDef1655 = _mod1655;
@@ -27,9 +27,9 @@ let obj3;
 let obj4;
 let tmp2;
 const intl2 = tmp2(1113);
-const ActionSheetHeaderBar2 = tmp2(5386);
-const spring_spring = tmp2(5424);
-const QuestDockUtils = tmp2(16537);
+const ActionSheetHeaderBar2 = tmp2(5355);
+const spring_spring = tmp2(5393);
+const QuestDockUtils = tmp2(16528);
 ({ StyleSheet, View: closure_4 } = react_native);
 const QuestDockMode = QuestConstants.QuestDockMode;
 let closure_6 = QuestDockConstants.QUEST_DOCK_MODE_CHANGE_PHYSICS;

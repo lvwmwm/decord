@@ -1,19 +1,19 @@
-// Module ID: 8873
-// Function ID: 8874
+// Module ID: 8846
+// Function ID: 8847
 // Name: CollectiblesPromotionDiscountUtils
-// Dependencies: [6764, 2]
-// Exports: getPromotionPercentOff
+// Dependencies: [6735, 2]
+// Exports: getPromotionFiatPercentOff
 
-// Module 8873 (CollectiblesPromotionDiscountUtils)
-import StorefrontTypes from "StorefrontTypes" /* 6764 */;
+// Module 8846 (CollectiblesPromotionDiscountUtils)
+import StorefrontTypes from "StorefrontTypes" /* 6735 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/collectibles/utils/CollectiblesPromotionDiscountUtils.tsx");
 
-export function getPromotionPercentOff(rewardConfig) {
+export function getPromotionFiatPercentOff(collectiblesPromotionForProduct) {
   let discount;
-  if (rewardConfig != null) {
-    rewardConfig = rewardConfig.rewardConfig;
+  if (collectiblesPromotionForProduct != null) {
+    const rewardConfig = collectiblesPromotionForProduct.rewardConfig;
     if (rewardConfig != null) {
       discount = rewardConfig.discount;
     }
@@ -24,7 +24,10 @@ export function getPromotionPercentOff(rewardConfig) {
   }
   let amount = null;
   if (type === StorefrontTypes.StorefrontDiscountTypes.PERCENT) {
-    amount = discount.amount;
+    amount = null;
+    if (true === discount.fiatEnabled) {
+      amount = discount.amount;
+    }
   }
   return amount;
 }

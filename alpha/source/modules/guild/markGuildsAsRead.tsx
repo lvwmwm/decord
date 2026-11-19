@@ -1,26 +1,26 @@
-// Module ID: 15103
-// Function ID: 15104
+// Module ID: 15089
+// Function ID: 15090
 // Name: markGuildsAsRead
-// Dependencies: [7382, 6526, 4672, 4753, 6527, 1072, 6461, 11, 1256, 7387, 12, 2]
+// Dependencies: [7352, 6497, 4641, 4722, 6498, 1072, 6432, 11, 1256, 7357, 12, 2]
 // Exports: default, markChannelsAsRead
 
-// Module 15103 (markGuildsAsRead)
+// Module 15089 (markGuildsAsRead)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import ReadStateConstants from "ReadStateConstants" /* 6461 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 7387 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7382 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6526 */;
-import ChannelStore from "ChannelStore" /* 4672 */;
-import GuildChannelStore from "GuildChannelStore" /* 4753 */;
-import ReadStateStore from "ReadStateStore" /* 6527 */;
+import ReadStateConstants from "ReadStateConstants" /* 6432 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 7357 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7352 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6497 */;
+import ChannelStore from "ChannelStore" /* 4641 */;
+import GuildChannelStore from "GuildChannelStore" /* 4722 */;
+import ReadStateStore from "ReadStateStore" /* 6498 */;
 import size from "module_2" /* 2 */;
 
 let activeJoinedThreadsForGuild, channel;
 
-const f108875 = (channelId) => {
+const f108845 = (channelId) => {
   let fromTimestampResult;
   const obj = { channelId, readStateType: constants.CHANNEL, messageId: fromTimestampResult };
   channel = channel.getChannel(channelId);
@@ -62,7 +62,7 @@ export default function markGuildsAsRead(arr, source, onFinished) {
     }
     return items;
   });
-  const mapped = flatMapResult.map(f108875);
+  const mapped = flatMapResult.map(f108845);
   const item = arr.forEach((item) => {
     let obj2;
     let obj4;
@@ -78,11 +78,11 @@ export default function markGuildsAsRead(arr, source, onFinished) {
   let obj2 = AnalyticsUtilsDefault;
   let obj3 = { source, type: "guild" };
   obj2.track(AnalyticEvents.MARK_AS_READ, obj3);
-  let obj4 = mapped(7387);
+  let obj4 = mapped(7357);
   return obj4.bulkAck(mapped, onFinished);
 };
 export function markChannelsAsRead(arr, source, onFinished) {
-  const mapped = arr.map(f108875);
+  const mapped = arr.map(f108845);
   let obj = AnalyticsUtilsDefault;
   const obj2 = { source, type: "guild" };
   obj.track(AnalyticEvents.MARK_AS_READ, obj2);

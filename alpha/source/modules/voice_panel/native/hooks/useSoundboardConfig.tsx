@@ -1,14 +1,14 @@
-// Module ID: 18068
-// Function ID: 18069
+// Module ID: 18061
+// Function ID: 18062
 // Name: useSoundboardConfig
-// Dependencies: [19, 4672, 2133, 504, 18069, 10951, 1113, 2]
+// Dependencies: [19, 4641, 2133, 504, 18062, 10929, 1113, 2]
 // Exports: default
 
-// Module 18068 (useSoundboardConfig)
-import canChannelUseSoundboardDefault from "canChannelUseSoundboard" /* 10951 */;
-import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 18069 */;
+// Module 18061 (useSoundboardConfig)
+import canChannelUseSoundboardDefault from "canChannelUseSoundboard" /* 10929 */;
+import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 18062 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4672 */;
+import ChannelStore from "ChannelStore" /* 4641 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ export default function useSoundboardConfig(arg0, analyticsSource) {
   let closure_0;
   let deaf;
   let stringResult;
-  const f114966 = () => {
+  const f114944 = () => {
     const tmp = canChannelUseSoundboardDefault;
     return tmp(ChannelStore.getChannel(closure_0));
   };
@@ -59,9 +59,9 @@ export default function useSoundboardConfig(arg0, analyticsSource) {
         const result = showSoundboardSoundPickerActionSheet(obj);
       }
     }, items1);
-    const obj2 = { visible: flag, handlePress: callback, disabled: stateFromStores || !react.useMemo(f114966, items2), disabledAccessibilityHint: stringResult };
+    const obj2 = { visible: flag, handlePress: callback, disabled: stateFromStores || !react.useMemo(f114944, items2), disabledAccessibilityHint: stringResult };
     stringResult = undefined;
-    stateFromStores || !react.useMemo(f114966, items2);
+    stateFromStores || !react.useMemo(f114944, items2);
     if (stateFromStores) {
       const intl = tmp(1113).intl;
       stringResult = intl.string(tmp(1113).t.X1lQli);

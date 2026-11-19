@@ -1,50 +1,50 @@
-// Module ID: 11066
-// Function ID: 11067
+// Module ID: 11044
+// Function ID: 11045
 // Name: NotificationTextUtils
-// Dependencies: [4671, 4756, 6542, 4757, 6403, 4676, 4672, 4694, 5564, 4765, 4726, 4856, 6831, 6460, 4666, 1388, 11067, 1072, 5449, 1112, 6327, 4648, 1406, 11068, 6578, 6254, 5000, 6560, 8298, 5439, 1113, 8147, 5851, 6574, 8637, 3, 5437, 4879, 2119, 8294, 11069, 504, 2]
+// Dependencies: [4640, 4725, 6513, 4726, 6374, 4645, 4641, 4663, 5533, 4734, 4695, 4825, 6801, 6431, 4635, 1388, 11045, 1072, 5418, 1112, 6298, 4617, 1406, 11046, 6549, 6225, 4969, 6531, 8267, 5408, 1113, 8116, 5822, 6545, 8606, 3, 5406, 4848, 2119, 8263, 11047, 504, 2]
 // Exports: allowInAppNotifications, makeTextChatNotification, shouldIncludeSelectedChannel, shouldNotify, shouldNotifyForForumThreadCreation, shouldNotifyForReaction, shouldNotifyForSelectedChannel, useAllowInAppNotifications
 
-// Module 11066 (NotificationTextUtils)
+// Module 11044 (NotificationTextUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import get_initialized from "get initialized" /* 504 */;
 import ThreadConstants from "ThreadConstants" /* 1112 */;
 import intl10 from "intl" /* 1113 */;
 import FlagUtils from "FlagUtils" /* 1406 */;
 import Server from "Server" /* 2119 */;
-import UserSettings from "UserSettings" /* 4648 */;
-import UserUtilsDefault from "UserUtils" /* 4879 */;
-import RootNavigationRef from "RootNavigationRef" /* 5000 */;
-import isForwardMessage from "isForwardMessage" /* 5437 */;
-import useChannelName from "useChannelName" /* 5439 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5449 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5851 */;
-import isMessageMentioned from "isMessageMentioned" /* 6254 */;
-import AgeGateUtils from "AgeGateUtils" /* 6327 */;
-import isSystemMessageDefault from "isSystemMessage" /* 6574 */;
-import ThreadNotificationSettings from "ThreadNotificationSettings" /* 6578 */;
-import getDisplayFilenameDefault from "getDisplayFilename" /* 8147 */;
-import MessageParserDefault from "MessageParser" /* 8294 */;
-import IsolateString from "IsolateString" /* 8298 */;
-import SystemMessageUtilsDefault from "SystemMessageUtils" /* 8637 */;
-import ChannelVisibilityUtils from "ChannelVisibilityUtils" /* 11068 */;
-import FocusModeUtils from "FocusModeUtils" /* 11069 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4671 */;
-import LurkingStore from "LurkingStore" /* 4756 */;
-import MessageRequestStore from "MessageRequestStore" /* 6542 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4757 */;
-import VoicePanelStore from "VoicePanelStore" /* 6403 */;
-import ChannelRecord from "ChannelRecord" /* 4676 */;
-import ChannelStore from "ChannelStore" /* 4672 */;
-import GuildStore from "GuildStore" /* 4694 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5564 */;
-import RelationshipStore from "RelationshipStore" /* 4765 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4726 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4856 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6831 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6460 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 4666 */;
+import UserSettings from "UserSettings" /* 4617 */;
+import UserUtilsDefault from "UserUtils" /* 4848 */;
+import RootNavigationRef from "RootNavigationRef" /* 4969 */;
+import isForwardMessage from "isForwardMessage" /* 5406 */;
+import useChannelName from "useChannelName" /* 5408 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5418 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5822 */;
+import isMessageMentioned from "isMessageMentioned" /* 6225 */;
+import AgeGateUtils from "AgeGateUtils" /* 6298 */;
+import isSystemMessageDefault from "isSystemMessage" /* 6545 */;
+import ThreadNotificationSettings from "ThreadNotificationSettings" /* 6549 */;
+import getDisplayFilenameDefault from "getDisplayFilename" /* 8116 */;
+import MessageParserDefault from "MessageParser" /* 8263 */;
+import IsolateString from "IsolateString" /* 8267 */;
+import SystemMessageUtilsDefault from "SystemMessageUtils" /* 8606 */;
+import ChannelVisibilityUtils from "ChannelVisibilityUtils" /* 11046 */;
+import FocusModeUtils from "FocusModeUtils" /* 11047 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4640 */;
+import LurkingStore from "LurkingStore" /* 4725 */;
+import MessageRequestStore from "MessageRequestStore" /* 6513 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4726 */;
+import VoicePanelStore from "VoicePanelStore" /* 6374 */;
+import ChannelRecord from "ChannelRecord" /* 4645 */;
+import ChannelStore from "ChannelStore" /* 4641 */;
+import GuildStore from "GuildStore" /* 4663 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5533 */;
+import RelationshipStore from "RelationshipStore" /* 4734 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4695 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4825 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6801 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6431 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 4635 */;
 import UserStore from "UserStore" /* 1388 */;
-import RpcNotificationSettingsStore from "RpcNotificationSettingsStore" /* 11067 */;
+import RpcNotificationSettingsStore from "RpcNotificationSettingsStore" /* 11045 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -84,7 +84,7 @@ function shouldNotifyBase(currentUser, user, channel, arg3) {
             let tmp17 = !(!obj.ignoreStatus && SelfPresenceStore.getStatus() === constants6.DND);
             const tmp14 = !obj.ignoreStatus && SelfPresenceStore.getStatus() === constants6.DND;
             if (tmp17) {
-              const FocusMode = tmp2(4648).FocusMode;
+              const FocusMode = tmp2(4617).FocusMode;
               const setting = FocusMode.getSetting();
               let tmp19 = !setting;
               if (tmp19) {
@@ -267,7 +267,7 @@ export function shouldNotify(message, channel_id, result) {
                     result = threadNotificationSetting === ThreadMemberFlags.ALL_MESSAGES;
                     if (!result) {
                       const obj3 = { rawMessage: message, userId: currentUser.id, suppressEveryone: false, suppressRoles: false };
-                      const tmp37Result = tmp37(6254);
+                      const tmp37Result = tmp37(6225);
                       result = tmp37Result.isRawMessageMentioned(obj3);
                     }
                     tmp40 = result;
@@ -433,7 +433,7 @@ export function shouldIncludeSelectedChannel() {
       let tmp5 = null == rootNavigationRef || !rootNavigationRef.isReady();
       const tmp3 = require;
       if (!tmp5) {
-        const tmp3Result = tmp3(6560);
+        const tmp3Result = tmp3(6531);
         tmp5 = !tmp3Result.isChannelFocused();
       }
       flag = tmp5;
@@ -547,7 +547,7 @@ export function makeTextChatNotification(getGuildId, content, bot) {
                 const obj5 = isForwardMessage;
                 result = obj5.isForwardServerMessage(content);
               } else {
-                result = tmp(5437)(content);
+                result = tmp(5406)(content);
               }
               const items = [];
               if (result) {

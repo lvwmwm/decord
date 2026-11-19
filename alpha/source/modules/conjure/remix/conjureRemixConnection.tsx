@@ -1,13 +1,13 @@
-// Module ID: 12246
-// Function ID: 12247
+// Module ID: 12229
+// Function ID: 12230
 // Name: conjureRemixConnection
-// Dependencies: [32, 5, 572, 6851, 6850, 2]
+// Dependencies: [32, 5, 572, 6821, 6820, 2]
 // Exports: acceptRemix, sendRetryRemix
 
-// Module 12246 (conjureRemixConnection)
+// Module 12229 (conjureRemixConnection)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 6850 */;
-import ConjureWorkerTickets from "ConjureWorkerTickets" /* 6851 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 6820 */;
+import ConjureWorkerTickets from "ConjureWorkerTickets" /* 6821 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -29,7 +29,7 @@ let obj = function _acceptRemix() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -172,7 +172,7 @@ obj = function _mintUpstreamTicket() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c6;
@@ -227,7 +227,7 @@ obj = function _mintUpstreamTicket() {
             c6 = 0;
           }
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp21) {
         status = tmp21;

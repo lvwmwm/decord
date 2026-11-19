@@ -1,12 +1,12 @@
-// Module ID: 14159
-// Function ID: 14160
+// Module ID: 14141
+// Function ID: 14142
 // Name: useOpenNitroSubscribeActionSheet
-// Dependencies: [19, 1072, 1390, 7431, 9016, 2]
+// Dependencies: [19, 1072, 1390, 7401, 8990, 2]
 // Exports: default
 
-// Module 14159 (useOpenNitroSubscribeActionSheet)
+// Module 14141 (useOpenNitroSubscribeActionSheet)
 import PremiumConstants from "PremiumConstants" /* 1390 */;
-import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 9016 */;
+import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 8990 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;

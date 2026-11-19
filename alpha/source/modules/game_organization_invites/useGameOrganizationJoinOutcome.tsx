@@ -1,15 +1,15 @@
-// Module ID: 12202
-// Function ID: 12203
+// Module ID: 12182
+// Function ID: 12183
 // Name: useGameOrganizationJoinOutcome
-// Dependencies: [32, 19, 4694, 11856, 1113, 2555, 12192, 504, 12019, 6743, 2]
+// Dependencies: [32, 19, 4663, 11834, 1113, 2557, 12171, 504, 6714, 2]
 // Exports: default
 
-// Module 12202 (useGameOrganizationJoinOutcome)
-import transitionToGuild from "transitionToGuild" /* 6743 */;
+// Module 12182 (useGameOrganizationJoinOutcome)
+import transitionToGuild from "transitionToGuild" /* 6714 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4694 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11856 */;
+import GuildStore from "GuildStore" /* 4663 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11834 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -48,15 +48,15 @@ export default function useGameOrganizationJoinOutcome(arg0, guildJoinStatus, ac
   let intl7;
   let intl8;
   let intl9;
+  let obj14;
   let obj15;
-  let obj16;
+  let obj17;
   let obj18;
-  let obj19;
-  let obj23;
+  let obj22;
+  let obj24;
   let obj25;
-  let obj26;
-  let obj28;
-  let obj8;
+  let obj27;
+  let obj7;
   let stateFromStores;
   _require = action;
   let tmp = guildId;
@@ -113,33 +113,30 @@ export default function useGameOrganizationJoinOutcome(arg0, guildJoinStatus, ac
   }, items1);
   let tmp16 = null;
   if (null != guildJoinStatus) {
-    let tmp24;
-    let obj29;
+    let tmp21;
+    let obj28;
     const obj3 = { guildJoinStatus: ALREADY_MEMBER };
     const merged = Object.assign(guildJoinStatus);
-    let displayNoun;
-    const tmpResult = tmp(tmp2[8]);
-    if (tmp3 != null) {
-      displayNoun = tmp3.displayNoun;
-    }
-    if (displayNoun == null) {
-      displayNoun = null;
-    }
-    const obj4 = { displayNoun, lowercase: true };
-    const tmpResultResult = tmpResult(obj4);
     let str;
     if (tmp3 != null) {
-      str = tmp3.organization.name;
+      str = tmp3.displayNoun;
     }
     if (str == null) {
-      str = "";
+      str = "other";
     }
     let str2;
     if (tmp3 != null) {
-      str2 = tmp3.linkedGuild.name;
+      str2 = tmp3.organization.name;
     }
     if (str2 == null) {
       str2 = "";
+    }
+    let str3;
+    if (tmp3 != null) {
+      str3 = tmp3.linkedGuild.name;
+    }
+    if (str3 == null) {
+      str3 = "";
     }
     const character = guildJoinStatus.character;
     let name;
@@ -150,7 +147,7 @@ export default function useGameOrganizationJoinOutcome(arg0, guildJoinStatus, ac
       name = null;
     }
     if (stateFromStores) {
-      tmp24 = function handleGoToServer() {
+      tmp21 = function handleGoToServer() {
         let tmp2 = null != guildId;
         const tmp = guildId;
         if (tmp2) {
@@ -163,56 +160,56 @@ export default function useGameOrganizationJoinOutcome(arg0, guildJoinStatus, ac
         }
       };
     } else {
-      tmp24 = null;
+      tmp21 = null;
     }
     ({ failureReason, guildJoinStatus } = obj3);
     if (obj3.joinStatus === constants2.JOINED) {
-      let obj5 = { type: obj.CLOSE, text: intl8.string(tmp5(tmp2[4]).t.i4jeWR), action };
+      let obj4 = { type: obj.CLOSE, text: intl8.string(tmp5(tmp2[4]).t.i4jeWR), action };
       intl8 = tmp5(tmp2[4]).intl;
-      let tmp29 = obj5;
-      const tmp28 = obj;
-      if (null != tmp24) {
-        const obj6 = { type: tmp28.GO_TO_SERVER, text: intl9.string(tmp(tmp2[5]).H1wMHV), action: tmp24 };
+      let tmp26 = obj4;
+      const tmp25 = obj;
+      if (null != tmp21) {
+        const obj5 = { type: tmp25.GO_TO_SERVER, text: intl9.string(tmp(tmp2[5]).H1wMHV), action: tmp21 };
         intl9 = tmp5(tmp2[4]).intl;
-        tmp29 = obj6;
+        tmp26 = obj5;
       }
-      const obj7 = { key: "organization", status: flag.SUCCESS, title: intl10.formatToPlainString(tmp(tmp2[5]).qJafqt, obj8), subtitle: formatToPlainStringResult };
+      const obj6 = { key: "organization", status: flag.SUCCESS, title: intl10.formatToPlainString(tmp(tmp2[5]).qJafqt, obj7), subtitle: formatToPlainStringResult };
       intl10 = tmp5(tmp2[4]).intl;
       formatToPlainStringResult = null;
-      obj8 = { orgName: str, noun: tmpResultResult };
+      obj7 = { orgName: str2, displayNoun: str };
       if (null != name) {
         const intl11 = tmp5(tmp2[4]).intl;
-        const obj9 = { characterName: name };
-        formatToPlainStringResult = intl11.formatToPlainString(tmp(tmp2[5]).mvLVyz, obj9);
+        const obj8 = { characterName: name };
+        formatToPlainStringResult = intl11.formatToPlainString(tmp(tmp2[5]).mvLVyz, obj8);
       }
-      const obj10 = { title: intl12.string(tmp(tmp2[5]).i3axsB), rows: null, cta: null };
+      const obj9 = { title: intl12.string(tmp(tmp2[5]).i3axsB), rows: null, cta: null };
       intl12 = tmp5(tmp2[4]).intl;
-      const items2 = [obj7, ];
+      const items2 = [obj6, ];
       const intl13 = tmp5(tmp2[4]).intl;
-      const obj11 = { guildName: str2 };
-      const formatToPlainStringResult1 = intl13.formatToPlainString(tmp(tmp2[5]).YoJwLe, obj11);
+      const obj10 = { guildName: str3 };
+      const formatToPlainStringResult1 = intl13.formatToPlainString(tmp(tmp2[5]).YoJwLe, obj10);
       if (constants3.NEW_MEMBER !== guildJoinStatus) {
-        let obj14;
+        let obj13;
         if (constants3.ALREADY_MEMBER !== guildJoinStatus) {
           if (constants3.PENDING_VERIFICATION === guildJoinStatus) {
-            const obj12 = { key: "server", status: flag.PENDING, title: formatToPlainStringResult1, subtitle: intl15.string(tmp(tmp2[5]).MgcCQT) };
+            const obj11 = { key: "server", status: flag.PENDING, title: formatToPlainStringResult1, subtitle: intl15.string(tmp(tmp2[5]).MgcCQT) };
             intl15 = tmp5(tmp2[4]).intl;
-            obj14 = obj12;
+            obj13 = obj11;
           } else if (constants3.APPLICATION === guildJoinStatus) {
-            const obj13 = { key: "server", status: flag.PENDING, title: formatToPlainStringResult1, subtitle: intl14.string(tmp(tmp2[5])["mZ/VKS"]) };
+            const obj12 = { key: "server", status: flag.PENDING, title: formatToPlainStringResult1, subtitle: intl14.string(tmp(tmp2[5])["mZ/VKS"]) };
             intl14 = tmp5(tmp2[4]).intl;
-            obj14 = obj13;
+            obj13 = obj12;
           } else {
-            const FAILED = tmp33.FAILED;
-            obj14 = { key: "server", status: flag.ERROR, title: intl19.formatToPlainString(tmp(tmp2[5])["4XMetY"], obj15), subtitle: intl20.formatToPlainString(tmp(tmp2[5]).FQoZBu, obj16) };
+            const FAILED = tmp30.FAILED;
+            obj13 = { key: "server", status: flag.ERROR, title: intl19.formatToPlainString(tmp(tmp2[5])["4XMetY"], obj14), subtitle: intl20.formatToPlainString(tmp(tmp2[5]).FQoZBu, obj15) };
             intl19 = tmp5(tmp2[4]).intl;
-            obj15 = { guildName: str2 };
+            obj14 = { guildName: str3 };
             intl20 = tmp5(tmp2[4]).intl;
-            obj16 = { guildName: str2 };
+            obj15 = { guildName: str3 };
           }
         }
-        items2[1] = obj14;
-        obj10.rows = items2;
+        items2[1] = obj13;
+        obj9.rows = items2;
         let flag2 = false;
         if (constants2.JOINED === constants2.JOINED) {
           if (constants3.NEW_MEMBER !== guildJoinStatus) {
@@ -223,54 +220,54 @@ export default function useGameOrganizationJoinOutcome(arg0, guildJoinStatus, ac
           flag2 = true;
         }
         if (flag2) {
-          obj5 = tmp29;
+          obj4 = tmp26;
         }
-        obj10.cta = obj5;
-        obj29 = obj10;
+        obj9.cta = obj4;
+        obj28 = obj9;
       }
-      const obj17 = { key: "server", status: flag.SUCCESS, title: intl16.formatToPlainString(tmp(tmp2[5])["Y2DU/l"], obj18), subtitle: intl17.formatToPlainString(tmp(tmp2[5])["316Vsz"], obj19) };
+      const obj16 = { key: "server", status: flag.SUCCESS, title: intl16.formatToPlainString(tmp(tmp2[5])["Y2DU/l"], obj17), subtitle: intl17.formatToPlainString(tmp(tmp2[5])["316Vsz"], obj18) };
       intl16 = tmp5(tmp2[4]).intl;
-      obj18 = { guildName: str2 };
+      obj17 = { guildName: str3 };
       intl17 = tmp5(tmp2[4]).intl;
-      obj14 = obj17;
-      obj19 = { noun: tmpResultResult };
+      obj13 = obj16;
+      obj18 = { displayNoun: str };
     } else {
-      const obj20 = { type: obj.CLOSE, text: intl18.string(require("intl").t.cpT0Cq), action };
+      const obj19 = { type: obj.CLOSE, text: intl18.string(require("intl").t.cpT0Cq), action };
       intl18 = tmp5(tmp2[4]).intl;
-      let tmp26 = obj20;
-      const tmp37 = obj;
-      if (null != tmp24) {
-        const obj21 = { type: tmp37.GO_TO_SERVER, text: intl.string(tmp(tmp2[5]).H1wMHV), action: tmp24 };
+      let tmp23 = obj19;
+      const tmp34 = obj;
+      if (null != tmp21) {
+        const obj20 = { type: tmp34.GO_TO_SERVER, text: intl.string(tmp(tmp2[5]).H1wMHV), action: tmp21 };
         intl = tmp5(tmp2[4]).intl;
-        tmp26 = obj21;
+        tmp23 = obj20;
       }
       if (constants.ALREADY_JOINED === failureReason) {
-        const obj22 = { title: intl7.formatToPlainString(tmp(tmp2[5])["1PMPYk"], obj23), cta: tmp26 };
+        const obj21 = { title: intl7.formatToPlainString(tmp(tmp2[5])["1PMPYk"], obj22), cta: tmp23 };
         intl7 = tmp5(tmp2[4]).intl;
-        obj29 = obj22;
-        obj23 = { noun: tmpResultResult };
+        obj28 = obj21;
+        obj22 = { displayNoun: str };
       } else if (constants.IN_ANOTHER_ORGANIZATION === failureReason) {
-        const obj24 = { title: intl5.formatToPlainString(tmp(tmp2[5]).vSlR1j, obj25), subtitle: intl6.formatToPlainString(tmp(tmp2[5]).kvDHqp, obj26), cta: obj20 };
+        const obj23 = { title: intl5.formatToPlainString(tmp(tmp2[5]).vSlR1j, obj24), subtitle: intl6.formatToPlainString(tmp(tmp2[5]).kvDHqp, obj25), cta: obj19 };
         intl5 = tmp5(tmp2[4]).intl;
-        obj25 = { noun: tmpResultResult };
+        obj24 = { displayNoun: str };
         intl6 = tmp5(tmp2[4]).intl;
-        obj29 = obj24;
-        obj26 = { noun: tmpResultResult };
+        obj28 = obj23;
+        obj25 = { displayNoun: str };
       } else if (constants.GUILD_FULL === failureReason) {
-        const obj27 = { title: intl3.formatToPlainString(tmp(tmp2[5])["/7Gy4g"], obj28), subtitle: intl4.string(tmp(tmp2[5])["8TGo9L"]), cta: obj20 };
+        const obj26 = { title: intl3.formatToPlainString(tmp(tmp2[5])["/7Gy4g"], obj27), subtitle: intl4.string(tmp(tmp2[5])["8TGo9L"]), cta: obj19 };
         intl3 = tmp5(tmp2[4]).intl;
-        obj28 = { noun: tmpResultResult };
+        obj27 = { displayNoun: str };
         intl4 = tmp5(tmp2[4]).intl;
-        obj29 = obj27;
+        obj28 = obj26;
       } else {
-        const OTHER = tmp27.OTHER;
-        obj29 = { title: intl2.string(tmp(tmp2[5]).sXbaMb), cta: obj20 };
+        const OTHER = tmp24.OTHER;
+        obj28 = { title: intl2.string(tmp(tmp2[5]).sXbaMb), cta: obj19 };
         intl2 = tmp5(tmp2[4]).intl;
       }
     }
-    const obj30 = { isWaitingForGuild: tmp12 };
-    const merged1 = Object.assign(obj29);
-    tmp16 = obj30;
+    const obj29 = { isWaitingForGuild: tmp12 };
+    const merged1 = Object.assign(obj28);
+    tmp16 = obj29;
   }
   return tmp16;
 };

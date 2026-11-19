@@ -1,13 +1,13 @@
-// Module ID: 17826
-// Function ID: 17827
+// Module ID: 17819
+// Function ID: 17820
 // Name: useIsGuildEligibleForRoleSubscriptionsUpsell
-// Dependencies: [4690, 4694, 1388, 1072, 504, 6790, 2]
+// Dependencies: [4659, 4663, 1388, 1072, 504, 6762, 2]
 // Exports: default
 
-// Module 17826 (useIsGuildEligibleForRoleSubscriptionsUpsell)
+// Module 17819 (useIsGuildEligibleForRoleSubscriptionsUpsell)
 import Constants from "Constants" /* 1072 */;
-import GuildRecord from "GuildRecord" /* 4690 */;
-import GuildStore from "GuildStore" /* 4694 */;
+import GuildRecord from "GuildRecord" /* 4659 */;
+import GuildStore from "GuildStore" /* 4663 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ export default function useIsGuildEligibleForRoleSubscriptionsUpsell(arg0) {
   if (tmp6) {
     tmp6 = isGuildOwner(stateFromStores, tmp5);
   }
-  const tmpResult = tmp(6790);
+  const tmpResult = tmp(6762);
   const isUserInCreatorMonetizationEligibleCountry = tmpResult.useIsUserInCreatorMonetizationEligibleCountry();
   if (tmp6) {
     let flag;

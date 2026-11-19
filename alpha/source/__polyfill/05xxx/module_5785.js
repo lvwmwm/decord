@@ -1,50 +1,18 @@
 // Module ID: 5785
 // Function ID: 5786
-// Dependencies: [19, 17, 5781]
-// Exports: useTabsHost
+// Dependencies: [17, 26, 106, 65]
 
 // Module 5785
 import react_native from "react-native" /* 17 */;
-import RNSLog2 from "RNSLog" /* 5781 */;
-import react_mod from "react" /* 19 */;
+import _mod26 from "module_26" /* 26 */;
+import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
+import module_65 from "module_65" /* 65 */;
 
-let react = react_mod;
-const findNodeHandle = react_native.findNodeHandle;
+let obj2;
+const codegenNativeComponent = react_native.codegenNativeComponent;
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSScreenStack", directEventTypes: { topFinishTransitioning: { registrationName: "onFinishTransitioning" } }, validAttributes: obj2 };
+obj2 = { nativeContainerBackgroundColor: _mod26.colorAttribute };
+const merged = Object.assign(DynamicallyInjectedByGestureHandler.ConditionallyIgnoredEventHandlers({ onFinishTransitioning: true }));
 
-export function useTabsHost(arg0) {
-  let items;
-  let onTabSelected;
-  let ref;
-  let ref2;
-  ({ componentNodeRef: require, onTabSelected } = arg0);
-  react = undefined;
-  react = react.useRef(-1);
-  const effect = react.useEffect(() => {
-    if (null != require.current) {
-      let num2 = findNodeHandle(tmp.current);
-      const tmp3 = ref2;
-      if (num2 == null) {
-        num2 = -1;
-      }
-      tmp3.current = num2;
-    } else {
-      ref2.current = -1;
-    }
-  }, []);
-  const obj = {
-    onTabSelected: react.useCallback((nativeEvent) => {
-      const RNSLog = RNSLog2.RNSLog;
-      let num = ref2.current;
-      const log = RNSLog.log;
-      if (num == null) {
-        num = -1;
-      }
-      log("TabsHost [" + num + "] onTabSelected: " + JSON.stringify(nativeEvent.nativeEvent));
-      if (onTabSelected != null) {
-        onTabSelected(nativeEvent);
-      }
-    }, items)
-  };
-  items = [onTabSelected];
-  return obj;
-}
+export default module_65.get("RNSScreenStack", () => obj);
+export { __INTERNAL_VIEW_CONFIG };

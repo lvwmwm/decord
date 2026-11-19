@@ -1,15 +1,9 @@
 // Module ID: 16335
 // Function ID: 16336
-// Dependencies: []
+// Dependencies: [16336]
 
 // Module 16335
-let obj2;
-const obj = { parse: obj2 };
-obj2 = {
-  prelude: null,
-  block() {
-    return this.Block(true);
-  }
-};
+import _mod16336 from "module_16336" /* 16336 */;
 
-export default obj;
+
+export default _mod16336;

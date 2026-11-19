@@ -1,13 +1,13 @@
-// Module ID: 9062
-// Function ID: 9063
+// Module ID: 9038
+// Function ID: 9039
 // Name: mobile_bottom_sheet
-// Dependencies: [32, 1197, 9058, 4656, 9057, 9056, 2]
+// Dependencies: [32, 1197, 9032, 4625, 9031, 9030, 2]
 
-// Module 9062 (mobile_bottom_sheet)
+// Module 9038 (mobile_bottom_sheet)
 import _mod1197 from "module_1197" /* 1197 */;
-import localized_string from "localized_string" /* 9056 */;
-import help_article from "help_article" /* 9057 */;
-import cta_button from "cta_button" /* 9058 */;
+import localized_string from "localized_string" /* 9030 */;
+import help_article from "help_article" /* 9031 */;
+import cta_button from "cta_button" /* 9032 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

@@ -1,12 +1,12 @@
-// Module ID: 12378
-// Function ID: 12379
+// Module ID: 12361
+// Function ID: 12362
 // Name: useSafetyHubInitialized
-// Dependencies: [7746, 504, 2]
+// Dependencies: [7716, 504, 2]
 // Exports: useSafetyHubInitialized
 
-// Module 12378 (useSafetyHubInitialized)
+// Module 12361 (useSafetyHubInitialized)
 import get_initialized from "get initialized" /* 504 */;
-import SafetyHubStore from "SafetyHubStore" /* 7746 */;
+import SafetyHubStore from "SafetyHubStore" /* 7716 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/safety_hub/hooks/useSafetyHubInitialized.tsx");

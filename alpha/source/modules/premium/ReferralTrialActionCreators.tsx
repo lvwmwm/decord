@@ -1,17 +1,17 @@
-// Module ID: 8714
-// Function ID: 8715
+// Module ID: 8683
+// Function ID: 8684
 // Name: ReferralTrialActionCreators
-// Dependencies: [5, 8715, 1407, 4726, 1072, 1285, 559, 1089, 572, 1242, 8162, 2]
+// Dependencies: [5, 8684, 1407, 4695, 1072, 1285, 559, 1089, 572, 1242, 8131, 2]
 // Exports: createReferralTrial, createReferralTrials, fetchReferralEligibleUsers, fetchReferralsRemaining, maybeFetchRecipientEligibility, resolveReferralTrialOffer
 
-// Module 8714 (ReferralTrialActionCreators)
+// Module 8683 (ReferralTrialActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserTrialOfferRecord from "UserTrialOfferRecord" /* 8715 */;
+import UserTrialOfferRecord from "UserTrialOfferRecord" /* 8684 */;
 import UserRecord from "UserRecord" /* 1407 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4726 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4695 */;
 import Constants from "Constants" /* 1072 */;
 import Backoff from "Backoff" /* 559 */;
 import size from "module_2" /* 2 */;
@@ -79,7 +79,7 @@ obj = function _maybeFetchRecipientEligibility() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -136,7 +136,7 @@ obj = function _maybeFetchRecipientEligibility() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         } catch (tmp23) {
           if (0 === c3) {
             c5 = 3;
@@ -166,7 +166,7 @@ obj = function _createReferralTrials() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         while (true) {

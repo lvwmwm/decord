@@ -1,39 +1,39 @@
-// Module ID: 19389
-// Function ID: 19390
+// Module ID: 19385
+// Function ID: 19386
 // Name: VoicePanelControls
-// Dependencies: [32, 19, 17, 6528, 11710, 11713, 11708, 1072, 21, 4823, 575, 1627, 19390, 7511, 11709, 1655, 19297, 5387, 5083, 1708, 18045, 11715, 13062, 5039, 5053, 12829, 10616, 19391, 19278, 19392, 4884, 19396, 19398, 6929, 19401, 5424, 18090, 19425, 18079, 1263, 19426, 19427, 1108, 1630, 1496, 9992, 11735, 19397, 12898, 19428, 19368, 19400, 19429, 2]
+// Dependencies: [32, 19, 17, 6499, 11688, 11691, 11686, 1072, 21, 4792, 575, 1627, 19386, 7481, 11687, 1655, 19293, 5356, 5052, 1708, 18038, 11693, 13044, 5008, 5022, 12811, 10594, 19387, 19274, 19388, 4853, 19392, 19394, 6899, 19397, 5393, 18083, 19421, 18072, 1263, 19422, 19423, 1108, 1630, 1496, 9970, 11713, 19393, 12880, 19424, 19364, 19396, 19425, 2]
 
-// Module 19389 (VoicePanelControls)
+// Module 19385 (VoicePanelControls)
 import nativeDefault from "native" /* 575 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import native from "native" /* 4884 */;
-import spring_spring from "spring/spring" /* 5424 */;
-import useRefValueDefault from "useRefValue" /* 6929 */;
-import native2 from "native" /* 7511 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11709 */;
-import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 18045 */;
-import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 19278 */;
-import useControlsLockDefault from "useControlsLock" /* 19297 */;
-import useDrawerToggleDefault from "useDrawerToggle" /* 19390 */;
-import useConsoleConnectingInfoDefault from "useConsoleConnectingInfo" /* 19392 */;
-import VoicePanelFloatingCTAContainer from "VoicePanelFloatingCTAContainer" /* 19396 */;
-import VoicePanelConsoleStatus from "VoicePanelConsoleStatus" /* 19398 */;
-import useControlsButtonsDefault from "useControlsButtons" /* 19401 */;
+import native from "native" /* 4853 */;
+import spring_spring from "spring/spring" /* 5393 */;
+import useRefValueDefault from "useRefValue" /* 6899 */;
+import native2 from "native" /* 7481 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11687 */;
+import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 18038 */;
+import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 19274 */;
+import useControlsLockDefault from "useControlsLock" /* 19293 */;
+import useDrawerToggleDefault from "useDrawerToggle" /* 19386 */;
+import useConsoleConnectingInfoDefault from "useConsoleConnectingInfo" /* 19388 */;
+import VoicePanelFloatingCTAContainer from "VoicePanelFloatingCTAContainer" /* 19392 */;
+import VoicePanelConsoleStatus from "VoicePanelConsoleStatus" /* 19394 */;
+import useControlsButtonsDefault from "useControlsButtons" /* 19397 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6528 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11710 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11713 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11708 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6499 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11688 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11691 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11686 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1627 */;
 import size_mod from "module_2" /* 2 */;
 
-let _Math2, absolute, activateResult, closure_0, controlsProps, diff, diff1, failResult, failResult1, flag, flag2, flag3, flag4, height2, merged3, num3, obj1, result1, result2, set, set2, set2Result, set3, set3Result, set4Result, str, str2, tmp18, value1, velocityY, width, width2;
+let _Math2, absolute, activateResult, closure_0, controlsProps, diff, diff1, failResult, failResult1, flag, flag2, flag3, flag4, height2, merged3, num3, obj1, result1, result2, set, set2, set2Result, set3, set3Result, set4, set4Result, str, str2, tmp18, value1, velocityY, width, width2;
 
 let StyleSheet;
 let c10;
@@ -84,9 +84,9 @@ let closure_25 = react.memo(function Handle(openTab) {
   openTab = openTab.openTab;
   const tmp = closure_21();
   const tmp2 = useDrawerToggleDefault(openTab);
-  const obj = { style: tmp.actionSheetDragHandleWrapper, children: authStore4(native2.ActionSheetDragHandle, { onPress: handlePress, overlay: true, accessibilityLabel, "aria-hidden": ariaHidden }) };
+  const obj = { style: tmp.actionSheetDragHandleWrapper, children: closure_18(native2.ActionSheetDragHandle, { onPress: handlePress, overlay: true, accessibilityLabel, "aria-hidden": ariaHidden }) };
   ({ handlePress, accessibilityLabel, ariaHidden } = tmp2);
-  return authStore4(hasOwnProperty, obj);
+  return closure_18(hasOwnProperty, obj);
 });
 let closure_26 = { code: "(function VoicePanelControlsTsx1(event){let[touchMoveCount,gestureSpecs,wrapperSpecs,controlsSpecs,VoicePanelControlsModes,TRANSITIONAL_HEIGHT,INTER_FLOATING_TRANSITIONAL_HEIGHT]=this.__closure;touchMoveCount.set(0);gestureSpecs.set({absoluteX:event.changedTouches[0].absoluteX,absoluteY:event.changedTouches[0].absoluteY,x:wrapperSpecs.get().x,y:wrapperSpecs.get().y,height:wrapperSpecs.get().height,isDrawer:controlsSpecs.get().mode===VoicePanelControlsModes.DRAWER,active:false,drawerTransitionHeight:TRANSITIONAL_HEIGHT,interFloatingTransitionHeight:INTER_FLOATING_TRANSITIONAL_HEIGHT});})" };
 let closure_27 = { code: "(function VoicePanelControlsTsx2(){let[scheduleOnRN,gestureLock]=this.__closure;scheduleOnRN(gestureLock.lock);})" };
@@ -132,15 +132,15 @@ let closure_37 = react.memo(function FloatingBars(controlsSpecs) {
   }
   const items2 = [, ];
   const obj2 = { item: tmp11, renderItem: VoicePanelFloatingCTAContainer.renderVoicePanelFloatingCTA };
-  items2[0] = authStore4(TransitionItem, obj2);
+  items2[0] = closure_18(TransitionItem, obj2);
   let tmp12;
-  const TransitionItem2 = tmp(4884).TransitionItem;
+  const TransitionItem2 = tmp(4853).TransitionItem;
   if (isConnectingOrConnectedToConsole) {
     tmp12 = memo;
   }
   const obj3 = { children: items2 };
   const obj4 = { item: tmp12, renderItem: VoicePanelConsoleStatus.renderVoicePanelConsoleStatus };
-  items2[1] = authStore4(TransitionItem2, obj4);
+  items2[1] = closure_18(TransitionItem2, obj4);
   return tmp8(tmp9, obj3);
 });
 let closure_38 = { code: "(function VoicePanelControlsTsx12(){let[controlsSpecs,connected,sharedTab,wrapperSpecs,TRANSITIONAL_HEIGHT,CONTROLS_DRAWER_HEADER_EXPANDED_SIZE,withSpring,MODE_CHANGE_PHYSICS]=this.__closure;const showPushToTalkText=controlsSpecs.get().pushToTalk&&connected.get();const height=sharedTab.get()==='settings'&&wrapperSpecs.get().height>=TRANSITIONAL_HEIGHT?CONTROLS_DRAWER_HEADER_EXPANDED_SIZE:controlsSpecs.get().height;const translateY=function(){return sharedTab.get()!=='settings'&&wrapperSpecs.get().height>=TRANSITIONAL_HEIGHT?-controlsSpecs.get().height:0;}();return{top:showPushToTalkText?-4:0,height:withSpring(height,MODE_CHANGE_PHYSICS),opacity:withSpring(sharedTab.get()!=='settings'&&wrapperSpecs.get().height>=TRANSITIONAL_HEIGHT?0:1,MODE_CHANGE_PHYSICS),transform:[{translateY:withSpring(translateY,MODE_CHANGE_PHYSICS)},{scale:withSpring(sharedTab.get()!=='settings'&&wrapperSpecs.get().height>=TRANSITIONAL_HEIGHT?0.95:1,MODE_CHANGE_PHYSICS)}]};})" };
@@ -236,7 +236,7 @@ let closure_39 = react.memo(function VoicePanelButtonsInner(sharedTab) {
   const effect = obj.useEffect(() => {
     ref.current = false;
   }, []);
-  const obj2 = { skipEntering: tmp4, children: authStore4(View, obj3) };
+  const obj2 = { skipEntering: tmp4, children: closure_18(View, obj3) };
   const LayoutAnimationConfig = _mod1655.LayoutAnimationConfig;
   obj3 = {
     style: items2,
@@ -247,7 +247,7 @@ let closure_39 = react.memo(function VoicePanelButtonsInner(sharedTab) {
   };
   items2 = [tmp5.buttonsWrapper, animatedStyle];
   View = _modDef1655.View;
-  return authStore4(LayoutAnimationConfig, obj2);
+  return closure_18(LayoutAnimationConfig, obj2);
 });
 let closure_40 = { code: "(function VoicePanelControlsTsx13(){let[wrapperSpecs,CALL_TILE_GUTTER,accessoryHeights]=this.__closure;return wrapperSpecs.get().height+CALL_TILE_GUTTER+accessoryHeights.get();})" };
 let closure_41 = { code: "(function VoicePanelControlsTsx14(){let[dockJoinMorphOrigin]=this.__closure;return dockJoinMorphOrigin.get()!=null;})" };
@@ -1329,7 +1329,7 @@ const memoResult = react.memo(function VoicePanelControls(gestureState) {
             } else if (_undefined3.HIDDEN === currentControlsMode) {
               if (c6) {
                 const obj2 = { hidden: false };
-                const set4 = _undefined2.set;
+                set4 = _undefined2.set;
                 const merged = Object.assign(obj3.get());
                 set4(obj2);
               } else if (!_undefined2.get().hidden) {

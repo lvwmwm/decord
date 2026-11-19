@@ -1,13 +1,13 @@
-// Module ID: 18501
-// Function ID: 18502
+// Module ID: 18494
+// Function ID: 18495
 // Name: useConjureTips
-// Dependencies: [19, 18502, 18504, 18509, 18510, 18503, 2]
+// Dependencies: [19, 18495, 18497, 18502, 18503, 18496, 2]
 // Exports: default
 
-// Module 18501 (useConjureTips)
-import conjureLiveBehindTip from "conjureLiveBehindTip" /* 18502 */;
-import conjureTipImpressions from "conjureTipImpressions" /* 18503 */;
-import conjureTipDismissals from "conjureTipDismissals" /* 18509 */;
+// Module 18494 (useConjureTips)
+import conjureLiveBehindTip from "conjureLiveBehindTip" /* 18495 */;
+import conjureTipImpressions from "conjureTipImpressions" /* 18496 */;
+import conjureTipDismissals from "conjureTipDismissals" /* 18502 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

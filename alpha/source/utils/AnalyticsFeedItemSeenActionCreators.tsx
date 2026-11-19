@@ -1,10 +1,10 @@
-// Module ID: 8535
-// Function ID: 8536
+// Module ID: 8504
+// Function ID: 8505
 // Name: AnalyticsFeedItemSeenActionCreators
 // Dependencies: [572, 2]
 // Exports: flushAnalyticsFeedItems, markAnalyticsFeedItemSeen, markAnalyticsFeedItemUnseen
 
-// Module 8535 (AnalyticsFeedItemSeenActionCreators)
+// Module 8504 (AnalyticsFeedItemSeenActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 

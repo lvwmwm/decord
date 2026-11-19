@@ -1,10 +1,10 @@
-// Module ID: 7628
-// Function ID: 7629
+// Module ID: 7598
+// Function ID: 7599
 // Name: FormTitle
-// Dependencies: [19, 17, 1072, 21, 1380, 4823, 575, 1187, 2]
+// Dependencies: [19, 17, 1072, 21, 1380, 4792, 575, 1187, 2]
 // Exports: default
 
-// Module 7628 (FormTitle)
+// Module 7598 (FormTitle)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
@@ -12,7 +12,7 @@ import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1380 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let Platform;

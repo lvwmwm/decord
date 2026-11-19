@@ -1,10 +1,10 @@
-// Module ID: 12709
-// Function ID: 12710
+// Module ID: 12692
+// Function ID: 12693
 // Name: CustomizationControls
-// Dependencies: [21, 12710, 12713, 2]
+// Dependencies: [21, 12693, 12696, 2]
 // Exports: default
 
-// Module 12709 (CustomizationControls)
+// Module 12692 (CustomizationControls)
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -20,10 +20,10 @@ export default function CustomizationControls(isFinalizeRoute) {
   ({ activeCustomizationOption, isSaving, isLandscape, onSelectTraitOption } = isFinalizeRoute);
   if (isFinalizeRoute.isFinalizeRoute) {
     const obj2 = { customizationOption: activeCustomizationOption, isCurrentTraitBlocked: tmp, disabled: isSaving, isLandscape, onSelectOption: onSelectTraitOption, onSelectFinalizeOption: tmp2 };
-    tmp3Result = tmp3(tmp4(12710), obj2);
+    tmp3Result = tmp3(tmp4(12693), obj2);
   } else {
     const obj = { customizationOption: activeCustomizationOption, disabled: isSaving, isLandscape, onSelectOption: onSelectTraitOption };
-    tmp3Result = tmp3(tmp4(12713), obj, activeCustomizationOption);
+    tmp3Result = tmp3(tmp4(12696), obj, activeCustomizationOption);
   }
   return tmp3Result;
 };

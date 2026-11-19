@@ -1,17 +1,17 @@
-// Module ID: 15857
-// Function ID: 15858
+// Module ID: 15848
+// Function ID: 15849
 // Name: useOpenChangeAvatarActionSheet
-// Dependencies: [19, 2174, 8818, 15858, 5037, 15859, 2121, 15770, 15770, 8816, 8043, 2]
+// Dependencies: [19, 2174, 8787, 15849, 5006, 15850, 2121, 15761, 15761, 8785, 8012, 2]
 // Exports: default
 
-// Module 15857 (useOpenChangeAvatarActionSheet)
+// Module 15848 (useOpenChangeAvatarActionSheet)
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp3;
-const ProfileCustomizationUtils = tmp3(8043);
+const ProfileCustomizationUtils = tmp3(8012);
 let react = react_mod;
 let result = size.fileFinishedImporting("modules/user_profile/hooks/native/useOpenChangeAvatarActionSheet.tsx");
 
@@ -66,10 +66,11 @@ export default function useOpenChangeAvatarActionSheet(user) {
         openLazy(tmp3, "Select GIF Avatar", obj2);
       },
       handleEditAvatarDecorationSelect: editAvatarDecoration,
-      showRemoveAvatar: tmp3Result.showRemoveAvatar(pendingAvatar, user.avatar)
+      showRemoveAvatar: tmp3Result.showRemoveAvatar(pendingAvatar, user.avatar),
+      analyticsLocations
     };
     editAvatarDecoration = undefined;
-    const tmp4 = asyncRequire(15859, dependencyMap.paths);
+    const tmp4 = asyncRequire(15850, dependencyMap.paths);
     if (!isTryItOut) {
       editAvatarDecoration = function editAvatarDecoration() {
         const obj = user(isTryItOut[9]);

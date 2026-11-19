@@ -1,15 +1,20 @@
 // Module ID: 15486
 // Function ID: 15487
-// Dependencies: [15465]
+// Dependencies: [15454, 15455, 15487]
 
 // Module 15486
-import _mod15465 from "module_15465" /* 15465 */;
+import _mod15455 from "module_15455" /* 15455 */;
+import _mod15487 from "module_15487" /* 15487 */;
+import getOwnPropertyDescriptor from "module_15454" /* 15454 */;
 
-const tmp = _mod15465.navigator && _mod15465.navigator.userAgent;
-let str = "";
-if (tmp) {
-  const _String = String;
-  str = String(tmp);
-}
+const f66261 = () => {
+  const obj = {
+    get() {
+      return 7;
+    }
+  };
+  return 7 !== Object.defineProperty(_mod15487("div"), "a", obj).a;
+};
+!getOwnPropertyDescriptor && !_mod15455(f66261);
 
-export default str;
+export default !getOwnPropertyDescriptor && !_mod15455(f66261);

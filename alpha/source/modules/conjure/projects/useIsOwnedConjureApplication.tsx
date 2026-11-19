@@ -1,16 +1,16 @@
-// Module ID: 10300
-// Function ID: 10301
+// Module ID: 10278
+// Function ID: 10279
 // Name: useIsOwnedConjureApplication
-// Dependencies: [19, 4694, 6529, 559, 504, 6774, 6844, 2]
+// Dependencies: [19, 4663, 6500, 559, 504, 6746, 6814, 2]
 // Exports: default
 
-// Module 10300 (useIsOwnedConjureApplication)
+// Module 10278 (useIsOwnedConjureApplication)
 import BackoffDefault from "Backoff" /* 559 */;
-import ConjureProjectStore2 from "ConjureProjectStore" /* 6529 */;
-import ConjureUtils from "ConjureUtils" /* 6774 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 6844 */;
+import ConjureProjectStore2 from "ConjureProjectStore" /* 6500 */;
+import ConjureUtils from "ConjureUtils" /* 6746 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 6814 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4694 */;
+import GuildStore from "GuildStore" /* 4663 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

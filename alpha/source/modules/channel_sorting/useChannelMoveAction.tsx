@@ -1,20 +1,20 @@
-// Module ID: 13814
-// Function ID: 13815
+// Module ID: 13796
+// Function ID: 13797
 // Name: useChannelMoveAction
-// Dependencies: [7388, 4694, 4755, 4765, 4856, 6460, 1388, 13815, 1072, 504, 4697, 13816, 13818, 13817, 5439, 1113, 2]
+// Dependencies: [7358, 4663, 4724, 4734, 4825, 6431, 1388, 13797, 1072, 504, 4666, 13798, 13800, 13799, 5408, 1113, 2]
 // Exports: default
 
-// Module 13814 (useChannelMoveAction)
+// Module 13796 (useChannelMoveAction)
 import Constants from "Constants" /* 1072 */;
-import getChannelMoveBlockerDefault from "getChannelMoveBlocker" /* 13816 */;
-import GuildCategoryStore from "GuildCategoryStore" /* 7388 */;
-import GuildStore from "GuildStore" /* 4694 */;
-import PermissionStore from "PermissionStore" /* 4755 */;
-import RelationshipStore from "RelationshipStore" /* 4765 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4856 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6460 */;
+import getChannelMoveBlockerDefault from "getChannelMoveBlocker" /* 13798 */;
+import GuildCategoryStore from "GuildCategoryStore" /* 7358 */;
+import GuildStore from "GuildStore" /* 4663 */;
+import PermissionStore from "PermissionStore" /* 4724 */;
+import RelationshipStore from "RelationshipStore" /* 4734 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4825 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6431 */;
 import UserStore from "UserStore" /* 1388 */;
-import getChannelListRecord from "getChannelListRecord" /* 13815 */;
+import getChannelListRecord from "getChannelListRecord" /* 13797 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -66,7 +66,7 @@ export default function useChannelMoveAction(getGuildId) {
   ({ categories, listChannel, guild } = stateFromStoresObject);
   const isBlocked = stateFromStoresObject.isBlocked;
   let isCategoryResult = listChannel.isCategory();
-  const tmpResult4 = tmp(13818);
+  const tmpResult4 = tmp(13800);
   const categoryKey = tmpResult4.getCategoryKey(listChannel.parent_id, categories);
   const tmp7 = GuildStore;
   const tmp8 = PermissionStore;
@@ -74,7 +74,7 @@ export default function useChannelMoveAction(getGuildId) {
     let _categories = categories._categories;
     found = _categories.filter((channel) => channel.channel.id !== NULL_STRING_CHANNEL_ID);
   } else {
-    const tmpResult5 = tmp(13818);
+    const tmpResult5 = tmp(13800);
     found = tmpResult5.getSectionSiblings(listChannel, categories);
   }
   let tmp12 = null;

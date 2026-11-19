@@ -1,10 +1,10 @@
-// Module ID: 6248
-// Function ID: 6249
+// Module ID: 6219
+// Function ID: 6220
 // Name: CheckpointExperiments
 // Dependencies: [1452, 2]
 // Exports: getIsCheckpointCardEnabled, getIsCheckpointEnabled, useCheckpointQAMode, useIsCheckpointCardEnabled, useIsCheckpointEnabled, useIsCheckpointIntroEnabled
 
-// Module 6248 (CheckpointExperiments)
+// Module 6219 (CheckpointExperiments)
 import ApexExperiment_mod from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 

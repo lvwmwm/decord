@@ -1,14 +1,13 @@
-// Module ID: 12017
-// Function ID: 12018
+// Module ID: 11995
+// Function ID: 11996
 // Name: getInvitableGameOrganizationsFullState
-// Dependencies: [32, 12018, 1113, 2555, 12019, 2]
+// Dependencies: [32, 11996, 1113, 2557, 2]
 // Exports: default, getGameOrganizationFullSubLabel, getInvitableGameOrganizationsFullSubLabel
 
-// Module 12017 (getInvitableGameOrganizationsFullState)
+// Module 11995 (getInvitableGameOrganizationsFullState)
 import intl3 from "intl" /* 1113 */;
-import _modDef2555 from "module_2555" /* 2555 */;
-import isGameOrganizationFullDefault from "isGameOrganizationFull" /* 12018 */;
-import getGameOrganizationDisplayNounDefault from "getGameOrganizationDisplayNoun" /* 12019 */;
+import _modDef2557 from "module_2557" /* 2557 */;
+import isGameOrganizationFullDefault from "isGameOrganizationFull" /* 11996 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -35,36 +34,40 @@ export default function getInvitableGameOrganizationsFullState(arr) {
   return closure_4;
 };
 export function getGameOrganizationFullSubLabel(data, stateFromStores) {
-  let tmp = stateFromStores;
+  let str = stateFromStores;
   const name = data.name;
   if (stateFromStores === undefined) {
-    tmp = null;
+    str = null;
   }
   const intl = intl3.intl;
   const formatToPlainString = intl.formatToPlainString;
-  const obj = { orgName: name, noun: getGameOrganizationDisplayNounDefault({ displayNoun: tmp, lowercase: true }) };
-  const xuM052 = _modDef2555.xuM052;
+  const obj = { orgName: name, displayNoun: str };
+  const xuM052 = _modDef2557.xuM052;
+  if (str == null) {
+    str = "other";
+  }
   return formatToPlainString(xuM052, obj);
 }
 export function getInvitableGameOrganizationsFullSubLabel(kind) {
-  let obj2;
   kind = kind.kind;
   if ("available" !== kind) {
     if ("single_full" === kind) {
-      let displayNoun = kind.displayNoun;
+      let str2 = kind.displayNoun;
       const name = kind.organization.name;
-      if (displayNoun === undefined) {
-        displayNoun = null;
+      if (str2 === undefined) {
+        str2 = null;
       }
       const intl2 = intl3.intl;
       const formatToPlainString = intl2.formatToPlainString;
-      const obj = { orgName: name, noun: getGameOrganizationDisplayNounDefault(obj2) };
-      const xuM052 = _modDef2555.xuM052;
-      obj2 = { displayNoun, lowercase: true };
+      const obj = { orgName: name, displayNoun: str2 };
+      const xuM052 = _modDef2557.xuM052;
+      if (str2 == null) {
+        str2 = "other";
+      }
       return formatToPlainString(xuM052, obj);
     } else if ("all_full" === kind) {
       const intl = intl3.intl;
-      return intl.string(_modDef2555.bY80Jh);
+      return intl.string(_modDef2557.bY80Jh);
     }
   }
 }

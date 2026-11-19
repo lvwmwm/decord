@@ -1,22 +1,21 @@
-// Module ID: 18424
-// Function ID: 18425
+// Module ID: 18340
+// Function ID: 18341
 // Name: useConjureMakePersonal
-// Dependencies: [5, 32, 19, 6529, 6844, 12312, 18423, 1113, 4121, 2]
-// Exports: canMakeConjureProjectPersonal, default
+// Dependencies: [5, 32, 19, 6500, 6814, 12295, 18336, 1113, 4089, 2]
+// Exports: default
 
-// Module 18424 (useConjureMakePersonal)
-import ConjureProjectStore2 from "ConjureProjectStore" /* 6529 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 6844 */;
-import conjureChangeRows from "conjureChangeRows" /* 18423 */;
+// Module 18340 (useConjureMakePersonal)
+import ConjureActionCreators from "ConjureActionCreators" /* 6814 */;
+import conjureChangeRows from "conjureChangeRows" /* 18336 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6500 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, c3, c4;
 
-const isProjectOwner = ConjureProjectStore2.isProjectOwner;
 let result = size.fileFinishedImporting("modules/conjure/server_share/useConjureMakePersonal.tsx");
 
 export default function useConjureMakePersonal(id) {
@@ -75,7 +74,7 @@ export default function useConjureMakePersonal(id) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c2;
@@ -152,12 +151,8 @@ export default function useConjureMakePersonal(id) {
     }
   }), items2);
   if (null != target) {
-    const tmp6Result = tmp6(12312);
+    const tmp6Result = tmp6(12295);
     result = tmp6Result.conjureRemoveAppKeptChannels(target);
   }
   return obj3;
 };
-export function canMakeConjureProjectPersonal(project) {
-  const tmp = "guild" === project.install_scope && isProjectOwner(project);
-  return tmp;
-}

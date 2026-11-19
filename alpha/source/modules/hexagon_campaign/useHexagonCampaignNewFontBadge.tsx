@@ -1,18 +1,18 @@
-// Module ID: 15785
-// Function ID: 15786
+// Module ID: 15776
+// Function ID: 15777
 // Name: useHexagonCampaignNewFontBadge
-// Dependencies: [19, 15786, 15563, 4848, 4853, 504, 15787, 15775, 15776, 6469, 2]
+// Dependencies: [19, 15777, 15549, 4817, 4822, 504, 15778, 15766, 15767, 6440, 2]
 // Exports: useHexagonCampaignDisplayNameStylePromo, useHexagonCampaignHasVisitedDisplayNameStyles, useHexagonCampaignNewFontBadge, useMarkHexagonCampaignDisplayNameStylesVisited
 
-// Module 15785 (useHexagonCampaignNewFontBadge)
+// Module 15776 (useHexagonCampaignNewFontBadge)
 import get_initialized from "get initialized" /* 504 */;
-import HexagonCampaignPerkAvailability from "HexagonCampaignPerkAvailability" /* 4853 */;
-import HexagonActionCreators from "HexagonActionCreators" /* 15775 */;
-import HexagonCampaignAnalytics from "HexagonCampaignAnalytics" /* 15776 */;
+import HexagonCampaignPerkAvailability from "HexagonCampaignPerkAvailability" /* 4822 */;
+import HexagonActionCreators from "HexagonActionCreators" /* 15766 */;
+import HexagonCampaignAnalytics from "HexagonCampaignAnalytics" /* 15767 */;
 import react from "react" /* 19 */;
-import DisplayNameStylesSeenStore from "DisplayNameStylesSeenStore" /* 15786 */;
-import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 15563 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4848 */;
+import DisplayNameStylesSeenStore from "DisplayNameStylesSeenStore" /* 15777 */;
+import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 15549 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4817 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -21,7 +21,7 @@ let _require, seenFonts;
 let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
-const f109956 = () => HexagonCampaignPersistedStore.hasVisitedDisplayNameStyles;
+const f109932 = () => HexagonCampaignPersistedStore.hasVisitedDisplayNameStyles;
 ({ HEXAGON_CAMPAIGN_DISPLAY_NAME_FONT: hasOwnProperty, HexagonCampaignPerk: metroRequire, HexagonCampaignPerkAvailability: metroImportDefault } = HexagonCampaignConstants);
 let result = size.fileFinishedImporting("modules/hexagon_campaign/useHexagonCampaignNewFontBadge.tsx");
 
@@ -48,7 +48,7 @@ export function useHexagonCampaignNewFontBadge(DisplayNameStylesEditScreen) {
 export function useHexagonCampaignHasVisitedDisplayNameStyles() {
   const items = [HexagonCampaignPersistedStore];
   const obj = get_initialized;
-  return obj.useStateFromStores(items, f109956);
+  return obj.useStateFromStores(items, f109932);
 }
 export function useMarkHexagonCampaignDisplayNameStylesVisited(DisplayNameStylesEditScreen) {
   let closure_0;
@@ -58,7 +58,7 @@ export function useMarkHexagonCampaignDisplayNameStylesVisited(DisplayNameStyles
   _require = tmp;
   const items = [HexagonCampaignPersistedStore];
   const obj2 = require("get initialized");
-  stateFromStores = obj2.useStateFromStores(items, f109956);
+  stateFromStores = obj2.useStateFromStores(items, f109932);
   const items1 = [tmp, stateFromStores];
   const effect = react.useEffect(() => {
     const tmp = closure_0 && !stateFromStores;
@@ -89,12 +89,12 @@ export function useHexagonCampaignDisplayNameStylePromo(arg0) {
   }
   const useTrackHexagonCampaignContentViewed = HexagonCampaignAnalytics.useTrackHexagonCampaignContentViewed;
   HexagonCampaignAnalytics;
-  const trackHexagonCampaignContentViewed = useTrackHexagonCampaignContentViewed(tmp(6469).QuestContent.DISPLAY_NAME_STYLES_SETTINGS, tmp(15776).HexagonCampaignContentSurface.PROFILE_ROW_PROMO, tmp3);
+  const trackHexagonCampaignContentViewed = useTrackHexagonCampaignContentViewed(tmp(6440).QuestContent.DISPLAY_NAME_STYLES_SETTINGS, tmp(15767).HexagonCampaignContentSurface.PROFILE_ROW_PROMO, tmp3);
   const items = [HexagonCampaignPersistedStore];
   const obj2 = { showCampaignPromo: tmp3, showCampaignNewBadge: tmp3 };
   const tmpResult2 = get_initialized;
   if (tmp3) {
-    tmp3 = !tmpResult2.useStateFromStores(items, f109956);
+    tmp3 = !tmpResult2.useStateFromStores(items, f109932);
   }
   return obj2;
 }

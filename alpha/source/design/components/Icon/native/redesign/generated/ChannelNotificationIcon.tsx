@@ -1,14 +1,14 @@
-// Module ID: 11627
-// Function ID: 11628
+// Module ID: 11605
+// Function ID: 11606
 // Name: ChannelNotificationIcon
-// Dependencies: [19, 21, 575, 5509, 11628, 2]
+// Dependencies: [19, 21, 575, 5478, 11606, 2]
 // Exports: ChannelNotificationIcon
 
-// Module 11627 (ChannelNotificationIcon)
+// Module 11605 (ChannelNotificationIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5509 */;
-import AssetRegistry from "AssetRegistry" /* 11628 */;
+import BaseIconImage2 from "BaseIconImage" /* 5478 */;
+import AssetRegistry from "AssetRegistry" /* 11606 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

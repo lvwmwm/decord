@@ -1,7 +1,7 @@
 // Module ID: 18403
 // Function ID: 18404
 // Name: useConjureRevealedText
-// Dependencies: [32, 19, 4824, 504, 18404, 18405, 2]
+// Dependencies: [32, 19, 4793, 504, 18404, 18405, 2]
 // Exports: useConjureRevealedText
 
 // Module 18403 (useConjureRevealedText)
@@ -9,7 +9,7 @@ import ConjureStreamReveal from "ConjureStreamReveal" /* 18404 */;
 import conjurePageVisibility from "conjurePageVisibility" /* 18405 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4824 */;
+import AccessibilityStore from "AccessibilityStore" /* 4793 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

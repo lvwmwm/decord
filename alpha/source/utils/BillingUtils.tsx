@@ -1,16 +1,16 @@
-// Module ID: 4635
-// Function ID: 4636
+// Module ID: 4605
+// Function ID: 4606
 // Name: BillingUtils
-// Dependencies: [5, 4636, 1083, 4637, 1242, 1285, 4643, 2]
+// Dependencies: [5, 4606, 1083, 4607, 1242, 1285, 4613, 2]
 // Exports: calculateStandardizedUnits, captureBillingException, captureBillingMessage, createGatewayCheckoutContext, getLocalizedDisplayMonth, isExpectedHttpClientError, isOfTypeStripeError
 
-// Module 4635 (BillingUtils)
+// Module 4605 (BillingUtils)
 import Constants from "Constants" /* 1083 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
-import Constants2 from "Constants" /* 4636 */;
-import BraintreeUtils from "BraintreeUtils" /* 4637 */;
-import BillingErrorDefault from "BillingError" /* 4643 */;
+import Constants2 from "Constants" /* 4606 */;
+import BraintreeUtils from "BraintreeUtils" /* 4607 */;
+import errors_V6OrEarlierAPIErrorDefault from "errors/V6OrEarlierAPIError" /* 4613 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let obj = function _createGatewayCheckoutContext() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -110,8 +110,8 @@ export function captureBillingException(error, options) {
 export function isExpectedHttpClientError(error) {
   let tmp2 = error instanceof HTTPUtils.HTTPResponseError && error.status >= 400 && error.status < 500;
   if (!tmp2) {
-    tmp2 = error instanceof BillingErrorDefault && null != error.status && error.status >= 400 && error.status < 500;
-    const tmp4 = error instanceof BillingErrorDefault && null != error.status && error.status >= 400 && error.status < 500;
+    tmp2 = error instanceof errors_V6OrEarlierAPIErrorDefault && null != error.status && error.status >= 400 && error.status < 500;
+    const tmp4 = error instanceof errors_V6OrEarlierAPIErrorDefault && null != error.status && error.status >= 400 && error.status < 500;
   }
   return tmp2;
 }

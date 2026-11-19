@@ -1,7 +1,18 @@
 // Module ID: 15502
 // Function ID: 15503
-// Dependencies: []
+// Dependencies: [15500]
 
 // Module 15502
+import _mod15500 from "module_15500" /* 15500 */;
 
-export default (arg0, value) => ({ enumerable: !(1 & arg0), configurable: !(2 & arg0), writable: !(4 & arg0), value });
+
+export default (arg0, arg1) => {
+  let tmp3;
+  const tmp = _mod15500(arg0);
+  if (tmp < 0) {
+    tmp3 = max(tmp + arg1, 0);
+  } else {
+    tmp3 = min(tmp, arg1);
+  }
+  return tmp3;
+};

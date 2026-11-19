@@ -1,21 +1,21 @@
-// Module ID: 7479
-// Function ID: 7480
+// Module ID: 7449
+// Function ID: 7450
 // Name: GuildScheduledEventModalActionCreators
-// Dependencies: [5, 4678, 7480, 5037, 7481, 2121, 7486, 14614, 2]
+// Dependencies: [5, 4647, 7450, 5006, 7451, 2121, 7456, 14601, 2]
 // Exports: openEndEventModal, transitionToEventDetailsFromInvite
 
-// Module 7479 (GuildScheduledEventModalActionCreators)
+// Module 7449 (GuildScheduledEventModalActionCreators)
 import asyncRequire from "asyncRequire" /* 2121 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4678 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
-import GuildEventModalConstants from "GuildEventModalConstants" /* 7480 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4647 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
+import GuildEventModalConstants from "GuildEventModalConstants" /* 7450 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, closure_3;
 
 let tmp3;
-const ScheduleUtils = tmp3(7486);
+const ScheduleUtils = tmp3(7456);
 function openGuildEventDetails(arg0) {
   let event;
   let eventId;
@@ -26,7 +26,7 @@ function openGuildEventDetails(arg0) {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
   obj = { eventId, event, onCloseActionSheet: onClose, recurrenceId };
-  const tmp4 = asyncRequire(7481, dependencyMap.paths);
+  const tmp4 = asyncRequire(7451, dependencyMap.paths);
   const tmp5 = closure_5;
   if (recurrenceId == null) {
     const tmp3Result = ScheduleUtils;
@@ -49,7 +49,7 @@ let obj = function _transitionToEventDetailsFromInvite() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -84,7 +84,7 @@ let obj = function _transitionToEventDetailsFromInvite() {
             }
             tmp7(obj);
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp16) {
           c5 = 3;
@@ -106,5 +106,5 @@ export function transitionToEventDetailsFromInvite() {
 export function openEndEventModal(channel) {
   obj = ActionSheetActionCreatorsDefault;
   const obj2 = { channel };
-  obj.openLazy(asyncRequire(14614, dependencyMap.paths), closure_4, obj2);
+  obj.openLazy(asyncRequire(14601, dependencyMap.paths), closure_4, obj2);
 }

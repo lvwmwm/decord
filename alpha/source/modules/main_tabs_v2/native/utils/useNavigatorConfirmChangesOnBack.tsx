@@ -1,10 +1,10 @@
-// Module ID: 10494
-// Function ID: 10495
+// Module ID: 10472
+// Function ID: 10473
 // Name: useNavigatorConfirmChangesOnBack
-// Dependencies: [19, 17, 1072, 10495, 10496, 2]
+// Dependencies: [19, 17, 1072, 10473, 10474, 2]
 // Exports: default
 
-// Module 10494 (useNavigatorConfirmChangesOnBack)
+// Module 10472 (useNavigatorConfirmChangesOnBack)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import react from "react" /* 19 */;
@@ -21,6 +21,6 @@ export default function useNavigatorConfirmChangesOnBack() {
   let resetPending;
   const ref = react.useRef(null);
   dependencyMap = react.useRef(false);
-  let obj = { onGoBack: ref(10495)(obj2).onGoBack, ref };
+  let obj = { onGoBack: ref(10473)(obj2).onGoBack, ref };
   return obj;
 };

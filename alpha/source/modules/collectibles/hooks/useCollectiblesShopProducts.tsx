@@ -1,26 +1,26 @@
-// Module ID: 9796
-// Function ID: 9797
+// Module ID: 9775
+// Function ID: 9776
 // Name: useCollectiblesShopProducts
-// Dependencies: [32, 19, 8876, 8080, 7988, 7989, 8084, 9797, 504, 7986, 8079, 9798, 2]
+// Dependencies: [32, 19, 8849, 8049, 7957, 7958, 8053, 9776, 504, 7955, 8048, 9777, 2]
 // Exports: useCollectiblesShopProduct, useCollectiblesShopProducts, useFetchResolvedAbsent
 
-// Module 9796 (useCollectiblesShopProducts)
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7986 */;
-import StorefrontProductActionCreators from "StorefrontProductActionCreators" /* 8079 */;
-import CollectiblesShopManager2 from "CollectiblesShopManager" /* 9797 */;
+// Module 9775 (useCollectiblesShopProducts)
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7955 */;
+import StorefrontProductActionCreators from "StorefrontProductActionCreators" /* 8048 */;
+import CollectiblesShopManager2 from "CollectiblesShopManager" /* 9776 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import StorefrontCollectionStore from "StorefrontCollectionStore" /* 8876 */;
-import StorefrontProductStore from "StorefrontProductStore" /* 8080 */;
-import CollectiblesCategoryRecord from "CollectiblesCategoryRecord" /* 7988 */;
-import CollectiblesProductRecord from "CollectiblesProductRecord" /* 7989 */;
+import StorefrontCollectionStore from "StorefrontCollectionStore" /* 8849 */;
+import StorefrontProductStore from "StorefrontProductStore" /* 8049 */;
+import CollectiblesCategoryRecord from "CollectiblesCategoryRecord" /* 7957 */;
+import CollectiblesProductRecord from "CollectiblesProductRecord" /* 7958 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, set, set2;
 
 let tmp;
-const StorefrontCollectionActionCreators = tmp(9798);
+const StorefrontCollectionActionCreators = tmp(9777);
 function computeEntryState(arg0) {
   let needsCategory;
   let product;
@@ -456,10 +456,10 @@ export function useCollectiblesShopProducts(resolvedSkuIds, arg1) {
   }, items6);
   const items7 = [memo1];
   const memo2 = memo.useMemo(() => {
-    const f127769 = (item) => "" !== item;
+    const f127722 = (item) => "" !== item;
     const values = Object.values(memo1);
-    const items = [...new Set(values.filter(f127769))];
-    new Set(values.filter(f127769));
+    const items = [...new Set(values.filter(f127722))];
+    new Set(values.filter(f127722));
     return items;
   }, items7);
   const items8 = [flag, memo2.join(",")];

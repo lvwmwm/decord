@@ -1,18 +1,18 @@
-// Module ID: 12646
-// Function ID: 12647
+// Module ID: 12629
+// Function ID: 12630
 // Name: CheckpointIntroScreen
-// Dependencies: [32, 19, 17, 4824, 5877, 21, 575, 4823, 1630, 12647, 504, 1655, 5033, 12434, 1496, 12648, 12649, 12435, 1113, 3339, 2]
+// Dependencies: [32, 19, 17, 4793, 5848, 21, 575, 4792, 1630, 12630, 504, 1655, 5002, 12417, 1496, 12631, 12632, 12418, 1113, 3339, 2]
 // Exports: default
 
-// Module 12646 (CheckpointIntroScreen)
+// Module 12629 (CheckpointIntroScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4824 */;
-import CheckpointConstants from "CheckpointConstants" /* 5877 */;
+import AccessibilityStore from "AccessibilityStore" /* 4793 */;
+import CheckpointConstants from "CheckpointConstants" /* 5848 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -62,7 +62,7 @@ export default function CheckpointIntroScreen(onCharacterBottomInsetChange) {
   let tmp18;
   let tmp19;
   let useReducedMotion;
-  const f103733 = () => useReducedMotion.useReducedMotion;
+  const f103709 = () => useReducedMotion.useReducedMotion;
   const _require = onCharacterBottomInsetChange.onCharacterBottomInsetChange;
   let landscapeContainer;
   let ref;
@@ -78,8 +78,8 @@ export default function CheckpointIntroScreen(onCharacterBottomInsetChange) {
   const tmp8 = landscapeContainer(ref[9])();
   let obj = require("get initialized");
   let items = [AccessibilityStore];
-  [tmp11, c3] = react.useState(obj.useStateFromStores(items, f103733));
-  _slicedToArray(react.useState(obj.useStateFromStores(items, f103733)), 2);
+  [tmp11, c3] = react.useState(obj.useStateFromStores(items, f103709));
+  _slicedToArray(react.useState(obj.useStateFromStores(items, f103709)), 2);
   const effect = react.useEffect(() => {
     const timeout = setTimeout(() => closure_1_3(true), closure_1_9);
     return () => clearTimeout(closure_0);

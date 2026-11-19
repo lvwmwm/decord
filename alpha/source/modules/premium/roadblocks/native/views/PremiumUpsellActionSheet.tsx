@@ -1,31 +1,31 @@
-// Module ID: 8458
-// Function ID: 8459
+// Module ID: 8427
+// Function ID: 8428
 // Name: PremiumUpsellActionSheet
-// Dependencies: [19, 17, 4824, 1192, 5564, 4856, 1388, 1390, 1072, 5664, 8453, 21, 4823, 575, 5387, 2174, 8459, 8397, 8382, 1113, 8460, 8464, 8468, 8469, 5037, 8457, 8470, 14328, 9258, 1092, 10909, 5510, 5378, 504, 7431, 10419, 8730, 8733, 14332, 1256, 10910, 5008, 7464, 14334, 5414, 5421, 8711, 2]
+// Dependencies: [19, 17, 4793, 1192, 5533, 4825, 1388, 1390, 1072, 5633, 8422, 21, 4792, 575, 5356, 2174, 8428, 8366, 8351, 1113, 8429, 8433, 8437, 8438, 5006, 8426, 8439, 14311, 9234, 1092, 14315, 10887, 5479, 5347, 504, 7401, 10397, 8699, 8702, 14319, 1256, 10888, 4977, 7434, 14321, 5383, 5390, 8680, 2]
 // Exports: default
 
-// Module 8458 (PremiumUpsellActionSheet)
+// Module 8427 (PremiumUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import PremiumUtils from "PremiumUtils" /* 2174 */;
-import ChatInputUtils from "ChatInputUtils" /* 5008 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
-import LinearGradientDefault from "LinearGradient" /* 5378 */;
-import FastImageDefault from "FastImage" /* 5510 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 5664 */;
-import ScheduledMessagesConstants from "ScheduledMessagesConstants" /* 8453 */;
-import openPremiumUpsellActionSheet from "openPremiumUpsellActionSheet" /* 8457 */;
+import ChatInputUtils from "ChatInputUtils" /* 4977 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
+import LinearGradientDefault from "LinearGradient" /* 5347 */;
+import FastImageDefault from "FastImage" /* 5479 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 5633 */;
+import ScheduledMessagesConstants from "ScheduledMessagesConstants" /* 8422 */;
+import openPremiumUpsellActionSheet from "openPremiumUpsellActionSheet" /* 8426 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4824 */;
+import AccessibilityStore from "AccessibilityStore" /* 4793 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5564 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4856 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5533 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4825 */;
 import UserStore from "UserStore" /* 1388 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let guildId;
@@ -51,7 +51,7 @@ function PremiumUpsellImage(arg0) {
   let useReducedMotion;
   ({ image, style, useReducedMotion } = arg0);
   const obj = { source: image, resizeMode: "contain", style, enableAnimation: !useReducedMotion, accessible: false };
-  return authStore4(FastImageDefault, obj);
+  return closure_18(FastImageDefault, obj);
 }
 function PremiumUpsellHero(arg0) {
   let items;
@@ -66,24 +66,24 @@ function PremiumUpsellHero(arg0) {
   ({ pageConfig, styles, useReducedMotion } = arg0);
   if (null != pageConfig.illustration) {
     const obj2 = { style: styles.hero, children: pageConfig.illustration };
-    tmp10 = authStore4(View, obj2);
+    tmp10 = closure_18(View, obj2);
   } else {
     tmp10 = null;
     if (null != pageConfig.image) {
       let tmp3;
       if (null != pageConfig.imageGradientBackground) {
-        const obj3 = { style: styles.imageGradientBackgroundContainer, children: authStore4(tmp8, obj4) };
-        obj4 = { colors: pageConfig.imageGradientBackground.colors, start: pageConfig.imageGradientBackground.start, end: pageConfig.imageGradientBackground.end, style: styles.imageGradientBackground, children: authStore4(PremiumUpsellImage, obj5) };
+        const obj3 = { style: styles.imageGradientBackgroundContainer, children: closure_18(tmp8, obj4) };
+        obj4 = { colors: pageConfig.imageGradientBackground.colors, start: pageConfig.imageGradientBackground.start, end: pageConfig.imageGradientBackground.end, style: styles.imageGradientBackground, children: closure_18(PremiumUpsellImage, obj5) };
         obj5 = { image: pageConfig.image, style: items, useReducedMotion };
         items = [, , ];
         ({ hero: arr2[0], image: arr2[1], imageInGradientBackground: arr2[2] } = styles);
         tmp8 = LinearGradientDefault;
-        tmp3 = authStore4(View, obj3);
+        tmp3 = closure_18(View, obj3);
       } else {
         const obj = { image: pageConfig.image, style: items1, useReducedMotion };
         items1 = [, ];
         ({ hero: arr[0], image: arr[1] } = styles);
-        tmp3 = authStore4(PremiumUpsellImage, obj);
+        tmp3 = closure_18(PremiumUpsellImage, obj);
       }
       tmp10 = tmp3;
     }
@@ -120,8 +120,10 @@ export default function PremiumUpsellActionSheet(analyticsLocations) {
   let intl15;
   let intl16;
   let intl17;
+  let intl18;
+  let intl19;
   let intl2;
-  let intl20;
+  let intl22;
   let intl3;
   let intl4;
   let intl5;
@@ -139,9 +141,9 @@ export default function PremiumUpsellActionSheet(analyticsLocations) {
   let obj17;
   let obj19;
   let obj20;
-  let obj29;
+  let obj31;
   let obj9;
-  let str2;
+  let primaryCtaVariant;
   let theme;
   let tmp2Result24;
   let tmp36;
@@ -158,39 +160,39 @@ export default function PremiumUpsellActionSheet(analyticsLocations) {
   const tmp = closure_21();
   const tmp2 = legacyProps;
   const tmp3 = useTier0UpsellContent;
-  let obj = legacyProps(useTier0UpsellContent[33]);
+  let obj = legacyProps(useTier0UpsellContent[34]);
   const items = [UserStore];
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   const tmp5 = analyticsLocations;
-  analyticsLocations = analyticsLocations(useTier0UpsellContent[34])(analyticsLocations1).analyticsLocations;
+  analyticsLocations = analyticsLocations(useTier0UpsellContent[35])(analyticsLocations1).analyticsLocations;
   let initialUpsellKey;
-  const usePremiumUpsellConfig = legacyProps(useTier0UpsellContent[35]).usePremiumUpsellConfig;
-  legacyProps(useTier0UpsellContent[35]);
+  const usePremiumUpsellConfig = legacyProps(useTier0UpsellContent[36]).usePremiumUpsellConfig;
+  legacyProps(useTier0UpsellContent[36]);
   const tmp7 = analyticsLocations1;
   if (legacyProps != null) {
     initialUpsellKey = legacyProps.initialUpsellKey;
   }
   if (initialUpsellKey == null) {
-    const tmp2Result = tmp2(tmp3[30]);
+    const tmp2Result = tmp2(tmp3[31]);
     initialUpsellKey = tmp2Result.getUpsellType(featureName);
   }
   const premiumUpsellConfig = usePremiumUpsellConfig(initialUpsellKey, analyticsLocations);
   useTier0UpsellContent = premiumUpsellConfig.useTier0UpsellContent;
   onViewAllPerks = premiumUpsellConfig.onViewAllPerks;
-  const tmp2Result14 = tmp2(tmp3[36]);
+  const tmp2Result14 = tmp2(tmp3[37]);
   const premiumTrialOffer = tmp2Result14.usePremiumTrialOffer();
-  tmp2(tmp3[37]);
+  tmp2(tmp3[38]);
   let mobileRoadblockButtonText = null;
   if (!useTier0UpsellContent) {
     let obj2 = { subscriptionTier: TIER_2.TIER_2, trialOffer: premiumTrialOffer, discountOffer: tmp12 };
-    const tmp2Result16 = tmp2(tmp3[38]);
+    const tmp2Result16 = tmp2(tmp3[39]);
     mobileRoadblockButtonText = tmp2Result16.getMobileRoadblockButtonText(obj2);
   }
   const items1 = [ThemeStore];
-  const tmp2Result17 = tmp2(tmp3[33]);
+  const tmp2Result17 = tmp2(tmp3[34]);
   const stateFromStores1 = tmp2Result17.useStateFromStores(items1, () => theme.theme);
   const items2 = [SelectedGuildStore];
-  const tmp2Result18 = tmp2(tmp3[33]);
+  const tmp2Result18 = tmp2(tmp3[34]);
   const stateFromStores2 = tmp2Result18.useStateFromStores(items2, () => guildId.getGuildId());
   const tmp18 = useTier0UpsellContent ? closure_11.TIER_0 : closure_11.TIER_2;
   const tmp2Result19 = tmp2(tmp3[14]);
@@ -273,10 +275,15 @@ export default function PremiumUpsellActionSheet(analyticsLocations) {
   obj20 = { colors: items3, start: tmp2(tmp3[29]).HorizontalGradient.START, end: tmp2(tmp3[29]).HorizontalGradient.END };
   items3 = [token, token1];
   obj3[STREAM_HIGH_QUALITY] = obj18;
+  const obj21 = { title: intl18.string(tmp2(tmp3[19]).t.rTY76D), description: intl19.string(tmp2(tmp3[19]).t["2LCxoj"]), analyticsPage: constants3.PREMIUM_UPSELL_PROFILE_CUSTOMIZATION, upsellType: constants.CUSTOM_PROFILE_UPSELL, illustration: closure_18(tmp2(tmp3[30]).ProfileEffectsAbstractUI, { accessible: false }), primaryCtaVariant: "experimental_premium-primary", hideSecondaryCta: true };
+  const PROFILE_PREMIUM_FEATURES = tmp2(tmp3[16]).EntitlementFeatureNames.PROFILE_PREMIUM_FEATURES;
+  intl18 = tmp2(tmp3[19]).intl;
+  intl19 = tmp2(tmp3[19]).intl;
+  obj3[PROFILE_PREMIUM_FEATURES] = obj21;
   closure_4 = tmp25;
   const items4 = [AccessibilityStore];
   const items5 = [obj3[featureName], analyticsLocations, useTier0UpsellContent, legacyProps];
-  const tmp2Result25 = tmp2(tmp3[33]);
+  const tmp2Result25 = tmp2(tmp3[34]);
   const stateFromStores3 = tmp2Result25.useStateFromStores(items4, () => useReducedMotion.useReducedMotion);
   const effect = onViewAllPerks.useEffect(() => {
     let analyticsPage;
@@ -306,62 +313,70 @@ export default function PremiumUpsellActionSheet(analyticsLocations) {
     }
     track(PREMIUM_UPSELL_VIEWED, obj);
   }, items5);
-  const tmp28 = tmp5(tmp3[40])(useTier0UpsellContent, onViewAllPerks, obj3[featureName].analyticsPage, undefined, tmp7);
+  const tmp28 = tmp5(tmp3[41])(useTier0UpsellContent, onViewAllPerks, obj3[featureName].analyticsPage, undefined, tmp7);
   const loading = tmp28.loading;
   [][0] = onViewAllPerks;
   const onPress = tmp28.onPress;
-  let tmp24Result2 = null;
+  let tmp24Result4 = null;
   if (null != obj3[featureName]) {
-    const obj21 = { pageConfig: obj3[featureName], styles: tmp, useReducedMotion: stateFromStores3 };
-    const ActionSheet = tmp2(tmp3[42]).ActionSheet;
-    const items6 = [closure_18(PremiumUpsellHero, obj21), , ];
+    const obj22 = { pageConfig: obj3[featureName], styles: tmp, useReducedMotion: stateFromStores3 };
+    const ActionSheet = tmp2(tmp3[43]).ActionSheet;
+    const items6 = [closure_18(PremiumUpsellHero, obj22), , ];
     let tmp24Result = null;
-    const obj22 = { style: tmp.textContainer, children: items7 };
+    const obj23 = { style: tmp.textContainer, children: items7 };
     if (true === obj3[featureName].showBetaBadge) {
-      const obj23 = { size: tmp2(tmp3[43]).BetaSizes.SMALL, gradient: true, style: tmp.betaTag };
-      const tmp5Result = tmp5(tmp3[43]);
-      tmp24Result = tmp24(tmp5Result, obj23);
+      const obj24 = { size: tmp2(tmp3[44]).BetaSizes.SMALL, gradient: true, style: tmp.betaTag };
+      const tmp5Result = tmp5(tmp3[44]);
+      tmp24Result = tmp24(tmp5Result, obj24);
     }
     items7 = [tmp24Result, , ];
-    const obj24 = { style: tmp.text, variant: "heading-lg/semibold", accessibilityRole: "header", children: obj3[featureName].title };
-    items7[1] = closure_18(tmp2(tmp3[44]).Text, obj24);
-    const obj25 = { style: items8, variant: "body-sm/normal", children: obj3[featureName].description };
+    const obj25 = { style: tmp.text, variant: "heading-lg/semibold", accessibilityRole: "header", children: obj3[featureName].title };
+    items7[1] = closure_18(tmp2(tmp3[45]).Text, obj25);
+    const obj26 = { style: items8, variant: "body-sm/normal", children: obj3[featureName].description };
     items8 = [, ];
     ({ text: arr10[0], description: arr10[1] } = tmp);
-    items7[2] = closure_18(tmp2(tmp3[44]).Text, obj25);
-    items6[1] = closure_20(closure_4, obj22);
-    const obj26 = { style: tmp.buttonContainer, children: items9 };
-    const obj27 = { loading, onPress: tmp36, text: mobileRoadblockButtonText, icon: tmp5(tmp3[46]), variant: str2 };
+    items7[2] = closure_18(tmp2(tmp3[45]).Text, obj26);
+    items6[1] = closure_20(closure_4, obj23);
+    const obj27 = { style: tmp.buttonContainer, children: items9 };
+    const obj28 = { loading, onPress: tmp36, text: mobileRoadblockButtonText, icon: tmp5(tmp3[47]), variant: primaryCtaVariant };
     tmp36 = null;
-    const Button = tmp2(tmp3[45]).Button;
+    const Button = tmp2(tmp3[46]).Button;
     if (!loading) {
       tmp36 = onPress;
     }
     if (useTier0UpsellContent) {
-      const intl19 = tmp2(tmp3[19]).intl;
-      mobileRoadblockButtonText = intl19.string(tmp2(tmp3[19]).t.cM8bbx);
+      const intl21 = tmp2(tmp3[19]).intl;
+      mobileRoadblockButtonText = intl21.string(tmp2(tmp3[19]).t.cM8bbx);
     } else if (mobileRoadblockButtonText == null) {
-      const intl18 = tmp2(tmp3[19]).intl;
-      mobileRoadblockButtonText = intl18.string(tmp2(tmp3[19]).t["8x0jKT"]);
+      const intl20 = tmp2(tmp3[19]).intl;
+      mobileRoadblockButtonText = intl20.string(tmp2(tmp3[19]).t["8x0jKT"]);
     }
-    str2 = "primary";
-    const tmp2Result26 = tmp2(tmp3[30]);
-    if (tmp2Result26.isExpressionPickerUpsellFeature(featureName)) {
-      let str3 = "experimental_premium-primary";
-      if (useTier0UpsellContent) {
-        str3 = "experimental_premium-basic";
+    primaryCtaVariant = tmp25.primaryCtaVariant;
+    if (primaryCtaVariant == null) {
+      let str2 = "primary";
+      const tmp2Result26 = tmp2(tmp3[31]);
+      if (tmp2Result26.isExpressionPickerUpsellFeature(featureName)) {
+        let str3 = "experimental_premium-primary";
+        if (useTier0UpsellContent) {
+          str3 = "experimental_premium-basic";
+        }
+        str2 = str3;
       }
-      str2 = str3;
+      primaryCtaVariant = str2;
     }
-    const obj28 = { startExpanded: true, children: closure_20(closure_4, obj29) };
-    obj29 = { children: items6 };
-    items9 = [closure_18(Button, obj27), ];
-    const obj30 = { variant: "secondary", text: intl20.string(tmp2(tmp3[19]).t.PcTCB7), onPress: tmp29 };
-    const Button2 = tmp2(tmp3[45]).Button;
-    intl20 = tmp2(tmp3[19]).intl;
-    items9[1] = closure_18(Button2, obj30);
-    items6[2] = closure_20(closure_4, obj26);
-    tmp24Result2 = tmp24(ActionSheet, obj28);
+    items9 = [closure_18(Button, obj28), ];
+    let tmp24Result3 = !tmp25.hideSecondaryCta;
+    if (tmp24Result3) {
+      const obj29 = { variant: "secondary", text: intl22.string(tmp2(tmp3[19]).t.PcTCB7), onPress: tmp29 };
+      const Button2 = tmp2(tmp3[46]).Button;
+      intl22 = tmp2(tmp3[19]).intl;
+      tmp24Result3 = tmp24(Button2, obj29);
+    }
+    const obj30 = { startExpanded: true, children: closure_20(closure_4, obj31) };
+    obj31 = { children: items6 };
+    items9[1] = tmp24Result3;
+    items6[2] = closure_20(closure_4, obj27);
+    tmp24Result4 = tmp24(ActionSheet, obj30);
   }
-  return tmp24Result2;
+  return tmp24Result4;
 };

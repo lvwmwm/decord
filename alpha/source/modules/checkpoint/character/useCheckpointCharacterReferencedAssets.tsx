@@ -1,13 +1,13 @@
-// Module ID: 12639
-// Function ID: 12640
+// Module ID: 12622
+// Function ID: 12623
 // Name: useCheckpointCharacterReferencedAssets
-// Dependencies: [19, 1360, 12471, 12470, 12637, 12640, 2]
+// Dependencies: [19, 1360, 12454, 12453, 12620, 12623, 2]
 // Exports: useCheckpointCharacterReferencedAssets
 
-// Module 12639 (useCheckpointCharacterReferencedAssets)
+// Module 12622 (useCheckpointCharacterReferencedAssets)
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1360 */;
-import CheckpointCharacterTextureUtils from "CheckpointCharacterTextureUtils" /* 12470 */;
-import CheckpointCharacterTextureAssets from "CheckpointCharacterTextureAssets" /* 12471 */;
+import CheckpointCharacterTextureUtils from "CheckpointCharacterTextureUtils" /* 12453 */;
+import CheckpointCharacterTextureAssets from "CheckpointCharacterTextureAssets" /* 12454 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ export function useCheckpointCharacterReferencedAssets(preloadedTextureNames) {
   let requestedDataBinding;
   let textureScale;
   let visibleDataBinding;
-  const f103718 = () => {
+  const f103694 = () => {
     const obj = { faceID: faceID2, headwearID: headwearID2, shoesID: shoesID2, wearableID: wearableID2 };
     let closure_2 = device2;
     set = new Set();
@@ -80,8 +80,8 @@ export function useCheckpointCharacterReferencedAssets(preloadedTextureNames) {
   let chapterID2 = requestedDataBinding.chapterID;
   const device2 = requestedDataBinding.device;
   const items1 = [faceID2, headwearID2, shoesID2, wearableID2, chapterID2, device2];
-  const memo = checkpointCharacterLoadedTextureNames.useMemo(f103718, items);
-  const memo1 = checkpointCharacterLoadedTextureNames.useMemo(f103718, items1);
+  const memo = checkpointCharacterLoadedTextureNames.useMemo(f103694, items);
+  const memo1 = checkpointCharacterLoadedTextureNames.useMemo(f103694, items1);
   let obj = textureScale(preloadedTextureNames[5]);
   checkpointCharacterLoadedTextureNames = obj.useCheckpointCharacterLoadedTextureNames({ visibleTextureNames: memo, requestedTextureNames: memo1 });
   const items2 = [checkpointCharacterLoadedTextureNames, preloadedTextureNames, textureScale];

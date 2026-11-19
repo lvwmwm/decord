@@ -1,17 +1,17 @@
-// Module ID: 19891
-// Function ID: 19892
+// Module ID: 19902
+// Function ID: 19903
 // Name: GuildSettingsRoleItem
-// Dependencies: [5, 19, 17, 1072, 21, 4823, 575, 5414, 5850, 7454, 5769, 1113, 11976, 6419, 5840, 7502, 5530, 7472, 7470, 5378, 1255, 1090, 7687, 6956, 6949, 1187, 11250, 7606, 2]
+// Dependencies: [5, 19, 17, 1072, 21, 4792, 575, 5383, 5821, 7424, 5740, 1113, 11954, 6390, 5811, 7472, 5499, 7442, 7440, 5347, 1255, 1090, 7657, 6926, 6919, 1187, 11228, 7576, 2]
 
-// Module 19891 (GuildSettingsRoleItem)
+// Module 19902 (GuildSettingsRoleItem)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import Text_Text from "Text/Text" /* 5414 */;
+import Text_Text from "Text/Text" /* 5383 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -167,7 +167,7 @@ const memoResult = react.memo(function GuildSettingsRoleItem(guildId) {
                         const obj4 = { value, done: true };
                         return obj4;
                       } else {
-                        return { value: "HermesInternal", done: null };
+                        return { value: "HermesInternal", done: "+60" };
                       }
                     } else {
                       try {
@@ -201,7 +201,7 @@ const memoResult = react.memo(function GuildSettingsRoleItem(guildId) {
                         const obj2 = require("GuildActionCreators");
                         obj2.deleteRole(guildId, tmp.id);
                         c2 = 3;
-                        return { value: "HermesInternal", done: null };
+                        return { value: "HermesInternal", done: "+60" };
                       } catch (tmp15) {
                         c2 = 3;
                         throw tmp15;

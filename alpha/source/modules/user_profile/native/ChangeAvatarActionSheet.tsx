@@ -1,23 +1,23 @@
-// Module ID: 15859
-// Function ID: 15860
+// Module ID: 15850
+// Function ID: 15851
 // Name: ChangeAvatarActionSheet
-// Dependencies: [19, 17, 1388, 1072, 21, 4823, 575, 504, 2174, 7464, 7426, 1113, 8859, 7259, 6956, 7620, 15761, 2]
+// Dependencies: [19, 17, 1388, 1072, 21, 4792, 575, 504, 2174, 15748, 7434, 7396, 1113, 8832, 7229, 6926, 7590, 15750, 7401, 15752, 15751, 2]
 // Exports: default
 
-// Module 15859 (ChangeAvatarActionSheet)
+// Module 15850 (ChangeAvatarActionSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import intl10 from "intl" /* 1113 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7426 */;
-import ActionSheet2 from "ActionSheet" /* 7464 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 8859 */;
+import ProfileEditSheetNitroUpdatesExperiment from "ProfileEditSheetNitroUpdatesExperiment" /* 15748 */;
+import UserProfileUpsellButtonDefault from "UserProfileUpsellButton" /* 15750 */;
+import ProfileEditNitroSubLabelDefault from "ProfileEditNitroSubLabel" /* 15751 */;
+import ProfileEditNitroUpsellRowDefault from "ProfileEditNitroUpsellRow" /* 15752 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -28,8 +28,15 @@ let obj3;
 let obj4;
 let obj5;
 let obj6;
-let tmp5;
-const UserProfileUpsellButtonDefault = tmp5(15761);
+let tmp2;
+const intl18 = tmp2(1113);
+const TableRow10 = tmp2(6926);
+const TableRowGroup3 = tmp2(7229);
+const BottomSheetTitleHeader3 = tmp2(7396);
+const useAnalyticsLocations = tmp2(7401);
+const ActionSheet3 = tmp2(7434);
+const _mod7590 = tmp2(7590);
+const NitroWheelIcon = tmp2(8832);
 const View = react_native.View;
 const AnalyticsObjects = Constants.AnalyticsObjects;
 ({ jsx: metroRequire, jsxs: metroImportDefault, Fragment: metroImportAll } = Fragment);
@@ -42,17 +49,28 @@ obj4 = { marginBottom: 4, color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE, a
 obj5 = { color: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL };
 obj6 = { marginTop: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_8 };
 let closure_9 = createStyles(obj);
+let closure_10 = [];
 const result = size.fileFinishedImporting("modules/user_profile/native/ChangeAvatarActionSheet.tsx");
 
 export default function ChangeAvatarActionSheet(showRemoveAvatar) {
+  let ActionSheet2;
   let FormLabel2;
   let FormLabel3;
   let currentUser;
+  let enabled;
   let handleEditAvatarDecorationSelect;
   let handleRemoveAvatarSelect;
   let handleUploadAvatarSelect;
   let handleUploadGIFAvatarSelect;
   let intl;
+  let intl10;
+  let intl11;
+  let intl12;
+  let intl13;
+  let intl14;
+  let intl15;
+  let intl16;
+  let intl17;
   let intl2;
   let intl3;
   let intl4;
@@ -61,19 +79,23 @@ export default function ChangeAvatarActionSheet(showRemoveAvatar) {
   let intl7;
   let intl8;
   let intl9;
-  let items3;
-  let items4;
   let items5;
-  let obj11;
-  let obj14;
-  let obj16;
-  let obj17;
+  let items6;
+  let items7;
+  let obj10;
+  let obj13;
   let obj19;
-  let obj8;
+  let obj22;
+  let obj25;
+  let obj27;
+  let obj28;
+  let obj30;
   let showAnimatedAvatarUpsell;
-  let tmp5Result;
-  ({ handleUploadGIFAvatarSelect, handleEditAvatarDecorationSelect, showAnimatedAvatarUpsell } = showRemoveAvatar);
-  ({ handleUploadAvatarSelect, handleRemoveAvatarSelect } = showRemoveAvatar);
+  let skipRoadblock;
+  let tmp21Result4;
+  let tmp5Result3;
+  let tmp5Result4;
+  ({ handleUploadAvatarSelect, handleRemoveAvatarSelect, handleUploadGIFAvatarSelect, handleEditAvatarDecorationSelect, showAnimatedAvatarUpsell } = showRemoveAvatar);
   if (showAnimatedAvatarUpsell === undefined) {
     showAnimatedAvatarUpsell = false;
   }
@@ -81,81 +103,148 @@ export default function ChangeAvatarActionSheet(showRemoveAvatar) {
   if (flag === undefined) {
     flag = false;
   }
+  let analyticsLocations = showRemoveAvatar.analyticsLocations;
+  if (analyticsLocations === undefined) {
+    analyticsLocations = closure_10;
+  }
   const tmp = closure_9();
   const items = [UserStore];
   const obj = get_initialized;
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   const obj2 = PremiumUtilsDefault;
   let isPremiumResult = obj2.isPremium(stateFromStores);
-  const ActionSheet = ActionSheet2.ActionSheet;
-  const obj4 = { title: intl.string(intl10.t.lqaIxI), trailing: isPremiumResult, titleWrapperStyle: null, titleContainerStyle: null };
-  const BottomSheetTitleHeader = BottomSheetTitleHeader2.BottomSheetTitleHeader;
-  intl = intl10.intl;
-  if (isPremiumResult) {
-    isPremiumResult = tmp8(tmp2(8859).NitroWheelIcon, {});
+  const obj3 = ProfileEditSheetNitroUpdatesExperiment;
+  const profileEditSheetNitroUpdatesConfig = obj3.useProfileEditSheetNitroUpdatesConfig("change_avatar_action_sheet_native");
+  let tmp21Result = null != handleUploadGIFAvatarSelect;
+  ({ enabled, skipRoadblock } = profileEditSheetNitroUpdatesConfig);
+  if (tmp21Result) {
+    tmp21Result = !showAnimatedAvatarUpsell;
   }
-  ({ titleWrapper: obj3.titleWrapperStyle, titleContainer: obj3.titleContainerStyle } = tmp);
-  const items1 = [metroRequire(BottomSheetTitleHeader, obj4), ];
-  const TableRowGroup = tmp2(7259).TableRowGroup;
-  const obj5 = { label: intl2.string(intl10.t["MsUY/S"]), subLabel: intl3.string(intl10.t.r5hKOy), onPress: handleUploadAvatarSelect };
-  const TableRow = tmp2(6956).TableRow;
-  intl2 = tmp2(1113).intl;
-  intl3 = tmp2(1113).intl;
-  const items2 = [metroRequire(TableRow, obj5), , , , ];
-  let tmp8Result = null != handleUploadGIFAvatarSelect && !showAnimatedAvatarUpsell;
-  if (tmp8Result) {
-    const obj6 = { label: intl4.string(intl10.t["xsC+/y"]), onPress: handleUploadGIFAvatarSelect };
-    const TableRow2 = tmp2(6956).TableRow;
-    intl4 = tmp2(1113).intl;
-    tmp8Result = tmp8(TableRow2, obj6);
+  if (enabled) {
+    const obj5 = { value: analyticsLocations, children: metroImportDefault(ActionSheet2, obj13) };
+    const AnalyticsLocationProvider = useAnalyticsLocations.AnalyticsLocationProvider;
+    ActionSheet2 = ActionSheet3.ActionSheet;
+    const obj6 = { title: intl10.string(intl18.t.lqaIxI) };
+    const BottomSheetTitleHeader2 = BottomSheetTitleHeader3.BottomSheetTitleHeader;
+    intl10 = intl18.intl;
+    const items1 = [metroRequire(BottomSheetTitleHeader2, obj6), ];
+    const TableRowGroup2 = TableRowGroup3.TableRowGroup;
+    const obj7 = { label: intl11.string(intl18.t["MsUY/S"]), onPress: handleUploadAvatarSelect };
+    const TableRow6 = TableRow10.TableRow;
+    intl11 = intl18.intl;
+    const items2 = [metroRequire(TableRow6, obj7), , , , ];
+    if (showAnimatedAvatarUpsell) {
+      const obj8 = { label: intl12.string(intl18.t["xsC+/y"]), subLabel: intl13.string(intl18.t.IsWCZP), analyticsObject: AnalyticsObjects.ANIMATED_AVATAR, skipRoadblock };
+      const tmp5Result = ProfileEditNitroUpsellRowDefault;
+      intl12 = intl18.intl;
+      intl13 = intl18.intl;
+      showAnimatedAvatarUpsell = tmp21(tmp5Result, obj8);
+    }
+    items2[1] = showAnimatedAvatarUpsell;
+    if (tmp21Result) {
+      const obj9 = { label: intl14.string(intl18.t["xsC+/y"]), subLabel: metroRequire(tmp5Result3, obj10), onPress: handleUploadGIFAvatarSelect };
+      const TableRow7 = TableRow10.TableRow;
+      intl14 = intl18.intl;
+      obj10 = { text: intl15.string(intl18.t.TiLCgw) };
+      tmp5Result3 = ProfileEditNitroSubLabelDefault;
+      intl15 = intl18.intl;
+      tmp21Result = tmp21(TableRow7, obj9);
+    }
+    items2[2] = tmp21Result;
+    let tmp21Result3 = null != handleEditAvatarDecorationSelect;
+    if (tmp21Result3) {
+      const obj11 = { label: intl16.string(intl18.t.BVcYCx), onPress: handleEditAvatarDecorationSelect };
+      const TableRow8 = TableRow10.TableRow;
+      intl16 = intl18.intl;
+      tmp21Result3 = tmp21(TableRow8, obj11);
+    }
+    items2[3] = tmp21Result3;
+    if (flag) {
+      const obj12 = { label: intl17.string(intl18.t.twB3fz), variant: "danger", onPress: handleRemoveAvatarSelect };
+      const TableRow9 = TableRow10.TableRow;
+      intl17 = intl18.intl;
+      flag = tmp21(TableRow9, obj12);
+    }
+    obj13 = { children: items1 };
+    const obj14 = { hasIcons: false, children: items2 };
+    items2[4] = flag;
+    items1[1] = metroImportDefault(TableRowGroup2, obj14);
+    tmp21Result4 = tmp21(AnalyticsLocationProvider, obj5);
+  } else {
+    const ActionSheet = ActionSheet3.ActionSheet;
+    const obj15 = { title: intl.string(intl18.t.lqaIxI), trailing: isPremiumResult, titleWrapperStyle: null, titleContainerStyle: null };
+    const BottomSheetTitleHeader = BottomSheetTitleHeader3.BottomSheetTitleHeader;
+    intl = intl18.intl;
+    if (isPremiumResult) {
+      isPremiumResult = tmp10(NitroWheelIcon.NitroWheelIcon, {});
+    }
+    ({ titleWrapper: obj4.titleWrapperStyle, titleContainer: obj4.titleContainerStyle } = tmp);
+    const items3 = [metroRequire(BottomSheetTitleHeader, obj15), ];
+    const TableRowGroup = TableRowGroup3.TableRowGroup;
+    const obj16 = { label: intl2.string(intl18.t["MsUY/S"]), subLabel: intl3.string(intl18.t.r5hKOy), onPress: handleUploadAvatarSelect };
+    const TableRow = TableRow10.TableRow;
+    intl2 = intl18.intl;
+    intl3 = intl18.intl;
+    const items4 = [metroRequire(TableRow, obj16), , , , ];
+    let tmp10Result = tmp21Result;
+    if (tmp10Result) {
+      const obj17 = { label: intl4.string(intl18.t["xsC+/y"]), onPress: handleUploadGIFAvatarSelect };
+      const TableRow2 = TableRow10.TableRow;
+      intl4 = intl18.intl;
+      tmp10Result = tmp10(TableRow2, obj17);
+    }
+    items4[1] = tmp10Result;
+    let tmp10Result4 = showAnimatedAvatarUpsell;
+    if (tmp10Result4) {
+      const obj18 = { label: metroImportDefault(View, obj19), subLabel: metroImportDefault(metroImportAll, obj22) };
+      obj19 = { style: tmp.upsellTitleContainer, children: items5 };
+      const TableRow3 = TableRow10.TableRow;
+      const obj20 = { text: intl5.string(intl18.t.xZ0Wot) };
+      const FormLabel = _mod7590.FormLabel;
+      intl5 = intl18.intl;
+      items5 = [metroRequire(FormLabel, obj20), ];
+      const obj21 = { style: tmp.nitroWheel, size: "sm" };
+      items5[1] = metroRequire(NitroWheelIcon.NitroWheelIcon, obj21);
+      obj22 = { children: items6 };
+      const obj23 = { style: tmp.sublabel, numberOfLines: 3, text: intl6.string(intl18.t.L3UPqR) };
+      const FormSubLabel = _mod7590.FormSubLabel;
+      intl6 = intl18.intl;
+      items6 = [metroRequire(FormSubLabel, obj23), ];
+      const obj24 = { style: tmp.upsellButton, children: metroRequire(tmp5Result4, obj25) };
+      obj25 = { analyticsObject: AnalyticsObjects.ANIMATED_AVATAR, label: intl7.string(intl18.t.mr4K7D) };
+      tmp5Result4 = UserProfileUpsellButtonDefault;
+      intl7 = intl18.intl;
+      items6[1] = metroRequire(View, obj24);
+      tmp10Result4 = tmp10(TableRow3, obj18);
+    }
+    items4[2] = tmp10Result4;
+    let tmp10Result5 = null != handleEditAvatarDecorationSelect;
+    if (tmp10Result5) {
+      const obj26 = { label: metroRequire(View, obj27), onPress: handleEditAvatarDecorationSelect };
+      obj27 = { style: tmp.upsellTitleContainer, children: metroRequire(FormLabel2, obj28) };
+      const TableRow4 = TableRow10.TableRow;
+      obj28 = { text: intl8.string(intl18.t.BVcYCx) };
+      FormLabel2 = _mod7590.FormLabel;
+      intl8 = intl18.intl;
+      tmp10Result5 = tmp10(TableRow4, obj26);
+    }
+    items4[3] = tmp10Result5;
+    let tmp10Result6 = flag;
+    if (tmp10Result6) {
+      const obj29 = { label: metroRequire(FormLabel3, obj30), onPress: handleRemoveAvatarSelect };
+      const TableRow5 = TableRow10.TableRow;
+      obj30 = { style: items7, text: intl9.string(intl18.t.twB3fz) };
+      items7 = [, ];
+      ({ label: arr6[0], remove: arr6[1] } = tmp);
+      FormLabel3 = _mod7590.FormLabel;
+      intl9 = intl18.intl;
+      tmp10Result6 = tmp10(TableRow5, obj29);
+    }
+    const obj31 = { children: items3 };
+    const obj59 = { hasIcons: false, children: items4 };
+    items4[4] = tmp10Result6;
+    items3[1] = metroImportDefault(TableRowGroup, obj59);
+    tmp21Result4 = tmp9(ActionSheet, obj31);
   }
-  items2[1] = tmp8Result;
-  if (showAnimatedAvatarUpsell) {
-    const obj7 = { label: metroImportDefault(View, obj8), subLabel: metroImportDefault(metroImportAll, obj11) };
-    obj8 = { style: tmp.upsellTitleContainer, children: items3 };
-    const TableRow3 = tmp2(6956).TableRow;
-    const obj9 = { text: intl5.string(intl10.t.xZ0Wot) };
-    const FormLabel = tmp2(7620).FormLabel;
-    intl5 = tmp2(1113).intl;
-    items3 = [metroRequire(FormLabel, obj9), ];
-    const obj10 = { style: tmp.nitroWheel, size: "sm" };
-    items3[1] = metroRequire(NitroWheelIcon.NitroWheelIcon, obj10);
-    obj11 = { children: items4 };
-    const obj12 = { style: tmp.sublabel, numberOfLines: 3, text: intl6.string(intl10.t.L3UPqR) };
-    const FormSubLabel = tmp2(7620).FormSubLabel;
-    intl6 = tmp2(1113).intl;
-    items4 = [metroRequire(FormSubLabel, obj12), ];
-    const obj13 = { style: tmp.upsellButton, children: metroRequire(tmp5Result, obj14) };
-    obj14 = { analyticsObject: AnalyticsObjects.ANIMATED_AVATAR, label: intl7.string(intl10.t.mr4K7D) };
-    tmp5Result = UserProfileUpsellButtonDefault;
-    intl7 = tmp2(1113).intl;
-    items4[1] = metroRequire(View, obj13);
-    showAnimatedAvatarUpsell = tmp8(TableRow3, obj7);
-  }
-  items2[2] = showAnimatedAvatarUpsell;
-  let tmp8Result2 = null != handleEditAvatarDecorationSelect;
-  if (tmp8Result2) {
-    const obj15 = { label: metroRequire(View, obj16), onPress: handleEditAvatarDecorationSelect };
-    obj16 = { style: tmp.upsellTitleContainer, children: metroRequire(FormLabel2, obj17) };
-    const TableRow4 = tmp2(6956).TableRow;
-    obj17 = { text: intl8.string(intl10.t.BVcYCx) };
-    FormLabel2 = tmp2(7620).FormLabel;
-    intl8 = tmp2(1113).intl;
-    tmp8Result2 = tmp8(TableRow4, obj15);
-  }
-  items2[3] = tmp8Result2;
-  if (flag) {
-    const obj18 = { label: metroRequire(FormLabel3, obj19), onPress: handleRemoveAvatarSelect };
-    const TableRow5 = tmp2(6956).TableRow;
-    obj19 = { style: items5, text: intl9.string(intl10.t.twB3fz) };
-    items5 = [, ];
-    ({ label: arr6[0], remove: arr6[1] } = tmp);
-    FormLabel3 = tmp2(7620).FormLabel;
-    intl9 = tmp2(1113).intl;
-    flag = tmp8(TableRow5, obj18);
-  }
-  const obj36 = { children: items1 };
-  items2[4] = flag;
-  items1[1] = metroImportDefault(TableRowGroup, { hasIcons: false, children: items2 });
-  return metroImportDefault(ActionSheet, obj36);
+  return tmp21Result4;
 };

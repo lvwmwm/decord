@@ -1,10 +1,10 @@
-// Module ID: 15228
-// Function ID: 15229
+// Module ID: 15214
+// Function ID: 15215
 // Name: MuteAwareNoiseCancellationExperiment
 // Dependencies: [1452, 2]
 // Exports: getMuteAwareNoiseCancellationConfig
 
-// Module 15228 (MuteAwareNoiseCancellationExperiment)
+// Module 15214 (MuteAwareNoiseCancellationExperiment)
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 

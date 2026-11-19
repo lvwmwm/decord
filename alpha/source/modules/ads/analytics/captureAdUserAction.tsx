@@ -1,25 +1,25 @@
-// Module ID: 9860
-// Function ID: 9861
+// Module ID: 9839
+// Function ID: 9840
 // Name: captureAdUserAction
-// Dependencies: [5, 8316, 1072, 6473, 8333, 8312, 8342, 8348, 1256, 1269, 1380, 8289, 9861, 8343, 8324, 9863, 2]
+// Dependencies: [5, 8285, 1072, 6444, 8302, 8281, 8311, 8317, 1256, 1269, 1380, 8258, 9840, 8312, 8293, 9842, 2]
 // Exports: captureAdUserAction
 
-// Module 9860 (captureAdUserAction)
+// Module 9839 (captureAdUserAction)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import AdCreativeType from "AdCreativeType" /* 6473 */;
-import getDeviceMetadataDefault from "getDeviceMetadata" /* 8289 */;
-import QuestDataUtils from "QuestDataUtils" /* 8312 */;
-import getQuestLogger from "getQuestLogger" /* 8324 */;
-import AnalyticsActions from "AnalyticsActions" /* 8333 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 8342 */;
-import AdDataUtils from "AdDataUtils" /* 8343 */;
-import QuestHomeSearchSession from "QuestHomeSearchSession" /* 8348 */;
-import BrandSafetyContext from "BrandSafetyContext" /* 9861 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9863 */;
+import AdCreativeType from "AdCreativeType" /* 6444 */;
+import getDeviceMetadataDefault from "getDeviceMetadata" /* 8258 */;
+import QuestDataUtils from "QuestDataUtils" /* 8281 */;
+import getQuestLogger from "getQuestLogger" /* 8293 */;
+import AnalyticsActions from "AnalyticsActions" /* 8302 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8311 */;
+import AdDataUtils from "AdDataUtils" /* 8312 */;
+import QuestHomeSearchSession from "QuestHomeSearchSession" /* 8317 */;
+import BrandSafetyContext from "BrandSafetyContext" /* 9840 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9842 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import QuestStore from "QuestStore" /* 8316 */;
+import QuestStore from "QuestStore" /* 8285 */;
 import size from "module_2" /* 2 */;
 
 let c2, c5, c7, c8, click_id;
@@ -55,7 +55,7 @@ let obj = function _emitClickEventWithCreative() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -151,7 +151,7 @@ let obj = function _emitClickEventWithCreative() {
             trackQuestEvent(obj13);
           }
           c8 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp54) {
         c8 = 3;
@@ -180,7 +180,7 @@ obj = function _handleClickInternalAction() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -230,7 +230,7 @@ obj = function _handleClickInternalAction() {
             return { value, done: true };
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         } catch (tmp8) {
           c3 = 3;
           throw tmp8;
@@ -253,7 +253,7 @@ obj = function _handleClickExternalAdvertiserCtaAction() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -281,7 +281,7 @@ obj = function _handleClickExternalAdvertiserCtaAction() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp6) {
         c1 = 3;
@@ -385,7 +385,7 @@ obj = function _handleViewInternalSurfaceImpressionAction() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -453,7 +453,7 @@ obj = function _handleViewInternalSurfaceImpressionAction() {
           track(QUEST_CONTENT_VIEWED, obj8);
         }
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       } catch (tmp30) {
         c5 = 3;
         throw tmp30;

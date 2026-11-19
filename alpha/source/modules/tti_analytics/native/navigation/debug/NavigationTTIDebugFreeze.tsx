@@ -1,11 +1,11 @@
-// Module ID: 10389
-// Function ID: 10390
+// Module ID: 10367
+// Function ID: 10368
 // Name: NavigationTTIDebugFreeze
-// Dependencies: [5006, 2]
+// Dependencies: [4975, 2]
 // Exports: armNavigationTTIDebugFreeze, disarmNavigationTTIDebugFreeze, emitNavigationTTIDebugCheckpoint, getNavigationTTIDebugFreezeTarget, subscribeNavigationTTIDebugFreezeTarget
 
-// Module 10389 (NavigationTTIDebugFreeze)
-import react_native from "react-native" /* 5006 */;
+// Module 10367 (NavigationTTIDebugFreeze)
+import react_native from "react-native" /* 4975 */;
 import size from "module_2" /* 2 */;
 
 let _null;

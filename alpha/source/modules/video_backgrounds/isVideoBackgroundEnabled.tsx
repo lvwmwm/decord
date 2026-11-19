@@ -1,16 +1,16 @@
-// Module ID: 5743
-// Function ID: 5744
+// Module ID: 5712
+// Function ID: 5713
 // Name: isVideoBackgroundEnabled
-// Dependencies: [5744, 1380, 5745, 2]
+// Dependencies: [5713, 1380, 5714, 2]
 // Exports: default
 
-// Module 5743 (isVideoBackgroundEnabled)
+// Module 5712 (isVideoBackgroundEnabled)
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import isVideoBackgroundSupportedDefault from "isVideoBackgroundSupported" /* 5744 */;
+import isVideoBackgroundSupportedDefault from "isVideoBackgroundSupported" /* 5713 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const VirtualBackgroundsIosExperimentDefault = tmp(5745);
+const VirtualBackgroundsIosExperimentDefault = tmp(5714);
 const result = size.fileFinishedImporting("modules/video_backgrounds/isVideoBackgroundEnabled.tsx");
 
 export default function isVideoBackgroundEnabled(location) {

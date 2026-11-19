@@ -1,9 +1,9 @@
-// Module ID: 5426
-// Function ID: 5427
+// Module ID: 5395
+// Function ID: 5396
 // Name: SUBTLE_SPRING
 // Dependencies: [2]
 
-// Module 5426 (SUBTLE_SPRING)
+// Module 5395 (SUBTLE_SPRING)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/tokens/motion/generated/generated-definitions.tsx");

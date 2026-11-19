@@ -1,10 +1,10 @@
-// Module ID: 19393
-// Function ID: 19394
+// Module ID: 19389
+// Function ID: 19390
 // Name: useShouldDisplayCancelConsoleTransfer
 // Dependencies: [32, 19, 2]
 // Exports: default
 
-// Module 19393 (useShouldDisplayCancelConsoleTransfer)
+// Module 19389 (useShouldDisplayCancelConsoleTransfer)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

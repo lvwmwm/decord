@@ -1,9 +1,9 @@
-// Module ID: 8841
-// Function ID: 8842
+// Module ID: 8814
+// Function ID: 8815
 // Name: CollectionPromotionCountdownStyle
 // Dependencies: [2]
 
-// Module 8841 (CollectionPromotionCountdownStyle)
+// Module 8814 (CollectionPromotionCountdownStyle)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/CollectionPromotionCountdownStyle.tsx");

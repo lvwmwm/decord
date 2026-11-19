@@ -1,20 +1,20 @@
-// Module ID: 15832
-// Function ID: 15833
+// Module ID: 15823
+// Function ID: 15824
 // Name: usePremiumTryItOutPresetShuffle
-// Dependencies: [19, 8044, 1072, 5032, 4830, 15833, 8821, 15760, 7321, 1256, 1113, 2]
+// Dependencies: [19, 8013, 1072, 5001, 4799, 15824, 8790, 15749, 7291, 1256, 1113, 2]
 // Exports: default
 
-// Module 15832 (usePremiumTryItOutPresetShuffle)
+// Module 15823 (usePremiumTryItOutPresetShuffle)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import shared from "shared" /* 4830 */;
-import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 7321 */;
-import UserProfileActionCreators from "UserProfileActionCreators" /* 8821 */;
-import ProfilePendingImageUtils from "ProfilePendingImageUtils" /* 15760 */;
-import TryItOutPresets from "TryItOutPresets" /* 15833 */;
+import shared from "shared" /* 4799 */;
+import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 7291 */;
+import UserProfileActionCreators from "UserProfileActionCreators" /* 8790 */;
+import ProfilePendingImageUtils from "ProfilePendingImageUtils" /* 15749 */;
+import TryItOutPresets from "TryItOutPresets" /* 15824 */;
 import react from "react" /* 19 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8044 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8013 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -22,7 +22,7 @@ const result = size.fileFinishedImporting("modules/user_profile/hooks/usePremium
 
 export default function usePremiumTryItOutPresetShuffle() {
   let callback;
-  const tmp = callback(5032)();
+  const tmp = callback(5001)();
   let obj = shared;
   const isThemeLightResult = obj.isThemeLight(tmp);
   require = isThemeLightResult;
@@ -38,7 +38,7 @@ export default function usePremiumTryItOutPresetShuffle() {
     UserProfileActionCreators;
     obj4 = ProfilePendingImageUtils;
     themeColors = tryItOutPresetConfig.themeColors;
-    obj3 = { assetOrigin: ProfilePendingImageTypes.AssetOriginTypes.NEW_ASSET, imageUri: tryItOutPresetConfig.getBannerSrc(false), staticImageUri: tryItOutPresetConfig.getBannerSrc(true), description: tryItOutPresetConfig.getBannerAltText(), originalAsset: "Array" };
+    obj3 = { assetOrigin: ProfilePendingImageTypes.AssetOriginTypes.NEW_ASSET, imageUri: tryItOutPresetConfig.getBannerSrc(false), staticImageUri: tryItOutPresetConfig.getBannerSrc(true), description: tryItOutPresetConfig.getBannerAltText(), originalAsset: "fileFinishedImporting" };
     setTryItOutPreset(obj2);
   }, items);
   const items1 = [callback];

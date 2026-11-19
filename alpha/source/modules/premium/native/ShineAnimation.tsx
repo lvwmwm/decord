@@ -1,18 +1,18 @@
-// Module ID: 9138
-// Function ID: 9139
+// Module ID: 9114
+// Function ID: 9115
 // Name: ShineAnimation
-// Dependencies: [19, 17, 21, 4823, 575, 1655, 5033, 671, 5510, 2]
+// Dependencies: [19, 17, 21, 4792, 575, 1655, 5002, 671, 5479, 2]
 
-// Module 9138 (ShineAnimation)
+// Module 9114 (ShineAnimation)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5033 */;
-import FastImageDefault from "FastImage" /* 5510 */;
+import timing_timing from "timing/timing" /* 5002 */;
+import FastImageDefault from "FastImage" /* 5479 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size_mod from "module_2" /* 2 */;
 
 const _modDef1655 = _mod1655;

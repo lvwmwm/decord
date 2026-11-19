@@ -1,12 +1,12 @@
-// Module ID: 19262
-// Function ID: 19263
+// Module ID: 19254
+// Function ID: 19255
 // Name: VoicePanelIconButton
-// Dependencies: [19, 21, 1655, 7502, 2]
+// Dependencies: [19, 21, 1655, 7472, 2]
 
-// Module 19262 (VoicePanelIconButton)
+// Module 19254 (VoicePanelIconButton)
 import Fragment from "Fragment" /* 21 */;
 import _modDef1655 from "module_1655" /* 1655 */;
-import IconButton2 from "IconButton" /* 7502 */;
+import IconButton2 from "IconButton" /* 7472 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

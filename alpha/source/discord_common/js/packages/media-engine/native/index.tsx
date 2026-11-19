@@ -1,23 +1,23 @@
-// Module ID: 5590
-// Function ID: 5591
+// Module ID: 5559
+// Function ID: 5560
 // Name: MediaEngineNative
-// Dependencies: [109, 32, 5, 5568, 5591, 5592, 5593, 5597, 4, 2135, 5598, 5599, 1356, 1360, 5601, 5606, 5661, 2]
+// Dependencies: [109, 32, 5, 5537, 5560, 5561, 5562, 5566, 4, 2135, 5567, 5568, 1356, 1360, 5570, 5575, 5630, 2]
 
-// Module 5590 (MediaEngineNative)
+// Module 5559 (MediaEngineNative)
 import _modDef1356 from "module_1356" /* 1356 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1360 */;
 import inject from "inject" /* 2135 */;
-import VideoDefault from "Video" /* 5593 */;
-import CameraDefault from "Camera" /* 5597 */;
-import MediaEngineEvent from "MediaEngineEvent" /* 5598 */;
-import ConnectionDefault from "Connection" /* 5601 */;
-import Devices from "Devices" /* 5661 */;
+import VideoDefault from "Video" /* 5562 */;
+import CameraDefault from "Camera" /* 5566 */;
+import MediaEngineEvent from "MediaEngineEvent" /* 5567 */;
+import ConnectionDefault from "Connection" /* 5570 */;
+import Devices from "Devices" /* 5630 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants_mod from "Constants" /* 5568 */;
-import Constants_mod2 from "Constants" /* 5591 */;
-import TypedEventEmitter from "TypedEventEmitter" /* 5592 */;
+import Constants_mod from "Constants" /* 5537 */;
+import Constants_mod2 from "Constants" /* 5560 */;
+import TypedEventEmitter from "TypedEventEmitter" /* 5561 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -38,7 +38,7 @@ let metroImportAll;
 let metroImportDefault;
 let tmp10;
 let unpackModuleId;
-const pollConnectionStatsDefault = tmp10(5599);
+const pollConnectionStatsDefault = tmp10(5568);
 let closure_3 = ["id", "useGraphicsCapture", "useGraphicsCaptureApiLevel"];
 let Constants = Constants_mod2;
 ({ QUEUE_METRICS_INTERVAL_MS: metroImportDefault, SIDECHAIN_COMPRESSION_MAX_RATIO: metroImportAll, SIDECHAIN_COMPRESSION_MAX_THRESHOLD: c9, SIDECHAIN_COMPRESSION_MIN_RATIO: c10, SIDECHAIN_COMPRESSION_MIN_THRESHOLD: unpackModuleId, ProcessPriority: closure_12 } = Constants);
@@ -265,7 +265,7 @@ class MediaEngineNative extends TypedEventEmitter {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } else {
           try {
@@ -321,7 +321,7 @@ class MediaEngineNative extends TypedEventEmitter {
               const timerId = setTimeout(closure_129_2, periodMs);
             }
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           } catch (tmp21) {
             c3 = 3;
             throw tmp21;
@@ -331,7 +331,7 @@ class MediaEngineNative extends TypedEventEmitter {
       return obj(...arguments);
     };
     let c1 = false;
-    obj.on(obj(5598).MediaEngineEvent.Destroy, () => {
+    obj.on(obj(5567).MediaEngineEvent.Destroy, () => {
       c1 = true;
       return true;
     });
@@ -575,8 +575,8 @@ class MediaEngineNative extends TypedEventEmitter {
       videoSupported.experiments = undefined;
     }
     let flag = videoSupported.videoSupported;
-    const create = self(5601).create;
-    const tmp3 = self(5601);
+    const create = self(5570).create;
+    const tmp3 = self(5570);
     if (flag == null) {
       flag = true;
     }
@@ -584,7 +584,7 @@ class MediaEngineNative extends TypedEventEmitter {
       flag = self.supports(constants3.VIDEO);
     }
     obj2 = create(arg0, arg1, videoSupported, flag);
-    obj2.on(obj2(5606).BaseConnectionEvent.Destroy, (arg0) => {
+    obj2.on(obj2(5575).BaseConnectionEvent.Destroy, (arg0) => {
       const connections = self.connections;
       connections.delete(arg0);
       if (self.connectionsEmpty()) {
@@ -598,10 +598,10 @@ class MediaEngineNative extends TypedEventEmitter {
         }
       }
     });
-    obj2.on(obj2(5606).BaseConnectionEvent.Connected, () => {
+    obj2.on(obj2(5575).BaseConnectionEvent.Connected, () => {
       obj2.setVideoBroadcast(self.shouldConnectionBroadcastVideo(obj2));
     });
-    obj2.on(obj2(5606).BaseConnectionEvent.Silence, (arg0) => {
+    obj2.on(obj2(5575).BaseConnectionEvent.Silence, (arg0) => {
       self.emit(MediaEngineEvent.MediaEngineEvent.Silence, arg0);
     });
     let connections = self.connections;
@@ -621,7 +621,7 @@ class MediaEngineNative extends TypedEventEmitter {
         let result = setNativeThreadsPriority(videoSupported.threadPriorityConfiguration);
       }
     }
-    self.emit(tmp(5598).MediaEngineEvent.Connection, obj2);
+    self.emit(tmp(5567).MediaEngineEvent.Connection, obj2);
     return obj2;
   }
   shouldConnectionBroadcastVideo(context) {
@@ -777,7 +777,7 @@ class MediaEngineNative extends TypedEventEmitter {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -823,7 +823,7 @@ class MediaEngineNative extends TypedEventEmitter {
               voiceEngine.setInputDevice(index.index);
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp18) {
           c4 = 3;
@@ -864,7 +864,7 @@ class MediaEngineNative extends TypedEventEmitter {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -910,7 +910,7 @@ class MediaEngineNative extends TypedEventEmitter {
               voiceEngine.setOutputDevice(index.index);
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp18) {
           c4 = 3;
@@ -937,7 +937,7 @@ class MediaEngineNative extends TypedEventEmitter {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -1012,7 +1012,7 @@ class MediaEngineNative extends TypedEventEmitter {
               const item = connections.forEach((setVideoBroadcast) => setVideoBroadcast.setVideoBroadcast(closure_1_1.shouldConnectionBroadcastVideo(setVideoBroadcast)));
             }
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp42) {
           c3 = 3;
@@ -1169,7 +1169,7 @@ class MediaEngineNative extends TypedEventEmitter {
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             }
           } else {
             try {
@@ -1243,7 +1243,7 @@ class MediaEngineNative extends TypedEventEmitter {
                   const result2 = signalSnapshotProcessed(closure_0);
                 }
                 c10 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "+60" };
               }
             } catch (tmp44) {
               closure_7 = tmp44;
@@ -1895,7 +1895,7 @@ class MediaEngineNative extends TypedEventEmitter {
       const voiceEngine1 = tmp2Result5.getVoiceEngine();
       const setEmitVADLevel2 = voiceEngine1.setEmitVADLevel2;
       if (!tmp) {
-        tmp = self.listenerCount(tmp2(5598).MediaEngineEvent.VoiceActivity) > 0;
+        tmp = self.listenerCount(tmp2(5567).MediaEngineEvent.VoiceActivity) > 0;
       }
       setEmitVADLevel2(tmp);
     } else {
@@ -1904,7 +1904,7 @@ class MediaEngineNative extends TypedEventEmitter {
       let tmp7 = tmp;
       const setEmitVADLevel = voiceEngine2.setEmitVADLevel;
       if (!tmp) {
-        tmp7 = self.listenerCount(tmp2(5598).MediaEngineEvent.VoiceActivity) > 0;
+        tmp7 = self.listenerCount(tmp2(5567).MediaEngineEvent.VoiceActivity) > 0;
       }
       const obj4 = { echoCancellation: null, noiseSuppression: null, automaticGainControl: enabled1, noiseCancellation: null, noiseCancellationDuringProcessing: null };
       ({ echoCancellation: obj5.echoCancellation, noiseSuppression: obj5.noiseSuppression, automaticGainControlConfig: automaticGainControlConfig2 } = arg1);
@@ -2034,7 +2034,7 @@ class MediaEngineNative extends TypedEventEmitter {
     const replay = obj.createReplay(arg0, arg1);
     let tmp2 = null;
     if (null != replay) {
-      replay.on(self(5606).BaseConnectionEvent.Destroy, (arg0) => {
+      replay.on(self(5575).BaseConnectionEvent.Destroy, (arg0) => {
         const connections = self.connections;
         connections.delete(arg0);
         if (self.connectionsEmpty()) {
@@ -2046,7 +2046,7 @@ class MediaEngineNative extends TypedEventEmitter {
       connections.add(replay);
       const obj3 = self(2135);
       obj3.setProcessPriority(constants.HIGH);
-      self.emit(self(5598).MediaEngineEvent.Connection, replay);
+      self.emit(self(5567).MediaEngineEvent.Connection, replay);
       tmp2 = replay;
     }
     return tmp2;
@@ -2124,7 +2124,7 @@ class MediaEngineNative extends TypedEventEmitter {
         closure_0(arg0, arg1);
       });
     }
-    let tmp5 = this.listenerCount(tmp(5598).MediaEngineEvent.VoiceActivity) > 0;
+    let tmp5 = this.listenerCount(tmp(5567).MediaEngineEvent.VoiceActivity) > 0;
     if (tmp5) {
       const tmpResult = inject;
       tmp5 = null != tmpResult.getVoiceEngine().setEmitVADLevel2;
@@ -2386,7 +2386,7 @@ class MediaEngineNative extends TypedEventEmitter {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -2432,7 +2432,7 @@ class MediaEngineNative extends TypedEventEmitter {
               closure_129_1.emit(tmp(c2[10]).MediaEngineEvent.DeviceChange, closure_2, closure_3, closure_4);
             }
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp16) {
           c3 = 3;

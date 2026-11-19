@@ -1,11 +1,11 @@
-// Module ID: 18426
-// Function ID: 18427
+// Module ID: 18420
+// Function ID: 18421
 // Name: openConjureUnpublishUserAppAlert
-// Dependencies: [5, 32, 19, 2165, 21, 504, 12310, 1113, 4121, 5505, 5774, 5414, 5770, 2]
+// Dependencies: [5, 32, 19, 2165, 21, 504, 12293, 1113, 4089, 5474, 5745, 5383, 5741, 2]
 // Exports: default
 
-// Module 18426 (openConjureUnpublishUserAppAlert)
-import useAlertStore from "useAlertStore" /* 5770 */;
+// Module 18420 (openConjureUnpublishUserAppAlert)
+import useAlertStore from "useAlertStore" /* 5741 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -50,7 +50,7 @@ function ConjureUnpublishUserAppAlert(project) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -88,7 +88,7 @@ function ConjureUnpublishUserAppAlert(project) {
             obj7 = { app: closure_129_2 };
             open("CONJURE_USER_APP_UNPUBLISHED", obj);
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           } else {
             const intl = tmp(c2[7]).intl;
             tmp = intl.string(tmp4(c2[8])["rE/0SD"]);
@@ -127,7 +127,7 @@ function ConjureUnpublishUserAppAlert(project) {
     }
     return name;
   }, items1);
-  let obj2 = { title: intl.formatToPlainString(require("module_4121").m8KWic, { app: stateFromStores }), content: intl2.string(require("module_4121").wve4kB), extraContent: tmp6Result, actions: closure_9(closure_8, obj4) };
+  let obj2 = { title: intl.formatToPlainString(require("module_4089").m8KWic, { app: stateFromStores }), content: intl2.string(require("module_4089").wve4kB), extraContent: tmp6Result, actions: closure_9(closure_8, obj4) };
   const AlertModal = project(stateFromStores[10]).AlertModal;
   intl = project(stateFromStores[7]).intl;
   intl2 = project(stateFromStores[7]).intl;

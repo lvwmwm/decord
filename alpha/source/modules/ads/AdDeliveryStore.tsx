@@ -1,21 +1,21 @@
-// Module ID: 8313
-// Function ID: 8314
+// Module ID: 8282
+// Function ID: 8283
 // Name: AdDeliveryStore
-// Dependencies: [1089, 8314, 559, 6473, 504, 6472, 572, 2]
+// Dependencies: [1089, 8283, 559, 6444, 504, 6443, 572, 2]
 
-// Module 8313 (AdDeliveryStore)
+// Module 8282 (AdDeliveryStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import AdPlacement from "AdPlacement" /* 6472 */;
-import AdDecisionUtils from "AdDecisionUtils" /* 8314 */;
+import AdPlacement from "AdPlacement" /* 6443 */;
+import AdDecisionUtils from "AdDecisionUtils" /* 8283 */;
 import size from "module_2" /* 2 */;
 
 let set;
 
 let tmp;
-const AdCreativeType = tmp(6473);
+const AdCreativeType = tmp(6444);
 let closure_9 = [];
 let closure_10 = 30 * DurationsDefault.Millis.SECOND;
 let closure_11 = 10 * DurationsDefault.Millis.MINUTE;
@@ -176,7 +176,7 @@ let obj = {
         const self = this;
         const self2 = this;
         obj6 = AdDecisionUtils;
-        map2 = new Map(map1);
+        const map2 = new Map(map1);
         map1 = map2;
         const items = [obj2];
         const result2 = map2.set(placement, items);

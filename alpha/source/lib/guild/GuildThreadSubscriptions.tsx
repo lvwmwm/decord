@@ -1,9 +1,9 @@
-// Module ID: 14696
-// Function ID: 14697
+// Module ID: 14682
+// Function ID: 14683
 // Name: GuildThreadSubscriptions
 // Dependencies: [1456, 2]
 
-// Module 14696 (GuildThreadSubscriptions)
+// Module 14682 (GuildThreadSubscriptions)
 import LRUCacheDefault from "LRUCache" /* 1456 */;
 import size from "module_2" /* 2 */;
 

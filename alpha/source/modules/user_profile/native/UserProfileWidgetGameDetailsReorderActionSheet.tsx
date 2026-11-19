@@ -1,26 +1,26 @@
-// Module ID: 10129
-// Function ID: 10130
+// Module ID: 10107
+// Function ID: 10108
 // Name: UserProfileWidgetGameDetailsReorderActionSheet
-// Dependencies: [19, 17, 502, 21, 4823, 575, 10121, 10130, 10131, 504, 10112, 6869, 10116, 10144, 1113, 2]
+// Dependencies: [19, 17, 502, 21, 4792, 575, 10099, 10108, 10109, 504, 10090, 6839, 10094, 10122, 1113, 2]
 // Exports: default
 
-// Module 10129 (UserProfileWidgetGameDetailsReorderActionSheet)
+// Module 10107 (UserProfileWidgetGameDetailsReorderActionSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import WidgetUtils from "WidgetUtils" /* 10116 */;
-import useGameCoverLayoutDefault from "useGameCoverLayout" /* 10121 */;
-import UserProfileWidgetDraggableCardDefault from "UserProfileWidgetDraggableCard" /* 10130 */;
+import WidgetUtils from "WidgetUtils" /* 10094 */;
+import useGameCoverLayoutDefault from "useGameCoverLayout" /* 10099 */;
+import UserProfileWidgetDraggableCardDefault from "UserProfileWidgetDraggableCard" /* 10108 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
 
 let obj2;
 let tmp;
-const UserProfileGameDetailsRowDefault = tmp(10131);
+const UserProfileGameDetailsRowDefault = tmp(10109);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let obj = { list: obj2 };
@@ -54,7 +54,7 @@ export default function UserProfileWidgetGameDetailsReorderActionSheet(widgetTyp
   let obj = widgetType(504);
   const items = [AuthenticationStore];
   const stateFromStores = obj.useStateFromStores(items, () => id.getId());
-  const tmp3 = stateFromStores(10112)(stateFromStores);
+  const tmp3 = stateFromStores(10090)(stateFromStores);
   dependencyMap = tmp3;
   const items1 = [tmp3, widgetType];
   const memo = react.useMemo(() => {
@@ -72,7 +72,7 @@ export default function UserProfileWidgetGameDetailsReorderActionSheet(widgetTyp
     }
     return uniqueWidgetGames;
   }, items1);
-  stateFromStores(10144);
+  stateFromStores(10122);
   const intl = widgetType(1113).intl;
   ({ accessibilityRole: "list", style: tmp.list, children: memo.map((game) => <closure_8 key={arg0.gameId} userId={stateFromStores} game={arg0} />) });
   return <tmp4 dismissAccessibilityLabel={intl.string(widgetType(1113).t.rnh54p)} returnFocusRef={returnFocusRef}>{null}</tmp4>;

@@ -1,17 +1,17 @@
-// Module ID: 18082
-// Function ID: 18083
+// Module ID: 18075
+// Function ID: 18076
 // Name: useSoundboardSoundLock
-// Dependencies: [19, 1388, 5871, 504, 10944, 2174, 8457, 8459, 5505, 1113, 9274, 2]
+// Dependencies: [19, 1388, 5842, 504, 10922, 2174, 8426, 8428, 5474, 1113, 9250, 2]
 // Exports: useSoundboardSoundLock
 
-// Module 18082 (useSoundboardSoundLock)
+// Module 18075 (useSoundboardSoundLock)
 import intl3 from "intl" /* 1113 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5505 */;
-import SoundboardConstants from "SoundboardConstants" /* 5871 */;
-import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 8457 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 8459 */;
-import BoostGemIcon from "BoostGemIcon" /* 9274 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5474 */;
+import SoundboardConstants from "SoundboardConstants" /* 5842 */;
+import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 8426 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 8428 */;
+import BoostGemIcon from "BoostGemIcon" /* 9250 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;

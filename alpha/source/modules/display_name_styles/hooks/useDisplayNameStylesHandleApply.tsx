@@ -1,16 +1,16 @@
-// Module ID: 16801
-// Function ID: 16802
+// Module ID: 16794
+// Function ID: 16795
 // Name: useDisplayNameStylesHandleApply
-// Dependencies: [5, 32, 19, 1388, 1072, 4848, 1396, 15775, 4851, 7313, 15776, 6469, 8821, 8820, 1256, 1398, 1399, 2]
+// Dependencies: [5, 32, 19, 1388, 1072, 4817, 1396, 15766, 4820, 7283, 15767, 6440, 8790, 8789, 1256, 1398, 1399, 2]
 // Exports: useDisplayNameStylesHandleApply
 
-// Module 16801 (useDisplayNameStylesHandleApply)
+// Module 16794 (useDisplayNameStylesHandleApply)
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4848 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4817 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4, c5, closure_0, colors, displayNameStyles;
@@ -61,7 +61,7 @@ export function useDisplayNameStylesHandleApply(hasChanges) {
             let obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } else {
           try {
@@ -99,7 +99,7 @@ export function useDisplayNameStylesHandleApply(hasChanges) {
                         const obj2 = { value, done: true };
                         return obj2;
                       } else {
-                        return { value: "HermesInternal", done: null };
+                        return { value: "HermesInternal", done: "+60" };
                       }
                     } else {
                       try {
@@ -225,7 +225,7 @@ export function useDisplayNameStylesHandleApply(hasChanges) {
                           closure_1_8();
                         }
                         c5 = 3;
-                        return { value: "HermesInternal", done: null };
+                        return { value: "HermesInternal", done: "+60" };
                       } catch (tmp74) {
                         closure_2 = tmp74;
                         if (0 === c3) {
@@ -323,7 +323,7 @@ export function useDisplayNameStylesHandleApply(hasChanges) {
               return obj;
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           } catch (tmp34) {
             if (0 === selectedFontId) {
               c4 = 3;

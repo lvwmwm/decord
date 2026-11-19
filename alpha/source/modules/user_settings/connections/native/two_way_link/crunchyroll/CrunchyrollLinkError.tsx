@@ -1,16 +1,16 @@
-// Module ID: 7128
-// Function ID: 7129
+// Module ID: 7098
+// Function ID: 7099
 // Name: CrunchyrollLinkError
-// Dependencies: [19, 7117, 21, 1502, 6999, 7000, 1113, 2]
+// Dependencies: [19, 7087, 21, 1502, 6969, 6970, 1113, 2]
 // Exports: default
 
-// Module 7128 (CrunchyrollLinkError)
+// Module 7098 (CrunchyrollLinkError)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1113 */;
 import useNavigation from "useNavigation" /* 1502 */;
-import react2 from "react" /* 6999 */;
-import TwoWayLinkError2 from "TwoWayLinkError" /* 7000 */;
-import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 7117 */;
+import react2 from "react" /* 6969 */;
+import TwoWayLinkError2 from "TwoWayLinkError" /* 6970 */;
+import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 7087 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

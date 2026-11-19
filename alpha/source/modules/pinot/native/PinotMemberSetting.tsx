@@ -1,23 +1,23 @@
-// Module ID: 17408
-// Function ID: 17409
+// Module ID: 17401
+// Function ID: 17402
 // Name: PinotMemberSetting
-// Dependencies: [17, 1072, 8624, 21, 4823, 575, 11897, 1113, 3407, 7683, 11818, 2188, 5414, 7673, 2]
+// Dependencies: [17, 1072, 8593, 21, 4792, 575, 11875, 1113, 3407, 7653, 11796, 2188, 5383, 7643, 2]
 // Exports: usePinotDataPrivacySections
 
-// Module 17408 (PinotMemberSetting)
+// Module 17401 (PinotMemberSetting)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
 import _modDef3407 from "module_3407" /* 3407 */;
-import Text_Text from "Text/Text" /* 5414 */;
-import PinotExperiment from "PinotExperiment" /* 7683 */;
-import SettingsConstants from "SettingsConstants" /* 8624 */;
-import PinotMemberSettingState from "PinotMemberSettingState" /* 11818 */;
+import Text_Text from "Text/Text" /* 5383 */;
+import PinotExperiment from "PinotExperiment" /* 7653 */;
+import SettingsConstants from "SettingsConstants" /* 8593 */;
+import PinotMemberSettingState from "PinotMemberSettingState" /* 11796 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
-import SettingBuilders from "SettingBuilders" /* 11897 */;
+import createStyles from "createStyles" /* 4792 */;
+import SettingBuilders from "SettingBuilders" /* 11875 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -44,7 +44,7 @@ function PinotMemberSettingFooter() {
   const tmp8 = metroRequire;
   if (locked) {
     const obj5 = { type: "info", message: intl2.format(_modDef3407.Z9bKIJ, obj6), role: "none" };
-    const InlineNotice = tmp2(7673).InlineNotice;
+    const InlineNotice = tmp2(7643).InlineNotice;
     intl2 = tmp2(1113).intl;
     obj6 = { learnMoreURL: articleURL };
     tmp8Result = tmp8(InlineNotice, obj5);

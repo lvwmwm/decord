@@ -1,10 +1,10 @@
-// Module ID: 7216
-// Function ID: 7217
+// Module ID: 7186
+// Function ID: 7187
 // Name: FileExtensionUtils
 // Dependencies: [1381, 2]
 // Exports: decideFileExtension, getExtensionFromContentType
 
-// Module 7216 (FileExtensionUtils)
+// Module 7186 (FileExtensionUtils)
 import URLUtilsDefault from "URLUtils" /* 1381 */;
 import size from "module_2" /* 2 */;
 

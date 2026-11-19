@@ -1,17 +1,17 @@
-// Module ID: 9615
-// Function ID: 9616
+// Module ID: 9594
+// Function ID: 9595
 // Name: SecureFramesBoundPairwiseFingerprint
-// Dependencies: [5, 502, 2133, 5564, 9609, 5568, 9593, 206, 2]
+// Dependencies: [5, 502, 2133, 5533, 9588, 5537, 9572, 206, 2]
 // Exports: computeBoundPairwiseFingerprint
 
-// Module 9615 (SecureFramesBoundPairwiseFingerprint)
+// Module 9594 (SecureFramesBoundPairwiseFingerprint)
 import byteLengthDefault from "byteLength" /* 206 */;
-import Constants from "Constants" /* 5568 */;
-import SecureFramesConstants from "SecureFramesConstants" /* 9609 */;
+import Constants from "Constants" /* 5537 */;
+import SecureFramesConstants from "SecureFramesConstants" /* 9588 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5564 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5533 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, id;
@@ -46,8 +46,8 @@ function memoizedPairwiseFingerprint(arg0, arg1, arg2, arg3) {
       const _Uint8Array = Uint8Array;
       const self = this;
       const self2 = this;
-      const generatePairwiseFingerprint = joined(9593).generatePairwiseFingerprint;
-      const tmp10 = joined(9593);
+      const generatePairwiseFingerprint = joined(9572).generatePairwiseFingerprint;
+      const tmp10 = joined(9572);
       const uint8Array2 = new Uint8Array(arg1);
       const _Uint8Array2 = Uint8Array;
       const self3 = this;
@@ -84,7 +84,7 @@ let obj = function _computeBoundPairwiseFingerprint() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c3;

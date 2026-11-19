@@ -1,11 +1,16 @@
 // Module ID: 7820
 // Function ID: 7821
-// Dependencies: [65]
+// Dependencies: [26, 106, 65]
 
 // Module 7820
+import _mod26 from "module_26" /* 26 */;
+import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
 import module_65 from "module_65" /* 65 */;
 
-const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSVGFeComposite", validAttributes: { x: true, y: true, width: true, height: true, result: true, in1: true, in2: true, operator1: true, k1: true, k2: true, k3: true, k4: true } };
+let obj2;
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSVGLine", directEventTypes: { topSvgLayout: { registrationName: "onSvgLayout" } }, validAttributes: obj2 };
+obj2 = { name: true, opacity: true, matrix: true, mask: true, markerStart: true, markerMid: true, markerEnd: true, clipPath: true, clipRule: true, responsible: true, display: true, pointerEvents: true, color: _mod26.colorAttribute, fill: true, fillOpacity: true, fillRule: true, stroke: true, strokeOpacity: true, strokeWidth: true, strokeLinecap: true, strokeLinejoin: true, strokeDasharray: true, strokeDashoffset: true, strokeMiterlimit: true, vectorEffect: true, propList: true, filter: true, x1: true, y1: true, x2: true, y2: true };
+const merged = Object.assign(DynamicallyInjectedByGestureHandler.ConditionallyIgnoredEventHandlers({ onSvgLayout: true }));
 
-export default module_65.get("RNSVGFeComposite", () => obj);
+export default module_65.get("RNSVGLine", () => obj);
 export { __INTERNAL_VIEW_CONFIG };

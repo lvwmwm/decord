@@ -1,16 +1,16 @@
-// Module ID: 17226
-// Function ID: 17227
+// Module ID: 17219
+// Function ID: 17220
 // Name: DevToolsPerformanceTestingScreen
-// Dependencies: [19, 17, 21, 4823, 575, 1502, 1630, 7259, 17061, 6956, 15748, 2]
+// Dependencies: [19, 17, 21, 4792, 575, 1502, 1630, 7229, 17054, 6926, 15736, 2]
 
-// Module 17226 (DevToolsPerformanceTestingScreen)
+// Module 17219 (DevToolsPerformanceTestingScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import DevToolsNavigator from "DevToolsNavigator" /* 15748 */;
+import DevToolsNavigator from "DevToolsNavigator" /* 15736 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,20 +1,20 @@
-// Module ID: 9266
-// Function ID: 9267
+// Module ID: 9242
+// Function ID: 9243
 // Name: SubscriptionRenewalMutationsNotice
-// Dependencies: [19, 17, 2171, 21, 4823, 575, 6463, 1187, 1113, 2174, 2]
+// Dependencies: [19, 17, 2171, 21, 4792, 575, 6434, 1187, 1113, 2174, 2]
 // Exports: default
 
-// Module 9266 (SubscriptionRenewalMutationsNotice)
+// Module 9242 (SubscriptionRenewalMutationsNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 2171 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
-import LegacyTokens from "LegacyTokens" /* 6463 */;
+import LegacyTokens from "LegacyTokens" /* 6434 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

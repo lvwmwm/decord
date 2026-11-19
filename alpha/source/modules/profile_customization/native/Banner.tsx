@@ -1,17 +1,17 @@
-// Module ID: 8122
-// Function ID: 8123
+// Module ID: 8091
+// Function ID: 8092
 // Name: Banner
-// Dependencies: [19, 17, 1072, 21, 4823, 1090, 5510, 2]
+// Dependencies: [19, 17, 1072, 21, 4792, 1090, 5479, 2]
 // Exports: default
 
-// Module 8122 (Banner)
+// Module 8091 (Banner)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
-import FastImageDefault from "FastImage" /* 5510 */;
+import FastImageDefault from "FastImage" /* 5479 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;

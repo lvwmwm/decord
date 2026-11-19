@@ -1,8 +1,8 @@
-// Module ID: 10849
-// Function ID: 10850
+// Module ID: 10827
+// Function ID: 10828
 // Dependencies: [2]
 
-// Module 10849
+// Module 10827
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/sounds/vibing_wumpus.mp3.js");

@@ -1,20 +1,20 @@
-// Module ID: 13620
-// Function ID: 13621
+// Module ID: 13602
+// Function ID: 13603
 // Name: HubEmailConnectionPinVerify
-// Dependencies: [32, 5, 19, 17, 4694, 21, 4823, 5505, 7368, 13621, 12069, 12, 13611, 1113, 6257, 6743, 13605, 5510, 13622, 5414, 7367, 2]
+// Dependencies: [32, 5, 19, 17, 4663, 21, 4792, 5474, 7338, 13603, 12046, 12, 13593, 1113, 6228, 6714, 13587, 5479, 13604, 5383, 7337, 2]
 // Exports: default
 
-// Module 13620 (HubEmailConnectionPinVerify)
+// Module 13602 (HubEmailConnectionPinVerify)
 import react_native from "react-native" /* 17 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5505 */;
-import EnvelopeIcon from "EnvelopeIcon" /* 7368 */;
-import HubJoinManagerDefault from "HubJoinManager" /* 13621 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5474 */;
+import EnvelopeIcon from "EnvelopeIcon" /* 7338 */;
+import HubJoinManagerDefault from "HubJoinManager" /* 13603 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4694 */;
+import GuildStore from "GuildStore" /* 4663 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -58,7 +58,7 @@ export default function HubEmailConnectionPinVerify(email) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         let c4;
@@ -112,7 +112,7 @@ export default function HubEmailConnectionPinVerify(email) {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp34) {
           closure_3 = tmp34;
@@ -157,7 +157,7 @@ export default function HubEmailConnectionPinVerify(email) {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c4;
@@ -216,7 +216,7 @@ export default function HubEmailConnectionPinVerify(email) {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp34) {
         closure_3 = tmp34;

@@ -1,23 +1,23 @@
-// Module ID: 15867
-// Function ID: 15868
+// Module ID: 15858
+// Function ID: 15859
 // Name: EditUserProfileAvatar
-// Dependencies: [19, 17, 4824, 21, 4823, 7431, 7450, 2174, 8818, 8823, 15858, 5037, 15859, 2121, 15770, 15770, 8816, 8043, 504, 4648, 8125, 15868, 15772, 1113, 6941, 15869, 1187, 2]
+// Dependencies: [19, 17, 4793, 21, 4792, 7401, 7420, 2174, 8787, 8792, 15849, 5006, 15850, 2121, 15761, 15761, 8785, 8012, 504, 4617, 8094, 15859, 15763, 1113, 6911, 15860, 1187, 2]
 // Exports: default
 
-// Module 15867 (EditUserProfileAvatar)
+// Module 15858 (EditUserProfileAvatar)
 import react_native from "react-native" /* 17 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4824 */;
+import AccessibilityStore from "AccessibilityStore" /* 4793 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
 let metroRequire;
 let tmp3;
-const ProfileCustomizationUtils = tmp3(8043);
+const ProfileCustomizationUtils = tmp3(8012);
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles({ editIcon: { position: "absolute", right: -3 }, editButton: { position: "absolute", top: -8, right: -8 } });
@@ -108,9 +108,10 @@ export default function EditUserProfileAvatar(user) {
         openLazy(tmp3, "Select GIF Avatar", obj2);
       },
       handleEditAvatarDecorationSelect: editAvatarDecoration,
-      showRemoveAvatar: tmp3Result.showRemoveAvatar(pendingAvatar, user.avatar)
+      showRemoveAvatar: tmp3Result.showRemoveAvatar(pendingAvatar, user.avatar),
+      analyticsLocations
     };
-    const tmp4 = asyncRequire(15859, dependencyMap.paths);
+    const tmp4 = asyncRequire(15850, dependencyMap.paths);
     if (!flag) {
       editAvatarDecoration = function editAvatarDecoration() {
         const obj = user(flag2[16]);

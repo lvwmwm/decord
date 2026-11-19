@@ -1,15 +1,15 @@
-// Module ID: 6769
-// Function ID: 6770
+// Module ID: 6740
+// Function ID: 6741
 // Name: OrbCheckoutUtils
-// Dependencies: [1072, 1074, 6770, 1113, 4643, 6771, 2]
-// Exports: getOrbCheckoutDisclaimerMessage, getOrbPriceFromPrices, resolveOrbCheckoutErrorMessage
+// Dependencies: [1072, 1074, 1113, 6741, 6230, 6743, 2]
+// Exports: getOrbCheckoutDisclaimerMessage, getOrbConstraintMessage, getOrbPriceFromPrices, resolveOrbCheckoutErrorMessage
 
-// Module 6769 (OrbCheckoutUtils)
+// Module 6740 (OrbCheckoutUtils)
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
-import intl10 from "intl" /* 1113 */;
-import BillingError from "BillingError" /* 4643 */;
-import OrderConstants from "OrderConstants" /* 6770 */;
-import OrderActionCreators from "OrderActionCreators" /* 6771 */;
+import intl7 from "intl" /* 1113 */;
+import BillingError from "BillingError" /* 6230 */;
+import OrderConstraintUtils from "OrderConstraintUtils" /* 6741 */;
+import OrderActionCreators from "OrderActionCreators" /* 6743 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,6 @@ let c3;
 let closure_4;
 ({ CurrencyCodes: c2, MarketingURLs: c3, PriceSetAssignmentPurchaseTypes: closure_4 } = Constants);
 const EXTERNAL_PRODUCT_SKU_IDS = CollectiblesShopConstants.EXTERNAL_PRODUCT_SKU_IDS;
-const ConstraintReasonCode = OrderConstants.ConstraintReasonCode;
 const result = size.fileFinishedImporting("modules/virtual_currency/checkout/OrbCheckoutUtils.tsx");
 
 export function getOrbPriceFromPrices(prices, isPremiumResult) {
@@ -48,15 +47,15 @@ export function getOrbPriceFromPrices(prices, isPremiumResult) {
 }
 export function getOrbCheckoutDisclaimerMessage(skuId) {
   let intl2;
-  const intl = intl10.intl;
+  const intl = intl7.intl;
   const format = intl.format;
-  const obj = { buyButtonLabel: intl2.string(intl10.t["zLch/S"]), paidServiceTermURL: null, virtualGoodsURL: null };
-  const v5qdUrO = intl10.t["5qdUrO"];
-  intl2 = intl10.intl;
+  const obj = { buyButtonLabel: intl2.string(intl7.t["zLch/S"]), paidServiceTermURL: null, virtualGoodsURL: null };
+  const v5qdUrO = intl7.t["5qdUrO"];
+  intl2 = intl7.intl;
   ({ PAID_TERMS: obj.paidServiceTermURL, PAID_TERMS_VIRTUAL_GOODS: obj.virtualGoodsURL } = _false);
   const formatResult = format(v5qdUrO, obj);
-  const intl3 = intl10.intl;
-  let stringResult = intl3.string(intl10.t["Sxed/G"]);
+  const intl3 = intl7.intl;
+  let stringResult = intl3.string(intl7.t["Sxed/G"]);
   if (skuId === EXTERNAL_PRODUCT_SKU_IDS.ORB_PROFILE_BADGE) {
     const intl5 = tmp(1113).intl;
     stringResult = intl5.string(tmp(1113).t.APcKRo);
@@ -67,6 +66,12 @@ export function getOrbCheckoutDisclaimerMessage(skuId) {
   const items = [formatResult, " ", stringResult];
   return items;
 }
+export function getOrbConstraintMessage(result) {
+  const getOrderConstraintMessage = OrderConstraintUtils.getOrderConstraintMessage;
+  OrderConstraintUtils;
+  const intl = intl7.intl;
+  return getOrderConstraintMessage(result, intl.string(intl7.t.fqJZ11));
+}
 export function resolveOrbCheckoutErrorMessage(orbRedemptionError, result) {
   let tmp = null;
   if (null != orbRedemptionError) {
@@ -76,21 +81,10 @@ export function resolveOrbCheckoutErrorMessage(orbRedemptionError, result) {
     } else {
       if (orbRedemptionError instanceof OrderActionCreators.OrderSigningFailedWithConstraintsError) {
         if (null != result) {
-          let stringResult;
-          if (ConstraintReasonCode.INSUFFICIENT_ORB_BALANCE === result) {
-            const intl9 = tmp2(1113).intl;
-            stringResult = intl9.string(tmp2(1113).t.keFvXM);
-          } else if (ConstraintReasonCode.SKU_ALREADY_OWNED === result) {
-            const intl8 = tmp2(1113).intl;
-            stringResult = intl8.string(tmp2(1113).t.m371Mx);
-          } else if (ConstraintReasonCode.BUNDLE_PARTIALLY_OWNED === result) {
-            const intl7 = tmp2(1113).intl;
-            stringResult = intl7.string(tmp2(1113).t.v9oC0p);
-          } else {
-            const intl6 = tmp2(1113).intl;
-            stringResult = intl6.string(tmp2(1113).t.fqJZ11);
-          }
-          message = stringResult;
+          const getOrderConstraintMessage = OrderConstraintUtils.getOrderConstraintMessage;
+          OrderConstraintUtils;
+          const intl6 = tmp2(1113).intl;
+          message = getOrderConstraintMessage(result, intl6.string(tmp2(1113).t.fqJZ11));
         }
       }
       if (orbRedemptionError instanceof OrderActionCreators.OrderProcessingPendingError) {

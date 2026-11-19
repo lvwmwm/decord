@@ -1,13 +1,13 @@
-// Module ID: 15671
-// Function ID: 15672
+// Module ID: 15658
+// Function ID: 15659
 // Name: frameRelaunchDeepLink
-// Dependencies: [6261, 1072, 15607, 15599, 6818, 14697, 6854, 2]
+// Dependencies: [6233, 1072, 15593, 15585, 6790, 14683, 6824, 2]
 
-// Module 15671 (frameRelaunchDeepLink)
-import validateConjureAppFrameDefault from "validateConjureAppFrame" /* 15599 */;
-import Constants_mod from "Constants" /* 6261 */;
+// Module 15658 (frameRelaunchDeepLink)
+import validateConjureAppFrameDefault from "validateConjureAppFrame" /* 15585 */;
+import Constants_mod from "Constants" /* 6233 */;
 import Constants_mod2 from "Constants" /* 1072 */;
-import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 15607 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 15593 */;
 import size from "module_2" /* 2 */;
 
 let RPCCommands;
@@ -18,7 +18,7 @@ let c3;
 let closure_4;
 let items;
 let tmp;
-const RPCErrorDefault = tmp(6818);
+const RPCErrorDefault = tmp(6790);
 let Constants = Constants_mod2;
 ({ RPC_AUTHENTICATED_SCOPE, RPC_EMBEDDED_APP_SCOPE, RPC_SCOPE_CONFIG } = Constants);
 Constants = Constants_mod2;
@@ -48,20 +48,20 @@ let obj2 = {
       } else {
         substr = hash1;
       }
-      const obj = socket(14697);
+      const obj = socket(14683);
       const frameDeepLinkChannelId = obj.getFrameDeepLinkChannelId(frame);
       const subscriptions = server.subscriptions;
       let tmp8 = null != frameDeepLinkChannelId;
       const someResult = subscriptions.some((socket) => socket.socket === socket && socket.evt === constants.FRAME_DEEP_LINK);
       if (tmp8) {
-        const tmp4Result = socket(6854);
+        const tmp4Result = socket(6824);
         tmp8 = !tmp4Result.isConjurePreviewSurface(frame.surface);
       }
       if (tmp8) {
         tmp8 = someResult;
       }
       if (tmp8) {
-        const tmp4Result2 = socket(14697);
+        const tmp4Result2 = socket(14683);
         const result = tmp4Result2.setFrameRelaunchDeepLink(frameDeepLinkChannelId, frame.applicationId, substr);
       }
       return { hash: substr };

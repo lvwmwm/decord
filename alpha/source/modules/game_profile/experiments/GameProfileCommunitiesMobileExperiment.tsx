@@ -1,10 +1,10 @@
-// Module ID: 13729
-// Function ID: 13730
+// Module ID: 13711
+// Function ID: 13712
 // Name: GameProfileCommunitiesMobileExperiment
 // Dependencies: [1452, 2]
 // Exports: useIsGameProfileCommunitiesMobileEnabled
 
-// Module 13729 (GameProfileCommunitiesMobileExperiment)
+// Module 13711 (GameProfileCommunitiesMobileExperiment)
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 

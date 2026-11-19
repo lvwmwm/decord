@@ -1,19 +1,19 @@
-// Module ID: 16517
-// Function ID: 16518
+// Module ID: 16508
+// Function ID: 16509
 // Name: OrbsArcadeGameGraphic
-// Dependencies: [32, 19, 17, 4824, 21, 4823, 575, 504, 9871, 9158, 5510, 2]
+// Dependencies: [32, 19, 17, 4793, 21, 4792, 575, 504, 9850, 9134, 5479, 2]
 // Exports: default, hasOrbsArcadeGameGraphic
 
-// Module 16517 (OrbsArcadeGameGraphic)
+// Module 16508 (OrbsArcadeGameGraphic)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import FastImageDefault from "FastImage" /* 5510 */;
-import AssetUtils from "AssetUtils" /* 9871 */;
+import FastImageDefault from "FastImage" /* 5479 */;
+import AssetUtils from "AssetUtils" /* 9850 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4824 */;
-import createStyles from "createStyles" /* 4823 */;
+import AccessibilityStore from "AccessibilityStore" /* 4793 */;
+import createStyles from "createStyles" /* 4792 */;
 import size_mod from "module_2" /* 2 */;
 
 let importDefault;
@@ -79,7 +79,7 @@ export default function OrbsArcadeGameGraphic(game) {
           importantForAccessibility: "no-hide-descendants"
         };
         obj4 = { uri: sheetVideoAsset.url };
-        const VideoComponent = tmp2(9158).VideoComponent;
+        const VideoComponent = tmp2(9134).VideoComponent;
         tmp8Result = tmp8(VideoComponent, obj3);
       }
       obj2.children = tmp8Result;

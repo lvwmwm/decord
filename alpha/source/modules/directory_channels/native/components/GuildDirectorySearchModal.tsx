@@ -1,12 +1,12 @@
-// Module ID: 13083
-// Function ID: 13084
+// Module ID: 13065
+// Function ID: 13066
 // Name: GuildDirectorySearchModal
-// Dependencies: [19, 21, 13084, 7003, 5402, 2]
+// Dependencies: [19, 21, 13066, 6973, 5371, 2]
 // Exports: default
 
-// Module 13083 (GuildDirectorySearchModal)
+// Module 13065 (GuildDirectorySearchModal)
 import Fragment from "Fragment" /* 21 */;
-import reactDefault from "react" /* 5402 */;
+import reactDefault from "react" /* 5371 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

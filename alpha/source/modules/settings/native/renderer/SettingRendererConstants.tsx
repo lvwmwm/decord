@@ -1,9 +1,9 @@
-// Module ID: 11898
-// Function ID: 11899
+// Module ID: 11876
+// Function ID: 11877
 // Name: SettingRendererConstants
 // Dependencies: [2]
 
-// Module 11898 (SettingRendererConstants)
+// Module 11876 (SettingRendererConstants)
 import size from "module_2" /* 2 */;
 
 const obj = { ROUTE: "route", PRESSABLE: "pressable", TOGGLE: "toggle", STATIC: "static", RADIO: "radio", VOLUME_SLIDER: "volume_slider", SLIDER: "slider", GUILD_SELECTOR: "guild_selector", LIST: "list", SEGMENTED_CONTROL: "segmented_control" };

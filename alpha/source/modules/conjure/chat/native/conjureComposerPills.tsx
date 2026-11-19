@@ -1,16 +1,16 @@
-// Module ID: 18674
-// Function ID: 18675
+// Module ID: 18668
+// Function ID: 18669
 // Name: conjureComposerPills
-// Dependencies: [32, 17, 1388, 18354, 11109, 4879, 18526, 1113, 4121, 12787, 2]
+// Dependencies: [32, 17, 1388, 18354, 11087, 4848, 18519, 1113, 4089, 12769, 2]
 // Exports: conjureFilePillIcon, conjurePillNodes, conjurePillText, conjureUserPillLabel, decodeConjurePills, encodeConjurePills
 
-// Module 18674 (conjureComposerPills)
+// Module 18668 (conjureComposerPills)
 import react_native from "react-native" /* 17 */;
 import intl2 from "intl" /* 1113 */;
-import _modDef4121 from "module_4121" /* 4121 */;
-import UserUtils from "UserUtils" /* 4879 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11109 */;
-import ChatInputParser from "ChatInputParser" /* 12787 */;
+import _modDef4089 from "module_4089" /* 4089 */;
+import UserUtils from "UserUtils" /* 4848 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11087 */;
+import ChatInputParser from "ChatInputParser" /* 12769 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import UserStore from "UserStore" /* 1388 */;
 import ConjureStoredAttachmentStore from "ConjureStoredAttachmentStore" /* 18354 */;
@@ -67,7 +67,7 @@ export function conjureUserPillLabel(id) {
 export function decodeConjurePills(draft) {
   map = new Map();
   let obj = {
-    text: draft.replace(map(18526).CONJURE_ANY_MENTION, (raw, arg1, arg2) => {
+    text: draft.replace(map(18519).CONJURE_ANY_MENTION, (raw, arg1, arg2) => {
       let combined;
       let uri;
       if (null != arg1) {
@@ -87,7 +87,7 @@ export function decodeConjurePills(draft) {
         }
         if (combined == null) {
           const intl = intl2.intl;
-          combined = intl.string(_modDef4121.ff9Q4C);
+          combined = intl.string(_modDef4089.ff9Q4C);
         }
       }
       const combined1 = "\u2060" + combined;

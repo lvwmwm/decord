@@ -1,16 +1,16 @@
-// Module ID: 19610
-// Function ID: 19611
+// Module ID: 19606
+// Function ID: 19607
 // Name: IOSUserIdentifiersManager
-// Dependencies: [5, 17, 1388, 1072, 7395, 1380, 19611, 1285, 1242, 1256, 2]
+// Dependencies: [5, 17, 1388, 1072, 7365, 1380, 19607, 1285, 1242, 1256, 2]
 
-// Module 19610 (IOSUserIdentifiersManager)
+// Module 19606 (IOSUserIdentifiersManager)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1388 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
 import size from "module_2" /* 2 */;
 
 let _self, c1, c4;
@@ -45,7 +45,7 @@ class IOSUserIdentifiersManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -89,7 +89,7 @@ class IOSUserIdentifiersManager extends AutomaticLifecycleManager {
             return obj;
           }
           _self = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         } catch (tmp8) {
           _self = 3;
           throw tmp8;

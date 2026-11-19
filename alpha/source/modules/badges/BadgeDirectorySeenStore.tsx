@@ -1,12 +1,12 @@
-// Module ID: 13918
-// Function ID: 13919
+// Module ID: 13900
+// Function ID: 13901
 // Name: BadgeDirectorySeenStore
-// Dependencies: [13919, 504, 572, 2]
+// Dependencies: [13901, 504, 572, 2]
 
-// Module 13918 (BadgeDirectorySeenStore)
+// Module 13900 (BadgeDirectorySeenStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import BadgeUtils from "BadgeUtils" /* 13919 */;
+import BadgeUtils from "BadgeUtils" /* 13901 */;
 import size from "module_2" /* 2 */;
 
 let set;

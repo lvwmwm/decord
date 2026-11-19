@@ -3,7 +3,10 @@
 // Dependencies: []
 
 // Module 16332
-
-export default function() {
-  return this.createSingleNodeList(this.Raw(this.scanner.tokenIndex, null, false));
+const obj = {
+  parse() {
+    return this.createSingleNodeList(this.Identifier());
+  }
 };
+
+export default obj;

@@ -1,16 +1,9 @@
 // Module ID: 15243
 // Function ID: 15244
-// Dependencies: [15236]
+// Dependencies: [15237]
 
 // Module 15243
-import _mod15236 from "module_15236" /* 15236 */;
+import _mod15237 from "module_15237" /* 15237 */;
 
 
-export default (arg0, arg1) => {
-  const tmp = _mod15236(arg0, arg1);
-  let version = null;
-  if (tmp) {
-    version = tmp.version;
-  }
-  return version;
-};
+export default (arg0, arg1, arg2) => _mod15237(arg0, arg1, arg2) > 0;

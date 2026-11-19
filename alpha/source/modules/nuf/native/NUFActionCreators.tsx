@@ -1,22 +1,22 @@
-// Module ID: 13538
-// Function ID: 13539
+// Module ID: 13520
+// Function ID: 13521
 // Name: NUFActionCreators
-// Dependencies: [5, 13510, 6597, 1388, 13539, 1072, 7310, 572, 6337, 13540, 2121, 13625, 13628, 13629, 1092, 13513, 13517, 2]
+// Dependencies: [5, 13492, 6568, 1388, 13521, 1072, 7280, 572, 6308, 13522, 2121, 13607, 13610, 13611, 1092, 13495, 13499, 2]
 // Exports: closeDiscoverabilityModal, nextOnboardingStep, openDiscoverabilityModal, previousOnboardingStep, startContactSyncForDiscoverability, startOnboarding, toggleDiscoverabilityForUser, transitionToHubEmailConnectionModal, transitionToNUFGuildTemplatesModal
 
-// Module 13538 (NUFActionCreators)
+// Module 13520 (NUFActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6337 */;
-import CreateGuildConstants from "CreateGuildConstants" /* 7310 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 13513 */;
-import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 13517 */;
-import NUFConstants from "NUFConstants" /* 13539 */;
-import HubEmailConnectionModalActionCreatorsDefault from "HubEmailConnectionModalActionCreators" /* 13625 */;
-import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 13628 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6308 */;
+import CreateGuildConstants from "CreateGuildConstants" /* 7280 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 13495 */;
+import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 13499 */;
+import NUFConstants from "NUFConstants" /* 13521 */;
+import HubEmailConnectionModalActionCreatorsDefault from "HubEmailConnectionModalActionCreators" /* 13607 */;
+import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 13610 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 13510 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6597 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 13492 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6568 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
@@ -43,7 +43,7 @@ let modalConfig = function _startContactSyncForDiscoverability() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -105,7 +105,7 @@ let modalConfig = function _startContactSyncForDiscoverability() {
           return obj;
         } else {
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp22) {
         c3 = 3;

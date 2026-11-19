@@ -1,14 +1,14 @@
-// Module ID: 7761
-// Function ID: 7762
+// Module ID: 7731
+// Function ID: 7732
 // Name: GoogleNeutralIcon
-// Dependencies: [19, 21, 575, 5509, 7762, 2]
+// Dependencies: [19, 21, 575, 5478, 7732, 2]
 // Exports: GoogleNeutralIcon
 
-// Module 7761 (GoogleNeutralIcon)
+// Module 7731 (GoogleNeutralIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5509 */;
-import AssetRegistry from "AssetRegistry" /* 7762 */;
+import BaseIconImage2 from "BaseIconImage" /* 5478 */;
+import AssetRegistry from "AssetRegistry" /* 7732 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

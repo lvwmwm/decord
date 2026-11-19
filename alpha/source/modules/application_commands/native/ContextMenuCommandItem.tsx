@@ -1,20 +1,20 @@
-// Module ID: 19054
-// Function ID: 19055
+// Module ID: 19046
+// Function ID: 19047
 // Name: ContextMenuCommandItem
-// Dependencies: [19, 17, 21, 4823, 575, 6956, 12, 1113, 13019, 5510, 2119, 5521, 2]
+// Dependencies: [19, 17, 21, 4792, 575, 6926, 12, 1113, 13001, 5479, 2119, 5490, 2]
 // Exports: ContextMenuCommandAppItem, ContextMenuCommandEmptyItem, ContextMenuCommandLoadingItem, default
 
-// Module 19054 (ContextMenuCommandItem)
+// Module 19046 (ContextMenuCommandItem)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import FastImageDefault from "FastImage" /* 5510 */;
-import TableRow2 from "TableRow" /* 6956 */;
-import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 13019 */;
+import FastImageDefault from "FastImage" /* 5479 */;
+import TableRow2 from "TableRow" /* 6926 */;
+import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 13001 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size_mod from "module_2" /* 2 */;
 
 let obj2;
@@ -61,13 +61,13 @@ export default function ContextMenuCommandItem(item) {
     const obj = { applicationName: name, commandName: tmp.displayName };
     return formatToPlainString(Pk4Mz3, obj);
   }, items);
-  let obj = item(13019);
+  let obj = item(13001);
   const applicationCommandsIconSource = obj.getApplicationCommandsIconSource(section);
   let tmp8Result = null != applicationCommandsIconSource;
-  const TableRow = item(6956).TableRow;
+  const TableRow = item(6926).TableRow;
   if (tmp8Result) {
     const obj3 = { style: tmp.commandIcon, source: applicationCommandsIconSource };
-    tmp8Result = tmp8(section(5510), obj3);
+    tmp8Result = tmp8(section(5479), obj3);
   }
   return <TableRow accessibilityLabel={memo} onPress={onPress} label={item.displayName} icon={tmp8Result} trailing={null} start={start} end={end} />;
 };

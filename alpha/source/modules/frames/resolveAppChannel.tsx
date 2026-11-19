@@ -1,13 +1,13 @@
-// Module ID: 10649
-// Function ID: 10650
+// Module ID: 10627
+// Function ID: 10628
 // Name: resolveAppChannel
-// Dependencies: [5, 4672, 4755, 1072, 6844, 2]
+// Dependencies: [5, 4641, 4724, 1072, 6814, 2]
 // Exports: default
 
-// Module 10649 (resolveAppChannel)
+// Module 10627 (resolveAppChannel)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4672 */;
-import PermissionStore from "PermissionStore" /* 4755 */;
+import ChannelStore from "ChannelStore" /* 4641 */;
+import PermissionStore from "PermissionStore" /* 4724 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let obj = function _resolveAppChannel() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {

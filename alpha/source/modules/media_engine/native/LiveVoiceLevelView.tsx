@@ -1,12 +1,12 @@
-// Module ID: 13239
-// Function ID: 13240
+// Module ID: 13221
+// Function ID: 13222
 // Name: LiveVoiceLevelView
-// Dependencies: [19, 21, 13240, 2]
+// Dependencies: [19, 21, 13222, 2]
 // Exports: default
 
-// Module 13239 (LiveVoiceLevelView)
+// Module 13221 (LiveVoiceLevelView)
 import Fragment from "Fragment" /* 21 */;
-import LiveVoiceLevelViewNativeComponentDefault from "LiveVoiceLevelViewNativeComponent" /* 13240 */;
+import LiveVoiceLevelViewNativeComponentDefault from "LiveVoiceLevelViewNativeComponent" /* 13222 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,20 +1,20 @@
-// Module ID: 17887
-// Function ID: 17888
+// Module ID: 17880
+// Function ID: 17881
 // Name: InterestGameCover
-// Dependencies: [32, 19, 17, 17879, 21, 575, 5415, 4823, 17888, 5510, 17889, 17890, 2]
+// Dependencies: [32, 19, 17, 17872, 21, 575, 5384, 4792, 17881, 5479, 17882, 17883, 2]
 // Exports: default
 
-// Module 17887 (InterestGameCover)
+// Module 17880 (InterestGameCover)
 import nativeDefault from "native" /* 575 */;
-import TextVariants from "TextVariants" /* 5415 */;
-import InterestGamePickerConstants from "InterestGamePickerConstants" /* 17879 */;
-import useInterestCoverColor from "useInterestCoverColor" /* 17888 */;
-import InterestPickerPerformance from "InterestPickerPerformance" /* 17890 */;
+import TextVariants from "TextVariants" /* 5384 */;
+import InterestGamePickerConstants from "InterestGamePickerConstants" /* 17872 */;
+import useInterestCoverColor from "useInterestCoverColor" /* 17881 */;
+import InterestPickerPerformance from "InterestPickerPerformance" /* 17883 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -66,7 +66,7 @@ function NoCover(imageWidth) {
   const tmp9 = _slicedToArray(react.useState(null), 2);
   closure_1 = tmp9[1];
   let tmp10 = null != iconURL && iconURL !== tmp9[0];
-  const tmp11 = tmp4(17888)(game.id, iconURL1);
+  const tmp11 = tmp4(17881)(game.id, iconURL1);
   const tmp13 = closure_12(width, minResult, Math.max(width / TILE_ASPECT_RATIO - width, c10), tmp11);
   const items = [tmp6.fallback, , ];
   let titleOnly = tmp16;
@@ -85,12 +85,12 @@ function NoCover(imageWidth) {
   if (tmp18) {
     const obj2 = { accessible: false, source: obj3, style: tmp6.texture, blurRadius: 32, resizeMode: "cover", fadeDuration: 0 };
     obj3 = { uri: iconURL };
-    tmp18 = metroImportAll(tmp4(5510), obj2);
+    tmp18 = metroImportAll(tmp4(5479), obj2);
   }
   items1 = [tmp18, , , ];
   let tmp20 = tmp12;
   if (tmp20) {
-    const obj4 = { style: items2, children: metroImportAll(tmp4(5510), obj5) };
+    const obj4 = { style: items2, children: metroImportAll(tmp4(5479), obj5) };
     items2 = [tmp6.art, tmp13.art];
     obj5 = {
       source: obj6,
@@ -118,7 +118,7 @@ function NoCover(imageWidth) {
     };
     items3 = [tmp6.icon, tmp13.icon];
     obj8 = { uri: iconURL };
-    tmp10 = metroImportAll(tmp4(5510), obj7);
+    tmp10 = metroImportAll(tmp4(5479), obj7);
   }
   items1[2] = tmp10;
   let tmp24Result = !compact;
@@ -136,7 +136,7 @@ function NoCover(imageWidth) {
     const _Math2 = Math;
     obj10 = { name: game.name, width: Math.max(0, width - tmp4(575).space.PX_16), maxLines: num };
     num = undefined;
-    tmp4Result = tmp4(17889);
+    tmp4Result = tmp4(17882);
     if (!compact && tmp10) {
       num = 2;
     }

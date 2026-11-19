@@ -1,15 +1,15 @@
-// Module ID: 13232
-// Function ID: 13233
+// Module ID: 13214
+// Function ID: 13215
 // Name: useEmojiSuggestionNuxCoachmark
-// Dependencies: [32, 19, 4669, 21, 8986, 4656, 13229, 12754, 1113, 6972, 8993, 2]
+// Dependencies: [32, 19, 4638, 21, 8960, 4625, 13211, 12736, 1113, 6942, 8967, 2]
 // Exports: default
 
-// Module 13232 (useEmojiSuggestionNuxCoachmark)
+// Module 13214 (useEmojiSuggestionNuxCoachmark)
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1113 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4669 */;
-import MobileEmojiSuggestionsExperiment from "MobileEmojiSuggestionsExperiment" /* 12754 */;
-import useChatInputKeyboardOffsetDefault from "useChatInputKeyboardOffset" /* 13229 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4638 */;
+import MobileEmojiSuggestionsExperiment from "MobileEmojiSuggestionsExperiment" /* 12736 */;
+import useChatInputKeyboardOffsetDefault from "useChatInputKeyboardOffset" /* 13211 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

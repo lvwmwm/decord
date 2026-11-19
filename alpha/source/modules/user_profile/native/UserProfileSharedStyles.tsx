@@ -1,13 +1,13 @@
-// Module ID: 8109
-// Function ID: 8110
+// Module ID: 8078
+// Function ID: 8079
 // Name: UserProfileSharedStyles
-// Dependencies: [7475, 4823, 575, 2]
+// Dependencies: [7445, 4792, 575, 2]
 // Exports: default, useUserProfileCardRadius
 
-// Module 8109 (UserProfileSharedStyles)
+// Module 8078 (UserProfileSharedStyles)
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 7475 */;
-import createStyles from "createStyles" /* 4823 */;
+import Constants from "Constants" /* 7445 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let c2;

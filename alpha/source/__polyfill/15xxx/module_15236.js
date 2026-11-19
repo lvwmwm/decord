@@ -1,30 +1,19 @@
 // Module ID: 15236
 // Function ID: 15237
-// Dependencies: [15237]
+// Dependencies: [15222]
 
 // Module 15236
-import _mod15237 from "module_15237" /* 15237 */;
+import _mod15222 from "module_15222" /* 15222 */;
 
 
-export default function(arg0, arg1) {
-  let flag = arg2;
-  if (arg2 === undefined) {
-    flag = false;
-  }
-  if (arg0 instanceof _mod15237) {
-    return arg0;
-  } else {
-    try {
-      const self = this;
-      const self2 = this;
-      const tmp5 = new _mod15237(arg0, arg1);
-      return tmp5;
-    } catch (tmp7) {
-      if (flag) {
-        throw tmp7;
-      } else {
-        return null;
-      }
+export default (arg0, arg1) => {
+  const tmp = _mod15222(arg0, arg1);
+  let prerelease = null;
+  if (tmp) {
+    prerelease = null;
+    if (tmp.prerelease.length) {
+      prerelease = tmp.prerelease;
     }
   }
+  return prerelease;
 };

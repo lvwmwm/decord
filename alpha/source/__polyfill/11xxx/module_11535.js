@@ -1,15 +1,19 @@
 // Module ID: 11535
 // Function ID: 11536
-// Dependencies: [41, 42, 93, 95, 98, 11393]
+// Dependencies: [41, 42, 93, 95, 98, 11353, 11522, 11380, 11360]
 
 // Module 11535
-import _mod11393 from "module_11393" /* 11393 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 11353 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11360 */;
+import _mod11522 from "module_11522" /* 11522 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import map from "_possibleConstructorReturn" /* 93 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
+let tmp2;
+const _mod11380 = tmp2(11380);
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -25,31 +29,15 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-let fn = this;
-if (this) {
-  fn = this.__importDefault;
-}
-if (!fn) {
-  fn = (__esModule) => {
-    let tmp2;
-    const tmp = __esModule;
-    if (!tmp) {
-      tmp2 = { default: __esModule };
-      const obj = { default: __esModule };
-    } else {
-      tmp2 = __esModule;
-    }
-    return tmp2;
-  };
-}
-class UKMergeDateRangeRefiner {
+const regExp = new RegExp("(?:(?:\\,|\\(|\\\uFF08)\\s*)?(?:il\\s*?)?(?:(questa|l'ultima|scorsa|prossima)\\s*)?(" + repeatedTimeunitPattern.matchAnyPattern(_mod11522.WEEKDAY_DICTIONARY) + ")(?:\\s*(?:\\,|\\)|\\\uFF09))?(?:\\s*(questa|l'ultima|scorsa|prossima)\\s*settimana)?(?=\\W|$)", "i");
+class ITWeekdayParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, UKMergeDateRangeRefiner);
-    const obj = _getPrototypeOf(UKMergeDateRangeRefiner);
+    _classCallCheck(this, ITWeekdayParser);
+    const obj = _getPrototypeOf(ITWeekdayParser);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = map;
+    const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
@@ -59,13 +47,45 @@ class UKMergeDateRangeRefiner {
     return tmp3(self, constructResult);
   }
 }
-_inherits(UKMergeDateRangeRefiner, fn(_mod11393).default);
+_inherits(ITWeekdayParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "patternBetween",
-  value: function patternBetween() {
-    return /^\s*(і до|і по|до|по|-)\s*$/i;
+  key: "innerPattern",
+  value: function innerPattern() {
+    return regExp;
   }
 };
-const items = [entry];
+const items = [
+  entry,
+  {
+    key: "innerExtract",
+    value: function innerExtract(reference, arg1) {
+      const str = arg1[2];
+      const formatted = str.toLowerCase();
+      let str2 = arg1[1];
+      const tmp4 = _mod11522.WEEKDAY_DICTIONARY[formatted];
+      if (!str2) {
+        str2 = arg1[3];
+      }
+      if (!str2) {
+        str2 = "";
+      }
+      const formatted1 = str2.toLowerCase();
+      let str3 = "ultima";
+      if ("ultima" != formatted1) {
+        str3 = "ultima";
+        if ("scorsa" != formatted1) {
+          str3 = "prossima";
+          if ("prossima" != formatted1) {
+            str3 = null;
+            if ("questa" == formatted1) {
+              str3 = "questa";
+            }
+          }
+        }
+      }
+      return _mod11380.createParsingComponentsAtWeekday(reference.reference, tmp4, str3);
+    }
+  }
+];
 
-export default _createClass(UKMergeDateRangeRefiner, items);
+export default _createClass(ITWeekdayParser, items);

@@ -1,23 +1,23 @@
-// Module ID: 19095
-// Function ID: 19096
+// Module ID: 19087
+// Function ID: 19088
 // Name: OrbsArcadeGameScreen
-// Dependencies: [19, 17, 6531, 16487, 1072, 5449, 19096, 6532, 21, 4823, 575, 16494, 16498, 1630, 504, 1503, 18454, 6864, 16497, 4884, 10790, 18457, 15682, 19097, 19098, 2]
+// Dependencies: [19, 17, 6502, 16478, 1072, 5418, 19088, 6503, 21, 4792, 575, 16485, 16489, 1630, 504, 1503, 18447, 6834, 16488, 4853, 10768, 18450, 15669, 19089, 19090, 2]
 // Exports: default
 
-// Module 19095 (OrbsArcadeGameScreen)
+// Module 19087 (OrbsArcadeGameScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import Link from "Link" /* 1503 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5449 */;
-import leaveFrame from "leaveFrame" /* 6864 */;
-import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 19096 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5418 */;
+import leaveFrame from "leaveFrame" /* 6834 */;
+import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 19088 */;
 import react from "react" /* 19 */;
-import FramesStore from "FramesStore" /* 6531 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 16487 */;
-import FramesConstants from "FramesConstants" /* 6532 */;
+import FramesStore from "FramesStore" /* 6502 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 16478 */;
+import FramesConstants from "FramesConstants" /* 6503 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let set;

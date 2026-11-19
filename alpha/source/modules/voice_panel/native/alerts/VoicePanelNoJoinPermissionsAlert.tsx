@@ -1,13 +1,13 @@
-// Module ID: 19406
-// Function ID: 19407
+// Module ID: 19402
+// Function ID: 19403
 // Name: VoicePanelNoJoinPermissionsAlert
-// Dependencies: [19, 21, 5774, 5774, 19407, 1113, 2]
+// Dependencies: [19, 21, 5745, 5745, 19403, 1113, 2]
 // Exports: default
 
-// Module 19406 (VoicePanelNoJoinPermissionsAlert)
+// Module 19402 (VoicePanelNoJoinPermissionsAlert)
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1113 */;
-import AlertModal2 from "AlertModal" /* 5774 */;
+import AlertModal2 from "AlertModal" /* 5745 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,16 +1,16 @@
-// Module ID: 12349
-// Function ID: 12350
+// Module ID: 12332
+// Function ID: 12333
 // Name: AgeVerificationGetStartedModal
-// Dependencies: [19, 21, 4823, 575, 6337, 7006, 12350, 12354, 12355, 7890, 1269, 6322, 7003, 1113, 2]
+// Dependencies: [19, 21, 4792, 575, 6308, 6976, 12333, 12337, 12338, 7860, 1269, 6293, 6973, 1113, 2]
 // Exports: default
 
-// Module 12349 (AgeVerificationGetStartedModal)
+// Module 12332 (AgeVerificationGetStartedModal)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6322 */;
-import NavigatorHeader from "NavigatorHeader" /* 7006 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6293 */;
+import NavigatorHeader from "NavigatorHeader" /* 6976 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

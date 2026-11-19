@@ -1,10 +1,10 @@
-// Module ID: 14667
-// Function ID: 14668
+// Module ID: 14653
+// Function ID: 14654
 // Name: conjureWorkerFetch
-// Dependencies: [5, 14660, 2]
+// Dependencies: [5, 14647, 2]
 // Exports: fetchConjureWorker
 
-// Module 14667 (conjureWorkerFetch)
+// Module 14653 (conjureWorkerFetch)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let obj = function _fetchConjureWorker() {
         let obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {

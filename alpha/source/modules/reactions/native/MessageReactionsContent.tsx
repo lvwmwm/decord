@@ -1,10 +1,10 @@
-// Module ID: 10345
-// Function ID: 10346
+// Module ID: 10323
+// Function ID: 10324
 // Name: MessageReactionsContent
-// Dependencies: [32, 19, 17, 4824, 7234, 4672, 4735, 8369, 4755, 1072, 21, 1655, 5414, 4823, 575, 504, 4767, 1345, 5405, 8370, 5402, 12, 7431, 5851, 4879, 7978, 7414, 1187, 1414, 10346, 1380, 7062, 7624, 10349, 1113, 10350, 4820, 4648, 7407, 10351, 5033, 1496, 5530, 5037, 10352, 2121, 7476, 10353, 5485, 10355, 5039, 5040, 1630, 8098, 5051, 5055, 510, 6802, 4781, 5404, 10356, 7360, 2]
+// Dependencies: [32, 19, 17, 4793, 7204, 4641, 4704, 8338, 4724, 1072, 21, 1655, 5383, 4792, 575, 504, 4736, 1345, 5374, 8339, 5371, 12, 7401, 5822, 4848, 7948, 7384, 1187, 1414, 10324, 1380, 7032, 7594, 10327, 1113, 10328, 4789, 4617, 7377, 10329, 5002, 1496, 5499, 5006, 10330, 2121, 7446, 10331, 5454, 10333, 5008, 5009, 1630, 8067, 5020, 5024, 510, 6774, 4750, 5373, 10334, 7330, 2]
 // Exports: MessageReactionsContent, MessageReactionsEmpty
 
-// Module 10345 (MessageReactionsContent)
+// Module 10323 (MessageReactionsContent)
 import _modDef12 from "module_12" /* 12 */;
 import get_initialized from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
@@ -15,34 +15,34 @@ import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
 import useWindowDimensions from "useWindowDimensions" /* 1496 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import ColorUtils from "ColorUtils" /* 4820 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
-import HapticUtils from "HapticUtils" /* 5039 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5040 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5051 */;
-import BottomSheetModal from "BottomSheetModal" /* 5055 */;
-import Text_Text from "Text/Text" /* 5414 */;
-import ExpressionSourceRecord from "ExpressionSourceRecord" /* 7234 */;
-import FastListDefault from "FastList" /* 7360 */;
-import EmojiDefault from "Emoji" /* 7407 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7978 */;
-import NoResults from "NoResults" /* 8098 */;
-import ReactionActionCreatorsAll from "ReactionActionCreators" /* 8370 */;
-import useEmojiColorPalette2 from "useEmojiColorPalette" /* 10350 */;
-import useEmojiAndSource2 from "useEmojiAndSource" /* 10353 */;
-import SwipeableFastListDefault from "SwipeableFastList" /* 10356 */;
+import ColorUtils from "ColorUtils" /* 4789 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
+import HapticUtils from "HapticUtils" /* 5008 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5009 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5020 */;
+import BottomSheetModal from "BottomSheetModal" /* 5024 */;
+import Text_Text from "Text/Text" /* 5383 */;
+import ExpressionSourceRecord from "ExpressionSourceRecord" /* 7204 */;
+import FastListDefault from "FastList" /* 7330 */;
+import EmojiDefault from "Emoji" /* 7377 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7948 */;
+import NoResults from "NoResults" /* 8067 */;
+import ReactionActionCreatorsAll from "ReactionActionCreators" /* 8339 */;
+import useEmojiColorPalette2 from "useEmojiColorPalette" /* 10328 */;
+import useEmojiAndSource2 from "useEmojiAndSource" /* 10331 */;
+import SwipeableFastListDefault from "SwipeableFastList" /* 10334 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4824 */;
-import ChannelStore from "ChannelStore" /* 4672 */;
-import GuildMemberStore from "GuildMemberStore" /* 4735 */;
-import MessageReactionsStore from "MessageReactionsStore" /* 8369 */;
-import PermissionStore from "PermissionStore" /* 4755 */;
+import AccessibilityStore from "AccessibilityStore" /* 4793 */;
+import ChannelStore from "ChannelStore" /* 4641 */;
+import GuildMemberStore from "GuildMemberStore" /* 4704 */;
+import MessageReactionsStore from "MessageReactionsStore" /* 8338 */;
+import PermissionStore from "PermissionStore" /* 4724 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import module_1655 from "module_1655" /* 1655 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -186,7 +186,7 @@ function ReactionTab(arg0) {
   const items = [AccessibilityStore];
   const tmp3Result2 = get_initialized;
   const stateFromStores = tmp3Result2.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  const AnimateEmoji = tmp3(4648).AnimateEmoji;
+  const AnimateEmoji = tmp3(4617).AnimateEmoji;
   let emojiURL;
   if (null != emoji.id) {
     const obj3 = { id: null, animated, size: 48 };
@@ -223,11 +223,11 @@ function ReactionTab(arg0) {
   ({ emoji: arr4[0], emojiText: arr4[1] } = tmp);
   items3 = [, ];
   ({ emoji: arr5[0], emojiImage: arr5[1] } = tmp);
-  items4 = [authStore4(EmojiDefault, obj6), ];
+  items4 = [closure_18(EmojiDefault, obj6), ];
   const items5 = [tmp.reactionCountText, , ];
   let prop = null;
-  const Text = tmp3(5414).Text;
-  const tmp19 = authStore4;
+  const Text = tmp3(5383).Text;
+  const tmp19 = closure_18;
   if (selected) {
     prop = tmp.reactionCountTextSelected;
   }
@@ -394,7 +394,7 @@ function EmojiOptionsButton(channelId) {
   const items = [ChannelStore];
   const items1 = [channelId];
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channelId), items1);
-  const tmp3 = messageId(10351)(stateFromStores);
+  const tmp3 = messageId(10329)(stateFromStores);
   dependencyMap = tmp3;
   const reaction = tmp4;
   const items2 = [channelId, messageId, reactions[reactionSelectedIndex], tmp3, flag];
@@ -402,17 +402,17 @@ function EmojiOptionsButton(channelId) {
     onPress: react.useCallback(() => {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { channelId, messageId, reaction, canRemoveReactions, isEmojiPack: flag };
-      obj.openLazy(asyncRequire(10352, dependencyMap.paths), "ReactionEmojiOptionsActionSheet", obj2, "replaceTopSheet");
+      obj.openLazy(asyncRequire(10330, dependencyMap.paths), "ReactionEmojiOptionsActionSheet", obj2, "replaceTopSheet");
     }, items2),
     style: tmp.emojiOptionsButton,
     children: items3
   };
   const obj3 = { variant: "body-xs/semibold", color: "text-subtle", children: intl.string(channelId(1113).t.pCaYID) };
-  const Text = channelId(5414).Text;
+  const Text = channelId(5383).Text;
   intl = channelId(1113).intl;
   items3 = [closure_18(Text, obj3), ];
   const obj4 = { color: messageId(575).colors.ICON_SUBTLE, size: "xs" };
-  const ChevronSmallRightIcon = channelId(7476).ChevronSmallRightIcon;
+  const ChevronSmallRightIcon = channelId(7446).ChevronSmallRightIcon;
   items3[1] = closure_18(ChevronSmallRightIcon, obj4);
   return closure_19(closure_7, obj2);
 }
@@ -424,11 +424,11 @@ function EmojiPackReactionTabActions(arg0) {
   if (useEmojiAndSource({ emojiId, skipKnownGuildEmojiFetch: true }).sourceType === EmojiSourceDataTypes.PACK) {
     const obj2 = { isEmojiPack: true };
     const merged = Object.assign(arg0);
-    tmp7 = authStore4(EmojiOptionsButton, obj2);
+    tmp7 = closure_18(EmojiOptionsButton, obj2);
   } else {
     const obj = {};
     const merged1 = Object.assign(arg0);
-    tmp7 = authStore4(RemoveAllButton, obj);
+    tmp7 = closure_18(RemoveAllButton, obj);
   }
   return tmp7;
 }
@@ -442,7 +442,7 @@ function ReactionTabs(setReactionSelectedIndex) {
   let tmp = closure_21();
   ({ reactions, reactionSelectedIndex } = setReactionSelectedIndex);
   setReactionSelectedIndex = setReactionSelectedIndex.setReactionSelectedIndex;
-  let obj = reactionSelectedIndex(5485);
+  let obj = reactionSelectedIndex(5454);
   const emoji = reactions[reactionSelectedIndex].emoji;
   const obj2 = { style: tmp.reactionTab, children: items };
   const isTidaMediaTakedownRegion = obj.useIsTidaMediaTakedownRegion();
@@ -450,7 +450,7 @@ function ReactionTabs(setReactionSelectedIndex) {
     tabs: reactions.map((reaction, index) => {
       let str = "normal-";
       const obj = { reaction, selected: index === reactionSelectedIndex };
-      const tmp = authStore4;
+      const tmp = closure_18;
       const tmp2 = ReactionTab;
       if (reaction.burst_count > 0) {
         str = "burst-";
@@ -472,12 +472,12 @@ function ReactionTabs(setReactionSelectedIndex) {
     }
   };
   ({ tab: obj3.tabStyle, tabActive: obj3.tabStyleActive, tabSelected: obj3.tabStyleSelected } = tmp);
-  const tmp6 = setReactionSelectedIndex(10355);
-  items = [closure_18(tmp6, obj4), closure_18(setReactionSelectedIndex(7624), { outer: true }), ];
+  const tmp6 = setReactionSelectedIndex(10333);
+  items = [closure_18(tmp6, obj4), closure_18(setReactionSelectedIndex(7594), { outer: true }), ];
   const obj5 = { style: tmp.removeButtonContainer, children: items1 };
   const obj7 = { style: tmp.emojiTextIdentifier, variant: "body-sm/medium", color: "text-default", children: obj6.getReactionEmojiName(reactions[reactionSelectedIndex].emoji) };
-  const Text = reactionSelectedIndex(5414).Text;
-  obj6 = reactionSelectedIndex(4767);
+  const Text = reactionSelectedIndex(5383).Text;
+  obj6 = reactionSelectedIndex(4736);
   items1 = [closure_18(Text, obj7), ];
   if (isTidaMediaTakedownRegion) {
     const obj8 = {};
@@ -537,16 +537,16 @@ export function MessageReactionsEmpty() {
   const tmp = closure_21();
   const tmp2 = useSafeAreaInsetsDefault();
   const obj = NoResults;
-  const obj2 = { scrollable: true, startHeight: 338 + tmp2.bottom, children: authStore4(BottomSheetView, obj3) };
+  const obj2 = { scrollable: true, startHeight: 338 + tmp2.bottom, children: closure_18(BottomSheetView, obj3) };
   const noResultsSource = obj.useNoResultsSource();
   const BottomSheet = Sheet_BottomSheet.BottomSheet;
-  obj3 = { style: tmp.containerEmpty, children: authStore4(RefreshEmptyState, obj4) };
+  obj3 = { style: tmp.containerEmpty, children: closure_18(RefreshEmptyState, obj4) };
   BottomSheetView = BottomSheetModal.BottomSheetView;
   obj4 = { source: noResultsSource, title: intl.string(intl3.t.HmPOrp), body: intl2.string(intl3.t["pTJ5J/"]) };
   RefreshEmptyState = native.RefreshEmptyState;
   intl = intl3.intl;
   intl2 = intl3.intl;
-  return authStore4(BottomSheet, obj2);
+  return closure_18(BottomSheet, obj2);
 }
 export function MessageReactionsContent(channelId) {
   let NORMAL;
@@ -618,7 +618,7 @@ export function MessageReactionsContent(channelId) {
   let tmp4 = tmp3[1];
   const bound = Math.min(tmp3[0], reactions.length - 1);
   if (null != reactions[bound].me_vote) {
-    NORMAL = channelId(5405).ReactionTypes.VOTE;
+    NORMAL = channelId(5374).ReactionTypes.VOTE;
     tmp9 = channelId;
     let tmp10 = dependencyMap;
     tmp11 = channelId;
@@ -628,13 +628,13 @@ export function MessageReactionsContent(channelId) {
     if (reactions[bound].burst_count > 0) {
       let tmp13 = channelId;
       const tmp14 = dependencyMap;
-      NORMAL = channelId(5405).ReactionTypes.BURST;
+      NORMAL = channelId(5374).ReactionTypes.BURST;
       tmp9 = channelId;
       tmp10 = dependencyMap;
       tmp11 = channelId;
       tmp12 = dependencyMap;
     } else {
-      NORMAL = channelId(5405).ReactionTypes.NORMAL;
+      NORMAL = channelId(5374).ReactionTypes.NORMAL;
       tmp9 = channelId;
       tmp10 = dependencyMap;
       tmp11 = channelId;
@@ -647,7 +647,7 @@ export function MessageReactionsContent(channelId) {
   const items1 = [channelId];
   const tmp11Result = tmp11(504);
   const stateFromStores = tmp11Result.useStateFromStores(items, () => ChannelStore.getChannel(channelId), items1);
-  const tmp11Result3 = tmp11(6802);
+  const tmp11Result3 = tmp11(6774);
   const isActiveChannelOrUnarchivableThread = tmp11Result3.useIsActiveChannelOrUnarchivableThread(stateFromStores);
   const items2 = [PermissionStore];
   const items3 = [channelId];
@@ -803,7 +803,7 @@ export function MessageReactionsContent(channelId) {
   let closure_3 = tmp6;
   const tmpResult3 = tmp();
   let closure_5 = tmpResult3;
-  const analyticsLocations = tmp20(7431)().analyticsLocations;
+  const analyticsLocations = tmp20(7401)().analyticsLocations;
   items5 = [reactors, channelId, tmp22, messageId, tmp6, tmpResult3, analyticsLocations];
   let closure_2 = tmp6;
   const tmpResult4 = tmp();
@@ -816,12 +816,12 @@ export function MessageReactionsContent(channelId) {
     const result = Storage.set(MessageReactionsContent_SwipableBounced, true);
   }, []);
   const tmp11Result4 = tmp11(1380);
-  let obj3 = { scrollable: true, backdropOpacity: tmp11(4781).BACKDROP_OPACITY, backdropChildren: tmp28Result, header: tmp28Result3, children: tmp28Result4 };
+  let obj3 = { scrollable: true, backdropOpacity: tmp11(4750).BACKDROP_OPACITY, backdropChildren: tmp28Result, header: tmp28Result3, children: tmp28Result4 };
   const tmp27 = tmp11Result4.isIOS() && tmp22;
-  const BottomSheet = tmp11(5051).BottomSheet;
+  const BottomSheet = tmp11(5020).BottomSheet;
   tmp28Result = null;
-  if (NORMAL === tmp9(5405).ReactionTypes.BURST) {
-    let obj4 = { style: absoluteFill.absoluteFill, pointerEvents: "none", children: closure_18(tmp20(5404), obj5) };
+  if (NORMAL === tmp9(5374).ReactionTypes.BURST) {
+    let obj4 = { style: absoluteFill.absoluteFill, pointerEvents: "none", children: closure_18(tmp20(5373), obj5) };
     obj5 = { emoji: tmp6.emoji, reactionType: NORMAL, messageId, channelId };
     tmp28Result = tmp28(closure_9, obj4);
   }

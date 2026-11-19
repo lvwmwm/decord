@@ -1,14 +1,14 @@
-// Module ID: 11190
-// Function ID: 11191
+// Module ID: 11168
+// Function ID: 11169
 // Name: FavoritesGuildAnalytics
-// Dependencies: [4856, 1072, 4697, 1256, 2]
+// Dependencies: [4825, 1072, 4666, 1256, 2]
 // Exports: consumeNextFavoritesGuildViewSource, setNextFavoritesGuildViewSource, trackFavoritesGuildAddToFavorites, trackFavoritesGuildOrderUpdated, trackFavoritesGuildRemoveFromFavorites, trackFavoritesGuildVisibilitySettingToggled
 
-// Module 11190 (FavoritesGuildAnalytics)
+// Module 11168 (FavoritesGuildAnalytics)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import FavoritesUtils from "FavoritesUtils" /* 4697 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4856 */;
+import FavoritesUtils from "FavoritesUtils" /* 4666 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4825 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

@@ -1,26 +1,26 @@
-// Module ID: 17254
-// Function ID: 17255
+// Module ID: 17247
+// Function ID: 17248
 // Name: BuildOverrideActiveSetting
-// Dependencies: [19, 11854, 21, 17063, 504, 12177, 16066, 5837, 17248, 1113, 2292, 5421, 7502, 10331, 11897, 14295, 2]
+// Dependencies: [19, 11832, 21, 17056, 504, 12156, 16057, 5808, 17241, 1113, 2292, 5390, 7472, 10309, 11875, 14278, 2]
 
-// Module 17254 (BuildOverrideActiveSetting)
+// Module 17247 (BuildOverrideActiveSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl3 from "intl" /* 1113 */;
 import _modDef2292 from "module_2292" /* 2292 */;
-import SettingsIcon from "SettingsIcon" /* 10331 */;
-import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 12177 */;
-import RefreshIcon from "RefreshIcon" /* 14295 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 16066 */;
-import openBuildOverridesSettings from "openBuildOverridesSettings" /* 17063 */;
+import SettingsIcon from "SettingsIcon" /* 10309 */;
+import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 12156 */;
+import RefreshIcon from "RefreshIcon" /* 14278 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 16057 */;
+import openBuildOverridesSettings from "openBuildOverridesSettings" /* 17056 */;
 import react from "react" /* 19 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 11854 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 11832 */;
 import Fragment from "Fragment" /* 21 */;
-import SettingBuilders from "SettingBuilders" /* 11897 */;
+import SettingBuilders from "SettingBuilders" /* 11875 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
-const f112997 = () => {
+const f112974 = () => {
   const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
   let tmp;
   if (overrides != null) {
@@ -45,26 +45,26 @@ let obj = {
     let intl2;
     const items = [BuildOverrideStore];
     const obj = get_initialized;
-    const stateFromStores = obj.useStateFromStores(items, f112997);
+    const stateFromStores = obj.useStateFromStores(items, f112974);
     const obj2 = useIsStaffOrDeveloperSettingPredicate;
     const staffOrDeveloperSettingPredicate = obj2.useStaffOrDeveloperSettingPredicate();
     let tmp6Result;
     if (null != stateFromStores) {
-      const Stack = tmp(5837).Stack;
+      const Stack = tmp(5808).Stack;
       const obj3 = { label: "" + intl.string(_modDef2292.d11XdP) + " ", value: stateFromStores.id };
-      const DevToolsContentSubLabel = tmp(17248).DevToolsContentSubLabel;
+      const DevToolsContentSubLabel = tmp(17241).DevToolsContentSubLabel;
       intl = tmp(1113).intl;
       const _HermesInternal = HermesInternal;
       const items1 = [React3(DevToolsContentSubLabel, obj3), ];
-      const Stack2 = tmp(5837).Stack;
+      const Stack2 = tmp(5808).Stack;
       const obj4 = { text: intl2.string(intl3.t.tX4xrt), variant: "secondary", onPress: build_overrides_BuildOverrideUtils.clearBuildOverride, grow: true, shrink: true };
-      const Button = tmp(5421).Button;
+      const Button = tmp(5390).Button;
       intl2 = tmp(1113).intl;
       const items2 = [React3(Button, obj4), ];
       let tmp7Result = staffOrDeveloperSettingPredicate;
       if (tmp7Result) {
         const obj5 = { icon: React3(SettingsIcon.SettingsIcon, {}), accessibilityLabel: "Build Overrides", variant: "secondary", onPress: handleBuildOverrideActivePress };
-        const IconButton = tmp(7502).IconButton;
+        const IconButton = tmp(7472).IconButton;
         tmp7Result = tmp7(IconButton, obj5);
       }
       const obj6 = { spacing: 4, children: items1 };
@@ -79,7 +79,7 @@ let obj = {
     let currentBuildOverride;
     const items = [BuildOverrideStore];
     const obj = get_initialized;
-    return null != obj.useStateFromStores(items, f112997);
+    return null != obj.useStateFromStores(items, f112974);
   }
 };
 const createStaticResult = SettingBuilders.createStatic(obj);

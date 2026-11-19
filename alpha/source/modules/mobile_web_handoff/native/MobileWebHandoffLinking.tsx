@@ -1,13 +1,13 @@
-// Module ID: 9496
-// Function ID: 9497
+// Module ID: 9475
+// Function ID: 9476
 // Name: MobileWebHandoffLinking
-// Dependencies: [5, 502, 1072, 6337, 9497, 9499, 1256, 1254, 9500, 1381, 5502, 2]
+// Dependencies: [5, 502, 1072, 6308, 9476, 9478, 1256, 1254, 9479, 1381, 5471, 2]
 
-// Module 9496 (MobileWebHandoffLinking)
+// Module 9475 (MobileWebHandoffLinking)
 import FingerprintUtils from "FingerprintUtils" /* 1254 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6337 */;
-import SimpleLoadingModal from "SimpleLoadingModal" /* 9497 */;
-import MobileWebHandoffUtilsDefault from "MobileWebHandoffUtils" /* 9499 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6308 */;
+import SimpleLoadingModal from "SimpleLoadingModal" /* 9476 */;
+import MobileWebHandoffUtilsDefault from "MobileWebHandoffUtils" /* 9478 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1072 */;
@@ -141,7 +141,7 @@ obj = function _redirectDeveloperPortalWithHandoffToken() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -184,7 +184,7 @@ obj = function _redirectDeveloperPortalWithHandoffToken() {
             const obj5 = closure_131_1(closure_131_2[10]);
             obj5.performURLNavigation(uRL.href);
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp6) {
           c5 = 3;

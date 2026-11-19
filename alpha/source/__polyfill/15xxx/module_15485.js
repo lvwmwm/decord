@@ -1,47 +1,42 @@
 // Module ID: 15485
 // Function ID: 15486
-// Dependencies: [15465, 15486]
+// Dependencies: [15477, 15476, 15484]
 
 // Module 15485
-import _mod15465 from "module_15465" /* 15465 */;
-import _mod15486 from "module_15486" /* 15486 */;
+import _mod15476 from "module_15476" /* 15476 */;
+import _mod15477 from "module_15477" /* 15477 */;
+import _mod15484 from "module_15484" /* 15484 */;
 
-let tmp4;
-let tmp = _mod15465.process && _mod15465.process.versions;
-if (!tmp) {
-  tmp = _mod15465.Deno && _mod15465.Deno.version;
-  _mod15465.Deno && _mod15465.Deno.version;
-}
-let tmp3;
-if (tmp && tmp.v8) {
-  let num3;
-  const parts = str.split(".");
-  if (parts[0] <= 0) {
-    num3 = +parts[0] + parts[1];
-  } else {
-    num3 = 1;
-  }
-  tmp3 = num3;
-  tmp4 = parts;
-}
-let match1 = !tmp3 && _mod15486;
-if (match1) {
-  const str3 = _mod15486;
-  const match = str3.match(/Edge\/(\d+)/);
-  let tmp8 = !match;
-  if (match) {
-    tmp8 = match[1] >= 74;
-  }
-  match1 = tmp8;
-  tmp4 = match;
-}
-if (match1) {
-  const str4 = _mod15486;
-  match1 = str4.match(/Chrome\/(\d+)/);
-  tmp4 = match1;
-}
-if (match1) {
-  tmp3 = +tmp4[1];
-}
 
-export default tmp3;
+export default (arg0, arg1) => {
+  if ("string" === arg1) {
+    const toString = arg0.toString;
+    if (_mod15477(toString)) {
+      const tmpResult = _mod15476;
+      const tmp4 = _mod15484(toString, arg0);
+      if (!tmpResult(tmp4)) {
+        return tmp4;
+      }
+    }
+  }
+  const valueOf = arg0.valueOf;
+  if (_mod15477(valueOf)) {
+    const tmp5Result = _mod15476;
+    const tmp8 = _mod15484(valueOf, arg0);
+    if (!tmp5Result(tmp8)) {
+      return tmp8;
+    }
+  }
+  if ("string" !== arg1) {
+    const toString2 = arg0.toString;
+    if (_mod15477(toString2)) {
+      const tmp5Result2 = _mod15476;
+      const tmp10 = _mod15484(toString2, arg0);
+      if (!tmp5Result2(tmp10)) {
+        return tmp10;
+      }
+    }
+  }
+  const tmp11 = new TypeError("Can't convert object to primitive value");
+  throw tmp11;
+};

@@ -1,21 +1,22 @@
-// Module ID: 9049
-// Function ID: 9050
+// Module ID: 9023
+// Function ID: 9024
 // Name: PromotionsStore
-// Dependencies: [2189, 1231, 9050, 1388, 1389, 9051, 9097, 2161, 9098, 12, 504, 9052, 9053, 9106, 572, 2]
+// Dependencies: [2189, 1231, 9024, 1388, 1389, 9025, 9072, 2161, 9073, 12, 504, 9026, 9027, 9081, 9082, 572, 2]
 
-// Module 9049 (PromotionsStore)
+// Module 9023 (PromotionsStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import MarketingSurfaceTypeUtils from "MarketingSurfaceTypeUtils" /* 9052 */;
-import CampaignDevToolsUtils from "CampaignDevToolsUtils" /* 9098 */;
-import selectActiveMarketingComponentDefault from "selectActiveMarketingComponent" /* 9106 */;
+import MarketingSurfaceTypeUtils from "MarketingSurfaceTypeUtils" /* 9026 */;
+import CampaignDevToolsUtils from "CampaignDevToolsUtils" /* 9073 */;
+import selectActiveMarketingComponentDefault from "selectActiveMarketingComponent" /* 9081 */;
+import filterActiveMarketingComponentsUnprioritizedDefault from "filterActiveMarketingComponentsUnprioritized" /* 9082 */;
 import LocaleStore from "LocaleStore" /* 2189 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import PromotionRecord from "PromotionRecord" /* 9050 */;
+import PromotionRecord from "PromotionRecord" /* 9024 */;
 import UserStore from "UserStore" /* 1388 */;
 import OverridePremiumTypeStore from "OverridePremiumTypeStore" /* 1389 */;
-import MarketingComponentRecord from "MarketingComponentRecord" /* 9051 */;
+import MarketingComponentRecord from "MarketingComponentRecord" /* 9025 */;
 import FunctionUtils from "FunctionUtils" /* 2161 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +24,7 @@ const require = globalThis.__r;
 let closure_14, hasBogoReward;
 
 let tmp;
-const MarketingSurfaceType = tmp(9053);
+const MarketingSurfaceType = tmp(9027);
 function createEmptyPromotionsByType() {
   return { [closure_1_0(closure_1_2[6]).PromotionTypes.THIRD_PARTY]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.BOGO]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.THIRD_PARTY_DIRECT_FULFILLMENT]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.MARKETING_MOMENT]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.THIRD_PARTY_INBOUND]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.THIRD_PARTY_OUTBOUND]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.GIFT_PROMOTION]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING]: {} };
 }
@@ -156,9 +157,14 @@ class PromotionsStore extends PersistedStore {
           isStaffResult = currentUser.isStaff();
         }
         if (true === isStaffResult) {
-          const self = this;
-          const prop = this.campaignOverrideComponents;
-          found = prop.filter((properties) => properties.properties.properties.oneofKind === closure_0);
+          found = closure_18.filter((properties) => properties.properties.properties.oneofKind === closure_0);
+        }
+        if (null == found) {
+          let items1 = map.get(tmp3);
+          if (items1 == null) {
+            items1 = [];
+          }
+          found = items1;
         }
         return found;
       }
@@ -166,14 +172,10 @@ class PromotionsStore extends PersistedStore {
       if (closure_21 != null) {
         oneofKind = closure_21.properties.properties.oneofKind;
       }
+      found = null;
       if (oneofKind === tmp3) {
         items = [closure_21];
         found = items;
-      } else {
-        found = map.get(tmp3);
-        if (found == null) {
-          found = [];
-        }
       }
     } else {
       return [];
@@ -189,45 +191,97 @@ class PromotionsStore extends PersistedStore {
     return marketingComponentByKind;
   }
   getMarketingComponentByKind(arg0) {
-    let closure_0 = arg0;
+    let found;
+    let currentUser2 = arg0;
     if (null != c17) {
-      const tmp = UserStore;
+      let tmp9Result;
       const currentUser = UserStore.getCurrentUser();
       let isStaffResult;
       if (currentUser != null) {
         isStaffResult = currentUser.isStaff();
       }
       if (true === isStaffResult) {
-        const self3 = this;
-        const prop = this.campaignOverrideComponents;
-        let found = prop.find((properties) => properties.properties.properties.oneofKind === closure_0);
-        if (found == null) {
-          found = null;
-        }
-        return found;
+        found = closure_18.filter((properties) => properties.properties.properties.oneofKind === closure_0);
       }
+      if (null != found) {
+        let first = found[0];
+        if (first == null) {
+          first = null;
+        }
+        tmp9Result = first;
+      } else {
+        const tmp9 = selectActiveMarketingComponentDefault;
+        currentUser2 = UserStore.getCurrentUser();
+        const _Date = Date;
+        const self = this;
+        const self2 = this;
+        const date = new Date();
+        let items1 = map.get(arg0);
+        if (items1 == null) {
+          items1 = [];
+        }
+        tmp9Result = tmp9(items1, date, (isIncludedInRollout) => {
+          const isIncludedInRolloutResult = null != closure_0 && isIncludedInRollout.isIncludedInRollout(tmp.id, date);
+          return isIncludedInRolloutResult;
+        });
+      }
+      return tmp9Result;
     }
     let oneofKind;
     if (closure_21 != null) {
       oneofKind = closure_21.properties.properties.oneofKind;
     }
+    found = null;
     if (oneofKind === arg0) {
-      return closure_21;
-    } else {
-      const currentUser2 = UserStore.getCurrentUser();
-      const _Date = Date;
-      const self = this;
-      const self2 = this;
-      const date = new Date();
-      const tmp10 = selectActiveMarketingComponentDefault;
-      let items = map.get(arg0);
-      if (items == null) {
-        items = [];
+      const items = [closure_21];
+      found = items;
+    }
+  }
+  getActiveMarketingComponentsBySurfaceUnprioritized(items) {
+    const tmp = require;
+    const obj = MarketingSurfaceTypeUtils;
+    if (obj.isMarketingSurfaceType(items)) {
+      let found;
+      const tmp3 = MarketingSurfaceType.MarketingSurfaceKindByType[items];
+      let currentUser2 = tmp3;
+      if (null != c17) {
+        const currentUser = UserStore.getCurrentUser();
+        let isStaffResult;
+        if (currentUser != null) {
+          isStaffResult = currentUser.isStaff();
+        }
+        if (true === isStaffResult) {
+          found = closure_18.filter((properties) => properties.properties.properties.oneofKind === closure_0);
+        }
+        if (found == null) {
+          const tmp13 = filterActiveMarketingComponentsUnprioritizedDefault;
+          currentUser2 = UserStore.getCurrentUser();
+          const _Date = Date;
+          const self = this;
+          const self2 = this;
+          const date = new Date();
+          let items1 = map.get(tmp3);
+          if (items1 == null) {
+            items1 = [];
+          }
+          found = tmp13(items1, date, (isIncludedInRollout) => {
+            const isIncludedInRolloutResult = null != closure_0 && isIncludedInRollout.isIncludedInRollout(tmp.id, date);
+            return isIncludedInRolloutResult;
+          });
+        }
+        return found;
       }
-      return tmp10(items, date, (isIncludedInRollout) => {
-        const isIncludedInRolloutResult = null != closure_1 && isIncludedInRollout.isIncludedInRollout(tmp.id, date);
-        return isIncludedInRolloutResult;
-      });
+      let oneofKind;
+      if (closure_21 != null) {
+        oneofKind = closure_21.properties.properties.oneofKind;
+      }
+      found = null;
+      if (oneofKind === tmp3) {
+        items = [closure_21];
+        found = items;
+      }
+    } else {
+      return [];
     }
   }
   hasPromotion(arg0) {

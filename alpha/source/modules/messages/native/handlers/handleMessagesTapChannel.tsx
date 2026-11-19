@@ -1,17 +1,17 @@
-// Module ID: 11949
-// Function ID: 11950
+// Module ID: 11927
+// Function ID: 11928
 // Name: handleMessagesTapChannel
-// Dependencies: [5, 4676, 4690, 4672, 4694, 4755, 1072, 6742, 6424, 7170, 8775, 11950, 6776, 5538, 10383, 5446, 6402, 6437, 2]
+// Dependencies: [5, 4645, 4659, 4641, 4663, 4724, 1072, 6713, 6395, 7140, 8744, 11928, 6748, 5507, 10361, 5415, 6373, 6408, 2]
 // Exports: handleMessagesTapChannel
 
-// Module 11949 (handleMessagesTapChannel)
-import ChannelRecord from "ChannelRecord" /* 4676 */;
-import GuildRecord from "GuildRecord" /* 4690 */;
-import GuildDiscoveryUtilsAll from "GuildDiscoveryUtils" /* 6742 */;
+// Module 11927 (handleMessagesTapChannel)
+import ChannelRecord from "ChannelRecord" /* 4645 */;
+import GuildRecord from "GuildRecord" /* 4659 */;
+import GuildDiscoveryUtilsAll from "GuildDiscoveryUtils" /* 6713 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4672 */;
-import GuildStore from "GuildStore" /* 4694 */;
-import PermissionStore from "PermissionStore" /* 4755 */;
+import ChannelStore from "ChannelStore" /* 4641 */;
+import GuildStore from "GuildStore" /* 4663 */;
+import PermissionStore from "PermissionStore" /* 4724 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -41,7 +41,7 @@ let obj = function _maybeStartLurking() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c7;
@@ -121,7 +121,7 @@ obj = function _handleMessagesTapChannel() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -193,7 +193,7 @@ obj = function _handleMessagesTapChannel() {
                     closure_130_1(closure_130_3[11])(obj6);
                   }
                   c4 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "+60" };
                 }
               }
               if (null != messageId) {
@@ -215,7 +215,7 @@ obj = function _handleMessagesTapChannel() {
                         if (channel.type === closure_130_10.GUILD_STAGE_VOICE) {
                           if (!closure_130_9.can(closure_130_12.CONNECT, channel)) {
                             c4 = 3;
-                            return { value: "HermesInternal", done: null };
+                            return { value: "HermesInternal", done: "+60" };
                           }
                         }
                         if (v3 != null) {
@@ -282,7 +282,7 @@ obj = function _handleMessagesTapChannel() {
               return obj17;
             } else if (value) {
               c4 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             }
           } else if (3 === v3) {
             if (arg0 === 1) {
@@ -321,7 +321,7 @@ obj = function _handleMessagesTapChannel() {
               return obj20;
             } else if (value) {
               c4 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             }
           } else if (arg0 === 1) {
             c4 = 3;
@@ -332,7 +332,7 @@ obj = function _handleMessagesTapChannel() {
             return obj21;
           } else if (value) {
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           } else {
             if (tmp != null) {
               tmp6();

@@ -1,14 +1,14 @@
-// Module ID: 16844
-// Function ID: 16845
+// Module ID: 16837
+// Function ID: 16838
 // Name: EmojiFaceWithSpiralEyesIcon
-// Dependencies: [19, 21, 575, 5509, 16845, 2]
+// Dependencies: [19, 21, 575, 5478, 16838, 2]
 // Exports: EmojiFaceWithSpiralEyesIcon
 
-// Module 16844 (EmojiFaceWithSpiralEyesIcon)
+// Module 16837 (EmojiFaceWithSpiralEyesIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5509 */;
-import AssetRegistry from "AssetRegistry" /* 16845 */;
+import BaseIconImage2 from "BaseIconImage" /* 5478 */;
+import AssetRegistry from "AssetRegistry" /* 16838 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

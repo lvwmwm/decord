@@ -1,14 +1,14 @@
-// Module ID: 8960
-// Function ID: 8961
+// Module ID: 8934
+// Function ID: 8935
 // Name: GameActionCreators
-// Dependencies: [5, 2141, 1072, 1285, 572, 4667, 12, 2]
+// Dependencies: [5, 2141, 1072, 1285, 572, 4636, 12, 2]
 // Exports: fetchGamesWithSupplementalData
 
-// Module 8960 (GameActionCreators)
+// Module 8934 (GameActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
-import Timers from "Timers" /* 4667 */;
+import Timers from "Timers" /* 4636 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GameStore from "GameStore" /* 2141 */;
 import size from "module_2" /* 2 */;
@@ -32,7 +32,7 @@ let obj = function _requestGames() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c3;
@@ -82,7 +82,7 @@ let obj = function _requestGames() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp18) {
         if (0 === c3) {
@@ -159,7 +159,7 @@ let closure_0 = _asyncToGenerator(async (arg0, value) => {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "HermesInternal", done: "+60" };
     }
   } else {
     try {
@@ -189,7 +189,7 @@ let closure_0 = _asyncToGenerator(async (arg0, value) => {
         return obj;
       } else {
         c1 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } catch (tmp9) {
       c1 = 3;

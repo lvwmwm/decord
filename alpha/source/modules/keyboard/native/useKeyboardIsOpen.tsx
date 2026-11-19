@@ -1,10 +1,10 @@
-// Module ID: 7156
-// Function ID: 7157
+// Module ID: 7126
+// Function ID: 7127
 // Name: useKeyboardIsOpen
 // Dependencies: [1498, 1499, 1500, 1628, 2]
 // Exports: default, getKeyboardIsOpen, subscribeToKeyboardIsOpen
 
-// Module 7156 (useKeyboardIsOpen)
+// Module 7126 (useKeyboardIsOpen)
 import AppEntryKeyContext from "AppEntryKeyContext" /* 1499 */;
 import KeyboardUIStoreDefault from "KeyboardUIStore" /* 1500 */;
 import KeyboardTypes from "KeyboardTypes" /* 1628 */;

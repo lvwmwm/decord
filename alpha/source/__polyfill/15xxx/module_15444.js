@@ -1,10 +1,7 @@
 // Module ID: 15444
 // Function ID: 15445
-// Dependencies: [15445, 15446]
+// Dependencies: []
 
 // Module 15444
-const require = globalThis.__r;
 
-
-export const shouldPolyfill = require("module_15445").shouldPolyfill;
-export const supportedValuesOf = require("supportedValuesOf").supportedValuesOf;
+export const units = ["degree", "acre", "hectare", "percent", "bit", "byte", "gigabit", "gigabyte", "kilobit", "kilobyte", "megabit", "megabyte", "petabyte", "terabit", "terabyte", "day", "hour", "millisecond", "minute", "month", "second", "week", "year", "centimeter", "foot", "inch", "kilometer", "meter", "mile-scandinavian", "mile", "millimeter", "yard", "gram", "kilogram", "ounce", "pound", "stone", "celsius", "fahrenheit", "fluid-ounce", "gallon", "liter", "milliliter"];

@@ -1,9 +1,9 @@
-// Module ID: 5690
-// Function ID: 5691
+// Module ID: 5659
+// Function ID: 5660
 // Name: VideoStabilizationExperiment
 // Dependencies: [1453, 2]
 
-// Module 5690 (VideoStabilizationExperiment)
+// Module 5659 (VideoStabilizationExperiment)
 import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1453 */;
 import size from "module_2" /* 2 */;
 

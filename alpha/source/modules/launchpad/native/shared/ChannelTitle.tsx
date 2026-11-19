@@ -1,14 +1,14 @@
-// Module ID: 18815
-// Function ID: 18816
+// Module ID: 18807
+// Function ID: 18808
 // Name: ChannelTitle
-// Dependencies: [19, 6461, 21, 4823, 575, 18811, 5414, 2]
+// Dependencies: [19, 6432, 21, 4792, 575, 18803, 5383, 2]
 
-// Module 18815 (ChannelTitle)
+// Module 18807 (ChannelTitle)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ReadStateConstants from "ReadStateConstants" /* 6461 */;
+import ReadStateConstants from "ReadStateConstants" /* 6432 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const UnreadSetting = ReadStateConstants.UnreadSetting;

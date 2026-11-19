@@ -1,11 +1,11 @@
 // Module ID: 10202
 // Function ID: 10203
 // Name: default_1
-// Dependencies: [10188]
+// Dependencies: [10166]
 // Exports: default
 
 // Module 10202 (default_1)
-import captureStackTrace2 from "captureStackTrace" /* 10188 */;
+import captureStackTrace2 from "captureStackTrace" /* 10166 */;
 
 let hasOwnProperty;
 
@@ -95,155 +95,152 @@ function error() {
 
 export default function default_1() {
   if (typeof error === "function") {
-    const obj2 = { string: { unit: "\u0985\u0995\u09CD\u09B7\u09B0", verb: "\u09A5\u09BE\u0995\u09A4\u09C7 \u09B9\u09AC\u09C7" }, file: { unit: "\u09AC\u09BE\u0987\u099F", verb: "\u09A5\u09BE\u0995\u09A4\u09C7 \u09B9\u09AC\u09C7" }, array: { unit: "\u0986\u0987\u099F\u09C7\u09AE", verb: "\u09A5\u09BE\u0995\u09A4\u09C7 \u09B9\u09AC\u09C7" }, set: { unit: "\u0986\u0987\u099F\u09C7\u09AE", verb: "\u09A5\u09BE\u0995\u09A4\u09C7 \u09B9\u09AC\u09C7" }, map: { unit: "\u098F\u09A8\u09CD\u099F\u09CD\u09B0\u09BF", verb: "\u09A5\u09BE\u0995\u09A4\u09C7 \u09B9\u09AC\u09C7" } };
-    closure_1 = { regex: "\u0987\u09A8\u09AA\u09C1\u099F", email: "\u0987\u09AE\u09C7\u0987\u09B2 \u09A0\u09BF\u0995\u09BE\u09A8\u09BE", url: "URL", emoji: "\u0987\u09AE\u09CB\u099C\u09BF", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "ISO \u09A4\u09BE\u09B0\u09BF\u0996 \u0993 \u09B8\u09AE\u09AF\u09BC", date: "ISO \u09A4\u09BE\u09B0\u09BF\u0996", time: "ISO \u09B8\u09AE\u09AF\u09BC", duration: "ISO \u09B8\u09AE\u09AF\u09BC\u0995\u09BE\u09B2", ipv4: "IPv4 \u09A0\u09BF\u0995\u09BE\u09A8\u09BE", ipv6: "IPv6 \u09A0\u09BF\u0995\u09BE\u09A8\u09BE", mac: "MAC \u09A0\u09BF\u0995\u09BE\u09A8\u09BE", cidrv4: "IPv4 \u09B0\u09C7\u099E\u09CD\u099C", cidrv6: "IPv6 \u09B0\u09C7\u099E\u09CD\u099C", base64: "base64-\u098F\u09A8\u0995\u09CB\u09A1\u09C7\u09A1 \u09B8\u09CD\u099F\u09CD\u09B0\u09BF\u0982", base64url: "base64url-\u098F\u09A8\u0995\u09CB\u09A1\u09C7\u09A1 \u09B8\u09CD\u099F\u09CD\u09B0\u09BF\u0982", json_string: "JSON \u09B8\u09CD\u099F\u09CD\u09B0\u09BF\u0982", e164: "E.164 \u09A8\u09AE\u09CD\u09AC\u09B0", credit_card: "\u0995\u09CD\u09B0\u09C7\u09A1\u09BF\u099F \u0995\u09BE\u09B0\u09CD\u09A1 \u09A8\u09AE\u09CD\u09AC\u09B0", currency_code: "\u09AE\u09C1\u09A6\u09CD\u09B0\u09BE \u0995\u09CB\u09A1", iban: "IBAN", jwt: "JWT", template_literal: "\u0987\u09A8\u09AA\u09C1\u099F" };
-    let closure_2 = { nan: "NaN" };
-    return {
+    let obj = {
       localeError: (code) => {
           switch (code.code) {
             case "invalid_type":
             {
+              let combined;
               let expected = closure_2[code.expected];
-              const tmp45 = closure_2;
               if (expected == null) {
                 expected = code.expected;
               }
               const parsedTypeResult = captureStackTrace.parsedType(code.input);
-              const _HermesInternal17 = HermesInternal;
-              const tmp49 = tmp45[parsedTypeResult] ?? parsedTypeResult;
-              return "\u0985\u09AC\u09C8\u09A7 \u0987\u09A8\u09AA\u09C1\u099F: \u09AA\u09CD\u09B0\u09A4\u09CD\u09AF\u09BE\u09B6\u09BF\u09A4 " + expected + ", \u09AA\u09CD\u09B0\u09BE\u09AA\u09CD\u09A4 " + tmp49;
-            }
-            case "invalid_value":
-            {
-              let combined;
-              if (1 === code.values.length) {
-                const _HermesInternal16 = HermesInternal;
-                combined = "\u0985\u09AC\u09C8\u09A7 \u0987\u09A8\u09AA\u09C1\u099F: \u09AA\u09CD\u09B0\u09A4\u09CD\u09AF\u09BE\u09B6\u09BF\u09A4 " + captureStackTrace.stringifyPrimitive(code.values[0]);
+              const obj = /^[A-Z]/;
+              if (obj.test(code.expected)) {
+                const _HermesInternal17 = HermesInternal;
+                combined = "Input non valido: atteso instanceof " + code.expected + ", ricevuto " + tmp50;
               } else {
-                const _HermesInternal15 = HermesInternal;
-                combined = "\u0985\u09AC\u09C8\u09A7 \u0985\u09AA\u09B6\u09A8: " + captureStackTrace.joinValues(code.values, " | ") + " \u098F\u09B0 \u09AE\u09A7\u09CD\u09AF\u09C7 \u098F\u0995\u099F\u09BF \u09AA\u09CD\u09B0\u09A4\u09CD\u09AF\u09BE\u09B6\u09BF\u09A4";
+                const _HermesInternal16 = HermesInternal;
+                combined = "Input non valido: atteso " + expected + ", ricevuto " + tmp50;
               }
               return combined;
             }
-            case "too_big":
+            case "invalid_value":
             {
               let combined1;
-              let str35 = "<";
-              if (code.inclusive) {
-                str35 = "<=";
-              }
-              let str36 = code.origin;
-              if (obj2[code.origin] ?? null) {
-                if (str36 == null) {
-                  str36 = "\u09AE\u09BE\u09A8";
-                }
-                const str42 = code.maximum;
-                const _HermesInternal14 = HermesInternal;
-                const str1 = str42.toString();
-                const str43 = (obj2[code.origin] ?? null).unit ?? "\u098F\u09B2\u09BF\u09AE\u09C7\u09A8\u09CD\u099F";
-                combined1 = "\u0985\u09A8\u09C7\u0995 \u09AC\u09A1\u09BC: " + str36 + " " + str35 + str1 + " " + str43 + " \u09B9\u09A4\u09C7 \u09B9\u09AC\u09C7";
+              if (1 === code.values.length) {
+                const _HermesInternal15 = HermesInternal;
+                combined1 = "Input non valido: atteso " + captureStackTrace.stringifyPrimitive(code.values[0]);
               } else {
-                let str37 = str36;
-                if (str36 == null) {
-                  str37 = "\u09AE\u09BE\u09A8";
-                }
-                const _HermesInternal13 = HermesInternal;
-                const str38 = code.maximum;
-                combined1 = "\u0985\u09A8\u09C7\u0995 \u09AC\u09A1\u09BC: " + str37 + " " + str35 + str38.toString() + " \u09B9\u09A4\u09C7 \u09B9\u09AC\u09C7";
+                const _HermesInternal14 = HermesInternal;
+                combined1 = "Opzione non valida: atteso uno tra " + captureStackTrace.joinValues(code.values, "|");
               }
               return combined1;
             }
-            case "too_small":
+            case "too_big":
             {
               let combined2;
-              let minimum;
-              let origin;
-              let str26 = ">";
+              let str27 = "<";
               if (code.inclusive) {
-                str26 = ">=";
+                str27 = "<=";
               }
-              ({ origin, minimum } = code);
-              const str58 = minimum.toString();
+              let str28 = code.origin;
               if (obj2[code.origin] ?? null) {
-                const _HermesInternal12 = HermesInternal;
-                combined2 = "\u0985\u09A8\u09C7\u0995 \u099B\u09CB\u099F: " + origin + " " + str26 + str58 + " " + tmp16.unit + " \u09B9\u09A4\u09C7 \u09B9\u09AC\u09C7";
+                if (str28 == null) {
+                  str28 = "valore";
+                }
+                const str33 = code.maximum;
+                const _HermesInternal13 = HermesInternal;
+                const str1 = str33.toString();
+                const str34 = (obj2[code.origin] ?? null).unit ?? "elementi";
+                combined2 = "Troppo grande: " + str28 + " deve avere " + str27 + str1 + " " + str34;
               } else {
-                const _HermesInternal11 = HermesInternal;
-                combined2 = "\u0985\u09A8\u09C7\u0995 \u099B\u09CB\u099F: " + origin + " " + str26 + str58 + " \u09B9\u09A4\u09C7 \u09B9\u09AC\u09C7";
+                let str29 = str28;
+                if (str28 == null) {
+                  str29 = "valore";
+                }
+                const _HermesInternal12 = HermesInternal;
+                const str30 = code.maximum;
+                combined2 = "Troppo grande: " + str29 + " deve essere " + str27 + str30.toString();
               }
               return combined2;
             }
-            case "invalid_format":
+            case "too_small":
             {
               let combined3;
-              if ("starts_with" === code.format) {
-                const _HermesInternal10 = HermesInternal;
-                combined3 = "\u0985\u09AC\u09C8\u09A7 \u09B8\u09CD\u099F\u09CD\u09B0\u09BF\u0982: \"" + code.prefix + "\" \u09A6\u09BF\u09AF\u09BC\u09C7 \u09B6\u09C1\u09B0\u09C1 \u09B9\u09A4\u09C7 \u09B9\u09AC\u09C7";
-              } else if ("ends_with" === code.format) {
-                const _HermesInternal9 = HermesInternal;
-                combined3 = "\u0985\u09AC\u09C8\u09A7 \u09B8\u09CD\u099F\u09CD\u09B0\u09BF\u0982: \"" + code.suffix + "\" \u09A6\u09BF\u09AF\u09BC\u09C7 \u09B6\u09C7\u09B7 \u09B9\u09A4\u09C7 \u09B9\u09AC\u09C7";
-              } else if ("includes" === code.format) {
-                const _HermesInternal8 = HermesInternal;
-                combined3 = "\u0985\u09AC\u09C8\u09A7 \u09B8\u09CD\u099F\u09CD\u09B0\u09BF\u0982: \"" + code.includes + "\" \u0985\u09A8\u09CD\u09A4\u09B0\u09CD\u09AD\u09C1\u0995\u09CD\u09A4 \u09A5\u09BE\u0995\u09A4\u09C7 \u09B9\u09AC\u09C7";
-              } else if ("regex" === code.format) {
-                const _HermesInternal7 = HermesInternal;
-                combined3 = "\u0985\u09AC\u09C8\u09A7 \u09B8\u09CD\u099F\u09CD\u09B0\u09BF\u0982: " + code.pattern + " \u09AA\u09CD\u09AF\u09BE\u099F\u09BE\u09B0\u09CD\u09A8 \u09AE\u09BF\u09B2\u09A4\u09C7 \u09B9\u09AC\u09C7";
+              let minimum;
+              let origin;
+              let str21 = ">";
+              if (code.inclusive) {
+                str21 = ">=";
+              }
+              ({ origin, minimum } = code);
+              const str48 = minimum.toString();
+              if (obj2[code.origin] ?? null) {
+                const _HermesInternal11 = HermesInternal;
+                combined3 = "Troppo piccolo: " + origin + " deve avere " + str21 + str48 + " " + tmp17.unit;
               } else {
-                const format = closure_1[code.format] ?? code.format;
-                const _HermesInternal6 = HermesInternal;
-                combined3 = "\u0985\u09AC\u09C8\u09A7 " + format;
+                const _HermesInternal10 = HermesInternal;
+                combined3 = "Troppo piccolo: " + origin + " deve essere " + str21 + str48;
               }
               return combined3;
             }
+            case "invalid_format":
+            {
+              let combined4;
+              if ("starts_with" === code.format) {
+                const _HermesInternal9 = HermesInternal;
+                combined4 = "Stringa non valida: deve iniziare con \"" + code.prefix + "\"";
+              } else if ("ends_with" === code.format) {
+                const _HermesInternal8 = HermesInternal;
+                combined4 = "Stringa non valida: deve terminare con \"" + code.suffix + "\"";
+              } else if ("includes" === code.format) {
+                const _HermesInternal7 = HermesInternal;
+                combined4 = "Stringa non valida: deve includere \"" + code.includes + "\"";
+              } else if ("regex" === code.format) {
+                const _HermesInternal6 = HermesInternal;
+                combined4 = "Stringa non valida: deve corrispondere al pattern " + code.pattern;
+              } else {
+                const format = closure_1[code.format] ?? code.format;
+                const _HermesInternal5 = HermesInternal;
+                combined4 = "Input non valido: " + format;
+              }
+              return combined4;
+            }
             case "not_multiple_of":
             {
-              const _HermesInternal5 = HermesInternal;
-              return "\u0985\u09AC\u09C8\u09A7 \u09A8\u09AE\u09CD\u09AC\u09B0: " + code.divisor + " \u098F\u09B0 \u0997\u09C1\u09A3\u09BF\u09A4\u0995 \u09B9\u09A4\u09C7 \u09B9\u09AC\u09C7";
+              const _HermesInternal4 = HermesInternal;
+              return "Numero non valido: deve essere un multiplo di " + code.divisor;
             }
             case "unrecognized_keys":
             {
-              let str9 = "";
+              let str4 = "e";
               if (code.keys.length > 1) {
-                str9 = "\u0997\u09C1\u09B2\u09CB";
+                str4 = "i";
               }
-              const _HermesInternal4 = HermesInternal;
-              return "\u0985\u099A\u09C7\u09A8\u09BE \u0995\u09C0" + str9 + ": " + captureStackTrace.joinValues(code.keys, ", ");
+              let str5 = "a";
+              if (code.keys.length > 1) {
+                str5 = "e";
+              }
+              const _HermesInternal3 = HermesInternal;
+              return "Chiav" + str4 + " non riconosciut" + str5 + ": " + captureStackTrace.joinValues(code.keys, ", ");
             }
             case "invalid_key":
             {
-              const _HermesInternal3 = HermesInternal;
-              return "" + code.origin + " \u098F \u0985\u09AC\u09C8\u09A7 \u0995\u09C0";
+              const _HermesInternal2 = HermesInternal;
+              return "Chiave non valida in " + code.origin;
             }
             case "invalid_union":
             {
-              let str4 = "\u0985\u09AC\u09C8\u09A7 \u0987\u09A8\u09AA\u09C1\u099F";
-              if (code.options) {
-                const _Array = Array;
-                str4 = "\u0985\u09AC\u09C8\u09A7 \u0987\u09A8\u09AA\u09C1\u099F";
-                if (Array.isArray(code.options)) {
-                  str4 = "\u0985\u09AC\u09C8\u09A7 \u0987\u09A8\u09AA\u09C1\u099F";
-                  if (code.options.length > 0) {
-                    const options = code.options;
-                    const mapped = options.map((item) => "'" + item + "'");
-                    const _HermesInternal2 = HermesInternal;
-                    str4 = "\u0985\u09AC\u09C8\u09A7 \u09A1\u09BF\u09B8\u0995\u09CD\u09B0\u09BF\u09AE\u09BF\u09A8\u09C7\u099F\u09B0 \u09AE\u09BE\u09A8\u0964 \u09AA\u09CD\u09B0\u09A4\u09CD\u09AF\u09BE\u09B6\u09BF\u09A4 " + mapped.join(" | ");
-                  }
-                }
-              }
-              return str4;
+              return "Input non valido";
             }
             case "invalid_element":
             {
               const _HermesInternal = HermesInternal;
-              return "" + code.origin + " \u098F \u0985\u09AC\u09C8\u09A7 \u09AE\u09BE\u09A8";
+              return "Valore non valido in " + code.origin;
             }
             default:
             {
-              return "\u0985\u09AC\u09C8\u09A7 \u0987\u09A8\u09AA\u09C1\u099F";
+              return "Input non valido";
             }
           }
         }
     };
+    const obj2 = { string: { unit: "caratteri", verb: "avere" }, file: { unit: "byte", verb: "avere" }, array: { unit: "elementi", verb: "avere" }, set: { unit: "elementi", verb: "avere" }, map: { unit: "elementi", verb: "avere" } };
+    closure_1 = { regex: "input", email: "indirizzo email", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "data e ora ISO", date: "data ISO", time: "ora ISO", duration: "durata ISO", ipv4: "indirizzo IPv4", ipv6: "indirizzo IPv6", mac: "indirizzo MAC", cidrv4: "intervallo IPv4", cidrv6: "intervallo IPv6", base64: "stringa codificata in base64", base64url: "URL codificata in base64", json_string: "stringa JSON", e164: "numero E.164", credit_card: "numero di carta di credito", currency_code: "codice valuta", iban: "IBAN", jwt: "JWT", template_literal: "input" };
+    let closure_2 = { nan: "NaN", number: "numero", array: "vettore" };
+    return obj;
   } else {
     throw new TypeError("Trying to call a non-function");
   }

@@ -1,33 +1,33 @@
-// Module ID: 11039
-// Function ID: 11040
+// Module ID: 11017
+// Function ID: 11018
 // Name: CallTile
-// Dependencies: [19, 17, 6308, 1388, 10596, 5473, 21, 4823, 4820, 575, 7431, 1630, 504, 5559, 7978, 10679, 11007, 10700, 10733, 11040, 11045, 11046, 6993, 11047, 11048, 1187, 10604, 1655, 5033, 11049, 2]
+// Dependencies: [19, 17, 6279, 1388, 10574, 5442, 21, 4792, 4789, 575, 7401, 1630, 504, 5528, 7948, 10657, 10985, 10678, 10711, 11018, 11023, 11024, 6963, 11025, 11026, 1187, 10582, 1655, 5002, 11027, 2]
 
-// Module 11039 (CallTile)
+// Module 11017 (CallTile)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5033 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5559 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6993 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7978 */;
-import RevealProvider from "RevealProvider" /* 10604 */;
-import TouchableStreamPreviewDefault from "TouchableStreamPreview" /* 11040 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11045 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 11046 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 11047 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 11048 */;
-import ParticipantTitleDefault from "ParticipantTitle" /* 11049 */;
+import timing_timing from "timing/timing" /* 5002 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5528 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6963 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7948 */;
+import RevealProvider from "RevealProvider" /* 10582 */;
+import TouchableStreamPreviewDefault from "TouchableStreamPreview" /* 11018 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11023 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 11024 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 11025 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 11026 */;
+import ParticipantTitleDefault from "ParticipantTitle" /* 11027 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6308 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6279 */;
 import UserStore from "UserStore" /* 1388 */;
-import ChannelCallStore from "ChannelCallStore" /* 10596 */;
-import CallConstants from "CallConstants" /* 5473 */;
+import ChannelCallStore from "ChannelCallStore" /* 10574 */;
+import CallConstants from "CallConstants" /* 5442 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
-import ColorUtils_mod from "ColorUtils" /* 4820 */;
+import createStyles_mod from "createStyles" /* 4792 */;
+import ColorUtils_mod from "ColorUtils" /* 4789 */;
 import size from "module_2" /* 2 */;
 
 let obj1;
@@ -59,7 +59,7 @@ class StreamPreviewTile {
     obj2 = {
       guildId: participant.stream.guildId,
       userId: participant.user.id,
-      style: { aspectRatio: "description", borderRadius: false },
+      style: { aspectRatio: "ip", borderRadius: "pen_fountain" },
       disableTransition: true,
       onPress() {
         return closure_1_8();

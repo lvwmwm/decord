@@ -1,14 +1,14 @@
-// Module ID: 9820
-// Function ID: 9821
+// Module ID: 9799
+// Function ID: 9800
 // Name: ItchNeutralIcon
-// Dependencies: [19, 21, 575, 5509, 9821, 2]
+// Dependencies: [19, 21, 575, 5478, 9800, 2]
 // Exports: ItchNeutralIcon
 
-// Module 9820 (ItchNeutralIcon)
+// Module 9799 (ItchNeutralIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5509 */;
-import AssetRegistry from "AssetRegistry" /* 9821 */;
+import BaseIconImage2 from "BaseIconImage" /* 5478 */;
+import AssetRegistry from "AssetRegistry" /* 9800 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

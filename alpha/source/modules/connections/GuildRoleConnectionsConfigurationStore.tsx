@@ -1,12 +1,12 @@
-// Module ID: 19880
-// Function ID: 19881
+// Module ID: 19891
+// Function ID: 19892
 // Name: GuildRoleConnectionsConfigurationStore
-// Dependencies: [4694, 504, 572, 2]
+// Dependencies: [4663, 504, 572, 2]
 
-// Module 19880 (GuildRoleConnectionsConfigurationStore)
+// Module 19891 (GuildRoleConnectionsConfigurationStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import GuildStore from "GuildStore" /* 4694 */;
+import GuildStore from "GuildStore" /* 4663 */;
 import size from "module_2" /* 2 */;
 
 const map = new Map();

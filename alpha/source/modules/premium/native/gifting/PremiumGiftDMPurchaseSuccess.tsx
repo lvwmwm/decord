@@ -1,20 +1,20 @@
-// Module ID: 13877
-// Function ID: 13878
+// Module ID: 13859
+// Function ID: 13860
 // Name: PremiumGiftDMPurchaseSuccess
-// Dependencies: [19, 17, 21, 4823, 575, 9371, 1502, 9369, 5421, 1113, 2787, 9517, 5414, 2]
+// Dependencies: [19, 17, 21, 4792, 575, 9348, 1502, 9346, 5390, 1113, 2787, 9496, 5383, 2]
 // Exports: PremiumGiftDMSuccessActions, default
 
-// Module 13877 (PremiumGiftDMPurchaseSuccess)
+// Module 13859 (PremiumGiftDMPurchaseSuccess)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5414 */;
-import PremiumGiftModal from "PremiumGiftModal" /* 9369 */;
-import NativeGiftContext from "NativeGiftContext" /* 9371 */;
-import PremiumGiftBackgroundAnimationDefault from "PremiumGiftBackgroundAnimation" /* 9517 */;
+import Text_Text from "Text/Text" /* 5383 */;
+import PremiumGiftModal from "PremiumGiftModal" /* 9346 */;
+import NativeGiftContext from "NativeGiftContext" /* 9348 */;
+import PremiumGiftBackgroundAnimationDefault from "PremiumGiftBackgroundAnimation" /* 9496 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let navigation;

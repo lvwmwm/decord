@@ -1,18 +1,18 @@
-// Module ID: 10025
-// Function ID: 10026
+// Module ID: 10003
+// Function ID: 10004
 // Name: Pile
-// Dependencies: [19, 17, 21, 4823, 1255, 12, 8929, 10026, 2]
+// Dependencies: [19, 17, 21, 4792, 1255, 12, 8903, 10004, 2]
 // Exports: Pile
 
-// Module 10025 (Pile)
+// Module 10003 (Pile)
 import _mod12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import GlobalUtils from "GlobalUtils" /* 1255 */;
-import ClipView from "ClipView" /* 8929 */;
-import PileOverflow from "PileOverflow" /* 10026 */;
+import ClipView from "ClipView" /* 8903 */;
+import PileOverflow from "PileOverflow" /* 10004 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size_mod from "module_2" /* 2 */;
 
 const ClipViewDefault = ClipView;

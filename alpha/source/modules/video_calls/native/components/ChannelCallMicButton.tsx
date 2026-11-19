@@ -1,16 +1,16 @@
-// Module ID: 10968
-// Function ID: 10969
+// Module ID: 10946
+// Function ID: 10947
 // Name: ChannelCallMicButton
-// Dependencies: [19, 5565, 21, 10945, 504, 10969, 10970, 10618, 1113, 10973, 10974, 575, 2]
+// Dependencies: [19, 5534, 21, 10923, 504, 10947, 10948, 10596, 1113, 10951, 10952, 575, 2]
 // Exports: ChannelCallMicButton
 
-// Module 10968 (ChannelCallMicButton)
+// Module 10946 (ChannelCallMicButton)
 import Fragment from "Fragment" /* 21 */;
-import CallBarActionAll from "CallBarAction" /* 10618 */;
-import useMuteStatesDefault from "useMuteStates" /* 10945 */;
-import VoicePanelRiveMicButton from "VoicePanelRiveMicButton" /* 10970 */;
+import CallBarActionAll from "CallBarAction" /* 10596 */;
+import useMuteStatesDefault from "useMuteStates" /* 10923 */;
+import VoicePanelRiveMicButton from "VoicePanelRiveMicButton" /* 10948 */;
 import react from "react" /* 19 */;
-import GameConsoleStore from "GameConsoleStore" /* 5565 */;
+import GameConsoleStore from "GameConsoleStore" /* 5534 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -32,13 +32,13 @@ export function ChannelCallMicButton(disableTint) {
   const items = [GameConsoleStore];
   const obj = mute(504);
   const stateFromStores = obj.useStateFromStores(items, () => null != awaitingRemoteSessionInfo.getAwaitingRemoteSessionInfo());
-  const obj2 = mute(10969);
+  const obj2 = mute(10947);
   const muteHandler = obj2.createMuteHandler(tmp3, stateFromStores);
   mute = muteHandler.mute;
   const items1 = [mute];
   const onPress = muteHandler.onPress;
   const memo = react.useMemo(() => jsx(VoicePanelRiveMicButton.VoicePanelRiveMicButton, { muted: mute }), items1);
-  const obj3 = { appearsDisabled: stateFromStores, accessibilityLabel: intl.string(mute(1113).t.B3zz0G), onPress, source: importDefault(mute ? 10973 : 10974), isActive: flag, isSmallSize, lottieComponent: memo, tintColor: RED_400 };
+  const obj3 = { appearsDisabled: stateFromStores, accessibilityLabel: intl.string(mute(1113).t.B3zz0G), onPress, source: importDefault(mute ? 10951 : 10952), isActive: flag, isSmallSize, lottieComponent: memo, tintColor: RED_400 };
   const ToggledActionButton = CallBarActionAll.ToggledActionButton;
   intl = mute(1113).intl;
   const tmp7 = jsx;

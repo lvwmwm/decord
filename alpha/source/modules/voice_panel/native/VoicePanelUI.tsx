@@ -1,31 +1,31 @@
-// Module ID: 19296
-// Function ID: 19297
+// Module ID: 19292
+// Function ID: 19293
 // Name: VoicePanelUI
-// Dependencies: [32, 19, 17, 6528, 9918, 6403, 11710, 11708, 5473, 11711, 21, 3, 5424, 4823, 575, 1655, 1627, 11709, 1630, 5083, 10616, 1708, 11714, 19297, 19298, 5039, 11735, 19226, 5387, 11715, 10811, 12829, 11719, 19282, 9992, 5675, 19299, 6273, 19301, 19302, 7431, 7450, 1263, 19303, 5401, 19304, 19326, 19360, 19364, 19367, 19368, 10583, 19369, 19371, 19381, 19389, 2]
+// Dependencies: [32, 19, 17, 6499, 9897, 6374, 11688, 11686, 5442, 11689, 21, 3, 5393, 4792, 575, 1655, 1627, 11687, 1630, 5052, 10594, 1708, 11692, 19293, 19294, 5008, 11713, 19218, 5356, 11693, 10789, 12811, 11697, 19278, 9970, 5644, 19295, 6245, 19297, 19298, 7401, 7420, 1263, 19299, 5370, 19300, 19322, 19356, 19360, 19363, 19364, 10561, 19365, 19367, 19377, 19385, 2]
 
-// Module 19296 (VoicePanelUI)
+// Module 19292 (VoicePanelUI)
 import LoggerDefault from "Logger" /* 3 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import spring_spring from "spring/spring" /* 5424 */;
-import CallConstants from "CallConstants" /* 5473 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7431 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7450 */;
-import useGlobalStatusIndicatorState from "useGlobalStatusIndicatorState" /* 10811 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11708 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11709 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 11711 */;
-import useWindowDimensionsSharedValueDefault from "useWindowDimensionsSharedValue" /* 12829 */;
+import spring_spring from "spring/spring" /* 5393 */;
+import CallConstants from "CallConstants" /* 5442 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7401 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7420 */;
+import useGlobalStatusIndicatorState from "useGlobalStatusIndicatorState" /* 10789 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11686 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11687 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 11689 */;
+import useWindowDimensionsSharedValueDefault from "useWindowDimensionsSharedValue" /* 12811 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6528 */;
-import AppFreezeStore from "AppFreezeStore" /* 9918 */;
-import VoicePanelStore from "VoicePanelStore" /* 6403 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11710 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6499 */;
+import AppFreezeStore from "AppFreezeStore" /* 9897 */;
+import VoicePanelStore from "VoicePanelStore" /* 6374 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11688 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1627 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -65,28 +65,28 @@ let tmp8;
 let tmp9;
 let unpackModuleId;
 const _mod1708 = tmp3(1708);
-const ExternalPipDefault = tmp(5675);
-const ReleaseChannelUtils = tmp3(6273);
-const roundToNearestPixelDefault = tmp(9992);
-const closeVoicePanelsDefault = tmp2(10583);
-const cheapWorkletShallowEqual = tmp3(10616);
-const updateSharedValueIfChangedDefault = tmp(11714);
-const calculateVoicePanelHeaderSpecsDefault = tmp2(11715);
-const VoicePanelPIPStateContext = tmp3(11719);
-const PanelSizeUtils = tmp3(19282);
-const useControlsLockDefault = tmp2(19297);
-const VoicePanelDockSheet = tmp3(19299);
-const VoicePanelDockSheetLayersDefault = tmp(19301);
-const voicePanelLayoutTransitionDefault = tmp(19302);
-const useControlsHoverGestureDefault = tmp2(19303);
-const VoicePanelHeaderDefault = tmp2(19304);
-const VoicePanelCardViewDefault = tmp2(19326);
-const VoicePanelPreJoinContentDefault = tmp2(19360);
-const VoicePanelVoiceChannelAppDefault = tmp2(19364);
-const VoicePanelSystemUIManagerDefault = tmp2(19367);
-const VoicePanelAccessibilityViewDefault = tmp2(19368);
-const VoicePanelDismissableContentDefault = tmp2(19369);
-const VoicePanelControlsDefault = tmp2(19389);
+const ExternalPipDefault = tmp(5644);
+const ReleaseChannelUtils = tmp3(6245);
+const roundToNearestPixelDefault = tmp(9970);
+const closeVoicePanelsDefault = tmp2(10561);
+const cheapWorkletShallowEqual = tmp3(10594);
+const updateSharedValueIfChangedDefault = tmp(11692);
+const calculateVoicePanelHeaderSpecsDefault = tmp2(11693);
+const VoicePanelPIPStateContext = tmp3(11697);
+const PanelSizeUtils = tmp3(19278);
+const useControlsLockDefault = tmp2(19293);
+const VoicePanelDockSheet = tmp3(19295);
+const VoicePanelDockSheetLayersDefault = tmp(19297);
+const voicePanelLayoutTransitionDefault = tmp(19298);
+const useControlsHoverGestureDefault = tmp2(19299);
+const VoicePanelHeaderDefault = tmp2(19300);
+const VoicePanelCardViewDefault = tmp2(19322);
+const VoicePanelPreJoinContentDefault = tmp2(19356);
+const VoicePanelVoiceChannelAppDefault = tmp2(19360);
+const VoicePanelSystemUIManagerDefault = tmp2(19363);
+const VoicePanelAccessibilityViewDefault = tmp2(19364);
+const VoicePanelDismissableContentDefault = tmp2(19365);
+const VoicePanelControlsDefault = tmp2(19385);
 function NOOP() {
 
 }
@@ -706,10 +706,10 @@ function AnimatedWrapper(arg0) {
     }
     const items21 = [StyleSheet.absoluteFill, wrapperSurfaceLayerStyles];
     tmp121[0] = items21;
-    items22 = [authStore4(module_1655.View, tmp121), children];
+    items22 = [closure_18(module_1655.View, tmp121), children];
     tmp119Result = tmp119(View2, obj6);
   }
-  return authStore4(View, obj4);
+  return closure_18(View, obj4);
 }
 const StyleSheet = react_native.StyleSheet;
 ({ Pressable: metroRequire, ScrollView } = react_native);
@@ -873,11 +873,11 @@ let closure_67 = react.memo(function DrawerShade(arg0) {
   VoicePanelUITsx37.__workletHash = 10971630675340;
   VoicePanelUITsx37.__initData = tmp5;
   const animatedStyle = useAnimatedStyle(VoicePanelUITsx37);
-  let obj = { style: items2, importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, children: authStore4(metroRequire, obj2) };
+  let obj = { style: items2, importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, children: closure_18(metroRequire, obj2) };
   items2 = [StyleSheet.absoluteFill, tmp.shade, animatedStyle];
   obj2 = { style: tmp.shadePressable, onPress };
   const View = module_1655.View;
-  return authStore4(View, obj);
+  return closure_18(View, obj);
 });
 const memoResult = react.memo(function VoicePanelUI() {
   let GestureDetector2;
@@ -1092,7 +1092,7 @@ const memoResult = react.memo(function VoicePanelUI() {
   VoicePanelUITsx3.__initData = tmp25;
   let items5 = [closure_31, , , , , , ];
   const useAnimatedReaction = tmp24.useAnimatedReaction;
-  items5[1] = tmp14(10616).cheapWorkletShallowEqual;
+  items5[1] = tmp14(10594).cheapWorkletShallowEqual;
   const tmp29 = VoicePanelModes;
   items5[2] = VoicePanelModes;
   items5[3] = tmp14(1708).scheduleOnRN;
@@ -2203,7 +2203,7 @@ const memoResult = react.memo(function VoicePanelUI() {
   VoicePanelUITsx22.__workletHash = 13562682085354;
   VoicePanelUITsx22.__initData = tmp80;
   const animatedReaction1 = tmp14Result9.useAnimatedReaction(VoicePanelUITsx21, VoicePanelUITsx22);
-  const tmp14Result10 = tmp14(5387);
+  const tmp14Result10 = tmp14(5356);
   const token = tmp14Result10.useToken(nativeDefault.modules.mobile.VOICE_PANEL_GUTTER);
   const items29 = [closure_50, mode, tmp29, focused, sharedValue1, , , ];
   const useAnimatedProps = tmp14(1655).useAnimatedProps;
@@ -2305,17 +2305,17 @@ const memoResult = react.memo(function VoicePanelUI() {
   const obj10 = { children: items34 };
   const tmp109 = useControlsHoverGestureDefault();
   const obj11 = { zIndex: 2, children: closure_18(tmp2Result, obj12) };
-  const LayerScope = tmp14(5401).LayerScope;
+  const LayerScope = tmp14(5370).LayerScope;
   obj12 = { wrapperOffset, gestureState: sharedValue4, layout: voicePanelLayoutTransitionDefault };
   tmp2Result = VoicePanelHeaderDefault;
   items34 = [closure_18(LayerScope, obj11), , ];
   const obj13 = { gesture: memo1, children: closure_18(View, obj14) };
-  const GestureDetector = tmp14(5083).GestureDetector;
+  const GestureDetector = tmp14(5052).GestureDetector;
   obj14 = { style: StyleSheet.absoluteFill, layout: voicePanelLayoutTransitionDefault, collapsable: false, children: closure_18(GestureDetector2, obj15) };
   View = module_1655.View;
   obj15 = { gesture: memo, children: closure_19(closure_28, obj16) };
   obj16 = { layout: scrollViewLayoutTransition, ref: animatedRef, onScroll: animatedScrollHandler, onMomentumScrollEnd: NOOP, animatedProps, style: tmp.scrollView, onContentSizeChange: callback4, contentContainerStyle: tmp.scrollViewContent, scrollEventThrottle: 8.333333333333334, children: items35 };
-  GestureDetector2 = tmp14(5083).GestureDetector;
+  GestureDetector2 = tmp14(5052).GestureDetector;
   items35 = [closure_18(VoicePanelCardViewDefault, { viewableChunks: sharedValue3 }), closure_18(VoicePanelPreJoinContentDefault, {})];
   items34[1] = closure_18(GestureDetector, obj13);
   items34[2] = closure_18(VoicePanelVoiceChannelAppDefault, {});
@@ -2324,14 +2324,14 @@ const memoResult = react.memo(function VoicePanelUI() {
   let tmp111Result2 = null;
   if (first) {
     const obj17 = { value: analyticsLocations, children: tmp110(LayerScope2, obj23) };
-    const AnalyticsLocationProvider = tmp14(7431).AnalyticsLocationProvider;
-    LayerScope2 = tmp14(5401).LayerScope;
+    const AnalyticsLocationProvider = tmp14(7401).AnalyticsLocationProvider;
+    LayerScope2 = tmp14(5370).LayerScope;
     const items36 = [tmp111(VoicePanelSystemUIManagerDefault, {}), , ];
     const tmp116 = closure_67;
     const obj18 = { opacity: derivedValue, onPress: dismissPanel };
     items36[1] = tmp111(closure_67, obj18);
     const obj19 = { gesture: tmp109, children: tmp110(tmp2Result2, obj20) };
-    const GestureDetector3 = tmp14(5083).GestureDetector;
+    const GestureDetector3 = tmp14(5052).GestureDetector;
     const tmp118 = globalThis;
     let _HermesInternal = HermesInternal;
     let str = "voice-panel-ui-";
@@ -2343,11 +2343,11 @@ const memoResult = react.memo(function VoicePanelUI() {
     const tmp119 = AnimatedWrapper;
     if (isDockEnabled) {
       const obj22 = { children: tmp113 };
-      tmp111Result = tmp111(tmp14(19299).VoicePanelContentWithDock, obj22);
+      tmp111Result = tmp111(tmp14(19295).VoicePanelContentWithDock, obj22);
     }
     items37[1] = tmp111(tmp119, obj21);
     obj23 = { children: items36 };
-    items37[2] = tmp111(tmp2(isDockEnabled ? 19371 : 19381), {});
+    items37[2] = tmp111(tmp2(isDockEnabled ? 19367 : 19377), {});
     const obj24 = { gestureState: sharedValue4 };
     items37[3] = tmp111(VoicePanelControlsDefault, obj24);
     items36[2] = tmp111(GestureDetector3, obj19);

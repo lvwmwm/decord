@@ -1,24 +1,24 @@
-// Module ID: 7129
-// Function ID: 7130
+// Module ID: 7099
+// Function ID: 7100
 // Name: DomainVerifyModal
-// Dependencies: [32, 19, 17, 1072, 21, 4823, 575, 1502, 1285, 6928, 5414, 1113, 7130, 7163, 5421, 6337, 7006, 7003, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 4792, 575, 1502, 1285, 6898, 5383, 1113, 7100, 7133, 5390, 6308, 6976, 6973, 2]
 // Exports: default
 
-// Module 7129 (DomainVerifyModal)
+// Module 7099 (DomainVerifyModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
 import useNavigation from "useNavigation" /* 1502 */;
-import Text_Text from "Text/Text" /* 5414 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6337 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6928 */;
-import DomainVerifyUtils from "DomainVerifyUtils" /* 7163 */;
+import Text_Text from "Text/Text" /* 5383 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6308 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6898 */;
+import DomainVerifyUtils from "DomainVerifyUtils" /* 7133 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -315,7 +315,7 @@ function HTTPProofScreen(proof) {
   const tmp8 = closure_9;
   if (tmp9Result) {
     const obj10 = { variant: "body-md/normal", color: "text-feedback-critical", style: tmp.error, children: tmp5 };
-    tmp9Result = tmp9(tmp2(5414).Text, obj10);
+    tmp9Result = tmp9(tmp2(5383).Text, obj10);
   }
   items[2] = tmp9Result;
   const obj11 = { style: tmp.button, children: closure_8(Button, obj12) };
@@ -368,7 +368,7 @@ function HTTPProofScreen(proof) {
       });
     }
   };
-  Button = tmp2(5421).Button;
+  Button = tmp2(5390).Button;
   intl4 = tmp2(1113).intl;
   items[3] = closure_8(View, obj11);
   const obj13 = { style: tmp.button, children: closure_8(Button2, obj14) };
@@ -379,7 +379,7 @@ function HTTPProofScreen(proof) {
       closure_2.pop();
     }
   };
-  Button2 = tmp2(5421).Button;
+  Button2 = tmp2(5390).Button;
   intl5 = tmp2(1113).intl;
   items[4] = closure_8(View, obj13);
   return tmp8(SafeAreaPaddingView, obj2);
@@ -422,7 +422,7 @@ export default function DomainVerifyModal(arg0) {
     };
     intl = onClose(1113).intl;
     obj[DOMAIN] = obj2;
-    obj3 = onClose(7006);
+    obj3 = onClose(6976);
     const PROOF_DNS = constants2.PROOF_DNS;
     const obj4 = {
       headerTitle: intl2.string(onClose(1113).t["7lo8+e"]),
@@ -434,7 +434,7 @@ export default function DomainVerifyModal(arg0) {
     };
     intl2 = onClose(1113).intl;
     obj[PROOF_DNS] = obj4;
-    obj5 = onClose(7006);
+    obj5 = onClose(6976);
     const PROOF_HTTP = constants2.PROOF_HTTP;
     const obj6 = {
       headerTitle: intl3.string(onClose(1113).t["7lo8+e"]),
@@ -446,9 +446,9 @@ export default function DomainVerifyModal(arg0) {
     };
     intl3 = onClose(1113).intl;
     obj[PROOF_HTTP] = obj6;
-    obj7 = onClose(7006);
+    obj7 = onClose(6976);
     const obj8 = { screens: obj, initialRouteName: constants2.DOMAIN, headerBackTitle: intl4.string(onClose(1113).t["13/7kX"]) };
-    const Navigator = onClose(7003).Navigator;
+    const Navigator = onClose(6973).Navigator;
     intl4 = onClose(1113).intl;
     return closure_8(Navigator, obj8);
   }

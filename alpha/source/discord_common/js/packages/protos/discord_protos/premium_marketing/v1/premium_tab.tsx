@@ -1,33 +1,41 @@
-// Module ID: 9059
-// Function ID: 9060
+// Module ID: 9033
+// Function ID: 9034
 // Name: premium_tab
-// Dependencies: [32, 1197, 9056, 2]
+// Dependencies: [32, 1197, 9030, 9034, 9035, 2]
 
-// Module 9059 (premium_tab)
+// Module 9033 (premium_tab)
 import _mod1197 from "module_1197" /* 1197 */;
-import localized_string from "localized_string" /* 9056 */;
+import localized_string from "localized_string" /* 9030 */;
+import theme_aware_asset from "theme_aware_asset" /* 9034 */;
+import tab_gradient_colors from "tab_gradient_colors" /* 9035 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let internalBinaryWrite, internalBinaryWrite2;
+let internalBinaryWrite, internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4;
 
 let tmp;
 const T2 = function T() {
   return require("localized_string").LocalizedString;
 };
+const T3 = function T() {
+  return require("localized_string").LocalizedString;
+};
+const T4 = function T() {
+  return require("tab_gradient_colors").TabGradientColors;
+};
 const MessageType = _mod1197.MessageType;
 class PremiumTab$Type extends MessageType {
   constructor() {
-    const items = [{ no: 1, name: "badge_label", kind: "scalar", T: 9 }, { no: 2, name: "acknowledged_badge_label", kind: "scalar", T: 9 }, { no: 3, name: "show_hover_gradient", kind: "scalar", T: 8 }, { no: 4, name: "deeplink_section", kind: "scalar", T: 9 }, , ];
-    const obj = { no: 5, name: "badge_label_localized", kind: "message", T };
+    const items = [{ no: 1, name: "badge_label", kind: "scalar", T: 9 }, { no: 2, name: "acknowledged_badge_label", kind: "scalar", T: 9 }, { no: 3, name: "show_hover_gradient", kind: "scalar", T: 8 }, { no: 4, name: "deeplink_section", kind: "scalar", T: 9 }, { no: 5, name: "badge_label_localized", kind: "message", T: T2 }, { no: 6, name: "acknowledged_badge_label_localized", kind: "message", T: T3 }, , ];
+    const obj = { no: 7, name: "background_image", kind: "message", T };
     class T {
       constructor() {
-        return closure_1_0(closure_1_1[2]).LocalizedString;
+        return closure_1_0(closure_1_1[3]).ThemeAwareAsset;
       }
     }
-    items[4] = obj;
-    items[5] = { no: 6, name: "acknowledged_badge_label_localized", kind: "message", T: T2 };
+    items[6] = obj;
+    items[7] = { no: 8, name: "hover_gradient_colors", kind: "message", T: T4 };
     const tmp2 = new tmp("discord_protos.premium_marketing.v1.PremiumTab", items, T);
     return tmp2;
   }
@@ -69,6 +77,12 @@ class PremiumTab$Type extends MessageType {
         } else if (6 === tmp5) {
           let LocalizedString = localized_string.LocalizedString;
           obj.acknowledgedBadgeLabelLocalized = LocalizedString.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.acknowledgedBadgeLabelLocalized);
+        } else if (7 === tmp5) {
+          let ThemeAwareAsset = theme_aware_asset.ThemeAwareAsset;
+          obj.backgroundImage = ThemeAwareAsset.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.backgroundImage);
+        } else if (8 === tmp5) {
+          let TabGradientColors = tab_gradient_colors.TabGradientColors;
+          obj.hoverGradientColors = TabGradientColors.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.hoverGradientColors);
         } else {
           let onRead = readUnknownField.readUnknownField;
           if ("throw" === onRead) {
@@ -129,6 +143,22 @@ class PremiumTab$Type extends MessageType {
       const internalBinaryWrite2Result = internalBinaryWrite2(acknowledgedBadgeLabelLocalized, tagResult5.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
+    if (badgeLabel.backgroundImage) {
+      const ThemeAwareAsset = theme_aware_asset.ThemeAwareAsset;
+      internalBinaryWrite3 = ThemeAwareAsset.internalBinaryWrite;
+      const backgroundImage = badgeLabel.backgroundImage;
+      const tagResult6 = tag.tag(7, _mod1197.WireType.LengthDelimited);
+      const internalBinaryWrite3Result = internalBinaryWrite3(backgroundImage, tagResult6.fork(), writeUnknownFields);
+      const joined2 = internalBinaryWrite3Result.join();
+    }
+    if (badgeLabel.hoverGradientColors) {
+      const TabGradientColors = tab_gradient_colors.TabGradientColors;
+      internalBinaryWrite4 = TabGradientColors.internalBinaryWrite;
+      const hoverGradientColors = badgeLabel.hoverGradientColors;
+      const tagResult7 = tag.tag(8, _mod1197.WireType.LengthDelimited);
+      const internalBinaryWrite4Result = internalBinaryWrite4(hoverGradientColors, tagResult7.fork(), writeUnknownFields);
+      const joined3 = internalBinaryWrite4Result.join();
+    }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
@@ -141,15 +171,15 @@ class PremiumTab$Type extends MessageType {
   }
 }
 const prototype = PremiumTab$Type.prototype;
-let items = [{ no: 1, name: "badge_label", kind: "scalar", T: 9 }, { no: 2, name: "acknowledged_badge_label", kind: "scalar", T: 9 }, { no: 3, name: "show_hover_gradient", kind: "scalar", T: 8 }, { no: 4, name: "deeplink_section", kind: "scalar", T: 9 }, , ];
-let obj = { no: 5, name: "badge_label_localized", kind: "message", T };
+let items = [{ no: 1, name: "badge_label", kind: "scalar", T: 9 }, { no: 2, name: "acknowledged_badge_label", kind: "scalar", T: 9 }, { no: 3, name: "show_hover_gradient", kind: "scalar", T: 8 }, { no: 4, name: "deeplink_section", kind: "scalar", T: 9 }, { no: 5, name: "badge_label_localized", kind: "message", T: T2 }, { no: 6, name: "acknowledged_badge_label_localized", kind: "message", T: T3 }, , ];
+let obj = { no: 7, name: "background_image", kind: "message", T };
 class T {
   constructor() {
-    return require("localized_string").LocalizedString;
+    return require("theme_aware_asset").ThemeAwareAsset;
   }
 }
-items[4] = obj;
-items[5] = { no: 6, name: "acknowledged_badge_label_localized", kind: "message", T: T2 };
+items[6] = obj;
+items[7] = { no: 8, name: "hover_gradient_colors", kind: "message", T: T4 };
 const prototype1 = new prototype("discord_protos.premium_marketing.v1.PremiumTab", items, tmp, T, PremiumTab$Type, prototype, items);
 let result = size.fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/premium_marketing/v1/premium_tab.tsx");
 

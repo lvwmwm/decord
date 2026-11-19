@@ -1,112 +1,109 @@
 // Module ID: 15526
 // Function ID: 15527
-// Dependencies: [15490, 15465, 15527, 15481, 15528, 15510, 15488, 15521]
+// Dependencies: []
 
 // Module 15526
-import _mod15465 from "module_15465" /* 15465 */;
-import _mod15481 from "module_15481" /* 15481 */;
-import _mod15490 from "module_15490" /* 15490 */;
-import _mod15510 from "module_15510" /* 15510 */;
-import _mod15521 from "module_15521" /* 15521 */;
-import _mod15527 from "module_15527" /* 15527 */;
-import _mod15528 from "module_15528" /* 15528 */;
+let hasOwnProperty;
 
-const require = globalThis.__r;
-
-let fn4;
-let fn5;
-let fn6;
-if (!_mod15527) {
-  let fn;
-  let fn2;
-  let fn3;
-  if (!_mod15481.state) {
-    let tmp = _mod15528("state");
-    let closure_6 = tmp;
-    _mod15510[tmp] = true;
-    fn = function t(facade, arg1) {
-      const tmp3 = closure_6;
-      if (require("module_15488")(facade, closure_6)) {
-        const self = this;
-        const self2 = this;
-        const typeError = new tmp(15465).TypeError("Object already initialized");
-        throw typeError;
-      } else {
-        arg1.facade = facade;
-        _mod15521(facade, tmp3, arg1);
-        return arg1;
-      }
-    };
-    fn4 = fn;
-    fn2 = function n(arg0) {
-      return require("module_15488")(arg0, closure_6) ? arg0[closure_6] : {};
-    };
-    fn5 = fn2;
-    fn3 = function u(arg0) {
-      return require("module_15488")(arg0, closure_6);
-    };
-    fn6 = fn3;
+function wrapperForImpl(arg0) {
+  let tmp = null;
+  if (arg0) {
+    tmp = arg0[_window];
   }
-  let obj = {
-    set: fn,
-    get: fn2,
-    has: fn3,
-    enforce(toString) {
-        let tmp2;
-        if (fn6(toString)) {
-          tmp2 = fn5(toString);
-        } else {
-          tmp2 = fn4(toString, {});
-        }
-        return tmp2;
-      },
-    getterFor(arg0) {
-        let closure_0 = arg0;
-        return (arg0) => {
-          if (_mod15490(arg0)) {
-            const tmp4 = fn5(arg0);
-            if (tmp4.type === closure_0) {
-              return tmp4;
-            }
-          }
-          const typeError = new _mod15465.TypeError("Incompatible receiver, " + closure_0 + " required");
-          throw typeError;
-        };
-      }
-  };
-  module.exports = obj;
-}
-let state = _mod15481.state;
-if (!state) {
-  const _module = _mod15481;
-  let self = this;
-  let self2 = this;
-  const weakMap = new _mod15465.WeakMap();
-  let tmp4 = weakMap;
-  _module.state = weakMap;
-  state = weakMap;
-}
-({ get: state.get, has: state.has, set: state.set } = state);
-fn4 = function t(facade, arg1) {
-  const obj = state;
-  if (state.has(facade)) {
-    const self = this;
-    const self2 = this;
-    const typeError = new _mod15465.TypeError("Object already initialized");
-    throw typeError;
-  } else {
-    arg1.facade = facade;
-    const result = obj.set(facade, arg1);
-    return arg1;
-  }
-};
-fn5 = function n(arg0) {
-  const tmp = state.get(arg0) || {};
   return tmp;
-};
-fn6 = function u(arg0) {
-  return state.has(arg0);
-};
-fn3 = fn6;
-fn2 = fn5;
-fn = fn4;
+}
+function implForWrapper(arg0) {
+  let tmp = null;
+  if (arg0) {
+    tmp = arg0[SymbolResult1];
+  }
+  return tmp;
+}
+function isObject(obj) {
+  let tmp = typeof obj === "object";
+  if (typeof obj === "object") {
+    tmp = null !== obj;
+  }
+  if (!tmp) {
+    tmp = typeof obj === "function";
+  }
+  return tmp;
+}
+function hasOwn(arg0, arg1) {
+  hasOwnProperty = Object.prototype.hasOwnProperty;
+  return hasOwnProperty.call(arg0, arg1);
+}
+function getSameObject(self, searchParams, fn) {
+  if (!self[closure_2]) {
+    const _Object = Object;
+    self[closure_2] = Object.create(null);
+  }
+  if (!(searchParams in self[closure_2])) {
+    self[closure_2][searchParams] = fn();
+  }
+  return self[closure_2][searchParams];
+}
+function tryWrapperForImpl(searchParams) {
+  let tmp = null;
+  if (searchParams) {
+    tmp = searchParams[_window];
+  }
+  if (!tmp) {
+    tmp = searchParams;
+  }
+  return tmp;
+}
+function tryImplForWrapper(arg0) {
+  let tmp = null;
+  if (arg0) {
+    tmp = arg0[SymbolResult1];
+  }
+  if (!tmp) {
+    tmp = arg0;
+  }
+  return tmp;
+}
+function isArrayBuffer(arg0) {
+  try {
+    get.call(arg0);
+    return true;
+  } catch (err) {
+    return false;
+  }
+}
+function isArrayIndexPropName(str) {
+  if (typeof str !== "string") {
+    return false;
+  } else {
+    const _Math = Math;
+    const diff = Math.pow(2, 32) - 1;
+    let tmp = tmp2 !== diff;
+    if (str >>> 0 !== diff) {
+      const _HermesInternal = HermesInternal;
+      tmp = str === "" + tmp2;
+    }
+    return tmp;
+  }
+}
+const SymbolResult = Symbol("wrapper");
+const _window = SymbolResult;
+const SymbolResult1 = Symbol("impl");
+let closure_2 = Symbol("SameObject caches");
+const items = [];
+const forResult = Symbol.for("[webidl2js]  constructor registry");
+const SymbolResult2 = Symbol("internal");
+const prototypeOf = Object.getPrototypeOf(Object.getPrototypeOf(items[Symbol.iterator]()));
+const get = Object.getOwnPropertyDescriptor(ArrayBuffer.prototype, "byteLength").get;
+const SymbolResult3 = Symbol("supports property index");
+const SymbolResult4 = Symbol("supported property indices");
+const SymbolResult5 = Symbol("supports property name");
+const SymbolResult6 = Symbol("supported property names");
+const SymbolResult7 = Symbol("indexed property get");
+const SymbolResult8 = Symbol("indexed property set new");
+const SymbolResult9 = Symbol("indexed property set existing");
+const SymbolResult10 = Symbol("named property get");
+const SymbolResult11 = Symbol("named property set new");
+const SymbolResult12 = Symbol("named property set existing");
+({ isObject, hasOwn, wrapperSymbol: SymbolResult, implSymbol: SymbolResult1, getSameObject, ctorRegistrySymbol: forResult, wrapperForImpl, implForWrapper, tryWrapperForImpl, tryImplForWrapper, iterInternalSymbol: SymbolResult2, IteratorPrototype: prototypeOf, isArrayBuffer, isArrayIndexPropName, supportsPropertyIndex: SymbolResult3, supportedPropertyIndices: SymbolResult4, supportsPropertyName: SymbolResult5, supportedPropertyNames: SymbolResult6, indexedGet: SymbolResult7, indexedSetNew: SymbolResult8, indexedSetExisting: SymbolResult9, namedGet: SymbolResult10, namedSetNew: SymbolResult11, namedSetExisting: SymbolResult12, namedDelete: Symbol("named property delete") });
+
+export default { isObject, hasOwn, wrapperSymbol: SymbolResult, implSymbol: SymbolResult1, getSameObject, ctorRegistrySymbol: forResult, wrapperForImpl, implForWrapper, tryWrapperForImpl, tryImplForWrapper, iterInternalSymbol: SymbolResult2, IteratorPrototype: prototypeOf, isArrayBuffer, isArrayIndexPropName, supportsPropertyIndex: SymbolResult3, supportedPropertyIndices: SymbolResult4, supportsPropertyName: SymbolResult5, supportedPropertyNames: SymbolResult6, indexedGet: SymbolResult7, indexedSetNew: SymbolResult8, indexedSetExisting: SymbolResult9, namedGet: SymbolResult10, namedSetNew: SymbolResult11, namedSetExisting: SymbolResult12, namedDelete: Symbol("named property delete") };

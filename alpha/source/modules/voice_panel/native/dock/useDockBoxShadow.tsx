@@ -1,11 +1,11 @@
-// Module ID: 18064
-// Function ID: 18065
+// Module ID: 18057
+// Function ID: 18058
 // Name: useDockBoxShadow
-// Dependencies: [19, 4884, 4820, 2]
+// Dependencies: [19, 4853, 4789, 2]
 // Exports: default
 
-// Module 18064 (useDockBoxShadow)
-import ColorUtils from "ColorUtils" /* 4820 */;
+// Module 18057 (useDockBoxShadow)
+import ColorUtils from "ColorUtils" /* 4789 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

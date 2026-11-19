@@ -1,11 +1,11 @@
-// Module ID: 9473
-// Function ID: 9474
+// Module ID: 9451
+// Function ID: 9452
 // Name: Stripe3DSChallenge
-// Dependencies: [5, 6282, 2]
+// Dependencies: [5, 6254, 2]
 // Exports: authenticateStripePaymentIntent
 
-// Module 9473 (Stripe3DSChallenge)
-import StripeUtils from "StripeUtils" /* 6282 */;
+// Module 9451 (Stripe3DSChallenge)
+import StripeUtils from "StripeUtils" /* 6254 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let obj = function _getLoadedStripe() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -117,7 +117,7 @@ obj = function _confirmCardPayment() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -157,7 +157,7 @@ obj = function _confirmCardPayment() {
             throw error;
           } else {
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         }
       } catch (tmp16) {

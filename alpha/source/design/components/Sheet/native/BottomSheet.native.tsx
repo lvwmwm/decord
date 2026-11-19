@@ -1,27 +1,27 @@
-// Module ID: 5051
-// Function ID: 5052
+// Module ID: 5020
+// Function ID: 5021
 // Name: Sheet/BottomSheet
-// Dependencies: [32, 19, 17, 5052, 21, 4823, 575, 1380, 1630, 5053, 5054, 5055, 5377, 5378, 1092, 1496, 1655, 5382, 4837, 5383, 5384, 1708, 5386, 5388, 5397, 4995, 5400, 5401, 4884, 2]
+// Dependencies: [32, 19, 17, 5021, 21, 4792, 575, 1380, 1630, 5022, 5023, 5024, 5346, 5347, 1092, 1496, 1655, 5351, 4806, 5352, 5353, 1708, 5355, 5357, 5366, 4964, 5369, 5370, 4853, 2]
 // Exports: BottomSheet, useBottomSheetContainerStyle, useBottomSheetWidth
 
-// Module 5051 (Sheet/BottomSheet)
+// Module 5020 (Sheet/BottomSheet)
 import nativeDefault from "native" /* 575 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5053 */;
-import BottomSheetSnapPoints from "BottomSheetSnapPoints" /* 5054 */;
-import BottomSheetModal from "BottomSheetModal" /* 5055 */;
-import LinearGradientDefault from "LinearGradient" /* 5378 */;
-import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 5386 */;
-import Sheet_BottomSheetBackdrop from "Sheet/BottomSheetBackdrop" /* 5388 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5022 */;
+import BottomSheetSnapPoints from "BottomSheetSnapPoints" /* 5023 */;
+import BottomSheetModal from "BottomSheetModal" /* 5024 */;
+import LinearGradientDefault from "LinearGradient" /* 5347 */;
+import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 5355 */;
+import Sheet_BottomSheetBackdrop from "Sheet/BottomSheetBackdrop" /* 5357 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5052 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5021 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let Platform;
@@ -40,9 +40,9 @@ let metroRequire;
 let tmp2;
 let tmp4;
 let unpackModuleId;
-const BottomSheetModalDefault = tmp2(5055);
-const NavigatorConstants = tmp4(5377);
-const NavScrim = tmp2(5397);
+const BottomSheetModalDefault = tmp2(5024);
+const NavigatorConstants = tmp4(5346);
+const NavScrim = tmp2(5366);
 function Background(arg0) {
   const obj = {};
   const merged = Object.assign(arg0);
@@ -75,7 +75,7 @@ function BorderGradientBackground(borderGradient) {
   const obj3 = { style: items1 };
   items1 = [tmp2.gradientInnerFill, { backgroundColor }];
   items[1] = authStore3(metroRequire, obj3);
-  return closure_17(metroRequire, obj);
+  return authStore4(metroRequire, obj);
 }
 ({ StyleSheet: hasOwnProperty, View: metroRequire, Platform } = react_native);
 ({ ACTION_SHEET_START_HEIGHT_RATIO: metroImportDefault, ACTION_SHEET_MAX_WIDTH: metroImportAll, ACTION_SHEET_SPRING_CONFIG: c9, ACTION_SHEET_SPRING_CONFIG_REDUCED_MOTION: c10, ACTION_SHEET_GRADIENT_BORDER_WIDTH: unpackModuleId, ACTION_SHEET_GRADIENT_BORDER_RADIUS: closure_12, ACTION_SHEET_BORDER_RADIUS: map1, ACTION_SHEET_INNER_BORDER_RADIUS: closure_14, ACTION_SHEET_MINIMUM_BOTTOM_PADDING: closure_15 } = ActionSheetConstants);
@@ -300,7 +300,7 @@ function ScrollableBottomSheetInner(windowDimensions) {
   const tmp2Result = BottomSheetModalDefault;
   const merged1 = Object.assign(merged);
   items3 = [tmp9, extraContent];
-  return closure_17(tmp2Result, obj3);
+  return authStore4(tmp2Result, obj3);
 }
 let closure_24 = { code: "(function BottomSheetNativeTsx1(){let[animatedIndex]=this.__closure;return animatedIndex.get()<=-1;})" };
 let closure_25 = { code: "(function BottomSheetNativeTsx2(){let[animatedIsVisuallyClosed]=this.__closure;return animatedIsVisuallyClosed.get();})" };
@@ -545,7 +545,7 @@ export function BottomSheet(scrollable) {
     const obj2 = { animatedIndex: animatedIndex.animatedIndex, opacity: backdropOpacity };
     items1[0] = authStore3(Sheet_BottomSheetBackdrop.BottomSheetBackdrop, obj2);
     items1[1] = backdropChildren;
-    return closure_17(metroRequire, obj);
+    return authStore4(metroRequire, obj);
   }, items11);
   const callback4 = obj.useCallback((arg0) => {
     let tmpResult;

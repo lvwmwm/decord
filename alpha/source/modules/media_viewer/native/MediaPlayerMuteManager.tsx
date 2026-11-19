@@ -1,9 +1,9 @@
-// Module ID: 8133
-// Function ID: 8134
+// Module ID: 8102
+// Function ID: 8103
 // Name: MediaPlayerMuteManager
 // Dependencies: [17, 560, 1263, 2]
 
-// Module 8133 (MediaPlayerMuteManager)
+// Module 8102 (MediaPlayerMuteManager)
 import react_native from "react-native" /* 17 */;
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
@@ -17,7 +17,7 @@ const useMediaPlayerMutedStore = module_560.create(() => ({ isMuted: false }));
 const nativeEventEmitter = new NativeEventEmitter(NativeModules.MediaPlayerManager);
 class MediaPlayerMuteManager {
   constructor() {
-    return Object.assign({ muteSubscription: "find" });
+    return Object.assign({ muteSubscription: "r" });
   }
   initialize() {
     let state;
@@ -41,5 +41,5 @@ const prototype = MediaPlayerMuteManager.prototype;
 const prototype2 = MediaPlayerMuteManager.prototype;
 const result = size.fileFinishedImporting("modules/media_viewer/native/MediaPlayerMuteManager.tsx");
 
-export default Object.assign({ muteSubscription: "find" });
+export default Object.assign({ muteSubscription: "r" });
 export { useMediaPlayerMutedStore };

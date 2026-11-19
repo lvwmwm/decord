@@ -1,21 +1,21 @@
-// Module ID: 10773
-// Function ID: 10774
+// Module ID: 10751
+// Function ID: 10752
 // Name: useEmbeddedAppCSP
-// Dependencies: [5, 6858, 504, 6860, 6859, 5464, 2]
+// Dependencies: [5, 6828, 504, 6830, 6829, 5433, 2]
 // Exports: default
 
-// Module 10773 (useEmbeddedAppCSP)
-import EmbeddedAppFramePolicyExperiment from "EmbeddedAppFramePolicyExperiment" /* 6859 */;
-import EmbeddedAppCSPActionCreators from "EmbeddedAppCSPActionCreators" /* 6860 */;
+// Module 10751 (useEmbeddedAppCSP)
+import EmbeddedAppFramePolicyExperiment from "EmbeddedAppFramePolicyExperiment" /* 6829 */;
+import EmbeddedAppCSPActionCreators from "EmbeddedAppCSPActionCreators" /* 6830 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import EmbeddedAppCSPStore from "EmbeddedAppCSPStore" /* 6858 */;
+import EmbeddedAppCSPStore from "EmbeddedAppCSPStore" /* 6828 */;
 import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2;
 
 let tmp;
-const getURLForApplication = tmp(5464);
+const getURLForApplication = tmp(5433);
 let obj = {
   getQueryId(arg0) {
     let combined = null;
@@ -50,7 +50,7 @@ let closure_2 = _asyncToGenerator(async (arg0, value) => {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "HermesInternal", done: "+60" };
     }
   } else {
     try {
@@ -79,7 +79,7 @@ let closure_2 = _asyncToGenerator(async (arg0, value) => {
         return obj;
       }
       c1 = 3;
-      return { value: "HermesInternal", done: null };
+      return { value: "HermesInternal", done: "+60" };
     } catch (tmp8) {
       c1 = 3;
       throw tmp8;

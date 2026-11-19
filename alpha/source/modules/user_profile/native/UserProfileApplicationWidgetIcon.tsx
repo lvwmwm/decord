@@ -1,14 +1,14 @@
-// Module ID: 10307
-// Function ID: 10308
+// Module ID: 10285
+// Function ID: 10286
 // Name: UserProfileApplicationWidgetIcon
-// Dependencies: [21, 4823, 575, 5510, 2]
+// Dependencies: [21, 4792, 575, 5479, 2]
 // Exports: default
 
-// Module 10307 (UserProfileApplicationWidgetIcon)
+// Module 10285 (UserProfileApplicationWidgetIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import FastImageDefault from "FastImage" /* 5510 */;
-import createStyles from "createStyles" /* 4823 */;
+import FastImageDefault from "FastImage" /* 5479 */;
+import createStyles from "createStyles" /* 4792 */;
 import size_mod from "module_2" /* 2 */;
 
 let size;

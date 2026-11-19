@@ -1,14 +1,14 @@
-// Module ID: 17437
-// Function ID: 17438
+// Module ID: 17430
+// Function ID: 17431
 // Name: AllowGameFriendDMsSetting
-// Dependencies: [8624, 11897, 1113, 4648, 17438, 2]
+// Dependencies: [8593, 11875, 1113, 4617, 17431, 2]
 
-// Module 17437 (AllowGameFriendDMsSetting)
+// Module 17430 (AllowGameFriendDMsSetting)
 import intl2 from "intl" /* 1113 */;
-import UserSettings from "UserSettings" /* 4648 */;
-import SettingsConstants from "SettingsConstants" /* 8624 */;
-import useIsAllowGameFriendDMsSettingVisible from "useIsAllowGameFriendDMsSettingVisible" /* 17438 */;
-import SettingBuilders from "SettingBuilders" /* 11897 */;
+import UserSettings from "UserSettings" /* 4617 */;
+import SettingsConstants from "SettingsConstants" /* 8593 */;
+import useIsAllowGameFriendDMsSettingVisible from "useIsAllowGameFriendDMsSettingVisible" /* 17431 */;
+import SettingBuilders from "SettingBuilders" /* 11875 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

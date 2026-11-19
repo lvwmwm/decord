@@ -1,19 +1,19 @@
-// Module ID: 20224
-// Function ID: 20225
+// Module ID: 20235
+// Function ID: 20236
 // Name: LocalPushNotificationActionCreators
-// Dependencies: [6910, 1072, 8180, 572, 1242, 1256, 6419, 12156, 2121, 5556, 6298, 12243, 2]
+// Dependencies: [6880, 1072, 8149, 572, 1242, 1256, 6390, 12135, 2121, 5525, 6270, 12226, 2]
 // Exports: receiveLocalNotification
 
-// Module 20224 (LocalPushNotificationActionCreators)
+// Module 20235 (LocalPushNotificationActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import Constants2 from "Constants" /* 6910 */;
+import Constants2 from "Constants" /* 6880 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const GuildActionCreatorsDefault = tmp(6419);
+const GuildActionCreatorsDefault = tmp(6390);
 const LocalNotificationTypes = Constants2.LocalNotificationTypes;
 const AnalyticEvents = Constants.AnalyticEvents;
 let result = size.fileFinishedImporting("modules/local_push_notification/native/LocalPushNotificationActionCreators.tsx");
@@ -22,7 +22,7 @@ export function receiveLocalNotification(getData) {
   let constants2;
   let data;
   if (null != getData.getData) {
-    let obj2 = data(8180);
+    let obj2 = data(8149);
     obj2.trackAppOpened("notification");
     data = getData.getData();
     let type = data.type;

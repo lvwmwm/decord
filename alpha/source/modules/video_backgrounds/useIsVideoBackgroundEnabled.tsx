@@ -1,13 +1,13 @@
-// Module ID: 10926
-// Function ID: 10927
+// Module ID: 10904
+// Function ID: 10905
 // Name: useIsVideoBackgroundEnabled
-// Dependencies: [5745, 10927, 1380, 2]
+// Dependencies: [5714, 10905, 1380, 2]
 // Exports: default
 
-// Module 10926 (useIsVideoBackgroundEnabled)
+// Module 10904 (useIsVideoBackgroundEnabled)
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import VirtualBackgroundsIosExperimentDefault from "VirtualBackgroundsIosExperiment" /* 5745 */;
-import useIsVideoBackgroundSupportedDefault from "useIsVideoBackgroundSupported" /* 10927 */;
+import VirtualBackgroundsIosExperimentDefault from "VirtualBackgroundsIosExperiment" /* 5714 */;
+import useIsVideoBackgroundSupportedDefault from "useIsVideoBackgroundSupported" /* 10905 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/video_backgrounds/useIsVideoBackgroundEnabled.tsx");

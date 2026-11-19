@@ -1,26 +1,26 @@
-// Module ID: 7470
-// Function ID: 7471
+// Module ID: 7440
+// Function ID: 7441
 // Name: VerifiedRoleIcon
-// Dependencies: [19, 17, 1072, 21, 575, 4823, 7471, 7454, 7472, 5519, 2]
+// Dependencies: [19, 17, 1072, 21, 575, 4792, 7441, 7424, 7442, 5488, 2]
 // Exports: default
 
-// Module 7470 (VerifiedRoleIcon)
+// Module 7440 (VerifiedRoleIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useRoleIconProps2 from "useRoleIconProps" /* 7454 */;
-import getHigherContrastColor from "getHigherContrastColor" /* 7471 */;
-import RoleIconDefault from "RoleIcon" /* 7472 */;
+import useRoleIconProps2 from "useRoleIconProps" /* 7424 */;
+import getHigherContrastColor from "getHigherContrastColor" /* 7441 */;
+import RoleIconDefault from "RoleIcon" /* 7442 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp3;
-const LinkIcon = tmp3(5519);
+const LinkIcon = tmp3(5488);
 const View = react_native.View;
 ({ DEFAULT_ROLE_COLOR_HEX: closure_4, EMPTY_STRING_SNOWFLAKE_ID: hasOwnProperty } = Constants);
 const jsx = Fragment.jsx;

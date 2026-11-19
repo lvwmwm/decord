@@ -1,11 +1,11 @@
-// Module ID: 18787
-// Function ID: 18788
+// Module ID: 18779
+// Function ID: 18780
 // Name: useCanShowNoSearchResults
-// Dependencies: [13139, 504, 2]
+// Dependencies: [13121, 504, 2]
 // Exports: useCanShowNoSearchResults
 
-// Module 18787 (useCanShowNoSearchResults)
-import SearchQueryStore from "SearchQueryStore" /* 13139 */;
+// Module 18779 (useCanShowNoSearchResults)
+import SearchQueryStore from "SearchQueryStore" /* 13121 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

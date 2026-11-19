@@ -1,10 +1,10 @@
-// Module ID: 8187
-// Function ID: 8188
+// Module ID: 8156
+// Function ID: 8157
 // Name: Iterable
 // Dependencies: [2]
 // Exports: chain
 
-// Module 8187 (Iterable)
+// Module 8156 (Iterable)
 import size from "module_2" /* 2 */;
 
 class Chained {
@@ -24,7 +24,7 @@ class Chained {
       }
       return iter2;
     }
-    return { done: true, value: "a" };
+    return { done: true, value: "Array" };
   }
 }
 Chained.prototype[Symbol.iterator] = function() {

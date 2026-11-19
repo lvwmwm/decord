@@ -1,15 +1,15 @@
-// Module ID: 14837
-// Function ID: 14838
+// Module ID: 14823
+// Function ID: 14824
 // Name: GatewayCompressionHandler
-// Dependencies: [14838, 14840, 3, 14839, 7707, 2]
+// Dependencies: [14824, 14826, 3, 14825, 7677, 2]
 // Exports: getCompressionHandler
 
-// Module 14837 (GatewayCompressionHandler)
+// Module 14823 (GatewayCompressionHandler)
 import LoggerDefault from "Logger" /* 3 */;
-import ProcessArgs2 from "ProcessArgs" /* 7707 */;
-import react_native from "react-native" /* 14838 */;
-import react_native2 from "react-native" /* 14839 */;
-import _mod14840 from "module_14840" /* 14840 */;
+import ProcessArgs2 from "ProcessArgs" /* 7677 */;
+import react_native from "react-native" /* 14824 */;
+import react_native2 from "react-native" /* 14825 */;
+import _mod14826 from "module_14826" /* 14826 */;
 import size from "module_2" /* 2 */;
 
 const items = [];
@@ -61,7 +61,7 @@ class tmp2 extends BaseGatewayCompressionHandler {
   usesLegacyCompression() {
     return false;
   }
-  feed(buffer) {
+  feed(arg0) {
     const self = this;
     if (null == this._stream) {
       const _Error2 = Error;
@@ -71,9 +71,9 @@ class tmp2 extends BaseGatewayCompressionHandler {
       throw error;
     } else {
       const _ArrayBuffer = ArrayBuffer;
-      if (buffer instanceof ArrayBuffer) {
+      if (arg0 instanceof ArrayBuffer) {
         const _stream = self._stream;
-        const decompressResult = _stream.decompress(buffer);
+        const decompressResult = _stream.decompress(arg0);
         let decodeResult = decompressResult;
         if (null != self._decoder) {
           const _decoder = self._decoder;
@@ -86,7 +86,7 @@ class tmp2 extends BaseGatewayCompressionHandler {
         const _Error = Error;
         const self2 = this;
         const self3 = this;
-        error1 = new Error("Expected array buffer, but got " + typeof buffer);
+        error1 = new Error("Expected array buffer, but got " + typeof arg0);
         throw error1;
       }
     }
@@ -103,7 +103,7 @@ class tmp4 extends BaseGatewayCompressionHandler {
     let _inflate;
     let handleFlushEnd;
     const tmp2 = new tmp(arg0, new.target, tmp, this);
-    tmp2._pako = _mod14840;
+    tmp2._pako = _mod14826;
     tmp2._usesZstd = false;
     tmp2._zstdDecoder = null;
     tmp2._zstdStream = null;
@@ -247,7 +247,7 @@ items.push(tmp4);
 class tmp6 extends BaseGatewayCompressionHandler {
   constructor() {
     const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
-    applyArgumentsResult._pako = _mod14840;
+    applyArgumentsResult._pako = _mod14826;
     return applyArgumentsResult;
   }
   static canUse() {

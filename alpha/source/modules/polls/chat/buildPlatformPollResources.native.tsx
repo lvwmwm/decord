@@ -1,16 +1,16 @@
-// Module ID: 12106
-// Function ID: 12107
+// Module ID: 12083
+// Function ID: 12084
 // Name: buildPlatformPollResources
-// Dependencies: [12, 12107, 4823, 575, 8157, 7421, 7248, 1417, 2]
+// Dependencies: [12, 12084, 4792, 575, 8126, 7391, 7218, 1417, 2]
 // Exports: buildPlatformPollResources, getAvatarUrl
 
-// Module 12106 (buildPlatformPollResources)
+// Module 12083 (buildPlatformPollResources)
 import nativeDefault from "native" /* 575 */;
 import utils_AvatarUtils from "utils/AvatarUtils" /* 1417 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7248 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 7421 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8157 */;
-import PollStyles from "PollStyles" /* 12107 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7218 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 7391 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8126 */;
+import PollStyles from "PollStyles" /* 12084 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 

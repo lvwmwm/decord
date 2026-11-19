@@ -1,16 +1,16 @@
-// Module ID: 5602
-// Function ID: 5603
+// Module ID: 5571
+// Function ID: 5572
 // Name: BaseConnection
-// Dependencies: [5, 5568, 5592, 5603, 5605, 5606, 5607, 5636, 2]
+// Dependencies: [5, 5537, 5561, 5572, 5574, 5575, 5576, 5605, 2]
 
-// Module 5602 (BaseConnection)
-import VideoQualityManager from "VideoQualityManager" /* 5603 */;
-import ConnectionEventFramerateReducer from "ConnectionEventFramerateReducer" /* 5605 */;
-import discord_common_BaseConnectionEvent from "discord_common/BaseConnectionEvent" /* 5606 */;
-import cloneDeepDefault from "cloneDeep" /* 5607 */;
+// Module 5571 (BaseConnection)
+import VideoQualityManager from "VideoQualityManager" /* 5572 */;
+import ConnectionEventFramerateReducer from "ConnectionEventFramerateReducer" /* 5574 */;
+import discord_common_BaseConnectionEvent from "discord_common/BaseConnectionEvent" /* 5575 */;
+import cloneDeepDefault from "cloneDeep" /* 5576 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants from "Constants" /* 5568 */;
-import TypedEventEmitter from "TypedEventEmitter" /* 5592 */;
+import Constants from "Constants" /* 5537 */;
+import TypedEventEmitter from "TypedEventEmitter" /* 5561 */;
 import size_mod from "module_2" /* 2 */;
 
 let set;
@@ -23,7 +23,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp13;
-const flatRestDefault = tmp13(5636);
+const flatRestDefault = tmp13(5605);
 ({ ConnectionStates: closure_4, DEFAULT_VOICE_BITRATE: hasOwnProperty, MediaTypes: metroRequire, ResolutionTypes: metroImportDefault, MediaEngineContextTypes: metroImportAll, VIDEO_QUALITY_FRAMERATE: c9, SIMULCAST_HQ_QUALITY: c10 } = Constants);
 let closure_11 = 0;
 class BaseConnection extends TypedEventEmitter {

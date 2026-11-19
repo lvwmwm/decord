@@ -1,11 +1,11 @@
-// Module ID: 18474
-// Function ID: 18475
+// Module ID: 18467
+// Function ID: 18468
 // Name: conjurePublishCard
-// Dependencies: [4121, 2]
+// Dependencies: [4089, 2]
 // Exports: isConjurePublishCtaVisible, isPublishCardLive, livePublishCardMessageId, publishNoticeMessage, withLivePublishCard
 
-// Module 18474 (conjurePublishCard)
-import _modDef4121 from "module_4121" /* 4121 */;
+// Module 18467 (conjurePublishCard)
+import _modDef4089 from "module_4089" /* 4089 */;
 import size from "module_2" /* 2 */;
 
 const weakMap = new WeakMap();
@@ -70,14 +70,14 @@ export function livePublishCardMessageId(arg0, newUiUnpublished) {
 export function publishNoticeMessage(notice, name, automod) {
   let KORRGl;
   if (true === notice.commands_failed) {
-    const tmp11 = _modDef4121;
+    const tmp11 = _modDef4089;
     KORRGl = tmp ? tmp11.ESu5eZ : tmp11["PrQg+B"];
   } else if (true === notice.channel_skipped) {
-    const tmp8 = _modDef4121;
+    const tmp8 = _modDef4089;
     KORRGl = tmp ? tmp8.ZnQW4S : tmp8.ev23Cw;
   } else {
     const update = notice.update;
-    const tmp4 = _modDef4121;
+    const tmp4 = _modDef4089;
     if (update) {
       KORRGl = tmp ? tmp4["LuS8a/"] : tmp4.gQzuLC;
     } else {

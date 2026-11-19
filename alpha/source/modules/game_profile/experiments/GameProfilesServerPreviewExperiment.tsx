@@ -1,10 +1,10 @@
-// Module ID: 15128
-// Function ID: 15129
+// Module ID: 15114
+// Function ID: 15115
 // Name: GameProfilesServerPreviewExperiment
 // Dependencies: [1452, 2]
 // Exports: useIsGameProfilesServerPreviewEnabled
 
-// Module 15128 (GameProfilesServerPreviewExperiment)
+// Module 15114 (GameProfilesServerPreviewExperiment)
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 

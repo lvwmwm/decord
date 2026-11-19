@@ -1,18 +1,14 @@
 // Module ID: 15516
 // Function ID: 15517
-// Dependencies: [15514]
+// Dependencies: [15495, 15494]
 
 // Module 15516
-import _mod15514 from "module_15514" /* 15514 */;
+import _mod15494 from "module_15494" /* 15494 */;
+import _mod15495 from "module_15495" /* 15495 */;
 
+let tmp = Object.keys || (function keys(arg0) {
+  const tmp = _mod15495;
+  return tmp(arg0, _mod15494);
+});
 
-export default (arg0, arg1) => {
-  let tmp3;
-  const tmp = _mod15514(arg0);
-  if (tmp < 0) {
-    tmp3 = max(tmp + arg1, 0);
-  } else {
-    tmp3 = min(tmp, arg1);
-  }
-  return tmp3;
-};
+export default tmp;

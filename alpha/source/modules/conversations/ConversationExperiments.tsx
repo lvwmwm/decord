@@ -1,12 +1,12 @@
-// Module ID: 8541
-// Function ID: 8542
+// Module ID: 8510
+// Function ID: 8511
 // Name: ConversationExperiments
-// Dependencies: [4694, 1072, 1452, 504, 2]
+// Dependencies: [4663, 1072, 1452, 504, 2]
 // Exports: isConversationDebugUXEnabled, isTopicalNavEnabled, useIsConversationDebugUXEnabled, useIsTopicalNavEnabled
 
-// Module 8541 (ConversationExperiments)
+// Module 8510 (ConversationExperiments)
 import Constants from "Constants" /* 1072 */;
-import GuildStore from "GuildStore" /* 4694 */;
+import GuildStore from "GuildStore" /* 4663 */;
 import ApexExperiment_mod from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 

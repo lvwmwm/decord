@@ -1,42 +1,42 @@
-// Module ID: 9981
-// Function ID: 9982
+// Module ID: 9960
+// Function ID: 9961
 // Name: QuickSwitcherActionCreators
-// Dependencies: [5, 32, 6465, 9982, 4676, 4672, 2163, 4726, 4856, 9960, 1072, 4679, 1074, 9961, 1256, 7171, 572, 9986, 5556, 6743, 5559, 6437, 7648, 9987, 9670, 9675, 6776, 9988, 7986, 7450, 9989, 9985, 6744, 7173, 2]
-// Exports: hide, search, selectResult, showTabPicker, switchToResultInNewTab, toggle, trackOpen
+// Dependencies: [5, 32, 6436, 9961, 4645, 4641, 2163, 4695, 4825, 9939, 1072, 4648, 1074, 9940, 1256, 7141, 572, 9964, 5525, 6714, 5528, 6408, 7618, 9965, 9649, 9654, 6748, 9966, 7955, 7420, 9967, 9963, 6715, 7143, 2]
+// Exports: hide, search, selectResult, switchToResultInNewTab, toggle, trackOpen
 
-// Module 9981 (QuickSwitcherActionCreators)
+// Module 9960 (QuickSwitcherActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import ChannelRecord from "ChannelRecord" /* 4676 */;
-import ChannelConstants from "ChannelConstants" /* 4679 */;
-import transitionToChannel from "transitionToChannel" /* 5556 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5559 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6437 */;
-import InAppNavigationRecord from "InAppNavigationRecord" /* 6465 */;
-import transitionToGuild from "transitionToGuild" /* 6743 */;
-import safeTransitionToDefault from "safeTransitionTo" /* 6776 */;
-import ValidationUtilsDefault from "ValidationUtils" /* 7171 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 7173 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7450 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7648 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7986 */;
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9670 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9675 */;
-import _mod9961 from "module_9961" /* 9961 */;
-import ChannelTabRoutes from "ChannelTabRoutes" /* 9985 */;
-import ChannelTabsActionCreators from "ChannelTabsActionCreators" /* 9986 */;
-import DimensionActionCreatorsDefault from "DimensionActionCreators" /* 9987 */;
-import PlaygroundAccessExperiment from "PlaygroundAccessExperiment" /* 9988 */;
-import showChannelTabLimitToast from "showChannelTabLimitToast" /* 9989 */;
+import ChannelRecord from "ChannelRecord" /* 4645 */;
+import ChannelConstants from "ChannelConstants" /* 4648 */;
+import transitionToChannel from "transitionToChannel" /* 5525 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5528 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6408 */;
+import InAppNavigationRecord from "InAppNavigationRecord" /* 6436 */;
+import transitionToGuild from "transitionToGuild" /* 6714 */;
+import safeTransitionToDefault from "safeTransitionTo" /* 6748 */;
+import ValidationUtilsDefault from "ValidationUtils" /* 7141 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 7143 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7420 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7618 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7955 */;
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9649 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9654 */;
+import _mod9940 from "module_9940" /* 9940 */;
+import ChannelTabRoutes from "ChannelTabRoutes" /* 9963 */;
+import ChannelTabsActionCreators from "ChannelTabsActionCreators" /* 9964 */;
+import DimensionActionCreatorsDefault from "DimensionActionCreators" /* 9965 */;
+import PlaygroundAccessExperiment from "PlaygroundAccessExperiment" /* 9966 */;
+import showChannelTabLimitToast from "showChannelTabLimitToast" /* 9967 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelTabsStore from "ChannelTabsStore" /* 9982 */;
-import ChannelStore from "ChannelStore" /* 4672 */;
+import ChannelTabsStore from "ChannelTabsStore" /* 9961 */;
+import ChannelStore from "ChannelStore" /* 4641 */;
 import LibraryApplicationStore from "LibraryApplicationStore" /* 2163 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4726 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4856 */;
-import QuickSwitcherStore from "QuickSwitcherStore" /* 9960 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4695 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4825 */;
+import QuickSwitcherStore from "QuickSwitcherStore" /* 9939 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -52,11 +52,11 @@ let closure_18;
 let map1;
 function getQuickSwitcherOptions(str) {
   const charAtResult = str.charAt(0);
-  if (charAtResult === _mod9961.AutocompleterQuerySymbols.USER) {
+  if (charAtResult === _mod9940.AutocompleterQuerySymbols.USER) {
     let items1;
     const charAtResult1 = str.charAt(1);
-    if (charAtResult1 === _mod9961.AutocompleterQuerySymbols.USER) {
-      const items = [str.slice(2), _mod9961.AutocompleterResultTypes.USER_GLOBAL];
+    if (charAtResult1 === _mod9940.AutocompleterQuerySymbols.USER) {
+      const items = [str.slice(2), _mod9940.AutocompleterResultTypes.USER_GLOBAL];
       items1 = items;
     }
     obj = { query: null, queryMode: null };
@@ -84,8 +84,8 @@ function trackClose(QUICKSWITCHER_RESULT_SELECTED, score) {
   const maxQueryLength = props.maxQueryLength;
   const guildId = SelectedGuildStore.getGuildId();
   const channelId = SelectedChannelStore.getChannelId(guildId);
-  const obj2 = _mod9961;
-  const tmp6 = results[obj2.findNextSelectedResult(obj2, _mod9961.FindResultDirections.DOWN, -1, results)];
+  const obj2 = _mod9940;
+  const tmp6 = results[obj2.findNextSelectedResult(obj2, _mod9940.FindResultDirections.DOWN, -1, results)];
   const obj3 = ValidationUtilsDefault;
   const isEmailResult = obj3.isEmail(query);
   const obj4 = ValidationUtilsDefault;
@@ -100,7 +100,7 @@ function trackClose(QUICKSWITCHER_RESULT_SELECTED, score) {
   if (!tmp11) {
     tmp13 = channelId;
   }
-  const obj6 = { current_channel_id: tmp13, current_channel_static_route: tmp14, current_guild_id: guildId, query_mode: queryMode, query_length: query.length, max_query_length: maxQueryLength, is_email_like: isEmailResult, is_phone_like: isPhoneNumberResult, is_username_like: isUserTagLikeResult, query: tmp15, top_result_type: tmp16, top_result_score: score1, num_results_total: QuickSwitcherStore.getResultTotals(), num_results_users: QuickSwitcherStore.getResultTotals(_mod9961.AutocompleterResultTypes.USER), num_results_text_channels: QuickSwitcherStore.getResultTotals(_mod9961.AutocompleterResultTypes.TEXT_CHANNEL), num_results_voice_channels: QuickSwitcherStore.getResultTotals(_mod9961.AutocompleterResultTypes.VOICE_CHANNEL), num_results_guilds: QuickSwitcherStore.getResultTotals(_mod9961.AutocompleterResultTypes.GUILD), num_results_group_dms: QuickSwitcherStore.getResultTotals(_mod9961.AutocompleterResultTypes.GROUP_DM) };
+  const obj6 = { current_channel_id: tmp13, current_channel_static_route: tmp14, current_guild_id: guildId, query_mode: queryMode, query_length: query.length, max_query_length: maxQueryLength, is_email_like: isEmailResult, is_phone_like: isPhoneNumberResult, is_username_like: isUserTagLikeResult, query: tmp15, top_result_type: tmp16, top_result_score: score1, num_results_total: QuickSwitcherStore.getResultTotals(), num_results_users: QuickSwitcherStore.getResultTotals(_mod9940.AutocompleterResultTypes.USER), num_results_text_channels: QuickSwitcherStore.getResultTotals(_mod9940.AutocompleterResultTypes.TEXT_CHANNEL), num_results_voice_channels: QuickSwitcherStore.getResultTotals(_mod9940.AutocompleterResultTypes.VOICE_CHANNEL), num_results_guilds: QuickSwitcherStore.getResultTotals(_mod9940.AutocompleterResultTypes.GUILD), num_results_group_dms: QuickSwitcherStore.getResultTotals(_mod9940.AutocompleterResultTypes.GROUP_DM) };
   tmp14 = undefined;
   if (tmp11) {
     tmp14 = channelId;
@@ -121,7 +121,7 @@ function trackClose(QUICKSWITCHER_RESULT_SELECTED, score) {
   tmp16 = null;
   if (null != tmp6) {
     let type;
-    if (tmp6.type === _mod9961.AutocompleterResultTypes.IN_APP_NAVIGATION) {
+    if (tmp6.type === _mod9940.AutocompleterResultTypes.IN_APP_NAVIGATION) {
       type = `${tmp6.type}_${tmp6.record.type}`;
     } else {
       type = tmp6.type;
@@ -146,7 +146,7 @@ function trackClose(QUICKSWITCHER_RESULT_SELECTED, score) {
     score = score.score;
     if (null != score) {
       let type2;
-      if (score.type === _mod9961.AutocompleterResultTypes.IN_APP_NAVIGATION) {
+      if (score.type === _mod9940.AutocompleterResultTypes.IN_APP_NAVIGATION) {
         type2 = `${score.type}_${score.record.type}`;
       } else {
         type2 = score.type;
@@ -156,14 +156,14 @@ function trackClose(QUICKSWITCHER_RESULT_SELECTED, score) {
     obj6.selected_type = tmp21;
     obj6.selected_score = score;
     obj6.selected_index = results.indexOf(score);
-    if (_mod9961.AutocompleterResultTypes.GUILD === type3) {
+    if (_mod9940.AutocompleterResultTypes.GUILD === type3) {
       obj6.selected_guild_id = record.id;
     } else {
-      if (_mod9961.AutocompleterResultTypes.TEXT_CHANNEL !== type3) {
-        if (_mod9961.AutocompleterResultTypes.VOICE_CHANNEL !== type3) {
-          if (_mod9961.AutocompleterResultTypes.GROUP_DM === type3) {
+      if (_mod9940.AutocompleterResultTypes.TEXT_CHANNEL !== type3) {
+        if (_mod9940.AutocompleterResultTypes.VOICE_CHANNEL !== type3) {
+          if (_mod9940.AutocompleterResultTypes.GROUP_DM === type3) {
             obj6.selected_channel_id = record.id;
-          } else if (_mod9961.AutocompleterResultTypes.USER === type3) {
+          } else if (_mod9940.AutocompleterResultTypes.USER === type3) {
             obj6.selected_user_id = record.id;
           }
         }
@@ -190,6 +190,11 @@ function show() {
   if (arg1 === undefined) {
     str2 = "";
   }
+  obj = arg2;
+  if (arg2 === undefined) {
+    obj = {};
+  }
+  const isTabPicker = obj.isTabPicker;
   if (!QuickSwitcherStore.isOpen()) {
     const guildId = SelectedGuildStore.getGuildId();
     const channelId = SelectedChannelStore.getChannelId(guildId);
@@ -202,15 +207,15 @@ function show() {
       }
       tmp6 = type;
     }
-    const obj2 = { source: str, current_guild_id: guildId, current_channel_id: channelId, current_channel_type: tmp6 };
-    obj = AnalyticsUtilsDefault;
-    obj.track(constants.QUICKSWITCHER_OPENED, obj2);
+    const obj3 = { source: str, current_guild_id: guildId, current_channel_id: channelId, current_channel_type: tmp6 };
+    const obj2 = AnalyticsUtilsDefault;
+    obj2.track(constants.QUICKSWITCHER_OPENED, obj3);
   }
+  const obj4 = { type: "QUICKSWITCHER_SHOW", isTabPicker };
   const dispatch = DispatcherDefault.dispatch;
-  const obj3 = { type: "QUICKSWITCHER_SHOW" };
   DispatcherDefault;
   const merged = Object.assign(getQuickSwitcherOptions(str2));
-  dispatch(obj3);
+  dispatch(obj4);
 }
 function switchToResult(record) {
   let QUICK_SWITCHER;
@@ -233,10 +238,10 @@ function switchToResult(record) {
   trackClose(constants.QUICKSWITCHER_RESULT_SELECTED, record);
   ({ type, record } = record);
   const obj2 = { page: constants2.QUICK_SWITCHER };
-  if (_mod9961.AutocompleterResultTypes.GUILD === type) {
+  if (_mod9940.AutocompleterResultTypes.GUILD === type) {
     const tmp5Result = transitionToGuild;
     tmp5Result.transitionToGuild(record.id, { navigationReplace: true });
-  } else if (_mod9961.AutocompleterResultTypes.TEXT_CHANNEL === type) {
+  } else if (_mod9940.AutocompleterResultTypes.TEXT_CHANNEL === type) {
     const channel = ChannelStore.getChannel(record.id);
     if (null != channel) {
       const id4 = channel.id;
@@ -248,7 +253,7 @@ function switchToResult(record) {
         tmp5Result12.transitionToChannel(id4, obj3);
       }
     }
-  } else if (_mod9961.AutocompleterResultTypes.VOICE_CHANNEL === type) {
+  } else if (_mod9940.AutocompleterResultTypes.VOICE_CHANNEL === type) {
     const channel1 = ChannelStore.getChannel(record.id);
     if (null != channel1) {
       if (flag) {
@@ -269,7 +274,7 @@ function switchToResult(record) {
         tmp5Result15.transitionToChannel(id3, obj5);
       }
     }
-  } else if (_mod9961.AutocompleterResultTypes.USER === type) {
+  } else if (_mod9940.AutocompleterResultTypes.USER === type) {
     const dMFromUserId = ChannelStore.getDMFromUserId(record.id);
     const obj11 = ChannelStore;
     if (null == dMFromUserId) {
@@ -282,7 +287,7 @@ function switchToResult(record) {
     } else {
       ChannelTabsActionCreators;
     }
-  } else if (_mod9961.AutocompleterResultTypes.GROUP_DM === type) {
+  } else if (_mod9940.AutocompleterResultTypes.GROUP_DM === type) {
     const id2 = record.id;
     const obj8 = { navigationReplace: true };
     const tmp5Result17 = ChannelTabsActionCreators;
@@ -292,24 +297,24 @@ function switchToResult(record) {
     }
     const tmpResult10 = DimensionActionCreatorsDefault;
     tmpResult10.channelListScrollTo(map1, record.id);
-  } else if (_mod9961.AutocompleterResultTypes.APPLICATION === type) {
+  } else if (_mod9940.AutocompleterResultTypes.APPLICATION === type) {
     const activeLibraryApplication = LibraryApplicationStore.getActiveLibraryApplication(record.id);
     const id = record.id;
     ({ QUICK_SWITCHER, QUICK_SWITCHER: QUICK_SWITCHER2 } = authStore3);
     const resolved = Promise.resolve();
-  } else if (_mod9961.AutocompleterResultTypes.GAME_PROFILE === type) {
+  } else if (_mod9940.AutocompleterResultTypes.GAME_PROFILE === type) {
     const obj9 = { gameId: record.id, gameProfileModalChecks: obj10, source: GameProfileAnalyticUtils.GameProfileSources.QuickSwitcher };
     obj10 = { shouldOpenGameProfile: true, gameId: record.id };
     const openGameProfileModal = GameProfileActionCreatorsDefault.openGameProfileModal;
     GameProfileActionCreatorsDefault;
     openGameProfileModal(obj9);
-  } else if (_mod9961.AutocompleterResultTypes.LINK === type) {
+  } else if (_mod9940.AutocompleterResultTypes.LINK === type) {
     if (null != record.inviteCode) {
       openInviteFromQuickSwitcher(record.inviteCode);
     } else {
       safeTransitionToDefault(record.path, { navigationReplace: true });
     }
-  } else if (_mod9961.AutocompleterResultTypes.IN_APP_NAVIGATION === type) {
+  } else if (_mod9940.AutocompleterResultTypes.IN_APP_NAVIGATION === type) {
     if (record.record.type !== InAppNavigationType.SETTINGS) {
       if (record.record.type === InAppNavigationType.PLAYGROUND) {
         PlaygroundAccessExperiment;
@@ -344,7 +349,7 @@ let obj = function _openInviteFromQuickSwitcher() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -381,7 +386,7 @@ let obj = function _openInviteFromQuickSwitcher() {
               obj.dispatch(obj7);
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp19) {
           c4 = 3;
@@ -399,16 +404,16 @@ const ChannelRecordBase = ChannelRecord.ChannelRecordBase;
 const isStaticChannelRoute = ChannelConstants.isStaticChannelRoute;
 const CollectibleShopTab = CollectiblesShopConstants.CollectibleShopTab;
 obj = {};
-obj[_mod9961.AutocompleterQuerySymbols.USER] = _mod9961.AutocompleterResultTypes.USER;
-obj[_mod9961.AutocompleterQuerySymbols.TEXT_CHANNEL] = _mod9961.AutocompleterResultTypes.TEXT_CHANNEL;
-obj[_mod9961.AutocompleterQuerySymbols.VOICE_CHANNEL] = _mod9961.AutocompleterResultTypes.VOICE_CHANNEL;
-obj[_mod9961.AutocompleterQuerySymbols.GUILD] = _mod9961.AutocompleterResultTypes.GUILD;
-obj[_mod9961.AutocompleterQuerySymbols.GAME_PROFILE] = _mod9961.AutocompleterResultTypes.GAME_PROFILE;
+obj[_mod9940.AutocompleterQuerySymbols.USER] = _mod9940.AutocompleterResultTypes.USER;
+obj[_mod9940.AutocompleterQuerySymbols.TEXT_CHANNEL] = _mod9940.AutocompleterResultTypes.TEXT_CHANNEL;
+obj[_mod9940.AutocompleterQuerySymbols.VOICE_CHANNEL] = _mod9940.AutocompleterResultTypes.VOICE_CHANNEL;
+obj[_mod9940.AutocompleterQuerySymbols.GUILD] = _mod9940.AutocompleterResultTypes.GUILD;
+obj[_mod9940.AutocompleterQuerySymbols.GAME_PROFILE] = _mod9940.AutocompleterResultTypes.GAME_PROFILE;
 let closure_21 = freeze(obj);
-const USER = _mod9961.AutocompleterQuerySymbols.USER;
-const TEXT_CHANNEL = _mod9961.AutocompleterQuerySymbols.TEXT_CHANNEL;
-const VOICE_CHANNEL = _mod9961.AutocompleterQuerySymbols.VOICE_CHANNEL;
-const regExp = new RegExp("^" + USER + "|" + TEXT_CHANNEL + "|" + VOICE_CHANNEL + "|\\" + _mod9961.AutocompleterQuerySymbols.GUILD + "|\\" + _mod9961.AutocompleterQuerySymbols.GAME_PROFILE);
+const USER = _mod9940.AutocompleterQuerySymbols.USER;
+const TEXT_CHANNEL = _mod9940.AutocompleterQuerySymbols.TEXT_CHANNEL;
+const VOICE_CHANNEL = _mod9940.AutocompleterQuerySymbols.VOICE_CHANNEL;
+const regExp = new RegExp("^" + USER + "|" + TEXT_CHANNEL + "|" + VOICE_CHANNEL + "|\\" + _mod9940.AutocompleterQuerySymbols.GUILD + "|\\" + _mod9940.AutocompleterQuerySymbols.GAME_PROFILE);
 let items = [, , ];
 ({ SETTINGS: arr[0], PLAYGROUND: arr[1], SHOP_ORBS_TAB: arr[2] } = InAppNavigationType);
 const set = new Set(items);
@@ -435,29 +440,6 @@ export function trackOpen(source) {
 }
 export { trackClose };
 export { show };
-export function showTabPicker(source) {
-  if (!QuickSwitcherStore.isOpen()) {
-    const guildId = SelectedGuildStore.getGuildId();
-    const channelId = SelectedChannelStore.getChannelId(guildId);
-    let tmp6;
-    if (null != channelId) {
-      const channel = ChannelStore.getChannel(channelId);
-      let type = null;
-      if (null != channel) {
-        type = channel.type;
-      }
-      tmp6 = type;
-    }
-    const obj2 = { source, current_guild_id: guildId, current_channel_id: channelId, current_channel_type: tmp6 };
-    obj = AnalyticsUtilsDefault;
-    obj.track(constants.QUICKSWITCHER_OPENED, obj2);
-  }
-  const obj3 = { type: "QUICKSWITCHER_SHOW", isTabPicker: true };
-  const dispatch = DispatcherDefault.dispatch;
-  DispatcherDefault;
-  const merged = Object.assign(getQuickSwitcherOptions(""));
-  dispatch(obj3);
-}
 export function hide() {
   trackClose(constants.QUICKSWITCHER_CLOSED);
   obj = DispatcherDefault;
@@ -518,7 +500,7 @@ export function switchToResultInNewTab(type) {
   type = type.type;
   const tmp3 = _require;
   let tmp4 = prop;
-  if (require("module_9961").AutocompleterResultTypes.TEXT_CHANNEL !== type) {
+  if (require("module_9940").AutocompleterResultTypes.TEXT_CHANNEL !== type) {
     if (tmp3(tmp4[13]).AutocompleterResultTypes.VOICE_CHANNEL !== type) {
       if (tmp3(tmp4[13]).AutocompleterResultTypes.GROUP_DM !== type) {
         if (tmp3(tmp4[13]).AutocompleterResultTypes.DM !== type) {
@@ -547,7 +529,7 @@ export function switchToResultInNewTab(type) {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "+60" };
                   }
                 } else {
                   try {
@@ -559,16 +541,16 @@ export function switchToResultInNewTab(type) {
                         throw value;
                       } else if (arg0 === 2) {
                         c3 = 3;
-                        const obj4 = { value, done: true };
-                        return obj4;
+                        const obj3 = { value, done: true };
+                        return obj3;
                       } else {
                         tmp4 = undefined;
                         const obj5 = { recipientIds: items, location: "Quickswitcher", navigateToChannel: false };
                         items = [tmp4.record.id];
-                        const obj3 = tmp(prop[22]);
+                        const obj4 = tmp(prop[22]);
                         prop = 1;
                         c3 = 1;
-                        const obj6 = { value: obj3.openPrivateChannel(obj5), done: false };
+                        const obj6 = { value: obj4.openPrivateChannel(obj5), done: false };
                         return obj6;
                       }
                     } else if (arg0 === 1) {
@@ -581,13 +563,14 @@ export function switchToResultInNewTab(type) {
                     } else {
                       tmp4 = value;
                       obj = tmp4(prop[17]);
-                      obj.openChannelTabActive(tmp4, null, closure_129_1, closure_129_3, closure_129_2);
+                      const obj8 = { sourceTabId: closure_129_3, newTabPickerSelection: closure_129_2 };
+                      obj.openChannelTabActive(tmp4, null, closure_129_1, obj8);
                       c3 = 3;
-                      return { value: "HermesInternal", done: null };
+                      return { value: "HermesInternal", done: "+60" };
                     }
-                  } catch (tmp19) {
+                  } catch (tmp20) {
                     c3 = 3;
-                    throw tmp19;
+                    throw tmp20;
                   }
                 }
               })();
@@ -615,7 +598,7 @@ export function switchToResultInNewTab(type) {
                       tabLocationForPath = tmp12Result3.getFriendsTabLocation();
                     }
                     const tmp12Result4 = ChannelTabsActionCreators;
-                    if (null != tmp12Result4.openFreshTabAt(tabLocationForPath, str, prop)) {
+                    if (tmp12Result4.openTabWithoutHistory(tabLocationForPath, str, prop)) {
                       fn();
                     }
                   } else {
@@ -631,7 +614,7 @@ export function switchToResultInNewTab(type) {
               let items = [type.record.id];
               const tmp3Result4 = tmp3(tmp4[32]);
               HermesBuiltin.arraySpread(items, tmp3Result4.getGuildTransitionRoute(type.record.id), 1);
-              const tmp19 = items;
+              const tmp20 = constants3;
               navigateInNewTab(HermesBuiltin.apply(CHANNEL, items, constants3), () => {
                 obj = transitionToGuild;
                 return obj.transitionToGuild(result.record.id, { navigationReplace: true });
@@ -667,7 +650,7 @@ export function switchToResultInNewTab(type) {
     if (guildId == null) {
       guildId = null;
     }
-    const obj8 = str(tmp4[16]);
+    let obj8 = str(tmp4[16]);
     obj8.dispatch({ type: "QUICKSWITCHER_HIDE" });
     trackClose(constants.QUICKSWITCHER_RESULT_SELECTED, type);
     let obj5 = { type: "QUICKSWITCHER_SWITCH_TO", result: type };
@@ -675,8 +658,9 @@ export function switchToResultInNewTab(type) {
     obj9.dispatch(obj5);
     const tmp3Result5 = tmp3(tmp4[30]);
     if (tmp3Result5.ensureRoomForChannelTab()) {
+      let obj6 = { newTabPickerSelection: prop };
       const tmp3Result6 = tmp3(tmp4[17]);
-      tmp3Result6.openChannelTabActive(id, guildId, str, ChannelTabsStore.getActiveTabId(), prop);
+      tmp3Result6.openChannelTabActive(id, guildId, str, obj6);
     }
   }
 }

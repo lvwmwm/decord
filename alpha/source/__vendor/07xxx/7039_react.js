@@ -1,10 +1,10 @@
 // Module ID: 7039
 // Function ID: 7040
 // Name: react
-// Dependencies: [7040]
+// Dependencies: [19]
 
 // Module 7039 (react)
-import react from "react" /* 7040 */;
+import react from "react" /* 19 */;
 
 
-export default react;
+export const GestureHandlerRefContext = react.createContext(null);

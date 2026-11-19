@@ -1,10 +1,10 @@
-// Module ID: 11976
-// Function ID: 11977
+// Module ID: 11954
+// Function ID: 11955
 // Name: ConnectionsRoleActionCreators
-// Dependencies: [5, 1072, 1285, 572, 7406, 2]
+// Dependencies: [5, 1072, 1285, 572, 7376, 2]
 // Exports: fetchRoleConnectionsConfiguration, fetchUserApplicationRoleConnections, putRoleConnectionsConfigurations
 
-// Module 11976 (ConnectionsRoleActionCreators)
+// Module 11954 (ConnectionsRoleActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -29,7 +29,7 @@ let obj = function _putRoleConnectionsConfigurations() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -94,7 +94,7 @@ let obj = function _putRoleConnectionsConfigurations() {
             const obj3 = closure_132_1(closure_132_2[3]);
             obj3.dispatch(obj11);
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp28) {
           c6 = 3;

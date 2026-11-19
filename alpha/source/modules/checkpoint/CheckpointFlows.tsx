@@ -1,12 +1,12 @@
-// Module ID: 12419
-// Function ID: 12420
+// Module ID: 12402
+// Function ID: 12403
 // Name: CheckpointFlows
-// Dependencies: [6246, 6247, 12420, 12421, 2]
+// Dependencies: [6217, 6218, 12403, 12404, 2]
 // Exports: getCheckpointFlow, getCheckpointReplayRoute, getCheckpointRoutes, hasCheckpointSummaryRoute
 
-// Module 12419 (CheckpointFlows)
-import CheckpointNavigation from "CheckpointNavigation" /* 6246 */;
-import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6247 */;
+// Module 12402 (CheckpointFlows)
+import CheckpointNavigation from "CheckpointNavigation" /* 6217 */;
+import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6218 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -31,9 +31,9 @@ function getAdjacentCheckpointRoute(arg0) {
     isCharacterCreatorEnabled = true;
   }
   if (flow === require("CheckpointNavigation").CheckpointFlow.SHARED_DATA) {
-    prop = tmp2(12420).CHECKPOINT_SHARED_DATA_FLOW;
+    prop = tmp2(12403).CHECKPOINT_SHARED_DATA_FLOW;
   } else {
-    prop = tmp2(12421).CHECKPOINT_NO_SHARED_DATA_FLOW;
+    prop = tmp2(12404).CHECKPOINT_NO_SHARED_DATA_FLOW;
   }
   const found = prop.filter((item) => {
     if (item === CheckpointNavigation.CheckpointRoute.SHARE) {
@@ -43,7 +43,7 @@ function getAdjacentCheckpointRoute(arg0) {
     } else {
       let flag2 = isCharacterCreatorEnabled;
       if (!flag2) {
-        let result = item === tmp(6246).CheckpointRoute.INTRODUCTION;
+        let result = item === tmp(6217).CheckpointRoute.INTRODUCTION;
         if (!result) {
           const tmpResult = CheckpointNavigation;
           result = tmpResult.isCheckpointCustomizationRoute(item);
@@ -158,9 +158,9 @@ export function getCheckpointRoutes(flow) {
     isCharacterCreatorEnabled = true;
   }
   if (flow === CheckpointNavigation.CheckpointFlow.SHARED_DATA) {
-    prop = tmp(12420).CHECKPOINT_SHARED_DATA_FLOW;
+    prop = tmp(12403).CHECKPOINT_SHARED_DATA_FLOW;
   } else {
-    prop = tmp(12421).CHECKPOINT_NO_SHARED_DATA_FLOW;
+    prop = tmp(12404).CHECKPOINT_NO_SHARED_DATA_FLOW;
   }
   return prop.filter((item) => {
     if (item === CheckpointNavigation.CheckpointRoute.SHARE) {
@@ -170,7 +170,7 @@ export function getCheckpointRoutes(flow) {
     } else {
       let flag2 = isCharacterCreatorEnabled;
       if (!flag2) {
-        let result = item === tmp(6246).CheckpointRoute.INTRODUCTION;
+        let result = item === tmp(6217).CheckpointRoute.INTRODUCTION;
         if (!result) {
           const tmpResult = CheckpointNavigation;
           result = tmpResult.isCheckpointCustomizationRoute(item);

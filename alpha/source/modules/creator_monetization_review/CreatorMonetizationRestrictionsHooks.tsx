@@ -1,15 +1,15 @@
-// Module ID: 6782
-// Function ID: 6783
+// Module ID: 6754
+// Function ID: 6755
 // Name: CreatorMonetizationRestrictionsHooks
-// Dependencies: [19, 4748, 4694, 1072, 6783, 6784, 504, 4747, 2]
+// Dependencies: [19, 4717, 4663, 1072, 6755, 6756, 504, 4716, 2]
 // Exports: useIsMonetizationReapplicationDisabled, useShouldHideGuildPurchaseEntryPoints, useShouldRestrictUpdatingCreatorMonetizationSettings
 
-// Module 6782 (CreatorMonetizationRestrictionsHooks)
-import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 4748 */;
-import useUnmountAbortSignalDefault from "useUnmountAbortSignal" /* 6783 */;
-import GuildRoleSubscriptionsActionCreatorsAll from "GuildRoleSubscriptionsActionCreators" /* 6784 */;
+// Module 6754 (CreatorMonetizationRestrictionsHooks)
+import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 4717 */;
+import useUnmountAbortSignalDefault from "useUnmountAbortSignal" /* 6755 */;
+import GuildRoleSubscriptionsActionCreatorsAll from "GuildRoleSubscriptionsActionCreators" /* 6756 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4694 */;
+import GuildStore from "GuildStore" /* 4663 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -242,6 +242,6 @@ export function useIsMonetizationReapplicationDisabled(id2) {
     }
     return getMonetizationRestrictionsFetchState(tmp2) === constants.FETCHING;
   });
-  tmpResult4 = tmp(4747);
+  tmpResult4 = tmp(4716);
   return obj2;
 }

@@ -1,14 +1,14 @@
 // Module ID: 2189
 // Function ID: 2190
 // Name: LocaleStore
-// Dependencies: [5, 2190, 1231, 4633, 1113, 504, 572, 2]
+// Dependencies: [5, 2190, 1231, 4603, 1113, 504, 572, 2]
 
 // Module 2189 (LocaleStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl from "intl" /* 1113 */;
 import IntlLoaderStore from "IntlLoaderStore" /* 2190 */;
-import DiscordNativeDefault from "DiscordNative" /* 4633 */;
+import DiscordNativeDefault from "DiscordNative" /* 4603 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import size from "module_2" /* 2 */;
@@ -30,7 +30,7 @@ let obj = function _getSystemLocale() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {

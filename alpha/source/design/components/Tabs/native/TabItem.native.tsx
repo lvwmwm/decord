@@ -1,18 +1,18 @@
-// Module ID: 13460
-// Function ID: 13461
+// Module ID: 13442
+// Function ID: 13443
 // Name: TabItem
-// Dependencies: [19, 17, 21, 1655, 4823, 575, 5424, 5414, 1708, 13461, 1380, 1113, 8913, 2]
+// Dependencies: [19, 17, 21, 1655, 4792, 575, 5393, 5383, 1708, 13443, 1380, 1113, 8887, 2]
 // Exports: TabItem
 
-// Module 13460 (TabItem)
+// Module 13442 (TabItem)
 import nativeDefault from "native" /* 575 */;
 import _mod1655 from "module_1655" /* 1655 */;
 import _mod1708 from "module_1708" /* 1708 */;
-import spring_spring from "spring/spring" /* 5424 */;
+import spring_spring from "spring/spring" /* 5393 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const module_1655 = _mod1655;
@@ -25,7 +25,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp2;
-const Text_Text = tmp2(5414);
+const Text_Text = tmp2(5383);
 function useAnimatedTextStyle(arg0) {
   let activeIndex;
   let index;
@@ -220,14 +220,14 @@ export function TabItem(arg0) {
   items2[1] = { flexGrow: num };
   const merged1 = Object.assign(merged);
   formatToPlainStringResult = undefined;
-  tmp3Result = index(13461);
+  tmp3Result = index(13443);
   const tmp3Result2 = index(1380);
   if (tmp3Result2.isAndroid()) {
     const intl = tmp3(1113).intl;
     const obj3 = { position: index + 1, tabCount: itemCount };
     formatToPlainStringResult = intl.formatToPlainString(tmp3(1113).t["4EsQA1"], obj3);
   }
-  items3 = [closure_5(index(5414).Text, { animated: true, variant: "body-sm/semibold", style: tmp9, lineClamp: 1, children: label }), , ];
+  items3 = [closure_5(index(5383).Text, { animated: true, variant: "body-sm/semibold", style: tmp9, lineClamp: 1, children: label }), , ];
   let tmp14Result = null;
   if (null != count) {
     const obj4 = { count, index, activeIndex, pressed, variant };
@@ -238,7 +238,7 @@ export function TabItem(arg0) {
   if (null != indicatorDot) {
     let str = "primary";
     const obj5 = { style: tmp2.indicatorDot, children: closure_5(IndicatorDot, obj6) };
-    IndicatorDot = tmp3(8913).IndicatorDot;
+    IndicatorDot = tmp3(8887).IndicatorDot;
     const tmp18 = closure_4;
     if ("overlay" === variant) {
       str = "neutral";

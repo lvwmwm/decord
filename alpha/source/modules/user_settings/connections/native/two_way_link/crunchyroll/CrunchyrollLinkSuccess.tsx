@@ -1,21 +1,21 @@
-// Module ID: 7126
-// Function ID: 7127
+// Module ID: 7096
+// Function ID: 7097
 // Name: CrunchyrollLinkSuccess
-// Dependencies: [19, 17, 21, 4823, 6955, 5510, 7127, 5414, 1113, 6928, 5421, 2]
+// Dependencies: [19, 17, 21, 4792, 6925, 5479, 7097, 5383, 1113, 6898, 5390, 2]
 // Exports: default
 
-// Module 7126 (CrunchyrollLinkSuccess)
+// Module 7096 (CrunchyrollLinkSuccess)
 import react_native from "react-native" /* 17 */;
 import intl4 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5414 */;
-import components_Button_Button from "components/Button/Button" /* 5421 */;
-import FastImageDefault from "FastImage" /* 5510 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6928 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 6955 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7127 */;
+import Text_Text from "Text/Text" /* 5383 */;
+import components_Button_Button from "components/Button/Button" /* 5390 */;
+import FastImageDefault from "FastImage" /* 5479 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6898 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 6925 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7097 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

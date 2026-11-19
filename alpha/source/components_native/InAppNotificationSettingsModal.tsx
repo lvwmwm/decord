@@ -1,22 +1,22 @@
-// Module ID: 11113
-// Function ID: 11114
+// Module ID: 11091
+// Function ID: 11092
 // Name: InAppNotificationSettingsModal
-// Dependencies: [19, 4676, 4672, 4765, 6460, 1388, 1072, 21, 7396, 7391, 5439, 7620, 1113, 11114, 8106, 504, 7006, 7003, 2]
+// Dependencies: [19, 4645, 4641, 4734, 6431, 1388, 1072, 21, 7366, 7361, 5408, 7590, 1113, 11092, 8075, 504, 6976, 6973, 2]
 
-// Module 11113 (InAppNotificationSettingsModal)
+// Module 11091 (InAppNotificationSettingsModal)
 import intl4 from "intl" /* 1113 */;
-import ChannelRecord from "ChannelRecord" /* 4676 */;
-import useChannelName from "useChannelName" /* 5439 */;
-import NavigatorHeader2 from "NavigatorHeader" /* 7006 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7391 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7396 */;
-import _mod7620 from "module_7620" /* 7620 */;
-import openUserSettings from "openUserSettings" /* 8106 */;
-import ChannelSettingsNotificationsDefault from "ChannelSettingsNotifications" /* 11114 */;
+import ChannelRecord from "ChannelRecord" /* 4645 */;
+import useChannelName from "useChannelName" /* 5408 */;
+import NavigatorHeader2 from "NavigatorHeader" /* 6976 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7361 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7366 */;
+import _mod7590 from "module_7590" /* 7590 */;
+import openUserSettings from "openUserSettings" /* 8075 */;
+import ChannelSettingsNotificationsDefault from "ChannelSettingsNotifications" /* 11092 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4672 */;
-import RelationshipStore from "RelationshipStore" /* 4765 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6460 */;
+import ChannelStore from "ChannelStore" /* 4641 */;
+import RelationshipStore from "RelationshipStore" /* 4734 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6431 */;
 import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
@@ -86,9 +86,9 @@ class InAppNotificationSettingsScreen extends PureComponent {
       const obj = useChannelName;
       const channelName = obj.computeChannelName(channel, UserStore, RelationshipStore);
       const obj2 = { children: unpackModuleId(FormSwitchRow, obj3) };
-      const FormSection = _mod7620.FormSection;
+      const FormSection = _mod7590.FormSection;
       obj3 = { label: intl.format(intl4.t["u/rEuc"], obj4), value: tmp2, onValueChange: tmp.handleGroupDMMute };
-      FormSwitchRow = _mod7620.FormSwitchRow;
+      FormSwitchRow = _mod7590.FormSwitchRow;
       intl = intl4.intl;
       obj4 = { name: channelName };
       return unpackModuleId(FormSection, obj2);
@@ -132,17 +132,17 @@ class InAppNotificationSettingsScreen extends PureComponent {
     let items;
     let obj3;
     const obj = { children: items };
-    const Form = _mod7620.Form;
+    const Form = _mod7590.Form;
     items = [this.renderChannelNotificationSettings(), , ];
     const obj2 = { title: intl.string(intl4.t.clE4PU), children: unpackModuleId(FormRow, obj3) };
-    const FormSection = _mod7620.FormSection;
+    const FormSection = _mod7590.FormSection;
     intl = intl4.intl;
-    obj3 = { label: intl2.string(intl4.t.cHMaba), onPress: this.handleOpenUserSettings, trailing: unpackModuleId(_mod7620.FormRow.Arrow, {}) };
-    FormRow = _mod7620.FormRow;
+    obj3 = { label: intl2.string(intl4.t.cHMaba), onPress: this.handleOpenUserSettings, trailing: unpackModuleId(_mod7590.FormRow.Arrow, {}) };
+    FormRow = _mod7590.FormRow;
     intl2 = intl4.intl;
     items[1] = unpackModuleId(FormSection, obj2);
     const obj4 = { children: intl3.string(intl4.t.avgbp1) };
-    const FormHint = _mod7620.FormHint;
+    const FormHint = _mod7590.FormHint;
     intl3 = intl4.intl;
     items[2] = unpackModuleId(FormHint, obj4);
     return authStore2(Form, obj);
@@ -184,7 +184,7 @@ const memoResult = react.memo(function InAppNotificationSettingsModal(channelId)
     obj3 = NavigatorHeader2;
     return obj;
   }, items);
-  return closure_11(channelId(7003).Navigator, { screens, initialRouteName: "IN_APP_NOTIFICATION_SETTINGS" });
+  return closure_11(channelId(6973).Navigator, { screens, initialRouteName: "IN_APP_NOTIFICATION_SETTINGS" });
 });
 let result = size.fileFinishedImporting("components_native/InAppNotificationSettingsModal.tsx");
 

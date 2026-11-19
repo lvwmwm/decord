@@ -1,10 +1,10 @@
-// Module ID: 12653
-// Function ID: 12654
+// Module ID: 12636
+// Function ID: 12637
 // Name: CheckpointWelcomeScreen
-// Dependencies: [17, 1388, 5877, 21, 575, 4823, 1496, 504, 4879, 1113, 3307, 12654, 12434, 12655, 12667, 3339, 12668, 2]
+// Dependencies: [17, 1388, 5848, 21, 575, 4792, 1496, 504, 4848, 1113, 3307, 12637, 12417, 12638, 12650, 3339, 12651, 2]
 // Exports: default
 
-// Module 12653 (CheckpointWelcomeScreen)
+// Module 12636 (CheckpointWelcomeScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -12,16 +12,16 @@ import intl4 from "intl" /* 1113 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
 import _modDef3307 from "module_3307" /* 3307 */;
 import _modDef3339 from "module_3339" /* 3339 */;
-import UserUtils from "UserUtils" /* 4879 */;
-import CheckpointScreen from "CheckpointScreen" /* 12434 */;
-import useIsCheckpointWideDefault from "useIsCheckpointWide" /* 12654 */;
-import CheckpointNavigationControls from "CheckpointNavigationControls" /* 12655 */;
-import TextWritingAnimation from "TextWritingAnimation" /* 12667 */;
-import CheckpointKnickKnacksDefault from "CheckpointKnickKnacks" /* 12668 */;
+import UserUtils from "UserUtils" /* 4848 */;
+import CheckpointScreen from "CheckpointScreen" /* 12417 */;
+import useIsCheckpointWideDefault from "useIsCheckpointWide" /* 12637 */;
+import CheckpointNavigationControls from "CheckpointNavigationControls" /* 12638 */;
+import TextWritingAnimation from "TextWritingAnimation" /* 12650 */;
+import CheckpointKnickKnacksDefault from "CheckpointKnickKnacks" /* 12651 */;
 import UserStore from "UserStore" /* 1388 */;
-import CheckpointConstants from "CheckpointConstants" /* 5877 */;
+import CheckpointConstants from "CheckpointConstants" /* 5848 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const CheckpointScreenDefault = CheckpointScreen;

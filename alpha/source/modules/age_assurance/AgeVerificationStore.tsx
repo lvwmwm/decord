@@ -1,9 +1,9 @@
-// Module ID: 6320
-// Function ID: 6321
+// Module ID: 6291
+// Function ID: 6292
 // Name: AgeVerificationStore
 // Dependencies: [1388, 510, 504, 572, 2]
 
-// Module 6320 (AgeVerificationStore)
+// Module 6291 (AgeVerificationStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;

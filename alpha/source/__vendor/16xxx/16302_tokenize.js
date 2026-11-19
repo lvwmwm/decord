@@ -1,29 +1,36 @@
 // Module ID: 16302
 // Function ID: 16303
 // Name: tokenize
-// Dependencies: [16244]
+// Dependencies: [16235]
 
 // Module 16302 (tokenize)
-import tokenize from "tokenize" /* 16244 */;
+import tokenize from "tokenize" /* 16235 */;
 
+let items;
 let obj2;
-const Hash = tokenize.TYPE.Hash;
-let obj = {
-  name: "Hash",
+const LeftParenthesis = tokenize.TYPE.LeftParenthesis;
+const RightParenthesis = tokenize.TYPE.RightParenthesis;
+const obj = {
+  name: "Parentheses",
   structure: obj2,
-  parse() {
-    let scanner;
+  parse(call, arg1) {
+    const self = this;
     const tokenStart = this.scanner.tokenStart;
-    this.eat(Hash);
-    const obj = { type: "Hash", loc: this.getLocation(tokenStart, this.scanner.tokenStart), value: scanner.substrToCursor(tokenStart + 1) };
-    scanner = this.scanner;
-    return obj;
+    this.eat(LeftParenthesis);
+    const callResult = call.call(self, arg1);
+    if (!self.scanner.eof) {
+      self.eat(RightParenthesis);
+    }
+    const element = { type: "Parentheses", loc: self.getLocation(tokenStart, self.scanner.tokenStart), children: callResult };
+    return element;
   },
-  generate(value) {
-    this.chunk("#");
-    this.chunk(value.value);
+  generate(arg0) {
+    this.chunk("(");
+    this.children(arg0);
+    this.chunk(")");
   }
 };
-obj2 = { value: String };
+obj2 = { children: items };
+items = [[]];
 
 export default obj;

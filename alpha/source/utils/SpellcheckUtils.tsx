@@ -1,12 +1,12 @@
-// Module ID: 7206
-// Function ID: 7207
+// Module ID: 7176
+// Function ID: 7177
 // Name: SpellcheckUtils
-// Dependencies: [5, 7174, 4633, 1380, 7207, 2]
+// Dependencies: [5, 7144, 4603, 1380, 7177, 2]
 // Exports: addResultListener, clearCachedMisspelling, getCachedMisspelling, getCorrections, isMisspelled, isSupported, isSupportedInPopouts, replaceWithCorrection, setAppLocale, setEnabled, setLearnedWords
 
-// Module 7206 (SpellcheckUtils)
-import DiscordNativeDefault from "DiscordNative" /* 4633 */;
-import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 7174 */;
+// Module 7176 (SpellcheckUtils)
+import DiscordNativeDefault from "DiscordNative" /* 4603 */;
+import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 7144 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1380 */;
 import size from "module_2" /* 2 */;
@@ -28,7 +28,7 @@ let obj = function _setEnabled() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -58,7 +58,7 @@ let obj = function _setEnabled() {
               closure_1.enabled = enabled;
             }
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp12) {
           c3 = 3;
@@ -83,7 +83,7 @@ obj = function _setLearnedWords() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -117,7 +117,7 @@ obj = function _setLearnedWords() {
             learnedWords.setLearnedWords(closure_0);
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp13) {
         c3 = 3;
@@ -141,7 +141,7 @@ obj = function _isMisspelled() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -219,7 +219,7 @@ obj = function _getCorrections() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -309,7 +309,7 @@ obj = function _getCachedMisspelling() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -399,7 +399,7 @@ obj = function _replaceWithCorrection() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -433,7 +433,7 @@ obj = function _replaceWithCorrection() {
             tmp.replaceMisspelling(closure_0, closure_1);
           }
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp15) {
         c4 = 3;

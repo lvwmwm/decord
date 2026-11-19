@@ -1,17 +1,17 @@
-// Module ID: 20132
-// Function ID: 20133
+// Module ID: 20143
+// Function ID: 20144
 // Name: QuestFetchManager
-// Dependencies: [5, 8316, 1089, 7395, 9849, 1242, 9858, 1380, 6559, 20133, 2]
+// Dependencies: [5, 8285, 1089, 7365, 9828, 1242, 9837, 1380, 6530, 20144, 2]
 
-// Module 20132 (QuestFetchManager)
+// Module 20143 (QuestFetchManager)
 import DurationsDefault from "Durations" /* 1089 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import QuestsEligibility from "QuestsEligibility" /* 9849 */;
-import QuestActionCreators from "QuestActionCreators" /* 9858 */;
+import QuestsEligibility from "QuestsEligibility" /* 9828 */;
+import QuestActionCreators from "QuestActionCreators" /* 9837 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import QuestStore from "QuestStore" /* 8316 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
+import QuestStore from "QuestStore" /* 8285 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
 import size from "module_2" /* 2 */;
 
 let c0;
@@ -57,7 +57,7 @@ class QuestFetchManager extends AutomaticLifecycleManager {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } else {
           try {
@@ -76,7 +76,7 @@ class QuestFetchManager extends AutomaticLifecycleManager {
                 obj._fetch("post_connect_recurring");
               }
               c0 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             }
           } catch (tmp6) {
             c0 = 3;
@@ -159,7 +159,7 @@ class QuestFetchManager extends AutomaticLifecycleManager {
       const tmp6 = importDefault;
       const tmpResult2 = PlatformUtils;
       if (tmpResult2.isMac()) {
-        const tmp6Result = tmp6(6559);
+        const tmp6Result = tmp6(6530);
         const state = tmp6Result.getState();
       }
     }

@@ -1,18 +1,18 @@
-// Module ID: 17481
-// Function ID: 17482
+// Module ID: 17474
+// Function ID: 17475
 // Name: EffectiveNotifSettingsActionCreators
-// Dependencies: [5, 502, 14867, 1072, 559, 14881, 572, 1285, 14870, 2]
+// Dependencies: [5, 502, 14853, 1072, 559, 14867, 572, 1285, 14856, 2]
 // Exports: cancelEffectiveNotifSettingsRetry, retryEffectiveNotifSettings
 
-// Module 17481 (EffectiveNotifSettingsActionCreators)
+// Module 17474 (EffectiveNotifSettingsActionCreators)
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
-import DeclarativeNotificationSettingsRedesignExperiment from "DeclarativeNotificationSettingsRedesignExperiment" /* 14881 */;
+import DeclarativeNotificationSettingsRedesignExperiment from "DeclarativeNotificationSettingsRedesignExperiment" /* 14867 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 14867 */;
+import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 14853 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, closure_2, id, sum;
@@ -41,7 +41,7 @@ let obj = function _fetchEffectiveNotifSettings() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c3;
@@ -113,7 +113,7 @@ let obj = function _fetchEffectiveNotifSettings() {
                 c3 = undefined;
               }
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             }
           } else if (arg0 === 1) {
             c5 = 3;
@@ -159,14 +159,14 @@ let obj = function _fetchEffectiveNotifSettings() {
                 c3 = undefined;
               }
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             } else {
               c3 = 0;
               if (c3 === requestId) {
                 c3 = undefined;
               }
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             }
           }
           c3 = 0;
@@ -175,7 +175,7 @@ let obj = function _fetchEffectiveNotifSettings() {
           }
         }
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       } catch (tmp82) {
         closure_2 = tmp82;
         if (0 === c3) {

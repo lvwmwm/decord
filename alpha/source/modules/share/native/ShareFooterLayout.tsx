@@ -1,19 +1,19 @@
-// Module ID: 9996
-// Function ID: 9997
+// Module ID: 9974
+// Function ID: 9975
 // Name: ShareFooterLayout
-// Dependencies: [19, 17, 21, 4823, 575, 5398, 1655, 5424, 5425, 5414, 2]
+// Dependencies: [19, 17, 21, 4792, 575, 5367, 1655, 5393, 5394, 5383, 2]
 // Exports: default
 
-// Module 9996 (ShareFooterLayout)
+// Module 9974 (ShareFooterLayout)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5398 */;
-import spring_spring from "spring/spring" /* 5424 */;
-import springPresets from "springPresets" /* 5425 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5367 */;
+import spring_spring from "spring/spring" /* 5393 */;
+import springPresets from "springPresets" /* 5394 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -25,7 +25,7 @@ let obj4;
 let tmp2;
 let tmp5;
 const _modDef1655 = tmp2(1655);
-const Text_Text = tmp5(5414);
+const Text_Text = tmp5(5383);
 let View = react_native.View;
 ({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;

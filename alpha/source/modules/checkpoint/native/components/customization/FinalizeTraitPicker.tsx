@@ -1,27 +1,27 @@
-// Module ID: 12710
-// Function ID: 12711
+// Module ID: 12693
+// Function ID: 12694
 // Name: FinalizeTraitPicker
-// Dependencies: [19, 17, 21, 4823, 12711, 575, 6244, 12713, 5414, 1113, 3339, 12712, 12720, 12721, 12716, 12722, 5921, 5922, 2]
+// Dependencies: [19, 17, 21, 4792, 12694, 575, 6215, 12696, 5383, 1113, 3339, 12695, 12703, 12704, 12699, 12705, 5892, 5893, 2]
 // Exports: default
 
-// Module 12710 (FinalizeTraitPicker)
+// Module 12693 (FinalizeTraitPicker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import _modDef3339 from "module_3339" /* 3339 */;
-import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 5921 */;
-import CheckpointTrait from "CheckpointTrait" /* 5922 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6244 */;
-import TraitOptionList from "TraitOptionList" /* 12711 */;
-import TraitOptionItem from "TraitOptionItem" /* 12712 */;
-import TraitPicker from "TraitPicker" /* 12713 */;
-import useTraitPicker from "useTraitPicker" /* 12716 */;
-import useLastColorwayIdByOutfitIdDefault from "useLastColorwayIdByOutfitId" /* 12720 */;
-import useLastMoreTabOptionDefault from "useLastMoreTabOption" /* 12721 */;
-import FinalizeTraitTabs from "FinalizeTraitTabs" /* 12722 */;
+import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 5892 */;
+import CheckpointTrait from "CheckpointTrait" /* 5893 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6215 */;
+import TraitOptionList from "TraitOptionList" /* 12694 */;
+import TraitOptionItem from "TraitOptionItem" /* 12695 */;
+import TraitPicker from "TraitPicker" /* 12696 */;
+import useTraitPicker from "useTraitPicker" /* 12699 */;
+import useLastColorwayIdByOutfitIdDefault from "useLastColorwayIdByOutfitId" /* 12703 */;
+import useLastMoreTabOptionDefault from "useLastMoreTabOption" /* 12704 */;
+import FinalizeTraitTabs from "FinalizeTraitTabs" /* 12705 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -30,7 +30,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp6;
-const Text_Text = tmp6(5414);
+const Text_Text = tmp6(5383);
 function ColorwayDetails(option) {
   let combined;
   let items;

@@ -1,11 +1,11 @@
-// Module ID: 17774
-// Function ID: 17775
+// Module ID: 17767
+// Function ID: 17768
 // Name: handleFavoritesGuildAddSuggestedChannel
-// Dependencies: [5, 9959, 11179, 1113, 2]
+// Dependencies: [5, 9938, 11157, 1113, 2]
 // Exports: default
 
-// Module 17774 (handleFavoritesGuildAddSuggestedChannel)
-import formatResults from "formatResults" /* 9959 */;
+// Module 17767 (handleFavoritesGuildAddSuggestedChannel)
+import formatResults from "formatResults" /* 9938 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let obj = function _handleFavoritesGuildAddSuggestedChannel() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -82,7 +82,7 @@ let obj = function _handleFavoritesGuildAddSuggestedChannel() {
             return obj;
           }
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp18) {
         c4 = 3;

@@ -1,21 +1,21 @@
-// Module ID: 19547
-// Function ID: 19548
+// Module ID: 19543
+// Function ID: 19544
 // Name: EntityVersionsManager
-// Dependencies: [6481, 6522, 4672, 4729, 4694, 6302, 3, 7395, 572, 504, 8265, 1251, 11, 2]
+// Dependencies: [6452, 6493, 4641, 4698, 4663, 6273, 3, 7365, 572, 504, 8234, 1251, 11, 2]
 
-// Module 19547 (EntityVersionsManager)
+// Module 19543 (EntityVersionsManager)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import GuildsRequiringDeletedIdsSyncDefault from "GuildsRequiringDeletedIdsSync" /* 8265 */;
-import EmojiStore from "EmojiStore" /* 6481 */;
-import StickersStore from "StickersStore" /* 6522 */;
-import ChannelStore from "ChannelStore" /* 4672 */;
-import GuildRoleStore from "GuildRoleStore" /* 4729 */;
-import GuildStore from "GuildStore" /* 4694 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6302 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
+import GuildsRequiringDeletedIdsSyncDefault from "GuildsRequiringDeletedIdsSync" /* 8234 */;
+import EmojiStore from "EmojiStore" /* 6452 */;
+import StickersStore from "StickersStore" /* 6493 */;
+import ChannelStore from "ChannelStore" /* 4641 */;
+import GuildRoleStore from "GuildRoleStore" /* 4698 */;
+import GuildStore from "GuildStore" /* 4663 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6273 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
 import size from "module_2" /* 2 */;
 
 let importDefault, set, set2, set3, socket, sortedRoles;
@@ -44,7 +44,7 @@ function handleDeletedEntityIds(guild_id) {
         let obj3;
         if (!set.has(id)) {
           const obj2 = { type: "CHANNEL_DELETE", channel: obj3 };
-          obj3 = { guild_id: guild_id2, id, parent_id: "r" };
+          obj3 = { guild_id: guild_id2, id, parent_id: "Array" };
           const obj = guild_id(closure_2_1[8]);
           obj.dispatch(obj2);
         }

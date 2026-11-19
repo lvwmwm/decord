@@ -1,25 +1,25 @@
-// Module ID: 8371
-// Function ID: 8372
+// Module ID: 8340
+// Function ID: 8341
 // Name: ThreadActionCreators
-// Dependencies: [5, 4676, 502, 4672, 4755, 8372, 4757, 8425, 1072, 4679, 1285, 572, 5768, 1113, 5560, 8426, 8427, 8430, 8431, 8432, 1255, 4683, 2]
+// Dependencies: [5, 4645, 502, 4641, 4724, 8341, 4726, 8394, 1072, 4648, 1285, 572, 5739, 1113, 5529, 8395, 8396, 8399, 8400, 8401, 1255, 4652, 2]
 
-// Module 8371 (ThreadActionCreators)
+// Module 8340 (ThreadActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl11 from "intl" /* 1113 */;
 import GlobalUtils from "GlobalUtils" /* 1255 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
-import ChannelRecord from "ChannelRecord" /* 4676 */;
-import ChannelConstants from "ChannelConstants" /* 4679 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5560 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5768 */;
-import ArchivedThreadsStore2 from "ArchivedThreadsStore" /* 8372 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 8426 */;
+import ChannelRecord from "ChannelRecord" /* 4645 */;
+import ChannelConstants from "ChannelConstants" /* 4648 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5529 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5739 */;
+import ArchivedThreadsStore2 from "ArchivedThreadsStore" /* 8341 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 8395 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4672 */;
-import PermissionStore from "PermissionStore" /* 4755 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4757 */;
-import ThreadSummaryStore from "ThreadSummaryStore" /* 8425 */;
+import ChannelStore from "ChannelStore" /* 4641 */;
+import PermissionStore from "PermissionStore" /* 4724 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4726 */;
+import ThreadSummaryStore from "ThreadSummaryStore" /* 8394 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -32,8 +32,8 @@ let closure_14;
 let closure_15;
 let map1;
 let tmp;
-const ApplicationCommandActionCreators = tmp(8427);
-const f94490 = (body) => {
+const ApplicationCommandActionCreators = tmp(8396);
+const f94435 = (body) => {
   const obj = DispatcherDefault;
   const obj2 = { type: "THREAD_UPDATE", channel: closure_4(body.body) };
   obj.dispatch(obj2);
@@ -56,7 +56,7 @@ function patchThread(id, body) {
   const patch = HTTP.patch;
   obj2 = require("HTTPUtils");
   const patchResult = patch(request);
-  return patchResult.then(f94490);
+  return patchResult.then(f94435);
 }
 function dispatchThreadMemberLocalUpdate(id, isJoining) {
   const obj = DispatcherDefault;
@@ -82,7 +82,7 @@ let obj = {
     const patch = HTTP.patch;
     obj3 = require("HTTPUtils");
     const patchResult = patch(request);
-    return patchResult.then(f94490);
+    return patchResult.then(f94435);
   },
   lockThread(channel) {
     let closure_0 = channel;
@@ -98,7 +98,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -157,7 +157,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -219,7 +219,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         let c3;
@@ -383,7 +383,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -427,7 +427,7 @@ let obj = {
             return obj;
           }
           c0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         } catch (tmp8) {
           c0 = 3;
           throw tmp8;
@@ -445,7 +445,7 @@ let obj = {
     const patch = HTTP.patch;
     obj3 = require("HTTPUtils");
     const patchResult = patch(request);
-    return patchResult.then(f94490);
+    return patchResult.then(f94435);
   },
   joinThread(channel, arg1) {
     let closure_0 = channel;
@@ -634,7 +634,7 @@ let obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -684,7 +684,7 @@ let obj = {
               c2 = 0;
             }
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp14) {
           if (0 === c2) {
@@ -797,7 +797,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         let c3;

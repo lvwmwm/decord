@@ -1,42 +1,42 @@
-// Module ID: 10428
-// Function ID: 10429
+// Module ID: 10406
+// Function ID: 10407
 // Name: AppIconConstants
-// Dependencies: [4848, 4849, 10429, 1113, 10430, 10431, 10432, 10433, 10434, 10435, 10436, 10437, 10438, 10439, 10440, 10441, 10442, 10443, 10444, 10445, 10446, 10447, 10448, 10449, 10450, 10451, 10452, 10453, 4853, 10454, 4851, 4508, 2]
+// Dependencies: [4817, 4818, 10407, 1113, 10408, 10409, 10410, 10411, 10412, 10413, 10414, 10415, 10416, 10417, 10418, 10419, 10420, 10421, 10422, 10423, 10424, 10425, 10426, 10427, 10428, 10429, 10430, 10431, 4822, 10432, 4820, 4476, 2]
 // Exports: getDefaultIcon, getIconById, getIcons, getOfficialAlternateIcons, isIconExpired
 
-// Module 10428 (AppIconConstants)
+// Module 10406 (AppIconConstants)
 import intl25 from "intl" /* 1113 */;
-import _modDef4508 from "module_4508" /* 4508 */;
-import AppIconTypes from "AppIconTypes" /* 4849 */;
-import HexagonCampaignUtils from "HexagonCampaignUtils" /* 4851 */;
-import HexagonCampaignPerkAvailability from "HexagonCampaignPerkAvailability" /* 4853 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10429 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 10430 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 10431 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 10432 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 10433 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 10434 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 10435 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 10436 */;
-import AssetRegistryDefault9 from "AssetRegistry" /* 10437 */;
-import AssetRegistryDefault10 from "AssetRegistry" /* 10438 */;
-import AssetRegistryDefault11 from "AssetRegistry" /* 10439 */;
-import AssetRegistryDefault12 from "AssetRegistry" /* 10440 */;
-import AssetRegistryDefault13 from "AssetRegistry" /* 10441 */;
-import AssetRegistryDefault14 from "AssetRegistry" /* 10442 */;
-import AssetRegistryDefault15 from "AssetRegistry" /* 10443 */;
-import AssetRegistryDefault16 from "AssetRegistry" /* 10444 */;
-import AssetRegistryDefault17 from "AssetRegistry" /* 10445 */;
-import AssetRegistryDefault18 from "AssetRegistry" /* 10446 */;
-import AssetRegistryDefault19 from "AssetRegistry" /* 10447 */;
-import AssetRegistryDefault20 from "AssetRegistry" /* 10448 */;
-import AssetRegistryDefault21 from "AssetRegistry" /* 10449 */;
-import AssetRegistryDefault22 from "AssetRegistry" /* 10450 */;
-import AssetRegistryDefault23 from "AssetRegistry" /* 10451 */;
-import AssetRegistryDefault24 from "AssetRegistry" /* 10452 */;
-import AssetRegistryDefault25 from "AssetRegistry" /* 10453 */;
-import AssetRegistryDefault26 from "AssetRegistry" /* 10454 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4848 */;
+import _modDef4476 from "module_4476" /* 4476 */;
+import AppIconTypes from "AppIconTypes" /* 4818 */;
+import HexagonCampaignUtils from "HexagonCampaignUtils" /* 4820 */;
+import HexagonCampaignPerkAvailability from "HexagonCampaignPerkAvailability" /* 4822 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10407 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10408 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 10409 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 10410 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 10411 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 10412 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 10413 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 10414 */;
+import AssetRegistryDefault9 from "AssetRegistry" /* 10415 */;
+import AssetRegistryDefault10 from "AssetRegistry" /* 10416 */;
+import AssetRegistryDefault11 from "AssetRegistry" /* 10417 */;
+import AssetRegistryDefault12 from "AssetRegistry" /* 10418 */;
+import AssetRegistryDefault13 from "AssetRegistry" /* 10419 */;
+import AssetRegistryDefault14 from "AssetRegistry" /* 10420 */;
+import AssetRegistryDefault15 from "AssetRegistry" /* 10421 */;
+import AssetRegistryDefault16 from "AssetRegistry" /* 10422 */;
+import AssetRegistryDefault17 from "AssetRegistry" /* 10423 */;
+import AssetRegistryDefault18 from "AssetRegistry" /* 10424 */;
+import AssetRegistryDefault19 from "AssetRegistry" /* 10425 */;
+import AssetRegistryDefault20 from "AssetRegistry" /* 10426 */;
+import AssetRegistryDefault21 from "AssetRegistry" /* 10427 */;
+import AssetRegistryDefault22 from "AssetRegistry" /* 10428 */;
+import AssetRegistryDefault23 from "AssetRegistry" /* 10429 */;
+import AssetRegistryDefault24 from "AssetRegistry" /* 10430 */;
+import AssetRegistryDefault25 from "AssetRegistry" /* 10431 */;
+import AssetRegistryDefault26 from "AssetRegistry" /* 10432 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4817 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -66,7 +66,7 @@ let intl6;
 let intl7;
 let intl8;
 let intl9;
-const f99212 = (expiresAt) => {
+const f99174 = (expiresAt) => {
   let tmp = null != expiresAt.expiresAt;
   if (tmp) {
     const _Date = Date;
@@ -84,7 +84,7 @@ function getLimitedAlternateIcons() {
   if (obj.getHexagonCampaignPerkAvailabilityForCurrentUser(constants.APP_ICON, "AppIconConstants") === hasOwnProperty.HIDDEN) {
     items1 = [];
   } else {
-    const obj2 = { id: AppIconTypes.LimitedTimeAppIconIds.HEXAGON, iconSource: AssetRegistryDefault26, isPremium: tmp3Result.isHexagonCampaignPerkPremiumOnly(tmp5.APP_ICON), expiresAt, name: intl.string(_modDef4508.JC4Pii) };
+    const obj2 = { id: AppIconTypes.LimitedTimeAppIconIds.HEXAGON, iconSource: AssetRegistryDefault26, isPremium: tmp3Result.isHexagonCampaignPerkPremiumOnly(tmp5.APP_ICON), expiresAt, name: intl.string(_modDef4476.JC4Pii) };
     tmp3Result = HexagonCampaignUtils;
     intl = tmp3(1113).intl;
     items1 = [obj2];
@@ -190,14 +190,14 @@ export function isIconExpired(expiresAt) {
   return tmp;
 }
 export function getOfficialAlternateIcons() {
-  return items.filter(f99212);
+  return items.filter(f99174);
 }
 export { getLimitedAlternateIcons };
 export function getIcons() {
   let intl;
   const obj = { id: AppIconTypes.FreemiumAppIconIds.DEFAULT, iconSource: AssetRegistryDefault, name: intl.string(intl25.t.ANxkLy), isPremium: false };
   intl = intl25.intl;
-  items = [obj, ...items.filter(f99212), ...getLimitedAlternateIcons()];
+  items = [obj, ...items.filter(f99174), ...getLimitedAlternateIcons()];
   return items;
 }
 export function getIconById(currentAppIcon) {
@@ -207,7 +207,7 @@ export function getIconById(currentAppIcon) {
   let tmp = require;
   const obj = { id: AppIconTypes.FreemiumAppIconIds.DEFAULT, iconSource: AssetRegistryDefault, name: intl.string(intl25.t.ANxkLy), isPremium: false };
   intl = intl25.intl;
-  items = [obj, ...items.filter(f99212), ...getLimitedAlternateIcons()];
+  items = [obj, ...items.filter(f99174), ...getLimitedAlternateIcons()];
   let found = items.find((id) => id.id === closure_0);
   if (null == found) {
     const obj2 = { id: AppIconTypes.FreemiumAppIconIds.DEFAULT, iconSource: AssetRegistryDefault, name: intl2.string(intl25.t.ANxkLy), isPremium: false };

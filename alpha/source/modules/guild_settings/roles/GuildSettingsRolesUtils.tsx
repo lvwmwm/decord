@@ -1,18 +1,18 @@
-// Module ID: 19883
-// Function ID: 19884
+// Module ID: 19894
+// Function ID: 19895
 // Name: GuildSettingsRolesUtils
-// Dependencies: [19, 4735, 1388, 19874, 1072, 504, 4879, 7406, 6587, 1256, 6585, 1255, 2]
+// Dependencies: [19, 4704, 1388, 19885, 1072, 504, 4848, 7376, 6558, 1256, 6556, 1255, 2]
 // Exports: filterFullMembersByQuery, filterRole, getSectionAnalyticsName, useGuildMembers, useGuildRoleMembers, useQueryGuildMembers
 
-// Module 19883 (GuildSettingsRolesUtils)
+// Module 19894 (GuildSettingsRolesUtils)
 import Constants from "Constants" /* 1072 */;
 import GlobalUtils from "GlobalUtils" /* 1255 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6585 */;
-import GuildUtilsDefault from "GuildUtils" /* 6587 */;
-import GuildRoleMemberActionCreators from "GuildRoleMemberActionCreators" /* 7406 */;
-import GuildSettingsConstants from "GuildSettingsConstants" /* 19874 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6556 */;
+import GuildUtilsDefault from "GuildUtils" /* 6558 */;
+import GuildRoleMemberActionCreators from "GuildRoleMemberActionCreators" /* 7376 */;
+import GuildSettingsConstants from "GuildSettingsConstants" /* 19885 */;
 import react_mod from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 4735 */;
+import GuildMemberStore from "GuildMemberStore" /* 4704 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 

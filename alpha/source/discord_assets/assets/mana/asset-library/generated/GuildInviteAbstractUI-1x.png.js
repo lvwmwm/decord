@@ -1,8 +1,8 @@
-// Module ID: 12218
-// Function ID: 12219
+// Module ID: 12201
+// Function ID: 12202
 // Dependencies: [2]
 
-// Module 12218
+// Module 12201
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GuildInviteAbstractUI-1x.png.js");

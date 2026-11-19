@@ -1,11 +1,11 @@
-// Module ID: 6367
-// Function ID: 6368
+// Module ID: 6338
+// Function ID: 6339
 // Name: GuildRoomActionCreators
-// Dependencies: [5, 6368, 2]
+// Dependencies: [5, 6339, 2]
 // Exports: guildRoomConnect, guildRoomUpdate
 
-// Module 6367 (GuildRoomActionCreators)
-import guildRoomConnect2 from "guildRoomConnect" /* 6368 */;
+// Module 6338 (GuildRoomActionCreators)
+import guildRoomConnect2 from "guildRoomConnect" /* 6339 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ let obj = function _guildRoomConnect() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c7;
@@ -65,7 +65,7 @@ let obj = function _guildRoomConnect() {
             c7 = 0;
           }
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp13) {
         let closure_6 = tmp13;
@@ -96,7 +96,7 @@ obj = function _guildRoomUpdate() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c6;
@@ -133,7 +133,7 @@ obj = function _guildRoomUpdate() {
             c6 = 0;
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp10) {
         let closure_5 = tmp10;

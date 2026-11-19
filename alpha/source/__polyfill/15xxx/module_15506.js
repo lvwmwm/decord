@@ -1,25 +1,14 @@
 // Module ID: 15506
 // Function ID: 15507
-// Dependencies: [15472, 15493, 15507, 15517, 15518]
+// Dependencies: [15454, 15455]
 
 // Module 15506
-import _mod15472 from "module_15472" /* 15472 */;
-import _mod15493 from "module_15493" /* 15493 */;
-import f2 from "f" /* 15507 */;
-import _mod15517 from "module_15517" /* 15517 */;
-import _mod15518 from "module_15518" /* 15518 */;
+import _mod15454 from "module_15454" /* 15454 */;
+import _mod15455 from "module_15455" /* 15455 */;
 
-function ownKeys(arg0) {
-  const obj = f2;
-  const fResult = obj.f(_mod15517(arg0));
-  const f = _mod15518.f;
-  let tmp2 = fResult;
-  if (f) {
-    tmp2 = closure_2(fResult, f(arg0));
-  }
-  return tmp2;
-}
-let closure_2 = _mod15472([].concat);
-_mod15493("Reflect", "ownKeys") || ownKeys;
+const f66279 = () => 42 !== Object.defineProperty(() => {
 
-export default _mod15493("Reflect", "ownKeys") || ownKeys;
+}, "prototype", { value: 42, writable: false }).prototype;
+_mod15454 && _mod15455(f66279);
+
+export default _mod15454 && _mod15455(f66279);

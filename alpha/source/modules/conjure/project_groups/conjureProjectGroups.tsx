@@ -1,10 +1,11 @@
-// Module ID: 13710
-// Function ID: 13711
+// Module ID: 13692
+// Function ID: 13693
 // Name: conjureProjectGroups
-// Dependencies: [6748, 2]
+// Dependencies: [6719, 2]
 // Exports: groupConjureProjects
 
-// Module 13710 (conjureProjectGroups)
+// Module 13692 (conjureProjectGroups)
+import conjureServerProject from "conjureServerProject" /* 6719 */;
 import size from "module_2" /* 2 */;
 
 let map1;
@@ -12,6 +13,7 @@ let map1;
 let result = size.fileFinishedImporting("modules/conjure/project_groups/conjureProjectGroups.tsx");
 
 export function groupConjureProjects(arg0, stateFromStoresArray, stateFromStores) {
+  let closure_0 = stateFromStoresArray;
   const personal = [];
   const collaborating = [];
   map = new Map();
@@ -19,69 +21,48 @@ export function groupConjureProjects(arg0, stateFromStoresArray, stateFromStores
     const items = [item, index];
     return items;
   }));
-  function _loop() {
-    const obj = stateFromStoresArray(stateFromStores[0]);
-    const result = obj.conjureServerAppGuildId(closure_6);
-    stateFromStoresArray = result;
-    const tmp2 = closure_6;
-    if (null == result) {
-      const arr6 = closure_6.owner_user_id === stateFromStores ? personal : collaborating;
-      arr6.push(tmp2);
-      return 1;
-    } else {
-      let found;
-      if (closure_6.owner_user_id === stateFromStores) {
-        let guild_ids = tmp3.guild_ids;
-        if (guild_ids == null) {
-          guild_ids = [];
-        }
-        found = guild_ids.filter((item) => {
-          const hasItem = item !== result && map1.has(item);
-          return hasItem;
-        });
-      } else {
-        found = [];
-      }
-      const items = [result];
-      HermesBuiltin.arraySpread(items, found, 1);
-      for (const item10025 of items) {
-        let obj2 = map;
-        let tmp11 = item10025;
-        let value = map.get(item10025);
-        let arr4 = value;
-        if (null != value) {
-          let arr2 = arr4.push(closure_6);
-        } else {
-          let items1 = [closure_6];
-          let result1 = obj2.set(tmp11, items1);
-        }
-        continue;
-      }
-    }
-  }
   const iter = arg0[Symbol.iterator]();
+  const nextResult = iter.next();
   while (iter !== undefined) {
-    let closure_6 = iter.next();
-    let _loopResult = _loop();
+    let tmp3 = nextResult;
+    let obj2 = conjureServerProject;
+    let result = obj2.conjureServerProjectGuildId(nextResult);
+    let tmp7 = result;
+    if (null != result) {
+      let value = map.get(tmp7);
+      let arr4 = value;
+      if (null != value) {
+        let arr = arr4.push(tmp3);
+      } else {
+        let items2 = [tmp3];
+        let result1 = map.set(tmp7, items2);
+      }
+    } else {
+      let arr3 = collaborating;
+      if (tmp3.owner_user_id === stateFromStores) {
+        arr3 = personal;
+      }
+      let arr2 = arr3.push(tmp3);
+    }
     continue;
   }
-  const arr = Array.from(map, (arg0) => {
+  const arr5 = Array.from(map, (arg0) => {
     let tmp;
     let tmp2;
     [tmp, tmp2] = arg0;
     return { guildId, projects };
   });
-  const sorted = arr.sort((guildId, guildId2) => {
+  const sorted = arr5.sort((guildId, guildId2) => {
     let length = map1.get(guildId.guildId);
     const obj = map1;
     if (length == null) {
-      length = stateFromStoresArray.length;
+      length = closure_0.length;
     }
     let length2 = obj.get(guildId2.guildId);
     if (length2 == null) {
-      length2 = stateFromStoresArray.length;
+      length2 = closure_0.length;
     }
     return length - length2;
   });
-  return { personal, collaborating, servers: arr };
+  return { personal, collaborating, servers: arr5 };
 }

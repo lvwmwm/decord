@@ -1,10 +1,10 @@
-// Module ID: 9992
-// Function ID: 9993
+// Module ID: 9970
+// Function ID: 9971
 // Name: roundToNearestPixel
 // Dependencies: [17, 2]
 // Exports: default
 
-// Module 9992 (roundToNearestPixel)
+// Module 9970 (roundToNearestPixel)
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 

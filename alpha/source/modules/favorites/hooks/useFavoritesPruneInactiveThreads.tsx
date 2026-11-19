@@ -1,14 +1,14 @@
-// Module ID: 17905
-// Function ID: 17906
+// Module ID: 17898
+// Function ID: 17899
 // Name: useFavoritesPruneInactiveThreads
-// Dependencies: [5, 19, 6302, 4675, 504, 11179, 2]
+// Dependencies: [5, 19, 6273, 4644, 504, 11157, 2]
 // Exports: default
 
-// Module 17905 (useFavoritesPruneInactiveThreads)
+// Module 17898 (useFavoritesPruneInactiveThreads)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6302 */;
-import FavoriteStore from "FavoriteStore" /* 4675 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6273 */;
+import FavoriteStore from "FavoriteStore" /* 4644 */;
 import size from "module_2" /* 2 */;
 
 let c0, c1;
@@ -44,7 +44,7 @@ export default function useFavoritesPruneInactiveThreads() {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } else {
           let c2;
@@ -69,7 +69,7 @@ export default function useFavoritesPruneInactiveThreads() {
             } else if (1 === tmp3) {
               c2 = 0;
               c0 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             } else if (arg0 === 1) {
               c0 = 3;
               throw value;
@@ -81,7 +81,7 @@ export default function useFavoritesPruneInactiveThreads() {
             } else {
               c2 = 0;
               c0 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             }
           } catch (tmp6) {
             if (0 === c2) {

@@ -1,23 +1,23 @@
-// Module ID: 16649
-// Function ID: 16650
+// Module ID: 16641
+// Function ID: 16642
 // Name: QuestDockInsetHeaderBody
-// Dependencies: [19, 17, 16538, 21, 575, 4823, 13678, 13677, 16535, 1630, 16612, 16609, 5414, 5421, 1187, 2]
+// Dependencies: [19, 17, 16529, 21, 575, 4792, 13660, 13659, 16526, 1630, 16603, 16600, 5383, 5390, 1187, 2]
 // Exports: QuestDockBodyQuestRewardTile, QuestDockBodyRewardTile
 
-// Module 16649 (QuestDockInsetHeaderBody)
+// Module 16641 (QuestDockInsetHeaderBody)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import Text_Text from "Text/Text" /* 5414 */;
-import QuestRewardTileDefault from "QuestRewardTile" /* 13677 */;
-import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 13678 */;
-import QuestDockHooks from "QuestDockHooks" /* 16535 */;
-import QuestDockBlurredContentBackgroundDefault from "QuestDockBlurredContentBackground" /* 16609 */;
-import PremiumRewardGradientDefault from "PremiumRewardGradient" /* 16612 */;
+import Text_Text from "Text/Text" /* 5383 */;
+import QuestRewardTileDefault from "QuestRewardTile" /* 13659 */;
+import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 13660 */;
+import QuestDockHooks from "QuestDockHooks" /* 16526 */;
+import QuestDockBlurredContentBackgroundDefault from "QuestDockBlurredContentBackground" /* 16600 */;
+import PremiumRewardGradientDefault from "PremiumRewardGradient" /* 16603 */;
 import react from "react" /* 19 */;
-import QuestDockConstants from "QuestDockConstants" /* 16538 */;
+import QuestDockConstants from "QuestDockConstants" /* 16529 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -35,7 +35,7 @@ const QUEST_DOCK_EXPANDED_PADDING_HORIZONTAL = QuestDockConstants.QUEST_DOCK_EXP
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 const PX_80 = nativeDefault.space.PX_80;
 let createStyles = createStyles_mod;
-let obj = { rewardTile: obj2, wrapper: { flexGrow: 1, flexShrink: 0, justifyContent: "flex-end", paddingHorizontal: QUEST_DOCK_EXPANDED_PADDING_HORIZONTAL, paddingBottom: QUEST_DOCK_EXPANDED_PADDING_BOTTOM }, rewardContentContainer: { position: "relative" }, rewardContentWrapper: obj3, contentBadge: rect, rewardContent: { alignItems: "center", flexDirection: "row", gap: 16 }, rewardContentCopy: { flexGrow: 1, flexShrink: 1, gap: 4 }, premiumRewardPerkPill: { alignSelf: "flex-start" }, titleRow: obj4, questDockCtaWrapper: { marginTop: 12, paddingHorizontal: 4, paddingTop: 16, position: "relative" }, questDockCta: obj5, questDockCtaRow: obj6, questDockCtaSaparator: rect1 };
+let obj = { rewardTile: obj2, wrapper: { flexGrow: 1, flexShrink: 0, justifyContent: "flex-end", paddingHorizontal: QUEST_DOCK_EXPANDED_PADDING_HORIZONTAL, paddingBottom: QUEST_DOCK_EXPANDED_PADDING_BOTTOM, pointerEvents: "box-none" }, rewardContentContainer: { position: "relative" }, rewardContentWrapper: obj3, contentBadge: rect, rewardContent: { alignItems: "center", flexDirection: "row", gap: 16 }, rewardContentCopy: { flexGrow: 1, flexShrink: 1, gap: 4 }, premiumRewardPerkPill: { alignSelf: "flex-start" }, titleRow: obj4, questDockCtaWrapper: { marginTop: 12, paddingHorizontal: 4, paddingTop: 16, position: "relative" }, questDockCta: obj5, questDockCtaRow: obj6, questDockCtaSaparator: rect1 };
 obj2 = { borderRadius: nativeDefault.radii.lg };
 createStyles = createStyles.createStyles;
 obj3 = { borderRadius: nativeDefault.modules.mobile.QUEST_DOCK_BORDER_RADIUS, overflow: "hidden", padding: 8, paddingRight: 16 };
@@ -123,7 +123,7 @@ const memoResult = react.memo(function QuestDockInsetHeaderBody(showBonusOrbsGra
   if ("primary" === ctaButtonVariant) {
     const obj14 = { variant: "primary", grow: true, onPress: onCtaPress, loading: ctaLoading, icon: renderCtaIconResult, text: ctaText };
     renderCtaIconResult = undefined;
-    const Button = tmp2(5421).Button;
+    const Button = tmp2(5390).Button;
     if (renderCtaIcon != null) {
       renderCtaIconResult = renderCtaIcon();
     }

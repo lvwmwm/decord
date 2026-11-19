@@ -1,18 +1,18 @@
-// Module ID: 11125
-// Function ID: 11126
+// Module ID: 11103
+// Function ID: 11104
 // Name: Sticker
-// Dependencies: [19, 17, 1192, 21, 6294, 6293, 1113, 8648, 5510, 4830, 7408, 7409, 2]
+// Dependencies: [19, 17, 1192, 21, 6266, 6265, 1113, 8617, 5479, 4799, 7378, 7379, 2]
 // Exports: default, getStickerAssetUrl
 
-// Module 11125 (Sticker)
+// Module 11103 (Sticker)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import shared from "shared" /* 4830 */;
-import FastImageDefault from "FastImage" /* 5510 */;
-import StickersUtils from "StickersUtils" /* 6293 */;
-import StickersTypes from "StickersTypes" /* 6294 */;
-import NativeLottieViewDefault from "NativeLottieView" /* 8648 */;
+import shared from "shared" /* 4799 */;
+import FastImageDefault from "FastImage" /* 5479 */;
+import StickersUtils from "StickersUtils" /* 6265 */;
+import StickersTypes from "StickersTypes" /* 6266 */;
+import NativeLottieViewDefault from "NativeLottieView" /* 8617 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
 import size from "module_2" /* 2 */;
@@ -70,7 +70,7 @@ export default function Sticker(opaque) {
     if (str2 == null) {
       str2 = "";
     }
-    NativeLottieRenderMode = tmp(8648).NativeLottieRenderMode;
+    NativeLottieRenderMode = tmp(8617).NativeLottieRenderMode;
     tmp11Result = tmp8(tmp10, size1);
   } else {
     const obj4 = { enableAnimation: animated, resizeMode: "contain", style: size2, placeholder: tmp12Result, source: obj5, accessible: true, accessibilityLabel: formatToPlainStringResult };
@@ -79,9 +79,9 @@ export default function Sticker(opaque) {
     const tmp11 = jsx;
     const tmpResult6 = shared;
     if (tmpResult6.isThemeDark(ThemeStore.theme)) {
-      tmp12Result = tmp12(7408);
+      tmp12Result = tmp12(7378);
     } else {
-      tmp12Result = tmp12(7409);
+      tmp12Result = tmp12(7379);
     }
     obj5 = { uri: str };
     tmp11Result = tmp11(tmp13, obj4);

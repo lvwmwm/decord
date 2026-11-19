@@ -1,16 +1,16 @@
 // Module ID: 18398
 // Function ID: 18399
 // Name: ConjurePublishHistoryPanel
-// Dependencies: [32, 19, 17, 21, 18399, 5837, 5414, 1113, 4121, 5421, 18401, 2]
+// Dependencies: [32, 19, 17, 21, 18399, 5808, 5383, 1113, 4089, 5390, 18401, 2]
 // Exports: default
 
 // Module 18398 (ConjurePublishHistoryPanel)
 import react_native from "react-native" /* 17 */;
 import intl9 from "intl" /* 1113 */;
-import _modDef4121 from "module_4121" /* 4121 */;
-import Text_Text from "Text/Text" /* 5414 */;
-import components_Button_Button from "components/Button/Button" /* 5421 */;
-import Stack_Stack from "Stack/Stack" /* 5837 */;
+import _modDef4089 from "module_4089" /* 4089 */;
+import Text_Text from "Text/Text" /* 5383 */;
+import components_Button_Button from "components/Button/Button" /* 5390 */;
+import Stack_Stack from "Stack/Stack" /* 5808 */;
 import useConjurePublishHistory from "useConjurePublishHistory" /* 18399 */;
 import ConjureNativeMarkdownDefault from "ConjureNativeMarkdown" /* 18401 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -34,13 +34,13 @@ function ReleaseNotes(arg0) {
   const state = conjurePublishHistoryNotes.state;
   if ("failed" === state.status) {
     const obj2 = { spacing: 8, children: items };
-    const Stack = tmp(5837).Stack;
-    const obj3 = { variant: "body-sm/normal", color: "text-muted", children: intl4.string(_modDef4121.cBIaeW) };
-    const Text2 = tmp(5414).Text;
+    const Stack = tmp(5808).Stack;
+    const obj3 = { variant: "body-sm/normal", color: "text-muted", children: intl4.string(_modDef4089.cBIaeW) };
+    const Text2 = tmp(5383).Text;
     intl4 = tmp(1113).intl;
     items = [metroRequire(Text2, obj3), ];
-    const obj4 = { variant: "secondary", size: "sm", text: intl5.string(_modDef4121.HOuQ9H), onPress: tmp4 };
-    const Button = tmp(5421).Button;
+    const obj4 = { variant: "secondary", size: "sm", text: intl5.string(_modDef4089.HOuQ9H), onPress: tmp4 };
+    const Button = tmp(5390).Button;
     intl5 = tmp(1113).intl;
     items[1] = metroRequire(Button, obj4);
     return metroImportDefault(Stack, obj2);
@@ -58,17 +58,17 @@ function ReleaseNotes(arg0) {
       }
       return tmp6Result;
     }
-    const Text = tmp(5414).Text;
+    const Text = tmp(5383).Text;
     const tmp7 = View;
     if ("loading" === state.status) {
       const intl3 = tmp(1113).intl;
-      stringResult = intl3.string(_modDef4121["LmWLc+"]);
+      stringResult = intl3.string(_modDef4089["LmWLc+"]);
     } else if (null == data) {
       const intl2 = tmp(1113).intl;
-      stringResult = intl2.string(_modDef4121.hcrQOo);
+      stringResult = intl2.string(_modDef4089.hcrQOo);
     } else {
       const intl = tmp(1113).intl;
-      stringResult = intl.string(_modDef4121["0bDcBs"]);
+      stringResult = intl.string(_modDef4089["0bDcBs"]);
     }
     const obj6 = { accessibilityLiveRegion: "polite", children: metroRequire(Text, obj7) };
     obj7 = { variant: "body-sm/normal", children: stringResult };
@@ -97,7 +97,7 @@ let closure_9 = react.memo(function PublishRow(entry) {
   const Button = components_Button_Button.Button;
   const intl = intl9.intl;
   const string = intl.string;
-  const tmp9 = _modDef4121;
+  const tmp9 = _modDef4089;
   const tmp6 = metroImportDefault;
   if (tmp2) {
     ufHcsq = tmp9["Qro2x/"];
@@ -110,7 +110,7 @@ let closure_9 = react.memo(function PublishRow(entry) {
     variant: "secondary",
     size: "sm",
     text: string(ufHcsq),
-    accessibilityLabel: intl2.formatToPlainString(tmp10(4121)["M9L+3I"], { title: publishHistoryTitleResult }),
+    accessibilityLabel: intl2.formatToPlainString(tmp10(4089)["M9L+3I"], { title: publishHistoryTitleResult }),
     accessibilityState: { expanded: tmp2 },
     onPress() {
       return _undefined((arg0) => !arg0);
@@ -147,32 +147,32 @@ export default function ConjurePublishHistoryPanel(projectId) {
   const iter = obj.useConjurePublishHistory(projectId);
   const state = iter.state;
   if ("loading" === state.status) {
-    const obj2 = { variant: "body-sm/normal", children: intl4.string(iter(4121)["d/Wf8N"]) };
-    const Text3 = tmp(5414).Text;
+    const obj2 = { variant: "body-sm/normal", children: intl4.string(iter(4089)["d/Wf8N"]) };
+    const Text3 = tmp(5383).Text;
     intl4 = tmp(1113).intl;
     tmp5 = closure_6(Text3, obj2);
   } else if ("failed" === state.status) {
     const obj3 = { spacing: 12, children: items };
-    const Stack = tmp(5837).Stack;
-    const obj4 = { variant: "body-sm/normal", children: intl2.string(iter(4121).TzCJWI) };
-    const Text2 = tmp(5414).Text;
+    const Stack = tmp(5808).Stack;
+    const obj4 = { variant: "body-sm/normal", children: intl2.string(iter(4089).TzCJWI) };
+    const Text2 = tmp(5383).Text;
     intl2 = tmp(1113).intl;
     items = [closure_6(Text2, obj4), ];
-    const obj5 = { variant: "secondary", text: intl3.string(iter(4121).HOuQ9H), onPress: iter.retry };
-    const Button = tmp(5421).Button;
+    const obj5 = { variant: "secondary", text: intl3.string(iter(4089).HOuQ9H), onPress: iter.retry };
+    const Button = tmp(5390).Button;
     intl3 = tmp(1113).intl;
     items[1] = closure_6(Button, obj5);
     tmp5 = closure_7(Stack, obj3);
   } else if (0 === state.data.entries.length) {
-    const obj6 = { variant: "body-sm/normal", color: "text-muted", children: intl.string(iter(4121)["19L92G"]) };
-    const Text = tmp(5414).Text;
+    const obj6 = { variant: "body-sm/normal", color: "text-muted", children: intl.string(iter(4089)["19L92G"]) };
+    const Text = tmp(5383).Text;
     intl = tmp(1113).intl;
     tmp5 = closure_6(Text, obj6);
   } else {
     const obj7 = { spacing: 24, children: items1 };
-    const Stack2 = tmp(5837).Stack;
-    const obj8 = { variant: "body-sm/normal", color: "text-muted", children: intl5.string(iter(4121).Kzt1rI) };
-    const Text4 = tmp(5414).Text;
+    const Stack2 = tmp(5808).Stack;
+    const obj8 = { variant: "body-sm/normal", color: "text-muted", children: intl5.string(iter(4089).Kzt1rI) };
+    const Text4 = tmp(5383).Text;
     intl5 = tmp(1113).intl;
     items1 = [closure_6(Text4, obj8), , ];
     const entries = state.data.entries;
@@ -181,18 +181,18 @@ export default function ConjurePublishHistoryPanel(projectId) {
       return metroRequire(closure_9, obj, entry.id);
     });
     const obj9 = { direction: "horizontal", spacing: 8, align: "center", justify: "space-between", children: items2 };
-    const Stack3 = tmp(5837).Stack;
-    const obj10 = { variant: "secondary", size: "sm", shrink: true, text: intl6.string(iter(4121)["4un98A"]), disabled: !iter.hasPrevious, onPress: iter.previous };
-    const Button2 = tmp(5421).Button;
+    const Stack3 = tmp(5808).Stack;
+    const obj10 = { variant: "secondary", size: "sm", shrink: true, text: intl6.string(iter(4089)["4un98A"]), disabled: !iter.hasPrevious, onPress: iter.previous };
+    const Button2 = tmp(5390).Button;
     intl6 = tmp(1113).intl;
     items2 = [closure_6(Button2, obj10), , ];
-    const obj11 = { variant: "body-sm/normal", children: intl7.formatToPlainString(iter(4121)["54samz"], obj12) };
-    const Text5 = tmp(5414).Text;
+    const obj11 = { variant: "body-sm/normal", children: intl7.formatToPlainString(iter(4089)["54samz"], obj12) };
+    const Text5 = tmp(5383).Text;
     intl7 = tmp(1113).intl;
     obj12 = { page: iter.page };
     items2[1] = closure_6(Text5, obj11);
-    const obj13 = { variant: "secondary", size: "sm", shrink: true, text: intl8.string(iter(4121).HqheLL), disabled: !iter.hasNext, onPress: iter.next };
-    const Button3 = tmp(5421).Button;
+    const obj13 = { variant: "secondary", size: "sm", shrink: true, text: intl8.string(iter(4089).HqheLL), disabled: !iter.hasNext, onPress: iter.next };
+    const Button3 = tmp(5390).Button;
     intl8 = tmp(1113).intl;
     items2[2] = closure_6(Button3, obj13);
     items1[2] = closure_7(Stack3, obj9);

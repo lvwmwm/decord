@@ -1,10 +1,10 @@
-// Module ID: 12430
-// Function ID: 12431
+// Module ID: 12414
+// Function ID: 12415
 // Name: CheckpointStepHeaderRefContext
-// Dependencies: [32, 19, 21, 5053, 5831, 2]
+// Dependencies: [32, 19, 21, 5022, 5802, 2]
 // Exports: CheckpointStepFocusProvider
 
-// Module 12430 (CheckpointStepHeaderRefContext)
+// Module 12414 (CheckpointStepHeaderRefContext)
 import Fragment from "Fragment" /* 21 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -37,7 +37,7 @@ export function CheckpointStepFocusProvider(arg0) {
       return tmp;
     });
   }, []);
-  let obj = first(5053);
+  let obj = first(5022);
   isScreenReaderEnabled = obj.useIsScreenReaderEnabled();
   const items = [route, first, isScreenReaderEnabled];
   const effect = react.useEffect(() => {

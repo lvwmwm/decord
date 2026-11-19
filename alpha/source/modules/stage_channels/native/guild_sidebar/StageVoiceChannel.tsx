@@ -1,32 +1,32 @@
-// Module ID: 17811
-// Function ID: 17812
+// Module ID: 17804
+// Function ID: 17805
 // Name: StageVoiceChannel
-// Dependencies: [19, 17, 8232, 4755, 6527, 6460, 5567, 4677, 1072, 5552, 21, 1113, 4823, 575, 504, 6441, 17812, 6451, 6445, 7196, 7197, 2020, 6402, 13772, 5439, 10600, 17692, 17801, 17697, 2]
+// Dependencies: [19, 17, 8201, 4724, 6498, 6431, 5536, 4646, 1072, 5521, 21, 1113, 4792, 575, 504, 6412, 17805, 6422, 6416, 7166, 7167, 2020, 6373, 13754, 5408, 10578, 17685, 17794, 17690, 2]
 
-// Module 17811 (StageVoiceChannel)
+// Module 17804 (StageVoiceChannel)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 2020 */;
-import useChannelNameDefault from "useChannelName" /* 5439 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5552 */;
-import SortedVoiceStateStore2 from "SortedVoiceStateStore" /* 5567 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6402 */;
-import StageMediaHooks from "StageMediaHooks" /* 6441 */;
-import useShowMemberVerificationGate from "useShowMemberVerificationGate" /* 7196 */;
-import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 7197 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 13772 */;
-import ChannelItemDefault from "ChannelItem" /* 17692 */;
-import ChannelInfoDefault from "ChannelInfo" /* 17801 */;
-import useStageChannelSpeakerVoiceStatesDefault from "useStageChannelSpeakerVoiceStates" /* 17812 */;
+import useChannelNameDefault from "useChannelName" /* 5408 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5521 */;
+import SortedVoiceStateStore2 from "SortedVoiceStateStore" /* 5536 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6373 */;
+import StageMediaHooks from "StageMediaHooks" /* 6412 */;
+import useShowMemberVerificationGate from "useShowMemberVerificationGate" /* 7166 */;
+import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 7167 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 13754 */;
+import ChannelItemDefault from "ChannelItem" /* 17685 */;
+import ChannelInfoDefault from "ChannelInfo" /* 17794 */;
+import useStageChannelSpeakerVoiceStatesDefault from "useStageChannelSpeakerVoiceStates" /* 17805 */;
 import react from "react" /* 19 */;
-import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 8232 */;
-import PermissionStore from "PermissionStore" /* 4755 */;
-import ReadStateStore from "ReadStateStore" /* 6527 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6460 */;
-import StageInstanceStore from "StageInstanceStore" /* 4677 */;
+import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 8201 */;
+import PermissionStore from "PermissionStore" /* 4724 */;
+import ReadStateStore from "ReadStateStore" /* 6498 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6431 */;
+import StageInstanceStore from "StageInstanceStore" /* 4646 */;
 import Constants from "Constants" /* 1072 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const SortedVoiceStateStore = SortedVoiceStateStore2;
@@ -71,8 +71,8 @@ const memoResult = react.memo(function StageVoiceChannel(channel) {
   if (arr3 == null) {
     arr3 = NO_VOICE_STATES;
   }
-  const tmp2Result = channel(6451);
-  const stageParticipantsCount = tmp2Result.useStageParticipantsCount(channel.id, tmp2(6445).StageChannelParticipantNamedIndex.AUDIENCE);
+  const tmp2Result = channel(6422);
+  const stageParticipantsCount = tmp2Result.useStageParticipantsCount(channel.id, tmp2(6416).StageChannelParticipantNamedIndex.AUDIENCE);
   const sum = stageParticipantsCount + arr3.length;
   const items2 = [channel];
   const items3 = [channel.id];
@@ -96,7 +96,7 @@ const memoResult = react.memo(function StageVoiceChannel(channel) {
     const result = obj.openChannelLongPressActionSheet(channel.id);
   }, items3);
   const tmp10 = useChannelNameDefault(channel, false);
-  const tmp2Result2 = channel(10600);
+  const tmp2Result2 = channel(10578);
   const isConnectedToVoiceChannel = tmp2Result2.useIsConnectedToVoiceChannel(channel);
   if (stageInstance != null) {
     topic = stageInstance.topic;

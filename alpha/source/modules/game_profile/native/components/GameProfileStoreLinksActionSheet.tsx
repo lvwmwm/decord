@@ -1,24 +1,24 @@
-// Module ID: 9703
-// Function ID: 9704
+// Module ID: 9682
+// Function ID: 9683
 // Name: GameProfileStoreLinksActionSheet
-// Dependencies: [19, 17, 21, 4823, 575, 9673, 5502, 1630, 7464, 5055, 5414, 1113, 5421, 5037, 2]
+// Dependencies: [19, 17, 21, 4792, 575, 9652, 5471, 1630, 7434, 5024, 5383, 1113, 5390, 5006, 2]
 // Exports: default
 
-// Module 9703 (GameProfileStoreLinksActionSheet)
+// Module 9682 (GameProfileStoreLinksActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
-import BottomSheetModal from "BottomSheetModal" /* 5055 */;
-import Text_Text from "Text/Text" /* 5414 */;
-import components_Button_Button from "components/Button/Button" /* 5421 */;
-import LinkingDefault from "Linking" /* 5502 */;
-import ActionSheet2 from "ActionSheet" /* 7464 */;
-import useOpenExternalUrlFromGameProfileDefault from "useOpenExternalUrlFromGameProfile" /* 9673 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
+import BottomSheetModal from "BottomSheetModal" /* 5024 */;
+import Text_Text from "Text/Text" /* 5383 */;
+import components_Button_Button from "components/Button/Button" /* 5390 */;
+import LinkingDefault from "Linking" /* 5471 */;
+import ActionSheet2 from "ActionSheet" /* 7434 */;
+import useOpenExternalUrlFromGameProfileDefault from "useOpenExternalUrlFromGameProfile" /* 9652 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

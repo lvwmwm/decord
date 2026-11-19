@@ -1,17 +1,17 @@
-// Module ID: 16630
-// Function ID: 16631
+// Module ID: 16621
+// Function ID: 16622
 // Name: QuestDockGestureDetector
-// Dependencies: [19, 6466, 16538, 21, 16571, 16535, 16539, 11731, 16542, 16627, 1655, 16543, 16540, 5083, 16537, 1708, 5039, 2]
+// Dependencies: [19, 6437, 16529, 21, 16562, 16526, 16530, 11709, 16533, 16618, 1655, 16534, 16531, 5052, 16528, 1708, 5008, 2]
 
-// Module 16630 (QuestDockGestureDetector)
+// Module 16621 (QuestDockGestureDetector)
 import Fragment from "Fragment" /* 21 */;
 import _mod1708 from "module_1708" /* 1708 */;
-import HapticUtils from "HapticUtils" /* 5039 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5083 */;
-import QuestConstants from "QuestConstants" /* 6466 */;
-import QuestDockUtils from "QuestDockUtils" /* 16537 */;
+import HapticUtils from "HapticUtils" /* 5008 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5052 */;
+import QuestConstants from "QuestConstants" /* 6437 */;
+import QuestDockUtils from "QuestDockUtils" /* 16528 */;
 import react from "react" /* 19 */;
-import QuestDockConstants from "QuestDockConstants" /* 16538 */;
+import QuestDockConstants from "QuestDockConstants" /* 16529 */;
 import size from "module_2" /* 2 */;
 
 let SOFT_DISMISSED, _Math, _Math2, _Math3, _Math4, _Math5, absolute, absoluteX, bound, bound1, diff, diff1, first, flag, flag2, left, left2, merged, merged1, merged2, merged3, merged4, num, num2, num3, num4, num5, num6, num7, num8, obj1, obj10, obj11, obj12, obj13, obj4, result1, result2, result3, result4, result5, result6, right, right2, set, set2, set2Result, set3, set3Result, set4, set4Result, set5, set5Result, set6, set6Result, sum, tmp14, tmp25, tmp3, tmp52, tmp62, tmp63, tmp64, tmp66, tmp67, tmp69, tmp70, tmp71, tmp73, tmp74, tmp75, tmp76, tmp78, tmp79, value, width, width2, width3;

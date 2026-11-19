@@ -1,12 +1,12 @@
-// Module ID: 7102
-// Function ID: 7103
+// Module ID: 7072
+// Function ID: 7073
 // Name: NavigatorGradientContext
-// Dependencies: [19, 21, 7013, 2]
+// Dependencies: [19, 21, 6983, 2]
 // Exports: NavigatorGradientProvider
 
-// Module 7102 (NavigatorGradientContext)
+// Module 7072 (NavigatorGradientContext)
 import Fragment from "Fragment" /* 21 */;
-import _mod7013 from "module_7013" /* 7013 */;
+import _mod6983 from "module_6983" /* 6983 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ export const NavigatorGradientContext = context;
 export function NavigatorGradientProvider(color) {
   color = color.color;
   const children = color.children;
-  const obj = _mod7013;
+  const obj = _mod6983;
   const headerHeight = obj.useHeaderHeight();
   const items = [color, headerHeight];
   return <context.Provider value={react.useMemo(() => ({ color, headerHeight }), items)}>{children}</context.Provider>;

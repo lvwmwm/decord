@@ -1,10 +1,10 @@
-// Module ID: 13593
-// Function ID: 13594
+// Module ID: 13575
+// Function ID: 13576
 // Name: RoleSubscriptionsLinkingUtil
-// Dependencies: [5, 1072, 4679, 9496, 2121, 3, 9500, 2]
+// Dependencies: [5, 1072, 4648, 9475, 2121, 3, 9479, 2]
 
-// Module 13593 (RoleSubscriptionsLinkingUtil)
-import ChannelConstants from "ChannelConstants" /* 4679 */;
+// Module 13575 (RoleSubscriptionsLinkingUtil)
+import ChannelConstants from "ChannelConstants" /* 4648 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -31,7 +31,7 @@ let obj = function _performRoleSubscriptionUpsellRedirect() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c4;
@@ -122,7 +122,7 @@ obj = function _performRoleSubscriptionTeamCreationRedirect() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -150,7 +150,7 @@ obj = function _performRoleSubscriptionTeamCreationRedirect() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp6) {
         c0 = 3;
@@ -173,7 +173,7 @@ obj = function _performRoleSubscriptionEditPayoutRedirect() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -201,7 +201,7 @@ obj = function _performRoleSubscriptionEditPayoutRedirect() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp7) {
         c1 = 3;
@@ -228,7 +228,7 @@ obj = function _performDeveloperPortalRedirectWithTokenHandoff() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c4;

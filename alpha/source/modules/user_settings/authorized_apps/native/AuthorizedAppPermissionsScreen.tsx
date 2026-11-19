@@ -1,13 +1,13 @@
-// Module ID: 16182
-// Function ID: 16183
+// Module ID: 16173
+// Function ID: 16174
 // Name: AuthorizedAppPermissionsScreen
-// Dependencies: [19, 21, 7325, 16183, 2]
+// Dependencies: [19, 21, 7295, 16174, 2]
 // Exports: default
 
-// Module 16182 (AuthorizedAppPermissionsScreen)
+// Module 16173 (AuthorizedAppPermissionsScreen)
 import Fragment from "Fragment" /* 21 */;
-import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7325 */;
-import UserSettingsAuthedAppPermissionsDefault from "UserSettingsAuthedAppPermissions" /* 16183 */;
+import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7295 */;
+import UserSettingsAuthedAppPermissionsDefault from "UserSettingsAuthedAppPermissions" /* 16174 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

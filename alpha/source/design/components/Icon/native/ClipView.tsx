@@ -1,12 +1,12 @@
-// Module ID: 8929
-// Function ID: 8930
+// Module ID: 8903
+// Function ID: 8904
 // Name: ClipView
-// Dependencies: [19, 17, 21, 8930, 8932, 1655, 2]
+// Dependencies: [19, 17, 21, 8904, 8906, 1655, 2]
 // Exports: default
 
-// Module 8929 (ClipView)
-import CutoutBackgroundContext from "CutoutBackgroundContext" /* 8930 */;
-import ClipViewNativeComponentDefault from "ClipViewNativeComponent" /* 8932 */;
+// Module 8903 (ClipView)
+import CutoutBackgroundContext from "CutoutBackgroundContext" /* 8904 */;
+import ClipViewNativeComponentDefault from "ClipViewNativeComponent" /* 8906 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

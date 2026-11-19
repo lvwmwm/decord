@@ -1,10 +1,10 @@
-// Module ID: 18947
-// Function ID: 18948
+// Module ID: 18939
+// Function ID: 18940
 // Name: YouScreen
-// Dependencies: [32, 19, 17, 6867, 2189, 15909, 6572, 1388, 18004, 1072, 1074, 4669, 7475, 21, 1655, 8113, 4823, 1360, 575, 671, 5000, 563, 1113, 6941, 15893, 7508, 8095, 5838, 1264, 7984, 1630, 8092, 5032, 8111, 5002, 1496, 4648, 1503, 18948, 1414, 8115, 7284, 9844, 8047, 8062, 8063, 8075, 7450, 8089, 4780, 4656, 8986, 5510, 18949, 12759, 5401, 18957, 18958, 4884, 18959, 8085, 8069, 8102, 1090, 11596, 8919, 18961, 10392, 7985, 8888, 8106, 7986, 8961, 8180, 2]
+// Dependencies: [32, 19, 17, 6837, 2189, 15900, 6543, 1388, 17997, 1072, 1074, 4638, 7445, 21, 1655, 8082, 4792, 1360, 575, 671, 4969, 563, 1113, 6911, 15884, 7478, 8064, 5809, 1264, 7953, 1630, 8061, 5001, 8080, 4971, 1496, 4617, 1503, 18940, 1414, 8084, 7254, 9823, 8016, 8031, 8032, 8044, 7420, 8058, 4749, 4625, 8960, 5479, 18941, 12741, 5370, 18949, 18950, 4853, 18951, 8054, 8038, 8071, 1090, 11574, 8893, 18953, 10370, 7954, 8862, 8075, 7955, 8935, 8149, 2]
 // Exports: default
 
-// Module 18947 (YouScreen)
+// Module 18939 (YouScreen)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
@@ -12,25 +12,25 @@ import Constants2 from "Constants" /* 1072 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import intl4 from "intl" /* 1113 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1360 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4669 */;
-import RootNavigationRef from "RootNavigationRef" /* 5000 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7985 */;
-import VisualEffectViewThemedDefault from "VisualEffectViewThemed" /* 8113 */;
-import YouBannerDecorations from "YouBannerDecorations" /* 9844 */;
-import BackIconWithBadge from "BackIconWithBadge" /* 15893 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4638 */;
+import RootNavigationRef from "RootNavigationRef" /* 4969 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7954 */;
+import VisualEffectViewThemedDefault from "VisualEffectViewThemed" /* 8082 */;
+import YouBannerDecorations from "YouBannerDecorations" /* 9823 */;
+import BackIconWithBadge from "BackIconWithBadge" /* 15884 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserProfileStore from "UserProfileStore" /* 6867 */;
+import UserProfileStore from "UserProfileStore" /* 6837 */;
 import LocaleStore from "LocaleStore" /* 2189 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 15909 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6572 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 15900 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6543 */;
 import UserStore from "UserStore" /* 1388 */;
-import YouConstants from "YouConstants" /* 18004 */;
-import Constants from "Constants" /* 7475 */;
+import YouConstants from "YouConstants" /* 17997 */;
+import Constants from "Constants" /* 7445 */;
 import Fragment from "Fragment" /* 21 */;
 import module_1655_mod from "module_1655" /* 1655 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size_mod from "module_2" /* 2 */;
 
 let navigation;
@@ -76,7 +76,7 @@ function BackButton(paddingTop) {
   }
   const obj3 = { style: items1, accessibilityRole: "button", accessibilityLabel: formatToPlainStringResult, onPress: handleBackButtonPress, children: closure_21(BackIconWithBadge.CloseIconWithBadgeOnSide, { count: stateFromStores }) };
   items1 = [tmp.backButton, { top: paddingTop }];
-  const PressableOpacity = tmp2(6941).PressableOpacity;
+  const PressableOpacity = tmp2(6911).PressableOpacity;
   return closure_21(PressableOpacity, obj3);
 }
 function UnconnectedYouScreen(arg0) {

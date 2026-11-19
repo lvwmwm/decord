@@ -1,14 +1,14 @@
-// Module ID: 6949
-// Function ID: 6950
+// Module ID: 6919
+// Function ID: 6920
 // Name: GroupIcon
-// Dependencies: [19, 21, 575, 5509, 6950, 2]
+// Dependencies: [19, 21, 575, 5478, 6920, 2]
 // Exports: GroupIcon
 
-// Module 6949 (GroupIcon)
+// Module 6919 (GroupIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5509 */;
-import AssetRegistry from "AssetRegistry" /* 6950 */;
+import BaseIconImage2 from "BaseIconImage" /* 5478 */;
+import AssetRegistry from "AssetRegistry" /* 6920 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

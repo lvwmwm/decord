@@ -1,16 +1,16 @@
-// Module ID: 13879
-// Function ID: 13880
+// Module ID: 13861
+// Function ID: 13862
 // Name: PremiumGiftAnalytics
-// Dependencies: [19, 1072, 9371, 9112, 1380, 1256, 1113, 9142, 2]
+// Dependencies: [19, 1072, 9348, 9088, 1380, 1256, 1113, 9118, 2]
 // Exports: default
 
-// Module 13879 (PremiumGiftAnalytics)
+// Module 13861 (PremiumGiftAnalytics)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 9112 */;
-import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 9142 */;
+import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 9088 */;
+import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 9118 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

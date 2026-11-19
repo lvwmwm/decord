@@ -1,12 +1,12 @@
-// Module ID: 15100
-// Function ID: 15101
+// Module ID: 15086
+// Function ID: 15087
 // Name: GuildBadgeSpider
-// Dependencies: [19, 21, 15060, 7776, 2]
+// Dependencies: [19, 21, 15046, 7746, 2]
 // Exports: GuildBadgeSpider
 
-// Module 15100 (GuildBadgeSpider)
-import inlineStyles from "inlineStyles" /* 7776 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 15060 */;
+// Module 15086 (GuildBadgeSpider)
+import inlineStyles from "inlineStyles" /* 7746 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 15046 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

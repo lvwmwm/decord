@@ -1,13 +1,13 @@
-// Module ID: 18486
-// Function ID: 18487
+// Module ID: 18479
+// Function ID: 18480
 // Name: useConjureDraftHasText
-// Dependencies: [32, 19, 18487, 2]
+// Dependencies: [32, 19, 18480, 2]
 // Exports: default
 
-// Module 18486 (useConjureDraftHasText)
+// Module 18479 (useConjureDraftHasText)
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureComposerDraftStore from "ConjureComposerDraftStore" /* 18487 */;
+import ConjureComposerDraftStore from "ConjureComposerDraftStore" /* 18480 */;
 import size from "module_2" /* 2 */;
 
 let _slicedToArray = _slicedToArray_mod;
@@ -17,13 +17,13 @@ export default function useConjureDraftHasText(arg0) {
   let closure_0;
   let tmp2;
   let tmp3;
-  const f116430 = () => {
+  const f116388 = () => {
     const str = ConjureComposerDraftStore.getDraft(closure_0);
     return "" !== str.trim();
   };
   _slicedToArray = arg0;
-  [tmp2, tmp3] = react.useState(f116430);
-  _slicedToArray(react.useState(f116430), 2);
+  [tmp2, tmp3] = react.useState(f116388);
+  _slicedToArray(react.useState(f116388), 2);
   const tmp4 = _slicedToArray(react.useState(arg0), 2);
   const tmp5 = tmp4[1];
   if (tmp4[0] !== arg0) {

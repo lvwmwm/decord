@@ -1,10 +1,10 @@
-// Module ID: 6760
-// Function ID: 6761
+// Module ID: 6731
+// Function ID: 6732
 // Name: SocialLayerStorefrontConstants
 // Dependencies: [1072, 1405, 2188, 2]
 // Exports: getChannelsGameShopPrefix, getGameShopTermsUrl, isGameShopPath
 
-// Module 6760 (SocialLayerStorefrontConstants)
+// Module 6731 (SocialLayerStorefrontConstants)
 import Constants from "Constants" /* 1072 */;
 import UserStoreConstants from "UserStoreConstants" /* 1405 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;

@@ -1,42 +1,42 @@
-// Module ID: 10891
-// Function ID: 10892
+// Module ID: 10869
+// Function ID: 10870
 // Name: ChannelCallActionBar
-// Dependencies: [19, 17, 4671, 6528, 5565, 6308, 502, 2133, 10607, 5473, 5568, 21, 4823, 10617, 10892, 504, 9567, 6441, 10893, 9564, 10629, 10618, 1113, 10895, 10896, 10600, 10917, 10918, 5559, 6364, 6309, 10586, 10919, 10626, 10920, 7431, 7450, 10621, 10921, 10968, 10995, 2]
+// Dependencies: [19, 17, 4640, 6499, 5534, 6279, 502, 2133, 10585, 5442, 5537, 21, 4792, 10595, 10870, 504, 9546, 6412, 10871, 9543, 10607, 10596, 1113, 10873, 10874, 10578, 10895, 10896, 5528, 6335, 6280, 10564, 10897, 10604, 10898, 7401, 7420, 10599, 10899, 10946, 10973, 2]
 // Exports: default, useActionBarPrimaryButton, useActionBarSecondButtons
 
-// Module 10891 (ChannelCallActionBar)
+// Module 10869 (ChannelCallActionBar)
 import react_native from "react-native" /* 17 */;
 import intl2 from "intl" /* 1113 */;
-import CallConstants from "CallConstants" /* 5473 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5559 */;
-import Constants from "Constants" /* 5568 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6309 */;
-import StreamActionCreators from "StreamActionCreators" /* 6364 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 7431 */;
-import CallsUtils from "CallsUtils" /* 9564 */;
-import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 10586 */;
-import VoiceChatHooks from "VoiceChatHooks" /* 10600 */;
-import useActionBarHeight from "useActionBarHeight" /* 10617 */;
-import CallBarActionAll from "CallBarAction" /* 10618 */;
-import useIsFiveButtonLayout from "useIsFiveButtonLayout" /* 10621 */;
-import useIsRemoteDefault from "useIsRemote" /* 10626 */;
-import openIgnoreThermalStateAlert from "openIgnoreThermalStateAlert" /* 10629 */;
-import CameraLottie2 from "CameraLottie" /* 10893 */;
-import useScreenshareUtilsDefault from "useScreenshareUtils" /* 10896 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10917 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 10918 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 10919 */;
-import ChannelCallMicButton from "ChannelCallMicButton" /* 10968 */;
+import CallConstants from "CallConstants" /* 5442 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5528 */;
+import Constants from "Constants" /* 5537 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6280 */;
+import StreamActionCreators from "StreamActionCreators" /* 6335 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 7401 */;
+import CallsUtils from "CallsUtils" /* 9543 */;
+import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 10564 */;
+import VoiceChatHooks from "VoiceChatHooks" /* 10578 */;
+import useActionBarHeight from "useActionBarHeight" /* 10595 */;
+import CallBarActionAll from "CallBarAction" /* 10596 */;
+import useIsFiveButtonLayout from "useIsFiveButtonLayout" /* 10599 */;
+import useIsRemoteDefault from "useIsRemote" /* 10604 */;
+import openIgnoreThermalStateAlert from "openIgnoreThermalStateAlert" /* 10607 */;
+import CameraLottie2 from "CameraLottie" /* 10871 */;
+import useScreenshareUtilsDefault from "useScreenshareUtils" /* 10874 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10895 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10896 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 10897 */;
+import ChannelCallMicButton from "ChannelCallMicButton" /* 10946 */;
 import react from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4671 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6528 */;
-import GameConsoleStore from "GameConsoleStore" /* 5565 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6308 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4640 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6499 */;
+import GameConsoleStore from "GameConsoleStore" /* 5534 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6279 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 10607 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 10585 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -247,7 +247,7 @@ class DisconnectStreamButton {
             stopStream(obj2.encodeStreamKey(stateFromStores));
           }
       };
-      const PrimaryActionButton = stateFromStores(10618).PrimaryActionButton;
+      const PrimaryActionButton = stateFromStores(10596).PrimaryActionButton;
       intl = tmp(1113).intl;
       tmp4 = closure_15(PrimaryActionButton, obj3);
     }
@@ -324,7 +324,7 @@ function useActionBarSecondButton(channel) {
 function useActionBarPrimaryButtons(channel) {
   let currentEmbeddedActivity;
   channel = channel.channel;
-  let obj = channel(10600);
+  let obj = channel(10578);
   const isConnectedToVoiceChannel = obj.useIsConnectedToVoiceChannel(channel);
   const items = [ChannelRTCStore, AuthenticationStore];
   const obj2 = channel(504);
@@ -409,7 +409,7 @@ export default function ChannelCallActionBar(arg0) {
     END_REMOTE = tmp6[tmp7.END_ACTIVITY] ? tmp7.END_ACTIVITY : tmp7.END_CALL;
   }
   const tmp2Result = useAnalyticsLocationsDefault;
-  const analyticsLocations = tmp2Result(tmp2(7450).CHANNEL_CALL_ACTION_BAR).analyticsLocations;
+  const analyticsLocations = tmp2Result(tmp2(7420).CHANNEL_CALL_ACTION_BAR).analyticsLocations;
   const obj = useIsFiveButtonLayout;
   const isFiveButtonLayout = obj.useIsFiveButtonLayout(channel.id);
   const obj2 = { value: analyticsLocations, children: closure_15(tmp12, obj3) };
@@ -418,12 +418,12 @@ export default function ChannelCallActionBar(arg0) {
   tmp12 = View;
   if (shouldShowConnectingScreen) {
     obj4 = { channel };
-    tmp13Result = tmp11(tmp9(10921).CallConnectingActionBar, obj4);
+    tmp13Result = tmp11(tmp9(10899).CallConnectingActionBar, obj4);
   } else {
     let tmp11Result5;
     let tmp11Result6;
     let tmp11Result4 = null;
-    const tmp13 = closure_17;
+    const tmp13 = authStore4;
     const tmp14 = authStore3;
     if (!tmp4) {
       obj5 = { channel, isSmallSize: isFiveButtonLayout };
@@ -448,7 +448,7 @@ export default function ChannelCallActionBar(arg0) {
     items[2] = closure_15(ChannelCallMicButton.ChannelCallMicButton, obj8);
     if (obj5.END_REMOTE === END_REMOTE) {
       const obj9 = { channel, isSmallSize: isFiveButtonLayout };
-      tmp11Result6 = tmp11(tmp9(10995).DisconnectRemoteButton, obj9);
+      tmp11Result6 = tmp11(tmp9(10973).DisconnectRemoteButton, obj9);
     } else if (obj5.END_STREAM === END_REMOTE) {
       const obj10 = { channel, isSmallSize: isFiveButtonLayout };
       tmp11Result6 = tmp11(DisconnectStreamButton, obj10);

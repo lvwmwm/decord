@@ -1,14 +1,14 @@
-// Module ID: 7377
-// Function ID: 7378
+// Module ID: 7347
+// Function ID: 7348
 // Name: ActivitiesInTextUtils
-// Dependencies: [4672, 4755, 1083, 1093, 504, 2]
+// Dependencies: [4641, 4724, 1083, 1093, 504, 2]
 // Exports: getIsAppLauncherEnabled, isActivitiesInTextEnabled, useIsActivitiesInTextEnabled, useIsAppLauncherEnabled
 
-// Module 7377 (ActivitiesInTextUtils)
+// Module 7347 (ActivitiesInTextUtils)
 import Constants from "Constants" /* 1083 */;
 import ChannelTypes from "ChannelTypes" /* 1093 */;
-import ChannelStore from "ChannelStore" /* 4672 */;
-import PermissionStore from "PermissionStore" /* 4755 */;
+import ChannelStore from "ChannelStore" /* 4641 */;
+import PermissionStore from "PermissionStore" /* 4724 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

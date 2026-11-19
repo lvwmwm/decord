@@ -1,22 +1,22 @@
-// Module ID: 18017
-// Function ID: 18018
+// Module ID: 18010
+// Function ID: 18011
 // Name: YouBarBackground
-// Dependencies: [19, 17, 16541, 21, 4823, 575, 7046, 5378, 671, 5387, 16629, 1655, 5424, 2]
+// Dependencies: [19, 17, 16532, 21, 4792, 575, 7016, 5347, 671, 5356, 16620, 1655, 5393, 2]
 
-// Module 18017 (YouBarBackground)
+// Module 18010 (YouBarBackground)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import LinearGradientDefault from "LinearGradient" /* 5378 */;
-import useToken2 from "useToken" /* 5387 */;
-import spring_spring from "spring/spring" /* 5424 */;
-import _modDef7046 from "module_7046" /* 7046 */;
-import useQuestDockAnimatedBorderRadiusDefault from "useQuestDockAnimatedBorderRadius" /* 16629 */;
+import LinearGradientDefault from "LinearGradient" /* 5347 */;
+import useToken2 from "useToken" /* 5356 */;
+import spring_spring from "spring/spring" /* 5393 */;
+import _modDef7016 from "module_7016" /* 7016 */;
+import useQuestDockAnimatedBorderRadiusDefault from "useQuestDockAnimatedBorderRadius" /* 16620 */;
 import react from "react" /* 19 */;
-import YouBarConstants from "YouBarConstants" /* 16541 */;
+import YouBarConstants from "YouBarConstants" /* 16532 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size_mod from "module_2" /* 2 */;
 
 let obj1, tmp2;
@@ -46,7 +46,7 @@ function YouBarMaskedBackground(barWidth) {
   rect = { position: "absolute", top: 0, left: 0, right: 0, bottom: YOU_BAR_HEIGHT / 2 - 1, backgroundColor: "black" };
   items = [, , ];
   const tmp = closure_8();
-  const tmp3 = _modDef7046;
+  const tmp3 = _modDef7016;
   items[0] = metroRequire(View, obj3);
   const obj4 = { style: { position: "absolute", top: YOU_BAR_HEIGHT / 2, left: diff - 1, right: 0, bottom: 0, backgroundColor: "black" } };
   items[1] = metroRequire(View, obj4);

@@ -1,19 +1,19 @@
-// Module ID: 16167
-// Function ID: 16168
+// Module ID: 16158
+// Function ID: 16159
 // Name: ConnectedApplicationIdentity
-// Dependencies: [5, 32, 19, 17, 21, 4823, 16168, 1113, 1187, 5414, 10990, 5768, 16175, 5840, 1414, 5423, 10296, 7502, 9637, 6957, 6956, 7467, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4792, 16159, 1113, 1187, 5383, 10968, 5739, 16166, 5811, 1414, 5392, 10274, 7472, 9616, 6927, 6926, 7437, 2]
 // Exports: default
 
-// Module 16167 (ConnectedApplicationIdentity)
+// Module 16158 (ConnectedApplicationIdentity)
 import react_native from "react-native" /* 17 */;
 import intl6 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import Text_Text from "Text/Text" /* 5414 */;
-import Icon from "Icon" /* 5423 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5768 */;
-import AlertDefault from "Alert" /* 5840 */;
-import InfoBoxDefault from "InfoBox" /* 10990 */;
+import Text_Text from "Text/Text" /* 5383 */;
+import Icon from "Icon" /* 5392 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5739 */;
+import AlertDefault from "Alert" /* 5811 */;
+import InfoBoxDefault from "InfoBox" /* 10968 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -25,7 +25,7 @@ let closure_1, v3;
 let metroImportAll;
 let metroImportDefault;
 let tmp;
-const IconDefault = tmp(5423);
+const IconDefault = tmp(5392);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 const View = react_native.View;
@@ -160,7 +160,7 @@ export default function ConnectedApplicationIdentity(identity) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -204,7 +204,7 @@ export default function ConnectedApplicationIdentity(identity) {
               c3 = 0;
             }
             v3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp17) {
           if (0 === c3) {

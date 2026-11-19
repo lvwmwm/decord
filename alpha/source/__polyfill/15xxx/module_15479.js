@@ -1,37 +1,27 @@
 // Module ID: 15479
 // Function ID: 15480
-// Dependencies: [15480, 15483, 15465, 15487, 15488, 15484]
+// Dependencies: [15477, 15451]
 
 // Module 15479
-import _mod15465 from "module_15465" /* 15465 */;
-import _mod15480 from "module_15480" /* 15480 */;
-import _mod15484 from "module_15484" /* 15484 */;
-import _mod15487 from "module_15487" /* 15487 */;
-import _mod15488 from "module_15488" /* 15488 */;
-import prop from "module_15483" /* 15483 */;
+import _mod15451 from "module_15451" /* 15451 */;
+import _mod15477 from "module_15477" /* 15477 */;
 
-let tmp2;
-let closure_2 = _mod15480("wks");
-const _Symbol = _mod15465.Symbol;
-if (prop) {
-  tmp2 = _Symbol.for || _mod15465.Symbol;
-  const tmp3 = _Symbol.for || _mod15465.Symbol;
-} else {
-  tmp2 = _Symbol && _mod15465.Symbol.withoutSetter || _mod15487;
-}
-let closure_3 = tmp2;
 
-export default (arg0) => {
-  if (!_mod15488(closure_2, arg0)) {
-    if (_mod15484) {
-      let tmp6;
-      const tmpResult = _mod15488;
-      if (tmpResult(_mod15465.Symbol, arg0)) {
-        tmp6 = tmp(15465).Symbol[arg0];
-      }
-      closure_2[arg0] = tmp6;
+export default function(arg0, arg1) {
+  let tmp3;
+  if (arguments.length < 2) {
+    const tmp7 = _mod15451[arg0];
+    let tmp8;
+    if (_mod15477(tmp7)) {
+      tmp8 = tmp7;
     }
-    tmp6 = closure_3(`Symbol.${arg0}`);
+    tmp3 = tmp8;
+  } else {
+    tmp3 = _mod15451[arg0];
+    const tmp = require;
+    if (tmp3) {
+      tmp3 = tmp(15451)[arg0][arg1];
+    }
   }
-  return closure_2[arg0];
+  return tmp3;
 };

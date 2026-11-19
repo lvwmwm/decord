@@ -1,18 +1,18 @@
-// Module ID: 10398
-// Function ID: 10399
+// Module ID: 10376
+// Function ID: 10377
 // Name: ApplicationCommandFrecencyStore
-// Dependencies: [1231, 5845, 1365, 1082, 5580, 12, 504, 572, 2]
+// Dependencies: [1231, 5816, 1365, 1082, 5549, 12, 504, 572, 2]
 // Exports: getFilteredTopCommands, getTopRealCommands
 
-// Module 10398 (ApplicationCommandFrecencyStore)
+// Module 10376 (ApplicationCommandFrecencyStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import ApplicationConstants from "ApplicationConstants" /* 1365 */;
-import FrecencyDefault from "Frecency" /* 5580 */;
+import FrecencyDefault from "Frecency" /* 5549 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5845 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5816 */;
 import size from "module_2" /* 2 */;
 
 let closure_6, recentUses, set;

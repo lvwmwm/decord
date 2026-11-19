@@ -1,18 +1,18 @@
-// Module ID: 8735
-// Function ID: 8736
+// Module ID: 8704
+// Function ID: 8705
 // Name: UserOfferActionCreators
-// Dependencies: [5, 8720, 8715, 8718, 1390, 1072, 1380, 572, 1256, 1285, 8736, 1242, 4855, 4656, 4653, 2]
+// Dependencies: [5, 8689, 8684, 8687, 1390, 1072, 1380, 572, 1256, 1285, 8705, 1242, 4824, 4625, 4622, 2]
 // Exports: acknowledgeUserOffer, fetchChurnDiscountOffer, fetchExistingChurnDiscountOffer, fetchUserOffer, triggerUserOffer
 
-// Module 8735 (UserOfferActionCreators)
+// Module 8704 (UserOfferActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 8720 */;
-import UserTrialOfferRecord from "UserTrialOfferRecord" /* 8715 */;
-import UserOfferStore from "UserOfferStore" /* 8718 */;
+import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 8689 */;
+import UserTrialOfferRecord from "UserTrialOfferRecord" /* 8684 */;
+import UserOfferStore from "UserOfferStore" /* 8687 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -58,7 +58,7 @@ let obj = function _fetchUserOffer() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         let c11;
@@ -90,7 +90,7 @@ let obj = function _fetchUserOffer() {
               }
               obj6 = closure_2;
               if (closure_2 === undefined) {
-                obj6 = { offerId: "__d", paymentGatewayOverride: "enabled" };
+                obj6 = { offerId: "Array", paymentGatewayOverride: "Path" };
               }
               offerId = undefined;
               paymentGatewayOverride = undefined;

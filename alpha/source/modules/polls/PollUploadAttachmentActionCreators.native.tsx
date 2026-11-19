@@ -1,15 +1,15 @@
-// Module ID: 13004
-// Function ID: 13005
+// Module ID: 12986
+// Function ID: 12987
 // Name: PollUploadAttachmentActionCreators
-// Dependencies: [5, 8227, 8433, 13005, 8067, 8386, 8381, 8357, 10413, 2]
+// Dependencies: [5, 8196, 8402, 12987, 8036, 8355, 8350, 8326, 10391, 2]
 // Exports: handlePollGifAttachmentAdd, handlePollMediaAttachmentAdd, removeAllPollUploadAttachments, removePollUploadAttachment
 
-// Module 13004 (PollUploadAttachmentActionCreators)
-import FileManagerUtils from "FileManagerUtils" /* 8067 */;
-import DraftStore from "DraftStore" /* 8227 */;
-import PollsConstants from "PollsConstants" /* 8433 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 10413 */;
-import PollAttachmentUtils from "PollAttachmentUtils" /* 13005 */;
+// Module 12986 (PollUploadAttachmentActionCreators)
+import FileManagerUtils from "FileManagerUtils" /* 8036 */;
+import DraftStore from "DraftStore" /* 8196 */;
+import PollsConstants from "PollsConstants" /* 8402 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 10391 */;
+import PollAttachmentUtils from "PollAttachmentUtils" /* 12987 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ let obj = function _handlePollGifAttachmentAdd() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         let tmp36;
@@ -69,7 +69,7 @@ let obj = function _handlePollGifAttachmentAdd() {
           } else if (1 === file) {
             c6 = 0;
             c8 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           } else if (2 === file) {
             if (arg0 === 1) {
               c8 = 3;
@@ -83,7 +83,7 @@ let obj = function _handlePollGifAttachmentAdd() {
               if (null == closure_3) {
                 c6 = 0;
                 c8 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "+60" };
               } else {
                 const obj9 = closure_132_0(closure_132_2[3]);
                 filePathForGif = obj9.getFilePathForGif(filename);
@@ -107,7 +107,7 @@ let obj = function _handlePollGifAttachmentAdd() {
               if (null == tmp36) {
                 c6 = 0;
                 c8 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "+60" };
               } else {
                 const obj6 = closure_132_0(closure_132_2[5]);
                 writeFileResult = obj6.getImageDimensionsIfMissing(tmp36);
@@ -173,7 +173,7 @@ obj = function _removePollUploadAttachment() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c6;
@@ -213,7 +213,7 @@ obj = function _removePollUploadAttachment() {
             c6 = 0;
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp5) {
         let closure_5 = tmp5;
@@ -243,7 +243,7 @@ obj = function _removeAllPollUploadAttachments() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c4;
@@ -282,7 +282,7 @@ obj = function _removeAllPollUploadAttachments() {
             c4 = 0;
           }
           c1 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp12) {
         let closure_3 = tmp12;

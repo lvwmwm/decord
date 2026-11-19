@@ -1,13 +1,13 @@
-// Module ID: 9789
-// Function ID: 9790
+// Module ID: 9768
+// Function ID: 9769
 // Name: useGameAnnouncements
-// Dependencies: [19, 9672, 504, 9790, 2]
+// Dependencies: [19, 9651, 504, 9769, 2]
 // Exports: default
 
-// Module 9789 (useGameAnnouncements)
+// Module 9768 (useGameAnnouncements)
 import react from "react" /* 19 */;
-import GameProfileHttpUtils from "GameProfileHttpUtils" /* 9790 */;
-import GameProfileStore from "GameProfileStore" /* 9672 */;
+import GameProfileHttpUtils from "GameProfileHttpUtils" /* 9769 */;
+import GameProfileStore from "GameProfileStore" /* 9651 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

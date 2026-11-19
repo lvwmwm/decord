@@ -1,12 +1,11 @@
 // Module ID: 11534
 // Function ID: 11535
-// Dependencies: [41, 42, 93, 95, 98, 11529, 11377, 11378, 11531]
+// Dependencies: [41, 42, 93, 95, 98, 11347, 11359, 11360]
 
 // Module 11534
-import EmptyDuration from "EmptyDuration" /* 11377 */;
-import ReferenceWithTimezone from "ReferenceWithTimezone" /* 11378 */;
-import _mod11529 from "module_11529" /* 11529 */;
-import _mod11531 from "module_11531" /* 11531 */;
+import en from "en" /* 11347 */;
+import assignSimilarDate from "assignSimilarDate" /* 11359 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11360 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -28,12 +27,13 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class UKTimeUnitAgoFormatParser {
+const re6 = /(?:questo|questa)?\s{0,3}(mattina|pomeriggio|sera|notte|mezzanotte|mezzogiorno)(?=\W|$)/i;
+class ITCasualTimeParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, UKTimeUnitAgoFormatParser);
-    const obj = _getPrototypeOf(UKTimeUnitAgoFormatParser);
+    _classCallCheck(this, ITCasualTimeParser);
+    const obj = _getPrototypeOf(ITCasualTimeParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -45,24 +45,54 @@ class UKTimeUnitAgoFormatParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(UKTimeUnitAgoFormatParser, _mod11531.AbstractParserWithLeftBoundaryChecking);
+_inherits(ITCasualTimeParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "innerPatternString",
-  value: function innerPatternString(arg0) {
-    return "(" + _mod11529.TIME_UNITS_PATTERN + ")\\s{0,5}\u0442\u043E\u043C\u0443(?=(?:\\W|$))";
+  key: "innerPattern",
+  value: function innerPattern() {
+    return re6;
   }
 };
 const items = [
   entry,
   {
     key: "innerExtract",
-    value: function innerExtract(reference, arg1) {
-      const parseDurationResult = _mod11529.parseDuration(arg1[1]);
-      const reverseDurationResult = EmptyDuration.reverseDuration(parseDurationResult);
-      const ParsingComponents = ReferenceWithTimezone.ParsingComponents;
-      return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
+    value: function innerExtract(refDate, arg1) {
+      refDate = refDate.refDate;
+      const parsingComponents = refDate.createParsingComponents();
+      const str = arg1[1];
+      const formatted = str.toLowerCase();
+      if ("pomeriggio" === formatted) {
+        parsingComponents.imply("meridiem", en.Meridiem.PM);
+        parsingComponents.imply("hour", 15);
+      } else {
+        if ("sera" !== formatted) {
+          if ("notte" !== formatted) {
+            if ("mezzanotte" === formatted) {
+              const _Date = Date;
+              const self = this;
+              const self2 = this;
+              const date = new Date(refDate.getTime());
+              date.setDate(date.getDate() + 1);
+              assignSimilarDate.assignSimilarDate(parsingComponents, date);
+              assignSimilarDate.implySimilarTime(parsingComponents, date);
+              parsingComponents.imply("hour", 0);
+              parsingComponents.imply("minute", 0);
+              parsingComponents.imply("second", 0);
+            } else if ("mattina" === formatted) {
+              parsingComponents.imply("meridiem", en.Meridiem.AM);
+              parsingComponents.imply("hour", 6);
+            } else if ("mezzogiorno" === formatted) {
+              parsingComponents.imply("meridiem", en.Meridiem.AM);
+              parsingComponents.imply("hour", 12);
+            }
+          }
+        }
+        parsingComponents.imply("meridiem", en.Meridiem.PM);
+        parsingComponents.imply("hour", 20);
+      }
+      return parsingComponents;
     }
   }
 ];
 
-export default _createClass(UKTimeUnitAgoFormatParser, items);
+export default _createClass(ITCasualTimeParser, items);

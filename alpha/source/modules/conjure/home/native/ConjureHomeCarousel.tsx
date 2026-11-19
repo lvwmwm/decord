@@ -1,27 +1,27 @@
-// Module ID: 18680
-// Function ID: 18681
+// Module ID: 18674
+// Function ID: 18675
 // Name: ConjureHomeCarousel
-// Dependencies: [19, 17, 4824, 2120, 1072, 21, 575, 6951, 7615, 18681, 9803, 10032, 12131, 4823, 1655, 18683, 5510, 1414, 5414, 16232, 18684, 18692, 504, 1503, 7508, 1113, 4121, 2]
+// Dependencies: [19, 17, 4793, 2120, 1072, 21, 575, 6921, 7585, 18675, 9782, 10010, 12108, 4792, 1655, 18677, 5479, 1414, 5383, 16223, 18678, 18686, 504, 1503, 7478, 1113, 4089, 2]
 
-// Module 18680 (ConjureHomeCarousel)
+// Module 18674 (ConjureHomeCarousel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import _mod1655 from "module_1655" /* 1655 */;
-import FastImageDefault from "FastImage" /* 5510 */;
-import GameControllerIcon from "GameControllerIcon" /* 6951 */;
-import AppsIcon from "AppsIcon" /* 7615 */;
-import ScreenIcon from "ScreenIcon" /* 9803 */;
-import ShieldIcon from "ShieldIcon" /* 10032 */;
-import RobotIcon from "RobotIcon" /* 12131 */;
-import WidgetsIcon from "WidgetsIcon" /* 18681 */;
-import conjureHomeCarouselFan from "conjureHomeCarouselFan" /* 18683 */;
-import conjureHomeInspirationArtDefault from "conjureHomeInspirationArt" /* 18684 */;
+import FastImageDefault from "FastImage" /* 5479 */;
+import GameControllerIcon from "GameControllerIcon" /* 6921 */;
+import AppsIcon from "AppsIcon" /* 7585 */;
+import ScreenIcon from "ScreenIcon" /* 9782 */;
+import ShieldIcon from "ShieldIcon" /* 10010 */;
+import RobotIcon from "RobotIcon" /* 12108 */;
+import WidgetsIcon from "WidgetsIcon" /* 18675 */;
+import conjureHomeCarouselFan from "conjureHomeCarouselFan" /* 18677 */;
+import conjureHomeInspirationArtDefault from "conjureHomeInspirationArt" /* 18678 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4824 */;
+import AccessibilityStore from "AccessibilityStore" /* 4793 */;
 import AppStateStore from "AppStateStore" /* 2120 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size_mod from "module_2" /* 2 */;
 
 const _modDef1655 = _mod1655;
@@ -40,9 +40,9 @@ let size;
 let size1;
 let tmp3;
 const AvatarUtils = tmp3(1414);
-const Text_Text = tmp3(5414);
-const SvgCss = tmp3(16232);
-const conjureHomeInspirationEntries = tmp3(18692);
+const Text_Text = tmp3(5383);
+const SvgCss = tmp3(16223);
+const conjureHomeInspirationEntries = tmp3(18686);
 let View = react_native.View;
 const AppStates = Constants.AppStates;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);

@@ -1,30 +1,24 @@
-// Module ID: 9360
-// Function ID: 9361
+// Module ID: 9337
+// Function ID: 9338
 // Name: useDisplayNameFontsAvailable
-// Dependencies: [5, 19, 17, 1380, 9361, 2]
+// Dependencies: [5, 19, 17, 9338, 2]
 // Exports: useDisplayNameFontsAvailable
 
-// Module 9360 (useDisplayNameFontsAvailable)
+// Module 9337 (useDisplayNameFontsAvailable)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 19 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import react_nativeDefault from "react-native" /* 9361 */;
+import react_nativeDefault from "react-native" /* 9338 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
-let c3, c4, hasOnDemandResourceResult;
+let c3, c4, closure_2;
 
 function isAvailable() {
-  if (hasOnDemandResourceResult == null) {
-    obj = PlatformUtils;
-    const isIOSResult = obj.isIOS();
-    hasOnDemandResourceResult = !isIOSResult;
-    if (isIOSResult) {
-      const obj2 = react_nativeDefault;
-      hasOnDemandResourceResult = obj2.hasOnDemandResource(fonts);
-    }
+  if (closure_2 == null) {
+    obj = react_nativeDefault;
+    closure_2 = obj.hasOnDemandResource(fonts);
   }
-  return hasOnDemandResourceResult;
+  return closure_2;
 }
 function load() {
   return obj(...arguments);
@@ -34,14 +28,14 @@ let obj = function _load() {
     let obj2;
     let tmp;
     function retryWhenActive() {
-      const tmp = c10;
+      const tmp = c9;
       if (!tmp) {
-        c10 = true;
-        closure_0 = closure_6.addEventListener("change", (event) => {
+        c9 = true;
+        closure_0 = closure_5.addEventListener("change", (event) => {
           if ("active" === event) {
             closure_0.remove();
-            c10 = false;
-            closure_2_12();
+            c9 = false;
+            closure_2_11();
           }
         });
       }
@@ -59,7 +53,7 @@ let obj = function _load() {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         let c2;
@@ -79,9 +73,9 @@ let obj = function _load() {
               let closure_1 = tmp;
               closure_0 = undefined;
               if (!isAvailable()) {
-                const tmp13 = c9;
+                const tmp13 = c8;
                 if (!tmp13) {
-                  c9 = true;
+                  c8 = true;
                   closure_0 = false;
                   c2 = 1;
                   c3 = 2;
@@ -108,17 +102,17 @@ let obj = function _load() {
               closure_0 = value;
               c2 = 0;
             }
-            c9 = false;
+            c8 = false;
             const tmp9 = closure_0;
             if (tmp9) {
-              c3 = true;
-              const item = closure_129_8.forEach((fn) => fn());
+              c2 = true;
+              const item = closure_129_7.forEach((fn) => fn());
             } else {
               retryWhenActive();
             }
           }
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         } catch (tmp17) {
           if (0 === c2) {
             c4 = 3;
@@ -144,8 +138,8 @@ const useSyncExternalStore = react.useSyncExternalStore;
 const AppState = react_native.AppState;
 const fonts = "fonts";
 const set = new Set();
+let c8 = false;
 let c9 = false;
-let c10 = false;
 const result = size.fileFinishedImporting("modules/display_name_styles/native/useDisplayNameFontsAvailable.tsx");
 
 export function useDisplayNameFontsAvailable() {

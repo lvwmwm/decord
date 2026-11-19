@@ -1,21 +1,21 @@
-// Module ID: 19856
-// Function ID: 19857
+// Module ID: 19867
+// Function ID: 19868
 // Name: GuildSettingsServerTagUpsellCard
-// Dependencies: [19, 17, 8243, 1072, 21, 4823, 575, 504, 7912, 13337, 13305, 4884, 5378, 5837, 13340, 5414, 1113, 5421, 17790, 2]
+// Dependencies: [19, 17, 8212, 1072, 21, 4792, 575, 504, 7882, 13319, 13287, 4853, 5347, 5808, 13322, 5383, 1113, 5390, 17783, 2]
 // Exports: default
 
-// Module 19856 (GuildSettingsServerTagUpsellCard)
+// Module 19867 (GuildSettingsServerTagUpsellCard)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import LinearGradientDefault from "LinearGradient" /* 5378 */;
-import Powerups from "Powerups" /* 7912 */;
-import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 13305 */;
-import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 13337 */;
+import LinearGradientDefault from "LinearGradient" /* 5347 */;
+import Powerups from "Powerups" /* 7882 */;
+import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 13287 */;
+import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 13319 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 8243 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 8212 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -73,7 +73,7 @@ export default function GuildSettingsServerTagUpsellCard(guildId) {
   }, items2);
   const obj2 = { theme: ThemeTypes.DARK, children: closure_8(closure_4, obj3) };
   obj3 = { style: tmp.card, children: items4 };
-  const ThemeContextProvider = guildId(4884).ThemeContextProvider;
+  const ThemeContextProvider = guildId(4853).ThemeContextProvider;
   const obj4 = { style: tmp.backgroundLayer, colors: items3, locations: [0, 0.7], start: { x: 0.5, y: 0 }, end: { x: 0.5, y: 1 }, pointerEvents: "none" };
   items3 = ["rgba(41, 41, 45, 0)", c13];
   items4 = [closure_7(LinearGradientDefault, obj4), , , ];
@@ -82,29 +82,29 @@ export default function GuildSettingsServerTagUpsellCard(guildId) {
   const obj6 = { style: tmp.backgroundLayer, colors: colors2, start, end, pointerEvents: "none" };
   items4[2] = closure_7(LinearGradientDefault, obj6);
   const obj7 = { spacing: nativeDefault.space.PX_16, children: items5 };
-  const Stack = guildId(5837).Stack;
+  const Stack = guildId(5808).Stack;
   const obj8 = { style: tmp.imageContainer, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: tmp8Result };
   tmp8Result = null != tmp6;
   if (tmp8Result) {
     const obj9 = { imageUrl: tmp6, style: tmp.powerupImage };
-    tmp8Result = tmp8(tmp5(13340), obj9);
+    tmp8Result = tmp8(tmp5(13322), obj9);
   }
   items5 = [closure_7(closure_4, obj8), , ];
   const obj10 = { spacing: nativeDefault.space.PX_8, style: tmp.textBlock, children: items6 };
-  const Stack2 = tmp2(5837).Stack;
+  const Stack2 = tmp2(5808).Stack;
   const obj11 = { variant: "heading-xl/semibold", color: "text-strong", style: tmp.centerText, children: intl.string(tmp2(1113).t["2QmKZ2"]) };
-  const Text = tmp2(5414).Text;
+  const Text = tmp2(5383).Text;
   intl = tmp2(1113).intl;
   items6 = [closure_7(Text, obj11), ];
   const obj12 = { variant: "body-sm/medium", color: "text-subtle", style: items7, children: intl2.string(tmp2(1113).t.Tg0fDm) };
   items7 = [, ];
   ({ centerText: arr8[0], body: arr8[1] } = tmp);
-  const Text2 = tmp2(5414).Text;
+  const Text2 = tmp2(5383).Text;
   intl2 = tmp2(1113).intl;
   items6[1] = closure_7(Text2, obj12);
   items5[1] = closure_8(Stack2, obj10);
-  const obj13 = { variant: "primary", size: "lg", text: intl3.string(tmp2(1113).t.kMRDWs), icon: closure_7(tmp2(17790).BoostTier2Icon, { color: "white" }), iconPosition: "start", onPress: onUnlockPress };
-  const Button = tmp2(5421).Button;
+  const obj13 = { variant: "primary", size: "lg", text: intl3.string(tmp2(1113).t.kMRDWs), icon: closure_7(tmp2(17783).BoostTier2Icon, { color: "white" }), iconPosition: "start", onPress: onUnlockPress };
+  const Button = tmp2(5390).Button;
   intl3 = tmp2(1113).intl;
   items5[2] = closure_7(Button, obj13);
   items4[3] = closure_8(Stack, obj7);

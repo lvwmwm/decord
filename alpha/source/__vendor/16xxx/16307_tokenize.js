@@ -1,45 +1,47 @@
 // Module ID: 16307
 // Function ID: 16308
 // Name: tokenize
-// Dependencies: [16244]
+// Dependencies: [16235, 16279]
 
 // Module 16307 (tokenize)
-import tokenize from "tokenize" /* 16244 */;
+import tokenize from "tokenize" /* 16235 */;
+import tokenize2 from "tokenize" /* 16279 */;
 
-let items;
-let obj2;
-const Comma = tokenize.TYPE.Comma;
-const obj = {
-  name: "MediaQueryList",
-  structure: obj2,
-  parse(arg0) {
-    const self = this;
-    const list = this.createList();
-    const scanner = this.scanner;
-    scanner.skipSC();
-    if (!this.scanner.eof) {
-      list.push(self.MediaQuery(arg0));
-      if (self.scanner.tokenType === Comma) {
-        const iter = self.scanner;
-        iter.next();
-        while (!self.scanner.eof) {
-          let arr3 = list.push(self.MediaQuery(arg0));
-          if (self.scanner.tokenType !== Comma) {
-            break;
-          }
-        }
-      }
-    }
-    const element = { type: "MediaQueryList", loc: self.getLocationFromList(list), children: list };
-    return element;
-  },
-  generate(arg0) {
-    this.children(arg0, function() {
-      this.chunk(",");
-    });
+function consumeRaw(arg0) {
+  return this.Raw(arg0, tokenize2.mode.leftCurlyBracket, true);
+}
+function consumePrelude() {
+  const self = this;
+  const SelectorListResult = this.SelectorList();
+  const tmp2 = "Raw" !== SelectorListResult.type && false === self.scanner.eof && self.scanner.tokenType !== LeftCurlyBracket;
+  if (tmp2) {
+    self.error();
   }
+  return SelectorListResult;
+}
+const LeftCurlyBracket = tokenize.TYPE.LeftCurlyBracket;
+let obj = {
+  name: "Rule",
+  structure: { prelude: ["SelectorList", "Raw"], block: ["Block"] },
+  parse() {
+    let BlockResult;
+    let parseWithFallbackResult;
+    const self = this;
+    const tokenStart = this.scanner.tokenStart;
+    if (this.parseRulePrelude) {
+      parseWithFallbackResult = self.parseWithFallback(consumePrelude, consumeRaw);
+    } else {
+      parseWithFallbackResult = consumeRaw.call(self, tmp);
+    }
+    const obj = { type: "Rule", loc: self.getLocation(tokenStart, self.scanner.tokenStart), prelude: parseWithFallbackResult, block: BlockResult };
+    BlockResult = self.Block(true);
+    return obj;
+  },
+  generate(prelude) {
+    this.node(prelude.prelude);
+    this.node(prelude.block);
+  },
+  walkContext: "rule"
 };
-obj2 = { children: items };
-items = [["MediaQuery"]];
 
 export default obj;

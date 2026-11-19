@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/user_settings/account/native/images", width: 121, height: 90, scales: [1, 2, 3], hash: "6fbfa0aa2194635b21a8ebd068b44d0c", name: "lock", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images", width: 92, height: 92, scales: [2], hash: "f7554503ce3d782dd42ebcfb917a0839", name: "googleauth-logo", type: "png" });

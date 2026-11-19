@@ -1,10 +1,10 @@
-// Module ID: 6452
-// Function ID: 6453
+// Module ID: 6423
+// Function ID: 6424
 // Name: SecondaryIndexMapUtils
 // Dependencies: [1345, 2]
 // Exports: isVersionEqual
 
-// Module 6452 (SecondaryIndexMapUtils)
+// Module 6423 (SecondaryIndexMapUtils)
 import _modDef1345 from "module_1345" /* 1345 */;
 import size from "module_2" /* 2 */;
 

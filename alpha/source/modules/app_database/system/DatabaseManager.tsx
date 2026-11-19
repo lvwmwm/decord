@@ -1,14 +1,14 @@
-// Module ID: 4718
-// Function ID: 4719
+// Module ID: 4687
+// Function ID: 4688
 // Name: DatabaseManager
-// Dependencies: [5, 502, 3, 504, 572, 4719, 4702, 2]
+// Dependencies: [5, 502, 3, 504, 572, 4688, 4671, 2]
 
-// Module 4718 (DatabaseManager)
+// Module 4687 (DatabaseManager)
 import LoggerDefault from "Logger" /* 3 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import Dispatcher2 from "Dispatcher" /* 572 */;
-import _mod4702 from "module_4702" /* 4702 */;
-import react_nativeAll from "react-native" /* 4719 */;
+import _mod4671 from "module_4671" /* 4671 */;
+import react_nativeAll from "react-native" /* 4688 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
@@ -43,7 +43,7 @@ let obj = function _trySpeculativelyOpenDatabaseAsync() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c4;
@@ -64,7 +64,7 @@ let obj = function _trySpeculativelyOpenDatabaseAsync() {
             const _HermesInternal = HermesInternal;
             closure_2_6.verbose("speculatively opening " + tmp21);
             c4 = 1;
-            const Database = require("module_4702").Database;
+            const Database = require("module_4671").Database;
             c5 = 2;
             c6 = 1;
             const obj4 = { value: Database.open(tmp21), done: false };
@@ -181,7 +181,7 @@ class DatabaseManager extends Store {
           logger.verbose("synchronously opening " + combined);
           let num = 50;
           const tmp6 = tryUntil(50, () => {
-            const Database = _mod4702.Database;
+            const Database = _mod4671.Database;
             return Database.openSyncUnsafe(combined, { invalidateDisabledHandles: true });
           });
           const _HermesInternal3 = HermesInternal;
@@ -246,7 +246,7 @@ class DatabaseManager extends Store {
     if (value != null) {
       stateResult = value.state();
     }
-    const tmp3 = null == value && stateResult !== _mod4702.DatabaseState.Open;
+    const tmp3 = null == value && stateResult !== _mod4671.DatabaseState.Open;
     if (tmp3) {
       self.remove(id);
     }
@@ -289,7 +289,7 @@ function carefullySpeculativelyOpen(userId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -342,7 +342,7 @@ function carefullySpeculativelyOpen(userId) {
           }
         }
         c3 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       } catch (tmp31) {
         c3 = 3;
         throw tmp31;

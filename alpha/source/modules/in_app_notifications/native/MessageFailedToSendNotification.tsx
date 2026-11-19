@@ -1,16 +1,16 @@
-// Module ID: 11126
-// Function ID: 11127
+// Module ID: 11104
+// Function ID: 11105
 // Name: MessageFailedToSendNotification
-// Dependencies: [19, 17, 21, 4823, 575, 1113, 5556, 6298, 11120, 10305, 11083, 2]
+// Dependencies: [19, 17, 21, 4792, 575, 1113, 5525, 6270, 11098, 10283, 11061, 2]
 
-// Module 11126 (MessageFailedToSendNotification)
+// Module 11104 (MessageFailedToSendNotification)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import transitionToChannel from "transitionToChannel" /* 5556 */;
-import flow_Client from "flow/Client" /* 6298 */;
+import transitionToChannel from "transitionToChannel" /* 5525 */;
+import flow_Client from "flow/Client" /* 6270 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size_mod from "module_2" /* 2 */;
 
 let size;
@@ -35,11 +35,11 @@ const memoResult = react.memo(function MessageFailedToSendNotification(notificat
     const obj2 = { jumpType: flow_Client.JumpType.INSTANT };
     obj.transitionToMessage(channelId, messageId, obj2);
   }, items);
-  const NotificationPressable = channelId(11120).NotificationPressable;
+  const NotificationPressable = channelId(11098).NotificationPressable;
   ({ size: "md", color: messageId(575).colors.ICON_SUBTLE });
-  const RetryIcon = channelId(10305).RetryIcon;
+  const RetryIcon = channelId(10283).RetryIcon;
   ({ text: intl2.string(channelId(1113).t.xxRPOT) });
-  const SystemMessageText = channelId(11083).SystemMessageText;
+  const SystemMessageText = channelId(11061).SystemMessageText;
   intl2 = channelId(1113).intl;
   return <NotificationPressable icon={null} header={obj} onPress={callback} notification={notification}>{null}</NotificationPressable>;
 });

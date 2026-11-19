@@ -1,14 +1,14 @@
-// Module ID: 6825
-// Function ID: 6826
+// Module ID: 12114
+// Function ID: 12115
 // Name: UserActivityActionCreators
-// Dependencies: [5, 5561, 1072, 572, 6826, 2121, 1285, 2]
+// Dependencies: [5, 5530, 1072, 572, 12113, 2121, 1285, 2]
 // Exports: getMetadata, play, sync
 
-// Module 6825 (UserActivityActionCreators)
+// Module 12114 (UserActivityActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import PresenceStore from "PresenceStore" /* 5561 */;
+import PresenceStore from "PresenceStore" /* 5530 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -67,7 +67,7 @@ export function sync(activity, userId) {
 }
 export function play(activity, userId) {
   _require = activity;
-  const promise = require("asyncRequire")(6826, dependencyMap.paths);
+  const promise = require("asyncRequire")(12113, dependencyMap.paths);
   const nextPromise = promise.then((getSpotifyMetadataFromActivity) => getSpotifyMetadataFromActivity.getSpotifyMetadataFromActivity(activity, userId));
   const nextPromise1 = nextPromise.then((metadata) => {
     obj = DispatcherDefault;

@@ -1,17 +1,17 @@
-// Module ID: 7955
-// Function ID: 7956
+// Module ID: 7925
+// Function ID: 7926
 // Name: usePrivacyLevelHelpText
-// Dependencies: [4755, 1072, 4678, 1083, 504, 4760, 1084, 1113, 2188, 2]
+// Dependencies: [4724, 1072, 4647, 1083, 504, 4729, 1084, 1113, 2188, 2]
 // Exports: default
 
-// Module 7955 (usePrivacyLevelHelpText)
+// Module 7925 (usePrivacyLevelHelpText)
 import Constants from "Constants" /* 1072 */;
 import Constants2 from "Constants" /* 1083 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4678 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4760 */;
-import PermissionStore from "PermissionStore" /* 4755 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4647 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4729 */;
+import PermissionStore from "PermissionStore" /* 4724 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

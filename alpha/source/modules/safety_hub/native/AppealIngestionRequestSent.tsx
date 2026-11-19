@@ -1,18 +1,18 @@
-// Module ID: 12374
-// Function ID: 12375
+// Module ID: 12357
+// Function ID: 12358
 // Name: AppealIngestionRequestSent
-// Dependencies: [19, 17, 7720, 21, 4823, 12362, 1113, 12360, 5510, 12375, 5414, 12369, 2]
+// Dependencies: [19, 17, 7690, 21, 4792, 12345, 1113, 12343, 5479, 12358, 5383, 12352, 2]
 // Exports: default
 
-// Module 12374 (AppealIngestionRequestSent)
+// Module 12357 (AppealIngestionRequestSent)
 import react_native from "react-native" /* 17 */;
-import FastImageDefault from "FastImage" /* 5510 */;
-import AppealIngestionExternalLinkDefault from "AppealIngestionExternalLink" /* 12369 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12375 */;
+import FastImageDefault from "FastImage" /* 5479 */;
+import AppealIngestionExternalLinkDefault from "AppealIngestionExternalLink" /* 12352 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12358 */;
 import react from "react" /* 19 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7720 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7690 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,14 +1,14 @@
-// Module ID: 12978
-// Function ID: 12979
+// Module ID: 12960
+// Function ID: 12961
 // Name: UserCircleIcon
-// Dependencies: [19, 21, 575, 5509, 12979, 2]
+// Dependencies: [19, 21, 575, 5478, 12961, 2]
 // Exports: UserCircleIcon
 
-// Module 12978 (UserCircleIcon)
+// Module 12960 (UserCircleIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5509 */;
-import AssetRegistry from "AssetRegistry" /* 12979 */;
+import BaseIconImage2 from "BaseIconImage" /* 5478 */;
+import AssetRegistry from "AssetRegistry" /* 12961 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

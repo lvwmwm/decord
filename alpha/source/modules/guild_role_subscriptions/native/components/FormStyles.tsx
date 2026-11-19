@@ -1,11 +1,11 @@
-// Module ID: 20051
-// Function ID: 20052
+// Module ID: 20062
+// Function ID: 20063
 // Name: FormStyles
-// Dependencies: [4823, 575, 2]
+// Dependencies: [4792, 575, 2]
 
-// Module 20051 (FormStyles)
+// Module 20062 (FormStyles)
 import nativeDefault from "native" /* 575 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const obj = { container: { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_24 } };

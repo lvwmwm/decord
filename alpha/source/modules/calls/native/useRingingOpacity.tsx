@@ -1,12 +1,12 @@
-// Module ID: 18066
-// Function ID: 18067
+// Module ID: 18059
+// Function ID: 18060
 // Name: useRingingOpacity
-// Dependencies: [19, 1655, 5033, 2]
+// Dependencies: [19, 1655, 5002, 2]
 // Exports: default
 
-// Module 18066 (useRingingOpacity)
+// Module 18059 (useRingingOpacity)
 import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5033 */;
+import timing_timing from "timing/timing" /* 5002 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

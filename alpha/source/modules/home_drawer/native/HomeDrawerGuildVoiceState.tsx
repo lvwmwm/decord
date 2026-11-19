@@ -1,28 +1,28 @@
-// Module ID: 17949
-// Function ID: 17950
+// Module ID: 17942
+// Function ID: 17943
 // Name: HomeDrawerGuildVoiceState
-// Dependencies: [19, 17, 4753, 4765, 6460, 5567, 1072, 21, 4823, 575, 14411, 1187, 5414, 1113, 11044, 5510, 5378, 17948, 504, 12, 14918, 2]
+// Dependencies: [19, 17, 4722, 4734, 6431, 5536, 1072, 21, 4792, 575, 14398, 1187, 5383, 1113, 11022, 5479, 5347, 17941, 504, 12, 14904, 2]
 // Exports: GuildVoiceState, useVoiceUsers
 
-// Module 17949 (HomeDrawerGuildVoiceState)
+// Module 17942 (HomeDrawerGuildVoiceState)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 4753 */;
-import LinearGradientDefault from "LinearGradient" /* 5378 */;
-import Text_Text from "Text/Text" /* 5414 */;
-import FastImageDefault from "FastImage" /* 5510 */;
-import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 11044 */;
-import AvatarPile2 from "AvatarPile" /* 14411 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 4722 */;
+import LinearGradientDefault from "LinearGradient" /* 5347 */;
+import Text_Text from "Text/Text" /* 5383 */;
+import FastImageDefault from "FastImage" /* 5479 */;
+import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 11022 */;
+import AvatarPile2 from "AvatarPile" /* 14398 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4765 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6460 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5567 */;
+import RelationshipStore from "RelationshipStore" /* 4734 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6431 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5536 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

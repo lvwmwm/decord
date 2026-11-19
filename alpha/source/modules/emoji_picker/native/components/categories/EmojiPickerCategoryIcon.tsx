@@ -1,24 +1,24 @@
-// Module ID: 11295
-// Function ID: 11296
+// Module ID: 11273
+// Function ID: 11274
 // Name: EmojiPickerCategoryIcon
-// Dependencies: [19, 6484, 21, 9715, 9909, 5532, 11296, 9391, 11298, 11300, 6951, 11302, 11304, 8882, 10168, 8859, 2]
+// Dependencies: [19, 6455, 21, 9694, 9888, 5501, 11274, 9369, 11276, 11278, 6921, 11280, 11282, 8856, 10146, 8832, 2]
 
-// Module 11295 (EmojiPickerCategoryIcon)
+// Module 11273 (EmojiPickerCategoryIcon)
 import Fragment from "Fragment" /* 21 */;
-import ClockIcon from "ClockIcon" /* 5532 */;
-import EmojiPickerConstants from "EmojiPickerConstants" /* 6484 */;
-import GameControllerIcon from "GameControllerIcon" /* 6951 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 8859 */;
-import HeartIcon from "HeartIcon" /* 8882 */;
-import ReactionIcon from "ReactionIcon" /* 9391 */;
-import TrophyIcon from "TrophyIcon" /* 9715 */;
-import StarIcon from "StarIcon" /* 9909 */;
-import FlagIcon from "FlagIcon" /* 10168 */;
-import LightbulbIcon from "LightbulbIcon" /* 11296 */;
-import NatureIcon from "NatureIcon" /* 11298 */;
-import FoodIcon from "FoodIcon" /* 11300 */;
-import BicycleIcon from "BicycleIcon" /* 11302 */;
-import ObjectIcon from "ObjectIcon" /* 11304 */;
+import ClockIcon from "ClockIcon" /* 5501 */;
+import EmojiPickerConstants from "EmojiPickerConstants" /* 6455 */;
+import GameControllerIcon from "GameControllerIcon" /* 6921 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 8832 */;
+import HeartIcon from "HeartIcon" /* 8856 */;
+import ReactionIcon from "ReactionIcon" /* 9369 */;
+import TrophyIcon from "TrophyIcon" /* 9694 */;
+import StarIcon from "StarIcon" /* 9888 */;
+import FlagIcon from "FlagIcon" /* 10146 */;
+import LightbulbIcon from "LightbulbIcon" /* 11274 */;
+import NatureIcon from "NatureIcon" /* 11276 */;
+import FoodIcon from "FoodIcon" /* 11278 */;
+import BicycleIcon from "BicycleIcon" /* 11280 */;
+import ObjectIcon from "ObjectIcon" /* 11282 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

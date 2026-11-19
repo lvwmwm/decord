@@ -1,17 +1,9 @@
 // Module ID: 15498
 // Function ID: 15499
-// Dependencies: [15473]
+// Dependencies: [15499]
 
 // Module 15498
-import _mod15473 from "module_15473" /* 15473 */;
+import _mod15499 from "module_15499" /* 15499 */;
 
-let fn;
-if (_mod15473) {
-  fn = call.bind(call);
-} else {
-  fn = function() {
-    return call(...arguments);
-  };
-}
 
-export default fn;
+export default (arg0) => _mod15499(arg0.length);

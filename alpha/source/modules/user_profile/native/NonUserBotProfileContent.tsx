@@ -1,24 +1,24 @@
-// Module ID: 8108
-// Function ID: 8109
+// Module ID: 8077
+// Function ID: 8078
 // Name: NonUserBotProfileContent
-// Dependencies: [19, 17, 7475, 5052, 21, 8109, 8047, 5851, 4879, 8110, 8095, 8111, 1630, 8092, 8103, 7456, 5504, 8112, 1655, 8124, 14129, 1113, 14140, 2]
+// Dependencies: [19, 17, 7445, 5021, 21, 8078, 8016, 5822, 4848, 8079, 8064, 8080, 1630, 8061, 8072, 7426, 5473, 8081, 1655, 8093, 14111, 1113, 14122, 2]
 
-// Module 8108 (NonUserBotProfileContent)
+// Module 8077 (NonUserBotProfileContent)
 import react_native from "react-native" /* 17 */;
-import UserUtilsDefault from "UserUtils" /* 4879 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5052 */;
-import ToastUtils from "ToastUtils" /* 5504 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5851 */;
-import ClipboardUtils from "ClipboardUtils" /* 7456 */;
-import useProfileThemeDefault from "useProfileTheme" /* 8092 */;
-import useUserProfileBannerHeightDefault from "useUserProfileBannerHeight" /* 8095 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8109 */;
-import useBadgesDefault from "useBadges" /* 8110 */;
-import useUserProfileOverscrollStylesDefault from "useUserProfileOverscrollStyles" /* 8111 */;
-import UserProfilePrimaryInfoDefault from "UserProfilePrimaryInfo" /* 14129 */;
-import UserProfileAboutMeCardDefault from "UserProfileAboutMeCard" /* 14140 */;
+import UserUtilsDefault from "UserUtils" /* 4848 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5021 */;
+import ToastUtils from "ToastUtils" /* 5473 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5822 */;
+import ClipboardUtils from "ClipboardUtils" /* 7426 */;
+import useProfileThemeDefault from "useProfileTheme" /* 8061 */;
+import useUserProfileBannerHeightDefault from "useUserProfileBannerHeight" /* 8064 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8078 */;
+import useBadgesDefault from "useBadges" /* 8079 */;
+import useUserProfileOverscrollStylesDefault from "useUserProfileOverscrollStyles" /* 8080 */;
+import UserProfilePrimaryInfoDefault from "UserProfilePrimaryInfo" /* 14111 */;
+import UserProfileAboutMeCardDefault from "UserProfileAboutMeCard" /* 14122 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 7475 */;
+import Constants from "Constants" /* 7445 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -63,7 +63,7 @@ const memoResult = react.memo(function NonUserBotProfileContent(scrollPosition) 
   importDefault = undefined;
   scrollPosition = scrollPosition.scrollPosition;
   const tmp3 = UserProfileSharedStylesDefault();
-  let obj = trackUserProfileAction(8047);
+  let obj = trackUserProfileAction(8016);
   trackUserProfileAction = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
   let guild_id;
   const useName = NicknameUtilsDefault.useName;
@@ -85,19 +85,19 @@ const memoResult = react.memo(function NonUserBotProfileContent(scrollPosition) 
   const bottom = tmp(1630)().bottom;
   ({ theme, primaryColor, secondaryColor } = useProfileThemeDefault({ user, displayProfile }));
   useProfileThemeDefault({ user, displayProfile });
-  const tmp4Result = trackUserProfileAction(8103);
+  const tmp4Result = trackUserProfileAction(8072);
   const userProfileColors = tmp4Result.useUserProfileColors({ theme, primaryColor, secondaryColor });
   const containerBackground = userProfileColors.containerBackground;
   if (null == user) {
     return null;
   } else {
     let obj2 = { user, displayProfile, bannerHeight: tmp10, bannerAnimatedStyle, bannerImageAnimatedStyle, blurAnimatedProps, showBlur };
-    const items = [closure_7(tmp(8112), obj2), ];
+    const items = [closure_7(tmp(8081), obj2), ];
     const obj3 = { style: contentAnimatedStyle, children: items1 };
     View = tmp(1655).View;
     const obj4 = { user, guildId, backgroundColor: tmp14, disableStatus: true };
     guildId = undefined;
-    const OpenableUserProfileAvatar = tmp4(8124).OpenableUserProfileAvatar;
+    const OpenableUserProfileAvatar = tmp4(8093).OpenableUserProfileAvatar;
     const tmp23 = closure_9;
     if (displayProfile != null) {
       guildId = displayProfile.guildId;

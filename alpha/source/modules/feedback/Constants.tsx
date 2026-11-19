@@ -1,9 +1,9 @@
-// Module ID: 10513
-// Function ID: 10514
+// Module ID: 10491
+// Function ID: 10492
 // Name: Constants
 // Dependencies: [1196, 2]
 
-// Module 10513 (Constants)
+// Module 10491 (Constants)
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
 import size from "module_2" /* 2 */;
 

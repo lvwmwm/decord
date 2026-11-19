@@ -3,193 +3,123 @@
 // Dependencies: []
 
 // Module 16264
-function noop(arg0) {
-  return arg0;
-}
-function generate(type, fn, arg2, arg3) {
-  let closure_1;
-  let str = ",";
-  switch (type.type) {
-    case "Group":
-    {
-      let closure_0 = fn;
-      generate = arg2;
-      let closure_2 = arg3;
-      if (" " !== type.combinator) {
-        let combinator;
-        if (!arg3) {
-          combinator = `${" " + type.combinator} `;
-        }
-        const terms = type.terms;
-        const mapped = terms.map((item) => generate(item, fn, closure_1, closure_2));
-        const joined = mapped.join(combinator);
-        const explicit = type.explicit || arg2;
-        let sum1 = joined;
-        if (explicit) {
-          let str27;
-          if (arg3) {
-            str27 = "[";
-          } else {
-            str27 = "[ ";
-          }
-          let str28 = " ]";
-          const sum = str27 + joined;
-          if (arg3) {
-            str28 = "]";
-          }
-          sum1 = sum + str28;
-        }
-        let str29 = "";
-        if (type.disallowEmpty) {
-          str29 = "!";
-        }
-        str = sum1 + str29;
-        return fn(str, type);
-      }
-      combinator = type.combinator;
-      break;
-    }
-    case "Multiplier":
-    {
-      let str16;
-      const tmp11 = generate(type.term, fn, arg2, arg3);
-      if (0 !== type.min) {
-        let str17;
-        if (0 !== type.min) {
-          let str18;
-          if (1 === type.min) {
-            if (0 === type.max) {
-              let str25 = "+";
-              if (type.comma) {
-                str25 = "#";
-              }
-              str18 = str25;
-            }
-            str17 = str18;
-          }
-          if (1 !== type.min) {
-            let text;
-            let str19 = "";
-            let str20 = "";
-            if (type.comma) {
-              str20 = "#";
-            }
-            if (type.min === type.max) {
-              text = `${"{" + type.min}}`;
-            } else {
-              const text1 = `{${type.min}`;
-              if (0 !== type.max) {
-                str19 = type.max;
-              }
-              text = `${tmp12 + "," + str19}}`;
-            }
-            str18 = str20 + text;
-          } else {
-            str18 = "";
-          }
-        } else {
-          str17 = "?";
-        }
-        str16 = str17;
+let closure_1 = Object.create(null);
+let closure_2 = Object.create(null);
+let obj = {
+  keyword: function getKeywordDescriptor(str) {
+    const obj = hasOwnProperty;
+    if (hasOwnProperty.call(closure_1, str)) {
+      return closure_1[str];
+    } else {
+      const formatted = str.toLowerCase();
+      if (obj.call(closure_1, formatted)) {
+        closure_1[str] = closure_1[formatted];
+        return closure_1[formatted];
       } else {
-        str16 = "*";
+        let tmp2 = length >= 2;
+        if (2 <= formatted.length) {
+          tmp2 = 45 === formatted.charCodeAt(0);
+        }
+        if (tmp2) {
+          tmp2 = 45 === formatted.charCodeAt(1);
+        }
+        let str2 = "";
+        if (!tmp2) {
+          let str3 = "";
+          if (3 <= formatted.length) {
+            str3 = "";
+            if (45 === formatted.charCodeAt(0)) {
+              str3 = "";
+              if (45 !== formatted.charCodeAt(1)) {
+                const index = formatted.indexOf("-", 2);
+                str3 = "";
+                if (-1 !== index) {
+                  str3 = formatted.substring(0, index + 1);
+                }
+              }
+            }
+          }
+          str2 = str3;
+        }
+        const _Object = Object;
+        const obj2 = { basename: formatted.substr(str2.length), name: formatted, vendor: str2, prefix: str2, custom: tmp2 };
+        const freezeResult = freeze(obj2);
+        closure_1[str] = freezeResult;
+        return freezeResult;
       }
-      return tmp11 + fn(str16, type);
     }
-    case "Type":
-    {
-      let str7 = "";
-      const text2 = `<${type.name}`;
-      if (type.opts) {
-        const opts = type.opts;
-        if ("Range" === opts.type) {
-          let str11 = "-\u221E";
-          if (null !== opts.min) {
-            str11 = opts.min;
-          }
-          let str13 = "\u221E";
-          const text3 = ` [${str11}`;
-          if (null !== opts.max) {
-            str13 = opts.max;
-          }
-          str7 = fn(text3 + "," + str13 + "]", type.opts);
-        } else {
-          const _Error = Error;
-          const self = this;
-          const self2 = this;
-          const error = new Error("Unknown node type `" + opts.type + "`");
-          throw error;
+  },
+  property: function getPropertyDescriptor(str) {
+    const obj = hasOwnProperty;
+    if (hasOwnProperty.call(closure_2, str)) {
+      return closure_2[str];
+    } else {
+      str = str[0];
+      let str2 = "/";
+      if ("/" === str) {
+        if (`/` === str[1]) {
+          str2 = "//";
+        }
+        str = str2;
+      } else {
+        const tmp2 = "_" !== str && "*" !== str && "$" !== str && "#" !== str && "+" !== str && "&" !== str;
+        if (tmp2) {
+          str = "";
         }
       }
-      str = `${tmp + str7}>`;
-      break;
-    }
-    case "Property":
-    {
-      str = `${"<'" + type.name}'>`;
-      break;
-    }
-    case "Keyword":
-    {
-      str = type.name;
-      break;
-    }
-    case "AtKeyword":
-    {
-      str = `@${type.name}`;
-      break;
-    }
-    case "Function":
-    {
-      str = `${type.name}(`;
-      break;
-    }
-    case "String":
-    {
-      str = type.value;
-      break;
-    }
-    case "Token":
-    {
-      str = type.value;
-      break;
-    }
-    case "Comma":
-    {
-      break;
-    }
-    default:
-    {
-      const _Error2 = Error;
-      const self3 = this;
-      const self4 = this;
-      const error1 = new Error("Unknown node type `" + type.type + "`");
-      throw error1;
-    }
-  }
-}
-
-export default (arg0, forceBraces) => {
-  let decorate = noop;
-  let flag = false;
-  let flag2 = false;
-  let tmp = forceBraces;
-  if (typeof forceBraces !== "function") {
-    flag = false;
-    flag2 = false;
-    tmp = decorate;
-    if (forceBraces) {
-      const _Boolean = Boolean;
-      const _Boolean2 = Boolean;
-      const BooleanResult = Boolean(forceBraces.forceBraces);
-      const BooleanResult1 = Boolean(forceBraces.compact);
-      if (typeof forceBraces.decorate === "function") {
-        decorate = forceBraces.decorate;
+      const tmp4 = str.length - tmp3 >= 2 && 45 === str.charCodeAt(tmp3) && 45 === str.charCodeAt(tmp3 + 1);
+      let arr = str;
+      if (!tmp4) {
+        const formatted = str.toLowerCase();
+        arr = formatted;
+        if (obj.call(closure_2, formatted)) {
+          closure_2[str] = closure_2[formatted];
+          return closure_2[formatted];
+        }
       }
-      tmp = decorate;
-      flag = BooleanResult1;
-      flag2 = BooleanResult;
+      let str10 = "";
+      if (!tmp4) {
+        let str11 = "";
+        if (arr.length - (str.length || 0) >= 3) {
+          str11 = "";
+          if (45 === arr.charCodeAt(str.length || 0)) {
+            str11 = "";
+            if (45 !== arr.charCodeAt((str.length || 0) + 1)) {
+              const index = arr.indexOf("-", tmp7 + 2);
+              str11 = "";
+              if (-1 !== index) {
+                str11 = arr.substring(tmp7, index + 1);
+              }
+            }
+          }
+        }
+        str10 = str11;
+      }
+      const substr = arr.substr(0, str.length + str10.length);
+      const _Object = Object;
+      const obj2 = { basename: arr.substr(substr.length), name: arr.substr(str.length), hack: str, vendor: str10, prefix: substr, custom: tmp4 };
+      const freezeResult = freeze(obj2);
+      closure_2[str] = freezeResult;
+      return freezeResult;
     }
+  },
+  isCustomProperty(callResult, arg1) {
+    const tmp2 = callResult.length - tmp >= 2 && 45 === callResult.charCodeAt(tmp) && 45 === callResult.charCodeAt(tmp + 1);
+    return tmp2;
+  },
+  vendorPrefix: function getVendorPrefix(str, arg1) {
+    if (str.length - (arg1 || 0) >= 3) {
+      if (45 === str.charCodeAt(arg1 || 0)) {
+        if (45 !== str.charCodeAt((arg1 || 0) + 1)) {
+          const index = str.indexOf("-", tmp + 2);
+          if (-1 !== index) {
+            return str.substring(arg1 || 0, index + 1);
+          }
+        }
+      }
+    }
+    return "";
   }
-  return generate(arg0, tmp, flag2, flag);
 };
+
+export default obj;

@@ -1,13 +1,13 @@
-// Module ID: 9362
-// Function ID: 9363
+// Module ID: 9339
+// Function ID: 9340
 // Name: useDisplayNameStylesAccessibleColors
-// Dependencies: [19, 4824, 504, 1399, 9363, 1396, 4820, 671, 2]
+// Dependencies: [19, 4793, 504, 1399, 9340, 1396, 4789, 671, 2]
 // Exports: useDisplayNameStylesAccessibleColors
 
-// Module 9362 (useDisplayNameStylesAccessibleColors)
+// Module 9339 (useDisplayNameStylesAccessibleColors)
 import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1396 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4824 */;
+import AccessibilityStore from "AccessibilityStore" /* 4793 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesAccessibleColors.tsx");

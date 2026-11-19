@@ -1,14 +1,14 @@
-// Module ID: 9840
-// Function ID: 9841
+// Module ID: 9819
+// Function ID: 9820
 // Name: LanguageIcon
-// Dependencies: [19, 21, 575, 5509, 9841, 2]
+// Dependencies: [19, 21, 575, 5478, 9820, 2]
 // Exports: LanguageIcon
 
-// Module 9840 (LanguageIcon)
+// Module 9819 (LanguageIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5509 */;
-import AssetRegistry from "AssetRegistry" /* 9841 */;
+import BaseIconImage2 from "BaseIconImage" /* 5478 */;
+import AssetRegistry from "AssetRegistry" /* 9820 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,26 +1,26 @@
-// Module ID: 20251
-// Function ID: 20252
+// Module ID: 20262
+// Function ID: 20263
 // Name: TTITestAction
-// Dependencies: [5, 19453, 5440, 7174, 502, 4672, 4860, 4694, 1072, 3, 572, 5006, 11138, 19618, 1374, 1379, 1256, 4999, 8162, 10389, 8491, 5556, 6333, 7173, 5557, 13670, 17053, 1197, 2]
+// Dependencies: [5, 19449, 5409, 7144, 502, 4641, 4829, 4663, 1072, 3, 572, 4975, 11116, 19614, 1374, 1379, 1256, 4968, 8131, 10367, 8460, 5525, 6304, 7143, 5526, 13652, 17046, 1197, 2]
 
-// Module 20251 (TTITestAction)
+// Module 20262 (TTITestAction)
 import LoggerDefault from "Logger" /* 3 */;
 import AnalyticsUtils from "AnalyticsUtils" /* 1256 */;
 import ProcessUtilsDefault from "ProcessUtils" /* 1374 */;
 import react_native from "react-native" /* 1379 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4999 */;
-import react_nativeDefault from "react-native" /* 5006 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6333 */;
-import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 7174 */;
-import ComponentProfiler from "ComponentProfiler" /* 11138 */;
-import NativeAppStartup from "NativeAppStartup" /* 19453 */;
-import react_nativeDefault2 from "react-native" /* 19618 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4968 */;
+import react_nativeDefault from "react-native" /* 4975 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6304 */;
+import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 7144 */;
+import ComponentProfiler from "ComponentProfiler" /* 11116 */;
+import NativeAppStartup from "NativeAppStartup" /* 19449 */;
+import react_nativeDefault2 from "react-native" /* 19614 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ExperimentStore from "ExperimentStore" /* 5440 */;
+import ExperimentStore from "ExperimentStore" /* 5409 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4672 */;
-import DefaultRouteStore from "DefaultRouteStore" /* 4860 */;
-import GuildStore from "GuildStore" /* 4694 */;
+import ChannelStore from "ChannelStore" /* 4641 */;
+import DefaultRouteStore from "DefaultRouteStore" /* 4829 */;
+import GuildStore from "GuildStore" /* 4663 */;
 import Constants from "Constants" /* 1072 */;
 import Dispatcher from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
@@ -77,7 +77,7 @@ let obj = function _captureNavigationTTI() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -187,7 +187,7 @@ let obj = function _captureNavigationTTI() {
               if (true !== closure_0.coldMessageCache) {
                 closure_132_18("error", "Artificial content delay requires a cold message cache");
                 c6 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "+60" };
               } else {
                 const obj13 = { channelId: closure_0.toChannelId, delayMs, actions: [], timer: null };
               }
@@ -208,7 +208,7 @@ let obj = function _captureNavigationTTI() {
             obj5.transitionToChannel(closure_0.toChannelId, { navigationReplace: false });
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp88) {
         c6 = 3;
@@ -235,7 +235,7 @@ obj = function _navigateToDMs() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -290,7 +290,7 @@ obj = function _navigateToDMs() {
             closure_129_18("success", "Navigation reset to DMs");
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp18) {
         c3 = 3;
@@ -383,7 +383,7 @@ obj = function _setupTTITest() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c5;
@@ -521,7 +521,7 @@ obj = function _setupTTITest() {
             } else {
               closure_131_18("error", message.message);
               c7 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             }
             break;
           }
@@ -656,7 +656,7 @@ obj = function _setupTTITest() {
                   } else {
                     closure_131_18("error", error1.message);
                     c7 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "+60" };
                   }
                 } else {
                   const tmp183 = flag;
@@ -683,7 +683,7 @@ obj = function _setupTTITest() {
                 } else {
                   closure_131_18("error", error2.message);
                   c7 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "+60" };
                 }
               } else {
                 const tmp53 = flag;
@@ -802,7 +802,7 @@ obj = function _setupTTITest() {
               } else {
                 closure_131_18("error", error3.message);
                 c7 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "+60" };
               }
             }
             break;
@@ -844,7 +844,7 @@ obj = function _setupTTITest() {
                 closure_131_18("success", "Setup Complete");
               }
               c7 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             }
             break;
           }
@@ -883,7 +883,7 @@ obj = function _apiLogin() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -1034,13 +1034,13 @@ obj = function _apiLogin() {
             closure_0 = iter;
             obj = password(closure_2_2[10]);
             closure_1 = iter;
-            const f143538 = () => {
+            const f143511 = () => {
               const error = new Error("Unable to login " + closure_0 + ". Login failed with action '" + obj + "'");
               closure_2_1(error);
             };
             function handler(arg0) {
               obj.unsubscribe(closure_1, handler);
-              return f143538(arg0);
+              return f143511(arg0);
             }
             const subscription = obj.subscribe(iter, handler);
           }
@@ -1072,7 +1072,7 @@ function subscribeOnce(subscribe, arg1, arg2) {
   let closure_2 = arg2;
   function handler(arg0) {
     obj.unsubscribe(closure_1, handler);
-    return f143538(arg0);
+    return f143511(arg0);
   }
   return subscribe.subscribe("LOGIN_SUCCESS", handler);
 }
@@ -1241,7 +1241,7 @@ let closure_16 = _asyncToGenerator(async (arg0) => {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -1275,7 +1275,7 @@ let closure_16 = _asyncToGenerator(async (arg0) => {
                   const obj2 = { value, done: true };
                   return obj2;
                 } else {
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "+60" };
                 }
               } else {
                 try {
@@ -1289,7 +1289,7 @@ let closure_16 = _asyncToGenerator(async (arg0) => {
                     return obj;
                   } else {
                     c0 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "+60" };
                   }
                 } catch (tmp3) {
                   c0 = 3;
@@ -1405,7 +1405,7 @@ let closure_16 = _asyncToGenerator(async (arg0) => {
                     closure_136_18("error", "Failed to send backchannel reply", obj17);
                   }
                   c12 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "+60" };
                 }
               } else if (arg0 === 1) {
                 c12 = 3;

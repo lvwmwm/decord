@@ -1,9 +1,9 @@
-// Module ID: 6419
-// Function ID: 6420
+// Module ID: 6390
+// Function ID: 6391
 // Name: GuildActionCreators
-// Dependencies: [109, 5, 6420, 502, 6421, 4753, 4694, 4726, 4856, 1388, 1072, 1097, 5768, 1113, 572, 6422, 6424, 1285, 6425, 7378, 2121, 6332, 12256, 14619, 6744, 6776, 7192, 6340, 1264, 4760, 1084, 7641, 4644, 1256, 14771, 1099, 6327, 6347, 2]
+// Dependencies: [109, 5, 6391, 502, 6392, 4722, 4663, 4695, 4825, 1388, 1072, 1097, 5739, 1113, 572, 6393, 6395, 1285, 6396, 7348, 2121, 6303, 12239, 14606, 6715, 6748, 7162, 6311, 1264, 4729, 1084, 7611, 4613, 1256, 14757, 1099, 6298, 6318, 2]
 
-// Module 6419 (GuildActionCreators)
+// Module 6390 (GuildActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import AgeGateConstants from "AgeGateConstants" /* 1097 */;
 import router_utils from "router_utils" /* 1099 */;
@@ -11,22 +11,22 @@ import intl3 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5768 */;
-import AgeGateUtils from "AgeGateUtils" /* 6327 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6340 */;
-import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6347 */;
-import LurkerActionCreators from "LurkerActionCreators" /* 7192 */;
-import GuildTemplateTooltipActionCreatorsDefault from "GuildTemplateTooltipActionCreators" /* 7641 */;
-import getPreviousSafeRouteForNsfwReturnDefault from "getPreviousSafeRouteForNsfwReturn" /* 14771 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5739 */;
+import AgeGateUtils from "AgeGateUtils" /* 6298 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6311 */;
+import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6318 */;
+import LurkerActionCreators from "LurkerActionCreators" /* 7162 */;
+import GuildTemplateTooltipActionCreatorsDefault from "GuildTemplateTooltipActionCreators" /* 7611 */;
+import getPreviousSafeRouteForNsfwReturnDefault from "getPreviousSafeRouteForNsfwReturn" /* 14757 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import BulkBanStore from "BulkBanStore" /* 6420 */;
+import BulkBanStore from "BulkBanStore" /* 6391 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 6421 */;
-import GuildChannelStore from "GuildChannelStore" /* 4753 */;
-import GuildStore from "GuildStore" /* 4694 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4726 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4856 */;
+import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 6392 */;
+import GuildChannelStore from "GuildChannelStore" /* 4722 */;
+import GuildStore from "GuildStore" /* 4663 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4695 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4825 */;
 import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -93,7 +93,7 @@ let obj = function _joinGuild() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -425,7 +425,7 @@ obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -506,7 +506,7 @@ obj = {
             return obj;
           } else {
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp33) {
           c5 = 3;
@@ -658,7 +658,7 @@ obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         let c3;
@@ -697,7 +697,7 @@ obj = {
             } else if (BulkBanStore.consumeCompletedBeforeStarted(closure_128_0, id.getId())) {
               c3 = 0;
               c4 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "+60" };
             } else {
               const obj8 = { type: "GUILD_BULK_BAN_STARTED", guildId: closure_128_0 };
               obj = c1(c3[14]);
@@ -705,7 +705,7 @@ obj = {
               c3 = 0;
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp22) {
           closure_2 = tmp22;
@@ -746,7 +746,7 @@ obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         let c6;
@@ -1131,7 +1131,7 @@ obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -1173,7 +1173,7 @@ obj = {
             obj = tmp(c3[14]);
             obj.dispatch(obj8);
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp13) {
           c3 = 3;
@@ -1202,7 +1202,7 @@ obj = {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -1246,7 +1246,7 @@ obj = {
             return obj;
           } else {
             guildId = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp8) {
           guildId = 3;
@@ -1275,7 +1275,7 @@ obj = {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -1325,7 +1325,7 @@ obj = {
             return obj;
           } else {
             c0 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp10) {
           c0 = 3;
@@ -1349,7 +1349,7 @@ obj = {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -1389,7 +1389,7 @@ obj = {
             return obj;
           } else {
             c0 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp4) {
           c0 = 3;
@@ -1431,7 +1431,7 @@ obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -1463,7 +1463,7 @@ obj = {
             return obj;
           } else {
             c0 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp4) {
           c0 = 3;
@@ -1488,7 +1488,7 @@ obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -1520,7 +1520,7 @@ obj = {
             return obj;
           } else {
             c0 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp4) {
           c0 = 3;

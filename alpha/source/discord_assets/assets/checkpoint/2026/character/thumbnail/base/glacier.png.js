@@ -1,8 +1,8 @@
-// Module ID: 5938
-// Function ID: 5939
+// Module ID: 5909
+// Function ID: 5910
 // Dependencies: [2]
 
-// Module 5938
+// Module 5909
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/thumbnail/base/glacier.png.js");

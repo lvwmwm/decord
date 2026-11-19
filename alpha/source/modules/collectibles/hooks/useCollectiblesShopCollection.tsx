@@ -1,15 +1,15 @@
-// Module ID: 17392
-// Function ID: 17393
+// Module ID: 17385
+// Function ID: 17386
 // Name: useCollectiblesShopCollection
-// Dependencies: [19, 8876, 7988, 8084, 9797, 504, 9796, 9798, 2]
+// Dependencies: [19, 8849, 7957, 8053, 9776, 504, 9775, 9777, 2]
 // Exports: default
 
-// Module 17392 (useCollectiblesShopCollection)
-import CollectiblesShopManager2 from "CollectiblesShopManager" /* 9797 */;
-import StorefrontCollectionActionCreators from "StorefrontCollectionActionCreators" /* 9798 */;
+// Module 17385 (useCollectiblesShopCollection)
+import CollectiblesShopManager2 from "CollectiblesShopManager" /* 9776 */;
+import StorefrontCollectionActionCreators from "StorefrontCollectionActionCreators" /* 9777 */;
 import react from "react" /* 19 */;
-import StorefrontCollectionStore from "StorefrontCollectionStore" /* 8876 */;
-import CollectiblesCategoryRecord from "CollectiblesCategoryRecord" /* 7988 */;
+import StorefrontCollectionStore from "StorefrontCollectionStore" /* 8849 */;
+import CollectiblesCategoryRecord from "CollectiblesCategoryRecord" /* 7957 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/collectibles/hooks/useCollectiblesShopCollection.tsx");

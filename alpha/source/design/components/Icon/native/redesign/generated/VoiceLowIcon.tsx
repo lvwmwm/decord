@@ -1,14 +1,14 @@
-// Module ID: 19375
-// Function ID: 19376
+// Module ID: 19371
+// Function ID: 19372
 // Name: VoiceLowIcon
-// Dependencies: [19, 21, 575, 5509, 19376, 2]
+// Dependencies: [19, 21, 575, 5478, 19372, 2]
 // Exports: VoiceLowIcon
 
-// Module 19375 (VoiceLowIcon)
+// Module 19371 (VoiceLowIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5509 */;
-import AssetRegistry from "AssetRegistry" /* 19376 */;
+import BaseIconImage2 from "BaseIconImage" /* 5478 */;
+import AssetRegistry from "AssetRegistry" /* 19372 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

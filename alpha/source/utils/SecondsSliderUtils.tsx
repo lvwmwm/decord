@@ -1,10 +1,10 @@
-// Module ID: 18983
-// Function ID: 18984
+// Module ID: 18975
+// Function ID: 18976
 // Name: SecondsSliderUtils
 // Dependencies: [1113, 2169, 2]
 // Exports: getSecondsSliderLabel
 
-// Module 18983 (SecondsSliderUtils)
+// Module 18975 (SecondsSliderUtils)
 import intl7 from "intl" /* 1113 */;
 import _modDef2169 from "module_2169" /* 2169 */;
 import size from "module_2" /* 2 */;

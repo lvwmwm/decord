@@ -1,18 +1,18 @@
-// Module ID: 6774
-// Function ID: 6775
+// Module ID: 6746
+// Function ID: 6747
 // Name: ConjureUtils
-// Dependencies: [2165, 4753, 4694, 4755, 4856, 1072, 6530, 6565, 6775, 2]
+// Dependencies: [2165, 4722, 4663, 4724, 4825, 1072, 6501, 6536, 6747, 2]
 // Exports: canAccessConjure, canStartConjureProject, conjureSettingChannels, conjureSettingsGuildId, eligibleConjureGuilds, findConjureChannelId, getConjureProjectAccessSettings, hasEligibleConjureGuild, isConjureChannelCandidate, isConjureGuildEligible, isConjureProjectInGuild, resolveConjureWorkspaceGuildId, useCanAccessConjure, useIsConjureChannelCandidate
 
-// Module 6774 (ConjureUtils)
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6530 */;
-import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6565 */;
-import useAppChannelApplication from "useAppChannelApplication" /* 6775 */;
+// Module 6746 (ConjureUtils)
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6501 */;
+import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6536 */;
+import useAppChannelApplication from "useAppChannelApplication" /* 6747 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
-import GuildChannelStore_mod from "GuildChannelStore" /* 4753 */;
-import GuildStore from "GuildStore" /* 4694 */;
-import PermissionStore from "PermissionStore" /* 4755 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4856 */;
+import GuildChannelStore_mod from "GuildChannelStore" /* 4722 */;
+import GuildStore from "GuildStore" /* 4663 */;
+import PermissionStore from "PermissionStore" /* 4724 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4825 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -23,12 +23,12 @@ let ChannelTypes;
 let c3;
 let c9;
 let closure_4;
-const f91027 = (guildId) => {
+const f90980 = (guildId) => {
   const obj = ConjureGuildExperiment;
   const obj2 = { guildId: guildId.id, location: _location };
   return obj.isConjureGuildEnabled(obj2);
 };
-const f91028 = (id, id2) => {
+const f90981 = (id, id2) => {
   let num = -1;
   if (id.id >= id2.id) {
     let num2 = 0;
@@ -136,8 +136,8 @@ export function isConjureGuildEligible(guildId, ConjureRemixSheet) {
 }
 export function eligibleConjureGuilds(arr, arg1) {
   let closure_0 = arg1;
-  const found = arr.filter(f91027);
-  return found.sort(f91028);
+  const found = arr.filter(f90980);
+  return found.sort(f90981);
 }
 export function hasEligibleConjureGuild(guildsArray, useConjureServerWidgetOffers) {
   const _location = useConjureServerWidgetOffers;
@@ -165,9 +165,9 @@ export function resolveConjureWorkspaceGuildId(ConjureChatStore) {
   }
   const guildsArray = GuildStore.getGuildsArray();
   _require = ConjureChatStore;
-  const found = guildsArray.filter(f91027);
+  const found = guildsArray.filter(f90980);
   id = undefined;
-  const first = found.sort(f91028)[0];
+  const first = found.sort(f90981)[0];
   if (first != null) {
     id = first.id;
   }
@@ -180,10 +180,10 @@ export function canAccessConjure(guild, getChannelIdForGuildTransition) {
   const obj2 = { guildId: guild.id, location: getChannelIdForGuildTransition };
   return obj.isConjureGuildEnabled(obj2);
 }
-export function canStartConjureProject(id, location) {
-  let result = PermissionStore.can(constants.MANAGE_CHANNELS, id) && PermissionStore.can(constants.MANAGE_GUILD, id);
+export function canStartConjureProject(guild, ConjureRemix) {
+  let result = PermissionStore.can(constants.MANAGE_CHANNELS, guild) && PermissionStore.can(constants.MANAGE_GUILD, guild);
   if (result) {
-    const obj3 = { guildId: id.id, location };
+    const obj3 = { guildId: guild.id, location: ConjureRemix };
     const obj2 = ConjureGuildExperiment;
     result = obj2.isConjureGuildEnabled(obj3);
   }

@@ -1,10 +1,10 @@
-// Module ID: 12421
-// Function ID: 12422
+// Module ID: 12404
+// Function ID: 12405
 // Name: CheckpointNoSharedDataFlow
-// Dependencies: [6246, 2]
+// Dependencies: [6217, 2]
 
-// Module 12421 (CheckpointNoSharedDataFlow)
-import CheckpointNavigation from "CheckpointNavigation" /* 6246 */;
+// Module 12404 (CheckpointNoSharedDataFlow)
+import CheckpointNavigation from "CheckpointNavigation" /* 6217 */;
 import size from "module_2" /* 2 */;
 
 const items = [CheckpointNavigation.CheckpointRoute.HOME, CheckpointNavigation.CheckpointRoute.CHARACTER_UNAVAILABLE, CheckpointNavigation.CheckpointRoute.INTRODUCTION, CheckpointNavigation.CheckpointRoute.VOICE_GENERAL, CheckpointNavigation.CheckpointRoute.VOICE_FACE, CheckpointNavigation.CheckpointRoute.MESSAGES_GENERAL, CheckpointNavigation.CheckpointRoute.MESSAGES_OUTFIT, CheckpointNavigation.CheckpointRoute.SERVERS_GENERAL, CheckpointNavigation.CheckpointRoute.SERVERS_HEADWEAR, CheckpointNavigation.CheckpointRoute.EMOJI_GENERAL, CheckpointNavigation.CheckpointRoute.EMOJI_SHOES, CheckpointNavigation.CheckpointRoute.GAMES_GENERAL, CheckpointNavigation.CheckpointRoute.GAMES_WEARABLE, CheckpointNavigation.CheckpointRoute.GAME_TIME_GENERAL, CheckpointNavigation.CheckpointRoute.GAME_TIME_AURA, CheckpointNavigation.CheckpointRoute.FINALIZE_CHARACTER, CheckpointNavigation.CheckpointRoute.SUMMARY, CheckpointNavigation.CheckpointRoute.SHARE];

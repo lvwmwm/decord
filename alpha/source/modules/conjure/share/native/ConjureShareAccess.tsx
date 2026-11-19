@@ -1,139 +1,31 @@
-// Module ID: 18441
-// Function ID: 18442
+// Module ID: 18434
+// Function ID: 18435
 // Name: ConjureShareAccess
-// Dependencies: [19, 17, 21, 4823, 575, 5037, 18337, 2121, 18337, 7259, 18442, 6956, 1113, 4121, 5837, 5414, 5421, 7233, 7258, 7260, 6968, 7142, 18422, 18445, 7456, 5504, 5519, 2]
+// Dependencies: [19, 17, 21, 4792, 575, 5006, 18331, 2121, 18331, 7229, 18435, 6926, 1113, 4089, 5808, 5383, 5390, 18438, 7426, 5473, 6938, 5488, 2]
 // Exports: default
 
-// Module 18441 (ConjureShareAccess)
+// Module 18434 (ConjureShareAccess)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
-import _modDef4121 from "module_4121" /* 4121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
-import ToastUtils from "ToastUtils" /* 5504 */;
-import GuildIcon from "GuildIcon" /* 7233 */;
-import TableRadioRow2 from "TableRadioRow" /* 7260 */;
-import ClipboardUtils from "ClipboardUtils" /* 7456 */;
-import ConjureSharingModeSheet from "ConjureSharingModeSheet" /* 18337 */;
-import ConjureChangeListDefault from "ConjureChangeList" /* 18422 */;
-import buildConjureProjectLinkDefault from "buildConjureProjectLink" /* 18445 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
+import ToastUtils from "ToastUtils" /* 5473 */;
+import ClipboardUtils from "ClipboardUtils" /* 7426 */;
+import ConjureSharingModeSheet from "ConjureSharingModeSheet" /* 18331 */;
+import buildConjureProjectLinkDefault from "buildConjureProjectLink" /* 18438 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-const GuildIconDefault = GuildIcon;
 let _require;
 
 let hasOwnProperty;
-let metroImportDefault;
 let metroRequire;
 let obj2;
 let obj3;
 let obj4;
-function ConjureShareServersSection(servers) {
-  let TableRowIcon;
-  let candidates;
-  let current;
-  let intl2;
-  let items1;
-  let obj4;
-  let picked;
-  let str;
-  let tmp;
-  servers = servers.servers;
-  let title = servers.title;
-  ({ current, candidates, picked } = servers);
-  if (0 !== candidates.length) {
-    let tmp2 = closure_6;
-    let tmp5 = null;
-    const tmp3 = closure_7;
-    if (current.length > 0) {
-      let obj = {
-        title,
-        hasIcons: true,
-        children: current.map((guild) => {
-              let obj2;
-              let tmp;
-              const obj = { label: guild.name, icon: closure_1_5(tmp, obj2) };
-              const TableRow = servers(dependencyMap[11]).TableRow;
-              obj2 = { guild, size: servers(dependencyMap[17]).GuildIconSizes.SMALL_32 };
-              tmp = GuildIconDefault;
-              return closure_1_5(TableRow, obj, guild.id);
-            })
-      };
-      const TableRowGroup = servers(7259).TableRowGroup;
-      tmp5 = closure_5(TableRowGroup, obj);
-    }
-    const items = [tmp5, , , ];
-    let tmp2Result = null;
-    if (candidates.length > 0) {
-      const TableRadioGroup = servers(7258).TableRadioGroup;
-      if (current.length > 0) {
-        const intl = tmp10(1113).intl;
-        title = intl.string(_modDef4121["7SD3ul"]);
-      }
-      let obj2 = {
-        title,
-        hasIcons: true,
-        value: str,
-        onChange(arg0) {
-              let tmp2 = null;
-              const pick = servers.pick;
-              if ("" !== arg0) {
-                tmp2 = arg0;
-              }
-              return pick(tmp2);
-            },
-        children: items1
-      };
-      str = undefined;
-      if (picked != null) {
-        str = picked.id;
-      }
-      if (str == null) {
-        str = "";
-      }
-      const obj3 = { value: "", label: intl2.string(servers(1113).t.PoWNfe), icon: closure_5(TableRowIcon, obj4), disabled: servers.sharing };
-      let TableRadioRow = tmp10(7260).TableRadioRow;
-      intl2 = tmp10(1113).intl;
-      obj4 = { IconComponent: servers(7142).CircleXIcon };
-      TableRowIcon = tmp10(6968).TableRowIcon;
-      items1 = [
-        closure_5(TableRadioRow, obj3),
-        candidates.map((guild) => {
-              let obj2;
-              let tmp;
-              const obj = { value: guild.id, label: guild.name, icon: hasOwnProperty(tmp, obj2), disabled: servers.sharing };
-              const TableRadioRow = TableRadioRow2.TableRadioRow;
-              obj2 = { guild, size: GuildIcon.GuildIconSizes.SMALL_32 };
-              tmp = GuildIconDefault;
-              return hasOwnProperty(TableRadioRow, obj, guild.id);
-            })
-      ];
-      tmp2Result = tmp2(TableRadioGroup, obj2);
-    }
-    items[1] = tmp2Result;
-    let tmp14 = null;
-    if (servers.changeRows.length > 0) {
-      const obj5 = { rows: servers.changeRows };
-      tmp14 = closure_5(ConjureChangeListDefault, obj5);
-    }
-    items[2] = tmp14;
-    let tmp18 = null;
-    if (null != servers.error) {
-      const obj6 = { variant: "body-sm/medium", color: "text-feedback-critical", accessibilityRole: "alert", children: servers.error };
-      tmp18 = closure_5(servers(5414).Text, obj6);
-    }
-    const obj7 = { children: items };
-    items[3] = tmp18;
-    tmp = tmp2(tmp3, obj7);
-  } else {
-    tmp = null;
-  }
-  return tmp;
-}
 function ShareLinkRow(project) {
   let TableRowIcon;
   let closure_0;
@@ -159,14 +51,14 @@ function ShareLinkRow(project) {
 }
 let react = react_mod;
 const View = react_native.View;
-({ jsx: hasOwnProperty, jsxs: metroRequire, Fragment: metroImportDefault } = Fragment);
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { body: obj2, notice: obj3, noticeText: { flex: 1 }, sharingMode: obj4 };
 obj2 = { gap: nativeDefault.space.PX_16 };
 createStyles = createStyles.createStyles;
 obj3 = { paddingHorizontal: nativeDefault.space.PX_16 };
 obj4 = { marginBottom: nativeDefault.space.PX_16 };
-let closure_8 = createStyles(obj);
+let closure_7 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/conjure/share/native/ConjureShareAccess.tsx");
 
 export default function ConjureShareAccess(arg0) {
@@ -190,18 +82,15 @@ export default function ConjureShareAccess(arg0) {
   let obj3;
   let obj9;
   let project;
-  let servers;
-  let serversLabel;
   let sharing;
   let stringResult;
-  let tmp20;
-  let tmp7Result5;
+  let tmp16Result;
+  let tmp22;
   ({ project, sharing } = arg0);
   mode = undefined;
   changeMode = undefined;
   react = undefined;
-  ({ servers, serversLabel } = arg0);
-  const tmp = closure_8();
+  const tmp = closure_7();
   ({ isOwner, mode } = sharing);
   const options = sharing.options;
   ({ changing, changeMode } = sharing);
@@ -214,6 +103,7 @@ export default function ConjureShareAccess(arg0) {
   }, items);
   const items1 = [options, mode];
   let obj = { style: tmp.body, children: items2 };
+  let tmp7 = null;
   const callback = react.useCallback(() => {
     let ref;
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
@@ -225,46 +115,44 @@ export default function ConjureShareAccess(arg0) {
         return ref.current(AUTO_DISMISS);
       }
     };
-    const tmp2 = asyncRequire(18337, dependencyMap.paths);
+    const tmp2 = asyncRequire(18331, dependencyMap.paths);
     openLazy(tmp2, ConjureSharingModeSheet.CONJURE_SHARING_MODE_SHEET_KEY, obj, "stack");
   }, items1);
-  items2 = [closure_5(ConjureShareServersSection, { servers, title: serversLabel }), , , , , ];
-  let tmp7Result = null;
   if ("public" === mode) {
     const obj2 = { hasIcons: true, children: closure_5(ShareLinkRow, obj3) };
     obj3 = { project, disabled: changing };
     const TableRowGroup = mode(changeMode[9]).TableRowGroup;
-    tmp7Result = tmp7(TableRowGroup, obj2);
+    tmp7 = closure_5(TableRowGroup, obj2);
   }
-  items2[1] = tmp7Result;
-  let tmp7Result4 = null;
+  items2 = [tmp7, , , , ];
+  let tmp12 = null;
   if ("link" === mode) {
     const obj4 = { project, isOwner, disabled: changing };
-    tmp7Result4 = tmp7(options(changeMode[10]), obj4);
+    tmp12 = closure_5(options(changeMode[10]), obj4);
   }
-  items2[2] = tmp7Result4;
+  items2[1] = tmp12;
   const obj5 = { style: tmp.sharingMode, children: closure_5(TableRowGroup2, obj9) };
   TableRowGroup2 = mode(changeMode[9]).TableRowGroup;
-  const obj7 = { label: intl.string(options(changeMode[13]).jDBYrs), subLabel: stringResult, trailing: tmp7Result5, arrow: null, disabled: tmp20, onPress: callback };
+  const obj7 = { label: intl.string(options(changeMode[13]).jDBYrs), subLabel: stringResult, trailing: tmp16Result, arrow: null, disabled: tmp22, onPress: callback };
   const TableRow = mode(changeMode[11]).TableRow;
   intl = mode(changeMode[12]).intl;
   stringResult = undefined;
   if (!isOwner) {
-    const intl2 = tmp15(tmp16[12]).intl;
-    stringResult = intl2.string(tmp17(tmp16[13]).WLBlI4);
+    const intl2 = tmp17(tmp18[12]).intl;
+    stringResult = intl2.string(tmp19(tmp18[13]).WLBlI4);
   }
-  tmp7Result5 = undefined;
+  tmp16Result = undefined;
   if (null != found) {
     const obj8 = { text: found.label };
-    tmp7Result5 = tmp7(tmp15(tmp16[11]).TableRow.TrailingText, obj8);
+    tmp16Result = tmp16(tmp17(tmp18[11]).TableRow.TrailingText, obj8);
   }
   ({ canChange: obj6.arrow, canChange } = sharing);
-  tmp20 = !canChange;
+  tmp22 = !canChange;
   if (canChange) {
-    tmp20 = changing;
+    tmp22 = changing;
   }
   obj9 = { hasIcons: false, children: closure_5(TableRow, obj7) };
-  items2[3] = closure_5(View, obj5);
+  items2[2] = closure_5(View, obj5);
   let tmp5Result = null;
   if (loadFailed) {
     tmp5Result = null;
@@ -272,29 +160,29 @@ export default function ConjureShareAccess(arg0) {
       tmp5Result = null;
       if ("public" !== mode) {
         const obj10 = { direction: "horizontal", spacing: options(changeMode[4]).space.PX_8, align: "center", style: tmp.notice, children: items3 };
-        const Stack = tmp15(tmp16[14]).Stack;
+        const Stack = tmp17(tmp18[14]).Stack;
         const obj11 = { style: tmp.noticeText, children: closure_5(Text2, obj12) };
         obj12 = { variant: "body-sm/normal", color: "text-feedback-critical", children: intl4.string(options(changeMode[13])["0e9nOP"]) };
-        Text2 = tmp15(tmp16[15]).Text;
-        intl4 = tmp15(tmp16[12]).intl;
+        Text2 = tmp17(tmp18[15]).Text;
+        intl4 = tmp17(tmp18[12]).intl;
         items3 = [closure_5(View, obj11), ];
         const obj13 = { variant: "secondary", size: "sm", text: intl5.string(mode(changeMode[12]).t["5911Lb"]), onPress: sharing.reload };
-        const Button = tmp15(tmp16[16]).Button;
-        intl5 = tmp15(tmp16[12]).intl;
+        const Button = tmp17(tmp18[16]).Button;
+        intl5 = tmp17(tmp18[12]).intl;
         items3[1] = closure_5(Button, obj13);
         tmp5Result = tmp5(Stack, obj10);
       }
     }
   }
-  items2[4] = tmp5Result;
-  let tmp7Result6 = null;
+  items2[3] = tmp5Result;
+  let tmp16Result2 = null;
   if (sharing.saveFailed) {
     const obj14 = { style: tmp.notice, children: closure_5(Text, obj27) };
     obj27 = { variant: "body-sm/normal", color: "text-feedback-critical", children: intl3.string(options(changeMode[13]).wzqQPR) };
-    Text = tmp15(tmp16[15]).Text;
-    intl3 = tmp15(tmp16[12]).intl;
-    tmp7Result6 = tmp7(tmp6, obj14);
+    Text = tmp17(tmp18[15]).Text;
+    intl3 = tmp17(tmp18[12]).intl;
+    tmp16Result2 = tmp16(tmp6, obj14);
   }
-  items2[5] = tmp7Result6;
+  items2[4] = tmp16Result2;
   return closure_6(View, obj);
 };

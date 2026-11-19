@@ -1,10 +1,10 @@
-// Module ID: 16460
-// Function ID: 16461
+// Module ID: 16451
+// Function ID: 16452
 // Name: useIsCarouselInView
 // Dependencies: [32, 19, 1496, 2]
 // Exports: default
 
-// Module 16460 (useIsCarouselInView)
+// Module 16451 (useIsCarouselInView)
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

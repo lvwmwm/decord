@@ -1,20 +1,20 @@
-// Module ID: 8628
-// Function ID: 8629
+// Module ID: 8597
+// Function ID: 8598
 // Name: AddRecipientSystemMessage
-// Dependencies: [4676, 4672, 1388, 8610, 8612, 1113, 8614, 2]
+// Dependencies: [4645, 4641, 1388, 8579, 8581, 1113, 8583, 2]
 // Exports: createAddRecipientSystemMessage
 
-// Module 8628 (AddRecipientSystemMessage)
+// Module 8597 (AddRecipientSystemMessage)
 import intl2 from "intl" /* 1113 */;
-import ChannelRecord from "ChannelRecord" /* 4676 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8610 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8612 */;
-import ChannelStore from "ChannelStore" /* 4672 */;
+import ChannelRecord from "ChannelRecord" /* 4645 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8579 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8581 */;
+import ChannelStore from "ChannelStore" /* 4641 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 let tmp9;
-const createCommonMessageDefault = tmp9(8614);
+const createCommonMessageDefault = tmp9(8583);
 const THREAD_CHANNEL_TYPES = ChannelRecord.THREAD_CHANNEL_TYPES;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/AddRecipientSystemMessage.tsx");
 

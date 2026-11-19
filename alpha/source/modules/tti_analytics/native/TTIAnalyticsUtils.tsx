@@ -1,31 +1,31 @@
-// Module ID: 8180
-// Function ID: 8181
+// Module ID: 8149
+// Function ID: 8150
 // Name: TTIAnalyticsUtils
-// Dependencies: [32, 5, 8181, 5440, 1192, 502, 4672, 1362, 1072, 8282, 4679, 21, 4780, 5693, 1269, 1379, 3, 5000, 4999, 5006, 10, 1242, 1256, 8283, 8285, 9, 1089, 8286, 1374, 1380, 8287, 8288, 5769, 5840, 2121, 2]
+// Dependencies: [32, 5, 8150, 5409, 1192, 502, 4641, 1362, 1072, 8251, 4648, 21, 4749, 5662, 1269, 1379, 3, 4969, 4968, 4975, 10, 1242, 1256, 8252, 8254, 9, 1089, 8255, 1374, 1380, 8256, 8257, 5740, 5811, 2121, 2]
 // Exports: currentLoadId, getLastTrackedAppUiViewed2Properties, trackAppLaunchCompleted, trackAppOpened, trackAppUIViewed
 
-// Module 8180 (TTIAnalyticsUtils)
+// Module 8149 (TTIAnalyticsUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import ChannelConstants from "ChannelConstants" /* 4679 */;
-import DeviceUtils from "DeviceUtils" /* 4780 */;
-import RootNavigationRef from "RootNavigationRef" /* 5000 */;
-import react_nativeDefault from "react-native" /* 5006 */;
-import getMediaPerformanceClassDefault from "getMediaPerformanceClass" /* 5693 */;
-import AcceptInviteConstants from "AcceptInviteConstants" /* 8282 */;
-import AppStartInfo2 from "AppStartInfo" /* 8283 */;
-import DidBackgroundAppNativeExperimentDefault from "DidBackgroundAppNativeExperiment" /* 8286 */;
+import ChannelConstants from "ChannelConstants" /* 4648 */;
+import DeviceUtils from "DeviceUtils" /* 4749 */;
+import RootNavigationRef from "RootNavigationRef" /* 4969 */;
+import react_nativeDefault from "react-native" /* 4975 */;
+import getMediaPerformanceClassDefault from "getMediaPerformanceClass" /* 5662 */;
+import AcceptInviteConstants from "AcceptInviteConstants" /* 8251 */;
+import AppStartInfo2 from "AppStartInfo" /* 8252 */;
+import DidBackgroundAppNativeExperimentDefault from "DidBackgroundAppNativeExperiment" /* 8255 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import CacheStore from "CacheStore" /* 8181 */;
-import ExperimentStore from "ExperimentStore" /* 5440 */;
+import CacheStore from "CacheStore" /* 8150 */;
+import ExperimentStore from "ExperimentStore" /* 5409 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4672 */;
+import ChannelStore from "ChannelStore" /* 4641 */;
 import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1362 */;
 import v1 from "v1" /* 1269 */;
 import react_native from "react-native" /* 1379 */;
@@ -34,7 +34,7 @@ import size from "module_2" /* 2 */;
 let c6, c7, c8;
 
 let tmp;
-const NavigationRouteUtils = tmp(4999);
+const NavigationRouteUtils = tmp(4968);
 function getDeviceMetadata() {
   let obj2;
   let obj3;
@@ -144,7 +144,7 @@ let obj = function _consumeAppOpenBadgeState() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c3;
@@ -215,7 +215,7 @@ obj = function _getLastBackgroundedAt() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c3;
@@ -359,7 +359,7 @@ obj = function _trackAppUIViewedAsync() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -420,7 +420,7 @@ obj = function _trackAppUIViewedAsync() {
             }, 1000);
             scheduleTrackAppUiViewed2();
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "+60" };
           }
         } catch (tmp5) {
           c6 = 3;
@@ -449,7 +449,7 @@ obj = function _logLegacyAppUiViewed() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -509,7 +509,7 @@ obj = function _logLegacyAppUiViewed() {
           const merged2 = Object.assign(closure_0);
           track(APP_UI_VIEWED, obj8, { logEventProperties: true });
           c8 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp6) {
         c8 = 3;
@@ -567,7 +567,7 @@ obj = function _trackAppUIViewed() {
         let obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -755,7 +755,7 @@ obj = function _trackAppUIViewed() {
             logToDevice(obj18);
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp89) {
         c6 = 3;
@@ -801,7 +801,7 @@ obj = function _trackAppLaunchCompletedAsync() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -842,7 +842,7 @@ obj = function _trackAppLaunchCompletedAsync() {
           obj = closure_132_1(closure_132_2[22]);
           obj.track(closure_132_11.APP_LAUNCH_COMPLETED, closure_0, { logEventProperties: true });
           c8 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } catch (tmp20) {
         c8 = 3;

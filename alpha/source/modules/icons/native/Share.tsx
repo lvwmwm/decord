@@ -1,11 +1,11 @@
-// Module ID: 12079
-// Function ID: 12080
+// Module ID: 12056
+// Function ID: 12057
 // Name: Share
-// Dependencies: [1380, 12080, 12081, 2]
+// Dependencies: [1380, 12057, 12058, 2]
 
-// Module 12079 (Share)
-import AssetRegistryDefault from "AssetRegistry" /* 12080 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 12081 */;
+// Module 12056 (Share)
+import AssetRegistryDefault from "AssetRegistry" /* 12057 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 12058 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import size from "module_2" /* 2 */;
 

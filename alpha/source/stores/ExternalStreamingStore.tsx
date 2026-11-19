@@ -1,19 +1,19 @@
-// Module ID: 14690
-// Function ID: 14691
+// Module ID: 14676
+// Function ID: 14677
 // Name: ExternalStreamingStore
-// Dependencies: [5, 6597, 4880, 1072, 1089, 1285, 6979, 572, 6828, 6599, 1345, 504, 2]
+// Dependencies: [5, 6568, 4849, 1072, 1089, 1285, 6949, 572, 6798, 6570, 1345, 504, 2]
 
-// Module 14690 (ExternalStreamingStore)
+// Module 14676 (ExternalStreamingStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
 import _modDef1345 from "module_1345" /* 1345 */;
-import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 6979 */;
+import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 6949 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6597 */;
-import StreamerModeStore from "StreamerModeStore" /* 4880 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6568 */;
+import StreamerModeStore from "StreamerModeStore" /* 4849 */;
 import size from "module_2" /* 2 */;
 
 let _null, c7, c8, closure_11, constants;
@@ -126,7 +126,7 @@ class StreamingPoller {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         let c6;
@@ -315,7 +315,7 @@ class StreamingPoller {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         let c4;

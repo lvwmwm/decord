@@ -1,23 +1,23 @@
-// Module ID: 12208
-// Function ID: 12209
+// Module ID: 12191
+// Function ID: 12192
 // Name: GameOrganizationBenefitsCarousel
-// Dependencies: [32, 19, 17, 21, 575, 12209, 12213, 12217, 4823, 6958, 5837, 5414, 10464, 12221, 1187, 1496, 2]
+// Dependencies: [32, 19, 17, 21, 575, 12192, 12196, 12200, 4792, 6928, 5808, 5383, 10442, 12204, 1187, 1496, 2]
 // Exports: default
 
-// Module 12208 (GameOrganizationBenefitsCarousel)
+// Module 12191 (GameOrganizationBenefitsCarousel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
-import Text_Text from "Text/Text" /* 5414 */;
-import Card_Card from "Card/Card" /* 6958 */;
-import GuildRolesAbstractUI from "GuildRolesAbstractUI" /* 12209 */;
-import GuildChatAbstractUI from "GuildChatAbstractUI" /* 12213 */;
-import GuildInviteAbstractUI from "GuildInviteAbstractUI" /* 12217 */;
-import GameOrganizationBenefits from "GameOrganizationBenefits" /* 12221 */;
+import Text_Text from "Text/Text" /* 5383 */;
+import Card_Card from "Card/Card" /* 6928 */;
+import GuildRolesAbstractUI from "GuildRolesAbstractUI" /* 12192 */;
+import GuildChatAbstractUI from "GuildChatAbstractUI" /* 12196 */;
+import GuildInviteAbstractUI from "GuildInviteAbstractUI" /* 12200 */;
+import GameOrganizationBenefits from "GameOrganizationBenefits" /* 12204 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -42,7 +42,7 @@ function BenefitCard(isLast) {
   items[1] = cardSpacing;
   obj = { border: "none", radius: 12, style: items, children: metroImportDefault(Stack, obj2) };
   obj2 = { spacing: nativeDefault.space.PX_24, children: items1 };
-  Stack = tmp3(5837).Stack;
+  Stack = tmp3(5808).Stack;
   items1 = [metroRequire(Illustration, { width: "100%", accessible: false }), metroRequire(Text_Text.Text, { variant: "body-sm/medium", color: "text-subtle", children: text })];
   return metroRequire(Card, obj);
 }
@@ -60,7 +60,7 @@ function BenefitsCarousel(cardWidth) {
   let tmp4;
   let tmp6;
   cardWidth = cardWidth.cardWidth;
-  const noun = cardWidth.noun;
+  const displayNoun = cardWidth.displayNoun;
   _slicedToArray = undefined;
   react = undefined;
   closure_5 = undefined;
@@ -107,23 +107,23 @@ function BenefitsCarousel(cardWidth) {
       decelerationRate: "fast"
     },
     children: prop.map((key, index) => {
-      obj = { cardWidth, text: key.getText(noun), Illustration: obj[key.key], isLast: index === GameOrganizationBenefits.GAME_ORGANIZATION_BENEFITS.length - 1 };
+      obj = { cardWidth, text: key.getText(displayNoun), Illustration: obj[key.key], isLast: index === GameOrganizationBenefits.GAME_ORGANIZATION_BENEFITS.length - 1 };
       return metroRequire(BenefitCard, obj, key.key);
     })
   };
-  tmp13 = noun(10464);
-  prop = cardWidth(12221).GAME_ORGANIZATION_BENEFITS;
+  tmp13 = displayNoun(10442);
+  prop = cardWidth(12204).GAME_ORGANIZATION_BENEFITS;
   const children = [closure_6(closure_5, obj), ];
   let tmp11Result = null;
   const tmp10 = closure_5;
   const tmp11 = closure_6;
   const tmp9 = closure_7;
-  if (cardWidth(12221).GAME_ORGANIZATION_BENEFITS.length > 1) {
+  if (cardWidth(12204).GAME_ORGANIZATION_BENEFITS.length > 1) {
     tmp11Result = null;
     if (tmp6 > 0) {
       tmp11Result = null;
       if (first > tmp6) {
-        const obj3 = { containerStyle: tmp2.pagination, numberOfItems: cardWidth(12221).GAME_ORGANIZATION_BENEFITS.length, currentIndex: tmp4 };
+        const obj3 = { containerStyle: tmp2.pagination, numberOfItems: cardWidth(12204).GAME_ORGANIZATION_BENEFITS.length, currentIndex: tmp4 };
         const CarouselPagination = tmp14(1187).CarouselPagination;
         tmp11Result = tmp11(CarouselPagination, obj3);
       }
@@ -150,9 +150,9 @@ let closure_11 = createStyles.createStyles((width) => {
 });
 const result = size.fileFinishedImporting("modules/game_organization_invites/native/GameOrganizationJoinModal/GameOrganizationBenefitsCarousel.tsx");
 
-export default function GameOrganizationBenefitsCarousel(noun) {
-  noun = noun.noun;
+export default function GameOrganizationBenefitsCarousel(displayNoun) {
+  displayNoun = displayNoun.displayNoun;
   const width = useWindowDimensionsDefault().width;
-  obj = { cardWidth: Math.min(0.75 * width, 400), noun };
+  obj = { cardWidth: Math.min(0.75 * width, 400), displayNoun };
   return metroRequire(BenefitsCarousel, obj, width);
 };

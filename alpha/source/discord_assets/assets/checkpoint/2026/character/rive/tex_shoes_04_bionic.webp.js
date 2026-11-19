@@ -1,8 +1,8 @@
-// Module ID: 12608
-// Function ID: 12609
+// Module ID: 12591
+// Function ID: 12592
 // Dependencies: [2]
 
-// Module 12608
+// Module 12591
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_shoes_04_bionic.webp.js");

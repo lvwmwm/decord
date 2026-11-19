@@ -1,46 +1,45 @@
-// Module ID: 9303
-// Function ID: 9304
+// Module ID: 9279
+// Function ID: 9280
 // Name: usePromotionMarketingSurface
-// Dependencies: [19, 8718, 9049, 9304, 504, 2]
+// Dependencies: [19, 8687, 9023, 9280, 504, 9282, 2]
 // Exports: usePromotionMarketingComponentData, usePromotionMarketingSurface
 
-// Module 9303 (usePromotionMarketingSurface)
+// Module 9279 (usePromotionMarketingSurface)
+import passesTrialOfferGateDefault from "passesTrialOfferGate" /* 9282 */;
 import react from "react" /* 19 */;
-import UserOfferStore from "UserOfferStore" /* 8718 */;
-import PromotionsStore from "PromotionsStore" /* 9049 */;
+import UserOfferStore from "UserOfferStore" /* 8687 */;
+import PromotionsStore from "PromotionsStore" /* 9023 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, userTrialOffer;
+let _require;
 
-const f96346 = () => {
+const f96303 = () => {
   const obj = PREMIUM_TAB(dependencyMap[3]);
   const result = obj.maybeFetchActivePromotions();
 };
+let c6 = 86400000;
 let result = size.fileFinishedImporting("modules/premium/hooks/usePromotionMarketingSurface.tsx");
 
+export const SET_COUNTDOWN_TIMER_THRESHOLD = 86400000;
 export function usePromotionMarketingSurface(PREMIUM_TAB) {
   _require = PREMIUM_TAB;
-  const f96351 = () => PromotionsStore.getMarketingComponentBySurface(f96351);
+  const f96308 = () => PromotionsStore.getMarketingComponentBySurface(f96308);
   let obj = react;
-  const effect = react.useEffect(f96346, []);
+  const effect = react.useEffect(f96303, []);
   const items = [PromotionsStore, UserOfferStore];
   const obj2 = require("get initialized");
   const stateFromStores = obj2.useStateFromStores(items, () => {
-    const tmp = f96351();
+    const tmp = f96308();
     if (null == tmp) {
       return null;
     } else {
       const marketingPromotionForEligibility = PromotionsStore.getMarketingPromotionForEligibility(tmp.promotionId);
-      let trialId;
-      if (marketingPromotionForEligibility != null) {
-        trialId = marketingPromotionForEligibility.trialId;
+      let tmp7 = null;
+      if (passesTrialOfferGateDefault(marketingPromotionForEligibility, UserOfferStore)) {
+        tmp7 = tmp;
       }
-      if (null != trialId) {
-        userTrialOffer = userTrialOffer.getUserTrialOffer(marketingPromotionForEligibility.trialId);
-        return null;
-      }
-      return tmp;
+      return tmp7;
     }
   });
   const items1 = [PromotionsStore];
@@ -91,7 +90,7 @@ export function usePromotionMarketingSurface(PREMIUM_TAB) {
       const _Date = Date;
       let diff = time - Date.now();
       if (diff > 0) {
-        if (diff < 86400000) {
+        if (diff < closure_2_6) {
           function checkExpiry() {
             const diff = time - Date.now();
             if (diff > 0) {
@@ -118,26 +117,21 @@ export function usePromotionMarketingSurface(PREMIUM_TAB) {
 export function usePromotionMarketingComponentData(arg0) {
   let closure_0;
   let endDate;
-  let stateFromStores;
   _require = arg0;
-  const effect = endDate.useEffect(f96346, []);
+  const effect = react.useEffect(f96303, []);
   const items = [PromotionsStore, UserOfferStore];
   const obj2 = require("get initialized");
-  stateFromStores = obj2.useStateFromStores(items, () => {
-    const tmp = f96351();
+  const stateFromStores = obj2.useStateFromStores(items, () => {
+    const tmp = f96308();
     if (null == tmp) {
       return null;
     } else {
       const marketingPromotionForEligibility = PromotionsStore.getMarketingPromotionForEligibility(tmp.promotionId);
-      let trialId;
-      if (marketingPromotionForEligibility != null) {
-        trialId = marketingPromotionForEligibility.trialId;
+      let tmp7 = null;
+      if (passesTrialOfferGateDefault(marketingPromotionForEligibility, UserOfferStore)) {
+        tmp7 = tmp;
       }
-      if (null != trialId) {
-        userTrialOffer = userTrialOffer.getUserTrialOffer(marketingPromotionForEligibility.trialId);
-        return null;
-      }
-      return tmp;
+      return tmp7;
     }
   });
   const items1 = [PromotionsStore];
@@ -176,7 +170,7 @@ export function usePromotionMarketingComponentData(arg0) {
   }, items2);
   const items3 = [endDate];
   let tmp6 = null;
-  if (!endDate.useSyncExternalStore(endDate.useCallback((arg0) => {
+  if (!react.useSyncExternalStore(react.useCallback((arg0) => {
     let closure_0 = arg0;
     const obj = endDate;
     if (null == endDate) {
@@ -188,7 +182,7 @@ export function usePromotionMarketingComponentData(arg0) {
       const _Date = Date;
       let diff = time - Date.now();
       if (diff > 0) {
-        if (diff < 86400000) {
+        if (diff < closure_2_6) {
           function checkExpiry() {
             const diff = time - Date.now();
             if (diff > 0) {

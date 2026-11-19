@@ -1,18 +1,18 @@
-// Module ID: 20193
-// Function ID: 20194
+// Module ID: 20204
+// Function ID: 20205
 // Name: UpdateAppScreen
-// Dependencies: [17, 21, 4823, 575, 5414, 1113, 3019, 5421, 2]
+// Dependencies: [17, 21, 4792, 575, 5383, 1113, 3019, 5390, 2]
 // Exports: default
 
-// Module 20193 (UpdateAppScreen)
+// Module 20204 (UpdateAppScreen)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import _modDef3019 from "module_3019" /* 3019 */;
-import Text_Text from "Text/Text" /* 5414 */;
-import components_Button_Button from "components/Button/Button" /* 5421 */;
+import Text_Text from "Text/Text" /* 5383 */;
+import components_Button_Button from "components/Button/Button" /* 5390 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let BundleUpdaterManager;

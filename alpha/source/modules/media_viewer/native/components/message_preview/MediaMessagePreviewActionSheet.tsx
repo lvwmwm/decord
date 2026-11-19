@@ -1,13 +1,13 @@
-// Module ID: 10073
-// Function ID: 10074
+// Module ID: 10051
+// Function ID: 10052
 // Name: MediaMessagePreviewActionSheet
-// Dependencies: [19, 21, 4648, 10074, 5037, 1099, 7456, 5504, 10075, 7464, 7466, 10040, 1113, 10338, 10168, 2]
+// Dependencies: [19, 21, 4617, 10052, 5006, 1099, 7426, 5473, 10053, 7434, 7436, 10018, 1113, 10316, 10146, 2]
 
-// Module 10073 (MediaMessagePreviewActionSheet)
+// Module 10051 (MediaMessagePreviewActionSheet)
 import router_utils from "router_utils" /* 1099 */;
-import ToastUtils from "ToastUtils" /* 5504 */;
-import ClipboardUtils from "ClipboardUtils" /* 7456 */;
-import ReportModals from "ReportModals" /* 10075 */;
+import ToastUtils from "ToastUtils" /* 5473 */;
+import ClipboardUtils from "ClipboardUtils" /* 7426 */;
+import ReportModals from "ReportModals" /* 10053 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

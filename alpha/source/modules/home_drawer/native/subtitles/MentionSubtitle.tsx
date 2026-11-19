@@ -1,15 +1,15 @@
-// Module ID: 17953
-// Function ID: 17954
+// Module ID: 17946
+// Function ID: 17947
 // Name: MentionSubtitle
-// Dependencies: [19, 17, 21, 17954, 7547, 7592, 5414, 1113, 2]
+// Dependencies: [19, 17, 21, 17947, 7517, 7562, 5383, 1113, 2]
 // Exports: default
 
-// Module 17953 (MentionSubtitle)
+// Module 17946 (MentionSubtitle)
 import react_native from "react-native" /* 17 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5414 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 7547 */;
-import useSubtitleStyles from "useSubtitleStyles" /* 17954 */;
+import Text_Text from "Text/Text" /* 5383 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 7517 */;
+import useSubtitleStyles from "useSubtitleStyles" /* 17947 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -37,14 +37,14 @@ export default function MentionSubtitle(channel) {
     channelIconComponentWithGuild = tmpResult.getChannelIconComponentWithGuild(channel, guild);
   }
   if (channelIconComponentWithGuild == null) {
-    channelIconComponentWithGuild = tmp(7592).TextIcon;
+    channelIconComponentWithGuild = tmp(7562).TextIcon;
   }
   const obj2 = { style: subtitleStyles.subtitleRow, children: items };
   items = [, ];
   const obj3 = { size: "xxs", color: "icon-muted", style: subtitleStyles.channelIcon };
   items[0] = _false(channelIconComponentWithGuild, obj3);
   const obj4 = { variant: "body-xs/medium", color: "text-muted", lineClamp: 1, style: subtitleStyles.subtitleText, children: intl.format(intl2.t.L9YdGH, obj5) };
-  const Text = tmp(5414).Text;
+  const Text = tmp(5383).Text;
   intl = tmp(1113).intl;
   obj5 = {
     channelName,

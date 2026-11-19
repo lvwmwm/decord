@@ -1,25 +1,25 @@
-// Module ID: 15608
-// Function ID: 15609
+// Module ID: 15594
+// Function ID: 15595
 // Name: definitions
-// Dependencies: [1083, 10734, 6985, 10760, 1093, 5467, 2173, 6822, 2146, 15609, 15605, 15610, 7178, 5562, 13447, 15611, 2]
+// Dependencies: [1083, 10712, 6955, 10738, 1093, 5436, 2173, 6794, 2146, 15595, 15591, 15596, 7148, 5531, 13429, 15597, 2]
 
-// Module 15608 (definitions)
+// Module 15594 (definitions)
 import Constants2 from "Constants" /* 1083 */;
 import ChannelTypes from "ChannelTypes" /* 1093 */;
 import EmbeddedActivityOrientationLockState2 from "EmbeddedActivityOrientationLockState" /* 2146 */;
 import EntitlementTypes from "EntitlementTypes" /* 2173 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5467 */;
-import ActivityTypes from "ActivityTypes" /* 5562 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 6822 */;
-import ActivityGamePlatforms from "ActivityGamePlatforms" /* 6985 */;
-import InviteTargetTypes from "InviteTargetTypes" /* 7178 */;
-import ActivityPlatform from "ActivityPlatform" /* 10760 */;
-import StatusDisplayTypes from "StatusDisplayTypes" /* 13447 */;
-import ThermalStates from "ThermalStates" /* 15605 */;
-import SKUTypes from "SKUTypes" /* 15609 */;
-import discord_common_helpers from "discord_common/helpers" /* 15610 */;
-import contextMenuIcons from "contextMenuIcons" /* 15611 */;
-import Constants from "Constants" /* 10734 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5436 */;
+import ActivityTypes from "ActivityTypes" /* 5531 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 6794 */;
+import ActivityGamePlatforms from "ActivityGamePlatforms" /* 6955 */;
+import InviteTargetTypes from "InviteTargetTypes" /* 7148 */;
+import ActivityPlatform from "ActivityPlatform" /* 10738 */;
+import StatusDisplayTypes from "StatusDisplayTypes" /* 13429 */;
+import ThermalStates from "ThermalStates" /* 15591 */;
+import SKUTypes from "SKUTypes" /* 15595 */;
+import discord_common_helpers from "discord_common/helpers" /* 15596 */;
+import contextMenuIcons from "contextMenuIcons" /* 15597 */;
+import Constants from "Constants" /* 10712 */;
 import size_mod from "module_2" /* 2 */;
 
 let ActivityIntent;
@@ -1915,12 +1915,13 @@ const obj30 = {
 };
 const obj31 = {
   request(string) {
-    let maxResult;
     let maxResult1;
     let maxResult2;
-    const point = { user_id: maxResult.required(), x: maxResult1.required(), y: maxResult2.required() };
+    let requiredResult;
+    const point = { user_id: requiredResult.meta({ className: "UserId" }), x: maxResult1.required(), y: maxResult2.required() };
     const stringResult = string.string();
-    maxResult = stringResult.max(64);
+    const maxResult = stringResult.max(64);
+    requiredResult = maxResult.required();
     const numberResult = string.number();
     const minResult = numberResult.min(0);
     maxResult1 = minResult.max(65535);
@@ -2795,7 +2796,7 @@ const obj78 = {
     const _try = string.alternatives().try;
     string.alternatives();
     const stringResult1 = string.string();
-    const allowResult1 = stringResult1.allow("");
+    const allowResult1 = stringResult1.allow("", null);
     const items = string.array().items;
     string.array();
     const stringResult2 = string.string();
@@ -2803,23 +2804,23 @@ const obj78 = {
     const _try2 = string.alternatives().try;
     string.alternatives();
     const stringResult3 = string.string();
-    const allowResult2 = stringResult3.allow("");
+    const allowResult2 = stringResult3.allow("", null);
     const items2 = string.array().items;
     string.array();
     const stringResult4 = string.string();
     _try2Result = _try2(allowResult2, items2(stringResult4.allow("")));
     const stringResult5 = string.string();
-    allowResult3 = stringResult5.allow("");
+    allowResult3 = stringResult5.allow("", null);
     const stringResult6 = string.string();
-    allowResult4 = stringResult6.allow("");
+    allowResult4 = stringResult6.allow("", null);
     const stringResult7 = string.string();
-    allowResult5 = stringResult7.allow("");
+    allowResult5 = stringResult7.allow("", null);
     const stringResult8 = string.string();
-    allowResult6 = stringResult8.allow("");
+    allowResult6 = stringResult8.allow("", null);
     const stringResult9 = string.string();
-    allowResult7 = stringResult9.allow("");
+    allowResult7 = stringResult9.allow("", null);
     const stringResult10 = string.string();
-    allowResult8 = stringResult10.allow("");
+    allowResult8 = stringResult10.allow("", null);
     return obj;
   },
   response(string) {
@@ -3148,6 +3149,6 @@ let size = size_mod;
 const result = size.fileFinishedImporting("../discord_common/js/packages/rpc-schema/definitions.tsx");
 
 export { RPCEnums };
-export const RPCCommandSchemas = { [discord_common_helpers.RPCCommand.INITIATE_IMAGE_UPLOAD]: obj15, [discord_common_helpers.RPCCommand.OPEN_SHARE_MOMENT_DIALOG]: obj16, [discord_common_helpers.RPCCommand.AUTHENTICATE]: obj17, [discord_common_helpers.RPCCommand.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS]: obj18, [discord_common_helpers.RPCCommand.RELAUNCH_FRAME]: obj19, [discord_common_helpers.RPCCommand.GET_VOICE_CAPABILITIES]: obj20, [discord_common_helpers.RPCCommand.GET_VOICE_SESSION_PARTICIPANTS]: obj21, [discord_common_helpers.RPCCommand.START_VOICE_SESSION]: obj22, [discord_common_helpers.RPCCommand.UPDATE_VOICE_SPATIAL]: obj23, [discord_common_helpers.RPCCommand.SET_VOICE_SPATIAL_ACOUSTICS]: obj24, [discord_common_helpers.RPCCommand.ENABLE_VOICE_SPATIAL]: obj11, [discord_common_helpers.RPCCommand.DISABLE_VOICE_SPATIAL]: obj11, [discord_common_helpers.RPCCommand.STOP_VOICE_SESSION]: obj11, [discord_common_helpers.RPCCommand.GET_APPLICATION_STREAMING_VIEW_CAPABILITIES]: obj25, [discord_common_helpers.RPCCommand.START_APPLICATION_STREAMING_VIEW]: obj13, [discord_common_helpers.RPCCommand.SUSPEND_APPLICATION_STREAMING_VIEW]: obj11, [discord_common_helpers.RPCCommand.RESUME_APPLICATION_STREAMING_VIEW]: obj11, [discord_common_helpers.RPCCommand.SET_APPLICATION_STREAMING_VIEW_FIT]: obj12, [discord_common_helpers.RPCCommand.WATCH_APPLICATION_STREAMING_VIEW_ON_DISCORD]: obj11, [discord_common_helpers.RPCCommand.STOP_APPLICATION_STREAMING_VIEW]: obj11, [discord_common_helpers.RPCCommand.GET_CAMERA_VIEW_CAPABILITIES]: obj26, [discord_common_helpers.RPCCommand.START_CAMERA_VIEW]: obj13, [discord_common_helpers.RPCCommand.SUSPEND_CAMERA_VIEW]: obj11, [discord_common_helpers.RPCCommand.RESUME_CAMERA_VIEW]: obj11, [discord_common_helpers.RPCCommand.SET_CAMERA_VIEW_FIT]: obj12, [discord_common_helpers.RPCCommand.STOP_CAMERA_VIEW]: obj11, [discord_common_helpers.RPCCommand.SHARE_INTERACTION]: obj27, [discord_common_helpers.RPCCommand.SHARE_LINK]: obj28, [discord_common_helpers.RPCCommand.SHARE_CONTENT]: obj29, [discord_common_helpers.RPCCommand.OPEN_CONTEXT_MENU]: obj30, [discord_common_helpers.RPCCommand.OPEN_USER_POPOUT]: obj31, [discord_common_helpers.RPCCommand.OPEN_MEDIA_VIEWER]: obj32, [discord_common_helpers.RPCCommand.OPEN_USER_PROFILE]: obj33, [discord_common_helpers.RPCCommand.OPEN_GAME_PROFILE]: obj34, [discord_common_helpers.RPCCommand.SHOW_TOOLTIP]: obj35, [discord_common_helpers.RPCCommand.HIDE_TOOLTIP]: obj36, [discord_common_helpers.RPCCommand.SHOW_TOAST]: obj37, [discord_common_helpers.RPCCommand.SHOW_CONFIRM_MODAL]: obj38, [discord_common_helpers.RPCCommand.GET_DEVICE_PERMISSIONS]: obj39, [discord_common_helpers.RPCCommand.REQUEST_DEVICE_PERMISSIONS]: obj40, [discord_common_helpers.RPCCommand.CAPTURE_SCREEN]: obj41, [discord_common_helpers.RPCCommand.GET_RELATIONSHIPS]: obj42, [discord_common_helpers.RPCCommand.INVITE_USER_EMBEDDED]: obj43, [discord_common_helpers.RPCCommand.GET_CONTEXT]: obj44, [discord_common_helpers.RPCCommand.GET_USER]: obj45, [discord_common_helpers.RPCCommand.GET_CURRENT_USER]: obj46, [discord_common_helpers.RPCCommand.GET_QUEST_ENROLLMENT_STATUS]: obj47, [discord_common_helpers.RPCCommand.QUEST_START_TIMER]: obj48, [discord_common_helpers.RPCCommand.GET_QUEST]: obj49, [discord_common_helpers.RPCCommand.REQUEST_PROXY_TICKET_REFRESH]: obj50, [discord_common_helpers.RPCCommand.SET_RUNS_IN_BACKGROUND]: obj51, [discord_common_helpers.RPCCommand.SET_FRAME_RELAUNCH_DEEP_LINK]: obj52, [discord_common_helpers.RPCCommand.FRAME_PICTURE_IN_PICTURE_HANDSHAKE]: obj53, [discord_common_helpers.RPCCommand.FRAME_PICTURE_IN_PICTURE_OPEN]: obj54, [discord_common_helpers.RPCCommand.SET_AUDIO_SESSION_TYPE]: obj55, [discord_common_helpers.RPCCommand.CAPTURE_LOG]: obj56, [discord_common_helpers.RPCCommand.ENCOURAGE_HW_ACCELERATION]: obj57, [discord_common_helpers.RPCCommand.GET_PLATFORM_BEHAVIORS]: obj58, [discord_common_helpers.RPCCommand.USER_SETTINGS_GET_LOCALE]: obj59, [discord_common_helpers.RPCCommand.SET_ORIENTATION_LOCK_STATE]: obj60, [discord_common_helpers.RPCCommand.SET_CONFIG]: obj61, [discord_common_helpers.RPCCommand.OPEN_INVITE_DIALOG]: { embeddedAppSDK: true, request: "replace", response: "Object" }, [discord_common_helpers.RPCCommand.OPEN_EXTERNAL_LINK]: obj62, [discord_common_helpers.RPCCommand.GET_CHANNEL_PERMISSIONS]: obj63, [discord_common_helpers.RPCCommand.GET_SKUS_EMBEDDED]: obj64, [discord_common_helpers.RPCCommand.GET_ENTITLEMENTS_EMBEDDED]: obj65, [discord_common_helpers.RPCCommand.START_PURCHASE]: obj66, [discord_common_helpers.RPCCommand.GET_CHANNEL]: obj67, [discord_common_helpers.RPCCommand.GET_CHANNELS]: obj68, [discord_common_helpers.RPCCommand.GET_SELECTED_VOICE_CHANNEL]: obj69, [discord_common_helpers.RPCCommand.SELECT_VOICE_CHANNEL]: obj70, [discord_common_helpers.RPCCommand.SELECT_TEXT_CHANNEL]: obj71, [discord_common_helpers.RPCCommand.CREATE_CHANNEL_INVITE]: obj72, [discord_common_helpers.RPCCommand.GET_GUILD]: obj73, [discord_common_helpers.RPCCommand.GET_GUILDS]: obj74, [discord_common_helpers.RPCCommand.GET_ROLES]: obj75, [discord_common_helpers.RPCCommand.GET_CURRENT_USER_GUILD_MEMBER]: obj76, [discord_common_helpers.RPCCommand.GET_GUILD_MEMBER]: obj77, [discord_common_helpers.RPCCommand.AUTHORIZE]: obj78, [discord_common_helpers.RPCCommand.SET_ACTIVITY]: obj79 };
+export const RPCCommandSchemas = { [discord_common_helpers.RPCCommand.INITIATE_IMAGE_UPLOAD]: obj15, [discord_common_helpers.RPCCommand.OPEN_SHARE_MOMENT_DIALOG]: obj16, [discord_common_helpers.RPCCommand.AUTHENTICATE]: obj17, [discord_common_helpers.RPCCommand.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS]: obj18, [discord_common_helpers.RPCCommand.RELAUNCH_FRAME]: obj19, [discord_common_helpers.RPCCommand.GET_VOICE_CAPABILITIES]: obj20, [discord_common_helpers.RPCCommand.GET_VOICE_SESSION_PARTICIPANTS]: obj21, [discord_common_helpers.RPCCommand.START_VOICE_SESSION]: obj22, [discord_common_helpers.RPCCommand.UPDATE_VOICE_SPATIAL]: obj23, [discord_common_helpers.RPCCommand.SET_VOICE_SPATIAL_ACOUSTICS]: obj24, [discord_common_helpers.RPCCommand.ENABLE_VOICE_SPATIAL]: obj11, [discord_common_helpers.RPCCommand.DISABLE_VOICE_SPATIAL]: obj11, [discord_common_helpers.RPCCommand.STOP_VOICE_SESSION]: obj11, [discord_common_helpers.RPCCommand.GET_APPLICATION_STREAMING_VIEW_CAPABILITIES]: obj25, [discord_common_helpers.RPCCommand.START_APPLICATION_STREAMING_VIEW]: obj13, [discord_common_helpers.RPCCommand.SUSPEND_APPLICATION_STREAMING_VIEW]: obj11, [discord_common_helpers.RPCCommand.RESUME_APPLICATION_STREAMING_VIEW]: obj11, [discord_common_helpers.RPCCommand.SET_APPLICATION_STREAMING_VIEW_FIT]: obj12, [discord_common_helpers.RPCCommand.WATCH_APPLICATION_STREAMING_VIEW_ON_DISCORD]: obj11, [discord_common_helpers.RPCCommand.STOP_APPLICATION_STREAMING_VIEW]: obj11, [discord_common_helpers.RPCCommand.GET_CAMERA_VIEW_CAPABILITIES]: obj26, [discord_common_helpers.RPCCommand.START_CAMERA_VIEW]: obj13, [discord_common_helpers.RPCCommand.SUSPEND_CAMERA_VIEW]: obj11, [discord_common_helpers.RPCCommand.RESUME_CAMERA_VIEW]: obj11, [discord_common_helpers.RPCCommand.SET_CAMERA_VIEW_FIT]: obj12, [discord_common_helpers.RPCCommand.STOP_CAMERA_VIEW]: obj11, [discord_common_helpers.RPCCommand.SHARE_INTERACTION]: obj27, [discord_common_helpers.RPCCommand.SHARE_LINK]: obj28, [discord_common_helpers.RPCCommand.SHARE_CONTENT]: obj29, [discord_common_helpers.RPCCommand.OPEN_CONTEXT_MENU]: obj30, [discord_common_helpers.RPCCommand.OPEN_USER_POPOUT]: obj31, [discord_common_helpers.RPCCommand.OPEN_MEDIA_VIEWER]: obj32, [discord_common_helpers.RPCCommand.OPEN_USER_PROFILE]: obj33, [discord_common_helpers.RPCCommand.OPEN_GAME_PROFILE]: obj34, [discord_common_helpers.RPCCommand.SHOW_TOOLTIP]: obj35, [discord_common_helpers.RPCCommand.HIDE_TOOLTIP]: obj36, [discord_common_helpers.RPCCommand.SHOW_TOAST]: obj37, [discord_common_helpers.RPCCommand.SHOW_CONFIRM_MODAL]: obj38, [discord_common_helpers.RPCCommand.GET_DEVICE_PERMISSIONS]: obj39, [discord_common_helpers.RPCCommand.REQUEST_DEVICE_PERMISSIONS]: obj40, [discord_common_helpers.RPCCommand.CAPTURE_SCREEN]: obj41, [discord_common_helpers.RPCCommand.GET_RELATIONSHIPS]: obj42, [discord_common_helpers.RPCCommand.INVITE_USER_EMBEDDED]: obj43, [discord_common_helpers.RPCCommand.GET_CONTEXT]: obj44, [discord_common_helpers.RPCCommand.GET_USER]: obj45, [discord_common_helpers.RPCCommand.GET_CURRENT_USER]: obj46, [discord_common_helpers.RPCCommand.GET_QUEST_ENROLLMENT_STATUS]: obj47, [discord_common_helpers.RPCCommand.QUEST_START_TIMER]: obj48, [discord_common_helpers.RPCCommand.GET_QUEST]: obj49, [discord_common_helpers.RPCCommand.REQUEST_PROXY_TICKET_REFRESH]: obj50, [discord_common_helpers.RPCCommand.SET_RUNS_IN_BACKGROUND]: obj51, [discord_common_helpers.RPCCommand.SET_FRAME_RELAUNCH_DEEP_LINK]: obj52, [discord_common_helpers.RPCCommand.FRAME_PICTURE_IN_PICTURE_HANDSHAKE]: obj53, [discord_common_helpers.RPCCommand.FRAME_PICTURE_IN_PICTURE_OPEN]: obj54, [discord_common_helpers.RPCCommand.SET_AUDIO_SESSION_TYPE]: obj55, [discord_common_helpers.RPCCommand.CAPTURE_LOG]: obj56, [discord_common_helpers.RPCCommand.ENCOURAGE_HW_ACCELERATION]: obj57, [discord_common_helpers.RPCCommand.GET_PLATFORM_BEHAVIORS]: obj58, [discord_common_helpers.RPCCommand.USER_SETTINGS_GET_LOCALE]: obj59, [discord_common_helpers.RPCCommand.SET_ORIENTATION_LOCK_STATE]: obj60, [discord_common_helpers.RPCCommand.SET_CONFIG]: obj61, [discord_common_helpers.RPCCommand.OPEN_INVITE_DIALOG]: { embeddedAppSDK: true, request: "resolve", response: "Object" }, [discord_common_helpers.RPCCommand.OPEN_EXTERNAL_LINK]: obj62, [discord_common_helpers.RPCCommand.GET_CHANNEL_PERMISSIONS]: obj63, [discord_common_helpers.RPCCommand.GET_SKUS_EMBEDDED]: obj64, [discord_common_helpers.RPCCommand.GET_ENTITLEMENTS_EMBEDDED]: obj65, [discord_common_helpers.RPCCommand.START_PURCHASE]: obj66, [discord_common_helpers.RPCCommand.GET_CHANNEL]: obj67, [discord_common_helpers.RPCCommand.GET_CHANNELS]: obj68, [discord_common_helpers.RPCCommand.GET_SELECTED_VOICE_CHANNEL]: obj69, [discord_common_helpers.RPCCommand.SELECT_VOICE_CHANNEL]: obj70, [discord_common_helpers.RPCCommand.SELECT_TEXT_CHANNEL]: obj71, [discord_common_helpers.RPCCommand.CREATE_CHANNEL_INVITE]: obj72, [discord_common_helpers.RPCCommand.GET_GUILD]: obj73, [discord_common_helpers.RPCCommand.GET_GUILDS]: obj74, [discord_common_helpers.RPCCommand.GET_ROLES]: obj75, [discord_common_helpers.RPCCommand.GET_CURRENT_USER_GUILD_MEMBER]: obj76, [discord_common_helpers.RPCCommand.GET_GUILD_MEMBER]: obj77, [discord_common_helpers.RPCCommand.AUTHORIZE]: obj78, [discord_common_helpers.RPCCommand.SET_ACTIVITY]: obj79 };
 export const RPCEventSchemas = { [discord_common_helpers.RPCEvent.VOICE_STATE_UPDATE]: obj80, [discord_common_helpers.RPCEvent.SPEAKING_START]: obj14, [discord_common_helpers.RPCEvent.SPEAKING_STOP]: obj14, [discord_common_helpers.RPCEvent.ACTIVITY_LAYOUT_MODE_UPDATE]: obj81, [discord_common_helpers.RPCEvent.CURRENT_USER_UPDATE]: obj82, [discord_common_helpers.RPCEvent.CURRENT_GUILD_MEMBER_UPDATE]: obj83, [discord_common_helpers.RPCEvent.ENTITLEMENT_CREATE]: obj84, [discord_common_helpers.RPCEvent.THERMAL_STATE_UPDATE]: obj85, [discord_common_helpers.RPCEvent.ACTIVITY_INSTANCE_PARTICIPANTS_UPDATE]: obj86, [discord_common_helpers.RPCEvent.RELATIONSHIP_UPDATE]: obj87, [discord_common_helpers.RPCEvent.ACTIVITY_JOIN]: obj88, [discord_common_helpers.RPCEvent.QUEST_ENROLLMENT_STATUS_UPDATE]: obj89 };
 export const RPCNamedSchemas = items;

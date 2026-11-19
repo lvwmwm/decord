@@ -1,10 +1,10 @@
-// Module ID: 4743
-// Function ID: 4744
+// Module ID: 4712
+// Function ID: 4713
 // Name: GuildLeaderboardTypes
 // Dependencies: [2]
 // Exports: getGuildSpaceLeaderboardUserIds, parseGuildSpaceLeaderboardMessageData, parseServerMemberGamingLeaderboardData
 
-// Module 4743 (GuildLeaderboardTypes)
+// Module 4712 (GuildLeaderboardTypes)
 import size from "module_2" /* 2 */;
 
 const GamingLeaderboardStat = { GAMING_LEADERBOARD_STAT_UNSPECIFIED: 0, [0]: "GAMING_LEADERBOARD_STAT_UNSPECIFIED", GAMING_LEADERBOARD_STAT_HOURS_PLAYED: 1, [1]: "GAMING_LEADERBOARD_STAT_HOURS_PLAYED", GAMING_LEADERBOARD_STAT_DAYS_PLAYED: 2, [2]: "GAMING_LEADERBOARD_STAT_DAYS_PLAYED", GAMING_LEADERBOARD_STAT_UNIQUE_GAMES_PLAYED: 3, [3]: "GAMING_LEADERBOARD_STAT_UNIQUE_GAMES_PLAYED" };

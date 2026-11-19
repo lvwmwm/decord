@@ -1,40 +1,40 @@
-// Module ID: 12266
-// Function ID: 12267
+// Module ID: 12249
+// Function ID: 12250
 // Name: ConnectionsRoleMessageBadgeActionSheet
-// Dependencies: [32, 19, 17, 1407, 502, 4735, 4729, 4694, 12267, 6936, 1072, 21, 4823, 575, 1113, 6980, 7251, 5414, 5032, 12, 5387, 6599, 11968, 10347, 1187, 1414, 4830, 38, 7431, 7450, 504, 1256, 5560, 6419, 5051, 7470, 5421, 5037, 11972, 7978, 2]
+// Dependencies: [32, 19, 17, 1407, 502, 4704, 4698, 4663, 12250, 6906, 1072, 21, 4792, 575, 1113, 6950, 7221, 5383, 5001, 12, 5356, 6570, 11946, 10325, 1187, 1414, 4799, 38, 7401, 7420, 504, 1256, 5529, 6390, 5020, 7440, 5390, 5006, 11950, 7948, 2]
 // Exports: default
 
-// Module 12266 (ConnectionsRoleMessageBadgeActionSheet)
+// Module 12249 (ConnectionsRoleMessageBadgeActionSheet)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import AvatarUtils from "AvatarUtils" /* 1414 */;
-import shared from "shared" /* 4830 */;
-import useThemeDefault from "useTheme" /* 5032 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
-import Text_Text from "Text/Text" /* 5414 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5560 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6419 */;
-import PlatformsDefault from "Platforms" /* 6599 */;
-import Constants2 from "Constants" /* 6936 */;
-import ConnectionsUtils from "ConnectionsUtils" /* 6980 */;
-import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 7251 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7978 */;
-import GuildRoleConnectionsModalActionCreators from "GuildRoleConnectionsModalActionCreators" /* 11972 */;
+import shared from "shared" /* 4799 */;
+import useThemeDefault from "useTheme" /* 5001 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
+import Text_Text from "Text/Text" /* 5383 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5529 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6390 */;
+import PlatformsDefault from "Platforms" /* 6570 */;
+import Constants2 from "Constants" /* 6906 */;
+import ConnectionsUtils from "ConnectionsUtils" /* 6950 */;
+import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 7221 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7948 */;
+import GuildRoleConnectionsModalActionCreators from "GuildRoleConnectionsModalActionCreators" /* 11950 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserRecord from "UserRecord" /* 1407 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 4735 */;
-import GuildRoleStore from "GuildRoleStore" /* 4729 */;
-import GuildStore from "GuildStore" /* 4694 */;
-import GuildRoleConnectionEligibilityStore from "GuildRoleConnectionEligibilityStore" /* 12267 */;
+import GuildMemberStore from "GuildMemberStore" /* 4704 */;
+import GuildRoleStore from "GuildRoleStore" /* 4698 */;
+import GuildStore from "GuildStore" /* 4663 */;
+import GuildRoleConnectionEligibilityStore from "GuildRoleConnectionEligibilityStore" /* 12250 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;
@@ -93,7 +93,7 @@ function PopoutCheck(arg0) {
     items = [authStore3(CheckmarkLargeIcon.CheckmarkLargeIcon, obj6), ];
     const obj7 = { variant: "body-xs/medium", color: "mobile-text-heading-primary", children: formatResult };
     items[1] = authStore3(Text_Text.Text, obj7);
-    tmp10 = closure_17(metroRequire, obj5);
+    tmp10 = authStore4(metroRequire, obj5);
   }
   return tmp10;
 }
@@ -119,7 +119,7 @@ class PopoutChecks {
     let c3 = groupByResult;
     const keys = Object.keys(groupByResult);
     let closure_4 = keys.length - 1;
-    let obj2 = guildId(5387);
+    let obj2 = guildId(5356);
     const roleColor = obj2.useToken(nativeDefault.unsafe_rawColors.GREEN_330);
     let obj3 = {
       children: keys.map(function(item, index) {
@@ -158,10 +158,10 @@ class PopoutChecks {
         }
         if (includes(str)) {
           const obj2 = { style: closure_1.botTag, guildId, roleColor, size: 16 };
-          tmp10 = authStore3(tmp2(11968), obj2);
+          tmp10 = authStore3(tmp2(11946), obj2);
         } else if (null != tmp7) {
           const obj3 = { style: closure_1.botTag, verified: false };
-          tmp10 = authStore3(tmp2(10347), obj3);
+          tmp10 = authStore3(tmp2(10325), obj3);
         }
         const items = [closure_1.popoutChecksGroup, ];
         let prop = null;
@@ -184,13 +184,13 @@ class PopoutChecks {
         items1 = [tmp22Result, , , ];
         let tmp25 = null;
         if (null != tmp7) {
-          const obj7 = { style: closure_1.popoutCheckGroupPlatformIcon, user: tmp7, size: native.AvatarSizes.XSMALL, guildId: "Array" };
+          const obj7 = { style: closure_1.popoutCheckGroupPlatformIcon, user: tmp7, size: native.AvatarSizes.XSMALL, guildId: "a" };
           const Avatar = tmp9(1187).Avatar;
           tmp25 = authStore3(Avatar, obj7);
         }
         items1[1] = tmp25;
         let name;
-        const Text = tmp9(5414).Text;
+        const Text = tmp9(5383).Text;
         const tmp27 = authStore3;
         if (value != null) {
           name = value.name;
@@ -205,7 +205,7 @@ class PopoutChecks {
         items1[2] = tmp27(Text, { variant: "body-sm/medium", color: "interactive-text-active", children: name });
         items1[3] = tmp10;
         items2 = [
-          closure_17(metroRequire, obj5),
+          authStore4(metroRequire, obj5),
           found.map((description) => {
             let connection_metadata_field;
             let connection_type;
@@ -219,7 +219,7 @@ class PopoutChecks {
             return closure_1_16(closure_1_20, { connectionType, connectionMetadataField, operator, value, description }, "" + connectionType + ":" + connectionMetadataField + ":" + operator + ":" + value);
           })
         ];
-        return closure_17(metroRequire, obj4, item);
+        return authStore4(metroRequire, obj4, item);
       })
     };
     return closure_16(closure_18, obj3);

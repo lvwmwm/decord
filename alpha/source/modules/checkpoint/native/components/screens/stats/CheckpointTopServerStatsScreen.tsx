@@ -1,30 +1,30 @@
-// Module ID: 12687
-// Function ID: 12688
+// Module ID: 12670
+// Function ID: 12671
 // Name: CheckpointTopServerStatsScreen
-// Dependencies: [17, 12417, 5877, 21, 4823, 575, 12654, 504, 6247, 1113, 3339, 12434, 12684, 7233, 12686, 12683, 12389, 12435, 12676, 12675, 12677, 2]
+// Dependencies: [17, 12400, 5848, 21, 4792, 575, 12637, 504, 6218, 1113, 3339, 12417, 12667, 7203, 12669, 12666, 12372, 12418, 12659, 12658, 12660, 2]
 // Exports: default
 
-// Module 12687 (CheckpointTopServerStatsScreen)
+// Module 12670 (CheckpointTopServerStatsScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef3339 from "module_3339" /* 3339 */;
-import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6247 */;
-import GuildIcon from "GuildIcon" /* 7233 */;
-import ServerIcon from "ServerIcon" /* 12389 */;
-import CheckpointScreenDefault from "CheckpointScreen" /* 12434 */;
-import CheckpointTextDefault from "CheckpointText" /* 12435 */;
-import useIsCheckpointWide from "useIsCheckpointWide" /* 12654 */;
-import CheckpointCountUpStatNumberDefault from "CheckpointCountUpStatNumber" /* 12675 */;
-import CheckpointNumberUtils from "CheckpointNumberUtils" /* 12676 */;
-import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 12677 */;
-import CheckpointGuildStatsDefault from "CheckpointGuildStats" /* 12683 */;
-import CheckpointRankTagDefault from "CheckpointRankTag" /* 12684 */;
-import CheckpointTruncatedTextDefault from "CheckpointTruncatedText" /* 12686 */;
-import CheckpointStore from "CheckpointStore" /* 12417 */;
-import CheckpointConstants from "CheckpointConstants" /* 5877 */;
+import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6218 */;
+import GuildIcon from "GuildIcon" /* 7203 */;
+import ServerIcon from "ServerIcon" /* 12372 */;
+import CheckpointScreenDefault from "CheckpointScreen" /* 12417 */;
+import CheckpointTextDefault from "CheckpointText" /* 12418 */;
+import useIsCheckpointWide from "useIsCheckpointWide" /* 12637 */;
+import CheckpointCountUpStatNumberDefault from "CheckpointCountUpStatNumber" /* 12658 */;
+import CheckpointNumberUtils from "CheckpointNumberUtils" /* 12659 */;
+import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 12660 */;
+import CheckpointGuildStatsDefault from "CheckpointGuildStats" /* 12666 */;
+import CheckpointRankTagDefault from "CheckpointRankTag" /* 12667 */;
+import CheckpointTruncatedTextDefault from "CheckpointTruncatedText" /* 12669 */;
+import CheckpointStore from "CheckpointStore" /* 12400 */;
+import CheckpointConstants from "CheckpointConstants" /* 5848 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size_mod from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;

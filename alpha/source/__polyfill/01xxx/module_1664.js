@@ -7,7 +7,7 @@ import _createClassDefault from "_createClass" /* 42 */;
 import _mod1665 from "module_1665" /* 1665 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 
-let set, set2, set3;
+let set, set2, set3, set4;
 
 class CSSKeyframesRegistry {
   constructor() {
@@ -94,7 +94,7 @@ let items = [
           const self7 = this;
           const cssText = name.cssText;
           set2 = cssTextToNames_2.set;
-          const set4 = new Set();
+          set4 = new Set();
           set2(cssText, set4);
         }
         const cssTextToNames_3 = self.cssTextToNames_;

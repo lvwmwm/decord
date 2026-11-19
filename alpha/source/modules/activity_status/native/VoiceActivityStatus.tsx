@@ -1,16 +1,16 @@
-// Module ID: 13451
-// Function ID: 13452
+// Module ID: 13433
+// Function ID: 13434
 // Name: VoiceActivityStatus
-// Dependencies: [19, 21, 4823, 1113, 13452, 13443, 2]
+// Dependencies: [19, 21, 4792, 1113, 13434, 13425, 2]
 // Exports: default, getVoiceActivityStatusText
 
-// Module 13451 (VoiceActivityStatus)
+// Module 13433 (VoiceActivityStatus)
 import intl3 from "intl" /* 1113 */;
-import ActivityStatusTextDefault from "ActivityStatusText" /* 13443 */;
-import UserProfileVoiceActivityIconDefault from "UserProfileVoiceActivityIcon" /* 13452 */;
+import ActivityStatusTextDefault from "ActivityStatusText" /* 13425 */;
+import UserProfileVoiceActivityIconDefault from "UserProfileVoiceActivityIcon" /* 13434 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let c3;

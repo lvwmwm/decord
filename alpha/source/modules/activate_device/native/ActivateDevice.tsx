@@ -1,20 +1,20 @@
-// Module ID: 15017
-// Function ID: 15018
+// Module ID: 15003
+// Function ID: 15004
 // Name: ActivateDevice
-// Dependencies: [32, 19, 17, 21, 4823, 575, 15018, 15020, 10655, 6990, 15021, 6916, 15022, 2025, 15023, 15027, 15028, 5510, 1414, 15029, 6928, 2]
+// Dependencies: [32, 19, 17, 21, 4792, 575, 15004, 15006, 10633, 6960, 15007, 6886, 15008, 2025, 15009, 15013, 15014, 5479, 1414, 15015, 6898, 2]
 // Exports: ActivateDevice
 
-// Module 15017 (ActivateDevice)
+// Module 15003 (ActivateDevice)
 import nativeDefault from "native" /* 575 */;
 import react_nativeDefault from "react-native" /* 2025 */;
-import ConsoleOAuthApplications from "ConsoleOAuthApplications" /* 6990 */;
-import _modDef15021 from "module_15021" /* 15021 */;
-import _modDef15022 from "module_15022" /* 15022 */;
+import ConsoleOAuthApplications from "ConsoleOAuthApplications" /* 6960 */;
+import _modDef15007 from "module_15007" /* 15007 */;
+import _modDef15008 from "module_15008" /* 15008 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -104,14 +104,14 @@ export const ActivateDevice = (onClose) => {
       const userCodeData = first.userCodeData;
       const items = [ConsoleOAuthApplications.ConsoleOAuthApplications.PLAYSTATION_APPLICATION_ID, ConsoleOAuthApplications.ConsoleOAuthApplications.PLAYSTATION_STAGING_APPLICATION_ID];
       if (items.includes(userCodeData.clientId)) {
-        closure_3(_modDef15021);
+        closure_3(_modDef15007);
       } else {
         const scopes = userCodeData.scopes;
         if (scopes.some((item) => {
           const obj = first(first1[11]);
           return obj.isSocialLayerUmbrellaScope(item);
         })) {
-          closure_3(_modDef15022);
+          closure_3(_modDef15008);
         }
       }
     }
@@ -147,7 +147,7 @@ export const ActivateDevice = (onClose) => {
     }
   }
   const obj6 = { style: tmp.background, children: items6 };
-  const obj7 = { source: tmp7Result.makeSource(require("module_15029")), style: tmp.imageStyle };
+  const obj7 = { source: tmp7Result.makeSource(require("module_15015")), style: tmp.imageStyle };
   const tmp23 = require("FastImage");
   tmp7Result = first(first1[18]);
   items6 = [closure_8(tmp23, obj7), ];

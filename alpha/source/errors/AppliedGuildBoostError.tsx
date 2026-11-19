@@ -1,13 +1,13 @@
-// Module ID: 6263
-// Function ID: 6264
+// Module ID: 6235
+// Function ID: 6236
 // Name: AppliedGuildBoostError
-// Dependencies: [4644, 4645, 1089, 1113, 2]
+// Dependencies: [4613, 4614, 1089, 1113, 2]
 
-// Module 6263 (AppliedGuildBoostError)
+// Module 6235 (AppliedGuildBoostError)
 import DurationsDefault from "Durations" /* 1089 */;
 import intl from "intl" /* 1113 */;
-import DateUtils from "DateUtils" /* 4645 */;
-import V6OrEarlierAPIError from "errors/V6OrEarlierAPIError" /* 4644 */;
+import DateUtils from "DateUtils" /* 4614 */;
+import V6OrEarlierAPIError from "errors/V6OrEarlierAPIError" /* 4613 */;
 import size from "module_2" /* 2 */;
 
 class AppliedGuildBoostError extends V6OrEarlierAPIError {

@@ -1,16 +1,16 @@
-// Module ID: 9162
-// Function ID: 9163
+// Module ID: 9138
+// Function ID: 9139
 // Name: NativeVideo
-// Dependencies: [109, 32, 19, 17, 21, 4823, 81, 9163, 5510, 2]
+// Dependencies: [109, 32, 19, 17, 21, 4792, 81, 9139, 5479, 2]
 // Exports: default
 
-// Module 9162 (NativeVideo)
+// Module 9138 (NativeVideo)
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_10, dependencyMap, sum;
@@ -48,7 +48,7 @@ export default function NativeVideo(ref) {
   let tmp21;
   let tmp6;
   let type;
-  const f96177 = (item) => {
+  const f96134 = (item) => {
     let tmp;
     let tmp2;
     [tmp, tmp2] = item;
@@ -95,7 +95,7 @@ export default function NativeVideo(ref) {
   }
   const tmp4Result = str(obj.useState(() => {
     let entries;
-    const obj = { id: String(c10), uri: str, headersKey: json, headers: entries.map(f96177) };
+    const obj = { id: String(c10), uri: str, headersKey: json, headers: entries.map(f96134) };
     c10 = c10 + 1;
     const parsed = JSON.parse(json);
     entries = Object.entries(parsed);
@@ -109,7 +109,7 @@ export default function NativeVideo(ref) {
   }
   if (!tmp15) {
     const _JSON2 = JSON;
-    let obj4 = { id: String(sum), uri: str, headersKey: json, headers: entries.map(f96177) };
+    let obj4 = { id: String(sum), uri: str, headersKey: json, headers: entries.map(f96134) };
     const _String = String;
     sum = closure_10 + 1;
     closure_10 = sum;
@@ -358,7 +358,7 @@ export default function NativeVideo(ref) {
   const tmp24 = closure_9;
   const tmp25 = c7;
   const tmp27 = ref1;
-  const tmp29 = ref1(9163);
+  const tmp29 = ref1(9139);
   if (selectedTextTrack != null) {
     type = selectedTextTrack.type;
   }
@@ -369,7 +369,7 @@ export default function NativeVideo(ref) {
     let obj8 = { accessible: false, style: tmp2.content, source: obj9, resizeMode: str2 };
     obj9 = { uri: obj2.poster };
     str2 = "center";
-    const tmp27Result = tmp27(5510);
+    const tmp27Result = tmp27(5479);
     if ("none" !== obj2.posterResizeMode) {
       let str4 = obj2.posterResizeMode;
       if (str4 == null) {

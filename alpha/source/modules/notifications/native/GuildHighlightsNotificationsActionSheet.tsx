@@ -1,26 +1,26 @@
-// Module ID: 10512
-// Function ID: 10513
+// Module ID: 10490
+// Function ID: 10491
 // Name: GuildHighlightsNotificationsActionSheet
-// Dependencies: [32, 19, 17, 4694, 6460, 1072, 10513, 21, 4823, 575, 7233, 5414, 10514, 563, 1113, 10515, 1630, 5051, 5055, 2188, 6958, 7620, 7396, 7391, 5037, 2]
+// Dependencies: [32, 19, 17, 4663, 6431, 1072, 10491, 21, 4792, 575, 7203, 5383, 10492, 563, 1113, 10493, 1630, 5020, 5024, 2188, 6928, 7590, 7366, 7361, 5006, 2]
 // Exports: default
 
-// Module 10512 (GuildHighlightsNotificationsActionSheet)
+// Module 10490 (GuildHighlightsNotificationsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5037 */;
-import Text_Text from "Text/Text" /* 5414 */;
-import GuildIcon from "GuildIcon" /* 7233 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7391 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7396 */;
-import Constants2 from "Constants" /* 10513 */;
-import PushFeedbackActions from "PushFeedbackActions" /* 10514 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
+import Text_Text from "Text/Text" /* 5383 */;
+import GuildIcon from "GuildIcon" /* 7203 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7361 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7366 */;
+import Constants2 from "Constants" /* 10491 */;
+import PushFeedbackActions from "PushFeedbackActions" /* 10492 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4694 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6460 */;
+import GuildStore from "GuildStore" /* 4663 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6431 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;

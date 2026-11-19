@@ -1,9 +1,9 @@
-// Module ID: 6829
-// Function ID: 6830
+// Module ID: 6799
+// Function ID: 6800
 // Name: ApplicationAssetsStore
 // Dependencies: [12, 504, 572, 2]
 
-// Module 6829 (ApplicationAssetsStore)
+// Module 6799 (ApplicationAssetsStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;

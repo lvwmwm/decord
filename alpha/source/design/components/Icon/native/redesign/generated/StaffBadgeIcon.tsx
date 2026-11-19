@@ -1,14 +1,14 @@
-// Module ID: 17058
-// Function ID: 17059
+// Module ID: 17051
+// Function ID: 17052
 // Name: StaffBadgeIcon
-// Dependencies: [19, 21, 575, 5509, 17059, 2]
+// Dependencies: [19, 21, 575, 5478, 17052, 2]
 // Exports: StaffBadgeIcon
 
-// Module 17058 (StaffBadgeIcon)
+// Module 17051 (StaffBadgeIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5509 */;
-import AssetRegistry from "AssetRegistry" /* 17059 */;
+import BaseIconImage2 from "BaseIconImage" /* 5478 */;
+import AssetRegistry from "AssetRegistry" /* 17052 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,19 +1,20 @@
-// Module ID: 9078
-// Function ID: 9079
+// Module ID: 9053
+// Function ID: 9054
 // Name: admin_editor_test_component
-// Dependencies: [32, 1197, 9056, 9066, 9057, 9058, 9064, 2]
+// Dependencies: [32, 1197, 9030, 9034, 9031, 9032, 9040, 9035, 2]
 
-// Module 9078 (admin_editor_test_component)
+// Module 9053 (admin_editor_test_component)
 import _mod1197 from "module_1197" /* 1197 */;
-import localized_string from "localized_string" /* 9056 */;
-import help_article from "help_article" /* 9057 */;
-import cta_button from "cta_button" /* 9058 */;
-import gradient from "gradient" /* 9064 */;
-import theme_aware_asset from "theme_aware_asset" /* 9066 */;
+import localized_string from "localized_string" /* 9030 */;
+import help_article from "help_article" /* 9031 */;
+import cta_button from "cta_button" /* 9032 */;
+import theme_aware_asset from "theme_aware_asset" /* 9034 */;
+import tab_gradient_colors from "tab_gradient_colors" /* 9035 */;
+import gradient from "gradient" /* 9040 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
-let internalBinaryWrite, internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7;
+let internalBinaryWrite, internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8;
 
 let tmp;
 let tmp2;
@@ -89,24 +90,32 @@ class AdminEditorTestComponent$Type extends MessageType {
           return items;
         }
       },
+      {
+        no: 12,
+        name: "multi_select_field",
+        kind: "enum",
+        repeat: 1,
+        T() {
+          const items = ["discord_protos.premium_marketing.v1.AdminEditorTestSelectOption", AdminEditorTestSelectOption, "ADMIN_EDITOR_TEST_SELECT_OPTION_"];
+          return items;
+        }
+      },
     ,
 
     ];
-    const obj = { no: 12, name: "multi_select_field", kind: "enum", repeat: 1, T };
+    const obj = { no: 13, name: "list_field", kind: "message", repeat: 1, T };
     class T {
       constructor() {
-        const items = ["discord_protos.premium_marketing.v1.AdminEditorTestSelectOption", AdminEditorTestSelectOption, "ADMIN_EDITOR_TEST_SELECT_OPTION_"];
-        return items;
+        return internalBinaryWrite;
       }
     }
-    items[11] = obj;
-    items[12] = {
-      no: 13,
-      name: "list_field",
+    items[12] = obj;
+    items[13] = {
+      no: 14,
+      name: "tab_gradient_colors_field",
       kind: "message",
-      repeat: 1,
       T() {
-        return internalBinaryWrite;
+        return tab_gradient_colors.TabGradientColors;
       }
     };
     const tmp2 = new tmp("discord_protos.premium_marketing.v1.AdminEditorTestComponent", items, T);
@@ -230,6 +239,14 @@ class AdminEditorTestComponent$Type extends MessageType {
         num15 = num15 + 1;
         length2 = deprecatedField.listField.length;
       } while (num15 < length2);
+    }
+    if (deprecatedField.tabGradientColorsField) {
+      const TabGradientColors = tab_gradient_colors.TabGradientColors;
+      internalBinaryWrite8 = TabGradientColors.internalBinaryWrite;
+      const tabGradientColorsField = deprecatedField.tabGradientColorsField;
+      const tagResult13 = tag.tag(14, _mod1197.WireType.LengthDelimited);
+      const internalBinaryWrite8Result = internalBinaryWrite8(tabGradientColorsField, tagResult13.fork(), writeUnknownFields);
+      const joined8 = internalBinaryWrite8Result.join();
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {

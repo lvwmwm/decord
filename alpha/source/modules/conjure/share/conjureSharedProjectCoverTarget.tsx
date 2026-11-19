@@ -1,37 +1,33 @@
-// Module ID: 11933
-// Function ID: 11934
+// Module ID: 11911
+// Function ID: 11912
 // Name: conjureSharedProjectCoverTarget
-// Dependencies: [11934, 11935, 2]
+// Dependencies: [11912, 11913, 2]
 // Exports: default
 
-// Module 11933 (conjureSharedProjectCoverTarget)
-import conjureSharedProjectHome from "conjureSharedProjectHome" /* 11934 */;
-import findLoadedAppChannelDefault from "findLoadedAppChannel" /* 11935 */;
+// Module 11911 (conjureSharedProjectCoverTarget)
+import conjureSharedProjectHome from "conjureSharedProjectHome" /* 11912 */;
+import findLoadedAppChannelDefault from "findLoadedAppChannel" /* 11913 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/share/conjureSharedProjectCoverTarget.tsx");
 
-export default function readConjureSharedProjectCoverTarget(arg0, install_scope, arg2) {
-  let channelId;
-  let guildId;
-  ({ guildId, channelId } = arg2);
-  if (null != guildId) {
+export default function readConjureSharedProjectCoverTarget(arg0, guild_id, channelId) {
+  channelId = channelId.channelId;
+  const obj = conjureSharedProjectHome;
+  const sharedProjectHomeGuildId = obj.getSharedProjectHomeGuildId(guild_id);
+  if (null != sharedProjectHomeGuildId) {
     if (null != channelId) {
-      const obj3 = conjureSharedProjectHome;
-      const tmp6 = require;
-      if (obj3.isSharedProjectHomeServer(install_scope, guildId)) {
-        const tmp6Result = tmp6(11934);
-        if (tmp6Result.canLaunchSharedProject(install_scope, guildId)) {
-          return { type: "launch" };
-        } else {
-          const tmp3 = findLoadedAppChannelDefault(guildId, arg0, channelId);
-          let tmp4 = null;
-          if (null != tmp3) {
-            tmp4 = { type: "open", appChannel: tmp3 };
-            const obj = { type: "open", appChannel: tmp3 };
-          }
-          return tmp4;
+      const tmpResult = conjureSharedProjectHome;
+      if (tmpResult.canLaunchSharedProject(guild_id)) {
+        return { type: "launch" };
+      } else {
+        const tmp6 = findLoadedAppChannelDefault(sharedProjectHomeGuildId, arg0, channelId);
+        let tmp7 = null;
+        if (null != tmp6) {
+          tmp7 = { type: "open", appChannel: tmp6 };
+          const obj2 = { type: "open", appChannel: tmp6 };
         }
+        return tmp7;
       }
     }
   }

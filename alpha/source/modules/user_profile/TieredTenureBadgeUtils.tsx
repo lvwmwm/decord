@@ -1,10 +1,10 @@
-// Module ID: 6874
-// Function ID: 6875
+// Module ID: 6844
+// Function ID: 6845
 // Name: TieredTenureBadgeUtils
 // Dependencies: [1390, 2169, 2]
 // Exports: getEarnedOnDate, getEarnedTenureBadge, getTieredTenureBadge, getTieredTenureBadgeData
 
-// Module 6874 (TieredTenureBadgeUtils)
+// Module 6844 (TieredTenureBadgeUtils)
 import _modDef2169 from "module_2169" /* 2169 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
 import size from "module_2" /* 2 */;

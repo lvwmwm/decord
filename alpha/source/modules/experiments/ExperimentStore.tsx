@@ -1,10 +1,10 @@
-// Module ID: 5440
-// Function ID: 5441
+// Module ID: 5409
+// Function ID: 5410
 // Name: ExperimentStore
-// Dependencies: [32, 502, 1071, 5441, 1072, 3, 1377, 1251, 1256, 5442, 510, 12, 572, 2]
+// Dependencies: [32, 502, 1071, 5410, 1072, 3, 1377, 1251, 1256, 5411, 510, 12, 572, 2]
 // Exports: registerExperiment
 
-// Module 5440 (ExperimentStore)
+// Module 5409 (ExperimentStore)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import Storage5 from "Storage" /* 510 */;
@@ -12,11 +12,11 @@ import Dispatcher from "Dispatcher" /* 572 */;
 import _modDef1251 from "module_1251" /* 1251 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import BuildOverrideUtils from "BuildOverrideUtils" /* 1377 */;
-import GuildFilters from "GuildFilters" /* 5442 */;
+import GuildFilters from "GuildFilters" /* 5411 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1071 */;
-import ExperimentConstants from "ExperimentConstants" /* 5441 */;
+import ExperimentConstants from "ExperimentConstants" /* 5410 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -779,7 +779,7 @@ const guildExperimentOverrides = "guildExperimentOverrides";
 let tmp6 = new LoggerDefault("ExperimentStore");
 const logger = tmp6;
 const authStore3 = false;
-const trackedExposureExperiments = {};
+const authStore4 = {};
 const map = new Map();
 let closure_19 = {};
 let obj = { rawUserExperiments: [], rawGuildExperiments: [] };

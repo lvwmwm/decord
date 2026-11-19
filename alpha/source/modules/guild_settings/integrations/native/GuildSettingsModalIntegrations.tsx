@@ -1,17 +1,17 @@
-// Module ID: 19830
-// Function ID: 19831
+// Module ID: 19827
+// Function ID: 19828
 // Name: GuildSettingsModalIntegrations
-// Dependencies: [19, 4755, 7906, 1072, 21, 4823, 575, 5387, 1502, 504, 5032, 19760, 7620, 5837, 7259, 6956, 1113, 18893, 19023, 14295, 6599, 5510, 1414, 4830, 5397, 2]
+// Dependencies: [19, 4724, 7876, 1072, 21, 4792, 575, 5356, 1502, 504, 5001, 19757, 7590, 5808, 7229, 6926, 1113, 18885, 19015, 14278, 6570, 5479, 1414, 4799, 5366, 2]
 // Exports: default
 
-// Module 19830 (GuildSettingsModalIntegrations)
+// Module 19827 (GuildSettingsModalIntegrations)
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4755 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 7906 */;
+import PermissionStore from "PermissionStore" /* 4724 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 7876 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4823 */;
+import createStyles_mod from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,10 +1,10 @@
-// Module ID: 10462
-// Function ID: 10463
+// Module ID: 10440
+// Function ID: 10441
 // Name: PremiumFeatureUtils
-// Dependencies: [1389, 1072, 1390, 2110, 8355, 2]
+// Dependencies: [1389, 1072, 1390, 2110, 8324, 2]
 // Exports: getUserMaxFileSize
 
-// Module 10462 (PremiumFeatureUtils)
+// Module 10440 (PremiumFeatureUtils)
 import PremiumTypeUtils from "PremiumTypeUtils" /* 2110 */;
 import OverridePremiumTypeStore from "OverridePremiumTypeStore" /* 1389 */;
 import Constants from "Constants" /* 1072 */;
@@ -32,7 +32,7 @@ function getUserMaxFileSize(currentUser) {
       if (obj.isPremium(currentUser)) {
         let fileSize;
         if (currentUser.premiumType === hasOwnProperty.TIER_2) {
-          const tmp3Result = tmp3(8355);
+          const tmp3Result = tmp3(8324);
           fileSize = tmp3Result.getNitroFileUploadLimitBytes({ location: "getUserMaxFileSize" });
         } else {
           fileSize = metroRequire[currentUser.premiumType].fileSize;

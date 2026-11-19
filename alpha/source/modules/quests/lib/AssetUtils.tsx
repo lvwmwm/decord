@@ -1,22 +1,22 @@
-// Module ID: 9871
-// Function ID: 9872
+// Module ID: 9850
+// Function ID: 9851
 // Name: AssetUtils
-// Dependencies: [6466, 1072, 9872, 9873, 9874, 9875, 9876, 8321, 9883, 9884, 6474, 1381, 2024, 2]
+// Dependencies: [6437, 1072, 9851, 9852, 9853, 9854, 9855, 8290, 9862, 9863, 6445, 1381, 2024, 2]
 // Exports: buildUrl, getDevicePixelScaledDimensions, getQuestAsset, getScaledFirstFrameImageUrl, getScaledImageUrl, resolveAdCreativeCdnUrl, resolveOptionalAdCreativeCdnUrl
 
-// Module 9871 (AssetUtils)
+// Module 9850 (AssetUtils)
 import URLUtilsDefault from "URLUtils" /* 1381 */;
 import react_nativeDefault from "react-native" /* 2024 */;
-import FirstPartyQuestTaskTypes2 from "FirstPartyQuestTaskTypes" /* 6474 */;
-import QuestRewardTypes from "QuestRewardTypes" /* 8321 */;
-import _modDef9872 from "module_9872" /* 9872 */;
-import _modDef9873 from "module_9873" /* 9873 */;
-import _modDef9874 from "module_9874" /* 9874 */;
-import _modDef9875 from "module_9875" /* 9875 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 9876 */;
-import _modDef9883 from "module_9883" /* 9883 */;
-import _modDef9884 from "module_9884" /* 9884 */;
-import QuestConstants from "QuestConstants" /* 6466 */;
+import FirstPartyQuestTaskTypes2 from "FirstPartyQuestTaskTypes" /* 6445 */;
+import QuestRewardTypes from "QuestRewardTypes" /* 8290 */;
+import _modDef9851 from "module_9851" /* 9851 */;
+import _modDef9852 from "module_9852" /* 9852 */;
+import _modDef9853 from "module_9853" /* 9853 */;
+import _modDef9854 from "module_9854" /* 9854 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 9855 */;
+import _modDef9862 from "module_9862" /* 9862 */;
+import _modDef9863 from "module_9863" /* 9863 */;
+import QuestConstants from "QuestConstants" /* 6437 */;
 import Constants from "Constants" /* 1072 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -59,13 +59,13 @@ function resolveAsset(id, questBarHeroVideo, arg2) {
   hasItem = null != tmp15 && items.includes(tmp15);
   return obj;
 }
-function getMimetype(videoPreview) {
-  if (null == videoPreview) {
+function getMimetype(c0) {
+  if (null == c0) {
     return null;
   } else {
-    const startsWithResult = videoPreview.startsWith("blob:");
+    const startsWithResult = c0.startsWith("blob:");
     const obj = URLUtilsDefault;
-    const toURLSafeResult = obj.toURLSafe(videoPreview);
+    const toURLSafeResult = obj.toURLSafe(c0);
     if (startsWithResult) {
       let value;
       if (toURLSafeResult != null) {
@@ -88,7 +88,7 @@ function getMimetype(videoPreview) {
         }
       }
       if (formatted == null) {
-        const match = re7.exec(videoPreview);
+        const match = re7.exec(c0);
         let formatted1;
         if (match != null) {
           if (match[1] != null) {
@@ -226,7 +226,7 @@ let obj3 = { VIDEO: "url", THUMBNAIL: "thumbnail", CAPTION: "caption", TRANSCRIP
 let obj4 = { TIER_1: 1, [1]: "TIER_1", TIER_2: 2, [2]: "TIER_2", TIER_3: 3, [3]: "TIER_3", TIER_4: 4, [4]: "TIER_4" };
 let obj5 = { variant: obj2.VIDEO, property: obj3.VIDEO };
 let closure_11 = { [QuestAssetType.VIDEO_PLAYER_VIDEO]: obj5, [QuestAssetType.VIDEO_PLAYER_VIDEO_LOW_RES]: { variant: obj2.VIDEO_LOW_RES, property: obj3.VIDEO }, [QuestAssetType.VIDEO_PLAYER_VIDEO_HLS]: { variant: obj2.VIDEO_HLS, property: obj3.VIDEO }, [QuestAssetType.VIDEO_PLAYER_THUMBNAIL]: { variant: obj2.VIDEO, property: obj3.THUMBNAIL }, [QuestAssetType.VIDEO_PLAYER_CAPTION]: { variant: obj2.VIDEO, property: obj3.CAPTION }, [QuestAssetType.VIDEO_PLAYER_TRANSCRIPT]: { variant: obj2.VIDEO, property: obj3.TRANSCRIPT } };
-const obj11 = { [TIER_1]: _modDef9872, [TIER_2]: _modDef9873, [TIER_3]: _modDef9874, [TIER_4]: _modDef9875 };
+const obj11 = { [TIER_1]: _modDef9851, [TIER_2]: _modDef9852, [TIER_3]: _modDef9853, [TIER_4]: _modDef9854 };
 ({ TIER_1, TIER_2, TIER_3, TIER_4 } = obj4);
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/quests/lib/AssetUtils.tsx");
@@ -289,10 +289,10 @@ export function getQuestAsset(quest, GAME_TILE, DARK, flag, arg4) {
         obj5 = { url: tmp29, mimetype: "video/webm", isAnimated: true };
         const obj3 = { url: tmp29, mimetype: "video/webm", isAnimated: true };
       } else if (flag) {
-        obj5 = { url: _modDef9883, mimetype: "video/mp4", isAnimated: true };
-        const obj4 = { url: _modDef9883, mimetype: "video/mp4", isAnimated: true };
+        obj5 = { url: _modDef9862, mimetype: "video/mp4", isAnimated: true };
+        const obj4 = { url: _modDef9862, mimetype: "video/mp4", isAnimated: true };
       } else {
-        obj5 = { url: _modDef9884, mimetype: "video/webm", isAnimated: true };
+        obj5 = { url: _modDef9863, mimetype: "video/webm", isAnimated: true };
       }
       return obj5;
     } else {

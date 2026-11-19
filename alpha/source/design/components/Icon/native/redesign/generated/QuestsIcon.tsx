@@ -1,14 +1,14 @@
-// Module ID: 13725
-// Function ID: 13726
+// Module ID: 13707
+// Function ID: 13708
 // Name: QuestsIcon
-// Dependencies: [19, 21, 575, 5509, 13726, 2]
+// Dependencies: [19, 21, 575, 5478, 13708, 2]
 // Exports: QuestsIcon
 
-// Module 13725 (QuestsIcon)
+// Module 13707 (QuestsIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5509 */;
-import AssetRegistry from "AssetRegistry" /* 13726 */;
+import BaseIconImage2 from "BaseIconImage" /* 5478 */;
+import AssetRegistry from "AssetRegistry" /* 13708 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

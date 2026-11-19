@@ -1,11 +1,11 @@
-// Module ID: 17233
-// Function ID: 17234
+// Module ID: 17226
+// Function ID: 17227
 // Name: useFrameMonitor
-// Dependencies: [32, 19, 17231, 2]
+// Dependencies: [32, 19, 17224, 2]
 // Exports: default
 
-// Module 17233 (useFrameMonitor)
-import startFrameMonitor from "startFrameMonitor" /* 17231 */;
+// Module 17226 (useFrameMonitor)
+import startFrameMonitor from "startFrameMonitor" /* 17224 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -14,16 +14,16 @@ let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 const result = size.fileFinishedImporting("modules/devtools/native/components/screens/performance/useFrameMonitor.tsx");
 
-export default function useFrameMonitor(map) {
+export default function useFrameMonitor(set) {
   let closure_1;
   let monitoring;
   let ref;
   let ref2;
-  let current = map;
+  let current = set;
   [monitoring, closure_1] = react.useState(false);
   _slicedToArray = react.useRef(null);
-  react = react.useRef(map);
-  const items = [map];
+  react = react.useRef(set);
+  const items = [set];
   const effect = react.useEffect(() => {
     ref2.current = current;
   }, items);

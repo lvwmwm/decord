@@ -1,14 +1,14 @@
-// Module ID: 10350
-// Function ID: 10351
+// Module ID: 10328
+// Function ID: 10329
 // Name: useEmojiColorPalette
-// Dependencies: [4824, 1192, 504, 4830, 8607, 2]
+// Dependencies: [4793, 1192, 504, 4799, 8576, 2]
 // Exports: useEmojiColorPalette
 
-// Module 10350 (useEmojiColorPalette)
+// Module 10328 (useEmojiColorPalette)
 import get_initialized from "get initialized" /* 504 */;
-import shared from "shared" /* 4830 */;
-import EmojiColorUtils from "EmojiColorUtils" /* 8607 */;
-import AccessibilityStore from "AccessibilityStore" /* 4824 */;
+import shared from "shared" /* 4799 */;
+import EmojiColorUtils from "EmojiColorUtils" /* 8576 */;
+import AccessibilityStore from "AccessibilityStore" /* 4793 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
 import size from "module_2" /* 2 */;
 

@@ -1,14 +1,14 @@
-// Module ID: 9505
-// Function ID: 9506
+// Module ID: 9484
+// Function ID: 9485
 // Name: ClydeIcon
-// Dependencies: [19, 21, 575, 5509, 9506, 2]
+// Dependencies: [19, 21, 575, 5478, 9485, 2]
 // Exports: ClydeIcon
 
-// Module 9505 (ClydeIcon)
+// Module 9484 (ClydeIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5509 */;
-import AssetRegistry from "AssetRegistry" /* 9506 */;
+import BaseIconImage2 from "BaseIconImage" /* 5478 */;
+import AssetRegistry from "AssetRegistry" /* 9485 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

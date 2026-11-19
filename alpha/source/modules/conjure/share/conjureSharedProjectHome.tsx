@@ -1,22 +1,47 @@
-// Module ID: 11934
-// Function ID: 11935
+// Module ID: 11912
+// Function ID: 11913
 // Name: conjureSharedProjectHome
-// Dependencies: [6530, 2]
-// Exports: canLaunchSharedProject, isSharedProjectHomeServer
+// Dependencies: [4663, 6501, 2]
+// Exports: canLaunchSharedProject, getSharedProjectHomeGuildId
 
-// Module 11934 (conjureSharedProjectHome)
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6530 */;
+// Module 11912 (conjureSharedProjectHome)
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6501 */;
+import GuildStore from "GuildStore" /* 4663 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/share/conjureSharedProjectHome.tsx");
 
-export function isSharedProjectHomeServer(install_scope, guildId) {
-  return "guild" === install_scope.install_scope && null != install_scope.guild_id && null != guildId && install_scope.guild_id === guildId;
+export function getSharedProjectHomeGuildId(guild_id) {
+  guild_id = guild_id.guild_id;
+  let tmp = null;
+  if ("guild" === guild_id.install_scope) {
+    tmp = null;
+    if (null != guild_id) {
+      let tmp3 = null;
+      if (null != GuildStore.getGuild(guild_id)) {
+        tmp3 = guild_id;
+      }
+      tmp = tmp3;
+    }
+  }
+  return tmp;
 }
-export function canLaunchSharedProject(install_scope, guildId) {
-  let hasItem = "guild" === install_scope.install_scope && null != install_scope.guild_id && null != guildId && install_scope.guild_id === guildId;
+export function canLaunchSharedProject(guild_id) {
+  guild_id = guild_id.guild_id;
+  let tmp = null;
+  if ("guild" === guild_id.install_scope) {
+    tmp = null;
+    if (null != guild_id) {
+      let tmp3 = null;
+      if (null != GuildStore.getGuild(guild_id)) {
+        tmp3 = guild_id;
+      }
+      tmp = tmp3;
+    }
+  }
+  let hasItem = null != tmp;
   if (hasItem) {
-    let supported_surfaces = install_scope.supported_surfaces;
+    let supported_surfaces = guild_id.supported_surfaces;
     if (supported_surfaces == null) {
       supported_surfaces = [];
     }

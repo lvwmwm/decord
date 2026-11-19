@@ -1,20 +1,20 @@
-// Module ID: 19187
-// Function ID: 19188
+// Module ID: 19179
+// Function ID: 19180
 // Name: SimpleGuildContainer
-// Dependencies: [19, 17, 21, 4823, 8478, 17960, 575, 19186, 5387, 19188, 1655, 5424, 2]
+// Dependencies: [19, 17, 21, 4792, 8447, 17953, 575, 19178, 5356, 19180, 1655, 5393, 2]
 // Exports: SimpleGuildContainer, SimpleGuildContainerAnimated
 
-// Module 19187 (SimpleGuildContainer)
+// Module 19179 (SimpleGuildContainer)
 import _mod1655 from "module_1655" /* 1655 */;
-import spring_spring from "spring/spring" /* 5424 */;
-import MaskedBadgeDefault from "MaskedBadge" /* 8478 */;
-import GuildsBarActivityIndicator from "GuildsBarActivityIndicator" /* 17960 */;
-import useSimpleGuildDefaultColorsDefault from "useSimpleGuildDefaultColors" /* 19186 */;
-import CutoutImageDefault from "CutoutImage" /* 19188 */;
+import spring_spring from "spring/spring" /* 5393 */;
+import MaskedBadgeDefault from "MaskedBadge" /* 8447 */;
+import GuildsBarActivityIndicator from "GuildsBarActivityIndicator" /* 17953 */;
+import useSimpleGuildDefaultColorsDefault from "useSimpleGuildDefaultColors" /* 19178 */;
+import CutoutImageDefault from "CutoutImage" /* 19180 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size_mod from "module_2" /* 2 */;
 
 const _modDef1655 = _mod1655;

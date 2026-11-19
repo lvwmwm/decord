@@ -1,28 +1,28 @@
-// Module ID: 11180
-// Function ID: 11181
+// Module ID: 11158
+// Function ID: 11159
 // Name: FavoritesHooks
-// Dependencies: [4856, 1388, 4675, 4685, 1390, 11181, 504, 2110, 11, 1196, 4697, 2]
+// Dependencies: [4825, 1388, 4644, 4654, 1390, 11159, 504, 2110, 11, 1196, 4666, 2]
 // Exports: getFavoritesCategories, getFavoritesLimits, useFavorite, useFavoritedChannelIds, useFavorites, useFavoritesAwareChannel, useFavoritesLimitUpsell, useIsFavoritesGuildSelected
 
-// Module 11180 (FavoritesHooks)
+// Module 11158 (FavoritesHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initialized from "get initialized" /* 504 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
 import PremiumTypeUtilsDefault from "PremiumTypeUtils" /* 2110 */;
-import FavoritesConstants from "FavoritesConstants" /* 4685 */;
-import FavoritesUtils from "FavoritesUtils" /* 4697 */;
-import FavoritesLimits from "FavoritesLimits" /* 11181 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4856 */;
+import FavoritesConstants from "FavoritesConstants" /* 4654 */;
+import FavoritesUtils from "FavoritesUtils" /* 4666 */;
+import FavoritesLimits from "FavoritesLimits" /* 11159 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4825 */;
 import UserStore from "UserStore" /* 1388 */;
-import FavoriteStore from "FavoriteStore" /* 4675 */;
+import FavoriteStore from "FavoriteStore" /* 4644 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const f100420 = () => favoriteChannels.getFavoriteChannels();
-const f100421 = () => guildId.getGuildId();
+const f100382 = () => favoriteChannels.getFavoriteChannels();
+const f100383 = () => guildId.getGuildId();
 const MAX_FAVORITE_CHANNELS = FavoritesConstants.MAX_FAVORITE_CHANNELS;
 const PremiumTypes = PremiumConstants.PremiumTypes;
 let result = size.fileFinishedImporting("modules/favorites/FavoritesHooks.tsx");
@@ -50,7 +50,7 @@ export function useFavoritesLimitUpsell() {
   if (isPremiumExactlyResult) {
     FREE_FAVORITE_LIMIT = MAX_FAVORITE_CHANNELS;
   } else {
-    FREE_FAVORITE_LIMIT = tmp(11181).FREE_FAVORITE_LIMIT;
+    FREE_FAVORITE_LIMIT = tmp(11159).FREE_FAVORITE_LIMIT;
   }
   let flag = !isPremiumExactlyResult;
   const items1 = [FavoriteStore];
@@ -64,7 +64,7 @@ export function useFavoritesLimitUpsell() {
 export function useFavorites() {
   const items = [FavoriteStore];
   const obj = get_initialized;
-  return obj.useStateFromStoresObject(items, f100420);
+  return obj.useStateFromStoresObject(items, f100382);
 }
 export function useFavorite(arg0) {
   let closure_0;
@@ -77,7 +77,7 @@ export function useFavoritedChannelIds() {
   let favoriteChannels;
   const items = [FavoriteStore];
   const obj = get_initialized;
-  const stateFromStoresObject = obj.useStateFromStoresObject(items, f100420);
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, f100382);
   const obj2 = SnowflakeUtilsDefault;
   return obj2.keys(stateFromStoresObject);
 }
@@ -127,7 +127,7 @@ export function getFavoritesCategories(favoriteChannels) {
 export function useIsFavoritesGuildSelected() {
   const items = [SelectedGuildStore];
   const obj = get_initialized;
-  const stateFromStores = obj.useStateFromStores(items, f100421);
+  const stateFromStores = obj.useStateFromStores(items, f100383);
   const obj2 = FavoritesUtils;
   return obj2.isFavoritesGuildId(stateFromStores);
 }
@@ -139,7 +139,7 @@ export function useFavoritesAwareChannel(arg0) {
   _require = arg0;
   const items = [SelectedGuildStore];
   const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, f100421);
+  const stateFromStores = obj.useStateFromStores(items, f100383);
   const obj2 = require("FavoritesUtils");
   const isFavoritesGuildIdResult = obj2.isFavoritesGuildId(stateFromStores);
   require("get initialized");

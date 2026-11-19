@@ -1,13 +1,13 @@
-// Module ID: 6269
-// Function ID: 6270
+// Module ID: 6241
+// Function ID: 6242
 // Name: ClientBillingError
-// Dependencies: [32, 1083, 3, 4635, 4643, 1285, 2]
+// Dependencies: [32, 1083, 3, 4605, 6230, 1285, 2]
 
-// Module 6269 (ClientBillingError)
+// Module 6241 (ClientBillingError)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1083 */;
-import BillingUtils from "BillingUtils" /* 4635 */;
-import BillingErrorDefault from "BillingError" /* 4643 */;
+import BillingUtils from "BillingUtils" /* 4605 */;
+import BillingErrorDefault from "BillingError" /* 6230 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -20,17 +20,26 @@ let closure_6 = "staging" === window.GLOBAL_ENV.RELEASE_CHANNEL;
 const metroImportDefault = { payment_method_confirmation: "PaymentMethodConfirmation", submit_address_step: "SubmitAddressStep", payment_element_setup: "PaymentElementSetup", express_checkout_vault: "ExpressCheckoutAddPaymentMethod", express_checkout_load: "ExpressCheckoutLoad", payment_authentication: "PaymentAuthentication", braintree_tokenize: "BraintreeTokenize", gateway_sdk_init: "GatewaySdkInit", stripe_load: "StripeLoad" };
 const set = new Set(["card_error", "api_connection_error", "validation_error"]);
 const set1 = new Set(["setup_intent_authentication_failure", "payment_intent_authentication_failure"]);
-const authStore = ["google_pay.", "apple_pay."];
-const set2 = new Set(["BraintreeError", "AdyenCheckoutError"]);
-const re12 = /Failed to fetch|NetworkError|Load failed|Failed to load Stripe\.js/;
-const set3 = new Set(["PAYPAL_TOKENIZATION_REQUEST_ACTIVE"]);
+const set2 = new Set(["email_invalid", "tax_id_invalid"]);
+const unpackModuleId = ["google_pay.", "apple_pay."];
+const set3 = new Set(["BraintreeError", "AdyenCheckoutError"]);
+const re13 = /Failed to fetch|NetworkError|Load failed|Failed to load Stripe\.js/;
+const set4 = new Set(["PAYPAL_TOKENIZATION_REQUEST_ACTIVE"]);
+let items = [/authentication/gi, "verification"];
+let items1 = [items, , , ];
+const items2 = [/authoriz/gi, "approv"];
+items1[1] = items2;
+const items3 = [/token/gi, "tokn"];
+items1[2] = items3;
+const items4 = [/email/gi, "e_mail"];
+items1[3] = items4;
 class ClientBillingError extends Error {
   constructor(source, error) {
     const classifyResult = ClientBillingError.classify(error);
-    const tmp5 = new tmp(ClientBillingError.getMessage(classifyResult), tmp4, tmp3, tmp2, new.target, tmp, error);
+    const tmp5 = new tmp(ClientBillingError.getMessage(classifyResult), tmp4, tmp3, tmp2, new.target, tmp, ClientBillingError, error);
     tmp5.classification = classifyResult;
     tmp5.source = source;
-    tmp5.key = tmp5.getKey();
+    tmp5.key = ClientBillingError.getKeyFor(tmp5.classification);
     tmp5.shouldReport = tmp5.getShouldReport();
     let tmp6;
     if (error instanceof Error) {
@@ -46,10 +55,10 @@ class ClientBillingError extends Error {
       const classifyResult = ClientBillingError.classify(error);
       const self = this;
       const self2 = this;
-      const tmp10 = new tmp(ClientBillingError.getMessage(classifyResult), tmp7, tmp6, tmp5, tmp4, tmp3, tmp2, ClientBillingError);
+      const tmp10 = new tmp(ClientBillingError.getMessage(classifyResult), tmp7, tmp6, tmp5, tmp4, tmp3, tmp2);
       tmp10.classification = classifyResult;
       tmp10.source = source;
-      tmp10.key = tmp10.getKey();
+      tmp10.key = ClientBillingError.getKeyFor(tmp10.classification);
       tmp10.shouldReport = tmp10.getShouldReport();
       const _Error = Error;
       let tmp14;
@@ -113,7 +122,7 @@ class ClientBillingError extends Error {
         }
         code = tmp4;
         if (null != tmp4) {
-          if (closure_10.some((item) => code.startsWith(item))) {
+          if (closure_11.some((item) => code.startsWith(item))) {
             obj9 = { shape: "stripe_wallet_exception", error };
             const obj6 = { shape: "stripe_wallet_exception", error };
           }
@@ -122,7 +131,7 @@ class ClientBillingError extends Error {
         if (null != tmp4) {
           const _Error = Error;
           if (error instanceof Error) {
-            if (set2.has(error.name)) {
+            if (set3.has(error.name)) {
               obj9 = { shape: "gateway_sdk_error", error };
               const obj7 = { shape: "gateway_sdk_error", error };
             }
@@ -144,8 +153,46 @@ class ClientBillingError extends Error {
     return found.sort();
   }
   static getMessage(shape) {
-    if ("string" === shape.shape) {
+    let code;
+    let code2;
+    let status;
+    let type;
+    shape = shape.shape;
+    if ("string" === shape) {
       return shape.error;
+    } else if ("stripe_error" === shape) {
+      let combined;
+      ({ type, code: code2 } = shape.error);
+      if (null != code2) {
+        const _HermesInternal6 = HermesInternal;
+        combined = "Stripe " + type + " (" + code2 + ")";
+      } else {
+        const _HermesInternal5 = HermesInternal;
+        combined = "Stripe " + type;
+      }
+      return combined;
+    } else if ("billing_error" === shape) {
+      let combined1;
+      ({ code, status } = shape.error);
+      const billingErrorFieldNames = ClientBillingError.getBillingErrorFieldNames(shape.error);
+      if (billingErrorFieldNames.length > 0) {
+        const _HermesInternal4 = HermesInternal;
+        combined1 = "BillingError (field error: " + billingErrorFieldNames.join(", ") + ")";
+      } else if (code > 0) {
+        const _HermesInternal3 = HermesInternal;
+        combined1 = "BillingError (code: " + code + ")";
+      } else {
+        let str4 = "";
+        if (null != status) {
+          const _HermesInternal2 = HermesInternal;
+          str4 = " (HTTP " + status + ")";
+        }
+        combined1 = `BillingError${str4}`;
+      }
+      return combined1;
+    } else if ("stripe_wallet_exception" === shape) {
+      const _HermesInternal = HermesInternal;
+      return "Stripe Wallet Exception (code: " + shape.error.code + ")";
     } else {
       const error = shape.error;
       let keyFor = null;
@@ -220,27 +267,22 @@ class ClientBillingError extends Error {
       return "unknown" === shape ? "unknown" : undefined;
     }
   }
-  getKey() {
-    const str = ClientBillingError.getKeyFor(this.classification);
-    const str2 = str.replace(/authentication/g, "verification");
-    return str2.replace(/authoriz/g, "approv");
-  }
   getShouldReport() {
     const self = this;
     const classification = this.classification;
     const shape = classification.shape;
     if ("billing_error" === shape) {
       const error2 = classification.error;
-      let tmp14 = error2.code !== BillingErrorDefault.ErrorCodes.INVALID_PAYMENT_SOURCE;
-      if (tmp14) {
-        let tmp16 = ClientBillingError.getBillingErrorFieldNames(error2).length > 0;
-        if (!tmp16) {
+      let tmp16 = error2.code !== BillingErrorDefault.ErrorCodes.INVALID_PAYMENT_SOURCE;
+      if (tmp16) {
+        let tmp18 = ClientBillingError.getBillingErrorFieldNames(error2).length > 0;
+        if (!tmp18) {
           const obj2 = BillingUtils;
-          tmp16 = !obj2.isExpectedHttpClientError(error2);
+          tmp18 = !obj2.isExpectedHttpClientError(error2);
         }
-        tmp14 = tmp16;
+        tmp16 = tmp18;
       }
-      return tmp14;
+      return tmp16;
     } else if ("stripe_error" === shape) {
       const error = classification.error;
       const hasItem = set.has(error.type);
@@ -248,11 +290,20 @@ class ClientBillingError extends Error {
       if (tmp7) {
         let tmp8 = "invalid_request_error" !== error.type;
         if (!tmp8) {
-          let tmp10;
-          if (null != error.code) {
-            tmp10 = !set1.has(error.code);
-          } else {
-            tmp10 = !self.isStripeWalletSelected();
+          let tmp10 = null == error.code || !set2.has(error.code);
+          if (tmp10) {
+            let tmp12;
+            if ("setup_intent_unexpected_state" === error.code) {
+              if (null != error.setup_intent) {
+                tmp12 = "canceled" !== error.setup_intent.status;
+              }
+              tmp10 = tmp12;
+            }
+            if (null != error.code) {
+              tmp12 = !set1.has(error.code);
+            } else {
+              tmp12 = !self.isStripeWalletSelected();
+            }
           }
           tmp8 = tmp10;
         }
@@ -265,9 +316,9 @@ class ClientBillingError extends Error {
     } else if ("stripe_wallet_exception" === shape) {
       return false;
     } else if ("error" === shape) {
-      return !re12.test(classification.error.message);
+      return !re13.test(classification.error.message);
     } else if ("gateway_sdk_error" === shape) {
-      return !set3.has(classification.error.code);
+      return !set4.has(classification.error.code);
     } else {
       return true;
     }
@@ -317,70 +368,122 @@ class ClientBillingError extends Error {
     }
   }
   getRawErrorExtra() {
-    let code;
-    let decline_code;
-    let doc_url;
-    let message2;
-    let obj11;
-    let obj13;
-    let obj28;
-    let obj3;
-    let obj30;
-    let param;
-    let replaced;
-    let replaced1;
-    let str3;
+    let entries;
+    let entries1;
+    let entries2;
+    let entries3;
+    let entries4;
+    let entries5;
+    let fromEntries2;
+    let fromEntries3;
+    let fromEntries4;
+    let fromEntries5;
+    let fromEntries6;
+    let fromEntries7;
     let tmp3;
-    let type;
+    const f89931 = (item) => {
+      let arr;
+      let tmp;
+      let tmp2;
+      const f89930 = (acc, item) => {
+        let tmp;
+        [tmp, ] = item;
+        return acc.replace(tmp, (str) => {
+          let formatted;
+          if (str === str.toUpperCase()) {
+            formatted = closure_1_0.toUpperCase();
+          } else {
+            formatted = closure_1_0;
+          }
+          return formatted;
+        });
+      };
+      [tmp, arr] = item;
+      if (typeof arr === "string") {
+        const items = [tmp, closure_1_15.reduce(f89930, arr)];
+        tmp2 = items;
+      } else {
+        const _Array = Array;
+        items1 = [tmp, ];
+        if (Array.isArray(arr)) {
+          items1[1] = arr.map((item) => {
+            let reduced = item;
+            if (typeof item === "string") {
+              reduced = closure_1_15.reduce(f89930, item);
+            }
+            return reduced;
+          });
+          tmp2 = items1;
+        } else {
+          items1[1] = arr;
+          tmp2 = items1;
+        }
+      }
+      return tmp2;
+    };
     const classification = this.classification;
     const shape = classification.shape;
     if ("billing_error" === shape) {
-      const obj2 = { raw_error: obj3 };
+      const obj = { raw_error: fromEntries7(entries.map(f89931)) };
       ({ code: obj14.code, status: obj14.status, message: obj14.message } = classification.error);
-      obj3 = { code: null, status: null, message: null, fields: ClientBillingError.getBillingErrorFieldNames(classification.error) };
-      return obj2;
+      const _Object14 = Object;
+      const _Object15 = Object;
+      fromEntries7 = Object.fromEntries;
+      const obj2 = { code: null, status: null, message: null, fields: ClientBillingError.getBillingErrorFieldNames(classification.error) };
+      entries = Object.entries(obj2);
+      return obj;
     } else if ("stripe_error" === shape) {
-      const error2 = classification.error;
-      ({ type, code, decline_code } = error2);
-      const obj5 = { type: str3.replace(/authoriz/g, "approv"), code: replaced, decline_code: replaced1, param, doc_url, message: message2 };
-      ({ param, doc_url, message: message2 } = error2);
-      replaced = code;
-      str3 = type.replace(/authentication/g, "verification");
-      if (null != code) {
-        const str5 = code.replace(/authentication/g, "verification");
-        replaced = str5.replace(/authoriz/g, "approv");
-      }
-      replaced1 = decline_code;
-      if (null != decline_code) {
-        const str6 = decline_code.replace(/authentication/g, "verification");
-        replaced1 = str6.replace(/authoriz/g, "approv");
-      }
-      return { raw_error: obj5 };
+      const obj5 = { type: null, code: null, decline_code: null, param: null, doc_url: null, message: null };
+      ({ type: obj12.type, code: obj12.code, decline_code: obj12.decline_code, param: obj12.param, doc_url: obj12.doc_url, message: obj12.message } = classification.error);
+      const _Object12 = Object;
+      const _Object13 = Object;
+      const obj3 = { raw_error: fromEntries6(entries1.map(f89931)) };
+      fromEntries6 = Object.fromEntries;
+      entries1 = Object.entries(obj5);
+      return obj3;
     } else if ("http_error" === shape) {
-      const obj9 = { raw_error: obj11 };
-      obj11 = { status: null, method: null, message: null };
+      const obj9 = { status: null, method: null, message: null };
       ({ status: obj10.status, method: obj10.method, message: obj10.message } = classification.error);
-      return obj9;
+      const _Object10 = Object;
+      const _Object11 = Object;
+      const obj7 = { raw_error: fromEntries5(entries2.map(f89931)) };
+      fromEntries5 = Object.fromEntries;
+      entries2 = Object.entries(obj9);
+      return obj7;
     } else if ("stripe_wallet_exception" === shape) {
-      const obj12 = { raw_error: obj13 };
-      obj13 = { code: null, message: null };
+      const obj13 = { code: null, message: null };
       ({ code: obj8.code, message: obj8.message } = classification.error);
-      return obj12;
+      const _Object8 = Object;
+      const _Object9 = Object;
+      const obj11 = { raw_error: fromEntries4(entries3.map(f89931)) };
+      fromEntries4 = Object.fromEntries;
+      entries3 = Object.entries(obj13);
+      return obj11;
     } else if ("gateway_sdk_error" === shape) {
-      const obj27 = { raw_error: obj28 };
-      obj28 = { name: null, code: null, message: null };
+      const obj28 = { name: null, code: null, message: null };
       ({ name: obj6.name, code: obj6.code, message: obj6.message } = classification.error);
+      const _Object6 = Object;
+      const _Object7 = Object;
+      const obj27 = { raw_error: fromEntries3(entries4.map(f89931)) };
+      fromEntries3 = Object.fromEntries;
+      entries4 = Object.entries(obj28);
       return obj27;
     } else if ("error" === shape) {
-      const obj29 = { raw_error: obj30 };
-      obj30 = { name: null, message: null };
+      const obj30 = { name: null, message: null };
       ({ name: obj4.name, message: obj4.message } = classification.error);
+      const _Object4 = Object;
+      const _Object5 = Object;
+      const obj29 = { raw_error: fromEntries2(entries5.map(f89931)) };
+      fromEntries2 = Object.fromEntries;
+      entries5 = Object.entries(obj30);
       return obj29;
     } else if ("string" === shape) {
       return {};
     } else if ("unknown" === shape) {
-      let obj;
+      let fromEntriesResult;
+      const tmp = null;
       if (null != classification.error) {
+        let tmp2 = globalThis;
         const _Object = Object;
         const error = classification.error;
         const obj31 = { raw_error_keys: Object.keys(classification.error), raw_error_message: tmp3 };
@@ -396,16 +499,19 @@ class ClientBillingError extends Error {
             tmp3 = tmp4;
           }
         }
-        obj = obj31;
+        const _Object2 = Object;
+        const _Object3 = Object;
+        const entries6 = Object.entries(obj31);
+        fromEntriesResult = fromEntries(entries6.map(f89931));
       } else {
-        obj = {};
+        fromEntriesResult = {};
       }
-      return obj;
+      return fromEntriesResult;
     }
   }
   getSentryOptions(arg0) {
+    let entries;
     let extra;
-    let found;
     let fromEntries;
     let items;
     let obj3;
@@ -422,25 +528,16 @@ class ClientBillingError extends Error {
       tmp2 = PaymentSourceTypes[selectedElementType];
     }
     const obj2 = {
-      tags: fromEntries(found.map((item) => {
-        let str;
-        let tmp;
-        [tmp, str] = item;
-        const items = [tmp, ];
-        const str2 = str.replace(/authentication/g, "verification");
-        items[1] = str2.replace(/authoriz/g, "approv");
-        return items;
+      tags: fromEntries(entries.filter((item) => {
+        const tmp = _slicedToArray(item, 2);
+        return null != tmp[1];
       })),
       fingerprint: items,
       extra: obj3
     };
     const merged1 = Object.assign(tags);
     fromEntries = Object.fromEntries;
-    const entries = Object.entries(obj);
-    found = entries.filter((item) => {
-      const tmp = _slicedToArray(item, 2);
-      return null != tmp[1];
-    });
+    entries = Object.entries(obj);
     items = [site, self.key];
     obj3 = {};
     const merged2 = Object.assign(extra);

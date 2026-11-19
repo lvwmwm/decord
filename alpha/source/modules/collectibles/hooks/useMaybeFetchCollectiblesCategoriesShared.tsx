@@ -1,16 +1,16 @@
-// Module ID: 9321
-// Function ID: 9322
+// Module ID: 9298
+// Function ID: 9299
 // Name: useMaybeFetchCollectiblesCategoriesShared
-// Dependencies: [32, 19, 5440, 7987, 1074, 504, 8030, 7986, 2]
+// Dependencies: [32, 19, 5409, 7956, 1074, 504, 7999, 7955, 2]
 // Exports: useMaybeFetchCollectiblesCategoriesShared
 
-// Module 9321 (useMaybeFetchCollectiblesCategoriesShared)
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7986 */;
-import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 8030 */;
+// Module 9298 (useMaybeFetchCollectiblesCategoriesShared)
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7955 */;
+import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7999 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ExperimentStore from "ExperimentStore" /* 5440 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7987 */;
+import ExperimentStore from "ExperimentStore" /* 5409 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7956 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
@@ -93,7 +93,7 @@ export function useMaybeFetchCollectiblesCategoriesShared(arg0, noOp, arg2, skip
               tmp20 = Date.now() - metroImportAll < metroImportDefault;
             }
             if (!tmp20) {
-              const tmp12Result = tmp12(7986);
+              const tmp12Result = tmp12(7955);
               const collectiblesCategories = tmp12Result.fetchCollectiblesCategories(obj, noOp, closure_2);
             }
           }

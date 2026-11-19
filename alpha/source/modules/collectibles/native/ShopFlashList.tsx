@@ -1,19 +1,19 @@
-// Module ID: 17384
-// Function ID: 17385
+// Module ID: 17377
+// Function ID: 17378
 // Name: ShopFlashList
-// Dependencies: [19, 21, 4823, 575, 17343, 7401, 1187, 8098, 1113, 2]
+// Dependencies: [19, 21, 4792, 575, 17336, 7371, 1187, 8067, 1113, 2]
 // Exports: default
 
-// Module 17384 (ShopFlashList)
+// Module 17377 (ShopFlashList)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import defaultMVCPConfig from "defaultMVCPConfig" /* 7401 */;
-import NoResults from "NoResults" /* 8098 */;
-import react2 from "react" /* 17343 */;
+import defaultMVCPConfig from "defaultMVCPConfig" /* 7371 */;
+import NoResults from "NoResults" /* 8067 */;
+import react2 from "react" /* 17336 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4823 */;
+import createStyles from "createStyles" /* 4792 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

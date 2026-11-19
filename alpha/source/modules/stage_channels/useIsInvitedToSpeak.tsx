@@ -1,14 +1,14 @@
-// Module ID: 10810
-// Function ID: 10811
+// Module ID: 10788
+// Function ID: 10789
 // Name: useIsInvitedToSpeak
-// Dependencies: [502, 4726, 504, 5858, 2]
+// Dependencies: [502, 4695, 504, 5829, 2]
 // Exports: default
 
-// Module 10810 (useIsInvitedToSpeak)
+// Module 10788 (useIsInvitedToSpeak)
 import get_initialized from "get initialized" /* 504 */;
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 5858 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 5829 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4726 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4695 */;
 import size from "module_2" /* 2 */;
 
 const useAudienceRequestToSpeakStateDefault = useAudienceRequestToSpeakState;

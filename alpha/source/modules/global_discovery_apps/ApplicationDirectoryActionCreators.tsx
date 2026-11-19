@@ -1,26 +1,26 @@
-// Module ID: 12866
-// Function ID: 12867
+// Module ID: 12848
+// Function ID: 12849
 // Name: ApplicationDirectoryActionCreators
-// Dependencies: [5, 5417, 2189, 1362, 6568, 12867, 12868, 12863, 12869, 12870, 1072, 572, 559, 1285, 12864, 1380, 12871, 12872, 12873, 2]
+// Dependencies: [5, 5386, 2189, 1362, 6539, 12849, 12850, 12845, 12851, 12852, 1072, 572, 559, 1285, 12846, 1380, 12853, 12854, 12855, 2]
 // Exports: fetchCollections, fetchIntegrationApplicationIdsForMyGuilds, getApplication, getCategories, getEmbedApplication, getSimilarApplications, search
 
-// Module 12866 (ApplicationDirectoryActionCreators)
+// Module 12848 (ApplicationDirectoryActionCreators)
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
-import ApplicationDirectoryApplicationsStore2 from "ApplicationDirectoryApplicationsStore" /* 6568 */;
-import ApplicationDirectorySearchStore2 from "ApplicationDirectorySearchStore" /* 12863 */;
-import ApplicationDirectoryCollectionsStore2 from "ApplicationDirectoryCollectionsStore" /* 12868 */;
-import ApplicationDirectorySimilarApplicationsStore2 from "ApplicationDirectorySimilarApplicationsStore" /* 12869 */;
-import MyGuildApplicationsStore2 from "MyGuildApplicationsStore" /* 12870 */;
-import ApplicationCollectionSurface from "ApplicationCollectionSurface" /* 12872 */;
-import ApplicationCollectionActiveState from "ApplicationCollectionActiveState" /* 12873 */;
+import ApplicationDirectoryApplicationsStore2 from "ApplicationDirectoryApplicationsStore" /* 6539 */;
+import ApplicationDirectorySearchStore2 from "ApplicationDirectorySearchStore" /* 12845 */;
+import ApplicationDirectoryCollectionsStore2 from "ApplicationDirectoryCollectionsStore" /* 12850 */;
+import ApplicationDirectorySimilarApplicationsStore2 from "ApplicationDirectorySimilarApplicationsStore" /* 12851 */;
+import MyGuildApplicationsStore2 from "MyGuildApplicationsStore" /* 12852 */;
+import ApplicationCollectionSurface from "ApplicationCollectionSurface" /* 12854 */;
+import ApplicationCollectionActiveState from "ApplicationCollectionActiveState" /* 12855 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import DevSettingsStore from "DevSettingsStore" /* 5417 */;
+import DevSettingsStore from "DevSettingsStore" /* 5386 */;
 import LocaleStore from "LocaleStore" /* 2189 */;
 import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1362 */;
-import ApplicationDirectoryCategoriesStore from "ApplicationDirectoryCategoriesStore" /* 12867 */;
+import ApplicationDirectoryCategoriesStore from "ApplicationDirectoryCategoriesStore" /* 12849 */;
 import size from "module_2" /* 2 */;
 
 const MyGuildApplicationsStore = MyGuildApplicationsStore2;
@@ -42,7 +42,7 @@ let obj = function _getEmbedApplication() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         }
       } else {
         try {
@@ -129,7 +129,7 @@ let obj = function _getEmbedApplication() {
             c5 = 0;
           }
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "+60" };
         } catch (tmp21) {
           closure_4 = tmp21;
           if (0 === c5) {
@@ -236,7 +236,7 @@ obj = function _getCategories() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       try {
@@ -280,7 +280,7 @@ obj = function _getCategories() {
           obj.dispatch(obj8);
         }
         c3 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       } catch (tmp17) {
         c3 = 3;
         throw tmp17;
@@ -576,7 +576,7 @@ obj = function _fetchIntegrationApplicationIdsForMyGuilds() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       }
     } else {
       let c3;
@@ -654,7 +654,7 @@ obj = function _fetchIntegrationApplicationIdsForMyGuilds() {
           c3 = 0;
         }
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "+60" };
       } catch (tmp32) {
         if (0 === c3) {
           c5 = 3;
